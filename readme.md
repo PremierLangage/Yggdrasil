@@ -14,6 +14,10 @@ Si vous porposer un type d'exo faites le en deux temps avec un template et un ex
 Si vous proposer un moteur d'exercice (i.e. un exo qui utilise un fichier de donnée avec un format spécifique comme source de l'exercice )
 alors placter le dans motor/.
 
+# Standard lib 
+Ce repository a pour objectif de préparer des template pour devenir des standards dans la lib standard.
+
+
 Merci
 et bon code
 
