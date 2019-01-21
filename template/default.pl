@@ -25,9 +25,10 @@ form=@ /form/text_editor.html
 
 # This a bad the builder should not be mandatory 
 # we are creatin several process for nothing 
-builder==
-pass
-==
+# a remplacer par none 
+builder=@ /builder/before.py
+# bfore vide 
+before=
 
 # A default grader (giving the 100 mark)
 grader=@ /grader/evaluator.py
