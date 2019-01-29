@@ -1,0 +1,57 @@
+{
+    "terminaison": {
+            "er":{
+                    "1s": "e",
+                    "2s": "es",
+                    "3s": "e",
+                    "1p": "ons",
+                    "2p": "ez",
+                    "3p": "ent"
+            },
+            "ger":{
+                    "1s": "ge",
+                    "2s": "ges",
+                    "3s": "ge",
+                    "1p": "geons",
+                    "2p": "gez",
+                    "3p": "gent"
+            },
+            "ir":{
+                    "1s": "is",
+                    "2s": "is",
+                    "3s": "it",
+                    "1p": "issons",
+                    "2p": "issez",
+                    "3p": "issent"
+            }
+    },
+    "verbe": {
+            "aimer":{
+                    "base": "aim",
+                    "terminaison": "er"
+            },
+            "chanter":{
+                    "base": "chant",
+                    "terminaison": "er"
+            },
+            "manger":{
+                    "base": "man",
+                    "terminaison": "ger"
+            },
+            "bouger":{
+                    "base": "bou",
+                    "terminaison": "ger"
+            },
+            "finir":{
+                    "base": "fin",
+                    "terminaison": "ir"
+            },
+            "grandir":{
+                    "base": "grand",
+                    "terminaison": "ir"
+            }
+    }
+    
+}
+
+
