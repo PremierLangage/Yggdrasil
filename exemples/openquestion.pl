@@ -10,10 +10,16 @@ text==
 Exprimez vos besoins et envies, vos attente de no plateform.
 Nous somme preneur de toute les bonnes idées.
 
-Mais si cette boite au suggetions ne vous convient pas car vous n'aurez pas de réponse directe.
-Vous pouvez utiliser le Q&A dans le menu principal.
+Vous n'aurez pas de réponse directe a votre question.
+
+Si vous souhaiter une réponse plus rapide utiliser le système de Q&A proposer dans la bande titre.
+
+<a href="/ask/"> le Q&A lien direct </a>.
+
+
 
 ==
 
 
  
+
