@@ -13,7 +13,7 @@
 # put here is a lesser evil 
 # maibe the /lib/utils should be a copied of the sandbox utils directory 
 # the /utils should be defined in the sandbox project 
-@ /utils/sandbox.io
+@ /utils/sandboxio.py
 
 # By default we do programming so we need and editor 
 # and you can answer nearly any thing in the editor ...
@@ -34,3 +34,4 @@ grader=@ /grader/evaluator.py
 evalutor==
 grade=(100,"# Merci de vos commentaires.\n Toute l'équipe PL. ")
 ==
+
