@@ -5,7 +5,6 @@
 title = Médiane
 
 before ==
-import sympy as sp
 import random
 import statistics
 med0=random.randint(3,7)
@@ -38,8 +37,7 @@ Déterminer la médiane de la série statistique représentée ci-dessous.
 </center>
 <script type="text/javascript">
 var board = JXG.JSXGraph.initBoard('jxgbox', {boundingbox: [-1, {{vmax}}, 11, -2], axis: true,showCopyright:false, showNavigation:false});
-var dataArr = [4,1,3,2,5,7,1.5,2];
-var dataArr = {{dst}}
+var dataArr = {{dst}};
 var a = board.create('chart', dataArr, {chartStyle:'bar',color:'blue',width:0.6});
 </script>
 ==
@@ -57,3 +55,4 @@ if ans==sol:
 else:
     grade=(0,"Mauvaise réponse. La médiane est : "+str(sol))
 ==
+
