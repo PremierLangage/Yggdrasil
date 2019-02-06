@@ -1,7 +1,7 @@
  
  
  # The template default will no be neccessary in the futur 
- extends=/template/default.pl
+extends=/template/default.pl
 
 title= Une question ouverte 
 
@@ -22,4 +22,5 @@ Si vous souhaiter une réponse plus rapide utiliser le système de Q&A proposer 
 
 
  
+
 
