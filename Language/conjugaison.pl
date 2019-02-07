@@ -34,11 +34,15 @@ form==
 ==
 
 evaluator ==
-ans=response['answer']
-if sol==ans:
+feedback=""
+if set(sol)==set(ans):
     grade=(100,"Bonne réponse")
 else:
-    grade=(0,"Mauvaise réponse")
+    if len(set(sol)-set(ans))>0 :
+        feedback += "Tu en a oublié !"
+    if len(set(ans)-set(sol))> 0 :
+        feedback += "Tu en a mise en trop !"
+    grade=(0,feedback)
 ==
 
 
