@@ -1,0 +1,33 @@
+<script type="text/javascript" charset="UTF-8" src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.99.7/jsxgraphcore.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.99.7/jsxgraph.css" />
+
+{{ jxgform | safe }}
+
+<div id="input"></div>
+
+<script>
+
+{{ jxgscript | safe }}
+
+lstform=[];
+for (var name in this){
+    if (name.startsWith("form_")){
+        lstform.push(name.toString()); 
+        var input = document.createElement("input");
+        input.id=name;
+        input.type = "hidden";
+        document.getElementById('input').appendChild(input);
+    }
+}
+
+function updateInput(){
+    for (name of lstform){
+        document.getElementById(name).value = window[name]();
+    }
+}
+
+updateInput();
+
+brd.on('update',updateInput);
+
+</script>
