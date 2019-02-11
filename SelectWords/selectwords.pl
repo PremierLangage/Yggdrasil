@@ -1,7 +1,7 @@
 @ lib:/utils/sandboxio.py
 @ lib:/builder/before.py [builder.py]
 @ lib:/grader/evaluator.py [grader.py]
-@ utilstext.py [utilstext.py]
+@ utilstext.py 
 
 
 before ==
