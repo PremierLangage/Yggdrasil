@@ -3,11 +3,15 @@
 
 {{ jxgform | safe }}
 
+{% if formmode == "input" %}
+
 <div id="input"></div>
 
 <script>
+{{ jxgscript.base | safe }}
+{{ jxgscript.input | safe }}
 
-{{ jxgscript | safe }}
+{% if data %} var data = {{ data | safe }}; {% endif %}
 
 lstform=[];
 for (var name in this){
@@ -31,3 +35,17 @@ updateInput();
 brd.on('update',updateInput);
 
 </script>
+
+{% endif %}
+
+{% if formmode == "correction" %}
+
+<script>
+var answer = {{ answer | safe }};
+{% if data %} var data = {{ data | safe }}; {% endif %}
+{{ jxgscript.base | safe }}
+{{ jxgscript.correction | safe }}
+</script>
+
+{% endif %}
+
