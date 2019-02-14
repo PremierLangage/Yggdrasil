@@ -12,6 +12,7 @@ form=@ form_MathLive.html
 
 evaluator ==
 ast=eval(answer['1'])
-grade=(100,ast['fn'])
+grade=(100,ast)
 ==
+
 
