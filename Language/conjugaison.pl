@@ -3,7 +3,7 @@
 @ /grader/evaluator.py [grader.py]
 @ data_conjugaison.txt [data.txt]
 
-
+text= dummy
 title = Conjugaison d'un verbe
 
 before ==
@@ -40,6 +40,7 @@ if sol==ans:
 else:
     grade=(0,"Mauvaise réponse")
 ==
+
 
 
 
