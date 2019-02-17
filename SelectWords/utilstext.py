@@ -12,4 +12,3 @@ def swsplit(text):
             i=i+1
     return html
 
-
