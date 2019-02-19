@@ -1,13 +1,15 @@
 # Copyright 2018 Nicolas M. Thiéry, 2019 Hugo Mlodecki
 
-author=MPI Info 111's team and Hugo Mlodecki
+author=MPI Info 121's team
 # chargement des fichiers utiles
 @/hugos/template/plutils.py
 @/hugos/template/graderCpp.py
 @/hugos/template/randomization.h
 
-form=@lib:/form/text_editor.html
-@ /hugos/builder/build.py [builder.py]
+
+form=@/hugos/template/editorform.html
+# form=@lib:/form/text_editor.html
+@ lib:/builder/build.py [builder.py]
 @ /hugos/builder/build.py [mybuilder.py]
 
 solution_compile_error_message=Erreur interne: le programme solution ne compile pas:<pre>{err}</pre>Code:<pre>{code}</pre>
