@@ -1,6 +1,6 @@
 # Copyright 2018 Nicolas M. Thiéry ...
 
-template=/hugos//template/wims.pl
+template=/hugos/template/wims.pl
 name=deviner l'entrée
 typename=Deviner l'entrée
 type=sandbox
@@ -18,3 +18,4 @@ def build(exo):
     exo['items'] = [{'type':'answer', 'subtype': 'stdin', 'content': ''}] + exo['items'] + [{'type':'solution', 'subtype': 'stdout', 'content': '42'}]
     return build_finalize(exo)
 ==
+
