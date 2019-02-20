@@ -19,7 +19,7 @@ def to_language(value):
         '{{1, 2}, {"alice", "bob"}}'
     """
     if isinstance(value, str):
-        if value == "PLUSOUMOINS"
+        if value == "PLUSOUMOINS":
             return PLUSOUMOINS()
         return STRING_QUOTE + value + STRING_QUOTE
     elif isinstance(value, list):
@@ -292,5 +292,6 @@ def build_finalize(exo):
             #item['key'] = "answer{}".format(i)
             i += 1
     return exo
+
 
 
