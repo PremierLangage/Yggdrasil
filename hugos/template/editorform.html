@@ -1,0 +1,29 @@
+{% load static %}
+<script src="{% static 'ace/ace.js' %}" type="text/javascript" charset="utf-8"></script>
+<script src="{% static 'ace/ext-modelist.js' %}"></script>
+
+{% for item in items %}
+  {% if item.type == 'answer' %}
+    <!-- Do not tabulate this div as the tabulation will appear in the editor -->
+    <div id="editor" style="border: 1px #E7E7E7 solid; border-width: 1px; border-color: #5bc0de; border-radius: 4px; height: 100px; #E7E7E7 solid;"></div>
+    <input id="form_{{item.key}}" type="hidden" style="display: none;" value="">
+  {% elif item.type == 'default' %}
+    <pre>{{item.content}}</pre>
+  {% endif %}
+{% endfor %}
+
+<script>
+{% for item in items %}
+  {% if item.type == 'answer' %}
+    var editor = ace.edit('editor');
+    editor.setTheme("{{ request.user.profile.editor_theme.template }}");
+    editor.session.setMode("ace/mode/{% if language and language in authorized_lang %}{{language}}{% else %}python{% endif %}");
+
+    var input = $('input[id="form_{{item.key}}"]');
+    editor.getSession().on("change", function() {
+        input.val(editor.getSession().getValue());
+    });
+  {% endif %}
+{% endfor %}
+</script>
+
