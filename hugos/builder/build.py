@@ -25,6 +25,12 @@ def to_language(value):
     else:
         return str(value)
 
+def PLUSOUMOINS():
+    r"""
+    TODO à tester
+    """
+    return random.choice(['+', '-'])
+
 def RANDOM_INT(min, max):
     r"""
     Return a random integer between `min` and `max` included.
@@ -119,7 +125,7 @@ def randomize_code(code):
     consts = {}
     consts['X'],consts['Y'],consts['Z'] = random.sample('xyz',3)
     consts['I'],consts['J'],consts['K'],consts['N'] = random.sample('ijkn',4)
-    consts['PLUSOUMOINS'] = str(random.choice(['+', '-']))
+    consts['PLUSOUMOINS'] = PLUSOUMOINS()
     consts['CI1'] = str(random.randint(-2,2))
     consts['CI2'] = str(random.randint(-2,2))
     consts['CI3'] = str(random.randint(-2,2))
@@ -287,6 +293,7 @@ def build_finalize(exo):
             #item['key'] = "answer{}".format(i)
             i += 1
     return exo
+
 
 
 
