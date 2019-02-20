@@ -1,1 +1,15 @@
-- Pouvoir choisir un nom de procédure au hasard parmis une liste de nom.
+Config:
+=======
+- Accès le jour même aux étudiants ???
+- (HUGO) Ajouter les étudiants non encore inscrits.
+
+Workflow/Admin:
+===============
+- Pour le moment il y a deux git car seul Hugo à les droits d'accès sur le
+  repo en production à Marne-la-Vallée. Pas pratique.
+
+Features:
+=========
+- Pouvoir choisir un nom de procédure au hasard parmis une liste de nom
+- Dans un fichier de liste d'exercices, choisir au hasard n exo parmis p
+- Conserver le code éditer pas l'étudiant après la soumission
