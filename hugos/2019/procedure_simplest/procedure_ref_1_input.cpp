@@ -10,7 +10,7 @@ CONST I = RANDOM_INT(2, 10);
 void saisie(int &a) {
     int b;
     cin >> b;
-    a = a + b;
+    a = a PLUSOUMOINS b;
 }
 
 int main() {

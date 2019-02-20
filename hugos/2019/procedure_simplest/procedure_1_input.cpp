@@ -10,7 +10,7 @@ CONST I = RANDOM_INT(2, 10);
 void saisie(int Y) {
     int Z;
     cin >> Z;
-    Y = Y + Z;
+    Y = Y PLUSOUMOINS Z;
     cout << Y;
 }
 
