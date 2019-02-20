@@ -19,8 +19,6 @@ def to_language(value):
         '{{1, 2}, {"alice", "bob"}}'
     """
     if isinstance(value, str):
-        if value == "PLUSOUMOINS":
-            return PLUSOUMOINS()
         return STRING_QUOTE + value + STRING_QUOTE
     elif isinstance(value, list):
         return VECTOR_OPEN + ", ".join(to_language(v) for v in value) + VECTOR_CLOSE
@@ -66,12 +64,6 @@ def RANDOM_VECTOR(n, generator, *args):
         [1, 1, 1, 1, 1]
     """
     return [generator(*args) for i in range(n)]
-
-def PLUSOUMOINS():
-    r"""
-    TODO à tester
-    """
-    return random.choice(['+', '-'])
 
 locals = {
     "RANDOM_INT": RANDOM_INT,
