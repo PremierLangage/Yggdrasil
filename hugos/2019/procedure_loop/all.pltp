@@ -1,0 +1,7 @@
+title=Procédures et boucles
+introduction==
+Exercices avec une procédure contenant une boucle.
+==
+@ /hugos/2019/procedure_loop/procedure_loop_val.pl
+@ /hugos/2019/procedure_loop/procedure_loop_ref.pl
+
