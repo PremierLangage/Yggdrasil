@@ -13,3 +13,10 @@ Features:
 - Pouvoir choisir un nom de procédure au hasard parmis une liste de nom
 - Dans un fichier de liste d'exercices, choisir au hasard n exo parmis p
 - Conserver le code éditer pas l'étudiant après la soumission
+
+Questions
+=========
+
+- Faut-il donner la solution tout de suite à l'étudiant ?
+  Si oui, il faudrait lui proposer un exo différent.
+  
