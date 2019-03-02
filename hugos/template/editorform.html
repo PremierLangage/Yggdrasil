@@ -1,6 +1,6 @@
 {% load static %}
-<script src="{% static 'ace/ace.js' %}" type="text/javascript" charset="utf-8"></script>
-<script src="{% static 'ace/ext-modelist.js' %}"></script>
+<script src="{% static 'js/ace/ace.js' %}" type="text/javascript" charset="utf-8"></script>
+<script src="{% static 'js/ace/ext-modelist.js' %}"></script>
 
 {% for item in items %}
   {% if item.type == 'answer' %}
@@ -26,4 +26,6 @@
   {% endif %}
 {% endfor %}
 </script>
+
+
 
