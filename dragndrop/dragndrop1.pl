@@ -13,6 +13,9 @@ before ==
 
 listtags=["∊","⊂"," "]
 
+listtags=["1","2","3","4","5","6","7","8","9","  "]
+
+
 htmldrop ==
 <ul>
 <li>1 <span id="answer1" class="dragdrop" ondrop="drop(event)" draggable=true ondragstart="drag(event)" ondragover="allowDrop(event)">&nbsp;</span> {1,2,3}</li><br>
@@ -31,4 +34,8 @@ if ans1=="∊" and ans2=="⊂":
 else:
     grade=(0,"Mauvaise réponse")
 ==
+
+
+
+
 

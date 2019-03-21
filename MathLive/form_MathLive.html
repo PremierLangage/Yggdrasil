@@ -1,3 +1,5 @@
+{% if mathfield == "latex" %}
+
 <meta charset="utf-8">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mathlive@0.26.0/dist/mathlive.core.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mathlive@0.26.0/dist/mathlive.css">
@@ -17,6 +19,7 @@
 </style>
 <div class="mathfield" id='mf' ></div>
 <input id='form_1'></div>
+<input id='form_2'></div>
 
 <script src="https://cdn.jsdelivr.net/npm/mathlive@0.26.0/dist/mathlive.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathlive@0.26.0/dist/mathlive.mjs"></script>
@@ -26,6 +29,7 @@
 const mf = MathLive.makeMathField('mf', {
 
 onContentDidChange: mathfield => {
+    document.getElementById('form_2').value = mf.latex();
 try {
     const ast = MathLive.latexToAST(mathfield.latex());
     document.getElementById('form_1').value = JSON.stringify(ast);
@@ -56,10 +60,12 @@ customVirtualKeyboardLayers: {
                 {
                     "class": "keycap btn",
                     "insert": "\\frac{#0}{#?}",
-                    "label": "&divide;"
+                    "label": "<math><mfrac><mi mathsize='small'>&#11034;</mi><mi mathsize='small'>&#11034;</mi></mfrac></math>"
                 },
                 {
-                    "class": "separator",
+                    "class": "keycap btn",
+                    "insert": "\\sqrt{#0}",
+                    "label": "<math><msqrt><mi mathsize='small'>&#11034;</mi></msqrt></math>"
                 },
                 {
                     "class": "separator w20",
@@ -84,7 +90,9 @@ customVirtualKeyboardLayers: {
                     "latex": "\\times "
                 },
                 {
-                    "class": "separator",
+                    "class": "keycap btn",
+                    "insert": "\\sqrt{#0}",
+                    "label": "<math><msqrt><mi mathsize='small'>&#11034;</mi></msqrt></math>"
                 },
                 {
                     "class": "separator w20",
@@ -176,4 +184,14 @@ virtualKeyboards: 'json'
 });
 
 </script>
+
+{% endif %}
+
+{% if mathfield == "plain" %}
+
+<div class="input-group">
+<input id="form_1" type="text" class="form-control" value="{{ answers__.1 }}" required/>
+</div>
+
+{% endif %}
 

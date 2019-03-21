@@ -5,13 +5,13 @@ author= Nous
 form=@ /form/simpletextform.html 
 
 @ /builder/before.py [builder.py]
-@ __init__.py
+
 @ verif.py
 grader=@ /grader/evaluator.py
 
 @ /utils/sandboxio.py 
 
-
+text="Quelle est la configuration éléctronique {{name}} "
 
 before==
 import random
@@ -19,7 +19,7 @@ import random
 table=[("du Carbone",8),("de l'Oxygène",10),("Azote",7)]
 name, a = random.choice(table)
 #random.randint(1,33)
-text="Quelle est la configuration éléctronique {{name}} "
+
 
 ==
 
@@ -40,5 +40,6 @@ except:
     print(traceback.format_exc(), file=sys.stderr)
     grade = (-1, "Merci de rentrer un entier")
 ==
+
 
 

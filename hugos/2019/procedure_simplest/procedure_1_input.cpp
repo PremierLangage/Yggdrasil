@@ -19,3 +19,4 @@ int main() {
     saisie(X);
     return 0;
 }
+

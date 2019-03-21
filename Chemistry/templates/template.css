@@ -1,0 +1,51 @@
+.form-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#answers {
+    display: flex;
+    align-items: center;
+    width: auto;
+    max-width: 100%;
+    overflow: auto;
+    padding: 16px;
+}
+
+.answer {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #F6F6F6;
+    box-sizing: content-box;
+    margin: 4px;
+}
+
+.answer div:first-of-type {
+    pointer-events: none;
+}
+
+.answer-btn--plus {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 32px;
+}
+
+.answer-btn--arrow {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 48px;
+}
+
+/* answer-btn--plus preceded by answer-btn--arrow*/
+.answer-btn--arrow + .answer-btn--plus	{
+    display: none;
+}
+
+.answer-btn--add {
+    margin: 8px;
+}
+

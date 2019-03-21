@@ -3,7 +3,7 @@
  # The template default will no be neccessary in the futur 
 extends=/template/default.pl
 
-title= Une question ouverte 
+title=  Une question ouverte 
 
 text== 
 
@@ -22,5 +22,6 @@ Si vous souhaiter une réponse plus rapide utiliser le système de Q&A proposer 
 
 
  
+
 
 

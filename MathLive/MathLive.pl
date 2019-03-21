@@ -4,6 +4,8 @@
 
 title = Démo MathLive
 
+mathfield=latex
+
 before =
 
 text =
@@ -14,5 +16,6 @@ evaluator ==
 ast=eval(answer['1'])
 grade=(100,ast)
 ==
+
 
 

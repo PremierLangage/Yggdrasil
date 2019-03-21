@@ -25,13 +25,12 @@ form=@ /form/text_editor.html
 
 # This a bad the builder should not be mandatory 
 # we are creatin several process for nothing 
-builder==
-pass
-==
+@ /builder/none.py [builder.py]
 
 # A default grader (giving the 100 mark)
-grader=@ /grader/evaluator.py
+@ /grader/evaluator.py [grader.py]
 evalutor==
 grade=(100,"# Merci de vos commentaires.\n Toute l'équipe PL. ")
 ==
+
 
