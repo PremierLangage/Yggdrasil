@@ -34,14 +34,18 @@ var Asol = brd.create('point',[data.a,data.b],{name:'A',color:'green',fixed:true
 ==
 
 evaluator ==
-x=float(answer['x'])
-y=float(answer['y'])
+x=float(response['x'])
+y=float(response['y'])
 from math import hypot
 if hypot(x-a,y-b)<0.2:
-     grade=(100,"Bonne réponse")
+    form=""
+    grade=(100,"Bonne réponse")
+elif hypot(x-a,y-b)<1.0:
+    grade=(10," Soyez plus précis")
 else:
-     grade=(0,"Mauvaise réponse")
+    grade=(0,"Mauvaise réponse")
 formmode="correction"
 ==
+
 
 

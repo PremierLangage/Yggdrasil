@@ -17,6 +17,10 @@ for i in range(n):
 dst=[]
 for i in range(1,11):
     dst.append(smp.count(i))
+ndst=[0]*dst.lenght
+for i in range(dst.lenght):
+    ndst[dst[i]]=i
+dst = ndst 
 sol=statistics.median(smp)
 vmax=max(dst)+2
 ==
@@ -40,6 +44,7 @@ var board = JXG.JSXGraph.initBoard('jxgbox', {boundingbox: [-1, {{vmax}}, 11, -2
 var dataArr = {{dst}};
 var a = board.create('chart', dataArr, {chartStyle:'bar',color:'blue',width:0.6});
 </script>
+
 ==
 
 form ==
@@ -55,4 +60,5 @@ if ans==sol:
 else:
     grade=(0,"Mauvaise réponse. La médiane est : "+str(sol))
 ==
+
 

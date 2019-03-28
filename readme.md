@@ -1,24 +1,27 @@
 
 # Concept Exo
 
-Ce projet cherche à recencer des types d'exos.
+Ce projet cherche à recencer/créer des nouveaux types d'exercices.
 
-Pouvez soit y ajouter des demande de types d'exos soit des types d'exos effectifs.
+Pouvez soit y ajouter des **demandes** pour de nouveaux types d'exercices soit des nouveaux types effectifs d'exercices.
 
-Grosso modo si votre type d'exo est très spécifique à une discipline ranger le dans le repertoire adapté.
+Organisation des fichiers: 
+si votre type d'exercices est très spécifique à une discipline ranger le dans le repertoire adapté.
 
 Sinon placer le dans le repertoire general/.
 
-Si vous porposer un type d'exo faites le en deux temps avec un template et un exemple d'utilisation du template.
+Si vous proposer un type d'exercices faites le en deux temps avec un template et un exemple d'utilisation du template.
 
 Si vous proposer un moteur d'exercice (i.e. un exo qui utilise un fichier de donnée avec un format spécifique comme source de l'exercice )
-alors placter le dans motor/.
+alors placer le dans motor/.
 
-# Standard lib 
+# Standard lib stdlib/
 Ce repository a pour objectif de préparer des template pour devenir des standards dans la lib standard.
 
 
 Merci
 et bon code
+
+[Fichiers de demandes](demandes.md)
 
 

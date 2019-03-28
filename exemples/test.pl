@@ -16,8 +16,9 @@ form =
 
 evaluator ==
 essai=essai+1
-grade=(0,"")
+grade=(essai*essai,"")
 ==
+
 
 
 

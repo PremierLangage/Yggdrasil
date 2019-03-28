@@ -12,7 +12,9 @@ function jsmeOnLoad() {
     });
     submit.prop('disabled', true);
 }
-
+function onAfterSubmitPL() {
+    console.log("coucou"); 
+}
 </script>
 <!-- FORM -->
 <div class='form-container'>
@@ -24,5 +26,6 @@ function jsmeOnLoad() {
     <div id="JME2"></div>
     <input type="hidden" id="form_answer" value=''/>
 </div>
+
 
 

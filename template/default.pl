@@ -27,9 +27,11 @@ form=@ /form/text_editor.html
 # we are creatin several process for nothing 
 @ /builder/none.py [builder.py]
 
+
 # A default grader (giving the 100 mark)
 @ /grader/evaluator.py [grader.py]
-evalutor==
+
+evaluator==
 grade=(100,"# Merci de vos commentaires.\n Toute l'équipe PL. ")
 ==
 
