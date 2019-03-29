@@ -1,4 +1,4 @@
-extends=/Chemistry/templates/template.pl
+extends=/Chemistry/templates/molecules/template.pl
 
 @data.csv
 
@@ -15,6 +15,7 @@ if answer == expected:
 else:
     grade=(0, 'Vous avez répondu {0}, la bonne réponse était {1}'.format(answer, expected))
 ==
+
 
 
 

@@ -1,6 +1,6 @@
 #inclusion de fichiers
 @/utils/sandboxio.py
-@loader.py
+@../../utils/loader.py
 
 grader=@/grader/evaluator.py
 builder=@/builder/before.py
@@ -35,6 +35,7 @@ while True:
 ==
 
 form=@template.html
+
 
 
 
