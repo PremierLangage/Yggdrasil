@@ -1,0 +1,61 @@
+* Dans les systèmes d'exploitation de type Unix, quels sont les éléments modélisés avec la notion de fichier ?
+- L'humeur de l'utilisateur.
+- La fatigue des circuits imprimés.
+- La dissipation de la chaleur dans le CPU.
++ Les périphériques.
++ Les disques de stockage.
++ Les fichiers exécutables.
++ Les fichiers humainement lisibles.
++ La souris.
++ Le clavier.
++ Une connexion internet.
+
+* Quelles informations sont stockées dans l'inode d'un fichier ?
+- Le nom du fichier.
+- Le chemin pour atteindre le fichier depuis la racine.
+- Le type du fichier : image, film, fichier texte.
++ L'emplacement physique du fichier sur le péériphérique de stockage.
++ Les droits du fichier.
++ Des informations temporelles sur la création, dernière modification.
++ Le nombre de lien : nombre de ressources actives qui référence le fichier.
++ Le propriétaire du fichier.
+
+* Parmi les types suivants, lesquels sont des types de fichiers Unix ?
+- Archive oubliée.
+- Lien du sang.
+- Tube misical de l'été.
+- Périphérique mobile.
+- Fichier imprimable.
++ Fichier ordinaire.
++ Répertoire.
++ Périphérique caractère.
++ Périphérique bloc.
++ Tube nommé (FIFO).
++ Lien symbolique.
++ Socket, connexion réseau.
+
+* Que peut-on trouver dans l'organisation logique d'un disque dur formaté en Ext4 ?
+- Le bloc print pour exploiter les imprimantes.
+- Un dictionnaire Python des sockets et connexions réseaux.
+- Une liste des répertoires 
++ Un tableau d'inode (certaines sont libres, certaines sont occupées).
++ Des blocs de données de taille fixe pour stocker les fichiers.
++ Un morceau réservé au système pour le démarrage de la machine (boot block).
+
+* Sélectionner les déclarations correctes sur les modes de bufferisation.
+- La bufferisation totale est appliquée sur l'entrée standard **stdin**.
++ La sortie standard **stdout** est bufferisée par ligne.
++ La sortie standard d'erreur **stderr** n'est pas bufferisée.
+
+* Sélectionner les fonctionalités de redirection valides en Unix.
+- <2
+- ><
+- XD
+- :-;
++ >
++ |
++ >>
++ <
++ <<
++ 2>
++ 2&1>

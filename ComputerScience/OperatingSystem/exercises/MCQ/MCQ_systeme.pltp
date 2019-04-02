@@ -1,0 +1,16 @@
+# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
+author=Nicolas Borie
+
+title=Q.C.M. sur des notions de système d'exploitation
+tag=system
+
+introduction==
+Cette activité vous proposera 5 questions aléatoires aux réponses aléatoires pour 
+chaque groupe de notions liés aux systèmes d'exploitation.
+==
+
+@ /exercises/MCQ/generalites_systeme_MCQ.pl
+@ /exercises/MCQ/donnees_binaire_MCQ.pl
+@ /exercises/MCQ/notion_de_fichier_MCQ.pl
+
+
