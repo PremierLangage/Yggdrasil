@@ -1,4 +1,3 @@
-#marie-joelle.ramage@u-psud.fr estelle.gurviez@univ-smb.fr 
 title=Cinétique
 
 text==
@@ -76,6 +75,7 @@ grader=@/grader/evaluator.py
 builder=@/builder/before.py
 
 @ data.csv
+
 
 
 
