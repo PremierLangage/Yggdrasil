@@ -1,6 +1,7 @@
 author = Olivier Champalle
 title = Bonjour
 
+
 text==
 Ceci est un test de premier exercice
 ==
@@ -8,7 +9,8 @@ Ceci est un test de premier exercice
 #form =@ /form/text_editor.html
 form=<input type="text" id="form_co" size="1" value="{{ '?' }}" required>
 
-# Inclusion de la bibliothèque permettant d'importer la créartion d'un espace de travail individuel
+# Inclusion d'une bibliothèque dans l'espace de travail de la sandbox 
+# pour le builder et le grader 
 @ /utils/sandboxio.py
 grader==
 from sandboxio import *
@@ -19,6 +21,9 @@ if __name__ == "__main__":
 
     output(int(100),feedback)
 ==
+
+
+
 
 
 
