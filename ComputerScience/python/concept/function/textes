@@ -1,0 +1,156 @@
+Sundaram.pl
+
+## Crible de Sundaram
+
+Découvert en 1934 par le Mathématicien Indien S.P. Sundaram ce crible permet de trouvez des nombres premiers inférieurs à un certain seuil. Les nombres premiers sont tout ceux de la forme 2k+1 ou k n'est pas solution d'une équation i+j+2*ij avec i et j entiers. 
+
+On cherche les nombre premiers inférieurs à une certaine valeur n.
+
+Trois étapes:  
+1) créez une liste d'entiers de 1 à n. Ecrivez la fonction **createlist** qui retourne cette liste.  
+```
+    >>> createlist(5)
+    [1, 2, 3, 4, 5]
+```
+
+2) Eliminer de la liste tout les entiers de la forme $%i+j+2ij%$ ou $%0<i<=j<=n%$.
+Créez une fonction **crible1** qui prend une liste en parametre et qui fait cette élimination.    
+```
+    >>> crible1([1,2,3,4,5,6,7,8])
+    [1, 2, 3, 5, 6, 8]
+```
+
+3) Ecrire une fonction **crible2** qui prend en parametre une liste et qui retourne une liste ou tout les entiers de la liste ont été transformés par la formule 2i+1 :  
+```python
+	>>> crible2([1,2,3,5,6,8])
+	[3, 5, 7, 11, 13, 17]
+```
+
+
+autosubsets.pl
+
+
+# Sous ensembles 
+Ecrire une fonction *subsets* qui retourne l'ensemble trié des sous ensembles de l'ensemble passé en parametre.
+
+
+Exemple l'appel avec une liste à 2 éléments nous retourne une liste à 4 éléments :
+	subsets([1,2])
+	[set(), {1}, {2}, {1, 2}]
+
+Exercice Difficile.
+
+
+carre.pl
+
+## Une fonction carre ##
+Ecrivez une fonction **carre** qui retourne le carré de son paramêtre.
+
+carrecube.pl
+
+
+# Ecrire deux fonctions **carre** et **cube**
+ 
+	Qui prend un parametre entier n et qui retourne :
+
+	carre(n) retourne n*n
+	cube(n) retourne n*n*n  ou n**3
+
+# taboo
+
+	Ne pas utiliser print.
+
+
+decomposition.pl
+
+## Décomposition en facteurs premiers
+
+Tout entier positif *n* se décompose de manière unique en produit de nombres premiers. Par exemple, *301158* se décompose en
+<a href="https://www.codecogs.com/eqnedit.php?latex=2*3^4*11*13^2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?2*3^4*11*13^2" title="2*3^4*11*13^2" /></a>.
+###  *contient_puissance*
+Écrire une fonction **contient_puissance** qui prend comme arguments un entier positif
+*n* et un nombre premier
+*p* et qui renvoie le plus grand entier
+*k* tel que
+*n* est divisible par *p^k* .
+
+## *decomposition*
+
+En utilisant la fonction **contient_puissance** de la question précédente, écrire une fonction
+**decomposition**
+qui prend comme argument un entier positif
+*n*
+et qui affiche la décomposition de
+*n*
+en produit de nombres premiers. Par exemple, appelée avec
+*301158*
+comme argument, la fonction retourne la chaine :
+"2ˆ1 * 3ˆ4 * 11ˆ1 * 13ˆ2"
+.
+
+Pensez à utiliser la fonction join des chaines de caractères.
+
+
+estpremier.pl
+
+
+
+## Est Premier
+
+Écrire une fonction **estpremier** qui prend comme arguments un entier positif et qui retourne un booléen (True ou False) si l'entier passé en argument est premier on non.
+
+Un nombre est premier si il n'est divisible que par 1 et par lui même.
+Il faut donc tester les autres diviseurs possible si l'on en trouve un c'est fini et l'on peux retourner False sinon on n'en a pas trouvé et l'on peut retourner True.
+
+
+Exemples :
+
+	>>> estpremier(2)
+	True
+	>>> estpremier(12)
+	False
+	>>> estpremier(97)
+	True
+	>>> estpremier(65537)
+	True
+
+
+estpremier2.pl
+
+
+
+## Premier Suivant
+
+
+Écrire ou réutiliser une fonction **estpremier** qui prend comme arguments un entier positif et qui retourne un booléen (True ou False) si l'entier passé en argument est premier on non.
+
+Avec la fonction **estpremier** écrivez la fonction **premiersuivant** qui prend un entier *n* en argument et qui retourne le premier nombre premier strictement plus grand que *n*.
+
+Exemples :
+
+	>>> premiersuivant(2)
+	3
+	>>> premiersuivant(12)
+	13
+	>>> premiersuivant(97)
+	101
+	>>> premiersuivant(65537)
+	65539
+
+
+funcpuis.pl
+
+
+Ecrire une fonction **pm** qui recoit un argument entier **n** 
+qui affiche sur une ligne,  
+l'exposant de la puissance maximale de 2 qui divise chaque nombre de 1 à n.
+
+Par exemple:
+
+    >>> pm(15)  
+    0,1,0,2,0,1,0,3,0,1,0,2,0,1,0 
+
+$% 2^0 divise 1, 2^1 divise 2, 2^0 divise 3, etc %$
+
+
+functiongrader.py

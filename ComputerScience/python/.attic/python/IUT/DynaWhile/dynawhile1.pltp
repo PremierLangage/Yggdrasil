@@ -1,0 +1,45 @@
+
+
+title= Boucles aléatoires
+
+introduction==
+
+Quelques boucles aléatoires.
+
+Remarquer que vous devez utiliser soit **while** soit **for**.
+
+    for i in range(0,5):
+        print(i)
+
+et
+
+    i=0
+    while i<5:
+        print(i)
+        i=i+1
+
+affichent tout les deux :
+
+    0
+    1
+    2
+    3
+    4
+
+    
+
+==
+
+concept==
+@ repoplbase:/python/IUT/DynaWhile/dynawhile1.pl
+@ repoplbase:/python/IUT/DynaWhile/dynawhile2.pl
+@ repoplbase:/python/IUT/DynaWhile/dynawhile3.pl
+@ repoplbase:/python/IUT/DynaWhile/dynawhile4.pl
+@ repoplbase:/python/IUT/DynaWhile/dynawhile5.pl
+@ repoplbase:/python/IUT/DynaWhile/dynafor01.pl
+@ repoplbase:/python/IUT/DynaWhile/dynafor02.pl
+@ repoplbase:/python/IUT/DynaWhile/dynafor03.pl
+@ repoplbase:/python/IUT/DynaWhile/dynafor04.pl
+@ repoplbase:/python/IUT/DynaWhile/dynafor05.pl
+==
+

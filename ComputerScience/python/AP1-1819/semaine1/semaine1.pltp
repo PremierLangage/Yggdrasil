@@ -1,0 +1,93 @@
+
+
+
+title= Premier Tp AP1819
+
+## si vous souhaiter que vos enseignant ai une information quand ils se connectent 
+## à cette feuille d'exercice placer la dans cette balise
+teacher==
+
+bonjour,
+ceci est votre premier tp en temps que professeur ou tuteur sur la plateforme.
+
+Si vous n'avez jamais utilisé la plateforme, adressez vous au responsable du cours,
+ou à DR at upem.
+
+Les exercices sont à faire en autonomie
+votre présence est la pour aider à utiliser la plateforme (premières scéances)
+à débugger celle ci (premier année et nouveaux exercices),
+ puis à aider sur les élèments de cours (ici valeurs, variables, types:{int,float,bool,str} )
+
+remarquer l'absence de référence ?? TODO c'est normal ??
+
+
+
+==
+
+
+
+
+# ici vous introduisez les sujets de la feuille 
+# ceci est un exemple a modifier 
+introduction==
+
+Un programme utile manipule des informations (data). 
+
+Certaines de ces informations sont constantes,
+le nombre de jours du mois de mars : 31
+le nombre PI : 3,14
+le nom des jours de la semaine: "Lundi", "Mardi", etc
+
+Des fois ces données peuvent dépendre d'un élément extérieur et donc changer d'une exécution à l'autre on utilise donc une **variable** pour __identifier__ cette information.
+
+En python les varaibles doivent simplement être initialisé avant utilisation, ce qui différenties les variables des "inconnues" des mathématiques. 
+
+Comme les modalités de stockage de l'information dépend de l'interprétation que l'on en fait, et reciproquement nous alons pouvoir interpreter de plusieurs facons une meme information binaire.
+
+Par exemple: le nombre 97 en mémoire peut être interprété comme l'entier qutre-vingt-dix sept ou comme le caractère 'a' (a minuscule) car 97 est code numerique associé à la lettre 'a', remarquez l'utilisation des  apostrophes (') pour indiquer  que l'ont souhaite reconnaitre cette constante comme un caractère et non pas comme le nom d'une variable.
+
+Pour savoir comment interprete une information nous allons la type :
+
+Le typeage d'une zone mémoire permettant à la machine de manipuler l'information avec le bon comportement.
+
+### Au menu du jour
+
+Dans les exercices suivants vous allez donc 
+1. **calculer des expressions**, vous pouvez vous baser sur vos connaissance mathématiques avec les elememts de notation suivants :
+    + addition, - soustraction, * multiplication, ** exponentiation,
+    / division, // division entière, % modulo, 
+
+Pour les operateurs de comparaisons :
+    == égalité, >= supérieur ou égal, < inférieur,  ou égal
+    =! différent, > supérieur, <= inférieur ou égalité
+
+Remarque: le simple = est reservé à l'opération d'affectation (association d'un nom avec une valeur).
+
+2. Créer des variables
+
+2. Calculer des expressions avec des variables.
+
+3. Associer les bons types aux bonnes expressions.
+
+Les exercices sont aléatoires mais ont une difficulté variable qui est prise en compte dans l'évaluation.
+
+
+
+==
+
+
+oublieoi==
+@ ../../concept/variable/valeurs.pl
+@ ../../concept/variable/variable001.pl
+@ ../../concept/variable/variable002.pl
+@ ../../concept/variable/variable003.pl
+==
+@ ../../concept/value/floatexpression.pl
+
+
+
+
+
+
+
+

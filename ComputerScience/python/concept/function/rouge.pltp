@@ -1,0 +1,30 @@
+
+title= Fonction Piste Rouge
+introduction==
+
+Voici quelques fonctions plus complexes.
+
+Vous pouvez les faire dans l'ordre que vous vouler. 
+Mais certain exercices doivent être fait avant d'autres.
+En particulier estpremier est utilisé dans plusieurs autres.
+
+Amusez vous bien.
+
+==
+
+
+
+@ Sundaram.pl
+@ estpremier.pl
+@ estpremier2.pl
+@ estpremiersqrt.pl
+@ decomposition.pl
+@ funcpuis.pl
+@ romains.pl
+@ romcode.pl
+@ writebase.pl
+@ histogramme1.pl
+@ histolettre.pl
+@ histolettre2.pl
+@ autosubsets.pl
+

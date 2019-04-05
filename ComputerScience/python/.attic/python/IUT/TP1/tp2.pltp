@@ -1,0 +1,28 @@
+
+author=DR 2016
+
+title= Quelques Codes aléatoires 
+
+
+
+introduction==
+
+ Bonjour
+
+Premier TP sur la plateforme pour vous familiariser avec son utilisation. 
+
+==
+
+tag=print|input|variables|identifieurs
+
+
+concept==debug
+@ /python/IUT/TP1/dynavar.pl
+@ /python/IUT/TP1/dynavar2.pl
+@ /python/IUT/TP1/dynavar3.pl
+@ /python/IUT/TP1/dynavar1.pl
+@ /python/IUT/TP1/dynavar.pl
+@ /python/IUT/TP1/dynavar.pl
+@ /python/IUT/TP1/dynavar.pl
+@ /python/IUT/TP1/dynavar.pl
+==

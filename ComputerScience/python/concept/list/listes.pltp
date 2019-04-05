@@ -1,0 +1,47 @@
+
+
+title=Listes
+
+introduction==
+
+Des fonctions de manipulation de liste.
+
+
+	def malongueur(l):
+	    n=0
+	    for e in l:
+		n = n + 1 
+	    return n
+	
+	def somme(l):
+	   s=0
+	   for e in l:
+	       s = s + e
+	   return s
+
+
+Pour ceux qui s'ennuient: les trois derniers exercices sont aléatoires et les faire du premier coup devient un défi.
+
+==
+
+
+
+@ nb_pairs.pl
+@ existe_impair.pl
+@ infos_liste.pl
+@ pair_impair.pl
+@ tous_pairs.pl
+@ pairs.pl
+@ premiers_entiers.pl
+@ anatole.pl
+@ boileau.pl
+@ dynafunclist.pl
+ 
+titi==
+a traiter
+commonelementsist.pl
+soussuite.pl
+lireuneliste.pl
+lireunelisteint.pl
+==
+

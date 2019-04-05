@@ -1,0 +1,22 @@
+
+
+name=firsterrors.pltp
+
+introduction==
+
+Introduction aux erreur de compilation.
+
+==
+
+title==
+Comprendre les erreurs de compilation
+==
+
+
+@ corrigemoi_1.pl
+@ corrigemoi_2.pl
+@ corrigemoi_3.pl
+@ corrigemoi_4.pl
+@ corrigemoi_5.pl
+@ corrigemoi_6.pl
+@ corrigemoi_7.pl
