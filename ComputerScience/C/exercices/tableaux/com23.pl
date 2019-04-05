@@ -6,7 +6,7 @@ author=BEN HAMOUDA Amel
 name=Deux tableau en paramètre renvoie trois tableaux
 title=Deux tableau en paramètre renvoie trois tableaux
 tag=deuxTabReturnTroisTab
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 language=c_cpp
 
 text==

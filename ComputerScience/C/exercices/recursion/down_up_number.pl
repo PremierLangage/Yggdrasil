@@ -5,7 +5,7 @@
 author=Nicolas Borie
 title=Égrener des nombres récursivements
 tag=function|recursion
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

@@ -6,7 +6,7 @@ author=Nicolas Borie
 name=Structure C pour une personne
 title=Structure C pour une personne
 tag=structure
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 
 text==
 Déclarer et définir une *structure* C nommé *People*. Cette structure

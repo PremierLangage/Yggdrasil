@@ -5,7 +5,7 @@
 author=Nicolas Borie
 title=Macro chaine depuis argument 
 tag=macro
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 Écrire une macro EVAL prenant un seul paramètre qui sera une

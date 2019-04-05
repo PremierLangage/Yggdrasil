@@ -6,7 +6,7 @@ author=BEN HAMOUDA Amel
 name=Copier un tableau
 title=Copier un tableau
 tag=copietableau
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 language=c_cpp
 
 text==

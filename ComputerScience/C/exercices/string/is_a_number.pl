@@ -3,7 +3,7 @@ author=Nicolas Borie
 name=Reconnaître un nombre
 title=Reconnaître un nombre
 tag=string
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 
 text==
 Écrire une fonction *is_a_number* qui prend en argument une chaîne de caractères C

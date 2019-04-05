@@ -5,7 +5,7 @@
 author=Nicolas Borie
 title=Coefficients binomiaux en récursif
 tag=function|recursion
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

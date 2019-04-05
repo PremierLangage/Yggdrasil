@@ -6,7 +6,7 @@ author=Dominique & Nicolas
 name=fin d'une chaîne de caractères
 title=fin d'une chaîne de caractères
 tag=string|function|loop|pointer
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 
 text==
 

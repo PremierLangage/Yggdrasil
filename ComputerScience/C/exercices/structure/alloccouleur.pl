@@ -6,7 +6,7 @@ author=Dominique Revuz
 name=Allocation d'une structure Couleur avec 3 entiers
 title=Allocation d'une structure Couleur avec 3 entiers
 tag=structure|malloc|function
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 
 text==
 Déclarer et définir un nouveau type structuré C nommé **Color**. 

@@ -6,7 +6,7 @@ author=Elise Hardy
 name=Enumeration avec des valeurs précises
 title=Enumeration avec des valeurs précises
 tag=structure
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 
 text==
 Déclarer une enumeration *Note* contenant *Mathieu, Cassandre, Laura, Thomas, Aurelie, Adrien* dont les valeurs respectifs sont *8,9,13,15,16,19*

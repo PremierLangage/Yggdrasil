@@ -5,7 +5,7 @@
 author=Nicolas Borie
 title=Divisibilité par 7
 tag=function|recursion|array
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

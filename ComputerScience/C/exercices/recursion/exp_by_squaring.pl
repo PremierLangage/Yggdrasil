@@ -6,7 +6,7 @@ author=Nicolas Borie
 name=Exponentiation rapide en récursif
 title=Exponentiation rapide en récursif
 tag=function|recursion
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

@@ -8,7 +8,7 @@ author=Nicolas Borie
 name=Structure C pour les jours de la semaine
 title=Structure C pour les jours de la semaine
 tag=structure
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 
 text==
 Déclarer et définir une *structure* C nommé *Jour*. Cette structure

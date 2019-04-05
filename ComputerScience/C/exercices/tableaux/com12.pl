@@ -6,7 +6,7 @@ author=BEN HAMOUDA Amel
 name=Un tableau en paramètre renvoie deux tableaux
 title=Un tableau en paramètre renvoie deux tableaux
 tag=unTabReturnDeuxTab
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 language=c_cpp
 
 text==

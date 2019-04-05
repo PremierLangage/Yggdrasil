@@ -6,7 +6,7 @@ author=Nicolas Borie
 name=Structure pour points entiers en dimension 2
 title=Structure pour points entiers en dimension 2
 tag=structure
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 
 text==
 Déclarer et définir une *structure* C nommé **Point2d**. Cette structure

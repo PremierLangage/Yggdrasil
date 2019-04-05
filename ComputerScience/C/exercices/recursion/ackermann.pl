@@ -5,7 +5,7 @@
 author=Nicolas Borie
 title=Fonction d'Ackermann
 tag=function|recursion
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

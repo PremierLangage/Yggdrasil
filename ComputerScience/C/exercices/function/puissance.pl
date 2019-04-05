@@ -5,7 +5,7 @@
 author=Elise Hardy
 title=Écrire une fonction qui calcule la puissance d'un nombre
 tag=function
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

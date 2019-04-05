@@ -5,7 +5,7 @@
 author=Nicolas Borie
 title=Macro pour calculer un carré
 tag=macro
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 Écrire une macro **SQUARE** qui prend en argument un seul paramètre

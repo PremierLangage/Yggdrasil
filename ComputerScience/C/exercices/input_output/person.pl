@@ -5,7 +5,7 @@
 author=Nicolas Borie
 title=Données d'une personne entrée au clavier
 tag=input_output
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

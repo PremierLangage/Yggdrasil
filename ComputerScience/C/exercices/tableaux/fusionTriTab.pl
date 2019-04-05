@@ -6,7 +6,7 @@ author=BEN HAMOUDA Amel
 name=Trier un tableau
 title=Trier un tableau
 tag=tritableau
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 language=c_cpp
 
 text==

@@ -6,7 +6,7 @@ author=BEN HAMOUDA Amel
 name=Supprime les doublons d'un tableau
 title=Supprime les doublons d'un tableau
 tag=supprimeDoublons
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 language=c_cpp
 
 text==

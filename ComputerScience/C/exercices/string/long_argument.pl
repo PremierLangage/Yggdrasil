@@ -6,7 +6,7 @@ author=Nicolas Borie
 name=Encadrer le plus long argument d'un programme C
 title=Encadrer le plus long argument d'un programme C
 tag=string|program
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 
 text==
 

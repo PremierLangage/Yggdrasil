@@ -5,7 +5,7 @@
 author=Nicolas Borie
 title=PGCD avec soustractions
 tag=function|recursion
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

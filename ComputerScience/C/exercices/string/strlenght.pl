@@ -6,7 +6,7 @@ author=Nicolas Borie
 name=longueur d'une chaîne de caractères
 title=longueur d'une chaîne de caractères
 tag=string
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 
 text==
 

@@ -5,7 +5,7 @@
 author=Nicolas Borie
 title=Somme de deux entiers données au clavier
 tag=input_output
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

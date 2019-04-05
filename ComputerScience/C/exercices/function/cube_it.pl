@@ -3,7 +3,7 @@
 author=Dominique Revuz
 title= Passe le moi au Cube
 tag=function|pointer
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

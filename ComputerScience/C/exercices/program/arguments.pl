@@ -6,7 +6,7 @@ author=Nicolas Borie
 name=Afficher les arguments d'un programme C
 title=Afficher les arguments d'un programme C
 tag=program
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

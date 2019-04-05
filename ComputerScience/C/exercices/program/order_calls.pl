@@ -6,7 +6,7 @@ author=Nicolas Borie
 name=Ordonner les appels de fonctions
 title=Ordonner les appels de fonctions
 tag=program
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

@@ -4,7 +4,7 @@
 author=NB&DR
 title= Repérer les voyelles
 tag=function|string|strchr
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

@@ -6,7 +6,7 @@ author=Nicolas Borie
 name=Mettre les lettres en majuscule dans une chaîne
 title=Mettre les lettres en majuscule dans une chaîne
 tag=string|function
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 
 text==
 
