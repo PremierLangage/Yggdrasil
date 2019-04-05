@@ -6,7 +6,7 @@ author=Dominique & Nicolas
 name=Combien de caractères
 title=Combien de caractères
 tag=string|function|loop|pointer
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

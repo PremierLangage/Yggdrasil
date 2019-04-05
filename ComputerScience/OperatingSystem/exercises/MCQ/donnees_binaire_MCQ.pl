@@ -4,9 +4,9 @@ author=Nicolas Borie
 title=Données binaires dans nos ordinateurs modernes
 tag=system|binary
 
-template=/templates/parametrized_MCQ.pl
+template=/ComputerScience/OperatingSystem/templates/parametrized_MCQ.pl
 
-@ /exercises/MCQ/donnees_binaire.txt
+@ donnees_binaire.txt
 data_from_file=donnees_binaire.txt
 
 number_question=20

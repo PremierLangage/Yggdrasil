@@ -5,7 +5,7 @@
 author=DR
 title=Initialisation d'un tableau avec les carrés des entiers
 tag=array|function
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

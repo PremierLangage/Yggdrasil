@@ -6,7 +6,7 @@
 author=Elise Hardy et DR
 title=Maximum dans une sous-partie d'un tableau d'entiers
 tag=function
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

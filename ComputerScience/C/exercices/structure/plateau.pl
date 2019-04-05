@@ -6,7 +6,7 @@ author=Elise Hardy
 name=Structure C pour un plateau
 title=Structure C pour un plateau
 tag=structure
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 
 text==
 Déclarer et définir une *structure* C nommé *Plateau*. Cette structure

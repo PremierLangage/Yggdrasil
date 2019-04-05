@@ -5,7 +5,7 @@
 author=Nicolas Borie
 title=Somme des chiffres d'un nombre
 tag=function|recursion|array
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

@@ -6,7 +6,7 @@ author=Nicolas Borie
 name=Trouver l'index d'un élément
 title=Trouver l'index d'un élément
 tag=array
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 Écrire une fonction C **find_index** qui prend en paramètre un tableau

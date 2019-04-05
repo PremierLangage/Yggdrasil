@@ -5,7 +5,7 @@
 author=Nicolas Borie
 title=Fonction qui affiche la date de compilation
 tag=macro|function
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

@@ -5,7 +5,7 @@
 author=Nicolas Borie
 title=Déclaration de constantes pour une interface graphique
 tag=macro
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 Définir quatre constantes préprocesseurs pour une interface

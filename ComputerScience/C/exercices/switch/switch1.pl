@@ -6,7 +6,7 @@ author=NB&DR
 
 title=Maximum de trois entiers
 tag=function|string|whitch
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 
 text==
 

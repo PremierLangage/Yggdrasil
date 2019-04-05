@@ -5,7 +5,7 @@
 author=Nicolas Borie
 title=Somme des éléments positifs d'un tableau
 tag=array
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 Écrire une fonction C **sum_of_positives** qui prend en paramètre un

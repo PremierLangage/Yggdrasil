@@ -3,7 +3,7 @@ author=Nicolas Borie
 
 title=Élever au carré les éléments d'un tableau
 tag=array
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 Écrire une fonction qui prend en argument un tableau d'entiers ainsi

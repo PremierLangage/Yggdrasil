@@ -5,7 +5,7 @@ author=NB&DR
 
 title= Présent dans une chaine
 tag=function|string|strchr
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 
 text==
 

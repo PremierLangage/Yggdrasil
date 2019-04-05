@@ -5,7 +5,7 @@
 author=Nicolas Borie
 title=Minimum de trois entiers
 tag=function|recursion
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

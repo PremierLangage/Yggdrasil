@@ -6,7 +6,7 @@ author=Nicolas Borie
 
 title=Initialisation de Structure C 
 tag=structure
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 
 
 

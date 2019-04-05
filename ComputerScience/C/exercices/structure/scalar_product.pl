@@ -6,7 +6,7 @@ author=Nicolas Borie
 name=Produit scalaire de vecteurs en dimension 3
 title=Produit scalaire de vecteurs en dimension 3
 tag=structure|function
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 
 text==
 Le produit scalaire $%\langle u, v \rangle%$ de deux vecteurs $%u = (x_u, y_u, z_u)%$ et 

@@ -4,7 +4,7 @@
 author=Dominique Revuz
 title= Incremente le 
 tag=function
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

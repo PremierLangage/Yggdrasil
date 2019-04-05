@@ -6,7 +6,7 @@ author=NB&DR
 
 title=Maximum de trois entiers
 tag=function
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

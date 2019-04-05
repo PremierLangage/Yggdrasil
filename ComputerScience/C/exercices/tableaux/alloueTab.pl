@@ -6,7 +6,7 @@ author=BEN HAMOUDA Amel
 name=Allocation d'un tableau
 title=Allocation d'un tableau
 tag=alloueTableau
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 language=c_cpp
 
 text==

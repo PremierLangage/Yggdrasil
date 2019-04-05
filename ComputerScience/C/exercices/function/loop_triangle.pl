@@ -5,7 +5,7 @@
 author=Nicolas Borie
 title=Un triangle avec des caractères ascii
 tag=function
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

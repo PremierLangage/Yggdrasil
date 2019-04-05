@@ -4,7 +4,7 @@ author=Nicolas Borie
 title=Généralités sur les systèmes d'exploitation
 tag=system
 
-template=/templates/qcm.pl
+template=/ComputerScience/OperatingSystem/templates/qcm.pl
 
 @ /exercises/MCQ/generalities/questions.py [questions.txt]
 data_from_file=questions.txt

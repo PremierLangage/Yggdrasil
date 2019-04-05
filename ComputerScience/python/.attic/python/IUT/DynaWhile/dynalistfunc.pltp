@@ -1,0 +1,37 @@
+
+
+title=  Quelques fonctions sur des listes 
+
+introduction==
+
+Quelques fonction aléatoires.
+
+Par exemple avec l'énoncé suivant :
+
+    la fonction f retourne le max des cubes des entiers positifs de la liste l.
+    Si l'intervalle ne contient aucun entiers positifs la fonction retourne None.
+
+On peut répondre de la façon suivante :
+
+    def f(l):
+        max =0
+        vide=True
+        for  i in l :
+            if i>0:
+                vide=False
+                if max < i**3:
+                    max = i**3
+        if not vide:
+            return max
+        return None
+
+==
+
+concept==
+@ repoplbase:/python/IUT/DynaWhile/dynalistfunc01.pl
+@ repoplbase:/python/IUT/DynaWhile/dynalistfunc02.pl
+@ repoplbase:/python/IUT/DynaWhile/dynalistfunc03.pl
+@ repoplbase:/python/IUT/DynaWhile/dynalistfunc04.pl
+@ repoplbase:/python/IUT/DynaWhile/dynalistfunc05.pl
+==
+

@@ -1,0 +1,31 @@
+title= Calculs de calendrier
+
+
+introduction==
+
+Il existe de très nombreuses façon de compter les jours et les années à travers les époques, les régions et les cultures. Cette diversité rend la manipulation de dates par des programmes informatiques assez complexe.
+
+Pour simplifier, nous allons ici nous intéresser à des dates dans un calendrier idéalisé, le calendrier actuellement utilisé en France, mais dont on aurait prolongé la validité arbitrairement loin dans le passé et dans le futur (on appelle ce calendrier Grégorien proleptique).
+
+L’avantage d’utiliser un calendrier simplifié de ce genre, c’est qu’on peut plus facilement raisonner
+par rapport à une origine fixée (par exemple le 01/01/01, premier janvier de l’an 1, aussi appelé “jour 1”). Cette date est également considérée comme le début de l’ère dite commune, en latin era vulgaris.
+
+Une fois une origine des dates fixée et un calendrier sufisamment régulier choisi, il est possible de numéroter les jours qui se sont écoulés entre ce jour 1 et n’importe quelle date représentée par un triplet (jour, mois, année). Dans ce projet, nous allons nous intéresser au calcul du “numéro de jour” d’une date donnée, c’est à dire le nombre de jours qui l’ont précédé depuis le 01/01/01 plus 1 (le 0/01/01 étant considéré comme le jour numéro 1). C’est cette convention qui est utilisé par Python (et d’autres langages de programmation) pour représenter les dates.
+
+Dans ce mini-projet nous nous servirons de ce “numéro de jour” pour calculer par exemple le jour de la semaine auquel correspond une date donnée.
+
+
+==
+
+
+concept==
+@ /python/AP1MP/question1.pl
+@ /python/AP1MP/question3.pl
+@ /python/AP1MP/question4.pl
+@ /python/AP1MP/question5.pl
+@ /python/AP1MP/question6.pl
+@ /python/AP1MP/question7.pl
+@ /python/AP1MP/question8.pl
+@ /python/AP1MP/question9.pl
+@ /python/AP1MP/question10.pl
+==

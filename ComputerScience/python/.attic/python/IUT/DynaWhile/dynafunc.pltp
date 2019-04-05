@@ -1,0 +1,39 @@
+
+
+title=  Quelques fonctions 
+
+introduction==
+
+Quelques fonction aléatoires.
+
+Par exemple avec l'énoncé suivant :
+
+    la fonction f retourne le max des cubes des entiers positifs entre bas et haut.
+    Si l'intervalle ne contient aucun entiers positifs la fonction retourne None.
+
+On peut répondre de la façon suivante :
+
+    def f(bas,haut):
+        if haut <0:
+            return None # deuxième condition 
+        max=0
+        if bas >0 :
+            i=bas
+        else:
+            i=0
+        while i < haut :
+            if max < i**3:
+                max = i**3
+            i=i+1
+        return max
+            
+==
+
+concept==
+@ repoplbase:/python/IUT/DynaWhile/dynafunc01.pl
+@ repoplbase:/python/IUT/DynaWhile/dynafunc02.pl
+@ repoplbase:/python/IUT/DynaWhile/dynafunc03.pl
+@ repoplbase:/python/IUT/DynaWhile/dynafunc04.pl
+@ repoplbase:/python/IUT/DynaWhile/dynafunc05.pl
+==
+

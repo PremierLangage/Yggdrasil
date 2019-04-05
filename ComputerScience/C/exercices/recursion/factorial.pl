@@ -5,7 +5,7 @@
 author=Nicolas Borie
 title=Factorielle d'un entier positif
 tag=function|recursion
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

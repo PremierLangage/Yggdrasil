@@ -4,7 +4,7 @@ author=NB&DR
 
 title= Fibonacci 
 tag=function|string|recursivity
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

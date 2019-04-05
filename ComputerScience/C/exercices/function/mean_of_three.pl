@@ -5,7 +5,7 @@
 author=NB&DR
 title=La moyenne de trois entiers
 tag=function
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

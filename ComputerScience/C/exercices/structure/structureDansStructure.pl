@@ -6,7 +6,7 @@ author=Elise Hardy
 name=Structure contenant une autre structure
 title=Structure contenant une autre structure
 tag=structure
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 
 text==
     Déclarer une structure *Point* contenant deux entier *x* et *y*.

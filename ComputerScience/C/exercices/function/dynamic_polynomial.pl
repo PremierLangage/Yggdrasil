@@ -5,7 +5,7 @@
 author=N Borie & DR
 title=Écrire une fonction qui calcule un polynome
 tag=function|return
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 
 

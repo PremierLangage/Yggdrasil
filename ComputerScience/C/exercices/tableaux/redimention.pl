@@ -6,7 +6,7 @@ author=BEN HAMOUDA Amel
 name=Redimentionne un tableau
 title=Redimentionne un tableau
 tag=redimentionTab
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 language=c_cpp
 
 text==

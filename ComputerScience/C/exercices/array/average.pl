@@ -5,7 +5,7 @@
 author=Nicolas Borie
 title=Moyenne des éléments d'un tableau
 tag=array
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 Écrire une fonction C **average_array** qui prend en argument un

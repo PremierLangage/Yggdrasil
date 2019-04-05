@@ -9,7 +9,7 @@ author=Nicolas Borie
 name=Premier programme en C
 title=Premier programme en C
 tag=program
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

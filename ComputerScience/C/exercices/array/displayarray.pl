@@ -6,7 +6,7 @@ author=Nicolas Borie
 name=Afficher le contenu d'un tableau
 title=Afficher le contenu d'un tableau
 tag=output|array
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 Écrire une fonction qui affiche le contenu d'un tableau C. Cette

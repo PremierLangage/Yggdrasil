@@ -6,7 +6,7 @@ author=Elise Hardy
 name=Tableau de structure
 title=Tableau de structure
 tag=structure
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 
 text==
 Déclarer une énumaration *Fruit* contenant les fruits *pomme, poire, banane, cerise*.

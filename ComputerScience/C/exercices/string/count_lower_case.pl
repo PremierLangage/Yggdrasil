@@ -2,7 +2,7 @@
 author=Nicolas Borie
 title=Compter les lettres minuscules
 tag=string
-template=/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 

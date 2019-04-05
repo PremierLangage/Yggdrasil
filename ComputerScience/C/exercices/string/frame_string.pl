@@ -6,7 +6,7 @@ author=Nicolas Borie
 name=Encadrer une chaine de caractères C
 title=Encadrer une chaine de caractères C
 tag=string|function
-template=/template/autograderC
+extends=/ComputerScience/C/template/autograderC.pl
 
 text==
 
