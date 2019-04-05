@@ -5,11 +5,15 @@ import sys, json, jsonpickle
 from jinja2 import Template
 import random
 
+def render_dic_strings(d,dic):
+    for k, v in d.items():
+        if isinstance(v, dict):
+            render_dic_strings(v,dic)
+        else:
+            d[k]=Template(d[k]).render(dic)
+
 def render_input_config(dic):
-    for name,config in dic['input'].items():
-        for key in config:
-            if isinstance(config[key], str):
-                config[key]=Template(config[key]).render(dic)
+    render_dic_strings(dic['input'],dic)
 
 def build_head(dic):
     head=""
@@ -88,4 +92,5 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
     
     sys.exit(0)
+
 

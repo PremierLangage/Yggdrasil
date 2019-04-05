@@ -20,7 +20,7 @@ def build_form(form_template,dic):
         config['name']=name
         state = {'inputmode':'final'}
         input_context={**config,**state}
-        form_context['input_'+name]=Template(dic[input_type+'_template']).render(state)
+        form_context['input_'+name]=Template(dic[input_type+'_template']).render(input_context)
     return Template(form_template).render(form_context)
 
 def format_analysis(msg,text,n,lang):
@@ -136,5 +136,6 @@ if __name__ == "__main__":
     dic['form']=dic['head']+build_form(dic['form0'],dic)
 
     output(score,format_feedback,dic)
+
 
 
