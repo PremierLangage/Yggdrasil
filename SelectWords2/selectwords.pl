@@ -5,8 +5,7 @@
 
 
 before ==
-from utilstext import swsplit
-htmltextselect=swsplit(textselect)
+
 formmode="input"
 ==
 
@@ -37,6 +36,7 @@ grade=(score,feedback)
 
 formmode="correction"
 ==
+
 
 
 

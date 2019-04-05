@@ -1,6 +1,4 @@
-
-
-{% if formmode == "input" %}
+{% if inputmode == "initial" %}
 <div id="textselect"
  style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" 
  unselectable="on"
@@ -35,7 +33,7 @@ for (i = 0; i < words.length; i++) {
 </script>
 {% endif %}
 
-{% if formmode == "correction" %}
+{% if inputmode == "final" %}
 
 <style>
 .tooltip {
@@ -70,6 +68,4 @@ for (i = 0; i < missedwords.length; i++) {
 </script>
 
 {% endif %}
-
-
 
