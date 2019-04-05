@@ -12,7 +12,7 @@ utilisé correctement.
 ==
 
 @ lib:/utils/sandboxio.py
-@ /templates/utils.py
+@ utils.py
 
 builder=@ parametrized_MCQ_build.py
 grader=@ parametrized_MCQ_evaluator.py
