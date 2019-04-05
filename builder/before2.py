@@ -8,7 +8,8 @@ import random
 def render_input_config(dic):
     for name,config in dic['input'].items():
         for key in config:
-            config[key]=Template(config[key]).render(dic)
+            if isinstance(config[key], str):
+                config[key]=Template(config[key]).render(dic)
 
 def build_head(dic):
     head=""
@@ -87,3 +88,4 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
     
     sys.exit(0)
+
