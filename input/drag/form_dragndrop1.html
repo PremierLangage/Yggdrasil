@@ -1,0 +1,50 @@
+<table>
+<tr>
+<td>{{htmlform | safe}}</td>
+<td><div id="tags"></div></td>
+</tr>
+</table>
+<div id="inputs"></div>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+var text = document.getElementById(ev.target.id).textContent; ev.dataTransfer.setData("text",text);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var text = ev.dataTransfer.getData("text");
+  document.getElementById(ev.target.id).textContent = text;
+  document.getElementById('form_'+ev.target.id).value = text;
+}
+</script>
+
+<style type="text/css" scoped>
+	.dragdrop { border: 1px solid #aaaaaa;background-color:yellow;padding-left: 0.5em;padding-right: 0.5em;border-radius: 0.0em;display:inline-block;cursor: pointer;}
+</style>
+
+<script>
+list={{listtags}}
+for (i = 0; i < list.length; i++) {
+    var tag = document.createElement("span");
+    tag.setAttribute('class', "dragdrop");
+    tag.setAttribute('draggable', "true");
+    tag.ondragstart = function(event) {drag(event)};
+    tag.textContent=list[i];
+    tag.id="tag"+i.toString();
+    var parent = document.getElementById("tags");
+    parent.appendChild(tag);
+    var input = document.createElement("input");
+    input.type = "hidden";
+    input.id="form_answer"+i.toString();
+    var parent = document.getElementById("inputs");
+    parent.appendChild(input);
+}
+</script>
+
+
+
+
