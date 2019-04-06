@@ -15,8 +15,8 @@ latexB = latex(B)
 
 resizable_matrix_tags = [{
     'name':'matrice',
-    'max_rows':5,
-    'max_cols':5,
+    'max_rows':5, # maximum number of rows of extensible matrix
+    'max_cols':5, # maximum number of columns of extensible matrix
     'cell_width':'3em',
     'cell_height':'2em',
     'input_style':'width:2em'}]
@@ -36,16 +36,20 @@ $% AB =%$  {{ input_resizable_matrix_matrice | safe }}
 ==
 
 evaluator ==
+import json
+from jinja2 import Template
 
 product = A*B
 matrice = answer['resizable_matrix_matrice']
+# returned matrix is a double array of strings
+# entries. entries will need to be sympified
 
 score = 100
 numerror = 0
 feedback = ''
 solution = ''
 
-
+ok_answer = []
 
 if len(matrice) != m:
     feedback = 'Votre matrice n\'a pas le bon nombre de lignes. '+'Elle a '+str(len(matrice))+ ' lignes.'
@@ -58,22 +62,21 @@ if len(matrice[0]) != p:
 if len(matrice) == m and len(matrice[0]) == p : 
     for i in range(m):
         for j in range(p):
-            # 'produit' is a sympy matrix, its entries are accessed with a different syntax then the array 'matrice' containing the inputs.
             try:
               coeff = sp.sympify(matrice[i][j])
             except:
               score = 10
               numerror=-1
-              feedback += '<br> Le coefficient ('+str(i)+str(j)+') a été mal saisi'
+              ok_answer.append( ['form_resizable_matrix_matrice_'+str(i)+str(j), 'bad_input'])
             else:
               if is_equal(coeff, product[i,j]): 
-                pass
+                ok_answer.append( ['form_resizable_matrix_matrice_'+str(i)+str(j), 'good_answer'])
               else: 
                 feedback = 'Raté'
                 score = 0
                 numerror = 1
+                ok_answer.append( ['form_resizable_matrix_matrice_'+str(i)+str(j), 'wrong_answer'])
+
+ok_answer = json.dumps(ok_answer)
+form += '<input type="hidden" id="okanswer" value="{{ ok_answer }}" /> '
 ==
-
-
-
-

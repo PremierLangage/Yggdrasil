@@ -24,23 +24,17 @@ fixed_matrix_tags = [{
 ==
 
 text== 
-Modifiez le moins de coefficients possibles de la matrice suivante afin de la rendre antisymétrique.
-
+Rendez cette matrice antisymétrique en modifiant le moins de coefficients possible.
 == 
 
 form==
-<script>
-function onAfterSubmitPL() {
-    console.log("coucou"); 
-}
-</script>
 <div style="text-align:center">
 {{ input_fixed_matrix_matrice | safe }}
 </div>
 ==
 
 evaluator ==
-from jinja2 import Template
+import json
 
 matrice = Matrix(answer['fixed_matrix_matrice'])
 # the value returned is a matrix of strings, entries will need to be sympified. 
@@ -88,8 +82,14 @@ if feedback == 'OK' :
     else: 
         feedback = 'Vous avez fait trop de modifications: {0} modification(s) suffisaient, vous en avez fait {1}'.format(min_modifs, modifs)
 
+ok_answer = json.dumps(ok_answer)
+form += '<input type="hidden" id="okanswer" value="{{ ok_answer }}" /> '
 
 ==
+
+
+
+
 
 
 

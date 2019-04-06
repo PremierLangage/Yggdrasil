@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mathlive@0.26.0/dist/mathlive.core.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mathlive@0.26.0/dist/mathlive.css">
+<style>
+.mathfield {
+    border: 1px solid #ddd;
+    padding:5px;
+    margin: 10px 0 10px 0;
+    border-radius:5px;
+    font-size: large;
+    background-color: #fff;
+    width: 80%; 
+    float: left; 
+}
+#output {
+    padding:5px;
+    border: 1px solid #000;
+}
+</style>
+<div class="mathfield" id='mf_{{name}}'></div>
+<input type='text' id='form_{{name}}'></div>
+<script src="https://cdn.jsdelivr.net/npm/mathlive@0.26.0/dist/mathlive.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathlive@0.26.0/dist/mathlive.mjs"></script>
+<script> 
+
+const mf_{{name}} = MathLive.makeMathField('mf_{{name}}', {
+
+onContentDidChange: mathfield => {
+    document.getElementById('form_{{name}}').value = mf_{{name}}.latex();
+},
+smartFence:false,
+inlineShortcuts: { '*': '\\times'},
+virtualKeyboardMode: 'manual',
+}
+);
+
+</script>
+

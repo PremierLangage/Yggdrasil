@@ -5,8 +5,8 @@
 
 
 
-<input type = 'hidden' id = 'form_resizable_matrix_{{ name }}_rows' value = '2'/>
-<input type = 'hidden' id = 'form_resizable_matrix_{{ name }}_cols' value = '2'/>
+<input type = 'hidden' id = 'form_resizable_matrix_{{ name }}_rows' value = '{{ num_rows }}'/>
+<input type = 'hidden' id = 'form_resizable_matrix_{{ name }}_cols' value = '{{ num_cols }}'/>
 
 <div class ='matrix'>
     <!-- The Handle to resize the matrix -->
@@ -86,8 +86,35 @@
             }
         }
     });
+
     $( "#resizable_matrix_{{ name }}_container" ).resize();
+
+    
+    (function ( $ ) {
+      $.fn.styling = function(style) {
+        var color = '';
+        var object = this;
+        if (style === 'bad_input') color = "Tan";
+        if (style === 'wrong_answer') color = "LightPink";
+        if (style === 'good_answer') color = "LightGreen";
+        this.animate({width: 'toggle'},function(){
+          object.css("background-color", color)
+          object.animate({width: 'toggle'});
+        });
+
+        return this;
+      };
+    }( jQuery ));
+
+    function onAfterSubmitPL() {
+        const ok_answer = JSON.parse($('#okanswer').val());
+        for (var i = 0; i < ok_answer.length; i++){
+            $(document.getElementById(ok_answer[i][0])).styling(ok_answer[i][1]);
+        }
+    }
+
 </script>
+
 
 
 

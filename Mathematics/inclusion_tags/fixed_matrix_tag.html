@@ -115,23 +115,28 @@
       $.fn.styling = function(style) {
         var color = '';
         var object = this;
+        if (style === 'bad_input') color = "Tan";
         if (style === 'wrong_answer') color = "LightPink";
         if (style === 'good_answer') color = "LightGreen";
         this.animate({width: 'toggle'},function(){
           object.css("background-color", color)
           object.animate({width: 'toggle'});
         });
+
         return this;
       };
   }( jQuery ));
 
   function onAfterSubmitPL() {
-    const ok_answer = JSON.parse($('#myid').val());
+    const ok_answer = JSON.parse($('#okanswer').val());
     for (var i = 0; i < ok_answer.length; i++){
         $(document.getElementById(ok_answer[i][0])).styling(ok_answer[i][1]);
     }
   }
 </script>
+
+
+
 
 
 
