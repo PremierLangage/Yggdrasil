@@ -1,4 +1,4 @@
-extends = /template/mathresizablematrix.pl
+extends = /Mathematics/template/mathresizablematrix.pl
 
 title = Produit de matrices
 
@@ -80,3 +80,4 @@ if len(matrice) == m and len(matrice[0]) == p :
 ok_answer = json.dumps(ok_answer)
 form += '<input type="hidden" id="okanswer" value="{{ ok_answer }}" /> '
 ==
+

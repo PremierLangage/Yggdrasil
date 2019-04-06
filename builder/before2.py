@@ -79,18 +79,23 @@ if __name__ == "__main__":
 
     dic['inputmode'] = "initial"    
 
-    render_input_config(dic)
+    if 'input' in dic:
+        render_input_config(dic)
+        dic['form0']=dic['form']+"\n <div style='width:100%;height:200px;'></div>"
+        dic['head']=build_head(dic) 
+        dic['form']=dic['head']+build_form(dic['form0'],dic)
 
-    dic['form0']=dic['form']+"\n <div style='width:100%;height:200px;'></div>"
-
-    dic['head']=build_head(dic)
-    
-    dic['form']=dic['head']+build_form(dic['form0'],dic)
-
+    if 'style' in dic:
+        dic['form']+="""
+            <style>
+            {}
+            </style>
+            """.format(dic['style'])
 
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
     
     sys.exit(0)
+
 
 

@@ -1,4 +1,4 @@
-extends = /template/input/mathexpr.pl
+extends = /Mathematics/template/mathexpr.pl
 
 title = Rang d'un système linéaire 3x3
 
@@ -24,6 +24,7 @@ evaluator ==
 score,_,feedback=ans_number(answer['1'],sol)
 feedback=answer
 ==
+
 
 
 

@@ -72,7 +72,8 @@ if __name__ == "__main__":
     
     dic = get_context()
     dic['answer'] = get_answers()
-    process_answer(dic['answer'],dic)
+    if 'input' in dic:
+        process_answer(dic['answer'],dic)
     if 'evaluator' in dic:
         glob = {}
         dic['StopEvaluatorExec'] = StopEvaluatorExec
@@ -132,10 +133,12 @@ if __name__ == "__main__":
             format_feedback=format_analysis('retry',feedback,maxattempt-nbattempt,lang)
         else:
             format_feedback=format_analysis('fail',feedback,0,lang)
-
-    dic['form']=dic['head']+build_form(dic['form0'],dic)
-
+    
+    if 'input' in dic:
+        dic['form']=dic['head']+build_form(dic['form0'],dic)
+    
     output(score,format_feedback,dic)
+
 
 
 
