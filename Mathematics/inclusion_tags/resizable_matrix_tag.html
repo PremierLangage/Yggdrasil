@@ -1,0 +1,95 @@
+<!--- jquery / jquery ui -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+<input type = 'hidden' id = 'form_resizable_matrix_{{ name }}_rows' value = '2'/>
+<input type = 'hidden' id = 'form_resizable_matrix_{{ name }}_cols' value = '2'/>
+
+<div class ='matrix'>
+    <!-- The Handle to resize the matrix -->
+    <span   
+        style="
+            height: 16px; 
+            width: 16px;
+            position: absolute;
+            opacity:100;
+            bottom: -10px;
+            right:-24px;
+            z-index:11;
+        " 
+        id='resizable_matrix_{{ name }}_handle'
+        class="ui-resizable-handle ui-resizable-se"
+    >
+        <img 
+            src="https://cdn2.iconfinder.com/data/icons/touch-gestures-10/24/Grab-Hand-512.png" 
+            style="width:24px;height:24px;">
+    </span>
+    <!-- End of Handle -->
+    <div class='matrix-container' id='resizable_matrix_{{ name }}_container' 
+        style='width: calc(2*{{ cell_width }});height: calc(2*{{ cell_height }})'>
+    <table class = 'matrix-table' style = 'width: calc({{ max_cols }}*{{ cell_width }});
+        height: calc({{ max_rows }}*{{ cell_height }})'>
+        {% for line in matrix %}
+        <tr>
+            {% for element in line %}
+            <td class='matrix-cell' 
+                id='resizable_matrix_{{ name }}_cell' 
+                style='height: {{ cell_height }}; width: {{ cell_width }}'>
+                <!-- tabindex makes element inaccessible by tabs, important otherwise hidden cells may become visible -->
+                <input 
+                    class='matrix-input absolute-center' 
+                    id ='form_resizable_matrix_{{ name }}_{{ element.0 }}' 
+                    style='{{ input_style }}'
+                    tabindex="-1"
+                    value='{{ element.1 }}'
+                />
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    </div>
+</div>
+<script>
+    var cell_height = $( "#resizable_matrix_{{ name }}_cell" ).outerHeight();
+    var cell_width = $( "#resizable_matrix_{{ name }}_cell" ).outerWidth();
+    var handle = document.getElementById('resizable_matrix_{{ name }}_handle');
+
+    $( "#resizable_matrix_{{ name }}_container" ).resizable({
+        handles:{se:handle},
+        grid:[cell_width,cell_height],
+        minWidth:cell_width,
+        minHeight:cell_height,
+        maxWidth:{{ max_cols }}*cell_width,
+        maxHeight:{{ max_rows }}*cell_height
+    });
+
+    $( "#resizable_matrix_{{ name }}_container" ).resize(function(event){
+        // Determine number of rows and columns of input matrix
+        var vsize = $( "#resizable_matrix_{{ name }}_container" ).innerHeight();
+        var hsize = $( "#resizable_matrix_{{ name }}_container" ).innerWidth();
+        var num_rows = Math.min({{ max_rows }},Math.floor(vsize/cell_height));
+        var num_cols = Math.min({{ max_cols }},Math.floor(hsize/cell_width));
+        $( "#form_resizable_matrix_{{ name }}_rows" ).val(num_rows);
+        $( "#form_resizable_matrix_{{ name }}_cols" ).val(num_cols);
+        for(var i = 0; i < {{ max_rows }}; i++){
+            for(var j = 0; j < {{ max_cols }}; j++){
+                if ((i < num_rows) && (j < num_cols)) {
+                    document.getElementById('form_resizable_matrix_{{ name }}_'+i+j).tabIndex = i*num_cols+j+1;
+                }
+                else {
+                    document.getElementById('form_resizable_matrix_{{ name }}_'+i+j).tabIndex = -1;
+                }
+            }
+        }
+    });
+    $( "#resizable_matrix_{{ name }}_container" ).resize();
+</script>
+
+
+
+
+

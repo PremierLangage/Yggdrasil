@@ -1,0 +1,31 @@
+<script type="text/javascript" charset="UTF-8" src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.99.7/jsxgraphcore.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.99.7/jsxgraph.css" />
+
+
+<div id="jxg_container" class="jxgbox" style='{{ style | safe }}'></div>
+
+{% if capture %}
+<input type=hidden id="form_jsxgraph"></input>
+{% endif %}
+
+
+<script>
+{{ script | safe }}
+
+{% if capture %}
+
+function jsxgraph_updateInput(){
+    var capture = {{ capture }}
+    var data = {};
+    for (name of capture){
+        data[name] = window[name]();
+    }
+    document.getElementById("form_jsxgraph").value = JSON.stringify(data)        
+};
+
+jsxgraph_updateInput();
+
+jxg_board.on('update',jsxgraph_updateInput);
+
+{% endif %}
+</script>
