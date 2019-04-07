@@ -1,11 +1,14 @@
     <div class = 'target'
 		id = 'drop_{{ name }}'
-		ondrop="drop(event, 'drop_{{ name }}')"
+		ondrop="drop(event)"
 		ondragover='allowDrop(event)'
+		draggable='true'
+		ondragstart='drag(event)'
 		style ='{{ style }}'>
-		<span ondrop="drop(event, 'drop_{{ name }}')" ondragover='allowDrop(event)'> 
 			{{ display }} 
-		</span> 
 	</div>
+	<input type="hidden" id='form_drop_{{ name }}' name='form_drop_{{ name }}'>
+
+
 
 

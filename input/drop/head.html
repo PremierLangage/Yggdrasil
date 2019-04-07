@@ -9,8 +9,8 @@
     div.target, div.source { /* les divs qui contiennent les champs drag-drop */
     display: inline-flex;
     border:none;
-	margin : 6px;
-	width : 3em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
 	height : 2em;
     vertical-align:middle;
 	text-align:center;
@@ -39,22 +39,21 @@ div.source  {
 </style>
 
 <script>
-	function allowDrop(ev) {
-	    ev.preventDefault();
-	}
-	function drag(ev) {
-	    ev.dataTransfer.setData("text", ev.target.id);
-	}
-	function drop(ev, target) { // target est l'id de la cible du drop "drop_name" ou "drag_container_name"
-		ev.preventDefault();
+function allowDrop(ev) {
+ev.preventDefault();
+}
 
-		if (!ev.target.getAttribute("ondrop")) return false;
-		// data est l'id de l'élément qu'on drag "drag_name"
-		var data=ev.dataTransfer.getData("text");
-		// Le drop
-		document.getElementById(target).appendChild(document.getElementById(data));
-		var input_ajax=document.getElementById('form_' + data);// on cherche le champ 'form_drag_name'
-		if (target != undefined) input_ajax.value = target;
-		if (target == undefined) input_ajax.value = '';
-	}
+function drag(ev) {
+ev.dataTransfer.setData("dragName",ev.target.id);
+ev.dataTransfer.setData("innerHTML",ev.target.innerHTML);
+}
+
+function drop(ev,target) {
+  ev.preventDefault();
+  if (ev.target.className == 'target'){
+  ev.target.innerHTML = ev.dataTransfer.getData("innerHTML");
+  document.getElementById('form_'+ev.target.id).value = ev.dataTransfer.getData("dragName");
+  }
+}
 </script>
+

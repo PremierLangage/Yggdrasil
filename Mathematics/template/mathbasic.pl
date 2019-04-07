@@ -78,9 +78,11 @@ def _str_to_sympy(arg):
         return tuple(map(_str_to_sympy,arg))
     else : return arg
 
-for _k,_v in _strsympyvar.items():
-    locals()[_k]=_str_to_sympy(_v)
+#for _k,_v in _strsympyvar.items():
+#   locals()[_k]=_str_to_sympy(_v)
+
 ==
+
 
 
 
