@@ -1,4 +1,4 @@
-extends = /Language/template/selectwords.pl
+extends = /Languages/template/selectwords.pl
 
 title = Grec ancien
 
@@ -41,6 +41,7 @@ grade=(score,feedback)
 
 formmode="correction"
 ==
+
 
 
 

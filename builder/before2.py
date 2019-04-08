@@ -3,7 +3,7 @@
 
 import sys, json, jsonpickle
 from jinja2 import Template
-import random
+import inputlib
 
 def render_dic_strings(d,dic):
     for k, v in d.items():
@@ -26,8 +26,9 @@ def build_form(form_template,dic):
     form_context={}
     for name,config in dic['input'].items():
         input_type=config['type']
-        if input_type+'_process_config' in dic:
-            exec(dic[input_type+'_process_config'])
+        process_config_input=getattr(inputlib, 'process_config_'+input_type)
+        if process_config_input:
+            process_config_input(config)
         config['name']=name
         state = {'inputmode':'initial'}
         input_context={**config,**state}
@@ -96,6 +97,7 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
     
     sys.exit(0)
+
 
 
 

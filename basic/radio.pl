@@ -1,6 +1,7 @@
 @ /utils/sandboxio.py
 @ /builder/before2.py [builder.py]
 @ /grader/evaluator2.py [grader.py]
+@ /input/inputlib.py [inputlib.py]
 radio_template =@ /input/radio/template.html
 radio_process_config =@ /input/radio/process_config.py
 radio_head =
@@ -36,3 +37,4 @@ if answer['1']==1:
 else:
     score=0
 ==
+

@@ -11,11 +11,14 @@ text ==
 
 form ==
 Compléter les propositions suivantes avec les symboles {{ input_in | safe }} ou {{ input_subset | safe }}.<br>
-
-$% 1 %$ {{ input_1 | safe }} $%\{1,2,3\}%$
-<br>
-$% \{1\} %$ {{ input_2 | safe }} $%\{1,2,3\}%$
+<li>
+{% for txt in nb %}
+<ul> $% 1 %$ {{ input_1 | safe }} $%\{1,2,3\}%$
+{% endfor %}
+</li>
 ==
+
+nb=[1,3,4]
 
 input.1.type = drop
 input.2.type = drop
