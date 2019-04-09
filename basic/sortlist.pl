@@ -7,17 +7,15 @@ radio_process_config =@ /input/radio/process_config.py
 radio_head =
 radio_process_answer =@ /input/radio/process_answer.py
 
-title = Champ de réponse radio
+title = Champ de réponse sortlist
 
 lang = fr
 
 text ==
-Quelle est la capitale de la Lettonie ?
+Classer les joueurs suivants selon leur nombre de buts en équipe de France.
 ==
 
 form ==
-{{input_1}}
-
 <style>
 body.dragging, body.dragging * {
   cursor: move !important;
@@ -29,7 +27,6 @@ body.dragging, body.dragging * {
   z-index: 2000;
 }
 
-
 ol.example li.placeholder {
   position: relative;
   /** More li styles **/
@@ -40,12 +37,13 @@ ol.example li.placeholder:before {
 }
 </style>
 <ol class='example'>
-  <li>First</li>
-  <li>Second</li>
-  <li>Third</li>
+  <li>M. Platini</li>
+  <li>O. Giroud</li>
+  <li>T. Henry</li>
+  <li>D. Trezeguet</li>
 </ol>
-<script src='js/jquery-sortable.js'></script>
 
+<script src='js/jquery-sortable.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sortable/0.9.13/jquery-sortable.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sortable/0.9.13/jquery-sortable-min.js"></script>
 
@@ -93,23 +91,10 @@ $("ol.simple_with_animation").sortable({
 </script>
 ==
 
-input.1.type = radio
-
-input.1.shuffle = no
-
-input.1.choices ==
-Tallin
-Riga
-Vilnius
-==
-
-input.1.numsol = 1
-
 evaluator ==
 if answer['1']==1:
     score=100
 else:
     score=0
 ==
-
 
