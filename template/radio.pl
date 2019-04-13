@@ -9,26 +9,28 @@ title = Champ de réponse radio
 
 lang = fr
 
+before ==
+import random
+biglist=list(range(1,101))
+choices=random.sample(biglist,4)
+choices.sort()
+==
+
 text ==
-Quelle est la capitale de la Lettonie ?
+Quelle est le plus petit nombre parmi la liste suivante ?
 ==
 
 form ==
 {{input_1}}
 ==
 
-input.1.type = checkbox
+input.1.type = radio
 
-input.1.shuffle = no
+input.1.shuffle = yes
 
-input.1.choices ==
-["Tallin",
-"Riga",
-"Vilnius",
-"Kaunas"]
-==
+input.1.choices = {{choices}}
 
-input.1.numsol = [1]
+input.1.numsol = 0
 
 evaluator ==
 if answer['1']['eval']==True:
@@ -36,6 +38,7 @@ if answer['1']['eval']==True:
 else:
     score=0
 ==
+
 
 
 
