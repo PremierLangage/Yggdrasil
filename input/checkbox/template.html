@@ -1,0 +1,7 @@
+{% for txt in shuffledchoices %}
+<div>
+  <input type="checkbox" id="form_{{ name }}_{{ loop.index0 }}" name="form_{{ name }}" value="{{ loop.index0 }}" {% if inputmode == 'final' %}disabled{% endif %}>
+  <label for="form_{{ name }}_{{ loop.index0 }}" id="label_{{ name }}_{{ loop.index0 }}"> {{ txt }} </label>
+</div>
+{% endfor %}
+

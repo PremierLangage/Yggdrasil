@@ -17,7 +17,7 @@ choices.sort()
 ==
 
 text ==
-Quelle est le plus petit nombre parmi la liste suivante ?
+Quel est le plus petit nombre parmi la liste suivante ?
 ==
 
 form ==
