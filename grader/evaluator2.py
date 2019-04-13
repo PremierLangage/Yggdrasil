@@ -2,16 +2,15 @@
 # coding: utf-8
 
 import sys, json, jsonpickle, time
-
 from sandboxio import output, get_context, get_answers
-
 from jinja2 import Template
+from importlib import import_module
 
 def process_answer(answer,dic):
     for name,config in dic['input'].items():
         input_type=config['type']
-        if input_type+'_process_answer' in dic:
-            exec(dic[input_type+'_process_answer'])
+        process=import_module(input_type+'_process')
+        process.process_answer(answer,name,dic['input'][name])
 
 def build_form(form_template,dic):
     form_context={}
@@ -20,7 +19,8 @@ def build_form(form_template,dic):
         config['name']=name
         state = {'inputmode':'final'}
         input_context={**config,**state}
-        form_context['input_'+name]=Template(dic[input_type+'_template']).render(input_context)
+        with open (input_type+'_template.html', "r") as f:
+            form_context['input_'+name]=Template(f.read()).render(input_context)
     return Template(form_template).render(form_context)
 
 def format_analysis(msg,text,n,lang):
@@ -138,6 +138,8 @@ if __name__ == "__main__":
         dic['form']=dic['head']+build_form(dic['form0'],dic)
     
     output(score,format_feedback,dic)
+
+
 
 
 

@@ -1,6 +1,6 @@
-extends = /template/mathbasic.pl
+extends = /Mathematics/template/mathbasic.pl
 
-html_jsxgraph_tag =@ /inclusion_tags/jsxgraph_tag.html
+html_jsxgraph_tag =@ /Mathematics/inclusion_tags/jsxgraph_tag.html
 
 footerbefore ==
 from jinja2 import Template
@@ -83,6 +83,7 @@ else:
 text ==
 
 ==
+
 
 
 

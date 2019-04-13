@@ -3,7 +3,7 @@
 
 import sys, json, jsonpickle
 from jinja2 import Template
-import inputlib
+import importlib
 
 def render_dic_strings(d,dic):
     for k, v in d.items():
@@ -19,20 +19,22 @@ def build_head(dic):
     head=""
     for name,config in dic['input'].items():
         input_type=config['type']
-        head+=dic[input_type+'_head']
+        with open (input_type+'_head.html', "r") as f:
+            head+=f.read()
+        
     return head
 
 def build_form(form_template,dic):
     form_context={}
     for name,config in dic['input'].items():
         input_type=config['type']
-        process_config_input=getattr(inputlib, 'process_config_'+input_type)
-        if process_config_input:
-            process_config_input(config)
+        process=importlib.import_module(input_type+'_process')
+        process.process_config(config)
         config['name']=name
         state = {'inputmode':'initial'}
         input_context={**config,**state}
-        form_context['input_'+name]=Template(dic[input_type+'_template']).render(input_context)
+        with open (input_type+'_template.html', "r") as f:
+            form_context['input_'+name]=Template(f.read()).render(input_context)
     return Template(form_template).render(form_context)
 
 class StopBeforeExec(Exception):
@@ -97,6 +99,9 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
     
     sys.exit(0)
+
+
+
 
 
 

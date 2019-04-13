@@ -1,47 +1,10 @@
-@ /utils/sandboxio.py
-@ /builder/before2.py [builder.py]
-@ /grader/evaluator2.py [grader.py]
-@ /input/inputlib.py [inputlib.py]
-radio_template =@ /input/radio/template.html
-radio_process_config =@ /input/radio/process_config.py
-radio_head =
-radio_process_answer =@ /input/radio/process_answer.py
-
-title = Champ de réponse sortlist
-
-lang = fr
-
-text ==
-Classer les joueurs suivants selon leur nombre de buts en équipe de France.
-==
-
-form ==
-<style>
-body.dragging, body.dragging * {
-  cursor: move !important;
-}
-
-.dragged {
-  position: absolute;
-  opacity: 0.5;
-  z-index: 2000;
-}
-
-ol.example li.placeholder {
-  position: relative;
-  /** More li styles **/
-}
-ol.example li.placeholder:before {
-  position: absolute;
-  /** Define arrowhead **/
-}
-</style>
-<ol class='example'>
-  <li>M. Platini</li>
-  <li>O. Giroud</li>
-  <li>T. Henry</li>
-  <li>D. Trezeguet</li>
+<ul id='list_{{ name }}' class='example' class="list-group">
+{% for choice in shuffledchoices %}
+  <li id='{{ loop.index0 }}' class="list-group-item"> {{choice}} </li>
+{% endfor %}
 </ol>
+
+<input type='hidden' id='form_{{name}}'>
 
 <script src='js/jquery-sortable.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sortable/0.9.13/jquery-sortable.js"></script>
@@ -49,16 +12,23 @@ ol.example li.placeholder:before {
 
 <script>
 $(function  () {
-  $("ol.example").sortable();
+  $("ul.example").sortable();
 });
 
 var adjustment;
 
-$("ol.simple_with_animation").sortable({
+$("ul.example").sortable({
   group: 'simple_with_animation',
   pullPlaceholder: false,
   // animation on drop
   onDrop: function  ($item, container, _super) {
+    var slist = document.getElementById("list_{{name}}");
+    var b = slist.getElementsByTagName("LI");
+    data=[];
+    for (var i = 0; i < b.length; i++){
+        data.push(b[i].id);
+    }
+    document.getElementById("form_{{name}}").value=data;
     var $clonedItem = $('<li/>').css({height: 0});
     $item.before($clonedItem);
     $clonedItem.animate({'height': $item.height()});
@@ -86,15 +56,11 @@ $("ol.simple_with_animation").sortable({
       left: position.left - adjustment.left,
       top: position.top - adjustment.top
     });
+
   }
 });
 </script>
-==
 
-evaluator ==
-if answer['1']==1:
-    score=100
-else:
-    score=0
-==
+
+
 

@@ -1,4 +1,4 @@
-extends = /template/mathdragdrop.pl
+extends = /Mathematics/template/mathdragdrop.pl
 
 title = Appartenance et inclusion
 
@@ -7,12 +7,11 @@ lang = fr
 before ==
 
 style = 'width: 3em; height: 2em'
-drag_tags = [
-    {'name':'in', 'display':'$$\in$$', 'style':style},
-    {'name':'subset', 'display':'$$\subset$$', 'style':style},
-    {'name':'maman', 'display':'😍', 'style':style}]
-drop_tags = [{'name':'in', 'display':'', 'style':style}, 
- {'name':'subset', 'display':'', 'style':style}]
+drag_in = render_drag_tag({'name':'in', 'display':'$$\in$$', 'style':style})
+drag_subset = render_drag_tag({'name':'subset', 'display':'$$\subset$$', 'style':style})
+drag_maman = render_drag_tag({'name':'maman', 'display':'😍', 'style':style})
+drop_in = render_drop_tag({'name':'in', 'display':'', 'style':style}) 
+drop_subset = render_drop_tag({'name':'subset', 'display':'', 'style':style})
 
 ==
 
@@ -22,14 +21,14 @@ Ayez l'obligeance de bien vouloir remplir les cases vides ci-dessous avec le sym
 == 
 
 form==
-$% 1 %$ {{ input_drop_in | safe }} $%\{1,2,3\}%$
+$% 1 %$ {{ drop_in | safe }} $%\{1,2,3\}%$
 <br>
-$% \{1\} %$ {{ input_drop_subset | safe }} $%\{1,2,3\}%$
+$% \{1\} %$ {{ drop_subset | safe }} $%\{1,2,3\}%$
 
 <br>
 <br>
-Symboles : {{ input_drag_in | safe }} {{ input_drag_subset | safe }}
-{{ input_drag_maman | safe }}
+Symboles : {{ drag_in | safe }} {{ drag_subset | safe }}
+{{ drag_maman | safe }}
 
 ==
 
@@ -44,6 +43,7 @@ else :
 solution = ''
 feedback = ''
 ==
+
 
 
 

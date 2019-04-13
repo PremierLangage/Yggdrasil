@@ -1,4 +1,4 @@
-extends = /template/mathexpr.pl
+extends = /Mathematics/template/mathbasic.pl
 
 title = Matrice sous forme échelonnée
 
@@ -68,4 +68,5 @@ else :
 
 feedback=fb.msg_analysis(score,texterror,lang)
 ==
+
 
