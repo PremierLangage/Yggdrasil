@@ -1,10 +1,13 @@
     <div class = 'source'
 		id = 'drag_{{ name }}'
+		unselectable="on"
+		onselectstart="return false;" 
 		draggable='true'
 		ondragstart='drag(event)'
 		style = '{{ style }}'>
-			{{ display }} 
+			{{ value }} 
 	</div>
+
 
 
 

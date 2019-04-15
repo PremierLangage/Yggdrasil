@@ -3,7 +3,7 @@
 
 import sys, json, jsonpickle
 from jinja2 import Template
-import importlib
+from importlib import import_module
 
 def render_dic_strings(d,dic):
     for k, v in d.items():
@@ -19,23 +19,35 @@ def build_head(dic):
     head=""
     for name,config in dic['input'].items():
         input_type=config['type']
-        with open (input_type+'_head.html', "r") as f:
-            head+=f.read()
-        
+        try:
+            with open (input_type+'_head.html', "r") as f:
+                head+=f.read()
+        except:
+            pass
     return head
 
 def build_form(form_template,dic):
     form_context={}
     for name,config in dic['input'].items():
         input_type=config['type']
-        process=importlib.import_module(input_type+'_process')
-        process.process_config(config)
-        config['name']=name
-        state = {'inputmode':'initial'}
-        input_context={**config,**state}
-        with open (input_type+'_template.html', "r") as f:
-            form_context['input_'+name]=Template(f.read()).render(input_context)
-    return Template(form_template).render(form_context)
+        try:
+            process=importlib.import_module(input_type+'_process')
+        except:
+            pass
+        else:
+            process.process_config(config)
+        if 'tags' in config:
+            for tag in config['tags'].keys():
+                tag_type=config['tags'][tag]['type']
+                tag_context={**config['tags'][tag],'name':tag}
+                with open (tag_type+'_template.html', "r") as f:
+                    form_context['input_'+name+'_'+tag]=Template(f.read()).render(tag_context)
+        else:
+            input_context={**config,'name':name,'inputmode':'final'}
+            with open (input_type+'_template.html', "r") as f:
+                return f.read()
+                form_context['input_'+name]=Template(f.read()).render(input_context)
+    return Template(form_template).render({**form_context,**dic})
 
 class StopBeforeExec(Exception):
     pass
@@ -99,6 +111,9 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
     
     sys.exit(0)
+
+
+
 
 
 

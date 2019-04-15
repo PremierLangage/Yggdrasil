@@ -9,19 +9,34 @@ from importlib import import_module
 def process_answer(answer,dic):
     for name,config in dic['input'].items():
         input_type=config['type']
-        process=import_module(input_type+'_process')
-        process.process_answer(answer,name,dic['input'][name])
+        try:
+            process=importlib.import_module(input_type+'_process')
+        except:
+            pass
+        else:
+            process.process_answer(answer,name,dic['input'][name])
 
 def build_form(form_template,dic):
     form_context={}
     for name,config in dic['input'].items():
         input_type=config['type']
-        config['name']=name
-        state = {'inputmode':'final'}
-        input_context={**config,**state}
-        with open (input_type+'_template.html', "r") as f:
-            form_context['input_'+name]=Template(f.read()).render(input_context)
-    return Template(form_template).render(form_context)
+        try:
+            process=importlib.import_module(input_type+'_process')
+        except:
+            pass
+        else:
+            process.process_config(config)
+        if 'tags' in config:
+            for tag in config['tags'].keys():
+                tag_type=config['tags'][tag]['type']
+                tag_context={**config['tags'][tag],'name':tag}
+                with open (tag_type+'_template.html', "r") as f:
+                    form_context['input_'+name+'_'+tag]=Template(f.read()).render(tag_context)
+        else:
+            input_context={**config,'name':name,'inputmode':'final'}
+            with open (input_type+'_template.html', "r") as f:
+                form_context['input_'+name]=Template(f.read()).render(input_context)
+    return Template(form_template).render({**form_context,**dic})
 
 def format_analysis(msg,text,n,lang):
     dcls={'warning':'alert-info','retry':'alert-warning','fail':'alert-danger','success':'alert-success'}
@@ -138,6 +153,7 @@ if __name__ == "__main__":
         dic['form']=dic['head']+build_form(dic['form0'],dic)
     
     output(score,format_feedback,dic)
+
 
 
 

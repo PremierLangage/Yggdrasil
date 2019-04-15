@@ -11,7 +11,7 @@ def process_config(config):
         random.shuffle(permutation)
     config['permutation'] = permutation
     shuffledchoices=[choices[i] for i in permutation]
-    config['shuffledchoices'] =shuffledchoices
+    config['shuffledchoices']=shuffledchoices
 
 def process_answer(answer,name,config):
     ans0=answer
@@ -25,5 +25,6 @@ def process_answer(answer,name,config):
         answer[name]['eval'] = True
     else:
         answer[name]['eval'] = False
+
 
 
