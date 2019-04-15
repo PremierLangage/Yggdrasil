@@ -10,7 +10,7 @@ def process_answer(answer,dic):
     for name,config in dic['input'].items():
         input_type=config['type']
         try:
-            process=importlib.import_module(input_type+'_process')
+            process=import_module(input_type+'_process')
         except:
             pass
         else:
@@ -20,12 +20,6 @@ def build_form(form_template,dic):
     form_context={}
     for name,config in dic['input'].items():
         input_type=config['type']
-        try:
-            process=importlib.import_module(input_type+'_process')
-        except:
-            pass
-        else:
-            process.process_config(config)
         if 'tags' in config:
             for tag in config['tags'].keys():
                 tag_type=config['tags'][tag]['type']
@@ -153,6 +147,7 @@ if __name__ == "__main__":
         dic['form']=dic['head']+build_form(dic['form0'],dic)
     
     output(score,format_feedback,dic)
+
 
 
 

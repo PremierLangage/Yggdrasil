@@ -31,7 +31,7 @@ def build_form(form_template,dic):
     for name,config in dic['input'].items():
         input_type=config['type']
         try:
-            process=importlib.import_module(input_type+'_process')
+            process=import_module(input_type+'_process')
         except:
             pass
         else:
@@ -43,9 +43,8 @@ def build_form(form_template,dic):
                 with open (tag_type+'_template.html', "r") as f:
                     form_context['input_'+name+'_'+tag]=Template(f.read()).render(tag_context)
         else:
-            input_context={**config,'name':name,'inputmode':'final'}
+            input_context={**config,'name':name,'inputmode':'initial'}
             with open (input_type+'_template.html', "r") as f:
-                return f.read()
                 form_context['input_'+name]=Template(f.read()).render(input_context)
     return Template(form_template).render({**form_context,**dic})
 
@@ -111,6 +110,7 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
     
     sys.exit(0)
+
 
 
 

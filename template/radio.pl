@@ -17,6 +17,7 @@ choices.sort()
 ==
 
 text ==
+
 Quel est le plus petit nombre parmi la liste suivante ?
 ==
 
@@ -38,6 +39,7 @@ if answer['1']['eval']==True:
 else:
     score=0
 ==
+
 
 
 
