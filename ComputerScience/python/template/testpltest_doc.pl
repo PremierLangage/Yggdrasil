@@ -51,9 +51,10 @@ True
 
 
 
-extends=/ComputerScience/python/pltest.pl
+extends=pltest.pl
 
 @ template.html
+
 
 
 
