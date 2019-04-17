@@ -4,7 +4,7 @@ def process_config(config):
     if 'processed' not in config:
         config['processed']=True
         config['numsol'] = int(config['numsol'])
-        choices=eval(config['choices']) # pourquoi eval ?
+        choices=eval(config['choices']) # pourquoi eval ? C'est une clé PL, donc une string.
         config['choices'] = choices
         config['nbchoices'] = len(choices)
         config['permutation'] = random.shuffle(list(range(nbchoices))) if  config['shuffle']=="yes" else list(range(nbchoices))
