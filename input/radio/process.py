@@ -1,24 +1,21 @@
 import random
 
 def process_config(config):
-    config['numsol'] = int(config['numsol'])
-    choices=eval(config['choices'])
-    config['choices'] = choices
-    nbchoices=len(choices)
-    config['nbchoices'] = nbchoices
-    permutation=list(range(nbchoices))
-    if config['shuffle']=="yes":   
-        random.shuffle(permutation)
-    config['permutation'] = permutation
-    shuffledchoices=[choices[i] for i in permutation]
-    config['shuffledchoices']=shuffledchoices
+    if 'processed' not in config:
+        config['processed']=True
+        config['numsol'] = int(config['numsol'])
+        choices=eval(config['choices']) # pourquoi eval ?
+        config['choices'] = choices
+        config['nbchoices'] = len(choices)
+        config['permutation'] = random.shuffle(list(range(nbchoices))) if  config['shuffle']=="yes" else list(range(nbchoices))
+        shuffledchoices=[choices[i] for i in config['permutation']]
+        config['shuffledchoices']=shuffledchoices
 
-def process_answer(answer,name,config):
-    ans0=answer
+def process_answer(reponse,name,config):
     answer[name]={}
     permutation=config['permutation']
     for i in range(len(config['choices'])):
-        if name+"_"+str(i) in ans0:
+        if name+"_"+str(i) in reponse:
             answer[name]['num'] = permutation[int(i)]
             break
     if answer[name]['num']==config['numsol']:
