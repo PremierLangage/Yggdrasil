@@ -26,12 +26,16 @@ form ==
 ==
 
 input.1.type = sortlist
-
 input.1.choices = {{choices}}
 
 evaluator ==
+# FIXME comme interface c'est pas terrible non ??
+# score = input.1.evaluation()
+# score = evaluation("1")
+# un truc mieux 
 if answer['1']['eval']==True:
     score=100
 else:
     score=0
 ==
+

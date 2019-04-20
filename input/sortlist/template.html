@@ -2,7 +2,7 @@
 {% for choice in shuffledchoices %}
   <li id='{{ loop.index0 }}' class="list-group-item"> {{choice}} </li>
 {% endfor %}
-</ol>
+</ul>
 
 <input type='hidden' id='form_{{name}}'>
 
@@ -60,6 +60,7 @@ $("ul.example").sortable({
   }
 });
 </script>
+
 
 
 

@@ -1,15 +1,16 @@
 import random
 
-def process_config(config):
+def process_config(config,name):
     if 'processed' not in config:
         config['processed']=True
         config['numsol'] = int(config['numsol'])
         choices=eval(config['choices']) # pourquoi eval ? C'est une clé PL, donc une string.
         config['choices'] = choices
         config['nbchoices'] = len(choices)
-        config['permutation'] = random.shuffle(list(range(nbchoices))) if  config['shuffle']=="yes" else list(range(nbchoices))
-        shuffledchoices=[choices[i] for i in config['permutation']]
-        config['shuffledchoices']=shuffledchoices
+        config['permutation'] = list(range(config['nbchoices'])) 
+        if config['shuffle']=="yes":
+            random.shuffle(config['permutation'])
+        config['shuffledchoices']=[choices[i] for i in config['permutation']]
 
 def process_answer(reponse,name,config):
     answer[name]={}
@@ -23,6 +24,7 @@ def process_answer(reponse,name,config):
     else:
         answer[name]['eval'] = False
     
+
 
 
 

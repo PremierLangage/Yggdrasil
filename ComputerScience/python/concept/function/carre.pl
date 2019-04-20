@@ -11,8 +11,8 @@ Ecrivez une fonction **carre** qui retourne le carré de son paramêtre.
 ==
 
 pltest==
->>> carre(510)
-260100
+>>> carre(510) == 260100 # le carre de 510
+True
 >>> carre(0)
 0
 >>> carre(10)
@@ -20,3 +20,8 @@ pltest==
 >>> 
 ==
 
+editor.code==
+def carre(n):
+    return n*510
+==
+editor.height=145

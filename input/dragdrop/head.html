@@ -1,21 +1,8 @@
 <style>
-	.target, .source, .drag-display {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-	border : 2px solid Black;
-	border-radius:6px;
-	color:black;
-	z-index:10;
-	}
-
 *:focus {
     outline: none;
 }
-    div.target, div.source { /* les divs qui contiennent les champs drag-drop */
+.drag,.drop{ /* les divs qui contiennent les champs drag-drop */
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -24,34 +11,21 @@
     user-select: none;
     display: inline-flex;
     border:none;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-	height : 2em;
+    border-radius:6px;
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+	height : 1.8em;
+    min-width: 3em;
     vertical-align:middle;
 	text-align:center;
 	justify-content: center;
 	align-items: center;
 }
-div.target  {
+.drop  {
 	background:AntiqueWhite;
-	padding-left: 1em;
-	padding-right: 1em;
-	height : 2.5em;
 }
-div.source  {
+.drag  {
 	background:Burlywood;
-}
-.drag-display {
-	display:flex;
-    position:absolute;
-	background:inherit;
-	height:inherit;
-	width:inherit;
-	justify-content: center;
-	align-items: center;
-	text-align:center;
-	font-size: 1em;
-	overflow:hidden;
 }
 
 </style>
@@ -61,16 +35,29 @@ function allowDrop(ev) {
 ev.preventDefault();
 }
 
-function drag(ev) {
-ev.dataTransfer.setData("dragName",ev.target.id);
+function drag(ev,cloneable) {
+ev.dataTransfer.setData("cloneable",cloneable); 
+ev.dataTransfer.setData("id",ev.target.id);
+ev.dataTransfer.setData("value",document.getElementById('form_'+ev.target.id).value);
 ev.dataTransfer.setData("innerHTML",ev.target.innerHTML);
 }
 
-function drop(ev,target) {
+function drop(ev) {
   ev.preventDefault();
-  if (ev.target.className == 'target'){
+  if (ev.target.className == 'drop'){
+  var cloneable = ev.dataTransfer.getData("cloneable");
+  if (cloneable=='yes') {
   ev.target.innerHTML = ev.dataTransfer.getData("innerHTML");
-  document.getElementById('form_'+ev.target.id).value = ev.dataTransfer.getData("dragName");
+  document.getElementById('form_'+ev.target.id).value = ev.dataTransfer.getData("value");
+  } else {
+  sourceInnerHTML = ev.dataTransfer.getData("innerHTML");
+  sourceId = ev.dataTransfer.getData("id");
+  sourceValue = ev.dataTransfer.getData("value");
+  document.getElementById('form_'+sourceId).value = document.getElementById('form_'+ev.target.id).value;
+  document.getElementById('form_'+ev.target.id).value = sourceValue;
+  document.getElementById(sourceId).innerHTML = document.getElementById(ev.target.id).innerHTML;
+  document.getElementById(ev.target.id).innerHTML = sourceInnerHTML;
+  }
   }
 }
 </script>

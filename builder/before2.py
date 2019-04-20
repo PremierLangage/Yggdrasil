@@ -35,13 +35,13 @@ def build_form(form_template,dic):
         except:
             pass
         else:
-            process.process_config(config)
+            process.process_config(config,name)
         if 'tags' in config:
             for tag in config['tags'].keys():
                 tag_type=config['tags'][tag]['type']
                 tag_context={**config['tags'][tag],'name':tag}
                 with open (tag_type+'_template.html', "r") as f:
-                    form_context['input_'+name+'_'+tag]=Template(f.read()).render(tag_context)
+                    form_context['input_'+tag]=Template(f.read()).render(tag_context)
         else:
             input_context={**config,'name':name,'inputmode':'initial'}
             with open (input_type+'_template.html', "r") as f:
@@ -95,9 +95,9 @@ if __name__ == "__main__":
 
     if 'input' in dic:
         render_input_config(dic)
-        dic['form0']=dic['form']+"\n <div style='width:100%;height:200px;'></div>"
+        dic['form0']=dic['form']+"\n <div style='width:100%;height:200px;'>"
         dic['head']=build_head(dic) 
-        dic['form']=dic['head']+build_form(dic['form0'],dic)
+        dic['form']=dic['head']+build_form(dic['form0'],dic)+"</div>"
 
     if 'style' in dic:
         dic['form']+="""
@@ -110,6 +110,8 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
     
     sys.exit(0)
+
+
 
 
 

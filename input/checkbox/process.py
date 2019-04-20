@@ -1,6 +1,6 @@
 import random
 
-def process_config(config):
+def process_config(config,name):
     config['numsol'] = eval(config['numsol'])
     choices=eval(config['choices'])
     config['choices'] = choices
@@ -25,6 +25,7 @@ def process_answer(answer,name,config):
         answer[name]['eval'] = True
     else:
         answer[name]['eval'] = False
+
 
 
 

@@ -24,10 +24,12 @@ Compléter les propositions suivantes avec les symboles {{ input_1_in | safe }} 
 input.1.type = dragdrop
 input.1.drag = {'in':'$$\in$$','subset':'$$\subset$$'}
 input.1.drop = ['1','2']
- 
+input.1.cloneable = yes
+
 
 evaluator ==
 score=100
 feedback=answer
 ==
+
 
