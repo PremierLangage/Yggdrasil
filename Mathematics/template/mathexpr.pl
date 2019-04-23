@@ -1,8 +1,6 @@
 extends = mathbasic.pl
-mathexpr_template =@ /input/mathexpr/template.html
-mathexpr_process_config =
-mathexpr_head =@ /input/mathexpr/head.html
-mathexpr_process_answer =
+@ /input/mathexpr/template.html [mathexpr_template.html]
+@ /input/mathexpr/head.html [mathexpr_head.html]
 
 form ==
 {{input_1 | safe}}
@@ -13,6 +11,7 @@ input.1.type = mathexpr
 input.1.virtualKeyboardMode = manual
 
 input.1.virtualKeyboards = elementary
+
 
 
 
