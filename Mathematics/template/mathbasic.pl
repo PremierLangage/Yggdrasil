@@ -16,11 +16,13 @@ from sympy import sqrt,ln,log,exp,sin,cos,tan
 from sympy import pi
 from sympy import isprime,factorint
 from sympy import Intersection
-from sympy import symbols
+from sympy import symbols,Symbol
 from sympy import conjugate
 from sympy import Basic, Matrix
 from sympy import Rational
 from sympy import trace
+from sympy import sympify
+
 from utilsmath import *
 if 'latexparam' in locals():
     LatexPrinter._settings.update(eval(latexparam))
@@ -46,7 +48,7 @@ _strsympyvar={}
 _k = None
 _v = None
 for _k,_v in locals().items():
-    if isinstance(_v,(Basic,Matrix, list, tuple, dict)):
+    if isinstance(_v,(Basic,Matrix)):
         _strsympyvar[_k]=_sympy_to_str(_v)
 ==
 
@@ -78,10 +80,12 @@ def _str_to_sympy(arg):
         return tuple(map(_str_to_sympy,arg))
     else : return arg
 
-#for _k,_v in _strsympyvar.items():
-#   locals()[_k]=_str_to_sympy(_v)
+for _k,_v in _strsympyvar.items():
+   locals()[_k]=_str_to_sympy(_v)
 
 ==
+
+
 
 
 

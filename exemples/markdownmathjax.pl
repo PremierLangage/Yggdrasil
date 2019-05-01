@@ -14,10 +14,15 @@ et nous allons vous afficher le résultat.
 ==
 
 editor.id=essai
-
+editor.height=200
+editor.code==
+# un titre 
+**du gras**
+du mathjax: $% \frac{a}{b} %$
+==
 evaluator==
 
-
+grade=(100,response['essai'])
 ==
 
 
