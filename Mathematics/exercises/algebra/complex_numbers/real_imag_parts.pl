@@ -17,15 +17,15 @@ ipart=sp.im(w.expand(complex=True))
 ==
 
 text ==
-$% z={{latexz}} %$ Déterminer la partie réelle et la partie imaginaire de $% i z %$
+On considère le nombre complexe $% z={{latexz}} %$ où $% a, b \in \mathbb{R} %$. Déterminer la partie réelle et la partie imaginaire de $% w = i z %$
 ==
 
 form ==
 <div style="align-items: center;display:flex">
-  <div style="vertical-align:middle;"> $$Re(z) =$$ </div>
+  <div style="vertical-align:middle;"> $$Re(w) =$$ </div>
   <div style="width: 100%;">{{input_1}}</div>
   <div style="width: 10%;"></div>
-  <div style="vertical-align:middle;"> $$Im(z) =$$ </div>
+  <div style="vertical-align:middle;"> $$Im(w) =$$ </div>
   <div style="width: 100%;">{{input_2}}</div>
 </div>
 ==
