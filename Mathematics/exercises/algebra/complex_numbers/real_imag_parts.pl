@@ -8,7 +8,7 @@ imaginary_unit = i
 
 before ==
 a,b=sp.symbols('a b',real=True)
-z=a*sp.I+b+1
+z=a*sp.I+b
 z=z.expand()
 w=sp.I*z
 latexz=latex(z)
@@ -39,4 +39,5 @@ evaluator==
 score,numerror,feedback=ans_algebraic(answer['1'],rpart)
 score,numerror,feedback=ans_algebraic(answer['2'],ipart)
 ==
+
 

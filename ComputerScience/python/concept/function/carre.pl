@@ -6,8 +6,8 @@ tag=function # N'oubliez pas de remplir ce champs svp
 extends=/ComputerScience/python/template/pltest.pl
 piste=verte
 text==
-## Une fonction carre ##
-Ecrivez une fonction **carre** qui retourne le carré de son paramêtre.
+## Une fonction bob ##
+Ecrivez une fonction **bob** qui retourne le carré de son paramêtre.
 ==
 
 pltest==
@@ -22,6 +22,7 @@ True
 
 editor.code==
 def carre(n):
-    return n*510
+    return n*6
 ==
 editor.height=145
+

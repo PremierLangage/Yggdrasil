@@ -5,14 +5,14 @@ title= Jumeaux Cachés
 
 tag=list|loop 
 prod=indicesearch
-extends=/ComputerScience/python/python/0PLG/soluce.pl
+extends=/ComputerScience/python/template/soluce.pl
 
 showinput=True
 
 text==
 
 Deux jumeaux se chachent dans une foule la seule information que l'on ai sur chaque personne est son poids.
-Nous devons identifier les deux jumeaux c'est le couple de poids les plus proches.
+Nous devons identifier les deux jumeaux nous supposons que c'est le couple de poids les plus proches.
 
 
 En entrée un entier nombre de personnes *nbp* puis sur chaque ligne **p** le poids de chacune d'elles. 
@@ -41,7 +41,7 @@ for i in range(n):
 	print(randint(25001,155000)/1000)
 ==
 
-soluce==
+plsoluce==
 n=int(input())
 j1,j2=-1,-1
 l=[]
@@ -58,3 +58,5 @@ for e in range(n):
 
 print(j1,j2)
 ==
+
+soluce=

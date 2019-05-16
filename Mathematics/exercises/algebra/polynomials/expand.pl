@@ -17,7 +17,9 @@ sol=P*Q
 text = Développer $% ({{latexP}})({{latexQ}}) %$.
 
 evaluator==
+x=sp.Symbol('x')
 score,numerror,feedback=ans_poly_expanded_rat(answer['1'],x,sol)
 ==
+
 
 

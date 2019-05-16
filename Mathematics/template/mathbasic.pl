@@ -48,8 +48,7 @@ _strsympyvar={}
 _k = None
 _v = None
 for _k,_v in locals().items():
-    if isinstance(_v,(Basic,Matrix)):
-        _strsympyvar[_k]=_sympy_to_str(_v)
+    _strsympyvar[_k]=_sympy_to_str(_v)
 ==
 
 headevaluator ==
@@ -84,6 +83,7 @@ for _k,_v in _strsympyvar.items():
    locals()[_k]=_str_to_sympy(_v)
 
 ==
+
 
 
 

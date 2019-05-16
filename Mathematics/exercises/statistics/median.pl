@@ -17,8 +17,8 @@ for i in range(n):
 dst=[]
 for i in range(1,11):
     dst.append(smp.count(i))
-ndst=[0]*dst.lenght
-for i in range(dst.lenght):
+ndst=[0]*len(dst)
+for i in range(len(dst)):
     ndst[dst[i]]=i
 dst = ndst 
 sol=statistics.median(smp)
@@ -60,4 +60,5 @@ if ans==sol:
 else:
     grade=(0,"Mauvaise réponse. La médiane est : "+str(sol))
 ==
+
 

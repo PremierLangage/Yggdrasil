@@ -29,7 +29,7 @@ Si vous voulez plusieurs groupes de test vous notez pltest1 puis pltest2 etc
     True
     ==
   #@ template.md [template.html]
-
+        
 
 Si vous souhaitez faire des tests sur le code de l'élève la variable __student__ est accessible dans le pltest
 
@@ -41,7 +41,7 @@ Si vous souhaitez faire des tests sur le code de l'élève la variable __student
 ==
 
 @ pltest_doc.py
-@ evaluator.py [grader.py]
+@ pltestgrader.py [grader.py]
 @ feedback2.py
 @ template.html
 # 
@@ -55,5 +55,6 @@ editor.fontsize=14
 form=@ /form/text_editor.html
 
 settings.allow_reroll=1
+
 
 

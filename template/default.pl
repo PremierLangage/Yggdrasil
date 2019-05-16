@@ -23,9 +23,12 @@ form=@ /form/text_editor.html
 # This doesn't exist yet see #162 
 #jinja=@ /jinja/basictemplate.html
 
-# This a bad the builder should not be mandatory 
-# we are creatin several process for nothing 
+# This is bad the builder should not be mandatory 
+# we are creating several process for nothing 
 @ /builder/none.py [builder.py]
+
+# tools for the number of trys 
+@ essai.py [essai.py]
 
 
 # A default grader (giving the 100 mark)
@@ -34,5 +37,6 @@ form=@ /form/text_editor.html
 evaluator==
 grade=(100,"# Merci de vos commentaires.\n Toute l'équipe PL. ")
 ==
+
 
 

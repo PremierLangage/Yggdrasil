@@ -4,7 +4,6 @@
 <script type='module'> 
     import MathLive from 'https://unpkg.com/mathlive/dist/mathlive.mjs';
     const mf_{{name}} = MathLive.makeMathField('mathexpr_{{name}}', {
-
         smartMode: false,
         smartFence: false,
         {% if  virtualKeyboardMode %}
@@ -26,9 +25,10 @@
             }
         },
         virtualKeyboards: '{{ virtualKeyboards }}',
-
         onContentDidChange: mf_{{name}} => {
             document.getElementById('form_{{name}}').value = mf_{{name}}.$latex();
         }
     });
+    mf_{{name}}.$insert("{{ value | safe }}","{format:'latex'}")
 </script>
+

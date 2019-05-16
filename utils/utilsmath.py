@@ -664,6 +664,15 @@ def is_poly_factor(expr,x):
             return False
     return True
 
-
+def ans_poly_factor(strans,x,sol):
+    try:
+        ans=str2expr(strans)
+    except:
+        return (-1,3,"Votre réponse n'est pas un polynôme.")
+    if not is_poly_factor(ans,x):
+        return (-1,3,"Votre réponse n'est pas factorisée.")
+    if is_equal(ans,sol):
+        return (100,0,"")
+    return (0,1,"")
 
 

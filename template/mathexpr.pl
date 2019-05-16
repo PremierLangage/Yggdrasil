@@ -1,4 +1,4 @@
-@ /utils/sandboxio.py
+extends = /Mathematics/template/mathbasic.pl
 @ /builder/before2.py [builder.py]
 @ /grader/evaluator2.py [grader.py]
 @ /input/mathexpr/template.html [mathexpr_template.html]
@@ -27,6 +27,7 @@ if answer['1']=="8":
 else:
     score=0
 ==
+
 
 
 
