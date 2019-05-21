@@ -15,18 +15,21 @@ def rand_factor():
 P=rand_factor()
 latexP=latex(P)
 
-latexR=""
+lst=[]
 for i in range(2):
-    P=rand_factor()
+    Q=rand_factor()
     latexQ=latex(Q)
     term='( %s )( %s )' % (latexP,latexQ)
-    latexR=latexR+"+"+term 
+    lst.append(term)
 
-sol=(P).expand()
-latexsol=latex(sol)
+expr=lst[0]
+for i in range(len(lst)-1):
+    expr+="+"+lst[i+1]
+
+sol=str2expr(expr)
 ==
 
-text = Factoriser $% {{latexR}} %$.
+text = Factoriser $% {{expr}} %$.
 
 evaluator==
 x=Symbol('x')
