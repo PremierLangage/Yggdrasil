@@ -27,8 +27,13 @@ colors=["blue","red","green","yellow","pink","orange"]
 color=random.randint(1,len(colors))-1
 thecolor=colors[color]
 essai=essai+1
+text += " du fun <br/>"
+
+form += " du fun <br/>"
+
 grade=(essai*essai,"  ")
 ==
+
 
 
 

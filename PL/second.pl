@@ -23,6 +23,13 @@ Supposons pour le moment que nous voulons juste faire faire un calcul mental él
 
 <pre>{{code}}</pre>
 
+Cet exemple est une syntaxe multiligne.
+    clef==
+pour commencer puis une ligne contenant uniquement "==" pour terminer.
+
+Si vous oubliez de fermer vous aurez une erreur :
+<pre>Multiline value never closed </pre>
+
 
 ==
 
@@ -36,13 +43,17 @@ evaluator==
 import parsefortuto as ps
 
 d,w = ps.parse_file(response['student'])
-if "text" in d:
-    if "title" in d:
-        grade= (100,"<p style='color:green;font-size:24px'> parfait vous avez pensé a mettre un titre</p>")
-    else:
-        grade=(50,"#"+str(w))
+
+if " text=" in response['student']:
+    grade=(0," Attention il faut que votre clef commence sur le caractère le plus a gauche.")
 else:
-    grade=(0,"# il faut un énoncé : text <br/>"+str(w))
+    if "text" in d:
+        if "title" in d:
+            grade= (100,"<p style='color:green;font-size:24px'> parfait vous avez un énoncé et vous avez pensé a mettre un titre</p>")
+        else:
+            grade=(50,"#"+str(w))
+    else:
+        grade=(0,"# il faut un énoncé : text <br/>"+str(w))
 
 
 
