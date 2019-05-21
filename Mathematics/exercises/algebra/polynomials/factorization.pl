@@ -6,19 +6,31 @@ lang = fr
 
 before ==
 x=Symbol('x')
-a,b,c,d=list_randint(4,-2,2,[0])
-P=a*x+b
-Q=c*x+d
+
+def rand_factor():
+    x=Symbol('x')
+    a,b=list_randint(2,-5,5,[0])
+    return a*x+b
+
+P=rand_factor()
 latexP=latex(P)
-latexQ=latex(Q)
-sol=(P*Q).expand()
+
+latexR=""
+for i in range(2):
+    P=rand_factor()
+    latexQ=latex(Q)
+    term='( %s )( %s )' % (latexP,latexQ)
+    latexR=latexR+"+"+term 
+
+sol=(P).expand()
 latexsol=latex(sol)
 ==
 
-text = Factoriser $% {{latexsol}} %$.
+text = Factoriser $% {{latexR}} %$.
 
 evaluator==
-#x=sp.Symbol('x')
+x=Symbol('x')
 score,numerror,feedback=ans_poly_factor(answer['1'],x,sol)
 ==
+
 
