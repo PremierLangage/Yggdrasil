@@ -15,11 +15,12 @@ print(Grader().grade())
 @/pysrc/src/template.html
 
 @ /utils/sandboxio.py
-builder=@ /template/donobuild.py
+@ /builder/none.py [builder.py]
 
 
 # une interface standard d'exercice avec un editeur pour la réponse
 form=@ /python/form/editorform.html
+
 
 
 

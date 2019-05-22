@@ -36,6 +36,10 @@ puis sachant que dans {{Y}} ans, le perroquet aura {{Z}} de l’âge du capitain
 
 
 """
+
+import jinja2
+soluce= jinja2.Template(soluce).render(globals())
+
 ==
 
 

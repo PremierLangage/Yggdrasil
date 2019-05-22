@@ -3,7 +3,7 @@ author=Dominique Revuz
 tag=error|print
 title= Corrige Moi !
 name= Plus ?
-extends=/ComputerScience/python/python/0PLG/template.pl
+extends=/ComputerScience/python/template/coding.pl
 text==
 
 Le programme python si dessous contient une erreur corrigez la pour passer à l'exercice suivant.
@@ -11,12 +11,15 @@ Le programme python si dessous contient une erreur corrigez la pour passer à l'
 ==
 
 code==
-print("la somme de 15975 et 43242 est "+ 15975+43242)
+
+print('la somme de 15975 et 43242 est '+ 15975+43242)
+
 ==
 
 expectedoutput=la somme de 15975 et 43242 est  59217
 
 compilehelp==
+
 Oui python ne sais pas additionner des textes et des nombres.
 Il vous dit qu'il ne peut transformer le nombre 'int' (integer) en texte 'str' string (chaine de caractères), **implicitement**.
 Implicitement c'est que vous ne l'avez pas demandé explicitement.
@@ -34,3 +37,4 @@ Traceback (most recent call last):
 TypeError: Can't convert 'int' object to str implicitly
 >>>
 ==
+

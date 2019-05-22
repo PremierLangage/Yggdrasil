@@ -8,6 +8,7 @@
 @ /utils/sandboxio.py
 @ /grader/evaluator.py [grader.py]
 
+text=""
 
 form==
 <div class="input-group">
@@ -36,12 +37,12 @@ rates={"AED":4.247833,"AFN":84.631135,"ALL":125.680181,"AMD":559.402618,"ANG":2.
 cur1=random.choice(list(symbols.keys()))
 cur2=random.choice(list(symbols.keys()))
 text="""
-Georges voyage beaucoup il a ramener 1000 {} soit des "{}" de son dernier voyage,
+Georges voyage beaucoup, il a ramené 1000 {} soit des "{}" de son dernier voyage,
 la convertion qu'il doit appliquer est de {} {} pour 1 EUR (euro).
 """.format(cur1,symbols[cur1],rates[cur1], cur1)
 
 text+="""
-Voila Georges parti ailleurs maitenant la monaie locale est le {} soit des "{}",
+Voila Georges reparti ailleurs, maitenant la monaie locale est le {} soit des "{}",
 la convertion qu'il doit appliquer est de {} {} pour 1 EUR (euro).
 """.format(cur2,symbols[cur2],rates[cur2], cur2)
 
@@ -80,11 +81,12 @@ except:
     ret=eval(ret)
 
 if  -0.00001 < ret - res < 0.0001:
-    grade = True, '''<div class="btn-success"> joli calcul !!<br> soit '''+str(res)+" "+cur2+" soit "+str(myround(1000/rates[cur1]))+" euros ! </div>"
+    grade = 100, '''<div class="btn-success"> joli calcul !!<br> soit '''+str(res)+" "+cur2+" soit "+str(myround(1000/rates[cur1]))+" euros ! </div>"
 else:
     if res > ret:
-        grade = False, '''<div class="btn-danger"> le calcul doit exact a 7 decimales !! et c'est plus grand </div>'''+str(res)+" "+str(ret)
+        grade = 0, '''<div class="btn-danger"> le calcul doit exact a 7 decimales !! et c'est plus grand </div>'''#+str(res)+" "+str(ret)
     else:
-        grade = False, '''<div class="btn-danger"> le calcul doit exact a 7 decimales !! et c'est plus petit </div>'''+str(res)+" "+str(ret)
+        grade = 0, '''<div class="btn-danger"> le calcul doit exact a 7 decimales !! et c'est plus petit </div>'''#+str(res)+" "+str(ret)
 ==
+
 

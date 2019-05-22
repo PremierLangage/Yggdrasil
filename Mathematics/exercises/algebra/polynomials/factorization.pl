@@ -27,9 +27,10 @@ for i in range(len(lst)-1):
     expr+="+"+lst[i+1]
 
 sol=str2expr(expr)
+sol=sol.expand()
 ==
 
-text = Factoriser $% {{expr}} %$.
+text = {{sol}} Factoriser $% {{expr}} %$.
 
 evaluator==
 x=Symbol('x')
