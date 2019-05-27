@@ -2,7 +2,7 @@ title=Calcul Mystere
 
 extends=/ComputerScience/python/template/simpleeval.pl
 
-
+text=
 basetext==
 Si la variable **a** est initialisée avec la valeur 2.
 
@@ -18,20 +18,20 @@ import random
 
 random.seed(seed)
 
-formula="    a = 2\n    p = a * a\n"
+formula="<br/>    a = 2<br/>    p = a * a<br/>"
 a=2
 p=a*a
 for x in range(0,random.randint(1,3)):
     r=random.randint(0,10)
     if r <7 :
-        formula += "    p = p * a \n"
+        formula += "    p = p * a <br/>"
         p = p * a
     else:
-        formula += "    p = p * p \n"
+        formula += "    p = p * p <br/>"
         p = p * p
 
 
-text = basetext+ formula
+text = basetext+"<code>\n"+ formula+"</code>\n"
 
 res=p
 ==
@@ -56,6 +56,7 @@ elif int(response['answer']) == res:
 else:
     grade = False,'<div class="btn-danger">  Raté : réessayez </div>'
 ==
+
 
 
 

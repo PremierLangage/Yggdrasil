@@ -44,9 +44,8 @@ if bad.endswith("\n\n"):
     bad=bad[0:-1]
     print(" trailing \n",file=sys.stderr)
 
-if "delimiter" not in globals():
-	delimiter="\n"
-
+if "separator" not in globals():
+    separator='|'
 lg= good.split(delimiter)
 lb= bad.split(delimiter)
 
@@ -54,10 +53,18 @@ goodpairs=[]
 badpairs=[]
 for x in lg:
     if x:
-        goodpairs.append((x,True))
+        if separator in x:
+            k=x.split(separator)
+            goodpairs.append((k[0],True,k[1]))
+        else:
+            goodpairs.append((x,True," "))
 for x in lb:
     if x:
-        badpairs.append((x,False))
+        if separator in x:
+            x=x.split(separator)
+            badpairs.append((x[0],True,x[1]))
+        else:
+            badpairs.append((x,False," "))
 
 
 if "nb" not in globals():
@@ -71,9 +78,10 @@ else:
 
 
 form = """<div class="input-group"><table>"""
-for i,(x,b) in enumerate(pairs):
-    form += """<TR><td><input id="form_answer_"""+str(i)+"""\"  type="checkbox"  placeholder="" required>"""+x+"</td></TR>"
+for i,p in enumerate(pairs):
+    form += """<TR><td><input id="form_answer_"""+str(i)+"""\"  type="checkbox"  placeholder="" required>"""+p[0]+"</td></TR>"
 form += "</table></div>"
+
 
 
 

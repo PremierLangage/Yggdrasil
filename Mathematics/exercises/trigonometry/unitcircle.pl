@@ -1,4 +1,4 @@
-extends = /template/input/mathjsxgraph.pl
+extends =  /Mathematics/template/mathjsxgraph.pl
 
 title = Cercle trigonométrique
 
@@ -40,6 +40,7 @@ else:
      score=0
 feedback=""
 ==
+
 
 
 
