@@ -1,7 +1,7 @@
 
 template=./first.pl
 
-title= Le titre 
+title= Un Calcul (2)
 
 
 code==
@@ -58,4 +58,5 @@ else:
 
 
 ==
+
 

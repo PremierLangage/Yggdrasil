@@ -1,10 +1,10 @@
 extends=first.pl
 
-title= un calcul
+title= un calcul (3)
 
 text==
 Bien entendu la réponse est un entier nous allons fournir un champs de réponse entier.
-Pour cela nous allons utiliser un formulaire prédéfini de la librairie standard.
+Pour cela nous allons utiliser un formulaire prédéfini de la librairie standard '/lib/form/simplenumeric.html'.
 
 Utilisont une nouvelle syntaxe:
 
@@ -14,6 +14,17 @@ Utilisont une nouvelle syntaxe:
 
 le symbol @ indique que ce qui suit est un nom de fichier.   
 ici =@ permet d'initialiser la clef form avec le contenu du fichier.
+
+Remarquez que le fichier à été trouvé dans la librairie sans avoir besoin de préfixer par /lib.
+Nous reviendrons sur ce point plus tard.
+
+voici le contenu du fichier 'simplenumeric.html' :
+
+
+    <div class="input-group">
+        <input id="form_txt_answer" type="number" class="form-control" placeholder="" required>
+    </div>
+
 
 ==
 
@@ -43,4 +54,5 @@ if ok:
        grade= (100,"<p style='color:green;font-size:24px'> parfait vous avez un titre,  un énoncé, un formulaire </p>")
 
 ==
+
 
