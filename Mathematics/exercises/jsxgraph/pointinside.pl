@@ -1,4 +1,4 @@
-extends = /template/mathjsxgraph.pl
+extends = /Mathematics/template/mathjsxgraph_variant.pl
 
 title = Trois ensembles
 
@@ -117,3 +117,4 @@ else :
     score = 0
 #feedback=fb.msg_analysis(score,"",lang)  
 ==
+

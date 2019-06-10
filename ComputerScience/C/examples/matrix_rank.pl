@@ -1,9 +1,9 @@
 @ /utils/sandboxio.py
-@ /examples/random_matrix_rank.py
+@ random_matrix_rank.py
 
 title = Algèbre : trouver le rang d'une matrice simple
 author = N.B.
-
+text=
 builder==
 import sys
 import json
@@ -58,3 +58,4 @@ if __name__ == "__main__":
     output(grade, feedback)
 ==
 
+settings.allow_reroll=yes

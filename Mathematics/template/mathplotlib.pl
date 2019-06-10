@@ -1,4 +1,4 @@
-extends = /template/mathbasic.pl
+extends = /Mathematics/template/mathbasic.pl
 
 footerbefore ==
 from jinja2 import Template
@@ -51,6 +51,7 @@ for _namevar in list(_strsympyvar.keys()):
 text ==
 
 ==
+
 
 
 

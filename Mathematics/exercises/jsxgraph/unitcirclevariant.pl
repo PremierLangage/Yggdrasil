@@ -1,4 +1,4 @@
-extends = /template/mathjsxgraph.pl
+extends = /Mathematics/template/mathjsxgraph_variant.pl
 
 title = Cercle trigonométrique
 
@@ -129,6 +129,7 @@ else:
 # feedback = 'M: '+ str(x) + '  ' + str(y)
 # feedback=fb.msg_analysis(score,"",lang)  
 ==
+
 
 
 

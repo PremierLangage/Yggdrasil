@@ -51,10 +51,11 @@ if __name__ == "__main__":
 
     if len(dico_tests[0]) == 3:
         assert('solution' in dic), "If your tests do not provide excepted outputs, please provide a teacher solution."
-        dic = graderII(dico_tests, dic)
+        dic = {**dic, **graderII(dico_tests, dic)}
     else:
-        dic = graderI(dico_tests, dic)
+        dic = {**dic, **graderI(dico_tests, dic)}
     output(dic['success']*100, dic['feedback'], dic)
+
 
 
 

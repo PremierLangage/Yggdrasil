@@ -1,4 +1,4 @@
-extends = /template/mathresizablematrix.pl
+extends = /Mathematics/template/mathresizablematrix.pl
 
 title = Produit de matrices
 
@@ -12,6 +12,7 @@ A = Matrix(m,n,lambda i,j: randint(-1,1))
 B = Matrix(n,p,lambda i,j: randint(-1,1))
 latexA = latex(A)
 latexB = latex(B)
+
 
 resizable_matrix_tags = [{
     'name':'matrice',
@@ -80,3 +81,4 @@ if len(matrice) == m and len(matrice[0]) == p :
 ok_answer = json.dumps(ok_answer)
 form += '<input type="hidden" id="okanswer" value="{{ ok_answer }}" /> '
 ==
+

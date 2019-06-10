@@ -1,4 +1,4 @@
-extends = /template/input/mathjsxgraph.pl
+extends = /Mathematics/template/mathjsxgraph.pl
 
 title = Cercle trigonométrique
 
@@ -44,3 +44,6 @@ feedback=""
 
 
 
+
+
+settings.allow_reroll=yes

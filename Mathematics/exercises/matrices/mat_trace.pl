@@ -43,3 +43,4 @@ La trace de $$A$$ vaut {{latexsol}} .
 
 
 
+

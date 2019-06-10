@@ -3,7 +3,7 @@
 author=Dominique Revuz 
 title=stackbasic
 
-extends=/ComputerScience/python/python/0PLG/template
+extends=/python/0PLG/template.pl
 soluce=Y pas de méthode
 
 concept=call|return
@@ -51,4 +51,5 @@ try:
 except:
     print(json.dumps(dico_bad))
 ==
+
 

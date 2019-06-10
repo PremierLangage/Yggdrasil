@@ -48,11 +48,12 @@ Si vous souhaitez faire des tests sur le code de l'élève la variable __student
 
 @ /utils/sandboxio.py
 
-builder=@ /template/donobuild.py
+builder=@ /builder/none.py
 
 editor.fontsize=14px
 # une interface standard d'exercice avec un editeur pour la réponse
 form=@ /python/form/editorform.html
 
 settings.allow_reroll=1
+
 

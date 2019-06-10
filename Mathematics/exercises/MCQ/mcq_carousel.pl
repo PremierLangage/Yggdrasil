@@ -1,10 +1,10 @@
-extends = /template/mathbasic.pl
+extends = /Mathematics/template/mathbasic.pl
 
 title = QCM
 
 lang = fr
 
-@ /exercises/MCQ/donnees_binaire.txt
+@ /Mathematics/exercises/MCQ/donnees_binaire.txt
 data_from_file=donnees_binaire.txt
 
 
@@ -202,6 +202,7 @@ final_score = q_scores // len(questions)
 feedback = output+'\n'+'Votre score est de ' + str(final_score) +'/100'
 score=100
 ==
+
 
 
 

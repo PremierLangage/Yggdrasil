@@ -1,6 +1,6 @@
-extends = /template/mathbasic.pl
+extends = /Mathematics/template/mathbasic.pl
 
-html_fixed_matrix_tag =@ /inclusion_tags/fixed_matrix_tag.html
+html_fixed_matrix_tag =@ /Mathematics/inclusion_tags/fixed_matrix_tag.html
 
 footerbefore ==
 from jinja2 import Template
@@ -145,6 +145,7 @@ else:
 text==
 
 ==
+
 
 
 

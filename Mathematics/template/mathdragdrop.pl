@@ -1,7 +1,7 @@
-extends = /template/mathbasic.pl
+extends = /Mathematics/template/mathbasic.pl
 
-html_drop_tag =@ /inclusion_tags/drop_tag.html
-html_drag_tag =@ /inclusion_tags/drag_tag.html
+html_drop_tag =@ /Mathematics/inclusion_tags/drop_tag.html
+html_drag_tag =@ /Mathematics/inclusion_tags/drag_tag.html
 
 
 footerbefore ==
@@ -118,6 +118,7 @@ script==
 text==
 
 ==
+
 
 
 

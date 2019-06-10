@@ -1,4 +1,4 @@
-extends = /template/mathexpr.pl
+extends = /Mathematics/template/mathexpr.pl
 
 title = Intersection d'intervalles
 
@@ -25,3 +25,4 @@ evaluator ==
 score,numerror,texterror=ut.ans_interval(answer['1'],sol)
 feedback=fb.msg_analysis(score,texterror,lang)
 ==
+

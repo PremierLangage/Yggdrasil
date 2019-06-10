@@ -1,9 +1,9 @@
 @ /utils/sandboxio.py
-@ /examples/french_sentence.py
+@ french_sentence.py
 
 title = Grammaire : reconnaître les propositions subordonnées relatives 
 author = N.B.
-
+text=
 builder==
 import sys
 import json
@@ -56,4 +56,5 @@ if __name__ == "__main__":
         
     output(grade, feedback)
 ==
+
 

@@ -1,4 +1,4 @@
-extends = /template/mathexpr.pl
+extends = /Mathematics/template/mathexpr.pl
 
 title = Intersection d'ensembles finis
 
@@ -22,3 +22,4 @@ On considère les intervalles $% A= {{latexA}} %$ et $% B={{latexB}}.%$ Détermi
 evaluator ==
 score,numerror,feedback=ans_finiteset(answer['1'],sol)
 ==
+

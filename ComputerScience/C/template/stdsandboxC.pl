@@ -18,19 +18,16 @@ vous avez juste fait une erreur de clic.
 type=sandbox
 
 # chargement des fichiers utiles 
-@/template/basic.c
-@/template/graderC.py
-@/template/feedbackC.py
-@/template/__init__.py
-@/template/templateC.html
-@/template/templateConglet.html
+@/ComputerScience/C/template/basic.c
+@/ComputerScience/C/template/graderC.py
+@/ComputerScience/C/template/feedbackC.py
+@/ComputerScience/C/template/__init__.py
+@/ComputerScience/C/template/templateC.html
+@/ComputerScience/C/template/templateConglet.html
 @/utils/sandboxio.py
 
 #evaluator
-@/template/evaluatorC.py [grader.py]
-
-# builder
-builder=@/builder/none.py
+@/ComputerScience/C/template/evaluatorC.py [grader.py]
 
 # interface exercice standard plbank
 form=@/form/text_editor.html
@@ -40,5 +37,7 @@ editor.fontsize = 16
 #expectedoutput==
 #NE SERT A RIEN SI TOUT VA BIEN...
 #==
+
+
 
 

@@ -1,6 +1,4 @@
-
-
-extends = /template/input/mathexpr.pl
+extends = /Mathematics/template/mathexpr.pl
 
 title = Simplification d'une fraction
 
@@ -23,4 +21,5 @@ Simplifier la fraction $%\displaystyle \frac{ {{f0}} }{ {{f1}} } + \frac{ {{g0}}
 evaluator==
 score,_,feedback=ans_frac(answer['1'],sol)
 ==
+
 

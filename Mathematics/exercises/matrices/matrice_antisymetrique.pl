@@ -1,4 +1,4 @@
-extends = /template/mathfixedmatrix.pl
+extends = /Mathematics/template/mathfixedmatrix.pl
 
 title = Matrice antisymétrique
 
@@ -86,6 +86,7 @@ ok_answer = json.dumps(ok_answer)
 form += '<input type="hidden" id="okanswer" value="{{ ok_answer }}" /> '
 
 ==
+
 
 
 

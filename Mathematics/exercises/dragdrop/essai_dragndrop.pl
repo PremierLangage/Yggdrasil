@@ -1,4 +1,4 @@
-extends = /template/mathdragdrop.pl
+extends = /Mathematics/template/mathdragdrop.pl
 
 title = Appartenance et inclusion
 
@@ -44,6 +44,7 @@ else :
 solution = ''
 feedback = ''
 ==
+
 
 
 

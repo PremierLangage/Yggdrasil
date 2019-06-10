@@ -1,5 +1,5 @@
 
-extends = /template/mathplotlib.pl
+extends = /Mathematics/template/mathplotlib.pl
 
 title = Graphes de fonctions
 
@@ -47,6 +47,7 @@ feedback = rd.choice(['Excellente réponse', 'Merveilleuse réponse', 'Fabuleuse
 score = 100
 
 ==
+
 
 
 
