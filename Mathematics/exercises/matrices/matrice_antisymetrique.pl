@@ -8,7 +8,7 @@ before==
 size = randint(2,3)
 
 A = Matrix(size, size, lambda i,j : randint(-1,1))
-B = Matrix(size, size, lambda i,j : True if i<=j  else False)
+B = Matrix(size, size, lambda i,j : True if i<j  else False)
 
 fixed_matrix_tags = [{
     'name':'matrice',
@@ -86,6 +86,7 @@ ok_answer = json.dumps(ok_answer)
 form += '<input type="hidden" id="okanswer" value="{{ ok_answer }}" /> '
 
 ==
+
 
 
 
