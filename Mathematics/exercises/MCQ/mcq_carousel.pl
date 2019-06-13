@@ -106,23 +106,6 @@ form ==
 .carousel-control-prev, carousel-control-next {
   width:40px;
 }
-.vert .carousel-item-next.carousel-item-left,
-.vert .carousel-item-prev.carousel-item-right {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-}
-
-.vert .carousel-item-next,
-.vert .active.carousel-item-right {
-    -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100% 0);
-}
-
-.vert .carousel-item-prev,
-.vert .active.carousel-item-left {
--webkit-transform: translate3d(0,-100%, 0);
-        transform: translate3d(0,-100%, 0);
-}
 
  /* Make the image fully responsive 
   .carousel-item{
@@ -132,11 +115,11 @@ form ==
 
 </style>
 
-<div id="carouselExampleIndicators" class="vert carousel slide" data-interval="false">
+<div id="carouselExampleIndicators" class="carousel slide">
     <div class="carousel-inner">
     {% for question in questions %}
         <div class="carousel-item {% if forloop.first %} active {% endif %}">
-            <div class=" d-block w-75 mx-auto" style = "height:300px">
+            <div class="d-block w-75 mx-auto" style = "height:300px">
                 <h3>  
                     Question {{forloop.counter}}/{{questions|length}}:&nbsp 
                     {{question.text}} 
@@ -164,13 +147,13 @@ form ==
   
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="btn btn-primary my-butt">
-        <span class="fas fa-chevron-up"></span>
+        <span class="fas fa-chevron-left"></span>
         </span>
     </a>
 
     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
         <span class="btn btn-primary my-butt">
-        <span class="fas fa-chevron-down"></span>
+        <span class="fas fa-chevron-right"></span>
         </span>
     </a>
 </div>
@@ -202,6 +185,7 @@ final_score = q_scores // len(questions)
 feedback = output+'\n'+'Votre score est de ' + str(final_score) +'/100'
 score=100
 ==
+
 
 
 

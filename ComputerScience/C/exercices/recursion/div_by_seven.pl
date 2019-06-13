@@ -56,20 +56,28 @@ int divisible_by_7(int n){
 ==
 
 solution==
+
 int divisible_by_7(int n){
     if (n < 0)
-        return divisible_by_7(-n);			     
+        return divisible_by_7(-n);
     if ((n == 0) || (n == 7))
 	return 1;
     if (n < 14)
 	return 0;
     return divisible_by_7((n/10) - 2*(n%10));
 }
+
 ==
 
-codeafter==
+codebefore==
+
 #include <stdio.h>
 #include <stdlib.h>
+
+==
+
+
+codeafter==
 
 int main(int argc, char* argv[]){
   int n = atoi(argv[1]);
@@ -84,7 +92,6 @@ int main(int argc, char* argv[]){
 ==
 
 tests==
-
 [["Basique", "0", ""],
  ["Petit", "7", ""],
  ["Pas bien grand", "6", ""],
@@ -95,6 +102,7 @@ tests==
  ["Aléatoire", str(random.randint(-2000000000, 2000000000)), ""],
  ["Aléatoire", str(random.randint(-2000000000, 2000000000)), ""],
  ["Aléatoire", str(7*random.randint(-200000000, 200000000)), ""]]
-			 
+
 ==
+
 

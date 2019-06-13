@@ -5,13 +5,22 @@ title=Intialisation de Variables
 
 
 
-introduction==
+introduction=@ presvar.md
 
-Une petite introduction aux variables avec quelques initialisation.
+@ littandtypes.pl 
+@ variable001.pl
+@ variable002.pl
+@ variable003.pl
 
-==
-@ /concept/variable/variable001.pl
-@ /concept/variable/variable002.pl
-@ /concept/variable/variable003.pl
-@ /concept/variable/littandtypes.pl 
+@ valeursWbuild.pl
+@ openvaleur.pl
+
+
+
+#@ /concept/variable/variable001.pl
+#@ /concept/variable/variable002.pl
+#@ /concept/variable/variable003.pl
+#@ /concept/variable/littandtypes.pl 
+#@ /concept/
+
 

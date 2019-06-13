@@ -1,21 +1,23 @@
 # Copyright 2017 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
 name=sisi003.pl
-title= Si  Sinon  
+title= Si  Sinon / IF ELIF ELSE
 tag= input|else|if|elif
 extends=/ComputerScience/python/template/soluce.pl
 text==
-## IF ELIF ELSE
+
 Ecrire un programme qui demande à l’utilisateur deux entiers a et b par exemple:
+
 	3  
 	4  
 
 Et qui affiche  
-	a plus grand que b  
-ou  
-	a plus petit que b  
-ou  
-	a est égal à b  
+
+		a plus grand que b  
+	ou  
+		a plus petit que b  
+	ou  
+		a est égal à b  
 
 Dans l'exemple cela affiche :
 
@@ -54,4 +56,5 @@ else:
 
 print(forma % (a,b))
 ==
+
 

@@ -113,13 +113,15 @@ def str2expr(s,local_dict={}):
     >>> str2expr("3!")
     factorial(3)
     """
-
+    s=s.replace("\mleft", "")
+    s=s.replace("\mright", "")
     pattern = re.compile(r'\\frac\s*{(.*)}{(.*)}')
     s = pattern.sub(r"(\1)/(\2)", s)
     s=s.replace("\\times", "*")
-    s=s.replace("\left", "")
-    s=s.replace("\right", "")
     s=s.replace('\\'," ")
+    s=s.replace("left", "")
+    s=s.replace("right", "")
+ 
     s=s.replace("{", "(")
     s=s.replace("}", ")")
     
@@ -674,5 +676,6 @@ def ans_poly_factor(strans,x,sol):
     if is_equal(ans,sol):
         return (100,0,"")
     return (0,1,"")
+
 
 

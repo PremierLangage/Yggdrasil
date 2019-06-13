@@ -5,11 +5,13 @@ Nous utilisons dans la vie de tout les jours de nombreux littéraux:
 3, "demain", 15h30, "Mille-Feuilles".
 
 A la boulangerie nous échangeons avec la boulangère:
+
     - Je voudrais réserver *3* *Mille-Feuilles* pour *demain*.
     - *Oui*. Ils seront près à *15h30*.
 
 
-Si nous regardons ces différentes littéraux nous constatons qu'ils ne sont pas échangeables dans la phrase.  
+Si nous regardons ces différentes littéraux nous constatons qu'ils ne sont pas échangeables dans la phrase. 
+ 
     - Je voudrais réserver *15h30* *demain* pour *Oui* .
     - *3*. Ils seront près à *Mille-Feuilles*.
 
@@ -66,4 +68,5 @@ La création d'une variable se fait au moment de l'association initiale.
 	...
 	NameError: name 'a' is not defined
 	>>> 
+
 

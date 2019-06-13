@@ -18,7 +18,7 @@ code==
 # voici trois entiers a afficher dans l'ordre croissant 
 a,b,c=input().split(' ')
 a,b,c=int(a),int(b),int(c)
-# modifier dessous 
+# modifier le code dessous 
 
 
 print(a)
@@ -44,6 +44,7 @@ Test4 c b a|2 1 0
 Test5 a b c|1 4 8
 Test6 b a c|23 9 122
 ==
+
 
 
 

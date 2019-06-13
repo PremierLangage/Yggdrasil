@@ -7,24 +7,10 @@ title= Condition booléenne  # N'oubliez pas de remplir ce champs svp
 tag= input|boolean|if # N'oubliez pas de remplir ce champs svp
 extends=/ComputerScience/python/template/soluce.pl
 
-builder=@ /builder/before.py
+@ /builder/before.py [builder.py]
 
-text==
-# Super Fly 
-Super Fly est une compagnie aerienne a bas cout qui fait payer un supplement
-en cas de bagages trops lourds.
+text=
 
-Ecrire un programme qui demande à l’utilisateur le poids de son bagage en kilos.  
-```
-{{prompt}}
-```
-
-Si son bagage pèse plus de {{poid}} kilos, le programme affichera le message :  
-```
-Il y a un supplément de {{supplement}} euros pour un bagage de plus de {{poid}} kilos.
-```
-
-==
 
 before==
 import random 
@@ -44,6 +30,21 @@ if entree> {}:
 
 code += '''\n\n\"{}\"'''.format(affiche)
 
+text="""
+# Super Fly 
+Super Fly est une compagnie aerienne a bas cout qui fait payer un supplement
+en cas de bagages trops lourds.
+
+Ecrire un programme qui demande à l’utilisateur le poids de son bagage en kilos.  
+
+    {prompt}
+
+Si son bagage pèse plus de {poid} kilos, le programme affichera le message :  
+
+    Il y a un supplément de {supplement} euros pour un bagage de plus de {poid} kilos.
+
+""".format(prompt=prompt,poid=poid,supplement=supplement)
+
 
 plsoluce=""" Moins |{} 
 Plus |{}
@@ -54,9 +55,6 @@ Beaucouo plus | {}
 # Choisir pltest ou soluce ou expectedoutput
 
 expectedoutput=Il y a un supplément de 30 euros pour un bagage de plus de 20 kilos.
-
-
-
 
 
 
