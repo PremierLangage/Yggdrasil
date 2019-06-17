@@ -14,17 +14,18 @@ text ==
 Déplacer le point $% M %$ de sorte que l'angle $% (\overrightarrow{OA},\overrightarrow{OM}) %$ ait une mesure égale à $% \displaystyle {{ latexangle }}. %$
 ==
 
-input.1.attributes = {boundingbox:[-1.25,1.25,1.25,-1.25],axis:false,grid:false,keepAspectRatio:true,showNavigation:false}
+input.1.attributes = {boundingbox:[-1.25,1.25,1.25,-1.25],axis:false,grid:false,showNavigation:false}
 
 input.1.script.main ==
 var grid = board.create('grid',[],{gridX:0.25,gridY:0.25});
 var Ox = board.create('axis',[[0,0],[1,0]],{ticks:{visible:false}});
-var Oy = board.create('axis',[[0,0],[0,1]],{ticks:{visible:false}});
-var circle = board.create('circle',[[0,0],[0,1]],{strokeColor:'blue',fixed:true});
+var Oy = board.create('axis',[[0,0],[0.1,1]],{ticks:{visible:false}});
 var O = board.create('point',[0,0],{size:1,name:'O',color:'black',fixed:true});
 var A = board.create('point',[1,0],{size:1,name:'A',color:'black',fixed:true});
-var M = board.create('glider',[1,1,circle],{size:2,name:'M',color:'red'});
-var secOAM = board.create('sector',[O,A,M],{color:'orange'});
+var P1 = board.create('point',[-0.5,-0.25],{visible:false});
+var R1 = board.create('line',[O,P1],{size:0.5,color:'grey',straightFirst:false});
+var M1 = board.create('point',[-0.5,-0.25],{name:""});
+var angle = board.create('nonreflexangle', [M1, O, P1], {radius: 0.5});
 ==
 
 
@@ -38,10 +39,4 @@ else:
      score=0
 feedback=""
 ==
-
-
-
-
-
-
 
