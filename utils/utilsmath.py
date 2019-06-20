@@ -93,6 +93,17 @@ LatexPrinter=CustomLatexPrinter()
 def latex(expr):
     return LatexPrinter.doprint(expr)
 
+def latexsys(A,B):
+    n=A.shape[0]
+    lstvar=['x','y','z','t','u','v','w']
+    X=list(map(sp.symbols,lstvar[0:n]))
+    lhs=A*sp.Matrix(X)
+    code="\\left\lbrace \\\\begin{align}"
+    for i in range(n-1):
+        code+="&" + latex(sp.Eq(lhs[i],B[i]))+" \\\\\\ "
+    code+="&" +latex(sp.Eq(lhs[n-1],B[n-1]))+ " \\\\end{align}\\right."
+    return code
+
 #############################################################################
 # Latex parsing
 #############################################################################
@@ -265,6 +276,16 @@ def rand_interval_type(a,b):
     bl=rd.choice([True,False])
     br=rd.choice([True,False])
     return sp.Interval(a,b,left_open=bl,right_open=br)
+
+# Polynomials
+
+def rand_int_poly(d,nc,bound,x):
+    """
+    Generate a random polynomial with integer coefficients.
+    """
+    c=list_randint(nc,-bound,bound,[0])
+    p=[d]+list_randint_norep(nc-1,0,d-1)
+    return sum([c[i]*x**p[i] for i in range(nc)])
 
 # Matrices
 
@@ -450,6 +471,23 @@ def ans_number(strans,sol):
         texterror="Votre réponse n'est pas un nombre valide."
     return score,numerror,texterror
 
+def ans_list_number(strans,lstsol):
+    """
+    Analyze an answer of type list of numbers.
+    """
+    lstans=[]
+    for itans in strans.split(","):
+        try:
+            ans=str2expr(itans)
+        except:
+            return (-1,3,"L'une de vos réponses n'est pas une fraction d'entiers ou un entier.")
+        lstans.append(ans)
+    setans=sp.FiniteSet(*lstans)
+    setsol=sp.FiniteSet(*lstsol)
+    if not setsol==setans:
+        return (0,1,"")
+    return (100,0,"")
+
 # Fractions
 
 def is_frac(expr):
@@ -482,6 +520,26 @@ def ans_frac(strans,sol):
         return (0,1,"")
     return (100,0,"")
 
+def ans_list_frac(strans,lstsol):
+    """
+    Analyze an answer of type list of fractions.
+    """
+    lstans=[]
+    for itans in strans.split(","):
+        try:
+            ans=str2expr(itans)
+        except:
+            return (-1,3,"L'une de vos réponses n'est pas une fraction d'entiers ou un entier.")
+        if not is_frac(ans):
+            return (-1,3,"L'une de vos réponses n'est pas une fraction d'entiers ou un entier.")
+        if not is_frac_irred(ans):
+            return (0,2,"L'une de vos réponses n'est pas une fraction irréductible.")
+        lstans.append(ans)
+    setans=sp.FiniteSet(*lstans)
+    setsol=sp.FiniteSet(*lstsol)
+    if not setsol==setans:
+        return (0,1,"")
+    return (100,0,"")
 
 # Complex numbers
 
@@ -676,6 +734,8 @@ def ans_poly_factor(strans,x,sol):
     if is_equal(ans,sol):
         return (100,0,"")
     return (0,1,"")
+
+
 
 
 

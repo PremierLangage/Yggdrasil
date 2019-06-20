@@ -1,11 +1,12 @@
 <div class="mathexpr" style="{{style}}" id='mathexpr_{{name}}'></div>
 <input type='hidden' id='form_{{name}}'>
+<p style="margin-bottom:6cm;"></p>
 
 <script type='module'> 
     import MathLive from 'https://unpkg.com/mathlive/dist/mathlive.mjs';
     const mf_{{name}} = MathLive.makeMathField('mathexpr_{{name}}', {
-        smartMode: false,
         smartFence: false,
+        smartMode: false,
         {% if  virtualKeyboardMode %}
         virtualKeyboardMode: 'manual',
         {% else %}
@@ -31,4 +32,6 @@
     });
     mf_{{name}}.$insert("{{ value | safe }}","{format:'latex'}")
 </script>
+
+
 

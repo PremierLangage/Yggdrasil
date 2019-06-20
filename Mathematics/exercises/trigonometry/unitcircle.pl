@@ -14,7 +14,7 @@ text ==
 Déplacer le point $% M %$ de sorte que l'angle $% (\overrightarrow{OA},\overrightarrow{OM}) %$ ait une mesure égale à $% \displaystyle {{ latexangle }}. %$
 ==
 
-input.1.attributes = {boundingbox:[-1.25,1.25,1.25,-1.25],axis:false,grid:false,keepAspectRatio:true,showNavigation:false}
+input.1.attributes = {boundingbox:[-1.25,1.25,1.25,-1.25],axis:false,grid:false,showNavigation:false}
 
 input.1.script.main ==
 var grid = board.create('grid',[],{gridX:0.25,gridY:0.25});

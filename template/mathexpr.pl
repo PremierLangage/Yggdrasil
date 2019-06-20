@@ -9,7 +9,7 @@ title = Champ de réponse mathexpr
 lang = fr
 
 text ==
-Calculer $% 3+5 %$.
+
 ==
 
 form ==
@@ -27,6 +27,7 @@ if answer['1']=="8":
 else:
     score=0
 ==
+
 
 
 
