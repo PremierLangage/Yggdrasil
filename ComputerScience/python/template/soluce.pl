@@ -10,7 +10,8 @@ doc==
 
 ==
 
-@ soluceevaluator.py          [grader.py] # le as de python import toto as titi
+
+@ /grader/dynaLoopGrader.py [grader.py]
 @ gradesoluce.py
 @ /utils/sandboxio.py
 @ /builder/none.py [builder.py]
@@ -22,5 +23,7 @@ doc==
 form=@ /python/form/editorform.html
 
 settings.allow_reroll=1
+
+
 
 

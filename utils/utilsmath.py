@@ -26,12 +26,19 @@ class CustomLatexPrinter(LatexPrinter0):
         "mat_delim": "[",
         "symbol_names": {},
         "ln_notation": True,
+        "root_notation": True,
         "interv_rev_brack": True,
         "imaginary_unit": "i",
     }
     
     def _print_Pi(self, expr):
         return r"\pi"
+
+    def _print_Infinity(self, expr):
+        return r"+\infty"
+
+    def _print_NegativeInfinity(self, expr):
+        return r"-\infty"
     
     def _print_ImaginaryUnit(self, expr):
         return self._settings["imaginary_unit"]
@@ -355,6 +362,11 @@ def arg_mul_flatten(expr):
         else:
             lst.append(a)
     return lst
+    
+def is_coeffx(expr,x):
+    args=arg_mul_flatten(expr)
+    return args.count(x)==1 and sum([a.has(x) for a in args])==1
+
 
 def mul_flatten(expr):
     if not expr.is_Mul:
@@ -489,6 +501,8 @@ def ans_list_number(strans,lstsol):
     return (100,0,"")
 
 # Fractions
+def is_rat_simp(expr):
+    return is_frac_irred(expr) or isinstance(expr,(float,Float))
 
 def is_frac(expr):
     """
@@ -557,17 +571,16 @@ def ans_complex(strans,imaginary_unit,sol):
         return (0,1,"")
     return (100,0,"")
 
-def is_complex_algebraic(expr):
+def is_complex_cartesian(expr):
     """
-    Check if a complex number is in algebraic form.
+    Check if a complex number is in cartesian form.
     """
-    if not expr.is_polynomial(sp.I):
-        return False
     args=arg_add_flatten(expr)
-    fact = [a.as_independent(sp.I)[1] for a in args]
-    return fact.count(sp.I)<=1 and fact.count(sp.I)+fact.count(1)==len(fact)
+    ni=sum([is_coeffx(a,sp.I) for a in args])
+    nr=sum([a.is_real for a in args])
+    return ni<=1 and ni+nr==len(args)
 
-def ans_complex_algebraic(strans,imaginary_unit,sol):
+def ans_complex_cartesian(strans,imaginary_unit,sol):
     """
     Analyze an answer of type complex number in algebraic form.
     """
@@ -577,15 +590,15 @@ def ans_complex_algebraic(strans,imaginary_unit,sol):
         return (-1,2,"Votre réponse n'est pas un nombre complexe valide.")
     if not ans.is_complex:
         return (-1,2,"Votre réponse n'est pas un nombre complexe valide.")
-    if not is_complex_algebraic(ans):
+    if not is_complex_cartesian(ans):
         return (-1,3,"Votre réponse n'est pas un nombre complexe écrit sous forme cartésienne.")
     if not is_equal(ans,sol):
         return (0,1,"")
     return (100,0,"")
     
-def ans_complex_cartesian_coeff_rat(strans,imaginary_unit,sol):
+def ans_complex_cartesian_rat(strans,imaginary_unit,sol):
     """
-    Analyze an answer of type complex number in algebraic form with rational coefficients.
+    Analyze an answer of type complex number in cartesian form with simplified rational .
     """
     try:
         ans=str2expr(strans,{imaginary_unit:sp.I,'e':sp.E})
@@ -593,14 +606,14 @@ def ans_complex_cartesian_coeff_rat(strans,imaginary_unit,sol):
         return (-1,2,"Votre réponse n'est pas un nombre complexe valide.")
     if not ans.is_complex:
         return (-1,2,"Votre réponse n'est pas un nombre complexe valide.")
-    if not is_complex_algebraic(ans):
+    if not is_complex_cartesian(ans):
         return (-1,3,"Votre réponse n'est pas un nombre complexe écrit sous forme cartésienne.")
-    args=arg_add_flatten(ans)
-    fact = [sp.collect(a,sp.I).as_coeff_Mul(sp.I)[1] for a in args]
-    if fact.count(1)>1 or not all(is_rat_coeff_mul(a,sp.I) for a in args):
-        return (-1,3,"La partie réelle et/ou la partie imaginaire de votre réponse n'est pas simplifiée.")
     if not is_equal(ans,sol):
         return (0,1,"")
+#    args=arg_add_flatten(ans)
+#    fact = [sp.collect(a,sp.I).as_coeff_Mul(sp.I)[1] for a in args]
+#    if fact.count(1)>1 or not all(is_rat_coeff_mul(a,sp.I) for a in args):
+#        return (-1,3,"La partie réelle et/ou la partie imaginaire de votre réponse n'est pas simplifiée.")    
     return (100,0,"")
     
 def ans_complex_cartesian_coeff_rad(strans,imaginary_unit,sol):
@@ -626,7 +639,7 @@ def ans_complex_cartesian_coeff_rad(strans,imaginary_unit,sol):
 
 # Finite sets
 
-def ans_finiteset(strans,sol):
+def ans_finite_set(strans,sol):
     """
     Analyze an answer of type finite set.
     """
@@ -735,7 +748,18 @@ def ans_poly_factor(strans,x,sol):
         return (100,0,"")
     return (0,1,"")
 
-
-
-
+def ans_limit(strans,sol):
+    """
+    Analyze an answer of type limit.
+    """
+    strans=strans.replace("\infty", "oo")
+    try:
+        ans=str2expr(strans)
+    except:
+        return (-1,2,"Votre réponse n'est pas une expression valide.")
+    if ans==sol:
+        return (100,0,"")
+    if is_equal(ans,sol):
+        return (100,0,"")
+    return (0,1,"")
 

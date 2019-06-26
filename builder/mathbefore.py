@@ -19,6 +19,20 @@ def render_dic_strings(d,dic):
 def render_input_config(dic):
     render_dic_strings(dic['input'],dic)
 
+def format_hint(text):
+    format_text="""
+    <script>
+    $(function () {{
+    $('[data-toggle="popover"]').popover()
+    }})
+    </script>
+    <button type="button" class="btn btn-secondary btn-info p-1" data-container="body" data-toggle="popover" data-placement="bottom" data-content="{}">
+    Indication
+    </button>""".format(text)
+    return format_text
+    
+
+
 def build_head(dic):
     head=""
     for name,config in dic['input'].items():
@@ -98,7 +112,10 @@ if __name__ == "__main__":
 
     if 'input' in dic:
         render_input_config(dic)
-        dic['form0']=dic['form']#+"\n <div style='width:100%;height:200px;'>"
+        dic['form0']=dic['form']
+        if 'hint' in dic:
+            dic['form0']+=format_hint(dic['hint'])
+        dic['form0']+="\n <div style='width:100%;height:200px;'>"
         dic['head']=build_head(dic) 
         dic['form']=dic['head']+build_form(dic['form0'],dic)+"</div>"
 
@@ -108,4 +125,5 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
     
     sys.exit(0)
+
 

@@ -122,3 +122,4 @@ Soit le code python suivant quel est la valeur de la variable **a** apr√®s l'ex√
     print(d['text'])
 
 
+

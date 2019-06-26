@@ -2,6 +2,7 @@
 # coding: utf-8
 import sys, jsonpickle
 from sandboxio import output, get_context, get_answers
+from pltest_doc import PlRunner
 
 
 missing_evaluator_stderr = """\
@@ -20,7 +21,7 @@ if __name__ == "__main__":
         print(msg, file=sys.stderr)
         sys.exit(1)
 
-    from pltest_doc import PlRunner
+    
     dic = get_context()
     if "pltest" not in dic and "pltest1" not in dic:
         print("No pltest neither pltest1-n  defined change template", file=sys.stderr)
@@ -48,6 +49,7 @@ if __name__ == "__main__":
     if "feedback" in dic: # FIXME feedback devrai être un dictionnaire.
         outstr += dic["feedback"]+" valeur de stop "+ str(stop)
     output(a,outstr)
+
 
 
 

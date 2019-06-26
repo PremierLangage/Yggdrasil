@@ -4,9 +4,9 @@ Dans le modèle d'exercice `mathexpr`, la réponse de l'élève est une chaîne 
 - convertir la chaîne en un objet de type `sympy` (Expr, Set, Interval, Poly, Matrix, etc.)
 - effectuer un certain nombre de tests sur cet objet de type `sympy` (égalité avec la solution, forme, etc.)
 
-## Nombres
+## Fractions
 
-`ans_frac`
+#### `ans_frac`
 
 ~~~
 >>> sol=Rational(3,2)
@@ -22,3 +22,33 @@ Dans le modèle d'exercice `mathexpr`, la réponse de l'élève est une chaîne 
 >>> ans_frac("x",sol)
 (-1, 3, "Votre réponse n'est pas une fraction d'entiers ou un entier.")
 ~~~
+
+#### `ans_frac_irred`
+
+### Nombres complexes
+
+#### `ans_complex_cartesian(strans,imaginary_unit,sol)`
+
+Cette fonction teste si `strans` est :
+- `strans` est écrite sous forme cartésienne (a + bi);
+- `strans` égale à `sol`;
+
+#### `ans_complex_cartesian_rat(strans,imaginary_unit,sol)`
+
+Cette fonction teste si :
+- `strans` est écrite sous forme cartésienne (a + bi);
+- `strans` égale à `sol`;
+- les parties réelles et imaginaires sont simplifiées (entier, fraction irréductible, écriture décimale).
+
+## Ensembles finis
+
+#### `ans_finite_set(strans,sol)`
+
+Cette fonction teste si :
+- `strans` est écrite sous forme cartésienne (a + bi);
+- `strans` égale à `sol`;
+- les parties réelles et imaginaires sont simplifiées (entier, fraction irréductible, écriture décimale).
+
+
+## Intervalles réells
+

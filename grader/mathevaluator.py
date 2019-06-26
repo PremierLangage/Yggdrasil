@@ -169,12 +169,16 @@ if __name__ == "__main__":
         if nbattempt<maxattempt:
             format_feedback=format_analysis('retry',feedback,maxattempt-nbattempt,lang)
         else:
-            format_feedback=format_analysis('fail',feedback,0,lang)
+            if 'solution' in dic:
+                format_feedback=format_analysis('fail',feedback+Template(dic['solution']).render(dic),0,lang)
+            else:
+                format_feedback=format_analysis('fail',feedback,0,lang)
     
     if 'input' in dic:
         dic['form']=dic['head']+build_form(dic['form0'],dic)
     
     output(score,format_feedback,dic)
+
 
 
 

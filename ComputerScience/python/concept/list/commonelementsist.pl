@@ -3,7 +3,7 @@ author=Dominique Revuz
 name=Elements Communs
 title=  Les listes utilisées comme des ensembles.
 tag= listinput|conversion
-extends=/ComputerScience/python/python/0PLG/soluce.pl
+extends=/ComputerScience/python/template/soluce.pl
 text==
 
 # Eléments communs dans deux listes
@@ -19,19 +19,9 @@ Ecrire les trois fonctions ***appartient(monensemble,element), ajoute(monensembl
 
 Pour vérifier que vos fonctions fonctionnent vous allez les utiliser avec le code suivant qui permet de lire deux listes (écrites sur une ligne) et d'afficher les éléments communs aux deux listes:
 
-	l1=input().split()
-	l2=input().split()
-	me1=[]
-	me_commun=[]
-	# création de l'ensemble des éléments dans l1 
-	for e in l1:
-		ajoute(me1,e)
-	# création de l'ensemble des éléments communs cela doit être un ensemble pourquoi ? 
-	for e in l2:
-		if appartient(me1,e):
-			ajouter(me_commun,e)
-	print(me2)
-
+<pre>
+{{essai}}
+</pre>
 ==
 
 
@@ -50,10 +40,25 @@ for e in l1:
 # création de l'ensemble des éléments communs cela doit être un ensemble pourquoi ? 
 for e in l2:
 	if appartient(me1,e):
-		ajouter(me_commun,e)
+		ajoute(me_commun,e)
 print(sorted(me2))
 ==
 
+essai==
+l1=input().split()
+l2=input().split()
+me1=[]
+me_commun=[]
+# création de l'ensemble des éléments dans l1 
+for e in l1:
+	ajoute(me1,e)
+# création de l'ensemble des éléments communs cela doit être un ensemble pourquoi ? 
+for e in l2:
+	if appartient(me1,e):
+		ajoute(me_commun,e)
+print(sorted(me2))
+
+==
 
 
 soluce==
@@ -77,3 +82,5 @@ Si vous avez besoin d'un outil logique ou mathématique pour résoudre un probl�
 la documentation si il n'existe pas déjà avant de le réécrire.
 (https://docs.python.org/3/)
 ==
+
+

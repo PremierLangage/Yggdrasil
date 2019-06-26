@@ -1,5 +1,5 @@
 
-extends=/ComputerScience/python/template/qcm_template.pl
+extends=poo2.pl
 
 title= LE D
 text==
@@ -11,9 +11,6 @@ Donnez une explication personnelle du **D** de SOLID en une seule Phrase.
 
 ==
 
-grader=@/template/openevaluator.py
-@ /utils/sandboxio.py
-builder=@ /template/donobuild.py
-# une interface standard d'exercice avec un editeur pour la réponse
-form=@ /python/form/editorform.html
+
+
 

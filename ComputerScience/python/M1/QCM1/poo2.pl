@@ -9,9 +9,16 @@ Quelle est votre préférence et pourquoi ?
 Répondez avec vos mots et en moins de 5 lignes.
 ==
 
-grader=@/template/openevaluator.py
+# A default grader (giving the 100 mark)
+@ /grader/evaluator.py [grader.py]
+
+evaluator==
+grade=(100,"# Merci de vos commentaires.\n Toute l'équipe PL. ")
+==
+
 @ /utils/sandboxio.py
-builder=@ /template/donobuild.py
+@ /builder/none.py [builder.py]
 # une interface standard d'exercice avec un editeur pour la réponse
 form=@ /python/form/editorform.html
+
 

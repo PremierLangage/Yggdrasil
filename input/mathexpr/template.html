@@ -1,6 +1,5 @@
 <div class="mathexpr" style="{{style}}" id='mathexpr_{{name}}'></div>
 <input type='hidden' id='form_{{name}}'>
-<p style="margin-bottom:6cm;"></p>
 
 <script type='module'> 
     import MathLive from 'https://unpkg.com/mathlive/dist/mathlive.mjs';
@@ -23,6 +22,11 @@
                 label: 'Ensembles',
                 tooltip: 'Ensembles',
                 layer: 'sets'
+            },
+            'functions': {
+                label: 'Fonctions',
+                tooltip: 'Fonctions',
+                layer: 'functions'
             }
         },
         virtualKeyboards: '{{ virtualKeyboards }}',
@@ -32,6 +36,8 @@
     });
     mf_{{name}}.$insert("{{ value | safe }}","{format:'latex'}")
 </script>
+
+
 
 
 

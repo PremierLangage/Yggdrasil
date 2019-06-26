@@ -21,7 +21,6 @@ for (obj of board.objectsList){
 
 {% if inputmode == 'final' %}
 
-var data = {{answer | safe}};
 
 for (obj of board.objectsList){
     if (JXG.isPoint(obj) && obj.name != "") {
@@ -70,6 +69,7 @@ jxg_{{name}}_updateInput();
 
 {{boardname}}.on('update',jxg_{{name}}_updateInput);
 </script>
+
 
 
 
