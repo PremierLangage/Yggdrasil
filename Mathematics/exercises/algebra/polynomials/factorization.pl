@@ -34,7 +34,8 @@ text = {{sol}} Factoriser $% {{expr}} %$.
 
 evaluator==
 x=Symbol('x')
-score,numerror,feedback=ans_poly_factor(answer['1'],x,sol)
+score,numerror,feedback=ans_poly_factor(answer['1'],sol,x)
 ==
+
 
 

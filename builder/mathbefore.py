@@ -67,7 +67,9 @@ def build_form(form_template,dic):
     return Template(form_template).render({**form_context,**dic})
 
 def sympy_to_str(arg):
-    if isinstance(arg,(Basic,Matrix)):
+    if isinstance(arg,FiniteSet):
+        return "_setconverted_"+str(arg.args)
+    elif isinstance(arg,(Basic,Matrix)):
         return "_converted_"+str(arg)
     elif isinstance(arg,dict):
         return {k: sympy_to_str(v) for k, v in arg.items()}
@@ -125,5 +127,6 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
     
     sys.exit(0)
+
 
 

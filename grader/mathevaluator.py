@@ -41,6 +41,9 @@ def str_to_sympy(arg):
         if arg[:11] == "_converted_":
             with evaluate(False):
                 return sympify(arg[11:])
+        elif arg[:14] == "_setconverted_":
+            with evaluate(False):
+                return FiniteSet(*sympify(arg[14:]))
         else:
             return arg
     elif isinstance(arg, dict):
@@ -53,7 +56,9 @@ def str_to_sympy(arg):
         return arg
 
 def sympy_to_str(arg):
-    if isinstance(arg,(Basic,Matrix)):
+    if isinstance(arg,FiniteSet):
+        return "_setconverted_"+str(arg.args)
+    elif isinstance(arg,(Basic,Matrix)):
         return "_converted_"+str(arg)
     elif isinstance(arg,dict):
         return {k: sympy_to_str(v) for k, v in arg.items()}
@@ -178,6 +183,7 @@ if __name__ == "__main__":
         dic['form']=dic['head']+build_form(dic['form0'],dic)
     
     output(score,format_feedback,dic)
+
 
 
 

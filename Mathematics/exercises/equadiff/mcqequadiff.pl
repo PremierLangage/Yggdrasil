@@ -6,9 +6,9 @@ title= equation differentielle ou pas ?
 text= Cochez les équations qui sont des équations différentielles
 
 # Nombre de lignes total 
-nb=5
+nb=3
 # Nombre minimal de lignes "vraies"
-nbtrues=2
+nbtrues=1
 # if nbtrues==0 then a random number 
 # with at least one good answer ...
 
@@ -24,7 +24,7 @@ $%\quad  y'= \sqrt{2} %$ | Ceci est une equation linéraire
 bad==
 $%\quad y=2%$
 $%\quad y^2=3y+1%$
-$%\quad y2=12%$
+$%\quad y^2=12%$
 $%\quad y^2=3y+1%$
 
 ==
@@ -34,6 +34,7 @@ $%\quad y^2=3y+1%$
 # vraies sont comptées
 # sinon les cases non cochées et fausses sont comptabilisées aussi
 #uncrosedfalse= True 
+
 
 
 

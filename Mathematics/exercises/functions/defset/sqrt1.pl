@@ -1,10 +1,10 @@
-extends = /Mathematics/template/input/mathexpr.pl
+extends = /Mathematics/template/mathexpr.pl
 
 title = Ensemble de définition (racine carrée 1)
 
 lang = fr
 
-virtualKeyboards = sets
+input.1.virtualKeyboards = sets
 
 before ==
 a=randint(-6,6,[0,1,-1])
@@ -21,8 +21,9 @@ Déterminer l'ensemble de définition de la fonction $%f : x \mapsto {{latexf}}%
 ==
 
 evaluator==
-score,_,texterror=ans_interval(answer['1'],sol)
-feedback=fb.msg_analysis(score,texterror,lang)
+score,_,texterror=ans_real_set(answer['1'],sol)
+feedback=str(str2realset(answer['1']))
 ==
+
 
 
