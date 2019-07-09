@@ -23,8 +23,8 @@ if __name__ == "__main__":
 
     
     dic = get_context()
-    if "pltest" not in dic and "pltest1" not in dic:
-        print("No pltest neither pltest1-n  defined change template", file=sys.stderr)
+    if "pltest" not in dic and "pltest0" not in dic and "pltest1" not in dic:
+        print("add  either pltest or pltestN , or change the template ", file=sys.stderr)
         sys.exit(1)
     if 'stopfirsterror' in dic:
         stop=bool(dic['stopfirsterror'])
@@ -32,11 +32,24 @@ if __name__ == "__main__":
         stop=False
     student = get_answers()['answer']
     outstr=""
+#    if "pltestbuilder" in dic:
+#        if "soluce" not in dic:
+#                print(" illegal use of pltestbuilder sql soluce is empty", file=sys.stderr)
+#                sys.exit(1)
+#        import pltestbuilder
+#        tester = SQLPlRunner(student,dic["soluce"])
+#        a, b = tester.runpltest(1)
+#    elif
     if "pltest" in dic:
         pltest = dic['pltest']
         tester = PlRunner(student,pltest)
         a, b = tester.runpltest(1)
+    elif "pltest0" in dic:
+        pltest = dic['pltest0']
+        tester = PlRunner(student,pltest)
+        a, b = tester.runpltest(1)
     else:
+
         a,b= True, ""
     i=1
     while "pltest"+str(i) in dic and (a or stop ) :
@@ -49,6 +62,7 @@ if __name__ == "__main__":
     if "feedback" in dic: # FIXME feedback devrai être un dictionnaire.
         outstr += dic["feedback"]+" valeur de stop "+ str(stop)
     output(a,outstr)
+
 
 
 

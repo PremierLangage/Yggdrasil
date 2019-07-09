@@ -507,11 +507,11 @@ def ans_prod(strans,solargs):
         texterror="Votre réponse n'est pas une expression mathématique valide."
     return score,numerror,texterror
 
-# Algebraic expressions
+# Mathematical expressions
 
 def ans_expr(strans,sol,local_dict={},authorized_func={}):
     """
-    Analyze an algebraic expression.
+    Analyze an answer which is a mathematical expression.
     """
     try:
         ans=str2expr(strans)
@@ -526,16 +526,22 @@ def ans_expr(strans,sol,local_dict={},authorized_func={}):
         return (-1,"NotRatSimp","Certains nombres ne sons pas simplifiés.")
     return (100,0,"")
 
+
 def ans_tuple_expr(strans,sol,parenthese_enclosed=True,local_dict={},authorized_func={}):
     """
     Analyze a tuple of algebraic expressions.
     """
-    if parenthese_enclosed:
-        delim="("
-    try:
-        ans=str2listexpr(strans,delim,local_dict)
-    except:
-        return (-1,"FailedConversion","Votre réponse n'est pas un n-uplet.")
+    if isinstance(strans,(tuple,list)):
+        ans=[]
+        for item in strans:
+            ans.append(str2expr(item,local_dict))
+    elif isinstance(strans,string):
+        if parenthese_enclosed:
+            delim="("
+        try:
+            ans=str2listexpr(strans,delim,local_dict)
+        except:
+            return (-1,"FailedConversion","Votre réponse n'est pas un n-uplet.")
     if len(ans)!=len(sol):
         return (0,"IncorrectLength","")
     for i in range(len(ans)):
@@ -583,7 +589,8 @@ def ans_set_expr(strans,sol,brace_enclosed=True,local_dict={},authorized_func={}
             return (-1,"NotRatSimp","Certains nombres ne sont pas simplifiés.")
     return (100,"","")
 
-# Fractions
+# Integer and fractions
+
 def is_frac_int(expr):
     """
     Check if a sympy expression is a fraction of integers.
@@ -625,11 +632,42 @@ def ans_frac(strans,sol):
     if not is_frac_int(ans):
         return (-1,2,"Votre réponse n'est pas une fraction d'entiers ou un entier.")
     if not is_equal(ans,sol):
-        return (0,3,"")
+        return (0,"NotEqual","")
     if not is_frac_irred(ans):
         return (-1,4,"Votre réponse n'est pas une fraction irréductible.")
     return (100,0,"")
 
+def ans_frac_irred(strans,sol):
+    """
+    Analyze an answer of type fraction.
+    """
+    try:
+        ans=str2expr(strans)
+    except:
+        return (-1,1,"Votre réponse n'est pas une fraction d'entiers ou un entier.")
+    if not is_frac_int(ans):
+        return (-1,2,"Votre réponse n'est pas une fraction d'entiers ou un entier.")
+    if not is_frac_irred(ans):
+        return (0,4,"Votre réponse n'est pas une fraction irréductible.")
+    if not is_equal(ans,sol):
+        return (0,"NotEqual","")
+    return (100,0,"")
+
+
+# Real numbers
+
+def ans_real(strans,sol,local_dict={},authorized_func={}):
+    return ans_expr(strans,sol,local_dict,authorized_func)
+
+def ans_real_extended(strans,sol,local_dict={},authorized_func={}):
+    """
+    Analyze an answer of type limit.
+    """
+    strans=strans.replace("\infty", "oo")
+    return ans_expr(strans,sol,local_dict,authorized_func)
+
+def ans_angle_rad(strans,sol,local_dict={},authorized_func={}):
+    return 0
 
 # Complex numbers
 
@@ -745,6 +783,8 @@ def is_poly_factor(expr,x,domain):
     """
     args=arg_mul_flatten(expr)
     for a in args:
+        if type(a)==sp.Pow:
+            a=a.args[0]
         if not sp.Poly(a,x,domain=domain).is_irreducible:
             return False
     return True
@@ -762,12 +802,7 @@ def ans_poly_factor(strans,sol,x,domain='RR'):
         return (-1,5,"Ceraines expressions numériques peuvent être simplifiées.") 
     return (100,"","")
 
-def ans_real_extended(strans,sol):
-    """
-    Analyze an answer of type limit.
-    """
-    strans=strans.replace("\infty", "oo")
-    return ans_expr(strans,sol)
+
 
 
 

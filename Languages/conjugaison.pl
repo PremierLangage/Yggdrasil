@@ -3,6 +3,9 @@
 @ /grader/evaluator.py [grader.py]
 @ data_conjugaison.txt [data.txt]
 
+
+
+
 text= dummy
 title = Conjugaison d'un verbe
 
@@ -20,10 +23,10 @@ personne=dicpersonne[p]
 
 with open('data.txt') as json_file:  
     data = json.load(json_file)
-    verbe=random.choice(list(data["verbe"].keys()))
-    t=data["verbe"][verbe]['terminaison']
-    sol=data["verbe"][verbe]['base']+data["terminaison"][t][p]
-    
+verbe=random.choice(list(data["verbe"].keys()))
+t=data["verbe"][verbe]['terminaison']
+sol=data["verbe"][verbe]['base']+data["terminaison"][t][p]
+
 text="""Conjuguer le verbe {} à la {}.""".format(verbe,personne)
 ==
 
@@ -35,6 +38,7 @@ form==
 
 evaluator ==
 feedback=""
+ans=response['answer']
 if set(sol)==set(ans):
     grade=(100,"Bonne réponse")
 else:
@@ -44,6 +48,7 @@ else:
         feedback += "Tu en a mise en trop !"
     grade=(0,feedback)
 ==
+
 
 
 
