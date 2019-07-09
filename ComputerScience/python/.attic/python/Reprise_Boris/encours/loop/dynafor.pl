@@ -15,3 +15,6 @@ Exo Boucle for |
 
 soluce==
 ==
+
+taboo=while
+needed=for
