@@ -12,3 +12,4 @@ form=@ /python/form/editorform.html
 
 settings.allow_reroll=1
 
+

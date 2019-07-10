@@ -1,20 +1,5 @@
 
 extends=template.pl
-
-difficulty=2
-
-text==
-==
-
-code==
-==
-
-plsoluce==
-Exo Boucle while |
-==
-
-soluce==
-==
-
+difficulty=1
 taboo=for
 needed=while

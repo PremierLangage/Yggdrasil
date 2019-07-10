@@ -199,20 +199,22 @@ if __name__ == "__main__":
         print("No soluce in dic necessary for this template " , file=sys.stderr)
         sys.exit(1)
     
-    if dic['text'] == "" and dic['soluce'] == "":
-        difficulty = int(dic['difficulty'])
-        if dic['needed'] == "for":
-            v = generateAleaFor(difficulty - 1)
-        else:
-            v = generateAleaWhile(difficulty - 1)
-            
-        dic['text'] = v[0] + "\r\nRappel : vous ne devez pas utiliser de boucle " + dic['taboo']
-        dic['soluce'] = v[1]
-        #dic['code'] = v[1] Si le prof désire voir le code généré de la soluce lors de l'appel du builder.py
+    
+    difficulty = int(dic['difficulty'])
+    if dic['needed'] == "for":
+        v = generateAleaFor(difficulty - 1)
+    else:
+        v = generateAleaWhile(difficulty - 1)
+        
+    dic['text'] = v[0] + "<br/>Rappel : vous ne devez pas utiliser de boucle " + dic['taboo']
+    dic['soluce'] = v[1]
+    #dic['code'] = v[1] Si le prof désire voir le code généré de la soluce lors de l'appel du builder.py
 
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
     sys.exit(0)
+
+
 
 
 

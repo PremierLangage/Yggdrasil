@@ -1,0 +1,9 @@
+title = Fonctions trigonométriques
+
+introduction ==
+- Placer un point sur le cercle trigonométrique.
+- Par lecture du cercle trigonométrique, retrouver les valeurs des cosinus et sinus
+==
+
+@ /Mathematics/exercises/analysis/functions/trigonometric_functions/unit_circle_read.pl
+

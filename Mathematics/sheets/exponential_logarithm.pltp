@@ -1,0 +1,11 @@
+title = Exponentielle et logarithme
+
+introduction ==
+- Transformer une écriture en utilisant les propritétés algébriques du logarithme et de l'exponentielle.
+==
+
+@ /Mathematics/exercises/analysis/logarithm/transf_ln_add.pl
+
+@ /Mathematics/exercises/analysis/logarithm/transf_ln_coeff_mult.pl
+
+

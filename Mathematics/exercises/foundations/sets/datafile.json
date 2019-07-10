@@ -1,0 +1,43 @@
+[
+    {
+    "fmaps": "f: \\mathbb{Z} \\times \\mathbb{Z}  \\mapsto \\mathbb{Z} \\times \\mathbb{Z}",
+     "fdef": "f(n,p) = (np, n+p)", "set": "2\\mathbb{Z} \\times 2\\mathbb{Z}",
+      "good": [
+            {
+            "display": "$%4\\mathbb{Z} \\times 2\\mathbb{Z}%$",
+            "style": "width: 8em; height: 3em"
+            }, 
+            {"display": "$%\\{ (4np, 2n+2p)\\mid n,p \\in \\mathbb{Z}\\}%$", 
+            "style": "width: 16em; height: 3em"}
+        ],
+        
+        "bad": [
+        {"display": "$%4 \\mathbb{Z}^2 \\times 4 \\mathbb{Z}%$", "style": "width: 8em; height: 3em"}, 
+        {"display": "$%\\mathbb{Z}^4 \\times \\mathbb{Z}^2%$", "style": "width: 8em; height: 3em"}, 
+        {"display": "$%\\{ (np, n+p)\\mid n,p \\in \\mathbb{Z}\\}%$", "style": "width: 16em; height: 3em"}
+        ]
+    },
+
+        {
+    "fmaps": "f: \\mathbb{Z} \\times \\mathbb{Z}  \\mapsto \\mathbb{Z} \\times \\mathbb{Z}",
+    "fdef": "f(n,p) = (n+2p, n*n)",
+    "set": "3\\mathbb{Z} \\times 2\\mathbb{Z}",
+      "good": [
+            {
+            "display": "$%\\mathbb{Z} \\times \\mathbb{Z}%$",
+            "style": "width: 8em; height: 3em"
+            }, 
+            {"display": "$%\\{ (3n+4p, 4n*n)\\mid n,p \\in \\mathbb{Z} \\}%$", 
+            "style": "width: 16em; height: 3em"}
+        ],
+        
+        "bad": [
+        {"display": "$% 6\\mathbb{Z}  \\times 4 \\mathbb{Z}%$", "style": "width: 8em; height: 3em"}, 
+        {"display": "$%\\mathbb{Z}^6 \\times \\mathbb{Z}^4%$", "style": "width: 8em; height: 3em"}, 
+        {"display": "$%\\{ (n+2p, n*n)\\mid n,p \\in \\mathbb{Z}\\}%$", "style": "width: 16em; height: 3em"}
+        ]
+    }
+]
+
+
+

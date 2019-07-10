@@ -12,5 +12,21 @@ text et soluce ne doivent être remplis que si on ne souhaite pas utiliser cet e
 en exercice aléatoire.
 ==
 
+soluce==
+
+gros camion
+
+==
+
+code==
+==
+
+plsoluce==
+Exo Boucle while |
+==
+
+
+
+
 
 

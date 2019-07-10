@@ -1,22 +1,12 @@
 
 extends=template.pl
 
-difficulty=1
-
-text==
-==
-
-code==
-==
-
-plsoluce==
-Exo Boucle for | 
-==
-
-soluce==
-==
-
+difficulty=3
 taboo=while
 needed=for
+
+text= Pour ne pas avoir un warning stupid 
+
+
 
 
