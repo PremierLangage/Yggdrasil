@@ -1,7 +1,7 @@
 
 extends=template.pl
 
-difficulty=2
+difficulty=1
 
 text==
 ==
@@ -18,4 +18,5 @@ soluce==
 
 taboo=while
 needed=for
+
 

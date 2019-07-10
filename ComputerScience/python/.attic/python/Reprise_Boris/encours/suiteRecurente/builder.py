@@ -6,11 +6,18 @@ def generateAleaSuiteRecurrente():
     b = randint(-5, 5)
     c = randint(-5, 5)
     nfunct = randint(0, 2)
-    functions = ["ax^2+b", "ae^{bx+c}", "(ax+b)/(x^2+1)"]
+    functions = [("ax^2+b", str(a)+"*(x**2)+"+str(b)), 
+    ("ae^{bx+c}", str(a)+"*exp("+str(b)+"*x+"+str(c)+")"), 
+    ("(ax+b)/(x^2+1)", "("+str(a)+"*x+"+str(b)+")/(x**2+1)")]
     funct = functions[nfunct]
 
+    enonces = ["calcule le terme de rang n (pas d'affichage)", "affiche le terme de rang n (pas de retour)"
+    , "affiche tous les termes jusqu'au rang n inclus (pas de retour)"]
+    nbenonce = randint(0, 2)
+
     text = "Soit la suite récurrente définie par u_0 = " + u0 + " et pour tout entier n, u_{n+1} = f(u_n) avec "
-    text += funct
+    text += funct + "\r\n"
+    text += "Écrire, en Python, une fonction suiteRec de paramètre n qui " + enonces[nbenonce] + "."
 
 
 if __name__ == "__main__":
@@ -31,5 +38,6 @@ if __name__ == "__main__":
     
     if dic['text'] == "" and dic['soluce'] == "":
         text, code = generateAleaSuiteRecurrente()
+
 
 

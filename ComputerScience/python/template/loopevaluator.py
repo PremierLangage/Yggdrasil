@@ -48,7 +48,7 @@ if __name__ == "__main__":
 
     if "taboo" in dic:
         if checktaboo(dic['taboo'], student):
-            output(0,"There is a taboo on the use of " + dic['taboo'] + ". You must use a loop " + dic['needed'] + ".")
+            output(0, "La boucle " + dic['taboo'] + " est proscrite. Vous devez utiliser une boucle " + dic['needed'] + ".")
             sys.exit(1)
 
     with open("student.py","w") as sf:
