@@ -1,4 +1,4 @@
-about=for
+
 extends=template.pl
 
 difficulty=2
@@ -18,3 +18,4 @@ soluce==
 
 taboo=while
 needed=for
+

@@ -1,4 +1,4 @@
-from random import randint, choice
+from random import randint
 
 def generateAleaSuiteRecurrente():
     u0 = randint(-5, 5)
@@ -31,4 +31,5 @@ if __name__ == "__main__":
     
     if dic['text'] == "" and dic['soluce'] == "":
         text, code = generateAleaSuiteRecurrente()
+
 

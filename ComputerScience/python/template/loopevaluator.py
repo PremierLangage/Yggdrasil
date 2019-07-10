@@ -16,9 +16,8 @@ The script have access to every variable declared in the PL and its 'before' scr
 It should declare a variable 'grade' which should contain a tuple (int, feedback) where int is the grade between [0, 100]."""
 
 def checktaboo(taboo, answer):
-    x = re.sub("(\"\"\"(.|\n)*\"\"\"|#.*)", "", answer)
-    if re.search("(^"+taboo+"\s|[^\"]+"+taboo+"\s)", x) != None: return True
-    return False
+    x = re.sub("(\"(.|\n)*\"|#.*)", "", answer) #enlève les commentaires et les chaînes de caractères
+    return re.search("(^"+taboo+"\s|[^\"]+"+taboo+"\s)", x) != None
 
 if __name__ == "__main__":
     if len(sys.argv) < 5:
@@ -49,7 +48,7 @@ if __name__ == "__main__":
 
     if "taboo" in dic:
         if checktaboo(dic['taboo'], student):
-            output(0,"There is a taboo on the use of " + dic['taboo'] + "\nYou must use a loop " + dic['needed'])
+            output(0,"There is a taboo on the use of " + dic['taboo'] + ". You must use a loop " + dic['needed'] + ".")
             sys.exit(1)
 
     with open("student.py","w") as sf:
@@ -60,5 +59,6 @@ if __name__ == "__main__":
 
 
     output(ret, fb.render())
+
 
 
