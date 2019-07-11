@@ -13,17 +13,19 @@ en exercice aléatoire.
 ==
 
 soluce==
+==
 
-gros camion
-
+text==
 ==
 
 code==
+#Ecrivez votre code ici
 ==
 
 plsoluce==
 Exo Boucle while |
 ==
+
 
 
 

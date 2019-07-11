@@ -90,7 +90,7 @@ def generateAleaWhile(difficulty):
 def generateAleaFor(difficulty):
     text = []
     code = []
-    if difficulty < 0 or difficulty > 2:
+    if difficulty < 0 or difficulty > 3:
         print("La difficulté est trop grande ou trop petite", file = sys.stderr)
         sys.exit(1)
     
@@ -134,25 +134,44 @@ def generateAleaFor(difficulty):
     code.append(code2)
 
     """ difficulté 3 """
+    text3 = "Écrire des boucles imbriquées affichant ce motif :<br/>"
+    text3 += "&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
+    text3 += "&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
+    text3 += "&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
+    text3 += "&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
+    text3 += "&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
+    text3 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
+    text3 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270;<br/>"
+    text3 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270;<br/>"
+    text3 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270;<br/>"
+    text3 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270;<br/>"
+    code3 = "for i in range(0, 10):\n    line = i*\" \"\n    for j in range(0, 2*(10-i)-1):\n"
+    code3 += "        if j % 2 == 0: line += \"*\"\n        else: line += \" \"\n"
+    code3 += "    print(line)"
+
+    text.append(text3)
+    code.append(code3)
+
+    """ difficulté 4 """
     fbRk = randint(70, 100)
-    text31 = "Écrire une boucle affichant la suite de fibonacci jusqu'au rang " + str(fbRk) + " inclus."
-    code31 = "u0 = 0\nu1 = 1\nfor x in range(0, " + str(fbRk+1) + "):\n"
-    code31 += "    if x == 0 or x == 1: print(x)\n"
-    code31 += "    else:\n        u2 = u0 + u1\n        print(u2)\n"
-    code31 += "        u0 = u1\n        u1 = u2\n"
+    text41 = "Écrire une boucle affichant la suite de fibonacci jusqu'au rang " + str(fbRk) + " inclus."
+    code41 = "u0 = 0\nu1 = 1\nfor x in range(0, " + str(fbRk+1) + "):\n"
+    code41 += "    if x == 0 or x == 1: print(x)\n"
+    code41 += "    else:\n        u2 = u0 + u1\n        print(u2)\n"
+    code41 += "        u0 = u1\n        u1 = u2\n"
 
     start = randint(1, 55)
     rank = randint(20, 80)
-    text32 = "Écrire une boucle affichant les " + str(rank) + " premiers termes de la suite de Syracuse à partir de " + str(start) + "."
-    code32 = "deb = " + str(start) + "\nfor i in range(0, " + str(rank) + "):\n"
-    code32 += "    print(deb)\n    if deb % 2 == 0: deb = deb//2\n"
-    code32 += "    else: deb = 3*deb+1"
+    text42 = "Écrire une boucle affichant les " + str(rank) + " premiers termes de la suite de Syracuse à partir de " + str(start) + "."
+    code42 = "deb = " + str(start) + "\nfor i in range(0, " + str(rank) + "):\n"
+    code42 += "    print(deb)\n    if deb % 2 == 0: deb = deb//2\n"
+    code42 += "    else: deb = 3*deb+1"
 
-    enonces3 = [(text31, code31), (text32, code32)]
+    enonces4 = [(text41, code41), (text42, code42)]
     roulette = randint(0, 1)
 
-    text.append(enonces3[roulette][0])
-    code.append(enonces3[roulette][1])
+    text.append(enonces4[roulette][0])
+    code.append(enonces4[roulette][1])
 
     return text[difficulty], code[difficulty]
 
@@ -213,6 +232,7 @@ if __name__ == "__main__":
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
     sys.exit(0)
+
 
 
 

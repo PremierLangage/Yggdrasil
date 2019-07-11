@@ -216,6 +216,44 @@ def str2interval(s,local_dict={}):
         return sp.Interval.open(str2expr(pattern.search(s).group(1)),str2expr(pattern.search(s).group(2)))
     raise ValueError()
 
+def str2chainineq(s,local_dict={}):
+    """
+    Convert a latex string into chained inequalities.
+    """
+    s=s.strip()
+    s=s.replace(r"\mleft","")
+    s=s.replace(r"\mright","")
+    s=s.replace(r"\left","")
+    s=s.replace(r"\ge",">=")
+    s=s.replace(r"\geq",">=")
+    s=s.replace(r"\le","<=")
+    s=s.replace(r"\leq","<=")
+    pattern = re.compile(r'^(.*)<(.*)<(.*)$')
+    if pattern.search(s) is not None:
+        parts=[pattern.search(s).group(1),'<',pattern.search(s).group(2),'<',pattern.search(s).group(3)]
+    pattern = re.compile(r'^(.*)<=(.*)<=(.*)$')
+    if pattern.search(s) is not None:
+        parts=[pattern.search(s).group(1),'<=',pattern.search(s).group(2),'<=',pattern.search(s).group(3)]
+    pattern = re.compile(r'^(.*)<(.*)<=(.*)$')
+    if pattern.search(s) is not None:
+        parts=[pattern.search(s).group(1),'<',pattern.search(s).group(2),'<=',pattern.search(s).group(3)]
+    pattern = re.compile(r'^(.*)<=(.*)<(.*)$')
+    if pattern.search(s) is not None:
+        parts=[pattern.search(s).group(1),'<=',pattern.search(s).group(2),'<',pattern.search(s).group(3)]
+    pattern = re.compile(r'^(.*)>(.*)>(.*)$')
+    if pattern.search(s) is not None:
+        parts=[pattern.search(s).group(3),'<',pattern.search(s).group(2),'<',pattern.search(s).group(1)]
+    pattern = re.compile(r'^(.*)>=(.*)>=(.*)$')
+    if pattern.search(s) is not None:
+        parts=[pattern.search(s).group(3),'<=',pattern.search(s).group(2),'<=',pattern.search(s).group(1)]
+    pattern = re.compile(r'^(.*)>=(.*)>(.*)$')
+    if pattern.search(s) is not None:
+        parts=[pattern.search(s).group(3),'<',pattern.search(s).group(2),'<=',pattern.search(s).group(1)]
+    pattern = re.compile(r'^(.*)>(.*)>=(.*)$')
+    if pattern.search(s) is not None:
+        parts=[pattern.search(s).group(3),'<=',pattern.search(s).group(2),'<',pattern.search(s).group(1)]
+    return [str2expr(parts[0]),parts[1],str2expr(parts[2]),parts[3],str2expr(parts[4])]
+
 #############################################################################
 # Generation of random mathematical objects
 #############################################################################
@@ -801,6 +839,7 @@ def ans_poly_factor(strans,sol,x,domain='RR'):
     if not is_rat_simp(ans):
         return (-1,5,"Ceraines expressions numériques peuvent être simplifiées.") 
     return (100,"","")
+
 
 
 
