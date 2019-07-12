@@ -19,12 +19,12 @@ text==
 ==
 
 code==
-#Ecrivez votre code ici
 ==
 
 plsoluce==
 Exo Boucle while |
 ==
+
 
 
 

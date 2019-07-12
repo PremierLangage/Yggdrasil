@@ -111,6 +111,14 @@ def latexsys(A,B):
     code+="&" +latex(sp.Eq(lhs[n-1],B[n-1]))+ " \\\\end{align}\\right."
     return code
 
+def latex_ineq(lst):
+    expr1,rel1,expr,rel2,expr2=lst
+    rel1=rel1.replace("<=",r"\le")
+    rel1=rel1.replace(">=",r"\ge")
+    rel2=rel2.replace("<=",r"\le")
+    rel2=rel2.replace(">=",r"\ge")
+    return latex(expr1)+rel1+" "+latex(expr)+rel2+" "+latex(expr2)
+
 #############################################################################
 # Latex parsing
 #############################################################################
@@ -549,7 +557,7 @@ def ans_prod(strans,solargs):
 
 def ans_expr(strans,sol,local_dict={},authorized_func={}):
     """
-    Analyze an answer which is a mathematical expression.
+    Analyze an answer expected to be a mathematical expression.
     """
     try:
         ans=str2expr(strans)
@@ -661,7 +669,7 @@ def is_frac_int_irred(expr):
 
 def ans_frac(strans,sol):
     """
-    Analyze an answer of type fraction.
+    Analyze an answer expected to be a fraction.
     """
     try:
         ans=str2expr(strans)
@@ -843,7 +851,19 @@ def ans_poly_factor(strans,sol,x,domain='RR'):
 
 
 
-
+def ans_chained_ineq(strans,sol,local_dict={},authorized_func={}):
+    """
+    Analyze an answer expected to be chained inequalities.
+    """
+    try:
+        ans=str2chainineq(strans)
+    except:
+        return (-1,"FailedConversion","Votre réponse n'est pas un encadrement.")
+    if not (is_equal(ans[0],sol[0]) and is_equal(ans[4],sol[4])):
+        return (0,"WrongBounds","Les bornes ne sont pas correctes.")
+    if not (ans[1]==sol[1] and ans[3]==sol[3]):
+        return (0,"WrongIneq","Les types d'inégalités ne sont pas corrects.")
+    return (100,0,"")
 
 
 

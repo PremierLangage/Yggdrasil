@@ -1,6 +1,7 @@
 
 extends=template.pl
 
-difficulty=1
+difficulty=3
 taboo=for
 needed=while
+

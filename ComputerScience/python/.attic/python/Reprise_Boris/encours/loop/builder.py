@@ -2,7 +2,7 @@
 Il propose 3 niveaux de difficultés:
 Niveau 1 => une seule boucle basique
 Niveau 2 => une seule boucle basique avec en plus une opération sur une variable à l'intérieur de la boucle
-Niveau 3 => boucle Syracuse et Fibonacci à réaliser"""
+Niveau 3 => boucles imbriquées pour réaliser des motifs"""
 
 import sys, json, jsonpickle
 from random import randint, seed, choice
@@ -17,8 +17,8 @@ from random import randint, seed, choice
 def generateAleaWhile(difficulty):
     text = []
     code = []
-    if difficulty < 0 or difficulty > 2:
-        print("La difficulté est trop grande ou trop petite, elle doit être comprise entre 1 et 3.", file = sys.stderr)
+    if difficulty < 0 or difficulty > 3:
+        print("La difficulté est trop grande ou trop petite, elle doit être comprise entre 1 et 4.", file = sys.stderr)
         sys.exit(1)
     
     """ difficulté 1 """
@@ -66,24 +66,24 @@ def generateAleaWhile(difficulty):
     code.append(code2)
 
     """ difficulté 3 """
-    fbRk = randint(70, 100)
-    text31 = "Écrire une boucle affichant la suite de fibonacci jusqu'au rang " + str(fbRk) + " inclus."
-    code31 = "a = 0\nu0 = 0\nu1 = 1\nwhile a < " + str(fbRk+1) + ":\n"
-    code31 += "    if x == 0 or x == 1: print(x)\n"
-    code31 += "    else:\n        u2 = u0 + u1\n        print(u2)\n"
-    code31 += "        u0 = u1\n        u1 = u2\n        a += 1"
+    text31 = "Écrire des boucles imbriquées permettant d'afficher le triangle isocèle suivant :<br/>"
+    text31 += "&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
+    text31 += "&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
+    text31 += "&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
+    text31 += "&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
+    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
+    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
+    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270;<br/>"
+    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270;<br/>"
+    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270;<br/>"
+    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270;<br/>"
+    text31 += "Un triangle isocèle avec les étoiles espacées avec un espace."
+    code31 = "a = 0\nwhile a < 10:\n    line = a*\" \"\n    b = 0\n"
+    code31 += "    while b < 2*(10-a)-1:\n        if b % 2 == 0: line += \"*\"\n"
+    code31 += "        else: line += \" \"\n        b += 1\n    print(line)\n    a += 1"
 
-    start = randint(1, 55)
-    text32 = "Écrire une boucle affichant la suite de Syracuse à partir de " + str(start) + " jusqu'à 1."
-    code32 = "deb = " + str(start) + "\nwhile deb != 1:\n"
-    code32 += "    print(deb)\n    if deb % 2 == 0: deb = deb//2\n"
-    code32 += "    else: deb = 3*deb+1\nprint(deb)"
-
-    enonces3 = [(text31, code31), (text32, code32)]
-    roulette = randint(0, 1)
-
-    text.append(enonces3[roulette][0])
-    code.append(enonces3[roulette][1])
+    text.append(text31)
+    code.append(code31)
 
     return text[difficulty], code[difficulty]
 
@@ -91,7 +91,7 @@ def generateAleaFor(difficulty):
     text = []
     code = []
     if difficulty < 0 or difficulty > 3:
-        print("La difficulté est trop grande ou trop petite", file = sys.stderr)
+        print("La difficulté est trop grande ou trop petite, elle doit être comprise entre 1 et 4.", file = sys.stderr)
         sys.exit(1)
     
     """ difficulté 1 """
@@ -134,44 +134,24 @@ def generateAleaFor(difficulty):
     code.append(code2)
 
     """ difficulté 3 """
-    text3 = "Écrire des boucles imbriquées affichant ce motif :<br/>"
-    text3 += "&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
-    text3 += "&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
-    text3 += "&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
-    text3 += "&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
-    text3 += "&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
-    text3 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
-    text3 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270;<br/>"
-    text3 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270;<br/>"
-    text3 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270;<br/>"
-    text3 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270;<br/>"
-    code3 = "for i in range(0, 10):\n    line = i*\" \"\n    for j in range(0, 2*(10-i)-1):\n"
-    code3 += "        if j % 2 == 0: line += \"*\"\n        else: line += \" \"\n"
-    code3 += "    print(line)"
+    text31 = "Écrire des boucles imbriquées permettant d'afficher le triangle isocèle suivant :<br/>"
+    text31 += "&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
+    text31 += "&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
+    text31 += "&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
+    text31 += "&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
+    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
+    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
+    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270;<br/>"
+    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270;<br/>"
+    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270;<br/>"
+    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270;<br/>"
+    text31 += "Un triangle isocèle avec les étoiles espacées avec un espace."
+    code31 = "for i in range(0, 10):\n    line = i*\" \"\n    for j in range(0, 2*(10-i)-1):\n"
+    code31 += "        if j % 2 == 0: line += \"*\"\n        else: line += \" \"\n"
+    code31 += "    print(line)"
 
-    text.append(text3)
-    code.append(code3)
-
-    """ difficulté 4 """
-    fbRk = randint(70, 100)
-    text41 = "Écrire une boucle affichant la suite de fibonacci jusqu'au rang " + str(fbRk) + " inclus."
-    code41 = "u0 = 0\nu1 = 1\nfor x in range(0, " + str(fbRk+1) + "):\n"
-    code41 += "    if x == 0 or x == 1: print(x)\n"
-    code41 += "    else:\n        u2 = u0 + u1\n        print(u2)\n"
-    code41 += "        u0 = u1\n        u1 = u2\n"
-
-    start = randint(1, 55)
-    rank = randint(20, 80)
-    text42 = "Écrire une boucle affichant les " + str(rank) + " premiers termes de la suite de Syracuse à partir de " + str(start) + "."
-    code42 = "deb = " + str(start) + "\nfor i in range(0, " + str(rank) + "):\n"
-    code42 += "    print(deb)\n    if deb % 2 == 0: deb = deb//2\n"
-    code42 += "    else: deb = 3*deb+1"
-
-    enonces4 = [(text41, code41), (text42, code42)]
-    roulette = randint(0, 1)
-
-    text.append(enonces4[roulette][0])
-    code.append(enonces4[roulette][1])
+    text.append(text31)
+    code.append(code31)
 
     return text[difficulty], code[difficulty]
 
@@ -188,17 +168,14 @@ if __name__ == "__main__":
         dic = json.load(f)
     
     if "difficulty" not in dic:
-        #print("No difficulty in dic necessary for this template " , file=sys.stderr)
         print("Ajouter une difficulté de la forme difficulty=n dans le fichier pl", file = sys.stderr)
         sys.exit(1)
 
     if "taboo" not in dic:
-        #print("No taboo in dic necessary for this template " , file=sys.stderr)
         print("Ajouter le type de boucle à ne pas utiliser dans l'exercice sous la forme taboo=type_de_boucle", file = sys.stderr)
         sys.exit(1)
     
     if "needed" not in dic:
-        #print("No needed in dic necessary for this template " , file=sys.stderr)
         print("Ajouter le type de boucle à devoir utiliser dans l'exercice sous la forme needed=type_de_boucle", file = sys.stderr)
         sys.exit(1)
     
@@ -227,11 +204,14 @@ if __name__ == "__main__":
         
     dic['text'] = v[0] + "<br/>Rappel : vous ne devez pas utiliser de boucle " + dic['taboo']
     dic['soluce'] = v[1]
-    #dic['code'] = v[1] Si le prof désire voir le code généré de la soluce lors de l'appel du builder.py
+    """dic['code'] = v[1] #Si le prof désire voir le code généré de la soluce lors de l'appel du builder.py"""
+    dic['code'] = "#Ecrivez votre code ici"
 
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
     sys.exit(0)
+
+
 
 
 
