@@ -7,16 +7,9 @@ Niveau 3 => boucles imbriquées pour réaliser des motifs"""
 import sys, json, jsonpickle
 from random import randint, seed, choice
 
-"""def facteur(debut, end, zeroexclu=False):
-    if not zeroexclu: return randint(debut, end)
-    else:
-        a = randint(debut, end)
-        if a == 0: return facteur(debut, end, zeroexclu)
-    return a"""
-
 def generateAleaWhile(difficulty):
-    text = []
-    code = []
+    exo = []
+
     if difficulty < 0 or difficulty > 3:
         print("La difficulté est trop grande ou trop petite, elle doit être comprise entre 1 et 4.", file = sys.stderr)
         sys.exit(1)
@@ -41,8 +34,7 @@ def generateAleaWhile(difficulty):
         code1 = "x = " + str(debut) + "\nwhile x < " + str(end+1) + ":\n"
         code1 += "    print(x)\n    x += " + str(pas)
     
-    text.append(text1)
-    code.append(code1)
+    exo.append((text1, code1))
 
     """ difficulté 2 """
     levelup = randint(0, 1)
@@ -62,34 +54,47 @@ def generateAleaWhile(difficulty):
     if rev == 1: code2 += "    x -= " + str(pas)
     else: code2 += "    x += " + str(pas)
 
-    text.append(text2)
-    code.append(code2)
+    exo.append((text2, code2))
 
     """ difficulté 3 """
-    text31 = "Écrire des boucles imbriquées permettant d'afficher le triangle isocèle suivant :<br/>"
-    text31 += "&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
-    text31 += "&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
-    text31 += "&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
-    text31 += "&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
-    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
-    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
-    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270;<br/>"
-    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270;<br/>"
-    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270;<br/>"
-    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270;<br/>"
-    text31 += "Un triangle isocèle avec les étoiles espacées avec un espace."
-    code31 = "a = 0\nwhile a < 10:\n    line = a*\" \"\n    b = 0\n"
-    code31 += "    while b < 2*(10-a)-1:\n        if b % 2 == 0: line += \"*\"\n"
-    code31 += "        else: line += \" \"\n        b += 1\n    print(line)\n    a += 1"
+    rev = randint(0, 1)
+    baseSize = randint(5, 10)
 
-    text.append(text31)
-    code.append(code31)
+    text3 = "Écrire des boucles imbriquées permettant d'afficher le triangle isocèle de taille " + str(baseSize) + " suivant :<br/>"
+    code3 = ""
 
-    return text[difficulty], code[difficulty]
+    if rev == 0:
+        for i in range(baseSize-1, -1, -1):
+            line = ""
+            for k in range(0, i): line += "&nbsp;"
+            for j in range(0, 2*(baseSize-i)-1):
+                if j % 2 == 0: line += "&#8270;"
+                else: line += "&nbsp;"
+            text3 += line + "<br/>"
+
+        code3 += "a = " + str(baseSize-1) + "\nwhile a > -1:\n    line = a*\" \"\n    b = 0\n"
+        code3 += "    while b < 2*(" + str(baseSize) + "-a)-1:\n        if b % 2 == 0: line += \"*\"\n"
+        code3 += "        else: line += \" \"\n        b += 1\n    print(line)\n    a -= 1"
+    else:
+        for i in range(0, baseSize):
+            line = ""
+            for k in range(0, i): line += "&nbsp;"
+            for j in range(0, 2*(baseSize-i)-1):
+                if j % 2 == 0: line += "&#8270;"
+                else: line += "&nbsp;"
+            text3 += line + "<br/>"
+
+        code3 += "a = 0\nwhile a < " + str(baseSize) + ":\n    line = a*\" \"\n    b = 0\n"
+        code3 += "    while b < 2*(" + str(baseSize) + "-a)-1:\n        if b % 2 == 0: line += \"*\"\n"
+        code3 += "        else: line += \" \"\n        b += 1\n    print(line)\n    a += 1"
+    
+    exo.append((text3, code3))
+
+    return exo[difficulty]
 
 def generateAleaFor(difficulty):
-    text = []
-    code = []
+    exo = []
+
     if difficulty < 0 or difficulty > 3:
         print("La difficulté est trop grande ou trop petite, elle doit être comprise entre 1 et 4.", file = sys.stderr)
         sys.exit(1)
@@ -112,8 +117,7 @@ def generateAleaFor(difficulty):
     else: code1 = "for x in range(" + str(debut) + ", " + str(end+1) + ", " + str(pas) + "):\n"
     code1 += "    print(x)"
 
-    text.append(text1)
-    code.append(code1)
+    exo.append((text1, code1))
 
     """ difficulté 2 """
     levelup = randint(0, 1)
@@ -130,30 +134,43 @@ def generateAleaFor(difficulty):
     if levelup == 0: code2 += "    print(x*x)"
     else: code2 += "    print(x*x*x)"
 
-    text.append(text2)
-    code.append(code2)
+    exo.append((text2, code2))
 
     """ difficulté 3 """
-    text31 = "Écrire des boucles imbriquées permettant d'afficher le triangle isocèle suivant :<br/>"
-    text31 += "&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
-    text31 += "&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
-    text31 += "&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
-    text31 += "&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
-    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
-    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270; &#8270;<br/>"
-    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270; &#8270;<br/>"
-    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270; &#8270;<br/>"
-    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270; &#8270;<br/>"
-    text31 += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8270;<br/>"
-    text31 += "Un triangle isocèle avec les étoiles espacées avec un espace."
-    code31 = "for i in range(0, 10):\n    line = i*\" \"\n    for j in range(0, 2*(10-i)-1):\n"
-    code31 += "        if j % 2 == 0: line += \"*\"\n        else: line += \" \"\n"
-    code31 += "    print(line)"
+    rev = randint(0, 1)
+    baseSize = randint(5, 10)
 
-    text.append(text31)
-    code.append(code31)
+    text3 = "Écrire des boucles imbriquées permettant d'afficher le triangle isocèle de taille " + str(baseSize) + " suivant :<br/>"
+    code3 = ""
 
-    return text[difficulty], code[difficulty]
+    if rev == 0:
+        for i in range(baseSize-1, -1, -1):
+            line = ""
+            for k in range(0, i): line += "&nbsp;"
+            for j in range(0, 2*(baseSize-i)-1):
+                if j % 2 == 0: line += "&#8270;"
+                else: line += "&nbsp;"
+            text3 += line + "<br/>"
+
+        code3 += "for i in range(" + str(baseSize-1) + ", -1, -1):\n    line = i*\" \"\n    for j in range(0, 2*(" + str(baseSize) + "-i)-1):\n"
+        code3 += "        if j % 2 == 0: line += \"*\"\n        else: line += \" \"\n"
+        code3 += "    print(line)"
+    else:
+        for i in range(0, baseSize):
+            line = ""
+            for k in range(0, i): line += "&nbsp;"
+            for j in range(0, 2*(baseSize-i)-1):
+                if j % 2 == 0: line += "&#8270;"
+                else: line += "&nbsp;"
+            text3 += line + "<br/>"
+
+        code3 += "for i in range(0, " + str(baseSize) + "):\n    line = i*\" \"\n    for j in range(0, 2*(" + str(baseSize) + "-i)-1):\n"
+        code3 += "        if j % 2 == 0: line += \"*\"\n        else: line += \" \"\n"
+        code3 += "    print(line)"
+    
+    exo.append((text3, code3))
+
+    return exo[difficulty]
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
@@ -210,6 +227,7 @@ if __name__ == "__main__":
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
     sys.exit(0)
+
 
 
 
