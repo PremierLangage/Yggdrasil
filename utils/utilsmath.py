@@ -236,9 +236,6 @@ def str2chainineq(s,local_dict={}):
     s=s.replace(r"\geq",">=")
     s=s.replace(r"\le","<=")
     s=s.replace(r"\leq","<=")
-    pattern = re.compile(r'^(.*)<(.*)<(.*)$')
-    if pattern.search(s) is not None:
-        parts=[pattern.search(s).group(1),'<',pattern.search(s).group(2),'<',pattern.search(s).group(3)]
     pattern = re.compile(r'^(.*)<=(.*)<=(.*)$')
     if pattern.search(s) is not None:
         parts=[pattern.search(s).group(1),'<=',pattern.search(s).group(2),'<=',pattern.search(s).group(3)]
@@ -248,9 +245,9 @@ def str2chainineq(s,local_dict={}):
     pattern = re.compile(r'^(.*)<=(.*)<(.*)$')
     if pattern.search(s) is not None:
         parts=[pattern.search(s).group(1),'<=',pattern.search(s).group(2),'<',pattern.search(s).group(3)]
-    pattern = re.compile(r'^(.*)>(.*)>(.*)$')
+    pattern = re.compile(r'^(.*)<(.*)<(.*)$')
     if pattern.search(s) is not None:
-        parts=[pattern.search(s).group(3),'<',pattern.search(s).group(2),'<',pattern.search(s).group(1)]
+        parts=[pattern.search(s).group(1),'<',pattern.search(s).group(2),'<',pattern.search(s).group(3)]
     pattern = re.compile(r'^(.*)>=(.*)>=(.*)$')
     if pattern.search(s) is not None:
         parts=[pattern.search(s).group(3),'<=',pattern.search(s).group(2),'<=',pattern.search(s).group(1)]
@@ -260,6 +257,9 @@ def str2chainineq(s,local_dict={}):
     pattern = re.compile(r'^(.*)>(.*)>=(.*)$')
     if pattern.search(s) is not None:
         parts=[pattern.search(s).group(3),'<=',pattern.search(s).group(2),'<',pattern.search(s).group(1)]
+    pattern = re.compile(r'^(.*)>(.*)>(.*)$')
+    if pattern.search(s) is not None:
+        parts=[pattern.search(s).group(3),'<',pattern.search(s).group(2),'<',pattern.search(s).group(1)]
     return [str2expr(parts[0]),parts[1],str2expr(parts[2]),parts[3],str2expr(parts[4])]
 
 #############################################################################
