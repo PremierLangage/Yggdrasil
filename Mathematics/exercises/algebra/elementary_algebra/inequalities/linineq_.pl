@@ -1,6 +1,6 @@
 extends = /Mathematics/template/mathexpr.pl
 
-title = Inéquations linéaires
+title = Inéquation linéaire
 
 lang = fr
 
@@ -28,7 +28,8 @@ Déterminer l'ensemble des réels $% x %$ tels que $$ {{latexineq}}. $$ Ecrire c
 input.1.virtualKeyboards = sets
 
 evaluator==
-score,_,feedback=ans_interval(answer['1'],sol)
+score,_,feedback=ans_rset(answer['1'],sol)
 ==
+
 
 

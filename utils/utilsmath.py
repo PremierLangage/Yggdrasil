@@ -180,7 +180,7 @@ def str2listexpr(s,delim='',local_dict={}):
         else:
             return [inside]
 
-def str2realset(s,local_dict={}):
+def str2rset(s,local_dict={}):
     """
     Convert a latex string into an interval.
     """
@@ -236,30 +236,32 @@ def str2chainineq(s,local_dict={}):
     s=s.replace(r"\geq",">=")
     s=s.replace(r"\le","<=")
     s=s.replace(r"\leq","<=")
-    pattern = re.compile(r'^(.*)<=(.*)<=(.*)$')
-    if pattern.search(s) is not None:
-        parts=[pattern.search(s).group(1),'<=',pattern.search(s).group(2),'<=',pattern.search(s).group(3)]
-    pattern = re.compile(r'^(.*)<(.*)<=(.*)$')
-    if pattern.search(s) is not None:
-        parts=[pattern.search(s).group(1),'<',pattern.search(s).group(2),'<=',pattern.search(s).group(3)]
-    pattern = re.compile(r'^(.*)<=(.*)<(.*)$')
-    if pattern.search(s) is not None:
-        parts=[pattern.search(s).group(1),'<=',pattern.search(s).group(2),'<',pattern.search(s).group(3)]
-    pattern = re.compile(r'^(.*)<(.*)<(.*)$')
-    if pattern.search(s) is not None:
-        parts=[pattern.search(s).group(1),'<',pattern.search(s).group(2),'<',pattern.search(s).group(3)]
-    pattern = re.compile(r'^(.*)>=(.*)>=(.*)$')
-    if pattern.search(s) is not None:
-        parts=[pattern.search(s).group(3),'<=',pattern.search(s).group(2),'<=',pattern.search(s).group(1)]
-    pattern = re.compile(r'^(.*)>=(.*)>(.*)$')
-    if pattern.search(s) is not None:
-        parts=[pattern.search(s).group(3),'<',pattern.search(s).group(2),'<=',pattern.search(s).group(1)]
-    pattern = re.compile(r'^(.*)>(.*)>=(.*)$')
-    if pattern.search(s) is not None:
-        parts=[pattern.search(s).group(3),'<=',pattern.search(s).group(2),'<',pattern.search(s).group(1)]
-    pattern = re.compile(r'^(.*)>(.*)>(.*)$')
-    if pattern.search(s) is not None:
-        parts=[pattern.search(s).group(3),'<',pattern.search(s).group(2),'<',pattern.search(s).group(1)]
+    pattern1 = re.compile(r'^(.*)<=(.*)<=(.*)$')
+    pattern2 = re.compile(r'^(.*)<(.*)<=(.*)$')
+    pattern3 = re.compile(r'^(.*)<=(.*)<(.*)$')
+    pattern4 = re.compile(r'^(.*)<(.*)<(.*)$')
+    pattern5 = re.compile(r'^(.*)>=(.*)>=(.*)$')
+    pattern6 = re.compile(r'^(.*)>=(.*)>(.*)$')
+    pattern7 = re.compile(r'^(.*)>(.*)>=(.*)$')
+    pattern8 = re.compile(r'^(.*)>(.*)>(.*)$')
+
+    if pattern1.search(s) is not None:
+        parts=[pattern1.search(s).group(1),'<=',pattern1.search(s).group(2),'<=',pattern1.search(s).group(3)]
+    elif pattern2.search(s) is not None:
+        parts=[pattern2.search(s).group(1),'<',pattern2.search(s).group(2),'<=',pattern2.search(s).group(3)]
+    elif pattern3.search(s) is not None:
+        parts=[pattern3.search(s).group(1),'<=',pattern3.search(s).group(2),'<',pattern3.search(s).group(3)]
+    elif pattern4.search(s) is not None:
+        parts=[pattern4.search(s).group(1),'<',pattern4.search(s).group(2),'<',pattern4.search(s).group(3)]
+    elif pattern5.search(s) is not None:
+        parts=[pattern5.search(s).group(3),'<=',pattern5.search(s).group(2),'<=',pattern5.search(s).group(1)]
+    elif pattern6.search(s) is not None:
+        parts=[pattern6.search(s).group(3),'<',pattern6.search(s).group(2),'<=',pattern6.search(s).group(1)]
+    elif pattern7.search(s) is not None:
+        parts=[pattern7.search(s).group(3),'<=',pattern7.search(s).group(2),'<',pattern7.search(s).group(1)]
+    elif pattern8.search(s) is not None:
+        parts=[pattern8.search(s).group(3),'<',pattern8.search(s).group(2),'<',pattern8.search(s).group(1)]
+    
     return [str2expr(parts[0]),parts[1],str2expr(parts[2]),parts[3],str2expr(parts[4])]
 
 #############################################################################
@@ -777,12 +779,12 @@ def ans_complex_cartesian(strans,sol,imaginary_unit):
   
 # Real sets
 
-def ans_real_set(strans,sol):
+def ans_rset(strans,sol):
     """
-    Analyze an answer of type interval.
+    Analyze an answer expected to be a union of real intervals.
     """
     try:
-        ans=str2realset(strans)
+        ans=str2rset(strans)
     except:
         return (-1,"FailedConversion","Votre réponse n'est pas un ensemble valide.")
     for i in range(len(ans)):
@@ -864,6 +866,7 @@ def ans_chained_ineq(strans,sol,local_dict={},authorized_func={}):
     if not (ans[1]==sol[1] and ans[3]==sol[3]):
         return (0,"WrongIneq","Les types d'inégalités ne sont pas corrects.")
     return (100,0,"")
+
 
 
 

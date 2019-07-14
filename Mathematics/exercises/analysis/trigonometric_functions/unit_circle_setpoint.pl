@@ -36,7 +36,7 @@ var secOAM = board.create('sector',[O,A,M],{color:'orange'});
 
 form ==
 {{input_1 | safe}}
-
+<br>
 {{input_2 | safe}}
 ==
 
@@ -58,3 +58,4 @@ else:
      score=0
 feedback=""
 ==
+
