@@ -9,7 +9,7 @@ def generateAleaVariable():
     for i in range(0, nbVariables):
         aleaInt = randint(0, 1)
         if aleaInt == 1: var = randint(-1000, 1000)
-        else: var = uniform(-1000, 1000)
+        else: var = round(uniform(-1000, 1000), 3)
         listVariables.append(var)
         listVariablesStr.append(str(var))
 
@@ -48,3 +48,4 @@ if __name__ == "__main__":
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
     sys.exit(0)
+

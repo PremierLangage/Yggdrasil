@@ -2,7 +2,7 @@
 
 oneshot=True
 
-extends=/ComputerScience/python/template/suitesoluce.pl
+extends=/ComputerScience/python/template/manipvarsoluce.pl
 @ builder.py [builder.py]
 
 soluce==
@@ -17,5 +17,6 @@ code==
 plsoluce==
 Exo Boucle while |
 ==
+
 
 

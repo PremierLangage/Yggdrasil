@@ -5,6 +5,12 @@ introduction ==
 - Par lecture du cercle trigonométrique, retrouver les valeurs des cosinus et sinus
 ==
 
-@ /Mathematics/exercises/analysis/functions/trigonometric_functions/unit_circle_read_angle_124.pl
+@ /Mathematics/exercises/analysis/trigonometric_functions/unit_circle_read_angle_124.pl
 
+@ /Mathematics/exercises/analysis/trigonometric_functions/unit_circle_read_sincos_12.pl
 
+@ /Mathematics/exercises/analysis/trigonometric_functions/unit_circle_read_sincos_346.pl
+
+@ /Mathematics/exercises/analysis/trigonometric_functions/equation_sincos_12_closed.pl
+
+@ /Mathematics/exercises/analysis/trigonometric_functions/equation_sincos_346_closed.pl
