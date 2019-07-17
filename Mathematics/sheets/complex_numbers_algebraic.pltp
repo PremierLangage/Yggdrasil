@@ -1,0 +1,9 @@
+title = Nombres complexes (point de vue algébrique)
+
+introduction ==
+- Effectuer des calculs algébriques avec des nombres complexes.
+==
+
+@ /Mathematics/exercises/complex_numbers/computation_mult.pl
+
+

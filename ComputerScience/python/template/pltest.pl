@@ -34,7 +34,7 @@ Si vous voulez plusieurs groupes de test vous notez pltest1 puis pltest2 etc
 Si vous souhaitez faire des tests sur le code de l'élève la variable __student__ est accessible dans le pltest
 
     pltest2==
-    >>> __student.count("if")>1 # Trop de tests IF 
+    >>> student.count("if")>1 # Trop de tests IF 
     False
     ==
 

@@ -1,0 +1,8 @@
+title = Factorisation
+
+introduction ==
+- Factoriser un polynôme dont une racine est connue.
+==
+
+@ /Mathematics/exercises/algebra/polynomials/factorization/given_root_deg2_intrat_int.pl
+

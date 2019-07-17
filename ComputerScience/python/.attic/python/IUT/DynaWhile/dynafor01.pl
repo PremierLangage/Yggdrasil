@@ -4,23 +4,46 @@ oneshot=True
 
 author=dr
 
-template=plbank:/python/0PLG/template
 
-title= la boucle for
+extends=/ComputerScience/python/template/soluce.pl
+template=/ComputerScience/python/.attic/python/IUT/template.pl
+title=La boucle for
 
-jinjatext==
+code==
+*****
+****
+***
+**
+*
+==
+
+text==
 
 Ecrire une boucle for qui réalise la description suivante :
 
-
-    {{ text }}
+<pre>
+{{code}}
+</pre>
 
 Attention pas de boucle while ;)
 
 ==
 
-build=@repoplbase:python/IUT/DynaWhile/dynawhile.py
+plsoluce==
+    Exo1 - boucle for | 
+==
 
+soluce==
+for i in range(0, 5):
+    for j in range(i, 5):
+        print("*")
+    print("\n")
+==
+
+success==
+Cool!
+==
 
 needed=for
 taboo=while
+

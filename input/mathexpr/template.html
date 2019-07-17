@@ -4,8 +4,10 @@
 <script type='module'> 
     import MathLive from 'https://unpkg.com/mathlive/dist/mathlive.mjs';
     const mf_{{name}} = MathLive.makeMathField('mathexpr_{{name}}', {
-        smartMode: false,
         smartFence: false,
+        smartMode: true,
+        defaultMode : 'math',
+        inlineShortcuts:{ '<': '<'},
         {% if  virtualKeyboardMode %}
         virtualKeyboardMode: 'manual',
         {% else %}
@@ -22,6 +24,11 @@
                 label: 'Ensembles',
                 tooltip: 'Ensembles',
                 layer: 'sets'
+            },
+            'functions': {
+                label: 'Fonctions',
+                tooltip: 'Fonctions',
+                layer: 'functions'
             }
         },
         virtualKeyboards: '{{ virtualKeyboards }}',
@@ -31,4 +38,10 @@
     });
     mf_{{name}}.$insert("{{ value | safe }}","{format:'latex'}")
 </script>
+
+
+
+
+
+
 

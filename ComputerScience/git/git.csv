@@ -1,0 +1,5 @@
+niveau;nom;definition;fauxnom;faussedefinition
+1;clone;Permet de copier en local un repository existant;copy;Permet de faire un double d'un pull du repository
+1;status;Permet d'afficher l'état du repository courrant;state;Permet de détecter l'état d'un repository
+1;pull;Permet de récupérer les modifications distantes d'un repository;changes;Affiche les modification d'un repository
+

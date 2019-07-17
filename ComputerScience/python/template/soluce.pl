@@ -10,6 +10,7 @@ doc==
 
 ==
 
+
 @ soluceevaluator.py          [grader.py] # le as de python import toto as titi
 @ gradesoluce.py
 @ /utils/sandboxio.py
@@ -24,6 +25,4 @@ doc==
 form=@ /python/form/editorform.html
 
 settings.allow_reroll=1
-
-
 

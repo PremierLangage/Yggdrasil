@@ -29,18 +29,18 @@ Regardons comment évaluer cette réponse de l'etudiant
 Pour cela nous allons écire  un **evaluator** qui permet d'évaluer
  l'exercice c'est à dire vérifier la réposne de l'étudiant. 
 il est nécessaire d'ajouter la ligne suivant :  
-```
-grader=@ /grader/evaluator.py 
-```
+
+    grader=@ /grader/evaluator.py 
+
 qui peut aussi s'écrire :
-```
-@ lib:/grader/evaluator.py [grader.py] 
-```
+
+    @ lib:/grader/evaluator.py [grader.py] 
+
 Ces lignes indiquent que le grader standard défini dans librairie standard doit être utilisé (ce qui nous évite d'avoir à l'écrire).
 
 # L'evaluator
 Le grader standard cherche dans l'éxercice une clef **evaluator**.
-Cette clef est du code python que l'on excute pour __évaluer__ les réponses de l'étudiant.
+Cette clef doit être du code python que l'on excutera sur la sandbox pour __évaluer__ les réponses de l'étudiant.
 
 Pour cela nous avons besoin de programmer 'en python' cette clef evaluator
 Trois étapes :
@@ -48,18 +48,19 @@ Trois étapes :
 - évaluer la réponse 
 - produire la note et le feedback qui sera retourné à l'étudiant.
 
-L'exemple suivant 
+L'exemple suivant vous montre l'utilisation de la clef __response__ pour récuperer la réponse de l'étudiant.
+Nous avons utilisé l'id suivante id="form_txt_answer" dans le formulaire c'est cette id qui permet fait que l'on peut récuperrer la valeur de la réponse dans la variable __responce__.
+Si l'on utilise id="form_toto" nous aurons une valeur dans response['toto'] qui correspondra à la valeur entrée par l'étudiant.
 
 
-<code>
- evaluator==
- somme = int(response['txt_answer']) # conversion de la chaine en int 
- if somme == 8 : # la bonne réponse 
+    evaluator==
+    somme = int(response['txt_answer']) # conversion de la chaine en int 
+    if somme == 8 : # la bonne réponse 
     grade=(100, "BRAVO Bravo c'est exact ") # évaluation maximale, et un feedback textuel 
- else:
+    else:
     grade=(0, "ECHEC non ce n'est pas cela. hint: les chaises et les tables ont le même nombre de pieds, et c'est une multiple de 4.")
- ==
-</code>
+    ==
+
 
 
 Vous avez remarquez que l'on positionne la variable **grade** pour transmettre l'évaluation de l'exercice.
@@ -99,6 +100,7 @@ else:
     grade= (100,"<p style='color:green;font-size:24px'> parfait vous avez ecrit un exercice calulatoire simple  </p>")
 
 ==
+
 
 
 

@@ -10,7 +10,7 @@ before ==
 ==
 
 text ==
-Enoncé
+Choisissez deux départements pairs.
 ==
 
 map =@ FR_departements.json 
@@ -22,6 +22,7 @@ form =@ form_selectmap.html
 evaluator ==
 
 ==
+
 
 
 

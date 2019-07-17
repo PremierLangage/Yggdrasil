@@ -1,0 +1,11 @@
+title = Nombres complexes (point de vue géométrique)
+
+introduction ==
+- Représenter un nombre complexe par un point.
+==
+
+@ /Mathematics/exercises/complex_numbers/affixe.pl
+
+@ /Mathematics/exercises/complex_numbers/modulus.pl
+
+

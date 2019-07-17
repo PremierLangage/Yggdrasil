@@ -1,0 +1,7 @@
+title = Développement
+
+introduction ==
+Effectuer des calculs numériques ou littéraux mettant en jeu des écritures fractionnaires.
+==
+
+@ /Mathematics/exercises/algebra/polynomials/expansion_add_mul_binom_deg1.pl

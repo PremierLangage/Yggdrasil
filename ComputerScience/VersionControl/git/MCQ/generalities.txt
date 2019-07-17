@@ -1,0 +1,51 @@
+* À quoi sert un logiciel de gestion de versions ?
+- Il permet de déterminer la personnalité à un intant 't' d'une personne schizophrène.
+- Il programme à la place de l'utilisateur.
+- Il contrôle les erreurs potentielles qui pourraient apparaître dans les codes sources.
++ Il facilite la mise en commun des travaux numériques.
++ Il permet à toute une équipe de travailler sur le même projet à distance.
++ Il consigne l'historique complète de construction d'un projet.
++ Il facilite la pérennisation des productions numériques.
+
+* Où peut-on rencontrer le logiciel Git ?
+- Certains bouchers proposent des noix de Git à la vente.
+- Le système de fichiers NTFS de windows est basé sur Git.
+- La mémoire RAM d'un ordinateur utilise Git.
++ Le développement des sources de Linux est organisé avec Git.
++ Le site internet Github.com utilise Git.
++ Gitlab est un logiciel qui utilise git en interne.
++ Tout projet numérique colaboratif peut utiliser Git.
+
+* Parmi les assertions suivantes, lesquelles sont vraies ?
+- Le nombre d'utilisateurs sur Git est limité.
+- Git est limité en nombre de fichiers versionnables.
+- Git ne peut versionner que des codes sources mais dans n'importe quel langage de programmation.
++ Git est un logiciel gratuit, mais il faut aussi un hébergement internet.
+
+* Quelles sont les particularités de Git ?
+- Git un logiciel propriétaire relativement cher.
+- Git est centralisé sur un serveur unique.
+- Si le serveur Git central crash, alors les sources hébergées sont perdues à jamais.
++ Git est un système distribué : tout ordinateur synchronisé pourrait prendre le role central.
++ Git a été créé par des developpeurs du monde de l'open-source.
++ Pour perdre des sources, il faudrait que tous les ordinateurs ayant synchronisé le dépot n'aient plus les sources et en même temps.
+
+* Parmi les commandes suivantes, lesquelles sont des commandes Git ?
+- copy
+- ls
+- move
+- are
++ commit
++ fetch
++ add
++ push
++ status
++ branch
++ clone
+
+
+* Quelles situations et comportements peuvent déclancher un conflit de fusion ?
+- Chaque contributeur ne contribue que sur un fichier qui lui est attitré.
+- Un contributeur pert son accès à internet.
++ Deux personnes travaillent sur le même fichier en même temps.
++ Quelqu'un rajoute une modification mais n'a pas fait de fetch depuis très longtemps.

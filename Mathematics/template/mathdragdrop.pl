@@ -56,26 +56,12 @@ for _namevar in list(locals().keys()):
         _strsympyvar[_namevar]=str(locals()[_namevar])
 
 
-try:
-  drop_tags
-except NameError:
-	pass
-else:
-	for tag in drop_tags:
-    	locals()['input_drop_'+tag['name']] = render_drop_tag(tag)
-
-try:
-  drag_tags
-except NameError:
-	pass
-else:
-	for tag in drag_tags:
-    	locals()['input_drag_'+tag['name']] = render_drag_tag(tag)
 ==
 
 text==
 
 ==
+
 
 
 

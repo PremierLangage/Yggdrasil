@@ -31,15 +31,14 @@ je vous parlerai en gras et en vert.
 
 @ /utils/sandboxio.py
 
-grader==
+grader==#|python|
 import sys
 from sandboxio import *
 
 def make_file_exo(str):
     return """<font color=\"DarkGreen\"><b>Voici votre fichier exercice :<b></font><br/>
     <table width=\"80%\" cellpadding=\"2px\" border=\"1px black\"><tr><td><code>
-    <font color=\"DarkRed\">"""+str+"""</font></code></td></tr></table>
-    """
+    <font color=\"DarkRed\">"""+str+"""</font></code></td></tr></table>"""
 
 if __name__ == "__main__":
     context = get_context()
@@ -133,6 +132,7 @@ if __name__ == "__main__":
 
     output(-1, " ", context)
 ==
+
 
 
 

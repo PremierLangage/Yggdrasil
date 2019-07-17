@@ -6,9 +6,15 @@ tag= input|boolean|if # N'oubliez pas de remplir ce champs svp
 extends=/ComputerScience/python/template/soluce.pl
 text==
 Ecrire un programme qui demande à l’utilisateur un entier grace au texte:
+
 	Saisissez un entier?
+
 Et qui si il est **strictement positif** affiche 
+
 	Strictement Positif.
+
+Pensez à la fonction input et au mot clef if.
+
 ==
 
 plsoluce==
@@ -23,6 +29,7 @@ if n >0:
 	print("Strictement Positif.")
 ==
 
+#editor.height=12
 
 
 
