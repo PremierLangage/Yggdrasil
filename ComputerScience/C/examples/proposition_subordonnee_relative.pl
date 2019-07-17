@@ -3,7 +3,9 @@
 
 title = Grammaire : reconnaître les propositions subordonnées relatives 
 author = N.B.
+
 text=
+
 builder==
 import sys
 import json
@@ -13,7 +15,7 @@ if __name__ == "__main__":
     with open(sys.argv[1],'r') as f:
         context = json.load(f)
         
-    enonce = "Combien il y a-t-il de propositions subordonnées relatives dans la phrase suivante :"
+    enonce = text = "Combien il y a-t-il de propositions subordonnées relatives dans la phrase suivante :"
     phrase, solution = faire_phrase()
     enonce += "\n\n**" + phrase + "**"
     context['text'] = enonce
@@ -56,5 +58,6 @@ if __name__ == "__main__":
         
     output(grade, feedback)
 ==
+
 
 

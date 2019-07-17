@@ -1,4 +1,4 @@
-extends = /template/input/mathexpr.pl
+extends = Mathematics/template/mathexpr.pl
 
 title = Transformation d'écritures (racine carrée) 1
 

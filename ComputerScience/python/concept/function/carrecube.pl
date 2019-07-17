@@ -5,6 +5,9 @@ piste=verte
 tag= def|return  # N'oubliez pas de remplir ce champs svp
 extends=/ComputerScience/python/template/pltest.pl
 
+stopfirsterror=True
+
+
 taboo=print
 text==
 
@@ -21,13 +24,16 @@ text==
 
 ==
 
-pltest==
+pltest1==
 >>> carre(0)
 0
 >>> carre(56)
 3136
 >>> carre(-1)
 1
+==
+
+pltest2==
 >>> cube(1)
 1
 >>> cube(12)
@@ -43,5 +49,6 @@ def carre(n):
 def cube(n):
 	return n**3
 ==
+
 
 

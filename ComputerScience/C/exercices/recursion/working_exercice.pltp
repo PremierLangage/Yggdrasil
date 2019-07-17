@@ -5,17 +5,18 @@ Les exercices qui suivent fonctionnent tous le 17 octobre 2018.
 ==
 
 
-@ /exercices/recursion/ackermann.pl
-@ /exercices/recursion/area_matrix.pl
-@ /exercices/recursion/div_by_seven.pl
-@ /exercices/recursion/down_up_number.pl
-@ /exercices/recursion/exp_by_squaring.pl
-@ /exercices/recursion/factorial.pl
-@ /exercices/recursion/fibonacci_rec.pl
-@ /exercices/recursion/knapsack.pl
-@ /exercices/recursion/pascal_rec.pl
-@ /exercices/recursion/pgcd_soustrac.pl
-@ /exercices/recursion/pied_nickeles_sort.pl
-@ /exercices/recursion/sum_number.pl
+@ /ComputerScience/C/exercices/recursion/ackermann.pl
+@ /ComputerScience/C/exercices/recursion/area_matrix.pl
+@ /ComputerScience/C/exercices/recursion/div_by_seven.pl
+@ /ComputerScience/C/exercices/recursion/down_up_number.pl
+@ /ComputerScience/C/exercices/recursion/exp_by_squaring.pl
+@ /ComputerScience/C/exercices/recursion/factorial.pl
+@ /ComputerScience/C/exercices/recursion/fibonacci_rec.pl
+@ /ComputerScience/C/exercices/recursion/knapsack.pl
+@ /ComputerScience/C/exercices/recursion/pascal_rec.pl
+@ /ComputerScience/C/exercices/recursion/pgcd_soustrac.pl
+@ /ComputerScience/C/exercices/recursion/pied_nickeles_sort.pl
+@ /ComputerScience/C/exercices/recursion/sum_number.pl
+
 
 

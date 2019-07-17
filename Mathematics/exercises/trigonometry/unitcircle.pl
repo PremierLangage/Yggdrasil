@@ -42,8 +42,5 @@ feedback=""
 ==
 
 
-
-
-
-
 settings.allow_reroll=yes
+

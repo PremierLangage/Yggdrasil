@@ -1,0 +1,18 @@
+title==
+Présentation EIAH 2019 (Maths)
+==
+introduction== 
+Voici des exercices de mathématiques réalisés avec PremierLangage.
+==
+
+@ /Mathematics/exercises/arithmetic/primefactor.pl
+@ /Mathematics/exercises/finitesets/finitesets_intersection.pl
+# @ conceptexo/Mathematics/exercises/finitesets/element_subset.pl
+@ /Mathematics/exercises/fractions/operation_fraction.pl
+
+
+
+
+
+
+

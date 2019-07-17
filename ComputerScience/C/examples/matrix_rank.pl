@@ -3,7 +3,9 @@
 
 title = Algèbre : trouver le rang d'une matrice simple
 author = N.B.
+
 text=
+
 builder==
 import sys
 import json

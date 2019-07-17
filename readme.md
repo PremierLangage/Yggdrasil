@@ -1,7 +1,8 @@
 
-# Concept Exo
+# Yggdrasil
 
-Ce projet cherche à recencer/créer des nouveaux types d'exercices.
+
+Ce projet cherche à demander référencer/recencer/créer des nouveaux types d'exercices.
 
 Pouvez soit y ajouter des **demandes** pour de nouveaux types d'exercices soit des nouveaux types effectifs d'exercices.
 

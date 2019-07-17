@@ -17,6 +17,10 @@ z=x1+x2
 print(z)
 ==
 
+success==
+<p> Parfait passez à l'exercice suivant </p>
+==
+
 soluce==
 x1=2
 y2=5
@@ -27,4 +31,5 @@ print(z)
 plsoluce==
 Correction du Nom de variable | rien à lire
 ==
+
 

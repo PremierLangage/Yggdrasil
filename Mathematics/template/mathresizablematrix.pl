@@ -24,9 +24,10 @@ def render_resizable_matrix_tag(dic):
 		context['max_rows'] = 5
 
 	if 'max_cols' in dic:
-	    context['max_cols'] = dic['max_cols']
+        context['max_cols'] = dic['max_cols']
 	else: 
-		context['max_cols'] = 5
+        context['max_cols'] = context['max_rows']
+
 
 	if 'cell_width' in dic:
 	    context['cell_width'] = dic['cell_width']
@@ -37,11 +38,10 @@ def render_resizable_matrix_tag(dic):
 	    context['cell_height'] = dic['cell_height']
 	else: 
 		context['cell_height'] = '2em'
-        
+
     # initial dimensions of the matrix
     context['num_rows'] = 2
     context['num_cols'] = 2
-
     matrix = []
     for i in range(context['max_rows']):
         matrix.append([])
@@ -155,9 +155,6 @@ style==
 text==
 
 ==
-
-
-
 
 
 

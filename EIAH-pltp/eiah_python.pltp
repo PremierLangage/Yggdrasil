@@ -1,0 +1,20 @@
+title==
+Présentation EIAH 2019 (Python)
+==
+introduction== 
+Voici des exercices de python réalisés avec PremierLangage.
+==
+
+@ /example/python/condition.pl
+@ /example/python/stdout_tests.pl
+@ /example/python/fibonacci.pl
+@ /example/python/narc.pl
+@ /example/python/non_divisibles.pl
+@ /example/python/title_string.pl
+@ /example/python/pyramide.pl
+@ /example/python/stack.pl
+@ /example/python/enigma_encode.pl
+@ /example/python/enigma_decode.pl
+
+
+

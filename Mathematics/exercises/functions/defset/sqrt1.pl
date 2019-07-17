@@ -1,4 +1,4 @@
-extends = /template/input/mathexpr.pl
+extends = /Mathematics/template/input/mathexpr.pl
 
 title = Ensemble de définition (racine carrée 1)
 
@@ -24,4 +24,5 @@ evaluator==
 score,_,texterror=ans_interval(answer['1'],sol)
 feedback=fb.msg_analysis(score,texterror,lang)
 ==
+
 

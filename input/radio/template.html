@@ -1,4 +1,4 @@
-{% for txt in choices %}
+{% for txt in shuffledchoices %}
 <div>
   <input type="radio" id="form_{{ name }}_{{ loop.index0 }}" name="form_{{ name }}" value="{{ loop.index0 }}" {% if inputmode == 'final' %}disabled{% endif %}>
   <label for="form_{{ name }}_{{ loop.index0 }}" id="label_{{ name }}_{{ loop.index0 }}"> {{ txt }} </label>
@@ -24,5 +24,8 @@ document.getElementById('label_{{name}}_{{numsol}}').className ="text-success";
 
 {% endif %}
 </script>   
+
+
+
 
 

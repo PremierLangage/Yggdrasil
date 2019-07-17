@@ -1,0 +1,23 @@
+
+teacher==
+
+Vous devez être un élève pour ce tuto.
+
+==
+
+title= Tutorielle PL 
+introduction== #|md| 
+
+Ce petit tutoriel vous enseigne la création d'exercices PL.
+
+A la fin de ce tutoriel vous pourrez ecrire des exercices simple avec l'évaluation de la réponse de l'élève.
+
+Prérequis: ëtre capable d'ecrire quelque lignes de python pour écrire un évaluateur.
+
+==
+
+@ first.pl
+@ second.pl
+@ third.pl
+
+

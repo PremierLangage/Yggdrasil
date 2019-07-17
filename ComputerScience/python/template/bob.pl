@@ -7,6 +7,10 @@ doc==
     Nom du test | une ligne d'entrée 
     le caractère '|‘ séparant les deux partie (les espaces ne sont pas éliminés en debut ni en fin)
     ==
+# et une clef/balise 
+    soluce==
+    qui contiennent un code solution 
+    ==
 
 ==
 
@@ -17,7 +21,7 @@ doc==
 
 @ /utils/sandboxio.py
 
-builder=@ /template/donobuild.py
+builder=@ /builder/none.py
 
 editor.fontsize=14px
 
@@ -30,5 +34,6 @@ editor.fontsize=14px
 
 # une interface standard d'exercice avec un editeur pour la réponse
 form=@ /python/form/editorform.html
+
 
 

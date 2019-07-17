@@ -17,9 +17,9 @@ def calculategrade(enonce, studentdic, uncrosedfalse):
     correct=0
     total = 0
     if uncrosedfalse:
-        for i,(x,b) in enumerate(enonce):
+        for i,p in enumerate(enonce):
             q='answer_'+str(i)
-            if b :
+            if p[1] :
                 total += 1
                 if q in studentdic:
                     correct+= 1
@@ -28,22 +28,29 @@ def calculategrade(enonce, studentdic, uncrosedfalse):
                     correct -=1
         correct = max(0,correct)
     else:
-        for i,(x,b) in enumerate(enonce):
+        for i,p in enumerate(enonce):
             q='answer_'+str(i)
-            if b == (q in studentdic):
+            if p[1] == (q in studentdic):
                     correct+= 1
         total = len(enonce)
     return correct, total
 
-def redTd(b,txt):
-    if not b:
-        txt = '<del>'+txt+'</del>'
-    return '<TR><TD><div class="btn-danger"> '+txt+' </div></TD</TR>'
+def redTd(b,txt,f):
+    """ l'affirmation est fausse """
+    if b:
+        correct = '<input type="checkbox" >'
+    else: 
+        correct ='<input type="checkbox" checked="checked">'
+    return '<TR><TD  style="border: 1px solid red;" >'+correct+'<span style="color:red"> '+txt+' </span>'+f+'</TD</TR>'
+
     
-def greenTd(b,txt):
-    if not b:
-        txt = '<del>'+txt+'</del>'
-    return '<TR><TD><div class="btn-success"> '+txt+' </div></TD</TR>'
+def greenTd(b,txt, f):
+    """ l'affirmation est vraie """
+    if b:
+        correct ='<input type="checkbox" checked="checked">'
+    else: 
+        correct = '<input type="checkbox" >'
+    return '<TR></TR><TR><TD style="border: 3px solid green;">'+correct+'<span style="color:green"> '+txt+' </span>'+f+'</TD</TR>'
 
 
 
@@ -57,12 +64,13 @@ def createshowanswer(enonce, studentdic):
     """
     
     form="<table>"
-    for i,(x,b) in enumerate(enonce):
+    for i,p in enumerate(enonce):
         q='answer_'+str(i)
-        if (b and q in studentdic) or (not b and not q in studentdic):
-            form += greenTd(b,x)
+        correct = (p[1] and q in studentdic) or (not p[1] and not q in studentdic) 
+        if p[1] :
+            form += greenTd(correct,p[0],p[2]) 
         else:
-            form +=redTd(b,x)
+            form +=redTd(correct,p[0],p[2])
             
     form +="</table>"
     return form
@@ -116,6 +124,9 @@ if __name__ == "__main__":
             dic["form"]= ""
         
     output(grade,outstr,dic)
+
+
+
 
 
 

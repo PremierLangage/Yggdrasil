@@ -3,7 +3,7 @@
 
 import sys, json, jsonpickle
 from jinja2 import Template
-import random
+from importlib import import_module
 
 def render_dic_strings(d,dic):
     for k, v in d.items():
@@ -19,20 +19,34 @@ def build_head(dic):
     head=""
     for name,config in dic['input'].items():
         input_type=config['type']
-        head+=dic[input_type+'_head']
+        try:
+            with open (input_type+'_head.html', "r") as f:
+                head+=f.read()
+        except:
+            pass
     return head
 
 def build_form(form_template,dic):
     form_context={}
     for name,config in dic['input'].items():
         input_type=config['type']
-        if input_type+'_process_config' in dic:
-            exec(dic[input_type+'_process_config'])
-        config['name']=name
-        state = {'inputmode':'initial'}
-        input_context={**config,**state}
-        form_context['input_'+name]=Template(dic[input_type+'_template']).render(input_context)
-    return Template(form_template).render(form_context)
+        try:
+            process=import_module(input_type+'_process')
+        except:
+            pass
+        else:
+            process.process_config(config,name)
+        if 'tags' in config:
+            for tag in config['tags'].keys():
+                tag_type=config['tags'][tag]['type']
+                tag_context={**config['tags'][tag],'name':tag}
+                with open (tag_type+'_template.html', "r") as f:
+                    form_context['input_'+tag]=Template(f.read()).render(tag_context)
+        else:
+            input_context={**config,'name':name,'inputmode':'initial'}
+            with open (input_type+'_template.html', "r") as f:
+                form_context['input_'+name]=Template(f.read()).render(input_context)
+    return Template(form_template).render({**form_context,**dic})
 
 class StopBeforeExec(Exception):
     pass
@@ -79,18 +93,33 @@ if __name__ == "__main__":
 
     dic['inputmode'] = "initial"    
 
-    render_input_config(dic)
+    if 'input' in dic:
+        render_input_config(dic)
+        dic['form0']=dic['form']+"\n <div style='width:100%;height:200px;'>"
+        dic['head']=build_head(dic) 
+        dic['form']=dic['head']+build_form(dic['form0'],dic)+"</div>"
 
-    dic['form0']=dic['form']+"\n <div style='width:100%;height:200px;'></div>"
-
-    dic['head']=build_head(dic)
-    
-    dic['form']=dic['head']+build_form(dic['form0'],dic)
-
+    if 'style' in dic:
+        dic['form']+="""
+            <style>
+            {}
+            </style>
+            """.format(dic['style'])
 
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
     
     sys.exit(0)
+
+
+
+
+
+
+
+
+
+
+
 
 

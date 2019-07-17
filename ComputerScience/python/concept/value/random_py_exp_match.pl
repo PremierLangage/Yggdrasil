@@ -19,7 +19,7 @@ dolops=True
 
 
 
-build=@ /concept/value/randomexpbuild.py
+build=@ randomexpbuild.py
 
 num=3
 
@@ -35,3 +35,4 @@ def evaluator(reponse, dic):
 
 extends=/ComputerScience/python/plbank:/gift/template/match.pl
 type=direct
+

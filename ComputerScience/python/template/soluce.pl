@@ -13,7 +13,9 @@ doc==
 @ soluceevaluator.py          [grader.py] # le as de python import toto as titi
 @ gradesoluce.py
 @ /utils/sandboxio.py
-builder=@ donobuild.py
+
+@ /builder/none.py [builder.py]
+
 @ feedback2.py
 @ template.html
 
@@ -22,5 +24,6 @@ builder=@ donobuild.py
 form=@ /python/form/editorform.html
 
 settings.allow_reroll=1
+
 
 

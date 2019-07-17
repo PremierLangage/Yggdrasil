@@ -4,7 +4,7 @@ title= lecture d'un entier
 name=Age du Capitaine 
 tag=input|print|variable
 
-extends=/ComputerScience/python/python/0PLG/soluce.pl
+extends=/ComputerScience/python/template/soluce.pl
 
 text==
 Ecriver un programme utilisant une unique variable **age** qui lit cette information au clavier puis affiche :
@@ -21,7 +21,7 @@ puis sachant que dans cinq ans, le perroquet aura le tiers de l’âge du capita
 code==
 # lecture au clavier et transformation en entier puis affectation
 age=int(input())
-# Le capitaine a __ ans. Dans deux ans il auras __ ans.
+# Le capitaine a __ ans. Dans deux ans il aura __ ans.
 # Le perroquet du capitaine à __ ans.
 ==
 
@@ -30,14 +30,15 @@ Les opérateurs de python permettent d'écrire des expressions complexes et rapi
 Il n'est pas nécessaire de avoir un nom pour toutes les valeurs intermédiaires des calculs. 
 ==
 
-inputgenerator==
-from random import randint 
-print(randint(10,40)+10)
-
+plsoluce==
+Test 1 |33
+Test 2 |66
+Test 4 |100000
 ==
 
 soluce==
 a=int(input())
-print("Le capitaine à %d ans. Dans deux ans il auras %d ans." % (a,a+2))
+print("Le capitaine à %d ans. Dans deux ans il aura %d ans." % (a,a+2))
 print("Le perroquet du capitaine a %d ans." % (((a+5)//3)-5))
 ==
+

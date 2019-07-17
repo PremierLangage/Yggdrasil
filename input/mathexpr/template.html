@@ -1,72 +1,34 @@
 <div class="mathexpr" style="{{style}}" id='mathexpr_{{name}}'></div>
-<input type='hidden' id='form_{{name}}'></div>
+<input type='hidden' id='form_{{name}}'>
 
-<script>
-{%if inputmode == 'initial' or inputmode == 'retry' %}
-
-var mathexpr_{{name}} = MathLive.makeMathField('mathexpr_{{name}}', {
-onContentDidChange: mathfield => {
-    document.getElementById('form_{{name}}').value = mathexpr_{{name}}.latex();
-},
-onKeystroke: function(mf, key, ev) {
-            if (key == 'Backspace') {
-
+<script type='module'> 
+    import MathLive from 'https://unpkg.com/mathlive/dist/mathlive.mjs';
+    const mf_{{name}} = MathLive.makeMathField('mathexpr_{{name}}', {
+        smartMode: false,
+        smartFence: false,
+        {% if  virtualKeyboardMode %}
+        virtualKeyboardMode: 'manual',
+        {% else %}
+        virtualKeyboardMode: '{{ virtualKeyboardMode }}',
+        {% endif %}
+        customVirtualKeyboardLayers: headVirtualKeyboardLayers,
+        customVirtualKeyboards: {
+            'elementary': {
+                label: 'Elémentaire',
+                tooltip: 'Elémentaire',
+                layer: 'elementary'
+            },
+            'sets': {
+                label: 'Ensembles',
+                tooltip: 'Ensembles',
+                layer: 'sets'
             }
-            return true;
         },
-locale: 'fr-FR',
-strings:{
-   'fr-FR': {
-      'tooltip.undo': 'Annuler',
-      'tooltip.redo': 'Refaire',
-   }
-},
-scriptDepth:1,
-smartFence:false,
-inlineShortcuts: { '*': '\\times'},
-{% if  virtualKeyboardMode %}
-virtualKeyboardMode: 'manual',
-{% else %}
-virtualKeyboardMode: '{{ virtualKeyboardMode }}',
-{% endif %}
-customVirtualKeyboardLayers: headVirtualKeyboardLayers,
-customVirtualKeyboards: {
-    'elementary': {
-        label: 'Elémentaire',
-        tooltip: 'Elémentaire',
-        layer: 'elementary'
-    },
-    'sets': {
-        label: 'Ensembles',
-        tooltip: 'Ensembles',
-        layer: 'sets'
-    }
-},
-virtualKeyboards: '{{ virtualKeyboards }}'
-}
-);
-
-{%if answer %}
-
-var data = {{answer | safe}};
-mathexpr_{{name}}.$insert(data['{{name}}']);
-mathexpr_{{name}}.$perform('moveToMathFieldEnd');
-
-{% endif %}
-
-{% endif %}
-
-{%if inputmode == 'final' %}
-
-var data = {{answer | safe}};
-document.getElementById('mathexpr_{{name}}').innerHTML = "$$" + data['{{name}}'] + "$$";
-MathLive.renderMathInElement('mathexpr_{{name}}');
-
-{% endif %}
+        virtualKeyboards: '{{ virtualKeyboards }}',
+        onContentDidChange: mf_{{name}} => {
+            document.getElementById('form_{{name}}').value = mf_{{name}}.$latex();
+        }
+    });
+    mf_{{name}}.$insert("{{ value | safe }}","{format:'latex'}")
 </script>
-
-
-
-
-
 

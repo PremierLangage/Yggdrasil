@@ -2,8 +2,8 @@ author=Dominique Revuz
 
 tag=error
 title= Corrige Moi !
-name= Trouvez l'erreur
-extends=/ComputerScience/python/template/soluce.pl
+
+extends=/ComputerScience/python/template/coding.pl
 text==
 
 Le programme python si dessous contient une erreur corrigez la pour passer à l'exercice suivant.
@@ -12,21 +12,21 @@ Le programme python si dessous contient une erreur corrigez la pour passer à l'
 
 code==
 a=Pomme
-print("je mange une ",a)
+print('je mange une ',a)
 ==
 
 expectedoutput=je mange une Pomme
 
-
 compilehelp==
-C'est une erreur classique quand un identifiant est mal orthographié.
-Ici Pomme ne devrai pas être interprété comme un identifant mais comme une chaine.
-donc le bon code est 
-a="Pomme"
-
-Avec les identifiants contenant des Majuscules ou des pluriels il est facile de ce tromper.
-Entre :
-listeVide listesVide listesvide etc.
-soyez vigilant et attendez vous a ce type d'erreur.
+C'est une erreur fréquente quand un identifiant est mal orthographié.  <br/>
+Ici Pomme ne devrai pas être interprété comme un identifant mais comme une chaine.  <br/>
+donc le bon code est :  <br/>
+a="Pomme" . . <br/>
+  <br/>
+Avec les identifiants contenant des Majuscules ou des pluriels il est facile de ce tromper.  <br/>
+Entre :  <br/>
+listeVide listesVide listesvide etc.  <br/>
+soyez vigilant et mais attendez vous a ce type d'erreur. <br/>
 ==
+
 

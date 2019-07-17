@@ -2,26 +2,35 @@
 # coding: utf-8
 
 import sys, json, jsonpickle, time
-
 from sandboxio import output, get_context, get_answers
-
 from jinja2 import Template
+from importlib import import_module
 
 def process_answer(answer,dic):
     for name,config in dic['input'].items():
         input_type=config['type']
-        if input_type+'_process_answer' in dic:
-            exec(dic[input_type+'_process_answer'])
+        try:
+            process=import_module(input_type+'_process')
+        except:
+            pass
+        else:
+            process.process_answer(answer,name,dic['input'][name])
 
 def build_form(form_template,dic):
     form_context={}
     for name,config in dic['input'].items():
         input_type=config['type']
-        config['name']=name
-        state = {'inputmode':'final'}
-        input_context={**config,**state}
-        form_context['input_'+name]=Template(dic[input_type+'_template']).render(input_context)
-    return Template(form_template).render(form_context)
+        if 'tags' in config:
+            for tag in config['tags'].keys():
+                tag_type=config['tags'][tag]['type']
+                tag_context={**config['tags'][tag],'name':tag}
+                with open (tag_type+'_template.html', "r") as f:
+                    form_context['input_'+name+'_'+tag]=Template(f.read()).render(tag_context)
+        else:
+            input_context={**config,'name':name,'inputmode':'final'}
+            with open (input_type+'_template.html', "r") as f:
+                form_context['input_'+name]=Template(f.read()).render(input_context)
+    return Template(form_template).render({**form_context,**dic})
 
 def format_analysis(msg,text,n,lang):
     dcls={'warning':'alert-info','retry':'alert-warning','fail':'alert-danger','success':'alert-success'}
@@ -72,7 +81,8 @@ if __name__ == "__main__":
     
     dic = get_context()
     dic['answer'] = get_answers()
-    process_answer(dic['answer'],dic)
+    if 'input' in dic:
+        process_answer(dic['answer'],dic)
     if 'evaluator' in dic:
         glob = {}
         dic['StopEvaluatorExec'] = StopEvaluatorExec
@@ -132,10 +142,16 @@ if __name__ == "__main__":
             format_feedback=format_analysis('retry',feedback,maxattempt-nbattempt,lang)
         else:
             format_feedback=format_analysis('fail',feedback,0,lang)
-
-    dic['form']=dic['head']+build_form(dic['form0'],dic)
-
+    
+    if 'input' in dic:
+        dic['form']=dic['head']+build_form(dic['form0'],dic)
+    
     output(score,format_feedback,dic)
+
+
+
+
+
 
 
 

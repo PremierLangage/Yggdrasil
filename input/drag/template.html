@@ -1,12 +1,17 @@
-    <div class = 'source'
-		id = 'drag_container_{{ name }}'
-		ondrop="drop(event, 'drag_container_{{ name }}')"
-		ondragover='allowDrop(event)'
-		style = '{{ style }}'>
-		<div class = 'drag-display' id='drag_{{ name }}' draggable='true' ondragstart='drag(event)'> 
-			{{ display }} 
-		</div>
-	</div>
-	<input type=hidden  id='form_drag_{{ name }}'>
+<div id = '{{ name }}'
+	min-width = '{{minwidth}}'
+	class = 'drag'
+	unselectable="on"
+	onselectstart="return false;" 
+	draggable='true'
+	ondragstart="drag(event,'{{cloneable}}')"
+	style = '{{ style }}'>
+		{{text}} 
+</div>
+<input type="hidden" id='form_{{ name }}' value='{{value}}'>
+
+
+
+
 
 

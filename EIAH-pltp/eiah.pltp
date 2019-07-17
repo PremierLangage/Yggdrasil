@@ -1,0 +1,17 @@
+title== 
+Présentation EIAH 2019
+==
+
+introduction==
+Voici divers exemples d'exercices réalisés avec PremierLangage.
+==
+
+
+@ /example/java/junit.pl #marche
+@ /ComputerScience/C/examples/chemical_equation.pl #marche
+@ /ComputerScience/C/examples/proposition_subordonnee_relative.pl #marche
+@ /ComputerScience/C/examples/matrix_rank.pl #marche
+@ /ComputerScience/C/exercices/recursion/ackermann.pl #marche
+
+
+

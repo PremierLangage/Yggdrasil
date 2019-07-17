@@ -3,7 +3,7 @@ author=Dominique Revuz
 tag=error
 title= Corrige Moi !
 name= Mówisz po polsku ?
-extends=/ComputerScience/python/python/0PLG/template.pl
+extends=/ComputerScience/python/template/coding.pl
 text==
 
 Le programme python si dessous contient une erreur corrigez la pour passer à l'exercice suivant.
@@ -22,6 +22,11 @@ Je connais 2 langages de programmation
 ==
 
 compilehelp==
-**print** est une fonction en python3 il faut lui fournir ces paramêtres entre paranthèses.
+<p style="color:yellow;background:blue;font-size:14">print est une fonction en python3 il faut lui fournir ces paramêtres entre paranthèses.
+</p>
 ==
 
+
+feedback==
+**print** est une fonction en python3 il faut lui fournir ces paramêtres entre paranthèses.
+==

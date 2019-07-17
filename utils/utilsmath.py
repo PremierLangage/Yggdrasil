@@ -30,6 +30,9 @@ class CustomLatexPrinter(LatexPrinter0):
         "imaginary_unit": "i",
     }
     
+    def _print_Pi(self, expr):
+        return r"\pi"
+    
     def _print_ImaginaryUnit(self, expr):
         return self._settings["imaginary_unit"]
 
@@ -116,7 +119,7 @@ def str2expr(s,local_dict={}):
     s=s.replace("\\times", "*")
     s=s.replace("\left", "")
     s=s.replace("\right", "")
-    s=s.replace('\\',"")
+    s=s.replace('\\'," ")
     s=s.replace("{", "(")
     s=s.replace("}", ")")
     
@@ -309,13 +312,70 @@ def rand_int_matrix_givenrank(n,r):
 # Utils
 
 def arg_add_flatten(expr):
+    if not expr.is_Add:
+        return [expr]
     lst=[]
     for a in expr.args:
         if a.is_Add:
-            lst=lst+arg_add_denest(a)
+            lst=lst+arg_add_flatten(a)
         else:
             lst.append(a)
     return lst
+    
+def arg_mul_flatten(expr):
+    if not expr.is_Mul:
+        return [expr]
+    lst=[]
+    for a in expr.args:
+        if a.is_Mul:
+            lst=lst+arg_mul_flatten(a)
+        else:
+            lst.append(a)
+    return lst
+
+def mul_flatten(expr):
+    if not expr.is_Mul:
+        return expr
+    lst=[]
+    for a in expr.args:
+        if a.is_Mul:
+            lst=lst+arg_mul_flatten(a)
+        else:
+            lst.append(a)
+    return sp.Mul(*lst)
+    
+def is_rat_coeff_mul(expr,x):
+    """
+    Check if a sympy expression is a monomial.
+    """
+    args=arg_mul_flatten(expr)
+    try:
+        args.remove(x)
+        args.remove(sp.Integer(-1))
+    except:
+        pass
+    if len(args)==0:
+        return True
+    if len(args)==1:
+        if isinstance(args[0],(sp.Integer,int,sp.Rational)):return True
+        if isinstance(args[0],sp.Pow) and isinstance(args[0].args[0],sp.Integer) and args[0].args[1]==sp.Integer(-1):return True
+    if len(args)==2:
+        if not isinstance(args[0],sp.Integer):
+            args=[args[1],args[0]]
+        if isinstance(args[0],sp.Integer) and isinstance(args[1],sp.Pow):
+            args1=args[1].args
+            if isinstance(args1[0],sp.Integer) and args1[1]==sp.Integer(-1):
+                return sp.gcd(args[0],args1[0])==1
+    return False
+
+def is_rat_coeff_exponent(expr,x):
+    """
+    Check if a sympy expression is a monomial.
+    """
+    c,d = expr.as_coeff_exponent(x)
+    if d<=1: return is_rat_coeff_mul(expr,x)
+    if d>1: return is_rat_coeff_mul(expr,x**d)
+    return False
      
 def is_equal(a, b):
     """
@@ -342,6 +402,27 @@ def ans_prod(strans,solargs):
     return score,numerror,texterror
 
 # Numbers
+
+def is_algebraic(expr):
+    """
+    Check if a sympy expression is in algebraic form.
+    """
+    return expr.atoms(sp.Function)==set()
+
+def ans_algebraic(strans,sol):
+    """
+    Analyze an answer of type number.
+    """
+    try:
+        ans=str2expr(strans)
+    except:
+        return (-1,3,"Votre réponse n'est pas une expression mathématique valide.")
+    if not is_algebraic(ans):
+        return (-1,3,"Votre réponse n'est pas écrite correctement.")
+    if is_equal(ans,sol):
+        return (100,0,"")
+    return (0,1,"")
+
 
 def ans_number(strans,sol):
     """
@@ -389,91 +470,99 @@ def ans_frac(strans,sol):
     """
     try:
         ans=str2expr(strans)
-        if not is_frac(ans):
-            score=-1
-            numerror=3
-            texterror="Votre réponse n'est pas une fraction d'entiers ou un entier."
-        elif not is_frac_irred(ans):
-            score=0
-            numerror=2
-            texterror="Votre réponse n'est pas une fraction irréductible."
-        elif not is_equal(ans,sol):
-            score=0
-            numerror=1
-            texterror=""
-        else:
-            score=100
-            numerror=0
-            texterror=""
     except:
-        score=-1
-        numerror=3
-        texterror="Votre réponse n'est pas une fraction d'entiers ou un entier."
-    return score,numerror,texterror
+        return (-1,3,"Votre réponse n'est pas une fraction d'entiers ou un entier.")
+    if not is_frac(ans):
+        return (-1,3,"Votre réponse n'est pas une fraction d'entiers ou un entier.")
+    if not is_frac_irred(ans):
+        return (0,2,"Votre réponse n'est pas une fraction irréductible.")
+    if not is_equal(ans,sol):
+        return (0,1,"")
+    return (100,0,"")
+
 
 # Complex numbers
 
-def ans_complex(strans,sol,imaginary_unit):
+def ans_complex(strans,imaginary_unit,sol):
     """
-    Analyze an answer of type number
+    Analyze an answer of type complex number.
     """
     try:
         ans=str2expr(strans,{imaginary_unit:sp.I})
-        if not ans.is_complex:
-            score=-1
-            numerror=2
-            texterror="Votre réponse n'est pas un nombre complexe valide."
-        elif not is_equal(ans,sol):
-            score=0
-            numerror=1
-            texterror=""
-        else:
-            score=100
-            numerror=0
-            texterror=""
     except:
-        score=-1
-        numerror=2
-        texterror="Votre réponse n'est pas un nombre complexe valide."
-    return score,numerror,texterror
+        return (-1,2,"Votre réponse n'est pas un nombre complexe valide.")
+    if not ans.is_complex:
+        return (-1,2,"Votre réponse n'est pas un nombre complexe valide.")
+    if not is_equal(ans,sol):
+        return (0,1,"")
+    return (100,0,"")
 
-def is_complex_cartesian(expr):
+def is_complex_algebraic(expr):
     """
-    Check if a complex number is in cartesian form.
+    Check if a complex number is in algebraic form.
     """
+    if not expr.is_polynomial(sp.I):
+        return False
     args=arg_add_flatten(expr)
-    nre=sum(a.is_real for a in args)        
-    nim=sum(a.is_imaginary for a in args)
-    m=len(args)-nre-nim
-    return (nre<=1) and (nim<=1) and (m==0)
-    
-def ans_complex_cartesian(strans,sol,imaginary_unit):
+    fact = [a.as_independent(sp.I)[1] for a in args]
+    return fact.count(sp.I)<=1 and fact.count(sp.I)+fact.count(1)==len(fact)
+
+def ans_complex_algebraic(strans,imaginary_unit,sol):
     """
-    Analyze an answer of type complex
+    Analyze an answer of type complex number in algebraic form.
     """
     try:
         ans=str2expr(strans,{imaginary_unit:sp.I})
-        if not ans.is_complex:
-            score=-1
-            numerror=2
-            texterror="Votre réponse n'est pas un nombre complexe valide."
-        elif not is_complex_cartesian(ans):
-            score=-1
-            numerror=3
-            texterror="Votre réponse n'est pas sous forme cartésienne."
-        elif not is_equal(ans,sol):
-            score=0
-            numerror=1
-            texterror=""
-        else:
-            score=100
-            numerror=0
-            texterror=""
     except:
-        score=-1
-        numerror=2
-        texterror="Votre réponse n'est pas un nombre complexe valide."
-    return score,numerror,texterror
+        return (-1,2,"Votre réponse n'est pas un nombre complexe valide.")
+    if not ans.is_complex:
+        return (-1,2,"Votre réponse n'est pas un nombre complexe valide.")
+    if not is_complex_algebraic(ans):
+        return (-1,3,"Votre réponse n'est pas un nombre complexe écrit sous forme cartésienne.")
+    if not is_equal(ans,sol):
+        return (0,1,"")
+    return (100,0,"")
+    
+def ans_complex_cartesian_coeff_rat(strans,imaginary_unit,sol):
+    """
+    Analyze an answer of type complex number in algebraic form with rational coefficients.
+    """
+    try:
+        ans=str2expr(strans,{imaginary_unit:sp.I,'e':sp.E})
+    except:
+        return (-1,2,"Votre réponse n'est pas un nombre complexe valide.")
+    if not ans.is_complex:
+        return (-1,2,"Votre réponse n'est pas un nombre complexe valide.")
+    if not is_complex_algebraic(ans):
+        return (-1,3,"Votre réponse n'est pas un nombre complexe écrit sous forme cartésienne.")
+    args=arg_add_flatten(ans)
+    fact = [sp.collect(a,sp.I).as_coeff_Mul(sp.I)[1] for a in args]
+    if fact.count(1)>1 or not all(is_rat_coeff_mul(a,sp.I) for a in args):
+        return (-1,3,"La partie réelle et/ou la partie imaginaire de votre réponse n'est pas simplifiée.")
+    if not is_equal(ans,sol):
+        return (0,1,"")
+    return (100,0,"")
+    
+def ans_complex_cartesian_coeff_rad(strans,imaginary_unit,sol):
+    """
+    Analyze an answer of type complex number in algebraic form with rational coefficients.
+    """
+    try:
+        ans=str2expr(strans,{imaginary_unit:sp.I,'e':sp.E})
+    except:
+        return (-1,2,"Votre réponse n'est pas un nombre complexe valide.")
+    if not ans.is_complex:
+        return (-1,2,"Votre réponse n'est pas un nombre complexe valide.")
+    if not is_complex_algebraic(ans):
+        return (-1,3,"Votre réponse n'est pas un nombre complexe écrit sous forme cartésienne.")
+    args=arg_add_flatten(ans)
+    coeff = [mul_flatten(a).as_coeff_Mul(sp.I)[0] for a in args]
+    if not all(a.atoms(sp.Function)==set() for a in args):
+        return (-1,3,"La partie réelle et/ou la partie imaginaire utilise des fonctions.")
+    if not is_equal(ans,sol):
+        return (0,1,"")
+    return (100,0,"")
+  
 
 # Finite sets
 
@@ -518,4 +607,72 @@ def ans_interval(strans,sol):
         numerror=2
         texterror="Votre réponse n'est pas un ensemble valide."
     return score,numerror,texterror
+
+# Polynomials
+
+def is_poly_expanded(expr,x):
+    """
+    Check if a sympy polynomial is written in expanded form.
+    """
+    args=arg_add_flatten(expr)
+    coeff = [a.as_coeff_exponent(x)[0] for a in args]
+    return all(not c.has(x) for c in coeff)
+
+def is_poly_reduced(expr,x):
+    """
+    Check if a sympy polynomial is written in reduced form.
+    """
+    args=arg_add_flatten(expr)
+    degrees0 = [a.as_coeff_exponent(x)[1] for a in args if a.as_coeff_exponent(x)[1]!=0]
+    return len(degrees0)==len(set(degrees0))
+
+def ans_poly_expanded(strans,x,sol):
+    try:
+        ans=str2expr(strans)
+    except:
+        return (-1,3,"Votre réponse n'est pas un polynôme.")
+    if not is_poly_expanded(ans,x):
+        return (-1,3,"Votre réponse n'est pas développée.")
+    if not is_poly_reduced(ans,x):
+        return (-1,3,"Votre réponse n'est pas réduite.")
+    return (100,0,"")
+    
+def ans_poly_expanded_rat(strans,x,sol):
+    try:
+        ans=str2expr(strans)
+    except:
+        return (-1,3,"Votre réponse n'est pas un polynôme.")
+    if not is_poly_expanded(ans,x):
+        return (-1,3,"Votre réponse n'est pas développée.")
+    if not is_poly_reduced(ans,x):
+        return (-1,3,"Votre réponse n'est pas réduite.")
+    args=arg_add_flatten(ans)
+    degrees = [a.as_coeff_exponent(x)[1] for a in args]
+    if degrees.count(0)>1 or not all(is_rat_coeff_exponent(a,x) for a in args):
+        return (-1,3,"Un ou plusieurs coefficients ne sont simplifiés.")
+    if not is_equal(ans,sol):
+        return (0,1,"")
+    return (100,0,"")
+
+def is_poly_factor(expr,x):
+    """
+    Check if a sympy polynomial is factorized.
+    """
+    args=arg_mul_flatten(expr)
+    for a in args:
+        if not sp.Poly(a,x).is_irreducible:
+            return False
+    return True
+
+def ans_poly_factor(strans,x,sol):
+    try:
+        ans=str2expr(strans)
+    except:
+        return (-1,3,"Votre réponse n'est pas un polynôme.")
+    if not is_poly_factor(ans,x):
+        return (-1,3,"Votre réponse n'est pas factorisée.")
+    if is_equal(ans,sol):
+        return (100,0,"")
+    return (0,1,"")
+
 
