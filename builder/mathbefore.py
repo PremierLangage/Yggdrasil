@@ -2,6 +2,7 @@
 # coding: utf-8
 
 import sys, json, jsonpickle
+from sandboxio import get_context
 from jinja2 import Template
 from importlib import import_module
 from sympy import *
@@ -87,8 +88,9 @@ class StopBeforeExec(Exception):
 def add_try_clause(code, excpt):
     """Add a try/except clause, excepting 'excpt' around code."""
     code = code.replace('\t', '    ')
-    return ("try:\n" + '\n'.join(["    " + line for line in code.split('\n')])
+    return ("try:\n    ...\n" + '\n'.join(["    " + line for line in code.split('\n')])
             + "\nexcept " + excpt.__name__ + ":\n    pass")
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
@@ -96,11 +98,9 @@ if __name__ == "__main__":
                +"Usage: python3 builder.py [input_json] [output_json]")
         print(msg, file=sys.stderr)
         sys.exit(1)
-    input_json = sys.argv[1]
     output_json = sys.argv[2]
     
-    with open(input_json, "r") as f:
-        dic = json.load(f)
+    dic = get_context()
     
     if 'before' in dic:
         if 'latexparam' in dic:
@@ -127,6 +127,7 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
     
     sys.exit(0)
+
 
 
 
