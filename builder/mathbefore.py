@@ -8,6 +8,9 @@ from sympy import *
 from random import random as rd
 #rd.seed(seed)
 from utilsmath import *
+with open('keyboards.JSON') as json_file:  
+    keyboards_JSON = json.load(json_file)
+
 
 def sympy_to_str(arg):
     if isinstance(arg,FiniteSet):
@@ -67,6 +70,7 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
     
     sys.exit(0)
+
 
 
 
