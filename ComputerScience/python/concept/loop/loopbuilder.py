@@ -184,8 +184,8 @@ if __name__ == "__main__":
     with open(input_json, "r") as f:
         dic = json.load(f)
     
-    if "difficulty" not in dic:
-        print("Ajouter une difficulté de la forme difficulty=n dans le fichier pl", file = sys.stderr)
+    if "difficultymax" not in dic:
+        print("Ajouter la difficulté maximum de la forme difficultymax=n dans le fichier pl", file = sys.stderr)
         sys.exit(1)
 
     if "taboo" not in dic:
@@ -213,12 +213,13 @@ if __name__ == "__main__":
         sys.exit(1)
     
     
-    difficulty = int(dic['difficulty'])
+    difficulty = randint(1, int(dic['difficultymax']))
     if dic['needed'] == "for":
         v = generateAleaFor(difficulty - 1)
     else:
         v = generateAleaWhile(difficulty - 1)
-        
+    
+    dic['difficulty'] = str(difficulty)
     dic['text'] = v[0] + "<br/>Rappel : vous ne devez pas utiliser de boucle " + dic['taboo']
     dic['soluce'] = v[1]
     """dic['code'] = v[1] #Si le prof désire voir le code généré de la soluce lors de l'appel du builder.py"""
@@ -227,3 +228,5 @@ if __name__ == "__main__":
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
     sys.exit(0)
+
+

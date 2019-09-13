@@ -1,5 +1,6 @@
 extends = transf_ln_.pl
 
-param.formulas = ["uln(p)","-uln(p)"]
+param.formulas = ["u*ln(p)","-u*ln(p)"]
+
 
 

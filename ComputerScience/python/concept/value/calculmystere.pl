@@ -1,3 +1,5 @@
+# OCE : test 11/09/2019 OK
+
 title=Calcul Mystere
 
 extends=/ComputerScience/python/template/simpleeval.pl
@@ -56,6 +58,7 @@ elif int(response['answer']) == res:
 else:
     grade = False,'<div class="btn-danger">  Raté : réessayez </div>'
 ==
+
 
 
 

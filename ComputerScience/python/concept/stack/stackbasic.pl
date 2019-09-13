@@ -1,3 +1,4 @@
+# OCE : test 11/09/2019 KO
 
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
@@ -51,5 +52,6 @@ try:
 except:
     print(json.dumps(dico_bad))
 ==
+
 
 

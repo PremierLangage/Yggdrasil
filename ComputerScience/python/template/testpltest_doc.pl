@@ -1,6 +1,12 @@
-title=test de pltest_doc 
+title=test du template pltest_doc 
 
 text==
+# Ceci est un fichier de test 
+
+**Si l'on click sur valider le resultat doit être un success.**
+
+
+
 
 Hop A égal à 2 et B à 3 
 
@@ -9,7 +15,7 @@ Hop A égal à 2 et B à 3
 
 
 
-code==
+editor.code==
 A=2
 B=3
 ==
@@ -54,6 +60,7 @@ True
 extends=pltest.pl
 
 @ template.html
+
 
 
 

@@ -1,3 +1,5 @@
+# OCE 10/09/2019 : OK mais c'est un template qui produit la mêême chose que Exo.pl juste au dessus dans le même fichier
+
 # Fait par Boris Jabot
 
 oneshot=True
@@ -11,12 +13,22 @@ soluce==
 text==
 ==
 
+title=Exo manipultation de variables
+
 code==
 ==
 
-plsoluce==
-Exo Boucle while |
+var==
 ==
+
+plsoluce==
+Exo Manipulation de variables |
+==
+
+
+
+
+
 
 
 

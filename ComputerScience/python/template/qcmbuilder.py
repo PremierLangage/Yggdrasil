@@ -2,6 +2,7 @@
 # coding: utf-8
 
 import sys, json, jsonpickle
+import random
 
 
 def testdef(balise):
@@ -105,3 +106,4 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
 
     sys.exit(0)
+

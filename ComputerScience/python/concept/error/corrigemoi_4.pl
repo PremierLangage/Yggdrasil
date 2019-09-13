@@ -1,3 +1,4 @@
+# Boris Jabot 10/09/2019 OK
 author=Dominique Revuz
 
 doc==
@@ -65,6 +66,23 @@ Quand python dit "Syntax Error" c'est qu'il s'est pris les pieds dans le tapis..
 Et qu'il ne sais pas comment vous aider.
 
 Dans ce cas la il faut TOUJOURS regarder la ligne audessus. 
+
+Un petit détail peux vous aider sous laligne supposé fautive,
+ il y a un curseur qui indique sur quel caractère le compilateur a jetter l'éponge (abandoné le traitement).
+
+exemple:
+
+    >>> z=
+         File "<stdin>", line 1
+         z=
+         ^
+    SyntaxError: invalid syntax
+
+Vous remarquez sous le z un caractère ^ qui vous indique que la grammaire à abandonnée ici. 
+Dans ce cas la raison est  claire c'est que l'on attend quelque chose après le signe = d'affectation.
+ 
 ==
+
+
 
 

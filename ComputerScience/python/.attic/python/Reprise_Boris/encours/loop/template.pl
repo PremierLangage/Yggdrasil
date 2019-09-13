@@ -1,3 +1,4 @@
+# OCE 11/09/2019 : lancé en solo et KO
 # Fait par Boris Jabot
 
 oneshot=True
@@ -21,9 +22,7 @@ text==
 code==
 ==
 
-plsoluce==
-Exo Boucle while |
-==
+
 
 
 

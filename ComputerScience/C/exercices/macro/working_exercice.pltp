@@ -4,8 +4,9 @@ introduction==
 Les exercices qui suivent fonctionnent tous le 16 octobre 2018.
 ==
 
-@ /exercices/macro/date.pl
-@ /exercices/macro/expr_eval.pl
-@ /exercices/macro/graphic_constants.pl
-@ /exercices/macro/square.pl
+@ /ComputerScience/C/exercices/macro/date.pl
+@ /ComputerScience/C/exercices/macro/expr_eval.pl
+@ /ComputerScience/C/exercices/macro/graphic_constants.pl
+@ /ComputerScience/C/exercices/macro/square.pl
+
 

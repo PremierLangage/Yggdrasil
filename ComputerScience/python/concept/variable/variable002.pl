@@ -1,3 +1,4 @@
+# OCE : test 11/09/2019 OK
 
 author=DR
 title= Initialisation d'une variable.
@@ -34,4 +35,5 @@ pltest1==
 
 
 extends=/ComputerScience/python/template/pltest.pl
+
 

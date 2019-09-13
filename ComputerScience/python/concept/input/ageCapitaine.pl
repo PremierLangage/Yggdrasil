@@ -1,3 +1,4 @@
+# Boris Jabot 11/09/2019 OK
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
 title= lecture d'un entier
@@ -38,7 +39,8 @@ Test 4 |100000
 
 soluce==
 a=int(input())
-print("Le capitaine à %d ans. Dans deux ans il aura %d ans." % (a,a+2))
+print("Le capitaine a %d ans. Dans deux ans il aura %d ans." % (a,a+2))
 print("Le perroquet du capitaine a %d ans." % (((a+5)//3)-5))
 ==
+
 

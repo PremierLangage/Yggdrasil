@@ -1,17 +1,34 @@
-title = Calcul avec des fractions
+title = Fractions
 
 introduction ==
-Effectuer des calculs numériques ou littéraux mettant en jeu des écritures fractionnaires.
+Objectifs :
+
+- Effectuer des calculs numériques mettant en jeu des écritures fractionnaires.
+- Présenter un résultat fractionnaire sous forme de fraction irréductible.
+
 ==
 
-@ /Mathematics/exercises/algebra/elementary_algebra/fraction/simplify_fraction_small.pl
+@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_simplify_small.pl
 
-@ /Mathematics/exercises/algebra/elementary_algebra/fraction/simplify_fraction_large.pl
+@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_simplify_large.pl
 
-@ /Mathematics/exercises/algebra/elementary_algebra/fraction/computation_add_subst_small.pl
+@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_computation_add_1int2frac.pl
 
-@ /Mathematics/exercises/algebra/elementary_algebra/fraction/computation_add_subst_integer_small.pl
+@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_computation_substr_par_1int2frac.pl
 
-@ /Mathematics/exercises/algebra/elementary_algebra/fraction/sum_large_denom_2.pl
+@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_computation_add_prod.pl
 
-@ /Mathematics/exercises/algebra/elementary_algebra/fraction/sum_large_denom_3.pl
+@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_computation_add_mul_par.pl
+
+@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_computation_add_div_par.pl
+
+@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_computation_add_div_par_1int2frac.pl
+
+@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_sum_large_denom_2.pl
+
+@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_sum_large_denom_3.pl
+
+@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_simplify_prod_2.pl
+
+@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_simplify_prod_3.pl
+

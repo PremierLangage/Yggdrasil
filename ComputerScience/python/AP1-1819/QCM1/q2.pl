@@ -7,9 +7,8 @@ title=Question 1
 text=Parmi les mots suivants lesquels sont valides pour un nom de variable ?
 
 
-
+nbtrue=2
 nb=4
-nbtrues=2
 uncrosedfalse=
 good==
 abc
@@ -35,6 +34,7 @@ Hello!
 Salut les terriens
 6six6
 777
+737Max
 l[]
 aujourd'hui
 après-demain
@@ -43,4 +43,5 @@ O+
 ==
 
 feedback=show
+
 

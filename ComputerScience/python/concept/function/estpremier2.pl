@@ -1,3 +1,4 @@
+# Boris Jabot 10/09/2019 OK
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
 title= Premier Suivant   # N'oubliez pas de remplir ce champs svp
@@ -55,4 +56,5 @@ def premiersuivant(k):
 			return(k)
 
 ==
+
 

@@ -1,3 +1,4 @@
+# Boris Jabot 11/09/2019 OK
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
 name=Elements Communs
@@ -82,5 +83,6 @@ Si vous avez besoin d'un outil logique ou mathématique pour résoudre un probl�
 la documentation si il n'existe pas déjà avant de le réécrire.
 (https://docs.python.org/3/)
 ==
+
 
 

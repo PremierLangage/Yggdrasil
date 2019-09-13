@@ -1,4 +1,4 @@
-
+# Boris Jabot 10/09/2019 OK
 
 title= Foo and Bar functions 
 
@@ -19,7 +19,7 @@ objectif quel est le niveau de diffculté de ces exercices.
 @ carre.pl
 @ carrecube.pl
 @ autosubsets.pl
- @ decomposition.pl
+@ decomposition.pl
 @ estpremier.pl
 @ estpremier2.pl
 @ funcpuis.pl
@@ -35,5 +35,6 @@ objectif quel est le niveau de diffculté de ces exercices.
 @ writebase.pl
 @ Sundaram.pl
 @ arguments.pl
+
 
 

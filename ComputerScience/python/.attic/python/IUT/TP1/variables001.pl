@@ -1,4 +1,4 @@
-
+# OCE 10/09/2019 : KO
 
 template=plbank:/gift/template/short_template.pl
 
@@ -25,3 +25,4 @@ answer2=quatre
 feedback1= Très bien ** est le caractère pour l'exponentiation
 
 feedback2=Correct, mais une version entière : 4 serait plus judicieuse  
+

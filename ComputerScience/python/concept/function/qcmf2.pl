@@ -1,4 +1,4 @@
-
+# Boris Jabot 11/09/2019 KO
 extends=/ComputerScience/python/template/qcm_template.pl
 
 title= parametre et arguments 
@@ -64,4 +64,5 @@ bad==
 ==
 
 feedback=show
+
 

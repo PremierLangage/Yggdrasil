@@ -5,6 +5,9 @@ title = Encadrement de $% a x + b %$
 lang = fr
 
 before ==
+keyboards_JSON['virtualKeyboards']="sets"
+input1.config = keyboards_JSON
+
 var('x')
 a=randint(-3,3,[0])
 b=randint(-8,8,[0])
@@ -18,12 +21,21 @@ else:
 
 ineq=latex_ineq([x1,s1,x,s2,x2])
 expr=latex(a*x+b)
+input1.value=expr
+
 ==
+
+input1.config % {"virtualKeyboards":"relations"}
 
 text ==
 Soit un nombre $% x %$ tel que $%{{ineq}} %$. Déterminer l'encadrement le plus précis possible de $% {{expr}} %$.
 ==
 
 evaluator==
-score,_,feedback=ans_chained_ineq(answer['1'],sol)
+score,_,feedback=ans_chained_ineq(input1.value,sol)
 ==
+
+
+
+
+

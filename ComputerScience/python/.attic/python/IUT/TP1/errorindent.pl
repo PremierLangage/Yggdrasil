@@ -1,3 +1,5 @@
+# OCE 10/09/2019 : KO
+
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
 name= Erreur de compilation 
@@ -46,3 +48,4 @@ Une erreur d'indentation **IndentationError** est une erreur sur le nombre d'esp
 Voire votre cours.
 
 ==
+

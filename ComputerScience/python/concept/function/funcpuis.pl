@@ -1,3 +1,4 @@
+# Boris Jabot 10/09/2019 OK
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
 title= Puissances Max
@@ -43,4 +44,5 @@ def pm(n):
 		print(x,end=", ")
 	print()
 ==
+
 

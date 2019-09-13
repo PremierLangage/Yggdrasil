@@ -1,4 +1,4 @@
-
+# OCE : test 11/09/2019 OK
 author=DR
 title= Initialisation d'une variable.
 tag=variable
@@ -31,4 +31,5 @@ extends=/ComputerScience/python/template/pltest.pl
 
 
 editor.height=120
+
 

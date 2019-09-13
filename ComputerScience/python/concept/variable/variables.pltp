@@ -1,4 +1,4 @@
-
+# OCE : test 11/09/2019 OK
 
 
 title=Intialisation de Variables
@@ -22,5 +22,6 @@ introduction=@ presvar.md
 #@ /concept/variable/variable003.pl
 #@ /concept/variable/littandtypes.pl 
 #@ /concept/
+
 
 

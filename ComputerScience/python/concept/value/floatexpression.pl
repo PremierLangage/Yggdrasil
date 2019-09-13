@@ -1,3 +1,4 @@
+# OCE : test 11/09/2019 OK
 
 #concept/value/floatexpression.pl
 
@@ -88,5 +89,6 @@ else:
     else:
         grade = 0, '''<div class="btn-danger"> le calcul doit exact a 7 decimales !! et c'est plus petit </div>'''#+str(res)+" "+str(ret)
 ==
+
 
 

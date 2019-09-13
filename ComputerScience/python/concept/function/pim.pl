@@ -1,3 +1,4 @@
+# Boris Jabot 11/09/2019 OK
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
 piste=verte
@@ -46,4 +47,5 @@ def pim(n):
 	else:
 		return("Pas de Pim")
 ==
+
 

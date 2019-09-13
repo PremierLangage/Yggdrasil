@@ -1,5 +1,7 @@
+# OCE : test 12/09/2019 OK et KO puisqu'on se sait pas ce qu'on doit faire
+
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
-author=Dominique Revuz 
+# author=Dominique Revuz 
 name= Jumeaux Cachés
 title= Jumeaux Cachés
 
@@ -11,7 +13,7 @@ showinput=True
 
 text==
 
-Deux jumeaux se chachent dans une foule la seule information que l'on ai sur chaque personne est son poids.
+Deux jumeaux se cachent dans une foule la seule information que l'on ait sur chaque personne est son poids.
 Nous devons identifier les deux jumeaux nous supposons que c'est le couple de poids les plus proches.
 
 
@@ -60,3 +62,4 @@ print(j1,j2)
 ==
 
 soluce=
+

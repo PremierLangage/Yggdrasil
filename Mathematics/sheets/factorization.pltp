@@ -1,8 +1,20 @@
 title = Factorisation
 
 introduction ==
-- Factoriser un polynôme dont une racine est connue.
+Objectifs :
+
+- Factoriser une expression polynomiale en identifiant un facteur commun.
+- Factoriser un polynôme à partir de ses racines.
 ==
+
+@ /Mathematics/exercises/algebra/polynomials/factorization/common_factor_2terms_1_11.pl
+
+@ /Mathematics/exercises/algebra/polynomials/factorization/common_factor_3terms_1_156.pl
+
+@ /Mathematics/exercises/algebra/polynomials/factorization/common_factor_2terms_1_11_notobvious.pl
 
 @ /Mathematics/exercises/algebra/polynomials/factorization/given_root_deg2_intrat_int.pl
 
+@ /Mathematics/exercises/algebra/polynomials/factorization/given_root_deg2_rat_rat.pl
+
+@ /Mathematics/exercises/algebra/polynomials/quadratic/quadratic_factorization_int.pl

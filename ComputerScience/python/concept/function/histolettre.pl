@@ -1,3 +1,4 @@
+# Boris Jabot 11/09/2019 OK
 extends=/ComputerScience/python/template/pltest.pl
 title= Liste and Fun(ction)
 
@@ -108,5 +109,6 @@ def histo2(s):
 	for k in sorted(d.keys()):
 		print(k,d[k])
 ==
+
 
 

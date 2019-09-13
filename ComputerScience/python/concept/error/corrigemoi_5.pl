@@ -1,3 +1,4 @@
+# Boris Jabot 10/09/2019 KO
 author=Dominique Revuz
 
 clog=error|quoting|print
@@ -41,5 +42,6 @@ D'ou l'erreur.
 Deux possibilités pour corriger soit placer votre texte ente guillemets ".
 soit placer un anti-slash avant l'apostrophe \' .
 ==
+
 
 

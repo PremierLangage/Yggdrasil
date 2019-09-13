@@ -1,5 +1,4 @@
-
-
+# OCE : test 11/09/2019 OK
 
 langage=python
 tag=value|expression|operator
@@ -35,4 +34,5 @@ def evaluator(reponse, dic):
 
 extends=/ComputerScience/python/plbank:/gift/template/match.pl
 type=direct
+
 

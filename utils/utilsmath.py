@@ -43,6 +43,11 @@ class CustomLatexPrinter(LatexPrinter0):
     def _print_ImaginaryUnit(self, expr):
         return self._settings["imaginary_unit"]
 
+    def _print_FiniteSet(self, s):
+        items = sorted(s, key=default_sort_key)
+        items = ", ".join(map(self._print, items))
+        return r"\{%s\}" % items
+
     def _print_Interval(self, i):
         
         if i.start == i.end:
@@ -100,15 +105,33 @@ LatexPrinter=CustomLatexPrinter()
 def latex(expr):
     return LatexPrinter.doprint(expr)
 
-def latexsys(A,B):
-    n=A.shape[0]
-    lstvar=['x','y','z','t','u','v','w']
+def latexsys(A,B,lstvar=['x','y','z','t','u','v','w']):
+    n,m=A.shape
     X=list(map(sp.symbols,lstvar[0:n]))
     lhs=A*sp.Matrix(X)
     code="\\left\lbrace \\\\begin{align}"
-    for i in range(n-1):
-        code+="&" + latex(sp.Eq(lhs[i],B[i]))+" \\\\\\ "
-    code+="&" +latex(sp.Eq(lhs[n-1],B[n-1]))+ " \\\\end{align}\\right."
+    for i in range(n):
+        code+="&" + latex_lincomb(A[i,:],lstvar)
+        if i<n-1:
+            code+=" = "+latex(B[i])+" \\\\\\ "
+        else: 
+            code+=" = "+latex(B[i])+" \\\\end{align}\\right."
+    return code
+
+def latex_lincomb(coeff,vec):
+    code=""
+    first=True
+    for i in range(len(coeff)):
+        if coeff[i]!=0:
+            if not first and coeff[i]>0:
+                code+="+ "
+            if coeff[i]==1:
+                code+=vec[i]
+            elif coeff[i]==-1:
+                code+="-"+vec[i]
+            else:
+                code+=latex(coeff[i])+" "+vec[i]
+            first=False
     return code
 
 def latex_ineq(lst):
@@ -143,8 +166,9 @@ def str2expr(s,local_dict={}):
     s=s.replace(r"\mright", "")
     s=s.replace(r"\left", "")
     s=s.replace(r"\right", "")
-    pattern = re.compile(r'\\frac\s*{(.*)}{(.*)}')
-    s = pattern.sub(r"(\1)/(\2)", s)
+    pattern = re.compile(r'^(.*)\\frac\s*{((?:(?!frac).)*)}{((?:(?!frac).)*)}(.*)$')
+    while pattern.search(s) is not None:
+        s = pattern.sub(r"\1(\2)/(\3)\4", s)
     s=s.replace("\\times", "*")
     s=s.replace('\\'," ")
     s=s.replace("{", "(")
@@ -153,6 +177,27 @@ def str2expr(s,local_dict={}):
     transformations=prs.standard_transformations + (prs.implicit_multiplication_application,prs.convert_xor)
     with sp.evaluate(False):
         return prs.parse_expr(s,local_dict=local_dict,transformations=transformations,evaluate=False)
+
+def str2struct(s,local_dict={}):
+    s=s.replace(r"\mleft", "")
+    s=s.replace(r"\mright", "")
+    s=s.replace(r"\left", "")
+    s=s.replace(r"\right", "")
+    s=s.replace(r"\lbrace",r"\{")
+    s=s.replace(r"\rbrace",r"\}")
+    s=s.strip()
+    if s[0]=="(" and s[-1]==")" and "," in s[1:-1]:
+        s=s[1:-1]
+        lst=re.split(r',\s*(?![^()]*\))(?![^\{\}]*\\})', s)
+        return tuple([str2struct(x) for x in lst])
+    elif s[:2]==r"\{" and s[-2:]==r"\}":
+        s=s[2:-2]
+        lst=re.split(r',\s*(?![^()]*\))(?![^\{\}]*\\})', s)
+        return [str2struct(x) for x in lst]
+    else:
+        if s==r"\emptyset":
+            return []
+        return str2expr(s,local_dict)
 
 def str2listexpr(s,delim='',local_dict={}):
     """
@@ -173,7 +218,7 @@ def str2listexpr(s,delim='',local_dict={}):
         pattern = re.compile(r'^{(.*)}$')
     if delim=="(":
         pattern = re.compile(r'^\((.*)\)$')
-    inside=str2expr(pattern.match(s).group(1))
+    inside=str2expr(pattern.match(s).group(1),local_dict)
     if inside is not None:
         if isinstance(inside,tuple):
             return inside
@@ -210,16 +255,16 @@ def str2interval(s,local_dict={}):
     pattern = re.compile(r'^{(.*)}$')
     if pattern.search(s) is not None:
         return sp.FiniteSet(str2expr(pattern.search(s).group(1)))
-    pattern = re.compile(r'^\\lbrack(.*),(.*)\\rbrack$')
+    pattern = re.compile(r'^\[(.*),(.*)\]$')
     if pattern.search(s) is not None:
         return sp.Interval(str2expr(pattern.search(s).group(1)),str2expr(pattern.search(s).group(2)))
-    pattern = re.compile(r'^\\lbrack(.*),(.*)\\lbrack$')
+    pattern = re.compile(r'^\[(.*),(.*)\[$')
     if pattern.search(s) is not None:
         return sp.Interval.Ropen(str2expr(pattern.search(s).group(1)),str2expr(pattern.search(s).group(2)))
-    pattern = re.compile(r'^\\rbrack(.*),(.*)\\rbrack$')
+    pattern = re.compile(r'^\](.*),(.*)\]$')
     if pattern.search(s) is not None:
         return sp.Interval.Lopen(str2expr(pattern.search(s).group(1)),str2expr(pattern.search(s).group(2)))
-    pattern = re.compile(r'^\\rbrack(.*),(.*)\\lbrack$')
+    pattern = re.compile(r'^\](.*),(.*)\[$')
     if pattern.search(s) is not None:
         return sp.Interval.open(str2expr(pattern.search(s).group(1)),str2expr(pattern.search(s).group(2)))
     raise ValueError()
@@ -263,6 +308,16 @@ def str2chainineq(s,local_dict={}):
         parts=[pattern8.search(s).group(3),'<',pattern8.search(s).group(2),'<',pattern8.search(s).group(1)]
     
     return [str2expr(parts[0]),parts[1],str2expr(parts[2]),parts[3],str2expr(parts[4])]
+
+def FiniteSet2struct(S):
+    if S==sp.EmptySet():
+        return []
+    elif isinstance(S,sp.FiniteSet):
+        return [FiniteSet2struct(x) for x in S]
+    elif isinstance(S,tuple):
+        return tuple([FiniteSet2struct(x) for x in S])
+    else:
+        return S
 
 #############################################################################
 # Generation of random mathematical objects
@@ -373,19 +428,23 @@ def rand_int_poly(d,nc,bound,x):
 
 # Matrices
 
-def rand_int_matrix(n,p,bound):
+def rand_int_matrix(n,p,bound,excluded_values=[],sparsity=0):
     """
     Generate a random matrix with integer entries.
     """
-    entries=list_randint(n*p,-bound,bound)
+    nbzero=int(sp.floor(sparsity*n*p))
+    entries0=[0]*nbzero
+    entries1=list_randint(n*p-nbzero,-bound,bound,excluded_values)
+    entries=entries0+entries1
+    rd.shuffle(entries)
     return sp.Matrix(n,p,entries)
 
-def rand_int_matrix_invertible(n,bound):
+def rand_int_matrix_invertible(n,bound,excluded_values=[],sparsity=0):
     """
     Generate an invertible random matrix with integer entries.
     """
     while True:
-        M=rand_int_matrix(n,n,bound)
+        M=rand_int_matrix(n,n,bound,excluded_values,sparsity)
         if M.det()!=0:
             return M
 
@@ -520,22 +579,83 @@ def is_rat_coeff_exponent(expr,x):
     if d>1: return is_rat_coeff_mul(expr,x**d)
     return False
      
-def is_equal(a, b):
+def is_equal(a, b, modulo=0):
     """
     Check if two sympy expressions are equal after simplifications.
     """
     if a==b:
         return True
-    return sp.simplify(a-b) == 0
+    if modulo==0:
+        return sp.simplify(a-b) == 0
+    else:
+        return sp.simplify(a-b) % modulo == 0
+
+def is_equal2(a, b, modulo=0):
+    """
+    Check if two sympy expressions are equal after simplifications.
+    """
+    if isinstance(b,list):
+        if isinstance (a,list):
+            return is_set_equal(a,b)
+        else:
+            return False
+    elif isinstance(b,tuple):
+        if isinstance (a,tuple):
+            return is_tuple_equal(a,b)
+        else:
+            return False
+    elif isinstance(b,(sp.Expr,int)):
+        if isinstance (a,(sp.Expr,int)):
+            return sp.simplify(a-b) == 0
+        else:
+            return False
+
+def is_set_equal(p,q):
+    """
+    Check if two sets (stored as lists) are equal.
+    """
+    for a in p:
+        isin=False
+        for b in q:
+            if is_equal2(a,b):
+                isin=True
+                break
+        if not isin:
+            return False
+    if len(p)==len(q):
+        return True
+    else:
+        return False
+
+def is_tuple_equal(p,q):
+    """
+    Check if two tuples are equal.
+    """
+    if len(p)!=len(q):
+        return False
+    for i in range(len(p)):
+        if not is_equal2(p[i],q[i]):
+            return False
+    return True
 
 def is_rat_simp(expr):
     """
     Check if the rational numbers in a sympy expressions are simplified.
     """
-    if expr.is_rational:
-        return is_frac_int_irred(expr)
+    if isinstance(expr,sp.Basic):
+        if expr.is_rational:
+            return is_frac_int_irred(expr)
+        elif expr.is_Atom:
+            return True
+        elif expr.is_Boolean:
+            return True
+        else:
+            return all(is_rat_simp(subexpr) for subexpr in expr.args)
     else:
-        return all(is_rat_simp(subexpr) for subexpr in expr.args)
+        return True
+    
+def is_sqrt(expr):
+    return type(expr)==sp.Pow and expr.args[1]==sp.Rational(1,2)    
 
 def ans_prod(strans,solargs):
     """
@@ -557,36 +677,41 @@ def ans_prod(strans,solargs):
 
 # Mathematical expressions
 
-def ans_expr(strans,sol,local_dict={},authorized_func={}):
+def ans_expr(strans,sol,local_dict={},authorized_func={},modulo=0):
     """
     Analyze an answer expected to be a mathematical expression.
     """
     try:
-        ans=str2expr(strans)
+        ans=str2expr(strans,local_dict)
     except:
         return (-1,"FailedConversion","Votre réponse n'est pas une expression valide.")
-    if not is_equal(ans,sol):
+    if not is_equal(ans,sol,modulo):
         return (0,"NotEqual","")
     nonauthorized_func=set([type(a) for a in ans.atoms(sp.Function)]).difference(authorized_func)
     if nonauthorized_func!=set():
         return (-1,"UnauthorizedFunction","Fonctions non-autorisées")
     if not is_rat_simp(ans):
-        return (-1,"NotRatSimp","Certains nombres ne sons pas simplifiés.")
+        return (-1,"NotRatSimp","L'expression peut encore être simplifiée.")
     return (100,0,"")
 
 
-def ans_tuple_expr(strans,sol,parenthese_enclosed=True,local_dict={},authorized_func={}):
+def ans_tuple_expr(strans,sol,parentheses=True,local_dict={},authorized_func={}):
     """
     Analyze a tuple of algebraic expressions.
     """
     if isinstance(strans,(tuple,list)):
         ans=[]
         for item in strans:
-            ans.append(str2expr(item,local_dict))
+            if item=="":
+                ans.append(0)
+            else:
+                ans.append(str2expr(item,local_dict))
     elif isinstance(strans,string):
-        if parenthese_enclosed:
+        if parentheses:
             delim="("
-        try:
+        else:
+            delim=""
+        try:             
             ans=str2listexpr(strans,delim,local_dict)
         except:
             return (-1,"FailedConversion","Votre réponse n'est pas un n-uplet.")
@@ -600,25 +725,32 @@ def ans_tuple_expr(strans,sol,parenthese_enclosed=True,local_dict={},authorized_
         if nonauthorized_func!=set():
             return (-1,"UnauthorizedFunction",str(ans[i]))
         if not is_rat_simp(ans[i]):
-            return (-1,"NotRatSimp","Certains nombres ne sont pas simplifiés.")
+            return (-1,"NotRatSimp","Une ou plusieurs valeurs peuvent encore être simplifiées.")
     return (100,"","")
 
-def ans_set_expr(strans,sol,brace_enclosed=True,local_dict={},authorized_func={}):
+def ans_set_expr(strans,sol,formal=True,local_dict={},authorized_func={}):
     """
     Analyze a set of algebraic expressions.
     """
-    if brace_enclosed:
-        delim="{"
-    else:
-        delim=""
     try:
-        ans=str2listexpr(strans,delim,local_dict)
+        strans=strans.strip()
+        if formal:
+            if strans==r"\emptyset":
+                ans=[]
+            else:
+                ans=str2listexpr(strans,"{",local_dict)
+        else:
+            if strans=="":
+                ans=[]
+            else:
+                ans=str2listexpr(strans,"",local_dict)
     except:
         return (-1,"FailedConversion","Votre réponse n'est pas un ensemble.")
-    for i in range(len(ans)):
-        for j in range(i+1,len(ans)):
-            if is_equal(ans[i],ans[j]):
-                return (-1,4,"Il y a des doublons.")
+    if len(ans)>1:
+        for i in range(len(ans)):
+            for j in range(i+1,len(ans)):
+                if is_equal(ans[i],ans[j]):
+                    return (-1,4,"Il y a des doublons.")
     if len(ans)!=len(sol):
         return (0,"NotEqual","")
     for i in range(len(ans)):
@@ -634,9 +766,38 @@ def ans_set_expr(strans,sol,brace_enclosed=True,local_dict={},authorized_func={}
         if nonauthorized_func!=set():
             return (-1,"UnauthorizedFunction",str(ans[i]))
         if not is_rat_simp(ans[i]):
-            return (-1,"NotRatSimp","Certains nombres ne sont pas simplifiés.")
+            return (-1,"NotRatSimp","Une ou plusieurs valeurs peuvent encore être simplifiées.")
     return (100,"","")
 
+def ans_set_number(strans,sol,formal=True,local_dict={},authorized_func={}):
+    return ans_set_expr(strans,sol,formal,local_dict,authorized_func)
+
+def ans_set_complex(strans,sol,formal=True,imaginary_unit="i",local_dict={},authorized_func={}):
+    local_dict={imaginary_unit:sp.I}
+    return ans_set_expr(strans,sol,formal,local_dict,authorized_func)
+
+def ans_set(strans,Sol,formal=True,local_dict={},authorized_func={}):
+    """
+    Analyze a finite set.
+    """
+    sol=FiniteSet2struct(Sol)
+    try:
+        strans=strans.strip()
+        if formal:
+            if strans==r"\emptyset":
+                ans=[]
+            else:
+                ans=str2struct(strans,local_dict)
+        else:
+            if strans=="":
+                ans=[]
+            else:
+                ans=str2struct("\\{"+strans+"\\}",local_dict)
+    except:
+        return (-1,"FailedConversion","Votre réponse n'est pas un ensemble.")
+    if not is_set_equal(ans,sol):
+        return (0,"NotEqual","")
+    return (100,"","")
 # Integer and fractions
 
 def is_frac_int(expr):
@@ -750,7 +911,7 @@ def complex_cartesian_parts(expr):
     im=next(coeff_mul(a,sp.I) for a in args if is_coeff_mul(a,sp.I))
     lstre=[a for a in args if a.is_real]
     if len(lstre)==0:
-        re=0
+        re=sp.Integer(0)
     elif len(lstre)==1:
         re=lstre[0]
     else:
@@ -787,16 +948,17 @@ def ans_rset(strans,sol):
         ans=str2rset(strans)
     except:
         return (-1,"FailedConversion","Votre réponse n'est pas un ensemble valide.")
-    for i in range(len(ans)):
-        for j in range(i+1,len(ans)):
-            if sp.Intersection(ans[i],ans[j])!=sp.EmptySet():
-                return (-1,"NonDisjoint","Cette réunion d'ensembles peut-être simplifiée.")
-    if sp.simplify(sp.Union(*ans))!=sol:
+    if len(ans)>1:
+        for i in range(len(ans)):
+            for j in range(i+1,len(ans)):
+                if sp.Intersection(ans[i],ans[j])!=sp.EmptySet():
+                    return (-1,"NonDisjoint","Cette réunion d'ensembles peut-être simplifiée.")
+    if sp.SymmetricDifference(sp.Union(*ans),sol)!=sp.EmptySet():
         return (0,"NotEqual","")
-    for i in range(len(ans)):
-        if not is_rat_simp(ans[i]):
-            return (-1,"NotRatSimp","Certains expressions numériques ne sont pas simplifiés.")
-    return (100,0,"")
+    #for i in range(len(ans)):
+    #    if not is_rat_simp(ans[i]):
+    #        return (-1,"NotRatSimp","Certains expressions numériques ne sont pas simplifiés.")
+    return (100,"","")
 
 # Polynomials
 
@@ -866,6 +1028,18 @@ def ans_chained_ineq(strans,sol,local_dict={},authorized_func={}):
     if not (ans[1]==sol[1] and ans[3]==sol[3]):
         return (0,"WrongIneq","Les types d'inégalités ne sont pas corrects.")
     return (100,0,"")
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,3 +1,5 @@
+# OCE 10/09/2019 : KO
+
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
 
@@ -32,6 +34,7 @@ pltest==
 >>> produit([12,45,78,1000,-100,])
 -4212000000
 ==
+
 
 
 

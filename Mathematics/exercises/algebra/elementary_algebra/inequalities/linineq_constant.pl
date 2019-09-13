@@ -1,5 +1,6 @@
-extends = linineq0.pl
+extends = linineq_.pl
 
 param.otherside = constant
+
 
 

@@ -17,6 +17,7 @@ It should declare a variable 'grade' which should contain a tuple (int, feedback
 
 def checktaboo(taboo, answer):
     x = re.sub("(\"(.|\n)*\"|#.*)", "", answer) #enlève les commentaires et les chaînes de caractères
+    # FIXME la chaine de carctère ""  letaboo "" est elle trouvée par la regex suivante ? 
     return re.search("(^"+taboo+"\s|[^\"]+"+taboo+"\s)", x) != None
 
 if __name__ == "__main__":
@@ -59,6 +60,7 @@ if __name__ == "__main__":
 
 
     output(ret, fb.render())
+
 
 
 

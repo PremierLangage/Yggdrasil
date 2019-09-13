@@ -1,3 +1,5 @@
+# OCE 10/09/2019 : KO
+
 # Copyright 2017 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz
 name=Variables et Types
@@ -143,4 +145,5 @@ else:
 print(json.dumps(d))
 sys.exit(0)
 ==
+
 

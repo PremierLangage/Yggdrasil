@@ -1,3 +1,4 @@
+# Boris Jabot 11/09/2019 OK
 # ceci est un exercice Premier langage
 
 title=une fonction racine carre
@@ -29,4 +30,5 @@ pltest==
 >>> racinecarre(0)
 0.0
 ==
+
 

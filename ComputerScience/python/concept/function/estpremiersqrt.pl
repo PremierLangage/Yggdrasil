@@ -1,3 +1,4 @@
+# Boris Jabot 11/09/2019 OK
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
 title= Est Premier O(n^1/2)
@@ -49,4 +50,5 @@ def estpremier(p):
       i=i+2
    return True
 ==
+
 

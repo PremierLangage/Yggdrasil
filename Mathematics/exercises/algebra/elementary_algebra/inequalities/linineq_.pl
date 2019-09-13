@@ -5,6 +5,9 @@ title = Inéquation linéaire
 lang = fr
 
 before ==
+keyboards_JSON['virtualKeyboards']="sets"
+input1.config = keyboards_JSON
+
 a,c=list_randint_norep(2,-6,6,[0,1,-1])
 b,d=list_randint(2,-6,6,[0])
 var('x')
@@ -18,18 +21,23 @@ if param['otherside']=='linear':
 ineq=randitem([f>=g,f>g,f<=g,f<g,g>=f,g>f,g<=f,g<f])
 sol=solveset(ineq,x,domain=S.Reals)
 latexineq=latex(ineq)
-latexsol=latex(sol)
+sol_tex=latex(sol)
 ==
 
 text ==
 Déterminer l'ensemble des réels $% x %$ tels que $$ {{latexineq}}. $$ Ecrire cet ensemble sous la forme d'un intervalle.
 ==
 
-input.1.virtualKeyboards = sets
-
 evaluator==
-score,_,feedback=ans_rset(answer['1'],sol)
+score,_,feedback=ans_rset(input1.value,sol)
 ==
+
+solution==
+Cet ensemble est $! {{sol_tex}} !$.
+==
+
+
+
 
 
 

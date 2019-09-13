@@ -1,4 +1,4 @@
-
+# OCE 10/09/2019 : KO
 
 template=plbank:/gift/template/short_template.pl
 
@@ -17,4 +17,5 @@ Soit le code python suivant quel est la valeur de la variable **a** apr√®s l'ex√
 ==
 
 build=@repoplbase:python/IUT/TP1/dynabuild.py
+
 

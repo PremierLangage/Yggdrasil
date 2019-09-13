@@ -1,3 +1,4 @@
+# Boris Jabot 11/09/2019 KO
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
 title= Egal ou EgalEgal ?
@@ -46,3 +47,4 @@ if not a != b :
 else:
 	print(" les deux valeurs entrées ne sont pas égales ")
 ==
+

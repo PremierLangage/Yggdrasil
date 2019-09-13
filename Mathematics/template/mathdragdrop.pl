@@ -1,66 +1,36 @@
-extends = /Mathematics/template/mathbasic.pl
-
-html_drop_tag =@ /Mathematics/inclusion_tags/drop_tag.html
-html_drag_tag =@ /Mathematics/inclusion_tags/drag_tag.html
+extends = mathbasic2.pl
 
 
-headbefore==
-from jinja2 import Template
-from plrandom import rd
-rd.seed(seed)
-from sympy import sqrt,ln,log,exp,sin,cos,tan
-from sympy import isprime,factorint
-from sympy import Intersection
-from sympy import symbols
-from sympy import conjugate
-from sympy import Basic, Matrix
-from sympy import Rational
-from sympy import trace
-from utilsmath import *
+drop1 =: DragDrop
+drop1.droppable = True
 
-if 'latexparam' in locals():
-    LatexPrinter._settings.update(eval(latexparam))
+drop2 =: DragDrop
+drop2.droppable = True
 
-def render_drop_tag(dic):
-	context = {'name':dic['name']}
-	if 'style' in dic:
-	    context['style'] = dic['style']
-	else: 
-		context['style'] = ''
-	if 'display' in dic:
-	    context['display'] = dic['display']
-	else: 
-		context['display'] = ''
-    return Template(html_drop_tag).render(context)
+drop3 =: DragDrop
+drop3.droppable = True
 
-def render_drag_tag(dic):
-	context = {'name':dic['name']}
-	if 'style' in dic:
-	    context['style'] = dic['style']
-	else: 
-		context['style'] = ''
-	if 'display' in dic:
-	    context['display'] = dic['display']
-	else: 
-		context['display'] = ''
-    return Template(html_drag_tag).render(context)
+drop4 =: DragDrop
+drop4.droppable = True
 
+drop5 =: DragDrop
+drop5.droppable = True
+
+
+
+evaluator ==
+drop=[drop1,drop2,drop3,drop4,drop5]
+drop=drop[:n]
+feedback=""
+score=100
+for i in range(n):
+    if drop[i].content==sol[i]:
+        drop[i].css = "success-state anim-flip"
+    else:
+        score=0
+        drop[i].css = "error-state anim-flip" 
 ==
 
-footerbefore ==
-from jinja2 import Template
-
-_strsympyvar={}
-for _namevar in list(locals().keys()):
-    if isinstance(locals()[_namevar],(Basic,Matrix)):
-        _strsympyvar[_namevar]=str(locals()[_namevar])
-
-
-==
-
-text==
-
-==
 
 
 

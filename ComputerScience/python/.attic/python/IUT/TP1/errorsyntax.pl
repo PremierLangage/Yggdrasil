@@ -1,3 +1,5 @@
+# OCE 10/09/2019 : KO
+
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
 name= Erreur de compilation 
@@ -41,3 +43,4 @@ C'est un classique de l'erreur **SyntaxError**  qui est juste une indication que
 Ici le problème est qu'une paranthèse ouvrante n'a pas de paranthèse fermante.
 
 ==
+

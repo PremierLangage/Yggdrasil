@@ -1,10 +1,16 @@
-title = Valeur absolue
+title = Logique
 
 introduction ==
-- Déterminer si une proposition.
+Objectifs :
+
+- Déterminer si une proposition faisant intervenir des connecteurs logiques est vraie.
+- Ecrire une proposition avec des connecteurs logiques.
 ==
 
-@ /Mathematics/exercises/algebra/elementary_algebra/absolute_value/simplification_number_2.pl
+@ /Mathematics/exercises/foundations/logic/check_proposition_and_or.pl
 
-@ /Mathematics/exercises/algebra/elementary_algebra/absolute_value/equation.pl
+@ /Mathematics/exercises/foundations/logic/write_proposition_and_or.pl
+
+
+
 

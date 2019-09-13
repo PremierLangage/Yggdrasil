@@ -1,3 +1,4 @@
+# Boris Jabot 11/09/2019 OK
 extends=/ComputerScience/python/template/pltest.pl
 title= Histogramme again
 piste=rouge
@@ -94,4 +95,5 @@ def histo2(s):
 	for k in sorted(d.keys()):
 		print(k,d[k])
 ==
+
 

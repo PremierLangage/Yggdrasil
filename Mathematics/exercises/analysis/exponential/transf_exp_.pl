@@ -2,32 +2,29 @@ extends = /Mathematics/template/mathexpr.pl
 
 title = Transformation d'expressions avec exponentielles
 
-doc ==
-
-Objectif : Transformer des expressions impliquant des exponentielles
-
-==
-
 lang = fr
 
 
 before ==
+keyboards_JSON['virtualKeyboards']="functions"
+input1.config = keyboards_JSON
+
 p,q=list_randint_norep(2,-5,5,[-1,0,1])
 formula=randitem(eval(param['formulas']))
 if formula=="(exp(p))^u":
     u=randint(2,4)
     sol=p*u
-    expr="(\exp(%d))^{%d}" % (p,u)
+    expr="(\exp( %d ))^{ %d }" % (p,u)
 elif formula=="1/(exp(p))^u":
     u=randint(-4,-2)
-    sol=p*u
-    expr=r"\frac{1}{(\exp(%d))^{%d}}" % (p,u)
+    sol=-p*u
+    expr=r"\frac{1}{(\exp( %d ))^{ %d }}" % (p,u)
 elif formula=="exp(p)*exp(q)":
     sol=p+q
-    expr=r"\exp(%d) \times \exp(%d)" % (p,q)
+    expr=r"\exp( %d ) \times \exp( %d )" % (p,q)
 elif formula=="exp(p)/exp(q)":
     sol=p-q
-    expr=r"\frac{\exp(%d)}{\exp(%d)}" % (p,q)
+    expr=r"\frac{\exp( %d )}{\exp( %d )}" % (p,q)
 ==
 
 text ==
@@ -35,7 +32,18 @@ Ecrire $%\displaystyle {{expr}} %$ sous la forme  $% \exp(a)%$, où $%a%$ est un
 ==
 
 evaluator==
-score,_,feedback=ans_number(answer['1'],sol)
+def ans_eval(strans,sol):
+    try:
+        ans=str2expr(strans)
+    except:
+        return (-1,"FailedConversion","Votre réponse n'est pas sous la forme attendue")
+    if type(ans)!=sp.exp:
+        return (-1,"","Votre réponse n'est pas sous la forme attendue")
+    if not is_equal(ans.args[0],sol):
+        return (0,"","")
+    return (100,"","")
+
+score,_,feedback=ans_eval(input1.value,sol)
 ==
 
 
@@ -108,5 +116,8 @@ wims ==
 }
 
 ==
+
+
+
 
 

@@ -1,3 +1,4 @@
+# OCE 10/09/2019 : KO
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
 
@@ -75,6 +76,7 @@ else:
             print(jour,"/",mois,"/",annee,"date incorrecte.")
 
 ==
+
 
 
 

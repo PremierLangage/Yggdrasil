@@ -1,3 +1,4 @@
+# Boris Jabot 11/09/2019 KO
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
 title= Quel age à le capitaine
@@ -33,3 +34,4 @@ soluce==
 a=int(input())
 print("Le capitaine né en %d auras %d ans en 2018." % (a,2018-a))
 ==
+

@@ -1,3 +1,4 @@
+# Boris Jabot 10/09/2019 OK
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
 name= Est Premier
@@ -52,4 +53,5 @@ def estpremier(p):
       i=i+1
    return True
 ==
+
 

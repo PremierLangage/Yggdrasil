@@ -9,7 +9,7 @@ Ecrire un programme qui demande à l’utilisateur un entier grace au texte:
 
 	Saisissez un entier?
 
-Et qui si il est **strictement positif** affiche 
+Et qui si il est **Strictement Positif.** affiche 
 
 	Strictement Positif.
 
@@ -30,6 +30,7 @@ if n >0:
 ==
 
 #editor.height=12
+
 
 
 

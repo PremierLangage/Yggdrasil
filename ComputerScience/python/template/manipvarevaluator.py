@@ -15,9 +15,30 @@ missing_grade_stderr = """\
 The script have access to every variable declared in the PL and its 'before' script.
 It should declare a variable 'grade' which should contain a tuple (int, feedback) where int is the grade between [0, 100]."""
 
-def checktaboo(taboo, answer):
-    x = re.sub("(\"(.|\n)*\"|#.*)", "", answer) #enlève les commentaires et les chaînes de caractères
-    return re.search("(^"+taboo+"\s|[^\"]+"+taboo+"\s)", x) != None
+"""Recherche tous les variables ayant une lettre comme nom dans le code passé en string"""
+def variableSearch(string):
+    # Enlève les commentaires et les chaînes de caractères
+    x = re.sub("(\"(.|\n)*\"|#.*)", "", string)
+    # Recherche les variables
+    x = re.findall(r"(\b[a-z][ ]*(,[ ]*[a-z][ ]*)*=[ ]*[+-]?\d+\.?\d*(,[ ]*[+-]?\d+\.?\d*)*)", x)
+    variableDict = dict()
+    for groupVar in x:
+        varNameList = re.findall("[a-z]", groupVar[0])
+        valueVarList = re.findall("[+-]?\d+\.?\d*", groupVar[0])
+        if len(varNameList) != len(set(varNameList)) or len(varNameList) != len(valueVarList): continue
+        for i in range(len(varNameList)): variableDict[varNameList[i]] = float(valueVarList[i]) if re.search("\.", valueVarList[i]) != None else int(valueVarList[i])
+    return variableDict
+
+"""Vérifie que les variables trouvées dans le code de l'étudiant correspondent 
+aux variables attendues par le code solution"""
+def verifyVariable(variables, expectedVariables):
+    foundVariables = 0
+    for a in expectedVariables.keys():
+        if a not in variables == None: continue
+        if not isinstance(variables[a], type(expectedVariables[a])): continue
+        if variables[a] != expectedVariables[a]: continue
+        foundVariables += 1
+    return foundVariables
 
 if __name__ == "__main__":
     if len(sys.argv) < 5:
@@ -25,7 +46,6 @@ if __name__ == "__main__":
                + "Usage: python3 grader.py [input_json] [output_json] [answer_file] [feedback_file]")
         print(msg, file=sys.stderr)
         sys.exit(1)
-
 
     dic = get_context()
     if "plsoluce" not in dic:
@@ -46,7 +66,20 @@ if __name__ == "__main__":
             lestest.append(line.split('|'))
     student = get_answers()['answer']
 
-    variables = re.findall(r"\b[a-z][ ]*=[ ]*", student)
+    expectedVariables = variableSearch(dic['var'])
+    variables = variableSearch(student)
+    expectedNbVariables = len(expectedVariables)
+
+    foundVariables = verifyVariable(variables, expectedVariables)
+
+    if foundVariables != expectedNbVariables:
+        textt = "Il n'y a pas assez de variables pour cet exercice<br/>"
+        textl = "Il y a trop de variables pour cet exercice<br/>"
+
+        text = textt if foundVariables < expectedNbVariables else textl
+        text += str(foundVariables) + (" trouvée / " if foundVariables < 2 else " trouvées / ") + str(expectedNbVariables) + " attendues"
+        output(0, text)
+        sys.exit(1)
 
     with open("student.py","w") as sf:
         sf.write(student)
@@ -54,7 +87,5 @@ if __name__ == "__main__":
     fb=feedback2.FeedBack()
     ret=runsolucetests(lestest,fb)
 
-
-    output(ret, " ".join(variables) + " " + fb.render())
-
+    output(ret, fb.render())
 

@@ -1,16 +1,24 @@
-extends = mathbasic2.pl
-@ /input/checkbox/process.py [checkbox_process.py]
-@ /input/checkbox/template.html [checkbox_template.html]
-@ /input/checkbox/head.html [checkbox_head.html]
+extends = /Mathematics/template/mathbasic2.pl
 
+component =: CheckboxGroup
 
-form ==
-{{input_1}}
+form==
+{{ component|component }}
 ==
 
-input.1.type = checkbox
-input.1.shuffle = yes
-input.1.choices = {{choices}}
-input.1.numsol = {{numsol}}
+evaluator ==
+score=100
+for i in range(len(component.items)):
+    if sol[i] and component.items[i]['checked']:
+        component.items[i]['css'] = 'success-state anim-fade'
+    elif sol[i] and not component.items[i]['checked']:
+        component.items[i]['css'] = 'error-state anim-fade'
+        score=0
+    elif not sol[i] and component.items[i]['checked']:
+        component.items[i]['css'] = 'error-state anim-fade'
+        score=0
+feedback=""
+==
+
 
 

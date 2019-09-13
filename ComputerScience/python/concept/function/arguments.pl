@@ -1,4 +1,4 @@
-
+# Boris Jabot 10/09/2019 OK
 
 title= Les arguments d'appel d'une fonction
 
@@ -45,5 +45,6 @@ parrot(voltage=5.0, action='evacuated', ’dead’) | non-keyword argument after
 parrot(110, voltage=220) | duplicate value for the same argument 
 parrot(actor=’John Cleese’) | unknown keyword argument
 ==
+
 
 

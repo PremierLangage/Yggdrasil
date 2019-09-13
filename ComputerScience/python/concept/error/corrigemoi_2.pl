@@ -1,3 +1,4 @@
+# Boris Jabot 10/09/2019 KO
 author=Dominique Revuz
 
 tag=error
@@ -30,3 +31,4 @@ compilehelp==
 feedback==
 **print** est une fonction en python3 il faut lui fournir ces paramêtres entre paranthèses.
 ==
+

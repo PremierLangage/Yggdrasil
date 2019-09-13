@@ -1,7 +1,8 @@
+# Boris Jabot 11/09/2019 OK
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
 name= Function Voyelles
-title=None
+title=Function Voyelles
 piste=verte
 extends=/ComputerScience/python/template/pltest.pl
 text==
@@ -27,4 +28,5 @@ pltest==
 >>> voyelles("zrt&(§ç&!'§(&!'è(ç")
 0
 ==
+
 

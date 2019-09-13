@@ -1,3 +1,4 @@
+# OCE : test 11/09/2019 KO
 
 author=DR
 title= Initialisation d'une variable.
@@ -21,6 +22,7 @@ True
 ==
 
 extends=/ComputerScience/python/template/coding.pl
+
 
 
 

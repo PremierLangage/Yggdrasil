@@ -1,3 +1,4 @@
+# Boris Jabot 11/09/2019 KO
 name=Afficher
 title=Afficher
 extends=/ComputerScience/python/python/0PLG/template.pl
@@ -32,3 +33,4 @@ pltest==
 >>> True
 True
 ==
+

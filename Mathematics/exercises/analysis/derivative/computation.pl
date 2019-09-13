@@ -19,9 +19,8 @@ Calculer la dérivée de
 $$ {{latexf}} $$
 ==
 
-input.1.virtualKeyboards = functions
-
 evaluator==
 score,_,feedback=ans_limit(answer['1'],sol)
 ==
+
 

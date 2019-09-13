@@ -18,7 +18,7 @@ feedback.success=<div class="btn-success"> Voila votre resultat : {{  evaluation
 feedback.failure=<div class="btn-danger"> Voila votre resultat : {{  evaluation }} </div>
 
 
-builder=@ /template/qcmbuilder.py
+builder=@ qcmbuilder.py
 grader=@qcm_evaluator.py
 @ /utils/sandboxio.py
 

@@ -1,3 +1,5 @@
+# OCE 10/09/2019 : KO
+
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
 name= Boites d'oeufs (Operateurs)
@@ -47,4 +49,5 @@ print( b , "boites,")
 print("et il restera ", r , "oeufs.") 
 
 ==
+
 

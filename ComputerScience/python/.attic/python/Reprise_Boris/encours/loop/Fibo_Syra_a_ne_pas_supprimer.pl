@@ -1,4 +1,4 @@
-
+# OCE 10/09/2019 : KO
 
     """ difficulté 4 """
     fbRk = randint(70, 100)
@@ -42,3 +42,4 @@
 
     text.append(enonces4[roulette][0])
     code.append(enonces4[roulette][1])
+

@@ -25,7 +25,7 @@ doc==
     bad==
     La terre est plate 
     Le soleil tourtne autour de la terre 
-    Les satélites de la lune sont rouges.
+    Les satellites de la lune sont rouges.
     1 est plus petit que 0
     
     ==
@@ -33,8 +33,13 @@ doc==
     
     # uncrosedfalse= True uniquement les affirmations 
     # vraies sont comptées
-    # sinon les cases non cochées et fausses sont comptabilisées aussi
+    # sinon les cases non cochées et fausses sont comptabilisées 
     uncrosedfalse= True 
+
+
+    Vous pouvez modifier ces valeur dans la balise 
+    mybuild qui sera executer avec le before
+    
 
 ==
 
@@ -51,3 +56,7 @@ grader=@qcm_evaluator.py
 @ /utils/sandboxio.py
 
 settings.allow_reroll=doit
+
+
+
+

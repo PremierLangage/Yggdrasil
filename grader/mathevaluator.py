@@ -10,31 +10,6 @@ from random import random as rd
 #rd.seed(seed)
 from utilsmath import *
 
-def process_answer(answer,dic):
-    for name,config in dic['input'].items():
-        input_type=config['type']
-        try:
-            process=import_module(input_type+'_process')
-        except:
-            pass
-        else:
-            process.process_answer(answer,name,dic['input'][name])
-
-def build_form(form_template,dic):
-    form_context={}
-    for name,config in dic['input'].items():
-        input_type=config['type']
-        if 'tags' in config:
-            for tag in config['tags'].keys():
-                tag_type=config['tags'][tag]['type']
-                tag_context={**config['tags'][tag],'name':tag}
-                with open (tag_type+'_template.html', "r") as f:
-                    form_context['input_'+name+'_'+tag]=Template(f.read()).render(tag_context)
-        else:
-            input_context={**config,'name':name,'inputmode':'final'}
-            with open (input_type+'_template.html', "r") as f:
-                form_context['input_'+name]=Template(f.read()).render(input_context)
-    return Template(form_template).render({**form_context,**dic})
 
 def str_to_sympy(arg):
     if isinstance(arg,str):
@@ -80,10 +55,10 @@ def format_analysis(msg,text,n,lang):
     if msg=='warning' or msg=='retry':
         if n>1:
             format_text="""<div class="alert {}">
-  <strong>{}</strong> {} <br> Il reste {} tentatives.</div>""".format(cls,itext,text,n)
+  <strong>{}</strong> {}</div>""".format(cls,itext,text,n)
         else:
             format_text="""<div class="alert {}">
-  <strong>{}</strong> {} <br> Il reste 1 tentative.</div>""".format(cls,itext,text)
+  <strong>{}</strong> {}</div>""".format(cls,itext,text)
 
     else:
         format_text="""<div class="alert {}">
@@ -120,8 +95,6 @@ if __name__ == "__main__":
     
     dic = get_context()
     dic['answer'] = get_answers()
-    if 'input' in dic:
-        process_answer(dic['answer'],dic)
     if 'evaluator' in dic:
         dic['StopEvaluatorExec'] = StopEvaluatorExec
         for key in dic:
@@ -179,10 +152,10 @@ if __name__ == "__main__":
             else:
                 format_feedback=format_analysis('fail',feedback,0,lang)
     
-    if 'input' in dic:
-        dic['form']=dic['head']+build_form(dic['form0'],dic)
-    
     output(score,format_feedback,dic)
+
+
+
 
 
 

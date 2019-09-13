@@ -1,24 +1,34 @@
 extends = mathbasic2.pl
-@ /input/jsxgraph/template.html [jsxgraph_template.html]
-@ /input/jsxgraph/head.html [jsxgraph_head.html]
 
+drawer =: MathDrawer
 
-maxattempt = 1
-
-form ==
-{{input_1 | safe}}
+before==
 ==
 
-input.1.type = jsxgraph
-input.1.style = max-width:400px;width:80vw;max-height:400px;height:80vw;margin: 0 auto;
-input.1.boardname = board
+title==
+Math Drawer Component
+==
 
+text==
+==
 
+extracss==
+<style>
+.math-drawer-component {
+    max-width:400px;
+    width:90vw;
+    max-height:400px;
+    height:90vw;
+    margin: 0 auto;
+}
+</style>
+==
 
-
-
-
-
+form==
+<center>
+{{ drawer|component }}
+</center>
+==
 
 
 

@@ -1,3 +1,4 @@
+# OCE : test 11/09/2019 OK
 extends=/ComputerScience/python/template/pltest.pl
 @ /builder/before.py [builder.py]
 
@@ -19,3 +20,4 @@ pltest="""
 True
 """.format(var, type_var)
 ==
+

@@ -1,12 +1,28 @@
 title = Inégalités
 
 introduction ==
-- Résoudre une inéquation du premier degré.
+Objectifs :
+
+- Résoudre une inéquation du premier degré, un système d'inéquation du premier degré.
+- Résoudre une inéquation produit ou quotient.
 - Encadrer une somme, une différence, un produit.
-- Résoudre une équation, une inéquation produit ou quotient, à l’aide d’un tableau de signes.
 ==
 
-@ /Mathematics/exercises/algebra/elementary_algebra/fraction/simplify_fraction_small.pl
+@ /Mathematics/exercises/algebra/elementary_algebra/inequalities/linineq_constant.pl
+
+@ /Mathematics/exercises/algebra/elementary_algebra/inequalities/syslineq_constant.pl
+
+@ /Mathematics/exercises/algebra/elementary_algebra/inequalities/prodquot_inequation_prod_int.pl
+
+@ /Mathematics/exercises/algebra/elementary_algebra/inequalities/prodquot_inequation_prod_rat.pl
+
+@ /Mathematics/exercises/algebra/elementary_algebra/inequalities/prodquot_inequation_quot_int.pl
+
+@ /Mathematics/exercises/algebra/elementary_algebra/inequalities/prodquot_inequation_quot_rat.pl
+
+@ /Mathematics/exercises/algebra/elementary_algebra/inequalities/bound_affine.pl
+
+@ /Mathematics/exercises/algebra/elementary_algebra/inequalities/bound_mul_sign_constant.pl
 
 
 

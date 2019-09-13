@@ -1,5 +1,4 @@
-
- 
+# OCE : test 11/09/2019 OK
  
  # The template default will not be neccessary in the futur 
 extends=/template/default.pl
@@ -33,6 +32,7 @@ background-size: contain;
 
 
  
+
 
 
 

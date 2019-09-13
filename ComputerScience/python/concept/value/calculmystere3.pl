@@ -1,3 +1,5 @@
+# OCE : test 11/09/2019 OK
+
 title=Calcul Mystere III
 
 
@@ -68,6 +70,7 @@ else:
         except :
             grade= False,'<div class="btn-danger"> Formule Incorrecte </div>'
 ==
+
 
 
 

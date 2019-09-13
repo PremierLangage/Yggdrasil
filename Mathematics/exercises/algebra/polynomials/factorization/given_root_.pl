@@ -5,6 +5,9 @@ title = Factorisation
 lang = fr
 
 before ==
+keyboards_JSON['virtualKeyboards']="elementary"
+input1.config = keyboards_JSON
+
 var('x')
 
 q,r,s=list_randint_norep(3,1,5,[0])
@@ -41,14 +44,21 @@ $$P(x)= {{expr}}$$
 en remarquant que $% P({{x1_tex}})=0 %$.
 ==
 
+input1.config %=
+{
+    "virtualKeyboards": "elementary"
+}
+==
+
 evaluator==
 var('x')
-score,error,feedback=ans_poly_factor(answer['1'],sol,x)
+score,error,feedback=ans_poly_factor(input1.value,sol,x)
 ==
 
 solution ==
-{{sol_text}}
+Une factorisation de cette expression est $! {{sol_tex}} !$.
 ==
+
 
 wims ==
 target= deg2ent1 deg2rat1 deg3ent2 deg3rat2 deg2noent deg2noentrat deg2norat
@@ -165,5 +175,8 @@ Factoriser le polynôme \(P(x)=\poly\).<br class="spacer"/>
 \answer{}{\polyrep}{type=raw}{option=noanalyzeprint}
 \text{polyrep=wims(rawmath \polyrep)}
 ==
+
+
+
 
 

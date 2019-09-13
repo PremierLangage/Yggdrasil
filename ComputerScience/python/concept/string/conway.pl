@@ -1,3 +1,5 @@
+# OCE : test 11/09/2019 KO
+
 author=Dominique Revuz
 name=Conway
 title=Conway
@@ -60,3 +62,4 @@ def conway(s):
 				compte=0
 	return res
 ==
+

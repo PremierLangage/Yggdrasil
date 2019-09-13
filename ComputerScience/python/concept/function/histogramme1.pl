@@ -1,3 +1,4 @@
+# Boris Jabot 11/09/2019 OK
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
 name=histogramme de notes
@@ -101,4 +102,5 @@ def printHistoListes(lst):
         print([18])
         print([20])
 ==
+
 

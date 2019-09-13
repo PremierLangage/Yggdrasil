@@ -5,6 +5,9 @@ title = Encadrement d'un produit
 lang = fr
 
 before ==
+keyboards_JSON['virtualKeyboards']="relations"
+input1.config = keyboards_JSON
+
 var('x,y')
 if param['sign']=="constant":
     x1,x2=randitem([sorted(list_randint_norep(2,-8,0)),sorted(list_randint_norep(2,0,8))])
@@ -58,9 +61,10 @@ if 0==z2:
 sol=[z1,s1,x*y,s2,z2]
 
 boundx=latex_ineq([x1,sx1,x,sx2,x2])
-boundy=latex_ineq([y1,sy1,x,sy2,y2])
+boundy=latex_ineq([y1,sy1,y,sy2,y2])
 
 expr=latex(x*y)
+input1.value=expr
 ==
 
 text ==
@@ -70,3 +74,5 @@ Soit $%x%$ et $%y%$ des nombres tels que $%{{boundx}} %$ et $%{{boundy}} %$. Dé
 evaluator==
 score,_,feedback=ans_chained_ineq(answer['1'],sol)
 ==
+
+

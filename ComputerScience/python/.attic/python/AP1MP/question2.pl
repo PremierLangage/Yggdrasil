@@ -1,3 +1,4 @@
+# OCE 10/09/2019 : KO
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
 
@@ -58,4 +59,5 @@ if annee % 400=0 or ( annee % 4== 0 and  not annee % 100 == 0 ) :
 
 
 ==
+
 

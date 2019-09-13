@@ -1,4 +1,4 @@
-
+# Boris Jabot 11/09/2019 OK
 extends=/ComputerScience/python/template/qcm_template.pl
 
 title=  Toto ?? 
@@ -65,4 +65,5 @@ bad==
 ==
 
 feedback=show
+
 

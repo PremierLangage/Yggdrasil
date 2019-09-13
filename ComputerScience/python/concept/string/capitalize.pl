@@ -1,3 +1,5 @@
+# OCE : test 11/09/2019 KO
+
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
 name= Camel Look 
@@ -48,4 +50,5 @@ testcode==
 l=[x.capitalize() for x in input().split()]
 print(l.pop(0).lower(),*l,sep="")
 ==
+
 

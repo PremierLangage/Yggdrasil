@@ -1,3 +1,4 @@
+# Boris Jabot 10/09/2019 KO
 author=Dominique Revuz
 
 clog=error|quoting
@@ -32,4 +33,5 @@ compilehelp==
 Essaillez entre deux groupes de 3 guillemets """
 Ou de 3 aspostrophes '''
 ==
+
 

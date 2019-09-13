@@ -1,3 +1,5 @@
+# OCE : test 11/09/2019 OK
+
 title=Calcul Mystere II
 
 extends=/ComputerScience/python/template/simpleeval.pl
@@ -60,6 +62,7 @@ except:
         grade= False,'<div class="btn-danger"> Formule Incorrecte</div>'
 
 ==
+
 
 
 

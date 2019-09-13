@@ -14,7 +14,7 @@ expression C s'évaluant dans les entiers.
 En imaginant que cette expression soit `12*2`, votre macro devra
 afficher sur la sortie standard 
 `12*2 = 24`
-et retourner à la ligne. 
+et retourner à la ligne juste derrière le dernier entier. 
     
 Pour rappel, les arguments des macros ne sont pas typé. Le
 préprocesseur ne fait que des inclusions et subistitutions. Lorsqu'une
@@ -56,4 +56,5 @@ int main(int argc, char* argv[]){
 tests==
 [["quelques expressions", "",""]] 
 ==
+
 

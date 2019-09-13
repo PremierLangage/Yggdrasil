@@ -25,9 +25,6 @@ def randomNfromlist(n,tr,fl, nbtrues):
     random.shuffle(r) # randomize order of affirmation
     return r
 
-
-
-
 if "mybuild" in globals():
     try:
         exec(mybuild,globals())
@@ -81,6 +78,7 @@ form = """<div class="input-group"><table>"""
 for i,p in enumerate(pairs):
     form += """<TR><td><input id="form_answer_"""+str(i)+"""\"  type="checkbox"  placeholder="" required>"""+p[0]+"</td></TR>"
 form += "</table></div>"
+
 
 
 

@@ -1,3 +1,4 @@
+# OCE : test 12/09/2019 KO
 
 import random
 from unidecode import unidecode
@@ -16,4 +17,5 @@ for i, c in enumerate(sentence.lower()):
       new_c = new_c.upper()
     new_sentence += new_c
 print(new_sentence)
+
 

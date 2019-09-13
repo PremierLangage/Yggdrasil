@@ -213,7 +213,8 @@ if __name__ == "__main__":
         sys.exit(1)
     
     
-    difficulty = int(dic['difficulty'])
+    difficulty = randint(1, int(dic['difficulty']))
+
     if dic['needed'] == "for":
         v = generateAleaFor(difficulty - 1)
     else:
@@ -221,12 +222,14 @@ if __name__ == "__main__":
         
     dic['text'] = v[0] + "<br/>Rappel : vous ne devez pas utiliser de boucle " + dic['taboo']
     dic['soluce'] = v[1]
-    """dic['code'] = v[1] #Si le prof désire voir le code généré de la soluce lors de l'appel du builder.py"""
-    dic['code'] = "#Ecrivez votre code ici"
+    dic['code'] = v[1] #Si le prof désire voir le code généré de la soluce lors de l'appel du builder.py"""
+    """dic['code'] = "#Ecrivez votre code ici"""
 
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
     sys.exit(0)
+
+
 
 
 

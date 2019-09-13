@@ -1,4 +1,4 @@
-
+# Boris Jabot 10/09/2019 OK
 
 
 extends=/ComputerScience/python/template/qcm_template.pl
@@ -12,6 +12,7 @@ while n >0:
 print('Fini')
 ==
 rep.1=La Boucle est infinie
+
 enonce.2==
 n=5
 while n > 0
@@ -20,6 +21,7 @@ while n > 0
 print(’Fini’)
 ==
 rep.2= Il devrait y avoir un ’:’ à la fin de l’instruction while.
+
 enonce.3==
 n=5
 when n > 0:
@@ -28,11 +30,6 @@ print(n)
      print(’Fini’)
 ==
 rep.3= L'instruction when n’est pas un mot clé du language Python.
-enonce.4==
-
-
-
-
 
 
 mybuild==
@@ -65,5 +62,7 @@ bad==
 ==
 
 feedback=show
+
+
 
 

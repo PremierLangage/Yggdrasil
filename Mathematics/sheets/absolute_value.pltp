@@ -1,10 +1,14 @@
 title = Valeur absolue
 
 introduction ==
-- Simplifier la valeur absolue d'une expression numérique ou littérale en déterminant son signe.
-- Résoudre une équation impliquant une valeur absolue.
+Objectifs :
+
+- Simplifier une valeur absolue.
+- Résoudre une équation ou une inéquation impliquant une valeur absolue.
 ==
 
-@ /Mathematics/exercises/algebra/elementary_algebra/absolute_value/simplification_number_2.pl
+@ /Mathematics/exercises/algebra/elementary_algebra/absolute_value/abs_simplification_diff_number.pl
 
-@ /Mathematics/exercises/algebra/elementary_algebra/absolute_value/equation.pl
+@ /Mathematics/exercises/algebra/elementary_algebra/absolute_value/abs_equation.pl
+
+@ /Mathematics/exercises/algebra/elementary_algebra/absolute_value/abs_inequation.pl

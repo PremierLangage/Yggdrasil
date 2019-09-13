@@ -1,3 +1,4 @@
+# OCE : test 11/09/2019 KO
 
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
@@ -26,4 +27,5 @@ except:
 ==
 
 soluce=Y a pas de méthode
+
 

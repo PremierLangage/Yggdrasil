@@ -1,0 +1,29 @@
+title = Ensembles
+
+introduction ==
+Objectifs :
+
+- Ecrire des propositions mathématiques utilisant les notions d’élément d’un ensemble et de sous-ensemble (et les symboles correspondants).
+- Effectuer des opérations élémentaires sur des ensembles finis.
+- Calculer une somme élémentaire définie avec le symbole $! \Sigma !$.
+==
+
+@ /Mathematics/exercises/foundations/sets/element_or_subset_finite_sets_symbol.pl
+
+@ /Mathematics/exercises/foundations/sets/element_or_subset_finite_sets_expr1.pl
+
+@ /Mathematics/exercises/foundations/sets/operation2_finite_sets_inter_union.pl
+
+@ /Mathematics/exercises/foundations/sets/operation1_finite_sets_diff.pl
+
+@ /Mathematics/exercises/foundations/sets/operation2_finite_sets_diff_inter_union.pl
+
+@ /Mathematics/exercises/algebra/finitesums/sigma_square.pl
+
+@ /Mathematics/exercises/algebra/finitesums/sigma_prod.pl
+
+
+
+
+
+

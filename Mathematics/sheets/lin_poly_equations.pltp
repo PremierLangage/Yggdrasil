@@ -1,0 +1,19 @@
+title = Equations linéaires et polynomiales
+
+introduction ==
+- Résoudre un système linéaire simple en utilisant des substitutions et/ou des combinaisons.
+- Résoudre une équation quadratique.
+==
+
+
+
+@ /Mathematics/exercises/algebra/linear_algebra/linear_systems/linsys_2_5_nonzero_rat.pl
+
+@ /Mathematics/exercises/algebra/linear_algebra/linear_systems/linsys_4_5_halfzero_rat.pl
+
+@ /Mathematics/exercises/algebra/polynomials/quadratic/w_or_wo_sol.pl
+
+@ /Mathematics/exercises/algebra/polynomials/quadratic/quadratic_roots_rat.pl
+
+
+

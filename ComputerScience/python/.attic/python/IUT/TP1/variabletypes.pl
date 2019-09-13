@@ -1,3 +1,5 @@
+# OCE 10/09/2019 : KO
+
 # Copyright 2017 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz
 title=Variabletypes
@@ -28,3 +30,4 @@ answer0=0
 feedback0= Bien 
 
 # Not using 0PLG grader
+

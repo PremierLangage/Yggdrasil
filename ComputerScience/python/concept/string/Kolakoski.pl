@@ -1,3 +1,5 @@
+# OCE : test 12/09/2019 KO
+
 # Copyright 2017 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
 name=Kolakoski.pl
@@ -44,3 +46,4 @@ pltest==
 	>>> cpp(cpp(cpp("11"))) # 21 1211 111221
 	"111221"
 ==
+

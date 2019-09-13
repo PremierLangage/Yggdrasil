@@ -1,3 +1,4 @@
+# Boris Jabot 10/09/2019 KO
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
 title=Conversion des str et des int
@@ -39,6 +40,7 @@ La fonction prédéfinie input retourne toujours (en python3) une chaine de cara
 
 ==
 locked=1 # je voudrais bien que le code soit vérouillé 
+
 
 
 

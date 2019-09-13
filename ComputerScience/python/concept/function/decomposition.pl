@@ -1,3 +1,4 @@
+# Boris Jabot 10/09/2019 OK
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
 name=decomposition
@@ -116,4 +117,5 @@ def decomposition(n):
 	print("*".join(ldecomposition(n)))
 
 ==
+
 

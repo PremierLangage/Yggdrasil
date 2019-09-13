@@ -1,3 +1,4 @@
+# Boris Jabot 10/09/2019 OK
 author=Dominique Revuz
 
 tag=error
@@ -29,7 +30,9 @@ print(z)
 ==
 
 plsoluce==
-Correction du Nom de variable | rien à lire
+Correction de l'erreur de compilation | rien à lire
 ==
+
+
 
 

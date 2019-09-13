@@ -1,3 +1,4 @@
+# Boris Jabot 11/09/2019 KO
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz
 name=Multiplication des chaines
@@ -40,3 +41,4 @@ Très bien, a chaque fois que vous souhaitez avoir une information pendant l'exe
 cette information.<br>
 Remarque: en python 2 les paranthèses ne sont pas nécessaire, mais garder l'habitude de les utiliser.
 ==
+

@@ -4,7 +4,7 @@ extends=/ComputerScience/python/template/qcm_template.pl
 title=Question 1
 
 
-text=Parmi les conversion suivantes, lesquelles sont licites
+text=Parmi les conversion suivantes, lesquelles sont licites (autorisées, possible).
 
 nb=4
 nbtrues=2
@@ -18,7 +18,6 @@ int('3')
 int("3")
 float('1')
 float('14.3')
-bool(0)
 ==
 
 bad==
@@ -31,5 +30,9 @@ bool("False")
 ==
 
 feedback=show
+
+
+
+
 
 

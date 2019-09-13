@@ -59,7 +59,11 @@ call
 elsif
 todo
 next
+up
+down
+run
 ==
 
 feedback=show
+
 

@@ -1,11 +1,21 @@
 title = Nombres complexes (point de vue géométrique)
 
 introduction ==
-- Représenter un nombre complexe par un point.
+- Représenter un nombre complexe par un point dans le plan complexe.
+- Calculer le module et l'argument d'un nombre complexe.
 ==
 
 @ /Mathematics/exercises/complex_numbers/affixe.pl
 
+@ /Mathematics/exercises/complex_numbers/point_arg_mod_124.pl
+
+@ /Mathematics/exercises/complex_numbers/point_arg_mod_124_neg.pl
+
 @ /Mathematics/exercises/complex_numbers/modulus.pl
+
+@ /Mathematics/exercises/complex_numbers/argument.pl
+
+
+
 
 

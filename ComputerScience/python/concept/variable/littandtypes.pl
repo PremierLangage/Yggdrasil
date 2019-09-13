@@ -1,3 +1,5 @@
+# OCE : test 11/09/2019 OK
+
 # Copyright 2017 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz
 name=Variables et Types
@@ -35,6 +37,7 @@ pltest==
 >>> type(nom) # Verification nom est de type str
 <class 'str'>
 ==
+
 
 
 

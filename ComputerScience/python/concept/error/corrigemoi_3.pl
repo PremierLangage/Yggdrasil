@@ -1,3 +1,4 @@
+# Boris Jabot 10/09/2019 KO
 author=Dominique Revuz
 
 tag=error|print
@@ -37,4 +38,5 @@ Traceback (most recent call last):
 TypeError: Can't convert 'int' object to str implicitly
 >>>
 ==
+
 
