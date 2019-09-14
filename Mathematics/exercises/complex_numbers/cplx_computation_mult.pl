@@ -4,6 +4,4 @@ title = Produit
 
 param.formulas = ["z1*z2"]
 
-input1.debug
-
 
