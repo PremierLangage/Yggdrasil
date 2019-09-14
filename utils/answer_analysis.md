@@ -1,20 +1,41 @@
 # Fonctions d'analyse des réponses
 
-Dans le modèle d'exercice `mathexpr`, la réponse de l'élève est une chaîne de caractères écrite en langage Latex et représentant une expression mathématique. 
-Le module `utilsmath` fournit des fonctions pour analyse de ce genre de réponse pour les
+Le composant `MathInput` permet à l'élève d'écrire facilement une expression mathématique complexe avec un rendu de type TeX. La valeur fournie par le composant `MathInput` est une chaîne de caractères écrite en langage LaTeX.
 
-## Analyse complète d'une réponse
+Le module `utilsmath` fournit des fonctions d'analyse pour les réponses mathématiques.
 
-Toutes les fonctions d'analyse complète de réponse ont un fonctionnement et une syntaxe similaire.
+## Syntaxe générale
+
+Toutes les fonctions d'analyse de réponse ont une syntaxe similaire.
 
 Elles prennent en paramètre :
-- la réponse brute de l'élève sous forme d'une chaîne de caractères écrite en langage Latex ;
-- un objet sympy 
+- la réponse de l'élève sous forme d'une chaîne de caractères écrite en langage LaTeX ;
+- la réponse attendue sous forme d'un objet SymPy ;
+- un certains nombre d'options.
 
 Elles renvoient trois valeurs :
 - une note comprise entre 0 et 100 ou égale à -1 ;
-- un nom indiquant le résultat de l'analyse () ;
-- un message d'analyse erreur ou d'avertissement ;
+- un code indiquant le résultat de l'analyse;
+- un message d'analyse ;
+
+~~~
+>>> from sympy import I
+
+>>> ans_complex("2i+2",2*I+2)
+(100, 'RightAnswer', '')
+
+>>> ans_complex("2\\sqrt{2}e^{\\frac{i\\pi }{4}}",2*I+2)
+(100, 'RightAnswer', '')
+
+>>> ans_complex("2i+1",2*I+2)
+(0, 'NotEqual', '')
+
+>>> ans_complex("2i+a",2*I+2)
+(-1, 'NotCplx', "Votre réponse n'est pas un nombre complexe.")
+
+>>> ans_complex("2i+(1",2*I+2)
+(-1, 2, "Votre réponse n'est pas une expression valide.")
+~~~
 
 ## Nombres
 
@@ -64,4 +85,5 @@ Cette fonction effectue les opérations suivantes :
 3. teste si `ans` est écrite comme une somme de monômes en `x` et renvoie un avertissement si ce n'est pas le cas ;
 4. teste si `ans` est égale à `sol` et renvoie une note égale à 0 si ce n'est pas le cas ;
 4. teste si les coefficients rationnels sont simplifiés et renvoie un avertissement si ce n'est pas le cas.
+
 
