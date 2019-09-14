@@ -464,10 +464,13 @@ def is_equal(a, b, modulo=0):
     """
     if a==b:
         return True
+    diff=a-b
+    if diff.is_complex:
+        diff=sp.expand_complex(diff)
     if modulo==0:
-        return sp.simplify(a-b) == 0
+        return sp.simplify(diff) == 0
     else:
-        return sp.simplify(a-b) % modulo == 0
+        return sp.simplify(diff) % modulo == 0
 
 def is_equal_struct(a, b, modulo=0):
     """
@@ -748,7 +751,7 @@ def ans_complex(strans,sol,imaginary_unit="i",form=""):
     """
     Analyze an answer of type complex number.
     """
-    local_dict={imaginary_unit:sp.I}
+    local_dict={imaginary_unit:sp.I,'e':sp.E}
     test1=[(is_complex,-1,"NotCplx","Votre réponse n'est pas un nombre complexe.")]
     if form=="cartesian":
         test1.append((is_complex_cartesian,-1,"NotCplxCartesian","Votre réponse n'est pas un nombre complexe sous forme cartésienne."))
