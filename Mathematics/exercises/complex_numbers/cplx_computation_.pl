@@ -1,11 +1,5 @@
 extends = /Mathematics/template/mathbasic.pl
 
-input1 =: MathInput
-
-form==
-{{input1|component}}
-==
-
 title = Opération sur les nombres complexes
 
 before ==
@@ -173,6 +167,7 @@ wims ==
 \text{expr=\overline{\left(\frac{1}{z}\right)}}
 \complex{rep=1/(\zb1)}
 ==
+
 
 
 
