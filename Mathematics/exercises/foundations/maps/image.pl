@@ -20,10 +20,9 @@ A_tex=latex(A)
 ==
 
 text ==
-{{fA}}
 On considère la fonction $! f : \mathbb{Z} \rightarrow \mathbb{Z} \times \mathbb{Z} !$ telle que
 $$f({{nn}},{{mm}})= {{expr_tex}}$$
-Déterminer $$ f(\\{ {{A_tex}} \\}) $$
+Déterminer $! f(\\{ {{A_tex}} \\}). !$
 ==
 
 evaluator==
