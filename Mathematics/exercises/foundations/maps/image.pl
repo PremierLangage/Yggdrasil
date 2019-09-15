@@ -27,7 +27,7 @@ Déterminer $$ f(\\{ {{A_tex}} \\}) $$
 ==
 
 evaluator==
-score,_,feedback=ans_struct_expr(input.value,fA,"set")
+score,_,feedback=ans_struct_expr(input.value,fA,"mixed")
 ==
 
 
