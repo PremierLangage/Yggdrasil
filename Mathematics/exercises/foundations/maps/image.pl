@@ -13,6 +13,10 @@ expr_tex=latex(expr)
 A=FiniteSet(1,3,4)
 f = lambda v : v +1
 g = lambda v,w : v +w
+lst=[]
+for v in A:
+    lst.append(f(v))
+
 sol = imageset(f,A)
 
 A_tex=latex(A)
