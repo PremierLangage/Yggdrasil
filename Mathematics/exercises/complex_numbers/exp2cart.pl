@@ -6,21 +6,24 @@ lang = fr
 
 before ==
 keyboards_JSON['virtualKeyboards']="complexes"
-input1.config = keyboards_JSON
+input.config = keyboards_JSON
+
 with evaluate(False):
     z=exp(I*pi/4)
 sol=expand_complex(z)
 
-latexz=latex(z)
+z_tex=latex(z)
 ==
 
-text = {{sol}} Ecrire sous forme cartésienne le nombre complexe $%\\large z= {{latexz}} %$.
+text ==
+Ecrire sous forme cartésienne le nombre complexe $! \\large {{z_tex}} !$.
+==
 
 evaluator==
-score,_,feedback=ans_complex(input1.value,z,form="cartesian")
+score,_,feedback=ans_complex(input.value,z,form="cartesian")
 ==
 
-input1.debug = True
+
 
 
 
