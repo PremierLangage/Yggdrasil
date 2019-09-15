@@ -20,5 +20,7 @@ evaluator==
 score,_,feedback=ans_complex(input1.value,z,form="cartesian")
 ==
 
+input1.debug = True
+
 
 
