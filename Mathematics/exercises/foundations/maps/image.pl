@@ -10,7 +10,7 @@ expr=n+m
 nn=latex(n)
 mm=latex(m)
 expr_tex=latex(expr)
-A=FiniteSet([(1,1),(1,2)])
+A=FiniteSet((1,1),(1,2))
 ==
 
 text ==
