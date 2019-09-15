@@ -613,7 +613,7 @@ def is_poly_factorized(expr,x,domain):
     return True
 
 def only_authorized_func(expr,authorized_func):
-    nonauthorized_func=set([type(a) for a in ans.atoms(sp.Function)]).difference(authorized_func)
+    nonauthorized_func=set([type(a) for a in expr.atoms(sp.Function)]).difference(authorized_func)
     return nonauthorized_func==set()
 
 # Answer analysis
