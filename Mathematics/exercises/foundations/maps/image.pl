@@ -8,13 +8,13 @@ before ==
 n,m=list_randitem_norep(2,symbols("n,m,p,q,r"))
 
 expr=n+m
-
+n_tex=latex(n)
 expr_tex=latex(expr)
 ==
 
 text ==
 On considère la fonction $$ f : \mathbb{N} \rightarrow \mathbb{N} \times \mathbb{N} $$ telle que
-$$f({{n}},{{m}})=\left( {{expr_tex}} \right)$$
+$$f({{n_tex}},{{m}})=\left( {{expr_tex}} \right)$$
 Calculer $$ f({{n}}) $$
 ==
 
