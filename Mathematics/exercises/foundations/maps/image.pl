@@ -11,11 +11,10 @@ nn=latex(n)
 mm=latex(m)
 expr_tex=latex(expr)
 A=FiniteSet((1,3),(4,5))
-f = lambda v : v +1
-g = lambda v,w : v +w
+f = lambda n,m : expr
 lst=[]
 for v in A:
-    lst.append(g(*v))
+    lst.append(f(*v))
 
 A_tex=latex(A)
 ==
