@@ -15,6 +15,7 @@ nbtrues = random.randint(2,3)
 nb=4
 uncrosedfalse=
 good==
+abc
 bonjour
 oui
 Ciao
@@ -33,5 +34,6 @@ good-afternoon
 ==
 
 feedback=show
+
 
 
