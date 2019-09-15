@@ -15,7 +15,7 @@ f = lambda n,m : expr
 lst=[]
 for v in A:
     lst.append(f(*v))
-
+fA=FiniteSet(*lst)
 A_tex=latex(A)
 ==
 
