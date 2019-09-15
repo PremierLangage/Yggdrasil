@@ -9,9 +9,11 @@ Vous pouvez peut être si vous ne l'avez pas fait jeter un oeil sur les template
 dans le repertoire 
 /ComputerScience/python/template/
 les templates 
-coding.pl
-pltest
 
+pltest
+qcm_template
+
+IL est necessaire d'écrire de nouveau templates avec les composants .
 
 
 
