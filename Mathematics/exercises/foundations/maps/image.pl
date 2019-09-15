@@ -10,8 +10,8 @@ expr=n+m
 nn=latex(n)
 mm=latex(m)
 expr_tex=latex(expr)
-A=FiniteSet(1,4,5)
-f = lambda x: x +1
+A=FiniteSet((1,1),(4,1),(5,3))
+f = lambda x,y: x +1
 sol = imageset(f,A)
 
 A_tex=latex(A)
