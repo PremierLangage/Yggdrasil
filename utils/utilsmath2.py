@@ -612,6 +612,10 @@ def is_poly_factorized(expr,x,domain):
             return False
     return True
 
+def only_authorized_func(expr,authorized_func):
+    nonauthorized_func=set([type(a) for a in ans.atoms(sp.Function)]).difference(authorized_func)
+    return nonauthorized_func==set()
+
 # Answer analysis
 
 ###################
@@ -782,3 +786,4 @@ def ans_poly(strans,sol,x,domain="RR",imaginary_unit="i",form=""):
         test1.append((lambda expr : is_poly_factorized(expr,x,domain),-1,"NotFactorized","Votre réponse n'est pas un polynôme factorisé."))
     test2=[]
     return ans_(strans,sol,local_dict,test1,test2)
+
