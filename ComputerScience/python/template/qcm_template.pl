@@ -50,12 +50,13 @@ feedback.success=<div class="btn-success"> Voila votre resultat : {{  evaluation
 feedback.failure=<div class="btn-danger"> Voila votre resultat : {{  evaluation }} </div>
 
 
-builder=@ /builder/before.py
+builder=@ before.py # the one in python 
 before=@ qcm_build.py
 grader=@qcm_evaluator.py
 @ /utils/sandboxio.py
 
 settings.allow_reroll=doit
+
 
 
 
