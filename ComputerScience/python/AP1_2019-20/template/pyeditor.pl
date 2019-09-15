@@ -9,7 +9,9 @@ Vous pouvez peut être si vous ne l'avez pas fait jeter un oeil sur les template
 dans le repertoire 
 /ComputerScience/python/template/
 les templates 
-coding.pl 
+coding.pl
+pltest
+
 
 
 
