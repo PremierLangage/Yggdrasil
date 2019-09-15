@@ -14,8 +14,8 @@ A=FiniteSet((1,1),(1,2))
 ==
 
 text ==
-On considère la fonction $$ f : \mathbb{Z} \rightarrow \mathbb{Z} \times \mathbb{Z} $$ telle que
-$$f({{nn}},{{mn}})=\left( {{expr_tex}} \right)$$
+On considère la fonction $! f : \mathbb{Z} \rightarrow \mathbb{Z} \times \mathbb{Z} !$ telle que
+$$f({{nn}},{{mm}})=\left( {{expr_tex}} \right)$$
 Déterminer $$ f({{A}}) $$
 ==
 
