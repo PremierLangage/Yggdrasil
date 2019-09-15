@@ -7,8 +7,6 @@ title=Nommage de variable
 text=Parmi les variables suivantes, sélectionnez celle qui ont des noms valides
 
 mybuild==
-import random
-random.seed(seed)
 nbtrues = random.randint(2,3)
 ==
 
