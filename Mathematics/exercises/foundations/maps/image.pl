@@ -15,7 +15,7 @@ f = lambda v : v +1
 g = lambda v,w : v +w
 lst=[]
 for v in A:
-    lst.append(g(v))
+    lst.append(g(*v))
 
 A_tex=latex(A)
 ==
