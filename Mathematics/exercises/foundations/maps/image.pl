@@ -10,14 +10,12 @@ expr=n+m
 nn=latex(n)
 mm=latex(m)
 expr_tex=latex(expr)
-A=FiniteSet(1,3,4)
+A=FiniteSet((1,3),(4,5))
 f = lambda v : v +1
 g = lambda v,w : v +w
 lst=[]
 for v in A:
-    lst.append(f(v))
-
-sol = imageset(f,A)
+    lst.append(g(v))
 
 A_tex=latex(A)
 ==
