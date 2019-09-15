@@ -11,7 +11,7 @@ nn=latex(n)
 mm=latex(m)
 expr_tex=latex(expr)
 A=FiniteSet((1,3),(4,5))
-f = lambda n,m : expr
+f = Lambda ( (n,m) , expr)
 lst=[]
 for v in A:
     lst.append(f(*v))
