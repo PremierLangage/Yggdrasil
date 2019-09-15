@@ -27,7 +27,7 @@ Déterminer $$ f(\\{ {{A_tex}} \\}) $$
 ==
 
 evaluator==
-score,numerror,feedback=ans_tuple_expr(answer['1'],sol)
+score,_,feedback=ans_struct_expr(input.value,fA)
 ==
 
 
