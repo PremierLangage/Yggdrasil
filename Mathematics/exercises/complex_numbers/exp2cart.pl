@@ -1,6 +1,6 @@
 extends = /Mathematics/template/mathinput.pl
 
-title = Conversion 2
+title = Conversion
 
 lang = fr
 
@@ -17,7 +17,6 @@ z_tex=latex(z)
 ==
 
 text == 
-Coucou
 Ecrire sous forme cartésienne le nombre complexe $! \\large {{z_tex}} !$.
 ==
 
