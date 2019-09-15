@@ -1,6 +1,6 @@
 extends = /Mathematics/template/mathinput.pl
 
-title = Conversion
+title = Conversion 2
 
 lang = fr
 
@@ -16,7 +16,8 @@ sol_tex=latex(sol)
 z_tex=latex(z)
 ==
 
-text ==
+text == 
+Coucou
 Ecrire sous forme cartésienne le nombre complexe $! \\large {{z_tex}} !$.
 ==
 
@@ -27,6 +28,7 @@ score,_,feedback=ans_complex(input.value,z,form="cartesian")
 solution ==
 La solution est $! {{sol_tex}} !$.
 ==
+
 
 
 
