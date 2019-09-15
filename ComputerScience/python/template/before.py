@@ -27,7 +27,7 @@ if __name__ == "__main__":
     dic = get_context()
 
     if "seed" in dic:
-        random.seed(int(seed))
+        random.seed(int(dic['seed']))
 
     if 'before' in dic:
         glob = {}
