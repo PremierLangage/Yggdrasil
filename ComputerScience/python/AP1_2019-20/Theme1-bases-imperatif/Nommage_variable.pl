@@ -1,5 +1,5 @@
 #author = Olivier Champalle
-
+# DR
 extends=/ComputerScience/python/template/qcm_template.pl
 
 title=Nommage de variable
