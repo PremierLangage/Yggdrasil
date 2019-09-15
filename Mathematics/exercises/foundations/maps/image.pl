@@ -11,7 +11,7 @@ nn=latex(n)
 mm=latex(m)
 expr_tex=latex(expr)
 A=FiniteSet(1,3,4)
-f = lambda v : v +1
+f = lambda v,y : v +1
 sol = imageset(f,A)
 
 A_tex=latex(A)
