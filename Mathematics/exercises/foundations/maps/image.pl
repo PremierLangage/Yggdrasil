@@ -11,10 +11,12 @@ nn=latex(n)
 mm=latex(m)
 expr_tex=latex(expr)
 A=FiniteSet((1,1),(1,2))
+sol = imageset(Lambda((n,m),expr),A)
 A_tex=latex(A)
 ==
 
 text ==
+{{sol}}
 On considère la fonction $! f : \mathbb{Z} \rightarrow \mathbb{Z} \times \mathbb{Z} !$ telle que
 $$f({{nn}},{{mm}})= {{expr_tex}}$$
 Déterminer $$ f(\\{ {{A_tex}} \\}) $$
