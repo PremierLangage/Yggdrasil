@@ -5,6 +5,9 @@ title = Conversion
 lang = fr
 
 before ==
+keyboards_JSON['virtualKeyboards']="complexes"
+input1.config = keyboards_JSON
+
 with evaluate(False):
     z=exp(I*pi/4)
 latexz=latex(z)
