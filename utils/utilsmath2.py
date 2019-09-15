@@ -758,7 +758,7 @@ def ans_complex(strans,sol,imaginary_unit="i",form="",authorized_func={}):
     local_dict={imaginary_unit:sp.I,'e':sp.E}
     test1=[
         (is_complex,-1,"NotCplx","Votre réponse n'est pas un nombre complexe."),
-        (lambda expr : only_athorized_func(expr,authorized_finc),-1,"UnauthorizedGunc","Votre réponse utilise des fonctions non-autorisées.")
+        (lambda expr : only_authorized_func(expr,authorized_finc),-1,"UnauthorizedGunc","Votre réponse utilise des fonctions non-autorisées.")
     ]
     if form=="cartesian":
         test1.append((is_complex_cartesian,-1,"NotCplxCartesian","Votre réponse n'est pas un nombre complexe sous forme cartésienne."))
