@@ -24,7 +24,7 @@ evaluator==
 score,_,feedback=ans_complex(input.value,z,form="cartesian")
 ==
 
-text ==
+solution ==
 La solution est $! {{sol_tex}} !$.
 ==
 
