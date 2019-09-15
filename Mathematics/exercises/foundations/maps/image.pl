@@ -1,14 +1,13 @@
-extends = /Mathematics/template/mathexpr.pl
+extends = /Mathematics/template/mathinput.pl
 
 title = Image d'une application
 
 lang = fr
 
 before ==
+n,m=list_randitem_norep(2,symbols("n,m,p,q,r"))
 
-n=randint(1,5)
-sol=(Rational(n**2/2),2*n+1)
-sol_tex=latex(sol)
+expr=a*randitem([n,(n)^2)+b*m])
 ==
 
 text ==
@@ -20,6 +19,7 @@ Calculer $$ f({{n}}) $$
 evaluator==
 score,numerror,feedback=ans_tuple_expr(answer['1'],sol)
 ==
+
 
 
 
