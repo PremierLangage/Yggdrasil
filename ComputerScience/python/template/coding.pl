@@ -1,6 +1,12 @@
 
 
+# FIXME  TODO
+# DR ne pas utiliser 
+# il rest de exos basé dessus mais ils doivent être modifiés
+
 # Template d'exercice de programmation python
+
+todo corriger ce template 
 
 grader==
 from plgrader import Grader
@@ -20,6 +26,7 @@ print(Grader().grade())
 
 # une interface standard d'exercice avec un editeur pour la réponse
 form=@ /python/form/editorform.html
+
 
 
 
