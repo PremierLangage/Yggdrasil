@@ -12,7 +12,7 @@ mm=latex(m)
 expr_tex=latex(expr)
 A=FiniteSet(1,4)
 f = lambda x: x +1
-sol = ImageSet(f,A)
+sol = ImageSet(Lambda(x,x+1),A)
 A_tex=latex(A)
 ==
 
