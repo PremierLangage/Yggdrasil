@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathexpr.pl
+extends = /Mathematics/template/mathinput.pl
 
 title = Equation quadratique
 
@@ -31,6 +31,7 @@ Déterminer les solutions (complexes) de l'équation $! {{latexP}} = 0 !$. Sépa
 evaluator==
 score,_,feedback=ans_set_complex(input1.value,lstsol,formal=False)
 ==
+
 
 
 
