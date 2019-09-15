@@ -29,7 +29,7 @@ Déterminer les solutions (complexes) de l'équation $! {{latexP}} = 0 !$. Sépa
 ==
 
 evaluator==
-score,_,feedback=ans_struct_complex(input1.value,"setwobraces",formal=False)
+score,_,feedback=ans_struct_complex(input1.value,lstsol,"setwobraces")
 ==
 
 
