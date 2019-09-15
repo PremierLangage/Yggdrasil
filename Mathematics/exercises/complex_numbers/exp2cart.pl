@@ -6,7 +6,7 @@ lang = fr
 
 before ==
 with evaluate(False):
-    z=2*exp(I*pi/3)
+    z=exp(I*pi/4)
 latexz=latex(z)
 ==
 
