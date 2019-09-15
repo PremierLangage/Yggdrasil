@@ -11,6 +11,7 @@ nn=latex(n)
 mm=latex(m)
 expr_tex=latex(expr)
 A=FiniteSet((1,1),(1,2))
+A_tex=latex(A)
 ==
 
 text ==
