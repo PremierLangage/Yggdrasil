@@ -15,7 +15,7 @@ a=input()
 if lettre in "{{MOT}}":
     print(lettre,"apparait dans {{MOT}} .")
 else:
-  print(alettre,"n'apparait pas dans {{MOT}} .")
+  print(lettre,"n'apparait pas dans {{MOT}} .")
 
 ==
 
