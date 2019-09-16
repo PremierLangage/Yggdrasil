@@ -43,7 +43,7 @@ MOT= random.choice(lst)
 
 import jinja2
 soluce= jinja2.Template(soluce).render(globals())
-code=  jinja2.Template(code).render(globals())
+code=  jinja2.Template(soluce).render(globals())
 ==
 
 
