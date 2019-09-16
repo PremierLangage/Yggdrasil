@@ -1,10 +1,13 @@
-extends = /Mathematics/template/mathexpr.pl
+extends = /Mathematics/template/mathinput.pl
 
 title = Calcul de dérivée
 
 lang = fr
 
 before ==
+keyboards_JSON['virtualKeyboards']="functions"
+input1.config = keyboards_JSON
+
 var('x')
 n=randint(1,4)
 g=randitem([sin(x),cos(x),exp(x),ln(x)])
@@ -16,11 +19,12 @@ sol=diff(f,x)
 
 text ==
 Calculer la dérivée de
-$$ {{latexf}} $$
+$$ f : x \mapsto \sqrt{x^2+1} $$
 ==
 
 evaluator==
-score,_,feedback=ans_limit(answer['1'],sol)
+score,_,feedback=ans_limit(input.value,sol)
 ==
+
 
 
