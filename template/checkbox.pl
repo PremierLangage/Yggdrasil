@@ -1,5 +1,7 @@
 extends = basic.pl
 
+title = Checkbox
+
 checkbox =: CheckboxGroup
 
 before ==
