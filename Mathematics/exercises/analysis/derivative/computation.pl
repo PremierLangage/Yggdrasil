@@ -6,7 +6,7 @@ lang = fr
 
 before ==
 keyboards_JSON['virtualKeyboards']="functions"
-input1.config = keyboards_JSON
+input.config = keyboards_JSON
 
 var('x')
 n=randint(1,4)
