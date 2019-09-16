@@ -29,7 +29,7 @@ lettre=input()
 
 text==
 Ecrivez un programme utilisant une unique variable **lettre** qui lit un seul caractère au clavier 
-et affiche s'il appartienr ou non à une suite de cractères donnee
+et affiche s'il appartienr ou non à une suite de caractères donnee
 
 ==
 
