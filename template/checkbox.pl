@@ -19,10 +19,17 @@ form ==
 ==
 
 evaluator ==
-score=100
-for i in range(len(checkbox.items)):
+n=len(checkbox.items)
+for i in range(n):
     if checkbox.items[i]['content'] in right and checkbox.items[i]['checked']:
         checkbox.items[i]['css'] = 'success-state anim-fade'
-feedback=""
+        nright+=1
+    elif checkbox.items[i]['content'] in right and not checkbox.items[i]['checked']:
+        checkbox.items[i]['css'] = 'success-state anim-fade'
+        nwrong+=1
+    elif not (checkbox.items[i]['content'] in right) and checkbox.items[i]['checked']:
+        nwrong+=1
+
+score=int(score/n*100)
 ==
 
