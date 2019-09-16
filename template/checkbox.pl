@@ -3,6 +3,8 @@ extends = basic.pl
 checkbox =: CheckboxGroup
 
 before ==
+import random as rd
+
 right = ["Paris","Amsterdam","Londres","Berlin","Madrid"]
 wrong = ["New-York","Pékin","Le Caire","Buenos-Aires","Tokyo"]
 
