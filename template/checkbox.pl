@@ -5,11 +5,15 @@ title = Checkbox
 checkbox =: CheckboxGroup
 
 right % ["Paris","Amsterdam","Londres","Berlin","Madrid"]
+
 wrong % ["New-York","Pékin","Le Caire","Buenos-Aires","Tokyo"]
+
+nbchoices % 5
+
+nbright % [2,3]
 
 before ==
 import random as rd
-
 
 choices = rd.sample(right,3)+rd.sample(wrong,2)
 rd.shuffle(choices)
@@ -27,17 +31,17 @@ form ==
 
 evaluator ==
 n=len(checkbox.items)
-nright,nwrong=0,0
+ansright,answrong=0,0
 for i in range(n):
     if checkbox.items[i]['content'] in right and checkbox.items[i]['checked']:
         checkbox.items[i]['css'] = 'success-state anim-fade'
-        nright+=1
+        ansright+=1
     elif checkbox.items[i]['content'] in right and not checkbox.items[i]['checked']:
         checkbox.items[i]['css'] = 'success-state anim-fade'
-        nwrong+=1
+        answrong+=1
     elif not (checkbox.items[i]['content'] in right) and checkbox.items[i]['checked']:
-        nwrong+=1
+        answrong+=1
 
-score=max([int((nright-nwrong)/nright*100),0])
+score=max([int((ansright-answrong)/ansright*100),0])
 ==
 
