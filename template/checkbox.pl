@@ -8,8 +8,7 @@ wrong = ["New-York","Pékin","Le Caire","Buenos-Aires","Tokyo"]
 
 choices = right
 
-for id,content in enumerate(choices):
-    checkbox.items.append({"id":str(id),"content":content})
+checkbox.items=([{"id":str(id),"content":content} for id,content in enumerate(choices)])
 
 ==
 
