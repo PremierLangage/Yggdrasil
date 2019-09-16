@@ -25,8 +25,10 @@ try:
         score=100
     else:
         score=0
+        feedback="La solution est %d." % sol
 except:
     score=-1
+    feedback="Votre réponse n'est pas compréhensible."
 ==
 
 
