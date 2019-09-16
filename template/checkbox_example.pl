@@ -12,13 +12,11 @@ right %=
 ==
 
 wrong %=
-[
-"au revoir",
+["au revoir",
 "Hi!",
 "def",
 "6hello6",
-"good-afternoon"
-]
+"good-afternoon"]
 ==
 
 nchoices % 5
