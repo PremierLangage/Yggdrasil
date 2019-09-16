@@ -30,6 +30,6 @@ for i in range(n):
     elif not (checkbox.items[i]['content'] in right) and checkbox.items[i]['checked']:
         nwrong+=1
 
-score=int((nright-nwrong)/nright*100))
+score=max([int((nright-nwrong)/nright*100),0])
 ==
 
