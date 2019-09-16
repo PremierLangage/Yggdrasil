@@ -14,6 +14,10 @@ rd.shuffle(choices)
 checkbox.items=([{"id":str(id),"content":content} for id,content in enumerate(choices)])
 ==
 
+text ==
+Sélectionner les villes européennes dans la liste suivante.
+==
+
 form ==
 {{ checkbox | component }}
 ==
