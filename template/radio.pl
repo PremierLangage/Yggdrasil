@@ -6,9 +6,7 @@ checkbox =: RadioGroup
 
 before ==
 import random as rd
-nright0=rd.choice(nright)
-nwrong0=nchoices-nright0
-choices = rd.sample(right,nright0)+rd.sample(wrong,nwrong0)
+choices = ["1",'3','4']
 rd.shuffle(choices)
 
 checkbox.items=([{"id":str(id),"content":content} for id,content in enumerate(choices)])
