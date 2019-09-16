@@ -1,5 +1,7 @@
 extends = basic.pl
 
+title = TextInput
+
 input =: Input
 input.type = text
 
