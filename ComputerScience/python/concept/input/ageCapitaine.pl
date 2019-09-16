@@ -34,7 +34,7 @@ Il n'est pas nécessaire de avoir un nom pour toutes les valeurs intermédiaires
 plsoluce==
 Test 1 |33
 Test 2 |66
-Test 4 |100000
+Test 3 |100000
 ==
 
 soluce==
