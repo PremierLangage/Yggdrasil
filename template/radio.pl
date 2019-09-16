@@ -2,37 +2,25 @@ extends = basic.pl
 
 title = Radio
 
-checkbox =: RadioGroup
+radio =: RadioGroup
 
 before ==
 import random as rd
-choices = ["1",'3','4']
-rd.shuffle(choices)
-
-checkbox.items=([{"id":str(id),"content":content} for id,content in enumerate(choices)])
+choices=rd.sample(5,list(range(50))
+sol=min(choices)
+radio.items=([{"id":str(id),"content":str(content)} for id,content in enumerate(choices)])
 ==
 
 text ==
-Sélectionner les villes européennes dans la liste suivante.
+Sélectionner le plus petit nombre de la liste suivante.
 ==
 
 form ==
-{{ checkbox | component }}
+{{ radio | component }}
 ==
 
 evaluator ==
-n=len(checkbox.items)
-ansright,answrong=0,0
-for i in range(n):
-    if checkbox.items[i]['content'] in right and checkbox.items[i]['checked']:
-        checkbox.items[i]['css'] = 'success-state anim-fade'
-        ansright+=1
-    elif checkbox.items[i]['content'] in right and not checkbox.items[i]['checked']:
-        checkbox.items[i]['css'] = 'success-state anim-fade'
-        answrong+=1
-    elif not (checkbox.items[i]['content'] in right) and checkbox.items[i]['checked']:
-        answrong+=1
+n=len(radio.items)
 
-score=max([int((ansright-answrong)/ansright*100),0])
 ==
 
