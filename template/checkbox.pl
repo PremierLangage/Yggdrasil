@@ -21,14 +21,8 @@ form ==
 evaluator ==
 score=100
 for i in range(len(component.items)):
-    if sol[i] and component.items[i]['checked']:
+    if component.items[i]['content'] in right and component.items[i]['checked']:
         component.items[i]['css'] = 'success-state anim-fade'
-    elif sol[i] and not component.items[i]['checked']:
-        component.items[i]['css'] = 'error-state anim-fade'
-        score=0
-    elif not sol[i] and component.items[i]['checked']:
-        component.items[i]['css'] = 'error-state anim-fade'
-        score=0
 feedback=""
 ==
 
