@@ -8,14 +8,15 @@ right % ["Paris","Amsterdam","Londres","Berlin","Madrid"]
 
 wrong % ["New-York","Pékin","Le Caire","Buenos-Aires","Tokyo"]
 
-nbchoices % 5
+nchoices % 5
 
-nbright % [2,3]
+nright % [2,3]
 
 before ==
 import random as rd
-
-choices = rd.sample(right,3)+rd.sample(wrong,2)
+nright0=rd.choice(nright)
+nwrong0=nchoices-nright0
+choices = rd.sample(right,nright0)+rd.sample(wrong,nwrong0)
 rd.shuffle(choices)
 
 checkbox.items=([{"id":str(id),"content":content} for id,content in enumerate(choices)])
