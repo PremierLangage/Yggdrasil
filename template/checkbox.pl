@@ -20,9 +20,9 @@ form ==
 
 evaluator ==
 score=100
-for i in range(len(component.items)):
-    if component.items[i]['content'] in right and component.items[i]['checked']:
-        component.items[i]['css'] = 'success-state anim-fade'
+for i in range(len(checkbox.items)):
+    if checkbox.items[i]['content'] in right and checkbox.items[i]['checked']:
+        checkbox.items[i]['css'] = 'success-state anim-fade'
 feedback=""
 ==
 
