@@ -11,7 +11,7 @@ extends=/ComputerScience/python/template/soluce.pl
 @ /builder/before.py [builder.py]
 
 soluce==
-a=input()
+lettre=input()
 if lettre in "{{MOT}}":
     print(lettre,"apparait dans {{MOT}} .")
 else:
