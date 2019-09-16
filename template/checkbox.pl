@@ -20,6 +20,7 @@ form ==
 
 evaluator ==
 n=len(checkbox.items)
+nright,nwrong=0,0
 for i in range(n):
     if checkbox.items[i]['content'] in right and checkbox.items[i]['checked']:
         checkbox.items[i]['css'] = 'success-state anim-fade'
