@@ -4,14 +4,6 @@ title = Checkbox
 
 checkbox =: CheckboxGroup
 
-right % ["Paris","Amsterdam","Londres","Berlin","Madrid"]
-
-wrong % ["New-York","Pékin","Le Caire","Buenos-Aires","Tokyo"]
-
-nchoices % 5
-
-nright % [2,3]
-
 before ==
 import random as rd
 nright0=rd.choice(nright)
