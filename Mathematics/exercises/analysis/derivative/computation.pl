@@ -20,6 +20,7 @@ sol=diff(f,x)
 text ==
 Calculer la dérivée de
 $$ f : x \mapsto \sqrt{x^2+1} $$
+$$ $$
 ==
 
 evaluator==
