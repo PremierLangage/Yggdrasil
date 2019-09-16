@@ -13,14 +13,16 @@ extends=/ComputerScience/python/template/soluce.pl
 soluce==
 lettre=input()
 if lettre in "{{MOT}}":
-    print(lettre,"apparait dans {{MOT}} .")
+    print(lettre,"apparait dans {{MOT}}.")
 else:
-  print(lettre,"n'apparait pas dans {{MOT}} .")
+  print(lettre,"n'apparait pas dans {{MOT}}.")
 
 ==
 
 code==
 # lecture au clavier, affectation
+# __ apparait dans {{MOT}}.
+# __ n'apparait pas dans {{MOT}}.")
 lettre=input()
 
 ==
