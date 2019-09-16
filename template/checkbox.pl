@@ -6,10 +6,10 @@ before ==
 right = ["Paris","Amsterdam","Londres","Berlin","Madrid"]
 wrong = ["New-York","Pékin","Le Caire","Buenos-Aires","Tokyo"]
 
-choices = right
+choices = rd.sample(right,3)+rd.sample(wrong,2)
+rd.shuffle(choices)
 
 checkbox.items=([{"id":str(id),"content":content} for id,content in enumerate(choices)])
-
 ==
 
 form ==
