@@ -15,7 +15,7 @@ checkbox.items=([{"id":str(id),"content":content} for id,content in enumerate(ch
 ==
 
 form ==
-{{ checkbox |component }}
+{{ checkbox | component }}
 ==
 
 evaluator ==
