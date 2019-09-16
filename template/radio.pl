@@ -6,7 +6,7 @@ radio =: RadioGroup
 
 before ==
 import random as rd
-choices=rd.sample(5,[1,4,5,5,9,0])
+choices=rd.sample(list(range(50)),5)
 sol=min(choices)
 radio.items=([{"id":str(id),"content":str(content)} for id,content in enumerate(choices)])
 ==
