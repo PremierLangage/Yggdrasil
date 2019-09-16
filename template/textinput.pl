@@ -20,12 +20,12 @@ form ==
 
 evaluator ==
 try:
+    score=0
     n=int(input.value)
     if n==sol:
         score=100
-    else:
-        score=0
 except:
     score=-1
 ==
+
 
