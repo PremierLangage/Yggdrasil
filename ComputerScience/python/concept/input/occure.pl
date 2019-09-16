@@ -12,10 +12,10 @@ extends=/ComputerScience/python/template/soluce.pl
 
 soluce==
 a=input()
-if a in "{{MOT}}":
-    print(a,"apparait dans {{MOT}} .")
+if lettre in "{{MOT}}":
+    print(lettre,"apparait dans {{MOT}} .")
 else:
-  print(a,"n'apparait pas dans {{MOT}} .")
+  print(alettre,"n'apparait pas dans {{MOT}} .")
 
 ==
 
