@@ -34,7 +34,7 @@ set_tex=data[lst[isol]][0]
 diagram.script = script % data[lst[isol]][1]
 solid=str(isol)
 ==
-radio.debug = True
+
 script ==
 JXG.joinCurves = function(board, parents, attributes) {
 var curves = parents, 
@@ -163,3 +163,4 @@ diagram.attributes %=
     "Grid": false
   }
 ==
+
