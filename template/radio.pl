@@ -22,7 +22,7 @@ form ==
 evaluator ==
 n=len(radio.items)
 ==
-
+radio.debug = True
 evaluator ==
 if radio.items[radio.selection]['content']==str(sol):
     score=100
