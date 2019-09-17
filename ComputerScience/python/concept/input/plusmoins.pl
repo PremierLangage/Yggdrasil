@@ -38,7 +38,15 @@ print(randint(3,7)+4)
 print(randint(3,7)+4)
 ==
 
-plsoluce==
+mplsoluce0==
+Test1
+12
+3
+14
+5
+==
+
+soluce==
 a=int(input())
 b=int(input())
 c=int(input())
