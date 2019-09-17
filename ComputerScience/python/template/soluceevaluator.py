@@ -47,7 +47,7 @@ if __name__ == "__main__":
                 mpvalue=dic['name'].split("\n")
             else:
                 continue
-            letest.append(mpvalue[0],"\n".join(mpvalue[1:]))
+            lestest.append(mpvalue[0],"\n".join(mpvalue[1:]))
     student = get_answers()['answer']
     with open("student.py","w") as sf:
         sf.write(student)
