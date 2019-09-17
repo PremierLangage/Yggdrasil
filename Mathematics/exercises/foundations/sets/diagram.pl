@@ -29,7 +29,7 @@ set_tex=data[lst[isol]][0]
 drawer.script = script % data[lst[isol]][1]
 ==
 
-extracss==
+extracsss==
 <style>
 .math-drawer-component {
     max-width:300px;
