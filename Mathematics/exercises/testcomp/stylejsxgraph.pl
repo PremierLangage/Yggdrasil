@@ -12,7 +12,7 @@ drawer.attributes %=
       6,
       -6
     ],
-    "showNavigation": false
+    "showNavigation": true
   }
 ==
 
@@ -43,4 +43,5 @@ extrajs==
 evaluator==
 grade = (100, 'Bonne réponse');
 ==
+
 
