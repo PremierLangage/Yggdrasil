@@ -33,12 +33,21 @@ if __name__ == "__main__":
         with open("soluce.py","w") as sol:
             sol.write(dic['soluce'])
     lestest=[]
-    for i,line in enumerate(dic['plsoluce'].split("\n")):
-        if line != "" : # problem with finishing empty line
-            if len(line.split('|')) != 2 :
-                print(" to many | ",len(line.split('|')) ,"in test line ",i,": ", str(beurkl), file=sys.stderr)
-                sys.exit(1)
-            lestest.append(line.split('|'))
+    if "plsoluce" in dic:
+        for i,line in enumerate(dic['plsoluce'].split("\n")):
+            if line != "" : # problem with finishing empty line
+                if len(line.split('|')) != 2 :
+                    print(" to many | ",len(line.split('|')) ,"in test line ",i,": ", str(beurkl), file=sys.stderr)
+                    sys.exit(1)
+                lestest.append(line.split('|'))
+    else:
+        for u in range(0,10): # FIXME IF U >10
+            name = "mplsoluce"+str(u)
+            if name  in dic:
+                mpvalue=dic['name'].split("\n")
+            else:
+                continue
+            letest.append(mpvalue[0],"\n".join(mpvalue[1:]))
     student = get_answers()['answer']
     with open("student.py","w") as sf:
         sf.write(student)
