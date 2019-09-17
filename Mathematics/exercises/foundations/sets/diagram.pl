@@ -157,7 +157,7 @@ JXG.joinCurves(board,[arcA12,arcC2,arcB21],{strokeWidth:0,fillColor:'yellow',fil
 ==
 
 text ==
-Quel ensemble est représenté sur le diagramme ci-dessus ?
+Quel ensemble est représenté sur le diagramme ci-dessous ?
 {{ drawer|component }}
 ==
 
