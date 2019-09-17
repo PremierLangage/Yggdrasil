@@ -1,10 +1,6 @@
 extends = /Mathematics/template/mathdragdrop.pl
 
-
 title = Elément et sous-ensemble
-
-text ==
-==
 
 before==#|python|
 relation=param['relation']
@@ -79,6 +75,7 @@ form ==
 {% endfor %}
 </ul>
 ==
+
 
 
 
