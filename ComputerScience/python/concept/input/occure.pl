@@ -41,6 +41,7 @@ import random
 
 lst=["aeiouy","abcxyz","python","=+$-*:"]
 MOT= random.choice(lst)
+a=MOT
 
 import jinja2
 soluce= jinja2.Template(soluce).render(globals())
@@ -54,6 +55,7 @@ Test 2 |i
 Test 3 |n
 Test 4 |+
 ==
+
 
 
 
