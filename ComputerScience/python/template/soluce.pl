@@ -14,14 +14,13 @@ doc==
 
 pour avoir une entrée multi ligne 
 
-mplsoluce0==
-Nom du test 
-entrée
-sur 
-plusieurs 
-lignes
-==
-
+    mplsoluce0==
+    Nom du test 
+    entrée
+    sur 
+    plusieurs 
+    lignes
+    ==
 
 
 ==
