@@ -54,7 +54,18 @@ Test géniale super à la confnod
 5111
 ==
 
-
+code==
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+print(a)
+print(b)
+print(c)
+print(d)
+s=a+b+c+d
+print("somme = %d , moyenne = %f" % (s,s/4) )
+==
 
 soluce==
 a=int(input())
