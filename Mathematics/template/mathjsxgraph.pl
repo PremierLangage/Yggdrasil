@@ -1,4 +1,4 @@
-extends = mathbasic2.pl
+extends = mathbasic.pl
 
 drawer =: MathDrawer
 
@@ -29,6 +29,7 @@ form==
 {{ drawer|component }}
 </center>
 ==
+
 
 
 
