@@ -11,7 +11,7 @@ nwrong0=nchoices-nright0
 choices = rd.sample(right,nright0)+rd.sample(wrong,nwrong0)
 rd.shuffle(choices)
 
-checkbox.items=([{"content":content} for id,content in enumerate(choices)])
+checkbox.items=([{"id":str(id),"content":content} for id,content in enumerate(choices)])
 ==
 
 text ==
