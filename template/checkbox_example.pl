@@ -1,7 +1,7 @@
 extends = checkbox.pl
 
 right %=
-["abc",
+["$$\in$$",
 "bonjour",
 "oui",
 "Ciao",
