@@ -1,5 +1,8 @@
 author=IGM
 
+# TODO
+@ [root]/graders/ap1_soluce.py  [grader.py]
+
 title=Echange de deux variables
 
 text==
@@ -12,5 +15,6 @@ Attention, votre programe doit fonctionner quelles que soient les valeurs initia
 code=:codeEditor
 
 form==
-
+{{ code|component }}
 ==
+
