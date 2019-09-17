@@ -7,12 +7,12 @@ drawer =: MathDrawer
 drawer.attributes %=
 {
     "boundingbox": [
-      -6,
-      6,
-      6,
-      -6
+      -4,
+      4,
+      4,
+      -4
     ],
-    "showNavigation": true
+    "showNavigation": false
   }
 ==
 
