@@ -1,4 +1,4 @@
-extends = mathbasic2.pl
+extends = mathbasic.pl
 
 
 drop1 =: DragDrop
@@ -30,6 +30,7 @@ for i in range(n):
         score=0
         drop[i].css = "error-state anim-flip" 
 ==
+
 
 
 
