@@ -1,7 +1,7 @@
 # Boris Jabot 11/09/2019 KO
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
-title=Manipulation de Nombre
+title=Manipulation de nombres
 name= a+b+c+d
 tag=input|print
 extends=/ComputerScience/python/python/0PLG/soluce.pl
