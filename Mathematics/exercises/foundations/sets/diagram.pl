@@ -30,6 +30,7 @@ radio.items = choices
 isol=randint(0,3)
 set_tex=data[lst[isol]][0]
 diagram.script = script % data[lst[isol]][1]
+solid=str(isol)
 ==
 
 script ==
