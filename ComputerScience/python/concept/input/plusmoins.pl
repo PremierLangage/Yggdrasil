@@ -38,7 +38,6 @@ print(randint(3,7)+4)
 print(randint(3,7)+4)
 ==
 
-soluce==
 a=int(input())
 b=int(input())
 c=int(input())
