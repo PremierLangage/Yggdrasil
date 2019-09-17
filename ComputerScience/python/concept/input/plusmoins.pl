@@ -46,6 +46,16 @@ Test1
 5
 ==
 
+mplsoluce1==
+Test géniale super à la confnod
+12
+3333
+1411
+5111
+==
+
+
+
 soluce==
 a=int(input())
 b=int(input())
