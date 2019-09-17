@@ -35,5 +35,6 @@ for item in checkbox.items:
         answrong+=1
 
 score=max([int((ansright-answrong)/ansright*100),0])
+feedback=str(score)
 ==
 
