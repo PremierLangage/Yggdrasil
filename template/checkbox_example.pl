@@ -3,12 +3,7 @@ extends = checkbox.pl
 right %=
 ["$$ \\in $$",
 "bonjour",
-"oui",
-"Ciao",
-"NON",
-"byeBye7",
-"_upem_",
-"good_morning"]
+"oui"]
 ==
 
 wrong %=
