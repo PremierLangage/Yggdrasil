@@ -5,7 +5,7 @@ right %=
 "bonjour",
 "oui"]
 ==
-
+checkbox.debug=True
 wrong %=
 ["au revoir",
 "Hi!",
