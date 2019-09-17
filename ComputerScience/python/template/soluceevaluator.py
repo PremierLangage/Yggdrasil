@@ -42,12 +42,11 @@ if __name__ == "__main__":
                 lestest.append(line.split('|'))
     else:
         for u in range(0,10): # FIXME IF U >10
-            name = "mplsoluce"+str(u)
-            if name  in dic:
-                mpvalue=dic['name'].split("\n")
+            xname = "mplsoluce"+str(u)
+            if xname  in dic:
+                mpvalue=dic[xname].split("\n")
             else:
                 continue
-            lestest.append((" ".join(mpvalue),"1\n2\n2\n2\n2\n2\n2"))
             lestest.append([mpvalue[0],"\n".join(mpvalue[1:])])
     student = get_answers()['answer']
     with open("student.py","w") as sf:
