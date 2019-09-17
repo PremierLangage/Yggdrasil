@@ -12,7 +12,7 @@ evaluator ==
 n=len(radio.items)
 score=0
 for item in radio.items:
-    if item['content']==sol:
+    if item['id']==solid:
         item['css'] = 'success-state anim-fade'
         if item['id']==radio.selection:
             score=100
