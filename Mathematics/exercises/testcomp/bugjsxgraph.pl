@@ -16,7 +16,9 @@ drawer.attributes %=
       1.25,
       -1.25
     ],
-    "showNavigation": false
+    "showNavigation": false,
+    "Axis": false,
+    "Grid": false
   }
 ==
 
