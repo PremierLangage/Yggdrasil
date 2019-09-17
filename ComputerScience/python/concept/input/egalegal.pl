@@ -10,7 +10,7 @@ text==
 
 # Operateur de comparaison 
 
-L'opérateur = est utilisé pour l'opération d'affectation pour l'opérateur de comparaison ce caractère est doublé.
+L'opérateur = est utilisé pour l'opération d'affectation, pour l'opérateur de comparaison ce caractère est doublé (==).
 
 
 
@@ -47,4 +47,5 @@ if not a != b :
 else:
 	print(" les deux valeurs entrées ne sont pas égales ")
 ==
+
 
