@@ -51,7 +51,8 @@ code=  jinja2.Template(code).render(globals())
 plsoluce==
 Test 1 |a
 Test 2 |i
-Test 3 |m
+Test 3 |n
+Test 4 |+
 ==
 
 
