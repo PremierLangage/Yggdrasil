@@ -21,7 +21,9 @@ le programme affiche :
 == 
 
 feedback==
-
+Bravo
+==
+fff==
 Deux solutions :<br>
 	print("somme = ",somme," , moyenne = " ,moyenne)<br>
 ou la syntaxe avec % mais attention c'est un float<br>
