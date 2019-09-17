@@ -9,9 +9,6 @@ title==
 Math Drawer Component
 ==
 
-text==
-==
-
 extracss==
 <style>
 .math-drawer-component {
