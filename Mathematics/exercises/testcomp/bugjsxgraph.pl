@@ -11,13 +11,25 @@ drawer =: MathDrawer
 drawer.attributes %=
 {
     "boundingbox": [
-      -4,
-      4,
-      4,
-      -4
+      -1.25,
+      1.25,
+      1.25,
+      -1.25
     ],
     "showNavigation": false
   }
+==
+
+extracss==
+<style>
+.math-drawer-component {
+    max-width:400px;
+    width:90vw;
+    max-height:400px;
+    height:90vw;
+    margin: 0 auto;
+}
+</style>
 ==
 
 drawer.script ==
