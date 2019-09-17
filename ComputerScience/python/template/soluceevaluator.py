@@ -23,8 +23,8 @@ if __name__ == "__main__":
 
 
     dic = get_context()
-    if "plsoluce" not in dic:
-        print("No plsoluce in dic  necessary for this template " , file=sys.stderr)
+    if "plsoluce" not in dic or "mplsoluce0" not in dic :
+        print("No plsoluce or mplsoluce0 in dic  necessary for this template " , file=sys.stderr)
         sys.exit(1)
     if "soluce" not in dic and not os.exist("soluce.py"):
         print("No soluce or file soluce.py  necessary for this template " , file=sys.stderr)
@@ -48,6 +48,7 @@ if __name__ == "__main__":
 
 
     output(ret, fb.render())
+
 
 
 
