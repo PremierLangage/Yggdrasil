@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathjsxgraph.pl
+extends = /Mathematics/template/mathradio.pl
 
 title = Diagramme
 
@@ -29,35 +29,7 @@ for i in range(5):
 component.items = choices
 isol=randint(0,3)
 set_tex=data[lst[isol]][0]
-drawer.script = script % data[lst[isol]][1]
-==
-
-extracss==
-<style>
-.math-drawer-component {
-    max-width:300px;
-    width:90vw;
-    max-height:300px;
-    height:90vw;
-    margin: 0 auto;
-}
-</style>
-==
-
-drawer.disabled % true
-
-drawer.attributes %=
-{
-    "boundingbox": [
-      -3.5,
-      3.5,
-      3.5,
-      -3.5
-    ],
-    "showNavigation": false,
-    "Axis": false,
-    "Grid": false
-  }
+diagram.script = script % data[lst[isol]][1]
 ==
 
 script ==
@@ -158,22 +130,33 @@ JXG.joinCurves(board,[arcA12,arcC2,arcB21],{strokeWidth:0,fillColor:'yellow',fil
 
 text ==
 Quel ensemble est représenté sur le diagramme ci-dessous ?
-{{ drawer|component }}
+{{ diagram |component }}
 ==
 
-component =: RadioGroup
-
-form==
-{{ component|component }}
+extracss==
+<style>
+.math-drawer-component {
+    max-width:300px;
+    width:90vw;
+    max-height:300px;
+    height:90vw;
+    margin: 0 auto;
+}
+</style>
 ==
 
-evaluator ==
-if component.selection==str(isol):
-    score=100
-else:
-    score=0
-feedback=""
+diagram.disabled % true
+
+diagram.attributes %=
+{
+    "boundingbox": [
+      -3.5,
+      3.5,
+      3.5,
+      -3.5
+    ],
+    "showNavigation": false,
+    "Axis": false,
+    "Grid": false
+  }
 ==
-
-
-
