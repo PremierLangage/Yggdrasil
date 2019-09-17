@@ -23,7 +23,6 @@ form ==
 ==
 
 evaluator ==
-n=len(checkbox.items)
 ansright,answrong=0,0
 for item in checkbox.items:
     if item['content'] in right and item['checked']:
