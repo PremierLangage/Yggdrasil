@@ -4,7 +4,7 @@ author=Dominique Revuz
 tag=error
 title= Corrige Moi !
 name= Mówisz po polsku ?
-extends=/ComputerScience/python/template/coding.pl
+extends=/ComputerScience/python/template/soluce.pl
 text==
 
 Le programme python si dessous contient une erreur corrigez la pour passer à l'exercice suivant.
@@ -31,4 +31,5 @@ compilehelp==
 feedback==
 **print** est une fonction en python3 il faut lui fournir ces paramêtres entre paranthèses.
 ==
+
 
