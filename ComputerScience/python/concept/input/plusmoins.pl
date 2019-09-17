@@ -4,7 +4,7 @@ author=Dominique Revuz
 title=Manipulation de nombres
 name= a+b+c+d
 tag=input|print
-extends=/ComputerScience/python/python/0PLG/soluce.pl
+extends=/ComputerScience/python/template/soluce.pl
 
 text==
 # input print 
