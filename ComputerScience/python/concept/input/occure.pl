@@ -10,7 +10,7 @@ extends=/ComputerScience/python/template/soluce.pl
 
 @ /builder/before.py [builder.py]
 
-soluce==
+soluce==  
 lettre=input()
 if lettre in "{{MOT}}":
 	print(lettre,"apparait dans {{MOT}}.")
@@ -38,6 +38,8 @@ et affiche s'il appartienr ou non à la suite {{MOT}}
 before==
 
 import random 
+
+lst=["aeiouy","abcxyz","python","=+$-*:"]
 MOT= random.choice(lst)
 
 import jinja2
