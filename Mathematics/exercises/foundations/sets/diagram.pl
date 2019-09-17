@@ -15,6 +15,9 @@ data=[
 ["(A \cup B) \setminus C",(0,1,0,0,1,1,0)],
 ["(A \cup C) \setminus B",(0,0,1,0,1,0,1)],
 ["(B \cup C) \setminus A",(0,0,0,1,0,1,1)]
+["(A \cap B) \setminus C",(0,1,0,0,0,0,0)],
+["(A \cap C) \setminus B",(0,0,1,0,0,0,0)],
+["(B \cap C) \setminus A",(0,0,0,1,0,0,0)]
 ]
 
 lst=list_randint_norep(4,0,8)
