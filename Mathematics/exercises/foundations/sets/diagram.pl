@@ -4,6 +4,8 @@ title = Diagramme
 
 lang = fr
 
+diagram =: MathDrawer
+
 before ==
 data=[
 ["A \setminus ( B \cup C)",(0,0,0,0,1,0,0)],
