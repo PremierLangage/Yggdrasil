@@ -54,6 +54,15 @@ Test géniale super à la confnod
 5111
 ==
 
+mplsoluce5==
+Test géniale super à la confnod
+12
+3333
+1411
+5111
+==
+
+
 code==
 a=int(input())
 b=int(input())
