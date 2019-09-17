@@ -12,6 +12,17 @@ doc==
 # dont les résultats seront comparés 
 # au résultats de l'élève
 
+pour avoir une entrée multi ligne 
+
+mplsoluce0==
+Nom du test 
+entrée
+sur 
+plusieurs 
+lignes
+==
+
+
 
 ==
 
@@ -30,6 +41,7 @@ doc==
 form=@ /python/form/editorform.html
 
 settings.allow_reroll=1
+
 
 
 
