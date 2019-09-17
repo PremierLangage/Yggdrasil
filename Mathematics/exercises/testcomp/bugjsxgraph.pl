@@ -8,6 +8,18 @@ before =
 
 drawer =: MathDrawer
 
+drawer.attributes %=
+{
+    "boundingbox": [
+      -4,
+      4,
+      4,
+      -4
+    ],
+    "showNavigation": false
+  }
+==
+
 drawer.script ==
 var grid = board.create('grid',[],{gridX:0.25,gridY:0.25});
 var Ox = board.create('axis',[[0,0],[1,0]],{ticks:{visible:false}});
