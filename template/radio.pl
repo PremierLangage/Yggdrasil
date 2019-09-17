@@ -8,7 +8,7 @@ before ==
 import random as rd
 choices=rd.sample(list(range(50)),5)
 sol=str(min(choices))
-radio.items=([{"content":str(content)} for id,content in enumerate(choices)])
+radio.items=([{"id":str(id),"content":str(content)} for id,content in enumerate(choices)])
 ==
 
 text ==
