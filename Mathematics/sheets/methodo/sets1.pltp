@@ -1,8 +1,6 @@
 title = Ensembles 1
 
 introduction ==
-Objectifs :
-
 ==
 
 @ /Mathematics/exercises/foundations/sets/element_or_subset_finite_sets_symbol.pl
@@ -24,6 +22,7 @@ Objectifs :
 @ /Mathematics/exercises/foundations/sets/product_set_to_extension.pl
 
 @ /Mathematics/exercises/foundations/sets/power_set_to_extension.pl
+
 
 
 
