@@ -55,13 +55,6 @@ form==
 
 
 evaluator ==
-x=float(drawer.points['M']['x'])
-y=float(drawer.points['M']['y'])
-from math import atan2,pi
-if abs((atan2(y,x)-angle)%(2*pi))<0.1:
-     score=100
-else:
-     score=0
-feedback=""
+grade=(100,"")
 ==
 
