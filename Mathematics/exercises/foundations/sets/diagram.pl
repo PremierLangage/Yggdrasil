@@ -20,10 +20,10 @@ data=[
 ["(B \cap C) \setminus A",(0,0,0,1,0,0,0)]
 ]
 
-lst=list_randint_norep(4,8,11)
+lst=list_randint_norep(5,0,11)
 
 choices=[]
-for i in range(4):
+for i in range(5):
     s="$! %s !$" % data[lst[i]][0]
     choices.append({"id":str(i),"content": s})
 component.items = choices
