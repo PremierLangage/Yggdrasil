@@ -33,7 +33,7 @@ def str_to_sympy(arg):
 def sympy_to_str(arg):
     if isinstance(arg,FiniteSet):
         return "_setconverted_"+str(arg.args)
-    elif isinstance(arg,(Basic,Matrix)):
+    elif isinstance(arg,(Expr,Matrix)):
         return "_converted_"+str(arg)
     elif isinstance(arg,dict):
         return {k: sympy_to_str(v) for k, v in arg.items()}
@@ -153,6 +153,7 @@ if __name__ == "__main__":
                 format_feedback=format_analysis('fail',feedback,0,lang)
     
     output(score,format_feedback,dic)
+
 
 
 
