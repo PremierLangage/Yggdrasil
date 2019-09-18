@@ -17,7 +17,7 @@ input1.config = keyboards_JSON
 lenA,lenB=randitem([[2,3],[3,2],[2,2]])
 A=rand_finiteset(lenA,list(range(10)))
 B=rand_finiteset(lenB,list(range(10)))
-sol=set(ProductSet(A,B))
+sol=ProductSet(A,B)
 sol_tex=latex(sol)
 A_tex=latex(A)
 B_tex=latex(B)
@@ -35,5 +35,6 @@ score,numerror,feedback=ans_struct_expr(input1.value,sol,"composite")
 solution ==
 La solution est $! {{sol_tex}} !$.
 ==
+
 
 
