@@ -10,7 +10,7 @@ text==
 
 Utilisons la fonction **print** pour faire un affichage.
 
-Testez l'affichage deu code suivant:
+Testez l'affichage du code suivant:
 
 	print("+" * 3)
 
@@ -41,4 +41,5 @@ Très bien, a chaque fois que vous souhaitez avoir une information pendant l'exe
 cette information.<br>
 Remarque: en python 2 les paranthèses ne sont pas nécessaire, mais garder l'habitude de les utiliser.
 ==
+
 
