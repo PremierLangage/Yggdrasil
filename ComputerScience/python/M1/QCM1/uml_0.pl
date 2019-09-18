@@ -10,7 +10,7 @@ Veuillez indiquer la relation définie dans le scéma suivant
 nb=4
 
 mybuild==
-nbtrues=4
+nbtrues=1
 ==
 
 
@@ -26,5 +26,6 @@ Association
 Agrégation
 Dépendance
 ==
+
 
 
