@@ -1,6 +1,6 @@
 
 extends=/ComputerScience/python/template/qcm_template.pl
-title=Exercice 0
+title= Les Liens en UML
 text==
 Veuillez indiquer la relation définie dans le scéma suivant
 
