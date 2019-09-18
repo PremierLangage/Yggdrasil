@@ -1,7 +1,7 @@
 # Boris Jabot 10/09/2019 OK
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
-author=Dominique Revuz 
-title=L'éponge Carrée
+author=l'équipe de l'UPEM vous propose des exercices
+title=Une fonction carré 
 
 tag=function # N'oubliez pas de remplir ce champs svp
 extends=/ComputerScience/python/template/pltest.pl
@@ -25,5 +25,6 @@ def carre(n):
     return n*6
 ==
 editor.height=145
+
 
 
