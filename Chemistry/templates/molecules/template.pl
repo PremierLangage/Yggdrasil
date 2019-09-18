@@ -8,6 +8,7 @@ delimiter=;
 dimension=120
 
 title =
+text=
 
 style=@template.css
 script=@template.js
