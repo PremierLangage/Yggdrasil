@@ -18,7 +18,7 @@ lenA,lenB=randitem([[2,3],[3,2],[2,2]])
 A=rand_finiteset(lenA,list(range(10)))
 B=rand_finiteset(lenB,list(range(10)))
 sol=list(ProductSet(A,B))
-sol_tex=latex(str(*sol))
+sol_tex=str(*sol)
 A_tex=latex(A)
 B_tex=latex(B)
 ==
