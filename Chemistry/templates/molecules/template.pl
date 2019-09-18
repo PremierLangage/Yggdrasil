@@ -7,6 +7,7 @@ builder=@/builder/before.py
 delimiter=;
 dimension=120
 
+title =
 
 style=@template.css
 script=@template.js
@@ -35,6 +36,7 @@ while True:
 ==
 
 form=@template.html
+
 
 
 
