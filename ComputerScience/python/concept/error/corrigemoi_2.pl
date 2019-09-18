@@ -37,3 +37,5 @@ message='Je connais '+ nb + ' langages de programmation'
 print(message)
 
 ==
+plsoluce==
+t | 2
