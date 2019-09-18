@@ -31,5 +31,9 @@ compilehelp==
 feedback==
 **print** est une fonction en python3 il faut lui fournir ces paramêtres entre paranthèses.
 ==
+soluce==
+nb=input('Entrer un nombre:')
+message='Je connais '+ nb + ' langages de programmation'
+print(message)
 
 
