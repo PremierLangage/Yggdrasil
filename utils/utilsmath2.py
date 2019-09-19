@@ -751,7 +751,7 @@ def ans_composite_(strans,Sol,local_dict,test1,test2):
     except:
         return (-1,"NotValidExpr","Votre réponse n'est pas une expression valide.")        
     if duplicates(ans):
-        return (-1,"Duplicates","Il y a des doublons dans un des ensembles.")
+        return (-1,"Duplicates","Il y a des doublons dans un ensemble.")
     if not is_equal_struct(ans,sol):
         return (0,"NotEqual","")
     return (100,"","")
