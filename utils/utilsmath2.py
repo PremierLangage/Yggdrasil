@@ -587,6 +587,18 @@ def is_complex_cartesian(expr):
     nr=sum([a.is_real for a in args])
     return ni<=1 and ni+nr==len(args)
 
+def is_complex_exponential(expr):
+    """
+    Check if a complex number is in exponential form.
+    """
+    args=arg_mul_flatten(expr)
+    if is_e_i_theta(args[-1]):
+        for a in args[:-1]:
+            if not a.is_real or not a>0:
+                return False
+        return True
+    return False
+
 def is_poly(expr,x):
     """
     Check if an expression is a polynomial in x.
@@ -789,4 +801,5 @@ def ans_poly(strans,sol,x,domain="RR",imaginary_unit="i",form=""):
         test1.append((lambda expr : is_poly_factorized(expr,x,domain),-1,"NotFactorized","Votre réponse n'est pas un polynôme factorisé."))
     test2=[]
     return ans_(strans,sol,local_dict,test1,test2)
+
 
