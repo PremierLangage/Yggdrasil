@@ -514,6 +514,19 @@ def is_equal_tuple(p,q):
             return False
     return True
 
+def duplicates(struct)    
+    if isinstance(struct,list):
+        if len(struct)>1:
+            for i in range(len(struct)):
+                for j in range(i+1,len(struct)):
+                    if is_equal_struct(struct[i],struct[j]):
+                        return True
+    if isinstance(struct,(list,tuple)):
+        for a in struct:
+            if duplicates(a):
+                return True
+    return False
+    
 ################
 # Utils
 ################
