@@ -15,8 +15,6 @@ before==
 
 evaluator==
 
-
-
 grade=(100," bravo")
 
 
