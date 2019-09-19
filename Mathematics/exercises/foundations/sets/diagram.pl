@@ -1,6 +1,6 @@
 extends = /Mathematics/template/mathradio.pl
 
-title = Diagramme
+title = Représentation des opérations sur un diagramme
 
 lang = fr
 
@@ -163,4 +163,5 @@ diagram.attributes %=
     "Grid": false
   }
 ==
+
 
