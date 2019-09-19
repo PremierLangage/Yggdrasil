@@ -1,7 +1,8 @@
 extends = checkbox.pl
 
 right %=
-["$$ \\in $$",
+["good_afternoon",
+"_upem_",
 "bonjour",
 "oui"]
 ==
@@ -21,5 +22,6 @@ nright % [2,3]
 text ==
 Sélectionner les noms de variables valides en Python dans la liste suivante.
 ==
+
 
 
