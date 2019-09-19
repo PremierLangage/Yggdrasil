@@ -40,14 +40,4 @@ print("la somme de 15975 et 43242 est ", 15975+43242)
 en utilisant une virgule pour séparer les paramêtres d'appel de print.
 ==
 
-Xidden==
->>> print("la somme de 15975 et 43242 est "+ 15975+43242)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: Can't convert 'int' object to str implicitly
->>>
-==
-
-
-
  
