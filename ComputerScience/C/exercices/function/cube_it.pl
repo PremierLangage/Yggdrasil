@@ -19,6 +19,7 @@ editor.code==
 ==
 
 solution==
+
 void cube_it(int *p)
 {
     *p = *p * *p * *p;
@@ -27,6 +28,7 @@ void cube_it(int *p)
 ==
 
 codeafter==
+
 
 #include <stdio.h>
 #include <stdlib.h>    
@@ -37,6 +39,7 @@ int main(int argc, char* argv[]){
   printf("Cube --> %d\n",a);
   return 0;
 }
+
 ==
 
     
@@ -48,4 +51,5 @@ tests==
  ["Aléatoire", str(random.randint(1, 33)), ""]]
 
 ==
+
 
