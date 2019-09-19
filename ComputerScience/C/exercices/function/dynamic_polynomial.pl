@@ -50,7 +50,7 @@ def codeandtextpoly():
     et text dans l'énoncé 
     """
     l=[("(12 - (2 + a)*b*b*b + 7*b*c*c)" , "12 - (2 + a)b^3 + 7bc^2"),
-    ("(3.1*a*b*c - b*b*b + 5*a*a*c*c)", "3,1 abc - b^3 +5a^2c^2"),
+    ("(3*a*b*c - b*b*b + 5*a*a*c*c)", "3abc - b^3 +5a^2c^2"),
     ("(b*b-4*a*c)"," b^2-4ac"),
     ("(a*a*b*b*c*c+1)"," a^2b^2c^2 + 1"),
     ]
