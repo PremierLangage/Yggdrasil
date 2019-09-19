@@ -730,7 +730,7 @@ def ans_set_(strans,sol,brace_enclosed,local_dict,test1,test2):
             if not f(item):
                     return (score,error,feedback)
     if duplicates(ans):
-        return (-1,"Duplicates","Il y a des doublons dans votre ensemble.")
+        return (-1,"Duplicates","Il y a des doublons dans l'ensemble.")
     if not is_equal_set(ans,sol):
             return (0,"NotEqual","")
     for (f,score,error,feedback) in test2:
