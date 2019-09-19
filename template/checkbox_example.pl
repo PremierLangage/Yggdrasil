@@ -3,10 +3,14 @@ extends = checkbox.pl
 right %=
 ["good_afternoon",
 "_upem_",
+"abc",
+"Ciao",
+"NON",
+"byeBye7",
 "bonjour",
 "oui"]
 ==
-checkbox.debug=True
+
 wrong %=
 ["au revoir",
 "Hi!",
