@@ -8,9 +8,14 @@ extends=../../templates/pyeditor.pl
 
 before==
 
-author=" le grod DR" 
+author=" le gros DR" 
 
 
 ==
 
+evaluator==
 
+author=" encore lui" 
+
+
+==
