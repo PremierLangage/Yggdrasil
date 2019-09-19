@@ -17,6 +17,7 @@ double polynome(...){
 
 
 codeafter==
+
 #include <stdio.h>
 #include <stdlib.h>    
     
@@ -88,4 +89,5 @@ tests==
 ["Aléatoire", " ".join([str(random.randint(-10, 10)) for i in range(3)]), ""]]
 
 ==
+
 
