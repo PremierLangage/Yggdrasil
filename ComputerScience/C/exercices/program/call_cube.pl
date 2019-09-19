@@ -26,6 +26,7 @@ void show_cube(int n){
 ==
 
 solution==
+
 void display_info(int nb, int cube){
   printf("Le cube du nombre %d est le nombre %d.\n", nb, cube);
 }
@@ -48,7 +49,7 @@ codebefore==
 codeafter==
 
 int main(int argc, char* argv[]){
-  show_cube(argv[1]);
+  show_cube(atoi(argv[1]));
 
   return 0;
 }
