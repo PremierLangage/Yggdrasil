@@ -45,7 +45,7 @@ Si vous souhaitez faire des tests sur le code de l'élève la variable __student
 @ ./utils/pltest_doc.py
 @ ./utils/pltestgrader.py [grader.py]
 @ ./utils/feedback2.py
-@ template.html
+@ ./utils/template.html
 # 
 
 @ /utils/sandboxio.py
