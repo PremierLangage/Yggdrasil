@@ -43,8 +43,8 @@ Si vous souhaitez faire des tests sur le code de l'élève la variable __student
 ==
 
 @ ./utils/pltest_doc.py
-@ pltestgrader.py [grader.py]
-@ feedback2.py
+@ ./utils/pltestgrader.py [grader.py]
+@ ./utils/feedback2.py
 @ template.html
 # 
 
