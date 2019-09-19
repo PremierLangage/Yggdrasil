@@ -9,7 +9,7 @@ tag=program|variable
 
 type=direct
 
-builder=@/ComputerScience/C/exercices/program/code_generation.py
+builder=@ /ComputerScience/C/exercices/program/code_generation.py
 
 consistency==
 def check_consistency(dic):
