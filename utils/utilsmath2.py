@@ -587,6 +587,16 @@ def is_complex_cartesian(expr):
     nr=sum([a.is_real for a in args])
     return ni<=1 and ni+nr==len(args)
 
+def is_e_i_theta(expr):
+    """
+    Check if .
+    """
+    if type(expr)==sp.exp:
+        return is_coeff_mul(expr.args[0],sp.I)
+    elif type(expr)==sp.Pow and expr.args[0]==sp.E:
+        return is_coeff_mul(expr.args[1],sp.I)
+    return False
+
 def is_complex_exponential(expr):
     """
     Check if a complex number is in exponential form.
