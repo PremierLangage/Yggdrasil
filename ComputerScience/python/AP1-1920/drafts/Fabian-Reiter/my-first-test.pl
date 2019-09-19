@@ -5,7 +5,7 @@ extends = ../../templates/pltest.pl
 
 title = Some title
 
-text = Blabla
+text = Bla bla
 
 pltest==
 >>> h(0) == 1
