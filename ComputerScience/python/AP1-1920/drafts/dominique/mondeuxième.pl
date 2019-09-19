@@ -19,8 +19,8 @@ qui retourne 3
 ==
 
 pltest==
->>> f() == 3000 #
-True
+>>> assert(f() == 3000) #
+
 ==
 
 
