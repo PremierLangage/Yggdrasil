@@ -9,7 +9,7 @@ tag=program|variable
 
 type=direct
 
-builder=@/exercices/program/code_generation.py
+builder=@/ComputerScience/C/exercices/program/code_generation.py
 
 consistency==
 def check_consistency(dic):
@@ -45,4 +45,5 @@ def evaluator(response, dic):
     else:
         return False, "Mauvaise réponse"
 ==
+
 
