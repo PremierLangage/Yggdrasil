@@ -1,8 +1,8 @@
 author = Marie-Pierre Béal
 
-extends = ../../templates/pltest
+extends = ../../templates/pltest.pl
 
-tile = carré
+title = carré
 
 text == 
 Ecrire une fonction f qui calcule le carré d'un entier 
