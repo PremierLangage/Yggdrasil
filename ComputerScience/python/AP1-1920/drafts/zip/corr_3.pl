@@ -19,7 +19,7 @@ print('la somme de 15975 et 43242 est '+ 15975+43242)
 
 ==
 plsoluce==
-la somme de 15975 et 43242 est  59217
+t | la somme de 15975 et 43242 est  59217
 
 ==
 
