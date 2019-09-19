@@ -53,6 +53,7 @@ def codeandtextpoly():
     ("(3*a*b*c - b*b*b + 5*a*a*c*c)", "3abc - b^3 +5a^2c^2"),
     ("(b*b-4*a*c)"," b^2-4ac"),
     ("(a*a*b*b*c*c+1)"," a^2b^2c^2 + 1"),
+    ("(5*a*a*a + 6*a*b - 7*c + 21)", "5a^3 + 6ab - 7c + 21"),
     ]
     return choice(l)
     
