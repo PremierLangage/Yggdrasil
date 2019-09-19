@@ -11,9 +11,8 @@ a=randint(1,3)
 theta=randitem([pi/4,3*pi/4,5*pi/4,7*pi/4])
 with evaluate(False):
     z=a*exp(I*theta)
+sol_tex=latex(z)
 z=expand_complex(z)
-
-sol_tex=latex(sol)
 z_tex=latex(z)
 ==
 
