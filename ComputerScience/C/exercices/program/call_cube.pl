@@ -12,6 +12,7 @@ une phrase donnant le cube de cet entier tout en rappelant cet entier (par exemp
 ==
 
 editor.code==
+
 void display_info(int nb, int cube){
   printf("Le cube du nombre %d est le nombre %d.\n", nb, cube);
 }
@@ -23,6 +24,7 @@ int calculate_cube(int nb){
 void show_cube(int n){
   /* Votre code ici... */
 }
+
 ==
 
 solution==
@@ -38,12 +40,14 @@ int calculate_cube(int nb){
 void show_cube(int n){
   display_info(n, calculate_cube(n));
 }
+
 ==
 
 codebefore==
 
 #include <stdio.h>
 #include <stdlib.h>
+
 ==
 
 codeafter==
@@ -53,6 +57,7 @@ int main(int argc, char* argv[]){
 
   return 0;
 }
+
 ==
 
 tests==
