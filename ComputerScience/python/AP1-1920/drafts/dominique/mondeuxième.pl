@@ -19,10 +19,17 @@ qui retourne 3
 ==
 
 pltest==
->>> f() == 3
+>>> f() == 3 #
 True
+==
+
+
+pltest1==
 >>> f()
 3
 ==
 
-
+component.code == 
+def f():
+    print(3)
+==
