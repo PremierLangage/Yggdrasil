@@ -589,7 +589,7 @@ def is_complex_cartesian(expr):
 
 def is_e_i_theta(expr):
     """
-    Check if .
+    Check if a complex number is an exponential.
     """
     if type(expr)==sp.exp:
         return is_coeff_mul(expr.args[0],sp.I)
