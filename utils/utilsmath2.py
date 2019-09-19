@@ -526,7 +526,7 @@ def duplicates(struct)
             if duplicates(a):
                 return True
     return False
-    
+
 ################
 # Utils
 ################
@@ -749,7 +749,9 @@ def ans_composite_(strans,Sol,local_dict,test1,test2):
     try:
         ans=str2struct(strans,local_dict)
     except:
-        return (-1,"NotValidExpr","Votre réponse n'est pas une expression valide.")
+        return (-1,"NotValidExpr","Votre réponse n'est pas une expression valide.")        
+    if duplicates(ans):
+        return (-1,"Duplicates","Il y a des doublons dans un des ensembles.")
     if not is_equal_struct(ans,sol):
         return (0,"NotEqual","")
     return (100,"","")
