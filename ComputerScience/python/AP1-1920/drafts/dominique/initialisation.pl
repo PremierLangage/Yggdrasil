@@ -6,7 +6,7 @@ extends=/ComputerScience/python/template/pltest.pl
 tag=Programmation|Python|Initialisation|Variable
 author = Christophe Callé
 
-title = 
+title = Initialisation et constantes 
 
 text=''
 before== #|python| 
@@ -21,7 +21,7 @@ True
 """.format(var, type_var)
 
 text="""
-# Initialisez
+
  la variable **{}** avec une valeur quelconque
  de type **{}** 
 """.format(var,type_var)
