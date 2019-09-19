@@ -8,7 +8,7 @@ title = Some title
 text = Bla bla
 
 pltest==
->>> h(0) == 1 #
+>>> h(0) == 1 
 True
 ==
 
