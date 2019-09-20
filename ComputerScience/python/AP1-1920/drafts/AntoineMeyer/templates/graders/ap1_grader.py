@@ -25,7 +25,7 @@ class Test:
         self.status = status
 
     def __str__(self):
-        msg = "- [OK] " if self.status else "[KO] "
+        msg = "- [OK] " if self.status else "- [KO] "
         return msg + self.title
 
 
