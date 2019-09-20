@@ -648,6 +648,22 @@ def is_complex_cartesian(expr):
     nr=sum([a.is_real for a in args])
     return ni<=1 and ni+nr==len(args)
 
+def complex_cartesian_parts(expr):
+    """
+    Return the real and imaginary parts.
+    """
+    args=arg_add_flatten(expr)
+    im=next(coeff_mul(a,sp.I) for a in args if is_coeff_mul(a,sp.I))
+    lstre=[a for a in args if a.is_real]
+    if len(lstre)==0:
+        re=sp.Integer(0)
+    elif len(lstre)==1:
+        re=lstre[0]
+    else:
+        with sp.evaluate(False):
+            re=sp.Add(*lstre)
+    return (re,im)
+
 def is_e_i_theta(expr):
     """
     Check if a complex number is an exponential.
