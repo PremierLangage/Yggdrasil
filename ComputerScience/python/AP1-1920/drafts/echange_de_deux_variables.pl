@@ -1,4 +1,4 @@
-grader =@ Yggdrasil/ComputerScience/python/AP1-1920/templates/plsoluce.pl
+grader =@ /ComputerScience/python/AP1-1920/templates/plsoluce.pl
 title = Échange de deux variables
 
 text==
