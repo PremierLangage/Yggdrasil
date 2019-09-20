@@ -25,7 +25,7 @@ class Test:
         self.status = status
 
     def __str__(self):
-        msg = "[OK] " if self.status else "[KO] "
+        msg = "- [OK] " if self.status else "[KO] "
         return msg + self.title
 
 
@@ -35,7 +35,7 @@ class TestGroup:
         self.tests = []
 
     def __str__(self):
-        res = self.title + '\n'
+        res = self.title + '\n' if self.title else ""
         res += "\n".join(str(test) for test in self.tests)
         return res
 
