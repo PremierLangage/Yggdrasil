@@ -1,6 +1,3 @@
-
-author=Dominique Revuz
- 
 tag=error|print
 title= Corrige Moi !
 name= Plus
@@ -16,12 +13,10 @@ print('la somme de 15975 et 43242 est '+ 15975+43242)
 
 plsoluce==
 Test principal | la somme de 15975 et 43242 est 59217
-
 ==
 
 soluce==
 print('la somme de 15975 et 43242 est 59217')
-
 ==
 
 feedback==
