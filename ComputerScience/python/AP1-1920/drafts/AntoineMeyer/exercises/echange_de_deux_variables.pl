@@ -1,6 +1,6 @@
 # Ne fonctionne pas !
 
-extends @../templates/ap1_template.pl
+extends = ../templates/ap1_template.pl
 title = Échange de deux variables
 
 text==
