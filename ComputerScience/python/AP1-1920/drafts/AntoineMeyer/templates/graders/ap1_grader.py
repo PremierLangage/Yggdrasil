@@ -382,9 +382,6 @@ if __name__ == "__main__":
     # determine validation script
     validation_script = ex_context["grader"]
 
-    print(student_code)
-    print(validation_script)
-    """
     r = CodeRunner(student_code)
     methods = inspect.getmembers(r, predicate=inspect.ismethod)
     globals().update(methods)
@@ -397,4 +394,4 @@ if __name__ == "__main__":
         raise e
     
     sandboxio.output(0, str(r.tests))
-    """
+
