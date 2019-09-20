@@ -1,9 +1,6 @@
-title = Nombres complexes
+title = Nombres complexes 1
 
-introduction ==
-- Effectuer des calculs algébriques avec des nombres complexes.
-- Résoudre des équations quadratiques à solutions complexes.
-==
+introduction =
 
 @ /Mathematics/exercises/complex_numbers/cplx_computation_add_subst.pl
 
@@ -17,7 +14,5 @@ introduction ==
 
 @ /Mathematics/exercises/complex_numbers/cplx_computation_div.pl
 
-@ /Mathematics/exercises/complex_numbers/quadratic_cplx_eq_int.pl
 
-@ /Mathematics/exercises/complex_numbers/quadratic_cplx_eq_rat.pl
 
