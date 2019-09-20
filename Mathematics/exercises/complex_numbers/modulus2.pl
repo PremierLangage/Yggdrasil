@@ -16,13 +16,13 @@ d=randitem([-1,1])*randitem([1,2,3,4,5,sqrt(2),sqrt(3),sqrt(5)])
 z1=a+b*I
 z2=c+d*I
 cas=randint(1,3)
-if cas==1
+if cas==1:
     z=z1*z2
     z_tex=latex(z1*z2)
-elif cas==2
+elif cas==2:
     z=z1/z2
     z_tex=latex(z1/z2)
-elif cas==3
+elif cas==3:
     z=1/(z1*z2)
     z_tex=latex(1/(z1*z2))
 sol=abs(z)
