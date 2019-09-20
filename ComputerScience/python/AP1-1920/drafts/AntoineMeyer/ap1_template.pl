@@ -14,7 +14,7 @@ editor.code ==
 editor.language = python
 
 form==
-{{editor|component }}
+{{editor|component}}
 ==
 
 
