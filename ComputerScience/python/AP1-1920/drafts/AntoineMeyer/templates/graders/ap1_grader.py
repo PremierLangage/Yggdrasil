@@ -382,6 +382,7 @@ if __name__ == "__main__":
     # determine validation script
     validation_script = ex_context["grader"]
 
+    print(student_code)
     print(validation_script)
     """
     r = CodeRunner(student_code)
