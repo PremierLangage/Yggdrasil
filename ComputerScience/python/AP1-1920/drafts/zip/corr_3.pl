@@ -10,7 +10,8 @@ text==
 Le programme python si dessous contient une erreur corrigez la pour passer à l'exercice suivant.
 ==
 
-code==print('la somme de 15975 et 43242 est '+ 15975+43242)
+code==
+print('la somme de 15975 et 43242 est '+ 15975+43242)
 ==
 
 plsoluce==
