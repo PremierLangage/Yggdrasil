@@ -857,6 +857,7 @@ def ans_expr(strans,sol,local_dict={}):
     """
     test1=[(is_expr,-1,"NotExpr","Votre réponse n'est pas une expression valide.")]
     test2=[]
+    test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_(strans,sol,local_dict,test1,test2)
 
 def ans_struct_expr(strans,sol,typestruct,local_dict={}):
