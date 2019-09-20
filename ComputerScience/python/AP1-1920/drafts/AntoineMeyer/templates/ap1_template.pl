@@ -21,6 +21,6 @@ form==
 
 # définition de la procédure de validation
 grader==
-return (0, "<l'exercice n'a pas défini de procédure de validation>")
+assert_no_side_effects()
 ==
 
