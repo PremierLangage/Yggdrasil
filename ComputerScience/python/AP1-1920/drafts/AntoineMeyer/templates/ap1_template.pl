@@ -2,8 +2,8 @@
 @ builders/ap1_builder.py [builder.py]
 @ graders/ap1_grader.py [grader.py]
 
-title = <pas de titre défini>
-text = <pas d'énoncé défini>
+title = <em>(Pas de titre défini)</em>
+text = <em>(Pas d'énoncé défini)</em>
 
 # création de l'éditeur de code
 editor =: CodeEditor
