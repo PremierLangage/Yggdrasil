@@ -24,7 +24,7 @@ print('la somme de 15975 et 43242 est 59217')
 
 ==
 
-compilehelp==
+feedback==
 print doit d'abord déterminer cequ'il doit afficher.
 Or python ne sait pas additionner des textes et des nombres.
 (La chaine 'la somme de 15975 et 43242 est ' est de type str alors que 15975+43242 est de type int)
