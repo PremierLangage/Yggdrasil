@@ -26,8 +26,7 @@ if __name__ == "__main__":
         except BuilderError as e:
             print(e, file=sys.stderr)
 
-        output_json = sys.argv[2]
-
+    output_json = sys.argv[2]
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(context, unpicklable=False))
 
