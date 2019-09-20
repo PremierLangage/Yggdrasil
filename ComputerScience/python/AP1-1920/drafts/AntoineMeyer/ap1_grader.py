@@ -363,7 +363,7 @@ class GraderError(Exception):
 
 if __name__ == "__main__":
     import inspect
-    from templates.utils import sandboxio
+    import sandboxio
 
     # determine editor's HTML id
     ex_context = sandboxio.get_context()
