@@ -12,6 +12,7 @@ editor.cid = py_editor_0
 editor.code ==
 # Saisissez votre code ici, et cliquez sur le bouton
 # de validation quand vous avez terminé
+
 ==
 
 # le formulaire de l'exercice contient uniquement l'éditeur
