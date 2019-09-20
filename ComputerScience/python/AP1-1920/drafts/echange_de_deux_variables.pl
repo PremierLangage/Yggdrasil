@@ -8,8 +8,8 @@ ni à les lire).
 Écrire un programme dont l'exécution échange les valeurs de `a` et `b`, 
 sans rien afficher.
 
-**Attention**, votre programe doit fonctionner quelles que soient les valeurs 
-initiales de `a` et `b` et leurs types.
+**Attention**, *votre programe doit fonctionner quelles que soient les valeurs 
+initiales de `a` et `b` et leurs types.*
 ==
 
 code=:CodeEditor
