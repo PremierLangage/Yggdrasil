@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-# coding: utf-8
 
 import sys, jsonpickle
-import sandboxio as sandboxio
+import sandboxio
 
 
 class BuilderError(Exception):
