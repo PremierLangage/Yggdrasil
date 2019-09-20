@@ -319,7 +319,7 @@ class CodeRunner:
             elif not _cmp(value, self.current_state[ident]):
                 incorrect_msg_list.append(
                     "{} has value {} (should be {})".format(
-                        ident, self.current_state[ident], value))
+                        ident, repr(self.current_state[ident]), repr(value)))
 
         msg = "assert_variable_values: "
         msg_list = []
@@ -332,8 +332,9 @@ class CodeRunner:
             status = False
             msg_list.append("; ".join(incorrect_msg_list))
         if status:
-            msg_list.append("; ".join("{} has value {}".format(ident, value)
-                            for ident, value in kwargs.items()))
+            msg_list.append(
+                "; ".join("{} has value {}".format(ident, repr(value))
+                          for ident, value in kwargs.items()))
         msg += "; ".join(msg_list)
 
         self.record_test(Test(msg, status))
@@ -372,7 +373,7 @@ if __name__ == "__main__":
                           "dans l'exercice (qui devrait être déclaré dans la "
                           "variable `editor`). Merci d'utiliser ou de vous "
                           "inspirer du template ap1_template.pl pour utiliser "
-                          "ce grader.") 
+                          "ce grader.")
     editor_id = ex_context["editor"].cid
 
     # determine student code
@@ -389,9 +390,9 @@ if __name__ == "__main__":
     try:
         exec(validation_script, globals())
     except Exception as e:
-        print("Une erreur s'est produit pendant la validation. Veuillez "
+        print("Une erreur s'est produite pendant la validation. Veuillez "
               "contacter un enseignant.", file=sys.stderr)
         raise e
-    
+
     sandboxio.output(0, str(r.tests))
 
