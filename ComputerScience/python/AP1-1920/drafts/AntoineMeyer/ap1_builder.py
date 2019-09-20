@@ -13,7 +13,7 @@ if __name__ == "__main__":
     if len(sys.argv) < 3:
         msg = ("Sandbox did not call builder properly:\n"
                "Usage: python3 builder.py [input_json] [output_json]")
-        print(msg, sys.argv, file=sys.stderr)
+        print(msg, file=sys.stderr)
         sys.exit(1)
 
     context = sandboxio.get_context()
@@ -27,6 +27,7 @@ if __name__ == "__main__":
             print(e, file=sys.stderr)
 
         output_json = sys.argv[2]
-        with open(output_json, "w+") as f:
-            f.write(jsonpickle.encode(context, unpicklable=False))
+
+    with open(output_json, "w+") as f:
+        f.write(jsonpickle.encode(context, unpicklable=False))
 
