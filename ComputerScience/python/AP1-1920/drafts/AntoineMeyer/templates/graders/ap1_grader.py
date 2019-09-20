@@ -376,9 +376,7 @@ if __name__ == "__main__":
 
     # determine student code
     answers = sandboxio.get_answers()
-    print(answers)
-    """
-    student_code = answers["editor_id"]
+    student_code = answers[editor_id]
 
     # determine validation script
     validation_script = ex_context["grader"]
@@ -393,4 +391,4 @@ if __name__ == "__main__":
         print(e)
     
     sandboxio.output(0, str(r.tests))
-    """
+
