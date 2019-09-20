@@ -12,10 +12,4 @@ sans rien afficher.
 initiales de `a` et `b` et leurs types.*
 ==
 
-code=:CodeEditor
-
-form==
-{{ code|component }}
-==
-
 
