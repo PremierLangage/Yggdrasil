@@ -1,5 +1,4 @@
-# Ne fonctionne pas !
-
+# author = Antoine Meyer
 extends = ../templates/ap1_template.pl
 title = Échange de deux variables
 
