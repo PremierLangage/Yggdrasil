@@ -664,6 +664,14 @@ def complex_cartesian_parts(expr):
             re=sp.Add(*lstre)
     return (re,im)
 
+
+def is_complex_cartesian_ratsimp(expr):
+    """
+    Return the real and imaginary parts.
+    """
+    (re,im)=complex_cartesian_parts(expr)
+    return is_rat_simp(re) and is_rat_simp(im)
+
 def is_e_i_theta(expr):
     """
     Check if a complex number is an exponential.
@@ -863,6 +871,9 @@ def ans_complex(strans,sol,imaginary_unit="i",form="",authorized_func={}):
     elif form=="exponential":
         test1.append((is_complex_exponential,-1,"NotCplxExponential","Votre réponse n'est pas un nombre complexe sous forme exponentielle."))
     test2=[]
+    if form=="cartesian":
+        test1.append((is_complex_cartesian_ratsimp,-1,"NotRatSimp","L'expression peut encore êêtre simplifiée."))
+
     return ans_(strans,sol,local_dict,test1,test2)
 
 def ans_struct_complex(strans,sol,typestruct,imaginary_unit="i",form=""):
