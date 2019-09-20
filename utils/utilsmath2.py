@@ -600,7 +600,8 @@ def is_rat_simp(expr):
     Check if the rational numbers in a sympy expressions are simplified.
     """
     if isinstance(expr,sp.Expr):
-        if expr.is_rational:
+        expr2=sp.simplify(expr)
+        if expr2.is_rational:
             return is_frac_int_irred(expr)
         elif expr.is_Atom:
             return True
