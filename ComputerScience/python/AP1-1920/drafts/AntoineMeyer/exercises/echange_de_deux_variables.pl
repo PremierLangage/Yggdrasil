@@ -12,11 +12,19 @@ ni à les lire).
 sans rien afficher.
 
 **Attention**, *votre programe doit fonctionner quelles que soient les valeurs 
-de `a` et `b` et leurs types (qui peuvent être différents).*
+de `a` et `b` et leurs types (qui peuvent être différents).*<br><br>
 ==
 
 grader==
+begin_test_group("Échange de deux entiers")
 set_globals(a=1, b=2)
 run()
 assert_variable_values(a=2, b=1)
+end_test_group()
+
+begin_test_group("Échange d'un entier et d'une chaîne")
+set_globals(a=1, b="ça marche")
+run()
+assert_variable_values(a="ça marche", b=1)
+end_test_group()
 ==
