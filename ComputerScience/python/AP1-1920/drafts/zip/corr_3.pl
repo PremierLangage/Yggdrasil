@@ -4,7 +4,7 @@ name= Plus
 extends=/ComputerScience/python/template/soluce.pl
 
 text==
-Le programme python si dessous contient une erreur corrigez la pour passer à l'exercice suivant.
+Le programme python si dessous contient une erreur. Corrigez-la pour passer à l'exercice suivant.
 ==
 
 code==
