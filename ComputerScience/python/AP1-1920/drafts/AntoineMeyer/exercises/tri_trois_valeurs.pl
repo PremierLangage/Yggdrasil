@@ -1,4 +1,21 @@
 # author = Antoine Meyer
+
+# solutions à essayer :
+# 
+# a, b, c = sorted(a, b, c)
+# print(a, b, c)
+#
+# print(*sorted((a, b, c)))
+#
+# if a > b:
+#     a, b = b, a
+# if b > c:
+#     b, c = c, b
+# if a > b:
+#     a, b = b, a
+# print(a, b, c)
+# 
+
 extends = ../templates/ap1_template.pl
 title = Tri de trois valeurs
 
