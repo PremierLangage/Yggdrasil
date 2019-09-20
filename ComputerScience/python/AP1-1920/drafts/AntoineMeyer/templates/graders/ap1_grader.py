@@ -374,10 +374,10 @@ if __name__ == "__main__":
                           "current exercise (in variable `editor`).")
     editor_id = ex_context["editor"].cid
 
-    print(answers)
-    """
     # determine student code
     answers = sandboxio.get_answers()
+    print(answers)
+    """
     student_code = answers["editor_id"]
 
     # determine validation script
