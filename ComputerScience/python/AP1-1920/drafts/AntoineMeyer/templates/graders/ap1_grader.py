@@ -35,8 +35,8 @@ class TestGroup:
         self.tests = []
 
     def __str__(self):
-        res = self.title + '<br>\n' if self.title else ""
-        res += "<ul>" + "\n".join(str(test) for test in self.tests) + "</ul>"
+        res = "\n".join(str(test) for test in self.tests)
+        res = self.title + '\n<ul>\n' + res + "\n</ul>"
         return res
 
     def append(self, test_or_test_group: Union[Test, 'TestGroup']):
@@ -197,7 +197,7 @@ class CodeRunner:
         self.result = None
 
         # history and feedback
-        self.tests = TestGroup("main test group")
+        self.tests = TestGroup("Résultats des tests")
         self.test_group_stack = []
 
     """Setters for execution context."""
