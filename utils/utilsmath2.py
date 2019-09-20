@@ -883,7 +883,7 @@ def ans_complex(strans,sol,imaginary_unit="i",form="",authorized_func={}):
         test1.append((is_complex_exponential,-1,"NotCplxExponential","Votre réponse n'est pas un nombre complexe sous forme exponentielle."))
     test2=[]
     if form=="cartesian":
-        test1.append((is_complex_cartesian_ratsimp,-1,"NotRatSimp","L'expression peut encore êêtre simplifiée."))
+        test2.append((is_complex_cartesian_ratsimp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
 
     return ans_(strans,sol,local_dict,test1,test2)
 
