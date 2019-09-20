@@ -24,7 +24,7 @@ elif cas==2:
     z_tex=r"\frac{ %s }{ %s }" % (latex(z1),latex(z2))
 elif cas==3:
     z=1/(z1*z2)
-    z_tex=r"\frac{ 1 }{ (%s)( %s) }" % (latex(z1),latex(z2))
+    z_tex=r"\frac{ 1 }{ ( %s )( %s) }" % (latex(z1),latex(z2))
 sol=abs(z)
 sol_tex=latex(sol)
 ==
