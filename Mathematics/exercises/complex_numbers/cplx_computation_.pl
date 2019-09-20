@@ -4,7 +4,7 @@ title = Opération sur les nombres complexes
 
 before ==
 keyboards_JSON['virtualKeyboards']="complexes"
-input1.config = keyboards_JSON
+input.config = keyboards_JSON
 
 z1=rand_complex_int(5)
 z2=rand_complex_int(5)
