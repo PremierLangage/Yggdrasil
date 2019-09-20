@@ -1,0 +1,22 @@
+title = Nombres complexes 1
+
+introduction =
+
+@ /Mathematics/exercises/complex_numbers/cplx_computation_add_subst.pl
+
+@ /Mathematics/exercises/complex_numbers/cplx_computation_add_subst_conj.pl
+
+@ /Mathematics/exercises/complex_numbers/cplx_computation_mult.pl
+
+@ /Mathematics/exercises/complex_numbers/cplx_computation_sq.pl
+
+@ /Mathematics/exercises/complex_numbers/cplx_computation_inv.pl
+
+@ /Mathematics/exercises/complex_numbers/cplx_computation_div.pl
+
+@ /Mathematics/exercises/complex_numbers/modulus.pl
+
+@ /Mathematics/exercises/complex_numbers/modulus2.pl
+
+
+
