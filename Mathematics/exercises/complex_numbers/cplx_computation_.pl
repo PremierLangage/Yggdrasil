@@ -30,6 +30,9 @@ elif formula=="z^2":
 elif formula=="1/z":
     sol=1/z1
     expr=r"\frac{1}{z}"
+elif formula=="1/(z1*z2)":
+    sol=1/(z1*z2)
+    expr=r"\frac{1}{z_1 \times z_2}"
 elif formula=="z1/z2":
     sol=z1/z2
     expr=r"\frac{z_1}{z_2}"
