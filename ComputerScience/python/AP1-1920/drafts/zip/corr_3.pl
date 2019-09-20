@@ -15,14 +15,15 @@ print('la somme de 15975 et 43242 est '+ 15975+43242)
 ==
 
 plsoluce==
-t | la somme de 15975 et 43242 est  59217
+Test principal | la somme de 15975 et 43242 est 59217
 
 ==
 
 soluce==
-print('la somme de 15975 et 43242 est  59217')
+print('la somme de 15975 et 43242 est 59217')
 
 ==
+
 compilehelp==
 print doit d'abord déterminer cequ'il doit afficher.
 Or python ne sait pas additionner des textes et des nombres.
