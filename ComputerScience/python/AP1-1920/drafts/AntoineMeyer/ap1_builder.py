@@ -2,7 +2,7 @@
 # coding: utf-8
 
 import sys, jsonpickle
-import utils.sandboxio as sandboxio
+import sandboxio as sandboxio
 
 
 class BuilderError(Exception):
