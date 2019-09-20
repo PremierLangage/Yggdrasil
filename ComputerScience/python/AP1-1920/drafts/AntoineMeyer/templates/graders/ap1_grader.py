@@ -367,13 +367,12 @@ if __name__ == "__main__":
 
     # determine editor's HTML id
     ex_context = sandboxio.get_context()
-    print(ex_context["editor"].cid, file=sys.stderr)
-    """
-    if "editor" not in ex_context or "cid" not in ex_context["editor"]:
+
+    if "editor" not in ex_context:
         raise GraderError("Unable to identify the code editor's key. Please "
                           "make sure a CodeEditor component is defined in the "
                           "current exercise (in variable `editor`).")
-    editor_id = ex_context["editor"]["cid"]
+    editor_id = ex_context["editor"].cid
 
     # determine student code
     answers = sandboxio.get_answers()
@@ -392,5 +391,4 @@ if __name__ == "__main__":
         print(e)
     
     sandboxio.output(0, str(r.tests))
-    """
 
