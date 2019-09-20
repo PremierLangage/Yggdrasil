@@ -21,6 +21,6 @@ form==
 
 # définition de la procédure de validation
 grader==
-assert_no_side_effects()
+assert_no_global_change()
 ==
 
