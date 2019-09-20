@@ -15,16 +15,31 @@ de `a`, `b` et `c`.*<br><br>
 ==
 
 grader==
-begin_test_group("Échange de deux entiers")
-set_globals(a=1, b=2)
-run()
-assert_variable_values(a=2, b=1)
-end_test_group()
+def nb_sols(a, b, c):
+    if a == 0:
+        if b == 0:
+            if c == 0:
+                return float('inf')
+            else:
+                return 0
+        else:
+            return 1
+    delta = b*b - 4*a*c
+    if delta == 0:
+        return 1
+    elif delta > 0:
+        return 2
+    else:
+        return 0
 
-begin_test_group("Échange d'un entier et d'une chaîne")
-set_globals(a=1, b="ça marche")
-run()
-assert_variable_values(a="ça marche", b=1)
-end_test_group()
+essais = [
+    [0, 0, 0], [0, 0, 1], [0, 1, 1], 
+    [1, 3, 1], [1, 2, 1], [1, 1, 1]
+]
+
+for a, b, c in essais:
+    set_globals(a=a, b=b, c=c)
+    run()
+    assert_variable_values(nb_solutions=nb_sols(a, b, c)
 ==
 
