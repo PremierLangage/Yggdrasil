@@ -10,7 +10,7 @@ comparables entre elles (vous n'avez donc pas à les initialiser ni à les lire)
 les valeurs de `a` `b` et `c` dans l'ordre croissant, séparées par des espaces, 
 suivies d'un retour à la ligne.
 
-Par exemple, si on suppose qu'au début du programme `a` vaut `5`, `b` vaut `1` 
+**Par exemple,** si on suppose qu'au début du programme `a` vaut `5`, `b` vaut `1` 
 et `c` vaut 3, le programme devra afficher *précisément* la chaîne `'1 3 5\n'`.
 
 
