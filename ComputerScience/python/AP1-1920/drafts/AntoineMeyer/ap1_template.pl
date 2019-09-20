@@ -1,4 +1,5 @@
-grader =@ test_grader.py
+@/utils/sandboxio.py
+@test_grader.py [grader.py]
 
 title = <pas de titre défini>
 
@@ -16,5 +17,4 @@ editor.language = python
 form==
 {{editor|component}}
 ==
-
 
