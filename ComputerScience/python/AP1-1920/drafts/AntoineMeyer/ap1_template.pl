@@ -18,3 +18,6 @@ form==
 {{editor|component}}
 ==
 
+grader==
+# this is the validation code
+==
