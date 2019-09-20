@@ -13,6 +13,7 @@ sans rien afficher.
 
 **Attention**, *votre programe doit fonctionner quelles que soient les valeurs 
 de `a` et `b` et leurs types (qui peuvent être différents).*
+
 ==
 
 grader==
