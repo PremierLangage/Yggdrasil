@@ -565,6 +565,17 @@ def is_coeff_mul(expr,x):
     """
     args=arg_mul_flatten(expr)
     return args.count(x)==1 and sum([a.has(x) for a in args])==1
+
+def coeff_mul(expr,x):
+    args=arg_mul_flatten(expr)
+    args.remove(x)
+    if len(args)==0:
+        return 0
+    elif len(args)==1:
+        return args[0]
+    else:
+        with sp.evaluate(False):
+            return sp.Mul(*args)
     
 def is_coeff_exponent(expr,x):
     """
