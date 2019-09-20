@@ -16,6 +16,7 @@ et `c` vaut 3, le programme devra afficher *précisément* la chaîne `'1 3 5\n'
 
 
 **Attention :**
+
 - Le programe doit fonctionner quelles que soient les valeurs 
   de `a`, `b` et `c` du moment qu'elles sont comparables ;
 - Le programme ne doit pas modifier les valeurs des variables `a`, `b` et `c`, 
@@ -24,16 +25,15 @@ et `c` vaut 3, le programme devra afficher *précisément* la chaîne `'1 3 5\n'
 ==
 
 grader==
-begin_test_group("Échange de deux entiers")
-set_globals(a=1, b=2)
-run()
-assert_variable_values(a=2, b=1)
-end_test_group()
+from itertools import permutations
 
-begin_test_group("Échange d'un entier et d'une chaîne")
-set_globals(a=1, b="ça marche")
-run()
-assert_variable_values(a="ça marche", b=1)
+begin_test_group("Tris d'éléments distincts")
+for x, y, z in permutations((1, 2, 3)):
+    # TODO: display global change in feedback
+    set_globals(a=x, b=y, c=z)
+    run()
+    assert_output("1 2 3\n")
+    assert_no_global_change()
 end_test_group()
 ==
 
