@@ -3,7 +3,7 @@ extends = ../templates/ap1_template.pl
 title = Tri de trois valeurs
 
 text==
-On suppose qu'il existe trois variables `a`, `b` et `c` de valeurs quelconques et  
+On suppose qu'il existe trois variables `a`, `b` et `c` de valeurs quelconques et
 comparables entre elles (vous n'avez donc pas à les initialiser ni à les lire).
 
 Écrire un programme dont l'exécution affiche (à l'aide de la fonction `print`) 
