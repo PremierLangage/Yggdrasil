@@ -35,8 +35,8 @@ class TestGroup:
         self.tests = []
 
     def __str__(self):
-        res = self.title + '\n\n' if self.title else ""
-        res += "\n".join(str(test) for test in self.tests)
+        res = self.title + '<br>' if self.title else ""
+        res += "<ul>" + "<li>".join(str(test) for test in self.tests) + "</ul>"
         return res
 
     def append(self, test_or_test_group: Union[Test, 'TestGroup']):
