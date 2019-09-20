@@ -35,7 +35,7 @@ class TestGroup:
         self.tests = []
 
     def __str__(self):
-        res = self.title + '\n' if self.title else ""
+        res = self.title + '\n\n' if self.title else ""
         res += "\n".join(str(test) for test in self.tests)
         return res
 
