@@ -584,6 +584,54 @@ def is_expr(expr):
     """
     return isinstance(expr,sp.Expr)
 
+def is_rat_simp(expr):
+    """
+    Check if the rational numbers in a sympy expressions are simplified.
+    """
+    if isinstance(expr,sp.Expr):
+        if expr.is_rational:
+            return is_frac_int_irred(expr)
+        elif expr.is_Atom:
+            return True
+        elif expr.is_Boolean:
+            return True
+        else:
+            return all(is_rat_simp(subexpr) for subexpr in expr.args)
+    else:
+        return True
+
+def is_frac_int(expr):
+    """
+    Check if a sympy expression is a fraction of integers.
+    """
+    args=arg_mul_flatten(expr)
+    if len(args)>1 and sp.Integer(-1) in args:
+        args.remove(sp.Integer(-1))
+    with sp.evaluate(False):
+        expr=sp.Mul(*args)
+    f = sp.fraction(expr,exact=True)
+    return f[0].is_Integer and f[1].is_Integer and f[1]!=0
+
+def is_frac_irred(expr):
+    """
+    Check if a sympy fraction of integers is irreducible.
+    """
+    args=arg_mul_flatten(expr)
+    if len(args)>1 and sp.Integer(-1) in args:
+        args.remove(sp.Integer(-1))
+    with sp.evaluate(False):
+        expr=sp.Mul(*args)
+    f = sp.fraction(expr,exact=True)
+    return sp.gcd(f[0],f[1])==1 and f[1]>0
+
+def is_frac_int_irred(expr):
+    """
+    Check if a sympy expression is an irreducible fraction of integers.
+    """
+    return is_frac_int(expr) and is_frac_irred(expr)
+
+# Complex numbers
+
 
 def is_complex(expr):
     """
@@ -825,5 +873,6 @@ def ans_poly(strans,sol,x,domain="RR",imaginary_unit="i",form=""):
         test1.append((lambda expr : is_poly_factorized(expr,x,domain),-1,"NotFactorized","Votre réponse n'est pas un polynôme factorisé."))
     test2=[]
     return ans_(strans,sol,local_dict,test1,test2)
+
 
 
