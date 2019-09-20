@@ -1,4 +1,4 @@
-from sandboxio import *
+import sandboxio
 
 if __name__ == "__main__":
     answers = sandboxio.get_answers()
