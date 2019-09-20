@@ -1,6 +1,6 @@
 @ /utils/sandboxio.py
 @ ap1_builder.py [builder.py]
-@ test_grader.py [grader.py]
+@ ap1_grader.py [grader.py]
 
 title = <pas de titre défini>
 text = <pas d'énoncé défini>
