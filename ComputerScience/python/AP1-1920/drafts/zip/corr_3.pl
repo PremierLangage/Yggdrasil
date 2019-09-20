@@ -5,19 +5,15 @@ tag=error|print
 title= Corrige Moi !
 name= Plus
 extends=/ComputerScience/python/template/soluce.pl
-text==
 
 text==
-
 Le programme python si dessous contient une erreur corrigez la pour passer à l'exercice suivant.
-
 ==
 
 code==
-
 print('la somme de 15975 et 43242 est '+ 15975+43242)
-
 ==
+
 plsoluce==
 t | la somme de 15975 et 43242 est  59217
 
@@ -42,3 +38,4 @@ en utilisant une virgule pour séparer les paramêtres d'appel de print.
 ==
 
  
+
