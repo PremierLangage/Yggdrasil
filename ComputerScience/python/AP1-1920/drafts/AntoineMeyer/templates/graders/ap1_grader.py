@@ -373,7 +373,7 @@ if __name__ == "__main__":
                           "variable `editor`). Merci d'utiliser ou de vous "
                           "inspirer du template ap1_template.pl pour utiliser "
                           "ce grader.") 
-    editor_id = ex_context["editor"]["cid"]
+    editor_id = ex_context["editor"].cid
 
     # determine student code
     answers = sandboxio.get_answers()
