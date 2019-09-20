@@ -389,7 +389,9 @@ if __name__ == "__main__":
     try:
         exec(validation_script, globals())
     except Exception as e:
-        print(e)
-
+        print("Une erreur s'est produit pendant la validation. Veuillez "
+              "contacter un enseignant.", file=sys.stderr)
+        raise e
+    
     sandboxio.output(0, str(r.tests))
 
