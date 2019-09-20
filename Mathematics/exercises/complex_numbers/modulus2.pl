@@ -17,14 +17,14 @@ z1=a+b*I
 z2=c+d*I
 cas=randint(1,3)
 if cas==1:
-    z=z1*z2
-    z_tex=latex(z1*z2)
+    z=(z1)*(z2)
+    z_tex=latex(z)
 elif cas==2:
-    z=z1/z2
-    z_tex=latex(z1/z2)
+    z=(z1)/(z2)
+    z_tex=latex(z)
 elif cas==3:
-    z=1/(z1*z2)
-    z_tex=latex(1/(z1*z2))
+    z=1/((z1)*(z2))
+    z_tex=latex(z)
 sol=abs(z)
 sol_tex=latex(sol)
 ==
