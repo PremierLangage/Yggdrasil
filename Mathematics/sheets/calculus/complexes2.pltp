@@ -2,5 +2,10 @@ title = Nombres complexes 2
 
 introduction =
 
+@ /Mathematics/exercises/complex_numbers/quadratic_cplx_eq_int.pl
+
+@ /Mathematics/exercises/complex_numbers/quadratic_cplx_eq_rat.pl
+
 @ /Mathematics/exercises/complex_numbers/cplx_sqrt.pl
+
 
