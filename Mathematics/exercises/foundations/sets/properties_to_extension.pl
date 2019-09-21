@@ -15,7 +15,6 @@ cond=r"n \leq %d" % d
 S=list(range(d))
 B=FiniteSet(*[x for x in S if ff(x)])
 
-a=f(4)
 A=randitem([r"\mathbb{N}",r"\mathbb{Z}"])
 
 sol=""
