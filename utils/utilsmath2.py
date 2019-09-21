@@ -67,11 +67,11 @@ class CustomLatexPrinter(LatexPrinter0):
                     s_coeff = self._print(coeff)
             else:
                 if s_monom:
-                    if coeff is S.One:
+                    if coeff is sp.S.One:
                         terms.extend(['+', s_monom])
                         continue
 
-                    if coeff is S.NegativeOne:
+                    if coeff is sp.S.NegativeOne:
                         terms.extend(['-', s_monom])
                         continue
 
