@@ -13,8 +13,9 @@ d=randint(5,7)
 f = lambda x : x < 5
 cond=r"n \leq %d" % d 
 S=list(range(d))
-B=FiniteSet(*[x for x in S if f(x)])
+B=FiniteSet(*[x for x in S])
 
+a=f(4)
 A=randitem([r"\mathbb{N}",r"\mathbb{Z}"])
 
 sol=""
@@ -22,7 +23,7 @@ sol_tex=latex(sol)
 ==
 
 text == 
-{{B}}
+{{a}}
 Ecrire en extension l'ensemble $!\\{ {{n}} \in {{A}} \:|\: {{cond}} \\}!$.
 ==
 
