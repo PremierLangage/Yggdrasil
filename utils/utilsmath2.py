@@ -48,6 +48,53 @@ class CustomLatexPrinter(LatexPrinter0):
         items = ", ".join(map(self._print, items))
         return r"\{%s\}" % items
 
+        def _print_Poly(self, poly):
+        cls = poly.__class__.__name__
+        terms = []
+        for monom, coeff in poly.terms():
+            s_monom = ''
+            for i, exp in enumerate(monom):
+                if exp > 0:
+                    if exp == 1:
+                        s_monom += self._print(poly.gens[i])
+                    else:
+                        s_monom += self._print(pow(poly.gens[i], exp))
+
+            if coeff.is_Add:
+                if s_monom:
+                    s_coeff = r"\left(%s\right)" % self._print(coeff)
+                else:
+                    s_coeff = self._print(coeff)
+            else:
+                if s_monom:
+                    if coeff is S.One:
+                        terms.extend(['+', s_monom])
+                        continue
+
+                    if coeff is S.NegativeOne:
+                        terms.extend(['-', s_monom])
+                        continue
+
+                s_coeff = self._print(coeff)
+
+            if not s_monom:
+                s_term = s_coeff
+            else:
+                s_term = s_coeff + " " + s_monom
+
+            if s_term.startswith('-'):
+                terms.extend(['-', s_term[1:]])
+            else:
+                terms.extend(['+', s_term])
+
+        if terms[0] in ['-', '+']:
+            modifier = terms.pop(0)
+
+            if modifier == '-':
+                terms[0] = '-' + terms[0]
+
+        return ' '.join(terms)
+
     def _print_Interval(self, i):
         
         if i.start == i.end:
@@ -913,6 +960,7 @@ def ans_poly(strans,sol,x,domain="RR",imaginary_unit="i",form=""):
         test1.append((lambda expr : is_poly_factorized(expr,x,domain),-1,"NotFactorized","Votre réponse n'est pas un polynôme factorisé."))
     test2=[]
     return ans_(strans,sol,local_dict,test1,test2)
+
 
 
 
