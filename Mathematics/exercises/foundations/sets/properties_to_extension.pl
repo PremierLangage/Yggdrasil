@@ -10,7 +10,7 @@ input1.config = keyboards_JSON
 
 n="n"
 cond=r"n \leq %d" % randint(5,25)
-A=randitem([r"\NN",e"\ZZ"])
+A=randitem([r"\NN","\ZZ"])
 
 sol=""
 sol_tex=latex(sol)
