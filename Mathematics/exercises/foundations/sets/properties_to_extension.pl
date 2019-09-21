@@ -22,6 +22,7 @@ sol_tex=latex(sol)
 ==
 
 text == 
+B
 Ecrire en extension l'ensemble $!\\{ {{n}} \in {{A}} \:|\: {{cond}} \\}!$.
 ==
 
