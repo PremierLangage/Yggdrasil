@@ -48,7 +48,7 @@ class CustomLatexPrinter(LatexPrinter0):
         items = ", ".join(map(self._print, items))
         return r"\{%s\}" % items
 
-        def _print_Poly(self, poly):
+    def _print_Poly(self, poly):
         cls = poly.__class__.__name__
         terms = []
         for monom, coeff in poly.terms():
