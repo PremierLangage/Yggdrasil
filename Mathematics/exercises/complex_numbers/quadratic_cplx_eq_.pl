@@ -8,7 +8,7 @@ param.roots = int
 
 before ==
 keyboards_JSON['virtualKeyboards']="complexes"
-input1.config = keyboards_JSON
+input.config = keyboards_JSON
 
 a,b=list_randint(2,-4,4,[0])
 c=randint(-5,5,[0,1,-1])
@@ -29,8 +29,9 @@ Déterminer les solutions (complexes) de l'équation $! {{latexP}} = 0 !$. Sépa
 ==
 
 evaluator==
-score,_,feedback=ans_struct_complex(input1.value,lstsol,"setwobraces")
+score,_,feedback=ans_struct_complex(input.value,lstsol,"setwobraces")
 ==
+
 
 
 
