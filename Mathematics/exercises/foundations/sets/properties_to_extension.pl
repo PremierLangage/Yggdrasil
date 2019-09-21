@@ -9,7 +9,9 @@ keyboards_JSON['virtualKeyboards']="sets"
 input.config = keyboards_JSON
 
 n="n"
-cond=r"n \leq %d" % randint(5,25)
+d=randint(5,25)
+f = lambda x : x < d
+cond=r"n \leq %d" % d 
 A=randitem([r"\mathbb{N}",r"\mathbb{Z}"])
 
 sol=""
