@@ -13,7 +13,7 @@ d=randint(5,7)
 def fcond(x): return x < d
 cond=r"n \leq %d" % d 
 S=list(range(d))
-B=FiniteSet(*[x if fcond(c) for x in S])
+B=FiniteSet(*[x if fcond(x) for x in S])
 
 A=randitem([r"\mathbb{N}",r"\mathbb{Z}"])
 
