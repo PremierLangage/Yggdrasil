@@ -1,4 +1,14 @@
-title = Nombres complexes 2
+title = Nombres complexes 3
 
 introduction =
+
+@ /Mathematics/exercises/complex_numbers/affixe.pl
+
+@ /Mathematics/exercises/complex_numbers/point_arg_mod_124.pl
+
+@ /Mathematics/exercises/complex_numbers/point_arg_mod_124_neg.pl
+
+@ /Mathematics/exercises/complex_numbers/modulus.pl
+
+@ /Mathematics/exercises/complex_numbers/argument.pl
 
