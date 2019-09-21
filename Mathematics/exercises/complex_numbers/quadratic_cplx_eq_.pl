@@ -23,7 +23,7 @@ if param['roots']=='int2':
 if param['roots']=='rat':
     P=s*(c*x+a+b*I)*(c*x+a-b*I)
 lstsol=list(solveset(P,x,domain=S.Complexes))
-latexP=latex(poly(P,domain=S.Complexes))
+latexP=latex(poly(P,x))
 solution=r"Les solutions sont $! \displaystyle %s !$ et $! \displaystyle %s !$." % (latex(lstsol[0]),latex(lstsol[1]))
 ==
 
