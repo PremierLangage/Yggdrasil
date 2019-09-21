@@ -10,7 +10,7 @@ input.config = keyboards_JSON
 
 n="n"
 d=randint(5,7)
-f = lambda x : x < d
+f = lambda x : x < 5
 cond=r"n \leq %d" % d 
 S=list(range(d))
 B=FiniteSet(*[x for x in S if f(x)])
