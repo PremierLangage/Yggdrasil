@@ -10,14 +10,14 @@ input.config = keyboards_JSON
 
 n="n"
 cond=r"n \leq %d" % randint(5,25)
-A=randitem([r"\NN","\ZZ"])
+A=randitem([r"\matbbb{NN}","\mathbb{Z}"])
 
 sol=""
 sol_tex=latex(sol)
 ==
 
 text == 
-Ecrire en extension l'ensemble $!\\{ {{n}} \in {{A}} | {{cond}} \\} ) !$.
+Ecrire en extension l'ensemble $!\\{ {{n}} \in {{A}} | {{cond}} \\} )!$.
 ==
 
 evaluator ==
