@@ -11,9 +11,9 @@ input.config = keyboards_JSON
 n="n"
 d=randint(5,7)
 def fcond(x): return x < d
-cond=r"n \leq %d" % d 
 S=list(range(d))
-B=FiniteSet(*[x if fcond(x) for x in S])
+lst=[x for x in S if x**2<d]
+cond=r"n^2 \leq %d" % d 
 
 A=randitem([r"\mathbb{N}",r"\mathbb{Z}"])
 
