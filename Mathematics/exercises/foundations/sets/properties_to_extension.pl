@@ -6,7 +6,7 @@ lang = fr
 
 before ==
 keyboards_JSON['virtualKeyboards']="sets"
-input1.config = keyboards_JSON
+input.config = keyboards_JSON
 
 n="n"
 cond=r"n \leq %d" % randint(5,25)
