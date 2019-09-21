@@ -17,7 +17,7 @@ sol_tex=latex(sol)
 ==
 
 text == 
-Ecrire en extension l'ensemble $!\\{ {{n}} \in {{A}} | {{cond}} \\}!$.
+Ecrire en extension l'ensemble $!\\{ {{n}} \in {{A}} \:|\: {{cond}} \\}!$.
 ==
 
 evaluator ==
