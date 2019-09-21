@@ -19,7 +19,7 @@ Ecrire en extension l'ensemble $! \mathcal{P}(\\{ {{A_tex}}\\} ) !$.
 ==
 
 evaluator ==
-score,_,feedback=ans_struct_expr(input1.value,sol,"composite")
+score,_,feedback=ans_struct_expr(input.value,sol,"set")
 ==
 
 solution ==
