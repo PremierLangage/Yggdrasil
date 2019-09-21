@@ -19,11 +19,11 @@ var('x')
 if param['roots']=='int':
     P=s*(x+a+b*I)*(x+a-b*I)
 if param['roots']=='int2':
-    P=s*(x+a+b*I)*(x+a2+b2*I)
+    P=poly(s*(x+a+b*I)*(x+a2+b2*I))
 if param['roots']=='rat':
     P=s*(c*x+a+b*I)*(c*x+a-b*I)
 lstsol=list(solveset(P,x,domain=S.Complexes))
-P=simplify(collect(expand(P),x))
+#P=simplify(collect(expand(P),x))
 latexP=latex(P)
 solution=r"Les solutions sont $! \displaystyle %s !$ et $! \displaystyle %s !$." % (latex(lstsol[0]),latex(lstsol[1]))
 ==
