@@ -10,10 +10,10 @@ input.config = keyboards_JSON
 
 n="n"
 d=randint(5,7)
-ff = lambda x : x < 5
+fcond = lambda x : x < 5
 cond=r"n \leq %d" % d 
 S=list(range(d))
-B=FiniteSet(*[x for x in S if ff(x)])
+B=FiniteSet(*[x for x in S if fcond(x)])
 
 A=randitem([r"\mathbb{N}",r"\mathbb{Z}"])
 
