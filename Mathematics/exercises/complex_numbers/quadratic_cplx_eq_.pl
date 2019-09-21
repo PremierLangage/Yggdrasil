@@ -11,11 +11,15 @@ keyboards_JSON['virtualKeyboards']="complexes"
 input.config = keyboards_JSON
 
 a,b=list_randint(2,-4,4,[0])
+a2,b2=list_randint(2,-4,4,[0])
+
 c=randint(-5,5,[0,1,-1])
 s=randitem([-1,1])
 var('x')
 if param['roots']=='int':
     P=s*(x+a+b*I)*(x+a-b*I)
+if param['roots']=='int2':
+    P=s*(x+a+b*I)*(x+a2+b2*I)
 if param['roots']=='rat':
     P=s*(c*x+a+b*I)*(c*x+a-b*I)
 lstsol=list(solveset(P,x,domain=S.Complexes))
