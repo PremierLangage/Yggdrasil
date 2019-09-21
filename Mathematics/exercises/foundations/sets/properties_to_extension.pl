@@ -13,7 +13,7 @@ d=randint(5,7)
 f = lambda x : x < 5
 cond=r"n \leq %d" % d 
 S=list(range(d))
-B=FiniteSet(*[x for x in S if f(x)])
+B=FiniteSet(*[x for x in S])
 
 A=randitem([r"\mathbb{N}",r"\mathbb{Z}"])
 
