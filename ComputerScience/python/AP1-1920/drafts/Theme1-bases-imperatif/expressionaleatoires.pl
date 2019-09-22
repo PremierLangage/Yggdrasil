@@ -10,7 +10,7 @@ N = 3
 op1 = [str(random.randint(1, 10)) for n in range(N)]
 op2 = [str(random.randint(1, 10)) for n in range(N)]
 ope = [random.choice(['+','*','-','/','//','%','**']) for n in range(N)]
-res = [ eval(op1[n]+ope[n]+ op2[n] ) for n in range(N)]
+res = [ eval(op1[n]+ope[n]+ op2[n]) for n in range(N)]
 
 inputs = []
 for i in range(N):
@@ -38,7 +38,7 @@ text=
 form== #|html|
 <ul>
 {% for input in inputs %}
-<li> $% {{op1[loop.index0]}} %$ + $% {{op2[loop.index0]}}  %$  = {{ input|component }}  </li>
+<li> $% {{op1[loop.index0]}} %$ {{ope[loop.index0]}} $% {{op2[loop.index0]}}  %$  = {{ input|component }}  </li>
 {% endfor %}
 </ul>
 ==
