@@ -9,7 +9,7 @@ keyboards_JSON['virtualKeyboards']="sets"
 input.config = keyboards_JSON
 
 S=randitem([r"\mathbb{N}",r"\mathbb{Z}"])
-cond="square"
+cond=randitem(["square","cube2"])
 
 if S==r"\mathbb{N}":
     lstS=list(range(20))
