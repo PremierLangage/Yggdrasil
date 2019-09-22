@@ -23,7 +23,7 @@ evaluator== #|python|
 cpt = 0
 for i in range(N):
     box = globals()[f"input{i}"]
-    if int(box.value) == res[i]:
+    if box.value == str(res[i]):
         cpt += 1
 
 score = int(cpt / N * 100)
