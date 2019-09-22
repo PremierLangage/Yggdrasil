@@ -8,7 +8,7 @@ before ==
 keyboards_JSON['virtualKeyboards']="sets"
 input.config = keyboards_JSON
 
-S=randitem(randitem([r"\mathbb{N}",r"\mathbb{Z}"])
+S=randitem([r"\mathbb{N}",r"\mathbb{Z}"])
 cond="square"
 
 if S==r"\mathbb{N}":
