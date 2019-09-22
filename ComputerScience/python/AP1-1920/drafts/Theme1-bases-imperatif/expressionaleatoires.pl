@@ -5,7 +5,7 @@ builder =@ /builder/before.py
 
 before== #|python|
 import random
-try=0
+essai = 0
 N = 3
 op1 = [str(random.randint(1, 10)) for n in range(N)]
 op2 = [str(random.randint(1, 10)) for n in range(N)]
@@ -20,7 +20,7 @@ for i in range(N):
 ==
 
 evaluator== #|python|
-try+=1
+essai+=1
 cpt = 0
 for i in range(N):
     box = globals()[f"input{i}"]
@@ -30,8 +30,8 @@ for i in range(N):
 score = int(cpt / N * 100)
 feedback = 'Bravo' if score == 100 else 'Corriger les erreurs'
 
-if score <100:
-    eval(before)
+if score <100 and essai>1 :
+    exec(before)
 grade = (score, feedback)
 ==
 
