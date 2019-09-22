@@ -909,9 +909,9 @@ def ans_expr(strans,sol,local_dict={}):
 
 def ans_struct_expr(strans,sol,typestruct,local_dict={}):
     test1=[(is_expr,-1,"NotExpr","Votre réponse n'est pas une expression valide.")]
-    return ans_struct_(strans,sol,typestruct,local_dict,test1,test2)
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
+    return ans_struct_(strans,sol,typestruct,local_dict,test1,test2)
 
 #################
 # Complex numbers
@@ -960,6 +960,7 @@ def ans_poly(strans,sol,x,domain="RR",imaginary_unit="i",form=""):
         test1.append((lambda expr : is_poly_factorized(expr,x,domain),-1,"NotFactorized","Votre réponse n'est pas un polynôme factorisé."))
     test2=[]
     return ans_(strans,sol,local_dict,test1,test2)
+
 
 
 
