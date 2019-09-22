@@ -46,7 +46,9 @@ text=
 form== #|html|
 <ul>
 {% for input in inputs %}
+{% if not solved[loop.index0]%}
 <li> $% {{op1[loop.index0]}} %$ {{ope[loop.index0]}} $% {{op2[loop.index0]}}  %$  = {{ input|component }}  </li>
+{% endif %}
 {% endfor %}
 </ul>
 ==
