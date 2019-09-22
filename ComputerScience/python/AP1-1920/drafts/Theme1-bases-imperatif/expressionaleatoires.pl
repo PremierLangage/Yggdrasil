@@ -29,6 +29,9 @@ for i in range(N):
 
 score = int(cpt / N * 100)
 feedback = 'Bravo' if score == 100 else 'Corriger les erreurs'
+
+if score <100:
+    eval(before)
 grade = (score, feedback)
 ==
 
