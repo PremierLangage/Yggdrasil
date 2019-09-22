@@ -17,7 +17,7 @@ elif S==r"\mathbb{Z}":
     lstS=list(range(-20,20))
 
 if cond=="square":
-    globals()[d]=randint(5,7)
+    globals()['d']=randint(5,7)
     fc = lambda x : x**2 < d
     cond=r"n^2 \leq %d" % d 
 
