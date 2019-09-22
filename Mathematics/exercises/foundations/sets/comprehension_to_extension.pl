@@ -18,7 +18,7 @@ elif S==r"\mathbb{Z}":
 
 if cond=="square":
     d=randint(5,7)
-    fc = lambdafc x : x**2 < d
+    fc = lambda x : x**2 < d
     cond=r"n^2 \leq %d" % d 
 
 lstA=[]
