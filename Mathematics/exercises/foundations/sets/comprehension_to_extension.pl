@@ -20,7 +20,7 @@ if cond=="square":
     globals()['d']=randint(5,7)
     lstA=[x for x in lstS if x**2 < d]
     cond=r"n^2 \leq %d" % d
-eif cond=="cube":
+elif cond=="cube":
     globals()['d']=randint(5,7)
     lstA=[x for x in lstS if x**3 < d]
     cond=r"n^3 \leq %d" % d 
