@@ -16,7 +16,7 @@ if S==r"\mathbb{N}":
 elif S==r"\mathbb{Z}":
     lstS=S=list(range(-20,20))
 
-if cond="square":
+if cond=="square":
     d=randint(5,7)
     lstA=[x for x in lstS if x**2<d]
     cond=r"n^2 \leq %d" % d 
