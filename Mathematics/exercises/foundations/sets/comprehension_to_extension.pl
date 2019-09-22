@@ -9,7 +9,7 @@ keyboards_JSON['virtualKeyboards']="sets"
 input.config = keyboards_JSON
 
 S=randitem([r"\mathbb{N}",r"\mathbb{Z}"])
-cond=randitem(["square","cube2"])
+cond=randitem(["square","square2"])
 
 if S==r"\mathbb{N}":
     lstS=list(range(20))
@@ -17,14 +17,14 @@ elif S==r"\mathbb{Z}":
     lstS=list(range(-20,20))
 
 if cond=="square":
-    globals()['d']=randint([4,6,9,15,16,19,21,25,27])
-    lstA=[x for x in lstS if x**2 < d]
+    globals()['a']=randint([4,6,9,15,16,19,21,25,27])
+    lstA=[x for x in lstS if x**2 < a]
     cond=r"n^2 \leq %d" % d
-elif cond=="cube":
-    globals()['d']=randint(5,7)
-    lstA=[x for x in lstS if x**3 < d]
-    cond=r"n^3 \leq %d" % d 
-
+elif cond=="square2":
+    globals()['a']=randint([1,4,6,9,15,16,19,21])
+    globals()['b']=randint([27,36,49,50,64,70,81,90,100,110])
+    lstA=[x for x in lstS if x**2 < d]
+    cond=r" %d \leq n^2 \leq %d" % (a,b)
 
 
 sol=FiniteSet(*lstA)
