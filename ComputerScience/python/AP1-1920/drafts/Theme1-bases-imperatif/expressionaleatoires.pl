@@ -8,7 +8,7 @@ nbechec%0
 before== #|python|
 import random
 essai = 4
-N = 3
+N = 10
 op1 = [str(random.randint(1, 10)) for n in range(N)]
 op2 = [str(random.randint(1, 10)) for n in range(N)]
 ope = [random.choice(['+','*','-','/','//','%','**']) for n in range(N)]
@@ -22,7 +22,7 @@ for i in range(N):
 ==
 
 evaluator== #|python|
-essai-=1
+
 cpt = 0
 for i in range(N):
     box = globals()[f"input{i}"]
@@ -34,7 +34,7 @@ for i in range(N):
 
 score = int(cpt / N * 100)
 feedback = 'Bravo' if score == 100 else 'Corriger les erreurs'
-
+essai -= 1 if score != 100 else 0
 if score <100 and essai<1 :
     exec(before)
     nbechec += 1
@@ -44,7 +44,10 @@ grade = (score, feedback)
 
 title = Expressions aléatoires
 # y a pas besoin d'énoncé 
-text=
+text==
+Attention vous avez un nombre limité d'essai pour répondre a toutes les égalitées.
+Sinon cela resdémarre au début avec {{N}} égalités.
+==
 
 form== #|html|
 Nombre d'essais : {{essai}}
