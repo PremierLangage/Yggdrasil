@@ -46,7 +46,12 @@ title = Expressions aléatoires
 # y a pas besoin d'énoncé 
 text==
 Attention vous avez un nombre limité d'essai pour répondre a toutes les égalitées.
-Sinon cela resdémarre au début avec {{N}} égalités.
+
+Sinon cela redémarre au début avec {{N}} égalités.
+
+Oui heureusement il y en a des faciles...
+
+**Attention il faut fournir une valeur numérique sur chaque ligne.**
 ==
 
 form== #|html|
