@@ -13,7 +13,7 @@ op1 = [str(random.randint(1, 10)) for n in range(N)]
 op2 = [str(random.randint(1, 10)) for n in range(N)]
 ope = [random.choice(['+','*','-','/','//','%','**']) for n in range(N)]
 res = [ eval(op1[n]+ope[n]+ op2[n]) for n in range(N)]
-
+solved=[ False for n in range(N)]
 inputs = []
 for i in range(N):
     inp = Input()
@@ -35,7 +35,7 @@ feedback = 'Bravo' if score == 100 else 'Corriger les erreurs'
 if score <100 and essai>1 :
     exec(before)
     nbechec += 1
-    feedback ="essayez avec d'autres valeurs nombre d'echec= "+nbechec
+    feedback ="essayez avec d'autres valeurs nombre d'echec= "+str(nbechec)
 grade = (score, feedback)
 ==
 
