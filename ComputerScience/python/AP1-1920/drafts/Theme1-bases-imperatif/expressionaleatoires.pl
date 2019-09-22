@@ -5,7 +5,7 @@ builder =@ /builder/before.py
 
 before== #|python|
 import random
-
+try=0
 N = 3
 op1 = [str(random.randint(1, 10)) for n in range(N)]
 op2 = [str(random.randint(1, 10)) for n in range(N)]
@@ -20,6 +20,7 @@ for i in range(N):
 ==
 
 evaluator== #|python|
+try+=1
 cpt = 0
 for i in range(N):
     box = globals()[f"input{i}"]
