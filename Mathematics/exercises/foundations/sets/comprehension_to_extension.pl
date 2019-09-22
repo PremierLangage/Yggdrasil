@@ -17,8 +17,8 @@ elif S==r"\mathbb{Z}":
     lstS=list(range(-20,20))
 
 if cond=="square":
-    d=randint(5,7)
-    lstA=[x for x in lstS if (x**2 < 5)]
+    d=5
+    lstA=[x for x in lstS if (x**2 < d)]
     cond=r"n^2 \leq %d" % d 
 
 sol=FiniteSet(*lstA)
