@@ -22,9 +22,9 @@ if cond=="square":
     cond=r"n^2 \leq %d" % d 
 
 lstA=[]
-    for x in lstS:
-        if fc(x):
-            lstA.append(x)
+for x in lstS:
+    if fc(x):
+        lstA.append(x)
 
 sol=FiniteSet(*lstA)
 sol_tex=latex(sol)
