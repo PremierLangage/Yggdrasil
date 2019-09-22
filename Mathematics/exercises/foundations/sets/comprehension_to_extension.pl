@@ -17,12 +17,12 @@ elif S==r"\mathbb{Z}":
     lstS=list(range(-20,20))
 
 if cond=="square":
-    globals()['a']=randint([4,6,9,15,16,19,21,25,27])
+    globals()['a']=randitem([4,6,9,15,16,19,21,25,27])
     lstA=[x for x in lstS if x**2 <= a]
     cond=r"n^2 \leq %d" % a
 elif cond=="square2":
-    globals()['a']=randint([1,4,6,9,15,16,19,21])
-    globals()['b']=randint([27,36,49,50,64,70,81,90,100,110])
+    globals()['a']=randitem([1,4,6,9,15,16,19,21])
+    globals()['b']=randitem([27,36,49,50,64,70,81,90,100,110])
     lstA=[x for x in lstS if a <= x**2 <= b]
     cond=r" %d \leq n^2 \leq %d" % (a,b)
 
