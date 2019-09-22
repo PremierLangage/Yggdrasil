@@ -26,8 +26,11 @@ essai+=1
 cpt = 0
 for i in range(N):
     box = globals()[f"input{i}"]
-    if box.value == str(res[i]):
+    if solved[i]:
         cpt += 1
+    elif box.value == str(res[i]):
+        cpt += 1
+        solved[i]= True
 
 score = int(cpt / N * 100)
 feedback = 'Bravo' if score == 100 else 'Corriger les erreurs'
