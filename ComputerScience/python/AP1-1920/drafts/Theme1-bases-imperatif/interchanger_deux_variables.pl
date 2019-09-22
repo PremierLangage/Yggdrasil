@@ -14,14 +14,18 @@ a=b+1
 
 a1 = a
 b1 = b
-exec(response['answer'])
-if a == b1 and a1 == b :
-    grade = (100,'OK')
-elif a==b:
-    grade=(0,"""Pensez à conserver la variable
-     que vous écrassez en premier dans une autre variable temporaire.""")
+try:
+    exec(response['answer'])
+except Exception as e:
+    grade=(0,""" Votre code ne compile pas""")
 else:
-    grade = (0,"""Vous devez manipuler les variables a et b.""")
+    if a == b1 and a1 == b :
+        grade = (100,'OK')
+    elif a==b:
+        grade=(0,"""Pensez à conserver la variable
+        que vous écrassez en premier dans une autre variable temporaire.""")
+    else:
+        grade = (0,"""Vous devez manipuler les variables a et b.""")
 ==
 
 title== #|html|
