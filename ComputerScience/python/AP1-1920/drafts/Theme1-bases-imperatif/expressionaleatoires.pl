@@ -3,6 +3,8 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+nbechec%0
+
 before== #|python|
 import random
 essai = 0
@@ -32,6 +34,8 @@ feedback = 'Bravo' if score == 100 else 'Corriger les erreurs'
 
 if score <100 and essai>1 :
     exec(before)
+    nbechec += 1
+    feedback ="essayez avec d'autres valeurs nombre d'echec= "+nbechec
 grade = (score, feedback)
 ==
 
