@@ -18,13 +18,10 @@ elif S==r"\mathbb{Z}":
 
 if cond=="square":
     globals()['d']=randint(5,7)
-    fc = lambda x : x**2 < d
+    lstA=[x for x in lstS if x**2 < d]
     cond=r"n^2 \leq %d" % d 
 
-lstA=[]
-for x in lstS:
-    if fc(x):
-        lstA.append(x)
+
 
 sol=FiniteSet(*lstA)
 sol_tex=latex(sol)
