@@ -1,0 +1,42 @@
+extends = /Mathematics/template/mathinput.pl
+
+title = Définition d'un ensemble en compréhension
+
+lang = fr
+
+before ==
+keyboards_JSON['virtualKeyboards']="sets"
+input.config = keyboards_JSON
+
+S=randitem(randitem([r"\mathbb{N}",r"\mathbb{Z}"])
+cond="square"
+
+if S==r"\mathbb{N}":
+    lstS=S=list(range(20))
+elif S==r"\mathbb{Z}":
+    lstS=S=list(range(-20,20))
+
+if cond="square":
+    d=randint(5,7)
+    lstA=[x for x in lstS if x**2<d]
+    cond=r"n^2 \leq %d" % d 
+
+sol=FiniteSet(*lstA)
+sol_tex=latex(sol)
+==
+
+text == 
+{{a}}
+Ecrire en extension l'ensemble $!\\{ n \in {{A}} \:|\: {{cond}} \\}!$.
+==
+
+evaluator ==
+score,_,feedback=ans_struct_expr(input.value,sol,"set")
+==
+
+solution ==
+La solution est $! { {{sol_tex}} } !$.
+==
+
+
+
