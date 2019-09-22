@@ -47,6 +47,7 @@ title = Expressions aléatoires
 text=
 
 form== #|html|
+Nombre d'essais : {{essai}}
 <ul>
 {% for input in inputs %}
 {% if not solved[loop.index0]%}
