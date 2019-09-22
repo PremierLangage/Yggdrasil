@@ -18,12 +18,12 @@ elif S==r"\mathbb{Z}":
 
 if cond=="square":
     globals()['a']=randint([4,6,9,15,16,19,21,25,27])
-    lstA=[x for x in lstS if x**2 < a]
+    lstA=[x for x in lstS if x**2 <= a]
     cond=r"n^2 \leq %d" % d
 elif cond=="square2":
     globals()['a']=randint([1,4,6,9,15,16,19,21])
     globals()['b']=randint([27,36,49,50,64,70,81,90,100,110])
-    lstA=[x for x in lstS if x**2 < d]
+    lstA=[x for x in lstS if a <= x**2 <= b]
     cond=r" %d \leq n^2 \leq %d" % (a,b)
 
 
