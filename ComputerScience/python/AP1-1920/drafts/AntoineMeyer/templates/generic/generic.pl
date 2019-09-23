@@ -4,7 +4,7 @@
 @ utils/coderunner.py
 @ utils/testfeedback.py
 @ utils/mockinput.py
-@ utils/test_group.html
+@ utils/testgroup.html
 
 title = <em>(Pas de titre défini)</em>
 text = <em>(Pas d'énoncé défini)</em>
