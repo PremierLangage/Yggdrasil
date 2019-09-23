@@ -10,6 +10,7 @@ Démo GeoGebra
 ==
 
 text== #|html|
+Tracer un cercle de rayon 2.
 ==
 
 form==
