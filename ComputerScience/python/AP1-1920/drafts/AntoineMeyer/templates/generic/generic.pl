@@ -1,6 +1,7 @@
 @ /utils/sandboxio.py
 @ builder.py
 @ grader.py
+@ utils/coderunner.py
 
 title = <em>(Pas de titre défini)</em>
 text = <em>(Pas d'énoncé défini)</em>
