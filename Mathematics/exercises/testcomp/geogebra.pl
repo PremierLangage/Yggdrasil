@@ -28,7 +28,7 @@ extrajs==
     window.addEventListener("load", function() { 
         ggbApp.inject('ggb-element');
     });
-    ggbApp.evalCommand("A = (1,1)");
+    document.ggbApp.evalCommand("A = (1,1)");
 </script>
 <script>
     function onReadyPL() {
