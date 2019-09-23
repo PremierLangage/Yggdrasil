@@ -32,31 +32,10 @@ extrajs==
 </script>
 <script>
     function onReadyPL() {
-        const components = document.querySelectorAll('c-math-input');
-        let index = 0;
-        components.forEach(component => {
-            const container = component.querySelector('#math-input-component');
-            container.id += index.toString();
-
-            const math =  MathLive.makeMathField(container, {
-                onContentDidChange: (field) => {
-                    component.value = field.$latex();
-                },
-                ...component.config,
-            });
-
-            math.textarea.addEventListener('blur', () => {
-                math.$perform('hideVirtualKeyboard');
-            }, false);
-
-            const toggle = math.$el().querySelector('.ML__virtual-keyboard-toggle');
-            toggle.addEventListener('click', () => {
-                math.focus();
-            });
-
-            math.$insert(component.value || '', '{ format: "latex" }');
-            index++;
-        });
+var applet = document.ggbApplet;
+applet.evalCommand("A = (1,1)");
+applet.evalCommand("B = (3,2)");
+applet.evalCommand("s = Droite[A, B]");
     }
 </script>
 ==
