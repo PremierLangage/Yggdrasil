@@ -26,16 +26,15 @@ extrajs==
 <script>  
     var ggbApp = new GGBApplet({"appName": "classic", "width": 600, "height": 400, "showToolBar": true, "customToolBar" :"0 | 1 | 10"}, true);
     window.addEventListener("load", function() { 
-        ggbApp.evalCommand("A = (1,1)");
         ggbApp.inject('ggb-element');    
     });
 </script>
 <script>
     function onReadyPL() {
-var applet = document.ggbApplet;
-applet.evalCommand("A = (1,1)");
-applet.evalCommand("B = (3,2)");
-applet.evalCommand("s = Droite[A, B]");
+        var applet = document.ggbApplet;
+        applet.evalCommand("A = (1,1)");
+        applet.evalCommand("B = (3,2)");
+        applet.evalCommand("s = Droite[A, B]");
     }
 </script>
 ==
