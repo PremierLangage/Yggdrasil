@@ -16,7 +16,7 @@
 # print(a, b, c)
 # 
 
-extends = ../templates/ap1_template.pl
+extends = ../templates/generic/generic.pl
 title = Tri de trois valeurs
 
 text==
@@ -50,4 +50,5 @@ for x, y, z in permutations((1, 2, 3)):
     assert_no_global_change()
 end_test_group()
 ==
+
 
