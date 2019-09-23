@@ -15,6 +15,7 @@ Tracer un cercle de rayon 2.
 
 form==
 <div id="ggb-container"></div> 
+<input type="button" value="Faire la construction" onclick="maConstruction();">
 ==
 
 evaluator== #|python|
@@ -43,8 +44,14 @@ var parameters = {
         "useBrowserForJS":false
     }
 var applet = new GGBApplet(parameters, '5.0', 'ggb-container');
-applet.evalCommand('Segment[(0,0),(0,0)]');
 window.onload = function() { applet.inject(); }
+
+function maConstruction(){
+var applet = document.applet;
+applet.evalCommand("A = (1,1)");
+applet.evalCommand("B = (3,2)");
+applet.evalCommand("s = Droite[A, B]");
+}
 </script>
 
 ==
