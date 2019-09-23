@@ -6,13 +6,13 @@
             aria-controls="{{ test.make_id() }}"
             data-toggle="collapse"
             data-target="#{{ test.make_id() }}">
-        {{ str(test) }}
+        {{ test.__str__() }}
     </button>
     <div id="test-{{num}}" class="show">
         <div class="card card-danger;"
              style="background-color: Tomato;">
             <p>
-                {{ str(test) }}
+                {{ test.__str__() }}
             </p>
         </div>
     </div>
@@ -23,13 +23,13 @@
             class="btn btn-block btn-success"
             data-toggle="collapse"
             data-target="#{{ test.make_id() }}">
-        {{ str(test) }}
+        {{ test.__str__() }}
     </button>
     <div id="{{ test.make_id() }}" class="collapse">
         <div class="card card-success;"
              style="background-color: LightGreen;">
             <p>
-                {{ str(test) }}
+                {{ test.__str__() }}
             </p>
         </div>
     </div>
