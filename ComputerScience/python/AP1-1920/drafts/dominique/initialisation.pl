@@ -20,7 +20,7 @@ pltest="""
 True
 """.format(var, type_var)
 
-text=
+text==
 
  la variable **{{var}}** avec une valeur quelconque
  de type **{{type_var}}** 
