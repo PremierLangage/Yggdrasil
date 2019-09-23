@@ -25,10 +25,6 @@ pltest1="""
 True
 """.format(var, type_var, type_var)
 
-pltest2="""
->>> str(type({}))
-<class '{}'>
-""".format(var, type_var)
 
 
 
