@@ -21,9 +21,9 @@ True
 """.format(var, var)
 
 pltest1="""
->>> type({})=={}
+>>> type({})=={} # La variables est elle du bon type: {}
 True
-""".format(var, type_var)
+""".format(var, type_var, type_var)
 ==
 
 text==
