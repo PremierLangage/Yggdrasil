@@ -1,0 +1,31 @@
+{% if test_group.status %}
+<div style="border:1px solid black;padding:0%;margin:1%;background-color:LightGreen;border-radius:4px;">
+    <button type="button"
+            class="btn btn-block btn-success"
+            data-toggle="collapse"
+            data-target="#suite{{test_group.name}}">
+        {{test_group.title}}
+    </button>
+    <div id="group-{{test_group.safe_title()}}" class="collapse">
+        <div class="card card-success;" style="background-color: LightGreen;">
+{% else %}
+<div style="border:1px solid black;padding:1%;margin:1%;background-color:Tomato;border-radius:4px;">
+    <button type="button"
+            class="btn btn-block  btn-danger"
+            data-toggle="collapse"
+            data-target="#suite{{test_group.name}}"
+            aria-expanded="true"
+            aria-controls="suite{{test_group.name}}">
+        {{test_group.title}}
+    </button>
+    <div id="group-{{test_group.safe_title()}}" class="show">
+        <div class="card card-danger;" style="background-color: Tomato;">
+{% endif %}
+{% for test in test_group.tests %}
+    {{ test.render() }}
+{% endfor %}
+        </div>
+    </div>
+</div>
+
+
