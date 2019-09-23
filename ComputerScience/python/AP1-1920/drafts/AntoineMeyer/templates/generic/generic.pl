@@ -3,6 +3,7 @@
 @ grader.py
 @ utils/coderunner.py
 @ utils/testfeedback.py
+@ utils/mockinput.py
 
 title = <em>(Pas de titre défini)</em>
 text = <em>(Pas d'énoncé défini)</em>
