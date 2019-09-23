@@ -14,7 +14,7 @@ Tracer un cercle de rayon 2.
 ==
 
 form==
-<div id="ggb-element"></div> 
+<div id="ggb-container"></div> 
 ==
 
 evaluator== #|python|
@@ -42,7 +42,7 @@ var parameters = {
         "errorDialogsActive":true,
         "useBrowserForJS":false
     }
-var applet = new GGBApplet(parameters, '5.0', 'applet_container');
+var applet = new GGBApplet(parameters, '5.0', 'ggb-container');
 window.onload = function() { applet.inject(); }
 </script>
 
