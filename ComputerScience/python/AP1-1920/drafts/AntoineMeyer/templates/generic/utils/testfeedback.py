@@ -39,7 +39,7 @@ class TestFeedback:
         return _prefix[self.status]
 
     def render(self):
-        with open('templates/generic/jinja/testitem.html', "r") as tempfile:
+        with open('testitem.html', "r") as tempfile:
             templatestring = tempfile.read()
         template = jinja2.Template(templatestring)
         return template.render(test=self, stat=stat_dict)
@@ -279,7 +279,7 @@ class TestGroup:
         ).lower()
 
     def render(self):
-        with open('templates/generic/jinja/testgroup.html',"r") as tempfile:
+        with open('testgroup.html',"r") as tempfile:
             templatestring = tempfile.read()
         template = jinja2.Template(templatestring)
         return template.render(testgroup=self, stat=stat_dict)
