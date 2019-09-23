@@ -23,7 +23,7 @@ grade = (100, 'OK')
 
 extrajs==
 <script src="https://www.geogebra.org/apps/deployggb.js"></script>
-<script>
+<script type="text/javascript">
 var parameters = {
         "width":600,
         "height":245,
@@ -43,6 +43,7 @@ var parameters = {
         "useBrowserForJS":false
     }
 var applet = new GGBApplet(parameters, '5.0', 'ggb-container');
+applet.evalCommand('Segment[(0,0),(0,0)]');
 window.onload = function() { applet.inject(); }
 </script>
 
