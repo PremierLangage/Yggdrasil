@@ -15,15 +15,19 @@ random.seed(seed)
 type_var = random.choice(["int","str","float","bool"])
 var = random.choice(["a", "b", "c", "X", "Y","PIERRE","feuille","ciseaux"])
 
-pltest="""
+pltest0="""
+>>> "{}" in globals() # La variable {} est elle définie 
+True
+""".format(var, var)
+
+pltest1="""
 >>> type({})=={}
 True
 """.format(var, type_var)
 ==
 
 text==
-
- la variable **{{var}}** avec une valeur quelconque
+ Initialisez la variable **{{var}}** avec une valeur quelconque
  de type **{{type_var}}** 
 ==
 
