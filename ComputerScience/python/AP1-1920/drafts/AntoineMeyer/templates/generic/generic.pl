@@ -1,6 +1,6 @@
 @ /utils/sandboxio.py
-@ builders/ap1_builder.py [builder.py]
-@ graders/ap1_grader.py [grader.py]
+@ ../templates/generic/builder.py
+@ ../templates/generic/grader.py
 
 title = <em>(Pas de titre défini)</em>
 text = <em>(Pas d'énoncé défini)</em>
