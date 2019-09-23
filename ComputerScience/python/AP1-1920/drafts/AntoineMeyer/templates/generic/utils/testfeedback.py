@@ -29,7 +29,7 @@ _default_params = {
 
 class TestFeedback:
     num = 0
-    
+
     def __init__(self, status, params):
         self.status = status
         self.params = _default_params.copy()
@@ -39,11 +39,11 @@ class TestFeedback:
         return _prefix[self.status]
 
     def render(self):
-        with open('testitem.html', "r") as tempfile:
+        with open('templates/generic/jinja/testitem.html', "r") as tempfile:
             templatestring = tempfile.read()
         template = jinja2.Template(templatestring)
         return template.render(test=self, stat=stat_dict)
-    
+
     def make_id(self):
         TestFeedback.num += 1
         return TestFeedback.num
@@ -279,7 +279,7 @@ class TestGroup:
         ).lower()
 
     def render(self):
-        with open('testgroup.html',"r") as tempfile:
+        with open('templates/generic/jinja/testgroup.html',"r") as tempfile:
             templatestring = tempfile.read()
         template = jinja2.Template(templatestring)
         return template.render(testgroup=self, stat=stat_dict)
