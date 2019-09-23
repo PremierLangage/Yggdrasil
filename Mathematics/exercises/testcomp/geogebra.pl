@@ -12,7 +12,7 @@ text== #|html|
 ==
 
 form==
-
+<div id="ggb-element"></div> 
 ==
 
 evaluator== #|python|
@@ -21,6 +21,12 @@ grade = (100, 'OK')
 
 extrajs==
 <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<script>  
+    var ggbApp = new GGBApplet({"appName": "graphing", "width": 800, "height": 600, "showToolBar": true, "showAlgebraInput": true, "showMenuBar": true }, true);
+    window.addEventListener("load", function() { 
+        ggbApp.inject('ggb-element');
+    });
+</script>
 <script>
     function onReadyPL() {
         const components = document.querySelectorAll('c-math-input');
