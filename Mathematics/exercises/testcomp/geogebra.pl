@@ -43,7 +43,7 @@ var parameters = {
         "useBrowserForJS":false
     }
 var applet = new GGBApplet(parameters, '5.0', 'ggb-container');
-var b=applet.evalCommand('Segment[(0,0),(0,0)]');
+applet.evalCommand('Segment[(0,0),(0,0)]');
 window.onload = function() { applet.inject(); }
 </script>
 
