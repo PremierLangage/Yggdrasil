@@ -1,0 +1,38 @@
+{%  if test.status == stat.FAIL %}
+<div style="border:1px solid black;padding:1px;margin:1px;background-color:Tomato;border-radius:4px;">
+    <button type="button"
+            class="btn btn-block btn-danger"
+            aria-expanded="true"
+            aria-controls="{{ test.make_id() }}"
+            data-toggle="collapse"
+            data-target="#{{ test.make_id() }}">
+        {{ str(test) }}
+    </button>
+    <div id="test-{{num}}" class="show">
+        <div class="card card-danger;"
+             style="background-color: Tomato;">
+            <p>
+                {{ str(test) }}
+            </p>
+        </div>
+    </div>
+</div>
+{% else %}
+<div style="border:1px white;padding:1px;margin:1px;background-color:LightGreen;border-radius:4px;">
+    <button type="button"
+            class="btn btn-block btn-success"
+            data-toggle="collapse"
+            data-target="#{{ test.make_id() }}">
+        {{ str(test) }}
+    </button>
+    <div id="{{ test.make_id() }}" class="collapse">
+        <div class="card card-success;"
+             style="background-color: LightGreen;">
+            <p>
+                {{ str(test) }}
+            </p>
+        </div>
+    </div>
+</div>
+{%  endif %}
+
