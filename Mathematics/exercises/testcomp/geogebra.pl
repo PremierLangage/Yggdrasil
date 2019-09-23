@@ -26,7 +26,6 @@ extrajs==
 <script src="https://www.geogebra.org/apps/deployggb.js"></script>
 <script type="text/javascript">
 var parameters = {
-        "id": "ggbApplet",
         "width":600,
         "height":245,
         "prerelease":false,
@@ -44,7 +43,7 @@ var parameters = {
         "errorDialogsActive":true,
         "useBrowserForJS":false
     }
-var applet = new GGBApplet(parameters, '6.0', 'ggb-container');
+var applet = new GGBApplet(parameters, '5.0', 'ggb-container');
 window.onload = function() { applet.inject(); }
 
 function maConstruction(){
