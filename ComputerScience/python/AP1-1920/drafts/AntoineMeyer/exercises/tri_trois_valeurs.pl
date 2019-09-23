@@ -43,7 +43,6 @@ from itertools import permutations
 
 begin_test_group("Tris d'éléments distincts")
 for x, y, z in permutations((1, 2, 3)):
-    # TODO: display global change in feedback
     set_globals(a=x, b=y, c=z)
     run()
     assert_output("1 2 3\n")
