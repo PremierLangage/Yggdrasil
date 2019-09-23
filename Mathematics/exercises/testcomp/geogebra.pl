@@ -49,8 +49,6 @@ window.onload = function() { applet.inject(); }
 function maConstruction(){
 var applet = document.applet;
 applet.evalCommand("A = (1,1)");
-applet.evalCommand("B = (3,2)");
-applet.evalCommand("s = Droite[A, B]");
 }
 </script>
 
