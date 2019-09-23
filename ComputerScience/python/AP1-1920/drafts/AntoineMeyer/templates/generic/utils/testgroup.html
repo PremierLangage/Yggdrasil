@@ -21,7 +21,7 @@
     <div id="{{ testgroup.make_id() }}" class="show">
         <div class="card card-danger;" style="background-color: Tomato;">
 {% endif %}
-{% for test in test_group.tests %}
+{% for test in testgroup.tests %}
     {{ test.render() }}
 {% endfor %}
         </div>
