@@ -4,6 +4,15 @@ import unicodedata
 
 FAIL, PASS, INFO, EXEC, EVAL, GROUP = range(6)
 
+# TODO: change this, ugly
+stat_dict = {
+    "FAIL": FAIL,
+    "PASS": PASS,
+    "INFO": INFO,
+    "EXEC": EXEC,
+    "EVAL": EVAL
+}
+
 _prefix = {
     FAIL: "[erreur] ",
     PASS: "[ok] ",
@@ -19,6 +28,8 @@ _default_params = {
 
 
 class TestFeedback:
+    num = 0
+    
     def __init__(self, status, params):
         self.status = status
         self.params = _default_params.copy()
@@ -28,7 +39,14 @@ class TestFeedback:
         return _prefix[self.status]
 
     def render(self):
-        return str(self)
+        with open('testitem.html', "r") as tempfile:
+            templatestring = tempfile.read()
+        template = jinja2.Template(templatestring)
+        return template.render(test=self, stat=stat_dict)
+    
+    def make_id(self):
+        TestFeedback.num += 1
+        return TestFeedback.num
 
 
 class OutputTestFeedback(TestFeedback):
@@ -255,15 +273,14 @@ class TestGroup:
     def append(self, test: TestFeedback):
         self.tests.append(test)
 
-    def safe_title(self):
-        return ''.join(x for x in unicodedata.normalize('NFKD', self.title)
-                       if x.isalnum()).lower()
+    def make_id(self):
+        return 'group-' + ''.join(
+            x for x in unicodedata.normalize('NFKD', self.title) if x.isalnum()
+        ).lower()
 
     def render(self):
-        with open('testgroup.html',"r") as \
-                tempfile:
+        with open('testgroup.html',"r") as tempfile:
             templatestring = tempfile.read()
         template = jinja2.Template(templatestring)
-        return template.render(test_group=self)
-
+        return template.render(testgroup=self, stat=stat_dict)
 
