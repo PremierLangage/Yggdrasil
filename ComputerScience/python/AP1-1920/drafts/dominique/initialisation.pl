@@ -13,19 +13,18 @@ before== #|python|
 import random 
 random.seed(seed)
 type_var = random.choice(["int","str","float","bool"])
-var = random.choice(["a", "b", "c", "X", "Y"])
+var = random.choice(["a", "b", "c", "X", "Y","PIERRE","feuille","ciseaux"])
 
 pltest="""
 >>> type({})=={}
 True
 """.format(var, type_var)
 
-text="""
+text=
 
- la variable **{}** avec une valeur quelconque
- de type **{}** 
-""".format(var,type_var)
-
+ la variable **{{var}}** avec une valeur quelconque
+ de type **{{type_var}}** 
 ==
+
 
 
