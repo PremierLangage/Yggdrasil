@@ -27,6 +27,7 @@ extrajs==
     var ggbApp = new GGBApplet({"appName": "classic", "width": 600, "height": 400, "showToolBar": true, "customToolBar" :"0 | 1 | 10"}, true);
     window.addEventListener("load", function() { 
         ggbApp.inject('ggb-element');
+        ggbApp.evalCommand("A = (1,1)");
     });
 </script>
 <script>
