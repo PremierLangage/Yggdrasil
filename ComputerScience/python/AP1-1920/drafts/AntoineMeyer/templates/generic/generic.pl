@@ -27,6 +27,5 @@ form==
 # définition de la procédure de validation
 grader==
 begin_test_group("L'exercice n'a pas défini de procédure de validation.")
-assert_no_variable_change()
 ==
 
