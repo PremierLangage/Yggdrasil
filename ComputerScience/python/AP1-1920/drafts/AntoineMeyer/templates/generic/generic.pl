@@ -5,6 +5,7 @@
 @ utils/testfeedback.py
 @ utils/mockinput.py
 @ utils/testgroup.html
+@ utils/testitem.html
 
 title = <em>(Pas de titre défini)</em>
 text = <em>(Pas d'énoncé défini)</em>
