@@ -55,5 +55,5 @@ if __name__ == "__main__":
               "contacter un enseignant.", file=sys.stderr)
         raise e
 
-    sandboxio.output(0, r.render_tests())
-
+    # sandboxio.output(0, r.render_tests())
+    sandboxio.output(0, str(r.tests))
