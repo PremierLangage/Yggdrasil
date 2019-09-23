@@ -31,7 +31,7 @@ extrajs==
 </script>
 <script>
     function onReadyPL() {
-        var applet = document.ggbApplet;
+        var applet = document.ggbApp;
         applet.evalCommand("A = (1,1)");
         applet.evalCommand("B = (3,2)");
         applet.evalCommand("s = Droite[A, B]");
