@@ -24,7 +24,17 @@ pltest1="""
 >>> type({})=={} # La variables est elle du bon type: {}
 True
 """.format(var, type_var, type_var)
+
+pltest2="""
+>>> str(type({}))
+<class '{}'>
+""".format(var, type_var)
+
+
+
 ==
+
+
 
 text==
  Initialisez la variable **{{var}}** avec une valeur quelconque
