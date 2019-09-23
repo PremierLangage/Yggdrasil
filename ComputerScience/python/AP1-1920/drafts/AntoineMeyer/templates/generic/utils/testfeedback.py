@@ -260,7 +260,7 @@ class TestGroup:
                        if x.isalnum()).lower()
 
     def render(self):
-        with open('templates/generic/jinja/ap1_test_group.html',"r") as \
+        with open('testgroup.html',"r") as \
                 tempfile:
             templatestring = tempfile.read()
         template = jinja2.Template(templatestring)
