@@ -28,7 +28,8 @@ for i in range(N):
     box = globals()[f"input{i}"]
     if solved[i]:
         cpt += 1
-    elif box.value == str(res[i]):
+        continue
+    if box.value == str(res[i]):
         cpt += 1
         solved[i]= True
 
@@ -59,7 +60,7 @@ Nombre d'essais : {{essai}}
 <ul>
 {% for input in inputs %}
 {% if not solved[loop.index0]%}
-<li> $% {{op1[loop.index0]}} %$ {{ope[loop.index0]}} $% {{op2[loop.index0]}}  %$  = {{ input|component }}  </li>
+<li>  {{op1[loop.index0]}}  {{ope[loop.index0]}}  {{op2[loop.index0]}}    = {{ input|component }}  </li>
 {% endif %}
 {% endfor %}
 </ul>
