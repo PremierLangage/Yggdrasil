@@ -25,10 +25,7 @@ extrajs==
 <script src="https://www.geogebra.org/apps/deployggb.js"></script>
 <script>  
     var ggbApp = new GGBApplet({"appName": "classic", "width": 600, "height": 400, "showToolBar": true, "customToolBar" :"0 | 1 | 10"}, true);
-    ggbApp.evalCommand("A = (1,1)");
-    window.addEventListener("load", function() { 
-        ggbApp.inject('ggb-element');
-    });
+
 </script>
 <script>
     function onReadyPL() {
