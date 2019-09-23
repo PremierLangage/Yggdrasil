@@ -28,6 +28,7 @@ extrajs==
     window.addEventListener("load", function() { 
         ggbApp.inject('ggb-element');
     });
+    ggbApp.evalCommand("A = (1,1)\n B = (3,2) \s = Droite[A, B]");
 </script>
 <script>
     function onReadyPL() {
