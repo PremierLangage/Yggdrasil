@@ -9,10 +9,10 @@ nbechec%0
 before== #|python|
 import random
 essai = 4
-N = 10
-op1 = [str(random.randint(1, 10)) for n in range(N)]
+N = 6
+op1 = [str(random.randint(1, 3)) for n in range(N)]
 op2 = [str(random.randint(1, 10)) for n in range(N)]
-ope = [random.choice(['+','*','-','/','//','%']) for n in range(N)]
+ope = [random.choice(['/','//','%','**']) for n in range(N)]
 res = [ eval(op1[n]+ope[n]+ op2[n]) for n in range(N)]
 solved=[ False for n in range(N)]
 inputs = []
