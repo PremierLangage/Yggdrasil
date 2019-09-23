@@ -23,7 +23,7 @@ grade = (100, 'OK')
 extrajs==
 <script src="https://www.geogebra.org/apps/deployggb.js"></script>
 <script>  
-    var ggbApp = new GGBApplet({"appName": "classic", "width": 600, "height": 400, "showToolBar": true}, true);
+    var ggbApp = new GGBApplet({"appName": "classic", "width": 600, "height": 400, "showToolBar": true,"enableRightClick":false}, true);
     window.addEventListener("load", function() { 
         ggbApp.inject('ggb-element');
     });
