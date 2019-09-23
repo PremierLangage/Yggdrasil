@@ -8,7 +8,7 @@ author = Christophe Callé
 
 title = Initialisation et constantes 
 
-text=''
+
 before== #|python| 
 import random 
 random.seed(seed)
@@ -19,6 +19,7 @@ pltest="""
 >>> type({})=={}
 True
 """.format(var, type_var)
+==
 
 text==
 
