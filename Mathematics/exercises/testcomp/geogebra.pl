@@ -33,7 +33,7 @@ var applet = new GGBApplet('5.0', parameters);
 applet.inject('applet_container','preferHTML5');
 
 parameters.appletOnLoad = function() {
-		ggbApplet.evalCommand('A=(1,1)');
+		
 	}
 
 </script>
