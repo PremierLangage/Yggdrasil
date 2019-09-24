@@ -4,8 +4,6 @@
 #   Quentin Coumes <coumes.quentin@gmail.com>
 #   Antoine Meyer <antoine.meyer@u-pem.fr>
 
-# TODO: separate test result information from feedback formatting
-# TODO: handle exceptions in student code
 # TODO: allow easy / easier translation of feedback
 # TODO: implement fail-fast mechanism
 # TODO: check whether other stuff should be mocked (notably stderr) and possibly
