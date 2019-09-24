@@ -34,7 +34,7 @@ applet.inject('applet_container');
 
 function ggbOnInit(){
 
-    ggbApplet.evalCommand('A=(1,1)');
+    app1.evalCommand('A=(1,1)');
 
 }
 </script>
