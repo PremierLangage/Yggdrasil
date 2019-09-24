@@ -1,38 +1,54 @@
-{%  if test.status == stat.FAIL %}
-<div style="border:1px solid black;padding:1px;margin:1px;background-color:Tomato;border-radius:4px;">
-    <button type="button"
-            class="btn btn-block btn-danger"
-            aria-expanded="true"
-            aria-controls="{{ test.make_id() }}"
-            data-toggle="collapse"
-            data-target="#{{ test.make_id() }}">
-        {{ test.__str__() }}
-    </button>
-    <div id="test-{{num}}" class="show">
-        <div class="card card-danger;"
-             style="background-color: Tomato;">
-            <p>
-                {{ test.__str__() }}
-            </p>
-        </div>
-    </div>
-</div>
+{%  if not test.status %}
+            <div style="border:1px solid black;padding:1px;margin:1px;background-color:Tomato;border-radius:4px;">
+                <button type="button"
+                        class="btn btn-block btn-danger"
+                        aria-expanded="true"
+                        aria-controls="{{ test.make_id() }}"
+                        data-toggle="collapse"
+                        data-target="#{{ test.make_id() }}">
+                    <b>{{ test.title }}</b>
+                </button>
+                <div id="test-{{num}}" class="show">
+                    <div class="card card-danger;"
+                         style="background-color: Tomato;">
+                        <p>
+                            {{ test.context() }}
+                        </p>
+                        <p>
+                            {{ test.results() }}
+                        </p>
+                        {% for assertion in test.assertions %}
+                        <p>
+                            {{ assertion.__str__() }}
+                        </p>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
 {% else %}
-<div style="border:1px white;padding:1px;margin:1px;background-color:LightGreen;border-radius:4px;">
-    <button type="button"
-            class="btn btn-block btn-success"
-            data-toggle="collapse"
-            data-target="#{{ test.make_id() }}">
-        {{ test.__str__() }}
-    </button>
-    <div id="{{ test.make_id() }}" class="collapse">
-        <div class="card card-success;"
-             style="background-color: LightGreen;">
-            <p>
-                {{ test.__str__() }}
-            </p>
-        </div>
-    </div>
-</div>
+            <div style="border:1px white;padding:1px;margin:1px;background-color:LightGreen;border-radius:4px;">
+                <button type="button"
+                        class="btn btn-block btn-success"
+                        data-toggle="collapse"
+                        data-target="#{{ test.make_id() }}">
+                    <b>{{ test.title }}</b>
+                </button>
+                <div id="{{ test.make_id() }}" class="collapse">
+                    <div class="card card-success;"
+                         style="background-color: LightGreen;">
+                        <p>
+                            {{ test.context() }}
+                        </p>
+                        <p>
+                            {{ test.results() }}
+                        </p>
+                        {% for assertion in test.assertions %}
+                        <p>
+                            {{ assertion.__str__() }}
+                        </p>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
 {%  endif %}
 
