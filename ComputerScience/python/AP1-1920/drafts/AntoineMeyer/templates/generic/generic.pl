@@ -1,8 +1,7 @@
 @ /utils/sandboxio.py
 @ builder.py
 @ grader.py
-@ utils/coderunner.py
-@ utils/testfeedback.py
+@ utils/test.py
 @ utils/mockinput.py
 @ utils/testgroup.html
 @ utils/testitem.html
@@ -29,4 +28,5 @@ form==
 grader==
 begin_test_group("L'exercice n'a pas défini de procédure de validation.")
 ==
+
 
