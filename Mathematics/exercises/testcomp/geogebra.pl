@@ -42,6 +42,7 @@ extrajs==
 		"useBrowserForJS":true,
         "langage":"fr"
 	};
+    
 parameters.appletOnLoad = function() {
 ggbApplet.evalCommand('A=(1,1)\nO=(0,0)');	
 }
