@@ -29,12 +29,12 @@ extrajs==
         var parameters = {"prerelease":false,"width":600,"height":450,"showToolBar":true,"borderColor":null,"showMenuBar":false,"showAlgebraInput":false,
         "showResetIcon":true,"enableLabelDrags":false,"enableShiftDragZoom":true,"enableRightClick":false,"capturingThreshold":null,"showToolBarHelp":false,
         "errorDialogsActive":false,"useBrowserForJS":false};
+
 var applet = new GGBApplet('5.0', parameters);
+
 applet.inject('applet_container','preferHTML5');
 
-parameters.appletOnLoad = function() {
-		
-	}
+
 
 </script>
 ==
