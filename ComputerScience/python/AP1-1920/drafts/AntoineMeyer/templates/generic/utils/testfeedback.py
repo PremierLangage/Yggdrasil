@@ -2,7 +2,7 @@ import jinja2
 import coderunner
 
 _default_params = {
-    "report_success": False,
+    "report_success": True,
     "fail_fast": False
 }
 
@@ -203,4 +203,5 @@ class NoGlobalChangeAssertFeedback(AssertFeedback):
             return "Variables globales inchangées"
         else:
             return "Variables globales modifiées"
+
 
