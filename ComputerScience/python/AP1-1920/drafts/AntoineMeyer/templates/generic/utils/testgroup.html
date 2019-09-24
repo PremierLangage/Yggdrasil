@@ -1,11 +1,9 @@
-{% if testgroup.status == stat.PASS %}
+{% if testgroup.status %}
 <div style="border:1px solid black;padding:0%;margin:1%;background-color:LightGreen;border-radius:4px;">
     <button type="button"
             class="btn btn-block btn-success"
             data-toggle="collapse"
-            data-target="#{{ testgroup.make_id() }}">
-        {{ testgroup.title }}
-    </button>
+            data-target="#{{ testgroup.make_id() }}">{{ testgroup.title }}</button>
     <div id="{{ testgroup.make_id() }}" class="collapse">
         <div class="card card-success;" style="background-color: LightGreen;">
 {% else %}
@@ -21,9 +19,7 @@
     <div id="{{ testgroup.make_id() }}" class="show">
         <div class="card card-danger;" style="background-color: Tomato;">
 {% endif %}
-{% for test in testgroup.tests %}
-    {{ test.render() }}
-{% endfor %}
+{% for test in testgroup.tests %}{{ test.render() }}{% endfor %}
         </div>
     </div>
 </div>
