@@ -6,6 +6,10 @@ _default_params = {
     "fail_fast": False
 }
 
+_default_template_dir = 'templates/generic/jinja/'
+_default_item_template = _default_template_dir + 'testitem.html'
+_default_group_template = _default_template_dir + 'testgroup.html'
+
 
 class AssertFeedback:
     _num = 0
@@ -46,7 +50,7 @@ class TestFeedback:
         self.assertions = []
 
     def render(self):
-        with open('templates/generic/jinja/testitem.html', "r") as tempfile:
+        with open(_default_item_template, "r") as tempfile:
             templatestring = tempfile.read()
         template = jinja2.Template(templatestring)
         return template.render(test=self)
@@ -113,7 +117,7 @@ class TestGroupFeedback:
         return 'group-' + str(self._num)
 
     def render(self):
-        with open('templates/generic/jinja/testgroup.html', "r") as tempfile:
+        with open(_default_group_template, "r") as tempfile:
             templatestring = tempfile.read()
         template = jinja2.Template(templatestring)
         return template.render(testgroup=self)
