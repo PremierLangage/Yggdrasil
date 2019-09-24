@@ -36,13 +36,6 @@ window.onload = function() {
         applet.inject('applet_container');
         }
 </script>
-
-<script type="text/javascript"> 
-function evalInput(strInput) {
-  ggbApplet.evalCommand(strInput);
-  return false;
-}
-</script>
 ==
 
 
