@@ -31,7 +31,7 @@ extrajs==
         "errorDialogsActive":false,"useBrowserForJS":false};
 
 parameters.appletOnLoad = function() {
-ggbApplet.evalCommand('A=(1,1)');	
+ggbApplet.evalCommand('A=(1,1)\nO=(0,0)');	
 }
 
 var applet = new GGBApplet('5.0', parameters);
