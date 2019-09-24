@@ -36,7 +36,7 @@ window.onload = function() {
         }
 
 function onReadyPL(nodes) {
-app1.evalCommand('A=(1,1)')
+    app1.evalCommand('A=(1,1)');
 }
 </script>
 ==
