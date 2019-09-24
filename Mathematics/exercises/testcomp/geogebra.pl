@@ -44,7 +44,7 @@ var parameters = {
         "errorDialogsActive":true,
         "useBrowserForJS":false
     }
-let applet = new GGBApplet(parameters, '5.0', 'ggb-container');
+var applet = new GGBApplet(parameters, '5.0', 'ggb-container');
 window.onload = function() { applet.inject(); };
 
 function maConstruction(){
