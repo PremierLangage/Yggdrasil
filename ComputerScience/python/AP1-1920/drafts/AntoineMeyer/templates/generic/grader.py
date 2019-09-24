@@ -14,8 +14,7 @@
 # TODO: add comments to individual tests
 
 import sys
-
-import coderunner
+import test
 
 missing_editor = """Impossible d'identifier le composant CodeEditor dans 
 l'exercice (qui devrait être déclaré dans la variable `editor`). Merci 
@@ -24,6 +23,10 @@ grader. """
 
 
 class GraderError(Exception):
+    pass
+
+
+class StopGrader(Exception):
     pass
 
 
@@ -45,16 +48,18 @@ if __name__ == "__main__":
 
     # instantiate a unique CodeRunner instance and copy all its bound methods
     # to the global namespace for use in the validation script
-    r = coderunner.CodeRunner(student_code)
-    methods = inspect.getmembers(r, predicate=inspect.ismethod)
+    session = test.TestSession(student_code)
+    methods = inspect.getmembers(session, predicate=inspect.ismethod)
     globals().update(methods)
 
     try:
         exec(validation_script, globals())
+    except StopGrader:
+        pass
     except Exception as e:
         print("Une erreur s'est produite pendant la validation. Veuillez "
               "contacter un enseignant.", file=sys.stderr)
         raise e
 
-    sandboxio.output(0, r.render_tests())
+    sandboxio.output(0, session.render())
 
