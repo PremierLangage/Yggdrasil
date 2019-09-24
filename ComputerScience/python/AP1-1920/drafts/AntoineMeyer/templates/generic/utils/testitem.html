@@ -20,12 +20,14 @@
                         {% for assertion in test.assertions %}
                         {% if assertion.status %}
                         {% if test.params.show_success %}
-                        <div class="card card-success;">
+                        <div class="card card-success;"
+                             style="background-color:LightGreen;">
                             {{ assertion.__str__() }}
                         </div>
                         {% endif %}
                         {% else %}
-                        <div class="card card-danger;">
+                        <div class="card card-danger;"
+                             style="background-color:Tomato;">
                             {{ assertion.__str__() }}
                         </div>
                         {% endif %}
@@ -53,12 +55,14 @@
                         {% for assertion in test.assertions %}
                         {% if assertion.status %}
                         {% if test.params.show_success %}
-                        <div class="card card-success;">
+                        <div class="card card-success;"
+                             style="background-color:LightGreen;">
                             {{ assertion.__str__() }}
                         </div>
                         {% endif %}
                         {% else %}
-                        <div class="card card-danger;">
+                        <div class="card card-danger;"
+                             style="background-color:Tomato;">
                             {{ assertion.__str__() }}
                         </div>
                         {% endif %}
