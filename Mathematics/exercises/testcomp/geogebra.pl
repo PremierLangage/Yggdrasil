@@ -32,11 +32,10 @@ extrajs==
 var applet = new GGBApplet('5.0', parameters);
 window.onload = function() {
         applet.inject('applet_container');
-        app1.evalCommand('A=(1,1)');
 }
 
-function onReadyPL(nodes) {
-    
+function ggbOnInit(){
+    app1.evalCommand('A=(1,1)');
 }
 </script>
 ==
