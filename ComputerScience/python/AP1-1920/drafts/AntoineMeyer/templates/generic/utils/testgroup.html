@@ -1,25 +1,29 @@
 {% if testgroup.status %}
-<div
-        style="border:1px solid black;padding:5px;margin:5px;background-color:LightGreen;border-radius:4px;">
+<div style="border:1px solid black;padding:5px;margin:5px;background-color:LightGreen;border-radius:4px;">
     <button type="button"
             class="btn btn-block btn-success"
             data-toggle="collapse"
-            data-target="#{{ testgroup.make_id() }}"><b>{{ testgroup.title }} : succès</b></button>
+            data-target="#{{ testgroup.make_id() }}">
+        <b>{{ testgroup.title }} : succès</b>
+    </button>
     <div id="{{ testgroup.make_id() }}" class="collapse">
         <div class="card card-success;">
 {% else %}
-<div
-        style="border:1px solid black;padding:5px;margin:5px;background-color:Tomato;border-radius:4px;">
+<div style="border:1px solid black;padding:5px;margin:5px;background-color:Tomato;border-radius:4px;">
     <button type="button"
             class="btn btn-block  btn-danger"
             data-toggle="collapse"
             data-target="#{{ testgroup.make_id() }}"
             aria-expanded="true"
-            aria-controls="{{ testgroup.make_id() }}"><b>{{ testgroup.title }} : échec</b></button>
+            aria-controls="{{ testgroup.make_id() }}">
+        <b>{{ testgroup.title }} : échec</b>
+    </button>
     <div id="{{ testgroup.make_id() }}" class="show">
         <div class="card card-danger;">
 {% endif %}
-{% for test in testgroup.tests %}{{ test.render() }}{% endfor %}
+            {% for test in testgroup.tests %}
+            {{ test.render() }}
+            {% endfor %}
         </div>
     </div>
 </div>
