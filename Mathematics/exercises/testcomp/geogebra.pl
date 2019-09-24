@@ -65,7 +65,7 @@ function ggbValues() {
         values.push({id: 'ggb_' + id, value: value});
     }
     var myDiv = document.getElementById("answer");
-    myDiv.innerHTML = values;
+    myDiv.innerHTML = JSON.stringify(values);
 }
 
 </script>
