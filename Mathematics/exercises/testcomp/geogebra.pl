@@ -32,6 +32,7 @@ var parameters = {
         "height":245,
         "prerelease":false,
         "showToolBar":true,
+        "showToolBarHelp":false,
         "borderColor":null,
         "showMenuBar":false,
         "showAlgebraInput":false,
