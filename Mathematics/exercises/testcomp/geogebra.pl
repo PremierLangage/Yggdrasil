@@ -33,10 +33,10 @@ var applet = new GGBApplet('5.0', parameters);
 
 window.onload = function() {
         applet.inject('applet_container');
-        }
+}
 
 function onReadyPL(nodes) {
-    app1.evalCommand('A=(1,1)');
+    document.app1.evalCommand('A=(1,1)');
 }
 </script>
 ==
