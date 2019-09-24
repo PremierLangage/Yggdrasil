@@ -18,7 +18,7 @@ def deleted_variables(previous, current) -> List[str]:
 
 
 def modified_variables(previous, current, cmp=lambda x, y: x == y) -> dict:
-    return {var: previous[var] for var in previous.keys() & current.keys()
+    return {var: current[var] for var in previous.keys() & current.keys()
             if not cmp(previous[var], current[var])}
 
 
