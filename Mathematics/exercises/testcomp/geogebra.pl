@@ -31,7 +31,6 @@ extrajs==
 		"width":500,
 		"height":300,
 		"showToolBar":false,
-
 		"showMenuBar":false,
 		"showAlgebraInput":false,
  		"showResetIcon":false,
@@ -41,7 +40,7 @@ extrajs==
 		"showToolBarHelp":false,
  		"errorDialogsActive":true,
 		"useBrowserForJS":true,
-        "langage":"en"
+        "langage":"fr"
 	};
 parameters.appletOnLoad = function() {
 ggbApplet.evalCommand('A=(1,1)\nO=(0,0)');	
