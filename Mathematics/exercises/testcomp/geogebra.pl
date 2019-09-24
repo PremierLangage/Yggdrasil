@@ -31,6 +31,8 @@ extrajs==
         "errorDialogsActive":false,"useBrowserForJS":false};
 var applet = new GGBApplet('5.0', parameters);
 function ggbOnInit(){
+applet.inject('applet_container');
+
     ggbApplet.evalCommand('A=(1,1)');
 
 }
