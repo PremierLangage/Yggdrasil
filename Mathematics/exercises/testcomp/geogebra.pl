@@ -24,7 +24,7 @@ grade = (100, 'OK')
 ==
 
 extrajs==
-<script src="navigation.js"></script>
+
 <script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 <script type="text/javascript">
         var parameters = {"prerelease":false,"width":600,"height":450,"showToolBar":true,"borderColor":null,"showMenuBar":false,"showAlgebraInput":false,
