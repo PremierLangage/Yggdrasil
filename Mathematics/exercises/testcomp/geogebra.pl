@@ -57,7 +57,7 @@ var applet = new GGBApplet('5.0', parameters);
 
 applet.inject('applet_container','preferHTML5');
 
-function ggbValues() {
+function ggbEval() {
     ggbApplet.evalCommand('t=IsDefined[D]');	
 
 }
