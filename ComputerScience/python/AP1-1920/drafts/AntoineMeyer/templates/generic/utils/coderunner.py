@@ -65,6 +65,7 @@ class CodeRunner:
         r.current_inputs = self.current_inputs.copy()
         r.argv = self.argv.copy()
         r.output = self.output
+        r.exception = self.exception.copy()
         r.result = deepcopy(self.result)
         return r
 
