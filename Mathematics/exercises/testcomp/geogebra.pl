@@ -46,7 +46,7 @@ var parameters = {
     }
 var applet = new GGBApplet(parameters, '5.0', 'ggb-container');
 window.onload = function() {
-applet.evalCommand("");
+applet.evalCommand();
 applet.inject(); 
 };
 
