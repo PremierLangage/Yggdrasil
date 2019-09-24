@@ -31,8 +31,10 @@ extrajs==
         "errorDialogsActive":false,"useBrowserForJS":false};
 var applet = new GGBApplet('5.0', parameters);
 applet.inject('applet_container');
-app1.evalCommand('A=(1,1)');
+function ggbOnInit(){
+    ggbApplet.evalCommand('A=(1,1)');
 
+}
 </script>
 ==
 
