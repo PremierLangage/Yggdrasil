@@ -15,4 +15,9 @@ True
 True
 >>> f(3)==9
 True
+>>> f(1) == 1
+True
+>>> f(-1) == 1
+True
 ==
+
