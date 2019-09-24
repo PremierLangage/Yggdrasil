@@ -18,9 +18,11 @@ de `a` et `b` et leurs types (qui peuvent être différents).*<br><br>
 grader==
 import random
 begin_test_group("Échange de deux entiers")
-set_globals(a=random.randint(0,256), b=random.randint(0,256))
+x=random.randint(0,256)
+y=random.randint(0,256)
+set_globals(a=x, b=y)
 run()
-assert_variable_values(a=2, b=1)
+assert_variable_values(a=y, b=x)
 end_test_group()
 
 begin_test_group("Échange d'un entier et d'une chaîne")
