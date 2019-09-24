@@ -1,5 +1,5 @@
 
-# OCE : test 11/09/2019 OK
+# DR: test 24/09/2019 OK
 extends=../../templates/pltest.pl
 @ /builder/before.py [builder.py]
 
