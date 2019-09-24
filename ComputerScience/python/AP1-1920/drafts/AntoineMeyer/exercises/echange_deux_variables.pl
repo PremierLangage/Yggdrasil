@@ -16,8 +16,9 @@ de `a` et `b` et leurs types (qui peuvent être différents).*<br><br>
 ==
 
 grader==
+import random
 begin_test_group("Échange de deux entiers")
-set_globals(a=1, b=2)
+set_globals(a=random.randint(256), b=random.randint(256)
 run()
 assert_variable_values(a=2, b=1)
 end_test_group()
@@ -28,4 +29,5 @@ run()
 assert_variable_values(a="ça marche", b=1)
 end_test_group()
 ==
+
 
