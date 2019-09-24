@@ -155,7 +155,6 @@ class CodeRunner:
                         else:
                             self.result = eval(expression, self.current_state)
                     except Exception as e:
-                        print(e)
                         self.exception = e
 
         # cleanup final state for feedback
