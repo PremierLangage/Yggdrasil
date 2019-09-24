@@ -1,111 +1,173 @@
 import jinja2
-import string
-import unicodedata
-
-FAIL, PASS, INFO, EXEC, EVAL, GROUP = range(6)
-
-# TODO: change this, ugly
-stat_dict = {
-    "FAIL": FAIL,
-    "PASS": PASS,
-    "INFO": INFO,
-    "EXEC": EXEC,
-    "EVAL": EVAL
-}
-
-_prefix = {
-    FAIL: "[erreur] ",
-    PASS: "[ok] ",
-    INFO: "[info] ",
-    EXEC: "[exec] ",
-    EVAL: "[eval] "
-}
+import coderunner
 
 _default_params = {
     "report_success": False,
-    "fail_fast": True
+    "fail_fast": False
 }
 
 
-class TestFeedback:
-    num = 0
+class AssertFeedback:
+    _num = 0
 
     def __init__(self, status, params):
+        self.num = AssertFeedback._num
+        AssertFeedback._num += 1
         self.status = status
         self.params = _default_params.copy()
         self.params.update(params)
 
-    def __str__(self):
-        return _prefix[self.status]
+
+class TestFeedback:
+    _num = 0
+
+    def __init__(self, runner: 'coderunner.CodeRunner', expression: str = None,
+                 title: str = None, descr: str = None, hint: str = None, 
+                 **params):
+        self.num = TestFeedback._num
+        TestFeedback._num += 1
+        
+        self.runner = runner
+        self.expression = expression
+        if title is None:
+            if expression is None:
+                self.title = "Exécution du programme"
+            else:
+                self.title = "Évaluation de {!r}".format(expression)
+        else:
+            self.title = title
+        self.descr = descr
+        self.hint = hint
+        
+        self.status = True
+        self.params = _default_params.copy()
+        self.params.update(params)
+
+        self.assertions = []
 
     def render(self):
-        with open('testitem.html', "r") as tempfile:
+        with open('templates/generic/jinja/testitem.html', "r") as tempfile:
             templatestring = tempfile.read()
         template = jinja2.Template(templatestring)
-        return template.render(test=self, stat=stat_dict)
+        return template.render(test=self)
 
     def make_id(self):
-        TestFeedback.num += 1
-        return TestFeedback.num
+        return 'test-' + str(self.num)
+
+    def append(self, assertion: AssertFeedback):
+        self.assertions.append(assertion)
+
+    def context(self):
+        res = []
+
+        if self.runner.previous_state:
+            res.append("Variables globales : {}".format(
+                self.runner.previous_state))
+        if self.runner.previous_inputs:
+            res.append("Entrées disponibles : {}".format(
+                self.runner.previous_inputs))
+        if self.runner.argv:
+            res.append("Arguments du programme : {}".format(self.runner.argv))
+
+        return "<br/>".join(res)
+
+    def results(self):
+        res = []
+        added, deleted, modified, inputs = self.runner.summarize_changes()
+
+        if self.expression is not None:
+            res.append("Résultat obtenu : {}".format(self.runner.result))
+        if added:
+            res.append("Variables créées : {}".format(added))
+        if modified:
+            res.append("Variables modifiées : {}".format(modified))
+        if deleted:
+            res.append("Variables supprimées : {}".format(deleted))
+        if inputs:
+            res.append("Lignes saisies : {}".format(inputs))
+        if self.runner.output:
+            res.append("Texte affiché : {!r}".format(self.runner.output))
+        if self.runner.exception:
+            res.append("Exception levée : {} ({})".format(
+                type(self.runner.exception).__name__, self.runner.exception))
+        if not res:
+            res.append("Aucun effet observable")
+
+        return "<br/>".join(res)
 
 
-class OutputTestFeedback(TestFeedback):
+class TestGroupFeedback:
+    _num = 0
+    
+    def __init__(self, title: str):
+        self.num = TestGroupFeedback._num
+        TestGroupFeedback._num += 1
+        self.title = title
+        self.status = True
+        self.tests = []
+
+    def append(self, test: TestFeedback):
+        self.tests.append(test)
+
+    def make_id(self):
+        return 'group-' + str(self._num)
+
+    def render(self):
+        with open('templates/generic/jinja/testgroup.html', "r") as tempfile:
+            templatestring = tempfile.read()
+        template = jinja2.Template(templatestring)
+        return template.render(testgroup=self)
+
+
+class OutputAssertFeedback(AssertFeedback):
     def __init__(self, status, expected, **params):
         super().__init__(status, params)
         self.expected = expected
 
     def __str__(self):
-        res = super().__str__()
         if self.status:
-            res += "Affichage correct"
+            return "Affichage correct"
         else:
-            res += "Affichage attendu : {!r}".format(self.expected)
-        return res
+            return "Affichage attendu : {!r}".format(self.expected)
 
 
-class NoExceptionTestFeedback(TestFeedback):
+class NoExceptionAssertFeedback(AssertFeedback):
     def __init__(self, status, **params):
         super().__init__(status, params)
 
     def __str__(self):
-        res = super().__str__()
         if self.status:
-            res += "Aucune exception levée"
+            return "Aucune exception levée"
         else:
-            res += "Exception anormale"
-        return res
+            return "Exception anormale"
 
 
-class ExceptionTestFeedback(TestFeedback):
+class ExceptionAssertFeedback(AssertFeedback):
     def __init__(self, status, exception: Exception, **params):
         super().__init__(status, params)
         self.exception = exception
 
     def __str__(self):
-        res = super().__str__()
         if self.status:
-            res += "L'exception attendue a été levée"
+            return "L'exception attendue a été levée"
         else:
-            res += "Une exception de type {} était attendue".format(
+            return "Une exception de type {} était attendue".format(
                 self.exception)
-        return res
 
 
-class ResultTestFeedback(TestFeedback):
+class ResultAssertFeedback(AssertFeedback):
     def __init__(self, status, expected, **params):
         super().__init__(status, params)
         self.expected = expected
 
     def __str__(self):
-        res = super().__str__()
         if self.status:
-            res += "Résultat correct"
+            return "Résultat correct"
         else:
-            res += "Résultat attendu : {!r}".format(self.expected)
-        return res
+            return "Résultat attendu : {!r}".format(self.expected)
 
 
-class VariableValuesTestFeedback(TestFeedback):
+class VariableValuesAssertFeedback(AssertFeedback):
     def __init__(self, status, expected, missing, incorrect, **params):
         super().__init__(status, params)
         self.expected = expected
@@ -113,12 +175,10 @@ class VariableValuesTestFeedback(TestFeedback):
         self.incorrect = incorrect
 
     def __str__(self):
-        res = super().__str__()
         if self.status:
-            res += "Variables globales {} correctes".format(list(
-                self.expected.keys()))
+            res = "Variables globales correctes"
         else:
-            res += "Variables globales incorrectes : "
+            res = "Variables globales incorrectes : "
             details = []
             for var in self.missing:
                 details.append("{} manquante".format(var))
@@ -129,158 +189,13 @@ class VariableValuesTestFeedback(TestFeedback):
         return res
 
 
-class NoGlobalChangeTestFeedback(TestFeedback):
+class NoGlobalChangeAssertFeedback(AssertFeedback):
     def __init__(self, status, **params):
         super().__init__(status, params)
 
     def __str__(self):
-        res = super().__str__()
         if self.status:
-            res += "Variables globales inchangées"
+            return "Variables globales inchangées"
         else:
-            res += "Variables globales modifiées"
-        return res
-
-
-class SetGlobalsFeedback(TestFeedback):
-    def __init__(self, variables, **params):
-        super().__init__(INFO, params)
-        self.variables = variables
-
-    def __str__(self):
-        res = super().__str__()
-        res += "Réinitialisation des variables globales {}".format(
-            self.variables)
-        return res
-
-
-class SetStateFeedback(TestFeedback):
-    def __init__(self, state, **params):
-        super().__init__(INFO, params)
-        self.state = state
-
-    def __str__(self):
-        res = super().__str__()
-        res += "Chargement du nouvel espace de nom global {}".format(
-            self.state)
-        return res
-
-
-class SetArgvFeedback(TestFeedback):
-    def __init__(self, argv, **params):
-        super().__init__(INFO, params)
-        self.argv = argv
-
-    def __str__(self):
-        res = super().__str__()
-        res += "Changement des arguments en ligne de commande {}".format(
-            self.argv)
-        return res
-
-
-class SetInputsFeedback(TestFeedback):
-    def __init__(self, inputs, **params):
-        super().__init__(INFO, params)
-        self.inputs = inputs
-
-    def __str__(self):
-        res = super().__str__()
-        res += "Lignes disponibles sur l'entrée standard : {}".format(
-            self.inputs)
-        return res
-
-
-def build_change_report(added, modified, deleted, inputs, output, exception):
-    details = []
-    if added:
-        details.append("nouvelles variables : {}".format(added))
-    if modified:
-        details.append("variables modifiées : {}".format(modified))
-    if deleted:
-        details.append("variables supprimées : {}".format(deleted))
-    if inputs:
-        details.append("lignes saisies : {}".format(inputs))
-    if output:
-        details.append("texte affiché : {!r}".format(output))
-    if exception:
-        details.append("exception de type {} levée : {}".format(
-            type(exception).__name__, exception))
-    return " ; ".join(details)
-
-
-class ExecutionFeedback(TestFeedback):
-    def __init__(self, deleted, modified, added,
-                 inputs, output, exception, **params):
-        super().__init__(EXEC, params)
-        self.deleted = deleted
-        self.modified = modified
-        self.added = added
-        self.inputs = inputs
-        self.output = output
-        self.exception = exception
-
-    def __str__(self):
-        res = super().__str__()
-        res += "Résultat de l'exécution... "
-
-        report = build_change_report(self.added, self.modified, self.deleted,
-                                     self.inputs, self.output, self.exception)
-        if report:
-            res += report
-        else:
-            res += "aucun effet observable"
-        return res
-
-
-class EvaluationFeedback(TestFeedback):
-    def __init__(self, expression, result, deleted, modified, added,
-                 inputs, output, exception, **params):
-        super().__init__(EVAL, params)
-        self.expression = expression
-        self.result = result
-        self.deleted = deleted
-        self.modified = modified
-        self.added = added
-        self.inputs = inputs
-        self.output = output
-        self.exception = exception
-
-    def __str__(self):
-        res = super().__str__()
-        res += "Évaluation de l'expression {!r}... ".format(self.expression)
-
-        details = []
-        if self.result is not None:
-            details.append("résultat : {}".format(self.result))
-        report = build_change_report(self.added, self.modified, self.deleted,
-                                     self.inputs, self.output, self.exception)
-        if report:
-            details.append(report)
-        res += " ; ".join(details)
-        return res
-
-
-class TestGroup:
-    def __init__(self, title: str):
-        self.title = title
-        self.status = GROUP
-        self.tests = []
-
-    def __str__(self):
-        res = "\n".join(text for text in map(str, self.tests) if text != "")
-        return self.title + '\n' + res + "\n"
-
-    def append(self, test: TestFeedback):
-        self.tests.append(test)
-
-    def make_id(self):
-        return 'group-' + ''.join(
-            x for x in unicodedata.normalize('NFKD', self.title) if x.isalnum()
-        ).lower()
-
-    def render(self):
-        with open('testgroup.html',"r") as tempfile:
-            templatestring = tempfile.read()
-        template = jinja2.Template(templatestring)
-        return template.render(testgroup=self, stat=stat_dict)
+            return "Variables globales modifiées"
 
