@@ -59,7 +59,7 @@ var applet = new GGBApplet('5.0', parameters);
 applet.inject('applet_container','preferHTML5');
 
 function ggbEval() {
-    ggbApplet.evalCommand('t=IsDefined(Point(0,0))');	
+    ggbApplet.evalCommand('t=IsDefined(Point((-1,1)))');	
 
 }
 
