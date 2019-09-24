@@ -5,7 +5,7 @@
             data-toggle="collapse"
             data-target="#{{ testgroup.make_id() }}"><b>{{ testgroup.title }}</b></button>
     <div id="{{ testgroup.make_id() }}" class="collapse">
-        <div class="card card-success;" style="background-color: LightGreen;">
+        <div class="card card-success;">
 {% else %}
 <div style="border:1px solid black;padding:1%;margin:1%;background-color:Tomato;border-radius:4px;">
     <button type="button"
@@ -15,7 +15,7 @@
             aria-expanded="true"
             aria-controls="{{ testgroup.make_id() }}"><b>{{ testgroup.title }}</b></button>
     <div id="{{ testgroup.make_id() }}" class="show">
-        <div class="card card-danger;" style="background-color: Tomato;">
+        <div class="card card-danger;">
 {% endif %}
 {% for test in testgroup.tests %}{{ test.render() }}{% endfor %}
         </div>
