@@ -16,11 +16,22 @@ de `a` et `b` et leurs types (qui peuvent être différents).*<br><br>
 ==
 
 grader==
-run(globals={'a': 1, 'b': 2}, values={'a': 2, 'b': 1})
+run(
+    globals={'a': 1, 'b': 2}, 
+    values={'a': 2, 'b': 1}
+)
 
-set_globals(a=1, b="ça marche")
-run()
-assert_variable_values(a="ça marche", b=1)
+run(
+    globals={'a': 1, 'b': 'ça marche !'},
+    values={'a': 'ça marche !', 'b': 1}
+)
+
+x, y = randint(100), randint(100, 200)
+run(
+    title={'test aléatoire'}
+    globals={'a': x, 'b': y},
+    values={'a': y, 'b': x}
+)
 ==
 
 
