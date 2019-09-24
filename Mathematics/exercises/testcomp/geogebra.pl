@@ -64,7 +64,7 @@ function ggbValues() {
         var value = JSON.stringify(ggbApplet.getValue(id));
         values.push({id: 'ggb_' + id, value: value});
     }
-    document.answer.textContent=values;
+    document.answer.textContent="bbb";
 }
 
 </script>
