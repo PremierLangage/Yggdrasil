@@ -57,7 +57,7 @@ class TestFeedback:
         return template.render(test=self)
 
     def make_id(self):
-        return 'test-' + str(self.num)
+        return '_' + str(self.num)
 
     def append(self, assertion: AssertFeedback):
         self.assertions.append(assertion)
@@ -115,7 +115,7 @@ class TestGroupFeedback:
         self.tests.append(test)
 
     def make_id(self):
-        return 'group-' + str(self._num)
+        return 'group_' + str(self._num)
 
     def render(self):
         with open(_default_group_template, "r") as tempfile:
