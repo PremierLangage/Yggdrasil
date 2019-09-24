@@ -16,7 +16,7 @@
 # print(a, b, c)
 #
 
-extends = ap1_template.pl
+extends = ../templates/generic/generic.pl
 title = Tri de trois valeurs
 
 text==
@@ -68,7 +68,7 @@ end_test_group()
 
 begin_test_group("Tri de trois valeurs identiques")
 set_globals(a=1, b=1, c=1)
-run(title="Exécution avec a = {}, b = {}, c = {}".format(x, y, z)@)
+run(title="Exécution avec a = {}, b = {}, c = {}".format(x, y, z))
 assert_output("1 1 1\n")
 assert_no_global_change()
 end_test_group()
