@@ -161,7 +161,7 @@ class CodeRunner:
         # store generated output
         self.output = out_stream.getvalue()
         # generate execution report
-        self.record_test(fb.TestFeedback(self))
+        self.record_test(fb.TestFeedback(self.copy()))
 
     """Assertions."""
 
