@@ -74,4 +74,3 @@ assert_no_global_change()
 end_test_group()
 ==
 
-
