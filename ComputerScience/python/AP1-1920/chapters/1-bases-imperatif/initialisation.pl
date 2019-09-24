@@ -4,7 +4,7 @@ extends=../../templates/pltest.pl
 @ /builder/before.py [builder.py]
 
 tag=Programmation|Python|Initialisation|Variable
-author = Christophe Callé
+author = CC + DR
 
 title = Initialisation et constantes 
 
@@ -12,16 +12,22 @@ title = Initialisation et constantes
 before== #|python| 
 import random 
 random.seed(seed)
-type_var = random.choice(["int","str","float","bool"])
+type_var = random.choice(["int","str","float","bool",None])
 var = random.choice(["a", "b", "c", "X", "Y","PIERRE","feuille","ciseaux"])
 
 pltest0="""
->>> "{}" in globals() # La variable {} est elle définie 
+>>> "{}" in globals() # La variable {} est elle définie ?
 True
 """.format(var, var)
 
-pltest1="""
->>> type({})=={} # La variables est elle du bon type: {}
+if type_var is None:
+    pltest1="""
+>>> type({}) is None # La variables est elle du bon type ({}) ?
+True
+""".format(var, type_var, type_var)
+else:
+    pltest1="""
+>>> type({})=={} # La variables est elle du bon type ({}) ?
 True
 """.format(var, type_var, type_var)
 
