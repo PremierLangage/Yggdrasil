@@ -1,5 +1,6 @@
 {%  if not test.status %}
-            <div style="border:1px solid black;padding:1px;margin:3px;background-color:Tomato;border-radius:4px;">
+            <div
+                    style="border:1px solid black;padding:1px;margin:3px;background-color:Tomato;border-radius:4px;">
                 <button type="button"
                         class="btn btn-block btn-danger"
                         aria-expanded="true"
@@ -17,15 +18,24 @@
                             {{ test.results() }}
                         </p>
                         {% for assertion in test.assertions %}
+                        {% if assertion.status %}
+                        {% if test.params.show_success %}
                         <p>
                             {{ assertion.__str__() }}
                         </p>
+                        {% endif %}
+                        {% else %}
+                        <p>
+                            {{ assertion.__str__() }}
+                        </p>
+                        {% endif %}
                         {% endfor %}
                     </div>
                 </div>
             </div>
 {% else %}
-            <div style="border:1px white;padding:1px;margin:3px;background-color:LightGreen;border-radius:4px;">
+            <div
+                    style="border:1px white;padding:1px;margin:3px;background-color:LightGreen;border-radius:4px;">
                 <button type="button"
                         class="btn btn-block btn-success"
                         data-toggle="collapse"
@@ -41,9 +51,17 @@
                             {{ test.results() }}
                         </p>
                         {% for assertion in test.assertions %}
+                        {% if assertion.status %}
+                        {% if test.params.show_success %}
                         <p>
                             {{ assertion.__str__() }}
                         </p>
+                        {% endif %}
+                        {% else %}
+                        <p>
+                            {{ assertion.__str__() }}
+                        </p>
+                        {% endif %}
                         {% endfor %}
                     </div>
                 </div>
