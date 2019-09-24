@@ -1,0 +1,513 @@
+import sys
+from copy import deepcopy
+from io import StringIO
+import jinja2
+from typing import NoReturn, List, Callable
+from unittest import mock
+
+from grader import GraderError
+from mockinput import mock_input
+
+# _default_template_dir = ''
+_default_template_dir = 'templates/generic/jinja/'
+_default_test_template = _default_template_dir + 'testitem.html'
+_default_group_template = _default_template_dir + 'testgroup.html'
+
+_default_params = {
+    "report_success": False,
+    "fail_fast": False  # not implemented
+}
+
+
+class Test:
+    _number = 0
+
+    def __init__(self, code: str):
+        self.code = code
+        self.expression = None
+        self.number = Test._number
+        Test._number += 1
+
+        # execution context (backup)
+        self.previous_state = None
+        self.previous_inputs = None
+
+        # execution context (current)
+        self.current_state = {}
+        self.current_inputs = []
+        self.argv = []
+
+        # execution effects
+        self.output = ""
+        self.exception = None
+        self.result = None
+
+        # test description
+        self.title = None
+        self.descr = None
+        self.hint = None
+
+        # assertions
+        self.assertions = []
+        self.status = True
+
+    def copy(self):
+        t = Test(self.code)
+        t.current_state = deepcopy(self.current_state)
+        t.current_inputs = self.current_inputs.copy()
+        t.argv = self.argv.copy()
+        return t
+
+    """Code execution."""
+
+    def summarize_changes(self):
+        # TODO: cache results if clean
+        deleted = list(self.previous_state.keys() - self.current_state.keys())
+
+        modified = {
+            var1: self.current_state[var1]
+            for var1 in self.previous_state.keys() & self.current_state.keys()
+            if self.previous_state[var1] != self.current_state[var1]}
+
+        added = {var: self.current_state[var] for var in
+                 self.current_state.keys() - self.previous_state.keys()}
+
+        n = len(self.previous_inputs) - len(self.current_inputs)
+        inputs = self.previous_inputs[:n]
+
+        return added, deleted, modified, inputs
+
+    def run(self, expression: str = None, **kwargs) -> NoReturn:
+        self.expression = expression
+        # parse description- and context-related keyword arguments
+        self.parse_description_args(kwargs)
+        self.parse_context_args(kwargs)
+        # backup starting state
+        self.previous_state = deepcopy(self.current_state)
+        self.previous_inputs = self.current_inputs.copy()
+        # reset outputs
+        self.result = None
+        self.exception = None
+        # prepare StringIO for stdout simulation
+        out_stream = StringIO()
+
+        # run the code while mocking input, sys.argv and stdout printing
+        with mock_input(self.current_inputs, self.current_state):
+            with mock.patch.object(sys, 'argv', self.argv):
+                with mock.patch.object(sys, 'stdout', out_stream):
+                    try:
+                        if expression is None:
+                            exec(self.code, self.current_state)
+                        else:
+                            self.result = eval(expression, self.current_state)
+                    except Exception as e:
+                        self.exception = e
+
+        # cleanup final state for feedback
+        del self.current_state['__builtins__']
+        # store generated output
+        self.output = out_stream.getvalue()
+        # parse assertion-related keyword arguments
+        self.parse_assertion_args(kwargs)
+
+    def parse_assertion_args(self, kwargs):
+        # manage exceptions
+        if 'exception' in kwargs:
+            # if parameter exception=SomeExceptionClass is passed, silently
+            # check it is indeed raised
+            self.assert_exception(kwargs['exception'])
+        elif 'allow_exception' not in kwargs or not kwargs['allow_exception']:
+            # unless exceptions are explicitly allowed by parameter
+            # allow_exception=True, forbid them
+            self.assert_no_exception(report_success=False)
+        # check global values
+        if 'values' in kwargs:
+            # for now we have no facility to check that some variable was
+            # deleted, we only check that some variables exist
+            self.assert_variable_values(kwargs['values'])
+        if ('allow_global_change' in kwargs
+                and not kwargs['allow_global_change']):
+            # forbid changes to global variables
+            self.assert_no_global_change()
+        # check for standard output
+        if 'output' in kwargs:
+            self.assert_output(kwargs['output'])
+        # check for evaluation result, only valid if an expression is provided
+        if 'result' in kwargs:
+            if 'expression' is None:
+                raise GraderError("Vérification du résultat demandée, mais pas "
+                                  "d'expression fournie")
+            else:
+                self.assert_result(kwargs['result'])
+
+    def parse_context_args(self, kwargs):
+        # set global variables (overwrites the whole global namespace)
+        if 'globals' in kwargs:
+            self.current_state = kwargs['globals']
+        # set available inputs
+        if 'inputs' in kwargs:
+            self.current_inputs = kwargs['inputs']
+        # set available program parameters (overrides sys.argv)
+        if 'argv' in kwargs:
+            self.argv = kwargs['argv']
+
+    def parse_description_args(self, kwargs):
+        # set title
+        if 'title' in kwargs:
+            self.title = kwargs['title']
+        # set description
+        if 'descr' in kwargs:
+            self.descr = kwargs['descr']
+        # set hint
+        if 'hint' in kwargs:
+            self.hint = kwargs['hint']
+
+    """Assertions."""
+
+    def assert_output(self, expected,
+                      cmp: Callable = lambda x, y: x == y):
+        status = cmp(expected, self.output)
+        self.record_assertion(OutputAssert(status, expected))
+
+    def assert_result(self, expected,
+                      cmp: Callable = lambda x, y: x == y):
+        status = cmp(expected, self.result)
+        self.record_assertion(ResultAssert(status, expected))
+
+    def assert_variable_values(self, cmp=lambda x, y: x == y, **expected):
+        if not expected:
+            return
+        state = self.current_state
+        missing = list(expected.keys() - state.keys())
+        incorrect = {var: state[var] for var in expected.keys() & state.keys()
+                     if not cmp(expected[var], state[var])}
+
+        status = not (missing or incorrect)
+        self.record_assertion(
+            VariableValuesAssert(
+                status, expected, missing, incorrect))
+
+    def assert_no_global_change(self):
+        added, deleted, modified, _ = self.summarize_changes()
+        status = not (added or deleted or modified)
+        self.record_assertion(
+            NoGlobalChangeAssert(status))
+
+    def assert_no_exception(self, **params):
+        status = self.exception is None
+        self.record_assertion(
+            NoExceptionAssert(status, **params))
+
+    def assert_exception(self, exception_type):
+        status = isinstance(self.exception, exception_type)
+        self.record_assertion(
+            ExceptionAssert(status, exception_type))
+
+    def record_assertion(self, assertion: 'Assert') -> NoReturn:
+        self.assertions.append(assertion)
+        if not assertion.status:
+            self.status = False
+            # TODO: implement this
+            # if self.params['failfast']:
+            #     raise StopGrader()
+
+    """Feedback"""
+
+    def context(self):
+        res = []
+
+        if self.previous_state:
+            res.append("Variables globales : {}".format(
+                self.previous_state))
+        if self.previous_inputs:
+            res.append("Entrées disponibles : {}".format(
+                self.previous_inputs))
+        if self.argv:
+            res.append("Arguments du programme : {}".format(self.argv))
+
+        return "<br/>".join(res)
+
+    def results(self):
+        res = []
+        added, deleted, modified, inputs = self.summarize_changes()
+
+        if self.expression is not None:
+            res.append("Résultat obtenu : {}".format(self.result))
+        if added:
+            res.append("Variables créées : {}".format(added))
+        if modified:
+            res.append("Variables modifiées : {}".format(modified))
+        if deleted:
+            res.append("Variables supprimées : {}".format(deleted))
+        if inputs:
+            res.append("Lignes saisies : {}".format(inputs))
+        if self.output:
+            res.append("Texte affiché : {!r}".format(self.output))
+        if self.exception:
+            res.append("Exception levée : {} ({})".format(
+                type(self.exception).__name__, self.exception))
+        if not res:
+            res.append("Aucun effet observable")
+
+        return "<br/>".join(res)
+
+    def render(self):
+        with open(_default_test_template, "r") as tempfile:
+            templatestring = tempfile.read()
+        template = jinja2.Template(templatestring)
+        return template.render(test=self)
+
+    def make_id(self):
+        return 'test_' + str(self.number)
+
+
+class TestGroup:
+    _num = 0
+
+    def __init__(self, title: str):
+        self.num = TestGroup._num
+        TestGroup._num += 1
+        self.title = title
+        self.status = True
+        self.tests = []
+
+    def append(self, test: 'Test'):
+        self.tests.append(test)
+
+    def make_id(self):
+        return 'group_' + str(self.num)
+
+    def render(self):
+        with open(_default_group_template, "r") as tempfile:
+            templatestring = tempfile.read()
+        template = jinja2.Template(templatestring)
+        return template.render(testgroup=self)
+
+
+class TestSession:
+
+    def __init__(self, code: str):
+        self.history = []
+        self.last_test = None
+        self.next_test = Test(code)
+        self.current_test_group = None
+
+    """Feedback management."""
+
+    def begin_test_group(self, title: str) -> NoReturn:
+        self.current_test_group = TestGroup(title)
+        self.history.append(self.current_test_group)
+
+    def end_test_group(self) -> NoReturn:
+        self.current_test_group = None
+
+    """Rendering"""
+
+    def render(self):
+        return "\n".join(test.render() for test in self.history)
+
+    """Setters for execution context."""
+
+    def set_title(self, title):
+        self.next_test.title = title
+
+    def exec_preamble(self, preamble: str, **kwargs) -> NoReturn:
+        exec(preamble, self.next_test.current_state, **kwargs)
+        del self.next_test.current_state['__builtins__']
+
+    def set_globals(self, **variables) -> NoReturn:
+        self.next_test.current_state = variables
+
+    def set_state(self, state: dict) -> NoReturn:
+        self.next_test.current_state = state
+
+    def set_argv(self, argv: List[str]) -> NoReturn:
+        self.next_test.argv = argv.copy()
+
+    def set_inputs(self, inputs: List[str]) -> NoReturn:
+        self.next_test.current_inputs = inputs.copy()
+
+    """Execution"""
+
+    def run(self, expression: str = None, **kwargs) -> NoReturn:
+        self.next_test.run(expression, **kwargs)
+        self.last_test = self.next_test
+        self.next_test = self.last_test.copy()
+
+        # record last test
+        if self.current_test_group:
+            self.current_test_group.append(self.last_test)
+        else:
+            self.history.append(self.last_test)
+
+    """Assertions."""
+
+    def assert_output(self, expected,
+                      cmp: Callable = lambda x, y: x == y):
+        if self.last_test is None:
+            raise GraderError("Can't assert before running the code.")
+        self.last_test.assert_output(expected, cmp)
+
+    def assert_result(self, expected,
+                      cmp: Callable = lambda x, y: x == y):
+        if self.last_test is None:
+            raise GraderError("Can't assert before running the code.")
+        self.last_test.assert_result(expected, cmp)
+
+    def assert_variable_values(self, cmp=lambda x, y: x == y, **expected):
+        if self.last_test is None:
+            raise GraderError("Can't assert before running the code.")
+        self.last_test.assert_variable_values(cmp, **expected)
+
+    def assert_no_global_change(self):
+        if self.last_test is None:
+            raise GraderError("Can't assert before running the code.")
+        self.last_test.assert_no_global_change()
+
+    def assert_no_exception(self, **params):
+        if self.last_test is None:
+            raise GraderError("Can't assert before running the code.")
+        self.last_test.assert_no_exception(**params)
+
+    def assert_exception(self, exception_type):
+        if self.last_test is None:
+            raise GraderError("Can't assert before running the code.")
+        self.last_test.assert_exception(exception_type)
+
+
+class TextLabel:
+    def __init__(self, text):
+        self.text = text
+
+    def render(self):
+        return self.text
+
+
+class Verbatim:
+    def __init__(self, code):
+        self.code = code
+
+    def render(self):
+        return "<code>{}</code>".format(self.code)
+
+
+class Assert:
+    _num = 0
+
+    def __init__(self, status, params):
+        self.num = Assert._num
+        Assert._num += 1
+        self.status = status
+        self.params = _default_params.copy()
+        self.params.update(params)
+
+"""
+class TestFeedback:
+    _num = 0
+
+    def __init__(self, test: 'Test', expression: str = None,
+                 title: str = None, descr: str = None, hint: str = None,
+                 **params):
+        self.num = TestFeedback._num
+        TestFeedback._num += 1
+
+        self.runner = test
+        self.expression = expression
+        if title is None:
+            if expression is None:
+                self.title = "Exécution du programme"
+            else:
+                self.title = "Évaluation de {!r}".format(expression)
+        else:
+            self.title = title
+        self.descr = descr
+        self.hint = hint
+
+        self.status = True
+        self.params = _default_params.copy()
+        self.params.update(params)
+
+        self.assertions = []
+"""
+
+
+class OutputAssert(Assert):
+    def __init__(self, status, expected, **params):
+        super().__init__(status, params)
+        self.expected = expected
+
+    def __str__(self):
+        if self.status:
+            return "Affichage correct"
+        else:
+            return "Affichage attendu : {!r}".format(self.expected)
+
+
+class NoExceptionAssert(Assert):
+    def __init__(self, status, **params):
+        super().__init__(status, params)
+
+    def __str__(self):
+        if self.status:
+            return "Aucune exception levée"
+        else:
+            return "Exception anormale"
+
+
+class ExceptionAssert(Assert):
+    def __init__(self, status, exception: Exception, **params):
+        super().__init__(status, params)
+        self.exception = exception
+
+    def __str__(self):
+        if self.status:
+            return "L'exception attendue a été levée"
+        else:
+            return "Une exception de type {} était attendue".format(
+                self.exception)
+
+
+class ResultAssert(Assert):
+    def __init__(self, status, expected, **params):
+        super().__init__(status, params)
+        self.expected = expected
+
+    def __str__(self):
+        if self.status:
+            return "Résultat correct"
+        else:
+            return "Résultat attendu : {!r}".format(self.expected)
+
+
+class VariableValuesAssert(Assert):
+    def __init__(self, status, expected, missing, incorrect, **params):
+        super().__init__(status, params)
+        self.expected = expected
+        self.missing = missing
+        self.incorrect = incorrect
+
+    def __str__(self):
+        if self.status:
+            res = "Variables globales correctes"
+        else:
+            res = "Variables globales incorrectes : "
+            details = []
+            for var in self.missing:
+                details.append("{} manquante".format(var))
+            for var in self.incorrect:
+                details.append("{} devrait valoir {!r}".format(
+                    var, self.expected[var]))
+            res += "; ".join(details)
+        return res
+
+
+class NoGlobalChangeAssert(Assert):
+    def __init__(self, status, **params):
+        super().__init__(status, params)
+
+    def __str__(self):
+        if self.status:
+            return "Variables globales inchangées"
+        else:
+            return "Variables globales modifiées"
+
