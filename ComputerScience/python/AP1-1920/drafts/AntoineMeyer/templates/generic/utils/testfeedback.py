@@ -2,8 +2,8 @@ import jinja2
 import coderunner
 
 _default_params = {
-    "report_success": True,
-    "fail_fast": False
+    "report_success": False,
+    "fail_fast": False  # not implemented
 }
 
 _default_template_dir = ''
@@ -27,11 +27,11 @@ class TestFeedback:
     _num = 0
 
     def __init__(self, runner: 'coderunner.CodeRunner', expression: str = None,
-                 title: str = None, descr: str = None, hint: str = None, 
+                 title: str = None, descr: str = None, hint: str = None,
                  **params):
         self.num = TestFeedback._num
         TestFeedback._num += 1
-        
+
         self.runner = runner
         self.expression = expression
         if title is None:
@@ -43,7 +43,7 @@ class TestFeedback:
             self.title = title
         self.descr = descr
         self.hint = hint
-        
+
         self.status = True
         self.params = _default_params.copy()
         self.params.update(params)
@@ -103,7 +103,7 @@ class TestFeedback:
 
 class TestGroupFeedback:
     _num = 0
-    
+
     def __init__(self, title: str):
         self.num = TestGroupFeedback._num
         TestGroupFeedback._num += 1
