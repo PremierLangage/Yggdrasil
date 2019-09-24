@@ -15,8 +15,8 @@ Tracer un cercle de rayon 2.
 
 form==
 <div id="applet_container"></div>
-        <input value="Set point A invisible" onclick="app1.evalCommand('A=(1,1)')" type="button">
-        <input value="Set point A visible" onclick="app1.setVisible('A', false)" type="button">       
+<input value="Get Values" onclick="ggbValues()" type="button">
+<div id="answer"></div>
 ==
 
 evaluator== #|python|
@@ -64,7 +64,7 @@ function ggbValues() {
         var value = JSON.stringify(ggbApplet.getValue(id));
         values.push({id: 'ggb_' + id, value: value});
     }
-    return values;
+    document.answer.innerHTML=values;
 }
 
 </script>
