@@ -37,7 +37,7 @@ var parameters = {
         "showToolBarHelp":false,
         "borderColor":null,
         "showMenuBar":false,
-        "showAlgebraInput":true,
+        "showAlgebraInput":false,
         "customToolbar":"0 || 1",
         "showResetIcon":true,
         "enableLabelDrags":false,
