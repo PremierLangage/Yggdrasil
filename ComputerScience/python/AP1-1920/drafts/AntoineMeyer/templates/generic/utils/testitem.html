@@ -22,13 +22,13 @@
                         {% if test.params.show_success %}
                         <div class="card card-success;"
                              style="background-color:LightGreen;">
-                            {{ assertion.__str__() }}
+                            <b>{{ assertion.__str__() }}</b>
                         </div>
                         {% endif %}
                         {% else %}
                         <div class="card card-danger;"
-                             style="background-color:Tomato;">
-                            {{ assertion.__str__() }}
+                             style="font-color:white; background-color:Tomato;">
+                            <b>{{ assertion.__str__() }}</b>
                         </div>
                         {% endif %}
                         {% endfor %}
@@ -57,13 +57,13 @@
                         {% if test.params.show_success %}
                         <div class="card card-success;"
                              style="background-color:LightGreen;">
-                            {{ assertion.__str__() }}
+                            <b>{{ assertion.__str__() }}</b>
                         </div>
                         {% endif %}
                         {% else %}
                         <div class="card card-danger;"
-                             style="background-color:Tomato;">
-                            {{ assertion.__str__() }}
+                             style="font-color:white; background-color:Tomato;">
+                            <b>{{ assertion.__str__() }}</b>
                         </div>
                         {% endif %}
                         {% endfor %}
