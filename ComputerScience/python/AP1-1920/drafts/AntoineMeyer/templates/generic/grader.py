@@ -11,6 +11,7 @@
 # TODO: check whether other stuff should be mocked (notably stderr) and possibly
 #  use a new patch-decorated function
 # TODO: implement comparison facilities with trusted code
+# TODO: add comments to individual tests
 
 import sys
 
@@ -56,4 +57,4 @@ if __name__ == "__main__":
         raise e
 
     sandboxio.output(0, r.render_tests())
-    # sandboxio.output(0, str(r.tests))
+
