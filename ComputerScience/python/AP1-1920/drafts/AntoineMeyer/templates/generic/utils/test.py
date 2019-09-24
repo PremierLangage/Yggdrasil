@@ -2,14 +2,14 @@ import sys
 from copy import deepcopy
 from io import StringIO
 import jinja2
-from typing import NoReturn, List, Callable
+from typing import NoReturn, List, Callable, Union, Optional, Dict, Any
 from unittest import mock
 
 from grader import GraderError
 from mockinput import mock_input
 
-_default_template_dir = ''
-# _default_template_dir = 'templates/generic/jinja/'
+# _default_template_dir = ''
+_default_template_dir = 'templates/generic/jinja/'
 _default_test_template = _default_template_dir + 'testitem.html'
 _default_group_template = _default_template_dir + 'testgroup.html'
 
@@ -23,33 +23,33 @@ class Test:
     _number = 0
 
     def __init__(self, code: str):
-        self.code = code
-        self.expression = None
-        self.number = Test._number
+        self.code: str = code
+        self.expression: Optional[str] = None
+        self.number: int = Test._number
         Test._number += 1
 
         # execution context (backup)
-        self.previous_state = None
-        self.previous_inputs = None
+        self.previous_state: Optional[Dict[str, Any]] = None
+        self.previous_inputs: Optional[List[str]] = None
 
         # execution context (current)
-        self.current_state = {}
-        self.current_inputs = []
-        self.argv = []
+        self.current_state: Dict[str, Any] = {}
+        self.current_inputs: List[str] = []
+        self.argv: List[str] = []
 
         # execution effects
-        self.output = ""
-        self.exception = None
-        self.result = None
+        self.output: str = ""
+        self.exception: Optional[Exception] = None
+        self.result: Any = None
 
         # test description
-        self.title = None
-        self.descr = None
-        self.hint = None
+        self.title: Optional[str] = None
+        self.descr: Optional[str] = None
+        self.hint: Optional[str] = None
 
         # assertions
-        self.assertions = []
-        self.status = True
+        self.assertions: List[Assert] = []
+        self.status: bool = True
 
     def copy(self):
         t = Test(self.code)
@@ -265,11 +265,11 @@ class TestGroup:
     _num = 0
 
     def __init__(self, title: str):
-        self.num = TestGroup._num
+        self.num: int = TestGroup._num
         TestGroup._num += 1
-        self.title = title
-        self.status = True
-        self.tests = []
+        self.title: str = title
+        self.status: bool = True
+        self.tests: List[Test] = []
 
     def append(self, test: 'Test'):
         self.tests.append(test)
@@ -283,14 +283,17 @@ class TestGroup:
         template = jinja2.Template(templatestring)
         return template.render(testgroup=self)
 
+    def update_status(self, status):
+        self.status = self.status and status
+
 
 class TestSession:
 
     def __init__(self, code: str):
-        self.history = []
-        self.last_test = None
-        self.next_test = Test(code)
-        self.current_test_group = None
+        self.history: List[Union[Test, TestGroup]] = []
+        self.last_test: Optional[Test] = None
+        self.next_test: Test = Test(code)
+        self.current_test_group: Optional[TestGroup] = None
 
     """Feedback management."""
 
@@ -299,7 +302,10 @@ class TestSession:
         self.history.append(self.current_test_group)
 
     def end_test_group(self) -> NoReturn:
+        if self.current_test_group and self.last_test:
+            self.current_test_group.update_status(self.last_test.status)
         self.current_test_group = None
+        self.last_test = None
 
     """Rendering"""
 
@@ -330,6 +336,9 @@ class TestSession:
     """Execution"""
 
     def run(self, expression: str = None, **kwargs) -> NoReturn:
+        if self.current_test_group and self.last_test:
+            self.current_test_group.update_status(self.last_test.status)
+
         self.next_test.run(expression, **kwargs)
         self.last_test = self.next_test
         self.next_test = self.last_test.copy()
@@ -400,6 +409,7 @@ class Assert:
         self.status = status
         self.params = _default_params.copy()
         self.params.update(params)
+
 
 """
 class TestFeedback:
