@@ -43,7 +43,7 @@ var parameters = {
         "showResetIcon":true,
         "enableLabelDrags":false,
         "enableShiftDragZoom":true,
-        "enableRightClick":false,
+        "enableRightClick":true,
         "capturingThreshold":null,
         "showToolBarHelp":false,
         "errorDialogsActive":false,
