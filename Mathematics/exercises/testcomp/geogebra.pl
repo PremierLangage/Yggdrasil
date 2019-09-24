@@ -30,8 +30,9 @@ extrajs==
         "showResetIcon":true,"enableLabelDrags":false,"enableShiftDragZoom":true,"enableRightClick":false,"capturingThreshold":null,"showToolBarHelp":false,
         "errorDialogsActive":false,"useBrowserForJS":false};
 var applet = new GGBApplet('5.0', parameters);
-applet.inject('applet_container');
 applet.evalCommand('A=(1,1)');
+applet.inject('applet_container');
+
 </script>
 ==
 
