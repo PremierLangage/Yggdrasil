@@ -22,7 +22,7 @@ True
 
 if type_var is None:
     pltest1="""
->>> type({}) is None # La variables est elle du bon type ({}) ?
+>>> type({}) is type(None) # La variables est elle du bon type ({}) ?
 True
 """.format(var, type_var, type_var)
 else:
