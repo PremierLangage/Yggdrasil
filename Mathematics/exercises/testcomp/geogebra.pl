@@ -30,10 +30,8 @@ extrajs==
         "showResetIcon":true,"enableLabelDrags":false,"enableShiftDragZoom":true,"enableRightClick":false,"capturingThreshold":null,"showToolBarHelp":false,
         "errorDialogsActive":true,"useBrowserForJS":false,
         "filename":"../ggb/triangle.ggb"};
-        var applet = new GGBApplet('5.0', parameters);
-        
-        //when used with Math Apps Bundle, uncomment this:
-        applet.setHTML5Codebase('GeoGebra/HTML5/5.0/webSimple/');
+        var applet = new GGBApplet('5.0', parameters,true);
+
         window.onload = function() {
                 applet.inject('applet_container');
                 }
