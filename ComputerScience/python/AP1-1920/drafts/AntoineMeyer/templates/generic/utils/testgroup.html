@@ -13,9 +13,7 @@
             data-toggle="collapse"
             data-target="#{{ testgroup.make_id() }}"
             aria-expanded="true"
-            aria-controls="{{ testgroup.make_id() }}">
-        {{ testgroup.title }}
-    </button>
+            aria-controls="{{ testgroup.make_id() }}"><b>{{ testgroup.title }}</b></button>
     <div id="{{ testgroup.make_id() }}" class="show">
         <div class="card card-danger;" style="background-color: Tomato;">
 {% endif %}
