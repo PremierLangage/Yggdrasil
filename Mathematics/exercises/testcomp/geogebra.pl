@@ -16,7 +16,7 @@ Tracer un cercle de rayon 2.
 form==
 <div id="applet_container"></div>
 <input value="Get Values" onclick="ggbValues()" type="button">
-<div id="answer"></div>
+<div id="answer">aaa</div>
 ==
 
 evaluator== #|python|
