@@ -20,14 +20,14 @@
                         {% for assertion in test.assertions %}
                         {% if assertion.status %}
                         {% if test.params.show_success %}
-                        <p>
+                        <div class="card card-success;">
                             {{ assertion.__str__() }}
-                        </p>
+                        </div>
                         {% endif %}
                         {% else %}
-                        <p>
+                        <div class="card card-danger;">
                             {{ assertion.__str__() }}
-                        </p>
+                        </div>
                         {% endif %}
                         {% endfor %}
                     </div>
@@ -35,7 +35,7 @@
             </div>
 {% else %}
             <div
-                    style="border:1px white;padding:1px;margin:3px;background-color:LightGreen;border-radius:4px;">
+                    style="border:1px solid black ;padding:1px;margin:3px;background-color:LightGreen;border-radius:4px;">
                 <button type="button"
                         class="btn btn-block btn-success"
                         data-toggle="collapse"
@@ -53,14 +53,14 @@
                         {% for assertion in test.assertions %}
                         {% if assertion.status %}
                         {% if test.params.show_success %}
-                        <p>
+                        <div class="card card-success;">
                             {{ assertion.__str__() }}
-                        </p>
+                        </div>
                         {% endif %}
                         {% else %}
-                        <p>
+                        <div class="card card-danger;">
                             {{ assertion.__str__() }}
-                        </p>
+                        </div>
                         {% endif %}
                         {% endfor %}
                     </div>
