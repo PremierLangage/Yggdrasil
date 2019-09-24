@@ -131,7 +131,7 @@ class CodeRunner:
 
         return added, deleted, modified, inputs
 
-    def run(self, expression: str = None) -> NoReturn:
+    def run(self, expression: str = None, **kwargs) -> NoReturn:
         """
         Run the student code with the specified lines of input available on
         standard input.
@@ -161,7 +161,7 @@ class CodeRunner:
         # store generated output
         self.output = out_stream.getvalue()
         # generate execution report
-        self.record_test(fb.TestFeedback(self.copy()))
+        self.record_test(fb.TestFeedback(self.copy(), expression, **kwargs))
 
     """Assertions."""
 
