@@ -28,7 +28,7 @@ run(
 
 x, y = randint(100), randint(100, 200)
 run(
-    title={'test aléatoire'}
+    title={'test aléatoire'},
     globals={'a': x, 'b': y},
     values={'a': y, 'b': x}
 )
