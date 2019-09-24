@@ -33,7 +33,7 @@ extrajs==
         var applet = new GGBApplet('5.0', parameters);
         
         //when used with Math Apps Bundle, uncomment this:
-        //applet.setHTML5Codebase('GeoGebra/HTML5/5.0/webSimple/');
+        applet.setHTML5Codebase('GeoGebra/HTML5/5.0/webSimple/');
         window.onload = function() {
                 applet.inject('applet_container');
                 }
