@@ -76,7 +76,7 @@ class CodeRunner:
 
     def set_globals(self, **variables) -> NoReturn:
         self.previous_state = None
-        self.current_state.update(variables)
+        self.current_state = variables
 
     def set_state(self, state: dict) -> NoReturn:
         self.previous_state = None
@@ -198,4 +198,5 @@ class CodeRunner:
         status = isinstance(self.exception, exception_type)
         self.record_assertion(
             fb.ExceptionAssertFeedback(status, exception_type))
+
 
