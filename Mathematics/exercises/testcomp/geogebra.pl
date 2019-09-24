@@ -10,7 +10,7 @@ Démo GeoGebra
 ==
 
 text== #|html|
-Tracer un cercle de rayon 2.
+Construire le barycentre du triangle.
 ==
 
 form==
