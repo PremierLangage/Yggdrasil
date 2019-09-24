@@ -15,13 +15,8 @@ Tracer un cercle de rayon 2.
 
 form==
 <div id="applet_container"></div>
-<form>
         <input value="Set point A invisible" onclick="ggbApplet.setVisible('A', false)" type="button">
         <input value="Set point A visible" onclick="ggbApplet.setVisible('A', true)" type="button">       
-</form>
-<form action="" onsubmit="evalInput(inputField.value);inputField.value='';return false;"> 
-Input field: <input type="text" name="inputField" size="30"> 
-</form> 
 ==
 
 evaluator== #|python|
