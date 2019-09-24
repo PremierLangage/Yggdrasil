@@ -32,9 +32,6 @@ extrajs==
 var applet = new GGBApplet('5.0', parameters);
 applet.inject('applet_container');
 app1.evalCommand('A=(1,1)');
-function ggbOnInit(){
-    document.app1.evalCommand('A=(1,1)');
-}
 </script>
 ==
 
