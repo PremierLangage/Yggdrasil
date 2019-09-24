@@ -139,10 +139,27 @@ class CodeRunner:
 
         :return: String printed on standard output, modified state.
         """
+        # set global variables (overwrites the whole global namespace)
+        if 'globals' in kwargs:
+            self.set_state(kwargs['globals'])
+
+        # set available inputs
+        if 'inputs' in kwargs:
+            self.set_inputs(kwargs['inputs'])
+
+        # set available program parameters (overrides sys.argv)
+        if 'argv' in kwargs:
+            self.set_argv(kwargs['argv'])
+
+        # backup starting state
         self.previous_state = deepcopy(self.current_state)
         self.previous_inputs = self.current_inputs.copy()
+
+        # reset outputs
         self.result = None
         self.exception = None
+
+        # prepare StringIO for stdout simulation
         out_stream = StringIO()
 
         # run the code while mocking input, sys.argv and stdout printing
@@ -163,6 +180,38 @@ class CodeRunner:
         self.output = out_stream.getvalue()
         # generate execution report
         self.record_test(fb.TestFeedback(self.copy(), expression, **kwargs))
+
+        # manage exceptions
+        if 'exception' in kwargs:
+            # if parameter exception=SomeExceptionClass is passed, silently
+            # check it is indeed raised
+            self.assert_exception(kwargs['exception'])
+        elif 'allow_exception' not in kwargs or not kwargs['allow_exception']:
+            # unless exceptions are explicitly allowed by parameter
+            # allow_exception=True, forbid them
+            self.assert_no_exception(report_success=False)
+
+        # check global values
+        if 'values' in kwargs:
+            # for now we have no facility to check that some variable was
+            # deleted, we only check that some variables exist
+            self.assert_variable_values(kwargs['values'])
+        if ('allow_global_change' in kwargs
+                and not kwargs['allow_global_change']):
+            # forbid changes to global variables
+            self.assert_no_global_change()
+
+        # check for standard output
+        if 'output' in kwargs:
+            self.assert_output(kwargs['output'])
+
+        # check for evaluation result, only valid if an expression is provided
+        if 'result' in kwargs:
+            if 'expression' is None:
+                raise GraderError("Vérification du résultat demandée mais pas "
+                                  "d'expression fournie")
+            else:
+                self.assert_result(kwargs['result'])
 
     """Assertions."""
 
@@ -191,9 +240,9 @@ class CodeRunner:
         status = not(added or deleted or modified)
         self.record_assertion(fb.NoGlobalChangeAssertFeedback(status))
 
-    def assert_no_exception(self):
+    def assert_no_exception(self, **params):
         status = self.exception is None
-        self.record_assertion(fb.NoExceptionAssertFeedback(status))
+        self.record_assertion(fb.NoExceptionAssertFeedback(status, **params))
 
     def assert_exception(self, exception_type):
         status = isinstance(self.exception, exception_type)
