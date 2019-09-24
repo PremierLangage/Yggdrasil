@@ -27,7 +27,6 @@ extrajs==
 <script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 <script type="text/javascript">
 	var parameters = {
-	    "appname":"classic",
 		"prerelease":false,
 		"width":500,
 		"height":300,
