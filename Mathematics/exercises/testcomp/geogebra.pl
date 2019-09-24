@@ -44,7 +44,7 @@ var parameters = {
         "useBrowserForJS":false
     }
 var applet = new GGBApplet(parameters, '5.0', 'ggb-container');
-window.onload = function() { applet.inject(); }
+window.onload = function() { applet.inject(); };
 
 function maConstruction(){
 applet.evalCommand("A = (1,1)");
@@ -52,6 +52,7 @@ applet.evalCommand("A = (1,1)");
 </script>
 
 ==
+
 
 
 
