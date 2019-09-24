@@ -44,10 +44,11 @@ from itertools import permutations
 begin_test_group("Tris d'éléments distincts")
 for x, y, z in permutations((1, 2, 3)):
     set_globals(a=x, b=y, c=z)
-    run()
+    run(title="Exécution pour a = {}, b = {}, c = {}".format(x, y, z))
     assert_output("1 2 3\n")
     assert_no_global_change()
 end_test_group()
 ==
+
 
 
