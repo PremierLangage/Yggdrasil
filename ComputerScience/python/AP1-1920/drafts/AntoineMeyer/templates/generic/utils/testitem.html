@@ -26,7 +26,13 @@
                     <div class="card card-success;">
                     {% endif %}
                         <p>
+                            <b>Contexte d'exécution</b>
+                        </p>
+                        <p>
                             {{ test.context() }}
+                        </p>
+                        <p>
+                            <b>Effets du programme</b>
                         </p>
                         <p>
                             {{ test.results() }}
