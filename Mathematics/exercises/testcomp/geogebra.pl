@@ -36,7 +36,6 @@ extrajs==
 		"showMenuBar":false,
 		"showAlgebraInput":false,
  		"showResetIcon":false,
-//		"enableLabelDrags":false,
 		"enableShiftDragZoom":true,
 		"enableRightClick":false,
 		"capturingThreshold":null,
