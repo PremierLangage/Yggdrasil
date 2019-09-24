@@ -29,7 +29,7 @@ extrajs==
 	var parameters = {
 		"prerelease":false,
 		"width":500,
-		"height":300,
+		"height":300
 	};
 parameters.appletOnLoad = function() {
 ggbApplet.evalCommand('A=(1,1)\nO=(0,0)');	
