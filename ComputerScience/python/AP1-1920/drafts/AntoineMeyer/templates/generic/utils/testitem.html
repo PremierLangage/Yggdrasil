@@ -7,7 +7,7 @@
                         aria-controls="{{ test.make_id() }}"
                         data-toggle="collapse"
                         data-target="#{{ test.make_id() }}">
-                    <b>{{ test.title }}</b>
+                    <b>{{ test.title }} : échec</b>
                 </button>
                 <div id="{{ test.make_id() }}" class="show">
                     <div class="card card-danger;">
@@ -42,7 +42,7 @@
                         class="btn btn-block btn-success"
                         data-toggle="collapse"
                         data-target="#{{ test.make_id() }}">
-                    <b>{{ test.title }}</b>
+                    <b>{{ test.title }} : succès</b>
                 </button>
                 <div id="{{ test.make_id() }}" class="collapse">
                     <div class="card card-success;">
