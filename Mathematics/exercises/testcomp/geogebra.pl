@@ -62,7 +62,6 @@ function ggbValues() {
         var id = ggbApplet.getObjectName(i);
         var value = JSON.stringify(ggbApplet.getXcoord(id));
         var value = JggbApplet.getXcoord(id);
-
         values.push({id: 'ggb_' + id, value: value});
     }
     var myDiv = document.getElementById("answer");
