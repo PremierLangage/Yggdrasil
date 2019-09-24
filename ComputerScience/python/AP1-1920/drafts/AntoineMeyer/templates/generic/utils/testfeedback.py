@@ -6,7 +6,8 @@ _default_params = {
     "fail_fast": False
 }
 
-_default_template_dir = 'templates/generic/jinja/'
+_default_template_dir = ''
+# _default_template_dir = 'templates/generic/jinja/'
 _default_item_template = _default_template_dir + 'testitem.html'
 _default_group_template = _default_template_dir + 'testgroup.html'
 
