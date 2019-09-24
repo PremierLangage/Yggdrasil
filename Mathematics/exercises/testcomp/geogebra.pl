@@ -30,7 +30,7 @@ extrajs==
 		"prerelease":false,
 		"width":500,
 		"height":300,
-		"showToolBar":false,
+		"showToolBar":true,
 		"showMenuBar":false,
 		"showAlgebraInput":false,
  		"showResetIcon":false,
