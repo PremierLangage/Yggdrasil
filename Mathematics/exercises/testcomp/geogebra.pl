@@ -69,7 +69,7 @@ function ggbValues() {
     for (var i = 0; i < n; i++){
         var id = ggbApplet.getObjectName(i);
         var value = JSON.stringify(ggbApplet.getValue(id));
-        values.push({id: 'ggb_' + id, value: value});
+        values.push({id: id, value: value});
     }
     var myDiv = document.getElementById("answer");
     myDiv.innerHTML = JSON.stringify(values);
