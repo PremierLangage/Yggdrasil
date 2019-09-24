@@ -50,7 +50,7 @@ window.onload = function() { applet.inject(); };
 function maConstruction(){
 document.applet.evalCommand("A = (1,1)");
 document.applet.inject();
-}
+};
 </script>
 
 ==
