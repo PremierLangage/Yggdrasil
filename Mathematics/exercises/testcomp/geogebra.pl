@@ -33,6 +33,7 @@ var parameters = {
         "width":600,
         "height":245,
         "prerelease":false,
+        "perspective":"G", 
         "showToolBar":true,
         "showToolBarHelp":false,
         "borderColor":null,
