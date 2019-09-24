@@ -66,7 +66,7 @@ function ggbEval() {
 function ggbValues() {
     var n = ggbApplet.getObjectNumber();
     var values = [];
-    for (var i = 0; i < n+1; i++){
+    for (var i = 0; i < n; i++){
         var id = ggbApplet.getObjectName(i);
         var value = JSON.stringify(ggbApplet.getValue(id));
         values.push({id: 'ggb_' + id, value: value});
