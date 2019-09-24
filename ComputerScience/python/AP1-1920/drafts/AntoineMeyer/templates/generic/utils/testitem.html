@@ -39,7 +39,7 @@
                         </p>
                         {% for assertion in test.assertions %}
                         {% if assertion.status %}
-                        {% if test.params.report_success %}
+                        {% if assertion.params.report_success %}
                         <div class="card card-success;"
                              style="background-color:LightGreen;">
                             <b>{{ assertion.__str__() }}</b>
