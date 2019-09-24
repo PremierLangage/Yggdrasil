@@ -58,7 +58,7 @@ applet.inject('applet_container','preferHTML5');
 function ggbValues() {
     var n = ggbApplet.getObjectNumber();
     var values = [];
-    for (var i = 1; i < n+1; i++){
+    for (var i = 0; i < n+1; i++){
         var id = ggbApplet.getObjectName(i);
         var value = JSON.stringify(ggbApplet.getObjectType(id));
         values.push({id: 'ggb_' + id, value: value});
