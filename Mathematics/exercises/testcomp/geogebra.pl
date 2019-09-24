@@ -16,6 +16,8 @@ Tracer un cercle de rayon 2.
 form==
 <div id="applet_container"></div>
 <input value="Get Values" onclick="ggbValues()" type="button">
+<input value="Evaluate" onclick="ggbEval()" type="button">
+
 <div id="answer">aaa</div>
 ==
 
@@ -56,11 +58,16 @@ var applet = new GGBApplet('5.0', parameters);
 applet.inject('applet_container','preferHTML5');
 
 function ggbValues() {
+    ggbApplet.evalCommand('t=IsDefined[D]');	
+
+}
+
+function ggbValues() {
     var n = ggbApplet.getObjectNumber();
     var values = [];
     for (var i = 0; i < n; i++){
         var id = ggbApplet.getObjectName(i);
-        var value = JSON.stringify(ggbApplet.getXcoord(id));
+        var value = JSON.stringify(ggbApplet.getValue(id));
         values.push({id: 'ggb_' + id, value: value});
     }
     var myDiv = document.getElementById("answer");
