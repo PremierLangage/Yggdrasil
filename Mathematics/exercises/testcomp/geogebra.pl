@@ -40,8 +40,8 @@ var parameters = {
         "enableShiftDragZoom":true,
         "enableRightClick":false,
         "capturingThreshold":null,
-        "showToolBarHelp":true,
-        "errorDialogsActive":true,
+        "showToolBarHelp":false,
+        "errorDialogsActive":false,
         "useBrowserForJS":false
 }
 
