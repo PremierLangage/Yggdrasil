@@ -26,8 +26,8 @@ run(
     values={'a': 'ça marche !', 'b': 1}
 )
 
-from random import randint
-x, y = randint(100), randint(100, 200)
+from random import randrange
+x, y = randrange(0, 100), randrange(100, 200)
 run(
     title={'test aléatoire'},
     globals={'a': x, 'b': y},
