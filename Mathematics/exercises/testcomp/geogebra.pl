@@ -35,7 +35,7 @@ window.onload = function() {
 }
 
 function ggbOnInit(){
-    applet.evalCommand('A=(1,1)');
+    document.app1.evalCommand('A=(1,1)');
 }
 </script>
 ==
