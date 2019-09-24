@@ -26,23 +26,25 @@ grade = (100, 'OK')
 extrajs==
 <script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 <script type="text/javascript">
-	var parameters = {
-		"prerelease":false,
-		"width":500,
-		"height":300,
-		"showToolBar":true,
-		"showMenuBar":false,
-		"showAlgebraInput":false,
- 		"showResetIcon":false,
-		"enableShiftDragZoom":true,
-		"enableRightClick":false,
-		"capturingThreshold":null,
-		"showToolBarHelp":false,
- 		"errorDialogsActive":true,
-		"useBrowserForJS":true,
-        "langage":"fr"
-	};
-    
+var parameters = {
+        "width":600,
+        "height":245,
+        "prerelease":false,
+        "showToolBar":true,
+        "borderColor":null,
+        "showMenuBar":false,
+        "showAlgebraInput":false,
+        "customToolbar":"0 || 1",
+        "showResetIcon":true,
+        "enableLabelDrags":false,
+        "enableShiftDragZoom":true,
+        "enableRightClick":false,
+        "capturingThreshold":null,
+        "showToolBarHelp":true,
+        "errorDialogsActive":true,
+        "useBrowserForJS":false
+}
+
 parameters.appletOnLoad = function() {
 ggbApplet.evalCommand('A=(1,1)\nO=(0,0)');	
 }
