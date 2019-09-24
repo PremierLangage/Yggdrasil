@@ -115,7 +115,7 @@ class TestGroupFeedback:
         self.tests.append(test)
 
     def make_id(self):
-        return 'group_' + str(self._num)
+        return 'group_' + str(self.num)
 
     def render(self):
         with open(_default_group_template, "r") as tempfile:
