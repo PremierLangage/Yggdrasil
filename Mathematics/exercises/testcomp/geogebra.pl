@@ -51,7 +51,7 @@ var parameters = {
 }
 
 parameters.appletOnLoad = function() {
-ggbApplet.evalCommand('A=(1,2)\nB=(-2,0)\nC=(1,-1)');	
+ggbApplet.evalCommand('A=(0,2)\nB=(-1,1)\nC=(-1,-1)');	
 }
 
 var applet = new GGBApplet('5.0', parameters);
