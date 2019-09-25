@@ -22,7 +22,7 @@ la=int(input())
 print("le périmètre est",2*(l+la),"et la surface est",l*la,".")
 ==
 
-mlsoluce==
+mplsoluce==
 t
 2 
 3
