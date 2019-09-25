@@ -1,6 +1,6 @@
 
 import csv, json 
-def makemachlistfromcsv(filename, sourcerow="source", targetrow="target"):
+def fromcsv(filename, sourcecol="source", targetcol="target"):
     """
     Warning doesn't work for non mapping data.
     """
@@ -11,10 +11,8 @@ def makemachlistfromcsv(filename, sourcerow="source", targetrow="target"):
         reader=csv.DictReader(csvfile,delimiter=';')
         for row in reader:
             n+=1
-            MatchListItem.append({"id":"source"+str(n),"content":row[sourcerow], "source": True,
-            })
-            MatchListItem.append({"id":"target"+str(n),"content":row[targetrow], "target": True,
-            })
+            MatchListItem.append({"id":"source"+str(n),"content":row[sourcecol], "source": True})
+            MatchListItem.append({"id":"target"+str(n),"content":row[targetcol], "target": True})
             expected.append({ "source": "source"+str(n), "target": "target"+str(n) })
         return MatchListItem,expected
 
