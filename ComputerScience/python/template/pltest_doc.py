@@ -65,10 +65,10 @@ class PlRunner(doctest.DocTestRunner):
             #print(self.fb.getOutput())
         return self.grade(),self.fb.render()
 
-    def runcompiletest(self, name="compiletest"):
+    def runcompiletest(self, dic={}, name="compiletest"):
         try:
             compile(self.student,"Votre code",'exec')
-            exec(self.student, {})
+            exec(self.student, dic)
             return True,"Compilation OK"
         except SyntaxError as e:
             self.fb.addTestSyntaxError(name,subnlbybr(traceback.format_exc(limit=0,chain=False))," Syntaxe ")
