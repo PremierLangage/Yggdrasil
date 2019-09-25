@@ -34,6 +34,12 @@ Ecrivez l'expression qui permet de faire cela.
 
 ==
 
+evaluator==
+
+grade = (100, component.code)
+
+
+==
 
 form==
    var = {{ component|component}}
