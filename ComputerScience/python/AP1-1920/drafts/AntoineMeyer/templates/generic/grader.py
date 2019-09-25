@@ -51,7 +51,7 @@ def grade_this(code: str, tests: str):
     try:
         exec(tests, namespace)
     except Exception as e:
-        print("Vu !!!", instanceof(e, StopGrader), file=sys.stderr)
+        print("Vu !!!", isinstance(e, StopGrader), file=sys.stderr)
         pass
     # except Exception as e:
     #     print("Une erreur s'est produite pendant la validation. Veuillez "
