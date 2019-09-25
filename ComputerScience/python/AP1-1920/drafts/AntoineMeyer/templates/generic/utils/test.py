@@ -386,7 +386,7 @@ class TestSession:
         if self.last_test is None:
             raise grader.GraderError("Can't assert before running the code.")
         status = self.last_test.assert_output(expected, cmp)
-        if not status:
+        if self.params.get('fail_fast', False) and not status:
             self.end_test_group()
             raise grader.StopGrader()
 
@@ -395,7 +395,7 @@ class TestSession:
         if self.last_test is None:
             raise grader.GraderError("Can't assert before running the code.")
         status = self.last_test.assert_result(expected, cmp)
-        if not status:
+        if self.params.get('fail_fast', False) and not status:
             self.end_test_group()
             raise grader.StopGrader()
 
@@ -403,7 +403,7 @@ class TestSession:
         if self.last_test is None:
             raise grader.GraderError("Can't assert before running the code.")
         status = self.last_test.assert_variable_values(cmp, **expected)
-        if not status:
+        if self.params.get('fail_fast', False) and not status:
             self.end_test_group()
             raise grader.StopGrader()
 
@@ -411,7 +411,7 @@ class TestSession:
         if self.last_test is None:
             raise grader.GraderError("Can't assert before running the code.")
         status = self.last_test.assert_no_global_change()
-        if not status:
+        if self.params.get('fail_fast', False) and not status:
             self.end_test_group()
             raise grader.StopGrader()
 
@@ -419,7 +419,7 @@ class TestSession:
         if self.last_test is None:
             raise grader.GraderError("Can't assert before running the code.")
         status = self.last_test.assert_no_exception(**params)
-        if not status:
+        if self.params.get('fail_fast', False) and not status:
             self.end_test_group()
             raise grader.StopGrader()
 
@@ -427,7 +427,7 @@ class TestSession:
         if self.last_test is None:
             raise grader.GraderError("Can't assert before running the code.")
         status = self.last_test.assert_exception(exception_type)
-        if not status:
+        if self.params.get('fail_fast', False) and not status:
             self.end_test_group()
             raise grader.StopGrader()
 
