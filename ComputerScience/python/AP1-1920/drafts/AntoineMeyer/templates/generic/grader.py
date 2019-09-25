@@ -24,14 +24,6 @@ import sys
 import test
 
 
-class GraderError(Exception):
-    pass
-
-
-class StopGrader(Exception):
-    pass
-
-
 def _get_student_code(exercise_context: dict):
     if "editor" not in exercise_context:
         raise GraderError(missing_editor)
