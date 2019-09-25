@@ -49,8 +49,10 @@ def grade_this(code: str, tests: str):
     namespace.update(methods)
 
     try:
-        exec("print(dir(), file=sys.stderr)", namespace)
-    except AssertionError:  # BUG ! should be except StopGrader
+        exec("raise StopGrader", namespace)
+    except StopGrader:  # BUG ! does not seem to work
+        pass
+    except AssertionError:  # BUG ! should not be necessary
         pass
     except Exception as e:
         return (0, "Une erreur s'est produite pendant la validation. Veuillez "
