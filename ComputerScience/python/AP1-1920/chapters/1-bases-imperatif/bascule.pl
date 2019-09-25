@@ -1,9 +1,8 @@
 # DR 25/09/2019 OK
 #  Author: DR
 
-#extends=../../templates/pltest.pl
+#extends=../../templates/simpleinput.pl
 
-@ /grader/evaluator.py [grader.py]
 
 title== #|html|
 Bascule
@@ -37,7 +36,7 @@ Ecrivez l'expression qui permet de faire cela.
 
 
 form==
- 
+   var = {{ component|component}}
 ==
 
 
