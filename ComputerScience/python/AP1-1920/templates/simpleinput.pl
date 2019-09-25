@@ -20,6 +20,6 @@ form==
 ==
 
 evaluator==
-grade = (100, component.value);
+grade = (100, component.value)
 ==
 
