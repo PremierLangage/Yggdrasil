@@ -27,7 +27,7 @@ pour avoir une entrée multi ligne
 ==
 
 
-@ soluceevaluator.py          [grader.py] # le as de python import toto as titi
+@ ../../template/soluceevaluator.py          [grader.py] # le as de python import toto as titi
 @ gradesoluce.py
 @ /utils/sandboxio.py
 
@@ -41,5 +41,6 @@ pour avoir une entrée multi ligne
 form=@ /python/form/editorform.html
 
 settings.allow_reroll=1
+
 
 
