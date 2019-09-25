@@ -1,4 +1,3 @@
-
 author zip
 
 # Heritage d'un type d'exercice 
