@@ -376,7 +376,7 @@ class TestSession:
             self.history.append(self.last_test)
 
         if self.params.get('fail_fast', False) and not self.last_test.status:
-            raise StopGrader("Invalid assert encountered during fail-fast run.")
+            raise AssertionError("Invalid assert encountered during fail-fast run.")
 
     """Assertions."""
     # TODO: unhappy about code duplication in assertion mechanism, fix this.
@@ -388,7 +388,7 @@ class TestSession:
         status = self.last_test.assert_output(expected, cmp)
         if self.params.get('fail_fast', False) and not status:
             self.end_test_group()
-            raise StopGrader("Invalid assert encountered during fail-fast test.")
+            raise AssertionError("Invalid assert encountered during fail-fast test.")
 
     def assert_result(self, expected,
                       cmp: Callable = lambda x, y: x == y):
