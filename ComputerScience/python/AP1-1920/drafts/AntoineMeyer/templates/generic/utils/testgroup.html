@@ -6,7 +6,7 @@
             data-target="#{{ testgroup.make_id() }}">
         <b>{{ testgroup.title }} : succès</b>
     </button>
-    {% if not testgroup.param.get("hidden") %}
+    {% if not testgroup.param.get("hidden", False) %}
     <div id="{{ testgroup.make_id() }}" class="collapse">
         <div class="card card-success;">
     {% endif %}
@@ -21,13 +21,13 @@
         <b>{{ testgroup.title }} : échec</b>
     </button>
 
-    {% if not testgroup.param.get("hidden") %}
+    {% if not testgroup.param.get("hidden", False) %}
     <div id="{{ testgroup.make_id() }}" class="show">
         <div class="card card-danger;">
     {% endif %}
 {% endif %}
 
-    {% if not testgroup.param.get("hidden") %}
+    {% if not testgroup.param.get("hidden", False) %}
             {% for test in testgroup.tests %}
             {{ test.render() }}
             {% endfor %}
