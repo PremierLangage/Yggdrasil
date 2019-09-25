@@ -29,9 +29,10 @@ Pour le demander explictement il faut transformer 15975+43242 en str et
 écrire : 
 print("la somme de 15975 et 43242 est "+ str(15975+43242))
 ou alors demander à print de faire le travail en séparant les deux éléments à afficher
-print("la somme de 15975 et 43242 est ", 15975+43242)
-en utilisant une virgule pour séparer les paramêtres d'appel de print.
+print("la somme de 15975 et 43242 est ",15975+43242)
+en utilisant une virgule pour séparer les paramêtres d'appel de print,attention aux espaces
 ==
 
  
+
 
