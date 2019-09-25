@@ -53,7 +53,7 @@ def grade_this(code: str, tests: str):
     except StopGrader:  # BUG ! does not seem to work
         print("caught StopGrader", file=sys.stderr)
     except AssertionError:  # BUG ! should not be necessary
-        pass
+        print("caught StopGrader", file=sys.stderr)
     except Exception as e:
         return (0, "Une erreur s'est produite pendant la validation. Veuillez "
                    "contacter un enseignant ({})".format(e))
