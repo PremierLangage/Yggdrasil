@@ -36,7 +36,6 @@ Ecrivez l'expression qui permet de faire cela.
 
 @ ../../../template/pltest_doc.py 
 @ ../../templates/utils/feedback2.py
-
 @ ../../templates/utils/template.html
 
 evaluator==
