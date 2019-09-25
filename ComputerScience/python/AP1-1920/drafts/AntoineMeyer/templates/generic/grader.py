@@ -49,7 +49,7 @@ def grade_this(code: str, tests: str):
     namespace.update(methods)
 
     try:
-        exec("print(dir())", namespace)
+        exec("print(dir(), file=sys.stderr)", namespace)
     except AssertionError:  # BUG ! should be except StopGrader
         pass
     except Exception as e:
