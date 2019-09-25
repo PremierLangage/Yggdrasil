@@ -90,7 +90,7 @@ assert_no_global_change()
 end_test_group()
 
 # Cinquième groupe de tests caché
-begin_test_group("Tri de trois valeurs caché")
+begin_test_group("Tri de trois valeurs caché", hidden="True")
 set_globals(a=-51, b=12, c=-5)
 run(title="Exécution cachée")
 assert_output("-51 -5 12\n")
