@@ -14,6 +14,7 @@ op1 = [str(random.randint(1, 10)) for n in range(N)]
 op2 = [str(random.randint(1, 10)) for n in range(N)]
 op3 = [str(random.randint(1, 10)) for n in range(N)]
 ope = [random.choice(list({'+','*','-','//','/'})) for n in range(N)]
+ope2 = [random.choice(list({'+','*','-','//','/'}-{ope})) for n in range(N)]
 
 res = [ eval(op1[n]+ope[n]+ op2[n]) for n in range(N)]
 solved=[ False for n in range(N)]
