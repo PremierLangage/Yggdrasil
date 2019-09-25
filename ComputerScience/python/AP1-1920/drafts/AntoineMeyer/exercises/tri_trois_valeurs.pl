@@ -41,7 +41,6 @@ et `c` vaut 3, le programme devra afficher *précisément* la chaîne `'1 3 5\n'
 grader== #|python|
 from itertools import permutations
 
-
 # Ouvre un "groupe de tests" de titre donné
 begin_test_group("Tris d'éléments distincts")
 
@@ -90,4 +89,5 @@ assert_output("1 1 1\n")
 assert_no_global_change()
 end_test_group()
 ==
+
 
