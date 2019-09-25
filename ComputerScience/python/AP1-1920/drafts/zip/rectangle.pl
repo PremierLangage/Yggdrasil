@@ -4,7 +4,7 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/template/soluce.pl
 
-title = rectangle fixe
+title = rectangle dimensions variables
 
 
 text==  
@@ -23,6 +23,6 @@ print("le périmètre est",2*(l+la),"et la surface est",l*la,".")
 ==
 
 mlsoluce==
-t|2 
+t
+2 
 3
-==
