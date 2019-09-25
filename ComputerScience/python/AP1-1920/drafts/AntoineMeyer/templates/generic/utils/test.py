@@ -5,7 +5,7 @@ import jinja2
 from typing import NoReturn, List, Callable, Union, Optional, Dict, Any
 from unittest import mock
 
-from grader import GraderError, StopGrader
+import grader
 from mockinput import mock_input
 
 _default_template_dir = ''
@@ -22,9 +22,11 @@ _default_params = {
 class Test:
     _number = 0
 
-    def __init__(self, code: str):
+    def __init__(self, code: str, **params):
         self.code: str = code
         self.expression: Optional[str] = None
+        self.params = _default_params.copy()
+        self.params.update(params)
         self.number: int = Test._number
         Test._number += 1
 
@@ -142,8 +144,8 @@ class Test:
         # check for evaluation result, only valid if an expression is provided
         if 'result' in kwargs:
             if 'expression' is None:
-                raise GraderError("Vérification du résultat demandée, mais pas "
-                                  "d'expression fournie")
+                raise grader.GraderError("Vérification du résultat demandée, "
+                                         "mais pas d'expression fournie")
             else:
                 self.assert_result(kwargs['result'])
 
@@ -175,11 +177,13 @@ class Test:
                       cmp: Callable = lambda x, y: x == y):
         status = cmp(expected, self.output)
         self.record_assertion(OutputAssert(status, expected))
+        return status
 
     def assert_result(self, expected,
                       cmp: Callable = lambda x, y: x == y):
         status = cmp(expected, self.result)
         self.record_assertion(ResultAssert(status, expected))
+        return status
 
     def assert_variable_values(self, cmp=lambda x, y: x == y, **expected):
         if not expected:
@@ -191,31 +195,29 @@ class Test:
 
         status = not (missing or incorrect)
         self.record_assertion(
-            VariableValuesAssert(
-                status, expected, missing, incorrect))
+            VariableValuesAssert(status, expected, missing, incorrect))
+        return status
 
     def assert_no_global_change(self):
         added, deleted, modified, _ = self.summarize_changes()
         status = not (added or deleted or modified)
-        self.record_assertion(
-            NoGlobalChangeAssert(status))
+        self.record_assertion(NoGlobalChangeAssert(status))
+        return status
 
     def assert_no_exception(self, **params):
         status = self.exception is None
-        self.record_assertion(
-            NoExceptionAssert(status, **params))
+        self.record_assertion(NoExceptionAssert(status, **params))
+        return status
 
     def assert_exception(self, exception_type):
         status = isinstance(self.exception, exception_type)
         self.record_assertion(
             ExceptionAssert(status, exception_type))
+        return status
 
     def record_assertion(self, assertion: 'Assert') -> NoReturn:
         self.assertions.append(assertion)
-        if not assertion.status:
-            self.status = False
-            if self.params['failfast']:
-                raise StopGrader()
+        self.status = self.status and assertion.status
 
     """Feedback"""
 
@@ -276,12 +278,14 @@ class Test:
 class TestGroup:
     _num = 0
 
-    def __init__(self, title: str):
+    def __init__(self, title: str, **params):
         self.num: int = TestGroup._num
         TestGroup._num += 1
         self.title: str = title
         self.status: bool = True
         self.tests: List[Test] = []
+        self.params = _default_params.copy()
+        self.params.update(params)
 
     def append(self, test: 'Test'):
         self.tests.append(test)
@@ -301,11 +305,13 @@ class TestGroup:
 
 class TestSession:
 
-    def __init__(self, code: str):
+    def __init__(self, code: str, **params):
         self.history: List[Union[Test, TestGroup]] = []
         self.last_test: Optional[Test] = None
         self.next_test: Test = Test(code)
         self.current_test_group: Optional[TestGroup] = None
+        self.params = _default_params.copy()
+        self.params.update(params)
 
     """Feedback management."""
 
@@ -324,10 +330,18 @@ class TestSession:
     def render(self):
         return "\n".join(test.render() for test in self.history)
 
-    """Setters for execution context."""
+    """Setters for next test description."""
 
     def set_title(self, title):
         self.next_test.title = title
+
+    def set_descr(self, descr):
+        self.next_test.descr = descr
+
+    def set_hint(self, hint):
+        self.next_test.hint = hint
+
+    """Setters for execution context."""
 
     def exec_preamble(self, preamble: str, **kwargs) -> NoReturn:
         exec(preamble, self.next_test.current_state, **kwargs)
@@ -361,39 +375,61 @@ class TestSession:
         else:
             self.history.append(self.last_test)
 
+        if self.params.get('fail_fast', False) and not self.last_test.status:
+            raise grader.StopGrader()
+
     """Assertions."""
+    # TODO: unhappy about code duplication in assertion mechanism, fix this.
 
     def assert_output(self, expected,
                       cmp: Callable = lambda x, y: x == y):
         if self.last_test is None:
-            raise GraderError("Can't assert before running the code.")
-        self.last_test.assert_output(expected, cmp)
+            raise grader.GraderError("Can't assert before running the code.")
+        status = self.last_test.assert_output(expected, cmp)
+        if not status:
+            self.end_test_group()
+            raise grader.StopGrader()
 
     def assert_result(self, expected,
                       cmp: Callable = lambda x, y: x == y):
         if self.last_test is None:
-            raise GraderError("Can't assert before running the code.")
-        self.last_test.assert_result(expected, cmp)
+            raise grader.GraderError("Can't assert before running the code.")
+        status = self.last_test.assert_result(expected, cmp)
+        if not status:
+            self.end_test_group()
+            raise grader.StopGrader()
 
     def assert_variable_values(self, cmp=lambda x, y: x == y, **expected):
         if self.last_test is None:
-            raise GraderError("Can't assert before running the code.")
-        self.last_test.assert_variable_values(cmp, **expected)
+            raise grader.GraderError("Can't assert before running the code.")
+        status = self.last_test.assert_variable_values(cmp, **expected)
+        if not status:
+            self.end_test_group()
+            raise grader.StopGrader()
 
     def assert_no_global_change(self):
         if self.last_test is None:
-            raise GraderError("Can't assert before running the code.")
-        self.last_test.assert_no_global_change()
+            raise grader.GraderError("Can't assert before running the code.")
+        status = self.last_test.assert_no_global_change()
+        if not status:
+            self.end_test_group()
+            raise grader.StopGrader()
 
     def assert_no_exception(self, **params):
         if self.last_test is None:
-            raise GraderError("Can't assert before running the code.")
-        self.last_test.assert_no_exception(**params)
+            raise grader.GraderError("Can't assert before running the code.")
+        status = self.last_test.assert_no_exception(**params)
+        if not status:
+            self.end_test_group()
+            raise grader.StopGrader()
 
     def assert_exception(self, exception_type):
         if self.last_test is None:
-            raise GraderError("Can't assert before running the code.")
-        self.last_test.assert_exception(exception_type)
+            raise grader.GraderError("Can't assert before running the code.")
+        status = self.last_test.assert_exception(exception_type)
+        if not status:
+            self.end_test_group()
+            raise grader.StopGrader()
 
 
 class TextLabel:
