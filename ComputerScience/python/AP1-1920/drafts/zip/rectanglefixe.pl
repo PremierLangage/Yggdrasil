@@ -14,6 +14,8 @@ sous la forme :
 
 le périmètre est ?? et la surface est ??
 ==
+
+soluce==
 print("le périmètre est 20 et la surface est 21.")
 ==
 
