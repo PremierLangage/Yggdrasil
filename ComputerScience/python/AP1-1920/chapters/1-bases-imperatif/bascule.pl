@@ -55,11 +55,11 @@ else:
     d['var']=val1
     eval(component.value,d)
     if d['var'] != val2 :
-        grade = (0, f"<br/> le passage de {val1} à {val2} ne fonctionne pas ! ")
+        grade = (0, f"<br/> le passage de {val1} à {val2} ne fonctionne pas ! {d['var']}")
     else:
         eval(component.value,d)
         if d['var'] != val1 :
-            grade = (0, f"<br/> le passage de {val2} à {val1} ne fonctionne pas !")
+            grade = (0, f"<br/> le passage de {val2} à {val1} ne fonctionne pas ! {d['var']}")
         else:
             grade=(100,"<br/> Bravo vous avez écrit une bascule sans conditionnelles !")
 ==
