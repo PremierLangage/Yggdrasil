@@ -23,8 +23,9 @@ print("le périmètre est",2*(l+la),"et la surface est",l*la,".")
 ==
 l=int(input())
 la=int(input())
+print("le")
 #print("le périmètre est",l)
-print("et la surface est",l*la,".")
+#print("et la surface est",l*la,".")
 ==
 mplsoluce==
 t
