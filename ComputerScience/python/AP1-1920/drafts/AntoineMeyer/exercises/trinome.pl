@@ -7,7 +7,7 @@ On suppose qu'il existe trois variables `a`, `b` et `c` de valeurs `int` ou `flo
 Écrire un programme dont l'exécution crée une variable `nb_solutions` dont la valeur 
 représente le nombre de solutions réelles de l'équation $a x^2 + b x + c$.
 
-On représentera le fait que l'équation à une infinité de solutions en affectant à 
+On représentera le fait que l'équation a une infinité de solutions en affectant à 
 la variable `nb_solutions` la valeur `float('inf')` (qui représente $+\infty$).
 
 **Attention**, *votre programe doit fonctionner quelles que soient les valeurs 
