@@ -68,7 +68,7 @@ Nombre d'essais : {{essai}}
 <ul>
 {% for input in inputs %}
 {% if not solved[loop.index0]%}
-<li>  {{op1[loop.index0]}}  {{ope[loop.index0]}}  {{op2[loop.index0]}}    = {{ input|component }} {% if isfloat[loop.index0] %} Attention valeur floattante {% endif %} </li>
+<li>  {{op1[loop.index0]}}  {{ope[loop.index0]}}  {{op2[loop.index0]}}    = {{ input|component }} {% if isfloat[loop.index0] %} Attention valeur réelle (float) {% endif %} </li>
 {% endif %}
 {% endfor %}
 </ul>
