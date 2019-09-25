@@ -14,6 +14,7 @@ op2 = [str(random.randint(1, 10)) for n in range(N)]
 ope = [random.choice(['+','*','-','//']) for n in range(N)]
 res = [ eval(op1[n]+ope[n]+ op2[n]) for n in range(N)]
 solved=[ False for n in range(N)]
+isfloat = [ False for n in range(N)]
 inputs = []
 for i in range(N):
     inp = Input()
@@ -32,6 +33,9 @@ for i in range(N):
     if box.value == str(res[i]):
         cpt += 1
         solved[i]= True
+    else:
+        if type(res[i])==type(0.0):
+            isfloat[i]= True
 
 score = int(cpt / N * 100)
 feedback = 'Bravo' if score == 100 else 'Corriger les erreurs'
