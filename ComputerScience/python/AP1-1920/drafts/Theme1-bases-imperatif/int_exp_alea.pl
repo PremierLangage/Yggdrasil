@@ -27,6 +27,10 @@ evaluator== #|python|
 cpt = 0
 for i in range(N):
     box = globals()[f"input{i}"]
+    try:
+        dummy= box.value
+    except Exception as e:
+        continue
     if solved[i]:
         cpt += 1
         continue
