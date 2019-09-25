@@ -56,6 +56,8 @@ ggbApplet.evalCommand('A=(2,0)\nB=(-1,1)\nC=(-1,-1)');
 
 var applet = new GGBApplet('5.0', parameters);
 
+applet.inject('applet_container2','preferHTML5');
+
 
 function ggbEval() {
     ggbApplet.evalCommand('t=IsDefined((-1,1))\nv=1');	
