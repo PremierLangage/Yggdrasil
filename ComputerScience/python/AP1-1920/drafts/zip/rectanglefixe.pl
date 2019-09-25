@@ -1,7 +1,7 @@
 # author zip
 
 # Heritage d'un type d'exercice 
-extends=../../templates/pyeditor.pl
+extends=../../templates/pltest.pl
 
 title = rectangle fixe
 
