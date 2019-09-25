@@ -55,6 +55,7 @@ def grade_this(code: str, tests: str):
     except Exception as e:
         print("Une erreur s'est produite pendant la validation. Veuillez "
               "contacter un enseignant.", file=sys.stderr)
+        print(type(e))
         raise e
 
     # return session.get_grade(), session.render()
