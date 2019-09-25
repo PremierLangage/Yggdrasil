@@ -20,4 +20,4 @@ le périmètre est 20 et la surface est 21.
 
 plsoluce==
 t|le périmètre est 20 et la surface est 21.
-
+==
