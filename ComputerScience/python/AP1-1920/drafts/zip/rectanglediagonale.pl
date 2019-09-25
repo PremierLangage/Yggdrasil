@@ -27,6 +27,7 @@ print("Le périmètre est",2*(l+la),"et la surface est",l*la,",")
 print("la diagonale mesure",(l*l+la*la)**0.5,".")
 ==
 mplsoluce0==
+essai1
 2 
 3
 ==
