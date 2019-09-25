@@ -6,10 +6,8 @@
             data-target="#{{ testgroup.make_id() }}">
         <b>{{ testgroup.title }} : succès</b>
     </button>
-    {% if not testgroup.params.get("hidden", False) %}
     <div id="{{ testgroup.make_id() }}" class="collapse">
         <div class="card card-success;">
-    {% endif %}
 {% else %}
 <div style="border:1px solid black;padding:5px;margin:5px;background-color:Tomato;border-radius:4px;">
     <button type="button"
@@ -20,20 +18,14 @@
             aria-controls="{{ testgroup.make_id() }}">
         <b>{{ testgroup.title }} : échec</b>
     </button>
-
-    {% if not testgroup.params.get("hidden", False) %}
     <div id="{{ testgroup.make_id() }}" class="show">
         <div class="card card-danger;">
-    {% endif %}
 {% endif %}
-
-    {% if not testgroup.params.get("hidden", False) %}
             {% for test in testgroup.tests %}
             {{ test.render() }}
             {% endfor %}
         </div>
     </div>
-    {% endif %}
 </div>
 
 
