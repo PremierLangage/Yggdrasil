@@ -53,11 +53,11 @@ def grade_this(code: str, tests: str):
     except StopGrader as e:
         print("Vu !!!", repr(e), type(e), isinstance(e, StopGrader), file=sys.stderr)
         pass
-    # except Exception as e:
-    #     print("Une erreur s'est produite pendant la validation. Veuillez "
-    #           "contacter un enseignant.", file=sys.stderr)
-    #     print(type(e), file=sys.stderr)
-    #     #raise e
+    except Exception as e:
+        print("Une erreur s'est produite pendant la validation. Veuillez "
+              "contacter un enseignant.", file=sys.stderr)
+        print(type(e), file=sys.stderr)
+        # raise e
 
     # return session.get_grade(), session.render()
     return 0, session.render()
