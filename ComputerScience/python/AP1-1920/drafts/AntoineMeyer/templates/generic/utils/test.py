@@ -5,7 +5,7 @@ import jinja2
 from typing import NoReturn, List, Callable, Union, Optional, Dict, Any
 from unittest import mock
 
-import grader
+from grader iport StopGrader, GraderError
 from mockinput import mock_input
 
 _default_template_dir = ''
@@ -144,8 +144,8 @@ class Test:
         # check for evaluation result, only valid if an expression is provided
         if 'result' in kwargs:
             if 'expression' is None:
-                raise grader.GraderError("Vérification du résultat demandée, "
-                                         "mais pas d'expression fournie")
+                raise GraderError("Vérification du résultat demandée, "
+                                  "mais pas d'expression fournie")
             else:
                 self.assert_result(kwargs['result'])
 
@@ -376,7 +376,7 @@ class TestSession:
             self.history.append(self.last_test)
 
         if self.params.get('fail_fast', False) and not self.last_test.status:
-            raise grader.StopGrader("Invalid assert encountered during fail-fast run.")
+            raise StopGrader("Invalid assert encountered during fail-fast run.")
 
     """Assertions."""
     # TODO: unhappy about code duplication in assertion mechanism, fix this.
@@ -384,52 +384,52 @@ class TestSession:
     def assert_output(self, expected,
                       cmp: Callable = lambda x, y: x == y):
         if self.last_test is None:
-            raise grader.GraderError("Can't assert before running the code.")
+            raise GraderError("Can't assert before running the code.")
         status = self.last_test.assert_output(expected, cmp)
         if self.params.get('fail_fast', False) and not status:
             self.end_test_group()
-            raise grader.StopGrader("Invalid assert encountered during fail-fast test.")
+            raise StopGrader("Invalid assert encountered during fail-fast test.")
 
     def assert_result(self, expected,
                       cmp: Callable = lambda x, y: x == y):
         if self.last_test is None:
-            raise grader.GraderError("Can't assert before running the code.")
+            raise GraderError("Can't assert before running the code.")
         status = self.last_test.assert_result(expected, cmp)
         if self.params.get('fail_fast', False) and not status:
             self.end_test_group()
-            raise grader.StopGrader()
+            raise StopGrader()
 
     def assert_variable_values(self, cmp=lambda x, y: x == y, **expected):
         if self.last_test is None:
-            raise grader.GraderError("Can't assert before running the code.")
+            raise GraderError("Can't assert before running the code.")
         status = self.last_test.assert_variable_values(cmp, **expected)
         if self.params.get('fail_fast', False) and not status:
             self.end_test_group()
-            raise grader.StopGrader()
+            raise StopGrader()
 
     def assert_no_global_change(self):
         if self.last_test is None:
-            raise grader.GraderError("Can't assert before running the code.")
+            raise GraderError("Can't assert before running the code.")
         status = self.last_test.assert_no_global_change()
         if self.params.get('fail_fast', False) and not status:
             self.end_test_group()
-            raise grader.StopGrader()
+            raise StopGrader()
 
     def assert_no_exception(self, **params):
         if self.last_test is None:
-            raise grader.GraderError("Can't assert before running the code.")
+            raise GraderError("Can't assert before running the code.")
         status = self.last_test.assert_no_exception(**params)
         if self.params.get('fail_fast', False) and not status:
             self.end_test_group()
-            raise grader.StopGrader()
+            raise StopGrader()
 
     def assert_exception(self, exception_type):
         if self.last_test is None:
-            raise grader.GraderError("Can't assert before running the code.")
+            raise GraderError("Can't assert before running the code.")
         status = self.last_test.assert_exception(exception_type)
         if self.params.get('fail_fast', False) and not status:
             self.end_test_group()
-            raise grader.StopGrader()
+            raise StopGrader()
 
 
 class TextLabel:
@@ -538,4 +538,5 @@ class NoGlobalChangeAssert(Assert):
             return "Variables globales inchangées"
         else:
             return "Variables globales modifiées"
+
 
