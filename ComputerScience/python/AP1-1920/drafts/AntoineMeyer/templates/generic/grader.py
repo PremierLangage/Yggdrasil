@@ -49,7 +49,7 @@ def grade_this(code: str, tests: str):
     namespace.update(methods)
 
     try:
-        raise StopGrader()
+        exec(tests, namespace)
     except Exception as e:
         print("Vu !!!", repr(e), repr(type(e)), isinstance(e, StopGrader), file=sys.stderr)
         pass
