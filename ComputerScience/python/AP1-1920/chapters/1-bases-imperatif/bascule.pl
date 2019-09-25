@@ -1,15 +1,16 @@
 # DR 25/09/2019 OK
 #  Author: DR
 
-extends=../../templates/plsoluce.pl
-extends=../../templates/simpleinput.pl
+#extends=../../templates/pltest.pl
 
+@ /grader/evaluator.py [grader.py]
 
 title== #|html|
 Bascule
 ==
 
 before== #|python|
+import random
 lval1=[True,False,1,0,67]
 lval2=[False,True,0,2,0]
 lexp=["not var","not var","1 - var","2-var","67-var"]
@@ -38,6 +39,7 @@ Ecrivez l'expression qui permet de faire cela.
 form==
    var = {{ component|component}}
 ==
+
 
 
 
