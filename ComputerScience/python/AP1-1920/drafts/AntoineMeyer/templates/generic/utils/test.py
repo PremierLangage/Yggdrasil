@@ -5,7 +5,7 @@ import jinja2
 from typing import NoReturn, List, Callable, Union, Optional, Dict, Any
 from unittest import mock
 
-from grader import GraderError
+from grader import GraderError, StopGrader
 from mockinput import mock_input
 
 _default_template_dir = ''
@@ -15,7 +15,7 @@ _default_group_template = _default_template_dir + 'testgroup.html'
 
 _default_params = {
     "report_success": False,
-    "fail_fast": False  # not implemented
+    "fail_fast": True
 }
 
 
@@ -78,16 +78,21 @@ class Test:
         return added, deleted, modified, inputs
 
     def run(self, expression: str = None, **kwargs) -> NoReturn:
+
         self.expression = expression
-        # parse description- and context-related keyword arguments
+
+        # parse description-related keyword arguments
         self.parse_description_args(kwargs)
+        if self.title is None:
+            self.set_default_title()
+
+        # parse context-related keyword arguments
         self.parse_context_args(kwargs)
+
         # backup starting state
         self.previous_state = deepcopy(self.current_state)
         self.previous_inputs = self.current_inputs.copy()
-        # reset outputs
-        self.result = None
-        self.exception = None
+
         # prepare StringIO for stdout simulation
         out_stream = StringIO()
 
@@ -103,10 +108,12 @@ class Test:
                     except Exception as e:
                         self.exception = e
 
-        # cleanup final state for feedback
+        # cleanup state
         del self.current_state['__builtins__']
+
         # store generated output
         self.output = out_stream.getvalue()
+
         # parse assertion-related keyword arguments
         self.parse_assertion_args(kwargs)
 
@@ -207,9 +214,8 @@ class Test:
         self.assertions.append(assertion)
         if not assertion.status:
             self.status = False
-            # TODO: implement this
-            # if self.params['failfast']:
-            #     raise StopGrader()
+            if self.params['failfast']:
+                raise StopGrader()
 
     """Feedback"""
 
@@ -250,6 +256,12 @@ class Test:
             res.append("Aucun effet observable")
 
         return "<br/>".join(res)
+
+    def set_default_title(self):
+        if self.expression is None:
+            self.title = "Exécution du programme"
+        else:
+            self.title = "Évaluation de {!r}".format(self.expression)
 
     def render(self):
         with open(_default_test_template, "r") as tempfile:
@@ -409,36 +421,6 @@ class Assert:
         self.status = status
         self.params = _default_params.copy()
         self.params.update(params)
-
-
-"""
-class TestFeedback:
-    _num = 0
-
-    def __init__(self, test: 'Test', expression: str = None,
-                 title: str = None, descr: str = None, hint: str = None,
-                 **params):
-        self.num = TestFeedback._num
-        TestFeedback._num += 1
-
-        self.runner = test
-        self.expression = expression
-        if title is None:
-            if expression is None:
-                self.title = "Exécution du programme"
-            else:
-                self.title = "Évaluation de {!r}".format(expression)
-        else:
-            self.title = title
-        self.descr = descr
-        self.hint = hint
-
-        self.status = True
-        self.params = _default_params.copy()
-        self.params.update(params)
-
-        self.assertions = []
-"""
 
 
 class OutputAssert(Assert):
