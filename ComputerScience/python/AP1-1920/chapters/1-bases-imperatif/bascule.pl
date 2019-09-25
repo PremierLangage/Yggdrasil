@@ -15,7 +15,7 @@ import random
 lval1=[True,False,1,0,67]
 lval2=[False,True,0,2,0]
 lexp=["not var","not var","1 - var","2-var","67-var"]
-N=random.randint(0,4)
+N=0 # random.randint(0,4)
 val1=lval1[N]
 val2=lval2[N]
 exp=lexp[N]
@@ -35,7 +35,8 @@ Ecrivez l'expression qui permet de faire cela.
 
 ==
 
-
+@ ../../template/pltest_doc.py 
+@ ../templates/utils/feedback2.py
 
 evaluator==
 from pltest_doc import PlRunner
