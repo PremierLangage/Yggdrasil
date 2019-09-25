@@ -1,7 +1,6 @@
 # DR 25/09/2019 OK
 #  Author: DR
 
-extends=../../templates/pltest.pl
 extends=../../templates/simpleinput.pl
 
 @ /builder/before.py [builder.py]
@@ -35,8 +34,10 @@ Ecrivez l'expression qui permet de faire cela.
 
 ==
 
-@ ../../template/pltest_doc.py 
-@ ../templates/utils/feedback2.py
+@ ../../../template/pltest_doc.py 
+@ ../../templates/utils/feedback2.py
+
+@ ../../templates/utils/template.html
 
 evaluator==
 from pltest_doc import PlRunner
