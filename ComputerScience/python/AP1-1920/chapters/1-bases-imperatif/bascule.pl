@@ -23,28 +23,40 @@ soluce="var = "+exp
 
 ==
 
-text== #|cpp|
+text=f"""
 Le but de cet exercice est d'avoir une ligne de code de la forme :
 
     var = expression 
 
-telque la valeur de var passe successivement de la valeur {{val1}} à la valeur {{val2}} 
-puis de la valeur {{val2}} à la valeur {{val1}}, a chaque fois que l'on exécute la ligne.
+telque la valeur de var passe successivement de la valeur {val1} à la valeur {val2} 
+puis de la valeur {val2} à la valeur {val1}, a chaque fois que l'on exécute la ligne.
 
 Ecrivez l'expression qui permet de faire cela.
 
-==
+"""
 
 evaluator==
+from pltest_doc import PlRunner
 
-d={}
-d['var']=val1
-eval(component.value)
-
-
-grade = (100, component.value)
-
-
+pltest = """>>> True # le code compile 
+True
+"""
+tester = PlRunner(component.value,pltest)
+a, b = tester.runpltest(1)
+if not a :# erreur de compile
+    grade=(0,b)
+else:
+    d={}
+    d['var']=val1
+    eval(component.value,d)
+    if d['var'] != val2 :
+        grade = (0, f" le passage de {val1} à {val2} ne fonctionne pas ")
+    else:
+        eval(component.value,d)
+        if d['var'] != val1 :
+            grade = (0, f" le passage de {val2} à {val1} ne fonctionne pas ")
+        else:
+            grade=(100," Bravo vous avez écrit une bascule sans conditionnelles !")
 ==
 
 form==
