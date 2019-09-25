@@ -51,7 +51,7 @@ def grade_this(code: str, tests: str):
     try:
         raise StopGrader()
         exec(tests, namespace)
-    except Exception as e:
+    except StopGrader as e:
         print("Vu !!!", repr(e), type(e), isinstance(e, StopGrader), file=sys.stderr)
         pass
     # except Exception as e:
