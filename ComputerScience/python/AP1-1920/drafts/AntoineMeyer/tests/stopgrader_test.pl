@@ -8,6 +8,6 @@ Exercice vide. Une exception d'arrêt est lancée immédiatement.
 ==
 
 grader==
-raise StopGrader
+raise test.StopGrader
 ==
 
