@@ -13,7 +13,7 @@ match =: MatchList
 # remove the comment of the next line to display the properties of the component
 # in realtime inside the form.
 
-match.debug % true
+# match.debug % true
 
 @ content.csv #  le fichier de données avec deux collones target;source et d'autre valeur si il faut 
 
@@ -22,9 +22,9 @@ match.debug % true
 # STEP 2
 before==
 import random
-from mkl import makemachlistfromcsv
+from mkl import fromcsv
 
-match.nodes , expected =  makemachlistfromcsv("content.csv")
+match.nodes , expected =  fromcsv("content.csv")
 random.shuffle(match.nodes)
 ==
 
