@@ -33,8 +33,8 @@ pour avoir une entrée multi ligne
 
 @ /builder/none.py [builder.py]
 
-@ feedback2.py
-@ template.html
+@ ../../template/feedback2.py
+@ ../../template/template.html
 
 
 # une interface standard d'exercice avec un editeur pour la réponse
