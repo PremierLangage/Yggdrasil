@@ -37,7 +37,6 @@ for _ in range(5):
         globals={'a': x, 'b': y},
         values={'a': y, 'b': x}
     )
-    assert_no_global_change()
 ==
 
 
