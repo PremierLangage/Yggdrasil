@@ -9,7 +9,8 @@
                         data-target="#{{ test.make_id() }}">
                     <b>{{ test.title }} : {%  if not test.status %}échec{% else %}succès{% endif %}</b>
                 </button>
-                <div id="{{ test.make_id() }}" class="show">
+                <div id="{{ test.make_id() }}"
+                     class="{%  if not test.status %}show{% else %}collapse{% endif %}">
                     <div class="card {%  if not test.status %}card-danger{% else %}card-success{% endif %};">
                         <p><b>Contexte d'exécution :</b></p>
                         <p>{{ test.context() }}</p>
