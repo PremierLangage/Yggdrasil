@@ -1,7 +1,7 @@
 # DR 25/09/2019 OK
 #  Author: DR
 
-#extends=../../templates/simpleinput.pl
+extends=../../templates/simpleinput.pl
 
 
 title== #|html|
