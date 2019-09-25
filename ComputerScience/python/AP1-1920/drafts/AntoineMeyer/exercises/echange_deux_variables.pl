@@ -28,6 +28,7 @@ run(
     values={'a': 'ça marche !', 'b': 1}
 )
 
+begin_group("Nombres aléatoires")
 from random import randrange
 x, y = randrange(0, 100), randrange(100, 200)
 run(
