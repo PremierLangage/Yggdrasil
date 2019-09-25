@@ -20,19 +20,18 @@ val1=lval1[N]
 val2=lval2[N]
 exp=lexp[N]
 soluce="var = "+exp
-
-text="""
+sval1 = str(val1)
+sval2 = str(val2)
+==
+text==
 Le but de cet exercice est d'avoir une ligne de code de la forme :
 
-    var = expression 
+    var = expression
 
-telque la valeur de var passe successivement de la valeur {val1} à la valeur {val2} 
-puis de la valeur {val2} à la valeur {val1}, a chaque fois que l'on exécute la ligne.
+telque la valeur de var passe successivement de la valeur {{val1}} à la valeur {{val2}} 
+puis de la valeur {{sval2}} à la valeur {{sval1}}, a chaque fois que l'on exécute la ligne.
 
 Ecrivez l'expression qui permet de faire cela.
-
-""".format(val1,val2)
-
 
 ==
 
