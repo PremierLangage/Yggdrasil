@@ -13,7 +13,7 @@ Les dimensions d'un rectangle sont entrées par l'utilisateur (pl)
 Ecrire un programme qui calcule et affiche le périmètre et la surface du rectangle
 sous la forme :
 
-le périmètre est ?? et la surface est ??
+le périmètre est ?? et la surface est ?? .
 ==
 
 soluce==
