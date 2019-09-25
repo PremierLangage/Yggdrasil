@@ -16,6 +16,7 @@ _default_params = {
     "fail_fast": True
 }
 
+
 class GraderError(Exception):
     pass
 
@@ -381,7 +382,7 @@ class TestSession:
             self.history.append(self.last_test)
 
         if self.params.get('fail_fast', False) and not self.last_test.status:
-            raise StopGrader("Invalid assert encountered during fail-fast run.")
+            raise StopGrader("Failed assert during fail-fast test.")
 
     """Assertions."""
     # TODO: unhappy about code duplication in assertion mechanism, fix this.
@@ -393,7 +394,7 @@ class TestSession:
         status = self.last_test.assert_output(expected, cmp)
         if self.params.get('fail_fast', False) and not status:
             self.end_test_group()
-            raise StopGrader("Invalid assert encountered during fail-fast test.")
+            raise StopGrader("Failed assert during fail-fast test.")
 
     def assert_result(self, expected,
                       cmp: Callable = lambda x, y: x == y):
@@ -402,7 +403,7 @@ class TestSession:
         status = self.last_test.assert_result(expected, cmp)
         if self.params.get('fail_fast', False) and not status:
             self.end_test_group()
-            raise StopGrader()
+            raise StopGrader("Failed assert during fail-fast test.")
 
     def assert_variable_values(self, cmp=lambda x, y: x == y, **expected):
         if self.last_test is None:
@@ -410,7 +411,7 @@ class TestSession:
         status = self.last_test.assert_variable_values(cmp, **expected)
         if self.params.get('fail_fast', False) and not status:
             self.end_test_group()
-            raise StopGrader()
+            raise StopGrader("Failed assert during fail-fast test.")
 
     def assert_no_global_change(self):
         if self.last_test is None:
@@ -418,7 +419,7 @@ class TestSession:
         status = self.last_test.assert_no_global_change()
         if self.params.get('fail_fast', False) and not status:
             self.end_test_group()
-            raise StopGrader()
+            raise StopGrader("Failed assert during fail-fast test.")
 
     def assert_no_exception(self, **params):
         if self.last_test is None:
@@ -426,7 +427,7 @@ class TestSession:
         status = self.last_test.assert_no_exception(**params)
         if self.params.get('fail_fast', False) and not status:
             self.end_test_group()
-            raise StopGrader()
+            raise StopGrader("Failed assert during fail-fast test.")
 
     def assert_exception(self, exception_type):
         if self.last_test is None:
@@ -434,7 +435,7 @@ class TestSession:
         status = self.last_test.assert_exception(exception_type)
         if self.params.get('fail_fast', False) and not status:
             self.end_test_group()
-            raise StopGrader()
+            raise StopGrader("Failed assert during fail-fast test.")
 
 
 class TextLabel:
@@ -543,5 +544,4 @@ class NoGlobalChangeAssert(Assert):
             return "Variables globales inchangées"
         else:
             return "Variables globales modifiées"
-
 
