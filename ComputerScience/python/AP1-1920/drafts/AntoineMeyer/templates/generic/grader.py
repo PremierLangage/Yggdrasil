@@ -51,7 +51,7 @@ def grade_this(code: str, tests: str):
     try:
         exec("raise StopGrader()", namespace)
     except StopGrader:  # BUG ! does not seem to work
-        pass
+        print("caught StopGrader", file=sys.stderr)
     except AssertionError:  # BUG ! should not be necessary
         pass
     except Exception as e:
