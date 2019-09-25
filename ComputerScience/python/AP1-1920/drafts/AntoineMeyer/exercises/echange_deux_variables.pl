@@ -30,12 +30,13 @@ run(
 
 begin_test_group("Nombres aléatoires")
 from random import randrange
-x, y = randrange(0, 100), randrange(100, 200)
-run(
-    title='Nombres aléatoires',
-    globals={'a': x, 'b': y},
-    values={'a': y, 'b': x}
-)
+for _ in range(5):
+    x, y = randrange(0, 1000), randrange(1000, 2000)
+    run(
+        title='Nombres aléatoires',
+        globals={'a': x, 'b': y},
+        values={'a': y, 'b': x}
+    )
 ==
 
 
