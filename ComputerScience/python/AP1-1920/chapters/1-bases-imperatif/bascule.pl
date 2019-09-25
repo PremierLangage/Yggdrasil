@@ -4,6 +4,7 @@
 extends=../../templates/pltest.pl
 extends=../../templates/simpleinput.pl
 
+@ /builder/before.py [builder.py]
 
 title== #|html|
 Bascule
@@ -31,6 +32,7 @@ puis de la valeur {val2} à la valeur {val1}, a chaque fois que l'on exécute la
 Ecrivez l'expression qui permet de faire cela.
 
 """.format(val1,val2)
+
 
 ==
 
