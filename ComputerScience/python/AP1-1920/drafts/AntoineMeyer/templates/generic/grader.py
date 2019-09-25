@@ -45,11 +45,10 @@ def grade_this(code: str, tests: str):
     # to the global namespace for use in the validation script
     session = test.TestSession(code)
     methods = inspect.getmembers(session, predicate=inspect.ismethod)
-    namespace = globals().copy()
-    namespace.update(methods)
+    globals().update(methods)
 
     try:
-        exec(tests, namespace)
+        exec(tests)
     except StopGrader as e:
         print("Vu !!!", repr(e), type(e), isinstance(e, StopGrader), file=sys.stderr)
         pass
@@ -76,4 +75,5 @@ if __name__ == "__main__":
     validation_script = context["grader"]
     grade, feedback = grade_this(student_code, validation_script)
     sandboxio.output(grade, feedback)
+
 
