@@ -1,12 +1,10 @@
-import sys
 from copy import deepcopy
 from io import StringIO
 import jinja2
+from mockinput import mock_input
+import sys
 from typing import NoReturn, List, Callable, Union, Optional, Dict, Any
 from unittest import mock
-
-from grader import StopGrader, GraderError
-from mockinput import mock_input
 
 _default_template_dir = ''
 # _default_template_dir = 'templates/generic/jinja/'
@@ -17,6 +15,13 @@ _default_params = {
     "report_success": False,
     "fail_fast": True
 }
+
+class GraderError(Exception):
+    pass
+
+
+class StopGrader(Exception):
+    pass
 
 
 class Test:
