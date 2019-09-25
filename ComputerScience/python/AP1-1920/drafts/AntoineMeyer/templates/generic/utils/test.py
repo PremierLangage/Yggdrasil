@@ -5,7 +5,7 @@ import jinja2
 from typing import NoReturn, List, Callable, Union, Optional, Dict, Any
 from unittest import mock
 
-from grader iport StopGrader, GraderError
+from grader import StopGrader, GraderError
 from mockinput import mock_input
 
 _default_template_dir = ''
