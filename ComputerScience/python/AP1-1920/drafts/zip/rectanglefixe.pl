@@ -1,4 +1,4 @@
-author zip
+# author zip
 
 # Heritage d'un type d'exercice 
 extends=../../templates/pyeditor.pl
