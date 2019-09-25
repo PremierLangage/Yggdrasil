@@ -8,7 +8,7 @@ On suppose qu'il existe trois variables `a`, `b` et `c` de valeurs `int` ou `flo
 représente le nombre de solutions réelles de l'équation $a x^2 + b x + c$.
 
 On représentera le fait que l'équation a une infinité de solutions en affectant à 
-la variable `nb_solutions` la valeur `float('inf')` (qui représente $+\infty$).
+la variable `nb_solutions` la valeur `float('inf')` (qui représente $%+\infty%$).
 
 **Attention**, *votre programe doit fonctionner quelles que soient les valeurs 
 de `a`, `b` et `c`.*<br><br>
@@ -42,5 +42,6 @@ for a, b, c in essais:
     run(title="${} x^2 + {} x + c = 0$".format(a, b, c))
     assert_variable_values(nb_solutions=nb_sols(a, b, c))
 ==
+
 
 
