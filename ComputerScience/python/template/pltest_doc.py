@@ -1,3 +1,6 @@
+
+# Version 26/9/2019
+# ajout de runcompiletest 
 import doctest
 import traceback
 
@@ -62,7 +65,19 @@ class PlRunner(doctest.DocTestRunner):
             #print(self.fb.getOutput())
         return self.grade(),self.fb.render()
 
-
+    def runcompiletest(self, name="compiletest"):
+        try:
+            compile(self.student,"Votre code",'exec')
+            exec(self.student, dic)
+            return True,"Compilation OK"
+        except SyntaxError as e:
+            self.fb.addTestSyntaxError(name,subnlbybr(traceback.format_exc(limit=0,chain=False))," Syntaxe ")
+        except Exception as e:
+            self.fb.addTestSyntaxError(name,subnlbybr(traceback.format_exc(limit=0,chain=False))," Exception ")
+        
+        return False,self.fb.render()
+            
+            
     def testtitle(self, line):
             if line.endswith("\n"):
                 line = line[:-1]
@@ -111,10 +126,6 @@ class PlRunner(doctest.DocTestRunner):
             return 100*(self.right/self.total)
         else:
             return 0
-
-
-
-
 
 
 
