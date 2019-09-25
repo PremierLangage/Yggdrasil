@@ -21,7 +21,7 @@ exp=lexp[N]
 soluce="var = "+exp
 
 
-==
+
 
 text=f"""
 Le but de cet exercice est d'avoir une ligne de code de la forme :
@@ -34,6 +34,9 @@ puis de la valeur {val2} à la valeur {val1}, a chaque fois que l'on exécute la
 Ecrivez l'expression qui permet de faire cela.
 
 """
+==
+
+
 
 evaluator==
 from pltest_doc import PlRunner
