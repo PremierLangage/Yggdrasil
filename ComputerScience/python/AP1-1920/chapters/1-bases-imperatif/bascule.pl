@@ -1,45 +1,43 @@
+# DR 25/09/2019 OK
+#  Author: DR
 
-        grade=(0,"""Pensez à conserver la variable
-a# DR 25/09/2019 OK
-#  Author: Jérémie LE BASTARD   Mail: jlebas01@etud.u-pem.fr
-@ /utils/sandboxio.py
-grader  =@ /grader/evaluator.py
-
+extends=../../templates/plsoluce.pl
+extends=../../templates/simpleinput.pl
 
 
 title== #|html|
-Echange de variables
+Bascule
 ==
 
+before== #|python|
+lval1=[True,False,1,0,67]
+lval2=[False,True,0,2,0]
+lexp=["not var","not var","1 - var","2-var","67-var"]
+N=random.randint(0,4)
+val1=lval1[N]
+val2=lval2[N]
+exp=lexp[N]
+soluce="var = "+exp
+
+
+==
 
 text== #|html|
-Le but de cet exercice est d'interchanger les valeurs de a et b en Python. 
-Ex : si  a = 3 , b = "mot", on souhaite que a prenne la valeur de b et b la valeur de a.
+Le but de cet exercice est d'avoir une ligne de code de la forme :
 
-Les variables a et b sont déjà déclarées et ont une valeur aléatoire.
-Votre mission écrire du code qui fait que le contenu des deux variables a et b est échangé.
+    var = expression 
 
-Remarque le code suivant qui semble a priori répondre à la question n'est pas bon.
+telque la valeur de var passe successivement de la valeur {{val1}} à la valeur {{val2}} 
+puis de la valeur {{val2}} à la valeur {{val1}}, a chaque fois que l'on exécute la ligne.
 
-    a="mot"
-    b= 3
-
+Ecrivez l'expression qui permet de faire cela.
 
 ==
 
-component =: Input
-component.type = number
 
 form==
-{{ component|component}}
+   var = {{ component|component}}
 ==
-
-evaluator==
-grade = (100, component.value);
-==
-
-
-
 
 
 
