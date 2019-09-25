@@ -1,9 +1,9 @@
 # author = Antoine Meyer
-extends = ../templates/ap1_template.pl
+extends = ../templates/generic/generic.pl
 title = Trinôme du second degré
 
 text==
-On suppose qu'il existe trois variables `a`, `b` et 'c' de valeurs `int` ou `float`.
+On suppose qu'il existe trois variables `a`, `b` et `c` de valeurs `int` ou `float`.
 Écrire un programme dont l'exécution crée une variable `nb_solutions` dont la valeur 
 représente le nombre de solutions réelles de l'équation $a x^2 + b x + c$.
 
@@ -39,7 +39,8 @@ essais = [
 
 for a, b, c in essais:
     set_globals(a=a, b=b, c=c)
-    run()
+    run(title="${} x^2 + {} x + c = 0$".format(a, b, c))
     assert_variable_values(nb_solutions=nb_sols(a, b, c))
 ==
+
 
