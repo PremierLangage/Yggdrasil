@@ -9,14 +9,15 @@ nbechec%0
 before== #|python|
 import random
 essai = 4
-N = 10
+N = 4
 op1 = [str(random.randint(1, 10)) for n in range(N)]
 op2 = [str(random.randint(1, 10)) for n in range(N)]
 op3 = [str(random.randint(1, 10)) for n in range(N)]
-ope = [random.choice(list({'+','*','-','//','/'})) for n in range(N)]
-ope2 = [random.choice(list({'+','*','-','//','/'}-{ope})) for n in range(N)]
+ope = [random.choice(list({'+','*','-','//'})) for n in range(N)]
+ope2 = [random.choice(list({'+','*','-','//'}-{ope[n]})) for n in range(N)]
 
-res = [ eval(op1[n]+ope[n]+ op2[n])+ope2[N]+op3) for n in range(N)]
+res = [ eval(op1[n]+ope[n]+op2[n]+ope2[n]+op3[n]) for n in range(N)]
+
 solved=[ False for n in range(N)]
 isfloat = [ False for n in range(N)]
 inputs = []
@@ -72,7 +73,7 @@ Nombre d'essais : {{essai}}
 <ul>
 {% for input in inputs %}
 {% if not solved[loop.index0]%}
-<li>  {{op1[loop.index0]}}  {{ope[loop.index0]}}  {{op2[loop.index0]}}    = {{ input|component }} {% if isfloat[loop.index0] %} Attention valeur réelle (float) {% endif %} </li>
+<li>  {{op1[loop.index0]}}  {{ope[loop.index0]}}  {{op2[loop.index0]}} {{ope2[loop.index0]}}  {{op3[loop.index0]}}   = {{ input|component }} {% if isfloat[loop.index0] %} Attention valeur réelle (float) {% endif %} </li>
 {% endif %}
 {% endfor %}
 </ul>
