@@ -1,7 +1,8 @@
 # author zip
 
 # Heritage d'un type d'exercice 
-extends=../../templates/pltest.pl
+extends=/ComputerScience/python/template/soluce.pl
+.
 
 title = rectangle fixe
 
@@ -14,12 +15,10 @@ sous la forme :
 
 le périmètre est ?? et la surface est ??
 ==
-pltest==
->>> 
-le périmètre est 20 et la surface est 21
->>>
-
+solucece==
+le périmètre est 20 et la surface est 21.
 ==
 
-
+plsoluce==
+t|""
 
