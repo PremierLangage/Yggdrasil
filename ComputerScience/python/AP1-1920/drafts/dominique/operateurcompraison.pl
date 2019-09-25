@@ -22,19 +22,19 @@ match =: MatchList
 # STEP 2
 before==
 import random
-from mkl import fromcsv
+from mkl import fromcsv,selectionfromcsv
 
-match.nodes , expected =  fromcsv("content.csv")
+match.nodes , expected =  selectionfromcsv("content.csv")
 random.shuffle(match.nodes)
 ==
 
 title==
-Match List Component
+Opérateurs  de comparaison
 ==
 
 text==
 
-*Reliez chaque définition à la conditionnelle correspondante.*
+*Reliez chaque définition à l'**expresion conditionnelle** correspondante.*
 
 ==
 
