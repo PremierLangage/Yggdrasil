@@ -1,6 +1,7 @@
 # DR 25/09/2019 OK
 #  Author: DR
 
+extends=../../templates/pltest.pl
 extends=../../templates/simpleinput.pl
 
 
@@ -35,6 +36,11 @@ Ecrivez l'expression qui permet de faire cela.
 ==
 
 evaluator==
+
+d={}
+d['var']=val1
+eval(component.value)
+
 
 grade = (100, component.value)
 
