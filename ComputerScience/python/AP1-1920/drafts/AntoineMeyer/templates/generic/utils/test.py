@@ -320,9 +320,9 @@ class TestSession:
         self.params.update(params)
 
     """Feedback management."""
-
-    def begin_test_group(self, title: str) -> NoReturn:
-        self.current_test_group = TestGroup(title)
+    
+    def begin_test_group(self, title: str, hidden=False) -> NoReturn:
+        self.current_test_group = TestGroup(title, hidden=hidden)
         self.history.append(self.current_test_group)
 
     def end_test_group(self) -> NoReturn:
@@ -544,4 +544,5 @@ class NoGlobalChangeAssert(Assert):
             return "Variables globales inchangées"
         else:
             return "Variables globales modifiées"
+
 
