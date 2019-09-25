@@ -42,7 +42,7 @@ def grade_this(code: str, tests: str):
 
     try:
         exec(tests, namespace)
-    except StopGrader:  # BUG ! does not seem to work
+    except test.StopGrader:  # BUG ! does not seem to work
         print("caught StopGrader", file=sys.stderr)
     except AssertionError:  # BUG ! should not be necessary
         print("caught AssertionError", file=sys.stderr)
