@@ -1,5 +1,5 @@
 
-import csv, json 
+import csv, json, random
 def fromcsv(filename, sourcecol="source", targetcol="target"):
     """
     Warning doesn't work for non mapping data.
@@ -36,4 +36,4 @@ def selectionfromcsv(filename, number=4, sourcecol="source", targetcol="target")
             MatchListItem.append({"id":"target"+str(n),"content":l[n][1], "target": True})
             expected.append({ "source": "source"+str(n), "target": "target"+str(n) })
     return MatchListItem,expected
-    
+
