@@ -70,9 +70,11 @@ function ggbValues() {
     for (var i = 0; i < n; i++){
         var id = app1.getObjectName(i);
         var type = app1.getObjectType(id);
-        var value="";
+        var x="";var y="";var z="";
         if (type=="point" || type=="line") {
-        var value = JSON.stringify(app1.getXcoord(id));
+        var x = JSON.stringify(app1.getXcoord(id));
+        var y = JSON.stringify(app1.getYcoord(id));
+        var z = JSON.stringify(app1.getZcoord(id));
         }
         values.push({id: id, type: type,value: value});
     }
