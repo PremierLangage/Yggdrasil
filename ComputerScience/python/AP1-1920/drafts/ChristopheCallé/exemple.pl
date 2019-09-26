@@ -3,8 +3,10 @@ extends=../../templates/pltest.pl
 title=Un exemple
 
 text==
-Ceci est un exemple
+Déclarez une variable `a` de n'importe quel type
 ==
 
-
+pltest==
+>>>
+==
 
