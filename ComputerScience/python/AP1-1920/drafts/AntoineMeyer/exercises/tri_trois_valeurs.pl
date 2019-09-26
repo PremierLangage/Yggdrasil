@@ -49,7 +49,7 @@ begin_test_group("Tris d'éléments distincts")
 for x, y, z in permutations((1, 2, 3)):
 
     # Donne un titre à la prochaine exécution
-    set_title("Exécution avec a = {!r}, b = {!r}, c = {!r}")
+    set_title(f"Exécution avec a = {a}, b = {b}, c = {c}")
     # Fixe les variables globales disponibles pour les prochaines exécution
     set_globals(a=x, b=y, c=z)
     # Lance l'exécution du programme dans les conditions spécifiées
@@ -66,28 +66,31 @@ end_test_group()
 # On utilise ici un style plus compact avec un seul appel
 begin_test_group("Tris de chaînes avec un doublon et un plus petit")
 for x, y, z in set(permutations(("un", "un", "deux"))):
-    glob = {'a': x, 'b': y, 'c': z}
-    title = "Exécution avec a = {!r}, b = {!r}, c = {!r}".format(x, y, z)
-    run(title=title, glob=glob, output="deux un un\n", 
-        allow_global_change=False)
+    set_title(f"Exécution avec a = {a}, b = {b}, c = {c}")
+    set_globals(a=x, b=y, c=z)
+    run()
+    assert_output(' '.join(sorted((a,b,c)) + '\n')
+    assert_no_global_change()
 end_test_group()
 
 # Troisième groupe de tests avec le plus petit élément doublé
 begin_test_group("Tris avec un doublon et un plus grand")
 for x, y, z in set(permutations((1, 1, 2))):
-    glob = {'a': x, 'b': y, 'c': z}
-    title="Exécution avec a = {}, b = {}, c = {}"
-    run(title=title.format(x, y, z), glob=glob)
-    assert_output("1 1 2\n")
+    set_title(f"Exécution avec a = {a}, b = {b}, c = {c}")
+    set_globals(a=x, b=y, c=z)
+    run()
+    assert_output(' '.join(sorted((a,b,c)) + '\n')
     assert_no_global_change()
 end_test_group()
 
 # Quatrième groupe de tests avec trois éléments identiques
 begin_test_group("Tri de trois valeurs identiques")
 set_globals(a=1, b=1, c=1)
-run(title="Exécution avec a = {!r}, b = {!r}, c = {!r}".format(x, y, z))
-assert_output("1 1 1\n")
-assert_no_global_change()
+set_title(f"Exécution avec a = 1, b = 1, c = 1")
+    set_globals(a=1, b=1, c=1)
+    run()
+    assert_output('1 1 1\n')
+    assert_no_global_change()
 end_test_group()
 ==
 
