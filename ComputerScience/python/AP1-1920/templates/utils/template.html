@@ -29,14 +29,10 @@
             </button>
             <div id="demo{{feedback.name}}{{num}}" class="show">
                <div class="card card-danger;" style="background-color: Tomato;">
-                  <p>{{text}}
-                     {% if want or got %}
-                     <br/> Attendu: 
+                  <br/> Attendu: 
                   <pre style="background: #DDD"><code>{{want}}</code></pre>
                   <br/> Obtenu: 
                   <pre style="background: #DDD"><code>{{got}}</code></pre>
-                  {% endif %}
-                  </p>
                </div>
             </div>
          </div>
@@ -54,14 +50,10 @@
             </button>
             <div id="demo{{feedback.name}}{{num}}" class="collapse">
                <div class="card card-success;" style="background-color: LightGreen;">
-                  <p>{{text}}
-                     {% if want or got %}
-                     <br/> Attendu: 
+                  <br/> Attendu: 
                   <pre style="background: #DDD"><code>{{want}}</code></pre>
                   <br/> Obtenu: 
                   <pre style="background: #DDD"><code>{{got}}</code></pre>
-                  {% endif %}
-                  </p>
                </div>
             </div>
          </div>
@@ -99,5 +91,6 @@
       </div>
    </div>
 </div>
+
 
 
