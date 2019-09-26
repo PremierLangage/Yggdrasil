@@ -29,7 +29,7 @@ extrajs==
 <script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 <script type="text/javascript">
 var parameters = {
-        "id":"app1"
+        "id":"app1",
         "app":"classic",
         "width":600,
         "height":400,
