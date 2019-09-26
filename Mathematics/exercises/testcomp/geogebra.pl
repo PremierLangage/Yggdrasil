@@ -61,7 +61,7 @@ applet.inject('applet_container','preferHTML5');
 
 
 function ggbEval() {
-    app1.evalCommand('t=IsDefined(Line((-1,1),(-1,2)))');	
+    app1.evalCommand('t=IsDefined((-1,3))');	
 }
 
 function ggbValues() {
