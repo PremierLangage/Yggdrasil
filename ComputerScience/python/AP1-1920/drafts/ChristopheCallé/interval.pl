@@ -19,12 +19,7 @@ solution = _iterval[1]
 code = solution
 ==
 
-plsoluce==
-Test 1 | 5
-==
-
-soluce==
-print(globals())
-x=int(input())
+grader==
+print(solution)
 ==
 
