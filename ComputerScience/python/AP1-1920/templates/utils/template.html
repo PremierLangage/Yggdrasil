@@ -53,8 +53,8 @@ data-toggle="collapse" data-target="#demo{{feedback.name}}{{num}}">
 <div class="card card-success;" style="background-color: LightGreen;">
 <p>{{text}}
 {% if want or got %}
-<br/> Attendu: {{want}}
-<br/> Obtenu: {{got}}
+<br/> Attendu: <pre><code>{{want}}</code></pre>
+<br/> Obtenu: <pre><code>{{got}}</code></pre>
 {% endif %}
 </p>
 </div>
