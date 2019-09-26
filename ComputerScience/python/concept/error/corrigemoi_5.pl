@@ -14,7 +14,7 @@ v8=Bonjour je m'appel Dominique et je suis heureux de vous acceuillir ici !
 v9=Bonjour je m'appel Nadime et je suis heureux de vous acceuillir ici !
 
 title= Corrige Moi !
-extends=/ComputerScience/python/template/coding.pl
+extends=/ComputerScience/python/template/soluce.pl
 
 @/builder/before.py [builder.py]
 
@@ -42,6 +42,7 @@ D'ou l'erreur.
 Deux possibilités pour corriger soit placer votre texte ente guillemets ".
 soit placer un anti-slash avant l'apostrophe \' .
 ==
+
 
 
 
