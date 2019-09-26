@@ -69,7 +69,7 @@ for x, y, z in set(permutations(("un", "un", "deux"))):
     set_title(f"Exécution avec a = {a}, b = {b}, c = {c}")
     set_globals(a=x, b=y, c=z)
     run()
-    assert_output(' '.join(sorted((a,b,c)) + '\n')
+    assert_output(' '.join(sorted((a,b,c)) + '\n'))
     assert_no_global_change()
 end_test_group()
 
