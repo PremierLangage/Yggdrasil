@@ -12,4 +12,5 @@ mybuild==
 import interval
 
 inter = interval.makeinterval()
+print(inter)
 ==
