@@ -4,11 +4,11 @@ name= Plus
 extends=/ComputerScience/python/template/soluce.pl
 
 text==
-Le programme python si dessous contient une erreur. Corrigez-la pour passer à l'exercice suivant.
+Le programme python ci-dessous contient une erreur. Corrigez-la pour passer à l'exercice suivant.
 ==
 
 code==
-print('la somme de 15975 et 43242 est '+ 15975+43242)
+print('la somme de 15975 et 43242 est'+ 15975+43242)
 ==
 
 plsoluce==
@@ -30,9 +30,10 @@ Pour le demander explictement il faut transformer 15975+43242 en str et
 print("la somme de 15975 et 43242 est "+ str(15975+43242))
 ou alors demander à print de faire le travail en séparant les deux éléments à afficher
 print("la somme de 15975 et 43242 est ",15975+43242)
-en utilisant une virgule pour séparer les paramêtres d'appel de print,attention aux espaces
+en utilisant une virgule pour séparer les paramêtres d'appel de print, attention aux espaces.
 ==
 
  
+
 
 
