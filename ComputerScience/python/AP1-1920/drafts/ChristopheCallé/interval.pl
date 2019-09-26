@@ -16,6 +16,7 @@ import interval
 _iterval = interval.makeinterval()
 latex = _iterval[0]
 solution = _iterval[1]
+code = solution
 ==
 
 plsoluce==
