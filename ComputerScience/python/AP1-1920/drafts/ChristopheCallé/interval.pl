@@ -20,6 +20,17 @@ code = solution
 ==
 
 grader==
-print(solution)
+from itertools import permutations
+
+begin_test_group("Groupe de tests pour tester les tests")
+for x, y, z in permutations((1, 2, 3)):
+    set_title(f"Exécution avec a = {x}, b = {y}, c = {z}")
+    set_globals(a=x, b=y, c=z)
+    run()
+    assert_output(' '.join(sorted((x, y, z))) + '\n'))
+    assert_no_global_change()
+end_test_group()
+
+
 ==
 
