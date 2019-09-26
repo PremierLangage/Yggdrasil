@@ -39,10 +39,10 @@ OPENRIGHT="["
 CLOSELEFT="["
 CLOSERIGHT="]"
 
-INFLEFT="] -\infinite"
-INRIGHT="+\infinite ["
+INFLEFT="] -\infty"
+INRIGHT="+\infty ["
 
-UNION="\\union"
+UNION="\\cup"
 
 import random 
 
