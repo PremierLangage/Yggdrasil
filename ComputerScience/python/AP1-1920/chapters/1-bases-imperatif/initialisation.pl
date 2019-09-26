@@ -8,6 +8,7 @@ author = CC + DR
 
 title = Initialisation et constantes 
 
+editor.height = 80
 
 before== #|python| 
 import random 
@@ -42,6 +43,7 @@ text==
  Initialisez la variable **{{var}}** avec une valeur quelconque
  de type **{{type_var}}** 
 ==
+
 
 
 
