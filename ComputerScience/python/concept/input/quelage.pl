@@ -8,7 +8,7 @@ name=Capitaine
 text==
 # input and print
 
-Demandez au Capitaine son année de naissance puis calculez et affichez son age au 31 décembre 2018 à Minuit.
+Demandez au Capitaine son année de naissance puis calculez et affichez son age au 31 décembre 2022 à Minuit.
 
   Le capitaine né en ?? aura ?? ans en 2022.
 == 
