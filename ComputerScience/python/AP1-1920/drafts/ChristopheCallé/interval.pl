@@ -1,7 +1,6 @@
 extends=../AntoineMeyer/templates/generic/generic.pl
 
 @ interval.py
-@ /builder/before.py [builder.py]
 
 title=Intervales
 
