@@ -21,8 +21,8 @@ else:
 
 code==
 # lecture au clavier, affectation
-# __ apparait dans {{MOT}}.
-# __ n'apparait pas dans {{MOT}}.")
+# ?? apparait dans {{MOT}}.
+# ?? n'apparait pas dans {{MOT}}.
 lettre=input()
 
 ==
@@ -55,6 +55,7 @@ Test 2 |i
 Test 3 |n
 Test 4 |+
 ==
+
 
 
 
