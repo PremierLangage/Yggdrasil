@@ -1,6 +1,6 @@
 extends=../../templates/plsoluce.pl
 
-@ intervales.py
+@ interval.py
 
 title=Intervales
 
@@ -9,7 +9,7 @@ text==
 ==
 
 mybuild==
-import intervales
+import interval
 
-inter = intervales.makeinterval()
+inter = interval.makeinterval()
 ==
