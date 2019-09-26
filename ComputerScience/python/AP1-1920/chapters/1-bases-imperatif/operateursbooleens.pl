@@ -11,7 +11,7 @@ before== #|python|
 import random
 essai = 4
 N = 4
-boolval = ["True","False","not True","not False",0,'"toto"']
+boolval = ["True","False","not True","not False","0",'"toto"']
 op1 = [random.choice(boolval) for n in range(N)]
 op2 = [random.choice(boolval) for n in range(N)]
 op3 = [random.choice(boolval) for n in range(N)]
@@ -82,5 +82,6 @@ Nombre d'essais : {{essai}}
 {% endfor %}
 </ul>
 ==
+
 
 
