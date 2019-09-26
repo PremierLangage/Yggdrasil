@@ -34,9 +34,6 @@ form==
 ==
 
 evaluator==
-
-
-
 grade = (100,str( component.code))
 ==
 
@@ -50,5 +47,6 @@ text=doc
 @ /utils/sandboxio.py 
 @ /grader/evaluator.py [grader.py]
 @ /builder/before.py [builder.py]
+
 
 
