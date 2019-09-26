@@ -70,7 +70,7 @@ function ggbValues() {
     for (var i = 0; i < n; i++){
         var id = app1.getObjectName(i);
         var type = JSON.stringify(app1.getObjectType(id));
-        var value = JSON.stringify(app1.getObjectType(id));
+        var value = JSON.stringify(app1.getValueString(id));
         values.push({id: id, type: type,value: value});
     }
     var myDiv = document.getElementById("answer");
