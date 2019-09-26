@@ -61,7 +61,7 @@ applet.inject('applet_container','preferHTML5');
 
 
 function ggbEval() {
-    app1.evalCommand('t=IsDefined(Midpoint(Segment(B,C)))');	
+    app1.evalCommand('t=IsDefined((4,4))');	
 }
 
 function ggbValues() {
