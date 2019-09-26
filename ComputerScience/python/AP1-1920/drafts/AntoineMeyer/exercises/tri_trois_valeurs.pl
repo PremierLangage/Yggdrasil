@@ -43,11 +43,9 @@ from itertools import permutations
 
 # Ouvre un "groupe de tests" de titre donné
 begin_test_group("Tris d'éléments distincts")
-
 # Dans cet exemple on veut faire un test pour chaque permutation de (1, 2, 3)
 # On utilise ici un style "verbeux" avec plusieurs appels
 for x, y, z in permutations((1, 2, 3)):
-
     # Donne un titre à la prochaine exécution
     set_title(f"Exécution avec a = {a}, b = {b}, c = {c}")
     # Fixe les variables globales disponibles pour les prochaines exécution
@@ -58,7 +56,6 @@ for x, y, z in permutations((1, 2, 3)):
     assert_output("1 2 3\n")
     # Vérifie que les variables globales n'ont pas changé
     assert_no_global_change()
-
 # Clôt le précédent groupe de tests
 end_test_group()
 
