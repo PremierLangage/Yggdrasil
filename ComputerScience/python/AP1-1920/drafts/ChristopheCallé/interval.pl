@@ -1,4 +1,4 @@
-extends=../../templates/plsoluce.pl
+extends=../AntoineMeyer/templates/generic/generic.pl
 
 @ interval.py
 @ /builder/before.py [builder.py]
