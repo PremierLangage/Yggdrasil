@@ -17,8 +17,10 @@ op2 = [random.choice(boolval) for n in range(N)]
 op3 = [random.choice(boolval) for n in range(N)]
 ope = [random.choice(list({'and','or'})) for n in range(N)]
 ope2 = [random.choice(list({'and','or'})) for n in range(N)]
-
-res = [ eval(op1[n]+ope[n]+op2[n]+ope2[n]+op3[n]) for n in range(N)]
+enonce=[]
+for n in range(N):
+    enonce.append(op1[n]+' '+ope[n]+' '+op2[n]+' '+ope2[n]+' '+op3[n])
+res = [ eval(enonce[n]) for n in range(N)]
 
 solved=[ False for n in range(N)]
 isfloat = [ False for n in range(N)]
@@ -75,7 +77,7 @@ Nombre d'essais : {{essai}}
 <ul>
 {% for input in inputs %}
 {% if not solved[loop.index0]%}
-<li>  {{op1[loop.index0]}}  {{ope[loop.index0]}}  {{op2[loop.index0]}} {{ope2[loop.index0]}}  {{op3[loop.index0]}}   = {{ input|component }} {% if isfloat[loop.index0] %} Attention valeur réelle (float) {% endif %} </li>
+<li>  {{enonce[loop.index0]}}  = {{ input|component }}  </li>
 {% endif %}
 {% endfor %}
 </ul>
