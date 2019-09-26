@@ -57,7 +57,7 @@ from pltest_doc import PlRunner
 pltest = """>>> True # le code compile 
 True
 """
-tester = PlRunner(component.value,pltest)
+tester = PlRunner(component.code,pltest)
 a, b = tester.runcompiletest(dic={'var':None})
 if not a :# erreur de compile
     grade=(0,b)
