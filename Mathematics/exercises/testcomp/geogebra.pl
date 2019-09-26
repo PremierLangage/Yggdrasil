@@ -71,7 +71,7 @@ function ggbValues() {
         var id = app1.getObjectName(i);
         var type = app1.getObjectType(id);
         var value="";
-        if (type=="point") {
+        if (type=="point" or type=="line") {
         var value = JSON.stringify(app1.getXcoord(id));
         }
         values.push({id: id, type: type,value: value});
