@@ -46,6 +46,7 @@ essais = [
 
 essais += []
 
+begin_test_group("Résultats")
 for a, b, c in essais:
     set_globals(a=a, b=b, c=c)
     run(title="$%{} x^2 + {} x + c = 0%$".format(a, b, c))
