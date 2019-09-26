@@ -47,7 +47,26 @@ Deux possibilités pour corriger soit placer votre texte ente guillemets ".
 soit placer un anti-slash avant l'apostrophe \' .
 ==
 
+@ ../../templates/utils/pltest_doc.py
 
+evaluator==
+from pltest_doc import PlRunner
+
+pltest = """>>> True # le code compile 
+True
+"""
+tester = PlRunner(component.value,pltest)
+a, b = tester.runcompiletest(dic={'var':None})
+if not a :# erreur de compile
+    grade=(0,b)
+else:
+    grade=(100,""" Bravo! 
+une solution 
+    print('Bonjour je m\'appelle Julie et je suis heureuse de vous acceuillir ici !')
+une autre 
+    print("Bonjour je m'appelle Julie et je suis heureuse de vous acceuillir ici !")
+""")
+==
 
 
 
