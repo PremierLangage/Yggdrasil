@@ -76,7 +76,7 @@ function ggbValues() {
         var y = JSON.stringify(app1.getYcoord(id));
         var z = JSON.stringify(app1.getZcoord(id));
         }
-        values.push({id: id, type: type,value: value});
+        values.push({id: id, type: type,x:x,y:y,z:z});
     }
     var myDiv = document.getElementById("answer");
     myDiv.innerHTML = JSON.stringify(values);
