@@ -1,6 +1,6 @@
 extends=../AntoineMeyer/templates/generic/generic.pl
 
-title=fibonacci
+title=Fibonacci
 
 text==
 We can get the fibonacci numbers recursively as defined below:
