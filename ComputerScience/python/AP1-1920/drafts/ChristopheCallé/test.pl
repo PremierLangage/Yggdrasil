@@ -1,4 +1,4 @@
-extends=../../templates/generic/generic.pl
+extends=../AntoineMeyer/templates/generic/generic.pl
 
 title=fibonacci
 
