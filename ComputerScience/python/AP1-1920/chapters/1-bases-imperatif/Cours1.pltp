@@ -11,8 +11,25 @@ Ensemble d'exercices péchés dans la partie computerscience/concept
 # Validation de l'identification des noms de variables 
 @ Nommage_variable.pl # avec alea
 
+#  print 
+@ rectanglefixe.pl
+
+# input print
+@ rectangle.pl
+
+# input print
+@ rectanglediagonal.pl
+
+
+
 @ interchanger_deux_variables.pl
 
+@ expressionaleatoires.pl
+
+@ initialisation.pl
+@ operateursbooleens.pl
+@ priority.pl
+@ bascule.pl
 
 
 
