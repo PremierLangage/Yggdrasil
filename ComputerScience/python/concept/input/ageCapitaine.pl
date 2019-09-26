@@ -10,11 +10,11 @@ extends=/ComputerScience/python/template/soluce.pl
 text==
 Ecriver un programme utilisant une unique variable **age** qui lit cette information au clavier puis affiche :
 
-	Le capitaine a __ ans. Dans deux ans il aura ___ ans.
+	Le capitaine a ?? ans. Dans deux ans il aura ?? ans.
 
 puis sachant que dans cinq ans, le perroquet aura le tiers de l’âge du capitaine (arrondi à l'année inférieur) quel est l'age actuel du perroquet, le programme affiche:
 
-	Le perroquet du capitaine a __ ans.
+	Le perroquet du capitaine a ?? ans.
 
 
 == 
@@ -42,6 +42,7 @@ a=int(input())
 print("Le capitaine a %d ans. Dans deux ans il aura %d ans." % (a,a+2))
 print("Le perroquet du capitaine a %d ans." % (((a+5)//3)-5))
 ==
+
 
 
 
