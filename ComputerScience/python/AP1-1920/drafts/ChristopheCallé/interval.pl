@@ -16,10 +16,11 @@ import interval
 _iterval = interval.makeinterval()
 latex = _iterval[0]
 solution = _iterval[1]
-
 ==
 
-code = # Ecrivez votre code ici
+code==
+# Ecrivez votre code ici
+==
 
 plsoluce==
 
