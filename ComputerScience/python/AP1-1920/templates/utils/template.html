@@ -53,8 +53,8 @@ data-toggle="collapse" data-target="#demo{{feedback.name}}{{num}}">
 <div class="card card-success;" style="background-color: LightGreen;">
 <p>{{text}}
 {% if want or got %}
-<br/> Attendu: <pre><code style="<pre style="background: #DDD">{{want}}</code></pre>
-<br/> Obtenu: <pre><code style="<pre style="background: #DDD">{{got}}</code></pre>
+<br/> Attendu: <pre style="background: #DDD"><code>{{want}}</code></pre>
+<br/> Obtenu: <pre style="background: #DDD"><code>{{got}}</code></pre>
 {% endif %}
 </p>
 </div>
@@ -69,7 +69,8 @@ data-toggle="collapse" data-target="#demo{{feedback.name}}{{num}}">
 </button>
 <div id="demo{{feedback.name}}{{num}}" class="show">
 <div class="card card-danger" style="background-color: Tomato;">
-<p><br><pre><code style="<pre style="background: #DDD">{{got}}</code></pre> <br><pre><code style="<pre style="background: #DDD">{{want}}</code></pre> </p>
+<p><br/> Attendu: <pre style="background: #DDD"><code>{{want}}</code></pre>
+<br/> Obtenu: <pre style="background: #DDD"><code>{{got}}</code></pre></p>
 </div>
 </div>
 </div>
