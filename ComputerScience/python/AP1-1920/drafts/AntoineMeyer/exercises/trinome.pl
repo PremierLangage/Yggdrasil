@@ -36,15 +36,15 @@ def nb_sols(a, b, c):
 
 essais = [
     [0, 0, 0], [0, 0, 1], [0, 1, 1], 
-    [1, 3, 1], [1, 2, 1], [1, 1, 1]
-]
-
-for i in range(3):
-    essais += [[
+    [1, 3, 1], [1, 2, 1], [1, 1, 1],
+    [
         random.randint(0, 10),
         random.randint(0, 10),
         random.randint(0, 10)
-    ]]
+    ]
+]
+
+essais += []
 
 for a, b, c in essais:
     set_globals(a=a, b=b, c=c)
