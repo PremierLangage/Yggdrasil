@@ -75,8 +75,9 @@ end_test_group()
 # Troisième groupe de tests avec le plus petit élément doublé
 begin_test_group("Tris avec un doublon et un plus grand")
 for x, y, z in set(permutations((1, 1, 2))):
-    set_globals(a=x, b=y, c=z)
-    run(title="Exécution avec a = {!r}, b = {!r}, c = {!r}".format(x, y, z))
+    glob = {'a': x, 'b': y, 'c': z}
+    title="Exécution avec a = {}, b = {}, c = {}"
+    run(title=title.format(x, y, z), glob=glob)
     assert_output("1 1 2\n")
     assert_no_global_change()
 end_test_group()
@@ -89,6 +90,7 @@ assert_output("1 1 1\n")
 assert_no_global_change()
 end_test_group()
 ==
+
 
 
 
