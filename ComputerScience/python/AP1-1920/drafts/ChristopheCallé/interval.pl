@@ -5,15 +5,11 @@ extends=../../templates/plsoluce.pl
 title=Intervales
 
 text==
+{{ inter }}
 ==
 
+mybuild==
+import intervales
 
-
-pltest==
-
+inter = intervales.makeinterval()
 ==
-
-
-pltest1==
-==
-
