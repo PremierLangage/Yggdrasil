@@ -11,11 +11,12 @@ before== #|python|
 import random
 essai = 4
 N = 4
-op1 = [str(random.randint(1, 10)) for n in range(N)]
-op2 = [str(random.randint(1, 10)) for n in range(N)]
-op3 = [str(random.randint(1, 10)) for n in range(N)]
-ope = [random.choice(list({'+','*','-','//'})) for n in range(N)]
-ope2 = [random.choice(list({'+','*','-','//'}-{ope[n]})) for n in range(N)]
+boolval = ["True","False","not True","not False",0,'"toto"']
+op1 = [random.choice(boolval) for n in range(N)]
+op2 = [random.choice(boolval) for n in range(N)]
+op3 = [random.choice(boolval) for n in range(N)]
+ope = [random.choice(list({'and','or'})) for n in range(N)]
+ope2 = [random.choice(list({'and','or'})) for n in range(N)]
 
 res = [ eval(op1[n]+ope[n]+op2[n]+ope2[n]+op3[n]) for n in range(N)]
 
@@ -57,7 +58,7 @@ if score <100 and essai<1 :
 grade = (score, feedback)
 ==
 
-title = Expressions aléatoires
+title = Expressions booléennes 
 # y a pas besoin d'énoncé 
 text==
 Attention vous avez un nombre limité d'essai pour répondre a toutes les égalitées.
@@ -66,7 +67,7 @@ Sinon cela redémarre au début avec {{N}} égalités.
 
 Oui heureusement il y en a des faciles...
 
-**Attention il faut fournir une valeur numérique sur chaque ligne.**
+**Attention il faut fournir une valeur booléenne: True ou False sur chaque ligne.**
 ==
 
 form== #|html|
