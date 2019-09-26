@@ -29,6 +29,7 @@ extrajs==
 <script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 <script type="text/javascript">
 var parameters = {
+        "id":"app1"
         "app":"classic",
         "width":600,
         "height":400,
@@ -51,7 +52,7 @@ var parameters = {
 }
 
 parameters.appletOnLoad = function() {
-ggbApplet.evalCommand('A=(2,0)\nB=(-1,1)\nC=(-1,-1)');	
+app1.evalCommand('A=(2,0)\nB=(-1,1)\nC=(-1,-1)');	
 }
 
 var applet = new GGBApplet('5.0', parameters);
@@ -60,16 +61,15 @@ applet.inject('applet_container','preferHTML5');
 
 
 function ggbEval() {
-    ggbApplet.evalCommand('t=IsDefined((-1,1))\nv=1');	
-
+    app1.evalCommand('t=IsDefined((-1,1))\nv=1');	
 }
 
 function ggbValues() {
-    var n = ggbApplet.getObjectNumber();
+    var n = app1.getObjectNumber();
     var values = [];
     for (var i = 0; i < n; i++){
-        var id = ggbApplet.getObjectName(i);
-        var value = JSON.stringify(ggbApplet.getObjectType(id));
+        var id = app1.getObjectName(i);
+        var value = JSON.stringify(app1.getObjectType(id));
         values.push({id: id, value: value});
     }
     var myDiv = document.getElementById("answer");
