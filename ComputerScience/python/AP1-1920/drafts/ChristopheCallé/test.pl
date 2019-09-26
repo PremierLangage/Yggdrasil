@@ -19,7 +19,7 @@ Write a recursive function `fibonacci` that takes an integer n and returns the n
 ==
 
 
-component.code ==
+editor.code ==
 def fibonacci(n):
     pass
 ==
