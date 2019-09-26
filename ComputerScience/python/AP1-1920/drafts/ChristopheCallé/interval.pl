@@ -16,7 +16,6 @@ import interval
 _interval = interval.makeinterval()
 latex = _interval[0]
 solution = _interval[1]
-code = solution
 ==
 
 grader==
