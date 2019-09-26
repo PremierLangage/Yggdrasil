@@ -10,7 +10,7 @@ Démo GeoGebra
 ==
 
 text== #|html|
-Construire le barycentre du triangle.
+Tracer la médiane issue du sommet A.
 ==
 
 form==
