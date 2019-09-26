@@ -38,10 +38,10 @@ OPENRIGHT="["
 CLOSELEFT="["
 CLOSERIGHT="]"
 
-INFLEFT="] -\infinite"
-INRIGHT="+\infinite ["
+INFLEFT="] -\infty"
+INRIGHT="+\infty ["
 
-UNION="\\union"
+UNION="\\cup"
 
 import random 
 
@@ -150,3 +150,4 @@ if __name__ == '__main__':
     while input() != "" :
         for i in range(6):
            print(i+1,":", makeinterval(i+1))
+
