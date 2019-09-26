@@ -28,16 +28,20 @@ Ensemble d'exercices péchés dans la partie computerscience/concept
 # input print
 @ rectanglediagonale.pl
 
+@ echange_deux_variables.pl
 
 
-@ interchanger_deux_variables.pl
+#@ interchanger_deux_variables.pl
 
 @ expressionaleatoires.pl
 
 @ initialisation.pl
 @ operateursbooleens.pl
+@ tri_trois_valeurs.pl
 @ priority.pl
 @ bascule.pl
+@ trinome.pl
+
 
 
 
