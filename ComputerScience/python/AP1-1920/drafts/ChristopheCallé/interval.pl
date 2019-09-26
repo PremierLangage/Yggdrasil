@@ -8,8 +8,6 @@ title=Intervales
 text==
 _____
 $%
-\infty
-\cup
 {{ latex }}
 %$
 _____
