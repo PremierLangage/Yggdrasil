@@ -15,6 +15,8 @@ de `a`, `b` et `c`.*<br><br>
 ==
 
 grader==
+import random
+
 def nb_sols(a, b, c):
     if a == 0:
         if b == 0:
@@ -37,11 +39,19 @@ essais = [
     [1, 3, 1], [1, 2, 1], [1, 1, 1]
 ]
 
+for i in range(3):
+    essais += [[
+        random.randint(0, 10),
+        random.randint(0, 10),
+        random.randint(0, 10)
+    ]]
+
 for a, b, c in essais:
     set_globals(a=a, b=b, c=c)
     run(title="$%{} x^2 + {} x + c = 0%$".format(a, b, c))
     assert_variable_values(nb_solutions=nb_sols(a, b, c))
 ==
+
 
 
 
