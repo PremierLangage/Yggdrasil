@@ -32,7 +32,7 @@ Texte attendu :
 before==
 import random
 var = random.choice([v1,v2,v3,v4,v5,v6,v7,v8,v9])
-editor.code = "print('"+var+"')"
+component.code = "print('"+var+"')"
 expectedoutput=var
 text += "\n\t"+ var
 ==
