@@ -44,6 +44,18 @@ class PlRunner(doctest.DocTestRunner):
         self.pltest= pltest
         super().__init__()
 
+    def runcompiletest(self, dic={}, name="compiletest"):
+        try:
+            compile(self.student,"Votre code",'exec')
+            exec(self.student, dic)
+            return True,"Compilation OK"
+        except SyntaxError as e:
+            self.fb.addTestSyntaxError(name,subnlbybr(traceback.format_exc(limit=0,chain=False))," Syntaxe ")
+        except Exception as e:
+            self.fb.addTestSyntaxError(name,subnlbybr(traceback.format_exc(limit=0,chain=False))," Exception ")
+        
+        return False,self.fb.render()
+
     def runpltest(self, name):
         self.fb.name=str(name)
         dic = {}
@@ -112,6 +124,7 @@ class PlRunner(doctest.DocTestRunner):
             return 100*(self.right/self.total)
         else:
             return 0
+
 
 
 
