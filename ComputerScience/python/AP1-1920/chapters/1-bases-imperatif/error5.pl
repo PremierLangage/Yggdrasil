@@ -48,6 +48,8 @@ soit placer un anti-slash avant l'apostrophe \' .
 ==
 
 @ ../../templates/utils/pltest_doc.py
+@ ../../templates/utils/feedback2.py
+@ ../../templates/utils/template.html
 
 evaluator==
 from pltest_doc import PlRunner
