@@ -8,6 +8,7 @@ title=Intervales
 text==
 _____
 $%
+\infty
 {{ latex }}
 %$
 _____
