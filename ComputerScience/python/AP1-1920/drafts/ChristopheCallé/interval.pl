@@ -9,7 +9,7 @@ text==
 $%
 {{ latex }}
 %$
-code
+{{ code }}
 ==
 
 
