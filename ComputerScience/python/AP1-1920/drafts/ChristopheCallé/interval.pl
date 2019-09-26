@@ -1,6 +1,7 @@
 extends=../../templates/plsoluce.pl
 
 @ interval.py
+@ /builder/before.py [builder.py]
 
 title=Intervales
 
@@ -8,9 +9,11 @@ text==
 {{ inter }}
 ==
 
-mybuild==
+
+before==
 import interval
 
 inter = interval.makeinterval()
-print(inter)
 ==
+
+
