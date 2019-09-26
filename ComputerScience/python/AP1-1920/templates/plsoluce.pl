@@ -1,7 +1,3 @@
-
-
-
-
 doc==
 # Pour que ce grader fonctionne il faut qu'il y ai une balise plsoluce
 # qui contienne des lignes de la forme 
@@ -42,6 +38,7 @@ pour avoir une entrée multi ligne
 form=@ /python/form/editorform.html
 
 settings.allow_reroll=1
+
 
 
 
