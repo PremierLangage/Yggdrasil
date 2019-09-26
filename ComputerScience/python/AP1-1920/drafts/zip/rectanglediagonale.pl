@@ -3,7 +3,7 @@
 # author zip
 
 # Heritage d'un type d'exercice 
-extends=/ComputerScience/python/template/soluce.pl
+extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 title = rectangle diagonale
 
@@ -31,3 +31,4 @@ essai1
 2 
 3
 ==
+
