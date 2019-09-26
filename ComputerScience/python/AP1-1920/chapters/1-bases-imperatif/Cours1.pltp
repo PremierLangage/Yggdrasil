@@ -8,6 +8,13 @@ Ensemble d'exercices péchés dans la partie computerscience/concept
 ==
 
 
+@ /ComputerScience/python/concept/input/ageCapitaine.pl
+@ /ComputerScience/python/concept/input/agealeacap.pl
+@ /ComputerScience/python/concept/input/occure.pl
+
+
+
+
 # Validation de l'identification des noms de variables 
 @ Nommage_variable.pl # avec alea
 
