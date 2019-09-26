@@ -6,24 +6,22 @@ extends=../../templates/plsoluce.pl
 title=Intervales
 
 text==
------
+$$$$$
 $%
 {{ latex }}
 %$
------
+$$$$$
 {{ code }}
------
-{{ i }}
------
+$$$$$
 ==
 
 
 before==
 import interval
 
-i = interval.makeinterval()
-latex = i[0]
-code = i[1]
+_iterval = interval.makeinterval()
+latex = _iterval[0]
+code = _iterval[1]
 
 ==
 
