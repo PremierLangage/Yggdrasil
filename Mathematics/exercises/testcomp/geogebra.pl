@@ -73,8 +73,8 @@ function ggbValues() {
         var x="";var y="";var z="";
         if (type=="point" || type=="line") {
         var x = app1.getXcoord(id);
-        var y = JSON.stringify(app1.getYcoord(id));
-        var z = JSON.stringify(app1.getZcoord(id));
+        var y = app1.getYcoord(id);
+        var z = app1.getZcoord(id);
         }
         values.push({id: id, type: type,x:x,y:y,z:z});
     }
