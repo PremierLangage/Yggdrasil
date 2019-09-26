@@ -3,7 +3,7 @@
 author=Dominique Revuz 
 title= Quel age à le capitaine
 tag=input|print|variable
-extends=/ComputerScience/python/python/0PLG/soluce.pl
+extends=/ComputerScience/python/template/soluce.pl
 name=Capitaine
 text==
 # input and print
@@ -34,4 +34,5 @@ soluce==
 a=int(input())
 print("Le capitaine né en %d auras %d ans en 2018." % (a,2018-a))
 ==
+
 
