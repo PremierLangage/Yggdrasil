@@ -28,20 +28,21 @@ pour avoir une entrée multi ligne
 ==
 
 # TODO rapatrier les fichiers suivants
-@ ../../template/soluceevaluator.py          [grader.py] # le as de python import toto as titi
-@ ../../template/gradesoluce.py
+@ utils/template/soluceevaluator.py          [grader.py] # le as de python import toto as titi
+@ utils/template/gradesoluce.py
 @ /utils/sandboxio.py
 
 @ /builder/none.py [builder.py]
 
-@ ../../template/feedback2.py
-@ ../../template/template.html
+@ utils/feedback2.py
+@ utils/template.html
 
 
 # une interface standard d'exercice avec un editeur pour la réponse
 form=@ /python/form/editorform.html
 
 settings.allow_reroll=1
+
 
 
 
