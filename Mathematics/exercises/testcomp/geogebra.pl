@@ -52,7 +52,7 @@ var parameters = {
 }
 
 parameters.appletOnLoad = function() {
-app1.evalCommand('A=(2,0)\nB=(-1,1)\nC=(-1,-1)\nPolygon(A,B,C)\nShowLabel({A,B,C}, true)');	
+app1.evalCommand('A=(2,0)\nB=(-1,1)\nC=(-1,-1)\nPolygon(A,B,C)\nShowLabel(A,true)\nShowLabel(B,true)\nShowLabel(C,true)');	
 }
 
 var applet = new GGBApplet('5.0', parameters);
