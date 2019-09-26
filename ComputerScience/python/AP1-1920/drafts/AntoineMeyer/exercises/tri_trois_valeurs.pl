@@ -53,7 +53,7 @@ for x, y, z in permutations((1, 2, 3)):
     # Lance l'exécution du programme dans les conditions spécifiées
     run()
     # Vérifie la sortie standard obtenue
-    assert_output(' '.join(sorted((x, y, z))) + '\n'))
+    assert_output(' '.join(sorted(map(str, (x, y, z)))) + '\n')
     # Vérifie que les variables globales n'ont pas changé
     assert_no_global_change()
 # Clôt le précédent groupe de tests
@@ -66,7 +66,7 @@ for x, y, z in set(permutations(("un", "un", "deux"))):
     set_title(f"Exécution avec a = {x}, b = {y}, c = {z}")
     set_globals(a=x, b=y, c=z)
     run()
-    assert_output(' '.join(sorted((x, y, z))) + '\n'))
+    assert_output(' '.join(sorted(map(str, (x, y, z)))) + '\n')
     assert_no_global_change()
 end_test_group()
 
@@ -76,7 +76,7 @@ for x, y, z in set(permutations((1, 1, 2))):
     set_title(f"Exécution avec a = {x}, b = {y}, c = {z}")
     set_globals(a=x, b=y, c=z)
     run()
-    assert_output(' '.join(sorted((x, y, z))) + '\n'))
+    assert_output(' '.join(sorted(map(str, (x, y, z)))) + '\n')
     assert_no_global_change()
 end_test_group()
 
