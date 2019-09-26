@@ -14,10 +14,10 @@ v8=Bonjour je m'appel Dominique et je suis heureux de vous acceuillir ici !
 v9=Bonjour je m'appel Nadime et je suis heureux de vous acceuillir ici !
 
 title= Corrige Moi !
-extends=/ComputerScience/python/template/soluce.pl
+
 
 @/builder/before.py [builder.py]
-
+@/grader/evaluator.py [grader.py]
 text==
 
 Le programme python si dessous contient une erreur corrigez la pour passer à l'exercice suivant.  
