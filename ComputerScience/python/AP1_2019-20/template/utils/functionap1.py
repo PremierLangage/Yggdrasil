@@ -1,7 +1,0 @@
-
-
-
-
-def maman():
-    return "maman"
-
