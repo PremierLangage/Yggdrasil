@@ -6,10 +6,15 @@ extends=../../templates/plsoluce.pl
 title=Intervales
 
 text==
+-----
 $%
 {{ latex }}
 %$
+-----
 {{ code }}
+-----
+{{ i }}
+-----
 ==
 
 
