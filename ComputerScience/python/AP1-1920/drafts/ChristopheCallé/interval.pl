@@ -21,7 +21,7 @@ $%
 before==
 import interval
 
-i = interval.makeinterval()[0]
+i = interval.makeinterval()
 latex = i[0]
 code = i[1]
 
