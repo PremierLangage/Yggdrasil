@@ -18,7 +18,7 @@ Ensemble d'exercices péchés dans la partie computerscience/concept
 @ rectangle.pl
 
 # input print
-@ rectanglediagonal.pl
+@ rectanglediagonale.pl
 
 
 
@@ -30,6 +30,7 @@ Ensemble d'exercices péchés dans la partie computerscience/concept
 @ operateursbooleens.pl
 @ priority.pl
 @ bascule.pl
+
 
 
 
