@@ -71,7 +71,7 @@ function ggbValues() {
         var id = app1.getObjectName(i);
         var type = app1.getObjectType(id);
         var x="";var y="";var z="";
-        if (type=="point" || type=="circle") {
+        if (type=="point" || type=="line") {
         var x = JSON.stringify(app1.getXcoord(id));
         var y = JSON.stringify(app1.getYcoord(id));
         var z = JSON.stringify(app1.getZcoord(id));
