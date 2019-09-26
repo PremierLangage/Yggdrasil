@@ -40,7 +40,7 @@ var parameters = {
         "borderColor":null,
         "showMenuBar":false,
         "showAlgebraInput":false,
-        "customToolbar":"0 || 2 || 4 || 5 || 19 ||10 ",
+        "customToolbar":"0 || 2 || 4 || 5 || 19 ||53 ",
         "showResetIcon":true,
         "enableLabelDrags":false,
         "enableShiftDragZoom":true,
