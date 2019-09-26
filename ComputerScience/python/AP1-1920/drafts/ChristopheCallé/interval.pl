@@ -24,5 +24,7 @@ Test 1 | 5
 ==
 
 soluce==
-print(solution)
+print(globals())
+x=int(input())
 ==
+
