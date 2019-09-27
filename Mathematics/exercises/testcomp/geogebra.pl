@@ -74,7 +74,7 @@ var parameters2 = {
 }
 
 parameters.appletOnLoad = function() {
-app1.evalCommand('A=(3,0)\nB=(-3,2)\nC=(-2,-1)\nPolygon(A,B,C)\nShowLabel(A,true)\nShowLabel(B,true)\nShowLabel(C,true)\nSetVisible(XAxis,false)\nSetVisible(YAxis,false)');	
+app1.evalCommand('A=(3,0)\nB=(-3,2)\nC=(-2,-1)\nPolygon(A,B,C)\nShowLabel(A,true)\nShowLabel(B,true)\nShowLabel(C,true)\nShowAxes[3,false]');	
 }
 
 var applet = new GGBApplet('5.0', parameters);
