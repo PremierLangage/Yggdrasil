@@ -86,9 +86,9 @@ function ggbEval() {
     parameters2.ggbBase64=app1.getBase64()
     var applet2 = new GGBApplet('5.0', parameters2);
     applet2.inject('applet_correction','preferHTML5');
-
+    var n = app2.getObjectNumber();
     var myDiv = document.getElementById("answer");
-    myDiv.innerHTML = JSON.stringify(10);
+    myDiv.innerHTML = JSON.stringify(n);
     app2.evalCommand('M=Midpoint(Segment(B,C))');
     var cmd="ok=("+name+"==M)";
     app2.debug(cmd);
