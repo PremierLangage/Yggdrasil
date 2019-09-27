@@ -12,7 +12,7 @@ title = Liste des multiples
 text==  
 
 Ecrire un programme qui lit un  entier  et affiche la chaine de caractères formeé des n premiers multiples de 17
-(si n =4 on affiche 0173451).
+(si n vaut 4 on affiche 0173451).
 .
 ==
 
