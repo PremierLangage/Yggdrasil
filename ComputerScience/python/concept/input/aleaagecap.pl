@@ -1,6 +1,6 @@
 # Boris Jabot 11/09/2019 OK
 author=Dominique Revuz 
-title= lecture d'un entier
+title= Lecture d'un entier
 
 tag=input|print|variable
 
@@ -55,6 +55,7 @@ Test 1 |33
 Test 2 |66
 Test 4 |100000
 ==
+
 
 
 
