@@ -13,7 +13,7 @@ Ecrire un programme qui lit un  entier (s'il est négatif le remplace par son op
 ==
 code==
 
-print("diviseur")
+print("diviseurs")
 
 print("nombre de diviseurs",??)
 ==
