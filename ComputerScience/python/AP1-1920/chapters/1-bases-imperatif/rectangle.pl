@@ -4,7 +4,7 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/template/soluce.pl
 
-title = rectangle dimensions variables
+title = Rectangle dimensions variables
 
 
 text==  
@@ -32,3 +32,4 @@ t
 2 
 3
 ==
+
