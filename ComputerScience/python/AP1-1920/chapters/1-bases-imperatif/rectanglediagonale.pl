@@ -9,7 +9,7 @@ title = Diagonale d'un rectangle
 
 
 text==  
-Les dimensions d'un rectangle sont entrées par l'utilisateur (pl)
+Les dimensions d'un rectangle sont entrées par l'utilisateur, le programme testeur fournira les deux valeurs.
 
 Ecrire un programme qui calcule et affiche le périmètre et la surface du rectangle puis
 la longueur de la diagonale
