@@ -61,7 +61,15 @@ applet.inject('applet_container','preferHTML5');
 
 
 function ggbEval() {
-    app1.evalCommand('M=Midpoint(Segment(B,C))');	
+    var n = app1.getObjectNumber();
+    var name = app1.getObjectName(i);
+    var cmd="ok=("+name+"==sym)";
+    app1.debug(cmd);
+    app1.evalCommand('M=Midpoint(Segment(B,C)');
+    ok=app1.getValueString("ok");
+    if(ok.indexOf("true") >  -1) {
+    alert("Vous avez reussi!");
+    }
 }
 
 function ggbValues() {
