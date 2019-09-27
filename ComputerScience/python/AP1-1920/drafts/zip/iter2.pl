@@ -12,7 +12,7 @@ text==
 
 Ecrire un programme qui lit une suite de valeurs strictement croissantes. 
 Lorsque la suite n'est plus croissante, la saisie s'arrête entiers et 
-le programme affiche la longuer de la suite croissante.
+le programme affiche la longueur de la suite croissante.
 ==
 code==
 
