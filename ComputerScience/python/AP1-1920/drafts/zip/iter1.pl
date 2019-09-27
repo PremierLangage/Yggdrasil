@@ -12,14 +12,17 @@ text==
 Ecrire un programme qui lit 12 entiers et affiche combien sont divisibles par 7
 ==
 code==
+
+
+
 print("Il y a",nb","multiples de 7")
 ==
 soluce==
 nb=0
 for i in range(12):
     l=int(input())
-        if l%7==0:
-            nb+=1
+    if l%7==0:
+       nb+=1
 print("Il y a",nb","multiples de 7")
 ==
 mplsoluce0==
