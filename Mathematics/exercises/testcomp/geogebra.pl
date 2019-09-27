@@ -81,15 +81,16 @@ app1.evalCommand('A=(2,0)\nB=(-1,1)\nC=(-1,-1)\nPolygon(A,B,C)\nShowLabel(A,true
 var applet = new GGBApplet('5.0', parameters);
 
 applet.inject('applet_container','preferHTML5');
-
-
-function ggbLoad() {
-    parameters2.ggbBase64=app1.getBase64()
     var applet2 = new GGBApplet('5.0', parameters2);
     applet2.inject('applet_correction','preferHTML5');
+
+function ggbLoad() {
+    app2.setBase64(app1.getBase64(),ggbEval()) 
+
 }
 
 function ggbEval() {
+    
     var n = app2.getObjectNumber();
     var name = app2.getObjectName(n-1);
     var myDiv = document.getElementById("answer");
