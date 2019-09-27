@@ -88,10 +88,9 @@ function ggbEval() {
     applet2.inject('applet_correction','preferHTML5');
     var n = app2.getObjectNumber();
     var name = app2.getObjectName(n-1);
-    var cmd="ok=("+name+"==M)";
-    app2.debug(cmd);
+
     app2.evalCommand('M=Midpoint(Segment(B,C))');
-    app2.evalCommand(cmd);
+
     ok=app2.getValueString("ok");
     if(ok.indexOf("true") >  -1) {
     alert("Vous avez reussi!");
