@@ -58,7 +58,7 @@ var parameters2 = {
         "width":600,
         "height":400,
         "prerelease":false,
-        "perspective":"", 
+        "perspective":"G", 
         "showToolBar":false,
         "showToolBarHelp":false,
         "borderColor":null,
