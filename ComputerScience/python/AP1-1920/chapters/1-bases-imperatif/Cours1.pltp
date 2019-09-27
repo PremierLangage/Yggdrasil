@@ -30,6 +30,8 @@ Ensemble d'exercices péchés dans la partie computerscience/concept
 # input print
 @ rectanglediagonale.pl
 
+# input print if 
+@ occure.pl
 @ echange_deux_variables.pl
 
 
@@ -43,6 +45,7 @@ Ensemble d'exercices péchés dans la partie computerscience/concept
 @ priority.pl
 @ bascule.pl
 @ trinome.pl
+
 
 
 
