@@ -92,7 +92,7 @@ function ggbEval2() {
     var name = app2.getObjectName(n-1);
     var myDiv = document.getElementById("answer");
     myDiv.innerHTML = JSON.stringify(n);
-    app2.evalCommand('M=Midpoint(Segment(B,C))');
+    app2.evalCommand('M=Midpoint(Segment(B,C))\nMediane=Line(M,A)');
     var cmd="ok=("+name+"==M)";
     app2.debug(cmd);
     app2.evalCommand(cmd);
