@@ -99,6 +99,8 @@ function ggbEval2() {
     ok=app2.getValueString("ok");
     if(ok.indexOf("true") >  -1) {
     alert("Bonne réponse !");
+    } else {
+    alert("Mauvaise réponse !");
     }
 }
 
