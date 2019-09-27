@@ -16,7 +16,6 @@ Tracer la médiane issue du sommet A.
 form==
 <div id="applet_container" ></div>
 <input value="Get Values" onclick="ggbValues()" type="button">
-<input value="Load" onclick="ggbLoad()" type="button">
 <input value="Evaluate" onclick="ggbEval()" type="button">
 <div id="applet_correction"></div>
 <div id="answer">aaa</div>
@@ -84,11 +83,11 @@ applet.inject('applet_container','preferHTML5');
 var applet2 = new GGBApplet('5.0', parameters2);
 applet2.inject('applet_correction','preferHTML5');
 
-function ggbLoad() {
-    app2.setBase64(app1.getBase64(),ggbEval);
+function ggbEval() {
+    app2.setBase64(app1.getBase64(),ggbEval2);
 }
 
-function ggbEval() {
+function ggbEval2() {
     var n = app2.getObjectNumber();
     var name = app2.getObjectName(n-1);
     var myDiv = document.getElementById("answer");
