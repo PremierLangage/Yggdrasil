@@ -6,43 +6,26 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
-title =suite croissante
+title = Liste des multiples
 
 
 text==  
 
-Ecrire un programme qui lit une suite de valeurs strictement croissantes. 
-Lorsque la suite n'est plus croissante, la saisie s'arrête entiers et 
-le programme affiche la longueur de la suite croissante.
+Ecrire un programme qui lit un  entier  et affiche la chaine de caractères formeé des n premiers multiples de 17
+(si n =4 on affiche 0173451).
+.
 ==
-code==
 
-
-
-print("Vous avez entré",nb,"valeur(s) en ordre croissant")
-==
 
 soluce==
-nb=1
-prec=int(input())
-suiv=int(input())
-while suiv> prec:
-    nb+=1
-    prec=suiv
-    suiv=int(input())
-print("Vous avez entré",nb,"valeur(s) en ordre croissant")
+n=int(input())
+s=""
+for i in range(n):
+    s+=str(i*17)
+print(s)
 ==
-mplsoluce0==
-essai1
-2 
-3
-5
-14
-77
-0
+plsoluce==
+essai1|2 
+essai2|4
 ==
-mplsoluce1==
-essai2
-4
-1
-==
+
