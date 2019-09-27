@@ -85,8 +85,7 @@ var applet2 = new GGBApplet('5.0', parameters2);
 applet2.inject('applet_correction','preferHTML5');
 
 function ggbLoad() {
-    app2.setBase64(app1.getBase64());
-    ggbEval();
+    app2.setBase64(app1.getBase64(),"ggbEval()");
 }
 
 function ggbEval() {
