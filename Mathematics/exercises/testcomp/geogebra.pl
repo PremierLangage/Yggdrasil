@@ -81,8 +81,8 @@ app1.evalCommand('A=(2,0)\nB=(-1,1)\nC=(-1,-1)\nPolygon(A,B,C)\nShowLabel(A,true
 var applet = new GGBApplet('5.0', parameters);
 
 applet.inject('applet_container','preferHTML5');
-    var applet2 = new GGBApplet('5.0', parameters2);
-    applet2.inject('applet_correction','preferHTML5');
+var applet2 = new GGBApplet('5.0', parameters2);
+applet2.inject('applet_correction','preferHTML5');
 
 function ggbLoad() {
     app2.setBase64(app1.getBase64(),ggbEval()) 
