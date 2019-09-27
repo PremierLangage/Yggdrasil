@@ -64,7 +64,7 @@ applet.inject('applet_container','preferHTML5');
 function ggbEval() {
     var n = app1.getObjectNumber();
     var name = app1.getObjectName(i);
-    var cmd="ok=("+name+"==sym)";
+    var cmd="ok=("+name+"==M)";
     app1.debug(cmd);
     app1.evalCommand('M=Midpoint(Segment(B,C)');
     app1.evalCommand(cmd);
