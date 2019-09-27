@@ -12,7 +12,7 @@ text = <em>(Pas d'énoncé défini)</em>
 # création de l'éditeur de code
 editor =: CodeEditor
 editor.language = python
-
+editor.cid = py_editor_0
 editor.code ==
 # Saisissez votre code ici, et cliquez sur le bouton
 # de validation quand vous avez terminé
@@ -20,12 +20,9 @@ editor.code ==
 ==
 
 # le formulaire de l'exercice contient uniquement l'éditeur
-# editor.cid = py_editor_0
-#form==
-#{{editor|component}}
-#==
-form=@ /form/text_editor.html
-editor.cid =editor
+form==
+{{editor|component}}
+==
 
 # définition de la procédure de validation
 grader==
