@@ -90,7 +90,6 @@ function ggbLoad() {
 }
 
 function ggbEval() {
-    
     var n = app2.getObjectNumber();
     var name = app2.getObjectName(n-1);
     var myDiv = document.getElementById("answer");
