@@ -31,8 +31,8 @@ extrajs==
 var parameters = {
         "id":"app1",
         "app":"classic",
-        "width":10,
-        "height":10,
+        "width":600,
+        "height":400,
         "prerelease":false,
         "perspective":"G", 
         "showToolBar":true,
