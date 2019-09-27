@@ -23,7 +23,7 @@ print("Vous avez entré",nb,"valeur(s) en ordre croissant")
 soluce==
 nb=1
 prec=int(input())
-suiv=int(input))
+suiv=int(input())
 while suiv> prec:
     nb+=1
     prec=suiv
