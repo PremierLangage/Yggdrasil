@@ -5,7 +5,7 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
-title = rectangle diagonale
+title = Diagonale d'un rectangle
 
 
 text==  
@@ -31,4 +31,5 @@ essai1
 2 
 3
 ==
+
 
