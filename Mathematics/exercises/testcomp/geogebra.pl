@@ -66,6 +66,7 @@ function ggbEval() {
     var cmd="ok=("+name+"==sym)";
     app1.debug(cmd);
     app1.evalCommand('M=Midpoint(Segment(B,C)');
+    app1.evalCommand(cmd);
     ok=app1.getValueString("ok");
     if(ok.indexOf("true") >  -1) {
     alert("Vous avez reussi!");
