@@ -52,7 +52,7 @@ var parameters = {
 }
 
 var parameters2 = {
-        "id":"app1",
+        "id":"app2",
         "app":"classic",
         "width":600,
         "height":400,
