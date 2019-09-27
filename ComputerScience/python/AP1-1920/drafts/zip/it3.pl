@@ -29,7 +29,7 @@ suiv=int(input())
 while suiv> prec:
     nb+=1
     prec=suiv
-    suiv=int(input))
+    suiv=int(input())
 print("Vous avez entré",nb,"valeur(s) en ordre croissant")
 ==
 mplsoluce0==
