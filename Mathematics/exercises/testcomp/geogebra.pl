@@ -78,13 +78,19 @@ parameters.appletOnLoad = function() {
 app1.evalCommand('A=(2,0)\nB=(-1,1)\nC=(-1,-1)\nPolygon(A,B,C)\nShowLabel(A,true)\nShowLabel(B,true)\nShowLabel(C,true)');	
 }
 
+parameters2.appletOnLoad = function() {
+app1.rue)');	
+}
+
 var applet = new GGBApplet('5.0', parameters);
 
 applet.inject('applet_container','preferHTML5');
 
 
 function ggbEval() {
-    var construction=app1.getBase64()
+    parameters2.ggbBase64=app1.getBase64()
+    var applet2 = new GGBApplet('5.0', parameters2);
+    applet2.inject('applet_correction','preferHTML5');
     var n = app1.getObjectNumber();
     var name = app1.getObjectName(n-1);
     var cmd="ok=("+name+"==M)";
