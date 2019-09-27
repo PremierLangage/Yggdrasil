@@ -62,6 +62,8 @@ applet.inject('applet_container','preferHTML5');
 
 
 function ggbEval() {
+    alert("Vous avez reussi!");
+
     var n = app1.getObjectNumber();
     var name = app1.getObjectName(i);
     var cmd="ok=("+name+"==M)";
