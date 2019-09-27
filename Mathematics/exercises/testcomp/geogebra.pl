@@ -14,12 +14,13 @@ Tracer la médiane issue du sommet A.
 ==
 
 form==
-<div id="applet_container" style="display: none;"></div>
+<div id="applet_container" ></div>
 <input value="Get Values" onclick="ggbValues()" type="button">
 <input value="Evaluate" onclick="ggbEval()" type="button">
 
 <div id="answer">aaa</div>
 ==
+#style="display: none;"
 
 evaluator== #|python|
 grade = (100, 'OK')
