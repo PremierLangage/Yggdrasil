@@ -66,7 +66,7 @@ function ggbEval() {
     var name = app1.getObjectName(n-1);
     var cmd="ok=("+name+"==M)";
     app1.debug(cmd);
-    app1.evalCommand('M=Midpoint(Segment(B,C)');
+    app1.evalCommand('M=Midpoint(Segment(B,C))');
     app1.evalCommand(cmd);
     ok=app1.getValueString("ok");
     if(ok.indexOf("true") >  -1) {
