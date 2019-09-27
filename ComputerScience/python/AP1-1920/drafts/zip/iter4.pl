@@ -18,7 +18,7 @@ n=int(input())
 nb=1
 if n<0:
     n=-n
-for i in range(n**0.5):
+for i in range(n):
     if n%(i+1)==0:
         print(i+1)
         nb+=1
