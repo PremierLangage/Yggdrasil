@@ -14,7 +14,7 @@ Tracer la médiane issue du sommet A.
 ==
 
 form==
-<div id="applet_container"></div>
+<div id="applet_container" style="visibility: hidden"></div>
 <input value="Get Values" onclick="ggbValues()" type="button">
 <input value="Evaluate" onclick="ggbEval()" type="button">
 
