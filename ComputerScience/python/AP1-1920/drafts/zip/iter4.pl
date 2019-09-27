@@ -11,7 +11,12 @@ text==
 
 Ecrire un programme qui lit un  entier (s'il est négatif le remplace par son opposé) puis affiche ses diviseurs et leu nombre.
 ==
+code==
 
+print("diviseur")
+
+print("nombre de diviseurs",??)
+==
 
 soluce==
 n=int(input())
