@@ -87,13 +87,13 @@ function ggbEval() {
     parameters2.ggbBase64=app1.getBase64()
     var applet2 = new GGBApplet('5.0', parameters2);
     applet2.inject('applet_correction','preferHTML5');
-    var n = app1.getObjectNumber();
-    var name = app1.getObjectName(n-1);
+    var n = app2.getObjectNumber();
+    var name = app2.getObjectName(n-1);
     var cmd="ok=("+name+"==M)";
-    app1.debug(cmd);
-    app1.evalCommand('M=Midpoint(Segment(B,C))');
-    app1.evalCommand(cmd);
-    ok=app1.getValueString("ok");
+    app2.debug(cmd);
+    app2.evalCommand('M=Midpoint(Segment(B,C))');
+    app2.evalCommand(cmd);
+    ok=app2.getValueString("ok");
     if(ok.indexOf("true") >  -1) {
     alert("Vous avez reussi!");
     }
