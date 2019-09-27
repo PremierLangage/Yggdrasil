@@ -98,7 +98,7 @@ function ggbEval() {
     app2.debug(cmd);
     app2.evalCommand(cmd);
     ok=app2.getValueString("ok");
-    if(ok=="true") {
+    if(ok.indexOf("true") >  -1) {
     alert("Bonne réponse !");
     }
 }
