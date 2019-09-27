@@ -14,19 +14,22 @@ for i,v in enumerate(values):
 
 soluce= f'x=int(input())\nif {}:\n    print("OUI")\nelse:\n    print("NON")'
 
-
-text=f"""
-
-Ecrivez un script qui lit un entier avec input puis affiche 
-OUI si l'entier appartient à l'intervale suivant et NON sinon.
-
-    $%s%$
-
-"""
 ==
 
 title= x $%\in%$ interval ?
 
+text==
+
+Ecrivez un script qui lit un entier avec input puis affiche 
+OUI si l'entier appartient à l'intervale suivant et NON sinon.
+
+    $%{{s}}%$
+
+    {{exp}}
+
+    {{plsoluce}}
+    
+==
 
 
 
