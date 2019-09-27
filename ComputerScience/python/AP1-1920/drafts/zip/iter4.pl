@@ -33,6 +33,6 @@ print("nombre de diviseurs",nb)
 ==
 plsoluce==
 essai1|2 
-essai2|4
+essai2|-4
 ==
 
