@@ -12,7 +12,7 @@ input.config = keyboards_JSON
 
 a,b=list_randint(2,-4,4,[0])
 a2,b2=list_randint(2,-4,4,[0])
-while a-b*I==a2+b2*I:
+while is_equal(a-b*I,a2+b2*I):
     a2,b2=list_randint(2,-4,4,[0])
 
 c=randint(-5,5,[0,1,-1])
