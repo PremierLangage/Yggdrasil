@@ -6,7 +6,7 @@ form==
 {{input1|component}}
 ==
 
-title = Opération sur les nombres complexes
+title = Racines carrées d'un nombre complexe
 
 lang = fr
 
@@ -35,6 +35,7 @@ score,_,feedback=ans_struct_complex(input1.value,sol,"setwobraces",form="cartesi
 solution ==
 Les racines carrées sont $! {{sol0_tex}} !$ et $! {{sol1_tex}} !$.
 ==
+
 
 
 
