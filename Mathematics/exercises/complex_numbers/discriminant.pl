@@ -11,6 +11,7 @@ input.config = keyboards_JSON
 a=rand_complex_int(4)
 b=rand_complex_int(4)
 c=rand_complex_int(4)
+var('x')
 latexP=latex(poly(a*x**2+b*x+c,x))
 
 sol=(b*b-4*a*c).expand()
