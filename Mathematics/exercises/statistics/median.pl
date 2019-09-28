@@ -29,10 +29,8 @@ sol=statistics.median(smp)
 vmax=max(dst)+2
 
 histogram.script = """
-<script type="text/javascript">
 var dataArr = %s ;
 var a = board.create('chart', dataArr, {chartStyle:'bar',color:'blue',width:0.6});
-</script>
 """ % str(dst)
 
 ==
