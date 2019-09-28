@@ -8,8 +8,8 @@ before ==
 keyboards_JSON['virtualKeyboards']="complexes"
 input.config = keyboards_JSON
 
-a=rand_complex_int(4)
-b=rand_complex_int(4)
+a=rand_complex_int(3)
+b=rand_complex_int(3)
 c=rand_complex_int(4)
 var('x')
 latexP=latex(poly(a*x**2+b*x+c,x))
