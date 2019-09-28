@@ -19,7 +19,7 @@ sol_tex=latex(sol)
 ==
 
 text ==
-Déterminer le discriminant de l'équation $! {{latexP}} = 0 !$.
+Calculer le discriminant de l'équation $! {{latexP}} = 0 !$.
 ==
 
 
