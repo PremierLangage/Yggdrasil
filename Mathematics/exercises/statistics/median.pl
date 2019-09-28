@@ -47,11 +47,7 @@ form ==
 ==
 
 evaluator ==
-ans=float(response['answer'])
-if ans==sol:
-    grade=(100,"Bonne réponse")
-else:
-    grade=(0,"Mauvaise réponse. La médiane est : "+str(sol))
+grade=(100,"Bonne réponse")
 ==
 
 
