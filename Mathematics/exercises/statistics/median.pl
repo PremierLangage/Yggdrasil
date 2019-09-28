@@ -6,7 +6,7 @@ title = Médiane
 
 histogram =: MathDrawer
 
-histogram.boardAttributes % {"boundingbox": [-1, 10, 11, -2], "axis": true,"showCopyright":false, "showNavigation":false});
+histogram.boardAttributes % {"boundingbox": [-1, 10, 11, -2], "axis": true,"showCopyright":false, "showNavigation":false}
 
 before ==
 import random
