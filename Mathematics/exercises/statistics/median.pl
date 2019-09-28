@@ -4,6 +4,10 @@
 
 title = Médiane
 
+histogram =: MathDrawer
+
+histogram.boardAttributes % {"boundingbox": [-1, 10, 11, -2], "axis": true,"showCopyright":false, "showNavigation":false});
+
 before ==
 import random
 import statistics
@@ -23,34 +27,25 @@ for i in range(len(dst)):
 dst = ndst 
 sol=statistics.median(smp)
 vmax=max(dst)+2
+
+MathDrawer.script = """
+<script type="text/javascript">
+var dataArr = %s ;
+var a = board.create('chart', dataArr, {chartStyle:'bar',color:'blue',width:0.6});
+</script>
+""" % str(dst)
+
 ==
 
 lang = fr
 
 text ==
 Déterminer la médiane de la série statistique représentée ci-dessous.
-
-<script type="text/javascript" charset="UTF-8" src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.99.7/jsxgraphcore.js"></script>
-
-<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.99.7/jsxgraph.css" />
-
-<input type="hidden" id="form_answer">
-
-<center>
-<div id="jxgbox" class="jxgbox" style="width:300px; height:300px;"></div>
-</center>
-<script type="text/javascript">
-var board = JXG.JSXGraph.initBoard('jxgbox', {boundingbox: [-1, {{vmax}}, 11, -2], axis: true,showCopyright:false, showNavigation:false});
-var dataArr = {{dst}};
-var a = board.create('chart', dataArr, {chartStyle:'bar',color:'blue',width:0.6});
-</script>
-
+{{ histogram | component }}
 ==
 
 form ==
-<div class="input-group">
-<input id="form_answer" type="text" class="form-control" value="{{ answers__.answer }}" required/>
-</div>
+
 ==
 
 evaluator ==
@@ -60,5 +55,6 @@ if ans==sol:
 else:
     grade=(0,"Mauvaise réponse. La médiane est : "+str(sol))
 ==
+
 
 
