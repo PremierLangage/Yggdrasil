@@ -8,7 +8,7 @@ before ==
 keyboards_JSON['virtualKeyboards']="complexes"
 input.config = keyboards_JSON
 
-a=randint(1,6)
+a=randint(1,6,[0])
 b=randint(-6,6,[0])
 z=((a+b*I)**2).expand()
 z_tex=latex(z)
