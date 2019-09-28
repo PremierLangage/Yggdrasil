@@ -1,10 +1,4 @@
-extends = /Mathematics/template/mathbasic.pl
-
-input1 =: MathInput
-
-form==
-{{input1|component}}
-==
+extends = /Mathematics/template/mathinput.pl
 
 title = Racines carrées d'un nombre complexe
 
@@ -29,7 +23,7 @@ Calculer les racines carrées de $! {{z_tex}} !$ (sous forme cartésienne).
 
 
 evaluator==
-score,_,feedback=ans_struct_complex(input1.value,sol,"setwobraces",form="cartesian")
+score,_,feedback=ans_struct_complex(input.value,sol,"setwobraces",form="cartesian")
 ==
 
 solution ==
