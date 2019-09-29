@@ -36,6 +36,9 @@ for i in range(n):
         else:
             lhs.append(randitem(s[2:]))
 
+for i in range(n):
+    if isinstance(lhs[i],list):
+        lhs[i]=latex(lhs[i])
 
 drop=[drop1,drop2,drop3,drop4,drop5]
 ==
