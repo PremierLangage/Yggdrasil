@@ -40,7 +40,7 @@ while setlength>8:
         kb=randint(0,1)
         a,b=list_randitem_norep(2,[1,4,6,9,15,16,19,21,27,36,49,50,64,70,81,90,100,110])
         globals()['aa']=a-ka
-        globals()['bb']=a+kb
+        globals()['bb']=b+kb
         lstA=[x for x in lstS if aa < x**2 < bb]
         cond_tex=r" %d %s n^2 %s %d" % (a,symb[ka],symb[kb],b)
     setlength=len(lstA)
