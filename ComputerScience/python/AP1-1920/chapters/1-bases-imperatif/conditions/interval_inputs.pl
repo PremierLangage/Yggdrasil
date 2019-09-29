@@ -16,7 +16,14 @@ OUI si l'entier appartient à l'intervale $% I %$ suivant et NON sinon.
 {{exp}}
 {{plsoluce}}
 ==
-
+solucef==
+import random
+x=int(input())
+if {}:
+    print("OUI")
+else:
+    print("NON")
+==
 before==
 from interval import makeinterval
 
@@ -24,17 +31,10 @@ niveau = 2
 s,exp,values = makeinterval(niveau)
 plsoluce=""
 for i,v in enumerate(values):
-    plsoluce += "{} | {} \n".format(i,v)
+    plsoluce += "l'element {} est il dans l'ensemble $%I%$ | {} \n".format(v,v)
 
-soluce=
-"""
-import random
-x=int(input())
-if {}:
-    print("OUI")
-else:
-    print("NON")
-""".format(exp)
+soluce=solucef.format(exp)
+
 ==
 
 title= x $%\in%$ interval ?
