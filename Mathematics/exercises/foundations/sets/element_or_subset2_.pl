@@ -20,6 +20,11 @@ sol=[]
 lhs=[]
 rhs=[]
 n=5
+
+s=[FiniteSet(a) for a in range(5)]
+s.shuffle()
+
+
 case=eval(param['cases'])
 rd.shuffle(case)
 for i in range(n):
