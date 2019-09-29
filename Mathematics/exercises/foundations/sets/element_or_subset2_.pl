@@ -22,7 +22,7 @@ rhs=[]
 n=5
 
 s=[FiniteSet(a) for a in range(5)]
-s.shuffle()
+rd.shuffle(s)
 A=FiniteSet(s[0],s[2])
 A_tex=latex(A)
 
