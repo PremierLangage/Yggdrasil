@@ -143,12 +143,13 @@ def makeinterval(difficulte=2):
         else:
             exp+="(x>="+a+")"
 
-    return s,exp
+    return s,exp,values
 
 if __name__ == '__main__':
     import sys
     while input() != "" :
         for i in range(6):
            print(i+1,":", makeinterval(i+1)),values
+
 
 
