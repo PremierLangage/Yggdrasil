@@ -123,12 +123,16 @@ def makeinterval(difficulte=2):
         if s != ""  :
             s+= " "+UNION+" "
             exp += " or "
-        strict1=random.randint(1,2)==1
-        strict2=random.randint(1,2)==1
-        s+= setLeft(strict1)
-        s+= " "+a+", "+ b + " "
-        s+= setRight(strict2)
-        exp += getExp(strict1,strict2,a,b)  
+        if  random.randint(1,10) < 9:
+            s += " {"+a+"} "
+            exp += " x=="+a+" " 
+        else:
+            strict1=random.randint(1,2)==1
+            strict2=random.randint(1,2)==1
+            s+= setLeft(strict1)
+            s+= " "+a+", "+ b + " "
+            s+= setRight(strict2)
+            exp += getExp(strict1,strict2,a,b)  
 
     if difficulte>0 :
         if s != ""  :
