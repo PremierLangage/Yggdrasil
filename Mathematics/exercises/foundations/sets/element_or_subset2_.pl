@@ -42,6 +42,18 @@ for i in range(n):
             lhs.append(randitem(s[:2]))
         else:
             lhs.append(randitem(s[3:]))
+    if case[i]==3:
+        sol.append(randitem([label_in,""]))
+        if sol[i]==label_in:
+            lhs.append(randitem(p[:2]))
+        else:
+            lhs.append(randitem(p[3:]))
+    if case[i]==4:
+        sol.append(randitem([label_in,""]))
+        if sol[i]==label_in:
+            lhs.append(t[0])
+        else:
+            lhs.append(t[1])
 
 for i in range(n):
     lhs[i]=latex(lhs[i])
