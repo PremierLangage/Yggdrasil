@@ -31,6 +31,19 @@ for i in range(n):
         drop[i].css = "error-state anim-flip" 
 ==
 
+extracss==
+<style>
+    .drag_style{
+        color: red;
+        }
+	.drag-component {
+    color: red;
+}
+	.dragdrop-component {
+    color: red;
+}
+</style>
+==
 
 
 
