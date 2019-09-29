@@ -5,6 +5,10 @@ extends= ../../../templates/plsoluce.pl
 
 code==
 x=int(input()) # pas de message dans l'input 
+if ??? :
+    print("OUI")
+else:
+    print("NON")
 ==
 
 text==
@@ -15,8 +19,8 @@ OUI si l'entier appartient à l'intervale $% I %$ suivant et NON sinon.
 ##   $%I = {{s}}%$
 
 ==
-
-niveau%1
+ 
+niveau%2
 
 solucef==
 import random
