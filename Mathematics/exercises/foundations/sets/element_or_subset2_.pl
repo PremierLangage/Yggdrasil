@@ -30,6 +30,9 @@ case=eval(param['cases'])
 rd.shuffle(case)
 for i in range(n):
     if case[i]==1:
+        sol.append("")
+        lhs.append(randint(0,4))
+    if case[i]==2:
         sol.append(randitem([label_in,""]))
         if sol[i]==label_in:
             lhs.append(randitem(s[:2]))
