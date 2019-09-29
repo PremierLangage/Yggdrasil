@@ -23,7 +23,8 @@ n=5
 
 s=[FiniteSet(a) for a in range(5)]
 s.shuffle()
-
+A=FiniteSet(s[0],s[2])
+A_tex=latex(A)
 
 case=eval(param['cases'])
 rd.shuffle(case)
@@ -70,6 +71,8 @@ drag3 =: DragDrop
 drag3.content =
 
 text==
+on considère l'ensemble
+$$ A = {{A_tex}}.$$
 Compléter les propositions suivantes avec les {{text1}} {{ drag1 | component }} ou {{ drag2 | component }}. Si {{text2}} ne convient, laisser la case vide  {{ drag3 | component }}.
 ==
 
