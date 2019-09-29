@@ -76,3 +76,17 @@ form ==
 </ul>
 ==
 
+extracss==
+<style>
+    .drag_style{
+        color: red;
+        }
+	.drag-component {
+    color: red;
+}
+	.dragdrop-component {
+    color: red;
+}
+</style>
+==
+
