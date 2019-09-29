@@ -48,7 +48,7 @@ sol_tex=latex(sol)
 ==
 
 text == 
-Ecrire en extension l'ensemble $!\\left \\{ n \in {{S}} \:|\: {{cond}} \\right \\}!$.
+Ecrire en extension l'ensemble $!\\left \\{ n \in {{S_tex}} \:|\: {{cond}} \\right \\}!$.
 ==
 
 evaluator ==
