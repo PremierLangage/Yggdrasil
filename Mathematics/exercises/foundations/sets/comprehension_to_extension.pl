@@ -11,6 +11,7 @@ input.config = keyboards_JSON
 S=randitem(["N","N*","Z","Z*"])
 cond=randitem(["square","square2"])
 
+n=20
 if S=="N":
     S_tex=r"\mathbb{N}"
     lstS=list(range(n))
