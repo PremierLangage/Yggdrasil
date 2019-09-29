@@ -17,10 +17,10 @@ if S=="N":
 elif S=="N*":
     S_tex==r"\mathbb{N}^*"
     lstS=list(range(1,n))
-elif S="Z":
+elif S=="Z":
     S_tex==r"\mathbb{Z}":
     lstS=list(range(-n+1,n))
-elif S="Z*":
+elif S=="Z*":
     S_tex==r"\mathbb{Z}^*":
     lstS=list(range(-n+1,0))+list(range(1,n))
 
