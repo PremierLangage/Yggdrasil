@@ -10,10 +10,9 @@ x=int(input())
 text==
 
 Ecrivez un script qui lit un entier avec input puis affiche 
-OUI si l'entier appartient à l'intervale suivant et NON sinon.
+OUI si l'entier appartient à l'intervale $% I %$ suivant et NON sinon.
 
-    $%{{s}}%$
-
+    $%I = {{s}}%$
 {{exp}}
 {{plsoluce}}
 ==
@@ -27,17 +26,18 @@ plsoluce=""
 for i,v in enumerate(values):
     plsoluce += "{} | {} \n".format(i,v)
 
-soluce= """
-x=int(input())
-if {}:
-    print("OUI")
-else:
-    print("NON")
-""".format(exp)
 
 ==
 
 title= x $%\in%$ interval ?
+
+soluce==
+x=int(input())
+if {{exp}}:
+    print("OUI")
+else:
+    print("NON")
+==
 
 
 
