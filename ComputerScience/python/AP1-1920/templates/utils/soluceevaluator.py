@@ -45,10 +45,9 @@ if __name__ == "__main__":
     else:
         for u in range(0,10): # FIXME IF U >10
             xname = "mplsoluce"+str(u)
-            if xname  in dic:
-                mpvalue=dic[xname].split("\n")
-            else:
-                continue
+            if xname not in dic:
+                continue # Skip
+            mpvalue=dic[xname].split("\n")
             lestest.append([mpvalue[0],"\n".join(mpvalue[1:])])
     student = get_answers()['answer']
     with open("student.py","w") as sf:
@@ -56,19 +55,6 @@ if __name__ == "__main__":
     import feedback2
     fb=feedback2.FeedBack()
     ret=runsolucetests(lestest,fb)
-    if ret==100:
-        if 'niveau' in dic:
-            dic['niveau']+= 1
-            if 'before' in dic:
-                glob = {}
-                dic['StopBeforeExec'] = StopBeforeExec
-                print(add_try_clause(dic['before'], StopBeforeExec), file=sys.stderr)
-                exec(add_try_clause(dic['before'], StopBeforeExec), dic)
-                exec("", glob)
-                for key in glob:
-                    if key in dic and dic[key] == glob[key]:
-                        del dic[key]
-
     output(ret, fb.render())
 
 
