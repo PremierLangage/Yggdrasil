@@ -56,7 +56,18 @@ if __name__ == "__main__":
     import feedback2
     fb=feedback2.FeedBack()
     ret=runsolucetests(lestest,fb)
-
+    if ret==100:
+        if 'niveau' in dic:
+            dic['niveau']+= 1
+            if 'before' in dic:
+                glob = {}
+                dic['StopBeforeExec'] = StopBeforeExec
+                print(add_try_clause(dic['before'], StopBeforeExec), file=sys.stderr)
+                exec(add_try_clause(dic['before'], StopBeforeExec), dic)
+                exec("", glob)
+                for key in glob:
+                    if key in dic and dic[key] == glob[key]:
+                        del dic[key]
 
     output(ret, fb.render())
 
