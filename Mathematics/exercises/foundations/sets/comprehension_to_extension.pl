@@ -28,7 +28,7 @@ elif S=="Z*":
 symb=["<","\leq"]
 
 if cond=="square":
-    a=anditem([4,6,9,15,16,19,21,25,27])
+    a=randitem([4,6,9,15,16,19,21,25,27])
     ka=randint(0,1)
     globals()['aa']=a+ka
     lstA=[x for x in lstS if x**2 < aa]
