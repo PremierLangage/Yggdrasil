@@ -14,10 +14,8 @@ OUI si l'entier appartient à l'intervale suivant et NON sinon.
 
     $%{{s}}%$
 
-    {{exp}}
-
-    {{plsoluce}}
-    
+{{exp}}
+{{plsoluce}}
 ==
 
 before==
@@ -29,7 +27,8 @@ plsoluce=""
 for i,v in enumerate(values):
     plsoluce += "{} | {} \n".format(i,v)
 
-soluce= """x=int(input())
+soluce= """
+x=int(input())
 if {}:
     print("OUI")
 else:
