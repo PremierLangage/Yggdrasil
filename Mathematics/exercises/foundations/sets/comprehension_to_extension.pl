@@ -8,23 +8,39 @@ before ==
 keyboards_JSON['virtualKeyboards']="sets"
 input.config = keyboards_JSON
 
-S=randitem([r"\mathbb{N}",r"\mathbb{Z}"])
+S=randitem(["N","N*","Z","Z*"])
 cond=randitem(["square","square2"])
 
-if S==r"\mathbb{N}":
-    lstS=list(range(20))
-elif S==r"\mathbb{Z}":
-    lstS=list(range(-20,20))
+if S=="N":
+    S_tex==r"\mathbb{N}"
+    lstS=list(range(n))
+elif S=="N*":
+    S_tex==r"\mathbb{N}^*"
+    lstS=list(range(1,n))
+elif S="Z":
+    S_tex==r"\mathbb{Z}":
+    lstS=list(range(-n+1,n))
+elif S="Z*":
+    S_tex==r"\mathbb{Z}^*":
+    lstS=list(range(-n+1,0))+list(range(1,n))
+
+symb=["<","\leq"]
 
 if cond=="square":
-    globals()['a']=randitem([4,6,9,15,16,19,21,25,27])
-    lstA=[x for x in lstS if x**2 <= a]
-    cond=r"n^2 \leq %d" % a
+    a=anditem([4,6,9,15,16,19,21,25,27])
+    ka=randint(0,1)
+    globals()['aa']=a+ka
+    lstA=[x for x in lstS if x**2 < aa]
+    cond=r"n^2 %s %d" % (symb[ka],a)
 elif cond=="square2":
-    globals()['a']=randitem([1,4,6,9,15,16,19,21])
-    globals()['b']=randitem([27,36,49,50,64,70,81,90,100,110])
-    lstA=[x for x in lstS if a <= x**2 <= b]
-    cond=r" %d \leq n^2 \leq %d" % (a,b)
+    ka=randint(0,1)
+    kb=randint(0,1)
+    a=randitem([1,4,6,9,15,16,19,21])
+    b=randitem([27,36,49,50,64,70,81,90,100,110])
+    globals()['aa']=a-ka
+    globals()['bb']=a+kb
+    lstA=[x for x in lstS if aa < x**2 < bb]
+    cond=r" %d %s n^2 %s %d" % (a,symb[ka],symb[kb],b)
 
 
 sol=FiniteSet(*lstA)
@@ -42,6 +58,7 @@ score,_,feedback=ans_struct_expr(input.value,sol,"set")
 solution ==
 La solution est $! { {{sol_tex}} } !$.
 ==
+
 
 
 
