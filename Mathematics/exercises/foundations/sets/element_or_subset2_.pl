@@ -18,7 +18,6 @@ drag1.content=label_in
 drag2.content=label_subset
 sol=[]
 lhs=[]
-rhs=[]
 n=5
 
 s=[FiniteSet(a) for a in range(5)]
