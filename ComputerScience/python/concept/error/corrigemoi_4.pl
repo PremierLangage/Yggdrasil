@@ -46,9 +46,13 @@ print('Vous avez plus de '+str(mois*n)+' mois.')
 
 showinput=true
 
-plsoluce==
-Dix huit ans | 18
-Cinquante Six | 56
+mplsoluce0==
+Dix huit ans 
+18
+==
+mplsoluce0==
+Cinquante Six 
+56
 ==
 
 soluce==
