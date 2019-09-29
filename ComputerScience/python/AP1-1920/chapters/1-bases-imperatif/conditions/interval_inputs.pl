@@ -26,18 +26,19 @@ plsoluce=""
 for i,v in enumerate(values):
     plsoluce += "{} | {} \n".format(i,v)
 
-
+soluce="""
+import random
+x=int(input())
+if {}:
+    print("OUI")
+else:
+    print("NON")
+""".format(exp)
 ==
 
 title= x $%\in%$ interval ?
 
-soluce==
-x=int(input())
-if {{exp}}:
-    print("OUI")
-else:
-    print("NON")
-==
+
 
 
 
