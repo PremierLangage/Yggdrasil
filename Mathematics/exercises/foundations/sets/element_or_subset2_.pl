@@ -60,8 +60,8 @@ for i in range(n):
     if case[i]==5:
         sol.append(randitem([label_subset,label_subset,""]))
         if sol[i]==label_subset:
-            e=list_randitem_norep(2,list(A))
-            lhs.append(FiniteSet(e))
+            e1,e2=list_randitem_norep(2,list(A))
+            lhs.append(FiniteSet(e1,e2))
         else:
             e1=randitem(list(A))
             e2=randitem(list(Ac))
