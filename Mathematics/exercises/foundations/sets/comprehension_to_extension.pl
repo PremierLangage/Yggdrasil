@@ -38,7 +38,7 @@ while setlength>8:
     elif cond=="square2":
         ka=randint(0,1)
         kb=randint(0,1)
-        a,b=list_randitem(2,[1,4,6,9,15,16,19,21,27,36,49,50,64,70,81,90,100,110]).sort()
+        a,b=list_randitem_norep(2,[1,4,6,9,15,16,19,21,27,36,49,50,64,70,81,90,100,110])
         globals()['aa']=a-ka
         globals()['bb']=a+kb
         lstA=[x for x in lstS if aa < x**2 < bb]
