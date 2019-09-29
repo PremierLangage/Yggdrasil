@@ -28,7 +28,7 @@ Commencez par lancer la validation et regardez l'erreur.
 
 Bizare comme Erreur Non ?! 
 Cette ligne a l'air correcte.  
-Et oui c'est une erreur de la ligne au dessus dans laquelle il manque une paranthèse fermante.  
+Et oui c'est une erreur est sur la ligne précédente dans laquelle il manque une paranthèse fermante.  
 
 Quand python dit "Syntax Error" c'est que la grammaire de python s'est pris les pieds dans le tapis...  
 Et que l'on ne sais pas comment vous aider.  
@@ -39,9 +39,9 @@ Dans ce cas la il faut TOUJOURS regarder la ligne audessus.
 ==
 
 code==
-n=int(input("donnez moi votre age en années :")
+n=int(input('donnez moi votre age en années :')
 mois=12
-print("Vous avez plus de "+str(mois*n)+" mois.")
+print('Vous avez plus de '+str(mois*n)+' mois.')
 ==
 
 showinput=true
@@ -82,6 +82,7 @@ Vous remarquez sous le z un caractère ^ qui vous indique que la grammaire à ab
 Dans ce cas la raison est  claire c'est que l'on attend quelque chose après le signe = d'affectation.
  
 ==
+
 
 
 
