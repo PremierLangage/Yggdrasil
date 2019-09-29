@@ -28,7 +28,7 @@ pour avoir une entrée multi ligne
 @ utils/gradesoluce.py
 @ /utils/sandboxio.py
 
-@ /builder/none.py [builder.py]
+@ /builder/before.py [builder.py]
 
 @ utils/feedback2.py
 @ utils/template.html
@@ -38,6 +38,7 @@ pour avoir une entrée multi ligne
 form=@ /python/form/editorform.html
 
 settings.allow_reroll=1
+
 
 
 
