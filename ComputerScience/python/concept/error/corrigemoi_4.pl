@@ -31,9 +31,9 @@ Cette ligne a l'air correcte.
 Et oui c'est une erreur est sur la ligne précédente dans laquelle il manque une paranthèse fermante.  
 
 Quand python dit "Syntax Error" c'est que la grammaire de python s'est pris les pieds dans le tapis...  
-Et que l'on ne sais pas comment vous aider.  
+Et que l'auteur du compilateur n'a pas moyen de vous aider a trouver l'erreur.
 
-Dans ce cas la il faut TOUJOURS regarder la ligne audessus. 
+**Quand la ligne de l'erreur vous semble juste, il faut TOUJOURS regarder la ligne au dessus. **
 
 
 ==
