@@ -125,7 +125,7 @@ def makeinterval(difficulte=2):
             exp += " or "
         if  random.randint(1,10) < 9:
             s += " \{"+a+"\} "
-            exp += " x=="+a+" " 
+            exp += " x== "+a+" " 
         else:
             strict1=random.randint(1,2)==1
             strict2=random.randint(1,2)==1
