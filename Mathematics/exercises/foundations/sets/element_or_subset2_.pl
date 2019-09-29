@@ -24,7 +24,7 @@ n=5
 s=[FiniteSet(a) for a in range(5)]
 rd.shuffle(s)
 A=FiniteSet(s[0],s[2])
-A_tex=latex(A).replace("\\","\\\")
+A_tex=latex(A).replace("\\","\\\\")
 
 case=eval(param['cases'])
 rd.shuffle(case)
