@@ -25,7 +25,7 @@ s=[FiniteSet(a) for a in range(5)]
 rd.shuffle(s)
 p=[FiniteSet(a,b) for a in range(5) for b in range(a)]
 rd.shuffle(p)
-p=[FiniteSet(a,b,c) for a in range(5) for b in range(a) for c in range(b)]
+t=[FiniteSet(a,b,c) for a in range(5) for b in range(a) for c in range(b)]
 rd.shuffle(t)
 A=FiniteSet(s[0],s[1],p[0],p[1],t[0])
 A_tex=latex(A).replace("\\","\\\\")
