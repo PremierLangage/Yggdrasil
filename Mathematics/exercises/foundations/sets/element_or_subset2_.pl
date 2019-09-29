@@ -66,6 +66,15 @@ for i in range(n):
             e1=randitem(list(A))
             e2=randitem(list(Ac))
             lhs.append(FiniteSet(e1,e2))
+    if case[i]==6:
+        sol.append(randitem([label_subset,label_subset,""]))
+        if sol[i]==label_subset:
+            e1,e2,e3=list_randitem_norep(3,list(A))
+            lhs.append(FiniteSet(e1,e2,e3))
+        else:
+            e1,e2=list_randitem_norep(2,list(A))
+            e2=randitem(list(Ac))
+            lhs.append(FiniteSet(e1,e2,e3))
 
 for i in range(n):
     lhs[i]=latex(lhs[i])
