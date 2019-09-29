@@ -31,7 +31,7 @@ if cond=="square":
     ka=randint(0,1)
     globals()['aa']=a+ka
     lstA=[x for x in lstS if x**2 < aa]
-    cond=r"n^2 %s %d" % (symb[ka],a)
+    cond_tex=r"n^2 %s %d" % (symb[ka],a)
 elif cond=="square2":
     ka=randint(0,1)
     kb=randint(0,1)
@@ -40,7 +40,7 @@ elif cond=="square2":
     globals()['aa']=a-ka
     globals()['bb']=a+kb
     lstA=[x for x in lstS if aa < x**2 < bb]
-    cond=r" %d %s n^2 %s %d" % (a,symb[ka],symb[kb],b)
+    cond_tex=r" %d %s n^2 %s %d" % (a,symb[ka],symb[kb],b)
 
 
 sol=FiniteSet(*lstA)
@@ -48,7 +48,7 @@ sol_tex=latex(sol)
 ==
 
 text == 
-Ecrire en extension l'ensemble $!\\left \\{ n \in {{S_tex}} \:|\: {{cond}} \\right \\}!$.
+Ecrire en extension l'ensemble $!\\left \\{ n \in {{S_tex}} \:|\: {{cond_tex}} \\right \\}!$.
 ==
 
 evaluator ==
