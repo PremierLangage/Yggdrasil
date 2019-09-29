@@ -31,7 +31,7 @@ A=FiniteSet(s[0],s[1],p[0],p[1],t[0])
 Ac=FiniteSet(s[3],s[4],p[3],p[4],t[2])
 A_tex=latex(A).replace("\\","\\\\")
 
-case=eval(param['cases'])
+case=[1,2,3,4,5]
 rd.shuffle(case)
 for i in range(n):
     if case[i]==1:
@@ -57,6 +57,15 @@ for i in range(n):
         else:
             e=randitem(list(Ac))
             lhs.append(FiniteSet(e))
+    if case[i]==5:
+        sol.append(randitem([label_subset,label_subset,""]))
+        if sol[i]==label_subset:
+            e=list_randitem_norep(2,list(A))
+            lhs.append(FiniteSet(e))
+        else:
+            e1=randitem(list(A))
+            e2=randitem(list(Ac))
+            lhs.append(FiniteSet(e1,e2))
 
 for i in range(n):
     lhs[i]=latex(lhs[i])
