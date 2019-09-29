@@ -27,21 +27,23 @@ elif S=="Z*":
 
 symb=["<","\leq"]
 
-if cond=="square":
-    a=randitem([4,6,9,15,16,19,21,25,27])
-    ka=randint(0,1)
-    globals()['aa']=a+ka
-    lstA=[x for x in lstS if x**2 < aa]
-    cond_tex=r"n^2 %s %d" % (symb[ka],a)
-elif cond=="square2":
-    ka=randint(0,1)
-    kb=randint(0,1)
-    a=randitem([1,4,6,9,15,16,19,21])
-    b=randitem([27,36,49,50,64,70,81,90,100,110])
-    globals()['aa']=a-ka
-    globals()['bb']=a+kb
-    lstA=[x for x in lstS if aa < x**2 < bb]
-    cond_tex=r" %d %s n^2 %s %d" % (a,symb[ka],symb[kb],b)
+setlength=9
+while setlength>8:
+    if cond=="square":
+        a=randitem([4,6,9,15,16,19,21,25,27])
+        ka=randint(0,1)
+        globals()['aa']=a+ka
+        lstA=[x for x in lstS if x**2 < aa]
+        cond_tex=r"n^2 %s %d" % (symb[ka],a)
+    elif cond=="square2":
+        ka=randint(0,1)
+        kb=randint(0,1)
+        a,b=sort(list_randitem(2,[1,4,6,9,15,16,19,21,27,36,49,50,64,70,81,90,100,110]))
+        globals()['aa']=a-ka
+        globals()['bb']=a+kb
+        lstA=[x for x in lstS if aa < x**2 < bb]
+        cond_tex=r" %d %s n^2 %s %d" % (a,symb[ka],symb[kb],b)
+    setlength=len(lstA)
 
 
 sol=FiniteSet(*lstA)
