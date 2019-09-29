@@ -25,7 +25,9 @@ s=[FiniteSet(a) for a in range(5)]
 rd.shuffle(s)
 p=[FiniteSet(a,b) for a in range(5) for b in range(a)]
 rd.shuffle(p)
-A=FiniteSet(s[0],s[1],p[0],p[1])
+p=[FiniteSet(a,b,c) for a in range(5) for b in range(a) for c in range(b)]
+rd.shuffle(t)
+A=FiniteSet(s[0],s[1],p[0],p[1],t[0])
 A_tex=latex(A).replace("\\","\\\\")
 
 case=eval(param['cases'])
@@ -39,7 +41,7 @@ for i in range(n):
         if sol[i]==label_in:
             lhs.append(randitem(s[:2]))
         else:
-            lhs.append(randitem(s[2:]))
+            lhs.append(randitem(s[3:]))
 
 for i in range(n):
     lhs[i]=latex(lhs[i])
