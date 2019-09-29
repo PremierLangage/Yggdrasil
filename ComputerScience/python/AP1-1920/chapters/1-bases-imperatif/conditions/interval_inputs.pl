@@ -4,7 +4,7 @@ extends= ../../../templates/plsoluce.pl
 @ interval.py
 
 code==
-x=int(input())
+x=int(input()) # pas de message dans l'input 
 ==
 
 text==
@@ -12,10 +12,12 @@ text==
 Ecrivez un script qui lit un entier avec input puis affiche 
 OUI si l'entier appartient à l'intervale $% I %$ suivant et NON sinon.
 
-    $%I = {{s}}%$
-{{exp}}
-{{plsoluce}}
+##   $%I = {{s}}%$
+
 ==
+
+niveau%1
+
 solucef==
 import random
 x=int(input())
@@ -27,7 +29,7 @@ else:
 before==
 from interval import makeinterval
 
-niveau = 2
+
 s,exp,values = makeinterval(niveau)
 plsoluce=""
 for i,v in enumerate(values):
