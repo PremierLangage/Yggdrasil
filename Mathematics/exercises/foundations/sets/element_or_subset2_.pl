@@ -30,12 +30,11 @@ case=eval(param['cases'])
 rd.shuffle(case)
 for i in range(n):
     if case[i]==1:
-        rhs.append(list_randint_norep(randint(3,5),0,9))
-        sol.append(randitem([label_in,label_in,""]))
+        sol.append(randitem([label_in,""]))
         if sol[i]==label_in:
-            lhs.append(randitem(rhs[i]))
+            lhs.append(randitem(s[:2]))
         else:
-            lhs.append(randint(0,9,rhs[i]))
+            lhs.append(randitem(s[2:]))
     elif case[i]==2:
         rhs.append(list_randint_norep(randint(3,5),0,9))
         sol.append(randitem([label_subset,label_subset,""]))
@@ -79,7 +78,7 @@ Compléter les propositions suivantes avec les {{text1}} {{ drag1 | component }}
 form ==
 <ul>
 {% for e in drop %}
-<li> $% {{lhs[loop.index0]}} %$ {{ e|component }} $% {{rhs[loop.index0]}}  %$ </li>
+<li> $% {{lhs[loop.index0]}} %$ {{ e|component }} $% A  %$ </li>
 {% endfor %}
 </ul>
 ==
