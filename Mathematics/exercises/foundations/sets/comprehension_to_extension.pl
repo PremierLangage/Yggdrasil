@@ -12,16 +12,16 @@ S=randitem(["N","N*","Z","Z*"])
 cond=randitem(["square","square2"])
 
 if S=="N":
-    S_tex==r"\mathbb{N}"
+    S_tex=r"\mathbb{N}"
     lstS=list(range(n))
 elif S=="N*":
-    S_tex==r"\mathbb{N}^*"
+    S_tex=r"\mathbb{N}^*"
     lstS=list(range(1,n))
 elif S=="Z":
-    S_tex==r"\mathbb{Z}":
+    S_tex=r"\mathbb{Z}"
     lstS=list(range(-n+1,n))
 elif S=="Z*":
-    S_tex==r"\mathbb{Z}^*":
+    S_tex=r"\mathbb{Z}^*"
     lstS=list(range(-n+1,0))+list(range(1,n))
 
 symb=["<","\leq"]
