@@ -26,7 +26,9 @@ plsoluce=""
 for i,v in enumerate(values):
     plsoluce += "{} | {} \n".format(i,v)
 
-soluce="""import random
+soluce=
+"""
+import random
 x=int(input())
 if {}:
     print("OUI")
