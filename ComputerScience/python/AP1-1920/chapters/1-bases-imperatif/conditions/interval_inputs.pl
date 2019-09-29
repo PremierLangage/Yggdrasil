@@ -3,6 +3,11 @@ extends= ../../../templates/plsoluce.pl
 
 @ interval.py
 
+code==
+x=int(input())
+==
+
+
 before==
 from interval import makeinterval
 
@@ -30,6 +35,7 @@ OUI si l'entier appartient à l'intervale suivant et NON sinon.
     {{plsoluce}}
     
 ==
+
 
 
 
