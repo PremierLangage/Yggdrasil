@@ -1,9 +1,10 @@
-# author zip
+
+author=zip
 
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/template/soluce.pl
 
-title = rectangle fixe
+title = Rectangle fixe
 
 
 text== 
@@ -25,4 +26,5 @@ print("le périmètre est 20 et la surface est 21.")
 plsoluce==
 t|le périmètre est 20 et la surface est 21.
 ==
+
 
