@@ -38,20 +38,20 @@ for i in range(n):
         sol.append("")
         lhs.append(randint(0,4))
     if case[i]==2:
-        sol.append(randitem([label_in,""]))
+        sol.append(randitem([label_in,label_in,""]))
         if sol[i]==label_in:
             lhs.append(randitem(s[:2]))
         else:
             lhs.append(randitem(s[3:]))
     if case[i]==3:
-        sol.append(randitem([label_in,""]))
+        sol.append(randitem([label_in,label_in,""]))
         if sol[i]==label_in:
             lhs.append(randitem(p[:2]+t[:1]))
         else:
             lhs.append(randitem(p[3:]+t[2:]))
     if case[i]==4:
-        sol.append(randitem([label_subset,""]))
-        if sol[i]==label_in:
+        sol.append(randitem([label_subset,label_subset,""]))
+        if sol[i]==label_subset:
             e=randitem(list(A))
             lhs.append(FiniteSet(e))
         else:
