@@ -48,7 +48,7 @@ import random
 def seriestrictementdecroissante(start, length):
     l=[str(start)]
     for x in range(length+1):
-        start -=  random.randint(1,5)
+        start -=  random.randint(2,5)
         l.append(str(start))
     return l
 
