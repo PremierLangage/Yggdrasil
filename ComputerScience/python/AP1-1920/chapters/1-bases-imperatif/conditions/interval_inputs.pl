@@ -15,9 +15,10 @@ text==
 
 Ecrivez un script qui lit un entier avec input puis affiche 
 OUI si l'entier appartient à l'intervale $% I %$ suivant et NON sinon.
-
+<br/>
 ##   $%I = {{s}}%$
-{{s}}
+
+
 ==
  
 niveau%2
