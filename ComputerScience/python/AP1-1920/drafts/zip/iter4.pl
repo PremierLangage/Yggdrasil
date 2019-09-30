@@ -7,18 +7,25 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 title = Diviseurs d'un entier 
 
 
-text==  
-Ecrire un programme qui lit un  entier (s'il est négatif le remplace par son opposé)
-Affiche "diviseurs:" suivi 
-d'un diviseur par ligne 
+text==
+
+
+Ecrire un programme qui lit un entier (s'il est négatif le remplace par son opposé)
+Affiche "diviseurs propres:" suivi 
+d'un diviseur propre par ligne 
 puis de
-"nombre de diviseurs ??".
+"nombre de diviseurs propres??".
+
+
+**on appelle "diviseur propre" de n tous les diviseurs différents de 1 et n.**
+
+
 ==
 code==
 
-print("diviseurs:")
+print("diviseurs propres:")
 
-print("nombre de diviseurs",??)
+print("nombre de diviseurs propres",??)
 ==
 
 soluce==
@@ -26,12 +33,12 @@ n=int(input())
 nb=0
 if n<0:
     n=-n
-print("diviseurs:")
+print("diviseurs propres:")
 for i in range(2,n):
     if n%i==0:
         print(i)
         nb+=1
-print("nombre de diviseurs",nb)
+print("nombre de diviseurs propres",nb)
 ==
 plsoluce==
 Simple |2 
