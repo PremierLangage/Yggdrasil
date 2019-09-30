@@ -30,7 +30,7 @@ for i in range(N):
     v += random.randint(1,6)
     mplsoluce4 += str(v)+"\n"
 mplsoluce4 += str(N)+"\n"
-
+==
 
 soluce==
 nb=1
