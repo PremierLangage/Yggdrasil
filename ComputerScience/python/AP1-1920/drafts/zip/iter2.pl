@@ -22,7 +22,7 @@ print("Vous avez entré",nb,"valeur(s) en ordre croissant")
 ==
 
 before==
-
+import random
 N=random.randint(4,10)
 mplsoluce4="Test aléatoire\n"
 v=40
