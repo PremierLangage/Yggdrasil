@@ -368,9 +368,6 @@ class TestSession:
     """Execution"""
 
     def run(self, expression: str = None, **kwargs) -> NoReturn:
-        if self.current_test_group and self.last_test:
-            self.current_test_group.update_status(self.last_test.status)
-
         self.next_test.run(expression, **kwargs)
         self.last_test = self.next_test
         self.next_test = self.last_test.copy()
@@ -378,6 +375,7 @@ class TestSession:
         # record last test
         if self.current_test_group:
             self.current_test_group.append(self.last_test)
+            self.current_test_group.update_status(self.last_test.status)
         else:
             self.history.append(self.last_test)
 
@@ -544,5 +542,6 @@ class NoGlobalChangeAssert(Assert):
             return "Variables globales inchangées"
         else:
             return "Variables globales modifiées"
+
 
 
