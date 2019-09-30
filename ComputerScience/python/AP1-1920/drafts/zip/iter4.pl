@@ -37,6 +37,7 @@ plsoluce==
 Simple |2 
 Puissance de 2 |-1024
 Produit | 120
+Un plus gros | 5870865
 ==
 
 
