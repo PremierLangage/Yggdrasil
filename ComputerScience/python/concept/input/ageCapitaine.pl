@@ -16,7 +16,8 @@ puis sachant que dans cinq ans, le perroquet aura le tiers de l’âge du capita
 
 	Le perroquet du capitaine a ?? ans.
 
-
+Les opérateurs de python permettent d'écrire des expressions complexes et rapides.<br>
+Il n'est pas nécessaire de avoir un nom pour toutes les valeurs intermédiaires des calculs. 
 == 
 
 code==
@@ -27,8 +28,7 @@ age=int(input())
 ==
 
 feedback==
-Les opérateurs de python permettent d'écrire des expressions complexes et rapides.<br>
-Il n'est pas nécessaire de avoir un nom pour toutes les valeurs intermédiaires des calculs. 
+
 ==
 
 plsoluce==
@@ -42,6 +42,7 @@ a=int(input())
 print("Le capitaine a %d ans. Dans deux ans il aura %d ans." % (a,a+2))
 print("Le perroquet du capitaine a %d ans." % (((a+5)//3)-5))
 ==
+
 
 
 
