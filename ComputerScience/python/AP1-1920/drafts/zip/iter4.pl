@@ -38,7 +38,7 @@ for i in range(2,n):
     if n%i==0:
         print(i)
         nb+=1
-print("nombre de diviseurs propres",nb)
+print("nombre de diviseurs propres: ",nb)
 ==
 plsoluce==
 Simple |2 
