@@ -21,6 +21,17 @@ code==
 print("Vous avez entré",nb,"valeur(s) en ordre croissant")
 ==
 
+before==
+import random
+N=random.randint(4,10)
+mplsoluce4="Test aléatoire\n"
+v=40
+for i in range(N):
+    v += random.randint(1,6)
+    mplsoluce4 += str(v)+"\n"
+mplsoluce4 += str(N)+"\n"
+
+
 soluce==
 nb=1
 prec=int(input())
@@ -56,5 +67,6 @@ mplsoluce3==
 Départ négatif
 -4
 4
+2
 2
 ==
