@@ -43,7 +43,7 @@ while suiv> prec:
 print("Vous avez entré",nb,"valeur(s) en ordre croissant")
 ==
 mplsoluce0==
-essai1
+5 Valeurs
 2 
 3
 5
@@ -52,7 +52,7 @@ essai1
 0
 ==
 mplsoluce1==
-essai2
+Une seul
 4
 1
 ==
