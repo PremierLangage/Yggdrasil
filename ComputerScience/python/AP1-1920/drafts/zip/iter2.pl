@@ -46,8 +46,15 @@ essai2
 1
 ==
 mplsoluce2==
-essai2
+Plateau
 4
 4
 1
+==
+
+mplsoluce3==
+Départ négatif
+-4
+4
+2
 ==
