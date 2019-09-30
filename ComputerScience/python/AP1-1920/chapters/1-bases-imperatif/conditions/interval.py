@@ -123,8 +123,8 @@ def makeinterval(difficulte=2):
         if s != ""  :
             s+= " "+UNION+" "
             exp += " or "
-        if  random.randint(1,10) < 1:
-            s += " \{"+a+"\} "
+        if  random.randint(1,10) < 7: 
+            s += " \{"+a+"\} " # FIXME Can see the braces in mathml
             exp += " x== "+a+" " 
         else:
             strict1=random.randint(1,2)==1
