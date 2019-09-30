@@ -20,20 +20,20 @@ import random
 
 random.seed(seed)
 
-formula="<br/>    a = 2<br/>    p = a * a<br/>"
+formula="\n<br/>    a = 2\n<br/>    p = a * a\n<br/>"
 a=2
 p=a*a
 for x in range(0,random.randint(1,3)):
     r=random.randint(0,10)
     if r <7 :
-        formula += "    p = p * a <br/>"
+        formula += "    p = p * a \n<br/>"
         p = p * a
     else:
-        formula += "    p = p * p <br/>"
+        formula += "    p = p * p \n<br/>"
         p = p * p
 
 
-text = basetext+"<code>\n"+ formula+"</code>\n"
+text = basetext+""+ formula+"\n"
 
 res=p
 ==
@@ -58,6 +58,7 @@ elif int(response['answer']) == res:
 else:
     grade = False,'<div class="btn-danger">  Raté : réessayez </div>'
 ==
+
 
 
 
