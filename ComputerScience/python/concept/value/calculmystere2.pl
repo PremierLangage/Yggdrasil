@@ -19,16 +19,16 @@ import random
 
 random.seed(seed)
 
-formula="    a = 2\n    p = a * a\n"
+formula="<br/>\n    a = 2\n<br/>    p = a * a\n<br/>"
 a=2
 p=a*a
 for x in range(0,random.randint(2,4)):
     r=random.randint(0,10)
     if r <7 :
-        formula += "    p = p * a \n"
+        formula += "    p = p * a \n<br/>"
         p = p * a
     else:
-        formula += "    p = p * p \n"
+        formula += "    p = p * p \n<br/>"
         p = p * p
 
 
@@ -62,6 +62,7 @@ except:
         grade= False,'<div class="btn-danger"> Formule Incorrecte</div>'
 
 ==
+
 
 
 
