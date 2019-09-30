@@ -45,11 +45,10 @@ pltest = """>>> True # le code compile
 True
 """
 tester = PlRunner(component.value,pltest)
-a, b = tester.runcompiletest(dic={'var':None})
+a, b = tester.runcompiletest(dic={'var':val1})
 if not a :# erreur de compile
     grade=(0,b)
 else:
-
     d={}
     d['var']=val1
     exec("var ="+component.value,d)
@@ -66,6 +65,7 @@ else:
 form==
    var = {{ component|component}}
 ==
+
 
 
 
