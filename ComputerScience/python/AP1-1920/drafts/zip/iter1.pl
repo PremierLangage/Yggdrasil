@@ -15,7 +15,7 @@ code==
 
 
 
-print("Il y a",nb","multiples de 7")
+print("Il y a",nb,"multiples de 7")
 ==
 soluce==
 nb=0
@@ -55,3 +55,4 @@ essai2
 0
 0
 ==
+
