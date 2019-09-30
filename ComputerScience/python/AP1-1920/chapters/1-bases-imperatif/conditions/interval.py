@@ -123,7 +123,7 @@ def makeinterval(difficulte=2):
         if s != ""  :
             s+= " "+UNION+" "
             exp += " or "
-        if  random.randint(1,10) < 9:
+        if  random.randint(1,10) < 1:
             s += " \{"+a+"\} "
             exp += " x== "+a+" " 
         else:
