@@ -124,7 +124,7 @@ def makeinterval(difficulte=2):
             s+= " "+UNION+" "
             exp += " or "
         if  random.randint(1,10) < 9:
-            s += " \{{"+a+"}\} "
+            s += " \openbrace"+a+"\closebrace "
             exp += " x== "+a+" " 
         else:
             strict1=random.randint(1,2)==1
