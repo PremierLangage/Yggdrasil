@@ -23,10 +23,10 @@ print("nombre de diviseurs",??)
 
 soluce==
 n=int(input())
-nb=1
+nb=0
 if n<0:
     n=-n
-print("diviseur")
+print("diviseurs:")
 for i in range(2,n):
     if n%i==0:
         print(i)
