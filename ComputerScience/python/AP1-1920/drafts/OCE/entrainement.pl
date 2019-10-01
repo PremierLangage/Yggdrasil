@@ -36,7 +36,7 @@ regex = re.search("while", " while()")
 if regex != None:
     retour_eleve="Référence à la boucle while présente dans votre code"
 else:
-    print("Pas de boucle while c'est OK")
+    retour_eleve="Pas de boucle while c'est OK"
 
 # si utilisé : 
 # retour_eleve = "Vous ne pouvez pas utiliser de boucle while"
