@@ -34,9 +34,9 @@ if regex != None:
     grade = (0, f"\n{retour_eleve}")
 else:
     # retour_eleve="Pas de boucle while c'est OK"
-    # exec(editor.code)
-    grade = (100, f"\n{retour_eleve}")
- 
+    exec(editor.code)
+    #grade = (100, f"\n{retour_eleve}")
+
 ==
 
 
