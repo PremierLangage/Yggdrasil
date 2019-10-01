@@ -1,5 +1,5 @@
 
-#author = Olivier Champalle
+# author = Olivier Champalle
 # Utilisation du code du composant "Code editor"
 
 @ /utils/sandboxio.py
