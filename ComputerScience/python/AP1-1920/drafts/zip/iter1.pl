@@ -9,7 +9,7 @@ title = nombres divisibles
 
 text==  
 
-Ecrire un programme qui lit 12 entiers et affiche combien sont divisibles par 7
+Ecrire un programme qui lit 12 entiers et affiche combien parmi eux sont divisibles par 7
 ==
 code==
 
@@ -55,4 +55,5 @@ essai2
 0
 0
 ==
+
 
