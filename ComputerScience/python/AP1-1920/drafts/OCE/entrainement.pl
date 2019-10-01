@@ -1,10 +1,10 @@
 
-author = Olivier Champalle
+#author = Olivier Champalle
 
 # Heritage d'un type d'exercicie 
 extends=../../templates/pyeditor.pl
 
-title = Exercice 1
+title = Suite géométrique de raison 3
 
 
 
