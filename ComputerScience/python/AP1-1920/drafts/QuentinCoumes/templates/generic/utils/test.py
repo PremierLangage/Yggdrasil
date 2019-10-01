@@ -15,6 +15,7 @@ _default_group_template = _default_template_dir + 'testgroup.html'
 _default_params = {
     "report_success": False,
     "fail_fast": True
+    "weight": 1
 }
 
 
@@ -293,7 +294,7 @@ class Test:
 class TestGroup:
     _num = 0
 
-    def __init__(self, title: str, **params):
+    def __init__(self, title: str, weight:int=1 **params):
         self.num: int = TestGroup._num
         TestGroup._num += 1
         self.title: str = title
