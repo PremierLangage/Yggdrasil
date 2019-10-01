@@ -1,4 +1,4 @@
-# OCE : test 12/09/2019 OK. Template lancé en solo ce ui n'a pas de sens mais c'est un test fichier par fichier
+# OCE : test 12/09/2019 OK. Template lancé en solo ça n'a pas de sens mais c'est un test fichier par fichier
 
 # Fait par Boris Jabot
 
@@ -23,4 +23,5 @@ code==
 
 difficulty==
 ==
+
 
