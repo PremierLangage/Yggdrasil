@@ -25,9 +25,9 @@ for x in range(5):
     set_inputs([x])
     run()
     if eval(pl_context["solution"], {"x":x}):
-        assert_output("Vrai")
+        assert_output("Vrai\n")
     else:
-        assert_output("Faux")
+        assert_output("Faux\n")
     assert_no_global_change()
 end_test_group()
 
