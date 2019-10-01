@@ -19,11 +19,15 @@ En utilisant une boucle de type "for...in...range", écrire un programme qui aff
 égal au triple du terme précédent.
 ==
 
+# formulaire de saisie du code 
 form==
 {{ editor|component }}
 ==
 
 evaluator==
+# Récupération du code pour vérifier que le while n'est pas utilisé si utilisé
+# retour_eleve = "Vous ne pouvez pas utiliser de boucle while"
+# (0, f"student code:\n{retour_eleve}")
 exec(editor.code)
 
 grade = (100, f"student code:\n{a}")
