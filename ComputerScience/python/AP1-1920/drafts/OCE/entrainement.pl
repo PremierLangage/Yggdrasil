@@ -33,6 +33,7 @@ import re
 evaluator==
 # Récupération du code pour vérifier que le while n'est pas utilisé
 # regex sur while
+import re
 regex = re.search("while", editor.code)
 if regex != None:
     retour_eleve="Référence à la boucle while présente dans votre code"
