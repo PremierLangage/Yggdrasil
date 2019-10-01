@@ -29,7 +29,7 @@ class StopGrader(Exception):
 class Test:
     _number = 0
 
-    def __init__(self, code: str, **params):
+    def __init__(self, code: str, weight : int = 1, **params):
         self.code: str = code
         self.expression: Optional[str] = None
         self.params = _default_params.copy()
@@ -293,7 +293,7 @@ class Test:
 class TestGroup:
     _num = 0
 
-    def __init__(self, title: str, **params):
+    def __init__(self, title: str, weight : int = 1, **params):
         self.num: int = TestGroup._num
         TestGroup._num += 1
         self.title: str = title
