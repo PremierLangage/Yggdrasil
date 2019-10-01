@@ -40,6 +40,10 @@ if __name__ == "__main__":
     dic = get_context()
     dic['response'] = get_answers()
 
+if "taboo" in dic and checktaboo(dic["taboo"],dic['response']['anwser']):
+    output(0," vous n'avez pas respecter le taboo:"+dic["taboo"], dic)
+
+
     if 'evaluator' in dic:
         glob = {}
         dic['StopEvaluatorExec'] = StopEvaluatorExec
@@ -57,6 +61,7 @@ if __name__ == "__main__":
         sys.exit(1)
     
     output(dic['grade'][0], dic['grade'][1], dic)
+
 
 
 
