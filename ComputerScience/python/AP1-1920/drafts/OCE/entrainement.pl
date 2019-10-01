@@ -31,11 +31,11 @@ import re
 regex = re.search("while", editor.code)
 if regex != None:
     retour_eleve="Référence à la boucle while présente dans votre code"
-    grade = (0, f"student code:\n{retour_eleve}")
+    grade = (0, f"\n{retour_eleve}")
 else:
     retour_eleve="Pas de boucle while c'est OK"
     # exec(editor.code)
-    grade = (100, f"student code:\n{retour_eleve}")
+    grade = (100, f"\n{retour_eleve}")
  
 ==
 
