@@ -25,7 +25,8 @@ form==
 ==
 
 evaluator==
-# Récupération du code pour vérifier que le while n'est pas utilisé si utilisé
+# Récupération du code pour vérifier que le while n'est pas utilisé
+# si utilisé : 
 # retour_eleve = "Vous ne pouvez pas utiliser de boucle while"
 # (0, f"student code:\n{retour_eleve}")
 exec(editor.code)
