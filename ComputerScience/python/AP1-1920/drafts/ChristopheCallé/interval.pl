@@ -23,11 +23,12 @@ from itertools import permutations
 begin_test_group("Groupe de tests pour tester les tests")
 set_inputs(["5"])
 run()
-assert_output(solution)
+assert_output(pl_context["solution"])
 assert_no_global_change()
 end_test_group()
 
 
 ==
+
 
 
