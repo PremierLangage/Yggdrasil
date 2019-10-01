@@ -4,7 +4,6 @@
 
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
-builder =@ /builder/before.py
 
 editor =: CodeEditor
 editor.theme = dark
@@ -23,11 +22,6 @@ En utilisant une boucle de type "for...in...range", écrire un programme qui aff
 # formulaire de saisie du code 
 form==
 {{ editor|component }}
-==
-
-before==
-# utilisation des expressions régulières
-import re
 ==
 
 evaluator==
