@@ -298,7 +298,7 @@ class TestGroup:
         self.num: int = TestGroup._num
         TestGroup._num += 1
         self.title: str = title
-        self.weigth = weight
+        self.weight = weight
         self.status: bool = True
         self.tests: List[Test] = []
         self.params = _default_params.copy()
