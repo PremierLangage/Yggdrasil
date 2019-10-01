@@ -6,7 +6,7 @@ extends=../../templates/pyeditor.pl
 
 title = Suite géométrique de raison 3
 
-text ==
+doc ==
 Ecrire un programme qui affiche une suite de 12 nombres dont chaque terme soit égal au triple
 du terme précédent
 ==
