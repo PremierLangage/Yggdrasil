@@ -15,7 +15,7 @@ import interval
 _interval = interval.makeinterval()
 latex = _interval[0]
 def solution(x):
-    if (eval(_interval[1]):
+    if eval(_interval[1]):
         return "Vrai"
     else:
         return "True"
