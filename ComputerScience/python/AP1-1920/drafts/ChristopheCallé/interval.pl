@@ -28,7 +28,7 @@ begin_test_group("Groupe de tests pour tester les tests")
 for x in range(5):
     set_inputs([x])
     run()
-    assert_output(pl_context["solution"](x))
+    assert_output(pl_context)
     assert_no_global_change()
 end_test_group()
 
