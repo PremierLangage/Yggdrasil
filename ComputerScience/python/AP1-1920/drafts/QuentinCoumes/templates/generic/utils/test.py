@@ -312,6 +312,13 @@ class TestGroup:
     def get_grade(self):
         return self.status * self.weight
 
+    def get_grade(self):
+        return round(
+            sum(test.status * test.weigth for test in self.tests)
+            / sum(test.weigth for test in self.history)
+            * 100
+        )
+
     def render(self):
         with open(_default_group_template, "r") as tempfile:
             templatestring = tempfile.read()
@@ -345,16 +352,20 @@ class TestSession:
         self.last_test = None
 
     """ Grading """
-    
+
     def get_grade(self):
-        return self.status * self.weight
+        return round(
+            sum(test.status * test.weigth for test in self.history)
+            / sum(test.weigth for test in self.history)
+            * 100
+        )
 
     """Rendering"""
 
     def render(self):
         return "\n".join(test.render() for test in self.history)
 
-    """Setters for next test description."""
+    """Setters for the next test."""
 
     def set_title(self, title):
         self.next_test.title = title
