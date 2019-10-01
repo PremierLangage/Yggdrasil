@@ -24,7 +24,8 @@ form==
 ==
 
 evaluator==
-a=2
+exec(editor.code)
+
 grade = (100, f"student code:\n{a}")
 ==
 
