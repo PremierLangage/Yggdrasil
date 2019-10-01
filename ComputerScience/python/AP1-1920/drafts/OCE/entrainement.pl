@@ -32,7 +32,8 @@ import re
 evaluator==
 # Récupération du code pour vérifier que le while n'est pas utilisé
 # regex sur while
-re.search("while")
+regex = re.search("while", " while()")
+if regex!=NONE:
 
 # si utilisé : 
 # retour_eleve = "Vous ne pouvez pas utiliser de boucle while"
