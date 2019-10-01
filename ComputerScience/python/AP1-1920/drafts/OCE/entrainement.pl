@@ -28,7 +28,7 @@ evaluator==
 # Récupération du code pour vérifier que le while n'est pas utilisé
 # si utilisé : 
 # retour_eleve = "Vous ne pouvez pas utiliser de boucle while"
-# (0, f"student code:\n{retour_eleve}")
+grade = (0, f"student code:\n{retour_eleve}")
 exec(editor.code)
 
 grade = (100, f"student code:\n{a}")
