@@ -41,7 +41,7 @@ if regex != None:
 else:
     retour_eleve="Pas de boucle while c'est OK"
     # exec(editor.code)
-    grade = (100, f"student code:\n{a}")
+    grade = (100, f"student code:\n{retour_eleve}")
  
 ==
 
