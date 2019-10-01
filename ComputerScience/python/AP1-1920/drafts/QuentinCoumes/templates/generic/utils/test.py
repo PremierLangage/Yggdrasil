@@ -15,7 +15,6 @@ _default_group_template = _default_template_dir + 'testgroup.html'
 _default_params = {
     "report_success": False,
     "fail_fast": True,
-    "weight": 1,
 }
 
 
