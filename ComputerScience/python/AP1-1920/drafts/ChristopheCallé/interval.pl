@@ -1,4 +1,4 @@
-extends=../AntoineMeyer/templates/generic/generic.pl
+extends=../../templates/generic/generic.pl
 
 @ interval.py
 
@@ -29,4 +29,5 @@ end_test_group()
 
 
 ==
+
 
