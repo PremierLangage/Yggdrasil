@@ -1,5 +1,6 @@
 
 #author = Olivier Champalle
+# Utilisation du code du composant "Code editor"
 
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
