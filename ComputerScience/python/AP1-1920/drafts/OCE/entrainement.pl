@@ -33,8 +33,8 @@ if regex != None:
     retour_eleve="Référence à la boucle while présente dans votre code"
     grade = (0, f"\n{retour_eleve}")
 else:
-    # retour_eleve="Pas de boucle while c'est OK"
     exec(editor.code)
+    retour_eleve="Pas de boucle while c'est OK"
     grade = (100, f"\n{retour_eleve}")
 
 ==
