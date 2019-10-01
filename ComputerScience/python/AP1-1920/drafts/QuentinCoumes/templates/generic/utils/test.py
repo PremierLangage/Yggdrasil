@@ -31,6 +31,7 @@ class Test:
 
     def __init__(self, code: str, weight : int = 1, **params):
         self.code: str = code
+        self.weight = weight
         self.expression: Optional[str] = None
         self.params = _default_params.copy()
         self.params.update(params)
@@ -297,6 +298,7 @@ class TestGroup:
         self.num: int = TestGroup._num
         TestGroup._num += 1
         self.title: str = title
+        self.weigth = weight
         self.status: bool = True
         self.tests: List[Test] = []
         self.params = _default_params.copy()
