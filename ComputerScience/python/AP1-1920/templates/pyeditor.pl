@@ -1,3 +1,4 @@
+# 01/10/2019 : A quoi sert ce template !!
 
 doc==
 ceci est un template pour écrire des exercices de python.
@@ -14,8 +15,6 @@ pltest
 qcm_template
 
 IL est necessaire d'écrire de nouveau templates avec les composants .
-
-
 
 ==
 
@@ -47,6 +46,7 @@ text=doc
 @ /utils/sandboxio.py 
 @ /grader/evaluator.py [grader.py]
 @ /builder/before.py [builder.py]
+
 
 
 
