@@ -26,14 +26,14 @@ form==
 ==
 
 before==
-
+# utilisation des expressions régulières
+import re
 ==
 
 evaluator==
-import re
 # Récupération du code pour vérifier que le while n'est pas utilisé
 # regex sur while
-regex = re.search("while", " while()")
+regex = re.search("while", editor.code)
 if regex != None:
     retour_eleve="Référence à la boucle while présente dans votre code"
 else:
