@@ -11,8 +11,7 @@ Ecrire un programme qui affiche une suite de 12 nombres dont chaque terme soit �
 du terme précédent
 ==
 
-text==
-un test
-==
+component.code ==
 
+==
 
