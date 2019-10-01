@@ -16,9 +16,10 @@ editor.code ==
 before==
 ==
 
-title = Code Editor Component
+title = Suite géométrique de raison 3
 
 text==
+Écrire un programme qui affiche une suite de 12 nombres dont chaque terme soit égal au triple du terme précédent.
 ==
 
 form==
