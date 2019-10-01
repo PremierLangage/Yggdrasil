@@ -28,6 +28,6 @@ form==
 ==
 
 evaluator==
-grade = (100, f"student code:\n{editor.code}")
+grade, feedback = (100, f"student code:\n{editor.code}")
 ==
 
