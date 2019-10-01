@@ -294,7 +294,7 @@ class Test:
 class TestGroup:
     _num = 0
 
-    def __init__(self, title: str, weight:int=1 **params):
+    def __init__(self, title: str, **params):
         self.num: int = TestGroup._num
         TestGroup._num += 1
         self.title: str = title
@@ -308,6 +308,9 @@ class TestGroup:
 
     def make_id(self):
         return 'group_' + str(self.num)
+
+    def get_grade(self):
+        return self.status * self.weight
 
     def render(self):
         with open(_default_group_template, "r") as tempfile:
@@ -340,6 +343,11 @@ class TestSession:
             self.current_test_group.update_status(self.last_test.status)
         self.current_test_group = None
         self.last_test = None
+
+    """ Grading """
+    
+    def get_grade(self):
+        return self.status * self.weight
 
     """Rendering"""
 
