@@ -26,7 +26,7 @@ for i in range(12):
 print("Il y a",nb,"multiples de 7")
 ==
 mplsoluce0==
-essai1
+essai 1
 2 
 3
 5
@@ -41,7 +41,7 @@ essai1
 35
 ==
 mpsoluce1==
-essai2
+essai 2
 0
 0
 0
@@ -54,6 +54,21 @@ essai2
 0
 0
 0
+==
+mpsoluce2==
+essai 3
+10
+101
+20
+30
+40
+50
+60
+71
+11
+10
+20
+30
 ==
 
 
