@@ -1,14 +1,16 @@
+import operator
+import sys
 from copy import deepcopy
 from io import StringIO
-import jinja2
-from mockinput import mock_input
-import sys
-from typing import NoReturn, List, Callable, Union, Optional, Dict, Any
+from typing import Callable, Dict, List, NoReturn, Optional, Union
 from unittest import mock
-import operator
+
+import jinja2
+
+from mockinput import mock_input
 
 _default_template_dir = ''
-#_default_template_dir = 'templates/generic/jinja/'
+# _default_template_dir = 'templates/generic/jinja/'
 _default_test_template = _default_template_dir + 'testitem.html'
 _default_group_template = _default_template_dir + 'testgroup.html'
 
@@ -29,7 +31,7 @@ class StopGrader(Exception):
 class Test:
     _number = 0
 
-    def __init__(self, code: str, weight : int = 1, **params):
+    def __init__(self, code: str, weight: int = 1, **params):
         self.code: str = code
         self.weight = weight
         self.expression: Optional[str] = None
@@ -113,7 +115,7 @@ class Test:
                 with mock.patch.object(sys, 'stdout', out_stream):
                     try:
                         if expression is None:
-                            exec(self.code, self.current_state)
+                            exec (self.code, self.current_state)
                         else:
                             self.result = eval(expression, self.current_state)
                     except Exception as e:
@@ -182,7 +184,6 @@ class Test:
         # set weigth
         if 'weigth' in kwargs:
             self.weigth = kwargs['weigth']
-
 
     """Assertions."""
 
@@ -277,10 +278,10 @@ class Test:
             self.title = "Exécution du programme"
         else:
             self.title = "Évaluation de {!r}".format(self.expression)
-    
+
     def get_grade(self):
         return (self.status * self.weight), self.weight
-    
+
     def render(self):
         with open(_default_test_template, "r") as tempfile:
             templatestring = tempfile.read()
@@ -294,7 +295,7 @@ class Test:
 class TestGroup:
     _num = 0
 
-    def __init__(self, title: str, weight : int = 1, **params):
+    def __init__(self, title: str, weight: int = 1, **params):
         self.num: int = TestGroup._num
         TestGroup._num += 1
         self.title: str = title
@@ -372,7 +373,7 @@ class TestSession:
 
     def set_weigth(self, weigth):
         self.next_test.weigth = weigth
-    
+
     def set_descr(self, descr):
         self.next_test.descr = descr
 
@@ -382,7 +383,7 @@ class TestSession:
     """Setters for execution context."""
 
     def exec_preamble(self, preamble: str, **kwargs) -> NoReturn:
-        exec(preamble, self.next_test.current_state, **kwargs)
+        exec (preamble, self.next_test.current_state, ** kwargs)
         del self.next_test.current_state['__builtins__']
 
     def set_globals(self, **variables) -> NoReturn:
@@ -415,6 +416,7 @@ class TestSession:
             raise StopGrader("Failed assert during fail-fast test.")
 
     """Assertions."""
+
     # TODO: unhappy about code duplication in assertion mechanism, fix this.
 
     def assert_output(self, expected,
@@ -469,6 +471,7 @@ class TestSession:
 
 
 class TextLabel:
+
     def __init__(self, text):
         self.text = text
 
@@ -477,6 +480,7 @@ class TextLabel:
 
 
 class Verbatim:
+
     def __init__(self, code):
         self.code = code
 
@@ -496,6 +500,7 @@ class Assert:
 
 
 class OutputAssert(Assert):
+
     def __init__(self, status, expected, **params):
         super().__init__(status, params)
         self.expected = expected
@@ -508,6 +513,7 @@ class OutputAssert(Assert):
 
 
 class NoExceptionAssert(Assert):
+
     def __init__(self, status, **params):
         super().__init__(status, params)
 
@@ -519,6 +525,7 @@ class NoExceptionAssert(Assert):
 
 
 class ExceptionAssert(Assert):
+
     def __init__(self, status, exception: Exception, **params):
         super().__init__(status, params)
         self.exception = exception
@@ -532,6 +539,7 @@ class ExceptionAssert(Assert):
 
 
 class ResultAssert(Assert):
+
     def __init__(self, status, expected, **params):
         super().__init__(status, params)
         self.expected = expected
@@ -544,6 +552,7 @@ class ResultAssert(Assert):
 
 
 class VariableValuesAssert(Assert):
+
     def __init__(self, status, expected, missing, incorrect, **params):
         super().__init__(status, params)
         self.expected = expected
@@ -566,6 +575,7 @@ class VariableValuesAssert(Assert):
 
 
 class NoGlobalChangeAssert(Assert):
+
     def __init__(self, status, **params):
         super().__init__(status, params)
 
