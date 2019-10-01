@@ -5,6 +5,7 @@ from mockinput import mock_input
 import sys
 from typing import NoReturn, List, Callable, Union, Optional, Dict, Any
 from unittest import mock
+import operator
 
 _default_template_dir = ''
 #_default_template_dir = 'templates/generic/jinja/'
@@ -54,6 +55,7 @@ class Test:
         self.title: Optional[str] = None
         self.descr: Optional[str] = None
         self.hint: Optional[str] = None
+        self.weigth: Optional[int] = 1
 
         # assertions
         self.assertions: List[Assert] = []
@@ -176,22 +178,26 @@ class Test:
         # set hint
         if 'hint' in kwargs:
             self.hint = kwargs['hint']
+        # set hint
+        if 'weigth' in kwargs:
+            self.weigth = kwargs['weigth']
+
 
     """Assertions."""
 
     def assert_output(self, expected,
-                      cmp: Callable = lambda x, y: x == y):
+                      cmp: Callable = operator.eq):
         status = cmp(expected, self.output)
         self.record_assertion(OutputAssert(status, expected))
         return status
 
     def assert_result(self, expected,
-                      cmp: Callable = lambda x, y: x == y):
+                      cmp: Callable = operator.eq):
         status = cmp(expected, self.result)
         self.record_assertion(ResultAssert(status, expected))
         return status
 
-    def assert_variable_values(self, cmp=lambda x, y: x == y, **expected):
+    def assert_variable_values(self, cmp=operator.eq, **expected):
         if not expected:
             return
         state = self.current_state
@@ -341,6 +347,9 @@ class TestSession:
     def set_title(self, title):
         self.next_test.title = title
 
+    def def set_weigth(self, weigth):
+        self.next_test.weigth = weigth
+    
     def set_descr(self, descr):
         self.next_test.descr = descr
 
@@ -386,7 +395,7 @@ class TestSession:
     # TODO: unhappy about code duplication in assertion mechanism, fix this.
 
     def assert_output(self, expected,
-                      cmp: Callable = lambda x, y: x == y):
+                      cmp: Callable = operator.eq):
         if self.last_test is None:
             raise GraderError("Can't assert before running the code.")
         status = self.last_test.assert_output(expected, cmp)
@@ -395,7 +404,7 @@ class TestSession:
             raise StopGrader("Failed assert during fail-fast test.")
 
     def assert_result(self, expected,
-                      cmp: Callable = lambda x, y: x == y):
+                      cmp: Callable = operator.eq):
         if self.last_test is None:
             raise GraderError("Can't assert before running the code.")
         status = self.last_test.assert_result(expected, cmp)
