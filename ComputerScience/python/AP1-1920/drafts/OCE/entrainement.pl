@@ -24,6 +24,7 @@ form==
 ==
 
 evaluator==
+a=2
 grade = (100, f"student code:\n{title}")
 ==
 
