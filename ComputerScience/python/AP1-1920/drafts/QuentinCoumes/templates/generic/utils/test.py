@@ -276,7 +276,8 @@ class Test:
             self.title = "Exécution du programme"
         else:
             self.title = "Évaluation de {!r}".format(self.expression)
-
+    
+    def get_grade(self):
     def render(self):
         with open(_default_test_template, "r") as tempfile:
             templatestring = tempfile.read()
@@ -347,7 +348,7 @@ class TestSession:
     def set_title(self, title):
         self.next_test.title = title
 
-    def def set_weigth(self, weigth):
+    def set_weigth(self, weigth):
         self.next_test.weigth = weigth
     
     def set_descr(self, descr):
