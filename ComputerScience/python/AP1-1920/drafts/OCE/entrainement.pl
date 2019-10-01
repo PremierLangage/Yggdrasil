@@ -4,6 +4,7 @@
 
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
+builder =@ /builder/before.py
 
 editor =: CodeEditor
 editor.theme = dark
@@ -24,8 +25,15 @@ form==
 {{ editor|component }}
 ==
 
+before==
+import re
+==
+
 evaluator==
 # Récupération du code pour vérifier que le while n'est pas utilisé
+# regex sur while
+re.search("while")
+
 # si utilisé : 
 # retour_eleve = "Vous ne pouvez pas utiliser de boucle while"
 grade = (0, f"student code:\n{retour_eleve}")
