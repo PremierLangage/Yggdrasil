@@ -39,6 +39,7 @@ def grade_this(code: str, tests: str):
     methods = inspect.getmembers(session, predicate=inspect.ismethod)
     namespace = globals().copy()
     namespace.update(methods)
+    namespace.update({"pl_context": context})
 
     try:
         exec(tests, namespace)
@@ -63,6 +64,7 @@ if __name__ == "__main__":
     context = sandboxio.get_context()
     student_code = _get_student_code(context)
     validation_script = context["grader"]
-    grade, feedback = grade_this(student_code, validation_script)
+    grade, feedback = grade_this(student_code, validation_script, context)
     sandboxio.output(grade, feedback)
+
 
