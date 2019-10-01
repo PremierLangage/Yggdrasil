@@ -8,3 +8,5 @@ title = Suite géométrique de raison 3
 
 
 
+
+
