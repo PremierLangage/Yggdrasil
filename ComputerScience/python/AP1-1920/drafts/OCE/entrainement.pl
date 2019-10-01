@@ -13,9 +13,6 @@ editor.code ==
 # write your code here
 ==
 
-before==
-==
-
 title = Suite géométrique de raison 3
 
 text==
