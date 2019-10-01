@@ -14,7 +14,7 @@ Ecrire un programme qui lit un entier (s'il est négatif le remplace par son opp
 Affiche "diviseurs propres:" suivi 
 d'un diviseur propre par ligne 
 puis de
-"nombre de diviseurs propres??".
+"nombre de diviseurs propres:??".
 
 
 **on appelle "diviseur propre" de n tous les diviseurs différents de 1 et n.**
@@ -25,7 +25,7 @@ code==
 
 print("diviseurs propres:")
 
-print("nombre de diviseurs propres",??)
+print("nombre de diviseurs propres:",??)
 ==
 
 soluce==
@@ -46,5 +46,6 @@ Puissance de 2 |-1024
 Produit | 120
 Un plus gros | 5870865
 ==
+
 
 
