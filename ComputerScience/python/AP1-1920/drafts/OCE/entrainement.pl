@@ -26,10 +26,11 @@ form==
 ==
 
 before==
-import re
+
 ==
 
 evaluator==
+import re
 # Récupération du code pour vérifier que le while n'est pas utilisé
 # regex sur while
 regex = re.search("while", " while()")
@@ -45,6 +46,7 @@ grade = (0, f"student code:\n{retour_eleve}")
 
 grade = (100, f"student code:\n{a}")
 ==
+
 
 
 
