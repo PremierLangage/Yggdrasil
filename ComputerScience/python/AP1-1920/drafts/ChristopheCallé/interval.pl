@@ -2,7 +2,7 @@ extends=../../templates/generic/generic.pl
 
 @ interval.py
 
-title=Intervales
+title=Intervales test_reload
 
 text==
 Ecrivez un programme qui prend en entrée un entier et affiche "Vrai" si l'entier est dans l'interval $%{{ latex }}%$ et "Faux" sinon.
