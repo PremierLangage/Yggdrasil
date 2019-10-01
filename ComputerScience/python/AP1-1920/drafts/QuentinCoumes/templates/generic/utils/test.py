@@ -278,6 +278,8 @@ class Test:
             self.title = "Évaluation de {!r}".format(self.expression)
     
     def get_grade(self):
+        return self.status * self.weight
+    
     def render(self):
         with open(_default_test_template, "r") as tempfile:
             templatestring = tempfile.read()
