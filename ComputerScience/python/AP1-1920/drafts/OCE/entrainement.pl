@@ -36,16 +36,14 @@ evaluator==
 regex = re.search("while", editor.code)
 if regex != None:
     retour_eleve="Référence à la boucle while présente dans votre code"
+    grade = (0, f"student code:\n{retour_eleve}")
 else:
     retour_eleve="Pas de boucle while c'est OK"
-
-# si utilisé : 
-# retour_eleve = "Vous ne pouvez pas utiliser de boucle while"
-grade = (0, f"student code:\n{retour_eleve}")
-# exec(editor.code)
-
-grade = (100, f"student code:\n{a}")
+    # exec(editor.code)
+    grade = (100, f"student code:\n{a}")
+ 
 ==
+
 
 
 
