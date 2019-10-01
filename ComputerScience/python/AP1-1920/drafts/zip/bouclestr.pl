@@ -21,9 +21,10 @@ Si l'entier est négatif, on ne fait rien.
 soluce==
 n=int(input())
 s=""
-for i in range(n):
-    s+=str(i*17)
-print(s)
+if n>=0:
+    for i in range(n):
+        s+=str(i*17)
+    print(s)
 ==
 plsoluce==
 court|2 
