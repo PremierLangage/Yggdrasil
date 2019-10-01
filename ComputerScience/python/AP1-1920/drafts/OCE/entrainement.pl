@@ -1,17 +1,30 @@
 
 #author = Olivier Champalle
 
-# Heritage d'un type d'exercicie 
-extends=../../templates/pyeditor.pl
+@ /utils/sandboxio.py
+grader  =@ /grader/evaluator.py
+builder =@ /builder/before.py
 
-title = Suite géométrique de raison 3
-
-doc ==
-Ecrire un programme qui affiche une suite de 12 nombres dont chaque terme soit égal au triple
-du terme précédent
+editor =: CodeEditor
+editor.theme = dark
+editor.language = python
+editor.code ==
+# write your code here
 ==
 
-component.code ==
+before==
+==
 
+title = Code Editor Component
+
+text==
+==
+
+form==
+{{ editor|component }}
+==
+
+evaluator==
+grade = (100, f"student code:\n{editor.code}")
 ==
 
