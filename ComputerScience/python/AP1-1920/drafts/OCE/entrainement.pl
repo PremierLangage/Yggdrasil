@@ -19,7 +19,8 @@ before==
 title = Suite géométrique de raison 3
 
 text==
-Écrire un programme qui affiche une suite de 12 nombres dont chaque terme soit égal au triple du terme précédent.
+En utilisant une boucle de type "for...in...range", écrire un programme qui affiche une suite de 12 nombres dont chaque terme soit 
+égal au triple du terme précédent.
 ==
 
 form==
