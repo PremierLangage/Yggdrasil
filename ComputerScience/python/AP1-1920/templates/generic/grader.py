@@ -32,7 +32,7 @@ def _get_student_code(exercise_context: dict):
     return answers[editor_id]["code"]
 
 
-def grade_this(code: str, tests: str):
+def grade_this(code: str, tests: str, context: dict):
     # instantiate a unique TestSession instance and copy all its bound methods
     # to the global namespace for use in the validation script
     session = test.TestSession(code)
