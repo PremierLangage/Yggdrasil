@@ -58,7 +58,7 @@ class Test:
         self.title: Optional[str] = None
         self.descr: Optional[str] = None
         self.hint: Optional[str] = None
-        self.weigth: Optional[int] = 1
+        self.weight: Optional[int] = 1
 
         # assertions
         self.assertions: List[Assert] = []
@@ -181,9 +181,9 @@ class Test:
         # set hint
         if 'hint' in kwargs:
             self.hint = kwargs['hint']
-        # set weigth
-        if 'weigth' in kwargs:
-            self.weigth = kwargs['weigth']
+        # set weight
+        if 'weight' in kwargs:
+            self.weight = kwargs['weight']
 
     """Assertions."""
 
@@ -312,12 +312,12 @@ class TestGroup:
         return 'group_' + str(self.num)
 
     def get_grade(self):
-        total_grade = total_weigth = 0
+        total_grade = total_weight = 0
         for test in self.tests:
             total, weight = test.get_grade()
             total_grade += total
-            total_weigth += weight
-        return total_grade / total_weigth * self.weight, self.weight
+            total_weight += weight
+        return total_grade / total_weight * self.weight, self.weight
 
     def render(self):
         with open(_default_group_template, "r") as tempfile:
@@ -354,12 +354,12 @@ class TestSession:
     """ Grading """
 
     def get_grade(self):
-        total_grade = total_weigth = 0
+        total_grade = total_weight = 0
         for test in self.history:
             total, weight = test.get_grade()
             total_grade += total
-            total_weigth += weight
-        return total_grade / total_weigth * 100
+            total_weight += weight
+        return total_grade / total_weight * 100
 
     """Rendering"""
 
@@ -371,8 +371,8 @@ class TestSession:
     def set_title(self, title):
         self.next_test.title = title
 
-    def set_weigth(self, weigth):
-        self.next_test.weigth = weigth
+    def set_weight(self, weight):
+        self.next_test.weight = weight
 
     def set_descr(self, descr):
         self.next_test.descr = descr
