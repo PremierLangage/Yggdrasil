@@ -358,8 +358,7 @@ class TestSession:
             total, weight = test.get_grade()
             total_grade += total
             total_weigth += weight
-        return total_grade / total_weigth * self.weight, 100
-        
+        return total_grade / total_weigth * 100, 100
 
     """Rendering"""
 
