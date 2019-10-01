@@ -24,7 +24,7 @@ form==
 ==
 
 evaluator==
-grade = (100, f"student code:\n{"Bonne réponse}")
+grade = (100, f"student code:\n{"Bonne réponse"}")
 ==
 
 
