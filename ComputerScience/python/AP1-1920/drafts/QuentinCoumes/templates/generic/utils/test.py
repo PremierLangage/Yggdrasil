@@ -179,7 +179,7 @@ class Test:
         # set hint
         if 'hint' in kwargs:
             self.hint = kwargs['hint']
-        # set hint
+        # set weigth
         if 'weigth' in kwargs:
             self.weigth = kwargs['weigth']
 
