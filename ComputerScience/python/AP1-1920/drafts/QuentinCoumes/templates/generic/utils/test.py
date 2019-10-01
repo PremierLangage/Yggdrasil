@@ -279,7 +279,7 @@ class Test:
             self.title = "Évaluation de {!r}".format(self.expression)
     
     def get_grade(self):
-        return self.status * self.weight
+        return (self.status * self.weight), self.weight
     
     def render(self):
         with open(_default_test_template, "r") as tempfile:
@@ -310,14 +310,12 @@ class TestGroup:
         return 'group_' + str(self.num)
 
     def get_grade(self):
-        return self.status * self.weight
-
-    def get_grade(self):
-        return round(
-            sum(test.status * test.weigth for test in self.tests)
-            / sum(test.weigth for test in self.history)
-            * 100
-        )
+        total_grade = total_weigth = 0
+        for test in self.tests:
+            total, weight = test.get_grade()
+            total_grade += total
+            total_weigth += weight
+        return total_grade / total_weigth * self.weight, self.weight
 
     def render(self):
         with open(_default_group_template, "r") as tempfile:
@@ -354,11 +352,13 @@ class TestSession:
     """ Grading """
 
     def get_grade(self):
-        return round(
-            sum(test.status * test.weigth for test in self.history)
-            / sum(test.weigth for test in self.history)
-            * 100
-        )
+        total_grade = total_weigth = 0
+        for test in self.history:
+            total, weight = test.get_grade()
+            total_grade += total
+            total_weigth += weight
+        return total_grade / total_weigth * self.weight, 100
+        
 
     """Rendering"""
 
