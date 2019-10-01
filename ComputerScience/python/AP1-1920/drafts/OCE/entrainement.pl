@@ -41,7 +41,7 @@ else:
 # si utilisé : 
 # retour_eleve = "Vous ne pouvez pas utiliser de boucle while"
 grade = (0, f"student code:\n{retour_eleve}")
-exec(editor.code)
+# exec(editor.code)
 
 grade = (100, f"student code:\n{a}")
 ==
