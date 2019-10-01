@@ -14,7 +14,11 @@ import interval
 
 _interval = interval.makeinterval()
 latex = _interval[0]
-solution = _interval[1]
+def solution(x):
+    if (eval(_interval[1]):
+        return "Vrai"
+    else:
+        return "True"
 ==
 
 grader==
@@ -24,7 +28,8 @@ begin_test_group("Groupe de tests pour tester les tests")
 for x in range(5):
     set_inputs([x])
     run()
-    assert_output(pl_context["solution"])
+    expected_output = pl_context['solution'](x)
+    assert_output(expected_output)
     assert_no_global_change()
 end_test_group()
 
