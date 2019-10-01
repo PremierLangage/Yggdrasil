@@ -33,7 +33,10 @@ evaluator==
 # Récupération du code pour vérifier que le while n'est pas utilisé
 # regex sur while
 regex = re.search("while", " while()")
-if regex!=NONE:
+if regex != None:
+    retour_eleve="Référence à la boucle while présente dans votre code"
+else:
+    print("Pas de boucle while c'est OK")
 
 # si utilisé : 
 # retour_eleve = "Vous ne pouvez pas utiliser de boucle while"
@@ -42,5 +45,6 @@ exec(editor.code)
 
 grade = (100, f"student code:\n{a}")
 ==
+
 
 
