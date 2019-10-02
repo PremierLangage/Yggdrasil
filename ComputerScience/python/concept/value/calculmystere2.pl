@@ -5,21 +5,23 @@ title=Calcul Mystere II
 extends=/ComputerScience/python/template/simpleeval.pl
 
 text==
-La variable a est initialise avec la valeur 2.
-
-La question est quelle est la valeur de la variable p a la fin de la suite d'instructions suivante:
-
+On suppose qu'il existe une variable `a` initialisée avec la valeur 2.  
+Quelle est la valeur de la variable `p` à la fin de la suite d'instructions suivante ?  
+*On demande une réponse sous forme d'une expression arithmétique, pas seulement le résultat numérique.*
 ==
 
 
 
-before==
-
+before==#|python|
 import random
-
 random.seed(seed)
 
-formula="<br/>\n    a = 2\n<br/>    p = a * a\n<br/>"
+formula="""
+<br/>
+a = 2\n<br/>
+p = a * a\n<br/>
+"""
+
 a=2
 p=a*a
 for x in range(0,random.randint(2,4)):
@@ -30,7 +32,6 @@ for x in range(0,random.randint(2,4)):
     else:
         formula += "    p = p * p \n<br/>"
         p = p * p
-
 
 text +=formula
 text += """
@@ -62,6 +63,7 @@ except:
         grade= False,'<div class="btn-danger"> Formule Incorrecte</div>'
 
 ==
+
 
 
 
