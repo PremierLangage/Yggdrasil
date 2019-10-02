@@ -20,7 +20,14 @@ text ==
 form ==
 
 ==
+extrajs==
+<script>
+var composer = new Kekule.Editor.Composer(document.getElementById('composer'));
+composer.setCommonToolButtons(['undo', 'redo']);
+composer.setChemToolButtons(['manipulate', 'erase', 'bond', 'atomAndFormula', 'ring', 'charge']);
 
+</script>
+==
 evaluator ==
 grade=(100,"Bonne réponse")
 ==
