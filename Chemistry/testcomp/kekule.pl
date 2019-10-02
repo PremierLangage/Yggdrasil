@@ -14,7 +14,7 @@ text ==
 <script src="https://unpkg.com/kekule/dist/kekule.js?modules=chemWidget,algorithm"></script>
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/kekule/dist/themes/default/kekule.css" />
 
-<div id="chemViewer" style="width:500px;height:400px" data-widget="Kekule.ChemWidget.Viewer"></div>
+<div id="composer" style="width:600px;height:400px" data-widget="Kekule.Editor.Composer" data-chem-obj="url(#molecule)"></div>
 ==
 
 form ==
