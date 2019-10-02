@@ -111,7 +111,7 @@ function ggbValues() {
         var id = app1.getObjectName(i);
         var type = app1.getObjectType(id);
         var x="";var y="";var z="";
-        if (type=="point" || type=="line") {
+        if (type=="point" || type=="line" || 1==1) {
         var x = app1.getXcoord(id);
         var y = app1.getYcoord(id);
         var z = app1.getCommandString(id);
