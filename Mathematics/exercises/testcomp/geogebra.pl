@@ -114,7 +114,7 @@ function ggbValues() {
         if (type=="point" || type=="line") {
         var x = app1.getXcoord(id);
         var y = app1.getYcoord(id);
-        var z = app1.CommandString(id);
+        var z = app1.getCommandString(id);
         }
         values.push({id: id, type: type,x:x,y:y,z:z});
     }
