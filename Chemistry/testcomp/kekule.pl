@@ -29,7 +29,7 @@ var composer = new Kekule.Editor.Composer(document.getElementById('composer'));
 composer.setCommonToolButtons(['undo', 'redo','zoomIn', 'zoomOut']);
 composer.setChemToolButtons(['manipulate', 'erase', 'bond', 'atomAndFormula', 'ring', 'charge']);
 function getMol() {
-    var mol = composer.getCurrMol();
+    var mol = composer.exportObjs(Kekule.Molecule)[0];
     var formula = mol.calcFormula();
     var myDiv = document.getElementById("answer");
     myDiv.innerHTML = formula.getText();
