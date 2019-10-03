@@ -49,10 +49,9 @@ for e in selectable.selections:
 
 if len(indices) == 0:
     score = 100
-    msg = 'Bonne réponse'
+    msg = 'Bravo, vous avez trouvé tous les pronoms personnels !'
 else:
     score = 0
-    msg = 'Mauvaise réponse'
 grade = (score, msg)
 ==
 
