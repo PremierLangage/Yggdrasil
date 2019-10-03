@@ -38,7 +38,6 @@ function getMol() {
     //myDiv.innerHTML = formula.getText();
     myDiv.innerHTML = JSON.stringify(jsonData);
 }
-
 </script>
 ==
 evaluator ==
