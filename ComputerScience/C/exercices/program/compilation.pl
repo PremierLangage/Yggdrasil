@@ -18,11 +18,11 @@ sortlist =: SortList
 sortlist.items %= #|json|
 [
     { "id": "1", "content": "<b>Préprocession</b>" },
-    { "id": "2", "content": "Analyse lexicale" },
-    { "id": "3", "content": "Analyse syntaxique" },
-    { "id": "4", "content": "Analyse sémantique" },
-    { "id": "5", "content": "Génération de code" },
-    { "id": "6", "content": "Édition de liens" }
+    { "id": "2", "content": "<b>Analyse lexicale</b>" },
+    { "id": "3", "content": "<b>Analyse syntaxique</b>" },
+    { "id": "4", "content": "<b>Analyse sémantique</b>" },
+    { "id": "5", "content": "<b>Génération de code</b>" },
+    { "id": "6", "content": "<b>Édition de liens</b>" }
 ]
 ==
 
