@@ -43,7 +43,7 @@ indices = []
 errors = []
 for e in selectable.selections:
     e['css'] = "error-state"
-    if e['typo'] in pronoms:
+    if e['cid'] in pronoms:
         e['css'] = "success-state"
         indices.append(e['index'])
     else:
