@@ -2,9 +2,6 @@ extends = basic.pl
 
 title = TextInput
 
-input =: Input
-input.type = text
-
 before ==
 import random as rd
 a=rd.randint(10,20)
@@ -15,6 +12,8 @@ sol=a+b
 text ==
 Calculer {{a}} + {{b}}.
 ==
+
+input =: TextInput
 
 form ==
 {{ input | component }}
