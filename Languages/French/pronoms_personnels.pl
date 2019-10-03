@@ -23,7 +23,7 @@ Allez venez et entrez dans la danse.
 Allez venez, laissez faire l'insouciance. 
 A deux a mille je sais qu' on est capable. 
 Tout est possible tout est réalisable. 
-On peut s'enfuir bien plus haut que nos rêves. 
+On peut s' enfuir bien plus haut que nos rêves. 
 On peut partir bien plus loin que la grève. 
 ==
 selectable.selectable % true
