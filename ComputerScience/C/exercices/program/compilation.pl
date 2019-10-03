@@ -20,10 +20,8 @@ sortlist.items %= #|json|
     { "id": "2", "content": "Analyse lexicale" },
     { "id": "3", "content": "Analyse syntaxique" },
     { "id": "4", "content": "Analyse sémantique" },
-    { "id": "5", "content": "Génération de code intermédiaire" },
-    { "id": "6", "content": "Optimisation de code" },
-    { "id": "7", "content": "Génération de code machine" },
-    { "id": "8", "content": "Édition de liens" }
+    { "id": "5", "content": "Génération de code" },
+    { "id": "6", "content": "Édition de liens" }
 ]
 ==
 
