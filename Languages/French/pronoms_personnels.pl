@@ -7,8 +7,8 @@ Reconnaître les pronoms personnels
 ==
 
 text==
-Sélectionner tous les pronoms personnels apparaissant dans cet extrait de l'oeuvre 
-de Victor Hugo : *Les misérables*.
+Sélectionner tous les pronoms personnels apparaissant dans cet extrait des 
+paroles de la chanson *Toi + moi* de *Grégoire*.
 
 ---
 
