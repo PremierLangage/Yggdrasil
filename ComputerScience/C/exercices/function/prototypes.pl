@@ -31,6 +31,11 @@ match.nodes.append({"id": "s3", "content": "void foo(void);", "source": True})
 match.nodes.append({"id": "t3", "content": "Afficher la date du jour.", "target": True})
 expected.append({ "source": "s3", "target": "t3" })
 
+# calculer la somme de deux floattant
+match.nodes.append({"id": "s4", "content": "float foo(float a, float b);", "source": True})
+match.nodes.append({"id": "t4", "content": "Calculer la somme de deux floattants.", "target": True})
+expected.append({ "source": "s4", "target": "t4" })
+
 
 random.shuffle(match.nodes)
 ==
