@@ -45,9 +45,9 @@ for i, e in enumerate(sortlist.items):
         errors += 1
 
 if errors == 0:
-    grade = (100, 'Bravo, il se passe effectivement tout cela lors d\'une passe complête de <b>gcc</b>.')
+    grade = (100, '<span class="success-state">Bravo, il se passe effectivement tout cela lors d\'une passe complête de <b>gcc</b></span>.')
 else:
-    grade = (0, '%s étapes sont mal positionées.' % errors)
+    grade = (0, '<span class="error-state">%s étapes sont mal positionées.</span>' % errors)
 ==
 
 extracss==
