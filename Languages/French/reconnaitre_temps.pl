@@ -41,6 +41,13 @@ match.nodes.append({"id": "v4", "content": "vous verrez", "source": True,})
 match.nodes.append({"id": "t4", "content": "futur simple de l'indicatif", "target": True,})
 expected.append({ "source": "v4", "target": "t4" })
 
+match.nodes.append({"id": "v5", "content": "que vous eussiez vu", "source": True,})
+match.nodes.append({"id": "t5", "content": "Plus-que-parfait du subjonctif", "target": True,})
+expected.append({ "source": "v5", "target": "t5" })
+
+match.nodes.append({"id": "v6", "content": "vous eûtes vu", "source": True,})
+match.nodes.append({"id": "t6", "content": "passé antérieur de l'indicatif", "target": True,})
+expected.append({ "source": "v6", "target": "t6" })
 
 random.shuffle(match.nodes)
 ==
