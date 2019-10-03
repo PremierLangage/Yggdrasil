@@ -29,6 +29,10 @@ match.nodes.append({"id": "v1", "content": "vous voyez", "source": True,})
 match.nodes.append({"id": "t1", "content": "présent de l'indicatif", "target": True,})
 expected.append({ "source": "v1", "target": "t1" })
 
+match.nodes.append({"id": "v2", "content": "vous vîtes", "source": True,})
+match.nodes.append({"id": "t2", "content": "passé simple de l'indicatif", "target": True,})
+expected.append({ "source": "v2", "target": "t2" })
+
 random.shuffle(match.nodes)
 ==
 
