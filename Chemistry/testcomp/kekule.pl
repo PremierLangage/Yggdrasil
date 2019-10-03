@@ -2,7 +2,7 @@
 @ lib:/builder/before.py [builder.py]
 @ lib:/grader/evaluator.py [grader.py]
 
-title = Kekule
+title = Molecule editor
 
 before ==
 
