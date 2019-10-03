@@ -1,12 +1,11 @@
 extends = basic.pl
 
-title = TextInput
+title = Somme d'entiers
 
 before ==
 import random as rd
 a=rd.randint(10,20)
 b=rd.randint(10,20)
-sol=a+b
 ==
 
 text ==
@@ -22,8 +21,8 @@ form ==
 
 evaluator ==
 try:
-    n=int(input.value)
-    if n==sol:
+    ans=int(input.value)
+    if ans==a+b:
         score=100
         feedback=""
     else:
@@ -31,7 +30,7 @@ try:
         feedback="La solution est %d." % sol
 except:
     score=-1
-    feedback="Votre réponse n'est pas compréhensible."
+    feedback="Votre réponse n'est pas un nombre entier."
 ==
 
 
