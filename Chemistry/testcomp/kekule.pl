@@ -20,7 +20,7 @@ form ==
 
 <div id="composer" style="width:500px;height:500px" data-widget="Kekule.Editor.Composer" data-chem-obj="url(#molecule)"></div>
 <br>
-<input value="Get Formula" onclick="getMol()" type="button">
+<input value="Get JSON" onclick="getMol()" type="button">
 <div id="answer">Formule</div>
 
 ==
