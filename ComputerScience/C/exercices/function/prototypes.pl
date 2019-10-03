@@ -26,6 +26,11 @@ match.nodes.append({"id": "s2", "content": "float foo(int* tab, int size);", "so
 match.nodes.append({"id": "t2", "content": "Calculer une moyenne d'un tableau de notes.", "target": True})
 expected.append({ "source": "s2", "target": "t2" })
 
+# afficher la date du jour
+match.nodes.append({"id": "s3", "content": "void foo(void);", "source": True})
+match.nodes.append({"id": "t3", "content": "Afficher la date du jour.", "target": True})
+expected.append({ "source": "s3", "target": "t3" })
+
 
 random.shuffle(match.nodes)
 ==
