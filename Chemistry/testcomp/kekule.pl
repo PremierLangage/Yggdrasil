@@ -33,7 +33,10 @@ function getMol() {
     var mol = composer.exportObjs(Kekule.Molecule)[0];
     var formula = mol.calcFormula();
     var myDiv = document.getElementById("answer");
-    myDiv.innerHTML = formula.getText();
+    var jsonData = {};
+    mol.saveObj(jsonData, 'json');
+    //myDiv.innerHTML = formula.getText();
+    myDiv.innerHTML = jsonData;
 }
 
 </script>
@@ -41,3 +44,4 @@ function getMol() {
 evaluator ==
 grade=(100,"Bonne réponse")
 ==
+
