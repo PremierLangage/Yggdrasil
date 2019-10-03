@@ -8,7 +8,7 @@ Reconnaître les temps de conjugaison
 ==
 
 text==
-*Link each operation to the appropriate result.*
+Associez chaque forme conjugée du verbe **voir** avec son temps de conjugaison.
 ==
 
 # STEP 1
