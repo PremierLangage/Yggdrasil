@@ -99,7 +99,6 @@ else:
 
 extracss==
 <style>
-
 .exercise__instructions, .exercise__feedback {
     margin-bottom: 16px;
 }
