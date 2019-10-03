@@ -31,17 +31,17 @@ match.nodes = []
 expected = []
 
 # le carré d'un nombre entier
-match.nodes.append({"id": "s1", "content": "`int foo(int a);`", "source": True})
+match.nodes.append({"id": "s1", "content": "int foo(int a);", "source": True})
 match.nodes.append({"id": "t1", "content": "Calculer le carré d'un entier.", "target": True})
 expected.append({ "source": "s1", "target": "t1" })
 
 # la moyenne d'une liste de notes
-match.nodes.append({"id": "s2", "content": "`float foo(int* tab, int size);`", "source": True})
+match.nodes.append({"id": "s2", "content": "float foo(int* tab, int size);", "source": True})
 match.nodes.append({"id": "t2", "content": "Calculer une moyenne d'un tableau de notes.", "target": True})
 expected.append({ "source": "s2", "target": "t2" })
 
 # afficher la date du jour
-match.nodes.append({"id": "s3", "content": "`void foo(void);`", "source": True})
+match.nodes.append({"id": "s3", "content": "```c void foo(void);```", "source": True})
 match.nodes.append({"id": "t3", "content": "Afficher la date du jour.", "target": True})
 expected.append({ "source": "s3", "target": "t3" })
 
