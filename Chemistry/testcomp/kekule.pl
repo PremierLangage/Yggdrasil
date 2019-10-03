@@ -32,7 +32,7 @@ function getMol() {
     var mol = getCurrMol();
     var formula = mol.calcFormula();
     var myDiv = document.getElementById("answer");
-    myDiv.innerHTML = JSON.stringify(formula);
+    myDiv.innerHTML = formula.getText();
 }
 
 </script>
