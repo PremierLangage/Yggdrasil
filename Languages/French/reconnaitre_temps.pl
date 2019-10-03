@@ -35,7 +35,7 @@ expected.append({ "source": "v2", "target": "t2" })
 
 match.nodes.append({"id": "v3", "content": "vous auriez vu", "source": True,})
 match.nodes.append({"id": "t3", "content": "passé du conditionnel", "target": True,})
-expected.append({ "source": "v3", "target": "t2" })
+expected.append({ "source": "v3", "target": "t3" })
 
 match.nodes.append({"id": "v4", "content": "vous verrez", "source": True,})
 match.nodes.append({"id": "t4", "content": "futur simple de l'indicatif", "target": True,})
