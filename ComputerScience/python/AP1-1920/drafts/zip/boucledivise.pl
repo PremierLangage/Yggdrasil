@@ -9,6 +9,7 @@ text==
 
 Ecrire un programme qui lit un  entier  strictement positif et affiche,un par ligne, chacun de ses diviseurs.
 Le programme affiche ensuite le nombre de diviseurs.
+
 Si l'entier est négatif, on ne fait rien
 .
 ==
