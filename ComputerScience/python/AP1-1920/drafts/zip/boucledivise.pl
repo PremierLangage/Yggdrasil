@@ -7,7 +7,8 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 title = Liste des diviseurs
 text==  
 
-Ecrire un programme qui lit un  entier  strictement positif et affiche,un par ligne, chacun de ses diviseurs.
+Ecrire un programme qui lit un  entier  strictement positif et affiche,
+ un par ligne, chacun de ses diviseurs en ordre croissant.
 Le programme affiche ensuite le nombre de diviseurs.
 
 Si l'entier est négatif, on ne fait rien
