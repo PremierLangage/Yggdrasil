@@ -11,23 +11,31 @@ match =: MatchList
 # match.debug % true
 
 # STEP 2
-before==
+before== #|python|
 import random
 match.nodes = []
 expected = []
+
+# le carré d'un nombre entier
 match.nodes.append({"id": "s1", "content": "int foo(int a);", "source": True})
-match.nodes.append({"id": "t1", "content": "Calculer le carré d'un entier", "target": True})
+match.nodes.append({"id": "t1", "content": "Calculer le carré d'un entier.", "target": True})
 expected.append({ "source": "s1", "target": "t1" })
+
+# la moyenne d'une liste de notes
+match.nodes.append({"id": "s1", "content": "float foo(int* tab, int size);", "source": True})
+match.nodes.append({"id": "t1", "content": "Calculer une moyenne d'un tableau de notes.", "target": True})
+expected.append({ "source": "s1", "target": "t1" })
+
 
 random.shuffle(match.nodes)
 ==
 
 title==
-Match List Component
+Quel prototype pour quelle fonctionnalité ?
 ==
 
 text==
-*Link each operation to the appropriate result.*
+Tentez d'associer, pour chaque prototype abstrait de fonction C à gauche, une fonctionnalité décrite à droite.
 ==
 
 # STEP 3
@@ -55,8 +63,8 @@ for e in match.links:
         e['css'] = 'success-state  anim-flip'
 
 if error == 0:
-    grade = (100, 'Good answser')
+    grade = (100, 'Bravo, ça devrait en effet bien fonctionner ainsi!')
 else:
-    grade = (0, 'Bad answer, you made %d mistakes' % error)
+    grade = (0, 'Tout n\'est pas correct, il y a %d mauvaises associations.' % error)
 ==
 
