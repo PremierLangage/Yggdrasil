@@ -2,6 +2,20 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+title==
+Quel prototype pour quelle fonctionnalité ?
+==
+
+author==
+Nicolas Borie
+==
+
+text==
+Tentez d'associer, pour chaque prototype abstrait de fonction C à gauche, une des fonctionnalité 
+décrite sur la droite.
+
+==
+
 # STEP 1
 match =: MatchList
 
@@ -47,18 +61,6 @@ match.nodes.append({"id": "t6", "content": "Récupérer un entier donné au clav
 expected.append({ "source": "s6", "target": "t6" })
 
 random.shuffle(match.nodes)
-==
-
-title==
-Quel prototype pour quelle fonctionnalité ?
-==
-
-text==
-Tentez d'associer, pour chaque prototype abstrait de fonction C à gauche, une des fonctionnalité 
-décrite sur la droite.
-
-
-
 ==
 
 # STEP 3
