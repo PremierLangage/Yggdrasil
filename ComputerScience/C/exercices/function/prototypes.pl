@@ -47,6 +47,7 @@ Quel prototype pour quelle fonctionnalité ?
 text==
 Tentez d'associer, pour chaque prototype abstrait de fonction C à gauche, une des fonctionnalité 
 décrite sur la droite.
+<br />
 ==
 
 # STEP 3
