@@ -36,7 +36,7 @@ function getMol() {
     var jsonData = {};
     mol.saveObj(jsonData, 'json');
     //myDiv.innerHTML = formula.getText();
-    myDiv.innerHTML = jsonData;
+    myDiv.innerHTML = JSON.stringify((jsonData);
 }
 
 </script>
