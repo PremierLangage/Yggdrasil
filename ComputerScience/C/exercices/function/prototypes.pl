@@ -56,7 +56,7 @@ match.nodes.append({"id": "t5", "content": "Afficher un double en notation scien
 expected.append({ "source": "s5", "target": "t5" })
 
 # Récupérer un entier donné au clavier par l'utilisateur
-match.nodes.append({"id": "s6", "content": "<font=\"Courier New\">int foo(void);</font>", "source": True})
+match.nodes.append({"id": "s6", "content": "int foo(void);", "source": True})
 match.nodes.append({"id": "t6", "content": "Récupérer un entier donné au clavier par l'utilisateur.", "target": True})
 expected.append({ "source": "s6", "target": "t6" })
 
