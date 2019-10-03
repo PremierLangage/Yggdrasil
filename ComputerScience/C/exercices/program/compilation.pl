@@ -4,6 +4,7 @@ builder =@ /builder/before.py
 
 # FORM
 title = Étape durant la compilation avec **gcc**
+author = Nicolas Borie
 
 text== 
 Mettre en ordre toutes les étapes transformant des sources en langage C 
