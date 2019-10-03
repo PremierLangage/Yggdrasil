@@ -25,6 +25,7 @@ try:
     n=int(input.value)
     if n==sol:
         score=100
+        feedback=""
     else:
         score=0
         feedback="La solution est %d." % sol
@@ -32,5 +33,6 @@ except:
     score=-1
     feedback="Votre réponse n'est pas compréhensible."
 ==
+
 
 
