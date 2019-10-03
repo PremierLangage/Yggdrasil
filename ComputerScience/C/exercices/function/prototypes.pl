@@ -22,9 +22,9 @@ match.nodes.append({"id": "t1", "content": "Calculer le carré d'un entier.", "t
 expected.append({ "source": "s1", "target": "t1" })
 
 # la moyenne d'une liste de notes
-match.nodes.append({"id": "s1", "content": "float foo(int* tab, int size);", "source": True})
-match.nodes.append({"id": "t1", "content": "Calculer une moyenne d'un tableau de notes.", "target": True})
-expected.append({ "source": "s1", "target": "t1" })
+match.nodes.append({"id": "s2", "content": "float foo(int* tab, int size);", "source": True})
+match.nodes.append({"id": "t2", "content": "Calculer une moyenne d'un tableau de notes.", "target": True})
+expected.append({ "source": "s2", "target": "t2" })
 
 
 random.shuffle(match.nodes)
