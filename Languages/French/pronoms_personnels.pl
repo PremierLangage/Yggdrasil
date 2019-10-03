@@ -17,7 +17,7 @@ paroles de la chanson *Toi + moi* de *Grégoire*.
 
 selectable =: Text
 selectable.text== 
-Toi plus moi, plus eux plus tous ceux qui le veulent. <br />
+Toi plus moi, plus eux plus tous ceux qui le veulent.
 Plus lui plus elle plus tous ceux qui sont seuls. 
 Allez venez et entrez dans la danse. 
 Allez venez, laissez faire l'insouciance. 
