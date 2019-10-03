@@ -52,6 +52,7 @@ if len(indices) == 0:
     msg = 'Bravo, vous avez trouvé tous les pronoms personnels !'
 else:
     score = 0
+    msg = 'Il y a {} erreurs...'.format(len(indices))
 grade = (score, msg)
 ==
 
