@@ -6,7 +6,7 @@ builder =@ /builder/before.py
 title = Étape durant la compilation avec **gcc**
 
 text== 
-Remettre en ordre toutes les étapes transformant les sources d'un programme C 
+Mettre en ordre toutes les étapes transformant des sources en langage C 
 en un éxécutable fonctionnel à l'aide du compilateur **gcc**.
 ==
 
