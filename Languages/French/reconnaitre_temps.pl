@@ -25,9 +25,9 @@ import random
 match.nodes = []
 expected = []
 
-match.nodes.append({"id": v1, "content": "vous voyez", "source": True,})
-match.nodes.append({"id": t1, "content": "présent de l'indicatif", "target": True,})
-expected.append({ "source": v1, "target": t1 })
+match.nodes.append({"id": "v1", "content": "vous voyez", "source": True,})
+match.nodes.append({"id": "t1", "content": "présent de l'indicatif", "target": True,})
+expected.append({ "source": "v1", "target": "t1" })
 
 random.shuffle(match.nodes)
 ==
