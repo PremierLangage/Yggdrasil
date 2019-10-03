@@ -13,7 +13,8 @@ text ==
 Calculer {{a}} + {{b}}.
 ==
 
-input =: TextInput
+input =: Input
+input.type = text
 
 form ==
 {{ input | component }}
