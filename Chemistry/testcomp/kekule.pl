@@ -19,6 +19,7 @@ form ==
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/kekule/dist/themes/default/kekule.css" />
 
 <div id="composer" style="width:500px;height:500px" data-widget="Kekule.Editor.Composer" data-chem-obj="url(#molecule)"></div>
+<br>
 <input value="Get Formula" onclick="getMol()" type="button">
 <div id="answer">Formule</div>
 
