@@ -99,6 +99,11 @@ else:
 
 extracss==
 <styles>
+
+.exercise__instructions, .exercise__feedback {
+    margin-bottom: 16px;
+}
+
 .match-list-component svg path {
     stroke-width: 4px;
 }
