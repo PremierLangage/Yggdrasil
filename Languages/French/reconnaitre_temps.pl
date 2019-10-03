@@ -33,6 +33,15 @@ match.nodes.append({"id": "v2", "content": "vous vîtes", "source": True,})
 match.nodes.append({"id": "t2", "content": "passé simple de l'indicatif", "target": True,})
 expected.append({ "source": "v2", "target": "t2" })
 
+match.nodes.append({"id": "v3", "content": "vous auriez vu", "source": True,})
+match.nodes.append({"id": "t3", "content": "passé du conditionnel", "target": True,})
+expected.append({ "source": "v3", "target": "t2" })
+
+match.nodes.append({"id": "v4", "content": "vous verrez", "source": True,})
+match.nodes.append({"id": "t4", "content": "futur simple de l'indicatif", "target": True,})
+expected.append({ "source": "v4", "target": "t4" })
+
+
 random.shuffle(match.nodes)
 ==
 
