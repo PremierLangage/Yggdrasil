@@ -9,9 +9,13 @@ title = puissance supérieure
 
 text==  
 
-Ecrire une fontion puis_sup qui reçoit deux entiers #n# et #base#, avec base>1, 
-et renvoie la plus petite puissance de #base# supérieure à #n#. 
+Ecrire une fontion puis_sup qui reçoit deux entiers
+
+ n et base, avec base>1, 
+et renvoie la plus petite puissance de base supérieure à n.
+
 puis_sup(987,2) renvoie 1024. 
+
 Si base n'est pas strictement que 1 la fonction renvoie None.
 ==
 
