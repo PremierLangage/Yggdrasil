@@ -16,7 +16,6 @@ Si base n'est pas strictement que 1 la fonction renvoie None
 
 .
 ==
-s
 
 soluce==
 def puis_sup((n,p):
@@ -33,4 +32,8 @@ a=int(input())
 b=int(input())
 print(puis_sup(a,b)
 ==
-mplsoluce1
+mplsoluce1==
+classique
+56
+2
+==
