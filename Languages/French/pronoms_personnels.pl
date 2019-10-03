@@ -38,20 +38,18 @@ form==
 
 evaluator==
 score = 100
-pronoms = ['elle']
-indices = []
-errors = []
+indices = [4]
 for e in selectable.selections:
     e['css'] = "error-state"
-    if e['selector'] in pronoms:
+    if e['index'] in indices:
         e['css'] = "success-state"
-        indices.append(e['index'])
+        indices = [i for i in indices if i != e['index']]
     else:
-        errors.append(e['css'])
+        indices.append(e['css'])
 
-if len(indices) == 1 and len(errors) == 0:
+if len(indices) == 0:
     score = 100
-    msg = 'Bravo, vous avez trouvé tous les pronoms personnels.'
+    msg = 'Bonne réponse'
 else:
     score = 0
     msg = 'Mauvaise réponse'
