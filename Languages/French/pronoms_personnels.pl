@@ -2,6 +2,16 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+title==
+Reconnaître les pronoms personnels
+==
+
+text==
+Sélectionner tous les pronoms personnels apparaissant dans cet extrait de l'oeuvre 
+de Victor Hugo : *Les misérables*.
+==
+
+
 selectable =: Text
 selectable.text== 
 Cosette était laide. Heureuse, elle eût peut-être été jolie. Nous avons déjà esquissé cette 
@@ -19,13 +29,6 @@ selectable.selectable % true
 before==
 ==
 
-title==
-Text Component
-==
-
-text==
-Select the words containing **o**
-==
 
 form==
 {{ selectable|component}}
