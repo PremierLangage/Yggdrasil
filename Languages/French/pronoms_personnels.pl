@@ -17,15 +17,14 @@ paroles de la chanson *Toi + moi* de *Grégoire*.
 
 selectable =: Text
 selectable.text== 
-Cosette était laide. Heureuse, elle eût peut-être été jolie. Nous avons déjà esquissé cette 
-petite figure sombre. Cosette était maigre et blême. Elle avait près de huit ans, on lui en 
-eût donné à peine six. Ses grands yeux enfoncés dans une sorte d’ombre profonde étaient 
-presque éteints à force d’avoir pleuré. Les coins de sa bouche avaient cette courbe de 
-l’angoisse habituelle, qu’on observe chez les condamnés et chez les malades désespérés. Ses 
-mains étaient, comme sa mère l’avait deviné, « perdues d’engelures ». Le feu qui l’éclairait 
-en ce moment faisait saillir les angles de ses os et rendait sa maigreur affreusement visible. 
-Comme elle grelotait toujours, elle avait pris l’habitude de serrer ses deux genoux l’un 
-contre l’autre.
+Toi plus moi, plus eux plus tous ceux qui le veulent,
+Plus lui plus elle plus tous ceux qui sont seuls
+Allez venez et entrez dans la danse
+Allez venez, laissez faire l'insouciance
+A deux a mille je sais qu'on est capable
+Tout est possible tout est réalisable
+On peut s'enfuir bien plus haut que nos rêves
+On peut partir bien plus loin que la grève
 ==
 selectable.selectable % true
 
