@@ -45,7 +45,9 @@ Quel prototype pour quelle fonctionnalité ?
 ==
 
 text==
-Tentez d'associer, pour chaque prototype abstrait de fonction C à gauche, une fonctionnalité décrite à droite.
+Tentez d'associer, pour chaque prototype abstrait de fonction C à gauche, une des fonctionnalité 
+décrite sur la droite.
+
 ==
 
 # STEP 3
