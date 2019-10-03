@@ -37,7 +37,7 @@ form==
 
 evaluator==
 score = 100
-indices = [0, 2, 4, 11, 13, 36, 39, 48, 50, 57]
+indices = [0, 2, 4, 11, 13, 36, 39, 48, 50, 58]
 for e in selectable.selections:
     e['css'] = "error-state"
     if e['index'] in indices:
