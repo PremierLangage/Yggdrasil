@@ -17,7 +17,7 @@ form = {{ sortlist|component }}
 sortlist =: SortList
 sortlist.items %= #|json|
 [
-    { "id": "1", "content": "**Préprocession**" },
+    { "id": "1", "content": "<b>Préprocession</b>" },
     { "id": "2", "content": "Analyse lexicale" },
     { "id": "3", "content": "Analyse syntaxique" },
     { "id": "4", "content": "Analyse sémantique" },
