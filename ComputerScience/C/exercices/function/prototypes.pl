@@ -36,6 +36,11 @@ match.nodes.append({"id": "s4", "content": "float foo(float a, float b);", "sour
 match.nodes.append({"id": "t4", "content": "Calculer la somme de deux floattants.", "target": True})
 expected.append({ "source": "s4", "target": "t4" })
 
+# Afficher un double en notation scientifique
+match.nodes.append({"id": "s5", "content": "void foo(double a);", "source": True})
+match.nodes.append({"id": "t5", "content": "Afficher un double en notation scientifique.", "target": True})
+expected.append({ "source": "s5", "target": "t5" })
+
 
 random.shuffle(match.nodes)
 ==
