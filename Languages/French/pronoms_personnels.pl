@@ -49,10 +49,13 @@ for e in selectable.selections:
 
 if len(indices) == 0:
     score = 100
-    msg = 'Bravo, vous avez trouvé tous les pronoms personnels !'
+    msg = '<span class="success-state">Bravo, vous avez trouvé tous les pronoms personnels !</span>'
 else:
     score = 0
-    msg = 'Il y a {} erreurs...'.format(len(indices))
+    if len(indices) > 1:
+        msg = '<span class="error-state">Il y a {} erreurs...</spam>'.format(len(indices))
+    else:
+        msg = '<span class="error-state">Il y a 1 seule erreur...</spam>'
 grade = (score, msg)
 ==
 
