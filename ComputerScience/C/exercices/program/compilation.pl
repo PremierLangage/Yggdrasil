@@ -3,7 +3,7 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 # FORM
-title = Étapes durant la compilation avec **gcc**
+title = Étapes durant la compilation avec <b>gcc</b>
 author = Nicolas Borie
 
 text== 
@@ -45,7 +45,7 @@ for i, e in enumerate(sortlist.items):
         errors += 1
 
 if errors == 0:
-    grade = (100, 'Bravo, il se passe effectivement tout cela lors d\'une passe complête de **gcc**.')
+    grade = (100, 'Bravo, il se passe effectivement tout cela lors d\'une passe complête de <b>gcc</b>.')
 else:
     grade = (0, '%s étapes sont mal positionées.' % errors)
 ==
