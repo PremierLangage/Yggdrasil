@@ -16,7 +16,7 @@ Si base n'est pas strictement que 1 la fonction renvoie None
 
 .
 ==
-
+s
 
 soluce==
 def puis_sup((n,p):
