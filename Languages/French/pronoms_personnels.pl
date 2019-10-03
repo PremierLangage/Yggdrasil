@@ -9,6 +9,9 @@ Reconnaître les pronoms personnels
 text==
 Sélectionner tous les pronoms personnels apparaissant dans cet extrait de l'oeuvre 
 de Victor Hugo : *Les misérables*.
+
+---
+
 ==
 
 
@@ -28,7 +31,6 @@ selectable.selectable % true
 
 before==
 ==
-
 
 form==
 {{ selectable|component}}
