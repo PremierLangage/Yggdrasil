@@ -95,3 +95,13 @@ else:
     grade = (0, feedback)
 ==
 
+
+
+extracss==
+<styles>
+.match-list-component svg path {
+    stroke-width: 4px;
+}
+</styles>
+
+==
