@@ -86,8 +86,10 @@ for e in match.links:
         e['css'] = 'success-state  anim-flip'
 
 if error == 0:
-    grade = (100, 'Bravo, ça devrait en effet bien fonctionner ainsi!')
+    feedback = 'Bravo, ça devrait en effet bien fonctionner ainsi!'
+    grade = (100, feedback)
 else:
-    grade = (0, 'Tout n\'est pas correct, il y a %d mauvaises associations.' % error)
+    feedback = 'Tout n\'est pas correct, il y a %d mauvaises associations.' % error
+    grade = (0, feedback)
 ==
 
