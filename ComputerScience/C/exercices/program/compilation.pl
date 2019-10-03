@@ -46,8 +46,8 @@ for i, e in enumerate(sortlist.items):
         errors += 1
 
 if errors == 0:
-    grade = (100, 'GOOOOOOOD')
+    grade = (100, 'Bravo, il se passe effectivement tout cela lors d\'une passe complête de **gcc**.')
 else:
-    grade = (0, '%s wrong answers' % errors)
+    grade = (0, '%s étapes sont mal positionées.' % errors)
 ==
 
