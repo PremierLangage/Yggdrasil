@@ -49,3 +49,10 @@ else:
     grade = (0, '%s étapes sont mal positionées.' % errors)
 ==
 
+extracss==
+<style>
+.exercise__instructions, .exercise__feedback {
+    margin-bottom: 16px;
+}
+</style>
+==
