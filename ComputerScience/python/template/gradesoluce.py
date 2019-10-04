@@ -132,7 +132,7 @@ def runsOutputtests(tests, feedback, studentfilename=None, flags=0x1):
     for name, input_str, output_str in tests:
         ok=   unitTestWithOutput(name, studentfilename, output_str, input_str, feedback)
         if not ok and flags:
-            break  # arret sur le premier tests invalide 
+            return 0  # arret sur le premier tests invalide 
         if ok:
             res += 1
             
