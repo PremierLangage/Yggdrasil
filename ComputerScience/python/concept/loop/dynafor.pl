@@ -2,6 +2,8 @@
 
 extends=template.pl
 
+
+seed%17
 difficultymax=3
 taboo=while
 needed=for
