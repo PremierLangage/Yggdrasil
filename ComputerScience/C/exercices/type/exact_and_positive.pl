@@ -35,6 +35,7 @@ Caractéristiques des types de bases C
 
 text==
 Reliez les types C à gauche avec les caractéristiques de type à droite. Attention, 
+un même type peut avoir plusieurs caractéristiques.
 ==
 
 # STEP 3
