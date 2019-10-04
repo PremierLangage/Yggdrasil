@@ -21,12 +21,22 @@ l'équipe.
 
 ==
 
+# Faire une boucle croissante 
 @ /ComputerScience/python/AP1-1920/drafts/zip/bouclecroissant.pl
+
+# Faire une boucle diviser 
 @ /ComputerScience/python/AP1-1920/drafts/zip/boucledivise.pl
+
+# Faire une boucle avec des if
 @ /ComputerScience/python/AP1-1920/drafts/zip/boucleif.pl
+
+# Faire une boucle avec des chaines de caractères 
 @ /ComputerScience/python/AP1-1920/drafts/zip/bouclestr.pl
 
 
+
+@ /ComputerScience/python/concept/loop/dynafor.pl
+@ /ComputerScience/python/concept/loop/dynawhile.pl
 
 
 
