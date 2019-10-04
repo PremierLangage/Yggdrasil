@@ -42,8 +42,8 @@ l'équipe.
 
 
 # Validation de l'identification des noms de variables 
-@ Nommage_variable.pl # avec alea
-
+# @ Nommage_variable.pl # celui la est pourri
+@ /template/checkbox_example.pl 
 #  print 
 @ rectanglefixe.pl
 
@@ -66,6 +66,7 @@ l'équipe.
 @ priority.pl
 @ bascule.pl
 @ trinome.pl
+
 
 
 
