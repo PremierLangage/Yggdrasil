@@ -12,19 +12,9 @@ valeur pointée par son cube (élevé à la puissance 3).
 
 ==
 
-
 editor =: CodeEditor
 editor.theme = dark
 editor.language = python
-
-
-before==
-==
-
-title = Code Editor Component
-
-text==
-==
 
 form==
 {{ editor|component }}
