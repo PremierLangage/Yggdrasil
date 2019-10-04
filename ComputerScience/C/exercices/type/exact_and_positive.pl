@@ -28,6 +28,9 @@ match.nodes.append({"id": "d", "content": "double", "source": True,})
 match.nodes.append({"id": "dou", "content": "type flottant double présision", "target": True,})
 expected.append({ "source": "d", "target": "dou" })
 
+match.nodes.append({"id": "f", "content": "float", "source": True,})
+match.nodes.append({"id": "flo", "content": "type flottant simple présision", "target": True,})
+expected.append({ "source": "f", "target": "flo" })
 
 random.shuffle(match.nodes)
 ==
