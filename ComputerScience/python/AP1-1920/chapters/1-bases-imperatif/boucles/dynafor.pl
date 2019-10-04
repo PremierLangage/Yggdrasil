@@ -1,6 +1,6 @@
 # OCE : test 12/09/2019 OK
 
-extends=../../templates/looptemplate.pl
+extends=../../../templates/looptemplate.pl
 
 
 seed % 3
