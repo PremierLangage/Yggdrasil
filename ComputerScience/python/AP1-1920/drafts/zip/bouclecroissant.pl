@@ -5,15 +5,17 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
-title =suite croissante
+title = Saisie d'une suite croissante
 
 
 text==  
 
 Ecrire un programme qui lit une suite de valeurs tant quelles forment une suite strictement croissante. 
-Lorsque la suite n'est plus croissante, la saisie s'arrête entiers et 
+
+Lorsque la suite n'est plus croissante, la saisie s'arrête et 
 le programme affiche la longueur de la suite croissante.
 ==
+
 code==
 
 
@@ -71,3 +73,11 @@ Départ négatif
 2
 ==
 
+
+mplsoluce3==
+Des chaines
+annanas
+bannana
+papel
+mango
+==
