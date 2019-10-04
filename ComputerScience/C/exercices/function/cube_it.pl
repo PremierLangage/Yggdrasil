@@ -12,14 +12,6 @@ valeur pointée par son cube (élevé à la puissance 3).
 
 ==
 
-editor =: CodeEditor
-editor.theme = dark
-editor.language = python
-
-form==
-{{ editor|component }}
-==
-
 editor.code==
 ... cube_it(...){
   ...
