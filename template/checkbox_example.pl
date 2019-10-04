@@ -23,9 +23,11 @@ nchoices % 5
 
 nright % [2,3]
 
+title = Nommage de Variables
 text ==
 Sélectionner les noms de variables valides en Python dans la liste suivante.
 ==
+
 
 
 
