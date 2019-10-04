@@ -19,12 +19,15 @@ expected = []
 match.nodes.append({"id": "i", "content": "int", "source": True,})
 match.nodes.append({"id": "uli", "content": "unsigned long int", "source": True,})
 
-match.nodes.append({"id": "pos", "content": "type positif", "target": True,})
+match.nodes.append({"id": "d", "content": "double", "source": True,})
+
+match.nodes.append({"id": "flo", "content": "type flottant", "target": True,})
 match.nodes.append({"id": "int", "content": "type entier", "target": True,})
+
+expected.append({ "source": "d", "target": "flo" })
 
 expected.append({ "source": "i", "target": "int" })
 expected.append({ "source": "uli", "target": "int" })
-expected.append({ "source": "uli", "target": "pos" })
 
 random.shuffle(match.nodes)
 ==
