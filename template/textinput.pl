@@ -1,7 +1,6 @@
-
 @ /utils/sandboxio.py
-@ /builder/before2.py [builder.py]
-@ /grader/evaluator2.py [grader.py]
+@ /builder/before.py [builder.py]
+@ /grader/evaluator.py [grader.py]
 
 title = Somme d'entiers
 
@@ -35,6 +34,3 @@ except:
     score=-1
     feedback="Votre réponse n'est pas un nombre entier."
 ==
-
-
-
