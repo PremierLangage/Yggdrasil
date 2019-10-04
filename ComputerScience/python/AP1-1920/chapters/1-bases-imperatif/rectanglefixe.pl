@@ -2,7 +2,7 @@
 author=zip
 
 # Heritage d'un type d'exercice 
-extends=/ComputerScience/python/template/plsoluce.pl
+extends=/ComputerScience/python/template/soluce.pl
 
 title = Rectangle fixe
 
