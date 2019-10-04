@@ -33,9 +33,10 @@ l'équipe.
 # Faire une boucle avec des chaines de caractères 
 @ /ComputerScience/python/AP1-1920/drafts/zip/bouclestr.pl
 
-
-
+# Exercice avec des boucles for 
 @ /ComputerScience/python/concept/loop/dynafor.pl
+
+# Exercice avec des boucles while
 @ /ComputerScience/python/concept/loop/dynawhile.pl
 
 
