@@ -6,11 +6,13 @@ difficultymax=3
 taboo=for
 needed=while
 
-title=Exercice Boucle while - difficulté {{difficulty}}
+title=Boucle while
+
 
 plsoluce==
 Exo Boucle while |
 ==
+
 
 
 
