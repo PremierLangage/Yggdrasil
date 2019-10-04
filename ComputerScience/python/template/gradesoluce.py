@@ -113,7 +113,7 @@ def runsolucetests(tests, feedback, studentfilename=None, solucefilename=None, f
         ok =  unitTestWithSoluce(name, studentfilename, solucefilename, input_str, feedback)
         if not ok and flags:
            # FIXME break  # arret sur le premier tests invalide 
-           pass
+           break
         if ok:
             res += 1
     
@@ -144,6 +144,7 @@ if __name__=="__main__":
    fb=feedback2.FeedBack()
    runsolucetests(lestest,fb)
    print(fb.render())
+
 
 
 
