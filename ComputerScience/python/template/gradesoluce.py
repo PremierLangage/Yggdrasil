@@ -113,7 +113,7 @@ def runsolucetests(tests, feedback, studentfilename=None, solucefilename=None, f
         ok =  unitTestWithSoluce(name, studentfilename, solucefilename, input_str, feedback)
         if not ok and flags:
            # FIXME break  # arret sur le premier tests invalide 
-           break
+           return 0
         if ok:
             res += 1
     
