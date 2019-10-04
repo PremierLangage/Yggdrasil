@@ -181,9 +181,15 @@ if __name__ == "__main__":
     input_json = sys.argv[1]
     output_json = sys.argv[2]
     
+
+
+
     with open(input_json, "r") as f:
         dic = json.load(f)
-    
+
+    if "seed" in dic:
+        seed=random.seed(int(dic['seed']))
+
     if "difficultymax" not in dic:
         print("Ajouter la difficulté maximum de la forme difficultymax=n dans le fichier pl", file = sys.stderr)
         sys.exit(1)
@@ -228,5 +234,6 @@ if __name__ == "__main__":
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
     sys.exit(0)
+
 
 
