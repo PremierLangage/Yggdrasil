@@ -1,15 +1,33 @@
 # Copyright 2017 Nicolas Borie <nicolas.borie@u-pem.fr>
 
 author=Dominique Revuz
-title= Passe le moi au Cube
+title=Mettre au cube une valeur pointée
 tag=function|pointer
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
 Écrire une function **cube_it** qui prend l'adresse d'un entier et remplace la 
-valeur pointée par son cube.
+valeur pointée par son cube (élevé à la puissance 3).
 
+==
+
+
+editor =: CodeEditor
+editor.theme = dark
+editor.language = python
+
+
+before==
+==
+
+title = Code Editor Component
+
+text==
+==
+
+form==
+{{ editor|component }}
 ==
 
 editor.code==
@@ -17,6 +35,7 @@ editor.code==
   ...
 }
 ==
+
 
 solution==
 
@@ -51,5 +70,6 @@ tests==
  ["Aléatoire", str(random.randint(1, 33)), ""]]
 
 ==
+
 
 
