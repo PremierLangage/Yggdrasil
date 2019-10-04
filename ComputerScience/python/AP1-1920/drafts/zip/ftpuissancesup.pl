@@ -32,10 +32,11 @@ def puis_sup((n,p):
     return puis
 a=int(input())    
 b=int(input())
-print(puis_sup(a,b)
+print(puis_sup(a,b))
 ==
 mplsoluce1==
 classique
 56
 2
 ==
+
