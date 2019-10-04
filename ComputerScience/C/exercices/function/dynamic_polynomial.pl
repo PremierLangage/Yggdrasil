@@ -87,8 +87,10 @@ tests==
 [["Basique", "0 0 0", ""],
 ["Aléatoire", " ".join([str(random.randint(-10, 10)) for i in range(3)]), ""],
 ["Aléatoire", " ".join([str(random.randint(-10, 10)) for i in range(3)]), ""],
+["Aléatoire", " ".join([str(random.randint(-10, 10)) for i in range(3)]), ""],
 ["Aléatoire", " ".join([str(random.randint(-10, 10)) for i in range(3)]), ""]]
 
 ==
+
 
 
