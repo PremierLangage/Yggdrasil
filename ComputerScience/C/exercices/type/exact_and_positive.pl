@@ -66,9 +66,9 @@ for e in match.links:
         e['css'] = 'success-state  anim-flip'
 
 if error == 0:
-    grade = (100, 'Good answser')
+    grade = (100, '<span class="success-state">Bravo les types C sont bien reliés.</span>')
 else:
-    grade = (0, 'Bad answer, you made %d mistakes' % error)
+    grade = (0, '<span class="error-state">Il y a %d erreurs.</span>' % error)
 ==
 
 extracss==
