@@ -9,9 +9,9 @@ nbechec%0
 
 before== #|python|
 import random
-essai = 4
-N = 4
-boolval = ["True","False","not True","not False","0",'"toto"']
+essai = 1
+N = 3
+boolval = ["True","False","not True","not False"]
 op1 = [random.choice(boolval) for n in range(N)]
 op2 = [random.choice(boolval) for n in range(N)]
 op3 = [random.choice(boolval) for n in range(N)]
@@ -82,6 +82,7 @@ Nombre d'essais : {{essai}}
 {% endfor %}
 </ul>
 ==
+
 
 
 
