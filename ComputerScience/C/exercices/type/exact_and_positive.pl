@@ -30,11 +30,11 @@ random.shuffle(match.nodes)
 ==
 
 title==
-Match List Component
+Caractéristiques des types de bases C
 ==
 
 text==
-*Link each operation to the appropriate result.*
+Reliez les types C à gauche avec les caractéristiques de type à droite. Attention, 
 ==
 
 # STEP 3
