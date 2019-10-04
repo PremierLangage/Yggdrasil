@@ -23,8 +23,8 @@ code==
 # lecture au clavier, affectation
 lettre=input()
 # Textes a utiliser pour faire l'affichage 
-# ?? apparait dans abcxyz
-# ?? n'apparait pas dans abcxyz
+# ?? apparait dans {{MOT}}
+# ?? n'apparait pas dans {{MOT}}
 
 
 ==
@@ -58,6 +58,7 @@ Test 2 |i
 Test 3 |n
 Test 4 |+
 ==
+
 
 
 
