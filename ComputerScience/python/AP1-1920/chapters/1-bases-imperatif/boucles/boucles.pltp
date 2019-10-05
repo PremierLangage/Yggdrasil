@@ -1,0 +1,51 @@
+
+title= Feuille d'exercice sur les boucles 
+
+introduction==
+
+Bonjour,
+ceci est votre deuxième feuille de TP à faire en autonomie.
+
+Tout les exercices doivent être verts une fois que vous avez fini !
+
+Certains exercices peuvent être fait plusieurs fois, si vous en avez besoin c'est une bonne idée de les faire plusieurs fois.
+
+Il sont indiqués avec le mot répétable dans le titre cela veux dire qu'une fois que vous avez fait l'exercice correctement vous pouvez demandr que l'on relance les dés.
+Cela produira un "nouvel" exercice avec des conditions légèrement modifiées.
+
+
+A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussit vous passez au suivant,
+ mais vous pouvez naviger avec le menu de gauche.
+
+Si un exercice vous semble faux vous pouvez demander de l'aide sur le forum d'entraide et passer à l'exercice suivant. 
+
+    Votre cours est toujours votre première source d'information ....
+
+l'équipe.
+
+==
+
+# Faire une boucle croissante 
+@ /ComputerScience/python/AP1-1920/drafts/zip/bouclecroissant.pl
+
+# Faire une boucle diviser 
+@ /ComputerScience/python/AP1-1920/drafts/zip/boucledivise.pl
+
+# Faire une boucle avec des if
+@ /ComputerScience/python/AP1-1920/drafts/zip/boucleif.pl
+
+# Faire une boucle avec des chaines de caractères 
+@ /ComputerScience/python/AP1-1920/drafts/zip/bouclestr.pl
+
+# Exercice avec des boucles for 
+@ /ComputerScience/python/concept/loop/dynafor.pl
+
+# Exercice avec des boucles while
+@ /ComputerScience/python/concept/loop/dynawhile.pl
+
+
+
+
+
+
+
