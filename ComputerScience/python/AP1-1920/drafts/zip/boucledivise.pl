@@ -26,11 +26,13 @@ if n>=1:
     print(nbdiv)
 ==
 plsoluce==
-court|2 
-tres court |0
-tres tres court |-42
+Peu nombreux | 2 
+Invalide | 0
+Invalide aussi |-42
 long | 114593
+Nombreux | 510510 
 ==
+
 
 
 
