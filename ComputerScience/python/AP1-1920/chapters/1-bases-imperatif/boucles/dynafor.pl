@@ -6,7 +6,7 @@ extends=../../../templates/looptemplate.pl
 
 
 
-difficultymax=2
+difficulty=2
 taboo=while
 needed=for
 
