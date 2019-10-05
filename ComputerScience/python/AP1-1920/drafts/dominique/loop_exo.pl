@@ -14,7 +14,9 @@ Parcourrir les entiers  de {{b}} à X parcourus de {{s}} en {{s}}
 ==
 
 plsoluce==
-Vérification | #
+Vérification | 100
+Vérification | -100
+Vérification | 33
 ==
 
 soluce==
