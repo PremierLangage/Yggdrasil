@@ -46,13 +46,15 @@ student==
 s=0
 p=1
 X=int(input())
-a= -22
-diviseur=2
-step= 5
+a= -70
+diviseur=3
+step= 6
 for i in range(a,a+X+1,step):
-    if i%2==1:
+    if i%diviseur==0:
         s+=i
         p*=i
+        print(i)
+print(s//2)
 
 print(s*s)
 print(s**3)
