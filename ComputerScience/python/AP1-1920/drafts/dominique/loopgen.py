@@ -24,17 +24,17 @@ predicats=[
 ]
 # functeur = ( texte , valeur initiale, lambda x :)
 functeurs=[
-    ("de leur somme", 0, lambda x,y : x+y ),
-    ("de leur produit", 0, lambda x,y : x*y ),
+    (" leur somme", 0, lambda x,y : x+y ),
+    (" leur produit", 0, lambda x,y : x*y ),
 ]
 
 # operator 
 p=random.randint(5,17)
 operators=[
-    (lambda x:x*x, "le caré "),
-    (lambda x: x**3,"le cube " ),
-    (lambda x: x//2, "la moitié entière (//)"),
-    (lambda x: x**p == 0, "à la puissance "+str(p)),
+    (lambda x:x*x, "le caré de "," "),
+    (lambda x: x**3,"le cube de ", " " ),
+    (lambda x: x//2, "la moitié entière (//) de ",""),
+    (lambda x: x**p == 0," " ,"à la puissance "+str(p)),
 ]
 
 def getStuff():
