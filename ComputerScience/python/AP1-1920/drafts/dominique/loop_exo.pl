@@ -35,6 +35,7 @@ predcode,predtext = random.choice(predicats)
 functeur = random.choice(functeurs)
 operatorcode,operatortextb,operatortexta = random.choice(operators)
 l = [o for o in range(b,h,s) if predcode(o)]
+st= [str(o) for o in range(b,h,s) if predcode(o)]
 import sys
 print("\n".join(l))
 result=operatorcode( functools.reduce(functeur[2],l, functeur[1]))
