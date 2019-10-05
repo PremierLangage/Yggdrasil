@@ -12,6 +12,10 @@ qui sont {{predtext}}
  calculer {{operatortext}} {{functeur[0]}} .
 ==
 
+plsoluce=
+Vérification |
+==
+
 before==
 import random
 import loopgen
