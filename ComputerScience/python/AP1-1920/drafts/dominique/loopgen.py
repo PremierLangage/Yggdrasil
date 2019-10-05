@@ -24,8 +24,8 @@ predicats=[
 ]
 # functeur = ( texte , valeur initiale, lambda x :)
 functeurs=[
-    ("la somme", 0, lambda x,y : x+y ),
-    ("le produit", 0, lambda x,y : x*y ),
+    ("de leur somme", 0, lambda x,y : x+y ),
+    ("de leur produit", 0, lambda x,y : x*y ),
 ]
 
 # operator 
