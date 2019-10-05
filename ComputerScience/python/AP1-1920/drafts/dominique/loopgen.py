@@ -16,7 +16,7 @@ filtre= modulo choice([2,3,5,7,11,13])
 # predicat =( lambda, texte )
 p=random.randint(5,17)
 predicats=[
-    (lambda x:x==x, ""),
+    (lambda x: True, ""),
     (lambda x: x % 2==0,"qui sont pairs" ),
     (lambda x: x % 2 == 1, "qui sont impairs"),
     (lambda x: x % 3 == 0, "qui sont divisibles par 3"),
