@@ -8,7 +8,7 @@ title= Boucle d'OR (repetable)
 
 text==
 Lire un entier sur l'entré dans la variable X.
-Parcourrir les entiers  de {{b}} à X parcourus de {{s}} en {{s}} 
+Parcourrir les entiers  de {{b}} à {{b}}+X parcourus de {{s}} en {{s}} 
 {{predtext}}
  calculer {{operatortextb}} {{functeur[0]}} {{operatortexta}} .
 ==
