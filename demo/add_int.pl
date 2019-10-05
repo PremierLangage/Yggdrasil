@@ -2,7 +2,7 @@
 @ /builder/before.py [builder.py]
 @ /grader/evaluator.py [grader.py]
 
-title = Somme d'entiers
+title = Addition
 
 before ==
 import random as rd
