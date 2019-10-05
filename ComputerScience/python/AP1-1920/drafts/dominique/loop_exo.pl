@@ -37,7 +37,7 @@ operatorcode,operatortextb,operatortexta = random.choice(operators)
 l = [o for o in range(b,h,s) if predcode(o)]
 st= [str(o) for o in range(b,h,s) if predcode(o)]
 import sys
-print("\n".join(l))
+print("\n".join(st))
 result=operatorcode( functools.reduce(functeur[2],l, functeur[1]))
 print(result)
 ==
