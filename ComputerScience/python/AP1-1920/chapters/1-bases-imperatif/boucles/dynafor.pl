@@ -5,12 +5,12 @@
 extends=../../../templates/looptemplate.pl
 
 
-exoseed % 3
-difficultymax=1
+
+difficultymax=2
 taboo=while
 needed=for
 
-title=Boucle for 
+title=Boucle for (répétable)
 
 text= Pour ne pas avoir un warning stupid
 
