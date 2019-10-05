@@ -8,11 +8,13 @@ title= Boucle d'OR (repetable)
 
 text==
 Lire un entier sur l'entré dans la variable X.
+
 X est toujours positif.
 
-Parcourrir les entiers  de {{b}} à {{b}}+X parcourus de {{s}} en {{s}} 
+Selectionnez les entiers  de {{b}} à {{b}}+X parcourus de {{s}} en {{s}} 
 {{predtext}}
- calculez {{operatortextb}} {{functeur[0]}} {{operatortexta}} .
+
+et calculez {{operatortextb}} {{functeur[0]}} {{operatortexta}} .
 ==
 
 plsoluce==
@@ -38,6 +40,7 @@ l = [o for o in range(b,h,s) if predcode(o)]
 st= [str(o) for o in range(b,h,s) if predcode(o)]
 import sys
 print("\n".join(st))
+print(str(predcode))
 result=operatorcode( functools.reduce(functeur[2],l, functeur[1]))
 print(result)
 ==
