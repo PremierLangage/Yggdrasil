@@ -18,7 +18,7 @@ Parcourrir les entiers  de {{b}} à {{b}}+X parcourus de {{s}} en {{s}}
 plsoluce==
 Vérification 1 | 100
 Vérification 2 | 10
-Vérification 3 | 6777
+Vérification 3 |777
 ==
 
 soluce==
