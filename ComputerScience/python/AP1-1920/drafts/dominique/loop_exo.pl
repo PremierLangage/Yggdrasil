@@ -54,7 +54,6 @@ for i in range(a,a+X+1,step):
         s+=i
         p*=i
         print(i)
-print()
 print(s//2)
 
 print(s*s)
