@@ -48,7 +48,6 @@ function getSmile() {
     myDiv.innerHTML = formula.getText();
 }
 
-var smiles = 
 </script>
 ==
 evaluator ==
