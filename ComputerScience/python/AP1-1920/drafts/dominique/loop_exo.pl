@@ -15,12 +15,14 @@ Affichez les entiers  de {{b}} à {{b}}+X parcourus de {{s}} en {{s}}
 {{predtext}}
 
 et calculez {{operatortextb}} {{functeur[0]}} {{operatortexta}} .
+
+seed={{seed}}
 ==
 
 plsoluce==
-Vérification 1 | 100
+Vérification 1 | 35
 Vérification 2 | 10
-Vérification 3 |777
+Vérification 3 |77
 ==
 
 soluce==
