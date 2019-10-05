@@ -14,6 +14,7 @@ Pour tout les entiers de {{b}} à {{h}} de {{s}} en {{s}} qui sont des entiers
 before==
 import random
 import loopgen
+import functools
 
 predicats,functeurs,operators= loopgen.getStuff()
 b=random.randint(-100,100)
