@@ -59,12 +59,7 @@ class Test:
         self.assertions: List[Assert] = []
         self.status: bool = True
 
-        # Grade needed by the palteforme 
-        self.grade = 100 # defautl value is success 
-        # each time there is a failure the grade is divided // by 2
-    
-    def getGrade(self):
-        return self.grade
+
 
     def copy(self):
         t = Test(self.code)
@@ -325,6 +320,12 @@ class TestSession:
         self.current_test_group: Optional[TestGroup] = None
         self.params = _default_params.copy()
         self.params.update(params)
+        # Grade needed by the plateforme 
+        self.grade = 100 # defautl value is success 
+        # each time there is a failure the grade is divided // by 2
+    
+    def getGrade(self):
+        return int( 100*len([x for x in self.history if x.status]) /len(self.history) )
 
     """Feedback management."""
 
