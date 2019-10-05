@@ -184,10 +184,10 @@ if __name__ == "__main__":
     with open(input_json, "r") as f:
         dic = json.load(f)
 
-    if "seed" in dic:
-        seed(int(dic['seed']))
+    if "exoseed" in dic:
+        seed(int(dic['exoseed']))
     else:
-        print("no seed", file=sys.stderr)
+        print("no exoseed", file=sys.stderr)
 
     if "difficultymax" not in dic:
         print("Ajouter la difficulté maximum de la forme difficultymax=n dans le fichier pl", file = sys.stderr)
