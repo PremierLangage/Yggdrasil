@@ -56,11 +56,13 @@ for i in range(a,a+X+1,step):
     if i%diviseur==0:
         s+=i
         p*=i
-        print(i)
-print(s//2)
+# print(s//2)
+# print(s*s)
+# print(s**3)
+# print(p//2)
+# print(p**2)
+# print(p**3)
 
-print(s*s)
-print(s**3)
 ==
 
 
