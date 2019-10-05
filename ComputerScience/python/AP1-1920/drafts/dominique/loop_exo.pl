@@ -12,7 +12,7 @@ X est toujours positif.
 
 Parcourrir les entiers  de {{b}} à {{b}}+X parcourus de {{s}} en {{s}} 
 {{predtext}}
- calculer {{operatortextb}} {{functeur[0]}} {{operatortexta}} .
+ calculez {{operatortextb}} {{functeur[0]}} {{operatortexta}} .
 ==
 
 plsoluce==
