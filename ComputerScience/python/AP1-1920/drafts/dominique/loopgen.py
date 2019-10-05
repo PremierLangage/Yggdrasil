@@ -37,4 +37,5 @@ operators=[
     (lambda x: x**p == 0, "à la puissance "+str(p)),
 ]
 
-
+def getStuff():
+    return predicats,functeurs,operators
