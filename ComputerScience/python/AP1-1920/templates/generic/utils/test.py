@@ -59,6 +59,13 @@ class Test:
         self.assertions: List[Assert] = []
         self.status: bool = True
 
+        # Grade needed by the palteforme 
+        self.grade = 100 # defautl value is success 
+        # each time there is a failure the grade is divided // by 2
+    
+    def getGrade(self):
+        return self.grade
+
     def copy(self):
         t = Test(self.code)
         t.current_state = deepcopy(self.current_state)
@@ -542,6 +549,7 @@ class NoGlobalChangeAssert(Assert):
             return "Variables globales inchangées"
         else:
             return "Variables globales modifiées"
+
 
 
 
