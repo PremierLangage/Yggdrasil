@@ -3,7 +3,7 @@
 extends=../../../templates/looptemplate.pl
 
 
-seed % 3
+exoseed % 3
 difficultymax=1
 taboo=while
 needed=for
@@ -15,6 +15,7 @@ text= Pour ne pas avoir un warning stupid
 plsoluce==
 Exo Boucle for |
 ==
+
 
 
 
