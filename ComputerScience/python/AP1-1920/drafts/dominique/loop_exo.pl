@@ -3,7 +3,7 @@
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 @ loopgen.py
-title= Boucle d'OR 
+title= Boucle d'OR (repetable)
 
 
 text==
