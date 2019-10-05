@@ -15,7 +15,7 @@ title=Boucle for
 text= Pour ne pas avoir un warning stupid
 
 plsoluce==
-Exo Boucle for |
+Vérification du comportement fixé |
 ==
 
 
