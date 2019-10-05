@@ -50,7 +50,7 @@ def grade_this(code: str, tests: str, context: dict):
                    "contacter un enseignant ({})".format(e))
 
     # return session.get_grade(), session.render()
-    return 0, session.render()
+    return sessin.getGrade(), session.render()
 
 
 if __name__ == "__main__":
@@ -66,5 +66,6 @@ if __name__ == "__main__":
     validation_script = context["grader"]
     grade, feedback = grade_this(student_code, validation_script, context)
     sandboxio.output(grade, feedback)
+
 
 
