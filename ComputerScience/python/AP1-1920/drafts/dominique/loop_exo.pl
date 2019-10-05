@@ -17,7 +17,7 @@ Parcourrir les entiers  de {{b}} à {{b}}+X parcourus de {{s}} en {{s}}
 
 plsoluce==
 Vérification 1 | 100
-
+Vérification 1 | 10
 ==
 
 soluce==
@@ -34,8 +34,6 @@ predcode,predtext = random.choice(predicats)
 functeur = random.choice(functeurs)
 operatorcode,operatortextb,operatortexta = random.choice(operators)
 l = [o for o in range(b,h,s) if predcode(o)]
-import sys
-print(l,sys.stderr)
 result=operatorcode( functools.reduce(functeur[2],l, functeur[1]))
 print(result)
 ==
