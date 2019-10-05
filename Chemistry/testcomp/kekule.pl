@@ -21,6 +21,8 @@ form ==
 <div id="composer" style="width:500px;height:500px" data-widget="Kekule.Editor.Composer" data-chem-obj="url(#molecule)"></div>
 <br>
 <input value="Get JSON" onclick="getMol()" type="button">
+<input value="Get Smile" onclick="getSmile()" type="button">
+
 <div id="answer"></div>
 
 ==
@@ -38,9 +40,22 @@ function getMol() {
     //myDiv.innerHTML = formula.getText();
     myDiv.innerHTML = JSON.stringify(jsonData);
 }
+
+function getSmile() {
+    var mol = composer.exportObjs(Kekule.Molecule)[0];
+    var formula = Kekule.IO.saveFormatData(mol, 'smi');
+    var myDiv = document.getElementById("answer");
+    var jsonData = {};
+    mol.saveObj(jsonData, 'json');
+    //myDiv.innerHTML = formula.getText();
+    myDiv.innerHTML = JSON.stringify(jsonData);
+}
+
+var smiles = 
 </script>
 ==
 evaluator ==
 grade=(100,"Bonne réponse")
 ==
+
 
