@@ -9,11 +9,11 @@ title= Boucle d'OR (repetable)
 text==
 Pour tout les entiers  de {{b}} à {{h}} parcourus de {{s}} en {{s}} 
 qui sont {{predtext}}
- calculer {{operatortext}} {{functeur[0]}} .
+ calculer  {{functeur[0]}} {{operatortext}} .
 ==
 
-plsoluce=
-Vérification |
+pltest==
+>>> 
 ==
 
 before==
