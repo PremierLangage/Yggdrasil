@@ -1,4 +1,6 @@
-# OCE : test 12/09/2019 OK
+
+# DR j'ai fixé la seed dans cet exercice  
+# il est donc statique
 
 extends=../../../templates/looptemplate.pl
 
@@ -15,6 +17,7 @@ text= Pour ne pas avoir un warning stupid
 plsoluce==
 Exo Boucle for |
 ==
+
 
 
 
