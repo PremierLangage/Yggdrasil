@@ -50,7 +50,7 @@ def grade_this(code: str, tests: str, context: dict):
                    "contacter un enseignant ({})".format(e))
 
     # return session.get_grade(), session.render()
-    return sessin.getGrade(), session.render()
+    return session.getGrade(), session.render()
 
 
 if __name__ == "__main__":
