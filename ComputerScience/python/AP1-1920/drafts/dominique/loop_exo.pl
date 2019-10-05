@@ -15,8 +15,7 @@ Parcourrir les entiers  de {{b}} à {{b}}+X parcourus de {{s}} en {{s}}
 
 plsoluce==
 Vérification 1 | 100
-Vérification 2| -100
-Vérification 3 (décroissant)| 33
+
 ==
 
 soluce==
@@ -35,6 +34,22 @@ operatorcode,operatortextb,operatortexta = random.choice(operators)
 
 result=operatorcode( functools.reduce(functeur[2],[o for o in range(b,h,s) if predcode(o)], functeur[1]))
 print(result)
+==
+
+student==
+s=0
+p=1
+X=int(input())
+a= -22
+diviseur=2
+step= 5
+for i in range(a,a+X+1,step):
+    if i%2==1:
+        s+=i
+        p*=i
+
+print(s*s)
+print(s**3)
 ==
 
 
