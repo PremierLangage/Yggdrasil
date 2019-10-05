@@ -15,11 +15,11 @@ def generateAleaWhile(difficulty):
         sys.exit(1)
     
     """ difficulté 1 """
-    debut = randint(0, 2)
+    debut = randint(-2, 2)
     end = randint(1, 4)*5
-    pas = randint(1, 3)
+    pas = randint(1, 5)
     rev = randint(0, 1)
-    pasText = ["", "pairs", "multiples de 3"]
+    pasText = ["", "pairs", "multiples de 3"," multiples de 4", "multiple de 5"]
     debut -= debut % pas
     end -= end % pas
 
@@ -187,10 +187,13 @@ if __name__ == "__main__":
     if "exoseed" in dic:
         seed(int(dic['exoseed']))
 
-
-    if "difficultymax" not in dic:
-        print("Ajouter la difficulté maximum de la forme difficultymax=n dans le fichier pl", file = sys.stderr)
+    if "difficulty" in dic:
+        difficulty=int(dic['difficulty'])
+    elif "difficultymax" not in dic:
+        print("Ajouter la difficulté difficulty=n ou maximum de la forme difficultymax=n dans le fichier pl", file = sys.stderr)
         sys.exit(1)
+    else:
+        difficulty = randint(1, int(dic['difficultymax']))
 
     if "taboo" not in dic:
         print("Ajouter le type de boucle à ne pas utiliser dans l'exercice sous la forme taboo=type_de_boucle", file = sys.stderr)
@@ -217,7 +220,7 @@ if __name__ == "__main__":
         sys.exit(1)
     
     
-    difficulty = randint(1, int(dic['difficultymax']))
+    
     if dic['needed'] == "for":
         v = generateAleaFor(difficulty - 1)
     else:
@@ -232,6 +235,7 @@ if __name__ == "__main__":
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
     sys.exit(0)
+
 
 
 
