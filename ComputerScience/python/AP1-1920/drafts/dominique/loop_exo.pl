@@ -43,7 +43,7 @@ import random
 import loopgen
 import functools
 seed=random.randint(1,10000)
-soluce="seed={}".format(seed)+soluce
+soluce="seed={}\n".format(seed)+soluce
 random.seed(seed)
 predicats,functeurs,operators= loopgen.getStuff()
 b=random.randint(-100,100)
