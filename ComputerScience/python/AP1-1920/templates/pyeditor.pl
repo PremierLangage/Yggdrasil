@@ -8,11 +8,12 @@ Il ne contient pas beaucoup de fonctions d'aides pour gérer les réponses faite
 Vous pouvez peut être si vous ne l'avez pas fait jeter un oeil sur les templates suivants:
 
 dans le repertoire 
-/ComputerScience/python/template/
+/ComputerScience/python/AP1-1920/templates/
 les templates 
 
 pltest
-qcm_template
+plsoluce
+/ComputerScience/python/template/qcm_template
 
 IL est necessaire d'écrire de nouveau templates avec les composants .
 
@@ -46,6 +47,7 @@ text=doc
 @ /utils/sandboxio.py 
 @ /grader/evaluator.py [grader.py]
 @ /builder/before.py [builder.py]
+
 
 
 
