@@ -12,7 +12,10 @@ Pour tout les entiers de {{b}} à {{h}} de {{s}} en {{s}} qui sont des entiers
 ==
 
 before==
+import random
 import loopgen
+
+predicats,functeurs,operators= loopgen.getStuff()
 b=random.randint(-100,100)
 h=b+random.randint(-10,100)
 s= random.randint(1,7) if h>b else random.randint(-3,-1)
