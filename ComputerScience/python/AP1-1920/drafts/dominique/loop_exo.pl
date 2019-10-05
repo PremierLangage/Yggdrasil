@@ -31,8 +31,10 @@ s= random.randint(1,7) if h>b else random.randint(-3,-1)
 predcode,predtext = random.choice(predicats)
 functeur = random.choice(functeurs)
 operatorcode,operatortextb,operatortexta = random.choice(operators)
-
-result=operatorcode( functools.reduce(functeur[2],[o for o in range(b,h,s) if predcode(o)], functeur[1]))
+l = [o for o in range(b,h,s) if predcode(o)]
+import sys
+print(l,sys.stderr)
+result=operatorcode( functools.reduce(functeur[2],l, functeur[1]))
 print(result)
 ==
 
