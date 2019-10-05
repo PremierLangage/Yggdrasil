@@ -7,8 +7,9 @@ title= Boucle d'OR
 
 
 text==
-Pour tout les entiers de {{b}} à {{h}} de {{s}} en {{s}} qui sont des entiers
-{{predtext}} calculer {{operatortext}} {{functeur}}.
+Pour tout les entiers  de {{b}} à {{h}} parcourus de {{s}} en {{s}} 
+qui sont {{predtext}}
+ calculer {{operatortext}} {{functeur[0]}} .
 ==
 
 before==
