@@ -12,10 +12,6 @@ Pour les entiers  de {{b}} à {{h}} parcourus de {{s}} en {{s}}
  calculer {{operatortextb}} {{functeur[0]}} {{operatortexta}} .
 ==
 
-soluce==
-print({{result}})
-==
-
 plsoluce==
 Vérification |
 ==
@@ -34,4 +30,7 @@ functeur = random.choice(functeurs)
 operatorcode,operatortextb,operatortexta = random.choice(operators)
 
 result=operatorcode( functools.reduce(functeur[2],[o for o in range(b,h,s) if predcode(o)], functeur[1]))
+
+soluce="\nprint({})\n".format(result)
+
 ==
