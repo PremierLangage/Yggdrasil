@@ -67,6 +67,7 @@ random.seed(seed)
 predicats,functeurs,operators= loopgen.getStuff()
 b=random.randint(-100,100)
 #h=b+random.randint(-10,100)
+h=b+100
 s= random.randint(1,7) if h>b else random.randint(-3,-1)
 predcode,predtext = random.choice(predicats)
 functeur = random.choice(functeurs)
