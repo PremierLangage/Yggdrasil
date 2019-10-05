@@ -5,8 +5,8 @@
 extends=../../../templates/looptemplate.pl
 
 
-exoseed % 6
-difficultymax=1
+exoseed % 7
+difficultymax=2
 taboo=while
 needed=for
 
