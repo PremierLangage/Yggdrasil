@@ -35,7 +35,20 @@ for i in range(N):
 mplsoluce4 += str(N)+"\n"
 ==
 
+# dr soluce qui marche avec des chaines ;)
 soluce==
+nb=1
+prev=input()
+next=input()
+while prev<next:
+    prev,next = next, input()
+    nb+=1
+
+print("Vous avez entré",nb,"valeur(s) en ordre croissant")
+==
+
+
+zipsoluce==
 nb=1
 prec=int(input())
 suiv=int(input())
@@ -82,3 +95,4 @@ bannana
 papel
 mango
 ==
+
