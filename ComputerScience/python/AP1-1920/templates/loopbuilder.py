@@ -186,8 +186,7 @@ if __name__ == "__main__":
 
     if "exoseed" in dic:
         seed(int(dic['exoseed']))
-    else:
-        print("no exoseed", file=sys.stderr)
+
 
     if "difficultymax" not in dic:
         print("Ajouter la difficulté maximum de la forme difficultymax=n dans le fichier pl", file = sys.stderr)
