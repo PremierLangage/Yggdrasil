@@ -45,7 +45,7 @@ function getSmile() {
     var mol = composer.exportObjs(Kekule.Molecule)[0];
     var formula = Kekule.IO.saveFormatData(mol, 'smi');
     var myDiv = document.getElementById("answer");
-    myDiv.innerHTML = formula.getText();
+    myDiv.innerHTML = formula;
 }
 
 </script>
