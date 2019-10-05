@@ -7,13 +7,13 @@ title= Boucle d'OR (repetable)
 
 
 text==
-Pour tout les entiers  de {{b}} à {{h}} parcourus de {{s}} en {{s}} 
-qui sont {{predtext}}
+Pour les entiers  de {{b}} à {{h}} parcourus de {{s}} en {{s}} 
+{{predtext}}
  calculer {{operatortextb}} {{functeur[0]}} {{operatortexta}} .
 ==
 
-pltest==
->>> 
+soluce==
+print({{result}})
 ==
 
 before==
