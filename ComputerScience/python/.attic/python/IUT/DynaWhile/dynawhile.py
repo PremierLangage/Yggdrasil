@@ -29,14 +29,6 @@ def stdoutIO(stdout=None):
 
 
 
-
-
-
-
-
-
-
-
 def createseed(dic):
     if not "seed" in dic:
         import time
@@ -123,6 +115,7 @@ Soit le code python suivant quel est la valeur de la variable **a** apr√®s l'ex√
     del d['seed']
     build(d)
     print(d['text'])
+
 
 
 
