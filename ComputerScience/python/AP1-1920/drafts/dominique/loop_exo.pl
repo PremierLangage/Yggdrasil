@@ -16,6 +16,10 @@ soluce==
 print({{result}})
 ==
 
+plsoluce==
+Vérification |
+==
+
 before==
 import random
 import loopgen
