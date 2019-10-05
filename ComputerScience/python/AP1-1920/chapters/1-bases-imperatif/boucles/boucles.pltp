@@ -38,14 +38,17 @@ l'équipe.
 @ /ComputerScience/python/AP1-1920/drafts/zip/bouclestr.pl
 
 # Exercice avec des boucles for 
-@ /ComputerScience/python/concept/loop/dynafor.pl
+@ dynafor1.pl
+@ dynafor2.pl
+@ dynafor.pl
+
 
 # Exercice avec des boucles while
 @ /ComputerScience/python/concept/loop/dynawhile.pl
 
 
 
-
-
+# Exercice sur les boucles répétable sans taboo
+@  /ComputerScience/python/AP1-1920/drafts/dominique/loop_exo.pl
 
 
