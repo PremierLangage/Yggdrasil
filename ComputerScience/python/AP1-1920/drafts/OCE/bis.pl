@@ -1,7 +1,6 @@
 
 # author=OCE
-
-@ /ComputerScience/python/template/loopevaluator.py
+@ /ComputerScience/python/template/loopevaluator.py          [grader.py] 
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
@@ -13,7 +12,7 @@ En utilisant une boucle de type "for...in...range", écrire un programme qui aff
 ==
 
 code== 
-#écrivez votre code ici
+# écrivez votre code ici
 ==
 
 before==
