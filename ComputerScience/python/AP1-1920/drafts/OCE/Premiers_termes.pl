@@ -29,9 +29,9 @@ chaine=""
 for i in range({{val1}}):
     multiple=(i+1)*{{val2}}
     if multiple%{{val3}} == 0:
-        chaine+="  "+str(i+1)+"*7 = "+"*"+str((i+1)*7)+"\n"
+        chaine+="  "+str(i+1)+"*"+str(val2)+" = "+"*"+str((i+1)*val2)+"\n"
     else: 
-        chaine+="  "+str(i+1)+"*7 = "+str((i+1)*7)+"\n"
+        chaine+="  "+str(i+1)+"*"+str(val2) = "+str((i+1)*str(val2))+"\n"
         print(chaine)
 ==
 
