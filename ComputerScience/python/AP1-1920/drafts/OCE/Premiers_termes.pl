@@ -35,9 +35,23 @@ for i in range({{val1}}):
         print(chaine)
 ==
 
-plsoluce==
-test1 | 5
-test2 | 3
+mplsoluce0==
+5 termes de la table de 2 et multiples de 3
+5
+2
+3
+==
+mplsoluce1==
+10 termes de la table de 4 et multiples de 2
+10
+4
+2
+==
+mplsoluce2==
+Plateau
+4
+4
+1
 ==
 
 
