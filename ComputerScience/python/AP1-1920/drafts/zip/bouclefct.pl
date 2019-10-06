@@ -10,10 +10,14 @@ title = nombre factoriel
 
 text==  
 
-Ecrire un programme qui lit un entier et 
-s'il est égal à lafactorielle d'un nombre 
+Ecrire un programme qui lit un entier et
+
+s'il est égal à la factorielle d'un nombre 
+
 affiche "??=??!" 
+
 sinon 
+
 affiche "n'est pas factoriel"
 
 Exemple
