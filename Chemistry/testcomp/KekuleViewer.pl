@@ -15,7 +15,7 @@ text ==
 
 form ==
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://unpkg.com/kekule/dist/kekule.js?modules=chemWidget,algorithm,,openbabel,indigo"></script>
+<script src="https://unpkg.com/kekule/dist/kekule.js?modules=chemWidget,algorithm,openbabel,indigo"></script>
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/kekule/dist/themes/default/kekule.css" />
 <h2> SMILES </h2>
 <textarea rows="10" cols="50" id="smiles"  style="font-size: 12pt">
