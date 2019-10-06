@@ -27,6 +27,16 @@ Exemple
 22 n'est pas factoriel
 
 ==
+
+before==
+import random
+N=random.randint(4,10)
+mplsoluce4="Test aléatoire\n"
+f=1
+for i in range(N+1):
+    f*=i
+mplsoluce4 += str(f)+"\n"
+==
 soluce==
 n=int(input())
 if n==1:
@@ -45,10 +55,19 @@ else:
 
 
 
-plsoluce==
-Négatif |-5
-Facile | 24
-Grand | 479001600
-Tres grand | 35184372088833
+mplsoluce0==
+Négatif 
+-5
+==
+mplsoluce1==
+Facile 
+24
+==
+mplsoluce2==
+Grand 
+479001600
+==
+mplsoluce3==
+24
 ==
 
