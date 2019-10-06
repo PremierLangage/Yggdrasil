@@ -11,7 +11,7 @@ grader=@ /grader/evaluator.py
 
 @ /utils/sandboxio.py 
 
-text="Quelle est la configuration éléctronique de l'élément {{name}} ? Pour être validé dans l'application, on notera 1s22s22p6...sans mettre en exposant le nombre d'électrons"
+text="Quelle est la configuration éléctronique de l'élément {{name}} ? Pour être validé dans l'application, on notera 1s2 2s2 2p6...sans mettre en exposant le nombre d'électrons"
 
 before==
 import random
@@ -35,7 +35,7 @@ try:
     if verif.verif(response['txt_answer'].lower(),a) :
         grade = (100, "Bonne réponse")
     else:
-        grade = (0, "Mauvaise réponse Bonne réponse : "+verif.strfromz(a))
+        grade = (0, "Mauvaise réponse"+txt_answer+" "La Bonne réponse : "+verif.strfromz(a))
 except:
     print(traceback.format_exc(), file=sys.stderr)
     grade = (-1, "Merci de rentrer un entier")
