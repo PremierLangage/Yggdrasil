@@ -2,7 +2,7 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/template/loopsoluce.pl
 
-title = Suite géométrique de raison 3
+title = Suite géométrique de raison X
 
 text==  
 En utilisant une boucle de type "for...in...range", écrire un programme qui affiche une suite de X nombres dont chaque terme soit 
