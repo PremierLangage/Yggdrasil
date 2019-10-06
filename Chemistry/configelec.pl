@@ -11,7 +11,7 @@ grader=@ /grader/evaluator.py
 
 @ /utils/sandboxio.py 
 
-text="Quelle est la configuration éléctronique {{name}} "
+text="Quelle est la configuration éléctronique de l'élément {{name}} "
 
 before==
 import random
@@ -40,6 +40,7 @@ except:
     print(traceback.format_exc(), file=sys.stderr)
     grade = (-1, "Merci de rentrer un entier")
 ==
+
 
 
 
