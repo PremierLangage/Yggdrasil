@@ -1,6 +1,7 @@
 # author=OCE
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/template/loopsoluce.pl
+@ /builder/before.py [builder.py]
 
 before== #|python|
 import random
