@@ -17,13 +17,9 @@ Dessiner la molécule de votre choix.
 form ==
 <script src="https://unpkg.com/kekule/dist/kekule.js?modules=chemWidget,algorithm,,openbabel,indigo"></script>
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/kekule/dist/themes/default/kekule.css" />
-
-<div id="viewer" style="width:500px;height:500px" data-widget="Kekule.ChemWidget.Viewer"></div>
-<br>
 <input type="text" id="inputsmiles">
 <input value="Load Smile" onclick="loadSmiles()" type="button">
-
-<div id="answer"></div>
+<div id="viewer" style="width:500px;height:500px" data-widget="Kekule.ChemWidget.Viewer"></div>
 
 ==
 extrajs==
