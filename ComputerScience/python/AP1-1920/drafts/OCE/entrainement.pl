@@ -27,7 +27,7 @@ needed=for
 
 soluce==
 a=input("Entrez un nombre : ")
-for i in range(12):
+for i in range(R):
     print(i+1,a)
     a = a * 3
 ==
