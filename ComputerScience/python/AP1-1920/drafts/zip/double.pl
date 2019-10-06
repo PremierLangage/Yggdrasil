@@ -29,9 +29,7 @@ Entrez un entier strictement positif: 5
 
 code==
 
-
-
-    =int(input("Entrez un entier strictement positf: "))
+int(input("Entrez un entier strictement positf: "))
 ==
 
 before==
