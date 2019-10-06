@@ -16,14 +16,6 @@ code==
 ==
 
 before==
-import random
-N=random.randint(4,10)
-mplsoluce4="Test aléatoire\n"
-v=40
-for i in range(N):
-    v += random.randint(1,6)
-    mplsoluce4 += str(v)+"\n"
-mplsoluce4 += str(N)+"\n"
 ==
 
 soluce==
