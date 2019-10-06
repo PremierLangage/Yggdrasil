@@ -24,8 +24,8 @@ CCN(c1cc(C)ccc1C)S(=O)(=O)c1cc(C(N)=O)n(C)c1
 </textarea>
 <div id="div2"> 
 <h2> Kekule </h2>
-<div id="kekule" style="width:100%;height:650px"
-		 data-widget="Kekule.ChemWidget.Viewer2D" data-enable-toolbar="true" data-auto-size="true" data-padding="20"
+<div id="kekule" style="width:100%;height:300px"
+		 data-widget="Kekule.ChemWidget.Viewer2D" data-enable-toolbar="false" data-auto-size="true" data-padding="20"
 		 data-toolbar-evoke-modes="[0]"
 </div>
 ==
@@ -57,6 +57,7 @@ $(window).on('load', function(){
 evaluator ==
 grade=(100,"Bonne réponse")
 ==
+
 
 
 
