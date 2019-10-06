@@ -35,7 +35,7 @@ viewer.setEnableToolbar(false);  // disable and hide the toolbar
 
 function loadSmiles() {
     var smi = document.getElementById("inputsmiles").value;
-    var mol = Kekule.IO.loadFormatData(smi, 'smi');
+    var mol = Kekule.IO.loadFormatData("CO", 'smi');
     viewer.setChemObj(mol);
 }
 
