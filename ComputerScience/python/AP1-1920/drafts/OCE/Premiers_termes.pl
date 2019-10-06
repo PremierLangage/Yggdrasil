@@ -12,8 +12,8 @@ val2=random.randint(2,5)
 title = Suite géométrique de raison {{val2}}
 
 text==  
-En utilisant une boucle de type "for...in...range", écrire un programme qui affiche une suite de {{val1}} nombres dont chaque terme soit 
-égal à {{val2}} fois le terme précédent.
+Écrire un programme qui affiche les 20 premiers termes de la table de multiplication par 7,
+ en signalant aupassage (à l'aide d'une astérisque) ceux qui sont des multiples de 3.
 ==
 
 code== 
@@ -23,11 +23,15 @@ code==
 taboo=while
 needed=for
 
-soluce==
-a=input("Entrez un nombre : ")
-for i in range({{val2}}):
-    print(i+1,a)
-    a = a * {{val1}}
+soluce==#|python|
+chaine=""
+for i in range(20):
+    multiple=(i+1)*7
+    if multiple%3 == 0:
+     chaine+="  "+str(i+1)+"*7 = "+"*"+str((i+1)*7)+"\n"
+    else: 
+        chaine+="  "+str(i+1)+"*7 = "+str((i+1)*7)+"\n"
+        print(chaine)
 ==
 
 plsoluce==
