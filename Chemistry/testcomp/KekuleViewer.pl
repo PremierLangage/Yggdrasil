@@ -15,7 +15,7 @@ Dessiner la molécule de votre choix.
 ==
 
 form ==
-<script src="https://unpkg.com/kekule/dist/kekule.js?modules=chemWidget,algorithm"></script>
+<script src="https://unpkg.com/kekule/dist/kekule.js?modules=chemWidget,algorithm,indigo"></script>
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/kekule/dist/themes/default/kekule.css" />
 
 <div id="viewer" style="width:500px;height:500px" data-widget="Kekule.ChemWidget.Viewer"></div>
