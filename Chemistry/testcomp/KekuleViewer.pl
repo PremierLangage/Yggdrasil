@@ -14,8 +14,7 @@ text ==
 ==
 
 form ==
-<script src="raphael.min.js"></script>
-<script src="Three.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.js" integrity="sha256-eowb6mNlBpUobaM+KF2NpeDCyjr0pF3ka0p5z3Bn9SQ=" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://unpkg.com/kekule/dist/kekule.js?modules=chemWidget,algorithm,render,openbabel,indigo"></script>
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/kekule/dist/themes/default/kekule.css" />
