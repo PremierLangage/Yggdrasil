@@ -2,8 +2,6 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/template/loopsoluce.pl
 
-@ /builder/before.py [builder.py]
-
 before==#|python|
 import random
 X=random.randint(8,12)
@@ -19,9 +17,6 @@ En utilisant une boucle de type "for...in...range", écrire un programme qui aff
 
 code== 
 # écrivez votre code ici
-==
-
-before==
 ==
 
 taboo=while
