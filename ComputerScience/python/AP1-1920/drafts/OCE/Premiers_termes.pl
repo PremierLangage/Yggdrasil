@@ -28,7 +28,7 @@ chaine=""
 for i in range(20):
     multiple=(i+1)*7
     if multiple%3 == 0:
-     chaine+="  "+str(i+1)+"*7 = "+"*"+str((i+1)*7)+"\n"
+        chaine+="  "+str(i+1)+"*7 = "+"*"+str((i+1)*7)+"\n"
     else: 
         chaine+="  "+str(i+1)+"*7 = "+str((i+1)*7)+"\n"
         print(chaine)
