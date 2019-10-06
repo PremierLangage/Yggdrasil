@@ -25,9 +25,9 @@ needed=for
 
 soluce==
 a=input("Entrez un nombre : ")
-for i in range(X):
+for i in range({{val2}}):
     print(i+1,a)
-    a = a * R
+    a = a * {{val1}}
 ==
 
 plsoluce==
