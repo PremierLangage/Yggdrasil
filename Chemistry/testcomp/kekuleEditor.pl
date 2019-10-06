@@ -23,7 +23,6 @@ form ==
 <input value="Get Smiles" onclick="getSmile()" type="button">
 <h2> SMILES </h2>
 <textarea rows="1" cols="50" id="smiles"  style="font-size: 12pt">
-CCN(c1cc(C)ccc1C)S(=O)(=O)c1cc(C(N)=O)n(C)c1
 </textarea>
 
 ==
