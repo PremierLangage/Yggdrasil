@@ -13,17 +13,29 @@ text==
 Ecrire un programme qui force la saisie d'un entier strictement positif
  puis affiche un suite de lignes formées de:
 1 sur la première ligne
+
 1 2 sur la deuxième ligne
+
 1 2 3 sur la troisième
 
+
 1 2 3     n sur la dernière.
+
 exemple
-Entrez un entier strictement positf: 0
+
+
+Entrez un entier strictement positf: 
+
 Entrez un entier strictement positif: 5
+
 1
+
 12
+
 123
+
 1234
+
 12345
 ==
 
