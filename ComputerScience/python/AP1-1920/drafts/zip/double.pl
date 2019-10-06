@@ -37,7 +37,7 @@ import random
 N=random.randint(3)
 mplsoluce3="Test aléatoire\n"
 for i in range(N):
-    v =-random.randint(6)
+    v =-random.randint(0,6)
     mplsoluce3 += str(v)+"\n"
 v =random.randint(1, 6)
 mplsoluce3 += str(v)
