@@ -48,10 +48,10 @@ mplsoluce1==
 2
 ==
 mplsoluce2==
-Plateau
-4
-4
-1
+8 termes de la table de 7 et multiples de 3
+8
+7
+3
 ==
 
 
