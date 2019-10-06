@@ -28,7 +28,7 @@ needed=for
 soluce==
 a=input("Entrez un nombre : ")
 for i in range(X):
-    print(i+1,R)
+    print(i+1,a)
     a = a * R
 ==
 
