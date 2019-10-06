@@ -35,7 +35,8 @@ try:
     if verif.verif(response['txt_answer'].lower(),a) :
         grade = (100, "Bonne réponse")
     else:
-        grade = (0, "Mauvaise réponse"+txt_answer+" "La Bonne réponse : "+verif.strfromz(a))
+        grade = (0, "Mauvaise réponse Bonne réponse : "+verif.strfromz(a))
+        print("votre réponse",txt_answer)
 except:
     print(traceback.format_exc(), file=sys.stderr)
     grade = (-1, "Merci de rentrer un entier")
