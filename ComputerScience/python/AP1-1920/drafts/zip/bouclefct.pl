@@ -30,11 +30,13 @@ Exemple
 
 before==
 import random
-N=random.randint(4,10)
+N=random.randint(4,15)
 mplsoluce4="Test aléatoire\n"
 f=1
 for i in range(1,N+1):
     f*=i
+test=random.randint(0,1)
+f+=test
 mplsoluce4 += str(f)+"\n"
 ==
 soluce==
