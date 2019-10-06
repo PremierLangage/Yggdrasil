@@ -24,9 +24,6 @@ form ==
 <textarea rows="1" cols="50" id="smiles"  style="font-size: 12pt">
 CCN(c1cc(C)ccc1C)S(=O)(=O)c1cc(C(N)=O)n(C)c1
 </textarea>
-<input value="Load Smiles" onclick="loadSmiles()" type="button">
-<div id="div2"> 
-<h2> Kekule </h2>
 <div id="kekule" style="width:300px;height:300px"
 		 data-widget="Kekule.ChemWidget.Viewer2D" data-enable-toolbar="false"
 </div>
