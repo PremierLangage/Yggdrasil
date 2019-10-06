@@ -11,8 +11,7 @@ En utilisant une boucle de type "for...in...range", écrire un programme qui aff
 égal au triple du terme précédent.
 ==
 
-code==
-# écrivez votre code ici
+code== # écrivez votre code ici
 ==
 
 before==
