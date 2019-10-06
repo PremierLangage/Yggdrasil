@@ -33,7 +33,7 @@ import random
 N=random.randint(4,10)
 mplsoluce4="Test aléatoire\n"
 f=1
-for i in range(N+1):
+for i in range(1,N+1):
     f*=i
 mplsoluce4 += str(f)+"\n"
 ==
