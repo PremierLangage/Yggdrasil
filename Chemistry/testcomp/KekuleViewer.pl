@@ -30,7 +30,7 @@ CCN(c1cc(C)ccc1C)S(=O)(=O)c1cc(C(N)=O)n(C)c1
 ==
 extrajs==
 <script>
-<script>
+
 Kekule.Indigo.enable();
 function load_kekule() {
   chemViewer = new Kekule.ChemWidget.Viewer(document.getElementById('kekule'));
