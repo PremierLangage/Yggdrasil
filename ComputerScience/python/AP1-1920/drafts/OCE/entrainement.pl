@@ -43,25 +43,6 @@ plsoluce==
 
 ==
 
-evaluator==
-import re
-# Récupération du code pour vérifier que le while n'est pas utilisé
-# regex sur while (il faut aussi chercher une référence à un commentaire au cas où
-regex = re.search("while", editor.code)
-if regex != None:
-    retour_eleve="Référence à la boucle while présente dans votre code"
-    grade = (0, f"\n{retour_eleve}")
-else:
-    # récupérer les variables locales (le input de l'utilisateur)
-    # tester editor.code avec le input
-    exec(editor.code)
-    # tester la solution avec le même input
-    # comparer les deux résultats
-    Si similaire
-    retour_eleve="Pas de boucle while c'est OK"
-    grade = (100, f"\n{retour_eleve}")
-
-==
 
 
 
