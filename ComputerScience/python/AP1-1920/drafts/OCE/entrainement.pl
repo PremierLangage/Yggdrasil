@@ -37,8 +37,9 @@ for i in range(12):
 ==
 
 plsoluce==
-
+classique | 12 
 ==
+
 
 
 
