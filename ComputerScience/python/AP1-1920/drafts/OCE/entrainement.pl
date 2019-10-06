@@ -12,8 +12,8 @@ val2=random.randint(2,5)
 title = Suite géométrique de raison {{val1}}
 
 text==  
-En utilisant une boucle de type "for...in...range", écrire un programme qui affiche une suite de {{val2}} nombres dont chaque terme soit 
-égal à {{val1}} fois le terme précédent."
+En utilisant une boucle de type "for...in...range", écrire un programme qui affiche une suite de {{val1}} nombres dont chaque terme soit 
+égal à {{val2}} fois le terme précédent."
 ==
 
 code== 
