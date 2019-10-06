@@ -1,4 +1,4 @@
-"""Ce builder concerne la conception d'exercices de boucle FOR ou WHILE
+"""Ce builder concerne la conception d'exercices nécessitant des boucles FOR ou WHILE
 Il propose 3 niveaux de difficultés:
 Niveau 1 => une seule boucle basique
 Niveau 2 => une seule boucle basique avec en plus une opération sur une variable à l'intérieur de la boucle
@@ -235,6 +235,7 @@ if __name__ == "__main__":
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
     sys.exit(0)
+
 
 
 
