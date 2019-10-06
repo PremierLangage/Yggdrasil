@@ -1,33 +1,23 @@
-
-# author = Olivier Champalle
-# Utilisation du code du composant "Code editor"
-
-@ /utils/sandboxio.py
-grader  =@/grader/evaluator.py
-extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
-extends=/ComputerScience/python/AP1-1920/templates/looptemplate.pl
-
-editor =: CodeEditor
-editor.theme = dark
-editor.language = python
-editor.code ==
-# write your code here
-==
-
-taboo=while
-needed=for
+# author=OCE
+# Heritage d'un type d'exercice 
+extends=/ComputerScience/python/template/loopsoluce.pl
 
 title = Suite géométrique de raison 3
 
-text==
+text==  
 En utilisant une boucle de type "for...in...range", écrire un programme qui affiche une suite de 12 nombres dont chaque terme soit 
 égal au triple du terme précédent.
 ==
 
-# formulaire de saisie du code 
-form==
-{{ editor|component }}
+code== 
+# écrivez votre code ici
 ==
+
+before==
+==
+
+taboo=while
+needed=for
 
 soluce==
 a=input("Entrez un nombre : ")
@@ -37,17 +27,8 @@ for i in range(12):
 ==
 
 plsoluce==
-classique | 12 
+test1 | 5
+test2 | 3
 ==
-
-evaluator==
-==
-
-
-
-
-
-
-
 
 
