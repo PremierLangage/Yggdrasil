@@ -2,17 +2,34 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/template/loopsoluce.pl
 
-before==#|python|
+before== #|python|
 import random
-X=random.randint(8,12)
-R=random.randint(2,5)
+lval1=[True,False,1,0,67]
+lval2=[False,True,0,2,0]
+lexp=["not var","not var","1 - var","2-var","67-var"]
+N= random.randint(0,4)
+val1=lval1[N]
+val2=lval2[N]
+exp=lexp[N]
+soluce="var = "+exp
+sval1 = str(val1)
+sval2 = str(val2)
 ==
 
-title = Suite géométrique de raison *X*
+title== #|html|
+Bascule
+==
 
-text==  
-En utilisant une boucle de type "for...in...range", écrire un programme qui affiche une suite de" + X + "nombres dont chaque terme soit 
-égal à Y fois le terme précédent."
+text==
+Le but de cet exercice est d'avoir une ligne de code de la forme :
+
+    var = expression
+
+telque la valeur de *var* passe successivement de la valeur **{{val1}}** à la valeur **{{val2}}** 
+puis de la valeur **{{val2}}** à la valeur **{{val1}}**, a chaque fois que l'on exécute la ligne.
+
+Ecrivez l'expression qui permet de faire cela.
+
 ==
 
 code== 
