@@ -51,6 +51,7 @@ pronoms = ['Toi', 'moi,', 'eux', 'lui', 'elle', 'je', 'on', 'On', 's\'', ' On', 
 found = 0
 error = 0
 for e in selectable.selections:
+    print(e['content'])
     if e['content'] in pronoms:
         e['css'] = "success-state"
         found += 1
