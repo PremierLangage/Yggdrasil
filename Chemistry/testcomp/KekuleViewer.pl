@@ -19,10 +19,12 @@ form ==
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://unpkg.com/kekule/dist/kekule.js?modules=chemWidget,algorithm,render,openbabel,indigo"></script>
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/kekule/dist/themes/default/kekule.css" />
+
 <h2> SMILES </h2>
-<textarea rows="10" cols="50" id="smiles"  style="font-size: 12pt">
+<textarea rows="1" cols="50" id="smiles"  style="font-size: 12pt">
 CCN(c1cc(C)ccc1C)S(=O)(=O)c1cc(C(N)=O)n(C)c1
 </textarea>
+<input value="Load Smiles" onclick="display()" type="button">
 <div id="div2"> 
 <h2> Kekule </h2>
 <div id="kekule" style="width:300px;height:300px"
@@ -46,12 +48,7 @@ function display() {
   console.log(smi);
   display_kekule(smi);
 }
-$(window).on('load', function(){
-      console.log("OK");
-      load_kekule();
-      display();
-      $('textarea').on('change', display);
-});
+
 </script>
 ==
 evaluator ==
