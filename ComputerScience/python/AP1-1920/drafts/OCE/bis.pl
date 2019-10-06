@@ -1,6 +1,7 @@
 
 # author=OCE
 
+@ /ComputerScience/python/template/loopevaluator.py
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
@@ -16,6 +17,9 @@ code== # écrivez votre code ici
 
 before==
 ==
+
+taboo=while
+needed=for
 
 soluce==
 a=input("Entrez un nombre : ")
