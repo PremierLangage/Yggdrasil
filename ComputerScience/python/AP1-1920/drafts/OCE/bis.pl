@@ -3,7 +3,7 @@
 @ /ComputerScience/python/template/loopevaluator.py          [grader.py] 
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
-
+extends=/ComputerScience/python/template/loopsoluce.pl
 title = Suite géométrique de raison 3
 
 text==  
