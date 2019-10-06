@@ -16,7 +16,7 @@ text==
  en signalant aupassage (à l'aide d'une astérisque) ceux qui sont des multiples de 3.
 ==
 
-code== 
+code==#|python| 
 # écrivez votre code ici
 ==
 
