@@ -34,7 +34,7 @@ extrajs==
 Kekule.Indigo.enable();
 function load_kekule() {
   chemViewer = new Kekule.ChemWidget.Viewer(document.getElementById('kekule'));
-  chemViewer.setRenderType(Kekule.Render.RendererType.R3D);
+  chemViewer.setRenderType(Kekule.Render.RendererType.R2D);
 }
 function display_kekule(smi) {
   var mol = Kekule.IO.loadFormatData(smi, "smi");  
@@ -56,4 +56,5 @@ $(window).on('load', function(){
 evaluator ==
 grade=(100,"Bonne réponse")
 ==
+
 
