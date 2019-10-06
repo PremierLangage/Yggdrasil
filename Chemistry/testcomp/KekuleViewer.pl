@@ -15,28 +15,42 @@ Dessiner la molécule de votre choix.
 ==
 
 form ==
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://unpkg.com/kekule/dist/kekule.js?modules=chemWidget,algorithm,,openbabel,indigo"></script>
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/kekule/dist/themes/default/kekule.css" />
-<input type="text" id="inputsmiles">
-<input value="Load Smile" onclick="loadSmiles()" type="button">
-<div id="viewer" </div>
+<h2> SMILES </h2>
+<textarea rows="10" cols="50" id="smiles"  style="font-size: 12pt">
+CCN(c1cc(C)ccc1C)S(=O)(=O)c1cc(C(N)=O)n(C)c1
+</textarea>
+<div id="div2"> 
+<h2> Kekule </h2>
+<div id="kekule" style="width:100%;height:650px"
+		 data-widget="Kekule.ChemWidget.Viewer2D" data-enable-toolbar="true" data-auto-size="true" data-padding="20"
+		 data-toolbar-evoke-modes="[0]"
+</div>
 ==
 extrajs==
 <script>
-Kekule.Indigo.enable()
-var viewer = new Kekule.ChemWidget.Viewer(document.getElementById('viewer'));
-viewer.setRenderType(Kekule.Render.RendererType.R3D);
-viewer.setEnableToolbar(false);  // disable and hide the toolbar
-var mol = Kekule.IO.loadFormatData("C=O", 'smi');
-viewer.setChemObj(mol);
-
-function loadSmiles() {
-    var smi = document.getElementById("inputsmiles").value;
-    var mol = Kekule.IO.loadFormatData("CO", 'smi');
-    var viewer = Kekule.ChemWidget.Viewer(document.getElementById('viewer'));
-    viewer.setChemObj(mol);
+<script>
+Kekule.Indigo.enable();
+function load_kekule() {
+  chemViewer = new Kekule.ChemWidget.Viewer(document.getElementById('kekule'));
 }
-
+function display_kekule(smi) {
+  var mol = Kekule.IO.loadFormatData(smi, "smi");  
+  chemViewer.setChemObj(mol);
+}
+function display() {
+  var smi = document.getElementById("smiles").value;
+  console.log(smi);
+  display_kekule(smi);
+}
+$(window).on('load', function(){
+      console.log("OK");
+      load_kekule();
+      display();
+      $('textarea').on('change', display);
+});
 </script>
 ==
 evaluator ==
