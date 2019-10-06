@@ -3,12 +3,9 @@
 # Utilisation du code du composant "Code editor"
 
 @ /utils/sandboxio.py
-grader  =@ /grader/evaluator.py
+grader  =@/grader/evaluator.py
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 extends=/ComputerScience/python/AP1-1920/templates/looptemplate.pl
-
-taboo=while
-needed=for
 
 editor =: CodeEditor
 editor.theme = dark
@@ -16,6 +13,9 @@ editor.language = python
 editor.code ==
 # write your code here
 ==
+
+taboo=while
+needed=for
 
 title = Suite géométrique de raison 3
 
