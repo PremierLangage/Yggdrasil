@@ -28,24 +28,15 @@ form ==
 ==
 extrajs==
 <script>
-var composer = new Kekule.Editor.Composer(document.getElementById('composer'));
-composer.setCommonToolButtons(['undo', 'redo','zoomIn', 'zoomOut']);
-composer.setChemToolButtons(['manipulate', 'erase', 'bond', 'atomAndFormula', 'ring', 'charge']);
-function getMol() {
-    var mol = composer.exportObjs(Kekule.Molecule)[0];
-    var formula = mol.calcFormula();
-    var myDiv = document.getElementById("answer");
-    var jsonData = {};
-    mol.saveObj(jsonData, 'json');
-    //myDiv.innerHTML = formula.getText();
-    myDiv.innerHTML = JSON.stringify(jsonData);
-}
+var viewer = new Kekule.ChemWidget.Viewer(document.getElementById('viewer'));
+viewer.setRenderType(Kekule.Render.RendererType.R3D);
+viewer.setEnableToolbar(false);  // disable and hide the toolbar
 
-function getSmile() {
-    var mol = composer.exportObjs(Kekule.Molecule)[0];
-    var formula = Kekule.IO.saveFormatData(mol, 'smi');
-    var myDiv = document.getElementById("answer");
-    myDiv.innerHTML = formula;
+
+function loadSmiles() {
+    var smi = document.getElementById(inputsmile").value
+    var mol = Kekule.IO.loadFormatData(smi, 'smi');
+    viewer.setChemObj(myMolecule);
 }
 
 </script>
