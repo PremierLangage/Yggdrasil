@@ -6,10 +6,10 @@ extends=/ComputerScience/python/template/loopsoluce.pl
 before==#|python|
 import random
 val1=random.randint(5,25)
-val2=random.randint(2,5)
+val2=random.randint(1,10)
 ==
 
-title = {{val1}} premiers termes
+title = {{val1}} premiers termes de la table de 
 
 text==  
 Écrire un programme qui affiche les 20 premiers termes de la table de multiplication par 7,
