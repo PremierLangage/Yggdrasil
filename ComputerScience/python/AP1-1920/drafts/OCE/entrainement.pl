@@ -5,7 +5,6 @@
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
-extends=../../../templates/looptemplate.pl
 
 difficulty=2
 taboo=while
