@@ -25,9 +25,9 @@ form ==
 evaluator ==
 try:
     if int(input.value)==a+b:
-        grade=(100,"Bravo")
+        grade=(100,"Bravo "+str(a)+"+"+str(b)+"="+str(a+b))
     else:
-        grade=(0,"Raté")
+        grade=(0,"Raté "+str(a)+"+"+str(b)+"="+str(a+b))
     exec(before)
 except:
     grade=(-1,"Votre réponse n'est pas un nombre entier.")
