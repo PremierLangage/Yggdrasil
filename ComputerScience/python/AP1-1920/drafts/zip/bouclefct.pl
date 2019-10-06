@@ -28,14 +28,14 @@ Exemple
 soluce==
 n=int(input())
 if n==1:
-    print(1=0!)
+    print("1=0!")
 f=1
 i=1
 while f <n:
     f*=1
     i+=1
 if n==d:
-    print(str(n)+"="+str(i)+"!"
+    print(str(n)+"="+str(i)+"!")
 else:
     print(n,"n'est pas factoriel")
 ==
