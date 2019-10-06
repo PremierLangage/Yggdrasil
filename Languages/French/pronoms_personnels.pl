@@ -37,22 +37,35 @@ form==
 
 evaluator==
 score = 100
-indices = [0, 2, 4, 11, 13, 36, 39, 48, 50, 58]
-for e in selectable.selections:
-    e['css'] = "error-state"
-    if e['index'] in indices:
-        e['css'] = "success-state"
-        indices = [i for i in indices if i != e['index']]
-    else:
-        indices.append(e['css'])
 
-if len(indices) == 0:
+#indices = [0, 2, 4, 11, 13, 36, 39, 48, 50, 58]
+#for e in selectable.selections:
+#    e['css'] = "error-state"
+#    if e['index'] in indices:
+#        e['css'] = "success-state"
+#        indices = [i for i in indices if i != e['index']]
+#    else:
+#        indices.append(e['css'])
+
+pronoms = ['Toi', 'moi,', 'eux', 'lui', 'elle', 'je', 'on', 'On', 's\'']
+found = 0
+error = 0
+for e in selectable.selections:
+    if e['word'] in pronoms:
+        e['css'] = "success-state"
+        found += 1
+    else:
+        e['css'] = "error-state"
+        error += 1
+
+if found == 10 and error == 0:
     score = 100
     msg = '<span class="success-state">Bravo, vous avez trouvé tous les pronoms personnels !</span>'
 else:
-    score = 0
-    if len(indices) > 1:
-        msg = '<span class="error-state">Il y a {} erreurs...</spam>'.format(len(indices))
+    score = max([0, 10*(found - error)])
+    nb_error = (10 - found) + error
+    if nb_error > 1:
+        msg = '<span class="error-state">Il y a {} erreurs...</spam>'.format(nb_error)
     else:
         msg = '<span class="error-state">Il y a 1 seule erreur...</spam>'
 grade = (score, msg)
@@ -65,5 +78,6 @@ extracss==
 }
 </style>
 ==
+
 
 
