@@ -25,13 +25,6 @@ Exemple
 22 n'est pas factoriel
 
 ==
-
-code==
-
-==
-
-
-
 soluce==
 n=int(input())
 if n==1:
@@ -50,7 +43,7 @@ else:
 
 
 
-plsoluce1==
+plsoluce==
 Négatif |-5
 Facile | 24
 Grand | 479001600
