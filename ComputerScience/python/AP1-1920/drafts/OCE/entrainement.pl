@@ -30,6 +30,19 @@ form==
 {{ editor|component }}
 ==
 
+soluce==
+n=int(input())
+s=""
+if n>=0:
+    for i in range(n):
+        s+=str(i*17)
+    print(s)
+==
+
+plsoluce==
+
+==
+
 evaluator==
 import re
 # Récupération du code pour vérifier que le while n'est pas utilisé
@@ -49,6 +62,7 @@ else:
     grade = (100, f"\n{retour_eleve}")
 
 ==
+
 
 
 
