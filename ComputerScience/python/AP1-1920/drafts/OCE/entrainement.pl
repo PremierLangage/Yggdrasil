@@ -13,7 +13,7 @@ title = Suite géométrique de raison {{val2}}
 
 text==  
 En utilisant une boucle de type "for...in...range", écrire un programme qui affiche une suite de {{val1}} nombres dont chaque terme soit 
-égal à {{val2}} fois le terme précédent."
+égal à {{val2}} fois le terme précédent.
 ==
 
 code== 
