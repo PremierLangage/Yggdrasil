@@ -1,5 +1,5 @@
 
-author=Zip
+#author=Zip
 
 
 # Heritage d'un type d'exercice 
@@ -59,7 +59,7 @@ soluce==
 nb=-1
 while nb <1:
     nb=int(input("Entrez un entier strictement positf: "))
-for i range(nb):
+for i in range(nb):
     s=""
     for j in range(1,i):
         s+=str(j)
