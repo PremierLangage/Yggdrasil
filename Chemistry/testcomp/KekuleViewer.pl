@@ -19,7 +19,7 @@ form ==
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/kekule/dist/themes/default/kekule.css" />
 <input type="text" id="inputsmiles">
 <input value="Load Smile" onclick="loadSmiles()" type="button">
-<div id="viewer" style="width:100%;height:300px" data-widget="Kekule.ChemWidget.Viewer2D" </div>
+<div id="viewer"</div>
 ==
 extrajs==
 <script>
