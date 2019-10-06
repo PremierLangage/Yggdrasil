@@ -4,22 +4,15 @@ author=OCE
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
-title = Saisie d'une suite croissante
-
+title = Suite géométrique de raison 3
 
 text==  
-
-Ecrire un programme qui lit une suite de valeurs tant quelles forment une suite strictement croissante. 
-
-Lorsque la suite n'est plus croissante, la saisie s'arrête et 
-le programme affiche la longueur de la suite croissante.
+En utilisant une boucle de type "for...in...range", écrire un programme qui affiche une suite de 12 nombres dont chaque terme soit 
+égal au triple du terme précédent.
 ==
 
 code==
-
-
-
-print("Vous avez entré",nb,"valeur(s) en ordre croissant")
+# écrivez votre code ici
 ==
 
 before==
@@ -33,65 +26,16 @@ for i in range(N):
 mplsoluce4 += str(N)+"\n"
 ==
 
-# dr soluce qui marche avec des chaines ;)
 soluce==
-nb=1
-prev=input()
-next=input()
-while prev<next:
-    prev,next = next, input()
-    nb+=1
-
-print("Vous avez entré",nb,"valeur(s) en ordre croissant")
+a=input("Entrez un nombre : ")
+for i in range(12):
+    print(i+1,a)
+    a = a * 3
 ==
 
-
-zipsoluce==
-nb=1
-prec=int(input())
-suiv=int(input())
-while suiv> prec:
-    nb+=1
-    prec=suiv
-    suiv=int(input())
-print("Vous avez entré",nb,"valeur(s) en ordre croissant")
-==
-mplsoluce0==
-5 Valeurs
-2 
-3
-5
-14
-77
-0
-==
-mplsoluce1==
-Une seul
-4
-1
-==
-mplsoluce2==
-Plateau
-4
-4
-1
-==
-
-mplsoluce3==
-Départ négatif
--4
-4
-2
-2
-==
-
-
-mplsoluce3==
-Des chaines
-annanas
-bannana
-papel
-mango
+plsoluce==
+test1 | 5
+test2 | 3
 ==
 
 
