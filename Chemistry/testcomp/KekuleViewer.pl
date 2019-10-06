@@ -34,6 +34,7 @@ extrajs==
 Kekule.Indigo.enable();
 function load_kekule() {
   chemViewer = new Kekule.ChemWidget.Viewer(document.getElementById('kekule'));
+  chemViewer.setRenderType(Kekule.Render.RendererType.R3D);
 }
 function display_kekule(smi) {
   var mol = Kekule.IO.loadFormatData(smi, "smi");  
