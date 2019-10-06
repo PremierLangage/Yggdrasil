@@ -27,9 +27,9 @@ needed=for
 
 soluce==
 a=input("Entrez un nombre : ")
-for i in range(R):
-    print(i+1,a)
-    a = a * 3
+for i in range(X):
+    print(i+1,R)
+    a = a * R
 ==
 
 plsoluce==
