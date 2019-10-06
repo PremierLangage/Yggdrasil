@@ -7,13 +7,14 @@ before==#|python|
 import random
 val1=random.randint(5,25)
 val2=random.randint(1,10)
+val3=random.randint(2,3)
 ==
 
 title = {{val1}} premiers termes de la table de 
 
 text==  
-Écrire un programme qui affiche les 20 premiers termes de la table de multiplication par 7,
- en signalant au passage (à l'aide d'une astérisque) ceux qui sont des multiples de 3.
+Écrire un programme qui affiche les {{val1}} premiers termes de la table de multiplication par {{val2}},
+ en signalant au passage (à l'aide d'une astérisque) ceux qui sont des multiples de {{val3}}.
 ==
 
 code==#|python| 
