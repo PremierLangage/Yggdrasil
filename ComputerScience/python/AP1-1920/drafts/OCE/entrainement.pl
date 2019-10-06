@@ -30,12 +30,10 @@ form==
 ==
 
 soluce==
-n=int(input())
-s=""
-if n>=0:
-    for i in range(n):
-        s+=str(i*17)
-    print(s)
+a=input("Entrez un nombre : ")
+for i in range(12):
+    print(i+1,a)
+    a = a * 3
 ==
 
 plsoluce==
