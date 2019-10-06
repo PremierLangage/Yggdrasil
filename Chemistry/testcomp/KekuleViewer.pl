@@ -11,7 +11,6 @@ before ==
 lang = fr
 
 text ==
-Dessiner la molécule de votre choix.
 ==
 
 form ==
