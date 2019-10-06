@@ -10,7 +10,7 @@ val2=random.randint(1,10)
 val3=random.randint(2,3)
 ==
 
-title = {{val1}} premiers termes de la table de 
+title = {{val1}} premiers termes de la table de {{val2}}
 
 text==  
 Écrire un programme qui affiche les {{val1}} premiers termes de la table de multiplication par {{val2}},
@@ -26,9 +26,9 @@ needed=for
 
 soluce==#|python|
 chaine=""
-for i in range(20):
-    multiple=(i+1)*7
-    if multiple%3 == 0:
+for i in range({{val1}}):
+    multiple=(i+1)*{{val2}}
+    if multiple%{{val3}} == 0:
         chaine+="  "+str(i+1)+"*7 = "+"*"+str((i+1)*7)+"\n"
     else: 
         chaine+="  "+str(i+1)+"*7 = "+str((i+1)*7)+"\n"
