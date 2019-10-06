@@ -14,7 +14,7 @@ title = {{val1}} premiers termes de la table de {{val2}}
 
 text==  
 Écrire un programme qui affiche les {{val1}} premiers termes de la table de multiplication par {{val2}},
- en signalant au passage (à l'aide d'une astérisque) ceux qui sont des multiples de {{val3}}.
+ en signalant au passage (à l'aide d'une astérisque) ceux qui sont des multiples de {{val3}}. Vous utiliserez "for..in..range".
 ==
 
 code==#|python| 
