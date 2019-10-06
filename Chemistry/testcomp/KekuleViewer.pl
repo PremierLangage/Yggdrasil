@@ -29,7 +29,7 @@ extrajs==
 var viewer = new Kekule.ChemWidget.Viewer(document.getElementById('viewer'));
 viewer.setRenderType(Kekule.Render.RendererType.R3D);
 viewer.setEnableToolbar(false);  // disable and hide the toolbar
-var mol = Kekule.IO.loadFormatData("CO", 'smi');
+var mol = Kekule.IO.loadFormatData("C=O", 'smi');
 viewer.setChemObj(mol);
 
 function loadSmiles() {
