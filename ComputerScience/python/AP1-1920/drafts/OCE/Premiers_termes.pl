@@ -5,11 +5,11 @@ extends=/ComputerScience/python/template/loopsoluce.pl
 
 before==#|python|
 import random
-val1=random.randint(8,12)
+val1=random.randint(5,25)
 val2=random.randint(2,5)
 ==
 
-title = Suite géométrique de raison {{val2}}
+title = {{val1}} premiers termes
 
 text==  
 Écrire un programme qui affiche les 20 premiers termes de la table de multiplication par 7,
