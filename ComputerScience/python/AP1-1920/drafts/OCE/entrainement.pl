@@ -2,6 +2,12 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/template/loopsoluce.pl
 
+before==
+import random
+X=random.randint(8,12)
+R=random.randint(2,5)
+==
+
 title = Suite géométrique de raison X
 
 text==  
