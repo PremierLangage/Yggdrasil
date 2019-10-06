@@ -47,11 +47,10 @@ score = 100
 #    else:
 #        indices.append(e['css'])
 
-pronoms = ['Toi', 'moi,', 'eux', 'lui', 'elle', 'je', 'on', 'On', 's\'', ' On', 'On ']
+pronoms = ['Toi', 'moi,', 'eux', 'lui', 'elle', 'je', 'on', 'On', 's\'']
 found = 0
 error = 0
 for e in selectable.selections:
-    print(e['content'])
     if e['content'] in pronoms:
         e['css'] = "success-state"
         found += 1
