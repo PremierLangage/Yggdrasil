@@ -34,7 +34,7 @@ int(input("Entrez un entier strictement positf: "))
 
 before==
 import random
-N=random.randint(3)
+N=random.randint(1,3)
 mplsoluce3="Test aléatoire\n"
 for i in range(N):
     v =-random.randint(0,6)
