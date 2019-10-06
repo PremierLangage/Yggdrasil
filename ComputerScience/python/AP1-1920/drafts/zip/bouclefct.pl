@@ -21,7 +21,9 @@ sinon
 affiche "n'est pas factoriel"
 
 Exemple
+
 40320=8!
+
 22 n'est pas factoriel
 
 ==
@@ -32,9 +34,9 @@ if n==1:
 f=1
 i=1
 while f <n:
-    f*=1
+    f*=i
     i+=1
-if n==d:
+if n==f:
     print(str(n)+"="+str(i)+"!")
 else:
     print(n,"n'est pas factoriel")
