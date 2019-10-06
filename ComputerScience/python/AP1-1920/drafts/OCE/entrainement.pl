@@ -2,7 +2,7 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/template/loopsoluce.pl
 
-before==
+before==#|python|
 import random
 X=random.randint(8,12)
 R=random.randint(2,5)
