@@ -7,14 +7,12 @@
 title = Capitales de pays
 
 before ==
-import csv
 import random as rd
 
-file=open('data.csv','r',newline='')
-reader=csv.reader(file,delimiter=',')
-file.close()
+with open('data.csv','r') as file:
+    row=rd.choice(file.readlines())
 
-country,article,capital="","",""
+country,article,capital=row.split(',')
 
 if article=="le":
     ofcountry = "du " + country
