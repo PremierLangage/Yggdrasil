@@ -23,7 +23,17 @@ Si l'entier est négatif ou nul, on ne fait rien !
 
 **Exemple :**
 
+Un nombre : 6
 
+1
+
+2
+
+3
+
+6
+
+6 a 4 diviseurs
 ==
 
 
