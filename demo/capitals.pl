@@ -11,7 +11,7 @@ import csv
 import random as rd
 
 with open('data.csv','r') as csvfile:
-    pass
+    reader = csv.DictReader(csvfile, delimiter=',')
 
 ==
 
