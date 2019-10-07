@@ -19,6 +19,10 @@ selectable =: Text
 selectable.text== 
 Toi plus moi, plus eux plus tous ceux qui le veulent.
 Plus lui plus elle plus tous ceux qui sont seuls. 
+
+
+
+
 Allez venez et entrez dans la danse. 
 Allez venez, laissez faire l'insouciance. 
 A deux a mille je sais qu' on est capable. 
