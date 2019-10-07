@@ -7,20 +7,23 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 title = nombre factoriel
 
+code==
+nb = int(input("Un nombre :"))
+==
 
 text==  
 
-Ecrire un programme qui lit un entier et
+Ecrire un programme qui :
 
-s'il est égal à la factorielle d'un nombre 
+* lit un entier
 
-affiche "??=??!" 
+* affiche "??=??!" s'il est égal à la factorielle d'un nombre
 
-sinon 
+* affiche "n'est pas factoriel" sinon.
 
-affiche "n'est pas factoriel"
 
-Exemple
+
+Exemples :
 
 40320=8!
 
@@ -73,5 +76,6 @@ mplsoluce3==
 tres grand
 35184372088833
 ==
+
 
 
