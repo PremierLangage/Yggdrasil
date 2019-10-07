@@ -18,6 +18,7 @@ En utilisant une boucle de type "for...in...range", écrire un programme qui aff
 
 code== 
 # écrivez votre code ici
+a=input("Entrez un nombre : ")
 ==
 
 taboo=while
