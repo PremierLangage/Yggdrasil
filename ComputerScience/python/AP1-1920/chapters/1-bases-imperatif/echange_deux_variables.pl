@@ -12,7 +12,7 @@ ni à les lire).
 sans rien afficher.
 
 **Attention**, *votre programe doit fonctionner quelles que soient les valeurs 
-de `a` et `b` et leurs types (qui peuvent être différents).*<br><br>
+de `a` et `b` et leurs types (qui peuvent être différents).*<br>
 ==
 
 grader==
@@ -38,6 +38,7 @@ for _ in range(5):
         values={'a': y, 'b': x}
     )
 ==
+
 
 
 
