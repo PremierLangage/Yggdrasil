@@ -13,14 +13,16 @@ import random as rd
 with open('data.csv','r') as csvfile:
     reader = csv.reader(csvfile,delimiter=',')
     row = rd.choice([x for x in reader])
-    country,article,capital = row
+    
+country,article,capital = "France","la","Paris"
 
-    if article=="le":
-        ofcountry = "du " + country
-    elif article=="l":
-        ofcountry = "de l" + country
-    elif article=="la":
-        ofcountry = "de la " + country
+
+if article=="le":
+    ofcountry = "du " + country
+elif article=="l":
+    ofcountry = "de l" + country
+elif article=="la":
+    ofcountry = "de la " + country
 
 ==
 
