@@ -11,8 +11,7 @@ import random as rd
 import csv
 
 with open('data.csv','r') as file:
-    reader=csv.reader(file,delimiter=',')
-    row=rd.choice(list(reader))
+    row=rd.choice(list(csv.reader(file,delimiter=',')))
 
 country,article,capital=row
 
