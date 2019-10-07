@@ -32,7 +32,8 @@ for i in range({{val2}}):
 ==
 
 plsoluce==
-
+test1 | 5
+test2 | 3
 ==
 
 
