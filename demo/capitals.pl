@@ -13,7 +13,7 @@ import random as rd
 file=open('data.csv','r',newline='')
 reader=csv.reader(file,delimiter=',')
 country,article,capital = rd.choice(list(reader))
-close(file)
+file.close()
 
 if article=="le":
     ofcountry = "du " + country
