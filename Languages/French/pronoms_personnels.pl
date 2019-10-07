@@ -47,6 +47,7 @@ score = 100
 #    else:
 #        indices.append(e['css'])
 
+
 pronoms = ['Toi', 'moi,', 'eux', 'lui', 'elle', 'je', 'on', 'On ', 'On', ' On', 's\'']
 found = 0
 error = 0
