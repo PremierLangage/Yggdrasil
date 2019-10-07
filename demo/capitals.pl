@@ -11,7 +11,7 @@ import csv
 import random as rd
 
 with open('data.csv','r',newline='') as file:
-    s=file.readline()
+    reader=csv.reader(file)
    
 country,article,capital = "France","la","Paris"
 
