@@ -10,7 +10,7 @@ before ==
 import csv
 import random as rd
 
-with open('data.csv','r') as csvfile:
+with open('data.csv',newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     pass
     
