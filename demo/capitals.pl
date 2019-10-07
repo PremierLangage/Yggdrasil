@@ -12,8 +12,6 @@ import random as rd
 
 file=open('data.csv','r',newline='')
 reader=csv.reader(file,delimiter=',')
-s=rd.choice(list(reader))
-# country,article,capital = rd.choice(list(reader))
 file.close()
 
 country,article,capital="","",""
