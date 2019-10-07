@@ -23,7 +23,7 @@ else:
         grade = (100,'OK')
     elif a==b:
         grade=(0,"""Pensez à conserver la variable
-        que vous écrassez en premier dans une autre variable temporaire.""")
+        que vous écrasez en premier dans une autre variable temporaire.""")
     else:
         grade = (0,"""Vous devez manipuler les variables a et b.""")
 ==
@@ -49,6 +49,7 @@ Remarque le code suivant qui semble a priori répondre à la question n'est pas 
 ==
 
 form=@ /form/text_editor.html
+
 
 
 
