@@ -21,7 +21,8 @@ elif article=="l":
     ofcountry = "de l'" + country
 elif article=="la":
     ofcountry = "de la " + country
-
+elif article=="les":
+    ofcountry = "des" + country
 ==
 
 text ==
