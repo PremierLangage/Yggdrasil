@@ -11,7 +11,8 @@ import csv
 import random as rd
 
 with open('data.csv','r') as csvfile:
-    reader = csv.DictReader(csvfile)
+    reader = csv.reader(csvfile)
+    line = rd.choice([x for x in reader])
 
 country,article,capital = line
 
