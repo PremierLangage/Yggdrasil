@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathexpr.pl
+extends = /Mathematics/template/mathinput.pl
 @ data.json [data.json]
 
 title = Factorisation
@@ -72,6 +72,7 @@ evaluator==
 x=Symbol('x')
 score,numerror,feedback=ans_poly_factor(answer['1'],x,sol)
 ==
+
 
 
 
