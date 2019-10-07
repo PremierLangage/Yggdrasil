@@ -36,7 +36,7 @@ form ==
 ==
 
 evaluator ==
-if int(input.value)==capital:
+if input.value==capital:
     grade=(100,"Bravo !")
 else:
     grade=(0,"Raté !")
