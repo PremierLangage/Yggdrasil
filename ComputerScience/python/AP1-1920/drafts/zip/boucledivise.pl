@@ -5,6 +5,13 @@
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 title = Liste des diviseurs
+
+code==
+n=int(input("Un nombre : "))
+
+
+==
+
 text==  
 
 Ecrire un programme qui lit un  entier  strictement positif et affiche,
@@ -16,7 +23,7 @@ Si l'entier est négatif ou nul, on ne fait rien !
 
 
 soluce==
-n=int(input())
+n=int(input("Un nombre : "))
 if n>=1:
     nbdiv=0
     for div in range(1,n+1):
@@ -32,6 +39,7 @@ Invalide aussi |-42
 long | 114593
 Nombreux | 510510 
 ==
+
 
 
 
