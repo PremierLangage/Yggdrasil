@@ -12,7 +12,8 @@ import csv
 with open('data.csv','r') as file:
     #row=rd.choice(file.readlines())
     row=rd.choice(list(csv.reader(file,delimiter=',')))
-country,article,capital=row.split(',')
+
+country,article,capital=row
 
 if article=="le":
     ofcountry = "du " + country
