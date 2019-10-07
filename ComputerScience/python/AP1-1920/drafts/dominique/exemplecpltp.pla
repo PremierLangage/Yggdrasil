@@ -1,4 +1,7 @@
-type=cpltp
+type=course
+
+title=Exemple
+
 
 validate==
 
