@@ -10,8 +10,8 @@ before ==
 import csv
 import random as rd
 
-with open('data.csv','r',newline='') as file:
-     reader=csv.DictReader(file,delimiter=',')
+file=open('data.csv','r',newline='')
+reader=csv.DictReader(file,delimiter=',')
    
 country,article,capital = "France","la","Paris"
 
