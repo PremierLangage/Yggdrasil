@@ -8,10 +8,10 @@ title = Capitales de pays
 
 before ==
 import random as rd
-
+import csv
 with open('data.csv','r') as file:
-    row=rd.choice(file.readlines())
-
+    #row=rd.choice(file.readlines())
+    row=rd.choice(list(csv.reader(file,delimiter=',')))
 country,article,capital=row.split(',')
 
 if article=="le":
