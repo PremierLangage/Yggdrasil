@@ -7,7 +7,7 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 title = Liste des diviseurs
 
 code==
-n=int(input("Un nombre : "))
+??? = int(input("Un nombre : "))
 
 
 ==
