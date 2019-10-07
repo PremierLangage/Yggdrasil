@@ -10,6 +10,8 @@ before ==
 import csv
 import random as rd
 
+with open('data.csv','r') as csvfile:
+    pass
 
 ==
 
