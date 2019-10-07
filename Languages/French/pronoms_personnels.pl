@@ -57,7 +57,7 @@ for e in selectable.selections:
         found += 1
     else:
         e['css'] = "error-state"
-        printf(e['content']) 
+        print(e['content']) 
         error += 1
 
 if found == 10 and error == 0:
