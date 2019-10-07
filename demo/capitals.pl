@@ -9,6 +9,7 @@ title = Capitales de pays
 before ==
 import random as rd
 import csv
+
 with open('data.csv','r') as file:
     reader=csv.reader(file,delimiter=',')
     row=rd.choice(list(reader))
