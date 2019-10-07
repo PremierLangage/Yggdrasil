@@ -10,7 +10,7 @@ before ==
 import csv
 import random as rd
 
-with open('data.csv','r') as file:
+with open('data.csv','r',newline='') as file:
     s=file.readline()
    
 country,article,capital = "France","la","Paris"
