@@ -27,7 +27,7 @@ On peut s' enfuir bien plus haut que nos rêves.
 On peut partir bien plus loin que la grève. 
 ==
 selectable.selectable % true
-
+selectable.debug % true
 before==
 ==
 
