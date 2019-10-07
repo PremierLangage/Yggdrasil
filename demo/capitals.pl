@@ -11,9 +11,9 @@ import csv
 import random as rd
 
 file=open('data.csv','r',newline='')
-reader=csv.DictReader(file,delimiter=',')
-   
-country,article,capital = "France","la","Paris"
+reader=csv.reader(file,delimiter=',')
+country,article,capital = rd.choice(reader)
+close(file)
 
 if article=="le":
     ofcountry = "du " + country
