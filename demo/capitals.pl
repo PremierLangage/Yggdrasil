@@ -16,6 +16,7 @@ s=rd.choice(list(reader))
 # country,article,capital = rd.choice(list(reader))
 file.close()
 
+country,article,capital="","",""
 if article=="le":
     ofcountry = "du " + country
 elif article=="l":
