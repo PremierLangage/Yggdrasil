@@ -12,7 +12,7 @@ import random as rd
 
 file=open('data.csv','r',newline='')
 reader=csv.reader(file,delimiter=',')
-country,article,capital = rd.choice([row in reader])
+country,article,capital = rd.choice(list(reader))
 close(file)
 
 if article=="le":
