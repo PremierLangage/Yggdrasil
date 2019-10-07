@@ -11,8 +11,16 @@ import csv
 import random as rd
 
 with open('data.csv','r') as csvfile:
-    reader = csv.DictReader(csvfile, delimiter=';')
+    reader = csv.DictReader(csvfile)
 
+country,article,capital = line
+
+if article=="le":
+    ofcountry = "du " + country
+elif article=="l":
+    ofcountry = "de l" + country
+elif article=="la":
+    ofcountry = "de la " + country
 ==
 
 text ==
