@@ -51,11 +51,12 @@ pronoms = ['Toi', 'moi,', 'eux', 'lui', 'elle', 'je', 'on', 'On ', 'On', ' On', 
 found = 0
 error = 0
 for e in selectable.selections:
-    if e['content'] in pronoms:
+    if e['word'] in pronoms:
         e['css'] = "success-state"
         found += 1
     else:
         e['css'] = "error-state"
+        printf(e['word'])
         error += 1
 
 if found == 10 and error == 0:
@@ -78,6 +79,7 @@ extracss==
 }
 </style>
 ==
+
 
 
 
