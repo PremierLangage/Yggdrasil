@@ -18,7 +18,7 @@ country,article,capital=row
 if article=="le":
     ofcountry = "du " + country
 elif article=="l'":
-    ofcountry = "de l''" + country
+    ofcountry = "de l'" + country
 elif article=="la":
     ofcountry = "de la " + country
 
