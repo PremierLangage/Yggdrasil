@@ -9,6 +9,7 @@ title = nombre factoriel
 
 code==
 nb = int(input("Un nombre :"))
+
 ==
 
 text==  
@@ -43,7 +44,7 @@ f+=test
 mplsoluce4 += str(f)+"\n"
 ==
 soluce==
-n=int(input())
+n = int(input("Un nombre :"))
 if n==1:
     print("1=0!")
 f=1
