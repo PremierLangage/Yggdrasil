@@ -2,7 +2,7 @@
 @ /builder/before.py [builder.py]
 @ /grader/evaluator.py [grader.py]
 
-@ country_data.csv [data.csv]
+@ country_data.csv [data2.csv]
 
 title = Capitales de pays
 
