@@ -10,6 +10,7 @@ code==
 ??? = int(input("Un nombre : "))
 
 
+
 ==
 
 text==  
@@ -19,6 +20,10 @@ Ecrire un programme qui lit un  entier  strictement positif et affiche,
 Le programme affiche ensuite le nombre de diviseurs.
 
 Si l'entier est négatif ou nul, on ne fait rien !
+
+**Exemple :**
+
+
 ==
 
 
@@ -30,10 +35,10 @@ if n>=1:
         if n%div ==0:
             print(div)
             nbdiv+=1
-    print(nbdiv)
+    print(str(n) + " a " + str(nbdiv) + " diviseurs")
 ==
 plsoluce==
-Peu nombreux | 2 
+Peu nombreux | 6 
 Invalide | 0
 Invalide aussi |-42
 long | 114593
