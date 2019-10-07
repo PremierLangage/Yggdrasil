@@ -25,6 +25,7 @@ elif article=="la":
 ==
 
 text ==
+{{s}}
 Quelle est la capitale {{ofcountry}} ?
 ==
 
