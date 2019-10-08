@@ -10,11 +10,11 @@ de caractères `*`.
 
 Par exemple, si `nb` vaut 5, votre programme doit afficher :
 
+        *
+       *
+      *
+     *
     *
-    **
-    ***
-    ****
-    *****
 
 **Attention**, *le programe doit fonctionner quelle que soit la valeur 
 de `nb`.*<br>
