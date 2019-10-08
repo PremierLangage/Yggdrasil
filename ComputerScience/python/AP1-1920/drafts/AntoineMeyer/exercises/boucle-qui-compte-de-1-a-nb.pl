@@ -1,7 +1,7 @@
 # author = Antoine Meyer
 extends = ../templates/generic/generic.pl
 
-title = Boucle qui compte de 1 à `n`
+title = Boucle qui compte de 1 à `nb`
 
 text==
 On suppose qu'il existe une variables `nb` désignant un entier strictement positif. 
