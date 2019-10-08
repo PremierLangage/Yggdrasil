@@ -410,7 +410,10 @@ class Test:
         if inputs:
             res.append("Lignes saisies : {}".format(inputs))
         if self.output:
-            res.append("Texte affiché : <pre style='background-color:black; color:white;'>{}</pre>".format(self.output))
+            res.append("Texte affiché : "
+                       "<pre style='margin:3pt; padding:2pt; "
+                       "background-color:black; color:white;'>"
+                       "{}</pre>".format(self.output))
         if self.exception:
             res.append("Exception levée : {} ({})".format(
                 type(self.exception).__name__, self.exception))
@@ -742,8 +745,10 @@ class OutputAssert(Assert):
         if self.status:
             return "Affichage correct"
         else:
-            return "Affichage attendu :\n<pre style='margin:3pt; padding:2pt; background-color:black; color:white;'>\n{}</pre>".format(
-                self.expected)
+            return ("Affichage attendu :\n"
+                    "<pre style='margin:3pt; padding:2pt; "
+                    "background-color:black; color:white;'>\n"
+                    "{}</pre>".format(self.expected))
 
 
 class NoExceptionAssert(Assert):
