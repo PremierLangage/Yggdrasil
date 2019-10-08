@@ -29,7 +29,7 @@ def expected_output(nb):
 
 def tests(nbs):
     for nb in nbs:
-        run(title = f'De 1 à {nb}',
+        run(title = f'De 0 à {nb}-1',
             globals = {'nb': nb}, 
             output = expected_output(nb))
 
