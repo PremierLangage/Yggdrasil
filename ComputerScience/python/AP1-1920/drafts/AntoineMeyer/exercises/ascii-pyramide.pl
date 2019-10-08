@@ -1,7 +1,7 @@
 # author = Antoine Meyer
 extends = ../templates/generic/generic.pl
 
-title = Dessin en mode texte : triangle
+title = Dessin en mode texte : pyramide
 
 text==
 On suppose qu'il existe une variables `nb` désignant un entier positif. 
