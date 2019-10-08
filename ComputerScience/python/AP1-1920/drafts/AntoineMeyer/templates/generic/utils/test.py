@@ -740,9 +740,9 @@ class OutputAssert(Assert):
 
     def __str__(self):
         if self.status:
-            return "<b>Affichage correct</b>"
+            return "Affichage correct"
         else:
-            return "<b>Affichage attendu :</b>\n<pre style='background-color:black; color:white;'>\n{}</pre>".format(
+            return "Affichage attendu :\n<pre style='background-color:black; color:white;'>\n{}</pre>".format(
                 self.expected)
 
 
