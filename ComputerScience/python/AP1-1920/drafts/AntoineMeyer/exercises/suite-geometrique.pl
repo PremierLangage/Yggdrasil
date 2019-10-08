@@ -9,12 +9,12 @@ On suppose qu'il existe deux variables `a` et `b` désignant des nombres flottan
 
 On rappelle la définition de la suite :
 
-$$%
+$%
 \begin{cases}
-u_0 & = a\\
+u_0 & = a\\\
 u_{n+1} & = b \times u_n
 \end{cases}
-%$$
+%$
 
 Par exemple, si `a` vaut 3, `b` vaut 2 et `nb` vaut 5, votre programme doit afficher :
 
@@ -30,8 +30,8 @@ de `a`, `b` et `nb`.*<br>
 
 grader==#|python|
 
-import sys
-print(pl_context, file=sys.stderr)
+#import sys
+#print(pl_context, file=sys.stderr)
 
 def expected_output(a, b, nb):
     terme = a
@@ -51,4 +51,5 @@ begin_test_group("Valeurs fixées")
 tests([(3, 2, 5), (3, 2, 7), (3, 3, 5)])
 
 ==
+
 
