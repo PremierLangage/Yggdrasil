@@ -410,7 +410,7 @@ class Test:
         if inputs:
             res.append("Lignes saisies : {}".format(inputs))
         if self.output:
-            res.append("Texte affiché : <pre>{}</pre>".format(self.output))
+            res.append("Texte affiché : <div style='bgcolor:black; color:white;'><pre>{}</pre></div>".format(self.output))
         if self.exception:
             res.append("Exception levée : {} ({})".format(
                 type(self.exception).__name__, self.exception))
