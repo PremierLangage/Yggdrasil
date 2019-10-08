@@ -1,0 +1,27 @@
+
+
+title= Un petit tour de pl 
+
+introducton==
+
+la feuille d'exercice suivant vous permet de faire un petit tour des 
+capacités de pl et de faire la preuve que pl peut s'adpater a de nombreuses disciplines.
+
+Vous pouvez clicker sur les noms d'exercices dans le menu de gauche quand vous bloquez sur un exo.
+Personnellement je n'en réussit qu'un sur deux.
+
+Quand vous aurez assez de jouer a répondre a des exercices vous pouvez:
+- clicker sur éditeur puis :
+- lire la documentation générale (menu du haut)
+- lire la documentation des composant hexagone ouvert sur le haut (menu de gauche)
+
+ET enfin faire des essais d'ecrture d'exercice mais attention les documents sont partagés 
+**ne faites pas de modifications de fichiers existants
+créer un nouveau fichier pour faire vos essais**. 
+
+==
+
+@ /demo/add_int.pl 
+@ /demo/capitals.pl
+
+
