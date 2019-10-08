@@ -24,4 +24,11 @@ créer un nouveau fichier pour faire vos essais**.
 @ /demo/add_int.pl 
 @ /demo/capitals.pl
 
+@ /ComputerScience/C/examples/chemical_equation.pl #marche
+@ /ComputerScience/C/examples/proposition_subordonnee_relative.pl #marche
+@ /ComputerScience/C/examples/matrix_rank.pl #marche
+@ /ComputerScience/C/exercices/recursion/ackermann.pl #marche
+@ /example/java/junit.pl #marche
+
+
 
