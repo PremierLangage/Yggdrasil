@@ -72,10 +72,11 @@ if __name__ == "__main__":
         i=i+1
 
     outstr +=  b
-    if "feedback" in dic: # FIXME feedback devrai être un dictionnaire.
+    if "feedback" in dic: # FIXME feedback devrait être un dictionnaire.
         outstr += dic["feedback"]+" valeur de stop "+ str(stop)
     output(a,outstr)
     
+
 
 
 
