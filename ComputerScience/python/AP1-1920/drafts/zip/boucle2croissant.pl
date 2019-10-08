@@ -37,7 +37,7 @@ mplsoluce4 += str(v-10)+"\n"
 ==
 
 # dr soluce qui marche avec des chaines ;)
-solucedr==
+drsoluce==
 nb=1
 prev=input()
 next=input()
@@ -69,7 +69,7 @@ while suiv> prec:
     if typ=="str":
         prec=input()
     else:
-    suiv=int(input())
+        suiv=int(input())
 print("Vous avez entré",nb,"valeur(s) en ordre croissant")
 ==
 mplsoluce0==
