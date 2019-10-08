@@ -6,6 +6,12 @@ from sandboxio import output, get_context, get_answers
 from pltest_doc import PlRunner
 
 
+def checktaboo(taboo, answer):
+    x = re.sub("(\"(.|\n)*\"|#.*)", "", answer) #enlève les commentaires et les chaînes de caractères
+    # FIXME la chaine de caractère ""  letaboo "" est elle trouvée par la regex suivante ? 
+    return re.search("(^"+taboo+"\s|[^\"]+"+taboo+"\s)", x) != None
+
+
 missing_evaluator_stderr = """\
 The key 'evaluator' was not found in the context.
 When using this grader, the PL must declare a script inside a key 'evaluator'. This script have
@@ -24,6 +30,12 @@ if __name__ == "__main__":
 
     
     dic = get_context()
+
+    if "taboo" in dic:
+        if checktaboo(dic['taboo'], student):
+            output(0, "La boucle " + dic['taboo'] + " est proscrite. Vous devez utiliser une boucle " + dic['needed'] + ".")
+            sys.exit(1)
+
     if "pltest" not in dic and "pltest0" not in dic and "pltest1" not in dic:
         print("add  either pltest or pltestN , or change the template ", file=sys.stderr)
         sys.exit(1)
@@ -64,4 +76,5 @@ if __name__ == "__main__":
         outstr += dic["feedback"]+" valeur de stop "+ str(stop)
     output(a,outstr)
     
+
 
