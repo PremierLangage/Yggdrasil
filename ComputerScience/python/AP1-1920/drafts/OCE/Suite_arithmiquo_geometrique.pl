@@ -17,6 +17,7 @@ a>1,
 b>0
 
 pour a et b vous prendrez les valeurs : X et Y
+Pour N la valeur 100
 ==
 
 code== 
