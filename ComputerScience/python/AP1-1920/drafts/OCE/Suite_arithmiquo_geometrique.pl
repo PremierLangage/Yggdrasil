@@ -24,7 +24,10 @@ Pour N la valeur 100 et pour Uo la valeur 1
 
 editor.code== #|python|
 # insérez votre code ici
-
+a=??
+b=??
+N=??
+Uo=??
 # compléter les ??
 print("le résultat est :",??)
 ==
@@ -40,6 +43,7 @@ pltest==#|python|
 >>> a,b,N,Uo=1,2,100,3
 6338253001141147007483516026878
 ==
+
 
 
 
