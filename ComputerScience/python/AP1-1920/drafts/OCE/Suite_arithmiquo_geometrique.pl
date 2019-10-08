@@ -33,6 +33,7 @@ taboo=while
 # needed=for
 
 grader==#|python|
+import sys
 print(student)
 ==
 
