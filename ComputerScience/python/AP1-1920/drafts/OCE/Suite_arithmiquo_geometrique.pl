@@ -15,8 +15,8 @@ text==
 Ecrire un programme permettant d'afficher le Nème entier de la suite arithmético géométrique croissante suivante : 
 
 Un+1 = aUn + b
-avec Uo > 0
-a>1
+avec Uo > 0,
+a>1,
 b>0
 
 pour a et b vous prendrez les valeurs : X et Y
