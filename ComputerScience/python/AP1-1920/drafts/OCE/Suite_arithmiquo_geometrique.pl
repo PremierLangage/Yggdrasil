@@ -40,7 +40,7 @@ taboo=while
 #==
 
 grader==#|python|
-student = get_answers()['answer']
+#student = get_answers()['answer']
 print("student")
 ==
 
