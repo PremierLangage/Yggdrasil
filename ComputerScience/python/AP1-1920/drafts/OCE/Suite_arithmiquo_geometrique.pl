@@ -6,7 +6,7 @@ extends=/ComputerScience/python/template/loopsoluce.pl
 before==#|python|
 ==
 
-title = Suite arithmético géométrique
+title = Suite arithmético-géométrique
 
 text==  
 En utilisant une boucle "for in range", écrire un programme permettant d'afficher le Nème entier de la suite arithmético géométrique croissante suivante : 
@@ -35,11 +35,10 @@ N=100
 U=1
 for i in range(N):
     U += a*U + b
-
 print("le résultat est :",U)
 ==
 
-plsoluce==
+mplsoluce0==
 
 ==
 
