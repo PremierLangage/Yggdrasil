@@ -5,11 +5,9 @@
 # extends = /ComputerScience/python/AP1-1920/drafts/AntoineMeyer/templates/generic/generic.pl
 
 @ /ComputerScience/python/AP1-1920/templates/utils/pltest_doc.py
-@ /ComputerScience/python/AP1-1920/templates/utils/pltestgrader.py [grader.py]
+#@ /ComputerScience/python/AP1-1920/templates/utils/pltestgrader.py [grader.py]
 @ /ComputerScience/python/AP1-1920/templates/utils/feedback2.py
 @ /ComputerScience/python/AP1-1920/templates/utils/template.html
-# 
-
 @ /utils/sandboxio.py
 @ /builder/none.py [builder.py]
 
@@ -55,7 +53,7 @@ print("le résultat est :",??)
 #==
 
 grader==#|python|
-student = get_answers()['answer']
+#student = get_answers()['answer']
 print("student")
 ==
 
