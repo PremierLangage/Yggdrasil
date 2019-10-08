@@ -34,8 +34,8 @@ print("le résultat est :",??)
 # needed=for
 
 grader==#|python|
-import sys
-print(pl_context, file=sys.stderr)
+from sandboxio import output, get_context, get_answers
+print(get_answers)
 ==
 
 
