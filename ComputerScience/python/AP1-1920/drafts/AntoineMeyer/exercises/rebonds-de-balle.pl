@@ -23,9 +23,11 @@ Par exemple, si `h` vaut initialement `20`, le programme doit afficher :
 grader==#|python|
 def expected_output(hauteur):
     res = ""
+    nb = 0
     for i in range(nb):
         res += str(hauteur) + '\n'
-    return res
+        nb += 1
+    return res + f'nombre de rebonds : {nb}'
 
 def tests(nbs):
     for nb in nbs:
