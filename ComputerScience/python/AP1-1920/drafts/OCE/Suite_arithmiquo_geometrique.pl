@@ -32,13 +32,6 @@ print("le résultat est :",??)
 taboo=while
 needed=for
 
-soluce== #|python|
-# rien dedans mais si non présent plantage
-==
-
-plsoluce==
-==
-
 pltest==#|python|
 >>> a,b,N,Uo=2,3,100,1
 1288443801830028327591152824414053181755268805001
