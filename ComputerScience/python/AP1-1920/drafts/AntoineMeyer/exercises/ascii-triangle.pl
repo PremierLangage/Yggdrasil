@@ -1,20 +1,20 @@
 # author = Antoine Meyer
 extends = ../templates/generic/generic.pl
 
-title = Boucle qui compte de 0 à `nb - 1`
+title = Dessin en mode texte : triangle
 
 text==
 On suppose qu'il existe une variables `nb` désignant un entier strictement positif. 
-Écrire un programme dont l'exécution affiche sur la sortie standard les nombres de 
-`0` à `nb-1` (chacun suivi d'un retour à la ligne), à l'exclusion de tout autre caractère.
+Écrire un programme dont l'exécution affiche sur la sortie standard un triangle composé 
+de caractères `*`.
 
 Par exemple, si `nb` vaut 5, votre programme doit afficher :
 
-    0
-    1
-    2
-    3
-    4
+    *
+    **
+    ***
+    ****
+    *****
 
 **Attention**, *le programe doit fonctionner quelle que soit la valeur 
 de `nb`.*<br>
@@ -26,7 +26,7 @@ grader==#|python|
 def expected_output(nb):
     res = ""
     for i in range(nb):
-        res += str(i) + '\n'
+        res += '*' * i + '\n'
     return res
 
 def tests(nbs):
