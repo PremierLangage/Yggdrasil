@@ -6,7 +6,10 @@ title=Exemple
 
 validate==
 
-valid=(True," Bravo")
+valid=(True, "Bravo")
 ==
 
+next==
+
+==
 
