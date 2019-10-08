@@ -17,12 +17,7 @@ u_{n+1} & = a\times u_n + b
 \end{cases}
 %$
 
-Un+1 = aUn + b
-avec Uo > 0,
-a>1,
-b>0
-
-Vous utiliserez impérativement les variables a, b, N et Uo
+Vous utiliserez impérativement les variables a, b, N et Uo <br>
 pour a et b vous prendrez les valeurs : 2 et 3
 Pour N la valeur 100 et pour Uo la valeur 1
 ==
