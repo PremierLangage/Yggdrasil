@@ -9,7 +9,7 @@ title = Capitales de pays
 before ==
 import random as rd
 import csv
-
+essai=1
 with open('data.csv','r') as file:
     row=rd.choice(list(csv.reader(file,delimiter=',')))
 
@@ -37,9 +37,13 @@ form ==
 ==
 
 evaluator ==
+essai+=1
 if input.value==capital:
     grade=(100,"Bravo !")
 else:
+    if essai >3:
+        exec(before)
     grade=(0,"Raté !")
 ==
+
 
