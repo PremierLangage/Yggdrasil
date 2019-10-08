@@ -51,7 +51,7 @@ print("Vous avez entré",nb,"valeur(s) en ordre croissant")
 
 soluce==
 typ=""
-While typ!= "int" and type!="str":
+while typ!= "int" and type!="str":
     print("entrez le type (int ou str)")
     typ=input()
 
