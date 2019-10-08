@@ -28,23 +28,25 @@ de `a`, `b` et `nb`.*<br>
 ==
 
 grader==#|python|
-def expected_output(nb):
+def expected_output(a, b, nb):
+    terme = a
     res = ""
     for i in range(nb):
-        res += str(i) + '\n'
+        res += str(terme) + '\n'
+        terme *= b
     return res
 
-def tests(nbs):
-    for nb in nbs:
-        run(title = f'De 0 à {nb}-1',
-            globals = {'nb': nb}, 
-            output = expected_output(nb))
+def tests(cases):
+    for a, b, nb in cases:
+        run(title = f'Premier terme {a}, raison {b}, nb = {nb}',
+            globals = {'a': a, 'b': b, 'nb': nb}, 
+            output = expected_output(a, b, nb))
 
 begin_test_group("Valeurs fixées")
-tests([0, 3, 5])
+tests([(3, 2, 5), (3, 2, 7), (3, 3, 5)])
 
-begin_test_group("Nombres aléatoires")
-from random import sample
-tests(sample(list(range(100, 200)), 5))
+#begin_test_group("Nombres aléatoires")
+#from random import sample
+#tests(sample(list(range(100, 200)), 5))
 ==
 
