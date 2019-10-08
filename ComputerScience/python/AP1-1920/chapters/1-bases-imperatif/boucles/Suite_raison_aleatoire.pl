@@ -25,7 +25,7 @@ taboo=while
 needed=for
 
 soluce==
-a=input("Entrez un nombre : ")
+a=int(input("Entrez un nombre : "))
 for i in range({{val2}}):
     print(i+1,a)
     a = a * {{val1}}
