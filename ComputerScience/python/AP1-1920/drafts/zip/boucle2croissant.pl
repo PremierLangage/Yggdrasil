@@ -22,11 +22,15 @@ print("Vous avez entré",nb,"valeur(s) en ordre croissant")
 before==
 import random
 N=random.randint(4,10)
-mplsoluce4="Test aléatoire\n"
+mplsoluce6="Test aléatoire\n"
+if random.randint(0,1)==0:
+    mplsoluce6 +="str\n"
+else:
+    mplsoluce6 +="str\n"
 v=40
 for i in range(N):
     v += random.randint(1,6)
-    mplsoluce4 += str(v)+"\n"
+    mplsoluce6 += str(v)+"\n"
 mplsoluce4 += str(v-10)+"\n"
 ==
 
@@ -102,18 +106,10 @@ str
 1
 ==
 
+
 mplsoluce4=
 Départ négatif
-int
--4
-4
-2
-2
-==
-mplsoluce=
-Départ négatif
-
-t
+str
 -4
 4
 2
