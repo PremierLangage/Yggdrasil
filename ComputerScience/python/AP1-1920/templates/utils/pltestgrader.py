@@ -33,7 +33,7 @@ if __name__ == "__main__":
     student = get_answers()['answer']
     if "taboo" in dic:
         if checktaboo(dic['taboo'], student):
-            output(0, "La boucle " + dic['taboo'] + " est proscrite. Vous devez utiliser une boucle " + dic['needed'] + ".")
+            output(0, "Le mot clef " + dic['taboo'] + " est proscrite.")
             sys.exit(1)
 
     if "pltest" not in dic and "pltest0" not in dic and "pltest1" not in dic:
