@@ -125,7 +125,7 @@ str
 
 mplsoluce5==
 Des chaines
-
+str
 annanas
 bannana
 papel
