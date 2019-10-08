@@ -36,7 +36,7 @@ def tests(nbs):
             output = expected_output(nb))
 
 begin_test_group("Valeurs fixées")
-tests([0, 4, 5])
+tests([100, 4, 5])
 
 begin_test_group("Nombres aléatoires")
 from random import sample
