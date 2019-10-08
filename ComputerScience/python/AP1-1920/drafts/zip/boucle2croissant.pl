@@ -33,7 +33,7 @@ v=40
 for i in range(N):
     v += random.randint(1,6)
     mplsoluce6 += str(v)+"\n"
-mplsoluce4 += str(v-10)+"\n"
+mplsoluce6 += str(v-10)+"\n"
 ==
 
 # dr soluce qui marche avec des chaines ;)
