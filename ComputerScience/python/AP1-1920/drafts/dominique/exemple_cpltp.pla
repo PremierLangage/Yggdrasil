@@ -1,4 +1,4 @@
-type=course
+type=cpltp
 
 title=Exemple
 
@@ -8,3 +8,4 @@ validate==
 
 
 ==
+
