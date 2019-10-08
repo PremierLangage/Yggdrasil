@@ -7,10 +7,19 @@ Exercices sur les boucles utilisant le grader `generic`.
 ==
 
 # Exercice avec des boucles for 
+
+# Basiques
 @ ../exercises/boucle-qui-compte-de-0-a-nb-moins-1.pl
 @ ../exercises/boucle-qui-compte-de-1-a-nb.pl
 @ ../exercises/boucle-qui-compte-de-nb-a-1.pl
+
+# Suites et sommes
 @ ../exercises/suite-geometrique.pl
 @ ../exercises/rebonds-de-balle.pl
 @ ../exercises/somme-des-entiers-avec-saisie-controlee.pl
+
+# Ascii art
+@ ../exercises/ascii-triangle.pl
+@ ../exercises/ascii-oblique.pl
+@ ../exercises/ascii-pyramide.pl
 
