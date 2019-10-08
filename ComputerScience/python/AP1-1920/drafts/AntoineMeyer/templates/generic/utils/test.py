@@ -15,6 +15,7 @@ _default_test_template = _default_template_dir + 'testitem.html'
 _default_group_template = _default_template_dir + 'testgroup.html'
 
 _default_params = {
+    "verbose_inputs": True,
     "report_success": False,
     "fail_fast": True,
 }
@@ -160,7 +161,7 @@ class Test:
         out_stream = StringIO()
 
         # run the code while mocking input, sys.argv and stdout printing
-        with mock_input(self.current_inputs, self.current_state):
+        with mock_input(self.current_inputs, self.current_state, verbose=self.params['verbose_inputs']):
             with mock.patch.object(sys, 'argv', self.argv):
                 with mock.patch.object(sys, 'stdout', out_stream):
                     try:
@@ -823,4 +824,5 @@ class NoGlobalChangeAssert(Assert):
             return "Variables globales inchangées"
         else:
             return "Variables globales modifiées"
+
 
