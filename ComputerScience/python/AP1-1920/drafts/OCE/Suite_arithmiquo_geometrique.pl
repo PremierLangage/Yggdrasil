@@ -15,7 +15,7 @@ editor.fontsize=14
 # une interface standard d'exercice avec un editeur pour la réponse
 form=@ /form/text_editor.html
 
-settings.allow_reroll=1
+#settings.allow_reroll=1
 
 title = Suite arithmético-géométrique
 
@@ -53,8 +53,7 @@ print("le résultat est :",??)
 #==
 
 grader==#|python|
-student = get_answers()['answer']
-print("student")
+
 ==
 
 
