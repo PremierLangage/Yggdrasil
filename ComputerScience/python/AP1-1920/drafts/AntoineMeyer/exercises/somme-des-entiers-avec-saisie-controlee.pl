@@ -46,7 +46,7 @@ def affichage_attendu(saisie):
     i = 0
     res = ""
     while i < len(saisie) and int(saisie[i]) < 0: 
-        res += "Saisir un entier positif : " + saisie[i] + "\n"
+        res += f"Saisir un entier positif : {saisie[i]}\n"
         res += "Mauvaise saisie\n"
         i += 1
     n = saisie[i]
