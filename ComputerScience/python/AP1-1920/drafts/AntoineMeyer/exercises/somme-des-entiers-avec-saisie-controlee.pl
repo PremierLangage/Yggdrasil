@@ -61,7 +61,7 @@ for saisie in saisies_sans_erreur:
 
 begin_test_group("Saisies avec erreur")
 for saisie in saisies_avec_erreur:
-    run(inputs=saisie1, output=affichage_attendu(saisie)))
+    run(inputs=saisie1, output=affichage_attendu(saisie))
 
 ==
 
