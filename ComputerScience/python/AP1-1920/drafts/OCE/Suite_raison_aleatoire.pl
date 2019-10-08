@@ -7,9 +7,12 @@ before==#|python|
 import random
 val1=random.randint(8,12)
 val2=random.randint(2,5)
+
+title = f"Suite géométrique de raison {{val2}}"
+
 ==
 
-title = Suite géométrique de raison {{val2}}
+
 
 text==  
 En utilisant une boucle de type "for...in...range", écrire un programme qui demande à l'utilisateur un entier et à partir de cet entier, 
@@ -44,5 +47,6 @@ test 2
 10
 3
 ==
+
 
 
