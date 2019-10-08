@@ -17,7 +17,6 @@ et on la comptabilisera dans le décompte.)
 
 Par exemple, si `h` vaut initialement `20`, le programme doit afficher :
 
-```
     20
     18.0
     16.2
@@ -33,7 +32,6 @@ Par exemple, si `h` vaut initialement `20`, le programme doit afficher :
     5.64859072962
     5.083731656658
     nombre de rebonds : 14
-```
 
 ==
 
