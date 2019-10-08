@@ -31,10 +31,17 @@ for i in range({{val2}}):
     a = a * {{val1}}
 ==
 
-plsoluce==
-test1 | 5
-test2 | 3
+mplsoluce0==
+test 1
+5
+12
+3
 ==
 
-
+mplsoluce1==
+test 2
+2
+10
+3
+==
 
