@@ -1,4 +1,4 @@
-extends = /ComputerScience/python/AP1-1920/drafts/AntoineMeyer/templates/generic/generic.pl
+extends = ../templates/generic/generic.pl
 
 title = Suite géométrique
 
