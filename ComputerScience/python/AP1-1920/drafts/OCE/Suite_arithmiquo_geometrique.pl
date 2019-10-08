@@ -26,8 +26,8 @@ code==
 
 ==
 
-taboo=while
-needed=for
+taboo=for
+needed=while
 
 soluce==
 a=input("Entrez un nombre : ")
