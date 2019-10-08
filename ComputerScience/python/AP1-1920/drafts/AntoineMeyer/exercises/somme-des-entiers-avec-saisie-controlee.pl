@@ -57,11 +57,11 @@ def affichage_attendu(saisie):
 
 begin_test_group("Saisies sans erreur")
 for saisie in saisies_sans_erreur:
-    run(inputs=saisie1, output=affichage_attendu(saisie))
+    run(inputs=saisie, output=affichage_attendu(saisie))
 
 begin_test_group("Saisies avec erreur")
 for saisie in saisies_avec_erreur:
-    run(inputs=saisie1, output=affichage_attendu(saisie))
+    run(inputs=saisie, output=affichage_attendu(saisie))
 
 ==
 
