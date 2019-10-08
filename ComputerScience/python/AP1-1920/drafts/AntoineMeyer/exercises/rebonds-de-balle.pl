@@ -1,4 +1,3 @@
-
 # author = Antoine Meyer
 extends = ../templates/generic/generic.pl
 
