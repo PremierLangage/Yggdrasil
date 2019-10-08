@@ -17,6 +17,21 @@ et on la comptabilisera dans le décompte.)
 
 Par exemple, si `h` vaut initialement `20`, le programme doit afficher :
 
+    20
+    18.0
+    16.2
+    14.58
+    13.122
+    11.809800000000001
+    10.628820000000001
+    9.565938000000001
+    8.6093442
+    7.748409780000001
+    6.973568802000001
+    6.276211921800001
+    5.64859072962
+    5.083731656658
+    nombre de rebonds : 14
 
 ==
 
