@@ -31,15 +31,15 @@ def expected_output(nb):
 
 def tests(nbs):
     for nb in nbs:
-        run(title = f'De 0 à {nb}-1',
+        run(title = f'Hauteur {nb}',
             globals = {'nb': nb}, 
             output = expected_output(nb))
 
 begin_test_group("Valeurs fixées")
-tests([0, 3, 5])
+tests([0, 4, 5])
 
 begin_test_group("Nombres aléatoires")
 from random import sample
-tests(sample(list(range(100, 200)), 5))
+tests(sample(list(range(10, 20)), 3))
 ==
 
