@@ -12,7 +12,8 @@ val2=random.randint(2,5)
 title = Suite géométrique de raison {{val2}}
 
 text==  
-En utilisant une boucle de type "for...in...range", écrire un programme qui demande à l'utilisateur un entier "a" et, sur la base de "a", affiche une suite de {{val1}} entiers dont chaque terme soit 
+En utilisant une boucle de type "for...in...range", écrire un programme qui demande à l'utilisateur un entier "a" et, sur la base 
+de "a", affiche une suite de {{val1}} entiers dont chaque terme soit 
 égal à {{val2}} fois le terme précédent.
 ==
 
@@ -47,4 +48,5 @@ test 2
 10
 3
 ==
+
 
