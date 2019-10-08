@@ -1,12 +1,12 @@
 # author = Antoine Meyer
 extends = ../templates/generic/generic.pl
 
-title = Boucle qui compte (1)
+title = Boucle qui compte de 0 à `nb - 1`
 
 text==
 On suppose qu'il existe une variables `nb` désignant un entier strictement positif. 
 Écrire un programme dont l'exécution affiche sur la sortie standard les nombres de 
-`1` à `nb` (chacun suivi d'un retour à la ligne), à l'exclusion de tout autre caractère.
+`0` à `nb-1` (chacun suivi d'un retour à la ligne), à l'exclusion de tout autre caractère.
 
 Par exemple, si `nb` vaut 5, votre programme doit afficher :
 
@@ -23,7 +23,7 @@ de `nb`.*<br>
 grader==#|python|
 def expected_output(nb):
     res = ""
-    for i in range(1, nb+1):
+    for i in range(nb):
         res += str(i) + '\n'
     return res
 
