@@ -30,8 +30,8 @@ def expected_output(h):
         nb += 1
     return res + f'nombre de rebonds : {nb}'
 
-def tests(nbs):
-    for nb in nbs:
+def tests(hauteurs):
+    for h in hauteurs:
         run(title = f'Rebonds depuis {h} cm',
             globals = {'h': h}, 
             output = expected_output(h))
