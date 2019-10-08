@@ -23,21 +23,19 @@ pour a et b vous prendrez les valeurs : 2 et 3 <br>
 Pour N la valeur 100 et pour Uo la valeur 1
 ==
 
-editor.code== #|python|
+#editor.code== #|python|
 # insérez votre code ici
 
 # compléter les ??
-print("le résultat est :",??)
-==
+#print("le résultat est :",??)
+#==
 
-taboo=while
+# taboo=while
 # needed=for
 
 grader==#|python|
 import sys
-from sandboxio import output, get_context, get_answers
-dictionnaire = get_context()
-etudiant = get_answers()['answer']
+print(pl_context, file=sys.stderr)
 print(etudiant)
 ==
 
