@@ -32,10 +32,11 @@ créer un nouveau fichier pour faire vos essais**.
 
 @ section-maths.pl
 
+@ /Mathematics/exercises/complex_numbers/affixe.pl
 @ /Mathematics/exercises/arithmetic/primefactor.pl
-@ /Mathematics/exercises/finitesets/finitesets_intersection.pl
+@ /Mathematics/exercises/complex_numbers/cplx_computation_.pl
 # @ conceptexo/Mathematics/exercises/finitesets/element_subset.pl
-@ /Mathematics/exercises/fractions/operation_fraction.pl
+@ /Mathematics/exercises/finitesets/divisibility.pl
 
 @ section-info.pl
 
