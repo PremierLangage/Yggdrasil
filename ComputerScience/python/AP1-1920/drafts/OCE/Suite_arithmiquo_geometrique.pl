@@ -30,12 +30,15 @@ code== #|python|
 print("le résultat est :",??)
 ==
 
-# taboo=while
+taboo=while
 # needed=for
 
 grader==#|python|
+import sys
 from sandboxio import output, get_context, get_answers
-print("get_answers")
+dictionnaire = get_context()
+etudiant = get_answers()['answer']
+print(etudiant)
 ==
 
 
