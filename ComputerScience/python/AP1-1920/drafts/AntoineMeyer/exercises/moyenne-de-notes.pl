@@ -15,7 +15,7 @@ texte `'stop'` pour indiquer qu'il souhaite s'arrêter.
 Le programme devra également afficher un message d'erreur si une note saisie 
 est incorrecte, et ne devra pas la prendre en compte dans le calcul.
 
-Voici un exemple d'interaction avec le programme :
+### Voici un exemple d'interaction avec le programme :
 
     Saisir une note entre 0 et 20 ou stop pour arrêter : 12
     Saisir une note entre 0 et 20 ou stop pour arrêter : 14
@@ -27,7 +27,7 @@ Voici un exemple d'interaction avec le programme :
     Nombre de notes : 2
     Moyenne : 13
 
-En voici un autre exemple :
+### En voici un autre exemple :
 
     Saisir une note entre 0 et 20 ou stop pour arrêter : -5
     Note non prise en compte
