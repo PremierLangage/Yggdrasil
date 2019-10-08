@@ -26,6 +26,16 @@ Voici un exemple d'interaction avec le programme :
     Saisir une note entre 0 et 20 ou stop pour arrêter : stop
     Nombre de notes : 2
     Moyenne : 13
+
+En voici un autre exemple :
+
+    Saisir une note entre 0 et 20 ou stop pour arrêter : -5
+    Note non prise en compte
+    Saisir une note entre 0 et 20 ou stop pour arrêter : 21
+    Note non prise en compte
+    Saisir une note entre 0 et 20 ou stop pour arrêter : stop
+    Nombre de notes : 0
+    Moyenne : pas de moyenne
 ==
 
 grader==#|python|
