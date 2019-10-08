@@ -12,8 +12,13 @@ val2=random.randint(2,5)
 title = Suite arithmético géométrique
 
 text==  
-En utilisant une boucle de type "for...in...range", écrire un programme qui affiche une suite de {{val1}} nombres dont chaque terme soit 
-égal à {{val2}} fois le terme précédent.
+Ecrire un programme permettant d'afficher le Nème entier de la suite arithmético géométrique croissante suivante : 
+
+Un+1 = aUn + b
+avec Uo > 0
+a>1
+b>0
+
 ==
 
 code== 
