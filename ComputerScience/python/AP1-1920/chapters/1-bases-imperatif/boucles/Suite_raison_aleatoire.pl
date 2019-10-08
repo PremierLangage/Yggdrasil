@@ -31,6 +31,9 @@ for i in range({{val2}}):
     a = a * {{val1}}
 ==
 
+plsoluce==
+==
+
 mplsoluce0==
 test 1
 5
