@@ -8,7 +8,7 @@ import random
 val1=random.randint(8,12)
 val2=random.randint(2,5)
 
-title = f"Suite géométrique de raison {{val2}}"
+title = f"Suite géométrique de raison {val2}"
 
 ==
 
