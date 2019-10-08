@@ -40,7 +40,8 @@ taboo=while
 #==
 
 grader==
-print(get_context())
+student = get_answers()['answer']
+print("student")
 ==
 
 
