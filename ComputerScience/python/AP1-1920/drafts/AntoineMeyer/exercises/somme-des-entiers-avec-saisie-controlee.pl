@@ -62,6 +62,7 @@ for saisie in saisies_sans_erreur:
     run(inputs=saisie, output=affichage_attendu(saisie))
 
 begin_test_group("Saisies avec erreurs")
+run(inputs=["bonjour"], exception=Exception)
 for saisie in saisies_avec_erreurs:
     run(inputs=saisie, output=affichage_attendu(saisie))
 
