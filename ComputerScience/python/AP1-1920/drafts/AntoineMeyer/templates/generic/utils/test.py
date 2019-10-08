@@ -718,7 +718,7 @@ class Verbatim:
         self.code = code
 
     def render(self):
-        return "<pre>{}</pre>".format(self.code)
+        return "<code>{}</code>".format(self.code)
 
 
 class Assert:
@@ -742,7 +742,7 @@ class OutputAssert(Assert):
         if self.status:
             return "Affichage correct"
         else:
-            return "Affichage attendu : \n<code>\n{}\n</code>".format(
+            return "Affichage attendu :\n<pre>\n{}\n</pre>".format(
                 self.expected)
 
 
