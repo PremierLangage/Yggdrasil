@@ -20,15 +20,19 @@ pour a et b vous prendrez les valeurs : X et Y
 Pour N la valeur 100 et pour Uo la valeur 1
 ==
 
-code== 
-
+code== #|python|
+# insérez votre code ici
+print("le résultat est :",U)
 ==
 
 taboo=while
 needed=for
 
-soluce==
+soluce== #|python|
+for i in range(N):
+    U += a*U + b
 
+print("le résultat est :",U)
 ==
 
 plsoluce==
