@@ -5,8 +5,7 @@
 # Heritaged'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
-title = suite arithmético-géométrique 
-
+title = approximation de Pi
 code==
 ?? = int(input("Entrez un nombre : "))
 
@@ -19,9 +18,10 @@ print(??,"terme(s) inférieur(s) à",nb)
 
 text==  
 
-Ecrire un programme qui :
+on veut comparer des séries permettant de calcuer 
 
-on considère la suite définie par:
+\pi. On considère les trois séries :
+
 
 u<sub>0</sub>=3
 
