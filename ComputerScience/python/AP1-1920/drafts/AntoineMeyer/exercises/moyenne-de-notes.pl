@@ -30,11 +30,13 @@ Voici un exemple d'interaction avec le programme :
 
 grader==#|python|
 
-saisies_sans_erreur = [["10"], ["12"], ["1"], ["0"]]
+saisies_sans_erreur = [["10", "stop"], ["12", "14", "16", "stop"], ["stop"]]
 
 saisies_avec_erreurs = [
-    ["-4", "-10", "10"],
-    ["-4", "-10", "-10", "-1", "-3", "1"]]
+    ["-1", "21", "40", "stop"], 
+    ["12", "-1", "-1", "14", "16", "stop"],
+    ["1"] + ["-1"] * 30 + ["stop"]
+]
 
 def affichage_attendu(saisie):
     nb = 0
@@ -53,7 +55,6 @@ def affichage_attendu(saisie):
     moyenne = somme / nb if nb else 'pas de moyenne'
     res += f"Moyenne : {moyenne}\n"
     return res
-        
 
 begin_test_group("Saisies sans erreur")
 for saisie in saisies_sans_erreur:
