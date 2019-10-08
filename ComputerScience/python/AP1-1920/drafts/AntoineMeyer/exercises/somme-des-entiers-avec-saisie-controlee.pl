@@ -49,7 +49,7 @@ def affichage_attendu(saisie):
         res += f"Saisir un entier positif : {saisie[i]}\n"
         res += "Mauvaise saisie\n"
         i += 1
-    n = saisie[i]
+    n = int(saisie[i])
     somme = 0
     for i in range(n + 1):
         somme += i
