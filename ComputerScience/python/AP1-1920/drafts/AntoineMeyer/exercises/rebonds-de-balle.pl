@@ -43,7 +43,7 @@ def expected_output(h):
         res += str(h) + '\n'
         h *= .9
         nb += 1
-    return res + f'nombre de rebonds : {nb}'
+    return res + f'nombre de rebonds : {nb}\n'
 
 def tests(hauteurs):
     for h in hauteurs:
