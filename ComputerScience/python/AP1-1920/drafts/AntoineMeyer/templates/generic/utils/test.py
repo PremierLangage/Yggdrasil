@@ -9,8 +9,8 @@ import jinja2
 
 from mockinput import mock_input
 
-_default_template_dir = ''
-# _default_template_dir = 'templates/generic/jinja/'
+# _default_template_dir = ''
+_default_template_dir = 'templates/generic/jinja/'
 _default_test_template = _default_template_dir + 'testitem.html'
 _default_group_template = _default_template_dir + 'testgroup.html'
 
@@ -161,7 +161,8 @@ class Test:
         out_stream = StringIO()
 
         # run the code while mocking input, sys.argv and stdout printing
-        with mock_input(self.current_inputs, self.current_state, verbose=self.params['verbose_inputs']):
+        with mock_input(self.current_inputs, self.current_state,
+                        verbose=self.params['verbose_inputs']):
             with mock.patch.object(sys, 'argv', self.argv):
                 with mock.patch.object(sys, 'stdout', out_stream):
                     try:
@@ -274,6 +275,19 @@ class Test:
 
     """Assertions."""
 
+    @staticmethod
+    def _unidiff_output(expected, actual):
+        """
+        Helper function. Returns a string containing the unified diff of two
+        multiline strings. Thanks https://stackoverflow.com/a/845432/4206331
+        """
+
+        import difflib
+        expected = expected.splitlines(1)
+        actual = actual.splitlines(1)
+        diff = difflib.unified_diff(expected, actual)
+        return ''.join(diff)
+
     def assert_output(self, expected: Any, cmp: Callable = operator.eq) -> bool:
         """
         Assert that the last run's output equals `expected` (using `cmp` as
@@ -284,7 +298,8 @@ class Test:
         :return: Assertion status.
         """
         status = cmp(expected, self.output)
-        self.record_assertion(OutputAssert(status, expected))
+        diff = Test._unidiff_output(expected, self.output)
+        self.record_assertion(OutputAssert(status, diff))
         return status
 
     def assert_result(self, expected: Any, cmp: Callable = operator.eq) -> bool:
@@ -824,5 +839,4 @@ class NoGlobalChangeAssert(Assert):
             return "Variables globales inchangées"
         else:
             return "Variables globales modifiées"
-
 
