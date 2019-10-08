@@ -1,0 +1,10 @@
+
+title= Feuille d'exercice sur les boucles 
+
+# Exercice avec des boucles for 
+@ ../exercises/boucle-qui-compte-de-0-a-nb-moins-1.pl
+@ ../exercises/boucle-qui-compte-de-1-a-nb.pl
+@ ../exercises/suite-geometrique.pl
+@ ../exercises/rebonds-de-balle.pl
+@ ../exercises/somme-des-entiers-avec-saisie-controlee.pl
+
