@@ -9,8 +9,12 @@ title = suite arithmético-géométrique
 
 code==
 ?? = int(input("Entrez un nombre : "))
-nb)
-print(??," terme(s) inférieur(s) à",
+
+
+
+
+print(??,"terme(s) inférieur(s) à",nb)
+
 ==
 
 text==  
@@ -31,6 +35,26 @@ u<sub>n+1</sub>=2u<sub>n</sub>+1
 
 Exemple  :
 
-Entrez un nombre : 4
+Entrez un nombre : 7
+1 terme(s) inférieur(s) à 7
+==
+
+soluce==
+u0=2
+nb=int(input("Entrez un nombre : "))
+nbtermes=0
+while u0<nb:
+    print(u0)
+    u0=2*u0+3
+    nbtermes+=1
+
+print(nbtermes,"terme(s) inférieur(s) à",nb)
 
 ==
+
+plsoluce==
+Exemple| 7
+Aucun | 1
+Grand | 32456
+==
+
