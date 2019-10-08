@@ -1,7 +1,7 @@
 # author=OCE
 # Heritage d'un type d'exercice 
 # extends=/ComputerScience/python/template/loopsoluce.pl
-extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
+# extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title = Suite arithmético-géométrique
 
@@ -29,7 +29,7 @@ code== #|python|
 print("le résultat est :",??)
 ==
 
-taboo=while
+# taboo=while
 # needed=for
 
 grader==#|python|
@@ -37,14 +37,6 @@ import sys
 print(student)
 ==
 
-pltest==#|python|
->>> a,b,N,Uo=2,3,100,1
-1288443801830028327591152824414053181755268805001
->>> a,b,N,Uo=3,2,100,1
-2678230073764983792569936820568604337537004989637988058835626
->>> a,b,N,Uo=1,2,100,3
-6338253001141147007483516026878
-==
 
 
 
