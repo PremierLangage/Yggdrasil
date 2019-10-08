@@ -46,8 +46,10 @@ def grade_this(code: str, tests: str, context: dict):
     except test.StopGrader:
         pass
     except Exception as e:
-        return (0, "Une erreur s'est produite pendant la validation. Veuillez "
-                   "contacter un enseignant.\n" + traceback.format_exc())
+        msg = "Une erreur s'est produite pendant la validation."
+        msg += "Veuillez contacter un enseignant.<br/>"
+        msg += "<pre>{}</pre>".format(traceback.format_exc())
+        return (0, msg)
 
     return session.get_grade(), session.render()
 
