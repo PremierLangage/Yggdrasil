@@ -30,7 +30,7 @@ print("le résultat est :",??)
 ==
 
 taboo=while
-needed=for
+# needed=for
 
 pltest==#|python|
 >>> a,b,N,Uo=2,3,100,1
