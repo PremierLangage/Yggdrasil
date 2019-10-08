@@ -1,7 +1,7 @@
 # author = Antoine Meyer
 extends = ../templates/generic/generic.pl
 
-title = Boucle qui compte (1)
+title = Boucle qui compte de 1 à `n`
 
 text==
 On suppose qu'il existe une variables `nb` désignant un entier strictement positif. 
@@ -42,6 +42,7 @@ begin_test_group("Nombres aléatoires")
 from random import sample
 tests(sample(list(range(100, 200)), 5))
 ==
+
 
 
 
