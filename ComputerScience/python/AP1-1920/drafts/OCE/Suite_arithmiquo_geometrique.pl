@@ -1,7 +1,7 @@
 # author=OCE
 # Heritage d'un type d'exercice 
 # extends=/ComputerScience/python/template/loopsoluce.pl
-extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
+# extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 # extends = /ComputerScience/python/AP1-1920/drafts/AntoineMeyer/templates/generic/generic.pl
 
 title = Suite arithmético-géométrique
@@ -30,7 +30,7 @@ code== #|python|
 print("le résultat est :",??)
 ==
 
-taboo=while
+#taboo=while
 # needed=for
 
 #grader==#|python|
