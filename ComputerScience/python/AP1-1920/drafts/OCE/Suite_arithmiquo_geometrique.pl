@@ -10,10 +10,10 @@ En utilisant une boucle "for in range", écrire un programme permettant d'affich
 
 $%
 \begin{cases}
-u_0 & > a\\\
-u_{n+1} & = a\times u_n + b\\\
 a & > 1\\\
-b & > 0
+b & > 0\\\
+u_0 & > a\\\
+u_{n+1} & = a\times u_n + b
 \end{cases}
 %$
 
