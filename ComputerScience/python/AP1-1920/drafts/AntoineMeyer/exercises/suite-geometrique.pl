@@ -47,9 +47,13 @@ def tests(cases):
             globals = {'a': a, 'b': b, 'nb': nb}, 
             output = expected_output(a, b, nb))
 
+import random
 begin_test_group("Valeurs fixées")
 tests([(3, 2, 5), (3, 2, 7), (3, 3, 5)])
-
+begin_test_group("Valeurs fixées")
+tests([(random.randint(3,7),random.randint(3,7),random.randint(3,7)),
+(random.randint(3,7),random.randint(3,7),random.randint(3,7)),
+(random.randint(3,7),random.randint(3,7),random.randint(3,7))])
 ==
 
 
