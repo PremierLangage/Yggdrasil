@@ -1,5 +1,10 @@
+author= Antoine Meyer
 
 title= Feuille d'exercice sur les boucles 
+
+introduction==
+Exercices sur les boucles utilisant le grader `generic`.
+==
 
 # Exercice avec des boucles for 
 @ ../exercises/boucle-qui-compte-de-0-a-nb-moins-1.pl
