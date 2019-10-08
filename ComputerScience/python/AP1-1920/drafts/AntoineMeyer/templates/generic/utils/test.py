@@ -161,7 +161,7 @@ class Test:
         out_stream = StringIO()
 
         # run the code while mocking input, sys.argv and stdout printing
-        with mock_input(self.current_inputs, self.current_state):
+        with mock_input(self.current_inputs, self.current_state, verbose=self.params['verbose_inputs']):
             with mock.patch.object(sys, 'argv', self.argv):
                 with mock.patch.object(sys, 'stdout', out_stream):
                     try:
