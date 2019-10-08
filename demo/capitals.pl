@@ -10,8 +10,9 @@ before ==
 import random as rd
 import csv
 essai=1
-with open('data.csv','r') as file:
-    row=rd.choice(list(csv.reader(file,delimiter=',')))
+if "row" not in globals():
+    with open('data.csv','r') as file:
+        row=rd.choice(list(csv.reader(file,delimiter=',')))
 
 country,article,capital=row
 
@@ -43,7 +44,7 @@ if input.value==capital:
 else:
     if essai >3:
         exec(before)
-    grade=(0,"Raté !")
+    grade=(0,"essai="+str(essai)+"<br>Raté !")
 ==
 
 
