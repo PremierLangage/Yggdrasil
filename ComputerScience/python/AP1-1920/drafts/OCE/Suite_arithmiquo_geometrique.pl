@@ -22,7 +22,7 @@ Pour N la valeur 100 et pour Uo la valeur 1
 
 code== #|python|
 # insérez votre code ici
-print("le résultat est :",U)
+print("le résultat est :",??)
 ==
 
 taboo=while
