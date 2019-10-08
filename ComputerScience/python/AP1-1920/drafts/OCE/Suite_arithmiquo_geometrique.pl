@@ -53,7 +53,7 @@ print("le résultat est :",??)
 #==
 
 grader==#|python|
-
+print("ceci est un test")
 ==
 
 
