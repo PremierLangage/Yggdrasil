@@ -8,12 +8,13 @@ On suppose qu'il existe deux variables `a` et `b` désignant des nombres flottan
 (chacun suivi d'un retour à la ligne), à l'exclusion de tout autre caractère.
 
 On rappelle la définition de la suite :
-$%
+
+$$%
 \begin{cases}
 u_0 & = a\\
 u_{n+1} & = b \times u_n
 \end{cases}
-%$
+%$$
 
 Par exemple, si `a` vaut 3, `b` vaut 2 et `nb` vaut 5, votre programme doit afficher :
 
