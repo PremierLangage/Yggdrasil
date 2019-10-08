@@ -30,6 +30,14 @@ créer un nouveau fichier pour faire vos essais**.
 @ /ComputerScience/C/exercices/recursion/ackermann.pl #marche
 @ /example/java/junit.pl #marche
 
+@ section-math.pl
+
+@ /Mathematics/exercises/arithmetic/primefactor.pl
+@ /Mathematics/exercises/finitesets/finitesets_intersection.pl
+# @ conceptexo/Mathematics/exercises/finitesets/element_subset.pl
+@ /Mathematics/exercises/fractions/operation_fraction.pl
+
+
 
 
 
