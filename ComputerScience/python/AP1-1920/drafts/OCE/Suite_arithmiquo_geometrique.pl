@@ -4,6 +4,21 @@
 # extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 # extends = /ComputerScience/python/AP1-1920/drafts/AntoineMeyer/templates/generic/generic.pl
 
+@ /ComputerScience/python/AP1-1920/templates/utils/pltest_doc.py
+@ ./utils/pltestgrader.py [grader.py]
+@ ./utils/feedback2.py
+@ ./utils/template.html
+# 
+
+@ /utils/sandboxio.py
+@ /builder/none.py [builder.py]
+
+editor.fontsize=14
+# une interface standard d'exercice avec un editeur pour la réponse
+form=@ /form/text_editor.html
+
+settings.allow_reroll=1
+
 title = Suite arithmético-géométrique
 
 text==  
