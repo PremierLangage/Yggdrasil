@@ -742,7 +742,7 @@ class OutputAssert(Assert):
         if self.status:
             return "Affichage correct"
         else:
-            return "Affichage attendu :\n<pre>\n{}\n</pre>".format(
+            return "Affichage attendu :\n<pre>\n{}</pre>".format(
                 self.expected)
 
 
