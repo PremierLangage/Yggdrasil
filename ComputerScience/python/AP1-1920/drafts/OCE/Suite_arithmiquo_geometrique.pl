@@ -40,7 +40,7 @@ taboo=while
 #==
 
 pltest==
-    print("student")
+    print(student.count)
 ==
 
 
