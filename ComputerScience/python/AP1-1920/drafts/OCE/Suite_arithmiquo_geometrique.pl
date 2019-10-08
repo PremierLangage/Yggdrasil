@@ -4,9 +4,6 @@ extends=/ComputerScience/python/template/loopsoluce.pl
 @ /builder/before.py [builder.py]
 
 before==#|python|
-import random
-val1=random.randint(8,12)
-val2=random.randint(2,5)
 ==
 
 title = Suite arithmético géométrique
@@ -26,16 +23,15 @@ code==
 
 ==
 
-taboo=for
-needed=while
+taboo=while
+needed=for
 
 soluce==
 
 ==
 
 plsoluce==
-test1 | 5
-test2 | 3
+
 ==
 
 
