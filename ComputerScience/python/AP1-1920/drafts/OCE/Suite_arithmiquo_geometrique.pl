@@ -35,7 +35,7 @@ print("le résultat est :",??)
 
 grader==#|python|
 from sandboxio import output, get_context, get_answers
-print(get_answers)
+print("get_answers")
 ==
 
 
