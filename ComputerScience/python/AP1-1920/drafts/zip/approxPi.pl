@@ -20,5 +20,7 @@ print(??,"terme(s) inférieur(s) à",nb)
 text==  
 On veut comparer les valeurs de différentes séries qui convergent vers $%\pi%$
 
-<sub>n</sub>=$%4 \times \Sigma\frac{(-1)^n}{2n+1}%$
+<
+
+$%\pi =4 \times \Sigma\frac{(-1)^n}{2n+1}%$
 ==
