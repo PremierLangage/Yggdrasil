@@ -30,10 +30,7 @@ taboo=for
 needed=while
 
 soluce==
-a=input("Entrez un nombre : ")
-for i in range({{val2}}):
-    print(i+1,a)
-    a = a * {{val1}}
+
 ==
 
 plsoluce==
