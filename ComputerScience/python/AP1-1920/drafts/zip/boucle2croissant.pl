@@ -1,5 +1,7 @@
+#author=Zip
 
-ends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
+# Heritage d'un type d'exercice 
+extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 title = Saisie d'une suite croissante
 
@@ -26,7 +28,7 @@ mplsoluce6="Test aléatoire\n"
 if random.randint(0,1)==0:
     mplsoluce6 +="str\n"
 else:
-    mplsoluce6 +="str\n"
+    mplsoluce6 +="int\n"
 v=40
 for i in range(N):
     v += random.randint(1,6)
@@ -71,10 +73,12 @@ while suiv> prec:
 print("Vous avez entré",nb,"valeur(s) en ordre croissant")
 ==
 mplsoluce0==
-5 int
+des int
 int
 2 
 3
+31 
+355
 5
 14
 77
@@ -82,11 +86,13 @@ int
 ==
 
 mplsoluce1==
-5 str
+des str
 toto
 str
 2 
 3
+31
+355
 5
 14
 77
