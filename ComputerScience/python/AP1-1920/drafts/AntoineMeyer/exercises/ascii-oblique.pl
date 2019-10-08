@@ -5,8 +5,9 @@ title = Dessin en mode texte : triangle
 
 text==
 On suppose qu'il existe une variables `nb` désignant un entier positif. 
-Écrire un programme dont l'exécution affiche sur la sortie standard un triangle composé 
-de caractères `*`.
+Écrire un programme dont l'exécution affiche sur la sortie standard 
+une ligne oblique composée 
+de `nb` lignes utilisant les caractères `*` et espace.
 
 Par exemple, si `nb` vaut 5, votre programme doit afficher :
 
