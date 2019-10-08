@@ -27,7 +27,7 @@ grader==#|python|
 def expected_output(nb):
     res = ""
     for i in range(1, nb+1):
-        res += ' ' * (nb - i) + '*' * 2 * i + '\n'
+        res += ' ' * (nb - i) + '*' * (2 * i - 1) + '\n'
     return res
 
 def tests(nbs):
