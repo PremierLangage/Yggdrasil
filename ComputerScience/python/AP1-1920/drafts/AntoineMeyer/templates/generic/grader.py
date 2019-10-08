@@ -21,6 +21,7 @@
 
 import inspect
 import test
+import traceback
 
 
 def _get_student_code(exercise_context: dict):
@@ -46,7 +47,7 @@ def grade_this(code: str, tests: str, context: dict):
         pass
     except Exception as e:
         return (0, "Une erreur s'est produite pendant la validation. Veuillez "
-                   "contacter un enseignant ({})".format(e))
+                   "contacter un enseignant.\n" + traceback.format_exc())
 
     return session.get_grade(), session.render()
 
