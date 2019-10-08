@@ -1,6 +1,6 @@
 # author=OCE
 # Heritage d'un type d'exercice 
-extends=/ComputerScience/python/template/loopsoluce.pl
+# extends=/ComputerScience/python/template/loopsoluce.pl
 extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title = Suite arithmético-géométrique
@@ -47,6 +47,7 @@ pltest==#|python|
 >>> a,b,N,Uo=1,2,100,3
 6338253001141147007483516026878
 ==
+
 
 
 
