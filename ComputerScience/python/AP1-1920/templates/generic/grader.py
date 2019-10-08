@@ -20,13 +20,12 @@
 # FIXME: LaTeX rendering in exercise text does not seem to work
 
 import inspect
-import sys
 import test
 
 
 def _get_student_code(exercise_context: dict):
     if "editor" not in exercise_context:
-        raise GraderError(missing_editor)
+        raise test.GraderError(missing_editor)
     editor_id = exercise_context["editor"].cid
     answers = sandboxio.get_answers()
     return answers[editor_id]["code"]
@@ -49,8 +48,7 @@ def grade_this(code: str, tests: str, context: dict):
         return (0, "Une erreur s'est produite pendant la validation. Veuillez "
                    "contacter un enseignant ({})".format(e))
 
-    # return session.get_grade(), session.render()
-    return session.getGrade(), session.render()
+    return session.get_grade(), session.render()
 
 
 if __name__ == "__main__":
@@ -61,11 +59,9 @@ if __name__ == "__main__":
     d'utiliser ou de vous inspirer du template generic.pl pour utiliser ce 
     grader. """
 
-    context = sandboxio.get_context()
-    student_code = _get_student_code(context)
-    validation_script = context["grader"]
-    grade, feedback = grade_this(student_code, validation_script, context)
+    pl_context = sandboxio.get_context()
+    student_code = _get_student_code(pl_context)
+    validation_script = pl_context["grader"]
+    grade, feedback = grade_this(student_code, validation_script, pl_context)
     sandboxio.output(grade, feedback)
-
-
 
