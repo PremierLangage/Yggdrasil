@@ -42,4 +42,3 @@ from random import sample
 tests(sample(list(range(10, 20)), 3))
 ==
 
-
