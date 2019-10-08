@@ -30,7 +30,7 @@ if __name__ == "__main__":
 
     
     dic = get_context()
-
+    student = get_answers()['answer']
     if "taboo" in dic:
         if checktaboo(dic['taboo'], student):
             output(0, "La boucle " + dic['taboo'] + " est proscrite. Vous devez utiliser une boucle " + dic['needed'] + ".")
@@ -76,5 +76,6 @@ if __name__ == "__main__":
         outstr += dic["feedback"]+" valeur de stop "+ str(stop)
     output(a,outstr)
     
+
 
 
