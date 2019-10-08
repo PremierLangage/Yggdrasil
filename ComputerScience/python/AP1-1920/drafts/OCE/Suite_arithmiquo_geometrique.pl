@@ -34,10 +34,9 @@ print("le résultat est :",??)
 
 grader==#|python|
 import sys
-context = sandboxio.get_context()
-student_code = _get_student_code(context)
-print(student_code)
+print(pl_context, file=sys.stderr)
 ==
+
 
 
 
