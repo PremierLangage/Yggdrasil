@@ -22,6 +22,12 @@ Si un exercice vous semble faux vous pouvez demander de l'aide sur le forum d'en
 
 ==
 
+# Exercice avec des boucles for 
+@ dynafor1.pl
+@ dynafor2.pl
+@ dynafor.pl
+@ Suite_raison_aleatoire.pl
+
 # Faire une boucle croissante 
 @ /ComputerScience/python/AP1-1920/drafts/zip/bouclecroissant.pl
 
@@ -33,12 +39,6 @@ Si un exercice vous semble faux vous pouvez demander de l'aide sur le forum d'en
 
 # Faire une boucle avec des chaines de caractères 
 @ /ComputerScience/python/AP1-1920/drafts/zip/bouclestr.pl
-
-# Exercice avec des boucles for 
-@ dynafor1.pl
-@ dynafor2.pl
-@ dynafor.pl
-@ Suite_raison_aleatoire.pl
 
 # Exercice avec des boucles while
 @ /ComputerScience/python/concept/loop/dynawhile.pl
