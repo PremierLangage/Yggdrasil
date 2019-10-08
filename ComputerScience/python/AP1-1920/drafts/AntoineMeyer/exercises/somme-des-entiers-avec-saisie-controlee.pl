@@ -29,7 +29,7 @@ solution = """
 n = int(input("Saisir un entier positif : "))
 while n < 0:
     print("Mauvaise saisie")
-    n = int(input("Donnez moi un nombre : "))
+    n = int(input("Saisir un entier positif : "))
 somme = 0
 for i in range(n + 1):
     somme += i
