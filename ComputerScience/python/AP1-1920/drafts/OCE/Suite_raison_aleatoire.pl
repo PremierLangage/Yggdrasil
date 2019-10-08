@@ -12,7 +12,7 @@ title = f"Suite géométrique de raison {val2}"
 
 ==
 
-title=
+title="Suite géométrique de raison Entière"
 
 text==  
 En utilisant une boucle de type "for...in...range", écrire un programme qui demande à l'utilisateur un entier et à partir de cet entier, 
