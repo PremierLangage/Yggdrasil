@@ -1,8 +1,8 @@
 # author=OCE
 # Heritage d'un type d'exercice 
 # extends=/ComputerScience/python/template/loopsoluce.pl
-# extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
-extends = /ComputerScience/python/AP1-1920/drafts/AntoineMeyer/templates/generic/generic.pl
+extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
+# extends = /ComputerScience/python/AP1-1920/drafts/AntoineMeyer/templates/generic/generic.pl
 
 title = Suite arithmético-géométrique
 
@@ -23,22 +23,26 @@ pour a et b vous prendrez les valeurs : 2 et 3 <br>
 Pour N la valeur 100 et pour Uo la valeur 1
 ==
 
-#editor.code== #|python|
+editor.code== #|python|
 # insérez votre code ici
 
 # compléter les ??
-#print("le résultat est :",??)
-#==
-
-# taboo=while
-# needed=for
-
-grader==#|python|
-import sys
-print(pl_context, file=sys.stderr)
-print(etudiant)
+print("le résultat est :",??)
 ==
 
+taboo=while
+# needed=for
+
+#grader==#|python|
+#import sys
+#print(pl_context, file=sys.stderr)
+#print(etudiant)
+#==
+
+pltest==
+    >>> student.count("if")>1 # Trop de tests IF 
+    False
+==
 
 
 
