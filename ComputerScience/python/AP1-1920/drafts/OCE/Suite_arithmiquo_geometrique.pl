@@ -9,7 +9,7 @@ before==#|python|
 title = Suite arithmético géométrique
 
 text==  
-Ecrire un programme permettant d'afficher le Nème entier de la suite arithmético géométrique croissante suivante : 
+En utilisant une boucle "for in range", écrire un programme permettant d'afficher le Nème entier de la suite arithmético géométrique croissante suivante : 
 
 Un+1 = aUn + b
 avec Uo > 0,
