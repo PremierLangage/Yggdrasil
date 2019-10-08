@@ -24,10 +24,7 @@ Pour N la valeur 100 et pour Uo la valeur 1
 
 editor.code== #|python|
 # insérez votre code ici
-a=??
-b=??
-N=??
-Uo=??
+
 # compléter les ??
 print("le résultat est :",??)
 ==
