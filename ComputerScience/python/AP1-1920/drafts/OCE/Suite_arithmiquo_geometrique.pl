@@ -32,18 +32,12 @@ print("le résultat est :",??)
 # taboo=while
 # needed=for
 
-grader==#|python|
 import sandboxio
-
-    missing_editor = """Impossible d'identifier le composant CodeEditor dans 
-    l'exercice (qui devrait être déclaré dans la variable `editor`). Merci 
-    d'utiliser ou de vous inspirer du template generic.pl pour utiliser ce 
-    grader. """
 
     context = sandboxio.get_context()
     student_code = _get_student_code(context)
     print(student_code)
-==
+
 
 
 
