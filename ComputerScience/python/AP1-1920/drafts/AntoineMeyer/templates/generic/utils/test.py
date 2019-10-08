@@ -15,6 +15,7 @@ _default_test_template = _default_template_dir + 'testitem.html'
 _default_group_template = _default_template_dir + 'testgroup.html'
 
 _default_params = {
+    "verbose_inputs": True,
     "report_success": False,
     "fail_fast": True,
 }
@@ -823,4 +824,5 @@ class NoGlobalChangeAssert(Assert):
             return "Variables globales inchangées"
         else:
             return "Variables globales modifiées"
+
 
