@@ -20,6 +20,8 @@ Par exemple, si `nb` vaut 5, votre programme doit afficher :
 de `nb`.*<br>
 ==
 
+editor.theme=light
+
 grader==#|python|
 def expected_output(nb):
     res = ""
@@ -40,4 +42,5 @@ begin_test_group("Nombres aléatoires")
 from random import sample
 tests(sample(list(range(100, 200)), 5))
 ==
+
 
