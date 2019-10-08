@@ -19,5 +19,5 @@ print(??,"terme(s) inférieur(s) à",nb)
 
 text==  
 On veut comparer les valeurs de différentes séries qui convergent vers $%\pi%$
-u<sub>n<\sub>==$(-1)^n$
+u<sub>n</sub>==$%(-1)^n%$
 ==
