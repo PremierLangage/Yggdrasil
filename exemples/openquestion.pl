@@ -7,7 +7,7 @@ title=  Une question ouverte
 
 text== 
 
-Exprimez vos besoins et envies, vos attente de no plateform.
+Exprimez vos besoins et envies, vos attente sur la plateform.
 Nous somme preneur de toute les bonnes idées.
 
 Vous n'aurez pas de réponse directe a votre question.
@@ -31,6 +31,7 @@ background-size: contain;
 
 
  
+
 
 
 
