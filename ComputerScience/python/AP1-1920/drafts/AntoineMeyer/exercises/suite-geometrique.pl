@@ -50,7 +50,7 @@ def tests(cases):
 import random
 begin_test_group("Valeurs fixées")
 tests([(3, 2, 5), (3, 2, 7), (3, 3, 5)])
-begin_test_group("Valeurs fixées")
+begin_test_group("Valeurs Aléatoires")
 tests([(random.randint(3,7),random.randint(3,7),random.randint(3,7)),
 (random.randint(3,7),random.randint(3,7),random.randint(3,7)),
 (random.randint(3,7),random.randint(3,7),random.randint(3,7))])
