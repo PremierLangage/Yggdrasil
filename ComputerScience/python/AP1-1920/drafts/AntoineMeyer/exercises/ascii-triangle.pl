@@ -35,10 +35,10 @@ def tests(nbs):
             globals = {'nb': nb}, 
             output = expected_output(nb))
 
-begin_test_group("Valeurs fixées")
+begin_test_group("Hauteurs fixées")
 tests([0, 4, 5])
 
-begin_test_group("Nombres aléatoires")
+begin_test_group("Hauteurs aléatoires")
 from random import sample
 tests(sample(list(range(10, 20)), 3))
 ==
