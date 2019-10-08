@@ -7,6 +7,7 @@
 title = Capitales de pays
 
 before ==
+import sys
 import random as rd
 import csv
 essai=1
