@@ -42,7 +42,7 @@ taboo=while
 pltest==
     >>> student.count("if")>1 # Trop de tests IF 
     False
-    >>> print(ceci est un test) 
+    >>> print("ceci est un test") 
     False
 ==
 
