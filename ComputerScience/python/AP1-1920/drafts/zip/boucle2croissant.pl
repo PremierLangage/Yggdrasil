@@ -67,6 +67,7 @@ while suiv> prec:
     nb+=1
     prec=suiv
     if typ=="str":
+        suiv=input()
     else:
         suiv=int(input())
 print("Vous avez entré",nb,"valeur(s) en ordre croissant")
