@@ -28,6 +28,9 @@ de `a`, `b` et `nb`.*<br>
 ==
 
 grader==#|python|
+
+print(pl_context, file=stderr)
+
 def expected_output(a, b, nb):
     terme = a
     res = ""
@@ -45,6 +48,5 @@ def tests(cases):
 begin_test_group("Valeurs fixées")
 tests([(3, 2, 5), (3, 2, 7), (3, 3, 5)])
 
-print(pl_context, file=stderr)
 ==
 
