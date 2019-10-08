@@ -6,7 +6,6 @@ title = Rebonds de balle
 
 text==
 On suppose qu'il existe une variable `h` désignant un nombre positif.
-
 Une balle chute d'une hauteur de `h` cm et rebondit. À chaque rebond, la hauteur diminue de
 10 %.
 
@@ -17,20 +16,20 @@ et on la comptabilisera dans le décompte.)
 
 Par exemple, si `h` vaut initialement `20`, le programme doit afficher :
 
-    20
-    18.0
-    16.2
-    14.58
-    13.122
-    11.809800000000001
-    10.628820000000001
-    9.565938000000001
-    8.6093442
-    7.748409780000001
-    6.973568802000001
-    6.276211921800001
-    5.64859072962
-    5.083731656658
+    20 cm
+    18.0 cm
+    16.2 cm
+    14.58 cm
+    13.122 cm
+    11.809800000000001 cm
+    10.628820000000001 cm
+    9.565938000000001 cm
+    8.6093442 cm
+    7.748409780000001 cm
+    6.973568802000001 cm
+    6.276211921800001 cm
+    5.64859072962 cm
+    5.083731656658 cm
     nombre de rebonds : 14
 
 ==
