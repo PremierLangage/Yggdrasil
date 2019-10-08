@@ -1,42 +1,43 @@
 # author = Antoine Meyer
 extends = ../templates/generic/generic.pl
 
-title = Échange de deux variables
+title = Boucle qui compte (1)
 
 text==
-On suppose qu'il existe deux variables `a` et `b` de valeurs et de types 
-quelconques précédemment fixées (vous n'avez donc pas à les initialiser
-ni à les lire).
+On suppose qu'il existe une variables `nb` désignant un entier strictement positif. 
+Écrire un programme dont l'exécution affiche sur la sortie standard les nombres de 
+`1` à `nb` (chacun suivi d'un retour à la ligne), à l'exclusion de tout autre caractère.
 
-Écrire un programme dont l'exécution échange les valeurs de `a` et `b`, 
-sans rien afficher.
+Par exemple, si `nb` vaut 5, votre programme doit afficher :
 
-**Attention**, *votre programe doit fonctionner quelles que soient les valeurs 
-de `a` et `b` et leurs types (qui peuvent être différents).*<br>
+```
+1
+2
+3
+4
+5
+```
+
+**Attention**, *le programe doit fonctionner quelle que soit la valeur 
+de `nb`.*<br>
 ==
 
-grader==
-run(
-    title='Deux nombres',
-    globals={'a': 1, 'b': 2}, 
-    values={'a': 2, 'b': 1}
-)
+grader==#|python|
+def expected_output(nb):
+    return "\n".join(map(str, range(1, nb+1)))
 
-run(
-    title='Nombre et chaîne',
-    globals={'a': 1, 'b': 'ça marche !'},
-    values={'a': 'ça marche !', 'b': 1}
-)
+def tests(nbs):
+    for nb in nbs:
+        run(title = f'De 1 à {nb}',
+            globals = {'nb': nb}, 
+            output = expected_output(nb))
+
+begin_test_group("Valeurs fixées")
+tests([0, 3, 5])
 
 begin_test_group("Nombres aléatoires")
-from random import randrange
-for _ in range(5):
-    x, y = randrange(0, 1000), randrange(1000, 2000)
-    run(
-        title='Nombres aléatoires',
-        globals={'a': x, 'b': y},
-        values={'a': y, 'b': x}
-    )
+from random import sample
+tests(sample(list(range(100, 200)), 5)
 ==
 
 
