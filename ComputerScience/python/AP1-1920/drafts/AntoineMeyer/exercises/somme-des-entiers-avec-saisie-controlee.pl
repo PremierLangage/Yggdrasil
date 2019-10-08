@@ -25,9 +25,20 @@ soit considérée comme correcte.
 
 grader==#|python|
 
+solution = """
+n = int(input("Saisir un entier positif : "))
+while n < 0:
+    print("Mauvaise saisie")
+    n = int(input("Donnez moi un nombre : "))
+somme = 0
+for i in range(n + 1):
+    somme += i
+print("La somme des entiers de 1 à " + str(n) + " vaut " + str(somme))
+"""
+
 saisie1 = ["-4", "-10", "10"]
-affichage1 = """
-Saisir un entier positif : -4
+affichage1 = 
+"""Saisir un entier positif : -4
 Mauvaise saisie
 Saisir un entier positif : -10
 Mauvaise saisie
