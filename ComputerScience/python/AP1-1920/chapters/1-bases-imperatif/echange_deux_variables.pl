@@ -15,7 +15,7 @@ sans rien afficher.
 de `a` et `b` et leurs types (qui peuvent être différents).*<br>
 ==
 
-grader==
+grader==#|python|
 run(
     title='Deux nombres',
     globals={'a': 1, 'b': 2}, 
@@ -38,6 +38,7 @@ for _ in range(5):
         values={'a': y, 'b': x}
     )
 ==
+
 
 
 
