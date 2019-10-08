@@ -1,10 +1,7 @@
 # author=OCE
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/template/loopsoluce.pl
-@ /builder/before.py [builder.py]
-
-before==#|python|
-==
+extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title = Suite arithmético-géométrique
 
@@ -29,18 +26,13 @@ taboo=while
 needed=for
 
 soluce== #|python|
-a=2
-b=3
-N=100
-U=1
-for i in range(N):
-    U += a*U + b
-print("le résultat est :",U)
+
 ==
 
 mplsoluce0==
 
 ==
+
 
 
 
