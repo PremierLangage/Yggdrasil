@@ -139,11 +139,12 @@ def runsOutputtests(tests, feedback, studentfilename=None, flags=0x1):
     return int(100*(res/len(tests)))
 
 if __name__=="__main__":
-   lestest=[("premier","success"),("bas beau","failure"),("Une erreur ","error"),]
+   lestest=[("premier","success"),("pas beau","failure"),("Une erreur ","error"),]
    import feedback2
    fb=feedback2.FeedBack()
    runsolucetests(lestest,fb)
    print(fb.render())
+
 
 
 
