@@ -23,3 +23,5 @@ Exercices sur les boucles utilisant le grader `generic`.
 @ ../exercises/ascii-oblique.pl
 @ ../exercises/ascii-pyramide.pl
 
+# Moyenne des notes
+@ ../exercises/moyenne-de-notes.pl
