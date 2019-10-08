@@ -63,7 +63,8 @@ def get_answers():
         answers = json.load(f)
     return answers
 
-print(get_answers)
+student=get_answers
+print(student)
 ==
 
 
