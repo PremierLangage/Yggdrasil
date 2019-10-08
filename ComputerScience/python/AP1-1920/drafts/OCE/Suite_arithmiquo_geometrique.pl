@@ -32,7 +32,7 @@ print("le résultat est :",??)
 taboo=while
 # needed=for
 
-grader==
+grader==#|python|
 print(student)
 ==
 
@@ -44,6 +44,7 @@ pltest==#|python|
 >>> a,b,N,Uo=1,2,100,3
 6338253001141147007483516026878
 ==
+
 
 
 
