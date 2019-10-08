@@ -22,7 +22,10 @@ de `nb`.*<br>
 
 grader==#|python|
 def expected_output(nb):
-    return "\n".join(map(str, range(1, nb+1))) + '\n'
+    res = ""
+    for i in range(1, nb+1):
+        res += str(i) + '\n'
+    return res
 
 def tests(nbs):
     for nb in nbs:
