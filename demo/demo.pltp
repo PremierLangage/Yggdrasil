@@ -2,7 +2,7 @@
 
 title= Un petit tour de pl 
 
-introducton==
+introduction==
 
 la feuille d'exercice suivant vous permet de faire un petit tour des 
 capacités de pl et de faire la preuve que pl peut s'adpater a de nombreuses disciplines.
@@ -29,6 +29,7 @@ créer un nouveau fichier pour faire vos essais**.
 @ /ComputerScience/C/examples/matrix_rank.pl #marche
 @ /ComputerScience/C/exercices/recursion/ackermann.pl #marche
 @ /example/java/junit.pl #marche
+
 
 
 
