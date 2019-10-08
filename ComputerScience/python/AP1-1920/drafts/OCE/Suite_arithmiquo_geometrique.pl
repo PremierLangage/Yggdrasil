@@ -19,6 +19,7 @@ avec Uo > 0
 a>1
 b>0
 
+pour a et b vous prendrez les valeurs : X et Y
 ==
 
 code== 
