@@ -1,4 +1,4 @@
-extends = ../templates/generic/generic.pl
+extends = /ComputerScience/python/AP1-1920/drafts/AntoineMeyer/templates/generic/generic.pl
 
 title = Suite géométrique
 
@@ -55,5 +55,6 @@ tests([(random.randint(3,7),random.randint(3,7),random.randint(3,7)),
 (random.randint(3,7),random.randint(3,7),random.randint(3,7)),
 (random.randint(3,7),random.randint(3,7),random.randint(3,7))])
 ==
+
 
 
