@@ -1,10 +1,13 @@
+import operator
+import sys
 from copy import deepcopy
 from io import StringIO
-import jinja2
-from mockinput import mock_input
-import sys
-from typing import NoReturn, List, Callable, Union, Optional, Dict, Any
+from typing import Callable, Dict, List, NoReturn, Optional, Union, Any, Tuple
 from unittest import mock
+
+import jinja2
+
+from mockinput import mock_input
 
 _default_template_dir = ''
 # _default_template_dir = 'templates/generic/jinja/'
@@ -13,23 +16,41 @@ _default_group_template = _default_template_dir + 'testgroup.html'
 
 _default_params = {
     "report_success": False,
-    "fail_fast": True
+    "fail_fast": True,
 }
 
 
 class GraderError(Exception):
+    """Exception raised when an unforeseen error due to the exercise author
+    occurs. """
     pass
 
 
 class StopGrader(Exception):
+    """Exception raised when the fail_fast parameter is set for some Test
+    instance and an assertion fails."""
     pass
 
 
 class Test:
-    _number = 0
+    """
+    Test runner. Manages code to be run, execution context, effects,
+    assertions about the execution's outcome, and test decription.
+    """
+    _number: int = 0  # Test rank in session.
 
-    def __init__(self, code: str, **params):
+    def __init__(self, code: str, weight: int = 1, **params):
+        """Test instance initializaton.
+
+        :param code: Code to test.
+        :param weight: Weight of the test on total grade.
+        :param params: Additional test control parameters. Currently
+            allowed keys are:
+            - report_success (bool): whether or not to report passed assertions;
+            - fail_fast (bool): whether or not to stop after the first error.
+        """
         self.code: str = code
+        self.weight = weight
         self.expression: Optional[str] = None
         self.params = _default_params.copy()
         self.params.update(params)
@@ -54,14 +75,21 @@ class Test:
         self.title: Optional[str] = None
         self.descr: Optional[str] = None
         self.hint: Optional[str] = None
+        self.weight: Optional[int] = 1
 
         # assertions
         self.assertions: List[Assert] = []
         self.status: bool = True
 
-
-
     def copy(self):
+        """
+        Make a copy of `self`, including the current state and available
+        inputs and command-line arguments.
+
+        Does nos include previous state, results, assertions, etc.
+
+        :return: historyless copy of the current test instance.
+        """
         t = Test(self.code)
         t.current_state = deepcopy(self.current_state)
         t.current_inputs = self.current_inputs.copy()
@@ -70,8 +98,19 @@ class Test:
 
     """Code execution."""
 
-    def summarize_changes(self):
-        # TODO: cache results if clean
+    def summarize_changes(self) -> Tuple[
+            Dict[str, any], List[str], Dict[str, Any], List[str]]:
+        """
+        Computes the effects of the last execution (as performed by a call to
+        `run()`) on the global state and input buffer.
+
+        :return: tuple `(added, deleted, modified, inputs)`, where:
+            - `added` is a dictionary mapping new identifiers to their values;
+            - `deleted` is a list of deleted identifiers;
+            - `momdified` is a dictionary mapping existing identifiers to their
+            (new) values;
+            - `inputs` is a list of read input lines.
+        """
         deleted = list(self.previous_state.keys() - self.current_state.keys())
 
         modified = {
@@ -88,7 +127,21 @@ class Test:
         return added, deleted, modified, inputs
 
     def run(self, expression: str = None, **kwargs) -> NoReturn:
+        """
+        Runs the test's code and/or an expression in the current context.
 
+        This method manages multiple optional arguments allowing it to
+        control many execution settings. Arguments are of three kinds:
+        context arguments which modify the execution's context, description
+        arguments, and assertion arguments which entail automatic assertions
+        on the execution.
+
+        For details on the allowed arguments, see `parse_description_args`,
+        `parse_context_args` and `parse_assertion_args`.
+
+        :param expression: Expression to be evaluated (optional).
+        :param kwargs: Additional context, description or assertion parameters.
+        """
         self.expression = expression
 
         # parse description-related keyword arguments
@@ -127,9 +180,24 @@ class Test:
         # parse assertion-related keyword arguments
         self.parse_assertion_args(kwargs)
 
-    def parse_assertion_args(self, kwargs):
+    def parse_assertion_args(self, kwargs) -> NoReturn:
+        """
+        Parse assertion arguments to the `run()` method.
+
+        Currently allowed arguments are :
+        - exception: if exception=SomeExceptionClass is passed, check it is
+          indeed raised;
+        - allow_exception: is exception is None or not passed,
+          and 'allow_exception' is either absent or False, forbid exceptions;
+        - values: a disctionary of values whose existence and value to check;
+        - allow_global_change: if present and False, forbid changes to globals;
+        - output: check output (for strict equality for now);
+        - result: check evaluation result, fails if no expression is passed.
+        :param kwargs: Argument dictionary.
+        """
+
         # manage exceptions
-        if 'exception' in kwargs:
+        if 'exception' in kwargs and kwargs['exception'] is not None:
             # if parameter exception=SomeExceptionClass is passed, silently
             # check it is indeed raised
             self.assert_exception(kwargs['exception'])
@@ -158,6 +226,16 @@ class Test:
                 self.assert_result(kwargs['result'])
 
     def parse_context_args(self, kwargs):
+        """
+        Parse context arguments to the `run()` method.
+
+        Currently allowed arguments are :
+        - globals: set global variables (erasing all others);
+        - inputs: set available input lines (erasing all others);
+        - argv: set available command-line arguments (erasing all others).
+
+        :param kwargs: Argument dictionary.
+        """
         # set global variables (overwrites the whole global namespace)
         if 'globals' in kwargs:
             self.current_state = kwargs['globals']
@@ -169,6 +247,17 @@ class Test:
             self.argv = kwargs['argv']
 
     def parse_description_args(self, kwargs):
+        """
+        Parse description arguments to the `run()` method.
+
+        Currently allowed arguments are :
+        - title: set test title;
+        - descr: set test description;
+        - hint: set hint in case of failure;
+        - weight: set test weight.
+
+        :param kwargs: Argument dictionary.
+        """
         # set title
         if 'title' in kwargs:
             self.title = kwargs['title']
@@ -178,24 +267,50 @@ class Test:
         # set hint
         if 'hint' in kwargs:
             self.hint = kwargs['hint']
+        # set weight
+        if 'weight' in kwargs:
+            self.weight = kwargs['weight']
 
     """Assertions."""
 
-    def assert_output(self, expected,
-                      cmp: Callable = lambda x, y: x == y):
+    def assert_output(self, expected: Any, cmp: Callable = operator.eq) -> bool:
+        """
+        Assert that the last run's output equals `expected` (using `cmp` as
+        comparison operator).
+
+        :param expected: Expected value of the output.
+        :param cmp: Output comparison function.
+        :return: Assertion status.
+        """
         status = cmp(expected, self.output)
         self.record_assertion(OutputAssert(status, expected))
         return status
 
-    def assert_result(self, expected,
-                      cmp: Callable = lambda x, y: x == y):
+    def assert_result(self, expected: Any, cmp: Callable = operator.eq) -> bool:
+        """
+        Assert that the last run's result equals `expected` (using `cmp` as
+        comparison operator).
+
+        :param expected: Expected value of the result.
+        :param cmp: Output comparison function.
+        :return: Assertion status.
+        """
         status = cmp(expected, self.result)
         self.record_assertion(ResultAssert(status, expected))
         return status
 
-    def assert_variable_values(self, cmp=lambda x, y: x == y, **expected):
+    def assert_variable_values(self, cmp=operator.eq, **expected) -> bool:
+        """
+        Assert that the values of some variables after the last run equal
+        their values in the `expected` dictionary (using `cmp` as comparison
+        operator).
+
+        :param expected: Expected value of the variables.
+        :param cmp: Value comparison function.
+        :return: Assertion status.
+        """
         if not expected:
-            return
+            raise ValueError("No expected variable values provided.")
         state = self.current_state
         missing = list(expected.keys() - state.keys())
         incorrect = {var: state[var] for var in expected.keys() & state.keys()
@@ -206,30 +321,58 @@ class Test:
             VariableValuesAssert(status, expected, missing, incorrect))
         return status
 
-    def assert_no_global_change(self):
+    def assert_no_global_change(self) -> bool:
+        """
+        Assert that no global variables changed during the last run.
+
+        :return: Assertion status.
+        """
         added, deleted, modified, _ = self.summarize_changes()
         status = not (added or deleted or modified)
         self.record_assertion(NoGlobalChangeAssert(status))
         return status
 
-    def assert_no_exception(self, **params):
+    def assert_no_exception(self, **params) -> bool:
+        """
+        Assert that no exception was raised during the last run.
+
+        :return: Assertion status.
+        """
         status = self.exception is None
         self.record_assertion(NoExceptionAssert(status, **params))
         return status
 
-    def assert_exception(self, exception_type):
+    def assert_exception(self, exception_type: type(Exception)) -> bool:
+        """
+        Assert that an exception of type `exception_type` was raised during the
+        last run.
+
+        :return: Assertion status.
+        """
         status = isinstance(self.exception, exception_type)
         self.record_assertion(
             ExceptionAssert(status, exception_type))
         return status
 
     def record_assertion(self, assertion: 'Assert') -> NoReturn:
+        """
+        Record an assertion (using an Assertion object) in the test's history.
+        """
         self.assertions.append(assertion)
         self.status = self.status and assertion.status
 
     """Feedback"""
 
-    def context(self):
+    def context(self) -> str:
+        """
+        Returns a HTML-formatted string describing a test's previous
+        execution context.
+
+        Includes existing global variables and their values, available input
+        lines, and command-line arguments.
+
+        :return: Full-text HTML formatted description of context.
+        """
         res = []
 
         if self.previous_state:
@@ -243,7 +386,16 @@ class Test:
 
         return "<br/>".join(res)
 
-    def results(self):
+    def results(self) -> str:
+        """
+        Returns a HTML-formatted string describing a test's effect.
+
+        Includes results (if an expression was evaluated), created,
+        modified and deleted global variables, read input lines, printed
+        text, raised exceptions.
+
+        :return: Full-text HTML formatted description of run effects.
+        """
         res = []
         added, deleted, modified, inputs = self.summarize_changes()
 
@@ -267,87 +419,193 @@ class Test:
 
         return "<br/>".join(res)
 
-    def set_default_title(self):
+    def set_default_title(self) -> NoReturn:
+        """
+        Sets default test title.
+        """
         if self.expression is None:
             self.title = "Exécution du programme"
         else:
             self.title = "Évaluation de {!r}".format(self.expression)
 
-    def render(self):
+    def get_grade(self):
+        """
+        Gets test grade. Currently only 0 or self.weight.
+        """
+        return (self.status * self.weight), self.weight
+
+    def render(self) -> str:
+        """
+        Returns a Jinja2 HTML-formatted description of the test.
+
+        :return: HTML-formatted report on the test.
+        """
         with open(_default_test_template, "r") as tempfile:
             templatestring = tempfile.read()
         template = jinja2.Template(templatestring)
         return template.render(test=self)
 
-    def make_id(self):
+    def make_id(self) -> str:
+        """
+        Make a (session-)unique id for the test, using its number.
+
+        :return: Unique id of the form test_<number>
+        """
         return 'test_' + str(self.number)
 
 
 class TestGroup:
+    """
+    Groups of Test instances sharing a title.
+
+    Feedback for test groups are supposed to share a <div> and a common
+    description. Groups are intended to clarify the relationships between
+    certain tests.
+    """
     _num = 0
 
-    def __init__(self, title: str, **params):
+    def __init__(self, title: str, weight: int = 1, **params):
+        """
+        Initialize a TestGroup.
+
+        :param title: Title of the test group (required). Try to be as clear
+        as possible.
+        :param weight: Weight in final TestSession grade. The whole groups's
+        grade is multiplied by this factor before being added to other Test
+        and TestGroup grades.
+        :param params: Additional execution parameters such as fail_fast (
+        default: True) and report_success (default: False).
+        """
         self.num: int = TestGroup._num
         TestGroup._num += 1
         self.title: str = title
+        self.weight: int = weight
         self.status: bool = True
         self.tests: List[Test] = []
         self.params = _default_params.copy()
         self.params.update(params)
 
-    def append(self, test: 'Test'):
+    def append(self, test: 'Test') -> NoReturn:
+        """
+        Append a Test to a TestGroup's history.
+
+        The Test instance to be appended should contain all relevant
+        information for feedback (execution results, assertions, grade, etc.).
+
+        :param test: The Test instance to append.
+        """
         self.tests.append(test)
 
-    def make_id(self):
+    def make_id(self) -> str:
+        """
+        Returns a (TestSession-)unique identifier for the current group.
+
+        :return: Identifier of the form "group_<number>".
+        """
         return 'group_' + str(self.num)
 
-    def render(self):
+    def get_grade(self) -> Tuple[float, int]:
+        """
+        Returns a grade for the current group, normalized to the current
+        group's weight.
+
+        :return: Tuple `(g, w)` where `g` is a grade between 0 and `w`.
+        """
+        total_grade = total_weight = 0
+        for test in self.tests:
+            total, weight = test.get_grade()
+            total_grade += total
+            total_weight += weight
+        return total_grade / total_weight * self.weight, self.weight
+
+    def render(self) -> str:
+        """
+        Returns a Jinja2 HTML-formatted description of the TestGroup.
+
+        :return: HTML-formatted report on the test group.
+        """
         with open(_default_group_template, "r") as tempfile:
             templatestring = tempfile.read()
         template = jinja2.Template(templatestring)
         return template.render(testgroup=self)
 
-    def update_status(self, status):
+    def update_status(self, status) -> NoReturn:
+        """
+        Incorporate new test result into test group status.
+
+        :param status: A new test status.
+        """
         self.status = self.status and status
 
 
 class TestSession:
+    """
+    Gather Test or TestGroup instances inside a session.
+
+    TestSession instances manage test succession, group creation and closure,
+    global parameters, and global grading.
+    """
 
     def __init__(self, code: str, **params):
+        """
+        Initialize TestSession instance.
+
+        :param code: Main code to test.
+        :param params: Global session parameters. Currently allowed keys are:
+            - report_success (bool, defaults to False): whether or not to
+              report passed assertions;
+            - fail_fast (bool, defaults to True): whether or not to stop after
+              the first error.
+        """
         self.history: List[Union[Test, TestGroup]] = []
         self.last_test: Optional[Test] = None
         self.next_test: Test = Test(code)
         self.current_test_group: Optional[TestGroup] = None
         self.params = _default_params.copy()
         self.params.update(params)
-        # Grade needed by the plateforme 
-        self.grade = 100 # defautl value is success 
-        # each time there is a failure the grade is divided // by 2
-    
-    def getGrade(self):
-        return int( 100*len([x for x in self.history if x.status]) /len(self.history) )
 
-    """Feedback management."""
+    """Group management."""
 
     def begin_test_group(self, title: str) -> NoReturn:
+        """
+        Open new test group.
+
+        :param title: New test group's title.
+        """
         self.current_test_group = TestGroup(title)
         self.history.append(self.current_test_group)
 
     def end_test_group(self) -> NoReturn:
+        """
+        Close the current test group.
+        """
         if self.current_test_group and self.last_test:
             self.current_test_group.update_status(self.last_test.status)
         self.current_test_group = None
         self.last_test = None
+
+    """ Grading """
+
+    def get_grade(self):
+        total_grade = total_weight = 0
+        for test in self.history:
+            total, weight = test.get_grade()
+            total_grade += total
+            total_weight += weight
+        return total_grade / total_weight * 100
 
     """Rendering"""
 
     def render(self):
         return "\n".join(test.render() for test in self.history)
 
-    """Setters for next test description."""
+    """Setters for the next test."""
 
     def set_title(self, title):
         self.next_test.title = title
+
+    def set_weight(self, weight):
+        self.next_test.weight = weight
 
     def set_descr(self, descr):
         self.next_test.descr = descr
@@ -358,7 +616,7 @@ class TestSession:
     """Setters for execution context."""
 
     def exec_preamble(self, preamble: str, **kwargs) -> NoReturn:
-        exec(preamble, self.next_test.current_state, **kwargs)
+        exec(preamble, self.next_test.current_state, ** kwargs)
         del self.next_test.current_state['__builtins__']
 
     def set_globals(self, **variables) -> NoReturn:
@@ -391,10 +649,11 @@ class TestSession:
             raise StopGrader("Failed assert during fail-fast test.")
 
     """Assertions."""
+
     # TODO: unhappy about code duplication in assertion mechanism, fix this.
 
     def assert_output(self, expected,
-                      cmp: Callable = lambda x, y: x == y):
+                      cmp: Callable = operator.eq):
         if self.last_test is None:
             raise GraderError("Can't assert before running the code.")
         status = self.last_test.assert_output(expected, cmp)
@@ -403,7 +662,7 @@ class TestSession:
             raise StopGrader("Failed assert during fail-fast test.")
 
     def assert_result(self, expected,
-                      cmp: Callable = lambda x, y: x == y):
+                      cmp: Callable = operator.eq):
         if self.last_test is None:
             raise GraderError("Can't assert before running the code.")
         status = self.last_test.assert_result(expected, cmp)
@@ -445,6 +704,7 @@ class TestSession:
 
 
 class TextLabel:
+
     def __init__(self, text):
         self.text = text
 
@@ -453,6 +713,7 @@ class TextLabel:
 
 
 class Verbatim:
+
     def __init__(self, code):
         self.code = code
 
@@ -472,6 +733,7 @@ class Assert:
 
 
 class OutputAssert(Assert):
+
     def __init__(self, status, expected, **params):
         super().__init__(status, params)
         self.expected = expected
@@ -484,6 +746,7 @@ class OutputAssert(Assert):
 
 
 class NoExceptionAssert(Assert):
+
     def __init__(self, status, **params):
         super().__init__(status, params)
 
@@ -495,7 +758,8 @@ class NoExceptionAssert(Assert):
 
 
 class ExceptionAssert(Assert):
-    def __init__(self, status, exception: Exception, **params):
+
+    def __init__(self, status, exception: type(Exception), **params):
         super().__init__(status, params)
         self.exception = exception
 
@@ -508,6 +772,7 @@ class ExceptionAssert(Assert):
 
 
 class ResultAssert(Assert):
+
     def __init__(self, status, expected, **params):
         super().__init__(status, params)
         self.expected = expected
@@ -520,6 +785,7 @@ class ResultAssert(Assert):
 
 
 class VariableValuesAssert(Assert):
+
     def __init__(self, status, expected, missing, incorrect, **params):
         super().__init__(status, params)
         self.expected = expected
@@ -542,6 +808,7 @@ class VariableValuesAssert(Assert):
 
 
 class NoGlobalChangeAssert(Assert):
+
     def __init__(self, status, **params):
         super().__init__(status, params)
 
@@ -550,7 +817,4 @@ class NoGlobalChangeAssert(Assert):
             return "Variables globales inchangées"
         else:
             return "Variables globales modifiées"
-
-
-
 
