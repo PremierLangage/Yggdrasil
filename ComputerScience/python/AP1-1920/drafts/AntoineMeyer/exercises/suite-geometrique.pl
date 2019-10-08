@@ -29,7 +29,8 @@ de `a`, `b` et `nb`.*<br>
 
 grader==#|python|
 
-print(pl_context, file=stderr)
+import sys
+print(pl_context, file=sys.stderr)
 
 def expected_output(a, b, nb):
     terme = a
