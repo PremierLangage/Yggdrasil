@@ -45,8 +45,6 @@ def tests(cases):
 begin_test_group("Valeurs fixées")
 tests([(3, 2, 5), (3, 2, 7), (3, 3, 5)])
 
-#begin_test_group("Nombres aléatoires")
-#from random import sample
-#tests(sample(list(range(100, 200)), 5))
+print(pl_context, file=stderr)
 ==
 
