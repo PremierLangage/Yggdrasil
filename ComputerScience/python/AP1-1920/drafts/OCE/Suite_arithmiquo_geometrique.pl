@@ -32,12 +32,12 @@ print("le résultat est :",??)
 # taboo=while
 # needed=for
 
-import sandboxio
-
-    context = sandboxio.get_context()
-    student_code = _get_student_code(context)
-    print(student_code)
-
+grader==#|python|
+import sys
+context = sandboxio.get_context()
+student_code = _get_student_code(context)
+print(student_code)
+==
 
 
 
