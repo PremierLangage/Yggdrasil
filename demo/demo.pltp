@@ -30,12 +30,26 @@ créer un nouveau fichier pour faire vos essais**.
 @ /ComputerScience/C/exercices/recursion/ackermann.pl #marche
 @ /example/java/junit.pl #marche
 
-@ section-math.pl
+@ section-maths.pl
 
 @ /Mathematics/exercises/arithmetic/primefactor.pl
 @ /Mathematics/exercises/finitesets/finitesets_intersection.pl
 # @ conceptexo/Mathematics/exercises/finitesets/element_subset.pl
 @ /Mathematics/exercises/fractions/operation_fraction.pl
+
+@ section-info.pl
+
+
+@ /example/python/condition.pl
+@ /example/python/stdout_tests.pl
+@ /example/python/fibonacci.pl
+@ /example/python/narc.pl
+@ /example/python/non_divisibles.pl
+@ /example/python/title_string.pl
+@ /example/python/pyramide.pl
+@ /example/python/stack.pl
+@ /example/python/enigma_encode.pl
+@ /example/python/enigma_decode.pl
 
 
 
