@@ -13,12 +13,15 @@ avec Uo > 0,
 a>1,
 b>0
 
+Vous utiliserez impérativement les variables a, b, N et Uo
 pour a et b vous prendrez les valeurs : 2 et 3
 Pour N la valeur 100 et pour Uo la valeur 1
 ==
 
 code== #|python|
 # insérez votre code ici
+
+# compléter les ??
 print("le résultat est :",??)
 ==
 
@@ -26,11 +29,16 @@ taboo=while
 needed=for
 
 soluce== #|python|
-
+# rien dedans mais si non présent plantage
 ==
 
-mplsoluce0==
-
+pltest==#|python|
+>>> a,b,N,Uo=2,3,100,1
+1288443801830028327591152824414053181755268805001
+>>> a,b,N,Uo=3,2,100,1
+2678230073764983792569936820568604337537004989637988058835626
+>>> a,b,N,Uo=1,2,100,3
+6338253001141147007483516026878
 ==
 
 
