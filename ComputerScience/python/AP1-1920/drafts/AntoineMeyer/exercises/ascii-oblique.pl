@@ -21,8 +21,6 @@ Par exemple, si `nb` vaut 5, votre programme doit afficher :
 de `nb`.*<br>
 ==
 
-editor.theme=light
-
 grader==#|python|
 def expected_output(nb):
     res = ""
