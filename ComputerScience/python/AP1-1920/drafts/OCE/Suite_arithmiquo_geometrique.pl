@@ -39,7 +39,7 @@ taboo=while
 #print(etudiant)
 #==
 
-grader==
+grader==#|python|
 student = get_answers()['answer']
 print("student")
 ==
