@@ -10,13 +10,11 @@ On suppose qu'il existe une variables `nb` désignant un entier strictement posi
 
 Par exemple, si `nb` vaut 5, votre programme doit afficher :
 
-```
-1
-2
-3
-4
-5
-```
+    1
+    2
+    3
+    4
+    5
 
 **Attention**, *le programe doit fonctionner quelle que soit la valeur 
 de `nb`.*<br>
