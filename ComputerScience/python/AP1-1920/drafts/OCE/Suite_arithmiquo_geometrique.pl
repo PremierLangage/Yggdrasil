@@ -8,6 +8,13 @@ title = Suite arithmético-géométrique
 text==  
 En utilisant une boucle "for in range", écrire un programme permettant d'afficher le Nème entier de la suite arithmético géométrique croissante suivante : 
 
+$%
+\begin{cases}
+u_0 & > a\\\
+u_{n+1} & = a\times u_n + b
+\end{cases}
+%$
+
 Un+1 = aUn + b
 avec Uo > 0,
 a>1,
@@ -40,6 +47,7 @@ pltest==#|python|
 >>> a,b,N,Uo=1,2,100,3
 6338253001141147007483516026878
 ==
+
 
 
 
