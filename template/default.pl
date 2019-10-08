@@ -35,8 +35,9 @@ form=@ /form/text_editor.html
 @ /grader/evaluator.py [grader.py]
 
 evaluator==
-grade=(100,"# Merci de vos commentaires.\n Toute l'équipe PL. ")
+grade=(100,"Passez à la question suivante. ")
 ==
+
 
 
 
