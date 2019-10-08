@@ -45,8 +45,7 @@ Saisir un entier positif : 10
 La somme des entiers de 1 à 10 vaut 55
 """
 
-set_inputs(inputs=saisie1, verbose=True)
-run(output=affichage1)
+run(inputs=saisie1, output=affichage1)
 
 ==
 
