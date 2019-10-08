@@ -1,0 +1,50 @@
+extends = ../templates/generic/generic.pl
+
+title = Suite géométrique
+
+text==
+On suppose qu'il existe deux variables `a` et `b` désignant des nombres flottants quelconque, et une variable `nb` désignant un entier positif quelconque. 
+Écrire un programme dont l'exécution affiche sur la sortie standard les `nb` premiers termes de la suite géométrique de premier terme `a` et de raison `b`
+(chacun suivi d'un retour à la ligne), à l'exclusion de tout autre caractère.
+
+On rappelle la définition de la suite :
+{$
+\begin{cases}
+u_0 & = a\\
+u_{n+1} & = b \times u_n
+\end{cases}
+$}
+
+Par exemple, si `a` vaut 3, `b` vaut 2 et `nb` vaut 5, votre programme doit afficher :
+
+    3
+    6
+    12
+    24
+    48
+
+**Attention**, *le programe doit fonctionner quelles que soient les valeurs 
+de `a`, `b` et `nb`.*<br>
+==
+
+grader==#|python|
+def expected_output(nb):
+    res = ""
+    for i in range(nb):
+        res += str(i) + '\n'
+    return res
+
+def tests(nbs):
+    for nb in nbs:
+        run(title = f'De 0 à {nb}-1',
+            globals = {'nb': nb}, 
+            output = expected_output(nb))
+
+begin_test_group("Valeurs fixées")
+tests([0, 3, 5])
+
+begin_test_group("Nombres aléatoires")
+from random import sample
+tests(sample(list(range(100, 200)), 5))
+==
+
