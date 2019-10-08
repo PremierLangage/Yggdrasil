@@ -54,6 +54,7 @@ def affichage_attendu(saisie):
     for i in range(n + 1):
         somme += i
     res += f"La somme des entiers de 1 à {n} vaut {somme}"
+    return res
 
 begin_test_group("Saisies sans erreur")
 for saisie in saisies_sans_erreur:
