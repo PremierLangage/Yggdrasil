@@ -23,7 +23,7 @@ pour a et b vous prendrez les valeurs : 2 et 3 <br>
 Pour N la valeur 100 et pour Uo la valeur 1
 ==
 
-editor.code== #|python|
+code== #|python|
 # insérez votre code ici
 
 # compléter les ??
