@@ -36,6 +36,7 @@ u<sub>n+1</sub>=2u<sub>n</sub>+1
 Exemple  :
 
 Entrez un nombre : 7
+
 1 terme(s) inférieur(s) à 7
 ==
 
@@ -54,7 +55,7 @@ print(nbtermes,"terme(s) inférieur(s) à",nb)
 
 plsoluce==
 Exemple| 7
-Aucun | 1
+Aucun terme| 1
 Grand | 32456
 ==
 
