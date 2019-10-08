@@ -6,6 +6,7 @@ title=Exemple
 
 validate==
 
-
+valid=(True," Bravo")
 ==
+
 
