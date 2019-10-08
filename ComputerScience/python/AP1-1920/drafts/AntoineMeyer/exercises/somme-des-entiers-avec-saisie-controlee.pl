@@ -36,16 +36,32 @@ for i in range(n + 1):
 print("La somme des entiers de 1 à " + str(n) + " vaut " + str(somme))
 """
 
-saisie1 = ["-4", "-10", "10"]
-affichage1 = """Saisir un entier positif : -4
-Mauvaise saisie
-Saisir un entier positif : -10
-Mauvaise saisie
-Saisir un entier positif : 10
-La somme des entiers de 1 à 10 vaut 55
-"""
+saisies_sans_erreur = [["10"], ["12"], ["1"], ["0"]]
 
-run(inputs=saisie1, output=affichage1)
+saisies_avec_erreurs = [
+    ["-4", "-10", "10"],
+    ["-4", "-10", "-10", "-1", "-3", "1"]]
+
+def affichage_attendu(saisie):
+    i = 0
+    res = ""
+    while i < len(saisie) and int(saisie[i]) < 0: 
+        res += "Saisir un entier positif : " + saisie[i] + "\n"
+        res += "Mauvaise saisie\n"
+        i += 1
+    n = saisie[i]
+    somme = 0
+    for i in range(n + 1):
+        somme += i
+    res += f"La somme des entiers de 1 à {n} vaut {somme}"
+
+begin_test_group("Saisies sans erreur")
+for saisie in saisies_sans_erreur:
+    run(inputs=saisie1, output=affichage_attendu(saisie)))
+
+begin_test_group("Saisies avec erreur")
+for saisie in saisies_avec_erreur:
+    run(inputs=saisie1, output=affichage_attendu(saisie)))
 
 ==
 
