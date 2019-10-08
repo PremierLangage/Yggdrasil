@@ -285,7 +285,9 @@ class Test:
         import difflib
         expected = expected.splitlines(1)
         actual = actual.splitlines(1)
-        diff = difflib.unified_diff(expected, actual)
+        diff = difflib.unified_diff(actual, expected,
+                                    fromfile='Affichage obtenu',
+                                    tofile='Affichage attendu')
         return ''.join(diff)
 
     def assert_output(self, expected: Any, cmp: Callable = operator.eq) -> bool:
