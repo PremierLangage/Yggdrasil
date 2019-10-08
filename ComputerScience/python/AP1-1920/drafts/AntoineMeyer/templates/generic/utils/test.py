@@ -718,7 +718,7 @@ class Verbatim:
         self.code = code
 
     def render(self):
-        return "<code style='color:white;'>{}</code>".format(self.code)
+        return "<pre>{}</pre>".format(self.code)
 
 
 class Assert:
