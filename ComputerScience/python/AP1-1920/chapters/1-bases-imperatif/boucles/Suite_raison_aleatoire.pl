@@ -16,7 +16,7 @@ En utilisant une boucle de type "for...in...range", écrire un programme qui dem
 égal à {{val2}} fois le terme précédent.
 ==
 
-code== 
+code== #|python|
 # écrivez votre code ici
 a=input("Entrez un nombre : ")
 ==
@@ -24,7 +24,7 @@ a=input("Entrez un nombre : ")
 taboo=while
 needed=for
 
-soluce==
+soluce==#|python|
 a=int(input("Entrez un nombre : "))
 for i in range({{val2}}):
     print(i+1,a)
