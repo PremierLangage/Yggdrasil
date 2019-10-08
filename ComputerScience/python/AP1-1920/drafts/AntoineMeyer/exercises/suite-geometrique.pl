@@ -10,7 +10,7 @@ On suppose qu'il existe deux variables `a` et `b` désignant des nombres flottan
 On rappelle la définition de la suite :
 {$
 \begin{cases}
-u_0 & = a\linebreak
+u_0 & = a\\
 u_{n+1} & = b \times u_n
 \end{cases}
 $}
