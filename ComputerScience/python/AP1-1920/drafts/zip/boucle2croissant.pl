@@ -56,7 +56,7 @@ while typ!= "int" and type!="str":
     typ=input()
 
 nb=1
-if typ="str":
+if typ=="str":
     prec=input()
     suiv=input()
 else
@@ -66,7 +66,7 @@ else
 while suiv> prec:
     nb+=1
     prec=suiv
-    if typ="str":
+    if typ=="str":
         prec=input()
     else
     suiv=int(input())
