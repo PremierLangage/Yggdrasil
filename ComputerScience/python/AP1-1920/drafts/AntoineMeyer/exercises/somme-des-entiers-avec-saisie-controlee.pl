@@ -37,8 +37,7 @@ print("La somme des entiers de 1 à " + str(n) + " vaut " + str(somme))
 """
 
 saisie1 = ["-4", "-10", "10"]
-affichage1 = 
-"""Saisir un entier positif : -4
+affichage1 = """Saisir un entier positif : -4
 Mauvaise saisie
 Saisir un entier positif : -10
 Mauvaise saisie
