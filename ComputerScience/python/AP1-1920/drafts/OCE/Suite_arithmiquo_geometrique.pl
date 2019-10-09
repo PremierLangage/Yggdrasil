@@ -69,8 +69,8 @@ if "needed" in dic:
 
 # executer le code de l'élève et comparer au résultat attendu
 resultat=str((exec(student)))
-
-print(resultat)
+x = re.sub("(\"(.|\n)*\"|#.*)", "", resultat) #enlève les commentaires et les chaînes de caractères
+print(x)
 ==
 # --- Fin Partie liée à l'évaluation de l'exercice
 
