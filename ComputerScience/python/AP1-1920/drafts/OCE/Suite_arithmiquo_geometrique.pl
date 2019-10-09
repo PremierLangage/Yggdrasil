@@ -5,7 +5,7 @@
 # extends = /ComputerScience/python/AP1-1920/drafts/AntoineMeyer/templates/generic/generic.pl
 
 #@ /ComputerScience/python/AP1-1920/templates/utils/pltest_doc.py
-#@ /ComputerScience/python/AP1-1920/templates/utils/pltestgrader.py [grader.py]
+@ /ComputerScience/python/AP1-1920/templates/utils/pltestgrader.py
 #@ /ComputerScience/python/AP1-1920/templates/utils/feedback2.py
 @ /ComputerScience/python/AP1-1920/templates/utils/template.html
 @ /utils/sandboxio.py
