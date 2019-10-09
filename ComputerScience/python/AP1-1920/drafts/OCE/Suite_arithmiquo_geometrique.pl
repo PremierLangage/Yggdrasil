@@ -69,10 +69,8 @@ if "needed" in dic:
 
 # executer le code de l'élève et comparer au résultat attendu
 resultat=str(exec(student))
-print(type(resultat))
-#x = pltestgrader.re.sub('[a-z]',"",resultat) # on ne récupère que le résultat numérique
-#print(str(x))
-
+chaine = re.sub("(\"(.|\n)*\"|#.*)", "", resultat) #enlève les commentaires et les chaînes de caractères
+x=re.sub('[a-z]',"",chaine)
 ==
 # --- Fin Partie liée à l'évaluation de l'exercice
 
