@@ -50,12 +50,10 @@ text==
 Relier chaque pays à sa capitale
 ==
 
-# STEP 3
 form==
 {{ match|component }}
 ==
 
-# STEP 4
 evaluator== #|python|
 
 def in_links(conn, links):
