@@ -12,11 +12,11 @@ import random as rd
 import csv
 
 with open('data.csv','r') as file:
-    row=rd.choice(list(csv.reader(file,delimiter=',')))
+    rows=list(csv.reader(file,delimiter=','))
 
 n=5
 
-item=rd.sample(row,3)
+items=rd.sample(rows,4)
 cs=0
 ct=2
 
