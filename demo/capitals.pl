@@ -24,7 +24,7 @@ elif article=="l":
 elif article=="la":
     ofcountry = "de la " + country
 elif article=="les":
-    ofcountry = "des" + country
+    ofcountry = "des " + country
 ==
 
 text ==
@@ -50,5 +50,6 @@ if "value" in input:
         grade=(0,"essai="+str(essai)+"<br>Raté !")
 grade=(0," saisisez une valeur ") 
 ==
+
 
 
