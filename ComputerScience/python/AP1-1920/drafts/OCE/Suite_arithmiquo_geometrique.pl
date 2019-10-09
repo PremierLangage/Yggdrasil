@@ -67,6 +67,13 @@ def checktaboo(taboo, answer):
     # FIXME la chaine de caractère ""  letaboo "" est elle trouvée par la regex suivante ? 
     return re.search("(^"+taboo+"\s|[^\"]+"+taboo+"\s)", x) != None
 
+dic = get_context()
+    student = get_answers()['answer']
+    if "taboo" in dic:
+        if checktaboo(dic['taboo'], student):
+            output(0, "Le mot clef " + dic['taboo'] + " est proscrit.")
+            sys.exit(1)
+            
 student=get_answers()['answer']
 resultat=str((exec(student)))
 
