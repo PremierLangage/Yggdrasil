@@ -22,7 +22,7 @@ créer un nouveau fichier pour faire vos essais**.
 ==
 
 @ /demo/add_int.pl 
-@ /demo/capitals.pl
+@ /demo/capitals2.pl
 
 @ /ComputerScience/C/examples/chemical_equation.pl #marche
 @ /ComputerScience/C/examples/proposition_subordonnee_relative.pl #marche
