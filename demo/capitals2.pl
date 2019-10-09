@@ -47,7 +47,7 @@ Match List Component
 ==
 
 text==
-*Link each operation to the appropriate result.*
+Relier chaque pays à sa capitale
 ==
 
 # STEP 3
