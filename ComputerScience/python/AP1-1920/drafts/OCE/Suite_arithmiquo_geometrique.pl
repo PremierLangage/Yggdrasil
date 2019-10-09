@@ -63,7 +63,7 @@ def get_answers():
     return answers
 
 student=get_answers()['answer']
-print(student)
+print(exec(student))
 
 ==
 
