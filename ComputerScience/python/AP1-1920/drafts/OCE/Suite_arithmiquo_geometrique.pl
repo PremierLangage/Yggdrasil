@@ -69,7 +69,7 @@ if "needed" in dic:
 
 # executer le code de l'élève et comparer au résultat attendu
 resultat=str((exec(student)))
-x = pltestgrader.re.sub('[a-z]',resultat) # on ne récupère que le résultat numérique
+x = pltestgrader.re.sub('[a-z]',"",resultat) # on ne récupère que le résultat numérique
 print(str(x))
 
 ==
