@@ -54,7 +54,7 @@ print("le résultat est :",??)
 
 grader==#|python|
 
-import sys, json, jsonpickle
+import sys, json, jsonpickle,re
 
 def get_answers():
     """Return a dictionnary containing every answer."""
@@ -64,6 +64,7 @@ def get_answers():
 
 student=get_answers()['answer']
 resultat=str((exec(student)))
+
 print(resultat)
 ==
 
