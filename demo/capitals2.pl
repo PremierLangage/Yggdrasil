@@ -1,6 +1,6 @@
 @ /utils/sandboxio.py
-@ /grader/evaluator.py [grader]
-@ /builder/before.py [builder]
+@ /builder/before.py [builder.py]
+@ /grader/evaluator.py [grader.py]
 
 @ country_data.csv [data.csv]
 
