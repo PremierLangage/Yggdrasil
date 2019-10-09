@@ -45,7 +45,7 @@ code== #|python|
 print("le résultat est :",??)
 ==
 
-taboo=while
+taboo=for
 # needed=for
 
 grader==#|python|
