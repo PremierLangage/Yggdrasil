@@ -70,8 +70,8 @@ if "needed" in dic:
 # executer le code de l'élève et comparer au résultat attendu
 resultat=str(exec(student))
 chaine = pltestgrader.re.sub("(\"(.|\n)*\"|#.*)", "", resultat) #enlève les commentaires et les chaînes de caractères
-x=pltestgrader.re.sub('[a-z]',"",chaine)
-correction="6338253001141147007483516026878"
+x=int(pltestgrader.re.sub('[a-z]',"",chaine))
+correction=6338253001141147007483516026878
 if x == correction:
     pltestgrader.output(10, "OK")
     sys.exit(1)
