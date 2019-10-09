@@ -4,12 +4,14 @@
 # extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 # extends = /ComputerScience/python/AP1-1920/drafts/AntoineMeyer/templates/generic/generic.pl
 
+# Import à la 'PL' des modules nécessaires pour faire l'import de "pltestgrader.py" dans le grader
 @ /ComputerScience/python/AP1-1920/templates/utils/pltest_doc.py
 @ /ComputerScience/python/AP1-1920/templates/utils/pltestgrader.py
 @ /ComputerScience/python/AP1-1920/templates/utils/feedback2.py
 @ /ComputerScience/python/AP1-1920/templates/utils/template.html
 @ /utils/sandboxio.py
 @ /builder/none.py [builder.py]
+# fin des imports à la sauce 'PL'
 
 editor.fontsize=14
 # une interface standard d'exercice avec un editeur pour la réponse
