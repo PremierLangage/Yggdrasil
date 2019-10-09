@@ -47,7 +47,7 @@ Capitales des pays d'Europe
 ==
 
 text==
-Relier chaque pays à sa capitale
+Relier chaque pays à sa capitale.
 ==
 
 form==
