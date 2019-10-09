@@ -62,6 +62,11 @@ def get_answers():
         answers = json.load(f)
     return answers
 
+def checktaboo(taboo, answer):
+    x = re.sub("(\"(.|\n)*\"|#.*)", "", answer) #enlève les commentaires et les chaînes de caractères
+    # FIXME la chaine de caractère ""  letaboo "" est elle trouvée par la regex suivante ? 
+    return re.search("(^"+taboo+"\s|[^\"]+"+taboo+"\s)", x) != None
+
 student=get_answers()['answer']
 resultat=str((exec(student)))
 
