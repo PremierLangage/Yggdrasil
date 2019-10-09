@@ -48,25 +48,7 @@ taboo=while
 
 grader==#|python|
 
-import sys, json, jsonpickle,re
-
-def get_answers():
-    """Return a dictionnary containing every answer."""
-    with open(sys.argv[2], "r") as f:
-        answers = json.load(f)
-    return answers
-
-def checktaboo(taboo, answer):
-    x = re.sub("(\"(.|\n)*\"|#.*)", "", answer) #enlève les commentaires et les chaînes de caractères
-    # FIXME la chaine de caractère ""  letaboo "" est elle trouvée par la regex suivante ? 
-    return re.search("(^"+taboo+"\s|[^\"]+"+taboo+"\s)", x) != None
-
-dic = get_context()
-    student = get_answers()['answer']
-    if "taboo" in dic:
-        if checktaboo(dic['taboo'], student):
-            output(0, "Le mot clef " + dic['taboo'] + " est proscrit.")
-            sys.exit(1)
+import sandboxio
 
 student=get_answers()['answer']
 resultat=str((exec(student)))
