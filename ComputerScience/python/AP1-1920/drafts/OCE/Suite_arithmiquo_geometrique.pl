@@ -75,7 +75,7 @@ correction="6338253001141147007483516026878"
 if x == correction:
     print("OK")
 else:
-    print("pas de chnace")
+    print("pas de chance")
 ==
 # --- Fin Partie liée à l'évaluation de l'exercice
 
