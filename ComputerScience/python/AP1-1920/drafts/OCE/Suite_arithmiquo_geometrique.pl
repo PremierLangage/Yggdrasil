@@ -70,7 +70,7 @@ if "needed" in dic:
 # executer le code de l'élève et comparer au résultat attendu
 resultat=str((exec(student)))
 x = pltestgrader.re.sub("(\"(.|\n)*\"|#.*)", "", resultat) #enlève les commentaires et les chaînes de caractères
-X = pltestgrader.re.match(\d, x) # on ne récupère que le résultat numérique
+x = pltestgrader.re.match(\d, x) # on ne récupère que le résultat numérique
 print(x)
 
 ==
