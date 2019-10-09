@@ -68,7 +68,7 @@ if "needed" in dic:
         sys.exit(1)
 
 # executer le code de l'élève et comparer au résultat attendu
-resultat=str((exec(student)))
+resultat=exec(student)
 print(resultat)
 x = pltestgrader.re.sub('[a-z]',"",resultat) # on ne récupère que le résultat numérique
 print(str(x))
