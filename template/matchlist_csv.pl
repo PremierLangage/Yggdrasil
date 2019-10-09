@@ -11,9 +11,9 @@ import csv
 with open('data.csv','r') as file:
     rows=list(csv.reader(file,delimiter=','))
 
-n={{nitems}}
-cs={{colsource}}
-ct={{coltarget}}
+n=4
+cs=0
+ct=2
 
 items=rd.sample(rows,n)
 match.nodes = []
