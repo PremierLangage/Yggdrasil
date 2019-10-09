@@ -16,7 +16,7 @@ with open('data.csv','r') as file:
 
 n=5
 
-item=rd.sample(row,n)
+item=rd.sample(row,3)
 cs=0
 ct=2
 
