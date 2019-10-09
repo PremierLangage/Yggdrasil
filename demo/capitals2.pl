@@ -22,7 +22,7 @@ ct=2
 
 match.nodes = []
 expected = []
-for i in len(item):
+for i in len(items):
     sourceId = "source" + str(i)
     targetId = "target" + str(i)
 
@@ -38,7 +38,7 @@ for i in len(item):
         "target": True,
     })
     expected.append({ "source": sourceId, "target": targetId })
-    
+
 rd.shuffle(match.nodes)
 ==
 
