@@ -1,6 +1,6 @@
 extends = /template/matchlist_csv.pl
 
-@ /demo/country_data.csv [data.csv]
+@ country_data.csv [data.csv]
 
 
 colsource % 0
