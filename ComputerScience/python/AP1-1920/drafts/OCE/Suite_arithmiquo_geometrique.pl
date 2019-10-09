@@ -62,7 +62,7 @@ if "taboo" in dic:
 #student=pltestgrader.get_answers()['answer']
 #resultat=str((exec(student)))
 
-print(resultat)
+#print(resultat)
 ==
 
 
