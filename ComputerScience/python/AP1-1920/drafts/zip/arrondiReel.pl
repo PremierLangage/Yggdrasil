@@ -26,10 +26,13 @@ $%(1): \sum\limits_{i=1}^{+\infty}\frac{1}{i}%$
 $%\(2):\sum\limits_{+\infty}^1 \frac{1}{i}%$
  
 
-Ecrire un programme qui lit un entier positif n et calcule et affiche les sommes 
-partielle (i=1 à n et i=n à 1, borne comprises) pour chaque série.
+Ecrire un programme qui lit un entier positif n,
+ puis affiche les sommes 
+partielle (i=1 à n et i=n à 1, bornes comprises)
+ pour chaque série.
 
 Si l'entier n est négatif, on affiche "erreur"
+
 ==
 soluce==
 #import math
