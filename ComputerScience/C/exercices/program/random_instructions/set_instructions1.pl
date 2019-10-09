@@ -16,6 +16,8 @@ def check_consistency(dic):
     return True, ""
 ==
 
+text==
+==
 
 nb_variables = 1
 complexity = 10
