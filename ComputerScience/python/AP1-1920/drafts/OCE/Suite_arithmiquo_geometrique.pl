@@ -1,10 +1,6 @@
 # author=OCE
-# Heritage d'un type d'exercice 
-# extends=/ComputerScience/python/template/loopsoluce.pl
-# extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
-# extends = /ComputerScience/python/AP1-1920/drafts/AntoineMeyer/templates/generic/generic.pl
 
-# Import à la 'PL' des modules nécessaires pour faire l'import de "pltestgrader.py" dans le grader
+# Import à la sauce 'PL' des modules nécessaires pour faire l'import de "pltestgrader.py" dans le grader
 @ /ComputerScience/python/AP1-1920/templates/utils/pltest_doc.py
 @ /ComputerScience/python/AP1-1920/templates/utils/pltestgrader.py
 @ /ComputerScience/python/AP1-1920/templates/utils/feedback2.py
@@ -13,9 +9,11 @@
 @ /builder/none.py [builder.py]
 # fin des imports à la sauce 'PL'
 
+# --- Conception de l'IHM
 editor.fontsize=14
 # une interface standard d'exercice avec un editeur pour la réponse
 form=@ /form/text_editor.html
+
 
 #settings.allow_reroll=1
 
@@ -44,6 +42,7 @@ code== #|python|
 # compléter les ??
 print("le résultat est :",??)
 ==
+# --- Fin de conception de l'IHM
 
 taboo=while
 # needed=for
