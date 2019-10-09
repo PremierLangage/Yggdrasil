@@ -48,10 +48,9 @@ taboo=while
 
 grader==#|python|
 
-from sandboxio import output, get_context, get_answers
 import pltestgrader
 
-student=get_answers()['answer']
+student=pltestgrader.get_answers()['answer']
 resultat=str((exec(student)))
 
 print(resultat)
