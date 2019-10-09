@@ -28,16 +28,17 @@ for i in len(item):
 
     match.nodes.append({
         "id": sourceId,
-        "content": item[i][ct],
+        "content": items[i][ct],
         "source": True,
     })
 
     match.nodes.append({
         "id": targetId,
-        "content": item[i][cs],
+        "content": items[i][cs],
         "target": True,
     })
     expected.append({ "source": sourceId, "target": targetId })
+    
 rd.shuffle(match.nodes)
 ==
 
