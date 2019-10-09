@@ -72,7 +72,7 @@ resultat=str(exec(student))
 chaine = re.sub("(\"(.|\n)*\"|#.*)", "", resultat) #enlève les commentaires et les chaînes de caractères
 x=re.sub('[a-z]',"",chaine)
 correction="6338253001141147007483516026878"
-if x == correction
+if x == correction:
     print("OK")
 else:
     print("pas de chnace")
