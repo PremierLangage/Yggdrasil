@@ -48,7 +48,7 @@ taboo=while
 
 grader==#|python|
 
-import pltestgrader
+from pltestgrader import *
 
 student=pltestgrader.get_answers()['answer']
 resultat=str((exec(student)))
