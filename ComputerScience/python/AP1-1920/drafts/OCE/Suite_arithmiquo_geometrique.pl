@@ -50,7 +50,7 @@ grader==#|python|
 
 import sandboxio
 
-student=get_answers()['answer']
+student=sandboxio.get_answers()['answer']
 resultat=str((exec(student)))
 
 print(resultat)
