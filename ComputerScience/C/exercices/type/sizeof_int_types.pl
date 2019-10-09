@@ -19,7 +19,7 @@ sortlist.items %= #|json|
     { "id": "1", "content": "<b>signed char</b>" },
     { "id": "2", "content": "<b>short</b>" },
     { "id": "3", "content": "<b>unsigned int</b>" },
-    { "id": "4", "content": "<b>long int</b>" },
+    { "id": "4", "content": "<b>long int</b>" }
 ]
 ==
 
