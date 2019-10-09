@@ -12,7 +12,7 @@
 # --- Conception de l'IHM
 editor.fontsize=14
 # une interface standard d'exercice avec un editeur pour la réponse
-#form=@ /form/text_editor.html
+form=@ /form/text_editor.html
 
 #settings.allow_reroll=1
 
@@ -35,7 +35,7 @@ pour a et b vous prendrez les valeurs : 2 et 3 <br>
 Pour N la valeur 100 et pour Uo la valeur 1
 ==
 
-code== #|python|
+editor.code== #|python|
 # insérez votre code ici
 
 # compléter les ??
