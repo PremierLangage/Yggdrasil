@@ -54,7 +54,8 @@ print("le résultat est :",??)
 
 grader==#|python|
 
-import sandboxio.py
+@ /utils/sandboxio.py
+
 #import sys, json, jsonpickle
 
 #def get_answers():
