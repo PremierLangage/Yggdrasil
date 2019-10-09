@@ -55,7 +55,7 @@ import pltestgrader
 dic = pltestgrader.get_context()
 student = pltestgrader.get_answers()['answer']
 if "taboo" in dic:
-    if checktaboo(dic['taboo'], student):
+    if pltestgrader.checktaboo(dic['taboo'], student):
         output(0, "Le mot clef " + dic['taboo'] + " est proscrit.")
         sys.exit(1)
 
