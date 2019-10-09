@@ -14,7 +14,6 @@ editor.fontsize=14
 # une interface standard d'exercice avec un editeur pour la réponse
 form=@ /form/text_editor.html
 
-
 #settings.allow_reroll=1
 
 title = Suite arithmético-géométrique
@@ -49,6 +48,7 @@ taboo=while
 # needed=for
 # --- Fin Mots clefs lié au fonctionnement de l'exercice
 
+# --- Partie liée à l'évaluation de l'exerice
 grader==#|python|
 
 import pltestgrader
@@ -67,7 +67,7 @@ if "taboo" in dic:
 
 #print(resultat)
 ==
-
+# --- Fin Partie liée à l'évaluation de l'exerice
 
 
 
