@@ -21,12 +21,12 @@ form==
 
 evaluator==
 
-verbes = ['πρεσβύτερος', 'νεώτερος']
+rightwords = ['πρεσβύτερος', 'νεώτερος']
 found = 0
 error = 0
 
 for e in selectable.selections:
-    if e['content'] in pronoms:
+    if e['content'] in rightwords:
         e['css'] = "success-state"
         found += 1
     else:
@@ -35,7 +35,7 @@ for e in selectable.selections:
 
 if found == 10 and error == 0:
     score = 100
-    msg = '<span class="success-state">Bravo, vous avez trouvé tous les pronoms personnels !</span>'
+    msg = '<span class="success-state">Bravo, vous avez trouvé tous les adjectifs comparatifs !</span>'
 else:
     score = max([0, 10*(found - error)])
     nb_error = (10 - found) + error
