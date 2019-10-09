@@ -43,7 +43,7 @@ code== #|python|
 print("le résultat est :",??)
 ==
 
-#taboo=while
+taboo=while
 # needed=for
 
 #grader==#|python|
@@ -73,7 +73,7 @@ dic = get_context()
         if checktaboo(dic['taboo'], student):
             output(0, "Le mot clef " + dic['taboo'] + " est proscrit.")
             sys.exit(1)
-            
+
 student=get_answers()['answer']
 resultat=str((exec(student)))
 
