@@ -1,6 +1,6 @@
 extends = /template/matchlist_csv.pl
 
-@ Yggdrasil/demo/country_data.csv [data.csv]
+@ /demo/country_data.csv [data.csv]
 
 
 colsource % 0
