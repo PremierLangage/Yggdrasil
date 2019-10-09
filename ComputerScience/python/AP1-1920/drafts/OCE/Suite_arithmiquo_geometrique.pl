@@ -63,8 +63,8 @@ def get_answers():
     return answers
 
 student=get_answers()['answer']
-print(exec(student))
-
+resultat=str((exec(student)))
+print(resultat)
 ==
 
 
