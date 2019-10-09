@@ -32,7 +32,7 @@ créer un nouveau fichier pour faire vos essais**.
 
 @ section-maths.pl
 
-
+@ /Mathematics/exercises/complex_numbers/cplx_computation_mult.pl
 
 @ section-info.pl
 
@@ -47,6 +47,7 @@ créer un nouveau fichier pour faire vos essais**.
 @ /example/python/stack.pl
 @ /example/python/enigma_encode.pl
 @ /example/python/enigma_decode.pl
+
 
 
 
