@@ -8,11 +8,11 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 title = Approximation de $%\frac{\pi^2}{6}%$
 
 code==
- n= int(input("Entrez un nombre : "))
+n= int(input("Entrez un nombre : "))
 
 
 
-print("avec(1)",??,"avec(2),??)
+print("avec(1)",??,"avec(2)",??)
 
 ==
 
@@ -33,6 +33,7 @@ partielle (i=1 à n et i=n à 1, bornes comprises)
 
 Si l'entier n est négatif, on affiche "erreur"
 
+*Testez dans python (pour n=10,100,10000) et réfléchissez à une explication*
 ==
 soluce==
 #import math
@@ -51,6 +52,6 @@ else:
 plsoluce==
 erreur | -4
 un | 1
-petit | 10
-grand | 10000
+petit | 14
+grand | 10001
 ==
