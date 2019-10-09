@@ -12,7 +12,7 @@
 # --- Conception de l'IHM
 editor.fontsize=14
 # une interface standard d'exercice avec un editeur pour la réponse
-form=@ /form/text_editor.html
+#form=@ /form/text_editor.html
 
 #settings.allow_reroll=1
 
@@ -67,7 +67,7 @@ if "needed" in dic:
         pltestgrader.output(0, "ATTENTION : Le mot clef " + dic['needed'] + " est demandé.")
         sys.exit(1)
 
-# rechercher si les noms de variables sont 
+# executer le code de l'élève et comparer au résultat attendu
 #student=pltestgrader.get_answers()['answer']
 #resultat=str((exec(student)))
 
