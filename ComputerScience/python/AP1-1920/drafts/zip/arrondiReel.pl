@@ -32,7 +32,7 @@ partielle (i=1 à n et i=n à 1, borne comprises) pour chaque série.
 Si l'entier n est négatif, on affiche "erreur"
 ==
 soluce==
-{import math
+#import math
 croiss,decroi=0,0
 n=int(input()) 
 if n<0:
@@ -42,7 +42,7 @@ if n<0:
         croiss+=1/(i*i)
     for i in range(n,0,-1):
         decroi+=1/(i*i)
-    print(croiss,decroi)
+    print("avec(1)",croiss,"avec(2)",decroi)
 #print(math.pi*math.pi/6)
 ==
 plsoluce==
