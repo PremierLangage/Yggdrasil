@@ -11,14 +11,15 @@ import random
 group.items = []
 
 group.items.append({"id": "1", "content": "Langage compilé"})
+group.items.append({"id": "4", "content": "Langage typé statiquement"})
+group.items.append({"id": "7", "content": "Langage Impératif"})
+group.items.append({"id": "9", "content": "Langage bas niveau"})
+
 group.items.append({"id": "2", "content": "Langage interprété"})
 group.items.append({"id": "3", "content": "Langage typé dynamiquement"})
-group.items.append({"id": "4", "content": "Langage typé statiquement"})
 group.items.append({"id": "5", "content": "Langage non typé"})
 group.items.append({"id": "6", "content": "Langage Orienté objet"})
-group.items.append({"id": "7", "content": "Langage Impératif"})
 group.items.append({"id": "8", "content": "Langage haut niveau"})
-group.items.append({"id": "9", "content": "Langage bas niveau"})
 
 random.shuffle(group.items)
 ==
@@ -37,21 +38,30 @@ form==
 # EVALUATE THE STUDENT ANSWER
 evaluator==
 right = 0
-total = 0
+error = 0
 for item in group.items:
     checked = item['checked']
-    content = int(item['content'])
-    if content % 2 == 0:
-        total += 1
-        item['css'] = 'error-state'
+    id = int(item['id'])
+    if id in [1, 4, 7, 9]:
         if checked:
             right += 1
             item['css'] = 'success-state'
+        else:
+            error += 1
+            item['css'] = 'error-state'
     elif checked:
         item['css'] = 'error-state'
+        error += 1
 
+nb_error = (4 - right) + error
+grade = 25*max([0, 4 - nb_error])
 
-grade = (right / total, f"{right} / {total}")
+if (nb_error == 0)
+    msg = '<span class="success-state">Bravo, cela caractérise bien le langage C.</span>.'
+else:
+    msg = '<span class="error-state">Vous avez fait %s erreurs.</span>' % errors
+
+grade = (right / total, msg)
 ==
 
 
