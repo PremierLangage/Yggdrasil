@@ -44,8 +44,10 @@ print("le résultat est :",??)
 ==
 # --- Fin de conception de l'IHM
 
+# --- Mots clefs lié au fonctionnement de l'exercice
 taboo=while
 # needed=for
+# --- Fin Mots clefs lié au fonctionnement de l'exercice
 
 grader==#|python|
 
