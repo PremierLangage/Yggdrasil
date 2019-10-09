@@ -45,10 +45,10 @@ print("le résultat est :",??)
 
 # --- Mots clefs lié au fonctionnement de l'exercice
 taboo=while
-# needed=for
+needed=for
 # --- Fin Mots clefs lié au fonctionnement de l'exercice
 
-# --- Partie liée à l'évaluation de l'exerice
+# --- Partie liée à l'évaluation de l'exercice
 grader==#|python|
 
 import pltestgrader
@@ -61,13 +61,19 @@ if "taboo" in dic:
     if pltestgrader.checktaboo(dic['taboo'], student):
         pltestgrader.output(0, "ATTENTION : Le mot clef " + dic['taboo'] + " est proscrit.")
         sys.exit(1)
+# Vérification dans le code de l'étudiant de la présence du needed
+if "needed" in dic:
+    if !pltestgrader.checktaboo(dic['needed'], student):
+        pltestgrader.output(0, "ATTENTION : Le mot clef " + dic['needed'] + " est demandé.")
+        sys.exit(1)
 
+# rechercher si les noms de variables sont 
 #student=pltestgrader.get_answers()['answer']
 #resultat=str((exec(student)))
 
 #print(resultat)
 ==
-# --- Fin Partie liée à l'évaluation de l'exerice
+# --- Fin Partie liée à l'évaluation de l'exercice
 
 
 
