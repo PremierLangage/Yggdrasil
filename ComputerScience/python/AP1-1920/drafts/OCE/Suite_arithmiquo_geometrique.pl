@@ -54,15 +54,13 @@ print("le résultat est :",??)
 
 grader==#|python|
 
-import /utils/sandboxio.py
+import sys, json, jsonpickle
 
-#import sys, json, jsonpickle
-
-#def get_answers():
-#    """Return a dictionnary containing every answer."""
-#    with open(sys.argv[2], "r") as f:
-#        answers = json.load(f)
-#    return answers
+def get_answers():
+    """Return a dictionnary containing every answer."""
+    with open(sys.argv[2], "r") as f:
+        answers = json.load(f)
+    return answers
 
 student=get_answers()['answer']
 print(student)
