@@ -55,7 +55,7 @@ print("le résultat est :",??)
 grader==#|python|
 
 import sys, json, jsonpickle
-from components import Component
+#from components import Component
 
 def get_answers():
     """Return a dictionnary containing every answer."""
