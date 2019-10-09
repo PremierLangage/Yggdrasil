@@ -63,7 +63,7 @@ if "taboo" in dic:
         sys.exit(1)
 # Vérification dans le code de l'étudiant de la présence du needed
 if "needed" in dic:
-    if !pltestgrader.checktaboo(dic['needed'], student):
+    if not pltestgrader.checktaboo(dic['needed'], student):
         pltestgrader.output(0, "ATTENTION : Le mot clef " + dic['needed'] + " est demandé.")
         sys.exit(1)
 
