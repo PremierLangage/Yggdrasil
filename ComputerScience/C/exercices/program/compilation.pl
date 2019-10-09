@@ -3,7 +3,7 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 # FORM
-title = Étapes durant la compilation avec <b>gcc</b>
+title = Étapes durant la compilation avec **gcc**
 author = Nicolas Borie
 
 text== 
@@ -57,3 +57,4 @@ extracss==
 }
 </style>
 ==
+
