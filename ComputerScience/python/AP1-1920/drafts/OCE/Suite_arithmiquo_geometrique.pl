@@ -76,7 +76,7 @@ if x == correction:
     pltestgrader.output(10, "OK")
     sys.exit(1)
 else:
-    pltestgrader.output(10, "Pas de chance")
+    pltestgrader.output(0, "Pas de chance")
     sys.exit(1)
 ==
 # --- Fin Partie liée à l'évaluation de l'exercice
