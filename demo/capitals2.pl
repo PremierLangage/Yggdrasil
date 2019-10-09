@@ -22,7 +22,7 @@ ct=2
 
 match.nodes = []
 expected = []
-for i in len(items):
+for i in range(len(items)):
     sourceId = "source" + str(i)
     targetId = "target" + str(i)
 
