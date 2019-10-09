@@ -68,10 +68,9 @@ if "needed" in dic:
         sys.exit(1)
 
 # executer le code de l'élève et comparer au résultat attendu
-#student=pltestgrader.get_answers()['answer']
-#resultat=str((exec(student)))
+resultat=str((exec(student)))
 
-#print(resultat)
+print(resultat)
 ==
 # --- Fin Partie liée à l'évaluation de l'exercice
 
