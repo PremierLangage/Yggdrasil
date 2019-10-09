@@ -1,15 +1,16 @@
 title=Exercices fonctionnels sur la notions de programme
 
 introduction==
-Les exercices qui suivent fonctionnent tous le 10 octobre 2018.
+Les exercices qui suivent illustrent la notion de programme. Ce sont des exercices 
+simples, parfois des questions de cours, de découverte du langage C.
 ==
 
 
 @ /ComputerScience/C/exercices/program/hello.pl
 @ /ComputerScience/C/exercices/program/order_calls.pl
 @ /ComputerScience/C/exercices/program/compilation.pl
+@ /ComputerScience/C/exercices/program/call_cube.pl
 @ /ComputerScience/C/exercices/program/langage_c.pl
 @ /ComputerScience/C/exercices/program/arguments.pl
-@ /ComputerScience/C/exercices/program/call_cube.pl
 
 
