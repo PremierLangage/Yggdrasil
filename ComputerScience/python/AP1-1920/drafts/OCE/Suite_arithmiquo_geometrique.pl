@@ -52,8 +52,15 @@ grader==#|python|
 
 import pltestgrader
 
-student=pltestgrader.get_answers()['answer']
-resultat=str((exec(student)))
+dic = pltestgrader.get_context()
+student = pltestgrader.get_answers()['answer']
+if "taboo" in dic:
+    if checktaboo(dic['taboo'], student):
+        output(0, "Le mot clef " + dic['taboo'] + " est proscrit.")
+        sys.exit(1)
+
+#student=pltestgrader.get_answers()['answer']
+#resultat=str((exec(student)))
 
 print(resultat)
 ==
