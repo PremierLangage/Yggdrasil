@@ -40,28 +40,17 @@ form==
 ==
 
 evaluator==
-score = 100
-
-#indices = [0, 2, 4, 11, 13, 36, 39, 48, 50, 58]
-#for e in selectable.selections:
-#    e['css'] = "error-state"
-#    if e['index'] in indices:
-#        e['css'] = "success-state"
-#        indices = [i for i in indices if i != e['index']]
-#    else:
-#        indices.append(e['css'])
-
 
 pronoms = ['Toi', 'moi,', 'eux', 'lui', 'elle', 'je', 'on', 'On', 's\'']
 found = 0
 error = 0
+
 for e in selectable.selections:
     if e['content'] in pronoms:
         e['css'] = "success-state"
         found += 1
     else:
         e['css'] = "error-state"
-        print(e['content']) 
         error += 1
 
 if found == 10 and error == 0:
@@ -74,6 +63,7 @@ else:
         msg = '<span class="error-state">Il y a {} erreurs...</spam>'.format(nb_error)
     else:
         msg = '<span class="error-state">Il y a 1 seule erreur...</spam>'
+
 grade = (score, msg)
 ==
 
