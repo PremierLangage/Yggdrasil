@@ -18,7 +18,6 @@ group.items.append({"id": "7", "content": "Langage Impératif"})
 group.items.append({"id": "8", "content": "Langage haut niveau"})
 group.items.append({"id": "9", "content": "Langage bas niveau"})
 
-# random.shuffle(group.items)
 ==
 
 title = Checkbox Group Component
