@@ -8,6 +8,8 @@ group =: CheckboxGroup
 before==
 import random
 
+group.items = []
+
 group.items.append({"id": "1", "content": "Langage compilé"})
 group.items.append({"id": "2", "content": "Langage interprété"})
 group.items.append({"id": "3", "content": "Langage typé dynamiquement"})
