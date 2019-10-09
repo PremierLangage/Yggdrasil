@@ -4,7 +4,7 @@
 # extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 # extends = /ComputerScience/python/AP1-1920/drafts/AntoineMeyer/templates/generic/generic.pl
 
-#@ /ComputerScience/python/AP1-1920/templates/utils/pltest_doc.py
+@ /ComputerScience/python/AP1-1920/templates/utils/pltest_doc.py
 @ /ComputerScience/python/AP1-1920/templates/utils/pltestgrader.py
 #@ /ComputerScience/python/AP1-1920/templates/utils/feedback2.py
 @ /ComputerScience/python/AP1-1920/templates/utils/template.html
@@ -49,6 +49,7 @@ taboo=while
 grader==#|python|
 
 from sandboxio import output, get_context, get_answers
+import pltestgrader
 
 student=get_answers()['answer']
 resultat=str((exec(student)))
