@@ -71,10 +71,7 @@ if "needed" in dic:
 resultat=str((exec(student)))
 x = pltestgrader.re.sub("(\"(.|\n)*\"|#.*)", "", resultat) #enlève les commentaires et les chaînes de caractères
 x = pltestgrader.re.sub("\d", resultat) # on ne récupère que le résultat numérique
-if x :
-    print("OK")
-else:
-    print("Pas trouvé")
+print(x)
 
 ==
 # --- Fin Partie liée à l'évaluation de l'exercice
