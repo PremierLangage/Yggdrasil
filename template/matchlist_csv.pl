@@ -2,9 +2,6 @@
 @ /builder/before.py [builder.py]
 @ /grader/evaluator.py [grader.py]
 
-@ country_data.csv [data.csv]
-
-
 match =: MatchList
 
 before==
