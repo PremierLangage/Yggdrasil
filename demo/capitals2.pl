@@ -43,7 +43,7 @@ rd.shuffle(match.nodes)
 ==
 
 title==
-Match List Component
+Capitales des pays d'Europe
 ==
 
 text==
