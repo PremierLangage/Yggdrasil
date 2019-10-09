@@ -46,12 +46,6 @@ print("le résultat est :",??)
 taboo=while
 # needed=for
 
-#grader==#|python|
-#import sys
-#print(pl_context, file=sys.stderr)
-#print(etudiant)
-#==
-
 grader==#|python|
 
 import sys, json, jsonpickle,re
