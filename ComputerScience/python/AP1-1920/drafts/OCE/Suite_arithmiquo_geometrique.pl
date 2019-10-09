@@ -71,7 +71,7 @@ if "needed" in dic:
 resultat=str((exec(student)))
 x = pltestgrader.re.sub("(\"(.|\n)*\"|#.*)", "", resultat) #enlève les commentaires et les chaînes de caractères
 x = pltestgrader.re.sub('[a-zA-Z]',"",x) # on ne récupère que le résultat numérique
-print("baobab")
+print(x)
 
 ==
 # --- Fin Partie liée à l'évaluation de l'exercice
