@@ -73,10 +73,10 @@ chaine = pltestgrader.re.sub("(\"(.|\n)*\"|#.*)", "", resultat) #enlève les com
 x=pltestgrader.re.sub('[a-z]',"",chaine)
 correction="6338253001141147007483516026878"
 if x == correction:
-    pltestgrader.output(0, "OK")
+    pltestgrader.output(10, "OK")
     sys.exit(1)
 else:
-    pltestgrader.output(0, "Pas de chance")
+    pltestgrader.output(10, "Pas de chance")
     sys.exit(1)
 ==
 # --- Fin Partie liée à l'évaluation de l'exercice
