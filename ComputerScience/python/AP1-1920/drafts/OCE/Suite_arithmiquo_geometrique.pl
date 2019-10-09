@@ -54,6 +54,8 @@ import pltestgrader
 
 dic = pltestgrader.get_context()
 student = pltestgrader.get_answers()['answer']
+
+# Vérification dans le code de l'étudiant de la non présence du taboo
 if "taboo" in dic:
     if pltestgrader.checktaboo(dic['taboo'], student):
         pltestgrader.output(0, "ATTENTION : Le mot clef " + dic['taboo'] + " est proscrit.")
