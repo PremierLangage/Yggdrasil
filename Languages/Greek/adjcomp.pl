@@ -1,6 +1,6 @@
 @ /utils/sandboxio.py
-grader  =@ /grader/evaluator.py
-builder =@ /builder/before.py
+@ /grader/evaluator.py [grader]
+@ /builder/before.py [builder]
 
 title = Grec ancien
 
