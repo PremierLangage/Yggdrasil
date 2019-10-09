@@ -59,7 +59,7 @@ grade = 25*max([0, 4 - nb_error])
 if (nb_error == 0):
     msg = '<span class="success-state">Bravo, cela caractérise bien le langage C.</span>.'
 else:
-    msg = '<span class="error-state">Vous avez fait %s erreurs.</span>' % errors
+    msg = '<span class="error-state">Vous avez fait %s erreurs.</span>' % nb_error
 
 grade = (right / total, msg)
 ==
