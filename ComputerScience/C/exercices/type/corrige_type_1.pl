@@ -1,10 +1,5 @@
-# Copyright 2016 Nicolas Borie <nicolas.borie@u-pem.fr>
+# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
-# Hello world en C
-#
-# Exercice simple pour tester PL avec le langage C.
-
-
 author=Nicolas Borie
 title=Programme manipulant des types
 tag=type
@@ -12,7 +7,9 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
-Le programme suivant comporte une erreur de type. Tentez de corriger cette erreur !
+Le programme suivant comporte une erreur de type. Tentez de corriger cette erreur ! 
+Attention, cette fonction étant intégrée dans un programme pour les tests, vous ne 
+pouvez pas changer son propotype.
 
 ==
 
