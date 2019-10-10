@@ -19,15 +19,15 @@ codebefore==
 ==
 
 editor.code==
-int multiplication(int a, int b, int c){
-  return a*b*c;
+int multiplication(int a, int b){
+  return a*b;
 }
 ==
 
 solution==
 
-long int multiplication(int a, int b, int c){
-  return ((long int)a)*b*c;
+long int multiplication(int a, int b){
+  return ((long int)a)*b;
 }
 ==
 
@@ -36,20 +36,23 @@ codeafter==
 int main(int argc, char* argv[]){
   int a = atoi(argv[1]);
   int b = atoi(argv[2]);
-  int c = atoi(argv[3]);
 
-  printf("Le produit %d x %d x %d vaut %ld.\n", a, b, c, (long int)multiplication(a, b, c));
+  printf("Le produit %d x %d vaut %ld.\n", a, b, (long int)multiplication(a, b));
   return 0;
 }
 ==
 
 
 tests==
-[ ["simple éxécution", "1 1 1",""],
-  ["cinq au cube", "5 5 5",""],
-  ["aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(3)]),""],
-  ["aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(3)]),""],
-   ]
+[ ["simple éxécution", "1 1",""],
+  ["cinq au carré", "5 5",""],
+  ["aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
+  ["aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
+  ["aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
+  ["aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
+  ["aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
+  ["aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
+  ["aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""] ]
 ==
 
 
