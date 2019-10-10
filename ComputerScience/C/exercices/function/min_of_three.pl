@@ -52,14 +52,13 @@ int main(int argc, char* argv[]){
 ==
 
 tests==
-
-[["Basique", "3 2 1", ""],
- ["Égaux", "10 10 10", ""],
- ["Négatif", "12 -6 3", ""],
- ["Aléatoire", ' '.join([str(random.randint(-1000, 1000)) for i in range(3)]), ""],
- ["Aléatoire", ' '.join([str(random.randint(-1000, 1000)) for i in range(3)]), ""],
- ["Aléatoire", ' '.join([str(random.randint(-1000, 1000)) for i in range(3)]), ""],
- ["Aléatoire", ' '.join([str(random.randint(-1000, 1000)) for i in range(3)]), ""]]
-
+[ ["Basique", "3 2 1", ""],
+  ["Égaux", "10 10 10", ""],
+  ["Négatif", "12 -6 3", ""],
+  ["Aléatoire", ' '.join([str(random.randint(-1000, 1000)) for i in range(3)]), ""],
+  ["Aléatoire", ' '.join([str(random.randint(-1000, 1000)) for i in range(3)]), ""],
+  ["Aléatoire", ' '.join([str(random.randint(-1000, 1000)) for i in range(3)]), ""],
+  ["Aléatoire", ' '.join([str(random.randint(-1000, 1000)) for i in range(3)]), ""] ]
 ==
+
 
