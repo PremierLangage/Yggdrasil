@@ -51,6 +51,7 @@ int main(int argc, char* argv[]){
 
 tests==
 [ ["simple éxécution", "1 1 1",""],
-  ["simple éxécution", "1 1 2",""] ]
+  ["premier problème", "1 1 2",""], 
+  ["aléatoire", " ".join([str(randint(0, 50)) for i in range(3)]),""] ]
 ==
 
