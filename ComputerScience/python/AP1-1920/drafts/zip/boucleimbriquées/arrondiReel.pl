@@ -38,7 +38,7 @@ Si l'entier n est négatif, on affiche "erreur"
 soluce==
 #import math
 croiss,decroi=0,0
-n=int(input()) 
+n=int(input("Entrez un nombre : ")) 
 if n<0:
     print("erreur")
 else:
