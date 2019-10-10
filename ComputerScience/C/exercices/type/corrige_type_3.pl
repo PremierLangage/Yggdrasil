@@ -38,7 +38,7 @@ int main(int argc, char* argv[]){
   int b = atoi(argv[2]);
   int c = atoi(argv[3]);
 
-  printf("Le produit %d x %d x %d vaut %ld, a, b, c, (long int)multiplication(a, b, c));
+  printf("Le produit %d x %d x %d vaut %ld.\n", a, b, c, (long int)multiplication(a, b, c));
   return 0;
 }
 ==
