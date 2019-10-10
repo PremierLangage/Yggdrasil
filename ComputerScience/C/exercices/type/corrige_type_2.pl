@@ -32,6 +32,7 @@ int max(int tab[], int size){
 ==
 
 solution==
+
 int max(int tab[], int size){
   int i;
   int max=tab[0];
