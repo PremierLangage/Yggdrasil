@@ -20,7 +20,7 @@ Ecrire un programme qui force la saisie d'un entier strictement positif
 1 2 3 sur la troisième
 
 
-1 2 3     n sur la dernière.
+1 2 3 ... n sur la dernière.
 
 exemple
 
