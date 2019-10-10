@@ -22,6 +22,7 @@ editor.code==
 ==
 
 solution==
+
 int max_of_three(int a, int b, int c){
   if (a>=b) { 
       if (c>=a) return c;
@@ -36,6 +37,7 @@ int max_of_three(int a, int b, int c){
 ==
 
 codeafter==
+
 #include <stdlib.h>
 #include <stdio.h>
 
