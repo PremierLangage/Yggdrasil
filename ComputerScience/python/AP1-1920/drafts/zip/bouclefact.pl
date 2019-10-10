@@ -13,6 +13,8 @@ nb = int(input("Un nombre : "))
 
 ==
 
+taboo=import
+
 text==  
 On cherche à déterminer si un nombre est égal à la factorielle
 d'un autre nombre entier.
@@ -83,6 +85,7 @@ mplsoluce5==
 nul
 1
 ==
+
 
 
 
