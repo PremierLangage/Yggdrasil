@@ -11,14 +11,15 @@ title = Saisie d'une suite croissante
 
 text==  
 
-Ecrire un programme qui lit une suite de valeurs tant quelles forment une suite strictement croissante. 
+Ecrire un programme qui lit une suite de chaines de caractères tant qu'elles 
+forment une suite strictement croissante. 
 
 Lorsque la suite n'est plus croissante, la saisie s'arrête et 
 le programme affiche la longueur de la suite croissante.
 ==
 
 code==
-
+??=input("entrez un nombre :")
 
 
 print("Vous avez entré",nb,"valeur(s) en ordre croissant")
@@ -95,5 +96,6 @@ bannana
 papel
 mango
 ==
+
 
 
