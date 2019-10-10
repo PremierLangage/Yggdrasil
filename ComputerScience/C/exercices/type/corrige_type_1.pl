@@ -12,7 +12,14 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
-Le programme suivant comporte une erreur de type. Tentez de le corriger !
+Le programme suivant comporte une erreur de type. Tentez de corriger cette erreur !
+
+==
+
+codebefore==
+
+#include <stdio.h>
+#include <stdlib.h>
 
 ==
 
@@ -27,6 +34,20 @@ float moyenne(int a, int b, int c){
     return (a+b+c) / 3.0;
 }
 ==
+
+codeafter==
+
+int main(int argc, char* argv[]){
+  int a = atoi(argv[1]);
+  int b = atoi(argv[1]);
+  int c = atoi(argv[1]);
+
+  printf("La moyenne de %d, %d et %d est : %f.\n", a, b, c, moyenne(a, b, c));
+
+  return 0;
+}
+==
+
 
 tests==
 [ ["simple éxécution", "1 1 1",""] ]
