@@ -50,8 +50,6 @@ int main(int argc, char* argv[]){
 
 
 tests==
-import random
-
 [ ["simple éxécution", "1 1 1",""],
   ["premier problème", "1 1 2",""], 
   ["aléatoire", " ".join([str(random.randint(0, 50)) for i in range(3)]),""] ]
