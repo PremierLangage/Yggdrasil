@@ -39,8 +39,8 @@ codeafter==
 
 int main(int argc, char* argv[]){
   int a = atoi(argv[1]);
-  int b = atoi(argv[1]);
-  int c = atoi(argv[1]);
+  int b = atoi(argv[2]);
+  int c = atoi(argv[3]);
 
   printf("La moyenne de %d, %d et %d est : %f.\n", a, b, c, moyenne(a, b, c));
 
