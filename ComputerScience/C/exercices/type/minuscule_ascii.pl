@@ -7,11 +7,12 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
-Écrire un programme C qui affiche ses arguments. Le programme ne devra
-pas afficher son nom qui est toujours positionné en tête du tableau
-des arguments. On affichera un argument par ligne. Exécuté sans
-argument, le programme ne doit donc rien afficher.
+Écrire un programme C qui affiche, pour chaque lettre minuscule, sur une ligne les données suivante :
+
+    lettre --> code_décimal_de_la_lettre
     
+Attention, il y a un espace avant et après la flèche. Il y a un retour à la ligne juste après le 
+code décimal de la lettre.
 ==
 
 editor.code==
