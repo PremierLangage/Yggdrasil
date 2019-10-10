@@ -15,7 +15,7 @@ argument, le programme ne doit donc rien afficher.
 ==
 
 editor.code==
-#include <stdio>
+#include <stdio.h>
 
 int main(){
   ...
@@ -25,7 +25,7 @@ int main(){
 ==
 
 solution==
-#include <stdio>
+#include <stdio.h>
 
 int main(){
   char c;
