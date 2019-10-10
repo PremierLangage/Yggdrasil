@@ -12,7 +12,6 @@ text==
 
 Ecrire un programme qui force la saisie d'un entier strictement positif
  puis affiche un suite de lignes formées de:
-
 1 sur la première ligne
 
 1 2 sur la deuxième ligne
@@ -20,12 +19,12 @@ Ecrire un programme qui force la saisie d'un entier strictement positif
 1 2 3 sur la troisième
 
 
-1 2 3 ... n sur la dernière.
+1 2 3     n sur la dernière.
 
 exemple
 
 
-Entrez un entier strictement positf: 
+Entrez un entier strictement positf: -2
 
 Entrez un entier strictement positif: 5
 
@@ -57,16 +56,14 @@ mplsoluce3 += str(v)
 ==
 
 soluce==
-nb=-1
+nb=int(input("Entrez un entier strictement positf: "))
 while nb <1:
     nb=int(input("Entrez un entier strictement positf: "))
 for i in range(nb):
     s=""
-    for j in range(1,i):
-        s+=str(j)
+    for j in range(i+1):
+        s+=str(j+1)
     print(s)
-    
-
 ==
 
 
