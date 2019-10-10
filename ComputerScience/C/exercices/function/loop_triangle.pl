@@ -67,12 +67,11 @@ int main(int argc, char* argv[]){
 
     
 tests==
-
-[["Basique", "3", ""],
- ["Moyen", "6", ""],
- ["Vide", "0", ""],
- ["Aléatoire", str(random.randint(5, 10)), ""],
- ["Aléatoire", str(random.randint(11, 15)), ""]]
-    
+[ ["Basique", "3", ""],
+  ["Moyen", "6", ""],
+  ["Vide", "0", ""],
+  ["Aléatoire", str(random.randint(5, 10)), ""],
+  ["Aléatoire", str(random.randint(11, 15)), ""] ]    
 ==
+
 
