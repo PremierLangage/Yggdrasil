@@ -12,14 +12,14 @@ text==
 
 Ecrire un programme qui force la saisie d'un entier strictement positif
  puis affiche un suite de lignes formées de:
+ 
 1 sur la première ligne
 
 1 2 sur la deuxième ligne
 
 1 2 3 sur la troisième
 
-
-1 2 3     n sur la dernière.
+1 2 3 ... n sur la dernière.
 
 exemple
 
@@ -81,6 +81,7 @@ une ligne
 1
 1
 ==
+
 
 
 
