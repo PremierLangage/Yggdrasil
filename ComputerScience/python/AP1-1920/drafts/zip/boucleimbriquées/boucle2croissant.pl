@@ -38,19 +38,6 @@ for i in range(N):
 mplsoluce6 += str(v-10)+"\n"
 ==
 
-# dr soluce qui marche avec des chaines ;)
-drsoluce==
-nb=1
-prev=input()
-next=input()
-while prev<next:
-    prev,next = next, input()
-    nb+=1
-
-print("Vous avez entré",nb,"valeur(s) en ordre croissant")
-==
-
-
 soluce==
 typ=""
 while typ!= "int" and typ!="str":
