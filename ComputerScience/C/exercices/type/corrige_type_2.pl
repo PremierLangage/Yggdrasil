@@ -66,7 +66,8 @@ int main(int argc, char* argv[]){
 
 tests==
 [ ["simple éxécution", "","1 2 3 4 5"],
-  ["prmier problème", "","-1 -2"] ]
+  ["premier problème", "","-1 -2"],
+  ["premier problème", ""," ".join([random.randint(-20,20) for i in range(random.randint(5,10))])], ]
 ==
 
 
