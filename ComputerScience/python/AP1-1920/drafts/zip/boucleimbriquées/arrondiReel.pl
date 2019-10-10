@@ -33,7 +33,7 @@ partielle (i=1 à n et i=n à 1, bornes comprises)
 
 Si l'entier n est négatif, on affiche "erreur"
 
-*Testez dans python, en dehors de Premier Langage (pour n=10,100,10000) et réfléchissez à une explication*
+**Testez dans python, en dehors de Premier Langage (pour n=10,100,10000) et réfléchissez à une explication**
 ==
 soluce==
 #import math
