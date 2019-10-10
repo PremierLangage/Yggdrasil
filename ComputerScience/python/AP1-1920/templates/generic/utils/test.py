@@ -9,8 +9,8 @@ import jinja2
 
 from mockinput import mock_input
 
-# _default_template_dir = ''
-_default_template_dir = 'templates/generic/jinja/'
+ _default_template_dir = ''
+#_default_template_dir = 'templates/generic/jinja/'
 _default_test_template = _default_template_dir + 'testitem.html'
 _default_group_template = _default_template_dir + 'testgroup.html'
 
@@ -818,4 +818,5 @@ class NoGlobalChangeAssert(Assert):
             return "Variables globales inchangées"
         else:
             return "Variables globales modifiées"
+
 
