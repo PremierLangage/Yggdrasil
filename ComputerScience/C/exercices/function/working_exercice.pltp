@@ -1,7 +1,8 @@
-title=Exercices fonctionnels sur la notion de fonction
+title=Exercices sur la notion de fonction
 
 introduction==
-Les exercices qui suivent fonctionnent tous le 15 octobre 2018.
+Les exercices qui suivent portent sur la notion de fonction. Certains demandent de savoir 
+utiliser des pointeurs simples.
 ==
 
 @ /ComputerScience/C/exercices/function/cube_it.pl
@@ -14,5 +15,6 @@ Les exercices qui suivent fonctionnent tous le 15 octobre 2018.
 @ /ComputerScience/C/exercices/function/min_of_three.pl
 @ /ComputerScience/C/exercices/function/puissance.pl
 @ /ComputerScience/C/exercices/function/recursive_fibonacci.pl
+
 
 
