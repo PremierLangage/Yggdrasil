@@ -52,11 +52,10 @@ def couple(x,y):
         ligne=""
 
 begin_test_group("1 <= n <= 2")
-for i in range(1, 10):
-    set_title(f"n = {i}")
-    set_globals(n=i)
+    set_title(f"n = {1,2}")
+    set_globals(n={1,2})
     run()
-    assert_output(f"{fact(i)}\n")
+    assert_output(f"{fact(1,2)}\n")
 end_test_group()
 
 begin_test_group("Valeurs aléatoires")
