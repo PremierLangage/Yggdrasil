@@ -2,8 +2,12 @@
 
 # Heritage d'un type d'exercice 
 extends = ../templates/generic/generic.pl
+@ /ComputerScience/python/AP1-1920/templates/utils/pltestgrader.py
 
 title = Couples (X,Y)
+
+taboo=while
+needed=for
 
 text==  
 Écrivez un script qui affiche tous les couples ( x , y ), x étant un entier positif compris entre 1 et p et y un entier positif 
@@ -19,6 +23,21 @@ L’affichage doit se faire comme sur l’exemple suivant, qui correspond à p =
 grader== #|python|
 
 import random
+import pltestgrader
+
+dic = pltestgrader.get_context()
+student = pltestgrader.get_answers()['answer']
+
+# Vérification dans le code de l'étudiant de la non présence du taboo
+if "taboo" in dic:
+    if pltestgrader.checktaboo(dic['taboo'], student):
+        pltestgrader.output(0, "ATTENTION : Le mot clef " + dic['taboo'] + " est proscrit.")
+        sys.exit(1)
+# Vérification dans le code de l'étudiant de la présence du needed
+if "needed" in dic:
+    if not pltestgrader.checktaboo(dic['needed'], student):
+        pltestgrader.output(0, "ATTENTION : Le mot clef " + dic['needed'] + " est demandé.")
+        sys.exit(1)
 
 def couple(x,y):
     p=int(input())
@@ -33,7 +52,7 @@ def couple(x,y):
         chaine=""
         ligne=""
 
-begin_test_group("1 <= n <= 10")
+begin_test_group("1 <= n <= 2")
 for i in range(1, 10):
     set_title(f"n = {i}")
     set_globals(n=i)
