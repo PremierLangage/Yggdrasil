@@ -5,26 +5,30 @@ author = Quentin Coumes
 title = Tableau de multiplications
 
 text==
-On suppose qu'il existe deux variables $%col%$ et $%lin%$ de valeurs entières $%1 \le col \le 9%$
-et $%1 \le lin \le 9%$.  
+On suppose qu'il existe deux variables `col` et `lin` de valeurs entières comprises entre 1 et 9
+représentant respectivement le nombre de colonne et le nombre de ligne d'un tableau.
+
 <br>
-Ecrire un programme qui affiche un tableau des multiplications de 1 à $%col%$ par 1 à $%lin%$.
+Écrivez un programme qui construit une chaine de caractères représentant un tableau
+des multiplications de 1 à `col` par 1 à `lin`, et affichez ensuite cette chaine.
+
 <br>
 Le tableau doit être formaté suivant ces règles :
 
 * Chaque colonne doit comprendre **deux caractères**, soit 2 chiffres ("35"),
-  soit 1 chiffre suivit d'un espace ("7&nbsp;").
+  soit 1 chiffre suivi d'un espace ("7&nbsp;").
 * Les colonnes sont séparées par **deux espaces**.
 * L'entête de colonne est séparée du tableau par des **tirets `-`**.
 * L'entête de ligne est séparée du tableau par des **barres verticales `|`** (`[ALT GR]` + `[6]`).
 * Afin de faciliter la création des boucles, chaque ligne doit se terminer par un espace,
   en plus de l'espace optionnel de la colonne (excepté le séparateur d'entête de ligne).
 
+*Rappel* : Utilisez le caractère `\n` pour symboliser un retour à la ligne.
 ---
 
 Exemples :
 
-* pour $%col = 3%$ et $%lin = 2%$:
+* pour `col = 3` et `lin = 2`:
 <pre><code>
         *  |  1   2   3 
         -----------------
@@ -32,7 +36,7 @@ Exemples :
         2  |  2   4   6 
 </code></pre>
 
-* pour $%col = 9%$ et $%lin = 9%$:
+* pour `col = 9` et `lin = 9`:
 <pre><code>
         *  |  1   2   3   4   5   6   7   8   9 
         -----------------------------------------
@@ -50,7 +54,7 @@ Exemples :
 
 Pour mieux voir le formatage demandé, voici les exemples précédents avec les espaces remplacés par des points:
 
-* pour $%col = 3%$ et $%lin = 2%$:
+* pour `col = 3` et `lin = 2`:
 <pre><code>
         *..|..1...2...3..
         -----------------
@@ -58,7 +62,7 @@ Pour mieux voir le formatage demandé, voici les exemples précédents avec les 
         2..|..2...4...6..
 </code></pre>
 
-* pour $%col = 9%$ et $%lin = 9%$:
+* pour `col = 9` et `lin = 9`:
 <pre><code>
         *..|..1...2...3...4...5...6...7...8...9..
         -----------------------------------------
@@ -82,9 +86,9 @@ def mult_table(col, lin):
         s += " %d  " % i
     s += "\n-----" + "----" * col + "\n"
 
-    for i in range(1, col + 1):
+    for i in range(1, lin + 1):
         s += "%d  | " % i
-        for j in range(1, lin + 1):
+        for j in range(1, col + 1):
             res = i*j
             if res < 10:
                 s += " %d  " % res
@@ -118,4 +122,5 @@ for i in range(1, 10):
         assert_output(mult_table(j, i) + "\n")
 end_test_group()
 ==
+
 
