@@ -46,7 +46,7 @@ success_feedback = """
     <br>
     Votre réponse est: response['txt_answer'].lower()
 <br>
-""".format(n)
+"""
 
 
 try: 
