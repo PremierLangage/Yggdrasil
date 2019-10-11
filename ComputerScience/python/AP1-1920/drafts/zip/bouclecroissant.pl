@@ -19,7 +19,7 @@ le programme affiche la longueur de la suite croissante.
 ==
 
 code==
-??=input("entrez un nombre :")
+??=input("entrez une valeur :")
 
 
 print("Vous avez entré",nb,"valeur(s) en ordre croissant")
@@ -96,6 +96,7 @@ bannana
 papel
 mango
 ==
+
 
 
 
