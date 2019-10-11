@@ -5,10 +5,11 @@ author = Quentin Coumes
 title = Tableaux d'Entiers
 
 text==
-On suppose qu'il existe une variables $%n%$ de valeur entière $%1 \le n \le 9%$
+On suppose qu'il existe une variables `n` de valeur entière `1 \le n \le 9`
 
 <br>
-Ecrire un programme qui affiche un tableau des entiers de $%1%$ à $%n^2%$.
+Ecrire un programme qui qui construit une chaine de caractères représentant un tableau
+des entiers de `1` à `n^2`.
 
 <br>
 Le tableau doit être formaté suivant ces règles :
@@ -24,14 +25,14 @@ Le tableau doit être formaté suivant ces règles :
 
 Exemple :
 
-* pour $%n = 3%$ :
+* pour `n = 3` :
 <pre><code>
         1  2  3
         4  5  6
         7  8  9
 </code></pre>
 
-* pour $%n = 7%$ :
+* pour `n = 7` :
 <pre><code>
         1  2  3  4  5  6  7 
         8  9  10 11 12 13 14
@@ -69,4 +70,5 @@ for i in range(1, 10):
     assert_output(table(i) + "\n")
 end_test_group()
 ==
+
 
