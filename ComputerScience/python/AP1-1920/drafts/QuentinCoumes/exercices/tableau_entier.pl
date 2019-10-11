@@ -15,9 +15,9 @@ des entiers de `1` à `n^2` et qui affiche ensuite cette chaine.
 Le tableau doit être formaté suivant ces règles :
 
 * Le tableau doit être carré ;
-* Chaque colonne doit comprendre **deux caractères**, soit 2 chiffres ("35"),
-  soit 1 chiffre suivit d'un espace ("7&nbsp;" );
-* Les colonnes sont séparées par **un espaces**.
+* Chaque colonne doit comprendre **deux caractères**, soit 2 chiffres (`"35"`),
+  soit 1 chiffre suivi d'un espace (`"7 "`) ;
+* Les colonnes sont séparées par **un espace**.
 
 **N'oubliez pas l'espace en fin de ligne si celle-ci se termine par un nombre à 1 chiffre.**
 
@@ -49,10 +49,12 @@ grader== #|python|
 def table(n):
     s = ""
     for i in range(n):
-        if i <= 9:
+        res = i*n + 1
+        s+= str(res)
+        if res <= 9:
             s += " "
         
-        for j in range(1, n + 1):
+        for j in range(2, n + 1):
             res = i*n + j
             s += " %d" % res
             if res <= 9:
