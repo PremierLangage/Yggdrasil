@@ -9,17 +9,15 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
-Ecrire une fonction **init_with_square** qui prend en paramètre **tab** l'adresse 
-d'un tableau de n cases ainsi qu'un entier **n** (la taille du tableau) puis 
-retourne l'adresse de ce même tableau de n entiers avec pour contenu les 
-valeurs des premiers carrés parfait $%1%$, $%4%$, $%9%$, 
-$%16%$ jusqu'à $%n^{2}%$.
+Écrire une fonction **init_with_square** qui prend en paramètre un tableau 
+ainsi qu'un entier pour sa taille. Votre fonction devra initialiser le contenu 
+du tableau en placant les premiers carrés des nombres entiers positifs 
+$%1%$, $%4%$, $%9%$, $%16%$ jusqu'à $%n^{2}%$.
     
-Si n est négatif ou nul la fonction retourne **NULL** (définie dans stdio.h).
 ==
 
 editor.code==
-int* init_with_square(...) {
+void init_with_square(...) {
   /* votre code ici... */
 }
 
@@ -35,9 +33,9 @@ codebefore==
 
 solution==
 
-int* init_with_square(int* tab, int n){
+void init_with_square(int* tab, int n){
 
-	if (n<1) return NULL;
+	if (n<1) return ;
 
 
 	int i;
@@ -86,3 +84,4 @@ tests==
  ["Aléatoire", str(random.randint(20, 40)), ""]]
 
 ==
+
