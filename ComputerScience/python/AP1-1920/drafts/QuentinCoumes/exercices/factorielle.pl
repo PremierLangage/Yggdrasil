@@ -12,7 +12,7 @@ On suppose qu'il existe une variables `n` de valeur entière strictement positiv
 grader== #|python|
 import random
 
-def fact(n):
+def fact(n, s=""):
     if n == 1:
         return n
     return n*fact(n-1)
