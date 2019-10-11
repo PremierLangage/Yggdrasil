@@ -17,7 +17,7 @@ Le tableau doit respecter plusieurs règles:
 
 Exemples :
 
-* pour $%n = 2%$ :
+* pour $%col = 3%$ et $%lin = 2%$:
 <pre><code>
         * | 1   2   3 
         --------------
