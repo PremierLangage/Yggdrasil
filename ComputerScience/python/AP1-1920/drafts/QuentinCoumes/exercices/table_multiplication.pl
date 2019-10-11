@@ -3,7 +3,8 @@ extends = ../templates/generic/generic.pl
 title = Table de multiplication
 
 text==
-On suppose qu'il existe une variable $%n%$ d'une valeur entière $%1 \le n \le 9%$.  
+On suppose qu'il existe deux variables $%col%$ et $%lin%$ de valeurs entières $%1 \le col \le 9%$
+et $%1 \le lin \le 9%$.  
 <br>
 Ecrire un programme représentant un tableau des multiplications de 1 à $%n%$.
 <br>
@@ -14,7 +15,17 @@ Le tableau doit respecter plusieurs règles:
 * L'entête de colonne est séparé du tableau par des tirets `-`.
 * L'entête de ligne est séparé du tableau par des barres verticales `|` (`ALT GR` + `6`).
 
-Exemple pour $%n = 2%$ :
+Exemples :
+
+* pour $%n = 2%$ :
+<pre><code>
+        * | 1   2 
+        ----------
+        1 | 1   2 
+        2 | 2   4 
+</code></pre>
+
+* pour $%n = 9%$ :
 <pre><code>
         * | 1   2   3   4   5   6   7   8   9
         --------------------------------------
