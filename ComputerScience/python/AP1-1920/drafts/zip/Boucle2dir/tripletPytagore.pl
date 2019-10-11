@@ -16,18 +16,24 @@ print("il y a",??,"triplet(s) inférieur(s) à",??)
 ==
 
 text==  
+Un triplet de Pythagore est un triplet d'entiers *(a,b,c)*
+avec $% a \lt b \lt c%$ et $%a^2+b^2=c^2%$. 
+
+On dira que le triplet est inférieur à un nombre $%n%$   
+si $%c \lt n %$.
 
  Ecrire un programme qui:
  
  lit un entier
 
- affiche le nombre de triplets de Pythagore inférieurs à cet entier 
-
+ affiche le nombre de triplets de Pythagore inférieurs à cet entier.
 Exemple  :
 
 Entrez l'entier maximum : 30
 
 il y a 10 triplet(s) inférieur(s) à 30
+
+*D'après le "projet Euler"*
 ==
 before==
 import random
@@ -36,6 +42,7 @@ mplsoluce3="Test aléatoire \n"
 mplsoluce3+=str(N)+"\n"
 ==
 soluce==
+
 n= int(input("Entrez l'entier maximum : "))
 nb=0
 for a in range(1,n):
@@ -44,7 +51,6 @@ for a in range(1,n):
         if c==int(c) and c<n:       
             nb+=1
 print("il y a",nb,"triplet(s) inférieur(s) à",n)
-
 ==
 
 
