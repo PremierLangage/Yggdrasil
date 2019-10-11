@@ -1,6 +1,8 @@
 extends = ../templates/generic/generic.pl
 
-title = Table de multiplication
+author = Quentin Coumes
+
+title = Tableau de multiplications
 
 text==
 On suppose qu'il existe deux variables $%col%$ et $%lin%$ de valeurs entières $%1 \le col \le 9%$
@@ -10,10 +12,11 @@ Ecrire un programme qui affiche un tableau des multiplications de 1 à $%col%$ p
 <br>
 Le tableau doit être formaté suivant ces règles :
 
-* Chaque colonne doit comprendre *deux caractères*, soit 2 chiffres (`35`), soit 1 chiffre suivit d'un espace (`4 `).
-* Les colonnes sont séparées par *deux espaces*.
-* L'entête de colonne est séparée du tableau par des tirets `-`.
-* L'entête de ligne est séparée du tableau par des barres verticales `|` (`ALT GR` + `6`).
+* Chaque colonne doit comprendre **deux caractères**, soit 2 chiffres ("35"),
+  soit 1 chiffre suivit d'un espace ("7&nbsp;").
+* Les colonnes sont séparées par **deux espaces**.
+* L'entête de colonne est séparée du tableau par des **tirets `-`**.
+* L'entête de ligne est séparée du tableau par des **barres verticales `|`** (`[ALT GR]` + `[6]`).
 * Afin de faciliter la création des boucles, chaque ligne doit se terminer par un espace,
   en plus de l'espace optionnel de la colonne (excepté le séparateur d'entête de ligne).
 
@@ -45,7 +48,7 @@ Exemples :
 </code></pre>
 
 
-Pour mieux voir le formatage demandé, voici les exemples précédenst avec les espaces remplacés par des points:
+Pour mieux voir le formatage demandé, voici les exemples précédents avec les espaces remplacés par des points:
 
 * pour $%col = 3%$ et $%lin = 2%$:
 <pre><code>
@@ -72,7 +75,6 @@ Pour mieux voir le formatage demandé, voici les exemples précédenst avec les 
 ==
 
 grader== #|python|
-from itertools import permutations
 
 def mult_table(col, lin):
     s = "*  | "
@@ -103,6 +105,8 @@ end_test_group()
 begin_test_group("Tout les Tableaux")
 for i in range(1, 10):
     for j in range (1, 10):
+        if i == j:
+            continue
         set_title(f"col {i}, lin = {j}")
         set_globals(col=i, lin=j)
         run()
