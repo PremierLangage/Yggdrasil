@@ -36,6 +36,7 @@ if 'imperfect' in data:
     
 time=random.choice(["pres","imperfect"])
 person=random.choice(["1S","2S","3S","1P","2P","3P"])
+formverb=conj[time]['A']['I'][person]
 ==
 
 text ==
