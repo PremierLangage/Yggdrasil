@@ -70,6 +70,15 @@ S = radio_prs.selection
 score = 0
 feedback = 'Bad answer'
 
+for item in radio_prs.items:
+    if item['id'] == S:
+        if S == person:
+            item['css'] = 'success-state'
+            score = 100
+            feedback = 'Good answer'
+        else:
+            item['css'] = 'error-state'
+
 
 grade = (score, feedback)
 ==
