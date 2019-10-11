@@ -10,11 +10,11 @@ Ecrire un programme représentant un tableau des multiplications de 1 à $%n%$.
 Le tableau doit respecter plusieurs règles:
 
 * Chaque colonne doit comprendre deux caractères, soit 2 chiffres (`35`), soit 1 chiffre suivit d'un espace (`4 `).
-* Les colonnes sont séparées d'un espace.
+* Les colonnes sont séparées par deux espaces.
 * L'entête de colonne est séparé du tableau par des tirets `-`.
-* L'entête de ligne est séparé du tableau par des  barre verticale `|` (`ALT GR` + `6`).
+* L'entête de ligne est séparé du tableau par des barres verticales `|` (`ALT GR` + `6`).
 
-Exemple pour $%n = 9%$ :
+Exemple pour $%n = 2%$ :
 <pre><code>
         * | 1   2   3   4   5   6   7   8   9
         --------------------------------------
