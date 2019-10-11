@@ -12,20 +12,21 @@ def strfromz(Z):
     '1s2 2s2 2p6'
     """
     
-    s=""
-    indice=0
-    while Z>0:
-        if Z>maximum[indice]:
-            s=s+orbitales[indice]+str(maximum[indice])+" "
-            Z -= maximum[indice]
-        else:
-            s=s+orbitales[indice]+str(Z)
-            Z=0
-        indice+=1
     if Z==24:
         s="1s2 2s2 2p6 3s2 3p6 4s1 3d5"
-    if Z==29:
+    else if Z==29:
         s="1s2 2s2 2p6 3s2 3p6 4s1 3d10"
+    else
+        s=""
+        indice=0
+         while Z>0:
+            if Z>maximum[indice]:
+                s=s+orbitales[indice]+str(maximum[indice])+" "
+                Z -= maximum[indice]
+            else:
+                s=s+orbitales[indice]+str(Z)
+                Z=0
+            indice+=1    
     return s
 
 def verif(s,Z):
