@@ -78,4 +78,16 @@ for i in range(1, 10):
 end_test_group()
 ==
 
+editor.code==
+# Initialisation de la chaine de caractères
+s = ""
 
+# Création du tableau (à compléter)
+for i in range(n):
+    ...
+
+# Affichage
+print(s)
+==
+
+editor.height=400px
