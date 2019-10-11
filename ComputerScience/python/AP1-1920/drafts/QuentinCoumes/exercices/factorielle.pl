@@ -23,12 +23,8 @@ ___
 ==
 
 grader== #|python|
+import math
 import random
-
-def fact(n, current=1, s=""):
-    if n == 0:
-        return "0! = 1\n" + s
-    return fa
 
 begin_test_group("1 <= n <= 9")
 for i in range(1, 10):
