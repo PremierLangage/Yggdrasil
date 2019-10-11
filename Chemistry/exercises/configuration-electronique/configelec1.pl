@@ -53,7 +53,7 @@ try:
     if verif.verif(response['txt_answer'].lower(),a) :
         grade = (100, success_feedback)
     else:
-        grade = (0, failure_feedback")
+        grade = (0, failure_feedback)
 except:
     print(traceback.format_exc(), file=sys.stderr)
     grade = (-1, "Merci de rentrer une configuration comme dans l'exemple")
