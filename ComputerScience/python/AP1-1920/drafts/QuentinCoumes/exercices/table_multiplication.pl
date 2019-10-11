@@ -132,14 +132,13 @@ for i in range(col):
     s += " %d  " % (i + 1)
 s += "\n"
 
-# Séparateur de colonne
-s += "-----"
-s += "----" * col
-s += "\n"
+# Séparateur de colonne (à completer)
+s += ...
 
 # Lignes (à completer)
 ...
 
+# Affichage
 print(s)
 ==
 
