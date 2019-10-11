@@ -29,7 +29,13 @@ Entrez l'entier maximum : 30
 
 il y a 10 triplet(s) inférieur(s) à 30
 ==
-
+before==
+import random
+plsoluce="un |7 \n Aucun terme| 1 \n"
+"
+N=random.randint(4,15O)
+mplsoluce+="Test aléatoire | str(N)+"\n"
+==
 soluce==
 n= int(input("Entrez l'entier maximum : "))
 nb=0
@@ -43,10 +49,6 @@ print("il y a",nb,"triplet(s) inférieur(s) à",n)
 n
 ==
 
-plsoluce==
-un | 7
-Aucun terme| 1
-Grand | 3245
-==
+
 
 
