@@ -10,7 +10,7 @@ représentant respectivement le nombre de colonne et le nombre de ligne d'un tab
 
 <br>
 Écrivez un programme qui construit une chaine de caractères représentant un tableau
-des multiplications de 1 à `col` par 1 à `lin`, et affichez ensuite cette chaine.
+des multiplications de 1 à `col` par 1 à `lin`, et qui affiche ensuite cette chaine.
 
 <br>
 Le tableau doit être formaté suivant ces règles :
