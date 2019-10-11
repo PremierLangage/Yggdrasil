@@ -60,7 +60,7 @@ form==
 <table>
   <tr>
     <td>{{ radio_prs | component }}/td>
-    <td> {{ radio_time | component }}</td>
+    <td>{{ radio_time | component }}</td>
   </tr>
 </table>
 
