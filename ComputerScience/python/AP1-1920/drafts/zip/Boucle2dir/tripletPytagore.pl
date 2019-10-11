@@ -21,32 +21,32 @@ text==
  
  lit un entier
 
- affiche le nombre de termes de la suite inférieurs à cet entier 
+ affiche le nombre de triplets de Pythagore inférieurs à cet entier 
 
 Exemple  :
 
-Entrez un nombre : 7
+Entrez l'entier maximum : 30
 
-1 terme(s) inférieur(s) à 7
+il y a 10 triplet(s) inférieur(s) à 30
 ==
 
 soluce==
-u0=2
-nb=int(input("Entrez un nombre : "))
-nbtermes=0
-while u0<nb:
-    print(u0)
-    u0=2*u0+3
-    nbtermes+=1
+n= int(input("Entrez l'entier maximum : "))
+nb=0
+for a in range(1,n):
+    for b in range(a,n):
+        c=(a*a + b*b)**0.5
+        if c==int(c) and c<n:       
+            nb+=1
+print("il y a",nb,"triplet(s) inférieur(s) à",n)
 
-print(nbtermes,"terme(s) inférieur(s) à",nb)
-
+n
 ==
 
 plsoluce==
-Exemple| 7
+un | 7
 Aucun terme| 1
-Grand | 32456
+Grand | 3245
 ==
 
 
