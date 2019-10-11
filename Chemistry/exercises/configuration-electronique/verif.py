@@ -19,7 +19,7 @@ def strfromz(Z):
     else:
         s=""
         indice=0
-         while Z>0:
+        while Z>0:
             if Z>maximum[indice]:
                 s=s+orbitales[indice]+str(maximum[indice])+" "
                 Z -= maximum[indice]
