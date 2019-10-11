@@ -1,7 +1,7 @@
 #author=OCE
 
 # Heritage d'un type d'exercice 
-extends = ../templates/generic/generic.pl
+extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
 @ /ComputerScience/python/AP1-1920/templates/utils/pltestgrader.py
 
 title = Couples (X,Y)
