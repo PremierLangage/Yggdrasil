@@ -9,13 +9,13 @@ On suppose qu'il existe une variables `n` de valeur entière comprises entre 1 e
 
 <br>
 Écrivez un programme qui construit une chaine de caractères représentant un tableau
-des entiers de `1` à `n^2`.
+des entiers de `1` à `n^2` et qui affiche ensuite cette chaine.
 
 <br>
 Le tableau doit être formaté suivant ces règles :
 
 * Le tableau doit être carré ;
-* Chaque colonne doit comprendre **deux caractères**, soit 2 chiffres ("35") ;
+* Chaque colonne doit comprendre **deux caractères**, soit 2 chiffres ("35"),
   soit 1 chiffre suivit d'un espace ("7&nbsp;" );
 * Les colonnes sont séparées par **un espaces**.
 
