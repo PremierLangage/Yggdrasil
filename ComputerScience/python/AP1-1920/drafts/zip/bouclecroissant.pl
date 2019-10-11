@@ -40,10 +40,10 @@ mplsoluce4 += str(v-10)+"\n"
 # dr soluce qui marche avec des chaines ;)
 soluce==
 nb=1
-prev=input()
-next=input()
+prev=input("Valeur :")
+next=input("Valeur :")
 while prev<next:
-    prev,next = next, input()
+    prev,next = next, input("Valeur :")
     nb+=1
 
 print("Vous avez entré",nb,"valeur(s) en ordre croissant")
