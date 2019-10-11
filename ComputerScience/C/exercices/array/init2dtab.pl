@@ -91,12 +91,13 @@ int main(int argc, char* argv[]){
 
 
 tests==
-[["Basique", "1 1", ""],
- ["Vide", "0 0", ""],
- ["Ligne", "1 6", ""],
- ["Colonne", "7 1", ""],
- ["Grand", "19 31", ""],
- ["Aléatoire", ' '.join([str(random.randint(1, 20)), str(random.randint(1, 40))]), ""],
- ["Aléatoire", ' '.join([str(random.randint(1, 20)), str(random.randint(1, 40))]), ""]]
+[ ["Basique", "1 1", ""],
+  ["Vide", "0 0", ""],
+  ["Ligne", "1 6", ""],
+  ["Colonne", "7 1", ""],
+  ["Grand", "19 31", ""],
+  ["Aléatoire", ' '.join([str(random.randint(1, 20)), str(random.randint(1, 40))]), ""],
+  ["Aléatoire", ' '.join([str(random.randint(1, 20)), str(random.randint(1, 40))]), ""] ]
 ==
+
 
