@@ -5,8 +5,8 @@ author = Quentin Coumes
 title = Factorielle
 
 text==
-On suppose qu'il existe une variables $%n%$ de valeur strictement positive.  
-Ecrire un programme qui affiche les $%n%$ premières valeurs de la fonction factorielle (une valeur par ligne).
+On suppose qu'il existe une variables `n` de valeur entière strictement positive.  
+Écrivez un programme qui affiche les `n` premières valeurs de la fonction factorielle (une valeur par ligne).
 ==
 
 grader== #|python|
@@ -17,7 +17,7 @@ def fact(n):
         return n
     return n*fact(n-1)
 
-begin_test_group("1 <= n <= 10")
+begin_test_group("1 <= n <= 9")
 for i in range(1, 10):
     set_title(f"n = {i}")
     set_globals(n=i)
@@ -34,4 +34,5 @@ for i in range(3):
     assert_output(f"{fact(i)}\n")
 end_test_group()
 ==
+
 
