@@ -29,15 +29,31 @@ import traceback
 import sys
 
 import verif
+failure_feedback = """
+<div style="background-color:darkred;color:white;padding:4px">
+    Mauvaise réponse. <br><br>
+    Votre réponse est:response['txt_answer'].lower()
+    <br>
+    La bonne réponse est: verif.strfromz(a)
+    <br>
+</div>
+"""
+
+success_feedback = """
+<div style="background-color:darkgreen;color:white;padding:4px">
+    Félicitations ! <br>
+    La bonne réponse est: verif.strfromz(a)
+    <br>
+    Votre réponse est: response['txt_answer'].lower()
+<br>
+""".format(n)
 
 
 try: 
-    print("votre réponse",response['txt_answer'].lower())
-    print("la bonne réponse :"+verif.strfromz(a))
     if verif.verif(response['txt_answer'].lower(),a) :
-        grade = (100, "Bonne réponse")
+        grade = (100, success_feedback)
     else:
-        grade = (0, "Mauvaise réponse")
+        grade = (0, failure_feedback")
 except:
     print(traceback.format_exc(), file=sys.stderr)
     grade = (-1, "Merci de rentrer une configuration comme dans l'exemple")
