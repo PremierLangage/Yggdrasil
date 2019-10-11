@@ -40,9 +40,7 @@ formverb=conj[time]['A']['I'][person]
 ==
 
 text ==
-Analyser la forme verbale suivante :
-
-{{formverb}}
+Analyser la forme verbale suivante : {{formverb}}
 ==
 
 form=
