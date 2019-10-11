@@ -25,17 +25,13 @@ import re
 
 # Solution
 def couple(x,y):
-    p=int(input())
-    q=int(input())
-    chaine=""
+p=int(input())
+q=int(input())
+for i in range(p):
     ligne=""
-    for i in range(p):
-        for j in range(q):
-            chaine= "("+str(i+1)+","+str(j+1)+") "
-            ligne += chaine
-        print(ligne)
-        chaine=""
-        ligne=""
+    for j in range(q):
+        ligne += "("+str(i+1)+","+str(j+1)+") "
+    print(ligne)
 
 def checktaboo(taboo, answer):
     x = re.sub("(\"(.|\n)*\"|#.*)", "", answer) #enlève les commentaires et les chaînes de caractères
