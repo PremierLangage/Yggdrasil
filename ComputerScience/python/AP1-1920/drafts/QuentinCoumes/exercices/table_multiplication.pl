@@ -143,4 +143,4 @@ s += ...
 print(s)
 ==
 
-editor.height=300px
+editor.height=400px
