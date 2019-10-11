@@ -6,15 +6,28 @@ title = Factorielle
 
 text==
 On suppose qu'il existe une variables `n` de valeur entière strictement positive.  
-Écrivez un programme qui affiche les `n` premières valeurs de la fonction factorielle (une valeur par ligne).
+
+Écrivez un programme qui affiche les `n` premières valeurs de la fonction factorielle
+sous la forme `n! = x` (une valeur par ligne).
+
+Pour `n = 4`, le programme devra par exemple afficher:
+<pre><code>
+0! = 1
+1! = 1
+2! = 2
+3! = 6
+4! = 24
+</code></pre>
+
+___
 ==
 
 grader== #|python|
 import random
 
 def fact(n, s=""):
-    if n == 1:
-        return s
+    if n == 0:
+        return "0! = 1\n" + s
     return n*fact(n-1)
 
 begin_test_group("1 <= n <= 9")
