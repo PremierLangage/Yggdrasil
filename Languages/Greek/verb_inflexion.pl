@@ -46,7 +46,7 @@ Analyser la forme verbale suivante : {{formverb}}
 ==
 
 form==
-{{ group|component }}
+{{ radio | component }}
 ==
 
 evaluator==
