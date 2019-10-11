@@ -31,7 +31,7 @@ il y a 10 triplet(s) inférieur(s) à 30
 ==
 before==
 import random
-N=random.randint(4,15O)
+N=random.randint(4,150)
 mplsoluce3="Test aléatoire \n"
 mplsoluce3+=str(N)+"\n"
 ==
