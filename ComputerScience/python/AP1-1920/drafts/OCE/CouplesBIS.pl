@@ -2,7 +2,6 @@
 
 # Heritage d'un type d'exercice 
 extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
-@ /ComputerScience/python/AP1-1920/templates/utils/pltestgrader.py
 
 title = Couples (X,Y)
 
@@ -23,7 +22,7 @@ L’affichage doit se faire comme sur l’exemple suivant, qui correspond à p =
 grader== #|python|
 
 import random
-import pltestgrader
+import re
 
 dic = pltestgrader.get_context()
 student = pltestgrader.get_answers()['answer']
