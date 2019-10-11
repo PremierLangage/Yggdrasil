@@ -9,7 +9,13 @@ title = Grec ancien
 radio =: RadioGroup
 
 before==
-radio.items=[{'id':'1S','content':'1ère personne du singulier'}]
+radio.items=[{'id':'1S','content':'1ère personne du singulier'},
+            {'id':'2S','content':'2e personne du singulier'},
+            {'id':'3S','content':'3e personne du singulier'},
+            {'id':'1P','content':'1ère personne du pluriel'},
+            {'id':'2P','content':'2e personne du pluriel'},
+            {'id':'3P','content':'3e personne du pluriel'}
+            ]
 import json,random
 
 with open('grc_conj.json','r',encoding='utf8') as f:
