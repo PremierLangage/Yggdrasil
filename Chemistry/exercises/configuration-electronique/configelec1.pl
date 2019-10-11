@@ -32,9 +32,6 @@ import verif
 failure_feedback = """
 <div style="background-color:darkred;color:white;padding:4px">
     Mauvaise réponse. <br><br>
-    Votre réponse est:response['txt_answer'].lower()
-    <br>
-    La bonne réponse est: verif.strfromz(a)
     <br>
 </div>
 """
@@ -42,9 +39,6 @@ failure_feedback = """
 success_feedback = """
 <div style="background-color:darkgreen;color:white;padding:4px">
     Félicitations ! <br>
-    La bonne réponse est: verif.strfromz(a)
-    <br>
-    Votre réponse est: response['txt_answer'].lower()
 <br>
 """
 
