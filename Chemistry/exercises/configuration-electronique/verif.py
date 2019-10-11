@@ -12,7 +12,7 @@ def strfromz(Z):
     
     if Z==24:
         s="1s2 2s2 2p6 3s2 3p6 4s1 3d5"
-    else if Z==29:
+    elif Z==29:
         s="1s2 2s2 2p6 3s2 3p6 4s1 3d10"
     else:
         s=""
