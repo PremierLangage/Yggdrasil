@@ -75,10 +75,24 @@ for item in radio_prs.items:
         if S == person:
             item['css'] = 'success-state'
             score = 100
-            feedback = 'Good answer'
         else:
             item['css'] = 'error-state'
+    elif item['id'] == person:
+        item['css'] = 'success-state'
 
+S = radio_time.selection
+score = 0
+feedback = 'Bad answer'
+
+for item in radio_time.items:
+    if item['id'] == S:
+        if S == time:
+            item['css'] = 'success-state'
+            score = 100
+        else:
+            item['css'] = 'error-state'
+    elif item['id'] == time:
+        item['css'] = 'success-state'
 
 grade = (score, feedback)
 ==
