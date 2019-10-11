@@ -59,38 +59,14 @@ Analyser la forme verbale suivante : {{formverb}}
 form==
 <table>
   <tr>
-    <td>{{ radio_prs | component }}/td>
-    <td>{{ radio_time | component }}</td>
+    <td> {{ radio_prs | component }} </td>
+    <td> {{ radio_time | component }} </td>
   </tr>
 </table>
 ==
 
 evaluator==
 
-rightwords = ['πρεσβύτερος', 'νεώτερος']
-found = 0
-error = 0
-
-for e in selectable.selections:
-    if e['content'] in rightwords:
-        e['css'] = "success-state"
-        found += 1
-    else:
-        e['css'] = "error-state"
-        error += 1
-
-if found == 10 and error == 0:
-    score = 100
-    msg = '<span class="success-state">Bravo, vous avez trouvé tous les adjectifs comparatifs !</span>'
-else:
-    score = max([0, 10*(found - error)])
-    nb_error = (10 - found) + error
-    if nb_error > 1:
-        msg = '<span class="error-state">Il y a {} erreurs...</spam>'.format(nb_error)
-    else:
-        msg = '<span class="error-state">Il y a 1 seule erreur...</spam>'
-
-grade = (score, msg)
 ==
 
 
