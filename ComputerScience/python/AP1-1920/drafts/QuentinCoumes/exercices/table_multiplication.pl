@@ -6,7 +6,7 @@ text==
 On suppose qu'il existe deux variables $%col%$ et $%lin%$ de valeurs entières $%1 \le col \le 9%$
 et $%1 \le lin \le 9%$.  
 <br>
-Ecrire un programme représentant un tableau des multiplications de 1 à $%n%$.
+Ecrire un programme représentant un tableau des multiplications de 1 à $%col%$ par 1 à $%lin%$.
 <br>
 Le tableau doit respecter plusieurs règles:
 
