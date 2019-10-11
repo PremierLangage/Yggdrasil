@@ -44,9 +44,9 @@ Exemples :
 soluce== #|python|
 def mult_table(col, lin):
     s = "* | "
-    for i in range(1, lin+1):
+    for i in range(1, col+1):
         s += " %d  " % i
-    s += "\n----" + "----" * col
+    s += "\n----" + "----" * col + "\n"
     for i in range(col):
         for j in range(lin):
 ==
