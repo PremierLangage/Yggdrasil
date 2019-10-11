@@ -6,15 +6,20 @@
 
 title = Grec ancien
 
-radio =: RadioGroup
+
+radio_prs =: RadioGroup
+radio_time =: RadioGroup
 
 before==
-radio.items=[{'id':'1S','content':'1ère personne du singulier'},
+radio_prs.items=[{'id':'1S','content':'1ère personne du singulier'},
             {'id':'2S','content':'2e personne du singulier'},
             {'id':'3S','content':'3e personne du singulier'},
             {'id':'1P','content':'1ère personne du pluriel'},
             {'id':'2P','content':'2e personne du pluriel'},
             {'id':'3P','content':'3e personne du pluriel'}
+            ]
+radio_time.items=[{'id':'pres','content':'présent'},
+            {'id':'imperfect','content':'imparfait'}
             ]
 import json,random
 
@@ -52,7 +57,8 @@ Analyser la forme verbale suivante : {{formverb}}
 ==
 
 form==
-{{ radio | component }}
+{{ radio_prs | component }}
+{{ radio_time | component }}
 ==
 
 evaluator==
