@@ -1,7 +1,7 @@
-title=Exercices fonctionnels sur la notions de tableau
+title=Exercices sur la notions de tableau
 
 introduction==
-Les exercices qui suivent fonctionnent tous le 10 octobre 2018.
+Voici quelques exercices manipulant des tableaux.
 ==
 
 @ /ComputerScience/C/exercices/array/apply_square.pl
