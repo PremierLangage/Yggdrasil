@@ -16,10 +16,10 @@ des multiplications de 1 à `col` par 1 à `lin`, et affichez ensuite cette chai
 Le tableau doit être formaté suivant ces règles :
 
 * Chaque colonne doit comprendre **deux caractères**, soit 2 chiffres (`"35"`),
-  soit 1 chiffre suivi d'un espace (`"7 "`).
-* Les colonnes sont séparées par **deux espaces**.
-* L'entête de colonne est séparée du tableau par des **tirets `-`**.
-* L'entête de ligne est séparée du tableau par des **barres verticales `|`** (`[ALT GR]` + `[6]`).
+  soit 1 chiffre suivi d'un espace (`"7 "`) ;
+* Les colonnes sont séparées par **deux espaces** ;
+* L'entête de colonne est séparée du tableau par des **tirets `-`** ;
+* L'entête de ligne est séparée du tableau par des **barres verticales `|`** (`[ALT GR]` + `[6]`) ;
 * Afin de faciliter la création des boucles, chaque ligne doit se terminer par un espace,
   en plus de l'espace optionnel de la colonne (excepté le séparateur d'entête de ligne).
 
