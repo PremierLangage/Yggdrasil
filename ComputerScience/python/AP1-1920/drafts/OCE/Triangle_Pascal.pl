@@ -4,8 +4,8 @@ extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
 title = Triangle de Pascal
 
 text==
-On souhaite afficher le fameux triangle de Pascal (cf. Triangle de Pascal) donnant la représentation
-des coefficients binomiaux (cf. Coefficient binomial), couramment utilisé en probabilité pour connaître
+On souhaite afficher le fameux triangle de Pascal donnant la représentation
+des coefficients binomiaux, couramment utilisé en probabilité pour connaître
 le nombre de façons de choisir p éléments parmi un lot de n éléments sans prise en compte de l’ordre.
 <br>
 Créez un script trianglePascal.py qui initialise une variable N à la valeur 10 et affiche le triangle
@@ -28,9 +28,9 @@ def tests(nbs):
             output = expected_output(nb))
 
 begin_test_group("Valeurs fixées")
-tests([0, 3, 5])
+tests([10])
 
-begin_test_group("Nombres aléatoires")
+begin_test_group("Valeurs aléatoires")
 from random import sample
 tests(sample(list(range(100, 200)), 5))
 ==
