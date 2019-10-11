@@ -18,7 +18,7 @@ Le tableau doit être formaté suivant ces règles :
 * Chaque colonne doit comprendre **deux caractères**, soit 2 chiffres (`"35"`),
   soit 1 chiffre suivi d'un espace (`"7 "`) ;
 * Les colonnes sont séparées par **un espace** ;
-* Le tableau est suivi d'une ligne vide (celle ajouté par `print()`).
+* Le tableau est suivi d'une ligne vide (celle ajoutée par `print()`).
 
 *N'oubliez pas l'espace en fin de ligne si celle-ci se termine par un nombre à 1 chiffre.*
 
@@ -34,6 +34,7 @@ Exemple :
         1  2  3 
         4  5  6 
         7  8  9 
+
 </code></pre>
 
 * pour `n = 7` :
