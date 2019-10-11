@@ -21,7 +21,6 @@ L’affichage doit se faire comme sur l’exemple suivant, qui correspond à p =
 
 grader== #|python|
 
-import random
 import re
 
 # Solution
