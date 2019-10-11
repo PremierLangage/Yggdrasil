@@ -46,6 +46,7 @@ def mult_table(col, lin):
     s = "* | "
     for i in range(1, lin+1):
         s += " %d  " % i
+    s += "\n----" + "----" * col
     for i in range(col):
         for j in range(lin):
 ==
