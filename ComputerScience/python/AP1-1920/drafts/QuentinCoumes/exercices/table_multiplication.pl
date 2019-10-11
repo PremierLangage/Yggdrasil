@@ -71,7 +71,7 @@ for i in range(1, 10):
     # Lance l'exécution du programme dans les conditions spécifiées
     run()
     # Vérifie la sortie standard obtenue
-    assert_output(mult_table(i, i))
+    assert_output(mult_table(i, i) + "\n")
 # Clôt le précédent groupe de tests
 end_test_group()
 ==
