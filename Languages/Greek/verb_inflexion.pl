@@ -63,8 +63,6 @@ form==
     <td>{{ radio_time | component }}</td>
   </tr>
 </table>
-
-
 ==
 
 evaluator==
