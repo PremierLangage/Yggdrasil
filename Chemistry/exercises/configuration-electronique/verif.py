@@ -4,8 +4,6 @@ orbitales=["1s","2s","2p","3s","3p","4s","3d","4p","5s","4d","5p"]
 maximum=[2,2,6,2,6,2,10,6,2,10,6]
 
 
-
-
 def strfromz(Z):
     """
     >>> strfromz(10)
