@@ -26,10 +26,10 @@ Le tableau doit être formaté suivant ces règles :
 Exemple :
 
 * pour `n = 3` :
-<pre><code>
-        1  2  3
-        4  5  6
-        7  8  9
+<pre><code style="right-margin: "50px">
+1  2  3 
+4  5  6 
+7  8  9 
 </code></pre>
 
 * pour `n = 7` :
