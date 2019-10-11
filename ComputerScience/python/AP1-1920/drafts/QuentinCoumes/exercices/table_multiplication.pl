@@ -43,7 +43,7 @@ Exemples :
 
 soluce== #|python|
 def mult_table(col, lin):
-    s = "* |"
+    s = "* | "
     for i in range(1, lin+1):
         s += " %d  " % i
     for i in range(col):
