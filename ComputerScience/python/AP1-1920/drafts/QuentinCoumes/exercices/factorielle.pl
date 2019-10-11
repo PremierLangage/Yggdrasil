@@ -47,16 +47,17 @@ grader== #|python|
 
 def table(n):
     s = ""
-    for i in range(1, n + 1):
-        s += str(i)
-        if i > 9:
+    for i in range(n):
+        if i <= 9:
             s += " "
         
         for j in range(1, n + 1):
-            res = i*10 + j
-            s += " %d"
-            if res > 9:
+            res = i*n + j
+            s += " %d" % res
+            if res <= 9:
                 s += " "
+        
+        s += "\n"
 
     return s
 
