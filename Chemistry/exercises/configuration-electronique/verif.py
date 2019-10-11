@@ -22,9 +22,9 @@ def strfromz(Z):
             s=s+orbitales[indice]+str(Z)
             Z=0
         indice+=1
-    if Z=24:
+    if Z==24:
         s="1s2 2s2 2p6 3s2 3p6 4s1 3d5"
-    if Z=29:
+    if Z==29:
         s="1s2 2s2 2p6 3s2 3p6 4s1 3d10"
     return s
 
