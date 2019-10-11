@@ -14,7 +14,7 @@ import random
 
 def fact(n, s=""):
     if n == 1:
-        return n
+        return s
     return n*fact(n-1)
 
 begin_test_group("1 <= n <= 9")
