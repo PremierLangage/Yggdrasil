@@ -18,6 +18,7 @@ void apply_square_array(int* array, int nb_term){
 ==
 
 solution==
+
 void apply_square_array(int* array, int nb_term){
   int i;
 
@@ -27,6 +28,7 @@ void apply_square_array(int* array, int nb_term){
 ==
 
 codeafter==
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -67,4 +69,5 @@ tests==
  ["Aléatoire", " ".join([str(random.randint(-100, 100)) for i in range(random.randint(5, 10))]), ""],
  ["Aléatoire", " ".join([str(random.randint(-100, 100)) for i in range(random.randint(10, 15))]), ""]]
 ==
+
 
