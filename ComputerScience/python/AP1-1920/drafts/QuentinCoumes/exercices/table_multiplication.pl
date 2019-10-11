@@ -10,10 +10,10 @@ Ecrire un programme qui affiche un tableau des multiplications de 1 à $%col%$ p
 <br>
 Le tableau doit respecter plusieurs règles:
 
-* Chaque colonne doit comprendre deux caractères, soit 2 chiffres (`35`), soit 1 chiffre suivit d'un espace (`4 `).
-* Les colonnes sont séparées par deux espaces.
-* L'entête de colonne est séparé du tableau par des tirets `-`.
-* L'entête de ligne est séparé du tableau par des barres verticales `|` (`ALT GR` + `6`).
+* Chaque colonne doit comprendre *deux caractères*, soit 2 chiffres (`35`), soit 1 chiffre suivit d'un espace (`4 `).
+* Les colonnes sont séparées par *deux espaces*.
+* L'entête de colonne est séparée du tableau par des tirets `-`.
+* L'entête de ligne est séparée du tableau par des barres verticales `|` (`ALT GR` + `6`).
 
 Exemples :
 
@@ -27,8 +27,8 @@ Exemples :
 
 * pour $%col = 9%$ et $%lin = 9%$:
 <pre><code>
-        *  |  1   2   3   4   5   6   7   8   9
-        -----------------------------------------
+        *  |  1   2   3   4   5   6   7   8   9 
+        ----------------------------------------
         1  |  1   2   3   4   5   6   7   8   9 
         2  |  2   4   6   8   10  12  14  16  18
         3  |  3   6   9   12  15  18  21  24  27
