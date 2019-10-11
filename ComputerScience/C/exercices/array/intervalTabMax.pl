@@ -34,6 +34,7 @@ int max_section_array(int *tab, int n, int a, int b, int *r){
 ==
 
 solution==
+
 int max_section_array(int *tab, int taille, int a, int b, int *r){
 	if(a < 0 || b <0 || b<a || b > taille || a>taille || taille <= 0)
 		{
@@ -51,7 +52,6 @@ int max_section_array(int *tab, int taille, int a, int b, int *r){
 	*r = indice;
 	return indice;
 }
-
 
 ==
 
@@ -96,17 +96,15 @@ int main(int argc, char* argv[]){
 ==
 
 tests==
-
-[["Basique", "2 5 10", ""],
- ["Indice négatif", "8 -4 16", ""],
- ["Indice trop grand","35 77 20",""],
- ["Bornes dans le mauvais sens", "16 4 20",""],
- ["Aléatoire", " ".join([str(random.randint(-2, 12)),str(random.randint(10, 22)),"20"]), ""],
- ["Aléatoire", " ".join([str(random.randint(-2, 12)),str(random.randint(10, 22)),"20"]), ""],
- ["Aléatoire", " ".join([str(random.randint(-2, 12)),str(random.randint(10, 22)),"20"]), ""],
- ["Aléatoire", " ".join([str(random.randint(-2, 12)),str(random.randint(10, 22)),"20"]), ""],
- ["Aléatoire", " ".join([str(random.randint(-2, 12)),str(random.randint(10, 22)),"20"]), ""]
- ]
-
+[ ["Basique", "2 5 10", ""],
+  ["Indice négatif", "8 -4 16", ""],
+  ["Indice trop grand","35 77 20",""],
+  ["Bornes dans le mauvais sens", "16 4 20",""],
+  ["Aléatoire", " ".join([str(random.randint(-2, 12)),str(random.randint(10, 22)),"20"]), ""],
+  ["Aléatoire", " ".join([str(random.randint(-2, 12)),str(random.randint(10, 22)),"20"]), ""],
+  ["Aléatoire", " ".join([str(random.randint(-2, 12)),str(random.randint(10, 22)),"20"]), ""],
+  ["Aléatoire", " ".join([str(random.randint(-2, 12)),str(random.randint(10, 22)),"20"]), ""],
+  ["Aléatoire", " ".join([str(random.randint(-2, 12)),str(random.randint(10, 22)),"20"]), ""] ]
 ==
+
 
