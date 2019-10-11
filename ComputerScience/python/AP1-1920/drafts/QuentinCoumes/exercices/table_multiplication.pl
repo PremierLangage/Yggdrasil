@@ -44,15 +44,13 @@ Exemples :
 grader== #|python|
 from itertools import permutations
 
-# Ouvre un "groupe de tests" de titre donné
 begin_test_group("Tableaux carrés")
-# Dans cet exemple on veut faire un test pour chaque permutation de (1, 2, 3)
-# On utilise ici un style "verbeux" avec plusieurs appels
-for x, y, z in permutations((1, 2, 3)):
+
+for i in range(9):
     # Donne un titre à la prochaine exécution
-    set_title(f"Exécution avec a = {x}, b = {y}, c = {z}")
+    set_title(f"col = lin = {i}")
     # Fixe les variables globales disponibles pour les prochaines exécution
-    set_globals(a=x, b=y, c=z)
+    set_globals(col=i, lin=i)
     # Lance l'exécution du programme dans les conditions spécifiées
     run()
     # Vérifie la sortie standard obtenue
