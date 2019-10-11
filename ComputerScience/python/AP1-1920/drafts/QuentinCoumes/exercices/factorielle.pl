@@ -36,22 +36,15 @@ Exemple :
 grader== #|python|
 from itertools import permutations
 
-def mult_table(col, lin):
-    s = "*  | "
-    for i in range(1, col + 1):
-        s += " %d  " % i
-    s += "\n-----" + "----" * col + "\n"
+def table():
+    s = ""
+    for i in range(10):
+        s += str(i)
+        if i > 9:
+            s += " "
+        for j in range(1, 10):
+            
 
-    for i in range(1, col + 1):
-        s += "%d  | " % i
-        for j in range(1, lin + 1):
-            res = i*j
-            if res < 10:
-                s += " %d  " % res
-            else:
-                s += " %d " % res
-        s += "\n"
-    
     return s
 
 begin_test_group("Tableaux carrés")
