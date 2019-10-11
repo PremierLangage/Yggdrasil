@@ -45,7 +45,7 @@ grader== #|python|
 from itertools import permutations
 
 # Ouvre un "groupe de tests" de titre donné
-begin_test_group("Tris d'éléments distincts")
+begin_test_group("Tableaux carrés")
 # Dans cet exemple on veut faire un test pour chaque permutation de (1, 2, 3)
 # On utilise ici un style "verbeux" avec plusieurs appels
 for x, y, z in permutations((1, 2, 3)):
