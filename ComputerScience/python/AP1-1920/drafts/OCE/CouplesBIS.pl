@@ -51,35 +51,26 @@ def couple(x,y):
         chaine=""
         ligne=""
 
-begin_test_group("1 <= n <= 2")
+begin_test_group("Facile")
     set_title(f"n = {1,2}")
     set_globals(n={1,2})
     run()
     assert_output(f"{fact(1,2)}\n")
 end_test_group()
 
-begin_test_group("Valeurs aléatoires")
-for i in range(3):
-    i = random.randint(30, 200)
-    set_title(f"n = {i}")
-    set_globals(n=i)
+begin_test_group("Normal")
+    set_title(f"n = {3,5}")
+    set_globals(n={3,5})
     run()
-    assert_output(f"{fact(i)}\n")
+    assert_output(f"{fact(3,5)}\n")
 end_test_group()
-==
 
-soluce==
-p=int(input())
-q=int(input())
-chaine=""
-ligne=""
-for i in range(p):
-    for j in range(q):
-        chaine= "("+str(i+1)+","+str(j+1)+") "
-        ligne += chaine
-    print(ligne)
-    chaine=""
-    ligne=""
+begin_test_group("Grand")
+    set_title(f"n = {30,46}")
+    set_globals(n={30,46})
+    run()
+    assert_output(f"{fact(30,46)}\n")
+end_test_group()
 ==
 
 
