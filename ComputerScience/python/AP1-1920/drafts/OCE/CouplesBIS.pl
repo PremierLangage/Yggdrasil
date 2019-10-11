@@ -29,13 +29,13 @@ student = get_answers()['answer']
 
 # Vérification dans le code de l'étudiant de la non présence du taboo
 if "taboo" in dic:
-    if pltestgrader.checktaboo(dic['taboo'], student):
-        pltestgrader.output(0, "ATTENTION : Le mot clef " + dic['taboo'] + " est proscrit.")
+    if re.checktaboo(dic['taboo'], student):
+        re.output(0, "ATTENTION : Le mot clef " + dic['taboo'] + " est proscrit.")
         sys.exit(1)
 # Vérification dans le code de l'étudiant de la présence du needed
 if "needed" in dic:
-    if not pltestgrader.checktaboo(dic['needed'], student):
-        pltestgrader.output(0, "ATTENTION : Le mot clef " + dic['needed'] + " est demandé.")
+    if not re.checktaboo(dic['needed'], student):
+        re.output(0, "ATTENTION : Le mot clef " + dic['needed'] + " est demandé.")
         sys.exit(1)
 
 def couple(x,y):
