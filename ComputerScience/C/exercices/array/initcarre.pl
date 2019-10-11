@@ -75,13 +75,11 @@ int main(int argc, char const *argv[]) {
 
 
 tests==
-
-[["Basique", "10", ""],
- ["Vide", "0", ""],
- ["Négatif", "-33", ""],
- ["Grand", "100", ""],
- ["Aléatoire", str(random.randint(1, 20)), ""],
- ["Aléatoire", str(random.randint(20, 40)), ""]]
-
+[ ["Basique", "10", ""],
+  ["Vide", "0", ""],
+  ["Négatif", "-33", ""],
+  ["Grand", "100", ""],
+  ["Aléatoire", str(random.randint(1, 20)), ""],
+  ["Aléatoire", str(random.randint(20, 40)), ""] ]
 ==
 
