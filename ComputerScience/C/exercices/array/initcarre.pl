@@ -66,7 +66,7 @@ int main(int argc, char const *argv[]) {
  	int *tab  = malloc(sizeof(int)*n);
 	init_with_square(tab, n);
 	if (n > 0)
-		printTableau(tcheck, n);
+		printTableau(tab, n);
 	else
 		printf("tableau NULL");
 	return 0;
