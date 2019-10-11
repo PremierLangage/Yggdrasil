@@ -4,12 +4,13 @@ introduction==
 Les exercices qui suivent fonctionnent tous le 10 octobre 2018.
 ==
 
-@ /exercices/array/apply_square.pl
-@ /exercices/array/average.pl
-@ /exercices/array/displayarray.pl
-@ /exercices/array/find_index_array.pl
-@ /exercices/array/init2dtab.pl
-@ /exercices/array/initcarre.pl
-@ /exercices/array/intervalTabMax.pl
-@ /exercices/array/sum_of_positives.pl
+@ /ComputerScience/C/exercices/array/apply_square.pl
+@ /ComputerScience/C/exercices/array/average.pl
+@ /ComputerScience/C/exercices/array/displayarray.pl
+@ /ComputerScience/C/exercices/array/find_index_array.pl
+@ /ComputerScience/C/exercices/array/init2dtab.pl
+@ /ComputerScience/C/exercices/array/initcarre.pl
+@ /ComputerScience/C/exercices/array/intervalTabMax.pl
+@ /ComputerScience/C/exercices/array/sum_of_positives.pl
+
 
