@@ -24,20 +24,7 @@ grader== #|python|
 import random
 import re
 
-dic = get_context()
-student = get_answers()['answer']
-
-# Vérification dans le code de l'étudiant de la non présence du taboo
-if "taboo" in dic:
-    if re.checktaboo(dic['taboo'], student):
-        re.output(0, "ATTENTION : Le mot clef " + dic['taboo'] + " est proscrit.")
-        sys.exit(1)
-# Vérification dans le code de l'étudiant de la présence du needed
-if "needed" in dic:
-    if not re.checktaboo(dic['needed'], student):
-        re.output(0, "ATTENTION : Le mot clef " + dic['needed'] + " est demandé.")
-        sys.exit(1)
-
+# Solution
 def couple(x,y):
     p=int(input())
     q=int(input())
@@ -50,6 +37,25 @@ def couple(x,y):
         print(ligne)
         chaine=""
         ligne=""
+
+def checktaboo(taboo, answer):
+    x = re.sub("(\"(.|\n)*\"|#.*)", "", answer) #enlève les commentaires et les chaînes de caractères
+    # FIXME la chaine de caractère ""  letaboo "" est elle trouvée par la regex suivante ? 
+    return re.search("(^"+taboo+"\s|[^\"]+"+taboo+"\s)", x) != None
+
+dic = get_context()
+student = get_answers()['answer']
+
+# Vérification dans le code de l'étudiant de la non présence du taboo
+if "taboo" in dic:
+    if checktaboo(dic['taboo'], student):
+        output(0, "ATTENTION : Le mot clef " + dic['taboo'] + " est proscrit.")
+        sys.exit(1)
+# Vérification dans le code de l'étudiant de la présence du needed
+if "needed" in dic:
+    if not checktaboo(dic['needed'], student):
+        output(0, "ATTENTION : Le mot clef " + dic['needed'] + " est demandé.")
+        sys.exit(1)
 
 begin_test_group("Facile")
     set_title(f"n = {1,2}")
