@@ -10,25 +10,25 @@ Ecrire un programme représentant un tableau des multiplications de 1 à $%n%$.
 Le tableau doit respecter plusieurs règles:
 
 * Chaque colonne doit comprendre deux caractères, soit 2 chiffres (`35`), soit 1 chiffre suivit d'un espace (`4 `).
-* Chaque colonne est séparé d'un espace.
+* Les colonnes sont séparées d'un espace.
 * L'entête de colonne est séparé du tableau par des tirets `-`.
 * L'entête de ligne est séparé du tableau par des  barre verticale `|` (`ALT GR` + `6`).
 
-Exemple :
+Exemple pour $%n = 9%$ :
 
-```
- * | 1   2   3   4   5   6   7   8   9
----------------------------------------
-1  | 1   2   3   4   5   6   7   8   9 
-2  | 2   4   6   8   10  12  14  16  18
-3  | 3   6   9   12  15  18  21  24  27
-4  | 4   8   12  16  20  24  28  32  36
-5  | 5   10  15  20  25  30  35  40  45
-6  | 6   12  18  24  30  36  42  48  54
-7  | 7   14  21  28  35  42  49  56  63
-8  | 8   16  24  32  40  48  56  64  72
-9  | 9   18  27  36  45  54  63  72  81
-```
+<pre><code>
+* | 1   2   3   4   5   6   7   8   9
+--------------------------------------
+1 | 1   2   3   4   5   6   7   8   9 
+2 | 2   4   6   8   10  12  14  16  18
+3 | 3   6   9   12  15  18  21  24  27
+4 | 4   8   12  16  20  24  28  32  36
+5 | 5   10  15  20  25  30  35  40  45
+6 | 6   12  18  24  30  36  42  48  54
+7 | 7   14  21  28  35  42  49  56  63
+8 | 8   16  24  32  40  48  56  64  72
+9 | 9   18  27  36  45  54  63  72  81
+</code></pre>
 ==
 
 grader== #|python|
