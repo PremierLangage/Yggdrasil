@@ -66,7 +66,12 @@ form==
 ==
 
 evaluator==
+S = radio_prs.selection
+score = 0
+feedback = 'Bad answer'
 
+
+grade = (score, feedback)
 ==
 
 
