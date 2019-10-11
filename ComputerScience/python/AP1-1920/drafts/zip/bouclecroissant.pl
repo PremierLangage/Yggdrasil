@@ -21,7 +21,7 @@ le programme affiche la longueur de la suite croissante.
 code==
 # Utilisez 
 # input("Valeur :")
-# dans tous vos input 
+# pour faire vos input 
 
 print("Vous avez entré",nb,"valeur(s) en ordre croissant")
 ==
