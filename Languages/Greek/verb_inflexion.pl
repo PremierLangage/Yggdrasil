@@ -6,8 +6,10 @@
 
 title = Grec ancien
 
+radio =: RadioGroup
 
 before==
+radio.items=[{'id':'1S','content':'1ère personne du singulier'}]
 import json,random
 
 with open('grc_conj.json','r',encoding='utf8') as f:
@@ -43,7 +45,9 @@ text ==
 Analyser la forme verbale suivante : {{formverb}}
 ==
 
-form=
+form==
+{{ group|component }}
+==
 
 evaluator==
 
