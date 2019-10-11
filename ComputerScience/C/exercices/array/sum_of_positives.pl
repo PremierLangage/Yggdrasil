@@ -61,16 +61,14 @@ int main(int argc, char* argv[]){
 ==
 
 tests==
-
-[["Exécution simple", "1", ""],
- ["Quelques éléments", "12 -3 52 0 41", ""],
- ["Tableau vide", "", ""],
- ["Aléatoire", " ".join([str(random.randint(-100, 100)) for i in range(random.randint(5, 10))]), ""],
- ["Aléatoire", " ".join([str(random.randint(-100, 100)) for i in range(random.randint(5, 10))]), ""],
- ["Aléatoire", " ".join([str(random.randint(-100, 100)) for i in range(random.randint(5, 10))]), ""],
- ["Aléatoire", " ".join([str(random.randint(-100, 100)) for i in range(random.randint(5, 10))]), ""],
- ["Aléatoire", " ".join([str(random.randint(-100, 100)) for i in range(random.randint(5, 10))]), ""],
- ]
-
+[ ["Exécution simple", "1", ""],
+  ["Quelques éléments", "12 -3 52 0 41", ""],
+  ["Tableau vide", "", ""],
+  ["Aléatoire", " ".join([str(random.randint(-100, 100)) for i in range(random.randint(5, 10))]), ""],
+  ["Aléatoire", " ".join([str(random.randint(-100, 100)) for i in range(random.randint(5, 10))]), ""],
+  ["Aléatoire", " ".join([str(random.randint(-100, 100)) for i in range(random.randint(5, 10))]), ""],
+  ["Aléatoire", " ".join([str(random.randint(-100, 100)) for i in range(random.randint(5, 10))]), ""],
+  ["Aléatoire", " ".join([str(random.randint(-100, 100)) for i in range(random.randint(5, 10))]), ""] ]
 ==
+
 
