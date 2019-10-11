@@ -26,22 +26,27 @@ grader== #|python|
 import math
 import random
 
-begin_test_group("1 <= n <= 9")
-for i in range(1, 10):
+begin_test_group("0 <= n <= 9")
+for i in range(10):
     set_title(f"n = {i}")
     set_globals(n=i)
     run()
-    assert_output(f"{fact(i)}\n")
+    assert_output("".join(f"{j}! = {math.factorial(j)}\n" for j in range(i + 1)))
 end_test_group()
 
 begin_test_group("Valeurs aléatoires")
-for i in range(3):
+for i in range(5):
     i = random.randint(30, 200)
     set_title(f"n = {i}")
     set_globals(n=i)
     run()
-    assert_output(f"{fact(i)}\n")
+    assert_output("".join(f"{j}! = {math.factorial(j)}\n" for j in range(i + 1)))
 end_test_group()
 ==
 
 
+soluce==
+import math
+print("\n".join(f"{i}! = {math.factorial(i)}" for i in range(n + 1)))
+del math
+==
