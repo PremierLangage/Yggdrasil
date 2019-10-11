@@ -50,6 +50,7 @@ success_feedback = """
 
 
 try: 
+    print(verif.strfromz(a), response['txt_answer'].lower(), file=sys.stderr)
     if verif.verif(response['txt_answer'].lower(),a) :
         grade = (100, success_feedback)
     else:
