@@ -52,7 +52,7 @@ def mult_table(col, lin):
 
     for i in range(1, col + 1):
         s += "%d  | " % i
-        for j in range(1, lin):
+        for j in range(1, lin + 1):
             res = i*j
             if res < 10:
                 s += " %d  " % res
@@ -63,7 +63,7 @@ def mult_table(col, lin):
     return s
 
 begin_test_group("Tableaux carrés")
-for i in range(9):
+for i in range(1, 10):
     # Donne un titre à la prochaine exécution
     set_title(f"col = lin = {i}")
     # Fixe les variables globales disponibles pour les prochaines exécution
