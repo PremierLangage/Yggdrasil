@@ -15,7 +15,6 @@ Le tableau doit respecter plusieurs règles:
 * L'entête de ligne est séparé du tableau par des  barre verticale `|` (`ALT GR` + `6`).
 
 Exemple pour $%n = 9%$ :
-
 <pre><code>
         * | 1   2   3   4   5   6   7   8   9
         --------------------------------------
