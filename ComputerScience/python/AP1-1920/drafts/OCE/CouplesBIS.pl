@@ -24,8 +24,8 @@ grader== #|python|
 import random
 import re
 
-dic = pltestgrader.get_context()
-student = pltestgrader.get_answers()['answer']
+dic = get_context()
+student = get_answers()['answer']
 
 # Vérification dans le code de l'étudiant de la non présence du taboo
 if "taboo" in dic:
