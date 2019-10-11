@@ -21,7 +21,8 @@ Le tableau doit être formaté suivant ces règles :
 * L'entête de colonne est séparée du tableau par des **tirets `-`** ;
 * L'entête de ligne est séparée du tableau par des **barres verticales `|`** (`[ALT GR]` + `[6]`) ;
 * Afin de faciliter la création des boucles, chaque ligne doit se terminer par un espace,
-  en plus de l'espace optionnel de la colonne (excepté le séparateur d'entête de ligne).
+  en plus de l'espace optionnel de la colonne (excepté le séparateur d'entête de ligne) ;
+* Le tableau est suivi d'une ligne vide (celle ajoutée par `print()`).
 
 **Rappel** : Utilisez le caractère `\n` pour symboliser un retour à la ligne.
 
