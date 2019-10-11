@@ -72,8 +72,6 @@ for i in range(9):
     run()
     # Vérifie la sortie standard obtenue
     assert_output(mult_table(i, i))
-    # Vérifie que les variables globales n'ont pas changé
-    assert_no_global_change()
 # Clôt le précédent groupe de tests
 end_test_group()
 ==
