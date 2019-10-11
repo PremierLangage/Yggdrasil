@@ -32,12 +32,11 @@ import verif
 
 
 try: 
+    print("votre réponse",response['txt_answer'].lower())
     if verif.verif(response['txt_answer'].lower(),a) :
-        print("votre réponse",response['txt_answer'].lower())
         grade = (100, "Bonne réponse")
     else:
         grade = (0, "Mauvaise réponse Bonne réponse : "+verif.strfromz(a))
-        print("votre réponse",response['txt_answer'].lower())
 except:
     print(traceback.format_exc(), file=sys.stderr)
     grade = (-1, "Merci de rentrer une configuration comme dans l'exemple")
