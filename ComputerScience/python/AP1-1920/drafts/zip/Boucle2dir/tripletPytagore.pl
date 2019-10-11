@@ -32,8 +32,8 @@ il y a 10 triplet(s) inférieur(s) à 30
 before==
 import random
 N=random.randint(4,15O)
-mplsoluce4="Test aléatoire 
- str(N)
+mplsoluce3="Test aléatoire \n"
+mplsoluce3+=str(N)+"\n"
 ==
 soluce==
 n= int(input("Entrez l'entier maximum : "))
