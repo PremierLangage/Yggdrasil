@@ -28,8 +28,14 @@ def strfromz(Z):
     return s
 
 def verif(s,Z):
+    while s.beginswith(" "):
+        s=s[1:]
+    while s.endsswith(" "):
+        s=s[:-1]
+
     return s==strfromz(Z)
         
     
+
 
 
