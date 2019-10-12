@@ -12,7 +12,7 @@ grader=@ /grader/evaluator.py
 @ /utils/sandboxio.py 
 
 text==
-Quelle est la configuration éléctronique de l'élément {{name}} ?
+Quelle est la configuration éléctronique de l'élément  **{{name}}** ?
 
 Pour être validé dans l'application, on notera 1s2 2s2 2p6...sans mettre en exposant le nombre d'électrons
 <br/>
@@ -36,7 +36,7 @@ table=[("Hydrogène, H 	",1 ),("Hélium   , He 	",2 ),
     ("Cobalt   , Co 	",27),("Nickel   , Ni 	",28),("Cuivre   , Cu 	",29),("Zinc 	  , Zn 	",30),
     ("Gallium  , Ga 	",31),("Germanium, Ge 	",32),("Arsenic  , As 	",33),("Sélénium , Se 	",34),
     ("Brome 	  , Br 	",35),("Krypton  , Kr 	",36)]
-table=[("Kryptonite, Cu 	",54 ),("Chrome   , Cr 	",24 )]
+table=[("Kryptonite, KC 	",54 ),("Chrome   , Cr 	",24 )]
 name, Z = random.choice(table)
 #random.randint(1,36)
 
@@ -71,11 +71,12 @@ import verif
 
 
 try: 
-
+    print("La configuration du ",name,"  est:",verif.strfromz(Z))
+        
     if verif.verif(response['txt_answer'].lower(),Z) :
         grade = (100, success_feedback)
     else:
-        print("Pour le ",name," la bonne réponse est:",verif.strfromz(Z),"votre response est :", response['txt_answer'].lower(), file=sys.stderr)
+        print("votre response est :", response['txt_answer'].lower(), file=sys.stderr)
         grade = (0, failure_feedback)
     exec(before)
 except:
