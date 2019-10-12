@@ -66,7 +66,7 @@ formverb=conj[time]['A']['I'][person]
 
 text ==
 Analyser la forme verbale suivante : 
-<div style="text-align:center;">
+<div style="text-align:center;font-size: x-large;">
 {{formverb}}
 </div>
 ==
