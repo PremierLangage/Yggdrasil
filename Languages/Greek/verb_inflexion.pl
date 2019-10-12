@@ -19,7 +19,9 @@ radio_prs.items=[{'id':'1S','content':'1ère personne du singulier'},
             {'id':'3P','content':'3e personne du pluriel'}
             ]
 radio_time.items=[{'id':'pres','content':'présent'},
-            {'id':'imperfect','content':'imparfait'}
+            {'id':'imperfect','content':'imparfait'},
+            {'id':'aorist','content':'aoriste'},
+            {'id':'perfect','content':'parfait'}
             ]
 import json,random
 
