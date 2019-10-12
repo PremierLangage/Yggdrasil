@@ -94,6 +94,8 @@ score,_=checkradio(radio_tense,tense)
 score,_=checkradio(radio_voice,voice)
 score,_=checkradio(radio_mood,mood)
 score=100
+
+feedback="Vous avez répondu %s %s %s %s" % (radio_prs.selection,radio_tense.selection,radio_voice.selection,radio_mood.selection)
 grade = (score,"")
 ==
 
