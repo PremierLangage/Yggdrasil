@@ -11,7 +11,15 @@ grader=@ /grader/evaluator.py
 
 @ /utils/sandboxio.py 
 
-text="Quelle est la configuration éléctronique de l'élément {{name}} ? Pour être validé dans l'application, on notera 1s2 2s2 2p6...sans mettre en exposant le nombre d'électrons"
+text==
+Quelle est la configuration éléctronique de l'élément {{name}} ?
+
+Pour être validé dans l'application, on notera 1s2 2s2 2p6...sans mettre en exposant le nombre d'électrons
+<font font-size="10px" color="blue" > nbessai = {{nbessai}}; nbsuccess ={{nbsuccess}}</font>
+==
+
+nbessai % 0
+nbsuccess % 0 
 
 before==
 import random
@@ -50,6 +58,7 @@ failure_feedback = """
 success_feedback = """
 <div style="background-color:green;color:white;padding:4px">
     Félicitations ! <br>
+    Réssayez !
 <br>
 """
 
