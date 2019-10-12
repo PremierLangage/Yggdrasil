@@ -43,28 +43,35 @@ name, Z = random.choice(table)
 ==
 
 
+
+
+failure_feedback==
+<div style="background-color:darkred;color:white;padding:4px">
+    Mauvaise réponse. <br>
+    Réssayez !
+</div>
+==
+
+success_feedback==
+<div style="background-color:green;color:white;padding:4px">
+    Félicitations ! <br>
+    Réssayez !
+<br>
+==
+
+
+
+
+
 evaluator==
 import traceback
 import sys
 
 import verif
-failure_feedback = """
-<div style="background-color:darkred;color:white;padding:4px">
-    Mauvaise réponse. <br>
-    Réssayez !
-</div>
-"""
-
-success_feedback = """
-<div style="background-color:green;color:white;padding:4px">
-    Félicitations ! <br>
-    Réssayez !
-<br>
-"""
 
 
 try: 
-    
+
     if verif.verif(response['txt_answer'].lower(),Z) :
         grade = (100, success_feedback)
     else:
