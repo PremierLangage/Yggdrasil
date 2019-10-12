@@ -31,7 +31,7 @@ def verif(s,Z):
     while s.startswith(" "):
         print("eats white",file=sys.stderr)
         s=s[1:]
-    while s.endsswith(" "):
+    while s.endswith(" "):
         s=s[:-1]
         print("eats end white",file=sys.stderr)
 
