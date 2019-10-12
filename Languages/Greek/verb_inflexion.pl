@@ -58,10 +58,11 @@ if 'pres' in data:
     conj['pres']=render(tplconj['pres'],data['pres'])
 if 'imperfect' in data:
     conj['imperfect']=render(tplconj['imperfect'],data['imperfect'])
-    
-time=random.choice(["pres","imperfect"])
+
+voice=random.choice(["active","median-passive"])
+tense=random.choice(["present","imperfect"])
 person=random.choice(["1S","2S","3S","1P","2P","3P"])
-formverb=conj[time]['A']['I'][person]
+formverb=conj[tense]['A']['I'][person]
 ==
 
 text ==
