@@ -66,7 +66,6 @@ success_feedback==
 evaluator==
 import traceback
 import sys
-
 import verif
 
 
