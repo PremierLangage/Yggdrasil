@@ -28,7 +28,7 @@ def strfromz(Z):
     return s
 import sys
 def verif(s,Z):
-    while s.beginswith(" "):
+    while s.startswith(" "):
         print("eats white",file=sys.stderr)
         s=s[1:]
     while s.endsswith(" "):
