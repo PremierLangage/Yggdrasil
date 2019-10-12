@@ -1,11 +1,10 @@
-# Copyright 2017 Nicolas Borie <nicolas.borie@u-pem.fr>
+# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
 # Allocation d'une structure Couleur avec 3 entiers
 
-author=Dominique Revuz
-name=Allocation d'une structure Couleur avec 3 entiers
+author=Nicolas Borie
 title=Allocation d'une structure Couleur avec 3 entiers
-tag=structure|malloc|funciton
+tag=structure|malloc|function
 extends=/ComputerScience/C/template/autograderC.pl
 
 text==
@@ -90,3 +89,4 @@ for i in range(3):
 
 graderII(tests)
 ==
+
