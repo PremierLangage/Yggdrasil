@@ -73,8 +73,8 @@ import verif
 
 try: 
     print("La configuration du ",name.split(",")[0],"  est:",verif.strfromz(Z),file=sys.stderr)
-        
-    if verif.verif(response['txt_answer'].lower(),Z) :
+    s=response['txt_answer'].lower()
+    if verif.verif(s,Z) :
         grade = (100, success_feedback)
     else:
         print("votre response est :", response['txt_answer'].lower(), file=sys.stderr)
