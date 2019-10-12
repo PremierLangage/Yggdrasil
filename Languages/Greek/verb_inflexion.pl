@@ -64,10 +64,12 @@ voice=random.choice(["A","M","P"])
 mood=random.choice(["I"])
 tense=random.choice(["pres","imperfect","future"])
 person=random.choice(["1S","2S","3S","1P","2P","3P"])
+
 if (voice=="M" or voice=="P") and (tense=="pres" or tense=="imperfect"):
     voice2="MP"
-elif:
+else:
     voice2=voice
+
 formverb=conj[tense][voice2]['I'][person]
 ==
 
