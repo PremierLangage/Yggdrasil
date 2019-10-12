@@ -26,14 +26,14 @@ def strfromz(Z):
                 Z=0
             indice+=1    
     return s
-
+import sys
 def verif(s,Z):
     while s.beginswith(" "):
-        print("eats white")
+        print("eats white",file=sys.stderr)
         s=s[1:]
     while s.endsswith(" "):
         s=s[:-1]
-        print("eats end white")
+        print("eats end white",file=sys.stderr)
 
     return s==strfromz(Z)
         
