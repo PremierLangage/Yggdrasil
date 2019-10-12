@@ -72,7 +72,9 @@ form==
 <table>
   <tr>
     <td> {{ radio_prs | component }} </td>
-    <td> {{ radio_time | component }} </td>
+    <td> {{ radio_tense | component }} </td>
+    <td> {{ radio_voice | component }} </td>
+    <td> {{ radio_mood | component }} </td>
   </tr>
 </table>
 ==
