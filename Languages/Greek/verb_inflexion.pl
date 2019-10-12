@@ -8,7 +8,9 @@ title = Grec ancien
 
 
 radio_prs =: RadioGroup
-radio_time =: RadioGroup
+radio_tense =: RadioGroup
+radio_mood =: RadioGroup
+radio_voice =: RadioGroup
 
 before==
 radio_prs.items=[{'id':'1S','content':'1ère personne du singulier'},
@@ -18,10 +20,18 @@ radio_prs.items=[{'id':'1S','content':'1ère personne du singulier'},
             {'id':'2P','content':'2e personne du pluriel'},
             {'id':'3P','content':'3e personne du pluriel'}
             ]
-radio_time.items=[{'id':'pres','content':'présent'},
+radio_tense.items=[{'id':'pres','content':'présent'},
             {'id':'imperfect','content':'imparfait'},
             {'id':'aorist','content':'aoriste'},
             {'id':'perfect','content':'parfait'}
+            ]
+radio_voice.items=[{'id':'active','content':'actif'},
+            {'id':'middle','content':'moyen'},
+            {'id':'passive','content':'passif'}
+            ]
+radio_mood.items=[{'id':'indicative','content':'indicatif'},
+            {'id':'subjonctive','content':'subjonctif'},
+            {'id':'optative','content':'optatif'}
             ]
 import json,random
 
