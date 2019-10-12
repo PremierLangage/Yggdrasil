@@ -1,5 +1,5 @@
 
-def checkradio(radio,idsol)
+def checkradio(radio,idsol):
     S=radio.selection
     for item in radio.items:
         if item['id'] == S:
