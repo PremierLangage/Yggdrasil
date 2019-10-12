@@ -49,14 +49,14 @@ name, Z = random.choice(table)
 failure_feedback==
 <div style="background-color:darkred;color:white;padding:4px">
     Mauvaise réponse. <br>
-    Réssayez !
+    Réssayez avec la question ci-dessus!
 </div>
 ==
 
 success_feedback==
 <div style="background-color:green;color:white;padding:4px">
     Félicitations ! <br>
-    Réssayez !
+    Réssayez avec la question ci-dessus!
 <br>
 </div>
 ==
@@ -86,6 +86,7 @@ except:
     print(traceback.format_exc(), file=sys.stderr)
     grade = (-1, "Merci de rentrer une configuration comme dans l'exemple")
 ==
+
 
 
 
