@@ -3,7 +3,7 @@
 @ /grader/evaluator.py [grader.py]
 @ grc_conj.json [grc_conj.json]
 @ grc_verbs.json [grc_verbs.json]
-@ /utils/components2.py [components.py]
+@ /utils/components.py [components.py]
 
 title = Grec ancien
 
