@@ -3,7 +3,7 @@
 @ /grader/evaluator.py [grader.py]
 @ grc_conj.json [grc_conj.json]
 @ grc_verbs.json [grc_verbs.json]
-@ /utils/components.py [components.py]
+@ /utils/components.py [components2.py]
 
 title = Grec ancien
 
@@ -86,7 +86,7 @@ form==
 ==
 
 evaluator==
-from components import checkradio
+from components2 import checkradio
 
 score,_=checkradio(radio_prs,person)
 score,_=checkradio(radio_tense,tense)
