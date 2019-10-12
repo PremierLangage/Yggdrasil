@@ -70,8 +70,8 @@ Analyser la forme verbale suivante : {{formverb}}
 
 form==
 <table>
-  <tr style='vertical-align: top;padding:1em;'>
-    <td style=""> {{ radio_prs | component }} </td>
+  <tr style='vertical-align: top'>
+    <td style="padding-right:1em;"> {{ radio_prs | component }} </td>
     <td> {{ radio_tense | component }} </td>
     <td> {{ radio_voice | component }} </td>
     <td> {{ radio_mood | component }} </td>
