@@ -29,9 +29,11 @@ def strfromz(Z):
 
 def verif(s,Z):
     while s.beginswith(" "):
+        print("eats white")
         s=s[1:]
     while s.endsswith(" "):
         s=s[:-1]
+        print("eats end white")
 
     return s==strfromz(Z)
         
