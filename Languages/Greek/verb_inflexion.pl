@@ -60,6 +60,8 @@ if 'pres' in data:
     conj['pres']=render(tplconj['pres'],data['pres'])
 if 'imperfect' in data:
     conj['imperfect']=render(tplconj['imperfect'],data['imperfect'])
+if 'future' in data:
+    conj['future']=render(tplconj['future'],data['future'])
 
 voice=random.choice(["A","M","P"])
 mood=random.choice(["I"])
