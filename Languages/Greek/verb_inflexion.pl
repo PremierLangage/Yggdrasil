@@ -72,9 +72,9 @@ form==
 <table>
   <tr style='vertical-align: top'>
     <td style="padding-right:1em;"> {{ radio_prs | component }} </td>
-    <td> {{ radio_tense | component }} </td>
-    <td> {{ radio_voice | component }} </td>
-    <td> {{ radio_mood | component }} </td>
+    <td style="padding-right:1em;"> {{ radio_tense | component }} </td>
+    <td style="padding-right:1em;"> {{ radio_voice | component }} </td>
+    <td style="padding-right:1em;"> {{ radio_mood | component }} </td>
   </tr>
 </table>
 ==
