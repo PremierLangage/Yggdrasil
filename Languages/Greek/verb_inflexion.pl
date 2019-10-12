@@ -3,6 +3,7 @@
 @ /grader/evaluator.py [grader.py]
 @ grc_conj.json [grc_conj.json]
 @ grc_verbs.json [grc_verbs.json]
+@ /utils/components.py [components.py]
 
 title = Grec ancien
 
@@ -85,35 +86,14 @@ form==
 ==
 
 evaluator==
-S = radio_prs.selection
-score = 0
-feedback = 'Bad answer'
+from components import checkradio
 
-for item in radio_prs.items:
-    if item['id'] == S:
-        if S == person:
-            item['css'] = 'success-state'
-            score = 100
-        else:
-            item['css'] = 'error-state'
-    elif item['id'] == person:
-        item['css'] = 'success-state'
+score,_=checkradio(radio_prs,person)
+score,_=checkradio(radio_tense,tense)
+score,_=checkradio(radio_voice,voice)
+score,_=checkradio(radio_mood,mood)
 
-S = radio_time.selection
-score = 0
-feedback = 'Bad answer'
-
-for item in radio_time.items:
-    if item['id'] == S:
-        if S == time:
-            item['css'] = 'success-state'
-            score = 100
-        else:
-            item['css'] = 'error-state'
-    elif item['id'] == time:
-        item['css'] = 'success-state'
-
-grade = (score, feedback)
+grade = (score,"")
 ==
 
 
