@@ -32,28 +32,31 @@ import sys
 import verif
 failure_feedback = """
 <div style="background-color:darkred;color:white;padding:4px">
-    Mauvaise réponse. <br><br>
-    <br>
+    Mauvaise réponse. <br>
+    Réssayez !
 </div>
 """
 
 success_feedback = """
-<div style="background-color:darkgreen;color:white;padding:4px">
+<div style="background-color:green;color:white;padding:4px">
     Félicitations ! <br>
 <br>
 """
 
 
 try: 
-    print("la bonne réponse est:",verif.strfromz(Z),"votre response est :", response['txt_answer'].lower(), file=sys.stderr)
+    
     if verif.verif(response['txt_answer'].lower(),Z) :
         grade = (100, success_feedback)
     else:
+        print("Pour le ",name," la bonne réponse est:",verif.strfromz(Z),"votre response est :", response['txt_answer'].lower(), file=sys.stderr)
         grade = (0, failure_feedback)
+    exec(before)
 except:
     print(traceback.format_exc(), file=sys.stderr)
     grade = (-1, "Merci de rentrer une configuration comme dans l'exemple")
 ==
+
 
 
 
