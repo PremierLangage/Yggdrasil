@@ -62,7 +62,7 @@ if 'imperfect' in data:
 
 voice=random.choice(["A","MP"])
 mood=random.choice(["I"])
-tense=random.choice(["pres","imperfect"])
+tense=random.choice(["pres","imperfect","future"])
 person=random.choice(["1S","2S","3S","1P","2P","3P"])
 formverb=conj[tense][voice]['I'][person]
 ==
