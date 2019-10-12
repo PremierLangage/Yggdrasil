@@ -31,8 +31,8 @@ radio_voice.items=[{'id':'A','content':'actif'},
             {'id':'P','content':'passif'}
             ]
 radio_mood.items=[{'id':'I','content':'indicatif'},
-            {'id':'subjonctive','content':'subjonctif'},
-            {'id':'optative','content':'optatif'}
+            {'id':'S','content':'subjonctif'},
+            {'id':'O','content':'optatif'}
             ]
 import json,random
 
