@@ -61,6 +61,7 @@ if 'imperfect' in data:
     conj['imperfect']=render(tplconj['imperfect'],data['imperfect'])
 
 voice=random.choice(["A","MP"])
+mood=random.choice(["I"])
 tense=random.choice(["pres","imperfect"])
 person=random.choice(["1S","2S","3S","1P","2P","3P"])
 formverb=conj[tense][voice]['I'][person]
