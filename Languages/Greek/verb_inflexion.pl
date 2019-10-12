@@ -27,10 +27,10 @@ radio_tense.items=[{'id':'pres','content':'présent'},
             {'id':'perfect','content':'parfait'}
             ]
 radio_voice.items=[{'id':'A','content':'actif'},
-            {'id':'middle','content':'moyen'},
-            {'id':'passive','content':'passif'}
+            {'id':'M','content':'moyen'},
+            {'id':'P','content':'passif'}
             ]
-radio_mood.items=[{'id':'indicative','content':'indicatif'},
+radio_mood.items=[{'id':'I','content':'indicatif'},
             {'id':'subjonctive','content':'subjonctif'},
             {'id':'optative','content':'optatif'}
             ]
