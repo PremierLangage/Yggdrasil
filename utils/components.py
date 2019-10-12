@@ -1,5 +1,4 @@
 
-
 def checkradio(radio,idsol)
     S=radio.selection
     for item in radio.items:
