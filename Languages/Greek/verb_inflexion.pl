@@ -25,7 +25,7 @@ radio_tense.items=[{'id':'pres','content':'présent'},
             {'id':'aorist','content':'aoriste'},
             {'id':'perfect','content':'parfait'}
             ]
-radio_voice.items=[{'id':'active','content':'actif'},
+radio_voice.items=[{'id':'A','content':'actif'},
             {'id':'middle','content':'moyen'},
             {'id':'passive','content':'passif'}
             ]
@@ -59,10 +59,10 @@ if 'pres' in data:
 if 'imperfect' in data:
     conj['imperfect']=render(tplconj['imperfect'],data['imperfect'])
 
-voice=random.choice(["active","median-passive"])
-tense=random.choice(["present","imperfect"])
+voice=random.choice(["A","MP"])
+tense=random.choice(["pres","imperfect"])
 person=random.choice(["1S","2S","3S","1P","2P","3P"])
-formverb=conj[tense]['A']['I'][person]
+formverb=conj[tense][voice]['I'][person]
 ==
 
 text ==
