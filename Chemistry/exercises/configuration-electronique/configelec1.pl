@@ -36,7 +36,7 @@ table=[("Hydrogène, H 	",1 ),("Hélium   , He 	",2 ),
     ("Cobalt   , Co 	",27),("Nickel   , Ni 	",28),("Cuivre   , Cu 	",29),("Zinc 	  , Zn 	",30),
     ("Gallium  , Ga 	",31),("Germanium, Ge 	",32),("Arsenic  , As 	",33),("Sélénium , Se 	",34),
     ("Brome 	  , Br 	",35),("Krypton  , Kr 	",36)]
-table=[("Kryptonite, KC 	",54 ),("Chrome   , Cr 	",24 )]
+table=[("Chrome   , Cr 	",24 )]
 name, Z = random.choice(table)
 #random.randint(1,36)
 
