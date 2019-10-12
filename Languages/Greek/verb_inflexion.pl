@@ -65,7 +65,10 @@ formverb=conj[time]['A']['I'][person]
 ==
 
 text ==
-Analyser la forme verbale suivante : {{formverb}}
+Analyser la forme verbale suivante : 
+<div style="text-align:center;">
+{{formverb}}
+</div>
 ==
 
 form==
@@ -74,7 +77,7 @@ form==
     <td style="padding-right:1em;"> {{ radio_prs | component }} </td>
     <td style="padding-right:1em;"> {{ radio_tense | component }} </td>
     <td style="padding-right:1em;"> {{ radio_voice | component }} </td>
-    <td style="padding-right:1em;"> {{ radio_mood | component }} </td>
+    <td> {{ radio_mood | component }} </td>
   </tr>
 </table>
 ==
