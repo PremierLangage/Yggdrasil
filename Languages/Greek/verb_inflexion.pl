@@ -71,7 +71,7 @@ Analyser la forme verbale suivante : {{formverb}}
 form==
 <table>
   <tr style='vertical-align: top;margin-right:1em;'>
-    <td> {{ radio_prs | component }} </td>
+    <td style='margin-right:1em;'> {{ radio_prs | component }} </td>
     <td> {{ radio_tense | component }} </td>
     <td> {{ radio_voice | component }} </td>
     <td> {{ radio_mood | component }} </td>
