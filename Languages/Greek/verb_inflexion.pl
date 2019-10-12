@@ -65,8 +65,9 @@ formverb=conj[time]['A']['I'][person]
 ==
 
 text ==
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gfs-porson" type="text/css"/> 
 Analyser la forme verbale suivante : 
-<div style="text-align:center;font-size: larger;">
+<div style="text-align:center;font-size: larger;font-family:'GFSPorsonRegular';">
 {{formverb}}
 </div><br>
 ==
