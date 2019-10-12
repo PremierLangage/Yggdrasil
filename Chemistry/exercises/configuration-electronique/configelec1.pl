@@ -15,6 +15,7 @@ text==
 Quelle est la configuration éléctronique de l'élément {{name}} ?
 
 Pour être validé dans l'application, on notera 1s2 2s2 2p6...sans mettre en exposant le nombre d'électrons
+<br/>
 <font font-size="10px" color="blue" > nbessai = {{nbessai}}; nbsuccess ={{nbsuccess}}</font>
 ==
 
