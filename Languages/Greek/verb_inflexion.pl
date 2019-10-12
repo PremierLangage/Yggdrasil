@@ -68,7 +68,7 @@ text ==
 Analyser la forme verbale suivante : 
 <div style="text-align:center;font-size: larger;">
 {{formverb}}
-</div>
+</div><br>
 ==
 
 form==
