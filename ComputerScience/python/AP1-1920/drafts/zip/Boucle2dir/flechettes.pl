@@ -34,51 +34,34 @@ Ecrire un programme qui :
 
 before==
 import random
-N=random.randint(4,15)
-mplsoluce4="Test aléatoire\n"
-f=1
-for i in range(1,N+1):
-    f*=i
-test=random.randint(0,1)
-f+=test
-mplsoluce4 += str(f)+"\n"
+N=random.randint(0,50)
+mplsoluce3="Test aléatoire\n"
+
+mplsoluce3 += str(N)+"\n"
 ==
 soluce==
 n = int(input("Un nombre : "))
 
-f=1
-i=0
-while f <n:
-    i+=1
-    f*=i
-if n==f:
-    print(str(n)+"="+str(i)+"!")
-else:
-    print(n,"n'est pas factoriel")
+
+print("Il y a",nb,"façons d'obtenir",n))
 ==
 
 
 
 
 mplsoluce0==
-Négatif 
+Valeur hors limite 
 -5
+65
+1
 ==
 mplsoluce1==
-Facile 
-24
+Min
+0
 ==
 mplsoluce2==
-Grand 
-479001600
-==
-mplsoluce3==
-tres grand
-35184372088833
-==
-mplsoluce5==
-nul
-1
+Max
+50
 ==
 
 
