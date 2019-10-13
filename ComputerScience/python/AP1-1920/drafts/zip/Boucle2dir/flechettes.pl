@@ -25,17 +25,10 @@ toute fléchette en dehors compte 0 points<br>
 On cherche à déterminer le nombre de façons 
 Ecrire un programme qui :
 
-* lit un entier compris entre 0 et 500
+* force la lecture d'un entier compris entre 0 et 50
 
 * affiche le nombre de façon d'obtenir ce nombre de pointsavec 10 fléchettes 
 
-
-
-Exemples d'affichage :
-
-40320=8!
-
-22 n'est pas factoriel
 
 ==
 
