@@ -19,10 +19,10 @@ text==
 Une cible de flechettes contient 3 zones:
 
 . 1 points<br>
-. 2 points
-. 5 points
-toute fléchette en dehors compte 0 points
-On cherche à déterminer le nombre de façon d'obtenir n points ($0 \le n \le 500) avec 10 fléchettes.
+. 2 points<br>
+. 5 points<br>
+toute fléchette en dehors compte 0 points<br>
+On cherche à déterminer le nombre de façons 
 Ecrire un programme qui :
 
 * lit un entier compris entre 0 et 500
