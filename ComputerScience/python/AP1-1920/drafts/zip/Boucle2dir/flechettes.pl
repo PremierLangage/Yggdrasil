@@ -11,6 +11,8 @@ code==
 n = int(input("Un nombre : "))
 
 
+print("Il y a",nb,"façons d'obtenir",n)
+
 ==
 
 taboo=import
@@ -41,9 +43,22 @@ mplsoluce3 += str(N)+"\n"
 ==
 soluce==
 n = int(input("Un nombre : "))
+while n<0 or n>50:
+    n = int(input("Un nombre : "))
+nb=0
+somme=0
+for f1 in range(11):
+    somme=f1
+    for f2 in range(11-f1):
+        somme+=f2*2
+        for f3 in range(11-(f1+f2)):
+            somme+=f3*5
+            if somme==n:
+                nb+=1
+            somme-=f3*5    
+        somme-=f2*2
 
-
-print("Il y a",nb,"façons d'obtenir",n))
+print("Il y a",nb,"façons d'obtenir",n)
 ==
 
 
@@ -64,7 +79,9 @@ Max
 50
 ==
 
-
+mplsoluce4==
+Impossible
+48
 
 
 
