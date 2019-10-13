@@ -46,6 +46,8 @@ soluce==
 
 
 d=float(input("Entrez un réel strictement positf: "))
+while d<=0:
+    d=float(input("Entrez un réel strictement positf: "))
 x=0
 nb=0
 while x<=d:
