@@ -1,9 +1,7 @@
-# Copyright 2016 Nicolas Borie <nicolas.borie@u-pem.fr>
+# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 # Copyright 2017 DR <dr@univ-mlv.fr>
-# se termine par la chaine 
 
-author=Dominique & Nicolas
-name=Combien de caractères
+author=Nicolas Borie
 title=Combien de caractères
 tag=string|function|loop|pointer
 extends=/ComputerScience/C/template/stdsandboxC.pl
@@ -39,32 +37,38 @@ int count(char* s, char c){
 ==
 
 solution==
+
 int count(char* s, char c){
 
   int nb=0;
   for(;*s;s++) if (*s==c) nb++;
   return nb;
 }
+
 ==
 
 codebefore==
+
 #include <stdio.h>
 #include <stdlib.h>
+
 ==
 
 codeafter==
+
 int main(int argc, char* argv[]){
 
  printf("Y a %d %c dans %s",count(argv[1],argv[2][0]),argv[2][0],argv[1]);
 
   return 0;
 }
+
 ==
 
 tests==
-
-[["pas d'occurences", "anticonstitutionnellement b", ""], 
- ["Que la lettre", "ooooooooo o", ""], 
- ["une occurence", "xxxlhkjhkdqkshdksqjdhlkXqkjhdshlddhqslk X", ""]] 
+[ ["pas d'occurences", "anticonstitutionnellement b", ""], 
+  ["Que la lettre", "ooooooooo o", ""], 
+  ["une occurence", "xxxlhkjhkdqkshdksqjdhlkXqkjhdshlddhqslk X", ""] ] 
 ==
+
 
