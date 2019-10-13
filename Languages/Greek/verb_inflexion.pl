@@ -15,7 +15,7 @@ radio_voice =: RadioGroup
 
 before==
 content_prs={'1S':'1ère personne du singulier','2S':'2e personne du singulier','3S':'3e personne du singulier','1P':'1ère personne du pluriel','2P':'2e personne du pluriel','3P':'3e personne du pluriel'}
-content_tense={'pres':'present','imperfect':'imparfait'}
+content_tense={'pres':'présent','imperfect':'imparfait'}
 
 radio_prs.items=[{'id':'1S','content':'1ère personne du singulier'},
             {'id':'2S','content':'2e personne du singulier'},
