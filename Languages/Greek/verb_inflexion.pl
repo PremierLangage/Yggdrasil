@@ -14,6 +14,9 @@ radio_mood =: RadioGroup
 radio_voice =: RadioGroup
 
 before==
+content_prs={'1S':'1ère personne du singulier','2S':'2e personne du singulier','3S':'3e personne du singulier','1P':'1ère personne du pluriel','2P':'2e personne du pluriel','3P':'3e personne du pluriel'}
+content_tense={'pres':'present','imperfect':'imparfait'}
+
 radio_prs.items=[{'id':'1S','content':'1ère personne du singulier'},
             {'id':'2S','content':'2e personne du singulier'},
             {'id':'3S','content':'3e personne du singulier'},
@@ -102,7 +105,7 @@ score,_=checkradio(radio_voice,voice)
 score,_=checkradio(radio_mood,mood)
 score=100
 
-feedback="Vous avez répondu %s %s %s %s" % (radio_prs.selection,radio_tense.selection,radio_voice.selection,radio_mood.selection)
+feedback="Vous avez répondu %s %s %s %s" % (content_prs[radio_prs.selection],content_tense[radio_tense.selection],radio_voice.selection,radio_mood.selection)
 grade = (score,feedback)
 ==
 
