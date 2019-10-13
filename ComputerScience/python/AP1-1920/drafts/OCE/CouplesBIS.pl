@@ -33,6 +33,7 @@ for i in range(p):
         ligne += "("+str(i+1)+","+str(j+1)+") "
     print(ligne)
 
+# Vérifier la présence d'un mot taboo dans le code de l'étudiant
 def checktaboo(taboo, answer):
     x = re.sub("(\"(.|\n)*\"|#.*)", "", answer) #enlève les commentaires et les chaînes de caractères
     # FIXME la chaine de caractère ""  letaboo "" est elle trouvée par la regex suivante ? 
@@ -73,6 +74,7 @@ begin_test_group("Grand")
     assert_output(f"{couple(30,46)}\n")
 end_test_group()
 ==
+
 
 
 
