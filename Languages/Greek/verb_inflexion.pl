@@ -22,15 +22,12 @@ radio_prs.items=[{'id':'1S','content':'1ère personne du singulier'},
             {'id':'3P','content':'3e personne du pluriel'}
             ]
 radio_tense.items=[{'id':'pres','content':'présent'},
-            {'id':'future','content':'futur'},
-            {'id':'imperfect','content':'imparfait'},
-            {'id':'aorist','content':'aoriste'},
-            {'id':'perfect','content':'parfait'}
+            {'id':'imperfect','content':'imparfait'}
             ]
 radio_voice.items=[{'id':'A','content':'actif'},
-            {'id':'M','content':'moyen'},
-            {'id':'P','content':'passif'}
+            {'id':'MP','content':'moyen-passif'}
             ]
+                        ]
 radio_mood.items=[{'id':'I','content':'indicatif'},
             {'id':'S','content':'subjonctif'},
             {'id':'O','content':'optatif'}
@@ -67,6 +64,7 @@ voice=random.choice(["A","M","P"])
 mood=random.choice(["I"])
 tense=random.choice(["pres","imperfect","future"])
 person=random.choice(["1S","2S","3S","1P","2P","3P"])
+
 
 if (voice=="M" or voice=="P") and (tense=="pres" or tense=="imperfect"):
     voice2="MP"
