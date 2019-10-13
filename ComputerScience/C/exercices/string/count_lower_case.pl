@@ -1,4 +1,5 @@
 # Copyright 2017 Nicolas Borie <nicolas.borie@u-pem.fr>
+
 author=Nicolas Borie
 title=Compter les lettres minuscules
 tag=string
@@ -18,6 +19,7 @@ int count_lower_case(char* s){
 ==
 
 solution==
+
 int count_lower_case(char* s){
   int i;
   int lower=0;
@@ -29,9 +31,11 @@ int count_lower_case(char* s){
   }
   return lower;
 }
+
 ==
 
 codeafter==
+
 #include <stdio.h>
 
 int main(int argc, char* argv[]){
@@ -42,13 +46,12 @@ int main(int argc, char* argv[]){
 ==
 
 tests==
-
-[["Mot simple", "salut", ""],
- ["Mot compliqué", "Bonjour12LARTISTE42a", ""],
- ["Mot vide", "''", ""],
- ["Mot aléatoire", "".join([chr(65+random.randint(0,25)+(random.randint(0,1)*(97-65))) for i in range(random.randint(10, 30))]), ""],
- ["Mot aléatoire", "".join([chr(65+random.randint(0,25)+(random.randint(0,1)*(97-65))) for i in range(random.randint(10, 30))]), ""],
- ["Mot aléatoire", "".join([chr(65+random.randint(0,25)+(random.randint(0,1)*(97-65))) for i in range(random.randint(10, 30))]), ""]]
-
+[ ["Mot simple", "salut", ""],
+  ["Mot compliqué", "Bonjour12LARTISTE42a", ""],
+  ["Mot vide", "''", ""],
+  ["Mot aléatoire", "".join([chr(65+random.randint(0,25)+(random.randint(0,1)*(97-65))) for i in range(random.randint(10, 30))]), ""],
+  ["Mot aléatoire", "".join([chr(65+random.randint(0,25)+(random.randint(0,1)*(97-65))) for i in range(random.randint(10, 30))]), ""],
+  ["Mot aléatoire", "".join([chr(65+random.randint(0,25)+(random.randint(0,1)*(97-65))) for i in range(random.randint(10, 30))]), ""] ]
 ==
+
 
