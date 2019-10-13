@@ -5,7 +5,7 @@
 @ grc_verbs.json [grc_verbs.json]
 @ /utils/components.py [utilscomponents.py]
 
-title = Grec ancien
+title = Grec ancien : Analyse verbale
 
 
 radio_prs =: RadioGroup
