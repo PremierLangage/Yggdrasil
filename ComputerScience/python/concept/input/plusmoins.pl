@@ -17,7 +17,7 @@ le programme affiche :
 	3
 	14
 	5
-	somme= 34 , moyenne = 8.5
+	somme= 34 , moyenne= 8.5
 == 
 
 feedback==
@@ -67,8 +67,8 @@ print(b)
 print(c)
 print(d)
 s=a+b+c+d
-print("somme = %d , moyenne = %f" % (s,s/4) )
-print("somme = ",s," , moyenne = " ,s/4)
+
+print("somme=", s ,", moyenne=", s/4)
 ==
 
 
