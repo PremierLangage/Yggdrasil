@@ -37,7 +37,7 @@ extracss ==
 <style>
 /* will work but not recommended since the name can change in the future */
 .input-component {
-    width:100px;
+    width:100%;
     color: red;
 }
 </style>
