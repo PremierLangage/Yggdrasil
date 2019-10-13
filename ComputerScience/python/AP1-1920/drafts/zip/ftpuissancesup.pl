@@ -17,6 +17,11 @@ et renvoie la plus petite puissance de base supérieure à n.
 puis_sup(987,2) renvoie 1024. 
 
 Si base n'est pas strictement que 1 la fonction renvoie None.
+Ecrire un programme pour tester la fonction:
+
+*lire 2 entiers
+*appeler la fonction
+*afficher le résultat
 ==
 
 soluce==
@@ -39,4 +44,5 @@ classique
 56
 2
 ==
+
 
