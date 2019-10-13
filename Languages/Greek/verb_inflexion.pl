@@ -96,7 +96,10 @@ evaluator==
 from utilscomponents import checkradio
 
 score=0
-ans=conj[radio_tense.selection][radio_voice.selection][radio_mood.selection][radio_prs.selection]
+try:
+    ans=conj[radio_tense.selection][radio_voice.selection][radio_mood.selection][radio_prs.selection]
+except:
+    ans=""
 if isinstance(ans,str):
     if ans==formverb:
         score=100
