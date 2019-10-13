@@ -63,18 +63,14 @@ if 'imperfect' in data:
 if 'future' in data:
     conj['future']=render(tplconj['future'],data['future'])
 
-voice=random.choice(["A","M","P"])
+voice=random.choice(["A","MP"])
 mood=random.choice(["I"])
-tense=random.choice(["pres","imperfect","future"])
+tense=random.choice(["pres","imperfect"])
 person=random.choice(["1S","2S","3S","1P","2P","3P"])
 
-
-if (voice=="M" or voice=="P") and (tense=="pres" or tense=="imperfect"):
-    voice2="MP"
-else:
-    voice2=voice
-
 formverb=conj[tense][voice2]['I'][person]
+if isinstance(formverb,list):
+    formverb=random.choice(formverb)
 ==
 
 text ==
