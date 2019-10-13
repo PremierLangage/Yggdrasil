@@ -45,7 +45,7 @@ mplsoluce3 += str(d)+"\n"
 soluce==
 
 
-nb=float(input("Entrez un réel strictement positf: "))
+d=float(input("Entrez un réel strictement positf: "))
 x=0
 nb=0
 while x<=d:
