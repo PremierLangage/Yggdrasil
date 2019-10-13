@@ -33,15 +33,4 @@ except:
     grade=(-1,"Votre réponse n'est pas un nombre entier.")
 ==
 
-extracss ==
-<style>
-/* will work but not recommended since the name can change in the future */
-.input-component {
-    mat-form-field {
-        width: 100%;
-    }
-}
-</style>
-==
-
 
