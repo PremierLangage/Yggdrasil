@@ -8,7 +8,7 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 title = nombre factoriel
 
 code==
-nb = int(input("Un nombre : "))
+n = int(input("Un nombre : "))
 
 
 ==
@@ -84,6 +84,7 @@ mplsoluce5==
 nul
 1
 ==
+
 
 
 
