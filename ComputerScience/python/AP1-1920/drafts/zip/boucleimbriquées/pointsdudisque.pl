@@ -30,7 +30,6 @@ code==
 
 
 
-print("Il y a",??,"points à coordonnées entières)
 ==
 
 before==
