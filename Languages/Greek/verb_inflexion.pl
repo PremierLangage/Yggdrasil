@@ -95,11 +95,14 @@ form==
 evaluator==
 from utilscomponents import checkradio
 
-score1,_=checkradio(radio_prs,person)
-score2,_=checkradio(radio_tense,tense)
-score3,_=checkradio(radio_voice,voice)
-score4,_=checkradio(radio_mood,mood)
-score=score1*score2*score3*score4//100**3
+score=0
+ans=conj[radio_tense.selection][radio_voice.selection][radio_mood.selection][radio_prs.selection]
+if isinstance(ans,str):
+    if ans==formverb:
+        score=100
+if isinstance(ans,list):
+    if formverb in ans:
+        score=100
 
 feedback="Vous avez répondu %s %s %s %s" % (content_prs[radio_prs.selection],content_tense[radio_tense.selection],radio_voice.selection,radio_mood.selection)
 feedback=""
