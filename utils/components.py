@@ -5,11 +5,11 @@ def checkradio(radio,idsol):
         if item['id'] == S:
             if S == idsol:
                 item['css'] = 'success-state'
-                return ("Ok",100)
+                return (100,"")
             else:
                 item['css'] = 'error-state'
         elif item['id'] == idsol:
             item['css'] = 'success-state'
-    return ("Error",0)
+    return (0,"")
     
 
