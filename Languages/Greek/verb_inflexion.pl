@@ -27,7 +27,7 @@ radio_tense.items=[{'id':'pres','content':'présent'},
 radio_voice.items=[{'id':'A','content':'actif'},
             {'id':'MP','content':'moyen-passif'}
             ]
-                        ]
+
 radio_mood.items=[{'id':'I','content':'indicatif'},
             {'id':'S','content':'subjonctif'},
             {'id':'O','content':'optatif'}
