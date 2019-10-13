@@ -57,7 +57,7 @@ while f <n:
     f*=i
     i+=1
 if n==f:
-    print(str(n)+"="+str(i)+"!")
+    print(str(n)+"="+str(i-1)+"!")
 else:
     print(n,"n'est pas factoriel")
 ==
@@ -85,6 +85,7 @@ mplsoluce5==
 nul
 1
 ==
+
 
 
 
