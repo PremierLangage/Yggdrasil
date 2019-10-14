@@ -28,7 +28,7 @@ Ecrire un programme qui :
 
 * force la lecture d'un entier compris entre 0 et 50
 
-* affiche le nombre de façon d'obtenir ce nombre de pointsavec 10 fléchettes 
+* affiche le nombre de façon d'obtenir ce nombre de points avec 10 fléchettes 
 
 
 ==
