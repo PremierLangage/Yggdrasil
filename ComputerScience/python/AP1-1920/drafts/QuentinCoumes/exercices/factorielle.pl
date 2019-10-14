@@ -1,6 +1,6 @@
 extends = ../templates/generic/generic.pl
 
-#author = Quentin Coumes
+# author = Quentin Coumes
 
 title = Factorielle
 
