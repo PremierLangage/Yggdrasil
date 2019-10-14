@@ -14,8 +14,7 @@ Ecrire un programme qui force la saisie d'un réel strictement positif d
  puis affiche le nombre de points à coordonnées entières situés 
  sur la circonférence du cercle de rayon d centré à l'origine.
 
-exemple
-
+exemple : 
 
 Entrez un réel strictement positf: -2
 
