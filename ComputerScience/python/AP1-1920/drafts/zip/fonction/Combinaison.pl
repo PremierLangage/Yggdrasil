@@ -7,7 +7,6 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 title = triangle pas
 text==  
 
-Ecrire une fontion +factoriel() qui reçoit un entier positif et renvoie saf actorielle.
 
 Si l'entier est négatif la fonction renvoie *None*
 
