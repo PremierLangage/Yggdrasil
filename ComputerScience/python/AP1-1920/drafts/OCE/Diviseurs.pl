@@ -11,8 +11,6 @@ q=int(input())
 
 ==
 
-taboo=while
-
 text==  
 Ecrire un programme qui : <br>
 * affiche tous les diviseurs d'un entier n saisi par l'utilisateur <br>
