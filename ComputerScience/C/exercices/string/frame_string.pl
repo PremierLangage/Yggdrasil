@@ -23,7 +23,7 @@ Le cadre est espacé du mot d'un espace avant et après la chaîne.
 On affichera rien du tout si la chaîne en argument est la chaîne vide.
 ==
 
-code==
+editor.code==
 #include <stdio.h>
 #include <string.h>
 
