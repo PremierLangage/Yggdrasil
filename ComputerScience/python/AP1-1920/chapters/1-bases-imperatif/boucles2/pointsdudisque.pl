@@ -14,17 +14,16 @@ Ecrire un programme qui force la saisie d'un réel strictement positif d
  puis affiche le nombre de points à coordonnées entières situés à l'intérieur le disque de rayon d.
 exemple
 
-
 Entrez un réel strictement positf: -2
 
-Entrez un réel strictement positif: 24.32
+Entrez un réel strictement positif: 24.32<br>
 Il y a 1861 points à coordonnées entières
 
 ==
 
 code==
 
-??=float(input("Entrez un réelstrictement positf: "))
+??=float(input("Entrez un réel strictement positf: "))
 
 
 
@@ -76,5 +75,6 @@ mplsoluce2==
 Entrée grande
 24
 ==
+
 
 
