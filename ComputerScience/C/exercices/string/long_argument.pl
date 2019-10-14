@@ -1,26 +1,18 @@
 # Copyright 2017 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
-# Encadrer le plus long argument d'un programme C
+# Trouver le plus long argument d'un programme C
 
 author=Nicolas Borie
-name=Encadrer le plus long argument d'un programme C
-title=Encadrer le plus long argument d'un programme C
+title=Trouver le plus long argument d'un programme C
 tag=string|program
-extends=/ComputerScience/C/template/autograderC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
-Écrire un programme C qui identifie son plus long argument et
-l'affiche ensuite en console encadré avec des caractères dièse. On
-considèra que le nom du programme (toujours en tête du tableau des
-arguments) ne fera pas parti des arguments. Sans argument, le
-programme ne devra rien afficher.
+Écrire un programme C qui identifie et affiche son argument le plus long. 
+Une fois ce dernier identifié, il suffit de l'afficher sur la sortie standard 
+et d'aller à la ligne.
 
-Ainsi, si le plus long argument est le mot *pouet*, le programme devra alors afficher:
-
-    #########
-    # pouet #
-    #########
 
 ==
 
@@ -68,13 +60,11 @@ int main(int argc, char* argv[]){
 ==
 
 grader==
-from graderC import graderII
-
-tests = [["Basique", "argument1", ""],
-	 ["Sans argument", "", ""],
-	 ["Argument multiple", "12 pouet foo bar 1367235342534", ""],
-	 ["Argument long", "argument1 mot super long anti-constitutionnellement", ""],
-	 ["Complexe", "'argument en plusieurs mots' mot_unique", ""],]
-
-graderII(tests)
+[ ["Basique", "argument1", ""],
+  ["Sans argument", "", ""],
+	["Argument multiple", "12 pouet foo bar 1367235342534", ""],
+	["Argument long", "argument1 mot super long anti-constitutionnellement", ""],
+	["Complexe", "'argument en plusieurs mots' mot_unique", ""],
+  ["Aléatoire", " ".join(["".join([chr(random.randint(97,122)) for i in range(random.randint(1,15))]) for i in range(1, 8)]), ""] ]
 ==
+
