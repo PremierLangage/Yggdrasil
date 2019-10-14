@@ -24,8 +24,8 @@ def factoriel(n):
     return f 
 
 k=int(input("n"))
-print(factoriel(k)
-)==
+print(factoriel(k))
+==
 mplsoluce0==
 classique
 3
