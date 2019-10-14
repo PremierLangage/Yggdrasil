@@ -45,12 +45,12 @@ student = _get_student_code(dic)
 # Vérification dans le code de l'étudiant de la non présence du taboo
 if "taboo" in dic:
     if checktaboo(dic['taboo'], student):
-        output(0, "ATTENTION : Le mot clef " + dic['taboo'] + " est proscrit.")
+        sandboxio.output(0, "ATTENTION : Le mot clef " + dic['taboo'] + " est proscrit.")
         sys.exit(1)
 # Vérification dans le code de l'étudiant de la présence du needed
 if "needed" in dic:
     if not checktaboo(dic['needed'], student):
-        output(0, "ATTENTION : Le mot clef " + dic['needed'] + " est demandé.")
+        sandboxio.output(0, "ATTENTION : Le mot clef " + dic['needed'] + " est demandé.")
         sys.exit(1)
 
 begin_test_group("Facile")
