@@ -25,9 +25,9 @@ si $%c \lt n %$.
 
  Ecrire un programme qui:
  
- lit un entier
+ * lit un entier
 
- affiche le nombre de triplets de Pythagore inférieurs à cet entier.
+ * affiche le nombre de triplets de Pythagore inférieurs à cet entier.<br>
 Exemple  :
 
 Entrez l'entier maximum : 30
@@ -68,4 +68,5 @@ mplsoluce2==
 Grand
 100
 ==
+
 
