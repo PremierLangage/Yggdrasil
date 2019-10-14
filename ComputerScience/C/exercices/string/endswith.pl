@@ -22,7 +22,7 @@ Vous devez écrire votre fonction sans rien utiliser des bibliothèques standard
 
 ==
 
-code==
+editor.code==
 int endswith(char* s, char* fin){
  /*votre code ici */
 }
