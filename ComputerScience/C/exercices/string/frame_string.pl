@@ -10,9 +10,8 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 text==
 
 Écrire une fonction C qui prend en argument une chaîne de caractères
-et qui affiche cette chaîne de manière encadrée avec des caractères
-\#.
-    
+et qui affiche cette chaîne de manière encadrée avec des caractères \#.
+
 
 Ainsi, si le mot est "pouet", la fonction devra alors afficher:
 
@@ -66,15 +65,11 @@ int main(int argc, char* argv[]){
 ==
 
     
-grader==
-from graderC import graderII
-
-tests = [["Basique", "pouet", ""],
-         ["Chaîne composé", '"deux mots"', ""],
-	 ["Chaîne vide", '""', ""],
-         ["Long mot", "Anti-constitutionnellement", ""],
-	 ["Plein de mots", '"Cela fait sept mots dans un mot"', ""]]
-
-graderII(tests)
+tests==
+[ ["Basique", "pouet", ""],
+  ["Chaîne composé", '"deux mots"', ""],
+  ["Chaîne vide", '""', ""],
+  ["Long mot", "Anti-constitutionnellement", ""],
+  ["Plein de mots", '"Cela fait sept mots dans un mot"', ""] ]
 ==
 
