@@ -1,6 +1,6 @@
 extends = ../templates/generic/generic.pl
 
-author = Quentin Coumes
+#author = Quentin Coumes
 
 title = Factorielle
 
@@ -50,3 +50,4 @@ import math
 print("\n".join(f"{i}! = {math.factorial(i)}" for i in range(n + 1)))
 del math
 ==
+
