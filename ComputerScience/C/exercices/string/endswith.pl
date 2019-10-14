@@ -1,10 +1,10 @@
-# Copyright 2016 Nicolas Borie <nicolas.borie@u-pem.fr>
+# Copyright 2016-2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 # Copyright 2017 DR <dr@univ-mlv.fr> 
 
 author=DR & NB
 title=Fin d'une chaîne de caractères
 tag=string|function|pointer
-extends=/ComputerScience/C/template/autograderC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
