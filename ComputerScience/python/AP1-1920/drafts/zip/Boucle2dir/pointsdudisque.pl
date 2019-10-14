@@ -53,9 +53,7 @@ while x<=d:
     y=0
     while y<=d:
         if x*x+y*y==d*d:
-            if x==0 and y==0:
-                nb+=1
-            elif x==0 or y==0:
+            if x==0 or y==0:
                 nb+=2
             else  :
                 nb+=4
