@@ -26,6 +26,7 @@ Indice : la longeur d'une chaine de caractère se code comme cela : len(chaine)
 <br>
 Exemple de résultat attendu du programme pour la valeur 6 : 
 <br>
+<br>
 6<br>
 Les diviseurs de 6 : 1, 2, 3, 6<br>
 Il s'agit d'un nombre parfait<br>
