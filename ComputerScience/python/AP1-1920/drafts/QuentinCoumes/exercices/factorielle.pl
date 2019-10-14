@@ -50,5 +50,11 @@ import math
 print("\n".join(f"{i}! = {math.factorial(i)}" for i in range(n + 1)))
 del math
 ==
-
+# A priori la solutions que les étudiants vont prendre est celle là :
+# Saisissez votre code ici, et cliquez sur le bouton
+# de validation quand vous avez terminé
+# f = 1
+# for i in range(n+1):
+#    print(str(i) + "!" + " = " + str(f))
+#    f*=i+1
 
