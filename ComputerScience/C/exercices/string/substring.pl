@@ -3,7 +3,7 @@
 #
 
 author=NB & DR
-title=Sous chaîne dans une chaîne
+title=Sous-chaîne dans une chaîne
 tag=function|string
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
@@ -15,7 +15,7 @@ apparait dans **big** et 0 sinon.
 ==
 
 editor.code==
-int in(... c, ... s) {
+int substring(... big, ... sub) {
   /* Votre code ici ... */
 }
 ==
@@ -47,20 +47,8 @@ int main(int argc, char* argv[]){
 
 
 tests==
-[ ["Basique", "l unmotavecunl", ""],
-  ["Pas present", "X bcdfghjklmnpqrstvwxz", ""],
-   ]
-
-for i in range(3):
-    taille = random.randint(10, 30)
-    mot = ""
-    for j in range(taille):
-        if random.randint(0,1) == 0:
-            mot += chr(97+random.randint(0,25))
-        else:
-            mot += chr(68+random.randint(0,25))
-    tests.append(["Aléatoire présent", mot[3]+" "+mot, ""])
-    tests.append(["Aléatoire absent", "A "+mot, ""])
+[ ["Basique", "l unmotavecunlici", ""],
+  ["Pas présent", "x unmotsanslalettre", ""] ]
 ==
 
 
