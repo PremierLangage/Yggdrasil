@@ -16,7 +16,7 @@ retourner 0.
 ==
 
 editor.code==
-const char *vowel="aeiouy";
+const char* vowel="aeiouy";
 
 int has_vowel(...){
   ...
