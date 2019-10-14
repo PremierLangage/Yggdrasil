@@ -26,8 +26,7 @@ L’affichage doit se faire avec un espace entre chaque couple comme sur l’exe
 ==
 
 soluce==
-p=int(input())
-q=int(input())
+p=int(input("nombre  de lignes"))
 for i in range(p):
     ligne=""
     for j in range(q):
