@@ -25,16 +25,7 @@ solution==
 #include <string.h>
 
 int substring(char* big, char* sub) {
-  int i, j;
-  
-  for(i=0 ; big[i]!='\0' ; i++){
-    for(j=0 ; sub[j]!='\0' ; j++)
-      if(big[i] != sub[j])
-        break;
-    if(sub[j]=='\0')
-      return 1;
-  }
-  return 0;
+  return strstr(big, sub);
 }
 
 ==
