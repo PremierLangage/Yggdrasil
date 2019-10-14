@@ -45,12 +45,11 @@ for i in range(entier):
         chaine += (str(i+1))
         somme+=(i+1)
 
-print(chaine)
+print("Les diviseurs de " + str(entier) + " : " + chaine)
 
 if somme == entier * 2:
-    print("il s'agit d'un nombre parfait")
-    print("En voici la preuve : ")
-    print("Total des diviseurs : " + str(somme) + " = " + str(entier) + " * 2")
+    print("Il s'agit d'un nombre parfait")
+    print("En effet, le total des diviseurs : " + str(somme) + " = " + str(entier) + " * 2")
 else:
     print("Il ne s'agit pas d'un nombre entier puisque la somme des diviseurs n'est pas le double du nombre")
 ==
