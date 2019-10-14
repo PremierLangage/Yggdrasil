@@ -1,33 +1,34 @@
 # Copyright 2017 DR
 #
 
-author=NB&DR
-
+author=NB & DR
 title= Présent dans une chaine
-tag=function|string|strchr
-extends=/ComputerScience/C/template/autograderC.pl
+tag=function|string
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
-Écrire une fonction *in* qui prend un char **c** et une chaine **s** en parametre et qui retourne  1 si **c** apparait dans **s** 
-et 0 sinon.
+Écrire une fonction *in* qui prend un char **c** et une chaine **s** en parametre et 
+qui retourne  1 si **c** apparait dans **s**  et 0 sinon.
 ==
 
-code==
-int in(XXXX c, YYYY s ) {
-/* hehe */
+editor.code==
+int in(... c, ... s) {
+  /* Votre code ici ... */
 }
 ==
 
 solution==
+
 #include <string.h>
-int in(char c,char *p){
+int in(char c, char *p){
   for(;*p;p++)  if (*p==c) return 1;
   return 0;
 }
 ==
 
 codeafter==
+
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -43,12 +44,9 @@ int main(int argc, char* argv[]){
 ==
 
 
-grader==
-from graderC import graderII
-import random
-
-tests = [["Basique", "l unmotavecunl", ""],
-    ["Pas present", "X bcdfghjklmnpqrstvwxz", ""],
+tests==
+[ ["Basique", "l unmotavecunl", ""],
+  ["Pas present", "X bcdfghjklmnpqrstvwxz", ""],
    ]
 
 for i in range(3):
@@ -61,8 +59,6 @@ for i in range(3):
             mot += chr(68+random.randint(0,25))
     tests.append(["Aléatoire présent", mot[3]+" "+mot, ""])
     tests.append(["Aléatoire absent", "A "+mot, ""])
-
-
-graderII(tests)
 ==
+
 
