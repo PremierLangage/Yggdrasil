@@ -28,6 +28,7 @@ si $%c \lt n %$.
  * lit un entier
 
  * affiche le nombre de triplets de Pythagore inférieurs à cet entier.<br>
+ 
 Exemple  :
 
 Entrez l'entier maximum : 30
