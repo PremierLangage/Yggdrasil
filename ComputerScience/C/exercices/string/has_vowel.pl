@@ -1,9 +1,9 @@
 # Copyright 2017 DR
 #
 
-author=NB&DR
-title= Repérer les voyelles
-tag=function|string|strchr
+author=NB & DR
+title= Repérer les voyelles dans une chaîne
+tag=function|string
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
@@ -63,5 +63,6 @@ tests==
 ["Y'a un o", "xxxoo", ""],
 ["Y'a un y", "xxxy", ""]]
 ==
+
 
 
