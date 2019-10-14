@@ -55,14 +55,12 @@ else:
 ==
 
 mplsoluce0==
-Négatif 
--1
--2
+Simple
+6
 ==
 mplsoluce1==
-Facile 
-1
-2
+long 
+24
 ==
 mplsoluce2==
 Grand 
