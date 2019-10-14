@@ -20,8 +20,8 @@ Ecrire un programme qui : <br>
 * On rappelle qu'un nombre est parfait si la somme de ses diviseurs est égale au double du nombre. <br>
   Par exemple, 6 a pour diviseurs 1, 2, 3 et 6. Leur somme fait 12 = 6 * 2 <br>
 
-Vouc compléterez le code suivant pour créer votre programme.
-
+Vous compléterez le code suivant pour créer votre programme.
+Indice : la longeur d'une chaine de caractère se code comme cela : len(chaine)
 ==
 
 soluce==
