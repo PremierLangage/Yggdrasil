@@ -1,12 +1,11 @@
-# Copyright 2017 Nicolas Borie <nicolas.borie@u-pem.fr>
+# Copyright 2017-2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
 # Encadrer une chaine de caractères C
 
 author=Nicolas Borie
-name=Encadrer une chaine de caractères C
 title=Encadrer une chaine de caractères C
 tag=string|function
-extends=/ComputerScience/C/template/autograderC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
@@ -78,3 +77,4 @@ tests = [["Basique", "pouet", ""],
 
 graderII(tests)
 ==
+
