@@ -59,7 +59,13 @@ int main(int argc, char* argv[]){
 
 tests==
 [ ["Basique", "unmotavecunlici l", ""],
-  ["Pas présent", "unmotsanslalettre x", ""] ]
+  ["Pas présent", "unmotsanslalettre x", ""], 
+  ["Anagrame", "Borie Boire", ""],
+  ["Aléatoire", "".join([chr(97,122) for i in range(50)])] + " " + "".join([chr(97,122) for i in range(3)])], "" ],
+  ["Aléatoire", "".join([chr(97,122) for i in range(50)])] + " " + "".join([chr(97,122) for i in range(3)])], "" ],
+  ["Aléatoire", "".join([chr(97,122) for i in range(50)])] + " " + "".join([chr(97,122) for i in range(3)])], "" ],
+  ["Aléatoire", "".join([chr(97,122) for i in range(50)])] + " " + "".join([chr(97,122) for i in range(3)])], "" ],
+  ["Aléatoire", "".join([chr(97,122) for i in range(50)])] + " " + "".join([chr(97,122) for i in range(3)])], "" ] ]
 ==
 
 
