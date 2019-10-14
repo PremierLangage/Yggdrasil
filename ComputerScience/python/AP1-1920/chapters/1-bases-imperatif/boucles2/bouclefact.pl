@@ -5,10 +5,10 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
-title = nombre factoriel
+title = Nombre factoriel
 
 code==
-n = int(input("Un nombre : "))
+nb = int(input("Un nombre : "))
 
 
 ==
@@ -49,12 +49,13 @@ mplsoluce4 += str(f)+"\n"
 ==
 soluce==
 n = int(input("Un nombre : "))
-
+if n==1:
+    print("1=0!")
 f=1
-i=0
+i=1
 while f <n:
-    i+=1
     f*=i
+    i+=1
 if n==f:
     print(str(n)+"="+str(i)+"!")
 else:
@@ -84,7 +85,6 @@ mplsoluce5==
 nul
 1
 ==
-
 
 
 
