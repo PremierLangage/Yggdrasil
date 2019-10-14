@@ -28,7 +28,7 @@ si $%c \lt n %$.
  * lit un entier
 
  * affiche le nombre de triplets de Pythagore inférieurs à cet entier.<br>
- 
+
 Exemple  :
 
 Entrez l'entier maximum : 30
@@ -37,14 +37,15 @@ il y a 10 triplet(s) inférieur(s) à 30
 
 *D'après le "projet Euler"*
 ==
+
 before==
 import random
 N=random.randint(4,150)
 mplsoluce3="Test aléatoire \n"
 mplsoluce3+=str(N)+"\n"
 ==
-soluce==
 
+soluce==
 n= int(input("Entrez l'entier maximum : "))
 nb=0
 for a in range(1,n):
