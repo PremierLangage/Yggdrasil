@@ -1,12 +1,10 @@
 
 # author zip
-
+uissance sup
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
-title = puissance supérieure
-
-
+title = triangle pas
 text==  
 
 Ecrire une fontion +factoriel() qui reçoit un entier positif et renvoie saf actorielle.
