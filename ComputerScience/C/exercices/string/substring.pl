@@ -48,9 +48,9 @@ codeafter==
 int main(int argc, char* argv[]){
 
   if (substring(argv[1], argv[2]))
-    printf("%s contient le mot %s",argv[1], argv[2]);
+    printf("'%s' contient le mot '%s'",argv[1], argv[2]);
   else
-    printf("%s ne contient pas le mot %s",argv[1], argv[2]);
+    printf("'%s' ne contient pas le mot '%s'",argv[1], argv[2]);
 
   return 0;
 }
@@ -58,8 +58,8 @@ int main(int argc, char* argv[]){
 
 
 tests==
-[ ["Basique", "l unmotavecunlici", ""],
-  ["Pas présent", "x unmotsanslalettre", ""] ]
+[ ["Basique", "unmotavecunlici l", ""],
+  ["Pas présent", "unmotsanslalettre x", ""] ]
 ==
 
 
