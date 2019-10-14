@@ -61,6 +61,8 @@ tests==
 [ ["Basique", "unmotavecunlici l", ""],
   ["Pas présent", "unmotsanslalettre x", ""], 
   ["Anagrame", "Borie Boire", ""],
+  ["A la fin", "'Borie aime bien Boire' Boire", ""],
+  ["Finalement", "'Qui aime Boire chatie bien' Boire", ""],
   ["Aléatoire", "".join([chr(random.randint(97,122)) for i in range(50)]) + " " + "".join([chr(random.randint(97,122)) for i in range(2)]), "" ],
   ["Aléatoire", "".join([chr(random.randint(97,122)) for i in range(50)]) + " " + "".join([chr(random.randint(97,122)) for i in range(2)]), "" ],
   ["Aléatoire", "".join([chr(random.randint(97,122)) for i in range(50)]) + " " + "".join([chr(random.randint(97,122)) for i in range(2)]), "" ],
