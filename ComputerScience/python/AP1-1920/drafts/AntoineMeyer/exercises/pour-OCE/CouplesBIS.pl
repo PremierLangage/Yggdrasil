@@ -1,7 +1,7 @@
 #author=OCE
 
 # Heritage d'un type d'exercice 
-extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
+extends = ../../templates/generic/generic.pl
 
 title = Couples (X,Y)
 
@@ -39,8 +39,8 @@ def checktaboo(taboo, answer):
     # FIXME la chaine de caractère ""  letaboo "" est elle trouvée par la regex suivante ? 
     return re.search("(^"+taboo+"\s|[^\"]+"+taboo+"\s)", x) != None
 
-dic = get_context()
-student = get_answers()['answer']
+dic = pl_context
+student = _get_student_code(dic)
 
 # Vérification dans le code de l'étudiant de la non présence du taboo
 if "taboo" in dic:
