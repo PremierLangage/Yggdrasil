@@ -54,14 +54,13 @@ int main(int argc, char* argv[]){
 
 
 tests==
-
-[["Basique", "labellevoyelle", ""],
-["Y a pas de voyelles", "bcdfghjklmnpqrstvwxz", ""],
-["Y'a un a", "aaaa", ""],
-["Y'a un e", "xxxea", ""],
-["Y'a un i", "xxxiea", ""],
-["Y'a un o", "xxxoo", ""],
-["Y'a un y", "xxxy", ""]]
+[ ["Basique", "labellevoyelle", ""],
+  ["Y a pas de voyelles", "bcdfghjklmnpqrstvwxz", ""],
+  ["Y'a un a", "aaaa", ""],
+  ["Y'a un e", "xxxea", ""],
+  ["Y'a un i", "xxxiea", ""],
+  ["Y'a un o", "xxxoo", ""],
+  ["Y'a un y", "xxxy", ""] ]
 ==
 
 
