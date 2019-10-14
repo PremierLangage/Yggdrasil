@@ -61,6 +61,11 @@ tests==
 [ ["Basique", "unmotavecunlici l", ""],
   ["Pas présent", "unmotsanslalettre x", ""], 
   ["Anagrame", "Borie Boire", ""],
+  ["Aléatoire", "".join([chr(random.randint(97,122)) for i in range(50)]) + " " + "".join([chr(random.randint(97,122)) for i in range(2)]), "" ],
+  ["Aléatoire", "".join([chr(random.randint(97,122)) for i in range(50)]) + " " + "".join([chr(random.randint(97,122)) for i in range(2)]), "" ],
+  ["Aléatoire", "".join([chr(random.randint(97,122)) for i in range(50)]) + " " + "".join([chr(random.randint(97,122)) for i in range(2)]), "" ],
+  ["Aléatoire", "".join([chr(random.randint(97,122)) for i in range(50)]) + " " + "".join([chr(random.randint(97,122)) for i in range(3)]), "" ],
+  ["Aléatoire", "".join([chr(random.randint(97,122)) for i in range(50)]) + " " + "".join([chr(random.randint(97,122)) for i in range(3)]), "" ],
   ["Aléatoire", "".join([chr(random.randint(97,122)) for i in range(50)]) + " " + "".join([chr(random.randint(97,122)) for i in range(3)]), "" ] ]
 ==
 
