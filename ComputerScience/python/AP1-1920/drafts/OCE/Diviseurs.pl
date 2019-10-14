@@ -10,6 +10,7 @@ entier = int(input())
 chaine=""
 somme=0
 
+
 ==
 
 text==  
@@ -19,7 +20,8 @@ Ecrire un programme qui : <br>
 * On rappelle qu'un nombre est parfait si la somme de ses diviseurs est égale au double du nombre. <br>
   Par exemple, 6 a pour diviseurs 1, 2, 3 et 6. Leur somme fait 12 = 6 * 2 <br>
 
-Du code vous est fourni pour vous aider
+Vouc compléterez le code suivant pour créer votre programme.
+
 ==
 
 soluce==
