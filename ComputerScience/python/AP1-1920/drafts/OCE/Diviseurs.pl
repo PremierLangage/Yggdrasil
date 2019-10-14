@@ -22,13 +22,7 @@ Par exemple, 6 a pour diviseurs 1, 2, 3 et 6. Leur somme fait 12 = 6 * 2
 ==
 
 soluce==
-p=int(input())
-q=int(input())
-for i in range(p):
-    ligne=""
-    for j in range(q):
-        ligne += "("+str(i+1)+","+str(j+1)+") "
-    print(ligne)
+
 ==
 
 mplsoluce0==
