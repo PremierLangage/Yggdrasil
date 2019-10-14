@@ -10,7 +10,7 @@ On suppose qu'il existe une variables `n` de valeur entière strictement positiv
 Écrivez un programme qui affiche les `n` premières valeurs de la fonction factorielle
 sous la forme `n! = x` (une valeur par ligne).
 ___
-Pour `n = 4`, le programme devra par exemple afficher:
+Pour `n = 5`, le programme devra par exemple afficher:
 <pre><code>
 0! = 1
 1! = 1
@@ -50,4 +50,5 @@ import math
 print("\n".join(f"{i}! = {math.factorial(i)}" for i in range(n + 1)))
 del math
 ==
+
 
