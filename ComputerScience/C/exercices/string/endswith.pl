@@ -13,7 +13,7 @@ la chaîne **s** donnée en argument a pour suffixe la chaîîne **fin** passé 
 
 Vous devez écrire votre fonction sans rien utiliser des bibliothèques standards.
 
-  Rappel : une chaîne de caractères C est tout d'abord un tableau de
+  __Rappel :__ une chaîne de caractères C est tout d'abord un tableau de
   **char**. Une chaîne est donc manipulée par l'adresse de sa première
   lettre. Une chaîne de caractères C se termine toujours par le
   caractère **'\0'** qui encode justement la fin de la chaîne. C'est un
