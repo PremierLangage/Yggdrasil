@@ -2,8 +2,8 @@
 # Copyright 2017 DR <dr@univ-mlv.fr>
 
 author=Nicolas Borie
-title=Combien de caractères
-tag=string|function|loop|pointer
+title=Occurences de caractères
+tag=string|function|pointer
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
