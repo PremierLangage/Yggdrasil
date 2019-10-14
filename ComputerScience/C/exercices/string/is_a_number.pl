@@ -1,14 +1,16 @@
 # Copyright 2017 Nicolas Borie <nicolas.borie@u-pem.fr>
+#
+#
+
 author=Nicolas Borie
-name=Reconnaître un nombre
 title=Reconnaître un nombre
 tag=string
-extends=/ComputerScience/C/template/autograderC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-Écrire une fonction *is_a_number* qui prend en argument une chaîne de caractères C
-en ascii et retourne 1 si la chaine forme un nombre valide en base
-10. La fonction retournera 0 sinon.
+Écrire une fonction **is_a_number** qui prend en argument une chaîne 
+de caractères C (en ascii) et retourne 1 si la chaine forme un nombre 
+valide en base 10. La fonction retournera 0 sinon.
 
 On considéra comme valide tout entier positif ou negatif. Voici des
 entrées valides :
@@ -21,13 +23,14 @@ Voici des entrées non valides :
    
 ==
 
-code==
+editor.code==
 int is_a_number(char* s){
   /* votre code ici... */
 }
 ==
 
 solution==
+
 int is_a_number(char* s){
   int i=0;
 
@@ -45,6 +48,7 @@ int is_a_number(char* s){
 ==
 
 codeafter==
+
 #include <stdio.h>
 
 int main(int argc, char* argv[]){
@@ -58,13 +62,7 @@ int main(int argc, char* argv[]){
 }
 ==
 
-grader==
-from graderC import graderII
-import random
-
-
-tests = []
-
+tests==
 for i in range(10):
     c = str(random.randint(-1000, 1000))
     if (random.randint(0, 1) == 0):
@@ -76,5 +74,5 @@ for i in range(10):
             c = c + str(random.randint(-1000, 1000))
     tests.append(["Aléatoire", c, ""])
 
-graderII(tests)
 ==
+
