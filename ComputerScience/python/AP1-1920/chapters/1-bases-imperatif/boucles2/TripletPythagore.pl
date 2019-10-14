@@ -34,7 +34,7 @@ Exemple  :
 Entrez l'entier maximum : 30
 
 il y a 10 triplet(s) inférieur(s) à 30<br>
-
+<br>
 *D'après le "projet Euler"*
 ==
 
