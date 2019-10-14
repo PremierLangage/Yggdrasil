@@ -63,6 +63,12 @@ int main(int argc, char* argv[]){
 ==
 
 tests==
-[ ["Basique", "0", ""] ]
+[ ["Basique", "0", ""],
+  ["Centaines", "123", ""],
+  ["Avec des lettres", "12a0", ""],
+  ["Petit négatif", "-47", ""],
+  ["Très grand nombre", "12172364512235126361273223736", ""],
+  ["Fort négatif", "-999999999999999", ""],
+  ["Aléatoire", random.choice(["781","-1274","997421","-75.43","3.1415","12521z","-124b","82c12","-124b","-142c1","-12.21"]), ""] ]
 ==
 
