@@ -47,10 +47,11 @@ codeafter==
 
 int main(int argc, char* argv[]){
 
-  if (in(argv[1][0],argv[2]))
-    printf("la chaine  %s contient la lettre %c\n",argv[2],argv[1][0]);
+  if (substring(argv[1], argv[2]))
+    printf("%s contient le mot %s",argv[1], argv[2]);
   else
-    printf("la chaine  %s contient pas la lettre %c\n",argv[2],argv[1][0]);
+    printf("%s ne contient pas le mot %s",argv[1], argv[2]);
+
   return 0;
 }
 ==
