@@ -63,16 +63,6 @@ int main(int argc, char* argv[]){
 ==
 
 tests==
-for i in range(10):
-    c = str(random.randint(-1000, 1000))
-    if (random.randint(0, 1) == 0):
-        if (random.randint(0, 2) == 0):
-            c = c + chr(random.randint(97, 97+25))
-        elif (random.randint(0, 1) == 0):
-            c = chr(random.randint(97, 97+25)) + c
-        else:
-            c = c + str(random.randint(-1000, 1000))
-    tests.append(["Aléatoire", c, ""])
-
+[ ["Basique", "0", ""] ]
 ==
 
