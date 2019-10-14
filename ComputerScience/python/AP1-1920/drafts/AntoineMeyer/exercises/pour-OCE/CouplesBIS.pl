@@ -50,7 +50,7 @@ if "taboo" in dic:
 # Vérification dans le code de l'étudiant de la présence du needed
 if "needed" in dic:
     if not checktaboo(dic['needed'], student):
-        sandboxio.output(0, "ATTENTION : Le mot clef " + dic['needed'] + " est demandé.")
+        sandboxio.output(0, "ATTENTION : Le mot clef " + dic['needed'] + " est demandé.\n" + student)
         sys.exit(1)
 
 begin_test_group("Facile")
