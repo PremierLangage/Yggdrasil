@@ -39,7 +39,7 @@ match.nodes.append({"id": "t3", "content": "une main au poker Texas Hold'em", "t
 expected.append({ "source": "s3", "target": "t3" })
 
 match.nodes.append({"id": "s4", "content": "struct node* root;", "source": True})
-match.nodes.append({"id": "t4", "content": "un graphe", "target": True})
+match.nodes.append({"id": "t4", "content": "un graphe enraciné", "target": True})
 expected.append({ "source": "s4", "target": "t4" })
 
 random.shuffle(match.nodes)
