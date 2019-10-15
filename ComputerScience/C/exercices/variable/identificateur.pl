@@ -10,11 +10,11 @@ import random
 group.items = []
 
 group.items.append({"id": "1", "content": "small_tree" })
-group.items.append({"id": "2", "content": "_s_p_s_" })
+group.items.append({"id": "2", "content": "s_p_s_" })
 group.items.append({"id": "3", "content": "call" })
 group.items.append({"id": "4", "content": "__" })
 group.items.append({"id": "5", "content": "max3" })
-group.items.append({"id": "6", "content": "one" })
+group.items.append({"id": "6", "content": "_one" })
 
 group.items.append({"id": "21", "content": "3call" })
 group.items.append({"id": "22", "content": "12ABA21" })
