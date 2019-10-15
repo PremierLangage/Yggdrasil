@@ -29,7 +29,12 @@ Ecrivez une fonction "combat" qui reçoit en paramétre les "endurances" des deu
 4 en cas d'égalité on recommence les lancez de dés, <br>
 5 quand l'un des deux adversaires voit son endurance réduite à 0 la fonction retourne les deux endurances.<br> 
 <br>
-Vous écrirez ensuite un programme qui utilise cette fonction 
+<br>
+Vous écrirez ensuite un programme qui fera les actions suivantes : <br>
+1 créer deux adversaires d'endurance aléatoire
+2 appeler la fonction combat
+3 récupérer le résultat de la fonction
+4 afficher le vainceur
 
 
 
