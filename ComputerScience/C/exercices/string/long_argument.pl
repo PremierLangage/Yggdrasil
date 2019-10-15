@@ -37,7 +37,7 @@ int main(int argc, char* argv[]){
 
   for(i=2 ; i<argc ; i++){
     if(strlen(argv[i]) > strlen(argv[ind_max]))
-      ind_max = 1;
+      ind_max = i;
   }
 
   printf("%s\n", argv[ind_max]);
@@ -55,4 +55,5 @@ tests==
 	["Complexe", "'argument en plusieurs mots' mot_unique", ""],
   ["Aléatoire", " ".join(["".join([chr(random.randint(97,122)) for i in range(random.randint(1,15))]) for i in range(1, 8)]), ""] ]
 ==
+
 
