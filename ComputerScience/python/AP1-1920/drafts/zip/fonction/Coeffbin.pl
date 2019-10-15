@@ -56,7 +56,7 @@ def combinaison(n,p):
 n=int(input("n"))
 if n<0:
     print("non défini")
-else
+else:
     s=""
     for p in range(n+1):
         s+=str(int(combinaison(n,p)))+" "
