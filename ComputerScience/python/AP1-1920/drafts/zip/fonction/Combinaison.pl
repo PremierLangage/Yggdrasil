@@ -12,7 +12,7 @@ Si l'entier est négatif la fonction renvoie *None*
 Ecrire une fontion *combinaison(n,p)* qui reçoit deux entiers positif 
 et renvoie le nombre decombinaions de p éléments choisis parmi n éléments.
 
-On rappelle que ce nombre vaut $%\frac{\fact{n}}{k} %$
+On rappelle que ce nombre vaut $%\frac{n!}{n! \times(n-p)!} %$
 
 
 ==
