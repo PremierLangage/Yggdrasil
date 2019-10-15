@@ -33,6 +33,13 @@ Remarque
 Cette méthode n'est pas efficace pour de grandes valeurs de n et p (elle effectue beaucoup de calculs inutiles).
 Nous en étudirons une meilleure plus tard.
 ==
+before==
+import random
+n=random.randint(4,7)
+mplsoluce3="Test aléatoire\n"
+mplsoluce3 += str(n)
+==
+
 soluce==
 def factoriel(n):
     if n<0:
@@ -45,6 +52,7 @@ def combinaison(n,p):
     if n<0 or p>n:
         return 0
     return factoriel(n)/(factoriel(n-p)*factoriel(p))
+
 n=int(input("n"))
 if n<0:
     print("non défini")
@@ -59,9 +67,19 @@ mplsoluce0==
 classique
 3
 ==
+mplsoluce1==
+negatif
+-9
+==
 
-
-
+mplsoluce2==
+nul
+0
+==
+mplsoluce4==
+un
+1
+==
 
 
 
