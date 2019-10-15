@@ -1,12 +1,11 @@
-# Copyright 2017 Nicolas Borie <nicolas.borie@u-pem.fr>
+# Copyright 2017-2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
 # Mettre les lettres en majuscule dans une chaîne
 
 author=Nicolas Borie
-name=Mettre les lettres en majuscule dans une chaîne
 title=Mettre les lettres en majuscule dans une chaîne
 tag=string|function
-extends=/ComputerScience/C/template/autograderC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
@@ -19,7 +18,7 @@ lettres minuscules ne seront pas affectés par la fonction.
     
 ==
 
-code==
+editor.code==
 void to_upper_in_string(...){
   ...
 }
@@ -27,6 +26,7 @@ void to_upper_in_string(...){
 ==
 
 solution==
+
 void to_upper_in_string(char* s){
   int i;
   for(i=0 ; s[i]!='\0' ; i++){
@@ -38,6 +38,7 @@ void to_upper_in_string(char* s){
 ==
 
 codeafter==
+
 #include <stdio.h>
 
 int main(int argc, char* argv[]){
@@ -49,15 +50,13 @@ int main(int argc, char* argv[]){
 ==
 
     
-grader==
-from graderC import graderII
-
-tests = [["Basique", "pouet", ""],
-         ["Chaîne mélangé", '"PoUeT"', ""],
-         ["Chaîne vide", '""', ""],
-	 ["Trois mots", '"Pouet pouet TAGAda"', ""],
-         ["Long mot", "Anti-ConstitutionnelleMent", ""],
-	 ["Grand mélange ascii", '"dK$#%djsDFG*&dwr#$-cwFWwdW $#e"', ""]]
-
-graderII(tests)
+tests==
+[ ["Basique", "pouet", ""],
+  ["Chaîne mélangé", '"PoUeT"', ""],
+  ["Chaîne vide", '""', ""],
+  ["Trois mots", '"Pouet pouet TAGAda"', ""],
+  ["Long mot", "Anti-ConstitutionnelleMent", ""],
+	["Grand mélange ascii", '"dK$#%djsDFG*&dwr#$-cwFWwdW $#e"', ""],
+  ["Aléatoire", "".join([chr(random.randint(97,122)-(32*random.randint(0,1))) for i in range(20)]), ""] ]
 ==
+
