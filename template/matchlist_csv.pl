@@ -18,26 +18,9 @@ cs=colsource
 ct=coltarget
 
 items=rd.sample(rows,n)
-match.nodes = []
-expected = []
-for i in range(len(items)):
-    sourceId = "source" + str(i)
-    targetId = "target" + str(i)
 
-    match.nodes.append({
-        "id": sourceId,
-        "content": items[i][ct],
-        "source": True,
-    })
+MatchList_loadContent(match,items[:][cs],items[:][ct])
 
-    match.nodes.append({
-        "id": targetId,
-        "content": items[i][cs],
-        "target": True,
-    })
-    expected.append({ "source": sourceId, "target": targetId })
-
-rd.shuffle(match.nodes)
 ==
 
 title==
