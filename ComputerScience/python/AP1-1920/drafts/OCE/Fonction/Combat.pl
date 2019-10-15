@@ -25,7 +25,7 @@ Ecrivez une fonction "combat" qui reçoit en paramétre les "endurances" et les 
 <br>
 1 en fonction de leur habilité, les deux adversaires lancent les dés :<br>
 * 1 dés pour une habilité inférieur ou égale à 10 <br>
-* 2 dés pour une habilité supérieure 10 et inférieur stricte à 18 <br>
+* 2 dés pour une habilité supérieure à 10 et inférieur stricte à 18 <br>
 * 3 dés 3 au delà d'une habilité de 17 <br>
 2 on compare le résultat, <br>
 3 la différence des deux lancés est soustrait au points d'endurance de l'adversaire dont le lancé est inférieur, <br>
