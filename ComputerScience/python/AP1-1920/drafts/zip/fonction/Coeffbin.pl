@@ -37,14 +37,21 @@ def factoriel(n):
         return None
     f=1
     for i in range(n):
-        f+=i+1 
+        f*=i+1 
     return f 
 def combinaison(n,p):
     if n<0 or p>n:
         return 0
-    return factoriel(n)/factoriel(n-p)factoriel(p)
-k=int(input("n"))
-print(factoriel(k))
+    return factoriel(n)/(factoriel(n-p)*factoriel(p))
+n=int(input("n"))
+if n<0:
+    print("non défini")
+else
+    s=""
+    for p in range(n+1):
+        s+=str(int(combinaison(n,p)))+" "
+    print(s)
+
 ==
 mplsoluce0==
 classique
