@@ -33,7 +33,7 @@ Ecrivez une fonction "combat" qui reçoit en paramétre les "endurances" et les 
 5 quand l'un des deux adversaires voit son endurance réduite à 0 la fonction retourne les deux endurances.<br> 
 <br>
 Vous écrirez ensuite un programme qui fera les actions suivantes : <br>
-1 créer deux adversaires d'endurance aléatoire <br>
+1 créer deux adversaires d'endurance et d'habilité aléatoire <br>
 2 appeler la fonction combat <br>
 3 récupérer le résultat de la fonction <br>
 4 afficher le vainceur <br>
