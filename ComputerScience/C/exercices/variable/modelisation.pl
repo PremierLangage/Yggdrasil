@@ -2,7 +2,7 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-title=Variable et modéélisation
+title=Variables et modélisation
 
 
 author=Nicolas Borie
