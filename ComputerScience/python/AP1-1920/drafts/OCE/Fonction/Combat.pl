@@ -16,7 +16,7 @@ print("avec(1)",??,"avec(2)",??)
 ==
 
 text==  
-Cet exercice vous met dans la position d'un concepteur de jeu de rôle.<br>
+Dans cet exercice VOUS êtes un concepteur de jeu de rôle.<br>
 
 Ce qu'on vous demande ici est de programmer la partie "combat". <br>
 Ce sont en effet des choses qui arrivent quand vous rencontrez un enemi avec lequel il est impossible de discuter ! <br>
@@ -28,8 +28,8 @@ Ecrivez une fonction "combat" qui reçoit en paramétre les "endurances" des deu
 3 la différence des deux lancés est soustrait au points d'endurance de l'adversaire dont le lancé est inférieur <br>
 4 en cas d'égalité on recommence les lancez de dés <br>
 5 quand l'un des deux adversaires voit son endurance réduite à 0 la fonction retourne les deux endurances.<br> 
-A vous de prévoir le cas où les deux endurances sont réduite à 0 <br>
 <br>
+Vous écrirez un programme qui utilise cette fonction 
 
 
 
