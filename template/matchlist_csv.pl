@@ -18,8 +18,9 @@ cs=colsource
 ct=coltarget
 
 items=rd.sample(rows,n)
-
-MatchList_loadContent(match,items[:][cs],items[:][ct])
+source=[item[cs] for item in items]
+target=[item[ct] for item in items]
+MatchList_loadContent(match,source,target)
 
 ==
 
