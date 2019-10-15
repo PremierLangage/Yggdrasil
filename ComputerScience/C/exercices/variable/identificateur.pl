@@ -27,6 +27,7 @@ group.items.append({"id": "23", "content": "7_car" })
 random.shuffle(group.items)
 ==
 
+author = Nicolas Borie
 title = Identificateurs des variables en C
 
 text==
