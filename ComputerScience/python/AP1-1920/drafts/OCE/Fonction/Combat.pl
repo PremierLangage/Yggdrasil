@@ -21,12 +21,18 @@ Cet exercice vous met dans la position d'un concepteur de jeu de rôle.<br>
 Ce qu'on vous demande ici est de programmer la partie "combat". <br>
 Ce sont en effet des choses qui arrivent quand vous rencontrez un enemi avec lequel il est impossible de discuter ! <br>
 <br>
-Ecrivez une fonction qui vous permettra de combattre n'importe quel enemi du jeu de la façon suivante : 
+Ecrivez une fonction "combat" qui reçoit en paramétre les "endurances" des deux protagonistes et organise le combat de la manière suivante :<br>
+<br>
+1 les deux adversaires lancent un dés,<br>
+2 on compare le résultat <br>
+3 la différence des deux lancés est soustrait au points d'endurance de l'adversaire dont le lancé est inférieur <br>
+4 en cas d'égalité on recommence les lancez de dés <br>
+5 quand l'un des deux adversaires voit son endurance réduite à 0 la fonction retourne les deux endurances.<br> 
+A vous de prévoir le cas où les deux endurances sont réduite à 0 <br>
 
-1 Les deux adversaires lancent un dés,
-2 on compare le résultat 
-3 la différence des deux lancés est soustrait au points d'endurance de l'adversaire dont le lancé est inférieur
-4 en cas d'égalité on recommence les lancez de dés
+
+
+
 
 ==
 soluce==
