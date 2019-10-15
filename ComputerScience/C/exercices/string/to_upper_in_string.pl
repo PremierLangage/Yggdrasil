@@ -57,8 +57,8 @@ tests==
   ["Trois mots", '"Pouet pouet TAGAda"', ""],
   ["Long mot", "Anti-ConstitutionnelleMent", ""],
 	["Grand mélange ascii", '"dK$#%djsDFG*&dwr#$-cwFWwdW $#e"', ""],
-  ["Aléatoire", "'"+"".join([chr(random.randint(48,126)) for i in range(20)])+"'", ""],
-  ["Aléatoire", "'"+"".join([chr(random.randint(48,126)) for i in range(20)])+"'", ""],
-  ["Aléatoire", "'"+"".join([chr(random.randint(48,126)) for i in range(20)])+"'", ""] ]
+  ["Aléatoire", "'"+"".join([chr(random.randint(65,122)) for i in range(20)])+"'", ""],
+  ["Aléatoire", "'"+"".join([chr(random.randint(65,122)) for i in range(20)])+"'", ""],
+  ["Aléatoire", "'"+"".join([chr(random.randint(65,122)) for i in range(20)])+"'", ""] ]
 ==
 
