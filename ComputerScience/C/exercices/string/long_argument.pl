@@ -11,7 +11,8 @@ text==
 
 Écrire un programme C qui identifie et affiche son argument le plus long. 
 Une fois ce dernier identifié, il suffit de l'afficher sur la sortie standard 
-**sans oublier d'aller à la ligne après l'affichage**.
+**sans oublier d'aller à la ligne après l'affichage**. Si plusieurs arguments
+possèdent la taille maximale, il faudra alors afficher le premier plus grand.
 
 ==
 
