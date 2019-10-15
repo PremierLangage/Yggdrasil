@@ -9,11 +9,17 @@ text==
 Ecrire une fontion *factoriel(n)* qui reçoit un entier positif et renvoie sa factorielle.
 
 Si l'entier est négatif la fonction renvoie *None*
+
 Ecrire une fontion *combinaison(n,p)* qui reçoit deux entiers positif 
-et renvoie le nombre decombinaions de p éléments choisis parmi n éléments.
+et renvoie le nombre de combinaions de p éléments choisis parmi n éléments.
+$%\binom{n}{p}%$
+On rappelle que ce nombre vaut $%\frac{n!}{n! \times(n-p)!} %$ si $%0 \le p\le n %$ et 0 sinon.
+Utilisez ces fonctions pour écrire un programme qui lit un entier  f k et affiche une ligne
+indiquant le développement de $%(a+b)^n%$.
 
-On rappelle que ce nombre vaut $%\frac{n!}{n! \times(n-p)!} %$
+Exemple
 
+Entrez un entier 
 
 ==
 soluce==
@@ -32,6 +38,7 @@ mplsoluce0==
 classique
 3
 ==
+
 
 
 
