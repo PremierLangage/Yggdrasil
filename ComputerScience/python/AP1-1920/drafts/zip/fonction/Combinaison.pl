@@ -1,19 +1,21 @@
 
 # author zip
-uissance sup
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 title = triangle pas
 text==  
 
-Ecrire une fontion *factoriel()* qui reçoit un entier positif et renvoie saf actorielle.
+Ecrire une fontion *factoriel(n)* qui reçoit un entier positif et renvoie sa factorielle.
 
 Si l'entier est négatif la fonction renvoie *None*
+Ecrire une fontion *combinaison(n,p)* qui reçoit deux entiers positif 
+et renvoie le nombre decombinaions de p éléments choisis parmi n éléments.
+
+On rappelle que ce nombre vaut $%\frac{\fact{n}}{k} %$
 
 
 ==
-
 soluce==
 def factoriel(n):
     if n<0:
@@ -30,5 +32,6 @@ mplsoluce0==
 classique
 3
 ==
+
 
 
