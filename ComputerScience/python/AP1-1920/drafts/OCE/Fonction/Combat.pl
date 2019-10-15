@@ -4,7 +4,7 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
-title = Combatre un adversaire
+title = Conception d'un jeu de rôle
 
 code==
 n= int(input("Entrez un nombre : "))
@@ -16,11 +16,11 @@ print("avec(1)",??,"avec(2)",??)
 ==
 
 text==  
-Imaginez-vous dans un jeu de rôle ! <br>
+Cet exercice vous met dans la position d'un concepteur de jeu de rôle.<br>
 
-Vous rencontrez un enemi avec lequel il est impossible de discuter ... un prof de math par exemple. 
-C'est un adversaire particulièrement redoutable et vous n'avez pas le choix : il faut sauver votre peau !
-
+Ce qu'on vous demande ici est de programmer la partie "combat". <br>
+Ce sont en effet des choses qui arrivent quand vous rencontrez un enemi avec lequel il est impossible de discuter ! <br>
+<br>
 Ecrivez une fonction qui vous permettra de combattre n'importe quel enemi du jeu de la façon suivante : 
 
 1 Les deux adversaires lancent un dés,
@@ -35,6 +35,7 @@ soluce==
 plsoluce==
 
 ==
+
 
 
 
