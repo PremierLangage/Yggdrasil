@@ -24,7 +24,7 @@ evaluator ==
 from utilscomp import RadioGroup_evalByContent
 
 score=RadioGroup_evalByContent(radio,sol)
-grade=(score,type(radio))
+grade=(score,str(type(radio)))
 ==
 
 
