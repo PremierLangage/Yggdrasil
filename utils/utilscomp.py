@@ -24,13 +24,13 @@ def MatchList_loadContent(match,source,target):
 
         match.nodes.append({
             "id": sourceId,
-            "content": items[i][ct],
+            "content": source[i],
             "source": True,
         })
 
         match.nodes.append({
             "id": targetId,
-            "content": items[i][cs],
+            "content": target[i],
             "target": True,
         })
         expected.append({ "source": sourceId, "target": targetId })
