@@ -7,6 +7,9 @@ title = Couples (X,Y)
 
 taboo=while
 needed=for
+I $ comuoh
+
+
 
 text==  
 Écrivez un script qui affiche tous les couples ( x , y ), x étant un entier positif compris entre 1 et p et y un entier positif 
@@ -17,6 +20,7 @@ L’affichage doit se faire comme sur l’exemple suivant, qui correspond à p =
 ( 1, 1 ) ( 1, 2 ) ( 1, 3 ) ( 1, 4 ) ( 1, 5 )<br>
 ( 2, 1 ) ( 2, 2 ) ( 2, 3 ) ( 2, 4 ) ( 2, 5 )<br>
 ( 3, 1 ) ( 3, 2 ) ( 3, 3 ) ( 3, 4 ) ( 3, 5 )<br>
+<img src="{{ I }}">
 ==
 
 grader== #|python|
@@ -74,6 +78,7 @@ begin_test_group("Grand")
     assert_output(f"{couple(30,46)}\n")
 end_test_group()
 ==
+
 
 
 
