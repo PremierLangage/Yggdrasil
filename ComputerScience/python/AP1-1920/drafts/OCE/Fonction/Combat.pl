@@ -34,10 +34,10 @@ Ecrivez une fonction "combat" qui reçoit en paramétre les "endurances" et les 
 <br>
 <br>
 Vous écrirez ensuite un programme qui fera les actions suivantes : <br>
-1 créer deux adversaires d'endurance aléatoire
-2 appeler la fonction combat
-3 récupérer le résultat de la fonction
-4 afficher le vainceur
+1 créer deux adversaires d'endurance aléatoire <br>
+2 appeler la fonction combat <br>
+3 récupérer le résultat de la fonction <br>
+4 afficher le vainceur <br>
 
 
 
