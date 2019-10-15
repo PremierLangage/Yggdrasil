@@ -13,17 +13,17 @@ before==
 import random
 group.items = []
 
-group.items.append({"id": "1", "content": "printf(\"Bonjour\n\")" })
+group.items.append({"id": "1", "content": "printf(\"Bonjour\n\") (le retour de cet appel)" })
 group.items.append({"id": "2", "content": "54" })
-group.items.append({"id": "3", "content": "malloc(53)" })
+group.items.append({"id": "3", "content": "malloc(53) (le retour de cet appel)" })
 group.items.append({"id": "4", "content": "une variable locale" })
 group.items.append({"id": "5", "content": "n'importe quelle expression non void" })
 group.items.append({"id": "6", "content": "i++" })
 group.items.append({"id": "7", "content": "l'adresse d'une variable" })
-group.items.append({"id": "8", "content": "free" })
+group.items.append({"id": "8", "content": "free (la fonction elle-même)" })
 
 group.items.append({"id": "21", "content": "void" })
-group.items.append({"id": "22", "content": "free(tab)" })
+group.items.append({"id": "22", "content": "free(tab) (le retour de cet appel)" })
 
 random.shuffle(group.items)
 ==
