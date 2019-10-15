@@ -27,7 +27,7 @@ chaîne.
 
 ==
 
-code==
+editor.code==
 int string_length(char* s){
   /* Votre code ici... */
 }
