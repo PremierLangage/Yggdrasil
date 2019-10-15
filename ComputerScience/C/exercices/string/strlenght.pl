@@ -14,6 +14,7 @@ caractères contenus dans la chaîne **s** donnée en argument. Vous
 devez écrire votre fonction sans rien utiliser des bibliothèques
 standards.
 
+<br />
 
 Pour rappel, une chaîne de caractères C est tout d'abord un tableau de
 **char**. Une chaîne est donc manipulée par l'adresse de son premier
@@ -22,6 +23,7 @@ caractère **'\0'** qui encode justement la fin de la chaîne. C'est un
 marqueur de fin de tableau car le langage C ne connait pas la longueur
 des tableaux.
 
+<br />
 
 Pour obtenir la longueur de la chaîne **s**, il faut ainsi compter le
 nombre de lettres apparaissant dans **s** avant le caractère de fin de
