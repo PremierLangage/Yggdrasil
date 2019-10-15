@@ -48,7 +48,7 @@ int main(int argc, char* argv[]){
 
 ==
 
-grader==
+tests==
 [ ["Basique", "argument1", ""],
   ["Sans argument", "", ""],
 	["Argument multiple", "12 pouet foo bar 1367235342534", ""],
