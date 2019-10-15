@@ -30,24 +30,10 @@ Ecrivez une fonction qui vous permettra de combattre n'importe quel enemi du jeu
 
 ==
 soluce==
-#import math
-croiss,decroi=0,0
-n=int(input("Entrez un nombre : ")) 
-if n<0:
-    print("erreur")
-else:
-    for i in range(1,n+1):
-        croiss+=1/(i*i)
-    for i in range(n,0,-1):
-        decroi+=1/(i*i)
-    print("avec(1)",croiss,"avec(2)",decroi)
-#print(math.pi*math.pi/6)
+
 ==
 plsoluce==
-erreur | -4
-un | 1
-petit | 14
-grand | 10001
+
 ==
 
 
