@@ -6,7 +6,7 @@ radio =: RadioGroup
 
 before ==
 import random as rd
-from utilscomp import RadioGroup_loadContent, RadioGroup_evalByContent
+from utilscomp import RadioGroup_loadContent
 choices=rd.sample(list(range(50)),5)
 sol=str(min(choices))
 RadioGroup_loadContent(radio,choices)
