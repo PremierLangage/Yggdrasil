@@ -1,6 +1,7 @@
 @ /utils/sandboxio.py
 @ /builder/before2.py [builder.py]
 @ /grader/evaluator2.py [grader.py]
+@ /utils/utilscomp.py [utilscomp.py]
 
 title = Basic player
 
@@ -46,5 +47,6 @@ extrajs==
     }
 </script>
 ==
+
 
 
