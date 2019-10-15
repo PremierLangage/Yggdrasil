@@ -21,6 +21,8 @@ form ==
 ==
 
 evaluator ==
+from utilscomp import RadioGroup_evalByContent
+
 score=RadioGroup_evalByContent(radio,sol)
 grade=(score,"")
 ==
