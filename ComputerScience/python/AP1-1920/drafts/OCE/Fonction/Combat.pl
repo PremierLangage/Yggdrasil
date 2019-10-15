@@ -16,23 +16,18 @@ print("avec(1)",??,"avec(2)",??)
 ==
 
 text==  
-On veut comparer les valeurs  (informatique) de deux séries (identiques) qui convergent (mathématiquement) vers $%\frac{\pi^2}{6}%$
+Imaginez-vous dans un jeu de rôle ! <br>
 
+Vous rencontrez un enemi avec lequel il est impossible de discuter ... un prof de math par exemple. 
+C'est un adversaire particulièrement redoutable et vous n'avez pas le choix : il faut sauver votre peau !
 
-$%(1): \sum\limits_{i=1}^{+\infty}\frac{1}{i^2}%$
+Ecrivez une fonction qui vous permettra de combattre n'importe quel enemi du jeu de la façon suivante : 
 
+1 Les deux adversaires lancent un dés,
+2 on compare le résultat 
+3 la différence des deux lancés est soustrait au points d'endurance de l'adversaire dont le lancé est inférieur
+4 en cas d'égalité on recommence les lancez de dés
 
-$%\(2):\sum\limits_{+\infty}^1 \frac{1}{i^2}%$
- 
-
-Ecrire un programme qui lit un entier positif n,
- puis affiche les sommes 
-partielle (i=1 à n et i=n à 1, bornes comprises)
- pour chaque série.
-
-Si l'entier n est négatif, on affiche "erreur"
-
-**Testez dans python, en dehors de Premier Langage (pour n=10,100,10000) et réfléchissez à une explication**
 ==
 soluce==
 #import math
