@@ -13,7 +13,7 @@ before==
 import random
 group.items = []
 
-group.items.append({"id": "1", "content": "printf("Bonjour\n")" })
+group.items.append({"id": "1", "content": "printf(\"Bonjour\n\")" })
 group.items.append({"id": "2", "content": "54" })
 group.items.append({"id": "3", "content": "malloc(53)" })
 group.items.append({"id": "4", "content": "une variable locale" })
