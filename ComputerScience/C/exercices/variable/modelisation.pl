@@ -26,9 +26,17 @@ import random
 match.nodes = []
 expected = []
 
-match.nodes.append({"id": "s1", "content": "un tableau de file", "source": True})
+match.nodes.append({"id": "s1", "content": "Fifo tab[];", "source": True})
 match.nodes.append({"id": "t1", "content": "un péage autoroutier avec plusieurs guichets", "target": True})
 expected.append({ "source": "s1", "target": "t1" })
+
+match.nodes.append({"id": "s2", "content": "int* tab;", "source": True})
+match.nodes.append({"id": "t2", "content": "un ensenble de nombres", "target": True})
+expected.append({ "source": "s2", "target": "t2" })
+
+match.nodes.append({"id": "s3", "content": "struct card[2];", "source": True})
+match.nodes.append({"id": "t3", "content": "une main au poker Texas Hold'em", "target": True})
+expected.append({ "source": "s3", "target": "t2" })
 
 random.shuffle(match.nodes)
 ==
