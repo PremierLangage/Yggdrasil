@@ -21,11 +21,6 @@ form ==
 ==
 
 evaluator ==
-n=len(radio.items)
-==
-
-
-evaluator ==
 score=RadioGroup_evalByContent(radio,sol)
 feedback=""
 ==
