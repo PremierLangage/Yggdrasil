@@ -42,7 +42,11 @@ def RadioGroup_loadContent(radio,content):
     radio.items=([{"id":str(id),"content":str(item)} for id,item in enumerate(content)])
 
 def RadioGroup_evalByContent(radio,sol):
-
+    for item in radio.items:
+        if item['content']==sol:
+            item['css'] = 'success-state anim-fade'
+            if item['id']==radio.selection:
+                return 100
     return 0
 
 
