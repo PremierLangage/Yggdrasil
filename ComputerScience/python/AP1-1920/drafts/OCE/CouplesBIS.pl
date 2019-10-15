@@ -7,7 +7,7 @@ title = Couples (X,Y)
 
 taboo=while
 needed=for
-I $ comuoh
+I $= comuoh
 
 
 
