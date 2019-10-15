@@ -24,8 +24,8 @@ sortlist.items %= #|json|
     { "id": "3", "content": "<b>short tee[2];</b>" },
     { "id": "4", "content": "<b>char short_name[7];</b>" },
     { "id": "5", "content": "<b>char* name;</b>" },
-    { "id": "6", "content": "<b>float cos_sin_tan[3];</b>" }
-    { "id": "7", "content": "<b>double d[2];</b>" }
+    { "id": "6", "content": "<b>float cos_sin_tan[3];</b>" },
+    { "id": "7", "content": "<b>double d[2];</b>" },
     { "id": "8", "content": "<b>int tab[5];</b>" }
 ]
 ==
