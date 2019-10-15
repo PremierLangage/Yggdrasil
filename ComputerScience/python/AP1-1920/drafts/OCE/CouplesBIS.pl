@@ -8,7 +8,7 @@ title = Couples (X,Y)
 taboo=while
 needed=for
 
-url =$ comuoh
+url =$ Diviseur.pl
 
 
 
