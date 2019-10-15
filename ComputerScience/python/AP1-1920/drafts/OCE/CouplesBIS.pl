@@ -21,7 +21,7 @@ L’affichage doit se faire comme sur l’exemple suivant, qui correspond à p =
 ( 1, 1 ) ( 1, 2 ) ( 1, 3 ) ( 1, 4 ) ( 1, 5 )<br>
 ( 2, 1 ) ( 2, 2 ) ( 2, 3 ) ( 2, 4 ) ( 2, 5 )<br>
 ( 3, 1 ) ( 3, 2 ) ( 3, 3 ) ( 3, 4 ) ( 3, 5 )<br>
-<img src="{{ I }}">
+<img src="{{ url }}">
 ==
 
 grader== #|python|
