@@ -24,12 +24,12 @@ Ce sont en effet des choses qui arrivent quand vous rencontrez un enemi avec leq
 Ecrivez une fonction "combat" qui reçoit en paramétre les "endurances" des deux protagonistes et organise le combat de la manière suivante :<br>
 <br>
 1 les deux adversaires lancent un dés,<br>
-2 on compare le résultat <br>
-3 la différence des deux lancés est soustrait au points d'endurance de l'adversaire dont le lancé est inférieur <br>
-4 en cas d'égalité on recommence les lancez de dés <br>
+2 on compare le résultat, <br>
+3 la différence des deux lancés est soustrait au points d'endurance de l'adversaire dont le lancé est inférieur, <br>
+4 en cas d'égalité on recommence les lancez de dés, <br>
 5 quand l'un des deux adversaires voit son endurance réduite à 0 la fonction retourne les deux endurances.<br> 
 <br>
-Vous écrirez un programme qui utilise cette fonction 
+Vous écrirez ensuite un programme qui utilise cette fonction 
 
 
 
