@@ -42,7 +42,7 @@ error = 0
 for item in group.items:
     checked = item['checked']
     id_int = int(item['id'])
-    if if_int < 20:
+    if id_int < 20:
         total += 1
         item['css'] = 'error-state'
         if checked:
