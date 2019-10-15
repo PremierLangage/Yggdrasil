@@ -1,12 +1,11 @@
-# Copyright 2016 Nicolas Borie <nicolas.borie@u-pem.fr>
+# Copyright 2016-2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
 # Calcul de la longueur d'une chaîne de caractères C
 
 author=Nicolas Borie
-name=longueur d'une chaîne de caractères
 title=longueur d'une chaîne de caractères
 tag=string
-extends=/ComputerScience/C/template/autograderC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
@@ -36,6 +35,7 @@ int string_length(char* s){
 ==
 
 solution==
+
 int string_length(char* s){
   int len;
   
@@ -46,6 +46,7 @@ int string_length(char* s){
 ==
 
 codebefore==
+
 #include <stdio.h>
 
 int string_length(char* s);
@@ -58,14 +59,12 @@ int main(int argc, char* argv[]){
 
 ==
 
-grader==
-from graderC import graderII
 
-tests = [["Petit mot", "mot", ""], 
-         ["Un mot", "Bonjour", ""], 
-         ["Deux mots", '"ca va?"', ""], 
-         ["Mot vide", '""', ""], 
-         ["Long mot", "Anti-constitutionnellement", ""]] 
-
-graderII(tests)
+tests==
+[ ["Petit mot", "mot", ""], 
+  ["Un mot", "Bonjour", ""], 
+  ["Deux mots", '"ca va?"', ""], 
+  ["Mot vide", '""', ""], 
+  ["Long mot", "Anti-constitutionnellement", ""] ] 
 ==
+
