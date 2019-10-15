@@ -38,3 +38,7 @@ def MatchList_loadContent(match,source,target):
     
 # RadioGroup
 
+def RadioGroup_loadContent(radio,content):
+    radio.items=([{"id":str(id),"content":str(item)} for id,item in enumerate(content)])
+
+
