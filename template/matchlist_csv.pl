@@ -13,15 +13,11 @@ from utilscomp import MatchList_loadContent
 with open('data.csv','r') as file:
     rows=list(csv.reader(file,delimiter=','))
 
-n=nitems
-cs=colsource
-ct=coltarget
+items=rd.sample(rows,nitems)
+source=[item[colsource] for item in items]
+target=[item[coltarget] for item in items]
 
-items=rd.sample(rows,n)
-source=[item[cs] for item in items]
-target=[item[ct] for item in items]
 MatchList_loadContent(match,source,target)
-
 ==
 
 title==
