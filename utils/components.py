@@ -1,3 +1,4 @@
+import random as rd
 
 def checkradio(radio,idsol):
     S=radio.selection
@@ -11,5 +12,30 @@ def checkradio(radio,idsol):
         elif item['id'] == idsol:
             item['css'] = 'success-state'
     return (0,"")
+
+# MatchList
+
+def MatchList_loadContent(match,source,target):
+    match.nodes = []
+    expected = []
+    for i in range(len(items)):
+        sourceId = "source" + str(i)
+        targetId = "target" + str(i)
+
+        match.nodes.append({
+            "id": sourceId,
+            "content": items[i][ct],
+            "source": True,
+        })
+
+        match.nodes.append({
+            "id": targetId,
+            "content": items[i][cs],
+            "target": True,
+        })
+        expected.append({ "source": sourceId, "target": targetId })
+
+    rd.shuffle(match.nodes)
     
+
 
