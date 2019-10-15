@@ -37,10 +37,9 @@ Vous écrirez ensuite un programme qui fera les actions suivantes : <br>
 2 appeler la fonction combat <br>
 3 récupérer le résultat de la fonction <br>
 4 afficher le vainceur <br>
-
-
-
-
+<br>
+La fonction "combat" utilisera la fonction "rand...(1,6) pour simuler un lancer de dés <br>
+Le programme principal fera appel à la fonction "rand (1,20)" pour définir l'endurance et l'habilité des béligérants<br>
 
 ==
 soluce==
