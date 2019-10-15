@@ -30,8 +30,8 @@ non défini<br>
 
 Remarque
 
-Cette méthode n'est pas efficace pour de grandes valeurs de n et p (elle effectue beaucoup de calculs inutiles).
-Nous en étudirons une meilleure plus tard.
+**Cette méthode n'est pas efficace pour de grandes valeurs de n et p (elle effectue beaucoup de calculs inutiles).
+Nous en étudirons une meilleure plus tard.**
 ==
 before==
 import random
