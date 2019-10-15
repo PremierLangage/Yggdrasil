@@ -1,3 +1,7 @@
+# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
+#
+#
+
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
