@@ -18,7 +18,7 @@ On rappelle que ce nombre vaut $%\frac{n!}{p! \times(n-p)!} %$ si $%0 \le p\le n
 Utilisez ces fonctions pour écrire un programme qui lit un entier n et, s'il est positif, affiche une ligne
 indiquant les coefficients de développement de $%(a+b)^n%$.
 
-Le programme affiche "non défini" si n est négatif
+Le programme affiche "non défini" si n est négatif<br>
 Exemples
 
 Entrez un entier positif :0 <br>
