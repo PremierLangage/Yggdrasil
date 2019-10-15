@@ -15,7 +15,7 @@ Une fois ce dernier identifié, il suffit de l'afficher sur la sortie standard
 
 ==
 
-code==
+editor.code==
 #include ...
 
 int main(...){
