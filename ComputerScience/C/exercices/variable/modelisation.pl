@@ -26,7 +26,7 @@ import random
 match.nodes = []
 expected = []
 
-match.nodes.append({"id": "s1", "content": "Fifo tab[];", "source": True})
+match.nodes.append({"id": "s1", "content": "Fifo tab[8];", "source": True})
 match.nodes.append({"id": "t1", "content": "un péage autoroutier avec plusieurs guichets", "target": True})
 expected.append({ "source": "s1", "target": "t1" })
 
