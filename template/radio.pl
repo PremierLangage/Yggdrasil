@@ -21,7 +21,6 @@ form ==
 ==
 
 evaluator ==
-score=RadioGroup_evalByContent(radio,sol)
 feedback=""
 ==
 
