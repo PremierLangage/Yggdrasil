@@ -29,6 +29,7 @@ Ecrivez une fonction "combat" qui reçoit en paramétre les "endurances" des deu
 4 en cas d'égalité on recommence les lancez de dés <br>
 5 quand l'un des deux adversaires voit son endurance réduite à 0 la fonction retourne les deux endurances.<br> 
 A vous de prévoir le cas où les deux endurances sont réduite à 0 <br>
+<br>
 
 
 
