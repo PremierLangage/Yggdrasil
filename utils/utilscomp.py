@@ -18,7 +18,7 @@ def checkradio(radio,idsol):
 def MatchList_loadContent(match,source,target):
     match.nodes = []
     expected = []
-    for i in range(len(items)):
+    for i in range(len(source)):
         sourceId = "source" + str(i)
         targetId = "target" + str(i)
 
