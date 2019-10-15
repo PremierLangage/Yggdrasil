@@ -1,12 +1,14 @@
 @ /utils/sandboxio.py
 @ /builder/before.py [builder.py]
 @ /grader/evaluator.py [grader.py]
+@ /utils/utilscomp.py [utilscomp.py]
 
 match =: MatchList
 
 before==
 import random as rd
 import csv
+from utilscomp import MatchList_loadContent
 
 with open('data.csv','r') as file:
     rows=list(csv.reader(file,delimiter=','))
@@ -73,5 +75,6 @@ if error == 0:
 else:
     grade = (0, '<span class="error-state">Bad answer, you made %d mistakes</span>' % error)
 ==
+
 
 
