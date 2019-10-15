@@ -6,7 +6,7 @@ radio =: RadioGroup
 
 before ==
 import random as rd
-from utilscomp import RadioGroup_loadContent
+from utilscomp import RadioGroup_loadContent,RadioGroup_evalByContent
 choices=rd.sample(list(range(50)),5)
 sol=str(min(choices))
 RadioGroup_loadContent(radio,choices)
@@ -26,14 +26,7 @@ n=len(radio.items)
 
 
 evaluator ==
-n=len(radio.items)
-score=0
-for item in radio.items:
-    if item['content']==sol:
-        item['css'] = 'success-state anim-fade'
-        if item['id']==radio.selection:
-            score=100
-            break
+score=RadioGroup_evalByContent(radio,sol)
 feedback=""
 ==
 
