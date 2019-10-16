@@ -6,7 +6,7 @@ extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
 title = Valeur absolue
 
 text==
-On suppose qu'il existe une variable `n` de valeur entière.
+On suppose qu'il existe une variable `n` de valeur numérique.
 
 Écrivez une fonction  qui renvoie la valeur absolue de son paramètre
 
@@ -36,16 +36,7 @@ end_test_group()
 
 
 soluce==
-import math
-print("\n".join(f"{i}! = {math.factorial(i)}" for i in range(n + 1)))
-del math
-==
-# A priori la solutions que les étudiants vont prendre est celle là :
-# Saisissez votre code ici, et cliquez sur le bouton
-# de validation quand vous avez terminé
-# f = 1
-# for i in range(n+1):
-#    print(str(i) + "!" + " = " + str(f))
-#    f*=i+1
-
-
+def abs(x):
+    if x<0:
+        x=-x
+    return x
