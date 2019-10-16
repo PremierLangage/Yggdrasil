@@ -8,7 +8,7 @@ match =: MatchList
 before==
 import random as rd
 import csv
-from utilscomp import *
+from utilscomp import MatchList
 
 with open('data.csv','r') as file:
     rows=list(csv.reader(file,delimiter=','))
