@@ -20,15 +20,15 @@ n = ??(input("Saisisez un entier :"))
 
 text==  
 
-Programmer une fonction "carre" qui prend en paramètre un entier et retourne son carré.<br>
-
-Programmer ensuite une fonction "premiers_carres" qui : <br>
-* prend en paramètre un entier k <br>
-* imprime les k premiers entiers de 0 à (k-1)^2 <br>
+Programmer une fonction "table" qui : <br 
+* prend en paramètre deux entiers : <br>
+   + un entier n <br>
+   + un entier strictement positif k <br>
+* imprime les "k" premiers multiple de "n"
 
 Pour finir écrivez un code : <br>
-* qui demande à l'utilisateur un entier, <br>
-* appel la fonction "premiers_carres" qui imprimera le résultat attendu.
+* qui demande à l'utilisateur deux entiers (dont un strictement positif), <br>
+* appel la fonction "table" qui imprimera le résultat attendu.
 
 ==
 
