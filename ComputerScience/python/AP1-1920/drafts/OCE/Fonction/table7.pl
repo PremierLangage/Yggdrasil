@@ -16,7 +16,7 @@ code==
 #
 ?? = ??(input("Saisisez deux entiers :"))
 #
-
+?? = ??(input("Saisissez un entier strictement positif : "))
 ==
 
 text==  
