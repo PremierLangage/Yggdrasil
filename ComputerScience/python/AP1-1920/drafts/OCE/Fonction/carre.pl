@@ -29,7 +29,7 @@ soluce==#|python|
 def carre(n):
     return(n*n)
 
-n = int(input("Saisisez un entier :))
+n = int(input("Saisisez un entier :"))
 print(carre(n))
 ==
 
