@@ -1,41 +1,17 @@
 @ /utils/sandboxio.py
 @ /builder/before.py [builder.py]
 @ /grader/evaluator.py [grader.py]
-@ /utils/utilscomp.py [utilscomp.py]
+@ /utils/components.py [utilscomp.py]
 
 match =: MatchList
+match.decorator = CustomMatchList
 
 before==
 import random as rd
 import csv
-from components import MatchList,Component
-
-class MatchList(Component):
-    def loadContent(self,source,target):
-        self.nodes = []
-        expected = []
-        for i in range(len(source)):
-            sourceId = "source" + str(i)
-            targetId = "target" + str(i)
-
-            self.nodes.append({
-                "id": sourceId,
-                "content": source[i],
-                "source": True,
-            })
-
-            self.nodes.append({
-                "id": targetId,
-                "content": target[i],
-                "target": True,
-            })
-            expected.append({ "source": sourceId, "target": targetId })
-        rd.shuffle(self.nodes)
 
 with open('data.csv','r') as file:
     rows=list(csv.reader(file,delimiter=','))
-
-match=MatchList()
 
 items=rd.sample(rows,nitems)
 #source=[item[colsource] for item in items]
@@ -80,6 +56,7 @@ if error == 0:
 else:
     grade = (0, '<span class="error-state">Bad answer, you made %d mistakes</span>' % error)
 ==
+
 
 
 
