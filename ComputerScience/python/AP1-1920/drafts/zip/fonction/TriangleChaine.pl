@@ -7,7 +7,8 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 title =triangle chaine
 text==  
-modifier la fonction de l'exercice TriangleEtoile pour que l'uilisateur choisissent lachaie à répéter
+modifier la fonction de l'exercice TriangleEtoile pour que l'uilisateur choisisse
+ la chaine à répéter
 
 
 Exemples
@@ -44,7 +45,7 @@ mplsoluce2 +="hi"
 
 soluce==
 
-def desEtoiles(n,ch):
+def ligne_chaine(n,ch):
     s=""
     if n>0:
         s=ch
@@ -53,13 +54,18 @@ def desEtoiles(n,ch):
             for i in range(n-1):
                 etoile+=ch
                 s=s+"+"+etoile
-        
-    return s
+     return s
+
+
 
 n=int(input("Entrez un entier : "))
 ch=input("Entrez une chaine : ")
+for i in range(1,n+1):
+    print(ligne_chaine(i),ch)
 for i in range(n-1):
-    print(desEtoiles(n-1-i))
+    print(ligne_chaine(n-1-i),ch)
+
+
 ==
 mplsoluce0==
 classique
