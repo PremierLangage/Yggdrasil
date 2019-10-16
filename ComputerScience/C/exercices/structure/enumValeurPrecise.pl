@@ -1,19 +1,20 @@
-# Copyright 2017 Elise Borie Hardy <ehardy@etud.u-pem.fr>
+# Copyright 2017 Elise Hardy <ehardy@etud.u-pem.fr>
+# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
 # Déclaration d'une enumaration avec des valeur précises
 
 author=Elise Hardy
-name=Enumeration avec des valeurs précises
 title=Enumeration avec des valeurs précises
 tag=structure
-extends=/ComputerScience/C/template/autograderC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-Déclarer une enumeration *Note* contenant *Mathieu, Cassandre, Laura, Thomas, Aurelie, Adrien* dont les valeurs respectifs sont *8,9,13,15,16,19*
+Déclarer une enumeration *Note* contenant *Mathieu, Cassandre, Laura, Thomas, 
+Aurelie, Adrien* dont les valeurs respectifs sont *8, 9, 13, 15, 16, 19*
 Par exemple si on affiche la valeur de Adrien l'affichage sera 19.
 ==
 
-code==
+editor.code==
 typedef ...
 
 ==
@@ -42,3 +43,4 @@ from graderC import graderII
 tests = [["Déclaration et utilisation 1", "",""]] 
 graderII(tests)
 ==
+
