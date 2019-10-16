@@ -19,3 +19,4 @@ True
 True 
 >>>val_abs(0)==0
 True 
+==
