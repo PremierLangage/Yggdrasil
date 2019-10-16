@@ -18,19 +18,24 @@ text==
 
 Calculer le volume d'une sphère à l'aide de la formule $%V=\frac{4}{3}{\pi}R^3%$. <br>
 
-vous écrirez naturellement un programme qui récupère un entier au clavier, appel la fonction et affiche le résultat.
+Vous devez écrire deux fonctions "cube", qui retourne le cube d'un réel et "volume_sphere" qui retourne le volume de la sphere 
+et fait appel à la fonction "cube"
+
+Vous écrirez un programme demandant à un utilisateur de rentrer un réel, appelant la fonction "volume_sphere" et affichant le résultat.
 
 ==
 
 soluce==#|python|
-def dix_mais_pas_trois(n):
-    if n%10==0 and n%3!=0:
-        return True
-    else:
-        return False
+import numpy as np
 
-n = int(input("Saisie : "))
-print(dix_mais_pas_trois(n))
+def cube(n):
+    return n**3
+        
+def volume_sphere(r):
+    return 4 / 3 * np.pi * cube(r)
+
+r = float(input("Entrez la valeur du rayon : "))
+print("Le volume de cette sphere vaut", volume_sphere(r))
 ==
 
 mplsoluce0==
