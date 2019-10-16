@@ -10,9 +10,6 @@ import random as rd
 import csv
 from components import MatchList,Component
 
-match2=MatchList():
-
-
 class MatchList(Component):
     def loadContent(self,source,target):
         self.nodes = []
@@ -37,6 +34,8 @@ class MatchList(Component):
 
 with open('data.csv','r') as file:
     rows=list(csv.reader(file,delimiter=','))
+
+match2=MatchList()
 
 items=rd.sample(rows,nitems)
 #source=[item[colsource] for item in items]
