@@ -16,7 +16,6 @@ code==
 #
 n = ??(input("Saisisez un entier :"))
 #
-
 ==
 
 text==  
