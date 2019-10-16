@@ -78,7 +78,7 @@ tests==
 [ ["Simple", "Rouge 255 0 0", ""],
 	["Simple", "Bleu 0 0 255", ""],
   ["Simple", "Violet 255 0 255", ""],
-	["Simple", "Noir 0 0 0", ""]]
+	["Simple", "Noir 0 0 0", ""],
   ["Couleur aléatoire", "'Couleur aléatoire' " + " ".join([str(random.randint(0,255)) for i in range(3)]), ""],
   ["Couleur aléatoire", "'Couleur aléatoire' " + " ".join([str(random.randint(0,255)) for i in range(3)]), ""],
   ["Couleur aléatoire", "'Couleur aléatoire' " + " ".join([str(random.randint(0,255)) for i in range(3)]), ""] ]
