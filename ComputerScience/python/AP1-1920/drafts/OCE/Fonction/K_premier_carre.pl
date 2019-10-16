@@ -30,12 +30,15 @@ Pour finir écrivez un code :
 ==
 
 soluce==#|python|
-defpremiers_carres ( k ) :
+def carre(n):
+    return(n*n)
+
+def premiers_carres ( k ) :
     for i inrange ( k ) :
         print carre ( i )
 
 n = int(input("Saisisez un entier :"))
-print(carre(n))
+premiers_carres (n)
 ==
 
 mplsoluce0==
