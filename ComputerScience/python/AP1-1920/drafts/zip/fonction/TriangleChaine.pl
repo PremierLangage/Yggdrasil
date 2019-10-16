@@ -43,19 +43,20 @@ mplsoluce2 += str(n)+"\n"
 
 soluce==
 
-def desEtoiles(n):
+def desEtoiles(n,ch):
     s=""
     if n>0:
-        s="*"
-        etoile="*"
+        s=ch
+        etoile=ch
         if n>1:
             for i in range(n-1):
-                etoile+="*"
+                etoile+=ch
                 s=s+"+"+etoile
         
     return s
 
-n=int(input())
+n=int(input("Entrez un entier : "))
+ch=input("Entrez une chaine : "))
 for i in range(1,n+1):
     print(desEtoiles(i))
 for i in range(n-1):
