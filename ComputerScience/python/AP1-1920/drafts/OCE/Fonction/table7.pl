@@ -49,20 +49,24 @@ table(n,k)
 mplsoluce0==
 paire
 2
+4
 ==
 mplsoluce1==
 impaire 
 3
+9
 ==
 
 mplsoluce2==
 Grand 
 10
+40
 ==
 
 mplsoluce3==
 nul
 0
+-1
 ==
 
 
