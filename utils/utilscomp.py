@@ -15,6 +15,29 @@ def checkradio(radio,idsol):
 
 # MatchList
 
+class MatchList(Component):
+    def MatchList_loadContent(self,source,target):
+        self.nodes = []
+        expected = []
+        for i in range(len(source)):
+            sourceId = "source" + str(i)
+            targetId = "target" + str(i)
+
+            self.nodes.append({
+                "id": sourceId,
+                "content": source[i],
+                "source": True,
+            })
+
+            self.nodes.append({
+                "id": targetId,
+                "content": target[i],
+                "target": True,
+            })
+            expected.append({ "source": sourceId, "target": targetId })
+        rd.shuffle(self.nodes)
+    
+
 def MatchList_loadContent(match,source,target):
     match.nodes = []
     expected = []
@@ -49,5 +72,6 @@ def RadioGroup_evalByContent(radio,sol):
             if item['id']==radio.selection:
                 return 100
     return 0
+
 
 
