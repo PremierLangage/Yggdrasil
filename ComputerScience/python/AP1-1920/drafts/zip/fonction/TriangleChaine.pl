@@ -57,9 +57,7 @@ def desEtoiles(n,ch):
     return s
 
 n=int(input("Entrez un entier : "))
-ch=input("Entrez une chaine : "))
-for i in range(1,n+1):
-    print(desEtoiles(i))
+ch=input("Entrez une chaine : ")
 for i in range(n-1):
     print(desEtoiles(n-1-i))
 ==
