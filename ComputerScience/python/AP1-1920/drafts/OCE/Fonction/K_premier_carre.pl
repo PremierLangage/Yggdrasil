@@ -7,13 +7,11 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 title = Afficher les k premiers carrés de 0 à (k-1)^2
 
 code==
-n= int(input("Entrez un nombre : "))
 #
 #
 #
+n = ??(input("Saisisez un entier :"))
 #
-#
-print(??)
 
 ==
 
