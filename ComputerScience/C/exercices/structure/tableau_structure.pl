@@ -10,7 +10,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 Déclarez une énumaration *Fruit* contenant les fruits *pomme, poire, banane, cerise*.
-Puis déclarer une structure *Panier* contenant un tableau de fruit de taille 4. 
+Puis déclarer une structure *Panier* contenant un tableau nommé *tab* de *Fruit* de taille 4. 
 
 ==
 
