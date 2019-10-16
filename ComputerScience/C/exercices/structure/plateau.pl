@@ -1,17 +1,17 @@
 # Copyright 2017 Elise Hardy <ehardy@etud.u-pem.fr>
+# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
 # Déclaration d'une structure C pour un plateau
 
 author=Elise Hardy
-name=Structure C pour un plateau
-title=Structure C pour un plateau
+title=Structure C pour un plateau rectangulaire
 tag=structure
-extends=/ComputerScience/C/template/autograderC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 Déclarer et définir une *structure* C nommé *Plateau*. Cette structure
-devra contenir trois champs un tableau de deux dimensions nommé *tab*, un entier *n*
- et un entier *k* respectivement la taille du plateau.
+devra contenir trois champs : un tableau d'entiers à deux dimensions nommé *tab*, 
+un entier *n* et un entier *k* donnant les tailles du plateau.
 
 ==
 
@@ -67,3 +67,4 @@ tests = [["Déclaration et utilisation 1", "14 3",""],
          ["Déclaration et utilisation 2", "47 85",""]] 
 graderII(tests)
 ==
+
