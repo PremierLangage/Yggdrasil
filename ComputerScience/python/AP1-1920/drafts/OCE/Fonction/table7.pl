@@ -4,7 +4,7 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
-title = Afficher les k premiers carrés de 0 à (k-1)^2
+title = Afficher les "n" premiers multiples d'un entier "x"
 
 code==
 #
