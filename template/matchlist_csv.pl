@@ -35,14 +35,14 @@ class MatchList(Component):
 with open('data.csv','r') as file:
     rows=list(csv.reader(file,delimiter=','))
 
-match2=MatchList()
+match=MatchList()
 
 items=rd.sample(rows,nitems)
 #source=[item[colsource] for item in items]
 #target=[item[coltarget] for item in items]
 source=["1","2"]
 target=["1","2"]
-match2.loadContent(source,target)
+match.loadContent(source,target)
 ==
 
 title==
