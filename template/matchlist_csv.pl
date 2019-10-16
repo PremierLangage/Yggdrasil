@@ -17,7 +17,7 @@ items=rd.sample(rows,nitems)
 source=[item[colsource] for item in items]
 target=[item[coltarget] for item in items]
 
-MatchList_loadContent(match,source,target)
+match.loadContent(source,target)
 ==
 
 title==
@@ -55,6 +55,7 @@ if error == 0:
 else:
     grade = (0, '<span class="error-state">Bad answer, you made %d mistakes</span>' % error)
 ==
+
 
 
 
