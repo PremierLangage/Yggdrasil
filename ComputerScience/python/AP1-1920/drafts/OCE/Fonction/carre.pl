@@ -27,6 +27,7 @@ Appeler cette fonction pour en imprimer le résultat.
 soluce==#Python
 def carre():
 
+
 ==
 plsoluce==
 
