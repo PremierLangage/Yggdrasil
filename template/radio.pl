@@ -10,6 +10,7 @@ from utilscomp import RadioGroup_loadContent
 choices=rd.sample(list(range(50)),5)
 sol=str(min(choices))
 RadioGroup_loadContent(radio,choices)
+fb=type(radio)
 ==
 
 text ==
@@ -25,7 +26,7 @@ from utilscomp import RadioGroup_evalByContent
 
 score=RadioGroup_evalByContent(radio,sol)
 score=0
-feedback=str(sol)
+feedback=fb
 ==
 
 
