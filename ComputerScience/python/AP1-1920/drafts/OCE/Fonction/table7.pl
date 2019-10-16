@@ -66,8 +66,18 @@ Grand
 mplsoluce3==
 nul
 0
--1
+10
 ==
+
+mplsoluce4==
+négatif
+10
+-2
+==
+
+
+
+
 
 
 
