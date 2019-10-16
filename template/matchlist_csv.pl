@@ -8,7 +8,29 @@ match =: MatchList
 before==
 import random as rd
 import csv
-from utilscomp import MatchList
+from components import MatchList,Component
+
+class MatchList(Component):
+    def loadContent(self,source,target):
+        self.nodes = []
+        expected = []
+        for i in range(len(source)):
+            sourceId = "source" + str(i)
+            targetId = "target" + str(i)
+
+            self.nodes.append({
+                "id": sourceId,
+                "content": source[i],
+                "source": True,
+            })
+
+            self.nodes.append({
+                "id": targetId,
+                "content": target[i],
+                "target": True,
+            })
+            expected.append({ "source": sourceId, "target": targetId })
+        rd.shuffle(self.nodes)
 
 with open('data.csv','r') as file:
     rows=list(csv.reader(file,delimiter=','))
