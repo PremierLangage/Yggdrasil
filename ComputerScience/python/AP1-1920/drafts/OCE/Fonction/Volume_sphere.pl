@@ -22,7 +22,7 @@ Vous devez écrire deux fonctions "cube", qui retourne le cube d'un réel et "vo
 et fait appel à la fonction "cube". <br>
 
 Vous écrirez un programme demandant à un utilisateur de rentrer un réel, appelant la fonction "volume_sphere" et affichant le résultat.<br>
-Naturellement un volume ne peut pas être négatif ...
+Naturellement un volume ne peut pas être négatif, ...ou nul !
 ==
 
 soluce==#|python|
