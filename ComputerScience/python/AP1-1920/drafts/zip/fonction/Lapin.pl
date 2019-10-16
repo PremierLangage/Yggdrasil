@@ -64,7 +64,7 @@ print(" en",??,"mois",??,"lapins")
 soluce==
 def lapin(mois):
     if mois<0:
-        return 0,0,0,0
+        return 0
     vieux=1    
     ado1=0
     ado2=0
