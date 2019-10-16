@@ -17,7 +17,7 @@ def checkradio(radio,idsol):
 # MatchList
 
 class MatchList(Component):
-    def MatchList_loadContent(self,source,target):
+    def loadContent(self,source,target):
         self.nodes = []
         expected = []
         for i in range(len(source)):
