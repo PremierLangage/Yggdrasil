@@ -16,7 +16,7 @@ n = ??(input("Saisie : "))
 
 text==  
 
-Calculer le volume d'une sphère à l'aide de la formule $%V=\frac{4}{3}{pi}R^3%$. <br>
+Calculer le volume d'une sphère à l'aide de la formule $%V=\frac{4}{3}{\pi}R^3%$. <br>
 
 vous écrirez naturellement un programme qui récupère un entier au clavier, appel la fonction et affiche le résultat.
 
