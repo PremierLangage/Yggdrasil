@@ -7,13 +7,11 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 title = Calculer le carré d'un nombre
 
 code==
-n= int(input("Entrez un nombre : "))
 #
 #
 #
+n = ??(input("Saisisez un entier :"))
 #
-#
-print(??)
 
 ==
 
