@@ -4,14 +4,16 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
-title = Conception d'un jeu de rôle
+title = Calculer le carré d'un nombre
 
 code==
 n= int(input("Entrez un nombre : "))
-
-
-
-print("avec(1)",??,"avec(2)",??)
+#
+#
+#
+#
+#
+print(??)
 
 ==
 
