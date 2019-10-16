@@ -21,7 +21,7 @@ text==
 
 Programmer une fonction "carre" qui prend en paramètre un entier et retourne son carré.<br>
 
-Appeler cette fonction pour en imprimer le résultat.
+Ecrivez ensuite un code qui demande à l'utilisateur un entier, appel la fonction et imprime le résultat.
 
 ==
 
