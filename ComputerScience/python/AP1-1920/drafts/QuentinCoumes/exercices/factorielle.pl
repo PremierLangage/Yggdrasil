@@ -31,7 +31,7 @@ for i in range(10):
     set_title(f"n = {i}")
     set_globals(n=i)
     run()
-    assert_output("".join(f"{j}! = {math.factorial(j)}\n" for j in range(i + 1)))
+    assert_output("".join(f"{j}! = {math.factorial(j)}\n" for j in range(1, i + 1)))
 end_test_group()
 
 begin_test_group("Valeurs aléatoires")
@@ -40,7 +40,7 @@ for i in range(5):
     set_title(f"n = {i}")
     set_globals(n=i)
     run()
-    assert_output("".join(f"{j}! = {math.factorial(j)}\n" for j in range(i + 1)))
+    assert_output("".join(f"{j}! = {math.factorial(j)}\n" for j in range(1, i + 1)))
 end_test_group()
 ==
 
