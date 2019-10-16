@@ -62,7 +62,6 @@ def syracuse_temps(u):
             u=u//2
         else:
             u=3*u+1
-        print(u)
         n+=1
     return n
 for i in range(5):
