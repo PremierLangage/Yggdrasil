@@ -26,8 +26,8 @@ Programmer ensuite une fonction "premiers_carres" qui : <br>
 * prend en paramètre un entier k <br>
 * imprime les k premiers entiers de 0 à (k-1)^2 <br>
 
-Pour finir écrivez un code : 
-* qui demande à l'utilisateur un entier, 
+Pour finir écrivez un code : <br>
+* qui demande à l'utilisateur un entier, <br>
 * appel la fonction "premiers_carres" qui imprimera le résultat attendu.
 
 ==
