@@ -16,7 +16,7 @@ def checkradio(radio,idsol):
 
 # MatchList
 
-class MatchList(Component):
+class CustomMatchList(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-match-list'
         self.decorator = 'CustomMatchList'
