@@ -1,42 +1,21 @@
 
-extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
+extends = /ComputerScience/python/AP1-1920/templates/pltest.pl
 
 # author = Zip
 
 title = Valeur absolue
 
 text==
-On suppose qu'il existe une variable `n` de valeur numérique.
 
-Écrivez une fonction  qui renvoie la valeur absolue de son paramètre
+
+Écrivez une fonction val_abs(x)  qui renvoie la valeur absolue de son paramètre
 
 ___
 ==
-
-grader== #|python|
-
-
-begin_test_group("0 <= n <= 9")
-for i in range(10):
-    set_title(f"n = {i}")
-    set_globals(n=i)
-    run()
-    assert_output("".join(f"{j}! = {math.factorial(j)}\n" for j in range(i + 1)))
-end_test_group()
-
-begin_test_group("Valeurs aléatoires")
-for i in range(5):
-    i = random.randint(30, 200)
-    set_title(f"n = {i}")
-    set_globals(n=i)
-    run()
-    assert_output("".join(f"{j}! = {math.factorial(j)}\n" for j in range(i + 1)))
-end_test_group()
-==
-
-
-soluce==
-def abs(x):
-    if x<0:
-        x=-x
-    return x
+pltext==
+>>>val_abs(4)==4
+True 
+>>>val_abs(-74)==74
+True 
+>>>val_abs(0)==0
+True 
