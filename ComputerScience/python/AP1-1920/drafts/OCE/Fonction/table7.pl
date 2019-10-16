@@ -14,7 +14,7 @@ code==
 #
 #
 #
-?? = ??(input("Saisisez un entier n :"))
+?? = ??(input("Saisisez un entier n : "))
 #
 ?? = ??(input("Saisissez un entier k strictement positif : "))
 ==
@@ -39,7 +39,7 @@ def table(n,x):
     for i in range(n):
         print(i * x, end =' ')
 
-n = int(input("Saisisez un entier n :"))
+n = int(input("Saisisez un entier n : "))
 k = int(input("Saisissez un entier k strictement positif : "))
 while(k<=0):
     k = int(input("Saisissez un entier k strictement positif : "))
