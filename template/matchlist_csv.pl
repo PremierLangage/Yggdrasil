@@ -3,6 +3,7 @@
 @ /grader/evaluator.py [grader.py]
 @ /utils/utilscomp.py [utilscomp.py]
 
+match =: MatchList
 
 before==
 import random as rd
