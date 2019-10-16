@@ -12,7 +12,6 @@ sous la forme `n! = x` en partant de 1! (une valeur par ligne).
 ___
 Pour `n = 5`, le programme devra par exemple afficher:
 <pre><code>
-0! = 1
 1! = 1
 2! = 2
 3! = 6
@@ -26,8 +25,8 @@ grader== #|python|
 import math
 import random
 
-begin_test_group("0 <= n <= 9")
-for i in range(10):
+begin_test_group("1 <= n <= 9")
+for i in range(1, 10):
     set_title(f"n = {i}")
     set_globals(n=i)
     run()
