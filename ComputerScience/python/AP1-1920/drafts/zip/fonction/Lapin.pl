@@ -16,9 +16,9 @@ de la même manière.<br>
 ,soit 10 lapins.<br>
 
 Ecrire une fontion `lapin(mois)` qui reçoit un entier décrivant le nombre de mois
- écoulé et renvoie le nombre de couples.(*On distinguera le nombre de couples de nouveaux lapins nouveaux, le nombre
-de couples de lapins ayant un mois, un_mois, et le nombre de couples de lapins
-ayant 2 mois ou plus, vieux*).<br>
+ écoulé et renvoie le nombre de couples.(*On distinguera le nombre de couples de nouveaux lapins, le nombre
+de couples de lapins ayant un mois, et le nombre de couples de lapins
+ayant 2 mois ou plus*).<br>
 * Utiliser cette fonction pour écrire un programme qui :<br>
 1) lit un nombre de mois et affiche le nombre de lapins quand ce nombre de mois est écoulé
 2 lit un nombre de lapins et détermine au bout de combien de mois cette population est atteinte.
