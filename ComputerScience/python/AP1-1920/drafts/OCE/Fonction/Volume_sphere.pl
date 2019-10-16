@@ -16,7 +16,7 @@ n = ??(input("Saisie : "))
 
 text==  
 
-Programmer une fonction qui teste si un entier est divisible par 10 mais pas par 3. <br>
+Calculer le volume d'une sphère à l'aide de la formule $%V=\frac{4}{3}{pi}R^3%$. <br>
 
 vous écrirez naturellement un programme qui récupère un entier au clavier, appel la fonction et affiche le résultat.
 
@@ -46,6 +46,7 @@ mplsoluce2==
 True
 10
 ==
+
 
 
 
