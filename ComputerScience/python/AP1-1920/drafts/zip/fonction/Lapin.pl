@@ -40,10 +40,11 @@ before==
 import random
 
 mplsoluce2="Test aléatoire\n"
-n=random.randint(4,7)
+n=random.randint(4,17)
+mplsoluce2 += str(n)+"\n"
+n=random.randint(4,17)
 n*=100000
 mplsoluce2 += str(n)+"\n"
-mplsoluce2 +="hi"
 ==
 code==
 
