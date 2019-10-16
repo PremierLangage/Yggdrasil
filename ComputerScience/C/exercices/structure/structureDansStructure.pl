@@ -1,25 +1,26 @@
 # Copyright 2017 Elise Hardy <ehardy@etud.u-pem.fr>
+# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
 # Déclaration de deux structure dont une contenant l'autre
 
 author=Elise Hardy
-name=Structure contenant une autre structure
 title=Structure contenant une autre structure
 tag=structure
-extends=/ComputerScience/C/template/autograderC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-    Déclarer une structure *Point* contenant deux entier *x* et *y*.
-    Puis une autre structure *Couple* contenant deux points *p1* et *p2*.
+Déclarez une structure *Point* contenant deux entiers *x* et *y*.
+Puis une autre structure *Couple* contenant deux points *p1* et *p2*.
 
 ==
 
-code==
+editor.code==
 typedef ...
 
 ==
 
 solution==
+
 typedef struct {
     int x;
     int y;
@@ -29,6 +30,7 @@ typedef struct {
     Point p1;
     Point p2;
 }Couple;
+
 ==
 
 codeafter==
@@ -48,10 +50,9 @@ int main(int argc, char* argv[]){
 
 ==
 
-grader==
-from graderC import graderII
- 
-tests = [["Déclaration et utilisation 1", "14 3 42",""],
-         ["Déclaration et utilisation 2", "47 85 913",""]] 
-graderII(tests)
+tests==
+[ ["Déclaration et utilisation 1", "14 3 42", ""],
+  ["Déclaration et utilisation 2", "47 85 913", ""],
+  ["Alééatoire", " ".join([str(random.randint(0,99)) for i in range(3)]), ""] ] 
 ==
+
