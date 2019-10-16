@@ -15,12 +15,13 @@ un entier *n* et un entier *k* donnant les tailles du plateau.
 
 ==
 
-code==
+editor.code==
 typedef ...
 
 ==
 
 solution==
+
 typedef struct {
 char **tab;
 int n;
@@ -30,6 +31,7 @@ int k;
 ==
 
 codeafter==
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
