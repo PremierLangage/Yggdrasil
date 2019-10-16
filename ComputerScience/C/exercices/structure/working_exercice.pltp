@@ -1,0 +1,10 @@
+title=Exercices sur les structures C
+
+introduction==
+Les exercices qui suivent proposent quelques manipulations avec les structures 
+que l'on peut définir et utiliser dans les programmes C.
+==
+
+
+@ /ComputerScience/C/exercices/structure/allocate_color.pl
+
