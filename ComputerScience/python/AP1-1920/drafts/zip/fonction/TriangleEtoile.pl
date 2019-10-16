@@ -24,26 +24,26 @@ et renvoie une chaine formée de 1 caractère étoile ('*'), 2 caractère étoil
 
 * utilisez cette fonction pour écrire un programme qui lit un entier n et si n est >0 et affiche le triangle
 qui contient une suite de n "*"
+
 Exemple
  
 Entrez un entier : 5 <br>
-*
-*+**
-*+**+***
-*+**+***+****
-*+**+***+****+*****
-*+**+***+****
-*+**+***
-*+**
-*
+*<br>
+*+**<br>
+*+**+***<br>
+*+**+***+****<br>
+*+**+***+****+*****<br>
+*+**+***+****<br>
+*+**+***<br>
+*+**<br>
+*<br>
 ==
 before==
 import random
 
 mplsoluce2="Test aléatoire\n"
-for i in range(5):
-    n=random.randint(4,7)
-    mplsoluce2 += str(n)+"\n"
+n=random.randint(4,7)
+mplsoluce2 += str(n)+"\n"
 ==
 
 soluce==
