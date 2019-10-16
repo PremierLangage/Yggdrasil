@@ -16,6 +16,7 @@ code==
 #
 ?? = ??(input("Saisisez deux entiers :"))
 #
+
 ==
 
 text==  
@@ -30,7 +31,7 @@ Pour finir écrivez un code : <br>
 * qui demande à l'utilisateur deux entiers (dont un strictement positif), <br>
 * appel la fonction "table" qui imprimera le résultat attendu.<br>
 
-Vous vous aiderez du code déjà présent
+Vous vous aiderez du code déjà présent pour les saisies des valeurs. 
 ==
 
 soluce==#|python|
