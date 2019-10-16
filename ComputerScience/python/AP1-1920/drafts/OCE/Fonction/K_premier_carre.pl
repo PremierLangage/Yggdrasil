@@ -36,9 +36,9 @@ soluce==#|python|
 def carre(n):
     return(n*n)
 
-def premiers_carres ( k ) :
-    for i inrange ( k ) :
-        print carre ( i )
+def premiers_carres (k) :
+    for i inrange (k) :
+        print carre (i)
 
 n = int(input("Saisisez un entier :"))
 premiers_carres (n)
