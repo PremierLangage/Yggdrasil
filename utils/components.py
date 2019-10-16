@@ -22,11 +22,11 @@ class CustomMatchList(Component):
         self.selector = 'c-match-list'
         self.decorator = 'CustomMatchList'
         self.nodes = []
+        self._expected = []
         super().__init__(**kwargs)
 
     def loadContent(self,source,target):
         self.nodes = []
-        self._expected = []
         for i in range(len(source)):
             sourceId = uuid.uuid4()
             targetId = uuid.uuid4()
@@ -42,18 +42,18 @@ class CustomMatchList(Component):
                 "content": target[i],
                 "target": True,
             })
-            _expected.append({ "source": sourceId, "target": targetId })
+            self._expected.append({ "source": sourceId, "target": targetId })
         rd.shuffle(self.nodes)
 
     def eval(self):
         error = 0
-        for e in self.expected:
+        for e in self._expected:
             if not in_links(e, self.links):
                 error = error + 1
 
         for e in self.links:
             e['css'] = 'error-state anim-fade'
-            if in_links(e, selfexpected):
+            if in_links(e, self._expected):
                 e['css'] = 'success-state  anim-flip'
 
         if error == 0:
