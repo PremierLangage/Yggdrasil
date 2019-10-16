@@ -10,7 +10,7 @@ code==
 #
 #
 #
-n = ??(input("Saisisez un entier :"))
+n = ??(input("Saisie : "))
 #
 
 ==
@@ -24,11 +24,14 @@ vous écrirez naturellement un programme qui récupère un entier au clavier, ap
 ==
 
 soluce==#|python|
-def carre(n):
-    return(n*n)
+def dix_mais_pas_trois(n):
+    if n%10==0 and n%3!=0:
+        return True
+    else:
+        return False
 
-n = int(input("Saisisez un entier :"))
-print(carre(n))
+n = int(input("Saisie : "))
+print(dix_mais_pas_trois(n))
 ==
 
 mplsoluce0==
