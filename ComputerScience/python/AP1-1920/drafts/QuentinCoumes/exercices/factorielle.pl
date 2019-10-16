@@ -1,6 +1,6 @@
 extends = ../templates/generic/generic.pl
 
-# author = Quentin Coumes
+author = Quentin Coumes
 
 title = Factorielle
 
@@ -57,4 +57,5 @@ del math
 # for i in range(n+1):
 #    print(str(i) + "!" + " = " + str(f))
 #    f*=i+1
+
 
