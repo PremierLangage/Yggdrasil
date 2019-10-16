@@ -38,9 +38,7 @@ import random
 
 mplsoluce2="Test aléatoire\n"
 n=random.randint(4,7)
-
 mplsoluce2 += str(n)+"\n"
-==
 mplsoluce2 +="hi"
 ==
 
