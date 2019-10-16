@@ -53,6 +53,6 @@ int main(int argc, char* argv[]){
 tests==
 [ ["Déclaration et utilisation 1", "14 3 42", ""],
   ["Déclaration et utilisation 2", "47 85 913", ""],
-  ["Alééatoire", " ".join([str(random.randint(0,99)) for i in range(3)]), ""] ] 
+  ["Aléatoire", " ".join([str(random.randint(0,99)) for i in range(3)]), ""] ] 
 ==
 
