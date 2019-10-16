@@ -51,8 +51,8 @@ Negatif_reel
 ==
 
 mplsoluce2==
-True
-10
+Nul
+0
 ==
 
 
