@@ -60,13 +60,11 @@ int main(int argc, char* argv[]){
 	printf("plateau dimension : %d %d \n", P.n, P.k);
 	return 0;
 }
+
 ==
 
-grader==
-from graderC import graderII
- 
-tests = [["Déclaration et utilisation 1", "14 3",""],
-         ["Déclaration et utilisation 2", "47 85",""]] 
-graderII(tests)
+tests==
+[ ["Déclaration et utilisation 1", "14 3",""],
+  ["Déclaration et utilisation 2", "47 85",""] ] 
 ==
 
