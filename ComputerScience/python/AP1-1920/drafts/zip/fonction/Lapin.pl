@@ -80,28 +80,11 @@ print(" en",mois,"mois",2*lapin(i),"lapins")
 nb=int(input("population : "))
 
 i=0
-while 2*lapin(i)<nb:
+p=
+while 2*<nb:
     i=i+1
 print(" en",i,"mois",2*lapin(i),"lapins")
-def ligne_chaine(n,ch):
-    s=""
-    if n>0:
-        s=ch
-        etoile=ch
-        if n>1:
-            for i in range(n-1):
-                etoile+=ch
-                s=s+"+"+etoile
-    return s
 
-
-
-n=int(input("Entrez un entier : "))
-ch=input("Entrez une chaine : ")
-for i in range(1,n+1):
-    print(ligne_chaine(i,ch))
-for i in range(n-1):
-    print(ligne_chaine(n-1-i,ch))
 
 
 ==
