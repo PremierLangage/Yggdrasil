@@ -10,7 +10,7 @@ sortlist =: SortList
 sortlist.items %= #|json|
 [
     { "id": "", "content": "From math import sqrt" },
-    { "id": "", "content": "def trucmuche:"+ "\n" + "test"},
+    { "id": "", "content": "def trucmuche:"},
     { "id": "", "content": "Third Item" }
 ]
 ==
