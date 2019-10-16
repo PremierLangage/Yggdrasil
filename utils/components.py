@@ -44,28 +44,6 @@ class MatchList(Component):
             expected.append({ "source": sourceId, "target": targetId })
         rd.shuffle(self.nodes)
     
-
-def MatchList_loadContent(match,source,target):
-    match.nodes = []
-    expected = []
-    for i in range(len(source)):
-        sourceId = "source" + str(i)
-        targetId = "target" + str(i)
-
-        match.nodes.append({
-            "id": sourceId,
-            "content": source[i],
-            "source": True,
-        })
-
-        match.nodes.append({
-            "id": targetId,
-            "content": target[i],
-            "target": True,
-        })
-        expected.append({ "source": sourceId, "target": targetId })
-    rd.shuffle(match.nodes)
-    
 # RadioGroup
 
 def RadioGroup_loadContent(radio,content):
