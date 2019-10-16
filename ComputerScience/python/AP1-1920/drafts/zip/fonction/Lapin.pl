@@ -75,7 +75,7 @@ def lapin(mois):
             jeune=vieux
     #return jeune,ado1,ado2,vieux
     return jeune+ado1+ado2+vieux
-mois=int(input("nombre de mois : ")
+mois=int(input("nombre de mois : "))
 print(" en",mois,"mois",2*lapin(i),"lapins")
 nb=int(input("population : "))
 
