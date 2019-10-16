@@ -14,9 +14,10 @@ with open('data.csv','r') as file:
     rows=list(csv.reader(file,delimiter=','))
 
 items=rd.sample(rows,nitems)
-source=[item[colsource] for item in items]
-target=[item[coltarget] for item in items]
-
+#source=[item[colsource] for item in items]
+#target=[item[coltarget] for item in items]
+source=["1","2"]
+target=["1","2"]
 match.loadContent(source,target)
 ==
 
