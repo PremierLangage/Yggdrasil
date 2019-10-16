@@ -1,12 +1,11 @@
-# Copyright 2017 Nicolas Borie <nicolas.borie@u-pem.fr>
+# Copyright 2017-2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
 # Déclaration d'une strcture C pour des points 2 dimensions entiers
 
 author=Nicolas Borie
-name=Structure pour points entiers en dimension 2
 title=Structure pour points entiers en dimension 2
 tag=structure
-extends=/ComputerScience/C/template/autograderC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 Déclarer et définir une *structure* C nommé **Point2d**. Cette structure
@@ -15,14 +14,15 @@ pour ordonné.
 
 ==
 
-code==
+editor.code==
 typedef
-
-
+...
 Point2d;
+
 ==
 
 solution==
+
 typedef struct point2d{
   int abs;
   int ord; 
@@ -43,9 +43,7 @@ int main(int argc, char* argv[]){
 
 ==
 
-grader==
-from graderC import graderII
- 
-tests = [["Déclaration et utilisation", "",""]] 
-graderII(tests)
+tests== 
+[ ["Déclaration et utilisation", "",""] ] 
 ==
+
