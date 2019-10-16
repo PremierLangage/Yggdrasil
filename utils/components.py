@@ -59,7 +59,7 @@ class CustomMatchList(Component):
         if error == 0:
             return (100, '')
         else:
-            return = (0, '')
+            return (0, '')
 
 def in_links(conn, links):
     for e in links:
