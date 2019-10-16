@@ -14,9 +14,9 @@ code==
 #
 #
 #
-?? = ??(input("Saisisez deux entiers :"))
+?? = ??(input("Saisisez un entier n :"))
 #
-?? = ??(input("Saisissez un entier strictement positif : "))
+?? = ??(input("Saisissez un entier k strictement positif : "))
 ==
 
 text==  
@@ -35,15 +35,15 @@ Vous vous aiderez du code déjà présent pour les saisies des valeurs.
 ==
 
 soluce==#|python|
-def carre(n):
-    return(n*n)
+def table(n,x):
+    for i in range(n):
+        print(i * x, end =' ')
 
-def premiers_carres(k) :
-    for i in range(k) :
-        print (carre(i))
-
-n = int(input("Saisisez un entier :"))
-premiers_carres(n)
+n = int(input("Saisisez un entier n :"))
+k = int(input("Saisissez un entier k strictement positif : "))
+while(k<=0):
+    k = int(input("Saisissez un entier strictement positif : "))
+table(n,k)
 ==
 
 mplsoluce0==
