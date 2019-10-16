@@ -6,10 +6,10 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 title = Dix mais pas trois
 
 code==
+import numpy as np
 #
 #
-#
-n = ??(input("Saisie : "))
+r = ??(input("Entrez la valeur du rayon : "))
 #
 
 ==
