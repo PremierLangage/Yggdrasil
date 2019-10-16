@@ -17,8 +17,9 @@ on veut dessiner à l'aide d'étoiles '*' et de plus "+" des triangles de la for
 * 
 Pour cela:
 * écrire une fontion *ligne_etoile(n)* qui reçoit un entier
-et renvoie une chaine formée de 1 caractère étoile ('*'), 2 caractère étoile ('*'),...,n caractère étoile ('*') e recoit séparés par des caratères plus ('+').
-    si elle reçoit 4 elle renvoie "*+**+***+****".
+et renvoie une chaine formée de : <br>
+1 caractère étoile ('\*'), 2 caractères étoile ('\*'),...,n caractères étoile ('*') e recoit séparés par des caratères plus ('+').<br>
+    si elle reçoit 4 elle renvoie "*+**+***+****".<br>
     si elle reçoit 1 elle renvoie "*"
     si elle reçoit un entier inférieure à 1 elle renvoie la chaine vide.
 
