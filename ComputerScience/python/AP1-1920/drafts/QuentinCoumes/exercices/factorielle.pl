@@ -7,7 +7,7 @@ title = Factorielle
 text==
 On suppose qu'il existe une variables `n` de valeur entière strictement positive.  
 
-Écrivez un programme qui affiche les `n` premières valeurs de la fonction factorielle
+Écrivez un programme qui affiche les `n + 1` premières valeurs de la fonction factorielle
 sous la forme `n! = x` (une valeur par ligne).
 ___
 Pour `n = 5`, le programme devra par exemple afficher:
@@ -17,6 +17,7 @@ Pour `n = 5`, le programme devra par exemple afficher:
 2! = 2
 3! = 6
 4! = 24
+5! = 120
 </code></pre>
 
 ___
