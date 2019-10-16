@@ -80,9 +80,10 @@ print(" en",mois,"mois",2*lapin(i),"lapins")
 nb=int(input("population : "))
 
 i=0
-p=
-while 2*<nb:
+p=2*lapin(i)
+while p<nb:
     i=i+1
+    p=2*lapin(i)
 print(" en",i,"mois",2*lapin(i),"lapins")
 
 
