@@ -5,7 +5,7 @@
 author=Nicolas Borie
 title=Allocation d'une structure Couleur avec 3 entiers
 tag=structure|malloc|function
-extends=/ComputerScience/C/template/autograderC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 Déclarer et définir un nouveau type structuré C nommé **Color**. 
@@ -17,11 +17,10 @@ entiers en paramètres **R, G, B** et qui retourne l'adresse d'une
 nouvelle variable **Color** fraichement allouée avec **malloc** et
 initialisé avec les trois entiers.
 
-
 Bien entendu R pour red, G pour green, et B pour blue.
 ==
 
-code==
+editor.code==
 typedef ...
 ...
 ... Color;
@@ -33,6 +32,7 @@ typedef ...
 ==
 
 solution==
+
 typedef struct coco{
   int red;
   int green;
@@ -74,19 +74,14 @@ Color *s;
 
 ==
 
-grader==
-from graderC import graderII
-from random import randint 
-
-tests = [["Simple", "Rouge 255 0 0", ""],
-	 ["Simple", "Bleu 0 0 255", ""],
-         ["Simple", "Violet 255 0 255", ""],
-	 ["Simple", "Noir 0 0 0", ""]]
-
-for i in range(3):
-    tests.append(["Couleur aléatoire", "'Couleur aléatoire' " + str(randint(0,255)) + " " + str(randint(0,255)) + " " + str(randint(0,255)), "" ])
-
-
-graderII(tests)
+tests== 
+[ ["Simple", "Rouge 255 0 0", ""],
+	["Simple", "Bleu 0 0 255", ""],
+  ["Simple", "Violet 255 0 255", ""],
+	["Simple", "Noir 0 0 0", ""]]
+  ["Couleur aléatoire", "'Couleur aléatoire' " + " ".join([str(random.randint(0,255)) for i in range(3)]), ""],
+  ["Couleur aléatoire", "'Couleur aléatoire' " + " ".join([str(random.randint(0,255)) for i in range(3)]), ""],
+  ["Couleur aléatoire", "'Couleur aléatoire' " + " ".join([str(random.randint(0,255)) for i in range(3)]), ""] ]
 ==
+
 
