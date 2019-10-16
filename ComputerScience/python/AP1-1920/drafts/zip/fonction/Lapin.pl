@@ -34,7 +34,7 @@ Entrez une population : 45 <br>
 en 9 mois 56 lapins<br>
 
 
-
+**#d'après Laure Petrucci**
 ==
 before==
 import random
