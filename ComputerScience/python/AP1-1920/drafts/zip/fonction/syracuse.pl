@@ -6,38 +6,39 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 title =Suire de Syracuse
 text==  
-La suite de Syracuse est définie par :
+La suite de Syracuse est une suite d'entiers définie par :
 
-*$%u_0 \gt 0%$
+* $%u_0 \gt 0%$
 
-*$%u_{n+1}=u_n/2%$ si n est pair<br>
-*$%u_{n+1}=3u_n+1%$ si n estimpair<br>
-Ecrire une fontion *factoriel(n)* qui reçoit un entier positif et renvoie sa factorielle.
+* $%u_{n+1}=u_n/2%$ si n est pair<br>
+* $%u_{n+1}=3u_n+1%$ si n est impair<br>
+Pour tout entier strictement positif $%u_0%$ testé, la suite converge vers 1. Le premier n 
+tel que $%u_n=1%$ est appelé temps de vol de la suite.
+Le but de l'exercice est dedéterminer de temps de vol pour plusieurs valeurs de
+$%u_0%$.<br>
+Pour cela:
+* écrire une fontion *Saisie_strict_positif* qui renvoie un entier strictement positif
+entré par l'utilisateur.
 
-Si l'entier est négatif la fonction renvoie *None*
+Ecrire une fontion *syracuse_temps(u)* qui reçoit un entier strictement positifs 
+et renvoie le temps de vol de lasuite pour $%u_0=u%$<br>
 
-Ecrire une fontion *combinaison(n,p)* qui reçoit deux entiers positifs 
-et renvoie le nombre de combinaions de p éléments choisis parmi n éléments.
-$%\binom{n}{p}%$<br>
-On rappelle que ce nombre vaut $%\frac{n!}{p! \times(n-p)!} %$ si $%0 \le p\le n %$ et 0 sinon.
-
-Utilisez ces fonctions pour écrire un programme qui lit un entier n et, s'il est positif, affiche une ligne
-indiquant les coefficients de développement de $%(a+b)^n%$.
-
-Le programme affiche "non défini" si n est négatif<br>
+Utilisez ces fonctions pour écrire un programme qui lit 5 entiers strictement positifs
+ et affiche le temps de vol pour chacun de ces entiers n 
 Exemples
+ 
+Entrez un entier strictement positif : 5 <br>
+Le temps de vol pour 5 est <br>
+Entrez un entier strictement positif : 3<br>
+Le temps de vol pour 3 est <br>
+Entrez un entier strictement positif : -1<br>
+Entrez un entier strictement positif : 11<br>
+Le temps de vol pour 11 est <br>
+Entrez un entier strictement positif : 155 <br>
+Le temps de vol pour 155 est <br>
+Entrez un entier strictement positif : 1 <br>
+Le temps de vol pour 1 est 0<br>
 
-Entrez un entier positif :0 <br>
-1<br>
-Entrez un entier positif : 3<br>
-1 3 3 1<br>
-Entrez un entier positif : -1<br>
-non défini<br>
-
-Remarque
-
-*Cette méthode n'est pas efficace pour de grandes valeurs de n et p (elle effectue beaucoup de calculs inutiles).
-Nous en étudirons une meilleure plus tard.*
 ==
 before==
 import random
