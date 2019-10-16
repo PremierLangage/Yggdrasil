@@ -1,5 +1,6 @@
 import uuid
 from components import Component
+import random as rd
 
 def checkradio(radio,idsol):
     S=radio.selection
