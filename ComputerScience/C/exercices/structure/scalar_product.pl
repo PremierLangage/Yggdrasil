@@ -74,7 +74,7 @@ int main(int argc, char* argv[]){
 tests== 
 [ ["Simple", "1 1 1 1 1 1", ""],
 	["Nul1", "1 1 0 1 -1 1", ""],
-  ["Nul2", "-2 1 1 1 1 1", ""]]
+  ["Nul2", "-2 1 1 1 1 1", ""],
   ["vecteurs aléatoires", " ".join([str(random.randint(-10,10)) for i in range(6)]), "" ],
   ["vecteurs aléatoires", " ".join([str(random.randint(-10,10)) for i in range(6)]), "" ],
   ["vecteurs aléatoires", " ".join([str(random.randint(-10,10)) for i in range(6)]), "" ],
