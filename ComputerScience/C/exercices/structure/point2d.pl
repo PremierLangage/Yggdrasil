@@ -8,9 +8,9 @@ tag=structure
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-Déclarer et définir une *structure* C nommé **Point2d**. Cette structure
-devra contenir deux champs entiers nommé **abs** pour abcisse et **ord**
-pour ordonné.
+Déclarez et définissez une *structure* C nommé **Point2d**. Cette structure
+devra contenir deux champs entiers nommés **abs** pour abcisse et **ord**
+pour ordonnée.
 
 ==
 
