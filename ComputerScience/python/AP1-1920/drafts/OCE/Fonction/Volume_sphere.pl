@@ -39,12 +39,12 @@ print("Le volume de cette sphere vaut", volume_sphere(r))
 ==
 
 mplsoluce0==
-False
-2
+Positif_reel
+10.4
 ==
 mplsoluce1==
-False
-3
+Negatif_reel
+-5
 ==
 
 mplsoluce2==
