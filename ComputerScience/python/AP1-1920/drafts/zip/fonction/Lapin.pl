@@ -21,7 +21,8 @@ de couples de lapins ayant un mois, et le nombre de couples de lapins
 ayant 2 mois ou plus*).<br>
 * Utiliser cette fonction pour écrire un programme qui :<br>
 1) lit un nombre de mois et affiche le nombre de lapins quand ce nombre de mois est écoulé
-2 lit un nombre de lapins et détermine au bout de combien de mois cette population est atteinte.
+<br>
+2) lit un nombre de lapins et détermine au bout de combien de mois cette population est atteinte.
   
 
 
