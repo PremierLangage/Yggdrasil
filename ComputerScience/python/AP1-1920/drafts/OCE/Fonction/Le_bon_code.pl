@@ -4,71 +4,48 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-drag1 =: DragDrop
-drag1.content = $$\in$$
+# DECLARATION
+sortlist =: SortList
 
-drag2 =: DragDrop
-drag2.content = $$\subset$$
-
-before== #|python|
-sets = [
-    ("1", drag1.cid, "{1, 2, 3}"),
-    ("{1}", drag2.cid, "{ {1}, 2, 3}"),
-    ("{1, 1}", drag2.cid, "{ {1, 2}, 3}"),
-    ("3", drag1.cid, "{1, 2, 3}"),
+sortlist.items %= #|json|
+[
+    { "id": "", "content": "First Item" },
+    { "id": "", "content": "Second Item" },
+    { "id": "", "content": "Third Item" }
 ]
-
-drops = []
-for i in range(len(sets)):
-    drop = DragDrop(
-        id=f"drop{i}",
-        droppable=True
-    )
-    drops.append(drop)
-
-    # add the component to the global context
-    # so it can be synced by the framework
-    globals()[drop.id] = drop
 ==
 
-title==
-Drag Drop
+# RANDOMIZATION
+before== #|python|
+import random
+import uuid
+answer = []
+for e in sortlist.items:
+    # generate random id because students can
+    # guest the answer if ids like 1, 2, 3 are used
+    e["id"] = uuid.uuid4()
+    answer.append(e["id"])
+random.shuffle(sortlist.items)
 ==
 
-text==
-==
+# FORM
+title = Sort List Component
+text = *Drag and Drop the items to sort the list*
+form = {{ sortlist|component }}
 
-form==
-{{ drag1|component }}
-{{ drag2|component }}
-<br/>
 
-<ul>
-    {% for e in sets %}
-    <li>
-        {{ e[0] }}
-        {{ drops[loop.index0]|component }}
-        {{ e[2] }}
-    </li>
-    {% endfor %}
-</ul>
-==
-
-evaluator==
+# EVALUATION
+evaluator== #|python|
 errors = 0
-for i, e in enumerate(sets):
-    drop = globals()[f'drop{i}']
-    drop.css = 'success-state anim-rotate-in'
-    if drop.droppedId != e[1]:
-        drop.css = 'error-state anim-bounce'
+for i, e in enumerate(sortlist.items):
+    e['css'] = 'success-state anim-fade'
+    if e['id'] != answer[i]:
+        e['css'] = 'error-state anim-fade'
         errors += 1
 
-n = len(sets)
 if errors == 0:
-    grade = (100, f'<span class="success-state">{n}/{n}</span>')
+    grade = (100, '<span class="success-state">Good answer</span>')
 else:
-    grade = (100, f'<span class="error-state">{n - errors}/{n}</span>')
+    grade = (0, f'<span class="error-state">{ errors } wrong answers</span>')
 ==
-
-
 
