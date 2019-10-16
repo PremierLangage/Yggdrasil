@@ -27,7 +27,7 @@ Ecrivez ensuite un code qui demande à l'utilisateur un entier, appel la fonctio
 
 soluce==#|python|
 def carre(n):
-return(n*n)
+    return(n*n)
 
 n = int(input("Saisisez un entier :))
 print(carre(n))
