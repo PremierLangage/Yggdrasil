@@ -22,6 +22,7 @@ match.loadContent(source,target)
 ==
 
 title==
+{{rows}}
 Capitales des pays d'Europe
 ==
 
