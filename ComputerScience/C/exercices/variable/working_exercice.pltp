@@ -4,8 +4,10 @@ introduction==
 Les exercices suivants portent sur la notion de variable.
 ==
 
+@ /ComputerScience/C/exercices/variable/carac_var.pl
 @ /ComputerScience/C/exercices/variable/identificateur.pl
 @ /ComputerScience/C/exercices/variable/right_value.pl
 @ /ComputerScience/C/exercices/variable/left_value.pl
 @ /ComputerScience/C/exercices/variable/order_size.pl
 @ /ComputerScience/C/exercices/variable/modelisation.pl
+
