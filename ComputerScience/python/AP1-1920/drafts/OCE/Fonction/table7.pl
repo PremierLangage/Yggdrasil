@@ -25,7 +25,7 @@ Programmer une fonction "table" qui : <br
 * prend en paramètre deux entiers : <br>
    + un entier n <br>
    + un entier strictement positif k <br>
-* imprime les "k" premiers multiple de "n"
+* imprime les "k" premiers multiples de "n"
 
 Pour finir écrivez un code : <br>
 * qui demande à l'utilisateur deux entiers (dont un strictement positif), <br>
