@@ -15,8 +15,6 @@ ___
 pltext==
 >>>val_abs(4)==4
 True 
->>>val_abs(-74)==74
-True 
->>>val_abs(0)==0
-True 
+
 ==
+
