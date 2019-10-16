@@ -37,7 +37,7 @@ codeafter==
 int main(int argc, char* argv[]){
   Point2d G = {12, -3};
 
-  printf("Le point G est bien déclaré et a pour abcisse 12==%d et ordonne -3==%d.\n", G.abs, G.ord);
+  printf("Le point G est bien déclaré et a pour abcisse 12==%d et ordonnée -3==%d.\n", G.abs, G.ord);
   return 0;
 }
 
