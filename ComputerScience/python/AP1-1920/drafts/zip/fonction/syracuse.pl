@@ -20,11 +20,11 @@ Pour cela:
 * écrire une fontion *Saisie_strict_positif* qui renvoie un entier strictement positif
 entré par l'utilisateur.
 
-Ecrire une fontion *syracuse_temps(u)* qui reçoit un entier strictement positifs 
+* écrire une fontion *syracuse_temps(u)* qui reçoit un entier strictement positifs 
 et renvoie le temps de vol de lasuite pour $%u_0=u%$<br>
 
-Utilisez ces fonctions pour écrire un programme qui lit 5 entiers strictement positifs
- et affiche le temps de vol pour chacun de ces entiers n 
+* utilisez ces fonctions pour écrire un programme qui lit 5 entiers strictement positifs
+ et affiche le temps de vol pour chacun de ces entiers.<br> 
 Exemples
  
 Entrez un entier strictement positif : 5 <br>
