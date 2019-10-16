@@ -8,7 +8,7 @@ text==
 On suppose qu'il existe une variables `n` de valeur entière strictement positive.  
 
 Écrivez un programme qui affiche les `n` premières valeurs de la fonction factorielle
-sous la forme `n! = x` (une valeur par ligne).
+sous la forme `n! = x` en partant de 1! (une valeur par ligne).
 ___
 Pour `n = 5`, le programme devra par exemple afficher:
 <pre><code>
