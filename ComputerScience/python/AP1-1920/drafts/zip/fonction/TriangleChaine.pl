@@ -38,9 +38,10 @@ import random
 
 mplsoluce2="Test aléatoire\n"
 n=random.randint(4,7)
+
 mplsoluce2 += str(n)+"\n"
 ==
-
+mplsoluce2 +="hi"
 soluce==
 
 def desEtoiles(n,ch):
@@ -65,10 +66,12 @@ for i in range(n-1):
 mplsoluce0==
 classique
 3
+*
 ==
 mplsoluce1==
 negatif
 -9
++
 ==
 
 
