@@ -61,9 +61,9 @@ def ligne_chaine(n,ch):
 n=int(input("Entrez un entier : "))
 ch=input("Entrez une chaine : ")
 for i in range(1,n+1):
-    print(ligne_chaine(i),ch)
+    print(ligne_chaine(i,ch))
 for i in range(n-1):
-    print(ligne_chaine(n-1-i),ch)
+    print(ligne_chaine(n-1-i,ch))
 
 
 ==
