@@ -26,10 +26,10 @@ class CustomMatchList(Component):
 
     def loadContent(self,source,target):
         self.nodes = []
-        expected = []
+        self._expected = []
         for i in range(len(source)):
-            sourceId = "source" + str(i)
-            targetId = "target" + str(i)
+            sourceId = uuid.uuid4()
+            targetId = uuid.uuid4()
 
             self.nodes.append({
                 "id": sourceId,
@@ -42,8 +42,32 @@ class CustomMatchList(Component):
                 "content": target[i],
                 "target": True,
             })
-            expected.append({ "source": sourceId, "target": targetId })
+            _expected.append({ "source": sourceId, "target": targetId })
         rd.shuffle(self.nodes)
+
+    def eval(self):
+        error = 0
+        for e in self.expected:
+            if not in_links(e, self.links):
+                error = error + 1
+
+        for e in self.links:
+            e['css'] = 'error-state anim-fade'
+            if in_links(e, selfexpected):
+                e['css'] = 'success-state  anim-flip'
+
+        if error == 0:
+            return (100, '')
+        else:
+            return = (0, '')
+
+def in_links(conn, links):
+    for e in links:
+        if e['source'] == conn["source"] and  e['target'] == conn["target"]:
+            return True
+    return False
+
+
     
 # RadioGroup
 
