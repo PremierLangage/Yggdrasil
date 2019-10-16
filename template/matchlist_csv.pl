@@ -10,6 +10,9 @@ import random as rd
 import csv
 from components import MatchList,Component
 
+match2=MatchList():
+
+
 class MatchList(Component):
     def loadContent(self,source,target):
         self.nodes = []
@@ -40,7 +43,7 @@ items=rd.sample(rows,nitems)
 #target=[item[coltarget] for item in items]
 source=["1","2"]
 target=["1","2"]
-match.loadContent(source,target)
+match2.loadContent(source,target)
 ==
 
 title==
