@@ -4,7 +4,7 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
-title = Calculer le carré d'un nombre
+title = Dix mais pas trois
 
 code==
 #
@@ -17,9 +17,9 @@ n = ??(input("Saisisez un entier :"))
 
 text==  
 
-Programmer une fonction "carre" qui prend en paramètre un entier et retourne son carré.<br>
+Programmer une fonction qui teste si un entier est divisible par 10 mais pas par 3. <br>
 
-Ecrivez ensuite un code qui demande à l'utilisateur un entier, appel la fonction et imprime le résultat.
+vous écrirez naturellement un programme qui récupère un entier au clavier, appel la fonction et affiche le résultat.
 
 ==
 
