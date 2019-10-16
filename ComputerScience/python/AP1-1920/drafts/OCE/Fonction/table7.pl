@@ -42,7 +42,7 @@ def table(n,x):
 n = int(input("Saisisez un entier n :"))
 k = int(input("Saisissez un entier k strictement positif : "))
 while(k<=0):
-    k = int(input("Saisissez un entier strictement positif : "))
+    k = int(input("Saisissez un entier k strictement positif : "))
 table(n,k)
 ==
 
