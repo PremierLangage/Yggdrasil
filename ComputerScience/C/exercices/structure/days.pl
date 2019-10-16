@@ -2,13 +2,10 @@
 #
 # Déclaration d'une structure C pour les jours de la semaine
 
-# DR : FIXME : je pense pas que cet exercice soit utilisable 
-
 author=Nicolas Borie
-name=Structure C pour les jours de la semaine
 title=Structure C pour les jours de la semaine
 tag=structure
-extends=/ComputerScience/C/template/autograderC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 Déclarer et définir une *structure* C nommé *Jour*. Cette structure
@@ -18,12 +15,13 @@ lundi, mardi, ...
 
 ==
 
-code==
+editor.code==
 typedef ...
 
 ==
 
 solution==
+
 typedef enum {lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche} Jour;
 
 ==
@@ -47,9 +45,7 @@ int main(int argc, char* argv[]){
 
 ==
 
-grader==
-from graderC import graderII
- 
-tests = [["Déclaration et utilisation", "",""]] 
-graderII(tests)
+tests==
+[ ["Déclaration et utilisation", "",""] ] 
 ==
+
