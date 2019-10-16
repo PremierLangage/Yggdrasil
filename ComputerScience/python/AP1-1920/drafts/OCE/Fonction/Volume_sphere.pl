@@ -21,8 +21,8 @@ Calculer le volume d'une sphère à l'aide de la formule $%V=\frac{4}{3}{\pi}R^3
 Vous devez écrire deux fonctions "cube", qui retourne le cube d'un réel et "volume_sphere" qui retourne le volume de la sphere 
 et fait appel à la fonction "cube". <br>
 
-Vous écrirez un programme demandant à un utilisateur de rentrer un réel, appelant la fonction "volume_sphere" et affichant le résultat.
-
+Vous écrirez un programme demandant à un utilisateur de rentrer un réel, appelant la fonction "volume_sphere" et affichant le résultat.<br>
+Naturellement un volume ne peut pas être négatif ...
 ==
 
 soluce==#|python|
