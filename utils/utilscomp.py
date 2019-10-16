@@ -1,5 +1,5 @@
 import random as rd
-from components import MatchList
+from components import MatchList,COmponent
 
 def checkradio(radio,idsol):
     S=radio.selection
