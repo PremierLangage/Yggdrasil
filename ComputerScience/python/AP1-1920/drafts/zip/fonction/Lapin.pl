@@ -92,12 +92,12 @@ print(" en",i,"mois",p,"lapins")
 mplsoluce0==
 classique
 3
-*
+45
 ==
 mplsoluce1==
 negatif
 -9
-+
+2
 ==
 
 
