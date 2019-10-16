@@ -1,5 +1,5 @@
 
-extends = /ComputerScience/python/AP1-1920/templates/pltestN.pl
+extends = /ComputerScience/python/AP1-1920/templates/pltest.pl
 
 # author = Zip
 
