@@ -14,7 +14,7 @@ Puis déclarer une structure *Panier* contenant un tableau de fruit de taille 4.
 
 ==
 
-code==
+editor.code==
 typedef ...
 
 ==
