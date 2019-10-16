@@ -54,7 +54,7 @@ def ligne_chaine(n,ch):
             for i in range(n-1):
                 etoile+=ch
                 s=s+"+"+etoile
-     return s
+    return s
 
 
 
