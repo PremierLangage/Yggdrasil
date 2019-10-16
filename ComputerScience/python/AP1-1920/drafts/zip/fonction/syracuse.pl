@@ -17,7 +17,7 @@ tel que $%u_n=1%$ est appelé temps de vol de la suite.
 Le but de l'exercice est dedéterminer de temps de vol pour plusieurs valeurs de
 $%u_0%$.<br>
 Pour cela:
-* écrire une fontion *Saisie_strict_positif* qui renvoie un entier strictement positif
+* écrire une fontion *saisie_strict_positif()* qui renvoie un entier strictement positif
 entré par l'utilisateur.
 
 * écrire une fontion *syracuse_temps(u)* qui reçoit un entier strictement positifs 
@@ -28,64 +28,66 @@ et renvoie le temps de vol de lasuite pour $%u_0=u%$<br>
 Exemples
  
 Entrez un entier strictement positif : 5 <br>
-Le temps de vol pour 5 est <br>
+Le temps de vol pour 7 est 16<br>
 Entrez un entier strictement positif : 3<br>
-Le temps de vol pour 3 est <br>
+Le temps de vol pour 3 est 7<br>
 Entrez un entier strictement positif : -1<br>
 Entrez un entier strictement positif : 11<br>
-Le temps de vol pour 11 est <br>
+Le temps de vol pour 14 est 17<br>
 Entrez un entier strictement positif : 155 <br>
-Le temps de vol pour 155 est <br>
+Le temps de vol pour 1256 est 39<br>
 Entrez un entier strictement positif : 1 <br>
 Le temps de vol pour 1 est 0<br>
 
 ==
 before==
 import random
-n=random.randint(4,7)
-mplsoluce3="Test aléatoire\n"
-mplsoluce3 += str(n)
+
+mplsoluce2="Test aléatoire\n"
+for i in range(5):
+    n=random.randint(4,7)
+    mplsoluce2 += str(n)+"\n"
 ==
 
 soluce==
-def factoriel(n):
-    if n<0:
-        return None
-    f=1
-    for i in range(n):
-        f*=i+1 
-    return f 
-def combinaison(n,p):
-    if n<0 or p>n:
-        return 0
-    return factoriel(n)/(factoriel(n-p)*factoriel(p))
-
-n=int(input("n"))
-if n<0:
-    print("non défini")
-else:
-    s=""
-    for p in range(n+1):
-        s+=str(int(combinaison(n,p)))+" "
-    print(s)
+def saisie_strict_positif():
+    n=int(input("Entrez un entier strictement positif : "))
+    while n<=0: 
+        n=int(input("Entrez un entier strictement positif : "))
+    return n
+def syracuse_temps(u):
+    n=0
+    while u!=1:
+        if u%2==0:
+            u=u//2
+        else:
+            u=3*u+1
+        print(u)
+        n+=1
+    return n
+for i in range(5):
+    u0= saisie_strict_positif()
+    print("Le temps de vol pour",u0 ,"est",syracuse_temps(u0))
 
 ==
 mplsoluce0==
 classique
 3
+8
+7
+19
+155
 ==
 mplsoluce1==
 negatif
 -9
-==
-
-mplsoluce2==
-nul
-0
-==
-mplsoluce4==
-un
+2
 1
+5
+16
+0
+11
+
 ==
 
 
