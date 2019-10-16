@@ -84,7 +84,7 @@ p=2*lapin(i)
 while p<nb:
     i=i+1
     p=2*lapin(i)
-print(" en",i,"mois",2*lapin(i),"lapins")
+print(" en",i,"mois",p,"lapins")
 
 
 
