@@ -42,6 +42,8 @@ n=random.randint(4,7)
 mplsoluce2 += str(n)+"\n"
 ==
 mplsoluce2 +="hi"
+==
+
 soluce==
 
 def desEtoiles(n,ch):
