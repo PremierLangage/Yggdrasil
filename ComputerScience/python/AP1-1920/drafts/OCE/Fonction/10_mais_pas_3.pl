@@ -35,16 +35,16 @@ print(dix_mais_pas_trois(n))
 ==
 
 mplsoluce0==
-paire
+False
 2
 ==
 mplsoluce1==
-impaire 
+False
 3
 ==
 
 mplsoluce2==
-Grand 
+True
 10
 ==
 
