@@ -4,6 +4,7 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
+title =Suite de Syracuse
 text==  
 La suite de Syracuse est une suite d'entiers définie par :
 
