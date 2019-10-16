@@ -24,15 +24,30 @@ Programmer une fonction "carre" qui prend en paramètre un entier et retourne so
 Appeler cette fonction pour en imprimer le résultat.
 
 ==
-soluce==#Python
-def carre():
 
-
-==
-plsoluce==
-
+soluce==#|python|
+def carre(n):
+return(n*n)
 ==
 
+mplsoluce0==
+paire
+2
+==
+mplsoluce1==
+impaire 
+3
+==
+mplsoluce2==
+Grand 
+30
+46
+==
+mplsoluce5==
+nul
+0
+0
+==
 
 
 
