@@ -4,7 +4,7 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
-title = Calculer le carré d'un nombre
+title = Afficher les k premiers carrés de 0 à (k-1)^2
 
 code==
 n= int(input("Entrez un nombre : "))
