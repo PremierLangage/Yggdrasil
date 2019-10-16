@@ -38,11 +38,12 @@ mplsoluce1==
 impaire 
 3
 ==
+
 mplsoluce2==
 Grand 
-30
-46
+10
 ==
+
 mplsoluce5==
 nul
 0
