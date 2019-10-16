@@ -49,7 +49,7 @@ mplsoluce2 += str(n)+"\n"
 
 soluce==
 
-def desEtoiles(n):
+def ligne_etoile(n):
     s=""
     if n>0:
         s="*"
@@ -63,9 +63,9 @@ def desEtoiles(n):
 
 n=int(input())
 for i in range(1,n+1):
-    print(desEtoiles(i))
+    print(ligne_etoile(i))
 for i in range(n-1):
-    print(desEtoiles(n-1-i))
+    print(ligne_etoile(n-1-i))
 ==
 mplsoluce0==
 classique
