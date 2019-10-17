@@ -8,7 +8,7 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title =Triangle étoilé
 text==  
-on veut dessiner à l'aide d'étoiles '*' et de plus "+" des triangles de la forme
+On veut dessiner à l'aide d'étoiles '\*' et de plus "+" des triangles de la forme
 *
 *+**
 *+**+***
@@ -22,13 +22,13 @@ et renvoie une chaine formée de : <br>
     si elle reçoit 4 elle renvoie "\*+\*\*+\*\*\*+\*\*\*\*".<br>
     si elle reçoit 1 elle renvoie "*"<br>
     si elle reçoit un entier inférieure à 1 elle renvoie la chaine vide.
-
-* utilisez cette fonction pour écrire un programme qui lit un entier n et si n est >0 et affiche le triangle
-qui contient une suite de n "*"
+* utilisez cette fonction pour écrire une fonction 'triangeetoile(n) qui reçoit un entier n 
+ et si n est >0 et affiche le triangle
+qui contient une suite de n "*" séparés par des '+'
 
 Exemple
  
-Entrez un entier : 5 <br>
+>>> triangeetoile(5)
 *<br>
 *+**<br>
 *+**+***<br>
