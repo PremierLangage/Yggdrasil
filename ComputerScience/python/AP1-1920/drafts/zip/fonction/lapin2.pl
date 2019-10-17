@@ -74,8 +74,24 @@ pltest3=""">>> lapin({})\n{}""".format(n, lapin(n))
 ==
 
 after==
+def lapin(mois):
+    if mois<0:
+        return 0
+    vieux=1    
+    ado1=0
+    ado2=0
+    jeune=0
+    
+    if mois>1:
+        for i in range(1,mois):
+            vieux+=ado2
+            ado2=ado1
+            ado1=jeune
+            jeune=vieux
+    #return jeune,ado1,ado2,vieux
+    return jeune+ado1+ado2+vieux
 import random, sys
 n=random.randint(44,89)
-print(" <br/>coucou<br/>", file=sys.stderr)
-pltest3=""">>> lapin({})\n{}""".format(n, lapin(n))
+print(" <br/>benur<br/>", file=sys.stderr)
+pltest4=""">>> lapin({})\n{}""".format(n, lapin(n))
 ==
