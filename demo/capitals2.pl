@@ -2,11 +2,12 @@ extends = /template/matchlist_csv.pl
 
 @ country_data.csv [data.csv]
 
-colsource % 0
+colsource = country
 
-coltarget % 2
+coltarget = capital
 
 nitems % 4
+
 
 
 
