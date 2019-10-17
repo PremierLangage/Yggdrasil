@@ -9,10 +9,11 @@ radio =: RadioGroup
 radio.decorator = CustomRadioGroup
 
 before ==
-radio.loadContent(["A","B","C","D"])
+radio.loadContent(["Paris","Lille","Lyon","Marseille"])
+radio.shuffle()
 ==
 
-text = Select the right answer
+text = Quelle est la capitale de la France
 
 form = {{ radio|component }}
 
