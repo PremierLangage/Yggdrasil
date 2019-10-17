@@ -1,9 +1,9 @@
-# Copyright 2016 Nicolas Borie <nicolas.borie@u-pem.fr>
+# Copyright 2016-2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
 # Macro à paramètre avec un dièse sur argument
 
 author=Nicolas Borie
-title=Macro chaine depuis argument 
+title=Macro chaîne depuis argument 
 tag=macro
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
@@ -14,7 +14,7 @@ expression C s'évaluant dans les entiers.
 En imaginant que cette expression soit `12*2`, votre macro devra
 afficher sur la sortie standard 
 `12*2 = 24`
-et retourner à la ligne juste derrière le dernier entier. 
+et **retourner à la ligne** juste derrière le dernier entier. 
     
 Pour rappel, les arguments des macros ne sont pas typé. Le
 préprocesseur ne fait que des inclusions et subistitutions. Lorsqu'une
@@ -56,5 +56,6 @@ int main(int argc, char* argv[]){
 tests==
 [["quelques expressions", "",""]] 
 ==
+
 
 
