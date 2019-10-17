@@ -7,14 +7,9 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 title = Valeur absolue
 
 text==
+Écrivez une fonction **val_abs(x)**  qui renvoie la valeur absolue
+ de son paramètre
 
-
-Écrivez une fonction val_abs(x)  qui renvoie la valeur absolue de son paramètre
-def val_abs(x):
-    if x<0:
-        x=-x
-    return x
-___
 ==
 
 pltest==
@@ -27,4 +22,11 @@ pltest==
 pltest1==
 >>> val_abs(4) == 4
 True
+==
+
+zippourmoi==
+def val_abs(x):
+    if x<0:
+        x=-x
+    return x
 ==
