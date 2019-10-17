@@ -6,6 +6,9 @@ from sandboxio import output, get_context, get_answers
 from pltest_doc import PlRunner
 
 
+class StopBeforeExec(Exception):
+    pass
+
 def checktaboo(taboo, answer):
     x = re.sub("(\"(.|\n)*\"|#.*)", "", answer) #enlève les commentaires et les chaînes de caractères
     # FIXME la chaine de caractère ""  letaboo "" est elle trouvée par la regex suivante ? 
