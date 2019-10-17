@@ -3,7 +3,7 @@
 @ /grader/evaluator.py [grader.py]
 @ /utils/radiogroup.py [customradiogroup.py]
 
-title = Question à choix multiples
+title = Question à choix multiples (radio)
 
 radio =: RadioGroup
 radio.decorator = CustomRadioGroup
