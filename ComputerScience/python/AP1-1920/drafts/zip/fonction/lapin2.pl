@@ -67,8 +67,8 @@ def lapin(mois):
     return jeune+ado1+ado2+vieux
 
 import random, sys
-r=random.seed)
-n=r.randint(44,89)
+
+n=random.randint(44,89)
 print(" coucou", file=sys.stderr)
 pltest3=""">>> lapin({})\n{}""".format(n, lapin(n))
 ==
