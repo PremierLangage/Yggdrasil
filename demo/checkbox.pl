@@ -5,7 +5,7 @@
 
 title = Question à choix multiples (checkbox)
 
-checkbox =: CheckBox
+checkbox =: CheckBoxGroup
 checkbox.decorator = CustomCheckBox
 
 before ==
