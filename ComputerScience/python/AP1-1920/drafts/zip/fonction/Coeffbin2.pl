@@ -37,8 +37,8 @@ Nous en étudirons une meilleure plus tard.*
 before==
 import random
 n=random.randint(4,7)
-mpltest3=">>> coefficients(n)\n"
-mplsoluce3 += str(coefficients(n))
+pltest3=">>> coefficients(n)\n"
+pltest3 += str(coefficients(n))
 ==
 
 zsoluce==
