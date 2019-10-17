@@ -74,8 +74,20 @@ if __name__ == "__main__":
     outstr +=  b
     if "feedback" in dic: # FIXME feedback devrait être un dictionnaire.
         outstr += dic["feedback"]+" valeur de stop "+ str(stop)
+    
+    if "after" in dic and a !=100:
+        glob = {}
+        dic['StopBeforeExec'] = StopBeforeExec
+        print(add_try_clause(dic['after'], StopBeforeExec), file=sys.stderr)
+        exec(add_try_clause(dic['after'], StopBeforeExec), dic)
+        exec("", glob)
+        for key in glob:
+            if key in dic and dic[key] == glob[key]:
+                del dic[key]
+
     output(a,outstr)
     
+
 
 
 
