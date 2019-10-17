@@ -3,7 +3,7 @@
 @ /grader/evaluator.py [grader.py]
 @ /utils/checkbox.py [customcheckbox.py]
 
-title = Question à choix multiples (radio)
+title = Question à choix multiples (checkbox)
 
 checkbox =: CheckBox
 checkbox.decorator = CustomCheckBox
