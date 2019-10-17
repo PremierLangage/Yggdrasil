@@ -73,7 +73,7 @@ True
 pltest1==
 #negatif
 >>> coefficients(-9)
-"non défini"
+'non défini'
 ==
 
 
