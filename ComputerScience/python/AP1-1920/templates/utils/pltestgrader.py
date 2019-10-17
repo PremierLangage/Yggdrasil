@@ -5,10 +5,8 @@ import sys, jsonpickle,re
 from sandboxio import output, get_context, get_answers
 from pltest_doc import PlRunner
 
-
 class StopBeforeExec(Exception):
     pass
-
 
 
 def add_try_clause(code, excpt):
@@ -16,7 +14,6 @@ def add_try_clause(code, excpt):
     code = code.replace('\t', '    ')
     return ("try:\n    ...\n" + '\n'.join(["    " + line for line in code.split('\n')])
             + "\nexcept " + excpt.__name__ + ":\n    pass")
-
 
 
 
