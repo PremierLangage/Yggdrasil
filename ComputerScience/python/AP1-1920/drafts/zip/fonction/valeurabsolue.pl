@@ -1,6 +1,7 @@
 
-extends = /ComputerScience/python/AP1-1920/templates/pltest.pl
+fextends = /ComputerScience/python/AP1-1920/templates/pltest.pl
 
+extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 # author = Zip
 
 title = Valeur absolue
@@ -15,6 +16,6 @@ ___
 pltext==
 >>>val_abs(4)==4
 True 
-
 ==
+
 
