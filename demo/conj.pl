@@ -14,7 +14,7 @@ conj=lst_conj[i]
 ==
 
 text ==
-Conjuguer le verbe manger à la 
+Conjuguer le verbe manger
 ==
 
 input =: Input
