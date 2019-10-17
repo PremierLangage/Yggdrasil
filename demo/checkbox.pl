@@ -1,7 +1,7 @@
 @ /utils/sandboxio.py
 @ /builder/before.py [builder.py]
 @ /grader/evaluator.py [grader.py]
-@ /utils/checkbox.py [customcheckbox.py]
+@ /utils/checkbox.py [customcheckboxgroup.py]
 
 title = Question à choix multiples (checkbox)
 
