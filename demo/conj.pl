@@ -21,7 +21,7 @@ input =: Input
 input.type = text
 
 form ==
-{{pronom}} = {{ input | component }}
+{{pronom}}  {{ input | component }}
 ==
 
 evaluator ==
