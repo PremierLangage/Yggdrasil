@@ -6,7 +6,7 @@ title = Conjugaison
 
 before ==
 import random as rd
-lst_pronom=['je','tu','il/elle','nous','vous','ils/elles']
+lst_pronom=['je','tu',rd.choice(['il','elle']),'nous','vous',rd.choice(['ils','elles'])]
 lst_conj=['mange','manges','mange','mangeons','mangez','mangent']
 i=rd.randint(0,5)
 pronom=lst_pronom[i]
@@ -14,7 +14,7 @@ conj=lst_conj[i]
 ==
 
 text ==
-Conjuguer le verbe manger
+Conjuguer le verbe manger au présent pour le pronom donné ci-dessous.
 ==
 
 input =: Input
