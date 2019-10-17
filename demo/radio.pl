@@ -18,7 +18,7 @@ text = Quelle est la capitale de la France
 form = {{ radio|component }}
 
 evaluator ==
-grade = radio.evalByContent("B")
+grade = radio.evalByContent("Paris")
 ==
 
 
