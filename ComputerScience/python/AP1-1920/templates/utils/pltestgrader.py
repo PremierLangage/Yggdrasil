@@ -89,7 +89,7 @@ if __name__ == "__main__":
     if "after" in dic and a !=100:
         glob = {}
         dic['StopBeforeExec'] = StopBeforeExec
-        print(add_try_clause(dic['after'], StopBeforeExec), file=sys.stderr)
+        #print(add_try_clause(dic['after'], StopBeforeExec), file=sys.stderr)
         exec(add_try_clause(dic['after'], StopBeforeExec), dic)
         exec("", glob)
         for key in glob:
