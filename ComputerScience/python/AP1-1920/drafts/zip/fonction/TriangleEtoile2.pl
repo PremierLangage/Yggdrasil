@@ -15,7 +15,7 @@ on veut dessiner à l'aide d'étoiles '*' et de plus "+" des triangles de la for
 *+**
 *
 
-Pour cela:
+Pour cela:<br>
 * écrire une fonction **ligne_etoile(n)* qui reçoit un entier
 et renvoie une chaine formée de : <br>
 1 caractère étoile ('\*'), 2 caractères étoile ('\*'),...,n caractères étoile ('*') séparés par des caratères plus ('+').<br>
