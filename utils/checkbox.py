@@ -5,7 +5,7 @@ from components import Component
 class CustomCheckBox(Component):
 
     def __init__(self, **kwargs):
-        self.selector = 'c-radio-group'
+        self.selector = 'c-checkbox-group'
         self.decorator = 'CustomRadioGroup'
         self.items = []
         super().__init__(**kwargs)
