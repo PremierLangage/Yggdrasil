@@ -93,5 +93,5 @@ def lapin(mois):
 import random, sys
 n=random.randint(44,89)
 print(" <br/>benur<br/>"+str(n), file=sys.stderr)
-pltest4=""">>> lapin({})\n{}""".format(n, lapin(n))
+pltest3=""">>> lapin({})\n{}""".format(n, lapin(n))
 ==
