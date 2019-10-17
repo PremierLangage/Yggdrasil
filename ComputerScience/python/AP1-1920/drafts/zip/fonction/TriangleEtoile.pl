@@ -24,12 +24,13 @@ et renvoie une chaine formée de : <br>
     si elle reçoit 1 elle renvoie "*"
     si elle reçoit un entier inférieure à 1 elle renvoie la chaine vide.
 
- utilisez cette fonction pour écrire un programme qui lit un entier n et si n est >0 et affiche le triangle
-qui contient une suite de n "*"
+ utilisez cette fonction pour écrire une fonction 'triangeetoile(n) qui reçoit un entier n 
+ et si n est >0 et affiche le triangle
+qui contient une suite de n "*" séparés par des '+'
 
 Exemple
  
-Entrez un entier : 5 <br>
+>>> triangeetoile(5)
 *<br>
 *+**<br>
 *+**+***<br>
