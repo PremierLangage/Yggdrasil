@@ -1,4 +1,4 @@
-# Copyright 2016 Nicolas Borie <nicolas.borie@u-pem.fr>
+# Copyright 2016-2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
 # Fonction qui affiche la date de compilation
 
@@ -45,6 +45,7 @@ void print_compilation_date(){
 codebefore==
 
 #include <stdio.h>
+
 ==
 
 codeafter==
@@ -58,8 +59,7 @@ int main(int argc, char* argv[]){
 ==
 
 tests==
-
-[["Exécution simple", "",""]]
-
+[ ["Exécution simple", "",""] ]
 ==
+
 
