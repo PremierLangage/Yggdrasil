@@ -27,7 +27,6 @@ pas oublier le point ainsi que le retour à la ligne en fin de phrase.
 ==
 
 editor.code==
-
 ... print_compilation_date(...){
   ...
 }
