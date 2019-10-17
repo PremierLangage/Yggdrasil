@@ -1,4 +1,4 @@
-# Copyright 2016 Nicolas Borie <nicolas.borie@u-pem.fr>
+# Copyright 2016-2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
 # Macro à paramètre pour calculer un carré
 
@@ -43,6 +43,7 @@ int main(int argc, char* argv[]){
 ==
 
 tests==
-[["expressions classiques", "",""]] 
+[ ["expressions classiques", "",""] ]
 ==
+
 
