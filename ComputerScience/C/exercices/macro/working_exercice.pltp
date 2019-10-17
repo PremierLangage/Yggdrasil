@@ -1,12 +1,12 @@
-title=Exercices fonctionnels sur la notion de macro
+title=Exercices avec des macros préprocesseurs
 
 introduction==
-Les exercices qui suivent fonctionnent tous le 16 octobre 2018.
+Les exercices qui suivent vous feront travailler avec les macros préprocesseurs. Vous savez, 
+toutes ces instructions qui commencent par un dièse #. 
+
 ==
 
 @ /ComputerScience/C/exercices/macro/date.pl
-@ /ComputerScience/C/exercices/macro/expr_eval.pl
-@ /ComputerScience/C/exercices/macro/graphic_constants.pl
-@ /ComputerScience/C/exercices/macro/square.pl
+
 
 
