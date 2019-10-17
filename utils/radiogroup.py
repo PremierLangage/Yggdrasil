@@ -28,10 +28,7 @@ class CustomRadioGroup(Component):
                 e['css'] = 'success-state'
                 if e['id'] == selectedId:
                     score = 100
-                    feedback = '<span class="success-state">Good answer</span>'
             elif e['id'] == selectedId:
                 score = 0
                 e['css'] = 'error-state'
-                feedback = '<span class="error-state">Bad answer</span>'
-
-        return score, feedback
+        return score, ""
