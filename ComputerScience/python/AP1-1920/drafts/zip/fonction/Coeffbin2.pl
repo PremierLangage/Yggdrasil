@@ -37,8 +37,7 @@ Nous en étudirons une meilleure plus tard.*
 sbefore==
 import random
 n=random.randint(4,7)
-mplsoluce3=">>>\n"
-mplsoluce3 += str(n)
+mpltest3=">>> coefficients(n)\n"
 ==
 
 zsoluce==
@@ -76,4 +75,7 @@ pltest1==
 'non défini'
 ==
 
-
+pltest2==
+>>> coefficients(5)
+'1 5 10 10 5 1'
+==
