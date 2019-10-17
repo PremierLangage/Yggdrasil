@@ -30,4 +30,4 @@ class CustomRadioGroup(Component):
             elif e['id'] == selectedId:
                 score = 0
                 e['css'] = 'error-state'
-        return score, ""
+        return (score, "")
