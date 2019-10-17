@@ -1,0 +1,8 @@
+
+def lapin(n):
+    if n==4:
+        return 4
+    if n==43:
+        return 12322413
+
+    
