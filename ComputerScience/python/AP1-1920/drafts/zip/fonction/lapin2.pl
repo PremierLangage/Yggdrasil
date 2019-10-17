@@ -44,7 +44,29 @@ True
 ==
 
 pltest2==
->>>  lapin(43) # Beaucoup de lapins
+>>> lapin(43) # Beaucoup de lapins
 12322413
 ==
 
+before==
+def lapin(mois):
+    if mois<0:
+        return 0
+    vieux=1    
+    ado1=0
+    ado2=0
+    jeune=0
+    
+    if mois>1:
+        for i in range(1,mois):
+            vieux+=ado2
+            ado2=ado1
+            ado1=jeune
+            jeune=vieux
+    #return jeune,ado1,ado2,vieux
+    return jeune+ado1+ado2+vieux
+
+import random
+n=random.randint(44,89)
+pltest3=""">>> lapin({})\n{}""".format(n, lapin(n))
+==
