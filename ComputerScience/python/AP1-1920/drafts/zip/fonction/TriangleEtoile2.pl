@@ -6,7 +6,7 @@
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
 
-title =triangle étoilé
+title =Triangle étoilé
 text==  
 on veut dessiner à l'aide d'étoiles '*' et de plus "+" des triangles de la forme
 *
@@ -19,8 +19,8 @@ Pour cela:<br>
 * écrire une fonction **ligne_etoile(n)** qui reçoit un entier
 et renvoie une chaine formée de : <br>
 1 caractère étoile ('\*'), 2 caractères étoile ('\*'),...,n caractères étoile ('*') séparés par des caratères plus ('+').<br>
-    si elle reçoit 4 elle renvoie "\*+**+***+****".<br>
-    si elle reçoit 1 elle renvoie "*"
+    si elle reçoit 4 elle renvoie "\*+\*\*+\*\*\*+\*\*\*\*".<br>
+    si elle reçoit 1 elle renvoie "*"<br>
     si elle reçoit un entier inférieure à 1 elle renvoie la chaine vide.
 
 * utilisez cette fonction pour écrire un programme qui lit un entier n et si n est >0 et affiche le triangle
