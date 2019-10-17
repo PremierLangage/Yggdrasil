@@ -20,8 +20,12 @@ Conjuguer le verbe manger
 input =: Input
 input.type = text
 
+
+
 form ==
-{{pronom}}  {{ input | component }}
+<div style="display:flex;align-items:center;">
+<span> {{pronom}} </span>{{input|component}}
+</div>
 ==
 
 evaluator ==
