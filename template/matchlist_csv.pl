@@ -10,7 +10,7 @@ before==
 import random as rd
 import csv
 
-with open('data.csv','r') as file:
+with open('data.csv','r',newline='') as file:
     rows=list(csv.reader(file,delimiter=','))
 
 items=rd.sample(rows,3)
