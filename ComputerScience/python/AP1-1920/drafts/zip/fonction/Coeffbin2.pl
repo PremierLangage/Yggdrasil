@@ -62,7 +62,7 @@ import random, sys
 
 n=random.randint(4,8)
 
-pltest3=""">>> coefficients({})\n{}""".format(n, coefficients(n))
+pltest3=""">>> coefficients({})\n'{}'""".format(n, coefficients(n))
 ==
 
 zsoluce==
