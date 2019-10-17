@@ -19,7 +19,7 @@ ___
 
 pltest==
 >>> val_abs(4) == 4
-True 
+True
 >>> val_abs(-44)
 44
 ==
