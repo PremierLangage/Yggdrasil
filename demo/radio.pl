@@ -13,7 +13,7 @@ radio.loadContent(["Paris","Lille","Lyon","Marseille"])
 radio.shuffle()
 ==
 
-text = Quelle est la capitale de la France
+text = Quelle est la capitale de la France ?
 
 form = {{ radio|component }}
 
