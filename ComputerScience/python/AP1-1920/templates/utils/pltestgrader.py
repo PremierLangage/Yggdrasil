@@ -9,6 +9,17 @@ from pltest_doc import PlRunner
 class StopBeforeExec(Exception):
     pass
 
+
+
+def add_try_clause(code, excpt):
+    """Add a try/except clause, excepting 'excpt' around code."""
+    code = code.replace('\t', '    ')
+    return ("try:\n    ...\n" + '\n'.join(["    " + line for line in code.split('\n')])
+            + "\nexcept " + excpt.__name__ + ":\n    pass")
+
+
+
+
 def checktaboo(taboo, answer):
     x = re.sub("(\"(.|\n)*\"|#.*)", "", answer) #enlève les commentaires et les chaînes de caractères
     # FIXME la chaine de caractère ""  letaboo "" est elle trouvée par la regex suivante ? 
