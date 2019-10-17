@@ -38,6 +38,7 @@ before==
 import random
 n=random.randint(4,7)
 mpltest3=">>> coefficients(n)\n"
+mplsoluce3 += str(coefficients(n))
 ==
 
 zsoluce==
