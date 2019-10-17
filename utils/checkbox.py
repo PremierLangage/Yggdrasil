@@ -25,16 +25,16 @@ class CustomCheckBox(Component):
     def sort(self):
         rd.sort(self.items)
 
-    def evalByContent(self,sol):
+    def evalByContent(self,content):
         ansright,answrong=0,0
         for item in self.items:
-            if item['content'] in right and item['checked']:
+            if item['content'] in content and item['checked']:
                 item['css'] = 'success-state anim-fade'
                 ansright+=1
-            elif item['content'] in right and not item['checked']:
+            elif item['content'] in content and not item['checked']:
                 item['css'] = 'success-state anim-fade'
                 answrong+=1
-            elif not (item['content'] in right) and item['checked']:
+            elif not (item['content'] in content) and item['checked']:
                 answrong+=1
         score=max([int((ansright-answrong)/ansright*100),0])
         return(score,"")
