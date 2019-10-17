@@ -2,7 +2,7 @@ import uuid
 import random as rd
 from components import Component
 
-class CustomCheckBox(Component):
+class CustomCheckbox(Component):
 
     def __init__(self, **kwargs):
         self.selector = 'c-checkbox-group'
