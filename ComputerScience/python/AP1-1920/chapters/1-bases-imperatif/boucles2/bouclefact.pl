@@ -49,17 +49,15 @@ mplsoluce4 += str(f)+"\n"
 ==
 soluce==
 n = int(input("Un nombre : "))
-if n==1:
-    print("1=0!")
-f=1
-i=1
-while f <n:
-    f*=i
-    i+=1
-if n==f:
-    print(str(n)+"="+str(i)+"!")
+accu = 1
+i = 0
+while accu < n:
+    i += 1
+    accu *= i
+if accu == n:
+    print(str(n) + "=" + str(i) + "!")
 else:
-    print(n,"n'est pas factoriel")
+    print(n, "n'est pas factoriel")
 ==
 
 
@@ -85,6 +83,7 @@ mplsoluce5==
 nul
 1
 ==
+
 
 
 
