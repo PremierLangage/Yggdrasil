@@ -34,7 +34,7 @@ Remarque
 *Cette méthode n'est pas efficace pour de grandes valeurs de n et p (elle effectue beaucoup de calculs inutiles).
 Nous en étudirons une meilleure plus tard.*
 ==
-sbefore==
+before==
 import random
 n=random.randint(4,7)
 mpltest3=">>> coefficients(n)\n"
