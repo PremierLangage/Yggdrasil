@@ -1,5 +1,5 @@
 import uuid
-
+import random as rd
 from components import Component
 
 class CustomRadioGroup(Component):
