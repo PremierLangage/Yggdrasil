@@ -6,7 +6,7 @@
 title = Question à choix multiples (checkbox)
 
 checkbox =: CheckBoxGroup
-checkbox.decorator = CustomCheckBox
+checkbox.decorator = CustomCheckboxGroup
 
 before ==
 checkbox.loadContent(["Paris","Bruxelles","Lyon","Genève"])
