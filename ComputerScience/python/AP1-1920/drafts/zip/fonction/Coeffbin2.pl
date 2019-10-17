@@ -57,10 +57,12 @@ def coefficients(n):
             s+=str(int(combinaison(n,p)))+" "
         s+="1"
     return  s
-import random
-n=random.randint(4,7)
-pltest3=">>> coefficients(n)\n"
-pltest3 += str(coefficients(n))
+
+import random, sys
+
+n=random.randint(4,8)
+
+pltest3=""">>>c oefficients({})\n{}""".format(n, coefficients(n))
 ==
 
 zsoluce==
