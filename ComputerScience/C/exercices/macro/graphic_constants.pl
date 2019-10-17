@@ -1,4 +1,4 @@
-# Copyright 2016 Nicolas Borie <nicolas.borie@u-pem.fr>
+# Copyright 2016-2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
 # Déclaration de constantes pour une interface graphique
 
@@ -53,6 +53,7 @@ return 0;
 ==
 
 tests==
-[["Initialisation des constantes", "",""]] 
+[ ["Initialisation des constantes", "",""] ]
 ==
+
 
