@@ -2,7 +2,7 @@
 @ /builder/before.py [builder.py]
 @ /grader/evaluator.py [grader.py]
 
-title = Addition
+title = Conjugaison
 
 before ==
 import random as rd
@@ -24,7 +24,7 @@ input.type = text
 
 form ==
 <div style="display:flex;align-items:center;">
-<span> {{pronom}} &nbsp; </span>{{input|component}}
+{{pronom}} {{input|component}}
 </div>
 ==
 
