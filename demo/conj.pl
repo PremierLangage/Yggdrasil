@@ -14,7 +14,7 @@ conj=lst_conj[i]
 ==
 
 text ==
-Calculer {{a}} + {{b}}.
+Conjuguer le verbe manger à la 
 ==
 
 input =: Input
