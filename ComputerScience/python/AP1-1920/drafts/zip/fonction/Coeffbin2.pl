@@ -15,7 +15,7 @@ Si l'entier est négatif la fonction renvoie *None*
 Ecrire une fontion *combinaison(n,p)* qui reçoit deux entiers positifs 
 et renvoie le nombre de combinaions de p éléments choisis parmi n éléments.
 $%\binom{n}{p}%$<br>
-On rappelle que ce nombre vaut $%\frac{n!}{p! \times(n-p)!} %$ si $%0 \le p\le n %$ et 0 sinon.
+On rappelle que ce nombre vaut $%\frac{n!}{p! \times(n-p)!} %$ si $%0 \le p\le n %$ et 0 sinon.<br>
 Utilisez ces fonctions pour écrire une fonction *coefficients_binome(n)* qui reçoit 
  un entier n et renvoie <br>
  *  une chaine de caractères constituée des coefficients de développement de $%(a+b)^n%$, s'il est positif.
@@ -54,23 +54,23 @@ def combinaison(n,p):
         return 0
     return factoriel(n)/(factoriel(n-p)*factoriel(p))
 
-def coefficients_binome(n)
-if n<0:
-    s="non défini"
-else:
-    s=""
-    for p in range(n+1):
-        s+=str(int(combinaison(n,p)))+" "
-return s
+def coefficients(n)
+    if n<0:
+        s="non défini"
+    else:
+        s=""
+        for p in range(n+1):
+            s+=str(int(combinaison(n,p)))+" "
+    return  s
 
 ==
 pltest0==
->>>factoriel(3)==6 and combinaison(3,2)==3 and coefficients_binome(2)=="1 2 1"
+>>> factoriel(3)==6 and combinaison(3,2)==3 and coefficients(2)=="1 2 1"
 True
 ==
 pltest1==
 #negatif
->>>-9
+>>>  coefficients(-9)
 "non défini"
 ==
 
