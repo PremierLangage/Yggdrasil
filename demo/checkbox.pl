@@ -1,12 +1,12 @@
 @ /utils/sandboxio.py
 @ /builder/before.py [builder.py]
 @ /grader/evaluator.py [grader.py]
-@ /utils/checkbox.py [customcheckboxgroup.py]
+@ /utils/checkbox.py [checkbox.py]
 
 title = Question à choix multiples (checkbox)
 
 checkbox =: CheckboxGroup
-checkbox.decorator = CustomCheckboxGroup
+checkbox.decorator = Checkbox
 
 before ==
 checkbox.loadContent(["Paris","Bruxelles","Lyon","Genève"])
