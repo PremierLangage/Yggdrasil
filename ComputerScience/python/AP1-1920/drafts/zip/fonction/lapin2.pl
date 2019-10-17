@@ -67,7 +67,7 @@ def lapin(mois):
     return jeune+ado1+ado2+vieux
 
 import random
-r=random.random()
+r=random.Random()
 n=r.randint(44,89)
 pltest3=""">>> lapin({})\n{}""".format(n, lapin(n))
 ==
