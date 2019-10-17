@@ -60,7 +60,7 @@ def coefficients(n):
 
 import random, sys
 
-n=random.randint(4,8)
+n=random.randint(4,12)
 
 pltest3=""">>> coefficients({})\n'{}'""".format(n, coefficients(n))
 ==
