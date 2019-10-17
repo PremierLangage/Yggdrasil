@@ -24,7 +24,7 @@ input.type = text
 
 form ==
 <div style="display:flex;align-items:center;">
-<span> {{pronom}} </span>{{input|component}}
+<span> {{pronom}} &nbsp; </span>{{input|component}}
 </div>
 ==
 
