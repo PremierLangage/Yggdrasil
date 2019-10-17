@@ -19,12 +19,11 @@ class CustomRadioGroup(Component):
             })
         self.items = items
 
-    def evalByContent(self):
+    def evalByContent(self,sol):
         score = 0
-        feedback = ''
         selectedId = self.selection
         for e in self.items:
-            if e['content'] == self._soluce:
+            if e['content'] == sol:
                 e['css'] = 'success-state'
                 if e['id'] == selectedId:
                     score = 100
