@@ -13,8 +13,12 @@ import csv
 with open('data.csv',newline='') as file:
     rows=list(csv.DictReader(file,delimiter=','))
 
-n=len(rows)
-
+items=rd.sample(rows,nitems)
+source=[item[keysource] for item in items]
+target=[item[keytarget] for item in items]
+#source=[rows[i][colsource] for i in range(4)]
+#target=[rows[i][coltarget] for i in range(4)]
+match.loadContent(source,target)
 ==
 
 title==
