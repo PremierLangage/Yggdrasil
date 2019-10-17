@@ -18,8 +18,8 @@ et **retourner à la ligne** juste derrière le dernier entier.
     
 Pour rappel, les arguments des macros ne sont pas typé. Le
 préprocesseur ne fait que des inclusions et subistitutions. Lorsqu'une
-macro prend un paramètre a, on peut obtenir une chaine de caractère C
-à partir de a en utilisant #a dans le corps de la macro.
+macro prend un paramètre **a**, on peut obtenir une chaine de caractère C
+à partir de **a** en utilisant **#a** dans le corps de la macro.
 ==
 
 editor.code==
