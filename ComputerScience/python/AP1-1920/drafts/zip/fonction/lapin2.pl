@@ -70,3 +70,7 @@ import random
 n=random.randint(44,89)
 pltest3=""">>> lapin({})\n{}""".format(n, lapin(n))
 ==
+
+after==
+exec(before)
+==
