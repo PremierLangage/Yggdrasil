@@ -13,7 +13,7 @@ checkbox.loadContent(["Paris","Bruxelles","Lyon","Genève"])
 checkbox.shuffle()
 ==
 
-text = Quelle est la capitale de la France ?
+text = Parmi les villes suivantes, lesquelles sont en France ?
 
 form = {{ checkbox|component }}
 
