@@ -11,7 +11,7 @@ import random as rd
 import csv
 
 with open('data.csv',newline='') as file:
-    rows=list(csv.reader(file,delimiter=','))
+    rows=list(csv.DictReader(file,delimiter=','))
 
 n=len(rows)
 items=rd.sample(rows,1)
