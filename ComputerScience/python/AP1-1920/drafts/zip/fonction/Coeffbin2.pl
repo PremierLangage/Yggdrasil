@@ -35,6 +35,28 @@ Remarque
 Nous en étudirons une meilleure plus tard.*
 ==
 before==
+def factoriel(n):
+    if n<0:
+        return None
+    f=1
+    for i in range(n):
+        f*=i+1 
+    return f 
+
+def combinaison(n,p):
+    if n<0 or p>n:
+        return 0
+    return factoriel(n)/(factoriel(n-p)*factoriel(p))
+
+def coefficients(n):
+    if n<0:
+        s="non défini"
+    else:
+        s=""
+        for p in range(n):
+            s+=str(int(combinaison(n,p)))+" "
+        s+="1"
+    return  s
 import random
 n=random.randint(4,7)
 pltest3=">>> coefficients(n)\n"
