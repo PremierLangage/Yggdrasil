@@ -69,7 +69,7 @@ def lapin(mois):
 import random, sys
 
 n=random.randint(44,89)
-print(" <br/>coucou<br/>", file=sys.stderr)
+print(" <br/>coucou<br/>"+str(n), file=sys.stderr)
 pltest3=""">>> lapin({})\n{}""".format(n, lapin(n))
 ==
 
@@ -92,6 +92,6 @@ def lapin(mois):
     return jeune+ado1+ado2+vieux
 import random, sys
 n=random.randint(44,89)
-print(" <br/>benur<br/>", file=sys.stderr)
+print(" <br/>benur<br/>"+str(n), file=sys.stderr)
 pltest4=""">>> lapin({})\n{}""".format(n, lapin(n))
 ==
