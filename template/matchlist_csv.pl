@@ -14,7 +14,7 @@ with open('data.csv',newline='') as file:
     rows=list(csv.reader(file,delimiter=','))
 
 n=len(rows)
-items=rd.sample(rows,3)
+items=rd.sample(rows,1)
 source=[item[colsource] for item in items]
 target=[item[coltarget] for item in items]
 #source=[rows[i][colsource] for i in range(4)]
