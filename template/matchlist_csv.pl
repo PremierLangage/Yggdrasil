@@ -13,6 +13,7 @@ import csv
 with open('data.csv',newline='') as file:
     rows=list(csv.reader(file,delimiter=','))
 
+n=len(rows)
 items=rd.sample(rows,3)
 source=[item[colsource] for item in items]
 target=[item[coltarget] for item in items]
