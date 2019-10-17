@@ -23,7 +23,6 @@ input.type = text
 
 
 form ==
-{{pronom}} {{input|component}}
 <div style="display:flex;">
 {{pronom}} {{input|component}}
 </div>
