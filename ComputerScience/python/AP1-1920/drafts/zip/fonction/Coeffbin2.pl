@@ -49,18 +49,20 @@ def factoriel(n):
     for i in range(n):
         f*=i+1 
     return f 
+
 def combinaison(n,p):
     if n<0 or p>n:
         return 0
     return factoriel(n)/(factoriel(n-p)*factoriel(p))
 
-def coefficients(n)
+def coefficients(n):
     if n<0:
         s="non défini"
     else:
         s=""
-        for p in range(n+1):
+        for p in range(n):
             s+=str(int(combinaison(n,p)))+" "
+        s+="1"
     return  s
 
 ==
@@ -70,7 +72,7 @@ True
 ==
 pltest1==
 #negatif
->>>  coefficients(-9)
+>>> coefficients(-9)
 "non défini"
 ==
 
