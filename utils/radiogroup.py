@@ -19,6 +19,9 @@ class CustomRadioGroup(Component):
             })
         self.items = items
 
+    def shuffle(self):
+        rd.shuffle(self.items)
+
     def evalByContent(self,sol):
         score = 0
         selectedId = self.selection
