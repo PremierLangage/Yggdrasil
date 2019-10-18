@@ -25,7 +25,7 @@ Pour cela écrire une fonction  **nombre_chiffres(exp,chiffre)** qui reçoit un 
     2<br>
 ==
 
-editor.code==
+Xeditor.code==
 def nombre_chiffres(n,c):
     if n<0 or not 0<=c<=9:
         return None
