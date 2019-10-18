@@ -43,9 +43,9 @@ form ==
 
 evaluator ==
 if input.value==verbe_conj:
-    score=100
+    grade=(100,"")
 else:
-    score=0
+    grade=(0,"")
 ==
 
 
