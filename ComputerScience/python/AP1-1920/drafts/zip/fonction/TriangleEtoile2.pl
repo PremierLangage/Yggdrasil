@@ -62,7 +62,7 @@ def ligne_etoile(n):
         
     return s
 
-def triangeetoile(n):
+def triange_etoile(n):
 for i in range(1,n+1):
     print(ligne_etoile(i))
 for i in range(n-1):
@@ -70,7 +70,7 @@ for i in range(n-1):
 ==
 pltest0==
 >>> ligne_etoile(1)
-*
+'*'
 ==
 
 
