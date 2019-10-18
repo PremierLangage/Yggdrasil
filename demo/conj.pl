@@ -2,6 +2,8 @@
 @ /builder/before.py [builder.py]
 @ /grader/evaluator2.py [grader.py]
 
+@ conj_data.csv [data.csv]
+
 title = Conjugaison
 
 before ==
