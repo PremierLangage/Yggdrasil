@@ -15,7 +15,7 @@ Modifier les  fonctions de l'exercice TriangleEtoile pour que l'utilisateur choi
  devient *triangle(n,ch)*
 
  Exemple<br>
-triangle(3,'\*')
+print(triangle(3,'\*'))
 <br>
 \*<br>
 \*+\*\*<br>
@@ -24,7 +24,7 @@ triangle(3,'\*')
 \*<br>
 <br>
 
-et triangle(3,'to')<br>
+et print(triangle(3,'to'))<br>
 <br>
 to <br>
 to+toto <br>
@@ -89,11 +89,11 @@ def ligne(n,ch):
 
 
 def triangle(n,ch):
-    s="\\n"
+    s="\n"
     for i in range(1,n+1):
-        s+=ligne(i,ch)+"\\n"
+        s+=ligne(i,ch)+"\n"
     for i in range(n-1):
-       s+=ligne(n-1-i,ch)+"\\n"
+       s+=ligne(n-1-i,ch)+"\n"
     return s
 ==
 
