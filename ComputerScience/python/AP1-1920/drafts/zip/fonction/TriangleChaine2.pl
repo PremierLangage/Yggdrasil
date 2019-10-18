@@ -74,19 +74,41 @@ after=before
 Xeditor.code==
 
 
+import random
+def ligne(n,ch):
+    s=""
+    if n>0:
+        s=ch
+        etoile=ch
+        if n>1:
+            for i in range(n-1):
+                etoile+=ch
+                s=s+"+"+etoile
+    return s
+
+
+
+
+def triangle(n,ch):
+    s="\\n"
+    for i in range(1,n+1):
+        s+=ligne(i,ch)+"\\n"
+    for i in range(n-1):
+       s+=ligne(n-1-i,ch)+"\\n"
+    return s
 ==
 
 pltest0==
->>> ligne_etoiles(1)
-'*'
->>> ligne_etoiles(8) # Plus d'étoiles
+>>> ligne(1,'.')
+'.'
+>>> ligne(8,'*') # Plus d'étoiles
 '*+**+***+****+*****+******+*******+********'
 ==
 
 
 pltest1==
->>> triangle_etoiles(2)
-'\n*\n*+**\n*\n'
+>>> triangle(2,'r2d2')
+'\nr2d2\nr2d2+r2d2r2d2\nr2d2\n'
 ==
 
 
