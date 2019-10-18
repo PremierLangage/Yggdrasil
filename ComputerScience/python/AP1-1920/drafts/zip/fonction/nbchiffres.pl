@@ -61,5 +61,5 @@ True
 ==
 pltest1==
 >>> nombre_chiffres(67,9)
-9
+3
 ==
