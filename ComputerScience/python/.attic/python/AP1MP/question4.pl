@@ -14,7 +14,7 @@ Calculer  le nombre de jours du mois saisie.
 Puis afficher 
 
 
-    "Le mois 3/1777 compte 31 jours"
+    "Le mois 3 / 1777 compte 31 jours"
 
 Bien sur il faut pour le mois de Février indiquer 28 ou 29 en fonction du fait que l'année est bissextile ou pas.
 
@@ -71,5 +71,6 @@ else:
 
 
 ==
+
 
 
