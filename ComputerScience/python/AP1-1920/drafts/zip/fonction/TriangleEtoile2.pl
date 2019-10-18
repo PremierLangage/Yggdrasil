@@ -66,6 +66,10 @@ import random
 
 n=random.randint(4,7)
 pltest2=""">>> triangle_etoiles({})# Test aleatoire \n""".format(n)+ triangle_etoiles(n)+"\n"
+
+n=n+1
+pltest3=""">>> triangle_etoiles({})# Test aleatoire \n""".format(n)+ triangle_etoiles(n)+"\n"
+
 ==
 
 after==
