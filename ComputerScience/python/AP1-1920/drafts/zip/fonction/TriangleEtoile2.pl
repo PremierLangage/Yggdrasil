@@ -29,9 +29,9 @@ de 2n-1 lignes
 
 Exemple
  
-triangeetoile(3) renvoie la chaine "\n\*\n\*+\*\*\n\*+\*\*+\*\*\*\n\*+\*\*\n\*\n"
-dont l'affichage produit
-'
+triangle_etoile(3) renvoie la chaine "\n\*\n\*+\*\*\n\*+\*\*+\*\*\*\n\*+\*\*\n\*\n"
+dont l'affichage produit <br>
+'<br>
 \*<br>
 \*+\*\*<br>
 \*+\*\*+\*\*\*<br>
