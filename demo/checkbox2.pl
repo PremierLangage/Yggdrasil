@@ -19,7 +19,7 @@ text = Parmi les villes suivantes, lesquelles sont en France ?
 form = {{ checkbox|component }}
 
 evaluator ==
-grade = checkbox.evalByContent(["Paris","Lyon"])
+grade = checkbox.eval()
 ==
 
 
