@@ -9,9 +9,9 @@ sortlist =: SortList
 
 sortlist.items %= #|json|
 [
-    { "id": "", "content": "From math import sqrt" },
-    { "id": "", "content": "def trucmuche:"},
-    { "id": "", "content": "Third Item" }
+    { "id": "", "content": "<pre>from math import sqrt</pre>" },
+    { "id": "", "content": "<pre>def trucmuche(n):</pre>"},
+    { "id": "", "content": "<pre>Third Item</pre>" }
 ]
 ==
 
@@ -48,4 +48,5 @@ if errors == 0:
 else:
     grade = (0, f'<span class="error-state">{ errors } wrong answers</span>')
 ==
+
 
