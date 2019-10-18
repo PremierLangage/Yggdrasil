@@ -50,13 +50,12 @@ for l in lines :
         if l=="##END\n" :
             state = 0
             w.append(current)
-            print("adding ",current)
             current="" 
         elif l=="##BEGIN\n" :
              print(" Fichier mal structuré BEGIN in inside state ", file=sys.stderr)
              sys.exit(1)
         else:
-            current+="<br>"+l
+            current+=l+"<br>"
 
 l=w
 
@@ -64,7 +63,7 @@ sortlist.items = []
 answer = []
 for ligne in l:
     if len(ligne)>1 :
-        e={ "id": uuid.uuid4(),"content":ligne }
+        e={ "id": uuid.uuid4(),"content":"<pre>"+ligne+"</pre>" }
         sortlist.items.append(e)
         answer.append(e["id"])
 random.shuffle(sortlist.items)
