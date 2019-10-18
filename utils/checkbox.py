@@ -42,6 +42,22 @@ class Checkbox(Component):
                 itemright+=1
             elif not (item['content'] in content) and item['checked']:
                 answrong+=1
-        score=max([int((ansright-answrong)/n*100),0])
+        score=max([int((ansright-answrong)/itemright*100),0])
+        return(score,"")
+
+    def eval(self):
+        ansright,answrong,itemright=0,0,0
+        for item in self.items:
+            if item['id'] in self._sol and item['checked']:
+                item['css'] = 'success-state anim-fade'
+                ansright+=1
+                itemright+=1
+            elif item['id'] in self._sol and not item['checked']:
+                item['css'] = 'success-state anim-fade'
+                answrong+=1
+                itemright+=1
+            elif not (item['id'] in self._sol) and item['checked']:
+                answrong+=1
+        score=max([int((ansright-answrong)/itemright*100),0])
         return(score,"")
 
