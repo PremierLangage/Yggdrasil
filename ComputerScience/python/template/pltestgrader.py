@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # coding: utf-8
-import sys, jsonpickle
-from sandboxio import output, get_context, get_answers,re
+import sys, jsonpickle, re
+from sandboxio import output, get_context, get_answers
 from pltest_doc import PlRunner
 
 
@@ -63,4 +63,5 @@ if __name__ == "__main__":
         outstr += dic["feedback"]+" valeur de stop "+ str(stop)
     output(a,outstr)
     
+
 
