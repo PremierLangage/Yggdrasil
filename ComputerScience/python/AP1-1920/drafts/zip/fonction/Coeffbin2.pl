@@ -21,13 +21,14 @@ Utilisez ces fonctions pour écrire une fonction *coefficients_binome(n)* qui re
  *  une chaine de caractères constituée des coefficients de développement de $%(a+b)^n%$, s'il est positif.
 
 * la chaine "non défini" si n est négatif<br>
-Exemples
->>> coefficients_binome((0)==1
-True
->>> coefficients_binome((3)
-1 3 3 1
->>> coefficients_binome((-5)
-non défini
+Exemples<br>
+
+    >>> coefficients_binome((0)==1<br>
+    True<br>
+    >>> coefficients_binome((3)<br>
+    1 3 3 1<br>
+    >>> coefficients_binome((-5)<br>
+    non défini<br>
 
 Remarque
 
@@ -104,3 +105,4 @@ pltest2==
 >>> coefficients(5)
 '1 5 10 10 5 1'
 ==
+
