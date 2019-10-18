@@ -4,18 +4,19 @@ author=l'équipe de l'UPEM vous propose des exercices
 title=Une fonction carré 
 
 tag=function # N'oubliez pas de remplir ce champs svp
-extends=/ComputerScience/python/AP1-19-20/templates/pltest.pl
+extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 piste=verte
 text==
 ## Une fonction carre ##
 Ecrivez une fonction **carre** qui retourne le carré de son paramêtre.
 ==
 
+@ /builder/before.py [builder.py]
 before==
 import random 
 p=random.randint(23,77)
 pltest1=""">>> carre({})\n{}\n""".format(p, p**2)
-pltest2=""">>> carre({})=={}\nTrue\n""".format(p, p**2)
+pltest2=""">>> carre({})=={}# Hidden value test\nTrue\n""".format(p, p**2)
 
 ==
 
