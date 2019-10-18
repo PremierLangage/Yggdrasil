@@ -12,7 +12,7 @@ before ==
 checkbox.loadContent(["Paris","Bruxelles","Lyon","Genève"])
 checkbox.setSolByIndex([0,2])
 checkbox.shuffle()
-checkbox.grading="CorrectAnswers"
+checkbox.grading="RightMinusWrong"
 ==
 
 text = Parmi les villes suivantes, lesquelles sont en France ?
