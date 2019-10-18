@@ -26,7 +26,7 @@ Pour cela écrire une fonction  **nombre_chiffres(exp,chiffre)** qui reçoit un 
 ==
 
 editor.code==
-def nombre_chiffre(n,c):
+def nombre_chiffres(n,c):
     if n<0 or not 0<=c<=9:
         return None
     nb=0
@@ -43,7 +43,7 @@ import random
 
 n=random.randint(40,120)
 c=random.randint(0,10)
-pltest3=""">>> nombre_chiffre({},{})\n'{}'""".format(n,c,nombre_chiffre(n,c))
+pltest3=""">>> nombre_chiffres({},{})\n'{}'""".format(n,c,nombre_chiffre(n,c))
 
 after=before
 ==
