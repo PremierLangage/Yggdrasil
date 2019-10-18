@@ -23,12 +23,13 @@ et renvoie une chaine formée de : <br>
     si elle reçoit 1 elle renvoie "\*"<br>
     si elle reçoit un entier inférieure à 1 elle renvoie la chaine vide.
 * utilisez cette fonction pour écrire une fonction 'triangeetoile(n) qui reçoit un entier n 
- et si n est >0 et affiche le triangle
+ et si n est >0 et renvoie une chaine formant le triangle
 qui contient une suite de n "*" séparés par des '+'
 
 Exemple
  
 >>> triangeetoile(5)
+'
 \*<br>
 \*+\*\*<br>
 \*+\*\*+\*\*\*<br>
@@ -38,7 +39,7 @@ Exemple
 \*+\*\*+\*\*\*<br>
 \*+\*\*<br>
 \*<br>
-
+'
 ==
 before==
 import random
@@ -63,14 +64,24 @@ def ligne_etoile(n):
     return s
 
 def triange_etoile(n):
-for i in range(1,n+1):
-    print(ligne_etoile(i))
-for i in range(n-1):
-    print(ligne_etoile(n-1-i))
+     s="\n"
+    for i in range(1,n+1):
+        s+=ligne_etoiles(i)+"\n"
+    for i in range(n-1):
+       s+=ligne_etoiles(n-1-i)+"\n"
+    return s
+
 ==
 pltest0==
 >>> ligne_etoile(1)
 '*'
+==
+pltest1==
+>>> triangle_etoile(2)
+'
+*
+*+**
+*
 ==
 
 
