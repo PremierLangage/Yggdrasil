@@ -40,7 +40,17 @@ def nombre_chiffres(n,c):
 ==
 before==
 import random
-
+def nombre_chiffres(n,c):
+    if n<0 or not 0<=c<=9:
+        return None
+    nb=0
+    n=2**n
+    print(n)
+    while  n>0:
+        if n%10==c:
+            nb+=1
+        n//=10
+    return nb
 n=random.randint(40,120)
 c=random.randint(0,10)
 pltest3=""">>> nombre_chiffres({},5)\n'{}'""".format(n,nombre_chiffres(n,5))
