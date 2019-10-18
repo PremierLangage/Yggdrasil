@@ -23,11 +23,11 @@ Utilisez ces fonctions pour écrire une fonction *coefficients_binome(n)* qui re
 * la chaine "non défini" si n est négatif<br>
 Exemples<br>
 
-    >>> coefficients_binome((0)==1<br>
+    &gt;&gt;&gt; coefficients_binome((0)==1<br>
     True<br>
-    >>> coefficients_binome((3)<br>
+    &gt;&gt;&gt; coefficients_binome((3)<br>
     1 3 3 1<br>
-    >>> coefficients_binome((-5)<br>
+    &gt;&gt;&gt; coefficients_binome((-5)<br>
     non défini<br>
 
 Remarque
