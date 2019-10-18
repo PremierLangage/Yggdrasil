@@ -43,6 +43,7 @@ import random
 
 n=random.randint(40,120)
 c=random.randint(0,10)
+pltest3=""">>> nombre_chiffre({},{})\n'{}'""".format(n,c,nombre_chiffre(n,c))
 
 after=before
 ==
