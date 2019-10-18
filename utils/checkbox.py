@@ -12,7 +12,7 @@ class Checkbox(Component):
         super().__init__(**kwargs)
 
     def setSolByIndex(self,index):
-        self._sol=[items[i]['id'] for i in index]
+        self._sol=[self.items[i]['id'] for i in index]
 
     def loadContent(self, content):
         items = []
