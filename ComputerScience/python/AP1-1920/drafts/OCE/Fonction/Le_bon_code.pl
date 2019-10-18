@@ -1,5 +1,20 @@
 # OCE
 
+
+doc==
+
+ceci est un template pour des exercice de réorganisation de code
+extends=Le_bon_code.pl
+
+pour l'utiliser vous heriter puis vous ajouter une ligne 
+@ votrefichier.py [base.py]
+
+et vous placer dans votrefichier.py un code python qui 
+a un ordre unique des ses lignes. 
+
+==
+
+
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
@@ -7,23 +22,21 @@ builder =@ /builder/before.py
 # DECLARATION
 sortlist =: SortList
 
-sortlist.items %= #|json|
-[
-    { "id": "", "content": "<pre>from math import sqrt</pre>" },
-    { "id": "", "content": "<pre>def trucmuche(n):</pre>"},
-    { "id": "", "content": "<pre>Third Item</pre>" }
-]
-==
+
 
 # RANDOMIZATION
 before== #|python|
 import random
 import uuid
+
+with open("base.py","r") as f:
+    l=f.readlines()
+
+sortlist.items = []
 answer = []
-for e in sortlist.items:
-    # generate random id because students can
-    # guest the answer if ids like 1, 2, 3 are used
-    e["id"] = uuid.uuid4()
+for ligne in l:
+    e={ "id": uuid.uuid4(),"content":ligne }
+    sortlist.items.append(e)
     answer.append(e["id"])
 random.shuffle(sortlist.items)
 ==
