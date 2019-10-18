@@ -51,7 +51,6 @@ def nombre_chiffres(n,c):
             nb+=1
         n//=10
     return nb
-n=random.randint(40,120)
 c=random.randint(0,10)
 pltest3=""">>> nombre_chiffres({},5)\n'{}'""".format(n,nombre_chiffres(n,5))
 
