@@ -47,7 +47,7 @@ n=random.randint(4,7)
 mplsoluce2 += str(n)+"\n"
 ==
 
-soluce==
+zsoluce==
 
 def ligne_etoile(n):
     s=""
@@ -67,18 +67,10 @@ for i in range(1,n+1):
 for i in range(n-1):
     print(ligne_etoile(n-1-i))
 ==
-mplsoluce0==
-classique
-3
+pltest0==
+>>> ligne_etoile(1)
+*
 ==
-mplsoluce1==
-negatif
--9
-==
-
-
-
-
 
 
 
