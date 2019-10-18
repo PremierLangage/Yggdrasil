@@ -61,9 +61,9 @@ def triangle_etoiles(n):
        s+=ligne_etoiles(n-1-i)+"\n"
     return s
 import random
-pltest2="Test aléatoire\n"
+
 n=random.randint(4,7)
-pltest2=""">>> triangle_etoiles({})\n{}""".format(n, triangle_etoiles(n))
+pltest2=""">>> triangle_etoiles({})# Test aleatoire \n{}""".format(n, triangle_etoiles(n))
 ==
 
 after==
@@ -126,6 +126,7 @@ pltest1==
 >>> triangle_etoiles(2)
 '\n*\n*+**\n*\n'
 ==
+
 
 
 
