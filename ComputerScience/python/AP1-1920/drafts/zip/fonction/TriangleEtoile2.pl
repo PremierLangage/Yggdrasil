@@ -61,7 +61,7 @@ def ligne_etoile(n):
         
     return s
 
-n=int(input())
+def triangeetoile(n):
 for i in range(1,n+1):
     print(ligne_etoile(i))
 for i in range(n-1):
