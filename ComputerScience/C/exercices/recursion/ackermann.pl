@@ -23,7 +23,7 @@ A(m-1, A(m, n-1)) & \text{ si } m > 0 \text{ et } n > 0 \\newline
 %$
 
 Complèter la fonction ci-dessus de manière à ce qu'elle retourne la
-valeur d'akermann associée aux deux paramètres *m* et *n*.
+valeur de la fonction d'Akermann associée aux deux paramètres *m* et *n*.
 ==
 
 editor.code==
