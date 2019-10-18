@@ -4,7 +4,7 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
-title =triangle étoilé
+title = Triangle étoilé
 text==  
 on veut dessiner à l'aide d'étoiles '*' et de plus "+" des triangles de la forme
 *
@@ -77,6 +77,7 @@ mplsoluce1==
 negatif
 -9
 ==
+
 
 
 
