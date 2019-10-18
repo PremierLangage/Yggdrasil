@@ -1,7 +1,31 @@
 # DR 25/09/2019 OK
 #  Author: DR
+@ /utils/sandboxio.py
+@ /grader/evaluator.py [grader.py] 
+@ /builder/before.py [builder.py] 
 
-extends=../../templates/simpleinput.pl
+component =: Input
+component.type = text
+
+before==
+==
+
+title==
+Input Component
+==
+
+text==
+==
+
+form==
+{{ component|component}}
+==
+
+evaluator==
+grade = (100, component.value)
+==
+
+
 
 @ /builder/before.py [builder.py]
 
@@ -65,6 +89,7 @@ else:
 form==
    var = {{ component|component}}
 ==
+
 
 
 
