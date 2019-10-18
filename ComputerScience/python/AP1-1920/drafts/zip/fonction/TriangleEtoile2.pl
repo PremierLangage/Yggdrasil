@@ -51,7 +51,7 @@ mplsoluce2 += str(n)+"\n"
 
 zsoluce==
 
-def ligne_etoile(n):
+def ligne_etoiles(n):
     s=""
     if n>0:
         s="*"
@@ -63,7 +63,7 @@ def ligne_etoile(n):
         
     return s
 
-def triangle_etoile(n):
+def triangle_etoiles(n):
     s="\n"
     for i in range(1,n+1):
         s+=ligne_etoiles(i)+"\n"
