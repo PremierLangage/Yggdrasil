@@ -70,59 +70,9 @@ pltest3=""">>> triangle({},{})# Test aleatoire \n'""".format(n,p)+ str(triangle(
 after=before
 ==
 
-xafter==
-
-import random
-def ligne_etoiles(n):
-    s=""
-    if n>0:
-        s="*"
-        etoile="*"
-        if n>1:
-            for i in range(n-1):
-                etoile+="*"
-                s=s+"+"+etoile
-        
-    return s
-
-def triangle_etoiles(n):
-    s="\\n"
-    for i in range(1,n+1):
-        s+=ligne_etoiles(i)+"\\n"
-    for i in range(n-1):
-       s+=ligne_etoiles(n-1-i)+"\\n"
-    return s
-
-pltest2="Test aléatoire\n"
-n=random.randint(4,7)
-pltest2=""">>> triangle_etoiles({})# Test aleatoire \n'""".format(n)+ str(triangle_etoiles(n))+"'\n"
-
-n=n+1
-pltest3=""">>> triangle_etoiles({})# Test aleatoire \n'""".format(n)+ str(triangle_etoiles(n))+"'\n"
-
-==
 
 Xeditor.code==
 
-def ligne_etoiles(n):
-    s=""
-    if n>0:
-        s="*"
-        etoile="*"
-        if n>1:
-            for i in range(n-1):
-                etoile+="*"
-                s=s+"+"+etoile
-        
-    return s
-
-def triangle_etoiles(n):
-    s="\n"
-    for i in range(1,n+1):
-        s+=ligne_etoiles(i)+"\n"
-    for i in range(n-1):
-       s+=ligne_etoiles(n-1-i)+"\n"
-    return s
 
 ==
 
