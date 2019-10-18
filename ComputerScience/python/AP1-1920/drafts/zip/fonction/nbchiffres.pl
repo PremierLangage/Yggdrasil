@@ -17,7 +17,7 @@ Pour cela écrire une fonction  **nombre_chiffres(exp,chiffre)** qui reçoit un 
 
  Exemples<br>
 
-    &gt;&gt;&gt; nombre_chiffres(0,1)==1<br>
+&gt;&gt;&gt; nombre_chiffres(0,1)==1<br>
     True<br>
     &gt;&gt;&gt; nombre_chiffres(8,1)<br>
     0<br>
