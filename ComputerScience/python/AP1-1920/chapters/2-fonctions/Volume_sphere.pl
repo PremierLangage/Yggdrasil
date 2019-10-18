@@ -6,12 +6,12 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 title = Dix mais pas trois
 
 code==
-import numpy as np
+from math import pi
 #
 #
-r = ??(input("Entrez la valeur du rayon : "))
+?? = ??(input("Entrez la valeur du rayon : "))
 #
-
+print("Le volume de cette sphere vaut", 
 ==
 
 text==  
