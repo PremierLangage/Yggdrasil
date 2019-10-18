@@ -105,7 +105,7 @@ pltest3=""">>> triangle_etoiles({})# Test aleatoire \n'""".format(n)+ str(triang
 
 ==
 
-editor.code==
+Xeditor.code==
 
 def ligne_etoiles(n):
     s=""
