@@ -16,20 +16,22 @@ Modifier les  fonctions de l'exercice TriangleEtoile pour que l'utilisateur choi
 
  Exemple<br>
 triangle(3,'\*')
-
+<br>
 \*<br>
 \*+\*\*<br>
 \*+\*\*+\*\*\*<br>
 \*+\*\*<br>
 \*<br>
+<br>
 
-et triangle(3,'to')
+et triangle(3,'to')<br>
+<br>
 to <br>
 to+toto <br>
 to+toto+tototo <br>
 to+toto <br>
 to <br>
-
+<br>
 ==
 before==
 import random
