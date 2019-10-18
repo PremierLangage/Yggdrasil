@@ -63,7 +63,7 @@ def triangle_etoiles(n):
 import random
 
 n=random.randint(4,7)
-pltest2=""">>> triangle_etoiles({})# Test aleatoire \n{}""".format(n, triangle_etoiles(n))
+pltest2=""">>> triangle_etoiles({})# Test aleatoire \n""".format(n)+ triangle_etoiles(n)
 ==
 
 after==
