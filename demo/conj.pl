@@ -6,12 +6,12 @@ title = Conjugaison
 
 before ==
 import random as rd
-lst_prs=['1ère personne du singulier',
-            '2e personne du singulier',
-            '3e personne du singulier',
-            '1ère personne du pluriel',
-            '2e personne du pluriel',
-            '3e personne du pluriel']
+lst_prs={'1S':'1ère personne du singulier',
+         '2S':'2e personne du singulier',
+         '3S':'3e personne du singulier',
+         '1P':'1ère personne du pluriel',
+         '2P':'2e personne du pluriel',
+         '3P':'3e personne du pluriel'}
 lst_conj=['mange','manges','mange','mangeons','mangez','mangent']
 i=rd.randint(0,5)
 prs=lst_prs[i]
@@ -35,4 +35,5 @@ if input.value==conj:
 else:
     score=0
 ==
+
 
