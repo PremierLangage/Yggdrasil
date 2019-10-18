@@ -1,7 +1,7 @@
 @ /utils/sandboxio.py
 @ /builder/before.py [builder.py]
 @ /grader/evaluator.py [grader.py]
-#@ /utils/components.py [custommatchlist.py]
+@ /utils/components.py [custommatchlist.py]
 
 match =: MatchList
 match.decorator = CustomMatchList
