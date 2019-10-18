@@ -43,7 +43,7 @@ def  saisie_entier_str_positif():
          n = int(input("Saisissez un entier strictement positif : "))
     return n
 
-n = int(input("Saisisez un entier n : "))
+n = int(input("Saisisez un entier : "))
 k = saisie_entier_str_positif()
 
 table(n,k)
