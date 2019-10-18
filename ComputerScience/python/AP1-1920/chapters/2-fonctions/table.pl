@@ -7,15 +7,14 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 title = Afficher les "n" premiers multiples d'un entier "x"
 
 code==
-#
-#
-#
-#
-#
-#
+
 #
 ?? = ??(input("Saisisez un entier : "))
 #
+#
+#
+
+
 ?? = ??(input("Saisissez un entier strictement positif : "))
 ==
 
@@ -42,7 +41,7 @@ def table(n,x):
 def  saisie_entier_str_positif():
     n=int(input("Saisissez un entier strictement positif : "))
     while(n<=0):
-         n = int(input("Saisissez un entier strictement positif : ")
+         n = int(input("Saisissez un entier strictement positif : "))
     return n
 
 n = int(input("Saisisez un entier n : "))
