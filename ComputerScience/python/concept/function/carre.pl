@@ -4,7 +4,7 @@ author=l'équipe de l'UPEM vous propose des exercices
 title=Une fonction carré 
 
 tag=function # N'oubliez pas de remplir ce champs svp
-extends=/ComputerScience/python/template/pltest.pl
+extends=/ComputerScience/python/AP1-19-20/templates/pltest.pl
 piste=verte
 text==
 ## Une fonction carre ##
