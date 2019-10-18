@@ -14,18 +14,14 @@ conj=lst_conj[i]
 ==
 
 text ==
-Conjuguer le verbe manger au présent pour le pronom donné ci-dessous.
+Conjuguer le verbe manger au présent
 ==
 
 input =: Input
 input.type = text
 
-
-
 form ==
-<div style="display:flex;align-items:center;">
-<div>{{pronom}} &nbsp;</div> {{input|component}}
-</div>
+{{input|component}}
 ==
 
 evaluator ==
