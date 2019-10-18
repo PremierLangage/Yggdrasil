@@ -39,7 +39,7 @@ dont l'affichage produit <br>
 \*<br>
 '
 
-<pre>{{pltest2}}</pre>
+
 ==
 before==
 import random
@@ -56,11 +56,11 @@ def ligne_etoiles(n):
     return s
 
 def triangle_etoiles(n):
-    s="\n"
+    s="\\n"
     for i in range(1,n+1):
-        s+=ligne_etoiles(i)+"\n"
+        s+=ligne_etoiles(i)+"\\n"
     for i in range(n-1):
-       s+=ligne_etoiles(n-1-i)+"\n"
+       s+=ligne_etoiles(n-1-i)+"\\n"
     return s
 import random
 
@@ -68,7 +68,7 @@ n=random.randint(4,7)
 pltest2=""">>> triangle_etoiles({})# Test aleatoire \n'""".format(n)+ str(triangle_etoiles(n))+"'\n"
 
 n=n+1
-pltest3=""">>> triangle_etoiles({})# Test aleatoire \n""".format(n)+ triangle_etoiles(n)+"'\n"
+pltest3=""">>> triangle_etoiles({})# Test aleatoire \n'""".format(n)+ str(triangle_etoiles(n))+"'\n"
 
 ==
 
@@ -100,11 +100,11 @@ n=random.randint(4,7)
 pltest2=""">>> triangle_etoiles({})# Test aleatoire \n'""".format(n)+ str(triangle_etoiles(n))+"'\n"
 
 n=n+1
-pltest3=""">>> triangle_etoiles({})# Test aleatoire \n""".format(n)+ triangle_etoiles(n)+"'\n"
+pltest3=""">>> triangle_etoiles({})# Test aleatoire \n'""".format(n)+ str(triangle_etoiles(n))+"'\n"
 
 ==
 
-zsoluce==
+editor.code==
 
 def ligne_etoiles(n):
     s=""
