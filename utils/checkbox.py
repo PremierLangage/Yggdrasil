@@ -30,16 +30,18 @@ class Checkbox(Component):
         rd.sort(self.items)
 
     def evalByContent(self,content):
-        ansright,answrong=0,0
+        ansright,answrong,itemright=0,0,0
         for item in self.items:
             if item['content'] in content and item['checked']:
                 item['css'] = 'success-state anim-fade'
                 ansright+=1
+                itemright+=1
             elif item['content'] in content and not item['checked']:
                 item['css'] = 'success-state anim-fade'
                 answrong+=1
+                itemright+=1
             elif not (item['content'] in content) and item['checked']:
                 answrong+=1
-        score=100 # max([int((ansright-answrong)/ansright*100),0])
+        score=max([int((ansright-answrong)/n*100),0])
         return(score,"")
 
