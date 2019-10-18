@@ -60,7 +60,7 @@ def triangle_etoiles(n):
     for i in range(n-1):
        s+=ligne_etoiles(n-1-i)+"\n"
     return s
-
+import random
 pltest2="Test aléatoire\n"
 n=random.randint(4,7)
 pltest3=""">>> triangle_etoiles({})\n{}""".format(n, triangle_etoiles(n))
@@ -91,7 +91,6 @@ def triangle_etoiles(n):
 
 pltest2="Test aléatoire\n"
 n=random.randint(4,7)
-pltest3=""">>> triangle_etoiles({})\n{}""".format(n, triangle_etoiles(n))
 ==
 
 zsoluce==
