@@ -23,11 +23,11 @@ Utilisez ces fonctions pour écrire une fonction *coefficients_binome(n)* qui re
 * la chaine "non défini" si n est négatif<br>
 Exemples<br>
 
-    &gt;&gt;&gt; coefficients_binome((0)==1<br>
+    &gt;&gt;&gt; coefficients_binome(0)==1<br>
     True<br>
-    &gt;&gt;&gt; coefficients_binome((3)<br>
+    &gt;&gt;&gt; coefficients_binome(3)<br>
     1 3 3 1<br>
-    &gt;&gt;&gt; coefficients_binome((-5)<br>
+    &gt;&gt;&gt; coefficients_binome(-5)<br>
     non défini<br>
 
 Remarque
@@ -49,7 +49,7 @@ def combinaison(n,p):
         return 0
     return factoriel(n)/(factoriel(n-p)*factoriel(p))
 
-def coefficients(n):
+def coefficients_binome(n):
     if n<0:
         s="non défini"
     else:
@@ -92,17 +92,17 @@ def coefficients(n):
 
 ==
 pltest0==
->>> factoriel(3)==6 and combinaison(3,2)==3 and coefficients(2)=="1 2 1"
+>>> factoriel(3)==6 and combinaison(3,2)==3 and coefficients_binome(2)=="1 2 1"
 True
 ==
 pltest1==
 #negatif
->>> coefficients(-9)
+>>> coefficients_binome(-9)
 'non défini'
 ==
 
 pltest2==
->>> coefficients(5)
+>>> coefficients_binome(5)
 '1 5 10 10 5 1'
 ==
 
