@@ -54,3 +54,4 @@ True
 pltest1==
 >>> nombre_chiffre(67,9)
 9
+==
