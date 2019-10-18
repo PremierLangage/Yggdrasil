@@ -11,6 +11,15 @@ text==
 Ecrivez une fonction **carre** qui retourne le carré de son paramêtre.
 ==
 
+before==
+import random 
+p=random.randint(23,77)
+pltest1=""">>> carre({})\n{}\n""".format(p, p**2)
+pltest2=""">>> carre({})=={}\nTrue\n""".format(p, p**2)
+
+==
+
+
 pltest==
 >>> carre(510) == 260100 # le carre de 510
 True
@@ -25,6 +34,7 @@ def carre(n):
     return n*6
 ==
 editor.height=145
+
 
 
 
