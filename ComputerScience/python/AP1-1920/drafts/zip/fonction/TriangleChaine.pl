@@ -7,14 +7,14 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 title =triangle chaine
 text==  
-modifier la fonction de l'exercice TriangleEtoile pour que l'uilisateur choisisse
+Modifier la fonction de l'exercice TriangleEtoile pour que l'uilisateur choisisse
  la chaine à répéter
 
 
 Exemples
  
 Entrez un entier : 5 <br>
-Entrez un chaine : *
+Entrez un chaine : 
 *<br>
 *+**<br>
 *+**+***<br>
@@ -77,6 +77,7 @@ negatif
 -9
 +
 ==
+
 
 
 
