@@ -62,7 +62,7 @@ pltest2=""">>> triangle({},"A")# Test aleatoire \n'""".format(n,"A")+ str(triang
 
 n=n+2
 p='$'
-pltest3=""">>> triangle({},{})# Test aleatoire \n'""".format(n,p)+ str(triangle(n,p))+"'\n"
+pltest3=""">>> triangle({},'$')# Test aleatoire \n'""".format(n,'$')+ str(triangle(n,p))+"'\n"
 
 after=before
 ==
