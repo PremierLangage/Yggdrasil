@@ -8,7 +8,11 @@ class Checkbox(Component):
         self.selector = 'c-checkbox-group'
         self.decorator = 'CustomCheckboxGroup'
         self.items = []
+        self._sol = []
         super().__init__(**kwargs)
+
+    def setSolByIndex(self,index):
+        self._sol=[items[i]['id'] for i in index]
 
     def loadContent(self, content):
         items = []
@@ -38,3 +42,4 @@ class Checkbox(Component):
                 answrong+=1
         score=100 # max([int((ansright-answrong)/ansright*100),0])
         return(score,"")
+
