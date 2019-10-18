@@ -18,7 +18,8 @@ text==
 
 Programmer une fonction qui teste si un entier est divisible par 10 mais pas par 3. <br>
 
-Puis écrivez un programme qui récupère un entier au clavier, appel la fonction et affiche le résultat.
+Puis écrivez un programme qui récupère un entier au clavier, 
+appel la fonction et affiche le résultat booléen.
 
 
 On utilisera pour les entrées 
@@ -37,19 +38,13 @@ n = int(input("Saisie : "))
 print(dix_mais_pas_trois(n))
 ==
 
-mplsoluce0==
-False
-2
-==
-mplsoluce1==
-False
-3
+plsoluce==
+Test1 | 2
+Test2 | 3
+Test3 | 30
+Test4 | 40
 ==
 
-mplsoluce2==
-True
-10
-==
 
 
 
