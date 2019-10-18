@@ -31,9 +31,6 @@ to+toto <br>
 to <br>
 
 ==
-
-
-==
 before==
 import random
 def ligne(n,ch):
