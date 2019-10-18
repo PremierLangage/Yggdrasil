@@ -5,9 +5,9 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
-title =triangle chaine
+title =Triangle chaine
 text==  
-Modifier la fonction de l'exercice TriangleEtoile pour que l'uilisateur choisisse
+Modifier les  fonctions de l'exercice TriangleEtoile pour que l'uilisateur choisisse
  la chaine à répéter
 
 
@@ -15,6 +15,7 @@ Exemples
  
 Entrez un entier : 5 <br>
 Entrez un chaine : 
+<pre>
 *<br>
 *+**<br>
 *+**+***<br>
@@ -24,7 +25,7 @@ Entrez un chaine :
 *+**+***<br>
 *+**<br>
 *<br>
-
+<\pre>
 Entrez un entier : 3 <br>
 Entrez une chaine : to <br>
 to <br>
