@@ -39,7 +39,7 @@ dont l'affichage produit <br>
 \*<br>
 '
 
-{{pltest2}}
+<pre>{{pltest2}}</pre>
 ==
 before==
 import random
