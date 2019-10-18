@@ -9,7 +9,7 @@ title =Apparition d'un chiffre
 text==
 On veut déterminer le nombre d'apparition d'un chiffre particulier dans $%2^n%$.
 
-Pour cela écrire une fonction  **nombre_chiffre(exp,chiffre)** qui reçoit un entier positif exp et un chiffre chiffre et renvoie  le nombre 
+Pour cela écrire une fonction  **nombre_chiffres(exp,chiffre)** qui reçoit un entier positif exp et un chiffre chiffre et renvoie  le nombre 
  d'apparition du chiffre dans $%2^{exp}%$ (le code n'utilisera pas de str). 
  
  Si exp n'est pas un entier positif ou si chiffre n'est pas un chiffre,
@@ -17,10 +17,12 @@ Pour cela écrire une fonction  **nombre_chiffre(exp,chiffre)** qui reçoit un e
 
  Exemples<br>
 
-    &gt;&gt;&gt; nombre_chiffre(0,1)==1<br>
+    &gt;&gt;&gt; nombre_chiffres(0,1)==1<br>
     True<br>
-    &gt;&gt;&gt; coefficients_binome(8)<br>
-    1 3 3 1<br>
+    &gt;&gt;&gt; nombre_chiffres(8,1)<br>
+    0<br>
+     &gt;&gt;&gt; nombre_chiffres(18,4)<br>
+    2<br>
 ==
 
 Xeditor.code==
@@ -35,3 +37,20 @@ def nombre_chiffre(n,c):
             nb+=1
         n//=10
     return nb
+==
+before==
+import random
+
+n=random.randint(40,120)
+c=random.randint(0,10)
+pltest3=""">>> nombre_chiffre({}{})\n'{}'""".format(n,c,nombre_chiffre(n))
+
+after=before
+==
+pltest0==
+>>> nombre_chiffre(0,1)==1
+True
+==
+pltest1==
+>>> nombre_chiffre(67,9)
+9
