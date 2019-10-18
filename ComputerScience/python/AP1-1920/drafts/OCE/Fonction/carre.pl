@@ -1,6 +1,11 @@
 
 #author=OCE
 
+# DR
+
+si la fonction imprime le carré ton test foncitonne 
+Hors c'est très différent si la fonction retourne ou affiche 
+il faut que ton test vérifie cette nuance
 
 
 # Heritage d'un type d'exercice 
