@@ -56,10 +56,10 @@ pltest3=""">>> nombre_chiffres({},5)\n'{}'""".format(n,nombre_chiffres(n,5))
 after=before
 ==
 pltest0==
->>> nombre_chiffre(0,1)==1
+>>> nombre_chiffres(0,1)==1
 True
 ==
 pltest1==
->>> nombre_chiffre(67,9)
+>>> nombre_chiffres(67,9)
 9
 ==
