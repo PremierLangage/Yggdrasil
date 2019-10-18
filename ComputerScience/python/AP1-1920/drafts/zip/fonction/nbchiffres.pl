@@ -31,7 +31,6 @@ def nombre_chiffres(n,c):
         return None
     nb=0
     n=2**n
-    print(n)
     while  n>0:
         if n%10==c:
             nb+=1
@@ -45,7 +44,6 @@ def nombre_chiffres(n,c):
         return None
     nb=0
     n=2**n
-    print(n)
     while  n>0:
         if n%10==c:
             nb+=1
