@@ -57,7 +57,7 @@ def triangle(n,ch):
 import random
 
 n=random.randint(4,7)
-p='?'
+p="?"
 pltest2=""">>> triangle({},{})# Test aleatoire \n'""".format(n,p)+ str(triangle(n,p))+"'\n"
 
 n=n+2
