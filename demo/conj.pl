@@ -18,11 +18,11 @@ row=rd.choice(rows)
 p=rd.choice(['1S','2S','3S','1P','2P','3P'])
 
 lst_txt_prs={'1S':'1ère personne du singulier',
-         '2S':'2e personne du singulier',
-         '3S':'3e personne du singulier',
-         '1P':'1ère personne du pluriel',
-         '2P':'2e personne du pluriel',
-         '3P':'3e personne du pluriel'}
+             '2S':'2e personne du singulier',
+             '3S':'3e personne du singulier',
+             '1P':'1ère personne du pluriel',
+             '2P':'2e personne du pluriel',
+             '3P':'3e personne du pluriel'}
 
 verbe_inf=row['infinitif']
 verbe_conj=row[p]
