@@ -70,9 +70,10 @@ pltest2=""">>> triangle_etoiles({})# Test aleatoire \n'""".format(n)+ str(triang
 n=n+1
 pltest3=""">>> triangle_etoiles({})# Test aleatoire \n'""".format(n)+ str(triangle_etoiles(n))+"'\n"
 
+after=before
 ==
 
-after==
+xafter==
 
 import random
 def ligne_etoiles(n):
