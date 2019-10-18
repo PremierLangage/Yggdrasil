@@ -38,6 +38,8 @@ dont l'affichage produit <br>
 \*+\*\*<br>
 \*<br>
 '
+
+{{pltest2}}
 ==
 before==
 import random
