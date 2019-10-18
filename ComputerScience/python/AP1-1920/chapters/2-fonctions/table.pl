@@ -21,7 +21,8 @@ code==
 
 text==  
 
-Programmer une fonction **table** qui : <br 
+Ecrire une fonction **saisie_entier_str_positif** que force la saisie d'un entire strictement positif et le renvoie<br>
+Ecrire une fonction **table** qui : <br> 
 * prend en paramètre deux entiers : <br>
    + un entier n <br>
    + un entier strictement positif k <br>
@@ -38,11 +39,15 @@ soluce==#|python|
 def table(n,x):
     for i in range(n):
         print(i * x, end =' ')
+def  saisie_entier_str_positif():
+    n=int(input("Saisissez un entier strictement positif : "))
+    while(n<=0):
+         n = int(input("Saisissez un entier strictement positif : ")
+    return n
 
 n = int(input("Saisisez un entier n : "))
-k = int(input("Saisissez un entier k strictement positif : "))
-while(k<=0):
-    k = int(input("Saisissez un entier k strictement positif : "))
+k = saisie_entier_str_positif()
+
 table(n,k)
 ==
 
