@@ -121,7 +121,12 @@ def triangle_etoiles(n):
 pltest0==
 >>> ligne_etoiles(1)
 '*'
+>>> ligne_etoiles(8)
+'********'
+
 ==
+
+
 pltest1==
 >>> triangle_etoiles(2)
 '\n*\n*+**\n*\n'
