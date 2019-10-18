@@ -24,8 +24,10 @@ lst_txt_prs={'1S':'1ère personne du singulier',
          '2P':'2e personne du pluriel',
          '3P':'3e personne du pluriel'}
 
-verbe=row['infinitif']
+verbe_inf=row['infinitif']
+verbe_conj=row[p]
 txt_prs=lst_txt_prs[p]
+
 ==
 
 text ==
