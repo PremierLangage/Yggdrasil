@@ -55,12 +55,12 @@ if __name__ == "__main__":
         print(missing_evaluator_stderr, file=sys.stderr)
         sys.exit(1)
     
-    if 'score' not in dic:
+    if 'grade' not in dic:
         print(missing_grade_stderr, file=sys.stderr)
         sys.exit(1)
-    if 'feedback' not in dic:
-        dic['feedback'] = ''
+    score=dic['grade'][0]
+    feedback=dic['grade'][1]
+    output(score, format_feedback(score,feedback), dic)
 
-    output(dic['score'], format_feedback(dic['score'],dic['feedback']), dic)
 
 
