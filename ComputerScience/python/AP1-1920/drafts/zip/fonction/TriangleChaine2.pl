@@ -68,7 +68,7 @@ after=before
 ==
 
 
-Xeditor.code==
+editor.code==
 
 
 import random
