@@ -63,7 +63,9 @@ import random, sys
 
 n=random.randint(4,12)
 
-pltest3=""">>> coefficients({})\n'{}'""".format(n, coefficients(n))
+pltest3=""">>> coefficients_binome({})\n'{}'""".format(n, coefficients_binome(n))
+
+after=before
 ==
 
 zsoluce==
@@ -80,7 +82,7 @@ def combinaison(n,p):
         return 0
     return factoriel(n)/(factoriel(n-p)*factoriel(p))
 
-def coefficients(n):
+def coefficients_binome(n):
     if n<0:
         s="non défini"
     else:
@@ -105,4 +107,5 @@ pltest2==
 >>> coefficients_binome(5)
 '1 5 10 10 5 1'
 ==
+
 
