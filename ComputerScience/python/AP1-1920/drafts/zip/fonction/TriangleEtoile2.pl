@@ -97,7 +97,7 @@ def triangle_etoiles(n):
 
 pltest2="Test aléatoire\n"
 n=random.randint(4,7)
-pltest2=""">>> triangle_etoiles({})\n{}""".format(n, triangle_etoiles(n))
+pltest2=""">>> triangle_etoiles({})\n'{}'""".format(n, triangle_etoiles(n))
 ==
 
 zsoluce==
