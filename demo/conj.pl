@@ -31,7 +31,7 @@ txt_prs=lst_txt_prs[p]
 ==
 
 text ==
-Conjuguer le verbe {{verbe_inf}} à la {{txt_prs}} du présent.
+Conjuguer le verbe *{{verbe_inf}}* à la {{txt_prs}} du présent.
 ==
 
 input =: Input
