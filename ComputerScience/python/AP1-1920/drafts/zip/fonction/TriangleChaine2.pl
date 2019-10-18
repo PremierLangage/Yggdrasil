@@ -58,7 +58,7 @@ import random
 
 n=random.randint(4,7)
 p="A"
-pltest2=""">>> triangle({},{})# Test aleatoire \n'""".format(n,p)+ str(triangle(n,p))+"'\n"
+pltest2=""">>> triangle({},"A")# Test aleatoire \n'""".format(n,"A")+ str(triangle(n,p))+"'\n"
 
 n=n+2
 p='$'
