@@ -35,9 +35,10 @@ with open("base.py","r") as f:
 sortlist.items = []
 answer = []
 for ligne in l:
-    e={ "id": uuid.uuid4(),"content":ligne }
-    sortlist.items.append(e)
-    answer.append(e["id"])
+    if len(ligne)>1 :
+        e={ "id": uuid.uuid4(),"content":ligne }
+        sortlist.items.append(e)
+        answer.append(e["id"])
 random.shuffle(sortlist.items)
 ==
 
