@@ -57,11 +57,10 @@ for l in lines :
         else:
             current+=l+"<br>"
 
-l=w
 
 sortlist.items = []
 answer = []
-for ligne in l:
+for ligne in w:
     if len(ligne)>1 :
         e={ "id": uuid.uuid4(),"content":"<pre>"+ligne+"</pre>" }
         sortlist.items.append(e)
