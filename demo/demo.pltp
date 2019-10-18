@@ -1,11 +1,11 @@
 
 
-title= Un petit tour de pl 
+title= Un petit tour de PremierLangage (PL)
 
 introduction==
 
 la feuille d'exercice suivant vous permet de faire un petit tour des 
-capacités de pl et de faire la preuve que pl peut s'adpater a de nombreuses disciplines.
+capacités de pl et de faire la preuve que pl peut s'adapter à de nombreuses disciplines.
 
 Vous pouvez clicker sur les noms d'exercices dans le menu de gauche quand vous bloquez sur un exo.
 Personnellement je n'en réussit qu'un sur deux.
@@ -15,7 +15,7 @@ Quand vous aurez assez de jouer a répondre a des exercices vous pouvez:
 - lire la documentation générale (menu du haut)
 - lire la documentation des composant hexagone ouvert sur le haut (menu de gauche)
 
-ET enfin faire des essais d'ecrture d'exercice mais attention les documents sont partagés 
+ET enfin faire des essais d'ecriture d'exercice mais attention les documents sont partagés 
 **ne faites pas de modifications de fichiers existants
 créer un nouveau fichier pour faire vos essais**. 
 
@@ -49,6 +49,7 @@ créer un nouveau fichier pour faire vos essais**.
 @ /example/python/stack.pl
 @ /example/python/enigma_encode.pl
 @ /example/python/enigma_decode.pl
+
 
 
 
