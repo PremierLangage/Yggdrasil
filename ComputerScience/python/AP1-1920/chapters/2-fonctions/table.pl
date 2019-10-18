@@ -25,7 +25,6 @@ Ecrire une fonction **table** qui : <br>
 * prend en paramètre deux entiers : <br>
    + un entier n <br>
    + un entier strictement positif k <br>
-* imprime les "k" premiers multiples de "n"
 
 Pour finir écrivez un code : <br>
 * qui demande à l'utilisateur deux entiers (dont un strictement positif), <br>
@@ -37,7 +36,7 @@ Vous vous aiderez du code déjà présent pour les saisies des valeurs.
 soluce==#|python|
 def table(n,x):
     for i in range(n):
-        print(i * x, end =' ')
+        print(i * x)
 def  saisie_entier_str_positif():
     n=int(input("Saisissez un entier strictement positif : "))
     while(n<=0):
