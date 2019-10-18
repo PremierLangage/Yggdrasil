@@ -23,7 +23,7 @@ Vous devez écrire deux fonctions,<br>
 en faisant appel à la fonction **cube**. <br>
 
 Vous écrirez un programme demandant à un utilisateur de rentrer un réel, appelant la fonction **volume_sphere** et affichant le résultat.<br>
-Naturellement un volume ne peut pas être négatif, ...ou nul !
+Naturellement un volume ne peut pas être négatif !
 ==
 
 soluce==#|python|
@@ -36,7 +36,7 @@ def volume_sphere(r):
     return 4 / 3 * pi * cube(r)
 
 r = float(input("Entrez la valeur du rayon : "))
-while r <=0:
+while r <0:
     r = float(input("Entrez la valeur du rayon : "))
     
 print("Le volume de cette sphere vaut", volume_sphere(r))
@@ -49,6 +49,7 @@ Positif_reel
 mplsoluce1==
 Negatif_reel
 -5
+
 ==
 
 mplsoluce2==
