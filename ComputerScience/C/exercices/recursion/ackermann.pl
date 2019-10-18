@@ -9,7 +9,6 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
-
 La fonction d'Ackermann est une fonction récursive à deux paramètres
 entiers positifs. Elle peut être définie comme il suit :
 
