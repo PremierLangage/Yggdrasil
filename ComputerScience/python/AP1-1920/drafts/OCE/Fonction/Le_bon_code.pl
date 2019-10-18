@@ -55,7 +55,7 @@ for l in lines :
              print(" Fichier mal structuré BEGIN in inside state ", file=sys.stderr)
              sys.exit(1)
         else:
-            current+=l+"<br>"
+            current+=l
 
 
 sortlist.items = []
