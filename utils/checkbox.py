@@ -62,5 +62,5 @@ class Checkbox(Component):
         elif self.grading=="CorrectAnswers":
             nitems=len(self.items)
             score=max([int((nitems-2*(checkwrong+missright))/nitems*100),0])
-        return score
+        return '(score,"")
 
