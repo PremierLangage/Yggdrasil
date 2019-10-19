@@ -9,12 +9,11 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title =Triangle chaine
 text==  
-Modifier les  fonctions de l'exercice TriangleEtoile pour que l'utilisateur choisisse
- la chaine à répéter?<br> 
- *ligne-etoiles(n)* devient *ligne(n,ch)* et *triangle_etoiles(n)*
- devient *triangle(n,ch)*
+Modifier les fonctions de l'exercice TriangleEtoile pour que l'utilisateur choisisse la chaine à répéter. <br> 
+Vous devez transformer la fonction *ligne-etoiles(n)* en *ligne(n,ch)* et la fonction *triangle_etoiles(n)* en *triangle(n,ch)*
 
- Exemple<br>
+Exemple<br>
+
 print(triangle(3,'\*'))
 <br>
 \*<br>
@@ -24,7 +23,7 @@ print(triangle(3,'\*'))
 \*<br>
 <br>
 
-et print(triangle(3,'to'))<br>
+print(triangle(3,'to'))<br>
 <br>
 to <br>
 to+toto <br>
@@ -33,6 +32,7 @@ to+toto <br>
 to <br>
 <br>
 ==
+
 before==
 import random
 
@@ -46,9 +46,6 @@ def ligne(n,ch):
                 etoile+=ch
                 s=s+"+"+etoile
     return s
-
-
-
 
 def triangle(n,ch):
     s="\\n"
