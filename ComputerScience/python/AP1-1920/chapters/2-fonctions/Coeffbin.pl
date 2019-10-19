@@ -26,12 +26,12 @@ un entier n et renvoie :<br>
 
 Exemples de résultats attendus :
 
-    &gt;&gt;&gt; coefficients_binome(0)==1<br>
-    True<br>
-    &gt;&gt;&gt; coefficients_binome(3)<br>
-    1 3 3 1<br>
-    &gt;&gt;&gt; coefficients_binome(-5)<br>
-    non défini<br>
+&gt;&gt;&gt; coefficients_binome(0)==1<br>
+True<br>
+&gt;&gt;&gt; coefficients_binome(3)<br>
+1 3 3 1<br>
+&gt;&gt;&gt; coefficients_binome(-5)<br>
+non défini<br>
 
 *Remarque : cette méthode n'est pas efficace pour de grandes valeurs de n et p (elle effectue beaucoup de calculs inutiles).
 Nous en étudirons une meilleure plus tard.*
