@@ -83,9 +83,6 @@ def ligne(n,ch):
                 s=s+"+"+etoile
     return s
 
-
-
-
 def triangle(n,ch):
     s="\n"
     for i in range(1,n+1):
