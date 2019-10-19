@@ -68,7 +68,7 @@ after=before
 ==
 
 
-editor.code==
+Xeditor.code==
 import random
 
 def ligne(n,ch):
@@ -103,6 +103,7 @@ pltest1==
 >>> triangle(2,'r2d2')
 '\nr2d2\nr2d2+r2d2r2d2\nr2d2\n'
 ==
+
 
 
 
