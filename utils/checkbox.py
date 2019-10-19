@@ -15,6 +15,9 @@ class Checkbox(Component):
     def setSolByIndex(self,index):
         self._sol=[self.items[i]['id'] for i in index]
 
+    def setSolByContent(self,content):
+        self._sol=[item['id'] for item in self.items if item['content'] in content]
+
     def loadContent(self, content):
         items = []
         for e in content:
@@ -29,22 +32,6 @@ class Checkbox(Component):
 
     def sort(self):
         rd.sort(self.items)
-
-    def evalByContent(self,content):
-        ansright,answrong,itemright=0,0,0
-        for item in self.items:
-            if item['content'] in content and item['checked']:
-                item['css'] = 'success-state anim-fade'
-                ansright+=1
-                itemright+=1
-            elif item['content'] in content and not item['checked']:
-                item['css'] = 'success-state anim-fade'
-                answrong+=1
-                itemright+=1
-            elif not (item['content'] in content) and item['checked']:
-                answrong+=1
-        score=computeScore(self.grading,len(self.items),ansright,answrong,itemright)
-        return(score,"")
 
     def eval(self):
         ansright,answrong,itemright=0,0,0
