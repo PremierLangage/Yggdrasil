@@ -3,7 +3,7 @@
 
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
-@ /ComputerScience/python/AP1-1920/chapters/2-fonctions/Arbre.png
+#@ /ComputerScience/python/AP1-1920/chapters/2-fonctions/Arbre.png
 
 url =$ Arbre.png
 
