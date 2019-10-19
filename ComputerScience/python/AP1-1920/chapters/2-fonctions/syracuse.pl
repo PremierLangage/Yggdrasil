@@ -16,6 +16,7 @@ Pour tout entier strictement positif $%u_0%$ testé, la suite converge vers 1.
 Le premier n tel que $%u_n=1%$ est appelé temps de vol de la suite.
 Le but de l'exercice est de déterminer le temps de vol pour plusieurs valeurs de $%u_0%$.
 <br>
+<br>
 Pour cela:<br>
 * écrire une fontion *saisie_strict_positif()* qui renvoie un entier strictement positif<br>
 entré par l'utilisateur.<br>
