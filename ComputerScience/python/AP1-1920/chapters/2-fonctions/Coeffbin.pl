@@ -31,9 +31,7 @@ Exemples<br>
     &gt;&gt;&gt; coefficients_binome(-5)<br>
     non défini<br>
 
-*Remarque :* <br>
-
-*Cette méthode n'est pas efficace pour de grandes valeurs de n et p (elle effectue beaucoup de calculs inutiles).
+*Remarque : cette méthode n'est pas efficace pour de grandes valeurs de n et p (elle effectue beaucoup de calculs inutiles).
 Nous en étudirons une meilleure plus tard.*
 ==
 before==
