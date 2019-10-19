@@ -9,7 +9,7 @@ title =Apparition d'un chiffre
 text==
 On veut déterminer le nombre d'apparition d'un chiffre particulier dans $%2^n%$.
 
-Pour cela écrire une fonction  **nombre_chiffres(exp,chiffre)** qui reçoit un entier positif exp et un chiffre chiffre et renvoie le nombre 
+Pour cela écrire une fonction  **nombre_chiffres(exp,chiffre)** qui reçoit un entier positif "exp" et un chiffre "chiffre" et renvoie le nombre 
 d'apparition du chiffre dans $%2^{exp}%$ (le code n'utilisera pas de str). 
  
 Si exp n'est pas un entier positif ou si chiffre n'est pas un chiffre, la fonction renvoie None. <br>
