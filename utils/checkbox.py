@@ -34,35 +34,33 @@ class Checkbox(Component):
         rd.sort(self.items)
 
     def eval(self):
-        ansright,answrong,itemright=0,0,0
+        checkright,checkwrong,missright=0,0,0
+
         for item in self.items:
             if item['id'] in self._sol and item['checked']:
                 item['css'] = 'success-state anim-fade'
-                ansright+=1
-                itemright+=1
+                checkright+=1
             elif item['id'] in self._sol and not item['checked']:
                 item['css'] = 'success-state anim-fade'
-                answrong+=1
-                itemright+=1
+                missright+=1
             elif not (item['id'] in self._sol) and item['checked']:
-                answrong+=1
-        score=computeScore(self.grading,len(self.items),ansright,answrong,itemright)
-        return(score,"")
+                checkwrong+=1
 
-def computeScore(grading,nitems,ansright,answrong,itemright):
-    if grading=="AllOrNothing":
-        if (ansright==itemright) and answrong==0:
-            score=100
-        else:
-            score=0
-    elif grading=="RightMinusWrong":
-        if ansright==0 and itemright==0:
-            score=100
-        elif ansright==0 and itemright>0:
-            score=0
-        else:
-            score=max([int((ansright-answrong)/ansright*100),0])
-    elif grading=="CorrectAnswers":
-            score=max([int((nitems-2*answrong)/nitems*100),0])
-    return score
+        if grading=="AllOrNothing":
+            if checkwrong==0 and missright==0:
+                score=100
+            else:
+                score=0
+        elif grading=="RightMinusWrong":
+            if checkright+missright==0:
+                if checkwrong==0:
+                    score=100
+                else:
+                    score=0
+            else:
+                score=max([int((checkright-checkwrong)/(checkright+missright)*100),0])
+        elif grading=="CorrectAnswers":
+            nitems=len(self.items)
+                score=max([int((nitems-2*(checkwrong+missright))/nitems*100),0])
+        return score
 
