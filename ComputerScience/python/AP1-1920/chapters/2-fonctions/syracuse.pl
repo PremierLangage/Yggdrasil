@@ -16,16 +16,17 @@ Pour tout entier strictement positif $%u_0%$ testé, la suite converge vers 1.
 Le premier n tel que $%u_n=1%$ est appelé temps de vol de la suite.
 Le but de l'exercice est de déterminer le temps de vol pour plusieurs valeurs de $%u_0%$.
 <br>
-Pour cela:
-* écrire une fontion *saisie_strict_positif()* qui renvoie un entier strictement positif
-entré par l'utilisateur.
+Pour cela:<br>
+* écrire une fontion *saisie_strict_positif()* qui renvoie un entier strictement positif<br>
+entré par l'utilisateur.<br>
 
-* écrire une fontion *syracuse_temps(u)* qui reçoit un entier strictement positifs 
+* écrire une fontion *syracuse_temps(u)* qui reçoit un entier strictement positifs<br> 
 et renvoie le temps de vol de lasuite pour $%u_0=u%$<br>
 
-* utilisez ces fonctions pour écrire un programme qui lit 5 entiers strictement positifs
+* utilisez ces fonctions pour écrire un programme qui lit 5 entiers strictement positifs<br>
  et affiche le temps de vol pour chacun de ces entiers.<br> 
-Exemples
+
+Exemples :<br>
  
 Entrez un entier strictement positif : 5 <br>
 Le temps de vol pour 7 est 16<br>
