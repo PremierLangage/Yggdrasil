@@ -18,8 +18,8 @@ et renvoie le nombre de combinaions de p éléments choisis parmi n éléments.
 $%\binom{n}{p}%$<br>
 On rappelle que ce nombre vaut $%\frac{n!}{p! \times(n-p)!} %$ si $%0 \le p\le n %$ et 0 sinon.<br>
 Utilisez ces fonctions pour écrire une fonction *coefficients_binome(n)* qui reçoit 
- un entier n et renvoie <br>
- *  une chaine de caractères constituée des coefficients de développement de $%(a+b)^n%$, s'il est positif.
+un entier n et renvoie :<br>
+*  une chaine de caractères constituée des coefficients de développement de $%(a+b)^n%$, s'il est positif.<br>
 
 * la chaine "non défini" si n est négatif<br>
 Exemples<br>
@@ -31,7 +31,7 @@ Exemples<br>
     &gt;&gt;&gt; coefficients_binome(-5)<br>
     non défini<br>
 
-Remarque
+Remarque : <br>
 
 *Cette méthode n'est pas efficace pour de grandes valeurs de n et p (elle effectue beaucoup de calculs inutiles).
 Nous en étudirons une meilleure plus tard.*
