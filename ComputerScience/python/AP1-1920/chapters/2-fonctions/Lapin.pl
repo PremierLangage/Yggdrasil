@@ -7,8 +7,6 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title= Des lapins ... 
 
-url =$ Arbre.png
-
 text==
 Un couple de lapins arrive sur l'ile de Quang Binh le 1er septembre. Ce couple a sa première portée à deux mois, puis une portée tous les mois.
 Chaque portée est un couple de lapins. Tous les couples ainsi obtenus se reproduisent
