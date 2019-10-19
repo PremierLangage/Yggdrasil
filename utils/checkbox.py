@@ -46,12 +46,12 @@ class Checkbox(Component):
             elif not (item['id'] in self._sol) and item['checked']:
                 checkwrong+=1
 
-        if grading=="AllOrNothing":
+        if self.grading=="AllOrNothing":
             if checkwrong==0 and missright==0:
                 score=100
             else:
                 score=0
-        elif grading=="RightMinusWrong":
+        elif self.grading=="RightMinusWrong":
             if checkright+missright==0:
                 if checkwrong==0:
                     score=100
@@ -59,7 +59,7 @@ class Checkbox(Component):
                     score=0
             else:
                 score=max([int((checkright-checkwrong)/(checkright+missright)*100),0])
-        elif grading=="CorrectAnswers":
+        elif self.grading=="CorrectAnswers":
             nitems=len(self.items)
             score=max([int((nitems-2*(checkwrong+missright))/nitems*100),0])
         return score
