@@ -10,7 +10,7 @@ checkbox.decorator = Checkbox
 
 before ==
 checkbox.loadContent(["Paris","Bruxelles","Lyon","Genève"])
-checkbox.setSolByIndex(["Paris","Lyon"])
+checkbox.setSolByContent(["Paris","Lyon"])
 checkbox.shuffle()
 checkbox.grading="RightMinusWrong"
 ==
