@@ -40,11 +40,10 @@ vaches=int(input("Combiendevaches?"))
 amis=int(input("Combiend'amis?"))
 
 payer=amende(poules,chiens,vaches,amis)
-print("\nApayer:",end="")
 if payer==0:
     print("rien a payer")
 else:
-    print(payer,"euros")
+    print("payer :",payer,"euros")
 ==
 
 mplsoluce0==
