@@ -33,6 +33,7 @@ On fera les doctest suivants :
 plus d'autres ....
 
 
+*d'après Laure Petrucci*
 ==
 
 
@@ -97,5 +98,6 @@ pltest3=""">>> lapin({})\n{}""".format(n, lapin(n))
 
 
 ==
+
 
 
