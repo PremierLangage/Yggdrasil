@@ -36,7 +36,7 @@ non défini<br>
 *Remarque : cette méthode n'est pas efficace pour de grandes valeurs de n et p (elle effectue beaucoup de calculs inutiles).
 Nous en étudirons une meilleure plus tard.*<br>
 <br>
-*Conseil : n'hésitez pas à coder avec un éditeur*
+*Conseil : n'hésitez pas à coder avec un éditeur python*
 ==
 before==
 def factoriel(n):
