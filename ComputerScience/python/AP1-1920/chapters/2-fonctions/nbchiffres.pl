@@ -17,11 +17,11 @@ Si exp n'est pas un entier positif ou si chiffre n'est pas un chiffre, la foncti
 Exemples<br>
 
 &gt;&gt;&gt; nombre_chiffres(0,1)==1<br>
-    True<br>
-    &gt;&gt;&gt; nombre_chiffres(8,1)<br>
-    0<br>
-     &gt;&gt;&gt; nombre_chiffres(18,4)<br>
-    2<br>
+True<br>
+&gt;&gt;&gt; nombre_chiffres(8,1)<br>
+0<br>
+&gt;&gt;&gt; nombre_chiffres(18,4)<br>
+2<br>
 ==
 
 Xeditor.code==
