@@ -22,7 +22,8 @@ un entier n et renvoie :<br>
 + une chaine de caractères constituée des coefficients de développement de $%(a+b)^n%$, s'il est positif.<br>
 
 + la chaine "non défini" si n est négatif<br>
-Exemples<br>
+
++ Exemples de résultats attendus : <br>
 
     &gt;&gt;&gt; coefficients_binome(0)==1<br>
     True<br>
