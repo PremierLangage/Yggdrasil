@@ -22,7 +22,7 @@ créer un nouveau fichier pour faire vos essais**.
 ==
 
 @ /demo/add_int.pl 
-@ /demo/capitals2.pl
+#@ /demo/capitals2.pl
 @ /Languages/Greek/verb_inflexion.pl
 @ /ComputerScience/C/examples/chemical_equation.pl #marche
 @ /ComputerScience/C/examples/proposition_subordonnee_relative.pl #marche
@@ -49,6 +49,7 @@ créer un nouveau fichier pour faire vos essais**.
 @ /example/python/stack.pl
 @ /example/python/enigma_encode.pl
 @ /example/python/enigma_decode.pl
+
 
 
 
