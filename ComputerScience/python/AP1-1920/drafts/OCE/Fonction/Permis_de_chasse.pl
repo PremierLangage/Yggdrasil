@@ -21,9 +21,10 @@ text==
 Un permis de chasse à points remplace désormais le permis de chasse traditionnel.<br>
 Chaque chasseur possède au départ un capital de 100 points. <br>
 S’il tue une poule il perd 1 point, 3 points pour 1 chien, 5 points pour une vache et 10 points pour un ami. <br>
-Le permis coûte 200 euros par points perdus. <br>
+L'amende coûte 20 euros par points perdus. <br>
 Écrire une fonction "amende" qui reçoit le nombre de victimes du chasseur et qui renvoie la somme due. <br>
-Utilisez cette fonction dans un programme principal qui saisit le nombre de victimes et qui affiche la somme que le chasseur doit débourser.
+Utilisez cette fonction dans un programme principal qui saisit le nombre de victimes et qui affiche la somme que le chasseur doit débourser <br>
+ainsi que le nombre de points restant.
 ==
 
 soluce==#|python|
