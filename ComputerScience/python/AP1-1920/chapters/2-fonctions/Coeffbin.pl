@@ -24,7 +24,7 @@ un entier n et renvoie :<br>
 
 * la chaine "non défini" si n est négatif<br>
 
-Exemples de résultats attendus : <br>
+Exemples de résultats attendus :
 
     &gt;&gt;&gt; coefficients_binome(0)==1<br>
     True<br>
