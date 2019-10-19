@@ -35,6 +35,7 @@ to <br>
 ==
 before==
 import random
+
 def ligne(n,ch):
     s=""
     if n>0:
@@ -72,6 +73,7 @@ after=before
 
 editor.code==
 import random
+
 def ligne(n,ch):
     s=""
     if n>0:
