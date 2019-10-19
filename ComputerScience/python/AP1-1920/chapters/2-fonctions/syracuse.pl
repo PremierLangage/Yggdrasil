@@ -38,7 +38,13 @@ Entrez un entier strictement positif : 155 <br>
 Le temps de vol pour 1256 est 39<br>
 Entrez un entier strictement positif : 1 <br>
 Le temps de vol pour 1 est 0<br>
+==
+code==
+??=int(input("Entrez un entier strictement positif : "))
 
+
+
+print("Le temps de vol pour",?? ,"est",??)
 ==
 before==
 import random
@@ -88,6 +94,7 @@ negatif
 11
 
 ==
+
 
 
 
