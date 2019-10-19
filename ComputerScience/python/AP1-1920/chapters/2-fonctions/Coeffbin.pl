@@ -19,9 +19,9 @@ $%\binom{n}{p}%$<br>
 On rappelle que ce nombre vaut $%\frac{n!}{p! \times(n-p)!} %$ si $%0 \le p\le n %$ et 0 sinon.<br>
 Utilisez ces fonctions pour écrire une fonction *coefficients_binome(n)* qui reçoit 
 un entier n et renvoie :<br>
-+ une chaine de caractères constituée des coefficients de développement de $%(a+b)^n%$, s'il est positif.<br>
+* une chaine de caractères constituée des coefficients de développement de $%(a+b)^n%$, s'il est positif.<br>
 
-+ la chaine "non défini" si n est négatif<br>
+* la chaine "non défini" si n est négatif</br>
 
 Exemples de résultats attendus : <br>
 
