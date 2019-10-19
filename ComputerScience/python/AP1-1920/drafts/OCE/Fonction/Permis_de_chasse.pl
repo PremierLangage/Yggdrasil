@@ -31,7 +31,7 @@ soluce==#|python|
 def amende(p,c,v,a):
 	points_perdus=p+3*c+5*v+10*a
 	nbre_permis=points_perdus/100.0
-	return 200*nbre_permis
+	return 20*nbre_permis
 
 #programme principal-----------------------------------------------
 poules=int(input("Combiendepoules?"))
