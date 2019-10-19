@@ -47,17 +47,27 @@ else:
 ==
 
 mplsoluce0==
-False
-2
+Rien à payer
+0
+0
+0
+0
 ==
+
 mplsoluce1==
-False
-3
+2 amis
+0
+0
+0
+2
 ==
 
 mplsoluce2==
-True
-10
+1 vache et un 1 chien
+0
+1
+1
+0
 ==
 
 
