@@ -43,7 +43,7 @@ while i<=300:
     i+=10
 ==
 
-plsoluce0==
+plsoluce==
 vitesse de 100 km/heure
 100
 ==
