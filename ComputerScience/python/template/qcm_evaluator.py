@@ -113,7 +113,7 @@ if __name__ == "__main__":
                 outstr = jinja2.Template(dic["feedback"]['failure']).render(dic)
             else:
                 outstr = '<div class="btn-danger">  Raté ! '+ str(a)+"/"+str(t)+ '</div>'
-        if dic["feedback"]=="show" and False: # DONT DO FEEDBACK FOR THE MOMENT  
+        if dic["feedback"]=="show" and False: # DONT DO FEEDBACK FOR THE MOMENT  FIXME FIRST
             outstr += createshowanswer(dic['pairs'],studentdic)
     if "try" not in dic:
         dic["try"]=1
