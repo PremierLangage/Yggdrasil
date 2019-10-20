@@ -122,8 +122,29 @@ if __name__ == "__main__":
         if dic["try"]>int(dic["noretry"]):
             dic["text"]=" Passez à l'exercice suivant "
             dic["form"]= ""
-        
+
+    badpairs=dic['badpairs']
+    goodpairs=dic['goodpairs']
+    
+    
+    if "nb" not in dic:
+        # si on dit rien on prend tout
+        pairs=goodpairs + badpairs
+    else:
+        nb=dic['nb']
+        if "nbtrues" not in dic:
+            pairs  = randomNfromlist(int(nb), goodpairs, badpairs, 0)
+        else:
+            pairs = randomNfromlist(int(nb), goodpairs, badpairs, int(dic['nbtrues']))
+
+    dic['form'] = """<div class="input-group"><table>"""
+    for i,p in enumerate(pairs):
+        dic['form'] += """<TR><td><input id="form_answer_"""+str(i)+"""\"  type="checkbox"  placeholder="" required>  """+p[0]+"</td></TR>"
+    dic['form'] += "</table></div>"
+
+
     output(grade,outstr,dic)
+
 
 
 
