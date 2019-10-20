@@ -100,7 +100,7 @@ if __name__ == "__main__":
     a, t= calculategrade(dic['pairs'],studentdic,('uncrosedfalse' in dic and dic['uncrosedfalse'] ))
     grade= (100*a)/t
     dic['evaluation']= grade
-    if "feedback" in dic: 
+    if "feedback" in dic :
         import jinja2
 
         if a==t:
@@ -113,7 +113,7 @@ if __name__ == "__main__":
                 outstr = jinja2.Template(dic["feedback"]['failure']).render(dic)
             else:
                 outstr = '<div class="btn-danger">  Raté ! '+ str(a)+"/"+str(t)+ '</div>'
-        if dic["feedback"]=="show":
+        if dic["feedback"]=="show" and False: # DONT DO FEEDBACK FOR THE MOMENT  
             outstr += createshowanswer(dic['pairs'],studentdic)
     if "try" not in dic:
         dic["try"]=1
