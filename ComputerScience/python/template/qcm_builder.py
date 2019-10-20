@@ -141,6 +141,8 @@ if __name__ == "__main__":
         else:
             pairs = randomNfromlist(int(nb), goodpairs, badpairs, int(dic['nbtrues']))
 
+    dic['badpairs']=badpairs
+    dic['goodpairs']=goodpairs
     dic['pairs']=pairs
     dic['form'] = """<div class="input-group"><table>"""
     for i,p in enumerate(pairs):
