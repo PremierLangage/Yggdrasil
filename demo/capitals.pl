@@ -39,16 +39,16 @@ form ==
 ==
 
 evaluator ==
-if "value" in theinput:
-    essai+=1
 
-    if theinput.value==capital:
-        grade=(100,"Bravo !")
-    else:
-        if essai >3:
-            exec(before)
-        grade=(0,"essai="+str(essai)+"<br>Raté !")
-grade=(0," saisisez une valeur ") 
+essai+=1
+
+if theinput.value==capital:
+    grade=(100,"Bravo !")
+else:
+    if essai >3:
+        exec(before)
+    grade=(0,"essai="+str(essai)+"<br>Raté !")
+
 ==
 
 
