@@ -67,7 +67,7 @@ def createshowanswer(enonce, studentdic):
     for i,p in enumerate(enonce):
         q='answer_'+str(i)
         correct = (p[1] and q in studentdic) or (not p[1] and  q not in studentdic) 
-        if p[1] :
+        if correct :
             form += greenTd(correct,p[0],"") # no feedback when correct 
         else:
             form +=redTd(correct,p[0],p[2])
