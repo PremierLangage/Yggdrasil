@@ -24,7 +24,7 @@ Programmer une fonction **carre** qui prend en paramètre un entier et retourne 
 
 Programmer ensuite une fonction **premiers_carres** qui : <br>
 * prend en paramètre un entier k <br>
-* imprime les k premiers entiers de 0 à (k-1)^2 <br>
+* imprime les k premiers carrés de 0 à (k-1)^2 <br>
 
 Pour finir écrivez un code : <br>
 * qui demande à l'utilisateur un entier, <br>
@@ -62,6 +62,7 @@ mplsoluce3==
 nul
 0
 ==
+
 
 
 
