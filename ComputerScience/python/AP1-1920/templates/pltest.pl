@@ -40,6 +40,9 @@ Si vous souhaitez faire des tests sur le code de l'élève la variable __student
     False
     ==
 
+Pour que les tests s'arrète sur la première erreur
+    stopfirsterror=True # Valeur par defaut (True)
+
 ==
 
 @ ./utils/pltest_doc.py
@@ -56,6 +59,7 @@ editor.fontsize=14
 form=@ /form/text_editor.html
 
 settings.allow_reroll=1
+
 
 
 
