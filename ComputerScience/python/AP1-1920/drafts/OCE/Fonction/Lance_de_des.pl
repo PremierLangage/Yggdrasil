@@ -5,17 +5,19 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 title = Lancés de dés
 
 text==  
+Coder une fonction qui prend en paramètre un entier "n" compris entre 3 et 18 et retournant le nombre de façons de faire "n" en lançant trois dés.
 
-L’utilisateur donne un entier "n" entre 2 et 12, le programme donne le nombre de façons de faire "n" en lançant deux dés
 ==
 
 #correction==
-#def conv(t,n):
-#    """Renvoie la conversion Celsius->Fahrenheit ou inversement suivant<n>."""
-#    if n==1: #Celsius->Fahrenheit
-#        return(32.0+1.8*t)
-#    elif n==2: #Fahrenheit->Celsius
-#        return((t-32.0)/1.8)
+#def Lances_Des(n):
+#    s = 0
+#    for i in range(1, 7):
+#        for j in range(1, 7):
+#            for k in range(1, 7):
+#                if i + j + k == n:
+#                    s += 1
+#    print("Il y a",s,"facon(s) de faire",n,"avec trois des.")
 #==
 
 pltest0==
