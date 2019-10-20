@@ -88,13 +88,22 @@ if __name__ == "__main__":
     else:
         delimiter=dic['delimiter']
 
+    if "good" not in dic:
+        print("QCM Exercise needs a **good** key with the list of correct answers.",file = sys.stderr) 
+        sys.exit(1)
+    good=dic[’good']
+    if "bad" not in dic:
+        print("QCM Exercise needs a **bad** key with the list of incorrect answers.",file = sys.stderr) 
+        sys.exit(1)
+    bad=dic['bad']
+
     if good.endswith("\n\n"):
         good=good[0:-1]
-        print(" trailing \n",file=sys.stderr)
+        print(" trailing linefeeds in good ",file=sys.stderr)
 
     if bad.endswith("\n\n"):
         bad=bad[0:-1]
-        print(" trailing \n",file=sys.stderr)
+        print(" trailing linefeeds in bad\n",file=sys.stderr)
 
     if "separator" not in dic:
         separator='|'
