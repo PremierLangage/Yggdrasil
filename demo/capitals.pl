@@ -31,18 +31,18 @@ text ==
 Quelle est la capitale {{ofcountry}} ?
 ==
 
-input =: Input
-input.type = text
+theinput =: Input
+theinput.type = text
 
 form ==
-{{ input | component }}
+{{ theinput | component }}
 ==
 
 evaluator ==
-if "value" in input:
+if "value" in theinput:
     essai+=1
 
-    if input.value==capital:
+    if theinput.value==capital:
         grade=(100,"Bravo !")
     else:
         if essai >3:
@@ -50,6 +50,7 @@ if "value" in input:
         grade=(0,"essai="+str(essai)+"<br>Raté !")
 grade=(0," saisisez une valeur ") 
 ==
+
 
 
 
