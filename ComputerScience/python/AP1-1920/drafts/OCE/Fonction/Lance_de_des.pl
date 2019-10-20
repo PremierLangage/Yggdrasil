@@ -22,7 +22,7 @@ Coder une fonction "Lances_Des" qui prend en paramètre un entier "n" compris en
 
 pltest0==
 >>> Lances_Des(5)
-Il y a 6 facon(s) de faire 5 avec deux des.
+Il y a 6 facon(s) de faire 5 avec trois des.
 ==
 pltest1==
 >>> Lances_Des(12)
