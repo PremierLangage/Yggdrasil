@@ -68,7 +68,7 @@ def createshowanswer(enonce, studentdic):
         q='answer_'+str(i)
         correct = (p[1] and q in studentdic) or (not p[1] and  q not in studentdic) 
         if p[1] :
-            form += greenTd(correct,p[0],p[2]) 
+            form += greenTd(correct,p[0],"") # pas de feedback quand c'est juste  
         else:
             form +=redTd(correct,p[0],p[2])
             
