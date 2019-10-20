@@ -9,12 +9,10 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 title =Entiers de Gauss
 text==  
 
-On appelle "entier de Gauss" un nombre complexe $%z=a$\mathrm{i}b , a,b \in \mathbb{R} %$
+On appelle "entier de Gauss" un nombre complexe $%z=a+\mathrm{i}b , a,b \in \mathbb{R} %$
 
-Remarque
-
-*Cette méthode n'est pas efficace pour de grandes valeurs de n et p (elle effectue beaucoup de calculs inutiles).
-Nous en étudirons une meilleure plus tard.*
+Ecrire une fonction *nb_carre_Gauss(r)* qui renvoie le nombre d'entiers de Gauss de module inférieur à $%r%$
+dont le carré est également un entier de Gauss de modulle inférieur à $%r%$
 ==
 before==
 def factoriel(n):
