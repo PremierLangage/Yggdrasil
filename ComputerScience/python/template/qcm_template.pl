@@ -42,6 +42,7 @@ doc==
     
 
 ==
+title = changer le titre 
 
 form=dummy for the pl grammar the builder is making the form
 
@@ -56,6 +57,7 @@ grader=@qcm_evaluator.py
 @ /utils/sandboxio.py
 
 settings.allow_reroll=doit
+
 
 
 
