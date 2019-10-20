@@ -10,9 +10,7 @@ text==
 Celsius -> Fahrenheit (n= 1), ou Fahrenheit -> Celsius(n= 2).<br>
 Rappel :<br>
 $%
-\begin{cases}
 Tf = 32 +1.8 * Tc\\\
-\end{cases}
 %$
 ==
 
