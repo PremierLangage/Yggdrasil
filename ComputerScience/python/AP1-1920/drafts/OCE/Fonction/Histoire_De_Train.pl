@@ -13,7 +13,7 @@ Je suis ligoté sur les rails en gare d’Arras.<br>
 Le tableau prédira les différentes heures possibles pour toutes les vitesses de 100 km/h à 300 km/h, par pas de 10 km/h,
 les résultats étant arrondis à la minute inférieure.<br>
 –Écrire une fonction "tchacatchac" qui reçoit la vitesse du train et qui affiche l’heure du drame ;<br>
-–écrire le programme principal qui affiche le tableau demandé.<br>
+–Écrire le programme principal qui affiche le tableau demandé.<br>
 <br>
 indice : pour imprimer le tableau, on vous donne la phrase à utiliser : <br>
 print("A {}km/h,je me fais dechiqueter à {}h{:.2f}min.".format(v,heure,minute))
