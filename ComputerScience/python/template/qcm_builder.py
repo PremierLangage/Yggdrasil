@@ -75,11 +75,11 @@ if __name__ == "__main__":
         for key in glob:
             if key in dic and dic[key] == glob[key]:
                 del dic[key]
-    else:
-        print(("Builder 'before' need a script declared in the key 'before'. "
-               + "See documentation related to this builder."),
-              file = sys.stderr)
-        sys.exit(1)
+    # else:
+    #     print(("Builder 'before' need a script declared in the key 'before'. "
+    #            + "See documentation related to this builder."),
+    #           file = sys.stderr)
+    #     sys.exit(1)
 
 
 
