@@ -32,6 +32,8 @@ True
 100
 >>> 
 ==
+
+
 editor.code==
 def carre(n):
     return n*6
