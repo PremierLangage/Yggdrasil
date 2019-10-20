@@ -29,12 +29,12 @@ Utilisez cette fonction dans un programme principal qui : <br>
 * saisit le nombre de victimes et,<br>
 * qui affiche la somme que le chasseur doit débourser ainsi que,<br>
 * le nombre de points restant (si la somme de points perdus est supérieure à 100, la fonction retourne 100).<br>
-
+<br>
 Écrire ensuite un programme principal qui :
 * demande à l'utilisateur le nombre de victime
 * retourne la somme à payer <br>
 * le nombre de points restants ou l'annulation du permis<br>
-
+<br>
 Exemple : <br>
 
 Combien de poules?1 <br>
