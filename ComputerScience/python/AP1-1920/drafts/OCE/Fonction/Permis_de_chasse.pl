@@ -33,7 +33,7 @@ Utilisez cette fonction dans un programme principal qui : <br>
 Écrire ensuite un programme principal qui :
 * demande à l'utilisateur le nombre de victime
 * retourne la somme à payer <br>
-* le nombre de points restants ou l'annulation du permis
+* le nombre de points restants ou l'annulation du permis<br>
 
 Exemple : <br>
 
