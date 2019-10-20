@@ -24,21 +24,25 @@ Tf = 32 +1.8 * Tc\\\
 #==
 
 pltest0==
->>> factoriel(3)==6 and combinaison(3,2)==3 and coefficients_binome(2)=="1 2 1"
-True
+>>> conv(20,1)
+68.0
 ==
 pltest1==
-#negatif
->>> coefficients_binome(-9)
-'non défini'
+>>> conv(20,2)
+-6.666666666666666
 ==
-
 pltest2==
->>> coefficients_binome(5)
-'1 5 10 10 5 1'
+>>> conv(50,1)
+122.0
 ==
-
-
+pltest3==
+>>> conv(50,1)
+122.0
+==
+pltest4==
+>>> conv(-58,2)
+-50.0
+==
 
 
 
