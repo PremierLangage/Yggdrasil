@@ -68,14 +68,10 @@ if __name__ == "__main__":
         pltest = dic['pltest']
         tester = PlRunner(student,pltest)
         a, b = tester.runpltest(1)
-    elif "pltest0" in dic:
-        pltest = dic['pltest0']
-        tester = PlRunner(student,pltest)
-        a, b = tester.runpltest(1)
     else:
 
         a,b= True, ""
-    i=1
+    i=0
     while "pltest"+str(i) in dic and (a or stop ) :
         outstr += b
         testi = PlRunner(student,dic["pltest"+str(i)])
@@ -98,6 +94,7 @@ if __name__ == "__main__":
 
     output(a,outstr,dic)
     
+
 
 
 
