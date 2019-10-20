@@ -91,7 +91,7 @@ if __name__ == "__main__":
     if "good" not in dic:
         print("QCM Exercise needs a **good** key with the list of correct answers.",file = sys.stderr) 
         sys.exit(1)
-    good=dic[’good']
+    good=dic['good']
     if "bad" not in dic:
         print("QCM Exercise needs a **bad** key with the list of incorrect answers.",file = sys.stderr) 
         sys.exit(1)
@@ -146,14 +146,6 @@ if __name__ == "__main__":
     for i,p in enumerate(pairs):
         form += """<TR><td><input id="form_answer_"""+str(i)+"""\"  type="checkbox"  placeholder="" required>"""+p[0]+"</td></TR>"
     form += "</table></div>"
-
-
-
-
-
-
-
-
 
 
     with open(output_json, "w+") as f:
