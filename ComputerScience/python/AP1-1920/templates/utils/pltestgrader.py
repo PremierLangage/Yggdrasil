@@ -71,7 +71,7 @@ if __name__ == "__main__":
     else:
         a,b= 100, ""
     for i in range(10):
-        if "pltest"+str(i) in dic  (a or stop ) :
+        if "pltest"+str(i) in dic and (a or stop ) :
             outstr += b
             testi = PlRunner(student,dic["pltest"+str(i)])
             a, b = testi.runpltest(i+1)
