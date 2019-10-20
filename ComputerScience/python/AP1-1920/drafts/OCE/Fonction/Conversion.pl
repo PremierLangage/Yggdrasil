@@ -14,6 +14,15 @@ Tf = 32 +1.8 * Tc\\\
 %$
 ==
 
+#correction==
+#def conv(t,n):
+#    """Renvoie la conversion Celsius->Fahrenheit ou inversement suivant<n>."""
+#    if n==1: #Celsius->Fahrenheit
+#        return(32.0+1.8*t)
+#    elif n==2: #Fahrenheit->Celsius
+#        return((t-32.0)/1.8)
+#==
+
 pltest0==
 >>> factoriel(3)==6 and combinaison(3,2)==3 and coefficients_binome(2)=="1 2 1"
 True
