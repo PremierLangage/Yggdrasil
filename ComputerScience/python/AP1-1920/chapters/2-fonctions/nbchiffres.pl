@@ -50,7 +50,7 @@ def nombre_chiffres(n,c):
     return nb
 n=random.randint(14,50)
 c=random.randint(0,10)
-pltest3=""">>> nombre_chiffres({},5)\n'{}'""".format(n,nombre_chiffres(n,5))
+pltest2=""">>> nombre_chiffres({},5)\n{}""".format(n,nombre_chiffres(n,5))
 
 after=before
 ==
@@ -62,4 +62,5 @@ pltest1==
 >>> nombre_chiffres(67,9)
 3
 ==
+
 
