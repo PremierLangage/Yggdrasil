@@ -33,6 +33,11 @@ Les satellites de la lune sont rouges.
 
 ==
 
+before==
+
+bad+=" Très mauvaise affirmation"
+good += "\n celle ci est bonne par contre "
+==
 
 feedback=show
 
