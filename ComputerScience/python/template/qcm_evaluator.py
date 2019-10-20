@@ -103,7 +103,7 @@ if __name__ == "__main__":
     if "feedback" in dic: 
         import jinja2
         if dic["feedback"]=="show":
-            dic['form'] = createshowanswer(dic['pairs'],studentdic)
+            dic['text'] += createshowanswer(dic['pairs'],studentdic)
         if a==t:
             if 'success' in dic["feedback"]:
                 outstr = jinja2.Template(dic["feedback"]['success']).render(dic)
