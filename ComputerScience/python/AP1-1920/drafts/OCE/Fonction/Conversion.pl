@@ -8,7 +8,7 @@ text==
 
 Écrire une fonction "conv()" qui reçoit deux paramètres, une température "t" et un entier "n", et qui retourne la conversion 
 Celsius -> Fahrenheit (n= 1), ou Fahrenheit -> Celsius(n= 2).<br>
-Rappel :<br
+Rappel :<br>
 $%
 \begin{cases}
 Tf = 32 +1.8 * Tc\\\
