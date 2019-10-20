@@ -11,7 +11,7 @@ text= Cochez les affirmations correctes.
 # Nombre de lignes total 
 nb=4
 # Nombre minimal de lignes "vraies"
-#nbtrues=2
+nbtrues=2
 # if nbtrues==0 then a random number 
 # with at least one good answer ...
 
@@ -35,4 +35,5 @@ Les satellites de la lune sont rouges.
 
 
 feedback=show
+
 
