@@ -43,6 +43,16 @@ while i<=300:
     i+=10
 ==
 
-plsoluce==
+mplsoluce0==
+vitesse de 100
+100
+==
+mplsoluce1==
+vitesse de 150
+150
+==
 
+mplsoluce2==
+vitesse de 300
+300
 ==
