@@ -44,6 +44,5 @@ while i<=300:
 ==
 
 plsoluce==
-vitesse de 100 km/heure
-100
+
 ==
