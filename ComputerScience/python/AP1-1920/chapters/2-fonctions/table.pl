@@ -23,18 +23,18 @@ text==
 Ecrire une fonction **saisie_entier_str_positif** que force la saisie d'un entire strictement positif et le renvoie<br>
 Ecrire une fonction **table** qui : <br> 
 * prend en paramètre deux entiers : <br>
-   + un entier n <br>
-   + un entier strictement positif k <br>
+    + un entier x <br>
+    + un entier strictement positif n <br>
 
 Pour finir écrivez un code : <br>
-* qui demande à l'utilisateur deux entiers (dont un strictement positif), <br>
+* qui demande à l'utilisateur deux entiers (dont le second strictement positif), <br>
 * appelle la fonction **table** qui imprimera le résultat attendu.<br>
 
 Vous vous aiderez du code déjà présent pour les saisies des valeurs. 
 ==
 
 soluce==#|python|
-def table(n,x):
+def table(x,n):
     for i in range(n):
         print(i * x)
 def  saisie_entier_str_positif():
@@ -44,9 +44,9 @@ def  saisie_entier_str_positif():
     return n
 
 n = int(input("Saisisez un entier : "))
-k = saisie_entier_str_positif()
+x = saisie_entier_str_positif()
 
-table(n,k)
+table(n,x)
 ==
 
 mplsoluce0==
@@ -78,6 +78,7 @@ négatif
 -2
 5
 ==
+
 
 
 
