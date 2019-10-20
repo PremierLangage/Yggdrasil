@@ -151,7 +151,6 @@ if __name__ == "__main__":
 
     dic['basetext']=dic['text']
 
-    dic['text']+=str(pairs)
 
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
