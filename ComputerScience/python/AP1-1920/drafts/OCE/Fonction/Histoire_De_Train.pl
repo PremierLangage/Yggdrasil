@@ -43,29 +43,7 @@ while i<=300:
     i+=10
 ==
 
-mplsoluce0==
-Rien à payer
-0
-0
-0
-0
+plsoluce0==
+vitesse de 100 km/heure
+100
 ==
-
-mplsoluce1==
-2 amis
-0
-0
-0
-2
-==
-
-mplsoluce2==
-1 vache et un 1 chien
-0
-1
-1
-0
-==
-
-
-
