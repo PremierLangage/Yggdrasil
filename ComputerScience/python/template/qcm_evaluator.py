@@ -41,7 +41,7 @@ def redTd(b,txt,f):
         correct = '<input type="checkbox" >'
     else: 
         correct ='<input type="checkbox" checked="checked">'
-    return '<TR><TD  style="border: 1px solid red;" >'+correct+'<span style="color:red"> '+txt+' </span>'+f+'</TD</TR>'
+    return '<TR><TD  style="border: 2px solid red;" >'+correct+'<span style="color:red"> '+txt+' </span>'+f+'</TD</TR>'
 
     
 def greenTd(b,txt, f):
