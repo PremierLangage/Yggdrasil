@@ -1,7 +1,7 @@
 # Boris Jabot 10/09/2019 OK
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=l'équipe de l'UPEM vous propose des exercices
-title=Une fonction carré 
+title=Une fonction carrément carrée
 
 tag=function # N'oubliez pas de remplir ce champs svp
 extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
