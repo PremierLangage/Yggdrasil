@@ -50,7 +50,7 @@ Combien de chiens?1 <br>
 Combien de vaches?1 <br>
 Combien d'amis?0 <br>
 <br>
-Payer 450 euros.
+Payer 450 euros.<br>
 Points perdus : 9
 ==
 
