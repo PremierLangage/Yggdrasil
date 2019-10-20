@@ -132,9 +132,8 @@ if __name__ == "__main__":
         pairs=goodpairs + badpairs
     else:
         nb=dic['nb']
-        from 
+        from qcm_builder import randomNfromlist 
         if "nbtrues" not in dic:
-            from qcm_builder import randomNfromlist
             pairs  = randomNfromlist(int(nb), goodpairs, badpairs, 0)
         else:
             pairs = randomNfromlist(int(nb), goodpairs, badpairs, int(dic['nbtrues']))
