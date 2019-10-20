@@ -33,12 +33,12 @@ pltest2==
 Il y a 0 facon(s) de faire 1 avec trois des.
 ==
 pltest3==
->>> conv(50,1)
-122.0
+>>> Lances_Des(3)
+Il y a 1 facon(s) de faire 3 avec trois des.
 ==
 pltest4==
->>> conv(-58,2)
--50.0
+>>> Lances_Des(7)
+Il y a 15 facon(s) de faire 7 avec trois des.
 ==
 
 
