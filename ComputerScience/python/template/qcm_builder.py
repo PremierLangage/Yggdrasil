@@ -142,10 +142,10 @@ if __name__ == "__main__":
             pairs = randomNfromlist(int(nb), goodpairs, badpairs, int(dic['nbtrues']))
 
 
-    form = """<div class="input-group"><table>"""
+    dic['form'] = """<div class="input-group"><table>"""
     for i,p in enumerate(pairs):
-        form += """<TR><td><input id="form_answer_"""+str(i)+"""\"  type="checkbox"  placeholder="" required>"""+p[0]+"</td></TR>"
-    form += "</table></div>"
+        dic['form'] += """<TR><td><input id="form_answer_"""+str(i)+"""\"  type="checkbox"  placeholder="" required>"""+p[0]+"</td></TR>"
+    dic['form'] += "</table></div>"
 
 
     with open(output_json, "w+") as f:
