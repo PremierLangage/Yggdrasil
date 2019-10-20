@@ -42,8 +42,7 @@ doc==
     
 
 ==
-title = changer le titre 
-text = changer le text
+
 
 form=dummy for the pl grammar the builder is making the form
 
@@ -52,9 +51,13 @@ feedback.success=<div class="btn-success"> Voila votre resultat : {{  evaluation
 feedback.failure=<div class="btn-danger"> Voila votre resultat : {{  evaluation }} </div>
 
 
-builder=@ qcm_builder.py # the one in python 
-before=@ qcm_build.py
+# this builder uses the before clause 
+# and checks for good and bad
+@ qcm_builder.py [builder.py] 
+
+# before=@ qcm_build.py
 grader=@qcm_evaluator.py
+
 @ /utils/sandboxio.py
 
 settings.allow_reroll=doit
