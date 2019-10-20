@@ -2,16 +2,11 @@
 # Heritage d'un type d'exercice 
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 
-title = Conversion de température
+title = Lancés de dés
 
 text==  
 
-Écrire une fonction "conv()" qui reçoit deux paramètres, une température "t" et un entier "n", et qui retourne la conversion 
-Celsius -> Fahrenheit (n= 1), ou Fahrenheit -> Celsius(n= 2).<br>
-Rappel : 
-$%
-Tf = 32 +1.8 * Tc\\\
-%$
+L’utilisateur donne un entier "n" entre 2 et 12, le programme donne le nombre de façons de faire "n" en lançant deux dés
 ==
 
 #correction==
