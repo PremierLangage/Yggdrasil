@@ -22,7 +22,7 @@ Un permis de chasse à points remplace désormais le permis de chasse traditionn
 Chaque chasseur possède au départ un capital de 100 points. <br>
 S’il tue une poule il perd 1 point, 5 points pour 1 chien, 10 points pour une vache et 30 points pour un ami. <br>
 L'amende coûte 50 euros par points perdus. <br>
-Si les points perdus sont supérieurs à 100, le permis est annulé.
+Si les points perdus sont supérieurs à 100, le permis est annulé.<br>
 <br>
 Écrire une fonction "amende" qui reçoit le nombre de victimes du chasseur et qui renvoie la somme due et le nombre de points perdus. <br>
 Utilisez cette fonction dans un programme principal qui : <br>
