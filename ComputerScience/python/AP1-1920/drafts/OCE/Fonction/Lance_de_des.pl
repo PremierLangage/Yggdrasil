@@ -21,12 +21,12 @@ Coder une fonction "Lances_Des" qui prend en paramètre un entier "n" compris en
 #==
 
 pltest0==
->>> conv(20,1)
-68.0
+>>> Lances_Des(5)
+Il y a 6 facon(s) de faire 5 avec deux des.
 ==
 pltest1==
->>> conv(20,2)
--6.666666666666666
+>>> Lances_Des(12)
+Il y a 25 facon(s) de faire 12 avec trois des.
 ==
 pltest2==
 >>> conv(50,1)
