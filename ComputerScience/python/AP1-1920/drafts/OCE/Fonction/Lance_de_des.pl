@@ -29,8 +29,8 @@ pltest1==
 Il y a 25 facon(s) de faire 12 avec trois des.
 ==
 pltest2==
->>> conv(50,1)
-122.0
+>>> Lances_Des(1)
+Il y a 0 facon(s) de faire 1 avec trois des.
 ==
 pltest3==
 >>> conv(50,1)
