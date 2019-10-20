@@ -66,8 +66,8 @@ def createshowanswer(enonce, studentdic):
     form="<table>"
     for i,p in enumerate(enonce):
         q='answer_'+str(i)
-        correct = (p[1] and q in studentdic) or (not p[1] and not q in studentdic) 
-        if p[1] :
+        correct = (p[1] and q in studentdic) or (not p[1] and  q not in studentdic) 
+        if correct  :
             form += greenTd(correct,p[0],p[2]) 
         else:
             form +=redTd(correct,p[0],p[2])
@@ -103,7 +103,7 @@ if __name__ == "__main__":
     if "feedback" in dic: 
         import jinja2
         if dic["feedback"]=="show":
-            dic['text'] = dic['basetext']+ createshowanswer(dic['pairs'],studentdic)+str(studentdic)
+            dic['text'] = dic['basetext']+ createshowanswer(dic['pairs'],studentdic)
         if a==t:
             if 'success' in dic["feedback"]:
                 outstr = jinja2.Template(dic["feedback"]['success']).render(dic)
