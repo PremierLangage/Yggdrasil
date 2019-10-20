@@ -9,7 +9,7 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 title =Entiers de Gauss
 text==  
 
-On appelle "entier de Gauss" un nombre complexe $%z=a$\mathrm{i}b , a,b \in \mathbb{R} $
+On appelle "entier de Gauss" un nombre complexe $%z=a$\mathrm{i}b , a,b \in \mathbb{R} %$
 
 Remarque
 
@@ -88,6 +88,7 @@ pltest2==
 >>> coefficients_binome(5)
 '1 5 10 10 5 1'
 ==
+
 
 
 
