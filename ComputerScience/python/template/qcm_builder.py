@@ -144,7 +144,7 @@ if __name__ == "__main__":
     dic['pairs']=pairs
     dic['form'] = """<div class="input-group"><table>"""
     for i,p in enumerate(pairs):
-        dic['form'] += """<TR><td><input id="form_answer_"""+str(i)+"""\"  type="checkbox"  placeholder="" required>"""+p[0]+"</td></TR>"
+        dic['form'] += """<TR><td><input id="form_answer_"""+str(i)+"""\"  type="checkbox"  placeholder="" required>  """+p[0]+"</td></TR>"
     dic['form'] += "</table></div>"
 
 
