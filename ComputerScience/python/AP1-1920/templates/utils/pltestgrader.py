@@ -69,7 +69,6 @@ if __name__ == "__main__":
         tester = PlRunner(student,pltest)
         a, b = tester.runpltest(1)
     else:
-
         a,b= 100, ""
     for i in range(10):
         if "pltest"+str(i) in dic  (a or stop ) :
