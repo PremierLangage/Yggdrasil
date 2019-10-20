@@ -126,7 +126,7 @@ if __name__ == "__main__":
         if x:
             if separator in x:
                 x=x.split(separator)
-                badpairs.append((x[0],True,x[1]))
+                badpairs.append((x[0],False,x[1]))
             else:
                 badpairs.append((x,False," "))
 
