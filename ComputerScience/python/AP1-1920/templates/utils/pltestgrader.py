@@ -70,13 +70,12 @@ if __name__ == "__main__":
         a, b = tester.runpltest(1)
     else:
 
-        a,b= True, ""
-    i=0
-    while "pltest"+str(i) in dic and (a or stop ) :
-        outstr += b
-        testi = PlRunner(student,dic["pltest"+str(i)])
-        a, b = testi.runpltest(i+1)
-        i=i+1
+        a,b= 100, ""
+    for i in range(10):
+        if "pltest"+str(i) in dic  (a or stop ) :
+            outstr += b
+            testi = PlRunner(student,dic["pltest"+str(i)])
+            a, b = testi.runpltest(i+1)
 
     outstr +=  b
     if "feedback" in dic: # FIXME feedback devrait être un dictionnaire.
