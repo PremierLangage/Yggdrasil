@@ -7,7 +7,7 @@ tag=function # N'oubliez pas de remplir ce champs svp
 extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 piste=verte
 text==
-## Une fonction carre ##
+## Une fonction carrément carrée ##
 Ecrivez une fonction **carre** qui retourne le carré de son paramêtre.
 ==
 
@@ -35,6 +35,7 @@ def carre(n):
     return n*6
 ==
 editor.height=145
+
 
 
 
