@@ -27,9 +27,9 @@ counter = 0
 
 title = Count Down Component
 text =
-form -= {{ countdown|component }}
- 
-==
+form = {{ countdown|component }}
+
+
 
 evaluator== #|python|
 remaining = countdown.time
