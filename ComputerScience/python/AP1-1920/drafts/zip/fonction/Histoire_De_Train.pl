@@ -7,34 +7,37 @@ title = Histoire de trains
 
 text==  
 Je suis ligoté sur les rails en gare d’Arras.<br> 
-crire un programme qui affiche l’heure à laquelle je serai déchiqueté par le train parti à 9h de la gare de Ouceti vers Arras
+Un train parti de la gare de Ouceti se dirige vers Arras.Ce train circule à la vitesse $$%v_t%$
+ et la gare d'Ouceti est située à une distance $%d_O%$ de celle d’Arras.
 .<br>
-–Écrire une fonction `temps_mis` qui reçoit la vitesse du train et la distance et qui renvoie le temps mis pour parcourir cette distance;<br>
-–Écrire le programme principal qui affiche .<br>
+–Écrire une fonction `temps_mis` qui reçoit  vitesse du train et la distance et qui renvoie le temps mis pour parcourir cette distance;<br>
+alerté par les cri,s Superman qui trainait à quelques $%d_S% kms de là se dirige à vitesse $%V%$ vers moi.Serai-je sauvé?<br>
+-Écrire une fonction `sauvetage' qui renvoie le booléen True si Superman arrive à temps  et False sinon. cette fonction reçoit:
+quatre réels $%v_t, d_O,V,d_S%$,
 <br>
-indice : pour imprimer le tableau, on vous donne la phrase à utiliser : <br>
-print("A",v,"km/h,je me fais dechiqueter à ",9 + h,"h",m,"mn") 
-code==
+==
+editor.code==
 #
 #
-#
-print("A",v,"km/h,je me fais dechiqueter à ",9 + h,"h",m,"mn")  
 #
 
 ==
 
 soluce==#|python|
-def tchacatchac(km,v):
+def temps_mis(v,d):
     """retourne le temps en heure mn pour parcourir km à la vitesse v."""
-    heure =int(170/v)
-    minute= (60 * 170 //v) % 60
+    heure =int(d/v)
+    minute= (60 * d//v) % 60
     return heure,minute
-v=100
-h,m=tchacatchac(170,v)
-print("A",v,"km/h,je me fais dechiqueter à ",9 + h,"h",m,"mn")  
 
-#programme principal
-
+def sauvetage(vt,dt,vs,ds):
+    ht,mt=temps_mis(vt,dt)
+    hS,mS=temps_mis(vs,ds)
+    if ht<hs or (ht==hs and mt<ms):
+        return False
+    else:
+        return True
+    
 
 ==
 
