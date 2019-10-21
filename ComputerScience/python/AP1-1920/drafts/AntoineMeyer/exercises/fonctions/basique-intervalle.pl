@@ -32,6 +32,8 @@ def tests(cases):
             title = f'Appartenance de {n} dans [{a}, {b}]',
             result = a < n < b)
 
+run(title='Évaluation du code')
+
 tests([
     (4, 1, 12), 
     (40, 1, 12), 
