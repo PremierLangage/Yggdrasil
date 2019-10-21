@@ -116,7 +116,7 @@ def runsolucetests(tests, feedback, studentfilename=None, solucefilename=None, f
            return 0
         if ok:
             res += 1
-    
+    print("res:(",res,, file=sys.stderr)
     return 100*(res//len(tests))
 
 def runsOutputtests(tests, feedback, studentfilename=None, flags=0x1):
@@ -144,6 +144,7 @@ if __name__=="__main__":
    fb=feedback2.FeedBack()
    runsolucetests(lestest,fb)
    print(fb.render())
+
 
 
 
