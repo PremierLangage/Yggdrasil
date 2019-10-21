@@ -48,11 +48,13 @@ import random
 
 countdown.time = 10
 
+
 if inputbox.value == preterit:
     grade = (100, '<span class="success-state">Good 👏👏👏</span>')
 else:
     grade = (0, '<span class="error-state">Bad answer 👎👎👎</span>')
 
+inputbox.placeholder = ""
 index_verb  = random.randint(0, len(IR)-1)
 
 verb = IR[index_verb][0]
