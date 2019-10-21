@@ -29,7 +29,7 @@ grader==#|python|
 def tests(cases):
     for n, a, b in cases:
         run(f'dans_intervalle({n!r}, {a!r}, {b!r})', 
-            title = f'Appartenance de {n} dans [{a}, {b}]',
+            title = f'Appartenance de {n!r} dans [{a!r}, {b!r}]',
             result = a < n < b)
 
 run(title='Évaluation du code')
