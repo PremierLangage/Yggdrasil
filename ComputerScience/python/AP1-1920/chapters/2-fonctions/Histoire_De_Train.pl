@@ -40,10 +40,7 @@ print("A",v,"km/h,je me fais dechiqueter à ",h,"h",m,"mn")
 
 #programme principal
 
-i=100
-while i<=300:
-    tchacatchac(i)
-    i+=10
+
 ==
 
 mplsoluce0==
