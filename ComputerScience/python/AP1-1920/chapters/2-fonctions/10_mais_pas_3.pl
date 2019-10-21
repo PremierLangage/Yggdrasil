@@ -29,10 +29,7 @@ On utilisera pour les entrées
 
 soluce==#|python|
 def dix_mais_pas_trois(n):
-    if n%10==0 and n%3!=0:
-        return True
-    else:
-        return False
+    return n%10==0 and n%3!=0
 
 n = int(input("Saisie : "))
 print(dix_mais_pas_trois(n))
@@ -44,6 +41,7 @@ Test2 | 3
 Test3 | 30
 Test4 | 40
 ==
+
 
 
 
