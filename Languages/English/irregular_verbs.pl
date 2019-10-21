@@ -74,7 +74,7 @@ if inputbox.value == preterit:
     good_total += 1
     grade = (100, '<span class="success-state">Good 👏👏👏</span>')
 else:
-    grade = (0, '<span class="error-state">No, it is <b>' + preterit + '</b> Bad answer 👎👎👎</span>')
+    grade = (0, '<span class="error-state">No, it is <b>' + preterit + '</b>, Bad answer 👎👎👎</span>')
 
 inputbox.value = ""
 countdown.time = 10
