@@ -52,7 +52,7 @@ else:
     grade = (0, '<span class="error-state">Bad answer 👎👎👎</span>')
 ==
 
-text= Give the preterite of the verb {{ v }}
+text= Give the preterite of the verb {{ verb }}
 
 
 evaluator== #|python|
