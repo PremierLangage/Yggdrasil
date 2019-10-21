@@ -27,6 +27,12 @@ counter = 0
 
 IR = [ ["begin", "began"], ["break", "broke"], ["bring", "brought"], 
        ["buy", "bought"], ["build", "built"], ["choose", "chose"],
+       ["come", "came"], ["cost", "cost"], ["cut", "cut"],
+       ["do", "did"], ["draw", "drew"], ["drive", "drove"],
+       ["eat", "ate"], ["feel", "felt"], ["find", "found"],
+       ["get", "got"], ["give", "gave"], ["go", "went"],
+       ["have", "had"], ["hear", "heard"], ["hold", "held"],
+       ["keep", "kept"], ["know", "knew"], ["leave", "left"],
        ["lie", "lay"], ["run", "ran"], ["say", "said"], ]
 
 index_verb  = random.randint(0, len(IR)-1)
