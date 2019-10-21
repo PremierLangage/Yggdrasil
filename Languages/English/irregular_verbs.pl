@@ -41,18 +41,7 @@ form==
 {{ inputbox |component}}
 ==
 
-evaluator==
-
-
-
-if r == inputbox.value:
-    grade = (100, '<span class="success-state">Good 👏👏👏</span>')
-else:
-    grade = (0, '<span class="error-state">Bad answer 👎👎👎</span>')
-==
-
-text= Give the preterite of the verb {{ verb }}
-
+text= Give the preterite of the verb ** {{ verb }} ** !
 
 evaluator== #|python|
 remaining = countdown.time
@@ -62,6 +51,10 @@ for e in countdown.actions:
 
 countdown.time = 10
 counter += 1
-grade = (100, f'<h3>remaining: {remaining}, counter: {counter}</h3>')
+
+if r == inputbox.value:
+    grade = (100, '<span class="success-state">Good 👏👏👏</span>')
+else:
+    grade = (0, '<span class="error-state">Bad answer 👎👎👎</span>')
 
 ==
