@@ -9,7 +9,7 @@ inputbox.type = text
 inputbox.appearance = outline
 
 countdown % { "cid": "countdown", "selector": "c-countdown" }
-countdown.time % 10
+countdown.time % 15
 countdown.hidden % false
 
 autoSubmit== #|js|
@@ -79,7 +79,7 @@ else:
     grade = (-1, '<span class="error-state">No, it is <b>' + preterit + '</b>, Bad answer 👎👎👎</span>')
 
 inputbox.value = ""
-countdown.time = 10
+countdown.time = 15
 
 index_verb  = random.randint(0, len(IR)-1)
 
