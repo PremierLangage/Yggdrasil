@@ -24,6 +24,8 @@ countdown.actions = [
     { "time": 0, "action": autoSubmit }
 ]
 counter = 0
+
+text = "Give the preterite of the verb "
 ==
 
 
@@ -41,6 +43,7 @@ if r == inputbox.value:
 else:
     grade = (0, '<span class="error-state">Bad answer 👎👎👎</span>')
 ==
+
 
 
 form ==
