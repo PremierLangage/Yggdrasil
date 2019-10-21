@@ -54,7 +54,8 @@ if inputbox.value == preterit:
 else:
     grade = (0, '<span class="error-state">Bad answer 👎👎👎</span>')
 
-inputbox.placeholder = ""
+inputbox.value = ""
+
 index_verb  = random.randint(0, len(IR)-1)
 
 verb = IR[index_verb][0]
