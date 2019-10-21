@@ -117,10 +117,7 @@ def runsolucetests(tests, feedback, studentfilename=None, solucefilename=None, f
            return 0
         if ok:
             res += 1
-    import sys
-    print("res:(",res,")", file=sys.stderr)
-    print("res:(",res,")", file=sys.stderrX)
-    
+
     return 100*(res//len(tests))
 
 def runsOutputtests(tests, feedback, studentfilename=None, flags=0x1):
