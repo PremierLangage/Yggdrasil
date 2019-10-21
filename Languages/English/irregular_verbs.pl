@@ -80,18 +80,21 @@ if inputbox.value == preterit:
 else:
     grade = (-1, '<span class="error-state">No, it is <b>' + preterit + '</b>, Bad answer 👎👎👎</span>')
 
-inputbox.value = ""
-countdown.time = 15
+if good_total == 20:
+    countdown.hidden = True
+    score = 2000 // verb_total
+    grade = (score, '<span class="success-state">Your final score '+ str(score) + '%</span>')
+else:
+    inputbox.value = ""
+    countdown.time = 15
 
-while index_verb in validated:
-    index_verb  = random.randint(0, len(IR)-1)
+    while index_verb in validated:
+        index_verb  = random.randint(0, len(IR)-1)
 
-verb = IR[index_verb][0]
-preterit = IR[index_verb][1]
+    verb = IR[index_verb][0]
+    preterit = IR[index_verb][1]
 
-countdown.actions = [
-    { "time": 0, "action": autoSubmit }
-]
+    countdown.actions = [ { "time": 0, "action": autoSubmit } ]
 ==
 
 
