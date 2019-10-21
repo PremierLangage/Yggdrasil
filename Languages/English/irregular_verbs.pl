@@ -25,7 +25,7 @@ countdown.actions = [
 ]
 counter = 0
 
-text = "Give the preterite of the verb "
+v = "run"
 ==
 
 
@@ -44,6 +44,7 @@ else:
     grade = (0, '<span class="error-state">Bad answer 👎👎👎</span>')
 ==
 
+text= Give the preterite of the verb {{ v }}
 
 
 form ==
