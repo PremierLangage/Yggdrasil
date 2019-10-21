@@ -29,7 +29,7 @@ grader==#|python|
 def tests(cases):
     for n, a, b in cases:
         run(title = f'Appartenance de {n} dans [{a}, {b}]',
-            expr = f'dans_intervalle({n}, {a}, {b})', 
+            expression = f'dans_intervalle({n}, {a}, {b})', 
             result = a < n < b)
 
 tests([
