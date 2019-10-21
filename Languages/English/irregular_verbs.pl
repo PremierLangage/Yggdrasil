@@ -83,7 +83,9 @@ else:
 if good_total == 20:
     countdown.hidden = True
     score = 2000 // verb_total
-    grade = (score, '<span class="success-state">Your final score '+ str(score) + '%</span>')
+    grade = (score, '<center><span class="success-state">Your final score '+ str(score) + '%</span></center>')
+    form = ""
+    countdown.actions = []
 else:
     inputbox.value = ""
     countdown.time = 15
