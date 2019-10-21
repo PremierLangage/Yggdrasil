@@ -6,7 +6,6 @@ title=Irregular verbs
 
 inputbox =: Input
 inputbox.type = text
-inputbox.maxlength = 50
 inputbox.appearance = outline
 
 countdown % { "cid": "countdown", "selector": "c-countdown" }
