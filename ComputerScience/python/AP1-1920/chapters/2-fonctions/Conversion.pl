@@ -24,7 +24,7 @@ def conv(t,n):
         return(32.0+1.8*t)
     elif n=="FC": 
     #Fahrenheit->Celsius
-    return((t-32.0)/1.8)
+        return((t-32.0)/1.8)
     else:
     # pas de conversion
         return t
