@@ -31,7 +31,9 @@ v = "run"
 
 
 form==
-{{ inputbox|component}}
+{{ countdown|component }}
+
+{{ inputbox |component}}
 ==
 
 evaluator==
@@ -46,10 +48,6 @@ else:
 
 text= Give the preterite of the verb {{ v }}
 
-
-form ==
- {{ countdown|component }}
-==
 
 evaluator== #|python|
 remaining = countdown.time
