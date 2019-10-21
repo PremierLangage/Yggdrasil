@@ -42,10 +42,12 @@ form==
 
 {{ inputbox |component}}
 
-{{ }} / {{ verb_total }}
+{{ good_total }} / {{ verb_total }}
 ==
 
-text= Give the preterite of the verb ** {{ verb }} ** !
+text== 
+Give the preterite of the verb ** {{ verb }} ** !
+==
 
 evaluator== #|python|
 import random
