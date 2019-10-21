@@ -19,9 +19,9 @@ Le but de l'exercice est de déterminer le temps de vol pour plusieurs valeurs d
 <br>
 <br>
 Pour cela:<br>
-* écrire une fontion *saisie_strict_positif()* qui renvoie un entier strictement positif<br>
+* écrire une fontion `saisie_strict_positif()` qui renvoie un entier strictement positif<br>
   entré par l'utilisateur.<br>
-* écrire une fontion *syracuse_temps(u)* qui reçoit un entier strictement positifs<br> 
+* écrire une fontion `syracuse_temps(u)` qui reçoit un entier strictement positifs<br> 
   et renvoie le temps de vol de la suite pour $%u_0=u%$<br>
 * utilisez ces fonctions pour écrire un programme qui lit 5 entiers strictement positifs<br>
   et affiche le temps de vol pour chacun de ces entiers.<br> 
@@ -95,6 +95,7 @@ negatif
 11
 
 ==
+
 
 
 
