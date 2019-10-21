@@ -300,8 +300,9 @@ class Test:
         :return: Assertion status.
         """
         status = cmp(expected, self.output)
-        diff = Test._unidiff_output(expected, self.output)
-        self.record_assertion(OutputAssert(status, diff))
+        # diff = Test._unidiff_output(expected, self.output)
+        # self.record_assertion(OutputAssert(status, diff))
+        self.record_assertion(OutputAssert(status, expected))
         return status
 
     def assert_result(self, expected: Any, cmp: Callable = operator.eq) -> bool:
@@ -841,4 +842,5 @@ class NoGlobalChangeAssert(Assert):
             return "Variables globales inchangées"
         else:
             return "Variables globales modifiées"
+
 
