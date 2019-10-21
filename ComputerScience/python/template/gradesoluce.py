@@ -116,6 +116,7 @@ def runsolucetests(tests, feedback, studentfilename=None, solucefilename=None, f
            return 0
         if ok:
             res += 1
+    import sys
     print("res:(",res,")", file=sys.stderr)
     return 100*(res//len(tests))
 
