@@ -22,7 +22,7 @@ de la même manière.<br>
 1er décembre : 1 couple de jeunes lapins ,1 couple de  lapins d’un mois et 1 couple de vieux<br>
 1er janvier : 2 couple de jeunes lapins ,1 couple de  lapins d’un mois et 2 couples de vieux <br>
 ,soit 10 lapins.<br>
-
+<img src="{{ image }}" />
 Ecrire une fontion `lapin(mois)` qui reçoit un entier décrivant le nombre de mois
  écoulé et renvoie le nombre de couples.(*On distinguera le nombre de couples de nouveaux lapins, le nombre
 de couples de lapins ayant un mois, et le nombre de couples de lapins
