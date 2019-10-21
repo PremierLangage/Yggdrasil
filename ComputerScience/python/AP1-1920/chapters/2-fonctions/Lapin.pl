@@ -4,6 +4,8 @@
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
 
+image=$ Arbre.png
+
 title= Des lapins ... 
 
 text==
@@ -98,6 +100,7 @@ pltest3=""">>> lapin({})\n{}""".format(n, lapin(n))
 
 
 ==
+
 
 
 
