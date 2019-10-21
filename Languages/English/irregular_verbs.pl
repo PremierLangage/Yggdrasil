@@ -47,6 +47,7 @@ index_verb  = random.randint(0, len(IR)-1)
 
 good_total = 0
 verb_total = 0
+validated = []
 verb = IR[index_verb][0]
 preterit = IR[index_verb][1]
 ==
@@ -74,6 +75,7 @@ verb_total += 1
 
 if inputbox.value == preterit:
     good_total += 1
+    validated.append(index_verb)
     grade = (-1, '<span class="success-state">Good 👏👏👏</span>')
 else:
     grade = (-1, '<span class="error-state">No, it is <b>' + preterit + '</b>, Bad answer 👎👎👎</span>')
@@ -81,7 +83,8 @@ else:
 inputbox.value = ""
 countdown.time = 15
 
-index_verb  = random.randint(0, len(IR)-1)
+while index_verb in validated:
+    index_verb  = random.randint(0, len(IR)-1)
 
 verb = IR[index_verb][0]
 preterit = IR[index_verb][1]
