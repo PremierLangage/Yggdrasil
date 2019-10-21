@@ -45,11 +45,13 @@ text= Give the preterite of the verb ** {{ verb }} ** !
 
 evaluator== #|python|
 
-countdown.hidden % true
+countdown.hidden = True
 
 if inputbox.value == preterit:
     grade = (100, '<span class="success-state">Good 👏👏👏</span>')
 else:
     grade = (0, '<span class="error-state">Bad answer 👎👎👎</span>')
+
+
 
 ==
