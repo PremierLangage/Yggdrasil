@@ -33,7 +33,12 @@ IR = [ ["begin", "began"], ["break", "broke"], ["bring", "brought"],
        ["get", "got"], ["give", "gave"], ["go", "went"],
        ["have", "had"], ["hear", "heard"], ["hold", "held"],
        ["keep", "kept"], ["know", "knew"], ["leave", "left"],
-       ["lie", "lay"], ["run", "ran"], ["say", "said"], ]
+       ["lead", "led"], ["let", "let"], ["lie", "lay"], 
+       ["lose", "lost"], ["make", "made"], ["mean", "meant"],
+       ["meet", "met"], ["pay", "paid"], ["put", "put"],
+       ["run", "ran"], ["say", "said"], ["see", "saw"],
+       ["sell", "sold"], ["send", "sent"], ["set", "set"], 
+       ["sit", "sat"] ]
 
 index_verb  = random.randint(0, len(IR)-1)
 
