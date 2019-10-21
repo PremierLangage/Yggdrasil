@@ -44,15 +44,8 @@ form==
 text= Give the preterite of the verb ** {{ verb }} ** !
 
 evaluator== #|python|
-remaining = countdown.time
-# reset timer
-for e in countdown.actions:
-    e['consumed'] = False
 
-countdown.time = 10
-counter += 1
-
-if r == inputbox.value:
+if inputbox.value == preterit
     grade = (100, '<span class="success-state">Good 👏👏👏</span>')
 else:
     grade = (0, '<span class="error-state">Bad answer 👎👎👎</span>')
