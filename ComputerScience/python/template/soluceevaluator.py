@@ -55,7 +55,7 @@ if __name__ == "__main__":
     fb=feedback2.FeedBack()
     ret=runsolucetests(lestest,fb)
 
-    print(" garde(",ret,")",file=sys.stderr)
+   
 
     output(ret, fb.render())
 
