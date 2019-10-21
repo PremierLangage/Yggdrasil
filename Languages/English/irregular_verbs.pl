@@ -19,12 +19,19 @@ btn.click()
 ==
 
 before== #|python|
+import random
+
 countdown.actions = [
     { "time": 0, "action": autoSubmit }
 ]
 counter = 0
 
-v = "run"
+IR = [ ["begin", "began"], ["break", "broke"], ["lie", "lay"], ["run", "ran"], ["say", "said"], ]
+
+index_verb  = random.randint(0, len(IR)-1)
+
+verb = IR[index_verb][0]
+preterit = IR[index_verb][1]
 ==
 
 
