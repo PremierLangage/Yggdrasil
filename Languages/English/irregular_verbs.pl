@@ -38,7 +38,10 @@ IR = [ ["begin", "began"], ["break", "broke"], ["bring", "brought"],
        ["meet", "met"], ["pay", "paid"], ["put", "put"],
        ["run", "ran"], ["say", "said"], ["see", "saw"],
        ["sell", "sold"], ["send", "sent"], ["set", "set"], 
-       ["sit", "sat"] ]
+       ["sit", "sat"], ["speak", "spoke"], ["spend", "spent"],
+       ["stand", "stood"], ["take", "took"], ["teach", "taught"],
+       ["tell", "told"], ["think", "thought"], ["understand", "understood"],
+       ["wear", "wore"], ["win", "won"], ["write", "wrote"] ]
 
 index_verb  = random.randint(0, len(IR)-1)
 
@@ -71,7 +74,7 @@ if inputbox.value == preterit:
     good_total += 1
     grade = (100, '<span class="success-state">Good 👏👏👏</span>')
 else:
-    grade = (0, '<span class="error-state">Bad answer 👎👎👎</span>')
+    grade = (0, '<span class="error-state">No, it is <b>' + preterit + '</b> Bad answer 👎👎👎</span>')
 
 inputbox.value = ""
 countdown.time = 10
