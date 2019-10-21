@@ -14,14 +14,12 @@ Je suis ligoté sur les rails en gare d’Arras.<br>
 –Écrire le programme principal qui affiche le tableau demandé.<br>
 <br>
 indice : pour imprimer le tableau, on vous donne la phrase à utiliser : <br>
-print("A {}km/h,je me fais dechiqueter à {}h{:.2f}min.".format(v,heure,minute))
-==
-
+print("A",v,"km/h,je me fais dechiqueter à ",9 + h,"h",m,"mn") 
 code==
 #
 #
 #
-print("A {}km/h,je me fais dechiqueter à {}h{:.2f}min.".format(v,heure,minute))
+print("A",v,"km/h,je me fais dechiqueter à ",9 + h,"h",m,"mn")  
 #
 
 ==
@@ -54,4 +52,5 @@ mplsoluce2==
 vitesse de 300
 300
 ==
+
 
