@@ -17,29 +17,26 @@ Coder une fonction "Lances_Des" qui prend en paramètre un entier "n" compris en
 #            for k in range(1, 7):
 #                if i + j + k == n:
 #                    s += 1
-#    print("Il y a",s,"facon(s) de faire",n,"avec trois des.")
-#==
+#   return s
+#
 
 pltest0==
 >>> Lances_Des(5)
-Il y a 6 facon(s) de faire 5 avec trois des.
+6
 ==
 pltest1==
 >>> Lances_Des(12)
-Il y a 25 facon(s) de faire 12 avec trois des.
+25
 ==
 pltest2==
 >>> Lances_Des(1)
-Il y a 0 facon(s) de faire 1 avec trois des.
-==
+0
 pltest3==
 >>> Lances_Des(3)
-Il y a 1 facon(s) de faire 3 avec trois des.
+1
 ==
-pltest4==
->>> Lances_Des(7)
-Il y a 15 facon(s) de faire 7 avec trois des.
-==
+
+
 
 
 
