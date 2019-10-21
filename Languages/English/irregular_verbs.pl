@@ -85,6 +85,7 @@ if good_total == 20:
     score = 2000 // verb_total
     grade = (score, '<center><span class="success-state">Your final score '+ str(score) + '%</span></center>')
     form = ""
+    text = "You validated 20 different irregular preterite forms !"
     countdown.actions = []
 else:
     inputbox.value = ""
