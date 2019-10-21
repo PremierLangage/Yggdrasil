@@ -19,7 +19,7 @@ text==
 Programmer une fonction qui teste si un entier est divisible par 10 mais pas par 3. <br>
 
 Puis écrivez un programme qui récupère un entier au clavier, 
-appel la fonction et affiche le résultat booléen.
+appelle la fonction et affiche le résultat booléen.
 
 
 On utilisera pour les entrées 
@@ -41,6 +41,7 @@ Test2 | 3
 Test3 | 30
 Test4 | 40
 ==
+
 
 
 
