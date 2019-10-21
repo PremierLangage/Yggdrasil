@@ -26,6 +26,7 @@ countdown.actions = [
 counter = 0
 
 IR = [ ["begin", "began"], ["break", "broke"], ["bring", "brought"], 
+       ["buy", "bought"], ["build", "built"], ["choose", "chose"],
        ["lie", "lay"], ["run", "ran"], ["say", "said"], ]
 
 index_verb  = random.randint(0, len(IR)-1)
