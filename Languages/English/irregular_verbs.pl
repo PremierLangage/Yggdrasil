@@ -44,6 +44,7 @@ form==
 text= Give the preterite of the verb ** {{ verb }} ** !
 
 evaluator== #|python|
+import random
 
 countdown.time = 10
 
