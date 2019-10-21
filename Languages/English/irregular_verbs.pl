@@ -62,7 +62,9 @@ form==
 ==
 
 text== 
-Give the preterite of the verb ** {{ verb }} ** !
+You need to validate 20 preterit form to win 
+
+Give the preterite of the verb **to {{ verb }} **
 ==
 
 evaluator== #|python|
@@ -72,9 +74,9 @@ verb_total += 1
 
 if inputbox.value == preterit:
     good_total += 1
-    grade = (100, '<span class="success-state">Good 👏👏👏</span>')
+    grade = (-1, '<span class="success-state">Good 👏👏👏</span>')
 else:
-    grade = (0, '<span class="error-state">No, it is <b>' + preterit + '</b>, Bad answer 👎👎👎</span>')
+    grade = (-1, '<span class="error-state">No, it is <b>' + preterit + '</b>, Bad answer 👎👎👎</span>')
 
 inputbox.value = ""
 countdown.time = 10
@@ -88,5 +90,6 @@ countdown.actions = [
     { "time": 0, "action": autoSubmit }
 ]
 ==
+
 
 
