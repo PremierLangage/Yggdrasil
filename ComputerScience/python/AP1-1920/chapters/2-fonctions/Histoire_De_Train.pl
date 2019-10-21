@@ -10,8 +10,7 @@ text==
 Je suis ligoté sur les rails en gare d’Arras.<br> 
 Écrire un programme qui affiche un tableau me permettant de connaître l’heure à laquelle je serai déchiqueté par le train parti de la gare du Nord
 à 9h (il y a 170 km entre la gare du Nord et Arras).<br>
-Le tableau prédira les différentes heures possibles pour toutes les vitesses de 100 km/h à 300 km/h, par pas de 10 km/h,
-les résultats étant arrondis à la minute inférieure.<br>
+Le tableau prédira les différentes heures possibles pour toutes les vitesses de 100 km/h à 300 km/h, par pas de 10 km/h.<br>
 –Écrire une fonction "tchacatchac" qui reçoit la vitesse du train et qui affiche l’heure du drame ;<br>
 –Écrire le programme principal qui affiche le tableau demandé.<br>
 <br>
@@ -56,4 +55,5 @@ mplsoluce2==
 vitesse de 300
 300
 ==
+
 
