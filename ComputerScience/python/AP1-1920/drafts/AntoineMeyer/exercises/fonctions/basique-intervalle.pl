@@ -1,31 +1,25 @@
 extends = ../../templates/generic/generic.pl
 
-title = Suite géométrique
+title = Fonctions : appartenance à un intervalle
+# author = Antoine Meyer
 
 text==
-On suppose qu'il existe deux variables `a` et `b` désignant des nombres flottants quelconque, et une variable `nb` désignant un entier positif quelconque. 
-Écrire un programme dont l'exécution affiche sur la sortie standard les `nb` premiers termes de la suite géométrique de premier terme `a` et de raison `b`
-(chacun suivi d'un retour à la ligne), à l'exclusion de tout autre caractère.
+Écrire une fonction `dans_intervalle(n, a, b)` 
+renvoyant `True` si l'objet `n` est strictement compris 
+entre `a` et `b`, et `False` sinon.
 
-On rappelle la définition de la suite :
+Exemples d'appels :
 
-$%
-\begin{cases}
-u_0 & = a\\\
-u_{n+1} & = b \times u_n
-\end{cases}
-%$
-
-Par exemple, si `a` vaut 3, `b` vaut 2 et `nb` vaut 5, votre programme doit afficher :
-
-    3
-    6
-    12
-    24
-    48
-
-**Attention**, *le programe doit fonctionner quelles que soient les valeurs 
-de `a`, `b` et `nb`.*<br>
+```pycon
+>>> dans_intervalle(4, 1, 12)
+True
+>>> dans_intervalle(40, 1, 12)
+False
+>>> dans_intervalle("oui", "non", "peut-être")
+True
+>>> dans_intervalle("certainement", "non", "peut-être")
+False
+```
 ==
 
 grader==#|python|
@@ -33,27 +27,19 @@ grader==#|python|
 #import sys
 #print(pl_context, file=sys.stderr)
 
-def expected_output(a, b, nb):
-    terme = a
-    res = ""
-    for i in range(nb):
-        res += str(terme) + '\n'
-        terme *= b
-    return res
-
-def tests(cases):
-    for a, b, nb in cases:
-        run(title = f'Premier terme {a}, raison {b}, nb = {nb}',
-            globals = {'a': a, 'b': b, 'nb': nb}, 
-            output = expected_output(a, b, nb))
+def tests_call(cases):
+    for n, a, b in cases:
+        run(title = f'Appartenance de {n} dans [{a}, {b}]',
+            expr = f'dans_intervalle({n}, {a}, {b})', 
+            result = a < n < b)
 
 import random
 begin_test_group("Valeurs fixées")
-tests([(3, 2, 5), (3, 2, 7), (3, 3, 5)])
-
-begin_test_group("Valeurs aléatoires")
-tests([(random.randint(3,7),random.randint(3,7),random.randint(3,7)),
-       (random.randint(3,7),random.randint(3,7),random.randint(3,7)),
-       (random.randint(3,7),random.randint(3,7),random.randint(3,7))])
+tests([
+    (4, 1, 12), 
+    (40, 1, 12), 
+    ("oui", "non", "peut-être"),
+    ("certainement", "non", "peut-être")
+])
 ==
 
