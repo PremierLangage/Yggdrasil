@@ -1,15 +1,15 @@
 
 # Boris Jabot 10/09/2019 OK
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
-# author=l'équipe de l'UPEM vous propose des exercices
+#author=
 title=Une fonction carre
 
 tag=function # N'oubliez pas de remplir ce champs svp
 extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 piste=verte
 text==
-## Une fonction carre ##
-Ecrivez une fonction **carre** qui retourne le carré de son paramêtre.
+## Une fonction carre ## 
+Ecrivez une fonction `carre` qui retourne le carré de son paramêtre.
 ==
 
 @ /builder/before.py [builder.py]
@@ -34,7 +34,7 @@ True
 ==
 
 
-Xeditor.code==
+editor.code==
 def carre(n):
     return n*6
 ==
