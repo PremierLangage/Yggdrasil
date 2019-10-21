@@ -6,7 +6,7 @@ title = Conversion de température
 
 text==  
 
-Écrire une fonction "conv()" qui reçoit deux paramètres, une température "t" et un entier "n" (dans cet ordre), et qui retourne la conversion 
+Écrire une fonction **conv()** qui reçoit deux paramètres, une température "t" et un entier "n" (dans cet ordre), et qui retourne la conversion 
 Celsius -> Fahrenheit (n= 1), ou Fahrenheit -> Celsius(n= 2).<br>
 Rappel : 
 $%
@@ -43,6 +43,7 @@ pltest4==
 >>> conv(-58,2)
 -50.0
 ==
+
 
 
 
