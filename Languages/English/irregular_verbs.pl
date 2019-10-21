@@ -29,6 +29,8 @@ IR = [ ["begin", "began"], ["break", "broke"], ["lie", "lay"], ["run", "ran"], [
 
 index_verb  = random.randint(0, len(IR)-1)
 
+good_total = 0
+verb_total = 0
 verb = IR[index_verb][0]
 preterit = IR[index_verb][1]
 ==
@@ -39,6 +41,8 @@ form==
 {{ countdown|component }}
 
 {{ inputbox |component}}
+
+{{ }} / {{ verb_total }}
 ==
 
 text= Give the preterite of the verb ** {{ verb }} ** !
@@ -46,15 +50,16 @@ text= Give the preterite of the verb ** {{ verb }} ** !
 evaluator== #|python|
 import random
 
-countdown.time = 10
-
+verb_total += 1
 
 if inputbox.value == preterit:
+    good_total += 1
     grade = (100, '<span class="success-state">Good 👏👏👏</span>')
 else:
     grade = (0, '<span class="error-state">Bad answer 👎👎👎</span>')
 
 inputbox.value = ""
+countdown.time = 10
 
 index_verb  = random.randint(0, len(IR)-1)
 
