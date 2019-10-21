@@ -18,6 +18,7 @@ Tf = 32 +1.8 * Tc\\\
 ==
 editor.code==
 def conv(t,n):
+    """Renvoie la conversion Celsius->Fahrenheit ou inversement suivant<n>."""
     if n=="CF": 
     #Celsius->Fahrenheit
         return(32.0+1.8*t)
