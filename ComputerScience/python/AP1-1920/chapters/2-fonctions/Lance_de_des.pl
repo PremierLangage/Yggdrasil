@@ -5,7 +5,7 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 title = Lancés de dés
 
 text==  
-Coder une fonction "Lances_Des" qui prend en paramètre un entier "n" compris entre 3 et 18 et renvoie le nombre de façons de faire "n" en lançant trois dés.
+Coder une fonction `Lances_Des` qui prend en paramètre un entier "n" compris entre 3 et 18 et renvoie le nombre de façons de faire "n" en lançant trois dés.
 
 ==
 
@@ -40,6 +40,7 @@ pltest4==
 >>> Lances_Des(7)
 Il y a 15 facon(s) de faire 7 avec trois des.
 ==
+
 
 
 
