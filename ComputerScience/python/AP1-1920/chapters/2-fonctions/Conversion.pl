@@ -28,23 +28,23 @@ def conv(t,n):
 ==
 
 pltest0==
->>> conv(20,1)
+>>> conv(20,"CF")
 68.0
 ==
 pltest1==
->>> conv(20,2)
+>>> conv(20,"FC")
 -6.666666666666666
 ==
 pltest2==
->>> conv(50,1)
+>>> conv(50,"CF")
 122.0
 ==
 pltest3==
->>> conv(50,1)
-122.0
+>>> conv(50,"z")
+50
 ==
 pltest4==
->>> conv(-58,2)
+>>> conv(-58,"FC")
 -50.0
 ==
 
