@@ -85,6 +85,7 @@ def unitTestWithOutput(testname, studentfilename, outputstr, input_str, feedback
     #print(" recu:",xo)
     if res:
         feedback.addTestSuccess(testname, xo, outputstr )
+        return True
     else:
         r = oc.output_difference(doctest.Example(" le test", outputstr), xo,0)
         if r.startswith("Expected:") and "Got:" in r :
@@ -94,7 +95,7 @@ def unitTestWithOutput(testname, studentfilename, outputstr, input_str, feedback
                 want=r
                 got=""
         feedback.addTestFailure(testname,got,want)
-    return True
+        return False
 
 
 def runsolucetests(tests, feedback, studentfilename=None, solucefilename=None, flags=0x1):
