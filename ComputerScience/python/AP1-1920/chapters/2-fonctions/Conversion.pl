@@ -13,15 +13,14 @@ $%
 Tf = 32 +1.8 * Tc\\\
 %$
 ==
-
-#correction==
-#def conv(t,n):
-#    """Renvoie la conversion Celsius->Fahrenheit ou inversement suivant<n>."""
-#    if n==1: #Celsius->Fahrenheit
-#        return(32.0+1.8*t)
-#    elif n==2: #Fahrenheit->Celsius
-#        return((t-32.0)/1.8)
-#==
+editor.code==
+def conv(t,n):
+ """Renvoie la conversion Celsius->Fahrenheit ou inversement suivant<n>."""
+    if n==1: #Celsius->Fahrenheit
+        return(32.0+1.8*t)
+    elif n==2: #Fahrenheit->Celsius
+    return((t-32.0)/1.8)
+==
 
 pltest0==
 >>> conv(20,1)
