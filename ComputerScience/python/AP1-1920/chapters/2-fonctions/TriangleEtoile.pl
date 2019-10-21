@@ -17,13 +17,13 @@ On veut dessiner à l'aide d'étoiles '\*' et de plus "+" des triangles de la fo
 \*<br>
 
 Pour cela:<br>
-* écrire une fonction **ligne_etoile(n)** qui reçoit un entier
+* écrire une fonction `ligne_etoile(n)` qui reçoit un entier
 et renvoie une chaine formée de : <br>
 1 caractère étoile ('\*'), 2 caractères étoiles ('\*'),...,n caractères étoile ('*') séparés par des caratères plus ('+').<br>
     ligne_etoiles(4) renvoie "\*+\*\*+\*\*\*+\*\*\*\*".<br>
     ligne_etoiles(1) renvoie "\*"<br>
     ligne_etoiles(0) renvoie la chaine vide "". <br>
-* écrire une fonction **triangle_etoiles(n)** qui reçoit un entier n 
+* écrire une fonction `triangle_etoiles(n)` qui reçoit un entier n 
  et si n est >0 et renvoie une chaine formant un triangle
 de 2n-1 lignes
 
@@ -141,6 +141,7 @@ pltest1==
 >>> triangle_etoiles(2)
 '\n*\n*+**\n*\n'
 ==
+
 
 
 
