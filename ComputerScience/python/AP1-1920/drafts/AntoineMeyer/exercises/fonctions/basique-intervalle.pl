@@ -32,7 +32,7 @@ def tests(cases):
             title = f'Appartenance de {n!r} dans [{a!r}, {b!r}]',
             result = a < n < b)
 
-run(title='Évaluation du code')
+run(title='Évaluation du code', output='')
 
 tests([
     (4, 1, 12), 
