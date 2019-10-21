@@ -20,7 +20,7 @@ code==
 
 text==  
 
-Ecrire une fonction **saisie_entier_str_positif** que force la saisie d'un entire strictement positif et le renvoie<br>
+Ecrire une fonction **saisie_entier_str_positif** que force la saisie d'un entier strictement positif et le renvoie<br>
 Ecrire une fonction **table** qui : <br> 
 * prend en paramètre deux entiers : <br>
     + un entier x <br>
@@ -78,6 +78,7 @@ négatif
 -2
 5
 ==
+
 
 
 
