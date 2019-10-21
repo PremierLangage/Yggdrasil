@@ -5,7 +5,7 @@ builder =@ /builder/before.py
 title=Irregular verbs
 
 inputbox =: Input
-inputbox.type = number
+inputbox.type = text
 inputbox.placeholder = Answer
 inputbox.maxlength = 2
 inputbox.appearance = outline
