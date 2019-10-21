@@ -88,6 +88,7 @@ else:
     inputbox.value = ""
     countdown.time = 15
 
+    index_verb  = random.randint(0, len(IR)-1)
     while index_verb in validated:
         index_verb  = random.randint(0, len(IR)-1)
 
