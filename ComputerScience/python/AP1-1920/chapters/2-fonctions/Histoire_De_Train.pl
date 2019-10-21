@@ -33,7 +33,8 @@ def tchacatchac(v):
     """Affiche l'heure du drame."""
     heure = 9 + int(170/v)
     minute= (60 * 170 //v) % 60
-    print("A",v,"km/h,je me fais dechiqueter à ",heure,"h",minute),"mn")
+    
+print("A",v,"km/h,je me fais dechiqueter à ",heure,"h",minute,"mn")  
 
 #programme principal
 
