@@ -34,8 +34,8 @@ def tchacatchac(v):
     heure = 9 + int(170/v)
     minute= (60 * 170 //v) % 60
     return heure,minute
-
-h,m=tchacatchac(100)
+v=100
+h,m=tchacatchac(v)
 print("A",v,"km/h,je me fais dechiqueter à ",h,"h",m,"mn")  
 
 #programme principal
