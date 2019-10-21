@@ -34,11 +34,12 @@ True
 ==
 
 
-editor.code==
+Xeditor.code==
 def carre(n):
     return n*6
 ==
 editor.height=145
+
 
 
 
