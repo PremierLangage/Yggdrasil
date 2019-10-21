@@ -4,7 +4,7 @@
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
 
-image=$ Arbre.png
+image $ Arbre.png
 
 title= Des lapins ... 
 
