@@ -45,6 +45,8 @@ text= Give the preterite of the verb ** {{ verb }} ** !
 
 evaluator== #|python|
 
+countdown.hidden % true
+
 if inputbox.value == preterit:
     grade = (100, '<span class="success-state">Good 👏👏👏</span>')
 else:
