@@ -12,10 +12,11 @@ poule=random.randint(0,35)
 chien=random.randint (0,15)
 amis=random.randint (0,5)
 
-mplsoluce2="Test aléatoire\n"
-for i in range(5):
-    n=random.randint(4,7)
-    mplsoluce2 += str(n)+"\n"
+mplsoluce3="Test aléatoire\n"
+mplsoluce3 += str(poule)+"\n"
+mplsoluce3 += str(chien)+"\n"
+mplsoluce3 += str(vache)+"\n"
+mplsoluce3 += str(amis)+"\n"
 
 ==
 
