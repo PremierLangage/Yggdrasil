@@ -31,7 +31,7 @@ Si les points perdus sont supérieurs à 100, le permis est annulé.<br>
 Écrire une fonction "amende" qui reçoit le nombre de victimes du chasseur et qui renvoie la somme due et le nombre de points perdus. <br>
 Utilisez cette fonction dans un programme principal qui : <br>
 * saisit le nombre de victimes et,<br>
-* qui affiche la somme que le chasseur doit débourser ainsi que,<br>
+* qui affiche la somme que le chasseur doit débourser au prorata des points perdus total, ainsi que,<br>
 * le nombre de points restant (si la somme de points perdus est supérieure à 100, la fonction retourne 100).<br>
 <br>
 Écrire ensuite un programme principal qui :
