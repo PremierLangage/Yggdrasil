@@ -52,7 +52,7 @@ import random
 
 mplsoluce2="Test aléatoire\n"
 for i in range(5):
-    n=random.randint(4,7)
+    n=random.randint(4,17)
     mplsoluce2 += str(n)+"\n"
 after=before    
 ==
