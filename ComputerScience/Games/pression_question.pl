@@ -87,7 +87,7 @@ remaining = countdown.time
 mark = min(25*(remaining // 5), 100)
 countdown.hidden = True
 
-if levenshtein(inputbox.value, "globale") <= 5 or levenshtein(inputbox.value, "variable globale") <= 5:
+if levenshtein(inputbox.value, "globale") <= 4 or levenshtein(inputbox.value, "variable globale") <= 4:
     grade = (mark, "Bien vu !")
 else:
     grade = (mark, "Désolé ! On parlait de variable globale.")
