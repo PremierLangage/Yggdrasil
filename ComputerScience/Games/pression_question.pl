@@ -18,13 +18,25 @@ btn.click()
 ==
 
 autoHint==#|js|
+// find the node c-hint inside the dom
+// we use direclty the selector c-hint since
+// we know that there is only one element on the page
+// with the selector c-hint. For an exercise where
+// there is multiple components of the same type example multiple hints.
+// the argument of querySelector should be the string '[cid=THE_CID_OF_THE_COMPONENT]'
+// in this way the function will search the element on the page with the attribute
+// cid = THE_CID_OF_THE_COMPONENT.
+// As explained from the doc when you write {{ hint|component }} the framework will
+// replace it with <c-hint cid="{{ hint.cid }}"></hint>. If you replace the sugar syntactic version
+// by the generated version you will get the same behavior.
 const hint = document.querySelector('c-hint');
-hint.debug = false;
+
 if (hint.consumedCount < hint.items.length) {
-    hint.items.forEach(e => e.css = '');
+    hint.items.forEach(e => e.css = ''); // disable the animations of all the elements
     const item = hint.items[hint.consumedCount++];
     item.consumed = true;
-    item.css = 'animated pulse infinite';
+    // animate the new hint animation api is documented at (https://pl.u-pem.fr/components/css-doc)
+    item.css = 'animated pulse infinite'; // animate the new hint.
 }
 ==
 
