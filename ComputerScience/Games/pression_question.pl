@@ -105,7 +105,7 @@ countdown.hidden = True
 
 # We accept 3 typos at most from the two following strings
 if levenshtein(inputbox.value, "globale") <= 3 or levenshtein(inputbox.value, "variable globale") <= 3:
-    grade = (mark, "Bien vu ! Vous avez deviné en utilisant {{ hint.consumedCount }} indice(s).")
+    grade = (mark, "Bien vu ! Vous avez deviné en utilisant "+ str(hint.consumedCount) +" indice(s).")
 else:
     grade = (mark, "Désolé ! On parlait de variable globale.")
 
