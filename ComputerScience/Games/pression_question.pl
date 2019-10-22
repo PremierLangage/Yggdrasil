@@ -22,24 +22,24 @@ hints % { "cid": "hints", "selector": "c-hint" }
 hints.shouldConfirm % false
 hints.items %=
 [
-    { "content": "**Hint 1**" },
-    { "content": "**Hint 2**"  },
-    { "content": "**Hint 3**", "css": "warning-state"  }
+    { "content": "Présente dans de nombreux langage de programmation, cette classe de stokage qualifie souvent des variables." },
+    { "content": "Plop"  },
+    { "content": "Plop"}
+    { "content": "Plop"}
 ]
 ==
-
 
 
 before== #|python|
 countdown.actions = [
     { "time": 0, "action": autoSubmit }
 ]
-counter = 0
+
 ==
 
 title = Question sous pression
 text ==
-
+Nous cherchons une classe de stockage.
 ==
 
 form ==
@@ -56,9 +56,8 @@ remaining = countdown.time
 for e in countdown.actions:
     e['consumed'] = False
 
-countdown.time = 10
-counter += 1
-grade = (100, f'<h3>remaining: {remaining}, counter: {counter}</h3>')
+countdown.hidden % true
+grade = (100, f'<h3>remaining: {remaining}')
 
 ==
 
