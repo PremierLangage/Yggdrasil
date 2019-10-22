@@ -6,6 +6,18 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 title = Afficher les "n" premiers multiples d'un entier "x"
 
+xbefore==
+import random
+n=random.randint (-50,26)
+k=random.randint(-35,35)
+
+mplsoluce5="Test aléatoire\n"
+mplsoluce5 += str(n)+"\n"
+mplsoluce5 += str(k)+"\n"
+
+after=before
+==
+
 code==
 #
 #
