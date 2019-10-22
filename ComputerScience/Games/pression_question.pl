@@ -61,13 +61,32 @@ form ==
 ==
 
 evaluator== #|python|
+
+def levenshtein(s, t):
+    if s == "":
+        return len(t)
+    if t == "":
+        return len(s)
+    if s[-1] == t[-1]:
+        cost = 0
+    else:
+        cost = 1
+    
+    res = min([levenshtein(s[:-1], t)+1,
+               levenshtein(s, t[:-1])+1, 
+               levenshtein(s[:-1], t[:-1]) + cost])
+    return res
+
 remaining = countdown.time
-# reset timer
-for e in countdown.actions:
-    e['consumed'] = False
+mark = min(25*(remaining // 5), 100)
+countdown.hidden = True
+
+if levenshtein(inputbox.value, "globale") <= 5 or levenshtein(inputbox.value, "variable globale") <= 5:
+    grade = (mark, "Bien vu !")
+else:
+    grade = (mark, "Désolé ! On parlait de variable globale.")
 
 countdown.hidden = True
-grade = (100, f'<h3>remaining: {remaining}')
 
 ==
 
