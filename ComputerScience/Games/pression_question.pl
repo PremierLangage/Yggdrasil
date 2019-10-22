@@ -24,7 +24,7 @@ hints.items %=
 [
     { "content": "Présente dans de nombreux langage de programmation, cette classe de stokage qualifie souvent des variables." },
     { "content": "Plop"  },
-    { "content": "Plop"}
+    { "content": "Plop"},
     { "content": "Plop"}
 ]
 ==
