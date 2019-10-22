@@ -40,7 +40,6 @@ if (hint.consumedCount < hint.items.length) {
 }
 ==
 
-
 hints % { "cid": "hints", "selector": "c-hint" }
 hints.shouldConfirm % false
 hints.items %=
