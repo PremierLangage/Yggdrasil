@@ -38,12 +38,13 @@ class Checkbox(Component):
 
         for item in self.items:
             if item['id'] in self._sol and item['checked']:
-                item['css'] = 'success-state anim-fade'
+                item['css'] = 'success-state'
                 checkright+=1
             elif item['id'] in self._sol and not item['checked']:
-                item['css'] = 'success-state anim-fade'
+                item['css'] = 'btn btn-success'
                 missright+=1
             elif not (item['id'] in self._sol) and item['checked']:
+                item['css'] = 'error-state'
                 checkwrong+=1
 
         if self.grading=="AllOrNothing":
@@ -63,4 +64,5 @@ class Checkbox(Component):
             nitems=len(self.items)
             score=max([int((nitems-2*(checkwrong+missright))/nitems*100),0])
         return (score,"")
+
 
