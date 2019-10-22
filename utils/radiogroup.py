@@ -19,17 +19,23 @@ class CustomRadioGroup(Component):
             })
         self.items = items
 
+    def setSolByIndex(self,index):
+        self._sol=self.items[index]['id']
+
+    def setSolByContent(self,content):
+        self._sol=next(item['id'] for item in self.items if item['content'] in content)
+
     def shuffle(self):
         rd.shuffle(self.items)
 
     def sort(self):
         rd.sort(self.items)
 
-    def evalByContent(self,sol):
+    def eval(self):
         score = 0
         selectedId = self.selection
         for e in self.items:
-            if e['content'] == sol:
+            if e['id'] == self._sol:
                 e['css'] = 'success-state'
                 if e['id'] == selectedId:
                     score = 100
@@ -37,3 +43,4 @@ class CustomRadioGroup(Component):
                 score = 0
                 e['css'] = 'error-state'
         return (score, "")
+
