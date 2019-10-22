@@ -21,8 +21,8 @@ autoHint==#|js|
 const hint = document.querySelector('c-hint');
 hint.debug = false;
 if (hint.consumedCount < hint.items.length) {
+    hint.items.forEach(e => e.css = '');
     const item = hint.items[hint.consumedCount++];
-    
     item.consumed = true;
     item.css = 'animated pulse infinite';
 }
