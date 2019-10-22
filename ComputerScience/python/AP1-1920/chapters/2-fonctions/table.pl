@@ -34,7 +34,20 @@ Vous vous aiderez du code déjà présent pour les saisies des valeurs.
 ==
 
 soluce==#|python|
+def table(x,n):
+    print("de 0 fois",n,"à",x,"fois",n)
+    for i in range(n):
+        print(i * x)
+def  saisie_entier_str_positif():
+    n=int(input("Saisissez un entier strictement positif : "))
+    while(n<=0):
+         n = int(input("Saisissez un entier strictement positif : "))
+    return n
 
+n = int(input("Saisisez un entier : "))
+x = saisie_entier_str_positif()
+
+table(n,x)
 ==
 
 mplsoluce0==
