@@ -2,6 +2,12 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+inputbox =: Input
+inputbox.type = text
+inputbox.placeholder = Answer
+inputbox.maxlength = 2
+inputbox.appearance = outline
+
 
 countdown % { "cid": "countdown", "selector": "c-countdown" }
 countdown.time % 10
