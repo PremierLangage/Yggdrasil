@@ -35,8 +35,6 @@ if (hint.consumedCount < hint.items.length) {
     hint.items.forEach(e => e.css = ''); // disable the animations of all the elements
     const item = hint.items[hint.consumedCount++];
     item.consumed = true;
-    // animate the new hint animation api is documented at (https://pl.u-pem.fr/components/css-doc)
-    item.css = 'animated bounce'; // animate the new hint.
 }
 ==
 
