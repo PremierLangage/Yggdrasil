@@ -10,7 +10,7 @@ inputbox.appearance = outline
 
 countdown % { "cid": "countdown", "selector": "c-countdown" }
 countdown.time % 25
-countdown.hidden % False
+countdown.hidden = False
 
 autoSubmit== #|js|
 const btn = document.querySelector('.action-submit');
