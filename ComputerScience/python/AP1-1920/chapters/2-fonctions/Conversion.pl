@@ -29,7 +29,30 @@ def conv(t,n):
     # pas de conversion
         return t
 ==
+==
+before
+import random
+def conv(t,n):
+    """Renvoie la conversion Celsius->Fahrenheit ou inversement suivant<n>."""
+    if n=="CF": 
+    #Celsius->Fahrenheit
+        return(32.0+1.8*t)
+    elif n=="FC": 
+    #Fahrenheit->Celsius
+        return((t-32.0)/1.8)
+    else:
+    # pas de conversion
+        return t
 
+t=random.randint (14,50)
+c=random.randint(0,1)
+if c==0:
+    c="CF"
+else:
+    c="FC"	
+pltest5=""">>> conversion({},{})\n{}""".format(t,c,conv(t,c))
+after=before
+==
 pltest0==
 >>> conv(20,"CF")
 68.0
@@ -50,6 +73,7 @@ pltest4==
 >>> conv(-58,"FC")
 -50.0
 ==
+
 
 
 
