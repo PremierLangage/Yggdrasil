@@ -9,11 +9,17 @@ inputbox.appearance = outline
 
 
 countdown % { "cid": "countdown", "selector": "c-countdown" }
-countdown.time % 10
+countdown.time % 25
 countdown.hidden % false
 
 autoSubmit== #|js|
 const btn = document.querySelector('.action-submit');
+btn.click()
+==
+
+autoHint==#|js|
+// This should click on hint 
+const btn = document.querySelector('.c-hint');
 btn.click()
 ==
 
@@ -23,15 +29,19 @@ hints.shouldConfirm % false
 hints.items %=
 [
     { "content": "Présente dans de nombreux langage de programmation, cette classe de stokage qualifie souvent des variables." },
-    { "content": "Plop"  },
-    { "content": "Plop"},
-    { "content": "Plop"}
+    { "content": "Non thread-safe, cette classe de stockage est rarement employée à bon eiscient."  },
+    { "content": "Rendant les entités visibles par tous, les programmes perdent en robustesse."},
+    { "content": "Qualifiées de dégueulasses, un bon code fait tout ce qu'il peut pour les éviter."}
 ]
 ==
 
 
 before== #|python|
 countdown.actions = [
+    { "time": 20, "action": autoHint },
+    { "time": 15, "action": autoHint },
+    { "time": 10, "action": autoHint },
+    { "time": 5, "action": autoHint },
     { "time": 0, "action": autoSubmit }
 ]
 
