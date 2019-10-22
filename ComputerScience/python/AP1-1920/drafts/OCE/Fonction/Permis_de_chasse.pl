@@ -18,6 +18,7 @@ mplsoluce3 += str(chien)+"\n"
 mplsoluce3 += str(vache)+"\n"
 mplsoluce3 += str(amis)+"\n"
 
+after=before
 ==
 
 text==  
