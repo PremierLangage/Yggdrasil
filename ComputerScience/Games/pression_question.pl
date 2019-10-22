@@ -4,8 +4,7 @@ builder =@ /builder/before.py
 
 inputbox =: Input
 inputbox.type = text
-inputbox.placeholder = Answer
-inputbox.maxlength = 2
+inputbox.placeholder = Réponse
 inputbox.appearance = outline
 
 
