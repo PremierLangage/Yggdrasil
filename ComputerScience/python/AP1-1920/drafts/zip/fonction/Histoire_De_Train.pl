@@ -60,18 +60,18 @@ pltest3=""">>> sauvetage({},{},{},{})\n{}""".format(vt,dt,vs,ds,sauvetage(vt,dt,
 after=before
 ==
 pltest0==
->>>sauvetage(2,2,1,1)==False
-True
+>>> sauvetage(2,2,1,1)==False
+False
 ==
 pltest1==
->>>sauvetage(100,20,20,100)
+>>> sauvetage(100,20,20,100)
 False
 ==
 
 
 
 pltest1==
->>>sauvetage(20,100,200,10)
+>>> sauvetage(20,100,200,10)
 True
 ==
 
