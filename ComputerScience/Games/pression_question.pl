@@ -12,10 +12,18 @@ const btn = document.querySelector('.action-submit');
 btn.click()
 ==
 
-logOnConsole==#|js|
-// you may open the browser console to see the message
-console.log('hello world');
+
+hints % { "cid": "hints", "selector": "c-hint" }
+hints.shouldConfirm % false
+hints.items %=
+[
+    { "content": "**Hint 1**" },
+    { "content": "**Hint 2**"  },
+    { "content": "**Hint 3**", "css": "warning-state"  }
+]
 ==
+
+
 
 before== #|python|
 countdown.actions = [
@@ -24,7 +32,7 @@ countdown.actions = [
 counter = 0
 ==
 
-title = Count Down Component
+title = Question sous pression
 text ==
 
 ==
