@@ -21,7 +21,10 @@ autoHint==#|js|
 const hint = document.querySelector('c-hint');
 hint.debug = true;
 if (hint.consumedCount < hint.items.length) {
-    hint.items[hint.consumedCount++].consumed = true;
+    const item = hint.items[hint.consumedCount++];
+    
+    item.consumed = true;
+    item.css = 'animated slideDown';
 }
 ==
 
