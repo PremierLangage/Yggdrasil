@@ -19,8 +19,9 @@ btn.click()
 
 autoHint==#|js|
 // This should click on hint 
-const btn = document.querySelector('.c-hint');
-btn.click()
+const hint = document.querySelector('c-hint');
+const btn = hint.querySelector('.hint-component-header');
+btn.click();
 ==
 
 
@@ -96,5 +97,6 @@ else:
 countdown.hidden = True
 
 ==
+
 
 
