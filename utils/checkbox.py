@@ -41,7 +41,7 @@ class Checkbox(Component):
                 item['css'] = 'success-state'
                 checkright+=1
             elif item['id'] in self._sol and not item['checked']:
-                item['css'] = 'success-border'
+                item['css'] = 'success-border2'
                 missright+=1
             elif not (item['id'] in self._sol) and item['checked']:
                 item['css'] = 'error-state'
