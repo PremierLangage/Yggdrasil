@@ -1,7 +1,9 @@
 #author=OCE
 
 # Heritage d'un type d'exercice 
-extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
+extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
+@ /builder/before.py [builder.py]
+
 
 title = Histoire de trains
 
@@ -17,13 +19,7 @@ quatre réels $%v_t, d_O,V,d_S%$,
 <br>
 ==
 editor.code==
-#
-#
-#
 
-==
-
-soluce==#|python|
 def temps_mis(v,d):
     """retourne le temps en heure mn pour parcourir km à la vitesse v."""
     heure =int(d/v)
@@ -32,7 +28,7 @@ def temps_mis(v,d):
 
 def sauvetage(vt,dt,vs,ds):
     ht,mt=temps_mis(vt,dt)
-    hS,mS=temps_mis(vs,ds)
+    hs,ms=temps_mis(vs,ds)
     if ht<hs or (ht==hs and mt<ms):
         return False
     else:
@@ -41,18 +37,10 @@ def sauvetage(vt,dt,vs,ds):
 
 ==
 
-mplsoluce0==
-vitesse de 100
-100
-==
-mplsoluce1==
-vitesse de 150
-150
+pltest0==
+>>>sauvetage(2,2,1,1)==False
+True
 ==
 
-mplsoluce2==
-vitesse de 300
-300
-==
 
 
