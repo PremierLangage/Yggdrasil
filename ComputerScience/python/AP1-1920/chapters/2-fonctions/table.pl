@@ -21,12 +21,12 @@ code==
 text==  
 
 Ecrire une fonction `saisie_entier_str_positif` que force la saisie d'un entier strictement positif et le renvoie<br>
-Ecrire une fonction `table` qui : <br> 
+Ecrire une fonction `affiche_table` qui : <br> 
 * prend en paramètre deux entiers : <br>
     + un entier x <br>
     + un entier strictement positif n <br>
 
-Pour finir écrivez un code : <br>
+Pour finir écrivez un programme : <br>
 * qui demande à l'utilisateur deux entiers (dont le second strictement positif), <br>
 * appelle la fonction **table** qui imprimera le résultat attendu.<br>
 
@@ -35,6 +35,7 @@ Vous vous aiderez du code déjà présent pour les saisies des valeurs.
 
 soluce==#|python|
 def table(x,n):
+    print("de 0 fois",n,"à",x,"fois",n)
     for i in range(n):
         print(i * x)
 def  saisie_entier_str_positif():
