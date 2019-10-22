@@ -25,7 +25,7 @@ grade = checkbox.eval()
 
 extracss ==
 <style>
-.success-border {
+.success-border2 {
     border: 4px solid transparent;
     border-radius: .25rem;
     border-color: #c3e6cb !important;
