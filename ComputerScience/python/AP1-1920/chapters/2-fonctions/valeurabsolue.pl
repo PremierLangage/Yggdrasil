@@ -23,10 +23,13 @@ pltest1==
 >>> val_abs(4) == 4
 True
 ==
+
 Xeditor.code==
 def val_abs(x):
     if x<0:
-        x=-x
+        x=-x # Fixme pourquoi j'aime pas cette solution car si le type de x est un peu plus compliqué on a changé sa valeur 
+        # en faisant un effet de bord return -x c'est mieux non ?
     return x
 ==
+
 
