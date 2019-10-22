@@ -19,7 +19,7 @@ btn.click()
 
 autoHint==#|js|
 const hint = document.querySelector('c-hint');
-hint.debug = true;
+hint.debug = false;
 if (hint.consumedCount < hint.items.length) {
     const item = hint.items[hint.consumedCount++];
     
