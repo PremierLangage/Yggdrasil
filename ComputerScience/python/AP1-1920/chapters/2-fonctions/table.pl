@@ -8,12 +8,6 @@ title = Afficher les "n" premiers multiples d'un entier "x"
 
 code==
 
-#
-?? = ??(input("Saisisez un entier : "))
-#
-#
-#
-
 
 ?? = ??(input("Saisissez un entier strictement positif : "))
 
@@ -31,8 +25,8 @@ Ecrire une fonction `affiche_table` qui : <br>
 *imprime les n premiers multiples de x.
 
 Pour finir écrivez un programme : <br>
-* qui demande à l'utilisateur deux entiers (dont le second strictement positif), <br>
-* appelle la fonction `affiche_table` qui imprimera le résultat attendu.<br>
+* qui demande à l'utilisateur deux entiers strictement positifs, <br>
+* et appelle la fonction `affiche_table` qui imprimera le résultat attendu.<br>
 
 Vous vous aiderez du code déjà présent pour les saisies des valeurs. 
 ==
@@ -47,7 +41,7 @@ def  saisie_entier_str_positif():
          n = int(input("Saisissez un entier strictement positif : "))
     return n
 
-n = int(input("Saisisez un entier : "))
+n = saisie_entier_str_positif()
 x = saisie_entier_str_positif()
 
 table(n,x)
@@ -63,7 +57,7 @@ def  saisie_entier_str_positif():
          n = int(input("Saisissez un entier strictement positif : "))
     return n
 
-n = int(input("Saisisez un entier : "))
+n = saisie_entier_str_positif()
 x = saisie_entier_str_positif()
 
 table(n,x)
@@ -98,6 +92,7 @@ négatif
 -2
 5
 ==
+
 
 
 
