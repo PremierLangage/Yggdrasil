@@ -5,16 +5,17 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 title = Permis de chasse
 
-code==
-#
-#
-#
-poules=??(input("Combien de poules?"))
-chiens=??(input("Combien de chiens?"))
-vaches=??(input("Combien de vaches?"))
-amis=??(input("Combien d'amis?"))
-#
+before==
+import random
+vt=random.randint (14,250)
+dt=random.randint(20,300)
+vs=random.randint (200,350)
+ds=random.randint (100,500)
+mpsoluce5=""">>> sauvetage({},{},{},{})\n{}""".format(vt,dt,vs,ds,sauvetage(vt,dt,vs,ds))
 
+pltest0==
+>>>sauvetage(2,2,1,1)==False
+True
 ==
 
 text==  
@@ -54,12 +55,25 @@ Payer 450 euros.<br>
 Points perdus : 9
 ==
 
+code==
+#
+#
+#
+poules=??(input("Combien de poules?"))
+chiens=??(input("Combien de chiens?"))
+vaches=??(input("Combien de vaches?"))
+amis=??(input("Combien d'amis?"))
+#
+
+==
+
 soluce==#|python|
 def amende(p,c,v,a):
     points_perdus=p+3*c+5*v+10*a
+    apayer=50*points_perdus
     if (points_perdus>=100):
         points_perdus = 100
-    return (50*points_perdus,points_perdus)
+    return (apayer,points_perdus)
 
 #programme principal------------------
 poules=int(input("Combien de poules?"))
@@ -100,5 +114,6 @@ mplsoluce2==
 1
 0
 ==
+
 
 
