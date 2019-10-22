@@ -24,7 +24,7 @@ if (hint.consumedCount < hint.items.length) {
     const item = hint.items[hint.consumedCount++];
     
     item.consumed = true;
-    item.css = 'animated jackInTheBox';
+    item.css = 'animated pulse infinite';
 }
 ==
 
