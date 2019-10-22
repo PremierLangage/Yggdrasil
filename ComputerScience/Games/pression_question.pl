@@ -65,6 +65,7 @@ countdown.actions = [
 ==
 
 title = Question sous pression
+
 text ==
 Nous cherchons une classe de stockage.
 ==
@@ -79,6 +80,7 @@ form ==
 
 evaluator== #|python|
 
+countdown.actions = []
 
 def levenshtein(s1, s2):
     if len(s1) < len(s2):
@@ -113,6 +115,7 @@ else:
 countdown.hidden = True
 
 ==
+
 
 
 
