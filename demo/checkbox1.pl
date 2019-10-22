@@ -28,7 +28,7 @@ extracss ==
 .success-border2 {
     border: 1px solid transparent;
     border-radius: .25rem;
-    border-color: #d4edda !important;
+    border-color: #007E33 !important;
 }
 </style>
 ==
