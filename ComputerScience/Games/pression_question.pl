@@ -20,8 +20,7 @@ btn.click()
 autoHint==#|js|
 // This should click on hint 
 const hint = document.querySelector('c-hint');
-const btn = hint.querySelector('.hint-component-header');
-btn.click();
+hint.consume();
 ==
 
 
