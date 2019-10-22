@@ -16,6 +16,9 @@ code==
 
 
 ?? = ??(input("Saisissez un entier strictement positif : "))
+
+
+print("\n de 0 fois",??,"à",??,"fois",n)
 ==
 
 text==  
@@ -25,17 +28,33 @@ Ecrire une fonction `affiche_table` qui : <br>
 * prend en paramètre deux entiers : <br>
     + un entier x <br>
     + un entier strictement positif n <br>
+*imprime les n premiers multiples de x.
 
 Pour finir écrivez un programme : <br>
 * qui demande à l'utilisateur deux entiers (dont le second strictement positif), <br>
-* appelle la fonction **table** qui imprimera le résultat attendu.<br>
+* appelle la fonction `affiche_table` qui imprimera le résultat attendu.<br>
 
 Vous vous aiderez du code déjà présent pour les saisies des valeurs. 
 ==
+Xeditor.code==
+def table(x,n):
+    print("\nde 0 fois",n,"à",x,"fois",n)
+    for i in range(n):
+        print(i * x)
+def  saisie_entier_str_positif():
+    n=int(input("Saisissez un entier strictement positif : "))
+    while(n<=0):
+         n = int(input("Saisissez un entier strictement positif : "))
+    return n
 
+n = int(input("Saisisez un entier : "))
+x = saisie_entier_str_positif()
+
+table(n,x)
+==
 soluce==#|python|
 def table(x,n):
-    print("de 0 fois",n,"à",x,"fois",n)
+    print("\nde 0 fois",x,"à",n,"fois",x)
     for i in range(n):
         print(i * x)
 def  saisie_entier_str_positif():
