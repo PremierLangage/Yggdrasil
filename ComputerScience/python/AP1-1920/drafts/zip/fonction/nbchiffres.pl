@@ -5,7 +5,6 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title =Apparition d'un chiffre
 
-
 text==
 On veut déterminer le nombre d'apparition d'un chiffre particulier dans $%2^n%$.
 
@@ -25,7 +24,9 @@ Pour cela écrire une fonction  **nombre_chiffres(exp,chiffre)** qui reçoit un 
     2<br>
 ==
 
-Xeditor.code==
+taboo=str
+
+editor.code==
 def nombre_chiffres(n,c):
     if n<0 or not 0<=c<=9:
         return None
@@ -63,3 +64,4 @@ pltest1==
 >>> nombre_chiffres(67,9)
 3
 ==
+
