@@ -36,7 +36,7 @@ if (hint.consumedCount < hint.items.length) {
     const item = hint.items[hint.consumedCount++];
     item.consumed = true;
     // animate the new hint animation api is documented at (https://pl.u-pem.fr/components/css-doc)
-    item.css = 'animated pulse infinite'; // animate the new hint.
+    item.css = 'animated bounce'; // animate the new hint.
 }
 ==
 
