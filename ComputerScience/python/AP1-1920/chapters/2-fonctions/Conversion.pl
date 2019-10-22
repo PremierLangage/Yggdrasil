@@ -29,8 +29,8 @@ def conv(t,n):
     # pas de conversion
         return t
 ==
-==
-before
+
+before==
 import random
 def conv(t,n):
     """Renvoie la conversion Celsius->Fahrenheit ou inversement suivant<n>."""
