@@ -66,7 +66,7 @@ remaining = countdown.time
 for e in countdown.actions:
     e['consumed'] = False
 
-countdown.hidden % true
+countdown.hidden = True
 grade = (100, f'<h3>remaining: {remaining}')
 
 ==
