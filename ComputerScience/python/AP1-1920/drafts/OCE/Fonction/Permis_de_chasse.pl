@@ -46,7 +46,7 @@ Combien de chiens?2 <br>
 Combien de vaches?10 <br>
 Combien d'amis?20 <br>
 <br>
-Payer 5000 euros. <br>
+Payer 12850 euros. <br>
 Permis annulé <br>
 <br>
 Combien de poules?1 <br>
