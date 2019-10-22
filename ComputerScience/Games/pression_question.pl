@@ -2,6 +2,7 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+
 countdown % { "cid": "countdown", "selector": "c-countdown" }
 countdown.time % 10
 countdown.hidden % false
@@ -24,13 +25,16 @@ counter = 0
 ==
 
 title = Count Down Component
-text =
+text ==
+
+==
+
 form ==
- {{ hints|component}}
+ {{ hints|component }}
 
  {{ countdown|component }}
 
- {{ inputbox|component}}
+ {{ inputbox|component }}
 ==
 
 evaluator== #|python|
