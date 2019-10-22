@@ -21,7 +21,7 @@ autoHint==#|js|
 // This should click on hint 
 const hint = document.querySelector('c-hint');
 if (hint.consumedCount < hint.items.length) {
-    hint.items[hint.consumedCount++].consumed = true
+    hint.items[hint.consumedCount++].consumed = true;
 }
 ==
 
