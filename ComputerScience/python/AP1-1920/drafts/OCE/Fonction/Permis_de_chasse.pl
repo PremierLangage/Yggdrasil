@@ -7,15 +7,16 @@ title = Permis de chasse
 
 before==
 import random
-vt=random.randint (14,250)
-dt=random.randint(20,300)
-vs=random.randint (200,350)
-ds=random.randint (100,500)
-mpsoluce5=""">>> sauvetage({},{},{},{})\n{}""".format(vt,dt,vs,ds,sauvetage(vt,dt,vs,ds))
+vache=random.randint (0,10)
+poule=random.randint(0,35)
+chien=random.randint (0,15)
+amis=random.randint (0,5)
 
-pltest0==
->>>sauvetage(2,2,1,1)==False
-True
+mplsoluce2="Test aléatoire\n"
+for i in range(5):
+    n=random.randint(4,7)
+    mplsoluce2 += str(n)+"\n"
+
 ==
 
 text==  
