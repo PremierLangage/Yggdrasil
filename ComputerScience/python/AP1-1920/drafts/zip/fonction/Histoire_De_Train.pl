@@ -37,21 +37,41 @@ def sauvetage(vt,dt,vs,ds):
 
 ==
 before==
+
+def temps_mis(v,d):
+    """retourne le temps en heure mn pour parcourir km à la vitesse v."""
+    heure =int(d/v)
+    minute= (60 * d//v) % 60
+    return heure,minute
+
+def sauvetage(vt,dt,vs,ds):
+    ht,mt=temps_mis(vt,dt)
+    hs,ms=temps_mis(vs,ds)
+    if ht<hs or (ht==hs and mt<ms):
+        return False
+    else:
+        return True
 import random
 vt=random.randint (14,250)
 dt=random.randint(20,300)
 vs=random.randint (200,350)
 ds=random.randint (100,500)
-pltest2=""">>> sauvetage({},{},{},{})\n{}""".format(vt,dt,vs,ds,sauvetage(vt,dt,vs,ds))
-
+pltest3=""">>> sauvetage({},{},{},{})\n{}""".format(vt,dt,vs,ds,sauvetage(vt,dt,vs,ds))
+after=before
+==
 pltest0==
 >>>sauvetage(2,2,1,1)==False
 True
 ==
+pltest1==
+>>>sauvetage(100,20,20,100)
+False
+==
 
 
 
-
-
-
+pltest1==
+>>>sauvetage(20,100,200,10)
+True
+==
 
