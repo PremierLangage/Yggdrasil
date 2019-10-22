@@ -36,11 +36,19 @@ def sauvetage(vt,dt,vs,ds):
     
 
 ==
+before==
+import random
+vt=random.randint (14,250)
+dt=random.randint(20,300)
+vs=random.randint (200,350)
+ds=random.randint (100,500)
+pltest2=""">>> sauvetage({},{},{},{})\n{}""".format(vt,dt,vs,ds,sauvetage(vt,dt,vs,ds))
 
 pltest0==
 >>>sauvetage(2,2,1,1)==False
 True
 ==
+
 
 
 
