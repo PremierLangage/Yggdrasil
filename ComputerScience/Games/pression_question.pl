@@ -87,6 +87,7 @@ remaining = countdown.time
 mark = min(25*(remaining // 5), 100)
 countdown.hidden = True
 
+# We accept 3 typos at most from the two following strings
 if levenshtein(inputbox.value, "globale") <= 3 or levenshtein(inputbox.value, "variable globale") <= 3:
     grade = (mark, "Bien vu !")
 else:
