@@ -54,6 +54,7 @@ mplsoluce2="Test aléatoire\n"
 for i in range(5):
     n=random.randint(4,7)
     mplsoluce2 += str(n)+"\n"
+after=before    
 ==
 
 soluce==
@@ -95,6 +96,7 @@ negatif
 11
 
 ==
+
 
 
 
