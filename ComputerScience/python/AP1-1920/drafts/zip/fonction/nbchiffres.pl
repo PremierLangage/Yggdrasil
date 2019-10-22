@@ -24,9 +24,7 @@ Pour cela écrire une fonction  **nombre_chiffres(exp,chiffre)** qui reçoit un 
     2<br>
 ==
 
-taboo=str
-
-editor.code==
+xeditor.code==
 def nombre_chiffres(n,c):
     if n<0 or not 0<=c<=9:
         return None
@@ -38,6 +36,7 @@ def nombre_chiffres(n,c):
         n//=10
     return nb
 ==
+
 before==
 import random
 def nombre_chiffres(n,c):
