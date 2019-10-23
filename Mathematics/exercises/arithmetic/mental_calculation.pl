@@ -84,6 +84,7 @@ if remaining == 0:
     countdown.hidden = True
     grade = (counter, "<center><span class=\"success-state\">Vous avez marqué "+str(counter)+" "+point+" </span></center>")
     form = ""
+    text = ""
 else:
     op1, op2, op, ans = random_op()
 
