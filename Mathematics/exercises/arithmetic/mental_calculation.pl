@@ -9,7 +9,7 @@ inputbox.maxlength = 2
 inputbox.appearance = outline
 
 countdown % { "cid": "countdown", "selector": "c-countdown" }
-countdown.time % 10
+countdown.time % 120
 countdown.hidden % false
 
 autoSubmit== #|js|
@@ -77,9 +77,11 @@ def random_op():
     res = a*b
     return (a, b, op, res)
 
+if remaining == 0:
+    countdown.hidden = True
+
 op1, op2, op, ans = random_op()
 
-countdown.time = 10
 grade = (-1, '   ')
 
 ==
