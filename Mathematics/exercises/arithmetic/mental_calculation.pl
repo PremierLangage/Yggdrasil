@@ -61,6 +61,17 @@ if ans == inputbox.value:
 
 inputbox.value = ''
 
+
+def random_op():
+    """
+    We will return a random operation doable mentaly
+    """
+    a = random.randint(0,10)
+    b = random.randint(0,10)
+    op = ' \\times '
+    res = a*b
+    return (a, b, op, res)
+
 op1, op2, op, ans = random_op()
 
 countdown.time = 10
