@@ -34,6 +34,7 @@ def random_op():
     return (a, b, op, res)
 
 op1, op2, op, ans = random_op()
+point = "point"
 ==
 
 title = Calcul mental
@@ -47,7 +48,7 @@ form ==
 
  {{ inputbox|component}}
 
- {{ counter }} Point(s).
+ {{ counter }} {{ point }}.
 ==
 
 evaluator== #|python|
@@ -60,6 +61,8 @@ for e in countdown.actions:
 
 if ans == inputbox.value:
     counter += 1
+    if counter >= 2:
+        point = "points"
 
 inputbox.value = ''
 
