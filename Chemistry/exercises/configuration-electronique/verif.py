@@ -26,6 +26,46 @@ def strfromz(Z):
                 Z=0
             indice+=1    
     return s
+
+def latexfromz(Z):
+    """
+    >>> strfromz(10)
+    '1s2 2s2 2p6'
+    """
+    
+    if Z==24:
+        s="$% 1s^2 2s^2 2p^6 3s^2 3p^6 4s^1 3d^5 "
+    elif Z==29:
+        s="$% 1s^2 2s^2 2p^6 3s^2 3p^6 4s^1 3d^{10} "
+    else:
+        s="$% "
+        indice=0
+        while Z>0:
+            if Z>maximum[indice]:
+                s=s+orbitales[indice]+"^{"+str(maximum[indice])+"} "
+                Z -= maximum[indice]
+            else:
+                s=s+orbitales[indice]+"^{"+str(Z)+"} "
+                Z=0
+            indice+=1    
+    return s+"%$"
+
+def checkformat(s):
+    """
+        return a list of triplets (a,l,i)  if of the form ([1-9][sp][1-9][0]?\w)+ 
+    """
+    l=s.split(s)
+    for m in l:
+        if m=="":
+            #double espace
+            pass
+        
+
+
+def latexfromstr(s):
+    l=s.split(" ")
+
+
 import sys
 def verif(s,Z):
     while s.startswith(" "):
@@ -38,6 +78,7 @@ def verif(s,Z):
     return s==strfromz(Z)
         
     
+
 
 
 
