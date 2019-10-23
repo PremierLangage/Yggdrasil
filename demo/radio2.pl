@@ -11,7 +11,7 @@ import csv
 with open('data.csv',newline='') as file:
     rows=list(csv.DictReader(file,delimiter=','))
 
-items=rd.sample(rows,5)
+items=rd.sample(rows,4)
 country=items[0]['country']
 article=items[0]['article']
 capitals=[item['capital'] for item in items]
