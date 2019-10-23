@@ -77,7 +77,7 @@ def random_op():
 op1, op2, op, ans = random_op()
 
 countdown.time = 10
-grade = (-1, '')
+grade = (-1, '   ')
 
 ==
 
