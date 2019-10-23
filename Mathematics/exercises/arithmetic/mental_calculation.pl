@@ -40,7 +40,7 @@ point = "point"
 title = Calcul mental
 
 text ==
-Quel est le résultat de l'opération $% {{ op1 }} {{ op }} {{ op2 }} %$
+Quel est le résultat de l'opération $% {{ op1 }} {{ op }} {{ op2 }} %$ ?
 ==
 
 form ==
