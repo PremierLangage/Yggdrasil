@@ -9,7 +9,7 @@ title = Histoire de trains
 
 text==  
 Je suis ligoté sur les rails en gare d’Arras.<br> 
-Un train parti de la gare de Ouceti se dirige vers Arras.Ce train circule à la vitesse $$%v_t%$
+Un train parti de la gare de Ouceti se dirige vers Arras. Ce train circule à la vitesse $$%v_t%$
  et la gare d'Ouceti est située à une distance $%d_O%$ de celle d’Arras.
 .<br>
 –Écrire une fonction `temps_mis` qui reçoit la vitesse du train et la distance et qui renvoie le temps mis pour parcourir cette distance;<br>
@@ -74,4 +74,5 @@ pltest1==
 >>> sauvetage(20,100,200,10)
 True
 ==
+
 
