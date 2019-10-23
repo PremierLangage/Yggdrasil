@@ -29,7 +29,7 @@ def random_op():
     """
     a = random.randint(0,10)
     b = random.randint(0,10)
-    op = ' \times '
+    op = ' \\times '
     return (a, b, op)
 
 op1, op2, op = random_op()
