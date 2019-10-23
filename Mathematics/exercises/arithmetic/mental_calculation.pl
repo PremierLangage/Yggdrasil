@@ -82,7 +82,8 @@ def random_op():
 
 if remaining == 0:
     countdown.hidden = True
-    grade = (counter, "<center><span class=\"success-state\">Vous avez marqué "+str(counter)+" "+point+" </span></center>")
+    # the 100 shloud be counter by it's needed to pass to next exercice
+    grade = (100, "<center><span class=\"success-state\">Vous avez marqué "+str(counter)+" "+point+" </span></center>")
     form = ""
     text = ""
 else:
@@ -91,5 +92,6 @@ else:
     grade = (-1, feedback)
 
 ==
+
 
 
