@@ -1,5 +1,7 @@
 extends = /template/radio.pl
 
+@ country_data.csv [data.csv]
+
 title = Question à choix multiples (radio)
 
 before ==
