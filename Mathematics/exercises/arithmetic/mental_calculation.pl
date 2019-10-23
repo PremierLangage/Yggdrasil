@@ -31,12 +31,14 @@ def random_op():
     b = random.randint(0,10)
     op = ' \times '
     return (a, b, op)
+
+op1, op2, op = random_op()
 ==
 
 title = Calcul mental
 
 text ==
-Quel est le réésultat de l'opéération : 
+Quel est le réésultat de l'opération {{ op1 }} {{ op }} {{ op2 }} 
 ==
 
 form ==
