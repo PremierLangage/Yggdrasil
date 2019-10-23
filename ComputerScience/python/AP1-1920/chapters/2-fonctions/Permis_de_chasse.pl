@@ -72,7 +72,7 @@ amis=??(input("Combien d'amis?"))
 
 soluce==#|python|
 def amende(p,c,v,a):
-    points_perdus=p+3*c+5*v+10*a
+    points_perdus=p+5*c+10*v+30*a
     apayer=50*points_perdus
     if (points_perdus>=100):
         points_perdus = 100
@@ -117,6 +117,7 @@ mplsoluce2==
 1
 0
 ==
+
 
 
 
