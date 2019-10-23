@@ -51,6 +51,8 @@ form ==
 ==
 
 evaluator== #|python|
+import random
+
 remaining = countdown.time
 # reset timer
 for e in countdown.actions:
