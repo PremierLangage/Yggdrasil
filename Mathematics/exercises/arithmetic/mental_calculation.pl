@@ -46,6 +46,8 @@ form ==
  {{ countdown|component }}
 
  {{ inputbox|component}}
+
+ {{ counter }} Point(s).
 ==
 
 evaluator== #|python|
