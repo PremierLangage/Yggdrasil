@@ -59,6 +59,8 @@ for e in countdown.actions:
 if ans == inputbox.value:
     counter += 1
 
+inputbox.value = 0
+
 op1, op2, op, ans = random_op()
 
 countdown.time = 10
