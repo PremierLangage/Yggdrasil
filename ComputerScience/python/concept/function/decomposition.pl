@@ -9,8 +9,8 @@ piste=rouge
 text==
 ## Décomposition en facteurs premiers
 
-Tout entier positif *n* se décompose de manière unique en produit de nombres premiers. Par exemple, *301158* se décompose en
-<a href="https://www.codecogs.com/eqnedit.php?latex=2*3^4*11*13^2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?2*3^4*11*13^2" title="2*3^4*11*13^2" /></a>.
+Tout entier positif **n** se décompose de manière unique en produit de nombres premiers. Par exemple, *301158* se décompose en
+$%2*3^4*11*13^2%$.
 ###  *contient_puissance*
 Écrire une fonction **contient_puissance** qui prend comme arguments un entier positif
 *n* et un nombre premier
@@ -117,5 +117,6 @@ def decomposition(n):
 	print("*".join(ldecomposition(n)))
 
 ==
+
 
 
