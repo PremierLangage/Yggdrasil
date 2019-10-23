@@ -30,9 +30,10 @@ def random_op():
     a = random.randint(0,10)
     b = random.randint(0,10)
     op = ' \\times '
-    return (a, b, op)
+    res = a*b
+    return (a, b, op, res)
 
-op1, op2, op = random_op()
+op1, op2, op, ans = random_op()
 ==
 
 title = Calcul mental
@@ -53,11 +54,13 @@ remaining = countdown.time
 for e in countdown.actions:
     e['consumed'] = False
 
-if r == inputbox.value:
+if res == inputbox.value:
+    counter += 1
+
+op1, op2, op, ans = random_op()
 
 countdown.time = 10
-counter += 1
-grade = (100, f'<h3>remaining: {remaining}, counter: {counter}</h3>')
+grade = (-1, '')
 
 ==
 
