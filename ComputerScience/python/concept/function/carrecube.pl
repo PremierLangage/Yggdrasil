@@ -16,7 +16,7 @@ text==
 	Qui prend un parametre entier n et qui retourne :
 
 	carre(n) retourne n*n
-	cube(n) retourne n*n*n  ou n**3
+	cube(n) retourne  n**3
 
 # taboo
 
@@ -49,6 +49,7 @@ def carre(n):
 def cube(n):
 	return n**3
 ==
+
 
 
 
