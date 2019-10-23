@@ -14,7 +14,7 @@ with open('data.csv',newline='') as file:
 items=rd.sample(rows,5)
 country=items[0]['country']
 article=items[0]['article']
-capitals=[item['capitals'] for item in items]
+capitals=[item['capital'] for item in items]
 radio.loadContent(capitals)
 radio.setSolByIndex(0)
 radio.shuffle()
