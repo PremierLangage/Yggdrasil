@@ -16,8 +16,8 @@ nbtrues=2
 # with at least one good answer ...
 
 good==
-La Lune tourne | Autour de la terre 
-0 est plus petit que 1 | Heureusement 
+La Lune tourne | Autour de la terre mais pas sur elle même
+0 est plus petit que 1 | En nombre de pixels ?  
 Mars est dite: la planète rouge 
 le sucre est blanc
 le cheval blanc de Henri VI est blanc
