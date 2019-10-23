@@ -22,6 +22,7 @@ Coder une fonction `Lances_Des` qui prend en paramètre un entier "n" compris en
 #==
 
 before==
+from random import randint
 def Lances_Des(n):
     s = 0
     for i in range(1, 7):
@@ -29,12 +30,11 @@ def Lances_Des(n):
             for k in range(1, 7):
                 if i + j + k == n:
                     s += 1
+    return s
 for i in range(7):
-    n=range(1,18)
-    p=Lance_Des(n)
-    globals()[f"pltest{i}"]=f""">>> Lance_Des({n})\n{p}\n"""
-
-
+    n=randint(1,18)
+    p=Lances_Des(n)
+    globals()[f"pltest{i}"]=f""">>> Lances_Des({n})\n{p}\n"""
 
 ==
 
