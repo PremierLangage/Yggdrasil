@@ -15,6 +15,7 @@ items=rd.sample(rows,4)
 country=items[0]['country']
 article=items[0]['article']
 capitals=[item['capital'] for item in items]
+
 radio.loadContent(capitals)
 radio.setSolByIndex(0)
 radio.shuffle()
