@@ -6,6 +6,7 @@ title=Une fonction carre
 
 tag=function # N'oubliez pas de remplir ce champs svp
 extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
+@ /builder/before.py [builder.py]
 piste=verte
 text==
 ## Une fonction carre ## 
@@ -39,6 +40,7 @@ def carre(n):
     return n*6
 ==
 editor.height=145
+
 
 
 
