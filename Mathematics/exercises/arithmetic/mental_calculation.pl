@@ -59,7 +59,7 @@ for e in countdown.actions:
 if ans == inputbox.value:
     counter += 1
 
-inputbox.value = 0
+inputbox.value = ''
 
 op1, op2, op, ans = random_op()
 
