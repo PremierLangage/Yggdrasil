@@ -8,6 +8,7 @@ radio =: RadioGroup
 radio.decorator = CustomRadioGroup
 
 before ==
+import random as rd
 content=rd.sample(list(range(50)),5)
 radio.loadContent([str(item) for item in content])
 radio.setSolByContent(str(min(choices)))
