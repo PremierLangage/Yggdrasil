@@ -61,8 +61,11 @@ for e in countdown.actions:
 
 if ans == inputbox.value:
     counter += 1
+    feedback = "<span class="success-state">Bonne réponse : $%"+str(op1)+str(op)+str(op2)+" = "+str(ans)+"%$</span>"
     if counter >= 2:
         point = "points"
+else:
+    feedback = "<span class="error-state">Désolé : $%"+str(op1)+str(op)+str(op2)+" = "+str(ans)+"%$</span>"
 
 inputbox.value = ''
 
@@ -79,10 +82,11 @@ def random_op():
 
 if remaining == 0:
     countdown.hidden = True
+    grade = (counter, '')
+else:
+    op1, op2, op, ans = random_op()
 
-op1, op2, op, ans = random_op()
-
-grade = (-1, '   ')
+    grade = (-1, '   ')
 
 ==
 
