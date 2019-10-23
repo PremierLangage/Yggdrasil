@@ -1,32 +1,25 @@
 extends = basic.pl
 
-title = Radio
+@ /utils/radiogroup.py [customradiogroup.py]
+
+title = Question à choix multiples (radio)
 
 radio =: RadioGroup
+radio.decorator = CustomRadioGroup
 
 before ==
-import random as rd
-from utilscomp import RadioGroup_loadContent
-choices=rd.sample(list(range(50)),5)
-sol=str(min(choices))
-RadioGroup_loadContent(radio,choices)
-fb=radio.__class__
+content=rd.sample(list(range(50)),5)
+radio.loadContent([str(item) for item in content])
+radio.setSolByContent(str(min(choices)))
+radio.shuffle()
 ==
 
 text ==
 Sélectionner le plus petit nombre de la liste suivante.
 ==
 
-form ==
-{{ radio | component }}
-==
+form = {{ radio|component }}
 
 evaluator ==
-from utilscomp import RadioGroup_evalByContent
-
-score=RadioGroup_evalByContent(radio,sol)
-score=0
-feedback=fb
+grade = radio.eval()
 ==
-
-
