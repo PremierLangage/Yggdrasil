@@ -61,11 +61,11 @@ for e in countdown.actions:
 
 if ans == inputbox.value:
     counter += 1
-    feedback = "<span class="success-state">Bonne réponse : $%"+str(op1)+str(op)+str(op2)+" = "+str(ans)+"%$</span>"
+    feedback = "<span class=\"success-state\">Bonne réponse : $%"+str(op1)+str(op)+str(op2)+" = "+str(ans)+"%$</span>"
     if counter >= 2:
         point = "points"
 else:
-    feedback = "<span class="error-state">Désolé : $%"+str(op1)+str(op)+str(op2)+" = "+str(ans)+"%$</span>"
+    feedback = "<span class=\"error-state\">Désolé : $%"+str(op1)+str(op)+str(op2)+" = "+str(ans)+"%$</span>"
 
 inputbox.value = ''
 
