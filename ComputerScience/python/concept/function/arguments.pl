@@ -16,7 +16,7 @@ l'idée est d'avoir une fonction comme la suivante:
         print("-- It’s", state, "!")
 
 
-Sélectionner les appels suivant qui sont syntaxiquement corrects.
+Sélectionner parmis les appels suivant ceux qui sont syntaxiquement corrects.
 
 ==
 
@@ -45,6 +45,7 @@ parrot(voltage=5.0, action='evacuated', ’dead’) | non-keyword argument after
 parrot(110, voltage=220) | duplicate value for the same argument 
 parrot(actor=’John Cleese’) | unknown keyword argument
 ==
+
 
 
 
