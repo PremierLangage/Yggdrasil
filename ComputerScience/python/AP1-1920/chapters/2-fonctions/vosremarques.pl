@@ -1,7 +1,7 @@
 
 extends=/template/default.pl
 
-title =<font style="text-decoration: underline;"> Section </font>
+title =$% \underline{ Vos feedback } %$ 
 
 text = Faites nous vos remarques sur cette feuille .
 
