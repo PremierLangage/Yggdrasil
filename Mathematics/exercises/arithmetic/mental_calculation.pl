@@ -39,7 +39,7 @@ op1, op2, op, ans = random_op()
 title = Calcul mental
 
 text ==
-Quel est le réésultat de l'opération $% {{ op1 }} {{ op }} {{ op2 }} %$
+Quel est le résultat de l'opération $% {{ op1 }} {{ op }} {{ op2 }} %$
 ==
 
 form ==
