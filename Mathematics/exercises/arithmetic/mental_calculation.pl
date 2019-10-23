@@ -82,11 +82,11 @@ def random_op():
 
 if remaining == 0:
     countdown.hidden = True
-    grade = (counter, '')
+    grade = (counter, "<span class=\"success-state\">Vous avez marqué {{ counter }} {{ point }} </span>")
 else:
     op1, op2, op, ans = random_op()
 
-    grade = (-1, '   ')
+    grade = (-1, feedback)
 
 ==
 
