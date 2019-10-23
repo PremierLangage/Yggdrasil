@@ -54,7 +54,7 @@ remaining = countdown.time
 for e in countdown.actions:
     e['consumed'] = False
 
-if res == inputbox.value:
+if ans == inputbox.value:
     counter += 1
 
 op1, op2, op, ans = random_op()
