@@ -9,7 +9,7 @@ inputbox.maxlength = 2
 inputbox.appearance = outline
 
 countdown % { "cid": "countdown", "selector": "c-countdown" }
-countdown.time % 120
+countdown.time % 20
 countdown.hidden % false
 
 autoSubmit== #|js|
