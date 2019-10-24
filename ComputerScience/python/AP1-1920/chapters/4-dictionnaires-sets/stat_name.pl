@@ -19,10 +19,26 @@ Voici un exemple d'exécution :
 ==
 
 pltest==
->>> liste_imposable({'Abdul Kampfter': (14, "Autriche"),
-                     'Tiancheng Wu': (43, "France"),
-                     'Xavier Zagier': (12, "France"),
-                     'Jean-Marie Leroy': (53, "France")})
+>>> liste_imposable({'Abdul Kampfter': (14, "Autriche"), 'Tiancheng Wu': (43, "France"), 'Xavier Zagier': (12, "France"), 'Jean-Marie Leroy': (53, "France")}) # Exemple
 ['Tiancheng Wu', 'Jean-Marie Leroy']
 ==
 
+pltest1==
+>>> liste_imposable({}) # Test vide
+[]
+==
+
+pltest2==
+>>> liste_imposable({'a': (14, "Autriche"), 'b': (24, "Jamaica"), 'c': (12, "France"), 'd': (84, "France")} # Booléen*Booléen
+['d']
+==
+
+cache==
+def liste_imposable(d):
+    accu = []
+    for name in d:
+        age, pays = d[name]
+        if age >= 18 and pays == 'France':
+            accu.append(name)
+    return accu
+==
