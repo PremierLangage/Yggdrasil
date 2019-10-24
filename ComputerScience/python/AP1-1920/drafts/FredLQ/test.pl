@@ -34,7 +34,7 @@ pltest1==
 
 ==
 pltest3==
-	print(pltest2)
+	print("tot")
 ==
 
 
