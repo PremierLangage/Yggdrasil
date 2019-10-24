@@ -1,4 +1,4 @@
-author=DR
+author=CW
 title= Initialisation d'une variable.
 tag=variable
 
