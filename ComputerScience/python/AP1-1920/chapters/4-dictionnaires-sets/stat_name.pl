@@ -46,7 +46,7 @@ pltest1==
 ==
 
 pltest2==
->>> liste_imposable({'a': (14, "Autriche"), 'b': (24, "Jamaica"), 'c': (12, "France"), 'd': (84, "France")} # Booléen
+>>> liste_imposable({'a': (14, "Autriche"), 'b': (24, "Jamaica"), 'c': (12, "France"), 'd': (84, "France")}) # Booléen
 ['d']
 ==
 
