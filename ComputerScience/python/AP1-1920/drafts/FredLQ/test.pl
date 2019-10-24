@@ -7,7 +7,7 @@ extends=../../templates/pltest.pl
 title = premier exo
 
 text == 
-Fonction qui retourne le reste de la division de 7 par 3 ?
+Fonction 'resteDeXpar3()' qui retourne le reste de la division de 7 par 3 ?
 {{pltest}}
 ==
 
