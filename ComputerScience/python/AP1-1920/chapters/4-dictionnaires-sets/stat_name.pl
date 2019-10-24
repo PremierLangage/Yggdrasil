@@ -32,7 +32,7 @@ for i in range(100):
         dict_str += ', '
     dict_str += "'{}': ({}, '{}')".format(i, data[0], data[1])
 dict_str = '{' + dict_str + '}'
-pltest3 = '>>> liste_imposable({})\n{}\n'.format(dict_str, accu)
+pltest3 = '>>> liste_imposable({}) # Aléatoire\n{}\n'.format(dict_str, accu)
 after = before
 ==
 
@@ -47,7 +47,7 @@ pltest1==
 ==
 
 pltest2==
->>> liste_imposable({'a': (14, "Autriche"), 'b': (24, "Jamaica"), 'c': (12, "France"), 'd': (84, "France")}) # Booléen
+>>> liste_imposable({'a': (14, "Autriche"), 'b': (24, "Jamaica"), 'c': (12, "France"), 'd': (84, "France")}) # Booléen*Booléen
 ['d']
 ==
 
