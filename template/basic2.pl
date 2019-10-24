@@ -38,11 +38,14 @@ extrajs==
         const link = origin + pathname;
 
         const buttons = actions.find('.btn-group');
+        {% if "save" in buttons %}
         buttons.append(`
             <a type="button" class="btn btn-warning action-reroll" href="`+link+`?action=reroll">
                 <i class="fas fa-dice"></i> Nouveau tirage
             </a>
         `);
+        {% endif %}
+
         {% if "submit" in buttons %}
         {% if score >-1 %}
         const submit = actions.find('.action-submit');
