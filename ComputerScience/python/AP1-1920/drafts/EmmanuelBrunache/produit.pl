@@ -6,7 +6,7 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 title = Produit
 
 text == 
-Réaliser une fonction s'appelent "produit" qui prend deux nombres et qui les multiplient
+Réaliser une fonction s'appelent "produit" qui prend comme arguments deux nombres et retourne leur produit.
 
 ==
 
@@ -17,4 +17,5 @@ pltest==
 0
 
 ==
+
 
