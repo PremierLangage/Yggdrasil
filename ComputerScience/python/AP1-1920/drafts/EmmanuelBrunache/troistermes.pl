@@ -19,7 +19,7 @@ a=randint(10,100)
 b=randint(10,100)
 c=randint(10,100)
 d=randint(10,100)
-pltest1=""">>>suite({},{},{},{})\n{}\n""".format(a,b,c,d,suite(a,b,c,d))
+pltest=""">>>suite({},{},{},{})\n{}\n""".format(a,b,c,d,suite(a,b,c,d))
 after=before
 ==
 taboo=import
