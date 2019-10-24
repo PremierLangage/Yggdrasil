@@ -38,7 +38,7 @@ extrajs==
         const link = origin + pathname;
 
         const buttons = actions.find('.btn-group');
-        {% if "save" in buttons %}
+        {% if "save" is in buttons %}
         buttons.append(`
             <a type="button" class="btn btn-warning action-reroll" href="`+link+`?action=reroll">
                 <i class="fas fa-dice"></i> Nouveau tirage
