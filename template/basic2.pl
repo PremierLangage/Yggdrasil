@@ -46,7 +46,7 @@ extrajs==
         `);
         {% endif %}
 
-        {% if "submit" in buttons %}
+        {% if "submit" is in buttons %}
         {% if score >-1 %}
         const submit = actions.find('.action-submit');
         submit.hide();
