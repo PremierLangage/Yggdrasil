@@ -18,6 +18,23 @@ Voici un exemple d'exécution :
 {{pltest}}
 ==
 
+before==
+import random
+accu = []
+pays = ['France', 'Etranger']
+dict_str = ''
+for i in range(100):
+    data = (randint(10, 26), pays[randint(0, 1)])
+    if data[0] >= 18 and data[1] == 'France':
+        accu.append(str(i))
+    if i > 0:
+        dict_str += ', '
+    dict_str += "'{}': ({}, '{}')".format(i, data[0], data[1])
+dict_str = '{' + dict_str + '}'
+pltest3 = '>>> liste_imposable({})\n{}\n'.format(dict_str, accu)
+after = before
+==
+
 pltest==
 >>> liste_imposable({'Abdul Kampfter': (14, "Autriche"), 'Tiancheng Wu': (43, "France"), 'Xavier Zagier': (12, "France"), 'Jean-Marie Leroy': (53, "France")}) # Exemple
 ['Tiancheng Wu', 'Jean-Marie Leroy']
