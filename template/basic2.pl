@@ -28,12 +28,11 @@ extrajs==
 <script>
     function onReadyPL(nodes) {
         const actions = nodes.actions;
-        {% if "save" not in buttons %}
+        {% if "save" in buttons %}
         actions.find('.action-save').hide();
-        {% endif %}
-
         actions.find('.action-reset').hide();
         actions.find('.action-next').hide();
+        {% endif %}
 
         const { origin, pathname }  = document.location;
         const link = origin + pathname;
