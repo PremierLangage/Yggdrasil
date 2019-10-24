@@ -7,13 +7,18 @@ extends=../../templates/pltest.pl
 title = premier exo
 
 text == 
-variable c contient reste de la division de 7 par 3 ?
-
+Fonction qui retourne le reste de la division de 7 par 3 ?
+{{pltest}}
 ==
 
 pltest==
->>> c
-1
->>>
-
+	>>> resteDeXpar3(3)
+	0
+	>>> resteDeXpar3(0)
+	0
+	>>> resteDeXpar3(4)
+	1
 ==
+
+
+
