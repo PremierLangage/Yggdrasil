@@ -5,15 +5,15 @@ extends = ../../templates/pltest.pl
 
 title = Some title
 
-text = Écrire une fonction `filtre(dict, e)` qui prend un dictionnaire `dict` et un élément `e`, et qui retourne une *copie* de `dict` sans l'élément `e`.
+text = Écrire une fonction `filtre(d, e)` qui prend un dictionnaire `d` et un élément `e`, et qui retourne une **copie** de `dict` sans l'élément `e`.
 
 pltest==
->>> carre(0) 
-0
->>> carre(5)
-25
->>> carre(4)
-16
+>>> my_dict = {1, 2, 3, 4, 5}
+>>> new_dict = filtre(my_dict, 3)
+>>> my_dict == {1, 2, 3, 4, 5}
+True
+>>> new_dict == {1, 2, 4, 5}
+True
 ==
 
 
