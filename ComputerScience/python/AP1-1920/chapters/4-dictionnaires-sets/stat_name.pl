@@ -1,6 +1,7 @@
 #author = WFang
 
 extends = /ComputerScience/python/AP1-1920/templates/pltest.pl
+@ /builder/before.py [builder.py]
 
 title = Compter les imposables
 
@@ -17,8 +18,6 @@ Voici un exemple d'exécution :
 
 {{pltest}}
 ==
-
-builder=/builder/before.py
 
 before==
 import random
