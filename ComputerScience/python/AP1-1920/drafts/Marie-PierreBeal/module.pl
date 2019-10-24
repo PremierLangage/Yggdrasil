@@ -1,8 +1,8 @@
 author = Marie-Pierre Béal
 
-extends = ../../templates/pltest.pl
+extends = /ComputerScience/python/AP1-1920/templates/pltest.pl
 
-builder = /builder/befor.py
+@ /builder/before.py [builder.py]
 
 title = module au carré
 
@@ -19,14 +19,18 @@ pltest==
 ==
 
 before ==
-import random
+from random import randint
 def f(x,y):
     return x*x + y*y
 n = randint(10,100)
 m = randint(10,100)
-pltest1 = """>>>f({},{})\n{}\n""".format(n,m,f(n,m))
+pltest1 = """>>> f({},{})\n{}\n""".format(n,m,f(n,m))
 after = before
 ==
 
 
-
+editor.code==
+def f(r,t):
+    return 2
+    
+==
