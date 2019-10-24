@@ -1,4 +1,4 @@
-author=CW
+author=
 title= Test
 tag=variable
 
@@ -26,3 +26,4 @@ True
 >>> pom
 3
 ==
+
