@@ -31,7 +31,10 @@ pltest1==
 	0
 	>>> resteDeXpar3(4)
 	1
-==
 
+==
+pltest3==
+	print(pltest2)
+==
 
 
