@@ -7,7 +7,7 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 title = Suites géométriques
 
 text == 
-Soit $%(u_n)%$ la suite définie par $%u_{n+1}=q\times u_n%$ et $%u_{n_0}=b%$\n
+Soit $%(u_n)%$ la suite définie par $%u_{n+1}=q\times u_n%$ et $%u_{n_0}=b%$ \n
 Réaliser une fonction s'appelant "suite" qui prend comme arguments 4 nombres $%q%$, $%n_0%$, $%b%$ et $%n%$ (dans cet ordre) et qui retourne le n-ième terme de cette suite.
 ==
 
