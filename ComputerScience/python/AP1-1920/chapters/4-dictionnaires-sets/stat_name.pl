@@ -18,6 +18,8 @@ Voici un exemple d'exécution :
 {{pltest}}
 ==
 
+builder=/builder/before.py
+
 before==
 import random
 accu = []
@@ -25,7 +27,7 @@ pays = ['France', 'Etranger']
 dict_str = ''
 for i in range(100):
     data = (randint(10, 26), pays[randint(0, 1)])
-    if data[0] >= 20 and data[1] == 'France':
+    if data[0] >= 18 and data[1] == 'France':
         accu.append(str(i))
     if i > 0:
         dict_str += ', '
@@ -48,9 +50,6 @@ pltest1==
 pltest2==
 >>> liste_imposable({'a': (14, "Autriche"), 'b': (24, "Jamaica"), 'c': (12, "France"), 'd': (84, "France")}) # Booléen
 ['d']
-==
-
-pltest3==
 ==
 
 cache==
