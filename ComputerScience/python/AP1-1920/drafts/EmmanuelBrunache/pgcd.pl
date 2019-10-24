@@ -6,7 +6,7 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 title = PGCD
 
 text == 
-Réaliser une fonction s'appelent "pgcd" qui prend deux nombres entiers strictement positifs et qui détermine le pgcd de ceux-ci.
+Réaliser une fonction s'appelant "pgcd" qui prend deux arguments entiers strictement positifs et qui détermine le pgcd de ceux-ci.
 
 {{pltest}}
 ==
@@ -20,5 +20,6 @@ pltest==
 9
 
 ==
+
 
 
