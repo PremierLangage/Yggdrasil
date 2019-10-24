@@ -11,6 +11,8 @@ Réaliser une fonction s'appelent "pgcd" qui prend deux nombres entiers strictem
 {{pltest}}
 ==
 
+taboo=import
+
 pltest==
 >>> pgcd(2,4)
 2
