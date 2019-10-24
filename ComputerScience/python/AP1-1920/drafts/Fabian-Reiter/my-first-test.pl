@@ -5,10 +5,15 @@ extends = ../../templates/pltest.pl
 
 title = Some title
 
-text = Bla bla
+text = La fonction carre() doit calculer le carré de son argument.
 
 pltest==
->>> h(0) == 1 
-True
+>>> carre(0) 
+0
+>>> carre(5)
+25
+>>> carre(4)
+16
 ==
+
 
