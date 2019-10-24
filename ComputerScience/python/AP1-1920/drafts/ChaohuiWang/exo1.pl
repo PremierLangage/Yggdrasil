@@ -1,29 +1,40 @@
-author=
-title= Test
-tag=variable
 
-extends=/ComputerScience/python/template/pltest.pl
-@ /utils/sandboxio.py
+# Boris Jabot 10/09/2019 OK
+# Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
+#author=
+title=Une fonction carre
 
+tag=function # N'oubliez pas de remplir ce champs svp
+extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
+@ /builder/before.py [builder.py]
+piste=verte
 text==
-
-Créer trois variables pim pam et pom contenant respectivement 1 2 et 3.
+## Une fonction carre ## 
+Ecrivez une fonction `carre` qui retourne le carré de son paramêtre
+==
+before==
+import random 
+p=random.randint(23,77)
+pltest1=""">>> carre({})\n{}\n""".format(p, p**2)
+p+=17
+pltest2=""">>> carre({})=={}# Hidden value test\nTrue\n""".format(p, p**2)
 
 ==
 
-code==
-pim,pam,pom=0,0,0
-==
 
-# comme ca cela se passera bien
 pltest==
->>> pim # Pim vaut un
-1
->>> pam == pam  #
+>>> carre(510) == 260100 # le carre de 510
 True
->>> pam
-2
->>> pom
-3
+>>> carre(0)
+0
+>>> carre(10)
+100
+>>> 
 ==
 
+
+editor.code==
+def carre(n):
+    return n*6
+==
+editor.height=145
