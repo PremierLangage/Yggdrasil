@@ -1,18 +1,9 @@
 #author=OCE
 
 # Heritage d'un type d'exercice 
-extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
+extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title = Conception d'un jeu de rôle
-
-code==
-n= int(input("Entrez un nombre : "))
-
-
-
-print("avec(1)",??,"avec(2)",??)
-
-==
 
 text==  
 Dans cet exercice VOUS êtes un concepteur de jeu de rôle.<br>
@@ -40,11 +31,21 @@ Vous écrirez ensuite un programme qui fera les actions suivantes : <br>
 La fonction "combat" utilisera la fonction "rand...(1,6) pour simuler un lancer de dés <br>
 Le programme principal fera appel à la fonction "rand (1,20)" pour définir l'endurance et l'habilité des béligérants<br>
 
+{{pltest}}
 ==
-soluce==
+
+code==
+n= int(input("Entrez un nombre : "))
+
+
+
+print("avec(1)",??,"avec(2)",??)
 
 ==
-plsoluce==
+
+pltest==
+
+print("teste")
 
 ==
 
