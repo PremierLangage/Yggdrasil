@@ -25,7 +25,7 @@ accu = []
 pays = ['France', 'Etranger']
 dict_str = ''
 for i in range(100):
-    data = (randint(10, 26), pays[randint(0, 1)])
+    data = (random.randint(10, 26), pays[random.randint(0, 1)])
     if data[0] >= 18 and data[1] == 'France':
         accu.append(str(i))
     if i > 0:
