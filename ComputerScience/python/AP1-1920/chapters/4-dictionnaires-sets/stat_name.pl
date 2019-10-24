@@ -11,7 +11,18 @@ La Finance Publique a alors besoin de savoir qui réside encore en France. Elle 
 
 On a converti cette base de donné sous forme de dictionnaire, avec le nombre de personne comme clé, et la valeur est une couple d'âge (un entier) et du pays de résidence (un string)
 
-Ecrire une fonction `liste_imposable` qui donne la liste des imposables.
+Ecrire une fonction `liste_imposable` qui donne la liste des imposables. On n'est pas imposable qu'à partir de 18 ans.
+
+Voici un exemple d'exécution :
+
+{{pltest}}
 ==
 
+pltest==
+>>> liste_imposable({'Abdul Kampfter': (14, "Autriche"),
+                     'Tiancheng Wu': (43, "France"),
+                     'Xavier Zagier': (12, "France"),
+                     'Jean-Marie Leroy': (53, "France")})
+['Tiancheng Wu', 'Jean-Marie Leroy']
+==
 
