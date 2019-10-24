@@ -1,5 +1,5 @@
 author=CW
-title= Initialisation d'une variable.
+title= Test
 tag=variable
 
 extends=/ComputerScience/python/template/pltest.pl
