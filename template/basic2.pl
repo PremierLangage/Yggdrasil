@@ -28,7 +28,7 @@ extrajs==
 <script>
     function onReadyPL(nodes) {
         const actions = nodes.actions;
-        {% if "save" in buttons %}
+        {% if "save" is in buttons %}
         actions.find('.action-save').hide();
         actions.find('.action-reset').hide();
         actions.find('.action-next').hide();
