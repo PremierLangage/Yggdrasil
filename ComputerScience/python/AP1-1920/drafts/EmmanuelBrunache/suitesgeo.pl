@@ -26,7 +26,8 @@ after=before
 taboo=import
 
 pltest==
-
+>>> suite(2,0,3,3)
+24
 ==
 
 
