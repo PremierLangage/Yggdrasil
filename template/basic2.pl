@@ -4,7 +4,7 @@
 
 title = Basic player
 
-buttons % ["submit"]
+buttons % ["submit","save","reroll"]
 
 before =
 
