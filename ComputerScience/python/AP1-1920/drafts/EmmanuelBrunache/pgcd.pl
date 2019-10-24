@@ -6,15 +6,15 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 title = PGCD
 
 text == 
-Réaliser une fonction s'appelent "produit" qui prend deux nombres et qui les multiplient
+Réaliser une fonction s'appelent "pgcd" qui prend deux nombres entiers strictement positifs et qui détermine le pgcd de ceux-ci.
 
 ==
 
 pltest==
->>> produit(2,4)
-8
->>> produit(0,4)
-0
+>>> pgcd(2,4)
+2
+>>> pgcd(18,27)
+9
 
 ==
 
