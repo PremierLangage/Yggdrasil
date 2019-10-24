@@ -34,15 +34,6 @@ Le programme principal fera appel à la fonction "rand (1,20)" pour définir l'e
 {{pltest}}
 ==
 
-code==
-n= int(input("Entrez un nombre : "))
-
-
-
-print("avec(1)",??,"avec(2)",??)
-
-==
-
 pltest==
 
 print("teste")
