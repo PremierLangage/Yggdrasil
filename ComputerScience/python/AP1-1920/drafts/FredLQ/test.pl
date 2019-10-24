@@ -9,14 +9,15 @@ title = premier exo
 taboo=returnp
 text == 
 Fonction **resteDeXpar3()** qui retourne le reste de la division de 7 par 3 ?
-{{pltest}}
+{{pltest2}}
 ==
-before ==
-import random
+
+before==
+from math import *
 def resteDeXpar3(x)
     return x%3
 x=random(10,20)
-pltest2=""">>> resteDeXpar3({})\n {}""".format(x,resteDeXpar3(x))
+pltest2=">>> resteDeXpar3("+str(x)+")\n"+str(f(x))+"\n"
 after=before
 ==
 
