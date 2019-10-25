@@ -43,9 +43,7 @@ if __name__ == "__main__":
     dic['attempt']=1
 
     if dic['maxattempt'] > 1:
-        text0 = """
-        {{attempt}} / {{maxattempt}}
-        """
+        text0 = "{{attempt}} / {{maxattempt}}"
         dic['text'] = text0 + dic['text']
 
     with open(output_json, "w+") as f:
