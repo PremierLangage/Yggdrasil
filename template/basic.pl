@@ -4,6 +4,8 @@
 
 title = Basic player
 
+maxattempt % 2
+
 before =
 
 text =
