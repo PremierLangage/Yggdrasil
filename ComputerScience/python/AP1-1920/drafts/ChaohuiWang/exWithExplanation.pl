@@ -17,7 +17,7 @@ text==
 Ecrivez une fonction `carre` qui retourne le carré de son paramêtre
 ==
 
-# the codes executed when creating the test
+# the codes executed when creating the test (before transferring to PL plateform)
 before==
 import random 
 p=random.randint(23,77)
