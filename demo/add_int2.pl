@@ -1,5 +1,7 @@
 extends = /template/basicinput.pl
 
+maxattempt % 3
+
 title = Addition
 
 before ==
@@ -21,4 +23,5 @@ try:
 except:
     grade=(-1,"Votre réponse n'est pas un nombre entier.")
 ==
+
 
