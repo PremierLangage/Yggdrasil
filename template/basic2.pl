@@ -4,7 +4,7 @@
 
 title = Basic player
 
-maxattempt = 2
+maxattempt % 2
 
 before =
 
