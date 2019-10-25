@@ -16,11 +16,15 @@ Ecrire une fonction `create` à deux paramètres qui retourne la liste composée
 pltest0==
 >>> create(2,"4")
 [2, '4']
+>>> create(3.14,"titi")
+[3.14, 'titi']
 ==
 
-editor.code==
+xeditor.code==
 
 def create(a,b):
     return [a, b]
     
 ==
+
+
