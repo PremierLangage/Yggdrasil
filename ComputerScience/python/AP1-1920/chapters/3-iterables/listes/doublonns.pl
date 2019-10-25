@@ -33,7 +33,7 @@ pltest0==
 [2, 1]
 ==
 
-editor.code==
+Xeditor.code==
 def retiredoublons(l):
     l2=[]
     for x in l:
