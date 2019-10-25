@@ -19,9 +19,9 @@ text==
 
 Ecrire une fonction `saisie_entier_str_positif` que force la saisie d'un entier strictement positif et le renvoie<br>
 Ecrire une fonction `affiche_table` qui : <br> 
-* prend en paramètre deux entiers : <br>
-    + un entier x <br>
-    + un entier strictement positif n <br>
+* prend en paramètre deux entiers strictement positif: <br>
+    + un entier x  <br>
+    + un entier n <br>
 *imprime les n premiers multiples de x.
 
 Pour finir écrivez un programme : <br>
