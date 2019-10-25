@@ -34,7 +34,7 @@ pltest2=""">>> carre({})=={}# Hidden value test\nTrue\n""".format(p, p**2)
 
 ==
 
-# the codes of the representatvie tests executed after the client answers the question (transferred from the client's machine)
+# the codes of the representatvie tests executed after the client answers the question (transferred from the client's machine), so as to check their codes
 pltest==
 >>> carre(510) == 260100 # le carre de 510
 True
