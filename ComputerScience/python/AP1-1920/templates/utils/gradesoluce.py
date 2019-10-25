@@ -89,11 +89,11 @@ def unitTestWithOutput(testname, studentfilename, outputstr, input_str, feedback
         return True
     r = oc.output_difference(doctest.Example(" le test", outputstr), xo,0)
     if r.startswith("Expected:") and "Got:" in r :
-            want,got = r.split("Got:")
-            want= want[9:]
+        want,got = r.split("Got:")
+        want= want[9:]
     else:
-            want=r
-            got=""
+        want=r
+        got=""
     feedback.addTestFailure(testname,got,want)
     return False
 
