@@ -34,8 +34,12 @@ if __name__ == "__main__":
         print(("Player 'before' need a script declared in the key 'before'."),file = sys.stderr)
         sys.exit(1)
 
+    if 'buttons' not in dic:
+        dic['buttons'] = ["submit","save","reroll"]
+
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
-    
+
     sys.exit(0)
+
 
