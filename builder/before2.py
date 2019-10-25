@@ -47,9 +47,8 @@ if __name__ == "__main__":
         <button type="button" class="btn btn-primary">
         Profile <span class="badge badge-light"> {{attempt}} / {{maxattempt}} </span>
         <span class="sr-only"> Tentatives </span>
-        </button>
-        Tentative :  <br>
-        ""
+        </button><br>
+        """
         dic['text'] = text0 + dic['text']
 
     with open(output_json, "w+") as f:
