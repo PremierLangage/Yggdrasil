@@ -45,7 +45,7 @@ True
 >>> 
 ==
 
-# the codes provided in the PL test instance and the client can use it directly (shown in the client's webpage if using "editor.code")
+# the codes provided in the PL test instance and the client can use/modify it directly (shown in the client's webpage if using "editor.code")
 editor.code==
 def carre(n):
     return n*6
