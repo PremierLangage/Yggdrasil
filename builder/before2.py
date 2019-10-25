@@ -44,8 +44,7 @@ if __name__ == "__main__":
 
     if dic['maxattempt'] > 1:
         text0 = """
-        <span> {{attempt}} / {{maxattempt}} </span>
-        <br>
+        {{attempt}} / {{maxattempt}}
         """
         dic['text'] = text0 + dic['text']
 
