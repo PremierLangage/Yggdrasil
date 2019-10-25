@@ -4,7 +4,7 @@
 
 title = Basic player
 
-buttons % ["submit","save","reroll"]
+maxattempt = 2
 
 before =
 
@@ -56,4 +56,5 @@ extrajs==
     }
 </script>
 ==
+
 
