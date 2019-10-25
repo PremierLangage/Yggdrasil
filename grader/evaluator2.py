@@ -58,9 +58,15 @@ if __name__ == "__main__":
     if 'grade' not in dic:
         print(missing_grade_stderr, file=sys.stderr)
         sys.exit(1)
+
     score=dic['grade'][0]
     feedback=dic['grade'][1]
+
+    if dic['attempt']>dic['maxattempt']:
+        dic['buttons'] = ["reroll"]
+
     output(score, format_feedback(score,feedback), dic)
+
 
 
 
