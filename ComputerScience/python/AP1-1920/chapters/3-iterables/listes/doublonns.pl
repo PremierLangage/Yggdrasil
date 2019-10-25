@@ -23,10 +23,18 @@ taboo=extend
 pltest0==
 >>> retiredoublons([3, 1,2,2,1,3])
 [3, 1, 2]
+>>> retiredoublons([])
+[]
+>>> retiredoublons([1,1,1,1,1,1,1])
+[1]
+>>> retiredoublons([1,2,1,2,1,2,1])
+[1, 2]
+>>> retiredoublons([2,1,2,1,2,1])
+[2, 1]
 ==
 
-Xeditor.code==
-def retiredoublons(a,b):
+editor.code==
+def retiredoublons(l):
     l2=[]
     for x in l:
          if x not in l2:
@@ -39,7 +47,7 @@ tests %=
 {
     "correct" : {
         "response" : {
-            "answer" : "def fusion(a,b):\n    a.extend(b)\n    return a\n"
+            "answer" : "def retiredoublons(l):\n    l2=[]\n    for x in l:\n         if x not in l2:\n             l2.append(x)\n    return l2"
         },
         "grade" : 100,
         "seed":12
