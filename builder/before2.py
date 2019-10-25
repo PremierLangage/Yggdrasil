@@ -37,6 +37,10 @@ if __name__ == "__main__":
     if 'buttons' not in dic:
         dic['buttons'] = ["submit","reroll"]
 
+    if 'maxattempt' not in dic:
+        dic['maxattempt'] = 1
+
+
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
 
