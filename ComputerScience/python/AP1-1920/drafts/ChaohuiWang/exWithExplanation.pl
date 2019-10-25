@@ -3,7 +3,7 @@
 #author=
 
 
-# PL database/
+# PL database (or system)
 
 # the title shown in the PL
 title=Une fonction carre
