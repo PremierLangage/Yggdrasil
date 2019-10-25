@@ -44,7 +44,7 @@ plus d'autres ....
 
 
 pltest1==
->>> lapin(4) == 4 # verification de l'existance de la fonction lapin 
+>>> lapin(4) != None # verification de l'existance de la fonction lapin 
 True
 >>> lapin(4)
 4
@@ -104,6 +104,7 @@ pltest3=""">>> lapin({})\n{}""".format(n, lapin(n))
 
 
 ==
+
 
 
 
