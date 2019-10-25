@@ -69,7 +69,6 @@ if __name__ == "__main__":
         dic['buttons'] = ["reroll"]
 
     if dic['maxattempt'] > 1:
-        text0 = "Tentative : %d / %d <br>" % (dic['attempt'],dic['maxattempt'])
         dic['text'] = text0 + dic['text']
 
     output(score, format_feedback(score,feedback), dic)
