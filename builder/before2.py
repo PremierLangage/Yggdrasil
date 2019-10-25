@@ -40,6 +40,11 @@ if __name__ == "__main__":
     if 'maxattempt' not in dic:
         dic['maxattempt'] = 1
 
+    dic['attempt']=1
+
+    if dic['maxattempt'] > 1:
+        text0 = "Tentative : %d / %d <br>" % (dic['attempt'],dic['maxattempt'])
+        dic['text'] = text0 + dic['text']
 
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
