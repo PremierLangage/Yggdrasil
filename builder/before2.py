@@ -44,7 +44,7 @@ if __name__ == "__main__":
 
     if dic['maxattempt'] > 1:
         text0 = "<span class='badge badge-info'> Tentative <span class='badge badge-light'> {{attempt}} / {{maxattempt}} </span></span>"
-        dic['title'] = dic['title']+ " " + text0
+        dic['title'] = dic['title']+ "<br>" + text0
 
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
