@@ -22,7 +22,7 @@ pltest0==
 [1, 1, 2, 2]
 ==
 
-editor.code==
+Xeditor.code==
 def fusion(a,b):
     a.extend(b)
     return a
@@ -33,7 +33,7 @@ tests %=
 {
     "correct" : {
         "response" : {
-            "answer" : "def fusion(a,b):\n    a.extends(b)\n    return a\n"
+            "answer" : "def fusion(a,b):\n    a.extend(b)\n    return a\n"
         },
         "grade" : 100,
         "seed":12
