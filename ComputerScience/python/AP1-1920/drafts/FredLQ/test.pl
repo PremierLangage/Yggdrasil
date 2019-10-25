@@ -1,4 +1,3 @@
-
 author= Fred
 
 # comment
@@ -9,7 +8,7 @@ title = premier exo
 taboo=returnp
 text == 
 Fonction **resteDeXpar3()** qui retourne le reste de la division de 7 par 3 ?
-{{pltest2}}
+pltest2
 ==
 
 before==
@@ -32,9 +31,6 @@ pltest1==
 	>>> resteDeXpar3(4)
 	1
 
-==
-pltest3==
-	print("tot")
 ==
 
 
