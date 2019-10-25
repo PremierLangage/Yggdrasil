@@ -31,7 +31,13 @@ tests %=
         "response" : {
             "answer" : "def create(a,b):\n    return [a, b]\n"
         },
-        "grade" : 100,
+        "grade" : 100
+    },
+     "Incorrect" : {
+        "response" : {
+            "answer" : "def creatA(a,b):\n    return [a, b]\n"
+        },
+        "grade" : 0
     }
 }
 ==
