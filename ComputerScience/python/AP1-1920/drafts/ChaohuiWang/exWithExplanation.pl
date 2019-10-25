@@ -25,13 +25,13 @@ Ecrivez une fonction `carre` qui retourne le carré de son paramêtre
 ==
 
 # the codes executed when creating the PL test instance (before transferring to the client's machine)
+# one can define supplemental pltests here
 before==
 import random 
 p=random.randint(23,77)
 pltest1=""">>> carre({})\n{}\n""".format(p, p**2)
 p+=17
 pltest2=""">>> carre({})=={}# Hidden value test\nTrue\n""".format(p, p**2)
-
 ==
 
 # the codes of the representatvie tests executed after the client answers the question (transferred from the client's machine), so as to check their codes
