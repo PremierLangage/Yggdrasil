@@ -35,7 +35,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     if 'buttons' not in dic:
-        dic['buttons'] = ["submit","save","reroll"]
+        dic['buttons'] = ["submit","reroll"]
 
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
