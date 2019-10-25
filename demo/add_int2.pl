@@ -1,7 +1,5 @@
 extends = /template/basicinput.pl
 
-maxattempt % 3
-
 title = Addition
 
 before ==
