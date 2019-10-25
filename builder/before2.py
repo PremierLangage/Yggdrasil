@@ -43,7 +43,7 @@ if __name__ == "__main__":
     dic['attempt']=1
 
     if dic['maxattempt'] > 1:
-        text0 = "<span class='badge badge-light'> {{attempt}} / {{maxattempt}} </span><br>"
+        text0 = "<button type="button" class="btn btn-primary">Profile <span class="badge badge-light"> {{attempt}} / {{maxattempt}} </span> <span class="sr-only"> Tentatives </span></button>"
         dic['text'] = text0 + dic['text']
 
     with open(output_json, "w+") as f:
