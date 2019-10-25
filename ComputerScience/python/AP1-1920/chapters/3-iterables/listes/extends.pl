@@ -15,15 +15,17 @@ Ecrire une fonction `fusion` à deux paramètres (des listes)  qui retourne la l
 [1, 1, 2, 2]
 ==
 
-taboo=extends
+taboo=extend
 
 pltest0==
 >>> fusion([1,1],[2,2])
 [1, 1, 2, 2]
 ==
 
-xeditor.code==
-
+editor.code==
+def fusion(a,b):
+    a.extend(b)
+    return a
 
 ==
 
