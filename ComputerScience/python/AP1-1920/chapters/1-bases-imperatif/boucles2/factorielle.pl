@@ -17,6 +17,7 @@ Pour `n = 5`, le programme devra par exemple afficher:
 2! = 2
 3! = 6
 4! = 24
+5! = 120
 </code></pre>
 
 ___
@@ -57,4 +58,5 @@ del math
 # for i in range(n+1):
 #    print(str(i) + "!" + " = " + str(f))
 #    f*=i+1
+
 
