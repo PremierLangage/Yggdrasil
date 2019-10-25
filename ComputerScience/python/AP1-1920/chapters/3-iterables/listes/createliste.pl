@@ -29,12 +29,10 @@ tests %=
 {
     "correct" : {
         "response" : {
-            "answer" : """def create(a,b):
-    return [a, b]
-    """
+            "answer" : """def create(a,b):\nreturn [a, b]\n"""
         },
         "grade" : 100,
         "feedback" : "Bonne réponse\n"
-    },
+    }
 }
 ==
