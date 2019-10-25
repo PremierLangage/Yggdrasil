@@ -22,9 +22,18 @@ pltest0==
 
 xeditor.code==
 
-def create(a,b):
-    return [a, b]
-    
+
 ==
 
-
+tests %=
+{
+    "correct" : {
+        "response" : {
+            "answer" : """def create(a,b):
+    return [a, b]
+    """
+        },
+        "grade" : 100,
+        "feedback" : "Bonne réponse\n"
+    },
+}
