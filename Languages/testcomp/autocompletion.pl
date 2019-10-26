@@ -190,7 +190,7 @@ function autocomplete(inp, arr) {
 }
 
 /*An array containing all the country names in the world:*/
-var countries = ['France', 'Allemagne', 'Danemark', 'Belgique', 'Hongrie', 'Pays-Bas', 'Portugal', 'Slovaquie', 'Espagne', 'Irlande', 'Danemark'];
+var countries = ['France', 'Allemagne', 'Danemark', 'Belgique', 'Hongrie', 'Pays-Bas', 'Portugal', 'Slovaquie', 'Espagne', 'Irlande', 'Danemark', 'Norvège', 'Suède', 'Grèce'];
 countries.sort();
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
