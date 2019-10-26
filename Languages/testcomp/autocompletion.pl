@@ -76,10 +76,11 @@ with open('data.csv',newline='') as file:
 item=rd.choice(rows)
 capital=item['capital']
 country=item['country']
-choices=[item['country'] for item in rows]
+choices=sort([item['country'] for item in rows])
 ==
 
 text ==
+{{choices}}
 Quel pays a pour capitale {{capital}} ?
 ==
 
