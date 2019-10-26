@@ -80,7 +80,6 @@ choices=[item['country'] for item in rows]
 ==
 
 text ==
-{{choices}}
 Quel pays a pour capitale {{capital}} ?
 ==
 
