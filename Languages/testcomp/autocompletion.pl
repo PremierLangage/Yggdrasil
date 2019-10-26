@@ -189,6 +189,7 @@ function autocomplete(inp, arr) {
 }
 
 /*An array containing all the country names in the world:*/
+/* var countries = {{choices}} */
 var countries = ['France', 'Allemagne', 'Danemark', 'Belgique', 'Hongrie', 'Pays-Bas', 'Portugal', 'Slovaquie', 'Espagne', 'Irlande', 'Danemark', 'Norvège', 'Suède', 'Grèce'];
 countries.sort();
 
