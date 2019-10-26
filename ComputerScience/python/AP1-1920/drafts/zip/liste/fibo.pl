@@ -12,7 +12,7 @@ text==
 
 On appelle "entier de Gauss" un nombre complexe $%z=a+\mathrm{i}b , a,b \in \mathbb{R} %$
 
-Ecrire une fonction *nb_carre_Gauss(r)* qui recoit un nombre réel r et.renvoie la liste  des entiers de Gauss (de module inférieur à $%r%$) 
+Ecrire une fonction *carres_Gauss(r)* qui recoit un nombre réel r et.renvoie la liste  des entiers de Gauss (de module inférieur à $%r%$) 
 dont le carré est également un entier de Gauss de module inférieur à $%r%$. La liste est une liste de couples
  >>>carre_Gauss(2)
 [(-2, 0), (-1, -1), (-1, 0), (-1, 1), (0, -2), (0, -1), (0, 0), (0, 1), (0, 2), (1, -1), (1, 0), (1, 1), (2, 0)]
@@ -22,14 +22,7 @@ before==
 def carre_complexe(x,y):
     return x*x+y*y,2*x*y
 
-def nb_carre_Gauss(r):
-    if r<0:
-        return 0
-    if r==0:
-        return 1
-    mod=int(r**2)
-
-def nb_carre_Gauss(r):
+def carres_Gauss(r):
     if r<0:
         return 0
     if r==0:
@@ -44,9 +37,9 @@ def nb_carre_Gauss(r):
     return l
 import random
 
-n=random.randint(4,12)
-
-pltest3=""">>> nb_carre_Gauss({})\n'{}'""".format(n, nb_carre_Gauss(n))
+n=random.randint(41,120)
+n=n+0.2
+pltest3=""">>> carres_Gauss({})\n'{}'""".format(n,carres_Gauss(n))
 
 after=before
 ==
@@ -54,18 +47,19 @@ after=before
 
 
 pltest0==
->>> nb_carre_Gauss(1.1)==
+>>> carres_Gauss(1.1)==[(-1, 0), (0, -1), (0, 0), (0, 1), (1, 0)]
 True
 ==
 pltest1==
 #negatif
->>> coefficients_binome(-9)
-'non défini'
+>>> carres_Gauss(-9)
+[]
 ==
 
 pltest2==
->>> coefficients_binome(5)
-'1 5 10 10 5 1'
+>>> coefficients_binome(15)
+[(-3, -1), (-3, 0), (-3, 1), (-2, -2), (-2, -1), (-2, 0), (-2, 1), (-2, 2), (-1, -3), (-1, -2), (-1, -1), (-1, 0), (-1, 1), (-1, 2), (-1, 3), (0, -3), (0, -2), (0, -1), (0, 0), (0, 1), (0, 2), (0, 3), (1, -3), (1, -2), (1, -1), (1, 0), (1, 1), (1, 2), (1, 3), (2, -2), (2, -1), (2, 0), (2, 1), (2, 2), (3, -1), (3, 0), (3, 1)]
+
 ==
 
 
