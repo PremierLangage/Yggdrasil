@@ -66,6 +66,10 @@ form ==
   </div>
 ==
 
+text ==
+Quel pays a pour capitale
+==
+
 extrajs==
 <script>
 function autocomplete(inp, arr) {
