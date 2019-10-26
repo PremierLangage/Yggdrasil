@@ -35,6 +35,7 @@ def carres_Gauss(r):
             if x*x + y*y <= r*r:
                l.append((a,b))
     return l
+
 import random
 
 n=random.randint(11,21)
