@@ -76,7 +76,7 @@ with open('data.csv',newline='') as file:
 item=rd.choice(rows)
 capital=item['capital']
 country=item['country']
-choices=sort([item['country'] for item in rows])
+choices=[item['country'] for item in rows]
 ==
 
 text ==
