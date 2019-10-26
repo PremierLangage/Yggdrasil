@@ -37,7 +37,7 @@ def carres_Gauss(r):
     return l
 import random
 
-n=random.randint(41,52)
+n=random.randint(11,21)
 n=n+0.2
 pltest3=""">>> carres_Gauss({})\n'{}'""".format(n,carres_Gauss(n))
 
