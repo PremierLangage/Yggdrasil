@@ -18,7 +18,7 @@ dont le carré est également un entier de Gauss de module inférieur à $%r%$. 
 [(-2, 0), (-1, -1), (-1, 0), (-1, 1), (0, -2), (0, -1), (0, 0), (0, 1), (0, 2), (1, -1), (1, 0), (1, 1), (2, 0)]<br>
 <*la liste est ordonnée lexicographiquement*
 ==
-Xbefore==
+before==
 def carre_complexe(x,y):
     return x*x+y*y,2*x*y
 
