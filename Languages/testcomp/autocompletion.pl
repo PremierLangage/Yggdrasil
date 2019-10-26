@@ -66,14 +66,26 @@ input[type=text] {
 </style>
 ==
 
-form ==
-  <div class="autocomplete" style="width:300px;">
-    <input id="myInput" type="text" name="myCountry" >
-  </div>
+before ==
+import sys
+import random as rd
+import csv
+essai=1
+if "row" not in globals():
+    with open('data.csv','r') as file:
+        row=rd.choice(list(csv.reader(file,delimiter=',')))
+print(row,file=sys.stderr)
+country,article,capital=row
 ==
 
 text ==
 Quel pays a pour capitale {{capital}} ?
+==
+
+form ==
+  <div class="autocomplete" style="width:300px;">
+    <input id="myInput" type="text" name="myCountry" >
+  </div>
 ==
 
 extrajs==
