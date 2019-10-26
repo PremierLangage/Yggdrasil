@@ -1,3 +1,4 @@
+extends = basic.pl
 
 extracss==
 <style>
