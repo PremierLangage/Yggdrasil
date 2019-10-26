@@ -73,7 +73,10 @@ import csv
 with open('data.csv',newline='') as file:
     rows=list(csv.DictReader(file,delimiter=','))
 
-items=rd.sample(rows,nitems)
+item=rd.choice(rows)
+capital=item['capital']
+country=item['country']
+choices=[item['country'] for item in rows]
 ==
 
 text ==
