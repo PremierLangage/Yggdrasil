@@ -10,13 +10,13 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 title =Entiers de Gauss
 text==  
 
-On appelle "entier de Gauss" un nombre complexe $%z=a+\mathrm{i}b , a,b \in \mathbb{R} %$
+On appelle "entier de Gauss" un nombre complexe $%z=a+\mathrm{i}b , a,b \in \mathbb{Z} %$
 
 Ecrire une fonction *carres_Gauss(r)* qui recoit un nombre réel r et.renvoie la liste  des entiers de Gauss (de module inférieur à $%r%$) 
 dont le carré est également un entier de Gauss de module inférieur à $%r%$. La liste est une liste de couples
- >>>carre_Gauss(2)
-[(-2, 0), (-1, -1), (-1, 0), (-1, 1), (0, -2), (0, -1), (0, 0), (0, 1), (0, 2), (1, -1), (1, 0), (1, 1), (2, 0)]
-*la liste est ordonnée lexicographiquement*
+  >>>carre_Gauss(2)<br>
+[(-2, 0), (-1, -1), (-1, 0), (-1, 1), (0, -2), (0, -1), (0, 0), (0, 1), (0, 2), (1, -1), (1, 0), (1, 1), (2, 0)]<br>
+<*la liste est ordonnée lexicographiquement*
 ==
 before==
 def carre_complexe(x,y):
@@ -37,7 +37,7 @@ def carres_Gauss(r):
     return l
 import random
 
-n=random.randint(41,120)
+n=random.randint(41,52)
 n=n+0.2
 pltest3=""">>> carres_Gauss({})\n'{}'""".format(n,carres_Gauss(n))
 
