@@ -52,7 +52,6 @@ pltest0==
 True
 ==
 pltest1==
-negatif
 >>> disque_Gauss(-9)
 []
 ==
