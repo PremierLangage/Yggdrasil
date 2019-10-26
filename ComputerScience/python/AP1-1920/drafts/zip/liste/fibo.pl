@@ -54,7 +54,7 @@ after=before
 
 
 pltest0==
->>> factoriel(3)==6 and combinaison(3,2)==3 and coefficients_binome(2)=="1 2 1"
+>>> nb_carre_Gauss(1.1)==
 True
 ==
 pltest1==
