@@ -67,15 +67,13 @@ input[type=text] {
 ==
 
 before ==
-import sys
 import random as rd
 import csv
-essai=1
-if "row" not in globals():
-    with open('data.csv','r') as file:
-        row=rd.choice(list(csv.reader(file,delimiter=',')))
-print(row,file=sys.stderr)
-country,article,capital=row
+
+with open('data.csv',newline='') as file:
+    rows=list(csv.DictReader(file,delimiter=','))
+
+items=rd.sample(rows,nitems)
 ==
 
 text ==
