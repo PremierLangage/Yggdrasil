@@ -24,9 +24,9 @@ def carre_complexe(x,y):
 
 def carres_Gauss(r):
     if r<0:
-        return 0
+        return []
     if r==0:
-        return 1
+        return [(0,0)]
     mod=int(r**2)
     l=[]
     for a in range(-mod,mod+1):
