@@ -1,4 +1,4 @@
-extends = basic.pl
+extends = /template/basic.pl
 
 extracss==
 <style>
