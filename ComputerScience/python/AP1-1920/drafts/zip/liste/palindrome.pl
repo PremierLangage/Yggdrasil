@@ -61,7 +61,7 @@ pltest0==
 True
 ==
 pltest1==
->>> est_palindrome([10,'koko",1])
+>>> est_palindrome([10,"koko",1])
 False
 ==
 pltest2==
