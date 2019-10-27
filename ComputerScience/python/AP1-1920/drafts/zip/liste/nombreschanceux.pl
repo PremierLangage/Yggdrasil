@@ -56,11 +56,12 @@ def supprime(l,pas):
     return enleve
 
 def chanceux(max):
+    if max<2:
+        return []
     l=[x for x in range(1,max,2)]
     enleve=True
     niem_chanceux=2
     elimine= trouve_non_nul(l,niem_chanceux)
-    print(l[elimine])
     while elimine!=None and enleve:
         enleve=supprime(l,l[elimine])
         niem_chanceux+=1
@@ -79,16 +80,16 @@ after=before
 
 
 pltest0==
->>> chanceux(2)==[0, 1][1,3,7,9]
+>>> chanceux(10)==[1,3,7,9]
 True
 ==
 pltest1==
->>> fibo(-9)
+>>> chanceux(-9)
 []
 ==
 pltest2==
->>> fibo(11)
-[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+>>> chanceux(26)
+[1, 3, 7, 9, 13, 15, 21, 25]
 ==
 
 
