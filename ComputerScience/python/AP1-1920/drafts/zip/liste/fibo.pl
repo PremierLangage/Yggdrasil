@@ -14,7 +14,7 @@ On appelle "Suite de Fibonacci" la suite d'entier définie par <br>
 %$f_0=0%$<br>
 %$f_1=1%$<br>
 %$f_{n+2}=f_{n+1}+f_{n}%$<br>
-Ecrire une fonction *fibo)* qui recoit un nombre entier $%n%$ et.renvoie la liste  des 
+Ecrire une fonction *fibo(n)* qui recoit un nombre entier $%n%$ et renvoie la liste  des 
 $%n%$ premiers nombres de la suite (de $%f_0%$ jusqu'à $%f_{n-1}%$)<br>
      >>>fibo(2)<br>
     [0,1]<br>
