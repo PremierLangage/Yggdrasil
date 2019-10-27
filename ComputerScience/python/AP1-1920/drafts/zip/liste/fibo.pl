@@ -39,7 +39,7 @@ import random
 
 n=random.randint(11,51)
 
-pltest3=""">>> fibo({})\n'{}'""".format(n,fibo(n))
+pltest3=""">>> fibo({})\n{}""".format(n,fibo(n))
 
 after=before
 ==
