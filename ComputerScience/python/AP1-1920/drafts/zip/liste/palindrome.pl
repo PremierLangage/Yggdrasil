@@ -53,7 +53,6 @@ pltest3=""">>> est_palindrome({})\n{}""".format(pal,est_palindrome(pal))
 tmp=pal
 devient_palindrome(tmp)
 pltest4=""">>> devient_palindrome({})\n{}""".format(pal,tmp)
-
 after=before
 ==
 
