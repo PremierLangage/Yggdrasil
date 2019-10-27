@@ -65,6 +65,7 @@ pltest1==
 False
 ==
 pltest2==
+>>> devient_palindrome([1,2,"palindrome"])
 [1,2,"palindrome","palindrome",2,1]
 ==
 
