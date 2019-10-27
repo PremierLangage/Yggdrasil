@@ -61,8 +61,8 @@ pltest0==
 True
 ==
 pltest1==
-est_palindrome([10,'koko",1])
->>> False
+>>> est_palindrome([10,'koko",1])
+False
 ==
 pltest2==
 >>> devient_palindrome([1,2,"palindrome"]
