@@ -24,8 +24,9 @@ en ajoutant en fin de liste ses propres éléments en ordre inverse.<br>
     >>>> devient_palindrome(l)<br>
     >>> print(l)<br>
     [12,43,34,21,21,34,43,12]<br>
-remarque : pour parfaire votre entrainement, l'usage des méthodes existantes `reverse` et `extends` est interdit!
+remarque : pour parfaire votre entrainement, l'usage des méthodes existantes `reverse` et `extend` est interdit!
 ==
+taboo=reverse,extend
 before==
 def est_palindrome(lst):
     for i in range(len(lst)//2):
