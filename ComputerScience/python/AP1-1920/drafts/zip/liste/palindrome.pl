@@ -38,7 +38,7 @@ def devient_palindrome(lst):
 
 import random
 lst=[1,"to",42,[12,21],"bla",10,17]
-lg=random.randint(2,15)
+lg=random.randint(0,15)
 pal=[]
 for i in range(lg):
     n=random.randint(0,6)
@@ -56,15 +56,15 @@ after=before
 
 
 pltest0==
->>> chanceux(10)==[1,3,7,9]
+>>> est_palindrome([10,54,10])==True
 True
 ==
 pltest1==
->>> chanceux(-9)
-[]
+est_palindrome([10,'koko",1])
+>>> False
 ==
 pltest2==
->>> chanceux(26)
-[1, 3, 7, 9, 13, 15, 21, 25]
+>>> devient_palindrome([1,2,"palindrome"]
+[1,2,"palindrome","palindrome",2,1]
 ==
 
