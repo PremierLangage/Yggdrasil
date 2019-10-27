@@ -27,6 +27,7 @@ en ajoutant en fin de liste ses propres éléments en ordre inverse.<br>
 remarque : pour parfaire votre entrainement, l'usage des méthodes existantes `reverse` et `extend` est interdit!
 ==
 taboo=reverse,extend
+
 before==
 def est_palindrome(lst):
     for i in range(len(lst)//2):
@@ -53,6 +54,7 @@ pltest3=""">>> est_palindrome({})\n{}""".format(pal,est_palindrome(pal))
 tmp=pal
 devient_palindrome(tmp)
 pltest4=""">>> devient_palindrome({})\n{}""".format(pal,tmp)
+
 after=before
 ==
 
