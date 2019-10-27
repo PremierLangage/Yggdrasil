@@ -8,7 +8,7 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
 
 title =Nombres chanceux
-xtext==  
+text==  
 On appelle "Nombres chanceux" les nombres restant après l'application d'un crible 
 sur la suite des entiers impairs strictement positifs.<br>
 Contrairement à celui d'Eratostène, ce crible ne prend en compte 
@@ -28,24 +28,50 @@ on considère maintenant le quatrième nombre non rayé :9. <br>
  La liste est inchangé, on a trouvé tous 
  les nombres chanceux strictement inférieurs à $%26%$,<br>
 [1,3,7,9,13,15,21,25]
- ==
+==
 before==
-def fibo(n):
-    if n<=0:
-        return []
-    if n==1:    
-        return [0]
-    if n==2:
-        return [0,1]
-    l=[0,1]
-    for i in range(2,n):
-        l.append(l[i-1]+l[i-2])
+def trouve_non_nul(l,n):
+    """ trouve le nieme nombre non nul de l,
+    renvoie son indice
+    renvoie None si un tel nombre n'est pas trouvé
+    """
+    compte=0
+    for i in range(len(l)):
+        if l[i]!=0:
+            compte+=1
+            if compte==n:
+                return i
+    return None
+
+def supprime(l,pas):
+    enleve=False
+    compte=0
+    for i in range(len(l)):
+       if l[i]!=0:
+            compte+=1
+            if compte==pas:
+                l[i]=0
+                compte=0
+                enleve=True
+    return enleve
+
+def chanceux(max):
+    l=[x for x in range(1,max,2)]
+    enleve=True
+    niem_chanceux=2
+    elimine= trouve_non_nul(l,niem_chanceux)
+    print(l[elimine])
+    while elimine!=None and enleve:
+        enleve=supprime(l,l[elimine])
+        niem_chanceux+=1
+        elimine=trouve_non_nul(l,niem_chanceux)
+    l=[x for x in l if x!=0]
     return l
 import random
 
-n=random.randint(11,51)
+n=random.randint(204,501)
 
-pltest3=""">>> fibo({})\n{}""".format(n,fibo(n))
+pltest3=""">>> chanceux({})\n{}""".format(n,chanceux(n))
 
 after=before
 ==
@@ -53,7 +79,7 @@ after=before
 
 
 pltest0==
->>> fibo(2)==[0, 1]
+>>> chanceux(2)==[0, 1][1,3,7,9]
 True
 ==
 pltest1==
