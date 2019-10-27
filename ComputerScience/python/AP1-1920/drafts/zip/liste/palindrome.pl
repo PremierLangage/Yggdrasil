@@ -11,19 +11,19 @@ title =liste palindrome
 text==  
 On appelle "palindrome" un mot qui reste identique qu'on le lise de gauche à droite ou de droite à gauche, comme "eve"
 ou "laval".<br>
-Appiqué aux listes, un liste palindrome est une liste qui reste identique
- qu'elle soit parcourue par indices croissants ou par ar indices décroissants, comme ["un",4,['\',1],4,"un"].<br>
- Ecrire une fonction 'est_palindrome(lst)' qui reçoit une liste lst et renvoie True si lst est une liste palindrome, et False sinon.
- Ecrire une fonction 'devient_palindrome(lst)' qui reçoit une liste lst et la transforme en liste palindrome
-en ajoutant en fin de liste ses propres éléments en ordre inverse.
-    >>> est_palindrome([1,2,3,2,1])
-    True
-    >>> est_palindrome([12,43,34,21])
-    False
-    >>> l=[12,43,34,21]
-    >>>> devient_palindrome(l)
-    >>> print(l)
-    [12,43,34,21,21,34,43,12]
+Appiqué aux listes, une liste palindrome est une liste qui reste identique
+ qu'elle soit parcourue par indices croissants ou par indices décroissants, comme ["un",4,['\',1],4,"un"].<br>
+ Ecrire une fonction `est_palindrome(lst)` qui reçoit une liste lst et renvoie True si lst est une liste palindrome, et False sinon.<br>
+ Ecrire une fonction `devient_palindrome(lst)` qui reçoit une liste lst et la transforme en liste palindrome
+en ajoutant en fin de liste ses propres éléments en ordre inverse.<br>
+    >>> est_palindrome([1,2,3,2,1])<br>
+    True<br>
+    >>> est_palindrome([12,43,34,21])<br>
+    False<br>
+    >>> l=[12,43,34,21]<br>
+    >>>> devient_palindrome(l)<br>
+    >>> print(l)<br>
+    [12,43,34,21,21,34,43,12]<br>
 remarque : pour parfaire votre entrainement, l'usage des méthodes existantes 'reverse' et 'extends' est interdit!
 ==
 Xbefore==
