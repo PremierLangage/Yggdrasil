@@ -7,16 +7,21 @@
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
 
-title =Entiers de Gauss
+title =Suite de Fibonacci
 text==  
 
-On appelle "entier de Gauss" un nombre complexe $%z=a+\mathrm{i}b , a,b \in \mathbb{Z} %$
-
-Ecrire une fonction *disque_Gauss(r)* qui recoit un nombre réel r et.renvoie la liste  des entiers de Gauss (de module inférieur à $%r%$) 
-dont le carré est également un entier de Gauss de module inférieur à $%r%$. La liste est une liste de couples
-  >>>disque_Gauss(2)<br>
-[(-2, 0), (-1, -1), (-1, 0), (-1, 1), (0, -2), (0, -1), (0, 0), (0, 1), (0, 2), (1, -1), (1, 0), (1, 1), (2, 0)]<br>
-<*la liste est ordonnée lexicographiquement*
+On appelle "Suite de Fibonacci" la suite d'entier définie par <br>
+%$f_0=0%$<br>
+%$f_1=1%$<br>
+%$f_{n+2}=f_{n+1}+f_{n}%$<br>
+Ecrire une fonction *fibo)* qui recoit un nombre entier $%n%$ et.renvoie la liste  des 
+nombres de la suite jusqu'à l'indice $%n%$
+  >>>fibo(2)<br>
+[0,1]<br>
+>>>fibo(5)<br>
+[0,1,1,2,5]<br>
+>>>fibo(-2)<br>
+[]<br>
 ==
 before==
 def carre_complexe(x,y):
@@ -63,6 +68,7 @@ pltest3==
 >>> disque_Gauss(15)
 [(-3, -1), (-3, 0), (-3, 1), (-2, -2), (-2, -1), (-2, 0), (-2, 1), (-2, 2), (-1, -3), (-1, -2), (-1, -1), (-1, 0), (-1, 1), (-1, 2), (-1, 3), (0, -3), (0, -2), (0, -1), (0, 0), (0, 1), (0, 2), (0, 3), (1, -3), (1, -2), (1, -1), (1, 0), (1, 1), (1, 2), (1, 3), (2, -2), (2, -1), (2, 0), (2, 1), (2, 2), (3, -1), (3, 0), (3, 1)]
 ==
+
 
 
 
