@@ -8,7 +8,7 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
 
 title =Nombres chanceux
-text==  
+xtext==  
 On appelle "Nombres chanceux" les nombres restant après l'application d'un crible 
 sur la suite des entiers impairs strictement positifs.<br>
 Contrairement à celui d'Eratostène, ce crible ne prend en compte 
