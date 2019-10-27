@@ -24,52 +24,31 @@ en ajoutant en fin de liste ses propres éléments en ordre inverse.<br>
     >>>> devient_palindrome(l)<br>
     >>> print(l)<br>
     [12,43,34,21,21,34,43,12]<br>
-remarque : pour parfaire votre entrainement, l'usage des méthodes existantes 'reverse' et 'extends' est interdit!
+remarque : pour parfaire votre entrainement, l'usage des méthodes existantes `reverse` et `extends` est interdit!
 ==
-Xbefore==
-def trouve_non_nul(l,n):
-    """ trouve le nieme nombre non nul de l,
-    renvoie son indice
-    renvoie None si un tel nombre n'est pas trouvé
-    """
-    compte=0
-    for i in range(len(l)):
-        if l[i]!=0:
-            compte+=1
-            if compte==n:
-                return i
-    return None
+before==
+def est_palindrome(lst):
+    for i in range(len(lst)//2):
+        if lst[i]!= lst[len(lst)-i-1]:
+            return False
+    return True
+def devient_palindrome(lst):
+    for i in range(len(lst)-1,-1,-1):
+       lst.append(lst[i])
 
-def supprime(l,pas):
-    enleve=False
-    compte=0
-    for i in range(len(l)):
-       if l[i]!=0:
-            compte+=1
-            if compte==pas:
-                l[i]=0
-                compte=0
-                enleve=True
-    return enleve
-
-def chanceux(max):
-    if max<2:
-        return []
-    l=[x for x in range(1,max,2)]
-    enleve=True
-    niem_chanceux=2
-    elimine= trouve_non_nul(l,niem_chanceux)
-    while elimine!=None and enleve:
-        enleve=supprime(l,l[elimine])
-        niem_chanceux+=1
-        elimine=trouve_non_nul(l,niem_chanceux)
-    l=[x for x in l if x!=0]
-    return l
 import random
+lst=[1,"to",42,[12,21],"bla",10,17]
+lg=random.randint(2,15)
+pal=[]
+for i in range(lg):
+    n=random.randint(0,6)
+    pal.append(lst[n])
 
-n=random.randint(204,501)
+choix=random.randint(0,1)
+if choix==0:
+    devient_palindrome(pal)
 
-pltest3=""">>> chanceux({})\n{}""".format(n,chanceux(n))
+pltest3=""">>> est_palindrome({})\n{}""".format(pal,est_palindrome(pal))
 
 after=before
 ==
