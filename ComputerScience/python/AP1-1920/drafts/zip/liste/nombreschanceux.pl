@@ -28,6 +28,7 @@ on considère maintenant le quatrième nombre non rayé :9. <br>
  La liste est inchangé, on a trouvé tous 
  les nombres chanceux strictement inférieurs à $%26%$,<br>
 [1,3,7,9,13,15,21,25]
+'Remarque' : ne pas confondre avec les "nombres chanceus d'Euler" qui traitent de nombres premiers
 ==
 before==
 def trouve_non_nul(l,n):
@@ -91,6 +92,7 @@ pltest2==
 >>> chanceux(26)
 [1, 3, 7, 9, 13, 15, 21, 25]
 ==
+
 
 
 
