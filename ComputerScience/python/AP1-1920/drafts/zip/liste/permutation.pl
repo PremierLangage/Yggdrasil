@@ -43,4 +43,3 @@ taille=random.randint(1,20)
 l=genere_permut(taille)
 exposant=random.randint(1,10)
 
-pltest3=""">>> puiss_fonc({},{})\n{}""".format(l,exposant,puiss_fonc(l,exposant,l))
