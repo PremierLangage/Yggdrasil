@@ -4,7 +4,7 @@ author= Fred
 
 # comment
 extends=../../templates/pltest.pl
-builder= @/builder/before.py
+@ /builder/before.py [builder.py]
 
 title = premier exo
 taboo=returnp
@@ -16,7 +16,7 @@ Fonction **resteDeXpar3()** qui retourne le reste de la division de X par 3 ?
 before==
 from math import *
 
-def resteDeXpar3(n)
+def resteDeXpar3(n):
     return n%3
 
 x=random(10,20)
@@ -47,6 +47,7 @@ pltest3==
 >>> resteDeXpar3(4765)
 1
 ==
+
 
 
 
