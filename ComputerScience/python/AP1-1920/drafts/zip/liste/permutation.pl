@@ -14,5 +14,33 @@ la puissance fonctionnelle est :<br>
 $%{\displaystyle \forall n\in \mathbb {N} ^{*}\quad p^{n}=\underbrace {p\circ \ldots \circ p} _{n\ \mathrm {fois} }}%$
 <br>
 Ecrire une fonction qui reçoit une liste représentant une permutation et un entier n
-et renvoie liste représentant la puissance fonctionnelle $%p^n%$
+$%p%$ et renvoie liste représentant la puissance fonctionnelle $%p^n%$
 ==
+
+before==
+import random
+def genere_permut(n):
+    l=[x for x in range(n)]
+
+    perm=[]
+    for i in range(n):
+     ind= random.randint(0,n-1-i)
+        val=l[ind]
+        perm.append(val)
+        l[ind],l[n-1-i]=l[n-1-i],l[ind]
+    return perm
+
+def puiss_fonc(l,n):
+    res=list()
+    for i in range(len(l)):
+        c=l[i]
+        for j in range(n):
+            c=l[c]
+        res.append(c)
+    return res
+
+taille=random.randint(1,20)
+l=genere_permut(taille)
+exposant=random.randint(1,10)
+
+pltest3=""">>> puiss_fonc({},{})\n{}""".format(l,exposant,puiss_fonc(l,exposant,l))
