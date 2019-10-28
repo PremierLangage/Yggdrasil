@@ -33,7 +33,7 @@ def puiss_fonc(l,n):
     res=list()
     for i in range(len(l)):
         c=l[i]
-        for j in range(n):
+        for j in range(1,n):
             c=l[c]
         res.append(c)
     return res
@@ -42,7 +42,6 @@ taille=random.randint(1,20)
 l=genere_permut(taille)
 exposant=random.randint(1,10)
 
-pltest3=""">>> puiss_fonc({},{})\n{}""".format(l,exposant,puiss_fonc(l,exposant))
 ==
 pltest0==
 >>> puiss_fonc([1,0,2],1)==[1,0,2]
