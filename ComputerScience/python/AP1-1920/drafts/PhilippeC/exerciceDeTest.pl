@@ -9,7 +9,7 @@ builder= /builder/before.py
 title = premier exo
 taboo=returnp
 text == 
-Fonction **resteDeXpar3()** qui retourne le reste de la division de 7 par 3 ?
+Fonction **resteDeXpar3()** qui retourne le reste de la division de X par 3 ?
 {{pltest2}}
 ==
 
