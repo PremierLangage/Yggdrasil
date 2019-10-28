@@ -10,8 +10,9 @@ text==
 Pour n entier naturel, une permutation p de $%\\{0..n\\}%$  est donnée par une liste permu[i]=c ssi p(i)=c.<br>
 ainsi la permutation p de $%\\{0..4\\}%$ : <br>$%p(i)= 2i\mod 5 %$, <br>
 est représentée par la liste [0,2,4,1,3].<br>
-la puissance fonctionnelle est
+la puissance fonctionnelle est :<br>
 $%{\displaystyle \forall n\in \mathbb {N} ^{*}\quad p^{n}=\underbrace {p\circ \ldots \circ p} _{n\ \mathrm {fois} }}%$
-
-
+<br>
+Ecrire une fonction qui reçoit une liste représentant une permutation et un entier n
+et renvoie liste représentant la puissance fonctionnelle $%p^n%$
 ==
