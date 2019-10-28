@@ -1,6 +1,4 @@
-@ /utils/sandboxio.py
-@ /builder/before2.py [builder.py]
-@ /grader/evaluator2.py [grader.py]
+extends = /template/basic.pluriel
 @ grc_conj.json [grc_conj.json]
 @ grc_verbs.json [grc_verbs.json]
 
