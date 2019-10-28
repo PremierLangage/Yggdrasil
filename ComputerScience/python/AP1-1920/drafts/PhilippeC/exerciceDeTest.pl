@@ -30,7 +30,7 @@ pltest0==
 ==
 
 pltest1==
->>> resteDeXpar3(0)
+>>> resteDeXpar3(7)
 0
 >>> resteDeXpar3(4)
 1
