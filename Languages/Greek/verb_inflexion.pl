@@ -6,7 +6,7 @@
 
 title = Grec ancien : Analyse verbale
 
-settings.feeedback.class = colorbox
+settings.feedback.class = colorbox
 
 radio_prs =: RadioGroup
 radio_tense =: RadioGroup
