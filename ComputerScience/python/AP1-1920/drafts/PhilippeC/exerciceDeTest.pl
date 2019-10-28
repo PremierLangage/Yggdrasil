@@ -4,7 +4,7 @@ author= Fred
 
 # comment
 extends=../../templates/pltest.pl
-builder= /builder/before.py
+builder= @/builder/before.py
 
 title = premier exo
 taboo=returnp
