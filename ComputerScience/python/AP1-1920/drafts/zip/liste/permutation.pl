@@ -8,6 +8,7 @@ title =Permutation1
 
 text== 
 Pour n entier naturel, une permutation p de $%\\{0..n\\}%$  est donnée par une liste permu[i]=c ssi p(i)=c.<br>
+ainsi la permutation p de $%\\{0..5\\}%$ : p(i)= 2*i \mod 5 %$ <br>
 $%{\displaystyle \forall n\in \mathbb {N} ^{*}\quad f^{n}=\underbrace {f\circ \ldots \circ f} _{n\ \mathrm {fois} }}%$
 
 $%
