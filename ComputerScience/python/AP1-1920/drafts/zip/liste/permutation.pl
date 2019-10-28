@@ -23,7 +23,7 @@ def genere_permut(n):
     l=[x for x in range(n)]
     perm=[]
     for i in range(n):
-     ind= random.randint(0,n-1-i)
+        ind= random.randint(0,n-1-i)
         val=l[ind]
         perm.append(val)
         l[ind],l[n-1-i]=l[n-1-i],l[ind]
