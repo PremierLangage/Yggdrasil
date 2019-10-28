@@ -34,7 +34,10 @@ pltest1==
 0
 >>> resteDeXpar3(4)
 1
+>>> resteDeXpar3(4765)
+1
 ==
+
 
 
 
