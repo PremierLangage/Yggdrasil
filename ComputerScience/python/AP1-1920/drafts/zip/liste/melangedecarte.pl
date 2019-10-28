@@ -22,7 +22,6 @@ editor.code==
 import random
 random.seed(42)
 ==
-==
 before==
 import random
 random.seed(42)
