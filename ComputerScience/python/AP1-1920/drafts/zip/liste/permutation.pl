@@ -14,4 +14,4 @@ $%{\displaystyle \forall n\in \mathbb {N} ^{*}\quad f^{n}=\underbrace {f\circ \l
 $%
   ∀ n ∈ N ∗ f n = f ∘ … ∘ f ⏟ n   f o i s {\displaystyle \forall n\in \mathbb {N} ^{*}\quad f^{n}=\underbrace {f\circ \ldots \circ f} _{n\ \mathrm {fois} }} {\displaystyle \forall n\in \mathbb {N} ^{*}\quad f^{n}=\underbrace {f\circ \ldots \circ f} _{n\ \mathrm {fois} }}
 %$ 
- ==
+==
