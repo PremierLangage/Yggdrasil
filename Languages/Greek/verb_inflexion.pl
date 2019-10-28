@@ -1,4 +1,4 @@
-extends = /template/basic.pluriel
+extends = /template/basic.pl
 @ grc_conj.json [grc_conj.json]
 @ grc_verbs.json [grc_verbs.json]
 
