@@ -37,6 +37,14 @@ pltest1==
 >>> resteDeXpar3(4765)
 1
 ==
+pltest3==
+>>> resteDeXpar3(0)
+0
+>>> resteDeXpar3(4)
+1
+>>> resteDeXpar3(4765)
+1
+==
 
 
 
