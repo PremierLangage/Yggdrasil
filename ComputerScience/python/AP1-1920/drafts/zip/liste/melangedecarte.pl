@@ -50,7 +50,6 @@ def melange(l1,l2):
 
 
 ==
-pltest0=
+pltest0==
 >>> fusion([0,1,2],[3,4,5])==[0, 3, 1, 4, 2, 5]
 True
-
