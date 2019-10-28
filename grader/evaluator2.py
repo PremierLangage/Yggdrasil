@@ -63,12 +63,10 @@ if __name__ == "__main__":
     feedback=dic['grade'][1]
 
     if score>=0:
-        dic['attempt'] = dic['attempt'] + 1
-
-    if dic['attempt'] > dic['maxattempt']:
         dic['buttons'] = ["reroll"]
 
     output(score, format_feedback(score,feedback), dic)
+
 
 
 
