@@ -8,13 +8,16 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 title =Cycle d'une permutation
 
 text== 
-Pour n entier naturel, une permutation p de $%\\{0..n\\}%$  est donnée par une liste permu[i]=c ssi p(i)=c.<br>
-  On  appelle cycle d'une permutation p de $%\\{0..n\\}%$  un suite de valeurs $%a_0,a_1 \ldots a_l,l \le n %$ 
-  telle que: $%p(a_i)=a_{i+1}%$ pour$% 0 \le i \lt l%$ et $%p(a_l)=a_0%$<br>
+Pour n entier naturel, une permutation p de $%\\{0..n\\}%$  est donnée par une 
+liste permu avec permu[i]=c ssi p(i)=c.<br>
+  On  appelle cycle d'une permutation p de $%\\{0..n\\}%$ 
+   une suite de valeurs $%(a_0,a_1 \ldots a_l,l \le n )%$ 
+  telle que: <br>
+  $%p(a_i)=a_{i+1}%$ pour $% 0 \le i \lt l%$ et $%p(a_l)=a_0%$<br>
 Exemple, en representant un cycle par une liste<br>
-les cycles de la permutation p=[0,5,4,2,3,1] sont [0][5,1][4,3,2].<br>
+les cycles de la permutation p=[0,5,4,2,3,1] sont [0], [5,1] et [4,3,2].<br>
 La liste des cycles est [[0],[5,1],[4,3,2)].<br>
-Ecrire une fonction qui reçoit une permutation et renvoie la liste de ses cycles (ordonnée par ordre d'apparition du premier élément de chaque cycle)
+Ecrire une fonction `cycle` qui reçoit une permutation et renvoie la liste de ses cycles (ordonnée par ordre d'apparition du premier élément de chaque cycle)
 ==
 before==
 import random
