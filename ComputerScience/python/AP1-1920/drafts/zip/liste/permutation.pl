@@ -43,7 +43,7 @@ l=genere_permut(taille)
 exposant=random.randint(1,10)
 
 pltest1=""">>> puiss_fonc({},{})\n{}""".format(l,exposant,puiss_fonc(l,exposant))
-==
+after=before
 pltest0==
 >>> puiss_fonc([1,0,2],1)==[1,0,2]
 True
