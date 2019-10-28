@@ -8,10 +8,10 @@ title =Permutation1
 
 text== 
 Pour n entier naturel, une permutation p de $%\\{0..n\\}%$  est donnée par une liste permu[i]=c ssi p(i)=c.<br>
-ainsi la permutation p de $%\\{0..5\\}%$ : $%p(i)= 2i \mod 5 %$ <br>
+ainsi la permutation p de $%\\{0..4\\}%$ : <br>$%p(i)= 2i\mod 5 %$, <br>
+est représentée par la liste [0,2,4,1,3].<br>
+
 $%{\displaystyle \forall n\in \mathbb {N} ^{*}\quad f^{n}=\underbrace {f\circ \ldots \circ f} _{n\ \mathrm {fois} }}%$
 
-$%
-  ∀ n ∈ N ∗ f n = f ∘ … ∘ f ⏟ n   f o i s {\displaystyle \forall n\in \mathbb {N} ^{*}\quad f^{n}=\underbrace {f\circ \ldots \circ f} _{n\ \mathrm {fois} }} {\displaystyle \forall n\in \mathbb {N} ^{*}\quad f^{n}=\underbrace {f\circ \ldots \circ f} _{n\ \mathrm {fois} }}
-%$ 
+
 ==
