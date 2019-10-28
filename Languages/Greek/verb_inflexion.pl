@@ -3,10 +3,8 @@
 @ /grader/evaluator2.py [grader.py]
 @ grc_conj.json [grc_conj.json]
 @ grc_verbs.json [grc_verbs.json]
-@ /utils/components.py [utilscomponents.py]
 
 title = Grec ancien : Analyse verbale
-
 
 radio_prs =: RadioGroup
 radio_tense =: RadioGroup
@@ -110,6 +108,7 @@ if isinstance(ans,list):
 feedback=""
 grade = (score,feedback)
 ==
+
 
 
 
