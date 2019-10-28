@@ -16,8 +16,8 @@ liste permu avec permu[i]=c ssi p(i)=c.<br>
   $%p(a_i)=a_{i+1}%$ pour $% 0 \le i \lt l%$ et $%p(a_l)=a_0%$<br>
 Exemple, en representant un cycle par une liste<br>
 les cycles de la permutation p=[0,5,4,2,3,1] sont [0], [5,1] et [4,3,2].<br>
-La liste des cycles est [[0],[5,1],[4,3,2)].<br>
-Ecrire une fonction `cycle` qui reçoit une permutation et renvoie la liste de ses cycles (ordonnée par ordre d'apparition du premier élément de chaque cycle)
+La liste des cycles est [[0],[1,5],[2,3,4)].<br>
+Ecrire une fonction `cycles` qui reçoit une permutation et renvoie la liste de ses cycles (ordonnée par ordre d'apparition du premier élément de chaque cycle)
 ==
 before==
 import random
@@ -53,6 +53,6 @@ pltest1=""">>> cycles({})\n{}""".format(l,cycles(l))
 after=before
 ==
 pltest0==
->>> cycles([1,0,2])==[[1,0],[2]]
+>>> cycles([1,0,2])==[[0,1],[2]]
 True
 ==
