@@ -26,7 +26,7 @@ en ajoutant en fin de liste ses propres éléments en ordre inverse.<br>
     [12, 43, 34, 21, 21, 34, 43, 12]<br>
 remarque : pour parfaire votre entrainement, l'usage des méthodes existantes `reverse` et `extend` est interdit!
 ==
-taboo=reverse,extend
+taboo=reverse|extend
 
 before==
 def est_palindrome(lst):
@@ -72,5 +72,6 @@ pltest2==
 >>> devient_palindrome([1,2,'palindrome'])
 [1, 2, 'palindrome', 'palindrome', 2, 1]
 ==
+
 
 
