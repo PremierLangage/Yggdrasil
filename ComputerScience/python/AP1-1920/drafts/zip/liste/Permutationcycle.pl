@@ -56,8 +56,6 @@ def cycles2perm(l):
         for ind in range(len(cycle)-1):
             perm[cycle[ind]]=cycle[ind+1]
         perm[cycle[-1]]=cycle[0]
-        print(perm)
-        input()
     return perm
     
 taille=random.randint(1,20)
