@@ -23,6 +23,7 @@ random.seed(42)
 ==
 before==
 import random
+nbshuff=random.randint(10,15)
 random.seed(42)
 def coupe(l):
     """ suppose len(l) pair
@@ -52,7 +53,7 @@ def melange(n):
         l1,l2=coupe(l)
         l=fusion(l1,l2)
     return l
-
+pltest2=""">>> melange({})\n{}""".format(nbshuff,melange(nbshuff))
 ==
 pltest0==
 >>> fusion([0,1,2],[3,4,5])==[0, 3, 1, 4, 2, 5]
