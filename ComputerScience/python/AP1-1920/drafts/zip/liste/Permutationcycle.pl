@@ -9,8 +9,6 @@ title =Cycle d'une permutation
 
 text== 
 Pour n entier naturel, une permutation p de $%\\{0..n\\}%$  est donnée par une liste permu[i]=c ssi p(i)=c.<br>
-ainsi la permutation p de $%\\{0..4\\}%$ : <br>$%p(i)= 2i\mod 5 %$, <br>
-est représentée par la liste [0,2,4,1,3].<br>
   On  appelle cycle d'une permutation p de $%\\{0..n\\}%$  un suite de valeurs $%a_0,a_1 \ldots a_l,l \le n %$ 
   telle que: $%p(a_i)=a_{i+1}%$ pour$% 0 \le i \lt l%$ et $%p(a_l)=a_0%$<br>
 Exemple, en representant un cycle par une liste<br>
