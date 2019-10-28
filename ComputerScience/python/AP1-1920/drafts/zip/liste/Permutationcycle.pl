@@ -53,6 +53,6 @@ pltest1=""">>> cycles({})\n{}""".format(l,cycles(l))
 after=before
 ==
 pltest0==
->>> cycles([1,0,2],1)==[[1,0],[2]]
+>>> cycles([1,0,2])==[[1,0],[2]]
 True
 ==
