@@ -29,7 +29,7 @@ if __name__ == "__main__":
     if 'before' in dic:
         dic['StopBeforeExec'] = StopBeforeExec
         print(add_try_clause(dic['before'], StopBeforeExec), file=sys.stderr)
-        exec(add_try_clause(dic['before'], StopBeforeExec),{}, dic)
+        exec(add_try_clause(dic['before'], StopBeforeExec),dic)
     else:
         print(("Player 'before' need a script declared in the key 'before'."),file = sys.stderr)
         sys.exit(1)
@@ -50,5 +50,6 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
 
     sys.exit(0)
+
 
 
