@@ -37,7 +37,8 @@ pltest1==
 >>> resteDeXpar3(4765)
 1
 ==
-pltest2
+pltest2==
+==
 
 pltest3==
 >>> resteDeXpar3(0)
