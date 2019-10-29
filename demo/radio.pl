@@ -1,24 +1,31 @@
 extends = /template/basic.pl
 
-@ /utils/radiogroup.py [customradiogroup.py]
-
 title = Question à choix multiples (radio)
+
+@ /utils/radiogroup.py [customradiogroup.py]
 
 radio =: RadioGroup
 radio.decorator = CustomRadioGroup
 
 before ==
-radio.loadContent(["Paris","Lille","Lyon","Marseille"])
-radio.setSolByContent("Paris")
+import random as rd
+content=rd.sample(list(range(50)),5)
+radio.loadContent([str(item) for item in content])
+radio.setSolByContent(str(min(content)))
 radio.shuffle()
 ==
 
-text = Quelle est la capitale de la France ?
+text ==
+Sélectionner le plus petit nombre de la liste suivante.
+==
 
-form = {{ radio|component }}
+form ==
+{{ radio|component }}
+==
 
 evaluator ==
 grade = radio.eval()
+radio.disabled=True
 ==
 
 
