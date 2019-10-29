@@ -74,6 +74,8 @@ if __name__ == "__main__":
             if 'class' in dic['settings']['feedback']:
                 if dic['settings']['feedback']['class']=='colorbox':
                     ffeedback=format_feedback(score,feedback)
+                if dic['settings']['feedback']['class']=='score':
+                    ffeedback="%d / 100" % score
 
     output(score, ffeedback, dic)
 
