@@ -7,7 +7,7 @@ title = Question à choix multiples (checkbox)
 checkbox =: CheckboxGroup
 checkbox.decorator = Checkbox
 
-settingd.feeedback.class = score
+settings.feeedback.class = score
 
 before ==
 checkbox.loadContent(["Paris","Bruxelles","Lyon","Genève"])
