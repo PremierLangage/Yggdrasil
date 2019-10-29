@@ -60,7 +60,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     score=dic['grade'][0]
-    feedback=dic['grade'][1]+"hhh"
+    feedback=dic['grade'][1]
 
     if score>=0:
         dic['attempt'] = dic['attempt'] + 1
