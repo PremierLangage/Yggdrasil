@@ -1,9 +1,8 @@
-@ /utils/sandboxio.py
-@ /builder/before.py [builder.py]
-@ /grader/evaluator.py [grader.py]
-@ /utils/checkbox.py [checkbox.py]
+extends = /template/basic.pl
 
 title = Question à choix multiples (checkbox)
+
+@ /utils/checkbox.py [checkbox.py]
 
 checkbox =: CheckboxGroup
 checkbox.decorator = Checkbox
@@ -32,6 +31,7 @@ extracss ==
 }
 </style>
 ==
+
 
 
 
