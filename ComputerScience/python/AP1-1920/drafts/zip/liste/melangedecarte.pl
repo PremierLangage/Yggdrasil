@@ -38,7 +38,7 @@ def fusion(l1,l2):
     else:
         u,d=l2,l1
     m=[]
-    for i in range(lmin):
+    for i in range(len(u)):
         m.append(u[i])
         m.append(d[i])
     return m
