@@ -2,7 +2,6 @@
 
 author=AO
 title= valeure absolue d'un nombre.
-tag=variable
 
 extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 
