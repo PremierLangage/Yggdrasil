@@ -34,17 +34,13 @@ def coupe(l):
 def fusion(l1,l2):
     n=random.randint(0,1)
     if n==0:
-        u=l1
-        d=l2
+        u,d=l1,l2
     else:
-        u=l2
-        d=l1
+        u,d=l2,l1
     m=[]
-    
     for i in range(lmin):
         m.append(u[i])
         m.append(d[i])
-   
     return m
 
 def melange(n):
@@ -63,3 +59,4 @@ pltest1==
 >>> melange(4)
 [32, 48, 0, 16, 45, 10, 13, 29, 7, 23, 26, 42, 20, 36, 39, 4, 33, 49, 1, 17, 46, 11, 14, 30, 8, 24, 27, 43, 21, 37, 40, 5, 34, 50, 2, 18, 47, 12, 15, 31, 9, 25, 28, 44, 22, 38, 41, 6, 35, 51, 3, 19]
 ==
+
