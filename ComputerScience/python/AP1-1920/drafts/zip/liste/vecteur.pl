@@ -9,7 +9,8 @@ title = Vecteurs
  On décide de représenter un vecteur de $%\mathbb{R}^n %$ par une liste de longueur n.<br>
  Ecrire les fonctions de manipulation de vecteurs:<br>
  - `add(u,v)` qui reçoit deux vecteurs et renvoie le vecteur somme <br>
- - `produit_scalaire(u,v)` qui reçoit deux vecteurs et renvoie leur produit scqlaire<br>
+ - `produit(r,,v)` qui reçoit un reel et un vecteur et renvoie leur produit<br>
+ - `produit_scalaire(u,v)` qui reçoit deux vecteurs et renvoie leur produit scalaire<br>
  - `combinaison_lineaire(coef,generateur)` une liste de coefficients (*coef*) et une liste de vecteurs
  et renvoie le vecteurs combinaisons linéaire des vecteurs de *générateur* avec les scalaires de *coef*<br>
  Pour toutes les fonctions on supposera que les données sont correctes: <br>
@@ -17,5 +18,6 @@ title = Vecteurs
  il y a autant de scalaires dans *coef* que de vecteurs dans *générateur*
  Exemples :<br>
  - `add([],[])` renvoie []<br>
+
  - `produit_scalaire(u,v)` renvoie<br>
  `combinaison_lineaire(` renvoie []<br>
