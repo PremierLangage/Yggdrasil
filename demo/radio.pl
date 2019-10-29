@@ -1,6 +1,5 @@
-@ /utils/sandboxio.py
-@ /builder/before.py [builder.py]
-@ /grader/evaluator.py [grader.py]
+extends = /template/basic.pl
+
 @ /utils/radiogroup.py [customradiogroup.py]
 
 title = Question à choix multiples (radio)
@@ -21,6 +20,7 @@ form = {{ radio|component }}
 evaluator ==
 grade = radio.eval()
 ==
+
 
 
 
