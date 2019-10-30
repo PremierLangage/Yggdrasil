@@ -1,6 +1,6 @@
 extends = /template/basic.pl
 
-title = Question à choix multiples (checkbox)
+title = Multiples de 3
 
 @ /utils/checkbox.py [checkbox.py]
 
