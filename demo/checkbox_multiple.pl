@@ -27,6 +27,7 @@ form = {{ checkbox|component }}
 
 evaluator ==
 grade = checkbox.eval()
+checkbox.disabled=True
 ==
 
 extracss ==
