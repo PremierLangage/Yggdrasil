@@ -22,3 +22,55 @@ text==
  - `produit_scalaire`([0,1,2],[1,-1,1]) renvoie 1<br>
  - `combinaison_lineaire`([2, 2, -1],[[0, 1, 2, 3], [5, 5, 5, 5], [-1, -2, -1, 0]]) renvoie [11, 14, 15, 16]<br>
 ==
+before==
+import random
+def add(u,v):
+    r=[]
+    for i in  range(len(u)):
+        r.append(u[i]+v[i])
+    return r
+def produit(a,u):
+    r=[]
+    for i in  range(len(u)):
+        r.append(a*u[i])
+    return r
+def produit_scalaire(u,v):
+    r=0
+    for i in range(len(u)):
+        r+=u[i]*v[i]
+    return r
+ 
+def combinaison_lineaire(coef,gen):
+    r=produit(coef[0],gen[0])
+    for i in  range(1,len(coef)):
+        r=add(r,produit(coef[i],gen[i]))
+    return r
+
+
+
+nbcoef=random.randint(3,5)
+dim=random.randint(3,5)
+coef=[random.randint(-3,5) for i in range(nbcoef)]
+gen=[]
+for nbvect in range(nbcoef):
+    u=[]
+    for i in range(dim):
+        u.append(random.randint(-9,9))
+        
+    gen.append(u)
+
+
+pltest2=""">>> produit_scalaire({},{})\n{}""".format(gen[0],gen[1], produit_scalaire(gen[0],gen[1]))
+pltest3=""">>> combinaison_lineaire({},{})\n{}""".format(coef,gen,combinaison_lineaire(coef,gen))
+
+
+==
+
+pltest0==
+>>> produit(2,[1,0,1])==[2,0,2]
+True
+==
+
+pltest1==
+>>> add([1,0,2,4],[0,5,-1,-4])
+[1,5,1,0]
