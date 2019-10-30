@@ -7,14 +7,18 @@ text ==
 
 **texte en gras**
 
-Liste :
+Liste non-ordonnée:
 
 * Item 1
 * Item 2
     * Item 2.a
     * Item 2.b
 
-> I’ve always been more interested
-> in the future than in the past.
+Liste ordonnée:
+
+1. Item 1
+2. Item 2
+    a. Item 2.a
+    b. Item 2.b
 ==
 
