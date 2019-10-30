@@ -13,7 +13,8 @@ title = premier exo
 taboo=import
 text == 
 Fonction **resteDeXpar3()** qui retourne le reste de la division de X par 3 ?
-{{pltest2}}
+
+    {{pltest2}}
 ==
 
 before==
