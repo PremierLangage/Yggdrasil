@@ -5,6 +5,9 @@ title = Markdown
 text ==
 *texte en italique*
 
+> This is a blockquote.
+> 
+> This is the second paragraph in the blockquote.
 
 **texte en gras**
 
