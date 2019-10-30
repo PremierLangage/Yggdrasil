@@ -9,16 +9,17 @@ text ==
 
 Liste non-ordonnée:
 
-* Item 1
-* Item 2
-    * Item 2.a
-    * Item 2.b
+* Item
+* Item
+    * Item
+    * Item
+* Item
 
 Liste ordonnée:
 
-1. Item 1
-2. Item 2
-    * Item 2.a
-    * Item 2.b
+1. Item
+2. Item
+3. Item
+
 ==
 
