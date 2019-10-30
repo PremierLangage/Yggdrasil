@@ -16,7 +16,7 @@ other=[n for n in range(50,100) if n%3!=0]
 k=rd.randint(1,4)
 choices = rd.sample(mult3,k)+rd.sample(other,5-k)
 checkbox.loadContent([str(item) for item in choices])
-checkbox.setSolByContent(list(range(k)))
+checkbox.setSolByIndex(list(range(k)))
 checkbox.shuffle()
 checkbox.grading="RightMinusWrong"
 ==
