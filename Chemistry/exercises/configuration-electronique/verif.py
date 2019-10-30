@@ -33,7 +33,7 @@ def latexfromstr(s):
     l2=list()
     for x in l:
         l2.append(x[:2]+"^{"+x[2:]+"}")
-        print(x,filie=sys.stderr)
+        print(x,file=sys.stderr)
     return "$%"+l2.join(" ")+"%$"
 
 def latexfromz(Z):
