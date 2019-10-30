@@ -27,11 +27,13 @@ def strfromz(Z):
             indice+=1    
     return s
 
+import sys
 def latexfromstr(s):
     l=s.split(" ")
     l2=list()
     for x in l:
         l2.append(x[:2]+"^{"+x[2:]+"}")
+        print(x,filie=sys.stderr)
     return "$%"+l2.join(" ")+"%$"
 
 def latexfromz(Z):
