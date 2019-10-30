@@ -5,7 +5,10 @@ title = Markdown
 text ==
 *texte en italique*
 
+
 **texte en gras**
+
+`verbatim`
 
 Liste non-ordonnée:
 
@@ -21,7 +24,7 @@ Liste ordonnée:
 2. Item
 3. Item
 
-`verbatim`
+
 
 ==
 
