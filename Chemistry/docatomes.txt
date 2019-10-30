@@ -1,0 +1,24 @@
+
+
+Dans le fichier atomes.csv
+mais je sais pas dans quel ordre 
+
+Électron par niveau d’énergie
+Symbole
+Groupe, période et bloc
+Masse volumique
+Numéro CAS
+Numéro EINECS
+Masse atomique
+Rayon atomique
+Rayon de covalence
+Rayon de van der waals
+Configuration électronique
+État d’oxydation
+Année de découverte
+Nom(s) associé(s) à la découverte
+Pays de découverte
+Électronégativité
+Point de fusion
+Point d’ébullition
+Radioactif ou non
