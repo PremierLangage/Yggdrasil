@@ -21,5 +21,7 @@ Liste ordonnée:
 2. Item
 3. Item
 
+`verbatim`
+
 ==
 
