@@ -10,6 +10,10 @@ text ==
 
 `verbatim`
 
+```
+verbatim
+```
+
 Liste non-ordonnée:
 
 * Item
