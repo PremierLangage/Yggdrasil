@@ -45,7 +45,7 @@ def latexfromz(Z):
     elif Z==29:
         s="$% 1s^2 2s^2 2p^6 3s^2 3p^6 4s^1 3d^{10} "
     else:
-        s="$% "
+        s="$%"
         indice=0
         while Z>0:
             if Z>maximum[indice]:
