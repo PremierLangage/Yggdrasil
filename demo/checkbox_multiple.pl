@@ -21,7 +21,7 @@ checkbox.shuffle()
 checkbox.grading="RightMinusWrong"
 ==
 
-text = Parmi les nombres suivants, lesquelles sont des multiples de 3 ?
+text = Parmi les nombres suivants, lesquels sont des multiples de 3 ?
 
 form = {{ checkbox|component }}
 
