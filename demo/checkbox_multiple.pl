@@ -15,13 +15,13 @@ mult3=[n for n in range(50,100) if n%3==0]
 other=[n for n in range(50,100) if n%3!=0]
 k=rd.randint(1,4)
 choices = rd.sample(mult3,k)+rd.sample(other,5-k)
-checkbox.loadContent(choices)
+checkbox.loadContent([str(item] for item in choices])
 checkbox.setSolByContent(list(range(k)))
 checkbox.shuffle()
 checkbox.grading="RightMinusWrong"
 ==
 
-text = Parmi les villes suivantes, lesquelles sont en France ?
+text = Parmi les nombres suivants, lesquelles sont des multiples de 3 ?
 
 form = {{ checkbox|component }}
 
