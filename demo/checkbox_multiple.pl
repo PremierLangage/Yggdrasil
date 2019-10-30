@@ -17,7 +17,7 @@ nchoices = 5
 nright = rd.randint(1,nchoices-1)
 choices = rd.sample(mult3,nright)+rd.sample(other,nchoices-nright)
 checkbox.loadContent([str(number) for number in choices])
-checkbox.setSolByIndex(list(range(k)))
+checkbox.setSolByIndex(list(range(nright)))
 checkbox.shuffle()
 checkbox.grading="RightMinusWrong"
 ==
