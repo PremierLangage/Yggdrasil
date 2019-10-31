@@ -10,7 +10,7 @@ sortlist.decorator = CustomSortList
 before ==
 import random as rd
 numbers=rd.sample(list(range(50)),5)
-sorted(numbers)
+numbers.sort()
 sortlist.loadContent([str(n) for n in numbers])
 ==
 
