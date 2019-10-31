@@ -1,6 +1,6 @@
 extends = /template/basic.pl
 
-title = Plus petit nombre
+title = Ordonner des nombres
 
 @ /utils/sortlist.py [customsortlist.py]
 
@@ -15,7 +15,7 @@ sortlist.loadContent([str(n) for n in numbers])
 ==
 
 text ==
-Sélectionner le plus petit nombre de la liste suivante.
+Ordonner les nombres suivants du plus petit au plus grand.
 ==
 
 form ==
