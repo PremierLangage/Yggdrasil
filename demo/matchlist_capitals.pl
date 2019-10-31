@@ -30,10 +30,11 @@ Relier chaque pays à sa capitale.
 ==
 
 form==
-{{ match|component }}
+{{ match | component }}
 ==
 
 evaluator==
 grade=match.eval()
 ==
+
 
