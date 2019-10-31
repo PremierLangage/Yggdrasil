@@ -16,8 +16,8 @@ with open('data.csv',newline='') as file:
     rows=list(csv.DictReader(file,delimiter=','))
 
 items=rd.sample(rows,4)
-source=[item[keysource] for item in items]
-target=[item[keytarget] for item in items]
+source=[item['country'] for item in items]
+target=[item['capital'] for item in items]
 match.loadContent(source,target)
 ==
 
