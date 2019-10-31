@@ -14,7 +14,7 @@ class CustomSortList(Component):
         self.items = []
         for i in range(len(content)):
             id = uuid.uuid4()
-            self.nodes.append({
+            self.items.append({
                 "id": id,
                 "content": content[i]
             })
