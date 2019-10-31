@@ -15,17 +15,16 @@ class CustomMatchList(Component):
         for i in range(len(source)):
             sourceId = uuid.uuid4()
             targetId = uuid.uuid4()
-
             self.nodes.append({
                 "id": sourceId,
                 "content": source[i],
-                "source": True,
+                "source": True
             })
 
             self.nodes.append({
                 "id": targetId,
                 "content": target[i],
-                "target": True,
+                "target": True
             })
             self._expected.append({ "source": sourceId, "target": targetId })
         rd.shuffle(self.nodes)
@@ -51,3 +50,4 @@ def in_links(conn, links):
         if e['source'] == conn["source"] and  e['target'] == conn["target"]:
             return True
     return False
+
