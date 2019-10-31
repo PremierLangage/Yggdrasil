@@ -8,6 +8,7 @@ extends = /template/basic.pl
 match =: MatchList
 
 before==
+# match.decorator = CustomMatchList
 import random as rd
 import csv
 
@@ -17,7 +18,7 @@ with open('data.csv',newline='') as file:
 items=rd.sample(rows,4)
 source=[item['country'] for item in items]
 target=[item['capital'] for item in items]
-match.loadContent(source,target)
+# match.loadContent(source,target)
 ==
 
 title==
