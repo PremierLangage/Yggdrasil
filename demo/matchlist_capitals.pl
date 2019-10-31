@@ -6,7 +6,6 @@ extends = /template/basic.pl
 
 
 match =: MatchList
-match.decorator = CustomMatchList
 
 before==
 import random as rd
