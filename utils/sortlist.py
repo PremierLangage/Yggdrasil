@@ -12,6 +12,7 @@ class CustomSortList(Component):
 
     def loadContent(self,content):
         self.items = []
+        self._order = []
         for i in range(len(content)):
             id = uuid.uuid4()
             self.items.append({
