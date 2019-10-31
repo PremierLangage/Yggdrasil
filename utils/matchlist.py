@@ -20,7 +20,6 @@ class CustomMatchList(Component):
                 "content": source[i],
                 "source": True
             })
-
             self.nodes.append({
                 "id": targetId,
                 "content": target[i],
