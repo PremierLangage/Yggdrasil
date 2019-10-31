@@ -22,4 +22,4 @@ class CustomSortList(Component):
         rd.shuffle(self.items)
 
     def eval(self):
-
+        pass
