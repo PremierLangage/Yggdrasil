@@ -2,7 +2,7 @@ extends = /template/basic.pl
 
 title = Plus petit nombre
 
-@ /utils/sortmist.py [customsortlist.py]
+@ /utils/sortlist.py [customsortlist.py]
 
 sortlist =: SortList
 sortlist.decorator = CustomSortList
