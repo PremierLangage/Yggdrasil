@@ -15,7 +15,7 @@ import csv
 with open('data.csv',newline='') as file:
     rows=list(csv.DictReader(file,delimiter=','))
 
-items=rd.sample(rows,nitems)
+items=rd.sample(rows,4)
 source=[item[keysource] for item in items]
 target=[item[keytarget] for item in items]
 match.loadContent(source,target)
