@@ -30,7 +30,7 @@ class CustomSortList(Component):
                 e['css'] = 'error-state animated fadeIn'
                 errors += 1
         if errors == 0:
-            grade = (100, '<span class="success-state animated pulse infinite">Good answer</span>')
+            return (100, '<span class="success-state animated pulse infinite">Good answer</span>')
         else:
-            grade = (0, f'<span class="error-state animated pulse infinite">{ errors } wrong answers</span>')
+            return (0, f'<span class="error-state animated pulse infinite">{ errors } wrong answers</span>')
 
