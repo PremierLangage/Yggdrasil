@@ -1,4 +1,4 @@
-extends = /template/basic.pl
+extends = basic.pl
 
 @ /utils/matchlist.py [custommatchlist.py]
 
