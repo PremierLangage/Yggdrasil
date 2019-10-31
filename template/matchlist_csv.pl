@@ -1,7 +1,6 @@
-@ /utils/sandboxio.py
-@ /builder/before.py [builder.py]
-@ /grader/evaluator.py [grader.py]
-@ /utils/components.py [custommatchlist.py]
+extends = /template/basic.pl
+
+@ /utils/matchlist.py [custommatchlist.py]
 
 match =: MatchList
 match.decorator = CustomMatchList
@@ -34,6 +33,7 @@ form==
 evaluator==
 grade=match.eval()
 ==
+
 
 
 
