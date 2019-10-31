@@ -25,5 +25,6 @@ form ==
 evaluator ==
 grade = sortlist.eval()
 sortlist.disabled=True
+grade=(100,"")
 ==
 
