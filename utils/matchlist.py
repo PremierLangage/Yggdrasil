@@ -20,7 +20,7 @@ class CustomMatchList(Component):
                 "source": True
             })
         for content in target:
-            sourceId = uuid.uuid4()
+            targetId = uuid.uuid4()
             self.nodes.append({
                 "id": targetId,
                 "content": content,
