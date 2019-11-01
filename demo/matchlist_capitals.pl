@@ -36,7 +36,7 @@ form==
 
 evaluator==
 grade = match.eval()
-grade.disabled = True
+match.disabled = True
 ==
 
 
