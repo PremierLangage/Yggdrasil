@@ -18,6 +18,30 @@ with open('data.csv',newline='') as file:
 items=rd.sample(rows,4)
 source=[item['country'] for item in items]
 target=[item['capital'] for item in items]
+
+match.nodes = []
+expected = []
+for i in range(4):
+    a = random.randint(1, 10)
+    b = random.randint(1, 10)
+    sourceId = "source" + str(i)
+    targetId = "target" + str(i)
+
+    match.nodes.append({
+        "id": sourceId,
+        "content": "%d * %d" % (a, b),
+        "source": True,
+    })
+
+    match.nodes.append({
+        "id": targetId,
+        "content": "%d" % (a * b),
+        "target": True,
+    })
+    expected.append({ "source": sourceId, "target": targetId })
+random.shuffle(match.nodes)
+
+
 # match.loadContent(source,target)
 ==
 
