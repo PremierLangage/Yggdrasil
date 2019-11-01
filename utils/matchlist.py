@@ -13,8 +13,8 @@ class CustomMatchList(Component):
     def loadContent(self,source,target):
 
         for i in range(len(source)):
-            sourceId = uuid.uuid4()
-            targetId = uuid.uuid4()
+            sourceId = str(uuid.uuid4())
+            targetId = str(uuid.uuid4())
 
             self.nodes.append({
                 "id": sourceId,
