@@ -20,13 +20,13 @@ class CustomMatchList(Component):
 
             self.nodes.append({
                 "id": sourceId,
-                "content": "%d * %d" % (a, b),
+                "content": source[i],
                 "source": True,
             })
 
             self.nodes.append({
                 "id": targetId,
-                "content": "%d" % (a * b),
+                "content": target[i],
                 "target": True,
             })
     '''
