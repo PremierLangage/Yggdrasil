@@ -23,7 +23,7 @@ match.nodes = []
 expected = []
 for i in range(4):
     a = random.randint(1, 10)
-    b = random.randint(1, 10)
+    b = rd.randint(1, 10)
     sourceId = "source" + str(i)
     targetId = "target" + str(i)
 
