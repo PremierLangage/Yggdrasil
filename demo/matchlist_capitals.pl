@@ -38,8 +38,7 @@ for i in range(4):
         "content": "%d" % (a * b),
         "target": True,
     })
-    expected.append({ "source": sourceId, "target": targetId })
-rd.shuffle(match.nodes)
+
 
 
 # match.loadContent(source,target)
