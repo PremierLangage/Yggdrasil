@@ -18,13 +18,13 @@ class CustomMatchList(Component):
 
             self.nodes.append({
                 "id": sourceId,
-                "content": source[i],
+                "content": uuid.uuid4(),
                 "source": True,
             })
 
             self.nodes.append({
                 "id": targetId,
-                "content": target[i],
+                "content": uuid.uuid4(),
                 "target": True,
             })
     '''
