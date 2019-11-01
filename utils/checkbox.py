@@ -27,6 +27,11 @@ class Checkbox(Component):
             })
         self.items = items
 
+    def loadRightWrong(self, right, wrong, nchoices, nright):
+        self.loadContent(rd.sample(right,nright)+rd.sample(wrong,nchoices-nright))
+        self.setSolByIndex(list(range(nright)))
+        self.shuffle()
+
     def shuffle(self):
         rd.shuffle(self.items)
 
@@ -64,5 +69,6 @@ class Checkbox(Component):
             nitems=len(self.items)
             score=max([int((nitems-2*(checkwrong+missright))/nitems*100),0])
         return (score,"")
+
 
 
