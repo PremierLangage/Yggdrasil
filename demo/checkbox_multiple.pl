@@ -11,14 +11,11 @@ settings.feedback.class = score
 
 before ==
 import random as rd
-mult3 = [n for n in range(50,100) if n%3 == 0]
-other = [n for n in range(50,100) if n%3 != 0]
+mult3 = [str(n) for n in range(50,100) if n%3 == 0]
+other = [str(n) for n in range(50,100) if n%3 != 0]
 nchoices = 5
 nright = rd.randint(1,nchoices-1)
-choices = rd.sample(mult3,nright)+rd.sample(other,nchoices-nright)
-checkbox.loadContent([str(number) for number in choices])
-checkbox.setSolByIndex(list(range(nright)))
-checkbox.shuffle()
+checkbox.loadRightWrong(mult3,other,nchoices,nright)
 checkbox.grading="RightMinusWrong"
 ==
 
@@ -40,6 +37,7 @@ extracss ==
 }
 </style>
 ==
+
 
 
 
