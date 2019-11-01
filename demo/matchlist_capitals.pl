@@ -22,7 +22,7 @@ target=[item['capital'] for item in items]
 match.nodes = []
 expected = []
 for i in range(4):
-    a = random.randint(1, 10)
+    a = rd.randint(1, 10)
     b = rd.randint(1, 10)
     sourceId = "source" + str(i)
     targetId = "target" + str(i)
