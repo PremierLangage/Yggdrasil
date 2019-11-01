@@ -35,9 +35,9 @@ class CustomMatchList(Component):
                 error = error + 1
 
         for e in self.links:
-            e['css'] = 'error-state anim-fade'
+            e['css'] = 'error-state'
             if in_links(e, self._expected):
-                e['css'] = 'success-state  anim-flip'
+                e['css'] = 'success-state'
 
         if error == 0:
             return (100, '')
