@@ -39,7 +39,7 @@ for i in range(4):
         "target": True,
     })
     expected.append({ "source": sourceId, "target": targetId })
-random.shuffle(match.nodes)
+rd.shuffle(match.nodes)
 
 
 # match.loadContent(source,target)
