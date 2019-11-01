@@ -13,9 +13,7 @@ before ==
 import random as rd
 mult3 = [str(n) for n in range(50,100) if n%3 == 0]
 other = [str(n) for n in range(50,100) if n%3 != 0]
-nchoices = 5
-nright = rd.randint(1,nchoices-1)
-checkbox.loadRightWrong(mult3,other,nchoices,nright)
+checkbox.loadRightWrong(mult3,other,5,rd.randint(1,4))
 checkbox.grading="RightMinusWrong"
 ==
 
