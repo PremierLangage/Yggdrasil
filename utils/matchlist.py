@@ -12,7 +12,7 @@ class CustomMatchList(Component):
 
     def loadContent(self,source,target):
 
-        for i in range(4):
+        for i in range(len(source)):
             a = rd.randint(1, 10)
             b = rd.randint(1, 10)
             sourceId = "source" + str(i)
