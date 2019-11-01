@@ -12,21 +12,20 @@ class CustomMatchList(Component):
 
     def loadContent(self,source,target):
         self.nodes = []
-        for content in source:
+        for i in range(len(source)):
             sourceId = uuid.uuid4()
-            self.nodes.append({
-                "id": sourceId,
-                "content": content,
-                "source": True
-            })
-        for content in target:
             targetId = uuid.uuid4()
             self.nodes.append({
+                "id": sourceId,
+                "content": source[i],
+                "source": True
+            })
+            self.nodes.append({
                 "id": targetId,
-                "content": content,
+                "content": target[i],
                 "target": True
             })
-        # self._expected.append({ "source": sourceId, "target": targetId })
+            self._expected.append({ "source": sourceId, "target": targetId })
         rd.shuffle(self.nodes)
 
     def eval(self):
