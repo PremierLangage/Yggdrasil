@@ -11,6 +11,25 @@ class CustomMatchList(Component):
         super().__init__(**kwargs)
 
     def loadContent(self,source,target):
+
+        for i in range(4):
+            a = rd.randint(1, 10)
+            b = rd.randint(1, 10)
+            sourceId = "source" + str(i)
+            targetId = "target" + str(i)
+
+            self.nodes.append({
+                "id": sourceId,
+                "content": "%d * %d" % (a, b),
+                "source": True,
+            })
+
+            self.nodes.append({
+                "id": targetId,
+                "content": "%d" % (a * b),
+                "target": True,
+            })
+    '''
         self.nodes = []
         for i in range(len(source)):
             sourceId = uuid.uuid4()
@@ -27,7 +46,7 @@ class CustomMatchList(Component):
             })
             self._expected.append({ "source": sourceId, "target": targetId })
         rd.shuffle(self.nodes)
-
+    '''
     def eval(self):
         error = 0
         for e in self._expected:
