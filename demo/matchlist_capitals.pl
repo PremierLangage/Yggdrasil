@@ -6,9 +6,9 @@ extends = /template/basic.pl
 
 
 match =: MatchList
+match.decorator = CustomMatchList
 
 before==
-# match.decorator = CustomMatchList
 import random as rd
 import csv
 
@@ -19,29 +19,7 @@ items=rd.sample(rows,4)
 source=[item['country'] for item in items]
 target=[item['capital'] for item in items]
 
-match.nodes = []
-expected = []
-for i in range(4):
-    a = rd.randint(1, 10)
-    b = rd.randint(1, 10)
-    sourceId = "source" + str(i)
-    targetId = "target" + str(i)
-
-    match.nodes.append({
-        "id": sourceId,
-        "content": "%d * %d" % (a, b),
-        "source": True,
-    })
-
-    match.nodes.append({
-        "id": targetId,
-        "content": "%d" % (a * b),
-        "target": True,
-    })
-
-
-
-# match.loadContent(source,target)
+match.loadContent(source,target)
 ==
 
 title==
@@ -58,6 +36,7 @@ form==
 
 evaluator==
 grade = match.eval()
+grade.disabled = True
 ==
 
 
