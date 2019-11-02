@@ -50,6 +50,6 @@ Déterminer l'image directe de l'ensemble $!\\{ {{A_tex}} \\}!$ par $! f !$.
 
 evaluator==
 score,code,feedback=ans_struct_expr(input.value,fA,"composite")
-feedback=code
+feedback=str(FiniteSet2struct(fA))+str(FiniteSet2struct(input.value))
 ==
 
