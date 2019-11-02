@@ -5,7 +5,7 @@ title = Image directe d'une application
 lang = fr
 
 before ==
-from jinja2 import template
+from jinja2 import Template
 
 keyboards_JSON['virtualKeyboards']="sets"
 input.config = keyboards_JSON
