@@ -19,6 +19,7 @@ E = [(x,y) for x in range(-3,4) for y in range(-3,4)]
 A=FiniteSet(*list_randitem_norep(3,E))
 imA=FiniteSet(*[f(*x) for x in A])
 A_tex=latex(A)
+imA_tex=latex(imA)
 ==
 
 text ==
@@ -29,6 +30,10 @@ Déterminer $! f(\\{ {{A_tex}} \\}). !$
 
 evaluator==
 score,_,feedback=ans_struct_expr(input.value,imA,"composite")
+==
+
+solution ==
+La solution est $! \\{ {{imA_tex}} \\} !$
 ==
 
 
