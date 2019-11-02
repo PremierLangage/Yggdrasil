@@ -32,13 +32,13 @@ else:
     E2_tex="\mathbb{Z}"
 
 y=f(x1,x2)
-
+y_tex=latex(y)
 ==
 
 text ==
 On considère la fonction $! f : {{E1_tex}} \times {{E2_tex}} \rightarrow \mathbb{Z} !$ telle que
 $$f({{nn}},{{mm}})= {{expr_tex}}$$
-Déterminer un antécédent de $! {{y}} !$ par  $! f !$
+Déterminer un antécédent de $! {{y_tex}} !$ par  $! f !$
 ==
 
 evaluator==
