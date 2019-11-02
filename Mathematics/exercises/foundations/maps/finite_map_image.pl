@@ -49,7 +49,7 @@ Déterminer l'image directe de l'ensemble $!\\{ {{A_tex}} \\}!$ par $! f !$.
 ==
 
 evaluator==
-score,_,feedback=ans_struct_expr(input.value,fA,"composite")
-feedback=fA
+score,code,feedback=ans_struct_expr(input.value,fA,"composite")
+feedback=code
 ==
 
