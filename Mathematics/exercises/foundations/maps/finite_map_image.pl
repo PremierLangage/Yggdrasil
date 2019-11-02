@@ -17,7 +17,13 @@ table=r"<table style=''><tr> %s </tr><tr> %s </tr></table>" % ("".join(lstrow1),
 ==
 
 text ==
-<table style=''><tr> <td> 0 </td><td> 1 </td><td> 2 </td><td> 3 </td><td> 4 </td> </tr><tr> <td> 3 </td><td> 5 </td><td> 8 </td><td> 0 </td><td> 1 </td> </tr></table>
+<table>
+<tr>
+{% for item in lstrow1 %}
+<td> item </td>
+{% endfor %}
+<tr>
+</table>
 ==
 
 evaluator==
