@@ -2,8 +2,6 @@ extends = finite_map_.pl
 
 title = Image directe d'une application
 
-lang = fr
-
 before ==
 from jinja2 import Template
 
