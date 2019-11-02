@@ -40,3 +40,6 @@ On considère l'application $! f:\\{1,\ldots,{{n}} \\}\rightarrow \mathbb{N} !$ 
 Déterminer l'image réciproque de l'ensemble $!\\{ {{A_tex}} \\}!$ par $! f !$.
 ==
 
+evaluator==
+score,_,feedback=ans_struct_expr(input.value,imA,"composite")
+==
