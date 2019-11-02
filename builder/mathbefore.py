@@ -58,7 +58,7 @@ if __name__ == "__main__":
         exec(add_try_clause(dic['before'], StopBeforeExec), dic)
         exec("", globals().copy())
         for key in globals():
-            if key in dic and dic[key] == glob[key]:
+            if key in dic and dic[key] == globals()[key]:
                 del dic[key]
         for key in dic:
             dic[key]=sympy_to_str(dic[key])
