@@ -12,10 +12,7 @@ n,m=list_randitem_norep(2,symbols("n,m,p,q,r"))
 expr=randitem([n**2+m,n+m**2,n**2-m,n-m**2])
 nn=latex(n)
 mm=latex(m)
-a=randiint(-3,3,[0])
-b=randint(-2,2)
-c=randint(-2,2)
-expr=a*(n+b)*(m+c)
+expr=randint(-3,3,[0])*(n+randint(-2,2))*(m+randint(-2,2))
 expr_tex=latex(expr)
 f = Lambda ( (n,m) , expr)
 
@@ -29,7 +26,7 @@ imA_tex=latex(imA)
 text ==
 On considère la fonction $! f : \mathbb{Z} \times \mathbb{Z} \rightarrow \mathbb{Z} !$ telle que
 $$f({{nn}},{{mm}})= {{expr_tex}}$$
-Déterminer $! f(\\{ {{A_tex}} \\}). !$
+Déterminer un antécédent de $! f(\\{ {{A_tex}} \\}). !$ par  $! f !$
 ==
 
 evaluator==
