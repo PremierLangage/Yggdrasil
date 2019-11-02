@@ -15,7 +15,7 @@ row2=list_randint(n,1,m)
 A=list_randint_norep(randint(3,4),1,9)
 A.sort()
 A_tex=str(A)[1:-1]
-finvA=list(set([x+1 for x in rang(n) if row2[x] in A]))
+finvA=list(set([x+1 for x in range(n) if row2[x] in A]))
 fA.sort()
 ==
 
