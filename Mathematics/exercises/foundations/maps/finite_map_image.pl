@@ -23,6 +23,7 @@ th, td {
 ==
 
 text ==
+On considère l'application $! f:\{1,\ldots,{{n}} \}\rightarrow \{1,\ldots,{{m}}\}\) définie par le tableau ci-dessous.
 <table>
 <tr>
 <th> $! x !$ </th>
@@ -37,6 +38,7 @@ text ==
 {% endfor %}
 </tr>
 </table>
+Déterminer l'image directe de l'ensemble $! {{A_tex}} !$\ par $! f !$.
 ==
 
 evaluator==
