@@ -5,9 +5,10 @@ title = Image d'une application
 lang = fr
 
 before ==
-
+n=randint(5,9)
+m=randint(5,9)
 row1=list(range(n+1))
-row2=[3,5,8,0,1]
+row2=list_randint(0,m)
 ==
 
 extracss==
