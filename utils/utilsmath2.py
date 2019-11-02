@@ -529,8 +529,8 @@ def is_equal_struct(a, b, modulo=0):
     elif isinstance(b,tuple):
         if isinstance (a,tuple):
             return is_equal_tuple(a,b)
-    elif isinstance(b,sp.Expr):
-        if isinstance (a,sp.Expr):
+    elif isinstance(b,(sp.Expr,int)):
+        if isinstance (a,(sp.Expr,int)):
             return is_equal(a, b, modulo)
     return False
 
@@ -960,6 +960,7 @@ def ans_poly(strans,sol,x,domain="RR",imaginary_unit="i",form=""):
         test1.append((lambda expr : is_poly_factorized(expr,x,domain),-1,"NotFactorized","Votre réponse n'est pas un polynôme factorisé."))
     test2=[]
     return ans_(strans,sol,local_dict,test1,test2)
+
 
 
 
