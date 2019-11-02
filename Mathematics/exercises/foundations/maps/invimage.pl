@@ -45,7 +45,3 @@ evaluator==
 score,_,feedback=ans_struct_expr(input.value,imA,"composite")
 ==
 
-solution ==
-La solution est $! {{imA_tex}} !$
-==
-
