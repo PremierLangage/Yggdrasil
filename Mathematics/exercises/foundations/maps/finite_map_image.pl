@@ -13,7 +13,7 @@ for x in lst:
 for x in [3,5,8,0,1]:
     lstrow2.append("<td> %d </td>" % x)
 
-table=r"<table style='width:100%'><tr> %s </tr><tr> %s </tr></table>" % ("".join(lstrow1),"".join(lstrow2))
+table=r"<table style=''><tr> %s </tr><tr> %s </tr></table>" % ("".join(lstrow1),"".join(lstrow2))
 ==
 
 text ==
