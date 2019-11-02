@@ -41,7 +41,7 @@ On considère l'application $! f:\\{1,\ldots,{{n}} \\}\rightarrow \\{1,\ldots,{{
 {% endfor %}
 </tr>
 </table>
-Déterminer l'image directe de l'ensemble $!\\{ {{A_tex}} \\}!$ par $! f !$.
+Déterminer l'image directe de l'ensemble $!\\{ {{A}} \\}!$ par $! f !$.
 ==
 
 evaluator==
