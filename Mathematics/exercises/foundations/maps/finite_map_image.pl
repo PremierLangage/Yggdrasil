@@ -19,11 +19,15 @@ table=r"<table style=''><tr> %s </tr><tr> %s </tr></table>" % ("".join(lstrow1),
 text ==
 <table>
 <tr>
-{% for item in lstrow1 %}
+{% for item in row1 %}
 <td> item </td>
 {% endfor %}
 <tr>
-</table>
+<tr>
+{% for item in row2 %}
+<td> item </td>
+{% endfor %}
+<tr>e>
 ==
 
 evaluator==
