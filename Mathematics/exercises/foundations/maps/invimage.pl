@@ -16,7 +16,7 @@ expr_tex=latex(expr)
 f = Lambda ( (n,m) , expr)
 
 E1=randitem("N","Z")
-if E1="N":
+if E1=="N":
     x1=randint(0,3)
     E1_tex="\mathbb{N}"
 else:
@@ -24,7 +24,7 @@ else:
     E1_tex="\mathbb{Z}"
 
 E2=randitem("N","Z")
-if E2="N":
+if E2=="N":
     x2=randint(0,3)
     E2tex="\mathbb{N}"
 else:
