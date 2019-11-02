@@ -10,7 +10,7 @@ m=randint(5,9)
 row1=list(range(1,n+1))
 row2=list_randint(n+1,1,m)
 A=list_randitem_norep(randint(3,4),row2)
-A_tex=str(A*)
+A_tex=str(tuple(A))
 ==
 
 extracss==
