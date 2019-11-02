@@ -10,9 +10,10 @@ expr=randitem([n+m,n**2+m,n+m**2])
 nn=latex(n)
 mm=latex(m)
 expr_tex=latex(expr)
+f = Lambda ( (n,m) , expr)
+
 E = [(x,y) for c in range(-4,5) for y in range(-4,5)]
 A=FiniteSet(*list_randitem_norep(randint(3,4),E))
-f = Lambda ( (n,m) , expr)
 imA=FiniteSet(*[f(*x) for x in A])
 A_tex=latex(A)
 ==
