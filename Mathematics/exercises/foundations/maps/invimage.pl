@@ -48,7 +48,7 @@ except:
     score,feedback=-1,"Votre réponse n'est pas une expression valide."
     raise StopEvaluatorExec
 if not isinstance(ans,tuple) or len(ans)!=2 or (ans[0]<0 and E1=="N") or (ans[1]<0 and E2=="N"):
-    score,feedback=0,"Votre réponse n'est pas un élement de ."
+    score,feedback=0,"Votre réponse n'est pas un élement de $! %s \times %s !$." % (E1_tex,E2_tex)
     raise StopEvaluatorExec
 f = Lambda((n,m),expr)
 if  f(*ans)!=y:
