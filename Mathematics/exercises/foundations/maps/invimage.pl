@@ -45,9 +45,8 @@ evaluator==
 try:
     ans=str2struct(input.value)
 except:
-    return (-1,2,"Votre réponse n'est pas une expression valide.")
-for (f,score,error,feedback) in test1:
-    if not f(ans):
-            return (score,error,feedback)
+    grade=(-1,"Votre réponse n'est pas une expression valide.")
+    StopEvaluatorExec
+grade=(100,"")
 ==
 
