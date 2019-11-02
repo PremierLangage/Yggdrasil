@@ -42,6 +42,12 @@ Déterminer un antécédent de $! {{y_tex}} !$ par  $! f !$
 ==
 
 evaluator==
-score,_,feedback=ans_struct_expr(input.value,imA,"composite")
+try:
+    ans=str2struct(input.value)
+except:
+    return (-1,2,"Votre réponse n'est pas une expression valide.")
+for (f,score,error,feedback) in test1:
+    if not f(ans):
+            return (score,error,feedback)
 ==
 
