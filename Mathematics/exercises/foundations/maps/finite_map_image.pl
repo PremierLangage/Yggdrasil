@@ -14,7 +14,7 @@ row1=list(range(1,n+1))
 row2=list_randint(n,1,m)
 A=list_randitem_norep(randint(3,4),row1)
 A.sort()
-A_tex=','.join(A)
+A_tex=",".join(A)
 fA=list(set([row2[x-1] for x in A]))
 fA.sort()
 ==
