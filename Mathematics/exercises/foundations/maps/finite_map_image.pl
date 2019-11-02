@@ -9,9 +9,11 @@ lst=list(range(5))
 lstrow1=[]
 for x in lst:
     lstrow1.append("<td> %d </td>" % x)
+row1="<tr> %s </tr>" % join(lstrow1)
 lstrow2=[]
 for x in [3,5,8]:
-    lstrow2.append("<td> %d </td>" % x) 
+    lstrow2.append("<td> %d </td>" % x)
+row2="<tr> %s </tr>" % join(lstrow2)
 ==
 
 text ==
