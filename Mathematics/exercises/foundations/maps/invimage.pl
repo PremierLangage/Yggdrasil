@@ -26,7 +26,7 @@ else:
 E2=randitem("N","Z")
 if E2=="N":
     x2=randint(0,3)
-    E2tex="\mathbb{N}"
+    E2_tex="\mathbb{N}"
 else:
     x2=randint(-3,3)
     E2_tex="\mathbb{Z}"
