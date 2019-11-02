@@ -21,40 +21,9 @@ imA=FiniteSet(*[row2[x-1] for x in A])
 table= Template(tpltable).render(row1=row1,row2=row2)
 ==
 
-extracss==
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-table {
-    margin: auto;
-}
-th, td {
-  padding: 0.5em;
-  text-align:center;
-}
-</style>
-==
-
 text ==
 On considère l'application $! f:\\{1,\ldots,{{n}} \\}\rightarrow \mathbb{N} !$ définie par le tableau ci-dessous.
-<br><br>
-<table>
-<tr>
-<th> $! x !$ </th>
-{% for item in row1 %}
-<td> {{item}} </td>
-{% endfor %}
-</tr>
-<tr>
-<th> $! f(x) !$ </th>
-{% for item in row2 %}
-<td> {{item}} </td>
-{% endfor %}
-</tr>
-</table>
-<br>
+{{table}}
 Déterminer l'image directe de l'ensemble $!\\{ {{A_tex}} \\}!$ par $! f !$.
 ==
 
