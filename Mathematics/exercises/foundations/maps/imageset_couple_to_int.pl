@@ -5,6 +5,9 @@ title = Image d'une application
 lang = fr
 
 before ==
+keyboards_JSON['virtualKeyboards']="sets"
+input.config = keyboards_JSON
+
 n,m=list_randitem_norep(2,symbols("n,m,p,q,r"))
 expr=randitem([n**2+m,n+m**2,n**2-m,n-m**2])
 nn=latex(n)
