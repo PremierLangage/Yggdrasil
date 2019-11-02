@@ -24,11 +24,13 @@ th, td {
 text ==
 <table>
 <tr>
+<th> $! x !$ </th>
 {% for item in row1 %}
 <td> {{item}} </td>
 {% endfor %}
 </tr>
 <tr>
+<th> $! f(x) !$ </th>
 {% for item in row2 %}
 <td> {{item}} </td>
 {% endfor %}
