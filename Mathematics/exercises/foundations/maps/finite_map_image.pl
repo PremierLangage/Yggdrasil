@@ -17,6 +17,7 @@ table, th, td {
 }
 th, td {
   padding: 0.5em;
+  text-align:center;
 }
 </style>
 ==
