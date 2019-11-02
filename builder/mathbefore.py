@@ -50,11 +50,17 @@ if __name__ == "__main__":
     dic = get_context()
 
     if 'before' in dic:
+        glob = globals()
+        dic = dict(list(glob.items()) + list(dic.items()))
         if 'latexparam' in dic:
             LatexPrinter._settings.update(eval(dic['latexparam']))
         dic['StopBeforeExec'] = StopBeforeExec
         print(add_try_clause(dic['before'], StopBeforeExec), file=sys.stderr)
-        exec(add_try_clause(dic['before'], StopBeforeExec),globals(), dic)
+        exec(add_try_clause(dic['before'], StopBeforeExec), dic)
+        exec("", glob)
+        for key in glob:
+            if key in dic and dic[key] == glob[key]:
+                del dic[key]
         for key in dic:
             dic[key]=sympy_to_str(dic[key])
     else:
@@ -69,6 +75,7 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
     
     sys.exit(0)
+
 
 
 
