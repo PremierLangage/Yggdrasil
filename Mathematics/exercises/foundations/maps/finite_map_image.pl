@@ -11,7 +11,8 @@ row1=list(range(1,n+1))
 row2=list_randint(n,1,m)
 A=list_randitem_norep(randint(3,4),row1)
 A_tex=latex(A)
-fA=set([row2[x] for x in A])
+fA=list(set([row2[x] for x in A]))
+fa.sort()
 ==
 
 extracss==
