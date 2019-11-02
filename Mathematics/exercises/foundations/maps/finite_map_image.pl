@@ -23,7 +23,9 @@ table= Template(tpltable).render(row1=row1,row2=row2)
 
 text ==
 On considère l'application $! f:\\{1,\ldots,{{n}} \\}\rightarrow \mathbb{N} !$ définie par le tableau ci-dessous.
-{{table}}
+
+{{table | safe}}
+
 Déterminer l'image directe de l'ensemble $!\\{ {{A_tex}} \\}!$ par $! f !$.
 ==
 
