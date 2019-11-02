@@ -37,7 +37,7 @@ th, td {
 
 text ==
 On considère l'application $! f:\\{1,\ldots,{{n}} \\}\rightarrow \mathbb{N} !$ définie par le tableau ci-dessous.
-<div style="text-align:center;">
+<br>
 <table>
 <tr>
 <th> $! x !$ </th>
@@ -52,7 +52,7 @@ On considère l'application $! f:\\{1,\ldots,{{n}} \\}\rightarrow \mathbb{N} !$ 
 {% endfor %}
 </tr>
 </table>
-</div>
+<br>
 Déterminer l'image directe de l'ensemble $!\\{ {{A_tex}} \\}!$ par $! f !$.
 ==
 
