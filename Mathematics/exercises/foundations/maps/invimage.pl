@@ -52,7 +52,7 @@ if not isinstance(ans,tuple) or len(ans)!=2 or (ans[0]<0 and E1=="N") or (ans[1]
     raise StopEvaluatorExec
 f = Lambda((n,m),expr)
 if  f(*ans)!=y:
-    score,feedback=0,"Votre réponse n'est pas un antécédent de ."
+    score,feedback=0,"$! f(%d , %d) = %d. !$" % (ans[0],ans[1],f(*ans))
     raise StopEvaluatorExec
 score,feedback=100,""
 ==
