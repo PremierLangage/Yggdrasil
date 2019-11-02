@@ -57,7 +57,7 @@ if __name__ == "__main__":
         print(add_try_clause(dic['before'], StopBeforeExec), file=sys.stderr)
         exec(add_try_clause(dic['before'], StopBeforeExec), dic)
         exec("", globals().copy())
-        for key in globals():
+        for key in globals().copy():
             if key in dic and dic[key] == globals()[key]:
                 del dic[key]
         for key in dic:
