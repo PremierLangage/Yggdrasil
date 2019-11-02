@@ -12,8 +12,6 @@ for x in lst:
     row1.append("<td> %d </td>" % x)
 for x in [3,5,8,0,1]:
     row2.append("<td> %d </td>" % x)
-
-table=r"<table style=''><tr> %s </tr><tr> %s </tr></table>" % ("".join(lstrow1),"".join(lstrow2))
 ==
 
 text ==
