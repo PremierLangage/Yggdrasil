@@ -15,8 +15,8 @@ row2=list_randint(n,1,m)
 A=list_randitem_norep(randint(3,4),row1)
 A.sort()
 A_tex=str(A)[1:-1]
-fA=list(set([row2[x-1] for x in A]))
-fA.sort()
+imA=list(set([row2[x-1] for x in A]))
+imA.sort()
 ==
 
 extracss==
@@ -56,7 +56,4 @@ On considère l'application $! f:\\{1,\ldots,{{n}} \\}\rightarrow \mathbb{N} !$ 
 Déterminer l'image directe de l'ensemble $!\\{ {{A_tex}} \\}!$ par $! f !$.
 ==
 
-evaluator==
-score,_,feedback=ans_struct_expr(input.value,fA,"composite")
-==
 
