@@ -15,8 +15,7 @@ row2=list_randint(n,1,m)
 A=list_randitem_norep(randint(3,4),row1)
 A.sort()
 A_tex=str(A)[1:-1]
-imA=list(set([row2[x-1] for x in A]))
-imA.sort()
+imA=FiniteSet(*[row2[x-1] for x in A]))
 ==
 
 extracss==
