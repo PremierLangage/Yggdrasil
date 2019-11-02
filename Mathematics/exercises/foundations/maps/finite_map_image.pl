@@ -16,7 +16,7 @@ table, th, td {
   border-collapse: collapse;
 }
 th, td {
-  padding: 15px;
+  padding: 0.5em;
 }
 </style>
 ==
