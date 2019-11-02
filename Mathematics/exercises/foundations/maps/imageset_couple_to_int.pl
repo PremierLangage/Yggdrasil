@@ -12,22 +12,20 @@ mm=latex(m)
 expr_tex=latex(expr)
 A=FiniteSet((1,3),(4,5))
 f = Lambda ( (n,m) , expr)
-lst=[]
-for v in A:
-    lst.append(f(*v))
-fA=FiniteSet(*lst)
+imA=FiniteSet(*[f(*x) for x in A])
 A_tex=latex(A)
 ==
 
 text ==
 On considère la fonction $! f : \mathbb{Z} \rightarrow \mathbb{Z} \times \mathbb{Z} !$ telle que
 $$f({{nn}},{{mm}})= {{expr_tex}}$$
-Déterminer $! f(\\{ {{A_tex}} \\}). !$
+Déterminer $! f(\\{ {{A_tex}} \\}) !$, l'image directe de 
 ==
 
 evaluator==
-score,_,feedback=ans_struct_expr(input.value,fA,"composite")
+score,_,feedback=ans_struct_expr(input.value,imA,"composite")
 ==
+
 
 
 
