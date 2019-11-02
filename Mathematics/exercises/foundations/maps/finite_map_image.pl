@@ -26,7 +26,7 @@ th, td {
 ==
 
 text ==
-On considère l'application $! f:\{1,\ldots,{{n}} \}\rightarrow \{1,\ldots,{{m}}\}!$ définie par le tableau ci-dessous.
+On considère l'application $! f:\\{1,\ldots,{{n}} \\}\rightarrow \\{1,\ldots,{{m}}\\}!$ définie par le tableau ci-dessous.
 <table>
 <tr>
 <th> $! x !$ </th>
@@ -41,7 +41,7 @@ On considère l'application $! f:\{1,\ldots,{{n}} \}\rightarrow \{1,\ldots,{{m}}
 {% endfor %}
 </tr>
 </table>
-Déterminer l'image directe de l'ensemble $!\{ {{A_tex}} \}!$\ par $! f !$.
+Déterminer l'image directe de l'ensemble $!\\{ {{A_tex}} \\}!$ par $! f !$.
 ==
 
 evaluator==
