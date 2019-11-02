@@ -11,7 +11,7 @@ input.config = keyboards_JSON
 n,m=list_randitem_norep(2,symbols("n,m,p,q,r"))
 nn=latex(n)
 mm=latex(m)
-expr=randint(-3,3,[0])*(n+randint(-2,2))*(m+randint(-2,2))
+expr=factor(randint(-3,3,[0])*(n+randint(-2,2))*(m+randint(-2,2)))
 expr_tex=latex(expr)
 f = Lambda ( (n,m) , expr)
 
