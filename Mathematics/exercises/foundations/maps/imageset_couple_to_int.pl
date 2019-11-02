@@ -13,7 +13,7 @@ expr_tex=latex(expr)
 f = Lambda ( (n,m) , expr)
 
 E = [(x,y) for x in range(-3,4) for y in range(-3,4)]
-A=FiniteSet(*list_randitem_norep(randint(3,4),E))
+A=FiniteSet(*list_randitem_norep(3,E))
 imA=FiniteSet(*[f(*x) for x in A])
 A_tex=latex(A)
 ==
