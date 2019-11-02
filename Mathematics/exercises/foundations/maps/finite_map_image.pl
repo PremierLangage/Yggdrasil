@@ -10,6 +10,7 @@ m=randint(5,9)
 row1=list(range(1,n+1))
 row2=list_randint(n+1,1,m)
 A=list_randitem_norep(randint(3,4),row2)
+AA=*A
 ==
 
 extracss==
@@ -41,7 +42,7 @@ On considère l'application $! f:\\{1,\ldots,{{n}} \\}\rightarrow \\{1,\ldots,{{
 {% endfor %}
 </tr>
 </table>
-Déterminer l'image directe de l'ensemble $!\\{ {{A}} \\}!$ par $! f !$.
+Déterminer l'image directe de l'ensemble $!\\{ {{AA}} \\}!$ par $! f !$.
 ==
 
 evaluator==
