@@ -10,7 +10,7 @@ row2=[3,5,8,0,1]
 ==
 
 text ==
-<table>
+<table style="border: 1px solid black;">
 <tr>
 {% for item in row1 %}
 <td> {{item}} </td>
