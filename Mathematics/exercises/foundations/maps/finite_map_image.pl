@@ -5,7 +5,8 @@ title = Image d'une application
 lang = fr
 
 before ==
-row1=list(range(5))
+
+row1=list(range(n+1))
 row2=[3,5,8,0,1]
 ==
 
