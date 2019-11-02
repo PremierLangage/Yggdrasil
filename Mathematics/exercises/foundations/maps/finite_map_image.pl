@@ -17,7 +17,23 @@ table=r"<table style=''><tr> %s </tr><tr> %s </tr></table>" % ("".join(lstrow1),
 ==
 
 text ==
-{{table}}
+<table style="width:100%">
+  <tr>
+    <th>Jill</th>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <th>Eve</th>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <th>John</th>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
 ==
 
 evaluator==
