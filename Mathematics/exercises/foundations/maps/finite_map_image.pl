@@ -1,10 +1,13 @@
 extends = /Mathematics/template/mathinput.pl
 
-title = Image d'une application
+title = Image directe d'une application
 
 lang = fr
 
 before ==
+keyboards_JSON['virtualKeyboards']="sets"
+input.config = keyboards_JSON
+
 n=randint(5,9)
 m=randint(5,9)
 row1=list(range(1,n+1))
@@ -30,8 +33,7 @@ th, td {
 ==
 
 text ==
-{{fA}}
-On considère l'application $! f:\\{1,\ldots,{{n}} \\}\rightarrow \\{1,\ldots,{{m}}\\}!$ définie par le tableau ci-dessous.
+On considère l'application $! f:\\{1,\ldots,{{n}} \\}\rightarrow \mathbb{N} !$ définie par le tableau ci-dessous.
 <table>
 <tr>
 <th> $! x !$ </th>
@@ -50,7 +52,6 @@ Déterminer l'image directe de l'ensemble $!\\{ {{A_tex}} \\}!$ par $! f !$.
 ==
 
 evaluator==
-score,code,feedback=ans_struct_expr(input.value,fA,"composite")
-feedback=code+str(FiniteSet2struct(fA))+str(str2struct(input.value))
+score,_,feedback=ans_struct_expr(input.value,fA,"composite")
 ==
 
