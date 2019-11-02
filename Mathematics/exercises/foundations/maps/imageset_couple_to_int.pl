@@ -6,7 +6,7 @@ lang = fr
 
 before ==
 n,m=list_randitem_norep(2,symbols("n,m,p,q,r"))
-expr=randitem([n+m,n-m,m-n,n**2+m,n+m**2,n**2-m,n-m**2])
+expr=randitem([n**2+m,n+m**2,n**2-m,n-m**2])
 nn=latex(n)
 mm=latex(m)
 expr_tex=latex(expr)
