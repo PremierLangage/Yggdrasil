@@ -22,7 +22,7 @@ th, td {
 ==
 
 text ==
-<table style="border: 1px solid black;">
+<table>
 <tr>
 {% for item in row1 %}
 <td> {{item}} </td>
