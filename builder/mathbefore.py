@@ -50,7 +50,7 @@ if __name__ == "__main__":
     dic = get_context()
 
     if 'before' in dic:
-        glob = globals()
+        glob = globals().copy()
         dic = dict(list(glob.items()) + list(dic.items()))
         if 'latexparam' in dic:
             LatexPrinter._settings.update(eval(dic['latexparam']))
