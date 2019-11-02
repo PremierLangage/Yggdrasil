@@ -20,20 +20,17 @@ imA=FiniteSet(*[x+1 for x in range(n) if row2[x] in A])
 text ==
 On considère l'application $! f:\\{1,\ldots,{{n}} \\}\rightarrow \mathbb{N} !$ définie par le tableau ci-dessous.
 <br><br>
-<table>
-<tr>
+<table><tr>
 <th> $! x !$ </th>
 {% for item in row1 %}
 <td> {{item}} </td>
 {% endfor %}
-</tr>
-<tr>
+</tr><tr>
 <th> $! f(x) !$ </th>
 {% for item in row2 %}
 <td> {{item}} </td>
 {% endfor %}
-</tr>
-</table>
+</tr></table>
 <br>
 Déterminer l'image réciproque de l'ensemble $!\\{ {{A_tex}} \\}!$ par $! f !$.
 ==
