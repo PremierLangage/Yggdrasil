@@ -17,7 +17,7 @@ th, td {
 </style>
 ==
 
-tabletemplate ==
+tpltable ==
 <table>
 <tr>
 <th> $! x !$ </th>
