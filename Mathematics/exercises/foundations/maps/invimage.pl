@@ -46,10 +46,10 @@ try:
     ans=str2struct(input.value)
 except:
     score,feedback=-1,"Votre réponse n'est pas une expression valide."
-    StopEvaluatorExec:
+    raise StopEvaluatorExec
 if not isinstance(ans,tuple) or len(ans)!=2 or (ans[0]<0 and E1=="N") or (ans[1]<0 and E2=="N"):
     score,feedback=0,"Votre réponse n'est pas un élement de ."
-    StopEvaluatorExec:
+    raise StopEvaluatorExec
 f = Lambda((n,m),expr)
 if  f(*ans)!=y:
     score,feedback=0,"Votre réponse n'est pas un antécédent de ."
