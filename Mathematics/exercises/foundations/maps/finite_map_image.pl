@@ -9,7 +9,7 @@ n=randint(5,9)
 m=randint(5,9)
 row1=list(range(1,n+1))
 row2=list_randint(n+1,1,m)
-A=list_randint_norep(row2,randint(3,4))
+A=list_randint_norep(randint(3,4),row2)
 ==
 
 extracss==
