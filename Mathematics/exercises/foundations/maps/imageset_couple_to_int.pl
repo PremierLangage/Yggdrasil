@@ -21,7 +21,7 @@ A_tex=latex(A)
 text ==
 On considère la fonction $! f : \mathbb{Z} \times \mathbb{Z} \rightarrow \mathbb{Z} !$ telle que
 $$f({{nn}},{{mm}})= {{expr_tex}}$$
-Déterminer $! f(\\{ {{A_tex}} \\}) !$, l'image directe de 
+Déterminer $! f(\\{ {{A_tex}} \\}). !$
 ==
 
 evaluator==
