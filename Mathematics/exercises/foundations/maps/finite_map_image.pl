@@ -5,6 +5,8 @@ title = Image directe d'une application
 lang = fr
 
 before ==
+from jinja2 import template
+
 keyboards_JSON['virtualKeyboards']="sets"
 input.config = keyboards_JSON
 
@@ -15,6 +17,8 @@ row2=list_randint(n,1,m)
 A=FiniteSet(*list_randitem_norep(randint(3,4),row1))
 A_tex=latex(A)
 imA=FiniteSet(*[row2[x-1] for x in A])
+
+table= Template(tpltable).render(row1=row1,row2=row2)
 ==
 
 extracss==
