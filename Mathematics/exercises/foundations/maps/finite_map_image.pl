@@ -7,20 +7,21 @@ lang = fr
 before ==
 lst=list(range(5))
 lstrow1=[]
+lstrow2=[]
 for x in lst:
     lstrow1.append("<td> %d </td>" % x)
-row1="<tr> %s </tr>" % "".join(lstrow1)
-lstrow2=[]
-for x in [3,5,8]:
+for x in [3,5,8,0,1]:
     lstrow2.append("<td> %d </td>" % x)
-row2="<tr> %s </tr>" % "".join(lstrow2)
+
+table="""<table style="width:100%">
+        <tr> %s </tr>
+        <tr> %s </tr>
+        </table> 
+     """ % ("".join(lstrow1),"".join(lstrow2))
 ==
 
 text ==
- <table style="width:100%">
-{{row1}}
-{{row2}}
-</table> 
+{{table}}
 ==
 
 evaluator==
