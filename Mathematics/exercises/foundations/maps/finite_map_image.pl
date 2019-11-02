@@ -8,7 +8,7 @@ before ==
 n=randint(5,9)
 m=randint(5,9)
 row1=list(range(n+1))
-row2=list_randint(0,m)
+row2=list_randint(n+1,0,m)
 ==
 
 extracss==
