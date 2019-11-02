@@ -20,12 +20,13 @@ text ==
 {% for item in row1 %}
 <td> item </td>
 {% endfor %}
-<tr>
+</tr>
 <tr>
 {% for item in row2 %}
 <td> item </td>
 {% endfor %}
-<tr>e>
+</tr>
+</table>
 ==
 
 evaluator==
