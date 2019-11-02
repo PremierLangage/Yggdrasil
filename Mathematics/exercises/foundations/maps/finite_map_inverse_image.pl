@@ -2,8 +2,6 @@ extends = finite_map_.pl
 
 title = Image réciproque d'une application
 
-lang = fr
-
 before ==
 keyboards_JSON['virtualKeyboards']="sets"
 input.config = keyboards_JSON
