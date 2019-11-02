@@ -28,6 +28,7 @@ th, td {
 ==
 
 text ==
+{{fA}}
 On considère l'application $! f:\\{1,\ldots,{{n}} \\}\rightarrow \\{1,\ldots,{{m}}\\}!$ définie par le tableau ci-dessous.
 <table>
 <tr>
