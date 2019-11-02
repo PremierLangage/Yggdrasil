@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathinput.pl
+extends = finite_map_.pl
 
 title = Image directe d'une application
 
