@@ -3,8 +3,10 @@ extends = finite_map_.pl
 title = Image réciproque d'une application
 
 before ==
-keyboards_JSON['virtualKeyboards']="sets"
-input.config = keyboards_JSON
+drag1 = DragDrop()
+drag1.content = "et"
+
+
 
 n=randint(5,9)
 m=randint(5,9)
