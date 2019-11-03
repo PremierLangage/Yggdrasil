@@ -29,6 +29,10 @@ table= Template(tpltable).render(row1=row1,row2=row1)
 ==
 
 text ==
+On considère l'application $! f:\\{1,\ldots,{{n}} \\}\rightarrow \mathbb{N} !$ définie par le tableau ci-dessous.
+<br>
+{{table|safe}}
+<br>
 {{table}}
 ==
 
