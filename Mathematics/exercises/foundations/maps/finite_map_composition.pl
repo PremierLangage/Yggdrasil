@@ -2,6 +2,9 @@ extends = finite_map_.pl
 
 title = Image réciproque d'une application
 
+drag1 =: DragDrop
+drag1.content = et
+
 before ==
 drag1 = DragDrop()
 drag1.content = "et"
