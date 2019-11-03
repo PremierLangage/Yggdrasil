@@ -34,8 +34,7 @@ tableg = Template(tpltable).render(row1=row1,row2=row2g,fx="$! g(x) !$")
 text ==
 On considère les applications  $! f:\\{1,\ldots,{{n}} \\}\rightarrow \\{1,\ldots,{{n}} \\} !$ définie par le tableau ci-dessous.
 <br>
-{{tablef|safe}}
-{{tableg|safe}}
+{{tablef|safe}} {{tableg|safe}}
 <br>
 ==
 
