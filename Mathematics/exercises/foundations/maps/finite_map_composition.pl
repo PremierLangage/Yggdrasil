@@ -25,7 +25,7 @@ for i in range(1,n+1):
 from jinja2 import Template
 
 row1=list(range(1,n+1))
-table= Template(tpltabledrop).render(row1=row1,row2=row1)
+table= Template(tpltable).render(row1=row1,row2=row1)
 ==
 
 text ==
