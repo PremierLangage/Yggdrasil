@@ -62,7 +62,7 @@ form ==
 ==
 
 evaluator==
-drop=[drop1,drop2,drop3,drop4,drop5,drop6]
+drop=[drop1,drop2,drop3,drop4,drop5]
 
 score=100
 feedback=""
