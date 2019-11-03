@@ -3,6 +3,8 @@ extends = finite_map_.pl
 title = Image réciproque d'une application
 
 before ==
+from jinja2 import Template
+
 keyboards_JSON['virtualKeyboards']="sets"
 input.config = keyboards_JSON
 
