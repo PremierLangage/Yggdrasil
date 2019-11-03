@@ -34,7 +34,9 @@ tableg = Template(tpltable).render(row1=row1,row2=row2g,fx="$! g(x) !$")
 text ==
 On considère les applications  $! f:\\{1,\ldots,{{n}} \\}\rightarrow \\{1,\ldots,{{n}} \\} !$ définie par le tableau ci-dessous.
 <br>
-{{tablef|safe}} {{tableg|safe}}
+{{tablef|safe}}
+<br>
+{{tableg|safe}}
 <br>
 ==
 
@@ -60,10 +62,9 @@ form ==
 ==
 
 evaluator==
-score,_,feedback=ans_struct_expr(input.value,imA,"composite")
-==
-
-solution ==
-La solution est $! {{imA_tex}} !$
+score=100
+feedback=""
+for e in drop:
+    feedback+=e.content
 ==
 
