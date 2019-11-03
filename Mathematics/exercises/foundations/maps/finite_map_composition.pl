@@ -42,7 +42,7 @@ form ==
 </tr>
 <tr>
 <th> $! f(x) !$ </th>
-{% for item in row2 %}
+{% for e in drop %}
 <td> {{e|component}} </td>
 {% endfor %}
 </tr>
