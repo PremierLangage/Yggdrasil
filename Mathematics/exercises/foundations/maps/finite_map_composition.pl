@@ -6,8 +6,9 @@ drop1 =: DragDrop
 drop1.droppable = True
 
 before ==
-drag1 = DragDrop()
-drag1.content = "et"
+for i in range(5):
+    globals()["drag"+str(i)] = DragDrop()
+    globals()["drag"+str(i)].content = str(i)
 
 
 
