@@ -45,6 +45,7 @@ On considère les applications  $! f:\\{1,\ldots,{{n}} \\}\rightarrow \\{1,\ldot
 <br>
 {{tableg|safe}}
 <br>
+Déterminer l'application $! {{h}} !$.
 ==
 
 form ==
@@ -56,7 +57,7 @@ form ==
 {% endfor %}
 </tr>
 <tr>
-<th> {{hx}} </th>
+<th> $! {{h}} (x) !$ </th>
 {% for e in drop %}
 <td> {{e|component}} </td>
 {% endfor %}
