@@ -1,4 +1,6 @@
+extends = /Mathematics/template/mathbasic.pl
 extends = finite_map_.pl
+
 
 title = Composition d'applications
 
