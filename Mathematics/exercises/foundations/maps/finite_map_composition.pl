@@ -73,7 +73,7 @@ for i in range(1,n+1):
 feedback=""
 score=100
 for i in range(n):
-    if drop[i].content==sol[i]:
+    if drop[i].content==str(sol[i]):
         drop[i].css = "success-state"
     else:
         score=0
