@@ -8,7 +8,6 @@ table, th, td {
   border-collapse: collapse;
 }
 table {
-    float: left;
     margin: auto;
 }
 th, td {
