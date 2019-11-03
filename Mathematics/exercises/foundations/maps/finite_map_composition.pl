@@ -67,9 +67,13 @@ for i in range(1,n+1):
     name="drop"+str(i)
     drop.append(locals()[name])
 
-score=100
 feedback=""
-for e in drop:
-    feedback+=e.content
+score=100
+for i in range(n):
+    if drop[i].content==sol[i]:
+        drop[i].css = "success-state"
+    else:
+        score=0
+        drop[i].css = "error-state" 
 ==
 
