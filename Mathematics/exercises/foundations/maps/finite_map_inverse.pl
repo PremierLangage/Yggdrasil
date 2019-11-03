@@ -1,6 +1,6 @@
 extends = finite_map_composition.pl
 
-title = Inverse d'une application
+title = Application réciproque
 
 before ==
 n=randint(4,5)
