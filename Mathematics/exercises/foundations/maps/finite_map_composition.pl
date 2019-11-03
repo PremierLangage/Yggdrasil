@@ -9,9 +9,10 @@ before ==
 n=5
 drag=[]
 for i in range(1,n+1):
-    globals()["drag"+str(i)] = DragDrop()
-    globals()["drag"+str(i)].content = str(i)
-    drag.append(globals()["drag"+str(i)])
+    name="drag"+str(i)
+    globals()[name] = DragDrop()
+    globals()[name].content = str(i)
+    drag.append(globals()[name])
 
 
 
