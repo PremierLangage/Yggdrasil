@@ -6,7 +6,7 @@ drop1 =: DragDrop
 drop1.droppable = True
 
 before ==
-n=5
+n=randint(5,6)
 drag=[]
 for i in range(1,n+1):
     name="drag"+str(i)
@@ -29,7 +29,9 @@ row2f=list_randint_norep(n,1,n)
 row2g=list_randint_norep(n,1,n)
 tablef = Template(tpltable).render(row1=row1,row2=row2f,fx="$! f(x) !$")
 tableg = Template(tpltable).render(row1=row1,row2=row2g,fx="$! g(x) !$")
-
+sol=[]
+for i in range(n):
+    sol.append(row2f[row2g[i]-1])
 ==
 
 text ==
