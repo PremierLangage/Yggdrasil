@@ -62,10 +62,7 @@ form ==
 ==
 
 evaluator==
-drop=[]
-for i in range(1,n+1):
-    name="drop"+str(i)
-    drop.append(globals()[name])
+drop=[drop1,drop2,drop3,drop4,drop5,drop6]
 
 score=100
 feedback=""
