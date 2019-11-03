@@ -25,13 +25,18 @@ for i in range(1,n+1):
 from jinja2 import Template
 
 row1=list(range(1,n+1))
-table= Template(tpltable).render(row1=row1,row2=row1)
+row2f=list_randint_norep(1,n)
+row2g=list_randint_norep(1,n)
+tablef = Template(tpltable).render(row1=row1,row2f =row1,name="$! f(x) !$")
+tableg = Template(tpltable).render(row1=row1,row2g =row1,name="$! g(x) !$")
 ==
 
 text ==
-On considère l'application $! f:\\{1,\ldots,{{n}} \\}\rightarrow \\{1,\ldots,{{n}} \\} !$ définie par le tableau ci-dessous.
+On considère les applications  $! f:\\{1,\ldots,{{n}} \\}\rightarrow \\{1,\ldots,{{n}} \\} !$ définie par le tableau ci-dessous.
 <br>
-{{table|safe}}
+{{tablef|safe}}
+
+{{tableg|safe}}
 <br>
 ==
 
