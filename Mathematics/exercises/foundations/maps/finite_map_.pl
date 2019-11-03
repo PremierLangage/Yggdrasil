@@ -1,6 +1,3 @@
-extends = /Mathematics/template/mathinput.pl
-
-
 extracss==
 <style>
 table, th, td {
@@ -26,7 +23,7 @@ tpltable ==
 {% endfor %}
 </tr>
 <tr>
-<th> {{fx}} </th>
+<th> $! {{f}} (x) !$ </th>
 {% for item in row2 %}
 <td> {{item}} </td>
 {% endfor %}
