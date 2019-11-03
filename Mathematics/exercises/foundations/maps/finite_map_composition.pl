@@ -29,6 +29,7 @@ row2g=list_randint_norep(n,1,n)
 tablef = Template(tpltable).render(row1=row1,row2=row2f,f="f")
 tableg = Template(tpltable).render(row1=row1,row2=row2g,f="g")
 
+case=randitem([1,2])
 sol=[]
 if case==1:
     for i in range(n):
