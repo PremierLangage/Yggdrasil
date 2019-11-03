@@ -27,8 +27,8 @@ from jinja2 import Template
 row1=list(range(1,n+1))
 row2f=list_randint_norep(n,1,n)
 row2g=list_randint_norep(n,1,n)
-tablef = Template(tpltable).render(row1=row1,row2f =row1,name="$! f(x) !$")
-tableg = Template(tpltable).render(row1=row1,row2g =row1,name="$! g(x) !$")
+tablef = Template(tpltable).render(row1=row1,row2=row2f,name="$! f(x) !$")
+tableg = Template(tpltable).render(row1=row1,row2=row2g,name="$! g(x) !$")
 ==
 
 text ==
