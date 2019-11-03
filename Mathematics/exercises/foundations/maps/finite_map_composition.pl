@@ -33,7 +33,6 @@ text ==
 ==
 
 form ==
-
 <table>
 <tr>
 <th> $! x !$ </th>
