@@ -2,8 +2,8 @@ extends = finite_map_.pl
 
 title = Image réciproque d'une application
 
-drag1 =: DragDrop
-drag1.content = et
+drop1 =: DragDrop
+drop1.droppable = True
 
 before ==
 drag1 = DragDrop()
@@ -21,7 +21,7 @@ imA=FiniteSet(*[x+1 for x in range(n) if row2[x] in A])
 ==
 
 text ==
-{{drag1}}
+{{drag1|component}}
 ==
 
 evaluator==
