@@ -62,6 +62,11 @@ form ==
 ==
 
 evaluator==
+drag=[]
+for i in range(1,n+1):
+    name="drag"+str(i)
+    drag.append(globals()[name])
+
 score=100
 feedback=""
 for e in drop:
