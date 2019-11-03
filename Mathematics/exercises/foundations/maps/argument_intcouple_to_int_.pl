@@ -9,7 +9,7 @@ input.config = keyboards_JSON
 n,m=list_randitem_norep(2,symbols("n,m,p,q,r"))
 nn=latex(n)
 mm=latex(m)
-expr=eval({{exprcode}})
+expr=eval(exprcode)
 expr_tex=latex(expr)
 f = Lambda ( (n,m) , expr)
 
