@@ -6,7 +6,8 @@ drop1 =: DragDrop
 drop1.droppable = True
 
 before ==
-for i in range(5):
+n=5
+for i in range(1,n):
     globals()["drag"+str(i)] = DragDrop()
     globals()["drag"+str(i)].content = str(i)
 
