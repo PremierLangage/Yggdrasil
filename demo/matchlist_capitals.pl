@@ -1,9 +1,7 @@
 extends = /template/basic.pl
-
 @ /utils/matchlist.py [custommatchlist.py]
 
 @ country_data.csv [data.csv]
-
 
 match =: MatchList
 match.decorator = CustomMatchList
