@@ -31,9 +31,9 @@ imA=FiniteSet(*[x+1 for x in range(n) if row2[x] in A])
 ==
 
 text ==
-{% for e in drag %}
+{% for e in drag -%}
 {{ e|component }}
-{% endfor %}
+{%- endfor %}
 ==
 
 evaluator==
