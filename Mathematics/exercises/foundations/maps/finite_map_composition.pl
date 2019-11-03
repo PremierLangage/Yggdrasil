@@ -32,8 +32,7 @@ text ==
 {{table}}
 ==
 
-form ==
-<table>
+form ==<table>
 <tr>
 <th> $! x !$ </th>
 {% for item in row1 %}
