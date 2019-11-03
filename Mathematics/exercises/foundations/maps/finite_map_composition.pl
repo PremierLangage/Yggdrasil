@@ -29,11 +29,10 @@ table= Template(tpltable).render(row1=row1,row2=row1)
 ==
 
 text ==
-On considère l'application $! f:\\{1,\ldots,{{n}} \\}\rightarrow \mathbb{N} !$ définie par le tableau ci-dessous.
+On considère l'application $! f:\\{1,\ldots,{{n}} \\}\rightarrow \\{1,\ldots,{{n}} \\} !$ définie par le tableau ci-dessous.
 <br>
 {{table|safe}}
 <br>
-{{table}}
 ==
 
 form ==
@@ -41,7 +40,7 @@ form ==
 <tr>
 <th> $! x !$ </th>
 {% for item in row1 %}
-<td> {{item}} </td>
+<td> {{item|safe}} </td>
 {% endfor %}
 </tr>
 <tr>
