@@ -6,8 +6,7 @@ drag1 =: DragDrop
 drag1.content = et
 
 before ==
-drag1 = DragDrop()
-drag1.content = "et"
+
 
 
 
