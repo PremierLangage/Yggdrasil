@@ -1,12 +1,9 @@
 extends = finite_map_.pl
 
-title = Image réciproque d'une application
-
-drop1 =: DragDrop
-drop1.droppable = True
+title = Composition d'applications
 
 before ==
-n=randint(5,6)
+n=randint(4,5)
 drag=[]
 for i in range(1,n+1):
     name="drag"+str(i)
@@ -27,11 +24,18 @@ from jinja2 import Template
 row1=list(range(1,n+1))
 row2f=list_randint_norep(n,1,n)
 row2g=list_randint_norep(n,1,n)
-tablef = Template(tpltable).render(row1=row1,row2=row2f,fx="$! f(x) !$")
-tableg = Template(tpltable).render(row1=row1,row2=row2g,fx="$! g(x) !$")
+tablef = Template(tpltable).render(row1=row1,row2=row2f,f="f")
+tableg = Template(tpltable).render(row1=row1,row2=row2g,f="g")
+
 sol=[]
-for i in range(n):
-    sol.append(row2f[row2g[i]-1])
+if case==1:
+    for i in range(n):
+        sol.append(row2f[row2g[i]-1])
+    h="f \circ g"
+else:
+    for i in range(n):
+        sol.append(row2g[row2f[i]-1])
+    h="g \circ f"
 ==
 
 text ==
@@ -52,7 +56,7 @@ form ==
 {% endfor %}
 </tr>
 <tr>
-<th> $! f(x) !$ </th>
+<th> {{hx}} </th>
 {% for e in drop %}
 <td> {{e|component}} </td>
 {% endfor %}
