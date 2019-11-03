@@ -14,6 +14,7 @@ for i in range(1,n+1):
     globals()[name].content = str(i)
     drag.append(globals()[name])
 
+drop=[]
 for i in range(1,n+1):
     name="drop"+str(i)
     globals()[name] = DragDrop()
