@@ -25,11 +25,29 @@ for i in range(1,n+1):
 from jinja2 import Template
 
 row1=list(range(1,n+1))
-table= Template(tpltabledrop).render(row1=row1,row2=drop)
+table= Template(tpltabledrop).render(row1=row1,row2=row1)
 ==
 
 text ==
 {{table}}
+==
+
+form ==
+
+<table>
+<tr>
+<th> $! x !$ </th>
+{% for item in row1 %}
+<td> {{item}} </td>
+{% endfor %}
+</tr>
+<tr>
+<th> $! f(x) !$ </th>
+{% for item in row2 %}
+<td> {{e|component}} </td>
+{% endfor %}
+</tr>
+</table>
 
 {% for e in drag -%}
 {{ e|component }}
