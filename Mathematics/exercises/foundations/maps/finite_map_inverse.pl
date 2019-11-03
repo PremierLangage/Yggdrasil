@@ -27,7 +27,7 @@ table = Template(tpltable).render(row1=row1,row2=row2,f="f")
 ==
 
 text ==
-On considère l'application  $! f:\\{1,\ldots,{{n}} \\}\rightarrow \\{1,\ldots,{{n}} \\} !$ définie par le tableau ci-dessous.
+On considère l'application bijective $! f:\\{1,\ldots,{{n}} \\}\rightarrow \\{1,\ldots,{{n}} \\} !$ définie par le tableau ci-dessous.
 <br>
 {{table|safe}}
 <br>
