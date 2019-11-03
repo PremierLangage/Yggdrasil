@@ -29,6 +29,8 @@ table= Template(tpltabledrop).render(row1=row1,row2=drop)
 ==
 
 text ==
+{{table}}
+
 {% for e in drag -%}
 {{ e|component }}
 {%- endfor %}
