@@ -26,7 +26,7 @@ row2=list_randint_norep(n,1,n)
 table = Template(tpltable).render(row1=row1,row2=row2,f="f")
 sol=n*[0]
 for i in range(n):
-    sol[row2[i]]=i+1
+    sol[row2[i]-1]=i+1
 ==
 
 text ==
