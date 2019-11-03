@@ -62,7 +62,6 @@ form ==
 ==
 
 evaluator==
-drop=[drop1,drop2,drop3,drop4,drop5]
 for i in range(1,n+1):
     name="drop"+str(i)
     drop.append(locals()[name])
