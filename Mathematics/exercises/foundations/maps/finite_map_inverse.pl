@@ -27,13 +27,11 @@ table = Template(tpltable).render(row1=row1,row2=row2,f="f")
 ==
 
 text ==
-On considère l'application  $! f:\\{1,\ldots,{{n}} \\}\rightarrow \\{1,\ldots,{{n}} \\} !$ et $! g:\\{1,\ldots,{{n}} \\}\rightarrow \\{1,\ldots,{{n}} \\} !$ définies par les tableaux ci-dessous.
+On considère l'application  $! f:\\{1,\ldots,{{n}} \\}\rightarrow \\{1,\ldots,{{n}} \\} !$ définie par le tableau ci-dessous.
 <br>
-{{tablef|safe}}
+{{table|safe}}
 <br>
-{{tableg|safe}}
-<br>
-Déterminer l'application réciproque $! {{h}} !$.
+Déterminer l'application réciproque $! f^{-1} !$.
 ==
 
 form ==
@@ -45,7 +43,7 @@ form ==
 {% endfor %}
 </tr>
 <tr>
-<th> $! {{h}} (x) !$ </th>
+<th> $! f^{-1}(x) !$ </th>
 {% for e in drop %}
 <td> {{e|component}} </td>
 {% endfor %}
