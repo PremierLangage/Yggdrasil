@@ -18,6 +18,7 @@ imA=FiniteSet(*[x+1 for x in range(n) if row2[x] in A])
 ==
 
 text ==
+{{drag1}}
 On considère l'application $! f:\\{1,\ldots,{{n}} \\}\rightarrow \mathbb{N} !$ définie par le tableau ci-dessous.
 
 <br>
