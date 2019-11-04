@@ -202,3 +202,10 @@ autocomplete(document.getElementById("form_toto"), countries);
 </script>
 ==
 
+evaluator==
+
+
+grade=(100, response['toto'])
+
+==
+
