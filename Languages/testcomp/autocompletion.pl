@@ -204,8 +204,11 @@ autocomplete(document.getElementById("form_toto"), countries);
 
 evaluator==
 
+if response['toto']==capital :
 
-grade=(100, response['toto'])
+  grade=(100, "bravo" )
+else:
+  grade=(0," reessayez ")
 
 ==
 
