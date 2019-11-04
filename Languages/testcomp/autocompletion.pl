@@ -85,9 +85,13 @@ Quel pays a pour capitale {{capital}} ?
 
 form ==
   <div class="autocomplete" style="width:300px;">
-    <input id="myInput" type="text" name="myCountry" >
+    <input id="form_toto" type="text" name="myCountry" >
   </div>
 ==
+
+
+
+
 
 extrajs==
 <script>
@@ -194,6 +198,7 @@ var countries = ['France', 'Allemagne', 'Danemark', 'Belgique', 'Hongrie', 'Pays
 countries.sort();
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
-autocomplete(document.getElementById("myInput"), countries);
+autocomplete(document.getElementById("form_toto"), countries);
 </script>
 ==
+
