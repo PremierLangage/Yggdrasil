@@ -9,8 +9,8 @@ text==
 La suite de Syracuse est une suite d'entiers définie par :
 
 * $%u_0 \gt 0%$
-* $%u_{n+1}=u_n/2%$ si n est pair<br>
-* $%u_{n+1}=3u_n+1%$ si n est impair<br>
+* $%u_{n+1}=u_n/2%$ si $% u_n %$ est pair<br>
+* $%u_{n+1}=3u_n+1%$ si $% u_n %$ est impair<br>
 
 Pour tout entier strictement positif $%u_0%$ testé, la suite converge vers 1. 
 Le premier n tel que $%u_n=1%$ est appelé temps de vol de la suite.
@@ -96,6 +96,7 @@ negatif
 11
 
 ==
+
 
 
 
