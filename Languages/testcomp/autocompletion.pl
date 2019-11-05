@@ -4,6 +4,8 @@
 
 @ /demo/country_data.csv [data.csv]
 
+
+csv = /demo/country_data.csv
 title = Capitales de pays
 
 extracss==
