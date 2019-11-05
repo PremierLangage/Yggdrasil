@@ -9,12 +9,12 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 title =Entiers de Gauss
 text==  
 
-On appelle "entier de Gauss" un nombre complexe $%z=a+\mathrm{i}b , a,b \in \mathbb{R} %$
+On appelle "entier de Gauss" un nombre complexe $%z=a+\mathrm{i}b , (a,b) \in \mathbb{N}^2 %$
 
 Ecrire une fonction *carre_Gauss(r)* qui renvoie la liste  d'entiers de Gauss de module inférieur à $%r%$
 dont le carré est également un entier de Gauss de module inférieur à $%r%$. La liste est une liste de couples
 ordonnées lexicographiqueùment.
- >>>carre_Gauss(2)
+ >>>carre_Gauss(2)<br>
 [(-2, 0), (-1, -1), (-1, 0), (-1, 1), (0, -2), (0, -1), (0, 0), (0, 1), (0, 2), (1, -1), (1, 0), (1, 1), (2, 0)]
 
 ==
