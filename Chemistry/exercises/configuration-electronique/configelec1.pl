@@ -1,6 +1,6 @@
 title= Configuration Electronique 
 
-author= I. Navizet 
+author= I. Navizet & DR
 
 form=@ /form/simpletextform.html 
 
@@ -72,14 +72,14 @@ import verif
 
 
 try: 
-    print("La configuration du ",name.split(",")[0],"  est:",verif.latexfromz(Z),file=sys.stderr)
+    print("La configuration du ",name.split(",")[0],"  est:",verif.strfromz(Z),file=sys.stderr)
     s=response['txt_answer'].lower()
     nbessai += 1
     if verif.verif(s,Z) :
         nbsuccess += 1
         grade = (100, success_feedback)
     else:
-        print("votre response est :", verif.latexfromstr(response['txt_answer'].lower()), file=sys.stderr)
+        print("votre response est :", response['txt_answer'].lower(), file=sys.stderr)
         grade = (0, failure_feedback)
     exec(before)
 except:
