@@ -86,16 +86,16 @@ def unitTestWithOutput(testname, studentfilename, outputstr, input_str, feedback
     #print(" recu:",xo)
     if res:
         feedback.addTestSuccess(testname, xo, outputstr )
-        return True
-    r = oc.output_difference(doctest.Example(" le test", outputstr), xo,0)
-    if r.startswith("Expected:") and "Got:" in r :
-        want,got = r.split("Got:")
-        want= want[9:]
     else:
-        want=r
-        got=""
-    feedback.addTestFailure(testname,got,want)
-    return False
+        r = oc.output_difference(doctest.Example(" le test", outputstr), xo,0)
+        if r.startswith("Expected:") and "Got:" in r :
+                want,got = r.split("Got:")
+                want= want[9:]
+        else:
+                want=r
+                got=""
+        feedback.addTestFailure(testname,got,want)
+    return res
 
 
 def runsolucetests(tests, feedback, studentfilename=None, solucefilename=None, flags=0x1):
@@ -115,7 +115,6 @@ def runsolucetests(tests, feedback, studentfilename=None, solucefilename=None, f
         if not ok and flags:
            # FIXME break  # arret sur le premier tests invalide
            break
-           pass
         if ok:
             res += 1
     
