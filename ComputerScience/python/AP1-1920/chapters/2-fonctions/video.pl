@@ -6,8 +6,7 @@
 title= 
 text= 
 
-
-link =$  video.mov
+link =$ video.mov
 
 before==
 ==
