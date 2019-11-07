@@ -1,4 +1,5 @@
 #author=C.W.
+
 title=Une fonction carre
 
 tag=function # N'oubliez pas de remplir ce champs svp
