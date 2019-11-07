@@ -1,6 +1,6 @@
 #author=C.W.
 
-title=Une fonction carre
+title=Une fonction test
 
 tag=function # N'oubliez pas de remplir ce champs svp
 extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
