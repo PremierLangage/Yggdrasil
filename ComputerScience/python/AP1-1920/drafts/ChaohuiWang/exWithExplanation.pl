@@ -30,7 +30,7 @@ Faire une fonction pour enlever automatiquement l'element au milieu de cette lis
 # one can define supplemental pltests here
 before==
 import random 
-l = [random.randint(0,10) for i in range(10)]
+l = [random.randint(0,10) for i in range(11)]
 
 pltest1=""">>> carre({})\n{}\n""".format(p, p**2)
 p+=17
@@ -54,4 +54,5 @@ def carre(n):
     return n*6
 ==
 editor.height=145
+
 
