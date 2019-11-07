@@ -30,6 +30,7 @@ True
 >>> convertirChaine([1,2]) == [1,2]
 True
 >>> convertirChaine([]) == []
+True
 ==
 
 # the codes provided in the PL test instance and the client can use/modify it directly (shown in the client's webpage if using "editor.code")
