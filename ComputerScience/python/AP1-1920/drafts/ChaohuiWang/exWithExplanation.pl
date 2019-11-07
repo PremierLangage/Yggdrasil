@@ -20,7 +20,7 @@ piste=verte
 
 # the subject of the exercise shown in the PL test instance
 text==
-## Une fonction carre ## 
+##  ## 
 Ecrivez une fonction `carre` qui retourne le carré de son paramêtre
 ==
 
