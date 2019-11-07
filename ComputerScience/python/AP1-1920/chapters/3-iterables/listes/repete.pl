@@ -24,7 +24,15 @@ pltest0==
 [[[], [], []], [[], [], []], [[], [], []], [[], [], []]]
 ==
 
-editor.code=
+Xeditor.code==
+def repete(n, l):
+    res = []
+    for e in l:
+        for _ in range(n):
+            res.append(e)
+    return res
+
+==
  
 
 tests %=
