@@ -40,7 +40,7 @@ pltest==
 True
 >>> convertirChaine([1,2,5,6,3])
 0
->>> Enlever(10)
+>>> convertirChaine(10)
 100
 >>> 
 ==
