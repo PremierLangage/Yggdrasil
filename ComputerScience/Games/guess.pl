@@ -35,8 +35,6 @@ form ==
 
 evaluator== #|python|
 
-countdown.actions = []
-
 counter = 0
 for e in hints.items:
     if 'consumed' in e:
