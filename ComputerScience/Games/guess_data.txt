@@ -21,4 +21,39 @@
 + rappel
 + fonction
 + remontée
++ algorithme
++ hanoï
++ backtracking
 + induction
+
+* classe
++ moule
++ objet
++ méthode
++ constructeur
++ héritage
++ attribut
++ abstraite
+
+* module
++ fichier
++ thème
++ découpage
++ organisation
++ headers
++ réutilisabilité
++ confinement
++ structuration
++ bibliothèque
+
+* complexité
++ coût
++ temps
++ efficacité
++ tris
++ assymptotique
++ linéaire
++ quadratrique
++ algorithme
++ exponentielle
+
