@@ -25,7 +25,7 @@ Rendre une liste de chiffres qui contient 3 chiffres, qui sont successivement le
 pltest==
 >>> convertirChaine([1,'a','#',2]) == [2,1,1]
 True
->>> convertirChaine([1,'a''#','2']) == [1,2,6,3]
+>>> convertirChaine([1,'a''#','2']) == [1,2,1]
 True
 >>> convertirChaine([1,2]) == [1,2]
 True
