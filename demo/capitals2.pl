@@ -24,7 +24,7 @@ Quel pays a pour capitale {{capital}} ?
 ==
 
 evaluator ==
-if input.value==capital:
+if input.value==country:
     grade=(100,"")
 else:
     grade=(0,"")
