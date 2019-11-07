@@ -10,7 +10,6 @@ tag= # N'oubliez pas de remplir ce champs svp
 extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
 
-# what candidates are there? and their meaning?
 piste=verte
 
 # the subject of the exercise shown in the PL test instance
