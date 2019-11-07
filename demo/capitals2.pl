@@ -1,4 +1,4 @@
-@ /template/basicinput.pl
+extends = /template/basicinput.pl
 
 @ /demo/country_data.csv [data.csv]
 
@@ -21,12 +21,6 @@ input.autocomplete = choices
 
 text ==
 Quel pays a pour capitale {{capital}} ?
-==
-
-input =: Input
-
-form ==
-{{ input | component }}
 ==
 
 evaluator ==
