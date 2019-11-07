@@ -11,11 +11,14 @@ text==
 
 On appelle "entier de Gauss" un nombre complexe $%z=a+\mathrm{i}b , (a,b) \in \mathbb{N}^2 %$
 
-Ecrire une fonction *carre_Gauss(r)* qui renvoie la liste  d'entiers de Gauss de module inférieur à $%r%$
+Ecrire une fonction `carre_Gauss(r)` qui renvoie la liste d'entiers de Gauss de module inférieur à $%r%$
 dont le carré est également un entier de Gauss de module inférieur à $%r%$. La liste est une liste de couples
-ordonnées lexicographiqueùment.
- >>>carre_Gauss(2)<br>
+ordonnées lexicographiquement.
+
+<pre><code>
+>>>carre_Gauss(2)
 [(-2, 0), (-1, -1), (-1, 0), (-1, 1), (0, -2), (0, -1), (0, 0), (0, 1), (0, 2), (1, -1), (1, 0), (1, 1), (2, 0)]
+</code></pre>
 
 ==
 before==
@@ -63,6 +66,7 @@ pltest2==
 >>> carres_Gauss(0)
 [(0,0)]
 ==
+
 
 
 
