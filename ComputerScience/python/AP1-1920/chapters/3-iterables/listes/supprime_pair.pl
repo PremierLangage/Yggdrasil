@@ -1,4 +1,4 @@
-# author= FLQ
+# author FLQ
 
 # comment
 extends= Yggdrasil/ComputerScience/python/AP1-1920/templates/pltest.pl
