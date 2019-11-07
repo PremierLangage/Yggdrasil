@@ -23,8 +23,10 @@ hints.items %=
     { "content": "globale" }
 ]
 ==
+hints.items[0].consumed % true
 
-before==
+before==#|python| 
+
 counter = 0
 ==
 
