@@ -9,7 +9,7 @@
 title=Title
 
 # what candidates are there? and their meaning?
-tag=function # N'oubliez pas de remplir ce champs svp
+tag=
 
 # what candidates are there? and their meaning?
 extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
