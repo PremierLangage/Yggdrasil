@@ -21,6 +21,9 @@ piste=verte
 # the subject of the exercise shown in the PL test instance
 text==
 ## The subject of the exercise shown in the PL test instance ## 
+
+the subject of the exercise shown in the PL test instance
+
 ==
 
 # the codes executed when creating the PL test instance (before transferring to the client's machine)
