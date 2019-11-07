@@ -23,17 +23,17 @@ Rendre une liste de chiffres qui contient 3 chiffres, qui sont successivement le
 
 # the codes of the representatvie tests executed after the client answers the question (transferred from the client's machine), so as to check their codes
 pltest==
->>> compteur([1,'a','#',2]) == [2,1,1]
+>>> Compteur([1,'a','#',2]) == [2,1,1]
 True
->>> convertirChaine([1,'a','#','2']) == [1,2,1]
+>>> Compteur([1,'a','#','2']) == [1,2,1]
 True
->>> convertirChaine([]) == [0,0,0]
+>>> Compteur([]) == [0,0,0]
 True
 ==
 
 # the codes provided in the PL test instance and the client can use/modify it directly (shown in the client's webpage if using "editor.code")
 editor.code==
-def convertirChaine(L):
+def Compteur(L):
     pass
 
 
