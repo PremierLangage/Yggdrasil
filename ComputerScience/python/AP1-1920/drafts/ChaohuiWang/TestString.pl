@@ -12,7 +12,7 @@ Ecrivez une fonction `longeurChaineChar` qui retourne le longueur de son paramê
 ==
 before==
 import random 
-p=random.randint(23,77)
+l = [random.randint(0,10) for i in range(5)]
 pltest1=""">>> carre({})\n{}\n""".format(p, p**2)
 p+=17
 pltest2=""">>> carre({})=={}# Hidden value test\nTrue\n""".format(p, p**2)
