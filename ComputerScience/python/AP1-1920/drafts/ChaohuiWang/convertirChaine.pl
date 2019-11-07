@@ -5,7 +5,7 @@
 # the title shown in the PL test instance
 title=Title
 
-tag= # N'oubliez pas de remplir ce champs svp
+tag=list # N'oubliez pas de remplir ce champs svp
 
 extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
