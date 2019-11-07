@@ -5,11 +5,9 @@ title = Création d'une liste de répétitions
 
 text==
 
-Ecrire une fonction `repete` à deux paramètres (un entier `n` une liste `ll`)  qui retourne la liste composée de n copies de chaque éléments de `l`.
+Ecrire une fonction `repete` à deux paramètres (un entier `n` une liste `ll`)  qui retourne une nouvelle liste composée de n copies de chaque éléments de `l`.
 
-Quand un élément est en double seul la première occurence est gardée.
-
->>> repete([3, 1,2,2,1,3])
+>>> repete([3,1,2,2,1,3])
 [3, 1, 2]
 ==
 
@@ -47,5 +45,6 @@ tests %=
     }
 }
 ==
+
 
 
