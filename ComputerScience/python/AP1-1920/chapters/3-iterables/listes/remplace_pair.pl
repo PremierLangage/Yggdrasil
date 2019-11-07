@@ -1,7 +1,7 @@
 # author FLQ
 
 # comment
-extends= Yggdrasil/ComputerScience/python/AP1-1920/templates/pltest.pl
+extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 builder= /builder/before.py
 
 title = Construction de liste 
