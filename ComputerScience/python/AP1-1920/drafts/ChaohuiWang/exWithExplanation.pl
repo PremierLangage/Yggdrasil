@@ -39,16 +39,16 @@ pltest2=""">>> carre({})=={}# Hidden value test\nTrue\n""".format(p, p**2)
 pltest==
 >>> Enlever([1,2,3]) == [1,3]
 True
->>> carre(0)
+>>> Enlever(0)
 0
->>> carre(10)
+>>> Enlever(10)
 100
 >>> 
 ==
 
 # the codes provided in the PL test instance and the client can use/modify it directly (shown in the client's webpage if using "editor.code")
 editor.code==
-def carre(n):
+def Enlever(L):
     return n*6
 ==
 editor.height=145
