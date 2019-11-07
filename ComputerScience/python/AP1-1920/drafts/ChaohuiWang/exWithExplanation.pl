@@ -38,9 +38,9 @@ pltest2=""">>> convertirChaine({})=={}# Hidden value test\nTrue\n""".format()
 pltest==
 >>> convertirChaine([1,2,3]) == [1,3]
 True
->>> convertirChaine([1,2,5,6,3])
+>>> convertirChaine([1,2,5,6,3]) == [1,2,6,3]
 0
->>> convertirChaine(10)
+>>> convertirChaine([1,2]) == []
 100
 >>> 
 ==
