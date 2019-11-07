@@ -29,8 +29,8 @@ Faire une fonction pour enlever l'element au milieu de la liste de chiffre, si s
 before==
 import random 
 l = [random.randint(0,10) for i in range(11)]
-# pltest1=""">>> convertirChaine({})\n{}\n""".format()
-# pltest2=""">>> convertirChaine({})=={}# Hidden value test\nTrue\n""".format()
+pltest1=""">>> convertirChaine({})\n{}\n""".format()
+pltest2=""">>> convertirChaine({})=={}# Hidden value test\nTrue\n""".format()
 ==
 
 # the codes of the representatvie tests executed after the client answers the question (transferred from the client's machine), so as to check their codes
