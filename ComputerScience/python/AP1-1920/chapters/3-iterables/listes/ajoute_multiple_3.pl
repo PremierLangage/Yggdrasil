@@ -1,4 +1,4 @@
-author= FLQ
+# author FLQ
 
 # comment
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
