@@ -1,8 +1,8 @@
 @ /template/basicinput.pl
+
 @ /demo/country_data.csv [data.csv]
 
 title = Capitales de pays
-
 
 before ==
 import random as rd
