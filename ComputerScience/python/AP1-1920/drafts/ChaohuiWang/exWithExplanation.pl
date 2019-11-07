@@ -20,9 +20,7 @@ piste=verte
 text==
 ## Inverse l'ordre de cette liste de chiffre ## 
 
-Faire une fonction pour inverser l'ordre de cette liste de chiffre
-
-Faire une fonction pour enlever automatiquement l'element au milieu de cette liste de chiffre
+Faire une fonction pour enlever l'element au milieu de cette liste de chiffre
 
 ==
 
