@@ -27,8 +27,6 @@ pltest==
 True
 >>> convertirChaine([1,'a','#','2']) == [1,2,1]
 True
->>> convertirChaine([1,2]) == [1,2]
-True
 >>> convertirChaine([]) == [0,0,0]
 True
 ==
