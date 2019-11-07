@@ -9,7 +9,7 @@ text==
 Dans cet exercice VOUS êtes un concepteur de jeu de rôle.<br>
 
 Ce qu'on vous demande ici est de programmer la partie "combat". <br>
-Ce sont en effet des choses qui arrivent quand vous rencontrez un enemi avec lequel il est impossible de discuter ! <br>
+Ce sont en effet des choses qui arrivent quand vous rencontrez un ennemi avec lequel il est impossible de discuter ! <br>
 <br>
 Ecrivez une fonction "combat" qui reçoit en paramétre les "endurances" et les "habilités" des deux protagonistes et organise le combat de la manière suivante :<br>
 <br>
@@ -26,7 +26,7 @@ Vous écrirez ensuite un programme qui fera les actions suivantes : <br>
 1 créer deux adversaires d'endurance et d'habilité aléatoire <br>
 2 appeler la fonction combat <br>
 3 récupérer le résultat de la fonction <br>
-4 afficher le vainceur <br>
+4 afficher le vainqueur <br>
 <br>
 La fonction "combat" utilisera la fonction "rand...(1,6) pour simuler un lancer de dés <br>
 Le programme principal fera appel à la fonction "rand (1,20)" pour définir l'endurance et l'habilité des béligérants<br>
@@ -39,6 +39,7 @@ pltest==
 print("teste")
 
 ==
+
 
 
 
