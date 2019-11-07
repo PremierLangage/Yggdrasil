@@ -17,6 +17,14 @@ pltest1=""">>> carre({})\n{}\n""".format(p, p**2)
 p+=17
 pltest2=""">>> carre({})=={}# Hidden value test\nTrue\n""".format(p, p**2)
 
+L = [8, 5, 6, 1, 17]
+print (L[0])
+L[1] = 17
+L[3] = L[2] + L[4]
+print(L)
+for i in range (0, 12) :
+     print(L[len(L)-1])
+     
 ==
 
 
@@ -36,3 +44,4 @@ def carre(n):
     return n*6
 ==
 editor.height=145
+
