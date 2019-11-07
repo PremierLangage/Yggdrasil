@@ -3,7 +3,6 @@
 #author=
 
 
-Ongoing work
 # PL database (or background system) -> PL client
 
 # the title shown in the PL test instance
