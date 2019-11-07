@@ -30,7 +30,7 @@ The subject of the exercise shown in the PL test instance
 # one can define supplemental pltests here
 before==
 import random 
-p=random.randint(23,77)
+l = [random.randint(0,10) for i in range(10)]
 pltest1=""">>> carre({})\n{}\n""".format(p, p**2)
 p+=17
 pltest2=""">>> carre({})=={}# Hidden value test\nTrue\n""".format(p, p**2)
@@ -53,3 +53,4 @@ def carre(n):
     return n*6
 ==
 editor.height=145
+
