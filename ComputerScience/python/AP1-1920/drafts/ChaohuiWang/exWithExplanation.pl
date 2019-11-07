@@ -6,7 +6,7 @@
 # PL database (or background system) -> PL client
 
 # the title shown in the PL test instance
-title=Une fonction carre
+title=Tile
 
 # what candidates are there? and their meaning?
 tag=function # N'oubliez pas de remplir ce champs svp
@@ -51,3 +51,4 @@ def carre(n):
     return n*6
 ==
 editor.height=145
+
