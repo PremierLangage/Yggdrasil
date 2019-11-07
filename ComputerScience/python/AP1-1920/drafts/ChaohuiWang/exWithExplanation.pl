@@ -20,7 +20,7 @@ piste=verte
 text==
 ## Inverse l'ordre de cette liste de chiffre ## 
 
-Faire une fonction pour Inverse l'ordre de cette liste de chiffre
+Faire une fonction pour inverser l'ordre de cette liste de chiffre
 ==
 
 # the codes executed when creating the PL test instance (before transferring to the client's machine)
