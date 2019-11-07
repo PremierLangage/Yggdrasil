@@ -71,9 +71,10 @@ def levenshtein(s1, s2):
     
     return previous_row[-1]
 
+mark = int(100*((0.9)**(nbhints+counter-1)))
 # We accept 3 typos at most from the two following strings
 if levenshtein(inputbox.value, "variable") <= 3:
-    grade = (100, "Bien vu ! Vous avez deviné en utilisant "+ str(counter) +" indice(s) et " + str(nbhints) + " tentative(s).")
+    grade = (mark, "Bien vu ! Vous avez deviné en utilisant "+ str(nbhints) +" indice(s) et " + str(counter) + " tentative(s).")
 else:
     grade = (-1, "Désolé, ce n'est pas ce qui est attendu...")
 
