@@ -5,17 +5,24 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title =Shuffle
 text==
-on veut simuler le mélange d'un jeu de 52 cartes représenté par la liste des entiers de 0 à 51.<br>
- la méthode de mélange de cartes consiste à:<br>
-répéter n fois :<br>
-    couper le paquet en deux parties égales<br>
-    fusionner en alternant un carte de chaque paquet (et en commencant par un paquet aléatoire)<br>
-   Ecrire une fonction  `fusion(l1,l2)` qui reçoit deux listes et renvoie la liste obtenue par la fusion des deux listes.<br>
+on veut simuler le mélange d'un jeu de **52** cartes représenté par la liste des entiers de 0 à 51.<br>
+la méthode de mélange de cartes consiste à répéter n fois :
 
-   Ecrire une fonction  `melange(n)` qui renvoie la liste représentant un jeu de 52 cartes obtenue après n répétitions de (coupe,fusion)
-    à partir de la liste [0,1,...,51].<br>
-    *Pour les besoins de correction, on fixe la suite pseudo aléatoire fournie par random.randint en précisant
-     son point de départ grace à random.seed(), ici on choisit  random.seed(42)*
+* Couper le paquet en deux parties égales ;
+* Fusionner en alternant une carte de chaque paquet (et en commençant par un paquet aléatoire) ;
+
+Écrire une fonction `fusion(l1, l2)` qui reçoit deux listes et
+renvoie la liste obtenue par la fusion des deux listes.
+
+<br>
+
+Écrire une fonction  `melange(n)` qui renvoie la liste représentant un jeu de 52 cartes obtenue après `n` répétitions de (`coupe()`, `fusion()`)
+à partir de la liste `[0, 1, ..., 51]`.
+
+<br>
+
+*Pour les besoins de correction, on fixe la suite pseudo aléatoire fournie par random.randint en précisant
+son point de départ grace à `random.seed()`, ici on choisit `random.seed(42)`*
 ==
 editor.code==
 import random
