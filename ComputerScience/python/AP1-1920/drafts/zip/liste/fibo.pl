@@ -10,18 +10,31 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 title =Suite de Fibonacci
 text==  
 
-On appelle "Suite de Fibonacci" la suite d'entier définie par <br>
-$%f_0=0%$<br>
-$%f_1=1%$<br>
-$%f_{n+2}=f_{n+1}+f_{n}%$<br>
+On appelle "Suite de Fibonacci" la suite d'entier définie par <br><br>
+$%
+f_{n} :=    
+\left\\{ 
+\begin{array}{ll}
+0 & \text{ si } n = 0 \\newline
+1 & \text{ si } n = 1 \\newline
+f_{n-1} + f_{n-2} & \text{ si } n > 1 \\newline
+\end{array}
+\\right.
+%$
+
+<br><br>
+
 Ecrire une fonction *fibo(n)* qui recoit un nombre entier $%n%$ et renvoie la liste  des 
 $%n%$ premiers nombres de la suite (de $%f_0%$ jusqu'à $%f_{n-1}%$)<br>
-     >>>fibo(2)<br>
-    [0,1]<br>
-    >>>fibo(5)<br>
-    [0,1,1,2,5]<br>
-    >>>fibo(-2)<br>
-    []<br>
+
+<pre><code>
+>>>fibo(2)
+[0,1]
+>>>fibo(5)
+[0,1,1,2,5]
+>>>fibo(-2)
+[]
+</code></pre>
 ==
 before==
 def fibo(n):
@@ -58,6 +71,7 @@ pltest2==
 >>> fibo(11)
 [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 ==
+
 
 
 
