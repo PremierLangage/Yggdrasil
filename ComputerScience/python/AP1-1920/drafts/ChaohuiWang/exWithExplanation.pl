@@ -20,7 +20,6 @@ piste=verte
 text==
 ## Inverse l'ordre de cette liste de chiffre ## 
 
-The subject of the exercise shown in the PL test instance
 
 ==
 
