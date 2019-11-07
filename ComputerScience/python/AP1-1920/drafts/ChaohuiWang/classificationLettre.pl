@@ -23,7 +23,7 @@ Rendre une liste de chiffres qui contient 3 chiffres, qui sont successivement le
 
 # the codes of the representatvie tests executed after the client answers the question (transferred from the client's machine), so as to check their codes
 pltest==
->>> convertirChaine([1,'a','#',2]) == [2,1,1]
+>>> compteur([1,'a','#',2]) == [2,1,1]
 True
 >>> convertirChaine([1,'a','#','2']) == [1,2,1]
 True
