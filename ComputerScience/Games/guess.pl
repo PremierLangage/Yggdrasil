@@ -11,6 +11,7 @@ inputbox.appearance = outline
 hints % { "cid": "hints", "selector": "c-hint" }
 hints.shouldConfirm % false
 hints.moreHintTitle % "+ indice supplémentaire"
+hints.confirmTitle % "Utiliser un indice?"
 hints.items %=
 [
     { "content": "donnée" },
