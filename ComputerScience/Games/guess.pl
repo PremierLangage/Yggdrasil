@@ -7,7 +7,6 @@ inputbox.type = text
 inputbox.placeholder = Réponse
 inputbox.appearance = outline
 
-==
 
 hints % { "cid": "hints", "selector": "c-hint" }
 hints.shouldConfirm % false
@@ -19,7 +18,7 @@ hints.items %=
     { "content": "conteneur" },
     { "content": "globale" }
 ]
-==
+
 
 title = Devinette
 
