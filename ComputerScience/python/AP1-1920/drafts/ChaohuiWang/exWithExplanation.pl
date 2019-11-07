@@ -20,7 +20,7 @@ piste=verte
 text==
 ## Convertir au liste de longeur pair## 
 
-Faire une fonction pour enlever l'element au milieu de cette liste de chiffre
+Faire une fonction pour enlever l'element au milieu de cette liste de chiffre, si sa longeur est impair
 
 ==
 
