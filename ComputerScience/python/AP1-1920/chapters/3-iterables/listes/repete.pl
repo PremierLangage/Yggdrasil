@@ -7,8 +7,8 @@ text==
 
 Ecrire une fonction `repete` à deux paramètres (un entier `n` une liste `ll`)  qui retourne une nouvelle liste composée de n copies de chaque éléments de `l`.
 
->>> repete([3,1,2,2,1,3])
-[3, 1, 2]
+>>> repete(6,"Non")
+['Non', 'Non', 'Non', 'Non', 'Non', 'Non']
 ==
 
 taboo=extend
