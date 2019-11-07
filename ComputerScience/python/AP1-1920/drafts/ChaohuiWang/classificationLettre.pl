@@ -14,7 +14,7 @@ piste=verte
 
 # the subject of the exercise shown in the PL test instance
 text==
-##  ## 
+## Compteur de caractères par classe ## 
 
 Rendre une liste de chiffres qui contient 3 chiffres, qui sont successivement le nombre de chiffres, de lettres de l'alphabet anglais, et d’autres.
 
