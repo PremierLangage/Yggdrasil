@@ -5,7 +5,7 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title =Shuffle
 text==
-on veut simuler le mélange d'un jeu de 52 cartes représenté par la lisre des entiers de 0 à 51.<br>
+on veut simuler le mélange d'un jeu de 52 cartes représenté par la liste des entiers de 0 à 51.<br>
  la méthode de mélange de cartes consiste à:<br>
 répéter n fois :<br>
     couper le paquet en deux parties égales<br>
@@ -59,4 +59,5 @@ pltest1==
 >>> melange(4)
 [32, 48, 0, 16, 45, 10, 13, 29, 7, 23, 26, 42, 20, 36, 39, 4, 33, 49, 1, 17, 46, 11, 14, 30, 8, 24, 27, 43, 21, 37, 40, 5, 34, 50, 2, 18, 47, 12, 15, 31, 9, 25, 28, 44, 22, 38, 41, 6, 35, 51, 3, 19]
 ==
+
 
