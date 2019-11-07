@@ -14,9 +14,9 @@ piste=verte
 
 # the subject of the exercise shown in the PL test instance
 text==
-## Convertir au liste de longeur pair## 
+## Rendre une liste de taille paire## 
 
-Faire une fonction pour enlever l'element au milieu de la liste de chiffre, si sa longeur est impair
+Faire une fonction pour enlever l'élement au milieu de la liste, si sa longeur est impaire
 
 ==
 
@@ -39,3 +39,4 @@ def convertirChaine(L):
 
 ==
 editor.height=145
+
