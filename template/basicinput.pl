@@ -6,3 +6,5 @@ form ==
 {{ input | component }}
 ==
 
+settings.feedback.class=colorbox
+
