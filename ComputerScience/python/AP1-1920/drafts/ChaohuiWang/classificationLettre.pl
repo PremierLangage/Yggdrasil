@@ -16,7 +16,7 @@ piste=verte
 text==
 ##  ## 
 
-Rendre une liste de chiffres qui correspondent aux nombres de élements qui
+Rendre une liste de chiffres qui contient 3 chiffres:
 
 ==
 
