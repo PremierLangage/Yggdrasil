@@ -20,8 +20,7 @@ piste=verte
 
 # the subject of the exercise shown in the PL test instance
 text==
-##  ## 
-Ecrivez une fonction `carre` qui retourne le carré de son paramêtre
+## the subject of the exercise shown in the PL test instance ## 
 ==
 
 # the codes executed when creating the PL test instance (before transferring to the client's machine)
