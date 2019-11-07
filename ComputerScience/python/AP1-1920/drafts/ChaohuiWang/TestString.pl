@@ -7,7 +7,7 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
 piste=verte
 text==
-## Une fonction carre ## 
+## Une fonction longeur ## 
 Ecrivez une fonction `longeur` qui retourne le longueur de son paramêtre
 ==
 before==
