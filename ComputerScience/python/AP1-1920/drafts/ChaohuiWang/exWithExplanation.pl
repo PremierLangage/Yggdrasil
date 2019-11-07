@@ -39,9 +39,7 @@ pltest==
 >>> convertirChaine([1,2,3]) == [1,3]
 True
 >>> convertirChaine([1,2,5,6,3]) == [1,2,6,3]
-0
 >>> convertirChaine([1,2]) == [1,2]
-100
 >>> 
 ==
 
