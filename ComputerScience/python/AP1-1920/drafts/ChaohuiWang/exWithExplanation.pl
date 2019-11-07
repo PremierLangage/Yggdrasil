@@ -22,7 +22,7 @@ piste=verte
 text==
 ## The subject of the exercise shown in the PL test instance ## 
 
-the subject of the exercise shown in the PL test instance
+The subject of the exercise shown in the PL test instance
 
 ==
 
