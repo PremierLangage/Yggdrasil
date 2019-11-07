@@ -24,6 +24,10 @@ hints.items %=
 ]
 ==
 
+before==
+counter = 0
+==
+
 
 title = Devinette
 
@@ -39,10 +43,11 @@ form ==
 
 evaluator== #|python|
 
-counter = 0
+counter += 1
+nbhints = 0
 for e in hints.items:
     if 'consumed' in e:
-        counter += 1
+        nbhints += 1
 
 def levenshtein(s1, s2):
     if len(s1) < len(s2):
@@ -66,7 +71,7 @@ def levenshtein(s1, s2):
 
 # We accept 3 typos at most from the two following strings
 if levenshtein(inputbox.value, "variable") <= 3:
-    grade = (100, "Bien vu ! Vous avez deviné en utilisant "+ str(counter) +" indice(s).")
+    grade = (100, "Bien vu ! Vous avez deviné en utilisant "+ str(counter) +" indice(s) et " + str(nbhints) + " tentative(s).")
 else:
     grade = (-1, "Désolé, ce n'est pas ce qui est attendu...")
 
