@@ -23,6 +23,12 @@ text ==
 Quel pays a pour capitale {{capital}} ?
 ==
 
+input =: Input
+
+form ==
+{{ input | component }}
+==
+
 evaluator ==
 if input.value==capital:
     grade=(100,"")
