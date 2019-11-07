@@ -12,6 +12,8 @@ hints % { "cid": "hints", "selector": "c-hint" }
 hints.shouldConfirm % false
 hints.moreHintTitle % "+ indice supplémentaire"
 hints.confirmTitle % "Utiliser un indice?"
+hints.confirmNoTitle % "Non"
+hints.confirmOkTitle % "Oui"
 hints.items %=
 [
     { "content": "donnée" },
