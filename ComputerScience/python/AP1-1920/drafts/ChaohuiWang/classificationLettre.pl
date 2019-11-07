@@ -16,7 +16,7 @@ piste=verte
 text==
 ##  ## 
 
-Rendre une liste de chiffres qui contient 3 chiffres:
+Rendre une liste de chiffres qui contient 3 chiffres, qui sont successivement le nombre de chiffres, de lettres de l'alphabet anglais, et d’autres.
 
 ==
 
@@ -44,4 +44,5 @@ editor.height=145
 
 Xeditor.code==
 ==
+
 
