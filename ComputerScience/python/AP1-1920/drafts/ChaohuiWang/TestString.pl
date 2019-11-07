@@ -26,7 +26,6 @@ for i in range (0, 12) :
      print(L[len(L)-1])
 ==
 
-
 pltest==
 >>> carre(510) == 260100 # le carre de 510
 True
