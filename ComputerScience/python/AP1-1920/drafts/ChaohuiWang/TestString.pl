@@ -8,7 +8,7 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 piste=verte
 text==
 ## Une fonction longeurChaineChar ## 
-Ecrivez une fonction `longeur` qui retourne le longueur de son paramêtre
+Ecrivez une fonction `longeurChaineChar` qui retourne le longueur de son paramêtre
 ==
 before==
 import random 
