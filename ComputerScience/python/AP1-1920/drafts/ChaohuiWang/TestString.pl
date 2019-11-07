@@ -8,7 +8,7 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 piste=verte
 text==
 ## Une fonction carre ## 
-Ecrivez une fonction `longeur` qui retourne le carré de son paramêtre
+Ecrivez une fonction `longeur` qui retourne le longueur de son paramêtre
 ==
 before==
 import random 
