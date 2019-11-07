@@ -31,6 +31,7 @@ Faire une fonction pour enlever automatiquement l'element au milieu de cette lis
 before==
 import random 
 l = [random.randint(0,10) for i in range(10)]
+
 pltest1=""">>> carre({})\n{}\n""".format(p, p**2)
 p+=17
 pltest2=""">>> carre({})=={}# Hidden value test\nTrue\n""".format(p, p**2)
