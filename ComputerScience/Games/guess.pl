@@ -1,4 +1,5 @@
 @ /utils/sandboxio.py
+@ /ComputerScience/Games/guess_data.txt
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
@@ -26,6 +27,11 @@ hints.items %=
 
 
 before==#|python| 
+
+guess_file = open("guess_data.txt")
+guess_file_text = guess_file.read()
+text += guess_file_text.split("* ")
+guess_file.close()
 
 counter = 0
 ==
