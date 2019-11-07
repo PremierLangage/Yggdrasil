@@ -1,4 +1,4 @@
-#author=C.W.
+#author=
 
 title=Une fonction test
 
