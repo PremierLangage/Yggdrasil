@@ -18,7 +18,7 @@ piste=verte
 
 # the subject of the exercise shown in the PL test instance
 text==
-## Inverse l'ordre de cette liste de chiffre ## 
+## Enlever l'element au milieu de cette liste de chiffre ## 
 
 Faire une fonction pour enlever l'element au milieu de cette liste de chiffre
 
