@@ -31,7 +31,7 @@ import random
 
 guess_file = open("guess_data.txt")
 guess_file_text = guess_file.read()
-text_list = list(map(lambda x: x.split("\n"), guess_file_text.split("* ")))
+text_list = list(map(lambda x: x.split("\n"), guess_file_text.split("* ")[1:]))
 text += str(text_list)
 guess_file.close()
 
@@ -87,5 +87,6 @@ else:
     grade = (-1, "Désolé, ce n'est pas ce qui est attendu...")
 
 ==
+
 
 
