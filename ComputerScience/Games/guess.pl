@@ -24,7 +24,7 @@ hints.items %=
 title = Devinette
 
 text ==
-Nous cherchons une notion informatique secrète. 
+Nous cherchons une notion informatique secrète. Devinez-la en un minimum d'essais en utilisant un minimum d'indices.
 ==
 
 form ==
@@ -64,7 +64,7 @@ def levenshtein(s1, s2):
 if levenshtein(inputbox.value, "variable") <= 3:
     grade = (100, "Bien vu ! Vous avez deviné en utilisant "+ str(counter) +" indice(s).")
 else:
-    grade = (0, "Désolé ! On parlait de variable globale.")
+    grade = (-1, "Désolé, ce n'est pas ce qui est attendu...")
 
 ==
 
