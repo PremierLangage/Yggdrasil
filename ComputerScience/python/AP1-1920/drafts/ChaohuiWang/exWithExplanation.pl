@@ -6,7 +6,7 @@
 # PL database (or background system) -> PL client
 
 # the title shown in the PL test instance
-title=Tile
+title=Title
 
 # what candidates are there? and their meaning?
 tag=function # N'oubliez pas de remplir ce champs svp
