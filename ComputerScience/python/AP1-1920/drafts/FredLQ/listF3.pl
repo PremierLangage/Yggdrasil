@@ -10,8 +10,9 @@ Ecrire une fonction "suppair" qui supprime toutes les éléments pairs d'une lis
 ==
 
 before==
-# solution --- 
+# solution --- utilise pop, len
 def suppair(lst) :
+    i=0
     while i<len(lst) :
         if lst[i]%2 == 0 :
             lst.pop(i)
@@ -28,3 +29,23 @@ pltest0==
 [5, 9]
 ==
 
+pltest1==
+>>> lst=[]
+>>> suppair(lst)
+>>> lst
+[]
+==
+
+pltest2==
+>>> lst=[2,6,5,8,10]
+>>> suppair(lst)
+>>> lst
+[5]
+==
+
+pltest3==
+>>> lst=[1,6,5,8,10]
+>>> suppair(lst)
+>>> lst
+[1, 5]
+==
