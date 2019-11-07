@@ -60,11 +60,9 @@ def levenshtein(s1, s2):
     
     return previous_row[-1]
 
-mark = min(25*(remaining // 5), 100)
-
 # We accept 3 typos at most from the two following strings
 if levenshtein(inputbox.value, "variable") <= 3:
-    grade = (mark, "Bien vu ! Vous avez deviné en utilisant "+ str(counter) +" indice(s).")
+    grade = (100, "Bien vu ! Vous avez deviné en utilisant "+ str(counter) +" indice(s).")
 else:
     grade = (0, "Désolé ! On parlait de variable globale.")
 
