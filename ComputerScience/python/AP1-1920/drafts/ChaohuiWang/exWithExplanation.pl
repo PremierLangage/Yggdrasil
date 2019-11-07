@@ -30,7 +30,7 @@ before==
 import random 
 l = [random.randint(0,10) for i in range(11)]
 
-pltest1=""">>> convertir({})\n{}\n""".format(p, p**2)
+pltest1=""">>> convertirChaine({})\n{}\n""".format(p, p**2)
 p+=17
 pltest2=""">>> carre({})=={}# Hidden value test\nTrue\n""".format(p, p**2)
 ==
