@@ -13,8 +13,9 @@ text==
 Ecrire une fonction `retiredoublons` à un paramètres (des listes)  qui retourne la liste composée d'une seule copie de chaque éléments.
 
 Quand un élémént est en double seul la première occurence est gardée.
-`>>> retiredoublons([3, 1, 2, 2, 1, 3])`
-`[3, 1, 2]`
+```python
+>>> retiredoublons([3, 1, 2, 2, 1, 3])
+[3, 1, 2]
 ```
 ==
 
