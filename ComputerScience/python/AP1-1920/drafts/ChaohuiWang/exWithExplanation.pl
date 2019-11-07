@@ -18,7 +18,7 @@ piste=verte
 
 # the subject of the exercise shown in the PL test instance
 text==
-## Enlever l'element au milieu de cette liste de chiffre ## 
+## Convertir au liste de longeur pair## 
 
 Faire une fonction pour enlever l'element au milieu de cette liste de chiffre
 
