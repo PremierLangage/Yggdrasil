@@ -30,7 +30,7 @@ before==#|python|
 
 guess_file = open("guess_data.txt")
 guess_file_text = guess_file.read()
-text += guess_file_text.split("* ")
+text += str(guess_file_text.split("* "))
 guess_file.close()
 
 counter = 0
