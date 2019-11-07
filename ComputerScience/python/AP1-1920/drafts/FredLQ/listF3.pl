@@ -23,29 +23,30 @@ after=before
 ==
 
 pltest0==
->>> lst=[2,6,5,8,9]
->>> suppair(lst)
+>>> lst=[2,6,5,8,9] #
+>>> suppair(lst) #
 >>> lst
 [5, 9]
 ==
 
 pltest1==
->>> lst=[]
->>> suppair(lst)
+>>> lst=[] #
+>>> suppair(lst) #
 >>> lst
 []
 ==
 
 pltest2==
->>> lst=[2,6,5,8,10]
->>> suppair(lst)
+>>> lst=[2,6,5,8,10] #
+>>> suppair(lst) #
 >>> lst
 [5]
 ==
 
 pltest3==
->>> lst=[1,6,5,8,10]
->>> suppair(lst)
+>>> lst=[1,6,5,8,10] #
+>>> suppair(lst) #
 >>> lst
 [1, 5]
 ==
+
