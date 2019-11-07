@@ -39,7 +39,7 @@ pltest2=""">>> carre({})=={}# Hidden value test\nTrue\n""".format(p, p**2)
 pltest==
 >>> Enlever([1,2,3]) == [1,3]
 True
->>> Enlever([1,2,,3])
+>>> Enlever([1,2,5,6,3])
 0
 >>> Enlever(10)
 100
