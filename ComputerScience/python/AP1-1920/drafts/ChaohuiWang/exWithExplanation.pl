@@ -31,7 +31,6 @@ import random
 l = [random.randint(0,10) for i in range(11)]
 
 pltest1=""">>> convertirChaine({})\n{}\n""".format()
-p+=17
 pltest2=""">>> convertirChaine({})=={}# Hidden value test\nTrue\n""".format()
 ==
 
