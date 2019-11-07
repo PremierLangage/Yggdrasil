@@ -36,9 +36,9 @@ pltest2=""">>> convertirChaine({})=={}# Hidden value test\nTrue\n""".format()
 
 # the codes of the representatvie tests executed after the client answers the question (transferred from the client's machine), so as to check their codes
 pltest==
->>> Enlever([1,2,3]) == [1,3]
+>>> convertirChaine([1,2,3]) == [1,3]
 True
->>> Enlever([1,2,5,6,3])
+>>> convertirChaine([1,2,5,6,3])
 0
 >>> Enlever(10)
 100
