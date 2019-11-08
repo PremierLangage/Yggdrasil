@@ -35,7 +35,7 @@ for item in checkbox.items:
         answrong+=1
 score=0
 if ansright>0:
-    score=max([int((ansright-answrong)/ansright*100),0])
+    score=max(int((ansright-answrong)/ansright*100),0)
 feedback=str(score)+"/100"
 grade= (score,feedback)
 ==
