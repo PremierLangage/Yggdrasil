@@ -6,7 +6,7 @@ def newDragList(name,content):
     drag=[]
     for i in range(4):
         iname=str(uuid.uuid4())
-        globals()[iname] = DragDrop()
-        globals()[iname].content = "hhh"
-        drag.append(globals()[iname])
+        locals()[iname] = DragDrop()
+        locals()[iname].content = "hhh"
+        drag.append(locals()[iname])
     return drag
