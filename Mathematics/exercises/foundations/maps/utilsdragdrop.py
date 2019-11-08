@@ -1,4 +1,4 @@
-from components import *
+from components import DragDrop
 import uuid
 
 
