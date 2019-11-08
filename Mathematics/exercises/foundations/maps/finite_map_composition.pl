@@ -73,8 +73,8 @@ form ==
 </tr>
 </table>
 
-{% for e in drag -%}
-{{ e|component }}
+{% for d in drag -%}
+{{ d|component }}
 {%- endfor %}
 ==
 
