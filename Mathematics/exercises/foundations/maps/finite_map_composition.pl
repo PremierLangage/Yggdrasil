@@ -13,8 +13,10 @@ from utilsdragdrop import newDragList
 
 n=randint(4,5)
 drag=newDragList(['drag1','drag2'],["2","FF"])
+namedrag=[]
 for d in drag:
     d.content="ee"
+    namedrag.append(str(d))
 
 drop=[]
 for i in range(1,n+1):
@@ -45,6 +47,7 @@ else:
 ==
 
 text ==
+{{namedrag}}
 On considère les applications  $! f:\\{1,\ldots,{{n}} \\}\rightarrow \\{1,\ldots,{{n}} \\} !$ et $! g:\\{1,\ldots,{{n}} \\}\rightarrow \\{1,\ldots,{{n}} \\} !$ définies par les tableaux ci-dessous.
 <br>
 {{tablef|safe}}
