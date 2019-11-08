@@ -1,5 +1,7 @@
 extends = /template/basicinput.pl
 
+input.type = number
+
 title = Addition
 
 before ==
@@ -21,5 +23,6 @@ try:
 except:
     grade=(-1,"Votre réponse n'est pas un nombre entier.")
 ==
+
 
 
