@@ -1,7 +1,7 @@
 
 
 
-def newDropList(name,content)
+def newDragList(name,content)
     for iname,icontent in zip(name,content):
         locals()[iname] = DragDrop()
         locals()[iname].content = icontent
