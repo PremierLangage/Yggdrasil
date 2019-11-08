@@ -12,8 +12,9 @@ from utilsdragdrop import newDragList
 
 
 n=randint(4,5)
-drag=newDragList(['drag1','drag2'],["2","FF"])
-
+drags=newDragList(['drag1','drag2'],["2","FF"])
+for drag in drags:
+    drag.content='ee'
 
 drop=[]
 for i in range(1,n+1):
