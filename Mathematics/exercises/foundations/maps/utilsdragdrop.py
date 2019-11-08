@@ -1,5 +1,4 @@
-
-
+from components import *
 
 def newDragList(name,content):
     for iname,icontent in zip(name,content):
