@@ -1,17 +1,19 @@
 extends = /Mathematics/template/mathbasic.pl
 extends = finite_map_.pl
 
+@ utilsdragdrop.py
 
 title = Composition d'applications
 
 before ==
+
+from utilsdragrop import newDragList
+
+
+
 n=randint(4,5)
-drag=[]
-for i in range(1,n+1):
-    name="drag"+str(i)
-    globals()[name] = DragDrop()
-    globals()[name].content = str(i)
-    drag.append(globals()[name])
+drag=newDragList(['drag1','drag2'],["2","FF"])
+
 
 drop=[]
 for i in range(1,n+1):
@@ -87,4 +89,5 @@ for i in range(n):
         score=0
         drop[i].css = "error-state" 
 ==
+
 
