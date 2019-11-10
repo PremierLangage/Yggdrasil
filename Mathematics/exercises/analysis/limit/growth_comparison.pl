@@ -6,18 +6,30 @@ lang = fr
 
 before ==
 keyboards_JSON['virtualKeyboards']="functions"
-input.config = keyboards_JSON
+input1.config = keyboards_JSON
+input2.config = keyboards_JSON
+input3.config = keyboards_JSON
+input4.config = keyboards_JSON
 
 var('x')
-n=randint(1,4)
-f,g=list_randitem_norep(2,[x**n,exp(x),ln(x)])
-lim=Limit(f-g, x, oo)
-latexlim=latex(lim)
-sol=lim.doit()
+latexlim=[]
+sol=[]
+for i in range(4):
+    n=randint(1,4)
+    f,g=list_randitem_norep(2,[x**n,exp(x),ln(x)])
+    lim=Limit(f-g, x, oo)
+    latexlim.append(latex(lim)
+    sol.append(lim.doit())
 ==
 
 text ==
-${{latexlim}}$ {{input|component}}
+form ==
+{% for input in lstinput %}
+<div class="fcontainer">
+<span>$% {{ lstlim[loop.index0] }} = %$</span>{{input|component}}
+</div>
+{% endfor %}
+==
 ==
 
 evaluator==
