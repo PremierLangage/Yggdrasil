@@ -961,8 +961,19 @@ def ans_poly(strans,sol,x,domain="RR",imaginary_unit="i",form=""):
     test2=[]
     return ans_(strans,sol,local_dict,test1,test2)
 
+#############
+# Extended reals
+#############
 
 
-
+def ans_real_extenfed(strans,sol,local_dict={}):
+    """
+    Analyze an answer of type extended real.
+    """
+    local_dict[imaginary_unit:sp.I}
+    test1=[(is_expr,-1,"NotExpr","Votre réponse n'est pas une expression valide.")]
+    test2=[]
+    test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
+    return ans_(strans,sol,local_dict,test1,test2)
 
 
