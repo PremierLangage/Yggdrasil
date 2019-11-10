@@ -12,8 +12,10 @@ extracss == #|html|
     align-items: center;
 }
 c-math-input {
-    color:red;
     width: 100%;
+}
+.red {
+    color:red;
 }
 </style>
 ==
@@ -51,6 +53,8 @@ form ==
 
 
 evaluator==
-score,_,feedback=ans_real_extended(input.value,sol)
+for input in lstinput:
+    input.css="red"
+#score,_,feedback=ans_real_extended(input.value,sol)
 ==
 
