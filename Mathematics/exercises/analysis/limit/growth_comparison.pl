@@ -23,6 +23,8 @@ for i in range(4):
 ==
 
 text ==
+==
+
 form ==
 {% for input in lstinput %}
 <div class="fcontainer">
@@ -30,7 +32,7 @@ form ==
 </div>
 {% endfor %}
 ==
-==
+
 
 evaluator==
 score,_,feedback=ans_real_extended(input.value,sol)
