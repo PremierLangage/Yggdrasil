@@ -212,6 +212,7 @@ def str2expr(s,local_dict={}):
     s.strip()
     if s=="":
         return None
+    s=s.replace("\infty", "oo")
     s=s.replace(r"\mleft", "")
     s=s.replace(r"\mright", "")
     s=s.replace(r"\left", "")
