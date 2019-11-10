@@ -17,7 +17,7 @@ sol=lim.doit()
 ==
 
 text ==
-{{latexlim}} {{input|component}}
+${{latexlim}}$ {{input|component}}
 ==
 
 evaluator==
