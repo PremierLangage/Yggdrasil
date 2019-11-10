@@ -24,7 +24,7 @@ lstf=[[x**n1,exp(x)],[x**n1,ln(x)],[exp(x),ln(x)]]
 rd.shuffle(lstf)
 
 for f in lstf:
-    shuffle(f)
+    rd.shuffle(f)
     lim=Limit(f[0]-f[1], x, oo)
     latexlim.append(latex(lim))
     sol.append(lim.doit())
