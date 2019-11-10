@@ -18,7 +18,7 @@ for i in range(4):
     n=randint(1,4)
     f,g=list_randitem_norep(2,[x**n,exp(x),ln(x)])
     lim=Limit(f-g, x, oo)
-    latexlim.append(latex(lim)
+    latexlim.append(latex(lim))
     sol.append(lim.doit())
 ==
 
