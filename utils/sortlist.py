@@ -2,7 +2,7 @@ import uuid
 from components import Component
 import random as rd
 #from scipy.stats import kendalltau
-import scipy
+#import scipy
 
 class CustomSortList(Component):
     def __init__(self, **kwargs):
