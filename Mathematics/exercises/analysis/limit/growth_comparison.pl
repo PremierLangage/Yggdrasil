@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathexpr.pl
+extends = /Mathematics/template/mathinput.pl
 
 title = Calcul de limites
 
@@ -22,5 +22,6 @@ input.1.virtualKeyboards = functions
 evaluator==
 score,_,feedback=ans_real_extended(answer['1'],sol)
 ==
+
 
 
