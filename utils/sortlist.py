@@ -34,7 +34,7 @@ class CustomSortList(Component):
                 e['css'] = 'error-state animated fadeIn'
                 errors += 1
         tau,_=kendalltau(orderans,list(range(n)))
-        score=int((max([0,tau])*100)
+        score=int(max([0,tau])*100)
         if errors == 0:
             return (score, '<span class="success-state animated pulse infinite">Good answer</span>')
         else:
