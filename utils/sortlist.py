@@ -26,11 +26,15 @@ class CustomSortList(Component):
 
     def eval(self):
         errors = 0
+        n=len(self.items)
+        orderans= [self._order.index(e['id']) for e in self.items]
         for i, e in enumerate(self.items):
             e['css'] = 'success-state animated fadeIn'
             if e['id'] != self._order[i]:
                 e['css'] = 'error-state animated fadeIn'
                 errors += 1
+        tau,_=kendalltau(orderans,list(range(n)))
+        score=int((max([0,tau])*100)
         if errors == 0:
             return (100, '<span class="success-state animated pulse infinite">Good answer</span>')
         else:
