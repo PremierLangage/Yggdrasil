@@ -11,7 +11,9 @@ extracss == #|html|
     display: flex;
     align-items: center;
 }
-
+c-math-input {
+    width: 100%;
+}
 .red {
     color:red;
 }
