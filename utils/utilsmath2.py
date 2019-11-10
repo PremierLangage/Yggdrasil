@@ -647,7 +647,7 @@ def is_real_or_inf(expr):
     """
     Check if
     """
-    if expr==sp.Infinity or expr==sp.NegativeInfinity;
+    if expr==sp.Infinity or expr==sp.NegativeInfinity:
         return True
     return expr.is_real
 
