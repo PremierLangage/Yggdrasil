@@ -1,7 +1,7 @@
 # author oce
 # Heritage d'un type d'exercice 
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
-@ /builder/before.py [builder.py]
+
 title = Lancés de dés
 
 text==  
@@ -9,6 +9,7 @@ Coder une fonction `Lances_Des` qui prend en paramètre un entier "n" compris en
 
 ==
 
+@ /builder/before.py [builder.py]
 
 #correction==
 #def Lances_Des(n):
@@ -22,7 +23,6 @@ Coder une fonction `Lances_Des` qui prend en paramètre un entier "n" compris en
 #==
 
 before==
-from random import randint
 def Lances_Des(n):
     s = 0
     for i in range(1, 7):
@@ -31,8 +31,9 @@ def Lances_Des(n):
                 if i + j + k == n:
                     s += 1
     return s
+
 for i in range(7):
-    n=randint(1,18)
+    n=range(1,18)
     p=Lances_Des(n)
     globals()[f"pltest{i}"]=f""">>> Lances_Des({n})\n{p}\n"""
 
