@@ -7,7 +7,7 @@ lang = fr
 
 before ==
 ninput=3
-lstinput=[input1,input2,input3,input4]
+lstinput=[input1,input2,input3]
 
 keyboards_JSON['virtualKeyboards']="functions"
 input1.config = keyboards_JSON
