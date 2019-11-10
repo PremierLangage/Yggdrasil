@@ -55,6 +55,8 @@ form ==
 evaluator==
 for input in lstinput:
     input.css="red"
+score=100
+feedback=""
 #score,_,feedback=ans_real_extended(input.value,sol)
 ==
 
