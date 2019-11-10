@@ -6,6 +6,7 @@ lang = fr
 
 
 before ==
+ninput=3
 lstinput=[input1,input2,input3,input4]
 
 keyboards_JSON['virtualKeyboards']="functions"
@@ -17,10 +18,14 @@ input4.config = keyboards_JSON
 var('x')
 latexlim=[]
 sol=[]
-for i in range(4):
-    n=randint(1,4)
-    f,g=list_randitem_norep(2,[x**n,exp(x),ln(x)])
-    lim=Limit(f-g, x, oo)
+
+n1,n2=list_randint(2,1,5)   
+lstf=[[x**n1,exp(x)],[x**n1,ln(x)],[exp(x),ln(x)]]
+rd.shuffle(f)
+
+for f in lstf:
+    shuffle(f)
+    lim=Limit(f[0]-f[1], x, oo)
     latexlim.append(latex(lim))
     sol.append(lim.doit())
 ==
