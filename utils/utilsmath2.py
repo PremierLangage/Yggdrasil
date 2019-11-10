@@ -639,15 +639,17 @@ def is_coeff_exponent(expr,x):
 
 def is_expr(expr):
     """
-    Check if an expression is a polynomial in x.
+    Check if 
     """
     return isinstance(expr,sp.Expr)
 
 def is_real_or_inf(expr):
     """
-    Check if an expression is a polynomial in x.
+    Check if
     """
-    return isinstance(expr,sp.Expr)
+    if expr==sp.Infinity or expr==sp.NegativeInfinity;
+        return True
+    return expr.is_real
 
 def is_rat_simp(expr):
     """
