@@ -9,6 +9,17 @@ input2 =: MathInput
 input3 =: MathInput
 input4 =: MathInput
 
+extracss == #|html| 
+<style>
+.fcontainer {
+    display: flex;
+    align-items: center;
+}
+c-math-input {
+    width: 100%;
+}
+</style>
+==
 
 before ==
 lstinput=[input1,input2,input3,input4]
