@@ -12,6 +12,7 @@ extracss == #|html|
     align-items: center;
 }
 c-math-input {
+    color:red;
     width: 100%;
 }
 </style>
