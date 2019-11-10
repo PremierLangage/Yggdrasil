@@ -643,6 +643,12 @@ def is_expr(expr):
     """
     return isinstance(expr,sp.Expr)
 
+def is_real_or_inf(expr):
+    """
+    Check if an expression is a polynomial in x.
+    """
+    return isinstance(expr,sp.Expr)
+
 def is_rat_simp(expr):
     """
     Check if the rational numbers in a sympy expressions are simplified.
@@ -967,11 +973,12 @@ def ans_poly(strans,sol,x,domain="RR",imaginary_unit="i",form=""):
 #############
 
 
-def ans_real_extenfed(strans,sol,local_dict={}):
+def ans_real_or_inf(strans,sol,local_dict={}):
     """
     Analyze an answer of type extended real.
     """
-    test1=[(is_expr,-1,"NotExpr","Votre réponse n'est pas une expression valide.")]
+    test1=[(is_expr,-1,"NotExpr","Votre réponse n'est pas une expression valide."),
+           (is_real_or_inf,-1,"NotRealOrInf","Votre réponse n'est pas un nombre réel ou +$\infty$ ou $-\infty$.")]
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_(strans,sol,local_dict,test1,test2)
