@@ -47,7 +47,7 @@ text ==
 form ==
 {% for input in lstinput %}
 <div class="fcontainer">
-<span>$% {{ lstlim[loop.index0] }} = %$</span>{{input|component}}
+<span>$% {{ latexlim[loop.index0] }} = %$</span>{{input|component}}
 </div>
 {% endfor %}
 ==
