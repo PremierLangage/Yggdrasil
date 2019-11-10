@@ -4,22 +4,6 @@ title = Calcul de limites
 
 lang = fr
 
-input1 =: MathInput
-input2 =: MathInput
-input3 =: MathInput
-input4 =: MathInput
-
-extracss == #|html| 
-<style>
-.fcontainer {
-    display: flex;
-    align-items: center;
-}
-c-math-input {
-    width: 100%;
-}
-</style>
-==
 
 before ==
 lstinput=[input1,input2,input3,input4]
@@ -42,20 +26,9 @@ for i in range(4):
 ==
 
 text ==
+Calculer les limites suivantes.
 ==
 
-form ==
-{% for input in lstinput %}
-<div class="fcontainer">
-<span>$% {{ latexlim[loop.index0] }} = %$</span>{{input|component}}
-</div>
-{% endfor %}
-==
-
-
-evaluator==
-score,_,feedback=ans_real_extended(input.value,sol)
-==
 
 
 
