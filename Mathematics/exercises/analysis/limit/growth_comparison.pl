@@ -11,6 +11,8 @@ input4 =: MathInput
 
 
 before ==
+lstinput=[input1,input2,input3,input4]
+
 keyboards_JSON['virtualKeyboards']="functions"
 input1.config = keyboards_JSON
 input2.config = keyboards_JSON
