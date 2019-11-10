@@ -75,7 +75,7 @@ if -1 in lstscore:
         if lstscore[i]==-1:
             input.css="blue"
 else:
-    score=0
+    score=100
     for i,input in enumerate(lstinput):
         if lstscore[i]==0:
             input.css="red"
