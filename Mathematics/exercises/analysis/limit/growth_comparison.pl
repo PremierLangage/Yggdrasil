@@ -4,6 +4,12 @@ title = Calcul de limites
 
 lang = fr
 
+input1 =: MathInput
+input2 =: MathInput
+input3 =: MathInput
+input4 =: MathInput
+
+
 before ==
 keyboards_JSON['virtualKeyboards']="functions"
 input1.config = keyboards_JSON
