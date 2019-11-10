@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathinput.pl
+extends = limit_.pl
 
 title = Calcul de limites
 
