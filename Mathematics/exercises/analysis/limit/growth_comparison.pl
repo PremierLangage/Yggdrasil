@@ -21,7 +21,7 @@ sol=[]
 
 n1,n2=list_randint(2,1,5)   
 lstf=[[x**n1,exp(x)],[x**n1,ln(x)],[exp(x),ln(x)]]
-rd.shuffle(f)
+rd.shuffle(lstf)
 
 for f in lstf:
     shuffle(f)
