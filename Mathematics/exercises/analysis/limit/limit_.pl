@@ -55,8 +55,8 @@ form ==
 evaluator==
 score=100
 lstinput=[input1,input2,input3,input4]
-for input in lstinput:
-    iscore,_,feedback=ans_real_or_inf(input1.value,sol[0])
+for i,input in enumerate(lstinput):
+    iscore,_,feedback=ans_real_or_inf(input.value,sol[i])
     if iscore==0:
         input.css="red"
         score=0
