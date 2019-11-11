@@ -22,7 +22,8 @@ rd.shuffle(lstf)
 
 for f in lstf:
     rd.shuffle(f)
-    lim=Limit(f[0]/f[1], x, oo)
+    lim=Limit(f[0]-f[1], x, oo)
     latexlim.append(latex(lim))
     sol.append(lim.doit())
 ==
+
