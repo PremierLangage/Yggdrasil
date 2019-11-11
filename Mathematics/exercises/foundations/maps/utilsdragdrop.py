@@ -7,6 +7,6 @@ def newDragList(name,content):
     for iname in name:
         locals()[iname] = DragDrop()
         locals()[iname].content = "hhh"
-        drag.append(locals()[iname])
+        drag.append(globals()[iname])
     return drag
 
