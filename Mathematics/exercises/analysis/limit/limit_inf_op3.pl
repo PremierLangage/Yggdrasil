@@ -16,12 +16,12 @@ var('x')
 latexlim=[]
 sol=[]
 
-n1,n2=list_randint(2,1,5)   
-f=[x**n1,exp(x),ln(x)]
-
 for _ in range(3):
-    rd.shuffle(f)
-    lim=Limit(f[0]/(f[1]-f[2]), x, oo)
+    n=randint(1,5)   
+    g=[x**n1,exp(x),ln(x)]
+    rd.shuffle(g)
+    f=randitem([g[0]/(g[1]-g[2]),(g[0]-(g[1])/g[2]])
+    lim=Limit(f, x, oo)
     latexlim.append(latex(lim))
     sol.append(lim.doit())
 ==
