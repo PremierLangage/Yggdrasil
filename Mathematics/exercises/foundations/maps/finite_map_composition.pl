@@ -12,11 +12,7 @@ from utilsdragdrop import newDragList
 
 
 n=randint(4,5)
-drag=newDragList(['drag1','drag2'],["2","FF"])
-namedrag=[]
-for d in drag:
-    #d.content="ee"
-    namedrag.append(str(d))
+drag=[DragDrop() for _ in range(5)]
 
 drag[1].content="ii"
 
