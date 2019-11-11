@@ -2,7 +2,15 @@ title = Limites 1
 
 introduction =
 
-@ /Mathematics/exercises/analysis/derivative/computation.pl
+@ /Mathematics/exercises/analysis/limit/limit_poly.pl
+
+@ /Mathematics/exercises/analysis/limit/limit_polyfrac.pl
+
+@ /Mathematics/exercises/analysis/limit/limit_growth_comparison_diff.pl
+
+@ /Mathematics/exercises/analysis/limit/limit_growth_comparison_quot.pl
+
+@ /Mathematics/exercises/analysis/limit/limit_inf_op3.pl
 
 
 
