@@ -19,7 +19,7 @@ sol=[]
 n1,n2=list_randint(2,1,5)   
 f=[x**n1,exp(x),ln(x)]
 
-for _ in rane(3):
+for _ in range(3):
     rd.shuffle(f)
     lim=Limit(f[i0]/(f[i1]-f[i2]), x, oo)
     latexlim.append(latex(lim))
