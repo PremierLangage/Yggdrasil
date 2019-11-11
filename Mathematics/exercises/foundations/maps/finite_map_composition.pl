@@ -13,7 +13,7 @@ before ==
 n=randint(4,5)
 drag=[DragDrop() for _ in range(5)]
 
-drag[1].content="ii"
+drag[4].content="ii"
 
 drop=[]
 for i in range(1,n+1):
