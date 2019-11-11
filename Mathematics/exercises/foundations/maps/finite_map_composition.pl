@@ -1,7 +1,7 @@
 extends = /Mathematics/template/mathbasic.pl
 extends = finite_map_.pl
 
-@ utilsdragdrop.py
+@ /utils/dragdrop.py [customdragdrop.py]
 
 title = Composition d'applications
 
@@ -12,8 +12,6 @@ before ==
 
 n=randint(4,5)
 drag=[DragDrop() for _ in range(5)]
-
-drag[4].content="ii"
 
 drop=[]
 for i in range(1,n+1):
