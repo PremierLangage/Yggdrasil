@@ -15,7 +15,7 @@ n=randint(4,5)
 drag=newDragList(['drag1','drag2'],["2","FF"])
 namedrag=[]
 for d in drag:
-    d.content="ee"
+    #d.content="ee"
     namedrag.append(str(d))
 
 #drag1.content="ii"
