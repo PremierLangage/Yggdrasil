@@ -18,7 +18,7 @@ for d in drag:
     #d.content="ee"
     namedrag.append(str(d))
 
-drag[0].content="ii"
+drag[1].content="ii"
 
 drop=[]
 for i in range(1,n+1):
