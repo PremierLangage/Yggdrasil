@@ -26,9 +26,8 @@ c-math-input {
 </style>
 ==
 
-
-
 text ==
+Calculer les limites suivantes.
 ==
 
 form ==
