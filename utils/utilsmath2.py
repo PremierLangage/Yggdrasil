@@ -649,7 +649,7 @@ def is_real_or_inf(expr):
     """
     if expr==sp.S.Infinity or expr==sp.S.NegativeInfinity:
         return True
-    return expr.is_real or expr.is_real==None
+    return expr.is_real
 
 def is_rat_simp(expr):
     """
