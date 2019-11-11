@@ -9,11 +9,11 @@ before ==
 from dragdrop import CustomDrag
 
 n=randint(4,5)
-drag=[CustomDrag() for _ in range(5)]
+
 drag=[]
 for i in range(1,n+1):
     globals()[f"drop{i}"] = DragDrop(id=f"drop{i}",droppable=True)
-    drop.append(globals()[f"drop{i}"])
+    drag.append(globals()[f"drop{i}"])
 
 drop=[]
 for i in range(1,n+1):
