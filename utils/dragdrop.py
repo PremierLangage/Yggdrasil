@@ -1,3 +1,4 @@
+from components import Component
 
 class CustomDrag(Component):
 
