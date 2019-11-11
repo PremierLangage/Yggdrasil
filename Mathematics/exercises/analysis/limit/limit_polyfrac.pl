@@ -18,6 +18,7 @@ sol=[]
 
 d0=randint(2,7)
 lstd=[[d0,d0]]+[list_randint(2,2,7) for _ in range(2)] 
+rd.shuffle(lstd)
 lsta=list_randitem_norep(3,[oo,oo,-oo,-oo])
 
 for (d,a) in zip(lstd,lsta):
