@@ -1,11 +1,12 @@
 extends = /Mathematics/template/mathbasic.pl
 extends = finite_map_.pl
 
-@ /utils/dragdrop.py [customdragdrop.py]
+@ /utils/dragdrop.py [dragdrop.py]
 
 title = Composition d'applications
 
 before ==
+from dragdrop import CustomDrag
 
 n=randint(4,5)
 drag=[CustomDrag() for _ in range(5)]
