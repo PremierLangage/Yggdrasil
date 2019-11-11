@@ -18,6 +18,8 @@ for d in drag:
     d.content="ee"
     namedrag.append(str(d))
 
+drag1.content="ii"
+
 drop=[]
 for i in range(1,n+1):
     name="drop"+str(i)
@@ -93,5 +95,6 @@ for i in range(n):
         score=0
         drop[i].css = "error-state" 
 ==
+
 
 
