@@ -21,7 +21,7 @@ f=[x**n1,exp(x),ln(x)]
 
 for _ in range(3):
     rd.shuffle(f)
-    lim=Limit(f[i0]/(f[i1]-f[i2]), x, oo)
+    lim=Limit(f[0]/(f[1]-f[2]), x, oo)
     latexlim.append(latex(lim))
     sol.append(lim.doit())
 ==
