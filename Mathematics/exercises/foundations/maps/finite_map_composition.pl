@@ -7,11 +7,8 @@ title = Composition d'applications
 
 before ==
 
-
-
-
 n=randint(4,5)
-drag=[DragDrop() for _ in range(5)]
+drag=[CustomDrag() for _ in range(5)]
 
 drop=[]
 for i in range(1,n+1):
