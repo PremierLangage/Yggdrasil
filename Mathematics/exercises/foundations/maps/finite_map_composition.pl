@@ -7,7 +7,6 @@ title = Composition d'applications
 
 before ==
 
-from utilsdragdrop import newDragList
 
 
 
