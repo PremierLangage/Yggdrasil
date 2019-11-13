@@ -21,13 +21,14 @@ for p,f in random.sample(propvraie,2):
     })
     i+=1
 propfalse=['non',"faux","pas vrai"]
-for i,p in enumerate(random.sample(propfalse,2)):
+for p in enumerate(random.sample(propfalse,2)):
     group.items.append({
         "id": str(i),
         "content": p,
         "_correct": False,
         "_feed":"C'est faux"
     })
+    i+=1
 
 random.shuffle(group.items)
 
