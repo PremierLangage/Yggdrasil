@@ -12,7 +12,7 @@ with open('data.csv',newline='') as file:
     rows=list(csv.DictReader(file,delimiter=';'))
 
 item=rd.choice(rows)
-mot=item['mot']
+mot=" ".joint(item['article'],item['mot'])
 country=item['traductions'].split(",")
 choices=[item['traductions'] for item in rows]
 
@@ -20,7 +20,12 @@ input.autocomplete = choices
 ==
 
 text ==
-Que signifie {{mot}} ?
+Que signifie le mot suivant ?
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gfs-porson" type="text/css"/> 
+Analyser la forme verbale suivante : 
+<div style="text-align:center;font-size: x-large;font-family:'GFSPorsonRegular';">
+{{mot}}
+</div><br>
 ==
 
 evaluator ==
