@@ -11,6 +11,7 @@ Testez vos compétances en markdown et MathJax
 en écrivant du code markdown et mathjax dans l'éditeur 
 et nous allons vous afficher le résultat. 
 
+{{visu}}
 ==
 
 editor.id=essai
@@ -21,8 +22,8 @@ editor.code==
 du mathjax: $% \frac{a}{b} %$
 ==
 evaluator==
-
-grade=(100,response['essai'])
+visu=response['essai']
+grade=(100," ")
 ==
 
 
@@ -38,6 +39,7 @@ background-size: contain;
 
 
  
+
 
 
 
