@@ -12,7 +12,7 @@ with open('data.csv',newline='') as file:
     rows=list(csv.DictReader(file,delimiter=';'))
 
 item=rd.choice(rows)
-mot=" ".joint(item['article'],item['mot'])
+mot=" ".join(item['article'],item['mot'])
 country=item['traductions'].split(",")
 choices=[item['traductions'] for item in rows]
 
