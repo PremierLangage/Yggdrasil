@@ -10,29 +10,33 @@ group =: CheckboxGroup
 before==
 import random
 group.items = []
-propvraie = ['vraie','true',"True"]
-for i,p in enumerate(random.sample(propvraie,2)):
+propvraie = [('vraie',"ffed1"),('true',"ffed1"),("True","ffed1")]
+i=1
+for p,f in random.sample(propvraie,2):
     group.items.append({
         "id": str(i),
         "content": p,
-        "_correct": True
+        "_correct": True,
+        "_feed":f
     })
+    i+=1
 propfalse=['non',"faux","pas vrai"]
 for i,p in enumerate(random.sample(propfalse,2)):
     group.items.append({
         "id": str(i),
         "content": p,
-        "_correct": False
+        "_correct": False,
+        "_feed":"C'est faux"
     })
 
-
+random.shuffle(group.items)
 
 ==
 
 title = Checkbox Group Component
 
 text==
-Select even numbers.
+Selectionnez les affioramtions vraies.
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
@@ -46,21 +50,23 @@ right = 0
 total = 0
 for item in group.items:
     checked = item['checked']
-    content = int(item['content'])
-    vraie=bool(item['_correct'])
-    if content % 2 == 0:
+    vrai=bool(item['_correct'])
+    if vrai:
         total += 1
         item['css'] = 'success-border animated pulse infinite'
         if checked:
             right += 1
             item['css'] = 'success-border'
+
     elif checked:
         item['css'] = 'error-border'
 
+feedback = " ".join([ x['_feed'] for x in group.items])
 
-if total == 0:
-    grade = (100, 'Right')
+
+if total == right:
+    grade = (100, 'Just Right ! Bravo !'+feedback)
 else:
-    grade = ((right / total) * 100, f"{right} / {total}")
+    grade = ((right / total) * 100, f"{right} / {total}"+feedback)
 ==
 
