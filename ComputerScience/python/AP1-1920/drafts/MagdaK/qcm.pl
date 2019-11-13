@@ -10,21 +10,15 @@ group =: CheckboxGroup
 before==
 import random
 group.items = []
-for i,p in enumerate(propvraie):
-    group.items.append({
-        "id": str(i),
-        "content": p
-    })
-group.items = []
 propvraie = ['vraie','true',"True"]
-for i,p in enumerate(propvraie):
+for i,p in enumerate(random.sample(propvraie,2)):
     group.items.append({
         "id": str(i),
         "content": p,
         "_correct": True
     })
 propfalse=['non',"faux","pas vrai"]
-for i,p in enumerate(propfalse):
+for i,p in enumerate(random.sample(propfalse,2)):
     group.items.append({
         "id": str(i),
         "content": p,
