@@ -25,12 +25,19 @@ countries = [
     ("Irlande", "Dublin"),
     ("Norvège", "Oslo"),
     ("Suède", "Stockholm"),
-    ("Grèce", "Athènes")
+    ("Grèce", "Athènes"),
+    ("Brésil","Brasilia")
 ]
 
 inputbox.autocomplete = []
 for e in countries:
     inputbox.autocomplete.append(e[0])
+
+notcap = ["New York","Rio de janero","Bonn","Genève","Milan"]
+
+for e in notcap:
+    inputbox.autocomplete.append(e)
+
 
 answer = random.choice(countries)
 ==
