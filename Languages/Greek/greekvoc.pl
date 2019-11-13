@@ -2,7 +2,7 @@ extends = /template/basicinput.pl
 
 @ grec_voc_1.csv [data.csv]
 
-title = Capitales de pays
+title = Vocabulaire grec
 
 before ==
 import random as rd
