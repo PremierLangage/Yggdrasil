@@ -6,11 +6,14 @@ builder =@ /builder/before.py
 
 group =: CheckboxGroup
 
+
+propfalse %  ['non',"faux","pas vrai",]
+propvraie = [('vraie',"ffed1"),('true',"ffed1"),("True","ffed1")]
+
 # GENERATE A RANDOM QUESTION
 before==
 import random
 group.items = []
-propvraie = [('vraie',"ffed1"),('true',"ffed1"),("True","ffed1")]
 i=1
 for p,f in random.sample(propvraie,2):
     group.items.append({
@@ -20,8 +23,8 @@ for p,f in random.sample(propvraie,2):
         "_feed":f
     })
     i+=1
-propfalse=['non',"faux","pas vrai"]
-for p in enumerate(random.sample(propfalse,2)):
+
+for p in random.sample(propfalse,2):
     group.items.append({
         "id": str(i),
         "content": p,
