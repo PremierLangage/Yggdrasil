@@ -6,7 +6,7 @@ tag=def|return
 
 #extends=python-pl-bank:/template/pltest.pl
 
-extends=/python-pl-bank/template/pltest.pl
+extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 
 text==
 ## Une fonction fac ##
@@ -27,6 +27,7 @@ pltest==
 120
 >>> 
 ==
+
 
 
 
