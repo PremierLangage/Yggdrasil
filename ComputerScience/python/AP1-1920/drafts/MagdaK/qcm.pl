@@ -28,7 +28,10 @@ i=1
 propvraie = right.split("\n")
 
 for X in random.sample(propvraie,2):
-    p,f = X.split("|")
+    if "|" in X:
+        p,f = X.split("|")
+    else:
+        p=X
     group.items.append({
         "id": str(i),
         "content": p,
@@ -40,7 +43,10 @@ propfalse = wrong.split("\n")
 
 
 for X in random.sample(propfalse,2):
-    p,f = X.split("|")
+    if "|" in X:
+        p,f = X.split("|")
+    else:
+        p=X
     group.items.append({
         "id": str(i),
         "content": p,
