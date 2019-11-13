@@ -20,8 +20,9 @@ form =@ form_selectmap.html
 
 
 evaluator ==
-
+grade=(100," Ok ")
 ==
+
 
 
 
