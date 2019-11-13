@@ -1,12 +1,12 @@
 
 
-author=dr
+
 
 @ /utils/sandboxio.py
 @ /builder/before.py [builder.py]
 @ /grader/evaluator.py [grader.py]
 
-title = <div style="color: {{thecolor}};"> Vive les couleurs {{essai}} - {{color}} </div>
+title = <div style="color: {{thecolor}};"> Vive les couleurs  {{color}} {{essai}}  </div>
 
 before==
 essai=0
@@ -31,8 +31,9 @@ text += " du fun <br/>"
 
 form += " du fun <br/>"
 
-grade=(essai*essai,"  ")
+grade=(essai,"  ")
 ==
+
 
 
 
