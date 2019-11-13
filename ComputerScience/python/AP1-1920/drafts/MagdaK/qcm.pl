@@ -1,4 +1,17 @@
 
+
+
+
+doc==
+Définiser deux variable pl right et wrong contenant les bonne et mauvaise affioramtions.
+
+et une variable text contenant l'énoncé 
+
+==
+
+
+
+
 @ /utils/sandboxio.py
 
 grader  =@ /grader/evaluator.py
@@ -24,12 +37,15 @@ for X in random.sample(propvraie,2):
     })
     i+=1
 propfalse = wrong.split("\n")
-for p in random.sample(propfalse,2):
+
+
+for X in random.sample(propfalse,2):
+    p,f = X.split("|")
     group.items.append({
         "id": str(i),
         "content": p,
         "_correct": False,
-        "_feed":"C'est faux"
+        "_feed":f 
     })
     i+=1
 
