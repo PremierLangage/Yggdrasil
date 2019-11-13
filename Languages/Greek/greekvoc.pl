@@ -13,7 +13,7 @@ with open('data.csv',newline='') as file:
 
 item=rd.choice(rows)
 mot=" ".join([item['article'],item['mot']])
-country=item['traductions'].split(",")
+traduction=item['traductions']
 choices=[item['traductions'] for item in rows]
 
 input.autocomplete = choices
@@ -28,7 +28,7 @@ Que signifie le mot suivant ?
 ==
 
 evaluator ==
-if input.value==country:
+if input.value==traduction:
     grade=(100,"")
 else:
     grade=(0,"")
