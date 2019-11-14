@@ -51,8 +51,9 @@ if __name__ == "__main__":
     dic = get_context()
     student = get_answers()['answer']
     if "taboo" in dic:
-        if checktaboo(dic['taboo'], student):
-            output(0, "Les mots clefs " + dic['taboo'] + " est proscrit.")
+        t,mc = checktaboo(dic['taboo'], student)
+        if t:
+            output(0, "Le mot clef "+mc+" est proscrit.")
             sys.exit(1)
 
     if "pltest" not in dic and "pltest0" not in dic and "pltest1" not in dic:
