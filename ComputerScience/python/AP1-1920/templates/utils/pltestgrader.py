@@ -46,7 +46,9 @@ if __name__ == "__main__":
         if checktaboo(dic['taboo'], student):
             output(0, "Le mot clef " + dic['taboo'] + " est proscrit.")
             sys.exit(1)
-
+        else:
+            output(0, "Le mot clef taboo est proscrit.")
+            sys.exit(1)
     if "pltest" not in dic and "pltest0" not in dic and "pltest1" not in dic:
         print("add  either pltest or pltestN , or change the template ", file=sys.stderr)
         sys.exit(1)
@@ -92,6 +94,7 @@ if __name__ == "__main__":
 
     output(a,outstr,dic)
     
+
 
 
 
