@@ -7,7 +7,7 @@ builder= /builder/before.py
 
 title = Ajout d'éléments
 text == 
-Ecrire une fonction "tab3" qui modifie une liste "lst" passée en argument et 
+Ecrire une fonction **tab3** à deux argument une liste un entier,  qui modifie une liste "lst" passée en argument et 
 qui y ajoute les n premiers éléments de la table de multiplication par 3, en commençant par le multiple de 1.
 
 ==
