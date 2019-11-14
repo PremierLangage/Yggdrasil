@@ -31,6 +31,6 @@ evaluator ==
 if input.value==traduction:
     grade=(100,"")
 else:
-    grade=(0,traduction")
+    grade=(0,traduction)
 ==
 
