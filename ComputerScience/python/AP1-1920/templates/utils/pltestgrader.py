@@ -15,13 +15,21 @@ def add_try_clause(code, excpt):
     return ("try:\n    ...\n" + '\n'.join(["    " + line for line in code.split('\n')])
             + "\nexcept " + excpt.__name__ + ":\n    pass")
 
-
-
-def checktaboo(taboo, answer):
+def docheck(taboo, answer):
     x = re.sub("(\"(.|\n)*\"|#.*)", "", answer) #enlève les commentaires et les chaînes de caractères
     # FIXME la chaine de caractère ""  letaboo "" est elle trouvée par la regex suivante ? 
     return re.search("(^"+taboo+"\s|[^\"]+"+taboo+"\s)", x) != None
 
+
+def checktaboo(taboo, answer):
+    if "|" not in taboo :
+        return docheck(taboo, answer), taboo
+    x = re.sub("(\"(.|\n)*\"|#.*)", "", answer) #enlève les commentaires et les chaînes de caractères
+    for motclef in taboo.split("|"):
+    # FIXME la chaine de caractère ""  letaboo "" est elle trouvée par la regex suivante ? 
+        if re.search("(^"+motclef+"\s|[^\"]+"+motclef+"\s)", x) != None :
+            return True, motclef
+    return False, ""
 
 missing_evaluator_stderr = """\
 The key 'evaluator' was not found in the context.
@@ -44,11 +52,9 @@ if __name__ == "__main__":
     student = get_answers()['answer']
     if "taboo" in dic:
         if checktaboo(dic['taboo'], student):
-            output(0, "Le mot clef " + dic['taboo'] + " est proscrit.")
+            output(0, "Les mots clefs " + dic['taboo'] + " est proscrit.")
             sys.exit(1)
-        else:
-            output(0, "Le mot clef taboo est proscrit.")
-            sys.exit(1)
+
     if "pltest" not in dic and "pltest0" not in dic and "pltest1" not in dic:
         print("add  either pltest or pltestN , or change the template ", file=sys.stderr)
         sys.exit(1)
