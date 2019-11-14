@@ -11,7 +11,7 @@ text ==
 Ecrire une fonction **tab3** à deux arguments une liste, un entier **n**,  qui modifie une liste passée en argument et 
 qui y ajoute la listye des n premiers éléments de la table de multiplication par 3, en commençant par le multiple de 1.
 
-taboo: Ne pas utiliser la fonction <font style="color:red;">append</font> des listes.
+taboo: Ne pas utiliser la fonction <font style="color:red;">{{taboo}}</font> des listes.
 ==
 
 taboo=append
