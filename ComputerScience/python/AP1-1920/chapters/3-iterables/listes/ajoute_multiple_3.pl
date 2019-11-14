@@ -7,16 +7,19 @@ builder= /builder/before.py
 
 title = Ajout d'éléments
 text == 
-Ecrire une fonction **tab3** à deux argument une liste un entier,  qui modifie une liste "lst" passée en argument et 
+Ecrire une fonction **tab3** à deux arguments une liste, un entier **n**,  qui modifie une liste passée en argument et 
 qui y ajoute les n premiers éléments de la table de multiplication par 3, en commençant par le multiple de 1.
 
+taboo: Ne pas utiliser la fonction <font style="color:red;">extend</font> des listes.
 ==
+
+taboo=extend
 
 before==
 # solution --- utilise append
 def tab3(lst,n) :
     for i in range(1,n+1) :
-        lst.append((i+1)*3)
+        lst.append(i*3)
 
 ==
 
