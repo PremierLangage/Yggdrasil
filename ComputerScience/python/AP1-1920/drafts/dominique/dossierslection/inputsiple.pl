@@ -9,6 +9,7 @@ editor.code ==
 # write your code here
 ==
 
+state  % 0 
 
 selectable =: Text
 selectable.text = The quick brown fox jumps over the lazy dog.
@@ -30,7 +31,7 @@ form==
 
 evaluator==
 selectable.separator=' '
-state=1
+state += 1
 if state==1:
     text = "Sélectionnez les mots valides " 
     form="{{ selectable|component}}"
