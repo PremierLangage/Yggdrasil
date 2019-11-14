@@ -2,10 +2,11 @@
 extends=qcm.pl
 
 
+
 wrong==
-non
-faux
-pas vrai
+non | 
+faux | 
+pas vrai 
 ==
 
 right==
