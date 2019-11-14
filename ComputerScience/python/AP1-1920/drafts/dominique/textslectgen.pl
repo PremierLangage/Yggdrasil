@@ -10,7 +10,11 @@ selectable =: Text
 selectable.text = The quick brown fox jumps over the lazy dog.
 selectable.mode = word
 
+form ==
 
+{{ input|component }}
+
+==
 
 state % 0
 
@@ -23,7 +27,7 @@ before==
 selectable.separator=' '
 if state == 0 :
     text = "saissisez le text à selectionner" 
-    form = "{{ input|component }}"
+
 elif state == 1 :
     text = "Sélectionnez les mots valides " 
     form="{{ selectable|component}}"
@@ -36,7 +40,6 @@ inputbox.placeholder = Answer
 inputbox.maxlength = 3
 inputbox.appearance = outline
 
-form=
 
 
 text==
