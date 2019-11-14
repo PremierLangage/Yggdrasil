@@ -9,7 +9,7 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 title = Création d'une liste 
 
 text==
-Ecrire une fonction `retiredoublons` à un paramètres (des listes)
+Ecrire une fonction `retiredoublons` à un paramètre (une liste)
 qui retourne la liste composée d'une seule copie de chaque éléments.
 
 Quand un élémént est en double seul la première occurence est gardée.
@@ -60,5 +60,6 @@ tests %=
     }
 }
 ==
+
 
 
