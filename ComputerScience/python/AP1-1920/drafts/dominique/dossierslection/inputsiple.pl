@@ -20,7 +20,7 @@ selectable.mode = word
 before==
 ==
 
-title = Code Editor Component
+title = text exercice creator 
 
 text==
 ==
@@ -40,7 +40,7 @@ if state==1:
 elif state== 2: 
     indices = []
     for e in selectable.selections:
-        indices.add(e['index'])
+        indices.append(e['index'])
     grade = (100, selectable.text + ";" + str(indices) )
 else:
     grade = (100, " ")
