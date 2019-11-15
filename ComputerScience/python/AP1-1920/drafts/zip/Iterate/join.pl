@@ -44,3 +44,8 @@ pltest1==
 >>> relie(" ",['a','b','c'])=='a b c'
 True
 ==
+pltest2==
+>>> relie("",['a','b','c'])
+'abc'
+
+==
