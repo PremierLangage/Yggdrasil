@@ -51,8 +51,8 @@ Placer le point $% M %$ d'affixe $%{{ z_tex }}%$ dans le plan ci-dessous.
 ==
 
 script_solution ==
-board.create('point',[%s, %s],{size:2,name:'M',color:'green'});
-board.create('point',[%s, %s],{size:2,name:'',color:'red'});
+board.create('point',[{{a}}, {{b}}],{size:2,name:'M',color:'green'});
+board.create('point',[{{x}}, {{y}}],{size:2,name:'',color:'red'});
 ==
 
 evaluator ==
@@ -66,21 +66,22 @@ evaluator ==
 x= drawer.points['M']['x']
 y= drawer.points['M']['y']
 
-
+from jinja2 import Template
 from math import hypot
 if hypot(x-a, y-b)<0.1:
      score=100
-     drawer.script = script_solution % (a, b, x, y)
+     drawer.script = Template(script_solution).render(locals())
      drawer.points = {}
      drawer.disabled = True
 else:
      score=0
      if nbattempt + 1 >= int(maxattempt):
-        drawer.script = script_solution % (a, b, x, y)
+        drawer.script = Template(script_solution).render(locals())
         drawer.points = {}
         drawer.disabled = True
 feedback=""
 ==
+
 
 
 
