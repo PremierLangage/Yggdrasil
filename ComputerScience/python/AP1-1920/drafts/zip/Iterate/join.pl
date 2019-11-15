@@ -20,9 +20,9 @@ before==
 def relie(sep,lst):
     m=''
     for i in range(len(lst)):
-      m+=lst[i]  
-        if i!= len(lst)-1:
-            m+=sep
+      m+=lst[i] 
+      if i!= len(lst)-1:
+         m+=sep
     return m    
 import random
 lst=['to','unvelo','bla','abcdefghij','import','mot','permutations','toto','titi','tata','circulaires']
