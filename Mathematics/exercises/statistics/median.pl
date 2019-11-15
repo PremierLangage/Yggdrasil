@@ -4,7 +4,7 @@
 
 title = Médiane
 
-histogram =: JSXGraph
+histogram =: MathDrawer
 
 histogram.boardAttributes % {"boundingbox": [-1, 10, 11, -2], "axis": true,"showCopyright":false, "showNavigation":false}
 
