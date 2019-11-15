@@ -41,6 +41,6 @@ after=before
 
 ==
 pltest1==
->>> relie(" ",['a','b','c']=='a b c'
+>>> relie(" ",['a','b','c'])=='a b c'
 True
 ==
