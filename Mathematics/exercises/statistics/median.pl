@@ -8,6 +8,11 @@ histogram =: MathDrawer
 
 histogram.boardAttributes % {"boundingbox": [-1, 10, 11, -2], "axis": true,"showCopyright":false, "showNavigation":false}
 
+script ==
+var a = board.create('chart', {{s}}, {chartStyle:'bar',color:'blue',width:0.6});
+==
+
+
 before ==
 import random
 import statistics
@@ -28,11 +33,7 @@ dst = ndst
 sol=statistics.median(smp)
 vmax=max(dst)+2
 
-histogram.script = """
-var dataArr = %s ;
-var a = board.create('chart', dataArr, {chartStyle:'bar',color:'blue',width:0.6});
-""" % str(dst)
-
+histogram.script = Template(script_solution).render(locals())
 ==
 
 lang = fr
