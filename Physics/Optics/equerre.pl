@@ -15,16 +15,16 @@ Amusez-vous avec cette équerre virtuelle
 ==
 
 form ==
-{{input_1 | safe}}
+{{graph | component}}
 
 L'angle de réfraction vaut <input type="number" id="form_angle" step="any" />
 ==
 
-input.1.type = jsxgraph
+graph =: MathDrawer
 
-input.1.attributes = {boundingbox:[-1.25,1.25,1.25,-1.25],axis:false,grid:false,showNavigation:false}
+graph.attributes = {boundingbox:[-1.25,1.25,1.25,-1.25],axis:false,grid:false,showNavigation:false}
 
-input.1.script.main ==
+graph.script ==
 JXG.createProtractor(board,[0.5,0.5],3);
 
 JXG.createToolSquare(board,[-0.5,0.5],0.5);
@@ -38,5 +38,6 @@ evaluator ==
 score=100
 feedback=answer
 ==
+
 
 
