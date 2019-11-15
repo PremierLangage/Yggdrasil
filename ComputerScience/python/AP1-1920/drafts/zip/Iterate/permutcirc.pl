@@ -24,7 +24,7 @@ def decale_gauche(mot):
 import random
 lst=["to",'unvelo',"bla",'abcdefghij','import' ,'random','permutations','circulaires']
 
-m=lst[random.randint(len(lst)]
+m=lst[random.randint(len(lst))]
 pltest3=""">>> decale_gauche ({})\n{}""".format(m,decale_gauche(m))']
 
 ==
