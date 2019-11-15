@@ -34,7 +34,7 @@ sol=statistics.median(smp)
 vmax=max(dst)+2
 from jinja2 import Template
 
-histogram.script = Template(script_solution).render(locals())
+histogram.script = Template(script).render(locals())
 ==
 
 lang = fr
