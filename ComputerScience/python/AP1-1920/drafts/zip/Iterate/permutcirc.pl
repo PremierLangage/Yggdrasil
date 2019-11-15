@@ -22,7 +22,7 @@ def decale_gauche(mot):
     return(l)
 
 import random
-lst=['to','unvelo','bla','abcdefghij','import','random','permutations','circulaires']
+lst=['to','unvelo','bla','abcdefghij','import','mot','permutations','circulaires']
 
 m=lst[random.randint(0,len(lst)-1)]
 
