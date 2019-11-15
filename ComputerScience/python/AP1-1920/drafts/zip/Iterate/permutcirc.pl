@@ -34,5 +34,6 @@ True
 ==
 pltest2==
 >>> decale_gauche ("azerty")
-["azerty",'zertya','ertyaz','rtyaze','tyazer','yazert']
+['azerty', 'zertya', 'ertyaz', 'rtyaze', 'tyazer', 'yazert']
+
 ==
