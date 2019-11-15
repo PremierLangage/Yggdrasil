@@ -6,7 +6,7 @@ title = Médiane
 
 histogram =: MathDrawer
 
-histogram.boardAttributes % {"boundingbox": [-1, 10, 11, -2], "axis": true,"showCopyright":false, "showNavigation":false}
+#histogram.boardAttributes % {"boundingbox": [-1, 10, 11, -2], "axis": true,"showCopyright":false, "showNavigation":false}
 
 script ==
 var a = board.create('chart', {{s}}, {chartStyle:'bar',color:'blue',width:0.6});
