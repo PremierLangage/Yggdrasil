@@ -27,7 +27,7 @@ graph =: MathDrawer
 graph.script ==
 
 JXG.createProtractor(board,[0.5,0.5],3);
-JXG.createToolSquare(board,[-0.5,0.5],0.5);
+//JXG.createToolSquare(board,[-0.5,0.5],0.5);
 var interface = board.create('line',[[1,0],[0,0]],{size:0,visible:false});
 ineq = board.create('inequality', [interface],{color:'grey'});
 ==
