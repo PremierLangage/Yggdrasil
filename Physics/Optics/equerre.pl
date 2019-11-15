@@ -22,7 +22,7 @@ L'angle de réfraction vaut <input type="number" id="form_angle" step="any" />
 
 graph =: MathDrawer
 
-graph.attributes = {boundingbox:[-1.25,1.25,1.25,-1.25],axis:false,grid:false,showNavigation:false}
+graph.attributes % {boundingbox:[-1.25,1.25,1.25,-1.25],axis:false,grid:false,showNavigation:false}
 
 graph.script ==
 JXG.createProtractor(board,[0.5,0.5],3);
