@@ -9,7 +9,7 @@ histogram =: MathDrawer
 #histogram.boardAttributes % {"boundingbox": [-1, 10, 11, -2], "axis": true,"showCopyright":false, "showNavigation":false}
 
 script ==
-var a = board.create('chart', {{smp}}, {chartStyle:'bar',color:'blue',width:0.6});
+var a = board.create('chart', [4,1,3,2,5,7,1.5,2] , {chartStyle:'bar',color:'blue',width:0.6});
 ==
 
 
