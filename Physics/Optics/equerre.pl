@@ -25,12 +25,10 @@ graph =: MathDrawer
 # graph.attributes % {'boundingbox':[-1.25,1.25,1.25,-1.25],'axis':false,'grid':false,'showNavigation':false}
 
 graph.script ==
-JXG.createProtractor(board,[0.5,0.5],3);
-
-JXG.createToolSquare(board,[-0.5,0.5],0.5);
+//JXG.createProtractor(board,[0.5,0.5],3);
+//JXG.createToolSquare(board,[-0.5,0.5],0.5);
 var interface = board.create('line',[[1,0],[0,0]],{size:0,visible:false});
 ineq = board.create('inequality', [interface],{color:'grey'});
-
 ==
 
 
