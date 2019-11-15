@@ -38,6 +38,7 @@ score=100
 feedback=answer
 ==
 
+extrjs==
 <script>
 JXG.Options = JXG.merge(JXG.Options, {
     board: {
@@ -78,4 +79,4 @@ JXG.Options = JXG.merge(JXG.Options, {
     rot.bindTo(im);
 };
  </script>
-
+==
