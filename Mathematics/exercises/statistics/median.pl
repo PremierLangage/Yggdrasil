@@ -6,8 +6,6 @@ title = Médiane
 
 histogram =: MathDrawer
 
-histogram.attributes % {"boundingbox": [-1, 10, 11, -2], "axis": true,"showCopyright":false, "showNavigation":false}
-
 script ==
 var a = board.create('chart', [{{smp}}] , {chartStyle:'bar',color:'blue',width:0.6});
 ==
@@ -33,7 +31,7 @@ dst = ndst
 sol=statistics.median(smp)
 vmax=max(dst)+2
 from jinja2 import Template
-
+histogram.attributes.boundingbox= [-1, 10, 11, -2]
 histogram.script = Template(script).render(locals())
 ==
 
