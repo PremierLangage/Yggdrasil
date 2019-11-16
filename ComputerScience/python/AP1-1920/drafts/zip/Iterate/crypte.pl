@@ -15,7 +15,7 @@ Les chaines et ont même longueur.<br>
  'nOmbrE dE vOYEllE
 ==
 taboo=replace|translate
-before==
+zbefore==
 def crypte(message,clair,code):
     s=''
     for lettre in message:
