@@ -1,16 +1,16 @@
-extends = /Mathematics/template/mathjsxgraph.pl
+extends = /template/basic.pl
 
 title=
 
-histogram =: MathDrawer
+jxg =: MathDrawer
 
-histogram.attributes %=
+jxg.attributes %=
 {"boundingbox" : [-1,5,5,-1],
 "showNavigation" : false,
 "keepaspectratio" : false}
 ==
 
-script ==
+jxg.script ==
 var a = board.create('chart', [1,3,1,2] , {chartStyle:'bar',color:'blue',width:0.6});
 ==
 
@@ -18,7 +18,6 @@ var a = board.create('chart', [1,3,1,2] , {chartStyle:'bar',color:'blue',width:0
 lang = fr
 
 text ==
-Déterminer la médiane de la série statistique représentée ci-dessous.
 {{ histogram | component }}
 ==
 
