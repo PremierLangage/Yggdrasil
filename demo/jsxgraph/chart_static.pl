@@ -23,9 +23,9 @@ extracss==
     margin: 0 auto;
 }
 .box {
-    max-width:50px;
+    max-width:100px;
     width:90vw;
-    max-height:50px;
+    max-height:100px;
     height:90vw;
     margin: 0 auto;
 }
