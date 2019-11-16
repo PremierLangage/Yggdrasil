@@ -49,7 +49,7 @@ pltest2==
 >>> compte_mots(""" On appelle **mot** une suite de caractères qui \n ne contient ni le caractère esrpace " " ni le caractère tabulation "\t", ni le passage à la ligne .<br> Ainsi """)
 28
 ==
-editor.code==
+Zeditor.code==
 def compte_mots(ch):
     if ch=="  la phrase :\nest (-è_i ctèu longue":
         return 7
