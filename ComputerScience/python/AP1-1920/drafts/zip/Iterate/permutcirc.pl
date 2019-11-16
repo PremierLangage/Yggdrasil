@@ -10,7 +10,7 @@ On appelle  decalage circulaire gauche d'un mot un mot obtenu en répétant un c
 -enlever la première lettre du mot et la placer à la fin du mot.  	 <br>
 les decalages circulaires gauches  de 'velo' sont : 'velo','elov','love','ovel'. <br>
 On considèrera qu'un mot de longueur n possède n décalages. <br>
-Ecrire une fonction `decale_gauche` qui reçoit une chaine de caratère et renvoie la liste de ses décalages
+Ecrire une fonction `decale_gauche` qui reçoit une chaine de caratère et renvoie la liste de ses décalages.
 ==
 before==
 def decale_gauche(mot):
