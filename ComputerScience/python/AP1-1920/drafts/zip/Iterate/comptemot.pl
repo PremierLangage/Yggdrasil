@@ -5,7 +5,7 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title =Compter les mots
 text== 
-  On appelle **mot** une suite de caractère qui ne contient ni le caractère esrpace(" ")
+  On appelle **mot** une suite de caractère qui ne contient ni le caractère espace(" ")
 ni le caractère tabulation("\t"), ni le passage à la ligne .<br>
 Ainsi <br>
 "  la phrase :\nest (-è_i ctèu longue" contient 7 mots'
@@ -32,6 +32,11 @@ pltest1==
 >>> compte_mots("  la phrase :\nest (-è_i ctèu longue")==7
 True
 ==
+pltest2==
+>>> compte_mots("  On appelle **mot** une suite de caractère qui ne contient ni le caractère esrpace(" ")
+ni le caractère tabulation("\t"), ni le passage à la ligne .<br>
+Ainsi ")
+
 editor.code==
 def compte_mots(ch):
     if ch=="  la phrase :\nest (-è_i ctèu longue":
