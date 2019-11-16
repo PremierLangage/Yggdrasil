@@ -11,7 +11,7 @@ histogram.attributes %=
 ==
 
 script ==
-var a = board.create('chart', {{series}} , {chartStyle:'bar',color:'blue',width:0.6});
+var a = board.create('chart', {{series}} , {chartStyle:'bar',color:'blue',width:0.6,labels:[{{labels}}]});
 ==
 
 
@@ -19,7 +19,7 @@ before ==
 import random
 import statistics
 series=[random.randint(1,4) for _ in range(4)]
-label = list(range(5))
+labels = list(range(5))
 from jinja2 import Template
 histogram.script = Template(script).render(locals())
 ==
