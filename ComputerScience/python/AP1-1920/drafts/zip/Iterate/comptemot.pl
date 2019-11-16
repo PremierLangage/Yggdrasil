@@ -12,7 +12,7 @@ Ainsi <br>
 
 Ecrire une fonctions `compte_mots` qui recoit une chaine et renvoie le nombre de mots qu'elle contient.
 ==
-efore==
+before==
 def compte_mots(ch):
     nb=0
     w=''
@@ -39,7 +39,7 @@ mot=lst[random.randint(0,len(lst)-1)]
 mot+=lst[random.randint(0,len(lst)-1)]
 
 pltest3=""">>> compte_mots('{}')\n{}""".format(mot,compte_mots(mot))
-
+after=before
 ==
 pltest1==
 >>> compte_mots("  la phrase :\nest (-è_i ctèu longue")==7
