@@ -10,14 +10,14 @@ jxg.attributes %=
 "keepaspectratio" : false}
 ==
 
-jxg.css = jxgclass2
+jxg.css = 
 
 extracss==
 <style>
 .jxgclass2 {
-    max-width:100px;
+    max-width:400px;
     width:40vw;
-    max-height:100px;
+    max-height:300px;
     height:40vw;
     margin: 0 auto;
 }
