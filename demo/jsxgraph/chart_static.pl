@@ -12,7 +12,7 @@ jxg.attributes %=
 
 extracss==
 <style>
-.box {
+.c-jsxgraph {
     max-width:250px;
     width:90vw;
     max-height:250px;
@@ -21,8 +21,6 @@ extracss==
 }
 </style>
 ==
-
-jxg.css=box
 
 jxg.script ==
 var a = board.create('chart', [5,7,4,9], {chartStyle:'bar',color:'blue',width:0.6});
