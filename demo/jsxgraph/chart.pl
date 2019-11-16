@@ -18,7 +18,7 @@ var a = board.create('chart', {{data}} , {chartStyle:'bar',color:'blue',width:0.
 before ==
 import random
 import statistics
-series=[list(range(4)),[random.randint(1,4) for _ in range(4)]]
+series=[list(range(1,5)),[random.randint(1,4) for _ in range(4)]]
 
 from jinja2 import Template
 histogram.script = Template(script).render(locals())
