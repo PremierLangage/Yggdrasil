@@ -2,7 +2,7 @@ extends = /template/basic.pl
 
 title = Histogramme (statique)
 
-jxg =: JSXGraphComponent
+jxg =: MathDrawer
 
 jxg.attributes %=
 {"boundingbox" : [-1,10,5,-1],
