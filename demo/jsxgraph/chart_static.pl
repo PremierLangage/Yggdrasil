@@ -17,7 +17,6 @@ extracss==
 <style>
 .jxg {
     width:30vw;
-    height:60vw;
 }
 </style>
 ==
