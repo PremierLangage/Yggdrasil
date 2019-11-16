@@ -29,6 +29,7 @@ def compte_mots(ch):
 
 ==
 pltest1==
+>>> compte_mots("  la phrase :\nest (-è_i ctèu longue")==7
 True
 ==
 editor.code==
