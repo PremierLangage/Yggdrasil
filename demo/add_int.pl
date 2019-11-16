@@ -15,7 +15,7 @@ Calculer {{a}} + {{b}}.
 ==
 
 input =: Input
-input.css = glyphicon glyphicon-ok
+#input.css = glyphicon glyphicon-ok
 form ==
 {{ input | component }}
 ==
