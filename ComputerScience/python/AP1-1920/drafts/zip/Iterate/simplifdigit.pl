@@ -42,11 +42,9 @@ import random
 max=random.randint(100,1200)
 pltest3=""">>> simplifie_chiffre({})\n{}""".format(max,simplifie_chiffre(max))
 
-
 after=before
+==
 
-==
-==
 pltest1==
 >>> simplifie_chiffre(100)==4
 True
