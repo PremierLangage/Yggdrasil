@@ -10,7 +10,7 @@ jxg.attributes %=
 "keepaspectratio" : false}
 ==
 
-jxg.css=box
+jxg.css= box
 
 
 extracss==
