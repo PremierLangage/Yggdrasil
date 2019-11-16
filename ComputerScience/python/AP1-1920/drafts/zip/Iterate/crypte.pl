@@ -39,6 +39,7 @@ clef=[("aeiouy","AEIOUY"),("azertyuiop",'poiuytreza'),('iouyaebcdfghjklm','yaebc
 mot=lst[random.randint(0,len(lst)-1)]
 c=clef[random.randint(0,len(clef)-1)]
 pltest3=""">>> crypte('{}','{}','{}')\n{}""".format(mot,c[0],c[1],crypte(mot,c[0],c[1]))
+after=before
 
 ==
 pltest1==
