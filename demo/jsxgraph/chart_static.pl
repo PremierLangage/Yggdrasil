@@ -5,7 +5,7 @@ title = Histogramme
 jxg =: MathDrawer
 
 jxg.attributes %=
-{"boundingbox" : [-1,5,10,-1],
+{"boundingbox" : [-1,10,5,-1],
 "showNavigation" : false,
 "keepaspectratio" : false}
 ==
