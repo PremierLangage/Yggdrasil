@@ -36,3 +36,5 @@ editor.code==
 def compte_mots(ch):
     if ch=="  la phrase :\nest (-è_i ctèu longue":
         return 7
+
+==
