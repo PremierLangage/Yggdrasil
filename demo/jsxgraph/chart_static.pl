@@ -15,15 +15,6 @@ var a = board.create('chart', [1,3,1,2] , {chartStyle:'bar',color:'blue',width:0
 ==
 
 
-before ==
-import random
-import statistics
-series=[random.randint(1,4) for _ in range(4)]
-labels = list(range(5))
-from jinja2 import Template
-histogram.script = Template(script).render(locals())
-==
-
 lang = fr
 
 text ==
