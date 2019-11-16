@@ -14,7 +14,7 @@ jxg.css = jxgclass
 
 extracss==
 <style>
-jxgclass {
+.jxgclass {
     max-width:100px;
     width:90vw;
     max-height:100px;
