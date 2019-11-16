@@ -64,7 +64,7 @@ Douchanbé;Drapeau du Tadjikistan;Tadjikistan
 Dublin;Drapeau de l'Irlande;Irlande
 Erevan;Drapeau de l'Arménie;Arménie
 Freetown;Drapeau de Sierra Leone;Sierra Leone
-Funafuti (Vaiaku)7;Drapeau des Tuvalu;Tuvalu
+Funafuti;Drapeau des Tuvalu;Tuvalu
 Gaborone;Drapeau du Botswana;Botswana
 Georgetown;Drapeau du Guyana;Guyana
 Gitega(capitale politique);Drapeau du Burundi;Burundi
@@ -76,8 +76,8 @@ Helsinki;Drapeau de la Finlande;Finlande
 Honiara;Drapeau des Salomon;Salomon
 Islamabad;Drapeau du Pakistan;Pakistan
 Jakarta;Drapeau de l'Indonésie;Indonésie
-Jérusalem (décision condamnée par la Résolution 478)note 2;Drapeau d’Israël;Israël
-Jérusalem-Est (capitale proclamée)note 3;Drapeau de la Palestine;Palestine
+Jérusalem;Drapeau d’Israël;Israël
+Jérusalem-Est;Drapeau de la Palestine;Palestine
 Kaboul;Drapeau de l'Afghanistan;Afghanistan
 Kampala;Drapeau de l'Ouganda;Ouganda
 Katmandou;Drapeau du Népal;Népal
@@ -120,13 +120,13 @@ Moroni;Drapeau des Comores;Comores
 Moscou;Drapeau de la Russie;Russie
 Nairobi;Drapeau du Kenya;Kenya
 Nassau;Drapeau des Bahamas;Bahamas
-Naypyidaw 27;Drapeau de la Birmanie;Birmanie
+Naypyidaw;Drapeau de la Birmanie;Birmanie
 N'Djaména;Drapeau du Tchad;Tchad
 New Delhi;Drapeau de l'Inde;Inde
 Niamey;Drapeau du Niger;Niger
 Nicosie;Drapeau de Chypre;Chypre
 Nouakchott;Drapeau de la Mauritanie;Mauritanie
-Noursoultan28;Drapeau du Kazakhstan;Kazakhstan
+Noursoultan;Drapeau du Kazakhstan;Kazakhstan
 Nuku'alofa;Drapeau des Tonga;Tonga
 Oslo;Drapeau de la Norvège;Norvège
 Ottawa;Drapeau du Canada;Canada
@@ -136,7 +136,7 @@ Palikir;Drapeau des États fédérés de Micronésie;États fédérés de Micron
 Panama;Drapeau du Panama;Panama
 Paramaribo;Drapeau du Suriname;Suriname
 Paris;Drapeau de la France;France
-La Paz (gouvernement et ambassades)29;Drapeau de la Bolivie;Bolivie
+La Paz;Drapeau de la Bolivie;Bolivie
 Pékin;Drapeau de la Chine;Chine
 Phnom Penh;Drapeau du Cambodge;Cambodge
 Podgorica;Drapeau du Monténégro;Monténégro
@@ -148,8 +148,8 @@ Porto-Novo (administrative)30;Drapeau du Bénin;Bénin
 Port-Vila;Drapeau du Vanuatu;Vanuatu
 Prague;Drapeau de la République tchèque;République tchèque
 Praia;Drapeau du Cap-Vert;Cap-Vert
-Pretoria (capitale administrative)4;Drapeau d'Afrique du Sud;Afrique du Sud
-Putrajaya (capitale administrative)25;Drapeau de la Malaisie;Malaisie
+Pretoria;Drapeau d'Afrique du Sud;Afrique du Sud
+Putrajaya;Drapeau de la Malaisie;Malaisie
 Pyongyang;Drapeau de la Corée du Nord;Corée du Nord
 Quito;Drapeau de l'Équateur;Équateur
 Rabat;Drapeau du Maroc;Maroc
@@ -174,11 +174,11 @@ Singapour;Drapeau de Singapour;Singapour
 Skopje;Drapeau de la Macédoine du Nord;Macédoine du Nord
 Sofia;Drapeau de la Bulgarie;Bulgarie
 Stockholm;Drapeau de la Suède;Suède
-Sucre (constitutionnelle)29;Drapeau de la Bolivie;Bolivie
+Sucre;Drapeau de la Bolivie;Bolivie
 Suva;Drapeau des Fidji;Fidji
 Tachkent;Drapeau de l'Ouzbékistan;Ouzbékistan
 Tallinn;Drapeau de l'Estonie;Estonie
-Tarawa-Sud31;Drapeau des Kiribati;Kiribati
+Tarawa-Sud;Drapeau des Kiribati;Kiribati
 Tbilissi;Drapeau de la Géorgie;Géorgie
 Tegucigalpa;Drapeau du Honduras;Honduras
 Téhéran;Drapeau de l'Iran;Iran
