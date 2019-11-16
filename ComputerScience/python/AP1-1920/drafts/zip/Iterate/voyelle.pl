@@ -7,7 +7,7 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 title =Nombre de voyelles
 text== 
 Ecrire une fonction `nombre_voyelle` qui reçoit une chaine de caractères et renvoie le nombre de voyelles (en minuscules, non accentuées) qu'elle contient.<br> 
- >>> nombre_voyelle('nombre_voyelle')
+ >>> nombre_voyelle('nombre_voyelle')<br>
  5
 ==
 before==
