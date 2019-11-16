@@ -16,7 +16,7 @@ jxg.css= jxg
 extracss==
 <style>
 .jxg {
-    width:60vw;
+    width:30vw;
     height:60vw;
 }
 </style>
