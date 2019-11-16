@@ -10,6 +10,18 @@ jxg.attributes %=
 "keepaspectratio" : false}
 ==
 
+extracss==
+<style>
+.math-drawer-component {
+    max-width:300px;
+    width:90vw;
+    max-height:300px;
+    height:90vw;
+    margin: 0 auto;
+}
+</style>
+==
+
 jxg.script ==
 var a = board.create('chart', [5,7,4,9], {chartStyle:'bar',color:'blue',width:0.6});
 ==
