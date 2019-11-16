@@ -6,8 +6,7 @@ jxg =: MathDrawer
 
 jxg.attributes %=
 {"boundingbox" : [-1,10,5,-1],
-"showNavigation" : false,
-"keepaspectratio" : false}
+"showNavigation" : false}
 ==
 
 jxg.css = jxgclass
