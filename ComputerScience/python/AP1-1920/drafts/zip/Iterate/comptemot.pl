@@ -33,8 +33,9 @@ pltest1==
 True
 ==
 pltest2==
->>> compte_mots(""" On appelle **mot** une suite de caractère qui ne contient ni le caractère esrpace(" ")
-ni le caractère tabulation("\t"), ni le passage à la ligne .<br>
+>>> compte_mots(""" On appelle **mot** une suite de caractères
+ qui ne contient ni le caractère esrpace " "
+ni le caractère tabulation "\t", ni le passage à la ligne .<br>
 Ainsi """)
 28
 ==
