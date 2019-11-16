@@ -11,14 +11,14 @@ histogram.attributes %=
 ==
 
 script ==
-var a = board.create('chart', {{series}} , {chartStyle:'bar',color:'blue',width:0.6});
+var a = board.create('chart', {{data}} , {chartStyle:'bar',color:'blue',width:0.6,labels:[{{data}}]});
 ==
 
 
 before ==
 import random
 import statistics
-series=[random.randint(1,4) for _ in range(4)]
+series=[list(range(4)),[random.randint(1,4) for _ in range(4)]]
 
 from jinja2 import Template
 histogram.script = Template(script).render(locals())
