@@ -35,3 +35,7 @@ pltest1==
 >>> nombre_voyelle('nombre_voyelle')==5
 True
 ==
+pltest2==
+>>> nombre_voyelle('Elle y va doucement')
+7
+==
