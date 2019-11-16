@@ -14,7 +14,7 @@ jxg.css = jxgclass
 
 extracss==
 <style>
-.jxgclass {
+.math-drawer-component {
     max-width:300px;
     width:40vw;
     max-height:300px;
