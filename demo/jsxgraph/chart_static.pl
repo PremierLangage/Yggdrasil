@@ -16,8 +16,8 @@ jxg.css= box
 extracss==
 <style>
 .box {
-    width:60vw !important;
-    height:60vw !important;
+    width:10vw !important;
+    height:10vw !important;
 }
 </style>
 ==
