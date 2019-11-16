@@ -5,13 +5,13 @@ title=
 histogram =: MathDrawer
 
 histogram.attributes %=
-{"boundingbox": [-1,5,14,-1],
+{"boundingbox": [-1,6,8,-1],
 "showNavigation": false,
 "keepaspectratio":false}
 ==
 
 script ==
-var a = board.create('chart', [{{smp}}] , {chartStyle:'bar',color:'blue',width:0.6});
+var a = board.create('chart', [3,2,5,0,1,5,1] , {chartStyle:'bar',color:'blue',width:0.6});
 ==
 
 
