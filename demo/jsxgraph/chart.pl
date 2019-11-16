@@ -4,6 +4,18 @@ title=
 
 histogram =: MathDrawer
 
+drawer.attributes %=
+{
+    "boundingbox": [
+      -6,
+      6,
+      6,
+      -6
+    ],
+    "showNavigation": false
+  }
+==
+
 script ==
 var a = board.create('chart', [{{smp}}] , {chartStyle:'bar',color:'blue',width:0.6});
 ==
