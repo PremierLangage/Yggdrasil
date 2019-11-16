@@ -36,9 +36,7 @@ for i in range(lg):
 
 pltest3=""">>> relie({},{})\n{}""".format(s,m,relie(s,m))
 
-
 after=before
-
 ==
 pltest1==
 >>> relie(" ",['a','b','c'])=='a b c'
@@ -49,3 +47,4 @@ pltest2==
 'abc'
 
 ==
+
