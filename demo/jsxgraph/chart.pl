@@ -29,7 +29,6 @@ dst = ndst
 sol=statistics.median(smp)
 vmax=max(dst)+2
 from jinja2 import Template
-histogram.attributes.boundingbox= [-1, 10, 11, -2]
 histogram.script = Template(script).render(locals())
 ==
 
