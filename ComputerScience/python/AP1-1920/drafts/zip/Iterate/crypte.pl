@@ -55,5 +55,6 @@ def crypte(m,c,k):
         return "titi"
     elif m=='nombre de voyelle':
         return 'nOmbrE dE vOYEllE'
-    else return "re"
+    else :
+     return "re"
 ==
