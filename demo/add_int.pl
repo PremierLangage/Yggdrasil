@@ -15,9 +15,13 @@ Calculer {{a}} + {{b}}.
 ==
 
 input =: Input
-
+input.css = glyphicon glyphicon-ok form-control-feedback
 form ==
 {{ input | component }}
+==
+
+extracss==
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 ==
 
 evaluator ==
@@ -29,4 +33,5 @@ try:
 except:
     grade=(-1,"Votre réponse n'est pas un nombre entier.")
 ==
+
 
