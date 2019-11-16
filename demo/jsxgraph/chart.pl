@@ -1,15 +1,6 @@
 extends = /Mathematics/template/mathjsxgraph.pl
 
-title = Affixe d'un nombre complexe
-
-lang = fr
-
-before ==
-a=randint(-5,5,[0])
-b=randint(-5,5,[0])
-z=a+b*sp.I
-z_tex=latex(z)
-==
+title=
 
 histogram =: MathDrawer
 
