@@ -2,7 +2,7 @@ extends = /template/basic.pl
 
 title = Histogramme (statique)
 
-jxg =: JSXgraph
+jxg =: MathDrawer
 
 jxg.attributes %=
 {"boundingbox" : [-1,10,5,-1],
@@ -12,7 +12,7 @@ jxg.attributes %=
 
 extracss==
 <style>
-.jsxgraph-component {
+.box {
     max-width:250px;
     width:90vw;
     max-height:250px;
@@ -27,5 +27,7 @@ var a = board.create('chart', [5,7,4,9], {chartStyle:'bar',color:'blue',width:0.
 ==
 
 text ==
+<div  class="box">
 {{ jxg | component }}
+</div>
 ==
