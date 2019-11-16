@@ -16,9 +16,9 @@ jxg.css= box
 extracss==
 <style>
 .box {
-    max-width:400px !important;
+    max-width:300px !important;
     width:90vw !important;
-    max-height:400px !important;
+    max-height:300px !important;
     height:90vw !important;
     margin: 0 auto !important;
 }
