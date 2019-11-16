@@ -22,12 +22,12 @@ extracss==
 </style>
 ==
 
+jxg.css=box
+
 jxg.script ==
 var a = board.create('chart', [5,7,4,9], {chartStyle:'bar',color:'blue',width:0.6});
 ==
 
 text ==
-<div class="box">
 {{ jxg | component }}
-</div>
 ==
