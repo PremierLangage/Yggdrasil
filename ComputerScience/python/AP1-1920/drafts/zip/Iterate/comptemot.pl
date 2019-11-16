@@ -26,6 +26,19 @@ def compte_mots(ch):
     if w!='':
         nb+=1
     return nb
+import random
+
+lst=['On appelle  decalage circulaire gauche', 
+'un mot obtenu en répétant un certain nombre de fois ',
+'enlever la première lettre du mot et la placer à la fin du mot.',
+'Ecrire une fonction `nombre_voyelle` qui reçoit une chaine de caractères et renvoie le nombre de voyelles ',
+'les decalages circulaires gauches','velo',
+"On considèrera qu'un mot de longueur n possède n décalages"]
+
+mot=lst[random.randint(0,len(lst)-1)]
+mot+=lst[random.randint(0,len(lst)-1)]
+
+pltest3=""">>> compte_mots('{}')\n{}""".format(mot,compte_mots(mot))
 
 ==
 pltest1==
