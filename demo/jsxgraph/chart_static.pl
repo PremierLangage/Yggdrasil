@@ -16,8 +16,10 @@ extracss==
 <style>
 .jxgclass {
     max-width:300px;
-    width:90vw;
-
+    width:40vw;
+    max-height:300px;
+    height:40vw;
+    margin: 0 auto;
 }
 </style>
 ==
