@@ -9,8 +9,8 @@ text==
 Ecrire une fonction `nombre_voyelle` qui reçoit une chaine de caractères et renvoie le nombre de voyelles (en minuscules, non accentuées) qu'elle contient.<br> 
  >>> nombre_voyelle('nombre_voyelle')
  5
- ==
- before==
+==
+before==
  def nombre_voyelle(ch):
     nb=0
     for lettre in ch:
@@ -33,3 +33,4 @@ pltest3=""">>> nombre_voyelle('{}')\n{}""".format(m,nombre_voyelle(m))
 pltest1==
 >>> nombre_voyelle('nombre_voyelle')==5
 True
+==
