@@ -49,3 +49,11 @@ pltest2==
 >>> crypte('nombre de voyelle','aeiouy','AEIOUY')
 'nOmbrE dE vOYEllE'
 ==
+editor.code==
+def crypte(m,c,k):
+    if m=='toto':
+        return "titi"
+    elif m=='nombre de voyelle':
+        return 'nOmbrE dE vOYEllE'
+    else return "re"
+==
