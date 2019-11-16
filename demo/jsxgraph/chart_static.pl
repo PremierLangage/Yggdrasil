@@ -15,16 +15,9 @@ jxg.css= box
 
 extracss==
 <style>
-.jsxgraph-component {
-    max-width:250px;
-    width:90vw;
-    max-height:250px;
-    height:90vw;
-    margin: 0 auto;
-}
 .box {
-    width:60vw;
-    height:40vw;
+    width:60vw !important; 
+    height:60vw !important;
 }
 </style>
 ==
