@@ -6,7 +6,8 @@ histogram =: MathDrawer
 
 histogram.attributes %=
 {"boundingbox": [-1,10,11,-1],
-"showNavigation": false}
+"showNavigation": false,
+"keepaspectratio":false}
 ==
 
 script ==
