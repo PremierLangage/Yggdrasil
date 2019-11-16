@@ -1,6 +1,6 @@
 extends = /template/basic.pl
 
-title = Histogramme
+title = Histogramme (statique)
 
 jxg =: MathDrawer
 
@@ -11,7 +11,7 @@ jxg.attributes %=
 ==
 
 jxg.script ==
-var a = board.create('chart', [5,7,4,9] , {chartStyle:'bar',color:'blue',width:0.6});
+var a = board.create('chart', [5,7,4,9], {chartStyle:'bar',color:'blue',width:0.6});
 ==
 
 text ==
