@@ -11,7 +11,15 @@ jxg.attributes %=
 ==
 
 jxg.script ==
-var a = board.create('chart', [5,7,4,9] , {chartStyle:'bar',color:'blue',width:0.6});
+var a = board.create('chart', [{{series}}] , {chartStyle:'bar',color:'blue',width:0.6});
+==
+
+
+before ==
+import random
+series=[random.randint(1,4) for _ in range(4)]
+from jinja2 import Template
+histogram.script = Template(script).render(locals())
 ==
 
 text ==
