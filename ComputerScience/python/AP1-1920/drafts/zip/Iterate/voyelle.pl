@@ -21,11 +21,12 @@ def nombre_voyelle(ch):
 
 import random
 
-lst=['On appelle  decalage circulaire gauche d'un mot', 'un mot obtenu en répétant un certain nombre de fois ',
-'enlever la première lettre du mot et la placer à la fin du mot.','Ecrire une fonction `nombre_voyelle` qui reçoit une chaine de caractères et renvoie le nombre de voyelles ',
+lst=['On appelle  decalage circulaire gauche', 
+'un mot obtenu en répétant un certain nombre de fois ',
+'enlever la première lettre du mot et la placer à la fin du mot.',
+'Ecrire une fonction nombre voyelle  qui reçoit une chaine de caractères et renvoie le nombre de voyelles ',
 'les decalages circulaires gauches','velo',
-'On considèrera qu'un mot de longueur n possède n décalages']
-
+"On considèrera qu'un mot de longueur n possède n décalages"]
 m=lst[random.randint(0,len(lst)-1)]
 
 pltest3=""">>> nombre_voyelle('{}')\n{}""".format(m,nombre_voyelle(m))
