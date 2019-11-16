@@ -11,7 +11,7 @@ Ecrire une fonction `nombre_voyelle` qui reçoit une chaine de caractères et re
  5
 ==
 before==
- def nombre_voyelle(ch):
+def nombre_voyelle(ch):
     nb=0
     for lettre in ch:
         if lettre in "aeiouy":
