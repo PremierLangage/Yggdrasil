@@ -15,14 +15,11 @@ Calculer {{a}} + {{b}}.
 ==
 
 input =: Input
-#input.css = glyphicon glyphicon-ok
+
 form ==
 {{ input | component }}
 ==
 
-extracs==
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-==
 
 evaluator ==
 try:
