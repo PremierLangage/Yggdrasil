@@ -33,13 +33,16 @@ pltest1==
 True
 ==
 pltest2==
->>> compte_mots("  On appelle **mot** une suite de caractère qui ne contient ni le caractère esrpace(" ")
+>>> compte_mots(""" On appelle **mot** une suite de caractère qui ne contient ni le caractère esrpace(" ")
 ni le caractère tabulation("\t"), ni le passage à la ligne .<br>
-Ainsi ")
-
+Ainsi """)
+28
+==
 editor.code==
 def compte_mots(ch):
     if ch=="  la phrase :\nest (-è_i ctèu longue":
         return 7
+    else :
+        return 28
 
 ==
