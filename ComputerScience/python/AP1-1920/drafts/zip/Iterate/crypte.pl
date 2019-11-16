@@ -41,3 +41,11 @@ c=clef[random.randint(0,len(clef)-1)]
 pltest3=""">>> crypte('{}',{}',{}')\n{}""".format(mot,c[0],c[1],crypte(mot,c[0],c[1]))
 
 ==
+pltest1==
+>>> cryte("toto",'azerto','azerti')=='titi'
+True
+==
+pltest2==
+>>>  `crypte`('nombre de voyelle','aeiouy','AEIOUY')
+ 'nOmbrE dE vOYEllE
+ ==
