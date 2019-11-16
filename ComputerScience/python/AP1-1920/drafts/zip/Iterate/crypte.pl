@@ -42,7 +42,7 @@ pltest3=""">>> crypte('{}',{}',{}')\n{}""".format(mot,c[0],c[1],crypte(mot,c[0],
 
 ==
 pltest1==
->>> cryte("toto",'azerto','azerti')=='titi'
+>>> crype("toto",'azerto','azerti')=='titi'
 True
 ==
 pltest2==
