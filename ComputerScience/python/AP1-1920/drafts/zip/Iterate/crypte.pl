@@ -47,5 +47,5 @@ True
 ==
 pltest2==
 >>> crypte('nombre de voyelle','aeiouy','AEIOUY')
-'nOmbrE dE vOYEllE
+'nOmbrE dE vOYEllE'
 ==
