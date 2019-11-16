@@ -7,7 +7,7 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 title =decalage circulaire gauche d'un mot
 text== 
 On appelle  decalage circulaire gauche d'un mot un mot obtenu en répétant un certain nombre de fois <br>
--enlever la première lettre du mot et la placer àla fin du mot.  	 <br>
+-enlever la première lettre du mot et la placer à la fin du mot.  	 <br>
 les decalages circulaires gauches  de 'velo' sont : 'velo','elov','love','ovel'. <br>
 On considèrera qu'un mot de longueur n possède n décalages. <br>
 Ecrire une fonction `decale_gauche` qui reçoit une chaine de caratère et renvoie la liste de ses décalages
@@ -37,3 +37,4 @@ pltest2==
 ['azerty', 'zertya', 'ertyaz', 'rtyaze', 'tyazer', 'yazert']
 
 ==
+
