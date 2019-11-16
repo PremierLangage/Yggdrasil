@@ -19,7 +19,7 @@ before ==
 import random
 import statistics
 data=[list(range(1,5)),[random.randint(1,4) for _ in range(4)]]
-
+dat'[[1,2,4],[1,2,3]]
 from jinja2 import Template
 histogram.script = Template(script).render(locals())
 ==
