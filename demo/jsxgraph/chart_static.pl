@@ -23,8 +23,8 @@ extracss==
     margin: 0 auto;
 }
 .box {
-    width:90vw;
-    height:90vw;
+    width:60vw;
+    height:60vw;
 }
 </style>
 ==
