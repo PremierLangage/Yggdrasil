@@ -8,7 +8,7 @@ histogram.attributes %=
 { "boundingbox": [
       -1,
       6,
-      6,
+      10,
       -1
     ],
     "showNavigation": false
