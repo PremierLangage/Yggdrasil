@@ -19,7 +19,7 @@ before ==
 import random as rd
 from jinja2 import Template
 
-series=[rd.randint(1,4) for _ in range(4)]
+series=[rd.randint(3,9) for _ in range(4)]
 
 jxg.script = Template(script).render(locals())
 ==
