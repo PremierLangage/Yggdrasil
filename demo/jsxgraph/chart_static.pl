@@ -15,7 +15,7 @@ jxg.css=box
 
 extracss==
 <style>
-.jsxgraph-component {
+.jsxgraph-component .box{
     max-width:250px;
     width:90vw;
     max-height:250px;
