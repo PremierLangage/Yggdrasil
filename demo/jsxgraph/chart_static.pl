@@ -1,6 +1,6 @@
 extends = /template/basic.pl
 
-title=
+title = Histogramme
 
 jxg =: MathDrawer
 
@@ -14,20 +14,6 @@ jxg.script ==
 var a = board.create('chart', [1,3,1,2] , {chartStyle:'bar',color:'blue',width:0.6});
 ==
 
-
-lang = fr
-
 text ==
-{{ histogram | component }}
+{{ jxg | component }}
 ==
-
-form ==
-
-==
-
-evaluator ==
-grade=(100,"Bonne réponse")
-==
-
-
-
