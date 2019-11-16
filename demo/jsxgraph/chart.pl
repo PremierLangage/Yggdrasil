@@ -5,35 +5,21 @@ title=
 histogram =: MathDrawer
 
 histogram.attributes %=
-{"boundingbox": [-1,6,8,-1],
-"showNavigation": false,
-"keepaspectratio":false}
+{"boundingbox" : [-1,6,8,-1],
+"showNavigation" : false,
+"keepaspectratio" : false}
 ==
 
 script ==
-var a = board.create('chart', [3,2,3,1,1,4,5] , {chartStyle:'bar',color:'blue',width:0.6});
+var a = board.create('chart', {{series}} , {chartStyle:'bar',color:'blue',width:0.6});
 ==
 
 
 before ==
 import random
 import statistics
-med0=random.randint(3,7)
-smp=[]
-n=random.randint(8,12)
-for i in range(n):
-    smp.append(random.randint(1,med0))
-for i in range(n):
-    smp.append(random.randint(med0,10))
-dst=[]
-for i in range(1,11):
-    dst.append(smp.count(i))
-ndst=[0]*len(dst)
-for i in range(len(dst)):
-    ndst[dst[i]]=i
-dst = ndst 
-sol=statistics.median(smp)
-vmax=max(dst)+2
+series=[random.randint(1,4) for _ in range(4)]
+
 from jinja2 import Template
 histogram.script = Template(script).render(locals())
 ==
