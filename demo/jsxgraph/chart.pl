@@ -5,9 +5,8 @@ title=
 histogram =: MathDrawer
 
 histogram.attributes %=
-{ "boundingbox": [-1,6,11,-1],
-"showNavigation": false
-}
+{"boundingbox": [-1,6,11,-1],
+"showNavigation": false}
 ==
 
 script ==
