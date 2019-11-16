@@ -4,7 +4,7 @@
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
 
-title =implifications par les chiffres
+title =Simplification par les chiffres
 text== 
 L'élève Ducobu doit simplifier la fraction $%\frac{26}{65}%$. Il supprime donc le *6* du numérateur et du dénominateur, écrit fièrement:<br>
 $%\frac{26}{65}=\frac{2}{5}%$ et obtient sa première bonne note!<br>
