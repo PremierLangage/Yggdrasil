@@ -30,6 +30,8 @@ lst=['On appelle  decalage circulaire gauche',
 m=lst[random.randint(0,len(lst)-1)]
 
 pltest3=""">>> nombre_voyelle('{}')\n{}""".format(m,nombre_voyelle(m))
+after=before
+
 ==
 pltest1==
 >>> nombre_voyelle('nombre_voyelle')==5
@@ -39,3 +41,4 @@ pltest2==
 >>> nombre_voyelle('Elle y va doucement')
 7
 ==
+
