@@ -10,9 +10,11 @@ jxg.attributes %=
 "keepaspectratio" : false}
 ==
 
+jxg.css = jxgclass
+
 extracss==
 <style>
-.math-drawer-component {
+.jxgclass {
     max-width:300px;
     width:90vw;
     max-height:300px;
