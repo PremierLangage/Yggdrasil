@@ -23,8 +23,8 @@ extracss==
     margin: 0 auto;
 }
 .box {
-    max-width:100px;
-    max-height:100px;
+    width:90vw;
+    height:90vw;
 }
 </style>
 ==
