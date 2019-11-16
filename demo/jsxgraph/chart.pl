@@ -11,7 +11,7 @@ histogram.attributes %=
 ==
 
 script ==
-var a = board.create('chart', {{series}} , {chartStyle:'bar',color:'blue',width:0.6,labels:[{{labels}}]});
+var a = board.create('chart', [{{series}}] , {chartStyle:'bar',color:'blue',width:0.6,labels:[{{labels}}]});
 ==
 
 
