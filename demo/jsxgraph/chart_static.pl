@@ -13,9 +13,9 @@ jxg.attributes %=
 extracss==
 <style>
 .jsxgraph-component {
-    max-width:200px;
+    max-width:250px;
     width:90vw;
-    max-height:200px;
+    max-height:250px;
     height:90vw;
     margin: 0 auto;
 }
