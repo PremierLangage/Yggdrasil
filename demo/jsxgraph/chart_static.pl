@@ -19,7 +19,8 @@ extracss==
     height:90vw;
     margin: 0 auto;
 }
-</styl
+</style>
+==
 
 jxg.script ==
 var a = board.create('chart', [5,7,4,9], {chartStyle:'bar',color:'blue',width:0.6});
