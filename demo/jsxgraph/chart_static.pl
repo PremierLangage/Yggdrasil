@@ -24,7 +24,7 @@ extracss==
 }
 .box {
     width:60vw;
-    height:0vw;
+    height:40vw;
 }
 </style>
 ==
