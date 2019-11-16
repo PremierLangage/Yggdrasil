@@ -10,8 +10,6 @@ jxg.attributes %=
 "keepaspectratio" : false}
 ==
 
-jxg.css = jxgclass
-
 extracss==
 <style>
 .math-drawer-component {
