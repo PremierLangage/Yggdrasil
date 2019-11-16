@@ -13,9 +13,9 @@ jxg.attributes %=
 extracss==
 <style>
 .math-drawer-component {
-    max-width:300px;
+    max-width:100px;
     width:40vw;
-    max-height:300px;
+    max-height:100px;
     height:40vw;
     margin: 0 auto;
 }
