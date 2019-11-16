@@ -4,7 +4,7 @@ title=
 
 histogram =: MathDrawer
 
-drawer.attributes %=
+histogram.attributes %=
 {
     "boundingbox": [
       -6,
