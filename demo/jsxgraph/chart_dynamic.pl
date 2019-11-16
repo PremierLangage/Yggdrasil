@@ -1,6 +1,6 @@
 extends = /template/basic.pl
 
-title = Histogramme
+title = Histogramme (aléatoire)
 
 jxg =: MathDrawer
 
