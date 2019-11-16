@@ -12,7 +12,7 @@ jxg.attributes %=
 
 extracss==
 <style>
-.c-jsxgraph {
+.jsxgraph-component {
     max-width:250px;
     width:90vw;
     max-height:250px;
