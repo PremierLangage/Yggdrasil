@@ -5,12 +5,11 @@ title=
 histogram =: MathDrawer
 
 histogram.attributes %=
-{
-    "boundingbox": [
-      -6,
+{ "boundingbox": [
+      -1,
       6,
       6,
-      -6
+      -1
     ],
     "showNavigation": false
   }
