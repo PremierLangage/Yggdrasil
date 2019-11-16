@@ -12,7 +12,7 @@ jxg.attributes %=
 
 extracss==
 <style>
-.math-drawer-component {
+.jsxgraph-component {
     max-width:100px;
     width:90vw;
     max-height:100px;
