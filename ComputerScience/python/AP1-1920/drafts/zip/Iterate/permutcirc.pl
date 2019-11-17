@@ -27,6 +27,7 @@ lst=['to','unvelo','bla','abcdefghij','import','mot','permutations','circulaires
 m=lst[random.randint(0,len(lst)-1)]
 
 pltest3=""">>> decale_gauche('{}')\n{}""".format(m,decale_gauche(m))
+after=before
 ==
 pltest1==
 >>> decale_gauche ("az")==["az",'za']
@@ -37,4 +38,5 @@ pltest2==
 ['azerty', 'zertya', 'ertyaz', 'rtyaze', 'tyazer', 'yazert']
 
 ==
+
 
