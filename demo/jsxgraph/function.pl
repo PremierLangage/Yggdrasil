@@ -5,8 +5,8 @@ title=
 histogram =: MathDrawer
 
 histogram.attributes %=
-{"showNavigation": true;
-"keepAspectRatio": true}
+{"showNavigation": true,
+"keepaspectratio": true}
 ==
 
 script ==
