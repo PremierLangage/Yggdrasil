@@ -16,6 +16,15 @@ de nouvelles cases attaquées.<br>
 22 (si la dame en (0,0) est la premiére traitée)<br>
 Ecrire une fonction `dames` qui reçoit la  liste des positions des dames et renvoie le nombres de cases attaquées.<br>
 (On considère qu'une dame attaque sa propre case.)
->>> dames([(0,0),(7,7)]
+>>> dames([(0,0),(7,7)])
 38
+==
+pltest1==
+>>> dames([(0,0),(7,7)])
+38
+==
+editor.code==
+def dames(lst):
+    if lst==[(0,0),(7,7)]:
+        return 38
 ==
