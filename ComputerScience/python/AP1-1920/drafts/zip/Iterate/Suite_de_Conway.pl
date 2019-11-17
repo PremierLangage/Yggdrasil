@@ -45,6 +45,7 @@ import random
 n=random.randint(7,11)
 pltest3=""">>> suite_Conway({})\n{}""".format(n,suite_Conway(n))
 
+after=before
 ==
 pltest1==
 >>> suite_Conway(0)=='1'
