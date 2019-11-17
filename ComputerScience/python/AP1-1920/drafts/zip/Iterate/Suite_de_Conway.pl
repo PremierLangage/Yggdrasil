@@ -8,8 +8,20 @@ title = Suite de Conway
 text== 
 Chaque terme de la suite de Conway se construit en  en indiquant combien de fois chacun de ses chiffres se répète. <br>
 Pendant la construction, on regarde donc un chiffre comme nombre ou comme caractére<br>
-On commence avec $%x_0=1%,<br>
+On commence avec $%x_0=1%$,<br>
 Ce terme comporte simplement un « 1 ». Par conséquent,<br>
-$%x_1=11%$,Ce terme comporte  deux « 1 ».<br>
-$%x_2=21%,$%x_3=1211%,$%x_4=111221%$, $%x_5=312211%$, $%x_{6}=13112221%$<br>
+$%x_1=11%$, ce terme comporte  deux « 1 ».<br>
+$%x_2=21%$, puis <br>
+$%x_3=1211%$, $%x_4=111221%$, $%x_5=312211%$, $%x_{6}=13112221%$<br>
+Ecrire un fonction `suite_Conway` qui reçoit un entirt positif $%n%$`et renvoie la chaine de caractères n$%^{ieme}%$
+terme de la suite.
+==
+editor.code==
+def suite_Conway(n):
+    if n==0:
+        return '1'
+    elif n==3:
+        return '1211'
+    else:
+        return '42'
 ==
