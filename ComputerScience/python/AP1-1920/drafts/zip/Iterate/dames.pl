@@ -63,6 +63,7 @@ for i in range(n):
     y=random.randint(0,7)
     lst.append((x,y))
 pltest3=""">>> dames({})\n{}""".format(lst,dames(lst))
+after=before
 ==
 pltest1==
 >>> dames([(0,0),(7,7)])
