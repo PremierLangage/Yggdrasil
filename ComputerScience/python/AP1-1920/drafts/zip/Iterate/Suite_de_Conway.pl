@@ -25,7 +25,7 @@ def suite_Conway(n):
     else:
         return '42'
 ==
-zbefore==
+before==
 def suite_Conway(n):
     terme,indice='1',0
     for indice in range(n):
