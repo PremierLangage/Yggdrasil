@@ -25,6 +25,27 @@ def suite_Conway(n):
     else:
         return '42'
 ==
+before==
+def suite_Conway(n):
+    terme,indice='1',0
+    for indice in range(n):
+        nv=''
+        prec,nb=terme[0],1
+        for i in range(1,len(terme)):
+            l=terme[i]
+            if l==prec:
+                nb+=1
+            else:
+                nv+=str(nb)+prec
+                prec,nb=l,1
+        terme=nv+str(nb)+prec
+    return terme
+
+import random
+n=random.random(7,11)
+pltest3=""">>> suite_Conway({})\n{}""".format(n,suite_Conway(n))
+
+
 pltest1==
 >>> suite_Conway(0)=='1'
 True
