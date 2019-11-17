@@ -1,6 +1,6 @@
 extends = /Mathematics/template/mathjsxgraph.pl
 
-title=
+title = Graphe d'une fonction
 
 histogram =: MathDrawer
 
