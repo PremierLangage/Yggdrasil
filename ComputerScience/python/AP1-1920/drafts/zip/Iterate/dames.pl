@@ -19,12 +19,20 @@ Ecrire une fonction `dames` qui reçoit la  liste des positions des dames et ren
 >>> dames([(0,0),(7,7)])
 38
 ==
+
 pltest1==
 >>> dames([(0,0),(7,7)])
 38
 ==
+pltest2==
+>>> dames([(0,0),(7,7),(1,1)])
+44
+==
+
 editor.code==
 def dames(lst):
     if lst==[(0,0),(7,7)]:
         return 38
+    else:
+        return 44
 ==
