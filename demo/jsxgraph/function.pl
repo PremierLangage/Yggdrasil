@@ -11,6 +11,6 @@ jxg.attributes %=
 
 jxg.script ==
 board.setBoundingBox([-1,4,4,-4]);
-f = board.jc.snippet("x*sin(x)", true, "x", true);
+f = board.jc.snippet("x*sin(x)");
 board.create('functiongraph',f);
 ==
