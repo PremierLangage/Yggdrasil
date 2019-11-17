@@ -25,7 +25,7 @@ def suite_Conway(n):
     else:
         return '42'
 ==
-before==
+zbefore==
 def suite_Conway(n):
     terme,indice='1',0
     for indice in range(n):
@@ -42,10 +42,9 @@ def suite_Conway(n):
     return terme
 
 import random
-n=random.random(7,11)
 pltest3=""">>> suite_Conway({})\n{}""".format(n,suite_Conway(n))
 
-
+==
 pltest1==
 >>> suite_Conway(0)=='1'
 True
