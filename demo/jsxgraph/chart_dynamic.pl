@@ -5,7 +5,8 @@ title = Histogramme (aléatoire)
 jxg =: MathDrawer
 
 jxg.attributes %=
-{"showNavigation" : false}
+{"showNavigation" : false,
+"keepaspectratio" : false}
 ==
 
 script ==
