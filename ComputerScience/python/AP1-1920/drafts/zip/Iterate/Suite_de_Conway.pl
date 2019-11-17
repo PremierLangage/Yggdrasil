@@ -6,7 +6,7 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title = Suite de Conway
 text== 
-Chaque terme de la suite de Conway se construit en  en indiquant combien de fois chacun de ses chiffres se répète. <br>
+Chaque terme de la suite de Conway se construit en indiquant combien de fois chacun de ses chiffres se répète. <br>
 Pendant la construction, on regarde donc un chiffre comme nombre ou comme caractére<br>
 On commence avec $%x_0=1%$,<br>
 Ce terme comporte simplement un « 1 ». Par conséquent,<br>
@@ -54,3 +54,4 @@ pltest2==
 >>> suite_Conway(3)=='1211'
 True
 ==
+
