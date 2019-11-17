@@ -42,6 +42,7 @@ def suite_Conway(n):
     return terme
 
 import random
+n=random.randint(7,11)
 pltest3=""">>> suite_Conway({})\n{}""".format(n,suite_Conway(n))
 
 ==
