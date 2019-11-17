@@ -57,6 +57,7 @@ def dames(lst):
 
 import random
 lst=[]
+n=random.randint(0,10)
 for i in range(n):
     x=random.randint(0,7)
     y=random.randint(0,7)
