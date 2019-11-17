@@ -19,7 +19,52 @@ Ecrire une fonction `dames` qui reçoit la  liste des positions des dames et ren
 >>> dames([(0,0),(7,7)])
 38
 ==
+before==
 
+def attaque(dame,echiquier):
+    n=0
+    posx,posy=dame[0],dame[1]
+    for x  in range(8):
+       #horiz
+       if echiquier[x][posy]==0:
+            echiquier[x][posy]=1
+            n+=1
+       #vertic
+       if echiquier[posx][x]==0:
+           echiquier[posx][x]=1
+           n+=1
+       y=x+posy-posx
+       if 0<=y<8 and  echiquier[x][y]==0:
+           echiquier[x][y]=1
+           n+=1
+       y=-x+posy+posx
+       if 0<=y<8 and  echiquier[x][y]==0:
+           echiquier[x][y]=1
+           n+=1    
+    return n
+
+def dames(lst):
+    ech=[]
+    for i in range(8):
+        l=[]
+        for j in range(8):
+            l.append(0)
+        ech.append(l)
+    nb=0
+    for dame in lst:
+        nb+=attaque(dame,ech)
+    return nb 
+
+import random
+lst=[]
+for i in range(n):
+    x=random.randint(0,7)
+    y=random.randint(0,7)
+    lst.append((x,y))
+pltest3=""">>> dames({})\n{}""".format(lst,dames(lst))
+==
+
+==
 pltest1==
 >>> dames([(0,0),(7,7)])
 38
