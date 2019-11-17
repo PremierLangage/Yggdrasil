@@ -21,7 +21,7 @@ text ==
 
 extracss==
 <style>
-.math-drawer-component {
+.jsxgraph-component {
     max-width:200px;
     width:90vw;
     max-height:200px;
