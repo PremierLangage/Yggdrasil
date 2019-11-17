@@ -9,7 +9,7 @@ histogram.attributes %=
 ==
 
 script ==
-board.setBoundingBox([-1,10,10,-10])
+board.setBoundingBox([-1,4,4,-4])
 f = board.jc.snippet("x*sin(x)", true, "x", true);
 board.create('functiongraph',f,{name:"f(x)", withLabel:true});
 ==
