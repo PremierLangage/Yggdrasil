@@ -5,12 +5,12 @@ title = Histogramme (aléatoire)
 jxg =: MathDrawer
 
 jxg.attributes %=
-{"boundingbox" : [-1,10,5,-1],
-"showNavigation" : false}
+{"showNavigation" : false}
 ==
 
 script ==
-var a = board.create('chart', [{{series}}] , {chartStyle:'bar',color:'blue',width:0.6});
+
+board.create('chart', [{{series}}] , {chartStyle:'bar',color:'blue',width:0.6});
 ==
 
 
