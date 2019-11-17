@@ -10,8 +10,7 @@ histogram.attributes %=
 ==
 
 script ==
-f = 
-board.jc.snippet("x^2", true, "x", true);
+f = board.jc.snippet("x^2", true, "x", true);
 board.create('functiongraph',f,{name:"f", withLabel:true});
 ==
 
