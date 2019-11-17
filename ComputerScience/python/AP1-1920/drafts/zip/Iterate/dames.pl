@@ -64,8 +64,6 @@ for i in range(n):
     lst.append((x,y))
 pltest3=""">>> dames({})\n{}""".format(lst,dames(lst))
 ==
-
-==
 pltest1==
 >>> dames([(0,0),(7,7)])
 38
