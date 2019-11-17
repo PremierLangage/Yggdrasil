@@ -5,13 +5,13 @@ title=
 histogram =: MathDrawer
 
 histogram.attributes %=
-{"boundingbox": [-1,10,11,-1],
-"showNavigation": false}
+{"showNavigation": true}
 ==
 
 script ==
+board.setBoundingBox([-10,10,11,-1])
 f = board.jc.snippet("x^2", true, "x", true);
-board.create('functiongraph',f,{name:"f", withLabel:true});
+board.create('functiongraph',f,{name:"f(x)", withLabel:true});
 ==
 
 
