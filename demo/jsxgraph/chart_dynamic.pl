@@ -9,7 +9,7 @@ jxg.attributes %=
 ==
 
 script ==
-
+board.setBoundingBox([-1,10,5,-1])
 board.create('chart', [{{series}}] , {chartStyle:'bar',color:'blue',width:0.6});
 ==
 
