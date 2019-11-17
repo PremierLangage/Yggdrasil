@@ -25,3 +25,11 @@ def suite_Conway(n):
     else:
         return '42'
 ==
+pltest1==
+>>> suite_Conway(0)=='1'
+True
+==
+pltest2==
+>>> suite_Conway(3)=='1211'
+True
+==
