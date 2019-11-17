@@ -2,14 +2,14 @@ extends = /Mathematics/template/mathjsxgraph.pl
 
 title = Graphe d'une fonction
 
-histogram =: MathDrawer
+jxg =: MathDrawer
 
-histogram.attributes %=
+jxg.attributes %=
 {"showNavigation": true,
 "keepaspectratio" : false}
 ==
 
-script ==
+jxg.script ==
 board.setBoundingBox([-1,4,4,-4])
 f = board.jc.snippet("x*sin(x)", true, "x", true);
 board.create('functiongraph',f,{name:"f(x)", withLabel:true});
