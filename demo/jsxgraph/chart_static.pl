@@ -10,14 +10,14 @@ jxg.attributes %=
 "keepaspectratio" : false}
 ==
 
-jxg.css= box
+jxg.css = box
 
 
 extracss==
 <style>
 .box {
-    max-width:200px !important;
-    max-height:200px !important;
+    max-width:100px !important;
+    max-height:100px !important;
 }
 </style>
 ==
