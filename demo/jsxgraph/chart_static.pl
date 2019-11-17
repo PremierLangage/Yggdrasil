@@ -5,25 +5,13 @@ title = Histogramme (statique)
 jxg =: MathDrawer
 
 jxg.attributes %=
-{"boundingbox" : [-1,10,5,-1],
-"showNavigation" : false,
+{"showNavigation" : false,
 "keepaspectratio" : false}
 ==
 
-jxg.css = box
-
-
-extracss==
-<style>
-.box {
-    max-width:100px !important;
-    max-height:100px !important;
-}
-</style>
-==
-
 jxg.script ==
-var a = board.create('chart', [5,7,4,9], {chartStyle:'bar',color:'blue',width:0.6});
+board.setBoundingBox([-1,10,5,-1]);
+board.create('chart', [5,7,4,9], {chartStyle:'bar',color:'blue',width:0.6});
 ==
 
 text ==
