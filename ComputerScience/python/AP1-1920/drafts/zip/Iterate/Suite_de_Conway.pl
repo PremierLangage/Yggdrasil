@@ -16,7 +16,7 @@ $%x_3=1211%$, $%x_4=111221%$, $%x_5=312211%$, $%x_{6}=13112221%$<br>
 Ecrire un fonction `suite_Conway` qui reçoit un entirt positif $%n%$`et renvoie la chaine de caractères n$%^{ieme}%$
 terme de la suite.
 ==
-editor.code==
+Zeditor.code==
 def suite_Conway(n):
     if n==0:
         return '1'
