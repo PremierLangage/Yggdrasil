@@ -11,8 +11,9 @@ $%\frac{26}{65}=\frac{2}{5}%$ et obtient sa première bonne note!<br>
 Ecrire une fonction `simplifie_chiffre` qui reçoit un entier n et renvoie le nombre de fractions $%\frac{num}{den}%$ avec$%10 \leq num \lt den \lt n%$, 
  permettant à Ducobu de passer pour un bon élève.<br>
   Les simplifications du type $%\frac{20}{50}=\frac{2}{5}%$ sont trop exactes pour être comptées!
- >>> simplifie_chiffre(100)<br>
-4
+
+    >>> simplifie_chiffre(100)
+    4
 ==
 before==
 
@@ -50,6 +51,7 @@ pltest1==
 True
 ==
 pltest2==
->>> simplifie_chiffre(1000)
-600
+>>> simplifie_chiffre(1000) == 600 # Test avec un plus grand nombre 
+True
 ==
+
