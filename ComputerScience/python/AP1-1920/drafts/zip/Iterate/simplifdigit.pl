@@ -4,7 +4,7 @@
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
 
-title =Simplification par les chiffres
+title =Simplification par les chiffres (difficile)
 text== 
 L'élève Ducobu doit simplifier la fraction $%\frac{26}{65}%$. Il supprime donc le *6* du numérateur et du dénominateur, écrit fièrement:<br>
 $%\frac{26}{65}=\frac{2}{5}%$ et obtient sa première bonne note!<br>
@@ -14,6 +14,8 @@ Ecrire une fonction `simplifie_chiffre` qui reçoit un entier n et renvoie le no
 
     >>> simplifie_chiffre(100)
     4
+
+Difficile d'aider Ducobu ...
 ==
 before==
 
