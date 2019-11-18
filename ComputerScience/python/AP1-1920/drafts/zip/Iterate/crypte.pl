@@ -13,8 +13,14 @@ Les chaines et ont même longueur.<br>
 
  >>>  `crypte`('nombre de voyelle','aeiouy','AEIOUY')
  'nOmbrE dE vOYEllE
+
+>>> crypte("Halloween","aow","e t")
+'Hell teen'
+
+
 ==
 taboo=replace|translate
+
 before==
 def crypte(message,clair,code):
     s=''
@@ -38,7 +44,7 @@ lst=['On appelle  decalage circulaire gauche',
 clef=[("aeiouy","AEIOUY"),("azertyuiop",'poiuytreza'),('iouyaebcdfghjklm','yaebcdfghjklmiou')]
 mot=lst[random.randint(0,len(lst)-1)]
 c=clef[random.randint(0,len(clef)-1)]
-pltest3=""">>> crypte('{}','{}','{}')\n{}""".format(mot,c[0],c[1],crypte(mot,c[0],c[1]))
+pltest3=""">>> crypte('{}','{}','{}')\n'{}'""".format(mot,c[0],c[1],crypte(mot,c[0],c[1]))
 after=before
 
 ==
@@ -59,3 +65,4 @@ def crypte(m,c,k):
     else :
      return "re"
 ==
+
