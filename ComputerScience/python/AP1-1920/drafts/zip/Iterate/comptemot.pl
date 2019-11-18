@@ -8,7 +8,11 @@ text==
   On appelle **mot** une suite de caractère qui ne contient ni le caractère espace(" ")
 ni le caractère tabulation("\t"), ni le passage à la ligne .<br>
 Ainsi <br>
-"  la phrase :\nest (-è_i ctèu longue" contient 7 mots'
+
+    "cette phrase 
+    est très très longue !?!"
+
+ contient 7 mots
 
 Ecrire une fonctions `compte_mots` qui recoit une chaine et renvoie le nombre de mots qu'elle contient.
 ==
@@ -33,12 +37,12 @@ lst=['On appelle  decalage circulaire gauche',
 'enlever la première lettre du mot et la placer à la fin du mot.',
 'Ecrire une fonction nombre voyelle qui reçoit une chaine de caractères et renvoie le nombre de voyelles ',
 'les decalages circulaires gauches','velo',
-"On considèrera qu'un mot de longueur n possède n décalages"]
+"On considèrera qu\'un mot de longueur n possède n décalages"]
 
 mot=lst[random.randint(0,len(lst)-1)]
 mot+=lst[random.randint(0,len(lst)-1)]
 
-pltest3=""">>> compte_mots('{}')\n{}""".format(mot,compte_mots(mot))
+pltest3=""">>> compte_mots("{}")\n{}""".format(mot,compte_mots(mot))
 after=before
 ==
 pltest1==
@@ -46,7 +50,7 @@ pltest1==
 True
 ==
 pltest2==
->>> compte_mots(""" On appelle **mot** une suite de caractères qui \n ne contient ni le caractère esrpace " " ni le caractère tabulation "\t", ni le passage à la ligne .<br> Ainsi """)
+>>> compte_mots(""" On appelle **mot** une suite de caractères qui \n ne contient ni le caractère espace ni le caractère tabulation "\t", ni le passage à la ligne .<br> Ainsi """)
 28
 ==
 Zeditor.code==
@@ -57,3 +61,4 @@ def compte_mots(ch):
         return 28
 
 ==
+
