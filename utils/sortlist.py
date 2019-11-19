@@ -35,10 +35,6 @@ class CustomSortList(Component):
                 errors += 1
         tau,_=kendalltau(orderans,list(range(n)))
         score=int(max([0,tau])*100)
-        if errors == 0:
-            return (score, '<span class="success-state animated pulse infinite">Good answer</span>')
-        else:
-            return (score, f'<span class="error-state animated pulse infinite">{ errors } wrong answers</span>')
-
+        feedback=score
 
 
