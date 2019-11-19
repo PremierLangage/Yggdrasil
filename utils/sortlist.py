@@ -35,6 +35,6 @@ class CustomSortList(Component):
                 errors += 1
         tau,_=kendalltau(orderans,list(range(n)))
         score=int(max([0,tau])*100)
-        return (score,"")
+        return (score,str(score))
 
 
