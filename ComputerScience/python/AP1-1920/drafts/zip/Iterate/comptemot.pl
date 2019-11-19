@@ -1,7 +1,7 @@
 # author zip
 # Heritage d'un type d'exercice
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
-@ /builder/before.py [builder.py]
+
 
 title =Compter les mots
 text== 
@@ -61,4 +61,5 @@ def compte_mots(ch):
         return 28
 
 ==
+
 
