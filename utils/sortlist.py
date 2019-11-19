@@ -1,8 +1,7 @@
 import uuid
 from components import Component
 import random as rd
-#from scipy.stats import kendalltau
-#import scipy
+from scipy.stats import kendalltau
 
 class CustomSortList(Component):
     def __init__(self, **kwargs):
@@ -40,5 +39,6 @@ class CustomSortList(Component):
             return (score, '<span class="success-state animated pulse infinite">Good answer</span>')
         else:
             return (score, f'<span class="error-state animated pulse infinite">{ errors } wrong answers</span>')
+
 
 
