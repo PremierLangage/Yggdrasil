@@ -52,6 +52,18 @@ pltest2==
 pltest3==
 >>> echange([],0,0)
 >>> echange(["cent", "deux"],-2,-1)
-["deux", "cent"]
+['deux', 'cent']
 ==
 
+
+lsoluce==
+
+def echange(ite,i,j):
+	n= len(ite)
+	if i< -n or j< -n or i>=n or j >=n:
+		return None
+	l=list(ite)
+	l[i],l[j]= l[j],l[i]
+	return l
+
+==
