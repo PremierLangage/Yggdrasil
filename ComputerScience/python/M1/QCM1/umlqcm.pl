@@ -27,8 +27,9 @@ import random
 group.items = []
 i=1
 propvraie = right.split("\n")
+nbr= 2 if len(propvraie)>1 else 1
 
-for X in random.sample(propvraie,2):
+for X in random.sample(propvraie,nbr):
     if "|" in X:
         p,f = X.split("|")
     else:
@@ -42,8 +43,9 @@ for X in random.sample(propvraie,2):
     i+=1
 propfalse = wrong.split("\n")
 
+nbr= 2 if len(propfalse)>1 else 1
 
-for X in random.sample(propfalse,2):
+for X in random.sample(propfalse,nbr):
     if "|" in X:
         p,f = X.split("|")
     else:
