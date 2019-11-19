@@ -49,7 +49,7 @@ for X in random.sample(propfalse,nbr):
     if "|" in X:
         p,f = X.split("|")
     else:
-        p=X
+        p,f=X,""
     group.items.append({
         "id": str(i),
         "content": p,
