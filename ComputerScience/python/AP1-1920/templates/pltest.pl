@@ -52,13 +52,16 @@ Pour que les tests s'arrète sur la première erreur
 # 
 
 @ /utils/sandboxio.py
-@ /builder/none.py [builder.py]
+@ /builder/before.py [builder.py]
+
+before=
 
 editor.fontsize=14
 # une interface standard d'exercice avec un editeur pour la réponse
 form=@ /form/text_editor.html
 
 settings.allow_reroll=1
+
 
 
 
