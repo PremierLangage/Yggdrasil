@@ -48,12 +48,11 @@ void One_call(void){
   #endif
 }
 
+int main(int argc, char* argv[]){
+
 ==
 
 codeafter==
-
-int main(int argc, char* argv[]){
-  One_call();
 
   return 0;
 }
