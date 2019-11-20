@@ -1,9 +1,9 @@
-# Copyright 2017 Nicolas Borie <nicolas.borie@u-pem.fr>
+# Copyright 2017-2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
 # Récupérer une personne (prénom, nom, age) au clavier
 
 author=Nicolas Borie
-title=Données d'une personne entrée au clavier
+title=Données entrées au clavier pour décrire une personne
 tag=input_output
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
@@ -66,4 +66,5 @@ tests==
  ["Jeune pousse", "", "Tom\nPouce\n28\n"]]
 
 ==
+
 
