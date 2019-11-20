@@ -35,10 +35,13 @@ solution==
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
-  int a, b;
+  int i;
+  float ans = 1.0;
 
-  scanf("%d %d", &a, &b);
-  printf("La somme de %d et %d est %d.\n", a, b, a+b);
+  for(i=1 ; i<argc ; i++)
+    ans *= atof(argv[i]);
+
+  printf("Le produit des arguments est %f.\n", ans);
   return 0;
 }
 
