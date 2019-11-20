@@ -3,20 +3,20 @@
 # Macro à paramètre minimum
 
 author=Nicolas Borie
-title=Macro de sécurisation
+title=Macro minimum
 tag=macro
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
-Sécurisez l'appel à la fonction **One_call()** en définissant une macro d'identifiant **BLOB** 
+Écrire une macro MIN à deux paramètres qui retourne le minimum de ces deux arguments.
 
 
 
 ==
 
 editor.code==
-#... MIN(a, b) ...
+#... MIN ...
 
 ==
 
@@ -30,13 +30,19 @@ solution==
 codebefore==
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 ==
 
 codeafter==
 
 int main(int argc, char* argv[]){
-  printf("MIN(%s, %s) = %s.\n", 2, 4, MIN(2, 4));
+  srand(atoi(argv[1]));
+
+  printf("%d\n", MIN(2, 4));
+  printf("%d\n", MIN(rand(), rand()));
+  printf("%d\n", MIN(rand(), rand()));
 
   return 0;
 }
@@ -44,7 +50,7 @@ int main(int argc, char* argv[]){
 ==
 
 tests==
-[ ["Exécution simple", "1 2",""] ]
+[ ["Exécution simple", str(randint(0,1000000)),""] ]
 ==
 
 
