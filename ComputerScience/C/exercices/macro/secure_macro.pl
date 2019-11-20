@@ -48,14 +48,12 @@ void One_call(void){
   #endif
 }
 
-int main(){
-
 ==
 
 codeafter==
 
 int main(int argc, char* argv[]){
-  print_compilation_date();
+  One_call();
 
   return 0;
 }
