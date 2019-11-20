@@ -50,14 +50,17 @@ int binomial(int n, int k){
 ==
 
 solution==
+
 int binomial(int n, int k){
   if ((n == k) || (k == 0))
     return 1;
   return binomial(n-1, k) + binomial(n-1, k-1);
 }
+
 ==
     
 codeafter==
+
 #include <stdlib.h>
 #include <stdio.h>    
     
@@ -67,6 +70,7 @@ int main(int argc, char* argv[]){
   printf("Binomial(%d, %d) : %d\n", n, k, binomial(n, k));
   return 0;
 }
+
 ==
 
     
@@ -83,4 +87,5 @@ tests==
  ["Aléatoire", ' '.join([str(random.randint(7, 12)), str(random.randint(0, 6))]), ""]]
 
 ==
+
 
