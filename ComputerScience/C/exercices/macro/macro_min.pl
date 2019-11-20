@@ -44,6 +44,8 @@ int main(int argc, char* argv[]){
   printf("Aléatoire : %d\n", MIN(rand(), rand()));
   printf("Aléatoire : %d\n", MIN(rand(), rand()));
   printf("MIN(aléa, MIN(aléa, aléa)) : %d\n", MIN(rand(), MIN(rand(), rand())));
+  printf("MIN(aléa, MIN(aléa, aléa)) : %d\n", MIN(rand(), MIN(rand(), rand())));
+  printf("MIN(MIN(aléa, aléa), MIN(aléa, aléa)) : %d\n", MIN(MIN(rand(), rand()), MIN(rand(), rand())));
   printf("MIN(MIN(aléa, aléa), MIN(aléa, aléa)) : %d\n", MIN(MIN(rand(), rand()), MIN(rand(), rand())));
 
   return 0;
