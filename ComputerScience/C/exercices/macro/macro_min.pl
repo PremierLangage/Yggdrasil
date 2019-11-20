@@ -41,6 +41,7 @@ int main(int argc, char* argv[]){
   srand(atoi(argv[1]));
 
   printf("%d\n", MIN(2, 4));
+  printf("%d\n", MIN(2+2, 3-1));
   printf("%d\n", MIN(rand(), rand()));
   printf("%d\n", MIN(rand(), rand()));
   printf("%d\n", MIN(rand(), MIN(rand(), rand())));
