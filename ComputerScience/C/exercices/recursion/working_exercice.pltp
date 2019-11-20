@@ -1,7 +1,8 @@
-title=Exercices fonctionnels sur la notions de récursivité
+title=Exercices sur la récursivité
 
 introduction==
-Les exercices qui suivent fonctionnent tous le 17 octobre 2018.
+Les exercices qui suivent utilisent la récursivité en C. Certains sont vraiment difficiles et 
+d'autres relativement standards et simples.
 ==
 
 
@@ -17,6 +18,7 @@ Les exercices qui suivent fonctionnent tous le 17 octobre 2018.
 @ /ComputerScience/C/exercices/recursion/pgcd_soustrac.pl
 @ /ComputerScience/C/exercices/recursion/pied_nickeles_sort.pl
 @ /ComputerScience/C/exercices/recursion/sum_number.pl
+
 
 
 
