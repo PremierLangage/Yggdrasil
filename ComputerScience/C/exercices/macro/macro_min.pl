@@ -11,8 +11,6 @@ text==
 
 Écrire une macro MIN à deux paramètres qui retourne le minimum de ces deux arguments.
 
-
-
 ==
 
 editor.code==
