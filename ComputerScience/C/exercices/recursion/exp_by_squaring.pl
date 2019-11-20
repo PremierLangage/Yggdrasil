@@ -45,6 +45,7 @@ int exp_rap(int a, int n){
 ==
     
 codeafter==
+
 #include <stdlib.h>
 #include <stdio.h>    
     
@@ -54,6 +55,7 @@ int main(int argc, char* argv[]){
   printf("%d puissance %d : %d\n", a, n, exp_rap(a, n));
   return 0;
 }
+
 ==
 
     
@@ -68,4 +70,5 @@ tests==
  ["Aléatoire", ' '.join([str(random.randint(-8, 8)), str(random.randint(1, 8))]), ""]]
 
 ==
+
 
