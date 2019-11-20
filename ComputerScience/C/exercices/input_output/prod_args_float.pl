@@ -9,16 +9,21 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
-Ecrire un programme 
+Ecrire un programme qui affiche le produit de tous les arguments que l'on 
+lui a transmis lors de son appel. Les arguments seront tous des chaînes décrivant
+des nombres flottants (convertissable avec la fonction **atof** de **<stdlib.h>**).
+Une fois récupérés, votre programme devra afficher la phrase suivante : 
+**Le produit des arguments est XXXX.** (avec un point à la fin de la ligne et un retour
+chariot). XXXX devra être remplacé par le produit de tous les arguments.
+
+Pour information, un produit vide (comme tout nombre à la puissance zéro) vaut 1.
     
 ==
 
 editor.code==
 #include ...
 
-int main(int argc, char* argv[]){
-  int a, b;
-	
+int main(int argc, char* argv[]){	
   /** votre code ici... **/
 }
 
@@ -27,6 +32,7 @@ int main(int argc, char* argv[]){
 solution==
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, char* argv[]){
   int a, b;
@@ -39,9 +45,10 @@ int main(int argc, char* argv[]){
 ==
 
 tests==
-[["Simple test", "3.141592", "12 3\n"],
- ["Aléatoire", "", str(random.randint(-10,10))+" "+str(random.randint(-10,10))+"\n"],
- ["Aléatoire", "", str(random.randint(-10,10))+" "+str(random.randint(-10,10))+"\n"],
- ["Aléatoire", "", str(random.randint(-10,10))+" "+str(random.randint(-10,10))+"\n"]]
+[["Simple test", "3.141592", ""],
+ ["Pas d'argument", "", ""],
+ ["6 arguments triviaux", "1.0 1.0 1 1 1.0000 1.", ""],
+ ["Aléatoire", "", ""],
+ ["Aléatoire", "", ""]]
 ==
 
