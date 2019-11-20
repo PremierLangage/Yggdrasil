@@ -40,12 +40,12 @@ codeafter==
 int main(int argc, char* argv[]){
   srand(atoi(argv[1]));
 
-  printf("%d\n", MIN(2, 4));
-  printf("%d\n", MIN(2+2, 3-1));
-  printf("%d\n", MIN(rand(), rand()));
-  printf("%d\n", MIN(rand(), rand()));
-  printf("%d\n", MIN(rand(), MIN(rand(), rand())));
-  printf("%d\n", MIN(MIN(rand(), rand()), MIN(rand(), rand())));
+  printf("MIN(2, 4) = %d\n", MIN(2, 4));
+  printf("MIN(2+2, 3-1) = %d\n", MIN(2+2, 3-1));
+  printf("Aléatoire : %d\n", MIN(rand(), rand()));
+  printf("Aléatoire : %d\n", MIN(rand(), rand()));
+  printf("MIN(aléa, MIN(aléa, aléa)) : %d\n", MIN(rand(), MIN(rand(), rand())));
+  printf("MIN(MIN(aléa, aléa), MIN(aléa, aléa)) : %d\n", MIN(MIN(rand(), rand()), MIN(rand(), rand())));
 
   return 0;
 }
