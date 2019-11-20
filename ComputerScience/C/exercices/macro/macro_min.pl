@@ -1,6 +1,6 @@
 # Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
-# Macro de sécurisation
+# Macro à paramètre minimum
 
 author=Nicolas Borie
 title=Macro de sécurisation
@@ -16,24 +16,13 @@ Sécurisez l'appel à la fonction **One_call()** en définissant une macro d'ide
 ==
 
 editor.code==
-#...
-#...
+#... MIN(a, b) ...
 
-/* A macro BLOB should exist when the following call would be executed. */
-One_call();
-
-#...
 ==
 
 solution==
 
-#ifndef BLOB
-#define BLOB
-
-/* A macro BLOB should exist when the following call would be executed. */
-One_call();
-
-#endif
+#define MIN(a, b) (a) <= (b) ? (a) : (b) 
 
 ==
 
@@ -42,29 +31,22 @@ codebefore==
 
 #include <stdio.h>
 
-void One_call(void);
-
-int main(int argc, char* argv[]){
-
 ==
 
 codeafter==
 
-  return 0;
-}
+#define TEST(a, b) (MIN(a, b) == a) ? #a, #b
 
-void One_call(void){
-  #ifndef BLOB
-    printf("L'appel à la fonction One_call n'est pas sécurisé par la définition d'une macro BLOB.\n");
-  #else
-    printf("L'appel à la fonction One_call est sécurisé par la macro BLOB.\n");
-  #endif
+int main(int argc, char* argv[]){
+  printf("MIN(%s, %s) = %s.\n", a, b, TEST(a, b));
+
+  return 0;
 }
 
 ==
 
 tests==
-[ ["Exécution simple", "",""] ]
+[ ["Exécution simple", "1 2",""] ]
 ==
 
 
