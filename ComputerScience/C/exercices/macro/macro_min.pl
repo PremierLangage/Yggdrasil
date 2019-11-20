@@ -50,7 +50,7 @@ int main(int argc, char* argv[]){
 ==
 
 tests==
-[ ["Exécution simple", str(randint(0,1000000)),""] ]
+[ ["Exécution simple", str(random.randint(0,1000000)),""] ]
 ==
 
 
