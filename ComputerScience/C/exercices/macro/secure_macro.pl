@@ -1,15 +1,17 @@
 # Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
-#
+# Macro de sécurisation
 
 author=Nicolas Borie
-title=Fonction qui affiche la date de compilation
-tag=macro|function
+title=Macro de sécurisation
+tag=macro
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
-Sécurisez l'appel à la fonction **One_call()** en définissant une macro d'identifiant **BLOB**. 
+Sécurisez l'appel à la fonction **One_call()** en définissant une macro d'identifiant **BLOB** 
+
+
 
 ==
 
