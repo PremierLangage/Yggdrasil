@@ -38,7 +38,7 @@ codeafter==
 #define TEST(a, b) (MIN(a, b) == a) ? #a, #b
 
 int main(int argc, char* argv[]){
-  printf("MIN(%s, %s) = %s.\n", a, b, TEST(a, b));
+  printf("MIN(%s, %s) = %s.\n", argv[1], argv[2], TEST(argv[1], argv[2]));
 
   return 0;
 }
