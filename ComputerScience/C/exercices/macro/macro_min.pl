@@ -10,6 +10,8 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 text==
 
 Écrire une macro MIN à deux paramètres qui retourne le minimum de ces deux arguments.
+Utilisez une condition de type ternaire pour définir votre macro et ne placer pas de
+point virgule final.
 
 ==
 
