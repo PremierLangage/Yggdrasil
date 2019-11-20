@@ -40,13 +40,7 @@ codebefore==
 
 #include <stdio.h>
 
-void One_call(void){
-  #ifndef BLOB
-    printf("L'appel à la fonction One_call n'est pas sécurisé par la définition d'une macro BLOB.\n");
-  #else
-    printf("L'appel à la fonction One_call est sécurisé par la macro BLOB.\n");
-  #endif
-}
+void One_call(void);
 
 int main(int argc, char* argv[]){
 
@@ -55,6 +49,14 @@ int main(int argc, char* argv[]){
 codeafter==
 
   return 0;
+}
+
+void One_call(void){
+  #ifndef BLOB
+    printf("L'appel à la fonction One_call n'est pas sécurisé par la définition d'une macro BLOB.\n");
+  #else
+    printf("L'appel à la fonction One_call est sécurisé par la macro BLOB.\n");
+  #endif
 }
 
 ==
