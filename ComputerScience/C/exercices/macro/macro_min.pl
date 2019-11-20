@@ -42,6 +42,7 @@ int main(int argc, char* argv[]){
 
   printf("MIN(2, 4) = %d\n", MIN(2, 4));
   printf("MIN(2+2, 3-1) = %d\n", MIN(2+2, 3-1));
+  printf("MIN(3.1415, 4.000001) = %f\n", MIN(3.1415, 4.000001));
   printf("Aléatoire : %d\n", MIN(rand(), rand()));
   printf("Aléatoire : %d\n", MIN(rand(), rand()));
   printf("MIN(aléa, MIN(aléa, aléa)) : %d\n", MIN(rand(), MIN(rand(), rand())));
