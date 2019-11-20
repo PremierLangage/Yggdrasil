@@ -43,6 +43,8 @@ int main(int argc, char* argv[]){
   printf("%d\n", MIN(2, 4));
   printf("%d\n", MIN(rand(), rand()));
   printf("%d\n", MIN(rand(), rand()));
+  printf("%d\n", MIN(rand(), MIN(rand(), rand())));
+  printf("%d\n", MIN(MIN(rand(), rand()), MIN(rand(), rand())));
 
   return 0;
 }
