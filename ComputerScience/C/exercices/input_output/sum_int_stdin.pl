@@ -48,7 +48,6 @@ int main(int argc, char* argv[]){
 ==
 
 tests==
-
 [["Simple test", "", "12 3\n"],
  ["Des négatifs", "", "-12 41\n"],
  ["La tête à toto", "", "0 0\n"],
@@ -56,7 +55,6 @@ tests==
  ["Aléatoire", "", str(random.randint(-10,10))+" "+str(random.randint(-10,10))+"\n"],
  ["Aléatoire", "", str(random.randint(-10,10))+" "+str(random.randint(-10,10))+"\n"],
  ["Aléatoire", "", str(random.randint(-10,10))+" "+str(random.randint(-10,10))+"\n"]]
- 
 ==
 
 
