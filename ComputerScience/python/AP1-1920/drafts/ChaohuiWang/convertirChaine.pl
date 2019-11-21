@@ -45,6 +45,9 @@ True
 pltest3==
 >>> convertirChaine(l3) == l
 True
+pltest3==
+>>> convertirChaine(l3) == l
+True
 ==
 
 # the codes provided in the PL test instance and the client can use/modify it directly (shown in the client's webpage if using "editor.code")
