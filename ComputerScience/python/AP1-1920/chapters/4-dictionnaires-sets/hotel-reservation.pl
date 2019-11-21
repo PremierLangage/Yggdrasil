@@ -15,21 +15,26 @@ puis renvoyer un ensemble d'hôtels acceptables, c'est-à-dire les hôtels accep
 
 Voici un exemple :
 
-{{pltest}}
+>>> hotel_acceptable({'Accor', 'Mercure', 'Hôtel de la Gare', 'ibis', 'Hôtel Saint-Jacques'}, ['ibis', 'Accor', 'ibis']) # Exemple
+
+{'Hôtel Saint-Jacques', 'Mercure', 'Hôtel de la Gare'}
 ==
 
 pltest==
 >>> hotel_acceptable({'Accor', 'Mercure', 'Hôtel de la Gare', 'ibis', 'Hôtel Saint-Jacques'}, ['ibis', 'Accor', 'ibis']) # Exemple
+
 {'Hôtel Saint-Jacques', 'Mercure', 'Hôtel de la Gare'}
 ==
 
 pltest1==
 >>> hotel_acceptable({'A', 'B'}, []) # Tous contents
+
 {'B', 'A'}
 ==
 
 pltest2==
 >>> hotel_acceptable(set(), ['A', 'B'])
+
 set()
 ==
 
