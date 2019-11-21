@@ -29,7 +29,7 @@ convertirChaine([1,2]) : [1,2]
 before==
 import random
 def convertirChaine(l):
-    if len(l)%2==1:
+    if len(l)>0 and len(l)%2==1:
         del l[len(l)//2]
     return l
 l = [random.randint(0,10) for i in range(random.randint(0,30))]
