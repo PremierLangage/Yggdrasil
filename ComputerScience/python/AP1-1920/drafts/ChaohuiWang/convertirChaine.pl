@@ -32,14 +32,9 @@ def convertirChaine(l):
     if len(l)%2==1:
         del l[len(l)//2]
     return l
-l1 = [random.randint(0,10) for i in range(random.randint(0,30))]
-l2=l+l
-l3=l+[0]+l
-l2r=convertirChaine(l2)
-l3r=convertirChaine(l3)
-==
-pltest4=""">>> convertirChaine({})\n{}""".format(l2,convertirChaine(l2r))
-pltest5=""">>> convertirChaine({})\n{}""".format(l3,convertirChaine(l3r))
+l = [random.randint(0,10) for i in range(random.randint(0,30))]
+pltest4=""">>> convertirChaine({})\n{}""".format(l+l,convertirChaine(l+l))
+pltest5=""">>> convertirChaine({})\n{}""".format(l+[0]+l,convertirChaine(l+[0]+l))
 after=before
 ==
 
@@ -55,7 +50,7 @@ pltest1==
 
 # the codes provided in the PL test instance and the client can use/modify it directly (shown in the client's webpage if using "editor.code")
 editor.code==
-def convertirChaine(L):
+def convertirChaine(l):
     pass
 
 
