@@ -11,7 +11,6 @@ tag= # N'oubliez pas de remplir ce champs svp
 
 # Type d'exo
 extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
-@ /builder/before.py [builder.py]
 
 # what candidates are there? and their meaning?
 piste=verte
