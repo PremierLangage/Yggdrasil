@@ -2,8 +2,7 @@
 author= PhilippeC
 
 # comment
-extends=../../templates/pltest.pl
-@ /builder/before.py [builder.py]
+extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title = années depuis la naissance
 taboo=import
