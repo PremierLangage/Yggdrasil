@@ -14,39 +14,21 @@ piste=verte
 
 # the subject of the exercise shown in the PL test instance
 text==
-## Rendre une liste de taille paire
+## Rendre une liste de taille paire ## 
 
-Faire une fonction **convertirChaine**¨qui prend une liste en paramètre, qui enleve l'élement au milieu de la liste  si sa longeur est impaire,
-et qui retourne dans tout les cas la liste passée en paramètre. 
-
-Exemple de test:
-<pre>
->>> convertirChaine([1,2,3])
-[1,3]
-</pre>
-==
-
-before==
-import random
-l=[random.randint(5,19) for x in range(random.randint(6,10))]
-L=l+["Milieu"]+l
-L2=l+l
-pltest9=">>> L={}\n>>> L2={}\n>>> convertirChaine(L) == L2\nTrue".format(L,L2)
+Faire une fonction pour enlever l'élement au milieu de la liste, si sa longeur est impaire
 
 ==
 
 
 # the codes of the representatvie tests executed after the client answers the question (transferred from the client's machine), so as to check their codes
 pltest==
->>> convertirChaine([1,2,3]) == [1,3] # Test liste de taille impaire :
+>>> convertirChaine([1,2,3]) == [1,3]
 True
-==
-pltest1==
->>> convertirChaine([1,2,5,6,3]) == [1,2,6,3] # Test liste de taille paire :
+>>> convertirChaine([1,2,5,6,3]) == [1,2,6,3]
 True
-==
-
-pltest2==
+>>> convertirChaine([1,2]) == [1,2]
+True
 >>> convertirChaine([]) == []
 True
 ==
@@ -61,11 +43,6 @@ def convertirChaine(L):
 editor.height=145
 
 Xeditor.code==
-def convertirChaine(L):
-    if len(L)%2==1:
-        del L[len(L)//2]
-    return L
-
 ==
 
 
