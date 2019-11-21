@@ -28,7 +28,7 @@ convertirChaine([1,2]) : [1,2]
 # one can define supplemental pltests here
 before==
 import random 
-l = [random.randint(0,10) for i in range(random.randint(0,30))]
+l1 = [random.randint(0,10) for i in range(random.randint(0,30))]
 l2=l+l
 l3=l+[0]+l
 def convertirChaine(l):
