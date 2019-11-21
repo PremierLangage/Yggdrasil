@@ -16,7 +16,11 @@ piste=verte
 text==
 ## Rendre une liste de taille paire ##
 
-Faire une fonction qui prends en argument une liste et enlever l'élement au milieu de la liste, si sa longeur est impaire
+Faire une fonction qui prend en argument une liste, enlève l'élément au milieu de la liste si sa longueur est impaire, et rend la liste modifiée. Par examples:
+
+convertirChaine([1,2,3]) : [1,3]
+
+convertirChaine([1,2]) : [1,2]
 
 ==
 
@@ -44,6 +48,3 @@ editor.height=145
 
 Xeditor.code==
 ==
-
-
-
