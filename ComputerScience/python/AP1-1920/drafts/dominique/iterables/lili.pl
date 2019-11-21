@@ -30,7 +30,7 @@ False
 ==
 pltest3==
 >>> import random  #
->>> l= [ randint(4,25) for x in range(random.randint(3,6))] #
+>>> l= [ random.randint(4,25) for x in range(random.randint(3,6))] #
 >>> prefix(l,l.extend(l))
 True
 >>> prefix(l.extend(l),l)
