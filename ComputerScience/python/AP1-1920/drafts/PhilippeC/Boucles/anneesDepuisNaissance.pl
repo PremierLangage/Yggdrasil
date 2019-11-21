@@ -59,7 +59,6 @@ def affichageDecennies(anneeDebut,anneeFin):
 
 affichageDecennies(saisieAnneeNaissance(),datetime.now().year)
 
-after=before
 ==
 
 pltest0==
