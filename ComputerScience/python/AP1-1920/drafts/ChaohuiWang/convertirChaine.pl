@@ -43,6 +43,7 @@ pltest1==
 >>> convertirChaine([1,2,6,3])
 [1, 2, 6, 3]
 >>> convertirChaine([])
+[]
 >>> convertirChaine([1,2,5,6,3])
 [1, 2, 6, 3]
 ==
