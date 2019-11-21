@@ -39,8 +39,8 @@ l3=l+[0]+l
 l2r=convertirChaine(l2)
 l3r=convertirChaine(l3)
 ==
-pltest4=""">>> convertirChaine({})\n{}""".format(l2,convertirChaine(l2))
-pltest5=""">>> convertirChaine({})\n{}""".format(l3,convertirChaine(l3))
+pltest4=""">>> convertirChaine({})\n{}""".format(l2,convertirChaine(l2r))
+pltest5=""">>> convertirChaine({})\n{}""".format(l3,convertirChaine(l3r))
 after=before
 ==
 
