@@ -6,7 +6,7 @@
 # the title shown in the PL test instance
 title=Title
 
-# what candidates are there? and their meaning?
+# Sous-domain de ce exo
 tag= # N'oubliez pas de remplir ce champs svp
 
 # what candidates are there? and their meaning?
@@ -52,6 +52,7 @@ def convertirChaine(L):
 
 ==
 editor.height=145
+
 
 
 
