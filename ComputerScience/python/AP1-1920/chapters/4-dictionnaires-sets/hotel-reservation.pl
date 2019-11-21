@@ -26,7 +26,7 @@ pltest==
 
 pltest1==
 >>> hotel_acceptable({'A', 'B'}, []) # Tous contents
-{'B', 'A'}
+{'A', 'B'}
 ==
 
 pltest2==
