@@ -30,9 +30,14 @@ before==
 import random 
 l = [random.randint(0,10) for i in range(random.randint(0,30))]
 l2=l+l
-l3=l+[1]+l
-pltest4=""">>> convertirChaine({})\n{}""".format(l2,l2)
-pltest5=""">>> convertirChaine({})\n{}""".format(l3,l2)
+l3=l+[0]+l
+def convertirChaine(L):
+    if len(L)%2==1:
+        del l[len(L)//2]
+    return l
+==
+pltest4=""">>> convertirChaine({})\n{}""".format(l2,convertirChaine(l2))
+pltest5=""">>> convertirChaine({})\n{}""".format(l3,convertirChaine(l3))
 after=before
 ==
 
@@ -40,14 +45,7 @@ after=before
 pltest1==
 >>> convertirChaine([1,2,6,3])
 [1, 2, 6, 3]
-==
-
-pltest2==
 >>> convertirChaine([])
-[]
-==
-
-pltest3==
 >>> convertirChaine([1,2,5,6,3])
 [1, 2, 6, 3]
 ==
