@@ -14,9 +14,11 @@ piste=verte
 
 # the subject of the exercise shown in the PL test instance
 text==
-## Rendre une liste de taille paire## 
+## Rendre une liste de taille paire
 
-Faire une fonction pour enlever l'élement au milieu de la liste, si sa longeur est impaire
+Faire une fonction **convertirChaine**¨qui prend une liste en paramètre, qui enleve l'élement au milieu de la liste  si sa longeur est impaire,
+et qui retourne dans tout les cas la liste passée en paramètre. 
+
 
 ==
 
@@ -44,4 +46,5 @@ editor.height=145
 
 Xeditor.code==
 ==
+
 
