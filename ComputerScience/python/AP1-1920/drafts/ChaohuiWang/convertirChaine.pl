@@ -41,14 +41,8 @@ pltest1==
 >>> convertirChaine([1,2,5,6,3]) == [1,2,6,3]
 True
 pltest2==
->>> convertirChaine([]) == []
-True
-pltest3==
->>> convertirChaine(l3) == l
-True
-pltest4==
->>> convertirChaine(l2) == l
-True
+>>> convertirChaine([])
+[]
 ==
 
 # the codes provided in the PL test instance and the client can use/modify it directly (shown in the client's webpage if using "editor.code")
