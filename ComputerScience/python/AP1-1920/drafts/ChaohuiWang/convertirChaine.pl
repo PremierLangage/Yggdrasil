@@ -31,9 +31,9 @@ import random
 l = [random.randint(0,10) for i in range(random.randint(0,30))]
 l2=l+l
 l3=l+[0]+l
-def convertirChaine(L):
-    if len(L)%2==1:
-        del l[len(L)//2]
+def convertirChaine(l):
+    if len(l)%2==1:
+        del l[len(l)//2]
     return l
 ==
 pltest4=""">>> convertirChaine({})\n{}""".format(l2,convertirChaine(l2))
