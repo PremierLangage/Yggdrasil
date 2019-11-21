@@ -45,7 +45,7 @@ int main(int argc, char* argv[]){
     i++;
   }
 
-  printf("Le programme à lu %d entiers non nuls.", i);
+  printf("Le programme à lu %d entiers non nuls.\n", i);
   return 0;
 }
 
