@@ -11,7 +11,7 @@ text==
 
 Ecrire un programme qui affiche le produit de tous les arguments que l'on 
 lui a transmis lors de son appel. Les arguments seront tous des chaînes décrivant
-des nombres flottants (convertissable avec la fonction **atof** de **<stdlib.h>**).
+des nombres flottants (convertissable avec la fonction **atof** de la librairie **stdlib.h**).
 Une fois récupérés, votre programme devra afficher la phrase suivante : 
 **Le produit des arguments est XXXX.** (avec un point à la fin de la ligne et un retour
 chariot). XXXX devra être remplacé par le produit de tous les arguments.
@@ -56,4 +56,5 @@ tests==
  ["Aléatoire", " ".join([str(100*(random.random()-0.5)) for i in range(random.randint(2,6))]), ""],
  ["Aléatoire", " ".join([str(200*(random.random()-0.5)) for i in range(random.randint(5,10))]), ""]]
 ==
+
 
