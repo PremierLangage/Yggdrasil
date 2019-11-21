@@ -17,7 +17,7 @@ grader== #|python|
 
 # Solution
 def creation_liste():
-    str var=""
+    var=""
     liste=[1,2,3,4,5]
     for i in range(0,3):
         var+=liste[i]
@@ -27,11 +27,11 @@ def creation_liste():
     for i in range(12):
         var=+ liste[len(liste)-1)]
         var+= \n
+    return var
 
 begin_test_group("Groupe de tests pour tester les tests")
 run()
-assert_output("")
+assert_output(creation_liste())
 
 end_test_group()
-
 ==
