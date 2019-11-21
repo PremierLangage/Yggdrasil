@@ -25,6 +25,18 @@ convertirChaine([1,2]) : [1,2]
 ==
 
 
+# the codes executed when creating the PL test instance (before transferring to the client's machine)
+# one can define supplemental pltests here
+before==
+import random 
+l = [random.randint(0,10) for i in range(random.randint(0,100))]
+l2=l+l
+l3=l+[1]+l
+pltest1=""">>> convertirChaine({})\n{}\n""".format()
+pltest2=""">>> convertirChaine({})=={}# Hidden value test\nTrue\n""".format()
+after=before
+==
+
 # the codes of the representatvie tests executed after the client answers the question (transferred from the client's machine), so as to check their codes
 pltest==
 >>> convertirChaine([1,2,3]) == [1,3]
@@ -48,3 +60,4 @@ editor.height=145
 
 Xeditor.code==
 ==
+
