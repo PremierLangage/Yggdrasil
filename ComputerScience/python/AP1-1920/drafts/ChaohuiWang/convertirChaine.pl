@@ -32,8 +32,7 @@ import random
 l = [random.randint(0,10) for i in range(random.randint(0,100))]
 l2=l+l
 l3=l+[1]+l
-pltest1=""">>> convertirChaine({})\n{}\n""".format()
-pltest2=""">>> convertirChaine({})=={}# Hidden value test\nTrue\n""".format()
+pltest2=""">>> convertirChaine(l2) == l# Hidden value test\nTrue\n""".format()
 after=before
 ==
 
