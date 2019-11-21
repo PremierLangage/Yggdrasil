@@ -17,23 +17,21 @@ grader== #|python|
 
 # Solution
 def creation_liste():
+    str var=""
     liste=[1,2,3,4,5]
     for i in range(0,3):
-        print(liste[i])
+        var+=liste[i]
+        var+=\n
     liste[1] = 17
     liste[3] = liste[2]+liste[4]
     for i in range(12):
-        print(liste[len(liste)-1)])
+        var=+ liste[len(liste)-1)]
+        var+= \n
 
 begin_test_group("Groupe de tests pour tester les tests")
-for x in range(5):
-    set_inputs([x]) # dire quelle variable existe dans l'espace
-    run() # Exécution du code de l'élève
-    if eval(pl_context["solution"], {"x":x}):
-        assert_output("Vrai\n")
-    else:
-        assert_output("Faux\n")
-    assert_no_global_change()
+run()
+assert_output("")
+
 end_test_group()
 
 ==
