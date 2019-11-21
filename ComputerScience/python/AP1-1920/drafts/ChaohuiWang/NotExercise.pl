@@ -12,7 +12,7 @@ tag= # N'oubliez pas de remplir ce champs svp
 # Type d'exo
 extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 
-# what candidates are there? and their meaning?
+# Niveau de difficulte
 piste=verte
 
 # the subject of the exercise shown in the PL test instance
