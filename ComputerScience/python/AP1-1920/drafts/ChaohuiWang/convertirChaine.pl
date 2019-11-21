@@ -19,15 +19,19 @@ text==
 Faire une fonction **convertirChaine**¨qui prend une liste en paramètre, qui enleve l'élement au milieu de la liste  si sa longeur est impaire,
 et qui retourne dans tout les cas la liste passée en paramètre. 
 
-
+Exemple de test:
+<pre>
+>>> convertirChaine([1,2,3])
+[1,3]
+</pre>
 ==
 
 before==
-
-l=[random.randint(5,19) for x in range(random.randin(6,10)]
+import random
+l=[random.randint(5,19) for x in range(random.randint(6,10))]
 L=l+["Milieu"]+l
 L2=l+l
-pltest9="L={}\nL2={}\n >>> convertirChaine(L) == L2\nTrue".format(L,L2)
+pltest9=">>> L={}\n>>> L2={}\n>>> convertirChaine(L) == L2\nTrue".format(L,L2)
 
 ==
 
@@ -57,6 +61,11 @@ def convertirChaine(L):
 editor.height=145
 
 Xeditor.code==
+def convertirChaine(L):
+    if len(L)%2==1:
+        del L[len(L)//2]
+    return L
+
 ==
 
 
