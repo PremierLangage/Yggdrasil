@@ -9,7 +9,7 @@ title=Title
 # Sous-domain de cet exo
 tag= # N'oubliez pas de remplir ce champs svp
 
-# what candidates are there? and their meaning?
+# Type d'exo
 extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
 
