@@ -32,18 +32,15 @@ import random
 l = [random.randint(0,10) for i in range(random.randint(0,100))]
 l2=l+l
 l3=l+[1]+l
-pltest2=""">>> convertirChaine(l2) == l# Hidden value test\nTrue\n""".format()
+pltest3=""">>> convertirChaine(l2) == l# Hidden value test\nTrue\n""".format()
 after=before
 ==
 
 # the codes of the representatvie tests executed after the client answers the question (transferred from the client's machine), so as to check their codes
-pltest==
->>> convertirChaine([1,2,3]) == [1,3]
-True
+pltest1==
 >>> convertirChaine([1,2,5,6,3]) == [1,2,6,3]
 True
->>> convertirChaine([1,2]) == [1,2]
-True
+pltest2==
 >>> convertirChaine([]) == []
 True
 ==
