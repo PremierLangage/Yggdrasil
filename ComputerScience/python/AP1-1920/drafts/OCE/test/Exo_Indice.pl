@@ -1,6 +1,6 @@
 extends = Yggdrasil/ComputerScience/python/AP1-1920/templates/generic/generic.pl
 
-title = navigation dans les listes
+title = Manipulation simple de listes
 
 text==  
 Créer un programme permettant : 
@@ -25,23 +25,15 @@ def creation_liste():
     for i in range(12):
         print(liste[len(liste)-1)])
 
-begin_test_group("Facile")
-set_title(f"n = {1,2}")
-set_globals(n={1,2})
-run()
-assert_output(f"{couple(1,2)}\n")
+begin_test_group("Groupe de tests pour tester les tests")
+for x in range(5):
+    set_inputs([x]) # dire quelle variable existe dans l'espace
+    run() # Exécution du code de l'élève
+    if eval(pl_context["solution"], {"x":x}):
+        assert_output("Vrai\n")
+    else:
+        assert_output("Faux\n")
+    assert_no_global_change()
 end_test_group()
 
-begin_test_group("Normal")
-set_title(f"n = {3,5}")
-set_globals(n={3,5})
-run()
-assert_output(f"{couple(3,5)}\n")
-end_test_group()
-
-begin_test_group("Grand")
-set_title(f"n = {30,46}")
-set_globals(n={30,46})
-run()
-assert_output(f"{couple(30,46)}\n")
-end_test_group()
+==
