@@ -27,12 +27,11 @@ convertirChaine([1,2]) : [1,2]
 # the codes executed when creating the PL test instance (before transferring to the client's machine)
 # one can define supplemental pltests here
 before==
-import random 
+import random
 def convertirChaine(l):
     if len(l)%2==1:
         del l[len(l)//2]
     return l
-
 l1 = [random.randint(0,10) for i in range(random.randint(0,30))]
 l2=l+l
 l3=l+[0]+l
