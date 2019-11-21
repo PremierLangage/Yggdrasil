@@ -25,7 +25,7 @@ standard et affichera sur la sortie standard la phrase suivante
 editor.code==
 #include ...
 
-int main(int argc, char* argv[]){	
+int main(...){	
   /** votre code ici... **/
 }
 
@@ -37,26 +37,27 @@ solution==
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
-  int i;
-  float ans = 1.0;
+  int n, i=0;
 
-  for(i=1 ; i<argc ; i++)
-    ans *= atof(argv[i]);
+  while(scanf("%d", &n) == 1){
+    if (n == 0)
+      break;
+    i++;
+  }
 
-  printf("Le produit des arguments est %f.\n", ans);
+  printf("Le programme à lu %d entiers non nuls.", i);
   return 0;
 }
 
 ==
 
 tests==
-[["Simple test", "3.141592", ""],
- ["Pas d'argument", "", ""],
- ["6 arguments triviaux", "1.0 1.0 1 1 1.0000 1.", ""],
- ["Aléatoire", " ".join([str(10*(random.random()-0.5)) for i in range(random.randint(2,6))]), ""],
- ["Aléatoire", " ".join([str(20*(random.random()-0.5)) for i in range(random.randint(5,10))]), ""],
- ["Aléatoire", " ".join([str(100*(random.random()-0.5)) for i in range(random.randint(2,6))]), ""],
- ["Aléatoire", " ".join([str(200*(random.random()-0.5)) for i in range(random.randint(5,10))]), ""]]
+[["Simple test", "", "1"],
+ ["Stdin vide", "", ""],
+ ["Fini par zéro", "", "1 2 3 4 5 0"],
+ ["Aléatoire", "", " ".join([str(random.randint(-10, 10)) for i in range(random.randint(2,6))])],
+ ["Aléatoire", "", " ".join([str(random.randint(-10, 10)) for i in range(random.randint(6,20))])],
+ ["Aléatoire", "", " ".join([str(random.randint(-20, 20)) for i in range(random.randint(10,20))])], ]
 ==
 
 
