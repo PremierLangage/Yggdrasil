@@ -24,6 +24,7 @@ from itertools import permutations
 begin_test_group("Groupe de tests pour tester les tests")
 for x in range(5):
     set_inputs([x])
+    run()
     if eval(pl_context["solution"], {"x":x}):
         assert_output("Vrai\n")
     else:
