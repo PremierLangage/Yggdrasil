@@ -14,10 +14,9 @@ Exemple: L = [1, 8, 48, 2, 19]
 taboo=extend
 
 before==
-# solution --- 
+# solution ---
 L = [1, 8, 48, 2, 19]
 n = len(L)
-
 def lpairs(lst,n) :
     somp = 0
     for i in range(n) :
@@ -28,7 +27,7 @@ def lpairs(lst,n) :
 ==
 
 pltest0==
->>> lst=[] #
+>>> lst=[L = [1, 8, 48, 2, 19] #
 >>> lpairs(lst,5) #
 >>> lst
 [8, 48, 2]
