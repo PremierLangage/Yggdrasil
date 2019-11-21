@@ -12,9 +12,19 @@ editor.code ==
 before==
 ==
 
-title = Code Editor Component
+title = Echange de valeur
 
 text==
+écrire un programme qui ion initialise une liste de 5 entier et affiche <br>
+<ul>
+    <li>Milk</li>
+    <li>Cheese
+        <ul>
+            <li>Blue cheese</li>
+            <li>Feta</li>
+        </ul>
+    </li>
+</ul>
 ==
 
 form==
