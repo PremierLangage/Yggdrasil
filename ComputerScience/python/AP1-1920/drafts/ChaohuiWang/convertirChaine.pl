@@ -45,8 +45,8 @@ True
 pltest3==
 >>> convertirChaine(l3) == l
 True
-pltest3==
->>> convertirChaine(l3) == l
+pltest4==
+>>> convertirChaine(l2) == l
 True
 ==
 
