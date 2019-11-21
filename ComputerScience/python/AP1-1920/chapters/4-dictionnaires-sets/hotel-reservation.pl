@@ -20,17 +20,17 @@ Voici un exemple :
 ==
 
 pltest==
->>> {'Hôtel Saint-Jacques', 'Mercure', 'Hôtel de la Gare'} = hotel_acceptable({'Accor', 'Mercure', 'Hôtel de la Gare', 'ibis', 'Hôtel Saint-Jacques'}, ['ibis', 'Accor', 'ibis']) # Exemple
+>>> {'Hôtel Saint-Jacques', 'Mercure', 'Hôtel de la Gare'} == hotel_acceptable({'Accor', 'Mercure', 'Hôtel de la Gare', 'ibis', 'Hôtel Saint-Jacques'}, ['ibis', 'Accor', 'ibis']) # Exemple
 True
 ==
 
 pltest1==
->>> {'A', 'B'} = hotel_acceptable({'A', 'B'}, []) # Tous contents
+>>> {'A', 'B'} == hotel_acceptable({'A', 'B'}, []) # Tous contents
 True
 ==
 
 pltest2==
->>> set() = hotel_acceptable(set(), ['A', 'B']) # Tu n'aimes rien
+>>> set() == hotel_acceptable(set(), ['A', 'B']) # Tu n'aimes rien
 True
 ==
 
