@@ -22,15 +22,27 @@ et qui retourne dans tout les cas la liste passée en paramètre.
 
 ==
 
+before==
+
+l=[random.randint(5,19) for x in range(random.randin(6,10)]
+L=l+["Milieu"]+l
+L2=l+l
+pltest9="L={}\nL2={}\n >>> convertirChaine(L) == L2\nTrue".format(L,L2)
+
+==
+
 
 # the codes of the representatvie tests executed after the client answers the question (transferred from the client's machine), so as to check their codes
 pltest==
->>> convertirChaine([1,2,3]) == [1,3]
+>>> convertirChaine([1,2,3]) == [1,3] # Test liste de taille impaire :
 True
->>> convertirChaine([1,2,5,6,3]) == [1,2,6,3]
+==
+pltest1==
+>>> convertirChaine([1,2,5,6,3]) == [1,2,6,3] # Test liste de taille paire :
 True
->>> convertirChaine([1,2]) == [1,2]
-True
+==
+
+pltest2==
 >>> convertirChaine([]) == []
 True
 ==
