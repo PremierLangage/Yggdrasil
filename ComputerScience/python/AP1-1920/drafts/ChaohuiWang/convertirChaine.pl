@@ -28,13 +28,16 @@ convertirChaine([1,2]) : [1,2]
 # one can define supplemental pltests here
 before==
 import random 
-l1 = [random.randint(0,10) for i in range(random.randint(0,30))]
-l2=l+l
-l3=l+[0]+l
 def convertirChaine(l):
     if len(l)%2==1:
         del l[len(l)//2]
     return l
+
+l1 = [random.randint(0,10) for i in range(random.randint(0,30))]
+l2=l+l
+l3=l+[0]+l
+l2r=convertirChaine(l2)
+l3r=convertirChaine(l3)
 ==
 pltest4=""">>> convertirChaine({})\n{}""".format(l2,convertirChaine(l2))
 pltest5=""">>> convertirChaine({})\n{}""".format(l3,convertirChaine(l3))
