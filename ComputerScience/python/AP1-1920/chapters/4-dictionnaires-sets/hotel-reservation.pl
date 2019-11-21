@@ -20,5 +20,20 @@ Voici un exemple :
 
 pltest==
 >>> hotel_acceptable({'Accor', 'Mercure', 'Hôtel de la Gare', 'ibis', 'Hôtel Saint-Jacques'}, ['ibis', 'Accor', 'ibis']) # Exemple
-{'Accor', 'Mercure', 'Hôtel de la Gare', 'ibis', 'Hôtel Saint-Jacques'}
+{'Hôtel Saint-Jacques', 'Mercure', 'Hôtel de la Gare'}
+==
+
+pltest1==
+>>> hotel_acceptable({'A', 'B'}, []) # Tous contents
+{'B', 'A'}
+==
+
+pltest2==
+>>> hotel_acceptable(set(), ['A', 'B'])
+set()
+==
+
+cache==
+def hotel_acceptable(s, l):
+    return s - set(l)
 ==
