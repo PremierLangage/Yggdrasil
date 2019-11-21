@@ -12,4 +12,13 @@ Vous avez un ensemble d'hôtels préférés, mais maintenant vos amis vous trans
 
 Écrire une fonction `hotel_acceptable` qui prendre votre ensemble d'hôtels acceptable et la liste d'hôtel à éviter, 
 puis renvoyer un ensemble d'hôtels acceptables, c'est-à-dire les hôtels acceptables pour vous mais pas à éviter.
+
+Voici un exemple :
+
+{{pltest}}
+==
+
+pltest==
+>>> hotel_acceptable({'Accor', 'Mercure', 'Hôtel de la Gare', 'ibis', 'Hôtel Saint-Jacques'}, ['ibis', 'Accor', 'ibis']) # Exemple
+{'Accor', 'Mercure', 'Hôtel de la Gare', 'ibis', 'Hôtel Saint-Jacques'}
 ==
