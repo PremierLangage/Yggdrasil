@@ -21,12 +21,12 @@ def creation_liste():
     liste=[1,2,3,4,5]
     for i in range(0,3):
         var+=liste[i]
-        var+=\n
+        var+="\n"
     liste[1] = 17
     liste[3] = liste[2]+liste[4]
     for i in range(12):
         var=+ liste[len(liste)-1)]
-        var+= \n
+        var+= "\n"
     return var
 
 begin_test_group("Groupe de tests pour tester les tests")
