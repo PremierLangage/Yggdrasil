@@ -14,7 +14,7 @@ piste=verte
 
 # the subject of the exercise shown in the PL test instance
 text==
-## Rendre une liste de taille paire ## 
+## Rendre une liste de taille paire ##
 
 Faire une fonction pour enlever l'élement au milieu de la liste, si sa longeur est impaire
 
