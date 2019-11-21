@@ -8,7 +8,7 @@ builder= /builder/before.py
 title = Somme des nombres paires d'une liste 
 text == 
 Ecrire une fonction "lpairs" qui calcule la somme "somp" de toutes les valeurs paires d'une liste d'au moins 5 entiers. 
-L = [1, 8, 48, 2, 19]
+Exemple: L = [1, 8, 48, 2, 19]
 ==
 
 taboo=extend
