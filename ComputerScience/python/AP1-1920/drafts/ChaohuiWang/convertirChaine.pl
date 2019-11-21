@@ -31,6 +31,8 @@ import random
 l = [random.randint(0,10) for i in range(random.randint(0,30))]
 l2=l+l
 l3=l+[1]+l
+pltest3=""">>> convertirChaine({})\n{}""".format(l2,l)
+pltest4=""">>> convertirChaine({})\n{}""".format(l3,l)
 after=before
 ==
 
