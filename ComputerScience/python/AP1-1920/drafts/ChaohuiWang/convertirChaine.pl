@@ -16,7 +16,7 @@ piste=verte
 text==
 ## Rendre une liste de taille paire ##
 
-Faire une fonction pour enlever l'élement au milieu de la liste, si sa longeur est impaire
+Faire une fonction qui prends en argument une liste et enlever l'élement au milieu de la liste, si sa longeur est impaire
 
 ==
 
@@ -44,5 +44,6 @@ editor.height=145
 
 Xeditor.code==
 ==
+
 
 
