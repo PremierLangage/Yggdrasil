@@ -6,7 +6,7 @@
 # the title shown in the PL test instance
 title=Title
 
-# Sous-domain de ce exo
+# Sous-domain de cet exo
 tag= # N'oubliez pas de remplir ce champs svp
 
 # what candidates are there? and their meaning?
