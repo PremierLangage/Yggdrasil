@@ -43,7 +43,7 @@ pltest2==
 >>> convertirChaine([]) == []
 True
 pltest3==
->>> convertirChaine(l3) == []
+>>> convertirChaine(l3) == l
 True
 ==
 
