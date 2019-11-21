@@ -31,7 +31,7 @@ False
 ==
 pltest3==
 >>> import random  #
->>> l= [ x for x in range(random.randint(3,6))] #
+>>> l= [ random.randint(4,25) for x in range(random.randint(3,6))] #
 >>> suffix(l,l.extend(l))
 True
 >>> suffix(l.extend(l),l)
