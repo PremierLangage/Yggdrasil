@@ -29,10 +29,9 @@ convertirChaine([1,2]) : [1,2]
 # one can define supplemental pltests here
 before==
 import random 
-l = [random.randint(0,10) for i in range(random.randint(0,100))]
+l = [random.randint(0,10) for i in range(random.randint(0,30))]
 l2=l+l
 l3=l+[1]+l
-pltest3=""">>> convertirChaine(l2) == l# Hidden value test\nTrue\n""".format()
 after=before
 ==
 
