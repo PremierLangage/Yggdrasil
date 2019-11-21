@@ -38,13 +38,20 @@ after=before
 
 # the codes of the representatvie tests executed after the client answers the question (transferred from the client's machine), so as to check their codes
 pltest1==
->>> convertirChaine([1,2,5,6,3])
-[1,2,6,3]
+>>> convertirChaine([1,2,6,3])
+[1, 2, 6, 3]
+==
 
 pltest2==
 >>> convertirChaine([])
 []
 ==
+
+pltest3==
+>>> convertirChaine([1,2,5,6,3])
+[1, 2, 6, 3]
+==
+
 
 # the codes provided in the PL test instance and the client can use/modify it directly (shown in the client's webpage if using "editor.code")
 editor.code==
