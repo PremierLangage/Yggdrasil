@@ -16,7 +16,7 @@ piste=verte
 text==
 ## Compteur de caractères des différentes classes ## 
 
-Faire une fonction qui prend en argument une liste, et rend une liste de taille 3 qui contient successivement le nombre de chiffres, de lettres de l'alphabet anglais, et d’autres. Par examples:
+Faire une fonction qui prend en argument une liste, et rend une liste de taille 3 qui contient successivement le nombre de chiffres, de lettres de l'alphabet francais, et d’autres. Par examples:
 
 Compteur(['1','a','#',2]) == [2, 1, 1]
 
