@@ -30,11 +30,13 @@ Compteur(['&','#','e','1']) == [0, 1, 3]  # remarque : on ne considère pas '1' 
 # one can define supplemental pltests here
 before==
 import random
-def convertirChaine(l):
-    if len(l)>0 and len(l)%2==1:
-        del l[len(l)//2]
+import string
+def randomStringwithDigitsAndSymbols():
+    """Generate a random string of letters, digits and special characters """
+    stringTypes = string.ascii_letters + string.digits + string.punctuation
+    l=[random.choice(stringTypes) for i in range(random.randint(0,30))]+[random.randint(0,10) for i in range(random.randint(0,30))]
     return l
-l = [random.randint(0,10) for i in range(random.randint(0,30))]
+
 pltest4=""">>> convertirChaine({})\n{}""".format(l+l,convertirChaine(l+l))
 pltest5=""">>> convertirChaine({})\n{}""".format(l+[0]+l,convertirChaine(l+[0]+l))
 after=before
