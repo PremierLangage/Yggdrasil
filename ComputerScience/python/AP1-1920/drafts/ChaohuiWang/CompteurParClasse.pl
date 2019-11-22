@@ -36,7 +36,20 @@ def randomStringwithDigitsAndSymbols():
     stringTypes = string.ascii_letters + string.digits + string.punctuation
     l=[random.choice(stringTypes) for i in range(random.randint(0,30))]+[random.randint(0,10) for i in range(random.randint(0,30))]
     return l
-
+    
+def Compteur(L):
+    nl=[0, 0, 0]
+    for i in L:
+        if 0<=i<=9:
+            nl[0]=nl[0]+1
+        elif 'a'<=i<='z' or 'A'<=i<='Z':
+            nl[1]=nl[1]+1
+        else:
+            nl[2]=nl[2]+1
+    return nl
+            
+L=randomStringwithDigitsAndSymbols()
+NL=Compteur(L)
 pltest4=""">>> convertirChaine({})\n{}""".format(l+l,convertirChaine(l+l))
 pltest5=""">>> convertirChaine({})\n{}""".format(l+[0]+l,convertirChaine(l+[0]+l))
 after=before
