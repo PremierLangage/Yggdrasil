@@ -50,6 +50,8 @@ def Compteur(L):
 
 L=randomStringwithDigitsAndSymbols()
 pltest4=""">>> convertirChaine({})\n{}""".format(L,convertirChaine(Compteur(L)))
+L=L.reverse()
+pltest5=""">>> convertirChaine({})\n{}""".format(L,convertirChaine(Compteur(L)))
 after=before
 ==
 
