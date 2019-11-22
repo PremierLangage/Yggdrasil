@@ -20,7 +20,7 @@ Faire une fonction qui prend en argument une liste, et rend une liste de taille 
 
 Compteur(['1','a','#','é']) == [1, 2, 1]
 
-Compteur(['1','a','#','é']) == [1, 2, 1]
+Compteur(['&','#','é']) == [0, 1, 2]
 
 ==
 
