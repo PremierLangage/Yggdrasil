@@ -18,7 +18,7 @@ text==
 
 Faire une fonction qui prend en argument une liste, et rend une liste de taille 3 qui contient successivement le nombre de chiffres, de lettres de l'alphabet français, et d’autres. Par examples:
 
-Compteur(['1','a','#','é','a']) == [1, 2, 1]
+Compteur(['1','a','#','é','a']) == [1, 3, 1]
 
 Compteur(['&','#','é']) == [0, 1, 2]
 
