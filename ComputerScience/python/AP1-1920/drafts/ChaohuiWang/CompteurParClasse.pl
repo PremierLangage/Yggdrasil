@@ -25,6 +25,21 @@ Compteur(['&','#','é']) == [0, 1, 2]
 ==
 
 
+
+# the codes executed when creating the PL test instance (before transferring to the client's machine)
+# one can define supplemental pltests here
+before==
+import random
+def convertirChaine(l):
+    if len(l)>0 and len(l)%2==1:
+        del l[len(l)//2]
+    return l
+l = [random.randint(0,10) for i in range(random.randint(0,30))]
+pltest4=""">>> convertirChaine({})\n{}""".format(l+l,convertirChaine(l+l))
+pltest5=""">>> convertirChaine({})\n{}""".format(l+[0]+l,convertirChaine(l+[0]+l))
+after=before
+==
+
 # the codes of the representatvie tests executed after the client answers the question (transferred from the client's machine), so as to check their codes
 pltest==
 >>> Compteur(['1','a','#','é'])
