@@ -18,9 +18,9 @@ text==
 
 Faire une fonction qui prend en argument une liste, et rend une liste de taille 3 qui contient successivement les nombres de chiffres, de caractères ASCII, et d’autres. Par examples:
 
-Compteur([1,'a','#','é','a']) == [1, 3, 1]
+Compteur([1,'a','#','e','a']) == [1, 3, 1]
 
-Compteur(['&','#','é','1']) == [0, 1, 3]  # remarque : on ne considere pas '1' comme chiffre
+Compteur(['&','#','e','1']) == [0, 1, 3]  # remarque : on ne considère pas '1' comme chiffre
 
 ==
 
