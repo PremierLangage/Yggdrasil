@@ -18,6 +18,9 @@ text==
 
 Faire une fonction qui prend en argument une liste, et rend une liste de taille 3 qui contient successivement le nombre de chiffres, de lettres de l'alphabet anglais, et d’autres. Par examples:
 
+convertirChaine([1,2,3]) : [1,3]
+
+convertirChaine([1,2]) : [1,2]
 
 ==
 
