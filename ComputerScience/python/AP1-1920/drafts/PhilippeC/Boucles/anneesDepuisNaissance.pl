@@ -7,12 +7,12 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 title = années depuis la naissance
 taboo=import
 text == 
-Fonction **resteDeXpar3()** qui retourne le reste de la division de X par 3 ?
 
-    {{pltest2}}
 ==
 
 before==
+==
+soluce==
 from datetime import datetime 
 
 def saisieAnneeNaissance():
@@ -62,10 +62,16 @@ affichageDecennies(saisieAnneeNaissance(),datetime.now().year)
 ==
 
 pltest0==
->>> resteDeXpar3(3)
-0
-==
+>>> affichageDecennies(1987,2019)
+Veuillez saisir une année de naissance:1988
 
+Les années vécues sont les suivantes:
+
+Années de la décennie: 1988 1989
+Années de la décennie: 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999
+Années de la décennie: 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009
+Années de la décennie: 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019==
+==
 pltest1==
 >>> resteDeXpar3(7)
 0
