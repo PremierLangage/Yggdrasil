@@ -3,7 +3,7 @@
 # PL database (or background system) -> PL client
 
 # the title shown in the PL test instance
-title=Compteur de caractères
+title=Compteur d'éléments des différentes classes
 
 tag=list # N'oubliez pas de remplir ce champs svp
 
