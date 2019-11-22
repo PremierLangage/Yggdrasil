@@ -49,9 +49,9 @@ def Compteur(L):
     return nl
 
 L=randomStringwithDigitsAndSymbols()
-pltest4=""">>> Compteur({})\n{}""".format(L,convertirChaine(Compteur(L)))
+pltest4=""">>> Compteur({})\n{}""".format(L,Compteur(L))
 L=L.reverse()
-pltest5=""">>> Compteur({})\n{}""".format(L,convertirChaine(Compteur(L)))
+pltest5=""">>> Compteur({})\n{}""".format(L,Compteur(L))
 after=before
 ==
 
