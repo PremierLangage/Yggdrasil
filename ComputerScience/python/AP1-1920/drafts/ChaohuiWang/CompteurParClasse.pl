@@ -14,7 +14,7 @@ piste=verte
 
 # the subject of the exercise shown in the PL test instance
 text==
-## Compteur de caractères ## 
+## Compteur de caractères des different classes## 
 
 Faire une fonction qui prend en argument une liste, et rend une liste de taille 3 qui contient successivement le nombre de chiffres, de lettres de l'alphabet anglais, et d’autres. Par examples:
 
