@@ -47,9 +47,8 @@ def Compteur(L):
         else:
             nl[2]=nl[2]+1
     return nl
-    
+
 L=randomStringwithDigitsAndSymbols()
-NL=Compteur(L)
 pltest4=""">>> convertirChaine({})\n{}""".format(l+l,convertirChaine(l+l))
 pltest5=""">>> convertirChaine({})\n{}""".format(l+[0]+l,convertirChaine(l+[0]+l))
 after=before
