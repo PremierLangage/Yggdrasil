@@ -49,6 +49,7 @@ def Compteur(L):
     return nl
             
 L=randomStringwithDigitsAndSymbols()
+pltest4=""">>> Compteur({})\n{}""".format(L,Compteur(L))
 after=before
 ==
 
