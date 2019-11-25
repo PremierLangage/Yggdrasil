@@ -4,7 +4,7 @@
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 
 
-title = Création d'une liste 
+title = Création d'une liste composée
 
 text==
 
@@ -43,4 +43,5 @@ tests %=
     }
 }
 ==
+
 
