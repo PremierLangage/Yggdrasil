@@ -51,7 +51,6 @@ def Compteur(L):
 L=randomStringwithDigitsAndSymbols()
 pltest4=""">>> Compteur({})\n{}""".format(L,Compteur(L))
 L=L.reverse()
-pltest5=""">>> Compteur({})\n{}""".format(L,Compteur(L))
 after=before
 ==
 
