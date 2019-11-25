@@ -15,11 +15,11 @@ piste=verte
 text==
 ## Rendre une liste de taille paire ##
 
-Faire une fonction qui prend en argument une liste, enlève l'élément au milieu de la liste si sa longueur est impaire, et rend la liste modifiée. Par examples:
+Faire une fonction **convertirListe** qui prend en argument une liste, enlève l'élément au milieu de la liste si sa longueur est impaire, et rend la liste modifiée. Par examples:
 
-convertirChaine([1,2,3]) : [1,3]
+convertirListe([1,2,3]) : [1,3]
 
-convertirChaine([1,2]) : [1,2]
+convertirListe([1,2]) : [1,2]
 
 ==
 
@@ -28,30 +28,30 @@ convertirChaine([1,2]) : [1,2]
 # one can define supplemental pltests here
 before==
 import random
-def convertirChaine(l):
+def convertirListe(l):
     if len(l)>0 and len(l)%2==1:
         del l[len(l)//2]
     return l
 l = [random.randint(0,10) for i in range(random.randint(0,30))]
-pltest4=""">>> convertirChaine({})\n{}""".format(l+l,convertirChaine(l+l))
-pltest5=""">>> convertirChaine({})\n{}""".format(l+[0]+l,convertirChaine(l+[0]+l))
+pltest4=""">>> convertirListe({})\n{}""".format(l+l,convertirListe(l+l))
+pltest5=""">>> convertirListe({})\n{}""".format(l+[0]+l,convertirListe(l+[0]+l))
 after=before
 ==
 
 # the codes of the representatvie tests executed after the client answers the question (transferred from the client's machine), so as to check their codes
 pltest==
->>> convertirChaine([1,2,6,3])
+>>> convertirListe([1,2,6,3])
 [1, 2, 6, 3]
->>> convertirChaine([])
+>>> convertirListe([])
 []
->>> convertirChaine([1,2,5,6,3])
+>>> convertirListe([1,2,5,6,3])
 [1, 2, 6, 3]
 ==
 
 
 # the codes provided in the PL test instance and the client can use/modify it directly (shown in the client's webpage if using "editor.code")
 editor.code==
-def convertirChaine(l):
+def convertirListe(l):
     pass
 
 
@@ -60,5 +60,6 @@ editor.height=145
 
 Xeditor.code==
 ==
+
 
 
