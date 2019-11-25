@@ -16,7 +16,7 @@ piste=verte
 text==
 ## Compteur d'éléments des différentes classes ## 
 
-Faire une fonction qui prend en argument une liste de characteres, et rend une liste de taille 3 qui contient successivement les nombres de chiffres, de caractères ASCII, et d’autres. Par examples:
+Faire une fonction qui prend en argument une liste de caractères, et rend une liste de taille 3 qui contient successivement les nombres de chiffres, de caractères ASCII, et d’autres. Par examples:
 
 Compteur(['1','a','#','e','a']) == [1, 3, 1]
 
