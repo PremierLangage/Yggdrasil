@@ -39,7 +39,7 @@ after=before
 ==
 
 # the codes of the representatvie tests executed after the client answers the question (transferred from the client's machine), so as to check their codes
-pltest1==
+pltest==
 >>> convertirChaine([1,2,6,3])
 [1, 2, 6, 3]
 >>> convertirChaine([])
@@ -60,4 +60,5 @@ editor.height=145
 
 Xeditor.code==
 ==
+
 
