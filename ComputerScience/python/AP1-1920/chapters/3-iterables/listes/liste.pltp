@@ -26,11 +26,15 @@ l'équipe.
 
 @ doublons.pl
 
+@ /ComputerScience/python/AP1-1920/chapters/3-iterables/listes/repete.pl
+
 #@ ajoute_multiple_3.pl # introuvable
 
 @ remplace_pair.pl
 
 @ supprime_pair.pl
+
+@ /ComputerScience/python/AP1-1920/chapters/3-iterables/listes/extends_list.pl
 
 # Exercices plus difficiles
 
