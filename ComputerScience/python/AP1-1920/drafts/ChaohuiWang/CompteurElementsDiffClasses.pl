@@ -29,29 +29,7 @@ Compteur(['&','#','e','1']) == [0, 1, 3]
 # the codes executed when creating the PL test instance (before transferring to the client's machine)
 # one can define supplemental pltests here
 before==
-import random
-import string
-def randomStringwithDigitsAndSymbols():
-    """Generate a random string of letters, digits and special characters """
-    stringTypes = string.ascii_letters + string.digits + string.punctuation
-    l=[random.choice(stringTypes) for i in range(random.randint(0,30))]
-    return l
 
-def Compteur(L):
-    nl=[0, 0, 0]
-    for i in L:
-        if '0'<=i<='9':
-            nl[0]=nl[0]+1
-        elif 'a'<=i<='z' or 'A'<=i<='Z':
-            nl[1]=nl[1]+1
-        else:
-            nl[2]=nl[2]+1
-    return nl
-            
-L=randomStringwithDigitsAndSymbols()
-pltest4=""">>> Compteur({})\n{}""".format(L,Compteur(L))
-L=L.reverse()
-pltest5=""">>> Compteur({})\n{}""".format(L,Compteur(L))
 after=before
 ==
 
