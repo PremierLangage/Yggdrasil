@@ -9,7 +9,7 @@ title = Création d'une liste
 
 text==
 
-Ecrire une fonction `fusion` à deux paramètres (des listes)  qui retourne la liste composée des deux éléments des deux liste.
+Ecrire une fonction `fusion` à deux paramètres (des listes) qui retourne la liste composée des deux éléments des deux listes.
 
 >>> fusion([1,1],[2,2])
 [1, 1, 2, 2]
@@ -47,4 +47,5 @@ tests %=
     }
 }
 ==
+
 
