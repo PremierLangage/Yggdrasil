@@ -4,7 +4,7 @@
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 builder= /builder/before.py
 
-title = Construction de liste 
+title = Remplace les éléments d'une liste
 text == 
 Ecrire une fonction "remppair" qui prends en argument une list `lst` et qui remplace tous ses éléments pairs par 1
 ==
@@ -31,5 +31,6 @@ pltest1==
 >>> lst
 []
 ==
+
 
 
