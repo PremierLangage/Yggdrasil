@@ -48,8 +48,6 @@ def Compteur(L):
     return nl
             
 L=randomStringwithDigitsAndSymbols()
-NL=Compteur(L)
-
 L=randomStringwithDigitsAndSymbols()
 pltest4=""">>> Compteur({})\n{}""".format(L,Compteur(L))
 L=L.reverse()
