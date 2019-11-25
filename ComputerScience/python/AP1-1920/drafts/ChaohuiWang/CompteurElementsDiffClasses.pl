@@ -20,7 +20,7 @@ Faire une fonction qui prend en argument une liste de caractères, et rend une l
 
 Compteur(['1','a','#','e','a']) == [1, 3, 1]
 
-Compteur(['&','#','e','1']) == [0, 1, 3]
+Compteur(['&','#','e','1']) == [1, 1, 2]
 
 ==
 
