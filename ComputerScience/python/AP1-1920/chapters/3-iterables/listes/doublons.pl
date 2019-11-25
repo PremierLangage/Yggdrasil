@@ -6,7 +6,7 @@
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
 
-title = Création d'une liste 
+title = Retirer les doublons d'une liste
 
 text==
 Ecrire une fonction `retiredoublons` à un paramètre (une liste)
@@ -60,6 +60,7 @@ tests %=
     }
 }
 ==
+
 
 
 
