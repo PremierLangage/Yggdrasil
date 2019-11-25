@@ -6,7 +6,7 @@
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 builder= /builder/before.py
 
-title = Ajout d'une liste 
+title = Ajout de N éléments à une liste 
 text == 
 Ecrire une fonction **tab3** à deux arguments; une liste, un entier **n**, qui modifie une liste passée en argument et 
 qui y ajoute la liste des n premiers éléments de la table de multiplication par 3, en commençant par le multiple de 1.
