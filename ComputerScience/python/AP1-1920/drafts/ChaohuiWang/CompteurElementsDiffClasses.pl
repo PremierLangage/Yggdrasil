@@ -57,9 +57,9 @@ after=before
 
 # the codes of the representatvie tests executed after the client answers the question (transferred from the client's machine), so as to check their codes
 pltest==
->>> Compteur(['1','a','#','é'])
+>>> Compteur(['1','a','#','e'])
 [1, 2, 1]
->>> Compteur(['&','#','é']) 
+>>> Compteur(['&','#','a']) 
 [0, 1, 2]
 >>> Compteur([])
 [0, 0, 0]
