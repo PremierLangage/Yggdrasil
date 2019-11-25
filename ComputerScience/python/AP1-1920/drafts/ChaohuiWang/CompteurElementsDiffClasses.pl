@@ -28,6 +28,7 @@ Compteur(['&','#','e','1']) == [0, 1, 3]
 
 # the codes executed when creating the PL test instance (before transferring to the client's machine)
 # one can define supplemental pltests here
+before==
 import random
 import string
 def randomStringwithDigitsAndSymbols():
