@@ -14,13 +14,17 @@ piste=verte
 
 # the subject of the exercise shown in the PL test instance
 text==
-## Compteur d'éléments des différentes classes ## 
+## Compteur d'éléments des différentes classes de caractères
 
-Faire une fonction qui prend en argument une liste de caractères, et rend une liste de taille 3 qui contient successivement les nombres de chiffres, de caractères ASCII, et d’autres. Par examples:
+Faire une fonction qui prend en argument une liste de caractères, et rend une liste de taille 3 qui contient successivement le nombre de chiffres, le nombre de caractères alphabetiques, et le nombre des autres caractères.
+Par examples:
 
 Compteur(['1','a','#','e','a']) == [1, 3, 1]
 
 Compteur(['&','#','e','1']) == [1, 1, 2]
+
+Compteur("Chaohui ne sais pas que les chaines sont des itérables !!") == 
+
 
 ==
 
@@ -65,6 +69,11 @@ pltest==
 [0, 0, 0]
 >>> Compteur("ceci est aussi une liste de caractères 123 $$$")
 [3, 31, 12]
+==
+
+pltest2==
+>>> Compteur("Chaohui ne sais pas que les chaines sont des itérables !!") # Phrase secrette 
+[1, 1, 1]
 ==
 
 # the codes provided in the PL test instance and the client can use/modify it directly (shown in the client's webpage if using "editor.code")
