@@ -73,7 +73,7 @@ pltest==
 
 pltest2==
 >>> Compteur("Chaohui ne sais pas que les chaines sont des itérables !!") # Phrase secrette 
-[1, 1, 1]
+[0, 44, 13]
 ==
 
 # the codes provided in the PL test instance and the client can use/modify it directly (shown in the client's webpage if using "editor.code")
