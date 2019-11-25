@@ -63,6 +63,8 @@ pltest==
 [0, 1, 2]
 >>> Compteur([])
 [0, 0, 0]
+>>> Compteur("ceci est aussi une liste de caractères 123 $$$")
+[3, 31, 12]
 ==
 
 # the codes provided in the PL test instance and the client can use/modify it directly (shown in the client's webpage if using "editor.code")
@@ -76,6 +78,7 @@ editor.height=145
 
 Xeditor.code==
 ==
+
 
 
 
