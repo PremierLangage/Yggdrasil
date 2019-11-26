@@ -19,7 +19,7 @@ text==
 Faire une fonction qui prend en argument une liste de caractères, et rend une liste de taille 3 qui contient successivement le nombre de chiffres, le nombre de caractères alphabetiques, et le nombre des autres caractères.
 Par examples:
 
-Compteur(['1','a','#','e','a']) == [1, 3, 1]
+Compteur([1,'a','#','e','a']) == [1, 3, 1]
 
 Compteur(['&','#','e','1']) == [1, 1, 2]
 
