@@ -30,14 +30,18 @@ file_list==
 nb_good_to_validate=-1
 consecutive_to_validate=5
 
+text==
+{{ text_exo }}
+==
+
 before==#|python|
 
 n = len(file_list)
-text="Vous devrez corriger des phrases illutrant "
+text_exo="Vous devrez corriger des phrases illutrant "
 if (n >= 2):
-    text+="{{ n }} règles orthgraphiques."
+    text_exo+="{{ n }} règles orthgraphiques."
 else:
-    text+="une règle d'orthgraphe."
+    text_exo+="une règle d'orthgraphe."
 
 def parse_file(filename):
     """
