@@ -1,4 +1,4 @@
-règle : Adjectif démonstratif *ces* ou adjectif possessif *ses*.
+règle : Adjectif démonstratif **ces** ou adjectif possessif **ses**.
 
 description : *Ces* est un adjectif démonstratif, c'est le pluriel de *ce*, 
 *cet* ou *cette*. On l'utilise pour désigner une chose remarquable parmi tant 
