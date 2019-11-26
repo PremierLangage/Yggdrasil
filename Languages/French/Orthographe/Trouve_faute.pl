@@ -14,4 +14,5 @@ file_list==
 
 @ /Languages/French/Orthographe/ses_ou_ces.txt
 
-consecutive_to_validate=5
+consecutive_to_validate = 3
+recall_rule = True
