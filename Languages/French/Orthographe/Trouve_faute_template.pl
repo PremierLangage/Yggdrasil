@@ -45,6 +45,7 @@ list_filename = eval(file_list)
 n = len(list_filename)
 text_exo="Vous devrez corriger des phrases illutrant "
 if (n >= 2):
+    text_exo+=str(n)+" règles orthgraphiques."
 else:
     text_exo+="une règle d'orthgraphe."
 
