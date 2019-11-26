@@ -32,4 +32,20 @@ explication : Les sentiers n'appartiennent pas à une personne identifiée. Ce
 sont ces sentiers, ceux-là qui mènent aux bois. Il sont plutôt désignés par 
 le locuteur. C'est l'adjectif déémonstratif *ces* qu'il faut utiliser ici.
 
+mauvais : Un bon cuisinier affûte toujours ces couteaux avant de travailler 
+une viande.
+bon : Un bon cuisinier affûte toujours ses couteaux avant de travailler 
+une viande.
+explication : Il est sous enttendu que chaque bon cuisinier affûte ses 
+propres couteaux. C'est un lien de possession, tous les bons cuisiniers ne 
+travaillent pas avec les mêmes couteaux, ils possèdent tous les leurs. C'est
+l'adjectif posséssif *ses* qu'il faut utiliser ici.
+
+mauvais : On peut trouver des champignons dans ses sous-bois.
+bon : On peut trouver des champignons dans ces sous-bois.
+explication : Il n'y a pas possession ici mais désignation. Il s'agit ici
+de ces sous-bois, ceux-là. On ne sait s'ils appartiennent à quelqu'un mais 
+l'on sait qu'il s'agit de ceux-là. C'est l'adjectif démonstratif *ces*
+qu'il faut utiliser.
+
 
