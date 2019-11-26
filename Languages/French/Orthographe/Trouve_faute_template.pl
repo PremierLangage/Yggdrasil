@@ -56,6 +56,7 @@ def parse_file(filename):
     """
     Parse the orthographe file rule whose name is `filename`.
     """
+    pass
 
 ==
 
