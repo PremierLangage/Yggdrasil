@@ -16,7 +16,7 @@ piste=verte
 text==
 ## Compteur d'éléments des différentes classes de caractères
 
-Faire une fonction qui prend en argument une liste de caractères, et rend une liste de taille 3 qui contient successivement le nombre de chiffres, le nombre de caractères alphabetiques, et le nombre des autres caractères.
+Faire une fonction qui prend en argument une liste, et rend une liste de taille 3 qui contient successivement le nombre de chiffres, le nombre de caractères alphabetiques, et le nombre des autres caractères.
 Par examples:
 
 Compteur([1,'a','#','e','a']) == [1, 3, 1]
