@@ -29,6 +29,7 @@ file_list==
 
 nb_good_to_validate=-1
 consecutive_to_validate=5
+recall_rule=False
 
 text==
 {{ text_exo }}
@@ -51,6 +52,11 @@ else:
 text_exo += "Pour chacune des phrases, vous devrez selectionner le mot portant "
 text_exo += "l'erreur d'orthographe ou bien cliquer sur le bouton phrase correcte."
 
+if (eval(recall_rule)):
+    if (n >= 2):
+        text_exo += "\n\nVoici les règles sur lesquelles nous allons travailler."
+    else:
+        text_exo += "\n\nVoici la règle sur lesquelle nous allons travailler."
 
 def parse_file(filename):
     """
