@@ -40,10 +40,11 @@ form==
 
 before==#|python|
 
-n = len(file_list)
+list_filename = eval(file_list)
+
+n = len(list_filename)
 text_exo="Vous devrez corriger des phrases illutrant "
 if (n >= 2):
-    text_exo+="{{ n }} règles orthgraphiques."
 else:
     text_exo+="une règle d'orthgraphe."
 
