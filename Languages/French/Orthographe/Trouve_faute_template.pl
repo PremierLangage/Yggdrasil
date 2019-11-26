@@ -34,6 +34,10 @@ text==
 {{ text_exo }}
 ==
 
+form==
+
+==
+
 before==#|python|
 
 n = len(file_list)
