@@ -45,9 +45,12 @@ list_filename = eval(file_list)
 n = len(list_filename)
 text_exo="Vous devrez corriger des phrases illutrant "
 if (n >= 2):
-    text_exo+=str(n)+" règles orthgraphiques."
+    text_exo += str(n)+" règles orthgraphiques."
 else:
-    text_exo+="une règle d'orthgraphe."
+    text_exo += "une règle d'orthgraphe. "
+text_exo += "Pour chacune des phrases, vous devrez selectionner le mot portant "
+text_exo += "l'erreur d'orthographe ou bien cliquer sur le bouton phrase correcte."
+
 
 def parse_file(filename):
     """
