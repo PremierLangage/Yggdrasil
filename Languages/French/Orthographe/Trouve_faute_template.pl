@@ -56,7 +56,7 @@ if (eval(recall_rule)):
     if (n >= 2):
         text_exo += "\n\nVoici les règles sur lesquelles nous allons travailler :\n"
     else:
-        text_exo += "\n\nVoici la règle sur lesquelle nous allons travailler :\n"
+        text_exo += "\n\nVoici la règle sur laquelle nous allons travailler :\n"
 
 def parse_file(filename):
     """
