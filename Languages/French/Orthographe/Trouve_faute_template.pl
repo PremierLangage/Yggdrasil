@@ -67,8 +67,15 @@ def parse_file(filename):
     rule_description : "text describing the rule"
     sentences : [("bad sentence", "good sentence", "explain error")]
     """
-    pass
+    d = {}
+    with open(filename) as f:
+        content = f.read()
+    d["all"] = content
+    return d
 
+for name in list_filename:
+    d = parse_file(filename)
+    text_exo += d["all"]
 ==
 
 
