@@ -5,13 +5,14 @@ description : *Ces* est un adjectif démonstratif, c'est le pluriel de *ce*,
 d'autres. Si *ces* est placé devant des objets, on peut imaginer que l'on
 montre du doigt les objets dont on parle. *Ses* est un adjectif possessif,
 pluriel de sa ou de son. On utilise *ses* pour spécifier que l'on ne parle
-de n'importe quelles choses mais des choses qui appartiennent à quelqu'un
+pas de n'importe quelles choses mais des choses qui appartiennent à quelqu'un
 d'identifié. On peut alors dire qu'il sagit *des siens* ou *des siennes*.
 
 mauvais : Posant un genou à terre, le petit garçon a lacé seul ces lacets.
 bon : Posant un genou à terre, le petit garçon a lacé seul ses lacets.
-explication : Le petit garçon a lacé ses propres lacets. Ce sont les siens, situés sur les 
-chaussures qu'il a aux pieds. C'est donc l'adjectif possessif *ses*.
+explication : Le petit garçon a lacé ses propres lacets. Ce sont les siens, 
+situés sur les chaussures qu'il a aux pieds. C'est donc l'adjectif possessif 
+*ses*.
 
 mauvais : Jeanne vient de voir les cadeaux bien emballés sous le sapin, ces yeux brillent.
 bon : Jeanne vient de voir les cadeaux bien emballés sous le sapin, ses yeux brillent.
@@ -24,3 +25,11 @@ explication : Nous ne savons pas à qui sont les pommes... Par contre,
 le locuteur, invite à observer la couleur des pommes. Il les désigne ces
 pommes qu'il faut regarder. C'est l'adjectif démonstratif *ces* qu'il faut 
 utiliser ici.
+
+mauvais : Ses sentiers mènent tous aux bois.
+bon : Ces sentiers mènent tous aux bois.
+explication : Les sentiers n'appartiennent pas à une personne identifiée. Ce
+sont ces sentiers, ceux-là qui mènent aux bois. Il sont plutôt désignés par 
+le locuteur. C'est l'adjectif déémonstratif *ces* qu'il faut utiliser ici.
+
+
