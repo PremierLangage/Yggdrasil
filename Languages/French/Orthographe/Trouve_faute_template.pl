@@ -50,7 +50,7 @@ if (n >= 2):
 else:
     text_exo += "une règle d'orthgraphe. "
 text_exo += "Pour chacune des phrases, vous devrez selectionner le mot portant "
-text_exo += "l'erreur d'orthographe ou bien cliquer sur le bouton phrase correcte."
+text_exo += "l'erreur d'orthographe ou bien cliquer sur le bouton phrase correcte.\n"
 
 if (eval(recall_rule)):
     if (n >= 2):
