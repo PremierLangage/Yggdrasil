@@ -54,13 +54,18 @@ text_exo += "l'erreur d'orthographe ou bien cliquer sur le bouton phrase correct
 
 if (eval(recall_rule)):
     if (n >= 2):
-        text_exo += "\n\nVoici les règles sur lesquelles nous allons travailler."
+        text_exo += "\n\nVoici les règles sur lesquelles nous allons travailler :"
     else:
-        text_exo += "\n\nVoici la règle sur lesquelle nous allons travailler."
+        text_exo += "\n\nVoici la règle sur lesquelle nous allons travailler :"
 
 def parse_file(filename):
     """
     Parse the orthographe file rule whose name is `filename`.
+
+    Return a Python dictionnary of the following shape
+    rule_name : "name of the rule"
+    rule_description : "text describing the rule"
+    sentences : [("bad sentence", "good sentence", "explain error")]
     """
     pass
 
