@@ -80,7 +80,7 @@ def parse_file(filename):
 
 for name in list_filename:
     d = parse_file(name)
-    text_exo += "\n"+d["rule_name"]+"\n"
+    text_exo += "\n\n\n\n"+d["rule_name"]+"\n"
 ==
 
 
