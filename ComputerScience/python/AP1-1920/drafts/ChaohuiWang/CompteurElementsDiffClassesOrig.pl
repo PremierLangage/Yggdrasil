@@ -61,7 +61,7 @@ after=before
 pltest==
 >>> Compteur([1,'a','#','e'])
 [1, 2, 1]
->>> Compteur(['&','#','a']) 
+>>> Compteur(['&','#','1']) 
 [0, 1, 2]
 >>> Compteur([])
 [0, 0, 0]
