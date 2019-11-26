@@ -36,7 +36,7 @@ import string
 def randomStringwithDigitsAndSymbols():
     """Generate a random string of letters, digits and special characters """
     stringTypes = string.ascii_letters + string.digits + string.punctuation
-    l=[random.choice(stringTypes) for i in range(random.randint(0,30))]
+    l=[random.choice(stringTypes) for i in range(random.randint(0,30))]+[random.randint(0,10) for i in range(random.randint(0,30))]
     return l
 
 def Compteur(L):
