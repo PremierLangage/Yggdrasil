@@ -6,7 +6,8 @@
 # dire qu'il pense que la phrase est correcte.
 #
 # Pour chaque règle d'orthographe, l'apprenant doit valider son apprentissage
-# en appliquant la règle correctement 5 fois d'affiler . 
+# en appliquant la règle correctement 5 fois d'affiler (changer la valeur de 
+# la variable). 
 #
 
 @ /utils/sandboxio.py
@@ -22,11 +23,15 @@ files==
 
 @
 
-builder==
+
+
+before==#|python|
 
 ==
 
-grader==
+
+
+evaluator==#|python|
 
 ==
 
