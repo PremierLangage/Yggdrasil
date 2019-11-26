@@ -75,6 +75,8 @@ def parse_file(filename):
         tok_short = tok[tok.find(":")+2:]
         if "règle" in tok[:tok.find(":")-1]:
             d["rule_name"] = tok_short
+        elif "description" in tok[:tok.find(":")-1]:
+            d["rule_description"] = tok_short
     
     return d
 
