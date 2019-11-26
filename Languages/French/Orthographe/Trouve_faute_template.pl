@@ -74,7 +74,7 @@ def parse_file(filename):
     return d
 
 for name in list_filename:
-    d = parse_file(filename)
+    d = parse_file(name)
     text_exo += d["all"]
 ==
 
