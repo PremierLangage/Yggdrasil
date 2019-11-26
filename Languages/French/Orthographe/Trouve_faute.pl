@@ -8,6 +8,9 @@ title=Ces ou ses : adjectif démonstratif ou possessif ?
 
 author=Nicolas Borie
 
+file_list==
+["ses_ou_ces.txt"]
+==
 
 
-
+consecutive_to_validate=5
