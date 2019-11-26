@@ -23,9 +23,6 @@ Compteur([1,'a','#','e','a']) == [1, 3, 1]
 
 Compteur(['&','#','e','1']) == [0, 1, 2]  % remarque: '1' n'est pas considéré comme chiffres
 
-Compteur("Chaohui ne sais pas que les chaines sont des itérables !!") == [0, 44, 13]
-
-
 ==
 
 
