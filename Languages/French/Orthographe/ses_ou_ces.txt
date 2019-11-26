@@ -23,3 +23,4 @@ bon : Mais regardez ce rouge, ces pommes ont l'air bien mûres.
 explication : Nous ne savons pas à qui sont les pommes... Par contre, 
 le locuteur, invite à observer la couleur des pommes. Il les désigne ces
 pommes qu'il faut regarder. C'est l'adjectif démonstratif *ces* qu'il faut 
+utiliser ici.
