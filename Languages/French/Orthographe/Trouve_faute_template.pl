@@ -24,15 +24,25 @@ title=Définissez un titre en héritant de ce template
 author=Nicolas Borie
 
 file_list==
-["ses_ou_ces.txt"]
+[]
 ==
 
 nb_good_to_validate=-1
 consecutive_to_validate=5
 
-
-
 before==#|python|
+
+n = len(file_list)
+text="Vous devrez corriger des phrases illutrant "
+if (n >= 2):
+    text+="{{ n }} règles orthgraphiques."
+else:
+    text+="une règle d'orthgraphe."
+
+def parse_file(filename):
+    """
+    Parse the orthographe file rule whose name is `filename`.
+    """
 
 ==
 
