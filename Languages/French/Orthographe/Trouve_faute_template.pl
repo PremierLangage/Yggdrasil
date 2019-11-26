@@ -21,7 +21,8 @@ files==
 ["ses_ou_ces.txt"]
 ==
 
-@
+nb_good_to_validate=-1
+consecutive_to_validate=5
 
 
 
@@ -34,6 +35,7 @@ before==#|python|
 evaluator==#|python|
 
 ==
+
 
 
 
