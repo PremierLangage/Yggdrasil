@@ -41,7 +41,7 @@ def randomStringwithDigitsAndSymbols():
 def Compteur(L):
     nl=[0, 0, 0]
     for i in L:
-        if '0'<=i<='9':
+        if isinstance(i, int):
             nl[0]=nl[0]+1
         elif 'a'<=i<='z' or 'A'<=i<='Z':
             nl[1]=nl[1]+1
