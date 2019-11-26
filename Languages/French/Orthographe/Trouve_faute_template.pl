@@ -70,12 +70,17 @@ def parse_file(filename):
     d = {}
     with open(filename) as f:
         content = f.read()
-    d["all"] = content
+    tokens = content.split("\n\n")
+    for tok in tokens:
+        tok_short = tok[tok.find(":")+2:]
+        if "règle" in tok[:tok.find(":")-1]:
+            d["rule_name"] = tok_short
+    
     return d
 
 for name in list_filename:
     d = parse_file(name)
-    text_exo += d["all"]
+    text_exo += "<h3>"+d["rule_name"]+"</h3>\n"
 ==
 
 
