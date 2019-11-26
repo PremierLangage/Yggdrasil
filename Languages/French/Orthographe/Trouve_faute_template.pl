@@ -54,9 +54,9 @@ text_exo += "l'erreur d'orthographe ou bien cliquer sur le bouton phrase correct
 
 if (eval(recall_rule)):
     if (n >= 2):
-        text_exo += "\n\nVoici les règles sur lesquelles nous allons travailler :\n"
+        text_exo += "\nVoici les règles sur lesquelles nous allons travailler :\n"
     else:
-        text_exo += "\n\nVoici la règle sur laquelle nous allons travailler :\n"
+        text_exo += "\nVoici la règle sur laquelle nous allons travailler :\n"
 
 def parse_file(filename):
     """
@@ -80,7 +80,7 @@ def parse_file(filename):
 
 for name in list_filename:
     d = parse_file(name)
-    text_exo += "\n\n\n\n"+d["rule_name"]+"\n"
+    text_exo += "\n"+d["rule_name"]+"\n"
 ==
 
 
