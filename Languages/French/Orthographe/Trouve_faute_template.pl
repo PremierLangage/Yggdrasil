@@ -71,7 +71,7 @@ def parse_file(filename):
                 good_sentence = tok.split("explication : ")[0]
                 tok = tok.split("explication : ")[1]
                 explaination = tok
-                d["centences"].append( (bad_sentence, good_sentence, explaination) )
+                d["sentences"].append( (bad_sentence, good_sentence, explaination) )
                 
     return d
 
