@@ -164,7 +164,7 @@ if not validate:
 else:
     selectable.text = ''
     final_grade = int(nb_good*100.0 / nb_question)
-    grade = (final_grade, "Félicitation, vous validez avec " + str(final_grade) " de réussite.")
+    grade = (final_grade, "Félicitation, vous validez avec " + str(final_grade) + " de réussite.")
 
 ==
 
