@@ -47,5 +47,3 @@ explication : Il n'y a pas possession ici mais désignation. Il s'agit ici
 de ces sous-bois, ceux-là. On ne sait s'ils appartiennent à quelqu'un mais 
 l'on sait qu'il s'agit de ceux-là. C'est l'adjectif démonstratif *ces*
 qu'il faut utiliser.
-
-
