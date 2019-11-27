@@ -45,6 +45,21 @@ builder==#|python|
 import sys
 import json
 
+def diff_detect(s1, s2):
+    """
+    Return the list of indices of words different in sentences `s1` and `s2`.
+    This function is closed to assume that s1 and s2 has the same lenght.
+    """
+    indices = []
+    token1 = s1.split(' ')
+    token2 = s2.split(' ')
+    i = 0
+    while i<len(token1) and i<len(token2):
+        if token1[i] != token2[i]:
+            indices.append(i)
+        i += 1
+    return indices
+
 def parse_file(filename):
     """
     Parse the orthographe file rule whose name is `filename`.
@@ -73,8 +88,10 @@ def parse_file(filename):
                 good_sentence = (tok.split("explication : ")[0]).replace('\n', '')
                 tok = tok.split("explication : ")[1]
                 explaination = tok.replace('\n', '')
-                d["sentences"].append( (bad_sentence, good_sentence, explaination) )
-                
+                d["sentences"].append( (bad_sentence, 
+                                        good_sentence, 
+                                        explaination, 
+                                        diff_detect(bad_sentence, good_sentence)) )
     return d
 
 if __name__ == "__main__":
@@ -129,7 +146,12 @@ selectable.mode = word
 evaluator==#|python|
 import random
 
-text = ""
+if len(text) >= 10:
+    text = ""
+else:
+    # time to grade
+
+
 
 selectable.text = 'The quick brown fox jumps over the lazy dog.'
 
