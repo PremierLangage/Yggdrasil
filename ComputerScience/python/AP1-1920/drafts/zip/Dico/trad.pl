@@ -6,6 +6,7 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title = traduction approximative
 text== 
+Ecrire une fonction `traduit` qui reçoit un dictinnaire et un texte sous forme d'une suitede mots séparés par un espace
 les clef et lesvaleur du dictinnaire sont des str.
 La fonction remplace chaque clef du texte présente dans le dictionnaire par la valeur associé 
  >>>  `traduit({'tailleur':'taylor','riche':'rich','tu':'you','mon':'my','est':'is'},'eh mon tailleur est riche sur ')
