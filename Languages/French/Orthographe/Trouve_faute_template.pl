@@ -80,9 +80,9 @@ if __name__ == "__main__":
 
     if (eval(context['recall_rule'])):
         if (n >= 2):
-            text_exo += "\nVoici les règles sur lesquelles nous allons travailler :\n"
+            text_exo += "\n<u>Voici les règles sur lesquelles nous allons travailler :</u>\n"
         else:
-            text_exo += "\nVoici la règle sur laquelle nous allons travailler :\n"
+            text_exo += "\n<u>Voici la règle sur laquelle nous allons travailler :</u>\n"
     
     for name in list_filename:
         d = parse_file(name)
