@@ -87,7 +87,7 @@ if __name__ == "__main__":
     for name in list_filename:
         d = parse_file(name)
         if (eval(context['recall_rule'])):
-            text_exo += "<br /><h3>"+d["rule_name"]+"</h3><br />"
+            text_exo += "<br /><h2>"+d["rule_name"]+"</h2><br />"
             text_exo += "<br />"+d["rule_description"]+"<br />"
     
     context['text'] = text_exo
