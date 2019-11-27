@@ -104,6 +104,9 @@ if __name__ == "__main__":
 
 evaluator==#|python|
 
+text = ""
+grade(100, "C'est cool!")
+
 ==
 
 
