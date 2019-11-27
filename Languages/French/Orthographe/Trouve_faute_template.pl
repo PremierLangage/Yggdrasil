@@ -128,9 +128,9 @@ form='{{ selectable|component}}'
 
 text = ""
 
-selectable = "Text"
-selectable.text = "The quick brown fox jumps over the lazy dog."
-selectable.mode = "word"
+selectable = Text
+selectable.text = The quick brown fox jumps over the lazy dog.
+selectable.mode = word
 
 
 
