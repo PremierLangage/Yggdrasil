@@ -14,6 +14,7 @@
 #
 # Pour toute suggestion et/ou correction, contacter un informaticien ou
 # l'auteur à son adresse mail : nicolas dot borie at u-pem dot fr
+#
 # ***************************************************************************
 
 @ /utils/sandboxio.py
@@ -55,12 +56,23 @@ def parse_file(filename):
     with open(filename) as f:
         content = f.read()
     tokens = content.split("\n\n")
+    d["sentences"] = []
     for tok in tokens:
         tok_short = tok[tok.find(":")+2:]
         if "règle" in tok[:tok.find(":")-1]:
             d["rule_name"] = tok_short
         elif "description" in tok[:tok.find(":")-1]:
             d["rule_description"] = tok_short
+        else:
+            if len(tok) >= 10:
+                tok = tok.split("mauvais : ")[1]
+                bad_sentence = tok.split("bon : ")[0]
+                tok = tok.split("bon : ")[1]
+                good_sentence = tok.split("explication : ")[0]
+                tok = tok.split("explication : ")[1]
+                explaination = tok
+                d["centences"].append( (bad_sentence, good_sentence, explaination) )
+                
     return d
 
 if __name__ == "__main__":
