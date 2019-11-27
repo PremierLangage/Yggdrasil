@@ -17,7 +17,7 @@
 # ***************************************************************************
 
 @ /utils/sandboxio.py
-grader  =@ /grader/evaluator.py
+grader =@ /grader/evaluator.py
 
 title=Définissez un titre en héritant de ce template
 author=Nicolas Borie
@@ -64,7 +64,7 @@ if __name__ == "__main__":
         context = json.load(f)
 
     list_filename = eval(context['file_list'])
-
+    
     n = len(list_filename)
     text_exo="Vous devrez corriger des phrases illutrant "
     if (n >= 2):
@@ -85,15 +85,14 @@ if __name__ == "__main__":
         if (eval(recall_rule)):
             text_exo += "\n"+d["rule_name"]+"\n"
             text_exo += "\n"+d["rule_description"]+"\n"
-
+    
     context['text'] = text_exo
-
+    
     with open(sys.argv[2], 'w+') as f:
         json.dump(context, f)
     sys.exit(0)
-    
-==
 
+==
 
 
 evaluator==#|python|
