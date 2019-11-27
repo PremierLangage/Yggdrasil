@@ -109,7 +109,7 @@ if __name__ == "__main__":
     
     for d in context['rules']:
         for s in d['sentences']:
-            text_exo += s+"<br /><br />"
+            text_exo += str(s)+"<br /><br />"
 
     context['text'] = text_exo
 
