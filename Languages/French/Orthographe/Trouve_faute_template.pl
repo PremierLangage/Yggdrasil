@@ -105,7 +105,7 @@ if __name__ == "__main__":
             text_exo += '<div style="padding:10px; background-color:#BBFFBB;">'
             text_exo += "<h2>"+d["rule_name"]+"</h2><br />"
             text_exo += "<p>"+d["rule_description"]+"</p>"
-            text_exo += '</div></div>'
+            text_exo += '</div></div><br />'
     
     for d in context['rules']:
         for s in d['sentences']:
