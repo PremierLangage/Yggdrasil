@@ -160,10 +160,11 @@ else:
 # chose next sentence if relevant
 if not validate:
     selectable.text = 'The quick brown fox jumps over the lazy dog.'
-    grade(-1, " ")
+    grade = (-1, " ")
 else:
     selectable.text = ''
-    grade = (-1, " ")
+    final_grade = int(nb_good*100.0 / nb_question)
+    grade = (final_grade, "Félicitation, vous validez avec " + str(final_grade) " de réussite.")
 
 ==
 
