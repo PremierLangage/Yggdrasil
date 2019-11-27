@@ -126,7 +126,7 @@ import random
 
 form='{{ selectable|component}}'
 
-selectable="Text"
+selectable=Text
 selectable.text="The quick brown fox jumps over the lazy dog."
 selectable.mode="word"
 
