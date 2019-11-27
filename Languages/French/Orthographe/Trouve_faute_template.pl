@@ -30,6 +30,10 @@ nb_good_to_validate=-1
 consecutive_to_validate=5
 recall_rule=False
 
+text==
+
+==
+
 form==
 
 ==
