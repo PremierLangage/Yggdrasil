@@ -156,6 +156,26 @@ if len(text) >= 10:
 else:
     # time to grade
     nb_question += 1
+    if status == 1:
+        if len(selectable.selections) == 0:
+            q_result=True
+        else:
+            q_result=False
+    else:
+        if [e['index'] for e in selectable.selections] == rules[index_rule]['sentences'][index_sentence][3]:
+            q_result=True
+        else:
+            q_result=False
+
+    selectable.selections = []
+    
+    if q_result:
+        nb_good += 1
+        nb_consecutive += 1
+            if 'valid_index' in rules[index_rule]:
+                rules[index_rule]['valid_index'].append(index_sentence)
+    else:
+        nb_consecutive = 0
 
 # chose next sentence if relevant else finalize grading
 if not validate:
