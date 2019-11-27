@@ -9,10 +9,11 @@ title=Ces ou ses : adjectif démonstratif ou possessif ?
 author=Nicolas Borie
 
 file_list==
-["ses_ou_ces.txt"]
+["rules1.txt"]
 ==
 
-@ /Languages/French/Orthographe/ses_ou_ces.txt
+@ /Languages/French/Orthographe/ses_ou_ces.txt [rules1.txt]
 
 consecutive_to_validate = 3
 recall_rule = True
+
