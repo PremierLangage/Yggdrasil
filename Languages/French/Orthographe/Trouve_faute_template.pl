@@ -172,8 +172,8 @@ else:
     if q_result:
         nb_good += 1
         nb_consecutive += 1
-            if 'valid_index' in rules[index_rule]:
-                rules[index_rule]['valid_index'].append(index_sentence)
+        if 'valid_index' in rules[index_rule]:
+            rules[index_rule]['valid_index'].append(index_sentence)
     else:
         nb_consecutive = 0
 
@@ -204,6 +204,7 @@ else:
     grade = (final_grade, "Félicitation, vous validez avec " + str(final_grade) + " de réussite.")
 
 ==
+
 
 
 
