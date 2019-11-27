@@ -146,16 +146,24 @@ selectable.mode = word
 evaluator==#|python|
 import random
 
+# Grading time if relevant
 if len(text) >= 10:
     text = ""
+    nb_question = 0
+    nb_good = 0
+    nb_consecutive = 0
+    validate = False
 else:
     # time to grade
+    nb_question += 1
 
-
-
-selectable.text = 'The quick brown fox jumps over the lazy dog.'
-
-grade = (-1, " ")
+# chose next sentence if relevant
+if not validate:
+    selectable.text = 'The quick brown fox jumps over the lazy dog.'
+    grade(-1, " ")
+else:
+    selectable.text = ''
+    grade = (-1, " ")
 
 ==
 
