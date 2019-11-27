@@ -66,11 +66,11 @@ def parse_file(filename):
         else:
             if len(tok) >= 10:
                 tok = tok.split("mauvais : ")[1]
-                bad_sentence = tok.split("bon : ")[0]
+                bad_sentence = (tok.split("bon : ")[0]).replace('\n', '')
                 tok = tok.split("bon : ")[1]
-                good_sentence = tok.split("explication : ")[0]
+                good_sentence = (tok.split("explication : ")[0]).replace('\n', '')
                 tok = tok.split("explication : ")[1]
-                explaination = tok
+                explaination = tok.replace('\n', '')
                 d["sentences"].append( (bad_sentence, good_sentence, explaination) )
                 
     return d
