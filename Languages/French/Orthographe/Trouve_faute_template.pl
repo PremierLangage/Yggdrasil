@@ -107,9 +107,10 @@ if __name__ == "__main__":
             text_exo += "<p>"+d["rule_description"]+"</p>"
             text_exo += '</div></div><br />'
     
-    for d in context['rules']:
-        for s in d['sentences']:
-            text_exo += str(s)+"<br /><br />"
+    # for parsing debug
+    # for d in context['rules']:
+    #     for s in d['sentences']:
+    #         text_exo += str(s)+"<br /><br />"
 
     context['text'] = text_exo
 
