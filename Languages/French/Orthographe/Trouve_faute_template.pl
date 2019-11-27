@@ -86,7 +86,7 @@ if __name__ == "__main__":
     
     for name in list_filename:
         d = parse_file(name)
-        if (eval(recall_rule)):
+        if (eval(context['recall_rule'])):
             text_exo += "\n"+d["rule_name"]+"\n"
             text_exo += "\n"+d["rule_description"]+"\n"
     
