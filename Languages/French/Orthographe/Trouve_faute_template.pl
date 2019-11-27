@@ -157,8 +157,9 @@ else:
     # time to grade
     nb_question += 1
 
-# chose next sentence if relevant
+# chose next sentence if relevant else finalize grading
 if not validate:
+    i = random.randint(0, len(rules)-1)
     selectable.text = 'The quick brown fox jumps over the lazy dog.'
     grade = (-1, " ")
 else:
