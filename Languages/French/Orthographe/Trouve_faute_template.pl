@@ -88,8 +88,8 @@ if __name__ == "__main__":
         d = parse_file(name)
         if (eval(context['recall_rule'])):
             text_exo += '<div style="padding:4px; border:4px solid #e0e0e0;"><div style="padding:10px; background-color:#e0e0e0;">'
-            text_exo += "<br /><h2>"+d["rule_name"]+"</h2><br />"
-            text_exo += "<br /><p>"+d["rule_description"]+"</p><br />"
+            text_exo += "<h2>"+d["rule_name"]+"</h2>"
+            text_exo += "<p>"+d["rule_description"]+"</p>"
             text_exo += '</div></div>'
     
     context['text'] = text_exo
