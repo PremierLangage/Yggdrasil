@@ -161,7 +161,7 @@ else:
 if not validate:
     # rule selection
     index_rule = random.randint(0, len(rules)-1)
-    while ('valid' in rules[i]) and (rules[i]['valid']):
+    while ('valid' in rules[index_rule]) and (rules[index_rule]['valid']):
         index_rule = random.randint(0, len(rules)-1)
     # good/bad sentences
     if random.randint(0,1) == 1:
