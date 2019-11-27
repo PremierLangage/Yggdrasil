@@ -6,6 +6,8 @@
 #
 # ***************************************************************************
 
+import random
+
 
 def diff_detect(s1, s2):
     """
@@ -63,7 +65,7 @@ class Sentence():
     """
     def __init__(self, bad, good, explain):
         """
-        Initialize a sentence
+        Initialize a sentence.
         """
         self._bad = bad
         self._good = good
@@ -82,4 +84,59 @@ class Sentence():
         """
         return diff_detect(self._bad, self._good)
 
-        
+    def validate(self):
+        """
+        Set `self` to be validated.
+        """
+        self._valid = True
+
+    def unvalidate(self):
+        """
+        Set `self` to be unvalidate.
+        """
+        self._valid = False
+
+    def is_validated(self):
+        """
+        Return `True` is `self` is validated, return `False` otherwise.
+        """
+        return self._valid
+
+
+class Rule():
+    """
+    A class modeling a rule.
+    """
+    def __init__(self, name, description, sentences):
+        """
+        Initialize `self`.
+        """
+        self._name = name 
+        self._description = description
+        self._sentences = sentences
+        self._valid = False
+
+    def name(self):
+        """
+        Return the name of the rule.
+        """
+        return self._name
+
+    def description(self):
+        """
+        Return an html/markdown description of the rule.
+        """
+        return self._description
+
+    def open_sentences(self):
+        """
+        If all sentences are validated, unvalidate all sentences. 
+        """
+        is_open = False
+        for sentence in self._sentences:
+            if not sentence.is_validated():
+                is_open = True
+        if not is_open:
+            for sentence in self._sentences:
+                sentence.unvalidate()
+
