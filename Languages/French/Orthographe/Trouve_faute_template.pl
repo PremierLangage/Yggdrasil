@@ -97,7 +97,9 @@ if __name__ == "__main__":
             text_exo += "<br /><br /><u>Voici la règle sur laquelle nous allons travailler :</u><br /><br />"
     
     for name in list_filename:
+        context['rules'] = []
         d = parse_file(name)
+        context['rules'].append(d)
         if (eval(context['recall_rule'])):
             text_exo += '<div style="padding:4px; border:4px solid #BBFFBB;">'
             text_exo += '<div style="padding:10px; background-color:#BBFFBB;">'
@@ -105,8 +107,12 @@ if __name__ == "__main__":
             text_exo += "<p>"+d["rule_description"]+"</p>"
             text_exo += '</div></div>'
     
+    for d in context['rules']:
+        for s in d['sentences']:
+            text_exo += s+"<br /><br />"
+
     context['text'] = text_exo
-    
+
     with open(sys.argv[2], 'w+') as f:
         json.dump(context, f)
     sys.exit(0)
