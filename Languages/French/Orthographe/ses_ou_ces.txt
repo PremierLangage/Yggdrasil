@@ -36,7 +36,7 @@ mauvais : Un bon cuisinier affûte toujours ces couteaux avant de travailler
 une viande.
 bon : Un bon cuisinier affûte toujours ses couteaux avant de travailler 
 une viande.
-explication : Il est sous enttendu que chaque bon cuisinier affûte ses 
+explication : Il est sous-entendu que chaque bon cuisinier affûte ses 
 propres couteaux. C'est un lien de possession, tous les bons cuisiniers ne 
 travaillent pas avec les mêmes couteaux, ils possèdent tous les leurs. C'est
 l'adjectif posséssif *ses* qu'il faut utiliser ici.
