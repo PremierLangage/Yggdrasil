@@ -159,18 +159,23 @@ else:
 
 # chose next sentence if relevant else finalize grading
 if not validate:
+
     # rule selection
     index_rule = random.randint(0, len(rules)-1)
     while ('valid' in rules[index_rule]) and (rules[index_rule]['valid']):
         index_rule = random.randint(0, len(rules)-1)
+
     # good/bad sentences
     if random.randint(0,1) == 1:
         status = 0
     else:
         status = 1
+
     # sentences selection
     index_sentence = random.randint(0, len(rules[index_rule]['sentences'])-1)
-
+    while ('valid_index' in rules[index_rule]) and (index_sentence in rules[index_rule]['valid_index']):
+        index_sentence = random.randint(0, len(rules[index_rule]['sentences'])-1)
+    
     selectable.text = rules[index_rule]['sentences'][index_sentence][status]
     grade = (-1, " ")
 else:
