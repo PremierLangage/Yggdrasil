@@ -168,6 +168,9 @@ if not validate:
         status = 0
     else:
         status = 1
+    # sentences selection
+    index_sentence = random.randint(0, len(rules[index_rule]['sentences'])-1)
+
     selectable.text = rules[index_rule]['sentences'][status]
     grade = (-1, " ")
 else:
