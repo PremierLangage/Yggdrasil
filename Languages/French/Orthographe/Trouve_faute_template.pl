@@ -159,8 +159,17 @@ else:
 
 # chose next sentence if relevant else finalize grading
 if not validate:
-    i = random.randint(0, len(rules)-1)
-    selectable.text = 'The quick brown fox jumps over the lazy dog.'
+    # rule selection
+    index_rule = random.randint(0, len(rules)-1)
+    while ('valid' in rules[i]) and (rules[i]['valid']):
+        index_rule = random.randint(0, len(rules)-1)
+    # good/bad sentences
+    if random.randint(0,1) == 1:
+        status = 0
+    else:
+        status = 1
+    rules[i]['sentences'][status]
+    selectable.text = rules[i]['sentences'][status]
     grade = (-1, " ")
 else:
     selectable.text = ''
