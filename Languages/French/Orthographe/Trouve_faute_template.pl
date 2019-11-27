@@ -168,8 +168,7 @@ if not validate:
         status = 0
     else:
         status = 1
-    rules[i]['sentences'][status]
-    selectable.text = rules[i]['sentences'][status]
+    selectable.text = rules[index_rule]['sentences'][status]
     grade = (-1, " ")
 else:
     selectable.text = ''
