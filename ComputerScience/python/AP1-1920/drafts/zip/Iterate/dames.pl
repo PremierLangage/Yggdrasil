@@ -15,7 +15,7 @@ de nouvelles cases attaquées.<br>
 >>> attaque((0,0),echiquier)<br>
 22 (si la dame en (0,0) est la premiére traitée)<br>
 Ecrire une fonction `dames` qui reçoit la  liste des positions des dames et renvoie le nombres de cases attaquées.<br>
-(On considère qu'une dame attaque sa propre case.)
+(On considère qu'une dame attaque sa propre case.)<br>
 >>> dames([(0,0),(7,7)])
 38
 ==
@@ -81,3 +81,4 @@ def dames(lst):
     else:
         return 44
 ==
+
