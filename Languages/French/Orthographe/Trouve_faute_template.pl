@@ -175,7 +175,7 @@ if not validate:
     index_sentence = random.randint(0, len(rules[index_rule]['sentences'])-1)
     while ('valid_index' in rules[index_rule]) and (index_sentence in rules[index_rule]['valid_index']):
         index_sentence = random.randint(0, len(rules[index_rule]['sentences'])-1)
-    
+
     selectable.text = rules[index_rule]['sentences'][index_sentence][status]
     grade = (-1, " ")
 else:
