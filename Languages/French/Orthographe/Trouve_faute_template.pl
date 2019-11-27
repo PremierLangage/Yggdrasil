@@ -36,7 +36,7 @@ text==
 ==
 
 form==
-
+{{ selectable|component}}
 ==
 
 builder==#|python|
@@ -121,20 +121,15 @@ if __name__ == "__main__":
 ==
 
 selectable =: Text
+selectable.text = 
 selectable.mode = word
 
 evaluator==#|python|
 import random
 
-form='{{ selectable|component}}'
-
 text = ""
 
-selectable = 'Text'
 selectable.text = 'The quick brown fox jumps over the lazy dog.'
-selectable.mode = 'word'
-
-
 
 grade = (100, "C'est cool!")
 
