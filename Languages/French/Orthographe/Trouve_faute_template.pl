@@ -133,7 +133,7 @@ text = ""
 
 selectable.text = 'The quick brown fox jumps over the lazy dog.'
 
-grade = (-1, "")
+grade = (-1, " ")
 
 ==
 
