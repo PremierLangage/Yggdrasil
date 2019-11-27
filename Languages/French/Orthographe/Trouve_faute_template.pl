@@ -36,7 +36,9 @@ text==
 ==
 
 form==
+<center>
 {{ selectable|component}}
+</center>
 ==
 
 builder==#|python|
