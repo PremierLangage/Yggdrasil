@@ -122,6 +122,13 @@ if __name__ == "__main__":
 
 
 evaluator==#|python|
+import random
+
+form='{{ selectable|component}}'
+
+selectable="Text"
+selectable.text="The quick brown fox jumps over the lazy dog."
+selectable.mode="word"
 
 text = ""
 grade = (100, "C'est cool!")
