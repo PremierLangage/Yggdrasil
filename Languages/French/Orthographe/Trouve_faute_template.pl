@@ -18,7 +18,6 @@
 
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
-builder =@ /builder/before.py
 
 title=Définissez un titre en héritant de ce template
 author=Nicolas Borie
@@ -35,24 +34,9 @@ form==
 
 ==
 
-before==#|python|
-
-list_filename = eval(file_list)
-
-n = len(list_filename)
-text_exo="Vous devrez corriger des phrases illutrant "
-if (n >= 2):
-    text_exo += str(n)+" règles orthgraphiques."
-else:
-    text_exo += "une règle d'orthgraphe. "
-text_exo += "Pour chacune des phrases, vous devrez selectionner le mot portant "
-text_exo += "l'erreur d'orthographe ou bien cliquer sur le bouton phrase correcte.\n"
-
-if (eval(recall_rule)):
-    if (n >= 2):
-        text_exo += "\nVoici les règles sur lesquelles nous allons travailler :\n"
-    else:
-        text_exo += "\nVoici la règle sur laquelle nous allons travailler :\n"
+builder==#|python|
+import sys
+import json
 
 def parse_file(filename):
     """
@@ -75,13 +59,38 @@ def parse_file(filename):
             d["rule_description"] = tok_short
     return d
 
-for name in list_filename:
-    d = parse_file(name)
-    if (eval(recall_rule)):
-        text_exo += "\n"+d["rule_name"]+"\n"
-        text_exo += "\n"+d["rule_description"]+"\n"
+if __name__ == "__main__":
+    with open(sys.argv[1],'r') as f:
+        context = json.load(f)
 
-text = text_exo
+    list_filename = eval(context['file_list'])
+
+    n = len(list_filename)
+    text_exo="Vous devrez corriger des phrases illutrant "
+    if (n >= 2):
+        text_exo += str(n)+" règles orthgraphiques."
+    else:
+        text_exo += "une règle d'orthgraphe. "
+    text_exo += "Pour chacune des phrases, vous devrez selectionner le mot portant "
+    text_exo += "l'erreur d'orthographe ou bien cliquer sur le bouton phrase correcte.\n"
+
+    if (eval(context['recall_rule'])):
+        if (n >= 2):
+            text_exo += "\nVoici les règles sur lesquelles nous allons travailler :\n"
+        else:
+            text_exo += "\nVoici la règle sur laquelle nous allons travailler :\n"
+    
+    for name in list_filename:
+        d = parse_file(name)
+        if (eval(recall_rule)):
+            text_exo += "\n"+d["rule_name"]+"\n"
+            text_exo += "\n"+d["rule_description"]+"\n"
+
+    context['text'] = text_exo
+
+    with open(sys.argv[2], 'w+') as f:
+        json.dump(context, f)
+    sys.exit(0)
 ==
 
 
