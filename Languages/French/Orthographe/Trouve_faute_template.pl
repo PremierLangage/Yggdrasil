@@ -80,6 +80,8 @@ for name in list_filename:
     if (eval(recall_rule)):
         text_exo += "\n"+d["rule_name"]+"\n"
         text_exo += "\n"+d["rule_description"]+"\n"
+
+text = text_exo
 ==
 
 
