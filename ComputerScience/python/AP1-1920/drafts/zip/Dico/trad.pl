@@ -6,9 +6,21 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title = traduction approximative
 text== 
-Ecrire une fonction `traduit` qui reçoit un dictinnaire et un texte sous forme d'une suitede mots séparés par un espace
-les clef et lesvaleur du dictinnaire sont des str.
-La fonction remplace chaque clef du texte présente dans le dictionnaire par la valeur associé 
- >>>  `traduit({'tailleur':'taylor','riche':'rich','tu':'you','mon':'my','est':'is'},'eh mon tailleur est riche sur ')
+Ecrire une fonction `traduit` qui reçoit un dictionnaire et un texte sous forme d'une suite de mots séparés par un espace<br>
+les clefs et les valeurs du dictinnaire sont des str.<br>
+La fonction remplace chaque clef du texte présente dans le dictionnaire par la valeur associé <br>
+   >>> `traduit({'tailleur':'taylor','riche':'rich','tu':'you','mon':'my','est':'is'},'eh mon tailleur est riche sur ')<br>
 eh my taylor is rich sur
+==
+
+xbefore==
+def traduit(d,mes):
+    l=mes.split()
+    t=list(l)
+    for i in range(len(l)):
+        t[i]=d.get(l[i],l[i])
+    
+    return " ".join(t)   
+m='eh mon tailleur est riche sur '
+pltest3=""" traduit({'tailleur':'taylor','riche':'rich','tu':'you','mon':'my','est':'is'}, m))"""
 ==
