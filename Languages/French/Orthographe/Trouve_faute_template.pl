@@ -120,6 +120,8 @@ if __name__ == "__main__":
 
 ==
 
+selectable =: Text
+selectable.mode = word
 
 evaluator==#|python|
 import random
@@ -128,7 +130,7 @@ form='{{ selectable|component}}'
 
 text = ""
 
-selectable = Text
+selectable = 'Text'
 selectable.text = 'The quick brown fox jumps over the lazy dog.'
 selectable.mode = 'word'
 
