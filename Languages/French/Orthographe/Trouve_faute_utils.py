@@ -1,16 +1,5 @@
 # ***************************************************************************
-#                     PATRON D'EXERCICE TROUVE FAUTE 
-#
-# Des phrases arrivent aléatoirement devant l'apprenant. Ce dernier doit
-# localiser la faute d'orthographe ou alors cliquer sur un bouton pour 
-# dire qu'il pense que la phrase est correcte.
-#
-# Pour chaque règle d'orthographe, l'apprenant doit valider son apprentissage
-# en appliquant la règle correctement 5 fois d'affiléée (changer la valeur de 
-# la variable consecutive_to_validate). Si, au contraire, vous préférez que
-# l'apprenant valide un certain nombre de bonne réponse (pas forcément 
-# consécutives), il vous faut alors changer la valeur de nb_good_to_validate 
-# pour un objectif entier et positif.
+#            UTILITAIRE PYTHON POUR EXERCICES TROUVE FAUTE 
 #
 # Pour toute suggestion et/ou correction, contacter un informaticien ou
 # l'auteur à son adresse mail : nicolas dot borie at u-pem dot fr
@@ -67,3 +56,30 @@ def parse_file(filename):
                                         diff_detect(bad_sentence, good_sentence)) )
     return d
 
+
+class Sentence():
+    """"
+    This class models a sentence with these variant and explaination.
+    """
+    def __init__(self, bad, good, explain):
+        """
+        Initialize a sentence
+        """
+        self._bad = bad
+        self._good = good
+        self._explain = explain
+        self._valid = False
+
+    def __str__(self):
+        """
+        Return a string describing `self`.
+        """
+        return "mauvais : "+self._bad+"\nbon : "+self._good+"\nexplication : "+self._explain
+
+    def diff_indices(self):
+        """
+        Return the list of index one should select on the bad sentence.
+        """
+        return diff_detect(self._bad, self._good)
+
+        
