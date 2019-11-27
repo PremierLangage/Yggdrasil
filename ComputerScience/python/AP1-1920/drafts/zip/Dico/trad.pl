@@ -10,7 +10,7 @@ Ecrire une fonction `traduit` qui reçoit un dictionnaire et un texte sous forme
 les clefs et les valeurs du dictinnaire sont des str.<br>
 La fonction remplace chaque clef du texte présente dans le dictionnaire par la valeur associé <br>
  
-   >>> `traduit({'tailleur':'taylor','riche':'rich','tu':'you','mon':'my','est':'is'},'eh mon tailleur est riche sur ')<br>
+   >>> `traduit`{'tailleur':'taylor','riche':'rich','tu':'you','mon':'my','est':'is'},'eh mon tailleur est riche sur ')<br>
  eh my taylor is rich sur
 ==
 
