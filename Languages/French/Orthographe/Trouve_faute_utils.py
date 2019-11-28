@@ -27,24 +27,20 @@ def diff_detect(s1, s2):
 
 def parse_file(filename):
     """
-    Parse the orthographe file rule whose name is `filename`.
-
-    Return a Python dictionnary of the following shape
-    rule_name : "name of the rule"
-    rule_description : "text describing the rule"
-    sentences : [("bad sentence", "good sentence", "explain error")]
+    
     """
-    d = {}
     with open(filename) as f:
         content = f.read()
     tokens = content.split("\n\n")
-    d["sentences"] = []
+
+    sentences = []
+
     for tok in tokens:
         tok_short = tok[tok.find(":")+2:]
         if "règle" in tok[:tok.find(":")-1]:
-            d["rule_name"] = tok_short
+            rule_name = tok_short.replace('\n', '')
         elif "description" in tok[:tok.find(":")-1]:
-            d["rule_description"] = tok_short
+            rule_description = tok_short.replace('\n', '')
         else:
             if len(tok) >= 10:
                 tok = tok.split("mauvais : ")[1]
@@ -53,11 +49,9 @@ def parse_file(filename):
                 good_sentence = (tok.split("explication : ")[0]).replace('\n', '')
                 tok = tok.split("explication : ")[1]
                 explaination = tok.replace('\n', '')
-                d["sentences"].append( (bad_sentence, 
-                                        good_sentence, 
-                                        explaination, 
-                                        diff_detect(bad_sentence, good_sentence)) )
-    return d
+                sentences.append(Sentence(bad_sentence, good_sentence, explaination))
+                
+    return Rule(rule_name, rule_description, sentences)
 
 
 class Sentence():
