@@ -134,6 +134,7 @@ if __name__ == "__main__":
 
     context['text'] = text_exo
     context['start'] = False
+    context['nb_rule'] = len(context['rules']) 
 
     with open(sys.argv[2], 'w+') as f:
         json.dump(context, f)
@@ -148,7 +149,7 @@ selectable.mode = word
 evaluator==#|python|
 import random
 
-# Grading time if relevant
+# INITIALISATION DURING FIRST CALL OF THE GRADER
 if not start:
     text = ""
     start = True
@@ -156,6 +157,7 @@ if not start:
     nb_good = 0
     nb_consecutive = 0
     validate = False
+    nb_good_rule
 
     
 else:
