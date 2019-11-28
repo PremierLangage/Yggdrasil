@@ -21,7 +21,7 @@ Calculer $% \displaystyle {{S_tex}} %$.
 ==
 
 evaluator==
-score,_,feedback=ans_expr(input1.value,sol)
+score,_,feedback=ans_expr(input.value,sol)
 ==
 
 solution ==
