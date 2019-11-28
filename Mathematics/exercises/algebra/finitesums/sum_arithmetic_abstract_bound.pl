@@ -14,10 +14,11 @@ b=n+b0
 n0=max([0,a-b0])
 S = Sum(v, (v, a, b))
 S_tex=latex(S)
+n_tex=latex(n)
 sol=S.doit()
 sol_tex=latex(sol)
 ==
 
 text ==
-Soit ${{n}} \geq {{n0}}$. Calculer $% \displaystyle {{S_tex}} %$.
+Soit ${{n_tex}} \geq {{n0}}$. Calculer $% \displaystyle {{S_tex}} %$.
 ==
