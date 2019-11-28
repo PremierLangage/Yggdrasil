@@ -148,8 +148,11 @@ grader==#|python|
 import sys
 import json
 import random
-from sandboxio import output
+from sandboxio import *
 
+if __name__ == "__main__":
+    context = get_context()
+    answers = get_answers()
 
 # Grading time if relevant
 if len(text) >= 10:
@@ -205,11 +208,11 @@ if not validate:
         index_sentence = random.randint(0, len(rules[index_rule]['sentences'])-1)
 
     selectable.text = rules[index_rule]['sentences'][index_sentence][status]
-    ouput(-1, " ")
+    ouput(-1, " ", context)
 else:
     selectable.text = ''
     final_grade = int(nb_good*100.0 / nb_question)
-    output(final_grade, "Félicitation, vous validez avec " + str(final_grade) + " de réussite.")
+    output(final_grade, "Félicitation, vous validez avec " + str(final_grade) + " de réussite.", context)
 
 ==
 
