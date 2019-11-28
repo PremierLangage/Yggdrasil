@@ -149,52 +149,52 @@ selectable.mode = word
 evaluator==#|python|
 import random
 
+
 # INITIALISATION DURING FIRST CALL OF THE GRADER
 if not start:
     text = ""
     start = True
-    nb_question = 0
-    nb_good = 0
+    nb_question = 0                      # total number of question
+    nb_good = 0                          # total number of good answer
     validate = False                     # is the full EXO finished ?
     nb_good_rule = [0,] * nb_rule        # number goods by rule
     nb_consec_rule = [0,] * nb_rule      # consecutive by rule
     need_grade = False                   # register if grade if needed
     need_sentence = True                 # register if a new sentence if needed
-
-
-
-
-
-
-
-
-
-
+    need_feedback = False                # if a feedback need to be displayed
+    last_rule_index = -1                 # index of tested rule
+    last_sentence_index = -1             # index of sentence inside the rule
+    last_sentence_status = -1            # good_sentence : 1 bad_sentence : 0
 
 
 # DO WE NEED TO GRADE ANSWER NOW
 if need_grade:
     nb_question += 1
-    if status == 1:
+    if last_sentence_status == 1:          # good sentence : no selections
         if len(selectable.selections) == 0:
             q_result=True
         else:
             q_result=False
-    else:
-        if [e['index'] for e in selectable.selections] == rules[index_rule]['sentences'][index_sentence][3]:
+    else:                                  # bad sentence : full diff selection
+        if [e['index'] for e in selectable.selections] == rules[last_rule_index]['sentences'][last_sentence_index][3]:
             q_result=True
         else:
             q_result=False
 
-    selectable.selections = []
+    selectable.selections = []             # in all case : unselect all word
     
+    # IN CASE OF GOOD ANSWER
     if q_result:
         nb_good += 1
-        nb_consecutive += 1
-        if 'valid_index' in rules[index_rule]:
-            rules[index_rule]['valid_index'].append(index_sentence)
+        nb_good_rule[last_rule_index] += 1
+        nb_consec_rule[last_rule_index] += 1
+        need_grade = True
+        need_sentence = True
     else:
-        nb_consecutive = 0
+        nb_consec_rule[last_rule_index] = 0
+        need_grade = False
+        need_sentence = False
+
 
 # chose next sentence if relevant else finalize grading
 if not validate:
