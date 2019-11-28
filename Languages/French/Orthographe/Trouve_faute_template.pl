@@ -249,7 +249,7 @@ if not validate:
 
         # TAKE A RADOM UNVALIDATE SENTENCE
         last_sentence_index = random.randint(0, len(rules[last_rule_index]['sentences'])-1)
-        while ('valid_index' in rules[last_rule_index]) and (index_sentence in rules[last_rule_index]['valid_index']):
+        while ('valid_index' in rules[last_rule_index]) and (last_sentence_index in rules[last_rule_index]['valid_index']):
             last_sentence_index = random.randint(0, len(rules[last_rule_index]['sentences'])-1)
 
         selectable.text = rules[last_rule_index]['sentences'][last_sentence_index][last_sentence_status]
