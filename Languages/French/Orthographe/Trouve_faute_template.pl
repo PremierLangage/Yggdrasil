@@ -18,6 +18,7 @@
 # ***************************************************************************
 
 @ /utils/sandboxio.py
+@ /Languages/French/Orthographe/trouve_faute_utils.py
 grader =@ /grader/evaluator.py
 
 title=Définissez un titre en héritant de ce template
