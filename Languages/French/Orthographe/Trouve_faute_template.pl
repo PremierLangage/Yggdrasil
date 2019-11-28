@@ -81,7 +81,7 @@ if __name__ == "__main__":
             text_exo += "<p>"+rule._description+"</p>"
             text_exo += '</div></div><br />'
     
-    EXO = TrouveFauteExo(context['nb_good_to_validate'], context['consecutive_to_validate'])
+    context['EXO'] = TrouveFauteExo(context['nb_good_to_validate'], context['consecutive_to_validate'])
 
     # for parsing debug
     # for d in context['rules']:
