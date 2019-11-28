@@ -149,7 +149,7 @@ evaluator==#|python|
 import random
 
 # Grading time if relevant
-if len(text) >= 10:
+if not start:
     text = ""
     start = True
     nb_question = 0
