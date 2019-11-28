@@ -169,7 +169,7 @@ if __name__ == "__main__":
         context['nb_good_rules'] = [0,]*nb_rule   # goods answer by rule
         context['consec_rules'] = [0,]*nb_rule    # consecutive goods by rule
 
-    ouput(-1, " ", context)
+    output(-1, " ", context)
 
 ==
 
