@@ -159,6 +159,7 @@ if not start:
     validate = False                     # is the full EXO finished ?
     nb_good_rule = [0,] * nb_rule        # number goods by rule
     nb_consec_rule = [0,] * nb_rule      # consecutive by rule
+    validated_rules = [False, ]*nb_rule  # are rules validated ?
     need_grade = False                   # register if grade if needed
     need_sentence = True                 # register if a new sentence if needed
     need_feedback = False                # if a feedback need to be displayed
@@ -190,37 +191,70 @@ if need_grade:
         nb_consec_rule[last_rule_index] += 1
         need_grade = True
         need_sentence = True
+        rules[last_rule_index]['valid_index'].append(last_sentence_index)
+
+        # GOOD ANSWER : CHECK HERE RULE VALIDATION
+        if nb_good_to_validate != -1:
+            if nb_good_rule[last_rule_index] >= nb_good_to_validate:
+                validated_rules[last_rule_index] = True
+        else:
+            if nb_consec_rule[last_rule_index] >= consecutive_to_validate:
+                validated_rules[last_rule_index] = True
+
+        # GOOD ANSWER : CHECK HERE IF FULL EXO IS FINISHED 
+        if validated_rules[last_rule_index] = True:
+            validate = True
+            for i in range(nb_rule):
+                if not validated_rules[i]:
+                    validate = False
+
+    # IN CASE OF BAD ANSWER
     else:
         nb_consec_rule[last_rule_index] = 0
         need_grade = False
         need_sentence = False
 
-
-# chose next sentence if relevant else finalize grading
+# IF THE FULL EXO IS NOT FINISHED
 if not validate:
 
-    # rule selection
-    index_rule = random.randint(0, len(rules)-1)
-    while ('valid' in rules[index_rule]) and (rules[index_rule]['valid']):
-        index_rule = random.randint(0, len(rules)-1)
+    # TWO CASES : MAKE A FEEDBACK OR PREPARE A QUESTION 
+    if need_feedback:
+        need_feedback = False
+        need_grade = False
+        grade = (-1, "C' est pas bien il fallait si et ça !")
 
-    # good/bad sentences
-    if random.randint(0,1) == 1:
-        status = 0
+    # NO FEEDBACK TO DISPLAY SO A QUESTION TO SELECT
     else:
-        status = 1
+        need_grade = True
+        # RULE SELECTION
+        last_rule_index = random.randint(0, nb_rule-1)
+        while (validated_rules[last_rule_index]):
+            last_rule_index = random.randint(0, nb_rule-1)
 
-    # sentences selection
-    index_sentence = random.randint(0, len(rules[index_rule]['sentences'])-1)
-    while ('valid_index' in rules[index_rule]) and (index_sentence in rules[index_rule]['valid_index']):
-        index_sentence = random.randint(0, len(rules[index_rule]['sentences'])-1)
+        # good/bad sentences
+        if random.randint(0,1) == 1:
+            last_sentence_status = 0
+        else:
+            last_sentence_status = 1
 
-    selectable.text = rules[index_rule]['sentences'][index_sentence][status]
-    grade = (-1, " ")
+        # UNVALIDATE ALL IF ALL IS VALIDATED
+        if ('valid_index' in rules[last_rule_index]) and len(rules[last_rule_index]['valid_index']) == len(rules[last_rule_index]['sentences']):
+            for i in range(rules[last_rule_index]['sentences']):
+                rules[last_rule_index]['valid_index'] = []
+
+        # TAKE A RADOM UNVALIDATE SENTENCE
+        last_sentence_index = random.randint(0, len(rules[last_rule_index]['sentences'])-1)
+        while ('valid_index' in rules[last_rule_index]) and (index_sentence in rules[last_rule_index]['valid_index']):
+            index_sentence = random.randint(0, len(rules[last_rule_index]['sentences'])-1)
+
+        selectable.text = rules[index_rule]['sentences'][index_sentence][status]
+        grade = (-1, " ")
+
+# ELSE THE EXO IS FINISHED 
 else:
     selectable.text = ''
     final_grade = int(nb_good*100.0 / nb_question)
-    grade = (final_grade, "Félicitation, vous validez avec " + str(final_grade) + " de réussite.")
+    grade = (final_grade, "Félicitation, vous validez avec " + str(final_grade) + "% de réussite.")
 
 ==
 
