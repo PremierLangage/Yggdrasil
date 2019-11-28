@@ -20,5 +20,5 @@ sol_tex=latex(sol)
 ==
 
 text ==
-Soit ${{n_tex}} \geq {{n0}}$. Calculer $% \displaystyle {{S_tex}} %$.
+Soit $! {{n_tex}} \geq {{n0}} !$. Calculer $! \displaystyle {{S_tex}} !$.
 ==
