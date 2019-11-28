@@ -230,8 +230,8 @@ if not validate:
 
         selectable.text = ""
 
-        feedback = '<div style="padding:4px; border:4px solid #BBFFBB;">'
-        feedback += '<div style="padding:10px; background-color:#BBFFBB;">' 
+        feedback = '<div style="padding:4px; border:4px solid #FFBBBB;">'
+        feedback += '<div style="padding:10px; background-color:#FFBBBB;">' 
         feedback += "<h2>"+rules[last_rule_index]['sentences'][last_sentence_index][1]+"</h2><br />"
         feedback += "<p>"+rules[last_rule_index]['sentences'][last_sentence_index][2]+"</p>"
         feedback += '</div></div><br />'
