@@ -13,8 +13,9 @@ a=randint(1,4)
 b0=randint(-4,4,[0])
 b=n+b0
 n0=max([0,a-b0])
-S = 2*Sum(3*v+1, (v, a, b))+(-1)*Sum(v+1, (v, a, b))
-S_tex=latex(S)
+S = Sum(v, (v, a, b))
+E = 2*Sum(3*v+1, (v, a, b))+(-1)*Sum(v+1, (v, a, b))
+E_tex=latex(S)
 n_tex=latex(n)
 sol=(b-a+1)*(a+b)/2
 sol_tex=latex(sol)
@@ -22,6 +23,8 @@ sol_tex=latex(sol)
 
 
 text ==
+On pose $! S = {{S_tex}} !$.
+
 Exprimer $% \displaystyle {{S_tex}} %$ en fonction de $! S !$ et $! n !$.
 ==
 
