@@ -151,7 +151,7 @@ import random
 # Grading time if relevant
 if len(text) >= 10:
     text = ""
-    context['start'] = True
+    start = True
     nb_question = 0
     nb_good = 0
     nb_consecutive = 0
