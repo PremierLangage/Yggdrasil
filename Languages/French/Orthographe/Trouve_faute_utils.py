@@ -155,16 +155,17 @@ class Rule():
         else:
             self._consecutive = 0
 
-    def random_sentence(self):
+    def random_sentence_index(self):
         """
-        Return a not validated sentence belonging to the rule `self`. If all
-        sentences are validated, this will unvalidate all sentences.
+        Return the index of a not validated sentence belonging to the rule 
+        `self`. If all sentences are validated, this will unvalidate all 
+        sentences before.
         """
         self.open_sentences()
         i = random.randint(0, len(self._sentences)-1)
         while ((self._sentences[i]).is_validated()):
             i = random.randint(0, len(self._sentences)-1)
-        return self._sentences[i]
+        return i
 
 
 class TrouveFauteExo():
@@ -204,6 +205,8 @@ class TrouveFauteExo():
 
     def random_rule(self):
         """
+        Return a random not validated rule.
         """
-        i = random.randint(0, len(self._rules))
-        
+        return self._rules[random.choice(self.open_rules())]
+
+    def grade_rule(self, index_rule, )
