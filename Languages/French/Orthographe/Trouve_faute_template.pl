@@ -19,6 +19,7 @@
 
 @ /utils/sandboxio.py
 @ /Languages/French/Orthographe/trouve_faute_utils.py
+grader =@ /grader/evaluator.py
 
 title=Définissez un titre en héritant de ce template
 author=Nicolas Borie
@@ -144,32 +145,68 @@ selectable =: Text
 selectable.text = 
 selectable.mode = word
 
-grader==#|python|
-import sys
-import json
+evaluator==#|python|
 import random
-from sandboxio import *
 
-if __name__ == "__main__":
-    context = get_context()
-    answers = get_answers()
+# Grading time if relevant
+if len(text) >= 10:
+    text = ""
+    context['start'] = True
+    nb_question = 0
+    nb_good = 0
+    nb_consecutive = 0
+    validate = False
 
-    # SOME DECLARATIONS
-    nb_rule = len(context['rules'])
+    
+else:
+    # time to grade
+    nb_question += 1
+    if status == 1:
+        if len(selectable.selections) == 0:
+            q_result=True
+        else:
+            q_result=False
+    else:
+        if [e['index'] for e in selectable.selections] == rules[index_rule]['sentences'][index_sentence][3]:
+            q_result=True
+        else:
+            q_result=False
 
-    # ENTER HERE AT FIRST CALL OF THE GRADER TO INIT ALL
-    if context['start'] == False:
-        context['text'] = ""                      # remove text
-        context['start'] = True                   # exo starts now
-        context['nb_question'] = 0                # total nb question
-        context['nb_good'] = 0                    # total good answers 
-        context['nb_consecutive'] = 0             # nb consecutive good answer 
-        context['validate'] = False               # is this exercice finished
-        context['error_before'] = False           # previous grader call
-        context['nb_good_rules'] = [0,]*nb_rule   # goods answer by rule
-        context['consec_rules'] = [0,]*nb_rule    # consecutive goods by rule
+    selectable.selections = []
+    
+    if q_result:
+        nb_good += 1
+        nb_consecutive += 1
+        if 'valid_index' in rules[index_rule]:
+            rules[index_rule]['valid_index'].append(index_sentence)
+    else:
+        nb_consecutive = 0
 
-    output(-1, " ", context)
+# chose next sentence if relevant else finalize grading
+if not validate:
+
+    # rule selection
+    index_rule = random.randint(0, len(rules)-1)
+    while ('valid' in rules[index_rule]) and (rules[index_rule]['valid']):
+        index_rule = random.randint(0, len(rules)-1)
+
+    # good/bad sentences
+    if random.randint(0,1) == 1:
+        status = 0
+    else:
+        status = 1
+
+    # sentences selection
+    index_sentence = random.randint(0, len(rules[index_rule]['sentences'])-1)
+    while ('valid_index' in rules[index_rule]) and (index_sentence in rules[index_rule]['valid_index']):
+        index_sentence = random.randint(0, len(rules[index_rule]['sentences'])-1)
+
+    selectable.text = rules[index_rule]['sentences'][index_sentence][status]
+    grade = (-1, " ")
+else:
+    selectable.text = ''
+    final_grade = int(nb_good*100.0 / nb_question)
+    grade = (final_grade, "Félicitation, vous validez avec " + str(final_grade) + " de réussite.")
 
 ==
 
