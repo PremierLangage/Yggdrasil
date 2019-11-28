@@ -203,10 +203,19 @@ class TrouveFauteExo():
         """
         return (self.open_rules() == [])
 
-    def random_rule(self):
+    def random_rule_index(self):
         """
         Return a random not validated rule.
         """
-        return self._rules[random.choice(self.open_rules())]
+        return random.choice(self.open_rules())
 
-    def grade_rule(self, index_rule, )
+    def grade_rule(self, index_rule, index_sentence, ok=True):
+        """
+        Grade the rule indexed by `index_rule` after an answer of sentence
+        indexed by `index_sentence` inside the rule.
+        """
+        self._nb_question += 1
+        self._rules[index_rule].grade_sentences(index_sentence, ok=ok)
+        if ok:
+            self._total_good += 1
+
