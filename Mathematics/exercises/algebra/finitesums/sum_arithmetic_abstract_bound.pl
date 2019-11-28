@@ -15,7 +15,7 @@ n0=max([0,a-b0])
 S = Sum(v, (v, a, b))
 S_tex=latex(S)
 n_tex=latex(n)
-sol=S.doit()
+sol=(b-a+1)*(a+b)/2
 sol_tex=latex(sol)
 ==
 
