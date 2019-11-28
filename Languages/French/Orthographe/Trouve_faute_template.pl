@@ -19,7 +19,6 @@
 
 @ /utils/sandboxio.py
 @ /Languages/French/Orthographe/trouve_faute_utils.py
-grader =@ /grader/evaluator.py
 
 title=Définissez un titre en héritant de ce template
 author=Nicolas Borie
@@ -133,6 +132,7 @@ if __name__ == "__main__":
     #         text_exo += str(s)+"<br /><br />"
 
     context['text'] = text_exo
+    context['start'] = False
 
     with open(sys.argv[2], 'w+') as f:
         json.dump(context, f)
@@ -144,31 +144,23 @@ selectable =: Text
 selectable.text = 
 selectable.mode = word
 
-evaluator==#|python|
+grader==#|python|
+import sys
+import json
 import random
+from sandboxio import output
 
-def diff_detect(s1, s2):
-    """
-    Return the list of indices of words different in sentences `s1` and `s2`.
-    This function is closed to assume that s1 and s2 has the same lenght.
-    """
-    indices = []
-    token1 = s1.split(' ')
-    token2 = s2.split(' ')
-    i = 0
-    while i<len(token1) and i<len(token2):
-        if token1[i] != token2[i]:
-            indices.append(i)
-        i += 1
-    return indices
 
 # Grading time if relevant
 if len(text) >= 10:
     text = ""
+    context['start'] = True
     nb_question = 0
     nb_good = 0
     nb_consecutive = 0
     validate = False
+
+
 else:
     # time to grade
     nb_question += 1
@@ -213,11 +205,11 @@ if not validate:
         index_sentence = random.randint(0, len(rules[index_rule]['sentences'])-1)
 
     selectable.text = rules[index_rule]['sentences'][index_sentence][status]
-    grade = (-1, " ")
+    ouput(-1, " ")
 else:
     selectable.text = ''
     final_grade = int(nb_good*100.0 / nb_question)
-    grade = (final_grade, "Félicitation, vous validez avec " + str(final_grade) + " de réussite.")
+    output(final_grade, "Félicitation, vous validez avec " + str(final_grade) + " de réussite.")
 
 ==
 
