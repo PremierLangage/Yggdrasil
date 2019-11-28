@@ -227,7 +227,13 @@ if not validate:
     if need_feedback:
         need_feedback = False
         need_grade = False
-        grade = (-1, "C' est pas bien il fallait si et ça !")
+
+        selectable.text = ""
+        
+        feedback = rules[last_rule_index]['sentences'][last_sentence_index][1]
+        feedback += rules[last_rule_index]['sentences'][last_sentence_index][2]
+
+        grade = (-1, feedback)
 
     # NO FEEDBACK TO DISPLAY SO A QUESTION TO SELECT
     else:
