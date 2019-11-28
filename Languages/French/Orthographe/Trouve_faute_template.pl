@@ -191,7 +191,10 @@ if need_grade:
         nb_consec_rule[last_rule_index] += 1
         need_grade = True
         need_sentence = True
-        rules[last_rule_index]['valid_index'].append(last_sentence_index)
+        if 'valid_index' in rules[last_rule_index]:
+            rules[last_rule_index]['valid_index'].append(last_sentence_index)
+        else:
+            rules[last_rule_index]['valid_index'] = [last_sentence_index]
 
         # GOOD ANSWER : CHECK HERE RULE VALIDATION
         if nb_good_to_validate != -1:
