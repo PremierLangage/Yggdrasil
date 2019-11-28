@@ -166,6 +166,8 @@ if not start:
     last_rule_index = -1                 # index of tested rule
     last_sentence_index = -1             # index of sentence inside the rule
     last_sentence_status = -1            # good_sentence : 1 bad_sentence : 0
+    nb_good_to_validate=int(nb_good_to_validate)
+    consecutive_to_validate=int(consecutive_to_validate)
 
 
 # DO WE NEED TO GRADE ANSWER NOW
@@ -198,10 +200,10 @@ if need_grade:
 
         # GOOD ANSWER : CHECK HERE RULE VALIDATION
         if nb_good_to_validate != -1:
-            if nb_good_rule[last_rule_index] >= int(nb_good_to_validate):
+            if nb_good_rule[last_rule_index] >= nb_good_to_validate:
                 validated_rules[last_rule_index] = True
         else:
-            if nb_consec_rule[last_rule_index] >= int(consecutive_to_validate):
+            if nb_consec_rule[last_rule_index] >= consecutive_to_validate:
                 validated_rules[last_rule_index] = True
 
         # GOOD ANSWER : CHECK HERE IF FULL EXO IS FINISHED 
