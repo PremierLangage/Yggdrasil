@@ -17,7 +17,7 @@
 
 extends=/Languages/French/Orthographe/Trouve_faute_template.pl
 
-title=Ces ou ses : adjectif démonstratif ou possessif ?
+title=Exemple avec deux règles (donc deux fichiers sources)
 
 author=Nicolas Borie
 
