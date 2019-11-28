@@ -45,56 +45,7 @@ form==
 builder==#|python|
 import sys
 import json
-from trouve_faute_utils import parse_file
-
-def diff_detect(s1, s2):
-    """
-    Return the list of indices of words different in sentences `s1` and `s2`.
-    This function is closed to assume that s1 and s2 has the same lenght.
-    """
-    indices = []
-    token1 = s1.split(' ')
-    token2 = s2.split(' ')
-    i = 0
-    while i<len(token1) and i<len(token2):
-        if token1[i] != token2[i]:
-            indices.append(i)
-        i += 1
-    return indices
-
-def parse_file(filename):
-    """
-    Parse the orthographe file rule whose name is `filename`.
-
-    Return a Python dictionnary of the following shape
-    rule_name : "name of the rule"
-    rule_description : "text describing the rule"
-    sentences : [("bad sentence", "good sentence", "explain error")]
-    """
-    d = {}
-    with open(filename) as f:
-        content = f.read()
-    tokens = content.split("\n\n")
-    d["sentences"] = []
-    for tok in tokens:
-        tok_short = tok[tok.find(":")+2:]
-        if "règle" in tok[:tok.find(":")-1]:
-            d["rule_name"] = tok_short
-        elif "description" in tok[:tok.find(":")-1]:
-            d["rule_description"] = tok_short
-        else:
-            if len(tok) >= 10:
-                tok = tok.split("mauvais : ")[1]
-                bad_sentence = (tok.split("bon : ")[0]).replace('\n', '')
-                tok = tok.split("bon : ")[1]
-                good_sentence = (tok.split("explication : ")[0]).replace('\n', '')
-                tok = tok.split("explication : ")[1]
-                explaination = tok.replace('\n', '')
-                d["sentences"].append( (bad_sentence, 
-                                        good_sentence, 
-                                        explaination, 
-                                        diff_detect(bad_sentence, good_sentence)) )
-    return d
+from trouve_faute_utils import parse_file, TrouveFauteExo
 
 if __name__ == "__main__":
     with open(sys.argv[1],'r') as f:
@@ -117,17 +68,21 @@ if __name__ == "__main__":
         else:
             text_exo += "<br /><br /><u>Voici la règle sur laquelle nous allons travailler :</u><br /><br />"
     
+
+
     for name in list_filename:
         context['rules'] = []
-        d = parse_file(name)
-        context['rules'].append(d)
+        rule = parse_file(name)
+        context['rules'].append(rule)
         if (eval(context['recall_rule'])):
             text_exo += '<div style="padding:4px; border:4px solid #BBFFBB;">'
             text_exo += '<div style="padding:10px; background-color:#BBFFBB;">'
-            text_exo += "<h2>"+d["rule_name"]+"</h2><br />"
-            text_exo += "<p>"+d["rule_description"]+"</p>"
+            text_exo += "<h2>"+rule._name+"</h2><br />"
+            text_exo += "<p>"+rule._description+"</p>"
             text_exo += '</div></div><br />'
     
+    EXO = TrouveFauteExo(context['nb_good_to_validate'], context['consecutive_to_validate'])
+
     # for parsing debug
     # for d in context['rules']:
     #     for s in d['sentences']:
