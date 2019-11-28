@@ -155,13 +155,25 @@ if not start:
     start = True
     nb_question = 0
     nb_good = 0
-    nb_consecutive = 0
-    validate = False
-    nb_good_rule
+    validate = False                     # is the full EXO finished ?
+    nb_good_rule = [0,] * nb_rule        # number goods by rule
+    nb_consec_rule = [0,] * nb_rule      # consecutive by rule
+    need_grade = False                   # register if grade if needed
+    need_sentence = True                 # register if a new sentence if needed
 
-    
-else:
-    # time to grade
+
+
+
+
+
+
+
+
+
+
+
+# DO WE NEED TO GRADE ANSWER NOW
+if need_grade:
     nb_question += 1
     if status == 1:
         if len(selectable.selections) == 0:
