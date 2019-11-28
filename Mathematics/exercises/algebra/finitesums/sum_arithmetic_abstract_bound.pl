@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathinput.pl
+extends = sum_.pl
 
 title = Somme d'entiers successifs
 
@@ -14,16 +14,4 @@ S = Sum(v, (v, a, b))
 S_tex=latex(S)
 sol=S.doit()
 sol_tex=latex(sol)
-==
-
-text ==
-Calculer $% \displaystyle {{S_tex}} %$.
-==
-
-evaluator==
-score,_,feedback=ans_expr(input.value,sol)
-==
-
-solution ==
-La solution est $! {{sol_tex}} !$.
 ==
