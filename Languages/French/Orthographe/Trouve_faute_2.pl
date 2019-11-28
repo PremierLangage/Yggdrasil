@@ -22,7 +22,7 @@ title=Ces ou ses : adjectif démonstratif ou possessif ?
 author=Nicolas Borie
 
 file_list==
-["ses_ou_ces.txt", "se_ou_ce.txt"]
+[ "ses_ou_ces.txt", "se_ou_ce.txt" ]
 ==
 
 @ /Languages/French/Orthographe/ses_ou_ces.txt
