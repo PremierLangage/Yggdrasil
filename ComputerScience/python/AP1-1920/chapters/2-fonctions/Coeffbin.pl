@@ -113,3 +113,11 @@ pltest2==
 
 
 
+editor.code==
+def factoriel(n):
+    pass
+
+def coefficients_binome(n):
+    pass
+
+==
