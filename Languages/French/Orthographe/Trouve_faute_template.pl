@@ -218,6 +218,7 @@ if need_grade:
         nb_consec_rule[last_rule_index] = 0
         need_grade = False
         need_sentence = False
+        need_feedback = True
 
 # IF THE FULL EXO IS NOT FINISHED
 if not validate:
