@@ -202,7 +202,7 @@ if need_grade:
                 validated_rules[last_rule_index] = True
 
         # GOOD ANSWER : CHECK HERE IF FULL EXO IS FINISHED 
-        if validated_rules[last_rule_index] = True:
+        if validated_rules[last_rule_index] == True:
             validate = True
             for i in range(nb_rule):
                 if not validated_rules[i]:
