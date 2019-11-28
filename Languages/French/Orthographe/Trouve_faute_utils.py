@@ -25,35 +25,6 @@ def diff_detect(s1, s2):
     return indices
 
 
-def parse_file(filename):
-    """
-    
-    """
-    with open(filename) as f:
-        content = f.read()
-    tokens = content.split("\n\n")
-
-    sentences = []
-
-    for tok in tokens:
-        tok_short = tok[tok.find(":")+2:]
-        if "règle" in tok[:tok.find(":")-1]:
-            rule_name = tok_short.replace('\n', '')
-        elif "description" in tok[:tok.find(":")-1]:
-            rule_description = tok_short.replace('\n', '')
-        else:
-            if len(tok) >= 10:
-                tok = tok.split("mauvais : ")[1]
-                bad_sentence = (tok.split("bon : ")[0]).replace('\n', '')
-                tok = tok.split("bon : ")[1]
-                good_sentence = (tok.split("explication : ")[0]).replace('\n', '')
-                tok = tok.split("explication : ")[1]
-                explaination = tok.replace('\n', '')
-                sentences.append(Sentence(bad_sentence, good_sentence, explaination))
-                
-    return Rule(rule_name, rule_description, sentences)
-
-
 class Sentence():
     """"
     This class models a sentence with these variant and explaination.
@@ -213,3 +184,31 @@ class TrouveFauteExo():
         if ok:
             self._total_good += 1
 
+
+def parse_file(filename):
+    """
+    Parse the file maned `filename` and return an object Rule.
+    """
+    with open(filename) as f:
+        content = f.read()
+    tokens = content.split("\n\n")
+
+    sentences = []
+
+    for tok in tokens:
+        tok_short = tok[tok.find(":")+2:]
+        if "règle" in tok[:tok.find(":")-1]:
+            rule_name = tok_short.replace('\n', '')
+        elif "description" in tok[:tok.find(":")-1]:
+            rule_description = tok_short.replace('\n', '')
+        else:
+            if len(tok) >= 10:
+                tok = tok.split("mauvais : ")[1]
+                bad_sentence = (tok.split("bon : ")[0]).replace('\n', '')
+                tok = tok.split("bon : ")[1]
+                good_sentence = (tok.split("explication : ")[0]).replace('\n', '')
+                tok = tok.split("explication : ")[1]
+                explaination = tok.replace('\n', '')
+                sentences.append(Sentence(bad_sentence, good_sentence, explaination))
+                
+    return Rule(rule_name, rule_description, sentences)
