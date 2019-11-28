@@ -22,7 +22,7 @@ sol_tex=latex(sol)
 
 
 text ==
-Calculer $% \displaystyle {{S_tex}} %$.
+Exprimer $% \displaystyle {{S_tex}} %$ en fonction de $! S !$ et $! n !$.
 ==
 
 evaluator==
