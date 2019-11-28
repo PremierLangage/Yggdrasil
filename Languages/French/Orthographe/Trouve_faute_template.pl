@@ -116,8 +116,8 @@ if __name__ == "__main__":
         else:
             text_exo += "<br /><br /><u>Voici la règle sur laquelle nous allons travailler :</u><br /><br />"
     
+    context['rules'] = []
     for name in list_filename:
-        context['rules'] = []
         d = parse_file(name)
         context['rules'].append(d)
         if (eval(context['recall_rule'])):
@@ -272,6 +272,7 @@ else:
     grade = (final_grade, "Félicitation, vous validez avec " + str(final_grade) + "% de réussite.")
 
 ==
+
 
 
 
