@@ -156,12 +156,12 @@ if __name__ == "__main__":
 
 # Grading time if relevant
 if context['start'] == False:
-    context['text'] = ""
-    context['start'] = True
-    context['nb_question'] = 0
-    context['nb_good'] = 0
-    context['nb_consecutive'] = 0
-    context['validate'] = False
+    context['text'] = ""             # remove text
+    context['start'] = True          # exo starts now
+    context['nb_question'] = 0       # total nb question
+    context['nb_good'] = 0           # total good answers 
+    context['nb_consecutive'] = 0    # nb consecutive good answer 
+    context['validate'] = False      # is this exercice finished
 
 else:
     # time to grade
