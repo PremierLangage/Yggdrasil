@@ -245,9 +245,9 @@ if not validate:
         # TAKE A RADOM UNVALIDATE SENTENCE
         last_sentence_index = random.randint(0, len(rules[last_rule_index]['sentences'])-1)
         while ('valid_index' in rules[last_rule_index]) and (index_sentence in rules[last_rule_index]['valid_index']):
-            index_sentence = random.randint(0, len(rules[last_rule_index]['sentences'])-1)
+            last_sentence_index = random.randint(0, len(rules[last_rule_index]['sentences'])-1)
 
-        selectable.text = rules[index_rule]['sentences'][index_sentence][status]
+        selectable.text = rules[last_rule_index]['sentences'][last_sentence_index][last_sentence_status]
         grade = (-1, " ")
 
 # ELSE THE EXO IS FINISHED 
