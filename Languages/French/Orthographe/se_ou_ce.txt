@@ -1,0 +1,38 @@
+règle : Pronom démonstratif **ce** ou pronom réfléchi **se**.
+
+description : Le pronom réfléchi **se** réfère au sujet. Il est 
+utilisé par les verbes pronominaux lorsque l'object de l'action est aussi
+le sujet de la phrase. Par exemple, dans la phrase : "Les enfants se
+balancent dans le jardin", les enfants sont à la fois le sujet se la phrase
+car moteur de l'action mais aussi objets car ils se balancent eux-mêmes. 
+Dans les autres cas, on utilise **ce** (adjectif ou pronom démonstratif 
+suivant qu'il complète ou remplace un nom). On peut alors remplacer **ce** 
+par celui-ci, celui-là ou cette chose.
+
+mauvais : Les enfants ce balancent dans le jardin.
+bon : Les enfants se balancent dans le jardin.
+explication : Il s'agit ici d la forme pronomiale du verbe balancer. Les
+enfants se balancent eux-mêmes dans le jardin.
+
+mauvais : Je n'approuve pas se que tu dis.
+bon : Je n'approuve pas ce que tu dis.
+explication : On pourrait remplacer ce par cette chose : je n'approuve pas 
+cette chose que tu dis. Ici, ce ne reprend pas le sujet ; les deux verbes de
+la phrasene sont pas non plus sous forme pronominale.
+
+mauvais : Une fois sortis de l'eau, ils ce font secher au soleil.
+bon : Une fois sortis de l'eau, ils se font secher au soleil.
+explication : Il s'agit ici d'un verbe sous forme pronominale : se faire.
+Le pronoms personnels ils désignent à la fois le sujet et l'objet. C'est
+ils qui se font secher et il font secher quoi ? eux-mêmes.
+
+mauvais : Je préfère se parfum là.
+bon : Je préfère ce parfum là.
+explication : Ici, ce est un adjectif démonstratif. Il ne reprend pas le
+sujet mais qualifie l'objet parfum. 
+
+mauvais : Pierre et Martin ce baignent dans la rivière.
+bon : Pierre et Martin se baignent dans la rivière.
+explication : Pierre et Martin sont acteur de la baignade mais ils baignent
+chacun leurs propres corps et sont donc objet de la baignade. Le verbe baigner
+est utiliser sous sa forme pronominale dans cette phrase.
