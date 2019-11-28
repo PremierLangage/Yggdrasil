@@ -44,7 +44,7 @@ form==
 builder==#|python|
 import sys
 import json
-from Trouve_faute_utils import parse_file
+from trouve_faute_utils import parse_file
 
 def diff_detect(s1, s2):
     """
