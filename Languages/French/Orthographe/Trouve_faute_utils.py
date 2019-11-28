@@ -24,6 +24,7 @@ def diff_detect(s1, s2):
         i += 1
     return indices
 
+
 def parse_file(filename):
     """
     Parse the orthographe file rule whose name is `filename`.
@@ -115,6 +116,8 @@ class Rule():
         self._description = description
         self._sentences = sentences
         self._valid = False
+        self._nb_good = 0
+        self._consecutive = 0
 
     def name(self):
         """
@@ -140,3 +143,67 @@ class Rule():
             for sentence in self._sentences:
                 sentence.unvalidate()
 
+    def grade_sentences(self, index, ok=True):
+        """
+        Grade the sentence indexed by `index` associated to the rule `self` if `ok`,
+        otherwise, it will be counted as an error.
+        """
+        if ok:
+            self._consecutive += 1
+            self._nb_good += 1
+            (self._sentences[index]).validate()
+        else:
+            self._consecutive = 0
+
+    def random_sentence(self):
+        """
+        Return a not validated sentence belonging to the rule `self`. If all
+        sentences are validated, this will unvalidate all sentences.
+        """
+        self.open_sentences()
+        i = random.randint(0, len(self._sentences)-1)
+        while ((self._sentences[i]).is_validated()):
+            i = random.randint(0, len(self._sentences)-1)
+        return self._sentences[i]
+
+
+class TrouveFauteExo():
+    """
+    A class modeling the full game : a set of rule containing each a set
+    of sentences.
+    """
+    def __init__(self, rules, nb_good_to_valid=-1, nb_consecutive=3):
+        """
+        Initialize self
+        """
+        self._rules = rules
+        self._nb_good_to_valid = nb_good_to_valid
+        self._nb_consecutive = nb_consecutive
+        self._nb_question = 0
+        self._total_good = 0
+
+    def open_rules(self):
+        """
+        Returns the list of indices indexing not validated rules.
+        """
+        ans = []
+        for i in range(len(self._rules)):
+            if self._nb_good_to_valid != -1:
+                if (self._rules[i])._nb_good < self._nb_good_to_valid:
+                    ans.append(i)
+            else:
+                if (self._rules[i])._consecutive < self._nb_consecutive:
+                    ans.append(i)
+        return ans
+
+    def is_finish(self):
+        """
+        Return `True` if all rules have been validated, return `False` otherwise.
+        """
+        return (self.open_rules() == [])
+
+    def random_rule(self):
+        """
+        """
+        i = random.randint(0, len(self._rules))
+        
