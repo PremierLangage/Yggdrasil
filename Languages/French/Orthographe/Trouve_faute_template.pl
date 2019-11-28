@@ -155,14 +155,13 @@ if __name__ == "__main__":
     answers = get_answers()
 
 # Grading time if relevant
-if len(text) >= 10:
-    text = ""
+if context['start'] == False:
+    context['text'] = ""
     context['start'] = True
-    nb_question = 0
-    nb_good = 0
-    nb_consecutive = 0
-    validate = False
-
+    context['nb_question'] = 0
+    context['nb_good'] = 0
+    context['nb_consecutive'] = 0
+    context['validate'] = False
 
 else:
     # time to grade
