@@ -24,9 +24,7 @@ sol_tex=latex(sol)
 
 
 text ==
-On pose $! S = {{S_tex}} !$.
-
-Exprimer $% \displaystyle {{E_tex}} %$ en fonction de $! S !$ et $! n !$.
+On pose $! \displaystyle S = {{S_tex}} !$. Exprimer $% \displaystyle {{E_tex}} %$ en fonction de $! S !$ et $! n !$.
 ==
 
 evaluator==
