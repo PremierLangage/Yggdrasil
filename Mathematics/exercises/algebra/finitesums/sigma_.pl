@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathexpr.pl
+extends = /Mathematics/template/mathinput.pl
 
 title = Symbole Sigma
 
@@ -29,4 +29,5 @@ score,_,feedback=ans_expr(input1.value,sol)
 solution ==
 La solution est $! {{sol_tex}} !$.
 ==
+
 
