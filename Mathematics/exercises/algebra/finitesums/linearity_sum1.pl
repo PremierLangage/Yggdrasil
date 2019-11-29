@@ -9,7 +9,7 @@ input.config = keyboards_JSON
 
 v=randitem([Symbol('i'),Symbol('j'),Symbol('k')])
 n=randitem([Symbol('n'),Symbol('m'),Symbol('p')])
-varS=Symbol('n')
+varS=Symbol('SS')
 a=randint(1,4)
 b0=randint(-4,4,[0])
 b=n+b0
