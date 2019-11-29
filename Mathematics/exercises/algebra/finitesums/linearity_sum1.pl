@@ -9,6 +9,7 @@ input.config = keyboards_JSON
 
 v=randitem([Symbol('i'),Symbol('j'),Symbol('k')])
 n=randitem([Symbol('n'),Symbol('m'),Symbol('p')])
+S=Symbol('S')
 a=randint(1,4)
 b0=randint(-4,4,[0])
 b=n+b0
@@ -21,7 +22,7 @@ E = c1*Sum(p1*v+q1, (v, a, b))+c2*Sum(p2*v+q2, (v, a, b))
 S_tex=latex(S0)
 E_tex=latex(E)
 n_tex=latex(n)
-sol=(c1*p1-c2*p2)*Symbol('S')+(c1*q1-c2*q2)*(n+n0-a+1)
+sol=(c1*p1-c2*p2)*S+(c1*q1-c2*q2)*(n+n0-a+1)
 sol_tex=latex(sol)
 ==
 
