@@ -13,6 +13,7 @@ if param['boundtype']==1:
     b0=randint(-4,4,[0])
     b=n+b0
 elif param['boundtype']==2:
+    bn=randint(2,4)*n+randint(-1,1)
 
 n0=0
 S = Sum(v**2, (v, a, b))
