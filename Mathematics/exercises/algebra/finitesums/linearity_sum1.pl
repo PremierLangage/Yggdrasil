@@ -31,7 +31,7 @@ sol_tex=latex(sol)
 
 
 text ==
-On pose $! \displaystyle S = {{A_tex}} !$. 
+On pose $! \displaystyle A = {{A_tex}} !$. 
 
 Exprimer $% \displaystyle {{E_tex}} %$ en fonction de $! A !$ et $! {{n_tex}} !$.
 ==
