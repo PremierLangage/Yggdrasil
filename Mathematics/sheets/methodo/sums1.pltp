@@ -1,7 +1,12 @@
 title = Calcul de sommes 1
 
 introduction ==
+@ /Mathematics/exercises/algebra/finitesums/sum_arithmetic_abstract_bound1.pl
+
+
+@ /Mathematics/exercises/algebra/finitesums/sum_arithmetic_abstract_bound2.pl
+
+@ /Mathematics/exercises/algebra/finitesums/linearity_sum1.pl
 ==
 
-@ /Mathematics/exercises/algebra/finitesums/sum_arithmetic_abstract_bound1.pl
 
