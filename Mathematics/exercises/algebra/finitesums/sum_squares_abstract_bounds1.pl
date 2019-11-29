@@ -19,7 +19,7 @@ n0=0
 S = Sum(v**2, (v, a, b))
 S_tex=latex(S)
 n_tex=latex(n)
-sol=(b-a+1)*(a+b)/2
+sol=b*(b+1)*(2*b+1)/6
 sol_tex=latex(sol)
 ==
 
