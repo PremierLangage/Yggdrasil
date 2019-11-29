@@ -21,6 +21,7 @@ while True:
     c1,c2=list_randitem_norep(2,[randitem([-1,1]),randint(-3,3,[-1,1,0])])
     if (c1*p1+c2*p2)*(c1*q1+c2*q2)!=0:
         break
+
 E = c1*Sum(p1*v+q1, (v, a, b))+c2*Sum(p2*v+q2, (v, a, b))
 A_tex=latex(A)
 E_tex=latex(E)
