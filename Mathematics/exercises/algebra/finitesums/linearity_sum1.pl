@@ -14,7 +14,6 @@ a=randint(1,4)
 b0=randint(-4,4,[0])
 b=n+b0
 n0=max([0,a-b0])
-A = Sum(v, (v, a, b))
 while True:
     p1,p2=list_randint_norep(2,-5,5,[0])
     q1,q2=list_randint_norep(2,-5,5,[0])
@@ -23,7 +22,7 @@ while True:
         break
 
 E = c1*Sum(p1*v+q1, (v, a, b))+c2*Sum(p2*v+q2, (v, a, b))
-A_tex=latex(A)
+A_tex=latex(Sum(v, (v, a, b)))
 E_tex=latex(E)
 n_tex=latex(n)
 sol=(c1*p1+c2*p2)*A+(c1*q1+c2*q2)*(n+n0-a+1)
