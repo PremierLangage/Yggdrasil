@@ -1,8 +1,7 @@
 extends = /Mathematics/template/mathinput.pl
 
-
 text ==
-Calculer $% \displaystyle {{S_tex}} %$.
+Soit un entier $! {{n_tex}} \geq {{n0}} !$. Calculer $! \displaystyle {{S_tex}} !$.
 ==
 
 evaluator==
