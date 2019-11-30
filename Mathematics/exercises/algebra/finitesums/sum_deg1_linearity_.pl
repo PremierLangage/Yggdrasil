@@ -2,7 +2,7 @@ extends = sum_deg1_.pl
 
 title = Linéarité
 
-param.type % "minearity"
+param.type % "linearity"
 
 
 text ==
