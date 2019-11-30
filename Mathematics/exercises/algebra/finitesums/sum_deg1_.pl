@@ -35,7 +35,7 @@ n_tex=latex(n)
 if param['type']=="linearity":
     sol=(c1*p1+c2*p2)*A+(c1*q1+c2*q2)*(b-a+1)
 elif param['type']=="compute":
-    sol=(c1*p1+c2*p2)*(b-a+1)*(a+b)/2+(c1*q1+c2*q2)*(b-a+1)
+    sol=simplify((c1*p1+c2*p2)*(b-a+1)*(a+b)/2)+simplify((c1*q1+c2*q2)*(b-a+1))
 sol_tex=latex(sol)
 ==
 
