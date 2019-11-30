@@ -19,7 +19,7 @@ n0=int(max([0,max(solve(a-b,n))]))
 S = Sum(v**2, (v, a, b))
 S_tex=latex(S)
 n_tex=latex(n)
-sol=b*(b+1)*(2*b+1)/6
+sol=simplify(b*(b+1)*(2*b+1)/6)
 sol_tex=latex(sol)
 ==
 
