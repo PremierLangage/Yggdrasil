@@ -4,6 +4,6 @@ title = Linéarité
 
 
 text ==
-Calculer $% \displaystyle {{E_tex}} %$.
+Soit un entier $! {{n_tex}} \geq {{n0}} !$. Calculer $% \displaystyle {{E_tex}} %$.
 ==
 
