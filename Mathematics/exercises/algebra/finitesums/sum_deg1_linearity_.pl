@@ -2,6 +2,8 @@ extends = sum_deg1_.pl
 
 title = Linéarité
 
+param.type % "minearity"
+
 
 text ==
 On pose $! \displaystyle A = {{A_tex}} !$. 
