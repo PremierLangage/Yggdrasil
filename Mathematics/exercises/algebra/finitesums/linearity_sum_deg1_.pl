@@ -24,6 +24,7 @@ while True:
 if param['coeff']==2:
     lst=[p1,p2,q1,q2]
     lst[randint(0,3)]=randitem([-n,n])
+    p1,p2,q1,q2=lst
 
 E = c1*Sum(p1*v+q1, (v, a, b))+c2*Sum(p2*v+q2, (v, a, b))
 A_tex=latex(Sum(v, (v, a, b)))
