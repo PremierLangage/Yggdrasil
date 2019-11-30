@@ -1,6 +1,6 @@
 extends = sum_deg1_.pl
 
-title = Linéarité
+title = Somme polynomiale
 
 
 text ==
