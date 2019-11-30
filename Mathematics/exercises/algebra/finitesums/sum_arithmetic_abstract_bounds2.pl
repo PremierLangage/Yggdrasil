@@ -8,7 +8,7 @@ input.config = keyboards_JSON
 
 v=randitem([Symbol('i'),Symbol('j'),Symbol('k')])
 n=randitem([Symbol('n'),Symbol('m'),Symbol('p')])
-an,bn=randitem([(n,2*n),(2*n,3*n),(n,3*n)])
+an,bn=randitem([(n,2*n),(2*n,3*n),(n,3*n),(n,4*n)])
 a0=randint(1,4)
 a=a0+an
 b0=randint(-4,4,[0])
