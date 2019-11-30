@@ -3,8 +3,8 @@ title = Calcul de sommes 1
 introduction ==
 ==
 
-@ /Mathematics/exercises/algebra/finitesums/sum_arithmetic_abstract_bounds1.pl
-@ /Mathematics/exercises/algebra/finitesums/sum_arithmetic_abstract_bounds2.pl
+@ /Mathematics/exercises/algebra/finitesums/sum_arithmetic_abstract_bounds_1.pl
+@ /Mathematics/exercises/algebra/finitesums/sum_arithmetic_abstract_bounds_2.pl
 @ /Mathematics/exercises/algebra/finitesums/sum_squares_abstract_bounds_1.pl
 @ /Mathematics/exercises/algebra/finitesums/sum_squares_abstract_bounds_2.pl
 @ /Mathematics/exercises/algebra/finitesums/linearity_sum1.pl
