@@ -49,7 +49,7 @@ int main(int argc, char* argv[]){
 
   ans = allocate_float_array(size);
   if (ans == NULL){
-    printf("Not enought memory.\n");
+    printf("Not Enough Memory.\n");
     return 0;
   }
   if (size >= 2){
