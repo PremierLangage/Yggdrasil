@@ -33,6 +33,7 @@ Voici un exemple d'entrée standard valide que votre fonction sera amennée
 ==
 
 editor.code==
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -54,6 +55,7 @@ solution==
 
 #define _SVID_SOURCE
 
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -83,13 +85,9 @@ codeafter==
 #include <time.h>
 
 int main(int argc, char* argv[]){
-  People p;
+  int n = atoi(argv[1])
 
-  initialize_people(&p, argv[1], argv[2]);
-  printf("Init %s %s\n", p.first, p.last);
 
-  free(p.first);
-  free(p.last);
   return 0;
 }
 
