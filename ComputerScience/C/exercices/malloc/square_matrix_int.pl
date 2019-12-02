@@ -56,17 +56,19 @@ int** square_matrix(int size){
 
 codeafter==
 
-#include <stdio.h>
-#include <time.h>
 
 int main(int argc, char* argv[]){
-  int i;
+  int i, j;
   int n = atoi(argv[1]);
   char** ans;
 
-  ans = new_tab_string();
+  ans = square_matrix(n);
+
   for (i=0 ; i<n ; i++){
-    printf("%s\n", ans[i]);
+    for (j=0 ; j<n ; j++){
+    printf("%2d ", ans[i][j]);
+    }
+    putchar('\n');
     free(ans[i]);
   }
   free(ans);
