@@ -60,7 +60,7 @@ codeafter==
 int main(int argc, char* argv[]){
   int i, j;
   int n = atoi(argv[1]);
-  char** ans;
+  int** ans;
 
   ans = square_matrix(n);
 
@@ -79,14 +79,11 @@ int main(int argc, char* argv[]){
 ==
 
 tests==
-
-[["Exécution simple", "1", "1\nmot"],
- ["Chaînes vides", "0", "0\n"],
- ["Quatre chaîne", "4", "4\nun\ndeux\ntrois\nquatre"],
- ["Fibonacci", "7", "7\na\nb\ncc\nddd\neeeee\nffffffff\nggggggggggggg"],
- ["Exemple", "6", "6\npremière\nseconde\ntroisième\nencore\npresque\nfini"],
- ["Aléatoire", "10", "\n".join(random.choices(['red', 'black', 'green'], [2,2,2], k=10))],
- ["Aléatoire", "10", "\n".join(random.choices(['red', 'black', 'green'], [2,2,2], k=10))]]
+[["Sinple", "1", ""],
+ ["Moyen", "5", ""],
+ ["Aléatoire", str(random.randint(5, 10)), ""],
+ ["Aléatoire", str(random.randint(10, 15)), ""],
+ ["Aléatoire", str(random.randint(15, 20)), ""]]
 
 ==
 
