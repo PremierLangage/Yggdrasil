@@ -82,8 +82,8 @@ tests==
 [["Sinple", "1", ""],
  ["Moyen", "5", ""],
  ["Aléatoire", str(random.randint(5, 10)), ""],
- ["Aléatoire", str(random.randint(10, 15)), ""],
- ["Aléatoire", str(random.randint(15, 20)), ""]]
+ ["Aléatoire", str(random.randint(11, 15)), ""],
+ ["Aléatoire", str(random.randint(16, 20)), ""]]
 
 ==
 
