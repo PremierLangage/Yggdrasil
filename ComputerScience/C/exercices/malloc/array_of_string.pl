@@ -85,6 +85,7 @@ codeafter==
 #include <time.h>
 
 int main(int argc, char* argv[]){
+  int i;
   int n = atoi(argv[1]);
   char** ans;
 
