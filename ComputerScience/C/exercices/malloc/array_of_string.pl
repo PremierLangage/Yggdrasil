@@ -102,17 +102,10 @@ int main(int argc, char* argv[]){
 
 tests==
 
-def rand_stdin(n):
-    L = ["Salut", "bonjour", "Pouet", "bla", "anti-constitutionnellement", "FOO", "Baracouda", "Plop", "malloc_c_est_nul"]
-    return ["Test aléatoire", str(n), str(n)+"\n".join([random.choice(L) for i in range(n)]) ]
-
 [["Exécution simple", "1", "1\nmot"],
  ["Chaînes vides", "0", "0"],
  ["Quatre chaîne", "4", "un\ndeux\trois\nquatre"],
- ["fibonacci", "7", "7\na\nb\ncc\nddd\neeeee\nffffffff\nggggggggggggg"],
- rand_stdin(5),
- rand_stdin(random.randint(5, 10)),
- rand_stdin(10, 20)]
+ ["fibonacci", "7", "7\na\nb\ncc\nddd\neeeee\nffffffff\nggggggggggggg"]]
 
 ==
 
