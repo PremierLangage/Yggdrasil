@@ -70,7 +70,7 @@ tests==
  ["Tableau moyen", "46", ""],
  ["Aléatoire", str(random.randint(1, 1000000)), ""],
  ["Aléatoire", str(random.randint(1, 1000000000)), ""],
- ["Aléatoire", str(random.randint(1, 2000000000)), ""]]
+ ["Aléatoire", str(random.randint(1000000000, 2000000000)), ""]]
 
 ==
 
