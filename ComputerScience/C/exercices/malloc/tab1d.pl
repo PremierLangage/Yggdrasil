@@ -30,10 +30,15 @@ float* allocate_float_array(int size){
 
 ==
 
+codebefore==
+
+#include <stdlib.h>
+
+==
+
 codeafter==
 
 #include <stdio.h>
-#include <stdlib.h>
 #include <time.h>
 
 int main(int argc, char* argv[]){
