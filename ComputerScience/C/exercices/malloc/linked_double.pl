@@ -18,7 +18,7 @@ allouée et initialisée.
 
 editor.code==
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
 
 typedef struct cell{
   double value;
