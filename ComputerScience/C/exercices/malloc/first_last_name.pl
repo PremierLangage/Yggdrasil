@@ -71,7 +71,7 @@ tests==
 
 [["Exécution simple", "Pierre Paul Jacques", ""],
  ["Chaînes vides", "'' ''", ""],
- ["Long prénom", "'Son prénom est si long que ca, j'ai peine à y croire!' Ouais", ""]]
+ ["Long prénom", "'Son prenom est si long que ca, j\'ai peine à y croire!' Ouais", ""]]
 
 ==
 
