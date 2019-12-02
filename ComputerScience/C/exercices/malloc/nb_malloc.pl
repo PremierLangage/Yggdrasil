@@ -38,7 +38,7 @@ match.nodes.append({"id": "s3", "content": "Une personne nom(char\*), prénom(ch
 match.nodes.append({"id": "t3", "content": "deux mallocs", "target": True})
 expected.append({ "source": "s3", "target": "t3" })
 
-match.nodes.append({"id": "s4", "content": "Un noeud d'arbre contenant des personnes (char* pour nom et prénom)", "source": True})
+match.nodes.append({"id": "s4", "content": "Un noeud d'arbre de personnes (char\* nom et char\* prénom)", "source": True})
 match.nodes.append({"id": "t4", "content": "trois mallocs", "target": True})
 expected.append({ "source": "s4", "target": "t4" })
 
