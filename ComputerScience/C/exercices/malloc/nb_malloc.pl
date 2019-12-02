@@ -9,7 +9,7 @@ Stratégie d'allocation
 author=Nicolas Borie
 
 text==
-Tentez d'associer, pour chaque type de donnéee C, comment ces dernières doivent être allouée.
+Tentez d'associer, pour chaque type de donnéee C, comment ces dernières doivent être allouées.
 ==
 
 # STEP 1
