@@ -14,6 +14,9 @@ ainsi que deux chaînes de caractères. La structure
 ==
 
 editor.code==
+#include <stdlib.h>
+#include <string.h>
+
 typedef struct{
   char* first;
   char* last;
@@ -26,6 +29,9 @@ int initialize_People(People* p, char* fisrt_name, char* last_name){
 ==
 
 solution==
+
+#include <stdlib.h>
+#include <string.h>
 
 typedef struct{
   char* first;
@@ -42,11 +48,6 @@ int initialize_People(People* p, char* fisrt_name, char* last_name){
 
 ==
 
-codebefore==
-
-#include <stdlib.h>
-
-==
 
 codeafter==
 
@@ -71,6 +72,6 @@ tests==
 [["Exécution simple", "Pierre Paul Jacques", ""],
  ["Chaînes vides", "'' ''", ""],
  ["Long prénom", "'Son prénom est si long que ça, j'ai peine à y croire!' Ouais", ""]]
- 
+
 ==
 
