@@ -1,16 +1,15 @@
 # Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
-# Allocation d'un tableau à une dimension
+# Recopier deux chaînes de caractère
 
 author=Nicolas Borie
-title=Allocation d'un tableau à une dimension
-tag=array|malloc
+title=Deux chaînes à allouer et recopier dans une structure
+tag=string|malloc|structure
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-Écrire une fonction C **allocate_float_array** qui prend en argument une 
-taille **size** (sous la forme d'un entier) et qui un tableau pouvant 
-contenir **size** flottants simple précision.
+Écrire une fonction qui prend en argument l'adresse d'une structure **People**
+ainsi que deux chaînes de caractères. La structure 
 
 ==
 
@@ -20,18 +19,26 @@ typedef struct{
   char* last;
 }People;
 
-... allocate_float_array(...){
-    /* Votre code ici */
+int initialize_People(People* p, char* fisrt_name, char* last_name){
+    /* ... tant de choses ... */
 }
 
 ==
 
 solution==
 
-float* allocate_float_array(int size){
-  float* ans = (float *)malloc( size * sizeof(float) );
-  return ans;
+typedef struct{
+  char* first;
+  char* last;
+}People;
+
+int initialize_People(People* p, char* fisrt_name, char* last_name){
+    p->first = strdup(fisrt_name);
+    p->last = strdup(last_name);
+
+    return (p->first != NULL) && (p->last != NULL);
 }
+
 
 ==
 
