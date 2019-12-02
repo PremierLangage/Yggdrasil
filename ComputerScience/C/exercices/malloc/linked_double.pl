@@ -17,7 +17,7 @@ allouée et initialisée.
 ==
 
 editor.code==
-#include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
 
 typedef struct cell{
@@ -32,8 +32,9 @@ typedef struct cell{
 
 solution==
 
+#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+
 
 typedef struct cell{
   double value;
@@ -73,11 +74,7 @@ int main(int argc, char* argv[]){
 
 tests==
 
-[["Exécution simple", "Pierre Paul Jacques", ""],
- ["Chaînes vides", "'' ''", ""],
- ["Long prénom", "'Son prénom est si long que ça, incroyable !' Ouais", ""],
- ["Aléatoire", " ".join(["".join([chr(ord('a')+random.randint(0, 25)) for i in range(random.randint(3, 20))]) for k in range(2)]), ""],
- ["Aléatoire", " ".join(["".join([chr(ord('a')+random.randint(0, 25)) for i in range(random.randint(3, 20))]) for k in range(2)]), ""]]
+[["Exécution simple", "", ""]]
 
 ==
 
