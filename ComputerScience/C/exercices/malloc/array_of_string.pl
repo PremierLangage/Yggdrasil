@@ -106,7 +106,8 @@ tests==
 [["Exécution simple", "1", "1\nmot"],
  ["Chaînes vides", "0", "0\n"],
  ["Quatre chaîne", "4", "4\nun\ndeux\ntrois\nquatre"],
- ["fibonacci", "7", "7\na\nb\ncc\nddd\neeeee\nffffffff\nggggggggggggg"]]
+ ["Fibonacci", "7", "7\na\nb\ncc\nddd\neeeee\nffffffff\nggggggggggggg"],
+ ["Exemple", "6", "6\npremière\nseconde\ntroisième\nencore\npresque\nfini"]]
 
 ==
 
