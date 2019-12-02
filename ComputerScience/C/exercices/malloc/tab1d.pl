@@ -52,9 +52,11 @@ int main(int argc, char* argv[]){
     printf("Not enought memory.\n");
     return 0;
   }
-  ans[0] = rand();
-  ans[size-1] = rand();
-  printf("Allocation et utilisation : %f (devrait valoir zéro...)\n", ans[size-1] - ans[size-1]);
+  if (size >= 2){
+    ans[0] = rand();
+    ans[size-1] = rand();
+    printf("Allocation et utilisation : %f (devrait valoir zéro...)\n", ans[size-1] - ans[size-1]);
+  }
   free(ans);
   return 0;
 }
