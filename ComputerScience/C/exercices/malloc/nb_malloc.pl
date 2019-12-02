@@ -3,15 +3,13 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 title==
-Quel prototype pour quelle fonctionnalité ?
+Stratégie d'allocation
 ==
 
 author=Nicolas Borie
 
 text==
-Tentez d'associer, pour chaque prototype abstrait de fonction C à gauche, une des fonctionnalité 
-décrite sur la droite.
-
+Tentez d'associer, pour chaque type de donnéee C, comment ces dernières doivent être allouée.
 ==
 
 # STEP 1
@@ -28,11 +26,13 @@ import random
 match.nodes = []
 expected = []
 
-# le carré d'un nombre entier
 match.nodes.append({"id": "s1", "content": "Une chaine (char[64]) de moins de 63 caractère", "source": True})
 match.nodes.append({"id": "t1", "content": "aucun malloc", "target": True})
 expected.append({ "source": "s1", "target": "t1" })
 
+match.nodes.append({"id": "s2", "content": "Une cellule de liste chaînée de floatant", "source": True})
+match.nodes.append({"id": "t2", "content": "un malloc", "target": True})
+expected.append({ "source": "s2", "target": "t2" })
 
 random.shuffle(match.nodes)
 ==
