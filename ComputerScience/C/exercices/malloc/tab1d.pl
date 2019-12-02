@@ -1,4 +1,4 @@
-# Copyright 2017 Nicolas Borie <nicolas.borie@u-pem.fr>
+# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
 # Allocation d'un tableau à une dimension
 
@@ -8,7 +8,9 @@ tag=array|malloc
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-Écrire une fonction C **allocate_float_array** qui prend en argument une taille (sous la forme d'un entier)
+Écrire une fonction C **allocate_float_array** qui prend en argument une 
+taille **size** (sous la forme d'un entier) et qui un tableau pouvant 
+contenir **size** flottants simple précision.
 
 ==
 
@@ -20,16 +22,10 @@ editor.code==
 ==
 
 solution==
-float average_array(int* tab, int size){
-  int i;
-  float sum = 0;
 
-  if (size == 0)
-    return 0;
-  
-  for (i=0 ; i<size ; i++)
-    sum += tab[i];
-  return sum / ((float)size);
+float* allocate_float_array(int size){
+  float* ans = (float *)malloc( size * sizeof(float) );
+  return ans;
 }
 
 ==
@@ -38,18 +34,23 @@ codeafter==
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main(int argc, char* argv[]){
-  int nb_term = argc-1;
-  int* tab = (int*)malloc(nb_term*sizeof(int));
-  int i;
+  int size = atoi(argv[1]);
+  float* ans;
 
-  for (i=0 ; i<nb_term ; i++){
-    tab[i] = atoi(argv[i+1]);
+  srand(time(NULL));
+
+  ans = allocate_float_array(size);
+  if (ans == NULL){
+    printf("Not enought memory.\n");
+    return 0;
   }
-
-  printf("Moyenne : %f\n", average_array(tab, nb_term));
-  free(tab);
+  ans[0] = rand();
+  ans[size-1] = rand();
+  printf("Allocation et utilisation : %f (devrait valoir zéro...)\n", ans[size-1] - ans[size-1]);
+  free(ans);
   return 0;
 }
 
@@ -58,10 +59,11 @@ int main(int argc, char* argv[]){
 tests==
 
 [["Exécution simple", "1", ""],
- ["Quelques éléments", "12 -3 52 0 41", ""],
- ["Tableau vide", "", ""],
- ["Aléatoire", " ".join([str(random.randint(-100,100)) for i in range(random.randint(5,10))]), ""],
- ["Aléatoire", " ".join([str(random.randint(-100,100)) for i in range(random.randint(5,10))]), ""]]
+ ["Tableau vide", "0", ""],
+ ["Tableau moyen", "46", ""],
+ ["Aléatoire", str(random.randint(1, 2000000000)), ""],
+ ["Aléatoire", str(random.randint(1, 2000000000)), ""],
+ ["Aléatoire", str(random.randint(1, 2000000000)), ""]]
 
 ==
 
