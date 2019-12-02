@@ -54,22 +54,13 @@ codeafter==
 #include <time.h>
 
 int main(int argc, char* argv[]){
-  int size = atoi(argv[1]);
-  float* ans;
+  People p;
 
-  srand(time(NULL));
+  initialize_People(&p, argv[1], argv[2]);
+  printf("Init %s %s\n", p.first, p.last);
 
-  ans = allocate_float_array(size);
-  if (ans == NULL){
-    printf("Not Enough Memory.\n");
-    return 0;
-  }
-  if (size >= 2){
-    ans[0] = rand();
-    ans[size-1] = rand();
-    printf("Allocation et utilisation : %f (devrait valoir zéro...)\n", ans[size-1] - ans[size-1]);
-  }
-  free(ans);
+  free(p.first);
+  free(p.last);
   return 0;
 }
 
@@ -77,12 +68,9 @@ int main(int argc, char* argv[]){
 
 tests==
 
-[["Exécution simple", "1", ""],
- ["Tableau vide", "0", ""],
- ["Tableau moyen", "46", ""],
- ["Aléatoire", str(random.randint(1, 1000000)), ""],
- ["Aléatoire", str(random.randint(1, 1000000000)), ""],
- ["Aléatoire", str(random.randint(1000000000, 2000000000)), ""]]
-
+[["Exécution simple", "Pierre Paul Jacques", ""],
+ ["Chaînes vides", "'' ''", ""],
+ ["Long prénom", "'Son prénom est si long que ça, j'ai peine à y croire!' Ouais", ""]]
+ 
 ==
 
