@@ -28,7 +28,6 @@ typedef struct{
   char* last;
 }People;
 
-
 int initialize_people(People* p, char* fisrt_name, char* last_name){
     /* ... tant de choses ... */
 }
