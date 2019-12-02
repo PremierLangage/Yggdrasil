@@ -29,7 +29,7 @@ typedef struct{
   char* last;
 }People;
 
-int initialize_people(People* p, char* fisrt_name, char* last_name){
+int initialize_people(People* p, char* first_name, char* last_name){
     /* ... tant de choses ... */
 }
 
@@ -47,8 +47,8 @@ typedef struct{
   char* last;
 }People;
 
-int initialize_people(People* p, char* fisrt_name, char* last_name){
-    p->first = strdup(fisrt_name);
+int initialize_people(People* p, char* first_name, char* last_name){
+    p->first = strdup(first_name);
     p->last = strdup(last_name);
 
     return (p->first != NULL) && (p->last != NULL);
