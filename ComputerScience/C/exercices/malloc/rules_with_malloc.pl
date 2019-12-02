@@ -28,11 +28,11 @@ random.shuffle(group.items)
 
 author = Nicolas Borie
 
-title = Les variables en C
+title =Règles de bonne utilisation de malloc.
 
 text==
 Sélectionnez les règles d'utilisation de **malloc** que vous demande de 
-respecter vos enseignants à Marne-la-Vallée
+respecter vos enseignants à Marne-la-Vallée.
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
