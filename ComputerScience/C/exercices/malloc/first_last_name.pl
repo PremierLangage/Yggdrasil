@@ -8,8 +8,14 @@ tag=string|malloc|structure
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-Écrire une fonction qui prend en argument l'adresse d'une structure **People**
-ainsi que deux chaînes de caractères. La structure 
+Écrire une fonction **initialize_people** qui prend en argument l'adresse 
+d'une structure **People** ainsi que deux chaînes de caractères. Votre
+fonction devra allouer dynamiquement la place mémoire nécessaire pour 
+contenir une copie des deux chaines en argument. Votre fonction devra
+finalement recopier intégralement les deux chaînes dans les deux champs
+fraichement alloués. 
+
+Inutile d'allouer la structure **People**
 
 ==
 
@@ -22,7 +28,7 @@ typedef struct{
   char* last;
 }People;
 
-int initialize_People(People* p, char* fisrt_name, char* last_name){
+int initialize_people(People* p, char* fisrt_name, char* last_name){
     /* ... tant de choses ... */
 }
 
@@ -40,7 +46,7 @@ typedef struct{
   char* last;
 }People;
 
-int initialize_People(People* p, char* fisrt_name, char* last_name){
+int initialize_people(People* p, char* fisrt_name, char* last_name){
     p->first = strdup(fisrt_name);
     p->last = strdup(last_name);
 
@@ -59,7 +65,7 @@ codeafter==
 int main(int argc, char* argv[]){
   People p;
 
-  initialize_People(&p, argv[1], argv[2]);
+  initialize_people(&p, argv[1], argv[2]);
   printf("Init %s %s\n", p.first, p.last);
 
   free(p.first);
