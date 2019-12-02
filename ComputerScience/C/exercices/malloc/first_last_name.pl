@@ -15,7 +15,8 @@ contenir une copie des deux chaines en argument. Votre fonction devra
 finalement recopier intégralement les deux chaînes dans les deux champs
 fraichement alloués. 
 
-Inutile d'allouer la structure **People**
+Inutile d'allouer la structure **People**, le pointeur fourni en argument
+pointe déjà vers une structure **People** valide, vous sevez travaillez sur
 
 ==
 
