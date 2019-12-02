@@ -85,8 +85,15 @@ codeafter==
 #include <time.h>
 
 int main(int argc, char* argv[]){
-  int n = atoi(argv[1])
+  int n = atoi(argv[1]);
+  char** ans;
 
+  ans = new_tab_string();
+  for (i=0 ; i<n ; i++){
+    printf("%s\n", ans[i]);
+    free(ans[i]);
+  }
+  free(ans);
 
   return 0;
 }
