@@ -107,7 +107,9 @@ tests==
  ["Chaînes vides", "0", "0\n"],
  ["Quatre chaîne", "4", "4\nun\ndeux\ntrois\nquatre"],
  ["Fibonacci", "7", "7\na\nb\ncc\nddd\neeeee\nffffffff\nggggggggggggg"],
- ["Exemple", "6", "6\npremière\nseconde\ntroisième\nencore\npresque\nfini"]]
+ ["Exemple", "6", "6\npremière\nseconde\ntroisième\nencore\npresque\nfini"],
+ ["Aléatoire", "10", "\n".join(random.choices(['red', 'black', 'green'], [2,2,2], k=10))],
+ ["Aléatoire", "10", "\n".join(random.choices(['red', 'black', 'green'], [2,2,2], k=10))]]
 
 ==
 
