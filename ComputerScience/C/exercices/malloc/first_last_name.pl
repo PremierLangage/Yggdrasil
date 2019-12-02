@@ -30,6 +30,8 @@ int initialize_People(People* p, char* fisrt_name, char* last_name){
 
 solution==
 
+#define _SVID_SOURCE
+
 #include <stdlib.h>
 #include <string.h>
 
