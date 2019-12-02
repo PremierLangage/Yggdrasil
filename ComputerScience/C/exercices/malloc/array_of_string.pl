@@ -104,8 +104,8 @@ int main(int argc, char* argv[]){
 tests==
 
 [["Exécution simple", "1", "1\nmot"],
- ["Chaînes vides", "0", "0"],
- ["Quatre chaîne", "4", "un\ndeux\trois\nquatre"],
+ ["Chaînes vides", "0", "0\n"],
+ ["Quatre chaîne", "4", "4\nun\ndeux\ntrois\nquatre"],
  ["fibonacci", "7", "7\na\nb\ncc\nddd\neeeee\nffffffff\nggggggggggggg"]]
 
 ==
