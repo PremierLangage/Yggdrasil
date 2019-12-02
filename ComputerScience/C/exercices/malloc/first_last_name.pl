@@ -15,6 +15,11 @@ contenir **size** flottants simple précision.
 ==
 
 editor.code==
+typedef struct{
+  char* first;
+  char* last;
+}People;
+
 ... allocate_float_array(...){
     /* Votre code ici */
 }
