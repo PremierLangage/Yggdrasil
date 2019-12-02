@@ -67,7 +67,6 @@ int main(int argc, char* argv[]){
   printf("next : %p\n", (void*)ans->next); 
   printf("Libération\n");
   free(ans);
-
 }
 
 ==
