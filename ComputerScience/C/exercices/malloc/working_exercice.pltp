@@ -1,0 +1,11 @@
+title=Exercices sur l'allocation dynamique
+
+introduction==
+
+==
+
+
+@ /ComputerScience/C/exercices/malloc/tab1d.pl
+@ /ComputerScience/C/exercices/malloc/nb_malloc.pl
+@ /ComputerScience/C/exercices/malloc/rules_with_malloc.pl
+
