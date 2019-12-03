@@ -75,6 +75,7 @@ int main(int argc, char* argv[]){
   printf("value : %s\n", ans->word);
   printf("next : %p\n", (void*)ans->next); 
   printf("Libération\n");
+  free(ans->word);
   free(ans);
   
   return 0;
