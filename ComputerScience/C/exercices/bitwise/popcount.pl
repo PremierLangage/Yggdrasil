@@ -46,16 +46,13 @@ codeafter==
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
-  int nb_term = argc-1;
-  int* tab = (int*)malloc(nb_term*sizeof(int));
+  unsigned char s[100];
   int i;
 
-  for (i=0 ; i<nb_term ; i++){
-    tab[i] = atoi(argv[i+1]);
+  for(i=1 ; i<argc ; i++){
+    *(s+i-1) = atoi(argv[i]);
   }
-
-  printf("Moyenne : %f\n", average_array(tab, nb_term));
-  free(tab);
+  printf("popcount : %lu\n", popcount((void*)s, argc-1));
   return 0;
 }
 
@@ -64,10 +61,13 @@ int main(int argc, char* argv[]){
 tests==
 
 [["Exécution simple", "1", ""],
- ["Quelques éléments", "12 -3 52 0 41", ""],
- ["Tableau vide", "", ""],
- ["Aléatoire", " ".join([str(random.randint(-100,100)) for i in range(random.randint(5,10))]), ""],
- ["Aléatoire", " ".join([str(random.randint(-100,100)) for i in range(random.randint(5,10))]), ""]]
+ ["Pas de bit", "0 0 0 0", ""],
+ ["64 bits", "255 255 255 255 255 255 255 255", ""],
+ ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(random.randint(2, 10))]), ""],
+ ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(random.randint(2, 10))]), ""],
+ ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(random.randint(2, 10))]), ""],
+ ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(random.randint(2, 10))]), ""],
+ ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(random.randint(2, 10))]), ""]]
 
 ==
 
