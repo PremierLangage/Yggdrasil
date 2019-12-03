@@ -40,10 +40,14 @@ size_t popcount(void* addr, size_t size){
 
 ==
 
-codeafter==
+codebefore==
 
 #include <stdio.h>
 #include <stdlib.h>
+
+==
+
+codeafter==
 
 int main(int argc, char* argv[]){
   unsigned char s[100];
