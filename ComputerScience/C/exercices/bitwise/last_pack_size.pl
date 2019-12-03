@@ -83,7 +83,6 @@ void print_bin(char n){
 }
 
 int main(int argc, char* argv[]){
-  unsigned int i;
   unsigned char c;
 
     c = atoi(argv[1]);
