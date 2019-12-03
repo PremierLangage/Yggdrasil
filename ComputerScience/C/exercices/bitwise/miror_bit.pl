@@ -85,6 +85,7 @@ tests==
  ["Aléatoire", str(random.randint(0,255)), ""],
  ["Aléatoire", str(random.randint(0,255)), ""],
  ["Aléatoire", str(random.randint(0,255)), ""],
+ ["Aléatoire", str(random.randint(0,255)), ""],
  ["Aléatoire", str(random.randint(0,255)), ""]]
 
 ==
