@@ -34,7 +34,7 @@ match.nodes.append({"id": "s2", "content": "Une cellule de liste chaînée de fl
 match.nodes.append({"id": "t2", "content": "un malloc", "target": True})
 expected.append({ "source": "s2", "target": "t2" })
 
-match.nodes.append({"id": "s3", "content": "Une personne nom(char\*), prénom(char\*) et age(int)", "source": True})
+match.nodes.append({"id": "s3", "content": "trois champs nom(char\*), prénom(char\*) et age(int)", "source": True})
 match.nodes.append({"id": "t3", "content": "deux mallocs", "target": True})
 expected.append({ "source": "s3", "target": "t3" })
 
