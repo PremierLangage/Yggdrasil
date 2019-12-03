@@ -72,7 +72,7 @@ int main(int argc, char* argv[]){
   printf("Allocation\n");
   ans = Allocate_cell(argv[1]);
   printf("Utilisation\n");
-  printf("value : %f\n", ans->value);
+  printf("value : %s\n", ans->word);
   printf("next : %p\n", (void*)ans->next); 
   printf("Libération\n");
   free(ans);
@@ -84,7 +84,10 @@ int main(int argc, char* argv[]){
 
 tests==
 
-[["Exécution simple", "", ""]]
+[["Exécution simple", "mot", ""],
+ ["Chaîne vide", "''", ""],
+ ["Exécution simple", "'mot en plusieurs morceaux très long'", ""],
+ ["Aléatoire", "".join([str(ord('a')+random.randint(0,25)) for i in range(20)]), ""]]
 
 ==
 
