@@ -86,11 +86,10 @@ int main(int argc, char* argv[]){
   unsigned int i;
   unsigned char c;
 
-  for (i=0 ; i<20 ; i++){
     c = atoi(argv[1]);
     print_bin(c);
     printf(" = %3u : %d\n", (unsigned char)c, size_last_pack(c));
-  }
+  
   return 0;
 }
 
