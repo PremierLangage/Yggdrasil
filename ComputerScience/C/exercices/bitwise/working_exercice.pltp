@@ -1,0 +1,11 @@
+title=Exercices sur les opérateurs bit à bit.
+
+introduction==
+Voici quelques exercices demandant de manipuler les données bit à bit.
+==
+
+@ /ComputerScience/C/exercices/bitwise/popcount.pl
+
+
+
+
