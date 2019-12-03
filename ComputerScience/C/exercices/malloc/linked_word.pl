@@ -21,6 +21,7 @@ tous ces champs correctement renseignés.
 editor.code==
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 typedef struct cell{
   char* word;
@@ -34,10 +35,9 @@ typedef struct cell{
 
 solution==
 
-#define _SVID_SOURCE
-
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 typedef struct cell{
   char* word;
@@ -70,7 +70,7 @@ int main(int argc, char* argv[]){
   Cell* ans=NULL;
   
   printf("Allocation\n");
-  ans = Allocate_cell(3.141592);
+  ans = Allocate_cell(argv[1]);
   printf("Utilisation\n");
   printf("value : %f\n", ans->value);
   printf("next : %p\n", (void*)ans->next); 
