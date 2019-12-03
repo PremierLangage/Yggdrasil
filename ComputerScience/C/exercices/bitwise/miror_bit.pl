@@ -39,7 +39,7 @@ unsigned char bit_miror(unsigned char a){
 
   b |= (a & 16) >> 1;
   b |= (a & 32) >> 3;
-  b |= (a & 63) >> 5;
+  b |= (a & 64) >> 5;
   b |= (a & 128) >> 7;
   return b;
 }
