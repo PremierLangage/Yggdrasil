@@ -1,4 +1,4 @@
-# Copyright 2017 Nicolas Borie <nicolas.borie@u-pem.fr>
+# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
 # Compter les bits à un 
 
