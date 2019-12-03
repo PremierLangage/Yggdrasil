@@ -10,8 +10,8 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 text==
 Écrire une fonction d'allocation pour une cellule de liste chainée
 contenant un mot (une chaîne de caractères). Votre fonction prendra
-en argument une chaîne (venant d'une mémoire non pérenne). Votre
-fonction devra allouer une cellule et de la place mémoire pour 
+en argument une chaîne de caractères (venant d'une mémoire non pérenne). 
+Votre fonction devra allouer une cellule et de la place mémoire pour 
 recopier la chaîne de caractères sur une zone pérenne. Finalememt,
 vous retournerez l'adresse de la cellule fraichement allouée avec
 tous ces champs correctement renseignés.
@@ -34,23 +34,29 @@ typedef struct cell{
 
 solution==
 
+#define _SVID_SOURCE
+
 #include <stdio.h>
 #include <stdlib.h>
 
-
 typedef struct cell{
-  double value;
+  char* word;
   struct cell* next;
 }Cell, *List;
 
-Cell* Allocate_cell(double val){
+Cell* Allocate_cell(char* s){
   Cell* ans;
 
-  ans = (Cell*)malloc( sizeof(Cell) );
+  ans = malloc( sizeof(Cell) );
   if (ans == NULL)
-    return ans;
+    return NULL;
+  ans->word = malloc( (strlen(s) + 1) * sizeof(char) );
+  if (ans->word == NULL){
+    free(ans);
+    return NULL;
+  }
+  strcpy(ans->word, s);
   ans->next = NULL;
-  ans->value = val;
   return ans;
 }
 
@@ -58,6 +64,7 @@ Cell* Allocate_cell(double val){
 
 
 codeafter==
+
 
 int main(int argc, char* argv[]){
   Cell* ans=NULL;
