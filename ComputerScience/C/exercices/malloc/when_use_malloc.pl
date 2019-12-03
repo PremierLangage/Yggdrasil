@@ -20,8 +20,8 @@ group.items.append({"id": "4", "content": "Utiliser des structures qui pourraien
 
 group.items.append({"id": "21", "content": "Déclarer un tableau d'entiers dont on ne connait pas la taille d'au plus 20 cases." })
 group.items.append({"id": "22", "content": "Une chaîne de caractères de longueur inconnue contenant moins de 100 lettres." })
-group.items.append({"id": "23", "content": "" })
-group.items.append({"id": "24", "content": "" })
+group.items.append({"id": "23", "content": "Des structures minuscules (sizeof de 1 ou 2 octets)." })
+group.items.append({"id": "24", "content": "Le plus souvent possible." })
 
 random.shuffle(group.items)
 ==
