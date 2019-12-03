@@ -14,9 +14,9 @@ import random
 group.items = []
 
 group.items.append({"id": "1", "content": "Déclarer un tableau de 4 millions d'entiers." })
-group.items.append({"id": "2", "content": "" })
-group.items.append({"id": "3", "content": "" })
-group.items.append({"id": "4", "content": "" })
+group.items.append({"id": "2", "content": "Déclarer une variable plus grosse que la pile d'éxécution." })
+group.items.append({"id": "3", "content": "Déclarer des tableaux de taille inconnue utilisés durant tout le programme." })
+group.items.append({"id": "4", "content": "Utiliser des structures qui pourrait croitre et utiliser toute la RAM." })
 
 group.items.append({"id": "21", "content": "Déclarer un tableau d'entiers dont on ne connait pas la taille d'au plus 20 cases." })
 group.items.append({"id": "22", "content": "" })
