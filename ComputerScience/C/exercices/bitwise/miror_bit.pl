@@ -66,10 +66,10 @@ void print_bin(unsigned char s){
 int main(int argc, char* argv[]){
   unsigned char s = atoi(argv[1]);
 
-  printf(" | ");
   print_bin(s);
-  putchar('\n');
+  printf(" | ");
   print_bin(bit_miror(s));
+  putchar('\n');
 
   return 0;
 }
