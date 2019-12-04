@@ -27,13 +27,13 @@ solution==
 
 int max_consecutive(void* seq, size_t nb_oct){
   int i, j;
-  unsigned char* s = (char*)seq;
+  unsigned char* s = (unsigned char*)seq;
   int bit;
   int bit_prec = -1;
   int current_pack = 0;
   int max_pack = 0;
 
-  for (i=0 ; i<n_oct ; i++){
+  for (i=0 ; i<nb_oct ; i++){
     for(j=7 ; j>=0 ; j--){
       bit = ((*(s+i) & (1 << j)) != 0);
       if (bit == bit_prec){
