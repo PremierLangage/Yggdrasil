@@ -35,7 +35,7 @@ int max_consecutive(void* seq, size_t nb_oct){
 
   for (i=0 ; i<n_oct ; i++){
     for(j=7 ; j>=0 ; j--){
-      bit = ((*(s+i) & (1 << j)) != 0)
+      bit = ((*(s+i) & (1 << j)) != 0);
       if (bit == bit_prec){
         current_pack += 1;
       }
@@ -49,6 +49,7 @@ int max_consecutive(void* seq, size_t nb_oct){
   }
   if (current_pack > max_pack)
     max_pack = current_pack;
+
   return max_pack;
 }
 
