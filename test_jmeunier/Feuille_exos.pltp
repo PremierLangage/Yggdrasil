@@ -1,12 +1,12 @@
-title =Ceci est ma première feuille d'exercices
-Author = Jean-Marc Meunier
-Introduction==
+title = Ceci est ma première feuille d'exercices
+author = Jean-Marc Meunier
+introduction==
 Dein Syria per speciosam interpatet *diffusa planitiem*. hanc nobilitat Antiochia, mundo cognita civitas, cui non certaverit alia advecticiis ita adfluere copiis et internis, <br> et Laodicia et Apamia itidemque Seleucia iam inde a primis auspiciis florentissimae.
 ==
 
-Teacher = mes notes personneles sur la page d'exercices
+teacher = mes notes personneles sur la page d'exercices
 
-@ /demo/random_add.pl
+@ Yggdrasil/test_jmeunier/exo1.pl
 
 
 
