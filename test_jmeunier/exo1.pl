@@ -9,8 +9,8 @@ import random as rd
 a=rd.randint(10,20)
 b=re.randint(10,20)
 
-text == 
-Calculer {{a}}+{{b}}
+text ==
+Calculer{{a}}+{{b}}
 ==
 
 input=:Input
