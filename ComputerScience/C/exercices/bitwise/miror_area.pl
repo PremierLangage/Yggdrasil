@@ -67,7 +67,7 @@ void miror_bin(void* data, size_t size){
     s[size-1-i] = bit_miror(tmp);
   }
   if (size%2)
-    s[size/2 + 1] = bit_miror(s[size/2 + 1]);
+    s[size/2] = bit_miror(s[size/2 + 1]);
 }
 
 ==
@@ -121,8 +121,8 @@ tests==
 [["Exécution simple", "1", ""],
  ["Pas de bit", "0 0 0 0", ""],
  ["64 bits", "255 255 255 255 255 255 255 255", ""],
- ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(random.randint(2, 20))]), ""],
- ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(random.randint(2, 20))]), ""],
+ ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(4)]), ""],
+ ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(5)]), ""],
  ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(random.randint(2, 20))]), ""],
  ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(random.randint(2, 20))]), ""],
  ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(random.randint(2, 20))]), ""]]
