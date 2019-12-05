@@ -7,7 +7,7 @@ title = somme d'entiers
 before==
 import random as rd
 a=rd.randint(10,20)
-b=re.randint(10,20)
+b=rd.randint(10,20)
 ==
 
 text==
