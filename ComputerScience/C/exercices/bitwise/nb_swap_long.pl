@@ -39,7 +39,7 @@ int nb_swap_bit(unsigned long int u){
   unsigned long int un = 1;
   int bit_prec = u & un;
 
-  for(i=1 ; i<8*sizeof(unsigned long int)) ; i++){
+  for(i=1 ; i<8*sizeof(unsigned long int) ; i++){
     bit = (u >> i) & un;
     if (bit != bit_prec){
       ans++;
