@@ -22,9 +22,9 @@ form==
 evaluator ==
 try:
     if int(input.value)==a+b:
-        grade=(100,"")
+        grade=(100,"Bravo, bonne réponse")
     else:
-        grade=(0,"")
+        grade=(0,"Mauvaise réponse, essayez encore")
 except:
     grade=(-1,"Votre réponse n'est pas un nombre entier.")
 ==
