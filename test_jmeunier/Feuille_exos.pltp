@@ -1,4 +1,9 @@
 title = Ceci est ma première feuille d'exercices
+@ Yggdrasil/test_jmeunier/exo1.pl
+@ Yggdrasil/Mathematics/exercises/plots/graph.pl
+@ Yggdrasil/Mathematics/exercises/arithmetic/mental_calculation.pl
+
+
 author = Jean-Marc Meunier
 introduction==
 Dein Syria per speciosam interpatet *diffusa planitiem*. hanc nobilitat Antiochia, mundo cognita civitas, cui non certaverit alia advecticiis ita adfluere copiis et internis, <br> et Laodicia et Apamia itidemque Seleucia iam inde a primis auspiciis florentissimae.
@@ -6,9 +11,6 @@ Dein Syria per speciosam interpatet *diffusa planitiem*. hanc nobilitat Antiochi
 
 teacher = mes notes personneles sur la page d'exercices
 
-@ Yggdrasil/test_jmeunier/exo1.pl
-@ Yggdrasil/Mathematics/exercises/plots/graph.pl
-@ Yggdrasil/Mathematics/exercises/arithmetic/mental_calculation.pl
 
 
 
