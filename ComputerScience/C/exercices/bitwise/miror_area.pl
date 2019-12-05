@@ -95,6 +95,7 @@ void print_area(void* data, size_t size){
   for(i=0 ; i<size ; i++){
     print_bin(s[i]);
   }
+  putchar('\n');
 }
 
 
