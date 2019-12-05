@@ -26,7 +26,7 @@ des entiers longs positifs.
 ==
 
 editor.code==
-... popcount(... addr, ... size){
+int nb_swap_bit(...){
     /* Votre code ici */
 }
 
@@ -34,16 +34,13 @@ editor.code==
 
 solution==
 
-size_t popcount(void* addr, size_t size){
-  int i, j;
-  char* s = (char*)addr;
-  size_t ans = 0;
+int nb_swap_bit(unsigned long int u){
+  int i, ans=0;
+  unsigned long int un = 1;
 
-  for(i=0 ; i<size ; i++){
-    for(j=0 ; j<8 ; j++){
-      if (*(s+i) & (1<<j))
-        ans++;
-    }
+  for(i=0 ; i<8*sizeof(unsigned long int))-1 ; i++){
+    if ((u & (un << i)) ^ (u & (un << (i+1))))
+      ans++;
   }
   return ans;
 }
@@ -66,7 +63,7 @@ int main(int argc, char* argv[]){
   for(i=1 ; i<argc ; i++){
     *(s+i-1) = atoi(argv[i]);
   }
-  printf("popcount : %lu\n", popcount((void*)s, argc-1));
+  printf("nb_swap_bit : %lu\n", nb_swap_bit( *((unsigned long int*)s) ) ) ;
   return 0;
 }
 
