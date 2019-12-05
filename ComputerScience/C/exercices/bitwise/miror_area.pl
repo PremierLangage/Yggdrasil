@@ -21,7 +21,7 @@ et que la représentation binaire de data est:
 
     10011010 | 01011011 | 11101010 | 11011111
 
-Alors, après l'appel **miror_bin(data, 3)** (on rappelle que $3 \neq 4$), 
+Alors, après l'appel **miror_bin(data, 3)** (on rappelle que $%3 \neq 4%$), 
 **data** pointera vers la donnée binaire:
 
 
