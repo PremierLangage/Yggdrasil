@@ -86,14 +86,15 @@ int main(int argc, char* argv[]){
 
 tests==
 
-[["Exécution simple", "1", ""],
+[["Exécution simple", "13 13 13 13", ""],
  ["Pas de bit", "0 0 0 0", ""],
- ["64 bits", "255 255 255 255 255 255 255 255", ""],
+ ["64 bits", "255 255 255 255", ""],
  ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(4)]), ""],
- ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(5)]), ""],
- ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(random.randint(2, 20))]), ""],
- ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(random.randint(2, 20))]), ""],
- ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(random.randint(2, 20))]), ""]]
+ ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(4)]), ""],
+ ["Aléatoire", " ".join([str(random.randint(0,12)) for i in range(4)]), ""],
+ ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(4)]), ""],
+ ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(4)]), ""],
+ ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(4)]), ""],]
 
 ==
 
