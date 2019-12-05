@@ -29,7 +29,7 @@ int has_factor_1101(unsigned long int u){
   int i;
 
   for(i=0 ; i<8*sizeof(unsigned long int) - 3 ; i++){
-    if (((u >> i) & 15) == 13)
+    if (((u >> i) & (unsigned long int)15) == (unsigned long int)13)
       return 1;
   }
   return 0;
