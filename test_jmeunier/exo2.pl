@@ -17,6 +17,8 @@ la valeur qu'on obtiendrait si toutes les valeurs de l'échantillon étaient ég
 Le centre de gravité de la distribution d'une variable numérique sur un échantillon
 Le rapport entre la somme des observations et le nombre des observations
 Le total des observations sur le nomre d'observations
+Le rapport entre la somme des observations et le nombre des observations
+Le total des observations sur le nomre d'observations
 ==
 
 delimiter = $
@@ -26,7 +28,9 @@ La modalité partageant en deux parties égales la distribution des observations
 Le carré des écarts à la note maximale | Je ne sais pas non plus ce que cela représente. 
 La note qu'on obtiendrait si on a bien travaillé | Non, ça c'est la moyenne scolaire. 
 Le score réalisé par une majorité de sujets | Non, ça c'est le mode.
+Le score réalisé par une majorité de sujets | Non, ça c'est le mode.
 ==
+
 
 feedback=show
 
