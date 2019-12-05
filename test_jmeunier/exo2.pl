@@ -1,6 +1,8 @@
 extends=/ComputerScience/python/template/qcm_template.pl
 
-title = quelle est la définiton de la moyenne ?
+title = Quelle est la définiton de la moyenne ?
+
+text= Cochez les affirmations correctes
 
 # ceci est un commentaire dans l'exercice
 # nombre de propositions
