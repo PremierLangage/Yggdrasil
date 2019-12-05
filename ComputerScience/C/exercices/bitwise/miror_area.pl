@@ -67,7 +67,7 @@ void miror_bin(void* data, size_t size){
     s[size-1-i] = bit_miror(tmp);
   }
   if (size%2)
-    s[size/2 + 1] = = bit_miror(s[size/2 + 1]);
+    s[size/2 + 1] = bit_miror(s[size/2 + 1]);
 }
 
 ==
