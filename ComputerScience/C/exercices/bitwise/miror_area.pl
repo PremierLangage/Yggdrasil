@@ -18,10 +18,12 @@ la même zone mémoire mais les bits apparaissent par une lecture de droite
 Par exemple si data pointe vers un tableau de 4 **unsigned char**
 et que la représentation binaire de data est:
 
+
     10011010 | 01011011 | 11101010 | 11011111
 
 Alors, après l'appel **miror_bin(data, 3)** (on rappelle que $3 \neq 4$), 
 **data** pointera vers la donnée binaire:
+
 
     01010111 | 11011010 | 01011001 | 11011111
 
