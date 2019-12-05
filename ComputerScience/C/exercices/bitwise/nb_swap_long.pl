@@ -1,18 +1,28 @@
 # Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
-# Compter les bits à un 
+# Compter les alternances de bits
 
 author=Nicolas Borie
-title=Popcount : compter les bit à 1
+title=Alternances de bits dans un entier long
 tag=bitwise|function
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-Écrire une fonction C **popcount** qui prend en argument l'adresse d'une zone
-mémoire ainsi que sa taille en octet. La fonction devra retourner le nombre de 
-bits valant 1 dans la zone mémoire en argument. Veuillez à ce que votre fonction 
-reste générique et portable. Compte tenu de ces faibles informations, faites 
-des choix cohérents.
+Écrire une fonction **nb_swap_bit** qui retourne le nombre d'alternances 
+de bit dans un entier long positif. Une alternance est un motif **01** 
+ou **10** dans la donnée binaire. Autrement dit, c'est aussi le nombre de
+fois qu'un bit n'est pas égal à son prédécesseur. 
+
+Voici des exemples pour des caractères positifs :
+
+    255 : 1111 1111 --> 0
+      0 : 0000 0000 --> 0
+     85 : 0101 0101 --> 7
+     51 : 0011 0011 --> 3
+    214 : 1101 0110 --> 5
+
+Attention, ici votre fonction doit effectuer ce comptage d'alternance sur 
+des entiers longs positifs.
 ==
 
 editor.code==
