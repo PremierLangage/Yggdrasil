@@ -107,12 +107,12 @@ int main(int argc, char* argv[]){
     *(s+i-1) = atoi(argv[i]);
   }
 
-  printf("START : ");
+  printf("START    : ");
   print_area((void*)s, argc-1);
   miror_bin((void*)s, argc-1);
-  printf("MIROR : ");
+  printf("MIROR    : ");
   print_area((void*)s, argc-1);
-  printf("START : ");
+  printf("MIROR x2 : ");
   miror_bin((void*)s, argc-1);
   print_area((void*)s, argc-1);
 
