@@ -33,7 +33,7 @@ poids faible du dernier octet est le plus à droite.
 ==
 
 editor.code==
-... popcount(... addr, ... size){
+void miror_bin(void* data, size_t size){
     /* Votre code ici */
 }
 
@@ -41,18 +41,33 @@ editor.code==
 
 solution==
 
-size_t popcount(void* addr, size_t size){
-  int i, j;
-  char* s = (char*)addr;
-  size_t ans = 0;
+unsigned char bit_miror(unsigned char a){
+  unsigned char b = 0;
 
-  for(i=0 ; i<size ; i++){
-    for(j=0 ; j<8 ; j++){
-      if (*(s+i) & (1<<j))
-        ans++;
-    }
+  b |= (a & 1) << 7;
+  b |= (a & 2) << 5;
+  b |= (a & 4) << 3;
+  b |= (a & 8) << 1;
+
+  b |= (a & 16) >> 1;
+  b |= (a & 32) >> 3;
+  b |= (a & 64) >> 5;
+  b |= (a & 128) >> 7;
+  return b;
+}
+
+void miror_bin(void* data, size_t size){
+  int i;
+  unsigned char tmp;
+  unsigned char* s = (unsigned char*)data;
+
+  for(i=0 ; i<size/2 ; i++){
+    tmp = s[i];
+    s[i] = bit_miror(s[size-1-i]);
+    s[size-1-i] = bit_miror(tmp);
   }
-  return ans;
+  if (size%2)
+    s[size/2 + 1] = = bit_miror(s[size/2 + 1]);
 }
 
 ==
@@ -73,7 +88,7 @@ int main(int argc, char* argv[]){
   for(i=1 ; i<argc ; i++){
     *(s+i-1) = atoi(argv[i]);
   }
-  printf("popcount : %lu\n", popcount((void*)s, argc-1));
+  miror_bin((void*)s, argc-1);
   return 0;
 }
 
