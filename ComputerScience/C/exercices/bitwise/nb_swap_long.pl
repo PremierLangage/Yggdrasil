@@ -71,7 +71,7 @@ int main(int argc, char* argv[]){
 
 tests==
 
-[["Exécution simple", "0 0 0 0 0 0 0 1", ""],
+[["Exécution simple", "0 0 0 0 0 0 0 255", ""],
  ["Que des zéros", "0 0 0 0 0 0 0 0", ""],
  ["Que des uns", "255 255 255 255 255 255 255 255", ""],
  ["Alternance maximale", "85 85 85 85 85 85 85 85", ""],
