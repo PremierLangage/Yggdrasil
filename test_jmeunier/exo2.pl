@@ -6,7 +6,7 @@ text= Cochez les affirmations correctes
 
 # ceci est un commentaire dans l'exercice
 # nombre de propositions
-nb=4
+nb=3
 # nombre de réponses vraies
 # si nbtrues==0: un nombre aléatoire entre 1 et nb
 # si pas défini: un nombre aléatoire de réponses à cocher
