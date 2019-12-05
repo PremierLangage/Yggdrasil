@@ -35,12 +35,16 @@ int nb_swap_bit(...){
 solution==
 
 int nb_swap_bit(unsigned long int u){
-  int i, ans=0;
+  int i, ans=0, bit;
   unsigned long int un = 1;
+  int bit_prec = u & un;
 
-  for(i=0 ; i<8*sizeof(unsigned long int))-1 ; i++){
-    if ((u & (un << i)) ^ (u & (un << (i+1))))
+  for(i=1 ; i<8*sizeof(unsigned long int)) ; i++){
+    bit = (u >> i) & un;
+    if (bit != bit_prec){
       ans++;
+      bit_prec = 1 - bit;
+    } 
   }
   return ans;
 }
