@@ -63,7 +63,7 @@ int main(int argc, char* argv[]){
   for(i=1 ; i<argc ; i++){
     *(s+i-1) = atoi(argv[i]);
   }
-  printf("nb_swap_bit : %lu\n", nb_swap_bit( *((unsigned long int*)s) ) ) ;
+  printf("nb_swap_bit : %d\n", nb_swap_bit( *((unsigned long int*)s) ) ) ;
   return 0;
 }
 
