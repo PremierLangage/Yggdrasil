@@ -6,18 +6,20 @@ text= Cochez les affirmations correctes
 
 # ceci est un commentaire dans l'exercice
 # nombre de propositions
-nb=3
+nb=4
 # nombre de réponses vraies
 # si nbtrues==0: un nombre aléatoire entre 1 et nb
 # si pas défini: un nombre aléatoire de réponses à cocher
-nbtrues=1
+nbtrues=2
 
 good==
 la valeur qu'on obtiendrait si toutes les valeurs de l'échantillon étaient égales
 Le centre de gravité de la distribution d'une variable numérique sur un échantillon
 Le rapport entre la somme des observations et le nombre des observations
+Le total des observations sur le nomre d'observations
 ==
-delimiter=$
+
+delimiter = $
 
 bad==
 La modalité partageant en deux parties égales la distribution des observations | Non, c'est la médiane.
