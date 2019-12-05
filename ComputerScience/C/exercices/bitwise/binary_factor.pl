@@ -89,6 +89,7 @@ tests==
 [["Exécution simple", "13 13 13 13", ""],
  ["Pas de bit", "0 0 0 0", ""],
  ["64 bits", "255 255 255 255", ""],
+ ["Alternances", "85 85 85 85", ""],
  ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(4)]), ""],
  ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(4)]), ""],
  ["Aléatoire", " ".join([str(random.randint(0,12)) for i in range(4)]), ""],
