@@ -27,9 +27,9 @@ tpltable ==
 </tr>
 {% for item in drop %}
 <tr>
-<td> {{item}} </td>
-<td> {{item}} </td>
-<td> {{item}} </td>
+<td> {{row.loop}} </td>
+<td> {{row.loop0}} </td>
+<td> {{item | component}} </td>
 </tr>
 {% endfor %}
 </table>
@@ -45,9 +45,9 @@ for i in range(n):
     globals()[f"drop{i}"] = DragDrop(id=f"drop{i}",droppable=False)
     drop.append(globals()[f"drop{i}"])
 
-row1=list(range(1,n+1))
+row=list(range(1,n+1))
 
-table= Template(tpltable).render(row1=row1,drop=drop)
+table= Template(tpltable).render(row=row,drop=drop)
 ==
 
 text ==
