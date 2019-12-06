@@ -31,7 +31,7 @@ for i in range(4):
 P=[True,True,False,False]
 Q=[True,False,True,False]
 
-case=0
+case=randint(0,3)
 
 if case==0:
     expr= "$!P!$ et non ($!Q!$)"
@@ -39,11 +39,11 @@ if case==0:
 elif case==1:
     expr= "$!P!$ ou non ($!Q!$)"
     R = [P[i] or not Q[i] for i in range(4)]
-if case==0:
-    expr= "$!P!$ et non ($!Q!$)"
+elif case==2:
+    expr= "non ($!P!$) et $!Q!$"
     R = [not P[i] and Q[i] for i in range(4)]
-elif case==1:
-    expr= "$!P!$ ou non ($!Q!$)"
+elif case==3:
+    expr= "non ($!P!$) ou $!Q!$"
     R = [not P[i] or Q[i] for i in range(4)]
 
 row1 = ["V" if P[i] else "F" for i in range(4)]
