@@ -30,9 +30,14 @@ Q=[True,False,True,False]
 
 R = [P[i] and not Q[i] for i in range(4)]
 
+row1 = ["V" if P[i] else "F" for i in range(4)]
+row1 = ["V" if Q[i] else "F" for i in range(4)]
+
 ==
 
 text ==
+{{R}}
+
 <table>
 <tr>
 <th> $! P !$ </th>
@@ -41,8 +46,8 @@ text ==
 </tr>
 {% for i in range(4) %}
 <tr>
-<td> {{row[i]}} </td>
-<td> {{row[i]}} </td>
+<td> {{row1[i]}} </td>
+<td> {{row2[i]}} </td>
 <td> {{ drop[i] | component }} </td>
 </tr>
 {% endfor %}
