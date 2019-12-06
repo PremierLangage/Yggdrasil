@@ -52,7 +52,7 @@ row2 = ["V" if Q[i] else "F" for i in range(4)]
 ==
 
 text ==
-Compléter la table de vérité suivante avec {{ T | component}} ou {{ F | component}}.
+Compléter la table de vérité suivante avec {{ dragT | component}} ou {{ dragF | component}}.
 
 <table>
 <tr>
