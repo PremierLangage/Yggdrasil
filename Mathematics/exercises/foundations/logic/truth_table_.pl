@@ -8,6 +8,7 @@ tpltable ==
 <tr>
 <th> $! P !$ </th>
 <th> $! Q !$ </th>
+<th> $! P et Q !$ </th>
 </tr>
 {% for item in row1 %}
 <tr>
