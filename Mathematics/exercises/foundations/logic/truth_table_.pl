@@ -32,9 +32,6 @@ table= Template(tpltable).render(row1=row1,row2=row2)
 
 text ==
 {{table|safe}}
-
-
-Déterminer l'image réciproque de l'ensemble $!\\{ {{A_tex}} \\}!$ par $! f !$.
 ==
 
 evaluator==
