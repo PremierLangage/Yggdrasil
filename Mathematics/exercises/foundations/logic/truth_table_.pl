@@ -20,13 +20,16 @@ th, td {
 
 
 before ==
-n=4
 drop=[]
-for i in range(n):
+for i in range(4):
     globals()[f"drop{i}"] = DragDrop(id=f"drop{i}",droppable=False)
     drop.append(globals()[f"drop{i}"])
 
-row=list(range(1,n+1))
+P=[True,True,False,False]
+Q=[True,False,True,False]
+
+R = [P[i] and not Q[i] for i in range(4)]
+
 ==
 
 text ==
