@@ -31,7 +31,7 @@ Q=[True,False,True,False]
 case=0
 
 if case==0:
-    expr= "$!P!$ et non Q"
+    expr= "$!P!$ et non $!Q!$"
     R = [P[i] and not Q[i] for i in range(4)]
 
 row1 = ["V" if P[i] else "F" for i in range(4)]
