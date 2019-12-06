@@ -36,11 +36,11 @@ text ==
 <th> $! Q !$ </th>
 <th> $! P et Q !$ </th>
 </tr>
-{% for item in drop %}
+{% for i in range(4) %}
 <tr>
-<td> {{row[loop.index]}} </td>
-<td> {{row.loop.index}} </td>
-<td> {{ item | component }} </td>
+<td> {{row[i]}} </td>
+<td> {{row[i]}} </td>
+<td> {{ drop[i] | component }} </td>
 </tr>
 {% endfor %}
 </table>
