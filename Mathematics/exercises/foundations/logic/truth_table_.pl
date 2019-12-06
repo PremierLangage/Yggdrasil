@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathinput.pl
+extends = /Mathematics/template/mathbasic.pl
 
 title = Table de vérité
 
@@ -19,7 +19,7 @@ th, td {
 ==
 
 
-before ==
+befsre ==
 dragT = DragDrop(id="dragT",droppable=False,content="V")
 dragF = DragDrop(id="dragF",droppable=False,content="F")
 
