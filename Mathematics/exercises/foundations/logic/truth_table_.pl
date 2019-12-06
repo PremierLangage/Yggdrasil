@@ -46,7 +46,7 @@ text ==
 <tr>
 <th> $! P !$ </th>
 <th> $! Q !$ </th>
-<th> $! P et Q !$ </th>
+<th> {{expr}} </th>
 </tr>
 {% for i in range(4) %}
 <tr>
