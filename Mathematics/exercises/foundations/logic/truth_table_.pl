@@ -33,6 +33,15 @@ case=0
 if case==0:
     expr= "$!P!$ et non ($!Q!$)"
     R = [P[i] and not Q[i] for i in range(4)]
+elif case==1:
+    expr= "$!P!$ ou non ($!Q!$)"
+    R = [P[i] or not Q[i] for i in range(4)]
+if case==0:
+    expr= "$!P!$ et non ($!Q!$)"
+    R = [not P[i] and Q[i] for i in range(4)]
+elif case==1:
+    expr= "$!P!$ ou non ($!Q!$)"
+    R = [not P[i] or Q[i] for i in range(4)]
 
 row1 = ["V" if P[i] else "F" for i in range(4)]
 row2 = ["V" if Q[i] else "F" for i in range(4)]
