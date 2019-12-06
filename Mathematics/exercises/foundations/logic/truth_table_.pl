@@ -20,6 +20,9 @@ th, td {
 
 
 before ==
+dragT = DragDrop(droppable=True,content="Vraie")
+dragF = DragDrop(droppable=True)
+
 drop=[]
 for i in range(4):
     globals()[f"drop{i}"] = DragDrop(id=f"drop{i}",droppable=False)
@@ -49,7 +52,7 @@ row2 = ["V" if Q[i] else "F" for i in range(4)]
 ==
 
 text ==
-{{R}}
+Compléter la table de vérité suivante avec {{ T | component}} ou {{ F | component}}.
 
 <table>
 <tr>
@@ -65,6 +68,7 @@ text ==
 </tr>
 {% endfor %}
 </table>
+
 ==
 
 evaluator==
