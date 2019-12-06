@@ -20,12 +20,12 @@ th, td {
 
 
 before ==
-dragT = DragDrop(id="dragT",droppable=True,content="V")
-dragF = DragDrop(id="dragF",droppable=True,content="F")
+dragT = DragDrop(id="dragT",droppable=False,content="V")
+dragF = DragDrop(id="dragF",droppable=False,content="F")
 
 drop=[]
 for i in range(4):
-    globals()[f"drop{i}"] = DragDrop(id=f"drop{i}",droppable=False)
+    globals()[f"drop{i}"] = DragDrop(id=f"drop{i}",droppable=True)
     drop.append(globals()[f"drop{i}"])
 
 P=[True,True,False,False]
