@@ -31,7 +31,7 @@ Q=[True,False,True,False]
 R = [P[i] and not Q[i] for i in range(4)]
 
 row1 = ["V" if P[i] else "F" for i in range(4)]
-row1 = ["V" if Q[i] else "F" for i in range(4)]
+row2 = ["V" if Q[i] else "F" for i in range(4)]
 
 ==
 
