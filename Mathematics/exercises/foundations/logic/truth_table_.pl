@@ -28,7 +28,11 @@ for i in range(4):
 P=[True,True,False,False]
 Q=[True,False,True,False]
 
-R = [P[i] and not Q[i] for i in range(4)]
+case=0
+
+if case==0:
+    expr= "$!P!$ et non Q"
+    R = [P[i] and not Q[i] for i in range(4)]
 
 row1 = ["V" if P[i] else "F" for i in range(4)]
 row2 = ["V" if Q[i] else "F" for i in range(4)]
