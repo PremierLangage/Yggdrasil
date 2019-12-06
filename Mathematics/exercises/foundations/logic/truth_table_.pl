@@ -38,7 +38,7 @@ text ==
 </tr>
 {% for item in drop %}
 <tr>
-<td> {{row.loop.index}} </td>
+<td> {{row[loop.index]}} </td>
 <td> {{row.loop.index}} </td>
 <td> {{ item | component }} </td>
 </tr>
