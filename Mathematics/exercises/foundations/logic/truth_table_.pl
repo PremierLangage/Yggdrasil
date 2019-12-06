@@ -25,7 +25,7 @@ tpltable ==
 <th> $! Q !$ </th>
 <th> $! P et Q !$ </th>
 </tr>
-{% for item in row1 %}
+{% for item in drop %}
 <tr>
 <td> {{item}} </td>
 <td> {{item}} </td>
@@ -39,10 +39,15 @@ tpltable ==
 before ==
 from jinja2 import Template
 
-n=randint(5,9)
+n=4
+drop=[]
+for i in range(n):
+    globals()[f"drop{i}"] = DragDrop(id=f"drop{i}",droppable=False)
+    drop.append(globals()[f"drop{i}"])
+
 row1=list(range(1,n+1))
 
-table= Template(tpltable).render(row1=row1)
+table= Template(tpltable).render(row1=row1,drop=drop)
 ==
 
 text ==
