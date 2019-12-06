@@ -20,8 +20,8 @@ th, td {
 
 
 before ==
-dragT = DragDrop(droppable=True,content="Vraie")
-dragF = DragDrop(droppable=True)
+dragT = DragDrop(id="dragT",droppable=True,content="V")
+dragF = DragDrop(id="dragF",droppable=True,content="F")
 
 drop=[]
 for i in range(4):
