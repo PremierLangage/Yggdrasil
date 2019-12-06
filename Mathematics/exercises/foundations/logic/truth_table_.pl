@@ -26,7 +26,7 @@ from jinja2 import Template
 n=randint(5,9)
 row1=list(range(1,n+1))
 
-table= Template(tpltable).render(row1=row1,row2=row2)
+table= Template(tpltable).render(row1=row1)
 ==
 
 text ==
