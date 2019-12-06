@@ -2,6 +2,22 @@ extends = /Mathematics/template/mathinput.pl
 
 title = Table de vérité
 
+extracss==
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table {
+    margin: auto;
+}
+th, td {
+  padding: 0.5em;
+  text-align:center;
+}
+</style>
+==
+
 tpltable ==
 <table>
 <tr>
