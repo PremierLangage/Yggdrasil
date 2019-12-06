@@ -12,10 +12,11 @@ tpltable ==
 </tr>
 {% for item in row1 %}
 <tr>
-<th> $! {{f}} (x) !$ </th>
 <td> {{item}} </td>
-{% endfor %}
+<td> {{item}} </td>
+<td> {{item}} </td>
 </tr>
+{% endfor %}
 </table>
 ==
 
