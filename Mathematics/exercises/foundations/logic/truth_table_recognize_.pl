@@ -3,8 +3,12 @@ extends = /Mathematics/template/mathradio.pl
 title = Table de vérité
 
 before ==
-P=[True,True,False,False]
-Q=[True,False,True,False]
+if randint(1,2)==1:
+    P=[True,True,False,False]
+    Q=[True,False,True,False]
+else:
+    P=[False,False,True,True]
+    Q=[False,True,False,True]
 
 choices = ["$!P!$ et non ($!Q!$)","$!P!$ ou non ($!Q!$)","non ($!P!$) et $!Q!$","non ($!P!$) ou $!Q!$"]
 case=randint(0,3)
