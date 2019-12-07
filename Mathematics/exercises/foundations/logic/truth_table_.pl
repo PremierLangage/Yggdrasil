@@ -31,7 +31,7 @@ elif case==3:
 
 row1 = ["V" if P[i] else "F" for i in range(4)]
 row2 = ["V" if Q[i] else "F" for i in range(4)]
-sol = ["V" if range[i] else "F" for i in range(4)]
+sol = ["V" if R[i] else "F" for i in range(4)]
 ==
 
 text ==
