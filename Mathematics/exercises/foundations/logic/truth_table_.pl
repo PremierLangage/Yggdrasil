@@ -57,7 +57,7 @@ evaluator ==
 drop=[drop0,drop1,drop2,drop3]
 feedback=""
 score=100
-for i in range(n):
+for i in range(len(drop)):
     if drop[i].content==sol[i]:
         drop[i].css = "success-state anim-flip"
     else:
