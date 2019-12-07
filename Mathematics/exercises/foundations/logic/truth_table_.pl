@@ -2,6 +2,8 @@ extends = /Mathematics/template/mathbasic.pl
 
 title = Table de vérité
 
+settings.feedback.class=score
+
 before ==
 dragT = DragDrop(id="dragT",droppable=False,content="V")
 dragF = DragDrop(id="dragF",droppable=False,content="F")
