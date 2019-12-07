@@ -63,8 +63,8 @@ feedback=""
 score=100
 for i in range(len(drop)):
     if drop[i].content==sol[i]:
-        drop[i].css = "success-state anim-flip"
+        drop[i].css = "success-state"
     else:
         score=0
-        drop[i].css = "error-state anim-flip" 
+        drop[i].css = "error-state" 
 ==
