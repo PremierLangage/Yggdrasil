@@ -54,7 +54,7 @@ Compléter la table de vérité suivante avec {{ dragT | component}} ou {{ dragF
 ==
 
 evaluator ==
-drop=[drop1,drop2,drop3,drop4]
+drop=[drop0,drop1,drop2,drop3]
 feedback=""
 score=100
 for i in range(n):
