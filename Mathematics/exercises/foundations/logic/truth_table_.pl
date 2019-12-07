@@ -2,23 +2,6 @@ extends = /Mathematics/template/mathbasic.pl
 
 title = Table de vérité
 
-extracss==
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-table {
-    margin: auto;
-}
-th, td {
-  padding: 0.5em;
-  text-align:center;
-}
-</style>
-==
-
-
 befsre ==
 dragT = DragDrop(id="dragT",droppable=False,content="V")
 dragF = DragDrop(id="dragF",droppable=False,content="F")
@@ -64,13 +47,21 @@ Compléter la table de vérité suivante avec {{ dragT | component}} ou {{ dragF
 <tr>
 <td> {{row1[i]}} </td>
 <td> {{row2[i]}} </td>
-<td> {{ drop[i] | component }} </td>
+<td> {{drop[i] | component}} </td>
 </tr>
 {% endfor %}
 </table>
 
 ==
 
-evaluator==
-score,_,feedback=ans_struct_expr(input.value,imA,"composite")
+evaluator ==
+drop=[drop1,drop2,drop3,drop4]
+feedback=""
+score=100
+for i in range(n):
+    if drop[i].content==sol[i]:
+        drop[i].css = "success-state anim-flip"
+    else:
+        score=0
+        drop[i].css = "error-state anim-flip" 
 ==
