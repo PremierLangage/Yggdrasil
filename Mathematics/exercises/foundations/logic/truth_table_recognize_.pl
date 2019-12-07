@@ -16,8 +16,10 @@ elif case==2:
     R = [not P[i] and Q[i] for i in range(4)]
 elif case==3:
     R = [not P[i] or Q[i] for i in range(4)]
+
 radio.loadContent(choices)
 radio.setSolByIndex(case)
+
 row1 = ["V" if P[i] else "F" for i in range(4)]
 row2 = ["V" if Q[i] else "F" for i in range(4)]
 row3 = ["V" if R[i] else "F" for i in range(4)]
@@ -42,5 +44,3 @@ Soit P et Q deux propositions logiques. On considère une proposition $! T(P,Q) 
 
 Parmi les propositions suivantes, laquelle est logiquement équivalente à $! T(P,Q) !$ ?
 ==
-
-
