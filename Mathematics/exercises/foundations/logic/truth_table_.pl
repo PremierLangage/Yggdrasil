@@ -36,7 +36,9 @@ sol = ["V" if R[i] else "F" for i in range(4)]
 
 text ==
 Compléter la table de vérité suivante avec {{ dragT | component}} ou {{ dragF | component}}.
+==
 
+form ==
 <table>
 <tr>
 <td> $! P !$ </td>
