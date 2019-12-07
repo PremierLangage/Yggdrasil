@@ -2,7 +2,7 @@ extends = /Mathematics/template/mathbasic.pl
 
 title = Table de vérité
 
-befsre ==
+before ==
 dragT = DragDrop(id="dragT",droppable=False,content="V")
 dragF = DragDrop(id="dragF",droppable=False,content="F")
 
@@ -51,7 +51,6 @@ Compléter la table de vérité suivante avec {{ dragT | component}} ou {{ dragF
 </tr>
 {% endfor %}
 </table>
-
 ==
 
 evaluator ==
