@@ -1,24 +1,17 @@
 extends = /Mathematics/template/mathbasic.pl
 
-title = Radio
+@ /utils/radiogroup.py [customradiogroup.py]
 
 radio =: RadioGroup
+radio.decorator = CustomRadioGroup
 
-form ==
-{{ radio | component }}
-==
+form = {{ radio|component }}
 
 evaluator ==
-n=len(radio.items)
-score=0
-for item in radio.items:
-    if item['id']==solid:
-        item['css'] = 'success-state anim-fade'
-        if item['id']==radio.selection:
-            score=100
-            break
-feedback=""
+grade = radio.eval()
+radio.disabled=True
 ==
+
 
 
 
