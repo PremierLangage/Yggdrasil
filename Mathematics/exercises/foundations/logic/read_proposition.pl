@@ -3,7 +3,10 @@ extends = /Mathematics/template/mathcheckbox.pl
 title = Table de vérité
 
 before ==
-
+n=randint(20,30)
+numbers=set(range(1,n+1))
+even=set(range(2,n+1,2))
+odd=numbers.difference(even)
 
 checkbox.loadContent(choices)
 checkbox.setSolByIndex(case)
