@@ -5,6 +5,8 @@
 @ /builder/mathbefore.py [builder.py]
 @ /grader/mathevaluator.py [grader.py]
 
+extends = /utils/math.css
+
 title = Title
 
 maxattempt=1
@@ -47,4 +49,5 @@ extrajs==
     }
 </script>
 ==
+
 
