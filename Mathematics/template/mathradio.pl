@@ -10,8 +10,5 @@ form = {{ radio|component }}
 evaluator ==
 grade = radio.eval()
 radio.disabled=True
+score,feedback=grade
 ==
-
-
-
-
