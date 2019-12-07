@@ -38,7 +38,7 @@ Soit P et Q deux propositions logiques. On considère une proposition $! T(P,Q) 
 <tr>
 <td> {{row1[i]}} </td>
 <td> {{row2[i]}} </td>
-<td> {{drop[i] | component}} </td>
+<td> {{row3[i]}} </td>
 </tr>
 {% endfor %}
 </table>
