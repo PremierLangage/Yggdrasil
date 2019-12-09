@@ -10,7 +10,7 @@ nb=4
 # nombre de réponses vraies
 # si nbtrues==0: un nombre aléatoire entre 1 et nb
 # si pas défini: un nombre aléatoire de réponses à cocher
-nbtrues=2
+nbtrues=1
 
 good==
 la valeur qu'on obtiendrait si toutes les valeurs de l'échantillon étaient égales
@@ -31,6 +31,7 @@ Le score réalisé par une majorité de sujets | Non, ça c'est le mode.
 
 
 feedback=show
+
 
 
 
