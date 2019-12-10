@@ -26,6 +26,10 @@ def traduit(d,mes):
 m='eh mon tailleur est riche sur '
 pltest3=""" traduit({'tailleur':'taylor','riche':'rich','tu':'you','mon':'my','est':'is'}, m))"""
 ==
+editor.code==
+def traduit(d,mes):
+ return 'je teste un ESSAI'
+==
 pltest1==
 >>> traduit({'essai':'ESSAI','e':'E','o':'O'},"je teste un essai")=="je teste un ESSAI"
 True
