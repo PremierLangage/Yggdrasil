@@ -13,8 +13,8 @@ La fonction remplace chaque clef du texte présente dans le dictionnaire par la 
    >>> `traduit`{'tailleur':'taylor','riche':'rich','tu':'you','mon':'my','est':'is'},'eh mon tailleur est riche sur ')<br>
  eh my taylor is rich sur
 ==
-
 def traduit(d,mes):
+
     l=mes.split()
     t=list(l)
     for i in range(len(l)):
@@ -25,6 +25,14 @@ m='eh mon tailleur est riche sur '
 pltest3=""" traduit({'tailleur':'taylor','riche':'rich','tu':'you','mon':'my','est':'is'}, m))"""
 ==
 pltest1==
-traduit({'essai':'ESSAI','e':'E','o':'O'},"je teste un essai")=="je teste un ESSAI"
->>> True
+>>> traduit({'essai':'ESSAI','e':'E','o':'O'},"je teste un essai")=="je teste un ESSAI"
+True
 ==
+
+ pltest2==
+>>> traduit({'essai':'ESSAI','e':'E','o':'O'},"je teste un essai")
+"je teste un ESSAI"
+ 
+
+==
+ 
