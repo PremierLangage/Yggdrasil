@@ -7,9 +7,6 @@
 component =: Input
 component.type = text
 
-before==
-==
-
 title==
 Input Component
 ==
@@ -89,6 +86,7 @@ else:
 form==
    var = {{ component|component}}
 ==
+
 
 
 
