@@ -46,7 +46,7 @@ import random
 n=random.randint(4,12)
 
 pltest3=""">>> ({})\n'{}'""".format(n, carres_Gauss(n))
-print(pltest3, file=stderr)
+print(pltest3)
 after=before
 ==
 
