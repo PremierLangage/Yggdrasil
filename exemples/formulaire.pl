@@ -59,9 +59,9 @@ component.language = python
 
 
 evaluator==
-answer['v1']=inputbox1.value
-answer['v2']=inputbox2.value
-answer['v3']=component.code
+answers['v1']=inputbox1.value
+answers['v2']=inputbox2.value
+answers['v3']=component.code
 
 grade=(100,"Passez à la question suivante. ")
 ==
