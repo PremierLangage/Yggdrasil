@@ -9,6 +9,7 @@ def selectionfromcsv(filename, number=4):
     with open(filename,"r") as csvfile:
         reader=csv.DictReader(csvfile,delimiter=';')
         l=[x for x in reader if x['niveau']==1 ]
+        return l
         return random.sample(l,4)
 
 
