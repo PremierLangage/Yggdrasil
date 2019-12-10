@@ -45,8 +45,8 @@ import random
 
 n=random.randint(4,12)
 
-pltest3=""">>> ({})\n'{}'""".format(n, carres_Gauss(n))
-print(pltest3)
+pltest3=f">>> carres_Gauss({n})\n{carres_Gauss(n)}"
+
 after=before
 ==
 
