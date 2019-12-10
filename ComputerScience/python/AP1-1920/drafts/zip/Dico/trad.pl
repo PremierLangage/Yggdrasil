@@ -31,7 +31,7 @@ def traduit(d,mes):
  return 'je teste un ESSAI'
 ==
 pltest1==
->>> traduit({'essai':'ESSAI','e':'E','o':'O'},"je teste un essai")=="je teste un ESSAI"
+>>> traduit({'essai':'ESSAI','e':'E','o':'O'},'je teste un essai')=="je teste un ESSAI"
 True
 ==
 
