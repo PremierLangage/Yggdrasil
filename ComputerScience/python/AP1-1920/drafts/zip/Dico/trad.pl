@@ -36,7 +36,7 @@ True
 ==
 
 pltest2==
->>> traduit({'essai':'ESSAI','e':'E','o':'O'},'je teste un essai')
+>>> traduit({'essai':'ESSAI','e':'E','o':'O'},'tu testes un essai')
 "je teste un ESSAI"
  
 
