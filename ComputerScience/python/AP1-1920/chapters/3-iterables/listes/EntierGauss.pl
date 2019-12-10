@@ -63,7 +63,7 @@ pltest1==
 
 pltest2==
 >>> carres_Gauss(0)
-[(0,0)]
+[(0, 0)]
 ==
 
 
