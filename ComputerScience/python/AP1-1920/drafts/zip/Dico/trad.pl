@@ -21,7 +21,8 @@ def traduit(d,mes):
     for i in range(len(l)):
         t[i]=d.get(l[i],l[i])
     
-    return " ".join(t)   
+    return " ".join(t) 
+
 m='eh mon tailleur est riche sur '
 pltest3=""" traduit({'tailleur':'taylor','riche':'rich','tu':'you','mon':'my','est':'is'}, m))"""
 ==
@@ -30,7 +31,7 @@ pltest1==
 True
 ==
 
-pltest2==
+zpltest2==
 >>> traduit({'essai':'ESSAI','e':'E','o':'O'},"je teste un essai")
 "je teste un ESSAI"
  
