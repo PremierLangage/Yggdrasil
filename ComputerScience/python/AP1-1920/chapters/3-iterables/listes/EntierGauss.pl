@@ -46,7 +46,7 @@ import random
 n=random.randint(4,12)
 
 pltest3=""">>> ({})\n'{}'""".format(n, carres_Gauss(n))
-
+print(pltest3, file=stderr)
 after=before
 ==
 
@@ -65,6 +65,7 @@ pltest2==
 >>> carres_Gauss(0)
 [(0, 0)]
 ==
+
 
 
 
