@@ -13,6 +13,7 @@ La fonction remplace chaque clef du texte présente dans le dictionnaire par la 
    >>> `traduit`{'tailleur':'taylor','riche':'rich','tu':'you','mon':'my','est':'is'},'eh mon tailleur est riche sur ')<br>
  eh my taylor is rich sur
 ==
+before==
 def traduit(d,mes):
 
     l=mes.split()
