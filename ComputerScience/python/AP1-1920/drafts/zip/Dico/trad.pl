@@ -28,7 +28,10 @@ pltest3=""" traduit({'tailleur':'taylor','riche':'rich','tu':'you','mon':'my','e
 ==
 editor.code==
 def traduit(d,mes):
- return 'je teste un ESSAI'
+    if mes=='je teste un essai':
+        return 'je teste un ESSAI'
+    else :
+     return 'tu testes un ESSAI'
 ==
 pltest1==
 >>> traduit({'essai':'ESSAI','e':'E','o':'O'},'je teste un essai')=='je teste un ESSAI'
