@@ -30,7 +30,7 @@ d["était"]='where'
 d['si']='if'
 d['le']='the'
 liste=['Ah si tu étais riche','eh mon tailleur est riche sur','le vilain tailleur']
-m=liste[random.randint(0,len(liste)-1]
+m=liste[random.randint(0,len(liste)-1)]
 pltest3=""">>> traduit({},'{}')\n'{}'""".format(d,m,traduit(d,m))
 after=before
 ==
