@@ -27,7 +27,7 @@ import random
 
 d={'tailleur':'taylor','riche':'rich','tu':'you','mon':'my','est':'is'}
 d["était"]='where'
-liste=["Ah si j'étais riche",'eh mon tailleur est riche sur']
+liste=['Ah si j étais riche','eh mon tailleur est riche sur']
 m=liste[0]
 pltest3=""">>> traduit({},'{}')\n'{}'""".format(d,m,traduit(d,m))
 after=before
