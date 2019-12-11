@@ -38,8 +38,9 @@ editor.code==
 def traduit(d,mes):
     if mes=='je teste un essai':
         return 'je teste un ESSAI'
-    else :
+    elif mes=='je teste un essai':
      return 'tu testes un ESSAI'
+    return mes
 ==
 pltest1==
 >>> traduit({'essai':'ESSAI','e':'E','o':'O'},'je teste un essai')=='je teste un ESSAI'
