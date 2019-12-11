@@ -26,6 +26,7 @@ def traduit(d,mes):
 m='eh mon tailleur est riche sur '
 d={'tailleur':'taylor','riche':'rich','tu':'you','mon':'my','est':'is'}
 
+pltest3=""">>> traduit({},'{}')\n{}'""".format(d,m,traduit(d,m))
 after=before
 ==
 editor.code==
