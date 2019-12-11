@@ -22,10 +22,13 @@ def traduit(d,mes):
         t[i]=d.get(l[i],l[i])
     
     return " ".join(t) 
+    
+import random
 
-m='eh mon tailleur est riche sur '
 d={'tailleur':'taylor','riche':'rich','tu':'you','mon':'my','est':'is'}
-
+d["était"]='where'
+liste=['Ah si j'étais riche','eh mon tailleur est riche sur']
+m=liste[1]
 pltest3=""">>> traduit({},'{}')\n{}'""".format(d,m,traduit(d,m))
 after=before
 ==
