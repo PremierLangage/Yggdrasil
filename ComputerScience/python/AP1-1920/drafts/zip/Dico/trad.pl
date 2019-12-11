@@ -38,7 +38,7 @@ editor.code==
 def traduit(d,mes):
     if mes=='je teste un essai':
         return 'je teste un ESSAI'
-    elif mes=='je teste un essai':
+    elif mes=='tu testes un essai':
      return 'tu testes un ESSAI'
     return mes
 ==
