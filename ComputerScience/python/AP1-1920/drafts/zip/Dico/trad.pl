@@ -24,7 +24,10 @@ def traduit(d,mes):
     return " ".join(t) 
 
 m='eh mon tailleur est riche sur '
-pltest3=""" traduit({'tailleur':'taylor','riche':'rich','tu':'you','mon':'my','est':'is'}, m))"""
+d={'tailleur':'taylor','riche':'rich','tu':'you','mon':'my','est':'is'}, m))
+
+pltest3=""" traduit({},{})\n{}'""".format(d,m,traduit(d,m))
+after=before
 ==
 editor.code==
 def traduit(d,mes):
