@@ -42,7 +42,10 @@ int main(int argc, char* argv[]){
 tests==
 [["Simple test", "", "Ha\n(Denis Brogniart)\n"],
  ["Entrée vide", "", ""],
- ["Aléatoire", "", "".join([random.choice(['', '\n', 'A', 'B', 'C', 'D']) for i in range(random.randint(100,1000))])]]
+ ["Aléatoire", "", "".join([random.choice(['', '\n', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']) for i in range(random.randint(100,1000))])],
+ ["Aléatoire", "", "".join([random.choice(['', '\n', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']) for i in range(random.randint(100,1000))])],
+ ["Aléatoire", "", "".join([random.choice(['', '\n', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']) for i in range(random.randint(100,1000))])],
+ ["Aléatoire", "", "".join([random.choice(['', '\n', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']) for i in range(random.randint(100,1000))])] ]
 ==
 
 
