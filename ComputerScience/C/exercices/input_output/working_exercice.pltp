@@ -1,7 +1,8 @@
 title=Exercices fonctionnels sur la notion d'entrées/sorties
 
 introduction==
-Voici des exercices 
+Voici des exercices qui vous feront travailler les entrées sorties
+avec le langage C.
 ==
 
 @ /ComputerScience/C/exercices/input_output/sum_int_stdin.pl
