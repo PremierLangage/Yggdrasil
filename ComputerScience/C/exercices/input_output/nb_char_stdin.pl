@@ -7,8 +7,6 @@ title=Compter les caractères présents sur l'entrée standard
 tag=input_output
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
-betise=123
-
 text==
 
 Écrire un programme qui compte le nombre de caractères contenus sur l'entrée 
