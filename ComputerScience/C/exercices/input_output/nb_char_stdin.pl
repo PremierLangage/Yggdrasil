@@ -7,6 +7,8 @@ title=Compter les caractères présents sur l'entrée standard
 tag=input_output
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
+
+
 text==
 
 Écrire un programme qui compte le nombre de caractères contenus sur l'entrée 
@@ -47,5 +49,6 @@ tests==
  ["Aléatoire", "", "".join([random.choice(['', '\n', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']) for i in range(random.randint(100,1000))])],
  ["Aléatoire", "", "".join([random.choice(['', '\n', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']) for i in range(random.randint(100,1000))])] ]
 ==
+
 
 
