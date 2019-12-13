@@ -67,9 +67,10 @@ int main(int argc, char* argv[]){
     
 tests==
 [ ["Basique", "pouet", ""],
-  ["Chaîne composé", '"deux mots"', ""],
+  ["Chaîne composée", '"deux mots"', ""],
   ["Chaîne vide", '""', ""],
   ["Long mot", "Anti-constitutionnellement", ""],
   ["Plein de mots", '"Cela fait sept mots dans un mot"', ""] ]
 ==
+
 
