@@ -97,7 +97,9 @@ int main(int argc, char* argv[]){
 ==
 
 tests==
-[["Basique", "", "Pommes\nPoires\nPatates\nPeche\n"]]
+[["Basique", "", "Pommes\nPoires\nPatates\nPeche\n"], 
+ ["Un mot", "", "Bonjour\n"],
+ ["Quelques mots", "", "Pommes\nPoires\nPatates\nPeche\nBanane\nFraise\nCerise\nPrune\nAbricot\nTomate\n"]]
 ==
 
 
