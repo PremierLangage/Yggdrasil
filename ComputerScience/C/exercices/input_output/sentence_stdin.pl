@@ -43,7 +43,7 @@ int main(int argc, char* argv[]){
 tests==
 
 [["Basique", "", "Je vais a la plage.\n"],
- ["Entrée vide", "", ""],
+ ["Entree vide", "", ""],
  ["Deux lignes", "", "Ceci est une premiere ligne a afficher.\nCeci est une seconde ligne inutile dans cet exercice.\n"]]
 
 ==
