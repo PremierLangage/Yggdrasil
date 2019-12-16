@@ -909,7 +909,7 @@ def ans_struct_(strans,sol,typestruct,local_dict,test1,test2):
 
 def ans_expr(strans,sol,local_dict={}):
     """
-    Analyze an answer of type complex number.
+    Analyze an answer of type expr.
     """
     test1=[(is_expr,-1,"NotExpr","Votre réponse n'est pas une expression valide.")]
     test2=[]
@@ -986,3 +986,12 @@ def ans_real_or_inf(strans,sol,local_dict={}):
     return ans_(strans,sol,local_dict,test1,test2)
 
 
+def ans_antiderivative(strans,sol,local_dict={}):
+    """
+    Analyze an answer of type expr.
+    """
+    x=sp.Symbol('x')
+    test1=[(is_expr,-1,"NotExpr","Votre réponse n'est pas une expression valide.")]
+    test2=[]
+    test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
+    return ans_(diff(strans,x),sol,local_dict,test1,test2)
