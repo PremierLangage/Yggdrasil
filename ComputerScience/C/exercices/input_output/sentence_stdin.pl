@@ -1,17 +1,18 @@
 # Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
-# Récupérer une phrase complète sur l'entrée standard
+# Récupérer une ligne complète sur l'entrée standard
 
 author=Nicolas Borie
-title=Récupérer puis écrire une phrase complète
+title=Récupérer puis écrire une ligne complète
 tag=input_output|string
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
-Écrire un programme C qui lit une phrase complète sur l'entrée standard puis
-réécrit cette phrase sur la sortie standard. Une ligne ne comportera jamais 
-plus de 255 caractères.
+Écrire un programme C qui lit une ligne complète sur l'entrée standard puis
+réécrit cette ligne sur la sortie standard. Une ligne ne comportera jamais 
+plus de 255 caractères. Une ligne se termine par un retour chariot, il faut 
+donc utiliser une fonction qui lit jusqu'à voir un retour à la ligne.
 
 ==
 
