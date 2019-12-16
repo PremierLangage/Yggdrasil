@@ -63,7 +63,7 @@ void sort_word(char** tab, int size){
       if (strcmp(tab[j], tab[j+1]) > 0){
         strcpy(tmp, tab[j]);
         strcpy(tab[j], tab[j+1]);
-        strcpy(tab[j], tmp);
+        strcpy(tab[j+1], tmp);
       }
     }
   }
