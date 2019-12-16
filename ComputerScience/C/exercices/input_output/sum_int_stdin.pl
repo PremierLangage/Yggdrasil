@@ -28,7 +28,7 @@ editor.code==
 int main(int argc, char* argv[]){
   int a, b;
 	
-  /** votre code ici... **/
+  /** ...votre code ici... **/
 }
 
 ==
@@ -56,5 +56,6 @@ tests==
  ["Aléatoire", "", str(random.randint(-10,10))+" "+str(random.randint(-10,10))+"\n"],
  ["Aléatoire", "", str(random.randint(-10,10))+" "+str(random.randint(-10,10))+"\n"]]
 ==
+
 
 
