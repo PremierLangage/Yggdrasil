@@ -9,7 +9,6 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
-
 Écrire un programme qui lit des mots sur l'entrée standard puis réécrit 
 ses mots sur la sortie standard (un par ligne) mais de manière triée. Il y 
 aura au plus 100 mots sur l'entrée standard et chacun de ces mots comportera 
@@ -44,22 +43,53 @@ int main(int argc, char* argv[]){
 solution==
 
 #include <stdio.h>
+#include <string.h>
+
+int read_word(char[100][64] tab, int* size){
+  int n = scanf("%s", tab[*size]);
+  if (n == 1){
+    *size = *size + 1;
+  }
+  return n;
+}
+
+void sort_word(char** tab, int size){
+  int i, j;
+  tmp[64];
+
+  for(i=0 ; i<size ; i++){
+    for(j=0 ; j<i ; j++){
+      if (strcmp(tab[j], tab[j+1]) < 0){
+        strcpy(tmp, tab[j]);
+        strcpy(tab[j], tab[j+1]);
+        strcpy(tab[j], tmp);
+      }
+    }
+  }
+}
 
 int main(int argc, char* argv[]){
   char tab[100][64];
   int nb_mots = 0;
+  int i;
+
+  while(1){
+    if (read_word(tab, &nb_mots) != 1){
+      break;
+    }
+  }
+
+  for (i=0 ; i<nb_mots ; i++){
+    printf("%s\n", tab[i]);
+  }
 
   return 0;
 }
 
-
 ==
 
 tests==
-[["Basique", "", "Je vais a la plage.\n"],
- ["Entree vide", "", ""],
- ["ligne vide mais existante", "", ""],
- ["Deux lignes", "", "Ceci est une premiere ligne a afficher.\nCeci est une seconde ligne inutile dans cet exercice.\n"]]
+[["Basique", "", "Pommes\nPoires\nPatates\nPeche\n"]]
 ==
 
 
