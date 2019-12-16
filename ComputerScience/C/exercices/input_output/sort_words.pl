@@ -58,7 +58,7 @@ void sort_word(char** tab, int size){
   int i, j;
   char tmp[64];
 
-  for(i=size-1 ; i>=0 ; i++){
+  for(i=size-1 ; i>=0 ; i--){
     for(j=0 ; j<i ; j++){
       if (strcmp(tab[j], tab[j+1]) > 0){
         strcpy(tmp, tab[j]);
