@@ -10,7 +10,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 text==
 
 Écrire un programme qui lit des mots sur l'entrée standard puis réécrit 
-ses mots sur la sortie standard (un par ligne) mais de manière triée. Il y 
+ces mots sur la sortie standard (un par ligne) mais de manière triée. Il y 
 aura au plus 100 mots sur l'entrée standard et chacun de ces mots comportera 
 au plus 63 caractères.
 
