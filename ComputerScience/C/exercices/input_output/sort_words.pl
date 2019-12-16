@@ -26,8 +26,8 @@ Alors votre programme devra afficher
 
     Patates
     Peche
-    Pommes
     Poires
+    Pommes
 
 ==
 
