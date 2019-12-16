@@ -45,7 +45,7 @@ solution==
 #include <stdio.h>
 #include <string.h>
 
-int read_word(char[100][64] tab, int* size){
+int read_word(char** tab, int* size){
   int n = scanf("%s", tab[*size]);
   if (n == 1){
     *size = *size + 1;
@@ -74,10 +74,12 @@ int main(int argc, char* argv[]){
   int i;
 
   while(1){
-    if (read_word(tab, &nb_mots) != 1){
+    if (read_word((char**)tab, &nb_mots) != 1){
       break;
     }
   }
+
+  sort_word((char**)tab, nb_mots);
 
   for (i=0 ; i<nb_mots ; i++){
     printf("%s\n", tab[i]);
