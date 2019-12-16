@@ -15,6 +15,7 @@ ses mots sur la sortie standard (un par ligne) mais de manière triée. Il y
 aura au plus 100 mots sur l'entrée standard et chacun de ces mots comportera 
 au plus 63 caractères.
 
+
 Par exemple, si l'entrée standard contient
 
     Pommes
