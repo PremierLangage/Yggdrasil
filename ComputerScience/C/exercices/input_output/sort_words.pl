@@ -4,7 +4,7 @@
 
 author=Nicolas Borie
 title=Trier des mots lus sur l'entrée standard
-tag=input_output|string
+tag=input_output|string|array
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
