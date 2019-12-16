@@ -100,7 +100,7 @@ tests==
 [["Basique", "", "Pommes\nPoires\nPatates\nPeche\n"], 
  ["Un mot", "", "Bonjour\n"],
  ["Quelques mots", "", "Pommes\nPoires\nPatates\nPeche\nBanane\nFraise\nCerise\nPrune\nAbricot\nTomate\nRadis"],
- ["Aléatoire", "", "\n".join([random.choice(["Pommes"]) for i in range(random.randint(10, 100))])]]
+ ["Aléatoire", "", "\n".join(["".join([chr(random.randint(ord('a'),ord('z')))) for j in range(random.randint(1, 60))]) for i in range(random.randint(10, 100))])]]
 ==
 
 
