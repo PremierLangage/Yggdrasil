@@ -44,8 +44,9 @@ solution==
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
-int read_word(char tab[100][64], int* size){
+int read_word(char** tab, int* size){
   int n = scanf("%s", tab[*size]);
   if (n == 1){
     *size = *size + 1;
@@ -53,13 +54,13 @@ int read_word(char tab[100][64], int* size){
   return n;
 }
 
-void sort_word(char tab[100][64], int size){
+void sort_word(char** tab, int size){
   int i, j;
   char tmp[64];
 
   for(i=0 ; i<size ; i++){
     for(j=0 ; j<i ; j++){
-      if (strcmp(tab[j], tab[j+1]) < 0){
+      if (strcmp(tab[j], tab[j+1]) > 0){
         strcpy(tmp, tab[j]);
         strcpy(tab[j], tab[j+1]);
         strcpy(tab[j], tmp);
@@ -69,9 +70,14 @@ void sort_word(char tab[100][64], int size){
 }
 
 int main(int argc, char* argv[]){
-  char tab[100][64];
+  char** tab;
   int nb_mots = 0;
   int i;
+  
+  tab = malloc(100 * sizeof(char*));
+  for (i=0 ; i<100 ; i++){
+    tab[i] = malloc(64 * sizeof(char));
+  }
 
   while(1){
     if (read_word(tab, &nb_mots) != 1){
