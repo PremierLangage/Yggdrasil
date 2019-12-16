@@ -55,7 +55,7 @@ int read_word(char** tab, int* size){
 
 void sort_word(char** tab, int size){
   int i, j;
-  tmp[64];
+  char tmp[64];
 
   for(i=0 ; i<size ; i++){
     for(j=0 ; j<i ; j++){
