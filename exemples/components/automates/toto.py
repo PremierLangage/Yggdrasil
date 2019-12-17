@@ -8,4 +8,8 @@ def completude(tomate):
     alpha=tomate['alphabet']
     states=tomate['states']
     transitions=tomate["transitions"]
-    return str(transitions)
+    ts=[]
+    for t in transitions:
+        for x in t['symbols']:
+            ts.append((t['fromstate'],t['toState'],x)) 
+    return str(ts)
