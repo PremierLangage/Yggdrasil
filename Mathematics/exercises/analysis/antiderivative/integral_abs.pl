@@ -5,7 +5,7 @@ keyboards_JSON['virtualKeyboards']="elementary"
 input.config = keyboards_JSON
 
 var('x')
-x0,x1=sort(list_randint_norep(2,-3,3))
+x0,x1=sorted(list_randint_norep(2,-3,3))
 a,b=list_randint_norep(2,-5,5,[0])
 f=abs(a*x+b)
 f_tex=latex(f)
