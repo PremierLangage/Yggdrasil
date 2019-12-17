@@ -21,9 +21,9 @@ else:
     dom=r"\rbrack -\infty,\b0\lbrack"
 
 if s>0:
-    sol=a/b*ln(b*x+c)
+    sol=Rational(a,b)*ln(b*x+c)
 else:
-    sol=-a/b*ln(-b*x-c)
+    sol=-Rational(a,b)*ln(-b*x-c)
 
 f=a/(b*x+c)
 latexf=latex(f)
