@@ -23,6 +23,6 @@ score,_,feedback=ans_expr(input.value,sol)
 ==
 
 solution ==
-L'intégrale vaut $! {{sol}} !$.
+L'intégrale vaut $! {{sol_tex}} !$.
 ==
 
