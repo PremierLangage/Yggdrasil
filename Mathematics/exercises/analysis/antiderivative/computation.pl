@@ -10,7 +10,8 @@ input.config = keyboards_JSON
 
 var('x')
 a=randitem([Rational(1,2),Rational(1,3),Rational(1,4),2,3,4])
-f=randitem([sin(a*x),cos(a*x),exp(a*x)])
+b=randint(-3,3,[0])
+f=randitem([sin(a*x+b),cos(a*x+b),sin(a*x)+b,cos(a*x)+b])
 latexf=latex(f)
 sol=integrate(f,x).doit()
 ==
