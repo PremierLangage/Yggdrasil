@@ -11,5 +11,5 @@ def completude(tomate):
     ts=[]
     for t in transitions:
         for x in t['symbols']:
-            ts.append((t['fromstate'],t['toState'],x)) 
+            ts.append((t['fromState'],t['toState'],x)) 
     return str(ts)
