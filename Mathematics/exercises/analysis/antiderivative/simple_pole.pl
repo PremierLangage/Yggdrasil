@@ -10,8 +10,7 @@ input.config = keyboards_JSON
 
 var('x')
 a=randint(-5,5,[0])
-b=randint(-5,5,[0])
-c=randint(-5,5,[0])
+b,c=list_randint_norep(2,-5,5,[0])
 
 s=randitem([-1,1])
 b0=Rational(-c,b)
