@@ -25,7 +25,7 @@ if s>0:
 else:
     sol=-Rational(a,b)*ln(-b*x-c)
 
-f=a/(b*x+c)
+f=simplify(a/(b*x+c))
 latexf=latex(f)
 sol_tex=latex(sol)
 ==
