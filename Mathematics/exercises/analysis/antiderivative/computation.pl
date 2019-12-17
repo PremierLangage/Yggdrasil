@@ -1,6 +1,6 @@
 extends = /Mathematics/template/mathinput.pl
 
-title = Calcul de dérivée
+title = Calcul de primitive
 
 lang = fr
 
@@ -25,8 +25,6 @@ evaluator==
 var('x')
 score,_,feedback=ans_antiderivative(input.value,sol,x)
 ==
-
-
 
 
 
