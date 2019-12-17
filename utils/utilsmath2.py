@@ -815,6 +815,24 @@ def ans_(strans,sol,local_dict,test1,test2):
                 return (score,error,feedback)
     return (100,0,"")
     
+def ans_eqconstant_(strans,sol,x,local_dict,test1,test2):
+    """
+    Analyze an expression.
+    """
+    try:
+        ans=str2expr(strans,local_dict)
+    except:
+        return (-1,2,"Votre réponse n'est pas une expression valide.")
+    for (f,score,error,feedback) in test1:
+        if not f(ans):
+                return (score,error,feedback)
+    if not (ans-sol).is_constant(x):
+        return (0,"NotEqual","")
+    for (f,score,error,feedback) in test2:
+        if not f(ans):
+                return (score,error,feedback)
+    return (100,0,"")
+    
 def ans_tuple_(strans,sol,parenth_enclosed,local_dict,test1,test2):
     """
     Analyze a tuple.
@@ -975,7 +993,7 @@ def ans_poly(strans,sol,x,domain="RR",imaginary_unit="i",form=""):
 #############
 
 
-def ans_real_or_inf(strans,sol,x,local_dict={}):
+def ans_real_or_inf(strans,sol,local_dict={}):
     """
     Analyze an answer of type extended real.
     """
@@ -986,7 +1004,7 @@ def ans_real_or_inf(strans,sol,x,local_dict={}):
     return ans_(strans,sol,local_dict,test1,test2)
 
 
-def ans_antiderivative(strans,sol,local_dict={}):
+def ans_antiderivative(strans,sol,x,local_dict={}):
     """
     Analyze an answer of type expr.
     """
@@ -994,5 +1012,5 @@ def ans_antiderivative(strans,sol,local_dict={}):
     test1=[(is_expr,-1,"NotExpr","Votre réponse n'est pas une expression valide.")]
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
-    return ans_(diff(strans,x),sol,local_dict,test1,test2)
+    return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
 
