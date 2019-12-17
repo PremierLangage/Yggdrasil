@@ -27,6 +27,7 @@ else:
 
 f=a/(b*x+c)
 latexf=latex(f)
+sol_tex=latex(sol)
 ==
 
 text ==
@@ -37,5 +38,9 @@ $$ f : x \mapsto {{latexf}} $$
 evaluator==
 var('x')
 score,_,feedback=ans_antiderivative(input.value,sol,x)
+==
+
+solution ==
+Une primitive est $$ x \mapsto {{sol_tex}} $$
 ==
 
