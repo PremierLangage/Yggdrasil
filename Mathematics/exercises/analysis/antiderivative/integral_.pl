@@ -8,12 +8,8 @@ var('x')
 a=randint(-5,5,[0])
 b,c=list_randint_norep(2,-5,5,[0])
 x0,x1=list_randint_norep(2,-2,2)
-b0=Rational(-c,b)
-if b>0:
-    dom=r"\rbrack %s ,+\infty\lbrack" % latex(b0)
-else:
-    dom=r"\rbrack -\infty, %s \lbrack" % latex(b0)
-
+d=randint(2,3)
+f=rand_int_poly(d,2,3)
 f=randitem([a*sqrt(b*x+c),a/sqrt(b*x+c)])
 f=simplify(f)
 f_tex=latex(f)
