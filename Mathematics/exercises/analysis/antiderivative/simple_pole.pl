@@ -9,7 +9,7 @@ keyboards_JSON['virtualKeyboards']="functions"
 input.config = keyboards_JSON
 
 var('x')
-a=randitem([Rational(1,2),Rational(1,3),Rational(1,4),2,3,4])
+a=randint(-5,5,[0])
 b=randint(-5,5,[0])
 c=randint(-5,5,[0])
 
