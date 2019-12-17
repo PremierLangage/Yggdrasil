@@ -5,8 +5,6 @@ keyboards_JSON['virtualKeyboards']="elementary"
 input.config = keyboards_JSON
 
 var('x')
-a=randint(-5,5,[0])
-b,c=list_randint_norep(2,-5,5,[0])
 x0,x1=list_randint_norep(2,-2,2)
 d=randint(2,3)
 f=rand_int_poly(d,2,3,x)
