@@ -33,6 +33,6 @@ sol_tex=latex(sol)
 
 text ==
 Calculer une primitive de la fonction
-$$ f : x \mapsto {{latexf}} $$
+$$ f : x \mapsto {{f_tex}} $$
 sur l'intervalle $! {{dom}} !$.
 ==
