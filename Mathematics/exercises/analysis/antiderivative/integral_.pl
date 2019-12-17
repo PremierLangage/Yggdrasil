@@ -14,7 +14,7 @@ sol_tex=latex(sol)
 ==
 
 text ==
-Calculer l'intégrale $! \displaystyle \int_{ {{x0}} }^{ {{x1}} } {{f_tex}} dx.$$
+Calculer l'intégrale $! \displaystyle \int_{ {{x0}} }^{ {{x1}} } {{f_tex}} dx !$.
 ==
 
 evaluator==
