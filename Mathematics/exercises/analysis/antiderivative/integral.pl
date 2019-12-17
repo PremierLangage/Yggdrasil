@@ -6,7 +6,7 @@ Calculer l'intégrale $! \displaystyle \int_{ {{x0}} }^{ {{x1}} } {{f_tex}} dx.$
 
 evaluator==
 var('x')
-score,_,feedback=ans_antiderivative(input.value,sol,x)
+score,_,feedback=ans_expr(input.value,sol)
 ==
 
 solution ==
