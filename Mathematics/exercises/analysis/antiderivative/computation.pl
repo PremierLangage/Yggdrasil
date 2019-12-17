@@ -16,7 +16,7 @@ sol=integrate(f,x).doit()
 ==
 
 text ==
-Calculer la primitive de 
+Calculer une primitive de la fonction
 $$ f : x \mapsto {{latexf}} $$
 ==
 
