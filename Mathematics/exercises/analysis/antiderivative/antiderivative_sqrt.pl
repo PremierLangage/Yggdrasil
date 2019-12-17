@@ -1,6 +1,6 @@
 extends = antiderivative_.pl
 
-title = Calcul de primitive (élément simple)
+title = Calcul de primitive
 
 lang = fr
 
@@ -27,7 +27,7 @@ sol_tex=latex(sol)
 
 text ==
 Calculer une primitive de la fonction
-$$ f : x \mapsto {{latexf}} $$
+$$ f : x \mapsto {{f_tex}} $$
 sur l'intervalle $! {{dom}} !$.
 ==
 
