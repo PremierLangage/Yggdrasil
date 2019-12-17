@@ -27,7 +27,7 @@ else:
 sol=simplify(sol)
 
 f=simplify(a/(b*x+c))
-latexf=latex(f)
+f_tex=latex(f)
 sol_tex=latex(sol)
 ==
 
