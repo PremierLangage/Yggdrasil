@@ -41,6 +41,7 @@ score,_,feedback=ans_antiderivative(input.value,sol,x)
 ==
 
 solution ==
-Une primitive est $$ x \mapsto {{sol_tex}} $$
+Les primitives de cette fonction sont les fonctions de la forme $$ x \mapsto {{sol_tex}} + k $$
+où $! k !$ est une constante réelle.
 ==
 
