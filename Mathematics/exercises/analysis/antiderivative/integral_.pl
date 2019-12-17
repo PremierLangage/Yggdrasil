@@ -3,7 +3,7 @@ extends = /Mathematics/template/mathinput.pl
 title = Calcul d'intégrales
 
 text ==
-Calculer l'intégrale $! \displaystyle \int_{ {{x0}} }^{ {{x1}} } {{f_tex}} \, dx !$.
+Calculer l'intégrale $! \displaystyle \int_{ {{x0_tex}} }^{ {{x1_tex}} } {{f_tex}} \, dx !$.
 ==
 
 evaluator==
