@@ -1,6 +1,7 @@
 
 
 
+
 def completude(tomate):
     """
     vérifier que tout les états ont une transition par toutes les lettres
@@ -11,5 +12,9 @@ def completude(tomate):
     ts=[]
     for t in transitions:
         for x in t['symbols']:
-            ts.append((t['fromState'],t['toState'],x)) 
-    return str(ts)
+            ts.append((t['fromState'],x)) 
+    for s in states:
+        for a in alpha:
+            if (s,a) not in ts:
+                return False
+    return True
