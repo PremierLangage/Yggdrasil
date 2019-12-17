@@ -7,5 +7,5 @@ def completude(tomate):
     """
     alpha=tomate['alphabet']
     states=tomate['states']
-    transitions=["transitions"]
+    transitions=tomate["transitions"]
     return str(transitions)
