@@ -15,7 +15,7 @@ d=randint(4,7)
 
 f=a*(b*x+c)**d
 f_tex=latex(f)
-sol=integrate(f,x).doit()
+sol=simplify(Rational(a,b*(d+1))*(b*x+c)**(d+1))
 sol_tex=latex(sol)
 ==
 
