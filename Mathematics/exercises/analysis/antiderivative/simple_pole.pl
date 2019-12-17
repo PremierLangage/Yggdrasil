@@ -16,9 +16,9 @@ c=randint(-5,5,[0])
 s=randitem([-1,1])
 b0=Rational(-c,b)
 if (b>0 and s>0) or (b<0 and s<0):
-    dom=r"\rbrack \b0,+\infty\lbrack"
+    dom=f"\rbrack {b0},+\infty\lbrack"
 else:
-    dom=r"\rbrack -\infty,\b0\lbrack"
+    dom=f"\rbrack -\infty,{b0}\lbrack"
 
 if s>0:
     sol=Rational(a,b)*ln(b*x+c)
