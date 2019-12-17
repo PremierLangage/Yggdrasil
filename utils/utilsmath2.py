@@ -975,7 +975,7 @@ def ans_poly(strans,sol,x,domain="RR",imaginary_unit="i",form=""):
 #############
 
 
-def ans_real_or_inf(strans,sol,local_dict={}):
+def ans_real_or_inf(strans,sol,x,local_dict={}):
     """
     Analyze an answer of type extended real.
     """
@@ -995,3 +995,4 @@ def ans_antiderivative(strans,sol,local_dict={}):
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_(diff(strans,x),sol,local_dict,test1,test2)
+
