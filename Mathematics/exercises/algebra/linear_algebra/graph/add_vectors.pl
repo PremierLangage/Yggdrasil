@@ -10,9 +10,9 @@ while True:
     ux,uy=list_randint(2,-5,5,[0])
     vx,vy=list_randint(2,-5,5,[0])
     wx,wy=ux+vx,uy+vy
-    if abs(wx)<6 and abs(wy)<6 and (wx,wv)!=(0,0):
+    if abs(wx)<6 and abs(wy)<6 and (wx,wy)!=(0,0):
         break
-         
+
 drawer.script = Template(script).render(locals())
 ==
 
