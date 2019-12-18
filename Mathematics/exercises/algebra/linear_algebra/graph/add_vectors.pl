@@ -67,14 +67,14 @@ board.create('point',[{{x}}, {{y}}],{size:2,name:'',color:'red'});
 ==
 
 evaluator ==
-x= drawer.points['M']['x']
-y= drawer.points['M']['y']
+x= jxg.points['M']['x']
+y= jxg.points['M']['y']
 
 from jinja2 import Template
 from math import hypot
 if hypot(x-wx, y-wy)<0.1:
      score=100
-     jxg.script = Template(script_solution).render(locals())
+     #jxg.script = Template(script_solution).render(locals())
      jxg.points = {}
      jxg.disabled = True
 else:
