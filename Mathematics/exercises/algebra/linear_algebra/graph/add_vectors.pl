@@ -1,6 +1,6 @@
 extends = /Mathematics/template/mathjsxgraph.pl
 
-title = Affixe dun nombre complexe
+title = Affixe d'un nombre complexe
 
 lang = fr
 
