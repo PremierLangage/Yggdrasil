@@ -34,7 +34,7 @@ var OV = board.create('arrow',[O, V]);
 var U = board.create('point',[ {{ux}} , {{uy}} ],{size:0,name:'u'});
 var OU = board.create('arrow',[O, U]);
 
-var M = board.create('point',[0, 0],{size:1,color:'none',name:' '});
+var M = board.create('point',[0, 0],{size:1,color:'none',withLabel:false});
 var OM = board.create('arrow',[O, M],{color:'red',fixed:true});
 
 function getMouseCoords(e) {
