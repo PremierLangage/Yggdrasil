@@ -5,8 +5,8 @@ title = Affixe d'un nombre complexe
 lang = fr
 
 before ==
-a=randint(-5,5,[0])
-b=randint(-5,5,[0])
+ux,uy=list_randint(2,-5,5,[0])
+vx,vy=list_randint(2,-5,5,[0])
 z=a+b*sp.I
 z_tex=latex(z)
 ==
