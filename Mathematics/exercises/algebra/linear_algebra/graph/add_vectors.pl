@@ -11,8 +11,6 @@ vx,vy=list_randint(2,-5,5,[0])
 import random as rd
 from jinja2 import Template
 
-series=[rd.randint(3,9) for _ in range(4)]
-
 drawer.script = Template(script).render(locals())
 ==
 
