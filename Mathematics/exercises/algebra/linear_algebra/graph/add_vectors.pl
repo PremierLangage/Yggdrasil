@@ -16,7 +16,7 @@ while True:
 jxg.script = Template(script).render(locals())
 ==
 
-drawer.attributes %=
+jxg.attributes %=
 {
     "boundingbox": [
       -6,
