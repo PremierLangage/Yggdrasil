@@ -76,13 +76,9 @@ if hypot(x-wx, y-wy)<0.1:
      score=100
      drawer.script = Template(script_solution).render(locals())
      drawer.points = {}
-     drawer.disabled = True
+     jxg.disabled = True
 else:
      score=0
-     if nbattempt + 1 >= int(maxattempt):
-        drawer.script = Template(script_solution).render(locals())
-        drawer.points = {}
-        drawer.disabled = True
 feedback=""
 ==
 
