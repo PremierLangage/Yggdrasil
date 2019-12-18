@@ -75,7 +75,7 @@ from math import hypot
 if hypot(x-wx, y-wy)<0.1:
      score=100
      #jxg.script = Template(script_solution).render(locals())
-     jxg.points = {}
+     #jxg.points = {}
      jxg.disabled = True
 else:
      score=0
