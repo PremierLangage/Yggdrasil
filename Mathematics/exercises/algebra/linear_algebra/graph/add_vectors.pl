@@ -5,11 +5,10 @@ title = Affixe d'un nombre complexe
 lang = fr
 
 before ==
+from jinja2 import Template
+
 ux,uy=list_randint(2,-5,5,[0])
 vx,vy=list_randint(2,-5,5,[0])
-
-import random as rd
-from jinja2 import Template
 
 drawer.script = Template(script).render(locals())
 ==
@@ -30,7 +29,7 @@ script ==
 board.create('grid',[],{gridX:1,gridY:1});
 
 var O = board.create('point',[0, 0],{visible:false});
-var V = board.create('point',[ {{vx}} , {{vy}} ],{visible:false});
+var V = board.create('point',[ {{vx}} , {{vy}} ],{size:0});
 var OV = board.create('arrow',[O, V]);
 var U = board.create('point',[ {{ux}} , {{uy}} ],{visible:false});
 var OU = board.create('arrow',[O, U]);
@@ -56,7 +55,7 @@ board.on('down', down)
 
 
 text ==
-Placer le point $% M %$ d'affixe $%{{ z_tex }}%$ dans le plan ci-dessous.
+On considère deux vecteurs u et v représentés graphiquement ci-dessous. On pose w=2u−12v. Cliquer à l'emplacement de l'extrémité du vecteur w. 
 ==
 
 script_solution ==
