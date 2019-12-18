@@ -1,6 +1,6 @@
 extends = mathbasic.pl
 
-drawer =: MathDrawer
+jxg =: MathDrawer
 
 before==
 ==
@@ -26,4 +26,5 @@ form==
 {{ drawer|component }}
 </center>
 ==
+
 
