@@ -12,5 +12,6 @@ b=randint(-3,3,[0])
 f=randitem([sin(a*x+b),cos(a*x+b),sin(a*x)+b,cos(a*x)+b])
 f_tex=latex(f)
 sol=integrate(f,x).doit()
+sol_tex=latex(sol)
 ==
 
