@@ -26,9 +26,9 @@ drawer.attributes %=
 drawer.script ==
 board.create('grid',[],{gridX:1,gridY:1});
 
-var O = board.create('point', [0, 0],{visible:false});
-var V = board.create('point', [1.0, 1.0]);
-var v = board.create('arrow', [O, V]);
+var O = board.create('point',[0, 0],{visible:false});
+var V = board.create('point',[1.0, 1.0],{visible:false});
+var v = board.create('arrow',[O, V]);
 
 const M = board.create('point',[0, 0],{size:2,name:'M',color:'red'});
 
