@@ -23,7 +23,7 @@ extracss==
 
 form==
 <center>
-{{ drawer|component }}
+{{ jxg|component }}
 </center>
 ==
 
