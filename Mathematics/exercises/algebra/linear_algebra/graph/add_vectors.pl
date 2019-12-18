@@ -25,10 +25,7 @@ drawer.script ==
 board.create('grid',[],{gridX:1,gridY:1});
 
 var O = board.create('point',[0, 0],{visible:false});
-var V = board.create('point',[{{vx}}, {{vy}}],{visible:false});
-var OV = board.create('arrow',[O, V]);
-var U = board.create('point',[{{ux}}, {{uy}}],{visible:false});
-var OU = board.create('arrow',[O, U]);
+
 
 var M = board.create('point',[0, 0],{visible:false});
 var OM = board.create('arrow',[O, M],{color:'red'});
