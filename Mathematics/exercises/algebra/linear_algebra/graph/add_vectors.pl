@@ -31,7 +31,7 @@ board.create('grid',[],{gridX:1,gridY:1});
 var O = board.create('point',[0, 0],{visible:false});
 var V = board.create('point',[ {{vx}} , {{vy}} ],{size:0,name:'v'});
 var OV = board.create('arrow',[O, V]);
-var U = board.create('point',[ {{ux}} , {{uy}} ],{size:0,name:'v'});
+var U = board.create('point',[ {{ux}} , {{uy}} ],{size:0,name:'u'});
 var OU = board.create('arrow',[O, U]);
 
 var M = board.create('point',[0, 0],{visible:false});
