@@ -4,7 +4,11 @@ introduction =
 
 @ /Mathematics/exercises/analysis/antiderivative/antiderivative_sincos.pl
 @ /Mathematics/exercises/analysis/antiderivative/antiderivative_sqrt.pl
+@ /Mathematics/exercises/analysis/antiderivative/antiderivative_power.pl
 @ /Mathematics/exercises/analysis/antiderivative/pole_simple.pl
 @ /Mathematics/exercises/analysis/antiderivative/pole_double.pl
+@ /Mathematics/exercises/analysis/antiderivative/integral_poly.pl
+@ /Mathematics/exercises/analysis/antiderivative/integral_sincos.pl
+@ /Mathematics/exercises/analysis/antiderivative/integral_abs.pl
 
 
