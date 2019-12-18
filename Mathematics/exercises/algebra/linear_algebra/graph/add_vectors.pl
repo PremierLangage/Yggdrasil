@@ -25,8 +25,6 @@ drawer.attributes %=
 
 drawer.script ==
 board.create('grid',[],{gridX:1,gridY:1});
-board.create('axis',[[0,0],[1,0]]);
-board.create('axis',[[0,0],[0,1]]);
 
 var O = board.create('point', [O, O]);
 var V = board.create('point', [1.0, 1.0]);
