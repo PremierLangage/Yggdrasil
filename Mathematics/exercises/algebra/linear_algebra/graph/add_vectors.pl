@@ -7,8 +7,6 @@ lang = fr
 before ==
 ux,uy=list_randint(2,-5,5,[0])
 vx,vy=list_randint(2,-5,5,[0])
-z=a+b*sp.I
-z_tex=latex(z)
 ==
 
 drawer.attributes %=
