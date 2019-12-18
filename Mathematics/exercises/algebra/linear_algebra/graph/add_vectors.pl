@@ -7,6 +7,14 @@ lang = fr
 before ==
 ux,uy=list_randint(2,-5,5,[0])
 vx,vy=list_randint(2,-5,5,[0])
+
+before ==
+import random as rd
+from jinja2 import Template
+
+series=[rd.randint(3,9) for _ in range(4)]
+
+drawer.script = Template(script).render(locals())
 ==
 
 drawer.attributes %=
@@ -21,7 +29,7 @@ drawer.attributes %=
   }
 ==
 
-drawer.script ==
+script ==
 board.create('grid',[],{gridX:1,gridY:1});
 
 var O = board.create('point',[0, 0],{visible:false});
