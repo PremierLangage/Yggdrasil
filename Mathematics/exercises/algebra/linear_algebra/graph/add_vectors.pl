@@ -8,7 +8,6 @@ before ==
 ux,uy=list_randint(2,-5,5,[0])
 vx,vy=list_randint(2,-5,5,[0])
 
-before ==
 import random as rd
 from jinja2 import Template
 
