@@ -29,7 +29,7 @@ script ==
 board.create('grid',[],{gridX:1,gridY:1});
 
 var O = board.create('point',[0, 0],{visible:false});
-var V = board.create('point',[ {{vx}} , {{vy}} ],{size:0});
+var V = board.create('point',[ {{vx}} , {{vy}} ],{size:0,label:'v'});
 var OV = board.create('arrow',[O, V]);
 var U = board.create('point',[ {{ux}} , {{uy}} ],{visible:false});
 var OU = board.create('arrow',[O, U]);
