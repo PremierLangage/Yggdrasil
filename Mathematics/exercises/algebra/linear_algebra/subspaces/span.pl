@@ -25,7 +25,7 @@ input3.config = keyboards_JSON
 input4.config = keyboards_JSON
 
 n=2
-m=3
+m=4
 d=m-n
 coeffbound = 4
 A=rand_int_matrix(n,m,coeffbound)
