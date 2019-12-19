@@ -33,11 +33,6 @@ sys_tex=latexsys(A,B)
 lstvar=["x","y","z","t"]
 lstinput=[input1,input2,input3,input4]
 lstinput=lstinput[:n]
-
-sol_tex=""
-for i in range(n-1):
-    sol_tex += r" %s = %s, " % (lstvar[i],sol[i])
-sol_tex+=r"%s = %s" % (lstvar[n-1],sol[n-1])
 ==
 
 text ==
