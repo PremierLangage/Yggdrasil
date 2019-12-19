@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathexpr.pl
+extends = /Mathematics/template/mathinput.pl
 
 title = Système linéaire
 
@@ -72,6 +72,7 @@ score,_,feedback=ans_tuple_expr(ans,sol,parentheses=False)
 solution == 
 Les solutions sont $! {{sol_tex}} !$.
 ==
+
 
 
 
