@@ -92,15 +92,7 @@ def lapin(mois):
             ado2=ado1
             ado1=jeune
             jeune=vieux
-            s=""
-            if jeune:
-                s+= str(jeune)+" couples de lapins jeunes,"
-            if ado1:
-                s+= str(ado1)+ "couple de lapins d'un mois,"
-            if ado2:
-                s+=str(ado2)+ "couple de lapins de deux mois,"
-            if vieux:
-                s+= str(vieux)+" couples de vieux lapins") 
+
     #return jeune,ado1,ado2,vieux
     return jeune+ado1+ado2+vieux
 import random, sys
@@ -112,6 +104,18 @@ pltest3=""">>> lapin({})\n{}""".format(n, lapin(n))
 ==
 
 
+bb==
+            s=" Mois "+str(i)+": "
+            if jeune:
+                s+= str(jeune)+" couples de lapins jeunes,"
+            if ado1:
+                s+= str(ado1)+ " couple de lapins d'un mois,"
+            if ado2:
+                s+=str(ado2)+ " couple de lapins de deux mois,"
+            if vieux:
+                s+= str(vieux)+" couples de vieux lapins"
+            print(s)
+==
 
 
 
