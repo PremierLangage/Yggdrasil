@@ -13,15 +13,16 @@ image =$ Arbre.png
 title= Des lapins ... 
 
 text==
-Un couple de lapins arrive sur l'ile de Quang Binh le 1er septembre. Ce couple a sa première portée à deux mois, puis une portée tous les mois.
+Un couple de lapins arrive sur l'ile de Quang Binh le 1er septembre. Ce couple a sa première portée à trois mois, puis une portée tous les mois.
 Chaque portée est un couple de lapins. Tous les couples ainsi obtenus se reproduisent
 de la même manière.<br>
 1er septembre : 1 couple de jeunes lapins<br>
-1er octobre : 1 couple de  lapins d’un mois<br>
-1er novembre : 1 couple de vieux et 1 couple de petits<br>
-1er décembre : 1 couple de jeunes lapins ,1 couple de  lapins d’un mois et 1 couple de vieux<br>
-1er janvier : 2 couple de jeunes lapins ,1 couple de  lapins d’un mois et 2 couples de vieux, soit 10 lapins.<br>
-<img src="{{ image }}"/>
+1er octobre : 1 couple de lapins d’un mois<br>
+1er novembre : 1 couple de lapins de deux  mois<br>
+1er décembre : 1 couple de jeunes lapins ,  1 couple de vieux<br>
+1er janvier : 1 couple de jeunes lapins ,1 couple de  lapins d’un mois  2 couples de vieux, soit 10 lapins.<br>
+1er février : 2 couple de jeunes lapins ,1 couple de  lapins d’un mois et 1 couple de lapins de deux mois  et 3 couples de vieux, soit 14 lapins.<br>
+
 <br>
 Ecrire une fontion `lapin(mois)` qui reçoit un entier décrivant le nombre de mois
  écoulé et renvoie le nombre de couples.(*On distinguera le nombre de couples de nouveaux lapins, le nombre
@@ -43,12 +44,6 @@ plus d'autres ....
 ==
 
 
-pltest1==
->>> lapin(4) != None # verification de l'existance de la fonction lapin 
-True
->>> lapin(4)
-4
-==
 
 pltest2==
 >>> lapin(43) # Beaucoup de lapins
@@ -59,10 +54,10 @@ before==
 def lapin(mois):
     if mois<0:
         return 0
-    vieux=1    
+    vieux=0    
     ado1=0
     ado2=0
-    jeune=0
+    jeune=1
     
     if mois>1:
         for i in range(1,mois):
@@ -74,6 +69,8 @@ def lapin(mois):
     return jeune+ado1+ado2+vieux
 
 import random, sys
+
+pltest1=""">>> lapin({})\n{}""".format(4, lapin(4))
 
 n=random.randint(44,88)
 
@@ -84,10 +81,10 @@ after==
 def lapin(mois):
     if mois<0:
         return 0
-    vieux=1    
+    vieux=0    
     ado1=0
     ado2=0
-    jeune=0
+    jeune=1
     
     if mois>1:
         for i in range(1,mois):
@@ -95,6 +92,15 @@ def lapin(mois):
             ado2=ado1
             ado1=jeune
             jeune=vieux
+            s=""
+            if jeune:
+                s+= str(jeune)+" couples de lapins jeunes,"
+            if ado1:
+                s+= str(ado1)+ "couple de lapins d'un mois,"
+            if ado2:
+                s+=str(ado2)+ "couple de lapins de deux mois,"
+            if vieux:
+                s+= str(vieux)+" couples de vieux lapins") 
     #return jeune,ado1,ado2,vieux
     return jeune+ado1+ado2+vieux
 import random, sys
@@ -104,6 +110,7 @@ pltest3=""">>> lapin({})\n{}""".format(n, lapin(n))
 
 
 ==
+
 
 
 
