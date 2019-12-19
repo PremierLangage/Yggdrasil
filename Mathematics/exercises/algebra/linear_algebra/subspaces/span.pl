@@ -37,6 +37,7 @@ lstinput=lstinput[:n]
 ==
 
 text ==
+{{A}}
 On considère l'ensemble des vecteurs $! (x,y,z) !$ tels que
 $$ {{sys_tex}} $$
 Trouver un vecteur qui engendre cet ensemble.
