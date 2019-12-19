@@ -26,8 +26,7 @@ input4.config = keyboards_JSON
 
 n=2
 m=3
-coeffbound = int(param['coeffbound'])
-sparsity=float(param['sparsity'])
+coeffbound = 4
 A=rand_int_matrix(n,m,coeffbound)
 B=rand_int_matrix(n,1,coeffbound)
 sys_tex=latexsys(A,B)
