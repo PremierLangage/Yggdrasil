@@ -26,9 +26,10 @@ input4.config = keyboards_JSON
 
 n=2
 m=3
+d=m-n
 coeffbound = 4
 A=rand_int_matrix(n,m,coeffbound)
-B=rand_int_matrix(n,1,coeffbound)
+B=zeros(n,1)
 sys_tex=latexsys(A,B)
 lstvar=["x","y","z","t"]
 lstinput=[input1,input2,input3,input4]
@@ -63,10 +64,3 @@ elif n==4:
     ans=[input1.value,input2.value,input3.value,input4.value]
 score,_,feedback=ans_tuple_expr(ans,sol,parentheses=False)
 ==
-
-solution == 
-Les solutions sont $! {{sol_tex}} !$.
-==
-
-
-
