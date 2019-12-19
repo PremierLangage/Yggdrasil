@@ -154,7 +154,7 @@ def latex(expr):
 
 def latexsys(A,B,lstvar=['x','y','z','t','u','v','w']):
     n,m=A.shape
-    X=list(map(sp.symbols,lstvar[0:n]))
+    X=list(map(sp.symbols,lstvar[0:m]))
     lhs=A*sp.Matrix(X)
     code="\\left\lbrace \\\\begin{align}"
     for i in range(n):
@@ -1013,4 +1013,5 @@ def ans_antiderivative(strans,sol,x,local_dict={}):
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
+
 
