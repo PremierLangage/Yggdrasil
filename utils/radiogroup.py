@@ -43,7 +43,7 @@ class CustomRadioGroup(Component):
             elif e['id'] == selectedId:
                 score = 0
                 e['css'] = 'error-state'
-                e['content']+= r"<span class='fas fa-check' style='padding-left: 1em'></span>"
+                e['content']+= r"<span class='fas fa-times' style='padding-left: 1em'></span>"
         return (score, "")
 
 
