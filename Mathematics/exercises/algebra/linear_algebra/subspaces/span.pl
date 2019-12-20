@@ -58,7 +58,7 @@ input4 =: MathInput
 evaluator ==
 ans1=str2struct(input1.value)
 ans2=str2struct(input2.value)
-M=[Matrix(ans1),Matrix(ans2)]
+M=BlockMatrix([Matrix(ans1),Matrix(ans2)])
 score=100
-feedback=str(M)
+feedback=str(M.rank())
 ==
