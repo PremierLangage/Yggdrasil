@@ -36,12 +36,14 @@ class CustomRadioGroup(Component):
         selectedId = self.selection
         for e in self.items:
             if e['id'] == self._sol:
-                e['css'] = 'glyphicon glyphicon-ok success-state'
+                e['css'] = 'success-state'
+                e['content']= r"<span class="glyphicon glyphicon-ok"></span>"+e['content']
                 if e['id'] == selectedId:
                     score = 100
             elif e['id'] == selectedId:
                 score = 0
                 e['css'] = 'error-state'
         return (score, "")
+
 
 
