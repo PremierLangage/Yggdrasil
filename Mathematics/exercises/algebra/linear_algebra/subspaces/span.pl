@@ -60,5 +60,5 @@ ans1=str2struct(input1.value)
 ans2=str2struct(input2.value)
 M=[Matrix(ans1),Matrix(ans2)]
 score=100
-feedback=str(ans)
+feedback=str(M)
 ==
