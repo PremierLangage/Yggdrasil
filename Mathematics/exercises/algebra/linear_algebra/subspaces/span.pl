@@ -56,5 +56,7 @@ input3 =: MathInput
 input4 =: MathInput
 
 evaluator ==
-score,_,feedback=ans_tuple_expr(ans,sol,parentheses=False)
+ans=str2struct(input1.value)
+score=100
+feedback=str(ans)
 ==
