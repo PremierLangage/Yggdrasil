@@ -470,9 +470,15 @@ def rand_int_matrix_invertible(n,bound,excluded_values=[],sparsity=0):
     """
     Generate an invertible random matrix with integer entries.
     """
+    return rand_int_matrix_fullrank(n,n,bound,excluded_values,sparsity):
+            
+def rand_int_matrix_fullrank(n,p,bound,excluded_values=[],sparsity=0):
+    """
+    Generate a full rank random matrix with integer entries.
+    """
     while True:
-        M=rand_int_matrix(n,n,bound,excluded_values,sparsity)
-        if M.det()!=0:
+        M=rand_int_matrix(n,p,bound,excluded_values,sparsity)
+        if M.rank()==min([n,p]):
             return M
 
 def rand_int_matrix_givenrank(n,r):
@@ -1013,5 +1019,6 @@ def ans_antiderivative(strans,sol,x,local_dict={}):
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
+
 
 
