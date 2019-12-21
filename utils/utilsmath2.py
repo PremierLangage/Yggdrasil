@@ -155,15 +155,18 @@ def latex(expr):
 def latexsys(A,B,lstvar=['x','y','z','t','u','v','w']):
     n,m=A.shape
     X=list(map(sp.symbols,lstvar[0:m]))
-    lhs=A*sp.Matrix(X)
-    code="\\left\lbrace \\\\begin{align}"
+    if 
+    code="\\\\begin{align}"
     for i in range(n):
         code+="&" + latex_lincomb(A[i,:],lstvar)
         if i<n-1:
             code+=" = "+latex(B[i])+" \\\\\\ "
         else: 
-            code+=" = "+latex(B[i])+" \\\\end{align}\\right."
-    return code
+            code+=" = "+latex(B[i])+" \\\\end{align}"
+    if n==1:
+        return code
+    else:
+        return "\\left %s \\right." % code 
 
 def latex_lincomb(coeff,vec):
     code=""
