@@ -41,19 +41,6 @@ $$ {{sys_tex}} $$
 Trouver un vecteur qui engendre cet ensemble.
 ==
 
-form ==
-{% for i in range(d) %}
-<div class="fcontainer">
-<span>$% {{ lstvec[i] }} = %$</span>{{input[i]|component}}
-</div>
-{% endfor %}
-==
-
-input1 =: MathInput
-input2 =: MathInput
-input3 =: MathInput
-input4 =: MathInput
-
 evaluator ==
 input=[input1,input2]
 
