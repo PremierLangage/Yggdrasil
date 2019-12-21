@@ -32,8 +32,7 @@ A=rand_int_matrix_fullrank(n,m,coeffbound)
 B=zeros(n,1)
 sys_tex=latexsys(A,B)
 lstvec=["u","v","w"]
-lstinput=[input1,input2,input3,input4]
-lstinput=lstinput[:n]
+input=[input1,input2]
 ==
 
 text ==
@@ -43,9 +42,9 @@ Trouver un vecteur qui engendre cet ensemble.
 ==
 
 form ==
-{% for input in lstinput %}
+{% for i in range(d) %}
 <div class="fcontainer">
-<span>$% {{ lstvec[loop.index0] }} = %$</span>{{input|component}}
+<span>$% {{ lstvec[i] }} = %$</span>{{input[i]|component}}
 </div>
 {% endfor %}
 ==
@@ -56,6 +55,8 @@ input3 =: MathInput
 input4 =: MathInput
 
 evaluator ==
+input=[input1,input2]
+
 ans1=str2struct(input1.value)
 ans2=str2struct(input2.value)
 M=Matrix([ans1,ans2]).transpose()
