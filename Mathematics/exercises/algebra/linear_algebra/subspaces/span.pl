@@ -16,7 +16,6 @@ A=rand_int_matrix_fullrank(n,m,coeffbound)
 B=zeros(n,1)
 sys_tex=latexsys(A,B)
 lstvec=["u","v","w"]
-input=[input1,input2]
 ==
 
 text ==
