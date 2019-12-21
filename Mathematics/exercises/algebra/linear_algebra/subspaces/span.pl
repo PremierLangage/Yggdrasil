@@ -28,7 +28,7 @@ n=2
 m=4
 d=m-n
 coeffbound = 4
-A=rand_int_matrix(n,m,coeffbound)
+A=rand_int_matrix_fullrank(n,m,coeffbound)
 B=zeros(n,1)
 sys_tex=latexsys(A,B)
 lstvar=["x","y","z","t"]
@@ -62,3 +62,4 @@ M=Matrix([ans1,ans2]).transpose()
 score=100
 feedback=str(M)
 ==
+
