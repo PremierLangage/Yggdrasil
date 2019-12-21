@@ -470,7 +470,7 @@ def rand_int_matrix_invertible(n,bound,excluded_values=[],sparsity=0):
     """
     Generate an invertible random matrix with integer entries.
     """
-    return rand_int_matrix_fullrank(n,n,bound,excluded_values,sparsity):
+    return rand_int_matrix_fullrank(n,n,bound,excluded_values,sparsity)
             
 def rand_int_matrix_fullrank(n,p,bound,excluded_values=[],sparsity=0):
     """
