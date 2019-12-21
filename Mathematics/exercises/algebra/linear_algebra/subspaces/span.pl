@@ -19,10 +19,7 @@ c-math-input {
 
 before ==
 keyboards_JSON['virtualKeyboards']="elementary"
-input1.config = keyboards_JSON
-input2.config = keyboards_JSON
-input3.config = keyboards_JSON
-input4.config = keyboards_JSON
+input.config = keyboards_JSON
 
 n=1
 m=3
