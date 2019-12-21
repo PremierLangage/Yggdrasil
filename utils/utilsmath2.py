@@ -154,8 +154,6 @@ def latex(expr):
 
 def latexsys(A,B,lstvar=['x','y','z','t','u','v','w']):
     n,m=A.shape
-    X=list(map(sp.symbols,lstvar[0:m]))
-    if 
     code="\\\\begin{align}"
     for i in range(n):
         code+="&" + latex_lincomb(A[i,:],lstvar)
