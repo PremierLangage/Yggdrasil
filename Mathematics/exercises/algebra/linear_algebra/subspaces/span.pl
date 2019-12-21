@@ -1,6 +1,6 @@
 extends = /Mathematics/template/mathinput.pl
 
-title = Système linéaire
+title = Représentation paramétrique des sous-espaces
 
 lang = fr
 
