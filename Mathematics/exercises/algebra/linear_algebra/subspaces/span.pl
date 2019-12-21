@@ -24,8 +24,8 @@ input2.config = keyboards_JSON
 input3.config = keyboards_JSON
 input4.config = keyboards_JSON
 
-n=2
-m=4
+n=1
+m=3
 d=m-n
 coeffbound = 4
 A=rand_int_matrix_fullrank(n,m,coeffbound)
