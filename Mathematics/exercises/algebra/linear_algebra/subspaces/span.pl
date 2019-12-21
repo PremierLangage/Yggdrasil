@@ -31,7 +31,7 @@ coeffbound = 4
 A=rand_int_matrix_fullrank(n,m,coeffbound)
 B=zeros(n,1)
 sys_tex=latexsys(A,B)
-lstvar=["x","y","z","t"]
+lstvec=["u","v","w"]
 lstinput=[input1,input2,input3,input4]
 lstinput=lstinput[:n]
 ==
@@ -45,7 +45,7 @@ Trouver un vecteur qui engendre cet ensemble.
 form ==
 {% for input in lstinput %}
 <div class="fcontainer">
-<span>$% {{ lstvar[loop.index0] }} = %$</span>{{input|component}}
+<span>$% {{ lstvec[loop.index0] }} = %$</span>{{input|component}}
 </div>
 {% endfor %}
 ==
