@@ -4,19 +4,6 @@ title = Représentation paramétrique des sous-espaces
 
 lang = fr
 
-
-extracss == #|html| 
-<style>
-.fcontainer {
-    display: flex;
-    align-items: center;
-}
-c-math-input {
-    width: 100%;
-}
-</style>
-==
-
 before ==
 keyboards_JSON['virtualKeyboards']="elementary"
 input.config = keyboards_JSON
