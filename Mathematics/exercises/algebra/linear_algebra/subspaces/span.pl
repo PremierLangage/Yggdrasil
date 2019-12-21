@@ -42,11 +42,8 @@ Trouver un vecteur qui engendre cet ensemble.
 ==
 
 evaluator ==
-input=[input1,input2]
-
-ans1=str2struct(input1.value)
-ans2=str2struct(input2.value)
-M=Matrix([ans1,ans2]).transpose()
+ans=str2struct(input.value)
+M=Matrix(ans).transpose()
 score=100
 feedback=str(M)
 ==
