@@ -27,7 +27,8 @@ Trouver un vecteur qui engendre cet ensemble.
 evaluator ==
 ans=str2struct(input.value)
 M=Matrix(ans).transpose()
+Q=A*M
 score=100
-feedback=str(ans)
+feedback=str(Q)
 ==
 
