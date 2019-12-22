@@ -28,8 +28,9 @@ evaluator ==
 ans=str2struct(input.value)
 M=Matrix(ans).transpose()
 Q=A*M
-if Q==zeros([1,d])
-score=100
+score=0
+if Q==zeros([1,d]):
+    score=100
 feedback=str(Q)
 ==
 
