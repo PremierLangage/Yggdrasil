@@ -15,7 +15,6 @@ sortlist.loadContent([str(n) for n in numbers])
 ==
 
 text ==
-{{numbers}}
 Ordonner les nombres suivants du plus petit au plus grand.
 ==
 
@@ -29,4 +28,5 @@ sortlist.disabled=True
 ==
 
 settings.feedback.class = score
+
 
