@@ -34,7 +34,8 @@ class CustomSortList(Component):
                 e['css'] = 'error-state animated fadeIn'
                 errors += 1
         tau,_=kendalltau(orderans,list(range(n)))
-        score=int(max([0,tau])*100)
+        score=round(max([0,tau])*100)
         return (score,str(score))
+
 
 
