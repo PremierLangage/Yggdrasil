@@ -31,6 +31,6 @@ Q=A*M
 score=0
 if Q==zeros([1,d]):
     score=100
-feedback=str(Q)
+feedback=""
 ==
 
