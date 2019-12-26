@@ -25,7 +25,7 @@ Trouver un vecteur qui engendre cet ensemble.
 ==
 
 evaluator ==
-ans=str2struct("("+input.value+")")
+ans=str2struct("\{"+input.value+"\}")
 if not all([len(v)==m for v in ans]):
     grade=(0,"")
 else:
