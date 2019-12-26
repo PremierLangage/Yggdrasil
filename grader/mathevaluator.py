@@ -94,6 +94,8 @@ if __name__ == "__main__":
         sys.exit(1)
     
     dic = get_context()
+    for key in dic:
+        dic[key]=str_to_sympy(dic[key])
     dic['answer'] = get_answers()
     if 'evaluator' in dic:
         dic = dict(list(globals().items()) + list(dic.items()))
