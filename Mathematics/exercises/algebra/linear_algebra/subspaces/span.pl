@@ -27,7 +27,7 @@ Trouver un vecteur qui engendre cet ensemble.
 evaluator ==
 ans=str2struct("\{"+input.value+"\}")
 if not all([len(v)==m for v in ans]):
-    grade=(0,"")
+    grade=(0,"Mauvaise taille")
     StopEvaluatorExec()
 else:
     M=Matrix(ans).transpose()
