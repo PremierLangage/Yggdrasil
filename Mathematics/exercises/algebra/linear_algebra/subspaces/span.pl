@@ -38,6 +38,6 @@ else:
     #    grade=(100,"")
 
 M=Matrix(ans).transpose()
-score,feedback=100,str(M)
+score,feedback=100,str(A*M)
 ==
 
