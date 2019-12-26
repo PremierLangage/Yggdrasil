@@ -27,17 +27,15 @@ Trouver un vecteur qui engendre cet ensemble.
 evaluator ==
 ans=str2struct("\{"+input.value+"\}")
 if not all([len(v)==m for v in ans]):
-    grade=(0,"Mauvaise taille")
+    score,feedback=(0,"Mauvaise taille")
     StopEvaluatorExec()
-else:
-    M=Matrix(ans).transpose()
-    if not (A*M==zeros(n,d)):
-        grade=(0,"Certains vecteurs ne sont pas dans l'ensemble.")
-    #elif M.rank()!=d:
-        grade=(0,"N'engendre pas")
-    #else:
-        grade=(100,"")
-
-score,feedback=grade
+M=Matrix(ans).transpose()
+if not (A*M==zeros(n,d)):
+    score,feedback=(0,"Certains vecteurs ne sont pas dans l'ensemble.")
+    StopEvaluatorExec()
+if M.rank()!=d:
+    score,feedback=(0,"N'engendre pas")
+    StopEvaluatorExec()
+score,feedback=(100,"")
 ==
 
