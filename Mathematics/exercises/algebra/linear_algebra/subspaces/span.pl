@@ -28,7 +28,7 @@ evaluator ==
 ans=str2struct("\{"+input.value+"\}")
 if not all([len(v)==m for v in ans]):
     score,feedback=(0,"Mauvaise taille")
-    StopEvaluatorExec
+    StopEvaluatorExec:
 M=Matrix(ans).transpose()
 if not (A*M==zeros(n,d)):
     score,feedback=(0,"Certains vecteurs ne sont pas dans l'ensemble.")
