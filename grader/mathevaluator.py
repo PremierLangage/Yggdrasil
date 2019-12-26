@@ -96,11 +96,16 @@ if __name__ == "__main__":
     dic = get_context()
     dic['answer'] = get_answers()
     if 'evaluator' in dic:
+            dic = dict(list(globals().items()) + list(dic.items()))
+        if 'latexparam' in dic:
+            LatexPrinter._settings.update(eval(dic['latexparam']))
         dic['StopEvaluatorExec'] = StopEvaluatorExec
-        for key in dic:
-            dic[key]=str_to_sympy(dic[key])
-        code=dic['evaluator']
-        exec(add_try_clause(code, StopEvaluatorExec), globals(),dic)
+        print(add_try_clause(dic['evaluator'], StopEvaluatorExec), file=sys.stderr)
+        exec(add_try_clause(dic['evaluator'], StopEvaluatorExec), dic)
+        exec("", globals().copy())
+        for key in globals().copy():
+            if key in dic and dic[key] == globals()[key]:
+                del dic[key]
         for key in dic:
             dic[key]=sympy_to_str(dic[key])
     else:
@@ -153,6 +158,7 @@ if __name__ == "__main__":
                 format_feedback=format_analysis('fail',feedback,0,lang)
     
     output(score,format_feedback,dic)
+
 
 
 
