@@ -29,12 +29,7 @@ try:
     ans=str2struct("( "+input.value+" )")
     if not all([len(v)==m for v in L]):
         grade=(0,"")
-    else:
-        M=Matrix(ans).transpose()
-        if not A*M==zeros(n,d):
-            grade=(0,"Certains vecteurs ne sont pas dans l'ensemble.")
-        if M.rank()!=d:
-            grade=(0,"N'engendre pas")
+
 except:
     grade=(-1,"")
 
