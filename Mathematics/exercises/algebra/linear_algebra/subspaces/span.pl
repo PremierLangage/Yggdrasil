@@ -25,17 +25,17 @@ Trouver un vecteur qui engendre cet ensemble.
 ==
 
 evaluator ==
-ans=str2struct("\{"+input.value+"\}")
-if not all([len(v)==m for v in ans]):
-    score,feedback=(0,"Mauvaise taille")
-    StopEvaluatorExec
-M=Matrix(ans).transpose()
-if not (A*M==zeros(n,d)):
-    score,feedback=(0,"Certains vecteurs ne sont pas dans l'ensemble.")
-    StopEvaluatorExec()
-if M.rank()!=d:
-    score,feedback=(0,"N'engendre pas")
-    StopEvaluatorExec()
-score,feedback=(100,"")
+def evalans(strans):
+    ans=str2struct("\{"+input.value+"\}")
+    if not all([len(v)==m for v in ans]):
+        return (0,"Mauvaise taille")
+    M=Matrix(ans).transpose()
+    if not (A*M==zeros(n,d)):
+        return (0,"Certains vecteurs ne sont pas dans l'ensemble.")
+    if M.rank()!=d:
+        return (0,"N'engendre pas")
+    return (100,"")
+
+score,feedback=eval ns("\{"+input.value+"\}")
 ==
 
