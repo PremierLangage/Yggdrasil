@@ -36,6 +36,6 @@ def evalans(strans):
         return (0,"N'engendre pas")
     return (100,"")
 
-score,feedback=eval ns("\{"+input.value+"\}")
+score,feedback=evalans("\{"+input.value+"\}")
 ==
 
