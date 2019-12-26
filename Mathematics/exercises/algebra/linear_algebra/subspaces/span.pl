@@ -25,12 +25,18 @@ Trouver un vecteur qui engendre cet ensemble.
 ==
 
 evaluator ==
-ans=str2struct(input.value)
-M=Matrix(ans).transpose()
-Q=A*M
-score=0
-if Q==zeros(n,d):
-    score=100
-feedback=""
+try:    
+    ans=str2struct("("+input.value+")")
+    if not all([len(v)==m for v in L]):
+        grade=(0,"")
+    else:
+        M=Matrix(ans).transpose()
+
+        if not A*M==zeros(n,d):
+            grade=(0,"")
+except:
+    grade=(-1,"")
+
+score,feedback=grade
 ==
 
