@@ -28,14 +28,15 @@ evaluator ==
 ans=str2struct("\{"+input.value+"\}")
 if not all([len(v)==m for v in ans]):
     grade=(0,"")
+    StopEvaluatorExec()
 else:
     M=Matrix(ans).transpose()
-    #if not (A*M==zeros(n,d)):
-    #    grade=(0,"Certains vecteurs ne sont pas dans l'ensemble.")
+    if not (A*M==zeros(n,d)):
+        grade=(0,"Certains vecteurs ne sont pas dans l'ensemble.")
     #elif M.rank()!=d:
-    #    grade=(0,"N'engendre pas")
+        grade=(0,"N'engendre pas")
     #else:
-    #    grade=(100,"")
+        grade=(100,"")
 
 M=Matrix(ans).transpose()
 score,feedback=100,str(A)+str(M)
