@@ -29,7 +29,7 @@ ans=str2struct(input.value)
 M=Matrix(ans).transpose()
 Q=A*M
 score=0
-if Q==zeros([1,d]):
+if Q==zeros([n,d]):
     score=100
 feedback=""
 ==
