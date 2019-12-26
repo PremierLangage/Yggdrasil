@@ -30,7 +30,12 @@ if not all([len(v)==m for v in ans]):
     grade=(0,"")
 else:
     M=Matrix(ans).transpose()
-    grade=(100,"")
+    if not A*M==zeros(n,d):
+        grade=(0,"Certains vecteurs ne sont pas dans l'ensemble.")
+    elif M.rank()!=d:
+        grade=(0,"N'engendre pas")
+    else:
+        grade=(100,"")
 
 score,feedback=grade
 ==
