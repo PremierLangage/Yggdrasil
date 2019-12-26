@@ -32,10 +32,10 @@ else:
     M=Matrix(ans).transpose()
     if not A*M==zeros(n,d):
         grade=(0,"Certains vecteurs ne sont pas dans l'ensemble.")
-    if M.rank()!=d:
+    elif M.rank()!=d:
         grade=(0,"N'engendre pas")
-
-
+    else:
+        grade=(100,"")
 score,feedback=grade
 ==
 
