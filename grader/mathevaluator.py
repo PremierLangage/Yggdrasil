@@ -96,7 +96,7 @@ if __name__ == "__main__":
     dic = get_context()
     dic['answer'] = get_answers()
     if 'evaluator' in dic:
-            dic = dict(list(globals().items()) + list(dic.items()))
+        dic = dict(list(globals().items()) + list(dic.items()))
         if 'latexparam' in dic:
             LatexPrinter._settings.update(eval(dic['latexparam']))
         dic['StopEvaluatorExec'] = StopEvaluatorExec
