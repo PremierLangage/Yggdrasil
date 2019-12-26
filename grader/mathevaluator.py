@@ -100,7 +100,6 @@ if __name__ == "__main__":
     if 'evaluator' in dic:
         dic = dict(list(globals().items()) + list(dic.items()))
         dic['StopEvaluatorExec'] = StopEvaluatorExec
-        print(add_try_clause(dic['evaluator'], StopEvaluatorExec), file=sys.stderr)
         exec(add_try_clause(dic['evaluator'], StopEvaluatorExec), dic)
         exec("", globals().copy())
         for key in globals().copy():
