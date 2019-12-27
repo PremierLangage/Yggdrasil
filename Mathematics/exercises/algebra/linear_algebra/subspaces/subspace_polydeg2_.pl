@@ -13,8 +13,8 @@ n=param['n']
 m=param['m']
 d=m-n
 coeffbound = 4
-A=rand_int_matrix_fullrank(n,m,coeffbound)
-B=zeros(n,1)
+A=Matrix([[x0**2,x0,1]])
+B=Matrix([[0]])
 sys_tex=latexsys(A,B)
 ==
 
