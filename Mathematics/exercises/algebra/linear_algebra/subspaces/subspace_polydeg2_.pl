@@ -2,6 +2,9 @@ extends = /Mathematics/template/mathinput.pl
 
 title = Représentation des sous-espaces de $! \mathbb{R}^3!$
 
+param.n % 1
+param.m % 3
+
 before ==
 keyboards_JSON['virtualKeyboards']="elementary"
 input.config = keyboards_JSON
