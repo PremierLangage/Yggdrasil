@@ -1,8 +1,6 @@
 extends = /Mathematics/template/mathinput.pl
 
-title = Représentation paramétrique des sous-espaces
-
-lang = fr
+title = Représentation paramétrique des sous-espaces de $!R^3!$
 
 before ==
 keyboards_JSON['virtualKeyboards']="elementary"
@@ -15,7 +13,6 @@ coeffbound = 4
 A=rand_int_matrix_fullrank(n,m,coeffbound)
 B=zeros(n,1)
 sys_tex=latexsys(A,B)
-lstvec=["u","v","w"]
 ==
 
 text ==
