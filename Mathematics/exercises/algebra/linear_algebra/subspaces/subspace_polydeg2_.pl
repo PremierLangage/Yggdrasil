@@ -16,7 +16,7 @@ sys_tex=latexsys(A,B)
 ==
 
 text ==
-On considère le sous-espace de $! \mathbb{R}^3 !$ formé des vecteurs $! (x,y,z) !$ tels que
+On considère le sous-espace de $! \mathbb{R}_2[X] !$ formé des vecteurs $! (x,y,z) !$ tels que
 $$ {{sys_tex}} .$$
 Trouver deux vecteurs qui engendrent ce sous-espace.
 ==
