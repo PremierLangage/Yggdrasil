@@ -1,5 +1,8 @@
 extends = subspace_R3_.pl
 
+title = Représentation paramétrique des sous-espaces de $! \mathbb{R}^3!$
+
+
 text ==
 On considère le sous-espace $! P !$ de $! \mathbb{R}^3 !$ formé des vecteurs $! (x,y,z) !$ tels que
 $$ {{sys_tex}} .$$
