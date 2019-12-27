@@ -12,16 +12,14 @@ input.config = keyboards_JSON
 n=param['n']
 m=param['m']
 d=m-n
-coeffbound = 4
 A=Matrix([[x0**2,x0,1]])
 B=Matrix([[0]])
-sys_tex=latexsys(A,B)
 ==
 
 text ==
-On considère le sous-espace de $! \mathbb{R}_2[X] !$ formé des vecteurs $! (x,y,z) !$ tels que
-$$ {{sys_tex}} .$$
-Trouver deux vecteurs qui engendrent ce sous-espace.
+On considère le sous-espace de $! \mathbb{R}_2[X] !$ formé des polynômes $! P !$ de degré 2 tels que
+$$ P({{x0}})=0 .$$
+Trouver deux polynômes qui engendrent ce sous-espace.
 ==
 
 evaluator ==
