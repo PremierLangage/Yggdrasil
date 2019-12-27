@@ -30,9 +30,9 @@ def evalans(strans):
         ans=str2struct("\{"+input.value+"\}")
         M=Matrix(ans).transpose()
     except:
-        return (-1,"La réponse doit être constituée de deux vecteurs de $! \mathbb{R}^3 !$ séparés par une virgule.
+        return (-1,"La réponse doit être constituée de deux vecteurs de $! \mathbb{R}^3 !$ séparés par une virgule.)
     if M.shape!=(m,d):
-        return (-1,"La réponse doit être constituée de deux vecteurs de $! \mathbb{R}^3 !$ séparés par une virgule.
+        return (-1,"La réponse doit être constituée de deux vecteurs de $! \mathbb{R}^3 !$ séparés par une virgule.)
     if not (A*M==zeros(n,d)):
         return (0,"Ces vecteurs n'engendrent pas le sous-espace.")
     if M.rank()!=d:
