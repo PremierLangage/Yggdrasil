@@ -1,6 +1,6 @@
 extends = /Mathematics/template/mathinput.pl
 
-title = Représentation paramétrique des sous-espaces de $! \mathbb{R}^3!$
+title = Représentation des sous-espaces de $! \mathbb{R}^3!$
 
 before ==
 keyboards_JSON['virtualKeyboards']="elementary"
