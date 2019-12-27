@@ -6,8 +6,8 @@ before ==
 keyboards_JSON['virtualKeyboards']="elementary"
 input.config = keyboards_JSON
 
-n=param.n
-m=param.m
+n=param['n']
+m=param['m']
 d=m-n
 coeffbound = 4
 A=rand_int_matrix_fullrank(n,m,coeffbound)
