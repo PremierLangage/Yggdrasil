@@ -1,6 +1,6 @@
 extends = subspace_R3_.pl
 
-param.n % 1
+param.n % 2
 param.m % 3
 
 text ==
