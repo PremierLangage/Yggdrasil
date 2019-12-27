@@ -164,7 +164,7 @@ def latexsys(A,B,lstvar=['x','y','z','t','u','v','w']):
     if n==1:
         return code
     else:
-        return "\\left %s \\right." % code 
+        return "\\left\lbrace %s \\right." % code 
 
 def latex_lincomb(coeff,vec):
     code=""
@@ -1020,6 +1020,7 @@ def ans_antiderivative(strans,sol,x,local_dict={}):
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
+
 
 
 
