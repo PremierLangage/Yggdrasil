@@ -1,4 +1,4 @@
-extends = /subspace_R3_.pl
+extends = subspace_R3_.pl
 
 text ==
 On considère le sous-espace $! P !$ de $! \mathbb{R}^3 !$ formé des vecteurs $! (x,y,z) !$ tels que
