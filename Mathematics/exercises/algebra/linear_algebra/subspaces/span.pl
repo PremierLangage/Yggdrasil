@@ -19,16 +19,16 @@ lstvec=["u","v","w"]
 ==
 
 text ==
-On considère l'ensemble des vecteurs $! (x,y,z) !$ tels que
-$$ {{sys_tex}} $$
-Trouver un vecteur qui engendre cet ensemble.
+On considère le sous-espace $! P !$ de $! \mathbb{R}^3 !$ formé des vecteurs $! (x,y,z) !$ tels que
+$$ {{sys_tex}} .$$
+Trouver deux vecteurs qui engendrent ce sous-espace.
 ==
 
 evaluator ==
 def evalans(strans):
     ans=str2struct("\{"+input.value+"\}")
     if not all([len(v)==m for v in ans]):
-        return (0,"Mauvaise taille")
+        return (-,"Mauvaise taille")
     M=Matrix(ans).transpose()
     if not (A*M==zeros(n,d)):
         return (0,"Certains vecteurs ne sont pas dans l'ensemble.")
@@ -38,4 +38,5 @@ def evalans(strans):
 
 score,feedback=evalans("\{"+input.value+"\}")
 ==
+
 
