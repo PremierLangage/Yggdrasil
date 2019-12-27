@@ -25,6 +25,7 @@ evaluator ==
 def evalans(strans):
     try:
         ans=str2struct("\{"+input.value+"\}")
+        ans=[P.all_coeffs() for P in ans]
         M=Matrix(ans).transpose()
     except:
         return (-1,"La réponse doit être constituée de deux vecteurs de $! \mathbb{R}^3 !$ séparés par une virgule.")
