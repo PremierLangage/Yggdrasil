@@ -1,6 +1,6 @@
 extends = /Mathematics/template/mathinput.pl
 
-title = Représentation des sous-espaces de $! \mathbb{R}^3!$
+title = Représentation des sous-espaces de $! \mathbb{R}_2[X]!$
 
 param.n % 1
 param.m % 3
