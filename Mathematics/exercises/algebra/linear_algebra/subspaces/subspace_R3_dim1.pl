@@ -19,9 +19,9 @@ def evalans(strans):
     if M.shape!=(m,d):
         return (-1,"La réponse doit être un vecteur de $! \mathbb{R}^3 !$.")
     if not (A*M==zeros(n,d)):
-        return (0,"Ce n'engendre pas le sous-espace.")
+        return (0,"Ce vecteur n'engendre pas le sous-espace.")
     if M.rank()!=d:
-        return (0,"Ce n'engendre pas le sous-espace.")
+        return (0,"Ce vecteur n'engendre pas le sous-espace.")
     return (100,"")
 
 score,feedback=evalans("\{"+input.value+"\}")
