@@ -1,6 +1,7 @@
 extends = subspace_R3_.pl
 
 title = Représentation paramétrique des sous-espaces de $! \mathbb{R}^3!$
+
 param.n % 1
 param.m % 3
 
