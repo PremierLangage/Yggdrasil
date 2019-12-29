@@ -20,7 +20,7 @@ eq=latex_lincomb([a,b],["P(%d)" % x0 ,"P(%d)" % x1])
 ==
 
 text ==
-On considère le sous-espace de $! \mathbb{R}_2[X] !$ formé des polynômes $! P !$ de degré 2 tels que
+On considère le sous-espace de $! \mathbb{R}_2[X] !$ formé des polynômes $! P !$ tels que
 $$ {{eq}} =0 .$$
 Trouver deux polynômes qui engendrent ce sous-espace.
 ==
