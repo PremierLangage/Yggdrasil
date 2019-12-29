@@ -22,7 +22,7 @@ eq=latex_lincomb([a,b],[str(x0),str(x1)])
 
 text ==
 On considère le sous-espace de $! \mathbb{R}_2[X] !$ formé des polynômes $! P !$ de degré 2 tels que
-$$ P({{x0}})=0 .$$
+$$ {{eq}} =0 .$$
 Trouver deux polynômes qui engendrent ce sous-espace.
 ==
 
