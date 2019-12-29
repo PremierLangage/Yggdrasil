@@ -34,13 +34,13 @@ def evalans(strans):
         ans=[(m-len(v))*[0]+v for v in ans]
         M=Matrix(ans).transpose()
     except:
-        return (-1,"La réponse doit être constituée de deux vecteurs de $! \mathbb{R}^3 !$ séparés par une virgule.")
+        return (-1,"La réponse doit être constituée de deux polynômes séparés par une virgule.")
     if M.shape!=(m,d):
-        return (-1,"La réponse doit être constituée de deux vecteurs de $! \mathbb{R}^3 !$ séparés par une virgule.")
+        return (-1,"La réponse doit être constituée de deux polynômes séparés par une virgule.")
     if not (A*M==zeros(n,d)):
-        return (0,"Ces vecteurs n'engendrent pas le sous-espace.")
+        return (0,"Ces polynômes n'engendrent pas le sous-espace.")
     if M.rank()!=d:
-        return (0,"Ces vecteurs n'engendrent pas le sous-espace.")
+        return (0,"Ces polynômes n'engendrent pas le sous-espace.")
     return (100,"")
 
 score,feedback=evalans("\{"+input.value+"\}")
