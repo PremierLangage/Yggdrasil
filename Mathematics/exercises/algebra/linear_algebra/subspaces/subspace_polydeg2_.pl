@@ -28,8 +28,9 @@ Trouver deux polynômes qui engendrent ce sous-espace.
 evaluator ==
 def evalans(strans):
     try:
+        var('X')
         ans=str2struct("\{"+input.value+"\}")
-        ans=[Poly(P).all_coeffs() for P in ans]
+        ans=[Poly(P,X).all_coeffs() for P in ans]
         ans=[(m-len(v))*[0]+v for v in ans]
         M=Matrix(ans).transpose()
     except:
