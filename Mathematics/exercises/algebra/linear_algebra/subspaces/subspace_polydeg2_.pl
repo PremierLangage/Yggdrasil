@@ -17,6 +17,7 @@ m=param['m']
 d=m-n
 A=Matrix([[a*x0**2+b*x1**2,a*x0+b*x1,a+b]])
 B=Matrix([[0]])
+eq=latex_lincomb([a,b],[str(x0),str(x1)])
 ==
 
 text ==
