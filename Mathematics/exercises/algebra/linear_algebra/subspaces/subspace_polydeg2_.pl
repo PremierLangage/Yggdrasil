@@ -9,8 +9,7 @@ before ==
 keyboards_JSON['virtualKeyboards']="elementary"
 input.config = keyboards_JSON
 x0,x1=list_randint_norep(2,-2,2)
-a=randint(-2,2,[0])
-b=randint(-2,2,[0])
+a,b=list_randint_norep(-2,2,[0])
 n=param['n']
 m=param['m']
 d=m-n
