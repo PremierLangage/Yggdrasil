@@ -9,10 +9,11 @@ before ==
 keyboards_JSON['virtualKeyboards']="elementary"
 input.config = keyboards_JSON
 x0=randint(-2,2)
+x1=randint(-2,2)
 n=param['n']
 m=param['m']
 d=m-n
-A=Matrix([[x0**2,x0,1]])
+A=Matrix([[a*x0**2+b*x1**2,a*x0+b*x1,a+b]])
 B=Matrix([[0]])
 ==
 
