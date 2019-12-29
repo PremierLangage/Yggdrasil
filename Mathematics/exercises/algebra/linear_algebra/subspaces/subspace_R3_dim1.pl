@@ -6,7 +6,7 @@ param.m % 3
 text ==
 On considère le sous-espace de $! \mathbb{R}^3 !$ formé des vecteurs $! (x,y,z) !$ tels que
 $$ {{sys_tex}} .$$
-Trouver un vecteur qui engendre ce sous-espace.
+Trouver un vecteur qui engendre ce sous-espace (écrire ces deux vecteurs en les séparant par une virgule).
 ==
 
 evaluator ==
