@@ -1,4 +1,4 @@
-extends = /template/basic.pl
+extends = /template/checkbox.pl
 
 title = Multiples de 3
 
@@ -35,6 +35,7 @@ extracss ==
 }
 </style>
 ==
+
 
 
 
