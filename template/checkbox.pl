@@ -16,6 +16,12 @@ grade = checkbox.eval()
 checkbox.disabled=True
 ==
 
-
-
-
+extracss ==
+<style>
+.success-border2 {
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    border-color: #007E33 !important;
+}
+</style>
+==
