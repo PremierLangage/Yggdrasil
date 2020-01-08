@@ -43,7 +43,7 @@ def carres_Gauss(r):
 
 import random
 
-n=random.randint(4,12)
+n=random.randint(4,14)
 
 pltest3=f">>> carres_Gauss({n})\n{carres_Gauss(n)}"
 
