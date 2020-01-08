@@ -23,7 +23,7 @@ ordonnées lexicographiquement.
 ==
 before==
 def carre_complexe(x,y):
-    return x*x+y*y,2*x*y
+    return x*x-y*y,2*x*y
 
 def carres_Gauss(r):
     if r<0:
@@ -66,6 +66,7 @@ pltest2==
 >>> carres_Gauss(0)
 [(0,0)]
 ==
+
 
 
 
