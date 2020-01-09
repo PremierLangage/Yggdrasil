@@ -16,8 +16,8 @@ dont le carré est également un entier de Gauss de module inférieur ou égal �
 ordonnées lexicographiquement. 
 
 <pre><code>
->>>carres_Gauss(2)
-[(-2, 0), (-1, -1), (-1, 0), (-1, 1), (0, -2), (0, -1), (0, 0), (0, 1), (0, 2), (1, -1), (1, 0), (1, 1), (2, 0)]
+>>> carres_Gauss(2)
+[(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 0), (0, 1), (1, -1), (1, 0), (1, 1)]
 </code></pre>
 
 ==
@@ -65,6 +65,7 @@ pltest2==
 >>> carres_Gauss(0)
 [(0, 0)]
 ==
+
 
 
 
