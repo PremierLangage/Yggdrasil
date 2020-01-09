@@ -32,9 +32,9 @@ ayant 2 mois ou plus*).<br>
 On fera les doctest suivants :
 
     >>> lapin(4)
-    4
+    2
     >>> lapin(43)
-    12322413
+    5736961
     >>> 
 
 plus d'autres ....
@@ -45,10 +45,6 @@ plus d'autres ....
 
 
 
-pltest2==
->>> lapin(43) # Beaucoup de lapins
-12322413
-==
 
 before==
 def lapin(mois):
@@ -116,6 +112,7 @@ bb==
                 s+= str(vieux)+" couples de vieux lapins"
             print(s)
 ==
+
 
 
 
