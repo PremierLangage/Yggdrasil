@@ -3,7 +3,7 @@ extends = /template/sortlist.pl
 title = Ordonner des Capitales
 
 
-@country_data.csv [data.csv]
+@ country_data.csv [data.csv]
 
 before ==
 import random as rd
@@ -15,11 +15,9 @@ with open('data.csv',newline='') as file:
 
 items=rd.sample(rows,4)
 items.sort(key=sortSecond)
-source=[item['country'] for item in items]
-target=[item['capital'] for item in items]
 
 
-sortlist.loadContent([item['country'] for item in items])
+sortlist.loadContent([item['capital'] for item in items])
 ==
 ## {{items}}
 text ==
