@@ -31,7 +31,7 @@ def str2affsubset(s,local_dict={}):
     s.strip()
     return s
 
-def str2affsubset(s,local_dict={}):
+def str2affsubset2(s,local_dict={}):
     s=s.replace(r"\left", "")
     s=s.replace(r"\right", "")
     s=s.replace(r"\lbrace","{")
