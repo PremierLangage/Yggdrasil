@@ -1,6 +1,6 @@
 extends = /template/sortlist.pl
 
-title = Ordonner des nombres
+title = Ordonner des Capitales
 
 
 @country_data.csv [data.csv]
@@ -19,11 +19,11 @@ source=[item['country'] for item in items]
 target=[item['capital'] for item in items]
 
 
-sortlist.loadContent([item['country']+item['population'] for item in items])
+sortlist.loadContent([item['country'] for item in items])
 ==
-
+## {{items}}
 text ==
-{{items}}
-Ordonner ces capital de la moins peuplée à la plus peuplée.
+
+Ordonner ces capitales de la moins peuplée à la plus peuplée.
 ==
 
