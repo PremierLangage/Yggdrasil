@@ -14,7 +14,7 @@ with open('data.csv',newline='') as file:
     rows=list(csv.DictReader(file,delimiter=','))
 
 items=rd.sample(rows,4)
-sorted(items,key=sortSecond)
+items.sort(key=sortSecond)
 source=[item['country'] for item in items]
 target=[item['capital'] for item in items]
 
