@@ -42,6 +42,6 @@ def str2affsubset(s,local_dict={}):
     return pt,span
 
 #str(A*pt)
-#pt,span=str2affsubset(input.value)
+pt,span=str2affsubset(input.value)
 score,feedback=100,input.value
 ==
