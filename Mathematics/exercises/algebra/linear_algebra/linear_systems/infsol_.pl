@@ -30,7 +30,7 @@ def str2affsubset(s,local_dict={}):
     s=s.replace(r"\lbrace",r"\{")
     s=s.replace(r"\rbrace",r"\}")
     s.strip()
-    pattern = re.compile(r'^\{(.*)\|(.*)\s*\\in\s*\\R\s*\}$')
+    pattern = re.compile(r'^\\\{(.*)\|(.*)\s*\\in\s*\\R\s*\\\}$')
     s1=pattern.search(s).group(1)
     lst2=pattern.search(s).group(2).split(",")
     lstvar=[sp.Symbol(item.strip()) for item in lst2]
