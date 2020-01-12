@@ -24,6 +24,11 @@ Liste ordonnée:
 3. Item
 
 
+    def myfunc(para1):
+        for n in range(para1):
+             return n
+
 
 ==
+
 
