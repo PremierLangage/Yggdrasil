@@ -6,7 +6,7 @@ title = Système linéaire
 before ==
 keyboards_JSON['virtualKeyboards']="sets"
 input.config = keyboards_JSON
-input.value=r"\{ ? | ? \in \R \}"
+input.value=r"\lbrace ? | ? \in \R \rbrace"
 n=2
 m=3
 coeffbound = 4
