@@ -23,7 +23,14 @@ $$ {{sys_tex}} $$
 ==
 
 evaluator ==
-
+def str2affsubset(s,local_dict={}):
+    s=s.replace(r"\left", "")
+    s=s.replace(r"\right", "")
+    s=s.replace(r"\lbrace","{")
+    s=s.replace(r"\rbrace","}")
+    s.strip()
+    return s
+    
 def str2affsubset(s,local_dict={}):
     s=s.replace(r"\left", "")
     s=s.replace(r"\right", "")
