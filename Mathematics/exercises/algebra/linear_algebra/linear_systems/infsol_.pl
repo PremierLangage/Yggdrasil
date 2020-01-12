@@ -50,5 +50,5 @@ def str2affsubset2(s,local_dict={}):
 
 #str(A*pt)
 #pt,span=str2affsubset(input.value)
-score,feedback=100,str2affsubset(input.value)
+score,feedback=100,input.value + str2affsubset(input.value)
 ==
