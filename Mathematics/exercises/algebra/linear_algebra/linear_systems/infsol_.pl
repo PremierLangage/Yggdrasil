@@ -30,7 +30,7 @@ def str2affsubset(s,local_dict={}):
     s=s.replace(r"\rbrace","}")
     s.strip()
     return s
-    
+
 def str2affsubset(s,local_dict={}):
     s=s.replace(r"\left", "")
     s=s.replace(r"\right", "")
@@ -50,5 +50,5 @@ def str2affsubset(s,local_dict={}):
 
 #str(A*pt)
 pt,span=str2affsubset(input.value)
-score,feedback=100,input.value
+score,feedback=100,str2affsubset(input.value)
 ==
