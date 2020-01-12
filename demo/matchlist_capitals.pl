@@ -34,7 +34,10 @@ form==
 
 evaluator==
 grade = match.eval()
+if grade[0]==100:
+    text += " Bravo "
 match.disabled = True
 ==
+
 
 
