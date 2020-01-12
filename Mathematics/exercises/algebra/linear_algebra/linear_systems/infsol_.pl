@@ -9,7 +9,7 @@ input.config = keyboards_JSON
 
 n=2
 m=3
-coeffbound = int(param['coeffbound'])
+coeffbound = 4
 A=rand_int_matrix_fullrank(n,m,coeffbound)
 B=rand_int_matrix(n,1,coeffbound)
 sys_tex=latexsys(A,B)
