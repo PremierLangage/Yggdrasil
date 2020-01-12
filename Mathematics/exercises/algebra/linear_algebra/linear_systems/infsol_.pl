@@ -41,6 +41,7 @@ def str2affsubset(s,local_dict={}):
     span = [sp.Matrix([[sp.Poly(expr,lstvar).coeff_monomial(v) for expr in vec]]).transpose() for v in lstvar]
     return pt,span
 
-pt,span=str2affsubset(input.value)
-score,feedback=100,str(A*pt)
+#str(A*pt)
+#pt,span=str2affsubset(input.value)
+score,feedback=100,input.value
 ==
