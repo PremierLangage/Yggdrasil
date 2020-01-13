@@ -10,11 +10,11 @@ sparsity= param['sparsity']
 A=rand_int_matrix_invertible(n,3)
 
 vec=list_randint(n,-3,3)
-choices=["$! (%s) !$" % str(tuple(vec))]
+choices=["$! %s !$" % str(tuple(vec))]
 while len(choices)<4:
     vec=list_randint(n,-3,3)
     if vec not in choices:
-        choices.append("$!( %s )!$" % str(tuple(vec)))
+        choices.append("$! %s !$" % str(tuple(vec)))
 
 B=rand_int_matrix(n,1,3,[0])
 sol=list(linsolve((A, B)))[0]
