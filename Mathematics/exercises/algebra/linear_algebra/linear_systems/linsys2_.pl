@@ -7,10 +7,13 @@ before ==
 keyboards_JSON['virtualKeyboards']="elementary"
 input.config = keyboards_JSON
 n=param['size']
-maxdet=param['maxdet']
 coeffbound = param['coeffbound']
 sparsity= param['sparsity']
-A=rand_int_matrix_invertible(n,coeffbound,[0],sparsity)
+if 'maxdet' in param:
+    A=rand_int_matrix_invertible(n,coeffbound,[0],sparsity,param['maxdet'])
+else:
+    A=rand_int_matrix_invertible(n,coeffbound,[0],sparsity)
+
 B=rand_int_matrix(n,1,coeffbound)
 sol=list(linsolve((A, B)))[0]
 sys_tex=latexsys(A,B)
