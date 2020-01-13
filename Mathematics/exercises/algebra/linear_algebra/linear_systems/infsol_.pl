@@ -23,7 +23,7 @@ $$ {{sys_tex}} $$
 ==
 
 evaluator ==
-def str2affsubset(s,local_dict={}):
+def str2affsubset2(s,local_dict={}):
     s=s.replace(r"\left", "")
     s=s.replace(r"\right", "")
     s=s.replace(r"\lbrace","{")
@@ -32,7 +32,7 @@ def str2affsubset(s,local_dict={}):
     pattern = re.compile(r'\s*\{(.*)\|(.*)\s*\\in\s*\\R\s*\}\s*')
     return pattern.search(s).group(1)
 
-def str2affsubset2(s,local_dict={}):
+def str2affsubset(s,local_dict={}):
     s=s.replace(r"\left", "")
     s=s.replace(r"\right", "")
     s=s.replace(r"\lbrace","{")
@@ -50,8 +50,8 @@ def str2affsubset2(s,local_dict={}):
     return pt,span
 
 #str(A*pt)
-pt,span=str2affsubset2(input.value)
-score,feedback=100,input.value + str2affsubset(input.value)
+pt,span=str2affsubset(input.value)
+score,feedback=100,str(A*pt)
 ==
 
 input.debug % true
