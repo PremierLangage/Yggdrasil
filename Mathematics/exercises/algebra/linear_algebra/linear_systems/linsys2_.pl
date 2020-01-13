@@ -15,7 +15,7 @@ sol=list(linsolve((A, B)))[0]
 sys_tex=latexsys(A,B)
 sol_tex=latex(sol)
 lstvar=",".join(["x","y","z","t","u","v"][:n])
-input.value="("+",".join(n*["?"])+")"
+input.value=r"\left ("+",".join(n*["?"])+r"\right )"
 tuple_name="couple"
 ==
 
