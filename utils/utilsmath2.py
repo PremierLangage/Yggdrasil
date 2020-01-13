@@ -467,13 +467,13 @@ def rand_int_matrix(n,p,bound,excluded_values=[],sparsity=0):
     rd.shuffle(entries)
     return sp.Matrix(n,p,entries)
 
-def rand_int_matrix_invertible(n,bound,excluded_values=[],sparsity=0,maxdet=sp.S.Infinity):
+def rand_int_matrix_invertible(n,bound,excluded_values=[],sparsity=0,mindet=0,maxdet=sp.S.Infinity):
     """
     Generate an invertible random matrix with integer entries.
     """
     while True:
         M=rand_int_matrix_fullrank(n,n,bound,excluded_values,sparsity)
-        if abs(M.det())<maxdet:
+        if mindet <= abs(M.det()) <= maxdet:
             return M
             
 def rand_int_matrix_fullrank(n,p,bound,excluded_values=[],sparsity=0):
