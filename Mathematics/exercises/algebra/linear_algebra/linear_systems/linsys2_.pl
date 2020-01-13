@@ -15,11 +15,15 @@ B=rand_int_matrix(n,1,coeffbound)
 sol=list(linsolve((A, B)))[0]
 sys_tex=latexsys(A,B)
 sol_tex=latex(sol)
+lstvar=",".join(["x","y","z","t","u","v"][:n])
+
+tuple_name="couple"
 ==
 
 text ==
-Déterminer les solutions du système
+Déterminer la solution du système suivant (d'inconnues $! {{lstvar}} !$) :
 $$ {{sys_tex}} $$
+Ecrire la solution sous forme d'un {{tuple_name}} de nombres.
 ==
 
 evaluator ==
