@@ -4,8 +4,6 @@ title = Système linéaire
 
 
 before ==
-keyboards_JSON['virtualKeyboards']="elementary"
-input.config = keyboards_JSON
 n=param['size']
 coeffbound = param['coeffbound']
 sparsity= param['sparsity']
