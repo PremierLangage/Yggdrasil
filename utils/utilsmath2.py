@@ -924,7 +924,7 @@ def ans_struct_(strans,sol,typestruct,local_dict,test1,test2):
     elif typestruct=="setwobraces":
         return ans_set_(strans,sol,False,local_dict,test1,test2)
     elif typestruct=="tuple":
-        return ans_tuple_(strans,sol,local_dict,test1,test2)
+        return ans_tuple_(strans,sol,True,local_dict,test1,test2)
     elif typestruct=="composite":
         return ans_composite_(strans,sol,local_dict,test1,test2)
 
@@ -1020,6 +1020,7 @@ def ans_antiderivative(strans,sol,x,local_dict={}):
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
+
 
 
 
