@@ -23,15 +23,6 @@ $$ {{sys_tex}} $$
 ==
 
 evaluator ==
-def str2affsubset2(s,local_dict={}):
-    s=s.replace(r"\left", "")
-    s=s.replace(r"\right", "")
-    s=s.replace(r"\lbrace","{")
-    s=s.replace(r"\rbrace","}")
-    s.strip()
-    pattern = re.compile(r'\s*\{(.*)\|(.*)\s*\\in\s*\\R\s*\}\s*')
-    return pattern.search(s).group(1)
-
 def str2affsubset(s,local_dict={}):
     s=s.replace(r"\left", "")
     s=s.replace(r"\right", "")
@@ -48,7 +39,8 @@ def str2affsubset(s,local_dict={}):
     pt=sp.Matrix([[sp.Poly(expr,lstvar).coeff_monomial(1) for expr in vec]]).transpose()
     span = [sp.Matrix([[sp.Poly(expr,lstvar).coeff_monomial(v) for expr in vec]]).transpose() for v in lstvar]
     return pt,span
-def ans_set_(strans,sol,brace_enclosed,local_dict,test1,test2):
+
+def ans(strans,A,B):
     """
     Analyze a set.
     """
@@ -64,7 +56,7 @@ def ans_set_(strans,sol,brace_enclosed,local_dict,test1,test2):
 
 #str(A*pt)
 
-score,feedback=100,str(A*pt)
+score,_,feedback=ans(input.value,A,B)
 ==
 
 input.debug % true
