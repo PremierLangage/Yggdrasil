@@ -10,7 +10,7 @@ n=param['size']
 coeffbound = param['coeffbound']
 sparsity= param['sparsity']
 if 'maxdet' in param:
-    A=rand_int_matrix_invertible(n,coeffbound,[0],sparsity,param['maxdet'])
+    A=rand_int_matrix_invertible(n,coeffbound,[0],sparsity,param['mindet'],param['maxdet'])
 else:
     A=rand_int_matrix_invertible(n,coeffbound,[0],sparsity)
 
