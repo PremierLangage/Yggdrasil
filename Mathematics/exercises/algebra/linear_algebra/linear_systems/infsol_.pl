@@ -48,9 +48,22 @@ def str2affsubset(s,local_dict={}):
     pt=sp.Matrix([[sp.Poly(expr,lstvar).coeff_monomial(1) for expr in vec]]).transpose()
     span = [sp.Matrix([[sp.Poly(expr,lstvar).coeff_monomial(v) for expr in vec]]).transpose() for v in lstvar]
     return pt,span
+def ans_set_(strans,sol,brace_enclosed,local_dict,test1,test2):
+    """
+    Analyze a set.
+    """
+    try:    
+        pt,span=str2affsubset(input.value)
+    except:
+        return (-1,"NotValidExpr","Votre réponse n'est pas écrit sous la bonne forme.")
+    if A*pt != B:
+        return (0,"","point")
+    if not all([A*v != 0 for v in span]):
+        return (0,"","span")
+    return (100,"Ok","")
 
 #str(A*pt)
-pt,span=str2affsubset(input.value)
+
 score,feedback=100,str(A*pt)
 ==
 
