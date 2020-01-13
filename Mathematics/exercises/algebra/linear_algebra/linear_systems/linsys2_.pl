@@ -23,7 +23,7 @@ $$ {{sys_tex}} $$
 ==
 
 evaluator ==
-score,_,feedback=ans_struct_expr(ans,sol,"tuple")
+score,_,feedback=ans_struct_expr(input.value,sol,"tuple")
 ==
 
 solution == 
