@@ -7,7 +7,7 @@ before ==
 keyboards_JSON['virtualKeyboards']="sets"
 input.config = keyboards_JSON
 input.value=r"\lbrace ? | ? \in \R \rbrace"
-n=2
+n=1
 m=3
 coeffbound = 4
 A=rand_int_matrix_fullrank(n,m,coeffbound)
@@ -49,7 +49,7 @@ def ans(strans,A,B):
         dimev,pt,span=str2affsubset(input.value)
     except:
         return (-1,"NotValidExpr","Votre réponse n'est pas écrit sous la bonne forme.")
-    if dimev!=n:
+    if dimev!=m:
         return (-1,"NotValidExpr","Votre réponse n'est pas écrit sous la bonne forme.")
     if A*pt != B:
         return (0,"","point")
