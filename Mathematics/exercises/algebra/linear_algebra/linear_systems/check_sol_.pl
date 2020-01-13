@@ -27,8 +27,3 @@ text ==
 Déterminer la solution du système suivant (d'inconnues $! {{lstvar}} !$) :
 $$ {{sys_tex}} $$
 ==
-
-solution == 
-La solution est $! {{sol_tex}} !$.
-==
-
