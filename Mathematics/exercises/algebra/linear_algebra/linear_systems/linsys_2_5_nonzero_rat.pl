@@ -10,5 +10,5 @@ param.sparsity % 0
 
 param.maxdet % 10
 
-
+param.mindet % 2
 
