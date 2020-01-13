@@ -46,24 +46,16 @@ def sympy_to_str(arg):
     return arg
 
 
-def format_analysis(msg,text,n,lang):
-    dcls={'warning':'alert-info','retry':'alert-warning','fail':'alert-danger','success':'alert-success'}
-    ditext={'en':{'warning':'Warning !','retry':'Try again !','fail':'Fail.','success':'Good.'},
-        'fr':{'warning':'Attention !','retry':'Mauvaise réponse.','fail':'Mauvaise réponse.','success':'Bonne réponse.'}}
-    cls=dcls[msg]
-    itext=ditext[lang][msg]
-    if msg=='warning' or msg=='retry':
-        if n>1:
-            format_text="""<div class="alert {}">
-  <strong>{}</strong> {}</div>""".format(cls,itext,text,n)
-        else:
-            format_text="""<div class="alert {}">
-  <strong>{}</strong> {}</div>""".format(cls,itext,text)
-
+def format_feedback(score,feedback):
+    text0="""<div class="alert {}"><strong>{}</strong> {}</div>"""
+    if score==-1:
+        return text0.format('alert-info','Attention !',feedback)
+    elif score==100:
+        return text0.format('alert-success','Bonne réponse.',feedback)
+    elif score==0:
+        return text0.format('alert-danger','Mauvaise réponse.',feedback)
     else:
-        format_text="""<div class="alert {}">
-  <strong>{}</strong> {}</div>""".format(cls,itext,text)
-    return format_text
+        return text0.format('alert-warning','Réponse partiellement correcte.',feedback)
 
 
 class StopEvaluatorExec(Exception):
@@ -143,20 +135,18 @@ if __name__ == "__main__":
     else:
         dic['inputmode'] = "final"
 
-    if score==100:
-        format_feedback=format_analysis('success',feedback,0,lang)
-    elif score==-1:
-        format_feedback=format_analysis('warning',feedback,maxattempt-nbattempt,lang)
-    else:
-        if nbattempt<maxattempt:
-            format_feedback=format_analysis('retry',feedback,maxattempt-nbattempt,lang)
-        else:
-            if 'solution' in dic:
-                format_feedback=format_analysis('fail',feedback+Template(dic['solution']).render(dic),0,lang)
-            else:
-                format_feedback=format_analysis('fail',feedback,0,lang)
-    
-    output(score,format_feedback,dic)
+    ffeedback=feedback
+    if 'settings' in dic:
+        if 'feedback' in dic['settings']:
+            if 'class' in dic['settings']['feedback']:
+                if dic['settings']['feedback']['class']=='colorbox':
+                    ffeedback=format_feedback(score,feedback)
+                if dic['settings']['feedback']['class']=='score':
+                    ffeedback="Score : %d / 100" % score
+
+    output(score, ffeedback, dic)
+
+
 
 
 
