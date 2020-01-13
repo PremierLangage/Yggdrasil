@@ -1,8 +1,8 @@
 extends = check_sol_.pl
 
-title = Système linéaire 2 x 2
+title = Vérifier une solution
 
-param.size % 2
+param.size % 3
 
 param.coeffbound % 5
 
