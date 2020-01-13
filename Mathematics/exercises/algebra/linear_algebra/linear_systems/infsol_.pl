@@ -26,10 +26,8 @@ evaluator ==
 def str2affsubset(s,local_dict={}):
     s=s.replace(r"\left", "")
     s=s.replace(r"\right", "")
-    s=s.replace(r"\lbrace","{")
-    s=s.replace(r"\rbrace","}")
     s.strip()
-    pattern = re.compile(r'^\{(.*)\}$')
+    pattern = re.compile(r'^\\lbrace(.*)\\rbrace$')
     return pattern.search(s).group(1)
 
 def str2affsubset2(s,local_dict={}):
@@ -50,7 +48,7 @@ def str2affsubset2(s,local_dict={}):
     return pt,span
 
 #str(A*pt)
-pt,span=str2affsubset2(input.value)
+#pt,span=str2affsubset2(input.value)
 score,feedback=100,input.value + str2affsubset(input.value)
 ==
 
