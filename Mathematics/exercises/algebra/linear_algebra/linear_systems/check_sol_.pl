@@ -7,7 +7,7 @@ before ==
 n=param['size']
 coeffbound = param['coeffbound']
 sparsity= param['sparsity']
-A=rand_int_matrix_invertible(n,coeffbound,[0],sparsity)
+A=rand_int_matrix_invertible(n,3,[0],sparsity)
 
 choices=[]
 while len(choices)<4:
