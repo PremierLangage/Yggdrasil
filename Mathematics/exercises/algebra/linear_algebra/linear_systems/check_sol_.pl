@@ -21,6 +21,7 @@ sys_tex=latexsys(A,B)
 sol_tex=latex(sol)
 radio.loadContent(choices)
 radio.setSolByIndex(0)
+radio.shuffle()
 ==
 
 text ==
