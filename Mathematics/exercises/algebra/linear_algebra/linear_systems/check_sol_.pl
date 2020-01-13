@@ -11,7 +11,7 @@ A=rand_int_matrix_invertible(n,coeffbound,[0],sparsity)
 
 choices=[]
 while len(choices)<4:
-    vec=list_randint(n,3,[0])
+    vec=list_randint(n,-3,3,[0])
     if vec not in choices:
         choices.append(vec)
 
