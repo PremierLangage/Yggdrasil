@@ -29,7 +29,7 @@ def str2affsubset(s,local_dict={}):
     s=s.replace(r"\lbrace","{")
     s=s.replace(r"\rbrace","}")
     s.strip()
-    pattern = re.compile(r'^\{(.*)\}$')
+    pattern = re.compile(r'\{(.*)')
     return pattern.search(s).group(1)
 
 def str2affsubset2(s,local_dict={}):
