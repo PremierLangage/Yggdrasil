@@ -28,10 +28,6 @@ Déterminer la solution du système suivant (d'inconnues $! {{lstvar}} !$) :
 $$ {{sys_tex}} $$
 ==
 
-evaluator ==
-score,_,feedback=ans_struct_expr(input.value,sol,"tuple")
-==
-
 solution == 
 La solution est $! {{sol_tex}} !$.
 ==
