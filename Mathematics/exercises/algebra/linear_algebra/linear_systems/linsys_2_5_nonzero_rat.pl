@@ -1,4 +1,4 @@
-extends = linsys2_.pl
+extends = linsys_.pl
 
 title = Système linéaire 2 x 2
 
