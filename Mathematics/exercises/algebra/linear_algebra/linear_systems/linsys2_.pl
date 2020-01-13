@@ -6,7 +6,6 @@ title = Système linéaire
 before ==
 keyboards_JSON['virtualKeyboards']="elementary"
 input.config = keyboards_JSON
-
 n=int(param['size'])
 coeffbound = int(param['coeffbound'])
 sparsity=float(param['sparsity'])
@@ -16,7 +15,7 @@ sol=list(linsolve((A, B)))[0]
 sys_tex=latexsys(A,B)
 sol_tex=latex(sol)
 lstvar=",".join(["x","y","z","t","u","v"][:n])
-
+input.value="("+",".join(n*["?"])+")"
 tuple_name="couple"
 ==
 
