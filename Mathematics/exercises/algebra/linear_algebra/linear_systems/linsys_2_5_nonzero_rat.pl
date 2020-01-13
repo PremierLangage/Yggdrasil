@@ -8,5 +8,7 @@ param.coeffbound % 5
 
 param.sparsity % 0
 
+param.maxdet % 10
+
 
 
