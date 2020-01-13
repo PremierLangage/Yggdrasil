@@ -34,8 +34,8 @@ def str2affsubset(s,local_dict={}):
 def str2affsubset2(s,local_dict={}):
     s=s.replace(r"\left", "")
     s=s.replace(r"\right", "")
-    s=s.replace(r"\lbrace",r"\{")
-    s=s.replace(r"\rbrace",r"\}")
+    s=s.replace(r"\lbrace",r"{")
+    s=s.replace(r"\rbrace",r"}")
     s.strip()
     pattern = re.compile(r'^\\{(.*)\|(.*)\s*\\in\s*\\R\s*\\}$')
     s1=pattern.search(s).group(1)
