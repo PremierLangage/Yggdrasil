@@ -6,7 +6,7 @@ param.size % 2
 
 param.coeffbound % 5
 
-param.sparsity % 0.
+param.sparsity % 0
 
 
 
