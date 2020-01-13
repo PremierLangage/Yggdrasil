@@ -27,6 +27,7 @@ def str2affsubset(s,local_dict={}):
     s=s.replace(r"\left", "")
     s=s.replace(r"\right", "")
     s.strip()
+    return s
     pattern = re.compile(r'^\\lbrace(.*)\\rbrace$')
     return pattern.search(s).group(1)
 
