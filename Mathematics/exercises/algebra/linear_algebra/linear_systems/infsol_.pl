@@ -38,7 +38,7 @@ def str2affsubset2(s,local_dict={}):
     s=s.replace(r"\lbrace","{")
     s=s.replace(r"\rbrace","}")
     s.strip()
-    pattern = re.compile(r'^\{(.*)\|(.*)\s*\\in\s*\\R\s*\}$')
+    pattern = re.compile(r'\s*\{(.*)\|(.*)\s*\\in\s*\\R\s*\}\s*')
     s1=pattern.search(s).group(1)
     lst2=pattern.search(s).group(2).split(",")
     lstvar=[sp.Symbol(item.strip()) for item in lst2]
@@ -50,7 +50,7 @@ def str2affsubset2(s,local_dict={}):
     return pt,span
 
 #str(A*pt)
-#pt,span=str2affsubset2(input.value)
+pt,span=str2affsubset2(input.value)
 score,feedback=100,input.value + str2affsubset(input.value)
 ==
 
