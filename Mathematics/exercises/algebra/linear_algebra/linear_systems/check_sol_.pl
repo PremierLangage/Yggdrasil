@@ -10,7 +10,7 @@ sparsity= param['sparsity']
 A=rand_int_matrix_invertible(n,3)
 
 vec=list_randint(n,-3,3)
-B=A*(Matrix(vec).transpose())
+B=A*Matrix(vec)
 choices=["$! %s !$" % str(tuple(vec))]
 while len(choices)<4:
     vec=list_randint(n,-3,3)
