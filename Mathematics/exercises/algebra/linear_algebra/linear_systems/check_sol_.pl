@@ -9,11 +9,12 @@ coeffbound = param['coeffbound']
 sparsity= param['sparsity']
 A=rand_int_matrix_invertible(n,3)
 
-choices=[]
+vec=list_randint(n,-3,3)
+choices=["$! (%s) !$" % tuple(vec)]
 while len(choices)<4:
-    vec=list_randint(n,-3,3,[0])
+    vec=list_randint(n,-3,3)
     if vec not in choices:
-        choices.append(vec)
+        choices.append("$!( %s )!$" % tuple(vec))
 
 B=rand_int_matrix(n,1,3,[0])
 sol=list(linsolve((A, B)))[0]
