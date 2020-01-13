@@ -18,7 +18,10 @@ lstvar=["x","y","z","t","u","v"]
 lstinput=[input1,input2,input3,input4]
 lstinput=lstinput[:n]
 
-sol_tex=latex(sol)
+sol_tex=""
+for i in range(n-1):
+    sol_tex += r" %s = %s, " % (lstvar[i],sol[i])
+sol_tex+=r"%s = %s" % (lstvar[n-1],sol[n-1])
 ==
 
 text ==
@@ -33,5 +36,5 @@ score,_,feedback=ans_tuple_expr(ans,sol,parentheses=True)
 ==
 
 solution == 
-La solution est $! {{sol_tex}} !$.
+Les solutions sont $! {{sol_tex}} !$.
 ==
