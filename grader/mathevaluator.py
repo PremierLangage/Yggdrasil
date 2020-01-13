@@ -135,7 +135,7 @@ if __name__ == "__main__":
     else:
         dic['inputmode'] = "final"
 
-    ffeedback=feedback
+    ffeedback=feedback+" "
     if 'settings' in dic:
         if 'feedback' in dic['settings']:
             if 'class' in dic['settings']['feedback']:
