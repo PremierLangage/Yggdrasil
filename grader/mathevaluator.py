@@ -117,7 +117,7 @@ if __name__ == "__main__":
     if 'feedback' in dic:
         feedback= dic['feedback']
     else:
-        feedback=""
+        feedback=" "
 
     if 'lang' in dic:
         lang= dic['lang']
@@ -148,4 +148,4 @@ if __name__ == "__main__":
                 if dic['settings']['feedback']['class']=='score':
                     ffeedback="Score : %d / 100" % score
 
-    output(score,format_feedback,dic)
+    output(score,ffeedback,dic)
