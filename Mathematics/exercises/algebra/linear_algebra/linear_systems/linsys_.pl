@@ -21,7 +21,7 @@ else:
     B=A*sol
 
 sys_tex=latexsys(A,B)
-sol_tex=latex(sol)
+sol_tex=latex(sol.transpose())
 lstvar=",".join(["x","y","z","t","u","v"][:n])
 
 input.value="("+",".join(n*["?"])+")"
