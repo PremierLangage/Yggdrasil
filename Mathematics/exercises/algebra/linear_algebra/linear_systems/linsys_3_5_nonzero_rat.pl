@@ -1,4 +1,4 @@
-extends = linsys2_.pl
+extends = linsys_.pl
 
 title = Système linéaire 3 x 3
 
@@ -11,4 +11,3 @@ param.sparsity % 0
 param.maxdet % 10
 
 param.mindet % 2
-
