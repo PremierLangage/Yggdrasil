@@ -1,7 +1,6 @@
 extends = /Mathematics/template/mathradio.pl
 
-title = Système linéaire
-
+title = Vérifier une solution parmi plusieurs
 
 before ==
 n=param['size']
@@ -17,6 +16,7 @@ while len(choices)<4:
     if vec not in choices:
         choices.append("$! %s !$" % str(tuple(vec)))
 
+lstvar=",".join(["x","y","z","t","u","v"][:n])
 sys_tex=latexsys(A,B)
 radio.loadContent(choices)
 radio.setSolByIndex(0)
@@ -24,6 +24,8 @@ radio.shuffle()
 ==
 
 text ==
-Déterminer la solution du système suivant (d'inconnues $! {{lstvar}} !$) :
+On considère le système suivant (d'inconnues $! {{lstvar}} !$) :
 $$ {{sys_tex}} $$
+
+Parmi les propositions suivantes, laquelle est la solution de ce système ?
 ==
