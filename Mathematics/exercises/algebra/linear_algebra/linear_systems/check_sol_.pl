@@ -10,7 +10,7 @@ A=rand_int_matrix_invertible(n,3)
 vec=list_randint(n,-3,3,[0])
 B=A*Matrix(vec)
 
-vec_tex=str(tuple(vec))
+vec_tex=str(vec)
 k=randint(0,n)
 
 if k>0:
