@@ -1,4 +1,4 @@
-extends = find_sol_.pl
+extends = check_sol_.pl
 
 param.size % 3
 
