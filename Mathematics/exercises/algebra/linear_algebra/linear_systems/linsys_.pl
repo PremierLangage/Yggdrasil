@@ -10,7 +10,6 @@ n=param['size']
 coeffbound = param['coeffbound']
 sparsity= param['sparsity']
 
-if
 if 'maxdet' in param:
     A=rand_int_matrix_invertible(n,coeffbound,[0],sparsity,param['mindet'],param['maxdet'])
 else:
@@ -22,7 +21,7 @@ sys_tex=latexsys(A,B)
 sol_tex=latex(sol)
 lstvar=",".join(["x","y","z","t","u","v"][:n])
 
-input.value=r"\left\("+",".join(n*["?"])+r"\right\)"
+input.value="("+",".join(n*["?"])+r")"
 
 tuple_name=["couple","triplet","quadruplet","quintuplet"][n-2]
 ==
