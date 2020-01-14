@@ -7,7 +7,7 @@ n=param['size']
 coeffbound = param['coeffbound']
 sparsity= param['sparsity']
 A=rand_int_matrix_invertible(n,3)
-vec=[1,2,3]
+vec=tuple([1,2,3])
 B=A*Matrix(vec)
 
 vec_tex=str(vec)
