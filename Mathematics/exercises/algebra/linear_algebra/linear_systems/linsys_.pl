@@ -21,7 +21,7 @@ sys_tex=latexsys(A,B)
 sol_tex=latex(sol)
 lstvar=",".join(["x","y","z","t","u","v"][:n])
 
-input.value="("+",".join(n*["?"])+")"
+input.value="{("+",".join(n*["?"])+")}"
 
 tuple_name=["couple","triplet","quadruplet","quintuplet"][n-2]
 ==
