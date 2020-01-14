@@ -39,3 +39,5 @@ score,_,feedback=ans_struct_expr(input.value,sol,"tuple")
 solution == 
 La solution est $! {{sol_tex}} !$.
 ==
+
+input.debug % true
