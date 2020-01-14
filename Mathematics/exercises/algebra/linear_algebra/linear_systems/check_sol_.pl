@@ -14,7 +14,7 @@ vec_tex=str(tuple(vec))
 k=randint(0,n)
 
 if k>0:
-    B[k-1]+=randitem(-1,1)
+    B[k-1]+=randitem([-1,1])
 
 choices=["Oui",
          "Non, car la 1ère équation n'est pas vérifiée.",
