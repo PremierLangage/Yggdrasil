@@ -147,31 +147,5 @@ if __name__ == "__main__":
                         ffeedback=format_feedback(score,feedback)
                 if dic['settings']['feedback']['class']=='score':
                     ffeedback="Score : %d / 100" % score
-"""
-    if score==100:
-        format_feedback=format_analysis('success',feedback,0,lang)
-    elif score==-1:
-        format_feedback=format_analysis('warning',feedback,maxattempt-nbattempt,lang)
-    else:
-        if nbattempt<maxattempt:
-            format_feedback=format_analysis('retry',feedback,maxattempt-nbattempt,lang)
-        else:
-            if 'solution' in dic:
-                format_feedback=format_analysis('fail',feedback+Template(dic['solution']).render(dic),0,lang)
-            else:
-                format_feedback=format_analysis('fail',feedback,0,lang)
-"""
 
     output(score,format_feedback,dic)
-
-
-
-
-
-
-
-
-
-
-
-
