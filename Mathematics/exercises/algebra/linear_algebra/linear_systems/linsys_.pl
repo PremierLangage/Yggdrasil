@@ -16,12 +16,13 @@ else:
 if param['typesol']=="rat":
     B=rand_int_matrix(n,1,coeffbound,[0])
     sol=list(linsolve((A, B)))[0]
+    sol_tex=latex(sol)
 else:
     sol=rand_int_matrix(n,1,5)
     B=A*sol
+    sol_tex=latex(sol.transpose())
 
 sys_tex=latexsys(A,B)
-sol_tex=latex(sol.transpose())
 lstvar=",".join(["x","y","z","t","u","v"][:n])
 
 input.value="("+",".join(n*["?"])+")"
