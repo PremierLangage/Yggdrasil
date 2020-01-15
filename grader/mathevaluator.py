@@ -114,40 +114,31 @@ if __name__ == "__main__":
     else:
         maxattempt=1
 
+    feedback=" "
     if 'feedback' in dic:
-        feedback= dic['feedback']
-        if feedback = "":
-            feedback = " "
-    else:
-        feedback=" "
+        feedback=dic['feedback']+" "
 
-    if 'lang' in dic:
-        lang= dic['lang']
-    else:
-        lang="fr"
-
+    solution=""
+    if 'solution' in dic:
+        solution=Template(dic['solution']).render(dic)
     
     if score>-1:
         dic['nbattempt'] +=1
-
-    nbattempt=dic['nbattempt']
 
     if (dic['nbattempt'] < int(dic['maxattempt'])) and score<100:
         dic['inputmode'] = "retry"
     else:
         dic['inputmode'] = "final"
-
+        feedback+=solution
 
     ffeedback=feedback
     if 'settings' in dic:
         if 'feedback' in dic['settings']:
             if 'class' in dic['settings']['feedback']:
                 if dic['settings']['feedback']['class']=='colorbox':
-                    if 'solution' in dic:
-                        ffeedback=format_feedback(score,feedback+Template(dic['solution']).render(dic))
-                    else:
-                        ffeedback=format_feedback(score,feedback)
+                    ffeedback=format_feedback(score,feedback)
                 if dic['settings']['feedback']['class']=='score':
                     ffeedback="Score : %d / 100" % score
 
     output(score,ffeedback,dic)
+
