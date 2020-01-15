@@ -4,7 +4,7 @@ title = Système linéaire 3 x 3
 
 param.size % 3
 
-param.coeffboundA % 5
+param.coeffboundA % 3
 
 param.coeffboundB % 3
 
