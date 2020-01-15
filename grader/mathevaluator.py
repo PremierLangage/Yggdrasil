@@ -116,6 +116,8 @@ if __name__ == "__main__":
 
     if 'feedback' in dic:
         feedback= dic['feedback']
+        if feedback = "":
+            feedback = " "
     else:
         feedback=" "
 
