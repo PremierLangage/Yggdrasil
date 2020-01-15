@@ -11,9 +11,9 @@ coeffboundA = param['coeffboundA']
 coeffboundB = param['coeffboundB']
 sparsity= param['sparsity']
 if 'maxdet' in param:
-    A=rand_int_matrix_invertible(n,coeffbound,[0],sparsity,param['mindet'],param['maxdet'])
+    A=rand_int_matrix_invertible(n,coeffboundA,[0],sparsity,param['mindet'],param['maxdet'])
 else:
-    A=rand_int_matrix_invertible(n,coeffbound,[0],sparsity)
+    A=rand_int_matrix_invertible(n,coeffboundA,[0],sparsity)
 if param['typesol']=="rat":
     B=rand_int_matrix(n,1,coeffboundB,[0])
 else:
