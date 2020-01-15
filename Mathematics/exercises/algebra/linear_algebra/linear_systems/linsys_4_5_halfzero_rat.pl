@@ -8,3 +8,5 @@ param.coeffbound = 3
 
 param.sparsity = 0.5
 
+param.typesol % "int"
+
