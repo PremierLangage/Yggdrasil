@@ -15,12 +15,12 @@ else:
     A=rand_int_matrix_invertible(n,coeffbound,[0],sparsity)
 if param['typesol']=="rat":
     B=rand_int_matrix(n,1,coeffbound,[0])
-    sol=list(linsolve((A, B)))[0]
-    sol_tex=latex(sol)
 else:
     sol=rand_int_matrix(n,1,5)
     B=A*sol
-    sol_tex=latex(sol.transpose())
+
+sol=list(linsolve((A, B)))[0]
+sol_tex=latex(sol)
 
 sys_tex=latexsys(A,B)
 lstvar=",".join(["x","y","z","t","u","v"][:n])
