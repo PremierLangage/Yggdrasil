@@ -7,14 +7,15 @@ before ==
 keyboards_JSON['virtualKeyboards']="elementary"
 input.config = keyboards_JSON
 n=param['size']
-coeffbound = param['coeffbound']
+coeffboundA = param['coeffboundA']
+coeffboundB = param['coeffboundB']
 sparsity= param['sparsity']
 if 'maxdet' in param:
     A=rand_int_matrix_invertible(n,coeffbound,[0],sparsity,param['mindet'],param['maxdet'])
 else:
     A=rand_int_matrix_invertible(n,coeffbound,[0],sparsity)
 if param['typesol']=="rat":
-    B=rand_int_matrix(n,1,coeffbound,[0])
+    B=rand_int_matrix(n,1,coeffboundB,[0])
 else:
     sol=rand_int_matrix(n,1,5)
     B=A*sol
@@ -43,4 +44,5 @@ score,_,feedback=ans_struct_expr(input.value,sol,"tuple")
 solution == 
 La solution est $! {{sol_tex}} !$.
 ==
+
 
