@@ -485,7 +485,7 @@ def rand_int_matrix_fullrank(n,p,bound,excluded_values=[],sparsity=0):
         if M.rank()==min([n,p]):
             return M
 
-def rand_int_matrix_givenrank(n,r):
+def rand_int_matrix_givenrank(n,m,r):
     """
     Generate a nxn random matrix with given rank.
     """
@@ -495,11 +495,11 @@ def rand_int_matrix_givenrank(n,r):
         A[d[i],d[i]]=1
     while True:
         P=rand_int_matrix_invertible(n,2)
-        Q=rand_int_matrix_invertible(n,2)
+        Q=rand_int_matrix_invertible(m,2)
         B=P*A*Q
         numzeros=0
         for i in range(n):
-            for j in range(n):
+            for j in range(m):
                 if B[i,j]==0:
                     numzeros += 1
         diffrows=len(set([tuple(B.row(i)) for i in range(n)]))
@@ -1023,6 +1023,7 @@ def ans_antiderivative(strans,sol,x,local_dict={}):
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
+
 
 
 
