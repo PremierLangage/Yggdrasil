@@ -7,7 +7,7 @@ before ==
 keyboards_JSON['virtualKeyboards']="sets"
 input.config = keyboards_JSON
 input.value=r"\lbrace ? | ? \in \R \rbrace"
-n=3
+n=2
 m=3
 r=1
 coeffbound = 4
