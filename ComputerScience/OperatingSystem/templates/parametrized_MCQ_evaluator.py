@@ -91,7 +91,7 @@ if __name__ == "__main__":
                 str(index) + '">' + \
                 question[2][index - len(question[1])] + "<br />"
         
-        output(-1, "", context)
+        output(-1, " ", context)
     
     if len(context['grade_questions']) == len(context['indices_questions']):
         grade = 0
@@ -106,4 +106,5 @@ if __name__ == "__main__":
         output(grade, feedback, context)
     
     output(-1, "THAT SHOULD NEVER HAPPEN !!!!", context)
+
 
