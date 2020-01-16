@@ -4,9 +4,16 @@ title = Système linéaire 4 x 4
 
 param.size % 4
 
-param.coeffbound % 3
+param.coeffboundA % 3
+
+param.coeffboundB % 3
 
 param.sparsity % 0.5
 
-param.typesol % "int"
+param.typesol % "rat"
+
+param.maxdet % 6
+
+param.mindet % 2
+
 
