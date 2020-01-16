@@ -7,11 +7,12 @@ before ==
 keyboards_JSON['virtualKeyboards']="sets"
 input.config = keyboards_JSON
 input.value=r"\lbrace ? | ? \in \R \rbrace"
-n=1
+n=2
 m=3
+r=2
 coeffbound = 4
-A=rand_int_matrix_givenrank(2,3,1)
-B=rand_int_matrix(2,1,coeffbound)
+A=rand_int_matrix_givenrank(n,m,r)
+B=rand_int_matrix(n,1,coeffbound)
 sys_tex=latexsys(A,B)
 lstvar=["x","y","z","t","u","v"]
 
