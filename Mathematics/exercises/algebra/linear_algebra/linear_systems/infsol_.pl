@@ -11,7 +11,7 @@ n=1
 m=3
 coeffbound = 4
 A=rand_int_matrix_givenrank(2,3,1)
-B=rand_int_matrix(3,1,coeffbound)
+B=rand_int_matrix(2,1,coeffbound)
 sys_tex=latexsys(A,B)
 lstvar=["x","y","z","t","u","v"]
 
