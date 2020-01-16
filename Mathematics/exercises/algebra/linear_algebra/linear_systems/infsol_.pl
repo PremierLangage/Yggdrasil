@@ -7,9 +7,9 @@ before ==
 keyboards_JSON['virtualKeyboards']="sets"
 input.config = keyboards_JSON
 input.value=r"\lbrace ? | ? \in \R \rbrace"
-n=2
+n=3
 m=3
-r=2
+r=1
 coeffbound = 4
 A=rand_int_matrix_givenrank(n,m,r)
 B=rand_int_matrix(n,1,coeffbound)
