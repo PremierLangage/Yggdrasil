@@ -489,7 +489,7 @@ def rand_int_matrix_givenrank(n,m,r):
     """
     Generate a nxn random matrix with given rank.
     """
-    A=sp.zeros(n)
+    A=sp.zeros(n,m)
     d=list_randint_norep(r,0,n-1)
     for i in range(r):
         A[d[i],d[i]]=1
