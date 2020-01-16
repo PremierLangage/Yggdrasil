@@ -10,8 +10,8 @@ input.value=r"\lbrace ? | ? \in \R \rbrace"
 n=1
 m=3
 coeffbound = 4
-A=rand_int_matrix_fullrank(n,m,coeffbound)
-B=rand_int_matrix(n,1,coeffbound)
+A=rand_int_matrix_givenrank(3,3,2)
+B=rand_int_matrix(3,1,coeffbound)
 sys_tex=latexsys(A,B)
 lstvar=["x","y","z","t","u","v"]
 
@@ -63,3 +63,4 @@ score,_,feedback=ans(input.value,A,B)
 ==
 
 input.debug % true
+
