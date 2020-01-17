@@ -78,6 +78,7 @@ Analyser la forme verbale suivante :
 ==
 
 form==
+<small>
 <table>
   <tr style='vertical-align: top'>
     <td style="padding-right:1em;"> {{ radio_prs | component }} </td>
@@ -85,6 +86,7 @@ form==
     <td> {{ radio_mood | component }} </td>
   </tr>
 </table>
+</small>
 ==
 
 evaluator==
