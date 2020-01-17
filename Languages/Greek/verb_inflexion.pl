@@ -31,7 +31,7 @@ radio_tense.loadChoices(['présent','imperfect','imparfait'])
 
 radio_voice.loadChoices(['actif','moyen-passif'])
 
-radio_mood.items.loadChoices(['indicatif','subjonctif','optatif'])
+radio_mood.loadChoices(['indicatif','subjonctif','optatif'])
 
 with open('grc_conj.json','r',encoding='utf8') as f:
     tplconj=json.load(f)
