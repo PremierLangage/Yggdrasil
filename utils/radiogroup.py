@@ -8,17 +8,15 @@ class CustomRadioGroup(Component):
         self.selector = 'c-radio-group'
         self.decorator = 'CustomRadioGroup'
         self.items = []
+        self.content = {}
         super().__init__(**kwargs)
 
     def loadContent(self, content):
         items = []
         for e in content:
-            items.append({
-                "id": uuid.uuid4(),
-                "content": e
-                "content0": e
-            })
-        self.items = items
+            id = uuid.uuid4()
+            self.content[id] = e
+            self.items.append({"id": uuid.uuid4(),"content": e})
 
     def setSolByIndex(self,index):
         self._sol=self.items[index]['id']
@@ -38,13 +36,13 @@ class CustomRadioGroup(Component):
         for e in self.items:
             if e['id'] == self._sol:
                 e['css'] = 'success-state'
-                e['content']+= r"<span class='fas fa-check' style='padding-left: 1em'></span>"
+                e['content'] = self.content[e['id']] + r"<span class='fas fa-check' style='padding-left: 1em'></span>"
                 if e['id'] == selectedId:
                     score = 100
             elif e['id'] == selectedId:
                 score = 0
                 e['css'] = 'error-state'
-                e['content']+= r"<span class='fas fa-times' style='padding-left: 1em'></span>"
+                e['content'] = self.content[e['id']] + r"<span class='fas fa-times' style='padding-left: 1em'></span>"
         return (score, "")
 
 
