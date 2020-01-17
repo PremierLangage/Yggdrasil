@@ -10,7 +10,7 @@ class Checkbox(Component):
         self.content = {}
         self.items = []
         self._sol = []
-        self.grading = 'AllOrNothing'
+        self.grading = 'RightMinusWrong'
         super().__init__(**kwargs)
 
     def setSolByIndex(self,index):
