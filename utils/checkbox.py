@@ -38,7 +38,6 @@ class Checkbox(Component):
 
     def eval(self):
         checkright,checkwrong,missright=0,0,0
-
         for item in self.items:
             if item['id'] in self._sol and item['checked']:
                 item['css'] = 'success-state'
