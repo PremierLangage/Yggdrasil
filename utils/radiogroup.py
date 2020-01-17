@@ -16,6 +16,7 @@ class CustomRadioGroup(Component):
             items.append({
                 "id": uuid.uuid4(),
                 "content": e
+                "content0": e
             })
         self.items = items
 
@@ -45,6 +46,7 @@ class CustomRadioGroup(Component):
                 e['css'] = 'error-state'
                 e['content']+= r"<span class='fas fa-times' style='padding-left: 1em'></span>"
         return (score, "")
+
 
 
 
