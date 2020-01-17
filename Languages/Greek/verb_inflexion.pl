@@ -41,7 +41,7 @@ for item in radio_tense.items:
     item['css']='myclass'
 for item in radio_mood.items:
     item['css']='myclass'
-for item in radio_voices.items:
+for item in radio_voice.items:
     item['css']='myclass'
     
 radio_tense.loadChoices(['présent','imparfait'])
