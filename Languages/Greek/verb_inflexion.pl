@@ -20,8 +20,6 @@ radio_voice.decorator = CustomRadioGroup
 extracss ==
 <style>
 .myclass {
-    color: blue !important;
-    font-size: 12px !important;
     padding: 4px 4px 4px 4px !important;
 }
 </style>
