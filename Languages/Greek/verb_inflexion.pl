@@ -101,21 +101,6 @@ form==
 </small>
 ==
 
-extracss ==
-<style>
-.myclass {
-    color: red !important;
-    font-size: 12px !important;
-
-    .mat-radio-button {
-        position: relative;
-        display: flex;
-        align-items: center;
-        font-size: 6px;
-    }
-}
-</style>
-==
 
 evaluator==
 score=0
