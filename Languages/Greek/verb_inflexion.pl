@@ -18,6 +18,15 @@ radio_mood.decorator = CustomRadioGroup
 radio_voice =: RadioGroup
 radio_voice.decorator = CustomRadioGroup
 
+extracss ==
+<style>
+.myclass {
+    color: red !important;
+    font-size: 24px !important;
+}
+</style>
+==
+
 before==
 import json,random
 
