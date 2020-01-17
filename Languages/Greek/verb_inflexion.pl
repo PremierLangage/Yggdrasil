@@ -28,6 +28,9 @@ radio_prs.loadChoices(['1ère personne du singulier',
                        '2e personne du pluriel',
                        '3e personne du pluriel'])
 
+for item in radio_prs.items:
+    item['css']='myclass'
+
 radio_tense.loadChoices(['présent','imperfect','imparfait'])
 
 radio_voice.loadChoices(['actif','moyen-passif'])
