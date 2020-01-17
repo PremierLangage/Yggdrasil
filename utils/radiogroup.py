@@ -18,6 +18,13 @@ class CustomRadioGroup(Component):
             self.content[id] = e
             self.items.append({"id": id,"content": e})
 
+    def loadChoices(self, content):
+        items = []
+        for e in content:
+            id = str(uuid.uuid4())
+            self.content[id] = e
+            self.items.append({"id": id,"content": e})
+
     def setSolByIndex(self,index):
         self._sol=self.items[index]['id']
 
