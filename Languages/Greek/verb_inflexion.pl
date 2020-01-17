@@ -95,6 +95,13 @@ extracss ==
 .myclass {
     color: red !important;
     font-size: 12px !important;
+    
+    .mat-radio-button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+    }
 }
 </style>
 ==
