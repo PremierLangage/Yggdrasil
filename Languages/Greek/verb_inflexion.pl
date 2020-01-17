@@ -28,12 +28,12 @@ extracss ==
 before==
 import json,random
 
-radio_prs.loadChoices(['1ère personne du singulier',
-                       '2e personne du singulier',
-                       '3e personne du singulier',
-                       '1ère personne du pluriel',
-                       '2e personne du pluriel',
-                       '3e personne du pluriel'])
+radio_prs.loadChoices(['1ère pers. du singulier',
+                       '2e pers. du singulier',
+                       '3e pers. du singulier',
+                       '1ère pers. du pluriel',
+                       '2e pers. du pluriel',
+                       '3e pers. du pluriel'])
 
 for item in radio_prs.items:
     item['css']='myclass'
