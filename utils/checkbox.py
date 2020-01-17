@@ -7,6 +7,7 @@ class Checkbox(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-checkbox-group'
         self.decorator = 'CustomCheckboxGroup'
+        self.content = {}
         self.items = []
         self._sol = []
         self.grading = 'AllOrNothing'
