@@ -2,38 +2,39 @@ extends = /template/basic.pl
 @ grc_conj.json [grc_conj.json]
 @ grc_verbs.json [grc_verbs.json]
 
+@ /utils/radiogroup.py [customradiogroup.py]
+
+radio =: RadioGroup
+
 title = Grec ancien : Analyse verbale
 
 settings.feedback.class = colorbox
 
 radio_prs =: RadioGroup
+radio.decorator = CustomRadioGroup
 radio_tense =: RadioGroup
+radio.decorator = CustomRadioGroup
 radio_mood =: RadioGroup
+radio.decorator = CustomRadioGroup
 radio_voice =: RadioGroup
+radio.decorator = CustomRadioGroup
+
 
 before==
-content_prs={'1S':'1ère personne du singulier','2S':'2e personne du singulier','3S':'3e personne du singulier','1P':'1ère personne du pluriel','2P':'2e personne du pluriel','3P':'3e personne du pluriel'}
-content_tense={'pres':'présent','imperfect':'imparfait'}
-
-radio_prs.items=[{'id':'1S','content':'1ère personne du singulier'},
-            {'id':'2S','content':'2e personne du singulier'},
-            {'id':'3S','content':'3e personne du singulier'},
-            {'id':'1P','content':'1ère personne du pluriel'},
-            {'id':'2P','content':'2e personne du pluriel'},
-            {'id':'3P','content':'3e personne du pluriel'}
-            ]
-radio_tense.items=[{'id':'pres','content':'présent'},
-            {'id':'imperfect','content':'imparfait'}
-            ]
-radio_voice.items=[{'id':'A','content':'actif'},
-            {'id':'MP','content':'moyen-passif'}
-            ]
-
-radio_mood.items=[{'id':'I','content':'indicatif'},
-            {'id':'S','content':'subjonctif'},
-            {'id':'O','content':'optatif'}
-            ]
 import json,random
+
+radio_prs.loadChoices(['1ère personne du singulier',
+                       '2e personne du singulier',
+                       '3e personne du singulier',
+                       '1ère personne du pluriel',
+                       '2e personne du pluriel',
+                       '3e personne du pluriel'])
+
+radio_tense.loadChoices(['présent','imperfect','imparfait'])
+
+radio_voice.loadChoices(['actif','moyen-passif'])
+
+radio_mood.items.loadChoices(['indicatif','subjonctif','optatif'])
 
 with open('grc_conj.json','r',encoding='utf8') as f:
     tplconj=json.load(f)
@@ -106,6 +107,7 @@ if isinstance(ans,list):
 feedback=""
 grade = (score,feedback)
 ==
+
 
 
 
