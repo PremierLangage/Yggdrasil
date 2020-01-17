@@ -16,7 +16,7 @@ class CustomRadioGroup(Component):
         for e in content:
             id = uuid.uuid4()
             self.content[id] = e
-            self.items.append({"id": uuid.uuid4(),"content": e})
+            self.items.append({"id": id,"content": e})
 
     def setSolByIndex(self,index):
         self._sol=self.items[index]['id']
