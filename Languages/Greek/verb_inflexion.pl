@@ -11,6 +11,7 @@ settings.feedback.class = colorbox
 radio_prs =: RadioGroup
 radio_prs.decorator = CustomRadioGroup
 radio_tense =: RadioGroup
+radio_tense.css = myclass
 radio_tense.decorator = CustomRadioGroup
 radio_mood =: RadioGroup
 radio_mood.decorator = CustomRadioGroup
