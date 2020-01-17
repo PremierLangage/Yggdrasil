@@ -11,7 +11,6 @@ settings.feedback.class = colorbox
 radio_prs =: RadioGroup
 radio_prs.decorator = CustomRadioGroup
 radio_tense =: RadioGroup
-radio_tense.css = myclass
 radio_tense.decorator = CustomRadioGroup
 radio_mood =: RadioGroup
 radio_mood.decorator = CustomRadioGroup
@@ -39,7 +38,7 @@ radio_prs.loadChoices(['1ère pers. du singulier',
 for item in radio_prs.items:
     item['css']='myclass'
 
-radio_tense.loadChoices(['présent','imperfect','imparfait'])
+radio_tense.loadChoices(['présent','imparfait'])
 
 radio_voice.loadChoices(['actif','moyen-passif'])
 
@@ -94,7 +93,8 @@ form==
 <table>
   <tr style='vertical-align: top'>
     <td style="padding-right:1em;"> {{ radio_prs | component }} </td>
-    <td style="padding-right:1em;"> {{ radio_tense | component }} {{ radio_voice | component }}</td>
+    <td style="padding-right:1em;"> {{ radio_tense | component }}</td>
+    <td style="padding-right:1em;"> {{ radio_voice | component }}</td>
     <td> {{ radio_mood | component }} </td>
   </tr>
 </table>
