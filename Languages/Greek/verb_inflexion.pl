@@ -34,6 +34,12 @@ radio_prs.loadChoices(['1ère pers. du singulier',
                        '1ère pers. du pluriel',
                        '2e pers. du pluriel',
                        '3e pers. du pluriel'])
+    
+radio_tense.loadChoices(['présent','imparfait'])
+
+radio_voice.loadChoices(['actif','moyen-passif'])
+
+radio_mood.loadChoices(['indicatif','subjonctif','optatif'])
 
 for item in radio_prs.items:
     item['css']='myclass'
@@ -44,12 +50,6 @@ for item in radio_mood.items:
 for item in radio_voice.items:
     item['css']='myclass'
     
-radio_tense.loadChoices(['présent','imparfait'])
-
-radio_voice.loadChoices(['actif','moyen-passif'])
-
-radio_mood.loadChoices(['indicatif','subjonctif','optatif'])
-
 with open('grc_conj.json','r',encoding='utf8') as f:
     tplconj=json.load(f)
     
