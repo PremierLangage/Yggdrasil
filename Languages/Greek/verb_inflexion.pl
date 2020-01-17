@@ -22,7 +22,7 @@ extracss ==
 .myclass {
     color: blue !important;
     font-size: 12px !important;
-    padding: 5px 5px 5px 5px !important;
+    padding: 4px 4px 4px 4px !important;
 }
 </style>
 ==
