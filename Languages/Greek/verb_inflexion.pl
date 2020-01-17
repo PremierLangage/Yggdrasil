@@ -4,8 +4,6 @@ extends = /template/basic.pl
 
 @ /utils/radiogroup.py [customradiogroup.py]
 
-radio =: RadioGroup
-
 title = Grec ancien : Analyse verbale
 
 settings.feedback.class = colorbox
