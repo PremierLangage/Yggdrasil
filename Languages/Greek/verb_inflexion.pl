@@ -11,14 +11,13 @@ title = Grec ancien : Analyse verbale
 settings.feedback.class = colorbox
 
 radio_prs =: RadioGroup
-radio.decorator = CustomRadioGroup
+radio_prs.decorator = CustomRadioGroup
 radio_tense =: RadioGroup
-radio.decorator = CustomRadioGroup
+radio_tense.decorator = CustomRadioGroup
 radio_mood =: RadioGroup
-radio.decorator = CustomRadioGroup
+radio_mood.decorator = CustomRadioGroup
 radio_voice =: RadioGroup
-radio.decorator = CustomRadioGroup
-
+radio_voice.decorator = CustomRadioGroup
 
 before==
 import json,random
