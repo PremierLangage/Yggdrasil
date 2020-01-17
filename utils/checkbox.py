@@ -49,7 +49,7 @@ class Checkbox(Component):
                 missright+=1
             elif not (item['id'] in self._sol) and item['checked']:
                 item['css'] = 'error-state'
-                item['content'] = self.content[item['id']] + r"<span class='fas fa-check' style='padding-left: 1em'></span>"
+                item['content'] = self.content[item['id']] + r"<span class='fas fa-times' style='padding-left: 1em'></span>"
                 checkwrong+=1
 
         if self.grading=="AllOrNothing":
