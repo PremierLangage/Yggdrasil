@@ -89,6 +89,15 @@ form==
 </small>
 ==
 
+extracss ==
+<style>
+.myclass {
+    color: red !important;
+    font-size: 24px !important;
+}
+</style>
+==
+
 evaluator==
 score=0
 try:
