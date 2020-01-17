@@ -37,7 +37,13 @@ radio_prs.loadChoices(['1ère pers. du singulier',
 
 for item in radio_prs.items:
     item['css']='myclass'
-
+for item in radio_tense.items:
+    item['css']='myclass'
+for item in radio_mood.items:
+    item['css']='myclass'
+for item in radio_voices.items:
+    item['css']='myclass'
+    
 radio_tense.loadChoices(['présent','imparfait'])
 
 radio_voice.loadChoices(['actif','moyen-passif'])
