@@ -14,7 +14,7 @@ class CustomRadioGroup(Component):
     def loadContent(self, content):
         items = []
         for e in content:
-            id = uuid.uuid4()
+            id = str(uuid.uuid4())
             self.content[id] = e
             self.items.append({"id": id,"content": e})
 
