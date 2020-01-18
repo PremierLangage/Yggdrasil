@@ -16,7 +16,7 @@ class CustomSortList(Component):
         self.items = []
         self._order = []
         for i in range(len(content)):
-            id = uuid.uuid4()
+            id = str(uuid.uuid4())
             self.items.append({
                 "id": id,
                 "content": content[i]
@@ -29,7 +29,7 @@ class CustomSortList(Component):
         n=len(self.items)
         orderans= [self._order.index(e['id']) for e in self.items]
         for i, e in enumerate(self.items):
-            e['content']=str(self._order[i])+ ". " + str(e['content'])
+            e['content']=str(self._order.index(e['id']))+ ". " + e['content']
             e['css'] = 'success-state animated fadeIn'
             if e['id'] != self._order[i]:
                 e['css'] = 'error-state animated fadeIn'
