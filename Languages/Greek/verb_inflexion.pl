@@ -25,7 +25,10 @@ extracss ==
 </style>
 ==
 
-lst_prs % [{'id':'1S','content':'1ère personne du singulier'},
+before==
+import json,random
+
+lst_prs = [{'id':'1S','content':'1ère personne du singulier'},
             {'id':'2S','content':'2e personne du singulier'},
             {'id':'3S','content':'3e personne du singulier'},
             {'id':'1P','content':'1ère personne du pluriel'},
@@ -33,22 +36,19 @@ lst_prs % [{'id':'1S','content':'1ère personne du singulier'},
             {'id':'3P','content':'3e personne du pluriel'}
             ]
 
-lst_tense % [{'id':'pres','content':'présent'},
+lst_tense = [{'id':'pres','content':'présent'},
           {'id':'imperfect','content':'imparfait'}
             ]
 
-lst_voice % [{'id':'A','content':'actif'},
+lst_voice = [{'id':'A','content':'actif'},
             {'id':'MP','content':'moyen-passif'}
             ]
 
-lst_mood % [{'id':'I','content':'indicatif'},
+lst_mood = [{'id':'I','content':'indicatif'},
             {'id':'S','content':'subjonctif'},
             {'id':'O','content':'optatif'}
             ]
-
-before==
-import json,random
-
+            
 radio_prs.loadChoices(['1ère pers. du singulier',
                        '2e pers. du singulier',
                        '3e pers. du singulier',
