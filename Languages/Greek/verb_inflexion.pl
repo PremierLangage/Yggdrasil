@@ -2,20 +2,14 @@ extends = /template/basic.pl
 @ grc_conj.json [grc_conj.json]
 @ grc_verbs.json [grc_verbs.json]
 
-@ /utils/radiogroup.py [customradiogroup.py]
-
 title = Grec ancien : Analyse verbale
 
 settings.feedback.class = colorbox
 
 radio_prs =: RadioGroup
-radio_prs.decorator = CustomRadioGroup
 radio_tense =: RadioGroup
-radio_tense.decorator = CustomRadioGroup
 radio_mood =: RadioGroup
-radio_mood.decorator = CustomRadioGroup
 radio_voice =: RadioGroup
-radio_voice.decorator = CustomRadioGroup
 
 extracss ==
 <style>
@@ -26,7 +20,8 @@ extracss ==
 ==
 
 before==
-import json,random
+content_prs={'1S':'1ère personne du singulier','2S':'2e personne du singulier','3S':'3e personne du singulier','1P':'1ère personne du pluriel','2P':'2e personne du pluriel','3P':'3e personne du pluriel'}
+content_tense={'pres':'présent','imperfect':'imparfait'}
 
 lst_prs = [{'id':'1S','content':'1ère personne du singulier'},
             {'id':'2S','content':'2e personne du singulier'},
@@ -62,6 +57,8 @@ for item in radio_mood.items:
     item['css']='myclass'
 for item in radio_voice.items:
     item['css']='myclass'
+
+import json,random
 
 with open('grc_conj.json','r',encoding='utf8') as f:
     tplconj=json.load(f)
@@ -108,18 +105,15 @@ Analyser la forme verbale suivante :
 ==
 
 form==
-<small>
 <table>
   <tr style='vertical-align: top'>
     <td style="padding-right:1em;"> {{ radio_prs | component }} </td>
-    <td style="padding-right:1em;"> {{ radio_tense | component }}</td>
-    <td style="padding-right:1em;"> {{ radio_voice | component }}</td>
+    <td style="padding-right:1em;"> {{ radio_tense | component }} </td>
+    <td style="padding-right:1em;"> {{ radio_voice | component }} </td>
     <td> {{ radio_mood | component }} </td>
   </tr>
 </table>
-</small>
 ==
-
 
 evaluator==
 score=0
@@ -137,8 +131,3 @@ if isinstance(ans,list):
 feedback=""
 grade = (score,feedback)
 ==
-
-
-
-
-
