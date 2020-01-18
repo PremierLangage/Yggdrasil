@@ -49,14 +49,10 @@ radio_tense.items = lst_tense
 radio_voice.items = lst_voice
 radio_mood.items = lst_mood
 
-for item in radio_prs.items:
-    item['css']='myclass'
-for item in radio_tense.items:
-    item['css']='myclass'
-for item in radio_mood.items:
-    item['css']='myclass'
-for item in radio_voice.items:
-    item['css']='myclass'
+lst_radio = [radio_prs,radio_tense,radio_voice,radio_mood]
+for radio in lst_radio:
+    for item in radio_prs.items:
+        item['css']='myclass'
 
 import json,random
 
