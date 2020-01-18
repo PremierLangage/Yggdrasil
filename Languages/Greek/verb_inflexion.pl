@@ -48,19 +48,11 @@ lst_mood = [{'id':'I','content':'indicatif'},
             {'id':'S','content':'subjonctif'},
             {'id':'O','content':'optatif'}
             ]
-            
-radio_prs.loadChoices(['1ère pers. du singulier',
-                       '2e pers. du singulier',
-                       '3e pers. du singulier',
-                       '1ère pers. du pluriel',
-                       '2e pers. du pluriel',
-                       '3e pers. du pluriel'])
-    
-radio_tense.loadChoices(['présent','imparfait'])
 
-radio_voice.loadChoices(['actif','moyen-passif'])
-
-radio_mood.loadChoices(['indicatif','subjonctif','optatif'])
+radio_prs.items = lst_prs
+radio_tense.items = lst_tense
+radio_voice.items = lst_voice
+radio_mood.items = lst_mood
 
 for item in radio_prs.items:
     item['css']='myclass'
