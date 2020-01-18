@@ -25,7 +25,7 @@ extracss ==
 </style>
 ==
 
- lst_prs % [{'id':'1S','content':'1ère personne du singulier'},
+lst_prs % [{'id':'1S','content':'1ère personne du singulier'},
             {'id':'2S','content':'2e personne du singulier'},
             {'id':'3S','content':'3e personne du singulier'},
             {'id':'1P','content':'1ère personne du pluriel'},
