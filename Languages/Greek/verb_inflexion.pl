@@ -25,6 +25,27 @@ extracss ==
 </style>
 ==
 
+ lst_prs % [{'id':'1S','content':'1ère personne du singulier'},
+            {'id':'2S','content':'2e personne du singulier'},
+            {'id':'3S','content':'3e personne du singulier'},
+            {'id':'1P','content':'1ère personne du pluriel'},
+            {'id':'2P','content':'2e personne du pluriel'},
+            {'id':'3P','content':'3e personne du pluriel'}
+            ]
+
+lst_tense % [{'id':'pres','content':'présent'},
+          {'id':'imperfect','content':'imparfait'}
+            ]
+
+lst_voice % [{'id':'A','content':'actif'},
+            {'id':'MP','content':'moyen-passif'}
+            ]
+
+lst_mood % [{'id':'I','content':'indicatif'},
+            {'id':'S','content':'subjonctif'},
+            {'id':'O','content':'optatif'}
+            ]
+
 before==
 import json,random
 
@@ -49,7 +70,7 @@ for item in radio_mood.items:
     item['css']='myclass'
 for item in radio_voice.items:
     item['css']='myclass'
-    
+
 with open('grc_conj.json','r',encoding='utf8') as f:
     tplconj=json.load(f)
     
