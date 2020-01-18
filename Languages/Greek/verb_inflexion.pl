@@ -23,12 +23,12 @@ before==
 content_prs={'1S':'1ère personne du singulier','2S':'2e personne du singulier','3S':'3e personne du singulier','1P':'1ère personne du pluriel','2P':'2e personne du pluriel','3P':'3e personne du pluriel'}
 content_tense={'pres':'présent','imperfect':'imparfait'}
 
-lst_prs = [{'id':'1S','content':'1ère personne du singulier'},
-            {'id':'2S','content':'2e personne du singulier'},
-            {'id':'3S','content':'3e personne du singulier'},
-            {'id':'1P','content':'1ère personne du pluriel'},
-            {'id':'2P','content':'2e personne du pluriel'},
-            {'id':'3P','content':'3e personne du pluriel'}
+lst_prs = [{'id':'1S','content':'1ère pers. du singulier'},
+            {'id':'2S','content':'2e pers. du singulier'},
+            {'id':'3S','content':'3e pers. du singulier'},
+            {'id':'1P','content':'1ère pers. du pluriel'},
+            {'id':'2P','content':'2e pers. du pluriel'},
+            {'id':'3P','content':'3e pers. du pluriel'}
             ]
 
 lst_tense = [{'id':'pres','content':'présent'},
