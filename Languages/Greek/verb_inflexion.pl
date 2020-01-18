@@ -126,4 +126,7 @@ if isinstance(ans,list):
 
 feedback=""
 grade = (score,feedback)
+lst_radio = [radio_prs,radio_tense,radio_voice,radio_mood]
+for radio in lst_radio:
+    radio.disabled=True
 ==
