@@ -51,7 +51,7 @@ radio_mood.items = lst_mood
 
 lst_radio = [radio_prs,radio_tense,radio_voice,radio_mood]
 for radio in lst_radio:
-    for item in radio_prs.items:
+    for item in radio.items:
         item['css']='myclass'
 
 import json,random
