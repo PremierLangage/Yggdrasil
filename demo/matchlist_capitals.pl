@@ -1,10 +1,10 @@
-extends = /template/basic.pl
-@ /utils/matchlist.py [custommatchlist.py]
+extends = /template/matchlist.pl
+
+title==
+Capitales des pays d'Europe
+==
 
 @ country_data.csv [data.csv]
-
-match =: MatchList
-match.decorator = CustomMatchList
 
 before==
 import random as rd
@@ -20,24 +20,7 @@ target=[item['capital'] for item in items]
 match.loadContent(source,target)
 ==
 
-title==
-Capitales des pays d'Europe
-==
-
 text==
 Relier chaque pays à sa capitale.
 ==
-
-form==
-{{ match | component }}
-==
-
-evaluator==
-grade = match.eval()
-if grade[0]==100:
-    text += " Bravo "
-match.disabled = True
-==
-
-
 
