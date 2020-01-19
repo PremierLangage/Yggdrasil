@@ -30,7 +30,7 @@ class CustomSortList(Component):
         orderans= [self._order.index(e['id']) for e in self.items]
         for i, e in enumerate(self.items):
             s=str(self._order.index(e['id']))+ ". "
-            e['content']=  """<div class="d-flex justify-content-between align-items-center">
+            e['content']=  """<div class="d-flex justify-content-center">
                 <span class="badge badge-primary badge-pill">2</span>
                                 Dapibus ac facilisis in
             </div>"""
