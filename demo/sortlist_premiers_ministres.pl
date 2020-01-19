@@ -12,7 +12,7 @@ with open('data.csv',newline='') as file:
     rows=list(csv.DictReader(file,delimiter=','))
 
 lst=[1,3,5,7,8]
-sortlist.loadContent([rows[i]['name'] for i in lst])
+sortlist.loadContent([rows[i]['nom'] for i in lst])
 ==
 
 text ==
