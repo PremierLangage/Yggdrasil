@@ -2,6 +2,8 @@ extends = /template/sortlist.pl
 
 title = Premiers ministres de la Ve République
 
+@ premiers_ministres.csv [data.csv]
+
 before ==
 import random as rd
 
