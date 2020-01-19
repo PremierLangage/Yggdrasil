@@ -29,7 +29,8 @@ class CustomSortList(Component):
         n=len(self.items)
         orderans= [self._order.index(e['id']) for e in self.items]
         for i, e in enumerate(self.items):
-            e['content']=str(self._order.index(e['id']))+ ". " + e['content']
+            s=str(self._order.index(e['id']))+ ". "
+            e['content']=r"<span class='badge badge-primary badge-pill'>2</span>" + e['content']
             e['css'] = 'success-state animated fadeIn'
             if e['id'] != self._order[i]:
                 e['css'] = 'error-state animated fadeIn'
