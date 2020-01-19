@@ -32,8 +32,8 @@ class CustomSortList(Component):
             s=+ ". "
             e['content']=  """<div class="d-flex justify-content-between">
                 <span class="badge badge-primary badge-pill"> %s </span>
-                <div> %s </div>
-                <div></div>
+                <span> %s </span>
+                <span></span>
             </div>""" % (str(1+self._order.index(e['id'])),e['content'])
             #e['content']=r"<span class='badge badge-primary badge-pill'>2</span>" + e['content']
             e['css'] = 'success-state animated fadeIn'
