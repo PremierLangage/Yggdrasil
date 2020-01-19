@@ -16,7 +16,7 @@ sortlist.loadContent([rows[i]['nom'] for i in lst])
 ==
 
 text ==
-Ordonner les nombres suivants du plus petit au plus grand.
+Classer ces premiers ministres de la Ve République du plus ancien au plus récent.
 ==
 
 
