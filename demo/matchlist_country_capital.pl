@@ -1,7 +1,7 @@
 extends = /template/matchlist.pl
 
 title==
-Correspondances : pays et capitales
+Correspondances : Pays et Capitales
 ==
 
 @ country_data.csv [data.csv]
