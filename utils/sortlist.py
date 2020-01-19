@@ -37,7 +37,7 @@ class CustomSortList(Component):
                 cssbadge="badge-danger"
                 errors += 1
             
-            e['content']=  """<div class="d-flex justify-content-between">
+            e['content']=  """<div class="d-flex justify-content-between align-items-center">
                 <span class="badge %s"> %s </span>
                 <span> %s </span>
                 <span></span>
