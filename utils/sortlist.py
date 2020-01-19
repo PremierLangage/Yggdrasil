@@ -30,10 +30,10 @@ class CustomSortList(Component):
         orderans= [self._order.index(e['id']) for e in self.items]
         for i, e in enumerate(self.items):
             s=str(self._order.index(e['id']))+ ". "
-            e['content']=  """<li class="list-group-item d-flex justify-content-between align-items-center">
-                Dapibus ac facilisis in
+            e['content']=  """<div class="d-flex justify-content-between align-items-center">
                 <span class="badge badge-primary badge-pill">2</span>
-            </li>"""
+                                Dapibus ac facilisis in
+            </div>"""
             #e['content']=r"<span class='badge badge-primary badge-pill'>2</span>" + e['content']
             e['css'] = 'success-state animated fadeIn'
             if e['id'] != self._order[i]:
