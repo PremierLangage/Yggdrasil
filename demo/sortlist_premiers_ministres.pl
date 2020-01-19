@@ -16,7 +16,7 @@ sortlist.loadContent([rows[i]['nom'] for i in lst])
 ==
 
 text ==
-Classer ces premiers ministres de la Ve République du plus ancien au plus récent.
+Classer ces premiers ministres de la Ve République du plus ancien au plus récent (selon la date d'entrée en fonction).
 ==
 
 
