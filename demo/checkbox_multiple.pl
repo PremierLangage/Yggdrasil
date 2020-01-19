@@ -1,6 +1,6 @@
 extends = /template/checkbox.pl
 
-title = QCM 2 : Multiples de 3
+title = QCM : Multiples de 3
 
 before ==
 import random as rd
