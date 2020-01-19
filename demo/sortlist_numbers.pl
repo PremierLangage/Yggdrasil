@@ -1,11 +1,6 @@
-extends = /template/basic.pl
+extends = /template/sortlist.pl
 
 title = Ordonner des nombres
-
-@ /utils/sortlist.py [customsortlist.py]
-
-sortlist =: SortList
-sortlist.decorator = CustomSortList
 
 before ==
 import random as rd
@@ -18,15 +13,8 @@ text ==
 Ordonner les nombres suivants du plus petit au plus grand.
 ==
 
-form ==
-{{ sortlist|component }}
-==
-
-evaluator ==
-grade = sortlist.eval()
-sortlist.disabled=True
-==
 
 settings.feedback.class = score
+
 
 
