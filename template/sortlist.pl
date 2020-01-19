@@ -14,4 +14,4 @@ grade = sortlist.eval()
 sortlist.disabled=True
 ==
 
-
+settings.feedback.class = score
