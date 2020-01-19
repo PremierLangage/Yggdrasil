@@ -30,18 +30,23 @@ class CustomSortList(Component):
         orderans= [self._order.index(e['id']) for e in self.items]
         for i, e in enumerate(self.items):
             e['content']=  """<div class="d-flex justify-content-between">
-                <span class="badge badge-primary badge-pill"> %s </span>
+                <span class="badge badge-success"> %s </span>
                 <span> %s </span>
                 <span></span>
             </div>""" % (str(1+self._order.index(e['id'])),e['content'])
             #e['content']=r"<span class='badge badge-primary badge-pill'>2</span>" + e['content']
-            e['css'] = 'success-state animated fadeIn'
-            if e['id'] != self._order[i]:
+            
+            if e['id'] == self._order[i]:
+                e['css'] = 'success-state animated fadeIn'
+                cssbadge="badge-success"
+            else:
                 e['css'] = 'error-state animated fadeIn'
+                cssbadge="badge-danger"
                 errors += 1
         tau,_=kendalltau(orderans,list(range(n)))
         score=round(max([0,tau])*100)
         return (score,str(score))
+
 
 
 
