@@ -1,6 +1,6 @@
 extends = /template/sortlist.pl
 
-title = Premiers ministres de la Ve République
+title = Classement : Premiers ministres de la Ve République
 
 @ premiers_ministres.csv [data.csv]
 
