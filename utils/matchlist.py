@@ -45,11 +45,11 @@ class CustomMatchList(Component):
 
 def source_link(sourceId,links1,links2):
     for e in links1:
-        if e['source']==sourceId
+        if e['source']==sourceId:
             targetId1=e['target']
             break
     for e in links2:
-        if e['source']==sourceId
+        if e['source']==sourceId:
             targetId2=e['target']
             break
     return targetId1==targetId2
