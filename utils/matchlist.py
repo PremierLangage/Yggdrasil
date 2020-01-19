@@ -32,11 +32,12 @@ class CustomMatchList(Component):
     def eval(self):
         error = 0
         for e in self.nodes:
-            if source_link(e['id'],self.links,self._expected):
-                e['css'] = 'success-state'
-            else:
-                e['css'] = 'error-state'
-                error = error + 1
+            if e['source']:
+                if source_link(e['id'],self.links,self._expected):
+                    e['css'] = 'success-state'
+                else:
+                    e['css'] = 'error-state'
+                    error = error + 1
 
         if error == 0:
             return (100, '')
