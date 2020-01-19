@@ -11,7 +11,8 @@ import csv
 with open('data.csv',newline='') as file:
     rows=list(csv.DictReader(file,delimiter=','))
 
-lst=[1,3,5,7,8]
+lst=rd.sample(range(len(rows)),5)
+lst.sort()
 sortlist.loadContent([rows[i]['nom'] for i in lst])
 ==
 
