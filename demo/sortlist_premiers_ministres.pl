@@ -6,6 +6,7 @@ title = Premiers ministres de la Ve République
 
 before ==
 import random as rd
+import csv
 
 with open('data.csv',newline='') as file:
     rows=list(csv.DictReader(file,delimiter=','))
