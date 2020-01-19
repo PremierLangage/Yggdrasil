@@ -11,8 +11,8 @@ import csv
 with open('data.csv',newline='') as file:
     rows=list(csv.DictReader(file,delimiter=','))
 
-items=rows[1,3,5,7]
-sortlist.loadContent([item['name'] for item in items])
+lst=[1,3,5,7,8]
+sortlist.loadContent([rowz[i]['name'] for i in lst])
 ==
 
 text ==
