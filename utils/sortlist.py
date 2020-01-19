@@ -33,6 +33,7 @@ class CustomSortList(Component):
             e['content']=  """<div class="d-flex justify-content-between">
                 <div class="badge badge-primary badge-pill">2</div>
                 <div> Dapibus ac facilisis in </div>
+                <div> in </div>
             </div>"""
             #e['content']=r"<span class='badge badge-primary badge-pill'>2</span>" + e['content']
             e['css'] = 'success-state animated fadeIn'
