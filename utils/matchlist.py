@@ -31,23 +31,26 @@ class CustomMatchList(Component):
 
     def eval(self):
         error = 0
-        for e in self._expected:
-            if not in_links(e, self.links):
-                error = error + 1
-
-        for e in self.links:
-            e['css'] = 'error-state'
-            if in_links(e, self._expected):
+        for e in self.nodes:
+            if source_link(e['id'],self.links,self._expected):
                 e['css'] = 'success-state'
+            else:
+                e['css'] = 'error-state'
+                error = error + 1
 
         if error == 0:
             return (100, '')
         else:
             return (0, '')
 
-def in_links(conn, links):
-    for e in links:
-        if e['source'] == conn["source"] and  e['target'] == conn["target"]:
-            return True
-    return False
+def source_link(sourceId,links1,links2):
+    for e in links1:
+        if e['source']==sourceId
+            targetId1=e['target']
+            break
+    for e in links2:
+        if e['source']==sourceId
+            targetId2=e['target']
+            break
+    return targetId1==targetId2
 
