@@ -8,9 +8,7 @@ import random as rd
 with open('data.csv',newline='') as file:
     rows=list(csv.DictReader(file,delimiter=','))
 
-items=rd.sample(rows,4)
-items.sort(key=sortSecond)
-
+items=rows[1,3,5,7]
 sortlist.loadContent([item['name'] for item in items])
 ==
 
