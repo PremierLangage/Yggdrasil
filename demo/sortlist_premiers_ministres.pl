@@ -11,7 +11,7 @@ with open('data.csv',newline='') as file:
 items=rd.sample(rows,4)
 items.sort(key=sortSecond)
 
-sortlist.loadContent([item['capital'] for item in items])
+sortlist.loadContent([item['name'] for item in items])
 ==
 
 text ==
