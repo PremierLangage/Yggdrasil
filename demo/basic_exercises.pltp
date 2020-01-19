@@ -4,7 +4,8 @@ introduction ==
 
 ==
 
-@ /demo/radio_capitals.pl 
+@ /demo/radio_capitals.pl
+@ /demo/checkbox_multiple.pl
 @ /demo/matchlist_country_capital.pl
 @ /demo/sortlist_premiers_ministres.pl
 
