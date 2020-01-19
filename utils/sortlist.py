@@ -34,7 +34,7 @@ class CustomSortList(Component):
                 <span class="badge badge-primary badge-pill"> %s </span>
                 <span> %s </span>
                 <span></span>
-            </div>""" % (str(1+self._order.index(e['id'])),e['content'])
+            </div>""" % (str(self._order.index(e['id'])),e['content'])
             #e['content']=r"<span class='badge badge-primary badge-pill'>2</span>" + e['content']
             e['css'] = 'success-state animated fadeIn'
             if e['id'] != self._order[i]:
