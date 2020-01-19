@@ -32,7 +32,7 @@ class CustomMatchList(Component):
     def eval(self):
         error = 0
         for e in self.nodes:
-            if e['source']:
+            if 'source' not in e or e['source']:
                 if source_link(e['id'],self.links,self._expected):
                     e['css'] = 'success-state'
                 else:
