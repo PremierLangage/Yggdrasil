@@ -1,6 +1,6 @@
 extends = /template/checkbox.pl
 
-title = Multiples de 3
+title = QCM 2
 
 before ==
 import random as rd
@@ -10,4 +10,5 @@ checkbox.loadRightWrong(mult3,other,5,rd.randint(1,4))
 ==
 
 text = Parmi les nombres suivants, lesquels sont des multiples de 3 ?
+
 
