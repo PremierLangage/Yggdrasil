@@ -38,7 +38,8 @@ lst_tense = [{'id':'pres','content':'présent'},
             ]
 
 lst_voice = [{'id':'A','content':'actif'},
-            {'id':'MP','content':'moyen-passif'}
+            {'id':'M','content':'moyen'}
+            {'id':'P','content':'passif'}
             ]
 
 lst_mood = [{'id':'I','content':'indicatif'},
@@ -134,4 +135,5 @@ lst_radio = [radio_prs,radio_tense,radio_voice,radio_mood]
 for radio in lst_radio:
     radio.disabled=True
 ==
+
 
