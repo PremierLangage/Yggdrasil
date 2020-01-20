@@ -83,6 +83,8 @@ if 'imperfect' in data:
     conj['imperfect']=render(tplconj['imperfect'],data['imperfect'])
 if 'future' in data:
     conj['future']=render(tplconj['future'],data['future'])
+if 'aorist' in data:
+    conj['aorist']=render(tplconj['aorist'],data['aorist'])
 
 voice=random.choice(["A","MP"])
 mood=random.choice(["I"])
