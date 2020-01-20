@@ -38,7 +38,7 @@ lst_tense = [{'id':'pres','content':'présent'},
             ]
 
 lst_voice = [{'id':'A','content':'actif'},
-            {'id':'M','content':'moyen'}
+            {'id':'M','content':'moyen'},
             {'id':'P','content':'passif'}
             ]
 
@@ -87,7 +87,7 @@ if 'future' in data:
 if 'aorist' in data:
     conj['aorist']=render(tplconj['aorist'],data['aorist'])
 
-voice=random.choice(["A","MP"])
+voice=random.choice(["A","M","P"])
 mood=random.choice(["I"])
 tense=random.choice(["pres","imperfect","future","aorist"])
 person=random.choice(["1S","2S","3S","1P","2P","3P"])
@@ -135,5 +135,6 @@ lst_radio = [radio_prs,radio_tense,radio_voice,radio_mood]
 for radio in lst_radio:
     radio.disabled=True
 ==
+
 
 
