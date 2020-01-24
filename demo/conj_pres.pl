@@ -37,8 +37,8 @@ Conjuguer le verbe {{verbe_inf}} à la {{txt_prs}} du présent.
 input =: Input
 
 form ==
-<div class="d-flex">
-  <div class="p-2 align-self-baseline">Flex item</div>
+<div class="d-flex align-items-center">
+  <div class="p-2">Flex item</div>
   <div class="p-2 flex-grow-1">{{input|component}}</div>
 </div>
 ==
