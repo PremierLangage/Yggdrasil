@@ -38,7 +38,7 @@ input =: Input
 
 form ==
 <div class="d-flex bd-highlight">
-  <div class="p-2 bd-highlight align-self-center">Flex item</div>
+  <div class="p-2 bd-highlight align-self-baseline">Flex item</div>
   <div class="p-2 flex-grow-1 bd-highlight">{{input|component}}</div>
 </div>
 ==
