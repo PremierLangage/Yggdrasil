@@ -38,8 +38,8 @@ input =: Input
 
 form ==
 <div class="d-flex align-items-center">
-  <div class="p-2">Flex item</div>
-  <div class="p-2 flex-grow-1">{{input|component}}</div>
+  <div>Flex item</div>
+  <div class="flex-grow-1">{{input|component}}</div>
 </div>
 ==
 
