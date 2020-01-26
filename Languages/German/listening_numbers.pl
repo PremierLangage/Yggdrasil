@@ -1,6 +1,6 @@
 extends = /template/basicinput.pl
 
-@ /audio/De-sechs.ogg [number.ogg]
+@ audio/De-sechs.ogg [number.ogg]
 
 input.type = number
 
