@@ -10,11 +10,13 @@ before ==
 import random as rd
 a=rd.randint(10,20)
 b=rd.randint(10,20)
+audiofile=base64.b64encode(image)
 ==
 
 text ==
+
 <audio controls>
-<source src={{image}} type="audio/ogg">
+<source src={{audiofile}} type="audio/ogg">
 Your browser does not support the audio element.
 </audio> 
 ==
