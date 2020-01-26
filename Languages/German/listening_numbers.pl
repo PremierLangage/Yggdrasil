@@ -1,5 +1,7 @@
 extends = /template/basicinput.pl
 
+image =$ /audio/De-sechs.ogg
+
 input.type = number
 
 title = Addition
@@ -11,7 +13,7 @@ b=rd.randint(10,20)
 ==
 
 text ==
- <audio controls>
+<audio controls>
 <source src=https://pl.u-pem.fr/filebrowser/options?name=download_resource&path=Yggdrasil/Languages/German/audio/De-sechs.ogg type="audio/ogg">
 Your browser does not support the audio element.
 </audio> 
