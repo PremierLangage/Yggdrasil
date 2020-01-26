@@ -18,7 +18,7 @@ audiofile = str(urlSafeEncodedBytes, "utf-8")
 text ==
 
 <audio controls>
-<source src={{audiofile}} type="audio/ogg">
+<source src="data:audio/ogg;base64,{{audiofile}}">
 Your browser does not support the audio element.
 </audio> 
 ==
