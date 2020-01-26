@@ -20,17 +20,13 @@ audiofile=lstaudio[sol-1]
 
 text ==
 <audio controls="" src="{{audiofile}}">
-Your browser does not support the audio element.
 </audio> 
 ==
 
 evaluator ==
-try:
-    if int(input.value)==a+b:
-        grade=(100,"")
-    else:
-        grade=(0,"%d + %d = %d" % (a,b,a+b))
-except:
-    grade=(-1,"Votre réponse n'est pas un nombre entier.")
+if input.value==sol:
+    grade=(100,"")
+else:
+    grade=(0,str(sol))
 ==
 
