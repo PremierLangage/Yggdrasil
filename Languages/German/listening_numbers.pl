@@ -1,23 +1,20 @@
 extends = /template/basicinput.pl
 
-image =$ /Languages/German/audio/De-sechs.ogg
+audio6 =$ /Languages/German/audio/De-sechs.ogg
+audio5 =$ /Languages/German/audio/De-fünf.ogg
 
 input.type = number
 
 title = Addition
 
 before ==
-import base64
 import random as rd
-a=rd.randint(10,20)
-b=rd.randint(10,20)
-urlSafeEncodedBytes = base64.urlsafe_b64encode(image.encode("utf-8"))
-audiofile = str(urlSafeEncodedBytes, "utf-8")
+audiofile=rd.random([audio5,audio6])
 ==
 
 text ==
 
-<audio controls="" src="{{image}}">
+<audio controls="" src="{{audiofile}}">
 Your browser does not support the audio element.
 </audio> 
 ==
