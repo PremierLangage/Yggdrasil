@@ -17,7 +17,7 @@ audiofile = str(urlSafeEncodedBytes, "utf-8")
 
 text ==
 
-<audio controls="" src="{{audiofile}}">
+<audio controls="" src="{{image}}">
 Your browser does not support the audio element.
 </audio> 
 ==
