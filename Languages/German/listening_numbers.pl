@@ -1,7 +1,7 @@
 extends = /template/basicinput.pl
 
 
-@ /examples/napoleon.jpg
+@ ComputerScience/C/examples/napoleon.jpg
 
 input.type = number
 
