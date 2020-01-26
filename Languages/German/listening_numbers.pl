@@ -20,6 +20,7 @@ audiofile=lstaudio[sol-1]
 
 text ==
 <button onclick="playAudio()" class="btn btn-info"><i class="fa fa-play"></i></button>
+
 Ecrire le nombre entendu (en caractères numériques).
 ==
 
