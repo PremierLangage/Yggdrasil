@@ -21,8 +21,8 @@ audiofile=lstaudio[sol-1]
 text ==
 Ecouter le fichier audio
 <button onclick="playAudio()" type="button">Play Audio</button>
-
 ==
+
 extrajs==
 <audio id="Audio" controls="" src="{{audiofile}}">
 </audio> 
