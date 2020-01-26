@@ -9,7 +9,7 @@ audio6 =$ /Languages/German/audio/De-sechs.ogg
 
 input.type = number
 
-title = Nombres
+title = Zahlen
 
 before ==
 import random as rd
