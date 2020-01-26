@@ -9,7 +9,7 @@ title = Addition
 
 before ==
 import random as rd
-audiofile=rd.random([audio5,audio6])
+audiofile=rd.choice([audio5,audio6])
 ==
 
 text ==
