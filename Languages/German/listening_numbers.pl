@@ -19,7 +19,7 @@ audiofile=lstaudio[sol-1]
 ==
 
 text ==
-<button onclick="playAudio()" class="btn btn-info btn-lg"><i class="fas fa-ear"></i></button>
+<button onclick="playAudio()" class="btn btn-info btn-lg"><i class="fa fa-play"></i></button>
 Ecrire le nombre entendu (en caractères numériques).
 ==
 
