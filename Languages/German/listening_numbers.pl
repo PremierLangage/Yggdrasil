@@ -19,8 +19,8 @@ audiofile=lstaudio[sol-1]
 ==
 
 text ==
-Ecouter le fichier audio
 <button onclick="playAudio()" class="btn"><i class="fa fa-play"></i></button>
+Ecrire le nombre entendu.
 ==
 
 extrajs==
