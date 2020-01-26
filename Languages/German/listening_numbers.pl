@@ -12,7 +12,7 @@ import random as rd
 a=rd.randint(10,20)
 b=rd.randint(10,20)
 audiofile=base64.b64encode(image)
-urlSafeEncodedBytes = base64.urlsafe_b64encode(image.encode("utf-8"))
+urlSafeEncodedBytes = base64.urlsafe_b64encode(str(image).encode("utf-8"))
 audiofile = str(urlSafeEncodedBytes, "utf-8")
 ==
 
