@@ -24,7 +24,7 @@ Ecouter le fichier audio
 ==
 
 extrajs==
-<audio id="Audio" controls="" src="{{audiofile}}">
+<audio id="Audio" style="display:none" src="{{audiofile}}">
 </audio> 
 <script>
 var x = document.getElementById("Audio"); 
