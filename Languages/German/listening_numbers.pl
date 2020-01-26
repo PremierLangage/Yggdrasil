@@ -1,9 +1,9 @@
 extends = /template/basicinput.pl
 
-audio1 =$ /Languages/German/audio/De-sechs.ogg
-audio2 =$ /Languages/German/audio/De-fünf.ogg
-audio3 =$ /Languages/German/audio/De-sechs.ogg
-audio4 =$ /Languages/German/audio/De-fünf.ogg
+audio1 =$ /Languages/German/audio/De-eins.ogg
+audio2 =$ /Languages/German/audio/De-zwei.ogg
+audio3 =$ /Languages/German/audio/De-drei.ogg
+audio4 =$ /Languages/German/audio/De-vier.ogg
 audio5 =$ /Languages/German/audio/De-fünf.ogg
 audio6 =$ /Languages/German/audio/De-sechs.ogg
 
