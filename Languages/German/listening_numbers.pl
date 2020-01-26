@@ -1,8 +1,5 @@
 extends = /template/basicinput.pl
 
-
-napo $ /ComputerScience/C/examples/napoleon.jpg
-
 input.type = number
 
 title = Addition
