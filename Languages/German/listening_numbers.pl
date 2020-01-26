@@ -1,6 +1,7 @@
 extends = /template/basicinput.pl
 
 @ audio/De-sechs.ogg [number.ogg]
+@ /examples/napoleon.jpg
 
 input.type = number
 
