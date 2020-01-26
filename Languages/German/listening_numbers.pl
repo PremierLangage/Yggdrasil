@@ -1,6 +1,6 @@
 extends = /template/basicinput.pl
 
-image =$ /audio/De-sechs.ogg
+image =$ /Languages/German/audio/De-sechs.ogg
 
 input.type = number
 
