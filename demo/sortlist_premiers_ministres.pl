@@ -6,7 +6,7 @@ title = Classement : Premiers ministres
 
 field= name
 
-nb = 7
+nb % 7
 
 before ==
 import random as rd
