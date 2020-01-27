@@ -24,7 +24,7 @@ form ==
 evaluator ==
 try:
     if int(input.value)==a+b:
-        grade=(100,"")
+        grade=(100,"Super")
     else:
         grade=(0,"%d + %d = %d" % (a,b,a+b))
 except:
