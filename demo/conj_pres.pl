@@ -31,8 +31,6 @@ txt_prs=dic_txt_prs[p]
 pronom=dic_txt_pronom[p]
 ==
 
-input.appearance = "legacy"
-
 text ==
 Conjuguer le verbe {{verbe_inf}} à la {{txt_prs}} du présent.
 ==
