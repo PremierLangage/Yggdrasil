@@ -39,7 +39,7 @@ input =: Input
 
 form ==
 <div class="d-flex align-items-center">
-  <div class="align-self-baseline">{{pronom}}</div>
+  <div class="align-self-end">{{pronom}}</div>
   <div class="flex-grow-1">{{input|component}}</div>
 </div>
 ==
