@@ -4,6 +4,8 @@ title = Classement : Premiers ministres
 
 @ premiers_ministres.csv [data.csv]
 
+field= name
+
 before ==
 import random as rd
 import csv
@@ -13,11 +15,12 @@ with open('data.csv',newline='') as file:
 
 lst=rd.sample(range(len(rows)),5)
 lst.sort()
-sortlist.loadContent([rows[i]['nom'] for i in lst])
+sortlist.loadContent([rows[i][field] for i in lst])
 ==
 
 text ==
 Classer ces premiers ministres de la Ve République du plus ancien au plus récent (selon la date d'entrée en fonction).
 ==
+
 
 
