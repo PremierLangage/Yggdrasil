@@ -4,6 +4,8 @@
 
 title = Addition
 
+settings.feedback.class= colorbox
+
 before ==
 import random as rd
 a=rd.randint(100,200)
