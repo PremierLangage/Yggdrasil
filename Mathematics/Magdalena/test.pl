@@ -4,7 +4,7 @@
 
 title = Addition
 
-settings.feedback.class= colorbox
+settings.feedback.class = colorbox
 
 before ==
 import random as rd
