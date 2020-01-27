@@ -6,6 +6,8 @@ title = Classement : Premiers ministres
 
 field= name
 
+nb = 7
+
 before ==
 import random as rd
 import csv
@@ -13,7 +15,7 @@ import csv
 with open('data.csv',newline='') as file:
     rows=list(csv.DictReader(file,delimiter=','))
 
-lst=rd.sample(range(len(rows)),5)
+lst=rd.sample(range(len(rows)),nb)
 lst.sort()
 sortlist.loadContent([rows[i][field] for i in lst])
 ==
