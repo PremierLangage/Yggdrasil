@@ -37,5 +37,5 @@ evaluator ==
 if input.value==capital:
     grade=(100,"")
 else:
-    grade=(100,"")
+    grade=(0,"")
 ==
