@@ -1,6 +1,4 @@
-@ /utils/sandboxio.py
-@ /builder/before2.py [builder.py]
-@ /grader/evaluator2.py [grader.py]
+extends = /template/basicinput.pl
 
 @ conj_data.csv [data.csv]
 
@@ -50,6 +48,7 @@ if input.value==verbe_conj:
 else:
     grade=(0,"")
 ==
+
 
 
 
