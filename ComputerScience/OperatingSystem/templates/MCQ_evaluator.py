@@ -89,16 +89,9 @@ if __name__ == "__main__":
             if index < len(question[1]):
                 context['goods'].append(str(index))
                 context['group'].items.append({ "id": str(index), "content": question[1][index] })
-                # context['form'] +='<input type="checkbox" name="c_' + \
-                # str(index) + '" value="' + str(index) + '" id="form_' + \
-                # str(index) + '">' + question[1][index] + "<br />"
             else:
                 context['bads'].append(str(index))
                 context['group'].items.append({ "id": str(index), "content": question[2][index - len(question[1])] })
-                # context['form'] +='<input type="checkbox" name="c_' + \
-                # str(index) + '" value="' + str(index) + '" id="form_' + \
-                # str(index) + '">' + \
-                # question[2][index - len(question[1])] + "<br />"
         
         output(-1, " ", context)
     
