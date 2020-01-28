@@ -13,13 +13,13 @@ import csv
 with open('data.csv',newline='') as file:
     rows=list(csv.DictReader(file,delimiter=','))
 
-item=rd.choice(rows)
-country=item['country']
-article=item['article']
-capital=item['capital']
+item = rd.choice(rows)
+pays = item['pays']
+article = item['article']
+capitale = item['capitale']
 
-partitif={"le":"du ","la":"de la ","les":"des ","l":"de l'"}
-ofcountry = partitif[article] + country
+partitif = {"le":"du ", "la":"de la ", "les":"des ", "l":"de l'"}
+dupays = partitif[article] + country
 ==
 
 text ==
@@ -27,15 +27,14 @@ Quelle est la capitale {{ofcountry}} ?
 ==
 
 input =: Input
-input.type = text
 
 form ==
 {{ input | component }}
 ==
 
 evaluator ==
-if input.value==capital:
-    grade=(100,"")
+if input.value == capital:
+    grade = (100,"")
 else:
-    grade=(0,"")
+    grade = (0,"")
 ==
