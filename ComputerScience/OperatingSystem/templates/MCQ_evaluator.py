@@ -105,7 +105,7 @@ if __name__ == "__main__":
         grade = grade // len(context['grade_questions'])
         
         context['form'] = ''
-        context['text'] = ''
+        context['text'] = "C'est fini!<br />"
         feedback = "Vous avez obtenu <b>" + str(grade) + "%</b> de réussite à votre QCM."
         
         output(grade, feedback, context)
