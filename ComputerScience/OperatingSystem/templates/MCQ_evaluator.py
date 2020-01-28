@@ -33,16 +33,19 @@ if __name__ == "__main__":
     
     # time to correct the last question if relevant
     if 'goods' in context:
+        all_checked = {}
+        for it in context['group'].item:
+            all_checked[it['id']] = it['checked']
         grade = 0
         ok = 0
         not_ok = 0
         for good in context['goods']:
-            if good in answers:
+            if all_checked[good] == True:
                 ok += 1
             else:
                 not_ok += 1
         for bad in context['bads']:
-            if bad in answers:
+            if all_checked[bad] == False:
                 not_ok += 1
             else:
                 ok += 1
