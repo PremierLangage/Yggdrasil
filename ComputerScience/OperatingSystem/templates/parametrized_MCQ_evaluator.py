@@ -105,6 +105,7 @@ if __name__ == "__main__":
         
         output(grade, feedback, context)
     
-    output(-1, "THAT SHOULD NEVER HAPPEN !!!!", context)
+    output(-1, " ", context)
+
 
 
