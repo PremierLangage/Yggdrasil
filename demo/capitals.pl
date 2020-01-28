@@ -15,7 +15,7 @@ if "row" not in globals():
     with open('data.csv','r') as file:
         row=rd.choice(list(csv.reader(file,delimiter=',')))
 print(row,file=sys.stderr)
-country,article,capital,population=row
+country,article,capital=row
 
 if article=="le":
     ofcountry = "du " + country
