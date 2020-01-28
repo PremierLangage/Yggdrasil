@@ -2,7 +2,7 @@
 @ /builder/before2.py [builder.py]
 @ /grader/evaluator2.py [grader.py]
 
-@ country_data2.csv [data.csv]
+@ donnees_pays_europe.csv
 
 title = Capitales d'Europe
 
@@ -10,7 +10,7 @@ before ==
 import random as rd
 import csv
 
-with open('data.csv',newline='') as file:
+with open('donnees_pays_europe.csv',newline='') as file:
     rows=list(csv.DictReader(file,delimiter=','))
 
 item = rd.choice(rows)
