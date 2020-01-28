@@ -20,6 +20,7 @@ import sys, json
 import random
 from sandboxio import output, get_context, get_answers
 from utils import subset_index, knuth_mixing
+from components import CheckboxGroup
 
 if __name__ == "__main__":
     with open(sys.argv[1]) as f:
@@ -78,19 +79,23 @@ if __name__ == "__main__":
         indices = knuth_mixing(subset_index(total, nb_option))
     
         context['form'] = ' {{ group|component }} '
-        context['group.items'] = []
+        context['group'] = {
+            "selector" : "c-checkbox-group",
+            "cid" : "QCM"
+        }
+        context['group']['items'] = []
         context['group.items'].append({ "id": "12312", "content" : "Y EN A MARRE"})
         # generation of the form
         for index in indices:
             if index < len(question[1]):
                 context['goods'].append(str(index))
-                context['group.items'].append({ "id": str(index), "content": question[1][index] })
+                context['group'].items.append({ "id": str(index), "content": question[1][index] })
                 # context['form'] +='<input type="checkbox" name="c_' + \
                 # str(index) + '" value="' + str(index) + '" id="form_' + \
                 # str(index) + '">' + question[1][index] + "<br />"
             else:
                 context['bads'].append(str(index))
-                context['group.items'].append({ "id": str(index), "content": question[2][index - len(question[1])] })
+                context['group'].items.append({ "id": str(index), "content": question[2][index - len(question[1])] })
                 # context['form'] +='<input type="checkbox" name="c_' + \
                 # str(index) + '" value="' + str(index) + '" id="form_' + \
                 # str(index) + '">' + \
