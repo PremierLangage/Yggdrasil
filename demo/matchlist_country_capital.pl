@@ -17,10 +17,11 @@ items=rd.sample(rows,4)
 source=[item['country'] for item in items]
 target=[item['capital'] for item in items]
 
-match.loadContent(source,target)
+match.load_items(source,target)
 ==
 
 text==
 Relier chaque pays à sa capitale.
 ==
+
 
