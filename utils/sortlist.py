@@ -12,7 +12,7 @@ class CustomSortList(Component):
         self._order = []
         super().__init__(**kwargs)
 
-    def loadContent(self,content):
+    def load_items(self,content):
         self.items = []
         self._order = []
         for i in range(len(content)):
@@ -46,6 +46,7 @@ class CustomSortList(Component):
         tau,_=kendalltau(orderans,list(range(n)))
         score=round(max([0,tau])*100)
         return (score,str(score))
+
 
 
 
