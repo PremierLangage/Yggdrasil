@@ -30,7 +30,7 @@ pronom=dic_txt_pronom[p]
 ==
 
 text ==
-Conjuguer le verbe {{verbe_inf}} au présent avec le pronom indiqué.
+Conjuguer le verbe **{{verbe_inf}}** au présent avec le pronom indiqué.
 ==
 
 input =: Input
