@@ -14,8 +14,9 @@ with open('data.csv',newline='') as file:
     rows=list(csv.DictReader(file,delimiter=','))
 
 item=rd.choice(rows)
-capital=item['capital']
 country=item['country']
+article=item['article']
+capital=item['capital']
 
 partitif={"le":"du ","la":"de la ","les":"des ","l":"de l'"}
 ofcountry = partitif[article] + country
