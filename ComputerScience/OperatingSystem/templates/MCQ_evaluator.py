@@ -23,7 +23,6 @@ from utils import subset_index, knuth_mixing
 from components import CheckboxGroup
 
 if __name__ == "__main__":
-    raise Exception(dir(CheckboxGroup))
     with open(sys.argv[1]) as f:
         context = json.load(f)
     f.close()
