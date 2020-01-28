@@ -14,7 +14,7 @@ utilisé correctement.
 @ lib:/utils/sandboxio.py
 @ utils.py
 
-@ parametrized_MCQ_build.py [builder.py]
+@ MCQ_build.py [builder.py]
 @ MCQ_evaluator.py [grader.py]
 
 data_from_file=None
