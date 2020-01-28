@@ -1,5 +1,7 @@
 title= qcm template
 
+group =: CheckboxGroup
+
 text== 
 Ce texte ne devrait jamais apparaitre, le template de QCM paramétré semble ne 
 pas être utilisé correctement.
