@@ -34,7 +34,7 @@ if __name__ == "__main__":
     # time to correct the last question if relevant
     if 'goods' in context:
         all_checked = {}
-        raise Exception(dir(str(context['group'].items)))
+        raise Exception(str(context['group'].items))
         for it in context['group'].items:   
             all_checked[it['id']] = it['checked']
         grade = 0
