@@ -15,9 +15,10 @@ utilisé correctement.
 @ utils.py
 
 @ parametrized_MCQ_build.py [builder.py]
-@ parametrized_MCQ_evaluator.py [grader.py]
+@ MCQ_evaluator.py [grader.py]
 
 data_from_file=None
+
 
 
 
