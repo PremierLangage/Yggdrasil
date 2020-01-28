@@ -4,7 +4,7 @@
 
 @ country_data2.csv [data.csv]
 
-title = Capitales de pays
+title = Capitales d'Europe
 
 before ==
 import random as rd
@@ -26,11 +26,11 @@ text ==
 Quelle est la capitale {{ofcountry}} ?
 ==
 
-theinput =: Input
-theinput.type = text
+input =: Input
+input.type = text
 
 form ==
-{{ theinput | component }}
+{{ input | component }}
 ==
 
 evaluator ==
