@@ -39,9 +39,3 @@ if input.value==capital:
 else:
     grade=(100,"")
 ==
-
-
-
-
-
-
