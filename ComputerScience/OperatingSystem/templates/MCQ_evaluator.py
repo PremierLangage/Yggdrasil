@@ -24,9 +24,6 @@ from components import CheckboxGroup
 
 if __name__ == "__main__":
     context = get_context()
-    #with open(sys.argv[1]) as f:
-    #    context = json.load(f)
-    #f.close()
     
     with open(sys.argv[2]) as f:
         answers = json.load(f)
@@ -37,6 +34,7 @@ if __name__ == "__main__":
         all_checked = {}
         for it in context['group'].items:
             all_checked[it['id']] = it['checked']
+        raise Exception(all_checked)
         grade = 0
         ok = 0
         not_ok = 0
