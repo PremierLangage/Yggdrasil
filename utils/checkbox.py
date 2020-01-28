@@ -27,8 +27,8 @@ class Checkbox(Component):
             self.items.append({"id": id,"content": e})
 
     def load_right_wrong(self, right, wrong, nchoices, nright):
-        self.loadContent(rd.sample(right,nright)+rd.sample(wrong,nchoices-nright))
-        self.setSolByIndex(list(range(nright)))
+        self.load_content(rd.sample(right,nright)+rd.sample(wrong,nchoices-nright))
+        self.set_sol_by_index(list(range(nright)))
         self.shuffle()
 
     def shuffle(self):
