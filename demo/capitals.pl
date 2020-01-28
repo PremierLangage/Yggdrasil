@@ -17,14 +17,8 @@ if "row" not in globals():
 print(row,file=sys.stderr)
 country,article,capital=row
 
-if article=="le":
-    ofcountry = "du " + country
-elif article=="l":
-    ofcountry = "de l'" + country
-elif article=="la":
-    ofcountry = "de la " + country
-elif article=="les":
-    ofcountry = "des " + country
+partitif={"le":"du ","la":"de la ","les":"des ","l":"de l'"}
+ofcountry = partitif[article] + country
 ==
 
 text ==
