@@ -10,7 +10,7 @@ class CustomMatchList(Component):
         self._expected = []
         super().__init__(**kwargs)
 
-    def load_choices(self,source,target):
+    def load_items(self,source,target):
 
         self.nodes = []
         for i in range(len(source)):
