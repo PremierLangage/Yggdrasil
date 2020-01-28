@@ -15,8 +15,8 @@ country=items[0]['country']
 article=items[0]['article']
 capitals=[item['capital'] for item in items]
 
-radio.loadContent(capitals)
-radio.setSolByIndex(0)
+radio.load_choices(capitals)
+radio.set_sol_by_index(0)
 radio.shuffle()
 
 if article=="le":
@@ -32,5 +32,6 @@ elif article=="les":
 text ==
 Quelle est la capitale {{ofcountry}} ?
 ==
+
 
 
