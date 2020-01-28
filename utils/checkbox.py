@@ -13,20 +13,20 @@ class Checkbox(Component):
         self.grading = 'RightMinusWrong'
         super().__init__(**kwargs)
 
-    def setSolByIndex(self,index):
+    def set_sol_by_index(self,index):
         self._sol=[self.items[i]['id'] for i in index]
 
-    def setSolByContent(self,content):
+    def set_sol_by_content(self,content):
         self._sol=[item['id'] for item in self.items if item['content'] in content]
 
-    def loadContent(self, content):
+    def load_choices(self, content):
         items = []
         for e in content:
             id = str(uuid.uuid4())
             self.content[id] = e
             self.items.append({"id": id,"content": e})
 
-    def loadRightWrong(self, right, wrong, nchoices, nright):
+    def load_right_wrong(self, right, wrong, nchoices, nright):
         self.loadContent(rd.sample(right,nright)+rd.sample(wrong,nchoices-nright))
         self.setSolByIndex(list(range(nright)))
         self.shuffle()
@@ -70,6 +70,7 @@ class Checkbox(Component):
             nitems=len(self.items)
             score=max([round((nitems-2*(checkwrong+missright))/nitems*100),0])
         return (score,"")
+
 
 
 
