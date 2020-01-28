@@ -17,12 +17,13 @@ with open('data.csv',newline='') as file:
 
 lst=rd.sample(range(len(rows)),nb)
 lst.sort()
-sortlist.loadContent([rows[i][field] for i in lst])
+sortlist.load_items([rows[i][field] for i in lst])
 ==
 
 text ==
 Classer ces premiers ministres de la Ve République du plus ancien au plus récent (selon la date d'entrée en fonction).
 ==
+
 
 
 
