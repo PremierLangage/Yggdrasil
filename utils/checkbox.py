@@ -70,9 +70,3 @@ class Checkbox(Component):
             nitems=len(self.items)
             score=max([round((nitems-2*(checkwrong+missright))/nitems*100),0])
         return (score,"")
-
-
-
-
-
-
