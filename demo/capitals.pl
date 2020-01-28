@@ -2,7 +2,7 @@
 @ /builder/before.py [builder.py]
 @ /grader/evaluator.py [grader.py]
 
-@ country_data.csv [data.csv]
+@ country_data2.csv [data.csv]
 
 title = Capitales de pays
 
@@ -50,6 +50,7 @@ else:
     grade=(0,"essai="+str(essai)+"<br>Raté !")
 
 ==
+
 
 
 
