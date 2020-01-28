@@ -43,7 +43,7 @@ if __name__ == "__main__":
             else:
                 not_ok += 1
         for bad in context['bads']:
-            if all_checked[bad] == False:
+            if all_checked[bad] == True:
                 not_ok += 1
             else:
                 ok += 1
