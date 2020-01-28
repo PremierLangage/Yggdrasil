@@ -23,9 +23,10 @@ from utils import subset_index, knuth_mixing
 from components import CheckboxGroup
 
 if __name__ == "__main__":
-    with open(sys.argv[1]) as f:
-        context = json.load(f)
-    f.close()
+    context = get_context()
+    #with open(sys.argv[1]) as f:
+    #    context = json.load(f)
+    #f.close()
     
     with open(sys.argv[2]) as f:
         answers = json.load(f)
