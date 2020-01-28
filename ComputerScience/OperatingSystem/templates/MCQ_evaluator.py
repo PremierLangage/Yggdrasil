@@ -83,7 +83,6 @@ if __name__ == "__main__":
             items=[]
         )
         context['group'].items = []
-        context['group'].items.append({ "id": "12312", "content" : "Y EN A MARRE"})
         # generation of the form
         for index in indices:
             if index < len(question[1]):
