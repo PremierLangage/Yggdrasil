@@ -34,7 +34,8 @@ if __name__ == "__main__":
     # time to correct the last question if relevant
     if 'goods' in context:
         all_checked = {}
-        for it in list(context['group'].items):
+        print(dir(context['group'].items))
+        for it in context['group'].items:   
             all_checked[it['id']] = it['checked']
         grade = 0
         ok = 0
