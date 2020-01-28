@@ -77,6 +77,7 @@ if __name__ == "__main__":
         nb_option = random.randint(min_option, max_option)
         indices = knuth_mixing(subset_index(total, nb_option))
     
+        context['group'] =: CheckboxGroup
         context['form'] = '{{ group|component }}'
         context['group.items'] = []
         # generation of the form
