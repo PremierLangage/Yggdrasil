@@ -1,6 +1,6 @@
 extends = /template/basicinput.pl
 
-@ conj_data.csv [data.csv]
+@ conj_data.csv
 
 title = Conjugaison
 
@@ -8,7 +8,7 @@ before ==
 import random as rd
 import csv
 
-with open('data.csv',newline='') as file:
+with open('conj_data.csv',newline='') as file:
     rows=list(csv.DictReader(file,delimiter=','))
 
 row=rd.choice(rows)
