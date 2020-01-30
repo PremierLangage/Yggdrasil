@@ -27,7 +27,7 @@ choices=[item['traductions'] for item in rows]
 input.autocomplete = choices
 
 nbsuccess=0
-nbwords=5
+step=1
 progress=0
 ==
 
@@ -35,7 +35,7 @@ text ==
 <div class="progress">
   <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
   aria-valuemin="0" aria-valuemax="100" style="width:{{progress}}%">
-    50% Complete (info)
+    {{step}} / 5
   </div>
 </div>
 
@@ -55,12 +55,12 @@ if input.value==traduction:
 else:
     grade=(0,str(nbsuccess))
 
-if nbwords>0:
+if step<5:
     progress+=20
     item=rd.choice(rows)
     mot=" ".join([item['article'],item['mot']])
     traduction=item['traductions']
-    nbwords -= 1
+    step += 1
 
 input.value = ""
 ==
