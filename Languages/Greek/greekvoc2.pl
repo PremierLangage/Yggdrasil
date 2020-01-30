@@ -19,6 +19,9 @@ traduction=item['traductions']
 choices=[item['traductions'] for item in rows]
 
 input.autocomplete = choices
+
+nbsuccess=0
+nbwords=5
 ==
 
 text ==
@@ -32,13 +35,16 @@ Que signifie le mot suivant ?
 evaluator ==
 import random as rd
 
-item=rd.choice(rows)
-mot=" ".join([item['article'],item['mot']])
+if nbwords>0:
+    item=rd.choice(rows)
+    mot=" ".join([item['article'],item['mot']])
+    nbwords -= 1
 
 if input.value==traduction:
-    grade=(100,"")
+    grade=(100,str(nbsuccess))
+    nbsucess += 1
 else:
-    grade=(0,"")
+    grade=(0,str(nbsuccess))
 
 input.value = ""
 ==
