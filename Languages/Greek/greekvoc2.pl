@@ -1,6 +1,6 @@
 extends = /template/basicinput.pl
 
-settings.feedback.class = colorbox
+settings.feedback.class = raw
 
 @ grec_voc_1.csv [data.csv]
 
@@ -38,6 +38,7 @@ import random as rd
 if nbwords>0:
     item=rd.choice(rows)
     mot=" ".join([item['article'],item['mot']])
+    traduction=item['traductions']
     nbwords -= 1
 
 if input.value==traduction:
