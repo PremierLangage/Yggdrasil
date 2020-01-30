@@ -24,7 +24,7 @@
 
 * Combien vaut le nombre binaire 1010101 en base 10 ?
 - 12
-- Ce nombre n'existe pas en base 10
+- Ce nombre n'existe pas en base 10.
 - 105
 - 53
 - 95 
@@ -123,4 +123,5 @@
 - C'est pas du tout astucieux, les ordinateurs sont lents et ne font rien.
 - Ça permet de mieux enregistrer et restituer les sons.
 - Les images s'encodent naturellement en binaire.
+
 
