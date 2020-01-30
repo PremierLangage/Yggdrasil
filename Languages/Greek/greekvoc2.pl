@@ -18,6 +18,7 @@ mot=" ".join([item['article'],item['mot']])
 traduction=item['traductions']
 choices=[item['traductions'] for item in rows]
 
+input.value = ""
 input.autocomplete = choices
 ==
 
@@ -38,6 +39,6 @@ mot=" ".join([item['article'],item['mot']])
 if input.value==traduction:
     grade=(100,"")
 else:
-    grade=(0,traduction)
+    grade=(0,"")
 ==
 
