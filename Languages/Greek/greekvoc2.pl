@@ -1,6 +1,6 @@
 extends = /template/basicinput.pl
 
-settings.feedback.class = raw
+settings.feedback.class = colorbox
 
 @ grec_voc_1.csv [data.csv]
 
