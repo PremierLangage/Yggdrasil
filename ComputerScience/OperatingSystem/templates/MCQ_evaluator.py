@@ -61,7 +61,7 @@ if __name__ == "__main__":
         question = context['mcq'][index_next_q]
         context['goods'] = []
         context['bads'] = []
-        context['text'] += question[0]
+        context['text'] += "**"+question[0]+"**"
         
         # Total possible option and random combination
         if 'min_option' in context:
@@ -108,5 +108,6 @@ if __name__ == "__main__":
         output(grade, feedback, context)
     
     output(-1, " ", context)
+
 
 
