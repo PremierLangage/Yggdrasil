@@ -99,7 +99,7 @@ if __name__ == "__main__":
         grade = 0
         for g in context['grade_questions']:
             grade += g
-        grade = grade // len(context['grade_questions'])
+        grade = max([0, 100 - 2*(100 - (grade // len(context['grade_questions']))])
         
         context['form'] = ''
         context['text'] = "C'est fini!<br />"
