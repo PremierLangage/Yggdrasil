@@ -102,6 +102,7 @@
 - Il est impossible de connaître la parité d'un nombre seulement avec
   une donnée binaire.
 - Il faut inverser tous les bits et regarder s'il y a plus de 1 que de 0.
+- Avec un voltmètre, on regarde si la tension émise est positive.
 
 
 * Qu'est ce qu'un jeu de caractères ?
