@@ -98,7 +98,7 @@ if __name__ == "__main__":
     
     # Set the text at begining of MCQ
     if number_of_mcq > 1:
-        context['text'] = "Cliquez sur *Valider* pour entammer une série de " + str(number_of_mcq) + " questions !"
+        context['text'] = "Cliquez sur **Valider** pour entammer une série de " + str(number_of_mcq) + " questions !"
 
     elif number_of_mcq == 1:
         context['text'] = "Cliquez pour accèder à la question !"
