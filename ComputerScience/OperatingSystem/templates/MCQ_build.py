@@ -101,7 +101,8 @@ if __name__ == "__main__":
         context['text'] = "Cliquez sur **Valider** pour entammer une série de " + str(number_of_mcq) + " questions !"
         context['text'] += "<br /><br />Attention, il n'y a aucun minimum ou maximum sur le nombre de bonnes réponses. "
         context['text'] += "Certaines questions vous présenterons peut-être que des propositions fausses ou encore que des "
-        context['text'] += "propositions justes."
+        context['text'] += "propositions justes. Chaque question selectionnera entre "+str(context['min_option'])+" et "+str(context['max_option'])
+        context['text'] += " propositions aléatoires selon la disponibilité."
     elif number_of_mcq == 1:
         context['text'] = "Cliquez pour accèder à la question !"
     else:
