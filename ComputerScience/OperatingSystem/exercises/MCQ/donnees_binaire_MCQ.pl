@@ -9,7 +9,7 @@ template=/ComputerScience/OperatingSystem/templates/parametrized_MCQ.pl
 @ donnees_binaire.txt
 data_from_file=donnees_binaire.txt
 
-number_question=5
+number_question=6
 min_option=4
 max_option=8
 
