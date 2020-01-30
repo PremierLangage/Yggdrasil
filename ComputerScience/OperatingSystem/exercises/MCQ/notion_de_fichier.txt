@@ -14,10 +14,10 @@
 - Le nom du fichier.
 - Le chemin pour atteindre le fichier depuis la racine.
 - Le type du fichier : image, film, fichier texte.
-+ L'emplacement physique du fichier sur le péériphérique de stockage.
++ L'emplacement physique du fichier sur le périphérique de stockage.
 + Les droits du fichier.
 + Des informations temporelles sur la création, dernière modification.
-+ Le nombre de lien : nombre de ressources actives qui référence le fichier.
++ Le nombre de lien : nombre de ressources actives qui référencent le fichier.
 + Le propriétaire du fichier.
 
 * Parmi les types suivants, lesquels sont des types de fichiers Unix ?
@@ -59,3 +59,4 @@
 + <<
 + 2>
 + 2&1>
+
