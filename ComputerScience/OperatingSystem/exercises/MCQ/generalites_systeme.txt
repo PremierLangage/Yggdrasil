@@ -144,7 +144,7 @@
   données et les programmes dans la mémoire et de les considérer sur
   un pied d'égalité ?
 - Paf, ça fait des chocapics !
-- Ça permet de limiter l'énergie utiliser par la RAM.
+- Ça permet de limiter l'énergie utilisée par la RAM.
 - Ça permet d'augmenter la cadence du CPU (overclocking).
 - Ça limite la latence lors des chargements (lags).
 + Ça permet de faire des programmes prenant en argument d'autres programmes.
