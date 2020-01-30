@@ -22,9 +22,17 @@ input.autocomplete = choices
 
 nbsuccess=0
 nbwords=5
+progress=0
 ==
 
 text ==
+<div class="progress">
+  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+  aria-valuemin="0" aria-valuemax="100" style="width:{{progress}}%">
+    50% Complete (info)
+  </div>
+</div>
+
 Que signifie le mot suivant ?
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gfs-porson" type="text/css"/> 
 <div style="text-align:center;font-size: x-large;font-family:'GFSPorsonRegular';">
@@ -42,6 +50,7 @@ else:
     grade=(0,str(nbsuccess))
 
 if nbwords>0:
+    progress+=20
     item=rd.choice(rows)
     mot=" ".join([item['article'],item['mot']])
     traduction=item['traductions']
