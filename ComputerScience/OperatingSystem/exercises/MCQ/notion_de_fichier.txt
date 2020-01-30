@@ -23,7 +23,7 @@
 * Parmi les types suivants, lesquels sont des types de fichiers Unix ?
 - Archive oubliée.
 - Lien du sang.
-- Tube misical de l'été.
+- Tube musical de l'été.
 - Périphérique mobile.
 - Fichier imprimable.
 + Fichier ordinaire.
@@ -38,7 +38,7 @@
 - Le bloc print pour exploiter les imprimantes.
 - Un dictionnaire Python des sockets et connexions réseaux.
 - Une liste des répertoires 
-+ Un tableau d'inode (certaines sont libres, certaines sont occupées).
++ Un tableau d'inodes (certaines sont libres, certaines sont occupées).
 + Des blocs de données de taille fixe pour stocker les fichiers.
 + Un morceau réservé au système pour le démarrage de la machine (boot block).
 
