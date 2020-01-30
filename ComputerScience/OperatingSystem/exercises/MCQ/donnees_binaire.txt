@@ -53,7 +53,7 @@
 + On fait des divisions successives par deux, puis on lit en ordre inverse les restes obtenus.
 - On utilise l'algorithme d'Euclide.
 - Jamais personne n'a réussi à décomposer un nombre en base 2.
-- On multiplie par %$ 2^n $% l'entier pour tout %$ n $%.
+- On multiplie par $% 2^n %$ l'entier pour tout $% n %$.
 - On utilise $% log_2 %$ la fonction logarithme à base 2.
 - Il faut utiliser la règle du complément à 1.
 
