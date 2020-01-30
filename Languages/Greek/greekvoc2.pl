@@ -28,7 +28,7 @@ input.autocomplete = choices
 
 nbsuccess=0
 step=1
-progress=0
+progress=20
 ==
 
 text ==
