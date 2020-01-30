@@ -122,7 +122,7 @@
 + Des mécanismes de gestion de la temporalité.
 + Des algos de virtualisation des mémoires pour les partager efficacement.
 + Des algos pour partager le temps C.P.U. entre les programmes éxecutés.
-+ Mécanisme de sécurité, de mise à jour et de diagnostique.
++ Des mécanismes de sécurité, de mise à jour et de diagnostic.
 
 
 * Quelles sont les spécificités des systèmes d'exploitation de type Unix ?
