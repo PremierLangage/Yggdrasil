@@ -1,5 +1,7 @@
 extends = /template/basicinput.pl
 
+settings.feedback.class = raw
+
 @ grec_voc_1.csv [data.csv]
 
 title = Vocabulaire grec
