@@ -88,7 +88,7 @@
 + Faire en sorte que les données soient toujours cohérentes.
 + Virtualiser les ressources et les attribuer comme un chef d'orchestre.
 + Sécuriser le matériel et rattraper les erreurs non critiques.
-+ Augmenter l'expérience de l'utilisateur en interagissant efficacement avec le monde extérieur.
++ Augmenter la qualité de l'expérience de l'utilisateur en interagissant efficacement avec le monde extérieur.
 + Proposer des interfaces standardisés pour chaque ressource.
 
 
