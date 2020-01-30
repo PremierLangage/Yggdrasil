@@ -1,5 +1,10 @@
-extends = /template/basicinput.pl
+@ /builder/before2.py [builder.py]
+@ /grader/evaluator2.py [grader.py]
+input =: Input
 
+form ==
+{{ input | component }}
+==
 settings.feedback.class = raw
 
 @ grec_voc_1.csv [data.csv]
