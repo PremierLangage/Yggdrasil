@@ -35,17 +35,17 @@ Que signifie le mot suivant ?
 evaluator ==
 import random as rd
 
-if nbwords>0:
-    item=rd.choice(rows)
-    mot=" ".join([item['article'],item['mot']])
-    traduction=item['traductions']
-    nbwords -= 1
-
 if input.value==traduction:
     nbsuccess += 1
     grade=(100,str(nbsuccess))
 else:
     grade=(0,str(nbsuccess))
+
+if nbwords>0:
+    item=rd.choice(rows)
+    mot=" ".join([item['article'],item['mot']])
+    traduction=item['traductions']
+    nbwords -= 1
 
 input.value = ""
 ==
