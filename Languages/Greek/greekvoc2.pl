@@ -42,7 +42,7 @@ if nbwords>0:
 
 if input.value==traduction:
     grade=(100,str(nbsuccess))
-    nbsucess += 1
+    nbsuccess += 1
 else:
     grade=(0,str(nbsuccess))
 
