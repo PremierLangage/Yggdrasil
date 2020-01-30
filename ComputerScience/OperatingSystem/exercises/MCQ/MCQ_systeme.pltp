@@ -9,8 +9,8 @@ Cette activité vous proposera 5 questions aléatoires aux réponses aléatoires
 chaque groupe de notions liés aux systèmes d'exploitation.
 ==
 
-@ /exercises/MCQ/generalites_systeme_MCQ.pl
-@ /exercises/MCQ/donnees_binaire_MCQ.pl
+@ ComputerScience/OperatingSystem/exercises/MCQ/generalites_systeme_MCQ.pl
+@ ComputerScience/OperatingSystem/exercises/MCQ/donnees_binaire_MCQ.pl
 
 
 
