@@ -23,16 +23,18 @@ choices=[item['traductions'] for item in rows]
 input.autocomplete = choices
 
 selection=rd.sample(rows,5)
-lst_mot=[item['article']+" "+item['mot'] for item in selection]
+lst_mots=[item['article']+" "+item['mot'] for item in selection]
 lts_trad=[item['traductions'] for item in selection]
 
-
+mot=lst_mots[0]
 nbsuccess=0
 step=1
 progress=20
 ==
 
 text ==
+Que signifie le mot suivant ?
+
 <div class="progress">
   <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
   aria-valuemin="0" aria-valuemax="100" style="width:{{progress}}%">
@@ -44,7 +46,7 @@ Que signifie le mot suivant ?
 
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gfs-porson" type="text/css"/> 
 <div style="text-align:center;font-size: x-large;font-family:'GFSPorsonRegular';">
-{{lst_trad.step}}
+{{mot}}
 </div>
 ==
 
@@ -56,6 +58,7 @@ else:
     grade=(0,str(nbsuccess))
 
 if step<5:
+    mot=lst_mots[0]
     progress+=20
     step += 1
     input.value = ""
