@@ -14,7 +14,7 @@ Cette structure devra contenir trois champs entiers nommés
 
 Écrire ensuite une fonction **allocate_color** qui prend trois 
 entiers en paramètres **R, G, B** et qui retourne l'adresse d'une 
-nouvelle variable **Color** fraichement allouée avec **malloc** et
+nouvelle structure **Color** fraichement allouée avec **malloc** et
 initialisé avec les trois entiers.
 
 Bien entendu R pour red, G pour green, et B pour blue.
@@ -84,5 +84,6 @@ tests==
   ["Couleur aléatoire", "'Couleur aléatoire' " + " ".join([str(random.randint(0,255)) for i in range(3)]), ""],
   ["Couleur aléatoire", "'Couleur aléatoire' " + " ".join([str(random.randint(0,255)) for i in range(3)]), ""] ]
 ==
+
 
 
