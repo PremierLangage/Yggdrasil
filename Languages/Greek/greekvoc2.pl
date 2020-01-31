@@ -60,9 +60,9 @@ else:
     grade=(0," ")
 
 if step<5:
-    mot=lst_mots[step]
     progress+=20
     step += 1
+    mot=lst_mots[step]
     input.value = ""
 else:
     form=""
