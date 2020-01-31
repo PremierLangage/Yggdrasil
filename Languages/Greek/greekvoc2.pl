@@ -41,7 +41,7 @@ bar==
 </div>
 ==
 
-text ==
+author ==
 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
   <div class="btn-group mr-1" role="group" aria-label="First group">
     <button type="button" class="btn btn-outline-secondary btn-sm">1</button>
@@ -50,8 +50,9 @@ text ==
     <button type="button" class="btn btn-outline-secondary btn-sm">4</button>
   </div>
 </div>
+==
 
-
+text ==
 Que signifie le mot suivant ?
 
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gfs-porson" type="text/css"/> 
