@@ -49,9 +49,7 @@ Que signifie le mot suivant ?
 ==
 
 evaluator ==
-import random as rd
-
-if input.value==traduction:
+if input.value==lst_trad[step]:
     nbsuccess += 1
     grade=(100,str(nbsuccess))
 else:
@@ -59,8 +57,6 @@ else:
 
 if step<5:
     progress+=20
-    mot=" ".join([items[step]['article'],items[step]['mot']])
-    traduction=items[step]['traductions']
     step += 1
     input.value = ""
 else:
