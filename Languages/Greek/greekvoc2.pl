@@ -43,9 +43,9 @@ bar==
 
 author ==
 <h4>
-<span class="badge badge-outline-primary">1</span>
-<span class="badge badge-outline-secondary">2</span>
-<span class="badge badge-outline-secondary">3</span>
+<span class="badge badge-primary">1</span>
+<span class="badge badge-secondary">2</span>
+<span class="badge badge-secondary">3</span>
 </h4>
 ==
 
