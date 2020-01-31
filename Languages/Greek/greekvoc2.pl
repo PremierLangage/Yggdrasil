@@ -44,6 +44,17 @@ Que signifie le mot suivant ?
 ==
 
 text ==
+<div class="container">
+  <ul class="step-menu">
+    <li role="button" class="complete">Step 1</li>
+    <li role="button" class="current">Step 2</li>
+    <li role="button">Step 3</li>
+    <li role="button">Step 4</li>
+    <li role="button">Step 5</li>
+    <li role="button">Step 6</li>
+  </ul>
+</div>
+
 Que signifie le mot suivant ?
 
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gfs-porson" type="text/css"/> 
