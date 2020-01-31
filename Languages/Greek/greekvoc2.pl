@@ -22,10 +22,9 @@ with open('data.csv',newline='') as file:
 choices=[item['traductions'] for item in rows]
 input.autocomplete = choices
 
-
-items=rd.sample(rows,5)
-mot=" ".join([items[0]['article'],items[0]['mot']])
-traduction=items[0]['traductions']
+selection=rd.sample(rows,5)
+lst_mot=[item['article']+" "+item['mot'] for item in selection]
+lts_trad=[item['traductions'] for item in selection]
 
 
 nbsuccess=0
@@ -45,7 +44,7 @@ Que signifie le mot suivant ?
 
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gfs-porson" type="text/css"/> 
 <div style="text-align:center;font-size: x-large;font-family:'GFSPorsonRegular';">
-{{mot}}
+{{lst_trad[step]}}
 </div>
 ==
 
