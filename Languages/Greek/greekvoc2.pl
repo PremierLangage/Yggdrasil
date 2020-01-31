@@ -32,7 +32,7 @@ step=1
 progress=20
 ==
 
-text ==
+bar ==
 Que signifie le mot suivant ?
 
 <div class="progress">
@@ -41,7 +41,9 @@ Que signifie le mot suivant ?
     {{step}} / 5
   </div>
 </div>
+==
 
+text ==
 Que signifie le mot suivant ?
 
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gfs-porson" type="text/css"/> 
