@@ -32,10 +32,8 @@ step=1
 progress=20
 ==
 
-bar ==
-Que signifie le mot suivant ?
-
-<div class="progress">
+author ==
+<div class="progress" style="width:50%">
   <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
   aria-valuemin="0" aria-valuemax="100" style="width:{{progress}}%">
     {{step}} / 5
@@ -44,12 +42,7 @@ Que signifie le mot suivant ?
 ==
 
 text ==
-<div class="progress" style="width:50%">
-  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
-  aria-valuemin="0" aria-valuemax="100" style="width:{{progress}}%">
-    {{step}} / 5
-  </div>
-</div>
+
 
 Que signifie le mot suivant ?
 
