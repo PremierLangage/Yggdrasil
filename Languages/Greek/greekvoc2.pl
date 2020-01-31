@@ -44,7 +44,7 @@ bar==
 author ==
 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
   <div class="btn-group mr-1" role="group" aria-label="First group">
-    <button type="button" class="btn btn-outline-secondary btn-sm">1</button>
+    <button type="button" class="btn btn-outline-secondary btn-sm disabled">1</button>
     <button type="button" class="btn btn-outline-secondary btn-sm">2</button>
     <button type="button" class="btn btn-outline-secondary btn-sm">3</button>
     <button type="button" class="btn btn-outline-secondary btn-sm">4</button>
