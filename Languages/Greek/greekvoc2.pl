@@ -19,12 +19,14 @@ import csv
 with open('data.csv',newline='') as file:
     rows=list(csv.DictReader(file,delimiter=';'))
 
-item=rd.choice(rows)
-mot=" ".join([item['article'],item['mot']])
-traduction=item['traductions']
 choices=[item['traductions'] for item in rows]
-
 input.autocomplete = choices
+
+
+items=rd.sample(rows,5)
+mot=" ".join([items[0]['article'],items[0]['mot']])
+traduction=items[0]['traductions']
+
 
 nbsuccess=0
 step=1
@@ -40,6 +42,7 @@ text ==
 </div>
 
 Que signifie le mot suivant ?
+
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gfs-porson" type="text/css"/> 
 <div style="text-align:center;font-size: x-large;font-family:'GFSPorsonRegular';">
 {{mot}}
@@ -57,9 +60,8 @@ else:
 
 if step<5:
     progress+=20
-    item=rd.choice(rows)
-    mot=" ".join([item['article'],item['mot']])
-    traduction=item['traductions']
+    mot=" ".join([items[step]['article'],items[step]['mot']])
+    traduction=items[step]['traductions']
     step += 1
     input.value = ""
 else:
