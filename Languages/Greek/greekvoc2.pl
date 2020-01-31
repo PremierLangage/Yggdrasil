@@ -68,3 +68,79 @@ else:
     form=""
 ==
 
+extracss=
+body {
+  padding: 50px;
+  background-color: #fff;
+}
+.step-menu {
+  list-style-type:none;
+  width:725px;
+  margin:0 auto;
+  }
+  .step-menu li {
+    box-sizing: border-box; 
+    float: left;
+    background: #ddd;
+    height: 50px;
+    text-align: center;
+    padding: 15px 15px 15px 50px;
+    position: relative;
+    margin-left: 10px
+    }
+    .step-menu li:before {
+      content: '';
+      position: absolute;
+      border: 25px solid transparent;
+      border-left-color: #fff;
+      top:0px;
+      right: -60px;
+    }
+    .step-menu li:after {
+      content: '';
+      position: absolute;
+      border: 25px solid transparent;
+      border-left-color: #ddd;
+      top:0px;
+      right: -50px;
+    }
+    .step-menu li:nth-child(1) {
+      z-index:600;
+      margin-left: 0;
+      padding-left: 30px
+    }
+    .step-menu li:nth-child(2) {
+      z-index:500;
+    }
+    .step-menu li:nth-child(3) {
+      z-index:400;
+    }
+    .step-menu li:nth-child(4) {
+      z-index:300;
+    }
+    .step-menu li:nth-child(5) {
+      z-index:200;      
+    }
+    .step-menu li:nth-child(6) {
+      z-index:100;
+      padding-right:30px
+    }
+    .step-menu li:nth-child(6):after,
+    .step-menu li:nth-child(6):before {
+      border: none
+    }
+.step-menu li.current {
+  background: rgba(51,122,183, 0.75);
+  color: white;
+}
+.step-menu li.current:after {
+  border-left-color: rgba(51,122,183, 0.75);
+}
+.step-menu li.complete {
+  background: rgba(51,122,183, 0.4);
+  color: white;
+}
+.step-menu li.complete:after {
+  border-left-color: rgba(51,122,183, 0.4);
+}
+==
