@@ -79,8 +79,12 @@ else:
     form=""
 ==
 
-extracss=
+extracss==
 <style>
+body {
+  padding: 50px;
+  background-color: #fff;
+}
 .step-menu {
   list-style-type:none;
   width:725px;
