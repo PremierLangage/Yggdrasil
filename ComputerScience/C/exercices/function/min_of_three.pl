@@ -4,7 +4,7 @@
 
 author=Nicolas Borie
 title=Minimum de trois entiers
-tag=function|recursion
+tag=function
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
@@ -60,5 +60,6 @@ tests==
   ["Aléatoire", ' '.join([str(random.randint(-1000, 1000)) for i in range(3)]), ""],
   ["Aléatoire", ' '.join([str(random.randint(-1000, 1000)) for i in range(3)]), ""] ]
 ==
+
 
 
