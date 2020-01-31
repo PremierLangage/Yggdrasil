@@ -42,8 +42,9 @@ bar==
 ==
 
 author ==
-<span class="badge badge-outline-secondary">Secondary</span>
-
+<span class="badge badge-outline-secondary">1</span>
+<span class="badge badge-outline-secondary">2</span>
+<span class="badge badge-outline-secondary">3</span>
 ==
 
 text ==
