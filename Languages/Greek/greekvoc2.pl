@@ -55,9 +55,9 @@ Que signifie le mot suivant ?
 evaluator ==
 if input.value==lst_trad[step]:
     nbsuccess += 1
-    grade=(100,str(nbsuccess))
+    grade=(100," ")
 else:
-    grade=(0,str(nbsuccess))
+    grade=(0," ")
 
 if step<5:
     mot=lst_mots[0]
