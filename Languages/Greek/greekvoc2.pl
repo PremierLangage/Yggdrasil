@@ -31,6 +31,14 @@ nbsuccess=0
 step=1
 progress=20
 ==
+bar==
+<div class="progress" style="width:50%">
+  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+  aria-valuemin="0" aria-valuemax="100" style="width:{{progress}}%">
+    {{step}} / 5
+  </div>
+</div>
+==
 
 text ==
 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
@@ -42,12 +50,7 @@ text ==
   </div>
 </div>
 
-<div class="progress" style="width:50%">
-  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
-  aria-valuemin="0" aria-valuemax="100" style="width:{{progress}}%">
-    {{step}} / 5
-  </div>
-</div>
+
 
 
 Que signifie le mot suivant ?
