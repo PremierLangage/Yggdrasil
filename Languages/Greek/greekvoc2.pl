@@ -24,7 +24,7 @@ input.autocomplete = choices
 
 selection=rd.sample(rows,5)
 lst_mots=[item['article']+" "+item['mot'] for item in selection]
-lts_trad=[item['traductions'] for item in selection]
+lst_trad=[item['traductions'] for item in selection]
 
 mot=lst_mots[0]
 nbsuccess=0
