@@ -80,6 +80,7 @@ else:
 ==
 
 extracss=
+<style>
 body {
   padding: 50px;
   background-color: #fff;
@@ -154,4 +155,5 @@ body {
 .step-menu li.complete:after {
   border-left-color: rgba(51,122,183, 0.4);
 }
+</style>
 ==
