@@ -20,7 +20,7 @@ verbe_inf=row['infinitif']
 verbe_conj=row[p]
 pronom=dic_pronom[p]
 
-input.prefix="333é
+input.prefix="333"
 ==
 
 text ==
