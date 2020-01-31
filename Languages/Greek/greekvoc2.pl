@@ -61,7 +61,8 @@ if step<5:
     mot=" ".join([item['article'],item['mot']])
     traduction=item['traductions']
     step += 1
-
-input.value = ""
+    input.value = ""
+else:
+    form=""
 ==
 
