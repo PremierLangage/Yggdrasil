@@ -19,6 +19,8 @@ dic_pronom={'1S':'je','2S':'tu','3S':'il','1P':'nous','2P':'vous','3P':'ils'}
 verbe_inf=row['infinitif']
 verbe_conj=row[p]
 pronom=dic_pronom[p]
+
+input.prefix="333é
 ==
 
 text ==
@@ -38,6 +40,7 @@ if input.value==verbe_conj:
 else:
     grade=(0,"")
 ==
+
 
 
 
