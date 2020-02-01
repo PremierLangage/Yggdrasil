@@ -41,18 +41,16 @@ Que signifie le mot suivant ?
 </div>
 ==
 
-evaluator ==
+evalstep ==
 if input.value==lst_trad[step]:
     nbsuccess += 1
-    grade=(100," ")
-else:
-    grade=(0," ")
-
-if step<5:
-    mot=lst_mots[step]
+ mot=lst_mots[step+1]
     input.value = ""
-else:
-    form=""
+==
+
+evaluator ==
+form=""
+feedback=str(
 ==
 
 
