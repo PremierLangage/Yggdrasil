@@ -41,11 +41,12 @@ Que signifie le mot suivant ?
 </div>
 ==
 
-evalstep ==
+inter ==
 if input.value==lst_trad[step]:
     nbsuccess += 1
- mot=lst_mots[step+1]
-    input.value = ""
+
+mot=lst_mots[step+1]
+input.value = ""
 ==
 
 evaluator ==
