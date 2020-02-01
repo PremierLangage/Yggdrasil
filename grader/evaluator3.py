@@ -55,7 +55,7 @@ if __name__ == "__main__":
     if 'evaluator' in dic and 'inter' in dic:
         glob = {}
         dic['StopEvaluatorExec'] = StopEvaluatorExec
-        if step<settings['repetition']-1:
+        if step<settings['repetition']:
             exec(add_try_clause(dic['inter'], StopEvaluatorExec),{},dic)
             score=-1
             feedback=" "
