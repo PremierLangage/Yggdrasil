@@ -69,6 +69,7 @@ if __name__ == "__main__":
             lst.append(r"<span class='badge badge-primary'> %s </span>" % str(i+1))
         else:
             lst.append(r"<span class='badge badge-secondary'> %s </span>" % str(i+1))
+    dic['author'] = "<h4> %s </h4>" % " ".join(lst)
 
 
     score=dic['grade'][0]
