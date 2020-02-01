@@ -46,9 +46,9 @@ if __name__ == "__main__":
     lst=[]
     for i in range(1,1+settings['repetition']):
         if step == i:
-            lst.append(r"<span class='badge badge-primary'> %s </span>" % str(i+1))
+            lst.append(r"<span class='badge badge-primary'> %s </span>" % str(i))
         else:
-            lst.append(r"<span class='badge badge-secondary'> %s </span>" % str(i+1))
+            lst.append(r"<span class='badge badge-secondary'> %s </span>" % str(i))
 
     dic['author'] = "<h4> %s </h4>" % " ".join(lst)
 
