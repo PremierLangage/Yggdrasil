@@ -41,7 +41,7 @@ bar==
 </div>
 ==
 
-settings.repetition = 5
+settings.repetition % 5
 
 text ==
 Que signifie le mot suivant ?
