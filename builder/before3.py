@@ -41,7 +41,7 @@ if __name__ == "__main__":
         dic['maxattempt'] = 1
 
     step=1
-    dic['step']=step
+    dic['state']={'step':1}
     settings=dic['settings']
     lst=[]
     for i in range(1,1+settings['repetition']):
