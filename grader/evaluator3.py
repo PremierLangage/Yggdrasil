@@ -57,8 +57,12 @@ if __name__ == "__main__":
         dic['StopEvaluatorExec'] = StopEvaluatorExec
         if step<settings['repetition']-1:
             exec(add_try_clause(dic['inter'], StopEvaluatorExec),{},dic)
+            score=-1
+            feedback=" "
         else:
             exec(add_try_clause(dic['evaluator'], StopEvaluatorExec),{},dic)
+            score=dic['grade'][0]
+            feedback=dic['grade'][1]+" "
             if 'grade' not in dic:
                 print(missing_grade_stderr, file=sys.stderr)
                 sys.exit(1)
