@@ -59,14 +59,12 @@ if __name__ == "__main__":
             exec(add_try_clause(dic['inter'], StopEvaluatorExec),{},dic)
         else:
             exec(add_try_clause(dic['evaluator'], StopEvaluatorExec),{},dic)
+            if 'grade' not in dic:
+                print(missing_grade_stderr, file=sys.stderr)
+                sys.exit(1)
     else:
         print(missing_evaluator_stderr, file=sys.stderr)
         sys.exit(1)
-    
-    if 'grade' not in dic:
-        print(missing_grade_stderr, file=sys.stderr)
-        sys.exit(1)
-
 
     lst=[]
     for i in range(settings['repetition']):
