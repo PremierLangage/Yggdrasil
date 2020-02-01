@@ -28,17 +28,6 @@ lst_trad=[item['traductions'] for item in selection]
 
 mot=lst_mots[0]
 nbsuccess=0
-step=1
-progress=20
-==
-
-bar==
-<div class="progress" style="width:50%">
-  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
-  aria-valuemin="0" aria-valuemax="100" style="width:{{progress}}%">
-    {{step}} / 5
-  </div>
-</div>
 ==
 
 settings.repetition % 5
@@ -60,8 +49,6 @@ else:
     grade=(0," ")
 
 if step<5:
-    progress+=20
-    step += 1
     mot=lst_mots[step]
     input.value = ""
 else:
