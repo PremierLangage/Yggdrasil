@@ -74,20 +74,6 @@ if __name__ == "__main__":
     score=dic['grade'][0]
     feedback=dic['grade'][1]+" "
 
-    if score>=0:
-        dic['attempt'] = dic['attempt'] + 1
-
-    if dic['attempt'] > dic['maxattempt']:
-        dic['buttons'] = ["reroll"]
-
-    ffeedback=feedback
-    if 'settings' in dic:
-        if 'feedback' in dic['settings']:
-            if 'class' in dic['settings']['feedback']:
-                if dic['settings']['feedback']['class']=='colorbox':
-                    ffeedback=format_feedback(score,feedback)
-                if dic['settings']['feedback']['class']=='score':
-                    ffeedback="Score : %d / 100" % score
 
     output(score, ffeedback, dic)
 
