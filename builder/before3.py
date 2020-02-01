@@ -45,7 +45,7 @@ if __name__ == "__main__":
     lst=[]
     for i in range(settings['repetition']):
         lst.append("<span class='badge badge-primary'> %s </span>" % str(i+1)
-    dic['author']="<h4> %s </h4>" % "".join(lst)
+    dic['author']= " ".join(lst)
 
 
 
