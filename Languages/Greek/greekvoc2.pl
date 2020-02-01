@@ -44,7 +44,7 @@ Que signifie le mot suivant ?
 </div>
 ==
 
-beforestep ==
+evalstep ==
 if input.value==lst_trad[step]:
     nbsuccess += 1
 
