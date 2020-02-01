@@ -59,12 +59,12 @@ if __name__ == "__main__":
         print(missing_grade_stderr, file=sys.stderr)
         sys.exit(1)
 
-    step=dic['state']['step']
+    step=dic['step']
     step=step+1
-    dic['state']['step']=step
+    dic['step']=step
     settings=dic['settings']
     lst=[]
-    for i in range(1,1+settings['repetition']):
+    for i in range(settings['repetition']):
         if step == i:
             lst.append(r"<span class='badge badge-primary'> %s </span>" % str(i+1))
         else:
