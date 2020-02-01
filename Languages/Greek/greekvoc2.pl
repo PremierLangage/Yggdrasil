@@ -1,5 +1,5 @@
 @ /utils/sandboxio.py
-@ /builder/before2.py [builder.py]
+@ /builder/before3.py [builder.py]
 @ /grader/evaluator2.py [grader.py]
 input =: Input
 
@@ -41,15 +41,7 @@ bar==
 </div>
 ==
 
-author ==
-<h4>
-<span class="badge badge-primary">1</span>
-<span class="badge badge-secondary">2</span>
-<span class="badge badge-secondary">3</span>
-<span class="badge badge-secondary">4</span>
-<span class="badge badge-secondary">5</span>
-</h4>
-==
+settings.repetition = 5
 
 text ==
 Que signifie le mot suivant ?
@@ -75,5 +67,6 @@ if step<5:
 else:
     form=""
 ==
+
 
 
