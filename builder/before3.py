@@ -40,12 +40,15 @@ if __name__ == "__main__":
     if 'maxattempt' not in dic:
         dic['maxattempt'] = 1
 
-    dic['step']=1
+    step=1
+    dic['step']=step
     settings=dic['settings']
     lst=[]
     for i in range(settings['repetition']):
-        x=1
-        lst.append(r"<span class='badge badge-primary'> %s </span>" % str(i+1))
+        if step == i:
+            lst.append(r"<span class='badge badge-primary'> %s </span>" % str(i+1))
+        else:
+            lst.append(r"<span class='badge badge-secondary'> %s </span>" % str(i+1))
 
     dic['author'] = "<h4> %s </h4>" % " ".join(lst)
 
