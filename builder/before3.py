@@ -44,7 +44,7 @@ if __name__ == "__main__":
     dic['step']=step
     settings=dic['settings']
     lst=[]
-    for i in range(settings['repetition']):
+    for i in range(1,1+settings['repetition']):
         if step == i:
             lst.append(r"<span class='badge badge-primary'> %s </span>" % str(i+1))
         else:
