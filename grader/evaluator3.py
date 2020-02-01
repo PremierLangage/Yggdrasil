@@ -75,6 +75,6 @@ if __name__ == "__main__":
     feedback=dic['grade'][1]+" "
 
 
-    output(score, ffeedback, dic)
+    output(score, feedback, dic)
 
 
