@@ -47,15 +47,9 @@ Que signifie le mot suivant ?
 evalstep ==
 if input.value==lst_trad[step]:
     nbsuccess += 1
-
-mot=lst_mots[step+1]
-input.value = ""
 ==
 
 evaluator ==
-if input.value==lst_trad[step]:
-    nbsuccess += 1
-
 form=""
 grade=(nbsuccess,'fin')
 ==
