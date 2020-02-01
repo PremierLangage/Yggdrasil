@@ -46,19 +46,17 @@ if __name__ == "__main__":
         sys.exit(1)
     
     dic = get_context()
-
     step=dic['step']
-    step=step+1
-    dic['step']=step
     settings=dic['settings']
-
-    if 'evaluator' in dic and 'inter' in dic:
+    exec(add_try_clause(dic['evalstep'], StopEvaluatorExec),{},dic)
+    score=-1
+    feedback=" "
+    if 'evaluator' in dic:
         glob = {}
         dic['StopEvaluatorExec'] = StopEvaluatorExec
         if step<settings['repetition']:
-            exec(add_try_clause(dic['inter'], StopEvaluatorExec),{},dic)
-            score=-1
-            feedback=" "
+            step=step+1
+            dic['step']=step
         else:
             exec(add_try_clause(dic['evaluator'], StopEvaluatorExec),{},dic)
             score=dic['grade'][0]
