@@ -51,7 +51,7 @@ input.value = ""
 
 evaluator ==
 form=""
-grade=(nbsucess,'fin')
+grade=(nbsuccess,'fin')
 ==
 
 
