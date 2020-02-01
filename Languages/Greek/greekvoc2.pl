@@ -25,9 +25,12 @@ input.autocomplete = choices
 selection=rd.sample(rows,5)
 lst_mots=[item['article']+" "+item['mot'] for item in selection]
 lst_trad=[item['traductions'] for item in selection]
-
-mot=lst_mots[0]
 nbsuccess=0
+==
+
+beforestep ==
+input.value = ""
+mot=lst_mots[step]
 ==
 
 settings.repetition % 5
@@ -41,7 +44,7 @@ Que signifie le mot suivant ?
 </div>
 ==
 
-inter ==
+beforestep ==
 if input.value==lst_trad[step]:
     nbsuccess += 1
 
