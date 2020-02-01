@@ -1,6 +1,6 @@
 @ /utils/sandboxio.py
 @ /builder/before3.py [builder.py]
-@ /grader/evaluator2.py [grader.py]
+@ /grader/evaluator3.py [grader.py]
 input =: Input
 
 form ==
