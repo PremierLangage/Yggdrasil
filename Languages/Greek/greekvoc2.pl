@@ -50,6 +50,9 @@ input.value = ""
 ==
 
 evaluator ==
+if input.value==lst_trad[step]:
+    nbsuccess += 1
+
 form=""
 grade=(nbsuccess,'fin')
 ==
