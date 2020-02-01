@@ -57,6 +57,7 @@ if __name__ == "__main__":
         if step<settings['repetition']:
             step=step+1
             dic['step']=step
+            exec(add_try_clause(dic['beforestep'], StopEvaluatorExec),{},dic)
         else:
             exec(add_try_clause(dic['evaluator'], StopEvaluatorExec),{},dic)
             score=dic['grade'][0]
