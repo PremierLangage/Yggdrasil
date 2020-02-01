@@ -47,10 +47,18 @@ if __name__ == "__main__":
     
     dic = get_context()
 
-    if 'evaluator' in dic:
+    step=dic['step']
+    step=step+1
+    dic['step']=step
+    settings=dic['settings']
+
+    if 'evaluator' in dic and 'inter' in dic:
         glob = {}
         dic['StopEvaluatorExec'] = StopEvaluatorExec
-        exec(add_try_clause(dic['evaluator'], StopEvaluatorExec),{},dic)
+        if step<settings['repetition']-1:
+            exec(add_try_clause(dic['inter'], StopEvaluatorExec),{},dic)
+        else:
+            exec(add_try_clause(dic['evaluator'], StopEvaluatorExec),{},dic)
     else:
         print(missing_evaluator_stderr, file=sys.stderr)
         sys.exit(1)
@@ -59,10 +67,7 @@ if __name__ == "__main__":
         print(missing_grade_stderr, file=sys.stderr)
         sys.exit(1)
 
-    step=dic['step']
-    step=step+1
-    dic['step']=step
-    settings=dic['settings']
+
     lst=[]
     for i in range(settings['repetition']):
         if step == i:
