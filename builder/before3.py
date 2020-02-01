@@ -28,8 +28,8 @@ if __name__ == "__main__":
     step=0
     dic['step']=0
     if 'before' in dic:
-        print(add_try_clause(dic['before']+dic['beforestep'], StopBeforeExec), file=sys.stderr)
-        exec(add_try_clause(dic['before']+dic['beforestep'], StopBeforeExec), dic)
+        print(add_try_clause(dic['before']+"\n"+dic['beforestep'], StopBeforeExec), file=sys.stderr)
+        exec(add_try_clause(dic['before']+"\n"+dic['beforestep'], StopBeforeExec), dic)
     else:
         print(("Player 'before' need a script declared in the key 'before'."),file = sys.stderr)
         sys.exit(1)
