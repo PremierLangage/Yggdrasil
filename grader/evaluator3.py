@@ -79,10 +79,6 @@ if __name__ == "__main__":
     dic['author'] = "<h4> %s </h4>" % " ".join(lst)
 
 
-    score=dic['grade'][0]
-    feedback=dic['grade'][1]+" "
-
-
     output(score, feedback, dic)
 
 
