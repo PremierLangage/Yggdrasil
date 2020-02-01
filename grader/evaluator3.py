@@ -59,9 +59,9 @@ if __name__ == "__main__":
         print(missing_grade_stderr, file=sys.stderr)
         sys.exit(1)
 
-    step=dic['step']
+    step=dic['state']['step']
     step=step+1
-    dic['step']=step
+    dic['state']['step']=step
     settings=dic['settings']
     lst=[]
     for i in range(1,1+settings['repetition']):
