@@ -44,7 +44,10 @@ if __name__ == "__main__":
     settings=dic['settings']
     lst=[]
     for i in range(settings['repetition']):
-        lst.append("<span class='badge badge-primary'> %s </span>" % str(i+1)
+        x=1
+        #lst.append("<span class='badge badge-primary'> %s </span>" % str(i+1)
+
+    dic['author'] = "<h4> %s </h4>" % " ".join(lst)
 
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
