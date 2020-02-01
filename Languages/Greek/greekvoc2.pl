@@ -51,7 +51,8 @@ input.value = ""
 
 evaluator ==
 form=""
-feedback=str(
+feedback=str(nbsuccess)
+score=nbsuccess
 ==
 
 
