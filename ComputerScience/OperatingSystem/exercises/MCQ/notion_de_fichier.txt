@@ -45,8 +45,10 @@
 
 * Sélectionner les déclarations correctes sur les modes de bufferisation.
 - La bufferisation totale est appliquée sur l'entrée standard **stdin**.
+- La bufferisation limite l'usure de l'écran.
 + La sortie standard **stdout** est bufferisée par ligne.
 + La sortie standard d'erreur **stderr** n'est pas bufferisée.
+
 
 * Sélectionner les fonctionalités de redirection valides en Unix.
 - <2
