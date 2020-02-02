@@ -37,7 +37,8 @@
 * Que peut-on trouver dans l'organisation logique d'un disque dur formaté en Ext4 ?
 - Le bloc print pour exploiter les imprimantes.
 - Un dictionnaire Python des sockets et connexions réseaux.
-- Une liste des répertoires 
+- Une liste des répertoires.
+- La liste brute des noms des fichiers stockés sur le disque.
 + Un tableau d'inodes (certaines sont libres, certaines sont occupées).
 + Des blocs de données de taille fixe pour stocker les fichiers.
 + Un morceau réservé au système pour le démarrage de la machine (boot block).
