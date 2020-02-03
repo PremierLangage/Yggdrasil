@@ -1,4 +1,6 @@
-extends = /template/basicinput.pl
+@ /utils/sandboxio.py
+@ /builder/before2.py [builder]
+@ /grader/evaluator2.py [grader]
 
 title = Addition
 
@@ -8,8 +10,16 @@ a=rd.randint(vmin,vmax)
 b=rd.randint(vmin,vmax)
 ==
 
+
+
 text ==
 Calculer {{a}} + {{b}}.
+==
+
+input =: Input
+
+form ==
+{{ input | component }}
 ==
 
 evaluator ==
@@ -21,4 +31,5 @@ try:
 except:
     grade=(-1,"Votre réponse n'est pas un nombre entier.")
 ==
+
 
