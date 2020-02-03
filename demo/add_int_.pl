@@ -19,7 +19,7 @@ Calculer {{a}} + {{b}}.
 ==
 
 input =: Input
-input.type = numeric
+input.type = "numeric"
 
 form ==
 {{ input | component }}
