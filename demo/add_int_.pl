@@ -6,8 +6,8 @@ title = Addition
 
 before ==
 import random as rd
-a=rd.randint(vmin,vmax)
-b=rd.randint(vmin,vmax)
+a=rd.randint(10,20)
+b=rd.randint(10,20)
 ==
 
 
