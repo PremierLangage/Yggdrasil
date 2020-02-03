@@ -4,7 +4,7 @@
 
 settings.feedback.class = colorbox
 
-title = Addition
+title = *Addition*
 
 before ==
 import random as rd
@@ -32,5 +32,6 @@ else:
     grade=(0,f"La réponse est {a+b}.")
 input.disabled = True
 ==
+
 
 
