@@ -2,7 +2,7 @@
 @ /builder/before2.py [builder.py]
 @ /grader/evaluator2.py [grader.py]
 
-title = *Addition*
+title = Addition
 
 before ==
 import random as rd
