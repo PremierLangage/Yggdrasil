@@ -1,5 +1,5 @@
 @ /utils/sandboxio.py
-@ /builder/before2.py [builder.py]
+@ /builder/before2.py [builder]
 @ /grader/evaluator2.py [grader.py]
 
 title = Addition
