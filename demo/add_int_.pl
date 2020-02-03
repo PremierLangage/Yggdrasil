@@ -26,7 +26,7 @@ form ==
 ==
 
 evaluator ==
-if input.value==a+b:
+if int(input.value)==a+b:
     grade=(100,"")
 else:
     grade=(0,f"La réponse est {a+b}.")
