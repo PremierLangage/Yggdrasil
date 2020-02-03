@@ -2,7 +2,7 @@
 @ /builder/before2.py [builder.py]
 @ /grader/evaluator2.py [grader.py]
 
-feedback.settings.class = "colorbox"
+feedback.settings.class = colorbox
 
 title = Addition
 
