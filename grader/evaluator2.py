@@ -57,7 +57,6 @@ if __name__ == "__main__":
     if dic['attempt'] > dic['maxattempt']:
         dic['buttons'] = ["reroll"]
 
-    ffeedback=format_feedback(score,feedback)
     #if 'settings' in dic:
     #    if 'feedback' in dic['settings']:
     #        if 'class' in dic['settings']['feedback']:
@@ -66,7 +65,7 @@ if __name__ == "__main__":
     #            if dic['settings']['feedback']['class']=='score':
     #                ffeedback="Score : %d / 100" % score
 
-    output(score, ffeedback, dic)
+    output(score, format_feedback(score,feedback), dic)
 
 
 
