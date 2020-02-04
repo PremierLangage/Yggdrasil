@@ -3,7 +3,6 @@
 
 import sys
 from sandboxio import output, get_context
-from feedback import format_feedback
 
 class StopEvaluatorExec(Exception):
     pass
