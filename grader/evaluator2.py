@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
-import sys, json, jsonpickle, time
-from feedback import format_feedback
+import sys
 from sandboxio import output, get_context
+from feedback import format_feedback
 
 class StopEvaluatorExec(Exception):
     pass
