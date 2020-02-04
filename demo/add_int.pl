@@ -1,7 +1,6 @@
 @ /utils/sandboxio.py
 @ /builder/before2.py [builder.py]
 @ /grader/evaluator2.py [grader.py]
-@ /utils/feedback/fdbk_colorbox.py [feedback.py]
 
 title = Addition
 
