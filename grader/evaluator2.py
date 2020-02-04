@@ -8,6 +8,16 @@ from feedback import format_feedback
 class StopEvaluatorExec(Exception):
     pass
 
+def format_feedback(score,feedback):
+    text0="""<div class="alert {}"><strong>{}</strong> {}</div>"""
+    if score==-1:
+        return text0.format('alert-info','Attention !',feedback)
+    elif score==100:
+        return text0.format('alert-success','Bonne réponse.',feedback)
+    elif score==0:
+        return text0.format('alert-danger','Mauvaise réponse.',feedback)
+    else:
+        return text0.format('alert-warning','Réponse partiellement correcte.',feedback)
 
 def add_try_clause(code, excpt):
     """Add a try/except clause, excepting 'except' around code."""
@@ -57,13 +67,13 @@ if __name__ == "__main__":
     if dic['attempt'] > dic['maxattempt']:
         dic['buttons'] = ["reroll"]
 
-    #if 'settings' in dic:
-    #    if 'feedback' in dic['settings']:
-    #        if 'class' in dic['settings']['feedback']:
-    #            if dic['settings']['feedback']['class']=='colorbox':
-    #                ffeedback=format_feedback(score,feedback)
-    #            if dic['settings']['feedback']['class']=='score':
-    #                ffeedback="Score : %d / 100" % score
+    if 'settings' in dic:
+        if 'feedback' in dic['settings']:
+            if 'class' in dic['settings']['feedback']:
+                if dic['settings']['feedback']['class']=='colorbox':
+                    ffeedback=format_feedback(score,feedback)
+                if dic['settings']['feedback']['class']=='score':
+                    ffeedback="Score : %d / 100" % score
 
     output(score, format_feedback(score,feedback), dic)
 
