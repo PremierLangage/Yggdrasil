@@ -20,7 +20,9 @@ input =: Input
 form ==
 {{ input | component }}
 ==
+
 settings.feedback = score
+
 evaluator ==
 if input.value==a+b:
     grade=(100,"")
