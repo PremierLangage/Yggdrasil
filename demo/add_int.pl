@@ -15,21 +15,21 @@ text ==
 Calculer {{a}} + {{b}}.
 ==
 
-input =: Input
-input.type = number
+myinput =: Input
+myinput.type = number
 
 form ==
-{{ input | component }}
+{{ myinput | component }}
 ==
 
 settings.feedback = lightscore
 
 evaluator ==
-if input.value==a+b:
+if myinput.value==a+b:
     grade=(100,str(locals()))
 else:
     grade=(0,f"La réponse est {a+b}.")
-input.disabled = True
+myinput.disabled = True
 ==
 
 
