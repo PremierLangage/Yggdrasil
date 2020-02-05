@@ -123,9 +123,9 @@ if __name__ == "__main__":
                     feedback += error_intro
                 feedback += "<br/><b>"+q[0]+"</b><br />"
                 for s in q[1]:
-                    feedback += "<span color=\"darkgreen\">"+s+"</span><br />"
+                    feedback += "<span style=\"color:darkgreen\">"+s+"</span><br />"
                 for s in q[2]:
-                    feedback += "<span color=\"darkred\"><strike>"+s+"</strike></span><br />"
+                    feedback += "<span style=\"color:darkred\"><strike>"+s+"</strike></span><br />"
 
         output(grade, feedback, context)
     
