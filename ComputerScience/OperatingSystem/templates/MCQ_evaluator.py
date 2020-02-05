@@ -42,9 +42,15 @@ if __name__ == "__main__":
                 ok += 1
             else:
                 not_ok += 1
+                for it in context['group'].items:
+                    if int(it['id']) == good
+                        context['cumul_feedback'][-1][1].append(it['content'])
         for bad in context['bads']:
             if all_checked[bad] == True:
                 not_ok += 1
+                for it in context['group'].items:
+                    if int(it['id']) == bad
+                        context['cumul_feedback'][-1][2].append(it['content'])
             else:
                 ok += 1
         
@@ -62,6 +68,7 @@ if __name__ == "__main__":
         context['goods'] = []
         context['bads'] = []
         context['text'] += "**"+question[0]+"**"
+        context['cumul_feedback'].append([question[0],[],[]])
         
         # Total possible option and random combination
         if 'min_option' in context:
@@ -108,6 +115,7 @@ if __name__ == "__main__":
         output(grade, feedback, context)
     
     output(-1, " ", context)
+
 
 
 
