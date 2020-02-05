@@ -25,7 +25,7 @@ settings.feedback = lightscore
 
 evaluator ==
 if input.value==a+b:
-    grade=(100,context)
+    grade=(100,str(context))
 else:
     grade=(0,f"La réponse est {a+b}.")
 input.disabled = True
