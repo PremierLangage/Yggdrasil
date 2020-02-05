@@ -5,7 +5,7 @@ extends = basic.pl
 checkbox =: CheckboxGroup
 checkbox.decorator = Checkbox
 
-settings.feedback.class = score
+settings.feedback = lightscore
 
 form ==
 {{ checkbox | component }}
@@ -15,3 +15,4 @@ evaluator ==
 grade = checkbox.eval()
 checkbox.disabled=True
 ==
+
