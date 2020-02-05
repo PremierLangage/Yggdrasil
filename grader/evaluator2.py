@@ -10,7 +10,7 @@ class StopEvaluatorExec(Exception):
 def format_feedback_rightwrong(score,feedback):
     tpl="""<div class="alert {}"><strong>{}</strong> {}</div>"""
     tpl="""
-    <div class="card {}">
+    <div class="card text-white {}">
     <div class="card-header">
     {}
     </div>
