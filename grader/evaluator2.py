@@ -14,7 +14,7 @@ def format_feedback_rightwrong(score,feedback):
     <div class="card-header">
     {}
     </div>
-    <div class="card-body">
+    <div class="card-body bg-default">
     <p class="card-text"> {} </p>
     </div>
     </div>
