@@ -112,6 +112,22 @@ if __name__ == "__main__":
         context['text'] = "C'est fini!<br />"
         feedback = "Vous avez obtenu <b>" + str(grade) + "%</b> de réussite à votre QCM."
         
+        feedback += "<br /><br />"
+        error_intro += "Voici les réponses qui auraient dû être entrées :<br />"
+        intro_ok = False
+
+        for i, q in enumerate(context['cumul_feedback']):
+            if (len(q[1]) + len(q[2])) > 0:
+                if not intro_ok:
+                    intro_ok = True
+                    feedback += error_intro
+                feddback += "**"+q[0]+"**<br />"
+                for s in q[1]:
+                    feddback += " "+s+"<br />"
+                for s in q[2]:
+                    feddback += "~~"+s+"~~ <br />"
+
+
         output(grade, feedback, context)
     
     output(-1, " ", context)
