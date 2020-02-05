@@ -22,7 +22,7 @@ form ==
 {{ input | component }}
 ==
 
-settings.feedback = lightscore
+settings.feedback = score
 
 evaluator ==
 if input.value==a+b:
