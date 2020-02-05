@@ -11,7 +11,7 @@ def format_feedback_rightwrong(score,feedback):
     tpl="""<div class="alert {}"><strong>{}</strong> {}</div>"""
     tpl="""
     <div class="card">
-    <div class="card-header {}">
+    <div class="card-header text-white {}">
     {}
     </div>
     <div class="card-body bg-default">
