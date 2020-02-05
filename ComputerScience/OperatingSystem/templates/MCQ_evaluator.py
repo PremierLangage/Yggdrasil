@@ -43,13 +43,13 @@ if __name__ == "__main__":
             else:
                 not_ok += 1
                 for it in context['group'].items:
-                    if int(it['id']) == good
+                    if int(it['id']) == good:
                         context['cumul_feedback'][-1][1].append(it['content'])
         for bad in context['bads']:
             if all_checked[bad] == True:
                 not_ok += 1
                 for it in context['group'].items:
-                    if int(it['id']) == bad
+                    if int(it['id']) == bad:
                         context['cumul_feedback'][-1][2].append(it['content'])
             else:
                 ok += 1
