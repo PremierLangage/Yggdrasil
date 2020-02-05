@@ -7,16 +7,35 @@ from sandboxio import output, get_context
 class StopEvaluatorExec(Exception):
     pass
 
-def format_feedback(score,feedback):
-    text0="""<div class="alert {}"><strong>{}</strong> {}</div>"""
+def format_feedback_rightwrong(score,feedback):
+    tpl="""<div class="alert {}"><strong>{}</strong> {}</div>"""
     if score==-1:
-        return text0.format('alert-info','Attention !',feedback)
+        return tpl.format('alert-info','Attention !',feedback)
     elif score==100:
-        return text0.format('alert-success','Bonne réponse.',feedback)
-    elif score==0:
-        return text0.format('alert-danger','Mauvaise réponse.',feedback)
+        return tpl.format('alert-success','Bonne réponse.',feedback)
     else:
-        return text0.format('alert-warning','Réponse partiellement correcte.',feedback)
+        return tpl.format('alert-danger','Mauvaise réponse.',feedback)
+
+def format_feedback_score(score,feedback):
+    if score==-1:
+        tpl="""<div class="alert {}"><strong>{}</strong> {}</div>"""
+        return tpl.format('alert-info',score, feedback)
+    tpl="""<div class="alert {}"><strong>Score : {} / 100.</strong> {}</div>"""
+    if score==100:
+        return tpl.format('alert-success',score, feedback)
+    elif score==0:
+        return tpl.format('alert-danger',score, feedback)
+    else:
+        return tpl.format('alert-warning',score, feedback)
+
+def format_feedback_lightscore(score,feedback):
+    if score==-1:
+        tpl="""<div class="alert {}"><strong>{}</strong> {}</div>"""
+        return tpl.format('alert-info',score, feedback)
+    tpl="""<div class="alert {}"><strong>Score : {} / 100.</strong> {}</div>"""
+    return tpl.format('alert-light',score, feedback)
+
+
 
 def add_try_clause(code, excpt):
     """Add a try/except clause, excepting 'except' around code."""
@@ -66,15 +85,18 @@ if __name__ == "__main__":
     if dic['attempt'] > dic['maxattempt']:
         dic['buttons'] = ["reroll"]
 
-    if 'settings' in dic:
-        if 'feedback' in dic['settings']:
-            if 'class' in dic['settings']['feedback']:
-                if dic['settings']['feedback']['class']=='colorbox':
-                    ffeedback=format_feedback(score,feedback)
-                if dic['settings']['feedback']['class']=='score':
-                    ffeedback="Score : %d / 100" % score
+    ffeedback=feedback
+    if 'settings' in dic and 'feedback' in dic['settings']:
+        if dic['settings']['feedback']=='rightwrong':
+            ffeedback=format_feedback_rightwrong(score,feedback)
+        elif dic['settings']['feedback']=='score':
+            ffeedback=format_feedback_score(score,feedback)
+        elif dic['settings']['feedback']=='lightscore':
+            ffeedback=format_feedback_lightscore(score,feedback)
 
-    output(score, format_feedback(score,feedback), dic)
+
+    output(score, format_feedback(score,ffeedback), dic)
+
 
 
 
