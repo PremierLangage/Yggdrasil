@@ -115,10 +115,14 @@ if __name__ == "__main__":
     # No form before the first question just a submit to continu
     context['form'] = " "
     
+    # key to store the feedbacks
+    context['cumul_feedback'] = []
+
     with open(sys.argv[2], 'w+') as f:
         json.dump(context, f)
         
     sys.exit(0)
+
 
 
 
