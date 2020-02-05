@@ -34,9 +34,9 @@ def format_feedback_lightscore(score,feedback):
         return tpl.format('alert-info',score, feedback)
     tpl="""
 <div class="card bg-light mb-3" style="max-width:100%;">
-  <div class="card-header">Header</div>
+  <div class="card-header">Score : {} / 100</div>
   <div class="card-body">
-    <h5 class="card-title">Score : {} / 100</h5>
+    <h5 class="card-title"></h5>
   </div>
     """
     return tpl.format(score)
