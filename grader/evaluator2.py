@@ -104,7 +104,6 @@ if __name__ == "__main__":
         elif dic['settings']['feedback']=='lightscore':
             ffeedback=format_feedback_lightscore(score,feedback)
 
-    ffeedback=str(dic)
     output(score, ffeedback, dic)
 
 
