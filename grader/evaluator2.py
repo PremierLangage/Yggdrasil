@@ -95,7 +95,7 @@ if __name__ == "__main__":
             ffeedback=format_feedback_lightscore(score,feedback)
 
 
-    output(score, format_feedback(score,ffeedback), dic)
+    output(score, ffeedback, dic)
 
 
 
