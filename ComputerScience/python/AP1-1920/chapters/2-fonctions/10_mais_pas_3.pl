@@ -3,6 +3,7 @@
 
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
+@ /builder/none.py [builder.py]
 
 title = Dix mais pas trois
 
@@ -41,6 +42,7 @@ Test2 | 3
 Test3 | 30
 Test4 | 40
 ==
+
 
 
 
