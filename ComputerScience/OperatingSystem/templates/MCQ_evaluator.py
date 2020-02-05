@@ -121,11 +121,11 @@ if __name__ == "__main__":
                 if not intro_ok:
                     intro_ok = True
                     feedback += error_intro
-                feedback += "**"+q[0]+"**<br />"
+                feedback += "<br/><b>"+q[0]+"</b><br />"
                 for s in q[1]:
-                    feedback += " "+s+"<br />"
+                    feedback += "<span color=\"darkgreen\">"+s+"</span><br />"
                 for s in q[2]:
-                    feedback += "~~"+s+"~~ <br />"
+                    feedback += "<span color=\"darkred\"><strike>"+s+"</strike></span><br />"
 
         output(grade, feedback, context)
     
