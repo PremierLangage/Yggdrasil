@@ -121,11 +121,11 @@ if __name__ == "__main__":
                 if not intro_ok:
                     intro_ok = True
                     feedback += error_intro
-                feddback += "**"+q[0]+"**<br />"
+                feedback += "**"+q[0]+"**<br />"
                 for s in q[1]:
-                    feddback += " "+s+"<br />"
+                    feedback += " "+s+"<br />"
                 for s in q[2]:
-                    feddback += "~~"+s+"~~ <br />"
+                    feedback += "~~"+s+"~~ <br />"
 
 
         output(grade, feedback, context)
