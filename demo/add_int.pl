@@ -19,7 +19,7 @@ input =: Input
 input.type = number
 
 form ==
-{{ myinput | component }}
+{{ input | component }}
 ==
 
 settings.feedback = lightscore
