@@ -113,7 +113,7 @@ if __name__ == "__main__":
         feedback = "Vous avez obtenu <b>" + str(grade) + "%</b> de réussite à votre QCM."
         
         feedback += "<br /><br />"
-        error_intro += "Voici les réponses qui auraient dû être entrées :<br />"
+        error_intro = "Voici les réponses qui auraient dû être entrées :<br />"
         intro_ok = False
 
         for i, q in enumerate(context['cumul_feedback']):
