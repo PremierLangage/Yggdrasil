@@ -26,7 +26,7 @@ settings.feedback = lightscore
 
 evaluator ==
 if myinput.value==a+b:
-    grade=(100,str(isinstance(myinput,Input)))
+    grade=(100,str(isinstance(myinput,Component)))
 else:
     grade=(0,f"La réponse est {a+b}.")
 myinput.disabled = True
