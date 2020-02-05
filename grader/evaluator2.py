@@ -9,12 +9,22 @@ class StopEvaluatorExec(Exception):
 
 def format_feedback_rightwrong(score,feedback):
     tpl="""<div class="alert {}"><strong>{}</strong> {}</div>"""
+        tpl="""
+<div class="card {}">
+  <div class="card-header">
+   {}
+  </div>
+  <div class="card-body">
+    <p class="card-text"> {} </p>
+  </div>
+</div>
+    """
     if score==-1:
-        return tpl.format('alert-info','Attention !',feedback)
+        return tpl.format('bg-info','Attention !',feedback)
     elif score==100:
-        return tpl.format('alert-success','Bonne réponse.',feedback)
+        return tpl.format('bg-success','Bonne réponse.',feedback)
     else:
-        return tpl.format('alert-danger','Mauvaise réponse.',feedback)
+        return tpl.format('bg-danger','Mauvaise réponse.',feedback)
 
 def format_feedback_score(score,feedback):
     if score==-1:
