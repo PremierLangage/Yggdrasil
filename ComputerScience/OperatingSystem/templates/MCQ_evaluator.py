@@ -116,7 +116,7 @@ if __name__ == "__main__":
         error_intro = "Voici les réponses qui auraient dû être entrées :<br />"
         intro_ok = False
 
-        for i, q in enumerate(context['cumul_feedback']):
+        for q in context['cumul_feedback']:
             if (len(q[1]) + len(q[2])) > 0:
                 if not intro_ok:
                     intro_ok = True
