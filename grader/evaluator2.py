@@ -42,7 +42,7 @@ def format_feedback_lightscore(score,feedback):
   </div>
 </div>
     """
-    tpl="""<div class="alert bg-default"><strong>Score : {} / 100.</strong> {}</div>"""
+    tpl="""<div class="alert alert-secondary"><strong>Score : {} / 100.</strong> {}</div>"""
     return tpl.format(score,feedback)
 
 
