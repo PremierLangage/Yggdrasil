@@ -21,7 +21,7 @@ form ==
 {{ input | component }}
 ==
 
-settings.feedback = lightscore
+settings.feedback = rightwrong
 
 evaluator ==
 if input.value==a+b:
