@@ -79,4 +79,14 @@
 + On appelle la fonction **rewind** sur le fichier ouvert.
 + On exécute **fseek(f, 0, SEEK_SET)** où **f** est le fichier ouvert.
 
+* Quels sont les enjeux relevés par un système de fichiers dans un système d'exploitation ?
++ Le partage : assurer l'utilisation simultanée de plusieurs disques et/ou plusieurs fichiers.
++ L'efficacité : optimisation via des caches, accès standardisés et uniformes.
++ Les droits : protection dud système, protections entre les utilisateurs.
++ La cohérence : assurer l'alignement et la cohérence du contenu des fichiers sur les disques.
+- 
 
+*
+*
+*
+*
