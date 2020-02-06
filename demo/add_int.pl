@@ -4,7 +4,6 @@
 
 title = Addition
 
-
 before ==
 import random as rd
 a=rd.randint(10,20)
@@ -30,8 +29,3 @@ if input.value==a+b:
 else:
     grade=(0,f"La réponse est {a+b}.")
 ==
-
-
-
-
-
