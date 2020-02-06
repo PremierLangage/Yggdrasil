@@ -85,7 +85,9 @@
 + Les droits : protection dud système, protections entre les utilisateurs.
 + La cohérence : assurer l'alignement et la cohérence du contenu des fichiers sur les disques.
 - L'humour : faire en sorte que l'ouverture et la fermeture des fichiers soient drôles.
-- L'affichage : Pouvoir afficher à l'écran le contenu des fichiers.
+- L'affichage : pouvoir afficher à l'écran le contenu des fichiers.
+- La programmation : planifier les futures tâches que le C.P.U. devra traiter.
+- 
 
 
 *
