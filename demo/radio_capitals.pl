@@ -1,8 +1,9 @@
-extends = /template/radio.pl
+extends = template/basic.pl
 
 @ country_data.csv [data.csv]
 
 title = QCM : Capitales de pays
+
 before ==
 import random as rd
 import csv
@@ -33,5 +34,17 @@ text ==
 Quelle est la capitale {{ofcountry}} ?
 ==
 
+radio =: RadioGroup
 
+# Les deux lignes suivantes sont temporaires.
+@ /utils/radiogroup.py [customradiogroup.py]
+radio.decorator = CustomRadioGroup
+
+form ==
+{{ radio|component }}
+==
+
+evaluator ==
+grade = radio.eval()
+==
 
