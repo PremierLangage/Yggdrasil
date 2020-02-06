@@ -3,7 +3,7 @@
 
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/template/soluce.pl
-
+@ /builder/before.py [builder.py]
 title = Rectangle dimensions variables
 
 
@@ -19,7 +19,7 @@ le périmètre est ?? et la surface est ?? .
 
 before==
 import random
-mplsoluce2="Test tiré aléatoirement \n%d\n%d\n".format(random.randint(1,1000),random.randint(1,1000))
+mplsoluce2="Test tiré aléatoirement \n{}\n{}\n".format(random.randint(1,1000),random.randint(1,1000))
 ==
 
 soluce==
@@ -38,6 +38,7 @@ Un test beaucoup plus dur
 17575765776
 3579877897987
 ==
+
 
 
 
