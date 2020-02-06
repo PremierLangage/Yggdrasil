@@ -8,7 +8,7 @@ class StopEvaluatorExec(Exception):
     pass
 
 def format_feedback_rightwrong(score,feedback):
-    tpl="""<div class="alert {}"><strong>{}</strong> {}</div>"""
+    tpl="""<div class="alert {}"><strong>{}</strong> <br> {}</div>"""
     if score==-1:
         return tpl.format('alert-info','Attention !',feedback)
     elif score==100:
@@ -18,9 +18,9 @@ def format_feedback_rightwrong(score,feedback):
 
 def format_feedback_score(score,feedback):
     if score==-1:
-        tpl="""<div class="alert {}"><strong>{}</strong> {}</div>"""
+        tpl="""<div class="alert {}"><strong>{}</strong><br> {}</div>"""
         return tpl.format('alert-info',score, feedback)
-    tpl="""<div class="alert {}"><strong>Score : {} / 100.</strong> {}</div>"""
+    tpl="""<div class="alert {}"><strong>Score : {} / 100</strong> {}</div>"""
     if score==100:
         return tpl.format('alert-success',score, feedback)
     elif score==0:
@@ -30,19 +30,9 @@ def format_feedback_score(score,feedback):
 
 def format_feedback_lightscore(score,feedback):
     if score==-1:
-        tpl="""<div class="alert {}"><strong>{}</strong> {}</div>"""
+        tpl="""<div class="alert {}"><strong>{}</strong><br> {}</div>"""
         return tpl.format('alert-info',score, feedback)
-    tpl="""
-<div class="card">
-  <div class="card-header">
-    Score : {} / 100
-  </div>
-  <div class="card-body">
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-  </div>
-</div>
-    """
-    tpl="""<div class="alert alert-secondary"><strong>Score : {} / 100.</strong> {}</div>"""
+    tpl="""<div class="alert alert-secondary"><strong>Score : {} / 100 <br> </strong> {}</div>"""
     return tpl.format(score,feedback)
 
 
