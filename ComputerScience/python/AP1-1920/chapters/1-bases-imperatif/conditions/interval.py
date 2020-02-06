@@ -33,10 +33,10 @@ expression (x <=A)
 # Intervals et conditionnelles 
 
 
-OPENLEFT="]"
-OPENRIGHT="["
-CLOSELEFT="["
-CLOSERIGHT="]"
+OPENLEFT="\rbrack"
+OPENRIGHT="\lbrack"
+CLOSELEFT="\lbrack"
+CLOSERIGHT="\rbrack"
 
 INFLEFT="] -\infty"
 INRIGHT="+\infty ["
@@ -154,6 +154,7 @@ if __name__ == '__main__':
     while input() != "" :
         for i in range(6):
            print(i+1,":", makeinterval(i+1)),values
+
 
 
 
