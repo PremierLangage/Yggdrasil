@@ -43,7 +43,9 @@ class CustomRadioGroup(Component):
                 score = 0
                 e['css'] = 'error-state'
                 e['content'] = self.content[e['id']] + r"<span class='fas fa-times' style='padding-left: 1em'></span>"
+        self.disabled=True
         return (score, "")
+
 
 
 
