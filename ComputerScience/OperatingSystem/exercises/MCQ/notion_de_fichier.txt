@@ -84,6 +84,7 @@
 + L'efficacité : optimisation via des caches, accès standardisés et uniformes.
 + Les droits : protection dud système, protections entre les utilisateurs.
 + La cohérence : assurer l'alignement et la cohérence du contenu des fichiers sur les disques.
+- L'humour : faire en sorte que l'ouverture et la fermeture des fichiers soient drôle.
 
 
 *
