@@ -9,9 +9,8 @@ import random as rd
 import csv
 
 with open('data.csv',newline='') as file:
-    rows=list(csv.DictReader(file,delimiter=','))
+    items=rd.sample(list(csv.DictReader(file,delimiter=',')),4)
 
-items=rd.sample(rows,4)
 country=items[0]['country']
 article=items[0]['article']
 capitals=[item['capital'] for item in items]
