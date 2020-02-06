@@ -1,4 +1,4 @@
-extends = template/basic.pl
+extends = /template/basic.pl
 
 @ country_data.csv [data.csv]
 
