@@ -8,12 +8,18 @@ title = Rectangle dimensions variables
 
 
 text==  
-Les dimensions d'un rectangle sont entrées par l'utilisateur, le programme testeur fournira les deux valeurs.
+Les dimensions d'un rectangle sont entrées par l'utilisateur, 
+le programme testeur fournira les deux valeurs.
 
 Ecrire un programme qui calcule et affiche le périmètre et la surface du rectangle
 sous la forme :
 
 le périmètre est ?? et la surface est ?? .
+==
+
+before==
+import random
+mplsoluce2="Test tiré aléatoirement \n%d\n%d\n".format(random.randint(1,1000),random.randint(1,1000))
 ==
 
 soluce==
@@ -32,5 +38,6 @@ Un test beaucoup plus dur
 17575765776
 3579877897987
 ==
+
 
 
