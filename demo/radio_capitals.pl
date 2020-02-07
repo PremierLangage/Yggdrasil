@@ -1,6 +1,6 @@
 extends = /model/basic.pl
 
-@ country_data.csv [data.csv]
+@ donnees_pays_europe.csv
 
 title = QCM : Capitales de pays
 
@@ -8,7 +8,7 @@ before ==
 import random as rd
 import csv
 
-with open('data.csv',newline='') as file:
+with open('donnees_pays_europe.csv',newline='') as file:
     all_rows=list(csv.DictReader(file,delimiter=','))
     
 sample_rows=rd.sample(all_rows,4)
