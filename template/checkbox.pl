@@ -13,6 +13,6 @@ form ==
 
 evaluator ==
 grade = checkbox.eval()
-checkbox.disabled=True
 ==
+
 
