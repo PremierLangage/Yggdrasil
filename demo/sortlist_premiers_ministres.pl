@@ -8,7 +8,7 @@ before ==
 import random as rd
 import csv
 
-with open('data.csv',newline='') as file:
+with open('premiers_ministres.csv',newline='') as file:
     rows=list(csv.DictReader(file,delimiter=','))
 
 lst=rd.sample(range(len(rows)),nb)
