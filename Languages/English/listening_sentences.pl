@@ -10,7 +10,7 @@ title = Listening
 
 before ==
 import random as rd
-k=rd.randint(3)
+k=rd.randint(0,2)
 lst_sentences=["I'm gonna make him an offer he can't refuse.",
                "May the force be with you.",
                "Frankly, my dear, I don't give a damn."]
