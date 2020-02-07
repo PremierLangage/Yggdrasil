@@ -23,8 +23,6 @@ sol=lst_sentences[k]
 
 text ==
 <button onclick="playAudio()" class="btn btn-info"><i class="fas fa-volume-up"></i></button> Transcrire la phrase.
-
-<audio controls src="data:audio/ogg;base64,{{audiob64}}"></audio>
 ==
 
 extrajs==
@@ -57,11 +55,12 @@ def minimumEditDistance(s1,s2):
 
 dist=minimumEditDistance(sol,input.value)
 
-if dist<len(sol)/5:
+if dist<0.7*len(sol):
     grade=(100,sol)
 else:
     grade=(0,sol)
 ==
 
 settings.feedback = rightwrong
+
 
