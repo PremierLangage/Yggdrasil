@@ -33,10 +33,12 @@ form ==
 {{ input | component }}
 ==
 
+settings.feedback = rightwrong
+
 evaluator ==
 if input.value == capitale:
     grade = (100,"")
 else:
-    grade = (0,"")
+    grade = (0, capitale)
 ==
 
