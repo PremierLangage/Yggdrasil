@@ -9,12 +9,13 @@ input.type = number
 title = Listening
 
 before ==
-isol=rd.randint(3)
+k=rd.randint(3)
 lst_sentences=["I'm gonna make him an offer he can't refuse.",
                "May the force be with you.",
                "Frankly, my dear, I don't give a damn."]
 lstaudio=[audio1,audio2,audio3]
-audiofile=lstaudio[sol-1]
+audiofile=lstaudio[k]
+sol=lst_sentences[k]
 ==
 
 text ==
