@@ -13,9 +13,9 @@ text ==
 Parmi les nombres suivants, lesquels sont des multiples de 3 ?
 ==
 
-@ /utils/checkbox.py [checkbox.py]
 
 checkbox =: CheckboxGroup
+@ /utils/checkbox.py [checkbox.py]
 checkbox.decorator = Checkbox
 
 settings.feedback = lightscore
