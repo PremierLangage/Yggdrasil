@@ -17,7 +17,7 @@ s=number['3']
 ==
 
 text ==
-<button onclick="playAudio()" class="btn btn-info"><i class="fas fa-volume-up"></i></button> Ecrire le nombre entendu (en caractères numériques).
+<button onclick="playAudio()" class="btn btn-info"><i class="fas fa-volume-up"></i></button> Quel nombre entends-tu ?
 ==
 
 extrajs==
