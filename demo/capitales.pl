@@ -33,7 +33,7 @@ form ==
 ==
 
 evaluator ==
-if input.value == capital:
+if input.value == capitale:
     grade = (100,"")
 else:
     grade = (0,"")
