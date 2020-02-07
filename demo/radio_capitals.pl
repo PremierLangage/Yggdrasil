@@ -1,5 +1,4 @@
 extends = /template/basic.pl
-@ /builder/before.py [builder.py]
 
 @ country_data.csv [data.csv]
 
