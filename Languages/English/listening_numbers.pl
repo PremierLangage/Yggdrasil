@@ -8,7 +8,7 @@ title = Numbers
 
 before ==
 import random as rd
-import random as rd
+import json
 
 with open('data.json','r',encoding='utf8') as f:
     number=json.load(f)
