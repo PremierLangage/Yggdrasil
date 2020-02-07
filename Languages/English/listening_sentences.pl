@@ -4,7 +4,6 @@ audio1 =$ /Languages/English/audio/sentence1.mp3
 audio2 =$ /Languages/English/audio/sentence2.mp3
 audio3 =$ /Languages/English/audio/sentence3.mp3
 
-input.type = number
 
 title = Listening
 
