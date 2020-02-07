@@ -9,6 +9,7 @@ input.type = number
 title = Listening
 
 before ==
+import random as rd
 k=rd.randint(3)
 lst_sentences=["I'm gonna make him an offer he can't refuse.",
                "May the force be with you.",
