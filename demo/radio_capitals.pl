@@ -13,25 +13,19 @@ with open('data.csv',newline='') as file:
     
 sample_rows=rd.sample(all_rows,4)
 
-country=sample_rows[0]['country']
+pays=sample_rows[0]['country']
 article=sample_rows[0]['article']
 
 radio.load_choices([row['capital'] for row in sample_rows])
 radio.set_sol_by_index(0)
 radio.shuffle()
 
-if article=="le":
-    ofcountry = "du " + country
-elif article=="l":
-    ofcountry = "de l'" + country
-elif article=="la":
-    ofcountry = "de la " + country
-elif article=="les":
-    ofcountry = "des " + country
+partitif = {"le":"du ", "la":"de la ", "les":"des ", "l":"de l'"}
+du_pays = partitif[article] + pays
 ==
 
 text ==
-Quelle est la capitale {{ofcountry}} ?
+Quelle est la capitale {{du_pays}} ?
 ==
 
 radio =: RadioGroup
