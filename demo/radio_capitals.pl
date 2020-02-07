@@ -9,17 +9,15 @@ before ==
 import random as rd
 import csv
 
-f = open('data.csv',newline='')
-reader=csv.DictReader(f,delimiter=',')
-lst=list(reader)
-# items=rd.sample(list(reader),4)
-f.close()
+with open('data.csv',newline='') as file:
+    all_rows=list(csv.DictReader(file,delimiter=','))
+    
+sample_rows=rd.sample(all_rows,4)
 
-country=items[0]['country']
-article=items[0]['article']
-capitals=[item['capital'] for item in items]
+country=sample_rows[0]['country']
+article=sample_rows[0]['article']
 
-radio.load_choices(capitals)
+radio.load_choices([row['capital'] for row in sample_rows])
 radio.set_sol_by_index(0)
 radio.shuffle()
 
