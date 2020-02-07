@@ -52,8 +52,10 @@ def minimumEditDistance(s1,s2):
 
 dist=minimumEditDistance(sol,input.value)
 
-if dist<
-grade=(100,str(dist))
+if dist<len(sol)/10:
+    grade=(100,sol)
+else:
+    grade=(0,sol)
 ==
 
 feedback.settings = rightwrong
