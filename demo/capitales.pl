@@ -17,6 +17,7 @@ row=rd.choice(all_rows)
 
 pays=row['pays']
 article=row['article']
+capitale=row['capitale']
 
 partitif = {"le":"du ", "la":"de la ", "les":"des ", "l":"de l'"}
 du_pays = partitif[article] + pays
