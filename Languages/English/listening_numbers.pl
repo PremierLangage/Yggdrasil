@@ -19,7 +19,6 @@ with open('data.json','r',encoding='utf8') as f:
     number=json.load(f)
 
 s=number['3'].encode('utf-8')
-src="data:audio/ogg;base64,
 ==
 
 text ==
