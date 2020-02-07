@@ -65,4 +65,3 @@ else:
 
 settings.feedback = rightwrong
 
-
