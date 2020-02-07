@@ -44,8 +44,9 @@ class CustomSortList(Component):
             </div>""" % (cssbadge,str(1+self._order.index(e['id'])),e['content'])
             
         tau,_=kendalltau(orderans,list(range(n)))
-        score=round(max([0,tau])*100)
+        score=int(round(max([0,tau])*100))
         return (score,str(score))
+
 
 
 
