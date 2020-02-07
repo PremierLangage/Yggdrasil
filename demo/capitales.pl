@@ -15,7 +15,7 @@ with open('pays_europe.csv',newline='') as file:
     
 row=rd.choice(all_rows)
 
-pays=row['country']
+pays=row['pays']
 article=row['article']
 
 partitif = {"le":"du ", "la":"de la ", "les":"des ", "l":"de l'"}
