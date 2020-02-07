@@ -13,7 +13,8 @@ import json
 with open('data.json','r',encoding='utf8') as f:
     number=json.load(f)
 
-s=number['3']
+k=rd.randint(1,9)
+s=number[str(k)]
 ==
 
 text ==
