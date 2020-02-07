@@ -19,7 +19,7 @@ sol=lst_sentences[k]
 ==
 
 text ==
-<button onclick="playAudio()" class="btn btn-info"><i class="fas fa-volume-up"></i></button> Ecrire le nombre entendu (en caractères numériques).
+<button onclick="playAudio()" class="btn btn-info"><i class="fas fa-volume-up"></i></button> Transcrire la phrase.
 ==
 
 extrajs==
