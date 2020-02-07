@@ -52,7 +52,7 @@ def minimumEditDistance(s1,s2):
 
 dist=minimumEditDistance(sol,input.value)
 
-if dist<len(sol)/10:
+if dist<len(sol)/5:
     grade=(100,sol)
 else:
     grade=(0,sol)
