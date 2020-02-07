@@ -11,7 +11,7 @@ import csv
 with open('premiers_ministres.csv',newline='') as file:
     all_rows=list(csv.DictReader(file,delimiter=','))
 
-lst = rd.sample(range(len(all_rows)),nb)
+lst = rd.sample(range(len(all_rows)),5)
 lst.sort()
 sortlist.load_items([rows[i]["nom"] for i in lst])
 ==
