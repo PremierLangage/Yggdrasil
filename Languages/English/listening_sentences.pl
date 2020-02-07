@@ -58,5 +58,5 @@ else:
     grade=(0,sol)
 ==
 
-feedback.settings = rightwrong
+settings.feedback = rightwrong
 
