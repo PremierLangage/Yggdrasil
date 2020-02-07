@@ -17,6 +17,7 @@ s=number['3'].encode('utf-8')
 ==
 
 text ==
+{{s}}
 <button onclick="playAudio()" class="btn btn-info"><i class="fas fa-volume-up"></i></button> Ecrire le nombre entendu (en caractères numériques).
 ==
 
