@@ -11,7 +11,8 @@ import csv
 
 f = open('data.csv',newline='')
 reader=csv.DictReader(f,delimiter=',')
-items=rd.sample(list(reader),4)
+lst=list(reader)
+# items=rd.sample(list(reader),4)
 f.close()
 
 country=items[0]['country']
