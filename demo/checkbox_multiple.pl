@@ -1,4 +1,4 @@
-extends = /template/basic.pl
+extends = /models/basic.pl
 
 title = QCM : Multiples de 3
 
