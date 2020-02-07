@@ -17,7 +17,6 @@ s=number['3']
 ==
 
 text ==
-{{s}}
 <button onclick="playAudio()" class="btn btn-info"><i class="fas fa-volume-up"></i></button> Ecrire le nombre entendu (en caractères numériques).
 ==
 
@@ -38,5 +37,6 @@ if input.value==sol:
 else:
     grade=(0,str(sol))
 ==
+
 
 
