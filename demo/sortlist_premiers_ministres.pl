@@ -9,11 +9,11 @@ import random as rd
 import csv
 
 with open('premiers_ministres.csv',newline='') as file:
-    rows=list(csv.DictReader(file,delimiter=','))
+    all_rows=list(csv.DictReader(file,delimiter=','))
 
-lst=rd.sample(range(len(rows)),nb)
+lst = rd.sample(range(len(all_rows)),nb)
 lst.sort()
-sortlist.load_items([rows[i][field] for i in lst])
+sortlist.load_items([rows[i]["nom"] for i in lst])
 ==
 
 text ==
