@@ -50,9 +50,6 @@ def minimumEditDistance(s1,s2):
     return distances[-1]
 
 dist=minimumEditDistance(sol,input.value)
-if input.value==sol:
-    grade=(100,str(dist))
-else:
-    grade=(0,str(dist))
+grade=(100,str(dist))
 ==
 
