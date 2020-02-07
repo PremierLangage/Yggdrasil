@@ -13,7 +13,7 @@ import json
 with open('data.json','r',encoding='utf8') as f:
     number=json.load(f)
 
-s=number['3']
+s=number['3'].encode('ascii')
 ==
 
 text ==
@@ -21,7 +21,7 @@ text ==
 ==
 
 extrajs==
-<audio id="Audio" style="display:none" src="data:audio/mp3;{{s}}">
+<audio id="Audio" style="display:none" src="data:audio/mp3;base64,{{s}}">
 </audio> 
 <script>
 var x = document.getElementById("Audio"); 
