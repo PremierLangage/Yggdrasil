@@ -9,7 +9,8 @@ import random as rd
 import csv
 
 with open('data.csv',newline='') as file:
-    items=rd.sample(list(csv.DictReader(file,delimiter=',')),4)
+    reader=csv.DictReader(file,delimiter=',')
+    items=rd.sample(list(reader),4)
 
 country=items[0]['country']
 article=items[0]['article']
