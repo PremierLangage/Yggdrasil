@@ -1,4 +1,4 @@
-extends = /template/basicinput.pl
+extends = /model/basicinput.pl
 
 @ /Languages/English/audio/numbers.json [data.json]
 
