@@ -1,4 +1,4 @@
-extends = /template/basic.pl
+extends = /model/basic.pl
 
 @ country_data.csv [data.csv]
 
@@ -41,4 +41,5 @@ form ==
 evaluator ==
 grade = radio.eval()
 ==
+
 
