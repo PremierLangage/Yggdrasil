@@ -45,7 +45,6 @@ class Checkbox(Component):
                 item['content'] = self.content[item['id']] + r"<span class='fas fa-check' style='padding-left: 1em'></span>"
                 checkright+=1
             elif item['id'] in self._sol and not item['checked']:
-                item['css'] = 'success-state'
                 item['content'] = self.content[item['id']] + r"<span class='fas fa-check' style='padding-left: 1em'></span>"
                 missright+=1
             elif not (item['id'] in self._sol) and item['checked']:
@@ -71,4 +70,5 @@ class Checkbox(Component):
             score=max([round((nitems-2*(checkwrong+missright))/nitems*100),0])
         self.disabled=True
         return (score,"")
+
 
