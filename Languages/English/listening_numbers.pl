@@ -18,7 +18,7 @@ s=number[str(sol)]
 ==
 
 text ==
-{{audiobutton}} Quel nombre entends-tu ?
+{{audiobutton | safe}} Quel nombre entends-tu ?
 ==
 
 audiobutton ==
