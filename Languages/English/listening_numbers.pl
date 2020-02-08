@@ -18,7 +18,11 @@ s=number[str(sol)]
 ==
 
 text ==
-<button onclick="playAudio()" class="btn btn-info btn-sm"><i class="fas fa-volume-up"></i></button> Quel nombre entends-tu ?
+{{audiobutton}} Quel nombre entends-tu ?
+==
+
+audiobutton ==
+<button onclick="playAudio()" class="btn btn-info btn-sm"><i class="fas fa-volume-up"></i></button>
 ==
 
 extrajs==
