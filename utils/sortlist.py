@@ -31,17 +31,17 @@ class CustomSortList(Component):
         for i, e in enumerate(self.items):
             if e['id'] == self._order[i]:
                 e['css'] = 'success-state animated fadeIn'
-                cssbadge="badge-success"
+                css_state="badge-success"
             else:
                 e['css'] = 'error-state animated fadeIn'
-                cssbadge="badge-danger"
+                css_state="badge-danger"
                 errors += 1
             
             e['content']=  """<div class="d-flex justify-content-between align-items-center">
-                <span class="badge %s"> %s </span>
-                <a href="#" data-toggle="tooltip" class="alert-success alert-link" title="Some tooltip text!"> % s </a>
+                <span class="badge badge-%s"> %s </span>
+                <a href="#" data-toggle="tooltip" class="alert-%s alert-link" title="Some tooltip text!"> % s </a>
                 <span></span>
-            </div>""" % (cssbadge,str(1+self._order.index(e['id'])),e['content'])
+            </div>""" % (css_state,str(1+self._order.index(e['id'])), css_state,e['content'])
             
         tau,_=kendalltau(orderans,list(range(n)))
         score=int(round(max([0,tau])*100))
