@@ -41,9 +41,9 @@ class CustomSortList(Component):
             
             e['content']=  """<div class="d-flex justify-content-between align-items-center">
                 <span class="badge badge-%s"> %s </span>
-                <a href="#" data-toggle="tooltip" class="alert-%s alert-link" title="Some tooltip text!"> % s </a>
+                <a href="#" data-toggle="tooltip" class="alert-%s alert-link" title="%s"> % s </a>
                 <span></span>
-            </div>""" % (css_state,str(1+self._order.index(e['id'])), css_state,e['content'])
+            </div>""" % (css_state,str(1+self._order.index(e['id'])), css_state,self._feedback[e['id']],e['content'])
             
         tau,_=kendalltau(orderans,list(range(n)))
         score=int(round(max([0,tau])*100))
