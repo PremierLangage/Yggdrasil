@@ -45,7 +45,9 @@ class CustomSortList(Component):
             
         tau,_=kendalltau(orderans,list(range(n)))
         score=int(round(max([0,tau])*100))
+        self.disabled=True
         return (score,"")
+
 
 
 
