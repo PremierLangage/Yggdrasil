@@ -17,8 +17,6 @@ sortlist.load_items([rows[i]["nom"] for i in lst])
 ==
 
 text ==
-  <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
-
 Classer ces premiers ministres de la Ve République du plus ancien au plus récent (selon la date d'entrée en fonction).
 ==
 
