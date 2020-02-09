@@ -13,7 +13,7 @@ with open('premiers_ministres.csv',newline='') as file:
 
 lst = rd.sample(range(len(rows)),5)
 lst.sort()
-sortlist.load_items(([rows[i]["nom"],"") for i in lst])
+sortlist.load_items([(rows[i]["nom"],"") for i in lst])
 ==
 
 text ==
