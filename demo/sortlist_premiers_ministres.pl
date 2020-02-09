@@ -34,3 +34,12 @@ grade = sortlist.eval()
 ==
 
 settings.feedback = lightscore
+
+extrajs ==
+
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+==
