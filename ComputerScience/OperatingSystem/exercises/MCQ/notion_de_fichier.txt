@@ -110,6 +110,21 @@
 + bin/
 + sbin/
 
-*
-*
+* Quel(s) sont les flux d'octets standard en Unix ?
+- setin, le flux conventionnel.
+- bloodout, le flux mensuel.
+- errno, le flux entier.
+- errin, l'entrée standard d'erreur.
++ stdin, l'entrée standard.
++ stdout, la sortie standard.
++ stderr, la sortie standard d'erreur.
 
+* Que fais la commande : man printf >> log.txt ?
+- La commande rajoute la documentation de printf au début du fichier.
+- La commande retourne True si la documentation de printf est plus longue que le fichier.
+- La commande retourne True si on trouve la documentation de printf dans le fichier.
+- La commande détruit l'ancien contenu du fichier log.txt.
+- La commande déclanche une erreur si le fichier log.txt n'existe pas.
++ La commande crée le fichier log.txt s'il n'existe pas.
++ La commande laisse l'ancien contenu du fichier log.txt au début du fichier.
++ La commande rajoute la documentation de printf à la fin du fichier.
