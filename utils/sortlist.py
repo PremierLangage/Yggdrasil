@@ -12,27 +12,17 @@ class CustomSortList(Component):
         self._order = []
         super().__init__(**kwargs)
 
-    def load_list(self,content):
+    def load_items(self,content,feedback):
         self.items = []
         self._order = []
+        self._feedback ={}
         for i in range(len(content)):
             id = str(uuid.uuid4())
             self.items.append({
                 "id": id,
                 "content": content[i]
             })
-            self._order.append(id)
-        rd.shuffle(self.items)
-
-    def load_list2(self,content):
-        self.items = []
-        self._order = []
-        for i in range(len(content)):
-            id = str(uuid.uuid4())
-            self.items.append({
-                "id": id,
-                "content": content[i]
-            })
+            self._feedback[id]=feedback[i]
             self._order.append(id)
         rd.shuffle(self.items)
 
