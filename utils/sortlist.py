@@ -23,7 +23,6 @@ class CustomSortList(Component):
                 self._feedback[id]=item[1]
                 self.items.append({"id": id,"content": item[0]})
             else:
-                self._feedback[id]=item
                 self.items.append({"id": id,"content": item})
             self._order.append(id)
         rd.shuffle(self.items)
