@@ -17,6 +17,8 @@ sortlist.load_items([rows[i]["nom"] for i in lst])
 ==
 
 text ==
+  <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+
 Classer ces premiers ministres de la Ve République du plus ancien au plus récent (selon la date d'entrée en fonction).
 ==
 
@@ -39,8 +41,8 @@ extrajs ==
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script>
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
 </script>
 ==
