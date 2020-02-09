@@ -80,17 +80,36 @@
 + On exécute **fseek(f, 0, SEEK_SET)** où **f** est le fichier ouvert.
 
 * Quels sont les enjeux relevés par un système de fichiers dans un système d'exploitation ?
-+ Le partage : assurer l'utilisation simultanée de plusieurs disques et/ou plusieurs fichiers.
-+ L'efficacité : optimisation via des caches, accès standardisés et uniformes.
-+ Les droits : protection dud système, protections entre les utilisateurs.
-+ La cohérence : assurer l'alignement et la cohérence du contenu des fichiers sur les disques.
 - L'humour : faire en sorte que l'ouverture et la fermeture des fichiers soient drôles.
 - L'affichage : pouvoir afficher à l'écran le contenu des fichiers.
 - La programmation : planifier les futures tâches que le C.P.U. devra traiter.
 - L'élagage : pouvoir couper les branches dans l'arborecence des fichiers.
++ Le partage : assurer l'utilisation simultanée de plusieurs disques et/ou plusieurs fichiers.
++ L'efficacité : optimisation via des caches, accès standardisés et uniformes.
++ Les droits : protection dud système, protections entre les utilisateurs.
++ La cohérence : assurer l'alignement et la cohérence du contenu des fichiers sur les disques.
 
+* Quels indices et informations peuvent aider Unix à déterminer le type d'un fichier ?
+- L'extension .txt garantie que le fichier est humainement lisible.
+- L'icone contraint le contenu du fichier.
+- Le nom du fichier garantie le type de son contenu.
+- L'extension garantie le type du fichier.
++ Le nom du fichier (XXXXrc, config, makefile, etc...).
++ L'extension donne un indice (.c, .py, .txt, .png, .jpg, .mp3, etc...).
++ Les droits.
++ Les premiers octets du fichier (magic numbers, ELF, etc...).
++ Le contenu du fichier (en dernier recours...).
++ Unix est permissif pour le nom des fichiers, on peut attribuer de mauvais noms.
+
+* Dans quel(s) repertoire(s) trouve-t-on les programmes exécutables de base d'Unix ?
+- tmp/
+- dtc/
+- dev/
+- mnt/
+- etc/
++ bin/
++ sbin/
 
 *
 *
-*
-*
+
