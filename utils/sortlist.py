@@ -31,10 +31,10 @@ class CustomSortList(Component):
         for i, e in enumerate(self.items):
             if e['id'] == self._order[i]:
                 e['css'] = 'success-state animated fadeIn'
-                css_state="badge-success"
+                css_state="success"
             else:
                 e['css'] = 'error-state animated fadeIn'
-                css_state="badge-danger"
+                css_state="danger"
                 errors += 1
             
             e['content']=  """<div class="d-flex justify-content-between align-items-center">
