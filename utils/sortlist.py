@@ -64,8 +64,3 @@ class CustomSortList(Component):
 # lien du tooltip qui ouvre la racine du site
 # disabled qui désactive le tooltip
 # extrajs
-
-
-
-
-
