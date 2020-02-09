@@ -39,7 +39,7 @@ class CustomSortList(Component):
             
             e['content']=  """<div class="d-flex justify-content-between align-items-center">
                 <span class="badge %s"> %s </span>
-                <a href="#" data-toggle="tooltip" class="alert alert-success alert-link" title="Some tooltip text!"> % s </a>
+                <a href="#" data-toggle="tooltip" class="alert-success alert-link" title="Some tooltip text!"> % s </a>
                 <span></span>
             </div>""" % (cssbadge,str(1+self._order.index(e['id'])),e['content'])
             
