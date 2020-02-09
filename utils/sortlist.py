@@ -59,7 +59,11 @@ class CustomSortList(Component):
 
 
 
-
+# grading
+# texte qui bouge quand on déplace un item
+# lien du tooltip qui ouvre la racine du site
+# disabled qui désactive le tooltip
+# extrajs
 
 
 
