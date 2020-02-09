@@ -15,6 +15,7 @@ class CustomSortList(Component):
 
     def load_items(self,lst):
         self._items0 = {}
+        self.items = []
         self._order = []
         for item in lst:
             id = str(uuid.uuid4())
@@ -26,9 +27,6 @@ class CustomSortList(Component):
                 self.items.append({"id": id,"content": item})
             self._order.append(id)
         rd.shuffle(self.items)
-        self.items=self._items0.copy()
-        for item in self.items:
-            item.pop('feedback')
 
     def eval(self):
         errors = 0
