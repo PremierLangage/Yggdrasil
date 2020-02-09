@@ -7,10 +7,9 @@ class CustomSortList(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-sort-list'
         self.decorator = 'CustomSortList'
-        self._items0 = []
         self.items = []
-        self.grading =[]
         self._order = []
+        self._feedback = {}
         super().__init__(**kwargs)
 
     def load_items(self,lst):
