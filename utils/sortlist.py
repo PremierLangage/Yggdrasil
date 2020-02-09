@@ -31,7 +31,8 @@ class CustomSortList(Component):
         n=len(self.items)
         orderans= [self._order.index(e['id']) for e in self.items]
         for i, e in enumerate(self.items):
-            if e['id'] == self._order[i]:
+            id=e['id']
+            if id == self._order[i]:
                 e['css'] = 'success-state animated fadeIn'
                 css_state="success"
             else:
@@ -49,7 +50,7 @@ class CustomSortList(Component):
                     <span class="badge badge-%s"> %s </span>
                     <span> %s </span>
                     <span></span>
-                </div>""" % (css_state,str(1+self._order.index(e['id'])),e['content'])
+                </div>""" % (css_state,str(1+self._order.index(id)),e['content'])
 
         tau,_=kendalltau(orderans,list(range(n)))
         score=int(round(max([0,tau])*100))
