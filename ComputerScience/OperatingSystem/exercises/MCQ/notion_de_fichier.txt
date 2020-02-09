@@ -10,6 +10,7 @@
 + Le clavier.
 + Une connexion internet.
 
+
 * Quelles informations sont stockées dans l'inode d'un fichier ?
 - Le nom du fichier.
 - Le chemin pour atteindre le fichier depuis la racine.
@@ -19,6 +20,7 @@
 + Des informations temporelles sur la création, dernière modification.
 + Le nombre de lien : nombre de ressources actives qui référencent le fichier.
 + Le propriétaire du fichier.
+
 
 * Parmi les types suivants, lesquels sont des types de fichiers Unix ?
 - Archive oubliée.
@@ -34,6 +36,7 @@
 + Lien symbolique.
 + Socket, connexion réseau.
 
+
 * Que peut-on trouver dans l'organisation logique d'un disque dur formaté en Ext4 ?
 - Le bloc print pour exploiter les imprimantes.
 - Un dictionnaire Python des sockets et connexions réseaux.
@@ -42,6 +45,7 @@
 + Un tableau d'inodes (certaines sont libres, certaines sont occupées).
 + Des blocs de données de taille fixe pour stocker les fichiers.
 + Un morceau réservé au système pour le démarrage de la machine (boot block).
+
 
 * Sélectionner les déclarations correctes sur les modes de bufferisation.
 - La bufferisation totale est appliquée sur l'entrée standard **stdin**.
@@ -52,6 +56,7 @@
 + La sortie standard d'erreur **stderr** n'est pas bufferisée.
 + La bufferisation permet d'éviter de soliciter des mécanismes lourds pour trop peu de données transférées.
 + L'entrée standard **stdin** est bufferisée par ligne.
+
 
 * Sélectionner les fonctionalités de redirection valides en Unix.
 - <2
@@ -69,6 +74,7 @@
 + 2>
 + 2&1>
 
+
 * Quelle(s) action(s) replace(nt) l'indicateur de position au début d'un fichier en C ?
 - On déplace le curseur clignotant avec la souris pour le remmettre au début.
 - C'est impossible, il faut absolument faire un nouveau fichier.
@@ -79,6 +85,7 @@
 + On appelle la fonction **rewind** sur le fichier ouvert.
 + On exécute **fseek(f, 0, SEEK_SET)** où **f** est le fichier ouvert.
 
+
 * Quels sont les enjeux relevés par un système de fichiers dans un système d'exploitation ?
 - L'humour : faire en sorte que l'ouverture et la fermeture des fichiers soient drôles.
 - L'affichage : pouvoir afficher à l'écran le contenu des fichiers.
@@ -88,6 +95,7 @@
 + L'efficacité : optimisation via des caches, accès standardisés et uniformes.
 + Les droits : protection dud système, protections entre les utilisateurs.
 + La cohérence : assurer l'alignement et la cohérence du contenu des fichiers sur les disques.
+
 
 * Quels indices et informations peuvent aider Unix à déterminer le type d'un fichier ?
 - L'extension .txt garantie que le fichier est humainement lisible.
@@ -101,6 +109,7 @@
 + Le contenu du fichier (en dernier recours...).
 + Unix est permissif pour le nom des fichiers, on peut attribuer de mauvais noms.
 
+
 * Dans quel(s) repertoire(s) trouve-t-on les programmes exécutables de base d'Unix ?
 - tmp/
 - dtc/
@@ -110,6 +119,7 @@
 + bin/
 + sbin/
 
+
 * Quel(s) sont les flux d'octets standard en Unix ?
 - setin, le flux conventionnel.
 - bloodout, le flux mensuel.
@@ -118,6 +128,7 @@
 + stdin, l'entrée standard.
 + stdout, la sortie standard.
 + stderr, la sortie standard d'erreur.
+
 
 * Que fais la commande : man printf >> log.txt ?
 - La commande rajoute la documentation de printf au début du fichier.
@@ -129,6 +140,7 @@
 + La commande laisse l'ancien contenu du fichier log.txt au début du fichier.
 + La commande rajoute la documentation de printf à la fin du fichier.
 
+
 * Que fais la commande : ./is_abr < abr.txt ?
 - La commmande exécute le programme is_abr avec les deux arguments '<' et 'abr.txt'.
 - La commande trouve les chaînes de texte contenues dans le fichier 'is_abr'.
@@ -138,3 +150,5 @@
 + les scanf dans le programme is_abr seront opérés sur le contenu du fichier 'abr.txt'.
 + Cela s'appelle faire une redirection en entrée du programme is_abr.
 + Le clavier n'est plus utile durant l'exécution de la commande.
+
+
