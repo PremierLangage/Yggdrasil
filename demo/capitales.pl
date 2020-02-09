@@ -11,7 +11,7 @@ import random as rd
 import csv
 
 with open('pays_europe.csv',newline='') as file:
-    all_rows=list(csv.DictReader(file,delimiter=','))
+    all_rows = list(csv.DictReader(file,delimiter=','))
     
 row = rd.choice(all_rows)
 
@@ -41,4 +41,5 @@ if input.value == capitale:
 else:
     grade = (0, capitale)
 ==
+
 
