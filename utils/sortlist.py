@@ -14,21 +14,16 @@ class CustomSortList(Component):
         super().__init__(**kwargs)
 
     def load_items(self,lst):
-        self._items0 = []
+        self._items0 = {}
         self._order = []
         for item in lst:
             id = str(uuid.uuid4())
             if isinstance(item,tuple):
-                self._items0.append({
-                    "id": id,
-                    "content": item[0],
-                    "feedback": item[1]
-                })
+                self._items0[id]={"content": item[0],"feedback": item[1]}
+                self.items.append({"id": id,"content": item[0]})
             else:
-                self._items0.append({
-                    "id": id,
-                    "content": item
-                })
+                self._items0[id]={"content": item}
+                self.items.append({"id": id,"content": item})
             self._order.append(id)
         rd.shuffle(self.items)
         self.items=self._items0.copy()
