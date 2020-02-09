@@ -50,7 +50,7 @@ class CustomSortList(Component):
                     <span class="badge badge-%s"> %s </span>
                     <span> %s </span>
                     <span></span>
-                </div>""" % (css_state,str(1+self._order.index(e['id'])), css_state,e['content'])
+                </div>""" % (css_state,str(1+self._order.index(e['id'])),e['content'])
 
         tau,_=kendalltau(orderans,list(range(n)))
         score=int(round(max([0,tau])*100))
