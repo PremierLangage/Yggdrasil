@@ -12,7 +12,7 @@ class CustomSortList(Component):
         self._order = []
         super().__init__(**kwargs)
 
-    def load_items(self,content,feedback):
+    def load_items(self,content,feedback=[]):
         self.items = []
         self._order = []
         self._feedback ={}
