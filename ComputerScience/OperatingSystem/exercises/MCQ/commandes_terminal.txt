@@ -64,4 +64,12 @@
 + cp
 
 
-* 
+* Quel code numérique corresponds au droit RWXR-XR-- ?
+- 721
+- 761
+- 764
+- 713
+- 731
+- 651
+- 741
++ 754
