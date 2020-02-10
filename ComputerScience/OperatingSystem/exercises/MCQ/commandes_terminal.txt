@@ -64,7 +64,7 @@
 + cp
 
 
-* Quel code numérique corresponds au droit RWXR-XR-- ?
+* Quel code numérique correspond aux droits **rwxr-xr--** ?
 - 721
 - 761
 - 764
@@ -73,3 +73,5 @@
 - 651
 - 741
 + 754
+
+
