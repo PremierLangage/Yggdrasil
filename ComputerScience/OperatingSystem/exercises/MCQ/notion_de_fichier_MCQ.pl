@@ -13,5 +13,3 @@ number_question=5
 min_option=4
 max_option=8
 
-
-
