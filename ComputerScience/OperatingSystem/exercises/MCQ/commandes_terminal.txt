@@ -1,0 +1,8 @@
+* Parmi les assertions suivantes, sélectionnez celle qui sont correctes ?
+- Les flux de données sont traités caractère par caractère dans un terminal Unix.
+- 
+- 
++ La plupart des commandes en terminal travaillent ligne par ligne.
++ L'entrée et la sortie standard sont bufferisés ligne par ligne.
++ 
++ 
