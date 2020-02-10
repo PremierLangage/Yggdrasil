@@ -6,3 +6,32 @@
 + L'entrée et la sortie standard sont bufferisés ligne par ligne.
 + En terminal Unix, tout est chaîne de caractères.
 + Les exécutions de commande Unix sont paramètrées par des arguments et l'entrée standard.
+
+* Sélectionner dans la liste suivante les programmes fonctionnels sans entrée (fonctionnant sans argument ou entrée standard).
+- mkdir
+- rm
+- sort
+- cut
+- grep
+- find
++ date
++ cal
++ pwd
++ whoami
+
+* Parmi les commandes suivantes, lesquelles permettent de visualiser un flux ou un fichier ?
+- find
+- sed
+- pwd
+- chmod
+- chgrp
+- mkdir
++ less
++ more
++ cat
++ tee 
++ head
++ tail
+
+* Parmi les commandes suivantes, lesquelles retournent le nombre de lignes du fichier foo ?
+
