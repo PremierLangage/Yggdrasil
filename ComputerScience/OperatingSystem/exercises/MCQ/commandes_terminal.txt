@@ -34,4 +34,13 @@
 + tail
 
 * Parmi les commandes suivantes, lesquelles retournent le nombre de lignes du fichier foo ?
-
+- wc -c foo
+- cat foo | cat | cat > /dev/null | wc -l
+- echo $(wc -c foo)
+- grep -line foo
++ wc -l foo
++ cat foo | wc -l
++ wc -l < foo
++ cat foo | cat | tee pouet | wc -l
++ cat foo | cat | cat 2> /dev/null | wc -l
++ echo $(wc -l foo)
