@@ -1,8 +1,8 @@
 * Parmi les assertions suivantes, sélectionnez celle qui sont correctes ?
 - Les flux de données sont traités caractère par caractère dans un terminal Unix.
-- 
-- 
+- Les commandes Unix travaille page par page.
+- Unix tente de proposer une commande différente pour chaque tâche évoluée ou simple.
 + La plupart des commandes en terminal travaillent ligne par ligne.
 + L'entrée et la sortie standard sont bufferisés ligne par ligne.
-+ 
-+ 
++ En terminal Unix, tout est chaîne de caractères.
++ Les exécutions de commande Unix sont paramètrées par des arguments et l'entrée standard.
