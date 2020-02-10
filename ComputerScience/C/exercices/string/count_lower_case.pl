@@ -8,7 +8,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 text==
 
 Écrire une fonction qui prend en argument une chaîne de caractères C
-en ascii et retourne le nombre de lettre minuscule dans cette chaîne. 
+en ascii et retourne le nombre de lettres minuscules dans cette chaîne. 
 
 ==
 
@@ -53,5 +53,6 @@ tests==
   ["Mot aléatoire", "".join([chr(65+random.randint(0,25)+(random.randint(0,1)*(97-65))) for i in range(random.randint(10, 30))]), ""],
   ["Mot aléatoire", "".join([chr(65+random.randint(0,25)+(random.randint(0,1)*(97-65))) for i in range(random.randint(10, 30))]), ""] ]
 ==
+
 
 
