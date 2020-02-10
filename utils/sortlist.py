@@ -42,7 +42,7 @@ class CustomSortList(Component):
             if id in self._feedback:
                 e['content']=  """<div class="d-flex justify-content-between align-items-center">
                     <span class="badge badge-%s"> %s </span>
-                    <a href="#" data-toggle="tooltip" class="alert-%s alert-link" title="%s"> % s </a>
+                    <a href="#" onclick="event.preventDefault()" data-toggle="tooltip" class="alert-%s alert-link" title="%s"> % s </a>
                     <span></span>
                 </div>""" % (css_state,str(1+self._order.index(e['id'])), css_state,self._feedback[id],e['content'])
             else:
@@ -64,3 +64,4 @@ class CustomSortList(Component):
 # lien du tooltip qui ouvre la racine du site
 # disabled qui désactive le tooltip
 # extrajs
+
