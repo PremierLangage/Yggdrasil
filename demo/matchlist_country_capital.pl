@@ -4,18 +4,19 @@ title==
 Correspondances : Pays et Capitales
 ==
 
-@ country_data.csv [data.csv]
+@ pays_europe.csv
 
 before==
 import random as rd
 import csv
 
-with open('data.csv',newline='') as file:
-    rows=list(csv.DictReader(file,delimiter=','))
+with open('pays_europe.csv',newline='') as file:
+    all_rows=list(csv.DictReader(file,delimiter=','))
+    
+sample_rows=rd.sample(all_rows,4)
 
-items=rd.sample(rows,4)
-source=[item['country'] for item in items]
-target=[item['capital'] for item in items]
+source=[item['pays'] for item in sample_rows]
+target=[item['capitale'] for item in sample_rows]
 
 match.load_items(source,target)
 ==
@@ -23,5 +24,6 @@ match.load_items(source,target)
 text==
 Relier chaque pays à sa capitale.
 ==
+
 
 
