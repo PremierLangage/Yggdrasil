@@ -105,7 +105,7 @@ var string = "{L}'{élève} {n}'{a} {pas} {fait} {son} {travail}.";
 var index = -1;
 string=string.replace(/\{([^\{\}]*)\}/g, function(match,p) {
   index++;
-  return `<span data-index="${index}">${p}</span>`;
+  return `<span id="${index}">${p}</span>`;
 });
 alert(string);
 </script>
