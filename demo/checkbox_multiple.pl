@@ -1,4 +1,4 @@
-extends = /models/basic.pl
+extends = /model/basic.pl
 
 title = QCM : Multiples de 3
 
@@ -27,5 +27,6 @@ form ==
 evaluator ==
 grade = checkbox.eval()
 ==
+
 
 
