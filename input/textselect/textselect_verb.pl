@@ -16,7 +16,14 @@ Artur a horreur de la marche à pied.
 selectable.selectable % true
 
 before==
-
+def transform(string):
+    lst=re.findall(r"\{[^\{]*\}|\[[^\[]*\]",string)
+    selection=[]
+    for i,s in enumerate(lst):
+        if s[0]=="[":
+            selection.append(i)
+    string2=re.sub(r"\[([^\[]*)\]",r"{\1}",string)
+    return (string2,selection)
 ==
 
 form==
