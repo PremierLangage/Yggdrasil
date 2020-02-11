@@ -5,6 +5,7 @@ introduction ==
 ==
 
 @ /demo/add_int.pl
+@ /demo/input_capitale.pl
 @ /demo/radio_capitals.pl
 @ /demo/checkbox_multiple.pl
 @ /demo/matchlist_country_capital.pl
