@@ -18,11 +18,8 @@ s=number[str(sol)]
 ==
 
 text ==
-{{audiobutton | safe}} Quel nombre entends-tu ?
-==
-
-audiobutton ==
 <button onclick="playAudio()" class="btn btn-info btn-sm"><i class="fas fa-volume-up"></i></button>
+ Quel nombre entends-tu ?
 ==
 
 extrajs==
@@ -42,6 +39,7 @@ if input.value==sol:
 else:
     grade=(0,str(sol))
 ==
+
 
 
 
