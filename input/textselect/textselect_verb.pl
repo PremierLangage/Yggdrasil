@@ -25,7 +25,7 @@ form==
  unselectable="on"
  onselectstart="return false;" 
  onmousedown="return false;">
-{{htmltextselect | safe}}
+
 </div>
 ==
 
