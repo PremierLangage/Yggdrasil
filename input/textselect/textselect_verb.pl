@@ -67,6 +67,28 @@ extracss==
 
 extrajs ==
 <script>
+list=[]
+var designmode="{{designmode}}";
+if (designmode=="on") {
+	document.getElementById('form_1').type = 'text';
+	document.getElementById('form_1').readOnly = true;
+}
+var ColorHighlight="rgb(176, 196, 222)"
+var words = document.querySelectorAll("#textselect span")
+for (i = 0; i < words.length; i++) {
+	words[i].addEventListener('click', function() {
+		if (this.style.backgroundColor==ColorHighlight) {
+			this.style.backgroundColor="transparent";
+			list.splice( list.indexOf(this.id), 1 ); 
+		} else {
+			this.style.backgroundColor=ColorHighlight;
+			list.push(this.id); 
+		}
+		document.getElementById('form_1').value = list
+   	});
+}
+</script>
+<script>
 var string = "{Ô} {rage} ! {Ô} {désespoir} ! {Ô} {vieillesse} {ennemie} !<br> {N'}{ai}-{je} {donc} {tant} {vécu} {que} {pour} {cette} {infamie} ?";
 var index = -1;
 string=string.replace(/\{([^\{\}]*)\}/g, function(match,p) {
