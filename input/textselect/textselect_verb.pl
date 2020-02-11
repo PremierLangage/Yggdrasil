@@ -93,7 +93,7 @@ var string = "{Ô} {rage} ! {Ô} {désespoir} ! {Ô} {vieillesse} {ennemie}�
 var index = -1;
 string=string.replace(/\{([^\{\}]*)\}/g, function(match,p) {
   index++;
-  return `<span data-index="${index}">${p}</span>`;
+  return `<span id="${index}">${p}</span>`;
 });
   document.getElementById("textselect").innerHTML = string;
 </script>
@@ -105,7 +105,7 @@ var string = "{L}'{élève} {n}'{a} {pas} {fait} {son} {travail}.";
 var index = -1;
 string=string.replace(/\{([^\{\}]*)\}/g, function(match,p) {
   index++;
-  return `<span id="${index}">${p}</span>`;
+  return `<span data-index="${index}">${p}</span>`;
 });
 alert(string);
 </script>
