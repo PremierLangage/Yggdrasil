@@ -8,8 +8,9 @@ text ==
 Identifier le verbe conjugué la phrase ci-dessous.
 ==
 
-selectable =: Text
-selectable.text== 
+selectable =: TextSelect
+
+selectable.text == 
 Artur a horreur de la marche à pied.
 ==
 selectable.selectable % true
