@@ -13,10 +13,10 @@ with open('pays_europe.csv',newline='') as file:
     
 sample_rows=rd.sample(all_rows,4)
 
-pays=sample_rows[0]['country']
+pays=sample_rows[0]['pays']
 article=sample_rows[0]['article']
 
-radio.load_choices([row['capital'] for row in sample_rows])
+radio.load_choices([row['capitale'] for row in sample_rows])
 radio.set_sol_by_index(0)
 radio.shuffle()
 
@@ -41,5 +41,6 @@ form ==
 evaluator ==
 grade = radio.eval()
 ==
+
 
 
