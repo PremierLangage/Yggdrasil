@@ -18,6 +18,8 @@ selectable.selectable % true
 before==
 s="Artur {{a}} horreur de la marche à pied."
 
+import re
+
 def bracket_words(string):
     lst=re.findall(r"\{[^\{\}]*\}|\{\{[^\}]*\}\}|\[[^\]]*\]|[^\{\}\[\]]+",string)
     for i in range(len(lst)):
