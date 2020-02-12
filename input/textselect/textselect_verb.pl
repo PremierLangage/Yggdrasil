@@ -36,12 +36,13 @@ def read_text_bracket(string):
     k=0
     for i in range(len(lst)):
         s=lst[i]
-        if s[0]=="{" and s[10]=="{":
-            selection.append(k)
-            lst[i]=s[1:-1]
-            k+=1
-        elif s[0]=="{":
-            k+=1
+        if s[0]=="{"
+            if len(s)> 2 and s[1]=="{":
+                selection.append(k)
+                lst[i]=s[1:-1]
+                k+=1
+            else:
+                k+=1
     return ("".join(lst),selection)
 
 s,_=read_text_bracket(bracket_words(s))
