@@ -44,7 +44,6 @@ def read_text_bracket(string):
             k+=1
     return ("".join(lst),selection)
 
-s,_=read_text_bracket( bracket_words(s))
 ==
 
 text==
