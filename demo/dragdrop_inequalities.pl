@@ -27,6 +27,7 @@ s=str(globals())
 ==
 
 text==
+{{s}}
 ==
 
 form==
