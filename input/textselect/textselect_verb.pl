@@ -19,17 +19,29 @@ before==
 import re
 s="Artur a horreur de la marche à pied."
 
-def tr(string):
-    return re.sub("(\w+)", r"{\1}",string)
-
-def transform(string):
-    lst=re.findall(r"\{[^\{]*\}|\[[^\[]*\]",string)
-    selection=[]
-    for i,s in enumerate(lst):
+def bracket_words(string):
+    lst=re.findall(r"\{[^\{\}]*\}|\{\{[^\}]*\}\}|\[[^\]]*\]|[^\{\}\[\]]+",string)
+    for i in range(len(lst)):
+        s=lst[i]
         if s[0]=="[":
-            selection.append(i)
-    string2=re.sub(r"\[([^\[]*)\]",r"{\1}",string)
-    return (string2,selection)
+            lst[i]=s[1:-1]
+        elif s[0]!="{":
+            lst[i]=re.sub(r"(\w+)", r"{\1}",s)
+    return "".join(lst)
+    
+def read_text_bracket(string):
+    lst=re.findall(r"\{[^\{\}]*\}|\{\{[^\}]*\}\}|[^\{\}]+",string)
+    selection=[]
+    k=0
+    for i in range(len(lst)):
+        s=lst[i]
+        if s[0:2]=="{{":
+            selection.append(k)
+            lst[i]=s[1:-1]
+            k+=1
+        elif s[0]=="{":
+            k+=1
+    return ("".join(lst),selection)
 
 s=tr(s)
 ==
