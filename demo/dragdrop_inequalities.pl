@@ -7,7 +7,7 @@ builder =@ /builder/before2.py
 title = 
 
 before==
-from dragdrop import Drop
+from dragdrop import Drop,Label
 drag1 = Label(content="$$\in$$")
 drag2 = Label(content="$$\subset$$")
 
