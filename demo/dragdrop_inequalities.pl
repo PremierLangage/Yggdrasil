@@ -11,6 +11,12 @@ drag2.content = $$\subset$$
 title = 
 
 before==
+sets = [
+    ("1", drag1.cid, "{1, 2, 3}"),
+    ("{1}", drag2.cid, "{ {1}, 2, 3}"),
+    ("{1, 1}", drag2.cid, "{ {1, 2}, 3}"),
+    ("3", drag1.cid, "{1, 2, 3}"),
+]
 
 drops = []
 for i in range(len(sets)):
