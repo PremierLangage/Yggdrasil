@@ -20,7 +20,7 @@ import re
 s="Artur a horreur de la marche à pied."
 
 def tr(string):
-    return re.replace("\w+", "{$&}",string)
+    return re.sub("\w+", "{$&}",string)
 
 def transform(string):
     lst=re.findall(r"\{[^\{]*\}|\[[^\[]*\]",string)
