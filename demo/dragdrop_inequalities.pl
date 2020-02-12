@@ -1,5 +1,5 @@
 extends = /Mathematics/template/mathbasic.pl
-extends = finite_map_.pl
+extends = /Mathematics/exercises/foundations/maps/finite_map_.pl
 
 @ /utils/dragdrop.py [dragdrop.py]
 
