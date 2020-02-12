@@ -8,6 +8,8 @@ drag1.content = $$\in$$
 drag2 =: DragDrop
 drag2.content = $$\subset$$
 
+title = 
+
 before==
 
 drops = []
