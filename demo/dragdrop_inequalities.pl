@@ -19,10 +19,11 @@ sets = [
     ("3", drag1.cid, "{1, 2, 3}"),
 ]
 
-drops = [global Drop() for i in range(4)]
-for drop in drops:
-    globals()[drop.id] = drop
+drops = [Drop() for i in range(4)]
+#for drop in drops:
+#    globals()[drop.id] = drop
 
+s=str(globals())
 ==
 
 text==
