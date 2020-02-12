@@ -16,6 +16,7 @@ Artur a horreur de la marche à pied.
 selectable.selectable % true
 
 before==
+import re
 s="Artur a horreur de la marche à pied."
 
 def tr(string):
