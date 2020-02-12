@@ -8,6 +8,7 @@ title =
 
 before==
 from dragdrop import Drop,Label
+
 drag1 = Label(content="$$\in$$")
 drag2 = Label(content="$$\subset$$")
 
@@ -18,11 +19,8 @@ sets = [
     ("3", drag1.cid, "{1, 2, 3}"),
 ]
 
-drops = []
-for i in range(len(sets)):
-    drop = Drop()
-    drops.append(drop)
-    globals()[drop.id] = drop
+drops = [Drop() for i in range(4)]
+
 
 ==
 
