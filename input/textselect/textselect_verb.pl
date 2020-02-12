@@ -16,7 +16,7 @@ Artur a horreur de la marche à pied.
 selectable.selectable % true
 
 before==
-s="Artur {{a}} horreur de la marche à pied."
+s="Artur {a} horreur de la marche à pied."
 
 import re
 
