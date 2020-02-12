@@ -13,6 +13,8 @@ title =
 
 before==
 from dragdrop import Drop
+drag1 = Label(content="$$\in$$")
+drag2 = Label(content="$$\subset$$")
 
 sets = [
     ("1", drag1.cid, "{1, 2, 3}"),
