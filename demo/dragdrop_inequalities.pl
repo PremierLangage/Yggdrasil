@@ -12,7 +12,7 @@ drag2.content = $$\subset$$
 title = 
 
 before==
-from dragdrop import Label
+from dragdrop import Drop
 
 sets = [
     ("1", drag1.cid, "{1, 2, 3}"),
