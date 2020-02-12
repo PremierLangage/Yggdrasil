@@ -23,10 +23,7 @@ sets = [
 
 drops = []
 for i in range(len(sets)):
-    drop = DragDrop(
-        id=f"drop{i}",
-        droppable=True
-    )
+    drop = Drop(id=f"drop{i}")
     drops.append(drop)
 
 ==
