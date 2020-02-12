@@ -16,8 +16,7 @@ Artur a horreur de la marche à pied.
 selectable.selectable % true
 
 before==
-import re
-s="Artur a horreur de la marche à pied."
+s="Artur {{a}} horreur de la marche à pied."
 
 def bracket_words(string):
     lst=re.findall(r"\{[^\{\}]*\}|\{\{[^\}]*\}\}|\[[^\]]*\]|[^\{\}\[\]]+",string)
@@ -43,7 +42,7 @@ def read_text_bracket(string):
             k+=1
     return ("".join(lst),selection)
 
-s=tr(s)
+s,_=read_text_bracket( bracket_words(s))
 ==
 
 text==
@@ -144,4 +143,5 @@ string=string.replace(/\{([^\{\}]*)\}/g, function(match,p) {
 alert(string);
 </script>
 ==
+
 
