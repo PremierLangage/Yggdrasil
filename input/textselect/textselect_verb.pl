@@ -36,7 +36,7 @@ def read_text_bracket(string):
     k=0
     for i in range(len(lst)):
         s=lst[i]
-        if s[0]=="{"
+        if s[0]=="{":
             if len(s)> 2 and s[1]=="{":
                 selection.append(k)
                 lst[i]=s[1:-1]
