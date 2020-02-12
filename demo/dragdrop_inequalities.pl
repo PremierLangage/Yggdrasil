@@ -24,7 +24,7 @@ drops = [Drop() for i in range(4)]
 for drop in drops:
     globals()[drop.id] = drop
 
-s=str(globals().copy())
+s=str(globals().keys())
 
 ==
 
