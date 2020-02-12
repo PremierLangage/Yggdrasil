@@ -12,7 +12,7 @@ n=randint(4,5)
 
 drag=[]
 for i in range(1,n+1):
-    globals()[f"drop{i}"] = DragDrop(id=f"drop{i}",droppable=True)
+    globals()[f"drop{i}"] = Label(id=f"drop{i}",droppable=True)
     drag.append(globals()[f"drop{i}"])
 
 drop=[]
