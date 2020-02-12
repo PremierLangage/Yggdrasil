@@ -16,6 +16,11 @@ Artur a horreur de la marche à pied.
 selectable.selectable % true
 
 before==
+s="Artur a horreur de la marche à pied."
+
+def tr(string)
+    return re.replace("\w+", "{$&}",string)
+
 def transform(string):
     lst=re.findall(r"\{[^\{]*\}|\[[^\[]*\]",string)
     selection=[]
@@ -24,6 +29,12 @@ def transform(string):
             selection.append(i)
     string2=re.sub(r"\[([^\[]*)\]",r"{\1}",string)
     return (string2,selection)
+
+s=tr(s)
+==
+
+text==
+{{s}}
 ==
 
 form==
