@@ -3,11 +3,6 @@ grader  =@ /grader/evaluator2.py
 builder =@ /builder/before2.py
 @ /utils/dragdrop.py [dragdrop.py]
 
-drag1 =: DragDrop
-drag1.content = $$\in$$
-
-drag2 =: DragDrop
-drag2.content = $$\subset$$
 
 title = 
 
