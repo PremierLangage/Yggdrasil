@@ -23,7 +23,7 @@ sets = [
 
 drops = []
 for i in range(len(sets)):
-    drop = Drop(id=f"drop{i}")
+    drop = Drop()
     drops.append(drop)
     globals()[drop.id] = drop
 
