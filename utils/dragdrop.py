@@ -1,10 +1,17 @@
 from components import Component
 
-class CustomDrag(Component):
-
+class Drop(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-drag-drop'
         self.decorator = 'CustomDrag'
-        self.content = "1"
+        self.droppable = True
         super().__init__(**kwargs)
+
+class Label(Component):
+    def __init__(self, **kwargs):
+        self.selector = 'c-drag-drop'
+        self.decorator = 'CustomDrag'
+        self.droppable = False
+        super().__init__(**kwargs)
+
 
