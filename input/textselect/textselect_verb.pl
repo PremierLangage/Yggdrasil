@@ -18,7 +18,7 @@ selectable.selectable % true
 before==
 s="Artur a horreur de la marche à pied."
 
-def tr(string)
+def tr(string):
     return re.replace("\w+", "{$&}",string)
 
 def transform(string):
