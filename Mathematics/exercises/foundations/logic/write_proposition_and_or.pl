@@ -64,11 +64,11 @@ drag6.content = divisibles par 5
 form ==
 L'ensemble $! {{latexset}} !$ est l'ensemble des nombres entre 1 et {{n}} qui sont {{ drop1 | component }} {{ drop2 | component }} {{ drop3 | component }}. <br><br>
 
-{% macro mymacro(lst) -%}
+{% macro mymacro(lst) %}
 {% for e in lst %}
 {{ e|component }}
 {% endfor %}
-{%- endmacro %}
+{% endmacro %}
 
 {% mymacro(drags) -%}
 ==
