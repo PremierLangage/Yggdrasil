@@ -9,7 +9,7 @@ title =
 before==
 from dragdrop import Drop,Label
 
-drag1 = Label(content="\>")
+drag1 = Label(content=">")
 drag2 = Label(content="<")
 
 chiffres= [(2,4),(7,6),(5,3),(6,9)]
