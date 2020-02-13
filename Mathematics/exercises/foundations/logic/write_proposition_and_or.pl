@@ -68,7 +68,7 @@ L'ensemble $! {{latexset}} !$ est l'ensemble des nombres entre 1 et {{n}} qui so
 {{ e}}
 {% endfor %}
 {%- endmacro %}
-<p>{{ input([1,2,3]) }}</p>
+<p>{{ input(drags) }}</p>
 ==
 
 old ==
