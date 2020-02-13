@@ -71,7 +71,6 @@ L'ensemble $! {{latexset}} !$ est l'ensemble des nombres entre 1 et {{n}} qui so
 {%- endmacro %}
 
 {% mymacro(drags) -%}
-
 ==
 
 
