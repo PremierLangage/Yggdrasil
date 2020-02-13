@@ -63,9 +63,9 @@ drag6.content = divisibles par 5
 
 form ==
 {% macro mymacro(lst) -%}
- {% for e in lst %}
-{{ e |component}}
-{% endfor %}
+    {% for e in lst %}
+        {{ e |component}}
+    {% endfor %}
 {%- endmacro %}
 
 
