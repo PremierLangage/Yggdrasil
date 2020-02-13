@@ -27,7 +27,7 @@ Conjuguer le verbe **{{verbe_inf}}** au présent avec le pronom indiqué.
 
 form ==
 <div class="d-flex align-items-center">
-  <div class="align-self-center">{{pronom}} &nbsp; </div>
+  <div class="align-self-top">{{pronom}} &nbsp; </div>
   <div class="flex-grow-1">{{input|component}}</div>
 </div>
 ==
@@ -38,6 +38,7 @@ if input.value==verbe_conj:
 else:
     grade=(0,"")
 ==
+
 
 
 
