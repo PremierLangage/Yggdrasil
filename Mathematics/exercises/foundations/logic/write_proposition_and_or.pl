@@ -72,12 +72,6 @@ L'ensemble $! {{latexset}} !$ est l'ensemble des nombres entre 1 et {{n}} qui so
 {{ mymacro(drags) }}
 ==
 
-old ==
-{% for e in lst %}
-{{ e|component }}
-{% endfor %}
-==
-
 evaluator ==
 ans=drop1.content+" "+drop2.content+" "+drop3.content
 if ans==sol1 or ans==sol2:
