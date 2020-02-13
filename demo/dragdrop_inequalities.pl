@@ -44,17 +44,4 @@ form==
 ==
 
 evaluator==
-errors = 0
-for i, e in enumerate(sets):
-    drop = globals()[f'drop{i}']
-    drop.css = 'success-state animated rotateIn'
-    if drop.droppedId != e[1]:
-        drop.css = 'error-state animated pulse infinite'
-        errors += 1
-
-n = len(sets)
-if errors == 0:
-    grade = (100, f'<span class="success-state animated pulse infinite">{n}/{n}</span>')
-else:
-    grade = (100, f'<span class="error-state animated pulse infinite">{n - errors}/{n}</span>')
 ==
