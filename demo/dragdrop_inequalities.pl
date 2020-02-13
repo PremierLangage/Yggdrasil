@@ -12,12 +12,7 @@ from dragdrop import Drop,Label
 drag1 = Label(content="$$\in$$")
 drag2 = Label(content="$$\subset$$")
 
-sets = [
-    ("1", drag1.cid, "{1, 2, 3}"),
-    ("{1}", drag2.cid, "{ {1}, 2, 3}"),
-    ("{1, 1}", drag2.cid, "{ {1, 2}, 3}"),
-    ("3", drag1.cid, "{1, 2, 3}"),
-]
+chiffres= [(2,4),(2,4),(2,4),(2,4)]
 
 drops = [Drop() for i in range(4)]
 
@@ -38,11 +33,11 @@ form==
 <br/>
 
 <ul>
-    {% for e in sets %}
+    {% for i in range(4) %}
     <li>
-        {{ e[0] }}
-        {{ drops[loop.index0]|component }}
-        {{ e[2] }}
+        {{ chiffres[i][0] }}
+        {{ drops[i]|component }}
+        {{ chiffres[i][1] }}
     </li>
     {% endfor %}
 </ul>
