@@ -22,6 +22,16 @@ text ==
 extracss==
 <style>
 .jsxgraph-component {
+    width:90vw;
+    height:90vw;
+    margin: 0 auto;
+}
+</style>
+==
+
+extracss2==
+<style>
+.jsxgraph-component {
     max-width:300px;
     width:90vw;
     max-height:300px;
@@ -30,3 +40,5 @@ extracss==
 }
 </style>
 ==
+
+
