@@ -9,10 +9,10 @@ title =
 before==
 from dragdrop import Drop,Label
 
-drag1 = Label(content="$$\in$$")
-drag2 = Label(content="$$\subset$$")
+drag1 = Label(content=">")
+drag2 = Label(content="<")
 
-chiffres= [(2,4),(2,4),(2,4),(2,4)]
+chiffres= [(2,4),(7,6),(5,3),(6,9)]
 
 drops = [Drop() for i in range(4)]
 
