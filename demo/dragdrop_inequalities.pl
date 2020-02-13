@@ -16,8 +16,8 @@ chiffres= [(2,4),(7,6),(5,3),(6,9)]
 
 drops = [Drop() for i in range(4)]
 
-#for drop in drops:
-#    globals()[drop.id] = drop
+for drop in drops:
+    globals()[drop.id] = drop
 
 s=str(globals().keys())
 
