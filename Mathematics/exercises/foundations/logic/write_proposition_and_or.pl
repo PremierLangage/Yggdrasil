@@ -4,6 +4,9 @@ title = Ecrire une proposition
 
 lang = fr
 
+
+author = Moi
+
 before ==
 n=randint(20,30)
 numbers=set(range(1,n+1))
@@ -82,6 +85,4 @@ else:
     score=0
 feedback=""
 ==
-
-
 
