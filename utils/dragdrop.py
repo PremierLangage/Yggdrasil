@@ -11,6 +11,6 @@ def Drops(arg):
     if isinstance(arg,int):
         return [Drop() for i in range(arg)]
 
-def Labels(**kwargs):
+def Labels(arg):
     if isinstance(arg,int):
         return [Label(content=content) for content in arg]
