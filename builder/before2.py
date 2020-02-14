@@ -37,12 +37,11 @@ if __name__ == "__main__":
         sys.exit(1)
 
     # sync components defined inside a list
-    comp={}
     for k in list(dic.keys()):
         if isinstance(dic[k],list):
             for e in dic[k]:
-                comp['list']=isinstance(e, Component)
-                #    dic[e['id']] = e
+                if isinstance(e, Component):
+                    dic[e.id] = e
 
     if 'buttons' not in dic:
         dic['buttons'] = ["submit","reroll"]
@@ -52,7 +51,7 @@ if __name__ == "__main__":
 
     dic['attempt']=1
 
-    dic['text']=comp.copy()
+    dic['text']=dic.copy()
 
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
