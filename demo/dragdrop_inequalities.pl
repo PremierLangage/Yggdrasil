@@ -8,7 +8,7 @@ before==
 
 chiffres= [(2,4),(7,6),(5,3),(6,9)]
 
-drops = [DragDrop(id=st(i)) for i in range(4)]
+drops = [DragDrop(id=str(i)) for i in range(4)]
 
 for drop in drops:
     globals()[drop.id] = drop
