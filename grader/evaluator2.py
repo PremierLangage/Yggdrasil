@@ -4,6 +4,7 @@
 import sys
 from sandboxio import output, get_context
 from components import Component
+from dragdrop import Drop,Label
 
 class StopEvaluatorExec(Exception):
     pass
