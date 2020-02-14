@@ -35,7 +35,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     # sync components defined inside a list
-    for k in dic.keys():
+    for k in dic.keys().copy():
         if isinstance(dic[k],list):
             dic['coucou']="coucou"
             for e in dic[k]:
