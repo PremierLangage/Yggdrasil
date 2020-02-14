@@ -34,7 +34,7 @@ if __name__ == "__main__":
         print(("Player 'before' need a script declared in the key 'before'."),file = sys.stderr)
         sys.exit(1)
 
-    #
+    # sync list of components
     for k in dic.keys():
         if isinstance(dic[k],list):
             for e in dic[k]:
