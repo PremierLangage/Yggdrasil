@@ -9,7 +9,7 @@ before==
 from dragdrop import Drop
 chiffres= [(2,4),(7,6),(5,3),(6,9)]
 
-drops = [DragDrop(content="3") for i in range(4)]
+drops = [Drop(content="3") for i in range(4)]
 ==
 
 text==
