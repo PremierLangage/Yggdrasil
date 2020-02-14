@@ -28,11 +28,18 @@ text==
 ==
 
 form==
-{{ drag1|component }}
-{{ drag2|component }}
+
 <br/>
 
-
+<ul>
+    {% for i in range(4) %}
+    <li>
+        {{ chiffres[i][0] }}
+        {{ drops[i]|component }}
+        {{ chiffres[i][1] }}
+    </li>
+    {% endfor %}
+</ul>
 ==
 
 evaluator==
