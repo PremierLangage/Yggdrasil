@@ -10,6 +10,7 @@ from dragdrop import Drop,Label,Drops,Labels
 chiffres= [(2,4),(7,6),(5,3),(6,9)]
 lt="\<"
 gt="\>"
+sol=[lt,gt,gt,lt]
 label=Labels([lt,gt])
 drop10=Drop()
 drops = Drops(4)
