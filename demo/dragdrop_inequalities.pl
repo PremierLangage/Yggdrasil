@@ -6,7 +6,7 @@ builder =@ /builder/before2.py
 title = 
 
 before==
-from dragdrop import Drop,Label
+from dragdrop import Drop,Label,Drops,Labels
 chiffres= [(2,4),(7,6),(5,3),(6,9)]
 label1 = Label(content="f")
 label2 = Label(content="g")
