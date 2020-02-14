@@ -1,8 +1,8 @@
-from components import Component
+from components import Component,DragDrop
 import uuid
 
 
-class Drop(Component):
+class Drop(DragDrop):
     def __init__(self, **kwargs):
         if 'id' not in kwargs:
             kwargs['id']=str(uuid.uuid4())
@@ -11,7 +11,7 @@ class Drop(Component):
         self.droppable = True
         super().__init__(**kwargs)
 
-class Label(Component):
+class Label(DragDrop):
     def __init__(self, **kwargs):
         if 'id' not in kwargs:
             kwargs['id']=str(uuid.uuid4())
@@ -20,5 +20,6 @@ class Label(Component):
         self.decorator = 'CustomDrag'
         self.droppable = False
         super().__init__(**kwargs)
+
 
 
