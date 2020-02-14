@@ -19,12 +19,10 @@ drops = [DragDrop(id=str(i),droppable=True,content="3") for i in range(4)]
 #for drop in drops:
 #    globals()[drop.id] = drop
 
-s=globals().copy()
-
 ==
 
 text==
-{{s}}
+
 ==
 
 form==
