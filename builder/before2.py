@@ -39,7 +39,7 @@ if __name__ == "__main__":
     for k in list(dic.keys()):
         if isinstance(dic[k],list):
             for e in dic[k]:
-                comp['list']=isinstance(e, dict)
+                comp['list']=type(e)
                 #    dic[e['id']] = e
 
     if 'buttons' not in dic:
