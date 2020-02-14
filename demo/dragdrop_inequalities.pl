@@ -9,15 +9,15 @@ title =
 before==
 from dragdrop import Drop,Label
 
-#drag1 = Label(content=r"\>")
-#drag2 = Label(content="<")
+drag1 = Label(content=r"\>")
+drag2 = Label(content="<")
 
 chiffres= [(2,4),(7,6),(5,3),(6,9)]
 
-drops = [Drop() for i in range(4)]
+#drops = [Drop() for i in range(4)]
 
-for drop in drops:
-    globals()[drop.id] = drop
+#for drop in drops:
+#    globals()[drop.id] = drop
 
 #s=str(globals().keys())
 
