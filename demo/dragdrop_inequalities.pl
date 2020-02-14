@@ -8,6 +8,8 @@ title =
 before==
 from dragdrop import Drop,Label,Drops,Labels
 chiffres= [(2,4),(7,6),(5,3),(6,9)]
+lt="\<"
+gt=">"
 label=Labels(['g','h'])
 drop10=Drop()
 drops = Drops(4)
@@ -36,6 +38,6 @@ form==
 
 evaluator==
 f=str([e.content for e in drops])
-grade=(100,f)
+grade=DragDropeval(drop,
 ==
 
