@@ -37,7 +37,6 @@ if __name__ == "__main__":
     # sync components defined inside a list
     for k in list(dic.keys()):
         if isinstance(dic[k],list):
-            dic['coucou']="coucou"
             for e in dic[k]:
                 if isinstance(e, dict) and 'cid' in e:
                     dic[e['id']] = e
