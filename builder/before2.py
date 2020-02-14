@@ -34,6 +34,13 @@ if __name__ == "__main__":
         print(("Player 'before' need a script declared in the key 'before'."),file = sys.stderr)
         sys.exit(1)
 
+    #
+    for k in dic.keys():
+        if isinstance(dic[k],list):
+            for e in dic[k]:
+                if isinstance(e, dict) and 'cid' in e:
+                    dic[e['cid']] = v
+
     if 'buttons' not in dic:
         dic['buttons'] = ["submit","reroll"]
 
@@ -46,6 +53,7 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
 
     sys.exit(0)
+
 
 
 
