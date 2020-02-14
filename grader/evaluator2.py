@@ -63,6 +63,11 @@ if __name__ == "__main__":
         sys.exit(1)
     
     dic = get_context()
+        for k in list(dic.keys()):
+            if isinstance(dic[k],list):
+                for i in range(len(dic[k])):
+                    if isinstance(dic[k][i], dict) and 'cid' in dic[k][i]:   
+                        dic[k][i] = Component.deserialize(dic[k][i], dic[k][i])
 
     if 'evaluator' in dic:
         glob = {}
@@ -95,6 +100,7 @@ if __name__ == "__main__":
             ffeedback=format_feedback_lightscore(score,feedback)
 
     output(score, ffeedback, dic)
+
 
 
 
