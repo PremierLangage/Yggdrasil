@@ -14,3 +14,6 @@ def Drops(arg):
 def Labels(arg):
     if isinstance(arg,list):
         return [Label(content=content) for content in arg]
+
+def DragDropeval(drop,sol):
+    
