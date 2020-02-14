@@ -44,6 +44,6 @@ form==
 ==
 
 evaluator==
-grade=(100,drops[0].value)
+grade=(100,drag1.value)
 ==
 
