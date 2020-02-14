@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
     dic['attempt']=1
 
-    dic['text']=str(dic)
+    dic['text']=dic
 
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
