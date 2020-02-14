@@ -36,6 +36,6 @@ form==
 
 evaluator==
 f=str([e.content for e in drops])
-grade=DragDropeval(drop,sol)
+grade=DragDropeval(drops,sol)
 ==
 
