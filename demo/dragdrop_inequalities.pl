@@ -44,5 +44,6 @@ form==
 ==
 
 evaluator==
+grade=(100,drops[0].value)
 ==
 
