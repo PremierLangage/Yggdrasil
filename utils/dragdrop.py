@@ -23,4 +23,5 @@ def DragDropeval(drop,sol):
             drop[i].css = "success-state anim-flip"
         else:
             score=0
-            drop[i].css = "error-state anim-flip" 
+            drop[i].css = "error-state anim-flip"
+    return(score,feedback)
