@@ -3,6 +3,7 @@
 
 import sys
 from sandboxio import output, get_context
+from components import Component
 
 class StopEvaluatorExec(Exception):
     pass
