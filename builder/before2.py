@@ -39,7 +39,7 @@ if __name__ == "__main__":
     for k in list(dic.keys()):
         if isinstance(dic[k],list):
             for e in dic[k]:
-                if isinstance(e, dict) and 'cid' in e:
+                if isinstance(e, dict):
                     comp['list']=e
                 #    dic[e['id']] = e
 
