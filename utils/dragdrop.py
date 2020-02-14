@@ -8,7 +8,6 @@ def Label(**kwargs):
     return DragDrop(id=str(uuid.uuid4()),droppable=False,**kwargs)
 
 def Drops(arg):
-    return [Drop(content=str(i)) for i in range(4)]
     if isinstance(arg,int):
         return [Drop() for i in range(arg)]
 
