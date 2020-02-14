@@ -13,5 +13,5 @@ def Drops(arg):
         return [Drop() for i in range(arg)]
 
 def Labels(arg):
-    if isinstance(arg,int):
+    if isinstance(arg,list):
         return [Label(content="h") for content in arg]
