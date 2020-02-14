@@ -7,7 +7,7 @@ class Drop(DragDrop):
         if 'id' not in kwargs:
             kwargs['id']=str(uuid.uuid4())
         self.selector = 'c-drag-drop'
-        self.decorator = Drop'
+        self.decorator = 'Drop'
         self.droppable = True
         super().__init__(**kwargs)
 
