@@ -14,7 +14,7 @@ myFoo = Foo(1,2)
 
 chiffres= [(2,4),(7,6),(5,3),(6,9)]
 
-drops = [DragDrop(id=str(i),droppable=True) for i in range(4)]
+drops = [DragDrop(id=str(i),droppable=True,value="3") for i in range(4)]
 
 #for drop in drops:
 #    globals()[drop.id] = drop
