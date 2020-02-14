@@ -73,7 +73,7 @@ if __name__ == "__main__":
                 if isinstance(dic[k][i], dict) and 'cid' in dic[k][i]:
                     for e in comp:
                         if e.id == dic[k][i]["id"]:
-                            dic[k][i] = e
+                            dic[k][i] = {}
 
     if 'evaluator' in dic:
         glob = {}
