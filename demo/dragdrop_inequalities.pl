@@ -35,7 +35,7 @@ form==
 ==
 
 evaluator==
-f=str(drop[1])
+f=str(drops[1])
 grade=(100,f)
 ==
 
