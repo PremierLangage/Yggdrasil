@@ -1,16 +1,10 @@
 @ /utils/sandboxio.py [sandboxio.py]
 grader  =@ /grader/evaluator2.py
 builder =@ /builder/before2.py
-@ /utils/dragdrop.py [dragdrop.py]
-
 
 title = 
 
 before==
-from dragdrop import Drop,Label
-
-drag1 = Label(content=r"\>")
-drag2 = Label(content="<")
 
 chiffres= [(2,4),(7,6),(5,3),(6,9)]
 
