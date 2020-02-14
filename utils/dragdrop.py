@@ -18,7 +18,7 @@ def Labels(arg):
 def DragDropeval(drop,sol):
     feedback=""
     score=100
-    for e in range(len(drop)):
+    for i in range(len(drop)):
         if drop[i].content==sol[i]:
             drop[i].css = "success-state anim-flip"
         else:
