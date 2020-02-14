@@ -36,7 +36,7 @@ form==
 ==
 
 evaluator==
-f=str([drop.content for drop in drops])
+f=str(drop10)
 grade=(100,f)
 ==
 
