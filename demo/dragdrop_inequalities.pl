@@ -10,7 +10,7 @@ from dragdrop import Drop,Label,Drops,Labels
 chiffres= [(2,4),(7,6),(5,3),(6,9)]
 label=Labels(['g','h'])
 drop10=Drop()
-drops = [Drop(content=str(i)) for i in range(4)]
+drops = Drops()
 ==
 
 text==
