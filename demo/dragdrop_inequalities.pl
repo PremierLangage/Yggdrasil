@@ -37,6 +37,7 @@ form==
 ==
 
 evaluator==
-grade=(100,"")
+f=sum((drop.content for drop in drops])
+grade=(100,f)
 ==
 
