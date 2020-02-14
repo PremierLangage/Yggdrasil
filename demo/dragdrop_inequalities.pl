@@ -12,7 +12,6 @@ lt="\<"
 gt="\>"
 sol=[lt,gt,gt,lt]
 label=Labels([lt,gt])
-drop10=Drop()
 drops = Drops(4)
 ==
 
@@ -22,8 +21,6 @@ text==
 
 form==
 {{ label[0] | component }} {{ label[1] | component }}
-
-{{ drop10| component }} 
 <br/>
 
 <ul>
