@@ -6,7 +6,7 @@ builder =@ /builder/before2.py
 title = 
 
 before==
-from dragdrop import Drop,Label,Drops,Labels
+from dragdrop import Drop,Label,Drops,Labels,DragDropeval
 chiffres= [(2,4),(7,6),(5,3),(6,9)]
 lt="\<"
 gt="\>"
