@@ -4,7 +4,6 @@
 import sys
 from sandboxio import output, get_context
 from components import Component
-from dragdrop import Drop,Label
 
 class StopEvaluatorExec(Exception):
     pass
@@ -68,8 +67,10 @@ if __name__ == "__main__":
     for k in list(dic.keys()):
         if isinstance(dic[k],list):
             for i in range(len(dic[k])):
-                if isinstance(dic[k][i], dict) and 'cid' in dic[k][i]:   
-                    dic[k][i] = Component.deserialize(dic[k][i], dic[k][i])
+                if isinstance(dic[k][i], dict) and 'cid' in dic[k][i]:
+                    for k2, v2 in comp.items():
+                        if v2.cid == dic[k][i]["cid"]:
+                            dic[k][i] = v2
 
     if 'evaluator' in dic:
         glob = {}
