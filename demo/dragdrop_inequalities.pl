@@ -6,8 +6,10 @@ builder =@ /builder/before2.py
 title = 
 
 before==
-from dragdrop import Drop
+from dragdrop import Drop,Label
 chiffres= [(2,4),(7,6),(5,3),(6,9)]
+label1 = Label(content="f")
+label2 = Label(content="g")
 
 drops = [Drop(content=str(i)) for i in range(4)]
 ==
@@ -17,6 +19,7 @@ text==
 ==
 
 form==
+{{ label1 | component }} {{ label2 | component }}
 
 <br/>
 
