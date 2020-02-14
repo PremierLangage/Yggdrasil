@@ -5,6 +5,12 @@ builder =@ /builder/before2.py
 title = 
 
 before==
+class Foo(object):
+    def __init__(self, x, y=0):
+        self.x = x
+        self.y = y
+
+myFoo = Foo(1,2)
 
 chiffres= [(2,4),(7,6),(5,3),(6,9)]
 
