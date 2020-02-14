@@ -71,9 +71,9 @@ if __name__ == "__main__":
         if isinstance(dic[k],list):
             for i in range(len(dic[k])):
                 if isinstance(dic[k][i], dict) and 'cid' in dic[k][i]:
-                    for k2, v2 in comp.items():
-                        if v2.cid == dic[k][i]["cid"]:
-                            dic[k][i] = v2
+                    for e incomp:
+                        if e.id == dic[k][i]["cid"]:
+                            dic[k][i] = e
 
     if 'evaluator' in dic:
         glob = {}
