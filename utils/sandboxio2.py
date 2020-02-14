@@ -13,7 +13,7 @@ def get_answers():
 def get_context():
     """Return the dictionnary containing the context of the exercise."""
     with open(sys.argv[1], "r") as f:
-        context = json.load(f)
+        context ={}# json.load(f)
     Component.sync_context(context)
     return context
 
