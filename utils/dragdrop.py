@@ -2,7 +2,7 @@ from components import Component,DragDrop
 import uuid
 
 def Drop(**kwargs):
-    return DragDrop(droppable=True,**kargs)
+    return DragDrop(droppable=True,**kwargs)
 
 class Label(DragDrop):
     def __init__(self, **kwargs):
