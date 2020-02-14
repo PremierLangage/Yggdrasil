@@ -4,6 +4,8 @@
 import sys, json, jsonpickle
 from sandboxio import get_context
 from random import random as rd
+from components import Component
+
 
 class StopBeforeExec(Exception):
     pass
