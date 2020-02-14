@@ -21,6 +21,7 @@ text==
 form==
 {{ label1 | component }} {{ label2 | component }}
 
+{{ drop10| component }} 
 <br/>
 
 <ul>
