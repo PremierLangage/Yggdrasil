@@ -39,7 +39,7 @@ if __name__ == "__main__":
         if isinstance(dic[k],list):
             for e in dic[k]:
                 if isinstance(e, dict) and 'cid' in e:
-                    dic[e['cid']] = e
+                    dic[e['id']] = e
 
     if 'buttons' not in dic:
         dic['buttons'] = ["submit","reroll"]
