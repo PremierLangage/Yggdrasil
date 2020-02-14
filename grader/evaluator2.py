@@ -71,7 +71,7 @@ if __name__ == "__main__":
         if isinstance(dic[k],list):
             for i in range(len(dic[k])):
                 if isinstance(dic[k][i], dict) and 'cid' in dic[k][i]:
-                    for e incomp:
+                    for e in comp:
                         if e.id == dic[k][i]["cid"]:
                             dic[k][i] = e
 
