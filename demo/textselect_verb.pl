@@ -21,7 +21,7 @@ txtsel.decorator = CustomText
 txtsel.selectable % true
 
 before ==
-txtsel.loadtext(r"{{Artur}} a {{horreur}} de la marche à pied.")
+txtsel.loadtext("{{Artur}} a {{horreur}} de la marche à pied.")
 ==
 
 
