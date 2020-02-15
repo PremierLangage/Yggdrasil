@@ -15,7 +15,7 @@ txtsel.decorator = CustomText
 txtsel.selectable % true
 
 before==
-txtsel.text="Artur a horreur de la marche à pied."
+txtsel.loadtext("Artur a horreur de la marche à pied.")
 ==
 
 form==
