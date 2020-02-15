@@ -35,5 +35,5 @@ class CustomText(Component):
         super().__init__(**kwargs)
 
     def loadtext(self,text):
-        self.text,_=read_text_bracket(bracket_words(s))
+        self.text,_=read_text_bracket(bracket_words(text))
 
