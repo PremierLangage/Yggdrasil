@@ -25,7 +25,7 @@ txtsel.loadtext("{{Artur}} a {{horreur}} de la marche à pied.")
 
 evaluator ==
 grade = txtsel.eval()
-txtsel.selectable = True
+txtsel.selectable = False
 
 ==
 
