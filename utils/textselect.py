@@ -33,3 +33,7 @@ class CustomText(Component):
         self.selector = 'c-text'
         self.decorator = 'CustomText'
         super().__init__(**kwargs)
+
+    def loadtext(self,text):
+        self.text,_=read_text_bracket(bracket_words(s))
+
