@@ -21,3 +21,7 @@ txtsel.loadtext("[Artur a horreur] de la marche à pied.")
 form==
 {{ txtsel|component}}
 ==
+
+evaluator ==
+txtsel.eval()
+==
