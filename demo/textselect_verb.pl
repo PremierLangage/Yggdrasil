@@ -22,6 +22,4 @@ form==
 {{ txtsel|component}}
 ==
 
-evaluator ==
-txtsel.eval()
-==
+
