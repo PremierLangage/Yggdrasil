@@ -41,6 +41,6 @@ class CustomText(Component):
         score=100
         for e in self.selections:
             e['css'] = "error-state"
-            if e['index'] in self._sol:
+            if e['index'] in self._indexsol:
                 e['css'] = "success-state"
         return (score,"")
