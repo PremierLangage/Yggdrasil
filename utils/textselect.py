@@ -38,5 +38,25 @@ class CustomText(Component):
         self.text,self._indexsol=read_text_bracket(bracket_words(text))
 
     def eval(self):
-        self.text,self._indexsol=read_text_bracket(bracket_words(text))
+        score=100
+        for e in self.selections:
+            e['css'] = "error-state"
+            if e['index'] in self._sol:
+                e['css'] = "success-state"
         return (score,"")
+
+
+
+
+text==
+Select the words containing **o**
+==
+
+form==
+{{ selectable|component}}
+==
+
+evaluator==
+score = 100
+indices = [2, 3, 5, 8]
+
