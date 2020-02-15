@@ -44,19 +44,3 @@ class CustomText(Component):
             if e['index'] in self._sol:
                 e['css'] = "success-state"
         return (score,"")
-
-
-
-
-text==
-Select the words containing **o**
-==
-
-form==
-{{ selectable|component}}
-==
-
-evaluator==
-score = 100
-indices = [2, 3, 5, 8]
-
