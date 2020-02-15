@@ -4,3 +4,8 @@
 
 title = Repérage des verbes
 
+
+text ==
+Identifier le verbe conjugué la phrase ci-dessous.
+==
+
