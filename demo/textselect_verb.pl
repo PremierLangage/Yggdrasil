@@ -26,7 +26,7 @@ txtsel.loadtext("{{Artur}} a {{horreur}} de la marche à pied.")
 
 
 evaluator ==
-txtsel.eval()
+grade = txtsel.eval()
 ==
 
 
