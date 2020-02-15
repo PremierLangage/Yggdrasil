@@ -9,3 +9,7 @@ text ==
 Identifier le verbe conjugué la phrase ci-dessous.
 ==
 
+form==
+{{ txtsel|component}}
+==
+
