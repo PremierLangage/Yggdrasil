@@ -12,13 +12,10 @@ txtsel =: Text
 @ /utils/textselect.py [customtext.py]
 txtsel.decorator = CustomText
 
-txtsel.text == 
-Artur a horreur de la marche à pied.
-==
-
 txtsel.selectable % true
 
 before==
+txtsel.load("Artur a horreur de la marche à pied.")
 ==
 
 form==
