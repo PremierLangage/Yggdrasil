@@ -10,7 +10,7 @@ Identifier le verbe conjugué la phrase ci-dessous.
 
 txtsel =: Text
 @ /utils/textselect.py [customtext.py]
-txtsel.decorator = CustomRadioGroup
+txtsel.decorator = CustomText
 
 txtsel.text == 
 Artur a horreur de la marche à pied.
