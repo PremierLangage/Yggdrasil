@@ -37,4 +37,6 @@ class CustomText(Component):
     def loadtext(self,text):
         self.text,self._indexsol=read_text_bracket(bracket_words(text))
 
-
+    def eval(self):
+        self.text,self._indexsol=read_text_bracket(bracket_words(text))
+        return (score,"")
