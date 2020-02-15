@@ -13,3 +13,17 @@ form==
 {{ txtsel|component}}
 ==
 
+
+txtsel =: Text
+@ /utils/textselect.py [customtext.py]
+txtsel.decorator = CustomText
+
+txtsel.selectable % true
+
+before ==
+txtsel.loadtext("{{Artur}} a {{horreur}} de la marche à pied.")
+==
+
+
+
+
