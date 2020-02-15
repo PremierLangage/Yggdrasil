@@ -16,7 +16,7 @@ form==
 
 
 before ==
-txtsel.loadtext("{{Artur}} a {{horreur}} de la marche à pied.")
+txtsel.loadtext(r"{{Artur}} a {{horreur}} de la marche à pied.")
 ==
 
 
