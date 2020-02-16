@@ -36,7 +36,6 @@ form==
 
 evaluator==
 from dragdrop import DragDropeval
-f=str([e.content for e in drops])
 grade=DragDropeval(drops,sol)
 ==
 
