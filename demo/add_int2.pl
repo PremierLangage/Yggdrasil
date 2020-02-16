@@ -10,13 +10,11 @@
 title = Addition
 
 before ==
-a=rd.randint(10,20)
-b=rd.randint(10,20)
-f=sin(3)
+a=3+I
+b=1-I
 ==
 
 text ==
-{{f}}
 Calculer {{a}} + {{b}}.
 ==
 
