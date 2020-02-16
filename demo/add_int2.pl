@@ -12,7 +12,6 @@ b=rd.randint(10,20)
 
 text ==
 Calculer {{a}} + {{b}}.
-            <ion-header class="app-header">
     <ion-toolbar>
         <div class="app-title">
             <span>Premier Langage</span>
@@ -61,7 +60,6 @@ Calculer {{a}} + {{b}}.
             </ion-button>
         </ion-buttons>
     </ion-toolbar>
-</ion-header>
 ==
 
 evaluator ==
