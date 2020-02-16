@@ -87,7 +87,7 @@ if __name__ == "__main__":
                     dic[k][i] = dic[dic[k][i]['id']]
 
     for key in dic:
-        dic[key]=serialize(dic[key])
+        dic[key]=deserialize(dic[key])
 
     dic = get_context()
     dic = {**env, **dic}
@@ -104,7 +104,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     for key in dic:
-        dic[key]=deserialize(dic[key])
+        dic[key]=serialize(dic[key])
     
     if 'grade' not in dic:
         print(missing_grade_stderr, file=sys.stderr)
