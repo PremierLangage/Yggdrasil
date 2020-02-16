@@ -2,6 +2,7 @@
 @ /builder/before2.py [builder.py]
 @ /grader/evaluator2.py [grader.py]
 @ /utils/serialize_sympy.py [serialize.py]
+@ /utils/env_math.py [env.py]
 
 
 title = Addition
@@ -10,9 +11,8 @@ before ==
 import random as rd
 a=rd.randint(10,20)
 b=rd.randint(10,20)
-from sympy import *
-
-f=sin(3)
+import sympy as sp
+f=sp.sin(3)
 ==
 
 text ==
