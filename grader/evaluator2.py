@@ -7,10 +7,10 @@ from components import Component
 try:
     from serialize import serialize, deserialize
 except ImportError:
-    def serialize(dic):
-        pass
+    def serialize(arg):
+        return arg
     def deserialize(dic):
-        pass
+        return arg
 
 class StopEvaluatorExec(Exception):
     pass
@@ -80,6 +80,9 @@ if __name__ == "__main__":
                 if isinstance(dic[k][i], dict) and 'cid' in dic[k][i]:
                     dic[k][i] = dic[dic[k][i]['id']]
 
+    for key in dic:
+        dic[key]=serialize(dic[key])
+
     if 'evaluator' in dic:
         glob = {}
         dic['StopEvaluatorExec'] = StopEvaluatorExec
@@ -87,6 +90,9 @@ if __name__ == "__main__":
     else:
         print(missing_evaluator_stderr, file=sys.stderr)
         sys.exit(1)
+
+    for key in dic:
+        dic[key]=deserialize(dic[key])
     
     if 'grade' not in dic:
         print(missing_grade_stderr, file=sys.stderr)
