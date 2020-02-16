@@ -2,9 +2,10 @@ from sympy import Expr,Matrix,FiniteSet,sympify
 
 def deserialize(arg):
     if isinstance(arg,dict) and 'type' in arg:
+        return 0
         if arg['str']=='Basic':
                 with evaluate(False):
-                    return 0
+
                     return sympify(arg['str'])
         elif arg['str']=='FiniteSet':
                 with evaluate(False):
