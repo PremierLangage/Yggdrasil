@@ -105,12 +105,17 @@ if __name__ == "__main__":
     for key in dic:
         dic[key]=serialize(dic[key])
     
-    if 'grade' not in dic:
-        print(missing_grade_stderr, file=sys.stderr)
-        sys.exit(1)
+    if 'score' in dic:
+        score=dic['score']    
 
-    score=dic['grade'][0]
-    feedback=dic['grade'][1]+" "
+
+    feedback=" "
+    if 'feedback' in dic:
+        feedback=dic['feedback']+" "
+
+    if 'grade' in dic:
+        score=dic['grade'][0]
+        feedback=dic['grade'][1]+" "
 
     if score>=0:
         dic['attempt'] = dic['attempt'] + 1
