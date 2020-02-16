@@ -11,11 +11,11 @@ import random as rd
 a=rd.randint(10,20)
 b=rd.randint(10,20)
 import sympy as sp
-a=sp.sin(3)
+f=sp.sin(3)
 ==
 
 text ==
-{{
+{{f}}
 Calculer {{a}} + {{b}}.
 ==
 
