@@ -8,7 +8,28 @@ class CustomMatchList(Component):
         self.decorator = 'CustomMatchList'
         self.nodes = []
         self._expected = []
+        self._sol ={}
         super().__init__(**kwargs)
+
+    def loadpairs(self,pairs):
+        """
+        Load matched pairs of items in the component.
+        """ 
+        for source,target in pairs:
+            sourceid = str(uuid.uuid4())
+            targetid = str(uuid.uuid4())
+            self.nodes.append({
+                "id": sourceid,
+                "content": source[i],
+                "source": True
+            })
+            self.nodes.append({
+                "id": targetid,
+                "content": target[i],
+                "target": True
+            })
+        self._sol[sourceid]=targetid
+        rd.shuffle(self.nodes)
 
     def load_items(self,source,target):
 
@@ -56,5 +77,6 @@ def source_link(sourceId,links1,links2):
             targetId2=e['target']
             break
     return targetId1==targetId2
+
 
 
