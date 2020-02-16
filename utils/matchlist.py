@@ -19,12 +19,12 @@ class CustomMatchList(Component):
             targetid = str(uuid.uuid4())
             self.nodes.append({
                 "id": sourceid,
-                "content": source[i],
+                "content": source,
                 "source": True
             })
             self.nodes.append({
                 "id": targetid,
-                "content": target[i],
+                "content": target,
                 "target": True
             })
         self._sol.append({ "source": sourceid, "target": targetid })
