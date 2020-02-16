@@ -9,8 +9,8 @@ from components import Component
 try:
     from serialize import serialize
 except ImportError:
-    def serialize(dic):
-        pass
+    def serialize(arg):
+        return arg
 
 class StopBeforeExec(Exception):
     pass
