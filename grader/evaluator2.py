@@ -4,6 +4,7 @@
 import sys
 from sandboxio import output, get_context
 from components import Component
+
 try:
     from serialize import serialize, deserialize
 except ImportError:
@@ -11,6 +12,11 @@ except ImportError:
         return arg
     def deserialize(dic):
         return arg
+
+try:
+    from env import env
+except ImportError:
+    env={}
 
 class StopEvaluatorExec(Exception):
     pass
@@ -83,10 +89,16 @@ if __name__ == "__main__":
     for key in dic:
         dic[key]=serialize(dic[key])
 
+    dic = get_context()
+    dic = {**env, **dic}
     if 'evaluator' in dic:
-        glob = {}
         dic['StopEvaluatorExec'] = StopEvaluatorExec
-        exec(add_try_clause(dic['evaluator'], StopEvaluatorExec),{},dic)
+        print(add_try_clause(dic['evaluator'], StopEvaluatorExec), file=sys.stderr)
+        exec(add_try_clause(dic['evaluator'], StopEvaluatorExec), dic)
+        exec("", env)
+        for key in env:
+            if key in dic and dic[key] == env[key]:
+                del dic[key]
     else:
         print(missing_evaluator_stderr, file=sys.stderr)
         sys.exit(1)
@@ -117,6 +129,7 @@ if __name__ == "__main__":
             ffeedback=format_feedback_lightscore(score,feedback)
 
     output(score, ffeedback, dic)
+
 
 
 
