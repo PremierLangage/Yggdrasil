@@ -12,6 +12,8 @@ except ImportError:
     def serialize(arg):
         return arg
 
+from env import env
+
 try:
     from env import env
 except ImportError:
