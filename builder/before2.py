@@ -46,7 +46,7 @@ if __name__ == "__main__":
         exec(add_try_clause(dic['before'], StopBeforeExec), dic)
         exec("", env)
         for key in env:
-            if key in dic and dic[key] == globals()[key]:
+            if key in dic and dic[key] == env[key]:
                 del dic[key]
     else:
         print(("Player 'before' need a script declared in the key 'before'."),file = sys.stderr)
