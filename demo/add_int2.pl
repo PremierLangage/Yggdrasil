@@ -11,6 +11,7 @@ title = Addition
 before ==
 a=rd.randint(10,20)
 b=rd.randint(10,20)
+f=sin(3)
 ==
 
 text ==
@@ -34,6 +35,7 @@ try:
 except:
     grade=(-1,"Votre réponse n'est pas un nombre entier.")
 ==
+
 
 
 
