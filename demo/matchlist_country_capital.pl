@@ -15,15 +15,13 @@ with open('pays_europe.csv',newline='') as file:
     
 sample_rows=rd.sample(all_rows,4)
 
-source=[item['pays'] for item in sample_rows]
-target=[item['capitale'] for item in sample_rows]
-
-match.load_items(source,target)
+match.loadpairs([(item['pays'],item['capitale']) for item in sample_rows])
 ==
 
 text==
 Relier chaque pays à sa capitale.
 ==
+
 
 
 
