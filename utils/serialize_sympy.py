@@ -1,11 +1,11 @@
 from sympy import Expr,Matrix,FiniteSet,sympify,evaluate
 
 def deserialize(arg):
-    if isinstance(arg,dict) and 'type' in arg:
-        if arg['type']=='Basic':
+    if isinstance(arg,dict) and 'sympy_type' in arg:
+        if arg['sympy_type']=='Basic':
                 with evaluate(False):
                     return sympify(arg['str'])
-        elif arg['type']=='FiniteSet':
+        elif arg['sympy_type']=='FiniteSet':
                 with evaluate(False):
                     return FiniteSet(*sympify(arg['str']))
     elif isinstance(arg, dict):
@@ -19,9 +19,9 @@ def deserialize(arg):
 
 def serialize(arg):
     if isinstance(arg,FiniteSet):
-        return {'type':'FiniteSet','str':str(arg.args)}
+        return {'sympy_type':'FiniteSet','str':str(arg.args)}
     elif isinstance(arg,(Expr,Matrix)):
-        return {'type':'Basic','str':str(arg)}
+        return {'sympy_type':'Basic','str':str(arg)}
     elif isinstance(arg,dict):
         return {k: serialize(v) for k, v in arg.items()}
     elif isinstance(arg,list):
