@@ -5,6 +5,7 @@
 @ /utils/env_math.py [env.py]
 @ /utils/plrandom.py [plrandom.py]
 @ /utils/utilsmath2.py [utilsmath.py]
+@ /utils/keyboards.JSON [keyboards.JSON]
 
 title = Addition
 
