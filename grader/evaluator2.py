@@ -92,7 +92,6 @@ if __name__ == "__main__":
     dic = {**env, **dic}
     if 'evaluator' in dic:
         dic['StopEvaluatorExec'] = StopEvaluatorExec
-        print(add_try_clause(dic['evaluator'], StopEvaluatorExec), file=sys.stderr)
         exec(add_try_clause(dic['evaluator'], StopEvaluatorExec), dic)
         exec("", env)
         for key in env:
