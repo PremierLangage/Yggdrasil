@@ -1,4 +1,7 @@
-extends = /template/basicinput.pl
+@ /utils/sandboxio.py
+@ /builder/before2.py [builder.py]
+@ /grader/evaluator2.py [grader.py]
+@ /utils/serialize_sympy.py [serialize.py]
 
 input.type = number
 
@@ -12,7 +15,6 @@ b=rd.randint(10,20)
 
 text ==
 Calculer {{a}} + {{b}}.
-
 ==
 
 evaluator ==
