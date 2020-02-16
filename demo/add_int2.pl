@@ -27,7 +27,7 @@ form ==
 
 evaluator ==
 c = a + b
-grade=(100,"")
+grade=(100,latex(c))
 ==
 
 
