@@ -2,7 +2,7 @@ from sympy import Expr,Matrix,FiniteSet,sympify
 
 def deserialize(arg):
     if isinstance(arg,dict) and 'type' in arg:
-        return 0
+        return arg['str']
         if arg['str']=='Basic':
                 with evaluate(False):
 
