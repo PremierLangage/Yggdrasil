@@ -43,7 +43,7 @@ if __name__ == "__main__":
     if 'before' in dic:
         dic['StopBeforeExec'] = StopBeforeExec
         print(add_try_clause(dic['before'], StopBeforeExec), file=sys.stderr)
-        exec(add_try_clause(dic['before'], StopBeforeExec), {**env, **dic.items()})
+        exec(add_try_clause(dic['before'], StopBeforeExec), dict(list(env) + list(dic.items())) )
     else:
         print(("Player 'before' need a script declared in the key 'before'."),file = sys.stderr)
         sys.exit(1)
