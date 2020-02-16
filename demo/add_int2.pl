@@ -11,6 +11,7 @@ import random as rd
 a=rd.randint(10,20)
 b=rd.randint(10,20)
 from sympy import *
+
 f=sin(3)
 ==
 
