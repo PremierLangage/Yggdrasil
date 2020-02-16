@@ -4,7 +4,7 @@ def deserialize(arg):
     if isinstance(arg,dict) and 'type' in arg:
         if arg['str']=='Basic':
                 with evaluate(False):
-                    reurn 0
+                    return 0
                     return sympify(arg['str'])
         elif arg['str']=='FiniteSet':
                 with evaluate(False):
