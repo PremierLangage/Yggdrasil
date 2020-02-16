@@ -1,9 +1,11 @@
 @ /utils/sandboxio.py
+@ /builder/before2.py [builder.py]
+@ /grader/evaluator2.py [grader.py]
+@ /utils/serialize_sympy.py [serialize.py]
+@ /utils/env_math.py [env.py]
 @ /utils/plrandom.py [plrandom.py]
 @ /utils/utilsmath2.py [utilsmath.py]
 @ /utils/keyboards.JSON [keyboards.JSON]
-@ /builder/mathbefore.py [builder.py]
-@ /grader/mathevaluator.py [grader.py]
 
 title = Title
 
@@ -63,3 +65,4 @@ th, td {
 }
 </style>
 ==
+
