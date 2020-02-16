@@ -3,7 +3,8 @@
 @ /grader/evaluator2.py [grader.py]
 @ /utils/serialize_sympy.py [serialize.py]
 @ /utils/env_math.py [env.py]
-
+@ /utils/plrandom.py [plrandom.py]
+@ /utils/utilsmath2.py [utilsmath.py]
 
 title = Addition
 
