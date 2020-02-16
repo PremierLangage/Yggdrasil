@@ -17,6 +17,10 @@ text ==
 Calculer {{a}} + {{b}}.
 ==
 
+form ==
+{{ input | component }}
+==
+
 evaluator ==
 try:
     if int(input.value)==a+b:
