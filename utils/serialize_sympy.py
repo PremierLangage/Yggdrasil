@@ -8,8 +8,6 @@ def deserialize(arg):
         elif arg['type']=='FiniteSet':
                 with evaluate(False):
                     return FiniteSet(*sympify(arg['str']))
-        else:
-            return arg
     elif isinstance(arg, dict):
         return {k: deserialize(v) for k, v in arg.items()}
     elif isinstance(arg, list):
@@ -32,7 +30,5 @@ def serialize(arg):
         return tuple(map(serialize,arg))
     else:
         return arg
-    return arg
-
 
 
