@@ -4,6 +4,13 @@
 import sys
 from sandboxio import output, get_context
 from components import Component
+try:
+    from serialize import serialize, deserialize
+except ImportError:
+    def serialize(dic):
+        pass
+    def deserialize(dic):
+        pass
 
 class StopEvaluatorExec(Exception):
     pass
