@@ -10,6 +10,27 @@ class CustomMatchList(Component):
         self._sol = []
         super().__init__(**kwargs)
 
+    def loaditems(self,sources,targets):
+        """
+        Load matched pairs of items in the component.
+        """ 
+        for source in sources:
+            id = str(uuid.uuid4())
+            self.nodes.append({
+                "id": id,
+                "content": source,
+                "source": True
+            })
+        for target in targets:
+            id = str(uuid.uuid4())
+            self.nodes.append({
+                "id": id,
+                "content": source,
+                "target": True
+            })
+
+
+
     def loadpairs(self,pairs):
         """
         Load matched pairs of items in the component.
