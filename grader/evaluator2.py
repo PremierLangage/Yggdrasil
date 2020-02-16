@@ -89,7 +89,6 @@ if __name__ == "__main__":
     for key in dic:
         dic[key]=deserialize(dic[key])
 
-    dic = get_context()
     dic = {**env, **dic}
     if 'evaluator' in dic:
         dic['StopEvaluatorExec'] = StopEvaluatorExec
