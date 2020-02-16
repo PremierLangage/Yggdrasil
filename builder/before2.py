@@ -41,6 +41,9 @@ if __name__ == "__main__":
         print(("Player 'before' need a script declared in the key 'before'."),file = sys.stderr)
         sys.exit(1)
 
+    for key in dic:
+        dic[key]=serialize(dic[key])
+
     # sync components defined inside a list
     for k in list(dic.keys()):
         if isinstance(dic[k],list):
