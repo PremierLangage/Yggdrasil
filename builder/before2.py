@@ -6,6 +6,11 @@ from sandboxio import get_context
 from random import random as rd
 from components import Component
 
+try:
+    from serialize import serialize
+except ImportError:
+    def serialize(dic):
+        pass
 
 class StopBeforeExec(Exception):
     pass
