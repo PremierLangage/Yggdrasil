@@ -15,7 +15,9 @@ with open('pays_europe.csv',newline='') as file:
     
 sample_rows=rd.sample(all_rows,4)
 
-match.loadpairs([(item['pays'],item['capitale']) for item in sample_rows])
+match.loaditems(["11"],["h","j"])
+
+#match.loadpairs([(item['pays'],item['capitale']) for item in sample_rows])
 ==
 
 text==
