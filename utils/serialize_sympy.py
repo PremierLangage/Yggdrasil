@@ -1,4 +1,4 @@
-from sympy import Expr,Matrix,FiniteSet
+from sympy import Expr,Matrix,FiniteSet,sympify
 
 def deserialize(arg):
     if isinstance(arg,dict) and 'type' in arg:
@@ -33,5 +33,6 @@ def serialize(arg):
     else:
         return arg
     return arg
+
 
 
