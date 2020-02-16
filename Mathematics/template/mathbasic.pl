@@ -9,6 +9,9 @@
 
 title = Title
 
+settings.feedback = colorbox
+
+
 maxattempt % 1
 
 text =
