@@ -39,7 +39,7 @@ if __name__ == "__main__":
     output_json = sys.argv[2]
     
     dic = get_context()
-    dic = dict(list(env) + list(dic.items()))
+    dic = {env**,dic**}
     if 'before' in dic:
         dic['StopBeforeExec'] = StopBeforeExec
         print(add_try_clause(dic['before'], StopBeforeExec), file=sys.stderr)
