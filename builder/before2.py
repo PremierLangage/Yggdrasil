@@ -42,6 +42,7 @@ if __name__ == "__main__":
     dic = {**env, **dic}
     if 'before' in dic:
         dic['StopBeforeExec'] = StopBeforeExec
+        print(add_try_clause(dic['before'], StopBeforeExec), file=sys.stderr)
         exec(add_try_clause(dic['before'], StopBeforeExec), dic)
         exec("", env)
         for key in env:
