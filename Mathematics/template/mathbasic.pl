@@ -9,7 +9,7 @@
 
 title = Title
 
-maxattempt=1
+maxattempt % 1
 
 text =
 form =
