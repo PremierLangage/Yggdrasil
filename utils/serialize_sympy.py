@@ -1,4 +1,4 @@
-from sympy import Expr,Matrix,FiniteSet,sympify
+from sympy import Expr,Matrix,FiniteSet,sympify,evaluate
 
 def deserialize(arg):
     if isinstance(arg,dict) and 'type' in arg:
