@@ -30,26 +30,10 @@ class CustomMatchList(Component):
         self._sol.append({ "source": sourceid, "target": targetid })
         rd.shuffle(self.nodes)
 
-    def load_items(self,source,target):
-
-        self.nodes = []
-        for i in range(len(source)):
-            sourceId = str(uuid.uuid4())
-            targetId = str(uuid.uuid4())
-            self.nodes.append({
-                "id": sourceId,
-                "content": source[i],
-                "source": True
-            })
-            self.nodes.append({
-                "id": targetId,
-                "content": target[i],
-                "target": True
-            })
-            self._expected.append({ "source": sourceId, "target": targetId })
-        rd.shuffle(self.nodes)
-
     def eval(self):
+        """
+        Evaluate the answer stored in the component.
+        """ 
         error = 0
         for e in self.nodes:
             if 'source' in e and e['source']:
