@@ -10,7 +10,7 @@ try:
 except ImportError:
     def serialize(arg):
         return arg
-    def deserialize(dic):
+    def deserialize(arg):
         return arg
 
 try:
