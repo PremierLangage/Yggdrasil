@@ -12,6 +12,11 @@ except ImportError:
     def serialize(arg):
         return arg
 
+try:
+    from env import env
+except ImportError:
+    env={}
+
 class StopBeforeExec(Exception):
     pass
 
