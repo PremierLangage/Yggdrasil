@@ -39,11 +39,11 @@ if __name__ == "__main__":
     output_json = sys.argv[2]
     
     dic = get_context()
-    dic = dict(list(env) + list(dic.items())
+    dic = dict(list(env) + list(dic.items()))
     if 'before' in dic:
         dic['StopBeforeExec'] = StopBeforeExec
         print(add_try_clause(dic['before'], StopBeforeExec), file=sys.stderr)
-        exec(add_try_clause(dic['before'], StopBeforeExec), dic) )
+        exec(add_try_clause(dic['before'], StopBeforeExec), dic)
         exec("", env)
         for key in env:
             if key in dic and dic[key] == globals()[key]:
