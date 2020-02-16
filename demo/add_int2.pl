@@ -3,7 +3,6 @@
 @ /grader/evaluator2.py [grader.py]
 @ /utils/serialize_sympy.py [serialize.py]
 
-input.type = number
 
 title = Addition
 
@@ -16,6 +15,9 @@ b=rd.randint(10,20)
 text ==
 Calculer {{a}} + {{b}}.
 ==
+
+input =: Input
+input.type = number
 
 form ==
 {{ input | component }}
