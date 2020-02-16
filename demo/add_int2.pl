@@ -26,13 +26,8 @@ form ==
 ==
 
 evaluator ==
-try:
-    if int(input.value)==a+b:
-        grade=(100,"")
-    else:
-        grade=(0,"%d + %d = %d" % (a,b,a+b))
-except:
-    grade=(-1,"Votre réponse n'est pas un nombre entier.")
+c = a + b
+grade=(100,"")
 ==
 
 
