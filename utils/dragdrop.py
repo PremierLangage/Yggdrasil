@@ -11,9 +11,9 @@ def Drops(arg):
     if isinstance(arg,int):
         return [Drop() for i in range(arg)]
 
-def Labels(arg):
+def Labels(arg,**kwargs):
     if isinstance(arg,list):
-        return [Label(content=content) for content in arg]
+        return [Label(content=content,**kwargs) for content in arg]
 
 def DragDropeval(drop,sol):
     feedback=""
@@ -25,3 +25,4 @@ def DragDropeval(drop,sol):
             score=0
             drop[i].css = "error-state anim-flip"
     return (score,feedback)
+
