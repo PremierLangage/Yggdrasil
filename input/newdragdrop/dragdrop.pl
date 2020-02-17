@@ -15,7 +15,7 @@ form==
 	unselectable="on"
 	onselectstart="return false;" 
 	draggable='true'
-	ondragstart="drag(event,'cloneable')">
+	ondragstart="drag(event,'yes')">
 		label1
 </div>
 
