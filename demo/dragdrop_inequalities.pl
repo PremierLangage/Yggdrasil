@@ -12,7 +12,7 @@ lt="\<"
 gt="\>"
 sol=[lt,gt,gt,lt]
 label=Labels([lt,gt])
-drops = Labels([str(i) for i in range(4)])
+drops = Labels([str(i) for i in range(4)],css="myclass")
 ==
 
 text==
@@ -39,4 +39,11 @@ from dragdrop import DragDropeval
 grade=DragDropeval(drops,sol)
 ==
 
-
+extracss == #|html| 
+<style>
+    .myclass{
+        padding: 1em;
+        min-width: 2em;
+        }
+</style>
+==
