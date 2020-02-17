@@ -9,8 +9,8 @@ before==
 from dragdrop import Drop, Label, Drops, Labels, DragDropeval
 import random as rd
 
-lt=r"<"
-gt=r">"
+lt="&lt;"
+gt="&gt;"
 
 n = 4
 
