@@ -11,7 +11,7 @@ chiffres= [(2,4),(7,6),(5,3),(6,9)]
 lt="\<"
 gt="\>"
 sol=[lt,gt,gt,lt]
-label=Labels([lt,gt])
+label=Labels([lt,"hhhhhhhhhhhhhhh"])
 drops = Drops(4,css="myclass")
 ==
 
