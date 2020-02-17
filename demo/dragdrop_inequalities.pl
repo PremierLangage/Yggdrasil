@@ -9,18 +9,21 @@ before==
 from dragdrop import Drop, Label, Drops, Labels, DragDropeval
 import random as rd
 
-numbers = [rd.sample(range(10,100),2) for _ in range (4)]
-sol=[]
-for pair in numbers:
-    if pair[0] < pair[1]:
+lt=r"<"
+gt=r">"
+
+numbers = []
+sol = []
+for in range(4):
+    [a,b] = rd.sample(range(10,100),2)
+    numbers.append([a,b]
+    if a < b:
         sol.append(lt)
     else:
         sol.append(gt)
-lt=r"<"
-gt=r">"
-sol=[lt,gt,gt,lt]
-label=Drops([lt,gt])
-drops = Drops(4,css="myclass")
+
+label = Labels([lt,gt])
+drops = Drops(4)
 ==
 
 text==
