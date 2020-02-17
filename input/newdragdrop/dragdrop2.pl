@@ -1,6 +1,6 @@
 extends = dragdrop.pl
 
-title = DragDrop 1
+title = DragDrop 2
 
 text ==
 Etiquettes clonables.
