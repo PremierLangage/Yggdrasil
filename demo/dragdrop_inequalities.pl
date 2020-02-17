@@ -27,7 +27,7 @@ form==
 
 <ul>
 {% for i in range(4) %}
-<li> {{ chiffres[i][0] }} {{ drops[i]|component }} {{ chiffres[i][1] }} </li>
+<li> {{ numbers[i][0] }} {{ drops[i]|component }} {{ numbers[i][1] }} </li>
 {% endfor %}
 </ul>
 ==
