@@ -1,4 +1,4 @@
-extends = /model/math_basic.pl
+extends = /model/math.pl
 
 footerbefore +=
 from jinja2 import Template
