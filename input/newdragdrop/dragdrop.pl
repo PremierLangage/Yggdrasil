@@ -38,7 +38,7 @@ form==
     draggable='true'
     ondragstart='drag(event)'
     >
-drop1
+
 </div>
 
     <div id = 'drop2'
@@ -48,7 +48,7 @@ drop1
     draggable='true'
     ondragstart='drag(event)'
     >
-drop2
+
 </div>
 ==
 
