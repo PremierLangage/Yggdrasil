@@ -29,13 +29,10 @@ drops = Drops(n)
 ==
 
 text==
-{{numbers}}
+Comparer les nombres suivants avec les symboles {{ label[0] | component }} et {{ label[1] | component }}.
 ==
 
 form==
-{{ label[0] | component }} {{ label[1] | component }}
-<br/>
-
 <ul>
 {% for i in range(4) %}
 <li> {{ numbers[i][0] }} {{ drops[i]|component }} {{ numbers[i][1] }} </li>
