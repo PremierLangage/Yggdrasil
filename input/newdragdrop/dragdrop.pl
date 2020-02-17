@@ -19,6 +19,18 @@ form==
 		label1
 </div>
 
+<div id = 'label2'
+	class = 'drag'
+	unselectable="on"
+	onselectstart="return false;" 
+	draggable='true'
+	ondragstart="drag(event,'cloneable')">
+		label2
+</div>
+
+<br>
+
+
     <div id = 'drop1'
 		class = 'drop'
 		ondrop="drop(event)"
