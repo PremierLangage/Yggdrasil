@@ -12,7 +12,7 @@ lt="\<"
 gt="\>"
 sol=[lt,gt,gt,lt]
 label=Labels([lt,gt])
-drops = Labels([str(i fo in range(4)])
+drops = Labels([str(i for in range(4)])
 ==
 
 text==
