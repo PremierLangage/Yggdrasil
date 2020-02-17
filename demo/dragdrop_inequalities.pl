@@ -10,6 +10,11 @@ from dragdrop import Drop, Label, Drops, Labels, DragDropeval
 import random as rd
 
 numbers = [rd.sample(range(10,100),2) for _ in range (4)]
+for pair in numbers:
+    if pair[0] < pair[1]:
+        sol.append(lt)
+    else:
+        sol.append(gt)
 lt=r"<"
 gt=r">"
 sol=[lt,gt,gt,lt]
