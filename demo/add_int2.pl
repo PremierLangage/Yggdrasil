@@ -10,7 +10,7 @@
 title = Addition
 
 before ==
-a=3+
+a=3+3
 b=1-I
 ==
 
