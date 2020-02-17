@@ -11,11 +11,11 @@ def Drops(arg,**kwargs):
     if isinstance(arg,int):
         return [Drop(**kwargs) for i in range(arg)]
     if isinstance(arg,list):
-        return [Drop(content=content,**kwargs) for tuple(content) in arg]
+        return [Drop(content=tuple(content),**kwargs) for content in arg]
 
 def Labels(arg,**kwargs):
     if isinstance(arg,list):
-        return [Label(content=content,**kwargs) for tuple(content) in arg]
+        return [Label(content=tuple(content),**kwargs) for content in arg]
 
 def DragDropeval(drop,sol):
     feedback=""
