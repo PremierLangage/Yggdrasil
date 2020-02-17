@@ -13,7 +13,7 @@ numbers = [rd.sample(range(10,100),2) for _ in range (4)]
 lt=r"<"
 gt=r">"
 sol=[lt,gt,gt,lt]
-label=Drops([lt,"hhhhhhhhhhhhhhh"])
+label=Drops([lt,gt])
 drops = Drops(4,css="myclass")
 ==
 
