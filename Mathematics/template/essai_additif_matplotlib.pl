@@ -1,6 +1,6 @@
-extends = /model/math.pl
+extends = /template/mathbasic.pl
 
-before =
+footerbefore +=
 from jinja2 import Template
 import json
 import matplotlib
