@@ -3,7 +3,7 @@ extends = dragdrop.pl
 title = DragDrop 1
 
 text ==
-Etiquettes infinies
+Etiquettes clonables
 ==
 
 
