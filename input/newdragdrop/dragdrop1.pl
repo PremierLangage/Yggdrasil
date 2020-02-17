@@ -13,7 +13,7 @@ form==
 	unselectable="on"
 	onselectstart="return false;" 
 	draggable='true'
-	ondragstart="drag(event,'yes')">
+	ondragstart="drag(event,'no')">
 		label1
 </div>
 
@@ -22,7 +22,7 @@ form==
 	unselectable="on"
 	onselectstart="return false;" 
 	draggable='true'
-	ondragstart="drag(event,'yes')">
+	ondragstart="drag(event,'no')">
 		label2
 </div>
 
