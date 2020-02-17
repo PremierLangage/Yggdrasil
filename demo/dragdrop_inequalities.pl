@@ -6,8 +6,9 @@ builder =@ /builder/before2.py
 title = 
 
 before==
-from dragdrop import Drop,Label,Drops,Labels,DragDropeval
-chiffres= [(2,4),(7,6),(5,3),(6,9)]
+from dragdrop import Drop, Label, Drops, Labels, DragDropeval
+
+numbers = [rd.sample(range(10,100),2)) for in range (4)]
 lt="\<"
 gt="\>"
 sol=[lt,gt,gt,lt]
@@ -16,7 +17,7 @@ drops = Drops(4,css="myclass")
 ==
 
 text==
-
+{{numbers}}
 ==
 
 form==
@@ -24,13 +25,9 @@ form==
 <br/>
 
 <ul>
-    {% for i in range(4) %}
-    <li>
-        {{ chiffres[i][0] }}
-        {{ drops[i]|component }}
-        {{ chiffres[i][1] }}
-    </li>
-    {% endfor %}
+{% for i in range(4) %}
+<li> {{ chiffres[i][0] }} {{ drops[i]|component }} {{ chiffres[i][1] }} </li>
+{% endfor %}
 </ul>
 ==
 
