@@ -28,6 +28,15 @@ form==
 		label2
 </div>
 
+<div id = 'label3'
+	class = 'drag'
+	unselectable="on"
+	onselectstart="return false;" 
+	draggable='true'
+	ondragstart="drag(event,'no')">
+		label3
+</div>
+
 <br><br>
 
 
