@@ -31,7 +31,7 @@ form==
 	unselectable="on"
 	onselectstart="return false;" 
 	draggable='true'
-	ondragstart="drag(event,'no')">
+	ondragstart="drag(event,'yes')">
 		label3
 </div>
 
