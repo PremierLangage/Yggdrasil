@@ -10,7 +10,7 @@ from dragdrop import Drop, Label, Drops, Labels, DragDropeval
 import random as rd
 
 numbers = [rd.sample(range(10,100),2) for _ in range (4)]
-lt="&gt;"
+lt="$$>$$"
 gt=r">"
 sol=[lt,gt,gt,lt]
 label=Drops([lt,gt])
