@@ -26,6 +26,7 @@ def DragDropeval(drop,sol):
         else:
             score=0
             drop[i].css = "error-state"
+        drop[i].disabled = True
     return (score,feedback)
 
 
