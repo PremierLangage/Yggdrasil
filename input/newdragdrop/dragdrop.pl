@@ -2,11 +2,7 @@
 @ /builder/before2.py [builder.py]
 @ /grader/evaluator2.py [grader.py]
 
-title = DragDrop 1
-
-text ==
-Etiquettes infinies
-==
+title = DragDrop
 
 
 form==
