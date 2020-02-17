@@ -77,7 +77,6 @@ ev.preventDefault();
 function drag(ev,cloneable) {
 ev.dataTransfer.setData("cloneable",cloneable); 
 ev.dataTransfer.setData("id",ev.target.id);
-ev.dataTransfer.setData("value",document.getElementById('form_'+ev.target.id).value);
 ev.dataTransfer.setData("innerHTML",ev.target.innerHTML);
 }
 
@@ -87,13 +86,9 @@ function drop(ev) {
   var cloneable = ev.dataTransfer.getData("cloneable");
   if (cloneable=='yes') {
   ev.target.innerHTML = ev.dataTransfer.getData("innerHTML");
-  document.getElementById('form_'+ev.target.id).value = ev.dataTransfer.getData("value");
   } else {
   sourceInnerHTML = ev.dataTransfer.getData("innerHTML");
   sourceId = ev.dataTransfer.getData("id");
-  sourceValue = ev.dataTransfer.getData("value");
-  document.getElementById('form_'+sourceId).value = document.getElementById('form_'+ev.target.id).value;
-  document.getElementById('form_'+ev.target.id).value = sourceValue;
   document.getElementById(sourceId).innerHTML = document.getElementById(ev.target.id).innerHTML;
   document.getElementById(ev.target.id).innerHTML = sourceInnerHTML;
   }
