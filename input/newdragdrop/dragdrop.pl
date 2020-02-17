@@ -52,14 +52,24 @@ text==
 ==
 
 form==
-<div id="textselect"
- style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" 
- unselectable="on"
- onselectstart="return false;" 
- onmousedown="return false;">
+<div id = 'label1'
+	class = 'drag'
+	unselectable="on"
+	onselectstart="return false;" 
+	draggable='true'
+	ondragstart="drag(event,'cloneable')">
+		label1
 </div>
-<input id="form_1">
 
+    <div id = 'drop1'
+		class = 'drop'
+		ondrop="drop(event)"
+		ondragover='allowDrop(event)'
+		draggable='true'
+		ondragstart='drag(event)'
+		>
+	drop1
+	</div>
 ==
 
 evaluator==
