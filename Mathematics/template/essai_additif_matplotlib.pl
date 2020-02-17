@@ -1,4 +1,4 @@
-extends = /template/mathbasic.pl
+extends = /template/math_basic.pl
 
 footerbefore +=
 from jinja2 import Template
@@ -32,6 +32,7 @@ for _namevar in list(locals().keys()):
 text ==
 
 ==
+
 
 
 
