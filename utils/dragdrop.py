@@ -10,6 +10,8 @@ def Label(**kwargs):
 def Drops(arg,**kwargs):
     if isinstance(arg,int):
         return [Drop(**kwargs) for i in range(arg)]
+    if isinstance(arg,list):
+        return [Drop(content=content,**kwargs) for content in arg]
 
 def Labels(arg,**kwargs):
     if isinstance(arg,list):
