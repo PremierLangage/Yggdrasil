@@ -7,11 +7,14 @@
 @ /utils/utilsmath2.py [utilsmath.py]
 @ /utils/keyboards.JSON [keyboards.JSON]
 
-title = Title
+title =
 
 maxattempt % 1
 
-text =
+text ==
+
+==
+
 form =
 before =
 evaluator =
