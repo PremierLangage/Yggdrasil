@@ -8,7 +8,7 @@ title =
 before==
 from dragdrop import Drop, Label, Drops, Labels, DragDropeval
 
-numbers = [rd.sample(range(10,100),2)) for in range (4)]
+numbers = [rd.sample(range(10,100),2)) for i in range (4)]
 lt="\<"
 gt="\>"
 sol=[lt,gt,gt,lt]
