@@ -25,7 +25,7 @@ for _ in range(n):
         sol.append(gt)
 
 label = Labels([lt,gt])
-drops = Drops(n)
+drop = Drops(n)
 ==
 
 text==
@@ -35,7 +35,7 @@ Comparer les nombres suivants avec les symboles {{ label[0] | component }} et {
 form==
 <ul>
 {% for i in range(4) %}
-<li> {{ numbers[i][0] }} {{ drops[i]|component }} {{ numbers[i][1] }} </li>
+<li> {{ numbers[i][0] }} {{ drop[i]|component }} {{ numbers[i][1] }} </li>
 {% endfor %}
 </ul>
 ==
