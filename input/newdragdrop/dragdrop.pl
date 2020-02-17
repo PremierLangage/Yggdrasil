@@ -31,15 +31,25 @@ form==
 <br><br>
 
 
-    <div id = 'drop1'
-		class = 'drop'
-		ondrop="drop(event)"
-		ondragover='allowDrop(event)'
-		draggable='true'
-		ondragstart='drag(event)'
-		>
-	drop1
-	</div>
+<div id = 'drop1'
+    class = 'drop'
+    ondrop="drop(event)"
+    ondragover='allowDrop(event)'
+    draggable='true'
+    ondragstart='drag(event)'
+    >
+drop1
+</div>
+
+    <div id = 'drop2'
+    class = 'drop'
+    ondrop="drop(event)"
+    ondragover='allowDrop(event)'
+    draggable='true'
+    ondragstart='drag(event)'
+    >
+drop2
+</div>
 ==
 
 evaluator==
