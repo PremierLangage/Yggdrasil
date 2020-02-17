@@ -12,7 +12,7 @@ lt="\<"
 gt="\>"
 sol=[lt,gt,gt,lt]
 label=Labels([lt,gt])
-drops = Labels([str(i) for i in range(4)],css="myclass")
+drops = Drops(4,css="myclass")
 ==
 
 text==
