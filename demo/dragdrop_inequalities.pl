@@ -42,7 +42,7 @@ grade=DragDropeval(drops,sol)
 extracss == #|html| 
 <style>
     .myclass{
-        padding: 1em;
+        #padding: 1em;
         min-width: 4em;
         }
 </style>
