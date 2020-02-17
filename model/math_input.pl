@@ -1,4 +1,4 @@
-extends = math_basic.pl
+extends = math.pl
 
 input =: MathInput
 
