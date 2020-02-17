@@ -12,7 +12,7 @@ lt="\<"
 gt="\>"
 sol=[lt,gt,gt,lt]
 label=Labels([lt,gt])
-drops = Drops(4)
+drops = Labels([str(i fo in range(4)])
 ==
 
 text==
@@ -38,4 +38,5 @@ evaluator==
 from dragdrop import DragDropeval
 grade=DragDropeval(drops,sol)
 ==
+
 
