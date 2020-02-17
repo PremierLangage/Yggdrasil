@@ -12,9 +12,11 @@ import random as rd
 lt=r"<"
 gt=r">"
 
+n = 4
+
 numbers = []
 sol = []
-for in range(4):
+for _ in range(n):
     [a,b] = rd.sample(range(10,100),2)
     numbers.append([a,b]
     if a < b:
@@ -23,7 +25,7 @@ for in range(4):
         sol.append(gt)
 
 label = Labels([lt,gt])
-drops = Drops(4)
+drops = Drops(n)
 ==
 
 text==
