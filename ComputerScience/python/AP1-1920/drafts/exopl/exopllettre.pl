@@ -45,7 +45,7 @@ if essais > 3:
     l=chr(64+random.randint(1,25))
     grade=(0," trop de tentatives réessayer avec une autre lettre ")
 else:
-    if l+1 == ord(inputbox.value):
+    if ord(l)+1 == ord(inputbox.value):
         grade = (100, " Bravo ")
     else:
         grade=(0," réessayez il vous reste "+str(3-essais) + " essais" )
