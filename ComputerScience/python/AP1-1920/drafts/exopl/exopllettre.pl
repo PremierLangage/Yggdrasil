@@ -39,13 +39,17 @@ essais=0
 
 
 evaluator==
-essais += 1
-if essais > 3:
+def reset():
     essais=0
     l=chr(64+random.randint(1,25))
+
+essais += 1
+if essais > 3:
+    reset()
     grade=(0," trop de tentatives réessayer avec une autre lettre ")
 else:
     if ord(l)+1 == ord(inputbox.value):
+        reset()
         grade = (100, " Bravo ")
     else:
         grade=(0," réessayez il vous reste "+str(3-essais) + " essais" )
