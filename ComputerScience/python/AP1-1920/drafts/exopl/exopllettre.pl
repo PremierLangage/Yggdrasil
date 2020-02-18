@@ -55,7 +55,7 @@ elif len(inputbox.value)!= 1 or ord(inputbox.value)>ord('Z') :
         grade=(-1," saisissez une seule lettre Majuscule. ")
 elif ord(l)+1 == ord(inputbox.value):
         reset()
-        grade = (100, " Bravo ")
+        grade = (100, " Bravo vous avez utiliser "+str(essais)+" essais" )
 else:
         grade=(0," réessayez il vous reste "+str(3-essais) + " essais" )
 
