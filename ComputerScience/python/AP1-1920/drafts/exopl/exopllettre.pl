@@ -14,6 +14,8 @@ inputbox.type = text
 inputbox.placeholder = Answer
 inputbox.maxlength = 1
 inputbox.appearance = outline
+
+
 form==
 {{ inputbox|component}}
 ==
@@ -21,11 +23,11 @@ form==
 
 
 
-title= La lettre suivante 
+title= Les lettres suivantes 
 
 text==
 
-Donner la lettre suivante de {{l}} .
+Donnez les {{n}} lettre(s) suivante de {{l}} .
 
 ==
 
