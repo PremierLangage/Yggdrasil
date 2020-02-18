@@ -40,8 +40,7 @@ essais=0
 
 evaluator==
 def reset():
-    essais=0
-    l=chr(64+random.randint(1,25))
+    exec(before)
 
 essais += 1
 if essais > 3:
