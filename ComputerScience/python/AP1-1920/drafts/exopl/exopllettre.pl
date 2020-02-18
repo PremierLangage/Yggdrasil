@@ -47,6 +47,9 @@ if essais > 3:
     reset()
     grade=(0," trop de tentatives réessayer avec une autre lettre ")
 else:
+    if len(inputbox.value)!= 1 or ord(inputbox.value)>ord('Z') :
+        essais -= 1
+        grade=(-1," saisissez une seule lettre Majuscule. ")
     if ord(l)+1 == ord(inputbox.value):
         reset()
         grade = (100, " Bravo ")
