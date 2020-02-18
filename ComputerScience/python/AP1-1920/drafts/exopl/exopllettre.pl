@@ -14,6 +14,12 @@ inputbox.type = text
 inputbox.placeholder = Answer
 inputbox.maxlength = 1
 inputbox.appearance = outline
+form==
+{{ inputbox|component}}
+==
+
+
+
 
 title= La lettre suivante 
 
@@ -25,17 +31,18 @@ Donner la lettre suivante de {{l}} .
 
 before==
 import random 
-l=chr(64+random.randint(25)) # pas de lettre après z
+l=chr(64+random.randint(1,25)) # pas de lettre après z
 
 essais=0
 ==
 
 
-evalutor==
+
+evaluator==
 essais += 1
 if essais > 3:
     essais=0
-    l=chr(64+random.randint(25))
+    l=chr(64+random.randint(1,25))
     grade=(0," trop de tentatives réessayer avec une autre lettre ")
 else:
     if l+1 == ord(inputbox.value):
