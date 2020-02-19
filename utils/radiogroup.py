@@ -31,10 +31,10 @@ class CustomRadioGroup(Component):
         selectedId = self.selection
         for e in self.items:
             if e['id'] == self._sol:
+                score = 100
                 e['content'] += r"<span class='fas fa-check' style='padding-left: 1em'></span>"
                 if e['id'] == selectedId:
                     e['css'] = 'success-state'
-                    score = 100
             elif e['id'] == selectedId:
                 score = 0
                 e['css'] = 'error-state'
