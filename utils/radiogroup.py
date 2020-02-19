@@ -7,10 +7,10 @@ class CustomRadioGroup(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-radio-group'
         self.decorator = 'CustomRadioGroup'
-        self.items = []
         super().__init__(**kwargs)
 
     def loaditems(self, lstcontent):
+        self.items = []
         for content in lstcontent:
             self.items.append({"id": str(uuid.uuid4()),"content": content})
 
