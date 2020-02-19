@@ -12,18 +12,15 @@ class Checkbox(Component):
         self._sol = []
         super().__init__(**kwargs)
 
-    def set_sol_by_index(self,index):
+    def setsol(self,index):
         self._sol=[self.items[i]['id'] for i in index]
 
-    def set_sol_by_content(self,content):
+    def setsol_bycontent(self,content):
         self._sol=[item['id'] for item in self.items if item['content'] in content]
 
-    def loaditems(self, content):
-        items = []
-        for e in content:
-            id = str(uuid.uuid4())
-            self.content[id] = e
-            self.items.append({"id": id,"content": e})
+    def loaditems(self, lstcontent):
+        for content in lstcontent:
+            self.items.append({"id": str(uuid.uuid4()),"content": content})
 
     def loadrightwrong(self, right, wrong, nchoices, nright):
         self.loaditems(rd.sample(right,nright)+rd.sample(wrong,nchoices-nright))
