@@ -18,10 +18,10 @@ class CustomRadioGroup(Component):
             self.content[id] = e
             self.items.append({"id": id,"content": e})
 
-    def set_sol_by_index(self,index):
+    def setsol(self,index):
         self._sol=self.items[index]['id']
 
-    def set_sol_by_content(self,content):
+    def setsolcontent(self,content):
         self._sol=next(item['id'] for item in self.items if item['content'] in content)
 
     def shuffle(self):
@@ -45,6 +45,7 @@ class CustomRadioGroup(Component):
                 e['content'] = self.content[e['id']] + r"<span class='fas fa-times' style='padding-left: 1em'></span>"
         self.disabled=True
         return (score, "")
+
 
 
 
