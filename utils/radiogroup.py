@@ -27,7 +27,7 @@ class CustomRadioGroup(Component):
     def sort(self):
         rd.sort(self.items)
 
-    def eval(self):
+    def eval(self,**kwargs):
         score = 0
         selectedId = self.selection
         for e in self.items:
