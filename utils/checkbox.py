@@ -21,7 +21,7 @@ class Checkbox(Component):
         for content in lstcontent:
             self.items.append({"id": str(uuid.uuid4()),"content": content})
 
-    def loadrightwrong(self, right, wrong, nchoices, nright):
+    def loadrw(self, right, wrong, nchoices, nright):
         self.loaditems(rd.sample(right,nright)+rd.sample(wrong,nchoices-nright))
         self.set_sol_by_index(list(range(nright)))
         self.shuffle()
@@ -43,39 +43,42 @@ class Checkbox(Component):
 
         for item in self.items:
             if item['id'] in self._sol and item['checked']:
-                right+=1
+                right += 1
                 if display:
                     item['css'] = 'success-state'
                     item['content'] += r"<span class='fas fa-check' style='padding-left: 1em'></span>"
             elif not (item['id'] in self._sol) and item['checked']:
-                wrong+=1
+                wrong += 1
                 if display:
                     item['css'] = 'error-state'
                     item['content'] += r"<span class='fas fa-times' style='padding-left: 1em'></span>"
             elif item['id'] in self._sol and not item['checked']:
-                missed+=1
+                missed += 1
                 if display:
                     item['content'] += r"<span class='fas fa-check' style='padding-left: 1em'></span>"
         
         grading = kwargs.get('grading', "RightMinusWrong")
-        if grading=="AllOrNothing":
-            if wrong==0 and right==0:
-                score=100
+
+        if grading == "AllOrNothing":
+            if wrong == 0 and right == 0:
+                score = 100
             else:
-                score=0
-        elif grading=="RightMinusWrong":
-            if right+missed==0:
-                if wrong==0:
-                    score=100
+                score = 0
+        elif grading == "RightMinusWrong":
+            if right+missed == 0:
+                if wrong == 0:
+                    score = 100
                 else:
-                    score=0
+                    score = 0
             else:
-                score=max([round((right-wrong)/(right+missed)*100),0])
-        elif grading=="CorrectAnswers":
-            nitems=len(self.items)
-            score=max([round((nitems-2*(wrong+right))/nitems*100),0])
-        self.disabled=True
-        return (score,"")
+                score = max([round((right-wrong)/(right+missed)*100),0])
+        elif grading == "CorrectAnswers":
+            nitems = len(self.items)
+            score = max([round((nitems-2*(wrong+right))/nitems*100),0])
+
+        self.disabled = True
+
+        return (score, "")
 
 
 
