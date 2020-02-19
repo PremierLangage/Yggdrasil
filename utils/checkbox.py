@@ -15,7 +15,7 @@ class Checkbox(Component):
     def setsol(self,index):
         self._sol=[self.items[i]['id'] for i in index]
 
-    def setsol_bycontent(self,content):
+    def setsol_by_content(self,content):
         self._sol=[item['id'] for item in self.items if item['content'] in content]
 
     def loaditems(self, lstcontent):
@@ -47,7 +47,8 @@ class Checkbox(Component):
                 item['css'] = 'error-state'
                 item['content'] = self.content[item['id']] + r"<span class='fas fa-times' style='padding-left: 1em'></span>"
                 checkwrong+=1
-
+        
+        grading = kwargs.get('check', "RightMinusWrong")
         if grading=="AllOrNothing":
             if checkwrong==0 and missright==0:
                 score=100
