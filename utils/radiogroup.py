@@ -15,10 +15,10 @@ class CustomRadioGroup(Component):
         for content in lstcontent:
             self.items.append({"id": str(uuid.uuid4()),"content": content})
 
-    def setsol(self,index):
+    def setsol_index(self,index):
         self._sol=self.items[index]['id']
 
-    def setsolbycontent(self,content):
+    def setsol_content(self,content):
         self._sol=next(item['id'] for item in self.items if item['content'] in content)
 
     def shuffle(self):
