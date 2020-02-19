@@ -7,7 +7,6 @@ class Checkbox(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-checkbox-group'
         self.decorator = 'CustomCheckboxGroup'
-        self.content = {}
         self.items = []
         self._sol = []
         super().__init__(**kwargs)
@@ -37,6 +36,9 @@ class Checkbox(Component):
         """
         Evaluate the answer stored in the component.
         """
+
+        display = kwargs.get('display', True)
+
         right,wrong,missed=0,0,0
 
         for item in self.items:
@@ -51,22 +53,12 @@ class Checkbox(Component):
                     item['css'] = 'error-state'
                     item['content'] += r"<span class='fas fa-times' style='padding-left: 1em'></span>"
             elif item['id'] in self._sol and not item['checked']:
-                idmissed.append(item['id'])
                 missed+=1
-
-        for id in idright:
-            self.items[id]['css'] = 'success-state'
-            ['content'] = self.content[item['id']] + r"<span class='fas fa-check' style='padding-left: 1em'></span>"
-                checkright+=1
-            elif item['id'] in self._sol and not item['checked']:
-                item['content'] = self.content[item['id']] + r"<span class='fas fa-check' style='padding-left: 1em'></span>"
-                missright+=1
-            elif not (item['id'] in self._sol) and item['checked']:
-                item['css'] = 'error-state'
-                item['content'] = self.content[item['id']] + r"<span class='fas fa-times' style='padding-left: 1em'></span>"
-                checkwrong+=1
+                if display:
+                    item['css'] = 'success-state'
+                    item['content'] += r"<span class='fas fa-check' style='padding-left: 1em'></span>"
         
-        grading = kwargs.get('check', "RightMinusWrong")
+        grading = kwargs.get('grading', "RightMinusWrong")
         if grading=="AllOrNothing":
             if wrong==0 and right==0:
                 score=100
@@ -79,7 +71,7 @@ class Checkbox(Component):
                 else:
                     score=0
             else:
-                score=max([round((right-wrong)/(right+right)*100),0])
+                score=max([round((right-wrong)/(right+missed)*100),0])
         elif grading=="CorrectAnswers":
             nitems=len(self.items)
             score=max([round((nitems-2*(wrong+right))/nitems*100),0])
