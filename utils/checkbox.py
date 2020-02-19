@@ -21,7 +21,7 @@ class Checkbox(Component):
         for content in lstcontent:
             self.items.append({"id": str(uuid.uuid4()),"content": content})
 
-    def loadrw(self, right, wrong, nchoices, nright):
+    def loadrw(self, right, wrong, nitems, nright):
         self.loaditems(rd.sample(right,nright)+rd.sample(wrong,nchoices-nright))
         self.set_sol_by_index(list(range(nright)))
         self.shuffle()
