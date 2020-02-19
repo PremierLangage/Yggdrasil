@@ -18,8 +18,8 @@ sample_rows=rd.sample(all_rows,4)
 pays=sample_rows[0]['pays']
 article=sample_rows[0]['article']
 
-radio.load_choices([row['capitale'] for row in sample_rows])
-radio.set_sol_by_index(0)
+radio.loaditems([row['capitale'] for row in sample_rows])
+radio.setsol_index(0)
 radio.shuffle()
 
 partitif = {"le":"du ", "la":"de la ", "les":"des ", "l":"de l'"}
@@ -43,6 +43,7 @@ form ==
 evaluator ==
 grade = radio.eval()
 ==
+
 
 
 
