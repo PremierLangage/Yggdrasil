@@ -22,7 +22,7 @@ class Checkbox(Component):
             self.items.append({"id": str(uuid.uuid4()),"content": content})
 
     def loadrw(self, right, wrong, nitems, nright):
-        self.loaditems(rd.sample(right,nright)+rd.sample(wrong,nchoices-nright))
+        self.loaditems(rd.sample(right,nright)+rd.sample(wrong,nitems-nright))
         self.set_sol_by_index(list(range(nright)))
         self.shuffle()
 
