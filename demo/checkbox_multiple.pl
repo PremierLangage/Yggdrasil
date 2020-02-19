@@ -25,8 +25,9 @@ form ==
 ==
 
 evaluator ==
-grade = checkbox.eval()
+grade = checkbox.eval(grading="AllOrNothing")
 ==
+
 
 
 
