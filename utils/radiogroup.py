@@ -29,23 +29,17 @@ class CustomRadioGroup(Component):
     def eval(self,**kwargs):
         score = 0
         selectedId = self.selection
-        
-        for item in self.items:
-            if item['id'] in self._sol and item['checked']:
-                right += 1
-                if display:
-                    item['css'] = 'success-state'
-                    item['content'] += r"<span class='fas fa-check' style='padding-left: 1em'></span>"
-            elif not (item['id'] in self._sol) and item['checked']:
-                wrong += 1
-                if display:
-                    item['css'] = 'error-state'
-                    item['content'] += r"<span class='fas fa-times' style='padding-left: 1em'></span>"
-            elif item['id'] in self._sol and not item['checked']:
-                missed += 1
-                if display:
-                    item['content'] += r"<span class='fas fa-check' style='padding-left: 1em'></span>"
- self.disabled=True
+        for e in self.items:
+            if e['id'] == self._sol:
+                e['content'] += r"<span class='fas fa-check' style='padding-left: 1em'></span>"
+                if e['id'] == selectedId:
+                    e['css'] = 'success-state'
+                    score = 100
+            elif e['id'] == selectedId:
+                score = 0
+                e['css'] = 'error-state'
+                e['content'] += r"<span class='fas fa-times' style='padding-left: 1em'></span>"
+        self.disabled=True
         return (score, "")
 
 
