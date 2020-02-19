@@ -6,7 +6,7 @@ before ==
 import random as rd
 mult3 = [str(n) for n in range(50,100) if n % 3 == 0]
 other = [str(n) for n in range(50,100) if n % 3 != 0]
-checkbox.loadrightwrong(mult3,other,5,rd.randint(1,4))
+checkbox.loadrw(mult3,other,5,rd.randint(1,4))
 ==
 
 text ==
