@@ -11,17 +11,14 @@ class CustomRadioGroup(Component):
         self.content = {}
         super().__init__(**kwargs)
 
-    def load_choices(self, content):
-        items = []
-        for e in content:
-            id = str(uuid.uuid4())
-            self.content[id] = e
-            self.items.append({"id": id,"content": e})
+    def loaditems(self, lstcontent):
+        for content in lstcontent:
+            self.items.append({"id": str(uuid.uuid4()),"content": content})
 
     def setsol(self,index):
         self._sol=self.items[index]['id']
 
-    def setsolcontent(self,content):
+    def setsolbycontent(self,content):
         self._sol=next(item['id'] for item in self.items if item['content'] in content)
 
     def shuffle(self):
@@ -45,6 +42,7 @@ class CustomRadioGroup(Component):
                 e['content'] = self.content[e['id']] + r"<span class='fas fa-times' style='padding-left: 1em'></span>"
         self.disabled=True
         return (score, "")
+
 
 
 
