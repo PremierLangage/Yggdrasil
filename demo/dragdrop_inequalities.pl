@@ -42,7 +42,7 @@ form==
 
 evaluator==
 from dragdrop import DragDropeval
-grade=DragDropeval(drops,sol)
+grade=DragDropeval(drop,sol)
 ==
 
 extracss == #|html| 
