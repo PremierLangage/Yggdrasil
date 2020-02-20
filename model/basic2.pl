@@ -31,7 +31,7 @@ function addElement () {
   var newContent = document.createTextNode('Hi there and greetings!');
   // ajoute le nœud texte au nouveau div créé
   newDiv.appendChild(newContent);
-  
+  alert('coucou')
   document.body.appendChild(newDiv);
 }
 
