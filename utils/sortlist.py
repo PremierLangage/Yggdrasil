@@ -12,7 +12,7 @@ class CustomSortList(Component):
         self._feedback = {}
         super().__init__(**kwargs)
 
-    def load_items(self,lst):
+    def loadlist(self,lst):
         self.items = []
         self._order = []
         self._feedback = {}
@@ -64,4 +64,5 @@ class CustomSortList(Component):
 # lien du tooltip qui ouvre la racine du site
 # disabled qui désactive le tooltip
 # extrajs
+
 
