@@ -35,7 +35,7 @@ extrajs==
         const { origin, pathname }  = document.location;
         const link = origin + pathname;
 
-        const buttons = actions.find('.btn-group');
+        const buttons = nodes.find('.exercise__body');
         buttons.append(`
 <div class="d-flex justify-content-between">
 <div>
