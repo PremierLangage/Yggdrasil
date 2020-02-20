@@ -32,9 +32,7 @@ function addElement () {
   // ajoute le nœud texte au nouveau div créé
   newDiv.appendChild(newContent);
   
-  // ajoute le nouvel élément créé et son contenu dans le DOM
-  var currentDiv = document.getElementById('div1');
-  document.body.insertBefore(newDiv, currentDiv);
+  document.body.appendChild(newDiv);
 }
 
     function onReadyPL(nodes) {
