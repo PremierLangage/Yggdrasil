@@ -23,10 +23,25 @@ extrajs==
 </style>
 <script> 
     function onReadyPL(nodes) {
+        const actions = nodes.actions;
+        actions.find('.action-save').hide();
+        actions.find('.action-reset').hide();
+        actions.find('.action-next').hide();
 
+        alert(nodes)
+
+        const { origin, pathname }  = document.location;
+        const link = origin + pathname;
+
+        const buttons = actions.find('.btn-group');
+        buttons.append(`
+            <a type="button" class="btn btn-warning action-reroll" href="`+link+`?action=reroll">
+                <i class="fas fa-dice"></i> Nouveau tirage
+            </a>
+        `);
         var elemDiv = document.createElement('div');
         elemDiv.innerHTML = 'coucou';
-        nodes.appendChild(elemDiv); 
+        nodes.append("coucou"); 
   
 }
 </script>
