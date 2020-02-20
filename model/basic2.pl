@@ -27,9 +27,13 @@ extrajs==
 
         const buttons = actions.find('.btn-group');
         buttons.append(`
-            <a type="button" class="btn btn-warning action-reroll" href="`+link+`?action=reroll">
-                <i class="fas fa-dice"></i> Nouveau tirage
-            </a>
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+  </ion-buttons>
+  <ion-title>Back Button</ion-title>
+</ion-toolbar>
+
         `);
   
 }
