@@ -22,39 +22,11 @@ extrajs==
 }
 </style>
 <script> 
-document.body.onload = addElement;
-
-function addElement () {
-  // crée un nouvel élément div
-  var newDiv = document.createElement("div");
-  // et lui donne un peu de contenu
-  var newContent = document.createTextNode('Hi there and greetings!');
-  // ajoute le nœud texte au nouveau div créé
-  newDiv.appendChild(newContent);
-  alert('coucou')
-  document.body.appendChild(newDiv);
-}
-
     function onReadyPL(nodes) {
-        const actions = nodes.actions;
-        actions.find('.action-save').hide();
-        actions.find('.action-reset').hide();
-        actions.find('.action-next').hide();
 
-
-
-        const { origin, pathname }  = document.location;
-        const link = origin + pathname;
-
-        const buttons = actions.find('.btn-group');
-        buttons.append(`
-            <a type="button" class="btn btn-warning action-reroll" href="`+link+`?action=reroll">
-                <i class="fas fa-dice"></i> Nouveau tirage
-            </a>
-        `);
         var elemDiv = document.createElement('div');
         elemDiv.innerHTML = 'coucou';
-        buttons.append("coucou"); 
+        nodes.append(elemDiv); 
   
 }
 </script>
