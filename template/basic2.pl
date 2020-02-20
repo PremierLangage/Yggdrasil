@@ -35,7 +35,7 @@ extrajs==
         const { origin, pathname }  = document.location;
         const link = origin + pathname;
 
-        const buttons = actions.find('.btn-group');
+        const buttons = nodes.find('.exercise__actions');
         buttons.append(`
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
