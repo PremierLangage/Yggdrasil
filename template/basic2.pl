@@ -37,7 +37,7 @@ extrajs==
 
         const buttons = actions.find('.btn-group');
         buttons.append(`
-<nav class="navbar navbar-expand-md navbar-dark w-100 bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
         <ul class="navbar-nav mr-auto">
                 <button class="btn btn-primary action-submit">
