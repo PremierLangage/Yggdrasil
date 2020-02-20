@@ -26,7 +26,7 @@ extrajs==
 
         var elemDiv = document.createElement('div');
         elemDiv.innerHTML = 'coucou';
-        nodes.append("cocou"); 
+        nodes.appendChild(elemDiv); 
   
 }
 </script>
