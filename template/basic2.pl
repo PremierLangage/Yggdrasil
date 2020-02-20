@@ -37,25 +37,13 @@ extrajs==
 
         const buttons = actions.find('.btn-group');
         buttons.append(`
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark w-100 bg-dark">
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Left</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="//codeply.com">Codeply</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-        </ul>
+                <button class="btn btn-primary action-submit">
+                    <i class="fas fa-check"></i>
+                    <span class="ion-hide-md-down">Valider</span>
+                </button>
     </div>
     <div class="mx-auto order-0">
         <a class="navbar-brand mx-auto" href="#">Navbar 2</a>
