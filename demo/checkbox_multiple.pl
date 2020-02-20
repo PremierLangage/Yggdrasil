@@ -2,6 +2,7 @@ extends = /model/basic.pl
 
 title = QCM : Multiples de 3
 
+
 before ==
 import random as rd
 mult3 = [str(n) for n in range(50,100) if n % 3 == 0]
@@ -12,7 +13,6 @@ checkbox.loadrw(mult3,other,5,rd.randint(1,4))
 text ==
 Parmi les nombres suivants, lesquels sont des multiples de 3 ?
 ==
-
 
 checkbox =: CheckboxGroup
 @ /utils/checkbox.py [checkbox.py]
@@ -25,7 +25,7 @@ form ==
 ==
 
 evaluator ==
-grade = checkbox.eval(display=False,grading="AllOrNothing")
+grade = checkbox.eval(grading="AllOrNothing")
 ==
 
 
