@@ -22,16 +22,17 @@ extrajs==
 }
 </style>
 <script>
+        var elemDiv = document.createElement('div');
+        elemDiv.innerHTML = 'coucou';
+        document.body.appendChild(elemDiv);  
     function onReadyPL(nodes) {
         const actions = nodes.actions;
         actions.find('.action-save').hide();
         actions.find('.action-reset').hide();
         actions.find('.action-next').hide();
 
-        const elemDiv = document.createElement('div');
-        elemDiv.innerHTML = 'coucou';
-        document.body.appendChild(elemDiv);  
-        
+
+
         const { origin, pathname }  = document.location;
         const link = origin + pathname;
 
