@@ -13,7 +13,21 @@ form =
 evaluator ==
 grade=(100,"")
 ==
-
+form ==
+<div class="d-flex justify-content-between">
+<div>
+<button class="btn btn-primary action-submit">
+<i class="fas fa-check"></i>
+<span class="ion-hide-md-down">Valider</span>
+</button>
+</div>
+<div>
+</div>
+<div>
+<span class="badge badge-info">Score : 100 </span>
+</div>
+</div>
+==
 extrajs==
 <style>
 .btn {
@@ -37,19 +51,7 @@ extrajs==
 
         const buttons = nodes.find('.exercise__body');
         buttons.append(`
-<div class="d-flex justify-content-between">
-<div>
-<button class="btn btn-primary action-submit">
-<i class="fas fa-check"></i>
-<span class="ion-hide-md-down">Valider</span>
-</button>
-</div>
-<div>
-</div>
-<div>
-<span class="badge badge-info">Score : 100 </span>
-</div>
-</div>
+
         `);
         {% if score >-1 %}
         const submit = actions.find('.action-submit');
