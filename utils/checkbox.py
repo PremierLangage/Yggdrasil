@@ -11,10 +11,10 @@ class Checkbox(Component):
         self._sol = []
         super().__init__(**kwargs)
 
-    def setsol(self,index):
+    def setsol_index(self,index):
         self._sol=[self.items[i]['id'] for i in index]
 
-    def setsol_by_content(self,content):
+    def setsol_content(self,content):
         self._sol=[item['id'] for item in self.items if item['content'] in content]
 
     def loaditems(self, lstcontent):
@@ -23,7 +23,7 @@ class Checkbox(Component):
 
     def loadrw(self, right, wrong, nitems, nright):
         self.loaditems(rd.sample(right,nright)+rd.sample(wrong,nitems-nright))
-        self.setsol(list(range(nright)))
+        self.setsol_index(list(range(nright)))
         self.shuffle()
 
     def shuffle(self):
@@ -46,16 +46,16 @@ class Checkbox(Component):
                 right += 1
                 if display:
                     item['css'] = 'success-state'
-                    item['content'] += r"<span class='fas fa-check' style='padding-left: 1em'></span>"
+                    item['content'] += r"<span style='color:green' class='fas fa-check' style='padding-left: 1em'></span>"
             elif not (item['id'] in self._sol) and item['checked']:
                 wrong += 1
                 if display:
                     item['css'] = 'error-state'
-                    item['content'] += r"<span class='fas fa-times' style='padding-left: 1em'></span>"
+                    item['content'] += r"<span style='color:red' class='fas fa-times' style='padding-left: 1em'></span>"
             elif item['id'] in self._sol and not item['checked']:
                 missed += 1
                 if display:
-                    item['content'] += r"<span class='fas fa-check' style='padding-left: 1em'></span>"
+                    item['content'] += r"<span style='color:green' class='fas fa-check' style='padding-left: 1em'></span>"
         
         grading = kwargs.get('grading', "RightMinusWrong")
 
