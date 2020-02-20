@@ -51,7 +51,7 @@ class Checkbox(Component):
                 wrong += 1
                 if display:
                     item['css'] = 'error-state'
-                    item['content'] += r"<span class='fas fa-times' style='color:red; padding-left: 1em'></span>"
+                    item['content'] += r"<span class='text-danger fas fa-times' style='padding-left: 1em'></span>"
             elif item['id'] in self._sol and not item['checked']:
                 missed += 1
                 if display:
