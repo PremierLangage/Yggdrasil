@@ -21,6 +21,7 @@ extrajs==
     margin: 0px 4px !important;
 }
 </style>
+<script>
 const buttons = actions.find('.btn-group');
 buttons.append(`
     <a type="button" class="btn btn-warning action-reroll" href="`+link+`?action=reroll">
