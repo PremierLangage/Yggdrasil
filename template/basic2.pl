@@ -30,7 +30,7 @@ extrajs==
         actions.find('.action-reset').hide();
         actions.find('.action-next').hide();
         actions.find('.action-submit').hide();
-        actions.find('.action-download').hide();
+        actions.find('.action-download-env').hide();
 
         const { origin, pathname }  = document.location;
         const link = origin + pathname;
