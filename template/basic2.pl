@@ -37,13 +37,19 @@ extrajs==
 
         const buttons = actions.find('.btn-group');
         buttons.append(`
-<nav class="navbar navbar-expand-md navbar-light bg-light">
-                 <button class="btn btn-primary action-submit">
-                    <i class="fas fa-check"></i>
-                    <span class="ion-hide-md-down">Valider</span>
-                </button>
-                <span class="badge badge-info">Score : 100 </span>
-</nav>
+<div class="d-flex justify-content-between">
+<div>
+<button class="btn btn-primary action-submit">
+<i class="fas fa-check"></i>
+<span class="ion-hide-md-down">Valider</span>
+</button>
+</div>
+<div>
+</div>
+<div>
+<span class="badge badge-info">Score : 100 </span>
+</div>
+</div>
         `);
         {% if score >-1 %}
         const submit = actions.find('.action-submit');
