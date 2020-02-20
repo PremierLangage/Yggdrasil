@@ -20,11 +20,11 @@ form ==
 <i class="fas fa-check"></i>
 <span class="ion-hide-md-down">Valider</span>
 </button>
-</div>
-<div>
-</div>
-<div>
 <span class="badge badge-info">Score : 100 </span>
+</div>
+<div>
+</div>
+<div>
 </div>
 </div>
 ==
