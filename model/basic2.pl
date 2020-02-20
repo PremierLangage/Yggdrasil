@@ -31,7 +31,7 @@ extrajs==
         const { origin, pathname }  = document.location;
         const link = origin + pathname;
 
-        const buttons = actions.find('.app');
+        const buttons = actions.find('.app-content');
         buttons.append(`
             <a type="button" class="btn btn-warning action-reroll" href="`+link+`?action=reroll">
                 <i class="fas fa-dice"></i> Nouveau tirage
