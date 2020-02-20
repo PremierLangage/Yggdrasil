@@ -21,17 +21,16 @@ extrajs==
     margin: 0px 4px !important;
 }
 </style>
-<script>
-        var elemDiv = document.createElement('div');
-        elemDiv.innerHTML = 'coucou';
-        document.body.appendChild(elemDiv);  
+<script> 
     function onReadyPL(nodes) {
         const actions = nodes.actions;
         actions.find('.action-save').hide();
         actions.find('.action-reset').hide();
         actions.find('.action-next').hide();
 
-
+        var elemDiv = document.createElement('div');
+        elemDiv.innerHTML = 'coucou';
+        document.body.appendChild(elemDiv); 
 
         const { origin, pathname }  = document.location;
         const link = origin + pathname;
