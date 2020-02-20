@@ -46,7 +46,7 @@ class Checkbox(Component):
                 right += 1
                 if display:
                     item['css'] = 'success-state'
-                    item['content'] += r"<span class='fas fa-check' style='color:green;padding-left: 1em'></span>"
+                    item['content'] += r"<span class='text-success fas fa-check' style='padding-left: 1em'></span>"
             elif not (item['id'] in self._sol) and item['checked']:
                 wrong += 1
                 if display:
@@ -55,7 +55,7 @@ class Checkbox(Component):
             elif item['id'] in self._sol and not item['checked']:
                 missed += 1
                 if display:
-                    item['content'] += r"<span class='fas fa-check' style='color:green; padding-left: 1em'></span>"
+                    item['content'] += r"<span class='text-success fas fa-check' style='padding-left: 1em'></span>"
         
         grading = kwargs.get('grading', "RightMinusWrong")
 
