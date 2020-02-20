@@ -1,10 +1,10 @@
 @ /utils/sandboxio.py
 @ /ComputerScience/python/AP1-1920/templates/generic/builder.py
-@ /ComputerScience/python/AP1-1920/templates/genericgrader.py
-@ /ComputerScience/python/AP1-1920/templates/genericutils/test.py
-@ /ComputerScience/python/AP1-1920/templates/genericutils/mockinput.py
-@ /ComputerScience/python/AP1-1920/templates/generictestgroup.html
-@ /ComputerScience/python/AP1-1920/templates/generictestitem.html
+@ /ComputerScience/python/AP1-1920/templates/generic/grader.py
+@ /ComputerScience/python/AP1-1920/templates/generic/utils/test.py
+@ /ComputerScience/python/AP1-1920/templates/generic/utils/mockinput.py
+@ /ComputerScience/python/AP1-1920/templates/generic/testgroup.html
+@ /ComputerScience/python/AP1-1920/templates/generic/testitem.html
 
 title = <em>(Pas de titre défini)</em>
 text = <em>(Pas d'énoncé défini)</em>
