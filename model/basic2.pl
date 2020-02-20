@@ -41,7 +41,7 @@ extrajs==
         `);
         var elemDiv = document.createElement('div');
         elemDiv.innerHTML = 'coucou';
-        buttons.appendChild(elemDiv); 
+        buttons.append("coucou"); 
   
 }
 </script>
