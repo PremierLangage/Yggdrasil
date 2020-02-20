@@ -24,14 +24,6 @@ extrajs==
 <script> 
     function onReadyPL(nodes) {
         const actions = nodes.actions;
-        actions.find('.action-save').hide();
-        actions.find('.action-reset').hide();
-        actions.find('.action-next').hide();
-
-        alert(nodes.app)
-
-        const { origin, pathname }  = document.location;
-        const link = origin + pathname;
 
         const buttons = actions.find('.btn-group');
         buttons.append(`
@@ -39,9 +31,6 @@ extrajs==
                 <i class="fas fa-dice"></i> Nouveau tirage
             </a>
         `);
-        var elemDiv = document.createElement('div');
-        elemDiv.innerHTML = 'coucou';
-        nodes.document.append("coucou"); 
   
 }
 </script>
