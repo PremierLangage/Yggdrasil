@@ -37,15 +37,19 @@ extrajs==
 
         const buttons = actions.find('.btn-group');
         buttons.append(`
-         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <form class="form-inline" action="/action_page.php">
-    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <a type="button" class="btn btn-warning action-reroll" href="`+link+`?action=reroll">
-                <i class="fas fa-dice"></i> Nouveau tirage
-            </a>
-            </form>
-</nav> 
-
+<nav class="navbar navbar-expand-sm bg-light">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 3</a>
+    </li>
+  </ul>
+</nav>
         `);
         {% if score >-1 %}
         const submit = actions.find('.action-submit');
