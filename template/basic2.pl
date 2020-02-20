@@ -39,7 +39,7 @@ extrajs==
         buttons.append(`
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav w-100 mr-auto">
                 <button class="btn btn-primary action-submit">
                     <i class="fas fa-check"></i>
                     <span class="ion-hide-md-down">Valider</span>
