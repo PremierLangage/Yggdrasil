@@ -28,7 +28,7 @@ extrajs==
         actions.find('.action-reset').hide();
         actions.find('.action-next').hide();
 
-        alert(nodes)
+        alert(nodes.app)
 
         const { origin, pathname }  = document.location;
         const link = origin + pathname;
