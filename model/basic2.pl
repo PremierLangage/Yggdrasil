@@ -37,8 +37,10 @@ extrajs==
                 <i class="fas fa-dice"></i> Nouveau tirage
             </a>
         `);
-        document.body.innerHTML += "Coucou"
-    }
+        var elemDiv = document.createElement('div');
+        elemDiv.innerHTML = 'coucou';
+        document.body.appendChild(elemDiv);    
+}
 </script>
 ==
 
