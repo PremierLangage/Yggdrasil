@@ -42,6 +42,7 @@ extrajs==
                     <i class="fas fa-check"></i>
                     <span class="ion-hide-md-down">Valider</span>
                 </button>
+                <span class="badge badge-info">Score : 100 </span>
 </nav>
         `);
         {% if score >-1 %}
@@ -51,4 +52,5 @@ extrajs==
     }
 </script>
 ==
+
 
