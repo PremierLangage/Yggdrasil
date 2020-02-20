@@ -28,9 +28,7 @@ extrajs==
         actions.find('.action-reset').hide();
         actions.find('.action-next').hide();
 
-        var elemDiv = document.createElement('div');
-        elemDiv.innerHTML = 'coucou';
-        document.body.appendChild(elemDiv); 
+
 
         const { origin, pathname }  = document.location;
         const link = origin + pathname;
@@ -41,6 +39,9 @@ extrajs==
                 <i class="fas fa-dice"></i> Nouveau tirage
             </a>
         `);
+        var elemDiv = document.createElement('div');
+        elemDiv.innerHTML = 'coucou';
+        buttons.appendChild(elemDiv); 
   
 }
 </script>
