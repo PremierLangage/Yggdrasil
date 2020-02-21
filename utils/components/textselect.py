@@ -79,15 +79,3 @@ class CustomTextSelect(Component):
         self.disabled = True
 
         return (score, "")
-
-    def eval(self,**kwargs):
-        score=100
-        for e in self.selections:
-            if e['index'] in self._indexsol:
-                e['css'] = "success-state"
-            else:
-                e['css'] = "error-state"
-
-
-        return (score,"")
-
