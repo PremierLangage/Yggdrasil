@@ -18,6 +18,13 @@ evaluator ==
 grade=(100,"")
 ==
 form ==
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand">Navbar</a>
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
 <div class="d-flex justify-content-between">
 <div>
 <button class="btn btn-primary action-submit" data-toggle="popover" data-placement="bottom" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
