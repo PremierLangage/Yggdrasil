@@ -12,21 +12,36 @@ class CustomRadio(Component):
         super().__init__(**kwargs)
 
     def loaditems(self, lstcontent):
+        """
+        Load items in the component.
+        """
         for content in lstcontent:
             id = str(uuid4())
             self._content[id] = content
             self.items.append({"id": id ,"content": content})
 
     def setsol_index(self, index):
+        """
+        Set a solution in the component.
+        """
         self._sol=self.items[index]['id']
 
     def setsol_content(self, content):
+        """
+        Set a solution in the component.
+        """
         self._sol=next(item['id'] for item in self.items if item['content'] in content)
 
     def shuffle(self):
+        """
+        Shuffle the component items.
+        """
         rd.shuffle(self.items)
 
     def sort(self):
+        """
+        Sort the component items.
+        """
         self.items.sort(key = lambda item : item['content'])
 
     def eval(self, **kwargs):
