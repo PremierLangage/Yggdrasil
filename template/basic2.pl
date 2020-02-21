@@ -19,10 +19,13 @@ grade=(100,"")
 ==
 form ==
 <nav class="navbar navbar-light bg-light">
+<div class="container">
 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Valider</button>
   <span class="navbar-text">
     Score : -
   </span>
+</div>
+
   <a class="navbar-brand">Navbar</a>
 
 </nav>
