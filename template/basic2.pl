@@ -19,7 +19,7 @@ grade=(100,"")
 ==
 form ==
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#exampleModal">Valider</button>
      <span class="navbar-text">
     Score : - 
   </span>
