@@ -26,6 +26,9 @@ class CustomRadio(Component):
     def shuffle(self):
         rd.shuffle(self.items)
 
+    def shuffle(self):
+        sorted(self.items, key = lambda item : item['content'])
+
     def eval(self, **kwargs):
         """
         Evaluate the answer stored in the component.
