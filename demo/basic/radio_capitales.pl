@@ -17,7 +17,7 @@ pays = sample_rows[0]['pays']
 article = sample_rows[0]['article']
 
 radio.loaditems([row['capitale'] for row in sample_rows])
-radio.setsol_index(0)
+radio.setsol_index(sample_rows[0]['capitale'])
 radio.shuffle()
 
 partitif = {"le":"du ", "la":"de la ", "les":"des ", "l":"de l'"}
