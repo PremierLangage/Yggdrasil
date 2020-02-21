@@ -38,6 +38,52 @@ class CustomTextSelect(Component):
         self.text,self._indexsol=read_text_bracket(bracket_words(text))
 
     def eval(self,**kwargs):
+        """
+        Evaluate the answer stored in the component.
+        """
+
+        display = kwargs.get('display', True)
+
+        right,wrong,missed=0,0,0
+
+        for unit in self.selections:
+            if unit in self._indexsol:
+                right += 1
+                if display:
+                    unit['css'] = 'success-state'
+            else:
+                wrong += 1
+                if display:
+                    unit['css'] = 'error-state'
+        for unit in self._indexsol:
+            if unit not in self.selections:
+                missed += 1
+                unit['css'] = 'error-state'
+                
+        grading = kwargs.get('grading', "RightMinusWrong")
+
+        if grading == "AllOrNothing":
+            if wrong == 0 and right == 0:
+                score = 100
+            else:
+                score = 0
+        elif grading == "RightMinusWrong":
+            if right+missed == 0:
+                if wrong == 0:
+                    score = 100
+                else:
+                    score = 0
+            else:
+                score = max([round((right-wrong)/(right+missed)*100),0])
+        elif grading == "CorrectAnswers":
+            nitems = len(self.items)
+            score = max([round((nitems-2*(wrong+right))/nitems*100),0])
+
+        self.disabled = True
+
+        return (score, "")
+
+    def eval(self,**kwargs):
         score=100
         for e in self.selections:
             if e['index'] in self._indexsol:
