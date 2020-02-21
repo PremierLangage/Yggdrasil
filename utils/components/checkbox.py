@@ -6,7 +6,7 @@ class CustomCheckbox(Component):
 
     def __init__(self, **kwargs):
         self.selector = 'c-checkbox-group'
-        self.decorator = 'CustomCheckboxGroup'
+        self.decorator = 'CustomCheckbox'
         self.items = []
         self._content = {}
         self._sol = []
