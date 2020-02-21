@@ -6,7 +6,11 @@ title = Basic player
 
 before =
 
-text =
+text ==
+* 1
+* 2
+* 3
+==
 
 form =
 
