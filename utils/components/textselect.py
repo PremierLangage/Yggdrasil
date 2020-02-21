@@ -59,7 +59,7 @@ class CustomTextSelect(Component):
             if unit not in self.selections:
                 missed += 1
                 unit['css'] = 'error-state'
-                
+
         grading = kwargs.get('grading', "RightMinusWrong")
 
         if grading == "AllOrNothing":
@@ -75,9 +75,6 @@ class CustomTextSelect(Component):
                     score = 0
             else:
                 score = max([round((right-wrong)/(right+missed)*100),0])
-        elif grading == "CorrectAnswers":
-            nitems = len(self.items)
-            score = max([round((nitems-2*(wrong+right))/nitems*100),0])
 
         self.disabled = True
 
