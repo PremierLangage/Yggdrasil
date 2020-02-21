@@ -28,7 +28,7 @@ def read_text_bracket(string):
     return ("".join(lst),selection)
 
 
-class CustomTextSelext(Component):
+class CustomTextSelect(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-text'
         self.decorator = 'CustomText'
