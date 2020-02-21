@@ -8,6 +8,7 @@ class CustomCheckbox(Component):
         self.selector = 'c-checkbox-group'
         self.decorator = 'CustomCheckboxGroup'
         self.items = []
+        self._content = {}
         self._sol = []
         super().__init__(**kwargs)
 
@@ -79,6 +80,7 @@ class CustomCheckbox(Component):
         self.disabled = True
 
         return (score, "")
+
 
 
 
