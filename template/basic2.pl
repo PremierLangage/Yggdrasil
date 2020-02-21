@@ -38,6 +38,11 @@ extrajs==
 
 
 <script>
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
     function onReadyPL(nodes) {
         const actions = nodes.actions;
         actions.find('.action-save').hide();
