@@ -68,6 +68,9 @@ extrajs==
 $(function () {
   $('[data-toggle="popover"]').popover()
 })
+$('.popover-dismiss').popover({
+  trigger: 'focus'
+})
 
     function onReadyPL(nodes) {
         const actions = nodes.actions;
