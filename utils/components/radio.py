@@ -22,13 +22,13 @@ class CustomRadio(Component):
 
     def setsol_index(self, index):
         """
-        Set a solution in the component.
+        Set the component solution from an index.
         """
         self._sol=self.items[index]['id']
 
     def setsol_content(self, content):
         """
-        Set a solution in the component.
+        Set the component solution from a content.
         """
         self._sol=next(item['id'] for item in self.items if item['content'] in content)
 
