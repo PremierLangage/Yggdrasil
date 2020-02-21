@@ -1,4 +1,5 @@
 @ /utils/sandboxio.py
+@ /ComputerScience/C/examples/napoleon.jpg
 
 title = Histoire : resituer des événements historiques sur une frise chronologique
 author = N.B.
@@ -55,5 +56,6 @@ if __name__ == "__main__":
         
     output(grade, feedback)
 ==
+
 
 
