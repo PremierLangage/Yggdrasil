@@ -37,11 +37,14 @@ class CustomTextSelect(Component):
     def loadtext(self,text):
         self.text,self._indexsol=read_text_bracket(bracket_words(text))
 
-    def eval(self):
+    def eval(self,**kwargs):
         score=100
         for e in self.selections:
-            e['css'] = "error-state"
             if e['index'] in self._indexsol:
                 e['css'] = "success-state"
+            else:
+                e['css'] = "error-state"
+
+
         return (score,"")
 
