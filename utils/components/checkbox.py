@@ -16,7 +16,7 @@ class CustomCheckbox(Component):
         self._sol=[self.items[i]['id'] for i in index]
 
     def setsol_content(self,content):
-        self._sol=[item['id'] for item in self.items if item['content'] in content]
+        self._sol=[id for id in self._content if self._content[id] in content]
 
     def loaditems(self, lstcontent):
         for content in lstcontent:
