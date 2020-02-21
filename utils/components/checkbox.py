@@ -1,4 +1,4 @@
-import uuid
+from uuid import uuid4
 import random as rd
 from components import Component
 
