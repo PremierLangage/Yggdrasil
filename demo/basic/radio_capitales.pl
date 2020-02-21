@@ -41,10 +41,3 @@ form ==
 evaluator ==
 grade = radio.eval()
 ==
-
-
-
-
-
-
-
