@@ -44,7 +44,6 @@ class CustomRadio(Component):
                     item['css'] = 'success-state'
                     item['content'] = r"%s <span class='text-success fas fa-check' style='padding-left: 1em'></span>" % self._content[id]
             elif id != self._sol and id == self.selection:
-                score = 0
                 if display:
                     item['css'] = 'error-state'
                     item['content'] = r"%s <span class='text-danger fas fa-times' style='padding-left: 1em'></span>" % self._content[id]
