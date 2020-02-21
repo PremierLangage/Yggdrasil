@@ -34,7 +34,7 @@ grade=(100,"")
 ==
 form ==
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#exampleModal">Valider</button>
+    <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Valider</button>
      <span class="navbar-text">
     Score : - 
   </span>
