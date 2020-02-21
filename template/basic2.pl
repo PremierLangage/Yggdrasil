@@ -20,7 +20,7 @@ grade=(100,"")
 form ==
 <div class="d-flex justify-content-between">
 <div>
-<button class="btn btn-primary action-submit" data-toggle="popover" data-placement="top" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
+<button class="btn btn-primary action-submit" data-toggle="popover" data-placement="bottom" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
 <i class="fas fa-check"></i>
 <span class="ion-hide-md-down">Valider</span>
 </button>
