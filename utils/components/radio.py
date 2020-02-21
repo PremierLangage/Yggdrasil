@@ -39,7 +39,6 @@ class CustomRadio(Component):
         for item in self.items:
             id = item['id']
             if id == self._sol and id == self.selection:
-                if id == self.selection:
                 score = 100
                 if display:
                     item['css'] = 'success-state'
