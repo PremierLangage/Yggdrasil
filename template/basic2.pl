@@ -21,7 +21,7 @@ form ==
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 <a tabindex="0" class="btn btn-outline-success my-2 my-sm-0" role="button" data-toggle="popover" data-trigger="focus" title="Mauvaise réponse !" data-content="La réponse est 17.">Valider</a>
      <span class="navbar-text">
-    Score : - 
+    &nbsp; Score : 50
   </span>
    
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
