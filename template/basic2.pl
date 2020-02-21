@@ -29,7 +29,7 @@ form ==
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
-      <a class="nav-item nav-link" data-toggle="popover" data-trigger="focus" title="Mauvaise réponse !" data-content="La réponse est 17." >Feedback</a>
+      <a tabindex="0" class="nav-item nav-link" role="button" data-toggle="popover" data-trigger="focus" title="Mauvaise réponse !" data-content="La réponse est 17." >Feedback</a>
       <a class="nav-item nav-link" href="#">Nouveau tirage</a>
       <a class="nav-item nav-link" href="#">Aide</a>
       <a class="nav-item nav-link" href="#">A propos</a>
