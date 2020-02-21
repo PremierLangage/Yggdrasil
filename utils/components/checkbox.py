@@ -48,16 +48,16 @@ class CustomCheckbox(Component):
                 right += 1
                 if display:
                     item['css'] = 'success-state'
-                    item['content'] = r"%s <span class='text-success fas fa-check' style='padding-left: 1em'></span>" % self._content[]
+                    item['content'] = r"%s <span class='text-success fas fa-check' style='padding-left: 1em'></span>" % self._content[id]
             elif id not in self._sol and item['checked']:
                 wrong += 1
                 if display:
                     item['css'] = 'error-state'
-                    item['content'] += r"<span class='text-danger fas fa-times' style='padding-left: 1em'></span>"
+                    item['content'] = r"%s <span class='text-danger fas fa-times' style='padding-left: 1em'></span>" % self._content[id]
             elif id in self._sol and not item['checked']:
                 missed += 1
                 if display:
-                    item['content'] += r"<span class='text-success fas fa-check' style='padding-left: 1em'></span>"
+                    item['content'] = r"%s <span class='text-success fas fa-check' style='padding-left: 1em'></span>" % self._content[id]
         
         grading = kwargs.get('grading', "RightMinusWrong")
 
