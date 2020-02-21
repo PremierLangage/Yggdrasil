@@ -1,5 +1,5 @@
-from uuid import uuid4
 import random as rd
+from uuid import uuid4
 from components import Component
 
 class CustomCheckbox(Component):
