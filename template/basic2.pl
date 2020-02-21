@@ -20,7 +20,7 @@ grade=(100,"")
 form ==
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-     <span class="navbar-text">
+     <span class="navbar-brand navbar-text">
     Score : - 
   </span>
    
