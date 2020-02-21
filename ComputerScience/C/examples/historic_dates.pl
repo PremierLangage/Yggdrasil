@@ -7,11 +7,8 @@ author = N.B.
 text==
 Placer les événements historique suivant sur la frise chronologique.
 
-<img src="examples/napoleon.jpg" />
-
 <img src="napoleon.jpg" />
 
-![Couronement de Napoléon](napoleon.jpg)
 ==
 
 builder =@ /builder/none.py
@@ -56,6 +53,7 @@ if __name__ == "__main__":
         
     output(grade, feedback)
 ==
+
 
 
 
