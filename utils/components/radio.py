@@ -17,10 +17,10 @@ class CustomRadio(Component):
             self._content[id] = content
             self.items.append({"id": id ,"content": content})
 
-    def setsol_index(self,index):
+    def setsol_index(self, index):
         self._sol=self.items[index]['id']
 
-    def setsol_content(self,content):
+    def setsol_content(self, content):
         self._sol=next(item['id'] for item in self.items if item['content'] in content)
 
     def shuffle(self):
@@ -29,27 +29,31 @@ class CustomRadio(Component):
     def sort(self):
         rd.sort(self.items)
 
-    def eval(self,**kwargs):
-        score = 0
-        selectedId = self.selection
-        for e in self.items:
-            if e['id'] == self._sol:
+    def eval(self, **kwargs):
+        """
+        Evaluate the answer stored in the component.
+        """
+
+        display = kwargs.get('display', True)
+
+        for item in self.items:
+            id = item['id']
+            if id == self._sol and id == self.selection:
+                if id == self.selection:
                 score = 100
-                e['content'] += r"<span class='fas fa-check' style='padding-left: 1em'></span>"
-                if e['id'] == selectedId:
-                    e['css'] = 'success-state'
-            elif e['id'] == selectedId:
+                if display:
+                    item['css'] = 'success-state'
+                    item['content'] = r"%s <span class='text-success fas fa-check' style='padding-left: 1em'></span>" % self._content[id]
+            elif id != self._sol and id == self.selection:
                 score = 0
-                e['css'] = 'error-state'
-                e['content'] += r"<span class='fas fa-times' style='padding-left: 1em'></span>"
-        self.disabled=True
+                if display:
+                    item['css'] = 'error-state'
+                    item['content'] = r"%s <span class='text-danger fas fa-times' style='padding-left: 1em'></span>" % self._content[id]
+            elif id == self._sol and id != self.selection:
+                score = 0
+                if display:
+                    item['content'] = r"%s <span class='text-success fas fa-check' style='padding-left: 1em'></span>" % self._content[id]
+
+        self.disabled = True
+
         return (score, "")
-
-
-
-
-
-
-
-
-
