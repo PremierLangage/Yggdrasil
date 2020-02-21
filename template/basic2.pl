@@ -34,7 +34,7 @@ grade=(100,"")
 ==
 form ==
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+<a tabindex="0" class="btn btn-outline-success my-2 my-sm-0" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
     <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Valider</button>
      <span class="navbar-text">
     Score : - 
