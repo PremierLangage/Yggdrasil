@@ -16,7 +16,7 @@ form==
 
 txtsel =: Text
 @ /utils/components/textselect.py [customtextselect.py]
-txtsel.decorator = CustomText
+txtsel.decorator = CustomTextSelect
 
 before ==
 txtsel.loadtext("{{Artur}} a {{horreur}} de la marche à pied.")
