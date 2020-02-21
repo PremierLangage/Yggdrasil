@@ -43,17 +43,18 @@ class CustomCheckbox(Component):
         right,wrong,missed=0,0,0
 
         for item in self.items:
-            if item['id'] in self._sol and item['checked']:
+            id = item['id']
+            if id in self._sol and item['checked']:
                 right += 1
                 if display:
                     item['css'] = 'success-state'
-                    item['content'] += r"<span class='text-success fas fa-check' style='padding-left: 1em'></span>"
-            elif not (item['id'] in self._sol) and item['checked']:
+                    item['content'] = r"%s <span class='text-success fas fa-check' style='padding-left: 1em'></span>" % self._content[]
+            elif id not in self._sol and item['checked']:
                 wrong += 1
                 if display:
                     item['css'] = 'error-state'
                     item['content'] += r"<span class='text-danger fas fa-times' style='padding-left: 1em'></span>"
-            elif item['id'] in self._sol and not item['checked']:
+            elif id in self._sol and not item['checked']:
                 missed += 1
                 if display:
                     item['content'] += r"<span class='text-success fas fa-check' style='padding-left: 1em'></span>"
