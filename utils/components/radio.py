@@ -26,7 +26,7 @@ class CustomRadio(Component):
     def shuffle(self):
         rd.shuffle(self.items)
 
-    def shuffle(self):
+    def sort(self):
         sorted(self.items, key = lambda item : item['content'])
 
     def eval(self, **kwargs):
