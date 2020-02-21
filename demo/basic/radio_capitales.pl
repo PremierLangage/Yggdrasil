@@ -9,12 +9,12 @@ import random as rd
 import csv
 
 with open('pays_europe.csv',newline='') as file:
-    all_rows=list(csv.DictReader(file,delimiter=','))
+    all_rows = list(csv.DictReader(file,delimiter=','))
     
 sample_rows=rd.sample(all_rows,4)
 
-pays=sample_rows[0]['pays']
-article=sample_rows[0]['article']
+pays = sample_rows[0]['pays']
+article = sample_rows[0]['article']
 
 radio.loaditems([row['capitale'] for row in sample_rows])
 radio.setsol_index(0)
