@@ -31,8 +31,8 @@ Quelle est la capitale {{du_pays}} ?
 radio =: RadioGroup
 
 # Les deux lignes suivantes sont temporaires.
-@ /utils/components/radio.py [customradiogroup.py]
-radio.decorator = CustomRadioGroup
+@ /utils/components/radio.py [customradio.py]
+radio.decorator = CustomRadio
 
 form ==
 {{ radio|component }}
@@ -41,6 +41,7 @@ form ==
 evaluator ==
 grade = radio.eval()
 ==
+
 
 
 
