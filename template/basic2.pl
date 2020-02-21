@@ -7,9 +7,9 @@ title = Exercice
 before =
 
 text ==
-* 1
-* 2
-* 3
+* 
+* 
+* 
 ==
 
 form =
