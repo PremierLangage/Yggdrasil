@@ -34,7 +34,7 @@ class CustomCheckbox(Component):
     def sort(self):
         rd.sort(self.items)
 
-    def eval(self,**kwargs):
+    def eval(self, **kwargs):
         """
         Evaluate the answer stored in the component.
         """
