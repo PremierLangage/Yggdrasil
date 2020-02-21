@@ -20,7 +20,9 @@ class CustomCheckbox(Component):
 
     def loaditems(self, lstcontent):
         for content in lstcontent:
-            self.items.append({"id": str(uuid.uuid4()),"content": content})
+            id = str(uuid4())
+            self._content[id] = content
+            self.items.append({"id": id ,"content": content})
 
     def loadrw(self, right, wrong, nitems, nright):
         self.loaditems(rd.sample(right,nright)+rd.sample(wrong,nitems-nright))
