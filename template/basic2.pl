@@ -29,8 +29,9 @@ form ==
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
-      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Feedback</a>
       <a class="nav-item nav-link" href="#">Nouveau tirage</a>
+      <a class="nav-item nav-link" href="#">Aide</a>
       <a class="nav-item nav-link" href="#">A propos</a>
     </div>
   </div>
