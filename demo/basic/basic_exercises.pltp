@@ -1,0 +1,14 @@
+title = Exercices de base
+
+introduction ==
+
+==
+
+@ add_int.pl
+@ input_capitale.pl
+@ radio_capitals.pl
+@ checkbox_multiple.pl
+@ matchlist_country_capital.pl
+@ sortlist_premiers_ministres.pl
+@ dragdrop_inequalities.pl
+
