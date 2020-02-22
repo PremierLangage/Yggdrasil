@@ -19,13 +19,13 @@ class CustomRadio(Component):
         """
         Set the component solution from an index.
         """
-        self._sol=self.items[index]['id']
+        self._sol = self.items[index]['id']
 
     def setsol_content(self, content):
         """
         Set the component solution from a content.
         """
-        self._sol=next(item['id'] for item in self.items if item['content'] == content)
+        self._sol = next(item['id'] for item in self.items if item['content'] == content)
 
     def shuffle(self):
         """
