@@ -9,6 +9,18 @@ class CustomCheckbox(Component):
         self.decorator = 'CustomCheckbox'
         super().__init__(**kwargs)
 
+    def setsol_index(self, index):
+        """
+        Set the component solution from a list of indices.
+        """
+        self._sol = [self.items[i]['id'] for i in index]
+
+    def setsol_content(self, content):
+        """
+        Set the component solution from a list of contents.
+        """
+        self._sol = [id for id in self.items if self.items['content'] in content]
+
     def setsol_index(self,index):
         self._sol=[self.items[i]['id'] for i in index]
 
