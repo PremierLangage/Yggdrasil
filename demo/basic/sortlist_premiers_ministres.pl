@@ -1,6 +1,6 @@
 extends = /model/basic.pl
 
-title = Classement : Premiers ministres
+title = Premiers ministres
 
 @ premiers_ministres.csv
 
