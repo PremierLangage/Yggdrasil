@@ -2,7 +2,7 @@ extends = /model/basic.pl
 
 @ /utils/components/dragdrop.py [dragdrop.py]
 
-title = 
+title = Comparaison de nombres
 
 before==
 from dragdrop import Drop, Label, Drops, Labels, DragDropeval
