@@ -7,8 +7,6 @@ class CustomCheckbox(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-checkbox-group'
         self.decorator = 'CustomCheckbox'
-        self.items = []
-        self._content = {}
         super().__init__(**kwargs)
 
     def setsol_index(self,index):
@@ -29,10 +27,16 @@ class CustomCheckbox(Component):
         self.shuffle()
 
     def shuffle(self):
+        """
+        Shuffle the component items.
+        """
         rd.shuffle(self.items)
 
     def sort(self):
-        rd.sort(self.items)
+        """
+        Sort the component items.
+        """
+        self.items.sort(key = lambda item : item['content'])
 
     def eval(self, **kwargs):
         """
