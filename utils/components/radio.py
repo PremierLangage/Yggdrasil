@@ -30,7 +30,7 @@ class CustomRadio(Component):
         """
         Set the component solution from a content.
         """
-        self._sol=next(item['id'] for item in self.items if item['content'] in content)
+        self._sol=next(item['id'] for item in self.items if item['content']==content)
 
     def shuffle(self):
         """
