@@ -52,6 +52,8 @@ class CustomRadio(Component):
                 score = 100
                 if display:
                     item['css'] = 'success-state'
+                    # Il devrait y avoir une clé "icon" dans un item, ce n'est pas très satisfaisant
+                    # d'ajouter l'icône au "content"
                     item['content'] += r"<span class='text-success fas fa-check' style='padding-left: 1em'></span>"
             elif id != self._sol and id == self.selection:
                 if display:
