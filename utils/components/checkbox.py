@@ -9,31 +9,28 @@ class CustomCheckbox(Component):
         self.decorator = 'CustomCheckbox'
         super().__init__(**kwargs)
 
+    def loaditems(self, lstcontent):
+        """
+        Load items in the component.
+        """
+        self.items = [{"id": uuid4(), "content": content} for content in lstcontent]
+
     def setsol_index(self, index):
         """
-        Set the component solution from a list of indices.
+        Set the component solutions from a list of indices.
         """
         self._sol = [self.items[i]['id'] for i in index]
 
     def setsol_content(self, content):
         """
-        Set the component solution from a list of contents.
+        Set the component solutions from a list of contents.
         """
         self._sol = [id for id in self.items if self.items['content'] in content]
 
-    def setsol_index(self,index):
-        self._sol=[self.items[i]['id'] for i in index]
-
-    def setsol_content(self,content):
-        self._sol=[id for id in self._content if self._content[id] in content]
-
-    def loaditems(self, lstcontent):
-        for content in lstcontent:
-            id = str(uuid4())
-            self._content[id] = content
-            self.items.append({"id": id ,"content": content})
-
     def loadrw(self, right, wrong, nitems, nright):
+        """
+        Load items and set solutions from lists of right and wrong items.
+        """
         self.loaditems(rd.sample(right,nright)+rd.sample(wrong,nitems-nright))
         self.setsol_index(list(range(nright)))
         self.shuffle()
@@ -65,16 +62,16 @@ class CustomCheckbox(Component):
                 right += 1
                 if display:
                     item['css'] = 'success-state'
-                    item['content'] = r"%s <span class='text-success fas fa-check' style='padding-left: 1em'></span>" % self._content[id]
+                    item['content'] += "<span class='text-success fas fa-check' style='padding-left: 1em'></span>"
             elif id not in self._sol and item['checked']:
                 wrong += 1
                 if display:
                     item['css'] = 'error-state'
-                    item['content'] = r"%s <span class='text-danger fas fa-times' style='padding-left: 1em'></span>" % self._content[id]
+                    item['content'] += r"<span class='text-danger fas fa-times' style='padding-left: 1em'></span>"
             elif id in self._sol and not item['checked']:
                 missed += 1
                 if display:
-                    item['content'] = r"%s <span class='text-success fas fa-check' style='padding-left: 1em'></span>" % self._content[id]
+                    item['content'] += r"<span class='text-success fas fa-check' style='padding-left: 1em'></span>"
         
         grading = kwargs.get('grading', "RightMinusWrong")
 
