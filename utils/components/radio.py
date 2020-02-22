@@ -60,7 +60,7 @@ class CustomRadio(Component):
             elif id == self._sol and id != self.selection:
                 score = 0
                 if display:
-                    item['content'] += r"%s <span class='text-success fas fa-check' style='padding-left: 1em'></span>"
+                    item['content'] += r"<span class='text-success fas fa-check' style='padding-left: 1em'></span>"
 
         self.disabled = True
 
