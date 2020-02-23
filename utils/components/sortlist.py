@@ -1,5 +1,5 @@
-import uuid
 import random as rd
+from uuid import uuid4
 from components import Component
 from scipy.stats import kendalltau
 
@@ -25,6 +25,48 @@ class CustomSortList(Component):
                 self.items.append({"id": id,"content": item})
             self._order.append(id)
         rd.shuffle(self.items)
+
+    def eval(self, **kwargs):
+        """
+        Evaluate the answer stored in the component.
+        """
+
+        display = kwargs.get('display', True)
+
+        right,wrong,missed=0,0,0
+
+        for item in self.items:
+            id = item['id']
+            if id in self._sol and item['checked']:
+                right += 1
+                if display:
+                    item['css'] = 'success-state'
+                    item['content'] += "<span class='text-success fas fa-check' style='padding-left: 1em'></span>"
+            elif id not in self._sol and item['checked']:
+                wrong += 1
+                if display:
+                    item['css'] = 'error-state'
+                    item['content'] += r"<span class='text-danger fas fa-times' style='padding-left: 1em'></span>"
+            elif id in self._sol and not item['checked']:
+                missed += 1
+                if display:
+                    item['content'] += r"<span class='text-success fas fa-check' style='padding-left: 1em'></span>"
+        
+        grading = kwargs.get('grading', "KendallTau")
+
+        if grading == "AllOrNothing":
+            if wrong == 0 and right == 0:
+                score = 100
+            else:
+                score = 0          
+        elif grading == "KendallTau":
+            nitems = len(self.items)
+            score = max([round((nitems-2*(wrong+right))/nitems*100),0])
+
+        self.disabled = True
+
+        return (score, "")
+
 
     def eval(self):
         errors = 0
@@ -59,10 +101,10 @@ class CustomSortList(Component):
 
 
 
-# grading
 # texte qui bouge quand on déplace un item
 # lien du tooltip qui ouvre la racine du site
 # disabled qui désactive le tooltip
 # extrajs
+
 
 
