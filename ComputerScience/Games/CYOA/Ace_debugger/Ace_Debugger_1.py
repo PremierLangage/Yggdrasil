@@ -146,7 +146,7 @@
 
             ['7', "Demander à voir le début du fichier de code avec les macros et la fonction d'affichage."],
 
-            ['8', "Demander à voir la fonction opérant le tri à bulles."]
+            ['8', "Demander à voir la fonction opérant le tri à bulles."],
             
             ['9', "Demander à voir le main du programme d'Yves."],
             
@@ -185,7 +185,7 @@
 
             ['7', "Demander à voir le début du fichier de code avec les macros et la fonction d'affichage."],
 
-            ['8', "Demander à voir la fonction opérant le tri à bulles."]
+            ['8', "Demander à voir la fonction opérant le tri à bulles."],
             
             ['9', "Demander à voir le main du programme d'Yves."],
             
@@ -221,7 +221,7 @@
 
             ['7', "Demander à voir le début du fichier de code avec les macros et la fonction d'affichage."],
 
-            ['8', "Demander à voir la fonction opérant le tri à bulles."]
+            ['8', "Demander à voir la fonction opérant le tri à bulles."],
             
             ['9', "Demander à voir le main du programme d'Yves."],
             
@@ -264,7 +264,7 @@
 
             ['6', "Demander à Yves de recompiler devant vos yeux ébahis avec les options Wall et ansi."],
 
-            ['8', "Demander à voir la fonction opérant le tri à bulles."]
+            ['8', "Demander à voir la fonction opérant le tri à bulles."],
             
             ['9', "Demander à voir le main du programme d'Yves."],
             
@@ -344,7 +344,7 @@
 
             ['7', "Demander à voir le début du fichier de code avec les macros et la fonction d'affichage."],
 
-            ['8', "Demander à voir la fonction opérant le tri à bulles."]
+            ['8', "Demander à voir la fonction opérant le tri à bulles."],
             
             ['10', "Annoncer que vous exactement ou se trouve le bug."],
         ]
