@@ -69,16 +69,6 @@ missing_grade_stderr = """\
 The script have access to every variable declared in the PL and its 'before' script.
 It should declare a variable 'grade' which should contain a tuple (int, feedback) where int is the grade between [0, 100]."""
 
-def deserialize_components(arg):
-    if isinstance(arg,dict) and 'cid' in arg:
-        return Component.deserialize(arg, arg)
-    elif isinstance(arg, dict):
-        return {k: deserialize_components(v) for k, v in arg.items()}
-    elif isinstance(arg, list):
-        return list(map(deserialize_components,arg))
-    else:
-        return arg
-
 if __name__ == "__main__":
     if len(sys.argv) < 5:
         msg = ("Sandbox did not call grader properly:\n"
@@ -88,16 +78,13 @@ if __name__ == "__main__":
     
     dic = get_context()
 
-    #comp=[e for e in dic if isinstance(e, Component)]
+    comp=[e for e in dic if isinstance(e, Component)]
 
-    for key in dic:
-        dic[key]=deserialize_components(dic[key])
-
-    #for k in list(dic.keys()):
-    #    if isinstance(dic[k],list):
-    #        for i in range(len(dic[k])):
-    #            if isinstance(dic[k][i], dict) and 'cid' in dic[k][i]:
-    #                dic[k][i] = dic[dic[k][i]['id']]
+    for k in list(dic.keys()):
+        if isinstance(dic[k],list):
+            for i in range(len(dic[k])):
+                if isinstance(dic[k][i], dict) and 'cid' in dic[k][i]:
+                    dic[k][i] = dic[dic[k][i]['id']]
 
     for key in dic:
         dic[key]=deserialize(dic[key])
