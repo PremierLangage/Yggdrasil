@@ -13,6 +13,9 @@ class CustomSortList(Component):
         super().__init__(**kwargs)
 
     def loadlist(self,lst):
+        """
+        Load items and set solution from an ordered list.
+        """
         self.items = []
         self._order = []
         self._feedback = {}
