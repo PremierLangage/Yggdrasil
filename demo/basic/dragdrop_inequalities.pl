@@ -5,7 +5,7 @@ extends = /model/basic.pl
 title = Comparaison de nombres
 
 before==
-from dragdrop import Drop, Label, Drops, Labels, DragDropeval
+from dragdrop import CustomDragdrop
 import random as rd
 
 lt="&lt;"
