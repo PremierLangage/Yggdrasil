@@ -14,7 +14,7 @@
 
 author=Nicolas Borie
 
-title=Données binaires dans nos ordinateurs modernes
+title=Ace Debugger 1 : Welcome to Clément Ader !
 tag=C|debugger
 
 template=/ComputerScience/Games/CYOA/CYOA_template.pl
