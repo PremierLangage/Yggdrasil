@@ -158,25 +158,25 @@
     [
         'audace+=1, confiance-=2',
 
-        "N.B. : Non mais le principal, c'est que ça fonctionne bien de
-        temps en temps. Si vous avez compris et que le tri est correct
-        environs une fois sur deux...
+        "N.B. : Non mais le principal, c'est que ça fonctionne bien de"
+        "temps en temps. Si vous avez compris et que le tri est correct"
+        "environs une fois sur deux..."
 
-        Yves : Mais.... mais... mais monsieur, enfin ! Vous êtes sûr ?
-        Et les avions, les centrales nucléaires... Le principal, c'est
-        aussi que ça fonctionne bien de temps en temps. Monsieur
-        Zipstein nous a demandé en soutenance de projet, l'année
-        dernière, si on accepterait de monter dans un avion mais qui
-        fonctionne bien une fois sur deux. Finalement, on lui a dit
-        qu'on partirait en vacances un peu moins loin. Vraiment,
-        monsieur Borie, vous le Ace debugger, je suis très déçu de
-        vous.
+        "Yves : Mais.... mais... mais monsieur, enfin ! Vous êtes sûr ?"
+        "Et les avions, les centrales nucléaires... Le principal, c'est"
+        "aussi que ça fonctionne bien de temps en temps. Monsieur"
+        "Zipstein nous a demandé en soutenance de projet, l'année"
+        "dernière, si on accepterait de monter dans un avion mais qui"
+        "fonctionne bien une fois sur deux. Finalement, on lui a dit"
+        "qu'on partirait en vacances un peu moins loin. Vraiment,"
+        "monsieur Borie, vous le Ace debugger, je suis très déçu de"
+        "vous."
 
-        N.B. *(très géné)* : On peut être le Ace debugger est faire un
-        peu d'humour... Ça ne fait de mal à personne de rire 5
-        secondes. Bon, j'ai effectivement un peu besoin de
-        vacances. Revenons à votre tri qui affiche un valeur bizarre
-        de temps en temps.",
+        "N.B. *(très géné)* : On peut être le Ace debugger est faire un"
+        "peu d'humour... Ça ne fait de mal à personne de rire 5"
+        "secondes. Bon, j'ai effectivement un peu besoin de"
+        "vacances. Revenons à votre tri qui affiche un valeur bizarre"
+        "de temps en temps.",
 
         [
             ['4', "Rappeler à Yves ce que sont les garbages values."],
