@@ -114,7 +114,7 @@
 
             ['7', "Demander à voir le début du fichier de code avec les macros et la fonction d'affichage."],
 
-            ['8', "Demander à voir la fonction opérant le tri à bulles."]
+            ['8', "Demander à voir la fonction opérant le tri à bulles."],
             
             ['9', "Demander à voir le main du programme d'Yves."],
             
