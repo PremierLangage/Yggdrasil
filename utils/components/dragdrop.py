@@ -1,4 +1,4 @@
-from components import Component, DragDrop
+from components import Component,DragDrop
 from uuid import uuid4
 
 
@@ -6,7 +6,7 @@ class CustomDragDrop(DragDrop):
 
     def __init__(self, **kwargs):
         self.selector = 'c-dragdrop'
-        self.decorator = 'DragDrop'
+        self.decorator = 'CustomDragDrop'
         super().__init__(**kwargs)
 
     @classmethod
