@@ -2,7 +2,7 @@ from components import Component,DragDrop
 from uuid import uuid4
 
 
-class CustomDragDrop(DragDrop):
+class CustomDragDrop(Component):
 
     def __init__(self, **kwargs):
         self.selector = 'c-dragdrop'
