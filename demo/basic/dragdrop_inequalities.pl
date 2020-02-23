@@ -1,6 +1,6 @@
 extends = /model/basic.pl
 
-@ /utils/components/dragdrop.py [dragdrop.py]
+@ /utils/components/dragdrop.py [customdragdrop.py]
 
 title = Comparaison de nombres
 
