@@ -1,5 +1,6 @@
 from components import Component,DragDrop
-import uuid
+from uuid import uuid4
+
 
 class CustomDragDrop(Component):
 
