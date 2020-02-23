@@ -31,7 +31,7 @@ class CustomDragDrop(DragDrop):
         if isinstance(arg,list):
             return [cls.Label(content=content,**kwargs) for content in arg]
 
-    @classmethod
+    @staticmethod
     def eval(drop,sol):
         feedback=""
         score=100
