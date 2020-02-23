@@ -233,31 +233,29 @@
     [
         '',
 
-        "
-        Yves : Voici le haut de mon fichier monsieur.
+        "Yves : Voici le haut de mon fichier monsieur."
 
-        <code>
-        #include <stdio.h>
-        #include <stdlib.h>
-        #include <time.h>
-        #define TAILLE 20
-        #define MAX 100
+        "<code>"
+        "#include <stdio.h>"
+        "#include <stdlib.h>"
+        "#include <time.h>"
+        "#define TAILLE 20"
+        "#define MAX 100"
         
-        void affichetab(int tab[], int taille){
-          int i;
+        "void affichetab(int tab[], int taille){"
+        "  int i;"
 
-          for(i=0 ;i<taille;i++)
-            printf(\"%d \", tab[i]);
-          putchar('\n');
-        }
-        </code>
+        "  for(i=0 ;i<taille;i++)"
+        "    printf(\"%d \", tab[i]);"
+        " putchar('\n');"
+        "}"
+        "</code>"
 
-        Yves : La macro TAILLE, c'est pour la taille du tableau dans
-        le test fait dans mon main. La macro MAX, c'est pour
-        determiner des entrées aléatoires dans le tableau, je vais un
-        modulo MAX monsieur. Franchement, je ne vois pas de problème
-        là dedans.
-        ",
+        "Yves : La macro TAILLE, c'est pour la taille du tableau dans"
+        "le test fait dans mon main. La macro MAX, c'est pour"
+        "determiner des entrées aléatoires dans le tableau, je vais un"
+        "modulo MAX monsieur. Franchement, je ne vois pas de problème"
+        "là dedans.",
 
         [
             ['4', "Rappeler à Yves ce que sont les garbages values."],
