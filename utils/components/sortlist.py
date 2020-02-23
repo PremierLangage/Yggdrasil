@@ -17,13 +17,19 @@ class CustomSortList(Component):
         self._order = []
         self._feedback = {}
         for item in lst:
-            id = str(uuid.uuid4())
+            id = str(uuid4())
             if isinstance(item,tuple):
                 self._feedback[id]=item[1]
                 self.items.append({"id": id,"content": item[0]})
             else:
                 self.items.append({"id": id,"content": item})
             self._order.append(id)
+        rd.shuffle(self.items)
+
+    def shuffle(self):
+        """
+        Shuffle the component items.
+        """
         rd.shuffle(self.items)
 
     def eval(self, **kwargs):
