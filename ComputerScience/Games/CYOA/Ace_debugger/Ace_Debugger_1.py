@@ -34,8 +34,8 @@
     [
         '{"audace" : 0, "panache" : 0, "confiance" : 0}',
      
-        "Bienvenue dans la première aventure de Ace debugger, le prof
-        de TP qui trouve les erreurs plus vite que son ombre. Vos
+        "Bienvenue dans la première aventure de Ace debugger, le prof"
+        "de TP qui trouve les erreurs plus vite que son ombre. Vos"
         compétances en informatique sont maintenant tellement
         reconnues que vous allez devoir guider l'Ace debugger 
         durant les TP d'informatique. Cette première
