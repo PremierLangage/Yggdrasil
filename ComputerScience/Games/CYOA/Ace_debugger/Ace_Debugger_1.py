@@ -1,0 +1,358 @@
+{
+
+# L'étape 0 n'existera jamais, le template commencera de manière harcodé à l'étape '1'    
+    
+# '0' :
+#     [
+#         'code python qui sera eval(...) à chaque entrée sur cette
+#         étape 0',
+
+#         "Texte de l'étape qui sera affiché à l'ecran et contextuelle
+#         de la situation de l'histoire, de l'exercice",
+
+#         [
+#             ['X', "texte du lien pour aller vers l'étape X"],
+#             ['Y', "texte du lien pour aller vers l'étape Y"]
+#         ]
+#     ],
+
+'1' :
+    [
+        '{"audace" : 0, "panache" : 0, "confiance" : 0}',
+     
+        "Bienvenue dans la première aventure de Ace debugger, le prof
+        de TP qui trouve les erreurs plus vite que son ombre. Vos
+        compétances en informatique sont maintenant tellement
+        reconnues que vous allez devoir guider l'Ace debugger 
+        durant les TP d'informatique. Cette première
+        aventure vous emmenera en salle 104 du batiment Clément Ader
+        pour un TP sur les tris en C.
+
+        En incarnant Nicolas Borie, à chaque événement, vous devrez
+        prendre les meilleurs décisions pour aider les élèves.",
+
+        [
+            ['2', "Entrer dans la salle de TP!"]
+        ]
+    ],
+    
+'2' :
+    [
+        '',
+
+        "Vous entrez dans la salle de TP et vous voyez déjà une
+        vingtaine d'étudiants assis derrière les postes sur les deux
+        rangées de bureau. Certains jouent encore sur leurs téléphones
+        mais d'autres sont déjå au travail avec l'énoncé en pdf ouvert
+        sur leur poste.
+
+        A peine entré, vous croisez le regard d'un élève qui lève
+        instantannément le bras en l'air. C'est Yves Vatrovytch qui
+        fait mine de vous appeler. Avec ces fameuses questions qui
+        sont toujours toutes plus tordues les unes que les autres,
+        quelle colle va-t-il bien pour poser ce coup-ci ?",
+
+        [
+            ['3', "Vous vous approchez de l'élève"]
+        ]
+    ],
+
+'3' :
+    [
+        '',
+
+        "Yves : Bonjour monsieur, j'ai un bug incroyable parce que
+        c'est pas un bug.
+
+        N.B. : Vous savez, la plupart du temps, soit il y a un bug ou
+        plusieurs soit il n'y a pas de bug dans les programmes.
+        
+        Yves : Ah ouais mais là c'est différent m'sieur ! J'ai un tri
+        à bulle qui fonctionne, mais parfois il affiche des trucs
+        bizarres, mais il marche aussi vachement souvent. Regardez mes
+        tests en terminal.
+
+        <code>
+        yvatrovyt@p12-104:~/C/TP4$ gcc -o plop tribul.c
+        yvatrovyt@p12-104:~/C/TP4$ ./plop 
+        70 73 99 16 54 60 50 25 12 76 89 18 79 90 89 31 23 25 99 0 
+        -846772480 0 12 16 18 23 25 25 31 50 54 60 70 73 76 79 89 89 90 99 
+        yvatrovyt@p12-104:~/C/TP4$ ./plop 
+        86 38 64 44 59 97 71 26 95 11 13 43 42 57 15 8 76 24 76 92 
+        8 11 13 15 24 26 38 42 43 44 57 59 64 71 76 76 86 92 95 97 
+        yvatrovyt@p12-104:~/C/TP4$ ./plop 
+        71 9 43 24 9 57 66 85 26 82 2 57 74 24 33 25 13 40 37 54 
+        -1162119008 2 9 9 13 24 24 25 26 33 37 40 43 54 57 57 66 71 74 82 
+        yvatrovyt@p12-104:~/C/TP4$ ./plop 
+        64 74 87 32 49 73 59 67 65 1 61 34 73 16 44 3 38 93 65 65 
+        -552418144 1 3 16 32 34 38 44 49 59 61 64 65 65 65 67 73 73 74 87 
+        yvatrovyt@p12-104:~/C/TP4$ ./plop 
+        5 35 89 97 13 89 67 16 29 18 37 73 59 22 23 54 89 70 3 83 
+        3 5 13 16 18 22 23 29 35 37 54 59 67 70 73 83 89 89 89 97
+        </code>",
+
+        [
+            ['4', "Rappeler à Yves ce que sont les garbages values."],
+
+            ['5', "Expliquer que si ça marche souvent, et bien ça suffit."],
+
+            ['6', "Demander à Yves de recompiler devant vos yeux ébahis avec les options Wall et ansi."],
+
+            ['7', "Demander à voir le début du fichier de code avec les macros et la fonction d'affichage."],
+
+            ['8', "Demander à voir la fonction opérant le tri à bulles."]
+            
+            ['9', "Demander à voir le main du programme d'Yves."],
+            
+            ['10', "Annoncer que vous exactement ou se trouve le bug."],
+        ]
+    ],
+
+'4' :
+    [
+        '',
+
+        "N.B. : Toute variable C possède 4 caractéristiques : un
+        identificateur, un type, un emplacement mémoire et de ce fait
+        une valeur. Comme l'emplacement mémoire existe, il y a des
+        bits qui valent 0 ou 1 à la création de toute variable. Ces
+        valeurs, que votre terminal affiche, semblent être presque
+        aléatoires comme des bits qui traineraient dans votre
+        programme venant de variables que vous auriez oublié
+        d'initialiser.
+
+        Yves : Je vous assure que j'ai bien tout initialisé
+        monsieur. Le problème ne doit pas venir de là, je construis un
+        tableau aléatoire au debut de mon main.",
+        
+        [
+            ['5', "Expliquer que si ça marche souvent, et bien ça suffit."],
+
+            ['6', "Demander à Yves de recompiler devant vos yeux ébahis avec les options Wall et ansi."],
+
+            ['7', "Demander à voir le début du fichier de code avec les macros et la fonction d'affichage."],
+
+            ['8', "Demander à voir la fonction opérant le tri à bulles."]
+            
+            ['9', "Demander à voir le main du programme d'Yves."],
+            
+            ['10', "Annoncer que vous exactement ou se trouve le bug."],
+        ]
+    ],
+
+'5' :
+    [
+        'audace+=1, confiance-=2',
+
+        "N.B. : Non mais le principal, c'est que ça fonctionne bien de
+        temps en temps. Si vous avez compris et que le tri est correct
+        environs une fois sur deux...
+
+        Yves : Mais.... mais... mais monsieur, enfin ! Vous êtes sûr ?
+        Et les avions, les centrales nucléaires... Le principal, c'est
+        aussi que ça fonctionne bien de temps en temps. Monsieur
+        Zipstein nous a demandé en soutenance de projet, l'année
+        dernière, si on accepterait de monter dans un avion mais qui
+        fonctionne bien une fois sur deux. Finalement, on lui a dit
+        qu'on partirait en vacances un peu moins loin. Vraiment,
+        monsieur Borie, vous le Ace debugger, je suis très déçu de
+        vous.
+
+        N.B. *(très géné)* : On peut être le Ace debugger est faire un
+        peu d'humour... Ça ne fait de mal à personne de rire 5
+        secondes. Bon, j'ai effectivement un peu besoin de
+        vacances. Revenons à votre tri qui affiche un valeur bizarre
+        de temps en temps.",
+
+        [
+            ['4', "Rappeler à Yves ce que sont les garbages values."],
+
+            ['6', "Demander à Yves de recompiler devant vos yeux ébahis avec les options Wall et ansi."],
+
+            ['7', "Demander à voir le début du fichier de code avec les macros et la fonction d'affichage."],
+
+            ['8', "Demander à voir la fonction opérant le tri à bulles."]
+            
+            ['9', "Demander à voir le main du programme d'Yves."],
+            
+            ['10', "Annoncer que vous exactement ou se trouve le bug."],
+        ]
+    ],
+
+'6' :
+    [
+        '',
+
+        "L'élève acquiesce et se met tout de suite à la tâche.
+
+        Yves : Si vous voullez... voici ce que j'obtiens.
+
+        <code>
+        yvatrovyt@p12-104:~/C/TP4$ gcc -o plop code.c -Wall -ansi
+        yvatrovyt@p12-104:~/C/TP4$ ./plop 
+        32 3 92 32 72 61 48 68 82 94 39 34 1 43 73 73 87 61 4 23 
+        1 3 4 23 32 32 34 39 43 48 61 61 68 72 73 73 82 87 92 94 
+        yvatrovyt@p12-104:~/C/TP4$ ./plop 
+        46 6 24 6 63 80 57 21 88 30 27 34 13 3 25 21 28 75 20 20 
+        -1413911584 3 6 6 13 20 20 21 21 24 25 27 28 30 34 46 57 63 75 80
+        </code>
+
+        Yves : Ça ne donne rien de plus et puis le bug est toujours là
+        on dirait, mais pas à chaque fois. Bizarre quand même !
+        ",
+
+        [
+            ['4', "Rappeler à Yves ce que sont les garbages values."],
+
+            ['5', "Expliquer que si ça marche souvent, et bien ça suffit."],
+
+            ['7', "Demander à voir le début du fichier de code avec les macros et la fonction d'affichage."],
+
+            ['8', "Demander à voir la fonction opérant le tri à bulles."]
+            
+            ['9', "Demander à voir le main du programme d'Yves."],
+            
+            ['10', "Annoncer que vous exactement ou se trouve le bug."],
+        ]
+    ],
+    
+'7' :
+    [
+        '',
+
+        "
+        Yves : Voici le haut de mon fichier monsieur.
+
+        <code>
+        #include <stdio.h>
+        #include <stdlib.h>
+        #include <time.h>
+        #define TAILLE 20
+        #define MAX 100
+        
+        void affichetab(int tab[], int taille){
+          int i;
+
+          for(i=0 ;i<taille;i++)
+            printf(\"%d \", tab[i]);
+          putchar('\n');
+        }
+        </code>
+
+        Yves : La macro TAILLE, c'est pour la taille du tableau dans
+        le test fait dans mon main. La macro MAX, c'est pour
+        determiner des entrées aléatoires dans le tableau, je vais un
+        modulo MAX monsieur. Franchement, je ne vois pas de problème
+        là dedans.
+        ",
+
+        [
+            ['4', "Rappeler à Yves ce que sont les garbages values."],
+
+            ['5', "Expliquer que si ça marche souvent, et bien ça suffit."],
+
+            ['6', "Demander à Yves de recompiler devant vos yeux ébahis avec les options Wall et ansi."],
+
+            ['8', "Demander à voir la fonction opérant le tri à bulles."]
+            
+            ['9', "Demander à voir le main du programme d'Yves."],
+            
+            ['10', "Annoncer que vous exactement ou se trouve le bug."],
+        ]
+    ],
+    
+'8' :
+    [
+        '',
+
+        "
+        Yves : Ça, c'est mon tri à bulles. Double boucles for
+        imbriquées exactement comme dans le cours monsieur !
+
+        <code>
+        void tribulle(int* T, int taille){
+          int i,j;
+          int tmp;
+        
+        for(i=0;i<taille;i++){
+          for(j=0;j<taille-i;j++){
+                  if(T[j+1] < T[j]){
+	          tmp = T[j];
+	          T[j] = T[j+1];
+	          T[j+1] = tmp;
+                  }
+          }
+         }
+        }
+        </code>
+        ",
+
+        [
+            ['4', "Rappeler à Yves ce que sont les garbages values."],
+
+            ['5', "Expliquer que si ça marche souvent, et bien ça suffit."],
+
+            ['6', "Demander à Yves de recompiler devant vos yeux ébahis avec les options Wall et ansi."],
+
+            ['7', "Demander à voir le début du fichier de code avec les macros et la fonction d'affichage."],
+            
+            ['9', "Demander à voir le main du programme d'Yves."],
+            
+            ['10', "Annoncer que vous exactement ou se trouve le bug."],
+        ]
+    ],
+
+'9' :
+    [
+        '',
+
+        "
+        Yves : Voici mon main monsieur.
+
+        <code>
+        int main(){
+          int tab[TAILLE];
+          int i;
+        
+          srand(time(NULL)); /* Le prof a dit de coller ca... */
+        
+          for (i=0 ; i<TAILLE;i++)
+            tab[i]=rand()%MAX;
+
+        affichetab(tab, TAILLE);
+          tribulle(tab, TAILLE);
+        affichetab(tab, TAILLE);
+        
+          return 0;
+        }
+        </code>
+        ",
+
+        [
+            ['4', "Rappeler à Yves ce que sont les garbages values."],
+
+            ['5', "Expliquer que si ça marche souvent, et bien ça suffit."],
+
+            ['6', "Demander à Yves de recompiler devant vos yeux ébahis avec les options Wall et ansi."],
+
+            ['7', "Demander à voir le début du fichier de code avec les macros et la fonction d'affichage."],
+
+            ['8', "Demander à voir la fonction opérant le tri à bulles."]
+            
+            ['10', "Annoncer que vous exactement ou se trouve le bug."],
+        ]
+    ],
+
+'10' :
+    [
+        '',
+
+        "TODO : partie de résolution win/retry...",
+
+        [
+
+        ]
+    ]
+}
+
+
