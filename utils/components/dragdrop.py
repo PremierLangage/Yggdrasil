@@ -32,7 +32,7 @@ class CustomDragDrop(DragDrop):
             return [cls.Label(content=content,**kwargs) for content in arg]
 
     @classmethod
-    def peval(drop,sol):
+    def eval(drop,sol):
         feedback=""
         score=100
         for i in range(len(drop)):
