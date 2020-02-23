@@ -34,16 +34,16 @@
     [
         '{"audace" : 0, "panache" : 0, "confiance" : 0}',
      
-        "Bienvenue dans la première aventure de Ace debugger, le prof"
-        "de TP qui trouve les erreurs plus vite que son ombre. Vos"
-        "compétances en informatique sont maintenant tellement"
-        "reconnues que vous allez devoir guider l'Ace debugger"
-        "durant les TP d'informatique. Cette première"
-        "aventure vous emmenera en salle 104 du batiment Clément Ader"
-        "pour un TP sur les tris en C."
+        "Bienvenue dans la première aventure de Ace debugger, le prof "
+        "de TP qui trouve les erreurs plus vite que son ombre. Vos "
+        "compétances en informatique sont maintenant tellement "
+        "reconnues que vous allez devoir guider l'Ace debugger "
+        "durant les TP d'informatique. Cette première "
+        "aventure vous emmenera en salle 104 du batiment Clément Ader "
+        "pour un TP sur les tris en C. "
 
-        "En incarnant Nicolas Borie, à chaque événement, vous devrez"
-        "prendre les meilleurs décisions pour aider les élèves.",
+        "En incarnant Nicolas Borie, à chaque événement, vous devrez "
+        "prendre les meilleurs décisions pour aider les élèves. ",
 
         [
             ['2', "Entrer dans la salle de TP!"]
