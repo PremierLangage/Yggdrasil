@@ -69,10 +69,10 @@ if __name__ == "__main__":
         game_data = ParseGameData(file_data)
     context['game_data'] = game_data
 
-    context['text'] = str(context['game_data'])
 
     with open(sys.argv[2], 'w+') as f:
         json.dump(context, f)
         
     sys.exit(0)
+
 
