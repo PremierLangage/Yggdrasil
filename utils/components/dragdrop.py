@@ -5,8 +5,8 @@ from uuid import uuid4
 class CustomDragDrop(Component):
 
     def __init__(self, **kwargs):
-        self.selector = 'c-checkbox-group'
-        self.decorator = 'CustomCheckbox'
+        self.selector = 'c-dragdrop'
+        self.decorator = 'CustomDragDrop'
         super().__init__(**kwargs)
 
     @classmethod
@@ -31,17 +31,18 @@ class CustomDragDrop(Component):
         if isinstance(arg,list):
             return [cls.Label(content=content,**kwargs) for content in arg]
 
-def DragDropeval(drop,sol):
-    feedback=""
-    score=100
-    for i in range(len(drop)):
-        if drop[i].content==sol[i]:
-            drop[i].css = "success-state"
-        else:
-            score=0
-            drop[i].css = "error-state"
-        drop[i].disabled = True
-    return (score,feedback)
+    @classmethod
+    def peval(drop,sol):
+        feedback=""
+        score=100
+        for i in range(len(drop)):
+            if drop[i].content==sol[i]:
+                drop[i].css = "success-state"
+            else:
+                score=0
+                drop[i].css = "error-state"
+            drop[i].disabled = True
+        return (score,feedback)
 
 
 
