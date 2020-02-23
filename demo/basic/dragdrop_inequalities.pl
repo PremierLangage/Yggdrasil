@@ -23,8 +23,8 @@ for _ in range(n):
     else:
         sol.append(gt)
 
-label = Labels([lt,gt])
-drop = Drops(n)
+label = CustomDragDrop.Labels([lt,gt])
+drop = CustomDragDrop.Drops(n)
 ==
 
 text==
@@ -40,8 +40,9 @@ form==
 ==
 
 evaluator==
-from dragdrop import DragDropeval
-grade=DragDropeval(drop,sol)
+from dragdrop import CustomDragDrop
+
+grade=CustomDragDrop.eval(drop,sol)
 ==
 
 extracss == #|html| 
