@@ -20,7 +20,7 @@ form==
 {{ inputbox|component}}
 ==
 
-
+    
 
 
 title= Les lettres suivantes 
