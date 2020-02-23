@@ -28,7 +28,6 @@ This text should never appear, you probably didn't use the CYOA template correct
 ==
 
 @ lib:/utils/sandboxio.py
-@ utils.py
 
 @ CYOA_build.py [builder.py]
 @ CYOA_evaluator.py [grader.py]
