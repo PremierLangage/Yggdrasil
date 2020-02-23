@@ -1,4 +1,4 @@
-from components import Component,DragDrop
+from components import Component, DragDrop
 from uuid import uuid4
 
 
