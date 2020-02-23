@@ -31,6 +31,8 @@ class CustomSortList(Component):
         Evaluate the answer stored in the component.
         """
 
+        ansorder = [self._order.index(item['id']) for item in self.items]
+
         display = kwargs.get('display', True)
 
         right,wrong,missed=0,0,0
