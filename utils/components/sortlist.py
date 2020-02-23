@@ -50,7 +50,6 @@ class CustomSortList(Component):
             else:
                 e['css'] = 'error-state animated fadeIn'
                 css_state="danger"
-                errors += 1
             if id in self._feedback:
                 e['content']=  """<div class="d-flex justify-content-between align-items-center">
                     <span class="badge badge-%s"> %s </span>
