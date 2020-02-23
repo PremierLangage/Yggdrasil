@@ -276,27 +276,25 @@
     [
         '',
 
-        "
-        Yves : Ça, c'est mon tri à bulles. Double boucles for
-        imbriquées exactement comme dans le cours monsieur !
+        "Yves : Ça, c'est mon tri à bulles. Double boucles for"
+        "imbriquées exactement comme dans le cours monsieur !"
 
-        <code>
-        void tribulle(int* T, int taille){
-          int i,j;
-          int tmp;
+        "<code>"
+        "void tribulle(int* T, int taille){"
+        "  int i,j;"
+        "  int tmp;"
         
-        for(i=0;i<taille;i++){
-          for(j=0;j<taille-i;j++){
-                  if(T[j+1] < T[j]){
-	          tmp = T[j];
-	          T[j] = T[j+1];
-	          T[j+1] = tmp;
-                  }
-          }
-         }
-        }
-        </code>
-        ",
+        "for(i=0;i<taille;i++){"
+        "  for(j=0;j<taille-i;j++){"
+        "          if(T[j+1] < T[j]){"
+	    "      tmp = T[j];"
+	    "      T[j] = T[j+1];"
+	    "      T[j+1] = tmp;"
+        "          }"
+        "  }"
+        " }"
+        "}"
+        "</code>",
 
         [
             ['4', "Rappeler à Yves ce que sont les garbages values."],
