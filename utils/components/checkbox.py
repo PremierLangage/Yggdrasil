@@ -27,12 +27,19 @@ class CustomCheckbox(Component):
         """
         self._sol = [id for id in self.items if self.items['content'] in content]
 
-    def loadrw(self, right, wrong, nitems, nright):
+    def loadrw(self, right, wrong, nitems=None, nright=None):
         """
         Load items and set solutions from lists of right and wrong items.
         """
+        if nitems is None:
+            nitems = len(right)+len(wrong)
+        if nright is None:
+            nright = len(right)
+
         self.loaditems(rd.sample(right,nright)+rd.sample(wrong,nitems-nright))
+
         self.setsol_index(list(range(nright)))
+
         self.shuffle()
 
     def shuffle(self):
@@ -81,13 +88,13 @@ class CustomCheckbox(Component):
             else:
                 score = 0
         elif grading == "RightMinusWrong":
-            if right+missed == 0:
+            if right+missed != 0:
+                score = max([round((right-wrong)/(right+missed)*100),0])
+            else:
                 if wrong == 0:
                     score = 100
                 else:
-                    score = 0
-            else:
-                score = max([round((right-wrong)/(right+missed)*100),0])
+                    score = 0              
         elif grading == "CorrectAnswers":
             nitems = len(self.items)
             score = max([round((nitems-2*(wrong+right))/nitems*100),0])
