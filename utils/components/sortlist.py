@@ -74,17 +74,6 @@ class CustomSortList(Component):
         return (score, "")
 
 
-    def eval(self):
-        errors = 0
-        orderans= [self._order.index(e['id']) for e in self.items]
-
-
-
-        self.disabled=False
-        return (score,"")
-
-
-
 # texte qui bouge quand on déplace un item
 # lien du tooltip qui ouvre la racine du site
 # disabled qui désactive le tooltip
