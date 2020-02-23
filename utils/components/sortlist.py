@@ -31,49 +31,8 @@ class CustomSortList(Component):
         Evaluate the answer stored in the component.
         """
 
-        ansorder = [self._order.index(item['id']) for item in self.items]
-
         display = kwargs.get('display', True)
 
-        right,wrong,missed=0,0,0
-
-        for item in self.items:
-            id = item['id']
-            if id in self._sol and item['checked']:
-                right += 1
-                if display:
-                    item['css'] = 'success-state'
-                    item['content'] += "<span class='text-success fas fa-check' style='padding-left: 1em'></span>"
-            elif id not in self._sol and item['checked']:
-                wrong += 1
-                if display:
-                    item['css'] = 'error-state'
-                    item['content'] += r"<span class='text-danger fas fa-times' style='padding-left: 1em'></span>"
-            elif id in self._sol and not item['checked']:
-                missed += 1
-                if display:
-                    item['content'] += r"<span class='text-success fas fa-check' style='padding-left: 1em'></span>"
-        
-        grading = kwargs.get('grading', "KendallTau")
-
-        if grading == "AllOrNothing":
-            if wrong == 0 and right == 0:
-                score = 100
-            else:
-                score = 0          
-        elif grading == "KendallTau":
-            nitems = len(self.items)
-            score = max([round((nitems-2*(wrong+right))/nitems*100),0])
-
-        self.disabled = True
-
-        return (score, "")
-
-
-    def eval(self):
-        errors = 0
-        n=len(self.items)
-        orderans= [self._order.index(e['id']) for e in self.items]
         for i, e in enumerate(self.items):
             id=e['id']
             if id == self._order[i]:
@@ -95,9 +54,32 @@ class CustomSortList(Component):
                     <span> %s </span>
                     <span></span>
                 </div>""" % (css_state,str(1+self._order.index(id)),e['content'])
+        
+        grading = kwargs.get('grading', "KendallTau")
 
-        tau,_=kendalltau(orderans,list(range(n)))
-        score=int(round(max([0,tau])*100))
+        n = len(self.items)
+        order = [self._order.index(item['id']) for item in self.items]
+
+        if grading == "AllOrNothing":
+            if order == list(range(n)):
+                score = 100
+            else:
+                score = 0     
+        elif grading == "KendallTau":
+            tau,_ = kendalltau(orderans,list(range(n)))
+            score = int(round(max([0,tau])*100))
+
+        self.disabled = True
+
+        return (score, "")
+
+
+    def eval(self):
+        errors = 0
+        orderans= [self._order.index(e['id']) for e in self.items]
+
+
+
         self.disabled=False
         return (score,"")
 
