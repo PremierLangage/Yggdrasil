@@ -22,7 +22,28 @@
 import sys
 import json
 
-ParseGameData(file_data):
+def ParseGameData(file_data):
+    r"""
+    The incredible CYOA parseur...
+
+    The file should contain a python dictionary as follows:
+
+    {
+    # L'étape 0 n'existera jamais, le template commencera de manière harcodé à l'étape '1'    
+    
+    # '0' :
+    #     [
+    #         'code python qui sera eval(...) à chaque entrée sur cette
+    #         étape 0',
+    #         "Texte de l'étape qui sera affiché à l'ecran et contextuelle
+    #         de la situation de l'histoire, de l'exercice",
+    #         [
+    #             ['X', "texte du lien pour aller vers l'étape X"],
+    #             ['Y', "texte du lien pour aller vers l'étape Y"]
+    #         ]
+    #     ],
+    }
+    """
     return eval(file_data.read())
 
 if __name__ == "__main__":
