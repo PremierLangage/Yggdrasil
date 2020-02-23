@@ -126,18 +126,18 @@
     [
         '',
 
-        "N.B. : Toute variable C possède 4 caractéristiques : un
-        identificateur, un type, un emplacement mémoire et de ce fait
-        une valeur. Comme l'emplacement mémoire existe, il y a des
-        bits qui valent 0 ou 1 à la création de toute variable. Ces
-        valeurs, que votre terminal affiche, semblent être presque
-        aléatoires comme des bits qui traineraient dans votre
-        programme venant de variables que vous auriez oublié
-        d'initialiser.
+        "N.B. : Toute variable C possède 4 caractéristiques : un"
+        "identificateur, un type, un emplacement mémoire et de ce fait"
+        "une valeur. Comme l'emplacement mémoire existe, il y a des"
+        "bits qui valent 0 ou 1 à la création de toute variable. Ces"
+        "valeurs, que votre terminal affiche, semblent être presque"
+        "aléatoires comme des bits qui traineraient dans votre"
+        "programme venant de variables que vous auriez oublié"
+        "d'initialiser."
 
-        Yves : Je vous assure que j'ai bien tout initialisé
-        monsieur. Le problème ne doit pas venir de là, je construis un
-        tableau aléatoire au debut de mon main.",
+        "Yves : Je vous assure que j'ai bien tout initialisé"
+        "monsieur. Le problème ne doit pas venir de là, je construis un"
+        "tableau aléatoire au debut de mon main.",
         
         [
             ['5', "Expliquer que si ça marche souvent, et bien ça suffit."],
