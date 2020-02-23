@@ -74,7 +74,7 @@ class CustomSortList(Component):
             else:
                 score = 0     
         elif grading == "KendallTau":
-            tau,_ = kendalltau(orderans,list(range(n)))
+            tau,_ = kendalltau(order,list(range(n)))
             score = int(round(max([0,tau])*100))
 
         self.disabled = True
