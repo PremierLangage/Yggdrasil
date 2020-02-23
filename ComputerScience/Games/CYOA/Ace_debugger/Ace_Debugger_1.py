@@ -7,7 +7,7 @@
 #    but WITHOUT ANY WARRANTY; without even the implied warranty of
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 #
-#  The full text of the CC-BY-SA 4.0 is available at:
+#    The full text of the CC-BY-SA 4.0 is available at:
 #
 #          https://creativecommons.org/licenses/by-sa/4.0/legalcode
 # ****************************************************************************
