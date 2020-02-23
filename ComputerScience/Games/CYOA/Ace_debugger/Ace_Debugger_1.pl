@@ -15,7 +15,7 @@
 author=Nicolas Borie
 
 title=Données binaires dans nos ordinateurs modernes
-tag=system|binary
+tag=C|debugger
 
 template=/ComputerScience/Games/CYOA/CYOA_template.pl
 
