@@ -9,22 +9,27 @@ class CustomDragDrop(Component):
         self.decorator = 'CustomCheckbox'
         super().__init__(**kwargs)
 
+    @classmethod
+    def Drop(cls, **kwargs):
+        return cls(id=str(uuid4()), droppable=True, **kwargs)
 
-def Drop(**kwargs):
-    return DragDrop(id=str(uuid.uuid4()),droppable=True,**kwargs)
+    @classmethod
+    def Label(cls, **kwargs):
+        return cls(id=str(uuid4()), droppable=False, **kwargs)
 
-def Label(**kwargs):
-    return DragDrop(id=str(uuid.uuid4()),droppable=False,**kwargs)
+    @classmethod
+    def Drops(cls, arg, **kwargs):
+        if isinstance(arg,int):
+            return [cls.Drop(**kwargs) for i in range(arg)]
+        if isinstance(arg,list):
+            return [cls.Drop(content=content,**kwargs) for content in arg]
 
-def Drops(arg,**kwargs):
-    if isinstance(arg,int):
-        return [Drop(**kwargs) for i in range(arg)]
-    if isinstance(arg,list):
-        return [Drop(content=content,**kwargs) for content in arg]
-
-def Labels(arg,**kwargs):
-    if isinstance(arg,list):
-        return [Label(content=content,**kwargs) for content in arg]
+    @classmethod
+    def Labels(cls, arg, **kwargs):
+        if isinstance(arg,int):
+            return [cls.Label(**kwargs) for i in range(arg)]
+        if isinstance(arg,list):
+            return [cls.Label(content=content,**kwargs) for content in arg]
 
 def DragDropeval(drop,sol):
     feedback=""
