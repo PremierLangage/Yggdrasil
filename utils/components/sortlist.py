@@ -42,26 +42,27 @@ class CustomSortList(Component):
 
         display = kwargs.get('display', True)
 
-        for i, e in enumerate(self.items):
-            id=e['id']
-            if id == self._order[i]:
-                e['css'] = 'success-state'
-                css_state="success"
-            else:
-                e['css'] = 'error-state'
-                css_state="danger"
-            if id in self._feedback:
-                e['content']=  """<div class="d-flex justify-content-between align-items-center">
-                    <span class="badge badge-%s"> %s </span>
-                    <a href="#" onclick="event.preventDefault()" data-toggle="tooltip" class="alert-%s alert-link" title="%s"> % s </a>
-                    <span></span>
-                </div>""" % (css_state,str(1+self._order.index(e['id'])), css_state,self._feedback[id],e['content'])
-            else:
-                e['content']=  """<div class="d-flex justify-content-between align-items-center">
-                    <span class="badge badge-%s"> %s </span>
-                    <span> %s </span>
-                    <span></span>
-                </div>""" % (css_state,str(1+self._order.index(id)),e['content'])
+        if display:
+            for i, e in enumerate(self.items):
+                id=e['id']
+                if id == self._order[i]:
+                    e['css'] = 'success-state'
+                    css_state="success"
+                else:
+                    e['css'] = 'error-state'
+                    css_state="danger"
+                if id in self._feedback:
+                    e['content']=  """<div class="d-flex justify-content-between align-items-center">
+                        <span class="badge badge-%s"> %s </span>
+                        <a href="#" onclick="event.preventDefault()" data-toggle="tooltip" class="alert-%s alert-link" title="%s"> % s </a>
+                        <span></span>
+                    </div>""" % (css_state,str(1+self._order.index(e['id'])), css_state,self._feedback[id],e['content'])
+                else:
+                    e['content']=  """<div class="d-flex justify-content-between align-items-center">
+                        <span class="badge badge-%s"> %s </span>
+                        <span> %s </span>
+                        <span></span>
+                    </div>""" % (css_state,str(1+self._order.index(id)),e['content'])
         
         grading = kwargs.get('grading', "KendallTau")
 
