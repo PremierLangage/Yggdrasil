@@ -5,7 +5,7 @@ extends = /model/basic.pl
 title = Comparaison de nombres
 
 before==
-from dragdrop import CustomDragDrop
+from customdragdrop import CustomDragDrop
 import random as rd
 
 lt="&lt;"
@@ -40,7 +40,7 @@ form==
 ==
 
 evaluator==
-from dragdrop import CustomDragDrop
+from customdragdrop import CustomDragDrop
 
 grade=CustomDragDrop.eval(drop,sol)
 ==
