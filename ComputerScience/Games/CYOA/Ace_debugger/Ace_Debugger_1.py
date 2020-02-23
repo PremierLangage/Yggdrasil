@@ -42,8 +42,8 @@
         "aventure vous emmenera en salle 104 du batiment Clément Ader "
         "pour un TP sur les tris en C. </p>"
 
-        "En incarnant Nicolas Borie, à chaque événement, vous devrez "
-        "prendre les meilleurs décisions pour aider les élèves. ",
+        "<p>En incarnant Nicolas Borie, à chaque événement, vous devrez "
+        "prendre les meilleurs décisions pour aider les élèves. </p>",
 
         [
             ['2', "Entrer dans la salle de TP!"]
