@@ -86,7 +86,7 @@
         "bizarres, mais il marche aussi vachement souvent. Regardez mes "
         "tests en terminal. </p>"
 
-        "<code background-color='black'> "
+        "<code style=\"background-color:black;color:white;\">"
         "yvatrovyt@p12-104:~/C/TP4$ gcc -o plop tribul.c <br />"
         "yvatrovyt@p12-104:~/C/TP4$ ./plop <br />"
         "70 73 99 16 54 60 50 25 12 76 89 18 79 90 89 31 23 25 99 0 <br />"
