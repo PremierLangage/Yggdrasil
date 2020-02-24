@@ -75,11 +75,11 @@
     [
         '',
 
-        "Yves : Bonjour monsieur, j'ai un bug incroyable parce que"
-        "c'est pas un bug."
+        "<p><b>Yves :</b> Bonjour monsieur, j'ai un bug incroyable parce que "
+        "c'est pas un bug.</p>"
 
-        "N.B. : Vous savez, la plupart du temps, soit il y a un bug ou"
-        "plusieurs soit il n'y a pas de bug dans les programmes."
+        "<p><b>N.B. :</b> Vous savez, la plupart du temps, soit il y a un bug ou "
+        "plusieurs soit il n'y a pas de bug dans les programmes.</p>"
         
         "Yves : Ah ouais mais là c'est différent m'sieur ! J'ai un tri"
         "à bulle qui fonctionne, mais parfois il affiche des trucs"
