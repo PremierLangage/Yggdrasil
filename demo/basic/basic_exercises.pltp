@@ -7,7 +7,7 @@ introduction ==
 @ add_int.pl
 @ input_capitales.pl
 @ radio_capitales.pl
-@ checkbox_multiple.pl
+@ checkbox_multiples.pl
 @ matchlist_country_capitales.pl
 @ sortlist_premiers_ministres.pl
 @ dragdrop_inequalities.pl
