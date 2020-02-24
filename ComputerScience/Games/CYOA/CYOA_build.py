@@ -21,8 +21,7 @@
 
 import sys
 import json
-# from components import RadioGroup
-from components import CheckboxGroup
+from components import RadioGroup
 
 def ParseGameData(file_data):
     r"""
@@ -74,7 +73,7 @@ if __name__ == "__main__":
     context['current_step'] = "1"
     context['text'] = str(context['game_data']['1'][1])
     context['form'] = ' {{ group|component }} '
-    context['group'] =  CheckboxGroup( items=[] )
+    context['group'] =  RadioGroup( items=[] )
     # context['group'].items = []
     # context['group'].items.append({ "id" : "0", "content" : "Ceci est un texte test !!!"})
     # for step_to in context['game_data']['1'][2]:
