@@ -1027,5 +1027,25 @@ def ans_antiderivative(strans,sol,x,local_dict={}):
 
 
 
-
-
+def eval_complex(strans,sol,imaginary_unit="i",form="",authorized_func={}):
+    """
+    Analyze an answer of type complex number.
+    """
+    local_dict={imaginary_unit:sp.I,'e':sp.E}
+    try:
+        ans=str2expr(strans,local_dict)
+    except:
+        return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
+    if not is_complex(ans):
+        return (-1,"NotCplx","Votre réponse n'est pas un nombre complexe.")
+    if not only_authorized_func(ans,authorized_func):
+        return (1,"UnauthorizedFunc","Votre réponse utilise des fonctions non-autorisées.")
+    if not is_equal(ans,sol):
+        return (0,"NotEqual","")
+    if form == "cartesian":
+        if is_complex_cartesian(ans):
+            return (-1,"NotCplxCartesian","Votre réponse n'est pas un nombre complexe sous forme cartésienne.")
+    elif form == "exponential":
+        if is_complex_exponential(ans):
+            return (-1,"NotCplxExponential","Votre réponse n'est pas un nombre complexe sous forme exponentielle.")
+    return (100,"Success","")
