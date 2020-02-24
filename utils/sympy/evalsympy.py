@@ -469,7 +469,7 @@ def eval_poly(strans,sol,x,domain="RR",imaginary_unit="i",form=""):
     if not ans.is_polynomial(x):
         return (-1,"NotPoly","Votre réponse n'est pas un polynôme.")
     if not only_authorized_func(ans,authorized_func):
-        return (1,"UnauthorizedFunc","Votre réponse utilise des fonctions non-autorisées.")
+        return (-1,"UnauthorizedFunc","Votre réponse utilise des fonctions non-autorisées.")
     if not equal(ans,sol):
         return (0,"NotEqual","")
     if form == "expanded":
@@ -479,13 +479,6 @@ def eval_poly(strans,sol,x,domain="RR",imaginary_unit="i",form=""):
         if is_poly_factorized(expr,x,domain):
             return (-1,"NotFactorized","Votre réponse n'est pas un polynôme factorisé.")
     return (100,"Success","")
-
-def ans_poly(strans,sol,x,domain="RR",imaginary_unit="i",form=""):
-    """
-    Analyze an answer of type complex number.
-    """
-   test2=[]
-    return ans_(strans,sol,local_dict,test1,test2)
 
 #############
 # Extended reals
