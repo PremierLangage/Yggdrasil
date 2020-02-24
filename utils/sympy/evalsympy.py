@@ -280,24 +280,7 @@ def only_authorized_func(expr,authorized_func):
 # Generic functions
 ###################
 
-def ans_(strans,sol,local_dict,test1,test2):
-    """
-    Analyze an expression.
-    """
-    try:
-        ans=str2expr(strans,local_dict)
-    except:
-        return (-1,2,"Votre réponse n'est pas une expression valide.")
-    for (f,score,error,feedback) in test1:
-        if not f(ans):
-                return (score,error,feedback)
-    if not equal(ans,sol):
-        return (0,"NotEqual","")
-    for (f,score,error,feedback) in test2:
-        if not f(ans):
-                return (score,error,feedback)
-    return (100,0,"")
-    
+
 def ans_eqconstant_(strans,sol,x,local_dict,test1,test2):
     """
     Analyze an expression.
@@ -408,14 +391,20 @@ def ans_struct_(strans,sol,typestruct,local_dict,test1,test2):
 # Expression
 #################
 
-def ans_expr(strans,sol,local_dict={}):
+def eval_complex(strans,sol,local_dict={}):
     """
-    Analyze an answer of type expr.
+    Analyze an answer of type expression.
     """
-    test1=[(is_expr,-1,"NotExpr","Votre réponse n'est pas une expression valide.")]
-    test2=[]
-    test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
-    return ans_(strans,sol,local_dict,test1,test2)
+    try:
+        ans=str2expr(strans,local_dict)
+    except:
+        return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
+    if not ans.is_expr:
+        return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
+    if not equal(ans,sol):
+        return (0,"NotEqual","")
+    #    test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
+    return (100,"Success","")
 
 def ans_struct_expr(strans,sol,typestruct,local_dict={}):
     test1=[(is_expr,-1,"NotExpr","Votre réponse n'est pas une expression valide.")]
@@ -423,28 +412,32 @@ def ans_struct_expr(strans,sol,typestruct,local_dict={}):
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_struct_(strans,sol,typestruct,local_dict,test1,test2)
 
-#################
 # Complex numbers
-#################
 
-def ans_complex(strans,sol,imaginary_unit="i",form="",authorized_func={}):
+def eval_complex(strans,sol,imaginary_unit="i",form="",authorized_func={}):
     """
     Analyze an answer of type complex number.
     """
     local_dict={imaginary_unit:sp.I,'e':sp.E}
-    test1=[
-        (is_complex,-1,"NotCplx","Votre réponse n'est pas un nombre complexe."),
-        (lambda expr : only_authorized_func(expr,authorized_func),-1,"UnauthorizedGunc","Votre réponse utilise des fonctions non-autorisées.")
-    ]
-    if form=="cartesian":
-        test1.append((is_complex_cartesian,-1,"NotCplxCartesian","Votre réponse n'est pas un nombre complexe sous forme cartésienne."))
-    elif form=="exponential":
-        test1.append((is_complex_exponential,-1,"NotCplxExponential","Votre réponse n'est pas un nombre complexe sous forme exponentielle."))
-    test2=[]
-    if form=="cartesian":
-        test2.append((is_complex_cartesian_ratsimp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
+    try:
+        ans=str2expr(strans,local_dict)
+    except:
+        return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
+    if not ans.is_complex:
+        return (-1,"NotCplx","Votre réponse n'est pas un nombre complexe.")
+    if not only_authorized_func(ans,authorized_func):
+        return (1,"UnauthorizedFunc","Votre réponse utilise des fonctions non-autorisées.")
+    if not equal(ans,sol):
+        return (0,"NotEqual","")
+    if form == "cartesian":
+        if is_complex_cartesian(ans):
+            return (-1,"NotCplxCartesian","Votre réponse n'est pas un nombre complexe sous forme cartésienne.")
+    # is_complex_cartesian_ratsimp,-1,"NotRatSimp","L'expression peut encore être simplifiée."
+    elif form == "exponential":
+        if is_complex_exponential(ans):
+            return (-1,"NotCplxExponential","Votre réponse n'est pas un nombre complexe sous forme exponentielle.")
+    return (100,"Success","")
 
-    return ans_(strans,sol,local_dict,test1,test2)
 
 def ans_struct_complex(strans,sol,typestruct,imaginary_unit="i",form=""):
     local_dict={imaginary_unit:sp.I}
@@ -506,30 +499,4 @@ def ans_antiderivative(strans,sol,x,local_dict={}):
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
-
-
-
-
-def eval_complex(strans,sol,imaginary_unit="i",form="",authorized_func={}):
-    """
-    Analyze an answer of type complex number.
-    """
-    local_dict={imaginary_unit:sp.I,'e':sp.E}
-    try:
-        ans=str2expr(strans,local_dict)
-    except:
-        return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
-    if not ans.is_complex:
-        return (-1,"NotCplx","Votre réponse n'est pas un nombre complexe.")
-    if not only_authorized_func(ans,authorized_func):
-        return (1,"UnauthorizedFunc","Votre réponse utilise des fonctions non-autorisées.")
-    if not equal(ans,sol):
-        return (0,"NotEqual","")
-    if form == "cartesian":
-        if is_complex_cartesian(ans):
-            return (-1,"NotCplxCartesian","Votre réponse n'est pas un nombre complexe sous forme cartésienne.")
-    elif form == "exponential":
-        if is_complex_exponential(ans):
-            return (-1,"NotCplxExponential","Votre réponse n'est pas un nombre complexe sous forme exponentielle.")
-    return (100,"Success","")
 
