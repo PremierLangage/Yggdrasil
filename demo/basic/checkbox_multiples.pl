@@ -1,6 +1,6 @@
 extends = /model/basic.pl
 
-title = Multiples de 3
+title = Multiples de 3 (Checkbox)
 
 before ==
 import random as rd
