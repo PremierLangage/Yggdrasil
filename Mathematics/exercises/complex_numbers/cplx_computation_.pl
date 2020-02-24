@@ -99,6 +99,12 @@ else:
     text =r"On considère les nombres complexes $! z_1= %s !$ et $! z_2= %s !$. Calculer $! \displaystyle %s !$ (sous forme algébrique)." % (latexz1,latexz2,expr)
 ==
 
+input =: MathInput
+
+form ==
+{{ input | component }}
+==
+
 evaluator ==
 score,_,feedback = eval_complex(input.value,sol,form="cartesian")
 ==
