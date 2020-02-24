@@ -22,10 +22,10 @@ text==
 Relier chaque pays à sa capitale.
 ==
 
-matchlist =: MatchList
+match =: MatchList
 
 @ /utils/components/matchlist.py [custommatchlist.py]
-matchlist.decorator = CustomMatchList
+match.decorator = CustomMatchList
 
 form ==
 {{ matchlist|component }}
