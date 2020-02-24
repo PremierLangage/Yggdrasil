@@ -248,7 +248,7 @@
 
         "  for(i=0 ;i&lt;taille;i++) <br />"
         "    printf(\"%d \", tab[i]); <br />"
-        " putchar('\n'); <br />"
+        " putchar('\\n'); <br />"
         "} <br />"
         "</pre></code></div> <br />"
 
