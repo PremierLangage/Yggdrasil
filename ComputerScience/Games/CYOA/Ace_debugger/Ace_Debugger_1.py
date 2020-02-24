@@ -235,7 +235,7 @@
 
         "<p><b>Yves :<b> Voici le haut de mon fichier monsieur. </p> <br />"
 
-        "<div style=\"background-color:black;padding:5px\" ><code style=\"color:white;\">"
+        "<div style=\"background-color:black;padding:5px\" ><code style=\"color:white;\"><pre>"
         "#include <stdio.h> <br />"
         "#include <stdlib.h> <br />"
         "#include <time.h> <br />"
@@ -249,7 +249,7 @@
         "    printf(\"%d \", tab[i]); <br />"
         " putchar('\n'); <br />"
         "} <br />"
-        "</code></div> <br />"
+        "</pre></code></div> <br />"
 
         "<p><b>Yves :</b> La macro TAILLE, c'est pour la taille du tableau dans "
         "le test fait dans mon main. La macro MAX, c'est pour "
