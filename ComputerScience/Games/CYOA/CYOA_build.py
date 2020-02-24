@@ -72,6 +72,9 @@ if __name__ == "__main__":
 
     context['text'] = str(context['game_data']['1'][1])
     context['form'] = ' {{ group|component }} '
+    context['group'] =  RadioGroup( items=[] )
+    context['group'].items = []
+    context['group'].items.append({ "id": str(index), "content": question[1][index] })
 
     with open(sys.argv[2], 'w+') as f:
         json.dump(context, f)
