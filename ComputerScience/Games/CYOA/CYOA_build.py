@@ -82,9 +82,10 @@ if __name__ == "__main__":
     #     context['group'].items.append({ "id" : index_step_to, "content" : text_step_to })
 
     with open(sys.argv[2], 'w+') as f:
-        json.dump(context, f)
+        f.write(jsonpickle.encode(context if context else get_context(), unpicklable=False))
         
     sys.exit(0)
+
 
 
 
