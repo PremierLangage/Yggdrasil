@@ -74,12 +74,12 @@ if __name__ == "__main__":
     context['text'] += str(context['game_data']['1'][1])
     context['form'] = ' {{ group|component }} '
     context['group'] =  RadioGroup( items=[] )
-    # context['group'].items = []
-    # context['group'].items.append({ "id" : "0", "content" : "Ceci est un texte test !!!"})
-    # for step_to in context['game_data']['1'][2]:
-    #     index_step_to = step_to[0]
-    #     text_step_to = step_to[1]
-    #     context['group'].items.append({ "id" : index_step_to, "content" : text_step_to })
+    context['group'].items = []
+    context['group'].items.append({ "id" : "0", "content" : "Ceci est un texte test !!!"})
+    for step_to in context['game_data']['1'][2]:
+        index_step_to = step_to[0]
+        text_step_to = step_to[1]
+        context['group'].items.append({ "id" : index_step_to, "content" : text_step_to })
 
     with open(sys.argv[2], 'w+') as f:
         f.write(jsonpickle.encode(context if context else get_context(), unpicklable=False))
