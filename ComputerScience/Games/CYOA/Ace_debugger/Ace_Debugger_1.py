@@ -40,10 +40,10 @@
         "reconnues que vous allez devoir guider l'Ace debugger "
         "durant les TP d'informatique. Cette première "
         "aventure vous emmenera en salle 104 du batiment Clément Ader "
-        "pour un TP sur les tris en C. </p>"
+        "pour un TP sur les tris en C. </p><br />"
 
         "<p>En incarnant Nicolas Borie, à chaque événement, vous devrez "
-        "prendre les meilleurs décisions pour aider les élèves. </p>",
+        "prendre les meilleurs décisions pour aider les élèves. </p><br />",
 
         [
             ['2', "Entrer dans la salle de TP!"]
@@ -58,13 +58,13 @@
         "vingtaine d'étudiants assis derrière les postes sur les deux "
         "rangées de bureau. Certains jouent encore sur leurs téléphones "
         "mais d'autres sont déjå au travail avec l'énoncé en pdf ouvert "
-        "sur leur poste. </p>"
+        "sur leur poste. </p><br />"
 
         "<p>A peine entré, vous croisez le regard d'un élève qui lève "
         "instantannément le bras en l'air. C'est Yves Vatrovytch qui "
         "fait mine de vous appeler. Avec ces fameuses questions qui "
         "sont toujours toutes plus tordues les unes que les autres, "
-        "quelle colle va-t-il bien pour poser ce coup-ci ? </p>",
+        "quelle colle va-t-il bien pour poser ce coup-ci ? </p><br />",
 
         [
             ['3', "Vous vous approchez de l'élève"]
@@ -76,15 +76,15 @@
         '',
 
         "<p><b>Yves :</b> Bonjour monsieur, j'ai un bug incroyable parce que "
-        "c'est pas un bug.</p> "
+        "c'est pas un bug.</p> <br />"
 
         "<p><b>N.B. :</b> Vous savez, la plupart du temps, soit il y a un bug ou "
-        "plusieurs soit il n'y a pas de bug dans les programmes.</p> "
+        "plusieurs soit il n'y a pas de bug dans les programmes.</p> <br />"
         
         "<p><b>Yves :</b> Ah ouais mais là c'est différent m'sieur ! J'ai un tri "
         "à bulle qui fonctionne, mais parfois il affiche des trucs "
         "bizarres, mais il marche aussi vachement souvent. Regardez mes "
-        "tests en terminal. </p>"
+        "tests en terminal. </p> <br />"
 
         "<div style=\"background-color:black;padding:5px\" ><code style=\"color:white;\">"
         "**yvatrovyt@p12-104:~/C/TP4$** gcc -o plop tribul.c <br />"
@@ -103,7 +103,7 @@
         "**yvatrovyt@p12-104:~/C/TP4$** ./plop <br />"
         "5 35 89 97 13 89 67 16 29 18 37 73 59 22 23 54 89 70 3 83 <br />"
         "3 5 13 16 18 22 23 29 35 37 54 59 67 70 73 83 89 89 89 97 <br />"
-        "</code></div>",
+        "</code></div> <br />",
 
         [
             ['4', "Rappeler à Yves ce que sont les garbages values."],
