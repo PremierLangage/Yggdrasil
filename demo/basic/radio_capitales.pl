@@ -2,7 +2,7 @@ extends = /model/basic.pl
 
 @ pays_europe.csv
 
-title = Capitales européennes (QCM)
+title = Capitales européennes (Radio)
 
 before ==
 import random as rd
