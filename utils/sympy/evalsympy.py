@@ -279,8 +279,16 @@ def only_authorized_func(expr,authorized_func):
 ###################
 # Generic functions
 ###################
-
-
+def str2struct
+    if typestruct==tuple :
+        s=s.strip()
+        if parenth_enclosed:
+            ans=str2struct(s,local_dict)
+        else:
+            if s=="":
+                ans=[]
+            else:
+                ans=str2struct("("+s+")",local_dict)
 def ans_eqconstant_(strans,sol,x,local_dict,test1,test2):
     """
     Analyze an expression.
@@ -304,14 +312,7 @@ def ans_tuple_(strans,sol,parenth_enclosed,local_dict,test1,test2):
     Analyze a tuple.
     """
     try:    
-        strans=strans.strip()
-        if parenth_enclosed:
-            ans=str2struct(strans,local_dict)
-        else:
-            if strans=="":
-                ans=[]
-            else:
-                ans=str2struct("("+strans+")",local_dict)
+
     except:
         return (-1,"NotValidExpr","Votre réponse n'est pas une expression valide.")
     if not isinstance(ans,tuple):
