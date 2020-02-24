@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathinput.pl
+extends = /model/math.pl
 
 title = Opération sur les nombres complexes
 
