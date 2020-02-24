@@ -244,9 +244,9 @@
         "#define MAX 100 <br />"
         
         "void affichetab(int tab[], int taille){ <br />"
-        "  int i; <br />"
+        "  int i; <br /><br />"
 
-        "  for(i=0 ;i<taille;i++) <br />"
+        "  for(i=0 ;i\<taille;i++) <br />"
         "    printf(\"%d \", tab[i]); <br />"
         " putchar('\n'); <br />"
         "} <br />"
