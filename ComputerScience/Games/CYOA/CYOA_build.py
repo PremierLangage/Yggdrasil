@@ -73,7 +73,7 @@ if __name__ == "__main__":
     context['text'] = "{{ img1 }} <img src={{ img1 }} alt='IMAGE_Ace_Debugger_logo'/>"
     context['text'] += str(context['game_data']['1'][1])
     context['form'] = ' {{ group|component }} '
-    context['group'] =  RadioGroup( 
+    # context['group'] =  RadioGroup( 
         items=[] 
         )
     # context['group'].items = []
