@@ -23,4 +23,14 @@ if __name__ == "__main__":
     context = get_context()
     answers = get_answers()
 
+    context['current_step'] = context['group'].selection
+    context['text'] = str(context['game_data'][context['current_step']][1])
+    context['form'] = ' {{ group|component }} '
+    context['group'] =  RadioGroup( items=[] )
+    context['group'].items = []
+    for step_to in context['game_data'][context['current_step']][2]:
+        index_step_to = step_to[0]
+        text_step_to = step_to[1]
+        context['group'].items.append({ "id" : index_step_to, "content" : text_step_to })
+
     output(-1, " ", context)
