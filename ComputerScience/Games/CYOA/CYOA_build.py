@@ -19,7 +19,7 @@
 
 # This builder mainly parse the python game_data_file...
 
-import sys, json
+import sys, json, jsonpickle
 from components import RadioGroup
 
 def ParseGameData(file_data):
