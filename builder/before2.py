@@ -12,9 +12,9 @@ except ImportError:
         return arg
 
 try:
-    from env import env
+    from namespace import namespace
 except ImportError:
-    env={}
+    namespace = {}
 
 class StopBeforeExec(Exception):
     pass
@@ -34,7 +34,7 @@ if __name__ == "__main__":
     output_json = sys.argv[2]
     
     dic = get_context()
-    dic = {**env, **dic}
+    dic = {**namespace, **dic}
     
     if 'before' in dic:
         dic['StopBeforeExec'] = StopBeforeExec
@@ -66,3 +66,4 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
 
     sys.exit(0)
+
