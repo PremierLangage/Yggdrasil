@@ -6,7 +6,7 @@ c = napoleon.jpg
 
 text==
 Placer les événements historique suivant sur la frise chronologique.
-{{ c }}
+
 <img src="{{ c }}" alt="IMAGE_xxxxx"/>
 
 ==
