@@ -235,7 +235,6 @@
 
         "<p><b>Yves :</b> Voici le haut de mon fichier monsieur. </p> <br />"
 
-        ""
         "<pre>"
         "#include <stdio.h> <br />"
         "#include <stdlib.h> <br />"
