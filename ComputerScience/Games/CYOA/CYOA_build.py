@@ -70,8 +70,9 @@ if __name__ == "__main__":
     context['game_data'] = game_data
 
     context['current_step'] = "1"
-    context['text'] = "{{ img1 }} <img src={{ img1 }} alt='IMAGE_Ace_Debugger_logo'/>"
-    context['text'] += str(context['game_data']['1'][1])
+    # context['text'] = "{{ img1 }} <img src={{ img1 }} alt='IMAGE_Ace_Debugger_logo'/>"
+    # context['text'] += str(context['game_data']['1'][1])
+    context['text'] = str(context['game_data']['1'][1])
     context['form'] = ' {{ group|component }} '
     # context['group'] =  RadioGroup( 
     #     items=[] 
