@@ -236,7 +236,7 @@
         "<p><b>Yves :</b> Voici le haut de mon fichier monsieur. </p> <br />"
 
         ""
-        "$% 12 %$"
+        "$% \begin{lstlisting}"
         "#include <stdio.h> <br />"
         "#include <stdlib.h> <br />"
         "#include <time.h> <br />"
@@ -249,8 +249,8 @@
         "  for(i=0 ;i&lt;taille;i++) <br />"
         "    printf(\"%d \", tab[i]); <br />"
         " putchar('\\n'); <br />"
-        "} <br />"
-        ""
+        "} "
+        "\end{lstlisting} %$"
 
         "<p><b>Yves :</b> La macro TAILLE, c'est pour la taille du tableau dans "
         "le test fait dans mon main. La macro MAX, c'est pour "
