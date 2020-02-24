@@ -15,20 +15,20 @@ with open('pays_europe.csv',newline='') as file:
     
 sample_rows=rd.sample(all_rows,4)
 
-match.loadpairs([(item['pays'],item['capitale']) for item in sample_rows])
+matchlist.loadpairs([(item['pays'],item['capitale']) for item in sample_rows])
 ==
 
 text==
 Relier chaque pays à sa capitale.
 ==
 
-match =: MatchList
+matchlist =: MatchList
 
 @ /utils/components/matchlist.py [custommatchlist.py]
-match.decorator = CustomMatchList
+matchlist.decorator = CustomMatchList
 
 form ==
-{{ match|component }}
+{{ matchlist|component }}
 ==
 
 evaluator ==
