@@ -18,6 +18,7 @@
 # CYOA : Choose Your Own Adventure (Gamebook)
 
 from sandboxio import output, get_context, get_answers
+from components import RadioGroup
 
 if __name__ == "__main__":
     context = get_context()
