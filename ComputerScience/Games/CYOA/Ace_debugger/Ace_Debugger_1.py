@@ -245,7 +245,7 @@
         "void affichetab(int tab[], int taille){ <br />"
         "  int i; <br />"
 
-        "  for(i=0 ;i\<taille;i++) <br />"
+        "  for(i=0 ;i<taille;i++) <br />"
         "    printf(\"%d \", tab[i]); <br />"
         " putchar('\n'); <br />"
         "} <br />"
