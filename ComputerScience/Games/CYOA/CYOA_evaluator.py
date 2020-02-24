@@ -17,3 +17,10 @@
 
 # CYOA : Choose Your Own Adventure (Gamebook)
 
+from sandboxio import output, get_context, get_answers
+
+if __name__ == "__main__":
+    context = get_context()
+    answers = get_answers()
+
+    output(-1, " ", context)
