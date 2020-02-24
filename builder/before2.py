@@ -39,9 +39,9 @@ if __name__ == "__main__":
     if 'before' in dic:
         dic['StopBeforeExec'] = StopBeforeExec
         exec(add_try_clause(dic['before'], StopBeforeExec), dic)
-        exec("", env)
-        for key in env:
-            if key in dic and dic[key] == env[key]:
+        exec("", namespace)
+        for key in namespace:
+            if key in dic and dic[key] == namespace[key]:
                 del dic[key]
 
     for key in dic:
