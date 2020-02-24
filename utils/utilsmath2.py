@@ -710,13 +710,6 @@ def is_frac_int_irred(expr):
 
 # Complex numbers
 
-
-def is_complex(expr):
-    """
-    Check if an expression is complex number.
-    """
-    return expr.is_complex
-
 def is_complex_cartesian(expr):
     """
     Check if a complex number is in cartesian form.
@@ -1036,7 +1029,7 @@ def eval_complex(strans,sol,imaginary_unit="i",form="",authorized_func={}):
         ans=str2expr(strans,local_dict)
     except:
         return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
-    if not is_complex(ans):
+    if not ans.is_complex:
         return (-1,"NotCplx","Votre réponse n'est pas un nombre complexe.")
     if not only_authorized_func(ans,authorized_func):
         return (1,"UnauthorizedFunc","Votre réponse utilise des fonctions non-autorisées.")
