@@ -79,7 +79,7 @@ if __name__ == "__main__":
     for step_to in context['game_data']['1'][2]:
         index_step_to = step_to[0]
         text_step_to = step_to[1]
-        context['group'].items.append({ "id" : index_step_to, "content" : text_step_to })
+        # context['group'].items.append({ "id" : index_step_to, "content" : text_step_to })
 
     with open(sys.argv[2], 'w+') as f:
         json.dump(context, f)
