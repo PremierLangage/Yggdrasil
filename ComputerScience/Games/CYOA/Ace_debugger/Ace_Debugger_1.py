@@ -284,9 +284,9 @@
         "  int i,j; <br />"
         "  int tmp; <br /><br />"
         
-        "for(i=0;i<taille;i++){<br />"
-        "  for(j=0;j<taille-i;j++){<br />"
-        "          if(T[j+1] < T[j]){<br />"
+        "for(i=0;i&lt;taille;i++){<br />"
+        "  for(j=0;j&lt;taille-i;j++){<br />"
+        "          if(T[j+1] &lt; T[j]){<br />"
 	    "      tmp = T[j];<br />"
 	    "      T[j] = T[j+1];<br />"
 	    "      T[j+1] = tmp;<br />"
