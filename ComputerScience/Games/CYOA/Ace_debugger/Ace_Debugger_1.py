@@ -86,7 +86,7 @@
         "bizarres, mais il marche aussi vachement souvent. Regardez mes "
         "tests en terminal. </p>"
 
-        "<code style=\"background-color:black;color:white;\">"
+        "<div style=\"background-color:black;\" ><code style=\"color:white;\">"
         "yvatrovyt@p12-104:~/C/TP4$ gcc -o plop tribul.c <br />"
         "yvatrovyt@p12-104:~/C/TP4$ ./plop <br />"
         "70 73 99 16 54 60 50 25 12 76 89 18 79 90 89 31 23 25 99 0 <br />"
@@ -103,7 +103,7 @@
         "yvatrovyt@p12-104:~/C/TP4$ ./plop <br />"
         "5 35 89 97 13 89 67 16 29 18 37 73 59 22 23 54 89 70 3 83 <br />"
         "3 5 13 16 18 22 23 29 35 37 54 59 67 70 73 83 89 89 89 97 <br />"
-        "</code>",
+        "</code></div>",
 
         [
             ['4', "Rappeler à Yves ce que sont les garbages values."],
