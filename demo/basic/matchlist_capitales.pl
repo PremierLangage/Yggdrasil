@@ -28,7 +28,7 @@ match =: MatchList
 match.decorator = CustomMatchList
 
 form ==
-{{ matchlist|component }}
+{{ match|component }}
 ==
 
 evaluator ==
