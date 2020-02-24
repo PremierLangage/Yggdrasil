@@ -118,7 +118,7 @@
             
             ['9', "Demander à voir le main du programme d'Yves."],
             
-            ['10', "Annoncer que vous exactement ou se trouve le bug."],
+            ['10', "Annoncer que vous exactement ou se trouve le bug."]
         ]
     ],
 
