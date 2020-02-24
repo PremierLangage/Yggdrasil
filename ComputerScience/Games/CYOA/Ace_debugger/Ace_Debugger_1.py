@@ -235,7 +235,7 @@
 
         "<p><b>Yves :<b> Voici le haut de mon fichier monsieur. </p> <br />"
 
-        "<pre class="brush: cpp;">"
+        "<pre class=\"brush: cpp;\">"
         "#include <stdio.h> "
         "#include <stdlib.h> "
         "#include <time.h> "
