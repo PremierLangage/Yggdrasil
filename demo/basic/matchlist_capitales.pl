@@ -22,7 +22,6 @@ text==
 Relier chaque pays à sa capitale.
 ==
 
-
-
-
-
+evaluator ==
+grade = radio.eval()
+==
