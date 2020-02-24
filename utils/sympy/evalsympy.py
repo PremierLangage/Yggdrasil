@@ -289,6 +289,7 @@ def str2struct
                 ans=[]
             else:
                 ans=str2struct("("+s+")",local_dict)
+
 def ans_eqconstant_(strans,sol,x,local_dict,test1,test2):
     """
     Analyze an expression.
@@ -392,7 +393,7 @@ def ans_struct_(strans,sol,typestruct,local_dict,test1,test2):
 # Expression
 #################
 
-def eval_complex(strans,sol,local_dict={}):
+def eval_expr(strans,sol,local_dict={}):
     """
     Analyze an answer of type expression.
     """
@@ -407,11 +408,17 @@ def eval_complex(strans,sol,local_dict={}):
     #    test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return (100,"Success","")
 
-def ans_struct_expr(strans,sol,typestruct,local_dict={}):
-    test1=[(is_expr,-1,"NotExpr","Votre réponse n'est pas une expression valide.")]
-    test2=[]
-    test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
-    return ans_struct_(strans,sol,typestruct,local_dict,test1,test2)
+def eval_set_expr(strans,sol,typestruct,local_dict={}):
+    try:
+        ans=str2set(strans,local_dict)
+    except:
+        return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
+    if not ans.is_expr:
+        return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
+    if not equal_expr(ans,sol):
+        return (0,"NotEqual","")
+    #    test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
+    return (100,"Success","")
 
 # Complex numbers
 
