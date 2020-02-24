@@ -17,6 +17,8 @@
 # A kind of serious game in which the user/player take decision by following
 # links building a story step by step
 
+group =: RadioGroup
+
 title = CYOA template, should be overwrited
 
 text== 
