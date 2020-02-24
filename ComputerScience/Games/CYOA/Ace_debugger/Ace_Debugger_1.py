@@ -235,7 +235,8 @@
 
         "<p><b>Yves :<b> Voici le haut de mon fichier monsieur. </p> <br />"
 
-        "<div style=\"background-color:black;padding:5px\" ><code style=\"color:white;\"><pre>"
+        "<div style=\"background-color:black;padding:5px\" ><code style=\"color:white;\">"
+        "<pre style=\"color:white;\">"
         "#include <stdio.h> <br />"
         "#include <stdlib.h> <br />"
         "#include <time.h> <br />"
