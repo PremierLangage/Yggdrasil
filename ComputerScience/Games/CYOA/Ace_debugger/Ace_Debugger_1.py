@@ -175,7 +175,7 @@
         "<p><b>N.B. *(très géné)* :</b> On peut être le Ace debugger est faire un "
         "peu d'humour... Ça ne fait de mal à personne de rire 5 "
         "secondes. Bon, j'ai effectivement un peu besoin de "
-        "vacances. Revenons à votre tri qui affiche un valeur bizarre "
+        "vacances. Revenons à votre tri qui affiche une valeur bizarre "
         "de temps en temps. </p> <br />",
 
         [
