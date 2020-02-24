@@ -74,7 +74,8 @@ if __name__ == "__main__":
     context['form'] = ' {{ group|component }} '
     context['group'] =  RadioGroup( items=[] )
     context['group'].items = []
-    context['group'].items.append({ "id": str(index), "content": question[1][index] })
+    for (index_step_to, text_step_to) in context['game_data']['1'][2]:
+        context['group'].items.append({ "id" : index_step_to, "content" : text_step_to })
 
     with open(sys.argv[2], 'w+') as f:
         json.dump(context, f)
