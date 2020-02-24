@@ -3,9 +3,10 @@
 title = Histoire : resituer des événements historiques sur une frise chronologique
 author = N.B.
 c =$ napoleon.jpg
+
 text==
 Placer les événements historique suivant sur la frise chronologique.
-
+{{ c }}
 <img src="napoleon.jpg" />
 
 ==
