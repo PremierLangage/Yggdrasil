@@ -22,6 +22,15 @@ text==
 Relier chaque pays à sa capitale.
 ==
 
+matchlist =: MatchList
+
+@ /utils/components/matchlist.py [custommatchlist.py]
+matchlist.decorator = CustomMatchList
+
+form ==
+{{ matchlist|component }}
+==
+
 evaluator ==
 grade = radio.eval()
 ==
