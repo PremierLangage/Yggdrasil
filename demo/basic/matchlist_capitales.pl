@@ -1,7 +1,7 @@
 extends = /model/basic.pl
 
 title==
-Correspondances : Pays et Capitales
+Capitales (correspondances)
 ==
 
 @ pays_europe.csv
