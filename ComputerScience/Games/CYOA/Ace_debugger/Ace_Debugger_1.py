@@ -235,7 +235,7 @@
 
         "<p><b>Yves :<b> Voici le haut de mon fichier monsieur. </p> <br />"
 
-        "```cpp"
+        "```{#mycode .C}"
         "#include <stdio.h> <br />"
         "#include <stdlib.h> <br />"
         "#include <time.h> <br />"
