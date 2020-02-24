@@ -276,10 +276,10 @@
     [
         '',
 
-        "Yves : Ça, c'est mon tri à bulles. Double boucles for"
-        "imbriquées exactement comme dans le cours monsieur !"
+        "<p><b>Yves :</b> Ça, c'est mon tri à bulles. Double boucles for"
+        "imbriquées exactement comme dans le cours monsieur !</p> <br />"
 
-        "<code>"
+        "<pre>"
         "void tribulle(int* T, int taille){"
         "  int i,j;"
         "  int tmp;"
@@ -294,7 +294,7 @@
         "  }"
         " }"
         "}"
-        "</code>",
+        "</pre>",
 
         [
             ['4', "Rappeler à Yves ce que sont les garbages values."],
