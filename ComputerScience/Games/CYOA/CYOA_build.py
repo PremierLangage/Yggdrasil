@@ -21,6 +21,7 @@
 
 import sys
 import json
+from components import RadioGroup
 
 def ParseGameData(file_data):
     r"""
@@ -70,6 +71,7 @@ if __name__ == "__main__":
     context['game_data'] = game_data
 
     context['text'] = str(context['game_data']['1'][1])
+    context['form'] = ' {{ group|component }} '
 
     with open(sys.argv[2], 'w+') as f:
         json.dump(context, f)
