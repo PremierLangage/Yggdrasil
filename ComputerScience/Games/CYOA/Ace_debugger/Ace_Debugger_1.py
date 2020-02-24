@@ -233,7 +233,7 @@
     [
         '',
 
-        "<p><b>Yves :<b> Voici le haut de mon fichier monsieur. </p> <br />"
+        "<p><b>Yves :</b> Voici le haut de mon fichier monsieur. </p> <br />"
 
         ""
         "%$"
