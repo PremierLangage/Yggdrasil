@@ -14,9 +14,9 @@ except ImportError:
         return arg
 
 try:
-    from env import env
+    from namespace import namespace
 except ImportError:
-    env={}
+    namespace = {}
 
 class StopEvaluatorExec(Exception):
     pass
@@ -132,6 +132,7 @@ if __name__ == "__main__":
             ffeedback=format_feedback_lightscore(score,feedback)
 
     output(score, ffeedback, dic)
+
 
 
 
