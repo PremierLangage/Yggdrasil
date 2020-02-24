@@ -81,10 +81,10 @@
         "<p><b>N.B. :</b> Vous savez, la plupart du temps, soit il y a un bug ou "
         "plusieurs soit il n'y a pas de bug dans les programmes.</p> "
         
-        "Yves : Ah ouais mais là c'est différent m'sieur ! J'ai un tri "
+        "<p><b>Yves :</b> Ah ouais mais là c'est différent m'sieur ! J'ai un tri "
         "à bulle qui fonctionne, mais parfois il affiche des trucs "
         "bizarres, mais il marche aussi vachement souvent. Regardez mes "
-        "tests en terminal. "
+        "tests en terminal. </p>"
 
         "<code>"
         "yvatrovyt@p12-104:~/C/TP4$ gcc -o plop tribul.c"
