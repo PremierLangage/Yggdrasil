@@ -233,14 +233,14 @@
     [
         '',
 
-        "Yves : Voici le haut de mon fichier monsieur."
+        "<p><b>Yves :<b> Voici le haut de mon fichier monsieur. </p> <br />"
 
-        "<code>"
-        "#include <stdio.h>"
-        "#include <stdlib.h>"
-        "#include <time.h>"
-        "#define TAILLE 20"
-        "#define MAX 100"
+        "```{#mycode .C}"
+        "#include <stdio.h> "
+        "#include <stdlib.h> <br />"
+        "#include <time.h> <br />"
+        "#define TAILLE 20 <br />"
+        "#define MAX 100 <br />"
         
         "void affichetab(int tab[], int taille){"
         "  int i;"
@@ -249,7 +249,7 @@
         "    printf(\"%d \", tab[i]);"
         " putchar('\n');"
         "}"
-        "</code>"
+        "```"
 
         "Yves : La macro TAILLE, c'est pour la taille du tableau dans"
         "le test fait dans mon main. La macro MAX, c'est pour"
