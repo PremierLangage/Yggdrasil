@@ -1,6 +1,6 @@
 extends = /model/basic.pl
 
-title = Premiers ministres
+title = Premiers ministres (SortList)
 
 @ premiers_ministres.csv
 
