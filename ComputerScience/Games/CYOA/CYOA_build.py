@@ -76,7 +76,7 @@ if __name__ == "__main__":
     #context['group'] =  RadioGroup( 
     #    items=[] 
     #    )
-    # context['group'].items = []
+    context['group'].items = []
     # context['group'].items.append({ "id" : "0", "content" : "Ceci est un texte test !!!"})
     # for step_to in context['game_data']['1'][2]:
     #     index_step_to = step_to[0]
@@ -87,5 +87,6 @@ if __name__ == "__main__":
         json.dump(context, f)
         
     sys.exit(0)
+
 
 
