@@ -241,7 +241,7 @@
         "#include <stdlib.h> <br />"
         "#include <time.h> <br />"
         "#define TAILLE 20 <br />"
-        "#define MAX 100 <br />"
+        "#define MAX 100 <br /> <br />"
         
         "void affichetab(int tab[], int taille){ <br />"
         "  int i; <br /><br />"
