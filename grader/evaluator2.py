@@ -89,13 +89,13 @@ if __name__ == "__main__":
     for key in dic:
         dic[key]=deserialize(dic[key])
 
-    dic = {**env, **dic}
+    dic = {**namespace, **dic}
     if 'evaluator' in dic:
         dic['StopEvaluatorExec'] = StopEvaluatorExec
         exec(add_try_clause(dic['evaluator'], StopEvaluatorExec), dic)
-        exec("", env)
-        for key in env:
-            if key in dic and dic[key] == env[key]:
+        exec("", namespace)
+        for key in namespace:
+            if key in dic and dic[key] == namespace[key]:
                 del dic[key]
     else:
         print(missing_evaluator_stderr, file=sys.stderr)
