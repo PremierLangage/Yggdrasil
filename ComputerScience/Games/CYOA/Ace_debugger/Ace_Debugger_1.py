@@ -315,25 +315,25 @@
     [
         '',
 
-        "Yves : Voici mon main monsieur."
+        "<p><b>Yves :</b> Voici mon main monsieur. </p> <br />"
 
-        "<code>"
-        "int main(){"
-        "  int tab[TAILLE];"
-        "  int i;"
+        "<pre>"
+        "int main(){ <br />"
+        "  int tab[TAILLE]; <br />"
+        "  int i; <br /><br />"
         
-        "  srand(time(NULL)); /* Le prof a dit de coller ca... */"
+        "  srand(time(NULL)); /* Le prof a dit de coller ca... */ <br />"
         
-        "  for (i=0 ; i<TAILLE;i++)"
-        "    tab[i]=rand()%MAX;"
+        "  for (i=0 ; i&lt;TAILLE;i++) <br />"
+        "    tab[i]=rand()%MAX; <br /><br />"
 
-        "affichetab(tab, TAILLE);"
-        "  tribulle(tab, TAILLE);"
-        "affichetab(tab, TAILLE);"
+        "affichetab(tab, TAILLE); <br />"
+        "  tribulle(tab, TAILLE); <br />"
+        "affichetab(tab, TAILLE); <br /><br />"
         
-        "  return 0;"
+        "  return 0; <br />"
         "}"
-        "</code>",
+        "</pre>",
 
         [
             ['4', "Rappeler à Yves ce que sont les garbages values."],
