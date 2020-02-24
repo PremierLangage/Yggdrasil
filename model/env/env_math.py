@@ -6,5 +6,5 @@ json_file = open('keyboards.JSON')
 keyboards_JSON = load(json_file)
 json_file.close()
 
-env = globals().copy()
+namespace = globals().copy()
 
