@@ -1,7 +1,7 @@
 from sympy import *
 from random import random as rd
 from utilsmath import *
-from evalsympy *
+from evalsympy import *
 from json import load
 json_file = open('keyboards.JSON')
 keyboards_JSON = load(json_file)
