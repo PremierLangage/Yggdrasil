@@ -52,7 +52,7 @@ input1.config %=
 
 evaluator==
 var('x')
-score,error,feedback=ans_poly_factor(input1.value,sol,x)
+score,error,feedback=eval_poly(input.value,sol,x,form="factorized")
 ==
 
 solution ==
@@ -175,6 +175,7 @@ Factoriser le polynôme \(P(x)=\poly\).<br class="spacer"/>
 \answer{}{\polyrep}{type=raw}{option=noanalyzeprint}
 \text{polyrep=wims(rawmath \polyrep)}
 ==
+
 
 
 
