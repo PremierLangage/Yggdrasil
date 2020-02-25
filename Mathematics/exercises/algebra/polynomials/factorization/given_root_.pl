@@ -44,6 +44,12 @@ $$P(x)= {{expr}}$$
 en remarquant que $% P({{x1_tex}})=0 %$.
 ==
 
+input =: MathInput
+
+form ==
+{{ input | component }}
+==
+
 
 evaluator==
 var('x')
