@@ -3,6 +3,10 @@
 @ /grader/evaluator2.py [grader.py]
 @ /model/serialization/serialize_sympy.py [serialize.py]
 @ /model/namespace/namespace_math.py [namespace.py]
+@ /utils/sympy/evalsympy.pl
+@ /utils/sympy/latex2sympy.pl
+@ /utils/sympy/sympy2latex.pl
+@ /utils/sympy/randsympy.pl
 @ /utils/plrandom.py [plrandom.py]
 @ /utils/utilsmath2.py [utilsmath.py]
 @ /utils/keyboards.JSON [keyboards.JSON]
