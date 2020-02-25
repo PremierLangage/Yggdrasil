@@ -13,7 +13,7 @@
 
 title =
 
-settingd.feedback = rightwrong
+settings.feedback = rightwrong
 
 maxattempt % 1
 
