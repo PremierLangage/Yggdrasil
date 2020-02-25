@@ -12,9 +12,7 @@ B=rand_finiteset(randint(4,7),list(range(10)))
 sol = Intersection(A,B)
 ==
 
-text == 
-
-==
+text =
 
 input =: MathInput
 
