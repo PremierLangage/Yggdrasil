@@ -19,13 +19,15 @@ sol_tex=latex(sol)
 
 text == 
 On considère les ensembles suivants :
-$$ A=  {{z.latex}}, B={{B_tex}}.$$
+$$ A=  {{A.latex}}, B={{B.tex}}.$$
 Déterminer $! A \cap B !$.
 ==
 
 input =: MathInput
 
 form==
+$$ A=  {{A.latex}}, B={{B.tex}}.$$
+
 {{input|component}}
 ==
 
