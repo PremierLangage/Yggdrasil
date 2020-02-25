@@ -1,5 +1,5 @@
 from sympy import Expr, Matrix, FiniteSet, sympify, evaluate
-from latex import latex
+from sympy2latex import latex
 
 def deserialize(arg):
     if isinstance(arg,dict) and 'sympy_type' in arg:
