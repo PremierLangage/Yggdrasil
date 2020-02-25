@@ -381,8 +381,25 @@
     [
         '',
 
-        "",
+        "<p><b>Yves :</b> Voici le haut de mon fichier monsieur. </p> <br />"
+
+        "<pre>"
+        "#include <stdio.h> <br />"
+        "#include <stdlib.h> <br />"
+        "#include <time.h> <br />"
+        "#define TAILLE 20 <br />"
+        "#define MAX 100 <br /> <br />"
         
+        "void affichetab(int tab[], int taille){ <br />"
+        "  int i; <br /><br />"
+
+        "  for(i=0 ;i&lt;taille;i++) <br />"
+        "    printf(\"%d \", tab[i]); <br />"
+        " putchar('\\n'); <br />"
+        "} "
+        "</pre>"
+        ,
+
         [
 
         ]
