@@ -1,4 +1,5 @@
 import sympy as sp
+from latex2sympy import *
 
 # Equality tests
 
@@ -401,23 +402,18 @@ def eval_expr(strans,sol,local_dict={}):
         ans=str2expr(strans,local_dict)
     except:
         return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
-    if not ans.is_expr:
-        return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
     if not equal(ans,sol):
         return (0,"NotEqual","")
     #    test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return (100,"Success","")
 
-def eval_set_expr(strans,sol,typestruct,local_dict={}):
+def eval_set_expr(strans,sol,local_dict={}):
     try:
         ans=str2set(strans,local_dict)
     except:
-        return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
-    if not ans.is_expr:
-        return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
-    if not equal_expr(ans,sol):
+        return (-1,"NotSet","Votre réponse n'est pas un ensemble valide.")
+    if not equal_set(ans,sol):
         return (0,"NotEqual","")
-    #    test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return (100,"Success","")
 
 # Complex numbers
