@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathexpr.pl
+extends = /model/math.pl
 
 title = Polynômes quadratiques
 
@@ -30,6 +30,7 @@ if len(lstsol)==1:
 elif len(lstsol)==2:
     solution_roots=r"Les solutions sont $! \displaystyle %s !$ et $! \displaystyle %s !$." % (latex(lstsol[0]),latex(lstsol[1]))
 ==
+
 
 
 
