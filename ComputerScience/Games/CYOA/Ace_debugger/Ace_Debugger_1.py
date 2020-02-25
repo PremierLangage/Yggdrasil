@@ -118,7 +118,7 @@
             
             ['9', "Demander à voir le main du programme d'Yves."],
             
-            ['10', "Annoncer que vous exactement ou se trouve le bug."]
+            ['10', "Annoncer que vous pensez savoir où se trouve le bug."]
         ]
     ],
 
@@ -150,7 +150,7 @@
             
             ['9', "Demander à voir le main du programme d'Yves."],
             
-            ['10', "Annoncer que vous exactement ou se trouve le bug."],
+            ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
         ]
     ],
 
@@ -189,7 +189,7 @@
             
             ['9', "Demander à voir le main du programme d'Yves."],
             
-            ['10', "Annoncer que vous exactement ou se trouve le bug."],
+            ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
         ]
     ],
 
@@ -225,7 +225,7 @@
             
             ['9', "Demander à voir le main du programme d'Yves."],
             
-            ['10', "Annoncer que vous exactement ou se trouve le bug."],
+            ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
         ]
     ],
     
@@ -268,7 +268,7 @@
             
             ['9', "Demander à voir le main du programme d'Yves."],
             
-            ['10', "Annoncer que vous exactement ou se trouve le bug."],
+            ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
         ]
     ],
     
@@ -307,7 +307,7 @@
             
             ['9', "Demander à voir le main du programme d'Yves."],
             
-            ['10', "Annoncer que vous exactement ou se trouve le bug."],
+            ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
         ]
     ],
 
@@ -346,7 +346,7 @@
 
             ['8', "Demander à voir la fonction opérant le tri à bulles."],
             
-            ['10', "Annoncer que vous exactement ou se trouve le bug."],
+            ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
         ]
     ],
 
@@ -354,7 +354,9 @@
     [
         '',
 
-        "TODO : partie de résolution win/retry...",
+        "<center>J'ai trouvé où se situe le bug !</center> <br /><br />"
+        
+        "<center><img src={{ img2 }} alt='IMAGE_Ace_Debugger_find_bug' style=\"width:400px;\" /></center>",
 
         [
 
