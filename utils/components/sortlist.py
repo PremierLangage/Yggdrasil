@@ -62,8 +62,6 @@ class CustomSortList(Component):
                         <span></span>
                     </div>""" % (css_state,str(1+self._order.index(id)),e['content'])
         
-        grading = kwargs.get('grading', "KendallTau")
-
         n = len(self.items)
         order = [self._order.index(item['id']) for item in self.items]
 
@@ -76,7 +74,8 @@ class CustomSortList(Component):
             tau,_ = kendalltau(order,list(range(n)))
             score = int(round(max([0,tau])*100))
 
-        self.disabled = True
+        if disabled:
+            self.disabled = True
 
         return (score, "")
 
