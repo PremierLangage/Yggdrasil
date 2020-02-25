@@ -39,7 +39,7 @@ sol=list(sol)
 
 text == 
 On considère les ensembles suivants :
-$$ A= \\{ {{A_tex}} \\},\ B= \\{ {{B_tex}} \\}.$$
+$$ A=  {{A_tex}},\ B={{B_tex}}.$$
 Déterminer $! {{expr}} !$.
 ==
 
