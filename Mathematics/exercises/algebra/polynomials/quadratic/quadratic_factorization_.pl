@@ -8,7 +8,13 @@ Factoriser le polynôme $$ {{latexP}}. $$
 
 evaluator==
 var('x')
-score,numerror,feedback=eval_poly(input1.value,P,x, form ="factorized")
+score,numerror,feedback=eval_poly(input.value,P,x, form ="factorized")
+==
+
+input =: MathInput
+
+form ==
+{{ input | component }}
 ==
 
 solution ==
