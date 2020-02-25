@@ -6,7 +6,7 @@ lang = fr
 
 before ==
 keyboards_JSON['virtualKeyboards']="elementary"
-input1.config = keyboards_JSON
+input.config = keyboards_JSON
 
 a,c=list_randint_norep(2,-6,6,[0,1,-1])
 b,d=list_randint_norep(2,-6,6,[0])
