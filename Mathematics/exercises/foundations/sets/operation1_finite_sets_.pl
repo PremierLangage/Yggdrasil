@@ -1,9 +1,9 @@
-extends = /Mathematics/template/mathbasic.pl
+extends = /model/math.pl
 
 input1 =: MathInput
 
 form==
-{{input1|component}}
+{{input|component}}
 ==
 
 
@@ -50,5 +50,6 @@ score,_,feedback=ans_struct_expr(input1.value,sol,"set")
 solution ==
 La solution est $! { {{sol_tex}} } !$.
 ==
+
 
 
