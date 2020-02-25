@@ -295,7 +295,7 @@ def eval_expr(strans,sol,local_dict={}):
     #    test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return (100,"Success","")
 
-def eval_set_expr(strans,sol,local_dict={}):
+def eval_set(strans,sol,local_dict={}):
     sol=FiniteSet2struct(Sol)
     try:
         ans=str2struct(strans,local_dict)
