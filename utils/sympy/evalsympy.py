@@ -296,6 +296,7 @@ def eval_expr(strans,sol,local_dict={}):
     return (100,"Success","")
 
 def eval_set_expr(strans,sol,local_dict={}):
+    sol=FiniteSet2struct(Sol)
     try:
         ans=str2struct(strans,local_dict)
     except:
@@ -367,7 +368,7 @@ def eval_poly(strans,sol,x,domain="RR",imaginary_unit="i",form="",authorized_fun
     return (100,"Success","")
 
 #############
-# Extended reals
+# Extended reals    
 #############
 
 
