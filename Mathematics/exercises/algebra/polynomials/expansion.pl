@@ -25,8 +25,9 @@ text = Développer $$ {{latexT1}} + {{latexT2}}.$$
 
 evaluator==
 var('x')
-score,numerror,feedback=ans_poly_expanded(answer['1'],sol,x)
+score,numerror,feedback=eval_poly(answer['1'],sol,x)
 ==
+
 
 
 
