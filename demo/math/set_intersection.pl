@@ -13,15 +13,15 @@ sol = Intersection(A,B)
 ==
 
 text == 
-On considère les ensembles suivants :
-$$ A=  {{A.latex}}, B={{B.tex}}.$$
-Déterminer $! A \cap B !$.
+
 ==
 
 input =: MathInput
 
 form==
-$$ A=  {{A.latex}}, B={{B.latex}}.$$
+On considère les ensembles suivants :
+$$ A=  {{A.latex}}, B={{B.tex}}.$$
+Déterminer $! A \cap B !$.
 
 {{input|component}}
 ==
@@ -33,5 +33,6 @@ score,_,feedback=eval_set(input.value,sol)
 solution ==
 La solution est $! { {{sol.latex}} } !$.
 ==
+
 
 
