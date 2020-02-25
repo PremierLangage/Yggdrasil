@@ -297,7 +297,7 @@ def eval_expr(strans,sol,local_dict={}):
 
 def eval_set_expr(strans,sol,local_dict={}):
     try:
-        ans=str2set(strans,local_dict)
+        ans=str2struct(strans,local_dict)
     except:
         return (-1,"NotSet","Votre réponse n'est pas un ensemble valide.")
     if duplicates(ans):
@@ -341,9 +341,7 @@ def ans_struct_complex(strans,sol,typestruct,imaginary_unit="i",form=""):
     test2=[]
     return ans_struct_(strans,sol,typestruct,local_dict,test1,test2)
 
-#############
 # Polynomials
-#############
 
 def eval_poly(strans,sol,x,domain="RR",imaginary_unit="i",form="",authorized_func={}):
     """
