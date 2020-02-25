@@ -54,13 +54,10 @@ class CustomCheckbox(Component):
         """
         self.items.sort(key = lambda item : item['content'])
 
-    def eval(self, **kwargs):
+    def eval(self, display=True, grading="RightMinusWrong", disabled=True):
         """
         Evaluate the answer stored in the component.
         """
-
-        display = kwargs.get('display', True)
-
         right,wrong,missed=0,0,0
 
         for item in self.items:
@@ -80,8 +77,6 @@ class CustomCheckbox(Component):
                 if display:
                     item['content'] += r"<span class='text-success fas fa-check' style='padding-left: 1em'></span>"
         
-        grading = kwargs.get('grading', "RightMinusWrong")
-
         if grading == "AllOrNothing":
             if wrong == 0 and right == 0:
                 score = 100
@@ -99,9 +94,11 @@ class CustomCheckbox(Component):
             nitems = len(self.items)
             score = max([round((nitems-2*(wrong+right))/nitems*100),0])
 
-        self.disabled = True
+        if disabled:
+            self.disabled = True
 
         return (score, "")
+
 
 
 
