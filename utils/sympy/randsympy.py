@@ -1,3 +1,6 @@
+from plrandom import rd
+import sympy as sp
+
 def randitem(items,excluded_values=[]):
     """
     Pick a random item from a list.
