@@ -3,6 +3,8 @@ extends = /model/math.pl
 input =: MathInput
 
 form==
+$$ A=  {{A_tex}},\ B={{B_tex}}.$$
+
 {{input|component}}
 ==
 
