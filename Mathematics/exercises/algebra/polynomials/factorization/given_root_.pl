@@ -6,7 +6,7 @@ lang = fr
 
 before ==
 keyboards_JSON['virtualKeyboards']="elementary"
-input1.config = keyboards_JSON
+input.config = keyboards_JSON
 
 var('x')
 
@@ -44,11 +44,6 @@ $$P(x)= {{expr}}$$
 en remarquant que $% P({{x1_tex}})=0 %$.
 ==
 
-input1.config %=
-{
-    "virtualKeyboards": "elementary"
-}
-==
 
 evaluator==
 var('x')
