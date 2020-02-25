@@ -7,7 +7,7 @@ form==
 ==
 
 
-title = Opérations sur les ensembles
+title = Intersection d'ensembles
 
 lang = fr
 
@@ -18,7 +18,6 @@ input.config = keyboards_JSON
 A=rand_finiteset(randint(4,7),list(range(10)))
 B=rand_finiteset(randint(4,7),list(range(10)))
 
-expr = r"A \cap B"
 
 sol = Intersection(A,B)
 
@@ -30,7 +29,7 @@ sol_tex=latex(sol)
 text == 
 On considère les ensembles suivants :
 $$ A=  {{A_tex}}, B={{B_tex}}.$$
-Déterminer $! {{expr}} !$.
+Déterminer $! A \cap B !$.
 ==
 
 evaluator ==
