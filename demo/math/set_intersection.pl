@@ -26,7 +26,7 @@ Déterminer $! A \cap B !$.
 input =: MathInput
 
 form==
-$$ A=  {{A.latex}}, B={{B.tex}}.$$
+$$ A=  {{A.latex}}, B={{B.latex}}.$$
 
 {{input|component}}
 ==
