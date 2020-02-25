@@ -19,7 +19,7 @@ sol_tex=latex(sol)
 
 text == 
 On considère les ensembles suivants :
-$$ A=  {{A.latex}}, B={{B_tex}}.$$
+$$ A=  {{z.latex}}, B={{B_tex}}.$$
 Déterminer $! A \cap B !$.
 ==
 
