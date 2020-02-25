@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathexpr.pl
+extends = /model/math.pl
 
 title = Factorisation
 
