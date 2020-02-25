@@ -1,15 +1,6 @@
 extends = /model/math.pl
 
-input =: MathInput
-
-form==
-{{input|component}}
-==
-
-
 title = Intersection d'ensembles
-
-lang = fr
 
 before ==
 keyboards_JSON['virtualKeyboards']="sets"
@@ -30,6 +21,12 @@ text ==
 On considère les ensembles suivants :
 $$ A=  {{A_tex}}, B={{B_tex}}.$$
 Déterminer $! A \cap B !$.
+==
+
+input =: MathInput
+
+form==
+{{input|component}}
 ==
 
 evaluator ==
