@@ -412,6 +412,8 @@ def eval_set_expr(strans,sol,local_dict={}):
         ans=str2set(strans,local_dict)
     except:
         return (-1,"NotSet","Votre réponse n'est pas un ensemble valide.")
+    if duplicates(ans):
+        return (-1,"Duplicates","Il y a des doublons dans l'ensemble.")
     if not equal_set(ans,sol):
         return (0,"NotEqual","")
     return (100,"Success","")
