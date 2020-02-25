@@ -1,3 +1,6 @@
+import sympy as sp
+from sympy.printing.latex import LatexPrinter as LatexPrinter0
+from sympy.core.compatibility import default_sort_key
 
 class CustomLatexPrinter(LatexPrinter0):
     printmethod = "" # prevent the printer to use latex printing methods defined in classes
