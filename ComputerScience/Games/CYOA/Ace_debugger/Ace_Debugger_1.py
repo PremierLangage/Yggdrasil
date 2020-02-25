@@ -354,11 +354,14 @@
     [
         '',
 
-        "<center>J'ai trouvé où se situe le bug !</center> <br /><br />"
+        "<center><b>N.B. :</b> J'ai trouvé où se situe le bug !</center> <br /><br />"
         
         "<center><img src={{ img2 }} alt='IMAGE_Ace_Debugger_find_bug' style=\"width:400px;\" /></center><br />"
         
-        "<b>Yves :</b> L'Ace debugger a encore frappé, nous allons avoir le fin mot de cette histoire.<br />",
+        "<b>Yves :</b> L'Ace debugger a encore frappé, nous allons avoir le fin mot de cette histoire.<br />"
+        
+        "<b>N.B. (la pression monte...):</b> Calmez-vous, je vais juste vous indiquer où "
+        "je pense qu'est située l'erreur, rien de plus...<br />",
 
         [
 
