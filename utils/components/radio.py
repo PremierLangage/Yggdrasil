@@ -39,13 +39,10 @@ class CustomRadio(Component):
         """
         self.items.sort(key = lambda item : item['content'])
 
-    def eval(self, **kwargs):
+    def eval(self, display=True, disabled=True):
         """
         Evaluate the answer stored in the component.
         """
-
-        display = kwargs.get('display', True)
-
         for item in self.items:
             id = item['id']
             if id == self._sol and id == self.selection:
@@ -64,6 +61,8 @@ class CustomRadio(Component):
                 if display:
                     item['content'] += r"<span class='text-success fas fa-check' style='padding-left: 1em'></span>"
 
-        self.disabled = True
+        if disabled:
+            self.disabled = True
 
         return (score, "")
+
