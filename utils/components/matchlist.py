@@ -47,7 +47,7 @@ class CustomMatchList(Component):
         self._sol.append({ "source": sourceid, "target": targetid })
         rd.shuffle(self.nodes)
 
-    def eval(self):
+    def eval(self, display=True, grading="RightMinusWrong", disabled=True):
         """
         Evaluate the answer stored in the component.
         """ 
@@ -77,6 +77,7 @@ def source_link(sourceId,links1,links2):
             targetId2=e['target']
             break
     return targetId1==targetId2
+
 
 
 
