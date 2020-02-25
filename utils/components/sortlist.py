@@ -35,12 +35,10 @@ class CustomSortList(Component):
         """
         rd.shuffle(self.items)
 
-    def eval(self, **kwargs):
+    def eval(self, display=True, grading="KendallTau", disabled=True):
         """
         Evaluate the answer stored in the component.
         """
-
-        display = kwargs.get('display', True)
 
         if display:
             for i, e in enumerate(self.items):
@@ -87,6 +85,7 @@ class CustomSortList(Component):
 # lien du tooltip qui ouvre la racine du site
 # disabled qui désactive le tooltip
 # extrajs
+
 
 
 
