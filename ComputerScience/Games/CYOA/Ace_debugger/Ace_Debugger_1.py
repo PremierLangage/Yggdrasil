@@ -358,13 +358,22 @@
         
         "<center><img src={{ img2 }} alt='IMAGE_Ace_Debugger_find_bug' style=\"width:400px;\" /></center><br />"
         
-        "<p><b>Yves :</b> L'Ace debugger a encore frappé, nous allons avoir le fin mot de cette histoire. </p><br />"
+        "<p><b>Yves :</b> L'Ace debugger a encore frappé, nous allons avoir le fin mot de cette histoire. </p> <br />"
         
         "<p><b>N.B. (la pression monte...):</b> Calmez-vous, je vais juste vous indiquer où "
-        "je pense qu'est située l'erreur, rien de plus...</p> <br />",
+        "je pense qu'est située l'erreur, rien de plus...</p> <br />"
+        
+        "<p><b>Yves :</b> Vous êtes vraiment trop fort m'sieur. </p> <br />"
+
+        "<p><b>N.B. (avec une goutte de sueur):</b> Alors, je pense qu'une erreur s'est glissé </p> <br />"
+        ,
 
         [
+            ['11', "dans le haut de votre fichier source (entête et affichage)."],
 
+            ['12', "dans votre fonction qui opère le tri à bulles."],
+
+            ['13', "dans le bas de votre fichier source (fonction main)."]
         ]
     ]
 }
