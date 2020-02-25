@@ -22,6 +22,8 @@ template=/ComputerScience/Games/CYOA/CYOA_template.pl
 @ Ace_Debugger_1.py
 
 img1 =$ Ace_Debugger_logo.png
+img2 =$ Ace_Debugger_find_bug.png
 
 game_data_file = Ace_Debugger_1.py
+
 
