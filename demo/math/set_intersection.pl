@@ -11,7 +11,7 @@ B=rand_finiteset(randint(4,7),list(range(10)))
 
 
 sol = Intersection(A,B)
-
+z=1+I
 A_tex=latex(A)
 B_tex=latex(B)
 sol_tex=latex(sol)
