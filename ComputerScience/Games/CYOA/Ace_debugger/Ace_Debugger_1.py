@@ -401,9 +401,9 @@
         ,
 
         [
-            ['14', "L'erreur est dans les macros préprocesseur !"],
+            ['14', "Il y a une erreur dans dans les macros préprocesseur !"],
 
-            ['15', "L'erreur est dans la fonction d'affichage !"],
+            ['15', "Il y a une erreur est dans la fonction d'affichage !"],
 
             ['16', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait..."]
         ]
