@@ -384,9 +384,9 @@
         "<p><b>Yves :</b> Voici le haut de mon fichier monsieur. </p> <br />"
 
         "<pre>"
-        "#include <stdio.h> <br />"
-        "#include <stdlib.h> <br />"
-        "#include <time.h> <br />"
+        "#include &lt;stdio.h&gt; <br />"
+        "#include &lt;stdlib.h&gt; <br />"
+        "#include &lt;time.h&gt; <br />"
         "#define TAILLE 20 <br />"
         "#define MAX 100 <br /> <br />"
         
