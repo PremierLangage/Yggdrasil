@@ -50,7 +50,6 @@ form ==
 {{ input | component }}
 ==
 
-
 evaluator==
 var('x')
 score,error,feedback=eval_poly(input.value,sol,x,form="factorized")
