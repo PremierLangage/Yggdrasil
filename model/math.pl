@@ -13,6 +13,8 @@
 
 title =
 
+settingd.feedback = rightwrong
+
 maxattempt % 1
 
 text ==
