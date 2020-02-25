@@ -381,7 +381,7 @@
     [
         '',
 
-        "<p><b>Yves :</b> Voici le haut de mon fichier monsieur. </p> <br />"
+        "<p><b>Yves :</b> Ah ouais, et elle est où l'erreur ? </p> <br />"
 
         "<pre>"
         "#include &lt;stdio.h&gt; <br />"
@@ -401,7 +401,11 @@
         ,
 
         [
+            ['14', "L'erreur est dans les macros préprocesseur !"],
 
+            ['15', "L'erreur est dans la fonction d'affichage !"],
+
+            ['16', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait..."]
         ]
     ]
 }
