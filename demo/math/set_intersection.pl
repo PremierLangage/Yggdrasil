@@ -9,7 +9,6 @@ input.config = keyboards_JSON
 A=rand_finiteset(randint(4,7),list(range(10)))
 B=rand_finiteset(randint(4,7),list(range(10)))
 
-
 sol = Intersection(A,B)
 ==
 
