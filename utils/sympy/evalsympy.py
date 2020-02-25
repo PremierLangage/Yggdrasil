@@ -296,7 +296,7 @@ def eval_expr(strans,sol,local_dict={}):
     return (100,"Success","")
 
 def eval_set(strans,sol,local_dict={}):
-    sol=FiniteSet2struct(Sol)
+    sol=FiniteSet2struct(sol)
     try:
         ans=str2struct(strans,local_dict)
     except:
