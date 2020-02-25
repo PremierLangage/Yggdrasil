@@ -1,3 +1,7 @@
+import sympy as sp
+import sympy.parsing.sympy_parser as prs
+import re
+
 def str2expr(s,local_dict={}):
     """
     Convert a latex string into a mathematical expression.
