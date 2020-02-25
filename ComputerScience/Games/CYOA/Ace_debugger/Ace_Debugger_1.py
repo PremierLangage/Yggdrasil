@@ -356,7 +356,9 @@
 
         "<center>J'ai trouvé où se situe le bug !</center> <br /><br />"
         
-        "<center><img src={{ img2 }} alt='IMAGE_Ace_Debugger_find_bug' style=\"width:400px;\" /></center>",
+        "<center><img src={{ img2 }} alt='IMAGE_Ace_Debugger_find_bug' style=\"width:400px;\" /></center><br />"
+        
+        "<b>Yves :</b> L'Ace debugger a encore frappé, nous allons avoir le fin mot de cette histoire.<br />",
 
         [
 
