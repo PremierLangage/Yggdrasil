@@ -276,7 +276,7 @@
     [
         '',
 
-        "<p><b>Yves :</b> Ça, c'est mon tri à bulles. Double boucles for"
+        "<p><b>Yves :</b> Ça, c'est mon tri à bulles. Double boucles for "
         "imbriquées exactement comme dans le cours monsieur !</p> <br />"
 
         "<pre>"
