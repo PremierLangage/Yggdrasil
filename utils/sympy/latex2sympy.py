@@ -62,6 +62,7 @@ def str2struct(s,local_dict={},typestruct=""):
             return []
         return str2expr(s,local_dict)
 
+
 def str2rset(s,local_dict={}):
     """
     Convert a latex string into an interval reunion.
