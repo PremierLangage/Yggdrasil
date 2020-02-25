@@ -13,7 +13,7 @@ lang = fr
 
 before ==
 keyboards_JSON['virtualKeyboards']="sets"
-input1.config = keyboards_JSON
+input.config = keyboards_JSON
 
 A=rand_finiteset(randint(3,7),list(range(10)))
 B=rand_finiteset(randint(3,7),list(range(10)))
