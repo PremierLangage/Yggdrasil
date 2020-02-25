@@ -307,6 +307,15 @@ def eval_set(strans,sol,local_dict={}):
         return (0,"NotEqual","")
     return (100,"Success","")
 
+def eval_tuple(strans,sol,local_dict={}):
+    try:
+        ans=str2struct(strans,local_dict)
+    except:
+        return (-1,"NotTuple","Votre réponse n'est pas un n-uplet valide.")
+    if not equal_tuple(ans,sol):
+        return (0,"NotEqual","")
+    return (100,"Success","")
+
 # Complex numbers
 
 def eval_complex(strans,sol,imaginary_unit="i",form="",authorized_func={}):
@@ -392,4 +401,5 @@ def ans_antiderivative(strans,sol,x,local_dict={}):
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
+
 
