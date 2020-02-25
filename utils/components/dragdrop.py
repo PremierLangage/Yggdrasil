@@ -33,7 +33,7 @@ class CustomDragDrop(Component):
             return [cls.Label(content=content,**kwargs) for content in arg]
 
     @staticmethod
-    def eval(drop,sol, display=True, grading="CorrectItems", disabled=True):
+    def eval(drop, sol, display=True, grading="CorrectItems", disabled=True):
         feedback=""
         score=100
         for i in range(len(drop)):
