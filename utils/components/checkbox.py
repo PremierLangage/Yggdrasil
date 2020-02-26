@@ -107,7 +107,7 @@ class CustomCheckbox(Component):
                     score = 0              
         elif grading == "CorrectAnswers":
             nitems = len(self.items)
-            score = max([round((nitems-2*(wrong+right))/nitems*100),0])
+            score = max([round((nitems-2*(wrong+missed))/nitems*100),0])
 
         if disabled:
             self.disabled = True
