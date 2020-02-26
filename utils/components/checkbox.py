@@ -8,7 +8,7 @@ class CustomCheckbox(Component):
         self.selector = 'c-checkbox-group'
         self.decorator = 'CustomCheckbox'
         if 'content' in kwargs:
-            self.loaditems(content)
+            self.loaditems(kwargs['content'])
         if 'sol_index' in kwargs:
             self.setsol_by_index(sol_index)
         if 'sol_content' in kwargs:
