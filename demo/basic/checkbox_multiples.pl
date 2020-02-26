@@ -41,7 +41,8 @@ extracss ==
 <style>
 .myclass:after {
     content : "aa";
-    position : absolute
+    position : absolute;
+    top : 0
 }
 </style>
 ==
