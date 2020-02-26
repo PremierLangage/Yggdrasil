@@ -21,6 +21,7 @@ checkbox.loadrw(mult3,other,5,rd.randint(1,4))
 
 for item in checkbox.items:
     item['css']=''
+checkbox.css="myclass"
 ==
 
 text ==
