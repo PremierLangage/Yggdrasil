@@ -46,7 +46,6 @@ extracss ==
     content: "\f00c";
     vertical-align: middle;
     font-weight: 900;
-    display: inline-block
 }
 </style>
 ==
