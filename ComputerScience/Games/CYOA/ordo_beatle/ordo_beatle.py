@@ -43,6 +43,174 @@
 
             ['BP', "John(1) ramène la barque.", 'time_tot += 1']
         ]
-    ]
+    ],
+
+'GR':
+    [
+        '',
+
+        "Mais maintenant, la barque est de l'autre... Il faut la ranemer pour aller "
+        "chercher les deux autres. ",
+        
+        [
+            ['BR', "George(5) ramène la barque.", 'time_tot += 5'],
+
+            ['BG', "Ringo(10) ramène la barque.", 'time_tot += 10']
+        ]
+    ],
+
+'JR':
+    [
+        '',
+
+        "Mais maintenant, la barque est de l'autre... Il faut la ranemer pour aller "
+        "chercher les deux autres. ",
+        
+        [
+            ['BR', "John(1) ramène la barque.", 'time_tot += 1'],
+
+            ['BG', "Ringo(10) ramène la barque.", 'time_tot += 10']
+        ]
+    ],
+
+'PG':
+    [
+        '',
+
+        "Mais maintenant, la barque est de l'autre... Il faut la ranemer pour aller "
+        "chercher les deux autres. ",
+        
+        [
+            ['BG', "Paul(2) ramène la barque.", 'time_tot += 2'],
+
+            ['BP', "George(5) ramène la barque.", 'time_tot += 5']
+        ]
+    ],
+
+
+
+
+
+
+'GR':
+    [
+        '',
+
+        ""
+        ,
+        [
+
+        ]
+    ],
+
+'GR':
+    [
+        '',
+
+        ""
+        ,
+        [
+
+        ]
+    ],
+
+'GR':
+    [
+        '',
+
+        ""
+        ,
+        [
+
+        ]
+    ],
+
+'GR':
+    [
+        '',
+
+        ""
+        ,
+        [
+
+        ]
+    ],
+
+'GR':
+    [
+        '',
+
+        ""
+        ,
+        [
+
+        ]
+    ],
+
+'GR':
+    [
+        '',
+
+        ""
+        ,
+        [
+
+        ]
+    ],
+
+'GR':
+    [
+        '',
+
+        ""
+        ,
+        [
+
+        ]
+    ],
+
+'GR':
+    [
+        '',
+
+        ""
+        ,
+        [
+
+        ]
+    ],
+
+'GR':
+    [
+        '',
+
+        ""
+        ,
+        [
+
+        ]
+    ],
+
+'GR':
+    [
+        '',
+
+        ""
+        ,
+        [
+
+        ]
+    ],
+
+'GR':
+    [
+        '',
+
+        ""
+        ,
+        [
+
+        ]
+    ],
 }
 
