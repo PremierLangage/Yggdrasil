@@ -72,7 +72,7 @@ if __name__ == "__main__":
     # This is HARCODED : the first step must have for key the srting '1'
     context['current_step'] = "1"
     code_init = compile(context['game_data']['1'][0], "init", "exec")
-    exec(code_init)
+    exec(code_init, context, context)
 
     context['text'] = str(context['game_data']['1'][1])
     context['form'] = ' {{ group|component }} '
