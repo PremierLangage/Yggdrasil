@@ -2,6 +2,11 @@ extends = /model/basic.pl
 
 title = Multiples de 3 (Checkbox)
 
+# Création du composant comme une clé
+checkbox =: CheckboxGroup
+@ /utils/components/checkbox.py [customcheckbox.py]
+checkbox.decorator = CustomCheckbox
+
 before ==
 import random as rd
 
@@ -18,10 +23,6 @@ checkbox.loadrw(mult3,other,5,rd.randint(1,4))
 text ==
 Parmi les nombres suivants, lesquels sont des multiples de 3 ?
 ==
-
-checkbox =: CheckboxGroup
-@ /utils/components/checkbox.py [customcheckbox.py]
-checkbox.decorator = CustomCheckbox
 
 settings.feedback = lightscore
 
