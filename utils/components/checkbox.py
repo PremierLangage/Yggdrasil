@@ -30,7 +30,7 @@ class CustomCheckbox(Component):
         if isinstance(index,list):
             self._sol = [self.items[i]['id'] for i in index]
         elif isinstance(index,int):
-            self._sol = [self.items[i]['id'] for i == index]
+            self._sol = [self.items[index]['id']]
 
     def setsol_by_content(self, content):
         """
@@ -39,7 +39,7 @@ class CustomCheckbox(Component):
         if isinstance(index,list):
             self._sol = [id for id in self.items if self.items['content'] in content]
         elif isinstance(index,str):
-            self._sol = [id for id in self.items if self.items['content'] == content]
+            self._sol = [next(item['id'] for item in self.items if item['content'] == content)]
 
     def loadrw(self, right, wrong, nitems=None, nright=None):
         """
