@@ -35,7 +35,7 @@ form ==
 ==
 
 evaluator ==
-grade = checkbox.eval(grading="RightMinusWrong")
+grade = checkbox.eval(grading="RightMinusWrong",disabled=False)
 ==
 
 extracss ==
