@@ -29,6 +29,20 @@
 
             ['PG', "Envoyer les deux moyens ensembles Paul(2) et George(5).", 'time_tot += 5']
         ]
+    ],
+
+'JP':
+    [
+        '',
+        
+        "Mais maintenant, la barque est de l'autre... Il faut la ranemer pour aller "
+        "chercher les deux autres. ",
+
+        [
+            ['BJ', "Paul(2) ramène la barque.", 'time_tot += 2'],
+
+            ['BP', "John(1) ramène la barque.", 'time_tot += 1']
+        ]
     ]
 }
 
