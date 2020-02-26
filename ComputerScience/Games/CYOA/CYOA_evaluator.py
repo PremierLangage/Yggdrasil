@@ -24,6 +24,14 @@ if __name__ == "__main__":
     context = get_context()
     answers = get_answers()
 
+    # Apply action inside the link
+    for step_to in context['game_data'][context['current_step']][2]:
+        if step_to[0] == context['group'].selection:
+            if len(step_to) > 2:
+                code_link = compile(step_to[2], "link_code", "exec")
+                exec(code_link, context, context)
+
+
     context['current_step'] = context['group'].selection
     context['text'] = str(context['game_data'][context['current_step']][1])
     context['form'] = ' {{ group|component }} '
@@ -35,3 +43,4 @@ if __name__ == "__main__":
         context['group'].items.append({ "id" : index_step_to, "content" : text_step_to })
 
     output(-1, " ", context)
+
