@@ -6,8 +6,9 @@
         "<p>Les quatre compères John, Paul, George et Ringo se trouvent au bord d'une rivière. "
         "Il y a seulement une petite barque à deux places pour traverser cette rivière. "
         "John, grand marin dans l'âme, peut traverser la rivière avec la barque en 1 minute. "
-        "Pour Paul, qui est aussi rapide, c'est un peu vite 1 minute, il peut traverser sans "
-        "emcombre en 2 minutes. George aime pas l'eau et il lui faut 5 minutes pour traverser. "
+        "Pour Paul, qui est lui aussi rapide, c'est quand même un peu trop vite 1 minute, il "
+        "peut traverser sans "
+        "emcombre en 2 minutes. George n'aime pas l'eau et il lui faut 5 minutes pour traverser. "
         "Enfin Ringo, qui est toujours malade en bateau, a besoin de 10 minutes pour pouvoir "
         "traverser. </p> <br />"
 
