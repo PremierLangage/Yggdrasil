@@ -20,7 +20,7 @@ other = [str(n) for n in range(50,100) if n % 3 != 0]
 checkbox.loadrw(mult3,other,5,rd.randint(1,4))
 
 
-checkbox.horizontal = True
+checkbox.horizontal = False
 ==
 
 text ==
@@ -34,7 +34,7 @@ form ==
 ==
 
 evaluator ==
-grade = checkbox.eval(grading="CorrectAnswers",display=True,disabled=False)
+grade = checkbox.eval(grading="CorrectAnswers",display=False,disabled=False)
 for item in checkbox.items:
     item['css']='myclass'
 ==
