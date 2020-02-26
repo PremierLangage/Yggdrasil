@@ -8,7 +8,7 @@ before==
 from customdragdrop import CustomDragDrop
 import random as rd
 
-lt="&lt; aaaaaaaaaaaaaaaaaaaaaa"
+lt="&lt;"
 gt="&gt;"
 
 n = 4
