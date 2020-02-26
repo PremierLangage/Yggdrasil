@@ -46,7 +46,7 @@ extracss ==
 }
 .myclass::after {
     font-family: "Font Awesome 5 Free";
-    content: "\f095";
+    content: "\f00c";
     display: inline-block;
     position : absolute;
     vertical-align: middle;
