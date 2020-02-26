@@ -15,6 +15,7 @@ class CustomCheckbox(Component):
             self.setsol_by_content(sol_content)
         if 'shuffle' in kwargs and kwargs['shuffle']:
             self.shuffle()
+        # ajouter right/wrong et sort
         super().__init__(**kwargs)
 
     def loaditems(self, lstcontent):
