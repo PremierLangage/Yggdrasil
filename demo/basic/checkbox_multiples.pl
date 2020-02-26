@@ -48,6 +48,14 @@ extracss ==
     font-weight: 900;
 }
 
+.error-state p::after {
+    font-family: "Font Awesome 5 Free";
+    color : green;
+    content: "  \f00d";
+    vertical-align: middle;
+    font-weight: 900;
+}
+
 .missed-state p::after {
     font-family: "Font Awesome 5 Free";
     color : green;
