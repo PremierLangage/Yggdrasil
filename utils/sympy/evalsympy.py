@@ -374,7 +374,7 @@ def eval_poly(strans,sol,x,domain="RR",imaginary_unit="i",form="",authorized_fun
     if form == "expanded":
         if is_poly_expanded(expr,x):
             return (-1,"NotExpanded","Votre réponse n'est pas un polynôme développé.")
-    elif form == "facorized":
+    elif form == "factorized":
         if is_poly_factorized(expr,x,domain):
             return (-1,"NotFactorized","Votre réponse n'est pas un polynôme factorisé.")
     return (100,"Success","")
