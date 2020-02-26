@@ -7,8 +7,12 @@ class CustomCheckbox(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-checkbox-group'
         self.decorator = 'CustomCheckbox'
-        if lstcontent in kwargs:
-            self.loaditems(lstcontent)
+        if content in kwargs:
+            self.loaditems(content)
+        if sol_index:
+            self.setsol_index(sol_index)
+        if sol_content:
+            self.setsol_content(sol_content)
         super().__init__(**kwargs)
 
     def loaditems(self, lstcontent):
