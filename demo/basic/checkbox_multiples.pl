@@ -43,7 +43,7 @@ extracss ==
 <style>
 .mat-checkbox-label p::after {
     font-family: "Font Awesome 5 Free";
-    content: "\f00c";
+    content: " \f00c";
     vertical-align: middle;
     font-weight: 900;
 }
