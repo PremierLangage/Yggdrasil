@@ -9,14 +9,14 @@
         "Pour Paul, qui est aussi rapide, c'est un peu vite 1 minute, il peut traverser sans "
         "emcombre en 2 minutes. George aime pas l'eau et il lui faut 5 minutes pour traverser. "
         "Enfin Ringo, qui est toujours malade en bateau, a besoin de 10 minutes pour pouvoir "
-        "traverser. </p>"
+        "traverser. </p> <br />"
 
         "<p>Alors la barque ne peut pas voyager seule (et puis il n'y a pas de corde dans le coin...). "
         "Les quatre compères vont devoir organiser de nombreuses traversées à une ou deux personnes "
         "pour pouvoir traverser tous les quatres. Quand ils sont deux dans la barque, la barque va à "
-        "vitesse la plus lente pour ne pas brusquer ses fragiles occupants.</p>"
+        "vitesse la plus lente pour ne pas brusquer ses fragiles occupants.</p>  <br />"
 
-        "<p>Aider les quatre compères pour les faire traverser au plus vite.</p>"
+        "<p>Aider les quatre compères pour les faire traverser au plus vite.</p>  <br />"
         ,
 
         [
