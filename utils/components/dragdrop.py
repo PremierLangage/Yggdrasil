@@ -48,3 +48,11 @@ class CustomDragDrop(Component):
 
 
 
+class DragDropGroup:
+
+    def __init__(self):
+            self.id = ""
+            self.cloneable = True
+            self.labels = []
+            self.dropzones = []
+
