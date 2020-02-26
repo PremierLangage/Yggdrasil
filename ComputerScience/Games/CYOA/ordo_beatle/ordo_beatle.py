@@ -95,10 +95,15 @@
     [
         '',
 
-        ""
+        "John est déjà passé de l'autre coté, qui le rejoins ?"
         ,
-        [
 
+        [
+            ['JPG', "Envoyer les deux plus rapides Paul(2) et George(5)", 'time_tot += 5'],
+
+            ['JGR', "Envoyer les deux plus lents George(5) et Ringo(10)", 'time_tot += 10'],
+
+            ['JPR', "Envoyer le plus rapide Paul(2) et le plus lent Ringo(10)", 'time_tot += 10']
         ]
     ],
 
@@ -106,10 +111,15 @@
     [
         '',
 
-        ""
+        "Paul est déjà passé de l'autre coté, qui le rejoins ?"
         ,
-        [
 
+        [
+            ['JPG', "Envoyer les deux plus rapides John(1) et George(5)", 'time_tot += 5'],
+
+            ['PGR', "Envoyer les deux plus lents George(5) et Ringo(10)", 'time_tot += 10'],
+
+            ['JPR', "Envoyer le plus rapide John(1) et le plus lent Ringo(10)", 'time_tot += 10']
         ]
     ],
 
@@ -117,10 +127,15 @@
     [
         '',
 
-        ""
+        "George est déjà passé de l'autre coté, qui le rejoins ?"
         ,
-        [
 
+        [
+            ['JPG', "Envoyer les deux plus rapides John(1) et Paul(2)", 'time_tot += 2'],
+
+            ['PGR', "Envoyer les deux plus lents Paul(2) et Ringo(10)", 'time_tot += 10'],
+
+            ['JGR', "Envoyer le plus rapide John(1) et le plus lent Ringo(10)", 'time_tot += 10']
         ]
     ],
 
@@ -128,10 +143,15 @@
     [
         '',
 
-        ""
+        "Ringo est déjà passé de l'autre coté, qui le rejoins ?"
         ,
-        [
 
+        [
+            ['JPR', "Envoyer les deux plus rapides John(1) et Paul(2)", 'time_tot += 2'],
+
+            ['PGR', "Envoyer les deux plus lents Paul(2) et George(5)", 'time_tot += 5'],
+
+            ['JGR', "Envoyer le plus rapide John(1) et le plus lent George(5)", 'time_tot += 5']
         ]
     ]
 
