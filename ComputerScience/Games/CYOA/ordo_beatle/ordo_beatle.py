@@ -23,7 +23,7 @@
         [
             ['JP', "Envoyer les deux plus rapides John(1) et Paul(2).", 'time_tot += 2'],
 
-            ['GR', "Envoyer les deux plus lents George(5) et Ringo(2).", 'time_tot += 10'],
+            ['GR', "Envoyer les deux plus lents George(5) et Ringo(10).", 'time_tot += 10'],
 
             ['JR', "Envoyer le plus rapide John(1) avec le plus lent Ringo(10).", 'time_tot += 10'],
 
