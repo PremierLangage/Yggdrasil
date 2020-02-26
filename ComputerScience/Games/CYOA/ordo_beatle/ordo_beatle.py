@@ -52,6 +52,8 @@
     [
         '',
 
+        "<p><u>Temps écoulé :</u> {{ time_tot }} minutes</p> <br />"
+
         "Mais maintenant, la barque est de l'autre côté... Il faut la ranemer pour aller "
         "chercher les deux autres. "
         ,
@@ -66,6 +68,8 @@
 'JR':
     [
         '',
+
+        "<p><u>Temps écoulé :</u> {{ time_tot }} minutes</p> <br />"
 
         "Mais maintenant, la barque est de l'autre côté... Il faut la ranemer pour aller "
         "chercher les deux autres. "
@@ -82,6 +86,8 @@
     [
         '',
 
+        "<p><u>Temps écoulé :</u> {{ time_tot }} minutes</p> <br />"
+
         "Mais maintenant, la barque est de l'autre côté... Il faut la ranemer pour aller "
         "chercher les deux autres. "
         ,
@@ -96,6 +102,8 @@
 'BJ':
     [
         '',
+
+        "<p><u>Temps écoulé :</u> {{ time_tot }} minutes</p> <br />"
 
         "John est déjà passé de l'autre coté, qui le rejoins ?"
         ,
@@ -113,6 +121,8 @@
     [
         '',
 
+        "<p><u>Temps écoulé :</u> {{ time_tot }} minutes</p> <br />"
+
         "Paul est déjà passé de l'autre coté, qui le rejoins ?"
         ,
 
@@ -128,6 +138,8 @@
 'BG':
     [
         '',
+
+        "<p><u>Temps écoulé :</u> {{ time_tot }} minutes</p> <br />"
 
         "George est déjà passé de l'autre coté, qui le rejoins ?"
         ,
@@ -145,6 +157,8 @@
     [
         '',
 
+        "<p><u>Temps écoulé :</u> {{ time_tot }} minutes</p> <br />"
+
         "Ringo est déjà passé de l'autre coté, qui le rejoins ?"
         ,
 
@@ -160,6 +174,8 @@
 'JPG':
     [
         '',
+
+        "<p><u>Temps écoulé :</u> {{ time_tot }} minutes</p> <br />"
 
         "Tout le monde a traversé sauf Ringo, qui va le chercher ?"
         ,
@@ -177,6 +193,8 @@
     [
         '',
 
+        "<p><u>Temps écoulé :</u> {{ time_tot }} minutes</p> <br />"
+
         "Tout le monde a traversé sauf George, qui va le chercher ?"
         ,
 
@@ -192,6 +210,8 @@
 'JGR':
     [
         '',
+
+        "<p><u>Temps écoulé :</u> {{ time_tot }} minutes</p> <br />"
 
         "Tout le monde a traversé sauf Paul, qui va le chercher ?"
         ,
@@ -209,6 +229,8 @@
     [
         '',
 
+        "<p><u>Temps écoulé :</u> {{ time_tot }} minutes</p> <br />"
+
         "Tout le monde a traversé sauf John, qui va le chercher ?"
         ,
 
@@ -225,6 +247,8 @@
     [
         '',
 
+        "<p><u>Temps écoulé :</u> {{ time_tot }} minutes</p> <br />"
+
         "Les deux derniers compères George(5) et Ringo(10) se trouvent sur la rive avec la barque."
         ,
 
@@ -236,6 +260,8 @@
 'BJG':
     [
         '',
+
+        "<p><u>Temps écoulé :</u> {{ time_tot }} minutes</p> <br />"
 
         "Les deux derniers compères Paul(2) et Ringo(10) se trouvent sur la rive avec la barque."
         ,
@@ -249,6 +275,8 @@
     [
         '',
 
+        "<p><u>Temps écoulé :</u> {{ time_tot }} minutes</p> <br />"
+
         "Les deux derniers compères Paul(2) et George(5) se trouvent sur la rive avec la barque."
         ,
 
@@ -260,6 +288,8 @@
 'BPG':
     [
         '',
+
+        "<p><u>Temps écoulé :</u> {{ time_tot }} minutes</p> <br />"
 
         "Les deux derniers compères John(1) et Ringo(10) se trouvent sur la rive avec la barque."
         ,
@@ -273,6 +303,8 @@
     [
         '',
 
+        "<p><u>Temps écoulé :</u> {{ time_tot }} minutes</p> <br />"
+
         "Les deux derniers compères John(1) et George(5) se trouvent sur la rive avec la barque."
         ,
 
@@ -285,6 +317,8 @@
     [
         '',
 
+        "<p><u>Temps écoulé :</u> {{ time_tot }} minutes</p> <br />"
+
         "Les deux derniers compères John(1) et Paul(2) se trouvent sur la rive avec la barque."
         ,
 
@@ -296,6 +330,8 @@
 'fin':
     [
         'grade=100*(1 - ( (time_tot - 17)/33 ) )',
+
+        "<p><u>Temps écoulé :</u> {{ time_tot }} minutes</p> <br />"
 
         "<p>Vous avez réussi à faire traverser les quatre compères en {{ time_tot }} minutes !</p> <br />"
         "<p>Vous avez obtenu <b>{{ grade|round|int }}%</b> de réussite. </p> <br />"
