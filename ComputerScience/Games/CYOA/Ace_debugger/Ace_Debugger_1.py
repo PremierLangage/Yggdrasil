@@ -32,7 +32,7 @@
 
 '1' :
     [
-        '{"audace" : 0, "panache" : 0, "confiance" : 0}',
+        'audace=0;panache=0;confiance=0',
      
         "<center><img src={{ img1 }} alt='IMAGE_Ace_Debugger_logo' style=\"width:400px;\" /></center>"
 
@@ -158,7 +158,7 @@
 
 '5' :
     [
-        'audace+=1, confiance-=2',
+        'audace+=1;confiance-=2',
 
         "<p><b>N.B. :</b> Non mais le principal, c'est que ça fonctionne bien de "
         "temps en temps. Si vous avez compris et que le tri est correct "
@@ -411,6 +411,7 @@
         ]
     ]
 }
+
 
 
 
