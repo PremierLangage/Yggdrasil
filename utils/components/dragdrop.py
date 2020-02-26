@@ -1,7 +1,6 @@
 from components import Component
 from uuid import uuid4
 
-
 class CustomDragDrop(Component):
 
     def __init__(self, **kwargs):
@@ -46,13 +45,33 @@ class CustomDragDrop(Component):
         return (score,feedback)
 
 
+class DragDropGroup():
+
+    def __init__(self, **kwargs):
+        self.id = ""
+        self.labels = []
+        self.drop_zones = []
+        self.labels_cloneable = True
+        self.valid_associations = []
+        self.grade_by_labels = True
+
+    def set_labels(self, labels):
+        self.labels = labels
+
+    def set_drop_zones(self, drop_zones):
+        self.drop_zones = drop_zones
+
+    def set_cloneable(self, cloneable):
+        self.labels_cloneable = cloneable
+
+    def set_associations(self, associations):
+        self.valid_associations = associations
+
+    def set_grade_method(self, grade_method):
+        if grade_method != 'labels' : 
+            self.grade_by_labels = False
+        else self.grade_by_labels= True
 
 
-class DragDropGroup:
 
-    def __init__(self):
-            self.id = ""
-            self.cloneable = True
-            self.labels = []
-            self.dropzones = []
 
