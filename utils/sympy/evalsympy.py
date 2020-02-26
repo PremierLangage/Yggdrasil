@@ -333,7 +333,7 @@ def eval_complex(strans,sol,imaginary_unit="i",form="",authorized_func={}):
     if not ans.is_complex:
         return (-1,"NotCplx","Votre réponse n'est pas un nombre complexe.")
     if not only_authorized_func(ans,authorized_func):
-        return (1,"UnauthorizedFunc","Votre réponse utilise des fonctions non-autorisées.")
+        return (-1,"UnauthorizedFunc","Votre réponse utilise des fonctions non-autorisées.")
     if not equal(ans,sol):
         return (0,"NotEqual","")
     if form == "cartesian":
