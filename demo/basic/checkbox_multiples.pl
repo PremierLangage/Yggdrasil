@@ -41,19 +41,22 @@ for item in checkbox.items:
 
 extracss ==
 <style>
-.myclass p::after {
+.success-state {
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    color: #155724 !important;
+    background-color: #d4edda !important;
+    border-color: #c3e6cb !important;
+}
+
+.success-state p::after {
     font-family: "Font Awesome 5 Free";
     color : green;
     content: "  \f00c";
     vertical-align: middle;
     font-weight: 900;
 }
-.mat-checkbox-label2 p::after {
-    font-family: "Font Awesome 5 Free";
-    content: " \f00c";
-    vertical-align: middle;
-    font-weight: 900;
-}
+
 </style>
 ==
 
