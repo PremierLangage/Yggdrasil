@@ -70,8 +70,7 @@ if __name__ == "__main__":
     context['game_data'] = game_data
 
     context['current_step'] = "1"
-    context['text'] = "<center><img src={{ img1 }} alt='IMAGE_Ace_Debugger_logo' style=\"width:400px;\" /></center>"
-    context['text'] += str(context['game_data']['1'][1])
+    context['text'] = str(context['game_data']['1'][1])
     context['form'] = ' {{ group|component }} '
     context['group'] =  RadioGroup( items=[] )
     context['group'].items = []
@@ -84,6 +83,7 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(context if context else get_context(), unpicklable=False))
         
     sys.exit(0)
+
 
 
 
