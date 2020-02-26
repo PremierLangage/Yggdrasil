@@ -7,13 +7,13 @@ class CustomCheckbox(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-checkbox-group'
         self.decorator = 'CustomCheckbox'
-        if content in kwargs:
+        if 'content' in kwargs:
             self.loaditems(content)
-        if sol_index in kwargs:
+        if 'sol_index' in kwargs:
             self.setsol_by_index(sol_index)
-        if sol_content in kwargs:
+        if 'sol_content' in kwargs:
             self.setsol_by_content(sol_content)
-        if shuffle in kwargs and kwargs['shuffle']:
+        if 'shuffle' in kwargs and kwargs['shuffle']:
             self.shuffle()
         super().__init__(**kwargs)
 
