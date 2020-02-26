@@ -72,7 +72,7 @@
         [
             ['BR', "John(1) ramène la barque.", 'time_tot += 1'],
 
-            ['BG', "Ringo(10) ramène la barque.", 'time_tot += 10']
+            ['BJ', "Ringo(10) ramène la barque.", 'time_tot += 10']
         ]
     ],
 
