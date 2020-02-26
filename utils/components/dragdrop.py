@@ -124,10 +124,7 @@ class DragDropGroup():
                 drop.css = "success-state"
             else:
                 num_bad +=1
-                drop.css = "error-state"
-            else:
-                score=0
-             
+                drop.css = "error-state"           
    
         if labels_cloneable == True:
             num_total = min(self.drop_zones.len, self.matches.len)
