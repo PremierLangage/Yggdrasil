@@ -207,7 +207,7 @@
     [
         '',
 
-        "Tout le monde a traversé sauf John, qui va le chercher ?
+        "Tout le monde a traversé sauf John, qui va le chercher ?"
         ,
 
         [
