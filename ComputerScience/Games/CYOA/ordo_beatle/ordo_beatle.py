@@ -155,5 +155,153 @@
         ]
     ]
 
+'JPG':
+    [
+        '',
+
+        "Tout le monde a traversé sauf Ringo, qui va le chercher ?"
+        ,
+
+        [
+            ['BPG', "Envoyer John(1) ramener le dernier", 'time_tot += 1'],
+
+            ['BJG', "Envoyer Paul(2) ramener le dernier", 'time_tot += 2'],
+
+            ['BJP', "Envoyer George(5) ramener le dernier", 'time_tot += 5']
+        ]
+    ],
+
+'JPR':
+    [
+        '',
+
+        "Tout le monde a traversé sauf George, qui va le chercher ?"
+        ,
+
+        [
+            ['BPR', "Envoyer John(1) ramener le dernier", 'time_tot += 1'],
+
+            ['BJR', "Envoyer Paul(2) ramener le dernier", 'time_tot += 2'],
+
+            ['BJP', "Envoyer Ringo(10) ramener le dernier", 'time_tot += 10']
+        ]
+    ],
+
+'JGR':
+    [
+        '',
+
+        "Tout le monde a traversé sauf Paul, qui va le chercher ?"
+        ,
+
+        [
+            ['BGR', "Envoyer John(1) ramener le dernier", 'time_tot += 1'],
+
+            ['BJR', "Envoyer George(5) ramener le dernier", 'time_tot += 5'],
+
+            ['BJG', "Envoyer Ringo(10) ramener le dernier", 'time_tot += 10']
+        ]
+    ],
+
+'PGR':
+    [
+        '',
+
+        "Tout le monde a traversé sauf John, qui va le chercher ?
+        ,
+
+        [
+            ['BGR', "Envoyer Paul(2) ramener le dernier", 'time_tot += 2'],
+
+            ['BPR', "Envoyer George(5) ramener le dernier", 'time_tot += 5'],
+
+            ['BPG', "Envoyer Ringo(10) ramener le dernier", 'time_tot += 10']
+        ]
+    ],
+
+'BJP':
+    [
+        '',
+
+        "Les deux derniers compères George(5) et Ringo(10) se trouvent sur la rive avec la barque."
+        ,
+
+        [
+            ['fin', "George(5) et Ringo(10) traversent la rivière.", 'time_tot += 10']
+        ]
+    ],
+
+'BJG':
+    [
+        '',
+
+        "Les deux derniers compères Paul(2) et Ringo(10) se trouvent sur la rive avec la barque."
+        ,
+
+        [
+            ['fin', "Paul(2) et Ringo(10) traversent la rivière.", 'time_tot += 10']
+        ]
+    ],
+
+'BJR':
+    [
+        '',
+
+        "Les deux derniers compères Paul(2) et George(5) se trouvent sur la rive avec la barque."
+        ,
+
+        [
+            ['fin', "Paul(2) et George(5) traversent la rivière.", 'time_tot += 5']
+        ]
+    ],
+
+'BPG':
+    [
+        '',
+
+        "Les deux derniers compères John(1) et Ringo(10) se trouvent sur la rive avec la barque."
+        ,
+
+        [
+            ['fin', "John(1) et Ringo(10) traversent la rivière.", 'time_tot += 10']
+        ]
+    ],
+
+'BPR':
+    [
+        '',
+
+        "Les deux derniers compères John(1) et George(5) se trouvent sur la rive avec la barque."
+        ,
+
+        [
+            ['fin', "John(1) et George(5) traversent la rivière.", 'time_tot += 5']
+        ]
+    ],
+
+'BGR':
+    [
+        '',
+
+        "Les deux derniers compères John(1) et Paul(2) se trouvent sur la rive avec la barque."
+        ,
+
+        [
+            ['fin', "John(1) et Paul(2) traversent la rivière.", 'time_tot += 2']
+        ]
+    ],
+
+'fin':
+    [
+        '',
+
+        "Vous avez réussi à faire traverser les quatre compères en {{ time_tot }} minutes !"
+        ,
+
+        [
+
+        ]
+    ]
+
 }
 
