@@ -36,7 +36,8 @@
         '',
         
         "Mais maintenant, la barque est de l'autre... Il faut la ranemer pour aller "
-        "chercher les deux autres. ",
+        "chercher les deux autres. "
+        ,
 
         [
             ['BJ', "Paul(2) ramène la barque.", 'time_tot += 2'],
@@ -50,7 +51,8 @@
         '',
 
         "Mais maintenant, la barque est de l'autre... Il faut la ranemer pour aller "
-        "chercher les deux autres. ",
+        "chercher les deux autres. "
+        ,
         
         [
             ['BR', "George(5) ramène la barque.", 'time_tot += 5'],
@@ -64,7 +66,8 @@
         '',
 
         "Mais maintenant, la barque est de l'autre... Il faut la ranemer pour aller "
-        "chercher les deux autres. ",
+        "chercher les deux autres. "
+        ,
         
         [
             ['BR', "John(1) ramène la barque.", 'time_tot += 1'],
