@@ -44,7 +44,7 @@ extracss ==
 .myclass {
     display: inline-block
 }
-.myclass::after {
+.match-checkbox-label::after {
     font-family: "Font Awesome 5 Free";
     content: "\f00c";
     vertical-align: middle;
