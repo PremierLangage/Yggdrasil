@@ -93,7 +93,8 @@ class DragDropGroup():
     def set_grade_method(self, grade_method):
         if grade_method != 'labels': 
             self.grade_by_labels = False
-        else self.grade_by_labels= True
+        else:
+            self.grade_by_labels= True
 
     def shuffle_labels(self): # It doesn't seem necessary to shuffle drop_zones.
         shuffle(self.labels)
