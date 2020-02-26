@@ -41,7 +41,7 @@ for item in checkbox.items:
 
 extracss ==
 <style>
-.success-state {
+.success-state-icon {
     border: 1px solid transparent;
     border-radius: 0.25rem;
     color: #155724 !important;
@@ -49,7 +49,7 @@ extracss ==
     border-color: #c3e6cb !important;
 }
 
-.success-state p::after {
+.success-state-icon p::after {
     font-family: "Font Awesome 5 Free";
     color : green;
     content: "  \f00c";
