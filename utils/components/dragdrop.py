@@ -3,7 +3,7 @@ from random import shuffle
 from uuid import uuid4
 
 def all_or_nothing(num_good=0, num_bad = 0, total = 1):
-    if num_good = total:
+    if num_good == total:
         return 100
     else:
         return 0
