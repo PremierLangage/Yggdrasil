@@ -38,7 +38,7 @@
 
         "<p>Bienvenue dans la première aventure de Ace debugger, le prof "
         "de TP qui trouve les erreurs plus vite que son ombre. Vos "
-        "compétances en informatique sont maintenant tellement "
+        "compétences en informatique sont maintenant tellement "
         "reconnues que vous allez devoir guider l'Ace debugger "
         "durant les TP d'informatique. Cette première "
         "aventure vous emmenera en salle 104 du batiment Clément Ader "
