@@ -9,10 +9,12 @@ class CustomCheckbox(Component):
         self.decorator = 'CustomCheckbox'
         if content in kwargs:
             self.loaditems(content)
-        if sol_index:
+        if sol_index in kwargs:
             self.setsol_by_index(sol_index)
-        if sol_content:
+        if sol_content in kwargs:
             self.setsol_by_content(sol_content)
+        if shuffle in kwargs and kwargs['shuffle']:
+            self.shuffle()
         super().__init__(**kwargs)
 
     def loaditems(self, lstcontent):
