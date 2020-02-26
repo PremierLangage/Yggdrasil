@@ -80,12 +80,12 @@ class CustomCheckbox(Component):
             if id in self._sol and item['checked']:
                 right += 1
                 if display:
-                    item['css'] = 'success-state'
+                    item['css'] = 'success-state-icon'
                     item['content'] += "<span class='text-success fas fa-check' style='padding-left: 1em'></span>"
             elif id not in self._sol and item['checked']:
                 wrong += 1
                 if display:
-                    item['css'] = 'error-state'
+                    item['css'] = 'error-state-icon'
                     item['content'] += r"<span class='text-danger fas fa-times' style='padding-left: 1em'></span>"
             elif id in self._sol and not item['checked']:
                 missed += 1
@@ -113,6 +113,7 @@ class CustomCheckbox(Component):
             self.disabled = True
 
         return (score, "")
+
 
 
 
