@@ -2,6 +2,15 @@ from components import Component
 from random import shuffle
 from uuid import uuid4
 
+def all_or_nothing(num_good=0, num_bad = 0, total = 1):
+    if num_good = total:
+        return 100
+    else:
+        return 0
+
+def right_minus_wrong(num_good=0, num_bad = 0, total = 1):
+    return max([round((num_right-num_wrong)/total*100),0])
+
 class CustomDragDrop(Component):
 
     def __init__(self, **kwargs):
@@ -99,28 +108,35 @@ class DragDropGroup():
     def shuffle_labels(self): # It doesn't seem necessary to shuffle drop_zones.
         shuffle(self.labels)
 
-    def eval(self, display=True, grading="CorrectItems", disabled=True):
+    def eval(self, display=True, grading_function= all_or_nothing, disabled=True):
         feedback=""
         score=100
-        if labels_cloneable == True:
-            if grade_by_drop_zone == True: # score = 100 if every dropzone receives a correct label
-            else: # score = 100 if every allowed matching is done
-        elif grade_by_drop_zone == True: # (not cloneable) score = 100 if if every dropzone receives a correct label
-        else: # (not cloneable) score = 100 if if every label is on a correct dropzone
 
-        if grade_by_drop_zone == True:
-            for label in self.labels:
-                if 
-                
-                i in range(len(drop)):
-            if drop[i].content==sol[i]:
-                drop[i].css = "success-state"
+        num_good, num_bad = 0, 0
+
+        for drop in self.drop_zones:
+            drop.disabled = True
+            drop_data = {'label': drop.droppedId, 'drop_zone': drop.cid}
+            if drop.droppedId == '':
+                pass
+            elif drop_data in self.matches:
+                num_good += 1
+                drop.css = "success-state"
+            else:
+                num_bad +=1
+                drop.css = "error-state"
             else:
                 score=0
-                drop[i].css = "error-state"
-            drop[i].disabled = True
+             
+   
+        if labels_cloneable == True:
+            num_total = min(self.drop_zones.len, self.matches.len)
+        else:
+            num_total = min(self.drop_zones.len, self.labels.len)
+                  
+        score = grading_function(num_good, num_bad, num_total)
+
         return (score,feedback)
-)"""
 
     
         
