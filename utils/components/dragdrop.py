@@ -55,8 +55,8 @@ class DragDropGroup():
         self.id = str(uuid4()) # generates a random id for the group
         self.labels = []
         self.drop_zones = []
-        self.labels_cloneable = True
-        self.valid_associations = [] # Records which label can be dropped on which drop_zone
+        self.labels_cloneable = True # Tells if a label can be used several times or not
+        self.matches = [] # List of correct matches between a label and a drop_zone
         self.grade_by_labels = True# If true means each label should be dropped on some drop_zone, otherwise that each drop zone should be populated
         
         if 'id' in kwargs: # comes first because id is copied in labels and drop_zones
@@ -67,8 +67,8 @@ class DragDropGroup():
             self.set_labels(kwargs['labels'])
         if 'drop_zones' in kwargs:
             self.set_drop_zones(kwargs['drop_zones'])
-        if 'valid_associations' in kwargs:#format of an association: {'label':}
-            self.set_associations(kwargs['valid_associations'])
+        if 'matches' in kwargs:#format of a match: {'label':cid of label, 'drop_zone':cid of drop_zone}
+            self.set_matchess(kwargs['valid_matches'])
         if 'grade_method' in kwargs:
             self.set_grade_method(kwargs['grade_method'])
 
@@ -84,9 +84,12 @@ class DragDropGroup():
             drop_zone.group_id = self.id
             drop_zone.cloneable_label = False
 
-    def set_associations(self, valid_associations):
-        self.valid_associations = valid_associations
+    def set_matches(self, matches):
+        self.matches = matches
 
+    def match_by_cid(self, label_cid, drop_zone_cid):
+        self.matches.append({'label':label_cid, 'drop_zone': drop_zone_cid})
+    
     def set_grade_method(self, grade_method):
         if grade_method != 'labels': 
             self.grade_by_labels = False
@@ -94,6 +97,23 @@ class DragDropGroup():
 
     def shuffle_labels(self): # It doesn't seem necessary to shuffle drop_zones.
         shuffle(self.labels)
+
+    def eval(self, display=True, grading="CorrectItems", disabled=True):
+        feedback=""
+        """"        score=100
+        if grade_by_labels == True:
+            for label in self.labels:
+                if 
+                
+                i in range(len(drop)):
+            if drop[i].content==sol[i]:
+                drop[i].css = "success-state"
+            else:
+                score=0
+                drop[i].css = "error-state"
+            drop[i].disabled = True
+        return (score,feedback)
+)"""
 
     
         
