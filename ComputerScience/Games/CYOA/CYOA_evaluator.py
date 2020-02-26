@@ -31,6 +31,9 @@ if __name__ == "__main__":
                 code_link = compile(step_to[2], "link_code", "exec")
                 exec(code_link, context, context)
 
+    # Apply action of the current step
+    code_step = compile(context['game_data'][context['group'].selection][0], "link_step", "exec")
+    exec(code_step, context, context)
 
     context['current_step'] = context['group'].selection
     context['text'] = str(context['game_data'][context['current_step']][1])
