@@ -42,7 +42,6 @@ for item in checkbox.items:
 extracss ==
 <style>
 .myclass {
-    width: 50%;
     display: inline-block
 }
 .myclass::after {
