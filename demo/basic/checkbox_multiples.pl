@@ -43,6 +43,7 @@ extracss ==
 <style>
 .myclass {
     width: 50%;
+    display: inline-block
 }
 .myclass::after {
     font-family: "Font Awesome 5 Free";
@@ -50,6 +51,7 @@ extracss ==
     position : relative;
     vertical-align: middle;
     font-weight: 900;
+    display: inline-block
 }
 </style>
 ==
