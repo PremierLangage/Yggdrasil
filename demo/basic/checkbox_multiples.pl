@@ -27,7 +27,7 @@ text ==
 Parmi les nombres suivants, lesquels sont des multiples de 3 ?
 ==
 
-settings.feedback = lightscore
+#settings.feedback = lightscore
 
 form ==
 {{ checkbox | component }}
