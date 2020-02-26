@@ -42,7 +42,7 @@ for item in checkbox.items:
 extracss ==
 <style>
 .myclass::after {
-    content : "<span class='text-success fas fa-check' style='padding-left: 1em'></span>";
+    content : "aa";
     display: inline-block;
     position : absolute;
     top : 0;
