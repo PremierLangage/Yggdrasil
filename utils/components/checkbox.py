@@ -90,6 +90,7 @@ class CustomCheckbox(Component):
             elif id in self._sol and not item['checked']:
                 missed += 1
                 if display:
+                    pass
                     #item['content'] += r"<span class='text-success fas fa-check' style='padding-left: 1em'></span>"
         
         if grading == "AllOrNothing":
