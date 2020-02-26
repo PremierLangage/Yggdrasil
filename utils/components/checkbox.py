@@ -52,7 +52,7 @@ class CustomCheckbox(Component):
 
         self.loaditems(rd.sample(right,nright)+rd.sample(wrong,nitems-nright))
 
-        self.setsol_index(list(range(nright)))
+        self.setsol_by_index(list(range(nright)))
 
         self.shuffle()
 
