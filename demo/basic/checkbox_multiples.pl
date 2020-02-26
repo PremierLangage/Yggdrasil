@@ -27,7 +27,7 @@ text ==
 Parmi les nombres suivants, lesquels sont des multiples de 3 ?
 ==
 
-#settings.feedback = lightscore
+settings.feedback = lightscore
 
 form ==
 {{ checkbox | component }}
@@ -42,10 +42,11 @@ for item in checkbox.items:
 extracss ==
 <style>
 .myclass:after {
-    content : "aaaaaaaaa";
+    content : "";
     position : absolute;
     top : 0;
     right:0
 }
 </style>
 ==
+
