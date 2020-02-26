@@ -48,6 +48,7 @@ extracss ==
     font-family: "Font Awesome 5 Free";
     content: "\f095";
     display: inline-block;
+    position : absolute;
     vertical-align: middle;
     font-weight: 900;
 }
