@@ -42,7 +42,7 @@ for item in checkbox.items:
 extracss ==
 <style>
 .myclass:after {
-    content : "aa";
+    content : "aaaaaaaaa";
     position : absolute;
     top : 0;
     right:0
