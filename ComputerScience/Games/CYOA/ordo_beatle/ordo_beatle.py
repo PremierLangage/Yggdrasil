@@ -35,7 +35,7 @@
     [
         '',
         
-        "Mais maintenant, la barque est de l'autre... Il faut la ranemer pour aller "
+        "Mais maintenant, la barque est de l'autre côté... Il faut la ranemer pour aller "
         "chercher les deux autres. "
         ,
 
@@ -50,7 +50,7 @@
     [
         '',
 
-        "Mais maintenant, la barque est de l'autre... Il faut la ranemer pour aller "
+        "Mais maintenant, la barque est de l'autre côté... Il faut la ranemer pour aller "
         "chercher les deux autres. "
         ,
         
@@ -65,7 +65,7 @@
     [
         '',
 
-        "Mais maintenant, la barque est de l'autre... Il faut la ranemer pour aller "
+        "Mais maintenant, la barque est de l'autre côté... Il faut la ranemer pour aller "
         "chercher les deux autres. "
         ,
         
@@ -80,7 +80,7 @@
     [
         '',
 
-        "Mais maintenant, la barque est de l'autre... Il faut la ranemer pour aller "
+        "Mais maintenant, la barque est de l'autre côté... Il faut la ranemer pour aller "
         "chercher les deux autres. "
         ,
         
@@ -293,7 +293,7 @@
 
 'fin':
     [
-        '',
+        'grade=100*(1 - ((time_tot - 17)/33))',
 
         "Vous avez réussi à faire traverser les quatre compères en {{ time_tot }} minutes !"
         ,
