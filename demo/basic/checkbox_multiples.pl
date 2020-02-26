@@ -41,7 +41,7 @@ grade = checkbox.eval(grading="RightMinusWrong",disabled=False)
 extracss ==
 <style>
 .myclass:after {
-    content : "aa";
+    content : "";
     position : absolute;
     top : 0;
     right:0
