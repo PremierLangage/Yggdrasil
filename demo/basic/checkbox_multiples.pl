@@ -20,8 +20,7 @@ other = [str(n) for n in range(50,100) if n % 3 != 0]
 checkbox.loadrw(mult3,other,5,rd.randint(1,4))
 
 for item in checkbox.items:
-    item['css']=''
-checkbox.horizontal = True
+    item['css']='myclass'
 ==
 
 text ==
@@ -40,9 +39,8 @@ grade = checkbox.eval(grading="RightMinusWrong",disabled=False)
 
 extracss ==
 <style>
-.myclass {
-    padding: 4px 4px 4px 4px !important;
-    width:50%
+.myclass:after {
+    content : "aa"
 }
 </style>
 ==
