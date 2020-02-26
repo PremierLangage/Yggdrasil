@@ -4,7 +4,7 @@ extends = /model/basic.pl
 
 title = Comparaison de nombres (DragDrop)
 
-before==|python|
+before==
 from customdragdrop import CustomDragDrop, DragDropGroup
 import random as rd
 
@@ -43,8 +43,8 @@ form==
 evaluator==
 from customdragdrop import CustomDragDrop, DragDropGroup
 
-#grade=CustomDragDrop.eval(drop,sol)
-
+grade=CustomDragDrop.eval(drop,sol)
+# l'essai grade = group.eval() ne fonctionne pas, je ne sais pas pourquoi
 ==
 
 extracss == #|html| 
