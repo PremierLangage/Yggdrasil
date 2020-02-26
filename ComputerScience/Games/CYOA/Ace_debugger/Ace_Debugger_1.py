@@ -34,6 +34,8 @@
     [
         '{"audace" : 0, "panache" : 0, "confiance" : 0}',
      
+        "<center><img src={{ img1 }} alt='IMAGE_Ace_Debugger_logo' style=\"width:400px;\" /></center>"
+
         "<p>Bienvenue dans la première aventure de Ace debugger, le prof "
         "de TP qui trouve les erreurs plus vite que son ombre. Vos "
         "compétances en informatique sont maintenant tellement "
@@ -409,5 +411,6 @@
         ]
     ]
 }
+
 
 
