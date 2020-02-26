@@ -47,8 +47,8 @@ if __name__ == "__main__":
         context['group'].items.append({ "id" : index_step_to, "content" : text_step_to })
 
     if context['grade'] is not None:
-        grade = context['grade']
-        output(grade, " ", context)    
+        grade = int(context['grade'])
+        output(grade, " ", context)
 
     output(-1, " ", context)
 
