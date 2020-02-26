@@ -153,7 +153,7 @@
 
             ['JGR', "Envoyer le plus rapide John(1) et le plus lent George(5)", 'time_tot += 5']
         ]
-    ]
+    ],
 
 'JPG':
     [
