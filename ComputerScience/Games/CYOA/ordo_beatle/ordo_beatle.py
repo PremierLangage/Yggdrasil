@@ -296,7 +296,8 @@
         'grade=100*(1 - ( (time_tot - 17)/33 ) )',
 
         "<p>Vous avez réussi à faire traverser les quatre compères en {{ time_tot }} minutes !</p> <br />"
-        "Vous avez obtenu <b>{{ grade|round|int }}%</b> de réussite."
+        "<p>Vous avez obtenu <b>{{ grade|round|int }}%</b> de réussite. </p> <br />"
+        "<p>17 minutes est le temps optimal pour ce problème, on ne peut pas faire mieux. </p> <br />"
         ,
 
         [
