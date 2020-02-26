@@ -14,7 +14,7 @@
 
 author=Nicolas Borie
 
-title=Problème d'ordonancement
+title=Choose Your Own Adventure : Problème d'ordonancement
 tag=ordonancement|jeu|cyoa
 
 template=/ComputerScience/Games/CYOA/CYOA_template.pl
