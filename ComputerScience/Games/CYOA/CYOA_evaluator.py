@@ -32,6 +32,7 @@ if __name__ == "__main__":
                 exec(code_link, context, context)
 
     # Apply action of the current step
+    context['grade'] = None
     code_step = compile(context['game_data'][context['group'].selection][0], "link_step", "exec")
     exec(code_step, context, context)
 
@@ -44,6 +45,9 @@ if __name__ == "__main__":
         index_step_to = step_to[0]
         text_step_to = step_to[1]
         context['group'].items.append({ "id" : index_step_to, "content" : text_step_to })
+
+    if context['grade'] is not None:
+        output(grade, " ", context)    
 
     output(-1, " ", context)
 
