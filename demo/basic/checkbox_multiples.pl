@@ -41,7 +41,7 @@ for item in checkbox.items:
 
 extracss ==
 <style>
-.myclass::after {
+.myclass:after {
     font-family: "Font Awesome 5 Free";
     content: "\f095";
     display: inline-block;
