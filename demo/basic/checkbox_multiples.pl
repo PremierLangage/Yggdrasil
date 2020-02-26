@@ -34,7 +34,7 @@ form ==
 ==
 
 evaluator ==
-grade = checkbox.eval(grading="RightMinusWrong",disabled=False)
+grade = checkbox.eval(grading="RightMinusWrong",display=False,disabled=False)
 for item in checkbox.items:
     item['css']='myclass'
 ==
