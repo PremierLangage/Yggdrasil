@@ -10,9 +10,9 @@ class CustomCheckbox(Component):
         if content in kwargs:
             self.loaditems(content)
         if sol_index:
-            self.setsol_index(sol_index)
+            self.setsol_by_index(sol_index)
         if sol_content:
-            self.setsol_content(sol_content)
+            self.setsol_by_content(sol_content)
         super().__init__(**kwargs)
 
     def loaditems(self, lstcontent):
@@ -21,17 +21,23 @@ class CustomCheckbox(Component):
         """
         self.items = [{"id": uuid4(), "content": content} for content in lstcontent]
 
-    def setsol_index(self, index):
+    def setsol_by_index(self, index):
         """
         Set the component solutions from a list of indices.
         """
-        self._sol = [self.items[i]['id'] for i in index]
+        if isinstance(index,list):
+            self._sol = [self.items[i]['id'] for i in index]
+        elif isinstance(index,int):
+            self._sol = [self.items[i]['id'] for i == index]
 
-    def setsol_content(self, content):
+    def setsol_by_content(self, content):
         """
         Set the component solutions from a list of contents.
         """
-        self._sol = [id for id in self.items if self.items['content'] in content]
+        if isinstance(index,list):
+            self._sol = [id for id in self.items if self.items['content'] in content]
+        elif isinstance(index,str):
+            self._sol = [id for id in self.items if self.items['content'] == content]
 
     def loadrw(self, right, wrong, nitems=None, nright=None):
         """
