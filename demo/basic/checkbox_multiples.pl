@@ -35,8 +35,7 @@ form ==
 
 evaluator ==
 grade = checkbox.eval(grading="CorrectAnswers",display=True,disabled=False)
-for item in checkbox.items:
-    item['css']='myclass'
+
 ==
 
 extracss ==
