@@ -47,7 +47,7 @@ extracss ==
     vertical-align: middle;
     font-weight: 900;
 }
-.mat-checkbox-label p::after {
+.mat-checkbox-label2 p::after {
     font-family: "Font Awesome 5 Free";
     content: " \f00c";
     vertical-align: middle;
