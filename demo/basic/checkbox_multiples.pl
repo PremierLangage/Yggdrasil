@@ -41,7 +41,7 @@ for item in checkbox.items:
 
 extracss ==
 <style>
-.match-checkbox-label::after {
+.mat-checkbox-label::after {
     font-family: "Font Awesome 5 Free";
     content: "\f00c";
     vertical-align: middle;
