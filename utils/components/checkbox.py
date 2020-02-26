@@ -85,7 +85,7 @@ class CustomCheckbox(Component):
             elif id not in self._sol and item['checked']:
                 wrong += 1
                 if display:
-                    item['css'] = 'error-state-icon'
+                    item['css'] = 'success-state-icon'
                     item['content'] += r"<span class='text-danger fas fa-times' style='padding-left: 1em'></span>"
             elif id in self._sol and not item['checked']:
                 missed += 1
