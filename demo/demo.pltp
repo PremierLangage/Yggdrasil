@@ -21,7 +21,7 @@ créer un nouveau fichier pour faire vos essais**.
 
 ==
 
-@ /demo/add_int.pl 
+#@ /demo/add_int.pl 
 @ /demo/capitals2.pl
 @ /Languages/Greek/verb_inflexion.pl
 @ /Languages/Greek/greekvoc.pl
@@ -52,6 +52,7 @@ créer un nouveau fichier pour faire vos essais**.
 @ /example/python/stack.pl
 @ /example/python/enigma_encode.pl
 @ /example/python/enigma_decode.pl
+
 
 
 
