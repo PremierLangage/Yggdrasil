@@ -50,7 +50,7 @@ extracss ==
 
 .error-state p::after {
     font-family: "Font Awesome 5 Free";
-    color : green;
+    color : red;
     content: "  \f00d";
     vertical-align: middle;
     font-weight: 900;
