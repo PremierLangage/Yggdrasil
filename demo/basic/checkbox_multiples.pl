@@ -6,7 +6,7 @@ before ==
 import random as rd
 from customcheckbox import CustomCheckbox
 
-checkbox = CustomChecbox (content = ["a","b"])
+checkbox = CustomCheckbox(content = ["a","b"])
 
 mult3 = [str(n) for n in range(50,100) if n % 3 == 0]
 other = [str(n) for n in range(50,100) if n % 3 != 0]
