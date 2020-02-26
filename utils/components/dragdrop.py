@@ -57,7 +57,7 @@ class DragDropGroup():
         self.drop_zones = []
         self.labels_cloneable = True # Tells if a label can be used several times or not
         self.matches = [] # List of correct matches between a label and a drop_zone
-        self.grade_by_labels = True# If true means each label should be dropped on some drop_zone, otherwise that each drop zone should be populated
+        self.grade_by_drop_zone = True# If true means each drop_zone should be populated
         
         if 'id' in kwargs: # comes first because id is copied in labels and drop_zones
             self.id = kwargs['id']
@@ -92,17 +92,23 @@ class DragDropGroup():
     
     def set_grade_method(self, grade_method):
         if grade_method != 'labels': 
-            self.grade_by_labels = False
+            self.grade_by_drop_zone = False
         else:
-            self.grade_by_labels= True
+            self.grade_by_drop_zone= True
 
     def shuffle_labels(self): # It doesn't seem necessary to shuffle drop_zones.
         shuffle(self.labels)
 
     def eval(self, display=True, grading="CorrectItems", disabled=True):
         feedback=""
-        """"        score=100
-        if grade_by_labels == True:
+        score=100
+        if labels_cloneable == True:
+            if grade_by_drop_zone == True: # score = 100 if every dropzone receives a correct label
+            else: # score = 100 if every allowed matching is done
+        elif grade_by_drop_zone == True: # (not cloneable) score = 100 if if every dropzone receives a correct label
+        else: # (not cloneable) score = 100 if if every label is on a correct dropzone
+
+        if grade_by_drop_zone == True:
             for label in self.labels:
                 if 
                 
