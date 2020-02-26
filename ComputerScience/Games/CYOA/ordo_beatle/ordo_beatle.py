@@ -81,7 +81,8 @@
         '',
 
         "Mais maintenant, la barque est de l'autre... Il faut la ranemer pour aller "
-        "chercher les deux autres. ",
+        "chercher les deux autres. "
+        ,
         
         [
             ['BG', "Paul(2) ramène la barque.", 'time_tot += 2'],
