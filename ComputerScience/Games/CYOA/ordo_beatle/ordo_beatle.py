@@ -35,6 +35,8 @@
     [
         '',
         
+        "<p><u>Temps écoulé :</u> {{ time_tot }} minutes</p> <br />"
+
         "Mais maintenant, la barque est de l'autre côté... Il faut la ranemer pour aller "
         "chercher les deux autres. "
         ,
