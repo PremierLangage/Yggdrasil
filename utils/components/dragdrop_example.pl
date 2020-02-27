@@ -45,6 +45,12 @@ from customdragdrop import CustomDragDrop, DragDropGroup
 
 grade=CustomDragDrop.eval(drop,sol)
 # l'essai grade = group.eval() ne fonctionne pas, je ne sais pas pourquoi
+# [DD] : Problème de sérialisation/désérialisation de l'objet group, non ?
+# Les objets qui ne font pas pas partie des types de base Python (int, float, str, list, tuple, dic) 
+# sont transformés en dictionnaires vides au moment de la conversion en JSON.
+# Il faut donc faire la sérialisation/désrialisation "à la main" comme avec SymPy.
+# Ou y a peut-être moyen d'inclure des méthodes internes de sérialisation/désérialisation dans la classe
+# qui seraient automatiquement appelées par jsonpickle (vu que c'est une classe sur laquelle on a la main).
 ==
 
 extracss == #|html| 
