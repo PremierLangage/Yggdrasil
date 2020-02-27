@@ -25,7 +25,6 @@ for _ in range(n):
 
 label = CustomDragDrop.Labels([lt,gt])
 drop = CustomDragDrop.Drops(n)
-group = DragDropGroup(labels = label, drop_zones = drop)
 ==
 
 text==
@@ -40,13 +39,22 @@ form==
 </ul>
 ==
 
+settings.feedback = lightscore
+
 evaluator==
 from customdragdrop import CustomDragDrop, DragDropGroup
 
 #grade=CustomDragDrop.eval(drop,sol)
 groupp = DragDropGroup(labels = label, drop_zones = drop)
-grade = groupp.eval()
-grade.feedback = 'score   :' + str(score)
+
+matches = []
+for i in range(len(numbers)):
+        if numbers[i][0] < numbers[i][1]:
+            matches.append({'label':label[0].cid, 'drop_zone':drop[i].cid})
+        elif numbers[i][0] > numbers[i][1]:
+            matches.append({'label':label[0].cid, 'drop_zone':drop[i].cid})
+groupp.set_matches(matches)
+#grade = groupp.eval()
 
 
 # l'essai grade = group.eval() ne fonctionne pas, je ne sais pas pourquoi
