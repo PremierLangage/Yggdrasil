@@ -108,7 +108,7 @@ class DragDropGroup():
     def shuffle_labels(self): # It doesn't seem necessary to shuffle drop_zones.
         shuffle(self.labels)
 
-    def eval(self, display=True, grading_function= right_minus_wrong, disabled=True):
+    def eval(self, display=True, grading_function= all_or_nothing, disabled=True):
         feedback=""
         score=100
 
