@@ -42,7 +42,7 @@ form==
 settings.feedback = lightscore
 
 evaluator==
-from customdragdrop import CustomDragDrop, DragDropGroup
+from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
 
 #grade=CustomDragDrop.eval(drop,sol)
 groupp = DragDropGroup(labels = label, drop_zones = drop)
