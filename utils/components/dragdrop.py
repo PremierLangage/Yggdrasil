@@ -121,7 +121,7 @@ class DragDropGroup():
                 pass
             elif drop_data in self.matches:
                 num_good += 1
-                drop.css = "success-state"
+                # drop.css = "success-state"
             else:
                 num_bad +=1
                 drop.css = "error-state"           
