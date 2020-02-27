@@ -52,7 +52,7 @@ for i in range(len(numbers)):
         if numbers[i][0] < numbers[i][1]:
             matches.append({'label':label[0].cid, 'drop_zone':drop[i].cid})
         elif numbers[i][0] > numbers[i][1]:
-            matches.append({'label':label[0].cid, 'drop_zone':drop[i].cid})
+            matches.append({'label':label[1].cid, 'drop_zone':drop[i].cid})
 groupp.set_matches(matches)
 grade = groupp.eval()
 
