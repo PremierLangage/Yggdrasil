@@ -12,7 +12,7 @@ extracss ==
     font-weight: 900;
 }
 
-.icon-fail p::after {
+.icon-times p::after {
     font-family: "Font Awesome 5 Free";
     color: #721c24;
     content: "  \f00d";
