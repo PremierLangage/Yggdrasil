@@ -55,7 +55,7 @@ class CustomTextSelect(Component):
                 wrong += 1
                 if display:
                     unit['css'] = 'error-state'
-        for unit in self._indexsol:
+        for unit in []: #self._indexsol:
             if unit not in self.selections:
                 missed += 1
                 unit['css'] = 'error-state'
@@ -79,3 +79,4 @@ class CustomTextSelect(Component):
         self.disabled = True
 
         return (score, "")
+
