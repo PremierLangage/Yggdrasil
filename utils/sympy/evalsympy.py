@@ -287,7 +287,7 @@ def eval_expr(strans,sol,local_dict={}):
     Analyze an answer of type expression.
     """
     try:
-        ans=str2expr(strans,local_dict)
+        ans=latex2sympy(strans,local_dict)
     except:
         return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
     if not equal(ans,sol):
@@ -298,9 +298,11 @@ def eval_expr(strans,sol,local_dict={}):
 def eval_set(strans,sol,local_dict={}):
     sol=FiniteSet2struct(sol)
     try:
-        ans=str2struct(strans,local_dict)
+        ans=latex2sympy(strans,local_dict)
     except:
-        return (-1,"NotSet","Votre réponse n'est pas un ensemble valide.")
+        return (-1,"NotSet","Votre réponse n'est pas un ensemble.")
+    if not isinstance(ans,list):
+        return (-1,"NotSet","Votre réponse n'est pas un ensemble.")
     if duplicates(ans):
         return (-1,"Duplicates","Il y a des doublons dans l'ensemble.")
     if not equal_set(ans,sol):
@@ -327,7 +329,7 @@ def eval_complex(strans,sol,imaginary_unit="i",form="",authorized_func={}):
     """
     local_dict={imaginary_unit:sp.I,'e':sp.E}
     try:
-        ans=str2expr(strans,local_dict)
+        ans=latex2sympy(strans,local_dict)
     except:
         return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
     if not ans.is_complex:
@@ -362,7 +364,7 @@ def eval_poly(strans,sol,x,domain="RR",imaginary_unit="i",form="",authorized_fun
     """
     local_dict={imaginary_unit:sp.I}
     try:
-        ans=str2expr(strans,local_dict)
+        ans=latex2sympy(strans,local_dict)
     except:
         return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
     if not ans.is_polynomial(x):
@@ -404,5 +406,6 @@ def ans_antiderivative(strans,sol,x,local_dict={}):
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
+
 
 
