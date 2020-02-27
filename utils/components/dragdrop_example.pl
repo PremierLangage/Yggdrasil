@@ -44,7 +44,8 @@ evaluator==
 from customdragdrop import CustomDragDrop, DragDropGroup
 
 #grade=CustomDragDrop.eval(drop,sol)
-grade = group.eval()
+groupp = DragDropGroup(labels = label, drop_zones = drop)
+grade = groupp.eval()
 
 
 # l'essai grade = group.eval() ne fonctionne pas, je ne sais pas pourquoi
