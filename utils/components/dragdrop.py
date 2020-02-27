@@ -96,8 +96,8 @@ class DragDropGroup():
     def set_matches(self, matches):
         self.matches = matches
 
-    def match_by_cid(self, label_cid, drop_zone_cid):
-        self.matches.append({'label':label_cid, 'drop_zone': drop_zone_cid})
+    def set_match(self, label, drop_zone):
+        self.matches.append({'label':label.cid, 'drop_zone': drop_zone.cid})
     
     def set_grade_method(self, grade_method):
         if grade_method != 'labels': 
