@@ -80,15 +80,15 @@ class CustomCheckbox(Component):
             if id in self._sol and item['checked']:
                 right += 1
                 if display:
-                    item['css'] = 'success-state'
+                    item['css'] = 'success-state icon-check'
             elif id not in self._sol and item['checked']:
                 wrong += 1
                 if display:
-                    item['css'] = 'error-state'
+                    item['css'] = 'error-state icon-fail'
             elif id in self._sol and not item['checked']:
                 missed += 1
                 if display:
-                    item['css'] = 'missed-state'
+                    item['css'] = 'icon-check'
                           
         if grading == "AllOrNothing":
             if wrong == 0 and right == 0:
@@ -111,6 +111,7 @@ class CustomCheckbox(Component):
             self.disabled = True
 
         return (score, "")
+
 
 
 
