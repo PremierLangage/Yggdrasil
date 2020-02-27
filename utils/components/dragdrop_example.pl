@@ -42,7 +42,7 @@ form==
 
 evaluator==
 from customdragdrop import CustomDragDrop, DragDropGroup
-
+grade = group.eval()
 grade=CustomDragDrop.eval(drop,sol)
 # l'essai grade = group.eval() ne fonctionne pas, je ne sais pas pourquoi
 ==
@@ -55,6 +55,7 @@ extracss == #|html|
         }
 </style>
 ==
+
 
 
 
