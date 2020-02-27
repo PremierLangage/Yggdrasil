@@ -80,11 +80,11 @@ class CustomCheckbox(Component):
             if id in self._sol and item['checked']:
                 right += 1
                 if display:
-                    item['css'] = 'success-state icon-check'
+                    item['css'] = 'success-state icon-check-after'
             elif id not in self._sol and item['checked']:
                 wrong += 1
                 if display:
-                    item['css'] = 'error-state icon-fail'
+                    item['css'] = 'error-state icon-fail-after'
             elif id in self._sol and not item['checked']:
                 missed += 1
                 if display:
