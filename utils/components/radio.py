@@ -48,21 +48,17 @@ class CustomRadio(Component):
             if id == self._sol and id == self.selection:
                 score = 100
                 if display:
-                    item['css'] = 'success-state'
-                    # Il devrait y avoir une clé "icon" dans un item, ce n'est pas très satisfaisant
-                    # d'ajouter l'icône au "content"
-                    item['content'] += r"<span class='text-success fas fa-check' style='padding-left: 1em'></span>"
+                    item['css'] = 'success-state icon-check-after'
             elif id != self._sol and id == self.selection:
                 if display:
-                    item['css'] = 'error-state'
-                    item['content'] += r"<span class='text-danger fas fa-times' style='padding-left: 1em'></span>"
+                    item['css'] = 'error-state icon-times-after'
             elif id == self._sol and id != self.selection:
                 score = 0
                 if display:
-                    item['content'] += r"<span class='text-success fas fa-check' style='padding-left: 1em'></span>"
-
+                    item['css'] = 'icon-check-after'
         if disabled:
             self.disabled = True
 
         return (score, "")
+
 
