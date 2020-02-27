@@ -132,7 +132,7 @@ class DragDropGroup():
             total = min(len(self.drop_zones), len(self.labels))
                   
         score = grading_function(num_good, num_bad, total)
-        feedback = 'num_good : '+str(num_good)+ '    num_bad : '+str(num_bad)+ '    total : '+str(total)
+        feedback = '' 
         return (score,feedback)
 
     
