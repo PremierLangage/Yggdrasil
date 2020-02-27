@@ -54,7 +54,7 @@ for i in range(len(numbers)):
         elif numbers[i][0] > numbers[i][1]:
             matches.append({'label':label[1].cid, 'drop_zone':drop[i].cid})
 groupp.set_matches(matches)
-grade = groupp.eval(right_minus_wrong)
+grade = groupp.eval(grading_function = right_minus_wrong)
 
 
 # l'essai grade = group.eval() ne fonctionne pas, je ne sais pas pourquoi
@@ -78,6 +78,7 @@ extracss == #|html|
         }
 </style>
 ==
+
 
 
 
