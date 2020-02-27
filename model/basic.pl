@@ -4,7 +4,7 @@
 
 extracss ==
 <style>
-.icon-check p::after {
+.icon-check-after p::after {
     font-family: "Font Awesome 5 Free";
     color: #155724;
     content: "  \f00c";
@@ -12,7 +12,7 @@ extracss ==
     font-weight: 900;
 }
 
-.icon-times p::after {
+.icon-times-after p::after {
     font-family: "Font Awesome 5 Free";
     color: #721c24;
     content: "  \f00d";
