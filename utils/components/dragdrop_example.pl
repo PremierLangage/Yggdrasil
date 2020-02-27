@@ -43,7 +43,10 @@ form==
 evaluator==
 from customdragdrop import CustomDragDrop, DragDropGroup
 
-grade=CustomDragDrop.eval(drop,sol)
+#grade=CustomDragDrop.eval(drop,sol)
+grade = group.eval()
+
+
 # l'essai grade = group.eval() ne fonctionne pas, je ne sais pas pourquoi
 # [DD] : Problème de sérialisation/désérialisation de l'objet group, non ?
 # Les objets qui ne font pas partie des types de base Python (int, float, str, list, tuple, dic) 
