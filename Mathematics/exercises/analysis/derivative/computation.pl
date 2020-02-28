@@ -18,9 +18,13 @@ sol=diff(f,x)
 ==
 
 text ==
-Calculer la dérivée de
-$$ f : x \mapsto \sqrt{x^2+1} $$
-$$ $$
+Calculer la dérivée
+==
+
+input =: MathInput
+
+form ==
+{{input|component}}
 ==
 
 evaluator==
