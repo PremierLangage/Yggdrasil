@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathjsxgraph.pl
+extends = /mmodel/math.pl
 
 title = Tracer une droite
 
@@ -48,3 +48,4 @@ else:
 
 
 settings.allow_reroll=yes
+
