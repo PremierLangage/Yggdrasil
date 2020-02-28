@@ -5,7 +5,7 @@ title = Calcul de dérivée
 lang = fr
 
 before ==
-keyboards_JSON['virtualKeyboards']="function"
+keyboards_JSON['virtualKeyboards']="functions"
 input.config = keyboards_JSON
 
 var('x')
