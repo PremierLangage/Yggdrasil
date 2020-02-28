@@ -31,7 +31,7 @@ score,_,feedback2=eval_set(input.value,sol)
 ==
 
 feedback ==
-$$ A=  {{A.latex}}, B={{B.latex}}.$$
+\{ \}
 ==
 
 solution ==
