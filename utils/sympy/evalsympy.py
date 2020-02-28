@@ -284,7 +284,7 @@ def eval_expr(strans,sol,local_dict={}):
         ans=latex2sympy(strans,local_dict)
     except:
         return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
-    if not ans.is_expr:
+    if not isinstance(ans,sp.Expr):
         return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
     if not equal(ans,sol):
         return (0,"NotEqual","")
