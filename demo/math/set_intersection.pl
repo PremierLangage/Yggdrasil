@@ -12,7 +12,9 @@ B=rand_finiteset(randint(4,7),list(range(10)))
 sol = Intersection(A,B)
 ==
 
-text =
+text ==
+$$ A=  {{A.latex}}, B={{B.latex}}.$$
+==
 
 input =: MathInput
 
@@ -25,7 +27,11 @@ Déterminer $! A \cap B !$.
 ==
 
 evaluator ==
-score,_,feedback=eval_set(input.value,sol)
+score,_,feedback2=eval_set(input.value,sol)
+==
+
+feedback ==
+$$ A=  {{A.latex}}, B={{B.latex}}.$$
 ==
 
 solution ==
