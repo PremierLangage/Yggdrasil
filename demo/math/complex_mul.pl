@@ -1,6 +1,6 @@
 extends = /model/math.pl
 
-title = Opération sur les nombres complexes
+title = Multiplication de deux nombres complexes
 
 before ==
 keyboards_JSON['virtualKeyboards']="complexes"
