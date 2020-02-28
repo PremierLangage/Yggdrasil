@@ -18,7 +18,7 @@ sol=diff(f,x)
 
 text ==
 Calculer la dérivée de la fonction
-$$ f : x \mapsto {{f.tex}} .$$
+$$ f : x \mapsto {{f.latex}} .$$
 ==
 
 input =: MathInput
