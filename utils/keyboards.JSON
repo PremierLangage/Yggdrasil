@@ -60,10 +60,10 @@
                       },
                       {
                           "class": "keycap",
-                          "label": "italic",
+                          "label": "italic"
                       },
                       {
-                          "class": "separator w20",
+                          "class": "separator w20"
                       }
                   ],
                   [
@@ -86,11 +86,10 @@
                       },
                       {
                           "class": "keycap",
-                          "label": "bold",
-                          command: ['apply-style', {'series': 'b'}]
-                      },
+                          "label": "bold"
+                       },
                       {
-                          "class": "separator w20",
+                          "class": "separator w20"
                       }
                   ],
                   [
@@ -111,7 +110,7 @@
                           "label": "-"
                       },
                       {
-                          "class": "separator w15",
+                          "class": "separator w15"
                       },
                       {
                           "class": "action font-glyph bottom right w15",
