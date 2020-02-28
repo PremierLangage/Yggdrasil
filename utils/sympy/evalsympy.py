@@ -343,11 +343,11 @@ def eval_complex(strans,sol,imaginary_unit="i",form="",authorized_func={}):
     if not equal(ans,sol):
         return (0,"NotEqual","")
     if form == "cartesian":
-        if is_complex_cartesian(ans):
+        if not is_complex_cartesian(ans):
             return (-1,"NotCplxCartesian","Votre réponse n'est pas un nombre complexe sous forme cartésienne.")
     # is_complex_cartesian_ratsimp,-1,"NotRatSimp","L'expression peut encore être simplifiée."
     elif form == "exponential":
-        if is_complex_exponential(ans):
+        if not is_complex_exponential(ans):
             return (-1,"NotCplxExponential","Votre réponse n'est pas un nombre complexe sous forme exponentielle.")
     return (100,"Success","")
 
