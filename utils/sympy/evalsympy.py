@@ -290,6 +290,8 @@ def eval_expr(strans,sol,local_dict={}):
         ans=latex2sympy(strans,local_dict)
     except:
         return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
+    if not ans.is_expr:
+        return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
     if not equal(ans,sol):
         return (0,"NotEqual","")
     #    test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
