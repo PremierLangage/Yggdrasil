@@ -8,7 +8,7 @@ input.config = keyboards_JSON
 
 z1=rand_complex_int(5)
 z2=rand_complex_int(5)
-sol(z1*z2).expand()
+sol=(z1*z2).expand()
 ==
 
 input =: MathInput
