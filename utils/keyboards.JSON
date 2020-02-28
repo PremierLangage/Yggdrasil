@@ -35,7 +35,7 @@
       }
     },
     "customVirtualKeyboardLayers": {
-      'json': {
+      "json": {
               "styles": "div.ML__keyboard div.json-backdrop > div > div > ul> li.keycap.btn{color:#fff;background:#37454F;border: 1px solid #37454F}",
               "backdrop": "json-backdrop",
               "container": "json-container",
