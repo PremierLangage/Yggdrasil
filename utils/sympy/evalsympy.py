@@ -5,7 +5,7 @@ from latex2sympy import *
 
 def equal(a, b, modulo=0):
     """
-    Check if two expressions are equal after simplification.
+    Check if two SymPy expressions are equal.
     """
     if a==b:
         return True
