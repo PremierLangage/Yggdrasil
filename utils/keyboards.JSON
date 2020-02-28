@@ -138,7 +138,7 @@
                           "insert": "\\pi ",
                           "key": "",
                           "command": "",
-                          "label": "<aside class='above tex'><i>x</i>&thinsp;!</aside> <aside class='below'>3.14</aside>"                   "<span>π</span>" +
+                          "label": "<span>π</span>"
                       },
                       {
                           "class": "keycap btn",
