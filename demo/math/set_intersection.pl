@@ -20,7 +20,7 @@ input =: MathInput
 
 form ==
 On considère les ensembles suivants :
-$$ A=  {{A.latex |markdown }}, B={{B.latex}}.$$
+$$ A={{A.latex}},\ B={{B.latex}}.$$
 Déterminer $! A \cap B !$.
 
 {{input|component}}
