@@ -61,7 +61,6 @@
                       {
                           "class": "keycap",
                           "label": "italic",
-                          command: ['apply-style', {'shape': 'it'}]
                       },
                       {
                           "class": "separator w20",
