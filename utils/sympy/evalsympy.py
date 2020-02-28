@@ -334,7 +334,7 @@ def eval_complex(strans,sol,imaginary_unit="i",form="",authorized_func={}):
         ans=latex2sympy(strans,local_dict)
     except:
         return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
-    if not ans.is_expr:
+    if not isinstance(ans,sp.Expr):
         return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
     if not ans.is_complex:
         return (-1,"NotCplx","Votre réponse n'est pas un nombre complexe.")
