@@ -1,4 +1,4 @@
-extends = /mmodel/math.pl
+extends = /model/math.pl
 
 title = Tracer une droite
 
