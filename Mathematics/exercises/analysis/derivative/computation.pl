@@ -13,12 +13,12 @@ n=randint(1,4)
 g=randitem([sin(x),cos(x),exp(x),ln(x)])
 h=randitem([x,x**2])
 f=g*h
-latexf=latex(f)
 sol=diff(f,x)
 ==
 
 text ==
-Calculer la dérivée
+Calculer la dérivée de la fonction
+$$ f : x \mapsto {{f.tex}} .$$
 ==
 
 input =: MathInput
