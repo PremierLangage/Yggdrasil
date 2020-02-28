@@ -18,6 +18,11 @@
         "tooltip": "Complexes",
         "layer": "complexes"
       },
+      "json": {
+        "label": "Complexes",
+        "tooltip": "Complexes",
+        "layer": "json"
+      },
       "relations": {
         "label": "Relations",
         "tooltip": "Relations",
