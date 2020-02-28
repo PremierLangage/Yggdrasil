@@ -1,5 +1,4 @@
 {
-            onContentDidChange: updateOutput,
             virtualKeyboardMode: 'manual',
             customVirtualKeyboardLayers: {
                 'json': {
