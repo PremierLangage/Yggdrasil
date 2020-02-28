@@ -134,12 +134,6 @@ def is_coeff_exponent(expr,x):
 
 # Tests
 
-def is_expr(expr):
-    """
-    Check if 
-    """
-    return isinstance(expr,sp.Expr)
-
 def is_real_or_inf(expr):
     """
     Check if
@@ -371,7 +365,7 @@ def eval_poly(strans,sol,x,domain="RR",imaginary_unit="i",form="",authorized_fun
         ans=latex2sympy(strans,local_dict)
     except:
         return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
-    if not ans.is_expr:
+    if not isinstance(ans,sp.Expr):
         return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
     if not ans.is_polynomial(x):
         return (-1,"NotPoly","Votre réponse n'est pas un polynôme.")
@@ -380,10 +374,10 @@ def eval_poly(strans,sol,x,domain="RR",imaginary_unit="i",form="",authorized_fun
     if not equal(ans,sol):
         return (0,"NotEqual","")
     if form == "expanded":
-        if is_poly_expanded(expr,x):
+        if not is_poly_expanded(expr,x):
             return (-1,"NotExpanded","Votre réponse n'est pas un polynôme développé.")
     elif form == "factorized":
-        if is_poly_factorized(expr,x,domain):
+        if not is_poly_factorized(expr,x,domain):
             return (-1,"NotFactorized","Votre réponse n'est pas un polynôme factorisé.")
     return (100,"Success","")
 
