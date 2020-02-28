@@ -20,18 +20,14 @@ input =: MathInput
 
 form ==
 On considère les ensembles suivants :
-$$ A=  {{A.latex}}, B={{B.latex}}.$$
+$$ A=  {{A.latex |markdown }}, B={{B.latex}}.$$
 Déterminer $! A \cap B !$.
 
 {{input|component}}
 ==
 
 evaluator ==
-score,_,feedback2=eval_set(input.value,sol)
-==
-
-feedback ==
-\{ \}
+score,_,feedback=eval_set(input.value,sol)
 ==
 
 solution ==
