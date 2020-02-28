@@ -331,6 +331,7 @@ def eval_complex(strans,sol,imaginary_unit="i",form="",authorized_func={}):
     try:
         ans=latex2sympy(strans,local_dict)
     except:
+    if not ans.is_expr:
         return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
     if not ans.is_complex:
         return (-1,"NotCplx","Votre réponse n'est pas un nombre complexe.")
@@ -366,6 +367,8 @@ def eval_poly(strans,sol,x,domain="RR",imaginary_unit="i",form="",authorized_fun
     try:
         ans=latex2sympy(strans,local_dict)
     except:
+        return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
+    if not ans.is_expr:
         return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
     if not ans.is_polynomial(x):
         return (-1,"NotPoly","Votre réponse n'est pas un polynôme.")
