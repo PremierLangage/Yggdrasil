@@ -35,6 +35,138 @@
       }
     },
     "customVirtualKeyboardLayers": {
+      'json': {
+              "styles": "div.ML__keyboard div.json-backdrop > div > div > ul> li.keycap.btn{color:#fff;background:#37454F;border: 1px solid #37454F}",
+              "backdrop": "json-backdrop",
+              "container": "json-container",
+              "rows": [
+                  [
+                      {
+                          "class": "keycap",
+                          "label": "7",
+                      },
+                      {
+                          "class": "keycap",
+                          "label": "8"
+                      },
+                      {
+                          "class": "keycap",
+                          "label": "9"
+                      },
+                      {
+                          "class": "keycap btn",
+                          "insert": "\\frac{#0}{#?}",
+                          "label": "&divide;"
+                      },
+                      {
+                          "class": "keycap",
+                          "label": "italic",
+                          command: ['apply-style', {'shape': 'it'}]
+                      },
+                      {
+                          "class": "separator w20",
+                      }
+                  ],
+                  [
+                      {
+                          "class": "keycap",
+                          "label": "4"
+                      },
+                      {
+                          "class": "keycap",
+                          "label": "5"
+                      },
+                      {
+                          "class": "keycap",
+                          "label": "6"
+                      },
+                      {
+                          "class": "keycap btn",
+                          "insert": "\\times ",
+                          "latex": "\\times "
+                      },
+                      {
+                          "class": "keycap",
+                          "label": "bold",
+                          command: ['apply-style', {'series': 'b'}]
+                      },
+                      {
+                          "class": "separator w20",
+                      }
+                  ],
+                  [
+                      {
+                          "class": "keycap",
+                          "label": "1"
+                      },
+                      {
+                          "class": "keycap",
+                          "label": "2"
+                      },
+                      {
+                          "class": "keycap",
+                          "label": "3"
+                      },
+                      {
+                          "class": "keycap btn",
+                          "label": "-"
+                      },
+                      {
+                          "class": "separator w15",
+                      },
+                      {
+                          "class": "action font-glyph bottom right w15",
+                          "command": "deletePreviousChar",
+                          "label": "&#x232b;"
+                      }
+                  ],
+                  [
+                      {
+                          "class": "keycap",
+                          "insert": "",
+                          "key": "0",
+                          "command": "",
+                          "label": "0"
+                      },
+                      {
+                          "class": "keycap",
+                          "insert": "",
+                          "key": "",
+                          "command": "",
+                          "label": "."
+                      },
+                      {
+                          "class": "keycap",
+                          "insert": "\\pi ",
+                          "key": "",
+                          "command": "",
+                          "label": "<aside class='above tex'>" +
+                              "<i>x</i>&thinsp;!</aside>" +
+                              "<span>π</span>" +
+                              "<aside class='below'>3.14</aside>"
+                      },
+                      {
+                          "class": "keycap btn",
+                          "label": "+"
+                      },
+                      {
+                          "class": "action",
+                          "command": "moveToPreviousChar",
+                          "label": "<svg><use xlink:href='#svg-arrow-left' /></svg>"
+                      },
+                      {
+                          "class": "action",
+                          "command": "moveToNextChar",
+                          "label": "<svg><use xlink:href='#svg-arrow-right' /></svg>"
+                      },
+                      {
+                          "class": "action",
+                          "command": "moveToNextPlaceholder",
+                          "label": "<svg><use xlink:href='#svg-tab' /></svg>"
+                      }
+                  ]
+              ]
+          },
       "elementary": {
         "rows": [
           [
@@ -839,6 +971,7 @@
       }
     }
   }
+
 
 
 
