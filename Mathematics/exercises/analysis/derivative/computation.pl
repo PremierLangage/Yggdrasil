@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathinput.pl
+extends = /model/math.pl
 
 title = Calcul de dérivée
 
@@ -26,6 +26,7 @@ $$ $$
 evaluator==
 score,_,feedback=ans_limit(input.value,sol)
 ==
+
 
 
 
