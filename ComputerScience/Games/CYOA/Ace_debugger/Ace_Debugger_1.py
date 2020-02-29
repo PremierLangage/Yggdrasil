@@ -403,7 +403,7 @@
         ,
 
         [
-            ['14', "Il y a une erreur dans dans les macros préprocesseur !"],
+            ['14', "Il y a une erreur dans les macros préprocesseur !"],
 
             ['15', "Il y a une erreur est dans la fonction d'affichage !"],
 
@@ -414,6 +414,8 @@
 '12':
     [
         '',
+
+        "<p><b>Yves :</b> Mon tri à bulles, c'est celui du cours... Elle est où l'erreur ? </p> <br />"
 
         "<pre>"
         "void tribulle(int* T, int taille){ <br />"
@@ -433,7 +435,11 @@
         "</pre>",
 
         [
-            
+            ['14', "Il y a une erreur dans "],
+
+            ['15', "Il y a une erreur est dans la fonction d'affichage !"],
+
+            ['16', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait..."]
         ]
     ]
 
