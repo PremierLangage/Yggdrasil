@@ -158,7 +158,7 @@
 
 '5' :
     [
-        'audace+=1;confiance-=2',
+        'audace+=1;confiance-=2;disallow.append("5")',
 
         "<p><b>N.B. :</b> Non mais le principal, c'est que ça fonctionne bien de "
         "temps en temps. Si vous avez compris et que le tri est correct "
