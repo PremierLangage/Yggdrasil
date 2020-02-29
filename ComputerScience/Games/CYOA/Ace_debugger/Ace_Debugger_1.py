@@ -197,7 +197,7 @@
 
 '6' :
     [
-        '',
+        'disallow.append("6")',
 
         "<p>L'élève acquiesce et se met tout de suite à la tâche. </p> <br />"
 
