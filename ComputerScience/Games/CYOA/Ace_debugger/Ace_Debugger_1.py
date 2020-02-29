@@ -32,7 +32,7 @@
 
 '1' :
     [
-        'audace=0;panache=0;confiance=0',
+        'audace=0;panache=0;confiance=0,disallow=[]',
      
         "<center><img src={{ img1 }} alt='IMAGE_Ace_Debugger_logo' style=\"width:400px;\" /></center>"
 
@@ -516,6 +516,7 @@
     ]
 
 }
+
 
 
 
