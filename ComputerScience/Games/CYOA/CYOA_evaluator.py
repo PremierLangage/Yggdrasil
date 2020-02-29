@@ -24,6 +24,11 @@ if __name__ == "__main__":
     context = get_context()
     answers = get_answers()
 
+    # Detect if the user properly fill the form
+    if (not isinstance(context['group'].selection, str)) or (len == 0):
+        context['text'] = "<span color='red'>Veuillez selectionner une des alternatives avant de valider!!</span><br /> " + context['text']
+        output(-1, " ", context)
+
     # Apply action inside the link
     for step_to in context['game_data'][context['current_step']][2]:
         if step_to[0] == context['group'].selection:
@@ -51,4 +56,5 @@ if __name__ == "__main__":
         output(grade, " ", context)
 
     output(-1, " ", context)
+
 
