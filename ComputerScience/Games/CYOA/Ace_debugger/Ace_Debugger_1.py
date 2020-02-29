@@ -479,7 +479,7 @@
 
 '14':
     [
-        '',
+        'disallow.append("4");confiance-=1',
         
         "<pre>"
         "#include &lt;stdio.h&gt; <br />"
