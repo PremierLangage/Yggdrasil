@@ -476,6 +476,45 @@
             ['22', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait..."]
         ]
     ]
+
+'14':
+    [
+        '',
+        
+        "<pre>"
+        "#include &lt;stdio.h&gt; <br />"
+        "#include &lt;stdlib.h&gt; <br />"
+        "#include &lt;time.h&gt; <br />"
+        "#define TAILLE 20 <br />"
+        "#define MAX 100 <br /> <br />"
+        "</pre>"
+        
+        "<p><b>Yves :</b> Alors j'utilise les entrées/sorties standards pour les affichages. J'utilise "
+        "la libraire standard pour générer aléatoirement les nombres. La librairie time, c'est pour "
+        " initialiser la graine de génération ou je ne sais quoi, mais c'était marqué dans l'énoncé."
+        " </p> <br />"
+         
+         "<p><b>Yves :</b> Les deux autres directives sont justes des déclarations de constantes. "
+         "Ça ne peut pas bugger de juste définir des constantes nan ?</p> <br />"
+         
+         "<p><b>N.B. :</b> Effectivement, il ne peut y avoir d'erreur dans tout cela...</p> <br />"
+         ,
+
+         [
+            ['4', "Rappeler à Yves ce que sont les garbages values."],
+
+            ['5', "Expliquer que si ça marche souvent, et bien ça suffit."],
+
+            ['6', "Demander à Yves de recompiler devant vos yeux ébahis avec les options Wall et ansi."],
+
+            ['7', "Demander à voir le début du fichier de code avec les macros et la fonction d'affichage."],
+
+            ['8', "Demander à voir la fonction opérant le tri à bulles."],
+            
+            ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
+         ]
+    ]
+
 }
 
 
