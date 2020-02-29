@@ -54,7 +54,8 @@ if __name__ == "__main__":
     for step_to in context['game_data'][context['current_step']][2]:
         index_step_to = step_to[0]
         text_step_to = step_to[1]
-        context['group'].items.append({ "id" : index_step_to, "content" : text_step_to })
+        if index_step_to not in context['disallow']:
+            context['group'].items.append({ "id" : index_step_to, "content" : text_step_to })
 
     if context['group'].items == []:
         context['is_ended'] = True
