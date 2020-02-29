@@ -403,7 +403,7 @@
         ,
 
         [
-            ['14', "Il y a une erreur dans les macros préprocesseur !", 'confiance-=1'],
+            ['14', "Il y a une erreur dans les macros préprocesseur !"],
 
             ['15', "Il y a une erreur est dans la fonction d'affichage !", 'confiance-=1'],
 
