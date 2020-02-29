@@ -471,6 +471,7 @@
         [
             ['20', "La mémoire de votre tableau <code>tab</code> n'est pas géré correctement.", 'confiance-=1'],
 
+            ['21', "Votre tableau <code>tab</code> n'est pas initialisé correctement.", 'confiance-=1'],
 
             ['22', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait..."]
         ]
