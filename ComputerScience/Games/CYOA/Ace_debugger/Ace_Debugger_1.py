@@ -441,7 +441,7 @@
 
             ['19', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait...", 'confiance-=1']
         ]
-    ]
+    ],
 
 '13':
     [
