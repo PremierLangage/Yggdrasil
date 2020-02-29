@@ -409,8 +409,36 @@
 
             ['16', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait..."]
         ]
+    ],
+
+'12':
+    [
+        '',
+
+        "<pre>"
+        "void tribulle(int* T, int taille){ <br />"
+        "  int i,j; <br />"
+        "  int tmp; <br /><br />"
+        
+        "for(i=0;i&lt;taille;i++){<br />"
+        "  for(j=0;j&lt;taille-i;j++){<br />"
+        "          if(T[j+1] &lt; T[j]){<br />"
+	    "      tmp = T[j];<br />"
+	    "      T[j] = T[j+1];<br />"
+	    "      T[j+1] = tmp;<br />"
+        "          }<br />"
+        "  }<br />"
+        " }<br />"
+        "}"
+        "</pre>",
+
+        [
+            
+        ]
     ]
+
 }
+
 
 
 
