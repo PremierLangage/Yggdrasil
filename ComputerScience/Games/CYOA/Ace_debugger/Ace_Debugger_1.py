@@ -403,9 +403,9 @@
         ,
 
         [
-            ['14', "Il y a une erreur dans les macros préprocesseur !"],
+            ['14', "Il y a une erreur dans les macros préprocesseur !", 'confiance-=1'],
 
-            ['15', "Il y a une erreur est dans la fonction d'affichage !"],
+            ['15', "Il y a une erreur est dans la fonction d'affichage !", 'confiance-=1'],
 
             ['16', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait..."]
         ]
@@ -435,11 +435,11 @@
         "</pre>",
 
         [
-            ['17', "Il y a une erreur dans la partie qui échange les deux valeurs."],
+            ['17', "Il y a une erreur dans la partie qui échange les deux valeurs.", 'confiance-=1'],
 
             ['18', "Il y a une erreur dans les bornes des boucles."],
 
-            ['19', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait...", ']
+            ['19', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait...", 'confiance-=1']
         ]
     ]
 
