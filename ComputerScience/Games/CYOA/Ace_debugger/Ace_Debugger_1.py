@@ -126,7 +126,7 @@
 
 '4' :
     [
-        '',
+        'disallow.append("4")',
 
         "<p><b>N.B. :</b> Toute variable C possède 4 caractéristiques : un "
         "identificateur, un type, un emplacement mémoire et de ce fait "
