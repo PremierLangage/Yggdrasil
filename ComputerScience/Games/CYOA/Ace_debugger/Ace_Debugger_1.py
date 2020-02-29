@@ -443,6 +443,38 @@
         ]
     ]
 
+'13':
+    [
+        '',
+
+        "<p><b>Yves :</b> Voici mon main monsieur. </p> <br />"
+
+        "<pre>"
+        "int main(){ <br />"
+        "  int tab[TAILLE]; <br />"
+        "  int i; <br /><br />"
+        
+        "  srand(time(NULL)); /* Le prof a dit de coller ca... */ <br />"
+        
+        "  for (i=0 ; i&lt;TAILLE;i++) <br />"
+        "    tab[i]=rand()%MAX; <br /><br />"
+
+        "affichetab(tab, TAILLE); <br />"
+        "  tribulle(tab, TAILLE); <br />"
+        "affichetab(tab, TAILLE); <br /><br />"
+        
+        "  return 0; <br />"
+        "}"
+        "</pre>"
+        ,
+
+        [
+            ['20', "La mémoire de votre tableau <code>tab</code> n'est pas géré correctement.", 'confiance-=1'],
+
+
+            ['22', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait..."]
+        ]
+    ]
 }
 
 
