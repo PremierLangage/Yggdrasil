@@ -24,6 +24,11 @@ if __name__ == "__main__":
     context = get_context()
     answers = get_answers()
 
+    # Detect if the game is ended...
+    if ('is_ended' in context) and (context['is_ended']):
+        context['text'] = "<span style='color:red'><b>C'est fini, actualiser la page pour recommencer une nouvelle partie.</b></span><br />" + context['text']
+        output(-1, " ", context)
+
     # Detect if the user properly fill the form
     if (not isinstance(context['group'].selection, str)) or (len(context['group'].selection) == 0):
         context['text'] += "<span style='color:red'><b>Veuillez selectionner une des alternatives avant de valider !!</b></span><br /> "
@@ -51,10 +56,14 @@ if __name__ == "__main__":
         text_step_to = step_to[1]
         context['group'].items.append({ "id" : index_step_to, "content" : text_step_to })
 
+    if context['group'].items == []:
+        context['is_ended'] = True
+
     if context['grade'] is not None:
         grade = int(context['grade'])
         output(grade, " ", context)
 
     output(-1, " ", context)
+
 
 
