@@ -25,7 +25,7 @@ if __name__ == "__main__":
     answers = get_answers()
 
     # Detect if the user properly fill the form
-    if (not isinstance(context['group'].selection, str)) or (len == 0):
+    if (not isinstance(context['group'].selection, str)) or (len(context['group'].selection) == 0):
         context['text'] = "<span color='red'>Veuillez selectionner une des alternatives avant de valider!!</span><br /> " + context['text']
         output(-1, " ", context)
 
