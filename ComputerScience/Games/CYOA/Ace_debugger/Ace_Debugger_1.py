@@ -435,11 +435,11 @@
         "</pre>",
 
         [
-            ['14', "Il y a une erreur dans "],
+            ['17', "Il y a une erreur dans la partie qui échange les deux valeurs."],
 
-            ['15', "Il y a une erreur est dans la fonction d'affichage !"],
+            ['18', "Il y a une erreur dans les bornes des boucles."],
 
-            ['16', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait..."]
+            ['19', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait...", ']
         ]
     ]
 
