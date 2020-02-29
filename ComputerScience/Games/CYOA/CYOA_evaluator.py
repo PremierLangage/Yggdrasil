@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
     # Detect if the user properly fill the form
     if (not isinstance(context['group'].selection, str)) or (len(context['group'].selection) == 0):
-        context['text'] = "<span color='red'><b>Veuillez selectionner une des alternatives avant de valider !!</b></span><br /> " + context['text']
+        context['text'] += "<span style='color:red'><b>Veuillez selectionner une des alternatives avant de valider !!</b></span><br /> "
         output(-1, " ", context)
 
     # Apply action inside the link
