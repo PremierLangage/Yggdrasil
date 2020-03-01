@@ -439,7 +439,7 @@
 
             ['18', "Il y a une erreur dans les bornes des boucles."],
 
-            ['19', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait...", 'confiance-=1']
+            ['16', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait...", 'confiance-=1']
         ]
     ],
 
