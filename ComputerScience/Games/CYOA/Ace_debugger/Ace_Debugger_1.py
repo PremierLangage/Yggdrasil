@@ -511,6 +511,8 @@
 
             ['8', "Demander à voir la fonction opérant le tri à bulles."],
             
+            ['9', "Demander à voir le main du programme d'Yves."],
+
             ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
          ]
     ],
@@ -547,6 +549,8 @@
 
             ['8', "Demander à voir la fonction opérant le tri à bulles."],
             
+            ['9', "Demander à voir le main du programme d'Yves."],
+
             ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
         ]
     ],
@@ -573,6 +577,8 @@
             ['7', "Demander à voir le début du fichier de code avec les macros et la fonction d'affichage."],
 
             ['8', "Demander à voir la fonction opérant le tri à bulles."],
+
+            ['9', "Demander à voir le main du programme d'Yves."],
             
             ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
         ]
@@ -580,14 +586,35 @@
 
 '17':
     [
-        '',
+        'disallow.append("17");confiance-=1',
 
-        "Il y a une erreur dans la partie qui échange les deux valeurs.", 'confiance-=1'
+        "<pre>"
+        "          if(T[j+1] &lt; T[j]){<br />"
+	    "      tmp = T[j];<br />"
+	    "      T[j] = T[j+1];<br />"
+	    "      T[j+1] = tmp;<br />"
+        "          }<br />"
+        "</pre>"
 
-        "",
+        "<p><b>Yves :</b> Une variable temporaire pour stockée la première des deux valeurs écrasées. "
+        " C'est toujours comme cela qu'on fait...</p> <br />"
+
+        "<p><b>N.B. :</b> En effet, je vois le mal là où il n'est pas...</p> <br />",
 
         [
+            ['4', "Rappeler à Yves ce que sont les garbages values."],
 
+            ['5', "Expliquer que si ça marche souvent, et bien ça suffit."],
+
+            ['6', "Demander à Yves de recompiler devant vos yeux ébahis avec les options Wall et ansi."],
+
+            ['7', "Demander à voir le début du fichier de code avec les macros et la fonction d'affichage."],
+
+            ['8', "Demander à voir la fonction opérant le tri à bulles."],
+
+            ['9', "Demander à voir le main du programme d'Yves."],
+            
+            ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
         ]
     ],
 }
