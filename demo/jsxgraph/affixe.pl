@@ -17,7 +17,6 @@ before ==
 a=randint(-5,5,[0])
 b=randint(-5,5,[0])
 z=a+b*sp.I
-z_tex=latex(z)
 ==
 
 form ==
@@ -49,7 +48,7 @@ board.on('down', down)
 
 
 text ==
-Placer le point $% M %$ d'affixe $%{{ z_tex }}%$ dans le plan ci-dessous.
+Placer le point $% M %$ d'affixe $%{{ z.latex }}%$ dans le plan ci-dessous.
 ==
 
 script_solution ==
