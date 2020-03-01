@@ -20,7 +20,7 @@ z=a+b*sp.I
 z_tex=latex(z)
 ==
 
-text ==
+form ==
 {{ jxg | component }}
 ==
 
