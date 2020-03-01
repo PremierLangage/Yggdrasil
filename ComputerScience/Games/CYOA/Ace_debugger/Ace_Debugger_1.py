@@ -435,7 +435,7 @@
         "</pre>",
 
         [
-            ['17', "Il y a une erreur dans la partie qui échange les deux valeurs.", 'confiance-=1'],
+            ['17', "Il y a une erreur dans la partie qui échange les deux valeurs."],
 
             ['18', "Il y a une erreur dans les bornes des boucles."],
 
@@ -473,7 +473,7 @@
 
             ['21', "Votre tableau <code>tab</code> n'est pas initialisé correctement.", 'confiance-=1'],
 
-            ['22', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait..."]
+            ['16', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait..."]
         ]
     ],
 
