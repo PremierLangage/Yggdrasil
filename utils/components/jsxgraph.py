@@ -12,5 +12,5 @@ class CustomJSXGraph(Component):
         """
         Load script and render it.
         """
-        self.script = Template(script).render(dic)
+        self.script = Template(script).render(globals())
 
