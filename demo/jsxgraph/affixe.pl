@@ -17,6 +17,7 @@ before ==
 a=randint(-5,5,[0])
 b=randint(-5,5,[0])
 z=a+b*I
+jxg.loadscript(script)
 ==
 
 form ==
@@ -24,7 +25,7 @@ form ==
 ==
 
 
-jxg.script ==
+script ==
 board.create('grid',[],{gridX:1,gridY:1});
 board.create('axis',[[0,0],[1,0]],{name:'Re',withLabel:true,label:{position:'urt',offset:[-5,10]},ticks:{visible: false}});
 board.create('axis',[[0,0],[0,1]],{name:'Im',withLabel:true,label:{position:'urt',offset:[10,0]},ticks:{visible: false}});
