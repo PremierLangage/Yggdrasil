@@ -1,4 +1,4 @@
-extends = math.pl
+extends = /model/math.pl
 
 title = Affixe d'un nombre complexe
 
