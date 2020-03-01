@@ -550,6 +550,33 @@
             ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
         ]
     ],
+
+'16':
+    [
+        '',
+
+        "<p><b>Yves :</b> Vous avez vu, il est pénible mon bug. J'ai tout fait comme il faut.</p> <br />"
+
+        "<p><b>N.B. :</b> Aussi cachée soit-elle, il y a forcement une erreur qui s'est glissée "
+        "quelque part. Pas d'inquiétude, on va finir pas la trouver.</p> <br />"
+
+        "<p><b>Yves (rêvant):</b> Mais quelle sérénitée dont fait preuve le Ace Debugger !</p> <br />"
+        ,
+
+        [
+            ['4', "Rappeler à Yves ce que sont les garbages values."],
+
+            ['5', "Expliquer que si ça marche souvent, et bien ça suffit."],
+
+            ['6', "Demander à Yves de recompiler devant vos yeux ébahis avec les options Wall et ansi."],
+
+            ['7', "Demander à voir le début du fichier de code avec les macros et la fonction d'affichage."],
+
+            ['8', "Demander à voir la fonction opérant le tri à bulles."],
+            
+            ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
+        ]
+    ]
 }
 
 
