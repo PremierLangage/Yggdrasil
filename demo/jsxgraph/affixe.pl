@@ -75,7 +75,7 @@ if hypot(x-a, y-b)<0.1:
 else:
      score=0
 
-jxg.loadscript(script_solution)
+jxg.loadscript(script_solution,globals())
 
 feedback=""
 ==
