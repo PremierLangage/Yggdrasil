@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathjsxgraph.pl
+extends = math.pl
 
 title = Affixe d'un nombre complexe
 
