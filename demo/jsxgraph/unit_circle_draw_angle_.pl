@@ -19,7 +19,7 @@ valangle=float(angle.evalf())
 ==
 
 text ==
-Tracer la droite d'équation $% y = {{latexf}}%$ dans le plan ci-dessous.
+Placer sur le cercle unité ci-dessous le point M de sorte que l'angle $% (\overrightarrow{OA},\overrightarrow{OM}) %$ ait une mesure égale à $% {{angle.latex}} %$. 
 ==
 
 form ==
