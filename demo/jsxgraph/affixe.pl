@@ -16,7 +16,7 @@ jxg.attributes %=
 before ==
 a=randint(-5,5,[0])
 b=randint(-5,5,[0])
-z=a+b*sp.I
+z=a+b*I
 ==
 
 form ==
