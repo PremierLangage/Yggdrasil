@@ -4,7 +4,7 @@ title = Affixe d'un nombre complexe
 
 jxg =: MathDrawer
 # Les deux lignes suivantes sont temporaires.
-@ /utils/components/jscgraph.py [customjsxgraph.py]
+@ /utils/components/jsxgraph.py [customjsxgraph.py]
 radio.decorator = CustomJSXGraph
 
 jxg.attributes %=
