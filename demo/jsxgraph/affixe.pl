@@ -32,31 +32,13 @@ form ==
 
 
 script ==
-board.create('grid',[],{gridX:1,gridY:1});
-board.create('axis',[[0,0],[1,0]],{name:'Re',withLabel:true,label:{position:'urt',offset:[-5,10]},ticks:{visible: false}});
-board.create('axis',[[0,0],[0,1]],{name:'Im',withLabel:true,label:{position:'urt',offset:[10,0]},ticks:{visible: false}});
-const M = board.create('point',[0, 0],{size:2,name:'M',color:'red'});
-
-function getMouseCoords(e) {
-    let cPos = board.getCoordsTopLeftCorner(e);
-    let absPos = JXG.getPosition(e);
-    let dx = absPos[0]-cPos[0];
-    let dy = absPos[1]-cPos[1];
-    return new JXG.Coords(JXG.COORDS_BY_SCREEN, [dx, dy], board);
-}
-
-function down(e) {
-    let coords = getMouseCoords(e);
-    M.setPosition(JXG.COORDS_BY_USER,[coords.usrCoords[1], coords.usrCoords[2]]);
-}
-
-board.on('down', down)
+var A = board.create('point',[1,1],{size:2,name:'A',color:'red',withLabel:false});
+var B = board.create('point',[-1,-1],{size:2,name:'B',color:'red',withLabel:false});
+var line = board.create('line',[A,B]);
 ==
 
-
 script_solution ==
-board.create('point',[{{a}}, {{b}}],{size:2,name:'M',color:'green'});
-board.create('point',[{{x}}, {{y}}],{size:2,name:'',color:'red'});
+var linesol = board.create('line',[[0,{{b}}],[1,{{a}}+{{b}}]],{color:'green'});
 ==
 
 evaluator ==
