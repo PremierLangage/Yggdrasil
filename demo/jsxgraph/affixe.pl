@@ -17,6 +17,10 @@ z=a+b*sp.I
 z_tex=latex(z)
 ==
 
+text ==
+{{ jxg | component }}
+==
+
 
 drawer.script ==
 board.create('grid',[],{gridX:1,gridY:1});
