@@ -576,7 +576,20 @@
             
             ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
         ]
-    ]
+    ],
+
+'17':
+    [
+        '',
+
+        "Il y a une erreur dans la partie qui échange les deux valeurs.", 'confiance-=1'
+
+        "",
+
+        [
+
+        ]
+    ],
 }
 
 
