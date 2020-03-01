@@ -8,9 +8,9 @@ class CustomJSXGraph(Component):
         self.decorator = 'CustomJSXGraph'
         super().__init__(**kwargs)
 
-    def loadscript(self, script, dic=globals()):
+    def loadscript(self, script, dic=locals()):
         """
         Load script and render it.
         """
-        self.script = Template(script).render(globals())
+        self.script = Template(script).render(dic)
 
