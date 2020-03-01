@@ -14,7 +14,7 @@
 
 author=Nicolas Borie
 
-title=Choose Your Own Adventure : Problème d'ordonancement
+title=1 petit barque pour 4
 tag=ordonancement|jeu|cyoa
 
 template=/ComputerScience/Games/CYOA/CYOA_template.pl
@@ -22,5 +22,6 @@ template=/ComputerScience/Games/CYOA/CYOA_template.pl
 @ ordo_beatle.py
 
 game_data_file = ordo_beatle.py
+
 
 
