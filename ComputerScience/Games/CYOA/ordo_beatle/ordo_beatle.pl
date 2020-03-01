@@ -14,7 +14,7 @@
 
 author=Nicolas Borie
 
-title=1 petit barque pour 4
+title=1 petite barque pour 4
 tag=ordonancement|jeu|cyoa
 
 template=/ComputerScience/Games/CYOA/CYOA_template.pl
