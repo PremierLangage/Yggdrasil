@@ -14,10 +14,16 @@ jxg.attributes %=
 ==
 
 before ==
-a=randint(-5,5,[0])
-b=randint(-5,5,[0])
-z=a+b*I
-jxg.loadscript(script)
+a=randint(-5,5)
+b=randint(-5,5)
+from math import atan2,pi
+theta=abs(atan2(a,1))
+x=symbols('x')
+latexf=latex(a*x+b)
+==
+
+text ==
+Tracer la droite d'équation $% y = {{latexf}}%$ dans le plan ci-dessous.
 ==
 
 form ==
@@ -47,10 +53,6 @@ function down(e) {
 board.on('down', down)
 ==
 
-
-text ==
-Placer le point $% M %$ d'affixe $%{{ z.latex }}%$ dans le plan ci-dessous.
-==
 
 script_solution ==
 board.create('point',[{{a}}, {{b}}],{size:2,name:'M',color:'green'});
