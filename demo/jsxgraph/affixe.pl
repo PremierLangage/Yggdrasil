@@ -53,7 +53,7 @@ Placer le point $% M %$ d'affixe $%{{ z.latex }}%$ dans le plan ci-dessous.
 ==
 
 script_solution ==
-//board.create('point',[{{a}}, {{b}}],{size:2,name:'M',color:'green'});
+board.create('point',[{{a}}, {{b}}],{size:2,name:'M',color:'green'});
 //board.create('point',[{{x}}, {{y}}],{size:2,name:'',color:'red'});
 board.create('point',[3,3],{size:2,name:'',color:'red'});
 ==
