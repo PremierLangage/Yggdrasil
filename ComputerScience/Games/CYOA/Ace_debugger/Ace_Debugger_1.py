@@ -405,7 +405,7 @@
         [
             ['14', "Il y a une erreur dans les macros préprocesseur !"],
 
-            ['15', "Il y a une erreur est dans la fonction d'affichage !", 'confiance-=1'],
+            ['15', "Il y a une erreur est dans la fonction d'affichage !"],
 
             ['16', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait..."]
         ]
@@ -513,8 +513,43 @@
             
             ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
          ]
-    ]
+    ],
 
+'15':
+    [ 
+        'disallow.append("15");confiance-=1',
+        
+        "<pre>"
+        "void affichetab(int tab[], int taille){ <br />"
+        "  int i; <br /><br />"
+
+        "  for(i=0 ;i&lt;taille;i++) <br />"
+        "    printf(\"%d \", tab[i]); <br />"
+        " putchar('\\n'); <br />"
+        "} "
+        "</pre>"
+
+        "<p><b>Yves :</b> C'est pas très joli car je ne mets pas de séparateur, ni parenthèse ou "
+        "crochet. Mais je ne vois vraiment pas de problème dans ma fonction d'affichage. C'est "
+        "juste un parcours de l'index zéro à l'index taille moins un inclus.</p> <br />"
+
+        "<p><b>N.B. :</b> Effectivement, il n'y a pas d'erreur dans cela...</p> <br />"
+        ,
+
+        [
+            ['4', "Rappeler à Yves ce que sont les garbages values."],
+
+            ['5', "Expliquer que si ça marche souvent, et bien ça suffit."],
+
+            ['6', "Demander à Yves de recompiler devant vos yeux ébahis avec les options Wall et ansi."],
+
+            ['7', "Demander à voir le début du fichier de code avec les macros et la fonction d'affichage."],
+
+            ['8', "Demander à voir la fonction opérant le tri à bulles."],
+            
+            ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
+        ]
+    ],
 }
 
 
