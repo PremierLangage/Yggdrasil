@@ -62,9 +62,9 @@ feedback=""
 extracss==
 <style>
 .math-drawer-component {
-    max-width:300px;
+    max-width:200px;
     width:90vw;
-    max-height:300px;
+    max-height:200px;
     height:90vw;
     margin: 0 auto;
 }
