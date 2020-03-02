@@ -16,6 +16,8 @@ jxg.attributes %=
 before ==
 angle=randitem([pi/4,pi/2,3*pi/4,pi,5*pi/4,3*pi/2,7*pi/4])
 valangle=float(angle.evalf())
+xsol = float(sin(valangle))
+ysol = float(cos(valangle))
 jxg.loadscript(script)
 ==
 
