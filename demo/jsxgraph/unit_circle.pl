@@ -17,7 +17,7 @@ before ==
 angle=randitem([pi/4,pi/2,3*pi/4,pi,5*pi/4,3*pi/2,7*pi/4])
 valangle=float(angle.evalf())
 b=0.5
-
+jxg.loadscript(script)
 ==
 
 text ==
@@ -29,7 +29,7 @@ form ==
 ==
 
 
-jxg.script ==
+script ==
 board.setBoundingBox([-1.25,1.25,1.25,-1.25]);
 var grid = board.create('grid',[],{gridX:0.25,gridY:0.25});
 var Ox = board.create('axis',[[0,0],[1,0]],{ticks:{visible:false}});
@@ -63,4 +63,5 @@ extracss==
 }
 </style>
 ==
+
 
