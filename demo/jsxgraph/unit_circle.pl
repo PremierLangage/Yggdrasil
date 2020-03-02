@@ -53,8 +53,9 @@ from math import atan2,pi
 if abs((atan2(y,x)-angle)%(2*pi))<0.1:
     score=100
 else:
-    jxg.addscript(script2,globals())
+    jxg.loadscript(script2,globals())
     score=0
+jxg.disabled = True
 feedback=""
 ==
 
