@@ -11,6 +11,8 @@ before ==
 import random as rd
 from customcheckbox import Thing
 
+obj = Thing('Awesome')
+
 # Création du composant avec le constructeur
 # from customcheckbox import CustomCheckbox
 # checkbox = CustomCheckbox(content = ["a","b"])
