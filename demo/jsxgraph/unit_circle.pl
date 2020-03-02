@@ -51,9 +51,10 @@ x=jxg.points['M']['x']
 y=jxg.points['M']['y']
 from math import atan2,pi
 if abs((atan2(y,x)-angle)%(2*pi))<0.1:
-     score=100
+    score=100
 else:
-     score=0
+    jxg.addcript(script2,globals())
+    score=0
 feedback=""
 ==
 
