@@ -38,6 +38,6 @@ form ==
 
 evaluator ==
 grade = checkbox.eval(grading="CorrectAnswers",display=True,disabled=False)
-feedback=str(globals().items())
+grade =(100,str(globals().items()))
 ==
 
