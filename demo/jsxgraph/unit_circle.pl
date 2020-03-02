@@ -50,8 +50,6 @@ else:
 feedback=""
 ==
 
-
-
 extracss==
 <style>
 .math-drawer-component {
