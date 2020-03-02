@@ -9,6 +9,7 @@ checkbox.decorator = CustomCheckbox
 
 before ==
 import random as rd
+from customcheckbox import Thing
 
 # Création du composant avec le constructeur
 # from customcheckbox import CustomCheckbox
@@ -36,3 +37,4 @@ form ==
 evaluator ==
 grade = checkbox.eval(grading="CorrectAnswers",display=True,disabled=False)
 ==
+
