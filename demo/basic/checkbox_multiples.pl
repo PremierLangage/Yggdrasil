@@ -38,6 +38,6 @@ form ==
 
 evaluator ==
 grade = checkbox.eval(grading="CorrectAnswers",display=True,disabled=False)
-grade =(100,str(myobj))
+grade =(100,myobj.name)
 ==
 
