@@ -11,7 +11,7 @@ before ==
 import random as rd
 from customcheckbox import Thing
 
-obj = Thing('Awesome')
+myobj = Thing('Awesome')
 
 # Création du composant avec le constructeur
 # from customcheckbox import CustomCheckbox
