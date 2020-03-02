@@ -469,9 +469,9 @@
         ,
 
         [
-            ['20', "La mémoire de votre tableau <code>tab</code> n'est pas géré correctement.", 'confiance-=1'],
+            ['19', "La mémoire de votre tableau <code>tab</code> n'est pas géré correctement.", 'confiance-=1'],
 
-            ['21', "Votre tableau <code>tab</code> n'est pas initialisé correctement.", 'confiance-=1'],
+            ['20', "Votre tableau <code>tab</code> n'est pas initialisé correctement.", 'confiance-=1'],
 
             ['16', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait..."]
         ]
@@ -617,6 +617,63 @@
             ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
         ]
     ],
+
+'18':
+    [
+        '',
+        
+        "Il y a une erreur dans les bornes des boucles."
+        "<pre>"
+        "void tribulle(int* T, int taille){ <br />"
+        "  int i,j; <br />"
+        "  int tmp; <br /><br />"
+        
+        "for(i=0;i&lt;taille;i++){<br />"
+        "  for(j=0;j&lt;taille-i;j++){<br />"
+        "          if(T[j+1] &lt; T[j]){<br />"
+	    "      tmp = T[j];<br />"
+	    "      T[j] = T[j+1];<br />"
+	    "      T[j+1] = tmp;<br />"
+        "          }<br />"
+        "  }<br />"
+        " }<br />"
+        "}"
+        "</pre>",
+
+        [
+            ['21', "Le tri monte un cran trop loin et trie une valeur en trop."],
+
+            ['22', "Le tri à bulles est bien correct, le bug n'est pas là."],
+
+            ['23', "Avec un tableau d'entiers non signés, vous n'auriez peut-être jamais vu votre bug."],
+
+            ['24', "Ce tri ne fait pas monter des bulles mais descendrent des cailloux."]
+        ]
+    ],
+
+'19':
+    [
+        'disallow.append("19");confiance-=1',
+
+        "<p><b>Yves :</b> Mais monsieur, avec une macro constante, la mémoire de mon tableau est "
+        "statique. C'est pas moi qui la gère, c'est le programme. Mon tableau tab est une "
+        "variable locale de mon main. Tout est géré automatiquement.</p> <br />"
+
+        "<pre>"
+        "int main(){ <br />"
+        "  int tab[TAILLE]; <br />"
+        "  ...<br />"
+        "}"
+        "</pre>"
+
+        ""
+        ,
+
+        [
+            
+        ]
+    ],
+
 
 }
 
