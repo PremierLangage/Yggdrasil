@@ -14,5 +14,11 @@ class CustomJSXGraph(Component):
         """
         self.script = Template(script).render(dic)
 
+    def addscript(self, script, dic={}):
+        """
+        Load script and render it.
+        """
+        self.script += Template(script).render(dic)
+
 
 
