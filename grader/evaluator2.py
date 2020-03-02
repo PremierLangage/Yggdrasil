@@ -88,8 +88,6 @@ if __name__ == "__main__":
     for key in dic:
         dic[key]=deserialize(dic[key])
 
-    dic = jsonpickle.decode(dic)
-
     dic = {**namespace, **dic}
     if 'evaluator' in dic:
         dic['StopEvaluatorExec'] = StopEvaluatorExec
@@ -133,6 +131,7 @@ if __name__ == "__main__":
             ffeedback=format_feedback_lightscore(score,feedback)
 
     output(score, ffeedback, dic)
+
 
 
 
