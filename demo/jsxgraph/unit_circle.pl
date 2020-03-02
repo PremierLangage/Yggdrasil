@@ -17,7 +17,7 @@ before ==
 angle=randitem([pi/4,pi/2,3*pi/4,pi,5*pi/4,3*pi/2,7*pi/4])
 valangle=float(angle.evalf())
 b=0.5
-jxg.loadscript(script)
+jxg.loadscript(script,globals())
 ==
 
 text ==
