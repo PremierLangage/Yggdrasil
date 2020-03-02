@@ -41,15 +41,7 @@ var secOAM = board.create('sector',[O,A,M],{color:'orange'});
 ==
 
 script2 ==
-board.setBoundingBox([-1.25,1.25,1.25,-1.25]);
-var grid = board.create('grid',[],{gridX:0.25,gridY:0.25});
-var Ox = board.create('axis',[[0,0],[1,0]],{ticks:{visible:false}});
-var Oy = board.create('axis',[[0,0],[0,1]],{ticks:{visible:false}});
-var circle = board.create('circle',[[0,0],[0,1]],{strokeColor:'blue',fixed:true});
-var O = board.create('point',[0,0],{size:1,name:'O',color:'black',fixed:true});
-var A = board.create('point',[1,0],{size:1,name:'A',color:'black',fixed:true});
-var M = board.create('glider',[{{x}},{{y}},circle],{size:2,name:'M',color:'red',fixed:false});
-var secOAM = board.create('sector',[O,A,M],{color:'orange'});
+var M = board.create('glider',[{{xsol}},{{ysol}},circle],{size:2,name:'M',color:'green',fixed:false});
 ==
 
 evaluator ==
