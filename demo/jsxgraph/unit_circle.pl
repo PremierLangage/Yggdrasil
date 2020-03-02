@@ -22,7 +22,7 @@ jxg.loadscript(script)
 ==
 
 text ==
-Placer sur le cercle unité ci-dessous le point M de sorte que l'angle $% (\overrightarrow{OA},\overrightarrow{OM}) %$ ait une mesure égale à $% {{angle.latex}} %$. 
+Placer sur le cercle unité ci-dessous le point M de sorte que l'angle $% (\overrightarrow{OA},\overrightarrow{OM}) %$ ait une mesure égale à $% \displaystyle {{angle.latex}} %$. 
 ==
 
 form ==
