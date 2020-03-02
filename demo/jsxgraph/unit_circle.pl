@@ -16,8 +16,7 @@ jxg.attributes %=
 before ==
 angle=randitem([pi/4,pi/2,3*pi/4,pi,5*pi/4,3*pi/2,7*pi/4])
 valangle=float(angle.evalf())
-b=0.5
-jxg.loadscript(script,globals())
+jxg.loadscript(script)
 ==
 
 text ==
@@ -37,7 +36,7 @@ var Oy = board.create('axis',[[0,0],[0,1]],{ticks:{visible:false}});
 var circle = board.create('circle',[[0,0],[0,1]],{strokeColor:'blue',fixed:true});
 var O = board.create('point',[0,0],{size:1,name:'O',color:'black',fixed:true});
 var A = board.create('point',[1,0],{size:1,name:'A',color:'black',fixed:true});
-var M = board.create('glider',[1,{{b}},circle],{size:2,name:'M',color:'red',fixed:false});
+var M = board.create('glider',[1,0.5,circle],{size:2,name:'M',color:'red',fixed:false});
 var secOAM = board.create('sector',[O,A,M],{color:'orange'});
 ==
 
