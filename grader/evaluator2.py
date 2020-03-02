@@ -77,7 +77,7 @@ if __name__ == "__main__":
         sys.exit(1)
     
     dic = get_context()
-
+    dic = jsonpickle.decode(dic)
     comp=[e for e in dic if isinstance(e, Component)]
 
     for k in list(dic.keys()):
@@ -132,6 +132,7 @@ if __name__ == "__main__":
             ffeedback=format_feedback_lightscore(score,feedback)
 
     output(score, ffeedback, dic)
+
 
 
 
