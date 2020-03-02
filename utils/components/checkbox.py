@@ -115,8 +115,7 @@ class CustomCheckbox(Component):
 
 
 
-
-
-
-
+class Thing(object):
+    def __init__(self, name):
+        self.name = name
 
