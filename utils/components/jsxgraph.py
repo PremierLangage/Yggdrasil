@@ -14,6 +14,7 @@ class CustomJSXGraph(Component):
         """
         if dic == None:
             dic = globals()
-        self.script = Template(script).render(dic)
+        self.script = Template(script).render(globals())
+
 
 
