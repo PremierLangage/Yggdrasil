@@ -30,7 +30,7 @@ script ==
 var circle = board.create('circle',[[0,0],[0,1]],{strokeColor:'blue',fixed:true});
 var O = board.create('point',[0,0],{size:1,name:'O',color:'black',fixed:true});
 var A = board.create('point',[1,0],{size:1,name:'A',color:'black',fixed:true});
-var M = board.create('glider',[1,0.5,circle],{size:2,name:'M',color:'red',fixed:false});
+var M = board.create('glider',[1,0.5,circle],{size:2,name:'M',color:'blue',fixed:false});
 var secOAM = board.create('sector',[O,A,M],{color:'orange'});
 ==
 
