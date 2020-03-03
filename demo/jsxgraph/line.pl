@@ -43,13 +43,13 @@ yA = jxg.points['A']['y']
 xB = jxg.points['B']['x']
 yB = jxg.points['B']['y']
 
-
-ansb = yB-(yA-yB)/(xA-xB)*xB
-if equal_approx(atan2(yA-yB,xA-xB), atan2(a,1), 0.1, modulo=pi) and abs(ansb-b)<0.15:
+ansa = (yA-yB)/(xA-xB)
+ansb = yB-ansa*xB
+if equal_approx(atan2(ansa,1), atan2(a,1), 0.1, modulo=pi) and abs(ansb-b)<0.15:
     score = 100
 else:
     score = 0
     jxg.addscript(script_wrong,globals())
-feedback = str(equal_approx(atan2(yA-yB,xA-xB), atan2(a,1), 0.1)) + " " + str(abs(ansb-b))
+
 jxg.disabled = True
 ==
