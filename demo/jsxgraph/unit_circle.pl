@@ -9,8 +9,7 @@ jxg.decorator = CustomJSXGraph
 jxg.css = myclass
 
 jxg.attributes %=
-{"showNavigation" : false,
-"boundingbox": [-1.25,1.25,1.25,-1.25]
+{"boundingbox": [-1.25,1.25,1.25,-1.25]
 }
 ==
 
