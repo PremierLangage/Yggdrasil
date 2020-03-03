@@ -46,7 +46,7 @@ x = jxg.points['M']['x']
 y = jxg.points['M']['y']
 
 angle_float = angle.evalf()
-xsol = cos(angle_float))
+xsol = cos(angle_float)
 ysol = sin(angle_float)
 
 if abs((atan2(y,x)-angle_float)%(2*pi))<0.1:
