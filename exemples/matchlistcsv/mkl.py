@@ -16,7 +16,7 @@ def fromcsv(filename, sourcecol="source", targetcol="target"):
             expected.append({ "source": "source"+str(n), "target": "target"+str(n) })
         return MatchListItem,expected
 
-def getreadomlines(filename="content.csv",number=4, sourcecol="source", targetcol="target"):
+def getrandomlines(filename="content.csv",number=4, sourcecol="source", targetcol="target"):
     l=[]
     with open(filename,"r") as csvfile:
         reader=csv.DictReader(csvfile,delimiter=';')
@@ -32,7 +32,7 @@ def selectionfromcsv2(filename, number=4, sourcecol="source", targetcol="target"
     """
     return number elements of the file or all the file if the lenght is less than number
     """
-    l=getreadomlines(filename,number,sourcecol,targetcol)
+    l=getrandomlines(filename,number,sourcecol,targetcol)
     MatchListItem=[]
     expected=[]
     for n,e in enumerate(l):
