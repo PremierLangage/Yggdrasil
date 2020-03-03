@@ -34,7 +34,7 @@ form ==
 ==
 
 evaluator ==
-grade = checkbox.eval(grading="CorrectAnswers",display=True)
+grade = checkbox.eval(grading="RightWrong",display=True)
 ==
 
 
