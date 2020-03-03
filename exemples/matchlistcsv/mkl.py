@@ -43,7 +43,7 @@ def selectionfromcsv(filename, number=4, sourcecol="source", targetcol="target")
 
 
 
-def selectionfromcsv-old(filename, number=4, sourcecol="source", targetcol="target"):
+def selectionfromcsvold(filename, number=4, sourcecol="source", targetcol="target"):
     """
     return number elements of the file or all the file if the lenght is less than number
     """
