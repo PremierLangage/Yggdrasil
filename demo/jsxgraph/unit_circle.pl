@@ -2,6 +2,7 @@ extends = /model/math.pl
 
 title = Cercle trigonométrique
 
+# Le composant va être renommé JSXGraph
 jxg =: MathDrawer
 # Les deux lignes suivantes sont temporaires.
 @ /utils/components/jsxgraph.py [customjsxgraph.py]
