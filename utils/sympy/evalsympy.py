@@ -17,6 +17,15 @@ def equal(a, b, modulo=0):
     else:
         return sp.simplify(diff) % modulo == 0
 
+def equal_approx(a, b, tol, modulo=None):
+    """
+    Check if two SymPy expressions are equal.
+    """
+    if modulo is None:
+        return abs(a-b).evalf() < tol
+    else:
+        return abs((abs(a-b) + modulo/2) % modulo - modulo/2) < tol
+
 def equal_struct(a, b, modulo=0):
     """
     Check if two structures are equal.
@@ -406,6 +415,7 @@ def ans_antiderivative(strans,sol,x,local_dict={}):
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
+
 
 
 
