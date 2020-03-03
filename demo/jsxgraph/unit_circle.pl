@@ -62,7 +62,7 @@ feedback=""
 
 extracss==
 <style>
-.jsxgraph-component {
+.jsxgraph2-component {
     max-width:300px;
     width:90vw;
     max-height:300px;
