@@ -45,11 +45,10 @@ evaluator ==
 x=jxg.points['M']['x']
 y=jxg.points['M']['y']
 
-valangle=float(angle.evalf())
-xsol = float(cos(valangle))
-ysol = float(sin(valangle))
+angle_float = angle.evalf()
+xsol = cos(angle_float))
+ysol = sin(angle_float)
 
-from math import atan2,pi
 if abs((atan2(y,x)-angle)%(2*pi))<0.1:
     score=100
     jxg.addscript(script_right,globals())
@@ -57,6 +56,7 @@ else:
     score=0
     jxg.addscript(script_wrong,globals())
 jxg.disabled = True
+feedback = str(atan2(y,x))
 ==
 
 
