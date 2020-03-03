@@ -24,7 +24,6 @@ def equal_approx(a, b, tol, modulo=None):
     if modulo is None:
         return abs(a-b).evalf() < tol
     else:
-        return True
         return abs((abs(a-b) + modulo/2) % modulo - modulo/2).evalf() < tol
 
 def equal_struct(a, b, modulo=0):
@@ -416,6 +415,7 @@ def ans_antiderivative(strans,sol,x,local_dict={}):
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
+
 
 
 
