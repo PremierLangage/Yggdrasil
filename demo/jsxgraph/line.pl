@@ -53,11 +53,3 @@ else:
 
 jxg.disabled = True
 ==
-
-
-form ==
-{{ jxg | component }}
-==
-
-
-
