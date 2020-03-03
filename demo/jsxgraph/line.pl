@@ -50,6 +50,6 @@ if equal_approx(atan2(yA-yB,xA-xB), atan2(a,1), 0.1) and abs(ansb-b)<0.2:
 else:
     score = 0
     jxg.addscript(script_wrong,globals())
-
+feedback = str(equal_approx(atan2(yA-yB,xA-xB), atan2(a,1), 0.1)) + " " + str(abs(ansb-b))
 jxg.disabled = True
 ==
