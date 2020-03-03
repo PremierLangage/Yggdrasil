@@ -13,7 +13,6 @@ jxg.attributes % {"showNavigation":false, "boundingbox":[-6,6,6,-6]}
 before ==
 a=randint(-5,5)
 b=randint(-5,5)
-from math import atan2,pi
 theta=abs(atan2(a,1))
 x=symbols('x')
 latexf=latex(a*x+b)
