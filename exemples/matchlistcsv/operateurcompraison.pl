@@ -22,9 +22,9 @@ match =: MatchList
 # STEP 2
 before==
 import random
-from mkl import fromcsv,selectionfromcsv2
+from mkl import fromcsv,selectionfromcsv
 
-match.nodes , expected =  selectionfromcsv2("content.csv")
+match.nodes , expected =  selectionfromcsv("content.csv")
 random.shuffle(match.nodes)
 ==
 
