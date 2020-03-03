@@ -34,7 +34,6 @@ form ==
 
 script_right ==
 
-M.setAttribute({color:'green'});
 ==
 
 script_wrong ==
