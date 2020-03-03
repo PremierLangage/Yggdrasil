@@ -31,11 +31,6 @@ form ==
 {{ jxg | component }}
 ==
 
-
-script_right ==
-M.setAttribute({color:'green'});
-==
-
 script_wrong ==
 M.setAttribute({color:'red', withLabel:false});
 var Msol = board.create('glider',[{{xsol}},{{ysol}},circle],{size:2,name:'M',color:'green',fixed:false});
@@ -51,7 +46,6 @@ ysol = sin(angle_float)
 
 if equal_approx(atan2(y,x), angle_float, 0.1, modulo=2*pi):
     score = 100
-    jxg.addscript(script_right,globals())
 else:
     score = 0
     jxg.addscript(script_wrong,globals())
