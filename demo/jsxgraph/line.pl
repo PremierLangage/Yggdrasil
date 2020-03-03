@@ -45,8 +45,7 @@ yA = jxg.points['A']['y']
 xB = jxg.points['B']['x']
 yB = jxg.points['B']['y']
 
-if True:
-#if equal_approx(atan2(yA-yB,xA-xB), atan2(a,1), 0.1):
+if equal_approx(atan2(yA-yB,xA-xB), atan2(a,1), 0.1):
     score = 100
 else:
     score = 0
