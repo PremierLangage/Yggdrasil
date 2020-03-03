@@ -70,11 +70,11 @@ extracss==
     margin: 0 auto;
 }
 .myclass {
-    max-width:300px;
-    width:90vw;
-    max-height:300px;
-    height:90vw;
-    margin: 0 auto;
+    max-width:300px !important;;
+    width:90vw !important;;
+    max-height:300px !important;;
+    height:90vw !important;;
+    margin: 0 auto !important;;
 }
 </style>
 ==
