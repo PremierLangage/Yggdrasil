@@ -42,14 +42,14 @@ var M = board.create('glider',[{{x}},{{y}},circle],{size:2,name:'',color:'green'
 ==
 
 evaluator ==
-x=jxg.points['M']['x']
-y=jxg.points['M']['y']
+x = jxg.points['M']['x']
+y = jxg.points['M']['y']
 
 angle_float = angle.evalf()
 xsol = cos(angle_float))
 ysol = sin(angle_float)
 
-if abs((atan2(y,x)-angle)%(2*pi))<0.1:
+if abs((atan2(y,x)-angle_float)%(2*pi))<0.1:
     score=100
     jxg.addscript(script_right,globals())
 else:
