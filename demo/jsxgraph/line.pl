@@ -11,11 +11,10 @@ jxg.decorator = CustomJSXGraph
 jxg.attributes % {"showNavigation":false, "boundingbox":[-6,6,6,-6]}
 
 before ==
-a=randint(-5,5)
-b=randint(-5,5)
-theta=abs(atan2(a,1))
+a=randint(-5,5,[0])
+b=randint(-5,5,[0])
 x=symbols('x')
-latexf=latex(a*x+b)
+f=a*x+b
 
 jxg.loadscript(script_init)
 ==
@@ -27,7 +26,7 @@ var line = board.create('line',[A,B]);
 ==
 
 text ==
-Tracer la droite d'équation $! y = {{latexf}} !$ dans le plan ci-dessous.
+Tracer la droite d'équation $! y = {{f.latex}} !$ dans le plan ci-dessous.
 ==
 
 form ==
@@ -44,7 +43,9 @@ yA = jxg.points['A']['y']
 xB = jxg.points['B']['x']
 yB = jxg.points['B']['y']
 
-if equal_approx(atan2(yA-yB,xA-xB), atan2(a,1), 0.1):
+
+
+if equal_approx(atan2(yA-yB,xA-xB), atan2(a,1), 0.1) and sqrt(:
     score = 100
 else:
     score = 0
