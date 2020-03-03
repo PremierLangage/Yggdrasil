@@ -33,7 +33,7 @@ var secOAM = board.create('sector',[O,A,M],{color:'orange'});
 ==
 
 script2 ==
-M.setname(" ");
+M.setName(" ");
 var M = board.create('glider',[{{xsol}},{{ysol}},circle],{size:2,name:'M',color:'green',fixed:false});
 ==
 
