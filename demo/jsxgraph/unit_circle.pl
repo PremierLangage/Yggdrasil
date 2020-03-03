@@ -6,12 +6,8 @@ jxg =: MathDrawer
 # Les deux lignes suivantes sont temporaires.
 @ /utils/components/jsxgraph.py [customjsxgraph.py]
 jxg.decorator = CustomJSXGraph
-jxg.css = myclass
 
-jxg.attributes %=
-{"boundingbox": [-1.25,1.25,1.25,-1.25]
-}
-==
+jxg.attributes % {"showNavigation" : false, "boundingbox": [-1.25,1.25,1.25,-1.25]}
 
 before ==
 angle=randitem([pi/4,pi/2,3*pi/4,pi,5*pi/4,3*pi/2,7*pi/4])
@@ -22,7 +18,7 @@ jxg.loadscript(script)
 ==
 
 text ==
-Placer sur le cercle unité ci-dessous le point M de sorte que l'angle $% (\overrightarrow{OA},\overrightarrow{OM}) %$ ait une mesure égale à $% \displaystyle {{angle.latex}} %$. 
+Placer le point M de sorte que l'angle $% (\overrightarrow{OA},\overrightarrow{OM}) %$ ait une mesure égale à $% \displaystyle {{angle.latex}} %$. 
 ==
 
 form ==
