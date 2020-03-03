@@ -22,8 +22,8 @@ jxg.loadscript(script_init)
 ==
 
 script_init ==
-var A = board.create('point',[1,1],{size:2,name:'A',color:'red',withLabel:false});
-var B = board.create('point',[-1,-1],{size:2,name:'B',color:'red',withLabel:false});
+var A = board.create('point',[1,1],{size:2,name:'A',color:'blue',withLabel:false});
+var B = board.create('point',[-1,-1],{size:2,name:'B',color:'blue',withLabel:false});
 var line = board.create('line',[A,B]);
 ==
 
