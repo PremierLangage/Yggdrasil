@@ -51,7 +51,8 @@ ysol = sin(angle_float)
 
 if equal_approx(atan2(y,x), angle_float, 0.1, modulo=2*pi):
     score = 100
-    jxg.points['M'] = {x : xsol, y : ysol}
+    jxg.points['M']['x'] = xsol
+    jxg.points['M']['y'] = ysol
     jxg.addscript(script_right,globals())
 else:
     score = 0
