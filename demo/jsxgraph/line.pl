@@ -1,6 +1,6 @@
 extends = /model/math.pl
 
-title = Cercle trigonométrique
+title = Angle
 
 # Le composant va être renommé JSXGraph
 jxg =: MathDrawer
