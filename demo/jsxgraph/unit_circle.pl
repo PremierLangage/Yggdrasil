@@ -56,7 +56,7 @@ else:
     score=0
     jxg.addscript(script_wrong,globals())
 jxg.disabled = True
-feedback = str(atan2(y,x))
+feedback = str(abs((atan2(y,x)-angle_float)%(2*pi)))
 ==
 
 
