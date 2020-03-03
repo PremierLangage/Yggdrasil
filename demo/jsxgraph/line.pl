@@ -11,8 +11,8 @@ jxg.decorator = CustomJSXGraph
 jxg.attributes % {"showNavigation":false, "boundingbox":[-6,6,6,-6]}
 
 before ==
-a=randint(-5,5,[0])
-b=randint(-5,5,[0])
+a=randint(-4,4,[0])
+b=randint(-4,4,[0])
 x=symbols('x')
 f=a*x+b
 
