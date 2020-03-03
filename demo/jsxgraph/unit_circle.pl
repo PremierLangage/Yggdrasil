@@ -52,8 +52,9 @@ ysol = float(sin(valangle))
 from math import atan2,pi
 if abs((atan2(y,x)-angle)%(2*pi))<0.1:
     score=100
+    jxg.addscript(script_right,globals())
 else:
-    jxg.addscript(script2,globals())
+    jxg.addscript(script_wrong,globals())
     score=0
 jxg.disabled = True
 feedback=""
