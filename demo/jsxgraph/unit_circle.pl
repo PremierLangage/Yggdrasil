@@ -50,13 +50,13 @@ xsol = cos(angle_float)
 ysol = sin(angle_float)
 
 if abs((atan2(y,x)-angle_float)%(2*pi))<0.1:
-    score=100
+    score = 100
     jxg.addscript(script_right,globals())
 else:
-    score=0
+    score = 0
     jxg.addscript(script_wrong,globals())
+
 jxg.disabled = True
-feedback = str(abs((atan2(y,x)-angle_float)%(2*pi)))
 ==
 
 
