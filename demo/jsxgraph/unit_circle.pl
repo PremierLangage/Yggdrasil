@@ -33,6 +33,7 @@ form ==
 
 
 script_right ==
+
 M.setAttribute({color:'green'});
 ==
 
