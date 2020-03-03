@@ -6,6 +6,7 @@ jxg =: MathDrawer
 # Les deux lignes suivantes sont temporaires.
 @ /utils/components/jsxgraph.py [customjsxgraph.py]
 jxg.decorator = CustomJSXGraph
+jxg.css = myclass
 
 jxg.attributes %=
 {"showNavigation" : false,
