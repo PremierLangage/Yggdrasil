@@ -71,8 +71,8 @@ extracss==
     margin: 0 auto;
 }
 .myclass {
-    max-width:300px !important;
-    max-height:300px !important;
+    max-width:100px !important;
+    max-height:100px !important;
 
 }
 </style>
