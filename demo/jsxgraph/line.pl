@@ -40,9 +40,10 @@ var linesol = board.create('line',[[0,{{b}}],[1,{{a}}+{{b}}]],{color:'green'});
 ==
 
 evaluator ==
-x = jxg.points['M']['x']
-y = jxg.points['M']['y']
-
+xA = jxg.points['A']['x']
+yA = jxg.points['A']['y']
+xB = jxg.points['B']['x']
+yB = jxg.points['B']['y']
 angle_float = angle.evalf()
 xsol = cos(angle_float)
 ysol = sin(angle_float)
