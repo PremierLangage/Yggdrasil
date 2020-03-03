@@ -28,7 +28,7 @@ def getrandomlines(filename="content.csv",number=4, sourcecol="source", targetco
     return l[:number]
 
 
-def selectionfromcsv2(filename, number=4, sourcecol="source", targetcol="target"):
+def selectionfromcsv(filename, number=4, sourcecol="source", targetcol="target"):
     """
     return number elements of the file or all the file if the lenght is less than number
     """
@@ -43,7 +43,7 @@ def selectionfromcsv2(filename, number=4, sourcecol="source", targetcol="target"
 
 
 
-def selectionfromcsv(filename, number=4, sourcecol="source", targetcol="target"):
+def selectionfromcsv-old(filename, number=4, sourcecol="source", targetcol="target"):
     """
     return number elements of the file or all the file if the lenght is less than number
     """
