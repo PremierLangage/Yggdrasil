@@ -44,11 +44,12 @@ xA = jxg.points['A']['x']
 yA = jxg.points['A']['y']
 xB = jxg.points['B']['x']
 yB = jxg.points['B']['y']
+
 angle_float = angle.evalf()
 xsol = cos(angle_float)
 ysol = sin(angle_float)
 
-if equal_approx(atan2(y,x), angle_float, 0.1, modulo=2*pi):
+if equal_approx(atan2(yA-yB,xA-xB), atan2(a,1), 0.1, modulo=pi):
     score = 100
 else:
     score = 0
