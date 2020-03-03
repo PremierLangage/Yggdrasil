@@ -1,6 +1,6 @@
 extends = /model/math.pl
 
-title = Angle
+title = Droite
 
 # Le composant va être renommé JSXGraph
 jxg =: MathDrawer
