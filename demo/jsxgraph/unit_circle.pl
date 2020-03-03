@@ -11,9 +11,7 @@ jxg.attributes % {"showNavigation" : false, "boundingbox": [-1.25,1.25,1.25,-1.2
 
 before ==
 angle=randitem([pi/4,pi/2,3*pi/4,pi,5*pi/4,3*pi/2,7*pi/4])
-valangle=float(angle.evalf())
-xsol = float(cos(valangle))
-ysol = float(sin(valangle))
+
 jxg.loadscript(script)
 ==
 
@@ -35,12 +33,18 @@ var secOAM = board.create('sector',[O,A,M],{color:'orange'});
 ==
 
 script2 ==
+M.setname(" ")
 var M = board.create('glider',[{{xsol}},{{ysol}},circle],{size:2,name:'M',color:'green',fixed:false});
 ==
 
 evaluator ==
 x=jxg.points['M']['x']
 y=jxg.points['M']['y']
+
+valangle=float(angle.evalf())
+xsol = float(cos(valangle))
+ysol = float(sin(valangle))
+
 from math import atan2,pi
 if abs((atan2(y,x)-angle)%(2*pi))<0.1:
     score=100
