@@ -33,7 +33,7 @@ form ==
 
 
 script_right ==
-var M = board.create('glider',[{{x}},{{y}},circle],{size:2,name:'M',color:'green',fixed:false});
+M.setAttribute({color:'green'});
 ==
 
 script_wrong ==
