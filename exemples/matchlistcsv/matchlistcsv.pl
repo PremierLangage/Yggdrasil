@@ -17,7 +17,7 @@ match =: MatchList
 
 #  le fichier de données "@ content.csv"  avec deux collones target;source 
 
-@ mkl.py
+@ ../mkl.py
 
 # STEP 2
 before==
@@ -67,5 +67,6 @@ if error == 0:
 else:
     grade = (0, 'Bad answer, you made %d mistakes' % error)
 ==
+
 
 
