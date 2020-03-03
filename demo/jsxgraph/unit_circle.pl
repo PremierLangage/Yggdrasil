@@ -33,7 +33,7 @@ var secOAM = board.create('sector',[O,A,M],{color:'orange'});
 ==
 
 script2 ==
-M.setName(" ");
+var M = board.create('glider',[{{x}},{{y}},circle],{size:2,name:'M',color:'blue',fixed:false});
 var Msol = board.create('glider',[{{xsol}},{{ysol}},circle],{size:2,name:'M',color:'green',fixed:false});
 ==
 
@@ -49,7 +49,7 @@ from math import atan2,pi
 if abs((atan2(y,x)-angle)%(2*pi))<0.1:
     score=100
 else:
-    jxg.loadscript(script2,globals())
+    jxg.addscript(script2,globals())
     score=0
 jxg.disabled = True
 feedback=""
