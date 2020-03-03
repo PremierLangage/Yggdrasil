@@ -26,7 +26,7 @@ var line = board.create('line',[A,B]);
 ==
 
 text ==
-Tracer la droite d'équation $! y = {{f.latex}} !$ dans le plan ci-dessous.
+Tracer la droite d'équation $! y = {{f.latex}} !$.
 ==
 
 form ==
