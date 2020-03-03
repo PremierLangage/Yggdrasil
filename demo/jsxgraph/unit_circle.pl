@@ -37,7 +37,7 @@ var M = board.create('glider',[{{x}},{{y}},circle],{size:2,name:'M',color:'green
 ==
 
 script_wrong ==
-var M = board.create('glider',[{{x}},{{y}},circle],{size:2,name:'HHHH',color:'red',fixed:false});
+M.setName(" ");
 var Msol = board.create('glider',[{{xsol}},{{ysol}},circle],{size:2,name:'M',color:'green',fixed:false});
 ==
 
