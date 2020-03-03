@@ -11,7 +11,7 @@ jxg.css = myclass
 jxg.attributes %=
 {"showNavigation" : false,
 "boundingbox": [-1.25,1.25,1.25,-1.25],
-"keepaspectratio" : false}
+}
 ==
 
 before ==
@@ -32,9 +32,6 @@ form ==
 
 
 script ==
-//var grid = board.create('grid',[],{gridX:0.25,gridY:0.25});
-//var Ox = board.create('axis',[[0,0],[1,0]],{ticks:{visible:false}});
-//var Oy = board.create('axis',[[0,0],[0,1]],{ticks:{visible:false}});
 var circle = board.create('circle',[[0,0],[0,1]],{strokeColor:'blue',fixed:true});
 var O = board.create('point',[0,0],{size:1,name:'O',color:'black',fixed:true});
 var A = board.create('point',[1,0],{size:1,name:'A',color:'black',fixed:true});
