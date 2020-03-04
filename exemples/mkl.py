@@ -50,7 +50,7 @@ def selectionfromcsv(filename, number=4, sourcecol="source", targetcol="target")
     return a radnom selection of number elements of the file or all the file if the length is less than number
     """
     l=getrandomlines(filename,number,sourcecol,targetcol)
-    return selectionfromtable(l,number,sourcecol,targetcol)
+    return selectionfromtable(l,number)
 
 
 
