@@ -30,9 +30,7 @@ grader==#|python|
 run(title='Évaluation du code', 
     output='')
 
-run('dans_intervalle({n!r}, {a!r}, {b!r})', 
-            title = 'Test 1',
-            result = sum([)
+run('dans_intervalle(4,1,12)',title = 'Test 1',result = True)
 
 tests([
     (4, 1, 12), 
@@ -41,6 +39,7 @@ tests([
     ("certainement", "non", "peut-être")
 ])
 ==
+
 
 
 
