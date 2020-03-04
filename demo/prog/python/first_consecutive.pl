@@ -27,8 +27,8 @@ def ref(lst):
 
 run(title='Évaluation du code',output='')
 
-run('dans_intervalle(4,1,12)',title = 'Test 1',result = True)
-run('dans_intervalle(0,1,12)',title = 'Test 1',result = True)
+run('filtre_pairs([2,21,5,7,4,4,13,0])',title = 'Test 1',result = [2,4,4,0])
+run('filtre_pairs([3,13,7])',title = 'Test 1',result = [])
 
 ==
 
