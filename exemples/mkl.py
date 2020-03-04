@@ -27,7 +27,7 @@ def getrandomlines(filename="content.csv",number=4, sourcecol="source", targetco
     random.shuffle(l)
     return l[:number]
 
-def selectionfromtable(table, number=4, sourcecol="source", targetcol="target"):
+def selectionfromtable(table, number=4):
     """
     return a random selection of number elements of table liste 
     table is a list of pairs [(source,target),(source,target),...]
