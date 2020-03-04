@@ -27,8 +27,7 @@ grader==#|python|
 #print(pl_context, file=sys.stderr)
         
 
-run(title='Évaluation du code', 
-    output='')
+run(title='Évaluation du code',output='')
 
 run('dans_intervalle(4,1,12)',title = 'Test 1',result = True)
 
