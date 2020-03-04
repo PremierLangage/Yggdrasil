@@ -1,16 +1,13 @@
 extends = /model/progpython.pl
 
 title = Fonctions : appartenance à un intervalle
-# author = Antoine Meyer
 
 text==
-Écrire une fonction `dans_intervalle(n, a, b)` 
-renvoyant `True` si l'objet `n` est strictement compris 
-entre `a` et `b`, et `False` sinon.
+Écrire une fonction `filtre_pairs(lst)` qui renvoie la liste des entiers pairs 
 
 Exemples d'appels :
 
-    >>> dans_intervalle(4, 1, 12)
+    >>> filtre_pairs([0,31,3,4,3])
     True
     >>> dans_intervalle(40, 1, 12)
     False
@@ -25,7 +22,8 @@ grader==#|python|
 
 #import sys
 #print(pl_context, file=sys.stderr)
-        
+def ref(lst):
+    return [num for num in lst if num % 2 == 0]     
 
 run(title='Évaluation du code',output='')
 
