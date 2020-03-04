@@ -7,13 +7,13 @@ builder =@ /builder/before.py
 group =: CheckboxGroup
 
 @ content.csv 
-
+@ ../mkl.py
 @ readcsv.py
 
 before==
-import random,readcsv
+import random,readcsv, mkl
 
-group.items = getrandomsection()
+group.items,solution = getrandomselection()
 
  
 ==
@@ -22,6 +22,8 @@ title = Checkbox Group Component
 
 text==
 Select even numbers.
+{{group.items}} 
+{{solution}}
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
