@@ -9,6 +9,8 @@ tag=program|variable
 
 type=direct
 
+@/utils/sandboxio.py
+
 builder=@ /ComputerScience/C/exercices/program/code_generation.py
 
 consistency==
@@ -32,7 +34,9 @@ form==
 </div>
 ==
 
-grader==
+grader== #|python|
+from sandboxio import output, get_context, get_answers
+
 def evaluator(response, dic):
     if dic['vars_values'] is None:
         if response['answer'] == "Erreur":
