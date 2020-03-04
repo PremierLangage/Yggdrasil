@@ -34,7 +34,7 @@ def selectionfromtable(table, number=4, sourcecol="source", targetcol="target"):
     """
     l=table
     random.shuffle(l)
-    l =  l[:(min(number,len(l))]
+    l =  l[:min(number,len(l))]
     MatchListItem=[]
     expected=[]
     for n,e in enumerate(l):
