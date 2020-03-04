@@ -3,7 +3,7 @@
 @ /ComputerScience/python/AP1-1920/templates/generic/grader.py
 @ /ComputerScience/python/AP1-1920/templates/generic/utils/test.py
 @ /ComputerScience/python/AP1-1920/templates/generic/utils/mockinput.py
-@ /ComputerScience/python/AP1-1920/templates/generic/utils/testgroup.html
+@ /grader/utils/testgroup.html
 @ /ComputerScience/python/AP1-1920/templates/generic/utils/testitem.html
 
 title = <em>(Pas de titre défini)</em>
@@ -28,3 +28,4 @@ form==
 grader==
 begin_test_group("L'exercice n'a pas défini de procédure de validation.")
 ==
+
