@@ -9,7 +9,7 @@ group =: CheckboxGroup
 @ content.csv 
 @ ../mkl.py
 
-@ readcsv.py
+@ readcsv.py [readcsv.py]
 
 before==
 import random,readcsv, mkl
