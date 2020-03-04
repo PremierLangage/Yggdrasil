@@ -30,6 +30,7 @@ grader==#|python|
 run(title='Évaluation du code',output='')
 
 run('dans_intervalle(4,1,12)',title = 'Test 1',result = True)
+run('dans_intervalle(0,1,12)',title = 'Test 1',result = True)
 
 ==
 
