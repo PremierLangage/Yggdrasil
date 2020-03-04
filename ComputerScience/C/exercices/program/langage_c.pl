@@ -24,7 +24,7 @@ group.items.append({"id": "8", "content": "Langage haut niveau"})
 random.shuffle(group.items)
 ==
 
-title = Checkbox Group Component
+title = Le langage C
 
 text==
 Sélectionnez les caractéristiques du Langage C
@@ -63,5 +63,6 @@ else:
 
 grade = (note, msg)
 ==
+
 
 
