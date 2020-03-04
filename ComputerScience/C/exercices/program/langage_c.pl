@@ -2,6 +2,8 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+author=Nicolas Borie
+
 group =: CheckboxGroup
 
 # GENERATE A RANDOM QUESTION
@@ -63,6 +65,7 @@ else:
 
 grade = (note, msg)
 ==
+
 
 
 
