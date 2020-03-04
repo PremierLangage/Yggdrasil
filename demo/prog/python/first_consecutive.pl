@@ -31,12 +31,6 @@ run(title='Évaluation du code',output='')
 
 run('dans_intervalle(4,1,12)',title = 'Test 1',result = True)
 
-tests([
-    (4, 1, 12), 
-    (40, 1, 12), 
-    ("oui", "non", "peut-être"),
-    ("certainement", "non", "peut-être")
-])
 ==
 
 
