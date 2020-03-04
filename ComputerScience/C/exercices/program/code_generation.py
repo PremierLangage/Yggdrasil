@@ -168,8 +168,10 @@ def subnlbybr(str):
 def double_with_tab(str):
     return "\n\t".join(str.split("\n"))
 
-def build(dic):
-    d = dict(dic)
+if __name__ == "__main__":
+    with open(sys.argv[1],'r') as f:
+        d = json.load(f)
+
     if 'seed' not in d:
         import time
         d['seed']=str(time.time())
@@ -181,5 +183,10 @@ def build(dic):
     d['vars_values'] = values
     d['text'] = "Voici quelle instructions simples en langage C manipulant des variables entières \n\n\n\n" + double_with_tab("\t"+code) + "\n\nDonnez la valeur de la variable **a** en fin d'exécution de ce bout de code ou bien entrez **Erreur** en cas d'erreur durant l'exécution (division par zéro).\n"
     d['responses'] = values
-    return d
+
+    with open(sys.argv[2], 'w+') as f:
+        f.write(jsonpickle.encode(d if d else get_context(), unpicklable=False))
+        
+    sys.exit(0)
+
 
