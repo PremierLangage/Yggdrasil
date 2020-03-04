@@ -1,6 +1,6 @@
 import random
 import os
-import sys
+import sys, json
 
 constants = ["(-1)", "0", "1", "2", "10"]
 
