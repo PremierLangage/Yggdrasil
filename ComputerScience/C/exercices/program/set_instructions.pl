@@ -21,6 +21,9 @@ nb_variables = 2
 complexity = 12
 instruct_complexity = 4
 
+text==
+
+==
 
 form==
 <div class="input-group">
@@ -45,5 +48,6 @@ def evaluator(response, dic):
     else:
         return False, "Mauvaise réponse"
 ==
+
 
 
