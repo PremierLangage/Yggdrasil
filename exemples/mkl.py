@@ -30,6 +30,7 @@ def getrandomlines(filename="content.csv",number=4, sourcecol="source", targetco
 def selectionfromtable(table, number=4, sourcecol="source", targetcol="target"):
     """
     return a random selection of number elements of table liste 
+    table is a list of pairs [(source,target),(source,target),...]
     """
     l=table
     random.shuffle(l)
@@ -49,13 +50,8 @@ def selectionfromcsv(filename, number=4, sourcecol="source", targetcol="target")
     return a radnom selection of number elements of the file or all the file if the length is less than number
     """
     l=getrandomlines(filename,number,sourcecol,targetcol)
-    MatchListItem=[]
-    expected=[]
-    for n,e in enumerate(l):
-            MatchListItem.append({"id":"source"+str(n),"content":e[0], "source": True})
-            MatchListItem.append({"id":"target"+str(n),"content":e[1], "target": True})
-            expected.append({ "source": "source"+str(n), "target": "target"+str(n) })
-    return MatchListItem,expected
+    return selectionfromtable(l,number,sourcecol,targetcol)
+
 
 
 
