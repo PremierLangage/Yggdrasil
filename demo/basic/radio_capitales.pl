@@ -4,6 +4,11 @@ extends = /model/basic.pl
 
 title = Capitales européennes (Radio)
 
+radio =: RadioGroup
+# Les deux lignes suivantes sont temporaires.
+@ /utils/components/radio.py [customradio.py]
+radio.decorator = CustomRadio
+
 before ==
 import random as rd
 import csv
@@ -28,11 +33,7 @@ text ==
 Quelle est la capitale {{du_pays}} ?
 ==
 
-radio =: RadioGroup
 
-# Les deux lignes suivantes sont temporaires.
-@ /utils/components/radio.py [customradio.py]
-radio.decorator = CustomRadio
 
 form ==
 {{ radio|component }}
