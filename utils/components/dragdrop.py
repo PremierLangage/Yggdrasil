@@ -23,7 +23,7 @@ class CustomDragDrop(Component):
 
     @classmethod
     def Drop(cls, **kwargs):
-        return cls(id=str(uuid4()), droppable=True, **kwargs)
+        return cls(id=str(uuid4()), droppable=True, cloneable = False, **kwargs)
 
     @classmethod
     def Label(cls, **kwargs):
@@ -63,80 +63,99 @@ class DragDropGroup():
 
         self.id = str(uuid4()) # generates a random id for the group
         self.labels = []
-        self.dropzones = []
+        self.drops = []
         self.cloneable = True # Tells if a label can be used several times or not
-        self._matches = [] # List of correct matches between a label and a drop_zone. A match is a pair of cid's
+        self._matches = [] # List of correct matches between a label and a drop_. A match is a pair of cid's
 
         
-        if 'id' in kwargs: # comes first because id is copied in labels and dropzones
+        if 'id' in kwargs: # comes first because id is copied in labels and drops
             self.id = kwargs['id']
-        if 'cloneable' in kwargs: # comes first because cloneable is translated in labels and dropzones
+        if 'cloneable' in kwargs: # comes first because cloneable is translated in labels and drops
             self.cloneable = kwargs['cloneable']
         if 'labels' in kwargs:
             self.set_labels(kwargs['labels'])
-        if 'dropzones' in kwargs:
-            self.set_dropzones(kwargs['dropzones'])
-        if 'matches' in kwargs:# format of a match: (cid of label, cid of drop_zone)
+        if 'drops' in kwargs:
+            self.set_drops(kwargs['drops'])
+        if 'matches' in kwargs:# format of a match: (cid of label, cid of drop_)
             self.set_matches(kwargs['valid_matches'])
         if 'grade_method' in kwargs:
             self.set_grade_method(kwargs['grade_method'])
 
     def set_label(self, labels):
+         self.labels = {}
+         self.add_label(labels)
+
+    def add_label(self, labels):
         if isinstance(labels, str):
             self.labels[labels] = CustomDragDrop.Label(content = labels, group_id = self.id, cloneable = self.cloneable)
         if isinstance(labels, dic):
-            self.labels = {label_name:  CustomDragDrop.Label(content = label_content, group_id = self.id, cloneable = self.cloneable) for (label_name, label_content) in labels.items()}
+            self.labels.update({label_name:  CustomDragDrop.Label(content = label_content, group_id = self.id, cloneable = self.cloneable) for (label_name, label_content) in labels.items()})
         if isinstance(labels, list):
-            self.labels = {string:  CustomDragDrop.Label(content = string, group_id = self.id, cloneable = self.cloneable) for string in labels}
-    def add_label(self, labels):
-        self.labels = labels
-        for label in self.labels: 
-            label.group_id = self.id
-            label.cloneable_label = self.cloneable
+            self.labels.update({string:  CustomDragDrop.Label(content = string, group_id = self.id, cloneable = self.cloneable) for string in labels})
 
-    def set_dropzones(self, dropzones):
-        self.dropzones = dropzones
-        for drop_zone in dropzones:
-            drop_zone.group_id = self.id
-            drop_zone.cloneable_label = False
+    def set_drop(self, drops):
+         self.drops = {}
+         self.add_drop(drops)
+
+    def add_drop(self, drops):
+        if isinstance(drops, str):
+            self.drops[drops] = CustomDragDrop.Drop(content = drops, group_id = self.id)
+        if isinstance(drops, dic):
+            self.drops.update({drop_name:  CustomDragDrop.Drop(content = drop_content, group_id = self.id) for (drop_name, drop_content) in drops.items()})
+        if isinstance(drops, list):
+            self.drops.update({string:  CustomDragDrop.Drop(content = string, group_id = self.id) for string in drops})
 
     def set_matches(self, matches):
         self.matches = matches
 
-    def set_match(self, label, drop_zone):
-        self._matches.append({'label':label.cid, 'drop_zone': drop_zone.cid})
+    def set_match_by_name(self, drop, matches):
+        self.matches = []
+        self.add_match_by_name(drop, matches)
+
+    def add_match_by_name(self, drop, matches):
+       if isinstance(matches, str):
+            self._matches.append((self.labels[matches].cid,self.drops[drop].cid))
+       if isinstance(matches, list):
+            self._matches += [(self.labels[label_name].cid, self.drops[drop].cid)) for label_name in matches]
+
+    def set_match_by_content(self, matches):
+        self.matches = []
+        self.add_match_by_content(matches)
+
+    def get_label_by_content(self, content):
+        for key, value in self.labels.items():
+            if value.content == content:
+                return value
+                
+    def add_match_by_content(self, drop, matches):
+       if isinstance(matches, str):
+            label = self.get_label_by_content(matches)
+            self._matches.append((label.cid, self.drops[drop].cid))
+       if isinstance(matches, list):
+            self._matches += [(self.get_label_by_content(label_content).cid, self.drops[drop].cid)) for label_content in matches]
     
-    def set_grade_method(self, grade_method):
-        if grade_method != 'labels': 
-            self.grade_by_drop_zone = False
-        else:
-            self.grade_by_drop_zone= True
-
-    def shuffle_labels(self): # It doesn't seem necessary to shuffle dropzones.
-        shuffle(self.labels)
-
     def eval(self, display=True, grading_function= all_or_nothing, disabled=True):
         feedback=""
         score=100
 
-    num_right, num_wrong = 0, 0
+        num_right, num_wrong = 0, 0
 
-        for drop in self.dropzones:
+        for drop in self.drops:
             drop.disabled = True
-            drop_data = {'label': drop.droppedId, 'drop_zone': drop.cid}
+            drop_data = (drop.droppedId, drop.cid)
             if drop.droppedId == '':
                 pass
-            elif drop_data in self.matches:
-            num_right += 1
+            elif drop_data in self._matches:
+                num_right += 1
                 drop.css = "success-state"
             else:
                 num_wrong +=1
                 drop.css = "error-state"           
    
         if self.cloneable == True:
-            total = min(len(self.dropzones), len(self.matches))
+            total = min(len(self.drops), len(self.matches))
         else:
-            total = min(len(self.dropzones), len(self.labels))
+            total = min(len(self.drops), len(self.labels))
                   
         score = grading_function(num_right, num_wrong, total)
         feedback = '' 
