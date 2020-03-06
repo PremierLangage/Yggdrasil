@@ -65,7 +65,7 @@ class DragDropGroup():
         self.labels = []
         self.drop_zones = []
         self.labels_cloneable = True # Tells if a label can be used several times or not
-        self.matches = [] # List of correct matches between a label and a drop_zone
+        self._matches = [] # List of correct matches between a label and a drop_zone
         self.grade_by_drop_zone = True# If true means each drop_zone should be populated
         
         if 'id' in kwargs: # comes first because id is copied in labels and drop_zones
@@ -97,7 +97,7 @@ class DragDropGroup():
         self.matches = matches
 
     def set_match(self, label, drop_zone):
-        self.matches.append({'label':label.cid, 'drop_zone': drop_zone.cid})
+        self._matches.append({'label':label.cid, 'drop_zone': drop_zone.cid})
     
     def set_grade_method(self, grade_method):
         if grade_method != 'labels': 
@@ -139,6 +139,7 @@ class DragDropGroup():
         
 
     
+
 
 
 
