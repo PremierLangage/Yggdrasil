@@ -18,13 +18,13 @@ class CustomCheckbox(Component):
         # ajouter right/wrong et sort
         super().__init__(**kwargs)
 
-    def loaditems(self, lstcontent):
+    def set_items(self, lstcontent):
         """
         Load items in the component.
         """
         self.items = [{"id": uuid4(), "content": content} for content in lstcontent]
 
-    def setsol_by_index(self, index):
+    def set_sol_by_index(self, index):
         """
         Set the component solutions from a list of indices.
         """
@@ -33,7 +33,7 @@ class CustomCheckbox(Component):
         elif isinstance(index,int):
             self._sol = [self.items[index]['id']]
 
-    def setsol_by_content(self, content):
+    def set_sol_by_content(self, content):
         """
         Set the component solutions from a list of contents.
         """
@@ -42,7 +42,7 @@ class CustomCheckbox(Component):
         elif isinstance(index,str):
             self._sol = [next(item['id'] for item in self.items if item['content'] == content)]
 
-    def loadrw(self, right, wrong, nitems=None, nright=None):
+    def set_right_wrong(self, right, wrong, nitems=None, nright=None):
         """
         Load items and set solutions from lists of right and wrong items.
         """
@@ -111,5 +111,6 @@ class CustomCheckbox(Component):
             self.disabled = True
 
         return (score, "")
+
 
 
