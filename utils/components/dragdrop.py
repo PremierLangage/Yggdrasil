@@ -76,12 +76,19 @@ class DragDropGroup():
             self.set_labels(kwargs['labels'])
         if 'dropzones' in kwargs:
             self.set_dropzones(kwargs['dropzones'])
-        if 'matches' in kwargs:#format of a match: {'label':cid of label, 'drop_zone':cid of drop_zone}
-            self.set_matchess(kwargs['valid_matches'])
+        if 'matches' in kwargs:# format of a match: (cid of label, cid of drop_zone)
+            self.set_matches(kwargs['valid_matches'])
         if 'grade_method' in kwargs:
             self.set_grade_method(kwargs['grade_method'])
 
-    def set_labels(self, labels):
+    def set_label(self, labels):
+        if isinstance(labels, str):
+            self.labels[labels] = CustomDragDrop.Label(content = labels, group_id = self.id, cloneable = self.cloneable)
+        if isinstance(labels, dic):
+            self.labels = {label_name:  CustomDragDrop.Label(content = label_content, group_id = self.id, cloneable = self.cloneable) for (label_name, label_content) in labels.items()}
+        if isinstance(labels, list):
+            self.labels = {string:  CustomDragDrop.Label(content = string, group_id = self.id, cloneable = self.cloneable) for string in labels}
+    def add_label(self, labels):
         self.labels = labels
         for label in self.labels: 
             label.group_id = self.id
