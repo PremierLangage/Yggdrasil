@@ -2,14 +2,14 @@ from components import Component
 from random import shuffle
 from uuid import uuid4
 
-def all_or_nothing(num_good=0, num_bad = 0, total = 1):
-    if num_good == total:
+def all_or_nothing(num_right=0, num_wrong = 0, total = 1):
+    if num_wrong == total:
         return 100
     else:
         return 0
 
-def right_minus_wrong(num_good=0, num_bad = 0, total = 1):
-    return max([round((num_good-num_bad)/total*100),0])
+def right_minus_wrong(num_right=0, num_wrong = 0, total = 1):
+    return max([round(num_right-num_wrong)/total*100),0])
 
 class CustomDragDrop(Component):
 
@@ -18,7 +18,7 @@ class CustomDragDrop(Component):
         self.decorator = 'CustomDragDrop'
         self.content = ""
         self.group_id = ""
-        self.cloneable_label = False
+        self.cloneable = False
         super().__init__(**kwargs)
 
     @classmethod
@@ -29,8 +29,8 @@ class CustomDragDrop(Component):
     def Label(cls, **kwargs):
         return cls(id=str(uuid4()), droppable=False, **kwargs)
 
-    @classmethod
-    def Drops(cls, arg, **kwargs):
+"""   @classmethod
+   def Drops(cls, arg, **kwargs):
         if isinstance(arg,int):
             return [cls.Drop(**kwargs) for i in range(arg)]
         if isinstance(arg,list):
@@ -55,7 +55,7 @@ class CustomDragDrop(Component):
                 drop[i].css = "error-state"
             drop[i].disabled = True
         return (score,feedback)
-
+"""
 
 class DragDropGroup():
 
@@ -63,19 +63,19 @@ class DragDropGroup():
 
         self.id = str(uuid4()) # generates a random id for the group
         self.labels = []
-        self.drop_zones = []
-        self.labels_cloneable = True # Tells if a label can be used several times or not
-        self._matches = [] # List of correct matches between a label and a drop_zone
-        self.grade_by_drop_zone = True# If true means each drop_zone should be populated
+        self.dropzones = []
+        self.cloneable = True # Tells if a label can be used several times or not
+        self._matches = [] # List of correct matches between a label and a drop_zone. A match is a pair of cid's
+
         
-        if 'id' in kwargs: # comes first because id is copied in labels and drop_zones
+        if 'id' in kwargs: # comes first because id is copied in labels and dropzones
             self.id = kwargs['id']
-        if 'labels_cloneable' in kwargs: # comes first because labels_cloneable is translated in labels and drop_zones
-            self.labels_cloneable = kwargs['labels_cloneable']
+        if 'cloneable' in kwargs: # comes first because cloneable is translated in labels and dropzones
+            self.cloneable = kwargs['cloneable']
         if 'labels' in kwargs:
             self.set_labels(kwargs['labels'])
-        if 'drop_zones' in kwargs:
-            self.set_drop_zones(kwargs['drop_zones'])
+        if 'dropzones' in kwargs:
+            self.set_dropzones(kwargs['dropzones'])
         if 'matches' in kwargs:#format of a match: {'label':cid of label, 'drop_zone':cid of drop_zone}
             self.set_matchess(kwargs['valid_matches'])
         if 'grade_method' in kwargs:
@@ -85,11 +85,11 @@ class DragDropGroup():
         self.labels = labels
         for label in self.labels: 
             label.group_id = self.id
-            label.cloneable_label = self.labels_cloneable
+            label.cloneable_label = self.cloneable
 
-    def set_drop_zones(self, drop_zones):
-        self.drop_zones = drop_zones
-        for drop_zone in drop_zones:
+    def set_dropzones(self, dropzones):
+        self.dropzones = dropzones
+        for drop_zone in dropzones:
             drop_zone.group_id = self.id
             drop_zone.cloneable_label = False
 
@@ -105,33 +105,33 @@ class DragDropGroup():
         else:
             self.grade_by_drop_zone= True
 
-    def shuffle_labels(self): # It doesn't seem necessary to shuffle drop_zones.
+    def shuffle_labels(self): # It doesn't seem necessary to shuffle dropzones.
         shuffle(self.labels)
 
     def eval(self, display=True, grading_function= all_or_nothing, disabled=True):
         feedback=""
         score=100
 
-        num_good, num_bad = 0, 0
+    num_right, num_wrong = 0, 0
 
-        for drop in self.drop_zones:
+        for drop in self.dropzones:
             drop.disabled = True
             drop_data = {'label': drop.droppedId, 'drop_zone': drop.cid}
             if drop.droppedId == '':
                 pass
             elif drop_data in self.matches:
-                num_good += 1
+            num_right += 1
                 drop.css = "success-state"
             else:
-                num_bad +=1
+                num_wrong +=1
                 drop.css = "error-state"           
    
-        if self.labels_cloneable == True:
-            total = min(len(self.drop_zones), len(self.matches))
+        if self.cloneable == True:
+            total = min(len(self.dropzones), len(self.matches))
         else:
-            total = min(len(self.drop_zones), len(self.labels))
+            total = min(len(self.dropzones), len(self.labels))
                   
-        score = grading_function(num_good, num_bad, total)
+        score = grading_function(num_right, num_wrong, total)
         feedback = '' 
         return (score,feedback)
 
