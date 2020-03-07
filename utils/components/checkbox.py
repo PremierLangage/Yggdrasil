@@ -18,11 +18,11 @@ class CustomCheckbox(Component):
         # ajouter right/wrong et sort
         super().__init__(**kwargs)
 
-    def set_items(self, lstcontent):
+    def setitems(self, contents):
         """
         Load items in the component.
         """
-        self.items = [{"id": uuid4(), "content": content} for content in lstcontent]
+        self.items = [{"id": uuid4(), "content": content} for content in contents]
 
     def set_sol_by_index(self, index):
         """
@@ -111,6 +111,7 @@ class CustomCheckbox(Component):
             self.disabled = True
 
         return (score, "")
+
 
 
 
