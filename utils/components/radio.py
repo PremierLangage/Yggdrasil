@@ -9,7 +9,7 @@ class CustomRadio(Component):
         self.decorator = 'CustomRadio'
         super().__init__(**kwargs)
 
-    def loaditems(self, lstcontent):
+    def setitems(self, lstcontent):
         """
         Load items in the component.
         """
@@ -60,6 +60,7 @@ class CustomRadio(Component):
             self.disabled = True
 
         return (score, "")
+
 
 
 
