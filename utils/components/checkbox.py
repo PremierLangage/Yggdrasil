@@ -24,7 +24,7 @@ class CustomCheckbox(Component):
         """
         self.items = [{"id": uuid4(), "content": content} for content in contents]
 
-    def set_sol_by_index(self, index):
+    def setsol_by_index(self, index):
         """
         Set the component solutions from a list of indices.
         """
@@ -33,7 +33,7 @@ class CustomCheckbox(Component):
         elif isinstance(index,int):
             self._sol = [self.items[index]['id']]
 
-    def set_sol_by_content(self, content):
+    def setsol_by_content(self, content):
         """
         Set the component solutions from a list of contents.
         """
@@ -42,9 +42,9 @@ class CustomCheckbox(Component):
         elif isinstance(index,str):
             self._sol = [next(item['id'] for item in self.items if item['content'] == content)]
 
-    def set_right_wrong(self, right, wrong, nitems=None, nright=None):
+    def setdata_from_right_wrong(self, right, wrong, nitems=None, nright=None):
         """
-        Load items and set solutions from lists of right and wrong items.
+        Ser items and solutions from lists of right and wrong items.
         """
         if nitems is None:
             nitems = len(right)+len(wrong)
