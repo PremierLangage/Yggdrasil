@@ -9,11 +9,11 @@ class CustomRadio(Component):
         self.decorator = 'CustomRadio'
         super().__init__(**kwargs)
 
-    def setitems(self, lstcontent):
+    def setitems(self, contents):
         """
-        Load items in the component.
+        Set items in the component.
         """
-        self.items = [{"id": uuid4(), "content": content} for content in lstcontent]
+        self.items = [{"id": uuid4(), "content": content} for content in contents]
 
     def setsol_by_index(self, index):
         """
