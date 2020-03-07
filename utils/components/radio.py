@@ -37,7 +37,7 @@ class CustomRadio(Component):
         """
         Sort the component items.
         """
-        self.items.sort(key = lambda item : item['content'])
+        self.items.sort(key = lambda item: item['content'])
 
     def eval(self, display=True, disabled=True):
         """
