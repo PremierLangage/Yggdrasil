@@ -34,6 +34,9 @@ class CustomTextSelect(Component):
         self.decorator = 'CustomText'
         super().__init__(**kwargs)
 
+    def settext(self,text):
+        self.text,self._indexsol=read_text_bracket(bracket_words(text))
+
     def loadtext(self,text):
         self.text,self._indexsol=read_text_bracket(bracket_words(text))
 
@@ -79,4 +82,5 @@ class CustomTextSelect(Component):
         self.disabled = True
 
         return (score, "")
+
 
