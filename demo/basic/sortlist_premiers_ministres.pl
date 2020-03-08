@@ -8,10 +8,10 @@ before ==
 import random as rd
 import csv
 
-with open('premiers_ministres.csv',newline='') as file:
-    rows=list(csv.DictReader(file,delimiter=','))
+with open('premiers_ministres.csv', newline='') as file:
+    rows = list(csv.DictReader(file, delimiter=','))
 
-lst = rd.sample(range(len(rows)),5)
+lst = rd.sample(range(len(rows)), 5)
 lst.sort()
 sortlist.loadlist([(rows[i]["nom"],rows[i]["dates"]) for i in lst])
 ==
@@ -42,4 +42,5 @@ $(document).ready(function(){
 });
 </script>
 ==
+
 
