@@ -24,7 +24,7 @@ class CustomCheckbox(Component):
         """
         self.items = [{"id": uuid4(), "content": content} for content in contents]
 
-    def setsol_by_index(self, index):
+    def setsol_from_index(self, index):
         """
         Set the component solutions from a list of indices.
         """
@@ -33,7 +33,7 @@ class CustomCheckbox(Component):
         elif isinstance(index,int):
             self._sol = [self.items[index]['id']]
 
-    def setsol_by_content(self, content):
+    def setsol_from_content(self, content):
         """
         Set the component solutions from a list of contents.
         """
@@ -44,16 +44,16 @@ class CustomCheckbox(Component):
 
     def setdata_from_right_wrong(self, right, wrong, nitems=None, nright=None):
         """
-        Ser items and solutions from lists of right and wrong items.
+        Set items and solutions from lists of right and wrong items.
         """
         if nitems is None:
             nitems = len(right)+len(wrong)
         if nright is None:
             nright = len(right)
 
-        self.loaditems(rd.sample(right,nright)+rd.sample(wrong,nitems-nright))
+        self.setitems(rd.sample(right,nright)+rd.sample(wrong,nitems-nright))
 
-        self.setsol_by_index(list(range(nright)))
+        self.setsol_from_index(list(range(nright)))
 
         self.shuffle()
 
@@ -111,6 +111,7 @@ class CustomCheckbox(Component):
             self.disabled = True
 
         return (score, "")
+
 
 
 
