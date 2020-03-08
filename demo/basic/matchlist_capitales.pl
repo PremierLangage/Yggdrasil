@@ -18,7 +18,7 @@ sample_rows = rd.sample(all_rows, 4)
 matchlist.setdata_from_matches([(row['pays'], row['capitale']) for row in sample_rows])
 ==
 
-text==
+text ==
 Relier chaque pays à sa capitale.
 ==
 
