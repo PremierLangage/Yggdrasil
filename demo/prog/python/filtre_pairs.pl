@@ -25,7 +25,7 @@ run('filtre_pairs([3,13,7])', title = 'Test 1', result = [])
 
 begin_test_group("Tests aléatoires")
 for _ in range(10):
-    lst = [rd.randint(100) for _ in range(20)]
+    lst = [rd.randint(0,100) for _ in range(20)]
     lst2 = ref(lst)
     run('filtre_pairs({repr(lst)})',title = 'Test 1', result = lst2)
 
