@@ -35,7 +35,7 @@ Comparer les nombres suivants avec les symboles {{ mygroup.labels['lt'] | compo
 form==
 <ul>
 {% for i in mygroup.drops %}
-<li> {{ numbers[loop.index][0] }} {{ mygroup.drops[i] | component }} {{ numbers[loop.index][1] }} </li>
+<li> {{ numbers[loop.index0][0] }} {{ mygroup.drops[i] | component }} {{ numbers[loop.index0][1] }} </li>
 {% endfor %}
 </ul>
 ==
