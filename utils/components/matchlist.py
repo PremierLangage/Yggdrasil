@@ -10,9 +10,9 @@ class CustomMatchList(Component):
         self._sol = []
         super().__init__(**kwargs)
 
-    def loaditems(self,sources,targets):
+    def setitems(self, sources, targets):
         """
-        Load matched pairs of items in the component.
+        Set source items and target items.
         """ 
         for source in sources:
             self.nodes.append({
@@ -27,7 +27,7 @@ class CustomMatchList(Component):
                 "target": True
             })
 
-    def loadpairs(self,pairs):
+    def setdata_from_matches(self, matches):
         """
         Load matched pairs of items in the component.
         """ 
@@ -77,6 +77,7 @@ def source_link(sourceId,links1,links2):
             targetId2=e['target']
             break
     return targetId1==targetId2
+
 
 
 
