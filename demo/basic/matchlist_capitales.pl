@@ -11,7 +11,7 @@ import random as rd
 import csv
 
 with open('pays_europe.csv', newline='') as file:
-    all_rows = list(csv.DictReader(file,delimiter=','))
+    all_rows = list(csv.DictReader(file, delimiter=','))
     
 sample_rows = rd.sample(all_rows, 4)
 
@@ -34,4 +34,5 @@ form ==
 evaluator ==
 grade = matchlist.eval()
 ==
+
 
