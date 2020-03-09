@@ -73,39 +73,30 @@ class CustomCheckbox(Component):
         """
         Evaluate the answer stored in the component.
         """
-        right,wrong,missed=0,0,0
+        nbright, nbwrong = 0, 0
 
         for item in self.items:
             id = item['id']
             if id in self._sol and item['checked']:
-                right += 1
+                nbright += 1
                 if display:
                     item['css'] = 'success-state icon-check-after'
             elif id not in self._sol and item['checked']:
-                wrong += 1
+                nbwrong += 1
                 if display:
                     item['css'] = 'error-state icon-times-after'
             elif id in self._sol and not item['checked']:
-                missed += 1
                 if display:
                     item['css'] = 'icon-check-after'
                           
         if grading == "AllOrNothing":
-            if wrong == 0 and right == 0:
-                score = 100
-            else:
-                score = 0
+            score = all_or_nothing(nbright, nbwrong)
         elif grading == "RightMinusWrong":
-            if right+missed != 0:
-                score = max([round((right-wrong)/(right+missed)*100),0])
-            else:
-                if wrong == 0:
-                    score = 100
-                else:
-                    score = 0              
+            score = right_minus_wrong(nbright, nbwrong, nbsol=len(self._sol))          
         elif grading == "CorrectAnswers":
-            nitems = len(self.items)
-            score = max([round((nitems-2*(wrong+missed))/nitems*100),0])
+            score = correct_items(nbright, nbwrong, nbitems=len(self.items))
+        else:
+            raise ValueError(f'{grading} is not a valid grading')
 
         if disabled:
             self.disabled = True
