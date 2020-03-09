@@ -4,7 +4,7 @@
                         background-color:{% if not test.status %}Tomato{% else %}LightGreen{% endif %};
                         border-radius:4px;">
                 <button type="button"
-                        class="btn btn-block btn-sm {%  if not test.status %}btn-danger{% else %}btn-success{% endif %}"
+                        class="btn btn-block btn-sm {%  if not test.status %}btn-outline-danger{% else %}btn-outline-success{% endif %}"
                         {%  if not test.status %}aria-expanded="true" aria-controls="{{ test.make_id() }}"{% endif %}
                         data-toggle="collapse"
                         data-target="#{{ test.make_id() }}">
