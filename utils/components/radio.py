@@ -15,13 +15,13 @@ class CustomRadio(Component):
         """
         self.items = [{"id": uuid4(), "content": content} for content in contents]
 
-    def setsol_by_index(self, index):
+    def setsol_from_index(self, index):
         """
         Set the component solution from an index.
         """
         self._sol = self.items[index]['id']
 
-    def setsol_by_content(self, content):
+    def setsol_from_content(self, content):
         """
         Set the component solution from a content.
         """
@@ -59,7 +59,8 @@ class CustomRadio(Component):
         if disabled:
             self.disabled = True
 
-        return (score, "")
+        return score
+
 
 
 
