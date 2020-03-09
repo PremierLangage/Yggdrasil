@@ -28,7 +28,6 @@ form ==
 
 evaluator ==
 score = checkbox.eval(grading="RightMinusWrong")
-feedback=str(checkbox._sol)
 ==
 
 
