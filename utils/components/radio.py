@@ -52,7 +52,7 @@ class CustomRadio(Component):
                     item['css'] = 'success-state icon-check-after'
             elif id != self._sol and id == self.selection:
                 if display:
-                    item['css'] = 'error-state icon-times-after'
+                    item['css'] = 'error-state icon-fail-after'
             elif id == self._sol and id != self.selection:
                 if display:
                     item['css'] = 'icon-check-after'
@@ -61,8 +61,3 @@ class CustomRadio(Component):
             self.disabled = True
 
         return score
-
-
-
-
-
