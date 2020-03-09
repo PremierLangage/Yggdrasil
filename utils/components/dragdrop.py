@@ -62,8 +62,8 @@ class DragDropGroup():
     def __init__(self, **kwargs):
 
         self.id = str(uuid4()) # generates a random id for the group
-        self.labels = []
-        self.drops = []
+        self.labels = {}
+        self.drops = {}
         self.cloneable = True # Tells if a label can be used several times or not
         self._matches = [] # List of correct matches between a label and a drop_. A match is a pair of cid's
 
