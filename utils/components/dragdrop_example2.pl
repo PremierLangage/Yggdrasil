@@ -24,8 +24,10 @@ for i in range(n):
     numbers.append([a,b])
     mygroup.add_drop({str(i):""}) # à modifier  en remplaçant str(i) par i quand les labels/drops pourront être des listes et non des dict.
     if a < b:
+        pass
         #mygroup.add_match_by_content(str(i),lt) 
     else:
+        pass
         #mygroup.add_match_by_content(str(i),gt) 
 ==
 
