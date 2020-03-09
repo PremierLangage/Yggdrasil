@@ -34,7 +34,7 @@ Comparer les nombres suivants avec les symboles {{ mygroup.labels['lt'] | compo
 form==
 <ul>
 {% for i in mygroup.drops %}
-<li> {{ numbers[i][0] }} {{ mygroup.drops[i] |component }} {{ numbers[i][1] }} </li>
+<li> {{ numbers[loop.index][0] }} {{ mygroup.drops[i] |component }} {{ numbers[loop.index][1] }} </li>
 {% endfor %}
 </ul>
 ==
@@ -42,7 +42,7 @@ form==
 settings.feedback = lightscore
 
 evaluator==
-grade=mygroup.eval()
+grade=mygroup.eval() # Ici ça bugge, mais c'est normal parce que le composant ne traverse pas
 ==
 
 extracss == #|html| 
