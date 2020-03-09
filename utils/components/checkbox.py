@@ -42,18 +42,18 @@ class CustomCheckbox(Component):
         elif isinstance(index,str):
             self._sol = [next(item['id'] for item in self.items if item['content'] == content)]
 
-    def setdata_from_rw(self, right, wrong, nitems=None, nright=None):
+    def setdata_from_rw(self, right, wrong, nbitems=None, nbright=None):
         """
         Set items and solutions from lists of right and wrong items.
         """
         if nitems is None:
-            nitems = len(right)+len(wrong)
+            nitems = len(nbright)+len(nbwrong)
         if nright is None:
-            nright = len(right)
+            nright = len(nbright)
 
-        self.setitems(rd.sample(right,nright)+rd.sample(wrong,nitems-nright))
+        self.setitems(rd.sample(right,nbright)+rd.sample(wrong,nbitems-nbright))
 
-        self.setsol_from_index(list(range(nright)))
+        self.setsol_from_index(list(range(nbright)))
 
         self.shuffle()
 
