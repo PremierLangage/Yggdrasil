@@ -7,15 +7,6 @@ class CustomCheckbox(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-checkbox-group'
         self.decorator = 'CustomCheckbox'
-        if 'content' in kwargs:
-            self.loaditems(kwargs['content'])
-        if 'sol_index' in kwargs:
-            self.setsol_by_index(sol_index)
-        if 'sol_content' in kwargs:
-            self.setsol_by_content(sol_content)
-        if 'shuffle' in kwargs and kwargs['shuffle']:
-            self.shuffle()
-        # ajouter right/wrong et sort
         super().__init__(**kwargs)
 
     def setitems(self, contents):
@@ -105,7 +96,7 @@ class CustomCheckbox(Component):
 
 def all_or_nothing(nbright=0, nbwrong=0, nbsol=1, nbitems=1):
     return 100 if nbwrong == nbsol else 0
-    
+
 def right_minus_wrong(nbright=0, nbwrong=0, nbsol=1, nbitems=1):
     return int(round(max([(nbright - nbwrong)/nbsol*100,0])))
 
