@@ -6,6 +6,7 @@ title = Comparaison de nombres (DragDrop)
 
 before==
 import random as rd
+from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
 
 lt="&lt;"
 gt="&gt;"
@@ -52,6 +53,7 @@ extracss == #|html|
         }
 </style>
 ==
+
 
 
 
