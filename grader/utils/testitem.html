@@ -1,7 +1,4 @@
-            <div style="border:1px solid black;
-                        padding:1px;
-                        margin:3px;
-                        border-radius:4px;">
+            <div>
                 <button type="button"
                         class="btn btn-block btn-sm {%  if not test.status %}btn-outline-danger{% else %}btn-outline-success{% endif %}"
                         {%  if not test.status %}aria-expanded="true" aria-controls="{{ test.make_id() }}"{% endif %}
