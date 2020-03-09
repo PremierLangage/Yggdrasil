@@ -51,7 +51,7 @@ class CustomMatchList(Component):
         """
         Evaluate the answer stored in the component.
         """ 
-        error = 0
+        right, wrong = 0, 0
         rightsource = []
         for link in self.links:
             if {'source': link['source'], 'target': link['target']} in self._sol:
@@ -61,9 +61,10 @@ class CustomMatchList(Component):
             if 'source' in node and node['source']:
                 if node['id'] in rightsource:
                     node['css'] = 'success-state'
+                    right += 1
                 else:
                     node['css'] = 'error-state'
-                    error = error + 1
+                    wrong += 1
 
-        return (100, str(self._sol)+str(self.links)+str(rightsource))
+        return score
 
