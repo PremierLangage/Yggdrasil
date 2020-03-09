@@ -25,6 +25,7 @@ for i in range(n):
         mygroup.add_match_by_content(str(i),lt) 
     else:
         mygroup.add_match_by_content(str(i),gt) 
+mygroup.drops['0'].content = 'coucou'
 ==
 
 text==
