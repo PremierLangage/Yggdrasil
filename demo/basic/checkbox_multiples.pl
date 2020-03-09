@@ -10,10 +10,6 @@ checkbox.decorator = CustomCheckbox
 before ==
 import random as rd
 
-# Création du composant avec le constructeur
-# from customcheckbox import CustomCheckbox
-# checkbox = CustomCheckbox(content = ["a","b"])
-
 mult3 = [str(n) for n in range(50,100) if n % 3 == 0]
 other = [str(n) for n in range(50,100) if n % 3 != 0]
 
