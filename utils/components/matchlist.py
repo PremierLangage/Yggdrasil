@@ -31,7 +31,7 @@ class CustomMatchList(Component):
         """
         Load matched pairs of items in the component.
         """ 
-        for source,target in pairs:
+        for source, target in matches:
             sourceid = str(uuid4())
             targetid = str(uuid4())
             self.nodes.append({
@@ -77,6 +77,7 @@ def source_link(sourceId,links1,links2):
             targetId2=e['target']
             break
     return targetId1==targetId2
+
 
 
 
