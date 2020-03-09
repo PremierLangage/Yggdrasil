@@ -93,7 +93,7 @@ class CustomCheckbox(Component):
             score = all_or_nothing(nbright, nbwrong)
         elif grading == "RightMinusWrong":
             score = right_minus_wrong(nbright, nbwrong, nbsol=len(self._sol))          
-        elif grading == "CorrectAnswers":
+        elif grading == "CorrectItems":
             score = correct_items(nbright, nbwrong, nbitems=len(self.items))
         else:
             raise ValueError(f'{grading} is not a valid grading')
