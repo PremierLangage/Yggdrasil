@@ -54,7 +54,7 @@ class CustomMatchList(Component):
         error = 0
         rightsource = []
         for link in self.links:
-            if (link['source'], link['target']) is in self._sol:
+            if x is in self._sol:
                 rightsource.append(link['source'])
 
         for node in self.nodes:
