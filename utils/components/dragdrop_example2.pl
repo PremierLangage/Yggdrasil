@@ -32,7 +32,6 @@ for i in range(n):
 ==
 
 text==
-#Comparer les nombres suivants avec les symboles {{ mygroup.labels['lt'] | component }} et {{ mygroup.labels['gt'] | component }}.
 Comparer les nombres suivants avec les symboles {{ mygroup.labels['papa'] | component }} et {{ mygroup.labels['maman'] | component }}.
 ==
 
