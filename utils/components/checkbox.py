@@ -110,7 +110,7 @@ class CustomCheckbox(Component):
         if disabled:
             self.disabled = True
 
-        return (score, "")
+        return score
 
 
 
