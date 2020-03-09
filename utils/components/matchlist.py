@@ -44,7 +44,7 @@ class CustomMatchList(Component):
                 "content": target,
                 "target": True
             })
-            self._sol.append((sourceid, targetid))
+            self._sol.append({'source': sourceid, 'target': targetid})
         rd.shuffle(self.nodes)
 
     def eval(self, display=True, grading="RightMinusWrong", disabled=True):
@@ -54,7 +54,7 @@ class CustomMatchList(Component):
         error = 0
         rightsource = []
         for link in self.links:
-            if (link['source'], link['target']) in self._sol:
+            if {'source': link['source'], 'target': link['target']} in self._sol:
                 rightsource.append(link['source'])
 
         for node in self.nodes:
