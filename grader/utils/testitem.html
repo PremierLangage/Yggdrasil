@@ -1,6 +1,6 @@
             <div>
                 <button type="button"
-                        class="btn btn-block btn-sm {%  if not test.status %}btn-outline-danger{% else %}btn-outline-success{% endif %}"
+                        class="btn btn-link btn-sm {%  if not test.status %}btn-outline-danger{% else %}btn-outline-success{% endif %}"
                         {%  if not test.status %}aria-expanded="true" aria-controls="{{ test.make_id() }}"{% endif %}
                         data-toggle="collapse"
                         data-target="#{{ test.make_id() }}">
