@@ -44,7 +44,7 @@ class CustomMatchList(Component):
                 "content": target,
                 "target": True
             })
-        self._sol.append({ "source": sourceid, "target": targetid })
+        self._sol.append((sourceid, targetid)
         rd.shuffle(self.nodes)
 
     def eval(self, display=True, grading="RightMinusWrong", disabled=True):
@@ -52,12 +52,17 @@ class CustomMatchList(Component):
         Evaluate the answer stored in the component.
         """ 
         error = 0
-        for e in self.nodes:
-            if 'source' in e and e['source']:
-                if source_link(e['id'],self.links,self._sol):
-                    e['css'] = 'success-state'
+        rightsource = []
+        for link in self.links:
+            if (link['source'], link['target']) is in self._sol:
+                rightsource.append(link['source'])
+
+        for node in self.nodes:
+            if 'source' in node and node['source']:
+                if node['id'] is in rightsource:
+                    node['css'] = 'success-state'
                 else:
-                    e['css'] = 'error-state'
+                    node['css'] = 'error-state'
                     error = error + 1
 
         if error == 0:
