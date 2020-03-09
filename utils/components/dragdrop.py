@@ -116,7 +116,7 @@ class DragDropGroup():
        if isinstance(matches, str):
             self._matches.append((self.labels[matches].cid,self.drops[drop].cid))
        if isinstance(matches, list):
-            self._matches += [(self.labels[label_name].cid, self.drops[drop].cid)) for label_name in matches]
+            self._matches += [(self.labels[label_name].cid, self.drops[drop].cid) for label_name in matches]
 
     def set_match_by_content(self, matches):
         self.matches = []
