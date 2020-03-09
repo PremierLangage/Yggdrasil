@@ -66,6 +66,6 @@ class CustomMatchList(Component):
                     error = error + 1
 
         if error == 0:
-            return (100, '')
+            return (100, rightsource)
         else:
-            return (0, '')
+            return (0, rightsource)
