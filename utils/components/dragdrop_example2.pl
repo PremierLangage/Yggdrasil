@@ -14,7 +14,9 @@ gt="&gt;"
 n = 4
 
 mygroup = DragDropGroup()
-mygroup.set_label({"lt": lt, "gt": gt})
+mygroup.add_label("papa")
+mygroup.add_label("maman")
+#mygroup.set_label({"lt": lt, "gt": gt})
 
 numbers = []
 for i in range(n):
@@ -28,7 +30,8 @@ for i in range(n):
 ==
 
 text==
-Comparer les nombres suivants avec les symboles {{ mygroup.labels['lt'] | component }} et {{ mygroup.labels['gt'] | component }}.
+#Comparer les nombres suivants avec les symboles {{ mygroup.labels['lt'] | component }} et {{ mygroup.labels['gt'] | component }}.
+Comparer les nombres suivants avec les symboles {{ mygroup.labels['papa'] | component }} et {{ mygroup.labels['gt'] | component }}.
 ==
 
 form==
