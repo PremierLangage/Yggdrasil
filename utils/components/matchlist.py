@@ -69,23 +69,3 @@ class CustomMatchList(Component):
             return (100, '')
         else:
             return (0, '')
-
-def source_link(sourceId,links1,links2):
-    targetId1=""
-    targetId2=""
-    for e in links1:
-        if e['source']==sourceId:
-            targetId1=e['target']
-            break
-    for e in links2:
-        if e['source']==sourceId:
-            targetId2=e['target']
-            break
-    return targetId1==targetId2
-
-
-
-
-
-
-
