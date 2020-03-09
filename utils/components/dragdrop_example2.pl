@@ -20,7 +20,7 @@ numbers = []
 for i in range(n):
     [a,b] = rd.sample(range(10,100),2)
     numbers.append([a,b])
-    mygroup.add_drop({str(i):"papa"}) # à modifier  en remplaçant str(i) par i quand les labels/drops pourront être des listes et non des dict.
+    mygroup.add_drop({str(i):""}) # à modifier  en remplaçant str(i) par i quand les labels/drops pourront être des listes et non des dict.
     if a < b:
         mygroup.add_match_by_content(str(i),lt) 
     else:
