@@ -38,7 +38,7 @@ form ==
 ==
 
 evaluator ==
-grade = radio.eval()
+score = radio.eval()
 ==
 
 
