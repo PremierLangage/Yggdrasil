@@ -59,7 +59,7 @@ class CustomMatchList(Component):
 
         for node in self.nodes:
             if 'source' in node and node['source']:
-                if node['id'] is in rightsource:
+                if node['id'] in rightsource:
                     node['css'] = 'success-state'
                 else:
                     node['css'] = 'error-state'
