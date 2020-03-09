@@ -132,7 +132,7 @@ class DragDropGroup():
             label = self.get_label_by_content(matches)
             self._matches.append((label.cid, self.drops[drop].cid))
        if isinstance(matches, list):
-            self._matches += [(self.get_label_by_content(label_content).cid, self.drops[drop].cid)) for label_content in matches]
+            self._matches += [(self.get_label_by_content(label_content).cid, self.drops[drop].cid) for label_content in matches]
     
     def eval(self, display=True, grading_function= all_or_nothing, disabled=True):
         feedback=""
