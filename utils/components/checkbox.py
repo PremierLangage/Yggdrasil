@@ -46,10 +46,10 @@ class CustomCheckbox(Component):
         """
         Set items and solutions from lists of right and wrong items.
         """
-        if nitems is None:
-            nitems = len(nbright)+len(nbwrong)
-        if nright is None:
-            nright = len(nbright)
+        if nbitems is None:
+            nbitems = len(right)+len(wrong)
+        if nbright is None:
+            nbright = len(right)
 
         self.setitems(rd.sample(right,nbright)+rd.sample(wrong,nbitems-nbright))
 
