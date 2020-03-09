@@ -16,7 +16,7 @@ class CustomDragDrop(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-drag-drop'
         self.decorator = 'CustomDragDrop'
-        self.content = "papa"
+        self.content = ""
         self.group_id = ""
         self.cloneable = False
         super().__init__(**kwargs)
