@@ -14,7 +14,7 @@ gt="&gt;"
 n = 4
 
 mygroup = DragDropGroup()
-mygroup.set_labels({"lt": lt, "gt": gt})
+mygroup.set_label({"lt": lt, "gt": gt})
 
 numbers = []
 for i in range(n):
