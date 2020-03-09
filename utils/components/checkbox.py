@@ -42,7 +42,7 @@ class CustomCheckbox(Component):
         elif isinstance(index,str):
             self._sol = [next(item['id'] for item in self.items if item['content'] == content)]
 
-    def setdata_from_right_wrong(self, right, wrong, nitems=None, nright=None):
+    def setdata_from_rw(self, right, wrong, nitems=None, nright=None):
         """
         Set items and solutions from lists of right and wrong items.
         """
@@ -117,4 +117,5 @@ def right_minus_wrong(nbright=0, nbwrong=0, nbsol=1, nbitems=1):
 
 def correct_items(nbright=0, nbwrong=0, nbsol=1, nbitems=1):
     return int(round(max([(nbright-2*(nbitems-nbright))/nbitems*100,0])))
+
 
