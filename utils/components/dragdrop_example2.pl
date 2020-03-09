@@ -8,7 +8,7 @@ before==
 import random as rd
 from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
 
-lt="Maman"
+lt="&lt;"
 gt="&gt;"
 
 n = 4
@@ -20,7 +20,7 @@ numbers = []
 for i in range(n):
     [a,b] = rd.sample(range(10,100),2)
     numbers.append([a,b])
-    mygroup.add_drop({str(i):""}) # à modifier quand les labels/drops pourront être des listes et non des dict.
+    mygroup.add_drop({str(i):"papa"}) # à modifier  en remplaçant str(i) par i quand les labels/drops pourront être des listes et non des dict.
     if a < b:
         mygroup.add_match_by_content(str(i),lt) 
     else:
@@ -34,7 +34,7 @@ Comparer les nombres suivants avec les symboles {{ mygroup.labels['lt'] | compo
 form==
 <ul>
 {% for i in mygroup.drops %}
-<li> {{ numbers[loop.index][0] }} {{ mygroup.drops[i] |component }} {{ numbers[loop.index][1] }} </li>
+<li> {{ numbers[loop.index][0] }} {{ mygroup.drops[i] | component }} {{ numbers[loop.index][1] }} </li>
 {% endfor %}
 </ul>
 ==
