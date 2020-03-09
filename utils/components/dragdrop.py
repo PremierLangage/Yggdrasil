@@ -97,7 +97,7 @@ class DragDropGroup():
         if isinstance(labels, str):
             self.labels[labels] = CustomDragDrop.Label(content = labels, group_id = self.id, cloneable = self.cloneable)
         if isinstance(labels, dict):
-            self.labels.update({label_name:  CustomDragDrop.Label(content = label_content, group_id = self.id, cloneable = self.cloneable) for (label_name, label_content) in labels.items()})
+            self.labels.update({label_name:  CustomDragDrop.Label(content = label_content"papa", group_id = self.id, cloneable = self.cloneable) for (label_name, label_content) in labels.items()})
         if isinstance(labels, list):
             self.labels.update({string:  CustomDragDrop.Label(content = string, group_id = self.id, cloneable = self.cloneable) for string in labels})
 
