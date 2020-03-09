@@ -34,10 +34,10 @@ class CustomTextSelect(Component):
         self.decorator = 'CustomText'
         super().__init__(**kwargs)
 
-    def settext(self,text):
-        self.text,self._indexsol=read_text_bracket(bracket_words(text))
+    def settext(self, text):
+        self.text = self.bracket(text)
 
-    def loadtext(self,text):
+    def setdata_from_text(self,text):
         self.text,self._indexsol=read_text_bracket(bracket_words(text))
 
     def eval(self,**kwargs):
