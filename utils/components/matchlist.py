@@ -65,5 +65,5 @@ class CustomMatchList(Component):
                     node['css'] = 'error-state'
                     error = error + 1
 
-        return (100, str(self._sol)+str()+str(rightsource))
+        return (100, str(self._sol)+str(self.links)+str(rightsource))
 
