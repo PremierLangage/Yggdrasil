@@ -20,11 +20,11 @@ numbers = []
 for i in range(n):
     [a,b] = rd.sample(range(10,100),2)
     numbers.append([a,b])
-    mygroup.add_drop("")
+    mygroup.add_drop({str(i):""}) # à modifier quand les labels/drops pourront être des listes et non des dict.
     if a < b:
-        mygroup.add_match_by_content(i,lt) 
+        mygroup.add_match_by_content(str(i),lt) 
     else:
-        mygroup.add_match_by_content(i,gt) 
+        mygroup.add_match_by_content(str(i),gt) 
 ==
 
 text==
