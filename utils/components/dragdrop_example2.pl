@@ -33,8 +33,8 @@ Comparer les nombres suivants avec les symboles {{ mygroup.labels['lt'] | compo
 
 form==
 <ul>
-{% for i in range(4) %}
-<li> {{ numbers[i][0] }} {{ mygroup.drop[i] |component }} {{ numbers[i][1] }} </li>
+{% for i in mygroup.drops %}
+<li> {{ numbers[i][0] }} {{ mygroup.drops[i] |component }} {{ numbers[i][1] }} </li>
 {% endfor %}
 </ul>
 ==
