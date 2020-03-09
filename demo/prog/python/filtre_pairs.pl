@@ -12,7 +12,7 @@ Exemples d'appels :
 ==
 
 grader==#|python|
-
+import random as rd
 
 def ref(lst):
     return [num for num in lst if num % 2 == 0]     
@@ -24,8 +24,10 @@ run('filtre_pairs([2,21,5,7,4,4,13,0])',title = 'Test 1', result = [2,4,4,0])
 run('filtre_pairs([3,13,7])', title = 'Test 1', result = [])
 
 begin_test_group("Tests aléatoires")
-run('filtre_pairs([2,21,5,7,4,4,13,0])',title = 'Test 1', result = [2,4,4,0])
-run('filtre_pairs([3,13,7])', title = 'Test 1', result = [])
+for _ in range(10):
+    lst = [rd.randint(100) for _ in range(20)]
+    lst2 = ref(lst)
+    run('filtre_pairs({repr(lst)})',title = 'Test 1', result = lst2)
 
 ==
 
