@@ -24,14 +24,14 @@ for i in range(n):
     numbers.append([a,b])
     mygroup.add_drop({str(i):""}) # à modifier  en remplaçant str(i) par i quand les labels/drops pourront être des listes et non des dict.
     if a < b:
-        mygroup.add_match_by_content(str(i),lt) 
+        #mygroup.add_match_by_content(str(i),lt) 
     else:
-        mygroup.add_match_by_content(str(i),gt) 
+        #mygroup.add_match_by_content(str(i),gt) 
 ==
 
 text==
 #Comparer les nombres suivants avec les symboles {{ mygroup.labels['lt'] | component }} et {{ mygroup.labels['gt'] | component }}.
-Comparer les nombres suivants avec les symboles {{ mygroup.labels['papa'] | component }} et {{ mygroup.labels['gt'] | component }}.
+Comparer les nombres suivants avec les symboles {{ mygroup.labels['papa'] | component }} et {{ mygroup.labels['maman'] | component }}.
 ==
 
 form==
