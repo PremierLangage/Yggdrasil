@@ -62,10 +62,11 @@ class DragDropGroup():
     def __init__(self, **kwargs):
 
         self.id = str(uuid4()) # generates a random id for the group
-        self.labels = {}
+        self.labels = {} # labels/drops are dictionaries whose values are objects of class Label/Drop
         self.drops = {}
         self.cloneable = True # Tells if a label can be used several times or not
-        self._matches = [] # List of correct matches between a label and a drop_. A match is a pair of cid's
+        self._matches = [] # List of correct matches between a label and a drop. A match is a pair of cid's
+        # underscore to make matches  invisible in the html.
 
         
         if 'id' in kwargs: # comes first because id is copied in labels and drops
@@ -84,7 +85,12 @@ class DragDropGroup():
     def set_label(self, labels):
          self.labels = {}
          self.add_label(labels)
-
+""" 
+add_label can have as argument:
+     a string, which is then both the name and visible content of the label,
+     or a dictionary which is then used to update self.labels, adding in each component some info
+     or a list of strings, and then a label is added for each string as above.
+"""
     def add_label(self, labels):
         if isinstance(labels, str):
             self.labels[labels] = CustomDragDrop.Label(content = labels, group_id = self.id, cloneable = self.cloneable)
