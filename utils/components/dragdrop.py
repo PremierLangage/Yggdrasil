@@ -88,7 +88,7 @@ class DragDropGroup():
     def add_label(self, labels):
         if isinstance(labels, str):
             self.labels[labels] = CustomDragDrop.Label(content = labels, group_id = self.id, cloneable = self.cloneable)
-        if isinstance(labels, dic):
+        if isinstance(labels, dict):
             self.labels.update({label_name:  CustomDragDrop.Label(content = label_content, group_id = self.id, cloneable = self.cloneable) for (label_name, label_content) in labels.items()})
         if isinstance(labels, list):
             self.labels.update({string:  CustomDragDrop.Label(content = string, group_id = self.id, cloneable = self.cloneable) for string in labels})
@@ -100,7 +100,7 @@ class DragDropGroup():
     def add_drop(self, drops):
         if isinstance(drops, str):
             self.drops[drops] = CustomDragDrop.Drop(content = drops, group_id = self.id)
-        if isinstance(drops, dic):
+        if isinstance(drops, dict):
             self.drops.update({drop_name:  CustomDragDrop.Drop(content = drop_content, group_id = self.id) for (drop_name, drop_content) in drops.items()})
         if isinstance(drops, list):
             self.drops.update({string:  CustomDragDrop.Drop(content = string, group_id = self.id) for string in drops})
