@@ -44,7 +44,7 @@ class CustomMatchList(Component):
                 "content": target,
                 "target": True
             })
-        self._sol.append((sourceid, targetid)
+        self._sol.append((sourceid, targetid))
         rd.shuffle(self.nodes)
 
     def eval(self, display=True, grading="RightMinusWrong", disabled=True):
