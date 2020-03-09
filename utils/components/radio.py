@@ -43,6 +43,7 @@ class CustomRadio(Component):
         """
         Evaluate the answer stored in the component.
         """
+        score = 0
         for item in self.items:
             id = item['id']
             if id == self._sol and id == self.selection:
@@ -53,9 +54,9 @@ class CustomRadio(Component):
                 if display:
                     item['css'] = 'error-state icon-times-after'
             elif id == self._sol and id != self.selection:
-                score = 0
                 if display:
                     item['css'] = 'icon-check-after'
+
         if disabled:
             self.disabled = True
 
