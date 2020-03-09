@@ -21,11 +21,11 @@ class CustomSortList(Component):
         self._feedback = {}
         for item in lst:
             id = str(uuid4())
-            if isinstance(item,tuple):
-                self._feedback[id]=item[1]
-                self.items.append({"id": id,"content": item[0]})
+            if isinstance(item, tuple):
+                self._feedback[id] = item[1]
+                self.items.append({"id": id, "content": item[0]})
             else:
-                self.items.append({"id": id,"content": item})
+                self.items.append({"id": id, "content": item})
             self._order.append(id)
         rd.shuffle(self.items)
 
