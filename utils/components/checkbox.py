@@ -115,4 +115,14 @@ class CustomCheckbox(Component):
 
 
 
+def all_or_nothing(nbright=0, nbwrong=0, nbsol=1, nbitems=1):
+    if nbwrong == total:
+        return 100
+    else:
+        return 0
 
+def right_minus_wrong(num_right=0, num_wrong = 0, total = 1):
+    return max([round(num_right-num_wrong)/total*100),0])
+
+def correct_items(num_right=0, num_wrong = 0, total = 1):
+    return max([round(num_right-num_wrong)/total*100),0])
