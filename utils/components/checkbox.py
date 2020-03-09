@@ -22,7 +22,7 @@ class CustomCheckbox(Component):
         """
         Load items in the component.
         """
-        self.items = [{"id": uuid4(), "content": content} for content in contents]
+        self.items = [{"id": str(uuid4()), "content": content} for content in contents]
 
     def setsol_from_index(self, index):
         """
