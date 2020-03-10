@@ -19,7 +19,7 @@ tag=exemple|demo|CYOA
 
 template=/ComputerScience/Games/CYOA/CYOA_template.pl
 
-@ Ace_Debugger_1.py
+@ histoire.py
 
 cabane =$ cabane.jpg
 champ =$ champ.jpg
