@@ -53,17 +53,17 @@
         "<center><b>La clé est dans {{ cle }}</b></center>",
 
         [
-            ['3', "Vous vous dirigez vers la cabane"],
+            ['3', "Vous vous dirigez vers la cabane", 'gagne = (cle=="la cabane")'],
 
-            ['4', "Vous vous dirigez vers le champ"],
+            ['4', "Vous vous dirigez vers le champ", 'gagne = (cle=="le champ")'],
 
-            ['5', "Vous vous dirigez vers la forêt"],
+            ['5', "Vous vous dirigez vers la forêt", 'gagne = (cle=="la forêt")'],
 
-            ['6', "Vous vous dirigez vers le lac"],
+            ['6', "Vous vous dirigez vers le lac", 'gagne = (cle=="le lac")'],
 
-            ['7', "Vous vous dirigez vers la montagne"],
+            ['7', "Vous vous dirigez vers la montagne", 'gagne = (cle=="la montagne")'],
 
-            ['8', "Vous vous dirigez vers le verger"],
+            ['8', "Vous vous dirigez vers le verger", 'gagne = (cle=="le verger")'],
         ]
     ],
 
@@ -97,7 +97,7 @@
         [
             ['9', "Vous voulez finalement quitter ce lieu pour aller dans un autre endroit"],
 
-            ['11', "Vous cherchez la clé dans le champ."],
+            ['10', "Vous cherchez la clé dans le champ."],
         ]
     ],
 
@@ -114,7 +114,7 @@
         [
             ['9', "Vous voulez finalement quitter ce lieu pour aller dans un autre endroit"],
 
-            ['12', "Vous cherchez la clé dans la forêt."],
+            ['10', "Vous cherchez la clé dans la forêt."],
         ]
     ],
 
@@ -131,7 +131,7 @@
         [
             ['9', "Vous voulez finalement quitter ce lieu pour aller dans un autre endroit"],
 
-            ['13', "Vous cherchez la clé dans le lac."],
+            ['10', "Vous cherchez la clé dans le lac."],
         ]
     ],
 
@@ -148,7 +148,7 @@
         [
             ['9', "Vous voulez finalement quitter ce lieu pour aller dans un autre endroit"],
 
-            ['14', "Vous cherchez la clé dans la montagne."],
+            ['10', "Vous cherchez la clé dans la montagne."],
         ]
     ],
 
@@ -165,7 +165,7 @@
         [
             ['9', "Vous voulez finalement quitter ce lieu pour aller dans un autre endroit"],
 
-            ['15', "Vous cherchez la clé dans le verger."],
+            ['10', "Vous cherchez la clé dans le verger."],
         ]
     ],
 
@@ -188,17 +188,17 @@
         "<center><b>La clé est dans {{ cle }}</b></center>",
 
         [
-            ['3', "Vous vous dirigez vers la cabane"],
+            ['3', "Vous vous dirigez vers la cabane", 'gagne = (cle=="la cabane")'],
 
-            ['4', "Vous vous dirigez vers le champ"],
+            ['4', "Vous vous dirigez vers le champ", 'gagne = (cle=="le champ")'],
 
-            ['5', "Vous vous dirigez vers la forêt"],
+            ['5', "Vous vous dirigez vers la forêt", 'gagne = (cle=="la forêt")'],
 
-            ['6', "Vous vous dirigez vers le lac"],
+            ['6', "Vous vous dirigez vers le lac", 'gagne = (cle=="le lac")'],
 
-            ['7', "Vous vous dirigez vers la montagne"],
+            ['7', "Vous vous dirigez vers la montagne", 'gagne = (cle=="la montagne")'],
 
-            ['8', "Vous vous dirigez vers le verger"],
+            ['8', "Vous vous dirigez vers le verger", 'gagne = (cle=="le verger")'],
         ]
     ],
 
@@ -227,5 +227,6 @@
 
         ]
     ],
+
 }
 
