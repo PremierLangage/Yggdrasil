@@ -208,6 +208,8 @@
 
         "{% if gagne %}"
 
+        "<center><img src={{ img_cle }} alt='image de clé' style=\"width:400px;\" /></center><br />"
+
         "<p>Incroyable, vous deviez être particulièrement bien renseigné ! "
         "Alors que les lieux semblait très vaste, voilà que paf, vous tombez directement sur la clé. "
         "Variment, bravo. Vous réussissez cette aventure qui est maintenant terminée. <p><br />"
