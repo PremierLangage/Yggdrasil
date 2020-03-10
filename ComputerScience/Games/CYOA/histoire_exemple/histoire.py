@@ -18,13 +18,29 @@
         "<p>Ici, dans cette démontration, l'exercice va cacher une clé dans un lieu aléatoire "
         "(c'est un tirage aléatoire uniforme dans une liste finie de lieux). Pour gagner, "
         "vous devrez aller chercher la clé dans l'endroit indiquéé.</p><br />"
-        
-        "La clé est dans {{ cle }}"
         ,
 
         [
-
+            ['2' , "continuer (remarquez ici qu'un seul choix est possible)"]
         ],
+    ],
+
+    '2':
+    [
+        '',
+
+        "<p>Une décision a été prise lors de la première étape, Pour les connaisseurs de Python "
+        "cette exercice PLaTon a éxécuté ça : </p> "
+        "<pre>"
+        "import random; cle=random.choice([\"la cabane\", \"le champ\", \"la forêt\", \"le lac\", \"la montagne\", \"le verger\"])"
+        "</pre><br />"
+        
+        "<center><b>La clé est dans {{ cle }}</b></center>",
+
+
+        [
+
+        ]
     ],
 }
 
