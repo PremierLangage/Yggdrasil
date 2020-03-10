@@ -1,5 +1,6 @@
 @ /utils/sandboxio.py
 @ /utils/scoring.py
+@ /utils/components/checkbox.py [customcheckbox.py]
 @ /builder/before2.py [builder.py]
 @ /grader/evaluator2.py [grader.py]
 
