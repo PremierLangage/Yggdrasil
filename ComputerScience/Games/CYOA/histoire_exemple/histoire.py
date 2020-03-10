@@ -73,10 +73,14 @@
 
         "<center><img src={{ cabane }} alt='image de cabane' style=\"width:400px;\" /></center>"
 
-        "",
+        "<p>Cette image de petite maison abandonnée est libre de droit (merci au site BURST!). </p><br />"
+
+        "<p>Que voulez-vous faire ?</p><br />",
 
         [
-        
+            ['9', "Vous voulez finalement quitter ce lieux et aller ailleurs"],
+
+            ['10', "Vous cherchez la clé dans la cabane"],
         ]
     ],
 }
