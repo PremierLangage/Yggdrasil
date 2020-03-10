@@ -169,5 +169,38 @@
         ]
     ],
 
+'9':
+    [
+        '',
+
+        "<p>Le graphe de votre histoire, ou serious game, peut contenir des boucles. typiquement, vous "
+        "vous trouvez sur une étape visitable une infinité de fois si vous ne voulez pas aller "
+        "chercher la clé là où elle se trouve. </p><br />"
+
+        "<p>Aussi, encore pour les fans de Python (les autres enseignants peuvent aussi demander de "
+        "l'aide, c'est pas interdit), on peut facilement incrémenter un compteur ou mesurer les "
+        "échecs et les réussites des utilisateurs. Celà permet, dans ces petits jeux, de calculer "
+        "une note ou d'adapter un feedback adéquat vis à vis de ce que vous voulez présenter "
+        "à vos élèves.<p><br />"
+
+        "<p>Où voulez-vous aller ce coup-ci ? Pour rappel :</p><br />"
+
+        "<center><b>La clé est dans {{ cle }}</b></center>",
+
+        [
+            ['3', "Vous vous dirigez vers la cabane"],
+
+            ['4', "Vous vous dirigez vers le champ"],
+
+            ['5', "Vous vous dirigez vers la forêt"],
+
+            ['6', "Vous vous dirigez vers le lac"],
+
+            ['7', "Vous vous dirigez vers la montagne"],
+
+            ['8', "Vous vous dirigez vers le verger"],
+        ]
+    ],
+
 }
 
