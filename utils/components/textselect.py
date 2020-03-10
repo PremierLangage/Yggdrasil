@@ -73,9 +73,11 @@ class CustomTextSelect(Component):
     @staticmethod
     def index_bracket(string):
         """
-        
+        Return the indices of the units between double curly brackets.
         """
-        lst=re.findall(r"\{[^\{\}]*\}|\{\{[^\}]*\}\}|[^\{\}]+",string)
+        pattern = r"\{[^\{\}]*\}|\{\{[^\}]*\}\}|[^\{\}]+"
+        lst = re.findall(pattern, string)
+        
         selection=[]
         k=0
         for i in range(len(lst)):
