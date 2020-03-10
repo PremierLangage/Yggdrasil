@@ -20,6 +20,7 @@
 # This builder mainly parse the python game_data_file...
 
 import sys, json, jsonpickle
+import random
 from components import RadioGroup
 
 def ParseGameData(file_data):
@@ -87,6 +88,7 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(context if context else get_context(), unpicklable=False))
         
     sys.exit(0)
+
 
 
 
