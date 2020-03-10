@@ -1,5 +1,4 @@
-# author = Antoine Meyer
-extends = ../../templates/generic/generic.pl
+extends = /model/progpython.pl
 
 title = Échange de deux variables
 
