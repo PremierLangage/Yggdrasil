@@ -38,6 +38,18 @@
         "cle=random.choice(lieux)"
         "</pre><br />"
         
+        "<p>C'est complètement optionnel et vous pourriez écrire une histoire très classique avec "
+        "seulement des étapes contenant du texte en français et rien de plus. Toutefois, pour les "
+        "enseignants à l'aise avec Python, sachez qu'il est possible d'utiliser toute la puissance "
+        "de python à chaque étape. Ainsi, on pourrait afficher le graphe d'une fonction, dessiner une "
+        "molécule, inclure une image au microscope, etc. Tout ce qui est Python et javascript friendly "
+        "est envisageable.</p><br />"
+
+        "<p>Pour en revenir à cette petite démonstration, l'exercice vient de cacher la clé dans un des "
+        "lieux possibles. Si vous recommencer cet démonstration (en actualisant sauvagement la page par "
+        "exemple), il y a de forte chance (5 sur 6) que la clé se retrouve dans un endroit différent. "
+        "Sans sous faire plus attendre, ce coup-ci, voilà où se trouve la clé.</p><br />"
+
         "<center><b>La clé est dans {{ cle }}</b></center>",
 
 
