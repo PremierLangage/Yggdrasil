@@ -46,7 +46,7 @@
         "est envisageable.</p><br />"
 
         "<p>Pour en revenir à cette petite démonstration, l'exercice vient de cacher la clé dans un des "
-        "lieux possibles. Si vous recommencer cet démonstration (en actualisant sauvagement la page par "
+        "lieux possibles. Si vous recommencez cette démonstration (en actualisant sauvagement la page par "
         "exemple), il y a de forte chance (5 sur 6) que la clé se retrouve dans un endroit différent. "
         "Sans sous faire plus attendre, ce coup-ci, voilà où se trouve la clé.</p><br />"
 
