@@ -15,14 +15,14 @@ jxg.setscript(script_init)
 ==
 
 script_init ==
-var A = board.create('point',[-2,-2],{size:2,name:'A',color:'red'});
+var A = board.create('point',[-2,2],{size:2,name:'A',color:'red'});
 var B = board.create('point',[1,1],{size:2,name:'B',color:'blue'});
 var C = board.create('point',[0,0],{size:2,name:'C',color:'blue'});
 var line = board.create('line',[B,C]);
 ==
 
 text ==
-Tracer la droite d'équation $! y = {{f.latex}} !$.
+Déplacer les points.
 ==
 
 form ==
