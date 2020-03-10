@@ -78,7 +78,7 @@
         "<p>Que voulez-vous faire ?</p><br />",
 
         [
-            ['9', "Vous voulez finalement quitter ce lieux et aller ailleurs"],
+            ['9', "Vous voulez finalement quitter ce lieu pour aller dans un autre endroit"],
 
             ['10', "Vous cherchez la clé dans la cabane"],
         ]
