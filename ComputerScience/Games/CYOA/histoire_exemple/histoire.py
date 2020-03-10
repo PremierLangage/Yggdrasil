@@ -72,11 +72,11 @@
         '',
 
         "<center><img src={{ cabane }} alt='image de cabane' style=\"width:400px;\" /></center>"
-        
+
         "",
 
         [
-            []
+        
         ]
     ],
 }
