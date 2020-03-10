@@ -17,7 +17,7 @@
         
         "<p>Ici, dans cette démontration, l'exercice va cacher une clé dans un lieu aléatoire "
         "(c'est un tirage aléatoire uniforme dans une liste finie de lieux). Pour gagner, "
-        "vous devrez aller chercher la clé dans l'endroit indiquéé.</p><br />"
+        "vous devrez aller chercher la clé dans l'endroit indiqué.</p><br />"
         ,
 
         [
