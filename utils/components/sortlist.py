@@ -36,45 +36,38 @@ class CustomSortList(Component):
 
         if display:
             for i, e in enumerate(self.items):
-                id=e['id']
-                if id == self._order[i]:
+
+                id = e['id']
+
+                if id == self._sol[i]:
                     e['css'] = 'success-state'
                     css_state="success"
                 else:
                     e['css'] = 'error-state'
                     css_state="danger"
-                if id in self._feedback:
-                    e['content']=  """<div class="d-flex justify-content-between align-items-center">
-                        <span class="badge badge-%s"> %s </span>
-                        <a href="#" onclick="event.preventDefault()" data-toggle="tooltip" class="alert-%s alert-link" title="%s"> % s </a>
-                        <span></span>
-                    </div>""" % (css_state,str(1+self._order.index(e['id'])), css_state,self._feedback[id],e['content'])
-                else:
-                    e['content']=  """<div class="d-flex justify-content-between align-items-center">
+
+                e['content']=  """<div class="d-flex justify-content-between align-items-center">
                         <span class="badge badge-%s"> %s </span>
                         <span> %s </span>
                         <span></span>
-                    </div>""" % (css_state,str(1+self._order.index(id)),e['content'])
+                    </div>""" % (css_state,str(1+self._sol.index(id)),e['content'])
         
-        n = len(self.items)
-        order = [self._order.index(item['id']) for item in self.items]
+        order = [self._sol.index(item['id']) for item in self.items]
 
         if scoring == "ExactOrder":
             score = exact_order(order)
         elif scoring == "KendallTau":
-            score = scoring_kendall_tau(order)         
+            score = kendall_tau(order)         
         else:
             raise ValueError(f"'{scoring}' is not a valid scoring")
-        if grading == "AllOrNothing":
-            if order == list(range(n)):
-                score = 100
-            else:
-                score = 0     
-        elif grading == "":
-            tau,_ = kendalltau(order,list(range(n)))
-            score = int(round(max([0,tau])*100))
 
-        if disabled:
-            self.disabled = True
 
-        return (score, "")
+def exact_order(order):
+    n = len(order)
+    return 100 if order == list(range(n)) else 0
+
+def kendall_tau(order):
+    n = len(order)
+    tau,_ = kendalltau(order, list(range(n)))
+    return int(round(max([0,tau])*100))
+
