@@ -31,7 +31,7 @@ sync = mygroup.labels['lt']
 ==
 
 text==
-Comparer les nombres suivants avec les symboles {{ sync|component }} et {{ mygroup.labels['gt'] | component }}.
+Comparer les nombres suivants avec les symboles {{ mygroup.labels['lt'] | component }} et {{ mygroup.labels['gt'] | component }}.
 ==
 
 form==
