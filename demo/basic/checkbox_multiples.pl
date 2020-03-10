@@ -26,6 +26,6 @@ form ==
 ==
 
 evaluator ==
-score = checkbox.eval(scoring="AllOrNothing")
+score = checkbox.eval(scoring="RightMinusWrong")
 ==
 
