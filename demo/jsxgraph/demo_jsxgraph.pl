@@ -11,7 +11,7 @@ jxg.decorator = CustomJSXGraph
 jxg.attributes % {"showNavigation":false, "boundingbox":[-6,6,6,-6]}
 
 before ==
-jxg.loadscript(script_init)
+jxg.setscript(script_init)
 ==
 
 script_init ==
