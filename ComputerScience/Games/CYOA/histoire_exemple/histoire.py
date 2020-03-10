@@ -204,7 +204,7 @@
 
 '10':
     [
-        'gagne = (cle=="la cabane")',
+        '',
 
         "{% if gagne %}"
 
