@@ -29,7 +29,6 @@ def read_text_bracket(string):
 
 
 class CustomTextSelect(Component):
-class CustomTextSelect:
     def __init__(self, **kwargs):
         self.text = ""
         self._sol = []
