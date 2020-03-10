@@ -32,7 +32,8 @@ form ==
 ==
 
 evaluator ==
-grade = matchlist.eval()
+score = matchlist.eval()
 ==
+
 
 
