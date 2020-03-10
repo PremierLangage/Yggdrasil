@@ -77,17 +77,18 @@ class CustomTextSelect(Component):
         """
         pattern = r"\{[^\{\}]*\}|\{\{[^\}]*\}\}|[^\{\}]+"
         lst = re.findall(pattern, string)
-        
-        selection=[]
-        k=0
+
+        selection = []
+        k = 0
         for i in range(len(lst)):
-            s=lst[i]
-            if s[0]=="{":
-                if len(s)> 2 and s[1]=="{":
+            s = lst[i]
+            if s[0] == "{":
+                if len(s) > 2 and s[1] == "{":
                     selection.append(k)
-                    lst[i]=s[1:-1]
-                k+=1
-        return ("".join(lst),selection)
+                    lst[i] = s[1:-1]
+                k += 1
+        
+        return ("".join(lst), selection)
 
     def eval(self,**kwargs):
         """
