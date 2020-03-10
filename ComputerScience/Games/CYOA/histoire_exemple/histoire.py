@@ -1,7 +1,7 @@
 {
     '1':
     [
-        '',
+        'cle=random.choice(["la cabane", "le champ", "la forêt", "le lac", "la montagne", "le verger"])',
 
         "<p>Voici un exemple d'histoire scénarisable avec inclusion d'images par exemple. </p><br />"
 
@@ -19,6 +19,7 @@
         "(c'est un tirage aléatoire uniforme dans une liste finie de lieux). Pour gagner, "
         "vous devrez aller chercher la clé dans l'endroit indiquéé.</p><br />"
         
+        "La clé est dans {{ cle }}"
         ,
 
         [
