@@ -61,6 +61,8 @@ class CustomSortList(Component):
         else:
             raise ValueError(f"'{scoring}' is not a valid scoring")
 
+        return score
+
 
 def exact_order(order):
     n = len(order)
