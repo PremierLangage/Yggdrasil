@@ -1,7 +1,7 @@
 {% if testgroup.status %}
 <div style="border:1px solid black;padding:5px;margin:5px;background-color:LightGreen;border-radius:4px;">
     <button type="button"
-            class="btn btn-block btn-success"
+            class="btn text-left btn-sm btn-block btn-success"
             data-toggle="collapse"
             data-target="#{{ testgroup.make_id() }}">
         <b>{{ testgroup.title }} : succès</b>
@@ -11,7 +11,7 @@
 {% else %}
 <div style="border:1px solid black;padding:5px;margin:5px;background-color:Tomato;border-radius:4px;">
     <button type="button"
-            class="btn btn-block  btn-danger"
+            class="btn text-left btn-sm btn-block  btn-danger"
             data-toggle="collapse"
             data-target="#{{ testgroup.make_id() }}"
             aria-expanded="true"
@@ -27,6 +27,7 @@
         </div>
     </div>
 </div>
+
 
 
 
