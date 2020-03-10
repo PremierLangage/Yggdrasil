@@ -27,7 +27,7 @@ for i in range(n):
         mygroup.add_match_by_content(str(i),gt) 
 
 # Pour le moment ça bugge: les étiquettes sont vides.
-lst_sync = [v for _, v in mygroup.labels.items()]
+lst_sync = [v for l, v in mygroup.labels.items()]
 ==
 
 text==
