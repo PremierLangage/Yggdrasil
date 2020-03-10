@@ -71,7 +71,7 @@
     [
         '',
 
-        "<center><img src={{ cabane }} alt='image de cabane' style=\"width:400px;\" /></center>"
+        "<center><img src={{ cabane }} alt='image de cabane' style=\"width:400px;\" /></center><br />"
 
         "<p>Cette image de petite maison abandonnée est libre de droit (merci au site BURST!). </p><br />"
 
