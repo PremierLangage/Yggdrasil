@@ -29,7 +29,7 @@ class CustomSortList(Component):
         """
         rd.shuffle(self.items)
 
-    def eval(self, display=True, grading="KendallTau", disabled=True):
+    def eval(self, display=True, scoring="KendallTau", disabled=True):
         """
         Evaluate the answer stored in the component.
         """
@@ -59,12 +59,18 @@ class CustomSortList(Component):
         n = len(self.items)
         order = [self._order.index(item['id']) for item in self.items]
 
+        if scoring == "ExactOrder":
+            score = exact_order(order)
+        elif scoring == "KendallTau":
+            score = scoring_kendall_tau(order)         
+        else:
+            raise ValueError(f"'{scoring}' is not a valid scoring")
         if grading == "AllOrNothing":
             if order == list(range(n)):
                 score = 100
             else:
                 score = 0     
-        elif grading == "KendallTau":
+        elif grading == "":
             tau,_ = kendalltau(order,list(range(n)))
             score = int(round(max([0,tau])*100))
 
