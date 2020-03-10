@@ -32,7 +32,10 @@
         "<p>Une décision a été prise lors de la première étape, Pour les connaisseurs de Python "
         "cette exercice PLaTon a éxécuté ça : </p> "
         "<pre>"
-        "import random; cle=random.choice([\"la cabane\", \"le champ\", \"la forêt\", \"le lac\", \"la montagne\", \"le verger\"])"
+        "import random "
+        " "
+        "lieux = [\"la cabane\", \"le champ\", \"la forêt\", \"le lac\", \"la montagne\", \"le verger\"]"
+        "cle=random.choice(lieux)"
         "</pre><br />"
         
         "<center><b>La clé est dans {{ cle }}</b></center>",
