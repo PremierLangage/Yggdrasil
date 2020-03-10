@@ -49,14 +49,25 @@ class CustomTextSelect(Component):
     def bracket(string):
         """
         Bracket a text.
+
+        Parts between square brackets are stripped from these enclosing brackets.
+        Parts between curly brackets or double curly brackets are left unchanged.
+        In remaining parts, words are enclosed in curly brackets.
         """
-        lst=re.findall(r"\{[^\{\}]*\}|\{\{[^\}]*\}\}|\[[^\]]*\]|[^\{\}\[\]]+",string)
+        # split the text
+        pattern = r"\{[^\{\}]*\}|\{\{[^\}]*\}\}|\[[^\]]*\]|[^\{\}\[\]]+"
+        lst = re.findall(pattern, string)
+
+        # process the different parts
         for i in range(len(lst)):
-            s=lst[i]
-            if s[0]=="[":
-                lst[i]=s[1:-1]
-            elif s[0]!="{":
-                lst[i]=re.sub(r"(\w+)", r"{\1}",s)
+            s = lst[i]
+            if s[0] == "[":
+                lst[i] = s[1:-1]
+            elif s[0] == "{":
+                pass
+            else:
+                lst[i] = re.sub(r"(\w+)", r"{\1}", s)
+
         return "".join(lst)
     
     @staticmethod
