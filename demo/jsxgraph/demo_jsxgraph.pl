@@ -29,24 +29,7 @@ form ==
 {{ jxg | component }}
 ==
 
-script_wrong ==
-var linesol = board.create('line',[[0,{{b}}],[1,{{a}}+{{b}}]],{color:'green'});
-==
-
 evaluator ==
-xA = jxg.points['A']['x']
-yA = jxg.points['A']['y']
-xB = jxg.points['B']['x']
-yB = jxg.points['B']['y']
-
-ansa = (yA-yB)/(xA-xB)
-ansb = yB-ansa*xB
-if equal_approx(atan2(ansa,1), atan2(a,1), 0.1, modulo=pi) and abs(ansb-b)<0.15:
-    score = 100
-else:
-    score = 0
-    jxg.addscript(script_wrong,globals())
-
-jxg.disabled = True
+grade = ("", str(jxg.points))
 ==
 
