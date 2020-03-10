@@ -30,18 +30,10 @@ form ==
 ==
 
 evaluator ==
-grade = sortlist.eval()
+score = sortlist.eval()
 ==
 
 settings.feedback = lightscore
-
-extrajs ==
-<script>
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();
-});
-</script>
-==
 
 
 
