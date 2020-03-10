@@ -1,6 +1,7 @@
 import random as rd
 from uuid import uuid4
 from components import Component
+from scoring import *
 
 class CustomSortList(Component):
     def __init__(self, **kwargs):
