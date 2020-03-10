@@ -202,5 +202,22 @@
         ]
     ],
 
+'10':
+    [
+        'gagne = (cle=="la cabane")',
+
+        "{% if gagne %}"
+
+        "<p>Incroyable, vous deviez être particulièrement bien renseigné ! "
+        "Alors que les lieux semblait très vaste, voilà que paf, vous tombez directement sur la clé. "
+        "Variment, bravo. Vous réussissez cette aventure qui est maintenant terminée. <p><br />"
+
+        "Vous pouvez recommencer cette aventure en acutalisant la page."
+
+        "{% else %}"
+
+
+        "{% endif %}"
+    ]
 }
 
