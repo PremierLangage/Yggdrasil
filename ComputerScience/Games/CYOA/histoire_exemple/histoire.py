@@ -212,12 +212,20 @@
         "Alors que les lieux semblait très vaste, voilà que paf, vous tombez directement sur la clé. "
         "Variment, bravo. Vous réussissez cette aventure qui est maintenant terminée. <p><br />"
 
-        "Vous pouvez recommencer cette aventure en acutalisant la page."
-
         "{% else %}"
 
+        "<p>Les lieux sont bien trop vaste. À force de chercher, vous perdez toute votre energie. "
+        "Et puis chercher une clé, ça ne rime à rien. Bon bah ça se termine de manière triste mais "
+        "est ce qu'un serious game, pour contenir un bon enjeu (voire challenge) pédagogique ne "
+        "doit-il pas forcément contenir un scénario d'échec ?"
 
         "{% endif %}"
-    ]
+
+        "<p>Vous pouvez recommencer cette aventure en acutalisant la page.</p><br />",
+
+        [
+
+        ]
+    ],
 }
 
