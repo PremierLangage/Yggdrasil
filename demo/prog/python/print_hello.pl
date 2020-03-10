@@ -1,6 +1,6 @@
 extends = /model/progpython.pl
 
-title = Échange de deux variables
+title = Affichage
 
 text==
 Afficher "Hello!" sur une première ligne et "Goodbye!" sur une seconde ligne.
