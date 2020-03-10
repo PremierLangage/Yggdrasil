@@ -27,6 +27,7 @@ foret =$ foret.jpg
 lac =$ lac.jpg
 montagne =$ montagne.jpg
 verger =$ verger.jpg
+img_cle =$ img_cle.jpg
 
 game_data_file = histoire.py
 
