@@ -219,13 +219,13 @@
         "<p>Les lieux sont bien trop vaste. À force de chercher, vous perdez toute votre energie. "
         "Et puis chercher une clé, ça ne rime à rien. Bon bah ça se termine de manière triste mais "
         "est ce qu'un serious game, pour contenir un bon enjeu (voire challenge) pédagogique ne "
-        "doit-il pas forcément contenir un scénario d'échec ?<p><br />"
+        "doit-il pas forcément contenir un scénario d'échec ? La question reste ouverte !<p><br />"
 
         "{% endif %}"
 
         "<p>Vous pouvez recommencer cette aventure en acutalisant la page.</p><br />"
         
-        "<p>Dans cet démonstration de modèle d'exercice, la note finale est <b>{{ grade }} sur "
+        "<p>Dans cet démonstration de modèle d'exercice, la note finale calculée est <b>{{ grade }} sur "
         "100</b>.</p><br />",
 
         [
