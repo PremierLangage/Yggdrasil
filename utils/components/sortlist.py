@@ -8,8 +8,7 @@ class CustomSortList(Component):
         self.selector = 'c-sort-list'
         self.decorator = 'CustomSortList'
         self.items = []
-        self._order = []
-        self._feedback = {}
+        self._sol = []
         super().__init__(**kwargs)
 
     def setdata_from_list(self, lst):
@@ -17,16 +16,11 @@ class CustomSortList(Component):
         Load items and set solution from an ordered list.
         """
         self.items = []
-        self._order = []
-        self._feedback = {}
-        for item in lst:
+        self._sol = []
+        for content in lst:
             id = str(uuid4())
-            if isinstance(item, tuple):
-                self._feedback[id] = item[1]
-                self.items.append({"id": id, "content": item[0]})
-            else:
-                self.items.append({"id": id, "content": item})
-            self._order.append(id)
+            self.items.append({"id": id, "content": content})
+            self._sol.append(id)
         rd.shuffle(self.items)
 
     def shuffle(self):
@@ -78,14 +72,3 @@ class CustomSortList(Component):
             self.disabled = True
 
         return (score, "")
-
-
-# texte qui bouge quand on déplace un item
-# lien du tooltip qui ouvre la racine du site
-# disabled qui désactive le tooltip
-# extrajs
-
-
-
-
-
