@@ -30,8 +30,11 @@ def read_text_bracket(string):
 
 class CustomTextSelect(Component):
     def __init__(self, **kwargs):
+        self.selector = 'c-text'
+        self.decorator = 'CustomText'
         self.text = ""
         self._sol = []
+        super().__init__(**kwargs)
 
     def settext(self, text):
         self.text = self.bracket(text)
