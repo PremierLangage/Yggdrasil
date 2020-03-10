@@ -1,5 +1,5 @@
 {
-    '1':
+'1':
     [
         'import random; cle=random.choice(["la cabane", "le champ", "la forêt", "le lac", "la montagne", "le verger"])',
 
@@ -25,7 +25,7 @@
         ],
     ],
 
-    '2':
+'2':
     [
         '',
 
@@ -64,6 +64,19 @@
             ['7', "Vous vous dirigez vers la montagne"],
 
             ['8', "Vous vous dirigez vers le verger"],
+        ]
+    ],
+
+'3':
+    [
+        '',
+
+        "<center><img src={{ cabane }} alt='image de cabane' style=\"width:400px;\" /></center>"
+        
+        "",
+
+        [
+            []
         ]
     ],
 }
