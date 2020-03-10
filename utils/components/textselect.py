@@ -43,7 +43,7 @@ class CustomTextSelect(Component):
         self.text = self.bracket(text)
 
     def setdata_from_text(self,text):
-        self.text,self._sol=self.find_double_text_bracket(bracket_words(text))
+        self.text, self._sol = self.index_bracket(bracket(text))
         
     @staticmethod
     def bracket(string):
@@ -71,7 +71,10 @@ class CustomTextSelect(Component):
         return "".join(lst)
     
     @staticmethod
-    def find_double_brackets(string):
+    def index_bracket(string):
+        """
+        
+        """
         lst=re.findall(r"\{[^\{\}]*\}|\{\{[^\}]*\}\}|[^\{\}]+",string)
         selection=[]
         k=0
