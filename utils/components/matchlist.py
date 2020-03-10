@@ -47,7 +47,7 @@ class CustomMatchList(Component):
             self._sol.append({'source': sourceid, 'target': targetid})
         rd.shuffle(self.nodes)
 
-    def eval(self, display=True, grading="RightMinusWrong", disabled=True):
+    def eval(self, display=True, scoring="RightMinusWrong", disabled=True):
         """
         Evaluate the answer stored in the component.
         """ 
@@ -66,5 +66,17 @@ class CustomMatchList(Component):
                     node['css'] = 'error-state'
                     wrong += 1
 
+        if scoring == "AllOrNothing":
+            score = all_or_nothing(nbright, nbwrong)
+        elif scoring == "RightMinusWrong":
+            score = right_minus_wrong(nbright, nbwrong, nbsol=len(self._sol))          
+        elif scoring == "CorrectItems":
+            score = correct_items(nbright, nbwrong, nbitems=len(self.items))
+        elif scoring == "Custom":
+            score = custom_scoring(nbright, nbwrong, nbsol=len(self._sol), nbitems=len(self.items))
+        else:
+            raise ValueError(f"'{scoring}' is not a valid scoring")
+
         return score
+
 
