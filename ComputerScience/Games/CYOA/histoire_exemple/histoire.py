@@ -80,7 +80,7 @@
         [
             ['9', "Vous voulez finalement quitter ce lieu pour aller dans un autre endroit"],
 
-            ['10', "Vous cherchez la clé dans la cabane"],
+            ['10', "Vous cherchez la clé dans la cabane."],
         ]
     ],
 
@@ -97,7 +97,7 @@
         [
             ['9', "Vous voulez finalement quitter ce lieu pour aller dans un autre endroit"],
 
-            ['11', "Vous cherchez la clé dans le champ"],
+            ['11', "Vous cherchez la clé dans le champ."],
         ]
     ],
 
@@ -114,7 +114,7 @@
         [
             ['9', "Vous voulez finalement quitter ce lieu pour aller dans un autre endroit"],
 
-            ['12', "Vous cherchez la clé dans la forêt"],
+            ['12', "Vous cherchez la clé dans la forêt."],
         ]
     ],
 
@@ -131,7 +131,7 @@
         [
             ['9', "Vous voulez finalement quitter ce lieu pour aller dans un autre endroit"],
 
-            ['13', "Vous cherchez la clé dans le lac"],
+            ['13', "Vous cherchez la clé dans le lac."],
         ]
     ],
 
@@ -148,7 +148,7 @@
         [
             ['9', "Vous voulez finalement quitter ce lieu pour aller dans un autre endroit"],
 
-            ['14', "Vous cherchez la clé dans la montagne"],
+            ['14', "Vous cherchez la clé dans la montagne."],
         ]
     ],
 
@@ -156,16 +156,16 @@
     [
         '',
 
-        "<center><img src={{ cabane }} alt='image de cabane' style=\"width:400px;\" /></center><br />"
+        "<center><img src={{ verger }} alt='image de verger' style=\"width:400px;\" /></center><br />"
 
-        "<p>Cette image de petite maison abandonnée est libre de droit (merci au site BURST!). </p><br />"
+        "<p>Cette image de verger est libre de droit (merci au site BURST!). </p><br />"
 
         "<p>Que voulez-vous faire ?</p><br />",
 
         [
             ['9', "Vous voulez finalement quitter ce lieu pour aller dans un autre endroit"],
 
-            ['15', "Vous cherchez la clé dans la cabane"],
+            ['15', "Vous cherchez la clé dans le verger."],
         ]
     ],
 
