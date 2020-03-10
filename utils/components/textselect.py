@@ -37,6 +37,9 @@ class CustomTextSelect(Component):
         super().__init__(**kwargs)
 
     def settext(self, text):
+        """
+        Set a text in the component after bracketting it.
+        """
         self.text = self.bracket(text)
 
     def setdata_from_text(self,text):
@@ -44,7 +47,9 @@ class CustomTextSelect(Component):
         
     @staticmethod
     def bracket(string):
-        
+        """
+        Bracket a text.
+        """
         lst=re.findall(r"\{[^\{\}]*\}|\{\{[^\}]*\}\}|\[[^\]]*\]|[^\{\}\[\]]+",string)
         for i in range(len(lst)):
             s=lst[i]
