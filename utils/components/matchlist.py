@@ -60,10 +60,10 @@ class CustomMatchList(Component):
         for node in self.nodes:
             if 'source' in node and node['source']:
                 if node['id'] in rightsource:
-                    node['css'] = 'success-state'
+                    node['css'] = 'success-state icon-check-before'
                     nbright += 1
                 else:
-                    node['css'] = 'error-state'
+                    node['css'] = 'error-state icon-times-before'
                     nbwrong += 1
 
         if scoring == "AllOrNothing":
