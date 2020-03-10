@@ -12,7 +12,6 @@ form==
 
 
 txtsel =: Text
-@ /utils/components/textselect.py [customtextselect.py]
 txtsel.decorator = CustomTextSelect
 
 before ==
