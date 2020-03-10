@@ -139,16 +139,16 @@
     [
         '',
 
-        "<center><img src={{ cabane }} alt='image de cabane' style=\"width:400px;\" /></center><br />"
+        "<center><img src={{ montagne }} alt='image d'une montagne' style=\"width:400px;\" /></center><br />"
 
-        "<p>Cette image de petite maison abandonnée est libre de droit (merci au site BURST!). </p><br />"
+        "<p>Cette image d'une montagne est libre de droit (merci au site BURST!). </p><br />"
 
         "<p>Que voulez-vous faire ?</p><br />",
 
         [
             ['9', "Vous voulez finalement quitter ce lieu pour aller dans un autre endroit"],
 
-            ['14', "Vous cherchez la clé dans la cabane"],
+            ['14', "Vous cherchez la clé dans la montagne"],
         ]
     ],
 
