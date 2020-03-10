@@ -225,8 +225,8 @@
 
         "<p>Vous pouvez recommencer cette aventure en acutalisant la page.</p><br />"
         
-        "<p>Dans cet démonstration de modèle d'exercice, la note finale est <b>{{ grade }}<b/> sur "
-        "100.</p><br />",
+        "<p>Dans cet démonstration de modèle d'exercice, la note finale est <b>{{ grade }} sur "
+        "100</b>.</p><br />",
 
         [
 
