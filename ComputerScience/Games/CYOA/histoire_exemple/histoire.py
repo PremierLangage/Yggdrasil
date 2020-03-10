@@ -1,7 +1,7 @@
 {
     '1':
     [
-        'cle=random.choice(["la cabane", "le champ", "la forêt", "le lac", "la montagne", "le verger"])',
+        'import random; cle=random.choice(["la cabane", "le champ", "la forêt", "le lac", "la montagne", "le verger"])',
 
         "<p>Voici un exemple d'histoire scénarisable avec inclusion d'images par exemple. </p><br />"
 
