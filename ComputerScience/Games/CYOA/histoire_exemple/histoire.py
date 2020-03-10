@@ -105,16 +105,16 @@
     [
         '',
 
-        "<center><img src={{ cabane }} alt='image de cabane' style=\"width:400px;\" /></center><br />"
+        "<center><img src={{ foret }} alt='image de foret' style=\"width:400px;\" /></center><br />"
 
-        "<p>Cette image de petite maison abandonnée est libre de droit (merci au site BURST!). </p><br />"
+        "<p>Cette image d'une forêt est libre de droit (merci au site BURST!). </p><br />"
 
         "<p>Que voulez-vous faire ?</p><br />",
 
         [
             ['9', "Vous voulez finalement quitter ce lieu pour aller dans un autre endroit"],
 
-            ['12', "Vous cherchez la clé dans la cabane"],
+            ['12', "Vous cherchez la clé dans la forêt"],
         ]
     ],
 
@@ -122,16 +122,16 @@
     [
         '',
 
-        "<center><img src={{ cabane }} alt='image de cabane' style=\"width:400px;\" /></center><br />"
+        "<center><img src={{ lac }} alt='image d'un lac style=\"width:400px;\" /></center><br />"
 
-        "<p>Cette image de petite maison abandonnée est libre de droit (merci au site BURST!). </p><br />"
+        "<p>Cette image d'un lac est libre de droit (merci au site BURST!). </p><br />"
 
         "<p>Que voulez-vous faire ?</p><br />",
 
         [
             ['9', "Vous voulez finalement quitter ce lieu pour aller dans un autre endroit"],
 
-            ['13', "Vous cherchez la clé dans la cabane"],
+            ['13', "Vous cherchez la clé dans le lac"],
         ]
     ],
 
