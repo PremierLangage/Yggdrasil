@@ -219,7 +219,7 @@
         "<p>Les lieux sont bien trop vaste. À force de chercher, vous perdez toute votre energie. "
         "Et puis chercher une clé, ça ne rime à rien. Bon bah ça se termine de manière triste mais "
         "est ce qu'un serious game, pour contenir un bon enjeu (voire challenge) pédagogique ne "
-        "doit-il pas forcément contenir un scénario d'échec ?"
+        "doit-il pas forcément contenir un scénario d'échec ?<p><br />"
 
         "{% endif %}"
 
