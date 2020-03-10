@@ -82,7 +82,7 @@ class CustomCheckbox(Component):
                     item['css'] = 'icon-check-after'
                           
         if scoring == "AllOrNothing":
-            score = all_or_nothing(nbright, nbwrong, nbsol=len(self._sol))
+            score = all_or_nothing(nbright, nbwrong)
         elif scoring == "RightMinusWrong":
             score = right_minus_wrong(nbright, nbwrong, nbsol=len(self._sol))          
         elif scoring == "CorrectItems":
