@@ -36,7 +36,7 @@
         " <br />"
         "lieux = [\"la cabane\", \"le champ\", \"la forêt\", \"le lac\", \"la montagne\", \"le verger\"]<br />"
         "cle=random.choice(lieux)"
-        "</pre><br />"
+        "</pre>"
         
         "<p>C'est complètement optionnel et vous pourriez écrire une histoire très classique avec "
         "seulement des étapes contenant du texte en français et rien de plus. Toutefois, pour les "
