@@ -52,9 +52,18 @@
 
         "<center><b>La clé est dans {{ cle }}</b></center>",
 
-
         [
+            ['3', "Vous vous dirigez vers la cabane"],
 
+            ['4', "Vous vous dirigez vers le champ"],
+
+            ['5', "Vous vous dirigez vers la forêt"],
+
+            ['6', "Vous vous dirigez vers le lac"],
+
+            ['7', "Vous vous dirigez vers la montagne"],
+
+            ['8', "Vous vous dirigez vers le verger"],
         ]
     ],
 }
