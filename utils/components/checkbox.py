@@ -60,7 +60,7 @@ class CustomCheckbox(Component):
         """
         self.items.sort(key = lambda item : item['content'])
 
-    def eval(self, display=True, grading="RightMinusWrong", disabled=True):
+    def eval(self, display=True, scoring="RightMinusWrong", disabled=True):
         """
         Evaluate the answer stored in the component.
         """
@@ -80,14 +80,14 @@ class CustomCheckbox(Component):
                 if display:
                     item['css'] = 'icon-check-after'
                           
-        if grading == "AllOrNothing":
+        if scoring == "AllOrNothing":
             score = all_or_nothing(nbright, nbwrong)
-        elif grading == "RightMinusWrong":
+        elif scoring == "RightMinusWrong":
             score = right_minus_wrong(nbright, nbwrong, nbsol=len(self._sol))          
-        elif grading == "CorrectItems":
+        elif scoring == "CorrectItems":
             score = correct_items(nbright, nbwrong, nbitems=len(self.items))
         else:
-            raise ValueError(f"'{grading}' is not a valid grading")
+            raise ValueError(f"'{scoring}' is not a valid scoring")
 
         if disabled:
             self.disabled = True
