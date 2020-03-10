@@ -3,16 +3,16 @@
     [
         'import random; cle=random.choice(["la cabane", "le champ", "la forêt", "le lac", "la montagne", "le verger"])',
 
-        "<p>Voici un exemple d'histoire scénarisable avec inclusion d'images par exemple. </p><br />"
+        "<p>Voici un exemple d'histoire scénarisable avec inclusion d'images. </p><br />"
 
         "<p>De manière abstraite, une histoire dont vous êtes le héro est un graphe sur "
         "lequel le lecteur se promène parce qu'on lui laisse régulièrement des choix. "
         "Ce graphe a un seul point d'entrée, c'est à dire que les lecteurs, joueurs, "
         "voire étudiants, commencent systématiquemenent au même endroit. </p><br />"
 
-        "<p>PLaTon peut en fait aller plus loin que ça car il est possible (et optionnel) "
+        "<p>PLaTon peut en fait aller plus loin que ça, car il est possible (c'est optionnel) "
         "d'inclure un script python dans les noeuds de l'histoire, c'est à dire dans chacune des "
-        "étapes visitables mais aussi des scripts dans les transitions du graphes (à chaque "
+        "étapes visitables ; mais aussi des scripts dans les transitions du graphes (à chaque "
         "lien emprunté par l'utilisateur)</p></br>"
         
         "<p>Ici, dans cette démontration, l'exercice va cacher une clé dans un lieu aléatoire "
@@ -48,7 +48,7 @@
         "<p>Pour en revenir à cette petite démonstration, l'exercice vient de cacher la clé dans un des "
         "lieux possibles. Si vous recommencez cette démonstration (en actualisant sauvagement la page par "
         "exemple), il y a de forte chance (5 sur 6) que la clé se retrouve dans un endroit différent. "
-        "Sans sous faire plus attendre, ce coup-ci, voilà où se trouve la clé.</p><br />"
+        "Sans vous faire plus attendre, ce coup-ci, voilà où se trouve la clé.</p><br />"
 
         "<center><b>La clé est dans {{ cle }}</b></center>",
 
@@ -175,7 +175,7 @@
 
         "<p>Le graphe de votre histoire, ou serious game, peut contenir des boucles. typiquement, vous "
         "vous trouvez sur une étape visitable une infinité de fois si vous ne voulez pas aller "
-        "chercher la clé là où elle se trouve. </p><br />"
+        "chercher la clé dans l'endroit où elle se trouve. </p><br />"
 
         "<p>Aussi, encore pour les fans de Python (les autres enseignants peuvent aussi demander de "
         "l'aide, c'est pas interdit), on peut facilement incrémenter un compteur ou mesurer les "
