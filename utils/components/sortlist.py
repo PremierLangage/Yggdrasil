@@ -1,7 +1,6 @@
 import random as rd
 from uuid import uuid4
 from components import Component
-from scipy.stats import kendalltau
 
 class CustomSortList(Component):
     def __init__(self, **kwargs):
@@ -63,13 +62,4 @@ class CustomSortList(Component):
 
         return score
 
-
-def exact_order(order):
-    n = len(order)
-    return 100 if order == list(range(n)) else 0
-
-def kendall_tau(order):
-    n = len(order)
-    tau,_ = kendalltau(order, list(range(n)))
-    return int(round(max([0,tau])*100))
 
