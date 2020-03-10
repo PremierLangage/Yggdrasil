@@ -51,7 +51,7 @@ class CustomMatchList(Component):
         """
         Evaluate the answer stored in the component.
         """ 
-        right, wrong = 0, 0
+        nbright, nbwrong = 0, 0
         rightsource = []
         for link in self.links:
             if {'source': link['source'], 'target': link['target']} in self._sol:
@@ -61,10 +61,10 @@ class CustomMatchList(Component):
             if 'source' in node and node['source']:
                 if node['id'] in rightsource:
                     node['css'] = 'success-state'
-                    right += 1
+                    nbright += 1
                 else:
                     node['css'] = 'error-state'
-                    wrong += 1
+                    nbwrong += 1
 
         if scoring == "AllOrNothing":
             score = all_or_nothing(nbright, nbwrong)
