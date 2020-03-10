@@ -8,6 +8,6 @@ Afficher "Hello!"
 
 grader==#|python|
 run(
-    output="Hello!"
+    output="Hello!\n"
 )
 ==
