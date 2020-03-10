@@ -4,7 +4,6 @@ title = Multiples de 3 (Checkbox)
 
 # Création du composant comme une clé
 checkbox =: CheckboxGroup
-@ /utils/components/checkbox.py [customcheckbox.py]
 checkbox.decorator = CustomCheckbox
 
 before ==
