@@ -30,6 +30,6 @@ form ==
 ==
 
 evaluator ==
-grade = ("", str(jxg.points))
+grade = (100, str(jxg.points))
 ==
 
