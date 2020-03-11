@@ -90,7 +90,39 @@ class CustomTextSelect(Component):
         
         return ("".join(lst), selection)
 
-    def eval(self,**kwargs):
+    def eval(self, display=True, scoring="RightMinusWrong", disabled=True, custom_scoring=None):
+        """
+        Evaluate the answer stored in the component.
+        """
+        nbright, nbwrong = 0, 0
+
+        for unit in self.selections:
+            if unit['index'] in self._xsol:
+                nbright += 1
+                if display:
+                    unit['css'] = 'success-state'
+            else:
+                nbwrong += 1
+                if display:
+                    unit['css'] = 'error-state'
+                          
+        if scoring == "AllOrNothing":
+            score = all_or_nothing(nbright, nbwrong)
+        elif scoring == "RightMinusWrong":
+            score = right_minus_wrong(nbright, nbwrong, nbsol=len(self._sol))          
+        elif scoring == "CorrectItems":
+            score = correct_items(nbright, nbwrong, nbitems=len(self.items))
+        elif scoring == "Custom":
+            score = custom_scoring(nbright, nbwrong, nbsol=len(self._sol), nbitems=len(self.items))
+        else:
+            raise ValueError(f"'{scoring}' is not a valid scoring")
+
+        if disabled:
+            self.disabled = True
+
+        return score
+
+    def evalold(self,**kwargs):
         """
         Evaluate the answer stored in the component.
         """
@@ -132,6 +164,7 @@ class CustomTextSelect(Component):
         self.disabled = True
 
         return (score, "")
+
 
 
 
