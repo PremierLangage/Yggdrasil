@@ -144,12 +144,16 @@ class DragDropGroup():
             self._matches += [(self.get_label_by_content(label_content).cid, self.drops[drop].cid) for label_content in matches]
     
     def eval(self, display=True, grading_function= all_or_nothing, disabled=True):
+        """ An answer is a pair (label drop). The evaluation uses 3 integers: total is the maximum number of correct answers which can be given 
+        (depends on wether cloneable is True or False), num_right is the number of correct answers given (= pairs belonging to self.matches), num_wrong is the 
+        number of wrong answers given (= pairs not belonging to self.matches). a user specified function is used to compute the grade from these 3 integers.
+        """
         feedback=""
         score=100
 
         num_right, num_wrong = 0, 0
 
-        for drop in self.drops:
+        for drop_name, drop in self.drops.item():
             drop.disabled = True
             drop_data = (drop.droppedId, drop.cid)
             if drop.droppedId == '':
@@ -161,10 +165,13 @@ class DragDropGroup():
                 num_wrong +=1
                 drop.css = "error-state"           
    
+        possible_labels = {label for (label, drop) in self.matches} # set comprehension, no duplicates
+        possible_drops = {drop for (label, drop) in self.matches} # set comprehension, no duplicates
         if self.cloneable == True:
-            total = min(len(self.drops), len(self.matches))
+            total = len(possible_drops)
         else:
-            total = min(len(self.drops), len(self.labels))
+            total = min(len(possible_drops), len(possible_labels)) # en fait c'est plus compliqué que ça: il faut calculer le max de drops atteints par une application injective
+        # qui associe à un label un drop autorisé. C'est un maximum match d'un graphe bipartite, et ça peut se calculer par programmation lineaire, cf Matousek-Gartner
                   
         score = grading_function(num_right, num_wrong, total)
         feedback = '' 
