@@ -72,7 +72,7 @@ class CustomTextSelect(Component):
         nbright, nbwrong = 0, 0
 
         for unit in self.selections:
-            if unit['index'] in self._xsol:
+            if unit['index'] in self._sol:
                 nbright += 1
                 if display:
                     unit['css'] = 'success-state'
