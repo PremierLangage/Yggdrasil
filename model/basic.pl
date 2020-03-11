@@ -43,7 +43,14 @@ extracss ==
     font-weight: 900;
 }
 
-.underline-green {
+
+
+.error-text-unit {
+    color: #155724;
+    text-decoration: line-through red;
+}
+
+.success-text-unit {
     color: #155724;
     text-decoration: underline green;
 }
