@@ -15,7 +15,7 @@ txtsel =: Text
 txtsel.decorator = CustomTextSelect
 
 before ==
-txtsel.settext("{{Artur}} a {{horreur}} de la marche à pied.")
+txtsel.setdata_from_text("{{Artur}} a {{horreur}} de la marche à pied.")
 ==
 
 
