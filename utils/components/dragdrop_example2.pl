@@ -9,7 +9,7 @@ import random as rd
 from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
 
 lt="$%\lt%$"
-gt="&gt;"
+gt="$%\gt%$"
 
 n = 4
 
