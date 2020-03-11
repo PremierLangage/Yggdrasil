@@ -8,7 +8,7 @@ before==
 import random as rd
 from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
 
-lt="&lt;"
+lt="$%\lt%$"
 gt="&gt;"
 
 n = 4
