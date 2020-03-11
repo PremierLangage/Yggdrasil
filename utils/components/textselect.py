@@ -76,7 +76,7 @@ class CustomTextSelect(Component):
             if unit['index'] in self._sol:
                 nbright += 1
                 if display:
-                    unit['css'] = 'underline_green'
+                    unit['css'] = 'underline-green'
             else:
                 nbwrong += 1
                 if display:
