@@ -2,6 +2,7 @@ import uuid
 from components import Component
 import random as rd
 import re
+from scoring import *
 
 class CustomTextSelect(Component):
     def __init__(self, **kwargs):
