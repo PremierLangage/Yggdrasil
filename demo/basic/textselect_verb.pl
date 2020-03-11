@@ -20,7 +20,7 @@ txtsel.settext("{{Artur}} a {{horreur}} de la marche à pied.")
 
 
 evaluator ==
-grade = txtsel.eval()
+score = txtsel.eval()
 #grade=(100, str(txtsel.selections))
 txtsel.disabled = True
 ==
