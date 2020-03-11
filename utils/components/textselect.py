@@ -76,7 +76,7 @@ class CustomTextSelect(Component):
             if unit['index'] in self._sol:
                 nbright += 1
                 if display:
-                    unit['css'] = 'success-test-unit'
+                    unit['css'] = 'success-text-unit'
             else:
                 nbwrong += 1
                 if display:
