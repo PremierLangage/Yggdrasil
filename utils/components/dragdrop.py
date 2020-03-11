@@ -61,12 +61,12 @@ class DragDropGroup():
 
     def __init__(self, **kwargs):
 
-        self.id = str(uuid4()) # generates a random id for the group
-        self.labels = {} # labels/drops are dictionaries whose values are objects of class Label/Drop
+        self.id = str(uuid4())    # generates a random id for the group
+        self.labels = {}            # labels/drops are dictionaries whose values are objects of class Label/Drop, the key is referred to below as the label/drop name.
         self.drops = {}
-        self.cloneable = True # Tells if a label can be used several times or not
-        self._matches = [] # List of correct matches between a label and a drop. A match is a pair of cid's
-        # underscore to make matches  invisible in the html.
+        self.cloneable = True    # Tells if a label can be used several times or not
+        self._matches = []       # List of correct matches between a label and a drop. A match is a pair of cid's
+                                          # underscore to make matches  invisible in the html.
 
         
         if 'id' in kwargs: # comes first because id is copied in labels and drops
@@ -77,7 +77,7 @@ class DragDropGroup():
             self.set_labels(kwargs['labels'])
         if 'drops' in kwargs:
             self.set_drops(kwargs['drops'])
-        if 'matches' in kwargs:# format of a match: (cid of label, cid of drop_)
+        if 'matches' in kwargs:# format of a match: (cid of label, cid of drop_). self.matches is the list of allowable matches between a label and a drop.
             self.set_matches(kwargs['valid_matches'])
         if 'grade_method' in kwargs:
             self.set_grade_method(kwargs['grade_method'])
@@ -89,9 +89,9 @@ class DragDropGroup():
     def add_label(self, labels): 
         """ 
         add_label can have as argument:
-         a string, which is then both the name and visible content of the label,
-         or a dictionary which is then used to update self.labels, adding in each component some info
-         or a list of strings, and then a label is added for each string as above. 
+         1) a string, which is then both the name (= key of the label in self.labels) and visible content of the label,
+         2) a dictionary, which is then used to update self.labels, adding to each component the group_id and cloneable info
+         3) a list of strings, and then a label is added for each string as in 1). 
          """
 
         if isinstance(labels, str):
@@ -105,7 +105,7 @@ class DragDropGroup():
          self.drops = {}
          self.add_drop(drops)
 
-    def add_drop(self, drops):
+    def add_drop(self, drops): # similar to add_label, only drops do not have the cloneable info.
         if isinstance(drops, str):
             self.drops[drops] = CustomDragDrop.Drop(content = drops, group_id = self.id)
         if isinstance(drops, dict):
@@ -113,14 +113,14 @@ class DragDropGroup():
         if isinstance(drops, list):
             self.drops.update({string:  CustomDragDrop.Drop(content = string, group_id = self.id) for string in drops})
 
-    def set_matches(self, matches):
+    def set_matches(self, matches): # self.matches is a list of pairs (label_cid, drop_cid)
         self.matches = matches
 
     def set_match_by_name(self, drop, matches):
         self.matches = []
         self.add_match_by_name(drop, matches)
 
-    def add_match_by_name(self, drop, matches):
+    def add_match_by_name(self, drop, matches): # adds one or multiple matches to self.matches, the drop and label(s) are specified by their name.
        if isinstance(matches, str):
             self._matches.append((self.labels[matches].cid,self.drops[drop].cid))
        if isinstance(matches, list):
@@ -135,7 +135,8 @@ class DragDropGroup():
             if value.content == content:
                 return value
                 
-    def add_match_by_content(self, drop, matches):
+    def add_match_by_content(self, drop, matches): # adds one or multiple matches to self.matches, the drop is specified by name, 
+                                                                            #and label(s) are specified by their content
        if isinstance(matches, str):
             label = self.get_label_by_content(matches)
             self._matches.append((label.cid, self.drops[drop].cid))
@@ -173,6 +174,7 @@ class DragDropGroup():
         
 
     
+
 
 
 
