@@ -44,6 +44,7 @@ extracss ==
 }
 
 .underline-green {
+    color: #155724;
     text-decoration: underline green;
 }
 </style>
