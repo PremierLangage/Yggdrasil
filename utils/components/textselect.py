@@ -76,11 +76,11 @@ class CustomTextSelect(Component):
             if unit['index'] in self._sol:
                 nbright += 1
                 if display:
-                    unit['css'] = 'underline-green'
+                    unit['css'] = 'success-test-unit'
             else:
                 nbwrong += 1
                 if display:
-                    unit['css'] = 'error-state'
+                    unit['css'] = 'error-text-unit'
                           
         if scoring == "AllOrNothing":
             score = all_or_nothing(nbright, nbwrong)
