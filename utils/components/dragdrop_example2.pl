@@ -29,11 +29,11 @@ for i in range(n):
 # Pour le moment ça bugge: les étiquettes sont vides.
 
 a = mygroup.labels['lt']
-
+b = mygroup.labels['gt']
 ==
 
 text==
-Comparer les nombres suivants avec les symboles {{ a | component }} et {{ mygroup.labels['gt'] | component }}.
+Comparer les nombres suivants avec les symboles {{ a | component }} et {{ b | component }}.
 ==
 
 form==
