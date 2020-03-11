@@ -46,7 +46,7 @@ extracss ==
 
 
 .error-text-unit {
-    color: #155724;
+    color: #721c24;
     text-decoration: line-through red;
 }
 
