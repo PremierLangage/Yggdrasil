@@ -19,7 +19,7 @@ class CustomTextSelect(Component):
         self.text = self.bracket(text)
 
     def setdata_from_text(self,text):
-        self.text, self._sol = self.index_bracket(bracket(text))
+        self.text, self._sol = self.index_bracket(self.bracket(text))
         
     @staticmethod
     def bracket(string):
