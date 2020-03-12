@@ -1,3 +1,4 @@
+
 #author= C.Wang
 
 # PL database (or background system) -> PL client
@@ -16,12 +17,12 @@ piste=verte
 text==
 ## Compteur d'éléments des différentes classes de caractères
 
-Faire une fonction qui prend en argument une liste de caractères, et rend une liste de taille 3 qui contient successivement le nombre de chiffres, le nombre de caractères alphabetiques, et le nombre des autres caractères.
+Faire une fonction qui prend en argument une liste, et rend une liste de taille 3 qui contient successivement le nombre de chiffres, le nombre de caractères alphabetiques, et le nombre des autres caractères.
 Par examples:
 
-Compteur(['1','a','#','e','a']) == [1, 3, 1]
+Compteur([1,'a','#','e','a']) == [1, 3, 1]
 
-Compteur(['&','#','e','1']) == [1, 1, 2]
+Compteur(['&','#','e','1']) == [0, 1, 3]  % Remarque: '1' n'est pas considéré comme chiffres
 
 ==
 
@@ -35,13 +36,13 @@ import string
 def randomStringwithDigitsAndSymbols():
     """Generate a random string of letters, digits and special characters """
     stringTypes = string.ascii_letters + string.digits + string.punctuation
-    l=[random.choice(stringTypes) for i in range(random.randint(0,30))]
+    l=[random.choice(stringTypes) for i in range(random.randint(0,30))]+[random.randint(0,10) for i in range(random.randint(0,30))]
     return l
 
 def Compteur(L):
     nl=[0, 0, 0]
     for i in L:
-        if '0'<=i<='9':
+        if isinstance(i, int):
             nl[0]=nl[0]+1
         elif 'a'<=i<='z' or 'A'<=i<='Z':
             nl[1]=nl[1]+1
@@ -58,14 +59,12 @@ after=before
 
 # the codes of the representatvie tests executed after the client answers the question (transferred from the client's machine), so as to check their codes
 pltest==
->>> Compteur(['1','a','#','e'])
+>>> Compteur([1,'a','#','e'])
 [1, 2, 1]
->>> Compteur(['&','#','a']) 
-[0, 1, 2]
+>>> Compteur(['&','#','1']) 
+[0, 0, 3]
 >>> Compteur([])
 [0, 0, 0]
->>> Compteur("ceci est aussi une liste de caractères 123 $$$")
-[3, 31, 12]
 ==
 
 # the codes provided in the PL test instance and the client can use/modify it directly (shown in the client's webpage if using "editor.code")
@@ -79,9 +78,3 @@ editor.height=145
 
 Xeditor.code==
 ==
-
-
-
-
-
-
