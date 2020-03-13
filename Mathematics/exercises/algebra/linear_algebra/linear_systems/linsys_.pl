@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathinput.pl
+extends = /model/math.pl
 
 title = Système linéaire
 
@@ -44,5 +44,6 @@ score,_,feedback=ans_struct_expr(input.value,sol,"tuple")
 solution == 
 La solution est $! {{sol_tex}} !$.
 ==
+
 
 
