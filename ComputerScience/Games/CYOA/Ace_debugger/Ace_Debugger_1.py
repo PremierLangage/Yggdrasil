@@ -727,7 +727,73 @@
             
             ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
         ]
-    ]
+    ],
+
+'21':
+    [
+        '',
+
+        "Le tri monte un cran trop loin et trie une valeur en trop.",
+
+        [
+
+        ]
+    ],
+
+'22':
+    [ 
+        '',
+
+        "Le tri à bulles est bien correct, le bug n'est pas là.",
+
+        [
+
+        ]
+    ],
+
+'23':
+    [
+        '',
+
+        "Avec un tableau d'entiers non signés, vous n'auriez peut-être jamais vu votre bug.",
+
+        [
+
+        ]
+    ],
+
+'24':
+    [ 
+        'disallow.append("24");confiance-=1',
+
+        "<pre>"
+        "void tribulle(int* T, int taille){ <br />"
+        "  int i,j; <br />"
+        "  int tmp; <br /><br />"
+        
+        "for(i=0;i&lt;taille;i++){<br />"
+        "  for(j=0;j&lt;taille-i;j++){<br />"
+        "          if(T[j+1] &lt; T[j]){<br />"
+	    "      tmp = T[j];<br />"
+	    "      T[j] = T[j+1];<br />"
+	    "      T[j+1] = tmp;<br />"
+        "          }<br />"
+        "  }<br />"
+        " }<br />"
+        "}"
+        "</pre>",
+
+        "<p><b>Yves :</b> Quoi ? Qu'est ce que c'est que ces cailloux ? Mon second for sur j "
+        "commence à zéro et va en sens croissant, si les crochet j et j+1 sont mal triés, "
+        "alors je les échange. C'est faire monter une bulle ça!</p> <br />",
+
+        "<p><b>N.B. :</b> Ah euh oui oui, j'ai mal lu...</p> <br />",
+
+        [
+
+        ]
+    ],
+
 }
 
 
