@@ -21,7 +21,11 @@ text ==
 
 ==
 
-form =
+input =: MathInput
+
+form ==
+{{ input|component}}
+==
 before =
 evaluator =
 
@@ -74,6 +78,7 @@ th, td {
 }
 </style>
 ==
+
 
 
 
