@@ -622,7 +622,8 @@
     [
         '',
         
-        "Il y a une erreur dans les bornes des boucles."
+        "<p><b>N.B. :</b> Il y a une erreur dans les bornes des boucles! </p><br />"
+        
         "<pre>"
         "void tribulle(int* T, int taille){ <br />"
         "  int i,j; <br />"
