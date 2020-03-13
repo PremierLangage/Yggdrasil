@@ -815,7 +815,7 @@
         "soit négative et une chance sur deux qu'elle soit positive. Lorsque la valeur en trop est négative, "
         "votre tri à bulle la place en tête et on voit le bug (c'est l'ordre croissant). Si la valeur en trop "
         "est positive, alors c'est un nombre aléatoire entre 0 et 2 milliards et des brouettes. Comme on a toutes "
-        "les chances que le nombre soit plus grand que votre MAX, le bug existe mais est silencieux. 
+        "les chances que le nombre soit plus grand que votre MAX, le bug existe mais est silencieux. "
         "</p><br />"
 
         "<p><b>Yves :</b> Purée mais c'est pour cela que ça affichait en tête une grosse valeur négative une fois "
