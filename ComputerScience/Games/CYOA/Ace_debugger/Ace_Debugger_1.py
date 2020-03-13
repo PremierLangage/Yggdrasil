@@ -693,7 +693,7 @@
 
         "<p><b>Yves :</b> Mon tableau <code>tab</code> est de taille <code>TAILLE</code> je l'inititalise du "
         "crochet zéro au crochet TAILLE moins 1 inclus avec des entiers aléatoires compris entre 0 et MAX. "
-        "C'est pas safe ça monsieur ?"
+        "C'est pas safe ça monsieur ?</p><br />"
         
         "<pre>"
         "int main(){ <br />"
