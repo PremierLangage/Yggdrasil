@@ -314,7 +314,7 @@ def eval_set(strans,sol,local_dict={}):
         return (0,"NotEqual","")
     return (100,"Success","")
 
-def eval_tuple(strans, sol, size=None, local_dict={}):
+def eval_tuple(strans, sol, checksize=True, local_dict={}):
     sol = tuple(sol)
     try:
         ans = latex2sympy(strans,local_dict)
@@ -322,8 +322,7 @@ def eval_tuple(strans, sol, size=None, local_dict={}):
         return (-1,"NotTuple","Votre réponse n'est pas valide.")
     if not isinstance(ans,tuple):
         return (-1,"NotTuple","Votre réponse n'est pas valide.")
-    if size is not None:
-        if len(ans) != size:
+    if checksize and len(ans) != len(sol):
             return (-1,"WrongSize","Votre réponse n'est pas valide.")
     if not equal_tuple(ans,sol):
         return (0,"NotEqual","")
