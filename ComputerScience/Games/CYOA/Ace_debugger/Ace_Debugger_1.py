@@ -790,7 +790,11 @@
         "<p><b>N.B. :</b> Ah euh oui oui, j'ai mal lu...</p> <br />",
 
         [
+            ['21', "Le tri monte un cran trop loin et trie une valeur en trop."],
 
+            ['22', "Le tri à bulles est bien correct, le bug n'est pas là."],
+
+            ['23', "Avec un tableau d'entiers non signés, vous n'auriez peut-être jamais vu votre bug."],
         ]
     ],
 
