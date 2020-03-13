@@ -60,7 +60,7 @@ extrajs ==
                 <i class="fas fa-dice"></i> Nouveau tirage
             </a>
         `);
-        {% if settings.submit %}
+        {% if not settings.submit %}
         const submit = actions.find('.action-submit');
         submit.hide();
         {% endif %}
