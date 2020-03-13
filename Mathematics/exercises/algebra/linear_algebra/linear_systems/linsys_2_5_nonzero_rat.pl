@@ -4,7 +4,7 @@ title = Système linéaire 2 x 2
 
 param.size % 2
 
-param.coeffbound % 5
+param.coeffboundA % 5
 
 param.coeffboundB % 3
 
@@ -15,5 +15,6 @@ param.typesol % "rat"
 param.maxdet % 6
 
 param.mindet % 2
+
 
 
