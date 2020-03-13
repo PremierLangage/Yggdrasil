@@ -748,7 +748,7 @@
         "<p><b>N.B. :</b> Votre tri à bulles est bien correct, le bug n'est pas là.</p> <br />"
         
         "<p><b>Yves :</b> Attendez, si, il y a bien un problème. Regardez, c'est à cause de la "
-        "première bulle... Je crois que quand i vaut 0, le j+1 peut être trop grand ?"
+        "première bulle... Je crois que quand i vaut 0, le j+1 peut être trop grand ? </p><br />"
         
         "<pre>"
         "void tribulle(int* T, int taille){ <br />"
@@ -765,7 +765,6 @@
         "  }<br />"
         " }<br />"
         "}"
-        "</pre>"
         ,
 
         [
