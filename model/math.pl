@@ -56,7 +56,7 @@ extrajs ==
                 <i class="fas fa-dice"></i> Nouveau tirage
             </a>
         `);
-        {% if maxattempt >-1 %}
+        {% if "submit" in settings.buttons %}
         const submit = actions.find('.action-submit');
         submit.hide();
         {% endif %}
