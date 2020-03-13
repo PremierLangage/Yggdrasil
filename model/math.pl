@@ -14,6 +14,7 @@
 title =
 
 settings.feedback = rightwrong
+settings.buttons % ["reroll","submit"]
 
 maxattempt % 1
 
@@ -55,7 +56,7 @@ extrajs ==
                 <i class="fas fa-dice"></i> Nouveau tirage
             </a>
         `);
-        {% if score >-1 %}
+        {% if maxattempt >-1 %}
         const submit = actions.find('.action-submit');
         submit.hide();
         {% endif %}
