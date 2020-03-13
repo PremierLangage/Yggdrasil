@@ -655,8 +655,9 @@
     [
         'disallow.append("19");confiance-=1',
 
-        "<p><b>Yves :</b> Mais monsieur, avec une macro constante, la mémoire de mon tableau est "
-        "statique. C'est pas moi qui la gère, c'est le programme. Mon tableau tab est une "
+        "<p><b>Yves :</b> Mais monsieur, avec une macro définissant une constante, la mémoire de "
+        "mon tableau est "
+        "statique. Ce n'est pas moi qui la gère, c'est le programme. Mon tableau tab est une "
         "variable locale de mon main. Tout est géré automatiquement.</p> <br />"
 
         "<pre>"
@@ -666,7 +667,7 @@
         "}"
         "</pre>"
 
-        ""
+        "<p><b>N.B. :</b> En effet, je vois le mal là où il n'est pas...</p> <br />"
         ,
 
         [
