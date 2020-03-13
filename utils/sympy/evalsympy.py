@@ -314,16 +314,17 @@ def eval_set(strans,sol,local_dict={}):
         return (0,"NotEqual","")
     return (100,"Success","")
 
-def eval_tuple(strans, sol, name="n-uplet", size=None, local_dict={}):
+def eval_tuple(strans, sol, size=None, local_dict={}):
     sol=tuple(sol)
     try:
         ans=str2struct(strans,local_dict)
     except:
-        return (-1,"NotTuple","Votre réponse n'est pas un n-uplet valide.")
+        return (-1,"NotTuple","Votre réponse n'est pas valide.")
     if not isinstance(ans,tuple):
-        return (-1,2,"Votre réponse n'est pas un n-uplet valide.")
-    if not isinstance(ans,tuple):
-        return (-1,2,"Votre réponse n'est pas un n-uplet valide.")
+        return (-1,"NotTuple","Votre réponse n'est pas valide.")
+    if size is not None:
+        if len(ans) != size:
+            return (-1,"WrongSize","Votre réponse n'est pas valide.")
     if not equal_tuple(ans,sol):
         return (0,"NotEqual","")
     return (100,"Success","")
