@@ -140,7 +140,6 @@ custom_default_settings = {
         "root_notation": True,
         "interv_rev_brack": True,
         "imaginary_unit": "i",
-        "decimal_separator": "period",
     }
 
 LatexPrinter._default_settings.update(custom_default_settings)
