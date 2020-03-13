@@ -59,7 +59,7 @@ extrajs ==
                 <i class="fas fa-dice"></i> Nouveau tirage
             </a>
         `);
-        {% if "submit" is in settings.buttons %}
+        {% if ("submit" in settings.buttons) %}
         const submit = actions.find('.action-submit');
         submit.hide();
         {% endif %}
