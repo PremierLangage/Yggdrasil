@@ -14,6 +14,7 @@
 title =
 
 settings.feedback = rightwrong
+
 settings.buttons % ["reroll","submit"]
 
 maxattempt % 1
@@ -27,7 +28,9 @@ input =: MathInput
 form ==
 {{ input|component}}
 ==
+
 before =
+
 evaluator =
 
 
@@ -56,7 +59,7 @@ extrajs ==
                 <i class="fas fa-dice"></i> Nouveau tirage
             </a>
         `);
-        {% if "submit" in settings.buttons %}
+        {% if "submit" is in settings.buttons %}
         const submit = actions.find('.action-submit');
         submit.hide();
         {% endif %}
