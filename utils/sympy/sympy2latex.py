@@ -143,7 +143,7 @@ class CustomLatexPrinter(LatexPrinter0):
 LatexPrinter=CustomLatexPrinter()
 
 def latex(expr):
-    return LatexPrinter.doprint(expr)
+    return CustomLatexPrinter.doprint(expr)
 
 def latexsys(A,B,lstvar=['x','y','z','t','u','v','w']):
     n,m=A.shape
@@ -182,3 +182,4 @@ def latex_ineq(lst):
     rel2=rel2.replace("<=",r"\le")
     rel2=rel2.replace(">=",r"\ge")
     return latex(expr1)+rel1+" "+latex(expr)+rel2+" "+latex(expr2)
+
