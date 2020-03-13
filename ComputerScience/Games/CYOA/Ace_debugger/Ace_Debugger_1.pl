@@ -12,8 +12,6 @@
 #          https://creativecommons.org/licenses/by-sa/4.0/legalcode
 # ****************************************************************************
 
-author=Nicolas Borie
-
 title=Ace Debugger 1 : Welcome to Clément Ader !
 tag=C|debugger
 
@@ -25,5 +23,6 @@ img1 =$ Ace_Debugger_logo.png
 img2 =$ Ace_Debugger_find_bug.png
 
 game_data_file = Ace_Debugger_1.py
+
 
 
