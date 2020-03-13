@@ -114,7 +114,7 @@ if __name__ == "__main__":
         if 'feedback' in dic:
             feedback = dic['feedback'] + " "
 
-    if score>=0:
+    if score >= 0:
         dic['attempt'] = dic['attempt'] + 1
 
     if dic['attempt'] > dic['maxattempt']:
