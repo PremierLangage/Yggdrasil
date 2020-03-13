@@ -143,7 +143,7 @@ class CustomLatexPrinter(LatexPrinter0):
 LatexPrinter=CustomLatexPrinter()
 
 def latex(expr):
-    return LatexPrinter.doprint(expr)
+    return LatexPrinter0.doprint(expr)
 
 def latexsys(A,B,lstvar=['x','y','z','t','u','v','w']):
     n,m=A.shape
