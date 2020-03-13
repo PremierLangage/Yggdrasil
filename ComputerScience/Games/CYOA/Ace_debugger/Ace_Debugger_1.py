@@ -857,13 +857,13 @@
         "trouvé cette erreur discrète dans votre code. N'oubliez pas de compiler régulièrement et de "
         "ne pas aller trop vite Yves !</p> <br />"
 
-        "<center>Fin de l'aventure</center><br />"
+        "<center><b>.: Fin de l'aventure :.</b></center><br />"
 
         "<u><b>Points de confiance :</b></u> {{ confiance }} sur 10<br />"
 
-        "<u><b>Points d'audace (tête brulée) :</b></u> {{ audace }}<br />"
+        "<u><b>Points d'audace (tête brulée) :</b></u> +{{ audace }}<br />"
 
-        "<u><b>Points de panache (avec style) :</b></u> {{ panache }}<br />",
+        "<u><b>Points de panache (avec style) :</b></u> +{{ panache }}<br />",
 
         [
         ]
