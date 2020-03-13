@@ -119,7 +119,7 @@ if __name__ == "__main__":
         dic['attempt'] = dic['attempt'] + 1
 
     if dic['attempt'] > dic['maxattempt']:
-        dic['settings']['buttons'].remove("submit")
+        dic['settings']['submit'] = True
         if score < 100 and 'solution' in dic:
             feedback += Template(dic['solution']).render(dic)
     
