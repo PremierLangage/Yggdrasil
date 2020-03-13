@@ -38,9 +38,8 @@ Ecrire la solution sous forme d'un {{tuple_name}} de nombres.
 ==
 
 evaluator ==
-score,_,feedback=ans_struct_expr(input.value,sol,"tuple")
+score, _, feedback = eval_tuple(ans, sol, size=n)
 ==
-
 solution == 
 La solution est $! {{sol_tex}} !$.
 ==
