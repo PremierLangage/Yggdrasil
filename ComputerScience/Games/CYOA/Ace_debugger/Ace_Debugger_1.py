@@ -748,7 +748,7 @@
         "<p><b>N.B. :</b> Votre tri à bulles est bien correct, le bug n'est pas là.</p> <br />"
         
         "<p><b>Yves :</b> Attendez, si, il y a bien un problème. Regardez, c'est à cause de la "
-        "première bulle... Je crois que quand i vaut 0, le j+1 peut être trop grand ? </p><br />"
+        "première bulle... Je crois que quand i vaut 0, le j+1 est peut être trop grand ? </p><br />"
         
         "<pre>"
         "void tribulle(int* T, int taille){ <br />"
@@ -811,7 +811,7 @@
         "commence à zéro et va en sens croissant, si les crochet j et j+1 sont mal triés, "
         "alors je les échange. C'est faire monter une bulle ça!</p> <br />"
 
-        "<p><b>N.B. :</b> Ah euh oui oui, j'ai mal lu...</p> <br />",
+        "<p><b>N.B. :</b> Ah euh, oui oui, j'ai mal lu...</p> <br />",
 
         [
             ['21', "Le tri monte un cran trop loin et trie une valeur en trop."],
