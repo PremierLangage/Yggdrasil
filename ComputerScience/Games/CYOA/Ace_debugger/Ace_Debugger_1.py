@@ -753,12 +753,15 @@
 
         "<p><b>N.B. :</b> Le tri monte un cran trop loin et trie une valeur en trop. En effet, lors du "
         "premier tour du premier for, i vaut zéro. De ce fait, dans le second for, j va de zéro inclus "
-        "à "
+        "à taille exclus. Si j monte à taille - 1 inclus alors j + 1 vaut taille et faire un crochet taille, c'est "
+        "travailler sur une valeur trop loin.</p> <br />"
         
+        "<p><b>N.B. :</b> En commençant un cran plus loin avec i égal à un au lieu de zéro, la première "
+        "bulle devrait monter un cran moins haut et ça devrait fixer le problème."
         ,
 
         [
-
+            ['25', "Appliquer le correctif proposé." ]
         ]
     ],
 
@@ -843,6 +846,25 @@
         ]
     ],
 
+'25':
+    [
+        'grade=100',
+ 
+        "<p><b>Yves :</b> Oh merci, ça fonctionne bien maitenant et dans tous les cas en plus ! Quel flair "
+        "de chien truffier vous avez monsieur le Ace Debugger.</p> <br />"
+
+        "<p><b>N.B. :</b> Je ne sais pas si c'est un compliment Yves, mais je suis content qu'on est "
+        "trouvé cette erreur discrète dans votre code. N'oubliez pas de compiler régulièrement et de "
+        "ne pas aller trop vite Yves !</p> <br />"
+
+        "<center>Fin de l'aventure</center><br />"
+
+        "<u><b>Points de confiance :</b></u> {{ confiance }} sur 10<br />"
+
+        "<u><b>Points d'audace (tête brulée) :</b></u> {{ audace }}<br />"
+
+        "<u><b>Points de panache (avec style) :</b></u> {{ panache }}<br />"
+    ]
 }
 
 
