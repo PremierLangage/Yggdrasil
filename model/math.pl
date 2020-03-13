@@ -35,9 +35,9 @@ before =
 evaluator =
 
 
-extrajs2 ==
+extrajs ==
 <style>
-.btn {
+.btn2 {
     border-radius: 4px !important;
     margin: 0px 4px !important;
 }
@@ -68,7 +68,7 @@ extrajs2 ==
 </script>
 ==
 
-extracss==
+extracss2==
 <style>
 table, th, td {
   border: 1px solid black;
