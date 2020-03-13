@@ -66,12 +66,13 @@ elif n==3:
     ans=[input1.value,input2.value,input3.value]
 elif n==4:
     ans=[input1.value,input2.value,input3.value,input4.value]
-score,_,feedback=ans_tuple_expr(ans,sol,parentheses=False)
+score,_,feedback=eval_tuple(ans, sol, size=n)
 ==
 
 solution == 
 Les solutions sont $! {{sol_tex}} !$.
 ==
+
 
 
 
