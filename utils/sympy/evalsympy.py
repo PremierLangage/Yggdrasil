@@ -314,7 +314,7 @@ def eval_set(strans,sol,local_dict={}):
         return (0,"NotEqual","")
     return (100,"Success","")
 
-def eval_tuple(strans, sol, checksize=True, local_dict={}):
+def eval_tuple(strans, sol, checksize=False, local_dict={}):
     sol = tuple(sol)
     try:
         ans = latex2sympy(strans,local_dict)
