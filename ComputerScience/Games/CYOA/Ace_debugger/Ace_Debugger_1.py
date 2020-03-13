@@ -803,10 +803,28 @@
     [
         'panache+=1',
 
-        "Avec un tableau d'entiers non signés, vous n'auriez peut-être jamais vu votre bug.",
+        "<p><b>N.B. :</b> Avec un tableau d'entiers non signés, vous n'auriez peut-être jamais vu votre bug."
+        "</p><br />"
+        
+        "<p><b>Yves :</b> Je ne comprends pas, le fait que mon tableau soit un <code>int*</code> est important ?"
+        "</p><br />"
+
+        "<p><b>N.B. :</b> Tout à fait ! Votre tri monte un cran trop loin. De ce fait, vous triez une valeur en "
+        "trop qui est non initialisée et donc une garbage value. Cette valeur non initialisée est un "
+        "<code>int</code> et comme elle est aléatoire sur un type signée, il y a une chance sur deux qu'elle "
+        "soit négative et une chance sur deux qu'elle soit positive. Lorsque la valeur en trop est négative, "
+        "votre tri à bulle la place en tête et on voit le bug (c'est l'ordre croissant). Si la valeur en trop "
+        "est positive, alors c'est un nombre aléatoire entre 0 et 2 milliards et des brouettes. Comme on a toutes "
+        "les chances que le nombre soit plus grand que votre MAX, le bug existe mais est silencieux. 
+        "</p><br />"
+
+        "<p><b>Yves :</b> Purée mais c'est pour cela que ça affichait en tête une grosse valeur négative une fois "
+        "sur deux ! Incroyable ! Il faut juste supprimer la première bulle ou la monter un cran moins haut..."
+        "</p><br />"
+        ,
 
         [
-
+            ['25', "Appliquer le correctif proposé." ]
         ]
     ],
 
