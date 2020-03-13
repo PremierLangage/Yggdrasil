@@ -4,6 +4,7 @@
 import sys, json, jsonpickle
 from sandboxio import output, get_context
 from components import Component
+from jinja2 import Template
 
 try:
     from serialize import serialize, deserialize
