@@ -38,7 +38,7 @@ Ecrire la solution sous forme d'un {{tuple_name}} de nombres.
 ==
 
 evaluator ==
-score, _, feedback = eval_tuple(input.value, sol, size=n)
+score, _, feedback = eval_tuple(input.value, sol)
 feedback = str(latex2sympy(input.value))
 ==
 
