@@ -22,6 +22,7 @@ class CustomLatexPrinter(LatexPrinter0):
         "root_notation": True,
         "interv_rev_brack": True,
         "imaginary_unit": "i",
+        "decimal_separator": "period",
     }
     
     def _print_Pi(self, expr):
