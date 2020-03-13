@@ -314,12 +314,14 @@ def eval_set(strans,sol,local_dict={}):
         return (0,"NotEqual","")
     return (100,"Success","")
 
-def eval_tuple(strans,sol,local_dict={}):
+def eval_tuple(strans, sol, name="n-uplet", size=None, local_dict={}):
     sol=tuple(sol)
     try:
         ans=str2struct(strans,local_dict)
     except:
         return (-1,"NotTuple","Votre réponse n'est pas un n-uplet valide.")
+    if not isinstance(ans,tuple):
+        return (-1,2,"Votre réponse n'est pas un n-uplet valide.")
     if not isinstance(ans,tuple):
         return (-1,2,"Votre réponse n'est pas un n-uplet valide.")
     if not equal_tuple(ans,sol):
@@ -415,6 +417,7 @@ def ans_antiderivative(strans,sol,x,local_dict={}):
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
+
 
 
 
