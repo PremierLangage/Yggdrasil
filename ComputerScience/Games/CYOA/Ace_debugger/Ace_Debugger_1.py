@@ -32,7 +32,7 @@
 
 '1' :
     [
-        'audace=0;panache=0;confiance=0;disallow=[]',
+        'audace=0;panache=0;confiance=10;disallow=[]',
      
         "<center><img src={{ img1 }} alt='IMAGE_Ace_Debugger_logo' style=\"width:400px;\" /></center>"
 
@@ -623,7 +623,7 @@
         '',
         
         "<p><b>N.B. :</b> Il y a une erreur dans les bornes des boucles! </p><br />"
-        
+
         "<pre>"
         "void tribulle(int* T, int taille){ <br />"
         "  int i,j; <br />"
