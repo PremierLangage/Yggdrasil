@@ -781,11 +781,11 @@
         "  }<br />"
         " }<br />"
         "}"
-        "</pre>",
+        "</pre>"
 
         "<p><b>Yves :</b> Quoi ? Qu'est ce que c'est que ces cailloux ? Mon second for sur j "
         "commence à zéro et va en sens croissant, si les crochet j et j+1 sont mal triés, "
-        "alors je les échange. C'est faire monter une bulle ça!</p> <br />",
+        "alors je les échange. C'est faire monter une bulle ça!</p> <br />"
 
         "<p><b>N.B. :</b> Ah euh oui oui, j'ai mal lu...</p> <br />",
 
