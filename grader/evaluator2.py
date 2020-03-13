@@ -103,25 +103,25 @@ if __name__ == "__main__":
     for key in dic:
         dic[key]=serialize(dic[key])
     
-    if 'score' in dic:
-        score=dic['score']    
-
-
-    feedback=" "
-    if 'feedback' in dic:
-        feedback=dic['feedback']+" "
-
     if 'grade' in dic:
-        score=dic['grade'][0]
-        feedback=dic['grade'][1]+" "
+        score = dic['grade'][0]
+        feedback = dic['grade'][1] + " "
+    else:
+        if 'score' in dic:
+            score = dic['score']    
+
+        feedback=" "
+        if 'feedback' in dic:
+            feedback = dic['feedback'] + " "
 
     if score>=0:
         dic['attempt'] = dic['attempt'] + 1
 
     if dic['attempt'] > dic['maxattempt']:
         dic['buttons'] = ["reroll"]
-
-    ffeedback=feedback
+        if score < 100 and 'solution' in dic:
+            feedback += Template(dic['solution']).render(dic)
+    
     if 'settings' in dic and 'feedback' in dic['settings']:
         if dic['settings']['feedback']=='rightwrong':
             ffeedback=format_feedback_rightwrong(score,feedback)
@@ -129,8 +129,12 @@ if __name__ == "__main__":
             ffeedback=format_feedback_score(score,feedback)
         elif dic['settings']['feedback']=='lightscore':
             ffeedback=format_feedback_lightscore(score,feedback)
+    else:
+        ffeedback = feedback
+
 
     output(score, ffeedback, dic)
+
 
 
 
