@@ -315,9 +315,9 @@ def eval_set(strans,sol,local_dict={}):
     return (100,"Success","")
 
 def eval_tuple(strans, sol, size=None, local_dict={}):
-    sol=tuple(sol)
+    sol = tuple(sol)
     try:
-        ans=str2struct(strans,local_dict)
+        ans = latex2sympy(strans,local_dict)
     except:
         return (-1,"NotTuple","Votre réponse n'est pas valide.")
     if not isinstance(ans,tuple):
