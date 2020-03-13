@@ -469,9 +469,9 @@
         ,
 
         [
-            ['19', "La mémoire de votre tableau <code>tab</code> n'est pas géré correctement.", 'confiance-=1'],
+            ['19', "La mémoire de votre tableau <code>tab</code> n'est pas géré correctement." ],
 
-            ['20', "Votre tableau <code>tab</code> n'est pas initialisé correctement.", 'confiance-=1'],
+            ['20', "Votre tableau <code>tab</code> n'est pas initialisé correctement." ],
 
             ['16', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait..."]
         ]
@@ -671,11 +671,63 @@
         ,
 
         [
+            ['4', "Rappeler à Yves ce que sont les garbages values."],
+
+            ['5', "Expliquer que si ça marche souvent, et bien ça suffit."],
+
+            ['6', "Demander à Yves de recompiler devant vos yeux ébahis avec les options Wall et ansi."],
+
+            ['7', "Demander à voir le début du fichier de code avec les macros et la fonction d'affichage."],
+
+            ['8', "Demander à voir la fonction opérant le tri à bulles."],
+
+            ['9', "Demander à voir le main du programme d'Yves."],
             
+            ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
         ]
     ],
 
+'20':
+    [
+        'disallow.append("20");confiance-=1',
 
+        "<p><b>Yves :</b> Mon tableau <code>tab</code> est de taille <code>TAILLE</code> je l'inititalise du "
+        "crochet zéro au crochet TAILLE moins 1 inclus avec des entiers aléatoires compris entre 0 et MAX. "
+        "C'est pas safe ça monsieur ?"
+        
+        "<pre>"
+        "int main(){ <br />"
+        "  int tab[TAILLE]; <br />"
+        "  int i; <br /><br />"
+        
+        "  srand(time(NULL)); /* Le prof a dit de coller ca... */ <br />"
+        
+        "  for (i=0 ; i&lt;TAILLE;i++) <br />"
+        "    tab[i]=rand()%MAX; <br /><br />"
+
+        "...<br />"
+        "}"
+        "</pre>"
+
+        "<p><b>N.B. :</b> En effet, votre tableau est correctement initialisé, je me suis trompé.</p> <br />"
+        ,
+
+        [
+            ['4', "Rappeler à Yves ce que sont les garbages values."],
+
+            ['5', "Expliquer que si ça marche souvent, et bien ça suffit."],
+
+            ['6', "Demander à Yves de recompiler devant vos yeux ébahis avec les options Wall et ansi."],
+
+            ['7', "Demander à voir le début du fichier de code avec les macros et la fonction d'affichage."],
+
+            ['8', "Demander à voir la fonction opérant le tri à bulles."],
+
+            ['9', "Demander à voir le main du programme d'Yves."],
+            
+            ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
+        ]
+    ]
 }
 
 
