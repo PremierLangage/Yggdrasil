@@ -158,7 +158,7 @@
 
 '5' :
     [
-        'audace+=1;confiance-=2;disallow.append("5")',
+        'audace+=1;confiance-=3;disallow.append("5")',
 
         "<p><b>N.B. :</b> Non mais le principal, c'est que ça fonctionne bien de "
         "temps en temps. Si vous avez compris et que le tri est correct "
@@ -743,18 +743,41 @@
 
 '22':
     [ 
-        '',
+        'disallow.append("24");disallow.append("22");confiance-=1',
 
-        "Le tri à bulles est bien correct, le bug n'est pas là.",
+        "<p><b>N.B. :</b> Votre tri à bulles est bien correct, le bug n'est pas là.</p> <br />"
+        
+        "<p><b>Yves :</b> Attendez, si, il y a bien un problème. Regardez, c'est à cause de la "
+        "première bulle... Je crois que quand i vaut 0, le j+1 peut être trop grand ?"
+        
+        "<pre>"
+        "void tribulle(int* T, int taille){ <br />"
+        "  int i,j; <br />"
+        "  int tmp; <br /><br />"
+        
+        "for(i=0;i&lt;taille;i++){<br />"
+        "  for(j=0;j&lt;taille-i;j++){<br />"
+        "          if(T[j+1] &lt; T[j]){<br />"
+	    "      tmp = T[j];<br />"
+	    "      T[j] = T[j+1];<br />"
+	    "      T[j+1] = tmp;<br />"
+        "          }<br />"
+        "  }<br />"
+        " }<br />"
+        "}"
+        "</pre>"
+        ,
 
         [
+            ['21', "Le tri monte un cran trop loin et trie une valeur en trop."],
 
+            ['23', "Avec un tableau d'entiers non signés, vous n'auriez peut-être jamais vu votre bug."],
         ]
     ],
 
 '23':
     [
-        '',
+        'panache+=1',
 
         "Avec un tableau d'entiers non signés, vous n'auriez peut-être jamais vu votre bug.",
 
@@ -765,7 +788,7 @@
 
 '24':
     [ 
-        'disallow.append("24");confiance-=1',
+        'disallow.append("24");confiance-=2',
 
         "<pre>"
         "void tribulle(int* T, int taille){ <br />"
