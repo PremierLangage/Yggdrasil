@@ -863,7 +863,10 @@
 
         "<u><b>Points d'audace (tête brulée) :</b></u> {{ audace }}<br />"
 
-        "<u><b>Points de panache (avec style) :</b></u> {{ panache }}<br />"
+        "<u><b>Points de panache (avec style) :</b></u> {{ panache }}<br />",
+
+        [
+        ]
     ]
 }
 
