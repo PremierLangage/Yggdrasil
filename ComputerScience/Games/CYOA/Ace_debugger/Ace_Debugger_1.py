@@ -213,7 +213,7 @@
         "-1413911584 3 6 6 13 20 20 21 21 24 25 27 28 30 34 46 57 63 75 80 <br />"
         "</code></div> <br />"
 
-        "<p><b>Yves :</b> Ça ne donne rien de plus et puis le bug est toujours là"
+        "<p><b>Yves :</b> Ça ne donne rien de plus et puis le bug est toujours là "
         "on dirait, mais pas à chaque fois. Bizarre quand même ! </p> <br />",
 
         [
@@ -676,6 +676,7 @@
 
 
 }
+
 
 
 
