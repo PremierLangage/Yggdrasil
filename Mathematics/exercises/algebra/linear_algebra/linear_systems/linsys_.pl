@@ -22,7 +22,7 @@ else:
 
 sol = list(linsolve((A, B)))[0]
 sol_tex = latex(sol)
-s=type(sol)
+
 sys_tex=latexsys(A,B)
 lstvar=",".join(["x","y","z","t","u","v"][:n])
 
@@ -30,7 +30,6 @@ tuple_name=["couple","triplet","quadruplet","quintuplet"][n-2]
 ==
 
 text ==
-{{sol}}
 Déterminer la solution du système suivant (d'inconnues $! {{lstvar}} !$) :
 $$ {{sys_tex}} $$
 Ecrire la solution sous forme d'un {{tuple_name}} de nombres.
@@ -38,7 +37,7 @@ Ecrire la solution sous forme d'un {{tuple_name}} de nombres.
 
 evaluator ==
 score, error, feedback = eval_tuple(input.value, sol, checksize=True)
-if error == "NotTuple":
+if error == "NotTuple" or error == "WrongSize":
     feedback = f"Votre réponse n'est pas un {tuple_name} de nombres."
 ==
 
