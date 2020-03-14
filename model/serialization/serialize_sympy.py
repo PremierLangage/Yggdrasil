@@ -1,4 +1,4 @@
-from sympy import Expr, Matrix, FiniteSet, sympify, evaluate
+from sympy import Expr, Matrix, FiniteSet, Tuple, sympify, evaluate
 from sympy2latex import latex
 
 def deserialize(arg):
@@ -27,10 +27,11 @@ def serialize(arg):
         return {k: serialize(v) for k, v in arg.items()}
     elif isinstance(arg,list):
         return list(map(serialize,arg))
-    elif isinstance(arg,tuple):
+    elif isinstance(arg,(tuple,Tuple)):
         return tuple(map(serialize,arg))
     else:
         return arg
+
 
 
 
