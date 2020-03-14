@@ -5,7 +5,7 @@ radio =: RadioGroup
 @ /utils/components/radio.py [customradio.py]
 radio.decorator = CustomRadio
 
-settings.feeedback = raw
+settings.feedback = raw
 
 form ==
 {{ radio|component }}
