@@ -123,6 +123,7 @@ if __name__ == "__main__":
         if score < 100 and 'solution' in dic:
             feedback += Template(dic['solution']).render(dic)
     
+    ffeedback = feedback
     if 'settings' in dic and 'feedback' in dic['settings']:
         if dic['settings']['feedback']=='rightwrong':
             ffeedback=format_feedback_rightwrong(score,feedback)
@@ -130,9 +131,6 @@ if __name__ == "__main__":
             ffeedback=format_feedback_score(score,feedback)
         elif dic['settings']['feedback']=='lightscore':
             ffeedback=format_feedback_lightscore(score,feedback)
-    else:
-        ffeedback = feedback
-
 
     output(score, ffeedback, dic)
 
