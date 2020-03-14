@@ -1,6 +1,6 @@
 extends = linsys_.pl
 
-title = Système linéaire 4 x 4
+title = Système linéaire 4 x 4 (creux)
 
 param.size % 4
 
@@ -15,6 +15,7 @@ param.typesol % "rat"
 param.maxdet % 6
 
 param.mindet % 2
+
 
 
 
