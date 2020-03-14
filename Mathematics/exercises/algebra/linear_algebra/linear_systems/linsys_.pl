@@ -21,6 +21,7 @@ else:
     B=A*sol
 
 sol=list(linsolve((A, B)))[0]
+sol_text=latex(sol)
 
 sys_tex=latexsys(A,B)
 lstvar=",".join(["x","y","z","t","u","v"][:n])
@@ -39,7 +40,7 @@ score, _, feedback = eval_tuple(input.value, sol)
 ==
 
 solution == 
-La solution est $! {{sol.tex}} !$.
+La solution est $! {{sol_tex}} !$.
 ==
 
 
