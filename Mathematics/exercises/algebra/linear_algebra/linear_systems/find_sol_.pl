@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathradio.pl
+extends = /model/mathradio.pl
 
 title = Trouver une solution parmi plusieurs
 
@@ -18,8 +18,9 @@ while len(choices)<4:
 
 lstvar=",".join(["x","y","z","t","u","v"][:n])
 sys_tex=latexsys(A,B)
-radio.loadContent(choices)
-radio.setSolByIndex(0)
+
+radio.setitems(choices)
+radio.setsol_from_index(k)
 radio.shuffle()
 ==
 
@@ -29,3 +30,4 @@ $$ {{sys_tex}} $$
 
 Parmi les propositions suivantes, laquelle est la solution de ce système ?
 ==
+
