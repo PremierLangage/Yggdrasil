@@ -20,7 +20,7 @@ else:
     sol=rand_int_matrix(n,1,5)
     B=A*sol
 
-sol=list(linsolve((A, B)))[0]
+sol = list(linsolve((A, B)))[0]
 sol_tex = latex(sol)
 
 sys_tex=latexsys(A,B)
