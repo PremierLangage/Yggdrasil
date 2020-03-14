@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathinput.pl
+extends = /model/math.pl
 
 title = Représentation des sous-espaces de $! \mathbb{R}^3!$
 
@@ -38,4 +38,5 @@ def evalans(strans):
 
 score,feedback=evalans("\{"+input.value+"\}")
 ==
+
 
