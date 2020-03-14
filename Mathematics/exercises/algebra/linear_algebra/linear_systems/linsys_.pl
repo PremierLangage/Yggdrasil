@@ -30,7 +30,7 @@ tuple_name=["couple","triplet","quadruplet","quintuplet"][n-2]
 ==
 
 text ==
-{{s}}
+{{sol}}
 Déterminer la solution du système suivant (d'inconnues $! {{lstvar}} !$) :
 $$ {{sys_tex}} $$
 Ecrire la solution sous forme d'un {{tuple_name}} de nombres.
