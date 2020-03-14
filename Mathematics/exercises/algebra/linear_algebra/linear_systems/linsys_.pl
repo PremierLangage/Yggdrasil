@@ -37,7 +37,7 @@ Ecrire la solution sous forme d'un {{tuple_name}} de nombres.
 
 evaluator ==
 score, error, feedback = eval_tuple(input.value, sol, checksize=True)
-if error == "NotTuple" or error == "WrongSize":
+if error == "NotTuple":
     feedback = f"Votre réponse n'est pas un {tuple_name} de nombres."
 ==
 
