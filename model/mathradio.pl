@@ -8,3 +8,7 @@ radio.decorator = CustomRadio
 form ==
 {{ radio|component }}
 ==
+
+evaluator ==
+score = radio.eval()
+==
