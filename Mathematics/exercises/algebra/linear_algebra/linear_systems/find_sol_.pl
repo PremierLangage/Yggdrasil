@@ -20,7 +20,7 @@ lstvar=",".join(["x","y","z","t","u","v"][:n])
 sys_tex=latexsys(A,B)
 
 radio.setitems(choices)
-radio.setsol_from_index(k)
+radio.setsol_from_index(0)
 radio.shuffle()
 ==
 
