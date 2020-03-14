@@ -323,7 +323,7 @@ def eval_tuple(strans, sol, checksize=False, local_dict={}):
     if not isinstance(ans,tuple):
         return (-1,"NotTuple","Votre réponse n'est pas valide.")
     if checksize and len(ans) != len(sol):
-        return (-1,"WrongSize",str(len(ans))+str(len(sol)))
+        return (-1,"WrongSize",str(sol))
     if not equal_tuple(ans,sol):
         return (0,"NotEqual","")
     return (100,"Success","")
