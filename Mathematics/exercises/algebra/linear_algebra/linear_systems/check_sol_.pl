@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathradio.pl
+extends = /models/mathradio.pl
 
 title = Vérifier une solution
 
@@ -25,8 +25,8 @@ lstvar=",".join(["x","y","z","t","u","v"][:n])
 tuple_name=["couple","triplet","quadruplet","quintuplet"][n-2]
 
 sys_tex=latexsys(A,B)
-radio.loadContent(choices)
-radio.setSolByIndex(k)
+radio.setitems(choices)
+radio.setsol_from_index(k)
 ==
 
 text ==
@@ -35,3 +35,4 @@ $$ {{sys_tex}} $$
 
 Le {{tuple_name}} $! {{vec_tex}} !$ est-il solution de ce système ?
 ==
+
