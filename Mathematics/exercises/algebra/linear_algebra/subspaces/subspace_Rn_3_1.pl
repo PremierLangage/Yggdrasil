@@ -1,4 +1,4 @@
-extends = subspace_R3_.pl
+extends = subspace_Rn_.pl
 
 param.n % 2
 param.m % 3
@@ -26,3 +26,4 @@ def evalans(strans):
 
 score,feedback=evalans("\{"+input.value+"\}")
 ==
+
