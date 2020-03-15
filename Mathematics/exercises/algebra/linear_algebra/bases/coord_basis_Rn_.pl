@@ -1,6 +1,6 @@
 extends = /model/math.pl
 
-title = Coordonnées dans une base de $! \R^{{3}} !$
+title = Coordonnées dans une base de $! \R^{3} !$
 
 
 before ==
