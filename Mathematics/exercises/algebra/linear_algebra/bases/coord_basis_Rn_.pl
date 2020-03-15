@@ -25,6 +25,7 @@ sol_tex = latex(sol)
 
 sys_tex=latexsys(A,B)
 basis = A
+vec = B
 lstvar=",".join(["x","y","z","t","u","v"][:n])
 
 tuple_name=["couple","triplet","quadruplet","quintuplet"][n-2]
