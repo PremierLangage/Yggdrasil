@@ -1,24 +1,12 @@
 extends = /model/math.pl
 
-title = Coordonnées dans une base de $! \R^{3} !$
-
-
 before ==
 keyboards_JSON['virtualKeyboards']="elementary"
 input.config = keyboards_JSON
-n=param['size']
-coeffboundA = param['coeffboundA']
-coeffboundB = param['coeffboundB']
-sparsity= param['sparsity']
-if 'maxdet' in param:
-    A=rand_int_matrix_invertible(n,coeffboundA,[0],sparsity,param['mindet'],param['maxdet'])
-else:
-    A=rand_int_matrix_invertible(n,coeffboundA,[0],sparsity)
-if param['typesol']=="rat":
-    B=rand_int_matrix(n,1,coeffboundB,[0])
-else:
-    sol=rand_int_matrix(n,1,5)
-    B=A*sol
+n = param['n']
+A = rand_int_matrix_invertible(n,2,[],0,2,6)
+
+B = rand_int_matrix(n,1,2,[0])
 
 sol = list(linsolve((A, B)))[0]
 sol_tex = latex(sol)
