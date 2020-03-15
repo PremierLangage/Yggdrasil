@@ -16,7 +16,7 @@ sys_tex=latexsys(A,B)
 text ==
 On considère le sous-espace de $! \mathbb{R}^{{n}} !$ formé des vecteurs $! (x,y,z) !$ tels que
 $$ {{sys_tex}} .$$
-Trouver deux vecteurs qui engendrent ce sous-espace.
+Déterminer une base de ce sous-espace (écrire cette base comme un ensemble, entre accolades).
 ==
 
 evaluator ==
