@@ -30,11 +30,11 @@ def evalans(strans):
         ans = [(m-len(v))*[0]+v for v in ans]
         M = Matrix(ans).transpose()
     except:
-        return (-1, "La réponse doit être un ensemble de vecteurs de $! \mathbb{R}^{ %s } !$" % n )
+        return (-1, "La réponse doit être un ensemble de polynômes de $! \mathbb{R}_{ %s }[X] !$" % n )
     if M.shape[0] != n:
-        return (-1, "La réponse doit être un ensemble de vecteurs de $! \mathbb{R}^{ %s } !$" % n )
+        return (-1, "La réponse doit être un ensemble de polynômes de $! \mathbb{R}_{ %s }[X] !$" % n )
     if (A*M).norm() != 0:
-        return (0, "Cette famille n'est pas une base du sous-espace. Ce n'est même pas une famille de vecteurs du sous-espace.")
+        return (0, "Cette famille n'est pas une base du sous-espace. Ce n'est même pas une famille de polynômes du sous-espace.")
     if M.rank() < M.shape[1]:
         return (0, "Cette famille n'est pas une base du sous-espace. Elle n'est pas libre.")
     if M.rank() < m:
