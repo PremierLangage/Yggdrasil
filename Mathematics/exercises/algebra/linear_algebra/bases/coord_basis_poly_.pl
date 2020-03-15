@@ -14,7 +14,7 @@ sol_tex = latex(sol)
 
 sys_tex=latexsys(A,B)
 var('X')
-basis = str(tuple([latex(Poly(A.col(i),X)) for i in range(n)]))
+basis = ",".join([latex(Poly(A.col(i),X)) for i in range(n)])
 vec = str(tuple(B))
 
 tuple_name=["couple","triplet","quadruplet","quintuplet"][n-2]
@@ -23,7 +23,7 @@ tuple_name=["couple","triplet","quadruplet","quintuplet"][n-2]
 text ==
 On se place dans le $!\mathbb{R}!$-espace vectoriel $! \mathbb{R}_{{d}}[X] !$ et on considère la base 
 
-$$ \mathcal{B} = {{basis}}.$$
+$$ \mathcal{B} = \left( {{basis}} \right).$$
 
 Déterminer les coordonnées du vecteur $! {{vec}} !$ dans cette base (écrire les coordonnées sous forme d'un {{tuple_name}} de nombres).
 ==
