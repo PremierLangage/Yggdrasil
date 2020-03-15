@@ -3,7 +3,7 @@ extends = /model/math.pl
 before ==
 keyboards_JSON['virtualKeyboards']="elementary"
 input.config = keyboards_JSON
-n = param['n']
+n = param['deg'] + 1
 A = rand_int_matrix_invertible(n,2,[],0,2,6)
 
 B = rand_int_matrix(n,1,2,[0])
