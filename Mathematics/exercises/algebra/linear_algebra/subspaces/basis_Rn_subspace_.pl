@@ -1,7 +1,7 @@
 extends = /model/math.pl
 
 before ==
-keyboards_JSON['virtualKeyboards']="elementary"
+keyboards_JSON['virtualKeyboards']="sets"
 input.config = keyboards_JSON
 
 n = param['n']
