@@ -7,7 +7,7 @@ input.config = keyboards_JSON
 n = param['n']
 m = param['m']
 d=m-n
-coeffbound = 4
+coeffbound = 3
 A=rand_int_matrix_fullrank(n,m,coeffbound, excluded_values=[0])
 B=zeros(n,1)
 sys_tex=latexsys(A,B)
