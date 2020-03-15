@@ -14,7 +14,7 @@ sys_tex=latexsys(A,B)
 ==
 
 text ==
-On considère le sous-espace de $! \mathbb{R}^{{d}} !$ formé des vecteurs $! (x,y,z) !$ tels que
+On considère le sous-espace de $! \mathbb{R}^{{m}} !$ formé des vecteurs $! (x,y,z) !$ tels que
 $$ {{sys_tex}} .$$
 Déterminer une base de ce sous-espace (écrire cette base comme un ensemble, entre accolades).
 ==
