@@ -8,16 +8,26 @@ n = param['n']
 nbeq = param['nbeq']
 m = n-nbeq
 
-lstvar = ",".join(["x","y","z","t","u","v"][:n])
+x0,x1=list_randint_norep(2,-2,2)
+a=1
+b=randitem([-1,1])
+n = 2
+m = 2
+A=Matrix([[a*x0**2+b*x1**2,a*x0+b*x1,a+b]])
+B=Matrix([[0]])
+eq=latex_lincomb([a,b],["P(%d)" % x0 ,"P(%d)" % x1])
 
-A=rand_int_matrix_fullrank(nbeq, n, 3, excluded_values=[0])
-B=zeros(nbeq, 1)
-sys_tex = latexsys(A, B)
+==
+before ==
+keyboards_JSON['virtualKeyboards']="elementary"
+input.config = keyboards_JSON
+
 ==
 
+
 text ==
-On considère le sous-espace de $! \mathbb{R}^{{n}} !$ formé des vecteurs $! ({{lstvar}}) !$ tels que
-$$ {{sys_tex}} .$$
+On considère le sous-espace de $! \mathbb{R}_{{n}}[X] !$ formé des polynômes $! ({{P}}) !$ tels que
+$$ {{eq}} =0 .$$
 Déterminer une base de ce sous-espace (écrire cette base comme un ensemble, entre accolades).
 ==
 
@@ -31,7 +41,7 @@ def evalans(strans):
         M = Matrix(ans).transpose()
     except:
         return (-1, "La réponse doit être un ensemble de polynômes de $! \mathbb{R}_{ %s }[X] !$" % n )
-    if M.shape[0] != n:
+    if M.shape[0] != n + 1:
         return (-1, "La réponse doit être un ensemble de polynômes de $! \mathbb{R}_{ %s }[X] !$" % n )
     if (A*M).norm() != 0:
         return (0, "Cette famille n'est pas une base du sous-espace. Ce n'est même pas une famille de polynômes du sous-espace.")
