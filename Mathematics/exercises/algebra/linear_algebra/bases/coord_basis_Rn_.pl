@@ -1,6 +1,6 @@
 extends = /model/math.pl
 
-title = Système linéaire
+title = Coordonnées dans une base de $! \R^{{3}} !$
 
 
 before ==
