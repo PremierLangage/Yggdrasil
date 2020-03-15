@@ -8,13 +8,13 @@ n = param['n']
 m = param['m']
 d=m-n
 coeffbound = 4
-A=rand_int_matrix_fullrank(n,m,coeffbound)
+A=rand_int_matrix_fullrank(n,m,coeffbound, nonzero)
 B=zeros(n,1)
 sys_tex=latexsys(A,B)
 ==
 
 text ==
-On considère le sous-espace de $! \mathbb{R}^3 !$ formé des vecteurs $! (x,y,z) !$ tels que
+On considère le sous-espace de $! \mathbb{R}^{{n}} !$ formé des vecteurs $! (x,y,z) !$ tels que
 $$ {{sys_tex}} .$$
 Trouver deux vecteurs qui engendrent ce sous-espace.
 ==
