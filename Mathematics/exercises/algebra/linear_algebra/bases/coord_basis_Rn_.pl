@@ -20,7 +20,7 @@ tuple_name=["couple","triplet","quadruplet","quintuplet"][n-2]
 ==
 
 text ==
-On se place dans le $!\mathbb{R}!$-espace vectoriel $! \\R^{{n}} !$ et on considère la base 
+On se place dans le $!\mathbb{R}!$-espace vectoriel $! \mathbb{R}^{{n}} !$ et on considère la base 
 
 $$ \mathcal{B} = {{basis}}.$$
 
