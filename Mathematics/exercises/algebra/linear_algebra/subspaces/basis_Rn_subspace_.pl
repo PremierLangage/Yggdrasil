@@ -22,17 +22,17 @@ Déterminer une base de ce sous-espace (écrire cette base comme un ensemble, en
 evaluator ==
 def evalans(strans):
     try:
-        ans=str2struct("\{"+input.value+"\}")
-        M=Matrix(ans).transpose()
+        ans = latex2sympy(input.value)
+        M = Matrix(ans).transpose()
     except:
-        return (-1,"La réponse doit être constituée de deux vecteurs de $! \mathbb{R}^3 !$ séparés par une virgule.")
+        return (-1, "La réponse doit être un ensemble de vecteurs su sous-espace.")
     if M.shape!=(m,d):
-        return (-1,"La réponse doit être constituée de deux vecteurs de $! \mathbb{R}^3 !$ séparés par une virgule.")
-    if not (A*M==zeros(n,d)):
-        return (0,"Ces vecteurs n'engendrent pas le sous-espace.")
-    if M.rank()!=d:
-        return (0,"Ces vecteurs n'engendrent pas le sous-espace.")
-    return (100,"")
+        return (-1, "La réponse doit être un ensemble de vecteurs su sous-espace.")
+    if not (A*M == zeros(n,d)):
+        return (0, "Cette famille n'est pas une base du sous-espace.")
+    if M.rank() != d:
+        return (0, "Cette famille n'est pas une base du sous-espace.")
+    return (100, "")
 
-score,feedback=evalans("\{"+input.value+"\}")
+score, feedback = evalans(input.value)
 ==
