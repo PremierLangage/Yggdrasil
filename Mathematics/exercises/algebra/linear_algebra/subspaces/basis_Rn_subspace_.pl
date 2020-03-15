@@ -30,9 +30,9 @@ def evalans(strans):
         return (-1, "La réponse doit être un ensemble de vecteurs de $! \mathbb{R}^{ %s } !$" % n )
     if M.shape[0] != n:
         return (-1, "La réponse doit être un ensemble de vecteurs de $! \mathbb{R}^{ %s } !$" % n )
-    if not (A*M).norm() == 0:
+    if (A*M).norm() != 0:
         return (0, "Cette famille n'est pas une base du sous-espace. Ce n'est même pas une famille de vecteurs du sous-espace.")
-    if M.rank() > m:
+    if M.rank() < M.shape[1]:
         return (0, "Cette famille n'est pas une base du sous-espace. Elle n'est pas libre.")
     if M.rank() < m:
         return (0, "Cette famille n'est pas une base du sous-espace. Elle n'est pas génératrice.")
