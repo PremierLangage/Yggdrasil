@@ -4,10 +4,6 @@ before ==
 keyboards_JSON['virtualKeyboards']="sets"
 input.config = keyboards_JSON
 
-n = param['n']
-nbeq = param['nbeq']
-m = n-nbeq
-
 x0,x1=list_randint_norep(2,-2,2)
 a=1
 b=randitem([-1,1])
