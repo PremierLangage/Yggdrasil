@@ -26,8 +26,8 @@ def evalans(strans):
     try:
         var('X')
         ans = latex2sympy(input.value)
-        ans = [Poly(P,X).all_coeffs() for P in ans]
-        ans = [(m-len(v))*[0]+v for v in ans]
+        ans = [Poly(P, X).all_coeffs() for P in ans]
+        ans = [(n + 1 - len(v))*[0] + v for v in ans]
         M = Matrix(ans).transpose()
     except:
         return (-1, "La réponse doit être un ensemble de polynômes de $! \mathbb{R}_{ %s }[X] !$" % n )
