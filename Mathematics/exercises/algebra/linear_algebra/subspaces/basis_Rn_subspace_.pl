@@ -24,13 +24,15 @@ def evalans(strans):
         ans = latex2sympy(input.value)
         M = Matrix(ans).transpose()
     except:
-        return (-1, "La réponse doit être un ensemble de vecteurs su sous-espace.")
+        return (-1, "La réponse doit être un ensemble de vecteurs de $! \mathbb{R}^{{n}} !$")
     if M.shape[0] != n:
-        return (-1, "La réponse doit être un ensemble de vecteurs su sous-espace.")
+        return (-1, "La réponse doit être un ensemble de vecteurs de $! \mathbb{R}^{{n}} !$")
     if not (A*M == zeros(nbeq,m)):
         return (0, "Cette famille n'est pas une base du sous-espace.")
-    if M.rank() != m:
-        return (0, "Cette famille n'est pas une base du sous-espace.")
+    if M.rank() > m:
+        return (0, "Cette famille n'est pas une base du sous-espace. Elle n'est pas libre.")
+    if M.rank() < m:
+        return (0, "Cette famille n'est pas une base du sous-espace. Elle n'est pas génératrice.")
     return (100, "")
 
 score, feedback = evalans(input.value)
