@@ -27,9 +27,9 @@ def evalans(strans):
         ans = latex2sympy(input.value)
         M = Matrix(ans).transpose()
     except:
-        return (-1, "La réponse doit être un ensemble de vecteurs de $! \mathbb{R}^{%s} !$" % n )
+        return (-1, "La réponse doit être un ensemble de vecteurs de $! \mathbb{R}^{ %s } !$" % n )
     if M.shape[0] != n:
-        return (-1, "La réponse doit être un ensemble de vecteurs de $! \mathbb{R}^{%s} !$" % n )
+        return (-1, "La réponse doit être un ensemble de vecteurs de $! \mathbb{R}^{ %s } !$" % n )
     if not (A*M == zeros(nbeq,m)):
         return (0, "Cette famille n'est pas une base du sous-espace.")
     if M.rank() > m:
