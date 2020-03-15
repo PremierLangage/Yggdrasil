@@ -3,7 +3,8 @@ extends = /model/math.pl
 before ==
 keyboards_JSON['virtualKeyboards']="elementary"
 input.config = keyboards_JSON
-n = param['deg'] + 1
+d = param['deg']
+n = d + 1
 A = rand_int_matrix_invertible(n,2,[],0,2,6)
 
 B = rand_int_matrix(n,1,2,[0])
@@ -20,7 +21,7 @@ tuple_name=["couple","triplet","quadruplet","quintuplet"][n-2]
 ==
 
 text ==
-On se place dans le $!\mathbb{R}!$-espace vectoriel $! \mathbb{R}_{{n}}[X] !$ et on considère la base 
+On se place dans le $!\mathbb{R}!$-espace vectoriel $! \mathbb{R}_{{d}}[X] !$ et on considère la base 
 
 $$ \mathcal{B} = {{basis}}.$$
 
