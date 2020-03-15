@@ -18,12 +18,6 @@ B=Matrix([[0]])
 eq=latex_lincomb([a,b],["P(%d)" % x0 ,"P(%d)" % x1])
 
 ==
-before ==
-keyboards_JSON['virtualKeyboards']="elementary"
-input.config = keyboards_JSON
-
-==
-
 
 text ==
 On considère le sous-espace de $! \mathbb{R}_{{n}}[X] !$ formé des polynômes $! ({{P}}) !$ tels que
