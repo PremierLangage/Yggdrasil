@@ -25,7 +25,7 @@ def evalans(strans):
         M = Matrix(ans).transpose()
     except:
         return (-1, "La réponse doit être un ensemble de vecteurs su sous-espace.")
-    if M.shape!=(m,d):
+    if M.shape!=(n,m):
         return (-1, "La réponse doit être un ensemble de vecteurs su sous-espace.")
     if not (A*M == zeros(nbeq,m)):
         return (0, "Cette famille n'est pas une base du sous-espace.")
