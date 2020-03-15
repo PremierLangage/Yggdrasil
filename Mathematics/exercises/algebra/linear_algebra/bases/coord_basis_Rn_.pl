@@ -12,7 +12,7 @@ sol = list(linsolve((A, B)))[0]
 sol_tex = latex(sol)
 
 sys_tex=latexsys(A,B)
-basis = A
+basis = str(tuple([tuple(row) for row in A]))
 vec = str(tuple(B))
 lstvar=",".join(["x","y","z","t","u","v"][:n])
 
