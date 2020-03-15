@@ -7,13 +7,16 @@ input.config = keyboards_JSON
 n = param['n']
 nbeq = param['nbeq']
 m = n-nbeq
+
+lstvar = ",".join(["x","y","z","t","u","v"][:n])
+
 A=rand_int_matrix_fullrank(nbeq, n, 3, excluded_values=[0])
 B=zeros(nbeq, 1)
 sys_tex = latexsys(A, B)
 ==
 
 text ==
-On considère le sous-espace de $! \mathbb{R}^{{n}} !$ formé des vecteurs $! (x,y,z) !$ tels que
+On considère le sous-espace de $! \mathbb{R}^{{n}} !$ formé des vecteurs $! ({{lstvar}}) !$ tels que
 $$ {{sys_tex}} .$$
 Déterminer une base de ce sous-espace (écrire cette base comme un ensemble, entre accolades).
 ==
