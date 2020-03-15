@@ -15,7 +15,7 @@ sol_tex = latex(sol)
 sys_tex=latexsys(A,B)
 var('X')
 basis = ",".join([latex(Poly(A.col(i),X)) for i in range(n)])
-vec = latex(Poly(B),X))
+vec = latex(Poly(B,X))
 
 tuple_name=["couple","triplet","quadruplet","quintuplet"][n-2]
 ==
