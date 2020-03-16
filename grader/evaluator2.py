@@ -119,7 +119,8 @@ if __name__ == "__main__":
         dic['attempt'] = dic['attempt'] + 1
 
     if dic['attempt'] > dic['maxattempt']:
-        dic['settings']['submit'] = False
+        try:
+            dic['settings']['submit'] = False
         if score < 100 and 'solution' in dic:
             feedback += Template(dic['solution']).render(dic)
     
@@ -133,6 +134,7 @@ if __name__ == "__main__":
             ffeedback=format_feedback_lightscore(score,feedback)
 
     output(score, ffeedback, dic)
+
 
 
 
