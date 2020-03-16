@@ -27,7 +27,6 @@ for i in range(5):
     radio.setitems([row['capitale'] for row in sample_rows])
     radio.setsol_from_index(0)
     radio.shuffle()
-    globals()[radio.cid] = radio
     radios.append(radio)
 
     partitif = {"le": "du ", "la": "de la ", "les": "des ", "l": "de l'"}
