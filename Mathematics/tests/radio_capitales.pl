@@ -36,18 +36,6 @@ for i in range(5):
     du_pays.append(partitif[article] + pays)
 
 step = 0
-
-drops = []
-for i in range(5):
-    drop = DragDrop(
-        id=f"drop{i}",
-        droppable=True
-    )
-    drops.append(drop)
-
-    # add the component to the global context
-    # so it can be synced by the framework
-    globals()[drop.id] = drop
 ==
 
 text ==
