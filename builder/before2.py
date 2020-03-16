@@ -45,14 +45,7 @@ if __name__ == "__main__":
                 del dic[key]
 
     for key in dic:
-        dic[key]=serialize(dic[key])
-
-    # extract components defined inside a list (for sync)
-    for k in list(dic.keys()):
-        if isinstance(dic[k],list):
-            for e in dic[k]:
-                if isinstance(e, Component):
-                    dic[e.cid] = e
+        dic[key]=serialize(dic[key])                   
 
     if 'buttons' not in dic:
         dic['buttons'] = ["submit","reroll"]
@@ -66,5 +59,6 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
 
     sys.exit(0)
+
 
 
