@@ -11,7 +11,7 @@ before ==
 import random as rd
 import csv
 from customradio import CustomRadio
-from component import RadioGroup
+from components import RadioGroup
 with open('pays_europe.csv', newline='') as file:
     all_rows = list(csv.DictReader(file, delimiter=','))
 
