@@ -33,27 +33,8 @@ Un algorithme possible est le suivant :
     `prefixe + '0'`, puis tous ceux commençant par `prefixe + '1'`.
 
 Le travail demandé est d'écrire la fonction récursive 
-`affiche_binaires_prefixe(n, prefixe)`
-        décrite ci- dessus.
-    1.  En déduire une écriture de la fonction `affiche_binaires(n)`.
-
-1.  Variantes :
-
-    1.  Écrire une fonction récursive `liste_binaires(n, prefixe)` qui
-        *construit* la liste des nombres binaires à $n$ chiffres (représentés
-        par des chaînes de caractères).
-
-    1.  $\bigstar$ Écrire une fonction récursive `liste_binaires_bis` qui
-        construit la liste des listes d'entiers (`0` ou `1`) décrivant les mots
-        binaires de longueur $n$.
-
-    1.  Écrire une fonction récursive `liste_nombres_base(n, b)` qui
-        construit la liste des listes d'entiers de `0` à `b-1` décrivant tous
-        les nombres en base `b` de longueur $n$.
-    
-    1.  Vérifiez sur machine que la liste renvoyée par `liste_nombres_base(3,
-        10)` contient bien 1000 éléments. Plus généralement, combien la liste
-        renvoyée par `liste_nombres_base(n, b)` contient-elle d'éléments ?
+`affiche_binaires_prefixe(n, prefixe)` décrite ci- dessus, ainsi que la 
+fonction `affiche_binaires(n)`.
 ==
 
 grader==#|python|
@@ -77,6 +58,7 @@ tests([
     ("certainement", "non", "peut-être")
 ])
 ==
+
 
 
 
