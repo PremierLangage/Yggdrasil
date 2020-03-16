@@ -13,7 +13,7 @@ jxg.attributes % {"showNavigation":false, "boundingbox":[-1.25,1.25,1.25,-1.25]}
 before ==
 angle=randitem([pi/4,pi/2,3*pi/4,pi,5*pi/4,3*pi/2,7*pi/4])
 
-jxg.loadscript(script_init)
+jxg.setscript(script_init)
 ==
 
 script_init ==
@@ -66,5 +66,6 @@ extracss==
 }
 </style>
 ==
+
 
 
