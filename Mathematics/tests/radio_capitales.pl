@@ -17,8 +17,9 @@ with open('pays_europe.csv', newline='') as file:
 
 radios = []
 du_pays = []
-for i in range(5):
+for i in range(len(sets)):
     radio = CustomRadio(id=f"radio{i}")
+
     sample_rows=rd.sample(all_rows, 4)
 
     pays = sample_rows[0]['pays']
@@ -27,8 +28,10 @@ for i in range(5):
     radio.setitems([row['capitale'] for row in sample_rows])
     radio.setsol_from_index(0)
     radio.shuffle()
+
+    radios.append(radio)
     globals()[radio.id] = radio
-    radios.append(globals()[radio.id])
+
     partitif = {"le": "du ", "la": "de la ", "les": "des ", "l": "de l'"}
     du_pays.append(partitif[article] + pays)
 
@@ -40,7 +43,7 @@ Quelle est la capitale {{ du_pays[step] }} ?
 ==
 
 form ==
-{{ radio0 }}
+{{ radios[0]|component }}
 ==
 
 evaluator ==
