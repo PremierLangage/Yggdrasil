@@ -18,7 +18,7 @@ with open('pays_europe.csv', newline='') as file:
 radios = []
 du_pays = []
 for i in range(5):
-    radio = CustomRadio()
+    radio = CustomRadio(id=f"radio{i}")
     sample_rows=rd.sample(all_rows, 4)
 
     pays = sample_rows[0]['pays']
@@ -28,7 +28,7 @@ for i in range(5):
     radio.setsol_from_index(0)
     radio.shuffle()
     radios.append(radio)
-
+    globals()[radio.id] = radio
     partitif = {"le": "du ", "la": "de la ", "les": "des ", "l": "de l'"}
     du_pays.append(partitif[article] + pays)
 
