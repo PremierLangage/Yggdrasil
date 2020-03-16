@@ -28,7 +28,7 @@ for i in range(5):
     radio.setsol_from_index(0)
     radio.shuffle()
     globals()[radio.id] = radio
-    radios.append(radio)
+    radios.append(radio.id)
     partitif = {"le": "du ", "la": "de la ", "les": "des ", "l": "de l'"}
     du_pays.append(partitif[article] + pays)
 
