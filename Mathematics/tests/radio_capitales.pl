@@ -4,6 +4,8 @@ extends = /model/basic.pl
 
 title = Capitales européennes (Radio)
 
+@ /utils/components/radio.py [customradio.py]
+
 
 before ==
 import random as rd
