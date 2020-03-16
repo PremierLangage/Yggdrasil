@@ -42,11 +42,15 @@ grader==#|python|
 #import sys
 #print(pl_context, file=sys.stderr)
 
-def affiche_binaires_aux_sol(n):
-    if n > 0:
-        affiche
+def affiche_binaires_aux_sol(n, prefixe):
+    if n <= len(prefixe):
+        print(prefixe)
+    else:
+        affiche_binaires_aux_sol(n, prefixe + '0')
+        affiche_binaires_aux_sol(n, prefixe + '1')
 
 def affiche_binaires_sol(n):
+    affiche_binaires_sol(n, '')
 
 def tests(cases):
     for n, a, b in cases:
@@ -64,6 +68,7 @@ tests([
     ("certainement", "non", "peut-être")
 ])
 ==
+
 
 
 
