@@ -1,5 +1,5 @@
 extends = /model/basic.pl
-@ /builder/before.py [builder.py]
+
 @ /demo/basic/pays_europe.csv
 
 title = Capitales européennes (Radio)
