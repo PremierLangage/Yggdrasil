@@ -42,6 +42,12 @@ grader==#|python|
 #import sys
 #print(pl_context, file=sys.stderr)
 
+def affiche_binaires_aux_sol(n):
+    if n > 0:
+        affiche
+
+def affiche_binaires_sol(n):
+
 def tests(cases):
     for n, a, b in cases:
         run(f'dans_intervalle({n!r}, {a!r}, {b!r})', 
