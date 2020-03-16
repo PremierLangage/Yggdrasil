@@ -1,4 +1,4 @@
-extends = ../../../templates/generic/generic.pl
+extends = ../../templates/generic/generic.pl
 
 title = Fonctions : appartenance à un intervalle
 # author = Antoine Meyer
