@@ -7,7 +7,7 @@ def right_minus_wrong(nbright=0, nbwrong=0, nbsol=1, nbitems=1):
     return int(round(max([(nbright - nbwrong)/nbsol*100,0])))
 
 def correct_items(nbright=0, nbwrong=0, nbsol=1, nbitems=1):
-    return int(round(max([(nbitems - 2*nbwrong)/nbitems*100,0])))
+    return int(round(max([(nbitems - 2*(nbsol - nbright + nbwrong))/nbitems*100,0])))
 
 def exact_order(order):
     n = len(order)
@@ -17,4 +17,5 @@ def kendall_tau(order):
     n = len(order)
     tau,_ = kendalltau(order, list(range(n)))
     return int(round(max([0,tau])*100))
+
 
