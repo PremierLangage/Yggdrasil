@@ -16,7 +16,7 @@ b=randint(-4,4,[0])
 x=symbols('x')
 f=a*x+b
 
-jxg.loadscript(script_init)
+jxg.setscript(script_init)
 ==
 
 script_init ==
@@ -65,4 +65,5 @@ extracss==
 }
 </style>
 ==
+
 
