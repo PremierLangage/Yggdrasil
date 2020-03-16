@@ -1,6 +1,6 @@
 extends = /model/basic.pl
 
-@ pays_europe.csv
+@ /demo/basic/pays_europe.csv
 
 title = Capitales européennes (Radio)
 
