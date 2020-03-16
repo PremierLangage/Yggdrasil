@@ -40,7 +40,7 @@ Quelle est la capitale {{ du_pays[step] }} ?
 ==
 
 form ==
-{{ radios[0] }}
+{{ radio0 }}
 ==
 
 evaluator ==
