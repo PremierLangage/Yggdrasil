@@ -84,7 +84,7 @@ if __name__ == "__main__":
         if isinstance(dic[k],list):
             for i in range(len(dic[k])):
                 if isinstance(dic[k][i], dict) and 'cid' in dic[k][i]:
-                    dic[k][i] = dic[dic[k][i]['id']]
+                    dic[k][i] = dic[dic[k][i]['cid']]
 
     for key in dic:
         dic[key]=deserialize(dic[key])
