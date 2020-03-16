@@ -25,9 +25,9 @@ for i in range(5):
     pays = sample_rows[0]['pays']
     article = sample_rows[0]['article']
 
-    #radio.setitems([row['capitale'] for row in sample_rows])
-    #radio.setsol_from_index(0)
-    #radio.shuffle()
+    radio.setitems([row['capitale'] for row in sample_rows])
+    radio.setsol_from_index(0)
+    radio.shuffle()
 
     radios.append(radio)
     globals()[radio.id] = radio
