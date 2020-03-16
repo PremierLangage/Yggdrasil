@@ -47,8 +47,7 @@ if __name__ == "__main__":
     for key in dic:
         dic[key]=serialize(dic[key])
 
-    # sync components defined inside a list
-    for k in list(dic.keys()):
+    # extract components defined inside a list (for sync)
         if isinstance(dic[k],list):
             for e in dic[k]:
                 if isinstance(e, Component):
