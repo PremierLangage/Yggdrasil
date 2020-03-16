@@ -30,12 +30,24 @@ for i in range(5):
     radio.shuffle()
     globals()[f"radio{i}"] = radio
 
-    radios.append(radio.cid)
+    radios.append(radio)
 
     partitif = {"le": "du ", "la": "de la ", "les": "des ", "l": "de l'"}
     du_pays.append(partitif[article] + pays)
 
 step = 0
+
+drops = []
+for i in range(5):
+    drop = DragDrop(
+        id=f"drop{i}",
+        droppable=True
+    )
+    drops.append(drop)
+
+    # add the component to the global context
+    # so it can be synced by the framework
+    globals()[drop.id] = drop
 ==
 
 text ==
@@ -43,7 +55,7 @@ Quelle est la capitale {{ du_pays[step] }} ?
 ==
 
 form ==
-{{ radios[1]|component }}
+{{ drops[1]|component }}
 {{ radio2|component }}
 {{ radio3|component }}
 ==
