@@ -52,7 +52,7 @@ if __name__ == "__main__":
         if isinstance(dic[k],list):
             for e in dic[k]:
                 if isinstance(e, Component):
-                    dic[e.id] = e
+                    dic[e.cid] = e
 
     if 'buttons' not in dic:
         dic['buttons'] = ["submit","reroll"]
@@ -66,4 +66,5 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
 
     sys.exit(0)
+
 
