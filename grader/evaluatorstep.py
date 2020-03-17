@@ -79,26 +79,9 @@ if __name__ == "__main__":
     
     dic = get_context()
 
-    for key in dic:
-        dic[key]=deserialize(dic[key])
+    dic['step'] += 1
 
-    if dic['step'] >= 0 and dic['step'] < 3:
-        dic = {**namespace, **dic}
-        if 'evaluator' in dic:
-            dic['StopEvaluatorExec'] = StopEvaluatorExec
-            exec(add_try_clause(dic['evaluator'], StopEvaluatorExec), dic)
-            exec("", namespace)
-            for key in namespace:
-                if key in dic and dic[key] == namespace[key]:
-                    del dic[key]
-        else:
-            print(missing_evaluator_stderr, file=sys.stderr)
-            sys.exit(1)
-
-    for key in dic:
-        dic[key]=serialize(dic[key])
-
-    if dic['step'] < dic['nbstep']-1:
+    if dic['step'] < dic['nbstep']:
         dic['text'] = """Question {{step+1}}.
         {{ texts[step]}}
         """
@@ -115,7 +98,23 @@ if __name__ == "__main__":
         {% endfor %}
         """
 
-    dic['step'] += 1
+            for key in dic:
+        dic[key]=deserialize(dic[key])
+
+        dic = {**namespace, **dic}
+        if 'evaluator' in dic:
+            dic['StopEvaluatorExec'] = StopEvaluatorExec
+            exec(add_try_clause(dic['evaluator'], StopEvaluatorExec), dic)
+            exec("", namespace)
+            for key in namespace:
+                if key in dic and dic[key] == namespace[key]:
+                    del dic[key]
+        else:
+            print(missing_evaluator_stderr, file=sys.stderr)
+            sys.exit(1)
+
+        for key in dic:
+            dic[key]=serialize(dic[key])
 
     score = -1
 
