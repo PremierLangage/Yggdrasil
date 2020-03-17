@@ -54,11 +54,10 @@ def chaines_binaires_aux(n, prefixe):
 def chaines_binaires(n):
     return chaines_binaires_aux(n, '')
     
-run(title='Évaluation du code', 
+run(title='Évaluation sans erreur du du code', 
     output='')
 
-assert_variable_types(affiche_binaires=FunctionType,
-                      affiche_binaires_aux=FunctionType)
+assert_variable_types(affiche_binaires_aux=FunctionType)
 
 run(f'affiche_binaires_aux(3, "000")', 
     title = f'Chaînes binaires de longueur 3 et de préfixe "000"',
@@ -69,6 +68,8 @@ run(f'affiche_binaires_aux(3, "0")',
     title = f'Chaînes binaires de longueur 3 et de préfixe "0"',
     result = None,
     output = chaines_binaires_aux(3, "0"))
+
+assert_variable_types(affiche_binaires=FunctionType)
 
 run(f'affiche_binaires(0)', 
     title = f'Chaînes binaires de longueur 0',
