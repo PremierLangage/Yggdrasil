@@ -104,8 +104,8 @@ Ce quiz contient {{nbstep}} questions.
 ==
 
 evaluator ==
-for i in range(3):
-    globals()[f"radio{step}"].eval()
+for i in range(nbstep):
+    globals()[f"radio{i}"].eval()
 ==
 
 
