@@ -111,14 +111,14 @@ class DragDropGroup():
         if isinstance(drops, list):
             self.drops.update({string:  CustomDragDrop.Drop(content = string, group_id = self.id) for string in drops})
 
-    def set_match(self, matches): # self.matches is a list of pairs (label_cid, drop_cid)
+    def set_match(self, matches): # self._matches is a list of pairs (label_cid, drop_cid)
         self._matches = matches
 
     def set_match_by_name(self, drop, matches):
         self._matches = []
         self.add_match_by_name(drop, matches)
 
-    def add_match_by_name(self, drop, matches): # adds one or multiple matches to self.matches, the drop and label(s) are specified by their name.
+    def add_match_by_name(self, drop, matches): # adds one or multiple matches to self._matches, the drop and label(s) are specified by their name.
        if isinstance(matches, str):
             self._matches.append((self.labels[matches].cid,self.drops[drop].cid))
        if isinstance(matches, list):
