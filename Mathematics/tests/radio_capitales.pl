@@ -6,6 +6,7 @@ title = Capitales européennes (Radio)
 
 @ /utils/components/radio.py [customradio.py]
 
+bbstep % 5
 
 before ==
 import random as rd
@@ -17,7 +18,7 @@ with open('pays_europe.csv', newline='') as file:
 
 comp = []
 texts = []
-for i in range(5):
+for i in range(nbstep):
     radio = CustomRadio(id=f"radio{i}")
 
     sample_rows=rd.sample(all_rows, 4)
@@ -37,7 +38,6 @@ for i in range(5):
 
 step = 0
 scores = []
-
 ==
 
 text ==
