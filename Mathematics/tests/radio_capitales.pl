@@ -33,7 +33,7 @@ for i in range(5):
     comp.append({"cid": radio.cid, "selector": radio.selector})
 
     partitif = {"le": "du ", "la": "de la ", "les": "des ", "l": "de l'"}
-    texts.apppend("Quelle est la capitale " + partitif[article] + pays + " ?")
+    texts.append("Quelle est la capitale " + partitif[article] + pays + " ?")
 
 step = 0
 scores = []
