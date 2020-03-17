@@ -63,6 +63,7 @@ scores.append(globals()[f"radio{step}"].eval())
 step +=1
 if step >= nbstep-1:
     form = form2
+    text = ""
 ==
 
 
