@@ -47,7 +47,7 @@ form ==
 ==
 
 evaluator ==
-#score = radio.eval()
+score = radio[step].eval()
 score = 100
 step +=1
 ==
