@@ -49,8 +49,7 @@ form ==
 ==
 
 form2 ==
-{{radios}}
-{% for r in radios %}
+{% for r in radios2 %}
 {{ r|component }}
 {% endfor %}
 ==
@@ -58,7 +57,7 @@ form2 ==
 evaluator ==
 radio = globals()[f"radio{step}"]
 scores.append(radio.eval())
-globals()[f"radio{step}"] = radio
+radios2.append({"cid": radio.cid, "selector": radio.selector})
 score = 100
 step +=1
 if step>2:
