@@ -97,7 +97,7 @@ scores = []
 ==
 
 text =
-
+form = 
 
 intro ==
 Ce quiz contient 5 questions.
