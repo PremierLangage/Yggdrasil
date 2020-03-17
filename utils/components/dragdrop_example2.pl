@@ -4,12 +4,12 @@ extends = /model/basic.pl
 
 title = Comparaison de nombres (DragDrop)
 
-before==
+before==#|python|
 import random as rd
 from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
 
-lt="$%\lt%$"
-gt="$%\gt%$"
+lt="$%\lt%$" # latex for "less than"
+gt="$%\gt%$" # latex for "greater than"
 
 n = 4
 
@@ -58,6 +58,7 @@ extracss == #|html|
         }
 </style>
 ==
+
 
 
 
