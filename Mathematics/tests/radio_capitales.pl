@@ -57,6 +57,7 @@ form2 ==
 evaluator ==
 radio = globals()[f"radio{step}"]
 scores.append(radio.eval())
+globals()[f"radio{step}"] = radio
 score = 100
 step +=1
 if step>2:
