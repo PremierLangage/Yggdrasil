@@ -91,10 +91,10 @@ if __name__ == "__main__":
     else:
         dic['text'] = ""              
         dic['form'] = """
-        {% for e in comp %}
-        Question {{ loop.index }}.
-        {{ texts[loop.index0]}}
-        {{ e|component }}
+        {% for i in range(nbstep) %}
+        Question {{ i+1 }}.
+        {{ texts[i]}}
+        {{ comp[i]|component }}
         {% endfor %}
         """
 
