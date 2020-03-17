@@ -100,8 +100,7 @@ text =
 form = 
 
 intro ==
-Ce quiz contient 5 questions.
-{{radio2.id}}
+Ce quiz contient {{nbstep}} questions.
 ==
 
 evaluator ==
