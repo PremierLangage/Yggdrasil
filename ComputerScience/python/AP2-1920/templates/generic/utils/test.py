@@ -217,7 +217,7 @@ class Test:
         if 'types' in kwargs:
             # for now we have no facility to check that some variable was
             # deleted, we only check that some variables exist
-            self.assert_variable_types(**kwargs['values'])
+            self.assert_variable_types(**kwargs['types'])
         if ('allow_global_change' in kwargs
                 and not kwargs['allow_global_change']):
             # forbid changes to global variables
