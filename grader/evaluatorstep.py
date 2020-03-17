@@ -100,8 +100,8 @@ if __name__ == "__main__":
 
     dic['step'] += 1
 
-    if dic['step'] < dic['nbstep']:
-        dic['text'] = """Question {{step+1}}
+    if dic['step'] < dic['nbstep']-1:
+        dic['text'] = """Question {{step+1}}.
         {{ texts[step]}}
         """
         dic['form'] = """
@@ -111,7 +111,7 @@ if __name__ == "__main__":
         dic['text'] = ""              
         dic['form'] = """
         {% for e in comp %}
-        Question {{ loop.index }}
+        Question {{ loop.index }}.
         {{ texts[loop.index0]}}
         {{ e|component }}
         {% endfor %}
