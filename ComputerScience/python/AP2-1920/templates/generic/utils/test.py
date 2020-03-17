@@ -796,10 +796,11 @@ class OutputAssert(Assert):
         if self.status:
             return "Affichage correct"
         else:
+            tmp = self.expected.replace('\n', "↲")
             return ("Affichage attendu :\n"
                     "<pre style='margin:3pt; padding:2pt; "
                     "background-color:black; color:white;'>\n"
-                    "{}</pre>".format(self.expected))
+                    "{}</pre>".format(tmp))
 
 
 class NoExceptionAssert(Assert):
