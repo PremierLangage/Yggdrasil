@@ -30,7 +30,7 @@ for i in range(n):
 
 a = mygroup.labels['lt']
 b = mygroup.labels['gt']
-c1 = mygroup.drops['1'] 
+c1 = mygroup.drops['1']
 c2 = mygroup.drops['2']
 c3 = mygroup.drops['3']
 c0 = mygroup.drops['0']
