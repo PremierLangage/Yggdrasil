@@ -100,7 +100,7 @@ if __name__ == "__main__":
 
     dic['step'] +=1
 
-    if dic['step'] < dic['nbstep']:
+    if dic['step'] < dic['nbstep']-1:
         dic['text'] = """Question {{step}}
         {{ texts[step]}}
         """
