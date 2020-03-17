@@ -58,7 +58,7 @@ run(title='Évaluation du code',
 run(f'affiche_binaires_aux(3, "000")', 
     title = f'Chaînes binaires de longueur 3 et de préfixe "000"',
     result = None,
-    output = '')
+    output = '000\n')
 
 run(f'affiche_binaires_aux(3)', 
     title = f'Chaînes binaires de longueur 3 et de préfixe "0"',
@@ -75,6 +75,7 @@ run(f'affiche_binaires(3)',
     result = None,
     output = chaines_binaires(3))
 ==
+
 
 
 
