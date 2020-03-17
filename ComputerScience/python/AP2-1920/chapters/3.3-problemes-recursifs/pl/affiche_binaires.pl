@@ -70,7 +70,7 @@ run(f'affiche_binaires_aux(3, "0")',
 
 run(title='Existence de la fonction <tt>affiche_binaires</tt>', 
     output='',
-    types={"affiche_binaires_foo":FunctionType})
+    types={"affiche_binaires":FunctionType})
 
 run(f'affiche_binaires(0)', 
     title = f'Chaînes binaires de longueur 0',
