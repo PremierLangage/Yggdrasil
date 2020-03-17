@@ -121,7 +121,7 @@ class Test:
 
         added = {var: self.current_state[var] for var in
                  self.current_state.keys() - self.previous_state.keys()
-                 - {'__builtins__'}
+                 - {'__builtins__'}}
 
         n = len(self.previous_inputs) - len(self.current_inputs)
         inputs = self.previous_inputs[:n]
