@@ -214,6 +214,10 @@ class Test:
             # for now we have no facility to check that some variable was
             # deleted, we only check that some variables exist
             self.assert_variable_values(**kwargs['values'])
+        if 'types' in kwargs:
+            # for now we have no facility to check that some variable was
+            # deleted, we only check that some variables exist
+            self.assert_variable_types(**kwargs['values'])
         if ('allow_global_change' in kwargs
                 and not kwargs['allow_global_change']):
             # forbid changes to global variables
@@ -903,4 +907,5 @@ class NoGlobalChangeAssert(Assert):
             return "Variables globales inchangées"
         else:
             return "Variables globales modifiées"
+
 
