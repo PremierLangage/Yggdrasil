@@ -154,6 +154,7 @@ class DragDropGroup():
         for drop_name, drop in self.drops.items():
             drop.disabled = True
             drop_data = (drop.droppedId, drop.cid)
+            feedback+='\n'+str(drop_data)+'\n'
             if drop.droppedId == '':
                 pass
             elif drop_data in self._matches:
@@ -174,7 +175,9 @@ class DragDropGroup():
         # et ça peut se calculer par programmation lineaire, cf Matousek-Gartner
                   
         score = grading_function(num_right, num_wrong, total)
-        feedback = str(self._matches)+'\n'+str([drop.cid for drop_name, drop in self.drops.items()])+'\n'+ str([drop.cid for drop_name, drop in self.labels.items()])
+        feedback += str(self._matches)+'\n'
+        feedback+=str([drop.cid for drop_name, drop in self.drops.items()])+'\n'
+        feedback+= str([drop.cid for drop_name, drop in self.labels.items()])
         return (score,feedback)
 
     
