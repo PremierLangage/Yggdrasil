@@ -74,11 +74,11 @@ class DragDropGroup():
         if 'cloneable' in kwargs: # comes first because cloneable is translated in labels and drops
             self.cloneable = kwargs['cloneable']
         if 'labels' in kwargs:
-            self.set_labels(kwargs['labels'])
+            self.set_label(kwargs['labels'])
         if 'drops' in kwargs:
-            self.set_drops(kwargs['drops'])
+            self.set_drop(kwargs['drops'])
         if 'matches' in kwargs:# format of a match: (cid of label, cid of drop_). self.matches is the list of allowable matches between a label and a drop.
-            self.set_matches(kwargs['valid_matches'])
+            self.set_match(kwargs['valid_matches'])
 
     def set_label(self, labels):
          self.labels = {}
@@ -111,11 +111,11 @@ class DragDropGroup():
         if isinstance(drops, list):
             self.drops.update({string:  CustomDragDrop.Drop(content = string, group_id = self.id) for string in drops})
 
-    def set_matches(self, matches): # self.matches is a list of pairs (label_cid, drop_cid)
-        self.matches = matches
+    def set_match(self, matches): # self.matches is a list of pairs (label_cid, drop_cid)
+        self._matches = matches
 
     def set_match_by_name(self, drop, matches):
-        self.matches = []
+        self._matches = []
         self.add_match_by_name(drop, matches)
 
     def add_match_by_name(self, drop, matches): # adds one or multiple matches to self.matches, the drop and label(s) are specified by their name.
@@ -125,7 +125,7 @@ class DragDropGroup():
             self._matches += [(self.labels[label_name].cid, self.drops[drop].cid) for label_name in matches]
 
     def set_match_by_content(self, matches):
-        self.matches = []
+        self._matches = []
         self.add_match_by_content(matches)
 
     def get_label_by_content(self, content):
@@ -163,8 +163,8 @@ class DragDropGroup():
                 num_wrong +=1
                 drop.css = "error-state"           
    
-        possible_labels = {label for (label, drop) in self.matches} # set comprehension, no duplicates
-        possible_drops = {drop for (label, drop) in self.matches} # set comprehension, no duplicates
+        possible_labels = {label for (label, drop) in self._matches} # set comprehension, no duplicates
+        possible_drops = {drop for (label, drop) in self._matches} # set comprehension, no duplicates
         if self.cloneable == True:
             total = len(possible_drops)
         else:
