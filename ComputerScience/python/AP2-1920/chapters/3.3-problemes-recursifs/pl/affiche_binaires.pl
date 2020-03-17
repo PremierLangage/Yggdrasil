@@ -68,7 +68,7 @@ run(f'affiche_binaires_aux(3, "0")',
     result = None,
     output = chaines_binaires_aux(3, "0"))
 
-run(title='Existence de la fonction <code>affiche_binaires</code>', 
+run(title='Existence de la fonction <tt>affiche_binaires</tt>', 
     output='',
     types={"affiche_binaires":FunctionType})
 
@@ -82,6 +82,7 @@ run(f'affiche_binaires(3)',
     result = None,
     output = chaines_binaires(3))
 ==
+
 
 
 
