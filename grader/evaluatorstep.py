@@ -98,8 +98,6 @@ if __name__ == "__main__":
     for key in dic:
         dic[key]=serialize(dic[key])
 
-    dic['step'] += 1
-
     if dic['step'] < dic['nbstep']-1:
         dic['text'] = """Question {{step+1}}.
         {{ texts[step]}}
@@ -116,7 +114,9 @@ if __name__ == "__main__":
         {{ e|component }}
         {% endfor %}
         """
-    
+
+    dic['step'] += 1
+
     score = -1
 
     output(score, " ", dic)
