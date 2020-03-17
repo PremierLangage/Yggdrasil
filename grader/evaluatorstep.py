@@ -96,37 +96,26 @@ if __name__ == "__main__":
 
     for key in dic:
         dic[key]=serialize(dic[key])
-    
-    if 'grade' in dic:
-        score = dic['grade'][0]
-        feedback = dic['grade'][1] + " "
+
+    if dic['step'] < dic['nbstep'] - 1:
+        text = """
+        Question {{step}}
+        {{ texts[step]}}
+        """
+        form = """
+        {{ comp[step]|component }}
+        """
     else:
-        if 'score' in dic:
-            score = dic['score']    
-
-        feedback=" "
-        if 'feedback' in dic:
-            feedback = dic['feedback'] + " "
-
-    if score >= 0:
-        dic['attempt'] = dic['attempt'] + 1
-
-    if dic['attempt'] > dic['maxattempt']:
-        try:
-            dic['settings']['submit'] = False
-        except:
-            pass
-        if score < 100 and 'solution' in dic:
-            feedback += Template(dic['solution']).render(dic)
+        form = """
+        {% for e in comp %}
+        Question {{ loop.index }}
+        {{ texts[loop.index0]}}
+        {{ e|component }}
+        {% endfor %}
+        """.
     
-    ffeedback = feedback
-    if 'settings' in dic and 'feedback' in dic['settings']:
-        if dic['settings']['feedback']=='rightwrong':
-            ffeedback=format_feedback_rightwrong(score,feedback)
-        elif dic['settings']['feedback']=='score':
-            ffeedback=format_feedback_score(score,feedback)
-        elif dic['settings']['feedback']=='lightscore':
-            ffeedback=format_feedback_lightscore(score,feedback)
+    dic['step'] +=1
+
 
     output(score, ffeedback, dic)
 
