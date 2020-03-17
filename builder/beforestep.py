@@ -47,10 +47,10 @@ if __name__ == "__main__":
     for key in dic:
         dic[key]=serialize(dic[key])    
 
-    dic['step'] = 0
+    dic['step'] = -1
     dic['text'] = dic['intro']               
     dic['form'] = ""
-    
+
     if 'buttons' not in dic:
         dic['buttons'] = ["submit"]
 
