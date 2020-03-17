@@ -30,6 +30,7 @@ for i in range(n):
 
 a = mygroup.labels['lt']
 b = mygroup.labels['gt']
+c = mygroup.drops
 ==
 
 text==
@@ -38,8 +39,8 @@ Comparer les nombres suivants avec les symboles {{ a | component }} et {{ b | 
 
 form==
 <ul>
-{% for i in mygroup.drops %}
-<li> {{ numbers[loop.index0][0] }} {{ mygroup.drops[i] | component }} {{ numbers[loop.index0][1] }} </li>
+{% for i in c %}
+<li> {{ numbers[loop.index0][0] }} {{ c[i] | component }} {{ numbers[loop.index0][1] }} </li>
 {% endfor %}
 </ul>
 ==
