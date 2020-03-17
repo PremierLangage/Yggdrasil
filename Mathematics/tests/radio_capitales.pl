@@ -40,6 +40,10 @@ step = 0
 scores = []
 ==
 
+intro ==
+Ce quiz contient 5 questions.
+==
+
 text ==
 Question {{step}}
 {{ texts[step]}}
