@@ -174,7 +174,7 @@ class Test:
                         self.exception = e
 
         # cleanup state
-        del self.current_state['__builtins__']
+        # del self.current_state['__builtins__']
 
         # store generated output
         self.output = out_stream.getvalue()
@@ -639,7 +639,7 @@ class TestSession:
 
     def exec_preamble(self, preamble: str, **kwargs) -> NoReturn:
         exec(preamble, self.next_test.current_state, ** kwargs)
-        del self.next_test.current_state['__builtins__']
+        # del self.next_test.current_state['__builtins__']
 
     def set_globals(self, **variables) -> NoReturn:
         self.next_test.current_state = variables
@@ -842,5 +842,6 @@ class NoGlobalChangeAssert(Assert):
             return "Variables globales inchangées"
         else:
             return "Variables globales modifiées"
+
 
 
