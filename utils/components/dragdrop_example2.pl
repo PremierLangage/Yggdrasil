@@ -34,7 +34,7 @@ c1 = mygroup.drops['1']
 c2 = mygroup.drops['2']
 c3 = mygroup.drops['3']
 c0 = mygroup.drops['0']
-matches = mygroup.matches
+matches = mygroup._matches
 ==
 
 text==
