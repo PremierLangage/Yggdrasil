@@ -55,7 +55,10 @@ settings.feedback = lightscore
 evaluator==#|python|
 from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
 
-my_group = DragDropGroup(labels = {'lt':a, 'gt': b})#, drops = {'0' : c0, '1': c1, '2': c2, '3': c3}, matches = match)
+mygroup = DragDropGroup()
+mygroup.labels = {'lt':a, 'gt': b}
+mygroup.drops = {'0' : c0, '1': c1, '2': c2, '3': c3}
+mygroup._matches = match
 
 #grade=mygroup.eval() # Ici ça bugge, mais c'est normal parce que le composant ne traverse pas
 score = 100
