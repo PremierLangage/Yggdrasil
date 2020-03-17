@@ -84,7 +84,7 @@ if __name__ == "__main__":
 
     step = 
 
-    if dic['step'] >=0:
+    if dic['step'] >= 0:
         dic = {**namespace, **dic}
         if 'evaluator' in dic:
             dic['StopEvaluatorExec'] = StopEvaluatorExec
