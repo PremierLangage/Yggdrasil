@@ -26,14 +26,15 @@ for i in range(n):
     else:
         mygroup.add_match_by_content(str(i),gt) 
 
-# Pour le moment ça bugge: les étiquettes sont vides.
+# La suite du before ne sert qu'à faire passer les infos dans "form" et "grader"
 
 a = mygroup.labels['lt']
 b = mygroup.labels['gt']
-c1 = mygroup.drops['1']
+c1 = mygroup.drops['1'] 
 c2 = mygroup.drops['2']
 c3 = mygroup.drops['3']
 c0 = mygroup.drops['0']
+matches = mygroup.matches
 ==
 
 text==
@@ -51,7 +52,11 @@ form==
 
 settings.feedback = lightscore
 
-evaluator==
+evaluator==#|python|
+# from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
+
+mygroup = DragDropGroup(labels = {'lt':a, 'gt': b}, drops = {'0' : c0, '1': c1, '2': C2, '3': C3}, matches = matches)
+
 grade=mygroup.eval() # Ici ça bugge, mais c'est normal parce que le composant ne traverse pas
 ==
 
