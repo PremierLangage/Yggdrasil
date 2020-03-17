@@ -174,7 +174,7 @@ class DragDropGroup():
         # et ça peut se calculer par programmation lineaire, cf Matousek-Gartner
                   
         score = grading_function(num_right, num_wrong, total)
-        feedback = str(self._matches+self_drops+self_labels)
+        feedback = str(self._matches+self.drops+self.labels)
         return (score,feedback)
 
     
