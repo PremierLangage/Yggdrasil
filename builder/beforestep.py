@@ -45,15 +45,13 @@ if __name__ == "__main__":
                 del dic[key]
 
     for key in dic:
-        dic[key]=serialize(dic[key])                   
+        dic[key]=serialize(dic[key])    
+
+    dic['text'] = dic['intro']               
 
     if 'buttons' not in dic:
-        dic['buttons'] = ["submit","reroll"]
+        dic['buttons'] = ["submit"]
 
-    if 'maxattempt' not in dic:
-        dic['maxattempt'] = 1
-
-    dic['attempt']=1
 
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
