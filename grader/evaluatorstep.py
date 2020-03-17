@@ -98,16 +98,15 @@ if __name__ == "__main__":
         dic[key]=serialize(dic[key])
 
     if dic['step'] < dic['nbstep'] - 1:
-        text = """
+        dic['text'] = """
         Question {{step}}
         {{ texts[step]}}
         """
-        text = ' fff'
-        form = """
+        dic['form'] = """
         {{ comp[step]|component }}
         """
     else:
-        form = """
+        dic['form'] = """
         {% for e in comp %}
         Question {{ loop.index }}
         {{ texts[loop.index0]}}
