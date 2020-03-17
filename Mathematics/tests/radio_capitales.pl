@@ -43,12 +43,12 @@ text ==
 Quelle est la capitale {{ du_pays[step] }} ?
 ==
 
-form2 ==
+form ==
 {{step}}
 {{ radios[step]|component }}
 ==
 
-form ==
+form2 ==
 {% for r in radios %}
 {{ r|component }}
 {% endfor %}
