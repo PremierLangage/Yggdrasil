@@ -42,6 +42,8 @@ grader==#|python|
 #import sys
 #print(pl_context, file=sys.stderr)
 
+from types import FunctionType
+
 def chaines_binaires_aux(n, prefixe):
     if n <= len(prefixe):
         return prefixe + '\n'
@@ -55,8 +57,8 @@ def chaines_binaires(n):
 run(title='Évaluation du code', 
     output='')
 
-assert_variable_types(affiche_binaires=function,
-                      affiche_binaires_aux=function)
+assert_variable_types(affiche_binaires=FunctionType,
+                      affiche_binaires_aux=FunctionType)
 
 run(f'affiche_binaires_aux(3, "000")', 
     title = f'Chaînes binaires de longueur 3 et de préfixe "000"',
