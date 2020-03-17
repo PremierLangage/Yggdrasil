@@ -104,7 +104,7 @@ Ce quiz contient 5 questions.
 ==
 
 evaluator ==
-pass
+globals()[f"radio{step}"].eval()
 ==
 
 
