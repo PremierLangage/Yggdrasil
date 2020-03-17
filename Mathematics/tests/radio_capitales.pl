@@ -36,7 +36,8 @@ for i in range(5):
     du_pays.append(partitif[article] + pays)
 
 step = 0
-scores = [0]
+scores = []
+radios2 = []
 ==
 
 text ==
