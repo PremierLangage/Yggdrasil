@@ -50,16 +50,14 @@ form ==
 ==
 
 form2 ==
-{% for r in radios2 %}
+{% for r in radios %}
 {{ loop.index0 }}
 {{ r|component }}
 {% endfor %}
 ==
 
 evaluator ==
-radio = globals()[f"radio{step}"]
-scores.append(radio.eval())
-radios2.append(radio.__dict__)
+scores.append(globals()[f"radio{step}"].eval())
 score = 100
 step +=1
 if step>2:
