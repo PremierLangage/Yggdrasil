@@ -75,7 +75,7 @@ with open('pays_europe.csv', newline='') as file:
 
 comp = []
 texts = []
-for i in range(3):
+for i in range(nbstep):
     radio = CustomRadio(id=f"radio{i}")
 
     sample_rows=rd.sample(all_rows, 4)
@@ -104,7 +104,8 @@ Ce quiz contient {{nbstep}} questions.
 ==
 
 evaluator ==
-globals()[f"radio{step}"].eval()
+for i in range(nbstep):
+    globals()[f"radio{step}"].eval()
 ==
 
 
