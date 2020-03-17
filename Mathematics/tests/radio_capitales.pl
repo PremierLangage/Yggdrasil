@@ -75,7 +75,7 @@ with open('pays_europe.csv', newline='') as file:
 
 comp = []
 texts = []
-for i in range(4):
+for i in range(3):
     radio = CustomRadio(id=f"radio{i}")
 
     sample_rows=rd.sample(all_rows, 4)
