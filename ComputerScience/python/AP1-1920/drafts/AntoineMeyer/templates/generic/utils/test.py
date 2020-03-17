@@ -9,8 +9,8 @@ import jinja2
 
 from mockinput import mock_input
 
-_default_template_dir = ''
-# _default_template_dir = 'templates/generic/jinja/'
+# _default_template_dir = ''
+_default_template_dir = 'templates/generic/jinja/'
 _default_test_template = _default_template_dir + 'testitem.html'
 _default_group_template = _default_template_dir + 'testgroup.html'
 
@@ -221,7 +221,7 @@ class Test:
             self.assert_output(kwargs['output'])
         # check for evaluation result, only valid if an expression is provided
         if 'result' in kwargs:
-            if 'expression' is None:
+            if self.expression is None:
                 raise GraderError("Vérification du résultat demandée, "
                                   "mais pas d'expression fournie")
             else:
@@ -338,6 +338,28 @@ class Test:
         status = not (missing or incorrect)
         self.record_assertion(
             VariableValuesAssert(status, expected, missing, incorrect))
+        return status
+
+    def assert_variable_types(self, cmp=operator.eq, **expected) -> bool:
+        """
+        Assert that the types of some variables after the last run equal
+        their values in the `expected` dictionary (using `cmp` as comparison
+        operator).
+
+        :param expected: Expected type of the variables.
+        :param cmp: Value comparison function.
+        :return: Assertion status.
+        """
+        if not expected:
+            raise ValueError("No expected variable types provided.")
+        state = self.current_state
+        missing = list(expected.keys() - state.keys())
+        incorrect = {var: state[var] for var in expected.keys() & state.keys()
+                     if not cmp(expected[var], type(state[var]))}
+
+        status = not (missing or incorrect)
+        self.record_assertion(
+            VariableTypesAssert(status, expected, missing, incorrect))
         return status
 
     def assert_no_global_change(self) -> bool:
@@ -700,6 +722,14 @@ class TestSession:
             self.end_test_group()
             raise StopGrader("Failed assert during fail-fast test.")
 
+    def assert_variable_types(self, cmp=lambda x, y: x == y, **expected):
+        if self.last_test is None:
+            raise GraderError("Can't assert before running the code.")
+        status = self.last_test.assert_variable_types(cmp, **expected)
+        if self.params.get('fail_fast', False) and not status:
+            self.end_test_group()
+            raise StopGrader("Failed assert during fail-fast test.")
+
     def assert_no_global_change(self):
         if self.last_test is None:
             raise GraderError("Can't assert before running the code.")
@@ -832,6 +862,29 @@ class VariableValuesAssert(Assert):
         return res
 
 
+class VariableTypesAssert(Assert):
+
+    def __init__(self, status, expected, missing, incorrect, **params):
+        super().__init__(status, params)
+        self.expected = expected
+        self.missing = missing
+        self.incorrect = incorrect
+
+    def __str__(self):
+        if self.status:
+            res = "Variables globales correctes"
+        else:
+            res = "Variables globales incorrectes : "
+            details = []
+            for var in self.missing:
+                details.append("{} manquante".format(var))
+            for var in self.incorrect:
+                details.append("{} devrait être de type {!r}".format(
+                    var, self.expected[var]))
+            res += "; ".join(details)
+        return res
+
+
 class NoGlobalChangeAssert(Assert):
 
     def __init__(self, status, **params):
@@ -842,6 +895,4 @@ class NoGlobalChangeAssert(Assert):
             return "Variables globales inchangées"
         else:
             return "Variables globales modifiées"
-
-
 
