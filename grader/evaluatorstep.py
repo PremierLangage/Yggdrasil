@@ -97,7 +97,9 @@ if __name__ == "__main__":
     for key in dic:
         dic[key]=serialize(dic[key])
 
+    step = dic['step']
     if dic['step'] < dic['nbstep']:
+        dic[f"radio{step}"].eval()
         dic['text'] = """Question {{step}}
         {{ texts[step]}}
         """
