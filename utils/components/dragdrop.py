@@ -153,7 +153,9 @@ class DragDropGroup():
 
         for drop_name, drop in self.drops.items():
             drop.disabled = True
-            drop_data = [drop.droppedId, drop.cid] # BUG? si on met (drop.droppedId, drop.cid), ça marche pas
+            drop_data = [drop.droppedId, drop.cid] 
+            # BUG? si on met (drop.droppedId, drop.cid), ça marche pas, comme si les tuples avaient 
+            # été transformés en listes dans le grader
             # DEBUG feedback+='dropdata:'+str(drop_data)+'<br>'
             if drop.droppedId == '':
                 pass
