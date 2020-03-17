@@ -120,7 +120,8 @@ class Test:
             if self.previous_state[var1] != self.current_state[var1]}
 
         added = {var: self.current_state[var] for var in
-                 self.current_state.keys() - self.previous_state.keys()}
+                 self.current_state.keys() - self.previous_state.keys()
+                 - {'__builtins__'}
 
         n = len(self.previous_inputs) - len(self.current_inputs)
         inputs = self.previous_inputs[:n]
@@ -155,7 +156,7 @@ class Test:
 
         # backup and cleanup starting state
         self.previous_state = deepcopy(self.current_state)
-        del self.previous_state['__builtins__']
+        self.previous_state.pop('__builtins__', None)
         self.previous_inputs = self.current_inputs.copy()
 
         # prepare StringIO for stdout simulation
