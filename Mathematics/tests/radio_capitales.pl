@@ -49,8 +49,8 @@ form2 ==
 ==
 
 form ==
-{% for radio in radios %}
-{{ radio|component }}
+{% for r in radios %}
+{{ r|component }}
 {% endfor %}
 ==
 
