@@ -60,7 +60,7 @@ run(f'affiche_binaires_aux(3, "000")',
     result = None,
     output = '000\n')
 
-run(f'affiche_binaires_aux(3)', 
+run(f'affiche_binaires_aux(3, "0")', 
     title = f'Chaînes binaires de longueur 3 et de préfixe "0"',
     result = None,
     output = chaines_binaires_aux(3, "0"))
