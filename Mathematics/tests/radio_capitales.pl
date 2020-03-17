@@ -63,7 +63,7 @@ title = Capitales européennes (Radio)
 
 @ /utils/components/radio.py [customradio.py]
 
-nbstep % 5
+nbstep % 3
 
 before ==
 import random as rd
