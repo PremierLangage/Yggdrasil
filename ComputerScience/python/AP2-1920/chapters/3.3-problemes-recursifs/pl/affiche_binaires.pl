@@ -4,10 +4,11 @@ title = Fonctions : appartenance à un intervalle
 # author = Antoine Meyer
 
 text==
-# Liste des mots binaires {.exo}
+# Affichage des mots binaires {.exo}
 
 On souhaite écrire une fonction récursive `affiche_binaires(n)` permettant
-d'afficher tous les nombres binaires écrits sur `n` chiffres. Par exemple :
+d'afficher tous les mots à `n` caractères dans l'alphabet binaire ('0' ou '1'). 
+Par exemple :
 
     >>> affiche_binaires(2)
     00
@@ -52,7 +53,10 @@ def chaines_binaires_aux(n, prefixe):
                 + chaines_binaires_aux(n, prefixe + '1'))
 
 def chaines_binaires(n):
-    return chaines_binaires_aux(n, '')
+    if n == 0:
+        return ''
+    else: 
+        return chaines_binaires_aux(n, '')
     
 run(title='Existence de la fonction <tt>affiche_binaires_aux</tt>', 
     output='',
