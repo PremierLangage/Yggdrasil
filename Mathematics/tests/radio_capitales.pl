@@ -100,12 +100,11 @@ text =
 form = 
 
 intro ==
-{{d}}
 Ce quiz contient {{nbstep}} questions.
 ==
 
 evaluator ==
-for i in range(nbstep):
+for i in range(2):
     globals()[f"radio{i}"].eval()
 ==
 
