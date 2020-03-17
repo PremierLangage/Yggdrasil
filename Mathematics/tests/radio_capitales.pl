@@ -52,6 +52,7 @@ form ==
 form2 ==
 {% for e in comp %}
 Question {{ loop.index }}
+{{ texts[loop.index0]}}
 {{ e|component }}
 {% endfor %}
 ==
