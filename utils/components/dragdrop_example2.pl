@@ -55,6 +55,7 @@ settings.feedback = lightscore
 evaluator==#|python|
 from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
 
+# On récupère les données du before
 mygroup = DragDropGroup()
 mygroup.labels = {'lt':a, 'gt': b}
 mygroup.drops = {'0' : c0, '1': c1, '2': c2, '3': c3}
