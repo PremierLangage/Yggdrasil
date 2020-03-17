@@ -55,8 +55,8 @@ def chaines_binaires(n):
 run(title='Évaluation du code', 
     output='')
 
-assert_variable_types("affiche_binaires": function,
-                      "affiche_binaires_aux": function)
+assert_variable_types(affiche_binaires=function,
+                      affiche_binaires_aux=function)
 
 run(f'affiche_binaires_aux(3, "000")', 
     title = f'Chaînes binaires de longueur 3 et de préfixe "000"',
