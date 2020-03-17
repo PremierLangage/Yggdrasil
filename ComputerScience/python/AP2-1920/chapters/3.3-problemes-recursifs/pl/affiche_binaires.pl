@@ -46,8 +46,8 @@ def chaines_binaires_aux(n, prefixe):
     if n <= len(prefixe):
         return prefixe + '\n'
     else:
-        return (chaines_binaires_aux_sol(n, prefixe + '0')
-                + chaines_binaires_aux_sol(n, prefixe + '1'))
+        return (chaines_binaires_aux(n, prefixe + '0')
+                + chaines_binaires_aux(n, prefixe + '1'))
 
 def chaines_binaires(n):
     return chaines_binaires_aux(n, '')
