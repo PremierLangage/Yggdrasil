@@ -96,6 +96,9 @@ for i in range(nbstep):
 scores = []
 ==
 
+text =
+
+
 intro ==
 Ce quiz contient 5 questions.
 ==
