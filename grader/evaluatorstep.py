@@ -82,8 +82,6 @@ if __name__ == "__main__":
     for key in dic:
         dic[key]=deserialize(dic[key])
 
-    step = 
-
     if dic['step'] >= 0:
         dic = {**namespace, **dic}
         if 'evaluator' in dic:
