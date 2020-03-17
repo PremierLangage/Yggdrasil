@@ -50,9 +50,9 @@ form ==
 ==
 
 form2 ==
-{% for r in radios %}
-{{ loop.index0 }}
-{{ r|component }}
+{% for e in radios %}
+Question {{ loop.index0 }}
+{{ e|component }}
 {% endfor %}
 ==
 
