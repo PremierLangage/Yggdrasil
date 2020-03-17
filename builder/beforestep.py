@@ -49,7 +49,8 @@ if __name__ == "__main__":
 
     dic['step'] = 0
     dic['text'] = dic['intro']               
-
+    dic['form'] = ""
+    
     if 'buttons' not in dic:
         dic['buttons'] = ["submit"]
 
