@@ -100,7 +100,7 @@ text =
 form = 
 
 intro ==
-{{}}
+{{d}}
 Ce quiz contient {{nbstep}} questions.
 ==
 
