@@ -101,6 +101,7 @@ form =
 
 intro ==
 Ce quiz contient 5 questions.
+{{comp}}
 ==
 
 evaluator ==
