@@ -82,7 +82,7 @@ if __name__ == "__main__":
     for key in dic:
         dic[key]=deserialize(dic[key])
 
-    if dic['step'] >= 0 and dic['step'] < 3:
+    if dic['step'] >= 0 and dic['step'] < 2:
         dic = {**namespace, **dic}
         if 'evaluator' in dic:
             dic['StopEvaluatorExec'] = StopEvaluatorExec
@@ -98,7 +98,7 @@ if __name__ == "__main__":
     for key in dic:
         dic[key]=serialize(dic[key])
 
-    dic['step'] +=1
+    dic['step'] += 1
 
     if dic['step'] < dic['nbstep']:
         dic['text'] = """Question {{step+1}}
