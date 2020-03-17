@@ -82,25 +82,25 @@ if __name__ == "__main__":
     for key in dic:
         dic[key]=deserialize(dic[key])
 
-    dic = {**namespace, **dic}
-    if 'evaluator' in dic:
-        dic['StopEvaluatorExec'] = StopEvaluatorExec
-        exec(add_try_clause(dic['evaluator'], StopEvaluatorExec), dic)
-        exec("", namespace)
-        for key in namespace:
-            if key in dic and dic[key] == namespace[key]:
-                del dic[key]
-    else:
-        print(missing_evaluator_stderr, file=sys.stderr)
-        sys.exit(1)
+    step = 
+
+    if dic['step'] >=0:
+        dic = {**namespace, **dic}
+        if 'evaluator' in dic:
+            dic['StopEvaluatorExec'] = StopEvaluatorExec
+            exec(add_try_clause(dic['evaluator'], StopEvaluatorExec), dic)
+            exec("", namespace)
+            for key in namespace:
+                if key in dic and dic[key] == namespace[key]:
+                    del dic[key]
+        else:
+            print(missing_evaluator_stderr, file=sys.stderr)
+            sys.exit(1)
 
     for key in dic:
         dic[key]=serialize(dic[key])
 
-    step = dic['step']
-    
-    if step > 1:
-        dic[f"radio{step-1}"].eval()
+    dic['step'] +=1
 
     if dic['step'] < dic['nbstep']-1:
         dic['text'] = """Question {{step}}
@@ -118,7 +118,6 @@ if __name__ == "__main__":
         {% endfor %}
         """
     
-    dic['step'] +=1
     score = -1
 
     output(score, " ", dic)
