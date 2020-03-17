@@ -100,7 +100,7 @@ if __name__ == "__main__":
     step = dic['step']
     
     if step > 0:
-        dic[f"radio{step-1}"].eval()
+        dic[f"radio{step}"].eval()
 
     if dic['step'] < dic['nbstep']:
         dic['text'] = """Question {{step}}
