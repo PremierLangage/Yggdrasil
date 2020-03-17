@@ -98,8 +98,8 @@ if __name__ == "__main__":
         {% endfor %}
         """
 
-            for key in dic:
-        dic[key]=deserialize(dic[key])
+        for key in dic:
+            dic[key]=deserialize(dic[key])
 
         dic = {**namespace, **dic}
         if 'evaluator' in dic:
