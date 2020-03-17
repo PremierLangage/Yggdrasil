@@ -151,7 +151,7 @@ class DragDropGroup():
 
         num_right, num_wrong = 0, 0
 
-        for drop_name, drop in self.drops.item():
+        for drop_name, drop in self.drops.items():
             drop.disabled = True
             drop_data = (drop.droppedId, drop.cid)
             if drop.droppedId == '':
