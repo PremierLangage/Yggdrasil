@@ -58,8 +58,8 @@ Question {{ loop.index }}
 ==
 
 evaluator ==
-scores.append(globals()[f"radio{step}"].eval())
 score = -1
+scores.append(globals()[f"radio{step}"].eval())
 step +=1
 if step > nbstep:
     form = form2
