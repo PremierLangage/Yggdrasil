@@ -51,6 +51,7 @@ form ==
 
 form2 ==
 {% for r in radios2 %}
+{{ loop.index0 }}
 {{ r|component }}
 {% endfor %}
 ==
