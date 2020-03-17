@@ -36,6 +36,7 @@ for i in range(5):
     du_pays.append(partitif[article] + pays)
 
 step = 0
+score = [0]
 ==
 
 text ==
@@ -44,6 +45,12 @@ Quelle est la capitale {{ du_pays[step] }} ?
 
 form ==
 {{ radios[step]|component }}
+==
+
+form2 ==
+{% for radio in radios %}
+{{ radio|component }}
+{% endfor %}
 ==
 
 evaluator ==
