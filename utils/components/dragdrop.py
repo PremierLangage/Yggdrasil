@@ -79,8 +79,6 @@ class DragDropGroup():
             self.set_drops(kwargs['drops'])
         if 'matches' in kwargs:# format of a match: (cid of label, cid of drop_). self.matches is the list of allowable matches between a label and a drop.
             self.set_matches(kwargs['valid_matches'])
-        if 'grade_method' in kwargs:
-            self.set_grade_method(kwargs['grade_method'])
 
     def set_label(self, labels):
          self.labels = {}
