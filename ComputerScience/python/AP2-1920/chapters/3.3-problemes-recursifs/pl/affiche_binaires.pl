@@ -42,15 +42,15 @@ grader==#|python|
 #import sys
 #print(pl_context, file=sys.stderr)
 
-def chaine_binaires_aux(n, prefixe):
+def chaines_binaires_aux(n, prefixe):
     if n <= len(prefixe):
         return prefixe + '\n'
     else:
-        return (chaine_binaires_aux_sol(n, prefixe + '0')
-                + chaine_binaires_aux_sol(n, prefixe + '1'))
+        return (chaines_binaires_aux_sol(n, prefixe + '0')
+                + chaines_binaires_aux_sol(n, prefixe + '1'))
 
-def chaine_binaires(n):
-    return chaine_binaires_aux(n, '')
+def chaines_binaires(n):
+    return chaines_binaires_aux(n, '')
     
 run(title='Évaluation du code', 
     output='')
