@@ -42,21 +42,19 @@ grader==#|python|
 #import sys
 #print(pl_context, file=sys.stderr)
 
-def affiche_binaires_aux_sol(n, prefixe):
+def chaine_binaires_aux(n, prefixe):
     if n <= len(prefixe):
-        print(prefixe)
+        return prefixe + '\n'
     else:
-        affiche_binaires_aux_sol(n, prefixe + '0')
-        affiche_binaires_aux_sol(n, prefixe + '1')
+        return (chaine_binaires_aux_sol(n, prefixe + '0')
+                + chaine_binaires_aux_sol(n, prefixe + '1'))
 
-def affiche_binaires_sol(n):
-    affiche_binaires_sol(n, '')
-
-def tests(cases):
-    for n, a, b in cases:
-        run(f'dans_intervalle({n!r}, {a!r}, {b!r})', 
-            title = f'Appartenance de {n!r} dans l\'intervalle [{a!r}, {b!r}]',
-            result = a < n < b)
+def chaine_binaires(n):
+    return chaine_binaires_aux(n, '')
+    
+run(f'affiche_binaires_aux({n!r}, {a!r}, {b!r})', 
+    title = f'Appartenance de {n!r} dans l\'intervalle [{a!r}, {b!r}]',
+    result = a < n < b)
 
 run(title='Évaluation du code', 
     output='')
