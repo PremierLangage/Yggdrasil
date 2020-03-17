@@ -52,19 +52,28 @@ def chaine_binaires_aux(n, prefixe):
 def chaine_binaires(n):
     return chaine_binaires_aux(n, '')
     
-run(f'affiche_binaires_aux({n!r}, {a!r}, {b!r})', 
-    title = f'Appartenance de {n!r} dans l\'intervalle [{a!r}, {b!r}]',
-    result = a < n < b)
-
 run(title='Évaluation du code', 
     output='')
 
-tests([
-    (4, 1, 12), 
-    (40, 1, 12), 
-    ("oui", "non", "peut-être"),
-    ("certainement", "non", "peut-être")
-])
+run(f'affiche_binaires_aux(3, "000")', 
+    title = f'Chaînes binaires de longueur 3 et de préfixe "000"',
+    result = None,
+    output = '')
+
+run(f'affiche_binaires_aux(3)', 
+    title = f'Chaînes binaires de longueur 3 et de préfixe "0"',
+    result = None,
+    output = chaines_binaires_aux(3, "0"))
+
+run(f'affiche_binaires(0)', 
+    title = f'Chaînes binaires de longueur 0',
+    result = None,
+    output = '')
+
+run(f'affiche_binaires(3)', 
+    title = f'Chaînes binaires de longueur 3',
+    result = None,
+    output = chaines_binaires(3))
 ==
 
 
