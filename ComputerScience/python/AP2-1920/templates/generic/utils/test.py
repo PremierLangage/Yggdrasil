@@ -153,8 +153,9 @@ class Test:
         # parse context-related keyword arguments
         self.parse_context_args(kwargs)
 
-        # backup starting state
+        # backup and cleanup starting state
         self.previous_state = deepcopy(self.current_state)
+        del self.previous_state['__builtins__']
         self.previous_inputs = self.current_inputs.copy()
 
         # prepare StringIO for stdout simulation
