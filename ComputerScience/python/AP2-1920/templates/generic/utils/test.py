@@ -796,8 +796,10 @@ class OutputAssert(Assert):
     def __str__(self):
         if self.status:
             return "Affichage correct"
+        elif self.expected == "":
+            return "Aucun affichage attendu"
         else:
-            tmp = self.expected.replace('\n', "↲<br>\n")
+            tmp = self.expected.replace('\n', "↲\n")
             return ("Affichage attendu :\n"
                     "<pre style='margin:3pt; padding:2pt; "
                     "background-color:black; color:white;'>\n"
