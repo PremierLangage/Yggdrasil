@@ -32,17 +32,19 @@ grader==#|python|
 #import sys
 #print(pl_context, file=sys.stderr)
 
+#TODO : réorganiser les tests (groupes), tester la récursivité, l'absence de boucles
+
 from types import FunctionType
 
-def chaines_binaires_aux(n, prefixe):
+def liste_binaires_aux(n, prefixe):
     if n <= len(prefixe):
-        return prefixe + '\n'
+        return [prefixe]
     else:
-        return (chaines_binaires_aux(n, prefixe + '0')
-                + chaines_binaires_aux(n, prefixe + '1'))
+        return liste_binaires_aux(n, prefixe + '0')
+               + liste_binaires_aux(n, prefixe + '1')
 
-def chaines_binaires(n):
-    return chaines_binaires_aux(n, '')
+def liste_binaires(n):
+    return liste_binaires_aux(n, '')
     
 run(title='Existence de la fonction <tt>liste_binaires_aux</tt>', 
     output='',
