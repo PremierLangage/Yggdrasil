@@ -170,8 +170,10 @@ class DragDropGroup():
         if self.cloneable == True:
             total = len(possible_drops)
         else:
-            total = min(len(possible_drops), len(possible_labels)) # en fait c'est plus compliqué que ça: il faut calculer le max de drops atteints par une application injective
-        # qui associe à un label un drop autorisé. C'est un maximum match d'un graphe bipartite, et ça peut se calculer par programmation lineaire, cf Matousek-Gartner
+            total = min(len(possible_drops), len(possible_labels)) # en fait c'est plus compliqué que ça: 
+        # il faut calculer le max de drops atteints par une application injective
+        # qui associe à un label un drop autorisé. C'est un maximum match d'un graphe bipartite, 
+        # et ça peut se calculer par programmation lineaire, cf Matousek-Gartner
                   
         score = grading_function(num_right, num_wrong, total)
         feedback = '' 
@@ -181,6 +183,7 @@ class DragDropGroup():
         
 
     
+
 
 
 
