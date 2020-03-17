@@ -453,10 +453,11 @@ class Test:
         if inputs:
             res.append("Lignes saisies : {}".format(inputs))
         if self.output:
+            tmp = self.output.replace('\n', "↲<br>\n")
             res.append("Texte affiché : "
                        "<pre style='margin:3pt; padding:2pt; "
                        "background-color:black; color:white;'>"
-                       "{}</pre>".format(self.output))
+                       "{}</pre>".format(tmp))
         if self.exception:
             res.append("Exception levée : {} ({})".format(
                 type(self.exception).__name__, self.exception))
