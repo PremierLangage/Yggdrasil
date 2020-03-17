@@ -104,8 +104,7 @@ Ce quiz contient 5 questions.
 ==
 
 evaluator ==
-if step > 1:
-    scores.append(globals()[f"radio{step-1}"].eval())
+
 ==
 
 
