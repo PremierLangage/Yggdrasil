@@ -108,6 +108,7 @@ if __name__ == "__main__":
         {{ comp[step]|component }}
         """
     else:
+        dic['text'] = ""              
         dic['form'] = """
         {% for e in comp %}
         Question {{ loop.index }}
