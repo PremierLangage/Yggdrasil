@@ -97,9 +97,8 @@ if __name__ == "__main__":
     for key in dic:
         dic[key]=serialize(dic[key])
 
-    if dic['step'] < dic['nbstep'] - 1:
-        dic['text'] = """
-        Question {{step}}
+    if dic['step'] <= dic['nbstep'] - 1:
+        dic['text'] = """Question {{step}}
         {{ texts[step]}}
         """
         dic['form'] = """
