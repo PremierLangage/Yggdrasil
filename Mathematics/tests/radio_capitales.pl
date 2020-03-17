@@ -60,7 +60,7 @@ evaluator ==
 scores.append(globals()[f"radio{step}"].eval())
 score = -1
 step +=1
-if step>2:
+if step > nbstep:
     form = form2
 ==
 
