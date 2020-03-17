@@ -102,6 +102,7 @@ if __name__ == "__main__":
         Question {{step}}
         {{ texts[step]}}
         """
+        text = ' fff'
         form = """
         {{ comp[step]|component }}
         """
