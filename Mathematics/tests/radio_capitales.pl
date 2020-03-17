@@ -44,30 +44,8 @@ intro ==
 Ce quiz contient 5 questions.
 ==
 
-text ==
-Question {{step}}
-{{ texts[step]}}
-==
-
-form ==
-{{ comp[step]|component }}
-==
-
-form2 ==
-{% for e in comp %}
-Question {{ loop.index }}
-{{ texts[loop.index0]}}
-{{ e|component }}
-{% endfor %}
-==
-
 evaluator ==
-score = -1
 scores.append(globals()[f"radio{step}"].eval())
-step +=1
-if step >= nbstep-1:
-    form = form2
-    text = ""
 ==
 
 
