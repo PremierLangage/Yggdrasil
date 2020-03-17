@@ -454,6 +454,7 @@ class Test:
             res.append("Lignes saisies : {}".format(inputs))
         if self.output:
             tmp = self.output.replace('\n', "↲\n")
+            tmp = tmp.replace(' ', '⎵')
             res.append("Texte affiché : "
                        "<pre style='margin:3pt; padding:2pt; "
                        "background-color:black; color:white;'>"
@@ -800,6 +801,7 @@ class OutputAssert(Assert):
             return "Aucun affichage attendu"
         else:
             tmp = self.expected.replace('\n', "↲\n")
+            tmp = tmp.replace(' ', '⎵')
             return ("Affichage attendu :\n"
                     "<pre style='margin:3pt; padding:2pt; "
                     "background-color:black; color:white;'>\n"
