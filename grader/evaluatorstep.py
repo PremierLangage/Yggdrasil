@@ -112,7 +112,7 @@ if __name__ == "__main__":
         {{ texts[loop.index0]}}
         {{ e|component }}
         {% endfor %}
-        """.
+        """
     
     dic['step'] +=1
 
