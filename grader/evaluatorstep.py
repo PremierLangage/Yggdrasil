@@ -117,5 +117,5 @@ if __name__ == "__main__":
     dic['step'] +=1
     score = -1
 
-    output(score, ffeedback, dic)
+    output(score, feedback, dic)
 
