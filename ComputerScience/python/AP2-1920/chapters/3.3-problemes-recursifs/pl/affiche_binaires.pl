@@ -54,7 +54,7 @@ def chaines_binaires_aux(n, prefixe):
 def chaines_binaires(n):
     return chaines_binaires_aux(n, '')
     
-run(title='Existence de la fonction <code>affiche_binaires_aux</code>', 
+run(title='Existence de la fonction <tt>affiche_binaires_aux</tt>', 
     output='',
     types={"affiche_binaires_aux":FunctionType})
 
