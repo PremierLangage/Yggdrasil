@@ -82,7 +82,7 @@ if __name__ == "__main__":
     for key in dic:
         dic[key]=deserialize(dic[key])
 
-    if dic['step'] >= 0 and dic['step'] < 2:
+    if dic['step'] >= 0 and dic['step'] < 3:
         dic = {**namespace, **dic}
         if 'evaluator' in dic:
             dic['StopEvaluatorExec'] = StopEvaluatorExec
