@@ -56,7 +56,7 @@ def chaines_binaires(n):
     
 run(title='Existence de la fonction <tt>affiche_binaires_aux</tt>', 
     output='',
-    types={"affiche_binaires_aux":FunctionType})
+    types={"affiche_binaires":FunctionType})
 
 run(f'affiche_binaires_aux(3, "000")', 
     title = f'Chaînes binaires de longueur 3 et de préfixe "000"',
