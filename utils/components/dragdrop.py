@@ -153,7 +153,7 @@ class DragDropGroup():
 
         for drop_name, drop in self.drops.items():
             drop.disabled = True
-            drop_data = (drop.droppedId, drop.cid)
+            drop_data = [drop.droppedId, drop.cid]
             feedback+='\n'+str(drop_data)+'\n'
             if drop.droppedId == '':
                 pass
