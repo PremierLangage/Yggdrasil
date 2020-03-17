@@ -30,7 +30,7 @@ for i in range(5):
     radio.shuffle()
     globals()[f"radio{i}"] = radio
 
-    radios.append({"cid": radio.cid, "selector": radio.selector})
+    radios.append({"cid": radio.cid, "selector": radio.selector, "decorator": radio.decorator})
 
     partitif = {"le": "du ", "la": "de la ", "les": "des ", "l": "de l'"}
     du_pays.append(partitif[article] + pays)
@@ -47,7 +47,7 @@ form ==
 ==
 
 evaluator ==
-#score = radio.eval()
+score = radio.eval()
 score = 100
 step +=1
 ==
