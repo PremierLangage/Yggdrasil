@@ -101,7 +101,7 @@ if __name__ == "__main__":
     dic['step'] +=1
 
     if dic['step'] < dic['nbstep']:
-        dic['text'] = """Question {{step}}
+        dic['text'] = """Question {{step+1}}
         {{ texts[step]}}
         """
         dic['form'] = """
