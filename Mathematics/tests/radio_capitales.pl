@@ -87,7 +87,7 @@ for i in range(nbstep):
     radio.setsol_from_index(0)
     radio.shuffle()
     globals()[f"radio{i}"] = radio
-
+    d=globals().copy()
     comp.append({"cid": radio.cid, "selector": radio.selector})
 
     partitif = {"le": "du ", "la": "de la ", "les": "des ", "l": "de l'"}
@@ -100,6 +100,7 @@ text =
 form = 
 
 intro ==
+{{}}
 Ce quiz contient {{nbstep}} questions.
 ==
 
