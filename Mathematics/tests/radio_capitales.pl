@@ -44,13 +44,12 @@ Ce quiz contient {{nbstep}} questions.
 ==
 
 final ==
-{% for i in range(nbstep) %}
-Question {{ i+1 }}.
+{% for step in range(nbstep) %}
+Question {{ step+1 }}.
 
-{{ texts[i] }}
+{{ texts[step] }}
 
-{{ forms[i] }}
+{{ forms[step] }}
 
 {% endfor %}
 ==
-
