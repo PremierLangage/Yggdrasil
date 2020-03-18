@@ -118,7 +118,16 @@ if __name__ == "__main__":
         dic['text'] = ""
         feedback = str(score)
         final = ""              
-        dic['form'] = dic['final']
+        dic['form'] = """
+        {% for i in range(nbstep) %}
+        Question {{ i+1 }}.
+
+        {{ texts[i] }}
+
+        {{ forms[i] }}
+
+        {% endfor %}
+        """
 
     output(score, feedback, dic)
 
