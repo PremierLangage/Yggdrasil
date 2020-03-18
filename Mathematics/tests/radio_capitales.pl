@@ -75,6 +75,7 @@ with open('pays_europe.csv', newline='') as file:
 
 comp = []
 texts = []
+evaluator = []
 for i in range(nbstep+1):
     radio = CustomRadio(id=f"radio{i}")
 
@@ -90,8 +91,9 @@ for i in range(nbstep+1):
     comp.append({"cid": radio.cid, "selector": radio.selector})
 
     partitif = {"le": "du ", "la": "de la ", "les": "des ", "l": "de l'"}
-    texts.append("Quelle est la capitale " + partitif[article] + pays + " ?")
-
+    text.append("Quelle est la capitale {partitif[article]}  {pays} ?")
+    form.append("""{{ comp[step]|component }}""")
+    evaluator.append("""globals()[f"radio{i}"].eval()""")
 scores = []
 ==
 
@@ -101,11 +103,4 @@ form =
 intro ==
 Ce quiz contient {{nbstep}} questions.
 ==
-
-evaluator ==
-for i in range(nbstep):
-    globals()[f"radio{i}"].eval()
-==
-
-
 
