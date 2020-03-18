@@ -49,7 +49,7 @@ Question {{ step+1 }}.
 
 {{ texts[step] }}
 
-{{ forms[step] }}
+{{ radios[step] }}
 
 {% endfor %}
 ==
