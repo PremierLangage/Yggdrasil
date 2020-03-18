@@ -105,12 +105,12 @@ if __name__ == "__main__":
     if dic['step'] < dic['nbstep']:
         dic['text'] = dic['texts'][step]
         dic['form'] = dic['forms'][step]
-        score = -1
+        score = 0
     else:
         nbstep = dic['nbstep']
         dic['text'] = ""              
         dic['form'] = "\n".join([dic['texts'][step] + dic['forms'][step] for step in range(nbstep)])
-    
+        score = 100
 
     output(score, " ", dic)
 
