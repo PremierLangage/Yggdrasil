@@ -2,7 +2,7 @@ extends = /model/multistep.pl
 
 @ /demo/basic/pays_europe.csv
 
-title = Capitales européennes (Radio)
+title = Quiz : Capitales européennes
 
 @ /utils/components/radio.py [customradio.py]
 
