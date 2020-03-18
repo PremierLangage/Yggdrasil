@@ -95,7 +95,6 @@ for i in range(nbstep+1):
     texts.append(f"Quelle est la capitale {partitif[article]}  {pays} ?")
     forms.append("""{{ comp[step]|component }}""")
     evaluators.append("""globals()[f"radio{i}"].eval()""")
-scores = []
 ==
 
 text =
