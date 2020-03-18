@@ -35,7 +35,7 @@ for i in range(nbstep):
 
     partitif = {"le": "du ", "la": "de la ", "les": "des ", "l": "de l'"}
     texts.append(f"Quelle est la capitale {partitif[article]}  {pays} ?")
-    forms.append(r"{{" + f"radios[ {i} ]" + r"|component }}")
+    forms.append("""{{ radios[step]|component }}""")
     evaluators.append("""score = globals()[f"radio{step}"].eval()""")
 ==
 
