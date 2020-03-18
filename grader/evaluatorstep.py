@@ -84,7 +84,7 @@ if __name__ == "__main__":
             dic[key]=deserialize(dic[key])
 
         dic = {**namespace, **dic}
-        if 'evaluator' in dic:
+        if 'evaluators' in dic:
             dic['StopEvaluatorExec'] = StopEvaluatorExec
             exec(add_try_clause(dic['evaluators'][step], StopEvaluatorExec), dic)
             exec("", namespace)
