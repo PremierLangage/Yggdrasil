@@ -99,8 +99,9 @@ if __name__ == "__main__":
 
         for key in dic:
             dic[key]=serialize(dic[key])
-        
-        dic['scores'].append(dic['scores'])
+            
+        score = dic['score']
+        dic['scores'].append(score)
     else:
         score = 0
 
