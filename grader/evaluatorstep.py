@@ -111,7 +111,7 @@ if __name__ == "__main__":
     if dic['step'] < dic['nbstep']:
         dic['text'] = dic['texts'][step]
         dic['form'] = dic['forms'][step]
-        dic['final'] += Template(dic['text'] + "\n" + dic['form'][i]).render(dic)
+        dic['final'] += Template(dic['text'] + "\n" + dic['form']).render(dic)
     else:
         nbstep = dic['nbstep']
         score = int(round(sum(dic['scores'])/nbstep))
