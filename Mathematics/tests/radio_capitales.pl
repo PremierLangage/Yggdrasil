@@ -46,8 +46,11 @@ Ce quiz contient {{nbstep}} questions.
 final ==
 {% for i in range(nbstep) %}
 Question {{ i+1 }}.
+
 {{ texts[i]}}
+
 {{ radios[i]|component }}
+
 {% endfor %}
 ==
 
