@@ -116,7 +116,7 @@ if __name__ == "__main__":
         nbstep = dic['nbstep']
         score = int(round(sum(dic['scores'])/nbstep))
         dic['text'] = ""
-        feedback = str(score)
+        feedback = format_feedback_lightscore(score, "")
         final = ""              
         dic['form'] = """
         {% for i in range(nbstep) %}
