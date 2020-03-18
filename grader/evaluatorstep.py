@@ -117,9 +117,7 @@ if __name__ == "__main__":
         score = int(round(sum(dic['scores'])/nbstep))
         dic['text'] = ""
         dic['feedback'] = str(score)
-        final = ""
-        for step in range(nbstep):
-                
+        final = ""              
         dic['form'] = final
 
     output(score, feedback, dic)
