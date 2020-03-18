@@ -119,7 +119,7 @@ if __name__ == "__main__":
         feedback = format_feedback_lightscore(score, "")
         final = ""              
         dic['form'] = """
-        {% for i in range(nbstep) %}
+        {% for step in range(nbstep) %}
         Question {{ i+1 }}.
 
         {{ texts[i] }}
