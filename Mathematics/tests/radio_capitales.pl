@@ -42,4 +42,3 @@ for i in range(nbstep):
 intro ==
 Ce quiz contient {{nbstep}} questions.
 ==
-
