@@ -78,18 +78,17 @@ texts = []
 forms = []
 evaluators = []
 for i in range(nbstep+1):
-    radio = CustomRadio(id=f"radio{i}")
+    globals()[f"radio{i}"] = CustomRadio()
 
     sample_rows=rd.sample(all_rows, 4)
 
     pays = sample_rows[0]['pays']
     article = sample_rows[0]['article']
 
-    radio.setitems([row['capitale'] for row in sample_rows])
-    radio.setsol_from_index(0)
-    radio.shuffle()
-    globals()[f"radio{i}"] = radio
-    comp.append({"cid": radio.cid, "selector": radio.selector})
+    globals()[f"radio{i}"].setitems([row['capitale'] for row in sample_rows])
+    globals()[f"radio{i}"].setsol_from_index(0)
+    globals()[f"radio{i}"].shuffle()
+    comp.append({"cid": globals()[f"radio{i}"].cid, "selector": globals()[f"radio{i}"].selector})
 
     partitif = {"le": "du ", "la": "de la ", "les": "des ", "l": "de l'"}
     texts.append(f"Quelle est la capitale {partitif[article]}  {pays} ?")
