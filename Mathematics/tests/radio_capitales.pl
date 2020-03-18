@@ -73,7 +73,7 @@ from customradio import CustomRadio
 with open('pays_europe.csv', newline='') as file:
     all_rows = list(csv.DictReader(file, delimiter=','))
 
-comp = []
+radios = []
 texts = []
 forms = []
 evaluators = []
@@ -88,11 +88,11 @@ for i in range(nbstep):
     globals()[f"radio{i}"].setitems([row['capitale'] for row in sample_rows])
     globals()[f"radio{i}"].setsol_from_index(0)
     globals()[f"radio{i}"].shuffle()
-    comp.append({"cid": globals()[f"radio{i}"].cid, "selector": globals()[f"radio{i}"].selector})
+    radios.append({"cid": globals()[f"radio{i}"].cid, "selector": globals()[f"radio{i}"].selector})
 
     partitif = {"le": "du ", "la": "de la ", "les": "des ", "l": "de l'"}
     texts.append(f"Quelle est la capitale {partitif[article]}  {pays} ?")
-    forms.append("""{{ comp[step]|component }}""")
+    forms.append("""{{ radios[step]|component }}""")
     evaluators.append("""globals()[f"radio{step}"].eval()""")
 ==
 
