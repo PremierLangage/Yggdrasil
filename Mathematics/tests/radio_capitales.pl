@@ -92,7 +92,7 @@ for i in range(nbstep+1):
     comp.append({"cid": radio.cid, "selector": radio.selector})
 
     partitif = {"le": "du ", "la": "de la ", "les": "des ", "l": "de l'"}
-    texts.append("Quelle est la capitale {partitif[article]}  {pays} ?")
+    texts.append(f"Quelle est la capitale {partitif[article]}  {pays} ?")
     forms.append("""{{ comp[step]|component }}""")
     evaluators.append("""globals()[f"radio{i}"].eval()""")
 scores = []
