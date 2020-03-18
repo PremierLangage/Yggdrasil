@@ -50,8 +50,9 @@ if __name__ == "__main__":
     dic['step'] = -1
     dic['text'] = dic['intro']               
     dic['form'] = ""
+    dic['final'] = ""
     dic['scores'] = []
-    
+
     if 'buttons' not in dic:
         dic['buttons'] = ["submit"]
 
