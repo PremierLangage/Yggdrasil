@@ -77,7 +77,7 @@ comp = []
 texts = []
 forms = []
 evaluators = []
-for i in range(nbstep+1):
+for i in range(nbstep):
     globals()[f"radio{i}"] = CustomRadio()
 
     sample_rows=rd.sample(all_rows, 4)
