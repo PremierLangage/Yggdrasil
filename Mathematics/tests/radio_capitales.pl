@@ -47,9 +47,9 @@ final ==
 {% for i in range(nbstep) %}
 Question {{ i+1 }}.
 
-{{ texts[i]}}
+{{ texts[i] }}
 
-{{ radios[i]|component }}
+{{ forms[i] }}
 
 {% endfor %}
 ==
