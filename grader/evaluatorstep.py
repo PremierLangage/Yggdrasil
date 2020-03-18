@@ -109,6 +109,7 @@ if __name__ == "__main__":
     step = dic['step']
     
     if dic['step'] < dic['nbstep']:
+        feedback = " "
         dic['text'] = dic['texts'][step]
         dic['form'] = dic['forms'][step]
     else:
