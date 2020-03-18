@@ -118,5 +118,5 @@ if __name__ == "__main__":
         dic['feedback'] = str(score)         
         dic['form'] = " \n ".join([dic['texts'][i] + "\n" + dic['forms'][i] for i in range(nbstep)])
 
-    output(score, " ", dic)
+    output(score, feedback, dic)
 
