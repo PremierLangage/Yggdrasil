@@ -105,16 +105,12 @@ if __name__ == "__main__":
     if dic['step'] < dic['nbstep']:
         dic['text'] = dic['texts'][step]
         dic['form'] = dic['forms'][step]
+        score = -1
     else:
+        nbstep = dic['nbstep']
         dic['text'] = ""              
-        dic['form'] = """
-        {% for i in range(nbstep) %}
-        Question {{ i+1 }}.
-        {{ texts[i]}}
-        {{ comp[i]|component }}
-        {% endfor %}
-        """
-    score = -1
+        dic['form'] = "\n".join([dic['texts'][step] + dic['forms'][step] for step in range(nbstep)])
+    
 
     output(score, " ", dic)
 
