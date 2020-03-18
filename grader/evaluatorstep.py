@@ -120,11 +120,11 @@ if __name__ == "__main__":
         final = ""              
         dic['form'] = """
         {% for step in range(nbstep) %}
-        Question {{ i+1 }}.
+        Question {{ step+1 }}.
 
-        {{ texts[i] }}
+        {{ texts[step] }}
 
-        {{ forms[i] }}
+        {{ forms[step] }}
 
         {% endfor %}
         """
