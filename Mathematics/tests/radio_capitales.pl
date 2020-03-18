@@ -39,10 +39,6 @@ for i in range(nbstep):
     evaluators.append("""globals()[f"radio{step}"].eval()""")
 ==
 
-text =
-
-form = 
-
 intro ==
 Ce quiz contient {{nbstep}} questions.
 ==
