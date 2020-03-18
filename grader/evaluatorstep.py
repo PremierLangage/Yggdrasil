@@ -80,14 +80,10 @@ if __name__ == "__main__":
     dic = get_context()
 
     dic['step'] += 1
-
+    step = dic['step']
     if dic['step'] < dic['nbstep']:
-        dic['text'] = """Question {{step+1}}.
-        {{ texts[step]}}
-        """
-        dic['form'] = """
-        {{ comp[step]|component }}
-        """
+        dic['text'] = dic['texts'][step]
+        dic['form'] = dic['forms'][step]
     else:
         dic['text'] = ""              
         dic['form'] = """
