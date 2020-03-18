@@ -79,6 +79,8 @@ if __name__ == "__main__":
     
     dic = get_context()
 
+    step = dic['step']
+
     if dic['step'] >= 0:
         for key in dic:
             dic[key]=deserialize(dic[key])
