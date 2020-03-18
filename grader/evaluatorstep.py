@@ -99,18 +99,23 @@ if __name__ == "__main__":
 
         for key in dic:
             dic[key]=serialize(dic[key])
+        
+        dic['scores'].append(dic['scores'])
+    else:
+        score = 0
 
     dic['step'] += 1
     step = dic['step']
+    
     if dic['step'] < dic['nbstep']:
         dic['text'] = dic['texts'][step]
         dic['form'] = dic['forms'][step]
-        score = 0
     else:
         nbstep = dic['nbstep']
-        dic['text'] = ""              
+        score = int(round(sum(dic['scores'])/nbstep))
+        dic['text'] = ""
+        dic['feedback'] = str(score)         
         dic['form'] = "\n".join([dic['texts'][step] + dic['forms'][step] for step in range(nbstep)])
-        score = 100
 
     output(score, " ", dic)
 
