@@ -7,6 +7,7 @@ nbstep % 2
 input =: Input
 
 radio =: RadioGroup
+radio.decorator = CustomRadio
 
 stepseq % ["delta","nbsol"]
 
