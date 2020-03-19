@@ -17,10 +17,7 @@ with open('pays_europe.csv', newline='') as file:
 
 radios = []
 texts = []
-forms = []
-#evaluators = []
 for i in range(nbstep):
-    #globals()[f"radio{i}"] = CustomRadio()
 
     sample_rows=rd.sample(all_rows, 4)
 
@@ -31,21 +28,12 @@ for i in range(nbstep):
     radios[i].setitems([row['capitale'] for row in sample_rows])
     radios[i].setsol_from_index(0)
     radios[i].shuffle()
-    #globals()[f"radio{i}"].setitems([row['capitale'] for row in sample_rows])
-    #globals()[f"radio{i}"].setsol_from_index(0)
-    #globals()[f"radio{i}"].shuffle()
-    #radios.append({"cid": globals()[f"radio{i}"].cid, "selector": globals()[f"radio{i}"].selector})
 
     partitif = {"le": "du ", "la": "de la ", "les": "des ", "l": "de l'"}
     
     texts.append(
         f"Quelle est la capitale {partitif[article]}  {pays} ?"
         )
-    forms.append(
-        """{{step}} {{ radios[step]|component }}"""
-        )
-
-    #evaluators.append("""score = globals()[f"radio{step}"].eval()""")
 ==
 
 intro ==
@@ -53,16 +41,13 @@ Ce quiz contient {{nbstep}} questions.
 ==
 
 evaluator ==
-#score = globals()[f"radio{step}"].eval()
 score = radios[step].eval()
 ==
 
 form ==
-
+{{ radios[step]|component }}
 ==
 
 text ==
 
 ==
-
-
