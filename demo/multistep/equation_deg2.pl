@@ -4,6 +4,8 @@ title = Equation
 
 nbstep % 2
 
+display % true
+
 input =: Input
 
 radio =: RadioGroup
