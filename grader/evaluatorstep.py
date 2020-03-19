@@ -118,8 +118,19 @@ if __name__ == "__main__":
     
     if dic['step'] < dic['nbstep']:
         feedback = " "
-        dic['text'] = dic['texts'][step]
-        dic['form'] = dic['forms'][step]
+
+        if 'texts' in dic:
+            if isinstance(dic['texts'], list):
+                dic['text'] = dic['texts'][step]
+            elif isinstance(dic['texts'], dict):
+                dic['text'] = dic['texts'][dic['stepseq'][step]]
+
+        if 'forms' in dic:
+            if isinstance(dic['forms'], list):
+                dic['form'] = dic['forms'][step]
+            elif isinstance(dic['forms'], dict):
+                dic['form'] = dic['forms'][dic['stepseq'][step]]
+
     else:
         nbstep = dic['nbstep']
         score = int(round(sum(dic['scores'])/nbstep))
