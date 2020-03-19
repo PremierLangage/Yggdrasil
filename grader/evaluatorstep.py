@@ -146,7 +146,7 @@ if __name__ == "__main__":
             elif isinstance(dic['forms'], dict):
                 dic['form'] = dic['forms'][dic['stepseq'][step]]
 
-        dic['final'] += env.Template(dic['text']+"\n"+dic['form']).render(dic)
+        dic['final'] += env.get_template(dic['text']+"\n"+dic['form']).render(dic)
 
     else:
         nbstep = dic['nbstep']
