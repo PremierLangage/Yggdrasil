@@ -16,24 +16,6 @@ try:
 except ImportError:
     namespace = {}
 
-def deserialize_component(arg):
-    if isinstance(arg,dict) and 'sympy_type' in arg:
-        if arg['sympy_type']=='Basic':
-                with evaluate(False):
-                    return sympify(arg['str'])
-        elif arg['sympy_type']=='FiniteSet':
-                with evaluate(False):
-                    return FiniteSet(*sympify(arg['str']))
-    elif isinstance(arg, dict):
-        return {k: deserialize(v) for k, v in arg.items()}
-    elif isinstance(arg, list):
-        return list(map(deserialize,arg))
-    elif isinstance(arg, tuple):
-        return tuple(map(deserialize,arg))
-    else:
-        return arg
-
-
 class StopBeforeExec(Exception):
     pass
 
@@ -64,7 +46,10 @@ if __name__ == "__main__":
 
     for key in dic:
         dic[key]=serialize(dic[key])
-                      
+
+    for key in dic:
+        if isinstance(dic[key], list) and isinstance(dic[key], Component):
+
 
     if 'buttons' not in dic:
         dic['buttons'] = ["submit","reroll"]
