@@ -15,14 +15,12 @@ def component(l):
     return SafeString("<%s cid='%s'></%s>" % (selector, cid, selector))
 
 
+env = jinja2.Environment()
+env.globals.update({
+    "component":    component
+})
+env.filters["component"] = component
 
-def environment(**options):
-    env = jinja2.Environment(**options)
-    env.globals.update({
-        "component":    component
-    })
-    env.filters["component"] = component
-    return env
 
 try:
     from serialize import serialize, deserialize
