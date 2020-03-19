@@ -52,6 +52,7 @@ if __name__ == "__main__":
         if isinstance(dic[key], list) and len(dic[key])>0 and isinstance(dic[key][0], Component):
             for item in dic[key]:
                 newcomp.append((item.id], item))
+
     for name, comp in newcomp:
         dic[name] = comp
 
