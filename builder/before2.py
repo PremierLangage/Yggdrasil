@@ -47,7 +47,7 @@ if __name__ == "__main__":
     for key in dic:
         dic[key]=serialize(dic[key])
 
-    for key, v in dic.items():
+    for key in dic.copy():
         if isinstance(dic[key], list) and len(dic[key])>0 and isinstance(dic[key][0], Component):
             for i in range(len(dic[key])):
                 dic[dic[key][i].id] = dic[key][i]
