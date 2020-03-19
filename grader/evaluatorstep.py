@@ -14,7 +14,7 @@ def component(l):
     return SafeString("<%s cid='%s'></%s>" % (selector, cid, selector))
 
 
-env = jinja2.Environment()
+env = jinja2.get_default()
 env.globals.update({
     "component":    component
 })
