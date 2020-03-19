@@ -1,4 +1,4 @@
-extends = /model/multistep.pl
+extends = /model/basic.pl
 
 @ /demo/basic/pays_europe.csv
 
@@ -58,3 +58,4 @@ Question {{ step+1 }}.
 
 {% endfor %}
 ==
+
