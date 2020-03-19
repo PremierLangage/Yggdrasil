@@ -141,6 +141,7 @@ if __name__ == "__main__":
                 for i in range(len(dic[key])):
                     item = dic[key][i]
                     if isinstance(item, Component):
+                        name = item.name
                         newcomp.append((name, item))
                         dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
 
