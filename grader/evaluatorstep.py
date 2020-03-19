@@ -100,6 +100,15 @@ if __name__ == "__main__":
     step = dic['step']
 
     if dic['step'] >= 0:
+
+        for key in dic:
+            if isinstance(dic[key], list):
+                for i in range(len(dic[key])):
+                    item = dic[key][i]
+                    if isinstance(item, dict) and 'cid' in item:
+                        name = item['name']
+                        dic[key][i] = dic[name]
+
         for key in dic:
             dic[key]=deserialize(dic[key])
 
@@ -125,6 +134,18 @@ if __name__ == "__main__":
 
         for key in dic:
             dic[key]=serialize(dic[key])
+
+        newcomp = []
+        for key in dic:
+            if isinstance(dic[key], list):
+                for i in range(len(dic[key])):
+                    item = dic[key][i]
+                    if isinstance(item, Component):
+                        newcomp.append((name, item))
+                        dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
+
+        for name, comp in newcomp:
+            dic[name] = comp
 
         score = dic['score']
         dic['scores'].append(score)
@@ -162,4 +183,6 @@ if __name__ == "__main__":
         dic['form'] = dic['final']
 
     output(score, feedback, dic)
+
+
 
