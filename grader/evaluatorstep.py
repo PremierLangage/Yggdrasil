@@ -86,16 +86,24 @@ if __name__ == "__main__":
             dic[key]=deserialize(dic[key])
 
         dic = {**namespace, **dic}
+        
         if 'evaluators' in dic:
-            dic['StopEvaluatorExec'] = StopEvaluatorExec
-            exec(add_try_clause(dic['evaluators'][step], StopEvaluatorExec), dic)
-            exec("", namespace)
-            for key in namespace:
-                if key in dic and dic[key] == namespace[key]:
-                    del dic[key]
+            if isinstance(dic['evaluators'], list):
+                code = dic['evaluators'][step]
+            elif isinstance(dic['evaluators'], dict):
+                code = dic['evaluators'][dic['stepseq'][step]]
+        elif 'evaluator' in dic:
+                code = dic['evaluator']
         else:
             print(missing_evaluator_stderr, file=sys.stderr)
             sys.exit(1)
+
+        dic['StopEvaluatorExec'] = StopEvaluatorExec
+        exec(add_try_clause(code, StopEvaluatorExec), dic)
+        exec("", namespace)
+        for key in namespace:
+            if key in dic and dic[key] == namespace[key]:
+                del dic[key]
 
         for key in dic:
             dic[key]=serialize(dic[key])
