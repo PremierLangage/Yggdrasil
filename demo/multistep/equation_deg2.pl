@@ -22,29 +22,7 @@ intro ==
 Ce quiz contient {{nbstep}} questions.
 ==
 
-text.delta ==
-Calculer le discriminant de cette équation.
-==
 
-form.delta ==
-{{ input|component }}
-==
-
-evaluator.delta ==
-score = 100
-==
-
-text.nbsol ==
-Combien y a-t-il de solutions ?
-==
-
-form.nbsol ==
-{{ radio|component }}
-==
-
-evaluator.nbsol ==
-score = radio.eval()
-==
 
 final ==
 The End.
