@@ -149,8 +149,7 @@ if __name__ == "__main__":
             elif isinstance(dic['forms'], dict):
                 dic['form'] = dic['forms'][dic['stepseq'][step]]
 
-        # dic['final'] = env.from_string(dic['text']+" \n "+dic['form']+" \n ").render(dic)
-        dic['final'] = env.from_string(dic['form']).render(dic)
+        dic['final'] += env.from_string(dic['text']+" \n "+dic['form']+" \n ").render(dic)
     else:
         nbstep = dic['nbstep']
         score = int(round(sum(dic['scores'])/nbstep))
