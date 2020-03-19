@@ -150,6 +150,9 @@ if __name__ == "__main__":
                 dic['form'] = dic['forms'][dic['stepseq'][step]]
 
         dic['final'] += env.from_string(dic['text']+" \n "+dic['form']+" \n ").render(dic)
+        if dic['display']:
+            dic['text'] = ""
+            dic['form'] = dic['final']
     else:
         nbstep = dic['nbstep']
         score = int(round(sum(dic['scores'])/nbstep))
