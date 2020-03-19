@@ -4,7 +4,8 @@ extends = /model/multistep.pl
 
 title = Quiz : Capitales européennes
 
-nbstep % 3
+nbstep % 4
+display % true
 
 before == #|python|
 import random as rd
@@ -19,17 +20,21 @@ texts = []
 forms = []
 #evaluators = []
 for i in range(nbstep):
-    globals()[f"radio{i}"] = CustomRadio()
+    #globals()[f"radio{i}"] = CustomRadio()
 
     sample_rows=rd.sample(all_rows, 4)
 
     pays = sample_rows[0]['pays']
     article = sample_rows[0]['article']
 
-    globals()[f"radio{i}"].setitems([row['capitale'] for row in sample_rows])
-    globals()[f"radio{i}"].setsol_from_index(0)
-    globals()[f"radio{i}"].shuffle()
-    radios.append({"cid": globals()[f"radio{i}"].cid, "selector": globals()[f"radio{i}"].selector})
+    radios.append(CustomRadio())
+    radios[i].setitems([row['capitale'] for row in sample_rows])
+    radios[i].setsol_from_index(0)
+    radios[i].shuffle()
+    #globals()[f"radio{i}"].setitems([row['capitale'] for row in sample_rows])
+    #globals()[f"radio{i}"].setsol_from_index(0)
+    #globals()[f"radio{i}"].shuffle()
+    #radios.append({"cid": globals()[f"radio{i}"].cid, "selector": globals()[f"radio{i}"].selector})
 
     partitif = {"le": "du ", "la": "de la ", "les": "des ", "l": "de l'"}
     
@@ -37,8 +42,9 @@ for i in range(nbstep):
         f"Quelle est la capitale {partitif[article]}  {pays} ?"
         )
     forms.append(
-        """{{ radios[step]|component }}"""
+        """{{step}} {{ radios[step]|component }}"""
         )
+
     #evaluators.append("""score = globals()[f"radio{step}"].eval()""")
 ==
 
@@ -47,5 +53,15 @@ Ce quiz contient {{nbstep}} questions.
 ==
 
 evaluator ==
-score = globals()[f"radio{step}"].eval()
+#score = globals()[f"radio{step}"].eval()
+score = radios[step].eval()
 ==
+
+form ==
+
+==
+
+text ==
+
+==
+
