@@ -5,7 +5,7 @@ extends = /model/multistep.pl
 title = Quiz : Capitales européennes
 
 nbstep % 4
-display % true
+display % false
 
 before == #|python|
 import random as rd
@@ -64,4 +64,5 @@ form ==
 text ==
 
 ==
+
 
