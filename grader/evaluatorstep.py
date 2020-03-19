@@ -14,7 +14,7 @@ def component(l):
     return SafeString("<%s cid='%s'></%s>" % (selector, cid, selector))
 
 
-env = Environment(loader=BaseLoader)
+env = Environment(loader=BaseLoader())
 env.globals.update({
     "component":    component
 })
