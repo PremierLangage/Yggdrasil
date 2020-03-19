@@ -19,17 +19,16 @@ texts = []
 forms = []
 evaluators = []
 for i in range(nbstep):
-    globals()[f"radio{i}"] = CustomRadio()
+    radios.append(CustomRadio(id=f"radio{i}"))
 
     sample_rows=rd.sample(all_rows, 4)
 
     pays = sample_rows[0]['pays']
     article = sample_rows[0]['article']
 
-    globals()[f"radio{i}"].setitems([row['capitale'] for row in sample_rows])
-    globals()[f"radio{i}"].setsol_from_index(0)
-    globals()[f"radio{i}"].shuffle()
-    radios.append({"cid": globals()[f"radio{i}"].cid, "selector": globals()[f"radio{i}"].selector})
+    radios[i].setitems([row['capitale'] for row in sample_rows])
+    radios[i].setsol_from_index(0)
+    radios[i].shuffle()
 
     partitif = {"le": "du ", "la": "de la ", "les": "des ", "l": "de l'"}
 ==
