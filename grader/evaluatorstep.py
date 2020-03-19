@@ -5,7 +5,7 @@ import sys, json, jsonpickle
 from sandboxio import output, get_context
 from components import Component
 
-import jinja2
+from jinja2 import Environment, BaseLoader
 
 
 def component(l):
@@ -14,7 +14,7 @@ def component(l):
     return SafeString("<%s cid='%s'></%s>" % (selector, cid, selector))
 
 
-env = jinja2.get_default()
+env = Environment(loader=BaseLoader)
 env.globals.update({
     "component":    component
 })
