@@ -108,6 +108,7 @@ if __name__ == "__main__":
                     if isinstance(item, dict) and 'cid' in item:
                         name = item['name']
                         dic[key][i] = dic[name]
+                        dic[key][i].name = name
 
         for key in dic:
             dic[key]=deserialize(dic[key])
@@ -144,9 +145,6 @@ if __name__ == "__main__":
                         name = item.name
                         newcomp.append((name, item))
                         dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
-
-        for name, comp in newcomp:
-            dic[name] = comp
 
         score = dic['score']
         dic['scores'].append(score)
