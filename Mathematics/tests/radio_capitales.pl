@@ -6,7 +6,7 @@ title = Quiz : Capitales européennes
 
 nbstep % 3
 
-before ==
+before == #|python|
 import random as rd
 import csv
 from customradio import CustomRadio
@@ -32,9 +32,16 @@ for i in range(nbstep):
     radios.append({"cid": globals()[f"radio{i}"].cid, "selector": globals()[f"radio{i}"].selector})
 
     partitif = {"le": "du ", "la": "de la ", "les": "des ", "l": "de l'"}
-    texts.append(f"Quelle est la capitale {partitif[article]}  {pays} ?")
-    forms.append("""{{ radios[step]|component }}""")
-    evaluators.append("""score = globals()[f"radio{step}"].eval()""")
+    
+    texts.append(
+        f"Quelle est la capitale {partitif[article]}  {pays} ?"
+        )
+    forms.append(
+        """{{ radios[step]|component }}"""
+        )
+    evaluators.append(
+        """score = globals()[f"radio{step}"].eval()"""
+        )
 ==
 
 intro ==
