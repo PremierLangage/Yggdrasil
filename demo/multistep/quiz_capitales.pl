@@ -49,14 +49,3 @@ Ce quiz contient {{nbstep}} questions.
 evaluator ==
 score = globals()[f"radio{step}"].eval()
 ==
-
-final ==
-{% for step in range(nbstep) %}
-Question {{ step+1 }}.
-
-{{ texts[step] }}
-
-{{ radios[step]|component }}
-
-{% endfor %}
-==
