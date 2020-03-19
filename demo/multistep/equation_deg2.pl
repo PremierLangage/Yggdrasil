@@ -13,12 +13,6 @@ radio =: RadioGroup
 stepseq % ["delta","nbsol"]
 
 before == #|python|
-radios = []
-texts = []
-forms = []
-evaluators = []
-
-
 radio.setitems(["Aucune","Une solution","Deux solutions"])
 radio.setsol_from_index(0)
 
