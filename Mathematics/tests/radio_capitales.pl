@@ -32,27 +32,15 @@ for i in range(nbstep):
     radios.append({"cid": globals()[f"radio{i}"].cid, "selector": globals()[f"radio{i}"].selector})
 
     partitif = {"le": "du ", "la": "de la ", "les": "des ", "l": "de l'"}
-    
-    texts.append(
-        f"Quelle est la capitale {partitif[article]}  {pays} ?"
-        )
-    forms.append(
-        """{{ radios[step]|component }}"""
-        )
-    evaluators.append(
-        """score = globals()[f"radio{step}"].eval()"""
-        )
 ==
 
-intro ==
+text ==
 Ce quiz contient {{nbstep}} questions.
 ==
 
-final ==
+form ==
 {% for step in range(nbstep) %}
 Question {{ step+1 }}.
-
-{{ texts[step] }}
 
 {{ radios[step]|component }}
 
