@@ -57,7 +57,7 @@ evaluator.delta ==
 score = 100
 ==
 
-text.delta ==
+text.nbsol ==
 Combien y a-t-il de solutions ?
 ==
 
