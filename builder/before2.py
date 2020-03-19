@@ -48,8 +48,9 @@ if __name__ == "__main__":
         dic[key]=serialize(dic[key])
 
     for key in dic:
-        if isinstance(dic[key], list) and isinstance(dic[key][0], Component):
-
+        if isinstance(dic[key], list) and len(dic[key])>0 and isinstance(dic[key][0], Component):
+            for i in range(len(dic[key])):
+                dic[dic[key][i].id] = dic[key][i]
 
     if 'buttons' not in dic:
         dic['buttons'] = ["submit","reroll"]
