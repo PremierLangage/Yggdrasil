@@ -6,6 +6,24 @@ from sandboxio import output, get_context
 from components import Component
 from jinja2 import Template
 
+import jinja2
+
+
+def component(l):
+    selector = l["selector"]
+    cid = l["cid"]
+    return SafeString("<%s cid='%s'></%s>" % (selector, cid, selector))
+
+
+
+def environment(**options):
+    env = jinja2.Environment(**options)
+    env.globals.update({
+        "component":    component
+    })
+    env.filters["component"] = component
+    return env
+
 try:
     from serialize import serialize, deserialize
 except ImportError:
