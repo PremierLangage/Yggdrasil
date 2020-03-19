@@ -17,7 +17,7 @@ with open('pays_europe.csv', newline='') as file:
 radios = []
 texts = []
 forms = []
-evaluators = []
+#evaluators = []
 for i in range(nbstep):
     globals()[f"radio{i}"] = CustomRadio()
 
