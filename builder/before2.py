@@ -50,8 +50,10 @@ if __name__ == "__main__":
     newcomp = []
     for key in dic:
         if isinstance(dic[key], list) and len(dic[key])>0 and isinstance(dic[key][0], Component):
-            for i in range(len(dic[key])):
-                newcomp.append((dic[key][i].id],dic[key][i]))
+            for item in dic[key]:
+                newcomp.append((item.id], item))
+    for name, comp in newcomp:
+        dic[name] = comp
 
     if 'buttons' not in dic:
         dic['buttons'] = ["submit","reroll"]
