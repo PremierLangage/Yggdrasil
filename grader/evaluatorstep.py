@@ -6,12 +6,11 @@ from sandboxio import output, get_context
 from components import Component
 
 from jinja2 import Environment, BaseLoader
-from django.utils.safestring import SafeString
 
 def component(l):
     selector = l["selector"]
     cid = l["cid"]
-    return SafeString("<%s cid='%s'></%s>" % (selector, cid, selector))
+    return "<%s cid='%s'></%s>" % (selector, cid, selector)
 
 
 env = Environment(loader=BaseLoader())
