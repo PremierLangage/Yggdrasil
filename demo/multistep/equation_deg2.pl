@@ -14,8 +14,8 @@ radio.decorator = CustomRadio
 stepseq % ["delta","nbsol"]
 
 before == #|python|
-radio.setitems(["Aucune","Une solution","Deux solutions"])
-radio.setsol_from_index(0)
+#radio.setitems(["Aucune","Une solution","Deux solutions"])
+#radio.setsol_from_index(0)
 ==
 
 intro ==
