@@ -8,8 +8,12 @@ from components import Component
 from jinja2 import Environment, BaseLoader
 
 def component(l):
-    selector = l["selector"]
-    cid = l["cid"]
+    if isinstance(l,dict):
+        selector = l["selector"]
+        cid = l["cid"]
+    else:
+        selector = l.selector
+        cid = l.cid
     return "<%s cid='%s'></%s>" % (selector, cid, selector)
 
 
