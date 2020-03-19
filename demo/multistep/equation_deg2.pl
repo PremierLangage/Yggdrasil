@@ -22,7 +22,7 @@ intro ==
 Ce quiz contient {{nbstep}} questions.
 ==
 
-text.delta ==
+texts.delta ==
 Calculer le discriminant de cette équation.
 ==
 
