@@ -4,8 +4,6 @@ extends = /model/multistep.pl
 
 title = Quiz : Capitales européennes
 
-@ /utils/components/radio.py [customradio.py]
-
 nbstep % 3
 
 before ==
