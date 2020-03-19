@@ -1,8 +1,6 @@
 extends = /model/multistep.pl
 
-@ /demo/basic/pays_europe.csv
-
-title = Quiz : Capitales européennes
+title = Equation
 
 nbstep % 2
 
