@@ -48,7 +48,7 @@ if __name__ == "__main__":
         dic[key]=serialize(dic[key])
 
     for key in dic:
-        if isinstance(dic[key], list) and isinstance(dic[key], Component):
+        if isinstance(dic[key], list) and isinstance(dic[key][0], Component):
 
 
     if 'buttons' not in dic:
