@@ -51,5 +51,3 @@ formstep ==
 evaluatorstep ==
 score = radios[step].eval()
 ==
-
-
