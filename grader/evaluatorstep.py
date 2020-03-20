@@ -164,7 +164,7 @@ if __name__ == "__main__":
         dic['scores'].append(score)
 
     step += 1
-    step = dic['step']
+    dic['step'] = step
     
     if dic['step'] < dic['nbstep']:
         feedback = " "
