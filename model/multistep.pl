@@ -6,8 +6,6 @@
 @ /builder/beforestep.py [builder.py]
 @ /grader/evaluatorstep.py [grader.py]
 
-settings.multistep % true
-
 extracss ==
 <style>
 .icon-check-after p::after {
