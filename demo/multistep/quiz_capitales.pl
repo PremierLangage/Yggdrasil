@@ -4,7 +4,7 @@ extends = /model/multistep.pl
 
 title = Quiz : Capitales européennes
 
-nbstep % 2
+nbstep % 3
 settings.cumulative % false
 
 before == #|python|
@@ -23,6 +23,7 @@ partitif = {"le": "du ", "la": "de la ", "les": "des ", "l": "de l'"}
 for i in range(nbstep):
     sample_rows=rd.sample(all_rows, 4)
 
+    while
     pays = sample_rows[0]['pays']
     article = sample_rows[0]['article']
     du_pays.append(partitif[article]+pays)
