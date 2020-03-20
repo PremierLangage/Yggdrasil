@@ -16,7 +16,7 @@ with open('pays_europe.csv', newline='') as file:
     all_rows = list(csv.DictReader(file, delimiter=','))
 
 radios = []
-
+dic['form'] = ""
 for i in range(nbstep):
 
     sample_rows=rd.sample(all_rows, 4)
