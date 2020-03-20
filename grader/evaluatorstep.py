@@ -159,7 +159,7 @@ if __name__ == "__main__":
             dic[key]=serialize(dic[key])
 
         aux_component2(dic)
-        
+
         score = dic['score']
         dic['scores'].append(score)
 
@@ -174,17 +174,21 @@ if __name__ == "__main__":
                 dic['text'] = dic['texts'][step]
             elif isinstance(dic['texts'], dict):
                 dic['text'] = dic['texts'][dic['stepseq'][step]]
+        elif 'textstep' in dic:
+            dic['text'] = dic['textstep']
 
         if 'forms' in dic:
             if isinstance(dic['forms'], list):
                 dic['form'] = dic['forms'][step]
             elif isinstance(dic['forms'], dict):
                 dic['form'] = dic['forms'][dic['stepseq'][step]]
+        elif 'formstep' in dic:
+            dic['form'] = dic['formstep']
 
-        dic['final'] += env.from_string(dic['text']+" \n "+dic['form']+" \n ").render(dic)
+        dic['current_display'] += env.from_string(dic['text']+" \n "+dic['form']+" \n ").render(dic)
         if dic['settings']['cumulative']:
             dic['text'] = ""
-            dic['form'] = dic['final']
+            dic['form'] = dic['current_display']
     else:
         nbstep = dic['nbstep']
         score = int(round(sum(dic['scores'])/nbstep))
