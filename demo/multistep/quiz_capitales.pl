@@ -37,7 +37,6 @@ for i in range(nbstep):
     radios[i].setitems([row['capitale'] for row in sample_rows])
     radios[i].setsol_from_index(0)
     radios[i].shuffle()
-
 ==
 
 intro ==
