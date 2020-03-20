@@ -16,9 +16,10 @@ with open('pays_europe.csv', newline='') as file:
     all_rows = list(csv.DictReader(file, delimiter=','))
 
 radios = []
-texts = []
-forms = []
-evaluators = []
+
+du_pays = []
+partitif = {"le": "du ", "la": "de la ", "les": "des ", "l": "de l'"}
+
 for i in range(nbstep):
 
     sample_rows=rd.sample(all_rows, 4)
@@ -31,15 +32,24 @@ for i in range(nbstep):
     radios[i].setsol_from_index(0)
     radios[i].shuffle()
 
-    partitif = {"le": "du ", "la": "de la ", "les": "des ", "l": "de l'"}
-    
-    texts.append(
-        f"Quelle est la capitale {partitif[article]}  {pays} ?"
-        )
-    forms.append("{{ radios[step]|component }}")
-    evaluators.append("score = radios[step].eval()")
+
+    du_pays.append(partitif[article]+pays)
 ==
 
 intro ==
 Ce quiz contient {{nbstep}} questions.
 ==
+
+textstep ==
+Quelle est la capitale {{ du_pays[step] }} ?"
+==
+
+formstep ==
+{{ radios[step]|component }}
+==
+
+evaluatorstep ==
+score = radios[step].eval()
+==
+
+
