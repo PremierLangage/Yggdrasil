@@ -27,6 +27,7 @@ for i in range(nbstep):
         sample_rows=rd.sample(all_rows, 4)
         pays = sample_rows[0]['pays']
         if pays not in pays_prec:
+            pays_prec.append(pays)
             break
 
     article = sample_rows[0]['article']
