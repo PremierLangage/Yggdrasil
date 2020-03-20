@@ -39,7 +39,7 @@ Ce quiz contient {{nbstep}} questions.
 ==
 
 textstep ==
-<h6> Question {{ step + 1 }}. </h6>
+<h5> Question {{ step + 1 }}. </h5>
 Quelle est la capitale {{ du_pays[step] }} ?
 ==
 
