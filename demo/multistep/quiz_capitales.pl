@@ -21,19 +21,17 @@ du_pays = []
 partitif = {"le": "du ", "la": "de la ", "les": "des ", "l": "de l'"}
 
 for i in range(nbstep):
-
     sample_rows=rd.sample(all_rows, 4)
 
     pays = sample_rows[0]['pays']
     article = sample_rows[0]['article']
+    du_pays.append(partitif[article]+pays)
 
     radios.append(CustomRadio())
     radios[i].setitems([row['capitale'] for row in sample_rows])
     radios[i].setsol_from_index(0)
     radios[i].shuffle()
 
-
-    du_pays.append(partitif[article]+pays)
 ==
 
 intro ==
