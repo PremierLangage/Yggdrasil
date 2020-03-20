@@ -6,16 +6,14 @@ from sandboxio import get_context
 from components import Component
 import uuid
 
-# Load the serialization function
-
+# Load the custom serialization function
 try:
     from serialize import serialize
 except ImportError:
     def serialize(arg):
         return arg
 
-# Load the namespace
-
+# Load the custom namespace
 try:
     from namespace import namespace
 except ImportError:
@@ -38,20 +36,29 @@ if __name__ == "__main__":
         sys.exit(1)
     output_json = sys.argv[2]
     
+    # JSON context is converted into a python dictionary and stored in dic
     dic = get_context()
+
+    # the content of namespace is added to dic
     dic = {**namespace, **dic}
     
     if 'before' in dic:
+
+        # execute the script in before key with dic as globals
         dic['StopBeforeExec'] = StopBeforeExec
         exec(add_try_clause(dic['before'], StopBeforeExec), dic)
+        
+        # clean dic from namespace elements
         exec("", namespace)
         for key in namespace:
             if key in dic and dic[key] == namespace[key]:
                 del dic[key]
 
+    # custom serialization is applied
     for key in dic:
         dic[key]=serialize(dic[key])
 
+    # HACK for components in lists
     aux_component(dic)
 
     dic['step'] = -1
@@ -69,7 +76,9 @@ if __name__ == "__main__":
     sys.exit(0)
 
 
-
+# HACK for components in lists
+# components in lists are copied outside the lists
+# and replaced by dictionaries inside the lists
 def aux_component(dic):
     newcomp = []
     for key in dic:
