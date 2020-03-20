@@ -4,7 +4,7 @@ extends = /model/multistep.pl
 
 title = Quiz : Capitales européennes
 
-nbstep % 4
+nbstep % 2
 settings.cumulative % false
 
 before == #|python|
