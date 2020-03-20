@@ -137,13 +137,13 @@ if __name__ == "__main__":
 
         aux_component1(dic)
         
-        if 'evaluators' in dic:
-            if isinstance(dic['evaluators'], list):
-                code = dic['evaluators'][step]
-            elif isinstance(dic['evaluators'], dict):
-                code = dic['evaluators'][dic['stepseq'][step]]
-        elif 'evaluator' in dic:
-                code = dic['evaluator']
+        if 'evaluatorstep' in dic:
+            if isinstance(dic['evaluatorstep'], list):
+                code = dic['evaluatorstep'][step]
+            elif isinstance(dic['evaluatorstep'], dict):
+                code = dic['evaluatorstep'][dic['stepseq'][step]]
+            else:
+                code = dic['evaluatorstep']
         else:
             print(missing_evaluator_stderr, file=sys.stderr)
             sys.exit(1)
