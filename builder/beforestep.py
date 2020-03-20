@@ -61,10 +61,12 @@ if __name__ == "__main__":
     # HACK for components in lists
     aux_component(dic)
 
-    dic['step'] = -1
-    dic['text'] = dic['intro']               
-    dic['final'] = ""
-    dic['scores'] = []
+    settings = dic['settings']
+    if settings['multistep']:
+        dic['step'] = -1
+        dic['text'] = dic['intro']               
+        dic['final'] = ""
+        dic['scores'] = []
 
     if 'buttons' not in dic:
         dic['buttons'] = ["submit"]
