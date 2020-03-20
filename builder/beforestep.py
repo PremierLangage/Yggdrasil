@@ -82,7 +82,7 @@ if __name__ == "__main__":
 
     dic['step'] = -1
     dic['text'] = dic['intro']               
-    dic['final'] = ""
+    dic['all_steps'] = ""
     dic['scores'] = []
 
     if 'buttons' not in dic:
