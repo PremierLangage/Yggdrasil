@@ -175,7 +175,7 @@ if __name__ == "__main__":
             elif isinstance(dic['textstep'], dict):
                 dic['text'] = dic['textstep'][dic['stepseq'][step]]
             else:
-            dic['text'] = dic['textstep']
+                dic['text'] = dic['textstep']
 
         if 'formstep' in dic:
             if isinstance(dic['formstep'], list):
@@ -183,7 +183,7 @@ if __name__ == "__main__":
             elif isinstance(dic['formstep'], dict):
                 dic['form'] = dic['formstep'][dic['stepseq'][step]]
             else:
-            dic['form'] = dic['formstep']
+                dic['form'] = dic['formstep']
 
         dic['all_steps'] += env.from_string(dic['text']+" \n "+dic['form']+" \n ").render(dic)
         if dic['settings']['cumulative']:
