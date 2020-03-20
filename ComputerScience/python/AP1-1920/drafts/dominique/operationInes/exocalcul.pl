@@ -30,7 +30,7 @@ elif op=="*":
 ==
 
 text ==
-Calculer {{v1}}  {{optxt}} {{v2}} chère Ines. 
+Calculer **{{v1}}  {{optxt}} {{v2}}** chère *Ines*. 
 ==
 
 input =: MathInput
