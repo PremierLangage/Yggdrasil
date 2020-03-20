@@ -11,7 +11,7 @@ title = Démo MathInput
 
 before ==
 import random
-lop=[("addition","+"),("soustraction","-"),("division","//"),("multiplication","*")]
+lop=[(" plus ","+"),("moins","-"),("divisé par ","//"),("mutiplié par ","*")]
 
 optxt,op = random.choice(lop)
 
@@ -47,4 +47,5 @@ if input.value== result:
 else:
     grade=(0,"Ressaye Ines")
 ==
+
 
