@@ -85,8 +85,8 @@ if __name__ == "__main__":
     dic['all_steps'] = ""
     dic['scores'] = []
 
-    if 'buttons' not in dic:
-        dic['buttons'] = ["submit"]
+    dic['settings']["submit"] = True
+    dic['settings']["reroll"] = False
 
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
