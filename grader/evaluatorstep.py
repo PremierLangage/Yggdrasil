@@ -92,13 +92,13 @@ It should declare a variable 'grade' which should contain a tuple (int, feedback
 # by corresponding components
 def aux_component1(dic):
     for key in dic:
-    if isinstance(dic[key], list):
-        for i in range(len(dic[key])):
-            item = dic[key][i]
-            if isinstance(item, dict) and 'cid' in item:
-                name = item['name']
-                dic[key][i] = dic[name]
-                dic[key][i].name = name
+        if isinstance(dic[key], list):
+            for i in range(len(dic[key])):
+                item = dic[key][i]
+                if isinstance(item, dict) and 'cid' in item:
+                    name = item['name']
+                    dic[key][i] = dic[name]
+                    dic[key][i].name = name
 
 # HACK for components in lists
 # components in lists are duplicated outside the lists
