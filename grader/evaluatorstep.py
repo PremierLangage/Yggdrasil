@@ -158,6 +158,8 @@ if __name__ == "__main__":
         for key in dic:
             dic[key]=serialize(dic[key])
 
+        aux_component2(dic)
+        
         score = dic['score']
         dic['scores'].append(score)
 
