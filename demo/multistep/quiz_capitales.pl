@@ -20,11 +20,15 @@ radios = []
 du_pays = []
 partitif = {"le": "du ", "la": "de la ", "les": "des ", "l": "de l'"}
 
+pays_prec = []
 for i in range(nbstep):
-    sample_rows=rd.sample(all_rows, 4)
 
-    while
-    pays = sample_rows[0]['pays']
+    while True:
+        sample_rows=rd.sample(all_rows, 4)
+        pays = sample_rows[0]['pays']
+        if pays not in pays_prec:
+            break
+
     article = sample_rows[0]['article']
     du_pays.append(partitif[article]+pays)
 
