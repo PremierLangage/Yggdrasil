@@ -169,20 +169,20 @@ if __name__ == "__main__":
     if dic['step'] < dic['nbstep']:
         feedback = " "
 
-        if 'texts' in dic:
-            if isinstance(dic['texts'], list):
-                dic['text'] = dic['texts'][step]
-            elif isinstance(dic['texts'], dict):
-                dic['text'] = dic['texts'][dic['stepseq'][step]]
-        elif 'textstep' in dic:
+        if 'textstep' in dic:
+            if isinstance(dic['textstep'], list):
+                dic['text'] = dic['textstep'][step]
+            elif isinstance(dic['textstep'], dict):
+                dic['text'] = dic['textstep'][dic['stepseq'][step]]
+            else:
             dic['text'] = dic['textstep']
 
-        if 'forms' in dic:
-            if isinstance(dic['forms'], list):
-                dic['form'] = dic['forms'][step]
-            elif isinstance(dic['forms'], dict):
-                dic['form'] = dic['forms'][dic['stepseq'][step]]
-        elif 'formstep' in dic:
+        if 'formstep' in dic:
+            if isinstance(dic['formstep'], list):
+                dic['form'] = dic['formstep'][step]
+            elif isinstance(dic['formstep'], dict):
+                dic['form'] = dic['formstep'][dic['stepseq'][step]]
+            else:
             dic['form'] = dic['formstep']
 
         dic['all_steps'] += env.from_string(dic['text']+" \n "+dic['form']+" \n ").render(dic)
