@@ -28,6 +28,25 @@ def add_try_clause(code, excpt):
     return ("try:\n    ...\n" + '\n'.join(["    " + line for line in code.split('\n')])
             + "\nexcept " + excpt.__name__ + ":\n    pass")
 
+# HACK for components in lists
+# components in lists are copied outside the lists
+# and replaced by dictionaries inside the lists
+def aux_component(dic):
+    newcomp = []
+    for key in dic:
+        if isinstance(dic[key], list):
+            for i in range(len(dic[key])):
+                item = dic[key][i]
+                if isinstance(item, Component):
+                    name = "c" + uuid.uuid4().hex
+                    newcomp.append((name, item))
+                    dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
+                else:
+                    break
+
+    for name, comp in newcomp:
+        dic[name] = comp
+
 if __name__ == "__main__":
     if len(sys.argv) < 3:
         msg = ("Sandbox did not call builder properly:\n"
@@ -77,22 +96,3 @@ if __name__ == "__main__":
 
     sys.exit(0)
 
-
-# HACK for components in lists
-# components in lists are copied outside the lists
-# and replaced by dictionaries inside the lists
-def aux_component(dic):
-    newcomp = []
-    for key in dic:
-        if isinstance(dic[key], list):
-            for i in range(len(dic[key])):
-                item = dic[key][i]
-                if isinstance(item, Component):
-                    name = "c" + uuid.uuid4().hex
-                    newcomp.append((name, item))
-                    dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
-                else:
-                    break
-
-    for name, comp in newcomp:
-        dic[name] = comp
