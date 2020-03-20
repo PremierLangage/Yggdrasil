@@ -170,7 +170,7 @@ if __name__ == "__main__":
                 dic['form'] = dic['forms'][dic['stepseq'][step]]
 
         dic['final'] += env.from_string(dic['text']+" \n "+dic['form']+" \n ").render(dic)
-        if dic['display']:
+        if dic['settings']['cumulative']:
             dic['text'] = ""
             dic['form'] = dic['final']
     else:
