@@ -7,6 +7,7 @@ class CustomRadio(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-radio-group'
         self.decorator = 'CustomRadio'
+        self.selection = None
         super().__init__(**kwargs)
 
     def setitems(self, contents):
@@ -61,3 +62,4 @@ class CustomRadio(Component):
             self.disabled = True
 
         return score
+
