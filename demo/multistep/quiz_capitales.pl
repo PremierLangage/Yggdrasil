@@ -34,20 +34,10 @@ for i in range(nbstep):
     texts.append(
         f"Quelle est la capitale {partitif[article]}  {pays} ?"
         )
+    forms.append("{{ radios[step]|component }}")
+    texts.appen("score = radios[step].eval()")
 ==
 
 intro ==
 Ce quiz contient {{nbstep}} questions.
-==
-
-evaluator ==
-score = radios[step].eval()
-==
-
-form ==
-{{ radios[step]|component }}
-==
-
-text ==
-
 ==
