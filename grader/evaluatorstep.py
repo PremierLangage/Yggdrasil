@@ -4,8 +4,8 @@
 import sys, json, jsonpickle
 from sandboxio import output, get_context
 from components import Component
-
 from jinja2 import Environment, BaseLoader
+
 
 def component(l):
     if isinstance(l,dict):
@@ -15,7 +15,6 @@ def component(l):
         selector = l.selector
         cid = l.cid
     return "<%s cid='%s'></%s>" % (selector, cid, selector)
-
 
 env = Environment(loader=BaseLoader())
 env.globals.update({
@@ -88,6 +87,35 @@ missing_grade_stderr = """\
 The script have access to every variable declared in the PL and its 'before' script.
 It should declare a variable 'grade' which should contain a tuple (int, feedback) where int is the grade between [0, 100]."""
 
+# HACK for components in lists
+# dictionaries with cid key in lists are replaced
+# by corresponding components
+def aux_component1(dic):
+    for key in dic:
+    if isinstance(dic[key], list):
+        for i in range(len(dic[key])):
+            item = dic[key][i]
+            if isinstance(item, dict) and 'cid' in item:
+                name = item['name']
+                dic[key][i] = dic[name]
+                dic[key][i].name = name
+
+# HACK for components in lists
+# components in lists are duplicated outside the lists
+# and replaced by dictionaries inside the lists
+def aux_component2(dic):
+    newcomp = []
+    for key in dic:
+        if isinstance(dic[key], list):
+            for i in range(len(dic[key])):
+                item = dic[key][i]
+                if isinstance(item, Component):
+                    name = item.name
+                    newcomp.append((name, item))
+                    dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
+
+
+
 if __name__ == "__main__":
     if len(sys.argv) < 5:
         msg = ("Sandbox did not call grader properly:\n"
@@ -99,21 +127,14 @@ if __name__ == "__main__":
 
     step = dic['step']
 
-    if dic['step'] >= 0:
-
-        for key in dic:
-            if isinstance(dic[key], list):
-                for i in range(len(dic[key])):
-                    item = dic[key][i]
-                    if isinstance(item, dict) and 'cid' in item:
-                        name = item['name']
-                        dic[key][i] = dic[name]
-                        dic[key][i].name = name
+    if step >= 0:
 
         for key in dic:
             dic[key]=deserialize(dic[key])
 
         dic = {**namespace, **dic}
+
+        aux_component1(dic)
         
         if 'evaluators' in dic:
             if isinstance(dic['evaluators'], list):
@@ -135,16 +156,6 @@ if __name__ == "__main__":
 
         for key in dic:
             dic[key]=serialize(dic[key])
-
-        newcomp = []
-        for key in dic:
-            if isinstance(dic[key], list):
-                for i in range(len(dic[key])):
-                    item = dic[key][i]
-                    if isinstance(item, Component):
-                        name = item.name
-                        newcomp.append((name, item))
-                        dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
 
         score = dic['score']
         dic['scores'].append(score)
