@@ -4,6 +4,7 @@
 import sys, json, jsonpickle
 from sandboxio import get_context
 from components import Component
+import uuid
 
 try:
     from serialize import serialize
@@ -45,11 +46,24 @@ if __name__ == "__main__":
                 del dic[key]
 
     for key in dic:
-        dic[key]=serialize(dic[key])    
+        dic[key]=serialize(dic[key])
+
+    newcomp = []
+    for key in dic:
+        if isinstance(dic[key], list):
+            for i in range(len(dic[key])):
+                item = dic[key][i]
+                if isinstance(item, Component):
+                    name = "c" + uuid.uuid4().hex
+                    newcomp.append((name, item))
+                    dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
+
+    for name, comp in newcomp:
+        dic[name] = comp
 
     dic['step'] = -1
     dic['text'] = dic['intro']               
-    dic['final'] = ""
+    dic['form'] = ""
     dic['scores'] = []
 
     if 'buttons' not in dic:
@@ -60,4 +74,6 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
 
     sys.exit(0)
+
+
 
