@@ -127,8 +127,9 @@ if __name__ == "__main__":
 
     step = dic['step']
 
-    if step >= 0:
-
+    if step == -1:
+        score = 0
+    else:
         for key in dic:
             dic[key]=deserialize(dic[key])
 
@@ -159,10 +160,8 @@ if __name__ == "__main__":
 
         score = dic['score']
         dic['scores'].append(score)
-    else:
-        score = 0
 
-    dic['step'] += 1
+    step += 1
     step = dic['step']
     
     if dic['step'] < dic['nbstep']:
