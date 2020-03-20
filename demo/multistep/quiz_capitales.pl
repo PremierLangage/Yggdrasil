@@ -17,6 +17,8 @@ with open('pays_europe.csv', newline='') as file:
 
 radios = []
 texts = []
+forms = []
+evaluators = []
 for i in range(nbstep):
 
     sample_rows=rd.sample(all_rows, 4)
