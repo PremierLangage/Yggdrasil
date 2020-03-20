@@ -6,11 +6,15 @@ from sandboxio import get_context
 from components import Component
 import uuid
 
+# Load the serialization function
+
 try:
     from serialize import serialize
 except ImportError:
     def serialize(arg):
         return arg
+
+# Load the namespace
 
 try:
     from namespace import namespace
@@ -48,22 +52,10 @@ if __name__ == "__main__":
     for key in dic:
         dic[key]=serialize(dic[key])
 
-    newcomp = []
-    for key in dic:
-        if isinstance(dic[key], list):
-            for i in range(len(dic[key])):
-                item = dic[key][i]
-                if isinstance(item, Component):
-                    name = "c" + uuid.uuid4().hex
-                    newcomp.append((name, item))
-                    dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
-
-    for name, comp in newcomp:
-        dic[name] = comp
+    aux_component(dic)
 
     dic['step'] = -1
     dic['text'] = dic['intro']               
-    dic['form'] = ""
     dic['final'] = ""
     dic['scores'] = []
 
@@ -78,3 +70,18 @@ if __name__ == "__main__":
 
 
 
+def aux_component(dic):
+    newcomp = []
+    for key in dic:
+        if isinstance(dic[key], list):
+            for i in range(len(dic[key])):
+                item = dic[key][i]
+                if isinstance(item, Component):
+                    name = "c" + uuid.uuid4().hex
+                    newcomp.append((name, item))
+                    dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
+                else:
+                    break
+
+    for name, comp in newcomp:
+        dic[name] = comp
