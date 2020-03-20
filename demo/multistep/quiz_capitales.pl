@@ -14,7 +14,7 @@ from customradio import CustomRadio
 
 with open('pays_europe.csv', newline='') as file:
     all_rows = list(csv.DictReader(file, delimiter=','))
-all_rows = all_rows[:4]
+
 radios = []
 
 du_pays = []
