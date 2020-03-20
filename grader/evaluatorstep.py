@@ -185,17 +185,15 @@ if __name__ == "__main__":
         elif 'formstep' in dic:
             dic['form'] = dic['formstep']
 
-        dic['current_display'] += env.from_string(dic['text']+" \n "+dic['form']+" \n ").render(dic)
+        dic['all_steps'] += env.from_string(dic['text']+" \n "+dic['form']+" \n ").render(dic)
         if dic['settings']['cumulative']:
             dic['text'] = ""
-            dic['form'] = dic['current_display']
+            dic['form'] = dic['all_steps']
     else:
-        nbstep = dic['nbstep']
-        score = int(round(sum(dic['scores'])/nbstep))
+        score = int(round(sum(dic['scores'])/dic['nbstep']))
         dic['text'] = ""
         feedback = format_feedback_lightscore(score, "")
-        final = ""              
-        dic['form'] = dic['final']
+        dic['form'] = dic['all_steps']
 
     output(score, feedback, dic)
 
