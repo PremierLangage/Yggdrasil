@@ -194,7 +194,8 @@ if __name__ == "__main__":
         dic['text'] = ""
         feedback = format_feedback_lightscore(score, "")
         dic['form'] = dic['all_steps']
-        dic['buttons'] = ["reroll"]
+        dic['settings']["submit"] = True
+        dic['settings']["reroll"] = False
 
     output(score, feedback, dic)
 
