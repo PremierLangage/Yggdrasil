@@ -43,9 +43,9 @@ evaluator ==
 
 result= eval(str(v1)+op+str(v2))
 if input.value== result:
-    grade=(100,"bravo Ines")
+    grade=(100,"bravo Ines"+result)
 else:
-    grade=(0,"Ressaye Ines")
+    grade=(0,"Ressaye Ines"+result)
 ==
 
 
