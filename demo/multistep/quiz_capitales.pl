@@ -37,7 +37,7 @@ for i in range(nbstep):
         f"Quelle est la capitale {partitif[article]}  {pays} ?"
         )
     forms.append("{{ radios[step]|component }}")
-    texts.append("score = radios[step].eval()")
+    evalutors.append("score = radios[step].eval()")
 ==
 
 intro ==
