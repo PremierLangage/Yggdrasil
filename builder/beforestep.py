@@ -29,7 +29,7 @@ def add_try_clause(code, excpt):
             + "\nexcept " + excpt.__name__ + ":\n    pass")
 
 # HACK for components in lists
-# components in lists are copied outside the lists
+# components in lists are duplicated outside the lists
 # and replaced by dictionaries inside the lists
 def aux_component(dic):
     newcomp = []
