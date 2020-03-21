@@ -1,5 +1,10 @@
-
 extends = /model/math.pl
+
+input =: MathInput
+
+form ==
+{{ input|component}}
+==
 
 before ==
 keyboards_JSON['virtualKeyboards']="sets"
@@ -19,7 +24,7 @@ sys_tex = latexsys(A, B)
 text ==
 On considère le sous-espace de $! \mathbb{R}^{{n}} !$ formé des vecteurs $! ({{lstvar}}) !$ tels que
 $$ {{sys_tex}} .$$
-Déterminer une base de ce sous-espace (écrire cette base comme un ensemble, entre accolades).
+Déterminer le noyau de cette application linéaire.
 ==
 
 evaluator ==
