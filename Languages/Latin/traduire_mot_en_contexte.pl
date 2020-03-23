@@ -1,6 +1,6 @@
 extends = /model/multistep.pl
 
-@ /demo/basic/pays_europe.csv
+@ phrases.txt
 
 title = Quiz : Capitales européennes
 
