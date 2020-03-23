@@ -2,7 +2,7 @@ extends = /model/multistep.pl
 
 @ phrases.txt
 
-title = Quiz : Capitales européennes
+title = Latin
 
 nbstep % 3
 settings.cumulative % false
