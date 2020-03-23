@@ -27,7 +27,7 @@ textstep ==
 <strong> Question {{ step + 1 }}. </strong> 
 Traduire en latin le mot en gras (avec le bon cas).
 
-phrases[step]
+*phrases[step]*
 ==
 
 formstep ==
