@@ -48,6 +48,6 @@ else:
     score = 0
     feedback = sol[step]
 
-inputs[step].disabeld = True
+inputs[step].disabled = True
 ==
 
