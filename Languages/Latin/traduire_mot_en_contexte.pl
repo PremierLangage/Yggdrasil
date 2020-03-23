@@ -32,9 +32,9 @@ Ce quiz contient {{nbstep}} questions.
 
 textstep ==
 <strong> Question {{ step + 1 }}. </strong> 
-Traduire en latin le mot en gras (avec le bon cas).
+Traduire en latin le mot en gras (avec le bon cas).<br/> 
 
-*{{ phrases[step] }}*
+{{ phrases[step] }}
 ==
 
 formstep ==
