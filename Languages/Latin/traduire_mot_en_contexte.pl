@@ -2,7 +2,7 @@ extends = /model/multistep.pl
 
 @ phrases.txt
 
-title = Latin
+title = Traduire des mots en contexte
 
 nbstep % 3
 settings.cumulative % false
