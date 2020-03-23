@@ -44,7 +44,9 @@ formstep ==
 evaluatorstep ==
 if inputs[step].value == sol[step]:
     score = 100
+    feedback = ""
 else:
     score = 0
+    feedback = sol[step]
 ==
 
