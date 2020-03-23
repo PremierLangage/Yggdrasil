@@ -1,5 +1,7 @@
 extends = /model/multistep.pl
 
+settings.cumulative % false
+
 before == #|python|
 from customradio import CustomRadio
 from customcheckbox import CustomCheckbox
