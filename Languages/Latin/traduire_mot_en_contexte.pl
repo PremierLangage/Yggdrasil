@@ -10,13 +10,19 @@ settings.cumulative % false
 before == #|python|
 from components import Input
 
+with open('phrases.txt') as file:
+    all_lines = [line for line in file.readlines() if line.strip()]
+
+sample_lines = rd.sample(all_lines, nbstep)
+
 sol = []
 phrases = []
 inputs = []
 for i in range(nbstep):
+    data = line[i].split("|")
     inputs.append(Input())
-    phrases.append("phrase")
-    sol.append("")
+    phrases.append(data[0].strip())
+    sol.append(data[1].strip())
 ==
 
 intro ==
