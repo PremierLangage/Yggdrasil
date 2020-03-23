@@ -19,11 +19,11 @@ for line in questions.splitlines()+['']:
         pending = True
         i += 1
         if line.startswith('**'):
-            question_type = "Radio"
-            statement.append(line[2:].strip())
-        else:
             question_type = "Checkbox"
             statement.append(line[1:].strip())
+        else:
+            question_type = "Radio"
+            statement.append(line[2:].strip())
     if line.startswith(('+','-')):
         items.append(line[1:].strip())
         if line.startswith('+'):
