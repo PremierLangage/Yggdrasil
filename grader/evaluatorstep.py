@@ -162,6 +162,8 @@ if __name__ == "__main__":
 
         score = dic['score']
         dic['scores'].append(score)
+        if 'feedback' in dic:
+            dic['all_steps'] += format_feedback_rightwrong(score, dic["feedback"])
 
     step += 1
     dic['step'] = step
@@ -198,6 +200,7 @@ if __name__ == "__main__":
         dic['settings']["reroll"] = True
 
     output(score, feedback, dic)
+
 
 
 
