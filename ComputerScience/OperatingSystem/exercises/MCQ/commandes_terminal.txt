@@ -1,4 +1,4 @@
-* Parmi les assertions suivantes, sélectionnez celle qui sont correctes ?
+** Parmi les assertions suivantes, sélectionnez celle qui sont correctes ?
 - Les flux de données sont traités caractère par caractère dans un terminal Unix.
 - Les commandes Unix travaille page par page.
 - Unix tente de proposer une commande différente pour chaque tâche, évoluée ou simple.
@@ -8,7 +8,7 @@
 + Les exécutions de commande Unix sont paramètrées par des arguments et l'entrée standard.
 
 
-* Sélectionner dans la liste suivante les programmes fonctionnels sans entrée (fonctionnant sans argument ou entrée standard).
+** Sélectionner dans la liste suivante les programmes fonctionnels sans entrée (fonctionnant sans argument ou entrée standard).
 - mkdir
 - rm
 - sort
@@ -21,7 +21,7 @@
 + whoami
 
 
-* Parmi les commandes suivantes, lesquelles permettent de visualiser un flux ou un fichier ?
+** Parmi les commandes suivantes, lesquelles permettent de visualiser un flux ou un fichier ?
 - find
 - sed
 - pwd
@@ -36,7 +36,7 @@
 + tail
 
 
-* Parmi les commandes suivantes, lesquelles retournent le nombre de lignes du fichier foo ?
+** Parmi les commandes suivantes, lesquelles retournent le nombre de lignes du fichier foo ?
 - wc -c foo
 - cat foo | cat | cat > /dev/null | wc -l
 - echo $(wc -c foo)
@@ -49,7 +49,7 @@
 + echo $(wc -l foo)
 
 
-* Parmi les commandes suivantes, lesquelles portent sur le système de fichiers ?
+** Parmi les commandes suivantes, lesquelles portent sur le système de fichiers ?
 - date
 - make
 - ping
@@ -64,7 +64,7 @@
 + cp
 
 
-* Quel code numérique correspond aux droits **rwxr-xr--** ?
+** Quel code numérique correspond aux droits **rwxr-xr--** ?
 - 721
 - 761
 - 764
@@ -75,12 +75,13 @@
 + 754
 
 
-* Quels droits corresponds au code numérique 653 ?
+** Quels droits corresponds au code numérique 653 ?
 - rw-r-x--x
 - rw-r-xr--
 - rwxr-xr-x
 - rwxrw--wx
 + rw-r-x-wx
+
 
 
 
