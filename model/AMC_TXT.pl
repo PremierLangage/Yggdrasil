@@ -9,7 +9,6 @@ from customcheckbox import CustomCheckbox
 pending = False
 i = -1
 comp = []
-textstep = []
 statement = []
 for line in questions.splitlines()+['']:
     line = line.strip()
