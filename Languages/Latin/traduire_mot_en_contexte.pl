@@ -8,18 +8,12 @@ nbstep % 3
 settings.cumulative % false
 
 before == #|python|
-import random as rd
-import csv
 from components import Input
-
-with open('pays_europe.csv', newline='') as file:
-    all_rows = list(csv.DictReader(file, delimiter=','))
 
 sol = []
 phrases = []
 inputs = []
 for i in range(nbstep):
-
     inputs.append(Input())
     phrases.append("phrase")
     sol.append[""]
