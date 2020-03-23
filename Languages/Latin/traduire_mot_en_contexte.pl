@@ -48,5 +48,7 @@ if inputs[step].value == sol[step]:
 else:
     score = 0
     feedback = sol[step]
+
+inputs[step].disabeld = True
 ==
 
