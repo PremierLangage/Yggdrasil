@@ -20,9 +20,6 @@ phrases = []
 inputs = []
 for i in range(nbstep):
 
-    article = sample_rows[0]['article']
-    du_pays.append(partitif[article]+pays)
-
     inputs.append(Input())
     phrases.append("phrase")
     sol.append[""]
