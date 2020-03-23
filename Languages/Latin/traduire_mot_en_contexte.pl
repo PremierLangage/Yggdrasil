@@ -8,6 +8,7 @@ nbstep % 3
 settings.cumulative % false
 
 before == #|python|
+import random as rd
 from components import Input
 
 with open('phrases.txt') as file:
