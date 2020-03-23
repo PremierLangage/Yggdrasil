@@ -20,7 +20,7 @@ sol = []
 phrases = []
 inputs = []
 for i in range(nbstep):
-    data = line[i].split("|")
+    data = sample_lines[i].split("|")
     inputs.append(Input())
     phrases.append(data[0].strip())
     sol.append(data[1].strip())
