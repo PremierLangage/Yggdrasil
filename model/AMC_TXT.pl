@@ -46,6 +46,11 @@ intro ==
 Ce quiz contient {{nbstep}} questions.
 ==
 
+textstep ==
+<strong> Question {{ step + 1 }}. </strong> 
+{{ statement[step] }}
+==
+
 formstep ==
 {{ comp[step]|component }}
 ==
