@@ -16,7 +16,7 @@ inputs = []
 for i in range(nbstep):
     inputs.append(Input())
     phrases.append("phrase")
-    sol.append[""]
+    sol.append("")
 ==
 
 intro ==
