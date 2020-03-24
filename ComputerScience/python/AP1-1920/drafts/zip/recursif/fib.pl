@@ -7,7 +7,7 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 title =Factorielle
 text==
 Ecrire une fonction  récursive qui reçoit un entier positif n et renvoie la valeur $%n%$
-==
+
 <pre><code>
 >>facto(2)
 2
