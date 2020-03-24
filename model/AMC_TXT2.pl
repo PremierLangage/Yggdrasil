@@ -11,7 +11,7 @@ from AMC import parse_AMC_TXT
 list_questions = parse_AMC_TXT(questions)
 
 nbstep = len(list_questions)
-
+comp = []
 for i, q in enumerate(list_questions):
     if q['type'] == "Radio":
         comp.append(CustomRadio())
