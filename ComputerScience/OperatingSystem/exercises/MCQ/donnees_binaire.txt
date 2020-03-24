@@ -1,5 +1,4 @@
-** Parmi les données suivantes, lesquels sont en binaire dans un
-  ordinateur ?
+** Parmi les données suivantes, lesquels sont en binaire dans un ordinateur ?
 + Un fichier audio wav
 + Un fichier audio mp3
 + Une image jpeg
@@ -81,8 +80,7 @@
 + En binaire, une puissance de 2 possède un seul bit valant 1 suivi de 0.
 - En binaire, les puissance de 2 alternent les bits à 0 et à 1.
 - Les puissances de 2 sont stables par complément à 1.
-- Les puissances de 2 sont des palindromes en binaire (on peut les
-  lire de droite à gauche).
+- Les puissances de 2 sont des palindromes en binaire (on peut les lire de droite à gauche).
 - Les puissances de 2 comportent toujours plus de bits à 1 que de bits à 0.
 
 
@@ -99,20 +97,16 @@
 + Si le dernier bit vaut 0 alors le nombre est pair.
 + Si le dernier bit vaut 1 alors le nombre est impair.
 - Si le premier bit vaut 1 alors le nombre est impair.
-- Il est impossible de connaître la parité d'un nombre seulement avec
-  une donnée binaire.
+- Il est impossible de connaître la parité d'un nombre seulement avec une donnée binaire.
 - Il faut inverser tous les bits et regarder s'il y a plus de 1 que de 0.
 - Avec un voltmètre, on regarde si la tension émise est positive.
 
 
 ** Qu'est ce qu'un jeu de caractères ?
 + C'est une bijection entre des données binaires et des symboles.
-+ C'est un ensemble de règles pour produire des sorties humainement
-  lisibles à partir de données binaires.
-- C'est une bibliothèque permettant de gérer les grands nombres comme
-  le fait Python.
-- C'est une activité ludique dans laquelle il faut très fortement
-  s'impliquer pour gagner.
++ C'est un ensemble de règles pour produire des sorties humainement lisibles à partir de données binaires.
+- C'est une bibliothèque permettant de gérer les grands nombres comme le fait Python.
+- C'est une activité ludique dans laquelle il faut très fortement s'impliquer pour gagner.
 - C'est jouer au Monopoly avec des gens énervés.
 - C'est un programme qui affiche des lettres minuscules et majuscules.
 
