@@ -30,5 +30,10 @@
 + oui si l'on modélise que le logiciel de gestion de la caisse 
 - non si l'on modélise que le logiciel de gestion de la caisse 
 
+** Que peut on utiliser pour trouvez les acteurs de notre système 
++ Les données, les objets du Modele en se posant la question qui apporte cette donnée et qui manipule ce concept
++ Les logiciels externe que vous ne souhaiter pas recoder en interne.
++ Les logiciels du SI (système d'information) dans lequel doit être plongé votre système
++ Les objectifs auquels doit répondre le système, chaque objectif doit être lié soit à un acteur (soit une partie prenante)
 
 
