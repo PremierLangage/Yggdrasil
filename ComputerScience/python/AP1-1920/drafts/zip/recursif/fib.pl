@@ -20,6 +20,8 @@ def facto(n):
     return 0
 ==
 before==
+from bdb import Bdb
+import sys
 
 def fa(n):
     if n:
@@ -86,6 +88,7 @@ pltest2==
 >>> facto(25==fa(25)
 True
 ==
+
 
 
 
