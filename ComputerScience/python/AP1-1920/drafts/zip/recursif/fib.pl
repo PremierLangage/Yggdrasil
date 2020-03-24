@@ -70,7 +70,7 @@ import random
 n=random.randint(4,12)
 
 
-pltest3=""">>> ({})\n'{}'""".format(n, fa(n))
+pltest3=""">>>facto ({})\n'{}'""".format(n, fa(n))
 
 after=before
 ==
