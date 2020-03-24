@@ -3,16 +3,21 @@ extends = /model/multistep.pl
 settings.cumulative % false
 
 before == #|python|
+import random as rd
 from customradio import CustomRadio
 from customcheckbox import CustomCheckbox
 from AMC import parse_AMC_TXT
 
-
 list_questions = parse_AMC_TXT(questions)
 
-nbstep = len(list_questions)
+if 'nbstep' in globals():
+    list_questions = rd.sample(list_questions, nbstep)
+else:
+    nbstep = len(list_questions)
+
 comp = []
 statement  = []
+
 for i, q in enumerate(list_questions):
     if q['type'] == "Radio":
         comp.append(CustomRadio())
