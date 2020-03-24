@@ -5,10 +5,10 @@ settings.cumulative % false
 before == #|python|
 from customradio import CustomRadio
 from customcheckbox import CustomCheckbox
-from AMC import parse_AMC_txt
+from AMC import parse_AMC_TXT
 
 
-list_questions = parse_AMC_txt(questions)
+list_questions = parse_AMC_TXT(questions)
 
 nbstep = len(lst_questions)
 
