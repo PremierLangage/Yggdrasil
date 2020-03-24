@@ -1,4 +1,4 @@
-extends = /model/AMC_TXT.pl
+extends = /model/AMC_TXT2.pl
 
 title = Démo AMC-TXT
 
