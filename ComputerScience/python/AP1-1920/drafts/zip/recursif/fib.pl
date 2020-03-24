@@ -6,7 +6,7 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title =Factorielle
 
-Ecrire une fonction  récursive `facto(n)` qui reçoit un entier positif n et renvoie la valeur $n!$
+Ecrire une fonction  récursive `facto(n)` qui reçoit un entier positif n et renvoie la valeur $n$
 
 <pre><code>
 >>facto(2)
