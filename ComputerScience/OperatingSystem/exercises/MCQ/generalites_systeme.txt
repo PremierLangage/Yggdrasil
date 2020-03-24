@@ -123,8 +123,7 @@
 + Tout est fichier en Unix.
 + Ils sont très largement écrit avec le langage C.
 + Ils sont apparus vers 1970.
-+ La philosophie d'Unix est de proposer des programmes basiques mais
-  robustes pouvant se combiner très facilement.
++ La philosophie d'Unix est de proposer des programmes basiques mais robustes pouvant se combiner très facilement.
 
 
 ** Quels sont les conséquences de l'idée de Von Neumann de mélanger les données et les programmes dans la mémoire et de les considérer sur un pied d'égalité ?
