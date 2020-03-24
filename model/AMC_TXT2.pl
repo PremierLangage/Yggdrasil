@@ -10,7 +10,7 @@ from AMC import parse_AMC_TXT
 
 list_questions = parse_AMC_TXT(questions)
 
-nbstep = len(lst_questions)
+nbstep = len(list_questions)
 
 for i, q in enumerate(list_questions):
     if q['type'] == "Radio":
