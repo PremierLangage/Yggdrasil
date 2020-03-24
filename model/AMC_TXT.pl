@@ -28,7 +28,8 @@ for i, q in enumerate(list_questions):
     statement.append(q['text'])
     comp[i].setitems(q['items'])
     comp[i].setsol_from_index(q['index'])
-    comp[i].shuffle()
+    if 'ordered' in q['options']!
+        comp[i].shuffle()
 ==
 
 intro ==
