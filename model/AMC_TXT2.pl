@@ -12,11 +12,13 @@ list_questions = parse_AMC_TXT(questions)
 
 nbstep = len(list_questions)
 comp = []
+statement  = []
 for i, q in enumerate(list_questions):
     if q['type'] == "Radio":
         comp.append(CustomRadio())
     elif q['type'] == "Checkbox":
         comp.append(CustomCheckbox())
+    statement.append(q['statement'])
     comp[i].setitems(q['items'])
     comp[i].setsol_from_index(q['index'])
     comp[i].shuffle()
