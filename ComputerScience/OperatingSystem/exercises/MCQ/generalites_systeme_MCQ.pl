@@ -1,15 +1,6 @@
 # Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
-author=Nicolas Borie
+extends = /model/AMC_TXT.pl
 
-title=Généralités sur les systèmes d'exploitation
-tag=system
+title = Quizz sur le terminal Unix
 
-template=/ComputerScience/OperatingSystem/templates/parametrized_MCQ.pl
-
-@ generalites_systeme.txt
-data_from_file=generalites_systeme.txt
-
-number_question=5
-min_option=4
-max_option=8
-
+questions=@ generalites_systeme.txt
