@@ -1,4 +1,4 @@
-* Parmi les données suivantes, lesquels sont en binaire dans un
+** Parmi les données suivantes, lesquels sont en binaire dans un
   ordinateur ?
 + Un fichier audio wav
 + Un fichier audio mp3
@@ -10,7 +10,7 @@
 + La position du pointeur de la souris
 
 
-* Parmi les nombres binaires suivants, lesquels sont les multiples de 4 ?
+** Parmi les nombres binaires suivants, lesquels sont les multiples de 4 ?
 - 10010101
 - 10110111
 - 110010
@@ -22,7 +22,7 @@
 + 10000000
 
 
-* Combien vaut le nombre binaire 1010101 en base 10 ?
+** Combien vaut le nombre binaire 1010101 en base 10 ?
 - 12
 - Ce nombre n'existe pas en base 10.
 - 105
@@ -32,14 +32,14 @@
 + 85
 
 
-* Quel est l'écriture en base 2 du nombre écrit en base décimale 77 ?
+** Quel est l'écriture en base 2 du nombre écrit en base décimale 77 ?
 - 1101010
 - 1101011
 - 1011101
 - 1101111
 + 1001101
 
-* Quelles données ne sont pas binaires dans un ordinateur ?
+** Quelles données ne sont pas binaires dans un ordinateur ?
 + Non, toute donnée est binaire dans nos ordinateurs.
 - Les fichiers textes sont constitués de symboles non binaires.
 - Les sons, comme les fichiers mp3, ne sont pas binaires.
@@ -49,7 +49,7 @@
 - Les caractères non ASCII, comme un é accentué, ne sont pas binaires.
 
 
-* Comment décomposer un entier en base 2 ?
+** Comment décomposer un entier en base 2 ?
 + On fait des divisions successives par deux, puis on lit en ordre inverse les restes obtenus.
 - On utilise l'algorithme d'Euclide.
 - Jamais personne n'a réussi à décomposer un nombre en base 2.
@@ -58,7 +58,7 @@
 - Il faut utiliser la règle du complément à 1.
 
 
-* Combien il y a-t-il de bits dans un octet ?
+** Combien il y a-t-il de bits dans un octet ?
 + Il y a 8 bits dans un octet.
 - Chaque octet regroupe 10 bits.
 - Il y a exactement 1 bit par octet.
@@ -66,7 +66,7 @@
 - Quand un octet est incomplet, il peut contenir 2 ou 3 bits seulement.
 
 
-* Quelles sont les déclarations vraies à propos du code ASCII ?
+** Quelles sont les déclarations vraies à propos du code ASCII ?
 + Les lettres minuscules et majuscules sont rangées dans l'ordre alphabétique.
 + Un caractère se stocke sur un octet.
 + Les caractères associés aux chiffres sont rangés dans l'ordre.
@@ -77,7 +77,7 @@
 - ASCII a été inventé il y a une dizaine d'année pour faciliter internet.
 
 
-* Comment reconnaître une puissance de 2 en binaire ?
+** Comment reconnaître une puissance de 2 en binaire ?
 + En binaire, une puissance de 2 possède un seul bit valant 1 suivi de 0.
 - En binaire, les puissance de 2 alternent les bits à 0 et à 1.
 - Les puissances de 2 sont stables par complément à 1.
@@ -86,7 +86,7 @@
 - Les puissances de 2 comportent toujours plus de bits à 1 que de bits à 0.
 
 
-* Combien vaut l'entier positif binaire 111111 en base 10:
+** Combien vaut l'entier positif binaire 111111 en base 10:
 + 63
 - 31
 - 127
@@ -94,7 +94,7 @@
 - 132
 
 
-* Comment reconnaître un nombre positif pair en binaire ?
+** Comment reconnaître un nombre positif pair en binaire ?
 + Il suffit de regarder le bit de poids faible.
 + Si le dernier bit vaut 0 alors le nombre est pair.
 + Si le dernier bit vaut 1 alors le nombre est impair.
@@ -105,7 +105,7 @@
 - Avec un voltmètre, on regarde si la tension émise est positive.
 
 
-* Qu'est ce qu'un jeu de caractères ?
+** Qu'est ce qu'un jeu de caractères ?
 + C'est une bijection entre des données binaires et des symboles.
 + C'est un ensemble de règles pour produire des sorties humainement
   lisibles à partir de données binaires.
@@ -117,13 +117,14 @@
 - C'est un programme qui affiche des lettres minuscules et majuscules.
 
 
-* Quel sont les avantages pour nos ordinateurs actuels de manipuler du binaire ?
+** Quel sont les avantages pour nos ordinateurs actuels de manipuler du binaire ?
 + Les électroniciens savent fabriquer des composants numériques performants.
 + On fait de l'algorithmique sur les nombres depuis plusieurs millénaires.
 + Il est plus commode de manipuler des nombres que des couleurs ou des sons.
 - C'est pas du tout astucieux, les ordinateurs sont lents et ne font rien.
 - Ça permet de mieux enregistrer et restituer les sons.
 - Les images s'encodent naturellement en binaire.
+
 
 
 
