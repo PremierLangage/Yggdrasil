@@ -12,7 +12,6 @@ def parse_AMC_TXT(txt):
             index = []
             items = []
             pending = True
-            i += 1
             if line.startswith('**'):
                 question_type = "Checkbox"
                 statement = line[2:].strip()
