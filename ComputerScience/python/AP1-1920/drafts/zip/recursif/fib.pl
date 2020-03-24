@@ -6,7 +6,7 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title =Factorielle
 
-Ecrire une fonction  récursive `facto(n)` qui reçoit un entier positif n et renvoie la valeur n!
+Ecrire une fonction  récursive `facto(n)` qui reçoit un entier positif n et renvoie la valeur $n!$
 
 <pre><code>
 >>facto(2)
@@ -60,10 +60,13 @@ def est_recursive(func):
     finally:
         print(None)
 
-        
+
+import random
+
+n=random.randint(4,12)
 
 
-pltest3=""">>> ({})\n'{}'""".format(n, carres_Gauss(n))
+pltest3=""">>> ({})\n'{}'""".format(n, fa(n))
 
 after=before
 ==
@@ -76,14 +79,13 @@ pltest0==a
 ==
 pltest1==
 >>>est_recursive(lambda:facto(5))
-
+True
 ==
 
 pltest2==
->>> carres_Gauss(0)
-[(0,0)]
+>>> facto(25==fa(25)
+True
 ==
-
 
 
 
