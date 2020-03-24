@@ -4,21 +4,12 @@ title = Démo AMC-TXT
 
 questions ==
 * Si \(F\) et \(G\) sont deux sous-espaces vectoriels tels que $!dim F \leq dim G!$, peut-on conclure que $!F \subset G!$ ?
-+ Yaoundé
-- Douala
+- Oui
++ Non
 
-Si \(F\) et \(G\) sont deux sous-espaces vectoriels tels que $!dim F \leq dim G!$&#44; peut-on conclure que $!G \subset F!$ ?, 2, 2
-Si \(F\) et \(G\) sont deux sous-espaces vectoriels tels que $!dim F \leq dim G!$ et $!F \subset G!$&#44; peut-on conclure que $!F = G!$ ?,Si \(F\) et \(G\) sont deux sous-espaces vectoriels tels que $!dim F \leq dim G!$ et $!G \subset F!$&#44; peut-on conclure que $!F = G!$ ?,2,1
-
-* Quelle est la capitale du Cameroun ?
-+ Yaoundé
-- Douala
-- Kribi
-
-** Parmi les nombres suivants, lesquels sont positifs ?
-+ 2
-- -2
-+ 10
+* Si \(F\) et \(G\) sont deux sous-espaces vectoriels tels que $!dim F \leq dim G!$, peut-on conclure que $!G \subset F!$ ?
+- Oui
++ Non
 ==
 
 source ==
