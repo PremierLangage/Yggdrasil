@@ -1,7 +1,6 @@
 ** Parmi les assertions suivantes, sélectionnez celle qui sont correctes ?
-- Les flux de données sont traités caractère par caractère dans un terminal Unix.
 - Les commandes Unix travaille page par page.
-- Unix tente de proposer une commande différente pour chaque tâche, évoluée ou simple.
+- Unix tente de proposer une commande différente pour chaque tâche, simple ou évoluée.
 + La plupart des commandes en terminal travaillent ligne par ligne.
 + L'entrée et la sortie standard sont bufferisés ligne par ligne.
 + En terminal Unix, tout est chaîne de caractères.
@@ -22,8 +21,6 @@
 
 
 ** Parmi les commandes suivantes, lesquelles permettent de visualiser un flux ou un fichier ?
-- find
-- sed
 - pwd
 - chmod
 - chgrp
@@ -31,7 +28,6 @@
 + less
 + more
 + cat
-+ tee 
 + head
 + tail
 
@@ -61,7 +57,6 @@
 + pwd
 + cd
 + mv
-+ cp
 
 
 ** Quel code numérique correspond aux droits **rwxr-xr--** ?
@@ -81,7 +76,5 @@
 - rwxr-xr-x
 - rwxrw--wx
 + rw-r-x-wx
-
-
 
 
