@@ -1,15 +1,7 @@
 # Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
-author=Nicolas Borie
+extends = /model/AMC_TXT.pl
 
-title=Données binaires dans nos ordinateurs modernes
-tag=system|binary
+title = Quizz sur le terminal Unix
 
-template=/ComputerScience/OperatingSystem/templates/parametrized_MCQ.pl
-
-@ donnees_binaire.txt
-data_from_file=donnees_binaire.txt
-
-number_question=5
-min_option=4
-max_option=8
+questions=@ donnees_binaire.txt
 
