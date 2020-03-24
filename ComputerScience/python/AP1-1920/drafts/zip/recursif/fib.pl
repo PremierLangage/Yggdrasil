@@ -19,7 +19,6 @@ def facto(n):
         return n*facto(n-1)
     return 0
 ==
-==
 before==
 
 def fa(n):
@@ -74,7 +73,7 @@ after=before
 
 
 
-pltest0==a
+pltest0==
 >>> facto(4)
 24
 ==
