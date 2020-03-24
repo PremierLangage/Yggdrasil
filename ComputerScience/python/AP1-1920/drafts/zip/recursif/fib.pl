@@ -4,38 +4,64 @@
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
 
-title =Entiers de Gauss
-text==  
+title =Factorielle
 
-On appelle "entier de Gauss" un nombre complexe $%z=a+\mathrm{i}b , (a,b) \in \mathbb{N}^2 %$
-
-Ecrire une fonction `carre_Gauss(r)` qui renvoie la liste d'entiers de Gauss de module inférieur à $%r%$
-dont le carré est également un entier de Gauss de module inférieur à $%r%$. La liste est une liste de couples
-ordonnées lexicographiquement.
+Ecrire une fonction  récursive `facto(n)` qui reçoit un entier positif n et renvoie la valeur n!
 
 <pre><code>
->>>carre_Gauss(2)
-[(-2, 0), (-1, -1), (-1, 0), (-1, 1), (0, -2), (0, -1), (0, 0), (0, 1), (0, 2), (1, -1), (1, 0), (1, 1), (2, 0)]
+>>facto(2)
+2
 </code></pre>
-
+code==
+def facto(n):
+    if n:
+        return n*facto(n-1)
+    return 0
+==
 ==
 before==
-def carre_complexe(x,y):
-    return x*x-y*y,2*x*y
 
-def carres_Gauss(r):
-    if r<0:
-        return []
-    if r==0:
-        return [(0,0)]
-    mod=int(r**2)
-    return [1]
-    
+def fa(n):
+    if n:
+        return n*fa(n-1)
+    return 0
 
 
-import random
 
-n=random.randint(4,12)
+class RecursionDetector():
+    def do_clear(self, arg):
+        pass
+
+    def __init__(self, *args):
+        self.stack = set()
+
+    def user_call(self, frame, argument_list):
+        code = frame.f_code
+        if code in self.stack:
+            raise RecursionDetected
+        self.stack.add(code)
+
+    def user_return(self, frame, return_value):
+        self.stack.remove(frame.f_code)
+
+
+def est_recursive(func):
+    """Renvoie True si func effectue des appels récursifs, False sinon.
+
+ 
+    detector = RecursionDetector()
+    #detector.set_trace()
+    try:
+        func()
+    except RecursionDetected:
+       print( True)
+    else:
+        print(False)
+    finally:
+        print(None)
+
+        
+
 
 pltest3=""">>> ({})\n'{}'""".format(n, carres_Gauss(n))
 
@@ -44,20 +70,20 @@ after=before
 
 
 
-pltest0==
->>> carres_Gauss(1)
-[(-1, 0), (0, -1), (0, 0), (0, 1), (1, 0)]
+pltest0==a
+>>> facto(4)
+24
 ==
 pltest1==
->>> carres_Gauss(15)
-[(-3, -1), (-3, 0), (-3, 1), (-2, -2), (-2, -1), (-2, 0), (-2, 1), (-2, 2), (-1, -3), (-1, -2), (-1, -1), (-1, 0), (-1, 1), (-1, 2), (-1, 3), (0, -3), (0, -2), (0, -1), (0, 0), (0, 1), (0, 2), (0, 3), (1, -3), (1, -2), (1, -1), (1, 0), (1, 1), (1, 2), (1, 3), (2, -2), (2, -1), (2, 0), (2, 1), (2, 2), (3, -1), (3, 0), (3, 1)]
-==éfini'
+>>>est_recursive(lambda:facto(5))
+
 ==
 
 pltest2==
 >>> carres_Gauss(0)
 [(0,0)]
 ==
+
 
 
 
