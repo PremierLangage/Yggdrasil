@@ -1,0 +1,16 @@
+
+** La défintion d'acteur de UML est 
+- les personnes qui interragissent avec le logiciel
+- les personnes ou systèmes externes qui interagissent avec le logiciel 
++ le rôle joué par un utilisateur ou par un système qui interagit avec le système modélisé.
+
+
+* Quand on parle d'interaction avec le système cela sous entend qu'il y a une interface formalisé qui permet à l'acteur et au système de communiquer 
++ Vrai
+- Faux
+
+* Un meilleur choix pour acteur aurais été le mot rôle qui permet a une même personne d'avoir successivement plusieurs rôle 
++ Vrai
+- Faux
+
+
