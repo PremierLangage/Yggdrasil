@@ -28,7 +28,7 @@ def parse_AMC_TXT(txt):
         elif line == "" and pending:
             if question_type == "Radio":
                 index = index[0]
-            questions.append({'type': question_type, 'items': items, 'index': index})
+            questions.append({'type': question_type, 'text': statement, 'items': items, 'index': index})
             pending = False
 
     return questions
