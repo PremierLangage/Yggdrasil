@@ -53,7 +53,7 @@ questions ==
 + Oui
 - Non
 
-*[ordered] Si $!F!$ est un sous-espace vectoriel tel que $!\dim F = 0!$, peut-on conclure que $!F=\{0\}!$ ?
+*[ordered] Si $!F!$ est un sous-espace vectoriel tel que $!\dim F = 0!$, peut-on conclure que $!F=\\{0\\}!$ ?
 + Oui
 - Non
 
@@ -61,19 +61,19 @@ questions ==
 - Oui
 + Non
 
-*[ordered] Si $!F!$ et $!G!$ sont deux sous-espaces vectoriels tels que $!F \cap G = \{0\}!$ et $!\dim F + \dim G = n!$, peut-on conclure que $!F+G=E!$ ?
+*[ordered] Si $!F!$ et $!G!$ sont deux sous-espaces vectoriels tels que $!F \cap G = \\{0\\}!$ et $!\dim F + \dim G = n!$, peut-on conclure que $!F+G=E!$ ?
 + Oui
 - Non
 
-*[ordered] Si $!F!$ et $!G!$ sont deux sous-espaces vectoriels tels que $!F \cap G = \{0\}!$ et $!\dim F + \dim G = n!$, peut-on conclure que $!F+G=E!$ ?
+*[ordered] Si $!F!$ et $!G!$ sont deux sous-espaces vectoriels tels que $!F \cap G = \\{0\\}!$ et $!\dim F + \dim G = n!$, peut-on conclure que $!F+G=E!$ ?
 + Oui
 - Non
 
-*[ordered] Si $!F!$ et $!G!$ sont deux sous-espaces vectoriels tels que $!F+G=E!$ et $!\dim F + \dim G = n!$, peut-on conclure que $!F \cap G = \{0\}!$ ?
+*[ordered] Si $!F!$ et $!G!$ sont deux sous-espaces vectoriels tels que $!F+G=E!$ et $!\dim F + \dim G = n!$, peut-on conclure que $!F \cap G = \\{0\\}!$ ?
 + Oui
 - Non
 
-*[ordered] Si $!F!$ et $!G!$ sont deux sous-espaces vectoriels tels que $!F+G=E!$ et $!\dim F + \dim G = n!$, peut-on conclure que $!F \cap G = \{0\}!$ ?
+*[ordered] Si $!F!$ et $!G!$ sont deux sous-espaces vectoriels tels que $!F+G=E!$ et $!\dim F + \dim G = n!$, peut-on conclure que $!F \cap G = \\{0\\}!$ ?
 + Oui
 - Non
 
@@ -89,7 +89,7 @@ questions ==
 + Oui
 - Non
 
-*[ordered] Si $!F!$ et $!G!$ sont deux sous-espaces vectoriels tels que $!\dim F + \dim G < n!$, peut-on conclure que $!F \cap G \neq \{0\}!$ ?
+*[ordered] Si $!F!$ et $!G!$ sont deux sous-espaces vectoriels tels que $!\dim F + \dim G < n!$, peut-on conclure que $!F \cap G \neq \\{0\\}!$ ?
 - Oui
 + Non
 
@@ -97,7 +97,7 @@ questions ==
 - Oui
 + Non
 
-*[ordered] Si $!F!$ et $!G!$ sont deux sous-espaces vectoriels tels que $!\dim F + \dim G > n!$, peut-on conclure que $!F \cap G \neq \{0\}!$ ?
+*[ordered] Si $!F!$ et $!G!$ sont deux sous-espaces vectoriels tels que $!\dim F + \dim G > n!$, peut-on conclure que $!F \cap G \neq \\{0\\}!$ ?
 + Oui
 - Non
 ==
