@@ -1,0 +1,3 @@
+
+La bibliothèque de l'université à un logiciel des années 80. Aucune modification n'a été faite depuis. Aucun des services suivants n'est fournis : emprunt et retour de livres, utilisation d'un scanner de code bare, reservations, edition de profile emprunteur, recherche avancé de livre, téléchargement de livres électroniques, extension de durée d'emprunt. Il n'y a pas de système de gestion du catalogue qui permette de ajouter et retirer des livres dans la collection. Enfin le logiciel actuel est lent avec l'augmentation du nombre de livre et d'emprunteurs.
+ 
