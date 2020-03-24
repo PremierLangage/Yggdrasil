@@ -13,10 +13,10 @@ def parse_AMC_TXT(txt):
             else:
                 question_type = "Radio"
             line = line.lstrip("* ")
-            if line.starstwith('['):
+            if line.startswith('['):
                 r0 = line.find(']')
                 options = line[1:r0].split()
-                line = line[r0:]
+                line = line[r0+1:].lstrip()
             else:
                 options = []
             statement = line
