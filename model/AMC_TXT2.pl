@@ -1,5 +1,7 @@
 extends = /model/multistep.pl
+
 @ /utils/format/AMC.py
+
 settings.cumulative % false
 
 before == #|python|
@@ -23,7 +25,7 @@ for i, q in enumerate(list_questions):
         comp.append(CustomRadio())
     elif q['type'] == "Checkbox":
         comp.append(CustomCheckbox())
-    statement.append(q['statement'])
+    statement.append(q['text'])
     comp[i].setitems(q['items'])
     comp[i].setsol_from_index(q['index'])
     comp[i].shuffle()
