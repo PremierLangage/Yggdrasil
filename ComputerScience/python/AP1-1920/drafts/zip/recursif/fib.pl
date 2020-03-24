@@ -13,7 +13,7 @@ Ecrire une fonction  récursive qui reçoit un entier positif n et renvoie la va
 2
 </code></pre>
 ==
-code==
+editor.code==
 def facto(n):
     if n:
         return n*facto(n-1)
@@ -28,9 +28,11 @@ def fa(n):
         return n*fa(n-1)
     return 0
 
+class RecursionDetected(Exception):
+    pass
 
+class RecursionDetector(Bdb):
 
-class RecursionDetector():
     def do_clear(self, arg):
         pass
 
