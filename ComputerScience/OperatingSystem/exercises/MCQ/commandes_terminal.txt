@@ -92,3 +92,11 @@
 - section 4
 - section 7
 + section 3
+
+
+** Comment quitte-t-on la plupart des applications occupant le terminal (top, less, man, ...) ?
+- Crtl + Alt + Supp
+- La touche Escape
+- La barre d'espace quitte les programmes
+- Alt + F4
++ La touche q
