@@ -12,6 +12,7 @@ Ecrire une fonction  récursive qui reçoit un entier positif n et renvoie la va
 >>facto(2)
 2
 </code></pre>
+==
 code==
 def facto(n):
     if n:
