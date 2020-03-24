@@ -31,7 +31,7 @@
 + 85
 
 
-** Quel est l'écriture en base 2 du nombre écrit en base décimale 77 ?
+** Quelle est l'écriture en base 2 du nombre écrit en base décimale 77 ?
 - 1101010
 - 1101011
 - 1011101
