@@ -1,4 +1,7 @@
 
+
+# ca manque de traitement d'erreurs 
+
 def parse_AMC_TXT(txt):
 
     questions = []
@@ -42,5 +45,7 @@ def parse_AMC_TXT(txt):
             })
             pending = False
 
+
     return questions
+
 
