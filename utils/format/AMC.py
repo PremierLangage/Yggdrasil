@@ -31,5 +31,5 @@ def parse_AMC_TXT(txt):
             questions.append({'type': question_type, 'items': items, 'index': index})
             pending = False
 
-        return questions
+    return questions
 
