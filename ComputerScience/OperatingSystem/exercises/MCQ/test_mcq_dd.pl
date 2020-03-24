@@ -1,6 +1,7 @@
 extends = /model/AMC_TXT.pl
 
-title = Démo AMC-TXT
+title = Quizz sur le terminal Unix
 
 questions=@ commandes_terminal.txt
+
 
