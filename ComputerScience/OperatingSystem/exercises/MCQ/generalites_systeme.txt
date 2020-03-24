@@ -32,9 +32,7 @@
 + Demander de la mémoire pérenne supplémentaire dans un programme C (avec malloc).
 
 
-* Parmi les organes matériels qui suivent, lequel ou lesquels sont vitaux
-  pour un ordinateur (un ordinateur ne pourrait ainsi pas fonctionner
-  sans un de ces organes) ?
+** Parmi les organes matériels qui suivent, lequel ou lesquels sont vitaux pour un ordinateur (un ordinateur ne pourrait ainsi pas fonctionner sans un de ces organes) ?
 - une souris
 - un écran
 - une imprimante
@@ -47,7 +45,7 @@
 + une carte mère
 
 
-* De nos jours, les microprocesseurs contiennent dans leurs coeurs ?
+** De nos jours, les microprocesseurs contiennent dans leurs coeurs ?
 - soit 2, soit 4 transistors
 - une dizaine de transistors
 - jamais plus de 128 transistors
@@ -55,8 +53,7 @@
 + de l'ordre d'un milliard de transistors
 
 
-* Cochez les caractéristiques possédées par la mémoire vive d'un
-  ordinateur ?
+** Cochez les caractéristiques possédées par la mémoire vive d'un ordinateur ?
 - C'est une mémoire lente en lecture.
 - Cette mémoire utilise des disques magnétiques tournant à haute vitesse.
 - Cette mémoire reste pérenne même si elle n'est plus sous tension.
@@ -68,7 +65,7 @@
 + Cette mémoire est montée sur des barrettes amovibles clipsées sur carte mère.
 
 
-* Quels sont les objectifs d'un système d'exploitation ?
+** Quels sont les objectifs d'un système d'exploitation ?
 - Éviter que la souris attrape des puces.
 - Assurer que l'écran ne chauffe pas trop.
 - Augmenter la durée de vie des cartouches d'encres en limitant l'encre utilisée.
