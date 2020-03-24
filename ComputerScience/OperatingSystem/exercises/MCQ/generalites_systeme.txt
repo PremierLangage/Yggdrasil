@@ -79,7 +79,7 @@
 + Proposer des interfaces standardisés pour chaques ressources.
 
 
-* Parmi les logiciels suivants, lesquels sont des systèmes d'exploitation ?
+** Parmi les logiciels suivants, lesquels sont des systèmes d'exploitation ?
 - Photoshop
 - Powerpoint
 - Excel
@@ -98,7 +98,7 @@
 + iOS (iphone OS)
 
 
-* Que contient un système d'exploitation en termes logiciels ?
+** Que contient un système d'exploitation en termes logiciels ?
 - Des algorithmes de traitement d'images.
 - Des lecteurs de fichiers mp3.
 - Des MMORPG.
@@ -112,7 +112,7 @@
 + Des mécanismes de sécurité, de mise à jour et de diagnostic.
 
 
-* Quelles sont les spécificités des systèmes d'exploitation de type Unix ?
+** Quelles sont les spécificités des systèmes d'exploitation de type Unix ?
 - Unix ne propose que des sessions graphiques.
 - Un seul utilisateur peut se loger à la fois.
 - Unix augmente les capacités des barrettes mémoires.
@@ -127,22 +127,17 @@
   robustes pouvant se combiner très facilement.
 
 
-* Quels sont les conséquences de l'idée de Von Neumann de mélanger les
-  données et les programmes dans la mémoire et de les considérer sur
-  un pied d'égalité ?
+** Quels sont les conséquences de l'idée de Von Neumann de mélanger les données et les programmes dans la mémoire et de les considérer sur un pied d'égalité ?
 - Paf, ça fait des chocapics !
 - Ça permet de limiter l'énergie utilisée par la RAM.
 - Ça permet d'augmenter la cadence du CPU (overclocking).
 - Ça limite la latence lors des chargements (lags).
 + Ça permet de faire des programmes prenant en argument d'autres programmes.
 + Ça permet de considérer des programmes qui fabriquent d'autres programmes.
-+ Ça permet une montée en puissance des fonctionnalités via des
-  niveaux d'abstraction : compilateur, bibliothèque bas-niveau,
-  framework évolué, application haut niveau (différent langage et
-  traduction d'un niveau à un autre).
++ Ça permet une montée en puissance des fonctionnalités via des niveaux d'abstraction : compilateur, bibliothèque bas-niveau, framework évolué, application haut niveau (différent langage et traduction d'un niveau à un autre).
 
 
-* Quelles sont les caractéristiques d'une unité arithmétique et logique ?
+** Quelles sont les caractéristiques d'une unité arithmétique et logique ?
 - Elle permet de connecter l'ordinateur à internet.
 - Elle évite les fuites mémoires dans les gros programmes.
 - Elle est responsable de la mise à jour du système.
@@ -154,7 +149,7 @@
 + Elle ne manipule que des données binaires.
 
 
-* Quels sont les éléments définissant l'architecture de Von Neumann ?
+** Quels sont les éléments définissant l'architecture de Von Neumann ?
 - Le processeur, la carte mère, la mémoire vive et le couple clavier/écran.
 - L'unité centrale, l'écran, le clavier et la souris.
 - L'unité arithmétique et logique, la mémoire vive, la mémoire morte et les entrées/sorties.
