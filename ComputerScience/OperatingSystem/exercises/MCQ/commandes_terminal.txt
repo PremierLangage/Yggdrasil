@@ -78,3 +78,17 @@
 + rw-r-x-wx
 
 
+** Quelle fonction ressemble le plus à une primitive des tableurs modernes type excel ?
+- tee
+- find
+- cp
+- mv
++ cut
+
+
+** Quelle est la section du manuel dédiée à la programmation en langage C ?
+- section 1
+- section 2
+- section 4
+- section 7
++ section 3
