@@ -15,10 +15,10 @@ comp = []
 for i, q in enumerate(list_questions):
     if q['type'] == "Radio":
         comp.append(CustomRadio())
-    elif question_type == "Checkbox":
+    elif q['type'] == "Checkbox":
         comp.append(CustomCheckbox())
-    comp[i].setitems(items)
-    comp[i].setsol_from_index(index)
+    comp[i].setitems(q['items'])
+    comp[i].setsol_from_index(q['index'])
     comp[i].shuffle()
 ==
 
