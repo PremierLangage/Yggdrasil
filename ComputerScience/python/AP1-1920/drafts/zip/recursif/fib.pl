@@ -5,9 +5,9 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
 
 title =Factorielle
-
+text==
 Ecrire une fonction  récursive qui reçoit un entier positif n et renvoie la valeur $%n%$
-
+==
 <pre><code>
 >>facto(2)
 2
@@ -87,6 +87,7 @@ pltest2==
 >>> facto(25==fa(25)
 True
 ==
+
 
 
 
