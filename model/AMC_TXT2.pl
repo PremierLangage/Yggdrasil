@@ -1,46 +1,25 @@
 extends = /model/multistep.pl
-
+@ /utils/format/AMC.py
 settings.cumulative % false
 
 before == #|python|
 from customradio import CustomRadio
 from customcheckbox import CustomCheckbox
+from AMC import parse_AMC_txt
 
-pending = False
-i = -1
-comp = []
-statement = []
-for line in questions.splitlines()+['']:
-    line = line.strip()
-    if line.startswith('*'):
-        k = 0
-        index = []
-        items = []
-        pending = True
-        i += 1
-        if line.startswith('**'):
-            question_type = "Checkbox"
-            statement.append(line[2:].strip())
-        else:
-            question_type = "Radio"
-            statement.append(line[1:].strip())
-    if line.startswith(('+','-')):
-        items.append(line[1:].strip())
-        if line.startswith('+'):
-            index.append(k)
-        k += 1
-    if line == "" and pending:
-        if question_type == "Radio":
-            comp.append(CustomRadio())
-            index = index[0]
-        elif question_type == "Checkbox":
-            comp.append(CustomCheckbox())
-        comp[i].setitems(items)
-        comp[i].setsol_from_index(index)
-        comp[i].shuffle()
-        pending = False
 
-nbstep = i + 1
+list_questions = parse_AMC_txt(questions)
+
+nbstep = len(lst_questions)
+
+for i, q in enumerate(list_questions):
+    if q['type'] == "Radio":
+        comp.append(CustomRadio())
+    elif question_type == "Checkbox":
+        comp.append(CustomCheckbox())
+    comp[i].setitems(items)
+    comp[i].setsol_from_index(index)
+    comp[i].shuffle()
 ==
 
 intro ==
