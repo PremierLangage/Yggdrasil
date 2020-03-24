@@ -36,4 +36,3 @@
 + Les logiciels du SI (système d'information) dans lequel doit être plongé votre système
 + Les objectifs auquels doit répondre le système, chaque objectif doit être lié soit à un acteur (soit une partie prenante)
 
-
