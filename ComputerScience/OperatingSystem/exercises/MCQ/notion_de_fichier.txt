@@ -1,4 +1,4 @@
-* Dans les systèmes d'exploitation de type Unix, quels sont les éléments modélisés avec la notion de fichier ?
+** Dans les systèmes d'exploitation de type Unix, quels sont les éléments modélisés avec la notion de fichier ?
 - L'humeur de l'utilisateur.
 - La fatigue des circuits imprimés.
 - La dissipation de la chaleur dans le CPU.
@@ -11,7 +11,7 @@
 + Une connexion internet.
 
 
-* Quelles informations sont stockées dans l'inode d'un fichier ?
+** Quelles informations sont stockées dans l'inode d'un fichier ?
 - Le nom du fichier.
 - Le chemin pour atteindre le fichier depuis la racine.
 - Le type du fichier : image, film, fichier texte.
@@ -22,7 +22,7 @@
 + Le propriétaire du fichier.
 
 
-* Parmi les types suivants, lesquels sont des types de fichiers Unix ?
+** Parmi les types suivants, lesquels sont des types de fichiers Unix ?
 - Archive oubliée.
 - Lien du sang.
 - Tube musical de l'été.
@@ -37,7 +37,7 @@
 + Socket, connexion réseau.
 
 
-* Que peut-on trouver dans l'organisation logique d'un disque dur formaté en Ext4 ?
+** Que peut-on trouver dans l'organisation logique d'un disque dur formaté en Ext4 ?
 - Le bloc print pour exploiter les imprimantes.
 - Un dictionnaire Python des sockets et connexions réseaux.
 - Une liste des répertoires.
@@ -47,7 +47,7 @@
 + Un morceau réservé au système pour le démarrage de la machine (boot block).
 
 
-* Sélectionner les déclarations correctes sur les modes de bufferisation.
+** Sélectionner les déclarations correctes sur les modes de bufferisation.
 - La bufferisation totale est appliquée sur l'entrée standard **stdin**.
 - La bufferisation limite l'usure de l'écran.
 - La bufferisation permet aux bovins se changer de sexe.
@@ -58,7 +58,7 @@
 + L'entrée standard **stdin** est bufferisée par ligne.
 
 
-* Sélectionner les fonctionalités de redirection valides en Unix.
+** Sélectionner les fonctionalités de redirection valides en Unix.
 -     <2
 -     ><
 -     XD
@@ -73,7 +73,7 @@
 +     2&1>
 
 
-* Quelle(s) action(s) replace(nt) l'indicateur de position au début d'un fichier en C ?
+** Quelle(s) action(s) replace(nt) l'indicateur de position au début d'un fichier en C ?
 - On déplace le curseur clignotant avec la souris pour le remmettre au début.
 - C'est impossible, il faut absolument faire un nouveau fichier.
 - On exécute **fseek(f, 42, SEEK_CUR)** où **f** est le fichier ouvert.
@@ -84,7 +84,7 @@
 + On exécute **fseek(f, 0, SEEK_SET)** où **f** est le fichier ouvert.
 
 
-* Quels sont les enjeux relevés par un système de fichiers dans un système d'exploitation ?
+** Quels sont les enjeux relevés par un système de fichiers dans un système d'exploitation ?
 - L'humour : faire en sorte que l'ouverture et la fermeture des fichiers soient drôles.
 - L'affichage : pouvoir afficher à l'écran le contenu des fichiers.
 - La programmation : planifier les futures tâches que le C.P.U. devra traiter.
@@ -95,7 +95,7 @@
 + La cohérence : assurer l'alignement et la cohérence du contenu des fichiers sur les disques.
 
 
-* Quels indices et informations peuvent aider Unix à déterminer le type d'un fichier ?
+** Quels indices et informations peuvent aider Unix à déterminer le type d'un fichier ?
 - L'extension .txt garantie que le fichier est humainement lisible.
 - L'icone contraint le contenu du fichier.
 - Le nom du fichier garantie le type de son contenu.
@@ -108,7 +108,7 @@
 + Unix est permissif pour le nom des fichiers, on peut attribuer de mauvais noms.
 
 
-* Dans quel(s) repertoire(s) trouve-t-on les programmes exécutables de base d'Unix ?
+** Dans quel(s) repertoire(s) trouve-t-on les programmes exécutables de base d'Unix ?
 - tmp/
 - dtc/
 - dev/
@@ -118,7 +118,7 @@
 + sbin/
 
 
-* Quel(s) sont les flux d'octets standard en Unix ?
+** Quel(s) sont les flux d'octets standard en Unix ?
 - setin, le flux conventionnel.
 - bloodout, le flux mensuel.
 - errno, le flux entier.
@@ -128,7 +128,7 @@
 + stderr, la sortie standard d'erreur.
 
 
-* Que fais la commande : man printf >> log.txt ?
+** Que fais la commande : man printf >> log.txt ?
 - La commande rajoute la documentation de printf au début du fichier.
 - La commande retourne True si la documentation de printf est plus longue que le fichier.
 - La commande retourne True si on trouve la documentation de printf dans le fichier.
@@ -139,7 +139,7 @@
 + La commande rajoute la documentation de printf à la fin du fichier.
 
 
-* Que fais la commande : ./is_abr < abr.txt ?
+** Que fais la commande : ./is_abr < abr.txt ?
 - La commmande exécute le programme is_abr avec les deux arguments '<' et 'abr.txt'.
 - La commande trouve les chaînes de texte contenues dans le fichier 'is_abr'.
 - La commande redirige la sortie vers le fichier 'abr.txt'.
@@ -148,5 +148,6 @@
 + les scanf dans le programme is_abr seront opérés sur le contenu du fichier 'abr.txt'.
 + Cela s'appelle faire une redirection en entrée du programme is_abr.
 + Le clavier n'est plus utile durant l'exécution de la commande.
+
 
 
