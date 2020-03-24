@@ -1,8 +1,9 @@
 
 ** La défintion d'acteur de UML est 
-- les personnes qui interragissent avec le logiciel
+- les personnes qui interragissent avec le système modélisé
 - les personnes ou systèmes externes qui interagissent avec le logiciel 
 + le rôle joué par un utilisateur ou par un système qui interagit avec le système modélisé.
+- le rôle joué par un utilisateur ou par un système qui interagit avec le logiciel.
 
 
 * Quand on parle d'interaction avec le système cela sous entend qu'il y a une interface formalisé qui permet à l'acteur et au système de communiquer 
@@ -12,5 +13,22 @@
 * Un meilleur choix pour acteur aurais été le mot rôle qui permet a une même personne d'avoir successivement plusieurs rôle 
 + Vrai
 - Faux
+
+* Le rôle est ce qu'apporte l'acteur au système modélisé et les objectifs que l'acteur attend du système:
++ vrai, et certains acteurs ne font qu'apportr des données et d'autre sont de pur clients ;
+- Faux,  il faut distinguer les acteurs qui fournissent des données comme les base de données des acteurs qui viennent chercher des données.
+
+** Ce qui est important quand on cherche les acteurs c'est 
+- de pas être noyé par le nombre d'acteurs
++ l'exhaustivité 
++ De penser à tout les acteurs qui fournissent des données
+- de pas se tromper de noms 
+
+** Le caissier est il un acteur du système ? cela dépend de la frontière
+- oui si l'on modélise tout le super marché
++ non si l'on modélise tout le super marche 
++ oui si l'on modélise que le logiciel de gestion de la caisse 
+- non si l'on modélise que le logiciel de gestion de la caisse 
+
 
 
