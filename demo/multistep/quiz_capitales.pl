@@ -6,6 +6,7 @@ title = Quiz : Capitales européennes
 
 nbstep % 3
 settings.cumulative % false
+settings.repeat % false
 
 before == #|python|
 import random as rd
@@ -55,3 +56,4 @@ formstep ==
 evaluatorstep ==
 score = radios[step].eval()
 ==
+
