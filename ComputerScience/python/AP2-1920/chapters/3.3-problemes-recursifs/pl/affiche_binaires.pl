@@ -38,7 +38,8 @@ fonction `affiche_binaires(n)`.
 
 grader==#|python|
 
-#import sys
+import inspect
+import ast_analyzer
 #print(pl_context, file=sys.stderr)
 
 from types import FunctionType
@@ -62,7 +63,7 @@ run(title='Existence de la fonction <tt>affiche_binaires_aux</tt>',
     output='',
     types={"affiche_binaires_aux":FunctionType})
 
-run(has_no_loop(affiche_binaires_aux), result = True,
+run(has_no_loop(import.getsource(affiche_binaires_aux)), result = True,
     title="Vérification de l'absence de boucle.")
 
 run(is_simple_recursive(affiche_binaires_aux), result = True,
