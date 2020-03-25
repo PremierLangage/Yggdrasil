@@ -3,7 +3,8 @@ tag=system|unix|terminal|bash
 
 extends = /model/AMC_TXT.pl
 
-title = Quizz sur le terminal Unix
+title = Quizz sur quelques commandes terminal Unix
 
 questions=@ commandes_terminal.txt
+
 
