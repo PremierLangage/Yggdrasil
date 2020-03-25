@@ -65,11 +65,12 @@ run(title='Existence de la fonction <tt>affiche_binaires_prefix</tt>',
     output='',
     types={"affiche_binaires_prefix":FunctionType})
 
-run(has_no_loop(inspect.getsource(affiche_binaires_prefix)), 
+run("has_no_loop(inspect.getsource(affiche_binaires_prefix))", 
     result = True,
     title="Vérification de l'absence de boucle.")
 
-run(is_simple_recursive(affiche_binaires_prefix), result = True,
+run("is_simple_recursive(affiche_binaires_prefix)", 
+    result = True,
     title="Vérification de récursivité simple.")
 
 run(f'affiche_binaires_prefix(3, "000")', 
