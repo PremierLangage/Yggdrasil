@@ -42,7 +42,7 @@ grader==#|python|
 
 import inspect
 from ast_analyzer import *
-#print(pl_context, file=sys.stderr)
+print(pl_context, file=sys.stderr)
 
 from types import FunctionType
 
