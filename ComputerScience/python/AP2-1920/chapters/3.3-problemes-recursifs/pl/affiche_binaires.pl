@@ -59,6 +59,10 @@ def chaines_binaires(n):
     else: 
         return chaines_binaires_aux(n, '')
 
+
+exec_preamble("from ast_analyzer import *")
+exec_preamble("import inspect")
+
 begin_test_group("Test de la fonction <tt>affiche_binaires_prefix</tt>")
 
 run(title='Existence de la fonction <tt>affiche_binaires_prefix</tt>', 
