@@ -70,13 +70,19 @@ if __name__ == "__main__":
     # HACK for components in lists
     aux_component(dic)
 
-    if 'buttons' not in dic:
-        dic['buttons'] = ["submit","reroll"]
+    if 'settings' not in dic:
+        dic['settings'] = {}
 
-    if 'maxattempt' not in dic:
-        dic['maxattempt'] = 1
+    if 'internals' not in dic:
+        dic['internals'] = {}
 
-    dic['attempt']=1
+    if 'scenario' in dic['settings']:
+        dic['internals']['buttons'] = ["submit","reroll"]
+    else:
+        dic['internals']['buttons'] = ["submit","reroll"]
+
+    dic['settings']['maxattempt'] = 1
+    dic['internals']['attempt'] = 1
 
     output_json = sys.argv[2]
     with open(output_json, "w+") as f:
