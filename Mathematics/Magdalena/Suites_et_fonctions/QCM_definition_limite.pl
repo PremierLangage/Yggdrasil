@@ -21,17 +21,18 @@ questions==
 
 
 
-* $%\lim_{x\to 0} f(x) = 2 %$ signifie :
-+ $%\forall \varepsilon >0 \quad \exists \eta>0 \quad \forall x\in D_f \; |x|\le \eta  \implies |f(x)-2|\le \varepsilon %$
-- $%\forall \varepsilon \ge 0 \quad \exists \eta>0  \quad \forall x\in D_f \; |x|\le \eta \implies |f(x)-2|\le \varepsilon %$
+* $%\lim_{x\to +\infty} f(x) = 3 %$ signifie :
++ $%\forall \varepsilon >0 \quad \exists A \in \mathbb{R} \quad \forall x\in D_f \; x \ge A  \implies |f(x)-3|\le \varepsilon %$
++ $%\forall \varepsilon >0 \quad \exists A>0 \quad \forall x\in D_f \; x \ge A  \implies |f(x)-3|\le \varepsilon %$
++ $%\forall \varepsilon >0 \quad \exists \eta >0 \quad \forall x\in D_f \; x \ge \eta  \implies |f(x)-3|\le \varepsilon %$
+- $%\forall \varepsilon \ge 0 \quad \exists \eta>0  \quad \forall x\in D_f \; |x|\le \eta \implies |f(x)-3|\le \varepsilon %$
+- $%\forall \varepsilon \ge 0 \quad \exists \eta>0  \quad \forall x\in D_f \; x\le \eta \implies |f(x)-3|\le \varepsilon %$
 
 * $%\lim_{x\to 0} f(x) = 2 %$ signifie :
 + $%\forall \varepsilon >0 \quad \exists \eta>0 \quad \forall x\in D_f \; |x|\le \eta  \implies |f(x)-2|\le \varepsilon %$
 - $%\forall \varepsilon \ge 0 \quad \exists \eta>0  \quad \forall x\in D_f \; |x|\le \eta \implies |f(x)-2|\le \varepsilon %$
 
-* 33 Ceci est une question 
-+ et ça c'est une bonne réponse 
-- ce.  ci n'est pas une bonne réponse 
+ 
 
 
 
