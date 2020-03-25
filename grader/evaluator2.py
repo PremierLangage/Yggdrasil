@@ -101,38 +101,30 @@ if __name__ == "__main__":
 
     dic = get_context()
 
-    if step == -1:
-        score = 0
+    for key in dic:
+        dic[key]=deserialize(dic[key])
+
+    dic = {**namespace, **dic}
+
+    aux_component1(dic)
+    
+    if 'evaluator' in dic:
+            code = dic['evaluator']
     else:
-        for key in dic:
-            dic[key]=deserialize(dic[key])
+        print(missing_evaluator_stderr, file=sys.stderr)
+        sys.exit(1)
 
-        dic = {**namespace, **dic}
+    dic['StopEvaluatorExec'] = StopEvaluatorExec
+    exec(add_try_clause(code, StopEvaluatorExec), dic)
+    exec("", namespace)
+    for key in namespace:
+        if key in dic and dic[key] == namespace[key]:
+            del dic[key]
 
-        aux_component1(dic)
-        
-        if 'evaluatorstep' in dic:
-            if isinstance(dic['evaluatorstep'], list):
-                code = dic['evaluatorstep'][step]
-            elif isinstance(dic['evaluatorstep'], dict):
-                code = dic['evaluatorstep'][dic['stepseq'][step]]
-            else:
-                code = dic['evaluatorstep']
-        else:
-            print(missing_evaluator_stderr, file=sys.stderr)
-            sys.exit(1)
+    for key in dic:
+        dic[key]=serialize(dic[key])
 
-        dic['StopEvaluatorExec'] = StopEvaluatorExec
-        exec(add_try_clause(code, StopEvaluatorExec), dic)
-        exec("", namespace)
-        for key in namespace:
-            if key in dic and dic[key] == namespace[key]:
-                del dic[key]
-
-        for key in dic:
-            dic[key]=serialize(dic[key])
-
-        aux_component2(dic)
+    aux_component2(dic)
     
     if 'grade' in dic:
         score = dic['grade'][0]
