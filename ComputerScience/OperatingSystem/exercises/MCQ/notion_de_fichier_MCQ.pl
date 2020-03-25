@@ -1,15 +1,9 @@
 # Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
-author=Nicolas Borie
-
-title=Notion de fichier dans les systèmes d'exploitation de type Unix
 tag=system|fichier
 
-template=/ComputerScience/OperatingSystem/templates/parametrized_MCQ.pl
+extends = /model/AMC_TXT.pl
 
-@ notion_de_fichier.txt
-data_from_file=notion_de_fichier.txt
+title = Quizz sur la notion de fichier en Unix
 
-number_question=5
-min_option=4
-max_option=8
+questions=@ notion_de_fichier.txt
 
