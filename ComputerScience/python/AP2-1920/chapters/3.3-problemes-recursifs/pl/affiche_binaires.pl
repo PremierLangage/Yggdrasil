@@ -64,7 +64,7 @@ begin_test_group("Test de la fonction <tt>affiche_binaires_prefix</tt>")
 
 run(title='Existence de la fonction <tt>affiche_binaires_prefix</tt>', 
     output='',
-    types={"affiche_binaires_prefix":FunctionType})
+    types={"affiche_binaires_prefixe":FunctionType})
 
 run(title='Respect des consignes', 
     output='',
