@@ -15,8 +15,8 @@ Soit $% f%$ une fonction réelle, définie sur $%\mathbb{R}%$.
 questions==
 
 * $%\lim_{x\to 0} f(x) = 2 %$ signifie :
-+ $%\forall \varepsilon >0 \; \exists \eta>0 \; \forall x\in D_f \; |x|\le \eta  \implies |f(x)-2|\le \varepsilon %$
-- $%\forall \varepsilon \ge 0 \exists \eta>0  \; \forall x\in D_f \; |x|\le \eta \implies |f(x)-2|\le \varepsilon %$
++ $%\forall \varepsilon >0 \quad \exists \eta>0 \quad \forall x\in D_f \; |x|\le \eta  \implies |f(x)-2|\le \varepsilon %$
+- $%\forall \varepsilon \ge 0 \quad \exists \eta>0  \quad \forall x\in D_f \; |x|\le \eta \implies |f(x)-2|\le \varepsilon %$
 
 
 
