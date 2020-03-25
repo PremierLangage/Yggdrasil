@@ -21,18 +21,13 @@ questions==
 
 
 
-** Comment décomposer un entier en base 2 ?
-+ On fait des divisions successives par deux, puis on lit en ordre inverse les restes obtenus.
-- On utilise l'algorithme d'Euclide.
-- Jamais personne n'a réussi à décomposer un nombre en base 2.
-- On multiplie par $% 2^n %$ l'entier pour tout $% n %$.
-- On utilise $% log_2 %$ la fonction logarithme à base 2.
-- Il faut utiliser la règle du complément à 1.
+* $%\lim_{x\to 0} f(x) = 2 %$ signifie :
++ $%\forall \varepsilon >0 \quad \exists \eta>0 \quad \forall x\in D_f \; |x|\le \eta  \implies |f(x)-2|\le \varepsilon %$
+- $%\forall \varepsilon \ge 0 \quad \exists \eta>0  \quad \forall x\in D_f \; |x|\le \eta \implies |f(x)-2|\le \varepsilon %$
 
-* 66 Ceci est une question 
-- ceci n'est pas une bonne réponse 
-+ ça c'est une bonne réponse 
-
+* $%\lim_{x\to 0} f(x) = 2 %$ signifie :
++ $%\forall \varepsilon >0 \quad \exists \eta>0 \quad \forall x\in D_f \; |x|\le \eta  \implies |f(x)-2|\le \varepsilon %$
+- $%\forall \varepsilon \ge 0 \quad \exists \eta>0  \quad \forall x\in D_f \; |x|\le \eta \implies |f(x)-2|\le \varepsilon %$
 
 * 33 Ceci est une question 
 + et ça c'est une bonne réponse 
