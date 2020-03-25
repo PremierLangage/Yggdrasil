@@ -1,6 +1,4 @@
-@ /utils/sandboxio.py
-@ /builder/before2.py [builder.py]
-@ /grader/evaluator2.py [grader.py]
+extends = /model/basic.pl
 
 title = Addition
 
@@ -29,4 +27,5 @@ if input.value==a+b:
 else:
     grade=(0,f"La réponse est {a+b}.")
 ==
+
 
