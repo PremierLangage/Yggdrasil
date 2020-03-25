@@ -79,6 +79,18 @@ if __name__ == "__main__":
     
     dic = get_context()
 
+    newcomp = []
+    for key in dic:
+        if isinstance(dic[key], list):
+            for i in range(len(dic[key])):
+                item = dic[key][i]
+                if isinstance(item, dict) and 'cid' in item:
+                    name = item['name']
+                    dic[key][i] = dic[name]
+
+    for name, comp in newcomp:
+        dic[name] = comp
+
     for key in dic:
         dic[key]=deserialize(dic[key])
 
@@ -96,6 +108,18 @@ if __name__ == "__main__":
 
     for key in dic:
         dic[key]=serialize(dic[key])
+
+    newcomp = []
+    for key in dic:
+        if isinstance(dic[key], list):
+            for i in range(len(dic[key])):
+                item = dic[key][i]
+                if isinstance(item, Component):
+                    newcomp.append((name, item))
+                    dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
+
+    for name, comp in newcomp:
+        dic[name] = comp
     
     if 'grade' in dic:
         score = dic['grade'][0]
@@ -109,11 +133,11 @@ if __name__ == "__main__":
             feedback = dic['feedback'] + " "
 
     if score >= 0:
-        dic['attempt'] = dic['attempt'] + 1
+        dic['internals']['attempt'] = dic['internals']['attempt'] + 1
 
-    if dic['attempt'] > dic['maxattempt']:
+    if dic['internals']['attempt'] > dic['settings']['maxattempt']:
         try:
-            dic['settings']['submit'] = False
+            dic['internals']['buttons'].remove('submit')
         except:
             pass
         if score < 100 and 'solution' in dic:
@@ -129,6 +153,8 @@ if __name__ == "__main__":
             ffeedback=format_feedback_lightscore(score,feedback)
 
     output(score, ffeedback, dic)
+
+
 
 
 
