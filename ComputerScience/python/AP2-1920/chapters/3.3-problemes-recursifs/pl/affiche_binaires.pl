@@ -70,7 +70,7 @@ run(has_no_loop(import.getsource(affiche_binaires_aux)),
     title="Vérification de l'absence de boucle.")
 
 run(is_simple_recursive(affiche_binaires_aux), result = True,
-    title="Vérification de l'absence de boucle.")
+    title="Vérification de récursivité simple.")
 
 run(f'affiche_binaires_aux(3, "000")', 
     title = f'Chaînes binaires de longueur 3 et de préfixe "000"',
