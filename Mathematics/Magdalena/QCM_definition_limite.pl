@@ -2,23 +2,20 @@
 # Copyright 2020 Magdalena Kobylanski <magdalena.kobylanski@u-pem.fr>
 author=Magdalena Kobylanski
 
-title=
+title=Commandes Unix en terminal
 tag=system|shell
 
 extends=/model/AMC_TXT.pl
 title==
 QCM sur la défintion des limites de fonctions
 
-Soit $% f:\mathbb{R} \to \mathbb{R)%$ une fonction définie sur $%D_f%$. On suppose que $% 0\in D_f%$.
-questions
-
 ==
 
-* $%2^n %$ signifie :
-+ c'est une bonne réponse
-- c'est pas une bonne réponse
-#+ $%\forall \varepsilon >0 \exists \eta>0 \forall x\in D_f |x|\le \eta \implies |f(x)-2|\le \varepsilon %$
-#- $%\forall \varepsilon \ge 0 \exists \eta>0 \forall x\in D_f |x|\le \eta \implies |f(x)-2|\le \varepsilon %$
+questions==
+Soit $% f%$ une fonction réelle, définie sur $\mathbb{R}$.
+* $%\lim_{x\to 0} f(x) = 2 %$ signifie :
++ $%\forall \varepsilon >0 \exists \eta>0 \forall x\in D_f |x|\le \eta \implies |f(x)-2|\le \varepsilon %$
+- $%\forall \varepsilon \ge 0 \exists \eta>0 \forall x\in D_f |x|\le \eta \implies |f(x)-2|\le \varepsilon %$
 
 
 
