@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
-import sys, json, jsonpickle
+import sys
 from sandboxio import output, get_context
 from components import Component
 from jinja2 import Template
@@ -158,23 +158,3 @@ if __name__ == "__main__":
             ffeedback=format_feedback_lightscore(score,feedback)
 
     output(score, ffeedback, dic)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
