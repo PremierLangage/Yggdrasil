@@ -97,13 +97,9 @@ def aux_component2(dic):
                     newcomp.append((name, item))
                     dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
 
-
-
 if __name__ == "__main__":
 
     dic = get_context()
-
-    step = dic['step']
 
     if step == -1:
         score = 0
