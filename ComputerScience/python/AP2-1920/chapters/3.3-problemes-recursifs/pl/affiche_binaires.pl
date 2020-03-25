@@ -68,7 +68,7 @@ run(title='Existence de la fonction <tt>affiche_binaires_prefix</tt>',
 
 run(title='Respect des consignes', 
     output='',
-    types={"affiche_binaires_prefix":FunctionType})
+    types={"affiche_binaires_prefixe":FunctionType})
 assert_no_loop("affiche_binaires_prefixe")
 assert_simple_recursion("affiche_binaires_prefixe")
 
