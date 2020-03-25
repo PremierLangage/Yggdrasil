@@ -31,7 +31,7 @@ def est_recursive(func):
     """
  
     detector = RecursionDetector()
-    detector.set_trace()
+    # detector.set_trace()
     try:
         func()
     except RecursionDetected:
