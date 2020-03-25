@@ -149,7 +149,7 @@ if __name__ == "__main__":
             feedback += Template(dic['solution']).render(dic)
     
     ffeedback = feedback
-    if 'settings' in dic and 'feedback' in dic['settings']:
+    if 'feedback' in dic['settings']:
         if dic['settings']['feedback']=='rightwrong':
             ffeedback=format_feedback_rightwrong(score,feedback)
         elif dic['settings']['feedback']=='score':
