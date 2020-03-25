@@ -55,10 +55,18 @@ def chaines_binaires(n):
         return ''
     else: 
         return chaines_binaires_aux(n, '')
-    
+
+begin_test_group("Test de la fonction <tt>affiche_binaires_aux</tt>")
+
 run(title='Existence de la fonction <tt>affiche_binaires_aux</tt>', 
     output='',
     types={"affiche_binaires_aux":FunctionType})
+
+run(has_no_loop(affiche_binaires_aux), result = True,
+    title="Vérification de l'absence de boucle.")
+
+run(is_simple_recursive(affiche_binaires_aux), result = True,
+    title="Vérification de l'absence de boucle.")
 
 run(f'affiche_binaires_aux(3, "000")', 
     title = f'Chaînes binaires de longueur 3 et de préfixe "000"',
@@ -69,6 +77,10 @@ run(f'affiche_binaires_aux(3, "0")',
     title = f'Chaînes binaires de longueur 3 et de préfixe "0"',
     result = None,
     output = chaines_binaires_aux(3, "0"))
+
+end_test_group()
+
+begin_test_group("Test de la fonction <tt>affiche_binaires</tt>")
 
 run(title='Existence de la fonction <tt>affiche_binaires</tt>', 
     output='',
@@ -84,6 +96,7 @@ run(f'affiche_binaires(3)',
     result = None,
     output = chaines_binaires(3))
 ==
+
 
 
 
