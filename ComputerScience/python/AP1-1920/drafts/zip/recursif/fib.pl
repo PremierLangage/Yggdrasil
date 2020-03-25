@@ -17,7 +17,7 @@ editor.code==
 def facto(n):
     if n:
         return n*facto(n-1)
-    return 0
+    return 1
 ==
 zbefore==
 from bdb import Bdb
@@ -26,7 +26,7 @@ import sys
 def fa(n):
     if n:
         return n*fa(n-1)
-    return 0
+    return 1
 
 class RecursionDetected(Exception):
     pass
