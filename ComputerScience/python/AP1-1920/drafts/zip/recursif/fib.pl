@@ -51,8 +51,7 @@ pltest0==
 24
 ==
 pltest1==
->>> from rectest import est_recursive
->>> est_recursive(lambda:facto(5))
+>>> from rectest import test_recursion
 True
 ==
 
@@ -60,6 +59,7 @@ pltest2==
 >>> facto(10)
 3628800
 ==
+
 
 
 
