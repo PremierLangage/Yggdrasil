@@ -15,7 +15,7 @@ Ecrire une fonction  récursive qui reçoit un entier positif n et renvoie la va
 2
 </code></pre>
 ==
-code==
+editor.code==
 def facto(n):
     if n:
         return n*facto(n-1)
@@ -57,8 +57,8 @@ True
 ==
 
 pltest2==
->>> facto(25==fa(25)
-True
+>>> facto(10)
+3628800
 ==
 
 
