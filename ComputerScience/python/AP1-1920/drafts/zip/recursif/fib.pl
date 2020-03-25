@@ -48,7 +48,7 @@ class RecursionDetector(Bdb):
 
 def est_recursive(func):
     """Renvoie True si func effectue des appels récursifs, False sinon.
-
+    """
  
     detector = RecursionDetector()
     #detector.set_trace()
