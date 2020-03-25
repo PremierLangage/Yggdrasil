@@ -70,16 +70,10 @@ missing_grade_stderr = """\
 The script have access to every variable declared in the PL and its 'before' script.
 It should declare a variable 'grade' which should contain a tuple (int, feedback) where int is the grade between [0, 100]."""
 
-if __name__ == "__main__":
-    if len(sys.argv) < 5:
-        msg = ("Sandbox did not call grader properly:\n"
-               +"Usage: python3 grader.py [input_json] [answer_jsonfile] [output_json] [feedback_file]")
-        print(msg, file=sys.stderr)
-        sys.exit(1)
-    
-    dic = get_context()
-
-    newcomp = []
+# HACK for components in lists
+# dictionaries with cid key in lists are replaced
+# by corresponding components
+def aux_component1(dic):
     for key in dic:
         if isinstance(dic[key], list):
             for i in range(len(dic[key])):
@@ -87,39 +81,62 @@ if __name__ == "__main__":
                 if isinstance(item, dict) and 'cid' in item:
                     name = item['name']
                     dic[key][i] = dic[name]
+                    dic[key][i].name = name
 
-    for name, comp in newcomp:
-        dic[name] = comp
-
-    for key in dic:
-        dic[key]=deserialize(dic[key])
-
-    dic = {**namespace, **dic}
-    if 'evaluator' in dic:
-        dic['StopEvaluatorExec'] = StopEvaluatorExec
-        exec(add_try_clause(dic['evaluator'], StopEvaluatorExec), dic)
-        exec("", namespace)
-        for key in namespace:
-            if key in dic and dic[key] == namespace[key]:
-                del dic[key]
-    else:
-        print(missing_evaluator_stderr, file=sys.stderr)
-        sys.exit(1)
-
-    for key in dic:
-        dic[key]=serialize(dic[key])
-
+# HACK for components in lists
+# components in lists are duplicated outside the lists
+# and replaced by dictionaries inside the lists
+def aux_component2(dic):
     newcomp = []
     for key in dic:
         if isinstance(dic[key], list):
             for i in range(len(dic[key])):
                 item = dic[key][i]
                 if isinstance(item, Component):
+                    name = item.name
                     newcomp.append((name, item))
                     dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
 
-    for name, comp in newcomp:
-        dic[name] = comp
+
+
+if __name__ == "__main__":
+
+    dic = get_context()
+
+    step = dic['step']
+
+    if step == -1:
+        score = 0
+    else:
+        for key in dic:
+            dic[key]=deserialize(dic[key])
+
+        dic = {**namespace, **dic}
+
+        aux_component1(dic)
+        
+        if 'evaluatorstep' in dic:
+            if isinstance(dic['evaluatorstep'], list):
+                code = dic['evaluatorstep'][step]
+            elif isinstance(dic['evaluatorstep'], dict):
+                code = dic['evaluatorstep'][dic['stepseq'][step]]
+            else:
+                code = dic['evaluatorstep']
+        else:
+            print(missing_evaluator_stderr, file=sys.stderr)
+            sys.exit(1)
+
+        dic['StopEvaluatorExec'] = StopEvaluatorExec
+        exec(add_try_clause(code, StopEvaluatorExec), dic)
+        exec("", namespace)
+        for key in namespace:
+            if key in dic and dic[key] == namespace[key]:
+                del dic[key]
+
+        for key in dic:
+            dic[key]=serialize(dic[key])
+
+        aux_component2(dic)
     
     if 'grade' in dic:
         score = dic['grade'][0]
