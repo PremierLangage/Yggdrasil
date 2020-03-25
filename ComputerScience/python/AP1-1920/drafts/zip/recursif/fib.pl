@@ -20,13 +20,16 @@ def facto(n):
     return 1
 ==
 before==
-
+from bdb import Bdb
+import sys
 def fa(n):
     if n:
         return n*fa(n-1)
     return 1
+class RecursionDetected(Exception):
+    pass
 
-class RecursionDetector():
+class RecursionDetector(Bdb):
     def do_clear(self, arg):
         pass
 
