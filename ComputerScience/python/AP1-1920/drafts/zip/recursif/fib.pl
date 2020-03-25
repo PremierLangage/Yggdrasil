@@ -26,6 +26,17 @@ import random
 
 n=random.randint(4,12)
 
+def facto(n):
+    if n:
+        return n*facto(n-1)
+    return 1
+
+fc=facto(n)
+
+pltest3 = f"""
+>>> facto({n})=={fc}
+True
+"""
 
 after=before
 ==
