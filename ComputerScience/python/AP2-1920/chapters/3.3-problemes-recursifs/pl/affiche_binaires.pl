@@ -60,18 +60,15 @@ def chaines_binaires(n):
         return chaines_binaires_aux(n, '')
 
 
-exec_preamble("from ast_analyzer import *")
-exec_preamble("import inspect")
-
 begin_test_group("Test de la fonction <tt>affiche_binaires_prefix</tt>")
 
 run(title='Existence de la fonction <tt>affiche_binaires_prefix</tt>', 
     output='',
     types={"affiche_binaires_prefix":FunctionType})
 
-run("has_no_loop(inspect.getsource(affiche_binaires_prefix))", 
-    result = True,
-    title="Vérification de l'absence de boucle.")
+assert_no_loop("affiche_binaires_prefixe")
+
+assert_simple_recursion("affiche_binaires_prefixe")
 
 run("is_simple_recursive(affiche_binaires_prefix)", 
     result = True,
