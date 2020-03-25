@@ -6,9 +6,13 @@ title=
 tag=system|shell
 
 extends=/model/AMC_TXT.pl
-title==QCM sur la défintion des limites de fonctions
-Soit $% f:\mathbb{R} \to \mathbb{R)%$ une fonction définie sur $D_f%$. On suppose que $% 0\in D_f%$.
-questions==
+title==
+QCM sur la défintion des limites de fonctions
+
+Soit $% f:\mathbb{R} \to \mathbb{R)%$ une fonction définie sur $%D_f%$. On suppose que $% 0\in D_f%$.
+questions
+
+==
 
 * $% \lim_{x\to 0} f(x)=0 %$ signifie
 + \forall \varepsilon >0 \exists \eta>0 \for 
