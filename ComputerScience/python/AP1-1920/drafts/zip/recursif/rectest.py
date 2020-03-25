@@ -1,9 +1,10 @@
 
 from bdb import Bdb
 import sys
-def fa(n):
+
+def facto(n):
     if n:
-        return n*fa(n-1)
+        return n*facto(n-1)
     return 1
 class RecursionDetected(Exception):
     pass
@@ -30,12 +31,12 @@ def est_recursive(func):
     """
  
     detector = RecursionDetector()
-    #detector.set_trace()
+    detector.set_trace()
     try:
         func()
     except RecursionDetected:
        print(True)
-    finally:
+    else:
         print(False)
 
 
