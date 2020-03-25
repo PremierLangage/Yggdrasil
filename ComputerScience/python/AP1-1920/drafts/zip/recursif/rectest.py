@@ -35,9 +35,7 @@ def est_recursive(func):
         func()
     except RecursionDetected:
        print(True)
-    else:
-        print(False)
     finally:
-        print(None)
+        print(False)
 
 
