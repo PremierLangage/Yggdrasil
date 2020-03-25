@@ -1,6 +1,4 @@
-@ /utils/sandboxio.py
-@ /builder/before2.py [builder.py]
-@ /grader/evaluator2.py [grader.py]
+extends = /model/basic.pl
 
 @ pays_europe.csv
 
@@ -41,6 +39,7 @@ if input.value == capitale:
 else:
     grade = (0, capitale)
 ==
+
 
 
 
