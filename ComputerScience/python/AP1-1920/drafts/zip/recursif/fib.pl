@@ -52,6 +52,7 @@ pltest0==
 ==
 pltest1==
 >>> from rectest import test_recursion
+>>> test_recursion(lambda:facto(5))
 True
 ==
 
