@@ -117,12 +117,7 @@ def aux_component2(dic):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 5:
-        msg = ("Sandbox did not call grader properly:\n"
-               +"Usage: python3 grader.py [input_json] [answer_jsonfile] [output_json] [feedback_file]")
-        print(msg, file=sys.stderr)
-        sys.exit(1)
-    
+
     dic = get_context()
 
     step = dic['step']
