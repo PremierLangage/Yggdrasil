@@ -1,11 +1,9 @@
 extends = ../../../templates/generic/generic.pl
 
-title = Fonctions : appartenance à un intervalle
+title = Affichage des mots binaires
 # author = Antoine Meyer
 
 text==
-# Affichage des mots binaires {.exo}
-
 On souhaite écrire une fonction récursive `affiche_binaires(n)` permettant
 d'afficher tous les mots à `n` caractères dans l'alphabet binaire ('0' ou '1'). 
 Par exemple :
@@ -86,6 +84,7 @@ run(f'affiche_binaires(3)',
     result = None,
     output = chaines_binaires(3))
 ==
+
 
 
 
