@@ -44,10 +44,9 @@ def aux_component(dic):
         dic[name] = comp
 
 if __name__ == "__main__":
-
-    output_json = sys.argv[2]
     
     # JSON context is converted into a python dictionary and stored in dic
+    output_json = sys.argv[2]
     dic = get_context()
 
     # the content of namespace is added to dic
