@@ -1,6 +1,6 @@
 
-
 # ca manque de traitement d'erreurs 
+# DD : oui, je n'y ai pas trop réfléchi encore
 
 def parse_AMC_TXT(txt):
 
@@ -8,8 +8,7 @@ def parse_AMC_TXT(txt):
     pending = False
 
     for line in txt.splitlines()+['']:
-        line = line.strip()
-
+        
         if line.startswith('*'):
             if line.startswith('**'):
                 question_type = "Checkbox"
@@ -18,7 +17,7 @@ def parse_AMC_TXT(txt):
             line = line.lstrip("* ")
             if line.startswith('['):
                 r0 = line.find(']')
-                options = line[1:r0].split()
+                options = [option.strip() for option in line[1:r0].split(',')]
                 line = line[r0+1:].lstrip()
             else:
                 options = []
@@ -33,8 +32,14 @@ def parse_AMC_TXT(txt):
             if line.startswith('+'):
                 index.append(k)
             k += 1
+        
+        elif pending and k == 0:
+            if line == "":
+                statement += "\n"
+            else:
+                statement += " " + line
 
-        elif line == "" and pending:
+        elif line == "" and pending and k > 0:
             if question_type == "Radio":
                 index = index[0]
             questions.append({'type': question_type, 
@@ -45,7 +50,4 @@ def parse_AMC_TXT(txt):
             })
             pending = False
 
-
     return questions
-
-
