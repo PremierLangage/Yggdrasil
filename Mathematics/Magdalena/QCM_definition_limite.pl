@@ -9,7 +9,7 @@ extends=/model/AMC_TXT.pl
 title==
 QCM sur la défintion des limites de fonctions
 
-Soit $% f%$ une fonction réelle, définie sur $\mathbb{R}$.
+Soit $% f%$ une fonction réelle, définie sur $%\mathbb{R}%$.
 ==
 
 questions==
