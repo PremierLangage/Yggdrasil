@@ -1,5 +1,5 @@
 # Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
-tag=system|fichier
+tag=system|unix|fichier
 
 extends = /model/AMC_TXT.pl
 
