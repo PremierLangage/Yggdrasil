@@ -1,3 +1,4 @@
+import inspect
 import operator
 import sys
 from copy import deepcopy
@@ -7,10 +8,11 @@ from unittest import mock
 
 import jinja2
 
+from ast_analyzer import has_no_loop, is_simple_recursive
 from mockinput import mock_input
 
-# _default_template_dir = ''
 _default_template_dir = ''
+# _default_template_dir = 'templates/generic/jinja/'
 _default_test_template = _default_template_dir + 'testitem.html'
 _default_group_template = _default_template_dir + 'testgroup.html'
 
@@ -108,7 +110,7 @@ class Test:
         :return: tuple `(added, deleted, modified, inputs)`, where:
             - `added` is a dictionary mapping new identifiers to their values;
             - `deleted` is a list of deleted identifiers;
-            - `momdified` is a dictionary mapping existing identifiers to their
+            - `modified` is a dictionary mapping existing identifiers to their
             (new) values;
             - `inputs` is a list of read input lines.
         """
@@ -193,7 +195,8 @@ class Test:
           indeed raised;
         - allow_exception: is exception is None or not passed,
           and 'allow_exception' is either absent or False, forbid exceptions;
-        - values: a disctionary of values whose existence and value to check;
+        - values: a dictionary of values whose existence and value to check;
+        - types: a dictionary of values whose existence and type to check;
         - allow_global_change: if present and False, forbid changes to globals;
         - output: check output (for strict equality for now);
         - result: check evaluation result, fails if no expression is passed.
@@ -401,6 +404,20 @@ class Test:
             ExceptionAssert(status, exception_type))
         return status
 
+    def assert_no_loop(self, funcname: str,
+                       keywords: Tuple[str] = ("for", "while")):
+        func = eval(funcname)
+        code = inspect.getsource(func)
+        status = has_no_loop(code, keywords)
+        self.record_assertion(NoLoopAssert(status, funcname, keywords))
+        return status
+
+    def assert_simple_recursion(self, funcname: str):
+        func = eval(funcname)
+        status = is_simple_recursive(func)
+        self.record_assertion(SimpleRecursionAssert(status, funcname))
+        return status
+
     def record_assertion(self, assertion: 'Assert') -> NoReturn:
         """
         Record an assertion (using an Assertion object) in the test's history.
@@ -457,7 +474,7 @@ class Test:
         if inputs:
             res.append("Lignes saisies : {}".format(inputs))
         if self.output:
-            tmp = self.output.replace('\n', "↲\n")
+            tmp = self.output.replace('\n', "↲<br>\n")
             tmp = tmp.replace(' ', '⎵')
             res.append("Texte affiché : "
                        "<pre style='margin:3pt; padding:2pt; "
@@ -762,6 +779,24 @@ class TestSession:
             self.end_test_group()
             raise StopGrader("Failed assert during fail-fast test.")
 
+    def assert_no_loop(self, funcname, keywords = ("while", "for")):
+        if self.last_test is None:
+            raise GraderError("Can't assert before running the code.")
+        status = self.last_test.assert_no_loop(funcname, keywords)
+        if self.params.get('fail_fast', False) and not status:
+            self.end_test_group()
+            raise StopGrader("Failed assert during fail-fast test.")
+
+    def assert_simple_recursion(self, funcname):
+        if self.last_test is None:
+            raise GraderError("Can't assert before running the code.")
+        status = self.last_test.assert_simple_recursion(funcname)
+        if self.params.get('fail_fast', False) and not status:
+            self.end_test_group()
+            raise StopGrader("Failed assert during fail-fast test.")
+
+
+
 
 class TextLabel:
 
@@ -908,4 +943,33 @@ class NoGlobalChangeAssert(Assert):
         else:
             return "Variables globales modifiées"
 
+
+class NoLoopAssert(Assert):
+
+    def __init__(self, status: bool, funcname: str, keywords: Tuple[str],
+                 **params):
+        super().__init__(status, params)
+        self.funcname = funcname
+        self.keywords = keywords
+
+    def __str__(self):
+        if self.status:
+            kw = " ou ".join(self.keywords)
+            return f"Pas de boucle {kw} dans la fonction {self.funcname}"
+        else:
+            kw = " ou ".join(self.keywords)
+            return f"Boucle {kw} dans la fonction {self.funcname}"
+
+
+class SimpleRecursionAssert(Assert):
+
+    def __init__(self, status, funcname, **params):
+        super().__init__(status, params)
+        self.funcname = funcname
+
+    def __str__(self):
+        if self.status:
+            return f"La fonction {self.funcname} est simplement récursive"
+        else:
+            return f"La fonction {self.funcname} n'est pas simplement récursive"
 
