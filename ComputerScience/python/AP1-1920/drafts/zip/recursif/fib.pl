@@ -19,7 +19,7 @@ def facto(n):
         return n*facto(n-1)
     return 0
 ==
-before==
+zbefore==
 from bdb import Bdb
 import sys
 
@@ -90,6 +90,7 @@ pltest2==
 >>> facto(25==fa(25)
 True
 ==
+
 
 
 
