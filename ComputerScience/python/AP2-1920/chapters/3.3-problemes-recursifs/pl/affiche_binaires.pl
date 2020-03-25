@@ -41,7 +41,7 @@ fonction `affiche_binaires(n)`.
 grader==#|python|
 
 import inspect
-import ast_analyzer
+from ast_analyzer import *
 #print(pl_context, file=sys.stderr)
 
 from types import FunctionType
