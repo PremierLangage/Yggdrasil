@@ -406,14 +406,14 @@ class Test:
 
     def assert_no_loop(self, funcname: str,
                        keywords: Tuple[str] = ("for", "while")):
-        func = eval(funcname)
+        func = self.current_state[funcname]
         code = inspect.getsource(func)
         status = has_no_loop(code, keywords)
         self.record_assertion(NoLoopAssert(status, funcname, keywords))
         return status
 
     def assert_simple_recursion(self, funcname: str):
-        func = eval(funcname)
+        func = self.current_state[funcname]
         status = is_simple_recursive(func)
         self.record_assertion(SimpleRecursionAssert(status, funcname))
         return status
