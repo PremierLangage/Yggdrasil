@@ -13,26 +13,20 @@ Ecrire une fonction  récursive qui reçoit un entier positif n et renvoie la va
 2
 </code></pre>
 ==
-editor.code==
+code==
 def facto(n):
     if n:
         return n*facto(n-1)
     return 1
 ==
-zbefore==
-from bdb import Bdb
-import sys
+before==
 
 def fa(n):
     if n:
         return n*fa(n-1)
     return 1
 
-class RecursionDetected(Exception):
-    pass
-
-class RecursionDetector(Bdb):
-
+class RecursionDetector():
     def do_clear(self, arg):
         pass
 
@@ -70,7 +64,7 @@ import random
 n=random.randint(4,12)
 
 
-pltest3=""">>>facto ({})\n'{}'""".format(n, fa(n))
+pltest3=""">>> ({})\n'{}'""".format(n, fa(n))
 
 after=before
 ==
@@ -90,7 +84,6 @@ pltest2==
 >>> facto(25==fa(25)
 True
 ==
-
 
 
 
