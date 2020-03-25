@@ -14,8 +14,14 @@ questions
 
 ==
 
-* $% \lim_{x\to 0} f(x)=0 %$ signifie
-+ \forall \varepsilon >0 \exists \eta>0 \for 
+* $% \lim_{x\to 0} f(x)=2 %$ signifie :
++ c'est une bonne réponse
+- c'est pas une bonne réponse
+#+ $%\forall \varepsilon >0 \exists \eta>0 \forall x\in D_f |x|\le \eta \implies |f(x)-2|\le \varepsilon %$
+#- $%\forall \varepsilon \ge 0 \exists \eta>0 \forall x\in D_f |x|\le \eta \implies |f(x)-2|\le \varepsilon %$
+
+
+
 
 ** Comment décomposer un entier en base 2 ?
 + On fait des divisions successives par deux, puis on lit en ordre inverse les restes obtenus.
