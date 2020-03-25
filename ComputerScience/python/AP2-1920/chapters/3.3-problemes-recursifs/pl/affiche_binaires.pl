@@ -59,25 +59,25 @@ def chaines_binaires(n):
     else: 
         return chaines_binaires_aux(n, '')
 
-begin_test_group("Test de la fonction <tt>affiche_binaires_aux</tt>")
+begin_test_group("Test de la fonction <tt>affiche_binaires_prefix</tt>")
 
-run(title='Existence de la fonction <tt>affiche_binaires_aux</tt>', 
+run(title='Existence de la fonction <tt>affiche_binaires_prefix</tt>', 
     output='',
-    types={"affiche_binaires_aux":FunctionType})
+    types={"affiche_binaires_prefix":FunctionType})
 
-run(has_no_loop(inspect.getsource(affiche_binaires_aux)), 
+run(has_no_loop(inspect.getsource(affiche_binaires_prefix)), 
     result = True,
     title="Vérification de l'absence de boucle.")
 
-run(is_simple_recursive(affiche_binaires_aux), result = True,
+run(is_simple_recursive(affiche_binaires_prefix), result = True,
     title="Vérification de récursivité simple.")
 
-run(f'affiche_binaires_aux(3, "000")', 
+run(f'affiche_binaires_prefix(3, "000")', 
     title = f'Chaînes binaires de longueur 3 et de préfixe "000"',
     result = None,
     output = '000\n')
 
-run(f'affiche_binaires_aux(3, "0")', 
+run(f'affiche_binaires_prefix(3, "0")', 
     title = f'Chaînes binaires de longueur 3 et de préfixe "0"',
     result = None,
     output = chaines_binaires_aux(3, "0"))
