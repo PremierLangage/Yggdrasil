@@ -55,19 +55,17 @@ def est_recursive(func):
     try:
         func()
     except RecursionDetected:
-       print( True)
+       return(True)
     else:
-        print(False)
+        return(False)
     finally:
-        print(None)
+        return(None)
 
 
 import random
 
 n=random.randint(4,12)
 
-
-pltest3=""">>>facto ({})\n'{}'""".format(n, fa(n))
 
 after=before
 ==
@@ -79,7 +77,7 @@ pltest0==
 24
 ==
 pltest1==
->>>est_recursive(lambda:facto(5))
+>>> est_recursive(lambda:facto(5))
 True
 ==
 
@@ -87,6 +85,7 @@ pltest2==
 >>> facto(25==fa(25)
 True
 ==
+
 
 
 
