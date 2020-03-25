@@ -193,7 +193,7 @@ if __name__ == "__main__":
             dic['form'] = dic['all_steps']
     else:
         score = int(round(sum(dic['scores'])/dic['nbstep']))
-        dic['text'] = format_feedback_lightscore(score, "") + dic['all_steps']
+        dic['text'] = format_feedback_lightscore(score, "") + '\n' + dic['all_steps']
         dic['form'] = ""
         dic['settings']["submit"] = False
         dic['settings']["reroll"] = True
