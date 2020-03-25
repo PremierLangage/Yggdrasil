@@ -1,5 +1,7 @@
 extends = ../../../templates/generic/generic.pl
 
+@ utils/ast_analyzer.py
+
 title = Affichage des mots binaires
 # author = Antoine Meyer
 
