@@ -29,25 +29,21 @@ def puissance(a,n):
 def puissancer(a,n):
     if n==0:
         return 1
-    p=   puissancer(a,n//2)
+    p=puissancer(a,n//2)
     p*=p
     if n%2==1:
         p*=a
 return p
+
 n=randint(4,12)
 a=randint(-5,10)
 ff=puissance(a,n)
 n=randint(20,40)
-fs=puissancer(a,n)
+
 
 pltest3 = f"""
 >>> puissance{a,n}=={ff}
 True
-
-pltest4= f"""
->>> puissancer{a,n}=={fs}
-True
-
 """
 
 after=before
