@@ -39,13 +39,17 @@ n=randint(4,12)
 a=randint(-5,10)
 ff=puissance(a,n)
 n=randint(20,40)
-
+fs=puissancer(a,n)
 
 pltest3 = f"""
 >>> puissance{a,n}=={ff}
 True
 """
 
+pltest4 = f"""
+>>> puissancer{a,n}=={fs}
+True
+"""
 after=before
 ==
 
