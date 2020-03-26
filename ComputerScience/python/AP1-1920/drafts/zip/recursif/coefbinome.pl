@@ -22,7 +22,7 @@ from random import *
 def binome(n,p):
     if p==0 or p==n:
         return 1
-    x=  binome(n-1,p)+binome(n-1,p):
+    x=  binome(n-1,p)+binome(n-1,p)
     return x
 ==
 
