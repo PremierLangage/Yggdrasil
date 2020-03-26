@@ -22,7 +22,7 @@ def puissance(a,n):
         return a*puissance(a,n-1)
     return 1
 
-ff=puissance(n)
+ff=puissance(a,n)
 
 pltest3 = f"""
 >>> puissance({a,n})=={ff}
