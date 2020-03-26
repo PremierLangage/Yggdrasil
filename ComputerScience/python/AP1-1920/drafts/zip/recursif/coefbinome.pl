@@ -21,7 +21,6 @@ from random import *
 
 def binome(n,p):
         return 1
-      print(x)
       return  x
 
 after=before
