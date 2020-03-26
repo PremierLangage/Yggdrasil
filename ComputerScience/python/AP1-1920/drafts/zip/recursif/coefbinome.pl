@@ -24,5 +24,6 @@ before==
 from random import *
 
 
-def binom
+def binom(n,p):
+    return 4    
 ==
