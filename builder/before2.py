@@ -81,7 +81,6 @@ if __name__ == "__main__":
     else:
         dic['internals']['buttons'] = ["submit","reroll"]
 
-    dic['settings']['maxattempt'] = 1
     dic['internals']['attempt'] = 1
 
     output_json = sys.argv[2]
