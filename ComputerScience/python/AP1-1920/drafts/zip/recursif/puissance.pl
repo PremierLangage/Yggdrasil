@@ -33,7 +33,7 @@ def puissancer(a,n):
     p*=p
     if n%2==1:
         p*=a
-return p
+    return p
 
 n=randint(4,12)
 a=randint(-5,10)
