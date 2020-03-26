@@ -20,16 +20,13 @@ from random import *
 
 
 def binome(n,p):
+    if p==0 or p==n:
         return 1
-      x=binome(n-1,p)+binome(n-1,p-1)
-      print(x)
-      return  x
-
-after=before
+    x=  binome(n-1,p)+binome(n-1,p):
+    return x
 ==
 
 pltest0==
-
 >>> binome(4,2)
 6
 ==
