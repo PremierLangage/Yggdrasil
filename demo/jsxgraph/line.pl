@@ -2,10 +2,7 @@ extends = /model/math.pl
 
 title = Droite
 
-# Le composant va être renommé JSXGraph
 jxg =: MathDrawer
-# Les deux lignes suivantes sont temporaires.
-@ /utils/components/jsxgraph.py [customjsxgraph.py]
 jxg.decorator = CustomJSXGraph
 
 jxg.attributes % {"showNavigation":false, "boundingbox":[-6,6,6,-6]}
@@ -38,10 +35,8 @@ var linesol = board.create('line',[[0,{{b}}],[1,{{a}}+{{b}}]],{color:'green'});
 ==
 
 evaluator ==
-xA = jxg.points['A']['x']
-yA = jxg.points['A']['y']
-xB = jxg.points['B']['x']
-yB = jxg.points['B']['y']
+xA, yA = jxg.getpoint('A')
+xB, yB = jxg.getpoint('B')
 
 ansa = (yA-yB)/(xA-xB)
 ansb = yB-ansa*xB
@@ -53,17 +48,3 @@ else:
 
 jxg.disabled = True
 ==
-
-extracss==
-<style>
-.jsxgraph-component {
-    max-width:300px;
-    width:90vw;
-    max-height:300px;
-    height:90vw;
-    margin: 0 auto;
-}
-</style>
-==
-
-
