@@ -37,14 +37,6 @@ evaluator =
 
 
 extrajs ==
-<style>
-.btn2 {
-    border-radius: 4px !important;
-    margin: 0px 4px !important;
-}
-</style>
-
-
 <script>
     function onReadyPL(nodes) {
         const actions = nodes.actions;
@@ -56,12 +48,16 @@ extrajs ==
         const link = origin + pathname;
 
         const buttons = actions.find('.btn-group');
+
+        {% if "reroll" in internals.buttons %}
         buttons.append(`
             <a type="button" class="btn btn-warning action-reroll" href="`+link+`?action=reroll">
                 <i class="fas fa-dice"></i> Nouveau tirage
             </a>
         `);
-        {% if not settings.submit %}
+        {% endif %}
+
+        {% if not "submit" in internals.buttons %}
         actions.find('.action-submit').hide();
         {% endif %}
     }
