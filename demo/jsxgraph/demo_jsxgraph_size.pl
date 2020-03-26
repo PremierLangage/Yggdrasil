@@ -11,6 +11,8 @@ jxg2 =: MathDrawer
 
 jxg2.attributes % {"showNavigation": false, "boundingbox": [-5, 5, 5, -5]}
 
+jxg2.css = test
+
 before ==
 
 ==
