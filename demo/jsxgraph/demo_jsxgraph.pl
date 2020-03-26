@@ -30,7 +30,7 @@ form ==
 
 evaluator ==
 score = 100
-feedback = str(jxg.getpoint('A'))
+feedback = "\n".join([name + ": "+ str(jxg.getpoint(name)) for name in ['A', 'B', 'C']]
 ==
 
 
