@@ -16,7 +16,7 @@ before==
 from random import *
 
 n=randint(4,12)
-a=5*random()
+a=randint(-5,10)
 def puissance(a,n):
     if n:
         return a*puissance(a,n-1)
