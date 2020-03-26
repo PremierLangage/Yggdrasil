@@ -6,6 +6,7 @@ jxg1 =: MathDrawer
 
 jxg1.attributes % {"showNavigation": false, "boundingbox": [-5, 5, 5, -5]}
 
+jxg1.css = test
 
 jxg2 =: MathDrawer
 
