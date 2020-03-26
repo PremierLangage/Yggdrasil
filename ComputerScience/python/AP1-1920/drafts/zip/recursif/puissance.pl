@@ -14,8 +14,8 @@ En utilisant la définition <br>
 $%a^0=1%$<br>
 $%a^n=(a^\frac{n}{2})^2%$ si n est pair<br>
 $%a^n=a*(a^\frac{n}{2})^2%$ si n est impair<br>
-ecrire une fonction recursive puissancer(a,n) qui renvoie la valeur $%a^n%$
-==
+ecrire une fonction recursive puissancer(a,n) qui renvoie la valeur $%a^n  \binom{1 }{7}%$
+==\
 
 before==
 from random import *
@@ -75,3 +75,4 @@ pltest3==
 >>> puissance(2,15)
 32768
 ==
+
