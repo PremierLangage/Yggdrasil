@@ -9,29 +9,45 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 title =Puissances
 text==
 En utilisant la définition $%a^n=a \times a ldots \times a] nfacteurs%$ et $%a^0=1%$
-écrire une fonction puissance(a,n) qui renvoie la valeur $%a^n%$
+écrire une fonction recursive puissance(a,n) qui renvoie la valeur $%a^n%$
 En utilisant la définition <br>
 $%a^0=1%$<br>
 $%a^n=(a^\frac{n}{2})^2%$ si n est pair<br>
 $%a^n=a*(a^\frac{n}{2})^2%$ si n est impair<br>
-
+ecrire une fonction recursive puissancer(a,n) qui renvoie la valeur $%a^n%$
 ==
 
 before==
 from random import *
 
-n=randint(4,12)
-a=randint(-5,10)
+
 def puissance(a,n):
     if n:
         return a*puissance(a,n-1)
     return 1
 
+def puissancer(a,n):
+    if n==0:
+        return 1
+    p=   puissancer(a,n//2)
+    p*=p
+    if n%2==1:
+        p*=a
+return p
+n=randint(4,12)
+a=randint(-5,10)
 ff=puissance(a,n)
+n=randint(20,40)
+fs=puissancer(a,n)
 
 pltest3 = f"""
 >>> puissance{a,n}=={ff}
 True
+
+pltest4= f"""
+>>> puissancer{a,n}=={fs}
+True
+
 """
 
 after=before
