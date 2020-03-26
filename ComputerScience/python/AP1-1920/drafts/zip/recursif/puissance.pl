@@ -25,7 +25,7 @@ def puissance(a,n):
 ff=puissance(a,n)
 
 pltest3 = f"""
->>> puissance({a,n})=={ff}
+>>> puissance{a,n}=={ff}
 True
 """
 
