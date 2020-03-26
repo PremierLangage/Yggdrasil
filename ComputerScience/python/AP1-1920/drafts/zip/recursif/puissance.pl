@@ -6,10 +6,15 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 
 @ rectest.py
 
-title =Puissance 
+title =Puissances
 text==
 En utilisant la définition $%a^n=a \times a ldots \times a] nfacteurs%$ et $%a^0=1%$
 écrire une fonction puissance(a,n) qui renvoie la valeur $%a^n%$
+En utilisant la définition <br>
+$%a^0=1%$<br>
+$%a^n=(a^\frac{n}{2})^2%$ si n est pair<br>
+$%a^n=a*(a^\frac{n}{2})^2%$ si n est impair<br>
+
 ==
 
 before==
