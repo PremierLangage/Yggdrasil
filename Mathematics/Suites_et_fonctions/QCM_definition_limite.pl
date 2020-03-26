@@ -14,7 +14,7 @@ QCM sur la défintion des limites de fonctions
 intro ==
 Ce quiz contient {{nbstep}} questions.
 
-Dans tout ce quiz, $% f%$ désigne une fonction réelle, définie sur $%\mathbb{R}%$.
+Dans toutes les questions, $% f%$ désigne une fonction réelle, définie sur $%\mathbb{R}%$.
 ==
 
 questions==
