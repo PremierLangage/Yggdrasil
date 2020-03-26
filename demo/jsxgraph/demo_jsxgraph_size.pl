@@ -35,7 +35,7 @@ evaluator ==
 
 extracss==
 <style>
-.jsxgraph-component2 {
+.jsxgraph-component {
     max-width:300px !important;
     width:90vw !important;
     max-height:300px !important;
