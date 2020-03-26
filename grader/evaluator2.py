@@ -139,14 +139,15 @@ if __name__ == "__main__":
 
     if score >= 0:
         dic['internals']['attempt'] = dic['internals']['attempt'] + 1
-
-    if dic['internals']['attempt'] > dic['settings']['maxattempt']:
-        try:
-            dic['internals']['buttons'].remove('submit')
-        except:
-            pass
-        if score < 100 and 'solution' in dic:
-            feedback += Template(dic['solution']).render(dic)
+    
+    if dic['settings']['maxattempt'] is not None:
+        if dic['internals']['attempt'] > dic['settings']['maxattempt']:
+            try:
+                dic['internals']['buttons'].remove('submit')
+            except:
+                pass
+            if score < 100 and 'solution' in dic:
+                feedback += Template(dic['solution']).render(dic)
     
     ffeedback = feedback
     if 'feedback' in dic['settings']:
