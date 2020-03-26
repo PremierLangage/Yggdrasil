@@ -4,12 +4,13 @@ title = Démo JSXGraph
 
 # Le composant sera bientôôt renommé JSXGraph
 jxg =: MathDrawer
-# Les deux lignes suivantes sont temporaires.
+# Le décorateur est temporaire.
 jxg.decorator = CustomJSXGraph
 
 jxg.attributes % {"showNavigation": false, "boundingbox": [-6, 6, 6, -6]}
 
 settings.feedback = Raw
+settings.maxattempt % null
 
 before ==
 jxg.setscript(script_init)
