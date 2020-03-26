@@ -57,14 +57,6 @@ extracss ==
 ==
 
 extrajs ==
-<style>
-.btn2 {
-    border-radius: 4px !important;
-    margin: 0px 4px !important;
-}
-</style>
-
-
 <script>
     function onReadyPL(nodes) {
         const actions = nodes.actions;
@@ -84,7 +76,7 @@ extrajs ==
             </a>
         `);
         {% endif %}
-        
+
         {% if not "submit" in internals.buttons %}
         actions.find('.action-submit').hide();
         {% endif %}
@@ -96,4 +88,4 @@ text =
 
 form =
 
-
+settings.maxattempt % 1
