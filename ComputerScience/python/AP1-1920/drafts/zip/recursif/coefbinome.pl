@@ -27,3 +27,9 @@ def binome(n,p):
 
 after=before
 ==
+
+pltest0==
+
+>>> binome(4,2)
+6
+==
