@@ -34,7 +34,7 @@ evaluator ==
 
 extracss==
 <style>
-.test {
+.test div {
     max-width:300px;
     width:90vw;
     max-height:300px;
