@@ -21,6 +21,8 @@ from random import *
 
 def binome(n,p):
         return 1
+      x=binome(n-1,p)+binome(n-1,p-1)
+      print(x)
       return  x
 
 after=before
