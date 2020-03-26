@@ -15,10 +15,6 @@ before ==
 
 ==
 
-jxg.script ==
-
-==
-
 text ==
 
 ==
