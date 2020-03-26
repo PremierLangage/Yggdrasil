@@ -34,5 +34,3 @@ evaluator ==
 score = 100
 feedback = ', '.join([name + ' : '+ str(jxg.getpoint(name)) for name in ['A', 'B', 'C']])
 ==
-
-
