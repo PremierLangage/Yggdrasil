@@ -10,6 +10,7 @@
 @ /utils/plrandom.py [plrandom.py]
 @ /utils/utilsmath2.py [utilsmath.py]
 @ /utils/keyboards.JSON [keyboards.JSON]
+@ /utils/components/jsxgraph.py [customjsxgraph.py]
 
 title =
 
@@ -106,7 +107,6 @@ extracss ==
 }
 
 
-
 .error-text-unit {
     color: #721c24;
     text-decoration: line-through red;
@@ -118,6 +118,7 @@ extracss ==
 }
 </style>
 ==
+
 
 
 
