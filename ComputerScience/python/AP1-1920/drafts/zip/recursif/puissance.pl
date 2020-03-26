@@ -15,7 +15,7 @@ En utilisant la définition $%a^n=a \times a ldots \times a] nfacteurs%$ et $%a^
 before==
 from random import *
 
-n=random.randint(4,12)
+n=randint(4,12)
 a=5*random()
 def puissance(a,n):
     if n:
