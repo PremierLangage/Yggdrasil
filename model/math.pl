@@ -15,11 +15,8 @@
 title =
 
 settings.feedback = rightwrong
-
 settings.buttons % ["reroll","submit"]
-settings.submit % true
-
-maxattempt % 1
+settings.maxattempt % 1
 
 text ==
 
