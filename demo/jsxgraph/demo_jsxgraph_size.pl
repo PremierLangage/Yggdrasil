@@ -4,7 +4,7 @@ title = Angle
 
 jxg =: MathDrawer
 
-jxg.attributes % {"showNavigation":false, "boundingbox":[-1.25,1.25,1.25,-1.25]}
+jxg.attributes % {"showNavigation":false, "boundingbox":[-5, 5, 5, -5]}
 
 before ==
 
