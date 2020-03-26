@@ -12,7 +12,8 @@ En utilisant la définition $%a^n=a \times a ldots \times a] nfacteurs%$ et $%a^
 écrire une fonction puissance(a,n) qui renvoie la valeur $%a^n%$
 ==
 
-import random
+before==
+from random import *
 
 n=random.randint(4,12)
 a=5*random()
