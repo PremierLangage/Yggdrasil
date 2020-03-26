@@ -24,7 +24,7 @@ class CustomJSXGraph(Component):
         """
         Set script and render it.
         """
-        return (self.points[name]['x'],self.points[name]['y'])
+        return (self.points[name]['x'], self.points[name]['y'])
 
 
 
