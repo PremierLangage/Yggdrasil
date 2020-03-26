@@ -8,22 +8,22 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title =coefficient du binome
 text==
-En utilisant la définition :
+En utilisant la définition :<br>
 $%\binom{n}{0}=1%$ <br>
 $%\binom{n}{n}=1%$ <br>
-$%\binom{n}{p}=\binom{n-1}{p}+binom{n-1}{p-1}1%$ pour $%0 \lt p \lt n%$ <br>
-écrire une fonction recursive puissance(a,n) qui renvoie la valeur $%a^n%$
-En utilisant la définition <br>
-$%a^0=1%$<br>
-$%a^n=(a^\frac{n}{2})^2%$ si n est pair<br>
-$%a^n=a*(a^\frac{n}{2})^2%$ si n est impair<br>
-ecrire une fonction recursive puissancer(a,n) qui renvoie la valeur $%a^n %$
+$%\binom{n}{p}=\binom{n-1}{p}+\binom{n-1}{p-1}1%$ pour $%0 \lt p \lt n%$ <br>
+Cette fonnction esr particulièrement innefficace : elle calcule plusieurs fois les mêmes valeurs
+On décide de garder ces valeurs déjà calculéeses  dans un dictionnaire pour ne pas les recalculer
 ==
-
 before==
 from random import *
 
 
-def binom(n,p):
-    return 4    
+def binome(n,p):
+        return 1
+      x=binome(n-1,p)+binome(n-1,p-1):
+      print(x)
+      return  x
+
+after=before
 ==
