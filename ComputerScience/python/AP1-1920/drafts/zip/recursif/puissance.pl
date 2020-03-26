@@ -38,15 +38,15 @@ def puissancer(a,n):
 n=randint(4,12)
 a=randint(-5,10)
 ff=puissance(a,n)
-n=randint(20,40)
-fs=puissancer(a,n)
 
-pltest3 = f"""
+pltest4 = f"""
 >>> puissance{a,n}=={ff}
 True
 """
+n=randint(20,40)
+fs=puissancer(a,n)
 
-pltest4 = f"""
+pltest5 = f"""
 >>> puissancer{a,n}=={fs}
 True
 """
@@ -65,8 +65,13 @@ pltest1==
 >>> test_recursion(lambda:puissance(3,5))
 True
 ==
-
 pltest2==
+>>> from rectest import test_recursion
+>>> test_recursion(lambda:puissance(3,5))
+True
+==
+
+pltest3==
 >>> puissance(2,15)
 32768
 ==
