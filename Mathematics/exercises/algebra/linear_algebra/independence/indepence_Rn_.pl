@@ -9,12 +9,7 @@ input.config = keyboards_JSON
 n = param['n']
 A = rand_int_matrix_givenrank(2,4,2)
 
-B = rand_int_matrix(n,1,2,[0])
 
-sol = list(linsolve((A, B)))[0]
-sol_tex = latex(sol)
-
-sys_tex=latexsys(A,B)
 family = str(tuple([tuple(A.col(i)) for i in range(n)]))
 ==
 
