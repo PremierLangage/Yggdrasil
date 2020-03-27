@@ -27,6 +27,7 @@ evaluator ==
 ==
 
 extracss ==
+<style>
 .myclass {
     max-width: 200px;
     width: 90vw;
