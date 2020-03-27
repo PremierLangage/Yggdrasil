@@ -22,7 +22,7 @@ family = ', '.join([str(tuple(A.row(i))) for i in range(n)])
 ==
 
 text ==
-On se place dans le $!\mathbb{R}!$-espace vectoriel $! \mathbb{R}^{{n}} !$. La famille de vecteurs suivante ets-elle libre ?
+On se place dans le $!\mathbb{R}!$-espace vectoriel $! \mathbb{R}^{{n}} !$. La famille de vecteurs suivante est-elle libre ?
 
 $$ \mathcal{F} = \\{ {{ family }} \\}.$$
 ==
