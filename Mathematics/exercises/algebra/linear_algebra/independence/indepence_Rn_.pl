@@ -11,9 +11,9 @@ if case == 1:
 elif case == 2:
     A = rand_int_matrix_givenrank(2,4,2)
 if case == 3:
-    A = rand_int_matrix_givenrank(3,4,2,magnitude = 1)
+    A = rand_int_matrix_givenrank(3,4,3,magnitude = 1)
 elif case == 4:
-    A = rand_int_matrix_givenrank(3,4,3)
+    A = rand_int_matrix_givenrank(3,4,3,magnitude = 1)
 elif case == 5:
     A = rand_int_matrix_givenrank(3,4,3)
 
