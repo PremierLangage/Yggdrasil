@@ -5,6 +5,7 @@ before ==
 keyboards_JSON['virtualKeyboards']="elementary"
 input.config = keyboards_JSON
 n = 2
+case = 1
 if case == 1:
     A = rand_int_matrix_givenrank(2,4,1)
 elif case == 2:
