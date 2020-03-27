@@ -19,7 +19,7 @@ input.config = keyboards_JSON
 n = param['n']
 nbeq = param['nbeq']
 m = n-nbeq
-radio.setitems(["{{ input|component }}"]
+radio.setitems(["{{ input|component }}"])
 lstvar = ",".join(["x","y","z","t","u","v"][:n])
 
 A=rand_int_matrix_fullrank(nbeq, n, 3, excluded_values=[0])
