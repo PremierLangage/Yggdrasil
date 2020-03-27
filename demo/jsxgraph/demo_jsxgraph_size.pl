@@ -1,18 +1,13 @@
 extends = /model/math.pl
 
-title = Angle
+title = Resize JSXGraph
 
-jxg1 =: MathDrawer
+jxg =: MathDrawer
 
-jxg1.attributes % {"showNavigation": false, "boundingbox": [-5, 5, 5, -5]}
+jxg.attributes % {"showNavigation": false, "boundingbox": [-5, 5, 5, -5]}
 
-jxg1.css = test
+jxg.css = myclass
 
-jxg2 =: MathDrawer
-
-jxg2.attributes % {"showNavigation": false, "boundingbox": [-5, 5, 5, -5]}
-
-jxg2.css = jsxgraph-component2
 
 before ==
 
@@ -23,8 +18,7 @@ text ==
 ==
 
 form ==
-{{ jxg1|component }}
-{{ jxg2|component }}
+{{ jxg|component }}
 ==
 
 
@@ -32,10 +26,9 @@ evaluator ==
 
 ==
 
-
 extracss==
 <style>
-.jsxgraph-component2 {
+.myclass {
     max-width:300px;
     width:90vw;
     max-height:300px;
