@@ -35,7 +35,7 @@ extracss==
     height:90vw;
     margin: 0 auto;
 }
-.myclass2 {
+.jsxgraph-component {
     max-width:200px;
     max-height:200px;
 }
