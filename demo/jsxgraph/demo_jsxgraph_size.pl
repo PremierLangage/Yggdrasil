@@ -45,6 +45,8 @@ extracss==
 </style>
 ==
 
+jxg.debug % true
+
 
 
 
