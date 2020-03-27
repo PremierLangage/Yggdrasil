@@ -6,7 +6,7 @@ jxg =: MathDrawer
 
 jxg.attributes % {"showNavigation": false, "boundingbox": [-5, 5, 5, -5], "keepAspectRatio": true}
 
-jxg.css = myclass2
+jxg.css = myclass
 
 
 before ==
