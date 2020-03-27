@@ -6,7 +6,7 @@ keyboards_JSON['virtualKeyboards']="elementary"
 input.config = keyboards_JSON
 n = 2
 case = 3
-d = 3
+d = 4
 if case == 1:
     A = rand_int_matrix_givenrank(2, d, 2, magnitude=2)
 elif case == 2:
