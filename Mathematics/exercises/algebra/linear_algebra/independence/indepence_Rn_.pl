@@ -8,13 +8,13 @@ n = 2
 A = rand_int_matrix_givenrank(2,4,2)
 
 
-family = str(FiniteSet([tuple(A.row(i)) for i in range(n)]*))
+family = str(tuple([tuple(A.row(i)) for i in range(n)]))
 ==
 
 text ==
 On se place dans le $!\mathbb{R}!$-espace vectoriel $! \mathbb{R}^{{n}} !$ et on considère la famille de vecteurs
 
-$$ \mathcal{F} = \\{ {{ family }} \\}.$$
+$$ \mathcal{F} = {{ family }}.$$
 
 Cette famille est-elle libre ?
 ==
