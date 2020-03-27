@@ -27,27 +27,12 @@ evaluator ==
 ==
 
 extracss==
-<style>
-.jsxgraph-component {
-    max-width:300px;
-    width:90vw;
-    max-height:300px;
-    height:90vw;
-    margin: 0 auto;
-}
 .myclass {
-    max-width:200px !important;
-    width:90vw;
-    max-height:200px !important;
-    height:90vw;
+    max-width: 200px;
+    width: 90vw;
+    max-height: 200px;
+    height: 90vw;
     margin: 0 auto;
 }
 </style>
 ==
-
-jxg.debug % true
-
-
-
-
-
