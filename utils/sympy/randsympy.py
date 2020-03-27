@@ -133,7 +133,7 @@ def rand_int_matrix_fullrank(n,p,bound,excluded_values=[],sparsity=0):
         if M.rank()==min([n,p]):
             return M
 
-def rand_int_matrix_givenrank(n,m,r):
+def rand_int_matrix_givenrank(n,m,r,magnitude=2):
     """
     Generate a nxn random matrix with given rank.
     """
@@ -142,8 +142,8 @@ def rand_int_matrix_givenrank(n,m,r):
     for i in range(r):
         A[d[i],d[i]]=1
     while True:
-        P=rand_int_matrix_invertible(n,2)
-        Q=rand_int_matrix_invertible(m,2)
+        P=rand_int_matrix_invertible(n,magnitude)
+        Q=rand_int_matrix_invertible(m,magnitude)
         B=P*A*Q
         numzeros=0
         for i in range(n):
@@ -154,4 +154,5 @@ def rand_int_matrix_givenrank(n,m,r):
         diffcols=len(set([tuple(B.col(i)) for i in range(n)]))
         if numzeros < n and diffcols==n and diffrows==n:
             return P*A*Q
+
 
