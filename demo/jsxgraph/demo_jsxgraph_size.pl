@@ -36,9 +36,9 @@ extracss==
     margin: 0 auto;
 }
 .myclass {
-    max-width:200px;
+    max-width:200px !important;
     width:90vw;
-    max-height:200px;
+    max-height:200px !important;
     height:90vw;
     margin: 0 auto;
 }
