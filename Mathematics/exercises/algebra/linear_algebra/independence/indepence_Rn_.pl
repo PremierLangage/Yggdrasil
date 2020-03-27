@@ -17,7 +17,7 @@ elif case == 4:
 elif case == 5:
     A = rand_int_matrix_givenrank(3,4,3)
 
-n = A.size()[0]
+n = A.size[0]
 family = ', '.join([str(tuple(A.row(i))) for i in range(n)])
 ==
 
