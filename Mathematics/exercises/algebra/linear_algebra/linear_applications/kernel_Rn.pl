@@ -6,6 +6,9 @@ form ==
 {{ radio|component}}
 {{ input|component}}
 ==
+param.nbeq % 1
+
+param.n % 3
 
 radio =: RadioGroup
 # Les deux lignes suivantes sont temporaires.
