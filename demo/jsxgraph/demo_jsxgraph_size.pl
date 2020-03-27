@@ -29,15 +29,12 @@ evaluator ==
 extracss==
 <style>
 .myclass {
-    max-width:300px;
-    width:90vw;
-    max-height:300px;
-    height:90vw;
-    margin: 0 auto;
+    max-width: 300px;
+    max-height: 300px;
 }
 .jsxgraph-component {
-    max-width: 200px;
-    max-height: 100px;
+    max-width: 300px;
+    max-height: 300px;
 }
 </style>
 ==
