@@ -1,12 +1,10 @@
 extends = /model/math.pl
 
 
-param.n % 3
-
 before ==
 keyboards_JSON['virtualKeyboards']="elementary"
 input.config = keyboards_JSON
-n = param['n']
+n = 2
 A = rand_int_matrix_givenrank(4,2,2)
 
 
