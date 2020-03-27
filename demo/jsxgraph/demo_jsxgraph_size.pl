@@ -4,7 +4,7 @@ title = Resize JSXGraph
 
 jxg =: MathDrawer
 
-jxg.attributes % {"showNavigation": false, "boundingbox": [-5, 5, 5, -5]}
+jxg.attributes % {"showNavigation": false, "boundingbox": [-5, 5, 5, -5], "keepAspectRatio": true}
 
 jxg.css = myclass2
 
