@@ -35,8 +35,14 @@ extracss==
     height:90vw;
     margin: 0 auto;
 }
+.myclass2 {
+    max-width:200px;
+    max-height:200px;
+}
 </style>
 ==
+
+
 
 
 
