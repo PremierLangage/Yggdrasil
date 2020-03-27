@@ -36,8 +36,8 @@ extracss==
     margin: 0 auto;
 }
 .jsxgraph-component {
-    max-width:200px;
-    max-height:100px;
+    max-width: 200px;
+    max-height: 100px;
 }
 </style>
 ==
