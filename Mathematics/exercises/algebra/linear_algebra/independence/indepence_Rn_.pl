@@ -14,7 +14,7 @@ family = str(tuple([tuple(A.row(i)) for i in range(n)]))
 text ==
 On se place dans le $!\mathbb{R}!$-espace vectoriel $! \mathbb{R}^{{n}} !$ et on considère la famille de vecteurs
 
-$$ \mathcal{F} = \{ {{ family }} \}.$$
+$$ \mathcal{F} = \\{ {{ family }} \\}.$$
 
 Cette famille est-elle libre ?
 ==
