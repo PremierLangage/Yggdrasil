@@ -4,7 +4,7 @@ input =: MathInput
 
 form ==
 {{ radio|component}}
-{{ input|component}}
+
 ==
 param.nbeq % 1
 
