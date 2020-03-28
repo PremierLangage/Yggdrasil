@@ -46,7 +46,7 @@ def puissancer(a,n):
 
 n=randint(4,12)
 a=randint(-5,10)
-ff=puissance(a,n)
+ff=nbpuissance(a,n)
 
 
 after=before
