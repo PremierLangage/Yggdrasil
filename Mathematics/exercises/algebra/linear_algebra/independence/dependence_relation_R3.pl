@@ -16,11 +16,8 @@ On se place dans le $!\mathbb{R}!$-espace vectoriel $! \mathbb{R}^4 !$. On consi
 $$ u = {{u}}, v = {{v}} et w = {{w}}.$$
 ==
 
-formstep ==
-{{ radios[step]|component }}
-==
 
-evaluatorstep ==
-score = radios[step].eval()
+evaluator ==
+score = 100
 ==
 
