@@ -6,7 +6,7 @@ before ==
 dim = []
 family = []
 radios = []
-
+a = I
 for i in range(4):
     n = 2
     case = 0
