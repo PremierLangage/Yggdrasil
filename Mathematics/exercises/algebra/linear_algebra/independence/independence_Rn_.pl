@@ -18,6 +18,7 @@ for i in range(nbstep):
     else:
         n, m, r, k = rd.choice([(2, 4, 1, 2), (2, 3, 1, 2), (3, 4, 2, 1), (3, 3, 2, 1)])
     A = rand_int_matrix_givenrank(n, m, r, magnitude=k)
+    sol = A.rank()
     radios.append(CustomRadio())
     radios[i].setitems(["Oui","Non"])
     radios[i].setsol_from_index(case)
