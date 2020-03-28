@@ -11,6 +11,8 @@ except ImportError:
         return arg
 
 # Load the custom namespace
+from namespace import namespace
+
 try:
     from namespace import namespace
 except ImportError:
@@ -88,3 +90,4 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
 
     sys.exit(0)
+
