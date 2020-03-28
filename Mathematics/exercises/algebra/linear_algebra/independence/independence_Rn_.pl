@@ -2,7 +2,7 @@ extends = /model/mathmultistep.pl
 
 title = Familles libres dans $! \mathbb{R}^3 !$ et $! \mathbb{R}^4 !$
 
-nbstep % 4
+nbstep % 5
 
 before ==
 from customradio import CustomRadio
