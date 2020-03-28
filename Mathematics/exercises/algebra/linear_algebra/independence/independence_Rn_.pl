@@ -11,7 +11,7 @@ dim = []
 family = []
 radios = []
 
-for i in range(4):
+for i in range(nbstep):
     n = 2
     case = 0
     if case == 0:
