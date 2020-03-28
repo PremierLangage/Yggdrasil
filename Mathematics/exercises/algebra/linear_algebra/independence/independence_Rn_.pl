@@ -24,13 +24,13 @@ dim.append(n)
 family.append(', '.join([str(tuple(A.row(i))) for i in range(n)]))
 ==
 
-text ==
+textstep ==
 On se place dans le $!\mathbb{R}!$-espace vectoriel $! \mathbb{R}^{{n}} !$. La famille de vecteurs suivante est-elle libre ?
 
 $$ \mathcal{F} = \\{ {{ family[step] }} \\}.$$
 ==
 
-form ==
+formstep ==
 {{ radios[step]|component }}
 ==
 
