@@ -1,6 +1,5 @@
-@ /utils/sandboxio.py
-@ /builder/before2.py [builder.py]
-@ /grader/evaluator2.py [grader.py]
+extends = basic.pl
+
 @ /model/serialization/serialize_sympy.py [serialize.py]
 @ /model/namespace/namespace_math.py [namespace.py]
 @ /utils/sympy/evalsympy.py
@@ -111,6 +110,7 @@ extracss ==
 }
 </style>
 ==
+
 
 
 
