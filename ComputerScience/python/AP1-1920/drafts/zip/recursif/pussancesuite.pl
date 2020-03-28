@@ -57,9 +57,9 @@ after=before
 pltest0==
 
 >>> nbpuissance(2,4)
-(16,4)
+(16, 4)
 >>> nbpuissancer(2,6)
-(64,3)
+(64, 3)
 
 ==
 
