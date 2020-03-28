@@ -5,10 +5,3 @@ extends = temp.pl
 @ /grader/evaluator2.py [grader.py]
 
 settings.maxattempt % 1
-
-text =
-
-form =
-
-
-
