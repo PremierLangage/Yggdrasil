@@ -9,6 +9,8 @@ extends = temp.pl
 @ /builder/beforestep.py [builder.py]
 @ /grader/evaluatorstep.py [grader.py]
 
+settings.cumulative % false
+
 text =
 form =
 
