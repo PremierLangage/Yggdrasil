@@ -1,4 +1,5 @@
 import random
-rd=random.Random()
+rd = random.Random()
+
 
 
