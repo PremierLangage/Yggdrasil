@@ -13,7 +13,7 @@ w = str(tuple(A.row(2)))
 
 text ==
 On se place dans le $!\mathbb{R}!$-espace vectoriel $! \mathbb{R}^4 !$. On considère les vecteurs :
-$$ u = {{u}}, v = {{v}} et w = {{w}}.$$
+$$ u = {{u}}, v = {{v}} \text{ et } w = {{w}}.$$
 ==
 
 
