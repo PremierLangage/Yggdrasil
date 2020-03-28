@@ -4,7 +4,7 @@ extends = /model/math.pl
 before ==
 dim = []
 family = []
-radio = []
+radios = []
 
 for i in range(4):
     n = 2
