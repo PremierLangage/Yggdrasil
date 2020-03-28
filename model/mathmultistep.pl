@@ -1,7 +1,4 @@
-@ /utils/sandboxio.py
-@ /builder/beforestep.py [builder.py]
-@ /grader/evaluatorstep.py [grader.py]
-
+extends = multistep.pl
 
 @ /model/serialization/serialize_sympy.py [serialize.py]
 @ /model/namespace/namespace_math.py [namespace.py]
@@ -9,5 +6,6 @@
 @ /utils/sympy/latex2sympy.py
 @ /utils/sympy/sympy2latex.py
 @ /utils/sympy/randsympy.py
+@ /utils/plrandom.py
 @ /utils/keyboards.JSON [keyboards.JSON]
 @ /utils/components/jsxgraph.py [customjsxgraph.py]
