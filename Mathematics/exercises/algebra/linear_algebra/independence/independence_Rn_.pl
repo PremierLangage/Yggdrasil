@@ -21,13 +21,12 @@ for i in range(nbstep):
     radios.append(CustomRadio())
     radios[i].setitems(["Oui","Non"])
     radios[i].setsol_from_index(case)
-    dim.append(A.rank())
+    dim.append(m)
     family.append(', '.join([str(tuple(A.row(i))) for i in range(n)]))
 ==
 
 textstep ==
-{{sol}}
-On se place dans le $!\mathbb{R}!$-espace vectoriel $! \mathbb{R}^{{dim[step]}} !$. La famille de vecteurs suivante est-elle libre ?
+**Question {{step}}.** On se place dans le $!\mathbb{R}!$-espace vectoriel $! \mathbb{R}^{{dim[step]}} !$. La famille de vecteurs suivante est-elle libre ?
 
 $$ \mathcal{F} = \\{ {{ family[step] }} \\}.$$
 ==
