@@ -9,15 +9,10 @@ extends = basic.pl
 @ /utils/keyboards.JSON [keyboards.JSON]
 @ /utils/components/jsxgraph.py [customjsxgraph.py]
 
-title =
-
 settings.feedback = rightwrong
-settings.buttons % ["reroll","submit"]
+
 settings.maxattempt % 1
 
-text ==
-
-==
 
 input =: MathInput
 
