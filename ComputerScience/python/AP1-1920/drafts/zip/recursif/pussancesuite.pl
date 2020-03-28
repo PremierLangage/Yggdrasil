@@ -35,14 +35,14 @@ def nbpuissance(a,n):
         return (p,nb)
     return (1,0)
 
-def puissancer(a,n):
+def nbpuissancer(a,n):
     if n==0:
-        return 1
-    p=puissancer(a,n//2)
+        return (1,0)
+    (p,r)=nbpuissancer(a,n//2)
     p*=p
     if n%2==1:
         p*=a
-    return p
+    return (p,rec+1)
 
 n=randint(4,12)
 a=randint(-5,10)
@@ -58,5 +58,8 @@ pltest0==
 
 >>> nbpuissance(2,4)
 (16,4)
+>>> nbpuissancer(2,6)
+(64,3)
+
 ==
 
