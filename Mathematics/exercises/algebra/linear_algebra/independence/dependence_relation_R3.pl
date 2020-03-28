@@ -6,19 +6,21 @@ nbstep % 5
 
 before ==
 A = rand_int_matrix_givenrank(3, 4, 3, magnitude=1)
-u = str(tuple(A.row(0)))
-v = str(tuple(A.row(1)))
-w = str(tuple(A.row(2)))
+stru = str(tuple(A.row(0)))
+strv = str(tuple(A.row(1)))
+strw = str(tuple(A.row(2)))
 ==
 
 text ==
 On se place dans le $!\mathbb{R}!$-espace vectoriel $! \mathbb{R}^4 !$. On considère les vecteurs :
-$$ u = {{u}}, v = {{v}} \text{ et } w = {{w}}.$$
+$$ u = {{stru}}, v = {{strv}} \text{ et } w = {{strw}}.$$
 Ces vecteurs sont liés. Déterminer une combinaison linéaire de ces vecteurs égale au vecteur nul.
 ==
 
 
 evaluator ==
+var('u v w')
+feedback = str(Poly(latex2sympy(input.value),u,v,w))
 score = 100
 ==
 
