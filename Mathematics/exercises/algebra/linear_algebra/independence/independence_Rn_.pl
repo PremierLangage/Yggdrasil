@@ -21,9 +21,8 @@ for i in range(nbstep):
     radios.append(CustomRadio())
     radios[i].setitems(["Oui","Non"])
     radios[i].setsol_from_index(case)
-
-dim.append(n)
-family.append(', '.join([str(tuple(A.row(i))) for i in range(n)]))
+    dim.append(n)
+    family.append(', '.join([str(tuple(A.row(i))) for i in range(n)]))
 ==
 
 textstep ==
