@@ -22,7 +22,7 @@ evaluator ==
 var('u v w')
 ans = input.value
 rel = Poly(latex2sympy(ans), u, v, w)
-feedback = str(rel.coeff_monomial(u))
+feedback = str([rel.coeff_monomial(u),rel.coeff_monomial(v),rel.coeff_monomial(w)]*A)
 
 score = 100
 ==
