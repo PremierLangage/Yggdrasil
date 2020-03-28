@@ -190,7 +190,7 @@ if __name__ == "__main__":
         score = int(round(sum(dic['scores'])/dic['nbstep']))
         dic['text'] = format_feedback_lightscore(score, "") + dic['all_steps']
         dic['form'] = ""
-        dic['internals']['buttons'] = ["submit","reroll"]
+        dic['internals']['buttons'] = ["reroll"]
 
     output(score, " ", dic)
 
