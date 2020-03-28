@@ -1,4 +1,7 @@
-extends = multistep.pl
+@ /utils/sandboxio.py
+@ /builder/beforestep.py [builder.py]
+@ /grader/evaluatorstep.py [grader.py]
+
 
 @ /model/serialization/serialize_sympy.py [serialize.py]
 @ /model/namespace/namespace_math.py [namespace.py]
