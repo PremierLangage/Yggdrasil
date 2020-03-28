@@ -13,7 +13,7 @@ radios = []
 
 for i in range(nbstep):
     n = 2
-    case = 0
+    case = rd.randint(0,1)
     if case == 0:
         A = rand_int_matrix_givenrank(2, 4, 2, magnitude=2)
     else:
