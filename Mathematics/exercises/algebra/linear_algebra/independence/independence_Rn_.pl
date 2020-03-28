@@ -28,10 +28,10 @@ $$ \mathcal{F} = \\{ {{ family[step] }} \\}.$$
 ==
 
 form ==
-{{ radio[step]|component }}
+{{ radios[step]|component }}
 ==
 
 evaluatorstep ==
-score = radio[step].eval()
+score = radios[step].eval()
 ==
 
