@@ -12,7 +12,7 @@ for i in range(4):
     case = 0
     if case == 0:
         A = rand_int_matrix_givenrank(2, 4, 2, magnitude=2)
-    else == 3:
+    else:
         A = rand_int_matrix_givenrank(3, 4, 2, magnitude=1)
     radios.append(CustomRadio())
     radios[i].setitems(["Oui","Non"])
