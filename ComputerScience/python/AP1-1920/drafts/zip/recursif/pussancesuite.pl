@@ -42,11 +42,11 @@ def nbpuissancer(a,n):
     p*=p
     if n%2==1:
         p*=a
-    return (p,rec+1)
+    return (p,r+1)
 
 n=randint(4,12)
 a=randint(-5,10)
-ff=nbpuissance(a,n)
+ff=nbpuissancer(a,n)
 
 
 after=before
