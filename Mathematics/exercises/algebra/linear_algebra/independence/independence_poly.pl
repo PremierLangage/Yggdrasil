@@ -26,7 +26,7 @@ for i in range(nbstep):
 ==
 
 textstep ==
-**Question {{step + 1}}.** On se place dans le $!\mathbb{R}!$-espace vectoriel $! \mathbb{R}^{{dim[step]}} !$. La famille de vecteurs suivante est-elle libre ?
+**Question {{step + 1}}.** On se place dans le $!\mathbb{R}!$-espace vectoriel des polynômes réels. La famille de polynômes suivante est-elle libre ?
 
 $$ \mathcal{F} = \\{ {{ family[step] }} \\}.$$
 ==
