@@ -12,16 +12,16 @@ family = []
 radios = []
 
 for i in range(nbstep):
-    n = 2
     case = rd.randint(0,1)
     if case == 0:
-        A = rand_int_matrix_givenrank(2, 4, 2, magnitude=2)
+        n, m, r, k = rd.choice([(2, 4, 2, 2), (2, 3, 2, 2), (3, 4, 3, 1), (3, 3, 3, 1)])    
     else:
-        A = rand_int_matrix_givenrank(3, 4, 2, magnitude=1)
+        n, m, r, k = rd.choice([(2, 4, 1, 2), (2, 3, 1, 2), (3, 4, 2, 1), (3, 3, 2, 1)])
+    A = rand_int_matrix_givenrank(n, m, r, magnitude=k)
     radios.append(CustomRadio())
     radios[i].setitems(["Oui","Non"])
     radios[i].setsol_from_index(case)
-    dim.append(n)
+    dim.append(m)
     family.append(', '.join([str(tuple(A.row(i))) for i in range(n)]))
 ==
 
