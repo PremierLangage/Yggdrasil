@@ -8,7 +8,3 @@ extends = basic.pl
 @ /utils/sympy/randsympy.py
 @ /utils/keyboards.JSON [keyboards.JSON]
 @ /utils/components/jsxgraph.py [customjsxgraph.py]
-
-settings.feedback = rightwrong
-
-settings.maxattempt % 1
