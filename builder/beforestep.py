@@ -92,9 +92,9 @@ if __name__ == "__main__":
         dic['internals'] = {}
 
     if 'scenario' in dic['settings']:
-        dic['internals']['buttons'] = ["submit","reroll"]
+        dic['internals']['buttons'] = ["submit"]
     else:
-        dic['internals']['buttons'] = ["submit","reroll"]
+        dic['internals']['buttons'] = ["submit"]
 
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
