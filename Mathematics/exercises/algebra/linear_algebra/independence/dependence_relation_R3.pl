@@ -22,7 +22,7 @@ evaluator ==
 var('u v w')
 ans = input.value
 rel = Poly(latex2sympy(ans),u,v,w)
-feedback = str(rel.is_linear)
+feedback = rel
 
 score = 100
 ==
