@@ -5,7 +5,6 @@ title = Relation de dépendance entre vecteurs $! \mathbb{R}^4 !$
 nbstep % 5
 
 before ==
-
 A = rand_int_matrix_givenrank(3, 4, 3, magnitude=1)
 u = str(tuple(A.row(0)))
 v = str(tuple(A.row(1)))
