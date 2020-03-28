@@ -22,7 +22,7 @@ for i in range(nbstep):
     radios[i].setitems(["Oui","Non"])
     radios[i].setsol_from_index(case)
     dim.append(m)
-    family.append(', '.join([Poly(tuple(A.row(i)),X) for i in range(n)]))
+    family.append(', '.join([latex(Poly(tuple(A.row(i)),X)) for i in range(n)]))
 ==
 
 textstep ==
