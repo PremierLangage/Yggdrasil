@@ -21,8 +21,8 @@ Ces vecteurs sont liés. Déterminer une combinaison linéaire de ces vecteurs �
 evaluator ==
 var('u v w')
 ans = input.value
-rel = Poly(3*u-v,u,v,w)
-feedback = str(latex2sympy(ans))
+rel = Poly(latex2sympy(ans, local_dict={'u': u}),u,v,w)
+feedback = str(rel.is_linear)
 
 score = 100
 ==
