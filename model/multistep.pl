@@ -13,3 +13,6 @@ text =
 form =
 
 
+intro ==
+Ce quiz contient {{nbstep}} questions.
+==
