@@ -10,7 +10,7 @@ from customradio import CustomRadio
 dim = []
 family = []
 radios = []
-
+var('X')
 for i in range(nbstep):
     case = rd.randint(0,1)
     if case == 0:
@@ -22,7 +22,7 @@ for i in range(nbstep):
     radios[i].setitems(["Oui","Non"])
     radios[i].setsol_from_index(case)
     dim.append(m)
-    family.append(', '.join([str(tuple(A.row(i))) for i in range(n)]))
+    family.append(', '.join([Poly(tuple(A.row(i)),X) for i in range(n)]))
 ==
 
 textstep ==
