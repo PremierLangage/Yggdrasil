@@ -7,7 +7,11 @@ tag=system|shell
 extends=/model/AMC_TXT.pl
 questions==
 
-
+*Soit $%f ~:~ [a;b] \rightarrow \mathbb{R} %$. Quelle est l'affirmation exacte ?
++ $% [f(a);f(b)] \subset f([a;b])%$
+- $% f([a;b]) \subset [f(a);f(b)]%$
+- $% [f(a);f(b)] = f([a;b])%$
+- On ne peut pas comparer $%[f(a);f(b)]%$ et $%f([a;b])%$.
 
 
 *Soit $% f ~:~[a;b] \rightarrow \mathbb{R}%$ une fonction continue. Quel énoncé mathématique correspond à la conclusion du théorème de Bolzano ?
