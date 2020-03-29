@@ -8,18 +8,11 @@ extends=/model/AMC_TXT.pl
 title=QCM : Fonctions continues
 questions==
 
-**Soit $%f~:~ [0;2 \pi] \rightarrow \mathbb{R}%$ la fonction définie par $%f(x) = e^{\sin (x)}%$. Soit $%m = \inf\limits_{x \in [0;2\pi]} f(x)%$. Quelles sont les affirmations vraies ? Attention, il peut y avoir plusieurs bonnes réponses.
-- $%m=e%$
-+ $% m \in f([0;2\pi]) %$
-- $% m = f \left( \frac{\pi}{2} \right) %$
-- $% m=0  %$
-- $% m=1  %$
-+ $% m=\frac{1}{e}  %$
-- $%   m \notin f([0;2\pi]) %$
-- $% m = f(0)  %$
-- $%  m=f(\pi) %$
-+ $%  m = f \left( \frac{3\pi}{2} \right) %$
-- $% m=f(2 \pi) %$
+**Soit $%f~:~ [0;2 \pi] \rightarrow \mathbb{R}%$ la fonction définie par $%f(x) = e^{\sin (x)}%$. Quelles sont les affirmations vraies ? Attention, il peut y avoir plusieurs bonnes réponses.
++ $% \exists c \in [0;2\pi] \text{ tel que } f(c) = 2%$
++ $% \exists c \in [0;2\pi] \text{ tel que } f(c) = \frac{3}{4}%$
+- $% \exists c \in [0;2\pi] \text{ tel que } f(c) = 3%$
+- $% \exists c \in [0;2\pi] \text{ tel que } f(c) = \frac{1}{10}%$
 
 
 
@@ -56,6 +49,25 @@ questions==
 - $%  M=f(\pi) %$
 - $%   M = f \left( \frac{3\pi}{2} \right) %$
 - $%  M=f(2 \pi) %$
+
+**Soit $%f~:~ [0;2 \pi] \rightarrow \mathbb{R}%$ la fonction définie par $%f(x) = e^{\sin (x)}%$. Soit $%m = \inf\limits_{x \in [0;2\pi]} f(x)%$. Quelles sont les affirmations vraies ? Attention, il peut y avoir plusieurs bonnes réponses.
+- $%m=e%$
++ $% m \in f([0;2\pi]) %$
+- $% m = f \left( \frac{\pi}{2} \right) %$
+- $% m=0  %$
+- $% m=1  %$
++ $% m=\frac{1}{e}  %$
+- $%   m \notin f([0;2\pi]) %$
+- $% m = f(0)  %$
+- $%  m=f(\pi) %$
++ $%  m = f \left( \frac{3\pi}{2} \right) %$
+- $% m=f(2 \pi) %$
+
+
+
+
+
+
 
 ==
 
