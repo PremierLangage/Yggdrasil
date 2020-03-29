@@ -8,11 +8,7 @@ extends=/model/AMC_TXT.pl
 questions==
 
 
-*Soit $%f~:~[0;1] \rightarrow [0;1]%$ une fonction continue. Que peut-on dire sur les points fixes de $%f%$ ? Indication : on pourra étudier la fonction $% g ~:~ x \mapsto f(x) - x %$.
-+ $%f%$ admet au moins un point fixe.
-- $%f%$ admet au plus un point fixe.
-- $%f%$ n'admet pas de point fixe.
-- On ne peut rien dire sur les points fixes de $%f%$.
+
 
 
 *Soit $% f ~:~[a;b] \rightarrow \mathbb{R}%$ une fonction continue. Quel énoncé mathématique correspond à la conclusion du théorème de Bolzano ?
@@ -94,6 +90,11 @@ questions==
 - $% [f(a);f(b)] = f([a;b])%$
 - On ne peut pas comparer $%[f(a);f(b)]%$ et $%f([a;b])%$.
 
+*Soit $%f~:~[0;1] \rightarrow [0;1]%$ une fonction continue. Que peut-on dire sur les points fixes de $%f%$ ? Indication : on pourra étudier la fonction $% g ~:~ x \mapsto f(x) - x %$.
++ $%f%$ admet au moins un point fixe.
+- $%f%$ admet au plus un point fixe.
+- $%f%$ n'admet pas de point fixe.
+- On ne peut rien dire sur les points fixes de $%f%$.
 
 
 ==
