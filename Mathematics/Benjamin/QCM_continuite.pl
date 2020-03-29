@@ -8,7 +8,7 @@ extends=/model/AMC_TXT.pl
 title=QCM : Fonctions continues
 questions==
 
-**Soit $%f~:~ [0;2 \pi] \rightarrow \mathbb{R}$ la fonction définie par $%f(x) = e^{\sin (x)}%$. Soit $M = \sup\limits_{x \in [0;2\pi]} f(x)%$. Quelles sont les affirmations vraies ? Attention, il peut y avoir plusieurs bonnes réponses.
+**Soit $%f~:~ [0;2 \pi] \rightarrow \mathbb{R}%$ la fonction définie par $%f(x) = e^{\sin (x)}%$. Soit $M = \sup\limits_{x \in [0;2\pi]} f(x)%$. Quelles sont les affirmations vraies ? Attention, il peut y avoir plusieurs bonnes réponses.
 + $%M=e%$
 + $% M \in f([0;2\pi]) %$
 + $% M = f \left( \frac{\pi}{2} \right) %$
