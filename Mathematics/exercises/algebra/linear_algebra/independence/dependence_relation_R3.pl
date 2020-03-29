@@ -19,11 +19,18 @@ Ces vecteurs sont liés. Déterminer une combinaison linéaire de ces vecteurs �
 
 
 evaluator ==
-var('u v w')
-ans = input.value
-rel = Poly(latex2sympy(ans), u, v, w)
-feedback = str(Matrix([rel.coeff_monomial(u),rel.coeff_monomial(v),rel.coeff_monomial(w)]).transpose()*A)
+def evalans(strans):
+    try:
+        ans = Poly(simplify(latex2sympy(strans)), u, v, w)
+    except:
+        return (-1,"NotExpr","Votre réponse n'est pas une combinaison linéaire de $u!$ $!v!$ et $!w!$.")
+    if not ans.is_linear():
+        return (-1,"NotLin","Votre réponse n'est pas une combinaison linéaire de $u!$ $!v!$ et $!w!$.")
+    return (100,"NotPoly",str(Matrix([ans.coeff_monomial(u),ans.coeff_monomial(v),ans.coeff_monomial(w)]).transpose()*A)
+)
 
-score = 100
+var('u v w')
+score, _, feedback = evalans(input.value)
+
 ==
 
