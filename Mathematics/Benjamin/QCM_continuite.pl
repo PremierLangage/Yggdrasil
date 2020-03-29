@@ -19,6 +19,7 @@ questions==
 * 12 $% 2^n %$ Ceci est une question 
 - ceci n'est pas une bonne réponse 
 + ça c'est une bonne réponse 
+- encore une mauvaise réponse
 
 ** Comment décomposer un entier en base 2 ?
 + On fait des divisions successives par deux, puis on lit en ordre inverse les restes obtenus.
@@ -49,6 +50,7 @@ questions==
 + 754
 
 ==
+
 
 
 
