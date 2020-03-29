@@ -1,6 +1,6 @@
 extends = /model/mathinput.pl
 
-title = Relation de dépendance entre vecteurs $! \mathbb{R}^4 !$
+title = Relation de dépendance entre vecteurs de $! \mathbb{R}^4 !$
 
 before ==
 keyboards_JSON['virtualKeyboards']="elementary"
