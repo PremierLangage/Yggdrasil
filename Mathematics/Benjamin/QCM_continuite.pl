@@ -84,7 +84,7 @@ questions==
 - On ne sait pas si c'est un intervalle.
 
 
-*Soit $%f ~:~ [a;b] \rightarrow \mathbb{R} %$. Quelle est l'affirmation exacte ?
+*Soit $%f ~:~ [a;b] \rightarrow \mathbb{R} %$ une fonction continue. Quelle est l'affirmation exacte ?
 + $% [f(a);f(b)] \subset f([a;b])%$
 - $% f([a;b]) \subset [f(a);f(b)]%$
 - $% [f(a);f(b)] = f([a;b])%$
@@ -98,6 +98,7 @@ questions==
 
 
 ==
+
 
 
 
