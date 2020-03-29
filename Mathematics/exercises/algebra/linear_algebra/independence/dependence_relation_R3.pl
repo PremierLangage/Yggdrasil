@@ -28,7 +28,7 @@ def evalans(strans):
         return (-1,"NotLin","Votre réponse n'est pas une combinaison linéaire de $!u!$ $!v!$ et $!w!$.")
     if Matrix([ans.coeff_monomial(u),ans.coeff_monomial(v),ans.coeff_monomial(w)]).norm() == 0.:
         return (-1,"AllCoeffZero","Tous les coefficients de cette combinaison linéaire sont nuls.")
-    if Matrix([ans.coeff_monomial(u),ans.coeff_monomial(v),ans.coeff_monomial(w)]).transpose()*A != Matrix([0,0,0,0]):
+    if (Matrix([ans.coeff_monomial(u),ans.coeff_monomial(v),ans.coeff_monomial(w)]).transpose()*A).norm() != 0.:
         return (0,"NotZero","Cette combinaison linéaire n'est pas égale au vecteur nul.")
     return (100,"","")
 
