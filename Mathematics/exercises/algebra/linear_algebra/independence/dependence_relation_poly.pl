@@ -4,7 +4,7 @@ title = Relation de dépendance entre polynômes
 
 before ==
 var('X')
-A = rand_int_matrix_givenrank(3, 4, 2, magnitude=1)
+A = rand_int_matrix_givenrank(3, 4, 2, magnitude=2)
 PX = latex(Poly(tuple(A.row(0)),X))
 QX = latex(Poly(tuple(A.row(1)),X))
 RX = latex(Poly(tuple(A.row(2)),X))
@@ -27,9 +27,9 @@ def evalans(strans):
         return (-1,"NotExpr","Votre réponse n'est pas une combinaison linéaire de $!P!$, $!Q!$ et $!R!$.")
     if not ans.is_linear:
         return (-1,"NotLin","Votre réponse n'est pas une combinaison linéaire de $!P!$, $!Q!$ et $!R!$.")
-    if Matrix([ans.coeff_monomial(u),ans.coeff_monomial(v),ans.coeff_monomial(w)]).norm() == 0.:
+    if Matrix([ans.coeff_monomial(P),ans.coeff_monomial(Q),ans.coeff_monomial(R)]).norm() == 0.:
         return (-1,"AllCoeffZero","Tous les coefficients de cette combinaison linéaire sont nuls.")
-    if (Matrix([ans.coeff_monomial(u),ans.coeff_monomial(v),ans.coeff_monomial(w)]).transpose()*A).norm() != 0.:
+    if (Matrix([ans.coeff_monomial(P),ans.coeff_monomial(Q),ans.coeff_monomial(R)]).transpose()*A).norm() != 0.:
         return (0,"NotZero","Cette combinaison linéaire n'est pas égale au polynôme nul.")
     return (100,"","")
 
