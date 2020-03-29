@@ -3,6 +3,8 @@ extends = /model/mathinput.pl
 title = Relation de dépendance entre vecteurs $! \mathbb{R}^4 !$
 
 before ==
+keyboards_JSON['virtualKeyboards']="elementary"
+input.config = keyboards_JSON
 A = rand_int_matrix_givenrank(3, 4, 2, magnitude=1)
 stru = str(tuple(A.row(0)))
 strv = str(tuple(A.row(1)))
