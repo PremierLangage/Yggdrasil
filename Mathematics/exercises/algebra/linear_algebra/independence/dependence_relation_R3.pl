@@ -14,7 +14,7 @@ strw = str(tuple(A.row(2)))
 text ==
 On se place dans le $!\mathbb{R}!$-espace vectoriel $! \mathbb{R}^4 !$. On considère les vecteurs :
 $$ u = {{stru}}, v = {{strv}} \text{ et } w = {{strw}}.$$
-Ces vecteurs sont liés. Déterminer une combinaison linéaire de ces vecteurs égale au vecteur nul.
+Ces vecteurs sont liés. Déterminer une combinaison linéaire (à coefficients non tous nuls) de ces vecteurs égale au vecteur nul.
 ==
 
 
@@ -26,8 +26,12 @@ def evalans(strans):
         return (-1,"NotExpr","Votre réponse n'est pas une combinaison linéaire de $u!$ $!v!$ et $!w!$.")
     if not ans.is_linear:
         return (-1,"NotLin","Votre réponse n'est pas une combinaison linéaire de $u!$ $!v!$ et $!w!$.")
-    return (100,"NotPoly",str(Matrix([ans.coeff_monomial(u),ans.coeff_monomial(v),ans.coeff_monomial(w)]).transpose()*A)
-)
+    if Matrix([ans.coeff_monomial(u),ans.coeff_monomial(v),ans.coeff_monomial(w)]).norm() == 0.:
+        return (-1,"AllCoeffZero","Tous les coefficients de cette combinaison linéaire sont nuls.")
+    if [ans.coeff_monomial(u),ans.coeff_monomial(v),ans.coeff_monomial(w)]).transpose()*A != Matrix([0,0,0,0]):
+        return (0,"NotZero","Cette combinaison linéaire n'est pas égale au vecteur nul.")
+    return (100,"NotPoly",str(Matrix([ans.coeff_monomial(u),ans.coeff_monomial(v),ans.coeff_monomial(w)]).transpose()*A))
+
 
 var('u v w')
 score, _, feedback = evalans(input.value)
