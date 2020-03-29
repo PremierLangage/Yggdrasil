@@ -79,3 +79,13 @@ pltest0==
 ==
 
 
+pltest1==
+>>> from rectest import test_recursion
+>>> test_recursion(lambda:nbpuissance(3,5))
+True
+==
+pltest2==
+>>> from rectest import test_recursion
+>>> test_recursion(lambda:nbpuissance(3,5))
+True
+==
