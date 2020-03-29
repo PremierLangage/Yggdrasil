@@ -8,6 +8,14 @@ extends=/model/AMC_TXT.pl
 title=QCM : Fonctions continues
 questions==
 
+*Soit $% f ~:~[a;b] \rightarrow \mathbb{R}$ une fonction continue. Quel énoncé mathématique correspond à la conclusion du théorème de Bolzano ?
++ $% \left( f(a)f(b) < 0 \right) \Rightarrow \left( \exists c \in ]a;b[ \text{ tel que } f(c) = 0 \right)%$
+-$% \left( f(a)f(b) < 0 \right) \Rightarrow \left( \forall c \in ]a;b[, ~f(c) = 0 \right)%$
+-$% \left( \forall c \in ]a;b[, ~f(c) = 0 \right) \Rightarrow  \left( f(a)f(b) < 0 \right)%$
+-$% \left( \exists c \in ]a;b[, ~f(c) = 0 \right) \Rightarrow  \left( f(a)f(b) < 0 \right)%$
+
+
+
 * 12 $% 2^n %$ Ceci est une question 
 - ceci n'est pas une bonne réponse 
 + ça c'est une bonne réponse 
