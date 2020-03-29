@@ -1,11 +1,11 @@
 # Copyright 2020 Nicolas Borie <nicolas.borie@u-pem.fr>
-author=Magdalena Kobylanski
+author=Benjamin Célariès
 
-title=Commandes Unix en terminal
+title=Fonctions continues
 tag=system|shell
 
 extends=/model/AMC_TXT.pl
-title=QCM $%\displaystyle{\lim_{n\to \infty}f(n)}%$
+title=QCM : Fonctions continues
 questions==
 
 * 12 $% 2^n %$ Ceci est une question 
