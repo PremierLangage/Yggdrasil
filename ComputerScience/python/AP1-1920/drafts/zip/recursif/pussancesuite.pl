@@ -50,17 +50,17 @@ ff=nbpuissancer(a,n)
 
 n=randint(4,12)
 a=randint(-5,10)
-ff=puissance(a,n)
+ff=nbpuissance(a,n)
 
 pltest4 = f"""
->>> puissance{a,n}=={ff}
+>>> nbpuissance{a,n}=={ff}
 True
 """
 n=randint(20,40)
-fs=puissancer(a,n)
+fs=nbpuissancer(a,n)
 
 pltest5 = f"""
->>> puissancer{a,n}=={fs}
+>>> nbpuissancer{a,n}=={fs}
 True
 """
 
@@ -77,4 +77,5 @@ pltest0==
 (64, 3)
 
 ==
+
 
