@@ -3,6 +3,9 @@ extends = /model/mathinput.pl
 title = Relation de dépendance entre polynômes
 
 before ==
+keyboards_JSON['virtualKeyboards']="elementary"
+input.config = keyboards_JSON
+
 var('X')
 A = rand_int_matrix_givenrank(3, 4, 2, magnitude=2)
 PX = latex(Poly(tuple(A.row(0)),X))
