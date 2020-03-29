@@ -8,11 +8,8 @@ extends=/model/AMC_TXT.pl
 title=QCM : Fonctions continues
 questions==
 
-*Que peut-on dire de l'image d'un intervalle ouvert (non vide) par une fonction continue ?
-+ C'est un intervalle dont on ne peut pas dire s'il est ouvert ou fermé
-- C'est un intervalle ouvert
-- C'est un intervalle fermé
-- On ne sait pas si c'est un intervalle.
+
+
 
 *Soit $% f ~:~[a;b] \rightarrow \mathbb{R}%$ une fonction continue. Quel énoncé mathématique correspond à la conclusion du théorème de Bolzano ?
 + $% \left( f(a)f(b) < 0 \right) \Rightarrow \left( \exists c \in ]a;b[ \text{ tel que } f(c) = 0 \right)%$
@@ -74,6 +71,17 @@ questions==
 - $% \forall y \in [f(a);f(b)], ~ \forall c \in [a;b], ~ y=f(c) %$
 - $% \exists c \in [a;b] \text{ tel que}, ~ \forall y \in [f(a);f(b)], ~ y=f(c) %$
 
+*Que peut-on dire de l'image d'un intervalle ouvert (non vide) par une fonction continue ?
++ C'est un intervalle dont on ne peut pas dire s'il est ouvert ou fermé.
+- C'est un intervalle ouvert.
+- C'est un intervalle fermé.
+- On ne sait pas si c'est un intervalle.
+
+*Que peut-on dire de l'image d'un intervalle fermé borné (non vide) par une fonction continue ?
+- C'est un intervalle dont on ne peut pas dire s'il est ouvert ou fermé.
+- C'est un intervalle ouvert.
++ C'est un intervalle fermé.
+- On ne sait pas si c'est un intervalle.
 
 
 
