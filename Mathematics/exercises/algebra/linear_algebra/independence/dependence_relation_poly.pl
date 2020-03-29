@@ -30,11 +30,11 @@ def evalans(strans):
     if Matrix([ans.coeff_monomial(u),ans.coeff_monomial(v),ans.coeff_monomial(w)]).norm() == 0.:
         return (-1,"AllCoeffZero","Tous les coefficients de cette combinaison linéaire sont nuls.")
     if (Matrix([ans.coeff_monomial(u),ans.coeff_monomial(v),ans.coeff_monomial(w)]).transpose()*A).norm() != 0.:
-        return (0,"NotZero","Cette combinaison linéaire n'est pas égale au polynôôme nul.")
+        return (0,"NotZero","Cette combinaison linéaire n'est pas égale au polynôme nul.")
     return (100,"","")
 
 
-var('u v w')
+var('P Q R')
 score, _, feedback = evalans(input.value)
 
 ==
