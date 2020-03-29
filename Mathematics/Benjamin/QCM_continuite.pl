@@ -5,7 +5,6 @@ title=Fonctions continues
 tag=system|shell
 
 extends=/model/AMC_TXT.pl
-title=QCM : Fonctions continues
 questions==
 
 
@@ -88,6 +87,7 @@ questions==
 
 
 ==
+
 
 
 
