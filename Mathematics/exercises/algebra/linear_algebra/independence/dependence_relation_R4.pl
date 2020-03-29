@@ -14,7 +14,9 @@ strw = str(tuple(A.row(2)))
 text ==
 On se place dans le $!\mathbb{R}!$-espace vectoriel $! \mathbb{R}^4 !$. On considère les vecteurs :
 $$ u = {{stru}}, v = {{strv}} \text{ et } w = {{strw}}.$$
-Ces vecteurs sont liés. Déterminer une combinaison linéaire (à coefficients non tous nuls) de ces vecteurs égale au vecteur nul.
+Ces vecteurs sont liés. Déterminer une combinaison linéaire (à coefficients non tous nuls) de ces vecteurs qui est égale au vecteur nul.
+
+*Note : la réponse attendue est du type $! 2u -v +3w !$.*
 ==
 
 
