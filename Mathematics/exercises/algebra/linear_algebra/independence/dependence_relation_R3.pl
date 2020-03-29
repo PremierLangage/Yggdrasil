@@ -24,7 +24,7 @@ def evalans(strans):
         ans = Poly(simplify(latex2sympy(strans)), u, v, w)
     except:
         return (-1,"NotExpr","Votre réponse n'est pas une combinaison linéaire de $u!$ $!v!$ et $!w!$.")
-    if not ans.is_linear():
+    if not ans.is_linear:
         return (-1,"NotLin","Votre réponse n'est pas une combinaison linéaire de $u!$ $!v!$ et $!w!$.")
     return (100,"NotPoly",str(Matrix([ans.coeff_monomial(u),ans.coeff_monomial(v),ans.coeff_monomial(w)]).transpose()*A)
 )
