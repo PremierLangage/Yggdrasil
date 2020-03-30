@@ -8,7 +8,7 @@ jxg =: MathDrawer
 
 jxg.attributes % {"showNavigation": false, "boundingbox": [-5, 5, 5, -5]}
 
-jxg.css =myclass
+jxg.css = myclass
 
 
 before ==
@@ -30,7 +30,7 @@ evaluator ==
 
 extracss ==
 <style>
-.jsxgraph-component.myclass {
+#graph_1.jsxgraph-component {
     max-width: 300px;
     width: 90vw;
     max-height: 300px;
