@@ -28,17 +28,15 @@ feedback = str(Matrix(matrix.getmatrix()))
 
 extracss ==
 <style>
-    .matrix-input {
-        border : none;
-        border-radius:4px;
-        text-align: center;
-        font-style: italic;
-        font-size: 12pt;
-        color:black;
-        background-color: Red !important;
-        z-index:10;
+.matrix-input {
+    border : none;
+    border-radius:4px;
+    text-align: center;
+    font-style: italic;
+    font-size: 12pt;
+    color:black;
+    z-index:10;
 
-    }
-
+}
 </style>
 ==
