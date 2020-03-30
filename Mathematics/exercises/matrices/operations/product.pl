@@ -32,7 +32,7 @@ extracss ==
     border : none;
     border-radius: 4px;
     text-align: center;
-    font-style: normal ;
+    font-style: normal !important;
     font-size: 12pt;
     color:black;
     background-color: transparent !important;
@@ -41,8 +41,8 @@ extracss ==
 .matrix-cell {
     margin:0;
     position:relative;
-    height: 2em;
-    width: 2em;
+    height: 2em !important;
+    width: 2em !important;
 }
 </style>
 ==
