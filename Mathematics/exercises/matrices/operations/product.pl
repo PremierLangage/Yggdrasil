@@ -38,11 +38,5 @@ extracss ==
     background-color: transparent !important;
     z-index:10;
 }
-.matrix-cell {
-    margin:0;
-    position:relative;
-    height: 1em !important;
-    width: 2em !important;
-}
 </style>
 ==
