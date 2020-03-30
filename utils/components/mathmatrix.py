@@ -16,3 +16,10 @@ class CustomMathMatrix(Component):
         if isinstance(M, Matrix):
             for i in range(len(M.col(0))):
                 self.matrix.append([{'value': str(value)} for value in M.row(i)])
+
+    def getmatrix(self):
+        """
+        Set a matrix.
+        """
+        return [[item['value'] for item in row] for row in self.matrix]
+        
