@@ -28,7 +28,17 @@ evaluator ==
 
 ==
 
-
+extracss ==
+<style>
+.jsxgraph-component.myclass {
+    max-width: 300px;
+    width: 90vw;
+    max-height: 300px;
+    height: 90vw;
+    margin: 0 auto;
+}
+</style>
+==
 
 
 
