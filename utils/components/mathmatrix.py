@@ -1,5 +1,6 @@
 from components import Component
 from sympy import Matrix
+
 class CustomMathMatrix(Component):
 
     def __init__(self, **kwargs):
