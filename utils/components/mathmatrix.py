@@ -14,5 +14,5 @@ class CustomMathMatrix(Component):
         """
         self.matrix = []
         if isinstance(M, Matrix):
-            for row in M.row:
-                self.matrix.append([{'value': value} for value in row])
+            for i in range(len(M.col(0)):
+                self.matrix.append([{'value': value} for value in M.row(i)])
