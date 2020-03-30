@@ -20,3 +20,8 @@ text==
 form==
 {{ matrix|component}}
 ==
+
+evaluator ==
+score = 100
+feedback = str(matrix.getmatrix())
+==
