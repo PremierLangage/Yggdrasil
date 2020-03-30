@@ -28,12 +28,6 @@ feedback = str(Matrix(matrix.getmatrix()))
 
 extracss ==
 <style>
-.math-matrix-component {
-    display:inline-block;
-    position: relative;
-    margin: 5px;
-    vertical-align: middle;
-
     .matrix-input {
         border : none;
         border-radius:4px;
@@ -46,27 +40,5 @@ extracss ==
 
     }
 
-    .matrix-container {
-        display: inline-block;
-        overflow: hidden;
-    }
-
-    .matrix-table {
-        table-layout:fixed;
-        width: auto;
-    }
-
-    .matrix-cell {
-        margin:0;
-        position:relative;
-        height: 2em;
-        width: 3em;
-    }
-
-
-    mwlResizable {
-        box-sizing: border-box; // required for the enableGhostResize option to work
-    }
-}
 </style>
 ==
