@@ -9,4 +9,5 @@ extends = basic.pl
 @ /utils/plrandom.py
 @ /utils/keyboards.JSON [keyboards.JSON]
 @ /utils/components/jsxgraph.py [customjsxgraph.py]
+@ /utils/components/mathmatrix.py [custommathmatrix.py]
 
