@@ -30,7 +30,7 @@ evaluator ==
 
 extracss ==
 <style>
-.myclass {
+.jsxgraph-component {
     max-width: 200px;
     width: 90vw;
     max-height: 200px;
