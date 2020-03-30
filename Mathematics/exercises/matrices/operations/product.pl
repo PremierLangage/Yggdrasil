@@ -41,7 +41,7 @@ extracss ==
 .matrix-cell {
     margin:0;
     position:relative;
-    height: 2em !important;
+    height: 1em !important;
     width: 2em !important;
 }
 </style>
