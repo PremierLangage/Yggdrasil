@@ -41,7 +41,7 @@ extracss ==
         font-style: italic;
         font-size: 12pt;
         color:black;
-        background-color: Red;
+        background-color: Red !important;
         z-index:10;
 
     }
