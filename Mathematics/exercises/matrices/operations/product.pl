@@ -37,7 +37,6 @@ extracss ==
     color:black;
     background-color: transparent !important;
     z-index:10;
-
 }
 </style>
 ==
