@@ -30,7 +30,7 @@ extracss ==
 <style>
 .matrix-input {
     border : none;
-    border-radius:2px;
+    border-radius:2px !important;
     text-align: center;
     font-style: normal !important;
     font-size: 12pt;
