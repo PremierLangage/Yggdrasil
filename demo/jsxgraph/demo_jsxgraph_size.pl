@@ -31,12 +31,13 @@ evaluator ==
 extracss ==
 <style>
 .myclass {
-    max-width: 200px;
-    width: 90vw;
-    max-height: 200px;
-    height: 90vw;
-    margin: 0 auto;
+    max-width: 200px !important;
+    width: 90vw  !important;
+    max-height: 200px !important;
+    height: 90vw !important;
+    margin: 0 auto !important;
 }
 </style>
 ==
+
 
