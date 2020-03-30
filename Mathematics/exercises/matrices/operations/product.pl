@@ -42,7 +42,7 @@ extracss ==
     margin:0;
     position:relative;
     height: 2em;
-    width: 3em;
+    width: 2em;
 }
 </style>
 ==
