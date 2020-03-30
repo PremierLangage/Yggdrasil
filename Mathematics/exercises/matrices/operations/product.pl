@@ -6,10 +6,8 @@ matrix.resizable % true
 
 
 before==
-matrix.matrix = [
-    [{ "value": 0, }, { "value": 0 },],
-    [{ "value": 0 }, { "value": 0, },]
-]
+M = Matrix([[1,2],[4,5]])
+matrix.setmatrix(M)
 ==
 
 title==
