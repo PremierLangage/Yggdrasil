@@ -35,6 +35,7 @@ extracss ==
     font-style: italic;
     font-size: 12pt;
     color:black;
+    background-color: transparent !important;
     z-index:10;
 
 }
