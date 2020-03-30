@@ -32,7 +32,7 @@ extracss ==
     border : none;
     border-radius:4px;
     text-align: center;
-    font-style: normal;
+    font-style: normal !important;
     font-size: 12pt;
     color:black;
     background-color: transparent !important;
