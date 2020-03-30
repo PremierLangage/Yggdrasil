@@ -23,5 +23,5 @@ form==
 
 evaluator ==
 score = 100
-feedback = str(matrix.getmatrix())
+feedback = str(Matrix(matrix.getmatrix()))
 ==
