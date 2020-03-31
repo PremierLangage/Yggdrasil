@@ -6,7 +6,9 @@ mat.resizable % true
 
 
 form==
+<div style="text-align:center">
 {{ mat|component }}
+</div>
 ==
 
 settings.feedback = rightwrong
@@ -27,3 +29,4 @@ extracss ==
 }
 </style>
 ==
+
