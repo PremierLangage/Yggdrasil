@@ -5,14 +5,12 @@ title = Matrice définie par l'expression des coefficients
 before ==
 mat.setmatrix([[0,0],[0,0]])
 var('i j')
-def f(x, y):
-    a=randint(-2,2,[0])
-    b=randint(-2,2,[0])
-    return x+1
+a=randint(-2,2,[0])
+b=randint(-2,2,[0])
 
-expr = simplify(f(i, j))
+expr = simplify(a*i+b*j)
 [n,p]=list_randint_norep(2,2,3)
-Msol = Matrix(n, p, f)
+Msol = Matrix(n, p, lambda i,j : a*(i+1)+b*(j+1))
 ==
 
 text ==
