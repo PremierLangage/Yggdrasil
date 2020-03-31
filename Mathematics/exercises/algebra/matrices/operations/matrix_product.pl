@@ -15,8 +15,7 @@ Msol = A*B
 ==
 
 text==
-$$ A = \left( {{A.latex}}\right) $$ 
-$$ B = \left({{B.latex}}\right) $$ 
+$$ A = \left( {{A.latex}}\right) \text{ et } B = \left({{B.latex}}\right) $$ 
 Calculer $! A B !$.
 ==
 
