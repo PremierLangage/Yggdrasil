@@ -5,6 +5,7 @@ Produit de matrices
 ==
 
 before==
+mat.setmatrix([[0,0],[0,0]])
 n = 2
 m = 2
 p = 2
