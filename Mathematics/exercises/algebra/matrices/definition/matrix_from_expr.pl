@@ -8,7 +8,7 @@ var('i j')
 def f(x, y):
     a=randint(-2,2,[0])
     b=randint(-2,2,[0])
-    return a*(x+1)+ b*(y+1)
+    return a*x + b*y
 
 expr = simplify(f(i, j))
 [n,p]=list_randint_norep(2,2,3)
