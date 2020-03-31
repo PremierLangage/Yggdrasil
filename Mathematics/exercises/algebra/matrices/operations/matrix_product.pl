@@ -17,12 +17,14 @@ Msol = A*B
 text==
 $$ A = {{A.latex}} $$ 
 $$ A = {{A.latex}} $$ 
-==
-
-text ==
 Calculer $! A B !$.
 ==
 
+
 evaluator ==
 score, _, feedback = eval_matrix(mat.getmatrix(), Msol)
+==
+
+solution ==
+La solution est $$\left( {{Msol.latex}} \right).$$
 ==
