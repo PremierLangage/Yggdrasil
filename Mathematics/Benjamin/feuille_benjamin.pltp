@@ -1,8 +1,11 @@
 
-introduction=Ceci est un test de suivi portant sur les fonctions continues
+introduction=Vous trouverez ici trois tests de suivi correspondant aux vidéos portant sur les fonctions continues.
 title=Fonctions continues
-@QCM_continuite.pl
+@QCM_continuite_Bolzano.pl
+@QCM_continuite_Heine.pl
+@QCM_continuite_TVI.pl
 # on peut rajouter d'autres exercices 
+
 
 
 
