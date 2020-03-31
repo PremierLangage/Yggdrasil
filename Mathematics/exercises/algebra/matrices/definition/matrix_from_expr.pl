@@ -12,7 +12,7 @@ def f(x, y):
 
 expr = simplify(f(i, j))
 [n,p]=list_randint_norep(2,2,3)
-Msol = Matrix(n, p, f)
+Msol = Matrix(n, p, lambda i,j : i)
 ==
 
 text ==
