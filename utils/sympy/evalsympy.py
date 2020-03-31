@@ -406,7 +406,7 @@ def eval_matrix(matans, sol):
         return (0, "WrongSize", "La matrice n'a pas la bonne taille.")
     if not ans.equals(sol):
         return (0, "NotEqual", "")
-   return (100, "Success", "")
+    return (100, "Success", "")
 
 #############
 # Extended reals    
