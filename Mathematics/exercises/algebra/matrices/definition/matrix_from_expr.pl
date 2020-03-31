@@ -11,7 +11,7 @@ def f(x, y):
 expr = f(i, j)
 n = 3
 p = 2
-sol = Matrix(n, p, f )
+Msol = Matrix(n, p, f )
 ==
 
 text ==
