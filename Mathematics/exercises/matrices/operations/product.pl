@@ -15,6 +15,7 @@ Math Matrix Component
 ==
 
 text==
+$$ A = {{M.tex}} $$ 
 ==
 
 form==
