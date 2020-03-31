@@ -3,7 +3,9 @@ extends = /model/mathmatrix.pl
 title = Matrice définie par l'expression des coefficients
 
 before ==
-sol = Matrix(2, 3, lambda i,j:  i+j)
+var('i j')
+expr = i + j
+sol = Matrix(2, 3, lambda i,j: expr)
 ==
 
 text ==
