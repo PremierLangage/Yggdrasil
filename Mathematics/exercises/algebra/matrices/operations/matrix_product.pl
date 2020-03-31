@@ -5,13 +5,17 @@ Produit de matrices
 ==
 
 before==
-A = rand_int_matrix_fullrank(nbeq, n, 3, excluded_values=[0])
-
-matrix.setmatrix(M)
+n = 2
+m = 2
+p = 2
+A = rand_int_matrix(n, m, 2)
+B = rand_int_matrix(m, p, 2)
+Msol = A*B
 ==
 
 text==
-$$ A = {{M.tex}} $$ 
+$$ A = {{A.latex}} $$ 
+$$ A = {{A.latex}} $$ 
 ==
 
 text ==
