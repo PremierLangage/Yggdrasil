@@ -1,5 +1,7 @@
 extends = /model/mathmatrix.pl
 
+title = Matrice définie par l'expression des coefficients
+
 before ==
 Matrix(2, 3, lambda i,j:  i+j)
 ==
