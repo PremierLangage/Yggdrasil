@@ -10,7 +10,7 @@ def f(x, y):
     b=randint(-2,2,[0])
     return a*(x+1)+ b*(y+1)
 
-expr = f(i-1, j-1)
+expr = simplify(f(i-1, j-1))
 [n,p]=list_randint_norep(2,2,3)
 Msol = Matrix(n, p, f )
 ==
