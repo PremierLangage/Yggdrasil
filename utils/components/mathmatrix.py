@@ -16,7 +16,7 @@ class CustomMathMatrix(Component):
         if isinstance(M, list):
             for row in M:
                 self.matrix.append([{'value': str(value)} for value in row])
-        if isinstance(M, Matrix):
+        elif isinstance(M, Matrix):
             for i in range(len(M.col(0))):
                 self.matrix.append([{'value': str(value)} for value in M.row(i)])
 
