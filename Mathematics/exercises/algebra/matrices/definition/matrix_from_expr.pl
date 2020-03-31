@@ -6,11 +6,12 @@ before ==
 mat.setmatrix([[0,0],[0,0]])
 var('i j')
 def f(x, y):
-    return x+1 + y+1
+    a=randint(-2,2,[0])
+    b=randint(-2,2,[0])
+    return a*(x+1)+ b*(y+1)
 
 expr = f(i-1, j-1)
-n = 3
-p = 2
+[n,p]=list_randint(2,3)
 Msol = Matrix(n, p, f )
 ==
 
