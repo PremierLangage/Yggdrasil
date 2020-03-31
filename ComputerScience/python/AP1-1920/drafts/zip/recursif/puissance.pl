@@ -58,7 +58,7 @@ def nbpuissancer(a,n):
     if n%2==1:
         p*=a
     return (p,r+1)
-    
+
 
 n=randint(4,12)
 a=randint(-5,10)
@@ -75,6 +75,26 @@ pltest5 = f"""
 >>> puissancer{a,n}=={fs}
 True
 """
+n=randint(4,12)
+a=randint(-5,10)
+ff=nbpuissancer(a,n)
+
+n=randint(4,12)
+a=randint(-5,10)
+ff=nbpuissance(a,n)
+
+pltest8 = f"""
+>>> nbpuissance{a,n}=={ff}
+True
+"""
+n=randint(20,40)
+fs=nbpuissancer(a,n)
+
+pltest9 = f"""
+>>> nbpuissancer{a,n}=={fs}
+True
+"""
+
 after=before
 ==
 
@@ -100,6 +120,17 @@ pltest3==
 >>> puissance(2,15)
 32768
 ==
+pltest6==
+>>> from rectest import test_recursion
+>>> test_recursion(lambda:nbpuissance(3,5))
+True
+==
+pltest7==
+>>> from rectest import test_recursion
+>>> test_recursion(lambda:nbpuissancef(3,5))
+True
+==
+
 
 
 
