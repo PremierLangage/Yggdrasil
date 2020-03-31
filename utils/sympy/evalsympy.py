@@ -394,19 +394,19 @@ def eval_poly(strans,sol,x,domain="RR",imaginary_unit="i",form="",authorized_fun
 
 # Matrices
 
-def eval_matrix(matans,sol):
+def eval_matrix(matans, sol):
     """
     Evaluate an answer of type matrix.
     """
     try:
         ans = Matrix(matans)
     except:
-        return (-1,"NotMat","Votre réponse n'est pas une matrice valide.")
+        return (-1, "NotMat", "Votre réponse n'est pas une matrice valide.")
     if ans.shape != sol.shape:
-        return (0,"WrongSize","La matrice n'a pas la bonne taille.")
+        return (0, "WrongSize", "La matrice n'a pas la bonne taille.")
     if not ans.equals(sol):
-        return (0,"NotEqual","")
-   return (100,"Success","")
+        return (0, "NotEqual", "")
+   return (100, "Success", "")
 
 #############
 # Extended reals    
