@@ -3,6 +3,7 @@ extends = /model/mathmatrix.pl
 title = Matrice définie par l'expression des coefficients
 
 before ==
+mat.setmatrix([[0]])
 var('i j')
 def f(x, y):
     return x + y
