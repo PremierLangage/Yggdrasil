@@ -5,7 +5,8 @@ Produit de matrices
 ==
 
 before==
-M = Matrix([[1,2],[4,5]])
+A = rand_int_matrix_fullrank(nbeq, n, 3, excluded_values=[0])
+
 matrix.setmatrix(M)
 ==
 
