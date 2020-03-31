@@ -6,4 +6,6 @@ coefficients sont définis par l'expression $! a_{i,j} = {{expr.tex}} !$.
 Déterminer les coefficients de la matrice $!A!$.
 ==
 
-
+evaluator ==
+score, _, feedback = eval_matrix(Matrix(mat.getmatrix()), Msol)
+==
