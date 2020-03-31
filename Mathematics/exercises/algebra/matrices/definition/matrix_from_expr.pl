@@ -23,3 +23,7 @@ Déterminer les coefficients de la matrice $!A!$.
 evaluator ==
 score, _, feedback = eval_matrix(mat.getmatrix(), Msol)
 ==
+
+solution ==
+La solution est $$ {{Msol.latex}}.$$
+==
