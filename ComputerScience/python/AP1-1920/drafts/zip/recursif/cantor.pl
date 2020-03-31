@@ -6,6 +6,7 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 title = Numérotation du plan
 
 text==
+
 On numérote les points du quart de plan $%\mathbbN \times %$ par les entiers naturels suivant l'ordre des diagonales montantes:<br>
   <br>
 9   <br>
@@ -31,7 +32,7 @@ def numero(x,y):
 
 import random
 x=randint(4,12)
-y=randint(5,100)
+y=randint(5,20)
 ff=numro(x,y)
 
 
