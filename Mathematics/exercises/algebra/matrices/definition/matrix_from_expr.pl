@@ -7,5 +7,5 @@ Déterminer les coefficients de la matrice $!A!$.
 ==
 
 evaluator ==
-score, _, feedback = eval_matrix(Matrix(mat.getmatrix()), Msol)
+score, _, feedback = eval_matrix(mat.getmatrix(), Msol)
 ==
