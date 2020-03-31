@@ -8,9 +8,9 @@ var('i j')
 def f(x, y):
     a=randint(-2,2,[0])
     b=randint(-2,2,[0])
-    return a*(x)+ b*(y)
+    return a*(x+1)+ b*(y+1)
 
-expr = simplify(f(i-1, j-1))
+expr = simplify(f(i, j))
 [n,p]=list_randint_norep(2,2,3)
 Msol = Matrix(n, p, f)
 ==
