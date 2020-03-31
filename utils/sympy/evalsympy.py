@@ -399,7 +399,7 @@ def eval_matrix(matans, sol):
     Evaluate an answer of type matrix.
     """
     try:
-        ans = Matrix(matans)
+        ans = sp.Matrix(matans)
     except:
         return (-1, "NotMat", "Votre réponse n'est pas une matrice valide.")
     if ans.shape != sol.shape:
