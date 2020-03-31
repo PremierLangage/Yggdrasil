@@ -11,7 +11,7 @@ def f(x, y):
     return a*(x+1)+ b*(y+1)
 
 expr = f(i-1, j-1)
-[n,p]=list_randint(2,3)
+[n,p]=list_randint(2,2,3)
 Msol = Matrix(n, p, f )
 ==
 
