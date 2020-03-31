@@ -24,5 +24,5 @@ score, _, feedback = eval_matrix(mat.getmatrix(), Msol)
 ==
 
 solution ==
-La solution est $$ {{Msol.latex}}.$$
+La solution est $$\left( {{Msol.latex}} \right).$$
 ==
