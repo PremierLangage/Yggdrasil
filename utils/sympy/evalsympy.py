@@ -392,6 +392,22 @@ def eval_poly(strans,sol,x,domain="RR",imaginary_unit="i",form="",authorized_fun
             return (-1,"NotFactorized","Votre réponse n'est pas un polynôme factorisé.")
     return (100,"Success","")
 
+# Matrices
+
+def eval_matrix(matans,sol):
+    """
+    Evaluate an answer of type matrix.
+    """
+    try:
+        ans = Matrix(matans)
+    except:
+        return (-1,"NotMat","Votre réponse n'est pas une matrice valide.")
+    if ans.shape != sol.shape:
+        return (0,"WrongSize","La matrice n'a pas la bonne taille.")
+    if not ans.equals(sol):
+        return (0,"NotEqual","")
+   return (100,"Success","")
+
 #############
 # Extended reals    
 #############
@@ -417,6 +433,7 @@ def ans_antiderivative(strans,sol,x,local_dict={}):
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
+
 
 
 
