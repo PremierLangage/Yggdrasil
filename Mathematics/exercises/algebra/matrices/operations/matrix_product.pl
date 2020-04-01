@@ -5,16 +5,23 @@ Produit de matrices
 ==
 
 before==
-mat.setmatrix([[0,0],[0,0]])
-n = 2
-m = 2
-p = 2
-A = rand_int_matrix(n, m, 2)
+if isinstance(param['size'], list):
+    n, m, p = randitem(param['size'])
+else:
+    n, m, p = param['size']
+    
+coeffbound = param['coeffbound']
+
+min = min([n, m, p])
+mat.setmatrix([min * [0] for _ in range(min)])
+
+A = rand_int_matrix(n, m, coeffbound)
 B = rand_int_matrix(m, p, 2)
 Msol = A*B
 ==
 
 text==
+Soit les matrices
 $$ A = \left( {{A.latex}}\right) \text{ et } B = \left({{B.latex}}\right) $$ 
 Calculer $! A B !$.
 ==
