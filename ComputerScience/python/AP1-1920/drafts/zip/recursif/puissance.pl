@@ -14,12 +14,12 @@ En utilisant la définition <br>
 $%a^0=1%$<br>
 $%a^n=(a^\frac{n}{2})^2%$ si n est pair<br>
 $%a^n=a*(a^\frac{n}{2})^2%$ si n est impair<br>
-écrire une fonction recursive puissancer(a,n) qui renvoie la valeur $%a^n  \binom{1 }{7}%$
+écrire une fonction recursive ``puissancer``(a,n) qui renvoie la valeur $%a^n  \binom{1 }{7}%$
 En transformant la fonction `puissance(a,n)`,<br>
-écrire une fonction recursive nbpuissance(a,n) qui renvoie un couple formé de 
+écrire une fonction recursive ``nbpuissance(a,n)`` qui renvoie un couple formé de 
 la valeur $%a^n%$ et du nombre d'appels récursifs.
 En transformant la fonction `puissancer(a,n)`,<br>
-écrire une fonction recursive nbpuissancer(a,n) qui renvoie un couple formé de 
+écrire une fonction recursive n``bpuissancer(a,n)`` qui renvoie un couple formé de 
 la valeur $%a^n%$ et du nombre d'appels récursifs.==
 ==
 before==
