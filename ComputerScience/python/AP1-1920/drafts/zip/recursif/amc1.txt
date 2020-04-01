@@ -9,12 +9,14 @@ Latex:1
 - en gros $%2^{100}%$
 - en gros $%2^{200}%$
 
-**Quelles affirmations sont exactespour n suffisament grand
+**Quelles affirmations sont exactes pour n suffisament grand
 +$%n^8 \gt n^4%$
 -$%\lg(n)^8 \gt n%$
 -$%\sqrt{n} \lt \lg(n)%$
 
 *On dispose d'une fonction qui affiche toutes les permutations de l'ensemble des entiers de & à $%n%$.
-Quelle est au minimum sa complexité,
+Quelle est au minimum sa complexité?
 +$%\mathcal O(n!)%$
--$%\mathcal {O}n^2%$
+-$%\mathcal {O}(n^2)%$
+-$%\mathcal {O}(n)%$
+
