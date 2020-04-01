@@ -16,5 +16,5 @@ Latex:1
 
 *On dispose d'une fonction qui affiche toutes les permutations de l'ensemble des entiers de & à $%n%$.
 Quelle est au minimum sa complexité,
-+$%\mathcal(O)(n!)%$
--$%n^2%$
++$%\mathcal O(n!)%$
+-$%\mathcal {O}n^2%$
