@@ -1,8 +1,13 @@
 
-introduction=voilà mon petit texte.
-title=QCM
+introduction==
+
+Voilà mon petit texte d'introductioin à la feuille de Travaux pratiques.
+
+== 
+title= QCM (je change le titre pour que cela flash dans l'exemple)
 @Exemple_MCQ.pl
 # on peut rajouter d'autres exercices 
+#@ un autre exo .pl 
 
 
 
