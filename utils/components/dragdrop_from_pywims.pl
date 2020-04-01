@@ -20,7 +20,7 @@ qui_vaut_tiers = r'Poser ici une expression égale à $1/3$'
 # fabrication du groupe
 mygroup = CustomDragDropGroup()
 # les labels
-mygroup.set_label({'integrale': integrale, 'fraction': fraction, 'limite':limite, 'determinant': determinant'})
+mygroup.set_label({'integrale': integrale, 'fraction': fraction, 'limite':limite, 'determinant': determinant})
 # les drops
 mygroup.set_drop({'1' : qui_vaut_1, 'tiers': qui_vaut_tiers})
 # les liens corrects
