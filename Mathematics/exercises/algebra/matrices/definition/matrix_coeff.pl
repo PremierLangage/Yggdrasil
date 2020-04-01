@@ -21,7 +21,7 @@ for k in range(nbstep):
 ==
 
 textstep ==
-**Question {{step}}.** On considère la matrice.
+**Question {{step + 1}}.** On considère la matrice.
 $$ A = \left( {{matrices[step].latex}} \right).$$
 Que vaut $! {{ coeff[step] }} !$ ?
 ==
