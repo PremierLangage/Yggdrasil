@@ -31,13 +31,13 @@ mygroup.set_match_by_name("tiers", "integrale")
 mygroup.set_match_by_name('1', ["limite","determinant"])
 
 # Ce qui suit sert uniquement à faire voyager le groupe dans le grader
-q1 = mygroup.drops['1']
 qtiers = mygroup.drops["tiers"]
 rintegrale = mygroup.labels["integrale"]
 rlimite = mygroup.labels["limite"]
 rfraction = mygroup.labels["fraction"]
 rdeterminant = mygroup.labels["determinant"]
 c2 = mygroup.drops['2']
+q1 = mygroup.drops['1']
 
 match = mygroup._matches
 debug = str(rintegrale)
