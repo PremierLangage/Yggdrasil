@@ -24,12 +24,12 @@ def binome(n,p):
         return 1
     x=  binome(n-1,p)+binome(n-1,p)
     return x
-def binomedico(n,p,dic):
+def binomedico(n,p,dic={}):
     if (n,p) in dic:
         return dic[(x,y)]
     if p==0 or p==n:
         return 1
-    x=  binomedico(n-1,p)+binomedico(n-1,p)
+    x=  binomedico(n-1,p,dic)+binomedico(n-1,p,dic)
     dic[(n,p)]=x
     return x
 
@@ -42,7 +42,6 @@ pltest0==
 ==
 
 pltest1==
->>> dic={}
 >>> binomedico(41,23,dic)
 4
 ==
