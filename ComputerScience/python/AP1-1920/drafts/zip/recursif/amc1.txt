@@ -7,9 +7,9 @@ Latex:1
 *une année de 365 jours , c'est combien de millisecondes
 + en gros $%2^{35}%$
 - en gros $%2^{100}%$
-- en gros $2^{200}%%$
+- en gros $%2^{200}%$
 
 **Quelles affirmations sont exactespour n suffisament grand
-+$%n8 \lt n^4%$
--$%log(n)^8 \gt n%$
--$%\sqrt{n}%$
++$%n^8 \gt n^4%$
+-$%\lg(n)^8 \gt n%$
+-$%\^sqrt{n}%$
