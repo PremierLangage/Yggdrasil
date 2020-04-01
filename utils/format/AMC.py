@@ -43,7 +43,7 @@ def parse_AMC_TXT(txt):
             if question_type == "Radio":
                 if len(index) == 0:
                     import sys
-                    print(" pas de reponse correcte dans une question Radio", sys.err)
+                    print(" pas de reponse correcte dans une question Radio", sys.stderr)
                 index = index[0]
             questions.append({'type': question_type, 
             'text': statement, 
