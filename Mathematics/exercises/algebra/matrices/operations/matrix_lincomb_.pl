@@ -14,15 +14,18 @@ coeffbound = param['coeffbound']
 
 mat.setmatrix([m * [0] for _ in range(n)])
 
-A = rand_int_matrix(n, m, coeffbound)
-B = rand_int_matrix(m, p, coeffbound)
-Msol = A*B
+a,b = list_randint_norep(2,-2,2,[0])
+var('A B')
+expr = simplify(a*A + b*B)
+MA = rand_int_matrix(n, m, coeffbound)
+MB = rand_int_matrix(m, p, coeffbound)
+Msol = a*MA+b*MB
 ==
 
 text==
 Soit les matrices
 $$ A = \left( {{A.latex}}\right) \text{ et } B = \left({{B.latex}}\right) $$ 
-Calculer $! A B !$.
+Calculer $!{{expr}} !$.
 ==
 
 
