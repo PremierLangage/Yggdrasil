@@ -43,7 +43,6 @@ debug = str(rintegrale)
 ==
 
 text==
-{{ rintegrale | component }}
 Question : {{ debug }}
 ==
 
