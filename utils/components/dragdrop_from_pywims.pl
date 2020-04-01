@@ -35,11 +35,11 @@ rlimite = mygroup.labels["limite"]
 rfraction = mygroup.labels["fraction"]
 rdeterminant = mygroup.labels["determinant"]
 match = mygroup._matches
-debug = str(q1)
+debug = str(rintegrale)
 ==
 
 text==
-{{ qui_vaut_1 }}
+{{ integrale }}
 Question : {{ debug }}
 ==
 
