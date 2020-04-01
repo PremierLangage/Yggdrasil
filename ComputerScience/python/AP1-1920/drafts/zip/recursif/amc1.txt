@@ -4,7 +4,8 @@ Latex:1
 +$2^{10}$
 -5
 -2^4
-*unr année de 365 jours , c'est combien de millisecondes
+*une année de 365 jours , c'est combien de millisecondes
 + en gros $2^35$
 - en gros $2^100$
--
+- en gros $2^200$
+
