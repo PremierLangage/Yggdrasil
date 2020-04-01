@@ -61,7 +61,7 @@ mygroup.labels = {'lt':a, 'gt': b}
 mygroup.drops = {'0' : c0, '1': c1, '2': c2, '3': c3}
 mygroup._matches = match
 
-grade=mygroup.eval(grading_function = right_minus_wrong) # Ici ça bugge, mais c'est normal parce que le composant ne traverse pas
+grade=mygroup.eval(grading_function = right_minus_wrong)
 ==
 
 extracss == #|html| 
@@ -72,6 +72,7 @@ extracss == #|html|
         }
 </style>
 ==
+
 
 
 
