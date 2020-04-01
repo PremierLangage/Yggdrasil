@@ -29,7 +29,7 @@ mygroup.set_match_by_name("tiers", "integrale")
 mygroup.set_match_by_name("1", ["limite","determinant"])
 
 # Ce qui suit sert uniquement à faire voyager le groupe dans le grader
-q1 = mygroup.drops['1']
+c1 = mygroup.drops['1']
 b = mygroup.drops["tiers"]
 c = mygroup.labels["integrale"]
 d = mygroup.labels["limite"]
@@ -40,7 +40,7 @@ g = mygroup._matches
 
 text==
 
-Question : {{ q1 | component }} {{ b | component }}
+Question : {{ c1 | component }} {{ b | component }}
 ==
 
 form==
