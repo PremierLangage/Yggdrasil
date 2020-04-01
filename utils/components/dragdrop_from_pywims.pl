@@ -40,7 +40,7 @@ debug = str(q1)
 
 text==
 Question : 
-{{ q1 }}
+{{ q1 | component }}
 ==
 
 form==
