@@ -38,7 +38,7 @@ match = mygroup._matches
 ==
 
 text==#|HTML|
-Question :{{ q1 | component}} {{ qtiers | component}}
+Question :
 ==
 
 form==
