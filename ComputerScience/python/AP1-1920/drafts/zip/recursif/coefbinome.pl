@@ -18,7 +18,7 @@ On décide de garder ces valeurs déjà calculées  dans un dictionnaire pour ne
 before==
 from random import *
 
-d={}
+
 def binome(n,p):
     if p==0 or p==n:
         return 1
@@ -38,12 +38,19 @@ def binomedico(n,p,dic={}):
 
 pltest0==
 >>> binome(4,2)
-4
+6
 ==
 
 pltest1==
->>> binomedico(41,23,dic)
-42
+>>> from rectest import test_recursion
+>>> test_recursion(lambda:binomedico(13,5))
+True
+>>> test_recursion(lambda:binomedico(13,5))
+False
+==
+
+>>> binomedico(13,5)
+1287
 ==
 
 
