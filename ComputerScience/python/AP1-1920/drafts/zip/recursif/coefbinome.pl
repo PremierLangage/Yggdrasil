@@ -43,6 +43,8 @@ pltest0==
 
 pltest1==
 >>> dic={}
->>> binomedico(4,2,dic)
+>>> binomedico(41,23,dic)
 4
 ==
+
+
