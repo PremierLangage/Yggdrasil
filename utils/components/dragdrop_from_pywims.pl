@@ -39,7 +39,7 @@ debug = str(rintegrale)
 ==
 
 text==
-{{ integrale | component }}
+{{ rintegrale | component }}
 Question : {{ debug }}
 ==
 
