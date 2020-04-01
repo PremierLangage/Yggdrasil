@@ -5,7 +5,7 @@ Latex:1
 -5
 -2^4
 *une année de 365 jours , c'est combien de millisecondes
-+ en gros $ù2^35$
++ en gros $%2^35%$
 - en gros $2^100$
 - en gros $2^200$
 
