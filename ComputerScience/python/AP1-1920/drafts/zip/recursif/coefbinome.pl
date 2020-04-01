@@ -43,7 +43,7 @@ pltest0==
 
 pltest1==
 >>> binomedico(41,23,dic)
-4
+42
 ==
 
 
