@@ -48,7 +48,7 @@ Question : {{ debug }}
 ==
 
 form==
-{{ c2 | component }}
+{{ q1 | component }}
 ==
 
 settings.feedback = lightscore
