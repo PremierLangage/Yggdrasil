@@ -40,7 +40,7 @@ debug = str(q1)
 
 text==
 Question : 
-{{debug}}
+{{ q1 }}
 ==
 
 form==
