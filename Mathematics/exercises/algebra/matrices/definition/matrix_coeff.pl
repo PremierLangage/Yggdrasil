@@ -33,9 +33,17 @@ formstep ==
 
 evaluatorstep ==
 feedback = ""
-if inputs[step].value == sol[step]:
-    score = 100
-else:
+try:
+    ans = int(inputs[step].value)
+    if ans == sol[step]:
+        score = 100
+    else:
+        score = 0
+        feedback = str(sol[step])
+except:
     score = 0
+    feedback = str(sol[step])
+
+inputs[step].disbaled = True
 ==
 
