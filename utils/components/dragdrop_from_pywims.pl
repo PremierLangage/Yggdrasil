@@ -14,7 +14,7 @@ limite = "$$\lim_{x\to +\infty} x\sin(1/x)$$"
 determinant = "$$\det\begin{pmatrix} 1 & 2\\ 1 & 3\end{pmatrix}$$"
 
 # contenu des boutons "drop"
-qui_vaut_1 = "Poser ici une expression égale à 1"
+qui_vaut_1 = "Poser ici une expression égale à $%1%$"
 qui_vaut_tiers = "Poser ici une expression égale à $$1/3$$"
 
 # fabrication du groupe
@@ -39,6 +39,7 @@ debug = str(q1)
 ==
 
 text==
+{{ qui_vaut_1 }}
 Question : {{ debug }}
 ==
 
@@ -66,6 +67,7 @@ extracss == #|html|
         }
 </style>
 ==
+
 
 
 
