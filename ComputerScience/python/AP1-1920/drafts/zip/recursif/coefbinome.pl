@@ -22,14 +22,14 @@ d={}
 def binome(n,p):
     if p==0 or p==n:
         return 1
-    x=  binome(n-1,p)+binome(n-1,p)
+    x=  binome(n-1,p)+binome(n-1,p-1)
     return x
 def binomedico(n,p,dic={}):
     if (n,p) in dic:
-        return dic[(x,y)]
+        return dic[(n,p)]
     if p==0 or p==n:
         return 1
-    x=  binomedico(n-1,p,dic)+binomedico(n-1,p,dic)
+    x=  binomedico(n-1,p-1,dic)+binomedico(n-1,p-1,dic)
     dic[(n,p)]=x
     return x
 
