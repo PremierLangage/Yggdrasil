@@ -1,6 +1,6 @@
 extends = /model/mathmultistep.pl
 
-title = Relation de dépendance entre polynômes
+title = Lecture des coefficients d'une matrice
 
 nbstep % 3
 
