@@ -45,6 +45,8 @@ form==
 {{qui_vaut_1}}
 
 {{qui_vaut_tiers}}
+
+{{q1 | component }}
 ==
 
 settings.feedback = lightscore
