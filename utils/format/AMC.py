@@ -41,6 +41,9 @@ def parse_AMC_TXT(txt):
 
         elif line == "" and pending and k > 0:
             if question_type == "Radio":
+                if len(index) == 0:
+                    import sys
+                    print(" pas de reponse correcte dans une question Radio", sys.err)
                 index = index[0]
             questions.append({'type': question_type, 
             'text': statement, 
@@ -51,3 +54,4 @@ def parse_AMC_TXT(txt):
             pending = False
 
     return questions
+
