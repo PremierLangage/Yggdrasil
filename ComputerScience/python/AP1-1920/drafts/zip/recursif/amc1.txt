@@ -12,4 +12,9 @@ Latex:1
 **Quelles affirmations sont exactespour n suffisament grand
 +$%n^8 \gt n^4%$
 -$%\lg(n)^8 \gt n%$
--$%\^sqrt{n}%$
+-$%\sqrt{n} \lt \lg(n)%$
+
+*On dispose d'une fonction qui affiche toutes les permutations de l'ensemble des entiers de & à $%n%$.
+Quelle est au minimum sa complexité,
++$%\Cal(O)(n!)%$
+-$%n^2%$
