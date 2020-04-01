@@ -40,13 +40,10 @@ debug = str(q1)
 
 text==
 Question : 
-{{ q1 | component }}
 ==
 
 form==
-{{integrale}}
-
-{{qui_vaut_tiers}}
+{{ q1 | component }}
 
 ==
 
