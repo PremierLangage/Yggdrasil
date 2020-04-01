@@ -1,10 +1,8 @@
 # Copyright 2020 Nicolas Borie <nicolas.borie@u-pem.fr>
 author=Magdalena Kobylanski
-
-tag=system|shell
-
 extends=/model/AMC_TXT.pl
-title=QCM $%\displaystyle{\lim_{n\to \infty}f(n)}%$
+
+title= QCM    $%\displaystyle{\lim_{n\to \infty}f(n)}%$
 questions==
 
 * 12 $% 2^n %$ Ceci est une question 
@@ -40,11 +38,4 @@ questions==
 + 754
 
 ==
-
-
-
-
-
-
-
 
