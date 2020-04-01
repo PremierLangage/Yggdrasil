@@ -29,7 +29,7 @@ mygroup.set_match_by_name('1', ['limite','determinant'])
 
 # Ce qui suit sert uniquement à faire voyager le groupe dans le grader
 q1 = mygroup.drops['1']
-qtiers = mygroup.drop['tiers']
+qtiers = mygroup.drops['tiers']
 rintegrale = mygroup.labels['integrale']
 rlimite = mygroup.labels['limite']
 rfraction = mygroup.labels['fraction']
