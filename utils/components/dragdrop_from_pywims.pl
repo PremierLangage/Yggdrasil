@@ -8,7 +8,7 @@ before== #|python|
 from customdragdrop import CustomDragDrop, DragDropGroup
 
 # contenu des labels'
-integrale = '$%\int_0^1 x^2\,dx%$'
+integrale = '$$\int_0^1 x^2\,dx$$'
 fraction =  '$%\frac12 - \frac13%$'
 limite = '$%\lim_{x\to +\infty} x\sin(1/x)%$'
 determinant = '$%\det\begin{pmatrix} 1 & 2\\ 1 & 3\end{pmatrix}%$'
@@ -42,7 +42,7 @@ Question :
 ==
 
 form==
-{{qui_vaut_1}}
+{integrale}}
 
 {{qui_vaut_tiers}}
 
