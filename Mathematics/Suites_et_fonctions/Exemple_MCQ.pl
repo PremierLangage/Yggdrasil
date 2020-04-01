@@ -1,7 +1,6 @@
 # Copyright 2020 Nicolas Borie <nicolas.borie@u-pem.fr>
 author=Magdalena Kobylanski
 
-title=Commandes Unix en terminal
 tag=system|shell
 
 extends=/model/AMC_TXT.pl
@@ -41,6 +40,7 @@ questions==
 + 754
 
 ==
+
 
 
 
