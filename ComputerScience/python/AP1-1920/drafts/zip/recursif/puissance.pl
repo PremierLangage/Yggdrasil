@@ -21,7 +21,7 @@ la valeur $%a^n%$ et du nombre d'appels récursifs.
 En transformant la fonction `puissancer(a,n)`,<br>
 écrire une fonction recursive nbpuissancer(a,n) qui renvoie un couple formé de 
 la valeur $%a^n%$ et du nombre d'appels récursifs.==
-
+==
 before==
 from random import *
 
@@ -127,9 +127,10 @@ True
 ==
 pltest7==
 >>> from rectest import test_recursion
->>> test_recursion(lambda:nbpuissancef(3,5))
+>>> test_recursion(lambda:nbpuissancer(3,5))
 True
 ==
+
 
 
 
