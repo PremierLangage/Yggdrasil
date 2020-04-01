@@ -18,7 +18,7 @@ qui_vaut_1 = r'Poser ici une expression égale à 1'
 qui_vaut_tiers = r'Poser ici une expression égale à $1/3$'
 
 # fabrication du groupe
-mygroup = CustomDragDropGroup()
+mygroup = DragDropGroup()
 # les labels
 mygroup.set_label({'integrale': integrale, 'fraction': fraction, 'limite':limite, 'determinant': determinant})
 # les drops
