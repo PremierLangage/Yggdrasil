@@ -52,7 +52,7 @@ pltest2==
 >>> test_recursion(lambda:binomedico(13,5))
 False
 ==
-pltest=3=
+pltest=3==
 >>> binomedico(23,15)
 490314
 ==
