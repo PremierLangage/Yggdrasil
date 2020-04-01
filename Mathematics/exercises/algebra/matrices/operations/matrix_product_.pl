@@ -5,10 +5,10 @@ Produit de matrices
 ==
 
 before==
-if isinstance(param['size'], list):
-    [n, m, p] = randitem(param['size'])
+if isinstance(param['size'][0], list):
+    n, m, p = randitem(param['size'])
 else:
-    [n, m, p] = param['size']
+    n, m, p = param['size']
     
 coeffbound = param['coeffbound']
 
