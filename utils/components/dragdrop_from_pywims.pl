@@ -36,8 +36,8 @@ rintegrale = mygroup.labels["integrale"]
 rlimite = mygroup.labels["limite"]
 rfraction = mygroup.labels["fraction"]
 rdeterminant = mygroup.labels["determinant"]
-c2 = mygroup.drops['2']
-q1 = mygroup.drops['1']
+q1 = mygroup.drops['2']
+c2 = mygroup.drops['1']
 
 match = mygroup._matches
 debug = str(rintegrale)
