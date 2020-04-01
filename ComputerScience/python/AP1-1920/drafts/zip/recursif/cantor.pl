@@ -37,9 +37,21 @@ from random import *
 x=randint(4,12)
 y=randint(5,20)
 ff=numero(x,y)
-      
+
+pltest3 = f"""
+>>> numero{x,y}=={ff}
+True
+""" 
+
+
 after=before
 ==
+pltest0==
+>>> from rectest import test_recursion
+>>> test_recursion(lambda:numero(3,5))
+True
+==
+
 pltest1==
 >>> numero(2,4)
 25
