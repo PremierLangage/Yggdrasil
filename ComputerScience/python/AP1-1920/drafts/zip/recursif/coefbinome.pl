@@ -42,5 +42,6 @@ pltest0==
 ==
 
 pltest1==
->>> binome(4,2)
+>>> binomedico(4,2)
 4
+==
