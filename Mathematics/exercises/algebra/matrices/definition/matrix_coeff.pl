@@ -32,11 +32,11 @@ formstep ==
 ==
 
 evaluatorstep ==
-feedback = ""
 try:
     ans = int(inputs[step].value)
     if ans == sol[step]:
         score = 100
+        feedback = ""
     else:
         score = 0
         feedback = str(sol[step])
