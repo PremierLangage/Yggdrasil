@@ -25,7 +25,7 @@ for k in range(nbstep):
 textstep ==
 **Question 1**. On considère la matrice.
 $$ A = \left( {{matrices[step]}}= \right).$$
-Que vaut {{ a_{ {{i[step], {{j[step]}}
+Que vaut $! {{ coeff[step] }} !$ ?
 ==
 
 formstep ==
