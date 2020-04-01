@@ -36,7 +36,7 @@ rintegrale = mygroup.labels["integrale"]
 rlimite = mygroup.labels["limite"]
 rfraction = mygroup.labels["fraction"]
 rdeterminant = mygroup.labels["determinant"]
-q1 = mygroup.drops['2']
+q2 = mygroup.drops['2']
 c2 = mygroup.drops['1']
 
 match = mygroup._matches
@@ -48,7 +48,7 @@ Question : {{ debug }}
 ==
 
 form==
-{{ q1 | component }}
+{{ q2 | component }}
 ==
 
 settings.feedback = lightscore
