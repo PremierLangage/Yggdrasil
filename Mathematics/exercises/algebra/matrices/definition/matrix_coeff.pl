@@ -15,8 +15,8 @@ for k in range(nbstep):
     inputs[k].type = "number"
     n = randint(4, 6)
     m = randint(4, 6)
-    i = randint(1, n))
-    j = randint(1, m))
+    i = randint(1, n)
+    j = randint(1, m)
     matrices.append(rand_int_matrix(n, m, 9))
     sol.append(matrices[k][i][j])
     coeff.append(r"a_{ %s , %s}" % (i,j))
