@@ -42,10 +42,6 @@ Question :
 ==
 
 form==
-{{ rintegrale | component }}
-{{ rlimite | component }}
-{{ rfraction | component }}
-{{ rdeterminant | component }}
 ==
 
 settings.feedback = lightscore
