@@ -42,6 +42,7 @@ pltest0==
 ==
 
 pltest1==
->>> binomedico(4,2)
+>>> dic={}
+>>> binomedico(4,2,dic)
 4
 ==
