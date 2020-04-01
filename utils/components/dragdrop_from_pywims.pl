@@ -42,7 +42,7 @@ Question :
 ==
 
 form==
-{integrale}}
+{{integrale}}
 
 {{qui_vaut_tiers}}
 
