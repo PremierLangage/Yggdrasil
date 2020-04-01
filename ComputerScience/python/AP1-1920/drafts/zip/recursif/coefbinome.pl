@@ -15,7 +15,6 @@ $%\binom{n}{p}=\binom{n-1}{p}+\binom{n-1}{p-1}1%$ pour $%0 \lt p \lt n%$ <br>
 Ecrire une fonction ``binome(n,p)`` qui renvoie $%\binom{n}{p}%$.
 Cette fonction esr particulièrement innefficace : elle calcule plusieurs fois les mêmes valeurs!<br>
 On décide de garder ces valeurs déjà calculées  dans un dictionnaire pour ne pas les recalculer.<br>
-Ecrire une fonction ``binomedico(n,p)`` qui renvoie \binom{n}{p} et utilise un dictionnaire.
 ==
 before==
 from random import *
@@ -49,8 +48,12 @@ pltest1==
 True
 ==
 pltest2==
->>> binomedico(13,5)
-1287
+>>> test_recursion(lambda:binomedico(13,5))
+False
+==
+pltest=3=
+>>> binomedico(23,15)
+490314
 ==
 
 
