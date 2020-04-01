@@ -10,7 +10,6 @@ matrices = []
 inputs = []
 sol = []
 for k in range(nbstep):
-
     inputs.append(Input())
     inputs[k].type = "number"
     n = randint(4, 6)
