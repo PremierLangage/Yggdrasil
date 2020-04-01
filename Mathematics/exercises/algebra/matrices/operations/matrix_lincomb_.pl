@@ -24,7 +24,7 @@ Msol = a*MA+b*MB
 
 text==
 Soit les matrices
-$$ A = \left( {{A.latex}}\right) \text{ et } B = \left({{B.latex}}\right) $$ 
+$$ A = \left( {{MA.latex}}\right) \text{ et } B = \left({{MB.latex}}\right) $$ 
 Calculer $!{{expr.latex}} !$.
 ==
 
