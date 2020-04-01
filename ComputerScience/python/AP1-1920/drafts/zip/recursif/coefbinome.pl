@@ -38,5 +38,9 @@ def binomedico(n,p,dic):
 
 pltest0==
 >>> binome(4,2)
-6
+4
 ==
+
+pltest1==
+>>> binome(4,2)
+4
