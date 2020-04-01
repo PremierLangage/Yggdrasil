@@ -25,7 +25,7 @@ Msol = a*MA+b*MB
 text==
 Soit les matrices
 $$ A = \left( {{A.latex}}\right) \text{ et } B = \left({{B.latex}}\right) $$ 
-Calculer $!{{expr}} !$.
+Calculer $!{{expr.latex}} !$.
 ==
 
 
