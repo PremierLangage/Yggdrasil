@@ -24,8 +24,10 @@ mygroup.set_label({"integrale": integrale, "fraction": fraction, "limite":limite
 # les drops
 mygroup.set_drop({"1" : qui_vaut_1, "tiers": qui_vaut_tiers})
 # les liens corrects
-#mygroup.set_match_by_name("tiers", "integrale")
-#mygroup.set_match_by_name("1", ["limite","determinant"])
+mygroup.set_match_by_name("tiers", "integrale")
+mygroup.set_match_by_name("1", ["limite","determinant"])
+
+mygroup.add_drop({'2':"coucou"})
 
 # Ce qui suit sert uniquement à faire voyager le groupe dans le grader
 q1 = mygroup.drops['1']
@@ -34,6 +36,8 @@ rintegrale = mygroup.labels["integrale"]
 rlimite = mygroup.labels["limite"]
 rfraction = mygroup.labels["fraction"]
 rdeterminant = mygroup.labels["determinant"]
+c2 = mygroup.drops['2']
+
 match = mygroup._matches
 debug = str(rintegrale)
 ==
@@ -44,7 +48,7 @@ Question : {{ debug }}
 ==
 
 form==
-
+{{ c2 | component }}
 ==
 
 settings.feedback = lightscore
