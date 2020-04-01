@@ -29,7 +29,7 @@ def binomedico(n,p,dic={}):
         return dic[(n,p)]
     if p==0 or p==n:
         return 1
-    x=  binomedico(n-1,p-1,dic)+binomedico(n-1,p-1,dic)
+    x=  binomedico(n-1,p-1,dic)+binomedico(n-1,p,dic)
     dic[(n,p)]=x
     return x
 
