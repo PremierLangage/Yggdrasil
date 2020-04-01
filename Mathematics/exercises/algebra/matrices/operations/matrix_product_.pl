@@ -16,7 +16,7 @@ min = min([n, m, p])
 mat.setmatrix([min * [0] for _ in range(min)])
 
 A = rand_int_matrix(n, m, coeffbound)
-B = rand_int_matrix(m, p, 2)
+B = rand_int_matrix(m, p, coeffbound)
 Msol = A*B
 ==
 
