@@ -16,7 +16,7 @@ for k in range(nbstep):
     i = randint(1, n)
     j = randint(1, m)
     matrices.append(rand_int_matrix(n, m, 9))
-    sol.append(matrices[k][i,j])
+    sol.append(matrices[k][i-1,j-1])
     coeff.append(r"a_{ %s , %s}" % (i,j))
 ==
 
