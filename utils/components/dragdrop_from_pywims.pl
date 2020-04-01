@@ -37,11 +37,15 @@ rdeterminant = mygroup.labels['determinant']
 match = mygroup._matches
 ==
 
-text==#|HTML|
+text==
+Question : {{ q1 | component}} {{ qtiers | component}}
 ==
 
 form==
-
+{{ rintegrale | component }}
+{{ rlimite | component }}
+{{ rfraction | component }}
+{{ rdeterminant | component }}
 ==
 
 settings.feedback = lightscore
