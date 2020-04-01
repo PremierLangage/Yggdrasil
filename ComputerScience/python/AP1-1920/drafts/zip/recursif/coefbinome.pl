@@ -47,14 +47,9 @@ pltest1==
 >>> from rectest import test_recursion
 >>> test_recursion(lambda:binomedico(13,5))
 True
-==
-pltest2==
 >>> test_recursion(lambda:binomedico(13,5))
 False
 ==
-pltest=3==
->>> binomedico(23,15)
-490314
-==
+
 
 
