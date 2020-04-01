@@ -38,14 +38,16 @@ match = mygroup._matches
 ==
 
 text==
-Question : {{ q1 | component}} {{ qtiers | component}}
+Question : <!-- {{ q1 | component}} {{ qtiers | component}} -->
 ==
 
-form==
+form== 
+<!--
 {{ rintegrale | component }}
 {{ rlimite | component }}
 {{ rfraction | component }}
 {{ rdeterminant | component }}
+-->
 ==
 
 settings.feedback = lightscore
