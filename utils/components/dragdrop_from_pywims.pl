@@ -42,10 +42,7 @@ Question :{{ q1 | component}} {{ qtiers | component}}
 ==
 
 form==
-{{ rintegrale | component }}
-{{ rlimite | component }}
-{{ rfraction | component }}
-{{ rdeterminant | component }}
+
 ==
 
 settings.feedback = lightscore
