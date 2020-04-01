@@ -41,7 +41,11 @@ ff=numero(x,y)
 after=before
 ==
 pltest1==
-
 >>> numero(2,4)
 25
+==
+
+pltest2==
+>>> numero(10,6)
+142
 ==
