@@ -1,0 +1,6 @@
+Latex:1
+*1000 en décimal c'est de l'ordre de
++$2^{10}$
+-5
+-2^4
+
