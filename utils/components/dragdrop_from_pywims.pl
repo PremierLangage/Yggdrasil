@@ -26,7 +26,7 @@ mygroup.set_label({"integrale": integrale, "fraction": fraction, "limite":limite
 mygroup.set_drop({"1" : qui_vaut_1, "tiers": qui_vaut_tiers})
 # les liens corrects
 mygroup.set_match_by_name("tiers", "integrale")
-mygroup.set_match_by_name("1", ["limite","determinant"])
+mygroup.add_match_by_name("1", ["limite","determinant"])
 
 # Ce qui suit sert uniquement à faire voyager le groupe dans le grader
 a = mygroup.drops['1'] 
