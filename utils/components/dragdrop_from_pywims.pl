@@ -16,39 +16,38 @@ determinant = "$$\det\begin{pmatrix} 1 & 2\\ 1 & 3\end{pmatrix}$$"
 # contenu des boutons "drop"
 qui_vaut_1 = "Poser ici une expression égale à $%1%$"
 qui_vaut_tiers = "Poser ici une expression égale à $$1/3$$"
-coucou = "coucou $%x^2%$"
+
 # fabrication du groupe
 mygroup = DragDropGroup()
 # les labels
 mygroup.set_label({"integrale": integrale, "fraction": fraction, "limite":limite, "determinant": determinant})
 # les drops
-mygroup.set_drop({"tiers": qui_vaut_tiers})
-
-mygroup.add_drop({'2': coucou})
-mygroup.add_drop({'1': qui_vaut_1})
+mygroup.set_drop({"1" : qui_vaut_1, "tiers": qui_vaut_tiers})
 # les liens corrects
 mygroup.set_match_by_name("tiers", "integrale")
-#mygroup.set_match_by_name('1', ["limite","determinant"])
+mygroup.set_match_by_name("1", ["limite","determinant"])
 
 # Ce qui suit sert uniquement à faire voyager le groupe dans le grader
-qtiers = mygroup.drops["tiers"]
-rintegrale = mygroup.labels["integrale"]
-rlimite = mygroup.labels["limite"]
-rfraction = mygroup.labels["fraction"]
-rdeterminant = mygroup.labels["determinant"]
-c1 = mygroup.drops['2']
-c2 = mygroup.drops['1']
-
-match = mygroup._matches
-debug = str(rintegrale)
+a = mygroup.drops['1']
+b = mygroup.drops["tiers"]
+c = mygroup.labels["integrale"]
+d = mygroup.labels["limite"]
+e = mygroup.labels["fraction"]
+f = mygroup.labels["determinant"]
+g = mygroup._matches
 ==
 
 text==
-Question : {{ debug }}
+
+Question : {{ a | component }} {{ b | component }}
 ==
 
 form==
-{{ c1 | component }}
+{{ c | component }}
+{{ d | component }}
+{{ e | component }}
+{{ f | component }}
+
 ==
 
 settings.feedback = lightscore
