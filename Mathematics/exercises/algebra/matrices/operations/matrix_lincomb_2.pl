@@ -1,4 +1,4 @@
-extends = matrix_lincom_.pl
+extends = matrix_lincomb_.pl
 
 title==
 Combinaison linéaire de matrices $! 2 \times 2 !$
