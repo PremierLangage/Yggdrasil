@@ -43,7 +43,7 @@ Question : {{ debug }}
 ==
 
 form==
-{{ q1 | component }}
+{{ rfraction | component }}
 
 ==
 
