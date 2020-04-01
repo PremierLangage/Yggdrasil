@@ -39,7 +39,7 @@ debug = str(q1)
 ==
 
 text==
-Question : 
+Question : {{ debug }}
 ==
 
 form==
