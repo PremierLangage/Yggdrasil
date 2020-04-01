@@ -1,7 +1,7 @@
 # author zip
 
 # Heritage d'un type d'exercice 
-extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
+extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title = Numérotation du plan
 
@@ -18,44 +18,4 @@ et renvoie le numéro associé.
 (aide : distinguez les cas (0,y),(x,0) et (x,y) avec x non nul et y non nul
 ==
 
-before==
-def numero(x,y):
-    if x==0:
-        if y==0:
-           return 0
-        else:
-            return numero(1,y-1)+1
-    if y==0:
-        return numero(0,x-1)+1
-    else:
-        return numero(x+1,y-1)+1
-
-import random
-x=randint(4,12)
-y=randint(5,20)
-ff=numro(x,y)
-
-
-pltest3 = f"""
->>> numero{x,y}=={ff}
-True
-"""        
-after=before
-==
-
-
-pltest0==
->>> from rectest import test_recursion
->>> test_recursion(lambda:numero(3,5))
-True
-==
-pltest1==
-
->>> numero(2,4)
-25
-==
-pltest2==
->>> numero(10,6)
-142
-==
 
