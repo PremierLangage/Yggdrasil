@@ -38,7 +38,7 @@ match = mygroup._matches
 ==
 
 text==#|HTML|
-Question :{{mygroup.drops['1'] | component}} {{mygroup.drop['tiers'] | component}}
+Question :{{ q1 | component}} {{ qtiers | component}}
 ==
 
 form==
