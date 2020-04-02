@@ -24,9 +24,9 @@ def equal_approx(a, b, tol, modulo=None):
     Check if two SymPy expressions are equal.
     """
     if modulo is None:
-        return abs(a-b).evalf() < tol
+        return abs(a - b).evalf() < tol
     else:
-        return abs((abs(a-b) + modulo/2) % modulo - modulo/2).evalf() < tol
+        return abs((abs(a - b) + modulo/2) % modulo - modulo/2).evalf() < tol
 
 def equal_struct(a, b, modulo=0):
     """
