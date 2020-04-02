@@ -3,11 +3,11 @@ from latex2sympy import *
 
 # Equality tests
 
-def equal(a, b, modulo=0):
+def equal(a, b, modulo=None):
     """
     Check if two SymPy expressions are equal.
     """
-    if a==b:
+    if a == b:
         return True
     diff=a-b
     if diff.is_complex:
@@ -433,6 +433,7 @@ def ans_antiderivative(strans,sol,x,local_dict={}):
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
+
 
 
 
