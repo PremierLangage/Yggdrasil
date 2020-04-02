@@ -9,9 +9,12 @@ def equal(a, b, modulo=None):
     """
     if a == b:
         return True
-    diff=a-b
+    try:
+        diff = a - b
+    except:
+        return False
     if diff.is_complex:
-        diff=sp.expand_complex(diff)
+        diff = sp.expand_complex(diff)
     if modulo is None:
         return sp.simplify(diff) == 0
     else:
