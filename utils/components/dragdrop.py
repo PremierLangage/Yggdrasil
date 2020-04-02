@@ -85,12 +85,12 @@ class DragDropGroup():
          self.add_label(labels)
 
     def add_label(self, labels): 
-    """
+        """ 
         add_label can have as argument:
          1) a string, which is then both the name (= key of the label in self.labels) and visible content of the label,
          2) a dictionary, which is then used to update self.labels, adding to each component the group_id and cloneable info
          3) a list of strings, and then a label is added for each string as in 1). 
-    """
+         """
         if isinstance(labels, str):
             self.labels[labels] = CustomDragDrop.Label(content = labels, group_id = self.id, cloneable = self.cloneable)
         if isinstance(labels, dict):
