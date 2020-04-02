@@ -28,12 +28,12 @@ def equal_approx(a, b, tol, modulo=None):
     else:
         return abs((abs(a - b) + modulo/2) % modulo - modulo/2).evalf() < tol
 
-def equal_struct(a, b, modulo=0):
+def equal_struct(a, b, modulo=None):
     """
     Check if two structures are equal.
     """
-    if isinstance(b,list):
-        if isinstance (a,list):
+    if isinstance(b, list):
+        if isinstance (a, list):
             return equal_set(a,b)
     elif isinstance(b,tuple):
         if isinstance (a,tuple):
