@@ -375,7 +375,7 @@ def eval_poly(strans, sol, x, domain="RR", imaginary_unit="i", form="", authoriz
     """
     local_dict = {imaginary_unit:sp.I}
     try:
-        ans=latex2sympy(strans,local_dict)
+        ans = latex2sympy( strans, local_dict)
     except:
         return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
     if not isinstance(ans,sp.Expr):
