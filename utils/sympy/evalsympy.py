@@ -34,26 +34,26 @@ def equal_struct(a, b, modulo=None):
     """
     if isinstance(b, list):
         if isinstance (a, list):
-            return equal_set(a,b)
-    elif isinstance(b,tuple):
-        if isinstance (a,tuple):
-            return equal_tuple(a,b)
-    elif isinstance(b,(sp.Expr,int)):
-        if isinstance (a,(sp.Expr,int)):
+            return equal_set(a, b)
+    elif isinstance(b, tuple):
+        if isinstance (a, tuple):
+            return equal_tuple(a, b)
+    elif isinstance(b, (sp.Expr, int)):
+        if isinstance (a, (sp.Expr, int)):
             return equal(a, b, modulo)
     return False
 
-def equal_set(p,q):
+def equal_set(p, q):
     """
     Check if two sets (stored as lists) are equal.
     """
-    if len(p)!=len(q):
+    if len(p) != len(q):
         return False
     for a in p:
-        isin=False
+        isin = False
         for b in q:
-            if equal_struct(a,b):
-                isin=True
+            if equal_struct(a, b):
+                isin = True
                 break
         if not isin:
             return False
