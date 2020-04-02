@@ -373,7 +373,7 @@ def eval_poly(strans, sol, x, domain="RR", imaginary_unit="i", form="", authoriz
     """
     Evaluate an answer when the solution is a polynomial.
     """
-    local_dict={imaginary_unit:sp.I}
+    local_dict = {imaginary_unit:sp.I}
     try:
         ans=latex2sympy(strans,local_dict)
     except:
