@@ -371,7 +371,7 @@ def ans_struct_complex(strans,sol,typestruct,imaginary_unit="i",form=""):
 
 def eval_poly(strans,sol,x,domain="RR",imaginary_unit="i",form="",authorized_func={}):
     """
-    Analyze an answer of type polynomial.
+    Evaluate an answer when the solution is a polynomial.
     """
     local_dict={imaginary_unit:sp.I}
     try:
