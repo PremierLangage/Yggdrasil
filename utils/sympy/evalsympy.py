@@ -290,15 +290,15 @@ def eval_expr(strans,sol,local_dict={}):
     Analyze an answer of type expression.
     """
     try:
-        ans=latex2sympy(strans,local_dict)
+        ans=latex2sympy(strans, local_dict)
     except:
-        return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
+        return (-1, "NotExpr", "Votre réponse n'est pas une expression valide.")
     if not isinstance(ans,sp.Expr):
-        return (-1,"NotExpr","Votre réponse n'est pas une expression valide.")
-    if not equal(ans,sol):
-        return (0,"NotEqual","")
+        return (-1, "NotExpr", "Votre réponse n'est pas une expression valide.")
+    if not equal(ans, sol):
+        return (0, "NotEqual", "")
     #    test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
-    return (100,"Success","")
+    return (100, "Success", "")
 
 def eval_set(strans,sol,local_dict={}):
     sol=FiniteSet2struct(sol)
