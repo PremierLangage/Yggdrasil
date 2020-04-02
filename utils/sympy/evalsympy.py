@@ -12,7 +12,7 @@ def equal(a, b, modulo=None):
     diff=a-b
     if diff.is_complex:
         diff=sp.expand_complex(diff)
-    if modulo==0:
+    if modulo is None:
         return sp.simplify(diff) == 0
     else:
         return sp.simplify(diff) % modulo == 0
