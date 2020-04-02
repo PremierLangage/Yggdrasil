@@ -287,7 +287,7 @@ def only_authorized_func(expr,authorized_func):
 # Expression
 #################
 
-def eval_expr(strans,sol,local_dict={}):
+def eval_expr(strans, sol, local_dict={}):
     """
     Analyze an answer of type expression.
     """
