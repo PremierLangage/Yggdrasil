@@ -1,5 +1,7 @@
 extends = /model/math.pl
 
+settings.feedback = rightwrong
+
 title = Droite
 
 jxg =: MathDrawer
@@ -48,3 +50,4 @@ else:
 
 jxg.disabled = True
 ==
+
