@@ -34,7 +34,7 @@ form ==
 
 # La clé evaluator contient un script python qui est exécuté quand l'élève valide sa réponse
 # Il faut définir dans ce script un score entre 0 et 100 (ou -1 pour un warning). Et éventuellement un feedback.
-# Bon, ici, tout est caché dans un la fonction eval_complex qui est dans une bibliothèque.
+# Bon, ici, tout est caché dans la fonction eval_complex qui est dans une bibliothèque.
 evaluator ==
 score, _, feedback = eval_complex(input.value, sol, form="cartesian")
 ==
