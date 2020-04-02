@@ -369,7 +369,7 @@ def ans_struct_complex(strans,sol,typestruct,imaginary_unit="i",form=""):
 
 # Polynomials
 
-def eval_poly(strans,sol,x,domain="RR",imaginary_unit="i",form="",authorized_func={}):
+def eval_poly(strans, sol, x, domain="RR", imaginary_unit="i", form="", authorized_func={}):
     """
     Evaluate an answer when the solution is a polynomial.
     """
