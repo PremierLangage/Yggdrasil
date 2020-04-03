@@ -19,7 +19,7 @@ Quelle est au minimum sa complexité?
 +$%\mathcal O(n!)%$
 -$%\mathcal {O}(n^2)%$
 -$%\mathcal {O}(n)%$
-
+-$%\mathcal {O}\lg(n)%$
 *quelle est la complexité du programme suvant:
 def f(n):
     s=0
@@ -28,4 +28,8 @@ def f(n):
 somme=0
 for i in range(n):
         somme+=2*f(n)
-
+Quelle est sa complexité?
++$%\mathcal O(n!)%$
+-$%\mathcal {O}(n^2)%$
+-$%\mathcal {O}(n)%$
+-$%\mathcal {O}\lg(n)%$
