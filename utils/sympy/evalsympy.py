@@ -287,28 +287,36 @@ def only_authorized_func(expr,authorized_func):
 # Expression
 #################
 
+_feedback_ = {
+"NotExpr": "Votre réponse n'est pas une expression valide.",
+
+}
+
 def eval_expr(strans, sol, local_dict={}):
     """
-    Analyze an answer of type expression.
+    Evaluate an answer when the solution is a mathematical expression.
     """
     try:
-        ans=latex2sympy(strans, local_dict)
+        ans = latex2sympy(strans, local_dict)
     except:
-        return (-1, "NotExpr", "Votre réponse n'est pas une expression valide.")
-    if not isinstance(ans,sp.Expr):
-        return (-1, "NotExpr", "Votre réponse n'est pas une expression valide.")
+        return (-1, "NotExpr", _feedback_["NotExpr"])
+    if not isinstance(ans, sp.Expr):
+        return (-1, "NotExpr", _feedback_["NotExpr"])
     if not equal(ans, sol):
         return (0, "NotEqual", "")
     #    test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return (100, "Success", "")
 
-def eval_set(strans,sol,local_dict={}):
-    sol=FiniteSet2struct(sol)
+def eval_set(strans, sol, local_dict={}):
+    """
+    Evaluate an answer when the solution is a finite set.
+    """
+    sol = FiniteSet2struct(sol)
     try:
-        ans=latex2sympy(strans,local_dict)
+        ans = latex2sympy(strans, local_dict)
     except:
         return (-1,"NotSet","Votre réponse n'est pas un ensemble.")
-    if not isinstance(ans,list):
+    if not isinstance(ans, list):
         return (-1,"NotSet","Votre réponse n'est pas un ensemble.")
     if duplicates(ans):
         return (-1,"Duplicates","Il y a des doublons dans l'ensemble.")
@@ -398,7 +406,7 @@ def eval_poly(strans, sol, x, domain="RR", imaginary_unit="i", form="", authoriz
 
 def eval_matrix(matans, sol):
     """
-    Evaluate an answer of type matrix.
+    Evaluate an answer when the solution is a matrix.
     """
     try:
         ans = sp.Matrix(matans)
