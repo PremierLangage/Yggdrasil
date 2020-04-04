@@ -202,7 +202,7 @@ def is_complex_cartesian(expr):
     """
     args = arg_nested_add(expr)
     ni = sum([is_coeff_mul(a, sp.I) for a in args])
-    nr = sum([int(a.is_real) for a in args])
+    nr = sum([a.is_real for a in args])
     return ni <= 1 and ni+nr == len(args)
 
 def complex_cartesian_parts(expr):
