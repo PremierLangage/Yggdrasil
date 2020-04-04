@@ -201,8 +201,8 @@ def is_complex_cartesian(expr):
     Check if a complex number is in cartesian form.
     """
     args = arg_nested_add(expr)
-    ni = sum([is_coeff_mul(a, sp.I) for a in args])
-    nr = sum([int(a.is_real or 0) for a in args])
+    ni = [is_coeff_mul(a, sp.I) for a in args].count(True)
+    nr = [a.is_real for a in args].count(True)
     return ni <= 1 and ni+nr == len(args)
 
 def complex_cartesian_parts(expr):
