@@ -4,7 +4,8 @@ title = Développement
 
 param.formula = PQ+R
 
-param.degree = 1
+param.degree % 1
 
-param.ncoeff = 2
+param.ncoeff % 2
+
 
