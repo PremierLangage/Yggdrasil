@@ -123,8 +123,8 @@ def is_coeff_mul(expr, x):
     args = arg_nested_mul(expr)
     return args.count(x) == 1 and sum([a.has(x) for a in args]) == 1
 
-def coeff_mul(expr,x):
-    args=arg_nested_mul(expr)
+def coeff_mul(expr, x):
+    args = arg_nested_mul(expr)
     args.remove(x)
     if len(args)==0:
         return 0
