@@ -342,9 +342,9 @@ def eval_complex(strans, sol, imaginary_unit="i", form="", authorized_func={}, l
     """
     local_dict.update({imaginary_unit: sp.I, 'e': sp.E})
     try:
-        ans=latex2sympy(strans,local_dict)
+        ans = latex2sympy(strans, local_dict)
     except:
-        return (-1,"NotCplx")
+        return (-1, "NotCplx")
     if not isinstance(ans,sp.Expr) or not ans.is_complex:
         return (-1, "NotCplx")
     if not only_authorized_func(ans, authorized_func):
