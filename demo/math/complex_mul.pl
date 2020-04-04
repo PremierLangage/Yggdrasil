@@ -39,4 +39,4 @@ evaluator ==
 score, _, feedback = eval_complex(input.value, sol, form="cartesian")
 ==
 
-
+input.debug % true
