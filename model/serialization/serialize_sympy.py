@@ -22,7 +22,7 @@ def serialize(arg):
     if isinstance(arg, FiniteSet):
         return {'sympy_type':'FiniteSet','str':str(arg.args),'latex':latex(arg)}
     elif isinstance(arg, (Expr,Matrix)):
-        return {'sympy_type':'Basic','str':str(arg),'latex':latex(arg)}
+        return {'sympy_type':'Basic','str':str(arg),'latex':""}
     elif isinstance(arg,dict):
         return {k: serialize(v) for k, v in arg.items()}
     elif isinstance(arg,list):
