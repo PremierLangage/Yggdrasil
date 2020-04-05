@@ -10,7 +10,7 @@ Q = rand_int_poly(1,1,3,x)
 sol = P * Q
 ==
 
-text = Développer $$ {{P.latex}} \times {{Q.latex}}.$$
+text = Développer $$ {{sol.latex}}.$$
 
 evaluator==
 var('x')
