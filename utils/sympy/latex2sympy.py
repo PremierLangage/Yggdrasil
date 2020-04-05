@@ -76,7 +76,7 @@ def latex2sympy(s,local_dict={}):
     return str2sympy(s,local_dict)
 
 def FiniteSet2struct(S):
-    if S==sp.EmptySet():
+    if  S == sp.EmptySet:
         return []
     elif isinstance(S,sp.Set):
         return [FiniteSet2struct(x) for x in S]
@@ -84,6 +84,3 @@ def FiniteSet2struct(S):
         return tuple([FiniteSet2struct(x) for x in S])
     else:
         return S
-
-
-
