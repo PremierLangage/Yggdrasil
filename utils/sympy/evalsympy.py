@@ -77,7 +77,7 @@ def duplicates(p):
         if len(p) > 1:
             for i in range(len(p)):
                 for j in range(i+1, len(p)):
-                    if is_equal_struct(p[i], [j]):
+                    if equal_struct(p[i], [j]):
                         return True
     
     # search duplicates in elements of lists and tuples                  
