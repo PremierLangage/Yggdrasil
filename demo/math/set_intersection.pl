@@ -1,4 +1,4 @@
-extends = /model/math.pl
+extends = /model/mathinput.pl
 
 title = Intersection d'ensembles
 
@@ -18,12 +18,6 @@ $$ A=\\{ {{A.latex}} \\},\ B=\\{ {{B.latex}} \\}.$$
 Déterminer $! A \cap B !$.
 ==
 
-input =: MathInput
-
-form ==
-{{input|component}}
-==
-
 evaluator ==
 score,_,feedback=eval_set(input.value,sol)
 ==
@@ -31,4 +25,5 @@ score,_,feedback=eval_set(input.value,sol)
 solution ==
 La solution est $! { {{sol.latex}} } !$.
 ==
+
 
