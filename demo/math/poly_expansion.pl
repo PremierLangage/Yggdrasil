@@ -14,6 +14,6 @@ text = Développer $${{expr.latex}}.$$
 
 evaluator==
 var('x')
-score, _, feedback = eval_poly(input.value, expr, x)
+score, _, feedback = eval_poly(input.value, expr, x, form="expanded")
 ==
 
