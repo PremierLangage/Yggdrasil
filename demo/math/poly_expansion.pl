@@ -6,7 +6,7 @@ before ==
 var('x')
 
 P = rand_int_poly(2,2,3,x)
-Q = rand_int_poly(2,2,3,x)
+Q = rand_int_poly(1,1,3,x)
 sol = P * Q
 ==
 
