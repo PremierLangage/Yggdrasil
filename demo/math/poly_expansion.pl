@@ -7,13 +7,13 @@ var('x')
 
 P = rand_int_poly(2,2,3,x)
 Q = rand_int_poly(1,1,3,x)
-sol = P * Q
+expr = P * Q
 ==
 
-text = Développer $$ {{sol.latex}}.$$
+text = Développer $$ {{expr.latex}}.$$
 
 evaluator==
 var('x')
-score,numerror,feedback=eval_poly(input.value,sol,x)
+score,numerror,feedback=eval_poly(input.value, expr, x)
 ==
 
