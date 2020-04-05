@@ -374,9 +374,9 @@ def eval_poly(strans, sol, x, domain="RR", imaginary_unit="i", form="", authoriz
         return (-1,"UnauthorizedFunc")
     if not equal(ans,sol):
         return (0, "NotEqual")
-    if form == "expanded" and not is_poly_expanded(expr,x):
+    if form == "expanded" and not is_poly_expanded(ans ,x):
             return (-1, "PolyNotExpanded")
-    if form == "factorized" and not is_poly_factorized(expr,x,domain):
+    if form == "factorized" and not is_poly_factorized(ans, x, domain):
             return (-1, "PolyNotFactorized")
     return (100, "Success")
 
