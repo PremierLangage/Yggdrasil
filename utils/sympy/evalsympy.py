@@ -28,7 +28,7 @@ def equal_approx(a, b, tol, modulo=None):
     else:
         return abs((abs(a - b) + modulo/2) % modulo - modulo/2).evalf() < tol
 
-def equal_struct(a, b, modulo=None):
+def equal_struct(p, q, modulo=None):
     """
     Check if two nested structures of lists and tuples of expressions 
     (where lists are viewed as sets) are equal.
