@@ -75,9 +75,9 @@ def duplicates(p):
     # search duplicates in lists
     if isinstance(p, list):
         if len(p) > 1:
-            for a in p:
-                for b in p[1:]:
-                    if equal_struct(a, b):
+            for i in range(len(p)):
+                for j in range(i+1, len(p)):
+                    if is_equal_struct(p[i], [j]):
                         return True
     
     # search duplicates in elements of lists and tuples                  
