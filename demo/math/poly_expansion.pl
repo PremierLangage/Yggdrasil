@@ -5,8 +5,8 @@ title = Développement
 before ==
 var('x')
 
-P = rand_int_poly(1, 2, 3, x)
-Q = rand_int_poly(1, 2, 3, x)
+P = rand_int_poly(1, 2, 5, x)
+Q = rand_int_poly(1, 2, 5, x)
 expr = P * Q
 ==
 
