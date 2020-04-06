@@ -1,6 +1,8 @@
 import sympy as sp
 from latex2sympy import *
 
+# Utils
+
 def equal(a, b, modulo=None):
     """
     Check if two expressions are equal after simplification.
@@ -196,6 +198,22 @@ def is_real_or_inf(expr):
 def is_rat_simp(expr):
     """
     Check if the rational numbers in an expression are simplified.
+    
+    >>> expr = sp.sympify("2/4", evaluate=False)
+    >>> is_rat_simp(expr)
+    False
+    
+    >>> expr = sp.sympify("1 - 1/2", evaluate=False)
+    >>> is_rat_simp(expr)
+    False
+    
+    >>> expr = sp.sympify("sqrt(1 + 1)", evaluate=False)
+    >>> is_rat_simp(expr)
+    False
+    
+    >>> expr = sp.sympify("1 + sqrt(2)", evaluate=False)
+    >>> is_rat_simp(expr)
+    True
     """
     if isinstance(expr, sp.Expr):
         if sp.simplify(expr).is_rational:
@@ -210,26 +228,40 @@ def is_rat_simp(expr):
 def is_frac_int(expr):
     """
     Check if an expression is a fraction of integers.
+    
+    >>> expr = sp.sympify("3", evaluate=False)
+    >>> is_frac_int(expr)
+    True
+    
+    >>> expr = sp.sympify("1 + 3", evaluate=False)
+    >>> is_frac_int(expr)
+    False
+    
+    >>> expr = sp.sympify("5*7/2", evaluate=False)
+    >>> is_frac_int(expr)
+    False
     """
     args = arg_nested_mul(expr)
-    if len(args)>1 and sp.Integer(-1) in args:
+    # remove sign
+    if len(args) > 1 and sp.Integer(-1) in args:
         args.remove(sp.Integer(-1))
     with sp.evaluate(False):
-        expr=sp.Mul(*args)
-    f = sp.fraction(expr,exact=True)
-    return f[0].is_Integer and f[1].is_Integer and f[1]!=0
+        expr = sp.Mul(*args)
+    f = sp.fraction(expr, exact=True)
+    return f[0].is_Integer and f[1].is_Integer
 
 def is_frac_irred(expr):
     """
     Check if a sympy fraction of integers is irreducible.
     """
-    args=arg_nested_mul(expr)
-    if len(args)>1 and sp.Integer(-1) in args:
+    args = arg_nested_mul(expr)
+    # remove sign
+    if len(args) > 1 and sp.Integer(-1) in args:
         args.remove(sp.Integer(-1))
     with sp.evaluate(False):
-        expr=sp.Mul(*args)
-    f = sp.fraction(expr,exact=True)
-    return sp.gcd(f[0],f[1])==1 and f[1]>0
+        expr = sp.Mul(*args)
+    f = sp.fraction(expr, exact=True)
+    return sp.gcd(f[0],f[1]) == 1 and f[1] > 0
 
 def is_frac_int_irred(expr):
     """
@@ -283,15 +315,9 @@ def complex_cartesian_parts(expr):
         re = lstre[0]
     else:
         with sp.evaluate(False):
-            re=sp.Add(*lstre)
+            re = sp.Add(*lstre)
     return (re, im)
 
-def is_complex_cartesian_ratsimp(expr):
-    """
-    Return the real and imaginary parts.
-    """
-    (re,im)=complex_cartesian_parts(expr)
-    return is_rat_simp(re) and is_rat_simp(im)
 
 def is_e_i_theta(expr):
     """
@@ -398,7 +424,7 @@ def add_feedback(eval):
     return eval_with_feedback
 
 @add_feedback
-def eval_expr(strans, sol, checkratsimp=True, local_dict={}):
+def eval_expr(strans, sol, checkratsimp=True, authorized_func={}, local_dict={}):
     """
     Evaluate an answer when the solution is an expression.
     """
@@ -410,8 +436,8 @@ def eval_expr(strans, sol, checkratsimp=True, local_dict={}):
         return (-1, "NotExpr")
     if not equal(ans, sol):
         return (0, "NotEqual")
-    #if checkratsimp and not is_rat_simp(expr):
-    #    return (-1, "NotRatSimp")
+    if checkratsimp and not is_rat_simp(expr):
+        return (-1, "NotRatSimp")
     return (100, "Success")
     
 @add_feedback
@@ -430,7 +456,7 @@ def eval_real_or_inf(strans, sol, local_dict={}):
     return (100, "Success")
 
 @add_feedback
-def eval_complex(strans, sol, imaginary_unit="i", form="", authorized_func={}, local_dict={}):
+def eval_complex(strans, sol, imaginary_unit="i", form="", checkratsimp=True, authorized_func={}, local_dict={}):
     """
     Evaluate an answer when the solution is a complex number.
     """
@@ -445,9 +471,11 @@ def eval_complex(strans, sol, imaginary_unit="i", form="", authorized_func={}, l
         return (-1, "UnauthorizedFunc")
     if not equal(ans, sol):
         return (0, "NotEqual")
-    if form == "cartesian" and not is_complex_cartesian(ans):
+    if form == "cartesian":
+        if not is_complex_cartesian(ans):
             return (-1, "NotCplxCartesian")
-    # is_complex_cartesian_ratsimp,-1,"NotRatSimp","L'expression peut encore être simplifiée."
+        if checkratsimp and any(not is_rat_simp(part) for part in complex_cartesian_parts(ans)):
+            return (-1, "NotRatSimp")
     if form == "exponential" and not is_complex_exponential(ans):
             return (-1, "NotCplxExponential")
     return (100, "Success")
