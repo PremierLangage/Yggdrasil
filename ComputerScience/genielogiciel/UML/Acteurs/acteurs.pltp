@@ -6,7 +6,7 @@ img.acteur=$ acteur2.png
 
 introduction==
 
-<img src={{img.acteur}} alt='image stérotypique de l\'acteur' style=\"width:400px;\" />
+<img src={{img.acteur}} alt="image stérotypique de acteur" style=\"width:400px;\" />
 
 
 
