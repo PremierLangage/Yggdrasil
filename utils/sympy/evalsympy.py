@@ -1,8 +1,6 @@
 import sympy as sp
 from latex2sympy import *
 
-# Utils
-
 def equal(a, b, modulo=None):
     """
     Check if two expressions are equal after simplification.
@@ -11,7 +9,7 @@ def equal(a, b, modulo=None):
         return True
 
     diff = a - b
-    if diff.is_complex:
+    if isinstance(diff, sp.Expr) and diff.is_complex:
         diff = sp.expand_complex(diff)
     
     if modulo is None:
@@ -32,6 +30,18 @@ def equal_struct(p, q, modulo=None):
     """
     Check if two nested structures of lists and tuples of expressions 
     (where lists are viewed as sets) are equal.
+    
+    >>> equal_struct([1,2,3], [3,1,2])
+    True
+    
+    >>> equal_struct([sp.sqrt(2)/2, 0], [0, 1/sp.sqrt(2)])
+    True
+    
+    >>> equal_struct((1,2,3), (3,1,2))
+    False
+    
+    >>> equal_struct([(1, 2), (2, 3)], [(2, 3), (1, 2)])
+    True
     """
     
     # comparison of two lists (viewed as sets)
@@ -70,6 +80,18 @@ def duplicates(p):
     """
     Check if there are duplicates in lists inside a nested structure of
     lists and tuples of expressions.
+    
+    >>> duplicates([1, 2, 3, 2])
+    True
+    
+    >>> duplicates([0, sp.sqrt(2)/2, 1/sp.sqrt(2)])
+    True
+    
+    >>> duplicates([(1, 2), (2, 1)]) 
+    False
+    
+    >>> duplicates([[1, 2], [2, 1]]) 
+    True
     """
     
     # search duplicates in lists
@@ -77,7 +99,7 @@ def duplicates(p):
         if len(p) > 1:
             for i in range(len(p)):
                 for j in range(i+1, len(p)):
-                    if equal_struct(p[i], [j]):
+                    if equal_struct(p[i], p[j]):
                         return True
     
     # search duplicates in elements of lists and tuples                  
@@ -124,11 +146,30 @@ def is_coeff_mul(expr, x):
     return args.count(x) == 1 and sum([a.has(x) for a in args]) == 1
 
 def coeff_mul(expr, x):
+    """
+    Return the multiplicative coefficient.
+    
+    >>> sp.var('x')
+    >>> expr = sp.sympify("3*x/2", evaluate=False)
+    >>> coeff_mul(expr, x)
+    3/2
+    
+    >>> expr = sp.sympify("4*x/2", evaluate=False)
+    >>> coeff_mul(expr, x)
+    4/2
+    
+    >>> expr = sp.sympify("(1+sqrt(2))*x", evaluate=False)
+    >>> coeff_mul(expr, x)
+    1 + sqrt(2)
+    
+    >>> coeff_mul(x, x)
+    1
+    """
     args = arg_nested_mul(expr)
     args.remove(x)
-    if len(args)==0:
-        return 0
-    elif len(args)==1:
+    if len(args) == 0:
+        return sp.Integer(1)
+    elif len(args) == 1:
         return args[0]
     else:
         with sp.evaluate(False):
@@ -168,9 +209,9 @@ def is_rat_simp(expr):
 
 def is_frac_int(expr):
     """
-    Check if a sympy expression is a fraction of integers.
+    Check if an expression is a fraction of integers.
     """
-    args=arg_nested_mul(expr)
+    args = arg_nested_mul(expr)
     if len(args)>1 and sp.Integer(-1) in args:
         args.remove(sp.Integer(-1))
     with sp.evaluate(False):
@@ -199,27 +240,51 @@ def is_frac_int_irred(expr):
 def is_complex_cartesian(expr):
     """
     Check if a complex number is in cartesian form.
+    
+    >>> z = sp.sympify("I * (2 + I)", evaluate=False)
+    >>> is_complex_cartesian(z)
+    False
+
+    >>> z = sp.sympify("(1 + sqrt(2)) * I + 1 - sqrt(3)", evaluate=False)
+    >>> is_complex_cartesian(z)
+    True
+    
+    >>> z = sp.sympify("I + sqrt(2) * I", evaluate=False)
+    >>> is_complex_cartesian(z)
+    False
     """
     args = arg_nested_add(expr)
     ni = [is_coeff_mul(a, sp.I) for a in args].count(True)
     nr = [a.is_real for a in args].count(True)
-    return ni <= 1 and ni+nr == len(args)
+    return ni <= 1 and ni + nr == len(args)
 
 def complex_cartesian_parts(expr):
     """
     Return the real and imaginary parts.
+    
+    >>> z = sp.sympify("(1 + sqrt(2)) * I + 1 - sqrt(3)", evaluate=False)
+    >>> complex_cartesian_parts(z)
+    (-sqrt(3) + 1, 1 + sqrt(2))
+    
+    >>> z = sp.sympify("1 + sqrt(2)", evaluate=False)
+    >>> complex_cartesian_parts(z)
+    (1 + sqrt(2), 0)
+    
+    >>> z = sp.sympify("I", evaluate=False)
+    >>> complex_cartesian_parts(z)
+    (0, 1)
     """
-    args=arg_nested_add(expr)
-    im=next(coeff_mul(a,sp.I) for a in args if is_coeff_mul(a,sp.I))
-    lstre=[a for a in args if a.is_real]
-    if len(lstre)==0:
-        re=sp.Integer(0)
-    elif len(lstre)==1:
-        re=lstre[0]
+    args = arg_nested_add(expr)
+    im = next((coeff_mul(a, sp.I) for a in args if is_coeff_mul(a, sp.I)), 0)
+    lstre = [a for a in args if a.is_real]
+    if len(lstre) == 0:
+        re = sp.Integer(0)
+    elif len(lstre) == 1:
+        re = lstre[0]
     else:
         with sp.evaluate(False):
             re=sp.Add(*lstre)
-    return (re,im)
+    return (re, im)
 
 def is_complex_cartesian_ratsimp(expr):
     """
@@ -250,22 +315,51 @@ def is_complex_exponential(expr):
         return True
     return False
 
-def is_poly_expanded(expr,x):
+def is_poly_expanded(expr, x):
     """
-    Check if a polynomial is in expanded form.
+    Check if a polynomial is expanded.
+    
+    >>> sp.var('x')
+    >>> is_poly_expanded(x * (x + 1), x)
+    False
+    
+    >>> is_poly_expanded(x + x**2 + 3*x, x)
+    True
     """
-    args=arg_nested_add(expr)
+    args = arg_nested_add(expr)
     return all(is_coeff_exponent(a,x) for a in args)
 
-def is_poly_factorized(expr,x,domain):
+def is_poly_factorized(expr, x, domain='R'):
     """
     Check if a polynomial is factorized.
+
+    >>> sp.var('x')
+    >>> is_poly_factorized(x**2 - 1, x)
+    False
+
+    >>> is_poly_factorized(-(x**2 + 1) * (2*x - 1)**3, x)
+    True
+    
+    >>> is_poly_factorized(3 * (x**2 - 1) * (- x - 1), x)
+    False
+    
+    >>> is_poly_factorized(x**2 + 1, x, domain='C')
+    False
     """
-    args=arg_nested_mul(expr)
+    if domain == 'C':
+        kwargs = {'extension': [sp.I]}
+    else:
+        kwargs = {'domain': domain}
+        
+    args = arg_nested_mul(expr)
     for a in args:
-        if type(a)==sp.Pow:
-            a=a.args[0]
-        if not sp.Poly(a,x,domain=domain).is_irreducible:
+        if type(a) == sp.Pow:
+            exponent = a.args[1]
+            if exponent.is_Integer and exponent > 0:
+                a = a.args[0]
+            else:
+                return False
+        if not sp.Poly(a, x, **kwargs).is_irreducible:
             return False
     return True
 
@@ -359,7 +453,7 @@ def eval_complex(strans, sol, imaginary_unit="i", form="", authorized_func={}, l
     return (100, "Success")
 
 @add_feedback
-def eval_poly(strans, sol, x, domain="RR", imaginary_unit="i", form="", authorized_func={}, local_dict={}):
+def eval_poly(strans, sol, x, domain='R', imaginary_unit='i', form='', authorized_func={}, local_dict={}):
     """
     Evaluate an answer when the solution is a polynomial.
     """
