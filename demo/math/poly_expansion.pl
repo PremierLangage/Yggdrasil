@@ -3,6 +3,9 @@ extends = /model/mathinput.pl
 title = Développement
 
 before ==
+keyboards_JSON['virtualKeyboards'] = "elementary"
+input.config = keyboards_JSON
+
 var('x')
 
 P = rand_int_poly(1, 2, 5, x)
