@@ -1,5 +1,5 @@
 
-extends = /ComputerScience/automaton/templates/base.pl
+extends = base.pl
 
 before==#|py|
 from automaton import Automaton
@@ -165,6 +165,7 @@ form==#|html|
     }
 </script>
 ==
+
 
 
 
