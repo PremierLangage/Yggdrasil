@@ -119,19 +119,19 @@ def str2interval(s, notation="bracket", local_dict={}):
     pattern = re.compile(r'^\[(.*),(.*)\]$')
     
     if pattern.search(s) is not None:
-        return sp.Interval(str2sympy(pattern.search(s).group(1), evaluate=True),str2sympy(pattern.search(s).group(2), evaluate=True))
+        return sp.Interval(sp.simplify(str2sympy(pattern.search(s).group(1))),sp.simplify(str2sympy(pattern.search(s).group(2))))
         
     pattern = re.compile(r'^\[(.*),(.*)\[$')
     if pattern.search(s) is not None:
-        return sp.Interval.Ropen(str2sympy(pattern.search(s).group(1), evaluate=True),str2sympy(pattern.search(s).group(2), evaluate=True))
+        return sp.Interval.Ropen(sp.simplify(str2sympy(pattern.search(s).group(1))),sp.simplify(str2sympy(pattern.search(s).group(2))))
         
     pattern = re.compile(r'^\](.*),(.*)\]$')
     if pattern.search(s) is not None:
-        return sp.Interval.Lopen(str2sympy(pattern.search(s).group(1), evaluate=True),str2sympy(pattern.search(s).group(2), evaluate=True))
+        return sp.Interval.Lopen(sp.simplify(str2sympy(pattern.search(s).group(1))),sp.simplify(str2sympy(pattern.search(s).group(2))))
         
     pattern = re.compile(r'^\](.*),(.*)\[$')
     if pattern.search(s) is not None:
-        return sp.Interval.open(str2sympy(pattern.search(s).group(1), evaluate=True),str2sympy(pattern.search(s).group(2), evaluate=True))
+        return sp.Interval.open(sp.simplify(str2sympy(pattern.search(s).group(1))),sp.simplify(str2sympy(pattern.search(s).group(2))))
         
     raise ValueError()
     
