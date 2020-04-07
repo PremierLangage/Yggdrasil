@@ -2,7 +2,7 @@ import sympy as sp
 import sympy.parsing.sympy_parser as prs
 import re
 
-def str2sympy(s,local_dict={}):
+def str2sympy(s, local_dict={}, evaluate=False):
     """
     Convert a string into an expression or a nested structure of
     lists and tuples of expressions.
@@ -35,7 +35,7 @@ def str2sympy(s,local_dict={}):
     
     transformations=prs.standard_transformations + (prs.implicit_multiplication_application,prs.convert_xor)
     
-    with sp.evaluate(False):
+    with sp.evaluate(evaluate):
         return prs.parse_expr(s,local_dict=local_dict,transformations=transformations,evaluate=False)
 
 def latex2str(s):
