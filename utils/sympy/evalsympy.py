@@ -565,7 +565,7 @@ def eval_rset(strans, sol):
             for j in range(i+1,len(ans)):
                 if sp.Intersection(ans[i],ans[j]) != sp.EmptySet:
                     return (-1,"NonDisjoint")
-    if not (sp.Union(*ans).is_subset(sol) and sol.is_subset(sp.Union(*ans))):
+    if ans[0] != sol:
         return (0,"NotEqual")
     #for i in range(len(ans)):
     #    if not is_rat_simp(ans[i]):
