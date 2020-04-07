@@ -1,0 +1,52 @@
+.exercise__body {
+    width: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 20px 20px;
+}
+
+table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table .input-component {
+  width: 100px;
+  margin: 0 auto;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* tr:nth-child(even){background-color: #f2f2f2;} */
+
+/* tr:hover {background-color: #ddd;} */
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #007bff;
+  color: white;
+}
+
+.exercise__instructions  {
+    font-size: .9rem;
+    margin-bottom: 8px;
+    background: #f8f8f8;
+    color: #666;
+    padding: 15px 29px 15px 15px;
+}
+
+.match-list-component .align-right, .match-list-component .align-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
