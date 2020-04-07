@@ -1,5 +1,5 @@
 
-extends = /automaton/templates/editor.pl
+extends = /ComputerScience/automaton/templates/editor.pl
 
 maxattempt = 5
 
