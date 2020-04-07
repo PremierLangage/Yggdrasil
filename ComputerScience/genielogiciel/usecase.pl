@@ -24,7 +24,9 @@ questions==
 + Découper les sous fonctions d'un cas d'utilisation en cas d'utilisation plus petits. 
 + Modéliser des opérations élémentaires comme des cas d'utilisation
 + Mélanger des niveaux d'abstraction dans le dialogue du cas d'utilisation
-+ Définir les niveau de sécurité en liant les acteurs aux niveaux de sécurité
++ Définir les niveaux de sécurité en liant les  niveaux de sécurité aux acteurs
+
+
 
 ==
 
