@@ -570,7 +570,7 @@ def eval_rset(strans, sol):
     #for i in range(len(ans)):
     #    if not is_rat_simp(ans[i]):
     #        return (-1,"NotRatSimp","Certains expressions numériques ne sont pas simplifiés.")
-    return (100,"","")
+    return (100,"")
 
 def ans_antiderivative(strans,sol,x,local_dict={}):
     """
