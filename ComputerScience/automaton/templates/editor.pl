@@ -1,7 +1,8 @@
 extends = /ComputerScience/automaton/templates/base.pl
 
 maxattempt = 3
-
+title= 
+text=
 before== #|py|
 from automaton import Automaton
 score = -1
@@ -62,6 +63,7 @@ form ==
     }
 </script>
 ==
+
 
 
 
