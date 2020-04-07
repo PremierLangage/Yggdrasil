@@ -23,7 +23,7 @@ alphabet = ', '.join(list(alphabet))
 evaluator== #|py|
 from automaton import Automaton
 if attempt >= maxattempt:
-    grade = (score, '<p class="warning-state">L\'automate attendu était le suivant:</p>')
+    grade = (score, '<p class="warning-state">Un automate attendu était le suivant:</p>')
 else:
     attempt += 1
     match, error = Automaton.compare(automaton, editor)
