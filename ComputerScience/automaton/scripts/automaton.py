@@ -19,7 +19,7 @@ class Automaton:
 
     def __init__(self, fa):
         if not isinstance(fa, fsm.fsm):
-            raise TypeError('parameter "fa" must be an instance of fsm.fsm')
+            raise TypeError('argument "fa" must be an instance of fsm.fsm')
 
         self.fa = fa
         self.stringifyStates()
@@ -237,9 +237,9 @@ class Automaton:
         try:
             a = Automaton.parse(a)
             b = Automaton.parse(b)
+            return a.fa.equivalent(b.fa), None
         except Exception as e:
             return False, str(e)
-        return a.fa.equivalent(b.fa), None
     
     @staticmethod
     def informations(editor: AutomatonEditor):
@@ -317,16 +317,19 @@ class Automaton:
         transitions = automaton['transitions']
         alphabetLength = len(automaton['alphabet'])
 
+        # calculate reachable states
         reachables = []
         for state in initials:
             reachables.extend(reachableStates(automaton, state, iterator))
         reachables = set(reachables)
 
+        # calculate coreachable states
         coreachables = []
         for state in finals:
             coreachables.extend(coReachableStates(automaton, state, iterator))
         coreachables = set(coreachables)
 
+        # check whether the automaton is infinite
         processed = set()
         for transition in transitions:
             toState = transition['toState']
@@ -336,6 +339,7 @@ class Automaton:
                 break
             processed.add(fromState)
 
+        # check whether the automaton is deterministic and or complete
         for state in states:
             outgoing = []
             for transition in transitions:
@@ -456,6 +460,7 @@ class Automaton:
         self.fa = fsm.fsm(
             alphabet=alphabet, states = states, initial=initial, finals=finals, map=map
         )
+
 
 
 
