@@ -13,17 +13,14 @@ s0:a>s2"""
 questions==
 ** Cet automate est-il
 + deterministe
-+ complet
+- complet
 + accessible
 - co-accessible
 - rouge
-+ barbu
+- barbu
 
-
-** Question 2
-+ free
-+ no
 
 ==
+
 
 
