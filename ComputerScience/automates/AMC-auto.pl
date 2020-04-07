@@ -9,7 +9,7 @@ mk_auto == #|python|
 viewer.automaton+="s0:a>s2"
 ==
 
-before == 
+before == #|python|
 import random as rd
 from customradio import CustomRadio
 from customcheckbox import CustomCheckbox
