@@ -6,6 +6,7 @@ viewer.automaton+="""
 #states
 s4
 s5
+#transitions
 s0:a>s2"""
 ==
 
