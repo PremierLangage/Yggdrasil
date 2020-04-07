@@ -12,7 +12,6 @@ input =: MathInput
 # La clé before contient un script python qui est exécuté au lancement de l'exercice
 # Comme on est dans le modèle "maths", il y a eu automatiquement un "from sympy import *" et un "import random as rd"
 before ==
-import pygg
 # Les deux lignes suivantes permettent de choisir le clavier virtuel du champ de réponse
 keyboards_JSON['virtualKeyboards']="complexes"
 input.config = keyboards_JSON
