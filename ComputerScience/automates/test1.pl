@@ -1,3 +1,4 @@
+#component framework - écrou cassé
 #cliquer sur test dans l'arboressence
 #type de l'exercice
 extends=/model/AMC_TXT.pl 
@@ -27,6 +28,7 @@ questions==
 + Définir les niveaux de sécurité en liant les  niveaux de sécurité aux acteurs
 
 ==
+
 
 
 
