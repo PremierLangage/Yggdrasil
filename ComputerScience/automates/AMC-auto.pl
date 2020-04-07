@@ -33,6 +33,7 @@ for i, q in enumerate(list_questions):
         comp[i].shuffle()
 ==
 
+title = Automaton exo test
 intro ==
 Ce quiz contient {{nbstep}} questions.
 ==
