@@ -5,12 +5,16 @@ extends = /model/multistep.pl
 @ tomate.py
 
 settings.cumulative % false
+mk_auto ==
+viewer.automaton+="s0:a>s2"
+==
 
 before == #|python|
 import random as rd
 from customradio import CustomRadio
 from customcheckbox import CustomCheckbox
 from AMC import parse_AMC_TXT
+
 from tomate import createauto
 
 # si on veut un truc aléatoire il faut produire l'automate ici
