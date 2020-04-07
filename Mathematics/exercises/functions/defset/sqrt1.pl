@@ -10,8 +10,6 @@ b=randint(-6,6,[0])
 x=symbols('x')
 f=sqrt(a*x+b)
 latexf=latex(f)
-from sympy.solvers.inequalities import solve_univariate_inequality
-sol = solve_univariate_inequality(a*x+b >= 0, x, relational=False)
 ==
 
 text ==
@@ -19,9 +17,9 @@ Déterminer l'ensemble de définition de la fonction $%f : x \mapsto {{latexf}}%
 ==
 
 evaluator==
-score =  100
-feedback = str(latex2rset(input.value))
-#score, feedback, _r = eval_rset(input.value, sol)
+from sympy.solvers.inequalities import solve_univariate_inequality
+sol = solve_univariate_inequality(a*x+b >= 0, x, relational=False)
+score, feedback, _ = eval_rset(input.value, sol)
 ==
 
 
