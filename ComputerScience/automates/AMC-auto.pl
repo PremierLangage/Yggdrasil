@@ -19,6 +19,7 @@ from tomate import createauto
 
 # si on veut un truc aléatoire il faut produire l'automate ici
 viewer.automaton = createauto()
+exec(mk_auto)
 
 list_questions = parse_AMC_TXT(questions)
 
