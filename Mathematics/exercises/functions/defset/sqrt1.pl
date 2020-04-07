@@ -29,6 +29,7 @@ score, feedback, _ = eval_rset(input.value, sol)
 feedback += str(latex2rset(input.value))
 ==
 
+input.debug % true
 
 
 
