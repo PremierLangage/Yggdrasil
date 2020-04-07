@@ -1,5 +1,5 @@
 
-extends = /ComputerScience/automaton/templates/base.pl
+extends = base.pl
 
 maxattempt = 3
 
@@ -84,6 +84,7 @@ Donnez un exemple d'automate respectant les propriétés suivantes:
 form ==
 {{ editor|component }}
 ==
+
 
 
 
