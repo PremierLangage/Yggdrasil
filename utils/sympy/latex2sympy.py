@@ -21,6 +21,9 @@ def str2sympy(s,local_dict={}):
     
     >>> str2sympy("1+i",{'i':sp.I})
     1 + I
+    
+    >>> str2sympy("{0, pi, 2 pi}")
+    [0, pi, 2*pi]
     """
     s.strip()
     
@@ -38,35 +41,47 @@ def str2sympy(s,local_dict={}):
 def latex2str(s):
     r"""
     Convert a LaTeX string into a SymPy-readable string.
+
+    >>> latex2str("e^{i \pi}")
+    'e^(i  pi)'
+        
+    >>> latex2str("-\infty")
+    '-oo'
     
-    >>> latex2str(r"\frac{\pi}{2}")
-    '( pi)/(2)'
+    >>> latex2str(r"\frac{\pi}{4}")
+    '( pi)/(4)'
+    
+    >>> latex2str(r"\left\{0, \frac{1}{2} \right\}")
+    '{0, (1)/(2) }'
     """
     
     # delete meaningless substrings
     lst=[r"\mleft", r"\mright", r"\left", r"\right"]
     for s1 in lst:
-        s = s.replace(s1,"")
+        s = s.replace(s1, "")
     
     # replace \frac{}{}
-    pattern = re.compile(r'^(.*)\\frac\s*{((?:(?!frac).)*)}{((?:(?!frac).)*)}(.*)$')
-    while pattern.search(s) is not None:
-        s = pattern.sub(r"\1(\2)/(\3)\4", s)
+    #pattern = re.compile(r'^(.*)\\frac\s*{((?:(?!frac).)*)}{((?:(?!frac).)*)}(.*)$')
+    #while pattern.search(s) is not None:
+    #    s = pattern.sub(r"\1(\2)/(\3)\4", s)
 
     # replace some substrings
-    lst=[(r"\infty", "oo"),
-         (r"\times", "*"),
-         (r"\arccos", "acos"),
-         (r"\arcsin", "asin"),
-         (r"\arctan", "atan"),
+    lst=[(r"\frac",""),
+         (r"}{", ")/("),
+         (r"} {", ")/("),
          (r"\{",r"\lbrace"),
          (r"\}",r"\rbrace"),
-         ("\\", " "),
          ("{", "("),
          ("}", ")"),
          (r"\lbrace","{"),
          (r"\rbrace","}"),
-         (r"\emptyset","{}")]
+         (r"\infty", "oo"),
+         (r"\times", "*"),
+         (r"\arccos", "acos"),
+         (r"\arcsin", "asin"),
+         (r"\arctan", "atan"),
+         (r"\emptyset","{}"),
+         ("\\", " ")]
          
     for (s1,s2) in lst:
         s = s.replace(s1,s2)
@@ -77,15 +92,6 @@ def latex2str(s):
 def latex2sympy(s, local_dict={}):
     r"""
     Convert a LaTeX string into a SymPy expression without simplification.
-
-    >>> latex2sympy("\pi^{3}")
-    pi**3
-    
-    >>> latex2sympy("-\infty")
-    -oo
-    
-    >>> latex2sympy(r"\frac{2}{4}")
-    2/4
     """
     return str2sympy(latex2str(s), local_dict)
     
@@ -102,10 +108,9 @@ def str2interval(s, notation="bracket", local_dict={}):
     >>> str2interval("[1,oo[")
     Interval(1, oo)
     """
-    
     # TODO : english notation
     # TODO : raise error when closed infinity endpoint
-    
+    # TODO : , or ; as separator ?
     s = s.strip()
     
     pattern = re.compile(r'^{(.*)}$')
