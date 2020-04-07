@@ -5,11 +5,11 @@ extends = /model/multistep.pl
 @ tomate.py
 
 settings.cumulative % false
-mk_auto ==
+mk_auto == #|python|
 viewer.automaton+="s0:a>s2"
 ==
 
-before == #|python|
+before == 
 import random as rd
 from customradio import CustomRadio
 from customcheckbox import CustomCheckbox
