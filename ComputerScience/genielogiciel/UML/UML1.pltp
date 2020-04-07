@@ -1,0 +1,33 @@
+
+title= Actors et Use Cases (Acteurs et Cas d'utilisation)
+
+
+introduction==
+
+# Les Acteurs et Cas d'utilisation
+
+Les objectifs de la modélisation par acteurs sont :  
+ - identifier les utilisateurs du système  
+ - définir le rôle des utilisateurs du système
+ - identifier les besoins des utilisateurs du système  
+ - identifier les échanges de votre système avec l'extérieur  
+
+Les objectifs de la modélisation par cas d'utilisation sont :  
+ - identifier tout les besoins (objectifs) des utilisateurs   
+ - Prouver que si tout ce passe bien l'acteur atteint son objectif  
+ - décrire l'interaction d'un utilisateur avec le système pour toutes les situations d'usage
+
+
+Ces deux modélisations vont nous permettre d'identifier tout les concepts et objets que doit manipuler le système.
+
+Ce sera les deux autre modèles que nous allons travailler en suite.
+
+Voici quelques questions pour vous préparer à la suite.
+
+DR
+
+==
+
+@ acteurs.pl
+@ usecase.pl 
+
