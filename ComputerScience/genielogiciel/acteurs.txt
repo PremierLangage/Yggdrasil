@@ -18,11 +18,12 @@
 + vrai, et certains acteurs ne font qu'apportr des données et d'autre sont de pur clients ;
 - Faux,  il faut distinguer les acteurs qui fournissent des données comme les base de données des acteurs qui viennent chercher des données.
 
-** Ce qui est important quand on cherche les acteurs c'est 
+** Le plus important quand on cherche les acteurs c'est 
 - de pas être noyé par le nombre d'acteurs
 + l'exhaustivité 
 + De penser à tout les acteurs qui fournissent des données
 - de pas se tromper de noms 
+
 
 ** Le caissier est il un acteur du système ? cela dépend de la frontière
 - oui si l'on modélise tout le super marché
@@ -35,4 +36,5 @@
 + Les logiciels externe que vous ne souhaiter pas recoder en interne.
 + Les logiciels du SI (système d'information) dans lequel doit être plongé votre système
 + Les objectifs auquels doit répondre le système, chaque objectif doit être lié soit à un acteur (soit une partie prenante)
+
 
