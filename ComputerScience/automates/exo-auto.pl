@@ -5,7 +5,7 @@ mk_auto == #|python|
 viewer.automaton+="""
 #states
 s4
-s5
+s5"""
 ==
 
 #le fichier autretomate aura comme nom tomate.py
