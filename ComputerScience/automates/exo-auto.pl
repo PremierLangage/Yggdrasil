@@ -19,4 +19,11 @@ questions==
 - rouge
 + barbu
 
+
+** Question 2
++ free
++ no
+
 ==
+
+
