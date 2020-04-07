@@ -26,7 +26,7 @@ from sympy.solvers.inequalities import solve_univariate_inequality
 x=symbols('x')
 sol = solve_univariate_inequality(a*x+b >= 0, x, relational=False)
 score, feedback, _ = eval_rset(input.value, sol)
-feedback += str(latex2rset(input.value))
+feedback += str(latex2rset(input.value)) + str(sol)
 ==
 
 input.debug % true
