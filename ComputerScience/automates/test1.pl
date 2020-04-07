@@ -5,6 +5,7 @@ extends=/model/AMC_TXT.pl
 
 title= Questions sur les Use Case 
 
+# une étoile radio deux check box
 questions==
 * Use case ce traduit en français par
 - Histoire utilisateur
@@ -28,6 +29,7 @@ questions==
 + Définir les niveaux de sécurité en liant les  niveaux de sécurité aux acteurs
 
 ==
+
 
 
 
