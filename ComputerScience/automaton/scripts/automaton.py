@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-#  source.py
+#  automaton.py
 #
 #  Copyright 2020 Cisse Mamadou [mciissee@gmail.com]
 
