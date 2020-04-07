@@ -151,7 +151,7 @@ def coeff_mul(expr, x):
     """
     Return the multiplicative coefficient.
     
-    >>> sp.var('x')
+    >>> x = sp.Symbol('x')
     >>> expr = sp.sympify("3*x/2", evaluate=False)
     >>> coeff_mul(expr, x)
     3/2
@@ -217,7 +217,7 @@ def is_rat_simp(expr):
     """
     if isinstance(expr, sp.Expr):
         if sp.simplify(expr).is_rational:
-            return is_frac_int_irred(expr)
+            return is_frac_int(expr) and is_frac_irred(expr)
         elif expr.is_Atom or expr.is_Boolean:
             return True
         else:
@@ -252,7 +252,7 @@ def is_frac_int(expr):
 
 def is_frac_irred(expr):
     """
-    Check if a sympy fraction of integers is irreducible.
+    Check if a fraction of integers is irreducible.
     """
     args = arg_nested_mul(expr)
     # remove sign
@@ -263,11 +263,6 @@ def is_frac_irred(expr):
     f = sp.fraction(expr, exact=True)
     return sp.gcd(f[0],f[1]) == 1 and f[1] > 0
 
-def is_frac_int_irred(expr):
-    """
-    Check if a sympy expression is an irreducible fraction of integers.
-    """
-    return is_frac_int(expr) and is_frac_irred(expr)
 
 def is_complex_cartesian(expr):
     """
@@ -345,7 +340,7 @@ def is_poly_expanded(expr, x):
     """
     Check if a polynomial is expanded.
     
-    >>> sp.var('x')
+    >>> x = sp.Symbol('x')
     >>> is_poly_expanded(x * (x + 1), x)
     False
     
@@ -359,7 +354,7 @@ def is_poly_factorized(expr, x, domain='R'):
     """
     Check if a polynomial is factorized.
 
-    >>> sp.var('x')
+    >>> x = sp.Symbol('x')
     >>> is_poly_factorized(x**2 - 1, x)
     False
 
@@ -503,7 +498,7 @@ def eval_poly(strans, sol, x, domain='R', imaginary_unit='i', form='', authorize
     return (100, "Success")
 
 @add_feedback
-def eval_set(strans, sol, local_dict={}):
+def eval_set(strans, sol, checkratsimp=True, local_dict={}):
     """
     Evaluate an answer when the solution is a finite set.
     """
@@ -518,6 +513,8 @@ def eval_set(strans, sol, local_dict={}):
         return (-1, "Duplicates")
     if not equal_struct(ans, sol):
         return (0, "NotEqual")
+    if checkratsimp and not is_rat_simp(part):
+        return (-1, "NotRatSimp")
     return (100, "Success")
 
 @add_feedback
@@ -553,6 +550,27 @@ def eval_matrix(matans, sol):
     if not ans.equals(sol):
         return (0, "NotEqual")
     return (100, "Success")
+
+@add_feedback
+def eval_rset(strans, sol):
+    """
+    Evaluate an answer when the solution is an union of intervals.
+    """
+    try:
+        ans = latex2rset(strans)
+    except:
+        return (-1,"NotRSet")
+    if len(ans) > 1:
+        for i in range(len(ans)):
+            for j in range(i+1,len(ans)):
+                if sp.Intersection(ans[i],ans[j])!=sp.EmptySet():
+                    return (-1,"NonDisjoint")
+    if sp.SymmetricDifference(sp.Union(*ans),sol)!=sp.EmptySet():
+        return (0,"NotEqual")
+    #for i in range(len(ans)):
+    #    if not is_rat_simp(ans[i]):
+    #        return (-1,"NotRatSimp","Certains expressions numériques ne sont pas simplifiés.")
+    return (100,"","")
 
 def ans_antiderivative(strans,sol,x,local_dict={}):
     """
