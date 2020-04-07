@@ -43,6 +43,7 @@ textstep ==
 ==
 
 formstep ==
+{{ viewer|component }}
 {{ comp[step]|component }}
 ==
 
