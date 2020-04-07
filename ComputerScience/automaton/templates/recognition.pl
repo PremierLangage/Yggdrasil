@@ -1,5 +1,5 @@
 
-extends = /automaton/templates/base.pl
+extends = /ComputerScience/automaton/templates/base.pl
 
 maxattempt = 3
 
@@ -41,6 +41,7 @@ form ==
 {{ viewer|component }}
 {{ checkbox|component }}
 ==
+
 
 
 
