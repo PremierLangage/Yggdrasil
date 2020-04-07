@@ -2,6 +2,7 @@
 extends = /model/multistep.pl
 
 @ /utils/format/AMC.py
+@ tomate.py
 
 settings.cumulative % false
 
@@ -10,8 +11,10 @@ import random as rd
 from customradio import CustomRadio
 from customcheckbox import CustomCheckbox
 from AMC import parse_AMC_TXT
+from tomate import createauto
 
 # si on veut un truc aléatoire il faut produire l'automate ici
+viewer.automaton = createauto()
 
 list_questions = parse_AMC_TXT(questions)
 
