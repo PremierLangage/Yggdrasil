@@ -19,8 +19,7 @@ Déterminer l'ensemble de définition de la fonction $%f : x \mapsto {{latexf}}%
 ==
 
 evaluator==
-score,_,texterror=ans_real_set(answer['1'],sol)
-feedback=str(str2realset(answer['1']))
+score, feedback, _r = eval_rset(input.value, sol)
 ==
 
 
