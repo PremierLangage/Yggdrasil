@@ -6,7 +6,7 @@ viewer.automaton+="""
 s0:a>s2"""
 ==
 
-#le fichier autretomate aura comme nom tomate.py
+# le fichier autretomate aura comme nom tomate.py
 # il sera pris à place de tomate.py
 @autretomate.py [tomate.py]
 
