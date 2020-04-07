@@ -18,6 +18,7 @@ Déterminer l'ensemble de définition de la fonction $%f : x \mapsto {{latexf}}%
 
 evaluator==
 from sympy.solvers.inequalities import solve_univariate_inequality
+x=symbols('x')
 sol = solve_univariate_inequality(a*x+b >= 0, x, relational=False)
 score, feedback, _ = eval_rset(input.value, sol)
 ==
