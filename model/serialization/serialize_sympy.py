@@ -9,9 +9,6 @@ def deserialize(arg):
         elif arg['sympy_type']=='FiniteSet':
                 with evaluate(False):
                     return FiniteSet(*sympify(arg['str']))
-        elif arg['sympy_type']=='Set':
-                with evaluate(False):
-                    return sympify(arg['str'])
     elif isinstance(arg, dict):
         return {k: deserialize(v) for k, v in arg.items()}
     elif isinstance(arg, list):
@@ -24,8 +21,6 @@ def deserialize(arg):
 def serialize(arg):
     if isinstance(arg, FiniteSet):
         return {'sympy_type':'FiniteSet','str':str(arg.args),'latex':latex(arg)}
-    elif isinstance(arg, Set):
-        return {'sympy_type':'Set','str':str(arg),'latex': latex(arg)}
     elif isinstance(arg, (Expr,Matrix)):
         try:
             arglatex = latex(arg)
