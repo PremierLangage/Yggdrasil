@@ -45,12 +45,13 @@ Déterminer l'ensemble des réels $% x %$ tels que $$ {{ineq_tex}}. $$ Ecrire ce
 ==
 
 evaluator==
-score,feedback,_=eval_rset(input.value,sol)
+score,feedback,_=eval_rset(input.value, sol)
 ==
 
 solution ==
 La solution est $% {{sol_tex}} %$.
 ==
+
 
 
 
