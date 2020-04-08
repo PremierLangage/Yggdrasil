@@ -57,12 +57,17 @@ form ==
 {{ editor|component }}
 
 <script>
+    /**
+    * this function is called by the platform once the exercice is loaded.
+    * @param nodes an object containing a reference to the nodes of the page (title, text, form, actions, submit...)
+    */
     function onReadyPL(nodes) {
-        const submit = nodes.submit;
+        const submit = nodes.submit; // a reference to the submit button
         submit.attr("disabled", ({{ attempt }} >= {{ maxattempt }}) || {{ score }} == 100);
     }
 </script>
 ==
+
 
 
 
