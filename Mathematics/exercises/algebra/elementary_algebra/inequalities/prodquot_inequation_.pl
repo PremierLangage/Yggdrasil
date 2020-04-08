@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathexpr.pl
+extends = /model/mathinput.pl
 
 title = Inéquation produit/quotient
 
@@ -51,5 +51,6 @@ score,_,feedback=ans_rset(input1.value,sol)
 solution ==
 La solution est $% {{sol_tex}} %$.
 ==
+
 
 
