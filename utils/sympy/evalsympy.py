@@ -565,6 +565,7 @@ def eval_rset(strans, sol):
     """
     try:
         ans = latex2rset(strans)
+        ans = simplify_rset(ans)
     except:
         return (-1,"NotRSet")
     if len(ans) > 1:
@@ -572,7 +573,7 @@ def eval_rset(strans, sol):
             for j in range(i+1,len(ans)):
                 if sp.Intersection(ans[i],ans[j]) != sp.EmptySet:
                     return (-1,"NonDisjoint")
-    if sp.Union(*simplify_rset(ans)) != sol:
+    if sp.Union(*ans) != sol:
         return (0,"NotEqual")
     #for i in range(len(ans)):
     #    if not is_rat_simp(ans[i]):
