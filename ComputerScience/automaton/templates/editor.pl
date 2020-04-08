@@ -66,6 +66,8 @@ form== #|html|
     */
     function onReadyPL(nodes) {
         const submit = nodes.submit; // a reference to the submit button
+
+        // hide submit button if needed.
         submit.attr("disabled", ({{ attempt }} >= {{ maxattempt }}) || {{ score }} == 100);
     }
 </script>
