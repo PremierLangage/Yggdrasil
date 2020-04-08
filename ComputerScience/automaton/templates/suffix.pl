@@ -9,7 +9,8 @@ alphabet, suffix, automaton = Generator.suffix(3, 3)
 ==
 
 title = Automates Suffixes
-text ==
+
+text == #|html|
 Pour cette question, on considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage **L1** = {{ '{' }}  mots se terminant par **{{ suffix }}** {{ '}' }} <br>
 {% if attempt < maxattempt and score != 100 %}
@@ -18,6 +19,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 </p>
 {% endif %}
 ==
+
 
 
 
