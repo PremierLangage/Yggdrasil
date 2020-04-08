@@ -41,7 +41,7 @@ else:
         grade=(score, '<p class="error-state">L\'automate que vous avez construit ne correspond pas à une réponse attendue.</<p>')
 ==
 
-form == #|html|
+form== #|html|
 <!-- RENDER AUTOMATON VIEWER IF MAX ATTEMPT IS REACHED -->
 {% if attempt >= maxattempt %}
 {{ viewer|component }}
