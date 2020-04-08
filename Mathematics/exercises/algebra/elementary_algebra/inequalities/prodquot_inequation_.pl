@@ -46,7 +46,7 @@ Déterminer l'ensemble des réels $% x %$ tels que $$ {{ineq_tex}}. $$ Ecrire ce
 
 evaluator==
 var('x')
-sol=solveset(ineq,x,domain=S.Reals)
+sol = solveset(ineq,x,domain=S.Reals)
 score,feedback,_=eval_rset(input.value, sol)
 ==
 
