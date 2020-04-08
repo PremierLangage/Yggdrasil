@@ -551,6 +551,13 @@ def eval_matrix(matans, sol):
         return (0, "NotEqual")
     return (100, "Success")
 
+def simplify_rset(lst):
+    for i, interv in enumerate(lst):
+        left = sp.simplify(interv.left)
+        right = sp.simplify(interv.right)
+        lst[i] =  sp.Interval(left, right, interv.left_open, interv.right_open)
+    return lst
+
 @add_feedback
 def eval_rset(strans, sol):
     """
@@ -565,7 +572,7 @@ def eval_rset(strans, sol):
             for j in range(i+1,len(ans)):
                 if sp.Intersection(ans[i],ans[j]) != sp.EmptySet:
                     return (-1,"NonDisjoint")
-    if ans[0] != sol:
+    if sp.Union(*simplify_rset(ans)) != sol:
         return (0,"NotEqual")
     #for i in range(len(ans)):
     #    if not is_rat_simp(ans[i]):
