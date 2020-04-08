@@ -165,7 +165,7 @@ def latex2rset(s, local_dict={}):
         elif a.strip() == r"\R":
             rset.append(sp.S.Reals)
         else:
-            rset.append(latex2interval(s))
+            rset.append(latex2interval(a))
     return rset
 
 def FiniteSet2struct(S):
