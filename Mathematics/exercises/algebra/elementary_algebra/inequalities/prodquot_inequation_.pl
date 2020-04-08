@@ -8,7 +8,7 @@ param.roots=int
 
 before ==
 keyboards_JSON['virtualKeyboards']="sets"
-input1.config = keyboards_JSON
+input.config = keyboards_JSON
 
 var('x')
 
@@ -45,7 +45,7 @@ Déterminer l'ensemble des réels $% x %$ tels que $$ {{ineq_tex}}. $$ Ecrire ce
 ==
 
 evaluator==
-score,_,feedback=ans_rset(input1.value,sol)
+score,_,feedback=eval_rset(input.value,sol)
 ==
 
 solution ==
