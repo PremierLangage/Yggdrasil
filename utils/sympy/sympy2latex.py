@@ -76,7 +76,7 @@ class CustomLatexPrinter(LatexPrinter0):
             
         else:
             if i.left_open:
-                if self._settings["interv_rev_brack"]:
+                if "interv_rev_brack" in self._settings and self._settings["interv_rev_brack"]:
                     left = ']'
                 else:
                     left = '('
@@ -84,7 +84,7 @@ class CustomLatexPrinter(LatexPrinter0):
                 left = '['
     
             if i.right_open:
-                if self._settings["interv_rev_brack"]:
+                if "interv_rev_brack" in self._settings and self._settings["interv_rev_brack"]:
                     right = '['
                 else:
                     right = ')'
@@ -184,4 +184,5 @@ def latex_ineq(lst):
     rel2=rel2.replace("<=",r"\le")
     rel2=rel2.replace(">=",r"\ge")
     return latex(expr1)+rel1+" "+latex(expr)+rel2+" "+latex(expr2)
+
 
