@@ -42,10 +42,12 @@ else:
 ==
 
 form ==
+<!-- RENDER AUTOMATON VIEWER IF MAX ATTEMPT IS REACHED -->
 {% if attempt >= maxattempt %}
 {{ viewer|component }}
 {% endif %}
 
+<!-- RENDER AUTOMATON VIEWER IF SCORE IS 100 -->
 {% if score == 100  %}
     <p class="success-state">Bravo l'automate que vous avez construit est une réponse acceptable.</p>
     {% if not deterministic %}
@@ -54,11 +56,12 @@ form ==
     {% endif %}
 {% endif %}
 
+<!-- RENDER THE AUTOMATON EDITOR -->
 {{ editor|component }}
 
 <script>
     /**
-    * this function is called by the platform once the exercice is loaded.
+    * This function is called by the platform once the exercice is loaded.
     * @param nodes an object containing a reference to the nodes of the page (title, text, form, actions, submit...)
     */
     function onReadyPL(nodes) {
