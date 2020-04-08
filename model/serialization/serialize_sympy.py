@@ -9,6 +9,9 @@ def deserialize(arg):
         elif arg['sympy_type']=='FiniteSet':
                 with evaluate(False):
                     return FiniteSet(*sympify(arg['str']))
+        elif arg['sympy_type']=='Set':
+                with evaluate(False):
+                    return sympify(arg['str'])
     elif isinstance(arg, dict):
         return {k: deserialize(v) for k, v in arg.items()}
     elif isinstance(arg, list):
