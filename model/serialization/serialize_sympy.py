@@ -1,4 +1,4 @@
-from sympy import Expr, Matrix, FiniteSet, Tuple, sympify, evaluate
+from sympy import Expr, Matrix, FiniteSet, Set, Tuple, sympify, evaluate
 from sympy2latex import latex
 
 def deserialize(arg):
@@ -24,6 +24,8 @@ def deserialize(arg):
 def serialize(arg):
     if isinstance(arg, FiniteSet):
         return {'sympy_type':'FiniteSet','str':str(arg.args),'latex':latex(arg)}
+    elif isinstance(arg, Set):
+        return {'sympy_type':'Set','str':str(arg),'latex': latex(arg)}
     elif isinstance(arg, (Expr,Matrix)):
         try:
             arglatex = latex(arg)
