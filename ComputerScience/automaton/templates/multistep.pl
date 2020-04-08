@@ -24,7 +24,7 @@ viewer = Automaton.viewer(automaton)
 # TRANSITION TABLE
 table = Generator.transitionTable(automaton, globals())
 
-# RANDOM MATCHIND WORDS
+# RANDOM MULTI CHOICE QUESTION FOR MATCHING WORDS
 checkbox, matchingWords = Generator.stringsInLanguageMCQ(automaton)
 
 score, step, maxSteps = 0, 1, 3
@@ -46,7 +46,10 @@ else:
 eval2==#|py|
 from evaluator import Evaluator
 
+# since the sandbox does not serialize class to dict we must recreate
+# an instance of Automaton class from the dict 'automaton'
 automaton = Automaton.parse(automaton)
+
 if Evaluator.evalTransitionTable(automaton, table, globals()) == 0:
     score = score + (100 / maxSteps), step + 1
 grade = (score, ' ')
@@ -80,11 +83,11 @@ text==
     <div style="box-sizing: border-box; margin: 0 8px 0 0;">
     Soit l’automate A = (Σ, Q, QI, QF, ∆) où:
     <ul>
-    <li> Σ = {{ '{' }} {{ A}}  {{ '}' }},</li>
-    <li> Q =  {{ '{' }} {{ Q }} {{ '}' }},</li>
-    <li> QI =  {{ '{' }} {{ I }} {{ '}' }},</li>
-    <li> QF =  {{ '{' }} {{ F }} {{ '}' }}, et</li>
-    <li> ∆ =  {{ '{' }} {{ T }} {{ '}' }}.</li>
+        <li> Σ = {{ '{' }} {{ A}}  {{ '}' }},</li>
+        <li> Q =  {{ '{' }} {{ Q }} {{ '}' }},</li>
+        <li> QI =  {{ '{' }} {{ I }} {{ '}' }},</li>
+        <li> QF =  {{ '{' }} {{ F }} {{ '}' }}, et</li>
+        <li> ∆ =  {{ '{' }} {{ T }} {{ '}' }}.</li>
     </ul>
 
     <p {% if step > 1 %} class="success-state" {% endif %}>
@@ -165,6 +168,7 @@ form==#|html|
     }
 </script>
 ==
+
 
 
 
