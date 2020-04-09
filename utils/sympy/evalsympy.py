@@ -177,15 +177,48 @@ def coeff_mul(expr, x):
         with sp.evaluate(False):
             return sp.Mul(*args)
     
-def is_coeff_exponent(expr,x):
+def is_coeff_exponent(expr, x):
     """
     Check if an expression is of the form 'something times x power something'.
     """
-    n=sp.degree(expr,x)
-    if n==0:
+    n = sp.degree(expr, x)
+    if n == 0:
         return True
-    args=arg_nested_mul(expr)
+    args = arg_nested_mul(expr)
     return args.count(x**n)==1 and sum([a.has(x) for a in args])==1
+    
+def coeff_exponent(expr, x):
+    """
+    Return the multiplicative coefficient.
+    
+    >>> x = sp.Symbol('x')
+    >>> expr = sp.sympify("3*x**2/2", evaluate=False)
+    >>> coeff_exponent(expr, x)
+    (3/2, 2)
+    
+    >>> expr = sp.sympify("4/2", evaluate=False)
+    >>> coeff_exponent(expr, x)
+    (4/2, 0)
+    
+    >>> expr = sp.sympify("(1+sqrt(2))*x", evaluate=False)
+    >>> coeff_exponent(expr, x)
+    (1 + sqrt(2), 1)
+    
+    >>> coeff_exponent(x**3, x)
+    (1, 3)
+    """
+    n = sp.degree(expr, x)
+    if n == 0:
+        return (expr, n)
+    args = arg_nested_mul(expr)
+    args.remove(x**n)
+    if len(args) == 0:
+        return (sp.Integer(1), n)
+    elif len(args) == 1:
+        return (args[0], n)
+    else:
+        with sp.evaluate(False):
+            return (sp.Mul(*args), n)
 
 def is_real_or_inf(expr):
     """
@@ -349,6 +382,34 @@ def is_poly_expanded(expr, x):
     """
     args = arg_nested_add(expr)
     return all(is_coeff_exponent(a,x) for a in args)
+
+    
+def is_poly_ratsimp(expr, x):
+    """
+    Check if a polynomial is expanded.
+    
+    >>> x = sp.Symbol('x')
+    >>> P = sp.sympify("x + x**2 + 3*x", evaluate=False)
+    >>> is_poly_ratsimp(P, x)
+    False
+    
+    >>> P = sp.sympify("1 + x**2 + 3*x", evaluate=False)
+    >>> is_poly_ratsimp(P, x)
+    True
+    
+    >>> P = sp.sympify("3*(x**2 + 2)**2", evaluate=False)
+    >>> is_poly_ratsimp(P, x)
+    True
+    """
+    args = arg_nested_mul(expr)
+    for a in args:
+        if type(a) == sp.Pow:
+            a = a.args[0]
+        with sp.evaluate(False):
+            coeffs = sp.Poly(a, x).coeffs()
+        if not all(is_rat_simp(c) for c in coeffs):
+            return False
+    return True
 
 def is_poly_factorized(expr, x, domain='R'):
     """
@@ -553,18 +614,14 @@ def eval_poly(strans, sol, var='x', domain='R', form='', checkratsimp=True, imag
         return (-1, "NotPoly")
     if not isinstance(ans,sp.Expr) or not ans.is_polynomial(x):
         return (-1, "NotPoly")
+    if form == "expanded" and not is_poly_expanded(ans ,x):
+        return (-1, "PolyNotExpanded")
+    elif form == "factorized" and not is_poly_factorized(ans, x, domain):
+        return (-1, "PolyNotFactorized")
     if not equal(ans,sol):
         return (0, "NotEqual")
-    if form == "expanded":
-        if not is_poly_expanded(ans ,x):
-            return (-1, "PolyNotExpanded")
-        with sp.evaluate(False):
-            coeffs = sp.Poly(ans, x).all_coeffs()
-        if any(not is_rat_simp(c) for c in coeffs):
-            return (-1, "NotRatSimp")
-    elif form == "factorized":
-        if not is_poly_factorized(ans, x, domain):
-            return (-1, "PolyNotFactorized")
+    if checkratsimp and not is_poly_ratsimp(ans, x):
+        return (-1, "PolyNotRatSimp")
     return (100, "Success")
 
 @add_feedback
