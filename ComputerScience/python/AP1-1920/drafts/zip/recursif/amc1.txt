@@ -20,6 +20,7 @@ Quelle est au minimum sa complexité?
 -$%\mathcal {O}(n^2)%$
 -$%\mathcal {O}(n)%$
 -$%\mathcal {O}\lg(n)%$
+
 *quelle est la complexité du programme suvant:
 def f(n):
     s=0
@@ -33,6 +34,7 @@ Quelle est sa complexité?
 -$%\mathcal {O}(n^2)%$
 -$%\mathcal {O}(n)%$
 -$%\mathcal {O}\lg(n)%$
+
 *on dispose d'un ordinateur effetuant un milliard de traitement par seconde et d'un probleme necessitant $%2^n%$
 traitements. Pour quelle valeur de n le temps de calcul serait supérieur à l'age de l'univers - 16 milliards d'années (de 365 jours)!
 +89
