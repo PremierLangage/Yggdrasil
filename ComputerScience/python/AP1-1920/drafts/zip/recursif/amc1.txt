@@ -41,6 +41,7 @@ traitements. Pour quelle valeur de n le temps de calcul serait supérieur à l'a
 -1024
 -500 000
 -4
+
 *on dispose d'un ordinateur effetuant un milliard de traitement par seconde et d'un probleme necessitant $%n!%
 traitements. Pour quelle valeur de n le temps de calcul serait supérieur à l'age de l'univers - 16 milliards d'années (de 365 jours)!
 +28
