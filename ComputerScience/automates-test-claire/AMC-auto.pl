@@ -17,6 +17,7 @@ from customradio import CustomRadio
 from customcheckbox import CustomCheckbox
 from AMC import parse_AMC_TXT
 
+#pour récupérer la fonction de création d'automate
 from tomate import createauto
 
 # si on veut un truc aléatoire il faut produire l'automate ici
