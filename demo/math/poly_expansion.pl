@@ -1,6 +1,6 @@
 extends = /model/mathinput.pl
 
-title = Développement
+title = Développement d'une expression polynomiale
 
 before ==
 keyboards_JSON['virtualKeyboards'] = "elementary"
