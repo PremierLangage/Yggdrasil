@@ -384,9 +384,33 @@ def is_poly_factorized(expr, x, domain='R'):
             return False
     return True
 
-def only_authorized_func(expr,authorized_func):
-    nonauthorized_func=set([type(a) for a in expr.atoms(sp.Function)]).difference(authorized_func)
-    return nonauthorized_func==set()
+def simplify_rset(lst):
+    """
+    Simplify endpoint in a list of intervals.
+    """
+    for i, interv in enumerate(lst):
+        left = sp.simplify(interv.left)
+        right = sp.simplify(interv.right)
+        lst[i] =  sp.Interval(left, right, interv.left_open, interv.right_open)
+    return lst
+
+def func_in_expr(expr):
+    """
+    Return the functions involved in an expression.
+    
+    >>> expr = sp.sympify("sin(p/3)", evaluate=False)
+    >>> func_in_expr(expr)
+    {sin}
+    
+    >>> expr = sp.sympify("x + sin(x)**2 * cos(x)", evaluate=False)
+    >>> func_in_expr(expr)
+    {sin, cos}
+    
+    >>> expr = sp.sympify("sqrt(ln(1 + x**2))", evaluate=False)
+    >>> func_in_expr(expr)
+    {log}
+    """
+    return set([type(a) for a in expr.atoms(sp.Function)])
 
 
 # Answer evaluation functions
@@ -396,11 +420,13 @@ _feedback_ = {
 "NotEqual": "",
 "NotExpr": "La réponse doit être une expression mathématique.",
 "NotRealOrInf": "La réponse doit être un nombre réel ou +$\infty$ ou $-\infty$.",
+"NotRSet": "La réponse doit être un intervalle ou une réunion d'intervalles.",
 "NotCplx": "La réponse doit être un nombre complexe.",
 "NotCplxCartesian": "La réponse doit être un nombre complexe sous forme cartésienne.",
 "NotCplxExponential": "La réponse doit être un nombre complexe sous forme exponentielle.",
 "NotSet": "La réponse doit être un ensemble.",
 "NotPoly": "La réponse doit être un polynôme.",
+"RSetNotDisjoint": "Les ensembles de cette réunion ne sont pas disjoints. La réponse peut être simplifiée.",
 "PolyNotExpanded": "La réponse doit être un polynôme développé.",
 "PolyNotFactorized": "La réponse doit être un polynôme factorisé.",
 "MatWrongSize": "La matrice n'a pas la bonne taille.",
@@ -419,9 +445,31 @@ def add_feedback(eval):
     return eval_with_feedback
 
 @add_feedback
-def eval_expr(strans, sol, checkratsimp=True, authorized_func={}, local_dict={}):
-    """
+def eval_expr(strans, sol, checkratsimp=True, authorized_func=None, local_dict={}):
+    r"""
     Evaluate an answer when the solution is an expression.
+    
+    >>> expr = sp.sympify("sqrt(2)/2", evaluate=False)
+    >>> eval_expr(r"\frac{1}{\sqrt{2}}", expr)[1]
+    'Success'
+    
+    >>> eval_expr(r"\frac{\sqrt{2}}{2}", expr)[1]
+    'Success'
+    
+    >>> eval_expr(r"\sin(\pi/4)", expr)[1]
+    'Success'
+    
+    >>> eval_expr(r"\sin(\pi/4)", expr, authorized_func={})[1]
+    'UnauthorizedFunc'
+    
+    >>> eval_expr("e", sp.E)[1]
+    'NotEqual'
+    
+    >>> eval_expr("\exp(1)", sp.E)[1]
+    'Success'
+    
+    >>> eval_expr("\exp(1)", sp.E, local_dict={'e': sp.E})[1]
+    'Success'
     """
     try:
         ans = latex2sympy(strans, local_dict)
@@ -429,9 +477,11 @@ def eval_expr(strans, sol, checkratsimp=True, authorized_func={}, local_dict={})
         return (-1, "NotExpr")
     if not isinstance(ans, sp.Expr):
         return (-1, "NotExpr")
+    if authorized_func is not None and not func_in_expr(ans).issubset(authorized_func):
+        return (-1, "UnauthorizedFunc")
     if not equal(ans, sol):
         return (0, "NotEqual")
-    if checkratsimp and not is_rat_simp(expr):
+    if checkratsimp and not is_rat_simp(ans):
         return (-1, "NotRatSimp")
     return (100, "Success")
     
@@ -462,7 +512,7 @@ def eval_complex(strans, sol, imaginary_unit="i", form="", checkratsimp=True, au
         return (-1, "NotCplx")
     if not isinstance(ans,sp.Expr) or not ans.is_complex:
         return (-1, "NotCplx")
-    if not only_authorized_func(ans, authorized_func):
+    if authorized_func is not None and not func_in_expr(ans).issubset(authorized_func):
         return (-1, "UnauthorizedFunc")
     if not equal(ans, sol):
         return (0, "NotEqual")
@@ -476,24 +526,44 @@ def eval_complex(strans, sol, imaginary_unit="i", form="", checkratsimp=True, au
     return (100, "Success")
 
 @add_feedback
-def eval_poly(strans, sol, x, domain='R', imaginary_unit='i', form='', authorized_func={}, local_dict={}):
+def eval_poly(strans, sol, var='x', domain='R', form='', checkratsimp=True, imaginary_unit='i',  authorized_func={}, local_dict={}):
     """
     Evaluate an answer when the solution is a polynomial.
+    
+    >>> x = sp.Symbol('x')
+    >>> P = (x + 1)**2
+    
+    >>> eval_poly("x^2 + 2x + 1", P, form="expanded")[1]
+    'Success'
+    
+    >>> eval_poly("(x + 1)^2", P, form="factorized")[1]
+    'Success'
+    
+    >>> eval_poly("(x + 1)^2", P, form="expanded")[1]
+    'PolyNotExpanded'
+    
+    >>> eval_poly("x^2 + 2x + 1", P, form="factorized")[1]
+    'PolyNotFactorized'
     """
     local_dict.update({imaginary_unit: sp.I})
+    x = sp.Symbol(var)
     try:
         ans = latex2sympy(strans, local_dict)
     except:
         return (-1, "NotPoly")
     if not isinstance(ans,sp.Expr) or not ans.is_polynomial(x):
         return (-1, "NotPoly")
-    if not only_authorized_func(ans,authorized_func):
-        return (-1,"UnauthorizedFunc")
     if not equal(ans,sol):
         return (0, "NotEqual")
-    if form == "expanded" and not is_poly_expanded(ans ,x):
+    if form == "expanded":
+        if not is_poly_expanded(ans ,x):
             return (-1, "PolyNotExpanded")
-    if form == "factorized" and not is_poly_factorized(ans, x, domain):
+        with sp.evaluate(False):
+            coeffs = sp.Poly(ans, x).all_coeffs()
+        if any(not is_rat_simp(c) for c in coeffs):
+            return (-1, "NotRatSimp")
+    elif form == "factorized":
+        if not is_poly_factorized(ans, x, domain):
             return (-1, "PolyNotFactorized")
     return (100, "Success")
 
@@ -535,7 +605,6 @@ def eval_tuple(strans, sol, checksize=False, local_dict={}):
         return (0, "NotEqual")
     return (100, "Success")
 
-
 @add_feedback
 def eval_matrix(matans, sol):
     """
@@ -551,13 +620,6 @@ def eval_matrix(matans, sol):
         return (0, "NotEqual")
     return (100, "Success")
 
-def simplify_rset(lst):
-    for i, interv in enumerate(lst):
-        left = sp.simplify(interv.left)
-        right = sp.simplify(interv.right)
-        lst[i] =  sp.Interval(left, right, interv.left_open, interv.right_open)
-    return lst
-
 @add_feedback
 def eval_rset(strans, sol):
     """
@@ -565,19 +627,19 @@ def eval_rset(strans, sol):
     """
     try:
         ans = latex2rset(strans)
+        # simplification of endpoints is needed
+        # otherwise, Sympy struggles to compare intervals
+        # even with simplification, not sure comparison always works
         ans = simplify_rset(ans)
     except:
-        return (-1,"NotRSet")
+        return (-1, "NotRSet")
     if len(ans) > 1:
         for i in range(len(ans)):
             for j in range(i+1,len(ans)):
-                if sp.Intersection(ans[i],ans[j]) != sp.EmptySet:
-                    return (-1,"NonDisjoint")
+                if sp.Intersection(ans[i], ans[j]) != sp.EmptySet:
+                    return (-1, "RSetNotDisjoint")
     if sp.Union(*ans) != sol:
-        return (0,"NotEqual "+str(sol)+" "+str(sp.Union(*ans)))
-    #for i in range(len(ans)):
-    #    if not is_rat_simp(ans[i]):
-    #        return (-1,"NotRatSimp","Certains expressions numériques ne sont pas simplifiés.")
+        return (0, "NotEqual")
     return (100,"")
 
 def ans_antiderivative(strans,sol,x,local_dict={}):
