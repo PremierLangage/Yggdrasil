@@ -2,6 +2,7 @@ import sympy as sp
 import sympy.parsing.sympy_parser as prs
 import re
 
+
 def str2sympy(s, local_dict={}, evaluate=False):
     """
     Convert a string into an expression or a nested structure of
@@ -177,3 +178,4 @@ def FiniteSet2struct(S):
         return tuple([FiniteSet2struct(x) for x in S])
     else:
         return S
+
