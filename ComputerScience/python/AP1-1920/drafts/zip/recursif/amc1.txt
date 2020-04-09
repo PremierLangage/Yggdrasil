@@ -46,4 +46,6 @@ traitements. Pour quelle valeur de n le temps de calcul serait supérieur à l'a
 traitements. Pour quelle valeur de n le temps de calcul serait supérieur à l'age de l'univers - 16 milliards d'années (de 365 jours)!
 +28
 -1024
+-500 000
+-4
 
