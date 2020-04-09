@@ -7,9 +7,9 @@ extends = /model/multistep.pl
 @ tomate.py
 
 settings.cumulative % false
-mk_auto == #|python|
-viewer.automaton+="s0:a>s2"
-==
+#mk_auto == #|python|
+#viewer.automaton+="s0:a>s2"
+#==
 
 before == #|python|
 import random as rd
