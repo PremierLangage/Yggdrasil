@@ -7,6 +7,10 @@ extends = /model/multistep.pl
 @ tomate.py
 
 settings.cumulative % false
+#Q Déjà dans exo-auto.pl à virer?
+#mk_auto == #|python|
+#viewer.automaton+="s0:a>s2"
+#==
 
 before == #|python|
 import random as rd
@@ -19,6 +23,7 @@ from tomate import createauto
 
 # si on veut un truc aléatoire il faut produire l'automate ici
 viewer.automaton = createauto()
+#Q à garder ici ou mettre dans exo-auto.pl?
 exec(mk_auto)
 
 list_questions = parse_AMC_TXT(questions)
