@@ -181,7 +181,7 @@ def is_coeff_exponent(expr, x):
     """
     Check if an expression is of the form 'something times x power something'.
     """
-    n = sp.degree(expr, x)
+    n = sp.degree(sp.simplify(expr), x)
     if n == 0:
         return True
     args = arg_nested_mul(expr)
