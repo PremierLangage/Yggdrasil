@@ -4,7 +4,7 @@ extends = /model/math.pl
 input =: MathInput
 input.decorator = CustomMathInput
 
-input.virtualKeyboards = sets
+input.virtualKeyboards = elementary
 
 title = 
 
