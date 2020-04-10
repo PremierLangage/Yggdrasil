@@ -5,7 +5,7 @@ from sympy.core.compatibility import default_sort_key
 class CustomLatexPrinter(LatexPrinter):
     printmethod = ""  # prevent the printer to use latex printing methods defined in classes
     
-    def _print_Pi2(self, expr):
+    def _print_Pi(self, expr):
         return r"\pi"
 
     def _print_Infinity(self, expr):
