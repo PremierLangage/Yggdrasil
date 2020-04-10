@@ -130,7 +130,7 @@ def latex(expr):
         "interv_rev_brack": True,
         "imaginary_unit": "i"
     }
-    return CustomLatexPrinter(_custom_settings).doprint(expr)
+    return CustomLatexPrinter().doprint(expr)
 
 def latexsys(A,B,lstvar=['x','y','z','t','u','v','w']):
     n,m=A.shape
