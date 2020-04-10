@@ -1,4 +1,4 @@
-from sympy import Expr, Matrix, FiniteSet, Set, Tuple, sympify, srepr
+from sympy import Basic, Tuple, sympify, srepr
 from sympy2latex import latex
 
 def deserialize(arg):
