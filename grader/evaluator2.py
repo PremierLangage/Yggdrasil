@@ -14,6 +14,9 @@ except ImportError:
     def deserialize(arg):
         return arg
 
+from serialize import serialize, deserialize
+
+
 try:
     from namespace import namespace
 except ImportError:
@@ -159,3 +162,4 @@ if __name__ == "__main__":
             ffeedback=format_feedback_lightscore(score,feedback)
 
     output(score, ffeedback, dic)
+
