@@ -8,14 +8,11 @@ title = Multiplication de deux nombres complexes
 
 # Création d'un champ de réponse de type MathInput (mise en forme TeX)
 input =: MathInput
+input.virtualKeyboards = complexes
 
 # La clé before contient un script python qui est exécuté au lancement de l'exercice
 # Comme on est dans le modèle "maths", il y a eu automatiquement un "from sympy import *" et un "import random as rd"
 before ==
-# Les deux lignes suivantes permettent de choisir le clavier virtuel du champ de réponse
-keyboards_JSON['virtualKeyboards']="complexes"
-input.config = keyboards_JSON
-
 # I et la méthode expand, c'est du SymPy
 z1 = rd.randint(-5, 5) + rd.randint(-5, 5)*I
 z2 = rd.randint(-5, 5) + rd.randint(-5, 5)*I
