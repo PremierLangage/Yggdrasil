@@ -1,3 +1,4 @@
+from components import Component
 from json import load
 
 json_file = open('keyboards.JSON')
