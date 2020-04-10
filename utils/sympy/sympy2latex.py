@@ -140,7 +140,7 @@ custom_default_settings = {
     "ln_notation": True,
     "root_notation": True,
     "interv_rev_brack": True,
-    "imaginary_unit": "i"
+    "imaginary_unit": "j"
 }
 
 Printer._default_settings = Printer._default_settings.update(custom_default_settings)
