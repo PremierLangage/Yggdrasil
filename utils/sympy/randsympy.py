@@ -94,12 +94,13 @@ def rand_interval_type(a,b):
 
 # Polynomials
 
-def rand_int_poly(d,nc,bound,x):
+def rand_int_poly(d, nc, bound, var='x'):
     """
     Generate a random polynomial with integer coefficients.
     """
-    c=list_randint(nc,-bound,bound,[0])
-    p=[d]+list_randint_norep(nc-1,0,d-1)
+    x = sp.Symbol(var)
+    c = list_randint(nc, -bound, bound, [0])
+    p = [d] + list_randint_norep(nc-1, 0, d-1)
     return sum([c[i]*x**p[i] for i in range(nc)])
 
 # Matrices
@@ -154,5 +155,6 @@ def rand_int_matrix_givenrank(n,m,r,magnitude=2):
         diffcols=len(set([tuple(B.col(i)) for i in range(n)]))
         if numzeros < n and diffcols==n and diffrows==n:
             return P*A*Q
+
 
 
