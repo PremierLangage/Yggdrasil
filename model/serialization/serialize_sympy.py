@@ -1,13 +1,9 @@
-from sympy import Expr, Matrix, FiniteSet, Set, Tuple, sympify, srepr, evaluate
+from sympy import Expr, Matrix, FiniteSet, Set, Tuple, sympify, srepr
 from sympy2latex import latex
 
 def deserialize(arg):
-    if isinstance(arg,dict) and 'sympy_type' in arg:
-        if arg['sympy_type']=='Basic':
-            return sympify(arg['srepr'], evaluate=True)
-        elif arg['sympy_type']=='FiniteSet':
-                with evaluate(False):
-                    return FiniteSet(*sympify(arg['str']))
+    if isinstance(arg, dict) and 'type' in arg and arg['type'] == "SymPy" :
+        return sympify(arg['srepr'], evaluate=False)
     elif isinstance(arg, dict):
         return {k: deserialize(v) for k, v in arg.items()}
     elif isinstance(arg, list):
@@ -18,14 +14,12 @@ def deserialize(arg):
         return arg
 
 def serialize(arg):
-    if isinstance(arg, FiniteSet):
-        return {'sympy_type':'FiniteSet','str':str(arg.args),'latex':latex(arg)}
-    elif isinstance(arg, (Expr,Matrix)):
+    if isinstance(arg, Basic):
         try:
-            arglatex = latex(arg)
+            codelatex = latex(arg)
         except:
-            arglatex = ""
-        return {'sympy_type':'Basic','srepr':srepr(arg),'latex': arglatex}
+            codelatex = ""
+        return {'type': 'SymPy', 'srepr': srepr(arg), 'latex': codelatex}
     elif isinstance(arg,dict):
         return {k: serialize(v) for k, v in arg.items()}
     elif isinstance(arg,list):
