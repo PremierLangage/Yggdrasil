@@ -18,7 +18,7 @@ Déterminer $! A \cap B !$.
 ==
 
 evaluator ==
-score,_,feedback=eval_set(input.value,sol)
+score, _, feedback = eval_set(input.value, sol)
 ==
 
 solution ==
