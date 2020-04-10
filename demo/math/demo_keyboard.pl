@@ -4,6 +4,7 @@ extends = /model/math.pl
 input =: MathInput
 input.decorator = CustomMathInput
 
+title = 
 form ==
 {{ input|component}}
 ==
