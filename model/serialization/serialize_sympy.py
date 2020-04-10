@@ -2,7 +2,7 @@ from sympy import Basic, Tuple, sympify, srepr
 from sympy2latex import latex
 
 def deserialize(arg):
-    if isinstance(arg, dict) and 'type' in arg and arg['type'] == "SymPy" :
+    if isinstance(arg, dict) and 'serialize' in arg and arg['serialize'] == "SymPy" :
         return sympify(arg['srepr'], evaluate=False)
     elif isinstance(arg, dict):
         return {k: deserialize(v) for k, v in arg.items()}
@@ -19,7 +19,7 @@ def serialize(arg):
             codelatex = latex(arg)
         except:
             codelatex = ""
-        return {'type': 'SymPy', 'srepr': srepr(arg), 'latex': codelatex}
+        return {'serialize': 'SymPy', 'srepr': srepr(arg), 'latex': codelatex}
     elif isinstance(arg,dict):
         return {k: serialize(v) for k, v in arg.items()}
     elif isinstance(arg,list):
