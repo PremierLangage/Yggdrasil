@@ -12,7 +12,7 @@ class CustomMathInput(Component):
         self.decorator = 'CustomMathInput'
         if 'virtualKeyboards' in kwargs:
             keyboards_JSON['virtualKeyboards'] = kwargs['virtualKeyboards']
-        self.config = keyboards_JSON
+            self.config = keyboards_JSON
         super().__init__(**kwargs)
 
 
