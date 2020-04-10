@@ -162,7 +162,7 @@ def latex2rset(s, local_dict={}):
     rset = []
     for a in args:
         if a.strip() == r"\emptyset":
-            rset.append(sp.EmptySet())
+            rset.append(sp.EmptySet
         elif a.strip() == r"\R":
             rset.append(sp.S.Reals)
         else:
