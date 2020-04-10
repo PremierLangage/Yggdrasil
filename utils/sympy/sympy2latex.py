@@ -3,7 +3,7 @@ from sympy.printing.latex import LatexPrinter
 from sympy.core.compatibility import default_sort_key
 
 class CustomLatexPrinter(LatexPrinter):
-    printmethod = "" # prevent the printer to use latex printing methods defined in classes
+    printmethod = ""  # prevent the printer to use latex printing methods defined in classes
     
     def _print_Pi(self, expr):
         return r"\pi"
@@ -121,30 +121,32 @@ class CustomLatexPrinter(LatexPrinter):
             out_str = out_str.replace('%s', '{' + 'c'*expr.cols + '}%s')
         return out_str % r"\\\\".join(lines)
 
-LatexPrinter=CustomLatexPrinter()
+Printer = CustomLatexPrinter()
 
+
+custom_default_settings = {
+    "order": None,
+    "mode": "plain",
+    "itex": False,
+    "fold_frac_powers": False,
+    "fold_func_brackets": False,
+    "fold_short_frac": None,
+    "long_frac_ratio": None,
+    "mul_symbol": None,
+    "inv_trig_style": "abbreviated",
+    "mat_str": "pmatrix",
+    "mat_delim": "[",
+    "symbol_names": {},
+    "ln_notation": True,
+    "root_notation": True,
+    "interv_rev_brack": True,
+    "imaginary_unit": "i"
+}
+
+LatexPrinter._default_settings.update(custom_default_settings)
 
 def latex(expr):
-    custom_default_settings = {
-        "order": None,
-        "mode": "plain",
-        "itex": False,
-        "fold_frac_powers": False,
-        "fold_func_brackets": False,
-        "fold_short_frac": None,
-        "long_frac_ratio": None,
-        "mul_symbol": None,
-        "inv_trig_style": "abbreviated",
-        "mat_str": "pmatrix",
-        "mat_delim": "[",
-        "symbol_names": {},
-        "ln_notation": True,
-        "root_notation": True,
-        "interv_rev_brack": True,
-        "imaginary_unit": "i"
-    }
-    LatexPrinter._default_settings.update(custom_default_settings)
-    return LatexPrinter.doprint(expr)
+    return Printer.doprint(expr)
 
 def latexsys(A,B,lstvar=['x','y','z','t','u','v','w']):
     n,m=A.shape
