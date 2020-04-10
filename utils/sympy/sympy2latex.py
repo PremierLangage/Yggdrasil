@@ -142,9 +142,9 @@ custom_default_settings = {
         "imaginary_unit": "i",
     }
 
-LatexPrinter._default_settings.update(custom_default_settings)
 
 def latex(expr):
+    LatexPrinter._default_settings.update(custom_default_settings)
     return LatexPrinter.doprint(expr)
 
 def latexsys(A,B,lstvar=['x','y','z','t','u','v','w']):
@@ -184,5 +184,6 @@ def latex_ineq(lst):
     rel2=rel2.replace("<=",r"\le")
     rel2=rel2.replace(">=",r"\ge")
     return latex(expr1)+rel1+" "+latex(expr)+rel2+" "+latex(expr2)
+
 
 
