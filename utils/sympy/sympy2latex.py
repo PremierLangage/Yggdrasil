@@ -148,6 +148,9 @@ Printer._default_settings = custom_default_settings
 def latex(expr):
     return Printer.doprint(expr)
 
+def latex(expr):
+    return Printer._default_settings
+
 def latexsys(A,B,lstvar=['x','y','z','t','u','v','w']):
     n,m=A.shape
     code="\\\\begin{align}"
