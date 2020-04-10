@@ -129,7 +129,7 @@ _custom_settings = {
 }
 
 def latex(expr):
-    return CustomLatexPrinter(settings=_custom_settings).doprint(expr)
+    return LatexPrinter(_custom_settings).doprint(expr)
 
 def latexsys(A,B,lstvar=['x','y','z','t','u','v','w']):
     n,m=A.shape
