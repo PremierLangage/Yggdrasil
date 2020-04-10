@@ -109,10 +109,7 @@ class CustomLatexPrinter(LatexPrinter):
             out_str = out_str.replace('%s', '{' + 'c'*expr.cols + '}%s')
         return out_str % r"\\\\".join(lines)
 
-Printer = CustomLatexPrinter()
-
-
-custom_default_settings = {
+_custom_default_settings = {
     "order": None,
     "mode": "plain",
     "itex": False,
@@ -131,10 +128,8 @@ custom_default_settings = {
     "imaginary_unit": "i"
 }
 
-Printer._settings.update(custom_default_settings)
-
 def latex(expr):
-    return Printer.doprint(expr)
+    return CustomLatexPrinter(_custom_default_settings).doprint(expr)
 
 def latexsys(A,B,lstvar=['x','y','z','t','u','v','w']):
     n,m=A.shape
