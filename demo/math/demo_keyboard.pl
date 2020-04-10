@@ -4,6 +4,8 @@ extends = /model/math.pl
 input =: MathInput
 input.decorator = CustomMathInput
 
+input.virtualKeyboards = sets
+
 title = 
 
 text = 
