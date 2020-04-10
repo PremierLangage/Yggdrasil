@@ -4,18 +4,7 @@ from sympy.core.compatibility import default_sort_key
 
 class CustomLatexPrinter(LatexPrinter):
     printmethod = "latex"  # prevent the printer to use latex printing methods defined in classes
-    
-    def _print_Pi(self, expr):
-        return r"\pi"
 
-    def _print_Infinity(self, expr):
-        return r"+\infty"
-
-    def _print_NegativeInfinity(self, expr):
-        return r"-\infty"
-    
-    def _print_ImaginaryUnit(self, expr):
-        return self._settings["imaginary_unit"]
 
     def _print_FiniteSet(self, s):
         items = sorted(s, key=default_sort_key)
