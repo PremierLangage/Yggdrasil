@@ -140,16 +140,13 @@ custom_default_settings = {
     "ln_notation": True,
     "root_notation": True,
     "interv_rev_brack": True,
-    "imaginary_unit": "j"
+    "imaginary_unit": "i"
 }
 
 Printer._settings.update(custom_default_settings)
 
 def latex(expr):
     return Printer.doprint(expr)
-
-def latex_settings():
-    return Printer._default_settings
 
 def latexsys(A,B,lstvar=['x','y','z','t','u','v','w']):
     n,m=A.shape
