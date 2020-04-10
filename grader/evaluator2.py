@@ -158,5 +158,5 @@ if __name__ == "__main__":
         elif dic['settings']['feedback']=='lightscore':
             ffeedback=format_feedback_lightscore(score,feedback)
 
-    output(score, ffeedback, dic)
+    output(score, str(dic), dic)
 
