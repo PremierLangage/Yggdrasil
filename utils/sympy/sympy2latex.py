@@ -4,7 +4,7 @@ from sympy.core.compatibility import default_sort_key
 #from latex_settings import latex_settings
 
 class CustomLatexPrinter(LatexPrinter):
-    self.custom_settings = {
+    custom_settings = {
         "order": None,
         "mode": "plain",
         "itex": False,
