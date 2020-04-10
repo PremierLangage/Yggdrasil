@@ -2,7 +2,7 @@ extends = /model/mathinput.pl
 
 title = Ensemble de définition (racine carrée 1)
 
-lang = fr
+input.virtualKeyboards = sets
 
 before ==
 a=randint(-6,6,[0,1,-1])
@@ -31,9 +31,3 @@ sol = solve_univariate_inequality(a*x+b >= 0, x, relational=False)
 #feedback = str(input.value.split(r"\cup"))
 feedback = str(latex2rset(input.value))
 ==
-
-input.debug % true
-
-
-
-
