@@ -123,26 +123,27 @@ class CustomLatexPrinter(LatexPrinter0):
 
 LatexPrinter=CustomLatexPrinter()
 
+custom_default_settings = {
+        "order": None,
+        "mode": "plain",
+        "itex": False,
+        "fold_frac_powers": False,
+        "fold_func_brackets": False,
+        "fold_short_frac": None,
+        "long_frac_ratio": None,
+        "mul_symbol": None,
+        "inv_trig_style": "abbreviated",
+        "mat_str": "pmatrix",
+        "mat_delim": "[",
+        "symbol_names": {},
+        "ln_notation": True,
+        "root_notation": True,
+        "interv_rev_brack": True,
+        "imaginary_unit": "i"
+    }
+
 
 def latex(expr):
-    custom_default_settings = {
-            "order": None,
-            "mode": "plain",
-            "itex": False,
-            "fold_frac_powers": False,
-            "fold_func_brackets": False,
-            "fold_short_frac": None,
-            "long_frac_ratio": None,
-            "mul_symbol": None,
-            "inv_trig_style": "abbreviated",
-            "mat_str": "pmatrix",
-            "mat_delim": "[",
-            "symbol_names": {},
-            "ln_notation": True,
-            "root_notation": True,
-            "interv_rev_brack": True,
-            "imaginary_unit": "i"
-        }
     LatexPrinter._default_settings.update(custom_default_settings)
     return LatexPrinter.doprint(expr)
 
