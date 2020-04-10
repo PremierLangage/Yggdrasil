@@ -3,9 +3,7 @@ from sympy.printing.latex import LatexPrinter
 from sympy.core.compatibility import default_sort_key
 
 class CustomLatexPrinter(LatexPrinter):
-    #printmethod = "latex"  # prevent the printer to use latex printing methods defined in classes
-
-
+    
     def _print_FiniteSet(self, s):
         items = sorted(s, key=default_sort_key)
         items = ", ".join(map(self._print, items))
