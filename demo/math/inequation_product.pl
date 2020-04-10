@@ -20,7 +20,7 @@ Déterminer l'ensemble des réels $% x %$ tels que $$ {{ineq.latex}}. $$ Ecrire 
 ==
 
 evaluator==
-score,feedback,_=eval_rset(input.value, sol)
+score, _, feedback = eval_rset(input.value, sol)
 ==
 
 solution ==
