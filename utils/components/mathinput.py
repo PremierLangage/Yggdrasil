@@ -10,7 +10,8 @@ class CustomMathInput(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-math-input'
         self.decorator = 'CustomMathInput'
-        keyboards_JSON['virtualKeyboards'] = "elementary"
+        if 'virtualKeyboards' in kwargs:
+            keyboards_JSON['virtualKeyboards'] = kwargs['virtualKeyboards']
         self.config = keyboards_JSON
         super().__init__(**kwargs)
 
