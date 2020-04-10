@@ -123,7 +123,9 @@ class CustomLatexPrinter(LatexPrinter0):
 
 LatexPrinter=CustomLatexPrinter()
 
-custom_default_settings = {
+
+def latex(expr):
+    custom_default_settings = {
         "order": None,
         "mode": "plain",
         "itex": False,
@@ -141,9 +143,6 @@ custom_default_settings = {
         "interv_rev_brack": True,
         "imaginary_unit": "i"
     }
-
-
-def latex(expr):
     LatexPrinter._default_settings.update(custom_default_settings)
     return LatexPrinter.doprint(expr)
 
