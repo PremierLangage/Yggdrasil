@@ -12,9 +12,11 @@ expr = (x + a) * (x + b)
 ineq = randitem([expr >= 0, expr > 0, expr <= 0,expr < 0])
 
 sol = solveset(ineq, x, domain=S.Reals)
+s = str(latex_settings())
 ==
 
 text ==
+{{s}}
 Déterminer l'ensemble des réels $! x !$ tels que $$ {{ineq.latex}}. $$ Ecrire cet ensemble sous la forme d'un intervalle ou d'une réunion d'intervalles.
 ==
 
