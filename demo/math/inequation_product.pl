@@ -18,14 +18,10 @@ text ==
 Déterminer l'ensemble des réels $! x !$ tels que $$ {{ineq.latex}}. $$ Ecrire cet ensemble sous la forme d'un intervalle ou d'une réunion d'intervalles.
 ==
 
-evaluator==
+evaluator ==
 score, _, feedback = eval_rset(input.value, sol)
 ==
 
 solution ==
 La solution est $% {{sol.latex}} %$.
 ==
-
-
-
-
