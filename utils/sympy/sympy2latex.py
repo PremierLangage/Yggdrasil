@@ -1,8 +1,8 @@
 import sympy as sp
-from sympy.printing.latex import LatexPrinter as LatexPrinter0
+from sympy.printing.latex import LatexPrinter
 from sympy.core.compatibility import default_sort_key
 
-class CustomLatexPrinter(LatexPrinter0):
+class CustomLatexPrinter(LatexPrinter):
     printmethod = "" # prevent the printer to use latex printing methods defined in classes
     
     def _print_Pi(self, expr):
@@ -76,7 +76,7 @@ class CustomLatexPrinter(LatexPrinter0):
             
         else:
             if i.left_open:
-                if "interv_rev_brack" in self._settings and self._settings["interv_rev_brack"]:
+                if self._settings["interv_rev_brack"]:
                     left = ']'
                 else:
                     left = '('
@@ -84,7 +84,7 @@ class CustomLatexPrinter(LatexPrinter0):
                 left = '['
     
             if i.right_open:
-                if "interv_rev_brack" in self._settings and self._settings["interv_rev_brack"]:
+                if self._settings["interv_rev_brack"]:
                     right = '['
                 else:
                     right = ')'
