@@ -12,7 +12,7 @@ expr = (P * Q).expand()
 ==
 
 text ==
-Développer $${{expr.latex}}.$$
+Factoriser $${{expr.latex}}.$$
 ==
 
 evaluator==
