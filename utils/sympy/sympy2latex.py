@@ -1,6 +1,7 @@
 import sympy as sp
 from sympy.printing.latex import LatexPrinter
 from sympy.core.compatibility import default_sort_key
+#from latex_settings import latex_settings
 
 class CustomLatexPrinter(LatexPrinter):
     
