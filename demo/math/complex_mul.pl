@@ -21,7 +21,7 @@ sol = (z1 * z2).expand()
 
 # Voilà le début de l'énoncé avec un principe de template (Jinja) pour insérer les variables produites dans le scripte before
 text ==
-On considère les nombres complexes $! z_1 = {{ z1.srepr }} !$ et $! z_2 = {{ z2.latex }} !$. Calculer $! z_1 \times z_2 !$ (sous forme algébrique).
+On considère les nombres complexes $! z_1 = {{ z1.latex }} !$ et $! z_2 = {{ z2.latex }} !$. Calculer $! z_1 \times z_2 !$ (sous forme algébrique).
 ==
 
 # Voilà la partie champ de réponse de l'énoncé. On place le "input" qu'on a créé et configuré. Toujours avec un principe de template.
