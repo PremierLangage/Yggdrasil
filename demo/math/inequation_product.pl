@@ -6,13 +6,12 @@ input.virtualKeyboards = sets
 
 before ==
 var('x')
-b,d=list_randint_norep(2,-6,6,[0])
-P,Q=(x+b),(x+d)
-expr=P*Q
+a, b = list_randint_norep(2,-6,6,[0])
+expr = (x + a) * (x + b)
 
-ineq = randitem([expr>=0,expr>0,expr<=0,expr<0])
+ineq = randitem([expr >= 0, expr > 0, expr <= 0,expr < 0])
 
-sol=solveset(ineq,x,domain=S.Reals)
+sol = solveset(ineq, x, domain=S.Reals)
 ==
 
 text ==
