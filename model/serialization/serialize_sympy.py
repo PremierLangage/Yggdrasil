@@ -4,7 +4,7 @@ from sympy2latex import latex
 def deserialize(arg):
     if isinstance(arg,dict) and 'sympy_type' in arg:
         if arg['sympy_type']=='Basic':
-            return sympify(arg['str'], evaluate=True)
+            return sympify(arg['srepr'], evaluate=True)
         elif arg['sympy_type']=='FiniteSet':
                 with evaluate(False):
                     return FiniteSet(*sympify(arg['str']))
@@ -25,7 +25,7 @@ def serialize(arg):
             arglatex = latex(arg)
         except:
             arglatex = ""
-        return {'sympy_type':'Basic','str':str(arg),'latex': arglatex}
+        return {'sympy_type':'Basic','str':srepr(arg),'latex': arglatex}
     elif isinstance(arg,dict):
         return {k: serialize(v) for k, v in arg.items()}
     elif isinstance(arg,list):
