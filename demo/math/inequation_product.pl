@@ -2,6 +2,8 @@ extends = /model/mathinput.pl
 
 title = Inéquation produit
 
+input.virtualKeyboards = sets
+
 before ==
 
 var('x')
