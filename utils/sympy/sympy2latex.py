@@ -143,7 +143,7 @@ custom_default_settings = {
     "imaginary_unit": "j"
 }
 
-Printer._settings = custom_default_settings
+Printer._settings.update(custom_default_settings)
 
 def latex(expr):
     return Printer.doprint(expr)
