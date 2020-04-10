@@ -12,7 +12,9 @@ Q = rand_int_poly(1, 2, 5, x)
 expr = P * Q
 ==
 
-text = Développer $${{expr.latex}}.$$
+text ==
+Développer $${{expr.latex}}.$$
+==
 
 evaluator==
 score, _, feedback = eval_poly(input.value, expr, var="x", form="expanded")
