@@ -4,7 +4,7 @@ json_file = open('keyboards.JSON')
 keyboards_JSON = load(json_file)
 json_file.close()
 
-class CustomMathInpu(Component):
+class CustomMathInput(Component):
 
     def __init__(self, **kwargs):
         self.selector = 'c-math-input'
