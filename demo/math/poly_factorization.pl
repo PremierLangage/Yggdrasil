@@ -6,7 +6,7 @@ before ==
 P = rand_int_poly(1, 2, 2, "x")
 Q = rand_int_poly(1, 2, 2, "x")
 var('x')
-expr = 1 - 3* x **2
+expr = -1 - 3* x **2
 ==
 
 text ==
