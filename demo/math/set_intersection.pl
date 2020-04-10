@@ -2,10 +2,9 @@ extends = /model/mathinput.pl
 
 title = Intersection d'ensembles
 
-before ==
-keyboards_JSON['virtualKeyboards']="sets"
-input.config = keyboards_JSON
+input.virtualKeyboards = sets
 
+before ==
 A=rand_finiteset(randint(4,7),list(range(10)))
 B=rand_finiteset(randint(4,7),list(range(10)))
 
