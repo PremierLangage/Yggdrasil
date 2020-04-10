@@ -25,7 +25,7 @@ def serialize(arg):
             arglatex = latex(arg)
         except:
             arglatex = ""
-        return {'sympy_type':'Basic','str':srepr(arg),'latex': arglatex}
+        return {'sympy_type':'Basic','srepr':srepr(arg),'latex': arglatex}
     elif isinstance(arg,dict):
         return {k: serialize(v) for k, v in arg.items()}
     elif isinstance(arg,list):
