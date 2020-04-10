@@ -109,27 +109,28 @@ class CustomLatexPrinter(LatexPrinter):
             out_str = out_str.replace('%s', '{' + 'c'*expr.cols + '}%s')
         return out_str % r"\\\\".join(lines)
 
-_custom_settings = {
-    "order": None,
-    "mode": "plain",
-    "itex": False,
-    "fold_frac_powers": False,
-    "fold_func_brackets": False,
-    "fold_short_frac": None,
-    "long_frac_ratio": None,
-    "mul_symbol": None,
-    "inv_trig_style": "abbreviated",
-    "mat_str": "pmatrix",
-    "mat_delim": "[",
-    "symbol_names": {},
-    "ln_notation": True,
-    "root_notation": True,
-    "interv_rev_brack": True,
-    "imaginary_unit": "i"
-}
+
 
 def latex(expr):
-    return LatexPrinter(_custom_settings).doprint(expr)
+    _custom_settings = {
+        "order": None,
+        "mode": "plain",
+        "itex": False,
+        "fold_frac_powers": False,
+        "fold_func_brackets": False,
+        "fold_short_frac": None,
+        "long_frac_ratio": None,
+        "mul_symbol": None,
+        "inv_trig_style": "abbreviated",
+        "mat_str": "pmatrix",
+        "mat_delim": "[",
+        "symbol_names": {},
+        "ln_notation": True,
+        "root_notation": True,
+        "interv_rev_brack": True,
+        "imaginary_unit": "i"
+    }
+    return CustomLatexPrinter(_custom_settings).doprint(expr)
 
 def latexsys(A,B,lstvar=['x','y','z','t','u','v','w']):
     n,m=A.shape
