@@ -34,5 +34,4 @@ form ==
 # Bon, ici, tout est caché dans la fonction eval_complex qui est dans une bibliothèque.
 evaluator ==
 score, _, feedback = eval_complex(input.value, sol, form="cartesian")
-score = 3
 ==
