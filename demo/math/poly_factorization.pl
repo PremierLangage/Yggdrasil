@@ -16,5 +16,5 @@ Développer $${{expr.latex}}.$$
 ==
 
 evaluator==
-score, _, feedback = eval_poly(input.value, expr, var="x", form="expanded")
+score, _, feedback = eval_poly(input.value, expr, var="x", form="factorized")
 ==
