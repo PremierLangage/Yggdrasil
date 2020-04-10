@@ -22,12 +22,5 @@ Déterminer l'ensemble de définition de la fonction $%f : x \mapsto {{latexf}}%
 ==
 
 evaluator==
-score = 0
-from sympy.solvers.inequalities import solve_univariate_inequality
-x=symbols('x')
-sol = solve_univariate_inequality(a*x+b >= 0, x, relational=False)
-#score, feedback, _ = eval_rset(input.value, sol)
-#feedback += str(latex2rset(input.value)) + str(sol)
-#feedback = str(input.value.split(r"\cup"))
-feedback = str(latex2rset(input.value))
+score, feedback, _ = eval_rset(input.value, sol)
 ==
