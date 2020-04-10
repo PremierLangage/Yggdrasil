@@ -19,7 +19,7 @@ def serialize(arg):
             codelatex = latex(arg)
         except:
             codelatex = ""
-        return {'type': 'SymPy', 'srepr': "srepr(arg)", 'latex': codelatex}
+        return {'type': 'SymPy', 'srepr': srepr(arg), 'latex': codelatex}
     elif isinstance(arg,dict):
         return {k: serialize(v) for k, v in arg.items()}
     elif isinstance(arg,list):
