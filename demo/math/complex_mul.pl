@@ -17,8 +17,6 @@ before ==
 z1 = rd.randint(-5, 5) + rd.randint(-5, 5)*I
 z2 = rd.randint(-5, 5) + rd.randint(-5, 5)*I
 sol = (z1 * z2).expand()
-s = str(latex_settings())
-s1 = latex(z1)
 ==
 
 # Voilà le début de l'énoncé avec un principe de template (Jinja) pour insérer les variables produites dans le scripte before
@@ -28,8 +26,6 @@ On considère les nombres complexes $! z_1 = {{ z1.latex }} !$ et $! z_2 = {{ z2
 
 # Voilà la partie champ de réponse de l'énoncé. On place le "input" qu'on a créé et configuré. Toujours avec un principe de template.
 form ==
-{{s}}
-{{s1}}
 {{ input|component }}
 ==
 
