@@ -23,7 +23,7 @@ score, _, feedback = eval_rset(input.value, sol)
 ==
 
 solution ==
-La solution est $% {{sol.tex}} %$.
+La solution est $% {{sol.latex}} %$.
 ==
 
 
