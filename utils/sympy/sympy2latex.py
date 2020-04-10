@@ -3,7 +3,7 @@ from sympy.printing.latex import LatexPrinter
 from sympy.core.compatibility import default_sort_key
 
 class CustomLatexPrinter(LatexPrinter):
-    printmethod = ""  # prevent the printer to use latex printing methods defined in classes
+    #printmethod = ""  # prevent the printer to use latex printing methods defined in classes
     
     def _print_Pi(self, expr):
         return r"\pi"
