@@ -4,7 +4,23 @@ from sympy.core.compatibility import default_sort_key
 #from latex_settings import latex_settings
 
 class CustomLatexPrinter(LatexPrinter):
-    
+    self.custom_settings = {
+        "order": None,
+        "mode": "plain",
+        "itex": False,
+        "fold_frac_powers": False,
+        "fold_func_brackets": False,
+        "fold_short_frac": None,
+        "long_frac_ratio": None,
+        "mul_symbol": None,
+        "inv_trig_style": "abbreviated",
+        "mat_str": "pmatrix",
+        "mat_delim": "[",
+        "symbol_names": {},
+        "ln_notation": True,
+        "root_notation": True,
+        "interv_rev_brack": True,
+    }
     def _print_FiniteSet(self, s):
         items = sorted(s, key=default_sort_key)
         items = ", ".join(map(self._print, items))
@@ -64,7 +80,7 @@ class CustomLatexPrinter(LatexPrinter):
             
         else:
             if i.left_open:
-                if self._settings["interv_rev_brack"]:
+                if self.custom_settings["interv_rev_brack"]:
                     left = ']'
                 else:
                     left = '('
@@ -72,7 +88,7 @@ class CustomLatexPrinter(LatexPrinter):
                 left = '['
     
             if i.right_open:
-                if self._settings["interv_rev_brack"]:
+                if self.custom_settings["interv_rev_brack"]:
                     right = '['
                 else:
                     right = ')'
@@ -112,24 +128,6 @@ class CustomLatexPrinter(LatexPrinter):
 
 
 def latex(expr):
-    _custom_settings = {
-        "order": None,
-        "mode": "plain",
-        "itex": False,
-        "fold_frac_powers": False,
-        "fold_func_brackets": False,
-        "fold_short_frac": None,
-        "long_frac_ratio": None,
-        "mul_symbol": None,
-        "inv_trig_style": "abbreviated",
-        "mat_str": "pmatrix",
-        "mat_delim": "[",
-        "symbol_names": {},
-        "ln_notation": True,
-        "root_notation": True,
-        "interv_rev_brack": True,
-        "imaginary_unit": "i"
-    }
     return CustomLatexPrinter().doprint(expr)
 
 def latexsys(A,B,lstvar=['x','y','z','t','u','v','w']):
