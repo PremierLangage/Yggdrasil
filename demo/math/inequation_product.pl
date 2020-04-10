@@ -5,7 +5,6 @@ title = Inéquation produit
 input.virtualKeyboards = sets
 
 before ==
-
 var('x')
 b,d=list_randint_norep(2,-6,6,[0])
 P,Q=(x+b),(x+d)
