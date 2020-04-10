@@ -14,9 +14,6 @@ except ImportError:
     def deserialize(arg):
         return arg
 
-from serialize import serialize, deserialize
-
-
 try:
     from namespace import namespace
 except ImportError:
