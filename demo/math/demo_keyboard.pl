@@ -5,6 +5,9 @@ input =: MathInput
 input.decorator = CustomMathInput
 
 title = 
+
+text = 
+
 form ==
 {{ input|component}}
 ==
