@@ -9,7 +9,7 @@ expr = -1 - 3* x **2
 ==
 
 text ==
-Factoriser $$ {{ expr.latex }}.$$
+Factoriser $${{ expr.latex }}.$$
 ==
 
 evaluator==
