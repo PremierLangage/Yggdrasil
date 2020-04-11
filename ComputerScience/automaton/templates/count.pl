@@ -26,13 +26,6 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution
 </p>
 {% endif %}
 
-Pour dessiner un automate:
-
-    Pour créer un nouvel état, double clic gauche
-
-    Pour ajouter une transition cliquer sur le point orange de l'état de départ
-    et tirer votre transition jusqu'à l'état d'arrivée.
-    Utilisez ensuite "changer Transition" pour ajuster la lettre étiquettant de la transition
 ==
 
 
