@@ -16,7 +16,7 @@ message = messages[mode]
 alphabet, letter, n, automaton = Generator.counting(3, 4, mode)
 ==
 
-title = nb d'occurences
+title = Nombre d'occurences
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage **L1** = {{ '{' }} mots ayant {{ message }} **{{ n }}** occurrences de la lettre **{{ letter }}** {{ '}' }} <br>
