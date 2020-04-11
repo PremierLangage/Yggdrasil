@@ -27,4 +27,3 @@ score, _, feedback = eval_matrix(mat.getmatrix(), sol)
 solution ==
 La solution est $$\left( {{ sol.latex }} \right).$$
 ==
-
