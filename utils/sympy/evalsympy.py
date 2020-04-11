@@ -545,7 +545,27 @@ def eval_expr(strans, sol, checkratsimp=True, authorized_func=None, local_dict={
     if checkratsimp and not is_rat_simp(ans):
         return (-1, "NotRatSimp")
     return (100, "Success")
-    
+
+@add_feedback
+def eval_function(strans, sol, checkratsimp=True, authorized_func=None, local_dict={}):
+    r"""
+    Evaluate an answer when the solution is a function.
+    """
+    local_dict.update({'e': sp.E})
+    try:
+        ans = latex2sympy(strans, local_dict)
+    except:
+        return (-1, "NotExpr")
+    if not isinstance(ans, sp.Expr):
+        return (-1, "NotExpr")
+    if authorized_func is not None and not func_in_expr(ans).issubset(authorized_func):
+        return (-1, "UnauthorizedFunc")
+    if not equal(ans, sol):
+        return (0, "NotEqual")
+    if checkratsimp and not is_rat_simp(ans):
+        return (-1, "NotRatSimp")
+    return (100, "Success")
+
 @add_feedback
 def eval_real_or_inf(strans, sol, local_dict={}):
     """
@@ -560,6 +580,7 @@ def eval_real_or_inf(strans, sol, local_dict={}):
     if not equal(ans, sol):
         return (0, "NotEqual")
     return (100, "Success")
+
 
 @add_feedback
 def eval_complex(strans, sol, imaginary_unit="i", form="", checkratsimp=True, authorized_func={}, local_dict={}):
