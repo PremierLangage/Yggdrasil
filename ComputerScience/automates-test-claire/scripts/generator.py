@@ -24,6 +24,11 @@ class Generator:
             )))
         return alphabet
 
+            @staticmethod
+    def alphabet_ordonne(length: int):
+        alphabet =  [string.ascii_lowercase[i] for i in range(length)]
+        return alphabet
+
     @staticmethod
     def regex(regex):
         return Automaton.parse(regex)
