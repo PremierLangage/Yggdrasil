@@ -17,6 +17,8 @@ messages = {
     1: 'finissent par'
 }
 
+
+
 # choix de la taille de l'alphabet
 nb_lettres = random.choice([2,3])
 
@@ -34,7 +36,7 @@ else :
 title = Préfixe, suffixe ou facteur 
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
-Donnez un automate reconnaissant le langage **L1** = {{ '{' }}  mots qui {{ message }} par **{{ mot }}** {{ '}' }} <br>
+Donnez un automate reconnaissant le langage **L1** = {{ '{' }}  mots qui {{ messages }} par **{{ mot }}** {{ '}' }} <br>
 {% if attempt < maxattempt and score != 100 %}
 <p class="warning-state">
 Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solution !
