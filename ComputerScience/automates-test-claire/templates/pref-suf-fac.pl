@@ -29,7 +29,7 @@ elif mode == 0 :
     alphabet, mot, automaton = Generator.facteur(nb_lettres,3)
 else :
     # Generator.prefix(nb lettres alphabet , longueur maxi du suffixe)
-    alphabet, mot, automaton = Generator.suffixe(nb_lettres,3)
+    alphabet, mot, automaton = Generator.suffix(nb_lettres,3)
 ==
 
 title = Préfixe, suffixe ou facteur 
