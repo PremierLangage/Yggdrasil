@@ -6,7 +6,7 @@ generate== #|py|
 from generator import Generator
 # Generator.prefix(nb lettres alphabet , longueur maxi du prefix)
 nb_lettres = random.choice([2,3])
-alphabet, prefix, automaton = Generator.prefix(nb_lettres, 4)
+alphabet, prefix, automaton = Generator.prefix(3, 4)
 ==
 
 title = Automates Préfixes
