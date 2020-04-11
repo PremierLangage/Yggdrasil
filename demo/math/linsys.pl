@@ -2,7 +2,6 @@ extends = /model/mathinput.pl
 
 title = Système linéaire
 
-
 before ==
 n = 2
 A = rand_int_matrix_invertible(n, 3,[0])
