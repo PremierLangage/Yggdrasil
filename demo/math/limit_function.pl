@@ -15,11 +15,11 @@ sol = lim.doit()
 ==
 
 text ==
-Déterminer l'ensemble des réels $! x !$ tels que $$ {{ineq.latex}}. $$ Ecrire cet ensemble sous la forme d'un intervalle ou d'une réunion d'intervalles.
+Déterminer $$ {{lim.latex}}.
 ==
 
 evaluator ==
-score, _, feedback = eval_rset(input.value, sol)
+score, _, feedback = eval_real_or_inf(input.value, sol)
 ==
 
 solution ==
