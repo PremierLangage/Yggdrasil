@@ -1,4 +1,4 @@
-extends = /ComputerScience/automates-test-claire/templates/base.pl
+extends = /ComputerScience/automaton/templates/base.pl
 
 maxattempt = 3
 title= 
@@ -84,6 +84,7 @@ form== #|html|
     </ul>
     </p>
 ==
+
 
 
 
