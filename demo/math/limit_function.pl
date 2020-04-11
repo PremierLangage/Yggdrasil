@@ -6,12 +6,12 @@ input.virtualKeyboards = functions
 
 before ==
 var('x')
-a, b = list_randint_norep(2,-6,6,[0])
-expr = (x + a) * (x + b)
 
-ineq = randitem([expr >= 0, expr > 0, expr <= 0,expr < 0])
-
-sol = solveset(ineq, x, domain=S.Reals)
+n = randint(1,5)   
+fs = randitem([[x**n,exp(x)],[x**n,ln(x)],[exp(x),ln(x)]])
+rd.shuffle(f)
+lim = Limit(f[0] - f[1], x, oo)
+sol = lim.doit()
 ==
 
 text ==
