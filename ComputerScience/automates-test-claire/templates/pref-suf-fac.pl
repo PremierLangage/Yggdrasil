@@ -7,13 +7,15 @@ from generator import Generator
 # A mettre ailleurs peut-être?
 import random
 #choisi le type d'exo
+#    -1: 'prefixe',
+#    0: 'facteur',
+#    1: 'suffixe'
 mode = random.choice([-1, 0, 1])
 messages = {
-    -1: 'prefixe',
-    0: 'facteur',
-    1: 'suffixe'
+    -1: 'commencent par',
+    0: 'contiennent',
+    1: 'finissent par'
 }
-
 # Generator.prefix(nb lettres alphabet , longueur maxi du prefix)
 nb_lettres = random.choice([2,3])
 alphabet, prefix, automaton = Generator.prefix(nb_lettres,3)
