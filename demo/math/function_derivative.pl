@@ -6,9 +6,9 @@ input.virtualKeyboards = functions
 
 before ==
 var('x')
-a = randitem([-1,1])*randitem([Rational(1,2),Rational(1,3),2,3])
-b = randitem([Rational(1,2),Rational(1,3),2,3])
-g = randitem([sin, cos, exp, ln])
+a = rd.choice([-1, 1]) * rd.choice([Rational(1, 2), Rational(1, 3), 2, 3])
+b = rd.choice([Rational(1, 2), Rational(1, 3), 2, 3])
+g = rd.choice([sin, cos, exp, ln])
 f = a * g(b * x)
 sol = diff(f, x)
 ==
