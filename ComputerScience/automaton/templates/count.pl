@@ -25,7 +25,9 @@ Donnez un automate reconnaissant le langage **L1** = {{ '{' }} mots ayant {{ me
 Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution !
 </p>
 {% endif %}
+==
 
+text==
 Pour dessiner un automate:
 
     Pour créer un nouvel état, double clic gauche
