@@ -1,4 +1,4 @@
-from sympy import Basic, Tuple, sympify, srepr
+from sympy import Basic, Matrix, Tuple, sympify, srepr
 from sympy2latex import latex
 
 def deserialize(arg):
@@ -14,7 +14,7 @@ def deserialize(arg):
         return arg
 
 def serialize(arg):
-    if isinstance(arg, Basic):
+    if isinstance(arg, (Basic, Matrix)):
         try:
             codelatex = latex(arg)
         except:
