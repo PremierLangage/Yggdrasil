@@ -58,7 +58,7 @@ class Generator:
 
     @staticmethod
     def factor(max_symbs=2, length=4):
-        alphabet = Generator.alphabet(max_symbs)
+        alphabet = Generator.alphabet_ordonne(max_symbs)
         n = random.randint(2, length)
         prefix = '|'.join(list(alphabet))
         factor =  "".join(
@@ -146,6 +146,7 @@ class Generator:
             "rows": rows,
             "transitions": transitions
         }
+
 
 
 
