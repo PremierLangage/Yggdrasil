@@ -1,0 +1,12 @@
+title = Premiers exo PLaTon d'automates
+
+introduction ==
+ Voici quelques exercices simples à tester.
+ 
+ Un grand merci à Mamadou pour son travail sur le module automates de PLaTon.
+
+==
+
+@/ComputerScience/automaton/templates/count.pl
+
+
