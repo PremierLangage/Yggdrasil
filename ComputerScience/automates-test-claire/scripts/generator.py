@@ -24,7 +24,7 @@ class Generator:
             )))
         return alphabet
 
-# pour avoir un alphabet avec les lettres prises dans l'ordre alphabetique
+# pour générer un alphabet avec les lettres prises dans l'ordre alphabetique
     @staticmethod
     def alphabet_ordonne(length: int):
         alphabet =  [string.ascii_lowercase[i] for i in range(length)]
