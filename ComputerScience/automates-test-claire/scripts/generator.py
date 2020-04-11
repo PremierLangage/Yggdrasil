@@ -91,7 +91,6 @@ class Generator:
             regex = anythingexcept + anythingexcept.join([letter + '?' for i in range(n)]) + anythingexcept
         return alphabet, letter, n, Automaton.parse(regex)
 
- 
     @staticmethod
     def stringsInLanguageMCQ(automaton: Automaton, maxright=3, maxwrong=3):
         matchingWords = automaton.randomStringInAlphabet(maxright)
