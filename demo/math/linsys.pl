@@ -12,8 +12,6 @@ sol = list(linsolve((A, B)))[0]
 
 sys_tex=latexsys(A,B)
 lstvar=",".join(["x","y","z","t","u","v"][:n])
-
-tuple_name=["couple","triplet","quadruplet","quintuplet"][n-2]
 ==
 
 text ==
