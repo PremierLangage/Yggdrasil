@@ -14,7 +14,7 @@ from components import CheckboxGroup, Input
 
 class Generator:
 
-# pour générer un alphabet avec les lettres prises aléatoirement
+# pour générer un alphabet avec les lettres prises aléatoirement -- length correspond au nombre de lettres voulues
     @staticmethod
     def alphabet(length: int):
         alphabet = ['' for _ in range(length)]
@@ -25,7 +25,7 @@ class Generator:
             )))
         return alphabet
 
-# pour générer un alphabet avec les lettres prises dans l'ordre alphabetique
+# pour générer un alphabet avec les lettres prises dans l'ordre alphabetique -- length correspond au nombre de lettres voulues
     @staticmethod
     def alphabet_ordonne(length: int):
         alphabet =  [string.ascii_lowercase[i] for i in range(length)]
@@ -38,6 +38,7 @@ class Generator:
     @staticmethod
     def prefix(max_symbs=2, length=4):
         alphabet = Generator.alphabet_ordonne(max_symbs)
+        # generation d'un prefix de longueur aleatoire entre 0 et length
         n = random.randint(2, length)
         prefix =  "".join(
             random.choice(alphabet)
