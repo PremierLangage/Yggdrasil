@@ -4,7 +4,8 @@ maxattempt = 5
 
 generate== #|py|
 from generator import Generator
-#Generator.prefix(nb lettres alphabet , longueur maxi du prefix)
+# Generator.prefix(nb lettres alphabet , longueur maxi du prefix)
+nb_lettres = random
 alphabet, prefix, automaton = Generator.prefix(3, 3)
 ==
 
