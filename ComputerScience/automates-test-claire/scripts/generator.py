@@ -36,7 +36,7 @@ class Generator:
 
     @staticmethod
     def prefix(max_symbs=2, length=4):
-        alphabet = Generator.alphabet(max_symbs)
+        alphabet = Generator.alphabet_ordonne(max_symbs)
         n = random.randint(2, length)
         prefix =  "".join(
             random.choice(alphabet)
@@ -47,7 +47,7 @@ class Generator:
 
     @staticmethod
     def suffix(max_symbs=2, length=4):
-        alphabet = Generator.alphabet(max_symbs)
+        alphabet = Generator.alphabet_ordonne(max_symbs)
         n = random.randint(2, length)
         prefix = '|'.join(list(alphabet))
         suffix =  "".join(
