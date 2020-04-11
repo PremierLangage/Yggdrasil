@@ -1,5 +1,9 @@
-title = Exo de test de Mamadou
+title = Premiers exo PLaTon d'automates
 
-introduction = Voici un petit exercice à tester
+introduction ==
+ Voici quelques exercices simples à tester. Un grand merci à Mamadou pour son travail.
+
+==
 
 @/ComputerScience/automaton/templates/count.pl
+
