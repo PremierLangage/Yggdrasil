@@ -18,7 +18,7 @@ alphabet, letter, n, automaton = Generator.counting(3, 4, mode)
 
 title = Automates Occurences
 text ==
-Pour cette question, on considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
+On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage **L1** = {{ '{' }} mots ayant {{ message }} **{{ n }}** occurrences de la lettre **{{ letter }}** {{ '}' }} <br>
 {% if attempt < maxattempt and score != 100 %}
 <p class="warning-state">
