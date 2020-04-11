@@ -21,6 +21,7 @@ Msol = A*B
 ==
 
 text==
+$$ \\left[\\begin{matrix}1 & 2\\\\3 & 4\\end{matrix}\\right] $$
 Soit les matrices
 $$ A = \left( {{A.latex}}\right) \text{ et } B = \left({{B.latex}}\right) $$ 
 Calculer $! A B !$.
