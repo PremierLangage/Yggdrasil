@@ -24,7 +24,7 @@ class Generator:
             )))
         return alphabet
 
-            @staticmethod
+    @staticmethod
     def alphabet_ordonne(length: int):
         alphabet =  [string.ascii_lowercase[i] for i in range(length)]
         return alphabet
