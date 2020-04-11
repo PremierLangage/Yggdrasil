@@ -13,7 +13,7 @@ styles =@ /ComputerScience/automates-test-claire/styles/automaton.css
 title = 
 text = 
 form = 
-
+before=
 extracss==
 <style> {{ styles }}</style>
 ==
