@@ -480,7 +480,7 @@ _feedback_ = {
 "Success": "",
 "NotEqual": "",
 "NotExpr": "La réponse doit être une expression mathématique.",
-"NotRealOrInf": "La réponse doit être un nombre réel ou +$\infty$ ou $-\infty$.",
+"NotRealOrInf": "La réponse doit être un nombre réel ou $! +\infty !$ ou $! -\infty !$.",
 "NotRSet": "La réponse doit être un intervalle ou une réunion d'intervalles.",
 "NotCplx": "La réponse doit être un nombre complexe.",
 "NotCplxCartesian": "La réponse doit être un nombre complexe sous forme cartésienne.",
