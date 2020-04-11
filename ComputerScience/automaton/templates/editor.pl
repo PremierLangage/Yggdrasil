@@ -71,6 +71,16 @@ form== #|html|
         submit.attr("disabled", ({{ attempt }} >= {{ maxattempt }}) || {{ score }} == 100);
     }
 </script>
+<p>
+    Pour dessiner un automate:
+
+    Pour créer un nouvel état, double clic gauche
+
+    Pour ajouter une transition cliquer sur le point orange de l'état de départ
+    et tirer votre transition jusqu'à l'état d'arrivée.
+    Utilisez ensuite "changer Transition" pour ajuster la lettre étiquettant de la transition
+==
+    </p>
 ==
 
 
