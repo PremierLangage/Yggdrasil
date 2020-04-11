@@ -11,8 +11,6 @@ builder =@ /builder/before.py
 styles =@ /ComputerScience/automates-test-claire/styles/automaton.css
 
 
-title = Automates Occurences
-
 extracss==
 <style> {{ styles }}</style>
 ==
