@@ -91,25 +91,7 @@ class Generator:
             regex = anythingexcept + anythingexcept.join([letter + '?' for i in range(n)]) + anythingexcept
         return alphabet, letter, n, Automaton.parse(regex)
 
-            @staticmethod
-    def counting-cl(max_symbs=2, length=4, mode=0):
-        alphabet = Generator.alphabet(max_symbs)
-        n = random.randint(2, length)
-        letter = random.choice(alphabet)
-
-        anything = '(' + '|'.join(list(alphabet)) + ')*'
-        anythingexcept = '(' + '|'.join([e for e in alphabet if e != letter]) + ')*'
-
-        regex = ''
-        if mode == 0: # exactly
-            regex = anythingexcept + anythingexcept.join([letter for i in range(n)]) + anythingexcept
-            pass
-        elif mode < 0: # at least
-            regex = anything + anything.join([letter for i in range(n)]) + anything
-        else: # at most
-            regex = anythingexcept + anythingexcept.join([letter + '?' for i in range(n)]) + anythingexcept
-        return alphabet, letter, n, Automaton.parse(regex)
-
+ 
     @staticmethod
     def stringsInLanguageMCQ(automaton: Automaton, maxright=3, maxwrong=3):
         matchingWords = automaton.randomStringInAlphabet(maxright)
