@@ -22,7 +22,7 @@ Msol = A*B
 
 text==
 Soit les matrices
-$$ A = \left( {{A.latex}}\right) \text{ et } B = \left({{B.latex}}\right) $$ 
+$$ A = \left( {{A.srepr}}\right) \text{ et } B = \left({{B.latex}}\right) $$ 
 Calculer $! A B !$.
 ==
 
@@ -34,3 +34,4 @@ score, _, feedback = eval_matrix(mat.getmatrix(), Msol)
 solution ==
 La solution est $$\left( {{Msol.latex}} \right).$$
 ==
+
