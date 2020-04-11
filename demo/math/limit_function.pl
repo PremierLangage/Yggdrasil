@@ -8,7 +8,7 @@ before ==
 var('x')
 
 n = randint(1,5)   
-fs = randitem([[x**n,exp(x)],[x**n,ln(x)],[exp(x),ln(x)]])
+f = randitem([[x**n,exp(x)],[x**n,ln(x)],[exp(x),ln(x)]])
 rd.shuffle(f)
 lim = Limit(f[0] - f[1], x, oo)
 sol = lim.doit()
