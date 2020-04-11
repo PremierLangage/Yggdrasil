@@ -14,6 +14,7 @@ from components import CheckboxGroup, Input
 
 class Generator:
 
+# pour générer un alphabet avec les lettres prises aléatoirement
     @staticmethod
     def alphabet(length: int):
         alphabet = ['' for _ in range(length)]
