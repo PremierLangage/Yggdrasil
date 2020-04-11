@@ -5,8 +5,8 @@ maxattempt = 5
 generate== #|py|
 from generator import Generator
 # Generator.prefix(nb lettres alphabet , longueur maxi du prefix)
-nb_lettres = random.choice([2,3])
-alphabet, prefix, automaton = Generator.prefix(3,4)
+#nb_lettres = random.choice([2,3])
+alphabet, prefix, automaton = Generator.prefix(3,3)
 
 ==
 
@@ -19,6 +19,7 @@ Donnez un automate reconnaissant le langage **L1** = {{ '{' }}  mots qui commenc
 Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solution !
 </p>
 {% endif %}
+
 ==
 
 
