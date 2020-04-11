@@ -50,10 +50,12 @@ form== #|html|
 <!-- RENDER AUTOMATON VIEWER IF SCORE IS 100 -->
 {% if score == 100  %}
     <p class="success-state">Bravo l'automate que vous avez construit est une bonne réponse.</p>
+<!--
     {% if not deterministic %}
          <p class="success-state">L'automate déterministe suivant était aussi une bonne réponse :</p>
         {{ viewer|component }}
     {% endif %}
+-->
 {% endif %}
 
 <!-- RENDER THE AUTOMATON EDITOR -->
@@ -84,6 +86,7 @@ form== #|html|
     </ul>
     </p>
 ==
+
 
 
 
