@@ -8,11 +8,12 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-styles =@ /ComputerScience/automaton/styles/automaton.css
+styles =@ /ComputerScience/automates-test-claire/styles/automaton.css
 
 extracss==
 <style> {{ styles }}</style>
 ==
+
 
 
 
