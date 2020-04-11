@@ -19,7 +19,7 @@ tuple_name=["couple","triplet","quadruplet","quintuplet"][n-2]
 text ==
 Déterminer la solution du système suivant (d'inconnues $! {{lstvar}} !$) :
 $$ {{sys_tex}} $$
-Ecrire la solution sous forme d'un {{tuple_name}} de nombres.
+Ecrire la solution sous forme d'un couple de nombres.
 ==
 
 evaluator ==
