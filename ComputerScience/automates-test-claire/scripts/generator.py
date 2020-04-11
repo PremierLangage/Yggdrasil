@@ -38,7 +38,7 @@ class Generator:
     @staticmethod
     def prefix(max_symbs=2, length=4):
         alphabet = Generator.alphabet_ordonne(max_symbs)
-        # generation d'un prefix de longueur aleatoire entre 0 et length
+        # génération d'un prefix de longueur aléatoire entre 0 et length
         n = random.randint(2, length)
         prefix =  "".join(
             random.choice(alphabet)
