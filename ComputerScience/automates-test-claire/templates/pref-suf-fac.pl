@@ -6,7 +6,7 @@ generate== #|py|
 from generator import Generator
 # A mettre ailleurs peut-être?
 import random
-#
+#choisi le mode
 
 # Generator.prefix(nb lettres alphabet , longueur maxi du prefix)
 nb_lettres = random.choice([2,3])
