@@ -15,7 +15,7 @@ sol = lim.doit()
 ==
 
 text ==
-Déterminer $$ {{lim.latex}}.
+Déterminer $$ {{ lim.latex }}. $$
 ==
 
 evaluator ==
