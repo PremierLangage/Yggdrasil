@@ -31,7 +31,7 @@ else :
     alphabet, suffixe, automaton = Generator.suffixe(nb_lettres,3)
 ==
 
-title = Automates Préfixes
+title = Préfixe, suffixe ou facteur 
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage **L1** = {{ '{' }}  mots qui commencent par **{{ prefix }}** {{ '}' }} <br>
