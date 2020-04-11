@@ -7,6 +7,7 @@ class CustomLatexPrinter(LatexPrinter):
     custom_settings = {
         "interv_rev_brack": True
     }
+    
     def _print_FiniteSet(self, s):
         items = sorted(s, key=default_sort_key)
         items = ", ".join(map(self._print, items))
