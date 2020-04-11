@@ -1,4 +1,4 @@
-extends = /ComputerScience/automaton/templates/base.pl
+extends = /ComputerScience/automates-test-claire/templates/base.pl
 
 maxattempt = 3
 title= 
