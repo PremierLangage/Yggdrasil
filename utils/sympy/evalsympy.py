@@ -546,7 +546,6 @@ def eval_expr(strans, sol, checkratsimp=True, authorized_func=None, local_dict={
         return (-1, "NotRatSimp")
     return (100, "Success")
 
-@add_feedback
 def eval_function(strans, sol, checkratsimp=True, authorized_func=None, local_dict={}):
     r"""
     Evaluate an answer when the solution is a function.
