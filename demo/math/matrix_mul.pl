@@ -1,7 +1,7 @@
 extends = /model/mathmatrix.pl
 
 title==
-Produit de matrices
+Produit de matrices $! 2 \times 2 !$
 ==
 
 before==
