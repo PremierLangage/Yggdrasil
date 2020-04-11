@@ -25,9 +25,6 @@ Soit les matrices
 $$ A = \left( {{A.latex}}\right) \text{ et } B = \left({{B.latex}}\right) $$ 
 Calculer $! A B !$.
 ==
-form ==
-$$ A = {{A.latex}} $$
-==
 
 evaluator ==
 score, _, feedback = eval_matrix(mat.getmatrix(), Msol)
