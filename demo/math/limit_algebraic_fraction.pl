@@ -7,12 +7,14 @@ input.virtualKeyboards = functions
 before ==
 var('x')
 
+degf = randint(1,3)
+nbf = randint(2, degf+1)
+f=rand_int_poly(degf, nbf, 5, "x")
+degg = randint(1,3)
+nbg = randint(2, degg+1)
+g=rand_int_poly(degg, nbg, 5, "x")lim=Limit(f/g, x, a)
 
-f=rand_int_poly(randint(1,3),randint(2,3),5,"x")
-g=rand_int_poly(randint(1,3),randint(2,3),5,"x")
-lim=Limit(f/g, x, a)
-
-lim = Limit(f[0] - f[1], x, oo)
+lim = Limit(f/g, x, oo)
 sol = lim.doit()
 ==
 
