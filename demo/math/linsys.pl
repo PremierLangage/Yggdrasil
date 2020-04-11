@@ -9,7 +9,6 @@ A = rand_int_matrix_invertible(n, 3,[0], sparsity)
 B = rand_int_matrix(n, 1, 3, [0])
 
 sol = list(linsolve((A, B)))[0]
-sol_tex = latex(sol)
 
 sys_tex=latexsys(A,B)
 lstvar=",".join(["x","y","z","t","u","v"][:n])
