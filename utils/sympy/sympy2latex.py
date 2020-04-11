@@ -90,7 +90,7 @@ class CustomLatexPrinter(LatexPrinter):
         items = ", ".join(map(self._print, items))
         return r"\\left\\{%s\\right\\}" % items
 
-    def _print_MatrixBase(self, expr):
+    def _print_MatrixBase2(self, expr):
         lines = []
 
         for line in range(expr.rows):  # horrible, should be 'rows'
