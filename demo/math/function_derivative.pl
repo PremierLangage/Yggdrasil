@@ -18,6 +18,6 @@ $$ f : x \mapsto {{f.latex}} .$$
 ==
 
 evaluator ==
-score, _, feedback=eval_expr(input.value, sol)
+score, _, feedback = eval_expr(input.value, sol)
 ==
 
