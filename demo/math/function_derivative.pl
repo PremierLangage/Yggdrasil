@@ -8,6 +8,7 @@ before ==
 var('x')
 g = randitem([sin(x), cos(x), exp(x), ln(x)])
 h = randitem([x, x**2])
+g = exp(x)
 f = g * h
 sol = diff(f, x)
 ==
