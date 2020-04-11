@@ -5,21 +5,7 @@ from sympy.core.compatibility import default_sort_key
 
 class CustomLatexPrinter(LatexPrinter):
     custom_settings = {
-        "order": None,
-        "mode": "plain",
-        "itex": False,
-        "fold_frac_powers": False,
-        "fold_func_brackets": False,
-        "fold_short_frac": None,
-        "long_frac_ratio": None,
-        "mul_symbol": None,
-        "inv_trig_style": "abbreviated",
-        "mat_str": "pmatrix",
-        "mat_delim": "[",
-        "symbol_names": {},
-        "ln_notation": True,
-        "root_notation": True,
-        "interv_rev_brack": True,
+        "interv_rev_brack": True
     }
     def _print_FiniteSet(self, s):
         items = sorted(s, key=default_sort_key)
