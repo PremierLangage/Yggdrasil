@@ -6,10 +6,10 @@ input.virtualKeyboards = functions
 
 before ==
 var('x')
-g = randitem([sin(x), cos(x), exp(x), ln(x)])
-h = randitem([x, x**2])
-g = exp(x)
-f = g * h
+a = randitem([-1,1])*randitem([1/2,1/3,2,3])
+b = randitem([1/2,1/3,2,3])
+g = randitem([sin, cos, exp, ln])
+f = a * g(b * x)
 sol = diff(f, x)
 ==
 
