@@ -12,6 +12,7 @@ messages = {
     1: 'au plus'
 }
 message = messages[mode]
+# counting( nb lettres alphabet, nb occurences demandées , mode)
 alphabet, letter, n, automaton = Generator.counting(3, 4, mode)
 ==
 
@@ -25,6 +26,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution
 </p>
 {% endif %}
 ==
+
 
 
 
