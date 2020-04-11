@@ -18,7 +18,7 @@ messages = {
 }
 
 # choix de la taille de l'alphabet
-    nb_lettres = random.choice([2,3])
+nb_lettres = random.choice([2,3])
 
 if mode == -1 :
     # Generator.prefix(nb lettres alphabet , longueur maxi du prefix)
