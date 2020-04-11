@@ -16,7 +16,7 @@ messages = {
     0: 'contiennent',
     1: 'finissent par'
 }
-message= messages[mode]
+message = messages[mode]
 
 # choix de la taille de l'alphabet
 nb_lettres = random.choice([2,3])
