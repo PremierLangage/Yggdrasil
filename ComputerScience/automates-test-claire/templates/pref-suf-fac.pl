@@ -16,10 +16,19 @@ messages = {
     0: 'contiennent',
     1: 'finissent par'
 }
-# Generator.prefix(nb lettres alphabet , longueur maxi du prefix)
-nb_lettres = random.choice([2,3])
-alphabet, prefix, automaton = Generator.prefix(nb_lettres,3)
 
+# choix de la taille de l'alphabet
+    nb_lettres = random.choice([2,3])
+
+if mode == -1 :
+    # Generator.prefix(nb lettres alphabet , longueur maxi du prefix)
+    alphabet, prefix, automaton = Generator.prefix(nb_lettres,3)
+elif mode == 0 :
+    # Generator.prefix(nb lettres alphabet , longueur maxi du facteur)
+    alphabet, facteur, automaton = Generator.facteur(nb_lettres,3)
+else :
+    # Generator.prefix(nb lettres alphabet , longueur maxi du suffixe)
+    alphabet, suffixe, automaton = Generator.suffixe(nb_lettres,3)
 ==
 
 title = Automates Préfixes
