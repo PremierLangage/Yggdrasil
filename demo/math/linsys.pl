@@ -5,7 +5,7 @@ title = Système linéaire
 
 before ==
 n = 2
-A = rand_int_matrix_invertible(n, 3,[0], sparsity)
+A = rand_int_matrix_invertible(n, 3,[0])
 B = rand_int_matrix(n, 1, 3, [0])
 
 sol = list(linsolve((A, B)))[0]
