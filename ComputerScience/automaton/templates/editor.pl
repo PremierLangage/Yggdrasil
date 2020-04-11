@@ -74,7 +74,7 @@ form== #|html|
 <p>
 <ul>
     <li> Pour créer un nouvel état, double clic gauche. Utilisez les boutons pour changer le type de votre état.<br>
-    <strong> Ne pas renommer les états - il y a un bug</strong></li>
+    <it> Ne pas renommer les états - il y a un bug</it></li>
     <li>
     Pour ajouter une transition cliquer sur le point orange de l'état de départ
     et tirer votre transition jusqu'à l'état d'arrivée.
