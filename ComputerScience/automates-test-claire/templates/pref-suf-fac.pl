@@ -6,7 +6,13 @@ generate== #|py|
 from generator import Generator
 # A mettre ailleurs peut-être?
 import random
-#choisi le mode
+#choisi le type d'exo
+mode = random.choice([-1, 0, 1])
+messages = {
+    -1: 'prefixe',
+    0: 'facteur',
+    1: 'suffixe'
+}
 
 # Generator.prefix(nb lettres alphabet , longueur maxi du prefix)
 nb_lettres = random.choice([2,3])
@@ -25,3 +31,33 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 {% endif %}
 
 ==
+
+
+
+========
+generate== #|py|
+import random
+from generator import Generator
+mode = random.choice([-1, 0, 1])
+messages = {
+    -1: 'au moins',
+    0: 'exactement',
+    1: 'au plus'
+}
+message = messages[mode]
+# counting( nb lettres alphabet, nb occurences demandées , mode)
+alphabet, letter, n, automaton = Generator.counting(3, 4, mode)
+==
+
+title = Automates Occurences
+text ==
+On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
+Donnez un automate reconnaissant le langage **L1** = {{ '{' }} mots ayant {{ message }} **{{ n }}** occurrences de la lettre **{{ letter }}** {{ '}' }} <br>
+{% if attempt < maxattempt and score != 100 %}
+<p class="warning-state">
+Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution !
+</p>
+{% endif %}
+
+==
+
