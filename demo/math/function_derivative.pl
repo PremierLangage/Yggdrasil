@@ -6,8 +6,8 @@ input.virtualKeyboards = functions
 
 before ==
 var('x')
-a = randitem([-1,1])*randitem([1/2,1/3,2,3])
-b = randitem([1/2,1/3,2,3])
+a = randitem([-1,1])*randitem([Rational(1,2),Rational(1,3),2,3])
+b = randitem([Rational(1,2),Rational(1,3),2,3])
 g = randitem([sin, cos, exp, ln])
 f = a * g(b * x)
 sol = diff(f, x)
