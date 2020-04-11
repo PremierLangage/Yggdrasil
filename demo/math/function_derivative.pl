@@ -2,6 +2,8 @@ extends = /model/mathinput.pl
 
 title = Calcul de dérivée
 
+input.virtualKeyboards = functions
+
 before ==
 var('x')
 n = randint(1,4)
