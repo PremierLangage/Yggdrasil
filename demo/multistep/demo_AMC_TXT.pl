@@ -9,7 +9,6 @@ questions ==
 - Kribi
 
 ** Parmi les nombres suivants, lesquels sont positifs ?
-Lesquels ?
 + 2
 - -2
 + 10
