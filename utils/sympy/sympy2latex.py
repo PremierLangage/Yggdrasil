@@ -112,10 +112,12 @@ class CustomLatexPrinter(LatexPrinter):
             out_str = out_str.replace('%s', '{' + 'c'*expr.cols + '}%s')
         return out_str % r"\\\\".join(lines)
 
-
+_default_settings = {
+        'ln_notation': True
+    }
 
 def latex(expr):
-    return CustomLatexPrinter().doprint(expr)
+    return CustomLatexPrinter(_default_settings).doprint(expr)
 
 def latexsys(A,B,lstvar=['x','y','z','t','u','v','w']):
     n,m=A.shape
