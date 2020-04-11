@@ -35,6 +35,7 @@ class Generator:
     def regex(regex):
         return Automaton.parse(regex)
 
+# Génère un alphabet de max_symbs lettres et un mot prefix de longueur <= length et un automate reconnaissant les mots commençant par prefix
     @staticmethod
     def prefix(max_symbs=2, length=4):
         alphabet = Generator.alphabet_ordonne(max_symbs)
