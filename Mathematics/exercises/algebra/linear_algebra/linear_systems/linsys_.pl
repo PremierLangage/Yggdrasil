@@ -1,11 +1,9 @@
-extends = /model/math.pl
+extends = /model/mathinput.pl
 
 title = Système linéaire
 
 
 before ==
-keyboards_JSON['virtualKeyboards']="elementary"
-input.config = keyboards_JSON
 n=param['size']
 coeffboundA = param['coeffboundA']
 coeffboundB = param['coeffboundB']
@@ -44,6 +42,7 @@ if error == "NotTuple" or error == "WrongSize":
 solution == 
 La solution est $! {{sol_tex}} !$.
 ==
+
 
 
 
