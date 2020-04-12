@@ -14,7 +14,7 @@ def deserialize(arg):
         return arg
 
 def serialize(arg):
-    if isinstance(arg, (Basic, Matrix)):
+    if isinstance(arg, (Basic, Matrix, Tuple)):
         try:
             codelatex = latex(arg)
         except:
