@@ -12,12 +12,12 @@ f = rand_int_poly(deg, randint(2, deg + 1), 5, "x")
 deg = randint(1,3)
 g = rand_int_poly(deg, randint(2, deg + 1), 5, "x")
 
-lim2 = Limit(f/g, x, oo)
-sol = lim2.doit()
+lim = Limit(f/g, x, oo)
+sol = lim.doit()
 ==
 
 text ==
-Déterminer {{ lim2.latex }}.
+Déterminer {{ lim.latex }}.
 ==
 
 evaluator ==
