@@ -16,7 +16,7 @@ def deserialize(arg):
 def serialize(arg):
     if isinstance(arg, (Basic, Matrix, Tuple)):
         try:
-            codelatex = latex(arg)
+            codelatex = str(arg)
         except:
             codelatex = str(arg)
         return {'serialize': 'SymPy', 'srepr': srepr(arg), 'latex': codelatex}
