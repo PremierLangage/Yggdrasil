@@ -1,6 +1,8 @@
 extends = /model/basic.pl
 
-custom_pl_template = /utils/essai_template/custom_template.html
+custom_pl_template == 
+<h1> Salut ducon </h1>
+==
 
 title = Essai d'un nouveau template d'exo
 
