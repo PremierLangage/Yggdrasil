@@ -22,6 +22,10 @@ Déterminer {{ lim.latex }}.
 
 evaluator ==
 # score, _, _ = eval_real_or_inf(input.value, sol)
+import sympy.parsing.sympy_parser as prs
+transformations=prs.standard_transformations + (prs.implicit_multiplication_application,prs.convert_xor)
+ans = prs.parse_expr(s,local_dict={},transformations=transformations,evaluate=False)
+
 try:
     import sympy.parsing.sympy_parser as prs
     transformations=prs.standard_transformations + (prs.implicit_multiplication_application,prs.convert_xor)
