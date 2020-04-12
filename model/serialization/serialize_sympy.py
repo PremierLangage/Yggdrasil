@@ -1,4 +1,4 @@
-from sympy import Basic, Matrix, Tuple, sympify, srepr
+from sympy import Basic, Expr, Matrix, Tuple, sympify, srepr
 from sympy import latex
 
 def deserialize(arg):
