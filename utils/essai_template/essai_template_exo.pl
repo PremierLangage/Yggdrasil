@@ -105,36 +105,17 @@ Le quel de ces deux nombres préférez-vous : {{ a }} ou {{ b }} ?
 
 form==
 
-
+{{ inputbox|component}}
 
 ==
 
 settings.feedback = lightscore
 
 evaluator==
-from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
-
-#grade=CustomDragDrop.eval(drop,sol)
-groupp = DragDropGroup(labels = label, drop_zones = drop)
-
-for i in range(len(numbers)):
-        if numbers[i][0] < numbers[i][1]:
-            groupp.set_match(label[0],drop[i])
-        elif numbers[i][0] > numbers[i][1]:
-            groupp.set_match(label[1],drop[i])
-
-grade = groupp.eval(grading_function = right_minus_wrong)
-
-
-==
-
-extracss == #|html| 
-<style>
-    .myclass{
-        #padding: 1em;
-        min-width: 4em;
-        }
-</style>
+if inputbox.value == a : 
+    grade (100, 'pas mal!')
+else:
+    grade = (0, 'c'est nul!')
 ==
 
 
