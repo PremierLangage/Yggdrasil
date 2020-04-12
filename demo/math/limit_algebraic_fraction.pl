@@ -21,7 +21,11 @@ Déterminer {{ lim.latex }}.
 ==
 
 evaluator ==
-score, _, _ = eval_real_or_inf(input.value, sol)
+# score, _, _ = eval_real_or_inf(input.value, sol)
+try:
+    ans = latex2sympy(input.value)
+except:
+    rpass
 score = -1
 ==
 
