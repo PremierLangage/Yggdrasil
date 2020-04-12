@@ -120,13 +120,14 @@ if __name__ == "__main__":
     for key in namespace:
         if key in dic and dic[key] == namespace[key]:
             del dic[key]
-
+    s= ""
     for key in dic:
         try:
             dic[key] = serialize(dic[key])
         except:
-            print(("Serialization Error: "+str(dic[key])+str(type(dic[key]))),file = sys.stderr)
-            sys.exit(1)
+            s += str(dic[key])      
+    print(("Serialization Error: " + s),file = sys.stderr)
+    sys.exit(1)
 
     aux_component2(dic)
     
