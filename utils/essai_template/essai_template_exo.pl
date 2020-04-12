@@ -1,6 +1,5 @@
 
-custom_pl_template==/utils/essai_template/custom_template.html
-==
+custom_pl_template = /utils/essai_template/custom_template.html
 
 extends = /model/basic.pl
 
