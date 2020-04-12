@@ -15,7 +15,7 @@ g = rand_int_poly(deg, randint(2, deg + 1), 5, "x")
 lim = Limit(f/g, x, oo)
 sol = lim.doit()
 ==
-
+input.debug % true
 text ==
 Déterminer {{ lim.latex }}.
 ==
