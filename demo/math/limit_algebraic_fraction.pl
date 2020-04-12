@@ -23,6 +23,7 @@ Déterminer {{ lim.latex }}.
 evaluator ==
 # score, _, _ = eval_real_or_inf(input.value, sol)
 try:
+    import sympy.parsing.sympy_parser as prs
     ans = prs.parse_expr(input.value)
 except:
     pass
