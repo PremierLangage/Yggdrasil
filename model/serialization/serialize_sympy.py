@@ -24,7 +24,7 @@ def serialize(arg):
         return {k: serialize(v) for k, v in arg.items()}
     elif isinstance(arg,list):
         return list(map(serialize,arg))
-    elif isinstance(arg,(tuple,Tuple)):
+    elif isinstance(arg,tuple):
         return tuple(map(serialize,arg))
     else:
         return arg
