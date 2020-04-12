@@ -26,7 +26,7 @@ grade = (0, 'c'est nul')
 ==
 
 custom_pl_template == 
-{% extends "base.html" %}
+<!--{% extends "base.html" %}-->
 
 
 
