@@ -25,6 +25,7 @@ evaluator ==
 try:
     ans = latex2sympy(input.value)
 except:
+    ans = ""
     input.value = ""
     pass
 score = -1
