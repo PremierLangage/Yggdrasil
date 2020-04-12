@@ -22,7 +22,7 @@ form==
 settings.feedback = lightscore
 
 evaluator==
-grade = (0, 'c'est nul!')
+grade = (0, 'c'est nul')
 ==
 
 custom_pl_template == 
