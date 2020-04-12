@@ -1,32 +1,5 @@
-extends = /model/basic.pl
-
-
-title = Essai d'un nouveau template d'exo
-
-before==
-import random as rd
-
-[a,b] = rd.sample(range(1,100),2)
-
-==
-
-text==
-Le quel de ces deux nombres préférez-vous : {{ a }} ou {{ b }} ?
-==
-
-form==
-
-
-==
-
-settings.feedback = lightscore
-
-evaluator==
-grade = (0, 'c'est nul')
-==
-
 custom_pl_template == 
-<!--{% extends "base.html" %}-->
+{% extends "base.html" %}
 
 
 
@@ -109,7 +82,6 @@ custom_pl_template ==
             {% endif %}
         {% endfor %}
         <div class="col-md-1"></div>
-    </div>
 {% endblock %}
 ==
 
@@ -117,5 +89,32 @@ custom_pl_template ==
 
 
 
+
+extends = /model/basic.pl
+
+
+title = Essai d'un nouveau template d'exo
+
+before==
+import random as rd
+
+[a,b] = rd.sample(range(1,100),2)
+
+==
+
+text==
+Le quel de ces deux nombres préférez-vous : {{ a }} ou {{ b }} ?
+==
+
+form==
+
+
+==
+
+settings.feedback = lightscore
+
+evaluator==
+grade = (0, 'c'est nul')
+==
 
 
