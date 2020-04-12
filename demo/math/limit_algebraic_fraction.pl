@@ -29,7 +29,7 @@ ans = prs.parse_expr(s,local_dict={},transformations=transformations,evaluate=Fa
 try:
     import sympy.parsing.sympy_parser as prs
     transformations=prs.standard_transformations + (prs.implicit_multiplication_application,prs.convert_xor)
-    ans = prs.parse_expr(s,local_dict={},transformations=transformations,evaluate=False)
+    ans = prs.parse_expr(input.value,local_dict={},transformations=transformations,evaluate=False)
 except:
     pass
 score = -1
