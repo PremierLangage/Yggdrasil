@@ -119,16 +119,25 @@ _default_settings = {
 def latex(expr):
     return CustomLatexPrinter(_default_settings).doprint(expr)
 
-def latexsys(A,B,lstvar=['x','y','z','t','u','v','w']):
-    n,m=A.shape
-    code="\\\\begin{align}"
+def latex_linsys(A, B, lstvar=['x','y','z','t','u','v','w']):
+    """
+    Generate a LaTeX code for a linear system.
+    """
+    if not isinstance(A, sp.Matrix):
+        A = sp.Matrix(A)
+    if not isinstance(B, sp.Matrix):
+        B = sp.Matrix(B)
+
+    n, m = A.shape
+    
+    code = "\\\\begin{align}"
     for i in range(n):
-        code+="&" + latex_lincomb(A[i,:],lstvar)
-        if i<n-1:
-            code+=" = "+latex(B[i])+" \\\\\\ "
+        code += "&" + latex_lincomb(A[i,:], lstvar)
+        if i < n-1:
+            code += " = " + latex(B[i]) + " \\\\\\ "
         else: 
-            code+=" = "+latex(B[i])+" \\\\end{align}"
-    if n==1:
+            code += " = " + latex(B[i]) + " \\\\end{align}"
+    if n == 1:
         return code
     else:
         return "\\left\lbrace %s \\right." % code 
