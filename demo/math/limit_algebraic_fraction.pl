@@ -25,7 +25,7 @@ evaluator ==
 try:
     ans = latex2sympy(input.value)
 except:
-    rpass
+    pass
 score = -1
 ==
 
