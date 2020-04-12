@@ -120,7 +120,7 @@ if __name__ == "__main__":
     for key in namespace:
         if key in dic and dic[key] == namespace[key]:
             del dic[key]
-    s= ""
+
     for key in dic:
         dic[key] = serialize(dic[key])
 
