@@ -1,8 +1,6 @@
-
-custom_pl_template = /utils/essai_template/custom_template.html
-
 extends = /model/basic.pl
 
+custom_pl_template = /utils/essai_template/custom_template.html
 
 title = Essai d'un nouveau template d'exo
 
