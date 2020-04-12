@@ -1,5 +1,5 @@
 from sympy import Basic, Matrix, Tuple, sympify, srepr
-from sympy2latex import latex
+from sympy import latex
 
 def deserialize(arg):
     if isinstance(arg, dict) and 'serialize' in arg and arg['serialize'] == "SymPy" :
