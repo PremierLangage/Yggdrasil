@@ -21,7 +21,15 @@ Déterminer {{ lim.latex }}.
 ==
 
 evaluator ==
-# score, _, _ = eval_real_or_inf(input.value, sol)
+score, _, _ = eval_real_or_inf(input.value, sol)
+
+==
+
+solution ==
+La limite est $% {{sol.latex}} %$.
+==
+
+hh ==
 try:
     ans = str2sympy(input.value)
     import sympy.parsing.sympy_parser as prs
@@ -30,8 +38,4 @@ try:
 except:
     pass
 score = -1
-==
-
-solution ==
-La limite est $% {{sol.latex}} %$.
 ==
