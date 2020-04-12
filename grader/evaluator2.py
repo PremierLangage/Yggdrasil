@@ -122,12 +122,7 @@ if __name__ == "__main__":
             del dic[key]
     s= ""
     for key in dic:
-        try:
-            dic[key] = serialize(dic[key])
-        except:
-            s += str(dic[key])      
-    print(("Serialization Error: " + s),file = sys.stderr)
-    sys.exit(1)
+        dic[key] = serialize(dic[key])
 
     aux_component2(dic)
     
