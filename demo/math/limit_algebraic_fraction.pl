@@ -13,7 +13,7 @@ deg = randint(1,3)
 g = rand_int_poly(deg, randint(2, deg + 1), 5, "x")
 
 lim2 = Limit(f/g, x, oo)
-sol = lim.doit()
+sol = lim2.doit()
 ==
 
 text ==
