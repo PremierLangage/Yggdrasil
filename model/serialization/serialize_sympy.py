@@ -15,8 +15,7 @@ def deserialize(arg):
 
 def serialize(arg):
     if isinstance(arg, (Basic, Matrix)):
-        codelatex = latex(arg)
-        return {'serialize': 'SymPy', 'srepr': srepr(arg), 'latex': codelatex}
+        return {'serialize': 'SymPy', 'srepr': srepr(arg), 'latex': latex(arg)}
     elif isinstance(arg,dict):
         return {k: serialize(v) for k, v in arg.items()}
     elif isinstance(arg,list):
