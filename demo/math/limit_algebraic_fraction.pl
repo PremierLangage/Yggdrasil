@@ -23,7 +23,7 @@ Déterminer {{ lim.latex }}.
 evaluator ==
 # score, _, _ = eval_real_or_inf(input.value, sol)
 try:
-    ans = latex2sympy(input.value)
+    ans = sympify(input.value)
 except:
     pass
 score = -1
