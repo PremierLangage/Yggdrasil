@@ -1,0 +1,11 @@
+Vérifier et ajuster si besoin:
++ properties.pl
++ recognition.pl
+
+Exercices à concevoir:
++ automate des positions
++ produit d'automates simples
++ minimisation
+    automate minimal et simple vérification
+    étapes de l'algo de Moore en donnant les classes d'équivalences à chaque niveau
++ QCM 
