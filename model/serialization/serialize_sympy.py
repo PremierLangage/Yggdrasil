@@ -18,6 +18,7 @@ def serialize(arg):
         try:
             codelatex = latex(arg)
         except:
+            print(str(arg))
             raise ValueError
         codelatex = latex(arg)
         return {'serialize': 'SymPy', 'srepr': srepr(arg), 'latex': codelatex}
