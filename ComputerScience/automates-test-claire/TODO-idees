@@ -6,7 +6,8 @@ fsm.py et lego.py sont les lib open source sur github https://github.com/qntm/gr
 le script automaton.py est un wrapper autour de cette lib et elle contient une classe avec des méthodes pour créer des automates aléatoire ou à partir d'une expression régulière et des méthodes pour comparer des automates et vérifier des propriétés
 
 ==========================================
-A discuter
+A discuter avec Mamadou et Dominique
+-----------------
 
 Viewer/editeur
 
@@ -17,11 +18,11 @@ Quand je renomme l'état je n'arrive plus à faire des transistions
 
 J'ai changé réponse acceptable
 
-
 =======
-
 Dans editor. pl j'ai ajouté des consignes pour dessiner l'autoamtes
 
+========
+Questions sur les numéros d'activées
 
 
 
@@ -38,4 +39,4 @@ Exercices à concevoir:
 + minimisation
     automate minimal et simple vérification
     étapes de l'algo de Moore en donnant les classes d'équivalences à chaque niveau
-+ QCM reg/non reg
++ QCM reg/non-reg
