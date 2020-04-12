@@ -1,6 +1,6 @@
 extends = /model/mathinput.pl
 
-title = Inéquation produit
+title = Limite d'une fraction rationnelle
 
 input.virtualKeyboards = functions
 
