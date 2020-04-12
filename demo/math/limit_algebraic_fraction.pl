@@ -22,7 +22,6 @@ Déterminer {{ lim.latex }}.
 
 evaluator ==
 # score, _, _ = eval_real_or_inf(input.value, sol)
-ans = sympify(input.value)
 try:
     ans = sympify(input.value)
 except:
