@@ -21,8 +21,7 @@ Déterminer {{ lim.latex }}.
 ==
 
 evaluator ==
-score, _, _ = eval_real_or_inf(input.value, sol)
-
+score, _, feedback = eval_real_or_inf(input.value, sol)
 ==
 
 solution ==
