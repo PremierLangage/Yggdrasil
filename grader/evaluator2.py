@@ -122,8 +122,12 @@ if __name__ == "__main__":
             del dic[key]
 
     for key in dic:
-        dic[key]=serialize(dic[key])
-
+        try:
+            dic[key] = serialize(dic[key])
+        except:
+            print(("Serialization Error: "+str(dic[key])),file = sys.stderr)
+            sys.exit(1)
+            
     aux_component2(dic)
     
     if 'grade' in dic:
@@ -159,4 +163,5 @@ if __name__ == "__main__":
             ffeedback=format_feedback_lightscore(score,feedback)
 
     output(score, ffeedback, dic)
+
 
