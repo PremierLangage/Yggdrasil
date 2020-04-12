@@ -23,7 +23,7 @@ Déterminer {{ lim.latex }}.
 evaluator ==
 # score, _, _ = eval_real_or_inf(input.value, sol)
 try:
-    ans = latex2sympy(input.value)
+    #ans = latex2sympy(input.value)
     import sympy.parsing.sympy_parser as prs
     transformations=prs.standard_transformations + (prs.implicit_multiplication_application,prs.convert_xor)
     ans = prs.parse_expr(input.value,local_dict={},transformations=transformations,evaluate=False)
