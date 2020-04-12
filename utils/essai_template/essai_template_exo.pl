@@ -16,17 +16,13 @@ Le quel de ces deux nombres préférez-vous : {{ a }} ou {{ b }} ?
 
 form==
 
-{{ inputbox|component}}
 
 ==
 
 settings.feedback = lightscore
 
 evaluator==
-if inputbox.value == str(a) : 
-    grade (100, 'pas mal!')
-else:
-    grade = (0, 'c'est nul!')
+grade = (0, 'c'est nul!')
 ==
 
 custom_pl_template == 
