@@ -112,7 +112,7 @@ form==
 settings.feedback = lightscore
 
 evaluator==
-if inputbox.value == a : 
+if inputbox.value == str(a) : 
     grade (100, 'pas mal!')
 else:
     grade = (0, 'c'est nul!')
