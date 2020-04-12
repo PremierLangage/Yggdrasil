@@ -21,6 +21,7 @@ Déterminer {{ lim.latex }}.
 ==
 
 evaluator ==
+feedback = latex2sympy(input.value)
 # score, _, feedback = eval_real_or_inf(input.value, sol)
 score = -1
 ==
