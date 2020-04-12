@@ -1,0 +1,146 @@
+
+custom_pl_template==
+{% extends "base.html" %}
+
+
+
+{% block alert %}{% endblock %}
+
+{% block content %}
+    <!-- HEADER -->
+    <div class="card-header exercise__header">
+        <div class="text-center">
+            <h2 class='exercise__title'>
+                {% if title %}
+                    Testing {{ title }}
+                {% endif%}
+            </h2>
+        </div>
+        <div class="text-left">
+            <span class='exercise__author'>
+                {% if author %}
+                    {{ author }}
+                {% endif %}
+            </span>
+        </div>
+    </div>
+    <br/>
+    <div class="row no-margin">
+        <div class="col-md-1"></div>
+        {% for test_name, test in tests.items() %}
+            {% if test.error %}
+                <table class="mdl-data-table mdl-js-data-table mdl-data-table-default-non-numeric" style="width: 100%;">
+                    <tr class="alert alert-danger"}>
+                        <th style="width: 50%;"> {{ test_name }}</th>
+                        <th>{{ test.error_message|safe }}</th>
+                    </tr>
+                </table>
+            {% else %}
+                <table class="mdl-data-table mdl-js-data-table mdl-data-table-default-non-numeric" style="width: 100%;">
+                    <tr data-toggle="collapse" aria-expanded="false" data-target="#collapse_{{ test.index__ }}"
+                        {% if test.status__ %}
+                            class="alert alert-success pointer"
+                        {% else %}
+                            class="alert alert-danger pointer"
+                        {% endif %}>
+                        <th style="width: 50%;"> {{ test_name }}
+                        </th>
+                        <th>
+                            seed = {{ test.seed }}
+                        </th>
+                    </tr>
+                    {% if "feedback" in test %}
+                    <tr class="collapse multi-collapse" id="collapse_{{ test.index__ }}">
+                        <th>{% if test.feedback_status__ %}
+                                <i style="color: green;" class="fas fa-check"></i>
+                            {% else %}
+                                <i style="color: red;" class="fas fa-times"></i>
+                            {% endif %}
+                            Feedback</th>
+                        <th>Expected feedback</th>
+                    </tr>
+                    <tr class="collapse multi-collapse" id="collapse_{{ test.index__ }}">
+                        <td>{{ test.feedback_gotten__|safe }}</td>
+                        <td>{{ test.feedback|safe }}</td>
+                    </tr>
+                    {% endif %}
+                    {% if "grade" in test %}
+                    <tr class="collapse multi-collapse" id="collapse_{{ test.index__ }}">
+                        <th>{% if test.grade_status__ %}
+                                <i style="color: green;" class="fas fa-check"></i>
+                            {% else %}
+                                <i style="color: red;" class="fas fa-times"></i>
+                            {% endif %}
+                            Grade</th>
+                        <th>Expected grade</th>
+                    </tr>
+                    <tr class="collapse multi-collapse" id="collapse_{{ test.index__ }}">
+                        <td>{{ test.grade_gotten__ }}</td>
+                        <td>{{ test.grade }}</td>
+                    </tr>
+                    {% endif %}
+                </table>
+            {% endif %}
+        {% endfor %}
+        <div class="col-md-1"></div>
+    </div>
+{% endblock %}
+==
+
+extends = /model/basic.pl
+
+
+title = Essai d'un nouveau template d'exo
+
+before==
+import random as rd
+
+[a,b] = rd.sample(range(1,100),2)
+
+==
+
+text==
+Le quel de ces deux nombres préférez-vous : {{ a }} ou {{ b }} ?
+==
+
+form==
+
+
+
+==
+
+settings.feedback = lightscore
+
+evaluator==
+from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
+
+#grade=CustomDragDrop.eval(drop,sol)
+groupp = DragDropGroup(labels = label, drop_zones = drop)
+
+for i in range(len(numbers)):
+        if numbers[i][0] < numbers[i][1]:
+            groupp.set_match(label[0],drop[i])
+        elif numbers[i][0] > numbers[i][1]:
+            groupp.set_match(label[1],drop[i])
+
+grade = groupp.eval(grading_function = right_minus_wrong)
+
+
+==
+
+extracss == #|html| 
+<style>
+    .myclass{
+        #padding: 1em;
+        min-width: 4em;
+        }
+</style>
+==
+
+
+
+
+
+
+
+
