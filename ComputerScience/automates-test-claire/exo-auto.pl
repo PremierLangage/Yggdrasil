@@ -2,7 +2,7 @@
 extends=AMC-auto.pl
 
 mk_auto == #|python|
-#pour ajouter une transition à l'automate prévu
+#pour ajouter une transition à l'automate
 viewer.automaton+="""
 s0:a>s2"""
 ==
