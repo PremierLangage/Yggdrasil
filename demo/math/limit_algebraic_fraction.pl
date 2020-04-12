@@ -17,7 +17,7 @@ sol = lim.doit()
 ==
 
 text ==
-Déterminer $$ {{ lim.srepr }}. $$
+Déterminer {{ lim.srepr }}.
 ==
 
 evaluator ==
