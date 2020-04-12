@@ -125,9 +125,9 @@ if __name__ == "__main__":
         try:
             dic[key] = serialize(dic[key])
         except:
-            print(("Serialization Error: "+str(dic[key])),file = sys.stderr)
+            print(("Serialization Error: "+str(dic[key])+str(type(dic[key]))),file = sys.stderr)
             sys.exit(1)
-            
+
     aux_component2(dic)
     
     if 'grade' in dic:
