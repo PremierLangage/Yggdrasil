@@ -44,11 +44,8 @@ try:
 except:
     pass
 
-ans = dict_factors_exponent(latex2sympy(input.value))
-
 score = -1
 feedback = str(ans)
-
 ==
 
 old ==
