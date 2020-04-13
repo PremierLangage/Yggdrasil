@@ -6,6 +6,8 @@ tag=system|shell
 extends=/model/AMC_TXT.pl
 questions==
 
+
+
 * Soit $%f : \mathbb{R} \to \mathbb{R} %$ une fonction. On dit que $%x_0%$ est un point fixe de $%f%$ si :
 + $%f(x_0) = x_0 %$
 - $%f(x_0) \geq  x_0 %$
@@ -49,25 +51,25 @@ Calculez et comparez $%|1-\frac{3}{4}|%$ et $%|f(1)-f(\frac{3}{4})|%$. Que peut-
 - Elle est 1-Lipschitzienne.
 - Elle est contractante.
 
-* Quel en enseignement peut-on tirer de l'étude précédente de la fonction $%f(x) = 1-x^2%$ sur $%[0,1]%$ ?
-+ La réciproque du théorème du point fixe est vraie !
-- La réciproque du théorème du point fixe est fausse !
+* Quel enseignement peut-on tirer de l'étude précédente de la fonction $%f(x) = 1-x^2%$ sur $%[0,1]%$ ?
+- La réciproque du théorème du point fixe est vraie !
++ La réciproque du théorème du point fixe est fausse !
 
 
 ** Soit  $%f : [a,b] \to [a,b]%$ (où $% a<b %$) une fonction $%K%$-Lipschitzienne avec $%0<K<1%$. 
-On note $x_0$ l'unique point fixe de $%f%$ donné par le théorème du point fixe.
-On définit la suite $% (u_n)_{n \in \mathbb \N} %$ par $%u_0 = a%$ et $% u_{n+1} = f(u_n) %$.
+On note $%x_0%$ l'unique point fixe de $%f%$ donné par le théorème du point fixe.
+On définit la suite $% (u_n) %$ par $%u_0 = a%$ et $% u_{n+1} = f(u_n) %$.
 Que dire de cette suite (plusieurs bonnes réponses) ? 
 + Elle converge vers l'unique point fixe de $%f%$.
 - Elle est croissante.
 - Elle est décroissante.
 - Elle n'admet pas de limite.
-+ $%\forall n \in \N%$, $%|u_{n+1} - x_0| \leq K|a-x_0|%$.
++ $%\forall n \in \mathbb N%$, $%|u_{n+1} - x_0| \leq K|a-x_0|%$.
 
 
 * Soit $%f%$ la fonction définie sur $%[1,2]%$ par $%f(x) = \dfrac{x+2}{x+1} %$. 
-On définit la suite $% (u_n)_{n \in \mathbb \N} %$ par $%u_0 = \frac{3}{2}%$ et $% u_{n+1} = f(u_n) %$.
-On admet que cette suite converge. Déterminez la limite de $% (u_n)_{n \in \mathbb \N} %$.
+On définit la suite $% (u_n)%$ par $%u_0 = \frac{3}{2}%$ et $% u_{n+1} = f(u_n) %$.
+On admet que cette suite converge. Déterminez la limite de $% (u_n)_{n \in \mathbb N} %$.
 +  $% \lim\limits_{n \to + \infty} u_n = \sqrt{2} %$
 - $% \lim\limits_{n \to + \infty} u_n = \sqrt{5} %$
 - $% \lim\limits_{n \to + \infty} u_n = 1 %$
