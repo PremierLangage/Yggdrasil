@@ -16,8 +16,8 @@ text==
 {{labels}}
 Compléter la phrase suivante avec les étiquettes proposées.
 ==
-form =
-form2==
+
+form ==
 Le {{ drops[0]|component }} est absent.
 
 
