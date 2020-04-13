@@ -1,5 +1,31 @@
 extends = /model/basic.pl
 
+title = Essai d'un nouveau template d'exo
+
+before==
+import random as rd
+
+[a,b] = rd.sample(range(1,100),2)
+
+==
+
+text==
+Le quel de ces deux nombres préférez-vous : {{ a }} ou {{ b }} ?
+==
+
+form==
+
+
+==
+
+settings.feedback = lightscore
+
+evaluator==
+grade = (0, 'c'est nul')
+==
+
+
+
 custom_pl_template == 
 <ion-card class="exercise">
     <ion-card-header class="exercise__header">
@@ -69,29 +95,6 @@ custom_pl_template ==
 ==
 
 
-title = Essai d'un nouveau template d'exo
-
-before==
-import random as rd
-
-[a,b] = rd.sample(range(1,100),2)
-
-==
-
-text==
-Le quel de ces deux nombres préférez-vous : {{ a }} ou {{ b }} ?
-==
-
-form==
-
-
-==
-
-settings.feedback = lightscore
-
-evaluator==
-grade = (0, 'c'est nul')
-==
 
 
 
