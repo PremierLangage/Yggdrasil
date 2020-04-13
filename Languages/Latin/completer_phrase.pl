@@ -13,7 +13,7 @@ dragdrop.set_label([str(i) for i in range(3)])
 ==
 
 text==
-{{labels}}
+{{drops}}
 Compléter la phrase suivante avec les étiquettes proposées.
 ==
 
