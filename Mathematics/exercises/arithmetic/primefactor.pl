@@ -27,13 +27,13 @@ def dict_factors_exponent(expr):
     else:
         args = [expr]
     for factor in args:
-        if type(f) == sp.Pow:
+        if type(factor) == sp.Pow:
             p = factor.args[0]
             k = factor.args[1]
         else:
             p = factor
             k = 1
-        if p in dicfactors:
+        if p in dict:
             dict[p] += k
         else:
             dict[p] = k      
