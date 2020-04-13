@@ -6,17 +6,28 @@ from sympy.core.compatibility import default_sort_key
 class CustomLatexPrinter(LatexPrinter):
     """ 
     A custom LaTeX printer for SymPy objects.
+
+    This printer is based on the standard LaTeX Printer.
+    It overrides some methods and adds some settings.
     """
     custom_settings = {
         "interv_rev_brack": True
     }
 
     def _print_FiniteSet(self, s):
+        """
+        Return a LaTeX code for a FiniteSet object.
+
+        No braces around the elements.
+        """
         items = sorted(s, key=default_sort_key)
         items = ", ".join(map(self._print, items))
         return r"%s" % items
 
     def _print_Poly(self, poly):
+        """
+        Return a LaTeX code for a Poly object.
+        """
         cls = poly.__class__.__name__
         terms = []
         for monom, coeff in poly.terms():
