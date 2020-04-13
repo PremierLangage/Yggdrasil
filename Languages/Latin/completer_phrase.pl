@@ -7,9 +7,8 @@ from customdragdrop import *
 
 dragdrop = DragDropGroup()
 dragdrop.set_drop("")
-drops2 = str(dragdrop.drops)
 dragdrop.set_label([str(i) for i in range(3)])
-labels = dragdrop.labels
+label0 = dragdrop.labels[0]
 ==
 
 text==
@@ -18,7 +17,7 @@ Compléter la phrase suivante avec les étiquettes proposées.
 ==
 
 form ==
-Le {{ drops|component }} est absent.
+Le {{ label0|component }} est absent.
 
 
 {% for label in labels %} {{ label|component }} {% endfor %}
