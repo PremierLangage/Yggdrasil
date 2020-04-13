@@ -45,7 +45,7 @@ def eval(strans, sol):
         dict_ans = dict_factors_exponent(ans)
     except:
         return (-1, "La réponse doit être un produit de facteurs premiers.")
-    if not all(isprime(p) for p in ans.keys()):
+    if not all(isprime(p) for p in dict_ans.keys()):
         return (-1, "La réponse doit être un produit de facteurs premiers.")
     if simplify(ans-sol) == 0:
         return (0, "")
