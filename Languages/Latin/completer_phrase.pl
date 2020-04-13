@@ -7,13 +7,13 @@ from customdragdrop import *
 
 dragdrop = DragDropGroup()
 dragdrop.set_drop("")
-drops = str(dragdrop.drops.values())
+drops2 = str(dragdrop.drops.values())
 dragdrop.set_label([str(i) for i in range(3)])
 #labels = dragdrop.labels.values()
 ==
 
 text==
-{{drops}}
+{{drops2}}
 Compléter la phrase suivante avec les étiquettes proposées.
 ==
 
