@@ -1,6 +1,6 @@
 author=Colin Petitjean
 
-title=Fonctions contractantes
+title=Fonctions contractantes et quelques exemples
 tag=system|shell
 
 extends=/model/AMC_TXT.pl
