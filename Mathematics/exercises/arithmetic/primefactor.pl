@@ -36,12 +36,16 @@ def dict_factors_exponent(expr):
     return dict
 
 try:
-    ans = latex2sympy(input.value)
+    ans = dict_factors_exponent(latex2sympy(input.value))
 except:
-    if type(ans)==sp.Mul:
-        dicfactors=list2dicfactors(ans.args)
-    else:
-        dicfactors=list2dicfactors([ans])
+    pass
+
+score = -1
+feedback = str(ans)
+
+==
+
+old ==
     if not all(isprime(p) for p in dicfactors.keys()):
         score=0
         feedback=textError['2']
@@ -54,10 +58,7 @@ except:
 
     score=-1
     feedback=textError['1']
-
 ==
-
-
 
 
 
