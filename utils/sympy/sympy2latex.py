@@ -159,7 +159,10 @@ def latex_linsys(A, B, lstvar=['x','y','z','t','u','v','w']):
     else:
         return "\\left\lbrace \\\\begin{align} %s \\\\end{align} \\right. " % " ".join(terms) 
 
-def latex_lincomb(coeff,vec):
+def latex_lincomb(coeff, vec):
+    """
+    Return a LaTeX string for a linear combination.
+    """
     code=""
     first=True
     for i in range(len(coeff)):
