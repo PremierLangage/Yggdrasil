@@ -86,7 +86,7 @@ def rand_set(n,items,excluded_values=[]):
     """
     Generate a random finite set.
     """
-    return sp.FiniteSet(*list_randitem_norep(n,items,excluded_values=[]))
+    return sp.FiniteSet(*list_randitem_norep(n,list(items),excluded_values=[]))
 
 
 # Intervals
