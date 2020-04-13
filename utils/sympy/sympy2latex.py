@@ -147,17 +147,18 @@ def latex_linsys(A, B, lstvar=['x','y','z','t','u','v','w']):
 
     n, m = A.shape
     
-    code = "\\\\begin{align}"
+    code = ""
+    terms = []
     for i in range(n):
-        code += "&" + latex_lincomb(A[i,:], lstvar)
+        terms.extend(["&", latex_lincomb(A[i,:], lstvar)])
         if i < n-1:
-            code += " = " + latex(B[i]) + " \\\\\\ "
-        else: 
-            code += " = " + latex(B[i]) + " \\\\end{align}"
+            terms.extend(["=", latex(B[i]), "\\\\\\"])
+        else:
+            terms.extend(["=", latex(B[i])])
     if n == 1:
-        return code
+        return " ".join(terms)
     else:
-        return "\\left\lbrace %s \\right." % code 
+        return "\\left\lbrace \\\\begin{align} %s \\\\end{align} \\right. " % " ".join(terms) 
 
 def latex_lincomb(coeff,vec):
     code=""
