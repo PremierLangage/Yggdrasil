@@ -9,7 +9,6 @@ import random as rd
 from customdragdrop import *
 
 drop = CustomDragDrop.Drop()
-mygroup.set_label({"lt": lt, "gt": gt})
 
 ==
 
