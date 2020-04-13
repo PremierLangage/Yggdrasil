@@ -24,6 +24,6 @@ form ==
 
 evaluator==#|python|
 score = 100
-feedback = str(type(dragdrop))
+feedback = str(dragdrop.labels)
 ==
 
