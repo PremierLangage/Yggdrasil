@@ -3,14 +3,12 @@ extends = /model/mathinput.pl
 title = Ensemble des parties d'un ensemble
 
 before ==
-A = rand_finiteset(randint(2,3),list(range(10)))
-A_tex=latex(A)
-sol=A.powerset()
-sol_tex=latex(sol)
+A = rand_set(randint(2,3),list(range(10)))
+sol = A.powerset()
 ==
 
 text == 
-Ecrire en extension l'ensemble $! \mathcal{P}(\\{ {{A_tex}}\\} ) !$.
+Ecrire en extension l'ensemble $! \mathcal{P}(\\{ {{A.latex}}\\} ) !$.
 ==
 
 evaluator ==
