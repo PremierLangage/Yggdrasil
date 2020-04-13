@@ -23,6 +23,7 @@ form ==
 settings.feedback = lightscore
 
 evaluator==#|python|
-
+score = 100
+feedback = str(type(dragdrop))
 ==
 
