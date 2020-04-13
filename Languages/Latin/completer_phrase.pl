@@ -20,7 +20,7 @@ form ==
 {% for label in labels %} {{ label|component }} {% endfor %}
 ==
 
-settings.feedback = lightscore
+#settings.feedback = lightscore
 
 evaluator==#|python|
 score = 100
