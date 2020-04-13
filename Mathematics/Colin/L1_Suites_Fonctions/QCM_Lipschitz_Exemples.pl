@@ -1,6 +1,6 @@
 author=Colin Petitjean
 
-title=Fonctions Lipschitziennes
+title=Fonctions Lipschitziennes : Exemples
 tag=system|shell
 
 extends=/model/AMC_TXT.pl
