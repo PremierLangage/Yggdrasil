@@ -9,15 +9,19 @@ import random as rd
 from customdragdrop import *
 
 drop = CustomDragDrop.Drop()
-
+labels = [CustomDragDrop.Label() for _ in range(3)]
 ==
 
 text==
-Comparer les nombres suivants avec les symboles {{ a | component }} et {{ b | component }}.
+Compméter la phrase suivante avec les étiquettes proposées.
 ==
 
 form==
 Le {{ drop|component }} est absent.
+
+{% for label in labels %}
+{{ label|component }}
+{% endfor %}
 ==
 
 settings.feedback = lightscore
