@@ -6,7 +6,7 @@ before==#|python|
 from customdragdrop import *
 
 dragdrop = DragDropGroup()
-dragdrop.set_drops("")
+dragdrop.set_drop("")
 drops = dragdrop.drops
 labels = [CustomDragDrop.Label() for _ in range(3)]
 ==
