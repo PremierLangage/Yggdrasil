@@ -30,7 +30,7 @@ editor.code ==
 before==
 ==
 
-title = Code Editor Component
+title=bash code template <titre à surcharger>
 
 text==
 ==
