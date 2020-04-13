@@ -7,8 +7,6 @@ extends=/model/AMC_TXT.pl
 questions==
 
 
-
-
 * Rappeler la définition d'une fonction $% f :\mathbb{R} \rightarrow \mathbb{R}%$ Lipschitzienne : 
 - $% \forall K >0, ~ \exists x,y \in \mathbb{R} \text{ tel que } |f(x) - f(y)| \leq K|x-y| %$
 - $% \exists K >0, ~ \forall x,y \in \mathbb{R}, ~ |f(x) - f(y)| \leq |x-y| %$
