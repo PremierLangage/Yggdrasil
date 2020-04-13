@@ -1,6 +1,8 @@
 introduction=Vous trouverez ici le test de suivi correspondant aux vidéos portant sur les fonctions Lipschitziennes et sur le théorème du point fixe.  
 title=Fonctions Lipschitziennes et théorème du point fixe.
 @QCM_Lipschitz.pl
+@QCM_Contractante.pl
 @Theoreme_Point_Fixe.pl
 # on peut rajouter d'autres exercices 
+
 
