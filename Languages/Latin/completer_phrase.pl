@@ -1,7 +1,5 @@
 extends = /model/basic.pl
 
-@ /utils/components/dragdrop.py [customdragdrop.py]
-
 title = Comparaison de nombres (DragDrop)
 
 before==#|python|
@@ -18,9 +16,8 @@ Compléter la phrase suivante avec les étiquettes proposées.
 form==
 Le {{ drop|component }} est absent.
 
-{% for label in labels %}
-{{ label|component }}
-{% endfor %}
+
+{% for label in labels %} {{ label|component }} {% endfor %}
 ==
 
 settings.feedback = lightscore
