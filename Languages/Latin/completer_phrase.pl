@@ -8,7 +8,7 @@ from customdragdrop import *
 dragdrop = DragDropGroup()
 dragdrop.set_drop("")
 dragdrop.set_label([str(i) for i in range(3)])
-label0 = dragdrop.labels[0]
+label0 = dragdrop.labels["0"]
 ==
 
 text==
