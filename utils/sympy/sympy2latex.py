@@ -138,7 +138,7 @@ def latex(expr):
 
 def latex_linsys(A, B, lstvar=['x','y','z','t','u','v','w']):
     """
-    Return a LaTeX code for a linear system.
+    Return a LaTeX string for a linear system.
     """
     if not isinstance(A, sp.Matrix):
         A = sp.Matrix(A)
@@ -147,7 +147,6 @@ def latex_linsys(A, B, lstvar=['x','y','z','t','u','v','w']):
 
     n, m = A.shape
     
-    code = ""
     terms = []
     for i in range(n):
         terms.extend(["&", latex_lincomb(A[i,:], lstvar)])
