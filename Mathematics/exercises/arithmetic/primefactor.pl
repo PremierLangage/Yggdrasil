@@ -15,7 +15,7 @@ textError %=
 before ==
 while True:
     n = randint(10, 150)
-    if sum(list(factorint(n)).values())) > 2:
+    if sum(factorint(n).values()) > 2:
         break
 ==
 
