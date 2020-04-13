@@ -20,25 +20,20 @@ while True:
 ==
 
 evaluator ==
-def list2dicfactors(listfactors):
-    dicfactors={}
-    for f in listfactors:
-        if type(f)==sp.Pow:
-            if isinstance(f.args[0],sp.Integer) and isinstance(f.args[1],sp.Integer):
-                p=f.args[0]
-                k=f.args[1]
-            else:
-                raise ValueError
-        elif isinstance(f,sp.Integer):
-            p=f
-            k=1
+def dict_factors_exponent(expr):
+    dict = {}
+    for factor in expr.args:
+        if type(f) == sp.Pow:
+            p = factor.args[0]
+            k = factor.args[1]
         else:
-            raise ValueError
+            p = factor
+            k = 1
         if p in dicfactors:
-            dicfactors[p]+=k
+            dict[p] += k
         else:
-            dicfactors[p]=k
-    return dicfactors
+            dict[p] = k      
+    return dict
 
 try:
     ans = latex2sympy(input.value)
