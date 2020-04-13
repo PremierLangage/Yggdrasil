@@ -29,8 +29,15 @@ Que dire de cette suite (plusieurs bonnes réponses) ?
 - Elle est croissante.
 - Elle est décroissante.
 - Elle n'admet pas de limite.
-+ $\forall n \in \N$, $|u_{n+1} - x_0| \leq K|a-x_0|$.
++ $%\forall n \in \N%$, $%|u_{n+1} - x_0| \leq K|a-x_0|%$.
 
+* Soit $%f%$ la fonction définie sur $%[0,1]%$ par $%f(x) = \frac{x}{2} + 1%$. 
+On affirme que la fonction $%f%$ n'admet pas de point fixe sur $%[0,1]%$. 
+Pourquoi ne peut-on pas lui appliquer le théorème du point fixe ?
++ Car $%f([0,1]) \not\subset [0,1]%$.
+- Car $%f%$ n'est pas contractante. 
+- Car $%f%$ n'est pas croissante. 
+- Car $%f%$ n'est pas continue. 
 
 
 ==
