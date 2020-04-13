@@ -39,17 +39,18 @@ def dict_factors_exponent(expr):
             dict[p] = k      
     return dict
 
-try:
-    ans = dict_factors_exponent(latex2sympy(input.value))
-except:
-    pass
+def eval(strans, sol):
+    try:
+        ans = dict_factors_exponent(latex2sympy(input.value))
+    except:
+        return (-1, "La réponse doit être un produit de facteurs premiers.")
+    if not all(isprime(p) for p in ans.keys()):
 
 score = -1
 feedback = str(ans)
 ==
 
 old ==
-    if not all(isprime(p) for p in dicfactors.keys()):
         score=0
         feedback=textError['2']
     elif not is_equal(ans,n):
