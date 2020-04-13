@@ -40,6 +40,12 @@ Cliquez sur les affirmations que vous pensez être correctes (plusieurs bonnes r
 + La fonction $%f%$ est 4-Lipschitzienne.
 + La fonction $%f%$ est 1000-Lipschitzienne.
 
+* Soit une fonction $% f :\mathbb{R} \rightarrow \mathbb{R}%$.
+Cliquez sur l'affirmations que vous pensez être correcte :
++ Si $%f%$ est Lipschitzienne sur $%\mathbb{R}%$ alors $%f%$ est continue sur $%\mathbb{R}%$.
+- Si $%f%$ est Lipschitzienne sur $%\mathbb{R}%$ alors $%f%$ est dérivable sur $%\mathbb{R}%$.
+- Si $%f%$ est Lipschitzienne sur $%\mathbb{R}%$ alors $%f%$ est bornée sur $%\mathbb{R}%$.
+- Si $%f%$ est Lipschitzienne sur $%\mathbb{R}%$ alors $%f%$ est monotone sur $%\mathbb{R}%$.
 
 
 
