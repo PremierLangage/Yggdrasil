@@ -19,7 +19,7 @@ while True:
         break
 ==
 
-evaluator==
+evaluator ==
 def list2dicfactors(listfactors):
     dicfactors={}
     for f in listfactors:
@@ -41,7 +41,8 @@ def list2dicfactors(listfactors):
     return dicfactors
 
 try:
-    ans=str2expr(answer['1'])
+    ans = latex2sympy(input.value)
+except:
     if type(ans)==sp.Mul:
         dicfactors=list2dicfactors(ans.args)
     else:
@@ -55,7 +56,7 @@ try:
     else:
         score=100
         feedback=""
-except:
+
     score=-1
     feedback=textError['1']
 
