@@ -21,7 +21,16 @@ questions==
 - On suppose que la fonction $%f%$ est 1-Lipschitzienne.
 - On considère une fonction $%f : ]a,b[ \to ]a,b[%$ où $% a<b %$
 
-*
+** Soit  $%f : [a,b] \to [a,b]%$ (où $% a<b %$) une fonction $%K%$-Lipschitzienne avec $%0<K<1%$. 
+On note $x_0$ l'unique point fixe de $%f%$ donné par le théorème du point fixe.
+On définit la suite $% (u_n)_{n \in \mathbb \N} %$ par $%u_0 = a%$ et $% u_{n+1} = f(u_n) %$.
+Que dire de cette suite (plusieurs bonnes réponses) ? 
++ Elle converge vers l'unique point fixe de $%f%$.
+- Elle est croissante.
+- Elle est décroissante.
+- Elle n'admet pas de limite.
++ $\forall n \in \N$, $|u_{n+1} - x_0| \leq K|a-x_0|$.
+
 
 
 ==
