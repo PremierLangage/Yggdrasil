@@ -3,9 +3,6 @@ extends = sum_.pl
 title = Somme d'entiers successifs
 
 before ==
-keyboards_JSON['virtualKeyboards']="elementary"
-input.config = keyboards_JSON
-
 v=randitem([Symbol('i'),Symbol('j'),Symbol('k')])
 n=randitem([Symbol('n'),Symbol('m'),Symbol('p')])
 if param['boundtype']==1:
@@ -29,4 +26,5 @@ sol_tex=latex(sol)
 text ==
 Soit un entier $! {{n_tex}} \geq {{n0}} !$. Calculer $! \displaystyle {{S_tex}} !$.
 ==
+
 
