@@ -4,6 +4,9 @@ from sympy.core.compatibility import default_sort_key
 #from latex_settings import latex_settings
 
 class CustomLatexPrinter(LatexPrinter):
+    """ 
+    A custom LaTeX printer for SymPy objects.
+    """
     custom_settings = {
         "interv_rev_brack": True
     }
@@ -11,7 +14,7 @@ class CustomLatexPrinter(LatexPrinter):
     def _print_FiniteSet(self, s):
         items = sorted(s, key=default_sort_key)
         items = ", ".join(map(self._print, items))
-        return r"\{%s\}" % items
+        return r"%s" % items
 
     def _print_Poly(self, poly):
         cls = poly.__class__.__name__
