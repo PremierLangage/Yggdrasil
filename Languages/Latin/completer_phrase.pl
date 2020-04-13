@@ -6,14 +6,9 @@ title = Comparaison de nombres (DragDrop)
 
 before==#|python|
 import random as rd
-from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
+from customdragdrop import *
 
-lt="$%\lt%$" # latex for "less than"
-gt="$%\gt%$" # latex for "greater than"
-
-n = 4
-
-mygroup = DragDropGroup()
+drop = Drop()
 mygroup.set_label({"lt": lt, "gt": gt})
 
 numbers = []
