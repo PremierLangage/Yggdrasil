@@ -23,7 +23,7 @@ class CustomLatexPrinter(LatexPrinter):
         """
         items = sorted(s, key=default_sort_key)
         items = ", ".join(map(self._print, items))
-        return r"%s" % items
+        return r"\{ %s \}" % items
 
     def _print_Poly(self, poly):
         """
