@@ -6,12 +6,6 @@ text ==
 Décomposer $! {{n}} !$ en produit de facteurs premiers.
 ==
 
-textError %=
-{"1": "Votre réponse n'est pas un produit de facteurs entiers.",
-"2": "Votre réponse n'est pas un produit de facteurs premiers.",
-"3": "Votre réponse n'est pas égale à $% {number} %$"}
-==
-
 before ==
 while True:
     n = randint(10, 150)
