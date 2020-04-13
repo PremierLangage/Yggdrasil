@@ -21,8 +21,7 @@ Ecrire la solution sous forme d'un couple de nombres.
 ==
 
 evaluator ==
-dicfeedback = {'NotEqual': 'Tu es nul !'}
-score, error, feedback = eval_tuple(input.value, sol, checksize=True, dicfeedback=dicfeedback)
+score, error, feedback = eval_tuple(input.value, sol, checksize=True)
 ==
 
 solution == 
