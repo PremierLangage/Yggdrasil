@@ -17,12 +17,13 @@ questions==
 - Faux
 
 * On considère la fonction $% f : \mathbb{R} \rightarrow \mathbb{R}%$ définie par $%f(x) = e^x %$. 
-Cliquez sur l'affirmation vous pensez être correcte :
+Cliquez sur l'affirmation que vous pensez être correcte :
 - La fonction $%f%$ est contractante.
 - La fonction $%f%$ n'est pas contractante mais elle est Lipschitzienne.
 + La fonction $%f%$ n'est pas Lipschitzienne.
 
-* On considère une fonction $% f : \mathbb{R} \rightarrow \mathbb{R} %$ telle que $%\lim\limits_{x \to +\infty} \dfrac{f(x)-f(0)}{x} = +\infty%$. Que peut-on dire de la fonction $%f%$ ?
+* On considère une fonction $% f : \mathbb{R} \rightarrow \mathbb{R} %$ telle que $%\lim\limits_{x \to +\infty} \dfrac{f(x)-f(0)}{x} = +\infty%$. 
+Que peut-on dire de la fonction $%f%$ ?
 - La fonction $%f%$ est contractante.
 - La fonction $%f%$ n'est pas contractante mais elle est Lipschitzienne.
 + La fonction $%f%$ n'est pas Lipschitzienne.
