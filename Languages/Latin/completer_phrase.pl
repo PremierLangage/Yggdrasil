@@ -12,20 +12,17 @@ label0 = dragdrop.labels[0]
 ==
 
 text==
-{{drops2}}
 Compléter la phrase suivante avec les étiquettes proposées.
 ==
 
 form ==
 Le {{ label0|component }} est absent.
-
-
-{% for label in labels %} {{ label|component }} {% endfor %}
 ==
 
 settings.feedback = lightscore
 
 evaluator==#|python|
+{% for label in labels %} {{ label|component }} {% endfor %}
 
 ==
 
