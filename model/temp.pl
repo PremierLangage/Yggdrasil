@@ -2,6 +2,7 @@
 @ /utils/components/radio.py [customradio.py]
 @ /utils/components/checkbox.py [customcheckbox.py]
 @ /utils/components/textselect.py [customtextselect.py]
+@ /utils/components/dragdrop.py [customdragdrop.py]
 
 extracss ==
 <style>
@@ -80,3 +81,4 @@ extrajs ==
     }
 </script>
 ==
+
