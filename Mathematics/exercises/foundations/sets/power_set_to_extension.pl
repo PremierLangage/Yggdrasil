@@ -18,7 +18,7 @@ score, _, feedback = eval_set(input.value, sol)
 ==
 
 solution ==
-La solution est $! { {{sol.latex}} } !$.
+La solution est $! \{ {{sol.latex}} \} !$.
 ==
 
 
