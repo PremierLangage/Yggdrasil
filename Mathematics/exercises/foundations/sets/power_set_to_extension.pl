@@ -10,7 +10,7 @@ sol = A.powerset()
 ==
 
 text == 
-Ecrire en extension l'ensemble $! \mathcal{P}(\{ {{ A.latex }} \}) !$.
+Ecrire en extension l'ensemble $! \mathcal{P}(\\{ {{ A.latex }} \\}) !$.
 ==
 
 evaluator ==
