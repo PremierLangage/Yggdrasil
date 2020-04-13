@@ -5,6 +5,7 @@ title = Comparaison de nombres (DragDrop)
 before==#|python|
 from customdragdrop import *
 
+dragdrop = CustomDragDrop()
 drop = CustomDragDrop.Drop()
 labels = [CustomDragDrop.Label() for _ in range(3)]
 ==
