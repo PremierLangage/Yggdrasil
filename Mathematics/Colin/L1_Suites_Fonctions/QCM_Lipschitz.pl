@@ -53,8 +53,7 @@ Cliquez sur l'affirmation que vous pensez être correcte :
 Cliquez sur les affirmations que vous pensez être correctes (plusieurs bonnes réponses) :
 + Si $%f%$ est Lipschitzienne sur $%\mathbb{R}%$, alors $%f%$ est Lipschitzienne tout intervalle du type $%[a,b]%$ ($%a<b%$).
 - Si $%f%$ est Lipschitzienne sur tout intervalle du type $%[a,b]%$ ($%a<b%$), alors $%f%$ est Lipschitzienne sur $%\mathbb{R}%$.
-+ Si il existe $%K>0%$ tel que $%f%$ est $%K%$-Lipschitzienne sur tout intervalle du type $%[a,b]%$ ($%a<b%$), alors $%f%$ 
-est $%K%$-Lipschitzienne sur $%\mathbb{R}%$.
++ Si il existe $%K>0%$ tel que $%f%$ est $%K%$-Lipschitzienne sur tout intervalle du type $%[a,b]%$ ($%a<b%$), alors $%f%$ est $%K%$-Lipschitzienne sur $%\mathbb{R}%$.
 - Si $%f%$ et $%g%$ sont Lipschitziennes sur $%\mathbb{R}%$, alors nécessairement la fonction $%f\cdot g%$ l'est également. 
 + Si $%f%$ et $%g%$ sont Lipschitziennes sur $%\mathbb{R}%$, alors nécessairement la fonction $%f + g%$ l'est également. 
 + Si $%f%$ est Lipschitzienne sur $%\mathbb{R}%$ et $%\lambda \in \mathbb{R}%$, alors nécessairement la fonction $%\lambda f%$ l'est également.
