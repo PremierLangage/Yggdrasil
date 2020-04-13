@@ -28,7 +28,7 @@ Que peut-on dire de la fonction $%f%$ ?
 - La fonction $%f%$ n'est pas contractante mais elle est Lipschitzienne.
 + La fonction $%f%$ n'est pas Lipschitzienne.
 
-* On considère la fonction $% f : [0,+\infty[ \rightarrow [0,+\infty[ %$ définie par $%f(x) = \sqrt{x} %$. 
+* On considère la fonction $% f : [0,1] \rightarrow [0,1] %$ définie par $%f(x) = \sqrt{x} %$. 
 On étudiant le terme $$% \frac{f(x) - f(0)}{x-0} , %$$
 lorsque $%x \to 0^+%$, que pouvez vous en déduire sur $%f%$ ?
 - La fonction $%f%$ est contractante.
