@@ -1,88 +1,69 @@
 custom_pl_template == 
-{% extends "base.html" %}
-
-
-
-{% block alert %}{% endblock %}
-
-{% block content %}
-    <!-- HEADER -->
-    <div class="card-header exercise__header">
-        <div class="text-center">
-            <h2 class='exercise__title'>
-                {% if title %}
-                    Testing {{ title }}
-                {% endif%}
-            </h2>
-        </div>
-        <div class="text-left">
-            <span class='exercise__author'>
-                {% if author %}
-                    {{ author }}
-                {% endif %}
-            </span>
-        </div>
-    </div>
-    <br/>
-    <div class="row no-margin">
-        <div class="col-md-1"></div>
-        {% for test_name, test in tests.items() %}
-            {% if test.error %}
-                <table class="mdl-data-table mdl-js-data-table mdl-data-table-default-non-numeric" style="width: 100%;">
-                    <tr class="alert alert-danger"}>
-                        <th style="width: 50%;"> {{ test_name }}</th>
-                        <th>{{ test.error_message|safe }}</th>
-                    </tr>
-                </table>
-            {% else %}
-                <table class="mdl-data-table mdl-js-data-table mdl-data-table-default-non-numeric" style="width: 100%;">
-                    <tr data-toggle="collapse" aria-expanded="false" data-target="#collapse_{{ test.index__ }}"
-                        {% if test.status__ %}
-                            class="alert alert-success pointer"
-                        {% else %}
-                            class="alert alert-danger pointer"
-                        {% endif %}>
-                        <th style="width: 50%;"> {{ test_name }}
-                        </th>
-                        <th>
-                            seed = {{ test.seed }}
-                        </th>
-                    </tr>
-                    {% if "feedback" in test %}
-                    <tr class="collapse multi-collapse" id="collapse_{{ test.index__ }}">
-                        <th>{% if test.feedback_status__ %}
-                                <i style="color: green;" class="fas fa-check"></i>
-                            {% else %}
-                                <i style="color: red;" class="fas fa-times"></i>
-                            {% endif %}
-                            Feedback</th>
-                        <th>Expected feedback</th>
-                    </tr>
-                    <tr class="collapse multi-collapse" id="collapse_{{ test.index__ }}">
-                        <td>{{ test.feedback_gotten__|safe }}</td>
-                        <td>{{ test.feedback|safe }}</td>
-                    </tr>
-                    {% endif %}
-                    {% if "grade" in test %}
-                    <tr class="collapse multi-collapse" id="collapse_{{ test.index__ }}">
-                        <th>{% if test.grade_status__ %}
-                                <i style="color: green;" class="fas fa-check"></i>
-                            {% else %}
-                                <i style="color: red;" class="fas fa-times"></i>
-                            {% endif %}
-                            Grade</th>
-                        <th>Expected grade</th>
-                    </tr>
-                    <tr class="collapse multi-collapse" id="collapse_{{ test.index__ }}">
-                        <td>{{ test.grade_gotten__ }}</td>
-                        <td>{{ test.grade }}</td>
-                    </tr>
-                    {% endif %}
-                </table>
+<ion-card class="exercise">
+    <ion-card-header class="exercise__header">
+        <ion-card-subtitle class='exercise__author'>{% if author %}{{ author }}{% endif %}</ion-card-subtitle>
+        <ion-card-title class=" exercise__header">{% if title %}{{ title }}{% endif %}</ion-card-title>
+    </ion-card-header>
+    <!-- BODY -->
+    <ion-card-content class="exercise__body">
+        <!-- INSTRUCTIONS -->
+        <div class="exercise__instructions">
+            {% if text %}
+            {{ text|markdown|safe }}
             {% endif %}
-        {% endfor %}
-        <div class="col-md-1"></div>
-{% endblock %}
+        </div>
+        <!-- FEEDBACK -->
+        <div class="exercise__feedback">
+            {{ feedback__|markdown|safe if feedback else "" }}
+        </div>
+        <!-- FORM -->
+        {% csrf_token %}
+        <div class="exercise__form">
+            {% block form %}{{ form|safe }}{% endblock %}
+        </div>
+        <br>
+        <!-- ACTIONS -->
+        <div class="exercise__actions text-center">
+            <div class="btn-group" role="group" aria-label="actions">
+                <a type="button" class="btn btn-warning action-reset"
+                href="{{ url('activity:play', activity_id__) }}?action=reset">
+                    <i class="fas fa-undo"></i>
+                    <span class="ion-hide-md-down">Réinitialiser</span>
+                </a>
+                {% with reroll_limit__=(firstof(settings.reroll,_threshold, 100)) %}
+                {% if settings.allow_reroll and grade__|int >= reroll_limit__|int %}
+                <a type="button" class="btn btn-warning action-reroll"
+                href="{{ url('activity:play', activity_id__) }}?action=reroll">
+                    <i class="fas fa-dice"></i>
+                    <span class="ion-hide-md-down">Nouveau tirage</span>
+                </a>
+                {% endif %}
+                {% endwith %}
+                <button class="btn btn-info action-save">
+                    <i class="fas fa-save"></i>
+                    <span class="ion-hide-md-down">Sauvegarder</span>
+                </button>
+                <button class="btn btn-primary action-submit">
+                    <i class="fas fa-check"></i>
+                    <span class="ion-hide-md-down">Valider</span>
+                </button>
+            </div>
+            {% if grade__|int > 0 %}
+            <br/> <br/>
+            <a type="button" class="btn btn-success action-next" href="{{ url('activity:next', activity_id__) }}">
+                <span class="ion-hide-md-down">Suivant</span>
+                <span class="glyphicon glyphicon-arrow-right"></span>
+            </a>
+            {% endif %}
+        </div>
+        <!-- SPINNER -->
+        <div class="exercise__spinner text-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </ion-card-content>
+</ion-card>
 ==
 
 
@@ -116,5 +97,6 @@ settings.feedback = lightscore
 evaluator==
 grade = (0, 'c'est nul')
 ==
+
 
 
