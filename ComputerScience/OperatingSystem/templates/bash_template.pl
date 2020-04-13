@@ -30,7 +30,7 @@ editor.code ==
 before==
 ==
 
-title=bash code template <titre à surcharger>
+title=bash code template (titre à surcharger!)
 
 text==
 ==
