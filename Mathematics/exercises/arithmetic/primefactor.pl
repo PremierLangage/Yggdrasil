@@ -22,7 +22,11 @@ while True:
 evaluator ==
 def dict_factors_exponent(expr):
     dict = {}
-    for factor in expr.args:
+    if type(expr) == sp.Mul:
+        args = expr.args
+    else:
+        args = [expr]
+    for factor in args:
         if type(f) == sp.Pow:
             p = factor.args[0]
             k = factor.args[1]
