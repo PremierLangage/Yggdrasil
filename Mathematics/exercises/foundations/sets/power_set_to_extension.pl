@@ -2,6 +2,8 @@ extends = /model/mathinput.pl
 
 title = Ensemble des parties d'un ensemble
 
+input.virtualKeyboards = sets
+
 before ==
 A = rand_set(randint(2, 3), range(10))
 sol = A.powerset()
