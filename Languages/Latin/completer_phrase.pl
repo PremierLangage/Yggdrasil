@@ -13,6 +13,7 @@ labels = str(dragdrop.labels)
 ==
 
 text==
+{{labels}}
 Compléter la phrase suivante avec les étiquettes proposées.
 ==
 
