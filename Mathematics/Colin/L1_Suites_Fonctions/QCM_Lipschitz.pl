@@ -45,7 +45,7 @@ Une fonction $% f  : \mathbb{R} \rightarrow \mathbb{R}%$ est $%\textbf{non}%$ co
 - $% \forall K >0, ~ \exists x,y \in \mathbb{R} \text{ tel que } |f(x) - f(y)| > K|x-y| %$
 - $% \exists K >0, ~ \forall x,y \in \mathbb{R}, ~ |f(x) - f(y)| <|x-y| %$
 - $% \exists K >0, ~ \forall x,y \in \mathbb{R}, ~ |f(x) - f(y)| \leq |x-y| %$
-+ $% \exists x,y \in \mathbb{R} \text{ tel que } |f(x) - f(y)| \geq |x-y| %$
++ $% \forall K <1,~ \exists x,y \in \mathbb{R} \text{ tel que } |f(x) - f(y)| > K |x-y| %$
 - $% \exists x,y \in \mathbb{R} \text{ tel que } |f(x) - f(y)| > |x-y| %$
 
 
