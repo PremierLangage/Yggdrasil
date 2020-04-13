@@ -26,6 +26,6 @@ score, error, feedback = eval_tuple(input.value, sol, checksize=True, dicfeedbac
 ==
 
 solution == 
-La solution est $! {{sol.tex}} !$.
+La solution est $! {{sol.latex}} !$.
 ==
 
