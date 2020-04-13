@@ -82,7 +82,7 @@ def rand_finiteset(n,items,excluded_values=[]):
     """
     return sp.FiniteSet(*list_randitem_norep(n,items,excluded_values=[]))
 
-def rand_finiteset(n,items,excluded_values=[]):
+def rand_set(n,items,excluded_values=[]):
     """
     Generate a random finite set.
     """
