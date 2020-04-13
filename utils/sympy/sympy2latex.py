@@ -108,6 +108,12 @@ class CustomLatexPrinter(LatexPrinter):
 
 
     def _print_MatrixBase(self, expr):
+        """
+        Return a LaTeX code for a Matrix object.
+
+        Modification : No brackets/parentheses to deal
+        with the markdown bug.
+        """
         lines = []
 
         for line in range(expr.rows):  # horrible, should be 'rows'
@@ -134,6 +140,9 @@ _default_settings = {
     }
 
 def latex(expr):
+    """
+    Return a LaTeX string for a SymPy object.
+    """
     return CustomLatexPrinter(_default_settings).doprint(expr)
 
 def latex_linsys(A, B, lstvar=['x','y','z','t','u','v','w']):
