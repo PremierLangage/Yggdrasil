@@ -40,13 +40,23 @@ Cliquez sur les affirmations que vous pensez être correctes (plusieurs bonnes r
 + La fonction $%f%$ est 4-Lipschitzienne.
 + La fonction $%f%$ est 1000-Lipschitzienne.
 
-* On rappelle qu'une fonction est contractante si elle est K-Lipschitzienne pour un certain $%K \in ]0,1[%$. 
-Une fonction $% f  : \mathbb{R} \rightarrow \mathbb{R}%$ est $%\textbf{non}%$ contractante si et seulement si : 
-- $% \forall K >0, ~ \exists x,y \in \mathbb{R} \text{ tel que } |f(x) - f(y)| > K|x-y| %$
-- $% \exists K >0, ~ \forall x,y \in \mathbb{R}, ~ |f(x) - f(y)| <|x-y| %$
-- $% \exists K >0, ~ \forall x,y \in \mathbb{R}, ~ |f(x) - f(y)| \leq |x-y| %$
-+ $% \forall K <1,~ \exists x,y \in \mathbb{R} \text{ tel que } |f(x) - f(y)| > K |x-y| %$
-- $% \exists x,y \in \mathbb{R} \text{ tel que } |f(x) - f(y)| > |x-y| %$
+
+
+
+** Soient $%f%$ et $%g%$ deux fonctions réelles définies sur $%\mathbb{R}%$. 
+Cliquez sur les affirmations que vous pensez être correctes (plusieurs bonnes réponses) :
++ Si $%f%$ est Lipschitzienne sur $%\mathbb{R}%$, alors $%f%$ est Lipschitzienne tout intervalle du type $%[a,b]%$ ($%a<b%$).
+- Si $%f%$ est Lipschitzienne sur tout intervalle du type $%[a,b]%$ ($%a<b%$), alors $%f%$ est Lipschitzienne sur $%\mathbb{R}%$.
++ Si il existe $%K>0%$ tel que $%f%$ est $%K%$-Lipschitzienne sur tout intervalle du type $%[a,b]%$ ($%a<b%$), alors $%f%$ 
+est $%K%$-Lipschitzienne sur $%\mathbb{R}%$.
+- Si $%f%$ et $%g%$ sont Lipschitziennes sur $%\mathbb{R}%$, alors nécessairement la fonction $%f\cdot g%$ l'est également. 
++ Si $%f%$ et $%g%$ sont Lipschitziennes sur $%\mathbb{R}%$, alors nécessairement la fonction $%f + g%$ l'est également. 
++ Si $%f%$ est Lipschitzienne sur $%\mathbb{R}%$ et $%\lambda \in \mathbb{R}%$, alors nécessairement la fonction $%\lambda f%$ l'est également.
+
+
+* Vrai ou faux ? L'ensemble des fonctions Lipschitziennes de $%\mathbb R%$ dans $%\mathbb R%$ est un sous espace vectoriel de l'ensemble des fonctions.
++  Vrai
+- Faux
 
 
 
