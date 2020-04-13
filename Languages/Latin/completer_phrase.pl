@@ -16,7 +16,7 @@ Compléter la phrase suivante avec les étiquettes proposées.
 ==
 
 form ==
-{% for label in dragdrop['labels'] %} {{ label|component }} {% endfor %}
+{% for label in labels %} {{ label|component }} {% endfor %}
 ==
 
 settings.feedback = lightscore
