@@ -498,9 +498,9 @@ _feedback_ = {
 
 def add_feedback(eval):
     def eval_with_feedback(*args, **kwargs):
-        if 'dicfeedback' in kwargs:
-            feedback = {**_feedback_, **kwargs['dicfeedback']}
-            kwargs.pop('dicfeedback')
+        if 'dictfeedback' in kwargs:
+            feedback = {**_feedback_, **kwargs['dictfeedback']}
+            kwargs.pop('dictfeedback')
         else:
             feedback = _feedback_
         score, error = eval(*args, **kwargs)
