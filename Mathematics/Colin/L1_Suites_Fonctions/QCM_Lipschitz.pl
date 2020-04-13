@@ -43,7 +43,7 @@ Cliquez sur les affirmations que vous pensez être correctes (plusieurs bonnes r
 + La fonction $%f%$ est 1000-Lipschitzienne.
 
 * On rappelle qu'une fonction est contractante si elle est K-Lipschitzienne pour un certain $%K \in ]0,1[%$. 
-Une fonction $% f  : \mathbb{R} \rightarrow \mathbb{R}%$ est non contractance si et seulement si : 
+Une fonction $% f  : \mathbb{R} \rightarrow \mathbb{R}%$ est $%\textbf{non}%$ contractance si et seulement si : 
 - $% \forall K >0, ~ \exists x,y \in \mathbb{R} \text{ tel que } |f(x) - f(y)| > K|x-y| %$
 - $% \exists K >0, ~ \forall x,y \in \mathbb{R}, ~ |f(x) - f(y)| <|x-y| %$
 - $% \exists K >0, ~ \forall x,y \in \mathbb{R}, ~ |f(x) - f(y)| \leq |x-y| %$
