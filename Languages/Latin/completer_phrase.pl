@@ -18,7 +18,7 @@ Compléter la phrase suivante avec les étiquettes proposées.
 ==
 
 form ==
-Le {{ drops[0]|component }} est absent.
+Le {{ drops|component }} est absent.
 
 
 {% for label in labels %} {{ label|component }} {% endfor %}
