@@ -5,8 +5,6 @@ title = Symbole Sigma
 lang = fr
 
 before ==
-keyboards_JSON['virtualKeyboards']="elementary"
-input.config = keyboards_JSON
 
 v=randitem([Symbol('i'),Symbol('k')])
 a=randint(*eval(param['range_init']))
