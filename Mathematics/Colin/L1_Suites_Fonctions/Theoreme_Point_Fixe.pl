@@ -64,7 +64,7 @@ Que dire de cette suite (plusieurs bonnes réponses) ?
 - Elle est croissante.
 - Elle est décroissante.
 - Elle n'admet pas de limite.
-+ $%\forall n \in \mathbb N%$, $%|u_{n+1} - x_0| \leq K|a-x_0|%$.
++ $%\forall n \in \mathbb N%$, $%|u_{n+1} - x_0| \leq K^{n+1}|a-x_0|%$.
 
 
 * Soit $%f%$ la fonction définie sur $%[1,2]%$ par $%f(x) = \dfrac{x+2}{x+1} %$. 
@@ -79,5 +79,6 @@ On admet que cette suite converge. Déterminez la limite de $% (u_n)_{n \in \mat
 
 
 ==
+
 
 
