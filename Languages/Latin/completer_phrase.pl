@@ -6,7 +6,8 @@ before==#|python|
 from customdragdrop import *
 
 dragdrop = CustomDragDrop()
-drop = CustomDragDrop.Drop()
+dragdrop.set_drops("")
+drops = dragdrop.drops
 labels = [CustomDragDrop.Label() for _ in range(3)]
 ==
 
@@ -15,7 +16,7 @@ Compléter la phrase suivante avec les étiquettes proposées.
 ==
 
 form==
-Le {{ drop|component }} est absent.
+Le {{ drops[0]|component }} est absent.
 
 
 {% for label in labels %} {{ label|component }} {% endfor %}
