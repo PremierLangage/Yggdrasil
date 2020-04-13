@@ -18,7 +18,8 @@ class CustomLatexPrinter(LatexPrinter):
         """
         Return a LaTeX code for a FiniteSet object.
 
-        No braces around the elements.
+        Modification : No braces around the elements to deal
+        with the markdown bug.
         """
         items = sorted(s, key=default_sort_key)
         items = ", ".join(map(self._print, items))
@@ -27,6 +28,8 @@ class CustomLatexPrinter(LatexPrinter):
     def _print_Poly(self, poly):
         """
         Return a LaTeX code for a Poly object.
+
+        Modification : No reference to the polynomial domain.
         """
         cls = poly.__class__.__name__
         terms = []
@@ -75,7 +78,11 @@ class CustomLatexPrinter(LatexPrinter):
         return ' '.join(terms)
 
     def _print_Interval(self, i):
-        
+        """
+        Return a LaTeX code for an Interval object.
+
+        Modification : Reverse bracket notation for open bounds.
+        """
         if i.start == i.end:
             return r"\left\{%s\right\}" % self._print(i.start)
             
@@ -99,10 +106,6 @@ class CustomLatexPrinter(LatexPrinter):
             return r"\left%s%s, %s\right%s" % \
                     (left, self._print(i.start), self._print(i.end), right)
 
-    def _print_set(self, s):
-        items = sorted(s, key=default_sort_key)
-        items = ", ".join(map(self._print, items))
-        return r"\\left\\{%s\\right\\}" % items
 
     def _print_MatrixBase(self, expr):
         lines = []
@@ -135,7 +138,7 @@ def latex(expr):
 
 def latex_linsys(A, B, lstvar=['x','y','z','t','u','v','w']):
     """
-    Generate a LaTeX code for a linear system.
+    Return a LaTeX code for a linear system.
     """
     if not isinstance(A, sp.Matrix):
         A = sp.Matrix(A)
