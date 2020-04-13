@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathinput.pl
+extends = /model/mathinput.pl
 
 title = Symbole Sigma
 
@@ -23,11 +23,12 @@ Calculer $% \displaystyle {{S_tex}} %$.
 ==
 
 evaluator==
-score,_,feedback=ans_expr(input1.value,sol)
+score,_,feedback=eval_expr(input.value,sol)
 ==
 
 solution ==
 La solution est $! {{sol_tex}} !$.
 ==
+
 
 
