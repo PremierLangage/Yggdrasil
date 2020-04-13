@@ -1,12 +1,9 @@
-extends = /Mathematics/template/mathexpr.pl
-
+extends = /model/mathinput.pl
 
 title = Décomposition en facteurs premiers
 
-lang = fr
-
 text ==
-Décomposer $% {{n}} %$ en produit de facteurs premiers.
+Décomposer $! {{n}} !$ en produit de facteurs premiers.
 ==
 
 textError %=
@@ -17,23 +14,12 @@ textError %=
 
 before ==
 while True:
-    n=randint(10,150)
-    dicfactors=factorint(n)
-    if sum(list(dicfactors.values()))>2:
+    n = randint(10, 150)
+    if sum(list(factorint(n)).values())) > 2:
         break
 ==
 
-form ==
-{{input_1 | safe}}
-==
-
-input.1.type = mathexpr
-input.1.style = width:100%
-input.1.virtualKeyboards = elementary
-input.1.virtualKeyboardMode = manual
-
 evaluator==
-
 def list2dicfactors(listfactors):
     dicfactors={}
     for f in listfactors:
@@ -74,6 +60,7 @@ except:
     feedback=textError['1']
 
 ==
+
 
 
 
