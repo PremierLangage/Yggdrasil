@@ -16,7 +16,7 @@ Compléter la phrase suivante avec les étiquettes proposées.
 ==
 
 form ==
-{{dragdrop}}
+{{dragdrop.labels}}
 {% for label in labels %} {{ label|component }} {% endfor %}
 ==
 
