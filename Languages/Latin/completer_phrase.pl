@@ -9,6 +9,7 @@ dragdrop = DragDropGroup()
 dragdrop.set_drop("")
 drops = dragdrop.drops
 dragdrop.set_label([str(i) for i in range(3)])
+labels = dragdrop.labels
 ==
 
 text==
