@@ -21,7 +21,7 @@ form==
 Le {{ drops[0]|component }} est absent.
 
 
-{% for label in labels %} {{ label|component }} {% endfor %}
+{% for label in labels2 %} {{ label|component }} {% endfor %}
 ==
 
 settings.feedback = lightscore
