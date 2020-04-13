@@ -41,31 +41,15 @@ def dict_factors_exponent(expr):
 
 def eval(strans, sol):
     try:
-        ans = dict_factors_exponent(latex2sympy(input.value))
+        ans = latex2sympy(input.value)
+        dict_ans = dict_factors_exponent(ans)
     except:
         return (-1, "La réponse doit être un produit de facteurs premiers.")
     if not all(isprime(p) for p in ans.keys()):
+        return (-1, "La réponse doit être un produit de facteurs premiers.")
+    if simplify(ans-sol) == 0:
+        return (0, "")
+    return (100, "")
 
-score = -1
-feedback = str(ans)
+score, feedback = eval(input.value, n)
 ==
-
-old ==
-        score=0
-        feedback=textError['2']
-    elif not is_equal(ans,n):
-        score=0
-        feedback=textError['3'].format(number=n)
-    else:
-        score=100
-        feedback=""
-
-    score=-1
-    feedback=textError['1']
-==
-
-
-
-
-
-
