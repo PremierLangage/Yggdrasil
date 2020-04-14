@@ -11,6 +11,7 @@ dragdrop.set_label(["1","3"])
 ==
 
 text==
+{{dragdrop}}
 Compléter la phrase suivante avec les étiquettes proposées.
 ==
 
