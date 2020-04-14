@@ -32,7 +32,7 @@ text ==
 form ==
 <ul>
 {% for i in mygroup.drops %}
-<li> {{ numbers[i][0] }} {{ mygroup.drops[i]|component }} {{ numbers[i][1] }} </li>
+<li> {{ numbers[i|int][0] }} {{ mygroup.drops[i]|component }} {{ numbers[i][1] }} </li>
 {% endfor %}
 </ul>
 
