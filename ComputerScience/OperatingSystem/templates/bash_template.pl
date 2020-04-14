@@ -43,7 +43,11 @@ form==
 evaluator==
 import subprocess
 
-sp = subprocess.run(list(editor.code.split('\n')), stdout=subprocess.PIPE, shell=True)
+f = open("student_script.sh", "w")
+f.write(editor.code)
+f.close()
+
+sp = subprocess.run(["/bin/bash", "student_script.sh"], stdout=subprocess.PIPE, shell=True)
 spout = ls.stdout.decode()
 
 grade = (100, spout)
