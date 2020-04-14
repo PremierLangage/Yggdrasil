@@ -1,6 +1,7 @@
 import sys, jsonpickle
 from sandboxio import get_context
 from components import Component
+from customdragdrop import DragDropGroup
 import uuid
 
 # Load the custom serialization function
@@ -40,6 +41,7 @@ def aux_component(dic):
                     dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
                 else:
                     break
+        if isinstance(dic[key], RadioDragDrop):
     for name, comp in newcomp:
         dic[name] = comp
 
@@ -88,4 +90,5 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
 
     sys.exit(0)
+
 
