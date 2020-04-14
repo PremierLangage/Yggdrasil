@@ -44,7 +44,9 @@ form==
 evaluator==
 import subprocess
 
-sp = subprocess.run( *list(editor.code.split('\n')), stdout=subprocess.PIPE)
+
+
+sp = subprocess.run(list(editor.code.split('\n')), stdout=subprocess.PIPE)
 spout = ls.stdout.decode()
 
 grade = (100, spout)
