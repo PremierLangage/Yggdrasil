@@ -20,9 +20,9 @@ for i in range(n):
     numbers.append([a,b])
     mygroup.add_drop({str(i):"coucou"}) 
     if a < b:
-        mygroup.add_match_by_content(i,lt) 
+        mygroup.add_match_by_content(str(i),lt) 
     else:
-        mygroup.add_match_by_content(i,gt) 
+        mygroup.add_match_by_content(str(i),gt) 
 ==
 
 text==
