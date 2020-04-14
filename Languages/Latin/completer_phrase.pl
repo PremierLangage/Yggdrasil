@@ -24,7 +24,8 @@ form ==
 #settings.feedback = lightscore
 
 evaluator==#|python|
+
 score = 100
-feedback = str(dragdrop.cloneable)
+feedback = str(Component(**dragdrop))
 ==
 
