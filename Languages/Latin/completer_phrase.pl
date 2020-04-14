@@ -26,6 +26,6 @@ form ==
 evaluator==#|python|
 obj = Component(**dragdrop)
 score = 100
-feedback = str()
+feedback = str(Ob.labels)
 ==
 
