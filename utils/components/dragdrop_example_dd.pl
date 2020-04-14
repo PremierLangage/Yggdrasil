@@ -25,12 +25,17 @@ for i in range(n):
         mygroup.add_match_by_content(str(i),gt) 
 ==
 
-text==
+text ==
 {% for label in mygroup.labels.values() %} {{ label|component }} {% endfor %}
 ==
 
-form==
-{% for i in range(n) %} {{ mygroup.drops[i|string]|component }} {% endfor %}
+form ==
+<ul>
+{% for i in range(n) %}
+<li> {{ numbers[i][0] }} {{ mygroup.drops[i|string]|component }} {{ numbers[i][1] }} </li>
+{% endfor %}
+</ul>
+
 ==
 
 settings.feedback = lightscore
