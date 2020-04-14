@@ -9,18 +9,6 @@ generate== #|py|
 #    la construction de l'automate pour tester la réponse
 
 # peut-on utiliser la syntaxe du viewer ?
-import random
-from generator import Generator
-mode = random.choice([-1, 0, 1])
-messages = {
-    -1: 'au moins',
-    0: 'exactement',
-    1: 'au plus'
-}
-message = messages[mode]
-# counting( nb lettres alphabet, nb occurences demandées , mode)
-alphabet, letter, n, automaton = Generator.counting(3, 4, mode)
-
 ==
 
 title = Exemples de langages
