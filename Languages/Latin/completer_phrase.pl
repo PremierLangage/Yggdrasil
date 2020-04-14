@@ -14,8 +14,8 @@ text==
 {{dragdrop}}
 Compléter la phrase suivante avec les étiquettes proposées.
 ==
-form =
-form2 ==
+
+form ==
 Phrase {{  dragdrop.drops['0']|component }} à compléter.
 {% for label in dragdrop.labels.values() %} {{ label|component }} {% endfor %}
 ==
