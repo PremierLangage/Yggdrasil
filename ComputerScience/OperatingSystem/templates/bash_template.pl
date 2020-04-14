@@ -22,7 +22,7 @@ builder =@ /builder/before.py
 
 editor =: CodeEditor
 editor.theme = dark
-editor.language = python
+editor.language = bash
 editor.code ==
 # write your code here
 ==
