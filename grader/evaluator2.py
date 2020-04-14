@@ -91,6 +91,7 @@ def aux_component1(dic):
             for k, item in dic[key]['drops'].items():
                     name = item['name']
                     dic[key]['drops'][k] = dic[name]
+            dic[key] = DragDropGroup(**dic[key])
 
 # HACK for components in lists
 # components in lists are duplicated outside the lists
