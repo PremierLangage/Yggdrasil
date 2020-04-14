@@ -2,10 +2,12 @@ extends = /model/basic.pl
 
 title = Comparaison de nombres (DragDrop)
 
+dragdrop =: DragDropGroup
+
 before==#|python|
 from customdragdrop import *
 
-dragdrop = DragDropGroup()
+()
 dragdrop.set_drop("")
 dragdrop.set_label(["1","3"])
 ==
