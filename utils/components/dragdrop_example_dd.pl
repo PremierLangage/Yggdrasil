@@ -26,11 +26,11 @@ for i in range(n):
 ==
 
 text==
-{% for label in dragdrop.labels.values() %} {{ label|component }} {% endfor %}
+{% for label in mygroup.labels.values() %} {{ label|component }} {% endfor %}
 ==
 
 form==
-{% for drop in dragdrop.drops.values() %} {{ drop|component }} {% endfor %}
+{% for drop in mygroup.drops.values() %} {{ drop|component }} {% endfor %}
 
 ==
 
