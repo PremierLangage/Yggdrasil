@@ -16,7 +16,6 @@ Compléter la phrase suivante avec les étiquettes proposées.
 
 form ==
 Phrase {{  dragdrop.drops['0']|component }} à compléter.
-{{dragdrop}}
 {% for label in dragdrop.labels.values() %} {{ label|component }} {% endfor %}
 ==
 
