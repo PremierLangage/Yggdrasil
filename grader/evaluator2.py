@@ -4,6 +4,8 @@
 import sys
 from sandboxio import output, get_context
 from components import Component
+from customdragdrop import DragDropGroup
+
 from jinja2 import Template
 
 try:
@@ -166,6 +168,7 @@ if __name__ == "__main__":
             ffeedback=format_feedback_lightscore(score,feedback)
 
     output(score, ffeedback, dic)
+
 
 
 
