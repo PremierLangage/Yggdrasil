@@ -6,7 +6,7 @@ from automaton import Automaton
 from generator import Generator
 
 # RANDOM AUTOMATON
-automaton = Automaton.rand(4, 4, 4)
+automaton = Automaton.rand(3, 4, 4)
 A = ','.join(sorted(automaton.alphabet)) 
 Q = ','.join(sorted(automaton.states))
 I = automaton.initial
@@ -168,6 +168,7 @@ form==#|html|
     }
 </script>
 ==
+
 
 
 
