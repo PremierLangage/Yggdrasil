@@ -1,5 +1,7 @@
 extends = editor.pl
 
+## On doit pouvoir utiliser le même style que pour count/prefix/suffix/factor pour récupérer un automate et le comparer
+
 maxattempt = 5
 
 generate== #|py|
@@ -20,8 +22,8 @@ Donnez un automate reconnaissant le langage {{ message }} <br>
 Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution !
 </p>
 {% endif %}
-
 ==
+
 
 
 
