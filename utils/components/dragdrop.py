@@ -81,7 +81,6 @@ class DragDropGroup():
     def fromdict(cls, d):
         return cls(**d)
 
-
     def set_label(self, labels):
          self.labels = {}
          self.add_label(labels)
