@@ -14,7 +14,7 @@ def right_minus_wrong(num_right=0, num_wrong = 0, total = 1):
 class CustomDragDrop(Component):
 
     def __init__(self, **kwargs):
-        self.selector = 'c-input'
+        self.selector = 'c-drag-drop'
         self.decorator = 'CustomDragDrop'
         self.content = ""
         self.group_id = ""
@@ -57,7 +57,7 @@ class CustomDragDrop(Component):
         return (score,feedback)
 """
 
-class DragDropGroup():
+class DragDropGroup(Component):
 
     def __init__(self, **kwargs):
 
