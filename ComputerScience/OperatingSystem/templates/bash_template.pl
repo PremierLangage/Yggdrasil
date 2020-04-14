@@ -25,7 +25,6 @@ editor.theme = dark
 editor.language = shell
 
 editor.code ==
-# Ecrire votre code ici...
 
 ==
 
