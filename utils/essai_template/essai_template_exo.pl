@@ -2,6 +2,9 @@ extends = /model/basic.pl
 
 title = Essai d'un nouveau template d'exo
 
+input=: Input
+input.type = number
+
 before==
 import random as rd
 
@@ -15,13 +18,17 @@ Le quel de ces deux nombres préférez-vous : {{ a }} ou {{ b }} ?
 
 form==
 
+{{ input | component }}
 
 ==
 
 settings.feedback = lightscore
 
 evaluator==
-grade = (0, 'c\'est nul')
+if input.value == a:
+    grade = (0, 'c\'est nul')
+else:
+    grade = (100, 'Bravo!')
 ==
 
 custom_pl_template == 
@@ -78,6 +85,7 @@ custom_pl_template ==
     </ion-card-content>
 
 ==
+
 
 
 
