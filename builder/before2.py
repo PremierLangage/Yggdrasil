@@ -52,6 +52,7 @@ def aux_component(dic):
                     dic[key].drops[k] = {"cid": item.cid, "name": name, "selector": item.selector}
             dic[key].serialize = "DragDropGroup"
             dic[key] = dic[key].__dict__
+            
     for name, comp in newcomp:
         comp.name = name
         dic[name] = comp
