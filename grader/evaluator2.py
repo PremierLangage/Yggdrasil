@@ -83,6 +83,12 @@ def aux_component1(dic):
                     dic[key][i] = dic[name]
                     dic[key][i].name = name
         if isinstance(dic[key], dict) and 'selector' in dic[key] and dic['key']['selector'] == 'c-drag-drop-group':
+            for k, item in dic[key]['labels'].items():
+                    name = item['name']
+                    dic[key]['labels'][k] = dic[name]
+            for k, item in dic[key].drops.items():
+                    name = item['name']
+                    dic[key]['drops'][k] = dic[name]
 
 # HACK for components in lists
 # components in lists are duplicated outside the lists
