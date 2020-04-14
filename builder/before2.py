@@ -31,27 +31,25 @@ def add_try_clause(code, excpt):
 # and replaced by dictionaries inside the lists
 def aux_component(dic):
     newcomp = []
-    for key in dic:
+    for key, v in dic.items():
         if isinstance(dic[key], list):
             for i in range(len(dic[key])):
                 item = dic[key][i]
                 if isinstance(item, Component):
                     name = "c" + uuid.uuid4().hex
-                    newcomp.append((name, item))
+                    dic[name] = item
                     dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
                 else:
                     break
         if isinstance(dic[key], DragDropGroup):
             for k, item in dic[key].labels.items():
                     name = "c" + uuid.uuid4().hex
-                    newcomp.append((name, item))
+                    dic[name] = item
                     dic[key].labels[k] = {"cid": item.cid, "name": name, "selector": item.selector}
             for k, item in dic[key].drops.items():
                     name = "c" + uuid.uuid4().hex
-                    newcomp.append((name, item))
+                    dic[name] = item
                     dic[key].labels[k] = {"cid": item.cid, "name": name, "selector": item.selector}
-    for name, comp in newcomp:
-        dic[name] = comp
 
 if __name__ == "__main__":
     
