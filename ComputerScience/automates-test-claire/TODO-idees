@@ -40,9 +40,9 @@ Vérifier et ajuster si besoin:
 
 Exercices à concevoir:
 + TD1 exo 3 dans la continuitéé de prééfixe suffixe facteur qui sont fait --> voir td1-exemples-auto.pl à completer
-+ automate des positions
++ automate des positions --> voir exo-egalité-auto.pl pour le garder en mode comparaison simple. Chercher dans les scripts de mamadou pour le fonctionnement des expression régulières
 + produit d'automates simples
-+ minimisation
++ minimisation --> voir td-minimisation.pl et exo-egalité-auto.pl
     automate minimal et simple vérification
     étapes de l'algo de Moore en donnant les classes d'équivalences à chaque niveau
 + QCM reg/non-reg
