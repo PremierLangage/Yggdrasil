@@ -4,6 +4,17 @@ extends = exo-egalite-auto.pl
 
 maxattempt = 5
 
+mk_auto == #|python|
+#pour ajouter une transition à l'automate
+#viewer.automaton+="""
+#s0:a>s2"""
+==
+
+# le fichier autretomate aura comme nom tomate.py
+# il sera pris à place de tomate.py
+@autretomate.py [tomate.py]
+
+
 generate== #|py|
 ## Ajouter ici la génération:
 #    la construction de l'automate pour tester la réponse
