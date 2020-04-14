@@ -47,7 +47,7 @@ f = open("student_script.sh", "w")
 f.write(editor.code)
 f.close()
 
-sp = subprocess.run(["/bin/bash", "student_script.sh"], stdout=subprocess.PIPE, shell=True)
+sp = subprocess.run(["/bin/bash", "student_script.sh"], stdout=subprocess.PIPE)
 spout = sp.stdout.decode()
 
 print(spout)
