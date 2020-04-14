@@ -64,7 +64,7 @@ class DragDropGroup():
         self.labels = {}            # labels/drops are dictionaries whose values are objects of class Label/Drop, the key is referred to below as the label/drop name.
         self.drops = {}
         self.cloneable = True    # Tells if a label can be used several times or not
-        self._matches = []       # List of correct matches between a label and a drop. A match is a pair of cid's
+        #self._matches = []       # List of correct matches between a label and a drop. A match is a pair of cid's
                                           # underscore to make matches  invisible in the html.
         if 'id' in kwargs: # comes first because id is copied in labels and drops
             self.id = kwargs['id']
