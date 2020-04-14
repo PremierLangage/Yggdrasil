@@ -50,6 +50,8 @@ def aux_component(dic):
                     name = "c" + uuid.uuid4().hex
                     newcomp.append((name, item))
                     dic[key].drops[k] = {"cid": item.cid, "name": name, "selector": item.selector}
+            dic[key].serialize = "DragDropGroup"
+            dic[key] = dic[key].__dict__
     for name, comp in newcomp:
         dic[name] = comp
 
