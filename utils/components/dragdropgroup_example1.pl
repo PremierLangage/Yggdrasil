@@ -18,11 +18,11 @@ numbers = []
 for i in range(n):
     [a,b] = rd.sample(range(10,100),2)
     numbers.append([a,b])
-    mygroup.add_drop({str(i):"coucou"}) 
+    mygroup.add_drop({i:"coucou"}) 
     if a < b:
-        mygroup.add_match_by_content(str(i),lt) 
+        mygroup.add_match_by_content(i,lt) 
     else:
-        mygroup.add_match_by_content(str(i),gt) 
+        mygroup.add_match_by_content(i,gt) 
 ==
 
 text ==
@@ -32,7 +32,7 @@ text ==
 form ==
 <ul>
 {% for i in range(n) %}
-<li> {{ numbers[i][0] }} {{ mygroup.drops[i|string]|component }} {{ numbers[i][1] }} </li>
+<li> {{ numbers[i][0] }} {{ mygroup.drops[i]|component }} {{ numbers[i][1] }} </li>
 {% endfor %}
 </ul>
 
