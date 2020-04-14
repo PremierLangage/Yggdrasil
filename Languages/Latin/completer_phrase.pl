@@ -24,8 +24,7 @@ form ==
 #settings.feedback = lightscore
 
 evaluator==#|python|
-obj = Component(**dragdrop)
 score = 100
-feedback = str(obj.labels)
+feedback = str(dragdrop.labels)
 ==
 
