@@ -84,7 +84,7 @@ def aux_component1(dic):
                     name = item['name']
                     dic[key][i] = dic[name]
                     dic[key][i].name = name
-        if isinstance(dic[key], dict) and 'selector' in dic[key] and dic['key']['selector'] == 'c-drag-drop-group':
+        if isinstance(dic[key], dict) and 'selector' in dic[key] and dic[key]['selector'] == 'c-drag-drop-group':
             for k, item in dic[key]['labels'].items():
                     name = item['name']
                     dic[key]['labels'][k] = dic[name]
