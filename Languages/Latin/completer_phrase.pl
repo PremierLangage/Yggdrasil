@@ -2,7 +2,7 @@ extends = /model/basic.pl
 
 title = Comparaison de nombres (DragDrop)
 
-dragdrop =: Component
+dragdrop =: Input
 
 before==#|python|
 from customdragdrop import *
