@@ -34,9 +34,11 @@ Vérifier et ajuster si besoin:
 + recognition.pl
 
 Exercices à concevoir:
++ TD1 exo 3 dans la continuitéé de prééfixe suffixe facteur qui sont fait --> voir td1-exemples-auto.pl àà completer
 + automate des positions
 + produit d'automates simples
 + minimisation
     automate minimal et simple vérification
     étapes de l'algo de Moore en donnant les classes d'équivalences à chaque niveau
 + QCM reg/non-reg
+
