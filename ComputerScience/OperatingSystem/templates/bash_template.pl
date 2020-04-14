@@ -52,7 +52,7 @@ spout = sp.stdout.decode()
 
 print(spout)
 
-grade = (100, " ")
+grade = (100, f" ")
 
 ==
 
