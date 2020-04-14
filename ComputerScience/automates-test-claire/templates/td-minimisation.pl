@@ -1,7 +1,6 @@
+############### A FINIR #########################
+extends = exo-egalite-auto.pl
 
-extends = editor.pl
-
-## On doit pouvoir s'inspirer du même style que pour count/prefix/suffix/factor pour récupérer un automate et le comparer
 
 maxattempt = 5
 
