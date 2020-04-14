@@ -31,7 +31,7 @@ def add_try_clause(code, excpt):
 # and replaced by dictionaries inside the lists
 def aux_component(dic):
     newcomp = []
-    for key, v in dic.items():
+    for key, v in dic.items().copy():
         if isinstance(dic[key], list):
             for i in range(len(dic[key])):
                 item = dic[key][i]
