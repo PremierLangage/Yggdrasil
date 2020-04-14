@@ -41,7 +41,7 @@ def aux_component(dic):
                     dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
                 else:
                     break
-        if isinstance(dic[key], RadioDragDrop):
+        if isinstance(dic[key], DragDropGroup):
             for item in dic[key].labels:
                     name = "c" + uuid.uuid4().hex
                     newcomp.append((name, item))
