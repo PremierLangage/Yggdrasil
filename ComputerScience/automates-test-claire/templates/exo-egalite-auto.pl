@@ -48,6 +48,7 @@ else:
 ==
 
 form== #|html|
+{{ viewer|component }}
 <!-- RENDER AUTOMATON VIEWER IF MAX ATTEMPT IS REACHED -->
 {% if attempt >= maxattempt %}
 {{ viewer|component }}
