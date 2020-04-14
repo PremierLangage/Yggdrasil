@@ -41,8 +41,7 @@ form ==
 settings.feedback = lightscore
 
 evaluator==#|python|
-from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
-
+from customdragdrop import right_minus_wrong
 
 grade = mygroup.eval(grading_function = right_minus_wrong)
 ==
