@@ -50,7 +50,7 @@ f.close()
 sp = subprocess.run(["/bin/bash", "student_script.sh"], stdout=subprocess.PIPE)
 spout = sp.stdout.decode()
 
-text = spout.replace('\n', '<br />')
+text = "<pre>" + spout.replace('\n', '<br />') + "</pre>"
 
 grade = (100, f" ")
 
