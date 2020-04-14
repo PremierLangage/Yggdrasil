@@ -52,6 +52,6 @@ spout = sp.stdout.decode()
 
 editor.code+=spout
 
-grade = (100, " ")
+grade = (-1, " ")
 ==
 
