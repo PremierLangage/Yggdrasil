@@ -26,13 +26,7 @@ for i in range(n):
 
 # La suite du before ne sert qu'à faire passer les infos dans "form" et "grader"
 
-a = mygroup.labels['lt']
-b = mygroup.labels['gt']
-c1 = mygroup.drops[1]
-c2 = mygroup.drops[2]
-c3 = mygroup.drops[3]
-c0 = mygroup.drops[0]
-match = mygroup._matches
+
 ==
 
 text==
