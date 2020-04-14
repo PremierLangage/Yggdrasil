@@ -24,6 +24,6 @@ Phrase {{  dragdrop.drops['0']|component }} à compléter.
 
 evaluator==#|python|
 score = 100
-feedback = str(dragdrop.labels["1"].name)
+feedback = str(dragdrop.labels["1"].__dict__)
 ==
 
