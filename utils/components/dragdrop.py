@@ -78,7 +78,7 @@ class DragDropGroup():
             self.set_match(kwargs['valid_matches'])
     
     @classmethod
-    def fromdict(cls, d):
+    def fromdict(cls, **d):
         obj = cls()
         for k, v in d.items():
             setattr(obj, k, v)
