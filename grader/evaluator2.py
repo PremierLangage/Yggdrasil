@@ -108,12 +108,12 @@ def aux_component2(dic):
                     name = item.name
                     dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
         if isinstance(dic[key], DragDropGroup):
-            #for k, item in dic[key].labels.items():
-                    #name = item.name
-                    #dic[key].labels[k] = {"cid": item.cid, "name": name, "selector": item.selector}
-            #for k, item in dic[key].drops.items():
-                    #name = item.name
-                    #dic[key].drops[k] = {"cid": item.cid, "name": name, "selector": item.selector}
+            for k, item in dic[key].labels.items():
+                    name = item.name
+                    dic[key].labels[k] = {"cid": item.cid, "name": name, "selector": item.selector}
+            for k, item in dic[key].drops.items():
+                    name = item.name
+                    dic[key].drops[k] = {"cid": item.cid, "name": name, "selector": item.selector}
             dic[key].serialize = "DragDropGroup"
             dic[key] = dic[key].__dict__
 
