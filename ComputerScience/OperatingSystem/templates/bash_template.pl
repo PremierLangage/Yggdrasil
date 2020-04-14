@@ -22,7 +22,7 @@ builder =@ /builder/before.py
 
 editor =: CodeEditor
 editor.theme = dark
-editor.language = shell
+editor.language = powershell
 
 editor.code ==
 # write your code here
