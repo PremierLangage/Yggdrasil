@@ -18,7 +18,7 @@ numbers = []
 for i in range(n):
     [a,b] = rd.sample(range(10,100),2)
     numbers.append([a,b])
-    mygroup.add_drop({i:"coucou"}) 
+    mygroup.add_drop({str(i):"coucou"}) 
     if a < b:
         mygroup.add_match_by_content(i,lt) 
     else:
