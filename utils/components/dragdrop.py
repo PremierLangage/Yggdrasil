@@ -60,7 +60,8 @@ class CustomDragDrop(Component):
 class DragDropGroup(Component):
 
     def __init__(self, **kwargs):
-
+        self.selector = 'c-drag-drop'
+        self.decorator = 'CustomDragDrop'
         self.id = str(uuid4())    # generates a random id for the group
         self.labels = {}            # labels/drops are dictionaries whose values are objects of class Label/Drop, the key is referred to below as the label/drop name.
         self.drops = {}
@@ -79,6 +80,7 @@ class DragDropGroup(Component):
             self.set_drop(kwargs['drops'])
         if 'matches' in kwargs:# format of a match: (cid of label, cid of drop_). self.matches is the list of allowable matches between a label and a drop.
             self.set_match(kwargs['valid_matches'])
+        super().__init__(**kwargs)
 
     def set_label(self, labels):
          self.labels = {}
