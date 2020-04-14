@@ -42,10 +42,10 @@ def aux_component(dic):
                 else:
                     break
         if isinstance(dic[key], DragDropGroup):
-            for item in dic[key].labels:
+            for k, item in dic[key].labels.items:
                     name = "c" + uuid.uuid4().hex
                     newcomp.append((name, item))
-                    item = {"cid": item.cid, "name": name, "selector": item.selector}
+                    dic[key].labels[k] = {"cid": item.cid, "name": name, "selector": item.selector}
     for name, comp in newcomp:
         dic[name] = comp
 
