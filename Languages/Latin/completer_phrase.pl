@@ -7,7 +7,7 @@ from customdragdrop import *
 
 dragdrop = DragDropGroup()
 dragdrop.set_drop({"0": ""})
-dragdrop.set_label(["1","3"])
+dragdrop.set_label(["habet","habent"])
 ==
 
 text==
@@ -15,7 +15,7 @@ Compléter la phrase suivante avec les étiquettes proposées.
 ==
 
 form ==
-Phrase {{  dragdrop.drops['0']|component }} à compléter.
+Pastor pecuniam non {{  dragdrop.drops['0']|component }}..
 {% for label in dragdrop.labels.values() %} {{ label|component }} {% endfor %}
 ==
 
