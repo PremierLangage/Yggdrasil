@@ -7,7 +7,6 @@ dragdrop =: DragDropGroup
 before==#|python|
 from customdragdrop import *
 
-()
 dragdrop.set_drop("")
 dragdrop.set_label(["1","3"])
 ==
