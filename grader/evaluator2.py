@@ -114,8 +114,6 @@ def aux_component2(dic):
             for k, item in dic[key].drops.items():
                     name = item.name
                     dic[key].drops[k] = {"cid": item.cid, "name": name, "selector": item.selector}
-            dic[key].serialize = "DragDropGroup"
-            dic[key] = dic[key].__dict__
 
 if __name__ == "__main__":
 
