@@ -80,6 +80,8 @@ class DragDropGroup():
     @classmethod
     def fromdict(cls, d):
         obj = cls()
+        for k, v in d.items():
+            setattr(obj, k, v)
         return obj
 
     def set_label(self, labels):
