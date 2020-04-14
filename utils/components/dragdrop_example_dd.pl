@@ -4,7 +4,7 @@ title = Comparaison de nombres (DragDrop)
 
 before==#|python|
 import random as rd
-from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
+from customdragdrop import DragDropGroup
 
 lt="$%\lt%$" # latex for "less than"
 gt="$%\gt%$" # latex for "greater than"
