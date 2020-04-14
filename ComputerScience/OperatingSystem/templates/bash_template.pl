@@ -25,13 +25,8 @@ editor.theme = dark
 editor.language = shell
 
 editor.code ==
-# write your code here
-f(){
-    echo $1
-}
+# Ecrire votre code ici...
 
-ls -al | wc -l
-find . -name "*.c" -type f
 ==
 
 before==
