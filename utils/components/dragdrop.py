@@ -66,8 +66,6 @@ class DragDropGroup():
         self.cloneable = True    # Tells if a label can be used several times or not
         self._matches = []       # List of correct matches between a label and a drop. A match is a pair of cid's
                                           # underscore to make matches  invisible in the html.
-
-        
         if 'id' in kwargs: # comes first because id is copied in labels and drops
             self.id = kwargs['id']
         if 'cloneable' in kwargs: # comes first because cloneable is translated in labels and drops
@@ -78,6 +76,11 @@ class DragDropGroup():
             self.set_drop(kwargs['drops'])
         if 'matches' in kwargs:# format of a match: (cid of label, cid of drop_). self.matches is the list of allowable matches between a label and a drop.
             self.set_match(kwargs['valid_matches'])
+    
+    @classmethod
+    def fromdict(cls, d):
+        return cls(**d)
+
 
     def set_label(self, labels):
          self.labels = {}
