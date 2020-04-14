@@ -15,7 +15,7 @@ Compléter la phrase suivante avec les étiquettes proposées.
 ==
 
 form ==
-Pastor pecuniam non {{  dragdrop.drops['0']|component }}.
+Pastor pecuniam non {{  dragdrop.drops['0']|component }}.<br>
 
 
 {% for label in dragdrop.labels.values() %} {{ label|component }} {% endfor %}
