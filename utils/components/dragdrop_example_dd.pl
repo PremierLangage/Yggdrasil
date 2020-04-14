@@ -30,7 +30,7 @@ text==
 ==
 
 form==
-{% for i in range(n) %} {{ mygroup.drops|component }} {% endfor %}
+{% for i in range(n) %} {{ mygroup.drops[str(i)]|component }} {% endfor %}
 ==
 
 settings.feedback = lightscore
