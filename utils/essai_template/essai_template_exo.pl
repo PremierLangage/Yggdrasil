@@ -28,7 +28,7 @@ custom_pl_template ==
 <ion-card class="exercise">
     <ion-card-header class="exercise__header">
         <ion-card-subtitle class='exercise__author'>{% if author %}{{ author }}{% endif %}</ion-card-subtitle>
-        <ion-card-title class=" exercise__header">{% if title %}{{ title }}{% endif %}</ion-card-title>
+        <ion-card-title class='exercise__title'>{% if title %}{{ title }}{% endif%}</ion-card-title>
     </ion-card-header>
     <!-- BODY -->
     <ion-card-content class="exercise__body">
@@ -47,40 +47,28 @@ custom_pl_template ==
         <div class="exercise__form">
             {% block form %}{{ form|safe }}{% endblock %}
         </div>
-        <br>
+        <br/>
         <!-- ACTIONS -->
         <div class="exercise__actions text-center">
             <div class="btn-group" role="group" aria-label="actions">
-                <a type="button" class="btn btn-warning action-reset"
-                href="{{ url('activity:play', activity_id__) }}?action=reset">
-                    <i class="fas fa-undo"></i>
-                    <span class="ion-hide-md-down">Réinitialiser</span>
-                </a>
-                {% with reroll_limit__=(firstof(settings.reroll,_threshold, 100)) %}
-                {% if settings.allow_reroll and grade__|int >= reroll_limit__|int %}
-                <a type="button" class="btn btn-warning action-reroll"
-                href="{{ url('activity:play', activity_id__) }}?action=reroll">
-                    <i class="fas fa-dice"></i>
-                    <span class="ion-hide-md-down">Nouveau tirage</span>
-                </a>
-                {% endif %}
-                {% endwith %}
-                <button class="btn btn-info action-save">
-                    <i class="fas fa-save"></i>
-                    <span class="ion-hide-md-down">Sauvegarder</span>
-                </button>
                 <button class="btn btn-primary action-submit">
-                    <i class="fas fa-check"></i>
+                    <i id="validate" class="fas fa-check"></i>
                     <span class="ion-hide-md-down">Valider</span>
                 </button>
+                {% if tests %}
+                <a type="button" class="btn btn-primary action-test"
+                href="{{ url('playexo:test_pl', pl_id__)}}"
+                target="_blank" test>
+                    <i class="fas fa-angle-double-right"></i>
+                    <span class="ion-hide-md-down">Tester</span>
+                </a>
+                {% endif %}
+                <a type="button" class="btn btn-secondary action-download-env"
+                href="{{ url('filebrowser:dlenv', id__) }}" download>
+                    <i class="fas fa-download"></i>
+                    <span class="ion-hide-md-down">Télécharger l'Environnement</span>
+                </a>
             </div>
-            {% if grade__|int > 0 %}
-            <br/> <br/>
-            <a type="button" class="btn btn-success action-next" href="{{ url('activity:next', activity_id__) }}">
-                <span class="ion-hide-md-down">Suivant</span>
-                <span class="glyphicon glyphicon-arrow-right"></span>
-            </a>
-            {% endif %}
         </div>
         <!-- SPINNER -->
         <div class="exercise__spinner text-center">
@@ -90,7 +78,17 @@ custom_pl_template ==
         </div>
     </ion-card-content>
 </ion-card>
+
+{% if extracss %}{{ extracss|safe }}{% endif %}
+{% if extrajs %}{{ extrajs|safe }}{% endif %}
+
+<script type='text/javascript'>
+    $(function () {
+        Activity.withTest("{{id__}}", "{{session__.id}}", {{ __components|tojson|safe }});
+    });
+</script>
 ==
+
 
 
 
