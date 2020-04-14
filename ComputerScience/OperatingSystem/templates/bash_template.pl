@@ -26,6 +26,12 @@ editor.language = bash
 
 editor.code ==
 # write your code here
+f(){
+    echo $1
+}
+
+ls -al | wc -l
+find . -name "*.c" -type f
 ==
 
 before==
