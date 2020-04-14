@@ -82,6 +82,7 @@ def aux_component1(dic):
                     name = item['name']
                     dic[key][i] = dic[name]
                     dic[key][i].name = name
+        if isinstance(dic[key], dict) and 'selector' in dic[key] and dic['key']['selector'] == 'c-drag-drop-group':
 
 # HACK for components in lists
 # components in lists are duplicated outside the lists
@@ -159,5 +160,6 @@ if __name__ == "__main__":
             ffeedback=format_feedback_lightscore(score,feedback)
 
     output(score, ffeedback, dic)
+
 
 
