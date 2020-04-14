@@ -6,7 +6,7 @@ before==#|python|
 from customdragdrop import *
 
 dragdrop = DragDropGroup()
-dragdrop.set_drop("")
+dragdrop.set_drop({"0": ""})
 dragdrop.set_label(["1","3"])
 ==
 
@@ -15,8 +15,9 @@ Compléter la phrase suivante avec les étiquettes proposées.
 ==
 
 form ==
-{% for key in dragdrop.labels.keys() %} {{ key }} {% endfor %}
-{% for label in labels %} {{ label|component }} {% endfor %}
+Phrase {{  dragdrop.drops['0']|component }} à compléter.
+
+{% for label in dragdrop.labels.values() %} {{ label|component }} {% endfor %}
 ==
 
 #settings.feedback = lightscore
