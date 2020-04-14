@@ -88,7 +88,7 @@ def aux_component1(dic):
             for k, item in dic[key]['labels'].items():
                     name = item['name']
                     dic[key]['labels'][k] = dic[name]
-            for k, item in dic[key].drops.items():
+            for k, item in dic[key]['drops'].items():
                     name = item['name']
                     dic[key]['drops'][k] = dic[name]
 
