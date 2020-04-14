@@ -1,7 +1,5 @@
 extends = /model/basic.pl
 
-@ /utils/components/dragdrop.py [customdragdrop.py]
-
 title = Comparaison de nombres (DragDrop)
 
 before==#|python|
@@ -72,6 +70,7 @@ extracss == #|html|
         }
 </style>
 ==
+
 
 
 
