@@ -25,7 +25,6 @@ grade = (0, 'c'est nul')
 ==
 
 custom_pl_template == 
-<ion-card class="exercise">
     <ion-card-header class="exercise__header">
         <ion-card-subtitle class='exercise__author'>{% if author %}{{ author }}{% endif %}</ion-card-subtitle>
         <ion-card-title class='exercise__title'>{% if title %}{{ title }}{% endif%}</ion-card-title>
@@ -77,16 +76,7 @@ custom_pl_template ==
             </div>
         </div>
     </ion-card-content>
-</ion-card>
 
-{% if extracss %}{{ extracss|safe }}{% endif %}
-{% if extrajs %}{{ extrajs|safe }}{% endif %}
-
-<script type='text/javascript'>
-    $(function () {
-        Activity.withTest("{{id__}}", "{{session__.id}}", {{ __components|tojson|safe }});
-    });
-</script>
 ==
 
 
