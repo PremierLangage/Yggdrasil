@@ -51,6 +51,8 @@ f.close()
 sp = subprocess.run(["/bin/bash", "student_script.sh"], stdout=subprocess.PIPE)
 spout = sp.stdout.decode()
 
+text = spout
+
 grade = (100, spout)
 
 ==
