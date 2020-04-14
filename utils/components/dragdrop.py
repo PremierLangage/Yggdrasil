@@ -60,6 +60,8 @@ class CustomDragDrop(Component):
 class DragDropGroup():
 
     def __init__(self, **kwargs):
+    
+        self.serialize = "DragDropGroup"
         self.id = str(uuid4())    # generates a random id for the group
         self.labels = {}            # labels/drops are dictionaries whose values are objects of class Label/Drop, the key is referred to below as the label/drop name.
         self.drops = {}
