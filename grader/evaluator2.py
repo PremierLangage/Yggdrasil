@@ -88,9 +88,12 @@ def aux_component1(dic):
             for k, item in dic[key]['labels'].items():
                     name = item['name']
                     dic[key]['labels'][k] = dic[name]
+                    dic[key]['labels'][k].name = name
             for k, item in dic[key]['drops'].items():
                     name = item['name']
                     dic[key]['drops'][k] = dic[name]
+                    dic[key]['drops'][k].name = name
+
             dic[key] = DragDropGroup(**dic[key])
 
 # HACK for components in lists
@@ -113,7 +116,7 @@ def aux_component2(dic):
                     dic[key].drops[k] = {"cid": item.cid, "name": name, "selector": item.selector}
             dic[key].serialize = "DragDropGroup"
             dic[key] = dic[key].__dict__
-            
+
 if __name__ == "__main__":
 
     dic = get_context()
