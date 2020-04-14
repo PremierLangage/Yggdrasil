@@ -32,6 +32,7 @@ else:
     # ici on veut une comparaison d'égalité/isomorphisme pas equivalence de langage (ne semble pas exister dans fsm.py, peut-être utiliser une lib de graphe?
     match, error = Automaton.compare(automaton, editor)
     #pour les exo de minimalité on peut tester equivalence + det + complet + même nombre d'états
+    # mais pas pour des exos de type Glushkov
     if (error or not match) and attempt >= maxattempt:
         grade = (score, '<p class="warning-state">L\'automate déterministe suivant était une réponse possible à cette question.</p>')
     elif error:
