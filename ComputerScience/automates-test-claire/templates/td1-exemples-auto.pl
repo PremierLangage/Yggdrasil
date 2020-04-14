@@ -8,6 +8,7 @@ generate== #|py|
 #    l'alphabet
 #    la construction de l'automate pour tester la réponse
 
+# peut-on utiliser la syntaxe du viewer ?
 ==
 
 title = Exemples de langages
