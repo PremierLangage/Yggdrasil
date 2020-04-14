@@ -45,7 +45,7 @@ import subprocess
 
 f = open("student_script.sh", "w")
 f.write(editor.code)
-f.write("\nexit 0")
+print("CODE BASH : ", editor.code)
 f.close()
 
 sp = subprocess.run(["/bin/bash", "student_script.sh"], stdout=subprocess.PIPE)
