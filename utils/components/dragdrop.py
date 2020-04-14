@@ -60,7 +60,7 @@ class CustomDragDrop(Component):
 class DragDropGroup(Component):
 
     def __init__(self, **kwargs):
-        self.selector = 'selector' # HACK : A DragDropGroup is declared as a component, which makes its serialization/deserialization automatic
+        self.selector = 'c-drag-drop-group' # HACK : A DragDropGroup is declared as a component, which makes its serialization/deserialization automatic
         self.id = str(uuid4())    # generates a random id for the group
         self.labels = {}            # labels/drops are dictionaries whose values are objects of class Label/Drop, the key is referred to below as the label/drop name.
         self.drops = {}
