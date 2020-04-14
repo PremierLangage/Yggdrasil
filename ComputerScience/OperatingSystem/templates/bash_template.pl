@@ -48,7 +48,7 @@ f.write(editor.code)
 f.close()
 
 sp = subprocess.run(["./student_script.sh"], stdout=subprocess.PIPE, shell=True)
-spout = ls.stdout.decode()
+spout = sp.stdout.decode()
 
 grade = (100, spout)
 ==
