@@ -23,6 +23,7 @@ viewer = Automaton.viewer(automaton)
 alphabet = ', '.join(list(alphabet))
 ==
 
+
 evaluator== #|py|
 from automaton import Automaton
 if attempt >= maxattempt:
