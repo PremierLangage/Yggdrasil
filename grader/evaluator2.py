@@ -88,11 +88,11 @@ def aux_component1(dic):
             for k, item in dic[key]['labels'].items():
                     name = item['name']
                     dic[key]['labels'][k] = dic[name]
-                    #dic[key]['labels'][k].name = name
+                    dic[key]['labels'][k].name = name
             for k, item in dic[key]['drops'].items():
                     name = item['name']
                     dic[key]['drops'][k] = dic[name]
-                    #dic[key]['drops'][k].name = name
+                    dic[key]['drops'][k].name = name
 
             dic[key] = DragDropGroup.fromdict(**dic[key])
 
