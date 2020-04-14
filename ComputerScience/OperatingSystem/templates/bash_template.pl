@@ -42,6 +42,8 @@ form==
 ==
 
 evaluator==
+import subprocess
+
 grade = (100, f"student code:\n{editor.code}")
 ==
 
