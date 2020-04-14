@@ -53,6 +53,7 @@ def aux_component(dic):
             dic[key].serialize = "DragDropGroup"
             dic[key] = dic[key].__dict__
     for name, comp in newcomp:
+        comp.name = name
         dic[name] = comp
 
 if __name__ == "__main__":
