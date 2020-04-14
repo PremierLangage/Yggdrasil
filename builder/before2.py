@@ -49,7 +49,7 @@ def aux_component(dic):
             for k, item in dic[key].drops.items():
                     name = "c" + uuid.uuid4().hex
                     newcomp.append((name, item))
-                    dic[key].labels[k] = {"cid": item.cid, "name": name, "selector": item.selector}
+                    dic[key].drops[k] = {"cid": item.cid, "name": name, "selector": item.selector}
     for name, comp in newcomp:
         dic[name] = comp
 
