@@ -75,15 +75,10 @@ extracss == #|html|
     .drag{
     width: inherit;
 	height: inherit;
-	margin : 6px;
     overflow:hidden;
     }
 
     .drop{
-    display: inline-flex;
-    vertical-align:top;
-	justify-content: center;
-	align-items: center;
     width: 6em;
 	height: 4em;
     overflow:hidden;
