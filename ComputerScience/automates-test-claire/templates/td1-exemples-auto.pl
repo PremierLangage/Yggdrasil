@@ -39,6 +39,8 @@ message = "bli"
 
 title = Exemples de langages
 text ==
+{{automaton}}
+
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
