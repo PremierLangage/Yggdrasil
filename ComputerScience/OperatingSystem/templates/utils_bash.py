@@ -20,6 +20,9 @@ def display_as_shell_this(command, output):
     r"""
     Return a nice shell looking of the command and its output in html/css
     """
+    # if command do not end with a newline, we had it...
+    if command[-1] != '\n':
+        command += '\n'
     s = ":~$> " + command.replace('\n', '\ <br />')
     s += output.replace('\n', ' <br />')
     return s
