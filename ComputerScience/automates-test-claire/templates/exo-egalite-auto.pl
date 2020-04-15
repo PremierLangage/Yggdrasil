@@ -13,7 +13,6 @@ attempt = 0
 maxattempt = int(maxattempt)
 deterministic = True
 
-# au lieu de faire de la génération aléatoire, donne l'automate. Même problématique que dans td1-exemples-auto.pl
 if 'generate' not in globals():
     raise Exception('You must define a script "generate"')
 
@@ -94,6 +93,7 @@ form== #|html|
     </ul>
     </p>
 ==
+
 
 
 
