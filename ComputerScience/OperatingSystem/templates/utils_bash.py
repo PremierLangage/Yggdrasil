@@ -24,7 +24,7 @@ def display_as_shell_this(command, output):
     s = '<br /><div style="background-color: black; '
     s += 'background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);'
     s += ' height: 80vh; color: white; font: 1rem Inconsolata, monospace; '
-    s += 'border-radius: 15px; padding: 5px;" >'
+    s += 'border-radius: 15px; padding: 5px;" ><pre><output>'
 
     # if command do not end with a newline, we had it...
     while command[-1] == '\n':
@@ -33,5 +33,5 @@ def display_as_shell_this(command, output):
     s += "<br />"
     s += output.replace('\n', ' <br />')
 
-    s += "</div>"
+    s += "</output></pre></div>"
     return s
