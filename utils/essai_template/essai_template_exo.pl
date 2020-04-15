@@ -76,6 +76,7 @@ extracss == #|html|
     width: inherit;
 	height: inherit;
 	margin : 6px;
+    overflow:hidden;
     }
 
     .drop{
@@ -85,6 +86,7 @@ extracss == #|html|
 	align-items: center;
     width: 6em;
 	height: 4em;
+    overflow:hidden;
     }
     .success{
     background-color:lightGreen;
