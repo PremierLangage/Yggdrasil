@@ -31,8 +31,6 @@ s0:a>s1
 s1:a>s1
 s1:b>s2
 """)
-import sys
-print(automaton, file=sys.stderr)
 
 alphabet = "a,b"
 message = "bli"
