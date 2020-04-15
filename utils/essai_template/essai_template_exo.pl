@@ -79,6 +79,8 @@ extracss == #|html|
     }
 
     .drop{
+	display:flex;
+    position:absolute;
     width: 6em;
 	height: 4em;
 	margin : 6px;
