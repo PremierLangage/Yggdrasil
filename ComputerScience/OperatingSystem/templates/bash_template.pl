@@ -59,7 +59,7 @@ errout = sp.stderr.decode()
 
 form = "{{ editor|component }}"
 form += '<input id="form_user_hack" name="form_user_hack" type="hidden" value="{{ user }}">'
-form += display_as_shell_this(editor.code, spout, str(response["user_hack"]), )
+form += display_as_shell_this(editor.code, spout, str(response["user_hack"]), errout)
 
 grade = (100, f"    ")
 
