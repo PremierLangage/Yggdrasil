@@ -76,7 +76,7 @@ extracss == #|html|
      display: inline-flex;
     border:none;
     width: 10em;
-	height: auto;
+	height: inherit;
 	margin : 6px;
     vertical-align:top;
 	justify-content: center;
@@ -86,7 +86,7 @@ extracss == #|html|
      display: inline-flex;
     border:none;
     width: 10em;
-	height: auto;
+	height: 10em;
 	margin : 6px;
     vertical-align:top;
 	justify-content: center;
