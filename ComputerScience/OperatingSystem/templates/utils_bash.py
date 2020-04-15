@@ -16,6 +16,21 @@
 #                  http://www.gnu.org/licenses/
 #*****************************************************************************
 
+signals = {
+    2: "SIGINT",
+    3: "SIGQUIT",
+    4: "SIGILL",
+    6: "SIGABRT",
+    8: "SIGFPE",
+    9: "SIGKILL",
+    11: "SIGSEGV",
+    13: "SIGPIPE",
+    14: "SIGALRM",
+    15: "SIGTERM"
+}
+
+def 
+
 def display_as_shell_this(command, output, user=None, errout=""):
     r"""
     Return a nice shell looking of the command and its output in html/css
