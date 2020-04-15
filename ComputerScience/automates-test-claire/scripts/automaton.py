@@ -463,8 +463,3 @@ class Automaton:
         )
 
 
-
-
-
-
-
