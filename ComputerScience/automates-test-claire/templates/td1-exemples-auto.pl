@@ -21,31 +21,14 @@ automaton = AutomatonEditor({
         "acceptingStates": ["S0", "S1", "S2"],
         "states": ["S0", "S1", "S2"],
         "transitions": [
-            { "fromState": "", "toState": "", "symbols": [] },
-            { "fromState": "", "toState": "", "symbols": [] },
-            { "fromState": "", "toState": "", "symbols": [] },
+            { "fromState": "s0", "toState": "s1", "symbols": ["a"] },
+            { "fromState": "s1", "toState": "s1", "symbols": ["a"] },
+            { "fromState": "s1", "toState": "s2", "symbols": ["b"] },
         ]
     }
 })
-automaton = Automaton.parse(
-## mettre en json
 
-"""#states
-s0
-s1
-s2
-#initials
-s0
-#accepting
-s2
-#alphabet
-a
-b
-#transitions
-s0:a>s1
-s1:a>s1
-s1:b>s2
-""")
+automaton = Automaton.parse(automaton)
 
 alphabet = "a,b"
 message = "bli"
@@ -64,6 +47,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution
 </p>
 {% endif %}
 ==
+
 
 
 
