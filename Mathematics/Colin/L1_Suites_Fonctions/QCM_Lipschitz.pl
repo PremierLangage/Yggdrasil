@@ -40,23 +40,23 @@ Cliquez sur les affirmations que vous pensez être correctes (plusieurs bonnes r
 + La fonction $%f%$ est 4-Lipschitzienne.
 + La fonction $%f%$ est 1000-Lipschitzienne.
 
-** Soit la fonction définie sur $%\R%$ par $%f(x) = |x|%$. 
+** Soit la fonction définie sur $%\mathbb{R}%$ par $%f(x) = |x|%$. 
 Pour étudier si la fonction $%f%$ est Lipschitzienne, on pourra utiliser la deuxième inégalité triangulaire (dite parfois renversée).
 Cliquez sur les affirmations que vous pensez être correctes (plusieurs bonnes réponses) :
 + La fonction $%f%$ n'est pas dérivable en 0.
 + La fonction $%f%$ est Lipschitzienne.
-+ La fonction $%f%$ n'est pas bornée sur $%\R%$.
-- La fonction $%f%$ est dérivable sur $%\R%$ 
++ La fonction $%f%$ n'est pas bornée sur $%\mathbb{R}%$ .
+- La fonction $%f%$ est dérivable sur $%\mathbb{R}%$  
 - La fonction $%f%$ n'est pas Lipschitzienne. 
-- La fonction $%f%$ est bornée sur $%\R%$.
+- La fonction $%f%$ est bornée sur $%\mathbb{R}%$ .
 
 ** Soit la fonction définie sur $%\mathbb R%$ par $%f(x) = x^2%$. 
 Pour étudier si la fonction $%f%$ est Lipschitzienne, on pourra étudier le terme $%\frac{f(x) - f(0)}{x}%$ lorsque $%x%$ tend vers $+\infty$.
 Cliquez sur les affirmations que vous pensez être correctes (plusieurs bonnes réponses) :
 - La fonction $%f%$ est Lipschitzienne.
-- La fonction $%f%$ est monotone sur $%\R%$.
+- La fonction $%f%$ est monotone sur $%\mathbb{R}%$ .
 + La fonction $%f%$ n'est pas Lipschitzienne. 
-+ La fonction n'est pas monotone sur $%\R%$.
++ La fonction n'est pas monotone sur $%\mathbb{R}%$ .
 
 * Soit une fonction $% f :\mathbb{R} \rightarrow \mathbb{R}%$.
 Cliquez sur l'affirmation que vous pensez être correcte :
@@ -81,6 +81,7 @@ Cliquez sur les affirmations que vous pensez être correctes (plusieurs bonnes r
 
 
 ==
+
 
 
 
