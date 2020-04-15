@@ -66,6 +66,8 @@ mygroup = DragDropGroup()
 mygroup.labels = {"integrale": c, "limite": d, "fraction": e, "determinant": f}
 mygroup.drops = {"1": a, "tiers": b}
 mygroup._matches = g
+a.css+='success'
+b.css+='error'
 
 grade=mygroup.eval(grading_function = right_minus_wrong) 
 ==
@@ -91,25 +93,11 @@ extracss == #|html|
 	justify-content: center;
 	align-items: center;
     }
-    .drop-success{
+    .success{
     background:'lightgreen';
-     display: inline-flex;
-    width: 10em;
-	height: 10em;
-	margin : 6px;
-    vertical-align:top;
-	justify-content: center;
-	align-items: center;
     }
-    .drop-error{
+    .error{
     background:'lightred';
-     display: inline-flex;
-    width: 10em;
-	height: 10em;
-	margin : 6px;
-    vertical-align:top;
-	justify-content: center;
-	align-items: center;
     }
 </style>
 ==
