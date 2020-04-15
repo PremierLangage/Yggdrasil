@@ -34,7 +34,7 @@ def display_as_shell_this(command, output, user=None, errout="", returncode=0):
     r"""
     Return a nice shell looking of the command and its output in html/css
     """
-    s = '<br />'
+    s = ''
     # Information about process termination
     if returncode == 0:
         s += "Process exited normally"
