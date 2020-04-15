@@ -20,10 +20,15 @@ def display_as_shell_this(command, output):
     r"""
     Return a nice shell looking of the command and its output in html/css
     """
+    # making the div for terminal screen
+    s = '<div style="background-color: black; background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%); height: 100vh;">'
+
     # if command do not end with a newline, we had it...
     while command[-1] == '\n':
         command = command[:-1]
-    s = ":~$> " + command.replace('\n', '\ <br />... ')
+    s += ":~$> " + command.replace('\n', '\ <br />... ')
     s += "<br />"
     s += output.replace('\n', ' <br />')
+
+    s += "</div>"
     return s
