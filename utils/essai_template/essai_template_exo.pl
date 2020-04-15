@@ -75,13 +75,9 @@ b.css='error'
 extracss == #|html| 
 <style>
     .drag{
-    display: inline-flex;
     width: inherit;
 	height: inherit;
 	margin : 6px;
-    vertical-align:top;
-	justify-content: center;
-	align-items: center;
     }
 
     .drop{
