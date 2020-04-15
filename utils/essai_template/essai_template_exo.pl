@@ -93,7 +93,7 @@ extracss == #|html|
     vertical-align:top;
 	justify-content: center;
 	align-items: center;
-    background:'green';
+    background:'LightPink';
     }
     .success{
     background:'lightred';
