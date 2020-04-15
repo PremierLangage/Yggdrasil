@@ -27,9 +27,8 @@ signals = dict({
     13: "SIGPIPE",
     14: "SIGALRM",
     15: "SIGTERM"
-});
+)};
 
-def 
 
 def display_as_shell_this(command, output, user=None, errout=""):
     r"""
