@@ -14,8 +14,22 @@ generate== #|py|
 #    la construction de l'automate pour tester la réponse
 from automaton import Automaton
 
+automaton = AutomatonEditor({
+    automaton= {
+        "alphabet": ["a", "b"],
+        "initialStates": ["S0"],
+        "acceptingStates": ["S0", "S1", "S2"],
+        "states": ["S0", "S1", "S2"],
+        "transitions": [
+            { "fromState": "", "toState": "", "symbols": [] },
+            { "fromState": "", "toState": "", "symbols": [] },
+            { "fromState": "", "toState": "", "symbols": [] },
+        ]
+    }
+})
 automaton = Automaton.parse(
 ## mettre en json
+
 """#states
 s0
 s1
@@ -50,6 +64,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution
 </p>
 {% endif %}
 ==
+
 
 
 
