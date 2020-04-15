@@ -45,11 +45,11 @@ form==
 evaluator==
 import subprocess
 import io
-f = open("student_script.sh", "w")
-f.write(editor.code)
-f.close()
+with open("student_script.sh", "w") as f:
+    f.write(editor.code)
 
-sp = subprocess.run(["/bin/bash"], stdin=io.StringIO(editor.code), stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+sp = subprocess.run(["/bin/bash","student_script.sh"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 spout = sp.stdout.decode()
 
 text = "<pre>" + spout.replace('\n', '<br />') + "</pre>"
