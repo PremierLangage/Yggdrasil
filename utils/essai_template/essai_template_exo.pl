@@ -75,7 +75,6 @@ b.css='error'
 extracss == #|html| 
 <style>
     .drag{
-    background-color:lightPink;
     display: inline-flex;
     width: inherit;
 	height: inherit;
@@ -93,13 +92,12 @@ extracss == #|html|
     vertical-align:top;
 	justify-content: center;
 	align-items: center;
-    background-color:'LightPink';
     }
     .success{
-    background:'lightred';
+    background-color:lightGreen;
     }
     .error{
-    background:'red';
+    background-color:lightPink;
     }
 </style>
 ==
