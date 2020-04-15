@@ -79,8 +79,8 @@ extracss == #|html|
     }
 
     .drop{
-    width: 10em;
-	height: 10em;
+    width: 6em;
+	height: 4em;
 	margin : 6px;
     }
     .success{
