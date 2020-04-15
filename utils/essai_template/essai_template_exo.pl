@@ -85,10 +85,10 @@ extracss == #|html|
 	height: 10em;
 	margin : 6px;
     }
-    .success{
+    .success-state{
     background-color:lightGreen;
     }
-    .error{
+    .error-state{
     background-color:lightPink;
     }
 </style>
