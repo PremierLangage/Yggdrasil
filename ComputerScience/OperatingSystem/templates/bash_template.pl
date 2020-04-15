@@ -42,6 +42,7 @@ form==
 
 evaluator==
 import subprocess
+from utils_bash import display_as_shell_this
 
 f = open("student_script.sh", "w")
 f.write(editor.code)
@@ -50,7 +51,7 @@ f.close()
 sp = subprocess.run(["/bin/bash", "student_script.sh"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 spout = sp.stdout.decode()
 
-form += "<pre>" + spout.replace('\n', '<br />') + "</pre>"
+form += display_as_shell_this(editor.code, spout)
 
 grade = (100, f"    ")
 
