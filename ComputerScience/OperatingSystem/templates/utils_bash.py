@@ -44,7 +44,7 @@ def display_as_shell_this(command, output, user=None, errout="", returncode=0):
         else:
             s += "Process exited with signal ("+str(-returncode)+")"
     # making the div for terminal screen
-    s = '<br /><div style="background-color: black; '
+    s += '<br /><div style="background-color: black; '
     s += 'background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%); '
     #s += 'height: 80vh; '
     s += 'font: 1rem Inconsolata, monospace; '
