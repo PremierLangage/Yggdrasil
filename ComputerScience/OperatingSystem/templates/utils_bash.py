@@ -30,10 +30,19 @@ signals = {
 };
 
 
-def display_as_shell_this(command, output, user=None, errout=""):
+def display_as_shell_this(command, output, user=None, errout="", returncode=0):
     r"""
     Return a nice shell looking of the command and its output in html/css
     """
+    s = '<br />'
+    # Information about process termination
+    if returncode == 0:
+        s += "Process exited normally"
+    else:
+        if -returncode in signals:
+            s += "Process exited with signal ("+str(-returncode)+") "+signals[-returncode]
+        else:
+            s += "Process exited with signal ("+str(-returncode)+")"
     # making the div for terminal screen
     s = '<br /><div style="background-color: black; '
     s += 'background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%); '
