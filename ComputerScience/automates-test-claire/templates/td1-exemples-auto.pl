@@ -12,6 +12,25 @@ generate== #|py|
 #    du message de l'énoncé décrivant le langage
 #    l'alphabet
 #    la construction de l'automate pour tester la réponse
+from automaton import Automaton
+
+automaton = Automaton.parse(
+"""#states
+s0
+s1
+s2
+#initials
+s0
+#accepting
+s2
+#alphabet
+a
+b
+#transitions
+s0:a>s1
+s1:a>s1
+s1:b>s2
+""")
 
 # peut-on utiliser la syntaxe du viewer ?
 ==
@@ -26,6 +45,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution
 </p>
 {% endif %}
 ==
+
 
 
 
