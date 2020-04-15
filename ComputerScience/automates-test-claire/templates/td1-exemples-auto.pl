@@ -32,6 +32,8 @@ s1:a>s1
 s1:b>s2
 """)
 
+alphabet = "bla"
+message = "bli"
 # peut-on utiliser la syntaxe du viewer ?
 ==
 
