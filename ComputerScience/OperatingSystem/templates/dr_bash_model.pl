@@ -38,6 +38,7 @@ before==
 title=bash code template (titre à surcharger!)
 
 text==
+Je veux pas perdre l'énoncé 
 ==
 
 form==
