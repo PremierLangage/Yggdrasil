@@ -1,35 +1,62 @@
 extends = /model/basic.pl
 
-title = Essai d'un nouveau template d'exo
+title = Comparaison de nombres (DragDrop)
 
-input=: Input
-input.type = number
-
-before==
+before==#|python|
 import random as rd
+from customdragdrop import DragDropGroup
 
-[a,b] = rd.sample(range(1,100),2)
+lt="$%\lt%$" # latex for "less than"
+gt="$%\gt%$" # latex for "greater than"
 
+n = 4
+
+mygroup = DragDropGroup()
+mygroup.set_label({"lt": lt, "gt": gt})
+
+numbers = []
+for i in range(n):
+    [a,b] = rd.sample(range(10,100),2)
+    numbers.append([a,b])
+    mygroup.add_drop({i:"coucou"}) 
+    if a < b:
+        mygroup.add_match_by_content(i,lt) 
+    else:
+        mygroup.add_match_by_content(i,gt) 
 ==
 
-text==
-Le quel de ces deux nombres préférez-vous : {{ a }} ou {{ b }} ?
+text ==
+{% for label in mygroup.labels.values() %} {{ label|component }} {% endfor %}
 ==
 
-form==
-
-{{ input | component }}
+form ==
+<ul>
+{% for i, drop in mygroup.drops.items() %}
+<li> {{ numbers[i|int][0] }} {{ drop|component }} {{ numbers[i|int][1] }} </li>
+{% endfor %}
+</ul>
 
 ==
 
 settings.feedback = lightscore
 
-evaluator==
-if input.value == a:
-    grade = (0, 'c\'est nul')
-else:
-    grade = (100, 'Bravo!')
+evaluator==#|python|
+from customdragdrop import right_minus_wrong
+
+grade = mygroup.eval(grading_function = right_minus_wrong)
 ==
+
+extracss == #|html| 
+<style>
+    .myclass{
+        #padding: 1em;
+        min-width: 4em;
+        }
+</style>
+==
+
+
+
 
 custom_pl_template == #|html|
     <ion-card-header class="exercise__header">
