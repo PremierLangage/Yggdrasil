@@ -16,7 +16,7 @@
 #                  http://www.gnu.org/licenses/
 #*****************************************************************************
 
-signals = dict({
+signals = {
     2: "SIGINT",
     3: "SIGQUIT",
     4: "SIGILL",
@@ -27,7 +27,7 @@ signals = dict({
     13: "SIGPIPE",
     14: "SIGALRM",
     15: "SIGTERM"
-)};
+};
 
 
 def display_as_shell_this(command, output, user=None, errout=""):
