@@ -34,7 +34,9 @@ before==
 title=bash code template (titre à surcharger!)
 
 text==
-{ username }
+
+{{ username }}
+
 ==
 
 form==
