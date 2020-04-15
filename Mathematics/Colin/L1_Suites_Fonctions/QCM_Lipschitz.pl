@@ -41,11 +41,22 @@ Cliquez sur les affirmations que vous pensez être correctes (plusieurs bonnes r
 + La fonction $%f%$ est 1000-Lipschitzienne.
 
 ** Soit la fonction définie sur $%\R%$ par $%f(x) = |x|%$. 
+Pour étudier si la fonction $%f%$ est Lipschitzienne, on pourra utiliser la deuxième inégalité triangulaire (dite parfois renversée).
 Cliquez sur les affirmations que vous pensez être correctes (plusieurs bonnes réponses) :
 + La fonction $%f%$ n'est pas dérivable en 0.
 + La fonction $%f%$ est Lipschitzienne.
++ La fonction $%f%$ n'est pas bornée sur $%\R%$.
 - La fonction $%f%$ est dérivable sur $%\R%$ 
 - La fonction $%f%$ n'est pas Lipschitzienne. 
+- La fonction $%f%$ est bornée sur $%\R%$.
+
+** Soit la fonction définie sur $%\mathbb R%$ par $%f(x) = x^2%$. 
+Pour étudier si la fonction $%f%$ est Lipschitzienne, on pourra étudier le terme $%\frac{f(x) - f(0)}{x}%$ lorsque $%x%$ tend vers $+\infty$.
+Cliquez sur les affirmations que vous pensez être correctes (plusieurs bonnes réponses) :
+- La fonction $%f%$ est Lipschitzienne.
+- La fonction $%f%$ est monotone sur $%\R%$.
++ La fonction $%f%$ n'est pas Lipschitzienne. 
++ La fonction n'est pas monotone sur $%\R%$.
 
 * Soit une fonction $% f :\mathbb{R} \rightarrow \mathbb{R}%$.
 Cliquez sur l'affirmation que vous pensez être correcte :
@@ -61,9 +72,6 @@ Cliquez sur les affirmations que vous pensez être correctes (plusieurs bonnes r
 + Si $%f%$ est Lipschitzienne sur $%\mathbb{R}%$, alors $%f%$ est Lipschitzienne tout intervalle du type $%[a,b]%$ ($%a<b%$).
 - Si $%f%$ est Lipschitzienne sur tout intervalle du type $%[a,b]%$ ($%a<b%$), alors $%f%$ est Lipschitzienne sur $%\mathbb{R}%$.
 + Si il existe $%K>0%$ tel que $%f%$ est $%K%$-Lipschitzienne sur tout intervalle du type $%[a,b]%$ ($%a<b%$), alors $%f%$ est $%K%$-Lipschitzienne sur $%\mathbb{R}%$.
-- Si $%f%$ et $%g%$ sont Lipschitziennes sur $%\mathbb{R}%$, alors nécessairement la fonction $%f\cdot g%$ l'est également. 
-+ Si $%f%$ et $%g%$ sont Lipschitziennes sur $%\mathbb{R}%$, alors nécessairement la fonction $%f + g%$ l'est également. 
-+ Si $%f%$ est Lipschitzienne sur $%\mathbb{R}%$ et $%\lambda \in \mathbb{R}%$, alors nécessairement la fonction $%\lambda f%$ l'est également.
 
 
 * Vrai ou faux ? L'ensemble des fonctions Lipschitziennes de $%\mathbb R%$ dans $%\mathbb R%$ est un sous espace vectoriel de l'ensemble des fonctions.
