@@ -100,14 +100,14 @@ custom_pl_template == #|html|
             {% block form %}{{ form|safe }}{% endblock %}
         </div>
         <br/>
-        <!-- FOOTER -->
-        <ion-footer class="ion-no-border">
         <!-- INSTRUCTIONS -->
         <div class="exercise__instructions">
             {% if text %}
             {{ text|markdown|safe }}
             {% endif %}
         </div>
+        <!-- FOOTER -->
+        <ion-footer class="ion-no-border">
         <!-- FEEDBACK -->
         <div class="exercise__feedback">
             {{ feedback__|markdown|safe if feedback else "" }}
