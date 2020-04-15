@@ -37,7 +37,7 @@ def display_as_shell_this(command, output, user=None, errout=""):
     s += "<br />"
     s += output.replace('\n', ' <br />')
     if len(errout) > 0:
-        s += '<span style="color: red; text-shadow: 0 0 5px #C8FFFF;">'
+        s += '<span style="color: red; text-shadow: 0 0 5px #C8C8C8;">'
         s += errout.replace('\n', ' <br />')
         s += '</span>'
 
