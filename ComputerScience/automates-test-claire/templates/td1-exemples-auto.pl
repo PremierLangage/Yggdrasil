@@ -21,9 +21,9 @@ automaton = AutomatonEditor(
         "acceptingStates": ["S0", "S1", "S2"],
         "states": ["S0", "S1", "S2"],
         "transitions": [
-            { "fromState": "s0", "toState": "s1", "symbols": ["a"] },
-            { "fromState": "s1", "toState": "s1", "symbols": ["a"] },
-            { "fromState": "s1", "toState": "s2", "symbols": ["b"] },
+            { "fromState": "S0", "toState": "S1", "symbols": ["a"] },
+            { "fromState": "S1", "toState": "S1", "symbols": ["a"] },
+            { "fromState": "S1", "toState": "S2", "symbols": ["b"] },
         ]
     }
 )
