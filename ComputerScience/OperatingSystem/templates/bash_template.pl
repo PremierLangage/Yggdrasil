@@ -41,7 +41,7 @@ text==
 form==
 {{ editor|component }}
 
-<input id="user_hack" name="user_hack" type="hidden" value="{{ user }}">
+<input id="form_user_hack" name="form_user_hack" type="hidden" value="{{ user }}">
 
 ==
 
@@ -57,7 +57,7 @@ sp = subprocess.run(["/bin/bash", "student_script.sh"], stdout=subprocess.PIPE, 
 spout = sp.stdout.decode()
 
 form = "{{ editor|component }}"
-form += display_as_shell_this(editor.code, spout, str(answers["user_hack"]))
+form += display_as_shell_this(editor.code, spout, str(response["user_hack"]))
 
 grade = (100, f"    ")
 
