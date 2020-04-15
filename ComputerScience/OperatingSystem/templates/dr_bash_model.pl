@@ -28,6 +28,8 @@ editor.height = 100px
 
 editor.code ==
 
+echo "sortie erreur " 1>&2
+echo "sortie standard"
 ==
 
 before==
@@ -53,9 +55,9 @@ sp = subprocess.run(["/bin/bash","student_script.sh"], stdout=subprocess.PIPE, s
 spout = sp.stdout.decode()
 sperr = sp.stderr.decode()
 text = "<pre>" + spout.replace('\n', '<br />') + "</pre>"
-errtext = "<pre>" + spout.replace('\n', '<br />') + "</pre>"
+errtext = "<pre>" + sperr.replace('\n', '<br />') + "</pre>"
 
-print(errtext, file=sys.err)
+print(errtext, file=sys.stderr)
 
 grade = (100, f"  ")
 
