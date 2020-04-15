@@ -44,7 +44,7 @@ form==
 
 evaluator==
 import subprocess
-import io
+import sys
 with open("student_script.sh", "w") as f:
     f.write(editor.code)
 
@@ -53,6 +53,9 @@ sp = subprocess.run(["/bin/bash","student_script.sh"], stdout=subprocess.PIPE, s
 spout = sp.stdout.decode()
 sperr = sp.stderr.decode()
 text = "<pre>" + spout.replace('\n', '<br />') + "</pre>"
+errtext = "<pre>" + spout.replace('\n', '<br />') + "</pre>"
+
+print(errtext, file=sys.err)
 
 grade = (100, f"  ")
 
