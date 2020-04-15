@@ -82,7 +82,7 @@ extracss == #|html|
     vertical-align:top;
 	justify-content: center;
 	align-items: center;
-    background:'lightPink';
+    background-color:'lightPink';
     }
 
     .drop{
@@ -93,7 +93,7 @@ extracss == #|html|
     vertical-align:top;
 	justify-content: center;
 	align-items: center;
-    background:'LightPink';
+    background-color:'LightPink';
     }
     .success{
     background:'lightred';
