@@ -56,6 +56,7 @@ custom_pl_template == #|html|
         </div>
         <br/>
         <!-- ACTIONS -->
+        <ion-footer class="ion-no-border">
         <div class="exercise__actions text-center">
             <div class="btn-group" role="group" aria-label="actions">
                 <button class="btn btn-primary action-submit">
@@ -83,6 +84,7 @@ custom_pl_template == #|html|
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
+        </ion-footer>
     </ion-card-content>
 
 ==
