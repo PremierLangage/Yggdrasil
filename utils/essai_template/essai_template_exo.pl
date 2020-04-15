@@ -74,8 +74,7 @@ extracss == #|html|
 <style>
     .drag{
      display: inline-flex;
-    border:none;
-    width: 10em;
+    width: inherit;
 	height: inherit;
 	margin : 6px;
     vertical-align:top;
@@ -84,7 +83,6 @@ extracss == #|html|
     }
     .drop{
      display: inline-flex;
-    border:none;
     width: 10em;
 	height: 10em;
 	margin : 6px;
