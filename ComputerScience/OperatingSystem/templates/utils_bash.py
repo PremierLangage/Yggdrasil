@@ -23,8 +23,9 @@ def display_as_shell_this(command, output):
     # making the div for terminal screen
     s = '<br /><div style="background-color: black; '
     s += 'background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);'
-    s += ' height: 80vh; color: white; font: 1rem Inconsolata, monospace; '
-    s += 'border-radius: 15px; padding: 5px;" ><pre><output>'
+    s += ' height: 80vh; font: 1rem Inconsolata, monospace; '
+    s += 'border-radius: 15px; padding: 5px;" >'
+    s += '<pre><output style="color: white;">'
 
     # if command do not end with a newline, we had it...
     while command[-1] == '\n':
