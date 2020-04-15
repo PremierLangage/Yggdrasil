@@ -22,8 +22,9 @@ def display_as_shell_this(command, output):
     """
     # making the div for terminal screen
     s = '<br /><div style="background-color: black; '
-    s += 'background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);'
-    s += ' height: 80vh; font: 1rem Inconsolata, monospace; '
+    s += 'background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%); '
+    #s += 'height: 80vh; '
+    s += 'font: 1rem Inconsolata, monospace; '
     s += 'border-radius: 15px; padding: 10px;" >'
     s += '<pre><output style="color: white; text-shadow: 0 0 5px #C8C8C8;">'
 
