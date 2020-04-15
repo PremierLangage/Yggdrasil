@@ -60,27 +60,31 @@ class CustomDragDrop(Component):
 class DragDropGroup():
 
     def __init__(self, **kwargs):
-
+    
+        self.serialize = "DragDropGroup"
         self.id = str(uuid4())    # generates a random id for the group
         self.labels = {}            # labels/drops are dictionaries whose values are objects of class Label/Drop, the key is referred to below as the label/drop name.
         self.drops = {}
         self.cloneable = True    # Tells if a label can be used several times or not
         self._matches = []       # List of correct matches between a label and a drop. A match is a pair of cid's
                                           # underscore to make matches  invisible in the html.
-
-        
         if 'id' in kwargs: # comes first because id is copied in labels and drops
             self.id = kwargs['id']
         if 'cloneable' in kwargs: # comes first because cloneable is translated in labels and drops
             self.cloneable = kwargs['cloneable']
         if 'labels' in kwargs:
-            self.set_labels(kwargs['labels'])
+            self.set_label(kwargs['labels'])
         if 'drops' in kwargs:
-            self.set_drops(kwargs['drops'])
+            self.set_drop(kwargs['drops'])
         if 'matches' in kwargs:# format of a match: (cid of label, cid of drop_). self.matches is the list of allowable matches between a label and a drop.
-            self.set_matches(kwargs['valid_matches'])
-        if 'grade_method' in kwargs:
-            self.set_grade_method(kwargs['grade_method'])
+            self.set_match(kwargs['valid_matches'])
+    
+    @classmethod
+    def fromdict(cls, **d):
+        obj = cls()
+        for k, v in d.items():
+            setattr(obj, k, v)
+        return obj
 
     def set_label(self, labels):
          self.labels = {}
@@ -93,7 +97,6 @@ class DragDropGroup():
          2) a dictionary, which is then used to update self.labels, adding to each component the group_id and cloneable info
          3) a list of strings, and then a label is added for each string as in 1). 
          """
-
         if isinstance(labels, str):
             self.labels[labels] = CustomDragDrop.Label(content = labels, group_id = self.id, cloneable = self.cloneable)
         if isinstance(labels, dict):
@@ -113,21 +116,21 @@ class DragDropGroup():
         if isinstance(drops, list):
             self.drops.update({string:  CustomDragDrop.Drop(content = string, group_id = self.id) for string in drops})
 
-    def set_matches(self, matches): # self.matches is a list of pairs (label_cid, drop_cid)
-        self.matches = matches
+    def set_match(self, matches): # self._matches is a list of pairs (label_cid, drop_cid)
+        self._matches = matches
 
     def set_match_by_name(self, drop, matches):
-        self.matches = []
+        self._matches = []
         self.add_match_by_name(drop, matches)
 
-    def add_match_by_name(self, drop, matches): # adds one or multiple matches to self.matches, the drop and label(s) are specified by their name.
+    def add_match_by_name(self, drop, matches): # adds one or multiple matches to self._matches, the drop and label(s) are specified by their name.
        if isinstance(matches, str):
             self._matches.append((self.labels[matches].cid,self.drops[drop].cid))
        if isinstance(matches, list):
             self._matches += [(self.labels[label_name].cid, self.drops[drop].cid) for label_name in matches]
 
     def set_match_by_content(self, matches):
-        self.matches = []
+        self._matches = []
         self.add_match_by_content(matches)
 
     def get_label_by_content(self, content):
@@ -153,9 +156,12 @@ class DragDropGroup():
 
         num_right, num_wrong = 0, 0
 
-        for drop_name, drop in self.drops.item():
+        for drop_name, drop in self.drops.items():
             drop.disabled = True
-            drop_data = (drop.droppedId, drop.cid)
+            drop_data = [drop.droppedId, drop.cid] 
+            # BUG? si on met (drop.droppedId, drop.cid), ça marche pas, comme si les tuples avaient 
+            # été transformés en listes dans le grader
+            # DEBUG feedback+='dropdata:'+str(drop_data)+'<br>'
             if drop.droppedId == '':
                 pass
             elif drop_data in self._matches:
@@ -165,22 +171,31 @@ class DragDropGroup():
                 num_wrong +=1
                 drop.css = "error-state"           
    
-        possible_labels = {label for (label, drop) in self.matches} # set comprehension, no duplicates
-        possible_drops = {drop for (label, drop) in self.matches} # set comprehension, no duplicates
+        possible_labels = {label for (label, drop) in self._matches} # set comprehension, no duplicates
+        possible_drops = {drop for (label, drop) in self._matches} # set comprehension, no duplicates
         if self.cloneable == True:
             total = len(possible_drops)
         else:
-            total = min(len(possible_drops), len(possible_labels)) # en fait c'est plus compliqué que ça: il faut calculer le max de drops atteints par une application injective
-        # qui associe à un label un drop autorisé. C'est un maximum match d'un graphe bipartite, et ça peut se calculer par programmation lineaire, cf Matousek-Gartner
+            total = min(len(possible_drops), len(possible_labels)) # en fait c'est plus compliqué que ça: 
+        # il faut calculer le max de drops atteints par une application injective
+        # qui associe à un label un drop autorisé. C'est un maximum match d'un graphe bipartite, 
+        # et ça peut se calculer par programmation lineaire, cf Matousek-Gartner
                   
         score = grading_function(num_right, num_wrong, total)
-        feedback = '' 
+        # DEBUG feedback += str(self._matches)+'<br>'
+        # DEBUG feedback+=str([drop.cid for drop_name, drop in self.drops.items()])+'<br>'
+        # DEBUG feedback+= str([drop.cid for drop_name, drop in self.labels.items()])
+        feedback = ''
         return (score,feedback)
 
     
         
 
     
+
+
+
+
 
 
 
