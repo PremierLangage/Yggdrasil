@@ -81,11 +81,7 @@ extracss == #|html|
 
         }
     .drop{
-        #padding: 1em;
-        min-width: 4em;
-        width:auto;
-        height:5em;
-            display: inline-flex;
+     display: inline-flex;
     border:none;
     width: 10em;
 	height: auto;
