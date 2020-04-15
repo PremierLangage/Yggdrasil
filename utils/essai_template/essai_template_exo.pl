@@ -83,6 +83,9 @@ extracss == #|html|
 	height: 4em;
 	margin : 6px;
     overflow:hidden;
+	justify-content: center;
+	align-items: center;
+	text-align:center;
     }
     .success{
     background-color:lightGreen;
