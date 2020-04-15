@@ -26,6 +26,7 @@ editor.language = shell
 editor.height = 80px
 
 editor.code ==
+# entrez votre code shell ici...
 
 ==
 
