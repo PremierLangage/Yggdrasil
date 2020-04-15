@@ -53,7 +53,7 @@ spout = sp.stdout.decode()
 
 text = "<pre>" + spout.replace('\n', '<br />') + "</pre>"
 
-grade = (100, f" sortie   ")
+grade = (100, f"    ")
 
 ==
 
