@@ -6,8 +6,6 @@ extends = /model/mathinput.pl
 # Titre de l'exercice
 title = Multiplication de deux nombres complexes
 
-# Création d'un champ de réponse de type MathInput (mise en forme TeX)
-input =: MathInput
 input.virtualKeyboards = complexes
 
 # La clé before contient un script python qui est exécuté au lancement de l'exercice
@@ -17,12 +15,10 @@ before ==
 z1 = rd.randint(-5, 5) + rd.randint(-5, 5)*I
 z2 = rd.randint(-5, 5) + rd.randint(-5, 5)*I
 sol = (z1 * z2).expand()
-s = pi/4
 ==
 
 # Voilà le début de l'énoncé avec un principe de template (Jinja) pour insérer les variables produites dans le scripte before
 text ==
-{{s.latex}}
 On considère les nombres complexes $! z_1 = {{ z1.latex }} !$ et $! z_2 = {{ z2.latex }} !$. Calculer $! z_1 \times z_2 !$ (sous forme algébrique).
 ==
 
@@ -37,3 +33,4 @@ form ==
 evaluator ==
 score, _, feedback = eval_complex(input.value, sol, form="cartesian")
 ==
+
