@@ -16,7 +16,7 @@
 #                  http://www.gnu.org/licenses/
 #*****************************************************************************
 
-def display_as_shell_this(command, output):
+def display_as_shell_this(command, output, user=None):
     r"""
     Return a nice shell looking of the command and its output in html/css
     """
@@ -31,6 +31,8 @@ def display_as_shell_this(command, output):
     # if command do not end with a newline, we had it...
     while command[-1] == '\n':
         command = command[:-1]
+    if user is not None:
+        s += user+"@PLaTon"
     s += ":~$> " + command.replace('\n', ' \ <br />... ')
     s += "<br />"
     s += output.replace('\n', ' <br />')
