@@ -80,8 +80,6 @@ extracss == #|html|
 
     .drop{
     display: inline-flex;
-    border:none;
-	margin : 6px;
     vertical-align:top;
 	justify-content: center;
 	align-items: center;
