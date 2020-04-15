@@ -8,7 +8,7 @@ before== #|python|
 from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
 
 # contenu des labels
-integrale = r"$$\int_0^1 x^2\, dx$$" # bug d'affichage: \, affiche une virgule
+integrale = r"$$\int_0^1 x^2\\, dx$$" # bug d'affichage: \, affiche une virgule
 fraction =  r"$$\frac12 - \frac13$$"
 limite = r"$$\lim_{x\to +\infty} x\sin(1/x)$$"
 determinant = r"$$\det\begin{pmatrix} 1 & 2\\\\ 1 & 3\end{pmatrix}$$" # bug d'affichage: la matrice s'affiche sur une ligne
