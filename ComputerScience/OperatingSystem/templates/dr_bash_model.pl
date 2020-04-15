@@ -54,12 +54,10 @@ with open("student_script.sh", "w") as f:
 sp = subprocess.run(["/bin/bash","student_script.sh"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 spout = sp.stdout.decode()
 sperr = sp.stderr.decode()
-text = "<pre>" + spout.replace('\n', '<br />') + "</pre>"
-errtext = "<pre>" + sperr.replace('\n', '<br />') + "</pre>"
+s = "<pre>" + spout.replace('\n', '<br />') + "</pre>"
+s += "Sortie erreur <pre>" + sperr.replace('\n', '<br />') + "</pre>"
 
-print(errtext, file=sys.stderr)
-
-grade = (100, f"  ")
+grade = (100, f" {s}  ")
 
 ==
 
