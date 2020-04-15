@@ -23,7 +23,7 @@ def display_as_shell_this(command, output):
     # if command do not end with a newline, we had it...
     while command[-1] == '\n':
         command = command[:-1]
-    s = ":~$> " + command.replace('\n', '\ <br />')
+    s = ":~$> " + command.replace('\n', '\ <br />... ')
     s += "<br />"
     s += output.replace('\n', ' <br />')
     return s
