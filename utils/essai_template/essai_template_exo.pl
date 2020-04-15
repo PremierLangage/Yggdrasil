@@ -75,7 +75,7 @@ extracss == #|html|
     .drag{
     display:flex;
     position:absolute;
-	background:inherit;
+    background:inherit;
 	height:inherit;
 	width:inherit;
 	justify-content: center;
