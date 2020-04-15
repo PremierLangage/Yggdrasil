@@ -14,7 +14,7 @@ generate== #|py|
 #    la construction de l'automate pour tester la réponse
 from automaton import Automaton
 
-automaton = AutomatonEditor({
+automaton = AutomatonEditor(
     automaton= {
         "alphabet": ["a", "b"],
         "initialStates": ["S0"],
@@ -26,7 +26,7 @@ automaton = AutomatonEditor({
             { "fromState": "s1", "toState": "s2", "symbols": ["b"] },
         ]
     }
-})
+)
 
 automaton = Automaton.parse(automaton)
 
