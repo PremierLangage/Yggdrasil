@@ -12,11 +12,12 @@ import fsm
 
 from automata.fa.dfa import DFA
 from automata.fa.nfa import NFA
-
 from components import AutomatonDrawer, AutomatonEditor
 
 class Automaton:
-
+    """
+    Representation of an automaton.
+    """
     def __init__(self, fa):
         if not isinstance(fa, fsm.fsm):
             raise TypeError('argument "fa" must be an instance of fsm.fsm')
@@ -26,22 +27,46 @@ class Automaton:
 
     @property
     def states(self):
+        """
+        Return a set of the final states of the automaton. e.g. ['S0', 'S1', 'S2']
+        """
         return self.fa.states
 
     @property
+    def initial(self):
+        """
+        Gets the initial state of the automaton.
+        """
+        return self.fa.initial
+
+    @property
     def alphabet(self):
+        """
+        Gets a set of the symbols in the automaton. e.g. ['a', 'b', 'c']
+        """
         return self.fa.alphabet
 
     @property
     def finals(self):
+        """
+        Return a set of the final states of the automaton. e.g. ['S3', 'S4']
+        """
         return self.fa.finals
 
     @property
-    def initial(self):
-        return self.fa.initial
-
-    @property
     def transitions(self):
+        """
+        Gets a map representing the transitions of the automaton.
+        Each key of the map is the name of a state and each value is a map
+        of the outgoing transitions from the state.
+        e.g.
+
+        {
+            'SO': { 'a', 'S0', 'b': 'S1' },
+            'S1': { 'a', 'S0', 'b': 'S2' },
+            'S2': { 'b': 'S2' }
+        }
+        """
         return self.fa.map
 
 
@@ -79,7 +104,19 @@ class Automaton:
         )
  
     @staticmethod
-    def rand(numStates, numAlphabet, maxNumToStates, dfa=True):
+    #génère un automate avec numStates états sur l'alphabet de taille numAlphabet avec numTransitions transitions?? dfa indique si on veut un automate det
+    def rand(numStates: int, numAlphabet: int, numTransitions: int, dfa=True):
+        """
+        Generates a random automaton.
+
+        Note: The generated automaton is a minimal automaton
+
+        :param numStates the number of states of the automaton.
+        :param numAlphabet the alphabet of the automaton.
+        :param numTransitions the number of transitions of the automaton.
+        :param dfa force the automaton to be deterministic if set to True.
+        """
+
         while True:
             r = {}
             i = 0
@@ -114,7 +151,7 @@ class Automaton:
             transitions = {}
             for i in range(numStates):
                 for j in range(len(alphabet)):
-                    numToStates = random.randint(0, maxNumToStates)
+                    numToStates = random.randint(0, numTransitions)
                     if numToStates > 0:
                         toStates = []
                         k = 0
@@ -243,6 +280,9 @@ class Automaton:
     
     @staticmethod
     def informations(editor: AutomatonEditor):
+        """
+        Gets useful informations about the given automaton.
+        """
         try:
             Automaton.parse(editor)
         except Exception as e:
@@ -460,9 +500,5 @@ class Automaton:
         self.fa = fsm.fsm(
             alphabet=alphabet, states = states, initial=initial, finals=finals, map=map
         )
-
-
-
-
 
 
