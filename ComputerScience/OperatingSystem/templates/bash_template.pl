@@ -57,7 +57,7 @@ sp = subprocess.run(["/bin/bash", "student_script.sh"], stdout=subprocess.PIPE, 
 spout = sp.stdout.decode()
 
 form = "{{ editor|component }}"
-form += display_as_shell_this(editor.code, spout, str(answers))
+form += display_as_shell_this(editor.code, spout, str(answer))
 
 grade = (100, f"    ")
 
