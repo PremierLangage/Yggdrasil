@@ -38,6 +38,8 @@ def display_as_shell_this(command, output, user=None, errout="", returncode=0):
     # Information about process termination
     if returncode == 0:
         s += "Process exited normally"
+    elif returncode > 0:
+        s += "Process exited normally with code "+str(returncode)
     else:
         if -returncode in signals:
             s += "Process exited with signal ("+str(-returncode)+") "+signals[-returncode]
