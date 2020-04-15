@@ -12,7 +12,6 @@ import fsm
 
 from automata.fa.dfa import DFA
 from automata.fa.nfa import NFA
-
 from components import AutomatonDrawer, AutomatonEditor
 
 class Automaton:
@@ -244,6 +243,9 @@ class Automaton:
     
     @staticmethod
     def informations(editor: AutomatonEditor):
+        """
+        Gets useful informations about the given automaton.
+        """
         try:
             Automaton.parse(editor)
         except Exception as e:
