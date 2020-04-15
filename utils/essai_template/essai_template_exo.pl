@@ -83,8 +83,7 @@ extracss == #|html|
 	text-align:center;
 	font-size: 1em;
 	overflow:hidden;
-
-        }
+    }
     .drop{
      display: inline-flex;
     border:none;
@@ -94,8 +93,7 @@ extracss == #|html|
     vertical-align:top;
 	justify-content: center;
 	align-items: center;
-
-        }
+    }
 </style>
 ==
 
