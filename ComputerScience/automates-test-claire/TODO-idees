@@ -26,6 +26,9 @@ Dans editor. pl j'ai ajouté des consignes pour dessiner l'autoamtes
 ========
 Questions sur les numéros d'activées -- ok réglé
 
+=========
+parse -> construit des exemples
+
 ========
 Syntaxe pour donner des automates fixés? pas juste à dessiner
 
@@ -49,5 +52,6 @@ Exercices à concevoir:
     automate minimal et simple vérification
     étapes de l'algo de Moore en donnant les classes d'équivalences à chaque niveau
 + QCM reg/non-reg
+
 
 
