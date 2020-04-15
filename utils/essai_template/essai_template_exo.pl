@@ -38,7 +38,7 @@ d = mygroup.labels["limite"]
 e = mygroup.labels["fraction"]
 f = mygroup.labels["determinant"]
 g = mygroup._matches
-a.css = 'myclass'
+c.css = 'myclass'
 ==
 
 text==
