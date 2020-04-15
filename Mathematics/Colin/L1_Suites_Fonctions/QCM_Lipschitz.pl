@@ -40,6 +40,13 @@ Cliquez sur les affirmations que vous pensez être correctes (plusieurs bonnes r
 + La fonction $%f%$ est 4-Lipschitzienne.
 + La fonction $%f%$ est 1000-Lipschitzienne.
 
+** Soit la fonction définie sur $%\R%$ par $%f(x) = |x|%$. 
+Cliquez sur les affirmations que vous pensez être correctes (plusieurs bonnes réponses) :
++ La fonction $%f%$ n'est pas dérivable en 0.
++ La fonction $%f%$ est Lipschitzienne.
+- La fonction $%f%$ est dérivable sur $%\R%$ 
+- La fonction $%f%$ n'est pas Lipschitzienne. 
+
 * Soit une fonction $% f :\mathbb{R} \rightarrow \mathbb{R}%$.
 Cliquez sur l'affirmation que vous pensez être correcte :
 + Si $%f%$ est Lipschitzienne sur $%\mathbb{R}%$ alors $%f%$ est continue sur $%\mathbb{R}%$.
@@ -66,6 +73,7 @@ Cliquez sur les affirmations que vous pensez être correctes (plusieurs bonnes r
 
 
 ==
+
 
 
 
