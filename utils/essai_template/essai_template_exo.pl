@@ -108,7 +108,6 @@ custom_pl_template == #|html|
     <ion-card-header class="exercise__header">
         <ion-card-subtitle class='exercise__author'>{% if author %}{{ author }}{% endif %}</ion-card-subtitle>
         <ion-card-title class='exercise__title'>{% if title %}{{ title }}{% endif%}</ion-card-title>
-        Salut les amis
     </ion-card-header>
     <!-- BODY -->
     <ion-card-content class="exercise__body">
