@@ -14,7 +14,7 @@ generate== #|py|
 #    la construction de l'automate pour tester la réponse
 from automaton import Automaton
 
-automaton = Automaton.from_editor(
+automaton = Automaton.parse(
 """#states
 s0
 s1
@@ -49,6 +49,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution
 </p>
 {% endif %}
 ==
+
 
 
 
