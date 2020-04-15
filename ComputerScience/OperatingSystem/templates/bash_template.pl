@@ -29,12 +29,15 @@ editor.code ==
 ==
 
 before==
-{{ user }}
+
 ==
 
 title=bash code template (titre à surcharger!)
 
 text==
+
+{{ user }}
+
 ==
 
 form==
