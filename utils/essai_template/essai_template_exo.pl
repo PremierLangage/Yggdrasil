@@ -94,6 +94,14 @@ custom_pl_template == #|html|
     </ion-card-header>
     <!-- BODY -->
     <ion-card-content class="exercise__body">
+        <!-- FORM -->
+        {% csrf_token %}
+        <div class="exercise__form">
+            {% block form %}{{ form|safe }}{% endblock %}
+        </div>
+        <br/>
+        <!-- FOOTER -->
+        <ion-footer class="ion-no-border">
         <!-- INSTRUCTIONS -->
         <div class="exercise__instructions">
             {% if text %}
@@ -104,14 +112,7 @@ custom_pl_template == #|html|
         <div class="exercise__feedback">
             {{ feedback__|markdown|safe if feedback else "" }}
         </div>
-        <!-- FORM -->
-        {% csrf_token %}
-        <div class="exercise__form">
-            {% block form %}{{ form|safe }}{% endblock %}
-        </div>
-        <br/>
         <!-- ACTIONS -->
-        <ion-footer class="ion-no-border">
         <div class="exercise__actions text-center">
             <div class="btn-group" role="group" aria-label="actions">
                 <button class="btn btn-primary action-submit">
