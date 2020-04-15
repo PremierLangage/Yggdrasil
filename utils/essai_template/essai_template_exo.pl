@@ -70,7 +70,7 @@ extracss == #|html|
     .myclass{
         #padding: 1em;
         min-width: 4em;
-        width:5em;
+        width:inherit;
         height:5em;
         }
 </style>
