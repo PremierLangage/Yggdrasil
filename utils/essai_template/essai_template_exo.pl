@@ -81,7 +81,28 @@ extracss == #|html|
 	justify-content: center;
 	align-items: center;
     }
+
     .drop{
+     display: inline-flex;
+    width: 10em;
+	height: 10em;
+	margin : 6px;
+    vertical-align:top;
+	justify-content: center;
+	align-items: center;
+    }
+    .drop-success{
+    background:'lightgreen';
+     display: inline-flex;
+    width: 10em;
+	height: 10em;
+	margin : 6px;
+    vertical-align:top;
+	justify-content: center;
+	align-items: center;
+    }
+    .drop-error{
+    background:'lightred';
      display: inline-flex;
     width: 10em;
 	height: 10em;
