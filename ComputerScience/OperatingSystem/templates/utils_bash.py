@@ -16,7 +16,7 @@
 #                  http://www.gnu.org/licenses/
 #*****************************************************************************
 
-signals = {
+signals = dict({
     2: "SIGINT",
     3: "SIGQUIT",
     4: "SIGILL",
@@ -27,7 +27,7 @@ signals = {
     13: "SIGPIPE",
     14: "SIGALRM",
     15: "SIGTERM"
-}
+});
 
 def 
 
