@@ -1,29 +1,88 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-#
-#  automaton.py
-#
-#  Copyright 2020 Cisse Mamadou [mciissee@gmail.com]
-
-import random
 import math
-import lego
+import random
+
 import fsm
+import lego
 
 from automata.fa.dfa import DFA
 from automata.fa.nfa import NFA
+
 from components import AutomatonDrawer, AutomatonEditor
 
 class Automaton:
     """
-    Representation of an automaton.
+    Provides methods for the creation and manipulation of deterministic finite automata.
+
+    Exemples:
+    An automaton of the words starting with 'ab' for the alphabet ['a', 'b', 'c'] can be created in the following ways:
+    
+    ### Create from a regular expression.
+    Automaton.parse('ab(a|b|c)*')
+
+    ### Create from a string notatation.
+    Automaton.parse(
+    '''
+        #states
+        S0
+        S1
+        S2
+        #initials
+        S0
+        #accepting
+        S2
+        #alphabet
+        a
+        b
+        c
+        #transitions
+        S0:a>s1
+        S1:b>s2
+        S2:a,b,c>S2
+    ''')
+
+    ### Create from object notation
+    Automaton.parse({
+        "alphabet": ["a", "b", "c"],
+        "states": ["S0", "S1", "S2"],
+        "initialStates":["0"],
+        "acceptingStates": ["2"],
+        "transitions": [
+            { "fromState": "S0", "toState": "S1", "symbols": ["a"]},
+            { "fromState": "S1", "toState": "S2", "symbols": ["b"]},
+            { "fromState": "S2", "toState": "S2", "symbols": ["a", "b", "c"]}
+        ]
+    })
+    ### Create from a component 
+    editor = AutomatonEditor(automaton={
+        "alphabet": ["a", "b", "c"],
+        "states": ["S0", "S1", "S2"],
+        "initialStates":["0"],
+        "acceptingStates": ["2"],
+        "transitions": [
+            { "fromState": "S0", "toState": "S1", "symbols": ["a"]},
+            { "fromState": "S1", "toState": "S2", "symbols": ["b"]},
+            { "fromState": "S2", "toState": "S2", "symbols": ["a", "b", "c"]}
+        ]
+    })
+    Automaton.parse(editor)
+
+    ### Create from an instance
+    Automaton.parse(
+        Automaton.parse('(a|b)+')
+    )
     """
+
     def __init__(self, fa):
         if not isinstance(fa, fsm.fsm):
             raise TypeError('argument "fa" must be an instance of fsm.fsm')
 
         self.fa = fa
-        self.stringifyStates()
+        self._stringifyStates()
+
+    def __str__(self):
+        return str(self.fa)
+
+    # PROPERTIES
 
     @property
     def states(self):
@@ -69,43 +128,74 @@ class Automaton:
         """
         return self.fa.map
 
+    # STATIC METHODS
 
     @staticmethod
-    def parse(o):
-        if isinstance(o, Automaton):
-            return o
-
-        if isinstance(o, fsm.fsm):
-            return Automaton(o)
+    def parse(obj):
+        """
+        Converts the given object to an instance of Automaton class.
+        
+        :param object any of the following types (
+            str (regex or string notation) |
+            dict (object notation)|
+            fsm.fsm |
+            Automaton |
+            AutomatonEditor |
+            AutomatonViewer
+        )
+        :return An instance of Automaton class.
+        :raise TypeError if obj cannot be parsed.
+        :raise SyntaxError if obj is not valid.
+        """
     
-        if isinstance(o, AutomatonEditor):
-            return Automaton.from_editor(o)
+        if isinstance(obj, Automaton):
+            return obj
 
-        if isinstance(o, str):
-            return Automaton.from_regex(o)
+        if isinstance(obj, fsm.fsm):
+            return Automaton(obj)
+    
+        if isinstance(obj, AutomatonEditor):
+            return Automaton.from_editor(obj)
 
-        if not isinstance(o, dict):
+        if isinstance(obj, AutomatonDrawer):
+            return Automaton.from_viewer(obj)
+
+        if isinstance(obj, str):
+            if obj.strip().count('\n') > 1:
+                return Automaton.from_string_notation(obj)
+            return Automaton.from_regex(obj)
+
+        if not isinstance(obj, dict):
             raise TypeError(
-                'Automaton can be parsed from the following types only: [Automaton, AutomatonEditor, fsm.fsm, string regex]'
+                '''Automaton can be parsed from the following types only: [
+                    str,
+                    fsm.fsm,
+                    Automaton,
+                    AutomatonDrawer,
+                    AutomatonEditor
+                ]
+                '''
             )
 
-        if 'fa' in o: # serialized Automaton instance
-            return Automaton.parse(o['fa'])
+        if 'fa' in obj: # from serialized Automaton instance inside a grader
+            return Automaton.parse(obj['fa'])
 
-        # serialized fsm object
+        if 'initialStates' in obj: # from object notation
+            return Automaton.from_object_notation(obj)
+
+        # from serialized fsm object inside a grader
         return Automaton(
             fsm.fsm(
-                states=set(o['states']),
-                alphabet=set(o['alphabet']),
-                initial=o['initial'],
-                finals=set(o['finals']),
-                map=o['map']
+                states=set(obj['states']),
+                alphabet=set(obj['alphabet']),
+                initial=obj['initial'],
+                finals=set(obj['finals']),
+                map=obj['map']
             )
         )
  
     @staticmethod
-    #génère un automate avec numStates états sur l'alphabet de taille numAlphabet avec numTransitions transitions?? dfa indique si on veut un automate det
-    def rand(numStates: int, numAlphabet: int, numTransitions: int, dfa=True):
+    def rand(numStates: int, numAlphabet: int, numTransitions: int):
         """
         Generates a random automaton.
 
@@ -114,7 +204,6 @@ class Automaton:
         :param numStates the number of states of the automaton.
         :param numAlphabet the alphabet of the automaton.
         :param numTransitions the number of transitions of the automaton.
-        :param dfa force the automaton to be deterministic if set to True.
         """
 
         while True:
@@ -196,51 +285,207 @@ class Automaton:
         :raise TypeError if regex is not a string.
         """
         if not isinstance(regex, str):
-            raise TypeError('parameter "regex" must be a string')
-
+            raise TypeError('from_regex: Excepted an automaton in regex notation')
         return Automaton(lego.parse(regex).to_fsm().reduce())
 
     @staticmethod
     def from_editor(editor: AutomatonEditor):
         """
-        Creates a minimal deterministic automaton from an AutomatonEditor component instance.
+        Creates an Automaton from the given AutomatonEditor component.
 
         :param editor an AutomatonEditor component.
         :return an Automaton instance.
-        :raise TypeError if editor is not a valid automaton.
+        :raise TypeError if automaton is not an instance of AutomatonEditor.
+        :raise SyntaxError if automaton cannot be parsed.
         """
+
         if not isinstance(editor, AutomatonEditor):
             raise TypeError('parameter "editor" must be an instance of AutomatonEditor')
+    
+        if isinstance(editor.automaton, str):
+            return Automaton.from_string_notation(editor.automaton)
 
-        automaton = editor.automaton
-        if 'states' not in automaton or not len(automaton['states']):
-            raise TypeError("Vous devez saisir un automate avec au moins un état initial et un état final!")
-        if 'initialStates' not in automaton or not len(automaton['initialStates']):
-            raise TypeError("L'automate que vous avez saisi ne contient pas d'état initial!")
-        if 'acceptingStates' not in automaton or not len(automaton['acceptingStates']):
-            raise TypeError("L'automate que vous avez saisi ne contient pas d'état final!")
-        if 'alphabet' not in automaton or not len(automaton['alphabet']):
-            raise TypeError("L'automate que vous avez saisi ne contient aucune transition!")
+        return Automaton.from_object_notation(editor.automaton)
 
+    @staticmethod
+    def from_viewer(viewer: AutomatonDrawer):
+        """
+        Creates an Automaton from the given AutomatonDrawer component.
+
+        :param editor an AutomatonDrawer component.
+        :return an Automaton instance.
+        :raise TypeError if automaton is not an instance of AutomatonDrawer.
+        :raise SyntaxError if automaton cannot be parsed.
+        """
+
+        if not isinstance(editor, AutomatonDrawer):
+            raise TypeError('parameter "viewer" must be an instance of AutomatonDrawer')
+    
+        if isinstance(editor.automaton, str):
+            return Automaton.from_string_notation(editor.automaton)
+
+        return Automaton.from_object_notation(editor.automaton)
+
+    @staticmethod
+    def from_string_notation(stringNotation: str):
+        """
+        Creates an Automaton from a string notation.
+
+        :param stringNotation An automaton in the string notation.
+        :return Automaton object.
+        :raise TypeError if stringNotation is not a string.
+        :raise SyntaxError if stringNotation cannot be parsed.
+        """
+        
+        if not isinstance(stringNotation, str):
+            raise TypeError('from_string_notation: Excepted an automaton in string notation')
+
+        lines = stringNotation.split('\n');
+
+        states: [str] = []
+        initials: [str] = []
+        accepting: [str] = []
+        alphabet: [str] = []
+        transitions = []
+        parseState = None
+
+        parseCounts = {
+            'states' : 0,
+            'initials' : 0,
+            'accepting' : 0,
+            'alphabet' : 0,
+            'transitions' : 0
+        }
+
+        for i in range(len(lines)):
+            line = lines[i].strip()
+            if len(line) == 0:
+                continue;
+            if line[0] == '#':
+                parseState = line[1:]
+                if parseState not in parseCounts:
+                    raise SyntaxError('Line ' + (i + 1).toString() + ': invalid section name ' +
+                                    parseState + '. Must be one of: states, initials, \
+                                    accepting, alphabet, transitions.')
+                else:
+                    parseCounts[parseState] += 1
+                    if parseCounts[parseState] > 1:
+                        raise SyntaxError(f'Line {(i + 1)}: duplicate section name {parseState}.');
+            else:
+                if parseState is None:
+                    raise SyntaxError('Line ' + (i + 1).toString() + ': no #section declared. \
+                                    Add one section: states, initial, accepting, \
+                                    alphabet, transitions.')
+                elif parseState == 'states':
+                    states += line.split(';')
+                elif parseState == 'initials':
+                    initials += line.split(';')
+                elif parseState == 'accepting':
+                    accepting += line.split(';')
+                elif parseState == 'alphabet':
+                    alphabet += line.split(';')
+                elif parseState == 'transitions':
+                    state_rest = line.split(':');
+                    fromStates = state_rest[0].split(',')
+                    parts = state_rest[1].split(';')
+                    symbols: [str] = [];
+                    toStates: [str] = []
+                    for j in range(len(parts)):
+                        left_right = parts[j].split('>');
+                        symbols = left_right[0].split(',');
+                        toStates = left_right[1].split(',');
+                    for fromState in fromStates:
+                        for toState in toStates:
+                            transitions.append({
+                                "fromState": fromState,
+                                "toState": toState,
+                                "symbols": symbols
+                            })
+        
+        for k in parseCounts:
+            if parseCounts[k] != 1:
+                raise SyntaxError('Specification missing #' + parseCounts[k] +' section.')
+        
+        return Automaton.from_object_notation({
+            "states": states,
+            "initialStates": initials,
+            "alphabet": alphabet,
+            "acceptingStates": accepting,
+            "transitions": transitions
+        })
+
+    @staticmethod
+    def from_object_notation(objectNotation: dict):
+        """
+        Creates a deterministic Automaton from an object notation.
+        (the automaton is converted to a deterministic if needed)
+
+        :param objectNotation An automaton in the object notation.
+        :return Automaton instance.
+        :raise TypeError if objectNotation is not a dict.
+        :raise SyntaxError if objectNotation cannot be parsed.
+        """
+
+        if not isinstance(objectNotation, dict):
+            raise TypeError('from_object_notation: Excepted an automaton in object notation')
+
+        if 'states' not in objectNotation or not len(objectNotation['states']):
+            raise SyntaxError("Vous devez saisir un automate avec au moins un état initial et un état final!")
+        if 'initialStates' not in objectNotation or not len(objectNotation['initialStates']):
+            raise SyntaxError("L'automate que vous avez saisi ne contient pas d'état initial!")
+        if 'acceptingStates' not in objectNotation or not len(objectNotation['acceptingStates']):
+            raise SyntaxError("L'automate que vous avez saisi ne contient pas d'état final!")
+        if 'alphabet' not in objectNotation or not len(objectNotation['alphabet']):
+            raise SyntaxError("L'automate que vous avez saisi ne contient aucun symbole!")
+        if 'transitions' not in objectNotation or not len(objectNotation['transitions']):
+            raise SyntaxError("L'automate que vous avez saisi ne contient aucune transition!")
+           
+        # check the transitions of the editor
+        states = objectNotation['states']
+        initials = objectNotation['initialStates']
+        alphabet = objectNotation['alphabet']
+        finals = objectNotation['acceptingStates']
         transitions = {}
-        for state in automaton['states']:
-            transitions[state] = {}
-
-        for transition in automaton['transitions']:
+        
+        """
+        for transition in objectNotation['transitions']:
             toState = transition['toState']
             fromState = transition['fromState']
+            if fromState not in transitions:
+                transitions[fromState] = {}
+            for symbol in transition['symbols']:
+                transitions[fromState][symbol] = toState
+
+        if len(initials) > 1: # TODO remove once multiple initial states is supported
+            raise SyntaxError('Mutiple initial states is not currently supported !')
+
+        return Automaton(
+            fsm.fsm(
+                states=set(states),
+                alphabet=set(alphabet),
+                initial=initials[0],
+                finals=set(finals),
+                map=transitions
+            )
+        )
+        """
+
+        for transition in objectNotation['transitions']:
+            toState = transition['toState']
+            fromState = transition['fromState']
+            if fromState not in transitions:
+                transitions[fromState] = {} 
             for symb in transition['symbols']:
-                transition = transitions[fromState].get(symb)
                 if symb not in transitions[fromState]:
                     transitions[fromState][symb] = set()
                 transitions[fromState][symb].add(toState)
 
         nfa = NFA(
-            states=set(automaton['states']),
-            input_symbols=set(automaton['alphabet']),
+            states=set(states),
+            input_symbols=set(alphabet),
             transitions=transitions,
-            initial_state=automaton['initialStates'][0],
-            final_states=set(automaton['acceptingStates'])
+            initial_state=initials[0],
+            final_states=set(finals)
         )
 
         dfa = DFA.from_nfa(nfa)
@@ -252,12 +497,26 @@ class Automaton:
             map=dfa.transitions
         ).reduce())
 
+
     @staticmethod
-    def viewer(o):
+    def viewer(obj):
         """
-        Returns an automaton viewer component to draw the given automaton | regex.
+        Gets an AutomatonDrawer component that can be displayed inside
+        the form of an exercice.
+
+        :param obj An automaton in one of the accepted format.
+
+        Example:
+
+        before==
+        viewer = Automaton.viewer('(ab)(a|b|c)*') 
+        ==
+
+        form==
+        {{ viewer | component }}
+        ==
         """
-        return Automaton.parse(o).asViewer()
+        return Automaton.parse(obj).asViewer()
 
     @staticmethod
     def editor():
@@ -270,124 +529,74 @@ class Automaton:
         Return a tuple (equals, error) where equals indicate whether
         the minimal deterministic automaton of `a` and `b` are equivalents
         and error an message if there is any error (None if no error)
+        :param a An automaton in a any of the accepted formats.
+        :param b An automaton in a any of the accepted formats.
+        :raise If a or b cannot be parsed.
         """
         try:
             a = Automaton.parse(a)
             b = Automaton.parse(b)
-            return a.fa.equivalent(b.fa), None
+            return a.fa.reduce().equivalent(b.fa.reduce()), None
         except Exception as e:
             return False, str(e)
     
     @staticmethod
-    def informations(editor: AutomatonEditor):
+    def informations(obj):
         """
         Gets useful informations about the given automaton.
+        :param obj An automaton in a any of the accepted formats.
+
+        :return {
+            "complete": bool,
+            "infinite": bool,
+            "deterministic": bool,
+            "reachable": bool,
+            "coreachable": bool
+        }
         """
         try:
-            Automaton.parse(editor)
+            automaton = Automaton.parse(obj)
         except Exception as e:
             return None, str(e)
     
-        def iterator(automaton: AutomatonEditor, consumer):
-            transitions = automaton['transitions']
-            for transition in transitions:
-                fromState = transition['fromState']
-                toState = transition['toState']
-                for symbol in transition['symbols']:
-                    consumer(fromState, toState, symbol)
-
-        def reachableStates(automaton, initialState, iterator, shouldIncludeInitialState=True):
-            """
-            Calculate the reachable states of an automaton starting from the given `initialState`
-
-            :param automaton the automaton to test
-            :param initialState the initial state
-            :param iterator function that accept an automaton and a consumer function as arguments
-                and iterate over the transitions of the automaton to call the consumer with the following args (fromState, toState, symbol)
-            :param shouldIncludeInitialState a value indicating whether initialState should be included
-                or not in the response.
-            :return a set of the coreachable states.
-            """
-
-            unprocessed = [initialState]
-            reachables = set([initialState]) if shouldIncludeInitialState else []
-            def consumer(fromState, toState, symbol):
-                if currentState == fromState and toState not in reachables:
-                    reachables.add(toState)
-                    if toState not in unprocessed:
-                        unprocessed.append(toState)
-            while len(unprocessed):
-                currentState = unprocessed.pop()
-                iterator(automaton, consumer)
-            return sorted(reachables)
-
-        def coReachableStates(automaton, finalState, shouldIncludeFinalState=True):
-            """
-            Calculate the coreachable states of an automaton starting from the given `finalState`
-
-            :param automaton the automaton to test
-            :param finalState the final state
-            :param iterator function that accept an automaton and a consumer function as arguments
-                and iterate over the transitions of the automaton to call the consumer with the following args (fromState, toState, symbol)
-            :param shouldIncludeFinalState a value indicating whether finalState should be included
-                or not in the response.
-            :return a set of the coreachable states.
-            """
-            unprocessed = [finalState]
-            unreachables = set([finalState]) if shouldIncludeFinalState else []
-            def consumer(fromState, toState, symbol):
-                if currentState == toState and fromState not in unreachables:
-                    unreachables.add(toState)
-                    if fromState not in unprocessed:
-                        unprocessed.append(fromState)
-            while len(unprocessed):
-                currentState = unprocessed.pop()
-                iterator(automaton, consumer)
-            unreachables.add(currentState)
-            return unreachables
-
         complete = True
         infinite = False
         deterministic = True
 
-        automaton = editor.automaton
-        states = automaton['states']
-        finals = automaton['acceptingStates']
-        initials = automaton['initialStates']
-        transitions = automaton['transitions']
-        alphabetLength = len(automaton['alphabet'])
+        states = automaton.states
+        finals = automaton.finals
+        initials = [automaton.initial] # TODO use automaton.initials once multiple initial states is supported 
+        transitions = automaton.transitions
+        alphabetLength = len(automaton.alphabet)
 
         # calculate reachable states
         reachables = []
         for state in initials:
-            reachables.extend(reachableStates(automaton, state, iterator))
+            reachables.extend(automaton.reachableStates(state))
         reachables = set(reachables)
 
         # calculate coreachable states
         coreachables = []
         for state in finals:
-            coreachables.extend(coReachableStates(automaton, state, iterator))
+            coreachables.extend(automaton.coReachableStates(state))
         coreachables = set(coreachables)
 
         # check whether the automaton is infinite
         processed = set()
-        for transition in transitions:
-            toState = transition['toState']
-            fromState = transition['fromState']
-            if (toState in processed) or (fromState == toState) and (fromState in coreachables):
-                infinite = True
-                break
-            processed.add(fromState)
-
+        for fromState, toStates in transitions.items():
+            for symb, toState in toStates.items():
+                if (toState in processed) or (fromState == toState) and (fromState in coreachables):
+                    infinite = True
+                    break
+                processed.add(fromState)
+    
         # check whether the automaton is deterministic and or complete
         for state in states:
             outgoing = []
-            for transition in transitions:
-                toState = transition['toState']
-                fromState = transition['fromState']
-                if fromState == state:
-                    for s in transition['symbols']:
-                        outgoing.append(s)
+            for fromState, toStates in transitions.items():
+                for symb in toStates:
+                    if fromState == state:
+                        outgoing.append(symb)
 
             i = len(outgoing) # number of outgoing transitions
             j = len(set(outgoing)) # number of distinct outgoing transitions
@@ -406,7 +615,13 @@ class Automaton:
         }, None
 
 
+    # INSTANCE METHODS
+
     def randomStringInAlphabet(self, max=3):
+        """
+        Gets a list of random strings accepted by the automaton.
+        :param max the max number of elements of the returned list.
+        """
         r = []
         i = 0
         for e in self.fa.strings():
@@ -427,6 +642,10 @@ class Automaton:
         return ret
 
     def randomStringNotInAlphabet(self, max=3):
+        """
+        Gets a list of random strings not accepted by the automaton.
+        :param max the max number of elements of the returned list.
+        """
         r = []
         i = 0
         for e in self.fa.everythingbut().strings():
@@ -456,7 +675,66 @@ class Automaton:
                     symb
                 )
 
+    def reachableStates(self, initialState: str, shouldIncludeInitialState=True):
+        """
+        Calculate the reachable states of an automaton starting from the given `initialState`
+
+        :param initialState the initial state
+        :param shouldIncludeInitialState a value indicating whether initialState should be included
+            or not in the response.
+        :return a set of the coreachable states.
+        """
+
+        unprocessed = [initialState]
+        reachables = set([initialState]) if shouldIncludeInitialState else []
+        def consumer(fromState, toState, symbol):
+            if currentState == fromState and toState not in reachables:
+                reachables.add(toState)
+                if toState not in unprocessed:
+                    unprocessed.append(toState)
+        while len(unprocessed):
+            currentState = unprocessed.pop()
+            self.iterate(consumer)
+        return sorted(reachables)
+
+    def coReachableStates(self, finalState: str, shouldIncludeFinalState=True):
+        """
+        Calculate the coreachable states of the automaton starting from the given `finalState`
+
+        :param finalState the final state
+        :param shouldIncludeFinalState a value indicating whether finalState should be included
+            or not in the response.
+        :return a set of the coreachable states.
+        """
+        unprocessed = [finalState]
+        unreachables = set([finalState]) if shouldIncludeFinalState else []
+        def consumer(fromState, toState, symbol):
+            if currentState == toState and fromState not in unreachables:
+                unreachables.add(toState)
+                if fromState not in unprocessed:
+                    unprocessed.append(fromState)
+        while len(unprocessed):
+            currentState = unprocessed.pop()
+            self.iterate(consumer)
+        unreachables.add(currentState)
+        return unreachables
+    
     def asViewer(self):
+        """
+        Gets an AutomatonDrawer component that can be displayed inside
+        the form of an exercice.
+
+        Example:
+
+        before==
+        viewer = Automaton.parse('(ab)(a|b|c)*') 
+        ==
+
+        form==
+        {{ viewer | component }}
+        ==
+        """
+
         fa = self.fa
 
         states    = '#states\n' + '\n'.join([e for e in fa.states])
@@ -476,7 +754,10 @@ class Automaton:
             automaton=f'{states}\n{initials}\n{accepting}\n{alphabet}\n{transitions}'
         )
 
-    def stringifyStates(self):
+
+    # PRIVATE METHODS
+
+    def _stringifyStates(self):
         """Convert states of the automaton to string."""
         def stringify(state):
             if type(state) is str:
@@ -500,5 +781,4 @@ class Automaton:
         self.fa = fsm.fsm(
             alphabet=alphabet, states = states, initial=initial, finals=finals, map=map
         )
-
 
