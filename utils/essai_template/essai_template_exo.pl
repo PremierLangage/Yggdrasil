@@ -38,12 +38,12 @@ d = mygroup.labels["limite"]
 e = mygroup.labels["fraction"]
 f = mygroup.labels["determinant"]
 g = mygroup._matches
-a.css='drag'
-b.css='drag'
-c.css = 'drop'
-d.css = 'drop'
-e.css = 'drop'
-f.css = 'drop'
+a.css='drop'
+b.css='drop'
+c.css = 'drag'
+d.css = 'drag'
+e.css = 'drag'
+f.css = 'drag'
 ==
 
 text==
