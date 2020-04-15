@@ -26,16 +26,9 @@ class Automaton:
     @property
     def states(self):
         """
-        Return a set of the final states of the automaton. e.g. ['S0', 'S1', 'S2', 'S3', 'S4']
+        Return a set of the final states of the automaton. e.g. ['S0', S3', 'S4']
         """
         return self.fa.states
-
-    @property
-    def initial(self):
-        """
-        Gets the initial state of the automaton.
-        """
-        return self.fa.initial
 
     @property
     def alphabet(self):
@@ -50,6 +43,13 @@ class Automaton:
         Return a set of the final states of the automaton. e.g. ['S3', 'S4']
         """
         return self.fa.finals
+
+    @property
+    def initial(self):
+        """
+        Gets the initial state of the automaton.
+        """
+        return self.fa.initial
 
     @property
     def transitions(self):
