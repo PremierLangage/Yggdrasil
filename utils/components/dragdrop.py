@@ -169,7 +169,7 @@ class DragDropGroup():
                 drop.css = "drop success"
             else:
                 num_wrong +=1
-                drop.css += "drop error"           
+                drop.css = "drop error"           
    
         possible_labels = {label for (label, drop) in self._matches} # set comprehension, no duplicates
         possible_drops = {drop for (label, drop) in self._matches} # set comprehension, no duplicates
