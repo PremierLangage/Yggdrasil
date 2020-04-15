@@ -71,7 +71,7 @@ extracss == #|html|
         #padding: 1em;
         min-width: 4em;
         width:inherit;
-        height:inherit;
+        height:12em;
         }
 </style>
 ==
