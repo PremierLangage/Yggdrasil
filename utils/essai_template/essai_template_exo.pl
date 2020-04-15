@@ -81,13 +81,9 @@ extracss == #|html|
     }
 
     .drop{
-     display: inline-flex;
     width: 10em;
 	height: 10em;
 	margin : 6px;
-    vertical-align:top;
-	justify-content: center;
-	align-items: center;
     }
     .success{
     background-color:lightGreen;
