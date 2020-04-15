@@ -15,6 +15,7 @@ generate== #|py|
 from automaton import Automaton
 
 automaton = Automaton.parse(
+## mettre en json
 """#states
 s0
 s1
