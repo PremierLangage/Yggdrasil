@@ -15,3 +15,11 @@
 #
 #                  http://www.gnu.org/licenses/
 #*****************************************************************************
+
+def display_as_shell_this(command, output):
+    r"""
+    Return a nice shell looking of the command and its output in html/css
+    """
+    s = ":~$> " + command.replace('\n', '\ <br />')
+    s += output.replace('\n', ' <br />')
+    return s
