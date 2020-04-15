@@ -41,7 +41,7 @@ text==
 form==
 {{ editor|component }}
 
-<input name="user_hack" type="hidden" value="{{ user }}">
+<input id="user_hack" name="user_hack" type="hidden" value="{{ user }}">
 
 ==
 
