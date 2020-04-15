@@ -67,7 +67,13 @@ grade=mygroup.eval(grading_function = right_minus_wrong)
 
 extracss == #|html| 
 <style>
-    .myclass{
+    .drag{
+        #padding: 1em;
+        min-width: 4em;
+        width:auto;
+        height:5em;
+        }
+    .drop{
         #padding: 1em;
         min-width: 4em;
         width:auto;
