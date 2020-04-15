@@ -48,7 +48,7 @@ f = open("student_script.sh", "w")
 f.write(editor.code)
 f.close()
 
-sp = subprocess.run(["/bin/bash", "student_script.sh"], stdout=subprocess.PIPE)
+sp = subprocess.run(["/bin/bash", "student_script.sh"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 spout = sp.stdout.decode()
 
 text = "<pre>" + spout.replace('\n', '<br />') + "</pre>"
