@@ -32,7 +32,7 @@ s1:a>s1
 s1:b>s2
 """)
 
-alphabet = "bla"
+alphabet = "a,b"
 message = "bli"
 # peut-on utiliser la syntaxe du viewer ?
 ==
