@@ -79,15 +79,14 @@ extracss == #|html|
     }
 
     .drop{
-	display:flex;
-    position:absolute;
-    width: 6em;
-	height: 4em;
+    display: inline-flex;
+    border:none;
 	margin : 6px;
-    overflow:hidden;
+    vertical-align:top;
 	justify-content: center;
 	align-items: center;
-	text-align:center;
+    width: 6em;
+	height: 4em;
     }
     .success{
     background-color:lightGreen;
