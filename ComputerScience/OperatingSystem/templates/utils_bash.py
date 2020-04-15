@@ -21,7 +21,7 @@ def display_as_shell_this(command, output):
     Return a nice shell looking of the command and its output in html/css
     """
     # making the div for terminal screen
-    s = '<div style="background-color: black; '
+    s = '<br /><div style="background-color: black; '
     s += 'background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);'
     s += ' height: 100vh; color: white; font: 1.3rem Inconsolata, monospace; '
     s += 'border-radius: 15px; padding: 5px;" >'
