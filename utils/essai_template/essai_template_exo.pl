@@ -82,6 +82,7 @@ extracss == #|html|
     width: 6em;
 	height: 4em;
 	margin : 6px;
+    overflow:hidden;
     }
     .success{
     background-color:lightGreen;
