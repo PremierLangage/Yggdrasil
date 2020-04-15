@@ -76,6 +76,7 @@ extracss == #|html|
 <style>
     .drag{
      display: inline-flex;
+     color:inherit;
     width: inherit;
 	height: inherit;
 	margin : 6px;
