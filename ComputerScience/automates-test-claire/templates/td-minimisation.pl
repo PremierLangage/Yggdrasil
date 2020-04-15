@@ -1,5 +1,5 @@
 ############### A FINIR #########################
-extends = exo-egalite-auto.pl
+extends = editor.pl
 
 
 maxattempt = 5
@@ -32,6 +32,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution
 </p>
 {% endif %}
 ==
+
 
 
 
