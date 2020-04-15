@@ -92,12 +92,6 @@ extracss == #|html|
 	align-items: center;
     background-color:burlywood;
     }
-    .success-state{
-    background-color:lightGreen;
-    }
-    .error-state{
-    background-color:lightPink;
-    }
 </style>
 ==
 
