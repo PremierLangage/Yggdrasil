@@ -68,20 +68,14 @@ mygroup.drops = {"1": a, "tiers": b}
 mygroup._matches = g
 
 grade=mygroup.eval(grading_function = right_minus_wrong) 
-a.css='success-state success'
-b.css='error-state'
 ==
 
 extracss == #|html| 
 <style>
     .drag{
-    display: inline-flex;
     width: inherit;
 	height: inherit;
 	margin : 6px;
-    vertical-align:top;
-	justify-content: center;
-	align-items: center;
     }
 
     .drop{
