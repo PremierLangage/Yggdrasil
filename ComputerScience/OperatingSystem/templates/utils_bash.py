@@ -35,11 +35,11 @@ def display_as_shell_this(command, output, user=None, errout=""):
         s += user+"@PLaTon"
     s += ":~$> " + command.replace('\n', ' \ <br />... ')
     s += "<br />"
-    s += output.replace('\n', ' <br />')
     if len(errout) > 0:
         s += '<span style="color: red; text-shadow: 0 0 5px #C80000;">'
         s += errout.replace('\n', ' <br />')
         s += '</span>'
+    s += output.replace('\n', ' <br />')
 
     s += "</output></pre></div>"
     return s
