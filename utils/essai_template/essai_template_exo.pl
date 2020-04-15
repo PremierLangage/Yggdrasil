@@ -68,8 +68,6 @@ mygroup.drops = {"1": a, "tiers": b}
 mygroup._matches = g
 
 grade=mygroup.eval(grading_function = right_minus_wrong) 
-a.css='success'
-b.css='error'
 ==
 
 extracss == #|html| 
