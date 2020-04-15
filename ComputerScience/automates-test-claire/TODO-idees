@@ -21,7 +21,7 @@ J'ai changé réponse acceptable
 dans le multistep où il faut dessiner un automate, est-ce une comparaison d'égalité ou d'équivalence??
 
 =======
-Dans editor. pl j'ai ajouté des consignes pour dessiner l'autoamtes
+Dans editor. pl j'ai ajouté des consignes pour dessiner l'automates
 
 ========
 Questions sur les numéros d'activées -- ok réglé
@@ -55,6 +55,7 @@ Exercices à concevoir:
     automate minimal et simple vérification
     étapes de l'algo de Moore en donnant les classes d'équivalences à chaque niveau
 + QCM reg/non-reg
+
 
 
 
