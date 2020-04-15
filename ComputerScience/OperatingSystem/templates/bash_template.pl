@@ -53,7 +53,7 @@ f = open("student_script.sh", "w")
 f.write(editor.code)
 f.close()
 
-sp = subprocess.run(["/bin/bash", "student_script.sh"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+sp = subprocess.run(["/bin/bash", "student_script.sh"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=7)
 spout = sp.stdout.decode()
 errout = sp.stderr.decode()
 returncode = sp.returncode
