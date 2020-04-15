@@ -16,7 +16,7 @@
 #                  http://www.gnu.org/licenses/
 #*****************************************************************************
 
-def display_as_shell_this(command, output, user=None):
+def display_as_shell_this(command, output, user=None, errout=""):
     r"""
     Return a nice shell looking of the command and its output in html/css
     """
@@ -36,7 +36,10 @@ def display_as_shell_this(command, output, user=None):
     s += ":~$> " + command.replace('\n', ' \ <br />... ')
     s += "<br />"
     s += output.replace('\n', ' <br />')
+    if len(errout) > 0:
+        s += '<span style="color: red; ">'
+        s += errout.replace('\n', ' <br />')
+        s += '</span>'
 
     s += "</output></pre></div>"
     return s
-
