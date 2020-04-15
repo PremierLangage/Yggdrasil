@@ -38,6 +38,7 @@ d = mygroup.labels["limite"]
 e = mygroup.labels["fraction"]
 f = mygroup.labels["determinant"]
 g = mygroup._matches
+a.css = 'myclass'
 ==
 
 text==
@@ -69,6 +70,8 @@ extracss == #|html|
     .myclass{
         #padding: 1em;
         min-width: 4em;
+        width:inherit;
+        height:inherit;
         }
 </style>
 ==
