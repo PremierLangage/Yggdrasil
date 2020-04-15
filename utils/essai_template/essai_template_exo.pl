@@ -75,8 +75,7 @@ b.css='error'
 extracss == #|html| 
 <style>
     .drag{
-     display: inline-flex;
-    background:inherit;
+    display: inline-flex;
     width: inherit;
 	height: inherit;
 	margin : 6px;
@@ -93,6 +92,7 @@ extracss == #|html|
     vertical-align:top;
 	justify-content: center;
 	align-items: center;
+    background:'lightgreen';
     }
     .success{
     background:'lightgreen';
