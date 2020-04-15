@@ -14,7 +14,7 @@ generate== #|py|
 #    la construction de l'automate pour tester la réponse
 from automaton import Automaton
 
-automaton = Automaton.parse(
+automaton = Automaton.from_editor(
 """#states
 s0
 s1
