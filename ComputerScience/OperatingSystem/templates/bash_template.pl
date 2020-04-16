@@ -76,7 +76,7 @@ else:
         feedback = "Bravo, votre code fait le travail !"
         grade = (100, frame_message(feedback, "ok"))
     else:
-        feedback = "Désolé, votre code ne produit pas le résultat attendu."
+        feedback = "Désolé, votre code ne produit pas le résultat attendu. Modifiez votre commande."
         grade = (0, frame_message(feedback, "error"))
 
 ==
