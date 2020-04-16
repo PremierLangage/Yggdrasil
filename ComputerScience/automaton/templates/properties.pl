@@ -27,7 +27,7 @@ properties = [
 evaluator== #|py|
 from automaton import Automaton
 anim1 = anim2 = False
-infos, error = Automaton.informations(editor)
+infos, error = Automaton.editor_properties(editor)
 if not error:
     for e in editor.automaton['alphabet']:
         if e not in ['a', 'b']:
@@ -84,6 +84,7 @@ Donnez un exemple d'automate respectant les propriétés suivantes:
 form ==
 {{ editor|component }}
 ==
+
 
 
 
