@@ -121,14 +121,14 @@ class Generator:
         transitions = {}
 
         for state in sorted(automaton.states):
-            row = []
+            columns = []
             for symb in sorted(automaton.alphabet):
                 name = transition_name(state, symb)
                 transitions[name] = ''
                 textfield = Input(value='')
                 context[name]= textfield
-                row.append(textfield)
-            rows[state] = row
+                columns.append(textfield)
+            rows[state] = columns
 
         for fromState, toStates in automaton.transitions.items():
             for symb, toState in toStates.items():
