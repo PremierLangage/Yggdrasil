@@ -1,4 +1,4 @@
-#! linter:require: generate
+#! linter:require:generate
 extends = /ComputerScience/automaton/templates/base.pl
 
 maxattempt = 3
@@ -7,7 +7,7 @@ maxattempt = 3
 #* DD
 #*
 #*
-generate % null
+#generate % null
 
 title= 
 text= 
