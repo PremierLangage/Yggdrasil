@@ -39,6 +39,7 @@ elif matched is True:
     score, step = 100 / maxSteps, step + 1
     grade = (score , ' ')
 else:
+    step += 1
     grade = (score , '<p class="error-state">Votre automate ne correspond à la réponse attendue</<p>')
 ==
 
