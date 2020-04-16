@@ -8,7 +8,7 @@ from generator import Generator
 
 alphabet, suffix, expected = Generator.suffix(
     3, # length of the alphabet
-    3
+    3 # max length of the suffix
 )
 ==
 
