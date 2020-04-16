@@ -43,6 +43,7 @@ generate== #|py|
 
 # REGEX NOTATION
 viewer = 'ab(a|b|c)*'
+raise Exception(Automaton.accepts(viewer, "ab"))
 ==
 
 title= Lecture d'automates
@@ -55,5 +56,6 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 </p>
 {% endif %}
 ==
+
 
 
