@@ -10,19 +10,17 @@ from generator import Generator
 
 mode = random.choice([-1, 0, 1])
 
-messages = {
+messages = 
+
+message = {
     -1: 'au moins',
     0: 'exactement',
     1: 'au plus'
-}
+}[mode]
 
-message = messages[mode]
-
-
-# counting( nb lettres alphabet, nb occurences demandées , mode)
 alphabet, letter, n, expected = Generator.counting(
     3, # length of the alphabet
-    4, # number of o
+    4, # max number of occurence of 'letter' in the automaton
     mode
 )
 ==
