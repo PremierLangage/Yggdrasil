@@ -35,7 +35,7 @@ score = -1
 attempt = 0
 maxattempt = int(maxattempt)
 viewer = Automaton.viewer(viewer)
-checkbox, answers = Generator.multi_choice_question(automaton)
+checkbox, answers = Generator.multi_choice_question(viewer)
 ==
 
 evaluator== #|py|
