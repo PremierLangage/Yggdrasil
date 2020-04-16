@@ -11,7 +11,7 @@ alphabet, factor, viewer = Generator.factor(
 )
 ==
 
-title = Automates Facteurs
+title = Facteur
 text ==
 Pour cette question, on considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage **L1** = {{ '{' }}  mots ayant **{{ factor }}** en facteur {{ '}' }} <br>
@@ -21,6 +21,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 </p>
 {% endif %}
 ==
+
 
 
 
