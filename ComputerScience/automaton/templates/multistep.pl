@@ -27,7 +27,7 @@ table = Generator.transition_table(automaton, globals())
 # RANDOM MULTI CHOICE QUESTION FOR MATCHING WORDS
 checkbox, words = Generator.multichoice_question(automaton)
 
-score, step, maxSteps = 0, 1, 3
+score, step, maxSteps = 0, 2, 3
 ==
 
 # STEP 1 EVAL SCRIPT
