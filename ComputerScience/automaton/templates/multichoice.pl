@@ -42,21 +42,23 @@ checkbox, answers = Generator.multi_choice_question(automaton)
 ==
 
 evaluator== #|py|
-
 from evaluator import Evaluator
 
-score, max_score = Evaluator.eval_multi_choice_question(
-    checkbox,
-    answers,
-    withanswer=attempt >= maxattempt
-)
-attempt += 1
-checkbox.disabled = True
-
-if score == max_score:
-    grade = (100, '<p class="success-state">Bonne réponse</p>')
+if attempt >= maxattempt: # timeout
+    grade = (score, feedback_timeout)
 else:
-    grade = ((score / max_score) * 100, f"<p class='warning-state'>{score} / {max_score}</p>")
+    score, max_score = Evaluator.eval_multi_choice_question(
+        checkbox,
+        answers,
+        withanswer=attempt >= maxattempt
+    )
+    attempt += 1
+    checkbox.disabled = True
+
+    if score == max_score:
+        grade = (100, '<p class="success-state">Bonne réponse</p>')
+    else:
+        grade = ((score / max_score) * 100, f"<p class='warning-state'>{score} / {max_score}</p>")
 ==
 
 
