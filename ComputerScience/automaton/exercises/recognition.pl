@@ -2,14 +2,12 @@ extends = ../templates/base.pl
 
 maxattempt = 3
 
-before== #|py|
+generate== #|py|
 
 from automaton import Automaton
 from generator import Generator
 
-automaton = Automaton.rand(4, 3, 3)
-viewer = Automaton.viewer(automaton)
-checkbox, answers = Generator.multi_choice_question(automaton)
+viewer = Automaton.rand(4, 3, 3)
 ==
 
 evaluator== #|py|
@@ -39,4 +37,5 @@ form ==
 {{ viewer|component }}
 {{ checkbox|component }}
 ==
+
 
