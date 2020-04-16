@@ -9,14 +9,14 @@ from generator import Generator
 
 automaton = Automaton.rand(4, 3, 3)
 viewer = Automaton.viewer(automaton)
-checkbox, answers = Generator.stringsInLanguageMCQ(automaton)
+checkbox, answers = Generator.multi_choice_question(automaton)
 ==
 
 evaluator== #|py|
 
 from evaluator import Evaluator
 
-right, total = Evaluator.evalStringsInLanguageMCQ(
+right, total = Evaluator.eval_multi_choice_question(
     checkbox,
     answers,
     withanswer=True
@@ -39,5 +39,6 @@ form ==
 {{ viewer|component }}
 {{ checkbox|component }}
 ==
+
 
 
