@@ -64,12 +64,10 @@ form_instructions== #|html|
 ==
 
 form_success== #|html|
-{% if score == 100  %}
-    <p class="success-state">Bravo l'automate que vous avez construit est une bonne réponse.</p>
-    {% if not deterministic %}
-         <p class="success-state">L'automate déterministe suivant était aussi une bonne réponse :</p>
-        {{ viewer|component }}
-    {% endif %}
+<p class="success-state">Bravo l'automate que vous avez construit est une bonne réponse.</p>
+{% if not deterministic %}
+        <p class="success-state">L'automate déterministe suivant était aussi une bonne réponse :</p>
+    {{ viewer|component }}
 {% endif %}
 == 
 
@@ -81,7 +79,9 @@ form== #|html|
 {% endif %}
 
 <!-- RENDER AUTOMATON VIEWER IF SCORE IS 100 -->
+{% if score == 100  %}
 {{ form_success }}
+{% endif %}
 
 <!-- RENDER THE AUTOMATON EDITOR -->
 {{ editor|component }}
