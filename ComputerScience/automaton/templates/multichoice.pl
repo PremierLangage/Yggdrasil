@@ -43,13 +43,14 @@ evaluator== #|py|
 from evaluator import Evaluator
 
 attempt += 1
+timout = attempt >= maxattempt
 score, max_score = Evaluator.eval_multi_choice_question(
     checkbox,
     answers,
-    withanswer=attempt >= maxattempt
+    withanswer=timeout
 )
 
-if attempt >= maxattempt and score != max_score: # timeout
+if timeout and score != max_score: # timeout
     checkbox.disabled = True
     grade = (score, feedback_timeout)
 else:
