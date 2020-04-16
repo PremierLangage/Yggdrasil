@@ -12,9 +12,12 @@ before== #|py|
 
 from automaton import Automaton
 from generator import Generator
+if 'generate' not in globals():
+    raise Exception('You must define a script "generate"')
 
-automaton = Automaton.rand(4, 3, 3)
-viewer = Automaton.viewer(automaton)
+exec(generate)
+
+viewer = Automaton.viewer(viewer)
 checkbox, answers = Generator.multi_choice_question(automaton)
 ==
 
