@@ -11,7 +11,11 @@ before== #|py|
 import random
 from automaton import Automaton
 
+# create an empty automaton editor 
 editor = Automaton.editor()
+
+# a list of properties to check on the automaton of the student.
+
 properties = [
     { "name": "complete", "error": False, "verify": random.random() < .5, "label": "déterministe" },
     { "name": "deterministic", "error": False ,"verify": random.random() < .5, "label": "complet" },
