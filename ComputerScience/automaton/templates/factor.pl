@@ -5,6 +5,7 @@ maxattempt = 5
 
 generate== #|py|
 from generator import Generator
+
 alphabet, factor, expected = Generator.factor(
     3,
     3
