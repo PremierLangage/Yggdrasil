@@ -1,7 +1,7 @@
 
-extends=/model/progpython.pl
+extends=./beurk.pl
 
-
+title= Controleur de rendu   
 @ /grader/evaluator.py [grader.py]
 
 evaluator==
@@ -14,3 +14,4 @@ if editor.code=="":
 else:
     grade=(100," tout c'est bien passé")
 ==
+
