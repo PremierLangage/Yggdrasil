@@ -15,7 +15,7 @@ message = {
     1: 'au plus'
 }[mode]
 
-alphabet, letter, n, expected = Generator.counting(
+alphabet, letter, occurences, expected = Generator.counting(
     3, # length of the alphabet
     4, # max length of the word to generate
     mode
@@ -25,7 +25,7 @@ alphabet, letter, n, expected = Generator.counting(
 title = Automates Occurences
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
-Donnez un automate reconnaissant le langage **L1** = {{ '{' }} mots ayant {{ message }} **{{ n }}** occurrences de la lettre **{{ letter }}** {{ '}' }} <br>
+Donnez un automate reconnaissant le langage **L1** = {{ '{' }} mots ayant {{ message }} **{{ occurences }}** occurrences de la lettre **{{ letter }}** {{ '}' }} <br>
 {% if attempt < maxattempt and score != 100 %}
 <p class="warning-state">
 Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solution !
