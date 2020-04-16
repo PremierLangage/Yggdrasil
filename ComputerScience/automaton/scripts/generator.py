@@ -128,8 +128,8 @@ class Generator:
                 name = transition_name(state, symb)
                 transitions[name] = ''
                 textinput = Input(value='')
-                context[name]= textinput
-                columns.append(textinput)
+                context[name] = textinput
+                columns.append(context[name])
             rows[state] = columns
 
         for fromState, toStates in automaton.transitions.items():
@@ -142,6 +142,7 @@ class Generator:
             "rows": rows,
             "transitions": transitions
         }
+
 
 
 
