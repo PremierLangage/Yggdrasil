@@ -65,7 +65,7 @@ class Generator:
     @staticmethod
     def sequence(alphabet_max_length=2, word_max_length=4):
         """
-        Return (alphabet, sequence)
+        Return (alphabet, sequence) where alphabet is a 
         """
         alphabet = Generator.alphabet(alphabet_max_length)
         word_length = random.randint(2, word_max_length)
