@@ -146,6 +146,8 @@ form==#|html|
 {% else %}
 <p class="success-state">Bravo vous avez terminé la série de questions !</p>
 {% endif %}
+
+
 <script>
     function onReadyPL(nodes) {
         const step = {{ step }};
