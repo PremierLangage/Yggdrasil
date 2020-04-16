@@ -37,8 +37,8 @@ class Automaton:
         b
         c
         #transitions
-        S0:a>s1
-        S1:b>s2
+        S0:a>S1
+        S1:b>S2
         S2:a,b,c>S2
     ''')
 
@@ -1004,6 +1004,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
