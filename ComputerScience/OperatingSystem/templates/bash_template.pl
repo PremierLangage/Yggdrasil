@@ -28,9 +28,8 @@ editor.code ==
 
 ==
 
-before==
-expected_stdout = ""
-==
+#! linter:require:expected_stdout::string
+#! linter:require:title::string
 
 title=bash code template (titre à surcharger!)
 
