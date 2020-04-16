@@ -19,8 +19,8 @@ right, total = Evaluator.evalStringsInLanguageMCQ(
     matchingWords,
     withanswer=True
 )
-
 checkbox.disabled = True
+
 if right == total:
     grade = (100, '<p class="success-state">Bonne réponse</p>')
 else:
