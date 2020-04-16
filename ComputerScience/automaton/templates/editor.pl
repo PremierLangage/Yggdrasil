@@ -43,8 +43,17 @@ generate % null
 
 feedback_match = 
 feedback_nomatch = <p class="error-state">L\'automate que vous avez construit ne correspond pas à une réponse attendue.</p>
-feedback_timeout = '<p class="warning-state">L\'automate déterministe suivant était une réponse possible à cette question.</p>'
+feedback_timeout = <p class="warning-state">L\'automate déterministe suivant était une réponse possible à cette question.</p>
 feedback_syntax_error = <p class="warning-state">{0}</p>
+
+
+form_success== #|html|
+<p class="success-state">Bravo l'automate que vous avez construit est une bonne réponse.</p>
+{% if not deterministic %}
+    <p class="success-state">L'automate déterministe suivant était aussi une bonne réponse :</p>
+    {{ viewer|component }}
+{% endif %}
+== 
 
 form_instructions== #|html|
 <p>
@@ -61,21 +70,11 @@ form_instructions== #|html|
 </p>
 ==
 
-form_success== #|html|
-<p class="success-state">Bravo l'automate que vous avez construit est une bonne réponse.</p>
-{% if not deterministic %}
-    <p class="success-state">L'automate déterministe suivant était aussi une bonne réponse :</p>
-    {{ viewer|component }}
-{% endif %}
-== 
-
-
 # HTML FORM
- 
+
 title= PLEASE OVERRIDE THE KEY **title=** TO CHANGE THIS TEXT
 text= PLEASE OVERRIDE THE KEY **text=** TO CHANGE THIS TEXT
 form== #|html|
-
 <!-- RENDER AUTOMATON VIEWER IF MAX ATTEMPT IS REACHED -->
 {% if attempt >= maxattempt %}
 {{ viewer|component }}
