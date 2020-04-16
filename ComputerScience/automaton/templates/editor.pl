@@ -16,24 +16,15 @@ maxattempt = 3
 #*  **alphabet** => the alphabet of the automaton. e.g. ["a", "b"]
 #*
 #*  Example
-#*
-#*  generate==
 #*  ```javascript
-#* function fancyAlert(arg) {
-#*   if(arg) {
-#*     $.facebox({div:'#foo'})
-#*   }
-#* }
-#*```
+#*  generate==
+#* 
 #*  alphabet = ['a', b']
 #*  expected = '''
 #*  
 #*  '''
-#*
-#*
-#*
 #*  ==
-#*  
+#*  ```
 #*
 generate % null
 
