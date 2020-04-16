@@ -142,7 +142,6 @@ else:
     if  attempt >= maxattempt and (error or not match): # error or no match after timeout
         grade = (score, feedback_timeout)
     elif error:
-        raise Exception(error)
         grade = (-1, feedback_syntax_error.format(error))
     elif match is True:
         score = 100
