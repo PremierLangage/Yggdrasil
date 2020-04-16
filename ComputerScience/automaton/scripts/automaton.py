@@ -687,6 +687,7 @@ class Automaton:
 
     @staticmethod
     def accepts(obj, word: str):
+        word = word.replace('ε', '')
         return Automaton.parse(obj).state_machine.accepts(word)
 
     # INSTANCE METHODS
