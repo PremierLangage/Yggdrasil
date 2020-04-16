@@ -6,6 +6,7 @@ generate== #|py|
 max_symbs = 3
 max_prefix_length = 3
 alphabet, prefix, viewer = Generator.prefix(max_symbs, max_prefix_length)
+alphabet = ', '.join(list(alphabet))
 ==
 
 title = Préfixe
@@ -18,4 +19,5 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 </p>
 {% endif %}
 ==
+
 
