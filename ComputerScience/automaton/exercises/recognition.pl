@@ -6,6 +6,8 @@ generate== #|py|
 from automaton import Automaton
 from generator import Generator
 
+# YOU CAN USE ANY OF THE FOLLOWING NOTATIONS HERE
+
 # STRING NOTATION
 #viewer = '''
 #    #states
@@ -44,7 +46,6 @@ from generator import Generator
 
 # REGEX NOTATION
 viewer = 'ab(a|b|c)*'
-
 ==
 
 title= Lecture d'automates
