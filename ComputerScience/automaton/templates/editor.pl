@@ -48,6 +48,64 @@ feedback_nomatch = <p class="error-state">L\'automate que vous avez construit ne
 feedback_timeout = '<p class="warning-state">L\'automate déterministe suivant était une réponse possible à cette question.</p>'
 feedback_syntax_error = <p class="warning-state">{0}</p>
 
+form_instructions== #|html|
+<p>
+    <ul>
+        <li> Pour créer un nouvel état, double clic gauche. Utilisez les boutons pour changer le type de votre état.<br>
+            <i> Ne pas renommer les états - il y a un bug</i>
+        </li>
+        <li>
+            Pour ajouter une transition cliquer sur le point orange de l'état de départ
+            et tirer votre transition jusqu'à l'état d'arrivée.
+            Utilisez ensuite "changer Transition" pour ajuster la lettre étiquettant de la transition
+        </li>
+    </ul>
+</p>
+==
+
+form_success== #|html|
+{% if score == 100  %}
+    <p class="success-state">Bravo l'automate que vous avez construit est une bonne réponse.</p>
+    {% if not deterministic %}
+         <p class="success-state">L'automate déterministe suivant était aussi une bonne réponse :</p>
+        {{ viewer|component }}
+    {% endif %}
+{% endif %}
+== 
+
+form== #|html|
+
+<!-- RENDER AUTOMATON VIEWER IF MAX ATTEMPT IS REACHED -->
+{% if attempt >= maxattempt %}
+{{ viewer|component }}
+{% endif %}
+
+<!-- RENDER AUTOMATON VIEWER IF SCORE IS 100 -->
+{{ form_success }}
+
+<!-- RENDER THE AUTOMATON EDITOR -->
+{{ editor|component }}
+
+<br>
+
+{{ form_instructions }}
+
+<script>
+    /**
+    * This function is called by the platform once the exercice is loaded.
+    * @param nodes an object containing a reference to the nodes of the page (title, text, form, actions, submit...)
+    */
+    function onReadyPL(nodes) {
+        const submit = nodes.submit; // a reference to the submit button
+        // hide submit button if needed.
+        submit.attr("disabled", ({{ attempt }} >= {{ maxattempt }}) || {{ score }} == 100);
+    }
+</script>
+==
+
+
+
+
 before== #|py|
 
 from automaton import Automaton
@@ -91,57 +149,4 @@ else:
         score = 0
         grade=(score, feedback_nomatch)
 ==
-
-
-form_instructions== #|html|
-<p>
-    <ul>
-        <li> Pour créer un nouvel état, double clic gauche. Utilisez les boutons pour changer le type de votre état.<br>
-            <i> Ne pas renommer les états - il y a un bug</i>
-        </li>
-        <li>
-            Pour ajouter une transition cliquer sur le point orange de l'état de départ
-            et tirer votre transition jusqu'à l'état d'arrivée.
-            Utilisez ensuite "changer Transition" pour ajuster la lettre étiquettant de la transition
-        </li>
-    </ul>
-</p>
-==
-
-form== #|html|
-
-<!-- RENDER AUTOMATON VIEWER IF MAX ATTEMPT IS REACHED -->
-{% if attempt >= maxattempt %}
-{{ viewer|component }}
-{% endif %}
-
-<!-- RENDER AUTOMATON VIEWER IF SCORE IS 100 -->
-{% if score == 100  %}
-    <p class="success-state">Bravo l'automate que vous avez construit est une bonne réponse.</p>
-    {% if not deterministic %}
-         <p class="success-state">L'automate déterministe suivant était aussi une bonne réponse :</p>
-        {{ viewer|component }}
-    {% endif %}
-{% endif %}
-
-<!-- RENDER THE AUTOMATON EDITOR -->
-{{ editor|component }}
-
-<br>
-
-{{ form_instructions }}
-
-<script>
-    /**
-    * This function is called by the platform once the exercice is loaded.
-    * @param nodes an object containing a reference to the nodes of the page (title, text, form, actions, submit...)
-    */
-    function onReadyPL(nodes) {
-        const submit = nodes.submit; // a reference to the submit button
-        // hide submit button if needed.
-        submit.attr("disabled", ({{ attempt }} >= {{ maxattempt }}) || {{ score }} == 100);
-    }
-</script>
-==
-
 
