@@ -99,6 +99,7 @@ if __name__ == "__main__":
         dic['text'] = """Vous avez dépassé le nombre de tentatives autorisées pour ce quiz."""
         dic['internals']['buttons'] = []
     else:
+        dic['text'] = """Vous avez dépassé le nombre de tentatives autorisées pour ce quiz."""
         dic['scores'] = []
 
     with open(output_json, "w+") as f:
