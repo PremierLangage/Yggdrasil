@@ -43,7 +43,7 @@ generate== #|py|
 
 # REGEX NOTATION
 viewer = '(a|b|c)*'
-raise Exception(Automaton.accepts(viewer, "ε"))
+
 ==
 
 title= Lecture d'automates
