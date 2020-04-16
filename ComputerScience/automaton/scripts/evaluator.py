@@ -43,23 +43,23 @@ class Evaluator:
         Eval script of multi choice question.
         """
         
-        nb_ok = 0
-        total_ok = 0
+        score = 0
+        max_score = 0
         for item in checkbox.items:
             item['css'] = ''
             checked = item['checked']
             content = item['content']
             if content in answers:
-                total_ok += 1
+                max_score += 1
                 item['css'] = 'success-border'
                 if checked:
-                    nb_ok += 1
+                    score += 1
                     item['css'] = 'success-border'
                 elif withanswer:
                     item['css'] = 'animated pulse infinite'
             elif checked:
                 item['css'] = 'error-border'
-        return nb_ok, total_ok
+        return score, max_score
 
 
 
