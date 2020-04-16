@@ -6,8 +6,11 @@ extends = base.pl
 
 maxattempt = 3
 #*
+#*  This script must define the following variables:
+#*   
+#*  **automaton** => an automaton in one of the accepted formats (string, regex, object...)
+#*               This
 #*
-#* DD
 #*
 #*
 generate % null
@@ -16,7 +19,10 @@ title=
 text= 
 
 before== #|py|
+
 from automaton import Automaton
+
+
 score = -1
 attempt = 0
 maxattempt = int(maxattempt)
