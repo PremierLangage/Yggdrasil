@@ -43,6 +43,8 @@ generate % null
 title= 
 text= 
 
+feedback_nomatch = <p class="error-state">L\'automate que vous avez construit ne correspond pas à une réponse attendue.</p>
+
 before== #|py|
 
 from automaton import Automaton
@@ -73,7 +75,6 @@ if attempt >= maxattempt:
 else:
     attempt += 1
     match, error = Automaton.compare(viewer, editor)
-    raise Exception('...')
     if (error or not match) and attempt >= maxattempt:
         grade = (score, '<p class="warning-state">L\'automate déterministe suivant était une réponse possible à cette question.</p>')
     elif error:
@@ -85,7 +86,7 @@ else:
         grade = (score, ' ')
     else:
         score = 0
-        grade=(score, '<p class="error-state">L\'automate que vous avez construit ne correspond pas à une réponse attendue.</<p>')
+        grade=(score, feedback_nomatch)
 ==
 
 form== #|html|
