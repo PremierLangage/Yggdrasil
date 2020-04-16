@@ -80,7 +80,7 @@ form== #|html|
 {{ viewer|component }}
 {% endif %}
 
-<!-- SUCCESSS VIEW -->
+<!-- SUCCESS VIEW -->
 {% if score == 100  %}
 {{ form_success }}
 {% endif %}
