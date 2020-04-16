@@ -118,8 +118,8 @@ form== #|html|
 before== #|py|
 import random
 
-from generator import Generator
 from automaton import Automaton
+from generator import Generator
 
 score = -1
 attempt = 0
