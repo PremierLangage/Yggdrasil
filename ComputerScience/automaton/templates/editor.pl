@@ -17,14 +17,31 @@ maxattempt = 3
 #*
 #*  Example
 #*```javascript
-#*generate==
-#* 
-#*alphabet = ['a', b']
-#*expected = '''
-#*  
-#*'''
-#*==
-#*```
+#*  generate==
+#*
+#*  alphabet = ['a', b']
+#*  expected = '''
+#*      #states
+#*       A
+#*       B
+#*       C
+#*       #initials
+#*       A
+#*       #accepting
+#*       A
+#*       #alphabet
+#*       a
+#*       b
+#*       #transitions
+#*       A:b>C
+#*       A:a>B
+#*       C:a>A
+#*       C:b>B
+#*       B:b>A
+#*       B:a>B
+#*  '''
+#*  ==
+#*  ```
 #*
 generate % null
 
