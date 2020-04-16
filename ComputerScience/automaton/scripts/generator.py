@@ -126,7 +126,7 @@ class Generator:
     @staticmethod
     def sequence(max_symbs=2, length=4):
         """
-        Creates a random word and alphabet.
+        Generates a random word and alphabet.
         :param length max length of the generated word.
         :param max_symbs max length of the generated alphabet.
         :return (alphabet: str, word: str)
@@ -168,6 +168,9 @@ class Generator:
 
     @staticmethod
     def multi_choice_question(automaton: Automaton, maxright=3, maxwrong=3):
+        """
+
+        """
         matchingWords = automaton.random_recognized_strings(maxright)
         checkbox = CheckboxGroup()
         checkbox.items = []
