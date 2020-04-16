@@ -1,4 +1,4 @@
-extends = ../templates/base.pl
+extends = base.pl
 
 title= 
 text= 
