@@ -1,7 +1,6 @@
 extends = /model/AMC_TXT.pl
 @ /builder/beforestep2.py [builder.py]
 
-settings.oneshot = true
 settings.allow_reroll = true
 
 
