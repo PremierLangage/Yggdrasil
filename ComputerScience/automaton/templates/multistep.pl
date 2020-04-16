@@ -129,7 +129,9 @@ form==#|html|
         <th>{{ row }}</th>
         {% endfor %}
     </tr>
-  
+    {% for state, rows in table['rows'].items() %}
+   
+    {% endfor %}
 </table>
 
 {% elif step == 3 %} <!-- MULTI CHOICE QUESTION STEP -->
