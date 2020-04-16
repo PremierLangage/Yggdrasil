@@ -9,7 +9,10 @@ maxattempt = 3
 #*  This script must define the following variables:
 #*   
 #*  **automaton** => an automaton in one of the accepted formats (string, regex, object...)
-#*               This
+#*               This automaton is the one that will be presented to the student. 
+#*
+#*  **alphabet** => the alphabet of the automaton. e.g. ["a", "b"]
+#*
 #*
 #*
 #*
@@ -21,7 +24,6 @@ text=
 before== #|py|
 
 from automaton import Automaton
-
 
 score = -1
 attempt = 0
