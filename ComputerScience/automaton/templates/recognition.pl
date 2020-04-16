@@ -1,7 +1,4 @@
-
 extends = ../templates/base.pl
-
-maxattempt = 3
 
 title= 
 text= 
