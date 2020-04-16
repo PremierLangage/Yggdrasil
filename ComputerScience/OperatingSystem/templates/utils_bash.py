@@ -74,7 +74,14 @@ def frame_message(message, status=None):
     frame the message with colors
     """
     s = ""
-    s += '<div style="background-color: green; '
+    if status == "ok":
+        s += '<div style="background-color: #FFA54C; '
+    elif status == "warning":
+        s += '<div style="background-color: #FFA54C; '
+    elif status == "error"
+        s += '<div style="background-color: #FFA54C; '
+    else:
+        s += '<div style="background-color: white; '
     s += 'border-radius: 15px; padding: 10px;" >'
     s += message
     s += "</div>"
