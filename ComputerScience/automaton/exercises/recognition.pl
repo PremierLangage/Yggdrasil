@@ -3,9 +3,6 @@ extends = ../templates/multichoice.pl
 maxattempt = 3
 
 generate== #|py|
-from automaton import Automaton
-from generator import Generator
-
 # YOU CAN USE ANY OF THE FOLLOWING NOTATIONS HERE
 
 # STRING NOTATION
@@ -53,4 +50,5 @@ title= Lecture d'automates
 text==
 Parmi les mots suivants, lesquels sont reconnus par cet automate?
 ==
+
 
