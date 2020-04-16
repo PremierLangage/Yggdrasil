@@ -3,7 +3,6 @@ extends = ../templates/editor.pl
 maxattempt = 5
 
 generate== #|py|
-from generator import Generator
 
 alphabet, factor, viewer = Generator.factor(
     3,  # length of the alphabet
