@@ -9,9 +9,9 @@ form ==
 
 
 before== #|py|
-
 from automaton import Automaton
 from generator import Generator
+
 if 'generate' not in globals():
     raise Exception('You must define a script "generate"')
 
@@ -20,8 +20,11 @@ exec(generate)
 if 'viewer' not in globals():
     raise Exception('The script "generate" must define a variable "viewer" which is an automaton')
 
+
 viewer = Automaton.viewer(viewer)
-checkbox, answers = Generator.multi_choice_question(viewer)
+checkbox, answers = Generator.multi_choice_question(
+    Automaton.parse(viewer)
+)
 ==
 
 evaluator== #|py|
