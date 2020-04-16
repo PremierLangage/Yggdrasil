@@ -1,4 +1,7 @@
+# CONTRACTS FOR FILES WHICH EXTENDS THIS TEMPLATE
+
 #! linter:require:generate
+
 extends = /ComputerScience/automaton/templates/base.pl
 
 maxattempt = 3
