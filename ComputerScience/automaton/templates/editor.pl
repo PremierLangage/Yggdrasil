@@ -22,23 +22,19 @@ maxattempt = 3
 #*  alphabet = ['a', b']
 #*  expected = '''
 #*      #states
-#*       A
-#*       B
-#*       C
+#*       S0
+#*       S1
 #*       #initials
-#*       A
+#*       S0
 #*       #accepting
-#*       A
+#*       S1
 #*       #alphabet
 #*       a
 #*       b
 #*       #transitions
-#*       A:b>C
-#*       A:a>B
-#*       C:a>A
-#*       C:b>B
-#*       B:b>A
-#*       B:a>B
+#*       S0:a>S1
+#*       S1:a>S1
+#*       S1:b>S0
 #*  '''
 #*  ==
 #*  ```
