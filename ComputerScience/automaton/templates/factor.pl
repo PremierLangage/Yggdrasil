@@ -23,8 +23,3 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 {% endif %}
 ==
 
-
-
-
-
-
