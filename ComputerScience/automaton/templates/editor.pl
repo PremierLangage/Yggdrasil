@@ -44,6 +44,7 @@ title=
 text= 
 
 feedback_nomatch = <p class="error-state">L\'automate que vous avez construit ne correspond pas à une réponse attendue.</p>
+feedback_timeout = '<p class="warning-state">L\'automate déterministe suivant était une réponse possible à cette question.</p>'
 feedback_syntax_error = <p class="warning-state">{0}</p>
 
 
@@ -73,12 +74,12 @@ evaluator== #|py|
 from automaton import Automaton
 
 if attempt >= maxattempt:
-    grade = (score, '<p class="warning-state">Un automate attendu était le suivant:</p>')
+    grade = (score, feedback_timeout)
 else:
     attempt += 1
     match, error = Automaton.compare(viewer, editor)
-    if (error or not match) and attempt >= maxattempt:
-        grade = (score, '<p class="warning-state">L\'automate déterministe suivant était une réponse possible à cette question.</p>')
+    if  attempt >= maxattempt and (error or not match): # error or no match after timeout
+        grade = (score, feedback_timeout)
     elif error:
         grade = (-1, feedback_syntax_error.format(error))
     elif match is True:
