@@ -26,12 +26,11 @@ import random
 
 things = [("lignes", "6518\n"), ("mots", "165960\n"), ("caractères", "1030016\n")]
 (name_thing, expected_stdout) = random.choice(things)
-
 ==
 
 text==
 Un fichier **Germinal.txt** a été placé dans le répertoire courant de travail. 
-Établissez une commande shell qui affiche le nombre de {{ name_thing }}. Débrouillez 
+Établissez une commande shell qui affiche le nombre de **{{ name_thing }}**. Débrouillez 
 vous pour votre résultat numérique soit affiché seul sur une ligne. N'hésitez pas à
 faire plusieurs essais.
 ==
