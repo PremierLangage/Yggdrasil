@@ -42,8 +42,8 @@ generate== #|py|
 #viewer = Automaton.rand(4, 3, 3)
 
 # REGEX NOTATION
-viewer = 'ab(a|b|c)*'
-raise Exception(Automaton.accepts(viewer, "a"))
+viewer = '(a|b|c)*'
+raise Exception(Automaton.accepts(viewer, ""))
 ==
 
 title= Lecture d'automates
