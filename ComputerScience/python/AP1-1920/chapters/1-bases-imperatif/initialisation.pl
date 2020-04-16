@@ -6,7 +6,15 @@ extends=../../templates/pltest.pl
 tag=Programmation|Python|Initialisation|Variable
 author = CC + DR
 
-title = Initialisation et constantes 
+title = Initialisation et constantes
+
+
+text==
+ Initialisez la variable **{{var}}** avec une valeur quelconque
+ de type **{{type_var}}** 
+==
+
+
 
 editor.height = 80
 
@@ -39,10 +47,7 @@ True
 
 
 
-text==
- Initialisez la variable **{{var}}** avec une valeur quelconque
- de type **{{type_var}}** 
-==
+
 
 
 
