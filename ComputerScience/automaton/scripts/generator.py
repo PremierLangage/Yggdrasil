@@ -129,7 +129,7 @@ class Generator:
                 transitions[name] = ''
                 textinput = Input(value='')
                 context[name] = textinput
-                columns.append(context[name])
+                columns.append(textinput)
             rows[state] = columns
 
         for fromState, toStates in automaton.transitions.items():
