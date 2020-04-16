@@ -4,8 +4,10 @@ maxattempt = 5
 
 
 generate== #|py|
+
 import random
 from generator import Generator
+
 mode = random.choice([-1, 0, 1])
 messages = {
     -1: 'au moins',
