@@ -13,9 +13,18 @@ from automaton import Automaton
 from components import CheckboxGroup, Input
 
 class Generator:
+    """
+    Helper class to generate automatons.
+    """
 
     @staticmethod
     def alphabet(length: int):
+        """
+        Generates an alphabet of random letters.
+        :param length the length of the generated alphabet
+        :return alphabet: str the generated alphabet
+        """
+    
         alphabet = ['' for _ in range(length)]
         while len(set(alphabet)) != length:
             alphabet = ''.join(set("".join(
