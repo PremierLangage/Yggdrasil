@@ -16,6 +16,7 @@ maxattempt = 3
 #*  **alphabet** => the alphabet of the automaton. e.g. ["a", "b"]
 #*
 #*  Example
+#  ```pythob
 #*  generate==
 #*  
 #*  alphabet = ['a', b']
@@ -26,7 +27,7 @@ maxattempt = 3
 #*
 #*
 #*  ==
-#*
+#*  ```
 #*
 generate % null
 
