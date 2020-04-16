@@ -1,5 +1,3 @@
-
-
 extends = base.pl
 
 # BUILDER SCRIPT
@@ -87,6 +85,7 @@ Donnez un exemple d'automate respectant les propriétés suivantes:
 form ==
 {{ editor|component }}
 ==
+
 
 
 
