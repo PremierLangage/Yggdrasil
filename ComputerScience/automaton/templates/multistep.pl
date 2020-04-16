@@ -25,7 +25,7 @@ viewer = Automaton.viewer(automaton)
 table = Generator.transitionTable(automaton, globals())
 
 # RANDOM MULTI CHOICE QUESTION FOR MATCHING WORDS
-checkbox, matchingWords = Generator.stringsInLanguageMCQ(automaton)
+checkbox, words = Generator.stringsInLanguageMCQ(automaton)
 
 score, step, maxSteps = 0, 1, 3
 ==
@@ -61,7 +61,7 @@ from evaluator import Evaluator
 
 right, total = Evaluator.evalStringsInLanguageMCQ(
     checkbox,
-    matchingWords,
+    words,
     withanswer=True
 )
 if right == total:
@@ -168,6 +168,7 @@ form==#|html|
     }
 </script>
 ==
+
 
 
 
