@@ -177,8 +177,10 @@ class Generator:
         :return (checkbox: CheckboxGroup, recognized: str[])
         """
 
-        recognized = Automaton.random_recognized_strings(obj, maxright)
-        unrecognized =  Automaton.random_unrecognized_strings(obj, maxwrong)
+        # pre-parse to optimize otherwise random_recognized_strings and random_unrecognized_strings will parse twice
+        parsed = Automaton.parse(obj)
+        recognized = Automaton.random_recognized_strings(parsed, maxright)
+        unrecognized =  Automaton.random_unrecognized_strings(parsed, maxwrong)
     
         checkbox = CheckboxGroup()
         checkbox.items = []
