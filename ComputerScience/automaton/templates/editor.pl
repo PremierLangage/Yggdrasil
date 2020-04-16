@@ -92,6 +92,22 @@ else:
         grade=(score, feedback_nomatch)
 ==
 
+
+form_instructions==
+<p>
+    <ul>
+        <li> Pour créer un nouvel état, double clic gauche. Utilisez les boutons pour changer le type de votre état.<br>
+            <i> Ne pas renommer les états - il y a un bug</i>
+        </li>
+        <li>
+            Pour ajouter une transition cliquer sur le point orange de l'état de départ
+            et tirer votre transition jusqu'à l'état d'arrivée.
+            Utilisez ensuite "changer Transition" pour ajuster la lettre étiquettant de la transition
+        </li>
+    </ul>
+</p>
+==
+
 form== #|html|
 
 <!-- RENDER AUTOMATON VIEWER IF MAX ATTEMPT IS REACHED -->
@@ -113,18 +129,7 @@ form== #|html|
 
 <br>
 
-<p>
-    <ul>
-        <li> Pour créer un nouvel état, double clic gauche. Utilisez les boutons pour changer le type de votre état.<br>
-            <i> Ne pas renommer les états - il y a un bug</i>
-        </li>
-        <li>
-            Pour ajouter une transition cliquer sur le point orange de l'état de départ
-            et tirer votre transition jusqu'à l'état d'arrivée.
-            Utilisez ensuite "changer Transition" pour ajuster la lettre étiquettant de la transition
-        </li>
-    </ul>
-</p>
+{{ form_instructions }}
 
 <script>
     /**
