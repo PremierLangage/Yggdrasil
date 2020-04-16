@@ -8,7 +8,7 @@ from generator import Generator
 
 automaton = Automaton.rand(4, 3, 3)
 viewer = Automaton.viewer(automaton)
-checkbox, matchingWords = Generator.stringsInLanguageMCQ(automaton)
+checkbox, answers = Generator.stringsInLanguageMCQ(automaton)
 ==
 
 evaluator== #|py|
@@ -16,7 +16,7 @@ from evaluator import Evaluator
 
 right, total = Evaluator.evalStringsInLanguageMCQ(
     checkbox,
-    matchingWords,
+    answers,
     withanswer=True
 )
 checkbox.disabled = True
