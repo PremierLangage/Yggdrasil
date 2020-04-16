@@ -1,7 +1,7 @@
 extends = /model/AMC_TXT.pl
 @ /builder/beforestep2.py [builder.py]
 
-settings.allow_reroll = true
+settings.allow_reroll = false
 
 
 title = Démo AMC-TXT
