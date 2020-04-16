@@ -158,7 +158,7 @@ form==#|html|
         const step = {{ step }};
         const maxSteps = {{ maxSteps }};
         const submit = nodes.submit;
-        if (step < maxSteps) {
+        if (step < maxSteps) { // change validate button
             submit.html(`
                 <i id="validate" class="fas fa-arrow-right"></i>
                 <span class="ion-hide-md-down">Suivant</span>
