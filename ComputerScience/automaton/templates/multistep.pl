@@ -23,7 +23,7 @@ viewer = Automaton.viewer(automaton)
 
 # TRANSITION TABLE
 table = Generator.transition_table(automaton, globals())
-
+raise Exception(table)
 # RANDOM MULTI CHOICE QUESTION FOR MATCHING WORDS
 checkbox, words = Generator.multichoice_question(automaton)
 
