@@ -20,10 +20,9 @@ exec(generate)
 if 'viewer' not in globals():
     raise Exception('The script "generate" must define a variable "viewer" which is an automaton')
 
-viewer = Automaton.viewer(viewer)
-checkbox, answers = Generator.multi_choice_question(
-    Automaton.parse(viewer)
-)
+dfa = Automaton.parse(viewer)
+viewer = Automaton.viewer(dfa)
+checkbox, answers = Generator.multi_choice_question(dfa)
 ==
 
 evaluator== #|py|
