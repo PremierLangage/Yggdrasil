@@ -82,6 +82,7 @@ def frame_message(message, status=None):
         s += '<div style="background-color: #FFBABA; '
     else:
         s += '<div style="background-color: white; '
+    s += 'border: 1px solid black; '
     s += 'border-radius: 15px; padding: 10px;" >'
     s += message
     s += "</div>"
