@@ -2,18 +2,28 @@
 
 ## Arborescence
 ```
-├── activities
+├── activitie
+|   └── td.pltp
 ├── documentation
 ├── exercises
-|   ├── begin-with-the-crazy-ideas.textile
-|   └── on-simplicity-in-technology.markdown
+|   ├── factor.pl
+|   └── occurences.pl
+|   └── prefix.pl
+|   └── recognition.pl
+|   └── suffix.pl
 ├── scripts
-|   ├── footer.html
-|   └── header.html
+|   ├── automaton.py
+|   └── evaluator.py
+|   └── fsm.py
+|   └── generator.py
+|   └── lego.py
 ├── styles
+|   └── automaton.css
 ├── templates
-|   ├── default.html
-|   └── post.html
+|   ├── base.pl
+|   └── editor.pl
+|   └── mutichoice.pl
+|   └── multistep.pl
+|   └── propeties.pl
 
 ```
-
