@@ -7,6 +7,7 @@ maxattempt = 3
 #* DD
 #*
 #*
+generate % null
 
 title= 
 text= 
