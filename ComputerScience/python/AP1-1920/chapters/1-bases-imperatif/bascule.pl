@@ -4,19 +4,18 @@
 @ /grader/evaluator.py [grader.py] 
 @ /builder/before.py [builder.py] 
 
+
+
+@ ../../../template/pltest_doc.py 
+@ ../../templates/utils/feedback2.py
+@ ../../templates/utils/template.html
+
+
 component =: Input
 component.type = text
 
-title==
-Input Component
-==
 
-text==
-==
 
-form==
-{{ component|component}}
-==
 
 evaluator==
 grade = (100, component.value)
@@ -24,7 +23,6 @@ grade = (100, component.value)
 
 
 
-@ /builder/before.py [builder.py]
 
 title== #|html|
 Bascule
@@ -55,10 +53,6 @@ Ecrivez l'expression qui permet de faire cela.
 
 ==
 
-@ ../../../template/pltest_doc.py 
-@ ../../templates/utils/feedback2.py
-@ ../../templates/utils/template.html
-
 evaluator==
 from pltest_doc import PlRunner
 
@@ -86,6 +80,7 @@ else:
 form==
    var = {{ component|component}}
 ==
+
 
 
 
