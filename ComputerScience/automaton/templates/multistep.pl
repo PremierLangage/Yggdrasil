@@ -34,7 +34,6 @@ score, step, maxSteps = 0, 1, 3
 eval1==#|py|
 matched, error = Automaton.compare(automaton, editor)
 if error:
-    step += 1
     grade = (-1, f'<p class="warning-state">{error}</p>')
 elif matched is True:
     score, step = 100 / maxSteps, step + 1
