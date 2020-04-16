@@ -73,6 +73,7 @@ if attempt >= maxattempt:
 else:
     attempt += 1
     match, error = Automaton.compare(viewer, editor)
+    raise Exception('...')
     if (error or not match) and attempt >= maxattempt:
         grade = (score, '<p class="warning-state">L\'automate déterministe suivant était une réponse possible à cette question.</p>')
     elif error:
