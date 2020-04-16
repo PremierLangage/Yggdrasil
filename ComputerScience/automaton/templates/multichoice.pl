@@ -29,17 +29,17 @@ evaluator== #|py|
 
 from evaluator import Evaluator
 
-nb_ok, total = Evaluator.eval_multi_choice_question(
+score, max_score = Evaluator.eval_multi_choice_question(
     checkbox,
     answers,
     withanswer=True
 )
 checkbox.disabled = True
 
-if nb_ok == total:
+if score == max_score:
     grade = (100, '<p class="success-state">Bonne réponse</p>')
 else:
-    grade = ((nb_ok / total) * 100, f"<p class='warning-state'>{right} / {total}</p>")
+    grade = ((score / max_score) * 100, f"<p class='warning-state'>{score} / {max_score}</p>")
 ==
 
 
