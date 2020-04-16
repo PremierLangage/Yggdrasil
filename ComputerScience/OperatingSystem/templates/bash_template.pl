@@ -32,6 +32,9 @@ editor.code ==
 #! linter:require:title::string
 #! linter:require:before
 
+before==
+==
+
 title=bash code template (titre à surcharger!)
 
 text==
