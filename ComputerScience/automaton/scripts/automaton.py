@@ -567,6 +567,58 @@ class Automaton:
         word = word.replace('ε', '')
         return Automaton.parse(obj).state_machine.accepts(word)
 
+    @staticmethod
+    def random_recognized_strings(obj, max=3):
+        """
+        Gets a list of random strings accepted by the automaton.
+        :param max the max number of elements of the returned list.
+        """
+        state_machine = Automaton.parse(obj).state_machine
+        r = []
+        i = 0
+        for e in state_machine.strings():
+            if e:
+                r.append(''.join(e))
+            else:
+                r.append('ε')
+            i += 1
+            if i > 10:
+                break
+        random.shuffle(r)
+        ret = []
+        max = random.randint(1, max)
+        for i in range(len(r)):
+            ret.append(r[i])
+            if i >= max:
+                break
+        return ret
+
+    @staticmethod
+    def random_unrecognized_strings(obj, max=3):
+        """
+        Gets a list of random strings not accepted by the automaton.
+        :param max the max number of elements of the returned list.
+        """
+        r = []
+        i = 0
+        state_machine = Automaton.parse(obj).state_machine
+        for e in state_machine.everythingbut().strings():
+            if e:
+                r.append(''.join(e))
+            else:
+                r.append('ε')
+            i += 1
+            if i > 10:
+                break
+        random.shuffle(r)
+        ret = []
+        max = random.randint(1, max)
+        for i in range(len(r)):
+            ret.append(r[i])
+            if i >= max:
+                break
+        return ret
+
     # TODO remove this method and use `properties` method once 
     # the class supported non dfa automatons
     @staticmethod
@@ -809,54 +861,6 @@ class Automaton:
             "reachable": len(reachables) == n,
             "coreachable": len(coreachables) == n
         }, None
-
-    def random_recognized_strings(self, max=3):
-        """
-        Gets a list of random strings accepted by the automaton.
-        :param max the max number of elements of the returned list.
-        """
-        r = []
-        i = 0
-        for e in self.state_machine.strings():
-            if e:
-                r.append(''.join(e))
-            else:
-                r.append('ε')
-            i += 1
-            if i > 10:
-                break
-        random.shuffle(r)
-        ret = []
-        max = random.randint(1, max)
-        for i in range(len(r)):
-            ret.append(r[i])
-            if i >= max:
-                break
-        return ret
-
-    def random_unrecognized_strings(self, max=3):
-        """
-        Gets a list of random strings not accepted by the automaton.
-        :param max the max number of elements of the returned list.
-        """
-        r = []
-        i = 0
-        for e in self.state_machine.everythingbut().strings():
-            if e:
-                r.append(''.join(e))
-            else:
-                r.append('ε')
-            i += 1
-            if i > 10:
-                break
-        random.shuffle(r)
-        ret = []
-        max = random.randint(1, max)
-        for i in range(len(r)):
-            ret.append(r[i])
-            if i >= max:
-                break
-        return ret
 
     def reachable_states(self, initialState: str, shouldIncludeInitialState=True):
         """
