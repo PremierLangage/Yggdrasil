@@ -20,7 +20,8 @@ class Generator:
     @staticmethod
     def alphabet(length: int):
         """
-        Generates an alphabet of random letters.
+        Generated an alphabet with letters taken randomly.
+
         :param length the length of the generated alphabet
         :return alphabet: str the generated alphabet
         """
@@ -33,8 +34,28 @@ class Generator:
             )))
         return alphabet
 
+    def sorted_alphabet(length: int):
+        """
+        Generates an alphabet with the letters taken in alphabetical order.
+
+        :param length the length of the generated alphabet
+        :return alphabet: str the generated alphabet
+        """
+        alphabet =  [string.ascii_lowercase[i] for i in range(length)]
+        return alphabet
+
+
     @staticmethod
     def regex(regex):
+        """
+        Generates an automaton from the given regex.
+
+        :param regex a regex where the following metacharacters and formations
+            have their usual meanings: ., *, +, ?, {m}, {m,}, {m,n}, (), |, [], 
+
+        :return An instance of Automaton class.
+        """
+
         return Automaton.parse(regex)
 
     @staticmethod
