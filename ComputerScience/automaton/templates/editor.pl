@@ -47,6 +47,7 @@ feedback_timeout = <p class="warning-state">L\'automate déterministe suivant é
 feedback_syntax_error = <p class="warning-state">{0}</p>
 
 
+#* override this key to change the text shown after a good answer
 form_success== #|html|
 <p class="success-state">Bravo l'automate que vous avez construit est une bonne réponse.</p>
 {% if not deterministic %}
