@@ -40,6 +40,3 @@ form ==
 {{ checkbox|component }}
 ==
 
-
-
-
