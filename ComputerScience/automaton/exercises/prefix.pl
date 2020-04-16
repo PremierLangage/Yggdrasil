@@ -3,8 +3,8 @@ extends = ../templates/editor.pl
 maxattempt = 5
 
 generate== #|py|
-max_symbs = 3
-max_prefix_length = 3
+max_symbs = random.randint(2, 3)
+max_prefix_length = random.randint(1, 3)
 alphabet, prefix, viewer = Generator.prefix(max_symbs, max_prefix_length)
 ==
 
