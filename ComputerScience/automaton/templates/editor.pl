@@ -117,16 +117,16 @@ form== #|html|
     }
 </script>
 <p>
-    <ion-list>
-        <ion-item> Pour créer un nouvel état, double clic gauche. Utilisez les boutons pour changer le type de votre état.<br>
-            <it> Ne pas renommer les états - il y a un bug</it>
-        </ion-item>
-        <ion-item>
+    <ul>
+        <li> Pour créer un nouvel état, double clic gauche. Utilisez les boutons pour changer le type de votre état.<br>
+            <i> Ne pas renommer les états - il y a un bug</i>
+        </li>
+        <li>
             Pour ajouter une transition cliquer sur le point orange de l'état de départ
             et tirer votre transition jusqu'à l'état d'arrivée.
             Utilisez ensuite "changer Transition" pour ajuster la lettre étiquettant de la transition
-        </ion-item>
-    </ion-list>
+        </li>
+    </ul>
 </p>
 ==
 
