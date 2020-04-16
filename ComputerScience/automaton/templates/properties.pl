@@ -29,7 +29,13 @@ from automaton import Automaton
 
 # retrieve the properties of the student's automaton 
 infos, error = Automaton.editor_properties(editor)
-  
+
+if not error:
+    for e in editor.automaton['alphabet']:
+        if e not in alphabet.split(','):
+            error = f'Le symbole "{e}" ne fait pas partie de l\'alphabet {alphabet}'
+            break
+        
 if error:
     grade = (-1, f'<p class="warning-state">{error}</p>')
 else:
