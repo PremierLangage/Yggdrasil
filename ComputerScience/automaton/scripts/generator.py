@@ -61,6 +61,16 @@ class Generator:
 
     @staticmethod
     def prefix(max_symbs=2, length=4):
+        """
+        Generates an alphabet of max_symbs letters,
+        a word `prefix` of length <= length and an automaton
+        recognizing the words starting with `prefix`.
+
+        :param max_symbs max length of the alphabet
+        :param length max length of the prefix
+        :return (alphabet: str, prefix: str, automaton: Automaton)
+        """
+    
         alphabet = Generator.alphabet(max_symbs)
         n = random.randint(2, length)
         prefix =  "".join(
@@ -72,6 +82,16 @@ class Generator:
 
     @staticmethod
     def suffix(max_symbs=2, length=4):
+        """
+        Generates an alphabet of max_symbs letters,
+        a word `suffix` of length <= length and an automaton
+        recognizing the words ending with `suffix`.
+
+        :param max_symbs max length of the alphabet
+        :param length max length of the suffix
+        :return (alphabet: str, suffix: str, automaton: Automaton)
+        """
+    
         alphabet = Generator.alphabet(max_symbs)
         n = random.randint(2, length)
         prefix = '|'.join(list(alphabet))
@@ -83,6 +103,16 @@ class Generator:
 
     @staticmethod
     def factor(max_symbs=2, length=4):
+        """
+        Generates an alphabet of max_symbs letters,
+        a word `factor` of length <= length and an automaton
+        recognizing the words contains `factor`.
+
+        :param max_symbs max length of the alphabet
+        :param length max length of the factor
+        :return (alphabet: str, factor: str, automaton: Automaton)
+        """
+    
         alphabet = Generator.alphabet(max_symbs)
         n = random.randint(2, length)
         prefix = '|'.join(list(alphabet))
