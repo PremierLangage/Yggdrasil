@@ -177,10 +177,10 @@ class Generator:
         :return (checkbox: CheckboxGroup, words: str[])
         """
 
-        matchingWords = automaton.random_recognized_strings(maxright)
+        recognized = automaton.random_recognized_strings(maxright)
         checkbox = CheckboxGroup()
         checkbox.items = []
-        for e in matchingWords:
+        for e in recognized:
             checkbox.items.append({
                 "id": str(uuid.uuid4()),
                 "content": e,
@@ -192,8 +192,9 @@ class Generator:
                 "content": e,
                 "multiple": True
             })
+    
         random.shuffle(checkbox.items)
-        return checkbox, matchingWords
+        return checkbox, recognized
 
 
 
