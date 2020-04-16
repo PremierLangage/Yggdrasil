@@ -71,7 +71,7 @@ else:
     form += '<input id="form_user_hack" name="form_user_hack" type="hidden" value="{{ user }}">'
     form += display_as_shell_this(editor.code, spout, str(response["user_hack"]), errout, returncode)
 
-    if expected_output == spout:
+    if expected_stdput == spout:
         feedback = "Bravo, votre code fait le travail !"
         grade = (100, feedback)
     else:
