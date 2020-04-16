@@ -64,12 +64,16 @@ class Generator:
 
     @staticmethod
     def sequence(max_symbs=2, length=4):
+        """
+        Generate a random alphabet and word
+        """
         alphabet = Generator.alphabet(max_symbs)
         n = random.randint(2, length)
         seq =  "".join(
             random.choice(alphabet)
             for _ in range(n)
         )
+
         return alphabet, sequence
 
     @staticmethod
@@ -140,6 +144,7 @@ class Generator:
             "rows": rows,
             "transitions": transitions
         }
+
 
 
 
