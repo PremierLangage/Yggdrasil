@@ -4,7 +4,7 @@ maxattempt = 5
 
 generate== #|py|
 from generator import Generator
-alphabet, prefix, automaton = Generator.prefix(3, 3)
+alphabet, prefix, expected = Generator.prefix(3, 3)
 ==
 
 title = Automates Préfixes
@@ -17,6 +17,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 </p>
 {% endif %}
 ==
+
 
 
 
