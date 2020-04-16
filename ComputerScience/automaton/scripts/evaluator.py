@@ -51,7 +51,8 @@ class Evaluator:
             content = item['content']
             if content in answers:
                 max_score += 1
-                item['css'] = 'success-border'
+
+                item['css'] = 'success-border' if withanswer else ''
                 if checked:
                     score += 1
                     item['css'] = 'success-border'
@@ -60,6 +61,7 @@ class Evaluator:
             elif checked:
                 item['css'] = 'error-border'
         return score, max_score
+
 
 
 
