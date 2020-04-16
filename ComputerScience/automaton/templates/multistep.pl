@@ -116,31 +116,35 @@ text==
 ==
 
 form==#|html|
+
+<!-- CONSTRUCTION STEP -->
 {% if step == 1 %}
 {{ editor|component }}
+<!-- TRANSITION TABLE STEP -->
 {% elif step == 2 %}
 <table>
-<tr>
-<th></th>
-{% for row in table['head'] %}
-<th>{{ row }}</th>
-{% endfor %}
-</tr>
-{% for state, rows in table['rows'].items() %}
-<tr>
-    <td>
-        {% if state == QI %}<i class="fas fa-arrow-right"></i>{% endif %}
-        {% if state in QF %}<i class="fas fa-arrow-left"></i>{% endif %}
-        {{ state }}
-    </td>
-    {% for row in rows %}
-    <td>
-        {{ row|component }}
-    </td>
+    <tr>
+        <th></th>
+        {% for row in table['head'] %}
+        <th>{{ row }}</th>
+        {% endfor %}
+    </tr>
+    {% for state, rows in table['rows'].items() %}
+    <tr>
+        <td>
+            {% if state == QI %}<i class="fas fa-arrow-right"></i>{% endif %}
+            {% if state in QF %}<i class="fas fa-arrow-left"></i>{% endif %}
+            {{ state }}
+        </td>
+        {% for row in rows %}
+        <td>
+            {{ row|component }}
+        </td>
+        {% endfor %}
+    </tr>
     {% endfor %}
-</tr>
-{% endfor %}
 </table>
+
 {% elif step == 3 %}
 {{ checkbox|component }}
 {% else %}
