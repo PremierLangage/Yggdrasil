@@ -133,15 +133,11 @@ form==#|html|
     <tr>
         <td>
             {% if state == QI %}<i class="fas fa-arrow-right"></i>{% endif %}
-           
+            {% if state in QF %}<i class="fas fa-arrow-left"></i>{% endif %}
             {{ state }}
         </td>
         {{ state }}{{ rows }}
-        {% for row in rows %}
-        <td>
-            {{ row|component }}
-        </td>
-        {% endfor %}
+       
     </tr>
     {% endfor %}
 </table>
