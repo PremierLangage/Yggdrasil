@@ -1,3 +1,4 @@
+# TODO fix bug in step 2 where input components are always None inside form.
 
 extends = base.pl
 
