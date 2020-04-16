@@ -48,7 +48,10 @@ evaluator==#|python|
 import subprocess
 from utils_bash import display_as_shell_this
 
+# some initialisations
 feedback = f"    "
+form = "{{ editor|component }}"
+form += '<input id="form_user_hack" name="form_user_hack" type="hidden" value="{{ user }}">'
 
 # Forbid the use of redirection in file
 if ">" in editor.code:
@@ -67,8 +70,6 @@ else:
     errout = sp.stderr.decode()
     returncode = sp.returncode
 
-    form = "{{ editor|component }}"
-    form += '<input id="form_user_hack" name="form_user_hack" type="hidden" value="{{ user }}">'
     form += display_as_shell_this(editor.code, spout, str(response["user_hack"]), errout, returncode)
 
     if expected_stdout == spout:
