@@ -35,7 +35,7 @@ class Evaluator:
 
 
     @staticmethod
-    def eval_multichoice_question(checkbox: CheckboxGroup, words: list, withanswer=True):
+    def eval_multi_choice_question(checkbox: CheckboxGroup, words: list, withanswer=True):
         right = 0
         total = 0
         for item in checkbox.items:
