@@ -142,7 +142,7 @@ form==#|html|
     {% endfor %}
 </table>
 
-{% elif step == 3 %} <!-- MUTI CHOICE QUESTION STEP -->
+{% elif step == 3 %} <!-- MULTI CHOICE QUESTION STEP -->
 {{ checkbox|component }}
 {% else %}
 <p class="success-state">Bravo vous avez terminé la série de questions !</p>
