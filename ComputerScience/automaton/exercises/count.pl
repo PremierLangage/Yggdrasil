@@ -8,7 +8,6 @@ import random
 from generator import Generator
 
 mode = random.choice([-1, 0, 1])
-
 message = {
     -1: 'au moins',
     0: 'exactement',
