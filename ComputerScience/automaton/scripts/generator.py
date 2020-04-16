@@ -63,12 +63,15 @@ class Generator:
         return alphabet, factor, Automaton.parse(f'({prefix})*{factor}({suffix})*')
 
     @staticmethod
-    def sequence(alphabet_max_length=2, word_max_length=4):
+    def sequence(max_symbs=2, word_max_length=4):
         """
-        Return (alphabet, sequence) where alphabet is a 
+        Creates a random word and alphabet.
+        :param word_max_length max length of the generated word.
+        :param max_symbs max length of the generated alphabet.
+        :return (alphabet: str, word: str)
         """
 
-        alphabet = Generator.alphabet(alphabet_max_length)
+        alphabet = Generator.alphabet(max_symbs)
         word_length = random.randint(2, word_max_length)
         word =  "".join(
             random.choice(alphabet)
@@ -78,6 +81,8 @@ class Generator:
 
     @staticmethod
     def counting(max_symbs=2, length=4, mode=0):
+        """
+        """
         alphabet = Generator.alphabet(max_symbs)
         n = random.randint(2, length)
         letter = random.choice(alphabet)
