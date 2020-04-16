@@ -19,7 +19,7 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 @ Germinal.txt
 
 author=Nicolas Borie
-# title=Comptage textuel dans Germinal
+title=Comptage textuel dans Germinal
 
 before==
 import random
