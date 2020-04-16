@@ -21,8 +21,8 @@ viewer = '''
     b
     c
     #transitions
-    S0:a>s1
-    S1:b>s2
+    S0:a>S1
+    S1:b>S2
     S2:a,b,c>S2
 '''
 #viewer = Automaton.rand(4, 3, 3)
