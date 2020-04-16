@@ -93,7 +93,7 @@ class Generator:
 
     @staticmethod
     def stringsInLanguageMCQ(automaton: Automaton, maxright=3, maxwrong=3):
-        matchingWords = automaton.randomStringInAlphabet(maxright)
+        matchingWords = automaton.random_recognized_strings(maxright)
         checkbox = CheckboxGroup()
         checkbox.items = []
         for e in matchingWords:
@@ -102,7 +102,7 @@ class Generator:
                 "content": e,
                 "multiple": True
             })
-        for e in automaton.randomStringNotInAlphabet(maxwrong):
+        for e in automaton.random_unrecognized_strings(maxwrong):
             checkbox.items.append({
                 "id": str(uuid.uuid4()),
                 "content": e,
@@ -140,6 +140,7 @@ class Generator:
             "rows": rows,
             "transitions": transitions
         }
+
 
 
 
