@@ -5,7 +5,10 @@ maxattempt = 5
 
 generate== #|py|
 from generator import Generator
-alphabet, factor, automaton = Generator.factor(3, 3)
+alphabet, factor, expected = Generator.factor(
+    3,
+    3
+)
 ==
 
 title = Automates Facteurs
@@ -18,6 +21,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 </p>
 {% endif %}
 ==
+
 
 
 
