@@ -138,7 +138,7 @@ form==#|html|
         </td>
         {% for input in inputs %}
         <td>
-            {{ input|component }}
+            {{ input }}
         </td>
         {% endfor %}
     </tr>
