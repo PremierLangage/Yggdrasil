@@ -68,3 +68,15 @@ def display_as_shell_this(command, output, user=None, errout="", returncode=0):
 
     s += "</output></pre></div>"
     return s
+
+def frame_message(message, status=None):
+    """
+    frame the message with colors
+    """
+    s = ""
+    s += '<div style="background-color: green; '
+    s += 'border-radius: 15px; padding: 10px;" >'
+    s += message
+    s += "</div>"
+    return s
+    
