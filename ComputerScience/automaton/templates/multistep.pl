@@ -22,7 +22,7 @@ editor = Automaton.editor()
 viewer = Automaton.viewer(automaton)
 
 # TRANSITION TABLE
-table = Generator.transitionTable(automaton, globals())
+table = Generator.transition_table(automaton, globals())
 
 # RANDOM MULTI CHOICE QUESTION FOR MATCHING WORDS
 checkbox, words = Generator.stringsInLanguageMCQ(automaton)
