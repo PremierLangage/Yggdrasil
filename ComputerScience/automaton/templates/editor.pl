@@ -40,8 +40,6 @@ maxattempt = 3
 #*
 generate % null
 
-title= 
-text= 
 
 feedback_match = 
 feedback_nomatch = <p class="error-state">L\'automate que vous avez construit ne correspond pas à une réponse attendue.</p>
@@ -71,6 +69,8 @@ form_success== #|html|
 {% endif %}
 == 
 
+title= 
+text= 
 form== #|html|
 
 <!-- RENDER AUTOMATON VIEWER IF MAX ATTEMPT IS REACHED -->
