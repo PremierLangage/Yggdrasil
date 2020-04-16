@@ -7,8 +7,8 @@ generate== #|py|
 from generator import Generator
 
 alphabet, factor, expected = Generator.factor(
-    3,
-    3
+    3,  # length of the alphabet
+    3,  # max number of occurence of 'letter' in the automaton
 )
 ==
 
