@@ -556,6 +556,17 @@ class Automaton:
         except Exception as e:
             return False, str(e)
     
+    @staticmethod
+    def accepts(obj, word: str):
+        """
+        Checks `word` is recognized by the automaton `obj`.
+        :param obj An automaton in any of the accepted notation
+        :param word the word to test
+        """
+    
+        word = word.replace('ε', '')
+        return Automaton.parse(obj).state_machine.accepts(word)
+
     # TODO remove this method and use `properties` method once 
     # the class supported non dfa automatons
     @staticmethod
@@ -684,16 +695,6 @@ class Automaton:
             "reachable": len(reachables) == n,
             "coreachable": len(coreachables) == n
         }, None
-
-    @staticmethod
-    def accepts(obj, word: str):
-        """
-        Checks `word` is recognized by the automaton `obj`.
-        :param obj An automaton in any of the accepted notation
-        :param word the word to test
-        """
-        word = word.replace('ε', '')
-        return Automaton.parse(obj).state_machine.accepts(word)
 
     # INSTANCE METHODS
     
@@ -1014,11 +1015,5 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
-
-
-
-
-
-
 
 
