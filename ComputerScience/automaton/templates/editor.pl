@@ -116,7 +116,9 @@ form== #|html|
 
 
 before== #|py|
+import random
 
+from generator import Generator
 from automaton import Automaton
 
 score = -1
@@ -158,4 +160,5 @@ else:
         score = 0
         grade=(score, feedback_nomatch)
 ==
+
 
