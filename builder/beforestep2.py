@@ -95,7 +95,7 @@ if __name__ == "__main__":
     else:
         dic['internals']['buttons'] = ["submit"]
 
-    if 'scores' in dic:
+    if 'score' in dic:
         dic['text'] = """Vous avez dépassé le nombre de tentatives autorisées pour ce quiz."""
         dic['internals']['buttons'] = []
     else:
