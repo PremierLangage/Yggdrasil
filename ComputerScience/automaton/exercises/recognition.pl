@@ -49,6 +49,11 @@ title= Lecture d'automates
 
 text==
 Parmi les mots suivants, lesquels sont reconnus par cet automate?
+{% if attempt < maxattempt and score != 100 %}
+<p class="warning-state">
+Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solution !
+</p>
+{% endif %}
 ==
 
 
