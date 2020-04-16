@@ -104,18 +104,7 @@ form== #|html|
 <!-- RENDER THE AUTOMATON EDITOR -->
 {{ editor|component }}
 
-<script>
-    /**
-    * This function is called by the platform once the exercice is loaded.
-    * @param nodes an object containing a reference to the nodes of the page (title, text, form, actions, submit...)
-    */
-    function onReadyPL(nodes) {
-        const submit = nodes.submit; // a reference to the submit button
-
-        // hide submit button if needed.
-        submit.attr("disabled", ({{ attempt }} >= {{ maxattempt }}) || {{ score }} == 100);
-    }
-</script>
+<br>
 <p>
     <ul>
         <li> Pour créer un nouvel état, double clic gauche. Utilisez les boutons pour changer le type de votre état.<br>
@@ -128,14 +117,18 @@ form== #|html|
         </li>
     </ul>
 </p>
+
+<script>
+    /**
+    * This function is called by the platform once the exercice is loaded.
+    * @param nodes an object containing a reference to the nodes of the page (title, text, form, actions, submit...)
+    */
+    function onReadyPL(nodes) {
+        const submit = nodes.submit; // a reference to the submit button
+
+        // hide submit button if needed.
+        submit.attr("disabled", ({{ attempt }} >= {{ maxattempt }}) || {{ score }} == 100);
+    }
+</script>
 ==
-
-
-
-
-
-
-
-
-
 
