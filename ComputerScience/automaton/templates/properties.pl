@@ -1,15 +1,13 @@
-
 extends = base.pl
 
 maxattempt = 3
-
 complete % true
 deterministic % true
-
 anim1 % false
 anim2 % false
 
 before== #|py|
+
 import random
 from automaton import Automaton
 
