@@ -123,14 +123,14 @@ class Generator:
         transitions = {}
 
         for state in sorted(automaton.states):
-            columns = []
+            row = []
             for symb in sorted(automaton.alphabet):
                 name = transition_name(state, symb)
                 transitions[name] = ''
                 textinput = Input(value='')
                 context[name] = textinput
-                columns.append(textinput)
-            rows[state] = columns
+                row.append(textinput)
+            rows[state] = row
 
         for fromState, toStates in automaton.transitions.items():
             for symb, toState in toStates.items():
