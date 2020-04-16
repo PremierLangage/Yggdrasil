@@ -18,7 +18,7 @@ from components import CheckboxGroup
 class Evaluator:
 
     @staticmethod
-    def evalStringsInLanguageMCQ(checkbox: CheckboxGroup, matching: list, withanswer=True):
+    def eval_multichoice_question(checkbox: CheckboxGroup, matching: list, withanswer=True):
         right = 0
         total = 0
         for item in checkbox.items:
@@ -38,7 +38,7 @@ class Evaluator:
         return right, total
 
     @staticmethod
-    def evalTransitionTable(automaton, table, context):
+    def eval_transition_table(automaton, table, context):
         def transition_name(state, symb):
             return f"({state}, {symb})"
         error = False
@@ -52,5 +52,6 @@ class Evaluator:
                     error = True
                     answer.suffix = '<i class="fas fa-times"></i>'
         return error
+
 
 
