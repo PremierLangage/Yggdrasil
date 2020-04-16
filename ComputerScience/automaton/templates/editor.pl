@@ -18,7 +18,13 @@ maxattempt = 3
 #*  Example
 #*
 #*  generate==
-#*  
+#*  ```javascript
+#* function fancyAlert(arg) {
+#*   if(arg) {
+#*     $.facebox({div:'#foo'})
+#*   }
+#* }
+```
 #*  alphabet = ['a', b']
 #*  expected = '''
 #*  
