@@ -44,16 +44,18 @@ checkbox, answers = Generator.multi_choice_question(automaton)
 evaluator== #|py|
 from evaluator import Evaluator
 
+score, max_score = Evaluator.eval_multi_choice_question(
+    checkbox,
+    answers,
+    withanswer=attempt >= maxattempt
+)
+
 if attempt >= maxattempt: # timeout
     checkbox.disabled = True
     grade = (score, feedback_timeout)
 else:
     attempt += 1
-    score, max_score = Evaluator.eval_multi_choice_question(
-        checkbox,
-        answers,
-        withanswer=attempt >= maxattempt
-    )
+
     if score == max_score:
         grade = (100, '<p class="success-state">Bonne réponse</p>')
     else:
