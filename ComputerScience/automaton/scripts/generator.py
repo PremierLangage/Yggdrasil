@@ -167,7 +167,7 @@ class Generator:
         return alphabet, letter, n, Automaton.parse(regex)
 
     @staticmethod
-    def multi_choice_question(automaton: Automaton, maxright=3, maxwrong=3):
+    def multi_choice_question(obj, maxright=3, maxwrong=3):
         """
         Generates a multi choice question exercise to test the words recognized by the given automaton
         :param automaton the automaton
@@ -177,7 +177,9 @@ class Generator:
         :return (checkbox: CheckboxGroup, recognized: str[])
         """
 
-        recognized = automaton.random_recognized_strings(maxright)
+        recognized = Automaton.random_recognized_strings(obj, maxright)
+        unrecognized =  Automaton.random_unrecognized_strings(obj, maxwrong)
+    
         checkbox = CheckboxGroup()
         checkbox.items = []
         for e in recognized:
@@ -186,7 +188,7 @@ class Generator:
                 "content": e,
                 "multiple": True
             })
-        for e in automaton.random_unrecognized_strings(maxwrong):
+        for e in unrecognized:
             checkbox.items.append({
                 "id": str(uuid.uuid4()),
                 "content": e,
@@ -228,5 +230,6 @@ class Generator:
             "rows": rows,
             "transitions": transitions
         }
+
 
 
