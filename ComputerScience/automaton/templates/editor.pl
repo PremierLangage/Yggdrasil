@@ -121,11 +121,6 @@ import random
 from automaton import Automaton
 from generator import Generator
 
-score = -1
-attempt = 0
-maxattempt = int(maxattempt)
-deterministic = True
-
 if 'generate' not in globals():
     raise Exception('You must define a script "generate"')
 
@@ -134,6 +129,10 @@ exec(generate)
 if 'viewer' not in globals():
     raise Exception('The script "generate" must define a variable "viewer" which is an automaton')
 
+score = -1
+attempt = 0
+maxattempt = int(maxattempt)
+deterministic = True
 editor = Automaton.editor()
 viewer = Automaton.viewer(viewer)
 alphabet = ', '.join(list(alphabet))
@@ -160,5 +159,6 @@ else:
         score = 0
         grade=(score, feedback_nomatch)
 ==
+
 
 
