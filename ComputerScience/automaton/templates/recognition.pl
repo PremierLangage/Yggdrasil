@@ -3,9 +3,6 @@ extends = base.pl
 
 maxattempt = 3
 
-complete % true
-deterministic % true
-
 before== #|py|
 from automaton import Automaton
 from generator import Generator
@@ -41,6 +38,7 @@ form ==
 {{ viewer|component }}
 {{ checkbox|component }}
 ==
+
 
 
 
