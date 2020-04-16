@@ -1,5 +1,12 @@
 
-doc==
+
+#! linter:require:nb::int
+#! linter:require:nbtrues::int
+#! linter:require:good
+#! linter:require:bad
+
+
+documentation==
     
     title= template qcm
     
@@ -61,6 +68,7 @@ grader=@qcm_evaluator.py
 @ /utils/sandboxio.py
 
 settings.allow_reroll=doit
+
 
 
 
