@@ -9,9 +9,9 @@ title= Exemple de QCM
 text= Cochez les affirmations correctes.
 
 # Nombre de lignes total 
-nb=4
+nb%4
 # Nombre minimal de lignes "vraies"
-nbtrues=2
+nbtrues%2
 # if nbtrues==0 then a random number 
 # with at least one good answer ...
 
@@ -39,5 +39,6 @@ good += "\n celle ci est bonne par contre | Bravo !!"
 ==
 
 feedback=show
+
 
 
