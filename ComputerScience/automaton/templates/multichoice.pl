@@ -40,8 +40,9 @@ from evaluator import Evaluator
 score, max_score = Evaluator.eval_multi_choice_question(
     checkbox,
     answers,
-    withanswer=True
+    withanswer=attempt >= maxattempt
 )
+attempt += 1
 checkbox.disabled = True
 
 if score == max_score:
