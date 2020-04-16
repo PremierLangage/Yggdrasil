@@ -69,8 +69,8 @@ form_success== #|html|
 {% endif %}
 == 
 
-title= 
-text= 
+title= PLEASE OVERRIDE THE TITLE
+text= PLEASE OVERRIDE THE TEXT
 form== #|html|
 
 <!-- RENDER AUTOMATON VIEWER IF MAX ATTEMPT IS REACHED -->
