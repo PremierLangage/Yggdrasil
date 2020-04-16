@@ -17,7 +17,7 @@ message = {
 
 alphabet, letter, n, expected = Generator.counting(
     3, # length of the alphabet
-    4, # max length of the word to find
+    4, # max length of the word to generate
     mode
 )
 ==
