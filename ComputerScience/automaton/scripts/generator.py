@@ -129,7 +129,6 @@ class Generator:
                 context[name]= textfield
                 columns.append(textfield)
             rows[state] = columns
-            raise Exception(rows)
 
         for fromState, toStates in automaton.transitions.items():
             for symb, toState in toStates.items():
