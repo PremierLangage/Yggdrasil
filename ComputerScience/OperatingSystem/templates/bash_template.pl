@@ -44,22 +44,29 @@ form==
 
 ==
 
-evaluator==
+evaluator==#|python|
 import subprocess
 from utils_bash import display_as_shell_this
 
-f = open("student_script.sh", "w")
-f.write(editor.code)
-f.close()
+feedback = f"    "
 
-sp = subprocess.run(["/bin/bash", "student_script.sh"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=7)
-spout = sp.stdout.decode()
-errout = sp.stderr.decode()
-returncode = sp.returncode
+# Forbid the use of redirection in file
+if ">" in editor.code:
+    feedback = "Dû à des limilitations techniques, une commande ne peut pas contenir de caractère chevron droit. Notament les redirections en sortie ne sont pas autorisées. L'exerice reste faisable avec cette limitation. Merci de modifier votre commande."
+# Here 
+else:
+    f = open("student_script.sh", "w")
+    f.write(editor.code)
+    f.close()
 
-form = "{{ editor|component }}"
-form += '<input id="form_user_hack" name="form_user_hack" type="hidden" value="{{ user }}">'
-form += display_as_shell_this(editor.code, spout, str(response["user_hack"]), errout, returncode)
+    sp = subprocess.run(["/bin/bash", "student_script.sh"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=7)
+    spout = sp.stdout.decode()
+    errout = sp.stderr.decode()
+    returncode = sp.returncode
+
+    form = "{{ editor|component }}"
+    form += '<input id="form_user_hack" name="form_user_hack" type="hidden" value="{{ user }}">'
+    form += display_as_shell_this(editor.code, spout, str(response["user_hack"]), errout, returncode)
 
 grade = (100, f"    ")
 
