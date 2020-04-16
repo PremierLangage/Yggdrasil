@@ -29,7 +29,7 @@ editor.code ==
 ==
 
 before==
-
+expected_stdout = ""
 ==
 
 title=bash code template (titre à surcharger!)
@@ -53,8 +53,11 @@ feedback = f"    "
 # Forbid the use of redirection in file
 if ">" in editor.code:
     feedback = "Dû à des limilitations techniques, une commande ne peut pas contenir de caractère chevron droit. Notament les redirections en sortie ne sont pas autorisées. L'exerice reste faisable avec cette limitation. Merci de modifier votre commande."
-# Here 
+    grade = (-1, feedback)
+
+# Here we choose to execute the set of commands inside a script
 else:
+    # Placed in a script, it allows the user to propose severals commands without /
     f = open("student_script.sh", "w")
     f.write(editor.code)
     f.close()
@@ -68,7 +71,8 @@ else:
     form += '<input id="form_user_hack" name="form_user_hack" type="hidden" value="{{ user }}">'
     form += display_as_shell_this(editor.code, spout, str(response["user_hack"]), errout, returncode)
 
-grade = (100, f"    ")
+    if 
+    grade = (100, feedback)
 
 ==
 
