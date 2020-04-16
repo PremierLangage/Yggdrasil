@@ -17,7 +17,7 @@ message = {
 
 alphabet, letter, n, expected = Generator.counting(
     3, # length of the alphabet
-    4, # max number of occurence of 'letter' in the automaton
+    4, # max length of the word to find
     mode
 )
 ==
@@ -32,4 +32,5 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 </p>
 {% endif %}
 ==
+
 
