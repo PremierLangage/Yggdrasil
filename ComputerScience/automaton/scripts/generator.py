@@ -125,9 +125,9 @@ class Generator:
             for symb in sorted(automaton.alphabet):
                 name = transition_name(state, symb)
                 transitions[name] = ''
-                textfield = Input(value='')
-                context[name]= textfield
-                columns.append(textfield)
+                textinput = Input(value='')
+                context[name]= textinput
+                columns.append(textinput)
             rows[state] = columns
 
         for fromState, toStates in automaton.transitions.items():
