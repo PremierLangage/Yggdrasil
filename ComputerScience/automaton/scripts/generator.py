@@ -174,7 +174,7 @@ class Generator:
         :param maxright max number of right answers
         :param maxwrong max number of wrong answers
 
-        :return (checkbox: CheckboxGroup, words: str[])
+        :return (checkbox: CheckboxGroup, recognized: str[])
         """
 
         recognized = automaton.random_recognized_strings(maxright)
