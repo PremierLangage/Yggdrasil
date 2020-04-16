@@ -67,6 +67,7 @@ class Generator:
         """
         Return (alphabet, sequence) where alphabet is a 
         """
+
         alphabet = Generator.alphabet(alphabet_max_length)
         word_length = random.randint(2, word_max_length)
         word =  "".join(
