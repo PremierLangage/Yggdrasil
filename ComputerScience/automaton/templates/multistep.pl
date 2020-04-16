@@ -136,7 +136,7 @@ form==#|html|
             {% if state in QF %}<i class="fas fa-arrow-left"></i>{% endif %}
             {{ state }}
         </td>
-        {{ rows }}
+        {{ state }}{{ rows }}
        <!--  {% for row in rows %}
         <td>
             {{ row|component }}
