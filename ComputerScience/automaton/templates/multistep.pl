@@ -26,7 +26,7 @@ viewer = Automaton.viewer(automaton)
 table = Generator.transition_table(automaton, globals())
 
 # RANDOM MULTI CHOICE QUESTION FOR MATCHING WORDS
-checkbox, words = Generator.multichoice_question(automaton)
+checkbox, words = Generator.multi_choice_question(automaton)
 
 score, step, maxSteps = 0, 2, 3
 ==
