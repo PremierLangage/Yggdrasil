@@ -1,4 +1,4 @@
-extends = ../templates/prefix.pl
+extends = ../templates/editor.pl
 
 maxattempt = 5
 
