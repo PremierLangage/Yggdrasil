@@ -1,9 +1,5 @@
 extends = base.pl
 
-maxattempt = 3
-complete % true
-deterministic % true
-
 before== #|py|
 
 import random
