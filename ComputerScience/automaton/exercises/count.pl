@@ -18,7 +18,7 @@ alphabet, letter, occurences, viewer = Generator.counting(
 )
 ==
 
-title= Automates Occurences
+title= Nombre d'occurences
 
 text== #|html|
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
