@@ -25,7 +25,7 @@ form==
 
 #@ /grader/evaluator.py [grader.py]
 evaluator==
-
+print("hello")
 
 grade=(100,"bravo")
 ==
