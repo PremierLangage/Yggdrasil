@@ -3,10 +3,9 @@ extends = ../templates/editor.pl
 maxattempt = 5
 
 generate== #|py|
-alphabet, suffix, viewer = Generator.suffix(
-    3, # length of the alphabet
-    3 # max length of the suffix
-)
+max_symbs = 3
+max_suffix_length = 3
+alphabet, suffix, viewer = Generator.suffix(max_symbs, max_suffix_length)
 ==
 
 title = Suffixe
