@@ -4,9 +4,9 @@ introduction ==
 Cliquez sur commencer pour débuter l'activité
 ==
 
-@ ../exercices/count.pl
-@ ../exercices/factor.pl
-@ ../exercices/prefix.pl
-@ ../exercices/suffix.pl
-@ ../exercices/recognition.pl
+@ ../exercises/count.pl
+@ ../exercises/factor.pl
+@ ../exercises/prefix.pl
+@ ../exercises/suffix.pl
+@ ../exercises/recognition.pl
 
