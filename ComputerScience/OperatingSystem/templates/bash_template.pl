@@ -35,7 +35,6 @@ before==
 title=bash code template (titre à surcharger!)
 
 text==
-
 ==
 
 form==
@@ -65,6 +64,7 @@ form += display_as_shell_this(editor.code, spout, str(response["user_hack"]), er
 grade = (100, f"    ")
 
 ==
+
 
 
 
