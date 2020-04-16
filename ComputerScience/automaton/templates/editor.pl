@@ -41,9 +41,13 @@ maxattempt = 3
 generate % null
 
 
+#* feedback shown after a good answer.
 feedback_match = 
+#* feedback shown after a bad answer.
 feedback_nomatch = <p class="error-state">L\'automate que vous avez construit ne correspond pas à une réponse attendue.</p>
+#* feedback shown after a timeout.
 feedback_timeout = <p class="warning-state">L\'automate déterministe suivant était une réponse possible à cette question.</p>
+#* feedback shown for a syntax error.
 feedback_syntax_error = <p class="warning-state">{0}</p>
 
 
