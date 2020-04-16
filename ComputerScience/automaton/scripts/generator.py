@@ -181,6 +181,9 @@ class Generator:
         random.shuffle(checkbox.items)
         return checkbox, matchingWords
 
+
+
+    # TODO fix a bug where the generated Input components are always set to None inside the form= key
     @staticmethod
     def transition_table(automaton: Automaton, context: dict):
         def transition_name(state, symb):
