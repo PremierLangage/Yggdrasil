@@ -113,6 +113,8 @@ class Generator:
 
     @staticmethod
     def transition_table(automaton: Automaton, context: dict):
+        '''
+        '''
         def transition_name(state, symb):
             return f"({state}, {symb})"
 
