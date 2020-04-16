@@ -75,21 +75,22 @@ form_instructions== #|html|
 title= PLEASE OVERRIDE THE KEY **title=** TO CHANGE THIS TEXT
 text= PLEASE OVERRIDE THE KEY **text=** TO CHANGE THIS TEXT
 form== #|html|
-<!-- RENDER AUTOMATON VIEWER IF MAX ATTEMPT IS REACHED -->
+<!-- TIMEOUT VIEW -->
 {% if attempt >= maxattempt %}
 {{ viewer|component }}
 {% endif %}
 
-<!-- RENDER AUTOMATON VIEWER IF SCORE IS 100 -->
+<!-- SUCCESSS VIEW -->
 {% if score == 100  %}
 {{ form_success }}
 {% endif %}
 
-<!-- RENDER THE AUTOMATON EDITOR -->
+<!-- EDITOR VIEW -->
 {{ editor|component }}
 
 <br>
 
+<!-- INSTRUCTIONS VIEW -->
 {{ form_instructions }}
 
 <script>
