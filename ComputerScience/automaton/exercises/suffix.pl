@@ -11,7 +11,7 @@ alphabet, suffix, viewer = Generator.suffix(
 )
 ==
 
-title = Automates Suffixes
+title = Suffixe
 
 text == #|html|
 Pour cette question, on considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
@@ -22,4 +22,5 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 </p>
 {% endif %}
 ==
+
 
