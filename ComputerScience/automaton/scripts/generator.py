@@ -143,7 +143,12 @@ class Generator:
     @staticmethod
     def counting(max_symbs=2, length=4, mode=0):
         """
+        Generates an alphabet of max_symbs letters,
+        a letter `letter``a number `n` <= length and an automaton
+        recognizing contains at least, exactly, or at most depending of
+        the value of mode (-1, 0, 1)
         """
+
         alphabet = Generator.alphabet(max_symbs)
         n = random.randint(2, length)
         letter = random.choice(alphabet)
