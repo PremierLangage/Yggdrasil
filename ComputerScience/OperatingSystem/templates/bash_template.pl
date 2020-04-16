@@ -75,6 +75,7 @@ else:
         feedback = "Bravo, votre code fait le travail !"
         grade = (100, feedback)
     else:
+        feedback = "Désolé, votre code ne produit pas le résultat attendu."
         grade = (0, feedback)
 
 ==
