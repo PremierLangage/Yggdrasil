@@ -15,6 +15,7 @@
 
 extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 
+# Add the file containing integral text of Germinal by Zola
 @ Germinal.txt
 
 author=Nicolas Borie
