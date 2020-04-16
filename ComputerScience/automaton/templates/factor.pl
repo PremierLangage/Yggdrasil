@@ -6,7 +6,7 @@ maxattempt = 5
 generate== #|py|
 from generator import Generator
 
-alphabet, factor, expected = Generator.factor(
+alphabet, factor, viewer = Generator.factor(
     3,  # length of the alphabet
     3,  # max length of the factor
 )
@@ -22,4 +22,5 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 </p>
 {% endif %}
 ==
+
 
