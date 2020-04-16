@@ -96,7 +96,7 @@ text== #|html|
         <em>1. Représentez cet automate sous forme de graphe.</em>
     </p>
 
-    % if step > 1 %}
+    {% if step > 1 %}
         {{ viewer|component }}
     {% endif %}
 
