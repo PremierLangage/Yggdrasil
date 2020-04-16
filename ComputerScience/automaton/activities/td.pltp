@@ -1,0 +1,11 @@
+title = TD automates
+
+introduction ==
+Cliquez sur commencer pour débuter l'activité
+==
+
+@ ../exercices/count.pl
+@ ../exercices/factor.pl
+@ ../exercices/prefix.pl
+@ ../exercices/suffix.pl
+@ ../exercices/recognition.pl
