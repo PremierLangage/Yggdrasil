@@ -3,6 +3,7 @@ extends = base.pl
 maxattempt = 3
 
 before== #|py|
+
 from automaton import Automaton
 from generator import Generator
 
@@ -12,6 +13,7 @@ checkbox, answers = Generator.stringsInLanguageMCQ(automaton)
 ==
 
 evaluator== #|py|
+
 from evaluator import Evaluator
 
 right, total = Evaluator.evalStringsInLanguageMCQ(
