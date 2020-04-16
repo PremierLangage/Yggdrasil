@@ -41,6 +41,7 @@ class Generator:
         :param length The length of the generated alphabet
         :return alphabet: str The generated alphabet
         """
+    
         alphabet =  [string.ascii_lowercase[i] for i in range(length)]
         return alphabet
 
