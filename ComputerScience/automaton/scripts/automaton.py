@@ -515,6 +515,11 @@ class Automaton:
         return Automaton(minimal)
 
     @staticmethod
+    def editor():
+        """Return new automaton editor component."""
+        return AutomatonEditor()
+
+    @staticmethod
     def viewer(obj):
         """
         Gets an AutomatonDrawer component that can be displayed inside
@@ -533,11 +538,6 @@ class Automaton:
         ==
         """
         return Automaton.parse(obj).as_viewer()
-
-    @staticmethod
-    def editor():
-        """Return new automaton editor component."""
-        return AutomatonEditor()
 
     @staticmethod
     def compare(a, b):
