@@ -18,8 +18,13 @@ messages = {
 
 message = messages[mode]
 
+
 # counting( nb lettres alphabet, nb occurences demandées , mode)
-alphabet, letter, n, expected = Generator.counting(3, 4, mode)
+alphabet, letter, n, expected = Generator.counting(
+    3, # length of the alphabet
+    4, # number of o
+    mode
+)
 ==
 
 title = Automates Occurences
