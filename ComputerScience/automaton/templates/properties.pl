@@ -31,12 +31,13 @@ from automaton import Automaton
 infos, error = Automaton.editor_properties(editor)
 
 if not error:
+    # ensure that the symbols in the transitions are valid.
     for e in editor.automaton['alphabet']:
         if e not in alphabet.split(','):
             error = f'Le symbole "{e}" ne fait pas partie de l\'alphabet {alphabet}'
             break
-        
-if error:
+
+if error: # a syntax error occured
     grade = (-1, f'<p class="warning-state">{error}</p>')
 else:
     messages = []
