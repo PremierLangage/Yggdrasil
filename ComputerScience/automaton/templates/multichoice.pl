@@ -1,5 +1,10 @@
 extends = base.pl
 
+#* Maximum number of attempts before showing the right answer.
+maxattempt = 3
+
+
+
 title= 
 text= 
 form ==
@@ -20,7 +25,10 @@ exec(generate)
 if 'viewer' not in globals():
     raise Exception('The script "generate" must define a variable "viewer" which is an automaton')
 
-dfa = Automaton.parse(viewer)
+score = -1
+attempt = 0
+maxattempt = int(maxattempt)
+dfa = Automaton.parse(viewer) 
 viewer = Automaton.viewer(dfa)
 checkbox, answers = Generator.multi_choice_question(dfa)
 ==
@@ -41,5 +49,6 @@ if score == max_score:
 else:
     grade = ((score / max_score) * 100, f"<p class='warning-state'>{score} / {max_score}</p>")
 ==
+
 
 
