@@ -170,7 +170,7 @@ class Generator:
     def multi_choice_question(obj, maxright=3, maxwrong=3):
         """
         Generates a multi choice question exercise to test the words recognized by the given automaton
-        :param automaton the automaton
+        :param obj an automaton in any of the accepted notation.
         :param maxright max number of right answers
         :param maxwrong max number of wrong answers
 
