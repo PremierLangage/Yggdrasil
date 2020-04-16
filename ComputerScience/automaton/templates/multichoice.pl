@@ -4,7 +4,7 @@ extends = base.pl
 maxattempt = 3
 
 #* feedback shown after a good answer.
-feedback_match = 
+feedback_match = Bonne réponse 
 #* feedback shown after a bad answer.
 feedback_nomatch = <p class="error-state">L\'automate que vous avez construit ne correspond pas à une réponse attendue.</p>
 #* feedback shown after a timeout.
@@ -50,14 +50,14 @@ score, max_score = Evaluator.eval_multi_choice_question(
     withanswer=attempt >= maxattempt
 )
 
-if attempt >= maxattempt: # timeout
+attempt += 1
+if attempt >= maxattempt and score != max_score: # timeout
     checkbox.disabled = True
     grade = (score, feedback_timeout)
 else:
-    attempt += 1
-
     if score == max_score:
-        grade = (100, '<p class="success-state">Bonne réponse</p>')
+        checkbox.disabled = True
+        grade = (100, feedback_match)
     else:
         grade = ((score / max_score) * 100, f"<p class='warning-state'>{score} / {max_score}</p>")
 ==
