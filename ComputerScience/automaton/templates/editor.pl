@@ -10,7 +10,7 @@ maxattempt = 3
 #*
 #*  This script must define the following variables:
 #*   
-#*  **expected** => an automaton in one of the accepted formats (string, regex, object...)
+#*  **viewer** => an automaton in one of the accepted formats (string, regex, object...)
 #*               This automaton is considered as the answer and it will be presented to the student at the end. 
 #*
 #*  **alphabet** => the alphabet of the automaton. e.g. ["a", "b"]
@@ -19,7 +19,7 @@ maxattempt = 3
 #*```python
 #*  generate==
 #*  alphabet = ['a', 'b']
-#*  expected = '''
+#*  viewer = '''
 #*      #states
 #*       S0
 #*       S1
@@ -57,11 +57,11 @@ if 'generate' not in globals():
 
 exec(generate)
 
-if 'expected' not in globals():
-    raise Exception('The script "generate" must define a variable "expected" which is an automaton')
+if 'viewer' not in globals():
+    raise Exception('The script "generate" must define a variable "viewer" which is an automaton')
 
 editor = Automaton.editor()
-viewer = Automaton.viewer(expected)
+viewer = Automaton.viewer(viewer)
 alphabet = ', '.join(list(alphabet))
 ==
 
@@ -72,7 +72,7 @@ if attempt >= maxattempt:
     grade = (score, '<p class="warning-state">Un automate attendu était le suivant:</p>')
 else:
     attempt += 1
-    match, error = Automaton.compare(expected, editor)
+    match, error = Automaton.compare(viewer, editor)
     if (error or not match) and attempt >= maxattempt:
         grade = (score, '<p class="warning-state">L\'automate déterministe suivant était une réponse possible à cette question.</p>')
     elif error:
@@ -132,4 +132,5 @@ form== #|html|
     }
 </script>
 ==
+
 
