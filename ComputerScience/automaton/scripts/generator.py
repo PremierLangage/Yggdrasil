@@ -92,7 +92,7 @@ class Generator:
         return alphabet, letter, n, Automaton.parse(regex)
 
     @staticmethod
-    def stringsInLanguageMCQ(automaton: Automaton, maxright=3, maxwrong=3):
+    def multichoice_question(automaton: Automaton, maxright=3, maxwrong=3):
         matchingWords = automaton.random_recognized_strings(maxright)
         checkbox = CheckboxGroup()
         checkbox.items = []
