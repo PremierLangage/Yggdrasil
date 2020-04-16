@@ -6,7 +6,7 @@ maxattempt = 3
 #* feedback shown after a good answer.
 feedback_match = Bonne réponse 
 #* feedback shown after a bad answer.
-feedback_nomatch = <p class="error-state">Vous avez trouvé {score} réponse(s) / {max_score}.</p>
+feedback_nomatch = <p class="error-state">Vous avez trouvé {0} réponse(s) / {1}.</p>
 #* feedback shown after a timeout.
 feedback_timeout = <p class="warning-state">Voici la bonne réponse.</p>
 
