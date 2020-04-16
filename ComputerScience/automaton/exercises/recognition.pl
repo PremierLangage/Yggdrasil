@@ -3,7 +3,6 @@ extends = ../templates/multichoice.pl
 maxattempt = 3
 
 generate== #|py|
-
 from automaton import Automaton
 from generator import Generator
 
