@@ -99,6 +99,7 @@ text== #|html|
     % if step > 1 %}
         {{ viewer|component }}
     {% endif %}
+
     {% if step >= 2 %}
     <p {% if step > 2 %} class="success-state" {% endif %}>
         <em>2. Donnez la table de transition de l'automate en remplissant le tableau ci-dessous.</em>
