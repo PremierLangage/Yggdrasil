@@ -6,6 +6,7 @@ extends = base.pl
 
 #* Maximum number of attempts before showing the right answer.
 maxattempt = 3
+
 #*
 #*  This script must define the following variables:
 #*   
