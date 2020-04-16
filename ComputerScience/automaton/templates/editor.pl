@@ -55,6 +55,7 @@ form_success== #|html|
 {% endif %}
 == 
 
+#* override this key to change the instructions at the bottom of the editor.
 form_instructions== #|html|
 <p>
     <ul>
