@@ -30,6 +30,7 @@ editor.code ==
 
 #! linter:require:expected_stdout::string
 #! linter:require:title::string
+#! linter:require:before
 
 title=bash code template (titre à surcharger!)
 
