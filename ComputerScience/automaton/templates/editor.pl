@@ -24,7 +24,7 @@ maxattempt = 3
 #*     $.facebox({div:'#foo'})
 #*   }
 #* }
-```
+#*```
 #*  alphabet = ['a', b']
 #*  expected = '''
 #*  
