@@ -77,7 +77,7 @@ def frame_message(message, status=None):
     if status == "ok":
         s += '<div style="background-color: #8EFF7F; '
     elif status == "warning":
-        s += '<div style="background-color: #FFA54C; '
+        s += '<div style="background-color: #FFEEAA; '
     elif status == "error":
         s += '<div style="background-color: #FFCCCC; '
     else:
