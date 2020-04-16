@@ -19,6 +19,7 @@ editor1.code ==
 # de validation quand vous avez terminé
 
 ==
+editor1.theme = light 
 
 editor2 =: CodeEditor
 editor2.language = python
