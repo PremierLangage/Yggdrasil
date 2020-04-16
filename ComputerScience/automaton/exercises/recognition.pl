@@ -6,6 +6,8 @@ generate== #|py|
 from automaton import Automaton
 from generator import Generator
 
+# YOU CAN USE ANY OF THE NOTATIONS ACCEPTED BY THE AUTOMATON CLASS HERE
+# object notation, string notation...
 viewer = Automaton.rand(4, 3, 3)
 ==
 
