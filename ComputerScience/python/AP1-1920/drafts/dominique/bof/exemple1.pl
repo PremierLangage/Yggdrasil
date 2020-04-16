@@ -1,7 +1,7 @@
 
 extends=/model/progpython.pl
 
-@ lefichier.py [anthony.py] 
+
 @ /grader/evaluator.py [grader.py]
 
 evaluator==
