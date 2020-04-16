@@ -19,7 +19,7 @@ maxattempt = 3
 #*```python
 #*  generate==
 #*
-#*  alphabet = ['a', b']
+#*  alphabet = ['a', 'b']
 #*  expected = '''
 #*      #states
 #*       S0
