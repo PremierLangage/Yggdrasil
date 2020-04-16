@@ -44,6 +44,8 @@ title=
 text= 
 
 feedback_nomatch = <p class="error-state">L\'automate que vous avez construit ne correspond pas à une réponse attendue.</p>
+feedback_syntax_error = <p class="warning-state">{0}</p>
+
 
 before== #|py|
 
@@ -78,7 +80,7 @@ else:
     if (error or not match) and attempt >= maxattempt:
         grade = (score, '<p class="warning-state">L\'automate déterministe suivant était une réponse possible à cette question.</p>')
     elif error:
-        grade = (-1, f'<p class="warning-state">{error}</p>')
+        grade = (-1, feedback_syntax_error.format(error))
     elif match is True:
         score = 100
         infos, _ = Automaton.editor_properties(editor)
