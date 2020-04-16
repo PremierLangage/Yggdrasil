@@ -35,10 +35,10 @@ deterministic = True
 if 'generate' not in globals():
     raise Exception('You must define a script "generate"')
 
+exec(generate)
+
 if 'expected' not in globals():
     raise Exception('The script "generate" must define a variable "expected" which is an automaton')
-
-exec(generate)
 
 editor = Automaton.editor()
 viewer = Automaton.viewer(expected)
