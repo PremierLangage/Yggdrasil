@@ -86,7 +86,7 @@ else:
         score = 100
         infos, _ = Automaton.editor_properties(editor)
         deterministic = infos['deterministic']
-        grade = (score, ' ')
+        grade = (score, feedback_match)
     else:
         score = 0
         grade=(score, feedback_nomatch)
