@@ -67,11 +67,12 @@ alphabet = ', '.join(list(alphabet))
 
 evaluator== #|py|
 from automaton import Automaton
+
 if attempt >= maxattempt:
     grade = (score, '<p class="warning-state">Un automate attendu était le suivant:</p>')
 else:
     attempt += 1
-    match, error = Automaton.compare(automaton, editor)
+    match, error = Automaton.compare(expected, editor)
     if (error or not match) and attempt >= maxattempt:
         grade = (score, '<p class="warning-state">L\'automate déterministe suivant était une réponse possible à cette question.</p>')
     elif error:
@@ -87,6 +88,7 @@ else:
 ==
 
 form== #|html|
+
 <!-- RENDER AUTOMATON VIEWER IF MAX ATTEMPT IS REACHED -->
 {% if attempt >= maxattempt %}
 {{ viewer|component }}
@@ -125,7 +127,6 @@ form== #|html|
     */
     function onReadyPL(nodes) {
         const submit = nodes.submit; // a reference to the submit button
-
         // hide submit button if needed.
         submit.attr("disabled", ({{ attempt }} >= {{ maxattempt }}) || {{ score }} == 100);
     }
