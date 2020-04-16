@@ -18,7 +18,6 @@ maxattempt = 3
 #*  Example
 #*```python
 #*  generate==
-#*
 #*  alphabet = ['a', 'b']
 #*  expected = '''
 #*      #states
