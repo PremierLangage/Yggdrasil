@@ -45,16 +45,15 @@ evaluator== #|py|
 from evaluator import Evaluator
 
 if attempt >= maxattempt: # timeout
+    checkbox.disabled = True
     grade = (score, feedback_timeout)
 else:
+    attempt += 1
     score, max_score = Evaluator.eval_multi_choice_question(
         checkbox,
         answers,
         withanswer=attempt >= maxattempt
     )
-    attempt += 1
-    checkbox.disabled = True
-
     if score == max_score:
         grade = (100, '<p class="success-state">Bonne réponse</p>')
     else:
