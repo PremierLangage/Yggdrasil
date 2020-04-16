@@ -11,7 +11,7 @@ from automaton import Automaton
 
 # create an empty automaton editor 
 editor = Automaton.editor()
-
+alphabet = ', '.join(['a, b'])
 # a list of properties to check on the automaton of the student.
 properties = [
     { "name": "complete", "error": False, "verify": random.random() < .5, "label": "déterministe" },
@@ -27,11 +27,12 @@ evaluator== #|py|
 
 from automaton import Automaton
 
+# retrieve the properties of the student's automaton 
 infos, error = Automaton.editor_properties(editor)
 
 if not error:
     for e in editor.automaton['alphabet']:
-        if e not in ['a', 'b']:
+        if e not in alphabet.split(','):
             error = f'Le symbole "{e}" ne fait pas partie de l\'alphabet {{a, b}}'
             break
         
