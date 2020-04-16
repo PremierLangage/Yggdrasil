@@ -112,7 +112,7 @@ class Generator:
         return checkbox, matchingWords
 
     @staticmethod
-    def transitionTable(automaton: Automaton, context: dict):
+    def transition_table(automaton: Automaton, context: dict):
         def transition_name(state, symb):
             return f"({state}, {symb})"
 
@@ -140,6 +140,7 @@ class Generator:
             "rows": rows,
             "transitions": transitions
         }
+
 
 
 
