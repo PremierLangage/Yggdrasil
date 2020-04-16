@@ -2,7 +2,7 @@
 
 #! linter:require:generate
 
-extends = /ComputerScience/automaton/templates/base.pl
+extends = base.pl
 
 maxattempt = 3
 #*
