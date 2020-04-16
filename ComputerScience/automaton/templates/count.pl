@@ -2,6 +2,7 @@ extends = editor.pl
 
 maxattempt = 5
 
+
 generate== #|py|
 import random
 from generator import Generator
