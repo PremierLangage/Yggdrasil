@@ -170,6 +170,8 @@ form==#|html|
                 <span class="ion-hide-md-down">Valider</span>
             `);
         }
+
+        // disable submit button
         if (step > maxSteps) {
             submit.attr("disabled", true);
         }
