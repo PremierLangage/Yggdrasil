@@ -73,7 +73,11 @@ else:
 
 evaluator==
 from automaton import Automaton
-exec(globals()[f"eval{step}"])
+try:
+    exec(globals()[f"eval{step}"])
+except Exception as e:
+    import traceback
+    traceback.print_exc()
 ==
 
 title= Construction d'automates
