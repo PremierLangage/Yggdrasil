@@ -1,6 +1,6 @@
 # CONTRACTS FOR FILES WHICH EXTENDS THIS TEMPLATE
 
-#! linter:require:generate
+#! linter:require:generate::str
 
 extends = base.pl
 
@@ -10,7 +10,7 @@ maxattempt = 3
 #* DD
 #*
 #*
-#generate % null
+generate % null
 
 title= 
 text= 
