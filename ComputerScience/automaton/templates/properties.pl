@@ -1,5 +1,7 @@
 extends = base.pl
 
+
+# BUILDER SCRIPT
 before== #|py|
 
 import random
@@ -19,6 +21,7 @@ properties = [
 
 ==
 
+# GRADER SCRIPT
 evaluator== #|py|
 
 from automaton import Automaton
