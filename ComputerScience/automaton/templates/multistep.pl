@@ -78,7 +78,7 @@ exec(globals()[f"eval{step}"])
 
 title= Construction d'automates
 
-text==
+text== #|html|
 <div style="display: flex; align-items: center">
     <div style="box-sizing: border-box; margin: 0 8px 0 0;">
     Soit l’automate A = (Σ, Q, QI, QF, ∆) où:
