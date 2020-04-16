@@ -18,7 +18,7 @@ editor1.code ==
 editor1.theme = "light"
 
 editor2 =: CodeEditor
-editor2.language = python
+editor2.language = py
 editor2.cid = py_editor_2
 editor2.code ==
 # Saisissez votre code ici, et cliquez sur le bouton
@@ -34,6 +34,7 @@ Entrez votre classe
 et vos fonctions 
 {{editor2|component}}
 ==
+
 
 
 
