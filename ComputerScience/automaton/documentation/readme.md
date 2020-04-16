@@ -2,7 +2,7 @@
 
 ## Arborescence
 ```
-├── activitie
+├── activities
 |   └── td.pltp
 ├── documentation
 ├── exercises
