@@ -79,7 +79,7 @@ def frame_message(message, status=None):
     elif status == "warning":
         s += '<div style="background-color: #FFA54C; '
     elif status == "error":
-        s += '<div style="background-color: #FFAAAA; '
+        s += '<div style="background-color: #FFBABA; '
     else:
         s += '<div style="background-color: white; '
     s += 'border-radius: 15px; padding: 10px;" >'
