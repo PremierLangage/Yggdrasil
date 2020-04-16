@@ -1,11 +1,7 @@
 
 @ /utils/sandboxio.py
 @ /ComputerScience/python/AP1-1920/templates/generic/builder.py
-@ /ComputerScience/python/AP1-1920/templates/generic/grader.py
-@ /ComputerScience/python/AP1-1920/templates/generic/utils/test.py
-@ /ComputerScience/python/AP1-1920/templates/generic/utils/mockinput.py
-@ /grader/utils/testgroup.html
-@ /grader/utils/testitem.html
+
 
 title = <em>(Pas de titre défini)</em>
 text = <em>(Pas d'énoncé défini)</em>
@@ -19,7 +15,7 @@ editor1.code ==
 # de validation quand vous avez terminé
 
 ==
-editor1.theme = light 
+editor1.theme = "light"
 
 editor2 =: CodeEditor
 editor2.language = python
