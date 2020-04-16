@@ -46,7 +46,7 @@ text=
 feedback_nomatch = <p class="error-state">L\'automate que vous avez construit ne correspond pas à une réponse attendue.</p>
 feedback_timeout = '<p class="warning-state">L\'automate déterministe suivant était une réponse possible à cette question.</p>'
 feedback_syntax_error = <p class="warning-state">{0}</p>
-
+feedback_match = 
 
 before== #|py|
 
