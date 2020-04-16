@@ -65,16 +65,15 @@ class Generator:
     @staticmethod
     def sequence(alphabet_max_length=2, word_max_length=4):
         """
-        Generate a random alphabet and word
+        Return (alphabet, sequence)
         """
         alphabet = Generator.alphabet(alphabet_max_length)
-        n = random.randint(2, word_max_length)
-        seq =  "".join(
+        word_length = random.randint(2, word_max_length)
+        word =  "".join(
             random.choice(alphabet)
-            for _ in range(n)
+            for _ in range(word_length)
         )
-
-        return alphabet, sequence
+        return alphabet, word
 
     @staticmethod
     def counting(max_symbs=2, length=4, mode=0):
