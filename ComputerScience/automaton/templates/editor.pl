@@ -47,7 +47,7 @@ feedback_match =
 feedback_nomatch = <p class="error-state">L\'automate que vous avez construit ne correspond pas à une réponse attendue.</p>
 #* feedback shown after a timeout.
 feedback_timeout = <p class="warning-state">L\'automate déterministe suivant était une réponse possible à cette question.</p>
-#* feedback shown for a syntax error.
+#* feedback shown for a syntax error. {0} is replaced by the occured error
 feedback_syntax_error = <p class="warning-state">{0}</p>
 
 
@@ -159,6 +159,7 @@ else:
         score = 0
         grade=(score, feedback_nomatch)
 ==
+
 
 
 
