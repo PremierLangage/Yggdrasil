@@ -34,8 +34,7 @@ if 'viewer' not in globals():
 score = -1
 attempt = 0
 maxattempt = int(maxattempt)
-automaton = Automaton.parse(viewer) 
-viewer = Automaton.viewer(automaton)
+viewer = Automaton.viewer(viewer)
 checkbox, answers = Generator.multi_choice_question(automaton)
 ==
 
@@ -59,6 +58,7 @@ else:
     else:
         grade = ((score / max_score) * 100, feedback_nomatch.format(score, max_score))
 ==
+
 
 
 
