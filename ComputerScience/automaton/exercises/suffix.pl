@@ -3,8 +3,6 @@ extends = ../templates/editor.pl
 maxattempt = 5
 
 generate== #|py|
-from generator import Generator
-
 alphabet, suffix, viewer = Generator.suffix(
     3, # length of the alphabet
     3 # max length of the suffix
