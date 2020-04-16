@@ -20,7 +20,15 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Comptage textuel dans Germinal
 
+before==
+import random
+
+things = [("lignes", "6518\n"), ("mots", "165960\n"), ("caractères", "1030016\n")]
+(name_thing, nb_thing) = random.choice(things)
+
+==
+
 text==
 Un fichier **Germinal.txt** a été placé dans le répertoire courant de travail. 
-Établissez une commande shell pour un terminal Unix
+Établissez une commande shell qui affiche le nombre de {{ name_thing }} 
 ==
