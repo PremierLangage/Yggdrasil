@@ -47,7 +47,7 @@ class Generator:
 
 
     @staticmethod
-    def regex(regex):
+    def regex(regex, simple=False):
         """
         Generates an automaton from the given regex.
 
@@ -56,7 +56,8 @@ class Generator:
 
         :return An instance of Automaton class.
         """
-
+        if simple:
+            regex = regex.replace('+', '|')
         return Automaton.parse(regex)
 
     @staticmethod
