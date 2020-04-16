@@ -60,7 +60,7 @@ grade = (score, ' ')
 eval3==#|py|
 from evaluator import Evaluator
 
-right, total = Evaluator.evalStringsInLanguageMCQ(
+right, total = Evaluator.eval_multichoice_question(
     checkbox,
     words,
     withanswer=True
