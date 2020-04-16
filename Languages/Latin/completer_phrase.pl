@@ -7,7 +7,7 @@ from customdragdrop import *
 
 dragdrop = DragDropGroup()
 dragdrop.set_drop({"0": ""})
-dragdrop.set_label(["habet","habent"])
+dragdrop.set_label(["habet","hhhhhabent"])
 ==
 
 text==
