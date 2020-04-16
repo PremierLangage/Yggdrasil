@@ -18,6 +18,23 @@ from components import CheckboxGroup
 class Evaluator:
 
     @staticmethod
+    def eval_transition_table(automaton, table, context):
+        def transition_name(state, symb):
+            return f"({state}, {symb})"
+        error = False
+        transitions = table['transitions']
+        for state in automaton.states:
+            for symb in automaton.alphabet:
+                name = transition_name(state, symb)
+                answer = context[name] # input component
+                answer.suffix = '<i class="fas fa-check"></i>'
+                if answer.value.strip().lower() != transitions[name].strip().lower():
+                    error = True
+                    answer.suffix = '<i class="fas fa-times"></i>'
+        return error
+
+
+    @staticmethod
     def eval_multichoice_question(checkbox: CheckboxGroup, matching: list, withanswer=True):
         right = 0
         total = 0
@@ -36,22 +53,6 @@ class Evaluator:
             elif checked:
                 item['css'] = 'error-border'
         return right, total
-
-    @staticmethod
-    def eval_transition_table(automaton, table, context):
-        def transition_name(state, symb):
-            return f"({state}, {symb})"
-        error = False
-        transitions = table['transitions']
-        for state in automaton.states:
-            for symb in automaton.alphabet:
-                name = transition_name(state, symb)
-                answer = context[name] # input component
-                answer.suffix = '<i class="fas fa-check"></i>'
-                if answer.value.strip().lower() != transitions[name].strip().lower():
-                    error = True
-                    answer.suffix = '<i class="fas fa-times"></i>'
-        return error
 
 
 
