@@ -16,7 +16,7 @@ maxattempt = 3
 #*  **alphabet** => the alphabet of the automaton. e.g. ["a", "b"]
 #*
 #*  Example
-#*```javascript
+#*```python
 #*  generate==
 #*
 #*  alphabet = ['a', b']
