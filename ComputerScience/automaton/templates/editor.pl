@@ -4,12 +4,13 @@
 
 extends = base.pl
 
+#* Maximum number of attempts before showing the right answer.
 maxattempt = 3
 #*
 #*  This script must define the following variables:
 #*   
 #*  **automaton** => an automaton in one of the accepted formats (string, regex, object...)
-#*               This automaton is the one that will be presented to the student. 
+#*               This automaton is considered as the answer and it will be presented to the student at the end. 
 #*
 #*  **alphabet** => the alphabet of the automaton. e.g. ["a", "b"]
 #*
