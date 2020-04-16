@@ -19,10 +19,13 @@ properties = [
     { "name": "coreachable", "error": False ,"verify": random.random() < .5, "label": "co-accessible" },
     { "name": "infinite", "error": False ,"verify": random.random() < .5, "label": "infini" }
 ]
+
 ==
 
 evaluator== #|py|
+
 from automaton import Automaton
+
 anim1 = anim2 = False
 infos, error = Automaton.editor_properties(editor)
 if not error:
@@ -51,6 +54,7 @@ else:
     else:
         feedback = '<br/>'.join([f'<p class="error-state">{e}</p>' for e in messages])
         grade=(0, feedback)
+
 ==
 
 title= Propriétés d'un automate
