@@ -447,7 +447,7 @@ class Automaton:
             raise SyntaxError("L'automate que vous avez saisi ne contient aucun symbole!")
         if 'transitions' not in objectNotation or not len(objectNotation['transitions']):
             raise SyntaxError("L'automate que vous avez saisi ne contient aucune transition!")
-           
+
         # check the transitions of the editor
         states = objectNotation['states']
         initials = objectNotation['initialStates']
@@ -485,6 +485,8 @@ class Automaton:
             toState = transition['toState']
             fromState = transition['fromState']
             for symb in transition['symbols']:
+                if symb not in alphabet:
+                    raise SyntaxError(f'Le symbole "{symb}" ne fait pas partie de l\'alphabet {alphabet}')
                 if symb not in transitions[fromState]:
                     transitions[fromState][symb] = set()
                 transitions[fromState][symb].add(toState)
@@ -1004,5 +1006,6 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
