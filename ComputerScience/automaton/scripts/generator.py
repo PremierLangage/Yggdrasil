@@ -179,6 +179,7 @@ class Generator:
 
         # pre-parse to optimize otherwise random_recognized_strings and random_unrecognized_strings will parse twice
         parsed = Automaton.parse(obj)
+    
         recognized = Automaton.random_recognized_strings(parsed, maxright)
         unrecognized =  Automaton.random_unrecognized_strings(parsed, maxwrong)
     
