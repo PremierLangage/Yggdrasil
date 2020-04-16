@@ -33,7 +33,7 @@ infos, error = Automaton.editor_properties(editor)
 if not error:
     for e in editor.automaton['alphabet']:
         if e not in alphabet.split(','):
-            error = f'Le symbole "{e}" ne fait pas partie de l\'alphabet {{a, b}}'
+            error = f'Le symbole "{e}" ne fait pas partie de l\'alphabet {alphabet}'
             break
         
 if error:
@@ -62,7 +62,7 @@ else:
 title= Propriétés d'un automate
 text==
 <p>
-Pour cette question, on considère l'alphabet <b>Σ</b> = <b>{{ '{' }} a,b {{ '}' }}</b>.
+Pour cette question, on considère l'alphabet <b>Σ</b> = <b>{{ '{' }} {{ alphabet }} {{ '}' }}</b>.
 </p>
 <p>
 Donnez un exemple d'automate respectant les propriétés suivantes:
