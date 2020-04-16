@@ -39,7 +39,7 @@ checkbox.disabled = True
 if nb_ok == total:
     grade = (100, '<p class="success-state">Bonne réponse</p>')
 else:
-    grade = ((right / total) * 100, f"<p class='warning-state'>{right} / {total}</p>")
+    grade = ((nb_ok / total) * 100, f"<p class='warning-state'>{right} / {total}</p>")
 ==
 
 
