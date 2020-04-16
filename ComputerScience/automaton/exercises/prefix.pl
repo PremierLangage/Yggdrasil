@@ -3,10 +3,9 @@ extends = ../templates/editor.pl
 maxattempt = 5
 
 generate== #|py|
-alphabet, prefix, viewer = Generator.prefix(
-    3, # length of the alphabet
-    3  # max length of the prefix
-)
+max_symbs = 3
+max_prefix_length = 3
+alphabet, prefix, viewer = Generator.prefix(max_symbs, max_prefix_length)
 ==
 
 title = Préfixe
