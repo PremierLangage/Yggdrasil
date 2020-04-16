@@ -15,7 +15,7 @@ message = {
     1: 'au plus'
 }[mode]
 
-alphabet, letter, occurences, expected = Generator.counting(
+alphabet, letter, occurences, viewer = Generator.counting(
     3, # length of the alphabet
     4, # max length of the word to generate
     mode
@@ -32,5 +32,6 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 </p>
 {% endif %}
 ==
+
 
 
