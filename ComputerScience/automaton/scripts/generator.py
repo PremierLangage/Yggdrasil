@@ -171,6 +171,7 @@ class Generator:
         """
 
         """
+
         matchingWords = automaton.random_recognized_strings(maxright)
         checkbox = CheckboxGroup()
         checkbox.items = []
