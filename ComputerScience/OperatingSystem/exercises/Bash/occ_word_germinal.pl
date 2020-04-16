@@ -19,7 +19,7 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 @ Germinal.txt
 
 author=Nicolas Borie
-title=Comptage d'occurence dans Germinal
+title=Comptage d'occurences dans Germinal
 
 before==
 import random
@@ -32,7 +32,7 @@ text==
 Un fichier **Germinal.txt** a été placé dans le répertoire courant de travail. 
 Établissez une **commande shell** qui affiche le nombre de fois que le mot 
 **{{ name_thing }}** apparait dans le texte (au singulier ou au pluriel). Débrouillez 
-vous pour votre résultat numérique soit affiché seul sur une ligne. N'hésitez pas à
+vous pour que votre résultat numérique soit affiché seul sur une ligne. N'hésitez pas à
 faire plusieurs essais.
 ==
 
