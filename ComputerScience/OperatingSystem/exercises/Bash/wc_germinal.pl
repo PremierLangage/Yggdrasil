@@ -20,4 +20,7 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Comptage textuel dans Germinal
 
-
+text==
+Un fichier **Germinal.txt** a été placé dans le répertoire courant de travail. 
+Établissez une commande shell pour un terminal Unix
+==
