@@ -24,7 +24,7 @@ title=Comptage d'occurence dans Germinal
 before==
 import random
 
-things = [("mine", "74\n")]
+things = [("mine", "73\n")]
 (name_thing, expected_stdout) = random.choice(things)
 ==
 
