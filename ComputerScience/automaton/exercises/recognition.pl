@@ -1,4 +1,4 @@
-extends = ../templates/base.pl
+extends = ../templates/multichoice.pl
 
 maxattempt = 3
 
