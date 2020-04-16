@@ -79,7 +79,7 @@ else:
         grade = (-1, f'<p class="warning-state">{error}</p>')
     elif match is True:
         score = 100
-        infos, _ = Automaton.informations(editor)
+        infos, _ = Automaton.editor_properties(editor)
         deterministic = infos['deterministic']
         grade = (score, ' ')
     else:
