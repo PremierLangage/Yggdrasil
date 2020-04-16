@@ -129,6 +129,7 @@ form==#|html|
         <th>{{ row }}</th>
         {% endfor %}
     </tr>
+    {{ table }}
     {% for state, inputs in table['rows'].items() %}
     <tr>
         <td>
