@@ -169,7 +169,12 @@ class Generator:
     @staticmethod
     def multi_choice_question(automaton: Automaton, maxright=3, maxwrong=3):
         """
+        Generates a multi choice question exercise to test the words recognized by the given automaton
+        :param automaton the automaton
+        :param maxright max number of right answers
+        :param maxwrong max number of wrong answers
 
+        :return (checkbox: CheckboxGroup, words: str[])
         """
 
         matchingWords = automaton.random_recognized_strings(maxright)
