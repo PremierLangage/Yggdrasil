@@ -14,7 +14,7 @@ messages = {
 }
 message = messages[mode]
 # counting( nb lettres alphabet, nb occurences demandées , mode)
-alphabet, letter, n, automaton = Generator.counting(3, 4, mode)
+alphabet, letter, n, expected = Generator.counting(3, 4, mode)
 ==
 
 title = Automates Occurences
