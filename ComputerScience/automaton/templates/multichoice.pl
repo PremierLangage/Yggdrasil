@@ -3,6 +3,14 @@ extends = base.pl
 #* Maximum number of attempts before showing the right answer.
 maxattempt = 3
 
+#* feedback shown after a good answer.
+feedback_match = 
+#* feedback shown after a bad answer.
+feedback_nomatch = <p class="error-state">L\'automate que vous avez construit ne correspond pas à une réponse attendue.</p>
+#* feedback shown after a timeout.
+feedback_timeout = <p class="warning-state">Voici la bonne réponse.</p>
+#* feedback shown for a syntax error.
+feedback_syntax_error = <p class="warning-state">{0}</p>
 
 
 title= 
