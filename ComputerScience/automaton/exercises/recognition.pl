@@ -39,7 +39,8 @@ from generator import Generator
 #     ]
 # }
 
-
+# REGEX NOTATION
+viewer = 'ab(a|b|c)*'
 #viewer = Automaton.rand(4, 3, 3)
 ==
 
