@@ -82,8 +82,7 @@ except Exception as e:
 title= Construction d'automates
 
 text== #|html|
-<div style="display: flex; align-items: center">
-    <div style="box-sizing: border-box; margin: 0 8px 0 0;">
+<div>
     Soit l’automate A = (Σ, Q, QI, QF, ∆) où:
     <ul>
         <li> Σ = {{ '{' }} {{ A}}  {{ '}' }},</li>
@@ -97,6 +96,9 @@ text== #|html|
         <em>1. Représentez cet automate sous forme de graphe.</em>
     </p>
 
+    % if step > 1 %}
+        {{ viewer|component }}
+    {% endif %}
     {% if step >= 2 %}
     <p {% if step > 2 %} class="success-state" {% endif %}>
         <em>2. Donnez la table de transition de l'automate en remplissant le tableau ci-dessous.</em>
@@ -108,13 +110,6 @@ text== #|html|
         <em>3. Parmi les mots suivants, lesquels sont reconnus par cet automate?</em>
     </p>
     {% endif %}
-    </div>
-
-    <div style="box-sizing: border-box; margin: 0 0 0 8px;">
-        {% if step > 1 %}
-        {{ viewer|component }}
-        {% endif %}
-    </div>
 </div>
 ==
 
