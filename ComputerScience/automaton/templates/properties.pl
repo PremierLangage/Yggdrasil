@@ -3,8 +3,6 @@ extends = base.pl
 maxattempt = 3
 complete % true
 deterministic % true
-anim1 % false
-anim2 % false
 
 before== #|py|
 
@@ -15,7 +13,6 @@ from automaton import Automaton
 editor = Automaton.editor()
 
 # a list of properties to check on the automaton of the student.
-
 properties = [
     { "name": "complete", "error": False, "verify": random.random() < .5, "label": "déterministe" },
     { "name": "deterministic", "error": False ,"verify": random.random() < .5, "label": "complet" },
@@ -30,7 +27,6 @@ evaluator== #|py|
 
 from automaton import Automaton
 
-anim1 = anim2 = False
 infos, error = Automaton.editor_properties(editor)
 if not error:
     for e in editor.automaton['alphabet']:
