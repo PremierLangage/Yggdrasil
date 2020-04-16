@@ -22,7 +22,7 @@ form==
 {{editor1|component}}
 ==
 
-@ /grader/evaluator.py [grader.py]
+#@ /grader/evaluator.py [grader.py]
 evaluator==
 
 
