@@ -39,9 +39,12 @@ from generator import Generator
 #     ]
 # }
 
+# RANDOM GENERATIOON
+#viewer = Automaton.rand(4, 3, 3)
+
 # REGEX NOTATION
 viewer = 'ab(a|b|c)*'
-#viewer = Automaton.rand(4, 3, 3)
+
 ==
 
 title= Lecture d'automates
