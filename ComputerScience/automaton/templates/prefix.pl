@@ -6,7 +6,7 @@ generate== #|py|
 from generator import Generator
 alphabet, prefix, expected = Generator.prefix(
     3, # length of the alphabet
-    3
+    3  # max length of the prefix
 )
 ==
 
