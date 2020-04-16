@@ -42,8 +42,8 @@ else:
     messages = []
     for prop in properties:
         name   = prop["name"]
-        verify = prop["verify"]
         label  = prop["label"]
+        verify = prop["verify"]
         prop['error'] = False
         if verify != infos[name]:
             prop['error'] = True
