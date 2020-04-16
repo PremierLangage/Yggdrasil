@@ -4,7 +4,8 @@ maxattempt = 5
 
 generate== #|py|
 from generator import Generator
-alphabet, prefix, expected = Generator.prefix(
+
+alphabet, prefix, viewer = Generator.prefix(
     3, # length of the alphabet
     3  # max length of the prefix
 )
@@ -20,6 +21,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 </p>
 {% endif %}
 ==
+
 
 
 
