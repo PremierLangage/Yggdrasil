@@ -1,9 +1,11 @@
 import math
 import random
 
+# https://github.com/qntm/greenery
 import fsm
 import lego
 
+# https://github.com/caleb531/automata
 from automata.fa.dfa import DFA
 from automata.fa.nfa import NFA
 
@@ -73,15 +75,15 @@ class Automaton:
     )
     """
 
-    def __init__(self, fa):
-        if not isinstance(fa, fsm.fsm):
-            raise TypeError('argument "fa" must be an instance of fsm.fsm')
+    def __init__(self, state_machine):
+        if not isinstance(state_machine, fsm.fsm):
+            raise TypeError('argument "state_machine" must be an instance of fsm.fsm')
 
-        self.fa = fa
+        self.state_machine = state_machine
         self._stringifyStates()
 
     def __str__(self):
-        return str(self.fa)
+        return str(self.state_machine)
 
     # PROPERTIES
 
@@ -90,28 +92,28 @@ class Automaton:
         """
         Return a set of the final states of the automaton. e.g. ['S0', 'S1', 'S2']
         """
-        return self.fa.states
+        return self.state_machine.states
 
     @property
     def initial(self):
         """
         Gets the initial state of the automaton.
         """
-        return self.fa.initial
+        return self.state_machine.initial
 
     @property
     def alphabet(self):
         """
         Gets a set of the symbols in the automaton. e.g. ['a', 'b', 'c']
         """
-        return self.fa.alphabet
+        return self.state_machine.alphabet
 
     @property
     def finals(self):
         """
         Return a set of the final states of the automaton. e.g. ['S3', 'S4']
         """
-        return self.fa.finals
+        return self.state_machine.finals
 
     @property
     def transitions(self):
@@ -127,7 +129,7 @@ class Automaton:
             'S2': { 'b': 'S2' }
         }
         """
-        return self.fa.map
+        return self.state_machine.map
 
     # STATIC METHODS
 
@@ -179,8 +181,8 @@ class Automaton:
                 '''
             )
 
-        if 'fa' in obj: # from serialized Automaton instance inside a grader
-            return Automaton.parse(obj['fa'])
+        if 'state_machine' in obj: # from serialized Automaton instance inside a grader
+            return Automaton.parse(obj['state_machine'])
 
         if 'initialStates' in obj: # from object notation
             return Automaton.from_object_notation(obj)
@@ -259,7 +261,7 @@ class Automaton:
                         symb = alphabet[j]
                         transitions[fromState] = {symb: toState for toState in toStates}
 
-            fa = fsm.fsm(
+            state_machine = fsm.fsm(
                 alphabet=set(alphabet),
                 states=set(states),
                 initial=initial,
@@ -268,15 +270,15 @@ class Automaton:
             ).reduce()
     
             symbolsInTransitions = set()
-            for fromState, toStates in fa.map.items():
+            for fromState, toStates in state_machine.map.items():
                     for symb in toStates:
                         symbolsInTransitions.add(symb)
 
-            if len(fa.alphabet) != len(symbolsInTransitions):
+            if len(state_machine.alphabet) != len(symbolsInTransitions):
                 continue
 
-            if len(fa.states) == numStates:
-                return Automaton(fa)
+            if len(state_machine.states) == numStates:
+                return Automaton(state_machine)
 
     @staticmethod
     def from_regex(regex: str):
@@ -487,6 +489,7 @@ class Automaton:
                     transitions[fromState][symb] = set()
                 transitions[fromState][symb].add(toState)
 
+        # create a nfa that is equivalent to the given automaton
         nfa = NFA(
             states=set(states),
             input_symbols=set(alphabet),
@@ -495,14 +498,21 @@ class Automaton:
             final_states=set(finals)
         )
 
+        # create a dfa that is equivalent to the nfa
         dfa = DFA.from_nfa(nfa)
-        return Automaton(fsm.fsm(
+
+        state_machine = fsm.fsm(
             states=dfa.states,
             alphabet=dfa.input_symbols,
             initial=dfa.initial_state,
             finals=dfa.final_states,
             map=dfa.transitions
-        ).reduce())
+        )
+    
+        # minimize the fsm
+        minimal = state_machine.reduce()
+
+        return Automaton(minimal)
 
     @staticmethod
     def viewer(obj):
@@ -542,7 +552,7 @@ class Automaton:
         try:
             a = Automaton.parse(a)
             b = Automaton.parse(b)
-            return a.fa.reduce().equivalent(b.fa.reduce()), None
+            return a.state_machine.equivalent(b.state_machine), None
         except Exception as e:
             return False, str(e)
     
@@ -679,7 +689,7 @@ class Automaton:
     
     def iterate(self, fn):
         """ Call fn with fromState, toState, symb for each transition of the automaton"""
-        for fromState, toStates in self.fa.map.items():
+        for fromState, toStates in self.state_machine.map.items():
             for symb, toState in toStates.items():
                 fn(
                     fromState,
@@ -703,12 +713,12 @@ class Automaton:
         ==
         """
 
-        fa = self.fa
+        state_machine = self.state_machine
 
-        states    = '#states\n' + '\n'.join([e for e in fa.states])
-        initials  = '#initials\n' + fa.initial
-        accepting = '#accepting\n' + '\n'.join([e for e in fa.finals])
-        alphabet  = '#alphabet\n' + '\n'.join([e for e in fa.alphabet])
+        states    = '#states\n' + '\n'.join([e for e in state_machine.states])
+        initials  = '#initials\n' + state_machine.initial
+        accepting = '#accepting\n' + '\n'.join([e for e in state_machine.finals])
+        alphabet  = '#alphabet\n' + '\n'.join([e for e in state_machine.alphabet])
 
         transitions = []
         def fn(fromState, toState, symb):
@@ -796,7 +806,7 @@ class Automaton:
         """
         r = []
         i = 0
-        for e in self.fa.strings():
+        for e in self.state_machine.strings():
             if e:
                 r.append(''.join(e))
             else:
@@ -820,7 +830,7 @@ class Automaton:
         """
         r = []
         i = 0
-        for e in self.fa.everythingbut().strings():
+        for e in self.state_machine.everythingbut().strings():
             if e:
                 r.append(''.join(e))
             else:
@@ -890,22 +900,108 @@ class Automaton:
                 return state
             return str(state)
 
-        fa = self.fa
-        alphabet = set([e for e in fa.alphabet if type(e) is str])
-        initial = stringify(fa.initial)
+        state_machine = self.state_machine
+        alphabet = set([e for e in state_machine.alphabet if type(e) is str])
+        initial = stringify(state_machine.initial)
         finals = set([
-            stringify(e) for e in fa.finals
+            stringify(e) for e in state_machine.finals
         ])
         states = set([
-            stringify(e) for e in fa.states
+            stringify(e) for e in state_machine.states
         ])
         map = {
             stringify(fromState): {
                 symb: stringify(toStates[symb]) for symb in toStates
-            } for fromState, toStates in fa.map.items()
+            } for fromState, toStates in state_machine.map.items()
         }
-        self.fa = fsm.fsm(
+        self.state_machine = fsm.fsm(
             alphabet=alphabet, states = states, initial=initial, finals=finals, map=map
         )
 
+
+
+
+
+if __name__ == '__main__':
+    objectNotation = {
+        "alphabet": ["a", "b", "c"],
+        "states": ["S0", "S1", "S2"],
+        "initialStates":["S0"],
+        "acceptingStates": ["S2"],
+        "transitions": [
+            { "fromState": "S0", "toState": "S1", "symbols": ["a"]},
+            { "fromState": "S1", "toState": "S2", "symbols": ["b"]},
+            { "fromState": "S2", "toState": "S2", "symbols": ["a", "b", "c"]}
+        ]
+    }
+
+    stringNotation = '''
+        #states
+        S0
+        S1
+        S2
+        #initials
+        S0
+        #accepting
+        S2
+        #alphabet
+        a
+        b
+        c
+        #transitions
+        S0:a>S1
+        S1:b>S2
+        S2:a,b,c>S2
+    '''
+
+    print(Automaton.compare(objectNotation, Automaton.parse(stringNotation)))
+
+    # ISOMORPH
+    A = '''
+        #states
+        A
+        B
+        C
+        #initials
+        A
+        #accepting
+        A
+        #alphabet
+        a
+        b
+        #transitions
+        A:b>C
+        A:a>B
+        C:a>A
+        C:b>B
+        B:b>A
+        B:a>B
+    '''
+
+    B ='''
+        #states
+        D
+        E
+        F
+        #initials
+        D
+        #accepting
+        D
+        #alphabet
+        a
+        b
+        #transitions
+        D:b>F
+        D:a>E
+        F:a>D
+        F:b>E
+        E:b>D
+        E:a>E
+    '''
+
+    print(Automaton.compare(A, B))
+
+    # properties
+    print(Automaton.parse(A).properties())
+    print(Automaton.editor_informations(AutomatonEditor(automaton=objectNotation)))
 
