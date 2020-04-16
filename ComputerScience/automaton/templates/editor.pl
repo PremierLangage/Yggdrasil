@@ -112,6 +112,7 @@ form== #|html|
 {{ editor|component }}
 
 <br>
+
 <p>
     <ul>
         <li> Pour créer un nouvel état, double clic gauche. Utilisez les boutons pour changer le type de votre état.<br>
