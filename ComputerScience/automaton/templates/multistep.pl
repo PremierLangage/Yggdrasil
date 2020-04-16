@@ -51,7 +51,7 @@ from evaluator import Evaluator
 # an instance of Automaton class from the dict 'automaton'
 automaton = Automaton.parse(automaton)
 
-if Evaluator.evalTransitionTable(automaton, table, globals()) == 0:
+if Evaluator.eval_transition_table(automaton, table, globals()) == 0:
     score = score + (100 / maxSteps), step + 1
 grade = (score, ' ')
 ==
@@ -176,4 +176,5 @@ form==#|html|
     }
 </script>
 ==
+
 
