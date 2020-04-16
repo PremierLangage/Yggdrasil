@@ -182,12 +182,14 @@ class Generator:
     
         checkbox = CheckboxGroup()
         checkbox.items = []
+
         for e in recognized:
             checkbox.items.append({
                 "id": str(uuid.uuid4()),
                 "content": e,
                 "multiple": True
             })
+    
         for e in unrecognized:
             checkbox.items.append({
                 "id": str(uuid.uuid4()),
