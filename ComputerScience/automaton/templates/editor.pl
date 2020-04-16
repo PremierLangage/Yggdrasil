@@ -73,7 +73,7 @@ alphabet = ', '.join(list(alphabet))
 evaluator== #|py|
 from automaton import Automaton
 
-if attempt >= maxattempt:
+if attempt >= maxattempt: # timeout
     grade = (score, feedback_timeout)
 else:
     attempt += 1
