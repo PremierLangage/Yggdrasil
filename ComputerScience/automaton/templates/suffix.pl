@@ -6,7 +6,10 @@ maxattempt = 5
 generate== #|py|
 from generator import Generator
 
-alphabet, suffix, expected = Generator.suffix(3, 3)
+alphabet, suffix, expected = Generator.suffix(
+    3, # length of the alphabet
+    3
+)
 ==
 
 title = Automates Suffixes
