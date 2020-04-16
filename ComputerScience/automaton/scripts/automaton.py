@@ -319,19 +319,19 @@ class Automaton:
         Creates a minimal deterministic Automaton from the given AutomatonDrawer instance.
         (the automaton is determinized and minimized if needed)
 
-        :param editor an AutomatonDrawer component.
+        :param viewer an AutomatonDrawer component.
         :return an Automaton instance.
         :raise TypeError if automaton is not an instance of AutomatonDrawer.
         :raise SyntaxError if automaton cannot be parsed.
         """
 
-        if not isinstance(editor, AutomatonDrawer):
+        if not isinstance(viewer, AutomatonDrawer):
             raise TypeError('parameter "viewer" must be an instance of AutomatonDrawer')
     
-        if isinstance(editor.automaton, str):
-            return Automaton.from_string_notation(editor.automaton)
+        if isinstance(viewer.automaton, str):
+            return Automaton.from_string_notation(viewer.automaton)
 
-        return Automaton.from_object_notation(editor.automaton)
+        return Automaton.from_object_notation(viewer.automaton)
 
     @staticmethod
     def from_string_notation(stringNotation: str):
