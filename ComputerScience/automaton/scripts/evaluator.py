@@ -35,14 +35,14 @@ class Evaluator:
 
 
     @staticmethod
-    def eval_multichoice_question(checkbox: CheckboxGroup, matching: list, withanswer=True):
+    def eval_multichoice_question(checkbox: CheckboxGroup, words: list, withanswer=True):
         right = 0
         total = 0
         for item in checkbox.items:
             item['css'] = ''
             checked = item['checked']
             content = item['content']
-            if content in matching:
+            if content in words:
                 total += 1
                 item['css'] = 'success-border'
                 if checked:
