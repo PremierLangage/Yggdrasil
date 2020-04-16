@@ -6,6 +6,7 @@ generate== #|py|
 max_symbs = 3
 max_suffix_length = 3
 alphabet, suffix, viewer = Generator.suffix(max_symbs, max_suffix_length)
+alphabet = ', '.join(list(alphabet))
 ==
 
 title = Suffixe
@@ -19,5 +20,6 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 </p>
 {% endif %}
 ==
+
 
 
