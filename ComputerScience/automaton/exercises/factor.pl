@@ -3,10 +3,9 @@ extends = ../templates/editor.pl
 maxattempt = 5
 
 generate== #|py|
-alphabet, factor, viewer = Generator.factor(
-    3,  # length of the alphabet
-    3,  # max length of the factor
-)
+max_symbs = 3
+max_factor_length = 3
+alphabet, factor, viewer = Generator.factor(max_symbs, max_factor_length)
 ==
 
 title = Facteur
