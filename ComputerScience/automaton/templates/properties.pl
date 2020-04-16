@@ -14,7 +14,6 @@ import random
 from automaton import Automaton
 
 editor = Automaton.editor()
-
 properties = [
     { "name": "complete", "error": False, "verify": random.random() < .5, "label": "déterministe" },
     { "name": "deterministic", "error": False ,"verify": random.random() < .5, "label": "complet" },
@@ -49,7 +48,6 @@ else:
                 messages.append("Vous devez construire un automate " + label.lower())
             else:
                 messages.append("Votre automate ne doit pas être " + label.lower())
-
     if len(messages) == 0:
         grade=(100, '<p class="success-state">Bonne réponse</<p>')
     else:
