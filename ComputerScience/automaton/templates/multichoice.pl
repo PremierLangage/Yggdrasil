@@ -28,9 +28,9 @@ if 'viewer' not in globals():
 score = -1
 attempt = 0
 maxattempt = int(maxattempt)
-dfa = Automaton.parse(viewer) 
-viewer = Automaton.viewer(dfa)
-checkbox, answers = Generator.multi_choice_question(dfa)
+automaton = Automaton.parse(viewer) 
+viewer = Automaton.viewer(automaton)
+checkbox, answers = Generator.multi_choice_question(automaton)
 ==
 
 evaluator== #|py|
