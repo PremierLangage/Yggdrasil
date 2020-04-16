@@ -554,6 +554,7 @@ class Automaton:
             b = Automaton.parse(b)
             return a.state_machine.equivalent(b.state_machine), None
         except Exception as e:
+            raise e
             return False, str(e)
     
     # TODO remove this method and use `properties` method once 
@@ -1004,6 +1005,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
