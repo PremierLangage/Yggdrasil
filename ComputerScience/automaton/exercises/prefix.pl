@@ -11,7 +11,7 @@ alphabet, prefix, viewer = Generator.prefix(
 )
 ==
 
-title = Automates Préfixes
+title = Préfixe
 text ==
 Pour cette question, on considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage **L1** = {{ '{' }}  mots qui commencent par **{{ prefix }}** {{ '}' }} <br>
@@ -21,6 +21,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 </p>
 {% endif %}
 ==
+
 
 
 
