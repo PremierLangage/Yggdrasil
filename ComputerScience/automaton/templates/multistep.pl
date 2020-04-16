@@ -129,16 +129,16 @@ form==#|html|
         <th>{{ row }}</th>
         {% endfor %}
     </tr>
-    {% for state, rows in table['rows'].items() %}
+    {% for state, inputs in table['rows'].items() %}
     <tr>
         <td>
             {% if state == QI %}<i class="fas fa-arrow-right"></i>{% endif %}
             {% if state in QF %}<i class="fas fa-arrow-left"></i>{% endif %}
             {{ state }}
         </td>
-        {% for row in rows %}
+        {% for input in inputs %}
         <td>
-            {{ row|component }}
+            {{ input|component }}
         </td>
         {% endfor %}
     </tr>
