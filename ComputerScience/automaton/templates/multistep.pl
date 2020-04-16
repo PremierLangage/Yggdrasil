@@ -117,7 +117,7 @@ text==
 
 form==#|html|
 
-<!-- CONSTRUCTION STEP -->
+<!-- EDITOR STEP -->
 {% if step == 1 %}
 {{ editor|component }}
 <!-- TRANSITION TABLE STEP -->
