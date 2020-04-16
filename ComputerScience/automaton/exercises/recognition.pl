@@ -28,7 +28,15 @@ from generator import Generator
 
 # OBJECT NOTATION
 viewer = {
-
+    "alphabet": ["a", "b", "c"],
+    "states": ["S0", "S1", "S2"],
+    "initialStates":["0"],
+    "acceptingStates": ["2"],
+    "transitions": [
+        { "fromState": "S0", "toState": "S1", "symbols": ["a"]},
+        { "fromState": "S1", "toState": "S2", "symbols": ["b"]},
+        { "fromState": "S2", "toState": "S2", "symbols": ["a", "b", "c"]}
+    ]
 }
 #viewer = Automaton.rand(4, 3, 3)
 ==
