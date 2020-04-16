@@ -24,7 +24,7 @@ before==
 import random
 
 things = [("lignes", "6518\n"), ("mots", "165960\n"), ("caractères", "1030016\n")]
-(name_thing, nb_thing) = random.choice(things)
+(name_thing, expected_stdout) = random.choice(things)
 
 ==
 
