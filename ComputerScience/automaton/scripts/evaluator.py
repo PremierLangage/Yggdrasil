@@ -19,6 +19,9 @@ class Evaluator:
 
     @staticmethod
     def eval_transition_table(automaton, table, context):
+        """
+        Eval script of transition table question.
+        """
         def transition_name(state, symb):
             return f"({state}, {symb})"
         error = False
