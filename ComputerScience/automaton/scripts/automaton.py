@@ -687,6 +687,11 @@ class Automaton:
 
     @staticmethod
     def accepts(obj, word: str):
+        """
+        Checks `word` is recognized by the automaton `obj`.
+        :param obj An automaton in any of the accepted notation
+        :param word the word to test
+        """
         word = word.replace('ε', '')
         return Automaton.parse(obj).state_machine.accepts(word)
 
