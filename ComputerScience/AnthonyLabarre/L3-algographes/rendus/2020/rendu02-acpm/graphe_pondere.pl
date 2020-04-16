@@ -9,7 +9,7 @@ text = Écrivez une classe Graphe implémentant un graphe pondéré non orienté
 # création de l'éditeur de code
 editor1 =: CodeEditor
 editor1.language = python
-editor1.cid = py_editor_1
+editor1.cid = answer
 editor1.code ==
 # Saisissez votre code ici, et cliquez sur le bouton
 # de validation quand vous avez terminé
