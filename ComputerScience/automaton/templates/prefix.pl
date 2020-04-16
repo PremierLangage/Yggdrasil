@@ -4,7 +4,10 @@ maxattempt = 5
 
 generate== #|py|
 from generator import Generator
-alphabet, prefix, expected = Generator.prefix(3, 3)
+alphabet, prefix, expected = Generator.prefix(
+    3, # length of the alphabet
+    3
+)
 ==
 
 title = Automates Préfixes
