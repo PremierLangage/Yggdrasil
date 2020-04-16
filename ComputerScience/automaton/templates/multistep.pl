@@ -116,12 +116,9 @@ text==
 ==
 
 form==#|html|
-
-<!-- EDITOR STEP -->
-{% if step == 1 %}
+{% if step == 1 %} <!-- EDITOR STEP -->
 {{ editor|component }}
-<!-- TRANSITION TABLE STEP -->
-{% elif step == 2 %}
+{% elif step == 2 %} <!-- TRANSITION TABLE STEP -->
 <table>
     <tr>
         <th></th>
