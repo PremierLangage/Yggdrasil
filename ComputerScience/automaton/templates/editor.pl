@@ -1,7 +1,7 @@
 extends = /ComputerScience/automaton/templates/base.pl
 
 maxattempt = 3
-generate % None
+generate % null
 
 title= 
 text= 
