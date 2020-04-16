@@ -59,7 +59,7 @@ else:
 ==
 
 title= Propriétés d'un automate
-text==
+text== #|html|
 <p>
 Pour cette question, on considère l'alphabet <b>Σ</b> = <b>{{ '{' }} {{ alphabet }} {{ '}' }}</b>.
 </p>
@@ -85,6 +85,7 @@ Donnez un exemple d'automate respectant les propriétés suivantes:
 form ==
 {{ editor|component }}
 ==
+
 
 
 
