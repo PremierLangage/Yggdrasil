@@ -38,8 +38,8 @@ class Generator:
         """
         Generates an alphabet with the letters taken in alphabetical order.
 
-        :param length the length of the generated alphabet
-        :return alphabet: str the generated alphabet
+        :param length The length of the generated alphabet
+        :return alphabet: str The generated alphabet
         """
         alphabet =  [string.ascii_lowercase[i] for i in range(length)]
         return alphabet
