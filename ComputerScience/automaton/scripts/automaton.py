@@ -559,7 +559,7 @@ class Automaton:
     # TODO remove this method and use `properties` method once 
     # the class supported non dfa automatons
     @staticmethod
-    def editor_informations(editor: AutomatonEditor):
+    def editor_properties(editor: AutomatonEditor):
         """
         Gets useful informations about the given edited automaton.
         """
@@ -1003,5 +1003,6 @@ if __name__ == '__main__':
 
     # properties
     print(Automaton.parse(A).properties())
-    print(Automaton.editor_informations(AutomatonEditor(automaton=objectNotation)))
+    print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
