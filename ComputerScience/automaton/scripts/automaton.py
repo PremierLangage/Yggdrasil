@@ -685,6 +685,10 @@ class Automaton:
             "coreachable": len(coreachables) == n
         }, None
 
+    @staticmethod
+    def accepts(obj, word: str):
+        return Automaton.parse(obj).state_machine.accepts(word)
+
     # INSTANCE METHODS
     
     def iterate(self, fn):
@@ -1004,6 +1008,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
