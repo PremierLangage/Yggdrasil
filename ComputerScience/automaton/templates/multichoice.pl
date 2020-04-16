@@ -6,11 +6,9 @@ maxattempt = 3
 #* feedback shown after a good answer.
 feedback_match = Bonne réponse 
 #* feedback shown after a bad answer.
-feedback_nomatch = <p class="error-state">L\'automate que vous avez construit ne correspond pas à une réponse attendue.</p>
+feedback_nomatch = <p class="error-state">Vous avez trouvé {score} réponse(s) / {max_score}.</p>
 #* feedback shown after a timeout.
 feedback_timeout = <p class="warning-state">Voici la bonne réponse.</p>
-#* feedback shown for a syntax error.
-feedback_syntax_error = <p class="warning-state">{0}</p>
 
 
 title= 
@@ -59,7 +57,7 @@ else:
         checkbox.disabled = True
         grade = (100, feedback_match)
     else:
-        grade = ((score / max_score) * 100, f"<p class='warning-state'>{score} / {max_score}</p>")
+        grade = ((score / max_score) * 100, feedback_nomatch.format(score, max_score))
 ==
 
 
