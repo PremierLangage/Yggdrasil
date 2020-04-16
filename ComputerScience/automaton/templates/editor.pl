@@ -135,7 +135,6 @@ maxattempt = int(maxattempt)
 deterministic = True
 editor = Automaton.editor()
 viewer = Automaton.viewer(viewer)
-alphabet = ', '.join(list(alphabet))
 ==
 
 evaluator== #|py|
