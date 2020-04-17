@@ -46,6 +46,10 @@ for j in range(3):
 
 graphe_1 = render_plot(plot(fonction1,(x,-2, 2)))
 graphe_2 = render_plot(plot(fonction2,(x,-2, 2)))
+
+t = symbols('t')
+y = 0.05*t + 0.2/((t - 5)**2 + 2)
+graphe_3 = render_plot(plot(y))
 ==
 
 
@@ -53,7 +57,10 @@ text==
 Parmi les deux graphes suivant, lequel est le plus joli?
 <br>
 <span style="width:300px;">{{ graphe_1 | safe }}</span>
+<br>
 <span style="width:300px;">{{ graphe_2 | safe }}</span>
+<br>
+<span style="width:300px;">{{ graphe_3 | safe }}</span>
 
 == 
 
@@ -73,7 +80,7 @@ import random as rd
 
 feedback = rd.choice(['Excellente réponse', 'Merveilleuse réponse', 'Fabuleuse réponse', 'Délicieuse réponse', 'Charmante réponse', 'C\'est également mon avis', 'On ne saurait mieux dire', 'Cela est si juste!'])
 score = 100
-grade = (feedback, score)
+grade = (score, feedback)
 ==
 
 
