@@ -12,9 +12,9 @@ from sympy.plotting import plot
 from jinja2 import Template
 import json
 import matplotlib
-matplotlib.use('agg')
+#matplotlib.use('agg')
 matplotlib.rcParams['savefig.dpi'] = 80
-matplotlib.rcParams['figure.figsize'] = (4,3)
+#matplotlib.rcParams['figure.figsize'] = (4,3)
 matplotlib.rcParams['savefig.transparent'] = True
 from io import BytesIO
 import base64
@@ -52,8 +52,8 @@ graphe_2 = render_plot(plot(fonction2,(x,-2, 2), ylim=(-3,3)))
 text== 
 Parmi les deux graphes suivant, lequel est le plus joli?
 <br>
-<span style="width:300px;">{{ graphe_1 | safe }}</span>
-<span style="width:300px;">{{ graphe_2 | safe }}</span>
+<span style="width:30%;">{{ graphe_1 | safe }}</span>
+<span style="width:30%;">{{ graphe_2 | safe }}</span>
 
 
 == 
