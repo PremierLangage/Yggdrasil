@@ -7,6 +7,7 @@ lang = fr
 
 before==
 from sympy import *
+import random as rd
 from sympy.plotting import plot
 from jinja2 import Template
 import json
