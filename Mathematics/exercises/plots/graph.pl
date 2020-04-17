@@ -5,7 +5,7 @@ title = Graphes de fonctions
 
 lang = fr
 
-before==
+before==#|python|
 from sympy import *
 import random as rd
 from sympy.plotting import plot
