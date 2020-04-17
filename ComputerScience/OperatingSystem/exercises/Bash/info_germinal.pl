@@ -24,7 +24,8 @@ title=Information à extraire du texte de Germinal
 before==
 import random
 
-things = [("le nombre de lignes vides", "3283\n")]
+things = [("le nombre de lignes vides", "3283\n"),
+          ("le nombre de lignes commançant par une lettre majuscule", "1878\n")]
 (name_thing, expected_stdout) = random.choice(things)
 ==
 
