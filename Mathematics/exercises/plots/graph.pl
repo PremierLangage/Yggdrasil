@@ -5,7 +5,11 @@ title = Graphes de fonctions
 
 lang = fr
 
+settings.feedback = lightscore
+
+
 before==#|python|
+
 from sympy import *
 import random as rd
 from sympy.plotting import plot
@@ -36,22 +40,22 @@ graphe_2 = render_plot(plot(sin(x)))
 ==
 
 
-form== 
+text== 
 Parmi les deux graphes suivants, lequel est le plus joli?
 <br>
 <div style="display:inline-block; width:40%; border:2px solid black;">{{ graphe_1 | safe }}</div>
 <div style="display:inline-block; width:40%; border:2px solid black;">{{ graphe_2 | safe }}</div>
 <br>
+== 
 
-<select>
+form==
+<select id = 'form_1'>
 	<option value='oui'> Le premier, bien sûr </option>
 	<option value='non'> Le second, of course </option>
 	<option value='bof'> што такой ?? </option>
 	<option value='blip'> WTF ? </option>
 </select>
 ==
-
-settings.feedback = lightscore
 
 evaluator ==
 import random as rd
