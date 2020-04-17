@@ -50,10 +50,6 @@ text==
 ==
 
 form==
-{{ c | component }}
-{{ d | component }}
-{{ e | component }}
-{{ f | component }}
 
 ==
 
