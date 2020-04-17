@@ -41,9 +41,10 @@ fonction2 = 0
 for j in range(3):
     fonction2 = fonction2 + rd.uniform(-1,1)*sin(rd.uniform(-5,5)*x+rd.uniform(-3,3))
 
+g = plot(x**2)
 graphe_1 = render_plot(plot(x**2))
 graphe_2 = render_plot(plot(fonction2,(x,-2, 2)))
-g = plot(x**2).show()
+
 ==
 
 
@@ -53,7 +54,7 @@ Parmi les deux graphes suivant, lequel est le plus joli?
 <div style="display:inline-block; width:40%; border:2px solid black;">{{ graphe_1 | safe }}</div>
 <div style="display:inline-block; width:40%; border:2px solid black;">{{ graphe_2 | safe }}</div>
 <br>
-{{graphe_1|safe}}
+{{g|safe}}
 == 
 
 form==
