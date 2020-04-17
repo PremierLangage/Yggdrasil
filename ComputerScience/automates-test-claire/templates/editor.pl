@@ -80,12 +80,13 @@ form== #|html|
     <li>
     Pour ajouter une transition cliquer sur le point orange de l'état de départ
     et tirer votre transition jusqu'à l'état d'arrivée.
-    Utilisez ensuite "changer Transition" pour ajuster la lettre étiquettant de la transition
+    Pour ajuster la lettre étiquettant de la transition, cliquer sur l'étiquette et choisir "changer transition".
     </li>
 
     </ul>
     </p>
 ==
+
 
 
 
