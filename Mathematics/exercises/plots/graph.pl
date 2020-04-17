@@ -10,12 +10,9 @@ from sympy import *
 import random as rd
 from sympy.plotting import plot
 from jinja2 import Template
-#import json
-#import matplotlib
-#matplotlib.use('agg')
-#matplotlib.rcParams['savefig.dpi'] = 80
-#matplotlib.rcParams['figure.figsize'] = (4,3)
-#matplotlib.rcParams['savefig.transparent'] = True
+import matplotlib
+matplotlib.rcParams['savefig.dpi'] = 80
+matplotlib.rcParams['savefig.transparent'] = True
 from io import BytesIO
 import base64
 
