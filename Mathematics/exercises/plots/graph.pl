@@ -6,6 +6,7 @@ title = Graphes de fonctions
 lang = fr
 
 before==
+from sympy import *
 from sympy.plotting import plot
 from jinja2 import Template
 import json
