@@ -38,11 +38,15 @@ d = mygroup.labels["limite"]
 e = mygroup.labels["fraction"]
 f = mygroup.labels["determinant"]
 g = mygroup._matches
-
+a.css='drop'
+b.css='drop'
+c.css = 'drag'
+d.css = 'drag'
+e.css = 'drag'
+f.css = 'drag'
 ==
 
 text==
-Question : {{ a | component }} {{ b | component }}
 ==
 
 form==
