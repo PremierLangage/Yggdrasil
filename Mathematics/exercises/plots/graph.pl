@@ -28,7 +28,7 @@ def render_plot(arg):# arg must be a matplotlib plot
     arg._backend.close()
 
     return  Template('<img src="data:image/png;base64,{{ plot_data }}" \
-        style="pointer-events:none; height:inherit;">').\
+        style="pointer-events:none; width:inherit;">').\
         render({'plot_data': figdata_png})
 
 
