@@ -47,6 +47,7 @@ f.css = 'drag'
 ==
 
 text==
+Question : {{ a | component }} {{ b | component }}
 ==
 
 form==
