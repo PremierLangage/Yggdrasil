@@ -53,10 +53,8 @@ text==
 Parmi les deux graphes suivant, lequel est le plus joli?
 <br>
 <span style="width:300px;">{{ graphe_1 | safe }}</span>
-
 <span style="width:300px;">{{ graphe_2 | safe }}</span>
 
-<span style="width:300px;">{{ graphe_3 | safe }}</span>
 
 == 
 
