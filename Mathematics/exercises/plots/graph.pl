@@ -36,7 +36,7 @@ graphe_2 = render_plot(plot(sin(x)))
 ==
 
 
-text== 
+form== 
 Parmi les deux graphes suivants, lequel est le plus joli?
 <br>
 <div style="display:inline-block; width:40%; border:2px solid black;">{{ graphe_1 | safe }}</div>
