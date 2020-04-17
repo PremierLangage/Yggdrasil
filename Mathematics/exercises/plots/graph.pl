@@ -10,7 +10,7 @@ from sympy import *
 import random as rd
 from sympy.plotting import plot
 from jinja2 import Template
-import json
+#import json
 #import matplotlib
 #matplotlib.use('agg')
 #matplotlib.rcParams['savefig.dpi'] = 80
@@ -44,7 +44,7 @@ fonction2 = 0
 for j in range(3):
     fonction2 = fonction2 + rd.uniform(-1,1)*sin(rd.uniform(-5,5)*x+rd.uniform(-3,3))
 
-graphe_1 = render_plot(plot(fonction1,(x,-2, 2), ylim = [-1,7]))
+graphe_1 = render_plot(plot(fonction1,(x,-2, 2)))
 graphe_2 = render_plot(plot(fonction2,(x,-2, 2), ylim=[-3,3]))
 ==
 
