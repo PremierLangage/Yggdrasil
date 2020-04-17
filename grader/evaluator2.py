@@ -10,7 +10,7 @@ from jinja2 import Template
 
 try:
     from serialize import serialize, deserialize
-except ImportError:
+except ModuleNotFoundError:
     def serialize(arg):
         return arg
     def deserialize(arg):
@@ -18,7 +18,7 @@ except ImportError:
 
 try:
     from namespace import namespace
-except ImportError:
+except ModuleNotFoundError:
     namespace = {}
 
 class StopEvaluatorExec(Exception):
