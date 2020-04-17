@@ -54,6 +54,8 @@ Parmi les deux graphes suivant, lequel est le plus joli?
 <br>
 <div style="display:inline-block; width:40%; border:2px solid black;">{{ graphe_1 | safe }}</div>
 <div style="display:inline-block; width:40%; border:2px solid black;">{{ graphe_2 | safe }}</div>
+<br>
+{{graphe_1|safe}}
 == 
 
 form==
