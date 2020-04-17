@@ -52,8 +52,8 @@ graphe_2 = render_plot(plot(fonction2,(x,-2, 2), ylim=(-3,3)))
 text== 
 Parmi les deux graphes suivant, lequel est le plus joli?
 <br>
-<span style="width:30%;">{{ graphe_1 | safe }}</span>
-<span style="width:30%;">{{ graphe_2 | safe }}</span>
+<span style="width:200px;">{{ graphe_1 | safe }}</span>
+<span style="width:200px;">{{ graphe_2 | safe }}</span>
 
 
 == 
