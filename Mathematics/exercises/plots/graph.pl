@@ -42,10 +42,8 @@ Parmi les deux graphes suivants, lequel est le plus joli?
 <div style="display:inline-block; width:40%; border:2px solid black;">{{ graphe_1 | safe }}</div>
 <div style="display:inline-block; width:40%; border:2px solid black;">{{ graphe_2 | safe }}</div>
 <br>
-== 
 
-form==
-<select id = 'form_1'>
+<select>
 	<option value='oui'> Le premier, bien sûr </option>
 	<option value='non'> Le second, of course </option>
 	<option value='bof'> што такой ?? </option>
