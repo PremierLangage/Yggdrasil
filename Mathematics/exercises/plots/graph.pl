@@ -1,36 +1,51 @@
 
-extends = /Mathematics/template/mathplotlib.pl
+extends = /model/basic.pl
 
 title = Graphes de fonctions
 
 lang = fr
 
-before==
+settings.feedback = lightscore
+
+
+before==#|python|
+
+from sympy import *
+import random as rd
 from sympy.plotting import plot
+from jinja2 import Template
+import matplotlib
+matplotlib.rcParams['savefig.dpi'] = 80
+matplotlib.rcParams['savefig.transparent'] = True
+from io import BytesIO
+import base64
+
+def render_plot(arg):# arg must be a matplotlib plot
+    figfile = BytesIO()
+    arg.save(figfile)
+    figfile.seek(0)  # rewind to beginning of file
+    figdata_png = base64.b64encode(figfile.getvalue()).decode('ascii')
+    figfile.close()
+    arg._backend.close()
+
+    return  Template('<img src="data:image/png;base64,{{ plot_data }}" \
+        style="pointer-events:none;">').\
+        render({'plot_data': figdata_png})
 
 x = symbols('x')
 
-coeff = 0
-    
-fonction1 = 0
-for j in range(3):
-    coeff += rd.uniform(-10,10)
-    fonction1 = fonction1 + rd.uniform(-10,10)*sin(rd.uniform(-5,5)*x+rd.uniform(-3,3))
-    
-fonction2 = 0
-for j in range(3):
-    fonction2 = fonction2 + rd.uniform(-10,10)*sin(rd.uniform(-5,5)*x+rd.uniform(-3,3))
+graphe_1 = render_plot(plot(x**2))
+graphe_2 = render_plot(plot(sin(x)))
 
-graphe_1 = plot(fonction1,(x,-2, 2))
-graphe_2 = plot(fonction2,(x,-2, 2))
 ==
 
-text== 
-Parmi les deux graphes suivant, lequel est le plus joli?
-<br>
-<span style="width:300px;">{{ graphe_1 | safe }}</span>
-<span style="width:300px;">{{ graphe_2 | safe }}</span>
 
+text== 
+Parmi les deux graphes suivants, lequel est le plus joli?
+<br>
+<div style="display:inline-block; width:40%; border:2px solid black;">{{ graphe_1 | safe }}</div>
+<div style="display:inline-block; width:40%; border:2px solid black;">{{ graphe_2 | safe }}</div>
+<br>
 == 
 
 form==
@@ -43,14 +58,10 @@ form==
 ==
 
 evaluator ==
-feedback = rd.choice(['Excellente réponse', 'Merveilleuse réponse', 'Fabuleuse réponse', 'Délicieuse réponse', 'Charmante réponse', 'C\'est également mon avis', 'On ne saurait mieux dire', 'Cela est si juste!'])
-score = 100
+import random as rd
 
+f = rd.choice(['Excellente réponse', 'Merveilleuse réponse', 'Fabuleuse réponse', 'Délicieuse réponse', 'Charmante réponse', 'C\'est également mon avis', 'On ne saurait mieux dire', 'Cela est si juste!'])
+s = 100
+grade = (s, f)
 ==
-
-
-
-
-
-
 
