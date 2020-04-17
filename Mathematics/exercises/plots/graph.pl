@@ -15,7 +15,7 @@ import random as rd
 from sympy.plotting import plot
 from jinja2 import Template
 import matplotlib
-matplotlib.rcParams['savefig.dpi'] = 20
+matplotlib.rcParams['savefig.dpi'] = 80
 matplotlib.rcParams['savefig.transparent'] = True
 from io import BytesIO
 import base64
