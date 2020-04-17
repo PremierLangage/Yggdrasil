@@ -31,11 +31,8 @@ def render_plot(arg):# arg must be a matplotlib plot
         style="pointer-events:none;">').\
         render({'plot_data': figdata_png})
 
-
 x = symbols('x')
 
-coeff = 0
-    
 fonction1 = 0
 for j in range(3):
     fonction1 = fonction1 + rd.uniform(-1,1)*sin(rd.uniform(-5,5)*x+rd.uniform(-3,3))
@@ -44,7 +41,7 @@ fonction2 = 0
 for j in range(3):
     fonction2 = fonction2 + rd.uniform(-1,1)*sin(rd.uniform(-5,5)*x+rd.uniform(-3,3))
 
-graphe_1 = render_plot(plot(x**2,(x,-2, 2)))
+graphe_1 = render_plot(plot(x**2))
 graphe_2 = render_plot(plot(fonction2,(x,-2, 2)))
 ==
 
