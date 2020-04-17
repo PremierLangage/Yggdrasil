@@ -45,7 +45,7 @@ for j in range(3):
 
 graphe_1 = render_plot(plot(fonction1,(x,-2, 2)))
 graphe_2 = render_plot(plot(fonction2,(x,-2, 2)))
-
+==
 
 
 text== 
