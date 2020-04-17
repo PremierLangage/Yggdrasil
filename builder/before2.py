@@ -7,14 +7,14 @@ import uuid
 # Load the custom serialization function
 try:
     from serialize import serialize
-except ImportError:
+except ModuleNotFoundError:
     def serialize(arg):
         return arg
 
 # Load the custom namespace
 try:
     from namespace import namespace
-except ImportError:
+except ModuleNotFoundError:
     namespace = {}
 
 class StopBeforeExec(Exception):
