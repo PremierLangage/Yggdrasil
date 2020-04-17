@@ -25,7 +25,9 @@ before==
 import random
 
 things = [("le nombre de lignes vides", "3283\n"),
-          ("le nombre de lignes commançant par une lettre majuscule", "1878\n")]
+          ("le nombre de lignes commançant par une lettre majuscule", "1878\n"),
+          ("le nombre de lignes se terminant par un point d'interrogation", "190\n"),
+          ("le nombre de lignes se terminant par un point d'exclamation", "375\n")]
 (name_thing, expected_stdout) = random.choice(things)
 ==
 
