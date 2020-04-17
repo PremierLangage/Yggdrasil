@@ -46,10 +46,7 @@ for j in range(3):
 
 graphe_1 = render_plot(plot(fonction1,(x,-2, 2)))
 graphe_2 = render_plot(plot(fonction2,(x,-2, 2)))
-
-t = symbols('t')
-y = 0.05*t + 0.2/((t - 5)**2 + 2)
-graphe_3 = render_plot(plot(y))
+graphe_3 = render_plot(plot(sin(2*sin(2*sin(x)))))
 ==
 
 
