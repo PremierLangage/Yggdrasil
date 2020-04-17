@@ -29,7 +29,7 @@ text ==
 {% for label in mygroup.labels.values() %} {{ label|component }} {% endfor %}
 ==
 
-form ==
+form ==#|html|
 <ul>
 {% for i, drop in mygroup.drops.items() %}
 <li> {{ numbers[i|int][0] }} {{ drop|component }} {{ numbers[i|int][1] }} </li>
@@ -54,6 +54,7 @@ extracss == #|html|
         }
 </style>
 ==
+
 
 
 
