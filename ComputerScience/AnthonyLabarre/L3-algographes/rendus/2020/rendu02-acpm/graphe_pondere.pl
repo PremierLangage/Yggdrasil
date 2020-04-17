@@ -1,5 +1,5 @@
 # Test d'une classe Graphe implémentant un graphe pondéré non orienté.
-@ /utils/sandboxio.py
+#@ /utils/sandboxio.py
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 builder= /builder/before.py
 
@@ -39,5 +39,6 @@ pltest0==
 >>> sorted(G.aretes())
 [(0, 2, -2), (1, 0, 4), (1, 2, 3), (2, 3, 2), (3, 1, -1)]
 ==
+
 
 
