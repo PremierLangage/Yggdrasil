@@ -52,7 +52,7 @@ graphe_2 = render_plot(plot(fonction2,(x,-2, 2), ylim=(-3,3)))
 text== 
 Parmi les deux graphes suivant, lequel est le plus joli?
 <br>
-<span style="width:300px;height:300px; border:10px solid black;">{{ graphe_1 | safe }}</span>
+{{ graphe_1 | safe }}
 <span style="width:300px;">{{ graphe_2 | safe }}</span>
 == 
 
