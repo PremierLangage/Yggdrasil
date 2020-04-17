@@ -58,9 +58,9 @@ settings.feedback = lightscore
 evaluator ==
 import random as rd
 
-feedback = rd.choice(['Excellente réponse', 'Merveilleuse réponse', 'Fabuleuse réponse', 'Délicieuse réponse', 'Charmante réponse', 'C\'est également mon avis', 'On ne saurait mieux dire', 'Cela est si juste!'])
-score = 100
-grade = (score, feedback)
+f = rd.choice(['Excellente réponse', 'Merveilleuse réponse', 'Fabuleuse réponse', 'Délicieuse réponse', 'Charmante réponse', 'C\'est également mon avis', 'On ne saurait mieux dire', 'Cela est si juste!'])
+s = 100
+grade = (s, f)
 ==
 
 
