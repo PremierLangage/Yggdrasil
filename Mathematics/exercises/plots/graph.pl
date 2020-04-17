@@ -1,5 +1,5 @@
 
-extends = /Mathematics/template/mathplotlib.pl
+extends = /model/basic.pl
 
 title = Graphes de fonctions
 
