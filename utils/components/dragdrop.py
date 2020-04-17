@@ -166,10 +166,10 @@ class DragDropGroup():
                 pass
             elif drop_data in self._matches:
                 num_right += 1
-                drop.css = "drop success"
+                drop.css = "success-state"
             else:
                 num_wrong +=1
-                drop.css = "drop error"           
+                drop.css = "error-state"           
    
         possible_labels = {label for (label, drop) in self._matches} # set comprehension, no duplicates
         possible_drops = {drop for (label, drop) in self._matches} # set comprehension, no duplicates
@@ -192,7 +192,6 @@ class DragDropGroup():
         
 
     
-
 
 
 
