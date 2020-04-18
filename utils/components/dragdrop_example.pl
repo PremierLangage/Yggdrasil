@@ -23,37 +23,39 @@ for _ in range(n):
     else:
         sol.append(gt)
 
-label = CustomDragDrop.Labels([lt,gt])
-drop = CustomDragDrop.Drops(n)
+llt = CustomDragDrop.Label(lt)
+lgt = CustomDragDrop.Label(gt)
+drops = [CustomDragDrop.Drop(i) for i in range(n)]
 ==
 
 text==
-Comparer les nombres suivants avec les symboles {{ label[0] | component }} et {{ label[1] | component }}.
+Comparer les nombres suivants avec les symboles {{ llt | component }} et {{ lgt | component }}.
 ==
 
 form==
 <ul>
 {% for i in range(4) %}
-<li> {{ numbers[i][0] }} {{ drop[i]|component }} {{ numbers[i][1] }} </li>
+<li> {{ numbers[i][0] }} {{ drops[i]|component }} {{ numbers[i][1] }} </li>
 {% endfor %}
 </ul>
 ==
 
 settings.feedback = lightscore
 
-evaluator==
+evaluator==#|python|
 from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
 
 #grade=CustomDragDrop.eval(drop,sol)
-groupp = DragDropGroup(labels = label, drop_zones = drop)
+#groupp = DragDropGroup(labels = label, drop_zones = drop)
 
-for i in range(len(numbers)):
-        if numbers[i][0] < numbers[i][1]:
-            groupp.set_match(label[0],drop[i])
-        elif numbers[i][0] > numbers[i][1]:
-            groupp.set_match(label[1],drop[i])
+#for i in range(len(numbers)):
+#        if numbers[i][0] < numbers[i][1]:
+#            groupp.set_match(label[0],drop[i])
+#        elif numbers[i][0] > numbers[i][1]:
+#            groupp.set_match(label[1],drop[i])
 
-grade = groupp.eval(grading_function = right_minus_wrong)
+#grade = groupp.eval(grading_function = right_minus_wrong)
+grade = (100, 'cool')
 
 
 ==
@@ -66,6 +68,7 @@ extracss == #|html|
         }
 </style>
 ==
+
 
 
 
