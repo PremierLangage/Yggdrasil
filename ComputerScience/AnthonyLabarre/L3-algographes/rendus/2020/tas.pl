@@ -16,6 +16,10 @@ pltest0==
 >>> from random import randint; donnees = [randint(0, 100) for _ in range(10)]; T = Tas()
 >>> for elem in donnees:
 ...     T.inserer(elem)
+>>> for elem in sorted(donnees):
+...     extraction = T.extraire_minimum()
+...     if extraction != elem:
+...         print("attendu:", elem, ", obtenu:", extraction)
 ==
 
 # Vérification du fonctionnement sur des triplets (premier élément = critère pour le minimum)
