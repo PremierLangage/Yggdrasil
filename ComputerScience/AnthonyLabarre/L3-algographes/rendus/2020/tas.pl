@@ -17,6 +17,7 @@ pltest0==
 ...     T.inserer(elem)
 >>> for elem in sorted(donnees):
 ....    assert T.extraire_minimum() == elem
+
 ==
 
 
