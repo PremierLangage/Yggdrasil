@@ -25,6 +25,7 @@ editor.code=head -3 mjc.txt
 
 before==#|python|
 
+expected_stdout=""
 
 ==
 
