@@ -21,16 +21,22 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Base de données primitive en bash
 
-editor.code=head -3 mjc.txt
-
 before==#|python|
+
+
+exp = [
+("", "")
+]
 
 expected_stdout=""
 
 ==
 
 text==
-Un fichier **mjc.txt** a été placé dans votre répertoire courant de travail
+Un fichier **mjc.txt** a été placé dans votre répertoire courant de travail. 
+Ce fichier est structuré de manière très sérieuse en ligne. Chaque ligne correspond à
+un membre de la MJC de la capitale de la Syldavie. Chaque ligne suit la structure suivante : \
+**id** : **prénom** 
 ==
 
 
