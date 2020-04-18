@@ -18,7 +18,7 @@ pltest0==
 ...     T.inserer(elem)
 >>> for elem in sorted(donnees):
 ...     extraction = T.extraire_minimum()
-...     if extraction != 0:
+...     if extraction != elem:
 ...         print("attendu:", elem, ", obtenu:", extraction)
 ==
 
