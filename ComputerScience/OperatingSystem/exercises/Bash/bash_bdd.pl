@@ -38,10 +38,12 @@ Ce fichier est structuré de manière très sérieuse en ligne. Chaque ligne cor
 un membre de la MJC de la capitale de la Syldavie. Chaque ligne suit la structure suivante :   
 **id:prénom:nom:age:activité lundi,activité mardi,...,activité dimanche:jour:mois:année**   
 À titre d'exemple, la première ligne du fichier est ainsi :   
-**756430947:Lina:Leroy:46:,,,,,,:12:Jun:2018**   
-Lina Leroy est donc le membre 756430947 de la MJC. Elle a 46 ans et ne suit aucune activité
-en ce moment. Elle est membre de la MJC depuis le 12 Juin 2018.
+**12137916:Daniel:Leroux:31:Theatre,,,,,,:12:Jun:2017**   
+**Daniel Leroux** est donc le membre **12137916** de la MJC. Il a **31** ans et ne pratique que 
+le **théâtre** le lundi ; les autres jours de la semaine, Daniel ne suit aucune activité. 
+Daniel est membre de la MJC depuis le **12 Juin 2017**.
 ==
+
 
 
 
