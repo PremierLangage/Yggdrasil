@@ -25,7 +25,9 @@ before==#|python|
 import random
 
 experiences = [
-("Listez dans l'ordre alphabétique toutes les activités pratiquées le mardi, une par ligne.", "")
+("Listez dans l'ordre alphabétique toutes les activités pratiquées qui sont "
+ "pratiquées le mardi à la MJC, une par ligne.", 
+ "")
 ]
 
 instructions, expected_stdout = random.choice(experiences)
@@ -35,7 +37,8 @@ instructions, expected_stdout = random.choice(experiences)
 text==
 Un fichier **mjc.txt** a été placé dans votre répertoire courant de travail. 
 Ce fichier est structuré de manière très sérieuse en ligne. Chaque ligne correspond à
-un membre de la MJC de la capitale de la Syldavie. Chaque ligne suit la structure suivante :   
+un membre de la MJC(Maison des Jeunes et de la Culture) de la capitale de la Syldavie. 
+Chaque ligne suit la structure suivante :   
 **id:prénom:nom:age:activité lundi,activité mardi,...,activité dimanche:jour:mois:année**   
 À titre d'exemple, la première ligne du fichier est ainsi :   
 **12137916:Daniel:Leroux:31:Theatre,,,,,,:12:Jun:2017**   
