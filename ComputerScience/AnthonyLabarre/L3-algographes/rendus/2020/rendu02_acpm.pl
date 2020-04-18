@@ -10,6 +10,8 @@ text==
 <ul>
 <li>une classe Graphe implémentant un graphe pondéré non orienté.; * une classe Tas implémentant une file à priorité; * une classe UnionFind; ...
 </ul>
+* blaa
+* blou
 ==
 # Les tests:
 
