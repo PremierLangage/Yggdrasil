@@ -25,7 +25,7 @@ before==#|python|
 import random
 
 experiences = [
-("Listez dans l'ordre alphabétique toutes les activités pratiquées qui sont "
+("Listez dans l'ordre alphabétique toutes les activités qui sont "
  "pratiquées le mardi à la MJC, une par ligne.", 
  "Art plastique\nCinema\nDanse\nTheatre\n")
 ]
