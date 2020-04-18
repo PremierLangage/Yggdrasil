@@ -24,30 +24,12 @@ title=Base de données primitive en bash
 editor.code=head -3 mjc.txt
 
 before==#|python|
-import subprocess
-import random
-from utils_bash import display_as_shell_this, frame_message
 
-things = [("mine", "73\n"), ("maison", "115\n"), ("charbon", "75\n")]
-(name_thing, expected_stdout) = random.choice(things)
 
-sp = subprocess.run(["head", "-3", "mjc.txt"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=7)
-spout = sp.stdout.decode()
-errout = sp.stderr.decode()
-returncode = sp.returncode
-
-form += display_as_shell_this(editor.code, spout, {{ user }}, errout, returncode)
 ==
 
 text==
 Un fichier **mjc.txt** a été placé dans votre répertoire courant de travail
-==
-
-form==
-{{ editor|component }}
-
-<input id="form_user_hack" name="form_user_hack" type="hidden" value="{{ user }}">
-
 ==
 
 
