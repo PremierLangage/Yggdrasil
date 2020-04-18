@@ -64,7 +64,17 @@ pltest2==
 # Vérifications basiques de la classe UnionFind
 pltest3==
 >>> # initialisation d'un ensemble de singletons
->>> import unionfind; n = 50; ma_structure = unionfind.UnionFind(range(n)); sa_structure = UnionFind(range(n))
+>>> import itertools, random, unionfind; n = 50; ma_structure = unionfind.UnionFind(range(n)); sa_structure = UnionFind(range(n))
+>>> # fusions aléatoires
+>>> nbr_unions = 20
+>>> couples = list(itertools.combinations(range(n), 2)); random.shuffle(couples)
+>>> for i in range(nbr_unions):
+...     a, b = couples.pop()
+...     sa_structure.union(a, b)
+...     ma_structure.union(a, b)
+>>> sa_partition = sorted(map(sorted, unionfind.unionfind_vers_collection(sa_structure, range(n))))
+>>> ma_partition = sorted(map(sorted, unionfind.unionfind_vers_collection(ma_structure, range(n))))
+
 ==
 
 
