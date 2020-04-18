@@ -20,7 +20,6 @@ text==
 
 # Mon code
 before==
-import unionfind
 ==
 
 # Les tests:
