@@ -4,7 +4,7 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 builder= /builder/before.py
 
 author = Anthony Labarre
-title = Graphes pondérés
+title = Tas
 text = Écrivez une classe Tas implémentant une file à priorité.
 taboo = heapq
 
