@@ -46,8 +46,19 @@ grade=(100,"bravo")
 #
 # création de l'éditeur de code
 editor.code ==
-# Saisissez votre code ici, et cliquez sur le bouton
-# de validation quand vous avez terminé
+class Tas(object):
+    """Implémentation de la structure de données Tas."""
+    def __init__(self):
+        """Initialisation des structures de données nécessaires."""
+        pass  # à compléter
+
+    def inserer(self, element):
+        """Insère un élément dans le tas en préservant la structure."""
+        pass  # à compléter
+
+    def extraire_minimum(self):
+        """Extrait et renvoie le minimum du tas en préservant sa structure."""
+        pass  # à compléter
 
 ==
 
