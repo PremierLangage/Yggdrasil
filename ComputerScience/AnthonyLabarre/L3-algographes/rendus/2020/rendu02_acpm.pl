@@ -11,6 +11,9 @@ text==
 <li>une classe Graphe implémentant un graphe pondéré non orienté
 <li>une classe Tas implémentant une file à priorité
 <li>une classe UnionFind
+<li>
+<li>
+<li>
 </ul>
 ==
 # Les tests:
