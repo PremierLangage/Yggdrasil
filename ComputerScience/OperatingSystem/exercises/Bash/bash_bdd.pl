@@ -37,7 +37,7 @@ instructions, expected_stdout = random.choice(experiences)
 text==
 # Extraction des activités d'un jour donné
 
-
+<br />
 
 Un fichier **MJC.txt** a été placé dans votre répertoire courant de travail. 
 Ce fichier est structuré de manière très sérieuse en ligne. Chaque ligne correspond à
