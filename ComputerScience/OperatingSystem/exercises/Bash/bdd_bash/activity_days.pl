@@ -37,7 +37,9 @@ instructions, expected_stdout = random.choice(experiences)
 text==
 Rappel de la structuration :   
    
+
 **id:prénom:nom:age:activité lundi,activité mardi,...,activité dimanche:jour:mois:année**   
+   
    
 **{{ instructions }}** Veuillez à faire en sorte que votre commande (ou ensemble de commandes)
 ne produise que l'affichage demandé sans espace ou ligne en trop. N'hésitez à faire 
