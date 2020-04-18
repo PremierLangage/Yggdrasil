@@ -74,7 +74,9 @@ pltest3==
 ...     ma_structure.union(a, b)
 >>> sa_partition = sorted(map(sorted, unionfind.unionfind_vers_collection(sa_structure, range(n))))
 >>> ma_partition = sorted(map(sorted, unionfind.unionfind_vers_collection(ma_structure, range(n))))
-
+>>> if ma_partition != sa_partition:
+...     print("résultat attendu:", ma_partition)
+...     print("résultat obtenu:", sa_partition)
 ==
 
 
