@@ -22,13 +22,13 @@ author=Nicolas Borie
 title=Base de données primitive en bash
 
 before==#|python|
+import random
 
-
-exp = [
+experiences = [
 ("", "")
 ]
 
-expected_stdout=""
+instructions, expected_stdout = random.choice(experiences)
 
 ==
 
