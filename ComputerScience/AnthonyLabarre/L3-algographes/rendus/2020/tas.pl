@@ -11,14 +11,12 @@ taboo = heapq
 # Les tests:
 
 pltest0==
->>> G = Graphe()
->>> G.ajouter_aretes([(0, 2, -2), (1, 0, 4), (1, 2, 3), (2, 3, 2), (3, 1, -1)])
->>> sorted(G.sommets())
-[0, 1, 2, 3]
->>> sorted(G.aretes())
-[(0, 2, -2), (1, 0, 4), (1, 2, 3), (2, 3, 2), (3, 1, -1)]
->>> sorted(map(G.poids_arete, (u, v) for u, v, *_ in G.aretes()))
-[-2, -1, 2, 3, 4]
+>>> # création d'un tas d'entiers aléatoires
+>>> from random import randint; donnees = [randint(0, 100) for _ in range(10)]; T = Tas()
+>>> for elem in donnees:
+...     T.inserer(elem)
+>>> for elem in sorted(donnees):
+....    assert T.extraire_minimum() == elem
 ==
 
 
