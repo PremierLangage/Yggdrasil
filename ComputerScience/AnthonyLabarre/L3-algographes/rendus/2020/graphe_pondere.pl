@@ -7,26 +7,7 @@ author = Anthony Labarre
 title = Graphes pondérés
 text = Écrivez une classe Graphe implémentant un graphe pondéré non orienté.
 
-# création de l'éditeur de code
-editor.code ==
-# Saisissez votre code ici, et cliquez sur le bouton
-# de validation quand vous avez terminé
-
-==
-editor1.theme = light
-
-
-# le formulaire de l'exercice contient uniquement l'éditeur
-form==
-{{editor1|component}}
-==
-
-#@ /grader/evaluator.py [grader.py]
-evaluator==
-
-
-grade=(100,"bravo")
-==
+# Les tests:
 
 pltest0==
 >>> G = Graphe()
@@ -38,6 +19,19 @@ pltest0==
 ==
 
 
+# Le grader:
+#@ /grader/evaluator.py [grader.py]
+evaluator==
 
 
+grade=(100,"bravo")
+==
+
+#
+# création de l'éditeur de code
+editor.code ==
+# Saisissez votre code ici, et cliquez sur le bouton
+# de validation quand vous avez terminé
+
+==
 
