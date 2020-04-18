@@ -35,12 +35,10 @@ instructions, expected_stdout = random.choice(experiences)
 ==
 
 text==
-Rappel de la structuration :   
-   
-
+Rappel de la structuration du fichier **MJC.txt**:   
+<br />
 **id:prénom:nom:age:activité lundi,activité mardi,...,activité dimanche:jour:mois:année**   
-   
-   
+<br />
 **{{ instructions }}** Veuillez à faire en sorte que votre commande (ou ensemble de commandes)
 ne produise que l'affichage demandé sans espace ou ligne en trop. N'hésitez à faire 
 plusieus essais.
