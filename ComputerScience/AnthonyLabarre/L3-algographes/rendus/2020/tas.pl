@@ -30,8 +30,8 @@ pltest1==
 ...     T.inserer(elem)
 >>> for elem in sorted(donnees):
 ...     extraction = T.extraire_minimum()
-...     if extraction != elem:
-...         print("attendu:", elem, ", obtenu:", extraction)
+...     if extraction[0] != elem[0]:
+...         print("attendu: un triplet avec première valeur =", elem[0], ", obtenu: un triplet avec première valeur =", extraction[0])
 ==
 
 
