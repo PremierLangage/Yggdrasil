@@ -42,6 +42,11 @@ un membre de la MJC de la capitale de la Syldavie. Chaque ligne suit la structur
 **Daniel Leroux** est donc le membre **12137916** de la MJC. Il a **31** ans et ne pratique que 
 le **théâtre** le lundi ; les autres jours de la semaine, Daniel ne suit aucune activité. 
 Daniel est membre de la MJC depuis le **12 Juin 2017**.
+
+
+{{ instructions }}. Veuillez à faire en sorte que votre commande (ou ensemble de commandes)
+ne produise que l'affichage demandé sans espace ou ligne en trop. N'hésitez à faire 
+plusieus essais.
 ==
 
 
