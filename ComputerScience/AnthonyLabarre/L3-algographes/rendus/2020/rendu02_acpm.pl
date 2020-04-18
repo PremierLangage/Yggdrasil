@@ -11,7 +11,7 @@ text==
 <li>une classe Graphe implémentant un graphe pondéré non orienté
 <li>une classe Tas implémentant une file à priorité
 <li>une classe UnionFind
-<li>
+<li>acpm_prim(graphe, sommet), qui prend en paramètres un graphe et un sommet de départ et renvoie un ACPM pour la composante connexe du sommet donné en suivant l'algorithme de Prim;
 <li>
 <li>
 </ul>
