@@ -25,7 +25,7 @@ before==#|python|
 import random
 
 experiences = [
-("", "")
+("Listez dans l'ordre alphabétique toutes les activités pratiquées le mardi, une par ligne", "")
 ]
 
 instructions, expected_stdout = random.choice(experiences)
