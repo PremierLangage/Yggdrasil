@@ -53,6 +53,20 @@ class UnionFind(object):
             self.rang[racine_1] += 1
 
 
+def unionfind_vers_collection(structure, univers):
+    """Renvoie la partition représentée par la structure unionfind."""
+    partition = dict()
+    for elem in univers:
+        classe = structure.find(elem)
+        if classe not in partition:
+            partition[classe] = set()
+        partition[classe].add(elem)
+
+    return {
+        frozenset(classe) for classe in partition.values()
+    }
+
+
 def main():
     import doctest
     resultats_des_tests = doctest.testmod()
@@ -65,4 +79,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
