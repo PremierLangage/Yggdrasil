@@ -26,19 +26,22 @@ import random
 
 experiences = [
 ("lundi", 
- ""),
+ "Anglais\nArt plastique\nChorale\nCinema\nCirque\nCouture\nCuisine\n"
+ "Danse\nHistoire\nPiano\nSophrologie\nSport\nTheatre\nYoga\n"),
 ("mardi", 
  "Art plastique\nCinema\nDanse\nTheatre\n"),
 ("mercredi", 
- ""),
+ "Cinema\nHistoire\nPate a sel\nPiano\nPoterie\n"),
 ("jeudi", 
- ""),
+ "Anglais\nArt plastique\nChorale\nCinema\nCirque\nCouture\nCuisine\n"
+ "Danse\nHistoire\nPiano\nSophrologie\nSport\nTheatre\nYoga\n"),
 ("vendredi", 
- ""),
+ "Art plastique\nCinema\nDanse\nTheatre\n"),
 ("samedi", 
- ""),
+ "Cinema\nHistoire\nPate a sel\nPiano\nPoterie\n"),
 ("dimanche", 
- "")
+ "Anglais\nArt plastique\nChorale\nCinema\nCirque\nCouture\nCuisine\n"
+ "Danse\nHistoire\nPiano\nSophrologie\nSport\nTheatre\nYoga\n")
 ]
 
 instructions, expected_stdout = random.choice(experiences)
