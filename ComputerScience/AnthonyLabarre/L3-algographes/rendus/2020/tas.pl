@@ -6,10 +6,11 @@ builder= /builder/before.py
 author = Anthony Labarre
 title = Tas
 text = Écrivez une classe Tas implémentant une file à priorité.
-taboo = heapq
+#taboo = heapq
 
 # Les tests:
 
+# Vérification du fonctionnement sur des entiers
 pltest0==
 >>> # création d'un tas d'entiers aléatoires
 >>> from random import randint; donnees = [randint(0, 100) for _ in range(10)]; T = Tas()
@@ -17,8 +18,9 @@ pltest0==
 ...     T.inserer(elem)
 >>> for elem in sorted(donnees):
 ....    assert T.extraire_minimum() == elem
-
 ==
+
+# Vérification du fonctionnement sur des triplets (premier élément = critère pour le minimum)
 
 
 # Le grader:
