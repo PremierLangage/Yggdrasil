@@ -36,7 +36,7 @@ spout = sp.stdout.decode()
 errout = sp.stderr.decode()
 returncode = sp.returncode
 
-form += display_as_shell_this(editor.code, spout, str(response["user_hack"]), errout, returncode)
+form += display_as_shell_this(editor.code, spout, {{ user }}, errout, returncode)
 ==
 
 text==
