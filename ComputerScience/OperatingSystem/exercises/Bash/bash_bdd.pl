@@ -35,6 +35,8 @@ instructions, expected_stdout = random.choice(experiences)
 ==
 
 text==
+## Etraction des activités d'un jour donné
+
 Un fichier **MJC.txt** a été placé dans votre répertoire courant de travail. 
 Ce fichier est structuré de manière très sérieuse en ligne. Chaque ligne correspond à
 un membre de la MJC(Maison des Jeunes et de la Culture) de la capitale de la Syldavie. 
