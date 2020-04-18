@@ -13,7 +13,7 @@ text = Écrivez une classe Tas implémentant une file à priorité.
 # Vérification du fonctionnement sur des entiers
 pltest0==
 >>> # création d'un tas d'entiers aléatoires
->>> from random import randint; donnees = [randint(0, 100) for _ in range(10)]; T = Tas()
+>>> from random import randint; donnees = [randint(-100, 100) for _ in range(10)]; T = Tas()
 >>> for elem in donnees:
 ...     T.inserer(elem)
 >>> for elem in sorted(donnees):
@@ -23,6 +23,16 @@ pltest0==
 ==
 
 # Vérification du fonctionnement sur des triplets (premier élément = critère pour le minimum)
+pltest1==
+>>> # création d'une liste de triplets aléatoires
+>>> from random import randint; donnees = [(randint(-100, 100), randint(-100, 100), randint(-100, 100)) for _ in range(10)]; T = Tas()
+>>> for elem in donnees:
+...     T.inserer(elem)
+>>> for elem in sorted(donnees):
+...     extraction = T.extraire_minimum()
+...     if extraction != elem:
+...         print("attendu:", elem, ", obtenu:", extraction)
+==
 
 
 # Le grader:
