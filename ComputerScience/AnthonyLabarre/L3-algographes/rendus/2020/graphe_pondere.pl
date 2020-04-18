@@ -9,6 +9,10 @@ text = Écrivez une classe Graphe implémentant un graphe pondéré non orienté
 
 # Les tests:
 
+before==
+print("yo")
+==
+
 pltest0==
 >>> G = Graphe()
 >>> G.ajouter_aretes([(0, 2, -2), (1, 0, 4), (1, 2, 3), (2, 3, 2), (3, 1, -1)])
