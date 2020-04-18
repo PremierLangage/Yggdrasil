@@ -23,7 +23,8 @@ title=Base de données primitive en bash
 
 editor.code=head -3 mjc.txt
 
-before==
+before==#|python|
+import subprocess
 import random
 from utils_bash import display_as_shell_this, frame_message
 
