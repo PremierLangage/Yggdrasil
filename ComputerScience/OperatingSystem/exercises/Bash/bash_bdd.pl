@@ -27,7 +27,7 @@ import random
 experiences = [
 ("Listez dans l'ordre alphabétique toutes les activités pratiquées qui sont "
  "pratiquées le mardi à la MJC, une par ligne.", 
- "")
+ "Art plastique\nCinema\nDanse\nTheatre\n")
 ]
 
 instructions, expected_stdout = random.choice(experiences)
