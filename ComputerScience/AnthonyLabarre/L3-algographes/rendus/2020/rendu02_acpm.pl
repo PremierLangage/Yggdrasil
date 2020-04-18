@@ -9,7 +9,8 @@ text==
 Écrivez: 
 <ul>
 <li>une classe Graphe implémentant un graphe pondéré non orienté
-<li>; * une classe Tas implémentant une file à priorité; * une classe UnionFind; ...
+<li>une classe Tas implémentant une file à priorité
+<li>une classe UnionFind
 </ul>
 ==
 # Les tests:
