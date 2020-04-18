@@ -16,6 +16,13 @@ text==
 <li>fcpm_prim(graphe), qui prend en paramètre un graphe et renvoie la forêt couvrante de poids minimum pour ce graphe en suivant l'algorithme de Prim.
 </ul>
 ==
+
+
+# Mon code
+before==
+import unionfind
+==
+
 # Les tests:
 
 # Vérifications basiques de la classe Graphe
@@ -30,7 +37,29 @@ pltest0==
 [-2, -1, 2, 3, 4]
 ==
 
-# Vérifications basiques de la classe Tas
+# Vérification de la classe Tas sur des entiers
+pltest1==
+>>> # création d'un tas d'entiers aléatoires
+>>> from random import randint; donnees = [randint(-100, 100) for _ in range(10)]; T = Tas()
+>>> for elem in donnees:
+...     T.inserer(elem)
+>>> for elem in sorted(donnees):
+...     extraction = T.extraire_minimum()
+...     if extraction != elem:
+...         print("attendu:", elem, ", obtenu:", extraction)
+==
+
+# Vérification de la classe Tas sur des triplets (premier élément = critère pour le minimum)
+pltest2==
+>>> # création d'une liste de triplets aléatoires
+>>> from random import randint; donnees = [(randint(-100, 100), randint(-100, 100), randint(-100, 100)) for _ in range(10)]; T = Tas()
+>>> for elem in donnees:
+...     T.inserer(elem)
+>>> for elem in sorted(donnees):
+...     extraction = T.extraire_minimum()
+...     if extraction[0] != elem[0]:
+...         print("attendu: un triplet avec première valeur =", elem[0], ", obtenu: un triplet avec première valeur =", extraction[0])
+==
 
 # Vérifications basiques de la classe UnionFind
 
