@@ -6,7 +6,7 @@ builder= /builder/before.py
 author = Anthony Labarre
 title = Arbres (et forêts) couvrants de poids minimum
 text = Écrivez:
-* une classe Graphe implémentant un graphe pondéré non orienté.
+- une classe Graphe implémentant un graphe pondéré non orienté.
 
 # Les tests:
 
@@ -37,4 +37,5 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
