@@ -25,7 +25,7 @@ before==#|python|
 import random
 
 experiences = [
-("Listez dans l'ordre alphabétique toutes les activités pratiquées le mardi, une par ligne", "")
+("Listez dans l'ordre alphabétique toutes les activités pratiquées le mardi, une par ligne.", "")
 ]
 
 instructions, expected_stdout = random.choice(experiences)
@@ -45,7 +45,7 @@ Daniel est membre de la MJC depuis le **12 Juin 2017**.
 
 <br />
 
-{{ instructions }}. Veuillez à faire en sorte que votre commande (ou ensemble de commandes)
+**{{ instructions }}** Veuillez à faire en sorte que votre commande (ou ensemble de commandes)
 ne produise que l'affichage demandé sans espace ou ligne en trop. N'hésitez à faire 
 plusieus essais.
 ==
