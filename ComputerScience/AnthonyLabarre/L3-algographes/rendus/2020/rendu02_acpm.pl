@@ -37,7 +37,7 @@ pltest0==
 ==
 
 # Vérification de la classe Tas sur des entiers
-pltest1==
+pltest1==#yo
 >>> # création d'un tas d'entiers aléatoires
 >>> from random import randint; donnees = [randint(-100, 100) for _ in range(10)]; T = Tas()
 >>> for elem in donnees:
