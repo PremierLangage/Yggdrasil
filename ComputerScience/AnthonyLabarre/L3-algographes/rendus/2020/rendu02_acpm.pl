@@ -30,6 +30,11 @@ pltest0==
 [-2, -1, 2, 3, 4]
 ==
 
+# Vérifications basiques de la classe Tas
+
+# Vérifications basiques de la classe UnionFind
+
+
 
 # Le grader:
 #@ /grader/evaluator.py [grader.py]
