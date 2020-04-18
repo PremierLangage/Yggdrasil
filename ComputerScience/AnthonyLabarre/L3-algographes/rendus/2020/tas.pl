@@ -16,8 +16,6 @@ pltest0==
 >>> from random import randint; donnees = [randint(0, 100) for _ in range(10)]; T = Tas()
 >>> for elem in donnees:
 ...     T.inserer(elem)
->>> for elem in sorted(donnees):
-....    assert T.extraire_minimum() == elem
 ==
 
 # Vérification du fonctionnement sur des triplets (premier élément = critère pour le minimum)
