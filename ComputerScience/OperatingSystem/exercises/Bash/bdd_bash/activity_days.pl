@@ -28,6 +28,9 @@ experiences = [
 ("Listez dans l'ordre alphabétique toutes les activités qui sont "
  "pratiquées le mardi à la MJC, une par ligne.", 
  "Art plastique\nCinema\nDanse\nTheatre\n")
+("Listez dans l'ordre alphabétique toutes les activités qui sont "
+ "pratiquées le mardi à la MJC, une par ligne.", 
+ "Art plastique\nCinema\nDanse\nTheatre\n")
 ]
 
 instructions, expected_stdout = random.choice(experiences)
@@ -39,9 +42,11 @@ Rappel de la structuration du fichier **MJC.txt**:
 <br />
 **id:prénom:nom:age:activité lundi,activité mardi,...,activité dimanche:jour:mois:année**   
 <br />
-**{{ instructions }}** Veuillez à faire en sorte que votre commande (ou ensemble de commandes)
-ne produise que l'affichage demandé sans espace ou ligne en trop. N'hésitez à faire 
-plusieus essais.
+
+**Listez dans l'ordre alphabétique toutes les activités qui sont pratiquées le 
+{{ instructions }} à la MJC, une par ligne.** Veuillez à faire en sorte que votre 
+commande (ou ensemble de commandes) ne produise que l'affichage demandé sans 
+espace ou ligne en trop. N'hésitez à faire plusieus essais.
 ==
 
 
