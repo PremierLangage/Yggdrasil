@@ -25,8 +25,20 @@ before==#|python|
 import random
 
 experiences = [
+("lundi", 
+ ""),
 ("mardi", 
- "Art plastique\nCinema\nDanse\nTheatre\n")
+ "Art plastique\nCinema\nDanse\nTheatre\n"),
+("mercredi", 
+ ""),
+("jeudi", 
+ ""),
+("vendredi", 
+ ""),
+("samedi", 
+ ""),
+("dimanche", 
+ "")
 ]
 
 instructions, expected_stdout = random.choice(experiences)
