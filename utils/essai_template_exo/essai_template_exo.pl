@@ -48,10 +48,14 @@ f.css = 'drag'
 
 text==
 Question :
+{{ a | component }} {{b | component }}
 ==
 
 form==
-
+{{ c | component }}
+{{ d | component }}
+{{ e | component }}
+{{ f | component }}
 ==
 
 settings.feedback = lightscore
@@ -158,6 +162,7 @@ custom_pl_template == #|html|
     </ion-card-content>
 
 ==
+
 
 
 
