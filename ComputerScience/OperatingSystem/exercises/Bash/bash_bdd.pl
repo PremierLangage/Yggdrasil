@@ -16,7 +16,7 @@
 extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 
 # Add the file containing the db of the "maison des jeunes et de la culture"
-@ mjc.txt
+@ MJC.txt
 
 author=Nicolas Borie
 title=Base de données primitive en bash
