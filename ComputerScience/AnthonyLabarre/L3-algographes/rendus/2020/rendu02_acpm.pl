@@ -5,10 +5,11 @@ builder= /builder/before.py
 
 author = Anthony Labarre
 title = Arbres (et forêts) couvrants de poids minimum
-text = Écrivez: 
+text == Écrivez: 
 <ul>
 <li>une classe Graphe implémentant un graphe pondéré non orienté.; * une classe Tas implémentant une file à priorité; * une classe UnionFind; ...
 </ul>
+==
 # Les tests:
 
 pltest0==
