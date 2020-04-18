@@ -21,8 +21,11 @@ Un fichier **MJC.txt** a été placé dans votre répertoire courant de travail.
 Ce fichier est structuré de manière très sérieuse en ligne. Chaque ligne correspond à
 un membre de la MJC(Maison des Jeunes et de la Culture) de la capitale de la Syldavie. 
 Chaque ligne suit la structure suivante :   
+   
 **id:prénom:nom:age:activité lundi,activité mardi,...,activité dimanche:jour:mois:année**   
+   
 À titre d'exemple, la première ligne du fichier est ainsi :   
+   
 **12137916:Daniel:Leroux:31:Theatre,,,,,,:12:Jun:2017**   
 **Daniel Leroux** est donc le membre **12137916** de la MJC. Il a **31** ans et ne pratique que 
 le **théâtre** le lundi ; les autres jours de la semaine, Daniel ne suit aucune activité. 
