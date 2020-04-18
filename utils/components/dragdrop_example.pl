@@ -1,49 +1,61 @@
 extends = /model/basic.pl
 
+@ /utils/components/dragdrop.py [customdragdrop.py]
+
 title = Comparaison de nombres (DragDrop)
 
-before==#|python|
+before==
+from customdragdrop import CustomDragDrop, DragDropGroup
 import random as rd
-from customdragdrop import DragDropGroup
 
-lt="$%\lt%$" # latex for "less than"
-gt="$%\gt%$" # latex for "greater than"
+lt="&lt;"
+gt="&gt;"
 
 n = 4
 
-mygroup = DragDropGroup()
-mygroup.set_label({"lt": lt, "gt": gt})
-
 numbers = []
-for i in range(n):
+sol = []
+for _ in range(n):
     [a,b] = rd.sample(range(10,100),2)
     numbers.append([a,b])
-    mygroup.add_drop({i:"coucou"}) 
     if a < b:
-        mygroup.add_match_by_content(i,lt) 
+        sol.append(lt)
     else:
-        mygroup.add_match_by_content(i,gt) 
+        sol.append(gt)
+
+label = CustomDragDrop.Labels([lt,gt])
+drop = CustomDragDrop.Drops(n)
 ==
 
-text ==
-{% for label in mygroup.labels.values() %} {{ label|component }} {% endfor %}
+text==
+Comparer les nombres suivants avec les symboles {{ label[0] | component }} et {{ label[1] | component }}.
 ==
 
-form ==#|html|
+form==
 <ul>
-{% for i, drop in mygroup.drops.items() %}
-<li> {{ numbers[i|int][0] }} {{ drop|component }} {{ numbers[i|int][1] }} </li>
-{% endfor %}
+{% for i in range(4) %}
+<li> {{ numbers[i][0] }} {{ drop[i]|component }} {{ numbers[i][1] }} </li>
+{% endfor %}
 </ul>
-
 ==
 
 settings.feedback = lightscore
 
-evaluator==#|python|
-from customdragdrop import right_minus_wrong
+evaluator==
+from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
 
-grade = mygroup.eval(grading_function = right_minus_wrong)
+#grade=CustomDragDrop.eval(drop,sol)
+groupp = DragDropGroup(labels = label, drop_zones = drop)
+
+for i in range(len(numbers)):
+        if numbers[i][0] < numbers[i][1]:
+            groupp.set_match(label[0],drop[i])
+        elif numbers[i][0] > numbers[i][1]:
+            groupp.set_match(label[1],drop[i])
+
+grade = groupp.eval(grading_function = right_minus_wrong)
+
+
 ==
 
 extracss == #|html| 
@@ -54,6 +66,9 @@ extracss == #|html|
         }
 </style>
 ==
+
+
+
 
 
 
