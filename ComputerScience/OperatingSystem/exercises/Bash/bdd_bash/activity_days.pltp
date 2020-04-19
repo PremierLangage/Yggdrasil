@@ -32,15 +32,15 @@ Chaque ligne suit la structure suivante :
 le **théâtre** le lundi ; les autres jours de la semaine, Daniel ne suit aucune activité. 
 Daniel est membre de la MJC depuis le **12 Juin 2017**.
 
-Rappel :
-========
+Rappels pour cette salve d'exercices :
+======================================
 
-    grep [fichier ou stdin] -e "MOTIF REGEXP"
+    grep -e "MOTIF REGEXP" [fichier ou stdin]
 `grep` permet de selectionner des lignes contenant
 un certain MOTIF sous forme d'expression régulière (-v inverse la sélection 
 et donc affiche les lignes qui ne contiennent pas le MOTIF).
 
-    cut -d 'CHAR' -f ENTIER1, ENTIER2, ... , ENTIERn
+    cut -d 'CHAR' -f ENTIER1, ENTIER2, ... , ENTIERn [fichier ou stdin]
 `cut` permet de selectionner une ou plusieurs colonne dans un fichier 
 strcuturé par lignes où les déélimiteurs sont spécifié par CHAR et les 
 numéros de colonne par ENTIER1, ENTIER2, etc. La première colonne porte 
@@ -50,6 +50,12 @@ le numéro 1.
 Word Count `wc` compte le nombre de caractères, de mots et de lignes dans 
 le fichier en argument ou l'entrée standard. Attention, si l'argument est 
 un fichier, le nom de l'argument est béguayé sur la sortie standard.
+
+    sed -e "s/ANCIEN MOTIF/NOUVEAU MOTIF/g" [fichier ou stdin]
+`sed` et sa fonction s pour substitution avec paramètre g va cherche TOUTES(g) 
+les occurences de l'ANCIEN MOTIF (REGEXP) et les transformer(s) en une 
+occurence du NOUVEAU MOTIF. `sed` oppère son travail sur l'entrée standard 
+ou bien un fichier spécifié en argument.
 ==
 
 # Size of the bdd : number of lines of the MJC.txt file
