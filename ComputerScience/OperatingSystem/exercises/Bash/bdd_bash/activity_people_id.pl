@@ -25,7 +25,7 @@ before==#|python|
 import random
 
 experiences = [
-("", ""),
+("583674581", ",,,,Art plastique,Cinema,\n"),
 ]
 
 instructions, expected_stdout = random.choice(experiences)
