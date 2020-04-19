@@ -53,6 +53,8 @@ pltest1==
 ==
 
 # Vérification de la classe Tas sur des triplets (premier élément = critère pour le minimum)
+
+testname2 = Vérification de la classe Tas sur des triplets (premier élément = critère pour le minimum)
 pltest2==
 >>> # création d'une liste de triplets aléatoires
 >>> from random import randint; donnees = [(randint(-100, 100), randint(-100, 100), randint(-100, 100)) for _ in range(10)]; T = Tas()
