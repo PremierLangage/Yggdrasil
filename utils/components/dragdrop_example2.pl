@@ -52,6 +52,11 @@ form==
 
 ==
 
+text== a
+==
+form== a
+==
+
 settings.feedback = lightscore
 
 evaluator==
@@ -72,6 +77,7 @@ extracss == #|html|
         }
 </style>
 ==
+
 
 
 
