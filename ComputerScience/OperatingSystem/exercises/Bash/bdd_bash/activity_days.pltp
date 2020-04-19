@@ -33,4 +33,11 @@ le **théâtre** le lundi ; les autres jours de la semaine, Daniel ne suit aucun
 Daniel est membre de la MJC depuis le **12 Juin 2017**.
 ==
 
+# Size of the bdd : number of lines of the MJC.txt file
+@ /ComputerScience/OperatingSystem/exercises/Bash/bdd_bash/bdd_size.pl
+
+# Size of a given family
+@ /ComputerScience/OperatingSystem/exercises/Bash/bdd_bash/family_size.pl
+
+# List availlable activity of a given day
 @ /ComputerScience/OperatingSystem/exercises/Bash/bdd_bash/activity_days.pl
