@@ -52,9 +52,11 @@ form==
 
 ==
 
-text== a
+text== 
+a
 ==
-form== a
+form== 
+a
 ==
 
 settings.feedback = lightscore
