@@ -19,21 +19,13 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 @ MJC.txt
 
 author=Nicolas Borie
-title=Taille d'une famille donnée
+title=Activités suivies d'un membre connu par son Id
 
 before==#|python|
 import random
 
 experiences = [
-("Fonsec", "24\n"),
-("Roche", "16\n"),
-("Coste", "22\n"),
-("Afonso", "21\n"),
-("Lamy", "13\n"),
-("Brunet", "17\n"),
-("Boyer", "20\n"),
-("Bakri", "10\n"),
-("Leroy", "14\n"),
+("", ""),
 ]
 
 instructions, expected_stdout = random.choice(experiences)
@@ -46,9 +38,11 @@ Rappel de la structuration du fichier **MJC.txt**:
 **id:prénom:nom:age:activité lundi,activité mardi,...,activité dimanche:jour:mois:année**   
 <br />
 
-**Donnez le nombre de personnes membres de la MJC dans la famille 
-{{ instructions }}.** Veuillez à faire en sorte que votre 
-commande ne produise que l'affichage numérique seul sur une 
+**Affichez le vecteur des activités suivies par le membre ayant l'Id 
+{{ instructions }}.** Il faut selectionner dans la bdd la partie
+`activité lundi, activité mardi, ..., activité dimanche` associé au bon 
+membre (laissez les virgules). Veuillez à faire en sorte que votre 
+commande ne produise que l'affichage demandé seul sur une 
 ligne. N'hésitez à faire plusieus essais.
 ==
 
