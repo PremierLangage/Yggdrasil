@@ -2,7 +2,7 @@
 @ /utils/sandboxio.py
 @ unionfind.py
 # @ corrlib_graphes.py # TODO: networkx pas installé sur la plateforme
-extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
+extends= /ComputerScience/python/AP1-1920/templates/pltestblonde.pl
 builder= /builder/before.py
 
 author = Anthony Labarre
@@ -146,6 +146,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
