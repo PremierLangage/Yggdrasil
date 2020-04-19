@@ -26,6 +26,7 @@ import random
 
 experiences = [
 ("583674581", ",,,,Art plastique,Cinema,\n"),
+("756416762", "Danse,Cinema,,Histoire,,Piano,\n"),
 ]
 
 instructions, expected_stdout = random.choice(experiences)
