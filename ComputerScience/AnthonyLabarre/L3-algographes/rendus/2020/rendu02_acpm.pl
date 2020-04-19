@@ -27,6 +27,7 @@ before==
 # Les tests:
 
 # Vérifications basiques de la classe Graphe
+testname0 = Vérifications basiques de la classe Graphe
 pltest0== 
 >>> G = Graphe()
 >>> G.ajouter_aretes([(0, 2, -2), (1, 0, 4), (1, 2, 3), (2, 3, 2), (3, 1, -1)])
@@ -39,6 +40,7 @@ pltest0==
 ==
 
 # Vérification de la classe Tas sur des entiers
+testname1 = Vérification de la classe Tas sur des entiers
 pltest1== 
 >>> # création d'un tas d'entiers aléatoires
 >>> from random import randint; donnees = [randint(-100, 100) for _ in range(10)]; T = Tas()
@@ -137,6 +139,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
