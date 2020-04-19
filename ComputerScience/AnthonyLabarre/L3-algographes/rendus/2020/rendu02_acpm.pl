@@ -30,7 +30,7 @@ before==
 pltest0== 
 >>> G = Graphe()
 >>> G.ajouter_aretes([(0, 2, -2), (1, 0, 4), (1, 2, 3), (2, 3, 2), (3, 1, -1)])
->>> sorted(G.sommets())
+>>> sorted(G.sommets()) # Bla
 [0, 1, 2, 3]
 >>> sorted(sorted(_) + [poids] for *_, poids in G.aretes())
 [[0, 1, 4], [0, 2, -2], [1, 2, 3], [1, 3, -1], [2, 3, 2]]
