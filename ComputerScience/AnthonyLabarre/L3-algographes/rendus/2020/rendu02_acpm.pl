@@ -108,6 +108,7 @@ pltest5==
 ==
 
 # Vérifications de fcpm_prim sur un graphe non connexe
+testname6 =  Vérifications de fcpm_prim sur un graphe non connexe
 pltest6==
 >>> G = Graphe(); 
 >>> G.ajouter_aretes([(0, 1, 5), (0, 3, 4), (0, 4, 2), (1, 4, 2), (2, 3, 9), (2, 5, 5), (3, 4, 3), (3, 5, 7), (3, 6, 4), (4, 6, 7), (5, 6, 12)]);
