@@ -63,11 +63,11 @@ a
 settings.feedback = lightscore
 
 evaluator==
-from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
-mygroup = DragDropGroup()
-mygroup.labels = {"integrale": c, "limite": d, "fraction": e, "determinant": f}
-mygroup.drops = {"1": a, "tiers": b}
-mygroup._matches = g
+#from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
+#mygroup = DragDropGroup()
+#mygroup.labels = {"integrale": c, "limite": d, "fraction": e, "determinant": f}
+#mygroup.drops = {"1": a, "tiers": b}
+#mygroup._matches = g
 
 grade=(100,str(mygroup.drops)+str(a)+truc)#mygroup.eval(grading_function = right_minus_wrong) 
 ==
