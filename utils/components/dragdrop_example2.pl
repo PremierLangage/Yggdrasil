@@ -69,7 +69,7 @@ evaluator==
 #mygroup.drops = {"1": a, "tiers": b}
 #mygroup._matches = g
 
-grade=(100,str(mygroup.drops)+str(a)+truc)#mygroup.eval(grading_function = right_minus_wrong) 
+grade=(100,str(a)+truc)#mygroup.eval(grading_function = right_minus_wrong) 
 ==
 
 extracss == #|html| 
