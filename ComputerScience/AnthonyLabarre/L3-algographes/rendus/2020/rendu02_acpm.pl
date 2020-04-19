@@ -67,6 +67,7 @@ pltest2==
 ==
 
 # Vérifications basiques de la classe UnionFind
+testname3 = Vérifications basiques de la classe UnionFind
 pltest3==
 >>> # initialisation d'un ensemble de singletons
 >>> import itertools, random, unionfind; n = 50; ma_structure = unionfind.UnionFind(range(n)); sa_structure = UnionFind(range(n))
@@ -85,6 +86,7 @@ pltest3==
 ==
 
 # Vérifications de acpm_prim sur un graphe connexe
+testname4 = Vérifications de acpm_prim sur un graphe connexe
 pltest4==
 >>> import random; G = Graphe(); G.ajouter_aretes([(0, 1, 5), (0, 3, 4), (0, 4, 2), (1, 4, 2), (2, 3, 9), (2, 5, 5), (3, 4, 3), (3, 5, 7), (3, 6, 4), (4, 6, 7), (5, 6, 12)]); arbre = acpm_prim(G, random.choice(list(G.sommets())))
 >>> sum(poids for *_, poids in arbre.aretes())
@@ -95,6 +97,7 @@ pltest4==
 ==
 
 # Vérifications de acpm_kruskal sur un graphe connexe
+testname5 = Vérifications de acpm_kruskal sur un graphe connexe
 pltest5==
 >>> import random; G = Graphe(); G.ajouter_aretes([(0, 1, 5), (0, 3, 4), (0, 4, 2), (1, 4, 2), (2, 3, 9), (2, 5, 5), (3, 4, 3), (3, 5, 7), (3, 6, 4), (4, 6, 7), (5, 6, 12)]); arbre = acpm_kruskal(G)
 >>> sum(poids for *_, poids in arbre.aretes())
