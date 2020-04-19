@@ -19,7 +19,7 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 @ MJC.txt
 
 author=Nicolas Borie
-title=Taille d'une famille
+title=Taille d'une famille donnée
 
 before==#|python|
 import random
@@ -46,10 +46,10 @@ Rappel de la structuration du fichier **MJC.txt**:
 **id:prénom:nom:age:activité lundi,activité mardi,...,activité dimanche:jour:mois:année**   
 <br />
 
-**Listez dans l'ordre alphabétique toutes les activités qui sont pratiquées le 
-{{ instructions }} à la MJC, une par ligne.** Veuillez à faire en sorte que votre 
-commande (ou ensemble de commandes) ne produise que l'affichage demandé sans 
-espace ou ligne en trop. N'hésitez à faire plusieus essais.
+**Donnez le nombre de personnes membres de la MJC dans la famille 
+{{ instructions }}.** Veuillez à faire en sorte que votre 
+commande ne produise que l'affichage numérique seul sur une 
+ligne. N'hésitez à faire plusieus essais.
 ==
 
 
