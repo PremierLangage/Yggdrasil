@@ -34,7 +34,7 @@ f=mygroup.drops[3]
 ==
 
 text ==
-{{ a }} {{ b }}
+{{ a |component}} {{ b|component }}
 {% for label in mygroup.labels.values() %} {{ label|component }} {% endfor %}
 ==
 
