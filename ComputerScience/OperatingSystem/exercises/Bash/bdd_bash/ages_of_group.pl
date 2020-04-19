@@ -25,7 +25,8 @@ before==#|python|
 import random
 
 experiences = [
-("des membres ayant le prénom ", ""),
+("des membres ayant le prénom Marise", 
+ "6\n9\n10\n16\n26\n31\n32\n50\n51\n52\n63\n76\n86\n87\n95\n98\n"),
 ]
 
 instructions, expected_stdout = random.choice(experiences)
