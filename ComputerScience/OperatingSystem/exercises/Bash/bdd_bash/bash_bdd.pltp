@@ -56,6 +56,15 @@ un fichier, le nom de l'argument est béguayé sur la sortie standard.
 les occurences de l'ANCIEN MOTIF (REGEXP) et les transformer(s) en une 
 occurence du NOUVEAU MOTIF. `sed` oppère son travail sur l'entrée standard 
 ou bien un fichier spécifié en argument.
+
+    sort -[u|n] [fichier ou stdin]
+    sort [fichier ou stdin] | uniq -d 
+`sort` trie par lignes le fichier en argument s'il est spécifié ou l'entrée 
+standard. L'option -u supprime les doublons au vol lorsque le tri est 
+opéré. Le trie est fait suivant l'ordre lexicoASCII. L'option -n demande 
+u tri numérique à la place. `uniq -d` fait un peu l'inverse une fois que le 
+flux est déjà trié car il ne selectionne que les doublons (une seule 
+occurence est gardé par lignes réppétée).
 ==
 
 # Size of the bdd : number of lines of the MJC.txt file
