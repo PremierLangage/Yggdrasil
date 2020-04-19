@@ -32,7 +32,7 @@ pltest0==
 >>> G.ajouter_aretes([(0, 2, -2), (1, 0, 4), (1, 2, 3), (2, 3, 2), (3, 1, -1)])
 >>> sorted(G.sommets())
 [0, 1, 2, 3]
->>> sorted(G.aretes())
+>>> sorted(sorted(*_) + [poids] for *_, poids in G.aretes())
 [(0, 2, -2), (1, 0, 4), (1, 2, 3), (2, 3, 2), (3, 1, -1)]
 >>> sorted(G.poids_arete(u, v) for u, v, *_ in G.aretes())
 [-2, -1, 2, 3, 4]
