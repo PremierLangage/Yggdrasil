@@ -33,7 +33,7 @@ experiences = [
 ("728525218", "Theatre,,,Cuisine,Cinema,,\n"),
 ("565401605", ",,,,,,\n"),
 ("600823896", "Chorale,,Poterie,Chorale,,,\n"),
-("431719037", "Poterie,Sophrologie,Art plastique,,Piano\n"),
+("431719037", ",,Poterie,Sophrologie,Art plastique,,Piano\n"),
 ("399388242", "Sophrologie,Theatre,Cinema,Cirque,,,Piano\n"),
 ]
 
@@ -54,4 +54,5 @@ membre (laissez les virgules). Veuillez à faire en sorte que votre
 commande ne produise que l'affichage demandé seul sur une 
 ligne. N'hésitez à faire plusieus essais.
 ==
+
 
