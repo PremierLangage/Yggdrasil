@@ -31,6 +31,25 @@ Chaque ligne suit la structure suivante :
 **Daniel Leroux** est donc le membre **12137916** de la MJC. Il a **31** ans et ne pratique que 
 le **théâtre** le lundi ; les autres jours de la semaine, Daniel ne suit aucune activité. 
 Daniel est membre de la MJC depuis le **12 Juin 2017**.
+
+Rappel :
+========
+
+    grep [fichier ou stdin] -e "MOTIF REGEXP"
+`grep` permet de selectionner des lignes contenant
+un certain MOTIF sous forme d'expression régulière (-v inverse la sélection 
+et donc affiche les lignes qui ne contiennent pas le MOTIF).
+
+    cut -d 'CHAR' -f ENTIER1, ENTIER2, ... , ENTIERn
+`cut` permet de selectionner une ou plusieurs colonne dans un fichier 
+strcuturé par lignes où les déélimiteurs sont spécifié par CHAR et les 
+numéros de colonne par ENTIER1, ENTIER2, etc. La première colonne porte 
+le numéro 1.
+
+    wc -[l|c|w] [fichier ou stdin]
+Word Count `wc` compte le nombre de caractères, de mots et de lignes dans 
+le fichier en argument ou l'entrée standard. Attention, si l'argument est 
+un fichier, le nom de l'argument est béguayé sur la sortie standard.
 ==
 
 # Size of the bdd : number of lines of the MJC.txt file
@@ -38,6 +57,11 @@ Daniel est membre de la MJC depuis le **12 Juin 2017**.
 
 # Size of a given family
 @ /ComputerScience/OperatingSystem/exercises/Bash/bdd_bash/family_size.pl
+
+# Activities of a people given by id
+
+
+# List ages of all people with given last name or/and first name 
 
 # Namesake occurence counting
 @ /ComputerScience/OperatingSystem/exercises/Bash/bdd_bash/namesake_count.pl
