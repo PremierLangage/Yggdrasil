@@ -22,17 +22,26 @@ mygroup.set_drop({"1" : qui_vaut_1, "tiers": qui_vaut_tiers})
 mygroup.set_match_by_name("1", "integrale")
 mygroup.add_match_by_name("tiers", ["limite","determinant"])
 
+a = mygroup.drops['1'] 
+# bug incroyable : si le nom est 'q' au lieu de 'a', et qu'on remplace dans le text/evaluator, ça bugge
+b = mygroup.drops["tiers"]
+c = mygroup.labels["integrale"]
+d = mygroup.labels["limite"]
+e = mygroup.labels["fraction"]
+f = mygroup.labels["determinant"]
+g = mygroup._matches
 ==
 
-text==#|HTML|
-Question :{{mygroup.drops['1'] | component}} {{mygroup.drop['tiers'] | component}}
+text==
+Question : {{ a | component }} {{ b | component }}
 ==
 
 form==
-{{ mygroup.labels['integrale'] | component }}
-{{ mygroup.labels['limite'] | component }}
-{{ mygroup.labels['fraction'] | component }}
-{{ mygroup.labels['determinant'] | component }}
+{{ c | component }}
+{{ d | component }}
+{{ e | component }}
+{{ f | component }}
+
 ==
 
 settings.feedback = lightscore
