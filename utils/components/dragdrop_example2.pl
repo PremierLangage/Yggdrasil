@@ -63,7 +63,7 @@ a
 settings.feedback = lightscore
 
 evaluator==
-# from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
+from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
 mygroup = DragDropGroup()
 mygroup.labels = {"integrale": c, "limite": d, "fraction": e, "determinant": f}
 mygroup.drops = {"1": a, "tiers": b}
