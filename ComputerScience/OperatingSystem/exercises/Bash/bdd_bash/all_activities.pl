@@ -23,7 +23,9 @@ title=Liste de toutes les activités pratiquées
 
 before==#|python|
 
-expected_stdout = ""
+expected_stdout = "Anglais\nArt plastique\nChorale\nCinema\nCirque\nCouture\n"
+                  "Cuisine\nDanse\nHistoire\nPate a sel\nPiano\nPoterie\n"
+                  "Sophrologie\nSport\nTheatre\nYoga\n"
 ==
 
 text==
