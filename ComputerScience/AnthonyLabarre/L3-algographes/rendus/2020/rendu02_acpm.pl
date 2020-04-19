@@ -100,7 +100,6 @@ pltest5==
 18
 ==
 
-
 # Vérifications de fcpm_prim sur un graphe non connexe
 pltest6==
 >>> G = Graphe(); 
