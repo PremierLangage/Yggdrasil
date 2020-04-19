@@ -39,5 +39,8 @@ Daniel est membre de la MJC depuis le **12 Juin 2017**.
 # Size of a given family
 @ /ComputerScience/OperatingSystem/exercises/Bash/bdd_bash/family_size.pl
 
+# Namesake occurence counting
+@ /ComputerScience/OperatingSystem/exercises/Bash/bdd_bash/namesake_count.pl
+
 # List availlable activity of a given day
 @ /ComputerScience/OperatingSystem/exercises/Bash/bdd_bash/activity_days.pl
