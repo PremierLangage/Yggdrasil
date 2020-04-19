@@ -1,6 +1,7 @@
 # Test d'une classe Graphe implémentant un graphe pondéré non orienté.
 @ /utils/sandboxio.py
 @ unionfind.py
+@ corrlib_graphes.py
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 builder= /builder/before.py
 
