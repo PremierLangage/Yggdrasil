@@ -31,6 +31,7 @@ mygroup.add_match_by_name("1", ["limite","determinant"])
 
 # Ce qui suit sert uniquement à faire voyager le groupe dans le grader
 a = mygroup.drops['1'] 
+truc = str(a)
 # bug incroyable : si le nom est 'q' au lieu de 'a', et qu'on remplace dans le text/evaluator, ça bugge
 b = mygroup.drops["tiers"]
 c = mygroup.labels["integrale"]
