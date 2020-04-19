@@ -19,22 +19,13 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 @ MJC.txt
 
 author=Nicolas Borie
-title=Activités suivies d'un membre connu par son Id
+title=Ages des personnes d'un groupe
 
 before==#|python|
 import random
 
 experiences = [
-("583674581", ",,,,Art plastique,Cinema,\n"),
-("756416762", "Danse,Cinema,,Histoire,,Piano,\n"),
-("506271002", ",Danse,,,,,\n"),
-("790235656", ",,,,,,\n"),
-("78672237", "Cirque,,Cinema,Chorale,,Pate a sel,Couture\n"),
-("728525218", "Theatre,,,Cuisine,Cinema,,\n"),
-("565401605", ",,,,,,\n"),
-("600823896", "Chorale,,Poterie,Chorale,,,\n"),
-("431719037", "Poterie,Sophrologie,Art plastique,,Piano\n"),
-("399388242", "Sophrologie,Theatre,Cinema,Cirque,,,Piano\n"),
+("", ""),
 ]
 
 instructions, expected_stdout = random.choice(experiences)
