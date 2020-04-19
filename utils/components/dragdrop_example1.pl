@@ -25,7 +25,7 @@ for i in range(n):
     else:
         mygroup.add_match_by_content(i,gt) 
 
-a=mygroup.labels['lt']
+aa=mygroup.labels['lt']
 b=mygroup.labels['gt']
 c=mygroup.drops[0]
 d=mygroup.drops[1]
@@ -34,7 +34,7 @@ f=mygroup.drops[3]
 ==
 
 text ==
-{{ a }} {{ b }}
+{{ aa }} {{ b }}
 {% for label in mygroup.labels.values() %} {{ label|component }} {% endfor %}
 ==
 
