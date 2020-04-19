@@ -25,7 +25,7 @@ before==#|python|
 import random
 
 experiences = [
-("", ""),
+("des membres ayant le prénom ", ""),
 ]
 
 instructions, expected_stdout = random.choice(experiences)
@@ -38,8 +38,8 @@ Rappel de la structuration du fichier **MJC.txt**:
 **id:prénom:nom:age:activité lundi,activité mardi,...,activité dimanche:jour:mois:année**   
 <br />
 
-**Affichez le vecteur des activités suivies par le membre ayant l'Id 
-{{ instructions }}.** Il faut selectionner dans la bdd la partie
+**Affichez en ordre croissant l'ensemble des ages avec répétition possible 
+(un age par ligne) {{ instructions }}.** Il faut selectionner dans la bdd la partie
 `activité lundi, activité mardi, ..., activité dimanche` associé au bon 
 membre (laissez les virgules). Veuillez à faire en sorte que votre 
 commande ne produise que l'affichage demandé seul sur une 
