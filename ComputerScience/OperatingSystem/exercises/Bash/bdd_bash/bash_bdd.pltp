@@ -74,7 +74,7 @@ occurence est gardé par groupe de lignes réppétées).
 @ /ComputerScience/OperatingSystem/exercises/Bash/bdd_bash/family_size.pl
 
 # Activities of a people given by id
-
+@ /ComputerScience/OperatingSystem/exercises/Bash/bdd_bash/activity_people_id.pl
 
 # List ages of all people with given last name or/and first name 
 
