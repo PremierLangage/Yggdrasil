@@ -10,7 +10,7 @@ text = Écrivez une classe Graphe implémentant un graphe pondéré non orienté
 # Les tests:
 
 before==
-print("yo")
+
 ==
 
 pltest0==
