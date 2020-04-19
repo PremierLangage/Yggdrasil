@@ -30,9 +30,11 @@ experiences = [
 ("des membres s'appelant Alice Peltier (toutes les homonymes)",
  "33\n97\n"),
 ('des membres portant le prénom de Marinette et ayant un nom de famille commençant par "Le"', 
- "17\n20\n63\n65\n96\n")
+ "17\n20\n63\n65\n96\n"),
 ("des membres ayant pour initiale N.B. (N pour le prénom et B pour le nom)",
- "34\n36\n45\n57\n60\n70\n74\n79\n100\n")
+ "34\n36\n45\n57\n60\n70\n74\n79\n100\n"),
+("des membres ayant pour initiale D.R. (D pour le prénom et R pour le nom)",
+ "31\n69\n81\n")
 ]
 
 instructions, expected_stdout = random.choice(experiences)
