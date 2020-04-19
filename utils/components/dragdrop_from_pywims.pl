@@ -17,7 +17,7 @@ qui_vaut_1 = r'Poser ici une expression égale à 1'
 qui_vaut_tiers = r'Poser ici une expression égale à $1/3$'
 
 mygroup = CustomDragDropGroup()
-mygroup.set_label({'integrale': integrale, 'fraction': fraction, 'limite':limite, 'determinant': determinant'})
+mygroup.set_label({'integrale': integrale, 'fraction': fraction, 'limite':limite, 'determinant': determinant})
 mygroup.set_drop({'1' : qui_vaut_1, 'tiers': qui_vaut_tiers})
 mygroup.set_match_by_name([('tiers', 'integrale'), ('1', 'limite'), ('1', 'determinant')])
 ==
@@ -50,6 +50,7 @@ extracss == #|html|
         }
 </style>
 ==
+
 
 
 
