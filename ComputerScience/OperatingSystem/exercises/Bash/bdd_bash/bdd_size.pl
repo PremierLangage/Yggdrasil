@@ -23,7 +23,7 @@ title=Taille de la base de données
 
 before==#|python|
 
-expected_stdput = "2248\n"
+expected_stdout = "2248\n"
 ==
 
 text==
