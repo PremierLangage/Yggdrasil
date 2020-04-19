@@ -33,8 +33,8 @@ experiences = [
 ("728525218", "Theatre,,,Cuisine,Cinema,,\n"),
 ("565401605", ",,,,,,\n"),
 ("600823896", "Chorale,,Poterie,Chorale,,,\n"),
-("", ""),
-("", ""),
+("431719037", "Poterie,Sophrologie,Art plastique,,Piano\n"),
+("399388242", "Sophrologie,Theatre,Cinema,Cirque,,,Piano\n"),
 ]
 
 instructions, expected_stdout = random.choice(experiences)
