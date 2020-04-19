@@ -64,7 +64,7 @@ standard. L'option -u supprime les doublons au vol lorsque le tri est
 opéré. Le trie est fait suivant l'ordre lexicoASCII. L'option -n demande 
 u tri numérique à la place. `uniq -d` fait un peu l'inverse une fois que le 
 flux est déjà trié car il ne selectionne que les doublons (une seule 
-occurence est gardé par lignes réppétée).
+occurence est gardé par groupe de lignes réppétées).
 ==
 
 # Size of the bdd : number of lines of the MJC.txt file
