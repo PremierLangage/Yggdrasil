@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 # coding: utf-8
 import sys, jsonpickle, re
@@ -43,11 +44,13 @@ if __name__ == "__main__":
     if "pltest" in dic:
         pltest = dic['pltest']
         tester = PlRunner(student,pltest)
-        a, b = tester.runpltest(1)
+        testname = dic['testname'] if 'testname' in dic else "Groupe de test un"
+        a, b = tester.runpltest(testname)
     elif "pltest0" in dic:
         pltest = dic['pltest0']
         tester = PlRunner(student,pltest)
-        a, b = tester.runpltest(1)
+        testname = dic['testname0'] if 'testname0' in dic else "Groupe de test 0"
+        a, b = tester.runpltest(testname)
     else:
 
         a,b= True, ""
@@ -55,7 +58,9 @@ if __name__ == "__main__":
     while "pltest"+str(i) in dic and (a or stop ) :
         outstr += b
         testi = PlRunner(student,dic["pltest"+str(i)])
-        a, b = testi.runpltest(i+1)
+        tname='testname'+str(i)
+        testname = dic[tname] if tname in dic else "Groupe de test "+str(i+1)
+        a, b = testi.runpltest(testname)
         i=i+1
 
     outstr +=  b
@@ -63,5 +68,7 @@ if __name__ == "__main__":
         outstr += dic["feedback"]+" valeur de stop "+ str(stop)
     output(a,outstr)
     
+
+
 
 
