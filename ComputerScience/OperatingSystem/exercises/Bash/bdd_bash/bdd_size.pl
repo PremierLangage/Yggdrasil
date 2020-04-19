@@ -36,6 +36,6 @@ Rappel de la structuration du fichier **MJC.txt**:
 contexte, cela revient à produire une commande qui affiche le nombre de membres 
 enregistrés de la MJC. Veuillez à faire en sorte que votre 
 commande ne produise que l'affichage numérique seul sur une 
-ligne. N'hésitez à faire plusieus essais.
+ligne. N'hésitez à faire plusieurs essais.
 ==
 
