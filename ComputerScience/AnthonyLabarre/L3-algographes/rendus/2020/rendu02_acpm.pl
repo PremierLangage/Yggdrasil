@@ -81,8 +81,7 @@ pltest3==
 
 # Vérifications de acpm_prim sur un graphe connexe
 pltest4==
->>> G = Graphe(); G.ajouter_aretes([(0, 1, 5), (0, 3, 4), (0, 4, 2), (1, 4, 2), (2, 3, 9), (2, 5, 5),
-         (3, 4, 3), (3, 5, 7), (3, 6, 4), (4, 6, 7), (5, 6, 12)]);  # exemple du cours
+>>> G = Graphe(); G.ajouter_aretes([(0, 1, 5), (0, 3, 4), (0, 4, 2), (1, 4, 2), (2, 3, 9), (2, 5, 5), (3, 4, 3), (3, 5, 7), (3, 6, 4), (4, 6, 7), (5, 6, 12)]);  # exemple du cours
 >>> # stuff
 ==
 
