@@ -70,7 +70,7 @@ mygroup.labels = {"integrale": c, "limite": d, "fraction": e, "determinant": f}
 mygroup.drops = {"1": a, "tiers": b}
 mygroup._matches = g
 
-grade=(100,str(mygroup)+truc)#mygroup.eval(grading_function = right_minus_wrong) 
+grade=(100,str(mygroup.drops)+truc)#mygroup.eval(grading_function = right_minus_wrong) 
 ==
 
 extracss == #|html| 
