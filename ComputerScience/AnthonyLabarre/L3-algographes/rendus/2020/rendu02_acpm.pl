@@ -64,7 +64,7 @@ pltest2==
 # Vérifications basiques de la classe UnionFind
 pltest3==
 >>> # initialisation d'un ensemble de singletons
->>> import itertools, random, unionfind; n = 50; ma_structure = unionfind.UnionFind(range(n)); sa_structure = UnionFind(range(n))
+>>> import itertools, random; n = 50; ma_structure = unionfind.UnionFind(range(n)); sa_structure = UnionFind(range(n))
 >>> # fusions aléatoires
 >>> nbr_unions = 20
 >>> couples = list(itertools.combinations(range(n), 2)); random.shuffle(couples)
@@ -88,7 +88,7 @@ pltest4==
 # Le grader:
 #@ /grader/evaluator.py [grader.py]
 evaluator==
-
+import unionfind
 
 grade=(100,"bravo")
 ==
