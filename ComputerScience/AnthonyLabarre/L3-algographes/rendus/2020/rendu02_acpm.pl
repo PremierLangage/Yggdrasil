@@ -27,7 +27,7 @@ before==
 # Les tests:
 
 # Vérifications basiques de la classe Graphe
-pltest0==
+pltest0== # Vérifications basiques de la classe Graphe
 >>> G = Graphe()
 >>> G.ajouter_aretes([(0, 2, -2), (1, 0, 4), (1, 2, 3), (2, 3, 2), (3, 1, -1)])
 >>> sorted(G.sommets())
@@ -137,5 +137,6 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
