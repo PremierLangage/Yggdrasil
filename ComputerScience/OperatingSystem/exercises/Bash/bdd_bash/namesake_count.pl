@@ -33,12 +33,12 @@ Rappel de la structuration du fichier **MJC.txt**:
 <br />
 
 **Établissez une commande qui compte de nombre de couples (prénom, nom) 
-tels que plusieurs personnes membres de la MJC porte ce nom et ce prénom.** 
+tels que plusieurs personnes membres de la MJC portent ce nom et ce prénom.** 
 Cela revient à lister tous les couples (prénom, nom) de la base de données puis à
 ne selectionner que les lignes dupliqués. On termine en comptant ces lignes 
 soigneusement selectionnées. Veuillez à faire en sorte que votre 
 commande ne produise que l'affichage numérique seul sur une 
-ligne. N'hésitez à faire plusieus essais.
+ligne. N'hésitez à faire plusieurs essais.
 ==
 
 
