@@ -25,7 +25,7 @@ before==#|python|
 import random
 
 experiences = [
-("des membres ayant le prénom Marise", 
+("des membres portant le prénom Marise", 
  "6\n9\n10\n16\n26\n31\n32\n50\n51\n52\n63\n76\n86\n87\n95\n98\n"),
 ]
 
@@ -40,11 +40,7 @@ Rappel de la structuration du fichier **MJC.txt**:
 <br />
 
 **Affichez en ordre croissant l'ensemble des ages avec répétition possible 
-(un age par ligne) {{ instructions }}.** Il faut selectionner dans la bdd la partie
-`activité lundi, activité mardi, ..., activité dimanche` associé au bon 
-membre (laissez les virgules). Veuillez à faire en sorte que votre 
-commande ne produise que l'affichage demandé seul sur une 
-ligne. N'hésitez à faire plusieus essais.
+(un age par ligne) {{ instructions }}.** N'hésitez à faire plusieus essais.
 ==
 
 
