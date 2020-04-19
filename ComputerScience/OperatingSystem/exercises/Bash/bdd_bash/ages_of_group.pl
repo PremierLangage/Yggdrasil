@@ -31,6 +31,8 @@ experiences = [
  "33\n97\n"),
 ('des membres portant le prénom de Marinette et ayant un nom de famille commençant par "Le"', 
  "17\n20\n63\n65\n96\n")
+("des membres ayant pour initiale N.B. (N pour le prénom et B pour le nom)",
+ "34\n36\n45\n57\n60\n70\n74\n79\n100\n")
 ]
 
 instructions, expected_stdout = random.choice(experiences)
