@@ -8,7 +8,7 @@ maxattempt = 10
 generate== #|py|
 
 from automaton import Automaton
-regexp = 'ab(a|b)+'
+regexp = '(a|b)*(bab|bb)(bab)*'
 
 
 #   transformation de l'automate de json en objet
