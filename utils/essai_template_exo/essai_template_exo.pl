@@ -70,10 +70,12 @@ grade=mygroup.eval(grading_function = right_minus_wrong)
 ==
 
 extracss == #|html|
+<style>
 .drag{
     width:inherit;
     height:inherit;
     }
+</style>
 
 ==
 
