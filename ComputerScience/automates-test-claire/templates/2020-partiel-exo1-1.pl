@@ -35,7 +35,7 @@ automaton = AutomatonEditor(
 automaton = Automaton.parse(automaton)
 
 alphabet = "a,b"
-message = "l'ensemble des mots qui commencent par ba et dont la longueur est paire"
+message = "l'ensemble des mots qui commencent par ba et dont la longueur est paire."
 # peut-on utiliser la syntaxe du viewer ?
 ==
 
