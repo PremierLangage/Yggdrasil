@@ -9,11 +9,11 @@ introduction ==
 
 @L2-exo-base/count.pl
 
-@/ComputerScience/automates-test-claire/templates/prefix.pl
+@L2-exo-base/prefix.pl
 
-@/ComputerScience/automates-test-claire/templates/suffix.pl
+@L2-exo-base/suffix.pl
 
-@/ComputerScience/automates-test-claire/templates/factor.pl
+@L2-exo-base/factor.pl
 
 @/ComputerScience/automates-test-claire/templates/pref-suf-fac.pl
 
