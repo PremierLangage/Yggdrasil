@@ -8,11 +8,11 @@ maxattempt = 10
 generate== #|py|
 
 from automaton import Automaton
-regexp = '(a|b)*(bab|bb)(bab)*'
+soluce = '(a|b)*(bab|bb)(bab)*'
 
 
 #   transformation de l'automate de json en objet
-automaton = Automaton.parse(regexp)
+automaton = Automaton.parse(soluce)
 
 #    l'alphabet
 alphabet = "a,b"
