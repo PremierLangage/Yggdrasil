@@ -71,7 +71,7 @@ if __name__ == "__main__":
     with open(output_json) as f:
         print(f.read(), file=sys.stderr)
 
-    sys.exit(0)
+    sys.exit(1)
 
 
 
