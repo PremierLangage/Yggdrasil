@@ -70,5 +70,7 @@ if __name__ == "__main__":
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
     
+    with open(output_json) as f:
+        print(f.read(), file=sys.stderr)
     sys.exit(0)
 
