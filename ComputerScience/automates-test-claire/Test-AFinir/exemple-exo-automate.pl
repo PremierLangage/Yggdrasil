@@ -10,7 +10,7 @@ generate== #|py|
 from automaton import Automaton
 
 #    la construction de l'automate pour tester la réponse
-automaton = AutomatonEditor(
+soluce = AutomatonEditor(
     automaton= {
         "alphabet": ["a", "b"],
         "initialStates": ["S1"],
@@ -28,7 +28,7 @@ automaton = AutomatonEditor(
 )
 
 #   transformation de l'automate de json en objet
-automaton = Automaton.parse(automaton)
+automaton = Automaton.parse(soluce)
 
 #    l'alphabet
 alphabet = "a,b"
