@@ -68,7 +68,7 @@ if __name__ == "__main__":
 
 
     for key in dic:
-        print(key+" ="+str(dic[key]à), file=sys.stderr)
+        print(key+" ="+str(dic[key]), file=sys.stderr)
     sys.exit(1)
 
 
