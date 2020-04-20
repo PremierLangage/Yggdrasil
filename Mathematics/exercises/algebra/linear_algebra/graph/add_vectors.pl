@@ -1,6 +1,11 @@
-extends = /model/mathjsxgraph.pl
+extends = /model/math.pl
 
-title = Affixe d'un nombre complexe
+settings.feedback = rightwrong
+
+title = Addition de vecteurs
+
+jxg =: MathDrawer
+jxg.decorator = CustomJSXGraph
 
 before ==
 from jinja2 import Template
@@ -14,17 +19,6 @@ while True:
 jxg.script = Template(script).render(locals())
 ==
 
-jxg.attributes %=
-{
-    "boundingbox": [
-      -6,
-      6,
-      6,
-      -6
-    ],
-    "showNavigation": false
-  }
-==
 
 script ==
 board.create('grid',[],{gridX:1,gridY:1});
