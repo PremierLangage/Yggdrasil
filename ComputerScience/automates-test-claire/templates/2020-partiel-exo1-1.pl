@@ -18,13 +18,16 @@ from automaton import Automaton
 automaton = AutomatonEditor(
     automaton= {
         "alphabet": ["a", "b"],
-        "initialStates": ["S0"],
-        "acceptingStates": ["S0", "S1", "S2"],
-        "states": ["S0", "S1", "S2"],
+        "initialStates": ["S1"],
+        "acceptingStates": ["S3"],
+        "states": ["S1", "S2", "S3","S4"],
         "transitions": [
-            { "fromState": "S0", "toState": "S1", "symbols": ["a"] },
-            { "fromState": "S1", "toState": "S1", "symbols": ["a"] },
             { "fromState": "S1", "toState": "S2", "symbols": ["b"] },
+            { "fromState": "S2", "toState": "S3", "symbols": ["a"] },
+            { "fromState": "S3", "toState": "S4", "symbols": ["a"] },
+            { "fromState": "S3", "toState": "S4", "symbols": ["b"] },
+            { "fromState": "S4", "toState": "S3", "symbols": ["a"] },
+            { "fromState": "S4", "toState": "S3", "symbols": ["b"] },
         ]
     }
 )
