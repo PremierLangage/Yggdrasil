@@ -1,74 +1,33 @@
-
 extends = /model/basic.pl
 
-title = Graphes de fonctions
+title = Multiples de 3 (Checkbox)
 
-lang = fr
+# Création du composant comme une clé
+checkbox =: CheckboxGroup
+checkbox.decorator = CustomCheckbox
+
+before ==
+import random as rd
+
+mult3 = [str(n) for n in range(50,100) if n % 3 == 0]
+other = [str(n) for n in range(50,100) if n % 3 != 0]
+
+checkbox.setdata_from_rw(mult3, other, 5, rd.randint(1, 4))
+==
+
+text ==
+Parmi les nombres suivants, lesquels sont des multiples de 3 ?
+==
 
 settings.feedback = lightscore
 
-
-before==#|python|
-
-from sympy import *
-import random as rd
-from sympy.plotting import plot
-from jinja2 import Template
-import matplotlib
-matplotlib.rcParams['savefig.dpi'] = 80
-matplotlib.rcParams['savefig.transparent'] = True
-from io import BytesIO
-import base64
-
-def render_plot(arg):# arg must be a matplotlib plot
-    figfile = BytesIO()
-    arg.save(figfile)
-    figfile.seek(0)  # rewind to beginning of file
-    figdata_png = base64.b64encode(figfile.getvalue()).decode('ascii')
-    figfile.close()
-    arg._backend.close()
-
-    return  Template('<img src="data:image/png;base64,{{ plot_data }}" \
-        style="pointer-events:none;">').\
-        render({'plot_data': figdata_png})
-
-x = symbols('x')
-
-graphe_1 = render_plot(plot(x**2))
-graphe_2 = render_plot(plot(sin(x)))
-
-==
-
-
-text== 
-Parmi les deux graphes suivants, lequel est le plus joli?
-<br>
-<div style="display:inline-block; width:40%; border:2px solid black;">{{ graphe_1 | safe }}</div>
-<div style="display:inline-block; width:40%; border:2px solid black;">{{ graphe_2 | safe }}</div>
-<br>
-== 
-
-form==
-<select id = 'form_1'>
-	<option value='oui'> Le premier, bien sûr </option>
-	<option value='non'> Le second, of course </option>
-	<option value='bof'> што такой ?? </option>
-	<option value='blip'> WTF ? </option>
-</select>
+form ==
+{{ checkbox|component }}
 ==
 
 evaluator ==
-import random as rd
-
-f = rd.choice(['Excellente réponse', 'Merveilleuse réponse', 'Fabuleuse réponse', 'Délicieuse réponse', 'Charmante réponse', 'C\'est également mon avis', 'On ne saurait mieux dire', 'Cela est si juste!'])
-s = 100
-grade = (s, f)
+score = checkbox.eval(scoring="CorrectItems")
 ==
-
-
-
-
-
 
 
 
