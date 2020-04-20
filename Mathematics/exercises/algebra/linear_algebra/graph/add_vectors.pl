@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathjsxgraph.pl
+extends = /model/mathjsxgraph.pl
 
 title = Affixe d'un nombre complexe
 
@@ -81,4 +81,5 @@ else:
      score=0
 feedback=""
 ==
+
 
