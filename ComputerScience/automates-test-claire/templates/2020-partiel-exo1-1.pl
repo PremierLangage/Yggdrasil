@@ -3,9 +3,10 @@ extends = editor.pl
 
 maxattempt = 10
 
+
+## Ajouter ici la génération de l'automate et autres variables de l'exo
 generate== #|py|
-## Ajouter ici la génération:
-#    la construction de l'automate pour tester la réponse
+
 from automaton import Automaton
 
 #    la construction de l'automate pour tester la réponse
