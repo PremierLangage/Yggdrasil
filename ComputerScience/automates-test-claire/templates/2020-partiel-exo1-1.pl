@@ -26,7 +26,7 @@ automaton = AutomatonEditor(
     }
 )
 
-
+#   transformation de l'automate de json en objet
 automaton = Automaton.parse(automaton)
 
 #    l'alphabet
