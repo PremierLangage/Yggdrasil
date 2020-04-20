@@ -18,8 +18,7 @@ mygroup.set_label({"lt": lt, "gt": gt})
 
 numbers = []
 for i in range(n):
-    [a,b] = rd.sample(range(10,100),2)
-    numbers.append([a,b])
+    [order.append(i+1)
     mygroup.add_drop({str(i):"coucou"}) 
     if a < b:
         mygroup.add_match_by_content(str(i),lt) 
