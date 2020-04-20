@@ -51,10 +51,12 @@
             </button>
             <div id="demo{{feedback.testgroupenum}}{{num}}" class="collapse">
                <div class="card card-success;" style="background-color: LightGreen;">
+                   {% if want %}
                   <br/> Attendu: 
                   <pre style="background: #DDD"><code>{{want}}</code></pre>
                   <br/> Obtenu: 
                   <pre style="background: #DDD"><code>{{got}}</code></pre>
+                  {% endif % }
                </div>
             </div>
          </div>
