@@ -23,7 +23,7 @@ textes_titre = {
     0: 'Facteur',
     1: 'Suffixe'
 }
-bla_titre = messages[mode]
+bla_titre = textes_titre[mode]
 
 # choix de la taille de l'alphabet
 nb_lettres = random.choice([2,3])
