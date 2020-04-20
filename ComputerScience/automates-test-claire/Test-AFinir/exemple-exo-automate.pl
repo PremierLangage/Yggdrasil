@@ -42,7 +42,7 @@ title = Bla - exemple avec soluce automate
 text ==
 Affichage de la solution pour tester
 {{viewer|component}}
-<!-- àà virer -->
+<br>
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage correspondant à {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
