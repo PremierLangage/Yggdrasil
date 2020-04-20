@@ -9,6 +9,11 @@ introduction ==
 
 @/ComputerScience/automates-test-claire/templates/count.pl
 
+@/ComputerScience/automates-test-claire/templates/prefix.pl
+
+@/ComputerScience/automates-test-claire/templates/suffix.pl
+
+@/ComputerScience/automates-test-claire/templates/factor.pl
 
 @/ComputerScience/automates-test-claire/templates/pref-suf-fac.pl
 
@@ -17,6 +22,7 @@ introduction ==
 
 
 @/ComputerScience/automates-test-claire/templates/2020-partiel-exo1-2.pl
+
 
 
 
