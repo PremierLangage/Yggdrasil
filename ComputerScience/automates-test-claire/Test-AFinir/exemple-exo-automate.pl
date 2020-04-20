@@ -1,6 +1,6 @@
 
 
-extends = ../templates/editor.pl
+extends = ../../automaton/templates/editor.pl
 
 maxattempt = 2
 
