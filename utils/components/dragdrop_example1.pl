@@ -36,17 +36,9 @@ f=mygroup.drops[3]
 
 text ==
 {{ a| component }} {{ b|component }}
-{% for label in mygroup.labels.values() %} {{ label|component }} {% endfor %}
 ==
 
 form ==#|html|
-<ul>
-{% for i, drop in mygroup.drops.items() %}
-<li> {{ numbers[i|int][0] }} {{ drop|component }} {{ numbers[i|int][1] }} </li>
-{% endfor %}
-</ul>
-<ul>
-
 <li> {{ numbers[0][0] }} {{ c|component }} {{ numbers[0][1] }} </li>
 <li> {{ numbers[1][0] }} {{ d|component }} {{ numbers[1][1] }} </li>
 <li> {{ numbers[2][0] }} {{ e|component }} {{ numbers[2][1] }} </li>
@@ -72,6 +64,7 @@ extracss == #|html|
         }
 </style>
 ==
+
 
 
 
