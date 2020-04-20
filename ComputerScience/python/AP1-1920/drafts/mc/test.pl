@@ -15,11 +15,6 @@ import random
 a = random.randint(1, 10)
 b = random.randint(1, 10)
 r = a + b
-
-dico = {
-"input": inputbox
-}
-
 ==
 
 title==
@@ -31,7 +26,6 @@ Enter the result of ** {{ a }} + {{ b }} ** inside the input box.
 ==
 
 form==
-
 {{ inputbox|component}}
 ==
 
