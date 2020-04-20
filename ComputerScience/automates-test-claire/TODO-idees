@@ -25,6 +25,9 @@ dans le multistep où il faut dessiner un automate, est-ce une comparaison d'ég
 
 21/04 -- dans l'éditeur changer le bouton état normal en état non-final
 
+21/04 -- dans l'éditeur changer le bouton changer Transition en changer l'étiquette
+
+
 =========
 parse -> construit des exemples cf la documentation de mamadou dans automaton
 
