@@ -47,7 +47,7 @@ soluce = Automaton.viewer(automaton)
 
 title = Partiel 2020 Exo1-1
 text ==
-
+        {{ viewer|component }}
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage correspondant à {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
