@@ -75,7 +75,10 @@ extracss == #|html|
 .drag{
     width:inherit;
     height:inherit;
-    background-color: lightpink;
+    }
+.drop{
+    width:60px;
+    height:40px;
     }
 </style>
 
