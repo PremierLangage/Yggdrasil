@@ -101,7 +101,6 @@ extracss == #|html|
 
 
 custom_pl_template == #|html|
-<ion-card class="exercise" style="height:500px">
     <ion-card-header class="exercise__header">
         <ion-card-subtitle class='exercise__author'>{% if author %}{{ author }}{% endif %}</ion-card-subtitle>
         <ion-card-title class='exercise__title'
@@ -116,7 +115,7 @@ custom_pl_template == #|html|
         </ion-card-title>
     </ion-card-header>
     <!-- BODY -->
-    <ion-card-content class="exercise__body">
+    <ion-card-content class="exercise__body" style = "height:100%">
         <!-- INSTRUCTIONS -->
         <div class="exercise__instructions"
             style = "padding: 20px;background-color:#F5F5F5;">
@@ -166,7 +165,6 @@ custom_pl_template == #|html|
         </div>
         </ion-footer>
     </ion-card-content>
-</ion-card>
 ==
 
 
