@@ -15,7 +15,7 @@ viewer = AutomatonEditor(
     automaton= {
         "alphabet": ["a", "b"],
         "initialStates": ["S1"],
-        "acceptingStates": ["S2"],
+        "acceptingStates": ["S3"],
         "states": ["S1", "S2", "S3","S4","S5"],
         "transitions": [
             { "fromState": "S1", "toState": "S2", "symbols": ["b"] },
