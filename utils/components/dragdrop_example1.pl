@@ -1,4 +1,4 @@
-extends = /model/basic.pl
+extends = /model/math.pl
 @ /utils/components/dragdrop.py [customdragdrop.py]
 
 title = Comparaison de nombres (DragDrop)
@@ -72,6 +72,7 @@ extracss == #|html|
         }
 </style>
 ==
+
 
 
 
