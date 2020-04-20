@@ -126,7 +126,7 @@ custom_pl_template == #|html|
         <!-- FOOTER -->
         <ion-footer class="ion-no-border">
         <!-- FEEDBACK -->
-        <div class="exercise__feedback">
+        <div class="exercise__feedback" style = "height:2cm">
             {{ feedback__|markdown|safe if feedback else "" }}
         </div>
         <!-- ACTIONS -->
