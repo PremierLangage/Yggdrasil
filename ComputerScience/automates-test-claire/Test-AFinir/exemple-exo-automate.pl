@@ -1,6 +1,6 @@
 
 
-extends = ../templates/editor.pl
+extends = ../templates/editor-new.pl
 
 maxattempt = 10
 
