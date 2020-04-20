@@ -44,7 +44,7 @@ else:
 form== #|html|
 <!-- RENDER AUTOMATON VIEWER IF MAX ATTEMPT IS REACHED -->
 {% if attempt >= maxattempt %}
-{{ viewer|component }}
+%{{ viewer|component }}
 {% endif %}
 
 <!-- RENDER AUTOMATON VIEWER IF SCORE IS 100 -->
@@ -86,6 +86,7 @@ form== #|html|
     </ul>
     </p>
 ==
+
 
 
 
