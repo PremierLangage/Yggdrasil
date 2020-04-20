@@ -15,12 +15,12 @@ n = 4
 
 mygroup = DragDropGroup()
 mygroup.set_label({"lt": lt, "gt": gt})
-
+data = [(1,"Os frontal"),(2, "Os pariétal"), (3, "Os sphénoïde", (4, "Os temporal"), (5, "Os occipital"), (6, "Os éthmoïde")]
 order = []
-for i in range(n):
-    order.append(i+1)
-    mygroup.add_drop({str(i):"coucou"}) 
-    mygroup.add_match_by_content(str(i),lt) 
+for n,v in data:
+    order.append(n)
+    mygroup.add_drop({str(n):v}) 
+    mygroup.add_match_by_content(str(n),v) 
 ==
 
 text ==
