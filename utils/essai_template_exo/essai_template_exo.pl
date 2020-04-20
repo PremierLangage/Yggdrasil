@@ -58,8 +58,14 @@ Question : {{ a | component }} {{ b | component }}
 
 form==
 {{ c | component }}
+<br>
+<br>
 {{ d | component }}
-{{ e | component }}
+{<br>
+<br>
+{ e | component }}
+<br>
+<br>
 {{ f | component }}
 
 ==
