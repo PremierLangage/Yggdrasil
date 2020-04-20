@@ -4,7 +4,7 @@
 @ /utils/components/textselect.py [customtextselect.py]
 @ /utils/components/dragdrop.py [customdragdrop.py]
 @ /builder/before.py [builder.py]
-@ /grader/evaluator2.py [grader.py]
+@ /grader/evaluator.py [grader.py]
 #extends = /model/basic.pl
 @ /utils/components/dragdrop.py [customdragdrop.py]
 
