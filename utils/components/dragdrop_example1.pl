@@ -52,7 +52,13 @@ form ==#|html|
 settings.feedback = lightscore
 
 evaluator==#|python|
-from customdragdrop import right_minus_wrong
+from customdragdrop import right_minus_wrong, DragDropGroup
+
+mygroup = DragDropGroup()
+mygroup.labels = {'lt':a, 'gt':b}
+mygroup.drops = {0:c, 1:d, 2:e,  3:f}
+mygroup._matches = g
+
 
 grade = mygroup.eval(grading_function = right_minus_wrong)
 ==
