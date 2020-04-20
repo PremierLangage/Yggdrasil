@@ -45,7 +45,9 @@ if __name__ == "__main__":
                 del dic[key]
 
     for key in dic:
+        print(key+" = "+dic[key],stderr)
         dic[key]=serialize(dic[key])
+        print(key+" = "+dic[key],stderr)
 
     # sync components defined inside a list
     for k in list(dic.keys()):
@@ -66,4 +68,5 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
 
     sys.exit(0)
+
 
