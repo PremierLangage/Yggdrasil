@@ -1,20 +1,20 @@
-
-#!/usr/bin/env python3
-# coding: utf-8
-
-import sys, json, jsonpickle
+import sys, jsonpickle
 from sandboxio import get_context
 from components import Component
+from customdragdrop import DragDropGroup
+import uuid
 
+# Load the custom serialization function
 try:
     from serialize import serialize
-except ImportError:
+except ModuleNotFoundError:
     def serialize(arg):
         return arg
 
+# Load the custom namespace
 try:
     from namespace import namespace
-except ImportError:
+except ModuleNotFoundError:
     namespace = {}
 
 class StopBeforeExec(Exception):
@@ -26,43 +26,76 @@ def add_try_clause(code, excpt):
     return ("try:\n    ...\n" + '\n'.join(["    " + line for line in code.split('\n')])
             + "\nexcept " + excpt.__name__ + ":\n    pass")
 
+# HACK for components in lists
+# components in lists are duplicated outside the lists
+# and replaced by dictionaries inside the lists
+def aux_component(dic):
+    newcomp = []
+    for key in dic:
+        if isinstance(dic[key], list):
+            for i in range(len(dic[key])):
+                item = dic[key][i]
+                if isinstance(item, Component):
+                    name = "c" + uuid.uuid4().hex
+                    newcomp.append((name, item))
+                    dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
+                else:
+                    break
+        if isinstance(dic[key], DragDropGroup):
+            for k, item in dic[key].labels.items():
+                    name = "c" + uuid.uuid4().hex
+                    newcomp.append((name, item))
+                    dic[key].labels[k] = {"cid": item.cid, "name": name, "selector": item.selector}
+            for k, item in dic[key].drops.items():
+                    name = "c" + uuid.uuid4().hex
+                    newcomp.append((name, item))
+                    dic[key].drops[k] = {"cid": item.cid, "name": name, "selector": item.selector}
+
+    for name, comp in newcomp:
+        comp.name = name
+        dic[name] = comp
+
 if __name__ == "__main__":
-    if len(sys.argv) < 3:
-        msg = ("Sandbox did not call builder properly:\n"
-               +"Usage: python3 builder.py [input_json] [output_json]")
-        print(msg, file=sys.stderr)
-        sys.exit(1)
-    output_json = sys.argv[2]
     
+    # JSON context is converted into a python dictionary and stored in dic
     dic = get_context()
+
+    # the content of namespace is added to dic
     dic = {**namespace, **dic}
     
     if 'before' in dic:
+
+        # execute the script in before key with dic as globals
         dic['StopBeforeExec'] = StopBeforeExec
         exec(add_try_clause(dic['before'], StopBeforeExec), dic)
+        
+        # clean dic from namespace elements
         exec("", namespace)
         for key in namespace:
             if key in dic and dic[key] == namespace[key]:
                 del dic[key]
 
-    
+    # custom serialization is applied
+    for key in dic:
+        dic[key]=serialize(dic[key])
 
-    # sync components defined inside a list
-    for k in list(dic.keys()):
-        if isinstance(dic[k],list):
-            for e in dic[k]:
-                if isinstance(e, Component):
-                    dic[e.id] = e
+    # HACK for components in lists
+    aux_component(dic)
 
-    if 'buttons' not in dic:
-        dic['buttons'] = ["submit","reroll"]
+    if 'settings' not in dic:
+        dic['settings'] = {}
 
-    if 'maxattempt' not in dic:
-        dic['maxattempt'] = 1
+    if 'internals' not in dic:
+        dic['internals'] = {}
 
-    dic['attempt']=1
+    if 'scenario' in dic['settings']:
+        dic['internals']['buttons'] = ["submit","reroll"]
+    else:
+        dic['internals']['buttons'] = ["submit","reroll"]
 
+    dic['internals']['attempt'] = 1
 
+    output_json = sys.argv[2]
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
 
