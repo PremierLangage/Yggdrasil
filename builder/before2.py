@@ -44,7 +44,6 @@ if __name__ == "__main__":
             if key in dic and dic[key] == namespace[key]:
                 del dic[key]
 
-    
 
     # sync components defined inside a list
     for k in list(dic.keys()):
@@ -62,9 +61,7 @@ if __name__ == "__main__":
     dic['attempt']=1
 
     for key in dic:
-        print(key+" = "+str(dic[key]),file=sys.stderr)
-        dic[key]=serialize(dic[key])
-        print(key+" = "+str(dic[key]),file=sys.stderr)
+        print(jsonpickle.encode(dic, unpicklable=False).items(),file=sys.stderr)
 
     sys.exit(1)
 
@@ -72,6 +69,7 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
 
     sys.exit(0)
+
 
 
 
