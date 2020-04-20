@@ -39,7 +39,9 @@ b.css='drag'
 
 
 c = mygroup.labels["integrale"]
+c.css='drag'
 d = mygroup.labels["limite"]
+d.css = 'drag'
 e = mygroup.labels["fraction"]
 f = mygroup.labels["determinant"]
 g = mygroup._matches
