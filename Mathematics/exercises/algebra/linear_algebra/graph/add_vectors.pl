@@ -19,6 +19,9 @@ while True:
 jxg.script = Template(script).render(locals())
 ==
 
+form ==
+{{ jxg | component }}
+==
 
 script ==
 board.create('grid',[],{gridX:1,gridY:1});
