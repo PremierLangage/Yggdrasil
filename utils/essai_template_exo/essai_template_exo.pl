@@ -111,7 +111,8 @@ custom_pl_template == #|html|
     <!-- BODY -->
     <ion-card-content class="exercise__body">
         <!-- INSTRUCTIONS -->
-        <div class="exercise__instructions">
+        <div class="exercise__instructions"
+            style = "padding: 20px;background-color:#F5F5F5;">
             {% if text %}
             {{ text|markdown|safe }}
             {% endif %}
