@@ -31,6 +31,7 @@ c=mygroup.drops[0]
 d=mygroup.drops[1]
 e=mygroup.drops[2]
 f=mygroup.drops[3]
+g = mygroup._matches
 
 ==
 
