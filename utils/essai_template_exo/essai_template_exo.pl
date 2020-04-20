@@ -81,8 +81,8 @@ extracss == #|html|
 
     }
 .drop{
-    width:60px !important;
-    height:40px !important;
+    width:100px !important;
+    height:60px !important;
     overflow:hidden !important;
     }
 </style>
@@ -147,6 +147,7 @@ custom_pl_template == #|html|
     </ion-card-content>
 
 ==
+
 
 
 
