@@ -1,6 +1,6 @@
 extends = /model/basic.pl
 
-scheme =$ /demo/basic/550px-Cranial_bones_numbers.svg.png
+scheme =$ /Biology/media/550px-Cranial_bones_numbers.svg.png
 
 title = Comparaison de nombres (DragDrop)
 
