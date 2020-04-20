@@ -38,7 +38,7 @@ else :
     alphabet, mot, automaton = Generator.suffix(nb_lettres,3)
 ==
 
-title = {{ Tirage aléatoire d'un exercice de prefixe, suffixe ou facteur }}
+title =  Tirage aléatoire d'un exercice de prefixe, suffixe ou facteur : cette fois-ci {{bla_titre}}
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage **L1** = {{ '{' }}  mots qui {{ bla }} par **{{ mot }}** {{ '}' }} <br>
