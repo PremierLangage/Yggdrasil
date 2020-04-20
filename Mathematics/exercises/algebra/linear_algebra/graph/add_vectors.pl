@@ -2,8 +2,6 @@ extends = /model/mathjsxgraph.pl
 
 title = Affixe d'un nombre complexe
 
-lang = fr
-
 before ==
 from jinja2 import Template
 while True:
