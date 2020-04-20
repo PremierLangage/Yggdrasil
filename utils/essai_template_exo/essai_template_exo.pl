@@ -77,10 +77,13 @@ extracss == #|html|
 .drag{
     width:inherit;
     height:inherit;
+    overflow:hidden;
+
     }
 .drop{
     width:60px;
     height:40px;
+    overflow:hidden;
     }
 </style>
 
