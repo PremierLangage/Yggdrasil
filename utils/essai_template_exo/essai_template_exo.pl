@@ -126,15 +126,11 @@ custom_pl_template == #|html|
         <!-- FOOTER -->
         <ion-footer class="ion-no-border">
         <!-- FEEDBACK -->
-        <div class="exercise__feedback" style = "height:2cm; background-color:beige">
+        <div text-right class="exercise__feedback" style = "height:2cm; background-color:beige">
             {{ feedback__|markdown|safe if feedback else "" }}
-        </div>
-        <!-- ACTIONS -->
-        <div class="exercise__actions text-center">
-            <div class="btn-group" role="group" aria-label="actions">
-                <button class="btn btn-primary action-submit">
+                            <button class="btn btn-primary action-submit">
                     <i id="validate" class="fas fa-check"></i>
-                    <span class="ion-hide-md-down">Valider</span>
+                <span class="ion-hide-md-down">Valider</span>
                 </button>
                 {% if tests %}
                 <a type="button" class="btn btn-primary action-test"
@@ -149,6 +145,11 @@ custom_pl_template == #|html|
                     <i class="fas fa-download"></i>
                     <span class="ion-hide-md-down">Télécharger l'Environnement</span>
                 </a>
+
+        </div>
+        <!-- ACTIONS -->
+        <div class="exercise__actions text-center">
+            <div class="btn-group" role="group" aria-label="actions">
             </div>
         </div>
         <!-- SPINNER -->
