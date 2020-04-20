@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 # coding: utf-8
 
@@ -44,6 +45,7 @@ if __name__ == "__main__":
             if key in dic and dic[key] == namespace[key]:
                 del dic[key]
 
+    
 
     # sync components defined inside a list
     for k in list(dic.keys()):
@@ -59,22 +61,10 @@ if __name__ == "__main__":
         dic['maxattempt'] = 1
 
     dic['attempt']=1
-    
 
-    print(dic, file=sys.stderr)
 
     with open(output_json, "w+") as f:
-        f.write("{")
-        f.write(",".join([f'"{k}":' + jsonpickle.encode(v, unpicklable=False) for k,v in dic.items()]))
-        f.write("}")
+        f.write(jsonpickle.encode(dic, unpicklable=False))
 
-    with open(output_json) as f:
-        print(f.read(), file=sys.stderr)
-
-    sys.exit(1)
-
-
-
-
-
+    sys.exit(0)
 
