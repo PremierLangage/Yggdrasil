@@ -40,6 +40,7 @@ message = "l'ensemble des mots qui commencent par ba et dont la longueur est pai
 
 title = Bla - exemple avec soluce automate
 text ==
+{{viewer|component}}
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage correspondant à {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
