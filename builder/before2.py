@@ -49,7 +49,7 @@ if __name__ == "__main__":
         dic[key]=serialize(dic[key])
         print(key+" = "+str(dic[key]),file=sys.stderr)
 
-        sys.exit(1)
+    sys.exit(1)
 
     # sync components defined inside a list
     for k in list(dic.keys()):
