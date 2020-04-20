@@ -68,6 +68,9 @@ if __name__ == "__main__":
         f.write(",".join([jsonpickle.encode(v, unpicklable=False) for v in dic.values()]))
         f.write("}")
 
+    with open(output_json) as f:
+        print(f.read(), file=sys.stder)
+
     sys.exit(0)
 
 
