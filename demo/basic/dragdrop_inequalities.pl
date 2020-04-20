@@ -28,6 +28,7 @@ for i in range(n):
 ==
 
 text ==
+<embed type="image/svg+xml" src="{{scheme}}" />
 <body> 
    <svg xmlns="{{scheme}}">
        <text x="10" y="50" font-size="30">My SVG</text>
