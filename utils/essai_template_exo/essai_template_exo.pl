@@ -97,7 +97,16 @@ extracss == #|html|
 custom_pl_template == #|html|
     <ion-card-header class="exercise__header">
         <ion-card-subtitle class='exercise__author'>{% if author %}{{ author }}{% endif %}</ion-card-subtitle>
-        <ion-card-title class='exercise__title'>{% if title %}{{ title }}{% endif%}</ion-card-title>
+        <ion-card-title class='exercise__title'
+                              style="	color: #ffffff;	font-size: 24pt; text-decoration: none;
+                background-color: #ff9400;
+                margin-top: 0;
+                margin-bottom: 20px;
+                padding: 10px 10px 10px 20px;
+                display:flex;
+                justify-content: space-between;>
+                {% if title %}{{ title }}{% endif%}
+        </ion-card-title>
     </ion-card-header>
     <!-- BODY -->
     <ion-card-content class="exercise__body">
