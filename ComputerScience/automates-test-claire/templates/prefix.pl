@@ -18,6 +18,12 @@ messages = {
     1: 'finissent par'
 }
 bla = messages[mode]
+textes_titre = {
+   -1: 'Préfixe',
+    0: 'Facteur',
+    1: 'Suffixe'
+}
+bla = messages[mode]
 
 # choix de la taille de l'alphabet
 nb_lettres = random.choice([2,3])
