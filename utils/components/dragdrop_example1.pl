@@ -31,10 +31,11 @@ c=mygroup.drops[0]
 d=mygroup.drops[1]
 e=mygroup.drops[2]
 f=mygroup.drops[3]
+
 ==
 
 text ==
-{{ a |component}} {{ b|component }}
+{{ a| component }} {{ b|component }}
 {% for label in mygroup.labels.values() %} {{ label|component }} {% endfor %}
 ==
 
@@ -71,6 +72,7 @@ extracss == #|html|
         }
 </style>
 ==
+
 
 
 
