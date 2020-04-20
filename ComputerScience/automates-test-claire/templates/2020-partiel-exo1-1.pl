@@ -6,7 +6,7 @@ extends = editor.pl
 
 ## On doit pouvoir utiliser le même style que pour count/prefix/suffix/factor pour récupérer un automate et le comparer
 
-maxattempt = 1
+maxattempt = 5
 
 generate== #|py|
 ## Ajouter ici la génération:
