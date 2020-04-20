@@ -39,7 +39,7 @@ message = "l'ensemble des mots qui commencent par ba et dont la longueur est pai
 # peut-on utiliser la syntaxe du viewer ?
 ==
 
-title = Partiel 2020 exercice 1 question 1 
+title = Partiel 2020 Exo1-1
 text ==
 
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
