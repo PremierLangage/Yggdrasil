@@ -1,5 +1,7 @@
 extends = /model/basic.pl
 
+@ /demo/basic/Cranial_bones_numbers.svg [scheme]
+
 title = Comparaison de nombres (DragDrop)
 
 before==#|python|
@@ -26,6 +28,7 @@ for i in range(n):
 ==
 
 text ==
+ <img src="scheme" height="42" width="42"> 
 {% for label in mygroup.labels.values() %} {{ label|component }} {% endfor %}
 ==
 
