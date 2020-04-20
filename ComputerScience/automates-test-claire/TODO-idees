@@ -9,11 +9,6 @@ le script automaton.py est un wrapper autour de cette lib et elle contient une c
 A discuter avec Mamadou et Dominique
 -----------------
 
-Viewer/editeur
-
-Transition - changer Transition -> changer l'étiquette de la transition
-
-
 J'ai changé réponse acceptable
 
 dans le multistep où il faut dessiner un automate, est-ce une comparaison d'égalité ou d'équivalence??
