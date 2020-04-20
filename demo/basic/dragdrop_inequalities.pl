@@ -30,7 +30,7 @@ text ==
 form ==
 <ul>
 {% for i in order %}
-<li> {{ order[i] }}. {{ mygroup.drops[i|string]|component }} </li>
+<li> {{ i }}. {{ mygroup.drops[i|string]|component }} </li>
 {% endfor %}
 </ul>
 {% for label in mygroup.labels.values() %} {{ label|component }} {% endfor %}
