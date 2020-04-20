@@ -5,15 +5,14 @@ title=Q.C.M. sur des notions de système d'exploitation
 tag=system
 
 introduction==
-Cette activité vous proposera des questions aléatoires aux réponses aléatoires pour 
+Cette activité vous proposera des questions relatives aux cours pour 
 chaque groupe de notions liés aux systèmes d'exploitation. Les questions sont 
 particulièrement orientées vers Linux et les systèmes de type Unix de manière générale.
-
-Le dernier exercice mélange tout en même temps.
 ==
 
 @ /ComputerScience/OperatingSystem/exercises/MCQ/generalites_systeme_MCQ.pl
 @ /ComputerScience/OperatingSystem/exercises/MCQ/donnees_binaire_MCQ.pl
 @ /ComputerScience/OperatingSystem/exercises/MCQ/notion_de_fichier_MCQ.pl
 @ /ComputerScience/OperatingSystem/exercises/MCQ/QCM_complet.pl
+
 
