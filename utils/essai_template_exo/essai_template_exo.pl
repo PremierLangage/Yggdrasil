@@ -31,8 +31,13 @@ mygroup.add_match_by_name("1", ["limite","determinant"])
 
 # Ce qui suit sert uniquement à faire voyager le groupe dans le grader
 a = mygroup.drops['1'] 
+a.css = 'drag'
 # bug incroyable : si le nom est 'q' au lieu de 'a', et qu'on remplace dans le text/evaluator, ça bugge
 b = mygroup.drops["tiers"]
+b.css='drag'
+
+
+
 c = mygroup.labels["integrale"]
 d = mygroup.labels["limite"]
 e = mygroup.labels["fraction"]
