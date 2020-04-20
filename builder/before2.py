@@ -63,7 +63,7 @@ if __name__ == "__main__":
     for k,v in dic.items():
         dic[k] = jsonpickle.encode(v, unpicklable=False)
 
-    print(json.dumps(dic), file = sys.stderr)
+    print(dic, file=sys.stderr)
 
     with open(output_json, "w+") as f:
         json.dump(dic, f)
