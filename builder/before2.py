@@ -64,9 +64,10 @@ if __name__ == "__main__":
         dic[k] = jsonpickle.encode(v, unpicklable=False)
 
     with open(output_json, "w+") as f:
-        f.write(dic)
+        f.write(dic, f)
 
     sys.exit(0)
+
 
 
 
