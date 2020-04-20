@@ -29,11 +29,13 @@ text ==
 
 form ==
  <img src="{{scheme}}" style="max-width: 200px; display: inline-block"> 
+ <div style="max-width: 200px; display: inline-block"> 
 <ul>
 {% for i in order %}
 <li> {{ i }}. {{ mygroup.drops[(i-1)|string]|component }} </li>
 {% endfor %}
 </ul>
+</div> 
 {% for label in mygroup.labels.values() %} {{ label|component }} {% endfor %}
 ==
 
