@@ -53,7 +53,7 @@ extracss == #|html|
 <style>
     .myclass{
         #padding: 1em;
-        min-width: 4em;
+        min-width: 20em;
         }
 </style>
 ==
