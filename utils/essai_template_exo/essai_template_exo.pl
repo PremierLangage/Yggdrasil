@@ -30,7 +30,7 @@ mygroup.set_match_by_name("tiers", "integrale")
 mygroup.add_match_by_name("1", ["limite","determinant"])
 
 # Ce qui suit sert uniquement à faire voyager le groupe dans le grader
-q = mygroup.drops['1'] 
+a = mygroup.drops['1'] 
 # bug incroyable : si le nom est 'q' au lieu de 'a', et qu'on remplace dans le text/evaluator, ça bugge
 b = mygroup.drops["tiers"]
 c = mygroup.labels["integrale"]
@@ -41,7 +41,7 @@ g = mygroup._matches
 ==
 
 text==
-Question : {{ q | component }} {{ b | component }}
+Question : {{ a | component }} {{ b | component }}
 ==
 
 form==
@@ -58,10 +58,18 @@ evaluator==
 from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
 mygroup = DragDropGroup()
 mygroup.labels = {"integrale": c, "limite": d, "fraction": e, "determinant": f}
-mygroup.drops = {"1": q, "tiers": b}
+mygroup.drops = {"1": a, "tiers": b}
 mygroup._matches = g
 
 grade=mygroup.eval(grading_function = right_minus_wrong) 
+==
+
+extracss == #|html|
+.drag{
+    width:inherit;
+    height:inherit;
+    }
+
 ==
 
 
