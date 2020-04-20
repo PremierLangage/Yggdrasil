@@ -1,2 +1,2 @@
-extends = suffix.pl
+extends = pref-suf-fac.pl
 
