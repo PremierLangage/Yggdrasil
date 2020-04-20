@@ -24,10 +24,11 @@ for i, v in enumerate(labelscontent):
 ==
 
 text ==
- <img src="{{scheme}}" style="max-width: 400px"> 
+
 ==
 
 form ==
+ <img src="{{scheme}}" style="max-width: 400px; display: inline-block"> 
 <ul>
 {% for i in order %}
 <li> {{ i }}. {{ mygroup.drops[(i-1)|string]|component }} </li>
