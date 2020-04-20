@@ -3,7 +3,6 @@ extends = editor.pl
 
 maxattempt = 10
 
-
 ## Ajouter ici la génération de l'automate et autres variables de l'exo
 generate== #|py|
 
@@ -40,7 +39,6 @@ message = "l'ensemble des mots qui commencent par ba et dont la longueur est pai
 
 title = Partiel 2020 Exo1-1
 text ==
-
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage correspondant à {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
