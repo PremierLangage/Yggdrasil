@@ -1,0 +1,20 @@
+title = Premiers exo PLaTon d'automates
+
+introduction ==
+ Voici quelques exercices simples à tester. Nous en rajouterons régulièrement.
+ 
+ Un grand merci à Mamadou pour son travail sur le module automates de PLaTon.
+
+==
+
+@/ComputerScience/automates-test-claire/templates/count.pl
+
+
+@/ComputerScience/automates-test-claire/templates/pref-suf-fac.pl
+
+
+@/ComputerScience/automates-test-claire/templates/2020-partiel-exo1-1.pl
+
+
+
+
