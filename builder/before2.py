@@ -45,9 +45,9 @@ if __name__ == "__main__":
                 del dic[key]
 
     for key in dic:
-        print(key+" = "+dic[key],stderr)
+        print(key+" = "+dic[key],file=sys.stderr)
         dic[key]=serialize(dic[key])
-        print(key+" = "+dic[key],stderr)
+        print(key+" = "+dic[key],file=sys.stderr)
 
     # sync components defined inside a list
     for k in list(dic.keys()):
