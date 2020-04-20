@@ -16,7 +16,7 @@ a = random.randint(1, 10)
 b = random.randint(1, 10)
 r = a + b
 dico = {
-"input": inputbox
+"input": 10
 }
 
 ==
