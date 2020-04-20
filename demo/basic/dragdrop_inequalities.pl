@@ -24,7 +24,7 @@ for i in range(n):
 ==
 
 text ==
- <img src="{{scheme}}"> 
+ <img src="{{scheme}}" sizes="(max-width: 500px) 100vw, (max-width: 900px) 50vw, 800px"> 
 
 {% for label in mygroup.labels.values() %} {{ label|component }} {% endfor %}
 ==
