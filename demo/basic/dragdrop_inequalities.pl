@@ -15,7 +15,7 @@ n = 4
 
 mygroup = DragDropGroup()
 labelscontent = ["Os frontal", "Os pariétal", "Os sphénoïde", "Os temporal", "Os occipital", "Os éthmoïde"]
-mygroup.set_labels(labelscontent) 
+mygroup.set_label(labelscontent) 
 order = []
 for i, v in enumerate(labelscontent):
     order.append(i+1)
