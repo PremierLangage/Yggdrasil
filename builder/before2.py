@@ -60,8 +60,8 @@ if __name__ == "__main__":
 
     dic['attempt']=1
 
-    for key in dic:
-        print(jsonpickle.encode(dic, unpicklable=False),file=sys.stderr)
+    print(dic)
+    print(jsonpickle.encode(dic, unpicklable=False),file=sys.stderr)
 
     sys.exit(1)
 
