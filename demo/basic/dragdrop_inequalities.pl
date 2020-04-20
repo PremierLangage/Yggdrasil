@@ -1,48 +1,49 @@
 extends = /model/basic.pl
 
-@ /utils/components/dragdrop.py [customdragdrop.py]
-
 title = Comparaison de nombres (DragDrop)
 
-before==
-from customdragdrop import CustomDragDrop
+before==#|python|
 import random as rd
+from customdragdrop import DragDropGroup
 
-lt="&lt;"
-gt="&gt;"
+lt="$%\lt%$" # latex for "less than"
+gt="$%\gt%$" # latex for "greater than"
 
 n = 4
 
+mygroup = DragDropGroup()
+mygroup.set_label({"lt": lt, "gt": gt})
+
 numbers = []
-sol = []
-for _ in range(n):
+for i in range(n):
     [a,b] = rd.sample(range(10,100),2)
     numbers.append([a,b])
+    mygroup.add_drop({str(i):"coucou"}) 
     if a < b:
-        sol.append(lt)
+        mygroup.add_match_by_content(str(i),lt) 
     else:
-        sol.append(gt)
-
-label = CustomDragDrop.Labels([lt,gt])
-drop = CustomDragDrop.Drops(n)
+        mygroup.add_match_by_content(str(i),gt) 
 ==
 
-text==
-Comparer les nombres suivants avec les symboles {{ label[0] | component }} et {{ label[1] | component }}.
+text ==
+{% for label in mygroup.labels.values() %} {{ label|component }} {% endfor %}
 ==
 
-form==
+form ==
 <ul>
-{% for i in range(4) %}
-<li> {{ numbers[i][0] }} {{ drop[i]|component }} {{ numbers[i][1] }} </li>
-{% endfor %}
+{% for i in range(n) %}
+<li> {{ numbers[i][0] }} {{ mygroup.drops[i|string]|component }} {{ numbers[i][1] }} </li>
+{% endfor %}
 </ul>
+
 ==
 
-evaluator==
-from customdragdrop import CustomDragDrop
+settings.feedback = lightscore
 
-grade=CustomDragDrop.eval(drop,sol)
+evaluator==#|python|
+from customdragdrop import right_minus_wrong
+
+grade = mygroup.eval(grading_function = right_minus_wrong)
 ==
 
 extracss == #|html| 
