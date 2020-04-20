@@ -61,8 +61,8 @@ if __name__ == "__main__":
     dic['attempt']=1
 
     print(dic, file=sys.stderr)
-    print("#################################################")
-    print("#################################################")
+    print("#################################################", file=sys.stderr)
+    print("#################################################", file=sys.stderr)
 
     print(jsonpickle.encode(dic, unpicklable=False),file=sys.stderr)
 
@@ -72,6 +72,7 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
 
     sys.exit(0)
+
 
 
 
