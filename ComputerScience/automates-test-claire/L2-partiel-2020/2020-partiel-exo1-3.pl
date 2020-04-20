@@ -27,6 +27,11 @@ automaton = AutomatonEditor(
     }
 )
 
+prefix = 'ab'
+alphabet = ['a', 'b']
+viewer = 'ab(a|b)+'
+
+
 #   transformation de l'automate de json en objet
 automaton = Automaton.parse(automaton)
 
