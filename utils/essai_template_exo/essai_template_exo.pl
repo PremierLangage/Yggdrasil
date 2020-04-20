@@ -67,7 +67,6 @@ form==
 <br>
 <br>
 {{ f | component }}
-
 ==
 
 settings.feedback = lightscore
