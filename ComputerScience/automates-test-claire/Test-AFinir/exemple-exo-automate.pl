@@ -2,7 +2,7 @@
 
 extends = ../templates/editor.pl
 
-maxattempt = 1
+maxattempt = 2
 
 ## Ajouter ici la génération de l'automate et autres variables de l'exo
 generate== #|py|
@@ -40,7 +40,9 @@ message = "l'ensemble des mots qui commencent par ba et dont la longueur est pai
 
 title = Bla - exemple avec soluce automate
 text ==
+Affichage de la solution pour tester
 {{viewer|component}}
+<!-- àà virer -->
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage correspondant à {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
