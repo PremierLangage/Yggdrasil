@@ -1,17 +1,14 @@
 
-############### A FINIR #########################
-
 extends = editor.pl
 
 maxattempt = 10
 
 generate== #|py|
 ## Ajouter ici la génération:
-#    du message de l'énoncé décrivant le langage
-#    l'alphabet
 #    la construction de l'automate pour tester la réponse
 from automaton import Automaton
 
+#    la construction de l'automate pour tester la réponse
 automaton = AutomatonEditor(
     automaton= {
         "alphabet": ["a", "b"],
@@ -29,9 +26,13 @@ automaton = AutomatonEditor(
     }
 )
 
+
 automaton = Automaton.parse(automaton)
 
+#    l'alphabet
 alphabet = "a,b"
+
+#    du message de l'énoncé décrivant le langage
 message = "l'ensemble des mots qui commencent par ba et dont la longueur est paire."
 # peut-on utiliser la syntaxe du viewer ?
 ==
