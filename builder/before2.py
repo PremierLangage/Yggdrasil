@@ -60,13 +60,16 @@ if __name__ == "__main__":
 
     dic['attempt']=1
     
-    for k,v in dic.items():
-        dic[k] = jsonpickle.encode(v, unpicklable=False)
 
     print(dic, file=sys.stderr)
 
     with open(output_json, "w+") as f:
-        json.dump(dic, f)
+        f.write("{")
+        for k,v in dic.items():
+            f.write(jsonpickle.encode(v, unpicklable=False))
+            f.write(",")
+        f.seek(-1, 1)
+        f.write("}")
 
     sys.exit(0)
 
