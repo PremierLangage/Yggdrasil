@@ -61,7 +61,7 @@ form==
 <br>
 <br>
 {{ d | component }}
-{<br>
+<br>
 <br>
 {{ e | component }}
 <br>
@@ -115,7 +115,7 @@ custom_pl_template == #|html|
         </ion-card-title>
     </ion-card-header>
     <!-- BODY -->
-    <ion-card-content class="exercise__body" style = "height:500px">
+    <ion-card-content class="exercise__body">
         <!-- INSTRUCTIONS -->
         <div class="exercise__instructions"
             style = "padding: 20px;background-color:#F5F5F5;">
