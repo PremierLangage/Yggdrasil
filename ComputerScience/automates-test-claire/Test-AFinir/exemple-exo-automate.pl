@@ -1,6 +1,6 @@
 
 
-extends = ../templates/editor.pl
+extends = ../templates/editor-new.pl
 
 maxattempt = 10
 
@@ -48,6 +48,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
