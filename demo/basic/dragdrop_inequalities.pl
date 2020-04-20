@@ -14,7 +14,6 @@ gt="$%\gt%$" # latex for "greater than"
 n = 4
 
 mygroup = DragDropGroup()
-mygroup.set_label({"lt": lt, "gt": gt})
 data = [(1,"Os frontal"),(2, "Os pariétal"), (3, "Os sphénoïde"), (4, "Os temporal"), (5, "Os occipital"), (6, "Os éthmoïde")]
 order = []
 for n,v in data:
