@@ -17,6 +17,12 @@ messages = {
     1: 'finissent par'
 }
 bla = messages[mode]
+textes_titre = {
+   -1: 'Préfixe',
+    0: 'Facteur',
+    1: 'Suffixe'
+}
+bla_titre = textes_titre[mode]
 
 # choix de la taille de l'alphabet
 nb_lettres = random.choice([2,3])
@@ -32,7 +38,7 @@ else :
     alphabet, mot, automaton = Generator.suffix(nb_lettres,3)
 ==
 
-title = Préfixe, suffixe ou facteur 
+title = {{ bla_titre }}
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage **L1** = {{ '{' }}  mots qui {{ bla }} par **{{ mot }}** {{ '}' }} <br>
@@ -43,5 +49,6 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 {% endif %}
 
 ==
+
 
 
