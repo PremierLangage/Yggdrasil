@@ -38,7 +38,7 @@ message = "l'ensemble des mots qui commencent par ba et dont la longueur est pai
 # peut-on utiliser la syntaxe du viewer ?
 ==
 
-title = Bla - exmple avec soluce automate
+title = Bla - exemple avec soluce automate
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage correspondant à {{ message }} <br>
