@@ -29,7 +29,7 @@ text ==
 
 form ==
 <ul>
-{% for i in range(n) %}
+{% for i in order %}
 <li> {{ order[i] }}. {{ mygroup.drops[i|string]|component }} </li>
 {% endfor %}
 </ul>
