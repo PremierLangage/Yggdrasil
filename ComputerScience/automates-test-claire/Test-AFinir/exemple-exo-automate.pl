@@ -2,7 +2,7 @@
 
 extends = ../templates/editor.pl
 
-maxattempt = 10
+maxattempt = 1
 
 ## Ajouter ici la génération de l'automate et autres variables de l'exo
 generate== #|py|
