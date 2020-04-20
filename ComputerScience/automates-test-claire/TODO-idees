@@ -23,11 +23,8 @@ dans le multistep où il faut dessiner un automate, est-ce une comparaison d'ég
 =======
 21/04 -- Dans editor. pl j'ai modifier l'aide au dessin
 
-========
-Questions sur les numéros d'activées -- ok réglé
-
 =========
-parse -> construit des exemples
+parse -> construit des exemples cf la documentation de mamadou dans automaton
 
 ========
 dans la librairie + est |  pas de . et etoile *
