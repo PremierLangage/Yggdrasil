@@ -101,7 +101,7 @@ extracss == #|html|
 
 
 custom_pl_template == #|html|
-<ion-card class="exercise">
+<ion-card class="exercise" style="height:100%">
     <ion-card-header class="exercise__header">
         <ion-card-subtitle class='exercise__author'>{% if author %}{{ author }}{% endif %}</ion-card-subtitle>
         <ion-card-title class='exercise__title'
