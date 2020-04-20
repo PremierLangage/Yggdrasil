@@ -2,7 +2,7 @@ extends = /model/basic.pl
 
 scheme =$ /Biology/media/550px-Cranial_bones_numbers.svg.png
 
-title = Comparaison de nombres (DragDrop)
+title = Os de la voûte cranienne
 
 before==#|python|
 import random as rd
