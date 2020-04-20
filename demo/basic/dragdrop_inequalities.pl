@@ -16,9 +16,9 @@ n = 4
 mygroup = DragDropGroup()
 mygroup.set_label({"lt": lt, "gt": gt})
 
-numbers = []
+order = []
 for i in range(n):
-    [order.append(i+1)
+    order.append(i+1)
     mygroup.add_drop({str(i):"coucou"}) 
     mygroup.add_match_by_content(str(i),lt) 
 ==
