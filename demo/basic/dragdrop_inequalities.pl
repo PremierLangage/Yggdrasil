@@ -1,6 +1,6 @@
 extends = /model/basic.pl
 
-@ /demo/basic/Cranial_bones_numbers.svg [scheme.svg]
+scheme =$ /demo/basic/Cranial_bones_numbers.svg
 
 title = Comparaison de nombres (DragDrop)
 
@@ -28,7 +28,7 @@ for i in range(n):
 ==
 
 text ==
-<img src="scheme.svg"> 
+<img src={{scheme}}> 
 {% for label in mygroup.labels.values() %} {{ label|component }} {% endfor %}
 ==
 
