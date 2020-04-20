@@ -62,7 +62,7 @@ if __name__ == "__main__":
 
     dic['attempt']=1
 
-    print(jsonpickle(dic["a"], unpicklable=False), file=sys.stderr)
+    print(jsonpickle.encode(dic["a"], unpicklable=False), file=sys.stderr)
     print("#############################################", file = sys.stderr)
     print("#############################################", file = sys.stderr)
     print(jsonpickle.encode(dic, unpicklable=False), file=sys.stderr)
