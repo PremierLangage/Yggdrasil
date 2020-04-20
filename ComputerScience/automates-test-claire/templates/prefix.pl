@@ -23,7 +23,7 @@ textes_titre = {
     0: 'Facteur',
     1: 'Suffixe'
 }
-bla = messages[mode]
+bla_titre = messages[mode]
 
 # choix de la taille de l'alphabet
 nb_lettres = random.choice([2,3])
@@ -39,7 +39,7 @@ else :
     alphabet, mot, automaton = Generator.suffix(nb_lettres,3)
 ==
 
-title = Préfixe, suffixe ou facteur 
+title = {{ bla_titre }}
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage **L1** = {{ '{' }}  mots qui {{ bla }} par **{{ mot }}** {{ '}' }} <br>
