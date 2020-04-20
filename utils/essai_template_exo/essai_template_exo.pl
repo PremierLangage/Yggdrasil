@@ -75,15 +75,15 @@ grade=mygroup.eval(grading_function = right_minus_wrong)
 extracss == #|html|
 <style>
 .drag{
-    width:inherit;
-    height:inherit;
-    overflow:hidden;
+    width:inherit !important;
+    height:inherit !important;
+    overflow:hidden !important;
 
     }
 .drop{
-    width:60px;
-    height:40px;
-    overflow:hidden;
+    width:60px !important;
+    height:40px !important;
+    overflow:hidden !important;
     }
 </style>
 
