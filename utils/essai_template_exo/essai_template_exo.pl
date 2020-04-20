@@ -1,8 +1,10 @@
-extends = /model/basic.pl
-
+@ /utils/sandboxio.py
+@ /utils/components/scoring.py
+@ /utils/components/checkbox.py [customcheckbox.py]
+@ /utils/components/textselect.py [customtextselect.py]
 @ /utils/components/dragdrop.py [customdragdrop.py]
-
-title = Drag Drop mathématique
+@ /builder/before.py [builder.py]
+@ /grader/evaluator.py [grader.py]title = Drag Drop mathématique
 
 before== #|python|
 from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
