@@ -65,10 +65,7 @@ if __name__ == "__main__":
 
     with open(output_json, "w+") as f:
         f.write("{")
-        for k,v in dic.items():
-            f.write(jsonpickle.encode(v, unpicklable=False))
-            f.write(",")
-        f.seek(-1, 1)
+        f.write(",".join([jsonpickle.encode(v, unpicklable=False) for v in dic.values()])
         f.write("}")
 
     sys.exit(0)
