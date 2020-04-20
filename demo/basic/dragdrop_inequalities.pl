@@ -28,7 +28,8 @@ for i in range(n):
 ==
 
 text ==
-<img src="{{scheme}}" />
+
+<object type="image/svg+xml" data="{{scheme}}"></object>
 {% for label in mygroup.labels.values() %} {{ label|component }} {% endfor %}
 ==
 
