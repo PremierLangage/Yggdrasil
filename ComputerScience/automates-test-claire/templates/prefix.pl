@@ -1,4 +1,5 @@
-extends = editor.pl
+extends = ../templates/editor.pl
+
 
 maxattempt = 10
 
@@ -50,6 +51,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 {% endif %}
 
 ==
+
 
 
 
