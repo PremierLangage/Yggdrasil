@@ -19,7 +19,8 @@ data = [(1,"Os frontal"),(2, "Os pariétal"), (3, "Os sphénoïde"), (4, "Os tem
 order = []
 for n,v in data:
     order.append(n)
-    mygroup.add_drop({str(n):v}) 
+    mygroup.add_label({str(n):v}) 
+    mygroup.add_drop({str(n):""}) 
     mygroup.add_match_by_content(str(n),v) 
 ==
 
