@@ -1,4 +1,4 @@
-extends = /ComputerScience/automates-test-claire/templates/base.pl
+extends = base.pl
 
 maxattempt = 3
 title= 
@@ -28,7 +28,7 @@ else:
     attempt += 1
     match, error = Automaton.compare(automaton, editor)
     if (error or not match) and attempt >= maxattempt:
-        grade = (score, '<p class="warning-state">L\'automate déterministe suivant était une réponse possible à cette question.</p>')
+        grade = (score, '<p class="warning-state">Vous n\'avez pas réussi l\'exercice, réinitialisez le pour essayer à nouveau.</p>')
     elif error:
         grade = (-1, f'<p class="warning-state">{error}</p>')
     elif match is True:
@@ -88,6 +88,8 @@ form== #|html|
     </ul>
     </p>
 ==
+
+
 
 
 
