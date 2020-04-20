@@ -9,26 +9,6 @@ generate== #|py|
 
 from automaton import Automaton
 
-#    la construction de l'automate pour tester la réponse
-automaton = AutomatonEditor(
-    automaton= {
-        "alphabet": ["a", "b"],
-        "initialStates": ["S1"],
-        "acceptingStates": ["S3"],
-        "states": ["S1", "S2", "S3","S4"],
-        "transitions": [
-            { "fromState": "S1", "toState": "S2", "symbols": ["b"] },
-            { "fromState": "S2", "toState": "S3", "symbols": ["a"] },
-            { "fromState": "S3", "toState": "S4", "symbols": ["a"] },
-            { "fromState": "S3", "toState": "S4", "symbols": ["b"] },
-            { "fromState": "S4", "toState": "S3", "symbols": ["a"] },
-            { "fromState": "S4", "toState": "S3", "symbols": ["b"] },
-        ]
-    }
-)
-
-prefix = 'ab'
-alphabet = ['a', 'b']
 viewer = 'ab(a|b)+'
 
 
