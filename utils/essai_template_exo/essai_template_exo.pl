@@ -4,7 +4,9 @@
 @ /utils/components/textselect.py [customtextselect.py]
 @ /utils/components/dragdrop.py [customdragdrop.py]
 @ /builder/before.py [builder.py]
-@ /grader/evaluator.py [grader.py]title = Drag Drop mathématique
+@ /grader/evaluator.py [grader.py]
+
+title = Drag Drop mathématique
 
 before== #|python|
 from customdragdrop import CustomDragDrop, DragDropGroup, right_minus_wrong
