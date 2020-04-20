@@ -17,11 +17,10 @@ mygroup = DragDropGroup()
 labelscontent = ["Os frontal", "Os pariétal", "Os sphénoïde", "Os temporal", "Os occipital", "Os éthmoïde"]
 mygroup.set_label(labelscontent) 
 order = []
-for n,v in data:
-    order.append(n)
-    
-    mygroup.add_drop({str(n):""}) 
-    mygroup.add_match_by_content(str(n),v) 
+for i, v in enumerate(laberscontent):
+    order.append(i+1)
+    mygroup.add_drop({str(i):""}) 
+    mygroup.add_match_by_content(str(i),v) 
 ==
 
 text ==
