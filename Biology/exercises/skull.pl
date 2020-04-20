@@ -24,10 +24,6 @@ for i, v in enumerate(labelscontent):
 ==
 
 text ==
-
-==
-
-form ==
 <img src="{{scheme}}" style="max-width: 50%; vertical-align:top; display: inline-block"> 
 <div style="max-width: 50%;display: inline-block"> 
 <ul>
@@ -36,6 +32,10 @@ form ==
 {% endfor %}
 </ul>
 </div>
+==
+
+form ==
+
 
 <div style="display: block"> 
 {% for label in mygroup.labels.values() %} {{ label|component }} {% endfor %}
