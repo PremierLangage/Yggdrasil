@@ -19,8 +19,8 @@ mygroup.set_label(labelscontent)
 order = []
 for i, v in enumerate(labelscontent):
     order.append(i+1)
-    mygroup.add_drop({str(i+1):""}) 
-    mygroup.add_match_by_content(str(i+1),v) 
+    mygroup.add_drop({str(i):""}) 
+    mygroup.add_match_by_content(str(i),v) 
 ==
 
 text ==
