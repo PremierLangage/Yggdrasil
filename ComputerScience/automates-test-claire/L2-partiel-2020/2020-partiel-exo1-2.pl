@@ -1,6 +1,3 @@
-
-############### A FINIR #########################
-
 extends = ../templates/editor.pl
 
 
