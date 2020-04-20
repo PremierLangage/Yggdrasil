@@ -61,7 +61,7 @@ if __name__ == "__main__":
     dic['attempt']=1
 
     for k,v in dic.items():
-        print(k,":",v, " ", type(v), file=sys.stderr)
+        print(k,":",v, " ", type(v), " ", jsonpickle.encode(v), file=sys.stderr)
     print("#################################################", file=sys.stderr)
     print("#################################################", file=sys.stderr)
 
