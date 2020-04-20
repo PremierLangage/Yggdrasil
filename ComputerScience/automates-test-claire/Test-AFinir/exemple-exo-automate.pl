@@ -14,18 +14,22 @@ viewer = AutomatonEditor(
     automaton= {
         "alphabet": ["a", "b"],
         "initialStates": ["S1"],
-        "acceptingStates": ["S3"],
-        "states": ["S1", "S2", "S3","S4"],
+        "acceptingStates": ["S5"],
+        "states": ["S1", "S2", "S3","S4","S5"],
         "transitions": [
             { "fromState": "S1", "toState": "S2", "symbols": ["b"] },
-            { "fromState": "S2", "toState": "S3", "symbols": ["a"] },
+            { "fromState": "S1", "toState": "S3", "symbols": ["b"] },
+            { "fromState": "S1", "toState": "S4", "symbols": ["b"] },
+            { "fromState": "S2", "toState": "S3", "symbols": ["b"] },
+            { "fromState": "S2", "toState": "S4", "symbols": ["b"] },
+            { "fromState": "S2", "toState": "S2", "symbols": ["a"] },
+            { "fromState": "S2", "toState": "S2", "symbols": ["b"] },
             { "fromState": "S3", "toState": "S4", "symbols": ["a"] },
-            { "fromState": "S3", "toState": "S4", "symbols": ["b"] },
-            { "fromState": "S4", "toState": "S3", "symbols": ["a"] },
-            { "fromState": "S4", "toState": "S3", "symbols": ["b"] },
+            { "fromState": "S4", "toState": "S5", "symbols": ["b"] },
         ]
     }
 )
+
 
 #   transformation de l'automate de json en objet
 automaton = Automaton.parse(viewer)
