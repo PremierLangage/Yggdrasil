@@ -63,7 +63,7 @@ form==
 {{ d | component }}
 {<br>
 <br>
-{ e | component }}
+{{ e | component }}
 <br>
 <br>
 {{ f | component }}
@@ -101,6 +101,7 @@ extracss == #|html|
 
 
 custom_pl_template == #|html|
+<ion-card class="exercise">
     <ion-card-header class="exercise__header">
         <ion-card-subtitle class='exercise__author'>{% if author %}{{ author }}{% endif %}</ion-card-subtitle>
         <ion-card-title class='exercise__title'
@@ -165,7 +166,7 @@ custom_pl_template == #|html|
         </div>
         </ion-footer>
     </ion-card-content>
-
+</ion-card>
 ==
 
 
