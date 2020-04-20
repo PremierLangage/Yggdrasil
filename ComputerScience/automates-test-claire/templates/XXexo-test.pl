@@ -43,8 +43,6 @@ text ==
 Affichage de l'automate donné pour la solution??
 {{ viewer|component }}
 
-
-
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage correspondant à {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
