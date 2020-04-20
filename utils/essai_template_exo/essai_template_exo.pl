@@ -38,11 +38,13 @@ b.css='drag'
 
 
 c = mygroup.labels["integrale"]
-c.css='drag'
+c.css='drop'
 d = mygroup.labels["limite"]
-d.css = 'drag'
+d.css = 'drop'
 e = mygroup.labels["fraction"]
+e.css = 'drop'
 f = mygroup.labels["determinant"]
+f.css = 'drop'
 g = mygroup._matches
 ==
 
