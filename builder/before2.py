@@ -66,7 +66,7 @@ if __name__ == "__main__":
     print("#############################################", file = sys.stderr)
     print("#############################################", file = sys.stderr)
     print(jsonpickle.encode(dic, unpicklable=False), file=sys.stderr)
-
+    sys.exit(1)
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
     
