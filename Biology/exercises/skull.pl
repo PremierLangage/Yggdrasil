@@ -28,7 +28,7 @@ text ==
 ==
 
 form ==
-<img src="{{scheme}}" style="max-width: 200px; display: inline-block"> 
+<img src="{{scheme}}" style="max-width: 300px; display: inline-block"> 
 <div style="display: inline-block"> 
 <ul>
 {% for i in order %}
