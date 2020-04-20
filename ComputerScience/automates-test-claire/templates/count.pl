@@ -1,6 +1,6 @@
 extends = editor.pl
 
-maxattempt = 5
+maxattempt = 10
 
 generate== #|py|
 import random
@@ -27,6 +27,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution
 {% endif %}
 
 ==
+
 
 
 
