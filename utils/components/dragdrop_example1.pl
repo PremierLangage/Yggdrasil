@@ -5,8 +5,6 @@
 @ /utils/components/dragdrop.py [customdragdrop.py]
 @ /builder/before.py [builder.py]
 @ /grader/evaluator.py [grader.py]
-#extends = /model/basic.pl
-@ /utils/components/dragdrop.py [customdragdrop.py]
 
 title = Comparaison de nombres (DragDrop)
 
