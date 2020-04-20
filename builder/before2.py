@@ -60,7 +60,10 @@ if __name__ == "__main__":
 
     dic['attempt']=1
 
-    print(dic)
+    print(dic, file=sys.stderr)
+    print("#################################################")
+    print("#################################################")
+
     print(jsonpickle.encode(dic, unpicklable=False),file=sys.stderr)
 
     sys.exit(1)
