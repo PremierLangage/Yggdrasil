@@ -35,8 +35,11 @@ form ==
 <li> {{ i }}. {{ mygroup.drops[(i-1)|string]|component }} </li>
 {% endfor %}
 </ul>
-</div> 
+</div>
+
+<div style="display: block"> 
 {% for label in mygroup.labels.values() %} {{ label|component }} {% endfor %}
+</div>
 ==
 
 settings.feedback = lightscore
