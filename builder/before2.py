@@ -44,9 +44,7 @@ if __name__ == "__main__":
             if key in dic and dic[key] == namespace[key]:
                 del dic[key]
 
-    for key in dic:
-        dic[key]=serialize(dic[key])
-
+    
 
     # sync components defined inside a list
     for k in list(dic.keys()):
@@ -54,9 +52,6 @@ if __name__ == "__main__":
             for e in dic[k]:
                 if isinstance(e, Component):
                     dic[e.id] = e
-
-
-
 
     if 'buttons' not in dic:
         dic['buttons'] = ["submit","reroll"]
@@ -66,15 +61,17 @@ if __name__ == "__main__":
 
     dic['attempt']=1
 
-
     for key in dic:
-        print(key+" ="+str(dic[key]), file=sys.stderr)
-    sys.exit(1)
+        print(key+" = "+str(dic[key]),file=sys.stderr)
+        dic[key]=serialize(dic[key])
+        print(key+" = "+str(dic[key]),file=sys.stderr)
 
+    sys.exit(1)
 
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
 
     sys.exit(0)
+
 
 
