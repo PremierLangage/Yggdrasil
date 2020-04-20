@@ -21,8 +21,6 @@ viewer = AutomatonEditor(
             { "fromState": "S2", "toState": "S3", "symbols": ["a"] },
             { "fromState": "S3", "toState": "S4", "symbols": ["a"] },
             { "fromState": "S3", "toState": "S4", "symbols": ["b"] },
-            { "fromState": "S4", "toState": "S3", "symbols": ["a"] },
-            { "fromState": "S4", "toState": "S3", "symbols": ["b"] },
         ]
     }
 )
