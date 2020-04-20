@@ -104,7 +104,7 @@ custom_pl_template == #|html|
                 margin-bottom: 20px;
                 padding: 10px 10px 10px 20px;
                 display:flex;
-                justify-content: space-between;>
+                justify-content: space-between;">
                 {% if title %}{{ title }}{% endif%}
         </ion-card-title>
     </ion-card-header>
