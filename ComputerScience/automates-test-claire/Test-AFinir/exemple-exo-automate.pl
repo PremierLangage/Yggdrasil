@@ -1,6 +1,6 @@
 
 
-extends = ../templates/editor-new.pl
+extends = ../templates/editor.pl
 
 maxattempt = 10
 
@@ -10,7 +10,7 @@ generate== #|py|
 from automaton import Automaton
 
 #    la construction de l'automate pour tester la réponse
-viewer = AutomatonEditor(
+soluce = AutomatonEditor(
     automaton= {
         "alphabet": ["a", "b"],
         "initialStates": ["S1"],
@@ -21,12 +21,14 @@ viewer = AutomatonEditor(
             { "fromState": "S2", "toState": "S3", "symbols": ["a"] },
             { "fromState": "S3", "toState": "S4", "symbols": ["a"] },
             { "fromState": "S3", "toState": "S4", "symbols": ["b"] },
+            { "fromState": "S4", "toState": "S3", "symbols": ["a"] },
+            { "fromState": "S4", "toState": "S3", "symbols": ["b"] },
         ]
     }
 )
 
 #   transformation de l'automate de json en objet
-automaton = Automaton.parse(viewer)
+automaton = Automaton.parse(soluce)
 
 #    l'alphabet
 alphabet = "a,b"
@@ -38,8 +40,6 @@ message = "l'ensemble des mots qui commencent par ba et dont la longueur est pai
 
 title = Bla - exemple avec soluce automate
 text ==
-
-{{viewer|component}}
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage correspondant à {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
