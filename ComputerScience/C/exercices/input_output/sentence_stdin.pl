@@ -43,7 +43,7 @@ int main(int argc, char* argv[]){
 
 tests==
 [["Basique", "", "Je vais a la plage.\n"],
- ["Entree vide", "", ""],]
+ ["Entree vide", "", ""]]
 ==
 
 # ["Entree vide", "", ""],
