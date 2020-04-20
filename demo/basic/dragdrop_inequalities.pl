@@ -25,8 +25,6 @@ for i in range(n):
 
 text ==
  <img src="{{scheme}}" style="max-width: 400px"> 
-
-{% for label in mygroup.labels.values() %} {{ label|component }} {% endfor %}
 ==
 
 form ==
@@ -35,7 +33,7 @@ form ==
 <li> {{ order[i] }}. {{ mygroup.drops[i|string]|component }} </li>
 {% endfor %}
 </ul>
-
+{% for label in mygroup.labels.values() %} {{ label|component }} {% endfor %}
 ==
 
 settings.feedback = lightscore
