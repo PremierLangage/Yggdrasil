@@ -22,7 +22,7 @@ message = "l’ensemble des mots qui contiennent le facteur bab ou le facteur bb
 # peut-on utiliser la syntaxe du viewer ?
 ==
 
-title = Partiel 2020 Exo1-1
+title = Partiel 2020 Exo1-3
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage correspondant à {{ message }} <br>
