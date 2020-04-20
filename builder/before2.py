@@ -59,6 +59,9 @@ if __name__ == "__main__":
         dic['maxattempt'] = 1
 
     dic['attempt']=1
+    
+    for k,v in dic.items():
+        dic[k] = jsonpickle.encode(v, unpickable=False)
 
     json.dump(dic, sys.stderr)
 
