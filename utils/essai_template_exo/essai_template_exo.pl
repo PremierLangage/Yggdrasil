@@ -124,13 +124,13 @@ custom_pl_template == #|html|
         </div>
         <br/>
         <!-- FOOTER -->
-        <ion-footer class="ion-no-border">
+        <ion-footer class="ion-no-border" style = "height:4em; background-color:beige">
         <!-- FEEDBACK -->
-        <div text-right class="exercise__feedback" style = "height:2em; background-color:beige">
+        <div text-right class="exercise__feedback">
             {{ feedback__|markdown|safe if feedback else "" }}
         </div>
         <!-- ACTIONS -->
-        <div class="exercise__actions text-center" style = "height:2em; background-color:beige">
+        <div class="exercise__actions text-center">
             <div class="btn-group" role="group" aria-label="actions">
                 <button class="btn btn-primary action-submit">
                     <i id="validate" class="fas fa-check"></i>
