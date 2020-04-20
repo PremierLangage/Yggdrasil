@@ -1,7 +1,7 @@
 
 extends = editor.pl
 
-maxattempt = 5
+maxattempt = 10
 
 generate== #|py|
 from generator import Generator
@@ -19,6 +19,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s)!
 </p>
 {% endif %}
 ==
+
 
 
 
