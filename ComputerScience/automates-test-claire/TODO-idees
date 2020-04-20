@@ -11,10 +11,8 @@ A discuter avec Mamadou et Dominique
 
 Viewer/editeur
 
-état normal -> état non-final
 Transition - changer Transition -> changer l'étiquette de la transition
 
-Quand je renomme l'état je n'arrive plus à faire des transistions
 
 J'ai changé réponse acceptable
 
@@ -23,14 +21,15 @@ dans le multistep où il faut dessiner un automate, est-ce une comparaison d'ég
 =======
 21/04 -- Dans editor. pl j'ai modifier l'aide au dessin
 
+21/04 -- Bug Quand je renomme l'état je n'arrive plus à faire des transistions
+
+21/04 -- dans l'éditeur changer le bouton état normal en état non-final
+
 =========
 parse -> construit des exemples cf la documentation de mamadou dans automaton
 
 ========
 dans la librairie + est |  pas de . et etoile *
-
-========
-Syntaxe pour donner des automates fixés? pas juste à dessiner
 
 ========
 syntaxe des expressions regulières? ajouter un parseur pour la syntaxe du cours (.+* seulement)
