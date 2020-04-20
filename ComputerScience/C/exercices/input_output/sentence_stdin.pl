@@ -42,7 +42,8 @@ int main(int argc, char* argv[]){
 ==
 
 tests==
-[["Basique", "", "Je vais a la plage.\n"]]
+[["Basique", "", "Je vais a la plage.\n"],
+ ["Entree vide", "", ""],]
 ==
 
 # ["Entree vide", "", ""],
