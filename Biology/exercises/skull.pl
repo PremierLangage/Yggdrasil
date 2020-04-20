@@ -25,7 +25,7 @@ for i, v in enumerate(labelscontent):
 
 text ==
 <img src="{{scheme}}" style="max-width: 200px; display: inline-block"> 
-<div style="display: inline-block"> 
+<div style="max-width: 200px;display: inline-block"> 
 <ul>
 {% for i in order %}
 <li> {{ i }}. {{ mygroup.drops[(i-1)|string]|component }} </li>
