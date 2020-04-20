@@ -20,10 +20,7 @@ numbers = []
 for i in range(n):
     [order.append(i+1)
     mygroup.add_drop({str(i):"coucou"}) 
-    if a < b:
-        mygroup.add_match_by_content(str(i),lt) 
-    else:
-        mygroup.add_match_by_content(str(i),gt) 
+    mygroup.add_match_by_content(str(i),lt) 
 ==
 
 text ==
