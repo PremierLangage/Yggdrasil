@@ -11,13 +11,13 @@ lstvar = ",".join(["x","y","z","t","u","v"][:n])
 min = min([n, m])
 mat.setmatrix([min * [0] for _ in range(min)])
 
-A = rand_int_matrix_fullrank(n, m, 3)
+A = rand_int_matrix_fullrank(m, n, 3)
 expr = ",".join([latex_lincomb(A.row(j),['x','y','z','t']) for j in range(m)])
 ==
 
 text ==
 On considère l'application linéaire $! f : \mathbb{R}^{{n}} \rightarrow \mathbb{R}^{{m}} !$ telle que
-$$ f({{lstvar}} = ( {{expr}} ) .$$
+$$ f({{lstvar}}) = ( {{expr}} ) .$$
 Déterminer une base de ce sous-espace (écrire cette base comme un ensemble, entre accolades).
 ==
 
