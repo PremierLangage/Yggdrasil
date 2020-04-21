@@ -139,7 +139,7 @@ custom_pl_template == #|html|
             <div class="btn-group" role="group" aria-label="actions">
                 <button class="btn btn-primary action-submit">
                     <i id="validate" class="fas fa-check"></i>
-                <span class="ion-hide-md-down  float-button">Valider</span>
+                <span class="ion-hide-md-down">Valider</span>
                 </button>
                 {% if tests %}
                 <a type="button" class="btn btn-primary action-test"
