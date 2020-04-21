@@ -14,7 +14,6 @@ labelscontent = {0:"Os frontal", 1:"Os pariétal", 2:"Os sphénoïde", 3:"Os tem
 mygroup.set_label(labelscontent) 
 
 for i in labelscontent:
-    order.append(i+1)
     mygroup.add_drop({i:""}) 
     mygroup.add_match_by_name(i,i) 
 ==
