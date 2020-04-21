@@ -101,11 +101,11 @@ class DragDropGroup():
          3) a list of strings, and then a label is added for each string as in 1). 
          """
         if isinstance(labels, str):
-            self.labels[labels] = CustomDragDrop.Label(content = labels, group_id = self.id, cloneable = self.cloneable)
+            self.labels[labels] = CustomDragDrop.Label(content = labels, css=self.css, group_id = self.id, cloneable = self.cloneable)
         if isinstance(labels, dict):
-            self.labels.update({label_name:  CustomDragDrop.Label(content = label_content, group_id = self.id, cloneable = self.cloneable) for (label_name, label_content) in labels.items()})
+            self.labels.update({label_name:  CustomDragDrop.Label(content = label_content, css=self.css, group_id = self.id, cloneable = self.cloneable) for (label_name, label_content) in labels.items()})
         if isinstance(labels, list):
-            self.labels.update({string:  CustomDragDrop.Label(content = string, group_id = self.id, cloneable = self.cloneable) for string in labels})
+            self.labels.update({string:  CustomDragDrop.Label(content = string, css=self.css, group_id = self.id, cloneable = self.cloneable) for string in labels})
 
     def set_drop(self, drops):
          self.drops = {}
@@ -113,11 +113,11 @@ class DragDropGroup():
 
     def add_drop(self, drops): # similar to add_label, only drops do not have the cloneable info.
         if isinstance(drops, str):
-            self.drops[drops] = CustomDragDrop.Drop(content = drops, group_id = self.id)
+            self.drops[drops] = CustomDragDrop.Drop(content = drops, css=self.css, group_id = self.id)
         if isinstance(drops, dict):
-            self.drops.update({drop_name:  CustomDragDrop.Drop(content = drop_content, group_id = self.id) for (drop_name, drop_content) in drops.items()})
+            self.drops.update({drop_name:  CustomDragDrop.Drop(content = drop_content, css=self.css, group_id = self.id) for (drop_name, drop_content) in drops.items()})
         if isinstance(drops, list):
-            self.drops.update({string:  CustomDragDrop.Drop(content = string, group_id = self.id) for string in drops})
+            self.drops.update({string:  CustomDragDrop.Drop(content = string, css=self.css, group_id = self.id) for string in drops})
 
     def set_match(self, matches): # self._matches is a list of pairs (label_cid, drop_cid)
         self._matches = matches
