@@ -1,6 +1,6 @@
 ## version 2020 04 21 - modifiée par Claire
 # L41 staticmethod
-# sorted_alphabet dans prefix suffix factor
+# sorted_alphabet dans prefix sufix factor
 
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
@@ -97,7 +97,7 @@ class Generator:
         :return (alphabet: str, suffix: str, automaton: Automaton)
         """
     
-        alphabet = Generator.alphabet(max_symbs)
+        alphabet = Generator.sorted_alphabet(max_symbs)
         n = random.randint(2, length)
         prefix = '|'.join(list(alphabet))
         suffix =  "".join(
