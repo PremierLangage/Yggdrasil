@@ -43,3 +43,14 @@ from customdragdrop import right_minus_wrong
 
 grade = mygroup.eval(grading_function = right_minus_wrong)
 ==
+
+extracss == #|html| 
+<style>
+    .myclass{
+        #padding: 1em;
+        min-width: 20em;
+        }
+</style>
+==
+
+
