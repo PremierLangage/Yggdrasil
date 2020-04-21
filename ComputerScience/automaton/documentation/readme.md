@@ -51,7 +51,11 @@ Ce dossier contient des templates d’exercices réutilisables.
 
 - **base.pl**: Ce template importe les fichiers nécessaires sur l’environnement de l'exercice. Tous les autres templates héritent de ce fichier.
 
-- **editor.pl**: Ce template définie le code de base permettant d'écrire un exercice ou l'enseignant demande à un étudiant de construire un automate. Pour utiliser ce template, il suffit de créer un fichier **.pl** qui hérite de ce dernier. Votre fichier doit définir une clé **generate** qui contient un script python permettant de générer un automate avec pour nom de variable **viewer**. Vous pouvez déclarer d'autres variables si vous en avez besoin. La variable **viewer** doit être un automate représenté dans n'importe quel des formats accepté. Vous avez accès aux classes Automaton, Generator et le module random de python et vous pouvez importer d'autres modules si besoin.
+- **editor.pl**: Ce template définie le code de base permettant d'écrire un exercice ou l'enseignant demande à un étudiant de construire un automate.
+Pour utiliser ce template, il suffit de créer un fichier **.pl** qui hérite de ce dernier.
+Votre fichier doit définir une clé **generate** qui contient un script python permettant de générer un automate avec pour nom de variable **viewer**.
+Vous pouvez déclarer d'autres variables si vous en avez besoin. La variable **viewer** doit être un automate représenté dans n'importe quel des formats accepté.
+Vous avez accès aux classes Automaton, Generator et le module random de python dans à l'intérieur de la clé **generate** et vous pouvez importer d'autres modules si besoin.
 ```
 # vous devez changer le chemin relativement à l'endroit où votre fichier se situe.
 extends = ../templates/editor.pl
