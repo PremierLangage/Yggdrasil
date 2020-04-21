@@ -29,13 +29,16 @@ nb_lettres = random.choice([2,3])
 
 if mode == -1 :
     # Generator.prefix(nb lettres alphabet , longueur maxi du prefix)
-    alphabet, mot, automaton = Generator.prefix(nb_lettres,3)
+    alphabet, mot, viewer = Generator.prefix(nb_lettres,3)
 elif mode == 0 :
     # Generator.prefix(nb lettres alphabet , longueur maxi du facteur)
-    alphabet, mot, automaton = Generator.factor(nb_lettres,3)
+    alphabet, mot, viewer = Generator.factor(nb_lettres,3)
 else :
     # Generator.prefix(nb lettres alphabet , longueur maxi du suffixe)
-    alphabet, mot, automaton = Generator.suffix(nb_lettres,3)
+    alphabet, mot, viewer = Generator.suffix(nb_lettres,3)
+
+
+alphabet = ', '.join(list(alphabet))
 ==
 
 title =  Tirage aléatoire d'un exercice de prefixe, suffixe ou facteur
@@ -49,6 +52,8 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 {% endif %}
 
 ==
+
+
 
 
 
