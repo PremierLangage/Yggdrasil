@@ -18,12 +18,13 @@ Déterminer une base de ce sous-espace (écrire cette base comme un ensemble, en
 ==
 
 evaluator ==
-score, _, feedback = eval_matrix(mat.getmatrix(), Msol)
+score, _, feedback = eval_matrix(mat.getmatrix(), A)
 ==
 
 solution ==
-La solution est $$\left( {{sol.latex}} \right).$$
+La solution est $$\left( {{A.latex}} \right).$$
 ==
+
 
 
 
