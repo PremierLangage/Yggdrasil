@@ -13,8 +13,11 @@ B = rand_int_matrix(n, n, 2)
 X = rand_int_matrix(n, 1, 2)
 if randint(1,2) == 1:
     sol = (A * B * X).transpose()
+    expr = r"f \circ g"
 else:
     sol = (B * A * X).transpose()
+    expr = r"g \circ f"
+    
 strsol = str(tuple(sol))
 vec = str(tuple(X.transpose()))
 ==
