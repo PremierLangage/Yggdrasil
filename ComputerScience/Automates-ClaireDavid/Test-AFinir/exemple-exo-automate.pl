@@ -1,6 +1,4 @@
 
-
-#extends = ../../automaton/templates/editor.pl
 extends = ../templates/editor.pl
 
 maxattempt = 2
@@ -8,7 +6,6 @@ maxattempt = 2
 ## Ajouter ici la génération de l'automate et autres variables de l'exo
 generate== #|py|
 
-#from automaton import Automaton
 
 #    la construction de l'automate pour tester la réponse
 viewer = AutomatonEditor(
@@ -31,9 +28,6 @@ viewer = AutomatonEditor(
     }
 )
 
-
-#   transformation de l'automate de json en objet
-#automaton = Automaton.parse(viewer)
 
 #    l'alphabet
 alphabet = "a,b"
