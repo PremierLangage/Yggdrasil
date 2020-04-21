@@ -19,7 +19,7 @@ text ==
 {{sol.latex}}
 Soit l'application linéaire $! f : \mathbb{R}^{{n}} \rightarrow \mathbb{R}^{{m}} !$ dont la matrice par rapport aux bases canoniques des espaces de départ et d'arrivée est
 $$ M_f = \left( {{A.latex}} \right).$$
-Calculer $! f{{strvec.latex}} !$. Ecrire la réponse sous forme d'un n-uplet (vecteur ligne).
+Calculer $! f{{vec.latex}} !$. Ecrire la réponse sous forme d'un n-uplet (vecteur ligne).
 ==
 
 evaluator ==
