@@ -1,4 +1,5 @@
 
+# Version 2020 40 21 modifié par Claire doc editeur
 # CONTRACTS FOR FILES WHICH EXTENDS THIS TEMPLATE
 
 #! linter:require:generate::str
