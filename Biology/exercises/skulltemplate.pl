@@ -5,8 +5,14 @@ extends = /model/basic.pl
 
 #! linter:required:labelscontent
 #! linter:required:title
+
+# 
 #! linter:barem:
+
 #! linter:scheme:
+
+
+
 
 before==#|python|
 import random as rd
@@ -15,11 +21,14 @@ from customdragdrop import DragDropGroup
 mygroup = DragDropGroup(css="myclass")
 
 mygroup.set_label(labelscontent) 
-order = []
-for i, v in enumerate(labelscontent):
-    order.append(i+1)
-    mygroup.add_drop({str(i):""}) 
-    mygroup.add_match_by_content(str(i),v) 
+order = list(range(len(labelscontent)))
+rd.shuffle(order)
+
+for i, j in enumerate(order):
+    mygroup.add_label({i:labelscontent[j]})
+    mygroup.add_drop({i+1:""}) 
+for i, j in enumerate(order): # can only be done after everycomponent has been constructed
+    mygroup.add_match_by_name(i+1, j) 
 
 
 evaluator = f"""
