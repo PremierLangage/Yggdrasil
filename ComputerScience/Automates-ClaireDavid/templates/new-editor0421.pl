@@ -2,7 +2,8 @@
 # Version 2020 40 21 modifié par Claire
 # doc editeur
 # pas d'automate det affiché si bonne réponse
-# réponse non affichéée en cas d'ééch
+# message affiché en cas de timeout
+# pas de soluce affichée dans <!-- TIMEOUT VIEW -->
 # CONTRACTS FOR FILES WHICH EXTENDS THIS TEMPLATE
 
 #! linter:require:generate::str
