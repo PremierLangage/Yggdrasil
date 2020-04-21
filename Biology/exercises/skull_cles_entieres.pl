@@ -12,13 +12,13 @@ from customdragdrop import DragDropGroup
 mygroup = DragDropGroup()
 labelscontent = ["Os frontal", "Os pariétal", "Os sphénoïde", "Os temporal", "Os occipital", "Os ethmoïde"]
 
-order = list(len(labelscontent))
+order = list(range(6))
 rd.shuffle(order)
 
 for i, j in enumerate(order):
     mygroup.add_label({i:labelscontent[j]})
     mygroup.add_drop({i+1:""}) 
-for i, j in enumerate(order):
+for i, j in enumerate(order): # can only be done after everycomponent has been constructed
     mygroup.add_match_by_name(i+1, j) 
 ==
 
@@ -49,6 +49,5 @@ from customdragdrop import right_minus_wrong
 
 grade = mygroup.eval(grading_function = right_minus_wrong)
 ==
-
 
 
