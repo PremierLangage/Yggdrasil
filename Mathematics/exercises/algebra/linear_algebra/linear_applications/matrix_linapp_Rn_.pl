@@ -8,6 +8,9 @@ m = 2
 
 lstvar = ",".join(["x","y","z","t","u","v"][:n])
 
+min = min([n, m])
+mat.setmatrix([min * [0] for _ in range(min)])
+
 A = rand_int_matrix_fullrank(n, m, 3)
 expr = ",".join([latex_lincomb(A.row(j),['x','y','z','t']) for j in range(m)])
 ==
