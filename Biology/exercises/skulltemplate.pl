@@ -20,7 +20,7 @@ from customdragdrop import DragDropGroup
 
 mygroup = DragDropGroup(css="myclass")
 
-mygroup.set_label(labelscontent) 
+# mygroup.set_label(labelscontent) 
 order = list(range(len(labelscontent)))
 rd.shuffle(order)
 
@@ -59,11 +59,6 @@ form ==
 
 settings.feedback = lightscore
 
-evaluator==#|python|
-from customdragdrop import right_minus_wrong
-
-grade = mygroup.eval(grading_function = right_minus_wrong)
-==
 
 extracss == #|html| 
 <style>
