@@ -27,6 +27,6 @@ score, _, feedback = eval_tuple(input.value, sol)
 ==
 
 solution == 
-La solution est $! ({{strsol}}) !$.
+La solution est $! {{strsol}} !$.
 ==
 
