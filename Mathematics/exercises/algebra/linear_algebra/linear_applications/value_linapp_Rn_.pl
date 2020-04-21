@@ -7,8 +7,6 @@ n, m = rd.choice(param['sizes'])
 
 lstvar = ",".join(["x","y","z","t","u","v"][:n])
 
-min = min([n, m])
-mat.setmatrix([min * [0] for _ in range(min)])
 
 A = rand_int_matrix_fullrank(m, n, 3)
 B = rand_int_matrix(n, 1, 3)
