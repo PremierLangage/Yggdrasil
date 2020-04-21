@@ -9,7 +9,10 @@ def all_or_nothing(num_right=0, num_wrong = 0, total = 1):
         return 0
 
 def right_minus_wrong(num_right=0, num_wrong = 0, total = 1):
-    return max([round((num_right-num_wrong)/total*100),0])
+    if total == 0:
+        return 100
+    else:
+        return max([round((num_right-num_wrong)/total*100),0])
 
 class CustomDragDrop(Component):
 
