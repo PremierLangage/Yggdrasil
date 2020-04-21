@@ -8,12 +8,12 @@ lstvar = ",".join(["x","y","z","t","u","v"][:n])
 
 A = rand_int_matrix_fullrank(n, m, 3)
 B=zeros(nbeq, 1)
-sys_tex = latexsys(A, B)
+expr = ",".join([latex_lincomb(A.row(j)) for j in m])
 ==
 
 text ==
-On considère l'application linéaire $! f : \mathbb{R}^{{n}} \rightarrow \mathbb{R}^{{n}} !$ telle que
-$$ f({{lstvar}} = ( {{sys_tex}} ) .$$
+On considère l'application linéaire $! f : \mathbb{R}^{{n}} \rightarrow \mathbb{R}^{{m}} !$ telle que
+$$ f({{lstvar}} = ( {{expr}} ) .$$
 Déterminer une base de ce sous-espace (écrire cette base comme un ensemble, entre accolades).
 ==
 
