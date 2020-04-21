@@ -91,7 +91,7 @@ text= PLEASE OVERRIDE THE KEY **text=** TO CHANGE THIS TEXT
 form== #|html|
 <!-- TIMEOUT VIEW -->
 {% if attempt >= maxattempt %}
-{{ viewer|component }}
+<!--{{ viewer|component }}-->
 {% endif %}
 
 <!-- SUCCESS VIEW -->
