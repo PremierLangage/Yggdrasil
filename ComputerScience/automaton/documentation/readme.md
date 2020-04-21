@@ -56,6 +56,7 @@ Pour utiliser ce template, il suffit de créer un fichier **.pl** qui hérite de
 Votre fichier doit définir une clé **generate** qui contient un script python permettant de générer un automate avec pour nom de variable **viewer**.
 Vous pouvez déclarer d'autres variables si vous en avez besoin. La variable **viewer** doit être un automate représenté dans n'importe quel des formats accepté.
 Vous avez accès aux classes Automaton, Generator et le module random de python dans à l'intérieur de la clé **generate** et vous pouvez importer d'autres modules si besoin.
+
 ```
 # vous devez changer le chemin relativement à l'endroit où votre fichier se situe.
 extends = ../templates/editor.pl
