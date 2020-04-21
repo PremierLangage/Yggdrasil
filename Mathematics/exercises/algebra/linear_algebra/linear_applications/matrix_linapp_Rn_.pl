@@ -9,7 +9,6 @@ m = 2
 lstvar = ",".join(["x","y","z","t","u","v"][:n])
 
 A = rand_int_matrix_fullrank(n, m, 3)
-B=zeros(nbeq, 1)
 expr = ",".join([latex_lincomb(A.row(j)) for j in m])
 ==
 
