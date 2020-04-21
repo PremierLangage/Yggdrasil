@@ -27,7 +27,7 @@ form ==
 <div style="max-width: 100%;display: inline-block"> 
 <ul>
 {% for i in range(6) %}
-<li> {{ i+1 }}. {{ mygroup.drops[i|int]|component }} </li>
+<li> {{ i+1 }}. {{ mygroup.drops[0]|component }} </li>
 {% endfor %}
 </ul>
 </div>
