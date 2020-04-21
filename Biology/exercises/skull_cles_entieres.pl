@@ -26,8 +26,8 @@ form ==
 <img src="{{scheme}}" style="max-width: 300px; vertical-align:top; display: inline-block"> 
 <div style="max-width: 100%;display: inline-block"> 
 <ul>
-{% for i in range(6) %}
-<li> {{ i+1 }}. {{ mygroup.drops[0|int]|component }} </li>
+{% for i, drop in mygroup.drops.items() %}
+<li> {{ i+1 }}. {{ drop|component }} </li>
 {% endfor %}
 </ul>
 </div>
