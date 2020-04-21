@@ -17,8 +17,8 @@ rd.shuffle(order)
 
 for i, j in enumerate(order):
     mygroup.add_label({i:labelscontent[j]})
-    mygroup.add_drop({j+1:""}) 
-    mygroup.add_match_by_name(j+1, i) 
+    mygroup.add_drop({i+1:""}) 
+    mygroup.add_match_by_name(i+1, i) 
 ==
 
 text ==
