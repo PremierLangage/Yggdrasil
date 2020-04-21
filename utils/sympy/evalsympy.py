@@ -486,6 +486,7 @@ _feedback_ = {
 "NotCplxCartesian": "La réponse doit être un nombre complexe sous forme cartésienne.",
 "NotCplxExponential": "La réponse doit être un nombre complexe sous forme exponentielle.",
 "NotSet": "La réponse doit être un ensemble.",
+"NotTuple": "La réponse doit être un n-uplet (un vecteur ligne).",
 "NotPoly": "La réponse doit être un polynôme.",
 "RSetNotDisjoint": "Les ensembles de cette réunion ne sont pas disjoints. La réponse peut être simplifiée.",
 "PolyNotExpanded": "La réponse doit être un polynôme développé.",
@@ -721,3 +722,4 @@ def ans_antiderivative(strans,sol,x,local_dict={}):
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
+
