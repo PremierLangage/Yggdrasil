@@ -17,7 +17,8 @@ for i in labelscontent:
     mygroup.add_drop({i:""}) 
     mygroup.add_match_by_name(i,i) 
 
-order = rd.shuffle(list(range(1,6)))
+order = [i for i in range(1,6)]
+rd.shuffle(order)
 ==
 
 text ==
