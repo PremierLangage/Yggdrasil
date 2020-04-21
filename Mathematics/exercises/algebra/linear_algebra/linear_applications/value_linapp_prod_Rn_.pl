@@ -13,7 +13,7 @@ B = rand_int_matrix(n, n, 3)
 X = rand_int_matrix(n, 1, 3)
 sol = (A * B * X).transpose()
 strsol = str(tuple(sol))
-vec = str(tuple(B.transpose()))
+vec = str(tuple(X.transpose()))
 ==
 
 text ==
