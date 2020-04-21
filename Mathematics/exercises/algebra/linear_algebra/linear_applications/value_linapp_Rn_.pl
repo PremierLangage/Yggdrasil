@@ -12,14 +12,14 @@ mat.setmatrix([min * [0] for _ in range(min)])
 
 A = rand_int_matrix_fullrank(m, n, 3)
 B = rand_int_matrix(n, 1, 3)
-
+vec = tuple(B)
 expr = ",".join([latex_lincomb(A.row(j),['x','y','z','t']) for j in range(m)])
 ==
 
 text ==
 Soit l'application linéaire $! f : \mathbb{R}^{{n}} \rightarrow \mathbb{R}^{{m}} !$ dont la matrice par rapport aux bases canoniques des espaces de départ et d'arrivée est
 $$ M_f = \left( {{matrices[step].latex}} \right).$$
-Calculer 
+Calculer $! f({{vec}}) !$. Ecrire la réponse sous forme d'un n-uplet (vecteur ligne).
 ==
 
 evaluator ==
