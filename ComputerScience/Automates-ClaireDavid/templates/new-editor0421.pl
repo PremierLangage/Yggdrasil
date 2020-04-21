@@ -1,5 +1,8 @@
 
-# Version 2020 40 21 modifié par Claire doc editeur
+# Version 2020 40 21 modifié par Claire
+# doc editeur
+# pas d'automate det affiché si bonne réponse
+# réponse non affichéée en cas d'ééch
 # CONTRACTS FOR FILES WHICH EXTENDS THIS TEMPLATE
 
 #! linter:require:generate::str
@@ -48,7 +51,8 @@ feedback_match =
 #* feedback shown after a bad answer.
 feedback_nomatch = <p class="error-state">L\'automate que vous avez construit ne correspond pas à une réponse attendue.</p>
 #* feedback shown after a timeout.
-feedback_timeout = <p class="warning-state">L\'automate déterministe suivant était une réponse possible à cette question.</p>
+#feedback_timeout = <p class="warning-state">L\'automate déterministe suivant était une réponse possible à cette question.</p>
+feedback_timeout = <p class="warning-state">Vous n'avez pas réussi l'exercice. Relisez votre cours et retentez l'exercice un peu plus tard.</p>
 #* feedback shown for a syntax error. {0} is replaced by the occured error
 feedback_syntax_error = <p class="warning-state">{0}</p>
 
