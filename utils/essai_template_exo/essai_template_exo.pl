@@ -135,7 +135,7 @@ custom_pl_template == #|html|
             {{ feedback__|markdown|safe if feedback else "" }}
         </div>
         <!-- ACTIONS -->
-        <div class="exercise__actions text-center bar bar-footer bar-assertive">
+        <div class="exercise__actions text-center">
             <div class="btn-group" role="group" aria-label="actions">
                 <button class="btn btn-primary action-submit">
                     <i id="validate" class="fas fa-check"></i>
