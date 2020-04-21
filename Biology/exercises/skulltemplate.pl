@@ -21,12 +21,12 @@ from customdragdrop import DragDropGroup
 mygroup = DragDropGroup(css="myclass")
 labelscontent = ["un", "deux", "trois", "quatre", "cinq", "six"]
 
-mygroup.set_label(labelscontent) 
+# mygroup.set_label(labelscontent) 
 order = list(range(len(labelscontent)))
 rd.shuffle(order)
 
 for i, j in enumerate(order):
-    mygroup.add_label({i+1:labelscontent[j]})
+    mygroup.add_label({i:labelscontent[j]})
     mygroup.add_drop({i+1:""}) 
 for i, j in enumerate(order): # can only be done after everycomponent has been constructed
     mygroup.add_match_by_name(i+1, j) 
