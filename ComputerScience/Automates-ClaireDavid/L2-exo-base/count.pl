@@ -15,7 +15,6 @@ message = messages[mode]
 # counting( nb lettres alphabet, nb occurences demandées , mode)
 alphabet, letter, n, viewer = Generator.counting(3, 4, mode)
 
-
 alphabet = ', '.join(list(alphabet))
 ==
 
