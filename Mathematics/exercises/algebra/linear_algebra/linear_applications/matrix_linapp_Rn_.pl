@@ -18,7 +18,7 @@ expr = ",".join([latex_lincomb(A.row(j),['x','y','z','t']) for j in range(m)])
 text ==
 On considère l'application linéaire $! f : \mathbb{R}^{{n}} \rightarrow \mathbb{R}^{{m}} !$ telle que
 $$ f({{lstvar}}) = ( {{expr}} ) .$$
-Déterminer une base de ce sous-espace (écrire cette base comme un ensemble, entre accolades).
+Déterminer la matrice de cette application linéaire par rapport aux bases canoniques de espaces de départ et d'arrivée.
 ==
 
 evaluator ==
