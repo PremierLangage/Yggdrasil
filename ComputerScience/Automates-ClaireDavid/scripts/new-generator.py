@@ -1,4 +1,5 @@
 ## version 2020 04 21 - modifiée par Claire
+# L40 staticmethod
 #
 
 #!/usr/bin/env python3
