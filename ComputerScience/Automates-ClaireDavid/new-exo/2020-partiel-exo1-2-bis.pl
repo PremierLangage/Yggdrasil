@@ -30,7 +30,7 @@ viewer = AutomatonEditor(
     }
 )
 
-automaton = Automaton.parse(automaton)
+#automaton = Automaton.parse(automaton)
 
 alphabet = "a,b"
 message = "l'ensemble des mots qui commencent par b et finissent pat bab ou bb."
