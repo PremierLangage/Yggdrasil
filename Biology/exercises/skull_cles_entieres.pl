@@ -16,7 +16,7 @@ order = [i for i in range(6)]
 rd.shuffle(order)
 
 for i in range(6):
-    mygroup.add_label({i+1:labelscontent[order[i]])
+    mygroup.add_label({i+1:labelscontent[order[i]]})
     mygroup.add_drop({i+1:""}) 
     mygroup.add_match_by_name(order[i]+1,i+1) 
 
