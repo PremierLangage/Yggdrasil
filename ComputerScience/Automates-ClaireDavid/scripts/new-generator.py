@@ -1,6 +1,6 @@
 ## version 2020 04 21 - modifiée par Claire
-# L40 staticmethod
-#
+# L41 staticmethod
+# sorted_alphabet dans prefix suffix factor
 
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
