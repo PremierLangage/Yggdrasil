@@ -69,9 +69,9 @@ form_instructions== #|html|
             <i> Ne pas renommer les états - il y a un bug</i>
         </li>
         <li>
-            Pour ajouter une transition cliquer sur le point orange de l'état de départ
-            et tirer votre transition jusqu'à l'état d'arrivée.
-            Utilisez ensuite "changer Transition" pour ajuster la lettre étiquettant de la transition
+        Pour ajouter une transition cliquer sur le point orange de l'état de départ
+        et tirer votre transition jusqu'à l'état d'arrivée.
+        Pour ajuster la lettre étiquettant de la transition, cliquer sur l'étiquette et choisir "changer transition".
         </li>
     </ul>
 </p>
@@ -159,6 +159,7 @@ else:
         score = 0
         grade=(score, feedback_nomatch)
 ==
+
 
 
 
