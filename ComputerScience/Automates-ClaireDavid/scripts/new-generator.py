@@ -76,7 +76,7 @@ class Generator:
         :return (alphabet: str, prefix: str, automaton: Automaton)
         """
     
-        alphabet = Generator.alphabet(max_symbs)
+        alphabet = Generator.sorted_alphabet(max_symbs)
         n = random.randint(2, length)
         prefix =  "".join(
             random.choice(alphabet)
