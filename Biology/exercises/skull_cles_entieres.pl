@@ -16,9 +16,9 @@ order = list(range(6))
 rd.shuffle(order)
 
 for i in range(6):
-    mygroup.add_label({i:labelscontent[i]})
-    mygroup.add_drop({i+1:""}) 
-    mygroup.add_match_by_name(i+1, i) 
+    mygroup.add_label({str(i):labelscontent[i]})
+    mygroup.add_drop({str(i+1):""}) 
+    mygroup.add_match_by_name(str(i+1),str( i)) 
 ==
 
 text ==
@@ -47,6 +47,5 @@ evaluator==#|python|
 from customdragdrop import right_minus_wrong
 
 grade = mygroup.eval(grading_function = right_minus_wrong)
-feedback = str(mygroup._matches)
 ==
 
