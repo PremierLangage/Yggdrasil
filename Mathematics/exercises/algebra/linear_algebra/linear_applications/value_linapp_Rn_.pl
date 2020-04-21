@@ -23,9 +23,9 @@ Calculer $! f{{vec}} !$. Ecrire la réponse sous forme d'un n-uplet (vecteur lig
 ==
 
 evaluator ==
-score, error, feedback = eval_tuple(input.value, sol, checksize=True)
+score, _, feedback = eval_tuple(input.value, sol)
 ==
 
 solution == 
-La solution est $! {{sol_tex}} !$.
+La solution est $! {{sol.latex}} !$.
 ==
