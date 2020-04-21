@@ -38,7 +38,6 @@ else :
     # Generator.prefix(nb lettres alphabet , longueur maxi du suffixe)
     alphabet, mot, automaton = Generator.suffix(nb_lettres,3)
 
-alphabet = ', '.join(list(alphabet))
 ==
 
 title = Facteur
