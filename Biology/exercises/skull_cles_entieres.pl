@@ -10,7 +10,7 @@ import random as rd
 from customdragdrop import DragDropGroup
 
 mygroup = DragDropGroup()
-labelscontent = {0:"Os frontal", 1:"Os pariétal", 2:"Os sphénoïde", 3:"Os temporal", 4:"Os occipital", 5:"Os ethmoïde"}
+labelscontent = {1:"Os frontal", 2:"Os pariétal", 3:"Os sphénoïde", 4:"Os temporal", 5:"Os occipital", 6:"Os ethmoïde"}
 mygroup.set_label(labelscontent) 
 
 for i in labelscontent:
@@ -27,7 +27,7 @@ form ==
 <div style="max-width: 100%;display: inline-block"> 
 <ul>
 {% for i, drop in mygroup.drops.items() %}
-<li> {{ i+1 }}. {{ drop|component }} </li>
+<li> {{ i }}. {{ drop|component }} </li>
 {% endfor %}
 </ul>
 </div>
