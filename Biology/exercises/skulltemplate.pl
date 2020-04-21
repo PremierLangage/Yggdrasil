@@ -19,8 +19,9 @@ import random as rd
 from customdragdrop import DragDropGroup
 
 mygroup = DragDropGroup(css="myclass")
+labelscontent = ["un", "deux", "trois", "quatre", "cinq", "six"]
 
-# mygroup.set_label(labelscontent) 
+mygroup.set_label(labelscontent) 
 order = list(range(len(labelscontent)))
 rd.shuffle(order)
 
