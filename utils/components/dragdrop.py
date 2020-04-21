@@ -188,13 +188,14 @@ class DragDropGroup():
         # DEBUG feedback += str(self._matches)+'<br>'
         # DEBUG feedback+=str([drop.cid for drop_name, drop in self.drops.items()])+'<br>'
         # DEBUG feedback+= str([drop.cid for drop_name, drop in self.labels.items()])
-        feedback = ''
+        feedback = ''+str(self._matches)
         return (score,feedback)
 
     
         
 
     
+
 
 
 
