@@ -33,7 +33,7 @@ if mode == -1 :
     alphabet, mot, automaton = Generator.prefix(nb_lettres,3)
 elif mode == 0 :
     # Generator.prefix(nb lettres alphabet , longueur maxi du facteur)
-    alphabet, mot, automaton = Generator.facteur(nb_lettres,3)
+    alphabet, mot, automaton = Generator.factor(nb_lettres,3)
 else :
     # Generator.prefix(nb lettres alphabet , longueur maxi du suffixe)
     alphabet, mot, automaton = Generator.suffix(nb_lettres,3)
@@ -50,6 +50,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 {% endif %}
 
 ==
+
 
 
 
