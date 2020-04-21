@@ -143,6 +143,8 @@ viewer = '(a|b|c)*'
 
 
 ## Astuce
-Vous pouvez activer le compilateur de l'éditeur PLaTon en cliquant sur le bouton **settings** dans le panneau latéral gauche et en activant l'option **enable experimental compiler** pour avoir accès à de l’auto-complétion des variables définies par les templates, voire la documentation des variables en passant la souris par-dessus, être averties des erreurs de syntaxe...
+Vous pouvez activer le compilateur de l'éditeur PLaTon en cliquant sur le bouton **settings** dans le panneau latéral gauche et en activant
+l'option **enable experimental compiler** pour avoir accès à de l’auto-complétion des variables définies par les templates,
+voire la documentation des variables en passant la souris par-dessus, être averties des erreurs de syntaxe...
 
 
