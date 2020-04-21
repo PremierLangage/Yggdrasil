@@ -73,6 +73,8 @@ class DragDropGroup():
             self.id = kwargs['id']
         if 'cloneable' in kwargs: # comes first because cloneable is translated in labels and drops
             self.cloneable = kwargs['cloneable']
+        if 'css' in in kwargs:
+            self.css = kwargs['css']
         if 'labels' in kwargs:
             self.set_label(kwargs['labels'])
         if 'drops' in kwargs:
