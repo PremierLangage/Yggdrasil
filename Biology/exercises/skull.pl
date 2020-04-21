@@ -8,11 +8,6 @@ before==#|python|
 import random as rd
 from customdragdrop import DragDropGroup
 
-lt="$%\lt%$" # latex for "less than"
-gt="$%\gt%$" # latex for "greater than"
-
-n = 4
-
 mygroup = DragDropGroup()
 labelscontent = ["Os frontal", "Os pariétal", "Os sphénoïde", "Os temporal", "Os occipital", "Os ethmoïde"]
 mygroup.set_label(labelscontent) 
@@ -48,14 +43,3 @@ from customdragdrop import right_minus_wrong
 
 grade = mygroup.eval(grading_function = right_minus_wrong)
 ==
-
-extracss == #|html| 
-<style>
-    .myclass{
-        #padding: 1em;
-        min-width: 20em;
-        }
-</style>
-==
-
-
