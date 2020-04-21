@@ -1,4 +1,4 @@
-extends = /model/mathmatrix.pl
+extends = matrix_linapp_Rn_.pl
 
-param.sizes % [[3,3]]
+param.sizes % [[3, 3]]
 
