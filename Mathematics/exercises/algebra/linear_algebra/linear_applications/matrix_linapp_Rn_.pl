@@ -1,5 +1,7 @@
 extends = /model/mathmatrix.pl
 
+title = Matrice d'une application linéaire
+
 before ==
 n = 3
 m = 2
