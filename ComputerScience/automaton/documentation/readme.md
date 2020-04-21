@@ -33,7 +33,7 @@ Ce dossier contient des scripts python permettant de manipuler des automates et 
 
 Les scripts **lego.py** et **fsm.py** dont la documentation se trouve [à cette adresse]('https://github.com/qntm/greenery') permettent respectivement de vérifier des propriétés sur les expressions régulières et les automates **déterministes**. Ces 2 scripts permettent aussi de convertir les 2 types entre eux.
 
-Le script **automaton.py** contient  une class **Automaton** qui est un wrapper autour des 2 librairies spécifiées plus haut. Cette classe ne doit pas être instanciée directement. Pour manipuler des automates et expressions, elle expose principalement que des méthodes statiques toutes documentées et quelques méthodes d'instance. Les méthodes de la classe statiques comme la méthode **parse** qui prend en paramètre un automate accepte les types suivants comme premier argument.
+Le script **automaton.py** contient  une class **Automaton** qui est un wrapper autour des 2 librairies spécifiées plus haut. Cette classe ne doit pas être instanciée directement. Pour manipuler des automates et expressions, elle expose principalement que des méthodes statiques toutes documentées et quelques méthodes d'instance. Les méthodes statiques de la classe comme la méthode **parse** qui prend en paramètre un automate accepte les types suivants comme premier argument.
 
 - Un automate avec la notation string (voire plus bas)
 - Un automate avec la notation objet (JSON) (voire plus bas)
