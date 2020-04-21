@@ -3,7 +3,7 @@ from random import shuffle
 from uuid import uuid4
 
 def all_or_nothing(num_right=0, num_wrong = 0, total = 1):
-    if num_wrong == total:
+    if num_right == total:
         return 100
     else:
         return 0
@@ -198,6 +198,7 @@ class DragDropGroup():
         
 
     
+
 
 
 
