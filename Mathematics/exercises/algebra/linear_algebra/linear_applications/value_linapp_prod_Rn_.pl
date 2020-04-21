@@ -8,8 +8,8 @@ n = 3
 lstvar = ",".join(["x","y","z","t","u","v"][:n])
 
 
-A = rand_int_matrix(n, n, coeffbound)
-B = rand_int_matrix(n, n, coeffbound)
+A = rand_int_matrix(n, n, 3)
+B = rand_int_matrix(n, n, 3)
 X = rand_int_matrix(n, 1, 3)
 sol = (A * B * X).transpose()
 strsol = str(tuple(sol))
