@@ -6,13 +6,11 @@ nbwrong : mauvaises réponses cochées
 nbsol : nombre de bonnes réponses (à cocher) dans l'exercice
 nbitems : nombre d'items potentiellement cochables dans l'exercice
 
-
-
 """
 
 
 def all_or_nothing(nbright=0, nbwrong=0, nbsol=1, nbitems=1):
-    return 100 if nbwrong == 0 else 0
+    return 100 if nbright== nbsol else 0
 
 def right_minus_wrong(nbright=0, nbwrong=0, nbsol=1, nbitems=1):
     return int(round(max([(nbright - nbwrong)/nbsol*100,0])))
