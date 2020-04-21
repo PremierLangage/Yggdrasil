@@ -3,7 +3,7 @@ extends = /model/mathinput.pl
 title = Valeur d'une application linéaire
 
 before ==
-n = 3
+n = 2
 
 lstvar = ",".join(["x","y","z","t","u","v"][:n])
 
