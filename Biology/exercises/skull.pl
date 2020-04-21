@@ -8,7 +8,7 @@ before==#|python|
 import random as rd
 from customdragdrop import DragDropGroup
 
-mygroup = DragDropGroup()
+mygroup = DragDropGroup(css="myclass")
 labelscontent = ["Os frontal", "Os pariétal", "Os sphénoïde", "Os temporal", "Os occipital", "Os ethmoïde"]
 mygroup.set_label(labelscontent) 
 order = []
