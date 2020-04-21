@@ -21,13 +21,7 @@ Calculer $! f{{vec.latex}} !$. Ecrire la réponse sous forme d'un n-uplet (vecte
 ==
 
 evaluator ==
-score, _, feedback = eval_matrix(mat.getmatrix(), A)
-==
-
-evaluator ==
 score, error, feedback = eval_tuple(input.value, sol, checksize=True)
-if error == "NotTuple" or error == "WrongSize":
-    feedback = f"Votre réponse n'est pas un {tuple_name} de nombres."
 ==
 
 solution == 
