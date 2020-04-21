@@ -1,6 +1,6 @@
 extends = /model/mathinput.pl
 
-title = Valeur d'une application linéaire
+title = Valeur d'une composition d'application linéaire
 
 before ==
 n = 2
@@ -17,7 +17,7 @@ if randint(1,2) == 1:
 else:
     sol = (B * A * X).transpose()
     expr = r"g \circ f"
-    
+
 strsol = str(tuple(sol))
 vec = str(tuple(X.transpose()))
 ==
