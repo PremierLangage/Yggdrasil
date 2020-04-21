@@ -1,7 +1,12 @@
 
 extends = /model/basic.pl
 
-scheme =$ /Biology/media/550px-Cranial_bones_numbers.svg.png
+
+
+#! linter:required:labelscontent
+#! linter:required:title
+#! linter:barem:
+#! linter:scheme:
 
 before==#|python|
 import random as rd
