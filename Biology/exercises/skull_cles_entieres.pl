@@ -29,14 +29,14 @@ form ==
 <img src="{{scheme}}" style="max-width: 300px; vertical-align:top; display: inline-block"> 
 <div style="max-width: 100%;display: inline-block"> 
 <ul>
-{% for i in order %}
-<li> {{ i }}. {{ mygroup.drops[i|int]|component }} </li>
+{% for i, drop in ordermygroup.drops %}
+<li> {{ i }}. {{ drop|component }} </li>
 {% endfor %}
 </ul>
 </div>
 <div style="display: block"> 
-{% for i, label in mygroup.labels.items() %}
-    {{ label|component }} 
+{% for i in order %}
+    {{ label[i]|component }} 
 {% endfor %}
 </div>
 ==
