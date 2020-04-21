@@ -13,7 +13,7 @@ sys_tex = latexsys(A, B)
 
 text ==
 On considère l'application linéaire $! f : \mathbb{R}^{{n}} \rightarrow \mathbb{R}^{{n}} !$ telle que
-$$ f({{lstvar}} = ( {{sys_tex}} .$$
+$$ f({{lstvar}} = ( {{sys_tex}} ) .$$
 Déterminer une base de ce sous-espace (écrire cette base comme un ensemble, entre accolades).
 ==
 
@@ -36,5 +36,6 @@ def evalans(strans):
 
 score, feedback = evalans(input.value)
 ==
+
 
 
