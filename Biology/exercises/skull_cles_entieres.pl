@@ -12,13 +12,13 @@ from customdragdrop import DragDropGroup
 mygroup = DragDropGroup()
 labelscontent = ["Os frontal", "Os pariétal", "Os sphénoïde", "Os temporal", "Os occipital", "Os ethmoïde"]
 
-order = [i for i in range(6)]
+order = list(range(6))
 rd.shuffle(order)
 
 for i in range(6):
-    mygroup.add_label({i+1:labelscontent[order[i]]})
+    mygroup.add_label({i:labelscontent[order[i]]})
     mygroup.add_drop({i+1:""}) 
-    mygroup.add_match_by_name(order[i]+1,i+1) 
+    mygroup.add_match_by_name(order[i]+1, i) 
 
 ==
 
