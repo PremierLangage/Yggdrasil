@@ -154,7 +154,7 @@ class Generator:
         the value of mode (-1, 0, 1)
         """
 
-        alphabet = Generator.alphabet(max_symbs)
+        alphabet = Generator.sorted_alphabet(max_symbs)
         n = random.randint(2, length)
         letter = random.choice(alphabet)
 
