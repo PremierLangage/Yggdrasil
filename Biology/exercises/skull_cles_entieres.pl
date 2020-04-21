@@ -10,15 +10,16 @@ import random as rd
 from customdragdrop import DragDropGroup
 
 mygroup = DragDropGroup()
-labelscontent = {1:"Os frontal", 2:"Os pariétal", 3:"Os sphénoïde", 4:"Os temporal", 5:"Os occipital", 6:"Os ethmoïde"}
-mygroup.set_label(labelscontent) 
+labelscontent = ["Os frontal", "Os pariétal", "Os sphénoïde", "Os temporal", "Os occipital", "Os ethmoïde"]
 
-for i in labelscontent:
-    mygroup.add_drop({i:""}) 
-    mygroup.add_match_by_name(i,i) 
-
-order = [i for i in range(1,6)]
+order = [i for i in range(6)]
 rd.shuffle(order)
+
+for i in range(6):
+    mygroup.add_label({i+1:labelscontent[order[i]])
+    mygroup.add_drop({i+1:""}) 
+    mygroup.add_match_by_name(order[i]+1,i+1) 
+
 ==
 
 text ==
@@ -29,14 +30,14 @@ form ==
 <img src="{{scheme}}" style="max-width: 300px; vertical-align:top; display: inline-block"> 
 <div style="max-width: 100%;display: inline-block"> 
 <ul>
-{% for i, drop in ordermygroup.drops %}
+{% for i, drop in mygroup.drops.items() %}
 <li> {{ i }}. {{ drop|component }} </li>
 {% endfor %}
 </ul>
 </div>
 <div style="display: block"> 
-{% for i in order %}
-    {{ mygroup.labels[i|int]|component }} 
+{% for i, label in mygroup.labels.items() %}
+    {{ label|component }} 
 {% endfor %}
 </div>
 ==
