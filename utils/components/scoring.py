@@ -1,5 +1,16 @@
 from scipy.stats import kendalltau
 
+_doc_="""
+nbright : bonnes réponses cochées
+nbwrong : mauvaises réponses cochées
+nbsol : nombre de bonnes réponses (à cocher) dans l'exercice
+nbitems : nombre d'items potentiellement cochables dans l'exercice
+
+
+
+"""
+
+
 def all_or_nothing(nbright=0, nbwrong=0, nbsol=1, nbitems=1):
     return 100 if nbwrong == 0 else 0
 
