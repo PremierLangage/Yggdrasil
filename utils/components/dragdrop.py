@@ -124,10 +124,10 @@ class DragDropGroup():
         self.add_match_by_name(drop, matches)
 
     def add_match_by_name(self, drop, matches): # adds one or multiple matches to self._matches, the drop and label(s) are specified by their name.
-       if isinstance(matches, str):
-            self._matches.append((self.labels[matches].cid,self.drops[drop].cid))
        if isinstance(matches, list):
             self._matches += [(self.labels[label_name].cid, self.drops[drop].cid) for label_name in matches]
+       else: #matches is not a list. it must be a key to the dict self.labels
+            self._matches.append((self.labels[matches].cid,self.drops[drop].cid))
 
     def set_match_by_content(self, matches):
         self._matches = []
@@ -192,6 +192,7 @@ class DragDropGroup():
         
 
     
+
 
 
 
