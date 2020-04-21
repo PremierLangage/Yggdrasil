@@ -16,6 +16,8 @@ mygroup.set_label(labelscontent)
 for i in labelscontent:
     mygroup.add_drop({i:""}) 
     mygroup.add_match_by_name(i,i) 
+
+order = random.shuffle(range(1,6).tolist())
 ==
 
 text ==
@@ -26,8 +28,8 @@ form ==
 <img src="{{scheme}}" style="max-width: 300px; vertical-align:top; display: inline-block"> 
 <div style="max-width: 100%;display: inline-block"> 
 <ul>
-{% for i, drop in mygroup.drops.items() %}
-<li> {{ i }}. {{ drop|component }} </li>
+{% for i in order %}
+<li> {{ i }}. {{ mygroup.drops[i|int]|component }} </li>
 {% endfor %}
 </ul>
 </div>
