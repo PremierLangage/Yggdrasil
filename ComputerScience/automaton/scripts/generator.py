@@ -39,6 +39,10 @@ class Generator:
             )))
         return alphabet
 
+    # DEPRECATED this method will be removed soon.
+    # You should use the method "alphabet" by setting the argument sort to True to get the
+    # same behavior.
+
     @staticmethod
     def sorted_alphabet(length: int):
         """
