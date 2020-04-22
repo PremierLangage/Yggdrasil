@@ -78,57 +78,55 @@ editors.forEach((editor) => {
                     setTimeout(() => {
                         console.log('...',document.querySelector('app-prompt input'))
                     }, 1000);
-                    this.prompt(title, hint, this.node.id).then((newState) => {
+                    let newState = this.prompt(title, hint, this.node.id);
 
-                        if (newState !== false) {
-                            newState = newState.trim();
-                            if (this.automaton.states.includes(newState)) {
-                                alert('État déjà présent');
-                            } else {
+                    if (newState !== false) {
+                        newState = newState.trim();
+                        if (this.automaton.states.includes(newState)) {
+                            alert('État déjà présent');
+                        } else {
 
-                                this.automaton.states = [
-                                    newState,
-                                    ...this.automaton.states.filter(state => {
-                                        return state !== this.node.id;
-                                    })
-                                ];
+                            this.automaton.states = [
+                                newState,
+                                ...this.automaton.states.filter(state => {
+                                    return state !== this.node.id;
+                                })
+                            ];
 
-                                this.automaton.acceptingStates = this.automaton.acceptingStates.map(
-                                    state => {
-                                        if (state === this.node.id) {
-                                            return newState;
-                                        }
-                                        return state;
+                            this.automaton.acceptingStates = this.automaton.acceptingStates.map(
+                                state => {
+                                    if (state === this.node.id) {
+                                        return newState;
                                     }
-                                );
-                                
-                                this.automaton.initialStates = this.automaton.initialStates.map(
-                                    state => {
-                                        if (state === this.node.id) {
-                                            return newState;
-                                        }
-                                        return state;
+                                    return state;
+                                }
+                            );
+                            
+                            this.automaton.initialStates = this.automaton.initialStates.map(
+                                state => {
+                                    if (state === this.node.id) {
+                                        return newState;
                                     }
-                                );
+                                    return state;
+                                }
+                            );
 
-                                this.automaton.transitions.forEach(transition => {
-                                    if (transition.fromState === this.node.id) {
-                                        transition.fromState = newState;
-                                    }
-                                    if (transition.toState === this.node.id) {
-                                        transition.toState = newState;
-                                    }
-                                });
-                                
-                                this.node.innerHTML = this.node.id = newState;
-                                this.node.innerHTML += '<div class="endpoint"></div>'
-                            }
+                            this.automaton.transitions.forEach(transition => {
+                                if (transition.fromState === this.node.id) {
+                                    transition.fromState = newState;
+                                }
+                                if (transition.toState === this.node.id) {
+                                    transition.toState = newState;
+                                }
+                            });
+                            
+                            this.node.innerHTML = this.node.id = newState;
+                            this.node.innerHTML += '<div class="endpoint"></div>'
                         }
+                    }
 
-                        this.updateAlphabet();
-                        this.detectChanges();
-
-                    });
+                    this.updateAlphabet();
+                    this.detectChanges();
                 }
             });
 
