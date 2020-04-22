@@ -43,7 +43,7 @@ feedback_match =
 #* feedback shown after a bad answer.
 feedback_nomatch = <p class="error-state">L'automate que vous avez construit ne correspond pas à une réponse attendue.</p>
 #* feedback shown after a timeout.
-feedback_timeout = <p class="warning-state">L'automate déterministe suivant était une réponse possible à cette question.</p>
+feedback_timeout = <p class="warning-state">L'automate suivant était une réponse possible à cette question.</p>
 #* feedback shown for a syntax error. {0} is replaced by the occured error
 feedback_syntax_error = <p class="warning-state">{0}</p>
 
@@ -51,10 +51,6 @@ feedback_syntax_error = <p class="warning-state">{0}</p>
 #* override this key to change the text shown after a good answer.
 form_success== #|html|
 <p class="success-state">Bravo l'automate que vous avez construit est une bonne réponse.</p>
-{% if not deterministic %}
-    <p class="success-state">L'automate déterministe suivant était aussi une bonne réponse :</p>
-    {{ viewer|component }}
-{% endif %}
 == 
 
 #* override this key to change the instructions at the bottom of the editor.
@@ -120,6 +116,10 @@ import random
 from automaton import Automaton
 from generator import Generator
 
+score = -1
+attempt = 0
+maxattempt = int(maxattempt)
+
 editor = Automaton.editor()
 editor.debug = False
 editor.editorHeight = "500px"
@@ -132,10 +132,6 @@ exec(generate)
 if 'viewer' not in globals():
     raise Exception('The script "generate" must define a variable "viewer" which is an automaton')
 
-score = -1
-attempt = 0
-maxattempt = int(maxattempt)
-deterministic = True
 viewer = Automaton.viewer(viewer)
 ==
 
@@ -153,8 +149,6 @@ else:
         grade = (-1, feedback_syntax_error.format(error))
     elif match is True:
         score = 100
-        infos, _ = Automaton.editor_properties(editor)
-        deterministic = infos['deterministic']
         grade = (score, feedback_match)
     else:
         score = 0
