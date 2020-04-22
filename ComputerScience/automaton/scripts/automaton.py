@@ -454,7 +454,7 @@ class Automaton:
         initials = copy.deepcopy(objectNotation['initialStates'])
         alphabet = copy.deepcopy(objectNotation['alphabet'])
         transitions = copy.deepcopy(objectNotation['transitions'])
-        """
+        
         # create a standard automaton
         if len (initials) > 1:
             # create new initial state not in the existing states
@@ -486,7 +486,8 @@ class Automaton:
             initials = [new_initial]
     
         # transform objectNotation to fsm notation
-        
+
+        """
         fsm_transitions = {}
         for transition in transitions:
             toState = transition['toState']
