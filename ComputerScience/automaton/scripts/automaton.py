@@ -475,6 +475,7 @@ class Automaton:
             initials = [new_initial]
             objectNotation['transitions'] = transitions
     
+        raise Exception(states)
         # transform objectNotation transitions to automaton-lib transitions 
         transitions = {}
         for state in states:
