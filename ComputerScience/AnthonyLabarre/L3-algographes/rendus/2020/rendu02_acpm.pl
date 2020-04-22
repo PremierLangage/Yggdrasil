@@ -1,7 +1,7 @@
 # Test d'une classe Graphe implémentant un graphe pondéré non orienté.
 @ /utils/sandboxio.py
 @ unionfind.py
-@ corrlib_graphes.py # TODO: networkx pas installé sur la plateforme
+@ corrlib_graphes.py
 extends= /ComputerScience/python/template/pltestblonde.pl
 builder= /builder/before.py
 
