@@ -18,7 +18,7 @@ show_soluce = 'True'
 
 form== #|html|
 <!-- TIMEOUT VIEW -->
-{% if attempt >= maxattempt and show_soluce = 'True'%}
+{% if attempt >= maxattempt and show_soluce == 'True'%}
 {{ viewer|component }}
 {% endif %}
 
