@@ -496,6 +496,7 @@ class Automaton:
             initials = [new_initial]
             objectNotation['transitions'] = transitions
     
+        """
         transitions = {}
         for transition in objectNotation['transitions']:
             toState = transition['toState']
@@ -517,7 +518,7 @@ class Automaton:
                 map=transitions
             )
         )
-
+        """
       
         # transform objectNotation transitions to automaton-lib transitions 
         transitions = {}
@@ -552,7 +553,7 @@ class Automaton:
         )
     
         # minimize the fsm
-        minimal = state_machine.reduce()
+        #minimal = state_machine.reduce()
 
         return Automaton(minimal)
     
