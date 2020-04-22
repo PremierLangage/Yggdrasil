@@ -52,8 +52,24 @@ editors.forEach((editor) => {
     createGetterSetter(component, 'acceptingStates');
     createGetterSetter(component, 'states');
 
-    component.removeState = (states, state) => {
-         return states.filter(
+    component.removeState =  (state) => {
+         this.states =  this.states.filter(
+            e => {
+                return e !== state;
+            }
+        );
+    };
+
+    component.removeFinal = (state) => {
+         this.acceptingStates =  this.acceptingStates.filter(
+            e => {
+                return e !== state;
+            }
+        );
+    };
+ 
+    component.removeInitial = (state) => {
+         this.initialStates =  this.initialStates.filter(
             e => {
                 return e !== state;
             }
@@ -82,7 +98,7 @@ editors.forEach((editor) => {
                     name: this.textSetNonInitial,
                     action: () => {
                         this.node.classList.remove(INITIAL_STATE);
-                        this.initialStates = this.removeState(this.initialStates, stateName);
+                        this.removeInitial(stateName);
                         this.focus(this.node);
                     }
                 });
@@ -102,7 +118,7 @@ editors.forEach((editor) => {
                     name: this.textSetNonFinal,
                     action: () => {
                         this.node.classList.remove(FINAL_STATE);
-                        this.acceptingStates =  this.removeState(this.acceptingStates, stateName);
+                        this.removeFinal(stateName);
                         this.focus(this.node);
                     }
                 });
@@ -131,14 +147,26 @@ editors.forEach((editor) => {
                             alert('Il existe déjà un état avec ce nom !');
                         } else {
 
-                            this.automaton.states = [
+                            // replace in states
+                            this.states = [
                                 newState,
-                                ...this.automaton.states.filter(state => {
+                                ...this.states.filter(state => {
                                     return state !== this.node.id;
                                 })
                             ];
 
-                            this.automaton.acceptingStates = this.automaton.acceptingStates.map(
+                            // replace in initials
+                            this.initialStates = this.initialStates.map(
+                                state => {
+                                    if (state === this.node.id) {
+                                        return newState;
+                                    }
+                                    return state;
+                                }
+                            );
+
+                            // replace in finals
+                            this.acceptingStates = this.acceptingStates.map(
                                 state => {
                                     if (state === this.node.id) {
                                         return newState;
@@ -147,14 +175,6 @@ editors.forEach((editor) => {
                                 }
                             );
                             
-                            this.automaton.initialStates = this.automaton.initialStates.map(
-                                state => {
-                                    if (state === this.node.id) {
-                                        return newState;
-                                    }
-                                    return state;
-                                }
-                            );
 
                             this.automaton.transitions.forEach(transition => {
                                 if (transition.fromState === this.node.id) {
@@ -178,12 +198,9 @@ editors.forEach((editor) => {
             actions.push({
                 name: this.textDelete,
                 action: () => {
-                    // remove initial state
-                    this.initialStates = this.removeState(this.initialStates, stateName);
-                    // remove acceptingStates
-                    this.acceptingStates = this.removeState(this.acceptingStates, stateName);
-                    // remove state
-                    this.states = this.removeState(this.states, stateName);
+                    this.removeState(stateName);
+                    this.removeFinal(stateName);
+                    this.removeInitial(stateName);
 
                     // remove transition
                     this.automaton.transitions = this.automaton.transitions.filter(
@@ -195,11 +212,13 @@ editors.forEach((editor) => {
                         }
                     );
                 
-                    delete this.automaton.position[node.id];
+                    delete this.automaton.position[stateName];
                 
                     // remove node from the dom
                     this.instance.remove(this.node);
+
                     this.focus();
+
                     this.updateAlphabet();
                 }
             });
