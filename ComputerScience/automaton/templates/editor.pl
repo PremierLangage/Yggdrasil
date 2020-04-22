@@ -70,7 +70,9 @@ form_instructions== #|html|
 # HTML FORM
 
 title= PLEASE OVERRIDE THE KEY **title=** TO CHANGE THIS TEXT
+
 text= PLEASE OVERRIDE THE KEY **text=** TO CHANGE THIS TEXT
+
 form== #|html|
 <!-- TIMEOUT VIEW -->
 {% if attempt >= maxattempt %}
