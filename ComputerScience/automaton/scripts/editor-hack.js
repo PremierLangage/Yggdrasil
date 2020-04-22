@@ -45,7 +45,8 @@ editors.forEach((editor) => {
     addProperty(component, { name: 'textSetNonInitial', default: 'Non initiale' });
     addProperty(component, { name: 'textSetFinal', default: 'Finale' });
     addProperty(component, { name: 'textSetNonFinal', default: 'Non finale' });
-    addProperty(component, { name: 'textRenameState', default: 'Renommer' });
+    addProperty(component, { name: 'textRename', default: 'Renommer' });
+    addProperty(component, { name: 'textDelete', default: 'Supprimer' });
 
     createGetterSetter(component, 'initialStates');
     createGetterSetter(component, 'acceptingStates');
