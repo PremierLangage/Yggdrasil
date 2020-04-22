@@ -42,7 +42,7 @@ generate== #|py|
 #viewer = Automaton.rand(4, 3, 3)
 
 # REGEX NOTATION
-viewer = '(a|b|c)*'
+viewer = Generator.regex('(a+b+c)*', True)
 
 ==
 
@@ -56,6 +56,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 </p>
 {% endif %}
 ==
+
 
 
 
