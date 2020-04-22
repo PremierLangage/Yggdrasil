@@ -74,6 +74,9 @@ title= PLEASE OVERRIDE THE KEY **title=** TO CHANGE THIS TEXT
 text= PLEASE OVERRIDE THE KEY **text=** TO CHANGE THIS TEXT
 
 form== #|html|
+{% if V %}
+ {% V | component %}
+{% endif %}
 <!-- TIMEOUT VIEW -->
 {% if attempt >= maxattempt %}
 {{ viewer|component }}
