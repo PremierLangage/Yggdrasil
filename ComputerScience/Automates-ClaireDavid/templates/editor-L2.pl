@@ -14,11 +14,12 @@ form_success== #|html|
 <p class="success-state">Bravo c'est une bonne réponse.</p>
 ==
 
+show_soluce = True
 
 form== #|html|
 <!-- TIMEOUT VIEW -->
-{% if attempt >= maxattempt %}
-<!--{{ viewer|component }}-->
+{% if attempt >= maxattempt and show_soluce == True %}
+{{ viewer|component }}
 {% endif %}
 
 <!-- SUCCESS VIEW -->
