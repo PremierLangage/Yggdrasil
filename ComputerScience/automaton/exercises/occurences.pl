@@ -13,7 +13,8 @@ message = {
 
 max_symbs = 3
 max_word_length = 4
-alphabet, letter, occurences, viewer = Generator.counting(max_symbs, max_word_length, mode)
+sorted_alphabet = True
+alphabet, letter, occurences, viewer = Generator.counting(max_symbs, max_word_length, mode, sorted_alphabet)
 alphabet = ', '.join(list(alphabet))
 ==
 
@@ -28,5 +29,6 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 </p>
 {% endif %}
 ==
+
 
 
