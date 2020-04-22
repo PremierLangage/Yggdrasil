@@ -16,11 +16,13 @@ editors.forEach((editor) => {
         const submitOnEnter = () => {
             setTimeout(() => {
                 const input = document.querySelector('app-prompt input');
-                const listener = input.addEventListener('keydown', (e) => {
+                const handler = (e) => {
                     if (e.key === 'Enter') {
                         document.querySelector('app-prompt .mat-button').click();
                     }
-                });
+                    input.removeEventListener('keydown', handler);
+                };
+                const listener = input.addEventListener('keydown', handler);
             }, 1000);
         };
     
