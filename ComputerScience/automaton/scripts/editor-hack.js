@@ -1,6 +1,7 @@
 // TODO HACK TO REMOVE AFTER V1 RELEASE
 
 const editors = document.querySelectorAll('c-automaton-editor');
+
 /**
  * Hack to submit prompt dialog when user press Enter key 
  * and cancel when he press Escape key.
