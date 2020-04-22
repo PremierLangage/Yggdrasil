@@ -131,7 +131,20 @@ form== #|html|
                     const isInitial = this.node.classList.contains(INITIAL_STATE);
                     const isFinal = this.node.classList.contains(FINAL_STATE);
 
-                    if (!isInitial) {
+                    if (isInitial) {
+                        actions.push({
+                            name: 'Non Initial',
+                            action: () => {
+                                this.node.classList.remove(INITIAL_STATE);
+                                this.automaton.initialStates = this.automaton.initialStates.filter(
+                                    state => {
+                                        return state !== this.node.id;
+                                    }
+                                );
+                                this.focus(this.node);
+                            }
+                        });
+                    } else {
                         actions.push({
                             name: 'Initial',
                             action: () => {
@@ -165,21 +178,8 @@ form== #|html|
                             }
                         });
                     }
-                    if (isInitial || isFinal) {
-                        actions.push({
-                            name: 'Normal',
-                            action: () => {
-                                this.node.classList.remove(INITIAL_STATE);
-                                this.node.classList.remove(FINAL_STATE);
-                                this.automaton.acceptingStates = this.automaton.acceptingStates.filter(
-                                    state => {
-                                        return state !== this.node.id;
-                                    }
-                                );
-                                this.focus(this.node);
-                            }
-                        });
-                    }
+
+
 
                     actions.push({
                         name: 'Renommer',
