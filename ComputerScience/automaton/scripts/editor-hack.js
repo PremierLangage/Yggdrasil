@@ -1,35 +1,38 @@
 // TODO HACK TO REMOVE AFTER V1 RELEASE
 
 const editors = document.querySelectorAll('c-automaton-editor');
+/**
+ * Hack to submit prompt dialog when user press Enter key 
+ * and cancel when he press Escape key.
+ */
+const submitOnEnter = () => {
+    setTimeout(() => {
+        const input = document.querySelector('app-prompt input');
+        const buttons = document.querySelectorAll('app-prompt .mat-button')
+        const handler = (e) => {
+            if (e.key === 'Enter') {
+                buttons[0].click(); // confirm
+                input.removeEventListener('keydown', handler);
+            } else if (e.key === 'Escape') {
+                buttons[1].click(); // cancel
+            }
+        };
+        const listener = input.addEventListener('keydown', handler);
+    }, 1000);
+};
+    
 editors.forEach((editor) => {
     const component = editor.ngElementStrategy.componentRef.instance;
     component.focus = function (node, connection) {
-        const INITIAL_STATE = 'automaton-state--initial';
         const FINAL_STATE = 'automaton-state--final';
-        const EPSILON = '$';
-
-        this.unfocus();
-
-        this.node = node;
-        this.connection = connection;
+        const INITIAL_STATE = 'automaton-state--initial';
         const actions = [];
 
-        const submitOnEnter = () => {
-            setTimeout(() => {
-                const input = document.querySelector('app-prompt input');
-                const buttons = document.querySelectorAll('app-prompt .mat-button')
-                const handler = (e) => {
-                    if (e.key === 'Enter') {
-                        buttons[0].click(); // confirm
-                        input.removeEventListener('keydown', handler);
-                    } else if (e.key === 'Escape') {
-                        buttons[1].click(); // cancel
-                    }
-                };
-                const listener = input.addEventListener('keydown', handler);
-            }, 1000);
-        };
-    
+        this.unfocus();
+        this.node = node;
+        this.connection = connection;
+
+
         if (this.node) {
             this.node.classList.remove('focused');
             this.node.classList.add('focused');
@@ -259,5 +262,6 @@ editors.forEach((editor) => {
         this.detectChanges();
     } 
 });
+
 
 
