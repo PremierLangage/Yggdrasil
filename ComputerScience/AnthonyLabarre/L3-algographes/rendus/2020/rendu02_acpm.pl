@@ -35,7 +35,7 @@ import corrlib_graphes
 # Vérifications basiques de la classe Graphe
 #testname0 = Vérifications basiques de la classe Graphe
 pltest0== 
->>> import corrlib_graphes
+>>> import corrlib_graphes  # TODO: comment éviter de faire ça ici et avoir un import dans le before dont les tests tiennent compte?
 >>> len(corrlib_graphes.PAD)
 >>> G = Graphe()# Existance d'une class Graphe
 >>> G.ajouter_aretes([(0, 2, -2), (1, 0, 4), (1, 2, 3), (2, 3, 2), (3, 1, -1)])
