@@ -10,7 +10,7 @@ message = {
     1: 'au plus'
 }[mode]
 
-editor.debug = True
+editor.editorHeight = "400px"
 
 alphabet, letter, occurences, viewer = Generator.counting(
     2, # max_symbs
