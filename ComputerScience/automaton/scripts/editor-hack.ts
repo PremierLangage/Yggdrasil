@@ -20,24 +20,6 @@ editors.forEach((editor) => {
             canvas.classList.add('focused');
             
 
-            actions.push({
-                name: 'Supprimer Transition',
-                action: async () => {
-                    const s = this.connection.endpoints[0];
-                    const t = this.connection.endpoints[1];
-                    this.automaton.transitions = this.automaton.transitions.filter(
-                        e => {
-                            return !(
-                                e.fromState === s.elementId &&
-                                e.toState === t.elementId
-                            );
-                        }
-                    );
-                    this.instance.deleteConnection(this.connection);
-                    this.focus(null, null);
-                }
-            });
-        }
 
         this.actions = actions;
         this.detectChanges();
