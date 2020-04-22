@@ -36,7 +36,7 @@ editors.forEach((editor) => {
     addProperty(component, { name: 'textSetNonFinal', default: 'Non finale' });
     addProperty(component, { name: 'textRenameState', default: 'Renommer' });
 
-    const removeState = (states, state) => {
+    this.removeState = (states, state) => {
          return states.filter(
             e => {
                 return e !== state;
@@ -66,7 +66,7 @@ editors.forEach((editor) => {
                     name: this.textSetNonInitial,
                     action: () => {
                         this.node.classList.remove(INITIAL_STATE);
-                        removeState(this.automaton.initialStates, stateName);
+                        this.removeState(this.automaton.initialStates, stateName);
                         this.focus(this.node);
                     }
                 });
@@ -86,7 +86,7 @@ editors.forEach((editor) => {
                     name: this.textSetNonFinal,
                     action: () => {
                         this.node.classList.remove(FINAL_STATE);
-                        removeState(this.automaton.acceptingStates, stateName);
+                        this.removeState(this.automaton.acceptingStates, stateName);
                         this.focus(this.node);
                     }
                 });
