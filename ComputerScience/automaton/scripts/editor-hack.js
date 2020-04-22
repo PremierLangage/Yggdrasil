@@ -1,3 +1,4 @@
+// TODO HACK TO REMOVE AFTER V1 RELEASE
 
 const editors = document.querySelectorAll('c-automaton-editor');
 editors.forEach((editor) => {
@@ -20,6 +21,8 @@ editors.forEach((editor) => {
                     if (e.key === 'Enter') {
                         document.querySelector('app-prompt .mat-button').click();
                         input.removeEventListener('keydown', handler);
+                    } else {
+                        console.log(e.key);
                     }
                 };
                 const listener = input.addEventListener('keydown', handler);
@@ -255,4 +258,5 @@ editors.forEach((editor) => {
         this.detectChanges();
     } 
 });
+
 
