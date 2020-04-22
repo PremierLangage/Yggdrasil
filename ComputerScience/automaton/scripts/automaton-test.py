@@ -68,43 +68,4 @@
                 map=transitions
             )
         )
-        """
       
-        # transform objectNotation transitions to automaton-lib transitions 
-        transitions = {}
-        for state in states:
-            transitions[state] = {}
-        for transition in objectNotation['transitions']:
-            toState = transition['toState']
-            fromState = transition['fromState']
-            for symb in transition['symbols']:
-                if symb not in transitions[fromState]:
-                    transitions[fromState][symb] = set()
-                transitions[fromState][symb].add(toState)
-    
-        # create a nfa that is equivalent to the given automaton
-        nfa = NFA(
-            states=set(states),
-            input_symbols=set(alphabet),
-            transitions=transitions,
-            initial_state=initials[0],
-            final_states=set(finals)
-        )
-
-        # create a dfa that is equivalent to the nfa
-        dfa = DFA.from_nfa(nfa)
-
-        state_machine = fsm.fsm(
-            states=dfa.states,
-            alphabet=dfa.input_symbols,
-            initial=dfa.initial_state,
-            finals=dfa.final_states,
-            map=dfa.transitions
-        )
-    
-        # minimize the fsm
-        #minimal = state_machine.reduce()
-
-        return Automaton(minimal)
-        """
-
