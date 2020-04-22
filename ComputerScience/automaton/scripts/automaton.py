@@ -452,10 +452,27 @@ class Automaton:
         initials = objectNotation['initialStates']
         alphabet = objectNotation['alphabet']
         finals = objectNotation['acceptingStates']
+    
 
-        transitions = {}
-        for state in states:
-            transitions[state] = {}
+        if len (initials) > 1:
+            raise Exception(objectNotation)
+            new_initial = 'Ø'
+            transitions = objectNotation['transitions']
+            for transition in objectNotation['transitions']:
+                toState = transition['toState']
+                fromState = transition['fromState']
+                symbols = transition['symbols']
+                if fromState in initials:
+                    transitions.append({
+                        "fromState": new_initial,
+                        "toState": toState,
+                        "symbols": symbols
+                    })
+            for state in initials:
+                if state in finals:
+                    finals.append(new_initial)
+                    break
+            initials = [new_initial]
     
         """
         for transition in objectNotation['transitions']:
@@ -480,6 +497,12 @@ class Automaton:
         )
         """
 
+
+
+        # transform objectNotation transitions to automaton-lib transitions 
+        transitions = {}
+        for state in states:
+            transitions[state] = {}
         for transition in objectNotation['transitions']:
             toState = transition['toState']
             fromState = transition['fromState']
@@ -487,13 +510,12 @@ class Automaton:
                 if symb not in transitions[fromState]:
                     transitions[fromState][symb] = set()
                 transitions[fromState][symb].add(toState)
-
+    
         # create a nfa that is equivalent to the given automaton
         nfa = NFA(
             states=set(states),
             input_symbols=set(alphabet),
             transitions=transitions,
-            ## Attention l'état initial n'est pas forcément 0
             initial_state=initials[0],
             final_states=set(finals)
         )
@@ -1019,7 +1041,6 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
-
 
 
 
