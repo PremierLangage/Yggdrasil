@@ -153,6 +153,7 @@ if attempt >= maxattempt: # timeout
 else:
     attempt += 1
     match, error = Automaton.compare(viewer, editor)
+    raise Exception(editor.automaton)
     if  attempt >= maxattempt and (error or not match): # error or no match after timeout
         grade = (score, feedback_timeout)
     elif error:
@@ -166,6 +167,7 @@ else:
         score = 0
         grade=(score, feedback_nomatch)
 ==
+
 
 
 
