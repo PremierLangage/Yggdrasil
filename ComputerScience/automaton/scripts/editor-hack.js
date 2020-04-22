@@ -13,6 +13,17 @@ editors.forEach((editor) => {
         this.connection = connection;
         const actions = [];
 
+        const submitOnEnter = () => {
+            setTimeout(() => {
+                const input = document.querySelector('app-prompt input');
+                const listener = input.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter') {
+                        document.querySelector('app-prompt .mat-button').click();
+                    }
+                });
+            }, 1000);
+        };
+    
         if (this.node) {
             this.node.classList.remove('focused');
             this.node.classList.add('focused');
@@ -74,16 +85,7 @@ editors.forEach((editor) => {
                 action: async () => {
                     const title = 'État';
                     const hint = 'Entrez un nouveau nom';
-                    // mat-input-0
-                    setTimeout(() => {
-                        const input = document.querySelector('app-prompt input');
-                        const listener = input.addEventListener('keydown', (e) => {
-                            if (e.key === 'Enter') {
-                                document.querySelector('app-prompt .mat-button').click();
-                                
-                            }
-                        });
-                    }, 1000);
+                    submitOnEnter();    
                     let newState = await this.prompt(title, hint, this.node.id);
 
                     if (newState !== false) {
@@ -193,6 +195,8 @@ editors.forEach((editor) => {
                         );
                     });
 
+                    submitOnEnter();
+    
                     const title = 'Transition';
                     const hint =
                         'Entrez les symboles en les séparant par une virgule';
