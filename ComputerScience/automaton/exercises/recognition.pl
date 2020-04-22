@@ -42,7 +42,7 @@ generate== #|py|
 #viewer = Automaton.rand(4, 3, 3)
 
 # REGEX NOTATION
-viewer = Generator.regex('a.b(a+b+c)*')
+viewer = Generator.regex('a.b(a+b+c)*', True)
 ==
 
 title= Lecture d'automates
