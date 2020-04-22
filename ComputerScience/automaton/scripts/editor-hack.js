@@ -36,7 +36,7 @@ const createGetterSetter = (component, name) => {
             this.automaton[name] = value;
         }
     });
-}
+};
 
 editors.forEach((editor) => {
     const component = editor.ngElementStrategy.componentRef.instance;
@@ -47,7 +47,8 @@ editors.forEach((editor) => {
     addProperty(component, { name: 'textSetNonFinal', default: 'Non finale' });
     addProperty(component, { name: 'textRenameState', default: 'Renommer' });
 
-    const 
+    createGetterSetter(component, 'initialStates');
+    createGetterSetter(component, 'acceptingStates');
 
     this.removeState = (states, state) => {
          return states.filter(
