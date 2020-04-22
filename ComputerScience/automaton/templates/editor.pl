@@ -141,8 +141,9 @@ if 'viewer' not in globals():
 score = -1
 attempt = 0
 maxattempt = int(maxattempt)
-deterministic = debug
+deterministic = True
 editor = Automaton.editor()
+editor.debug = debug
 viewer = Automaton.viewer(viewer)
 ==
 
