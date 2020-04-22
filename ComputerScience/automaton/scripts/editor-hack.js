@@ -56,7 +56,7 @@ editors.forEach((editor) => {
             // INITIAL
             if (isInitial) {
                 actions.push({
-                    name: 'Non Initial',
+                    name: this.textSetNonInitial,
                     action: () => {
                         this.node.classList.remove(INITIAL_STATE);
                         this.automaton.initialStates = this.automaton.initialStates.filter(
