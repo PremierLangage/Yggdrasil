@@ -35,8 +35,8 @@ editors.forEach((editor) => {
     addProperty(component, { name: 'textSetNonInitial', default: 'Non initiale' });
     addProperty(component, { name: 'textSetFinal', default: 'Finale' });
     addProperty(component, { name: 'textSetNonFinal', default: 'Non finale' });
+    addProperty(component, { name: 'textRenameState', default: 'Renommer' });
 
-    console.log(component.properties);
     component.focus = function (node, connection) {
         const FINAL_STATE = 'automaton-state--final';
         const INITIAL_STATE = 'automaton-state--initial';
@@ -103,7 +103,7 @@ editors.forEach((editor) => {
             }
 
             actions.push({
-                name: 'Renommer',
+                name: this.textRenameState,
                 action: async () => {
                     const title = 'État';
                     const hint = 'Entrez un nouveau nom';
