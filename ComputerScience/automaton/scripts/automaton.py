@@ -462,7 +462,7 @@ class Automaton:
             while new_initial in states:
                 new_initial = new_initial + 'Ø'
 
-            # for each transition (p, a, q) add new transition from new_initial to q if p is a initial state
+            # for each transition (p, a, q) add new transition from Ø to q if p is a initial state
             for transition in transitions:
                 toState = transition['toState']
                 fromState = transition['fromState']
