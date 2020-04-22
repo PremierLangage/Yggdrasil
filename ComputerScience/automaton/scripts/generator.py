@@ -48,16 +48,21 @@ class Generator:
 
 
     @staticmethod
-    def regex(regex):
+    def regex(regex, simple=False):
         """
         Generates an automaton from the given regex.
 
         :param regex a regex where the following metacharacters and formations
             have their usual meanings: ., *, +, ?, {m}, {m,}, {m,n}, (), |, [], 
-
+        :param simple if set to True only the following metacharacters will be supported: 
+            . => concatenation
+            + => union
+            * => 0+ occurences
+            () => capture
         :return An instance of Automaton class.
         """
-    
+        if simple:
+            regex = regex.replace('.', '').replace('+', '|')
         return Automaton.parse(regex)
 
     @staticmethod
