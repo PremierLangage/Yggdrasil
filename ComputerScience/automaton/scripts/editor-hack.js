@@ -50,6 +50,7 @@ editors.forEach((editor) => {
 
     createGetterSetter(component, 'initialStates');
     createGetterSetter(component, 'acceptingStates');
+    createGetterSetter(component, 'states');
 
     component.removeState = (states, state) => {
          return states.filter(
@@ -117,7 +118,7 @@ editors.forEach((editor) => {
             }
 
             actions.push({
-                name: this.textRenameState,
+                name: this.textRename,
                 action: async () => {
                     const title = 'État';
                     const hint = 'Entrez un nouveau nom';
@@ -175,28 +176,14 @@ editors.forEach((editor) => {
             });
 
             actions.push({
-                name: 'Supprimer',
+                name: this.textDelete,
                 action: () => {
                     // remove initial state
-                    this.automaton.initialStates = this.automaton.initialStates.filter(
-                        state => {
-                            return state !== this.node.id;
-                        }
-                    );
-
+                    this.initialStates = this.removeState(this.initialStates, stateName);
                     // remove acceptingStates
-                    this.automaton.acceptingStates = this.automaton.acceptingStates.filter(
-                        state => {
-                            return state !== this.node.id;
-                        }
-                    );
-
+                    this.acceptingStates = this.removeState(this.acceptingStates, stateName);
                     // remove state
-                    this.automaton.states = this.automaton.states.filter(
-                        state => {
-                            return state !== this.node.id;
-                        }
-                    );
+                    this.states = this.removeState(this.states, stateName);
 
                     // remove transition
                     this.automaton.transitions = this.automaton.transitions.filter(
@@ -207,7 +194,9 @@ editors.forEach((editor) => {
                             );
                         }
                     );
+                
                     delete this.automaton.position[node.id];
+                
                     // remove node from the dom
                     this.instance.remove(this.node);
                     this.focus();
