@@ -75,7 +75,7 @@ text= PLEASE OVERRIDE THE KEY **text=** TO CHANGE THIS TEXT
 
 form== #|html|
 {% if V %}
- {% V | component %}
+ {{ V | component }}
 {% endif %}
 <!-- TIMEOUT VIEW -->
 {% if attempt >= maxattempt %}
