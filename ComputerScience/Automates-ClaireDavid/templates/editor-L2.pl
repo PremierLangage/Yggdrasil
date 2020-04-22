@@ -18,7 +18,8 @@ show_soluce = 1
 
 form== #|html|
 <!-- TIMEOUT VIEW -->
-{% if attempt >= maxattempt and show_soluce == 1 %}
+{% if attempt >= maxattempt %}
+(% if {{ show_soluce }}
 {{ viewer|component }}
 {% endif %}
 
