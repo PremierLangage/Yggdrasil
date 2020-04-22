@@ -452,11 +452,22 @@ class Automaton:
         initials = objectNotation['initialStates']
         alphabet = objectNotation['alphabet']
         finals = objectNotation['acceptingStates']
-
-        transitions = {}
-        for state in states:
-            transitions[state] = {}
     
+
+        if len (initials) > 1:
+            copy = set(initials)
+            initials = ['Ø']
+            transitions = objectNotation['transitions']
+            for transition in objectNotation['transitions']:
+                toState = transition['toState']
+                fromState = transition['fromState']
+                symbols = transition['symbols']
+                if fromState in copy:
+                    transitions.append({
+                        "fromState": initials[0],
+                        "toState": toState,
+                        "symbols": symbols
+                    })
         """
         for transition in objectNotation['transitions']:
             toState = transition['toState']
@@ -480,6 +491,12 @@ class Automaton:
         )
         """
 
+
+
+        # transform objectNotation transitions to automaton-lib transitions 
+        transitions = {}
+        for state in states:
+            transitions[state] = {}
         for transition in objectNotation['transitions']:
             toState = transition['toState']
             fromState = transition['fromState']
@@ -487,7 +504,7 @@ class Automaton:
                 if symb not in transitions[fromState]:
                     transitions[fromState][symb] = set()
                 transitions[fromState][symb].add(toState)
-
+    
         # create a nfa that is equivalent to the given automaton
         nfa = NFA(
             states=set(states),
