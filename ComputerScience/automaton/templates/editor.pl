@@ -1,6 +1,5 @@
 # CHANGELOG
 # 22/04
-#   + add editor_hack key which override the behavior of AutomatonEditor component
 #   + move editor creation before the call of generate script to enable editor variable inside of generate script.
 #  
 # CONTRACTS FOR FILES WHICH EXTENDS THIS TEMPLATE
