@@ -117,6 +117,8 @@ form== #|html|
         editors.forEach(editor => {
             const component = editor.ngElementStrategy.componentRef.instance;
             component.focus = function (node, connection) {
+                console.log(this.node);
+
                 this.debug = true;
                 this.unfocus();
 
@@ -132,7 +134,6 @@ form== #|html|
                     const isFinal = this.node.classList.contains(FINAL_STATE);
 
                     // INITIAL
-                    console.log(this.node);
                     if (isInitial) {
                         actions.push({
                             name: 'Non Initial',
