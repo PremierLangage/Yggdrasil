@@ -8,11 +8,23 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+# TODO HACK TO REMOVE AFTER V1 RELEASE
+editor_hack =@ ../scripts/editor-hack.js
+
 styles =@ ../styles/automaton.css
 
 extracss==
 <style> {{ styles }}</style>
 ==
+
+extrajs==
+<script>
+    $(function() {
+        {{ editor_hack|safe }};
+    });
+</script>
+==
+
 
 title = 
 text = 
