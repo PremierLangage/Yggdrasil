@@ -42,7 +42,8 @@ editors.forEach((editor) => {
                 return e !== state;
             }
         );
-    }
+    };
+
     component.focus = function (node, connection) {
         const FINAL_STATE = 'automaton-state--final';
         const INITIAL_STATE = 'automaton-state--initial';
@@ -55,9 +56,9 @@ editors.forEach((editor) => {
         if (this.node) {
             this.node.classList.remove('focused');
             this.node.classList.add('focused');
-
             const isFinal = this.node.classList.contains(FINAL_STATE);
             const isInitial = this.node.classList.contains(INITIAL_STATE);
+            const stateName = this.node.id;
 
             // INITIAL
             if (isInitial) {
@@ -65,11 +66,7 @@ editors.forEach((editor) => {
                     name: this.textSetNonInitial,
                     action: () => {
                         this.node.classList.remove(INITIAL_STATE);
-                        this.automaton.initialStates = this.automaton.initialStates.filter(
-                            state => {
-                                return state !== this.node.id;
-                            }
-                        );
+                        removeState(this.automaton.initialStates, stateName);
                         this.focus(this.node);
                     }
                 });
@@ -78,7 +75,7 @@ editors.forEach((editor) => {
                     name: this.textSetInitial,
                     action: () => {
                         this.node.classList.add(INITIAL_STATE);
-                        this.automaton.initialStates.push(this.node.id);
+                        this.automaton.initialStates.push(stateName);
                         this.focus(this.node);
                     }
                 });
@@ -89,11 +86,7 @@ editors.forEach((editor) => {
                     name: this.textSetNonFinal,
                     action: () => {
                         this.node.classList.remove(FINAL_STATE);
-                        this.automaton.acceptingStates = this.automaton.acceptingStates.filter(
-                            state => {
-                                return state !== this.node.id;
-                            }
-                        );
+                        removeState(this.automaton.acceptingStates, stateName);
                         this.focus(this.node);
                     }
                 });
