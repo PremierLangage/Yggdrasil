@@ -469,9 +469,10 @@ class Automaton:
                     })
             for state in initials:
                 if state in finals:
-                    finals.append(new_initial])
+                    finals.append(new_initial)
                     break
             initials = [new_initial]
+    
         """
         for transition in objectNotation['transitions']:
             toState = transition['toState']
