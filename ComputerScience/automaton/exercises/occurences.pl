@@ -4,6 +4,7 @@ maxattempt = 5
 
 generate== #|py|
 mode = random.choice([-1, 0, 1])
+editor.debug = True
 
 message = {
     -1: 'au moins',
@@ -33,6 +34,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 </p>
 {% endif %}
 ==
+
 
 
 
