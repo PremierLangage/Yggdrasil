@@ -100,10 +100,6 @@ form== #|html|
 {{ form_instructions }}
 
 <script>
-
-    $(function() {
-        
-    });
     /**
     * This function is called by the platform once the exercice is loaded.
     * @param nodes an object containing a reference to the nodes of the page (title, text, form, actions, submit...)
