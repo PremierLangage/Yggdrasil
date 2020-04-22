@@ -142,23 +142,28 @@ form== #|html|
                         });
                     }
 
-                    if (!isFinal) {
+                    if (isFinal) {
                         actions.push({
-                            name: 'Final',
+                            name: 'Non Final',
                             action: () => {
-                                this.node.classList.add(FINAL_STATE);
-                                if (
-                                    !this.automaton.acceptingStates.includes(
-                                        this.node.id
-                                    )
-                                ) {
-                                    this.automaton.acceptingStates.push(this.node.id);
-                                }
+                                this.node.classList.remove(FINAL_STATE);
+                                this.automaton.acceptingStates = this.automaton.acceptingStates.filter(
+                                    state => {
+                                        return state !== this.node.id;
+                                    }
+                                );
                                 this.focus(this.node);
                             }
                         });
                     } else {
-
+                          actions.push({
+                            name: 'Final',
+                            action: () => {
+                                this.node.classList.add(FINAL_STATE);
+                                this.automaton.acceptingStates.push(this.node.id);
+                                this.focus(this.node);
+                            }
+                        });
                     }
                     if (isInitial || isFinal) {
                         actions.push({
