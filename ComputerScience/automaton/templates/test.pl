@@ -22,6 +22,7 @@ viewer = Automaton.viewer('''
     S1
     #accepting
     S2
+    S1
     #alphabet
     a
     b
