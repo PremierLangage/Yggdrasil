@@ -50,7 +50,7 @@ editors.forEach((editor) => {
     createGetterSetter(component, 'initialStates');
     createGetterSetter(component, 'acceptingStates');
 
-    this.removeState = (states, state) => {
+    component.removeState = (states, state) => {
          return states.filter(
             e => {
                 return e !== state;
