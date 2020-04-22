@@ -117,9 +117,10 @@ editors.forEach((editor) => {
                                 }
                             });
                             */
-                            this.node.innerHTML = this.node.id = newState;
+                            //this.node.innerHTML = this.node.id = newState;
                         }
                     }
+
                     this.updateAlphabet();
                     this.detectChanges();
                 }
