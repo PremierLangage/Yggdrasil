@@ -27,6 +27,17 @@ const addProperty = (component, property) => {
     }
 }
 
+const createGetterSetter = (component, name) => {
+    Object.defineProperty(this, name, {
+        get: () => {
+            return this.automaton[name];
+        },
+        set: (value) => {
+            this.automaton[name] = value;
+        }
+    });
+}
+
 editors.forEach((editor) => {
     const component = editor.ngElementStrategy.componentRef.instance;
 
@@ -35,6 +46,8 @@ editors.forEach((editor) => {
     addProperty(component, { name: 'textSetFinal', default: 'Finale' });
     addProperty(component, { name: 'textSetNonFinal', default: 'Non finale' });
     addProperty(component, { name: 'textRenameState', default: 'Renommer' });
+
+    const 
 
     this.removeState = (states, state) => {
          return states.filter(
@@ -66,7 +79,7 @@ editors.forEach((editor) => {
                     name: this.textSetNonInitial,
                     action: () => {
                         this.node.classList.remove(INITIAL_STATE);
-                        this.removeState(this.automaton.initialStates, stateName);
+                        this.automaton.initialStates = this.removeState(this.automaton.initialStates, stateName);
                         this.focus(this.node);
                     }
                 });
