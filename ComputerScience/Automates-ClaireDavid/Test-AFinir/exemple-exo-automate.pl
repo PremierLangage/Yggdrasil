@@ -6,10 +6,8 @@ maxattempt = 2
 ## Ajouter ici la génération de l'automate et autres variables de l'exo
 generate== #|py|
 
-
 #    la construction de l'automate pour tester la réponse
-viewer = AutomatonEditor(
-    automaton= {
+viewer = {
         "alphabet": ["a", "b"],
         "initialStates": ["S1"],
         "acceptingStates": ["S5"],
@@ -26,8 +24,11 @@ viewer = AutomatonEditor(
             { "fromState": "S4", "toState": "S5", "symbols": ["b"] },
         ]
     }
-)
 
+
+
+#    la construction de l'automate pour tester la réponse à partir d'une expression
+viewer = a*bc
 
 #    l'alphabet
 alphabet = "a,b"
@@ -50,6 +51,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
