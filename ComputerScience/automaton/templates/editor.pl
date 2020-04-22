@@ -112,16 +112,12 @@ form== #|html|
         const submit = nodes.submit; // a reference to the submit button
         // hide submit button if needed.
         submit.attr("disabled", ({{ attempt }} >= {{ maxattempt }}) || {{ score }} == 100);
-        const editors = document.querySelectorAll('c-automaton-editor');
-        editors.forEach(editor => {
-            const component = editor.ngElementStrategy.componentRef.instance;
-            console.log(component);    
-        });
+        {{ editor_hack|safe }}
     }
 </script>
 ==
 
-
+editor_hack =@ ../scripts/editor-hack.js
 
 
 before== #|py|
@@ -168,6 +164,7 @@ else:
         score = 0
         grade=(score, feedback_nomatch)
 ==
+
 
 
 
