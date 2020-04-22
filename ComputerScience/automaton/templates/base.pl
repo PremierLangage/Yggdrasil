@@ -1,3 +1,7 @@
+# CHANGELOG
+# 22/04
+#   + add editor_hack key which override the behavior of AutomatonEditor component
+  
 @ /utils/sandboxio.py
 @ ../scripts/fsm.py
 @ ../scripts/lego.py
