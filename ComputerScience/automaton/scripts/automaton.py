@@ -457,10 +457,12 @@ class Automaton:
     
         # create a standard automaton
         if len (initials) > 1:
+            # create new initial state not in the existing states
             new_initial = 'Ø'
             while new_initial in states:
                 new_initial = new_initial + 'Ø'
 
+            # for transition (p, a, q) add new transition from new_initial to q if p is a initial state
             for transition in transitions:
                 toState = transition['toState']
                 fromState = transition['fromState']
