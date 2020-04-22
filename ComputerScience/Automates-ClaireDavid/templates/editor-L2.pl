@@ -6,7 +6,7 @@ extends = editor.pl
 maxattempt = 10
 
 #* feedback shown after a timeout.
-feedback_timeout = <p class="warning-state">Vous n'avez pas réussi l'exercice. Relisez votre cours et retentez l'exercice un peu plus tard.</p>
+feedback_timeout = <p class="warning-state">Vous n'avez pas réussi l'exercice.<br> Relisez votre cours et retentez l'exercice un peu plus tard.</p>
 
 
 #* override this key to change the text shown after a good answer.
