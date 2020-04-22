@@ -452,12 +452,11 @@ class Automaton:
         initials = list(objectNotation['initialStates'])
         alphabet = list(objectNotation['alphabet'])
         finals = list(objectNotation['acceptingStates'])
-
+        transitions = list(objectNotation['transitions'])
         # create a standard automaton
         if len (initials) > 1:
             new_initial = 'Ø'
-            transitions = list(objectNotation['transitions'])
-            for transition in objectNotation['transitions']:
+            for transition in transitions:
                 toState = transition['toState']
                 fromState = transition['fromState']
                 symbols = transition['symbols']
@@ -473,7 +472,6 @@ class Automaton:
                     finals.append(new_initial)
                     break
             initials = [new_initial]
-            objectNotation['transitions'] = transitions
     
         # transform objectNotation transitions to fsm transitions notation
         transitions = {}
