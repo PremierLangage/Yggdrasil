@@ -131,6 +131,8 @@ form== #|html|
                     const isInitial = this.node.classList.contains(INITIAL_STATE);
                     const isFinal = this.node.classList.contains(FINAL_STATE);
 
+                    // INITIAL
+                    console.log(this.node);
                     if (isInitial) {
                         actions.push({
                             name: 'Non Initial',
@@ -178,8 +180,6 @@ form== #|html|
                             }
                         });
                     }
-
-
 
                     actions.push({
                         name: 'Renommer',
