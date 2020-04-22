@@ -36,6 +36,13 @@ editors.forEach((editor) => {
     addProperty(component, { name: 'textSetNonFinal', default: 'Non finale' });
     addProperty(component, { name: 'textRenameState', default: 'Renommer' });
 
+    const removeState = (states, state) => {
+         return states.filter(
+            e => {
+                return e !== state;
+            }
+        );
+    }
     component.focus = function (node, connection) {
         const FINAL_STATE = 'automaton-state--final';
         const INITIAL_STATE = 'automaton-state--initial';
