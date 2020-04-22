@@ -114,7 +114,7 @@ form== #|html|
 </script>
 ==
 
-editor_hack =@ ../scripts/editor-hack.ts 
+editor_hack =@ ../scripts/editor-hack.js
 
 
 
