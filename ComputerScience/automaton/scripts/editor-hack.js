@@ -30,6 +30,7 @@ const addProperty = (component, property) => {
 
 editors.forEach((editor) => {
     const component = editor.ngElementStrategy.componentRef.instance;
+
     addProperty(component, { name: 'textSetInitial', default: '' });
     addProperty(component, { name: 'textSetNonInitial', default: '' });
     addProperty(component, { name: 'textSetFinal', default: '' });
