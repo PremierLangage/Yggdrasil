@@ -27,6 +27,7 @@ class Graphe:
 
 # Mon code
 before==
+import corrlib_graphes
 ==
 
 # Les tests:
