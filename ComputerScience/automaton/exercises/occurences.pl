@@ -17,7 +17,7 @@ max_word_length = 2
 alphabet, letter, occurences, viewer = Generator.counting(
     max_symbs,
     max_word_length,
-    mode,
+    1,
     sorted_alphabet=True
 )
 alphabet = ', '.join(list(alphabet))
@@ -34,6 +34,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 </p>
 {% endif %}
 ==
+
 
 
 
