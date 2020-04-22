@@ -448,7 +448,6 @@ class Automaton:
         if 'transitions' not in objectNotation or not len(objectNotation['transitions']):
             raise SyntaxError("L'automate que vous avez saisi ne contient aucune transition!")
 
-        # check the transitions of the editor
         states = objectNotation['states']
         initials = objectNotation['initialStates']
         alphabet = objectNotation['alphabet']
@@ -1019,5 +1018,6 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
