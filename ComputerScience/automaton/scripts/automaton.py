@@ -453,6 +453,7 @@ class Automaton:
         alphabet = objectNotation['alphabet']
         finals = objectNotation['acceptingStates']
 
+        # create a standard automaton
         if len (initials) > 1:
             new_initial = 'Ø'
             transitions = objectNotation['transitions']
