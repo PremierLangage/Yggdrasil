@@ -140,6 +140,7 @@ viewer = Automaton.viewer(viewer)
 evaluator== #|py|
 from automaton import Automaton
 grade = (0, "")
+raise Exception(editor.automaton)
 """
 if attempt >= maxattempt: # timeout
     grade = (score, feedback_timeout)
