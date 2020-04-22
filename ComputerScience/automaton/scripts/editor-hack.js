@@ -33,7 +33,6 @@ editors.forEach((editor) => {
         this.node = node;
         this.connection = connection;
 
-
         if (this.node) {
             this.node.classList.remove('focused');
             this.node.classList.add('focused');
