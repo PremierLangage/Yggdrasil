@@ -1,5 +1,5 @@
 
-extends = ../templates/editor.pl
+extends = ../templates/editor-L2.pl
 
 
 maxattempt = 1
