@@ -48,7 +48,7 @@ editors.forEach((editor) => {
         const FINAL_STATE = 'automaton-state--final';
         const INITIAL_STATE = 'automaton-state--initial';
         const actions = [];
-
+        this.debug = true;
         this.unfocus();
         this.node = node;
         this.connection = connection;
