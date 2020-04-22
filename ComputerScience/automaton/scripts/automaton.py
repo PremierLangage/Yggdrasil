@@ -452,29 +452,7 @@ class Automaton:
         initials = objectNotation['initialStates']
         alphabet = objectNotation['alphabet']
         finals = objectNotation['acceptingStates']
-    
-        """
-        for transition in objectNotation['transitions']:
-            toState = transition['toState']
-            fromState = transition['fromState']
-            if fromState not in transitions:
-                transitions[fromState] = {}
-            for symbol in transition['symbols']:
-                transitions[fromState][symbol] = toState
 
-        if len(initials) > 1: # TODO remove once multiple initial states is supported
-            raise SyntaxError('Mutiple initial states is not currently supported !')
-
-        return Automaton(
-            fsm.fsm(
-                states=set(states),
-                alphabet=set(alphabet),
-                initial=initials[0],
-                finals=set(finals),
-                map=transitions
-            )
-        )
-        """
         if len (initials) > 1:
             new_initial = 'Ø'
             transitions = objectNotation['transitions']
