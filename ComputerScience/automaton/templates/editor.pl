@@ -136,7 +136,7 @@ maxattempt = int(maxattempt)
 deterministic = True
 editor = Automaton.editor()
 editor.debug = debug
-editor.editorHeight = "500px"
+editor.editorHeight = "600px"
 viewer = Automaton.viewer(viewer)
 ==
 
