@@ -12,8 +12,8 @@ message = {
     1: 'au plus'
 }[mode]
 
-max_symbs = 2
-max_word_length = 2
+max_symbs = 3
+max_word_length = 4
 alphabet, letter, occurences, viewer = Generator.counting(
     max_symbs,
     max_word_length,
