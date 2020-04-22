@@ -17,7 +17,6 @@ editors.forEach((editor) => {
             setTimeout(() => {
                 const input = document.querySelector('app-prompt input');
                 const handler = (e) => {
-                        console.log('E')
                     if (e.key === 'Enter') {
                         document.querySelector('app-prompt .mat-button').click();
                         input.removeEventListener('keydown', handler);
