@@ -112,7 +112,7 @@ form== #|html|
         const submit = nodes.submit; // a reference to the submit button
         // hide submit button if needed.
         submit.attr("disabled", ({{ attempt }} >= {{ maxattempt }}) || {{ score }} == 100);
-        const editors = document.querySelectoAll('c-automaton-editor');
+        const editors = document.querySelectorAll('c-automaton-editor');
         editors.forEach(editor => {
             console.log(editor);    
         });
