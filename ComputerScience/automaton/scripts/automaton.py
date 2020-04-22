@@ -504,6 +504,7 @@ class Automaton:
                 map=fsm_transitions
             )
         )
+
         """
       
         # transform objectNotation transitions to automaton-lib transitions 
