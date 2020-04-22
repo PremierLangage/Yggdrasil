@@ -33,7 +33,7 @@ import corrlib_graphes
 # Les tests:
 
 # Vérifications basiques de la classe Graphe
-testname0 = Tests classe Graphe
+testname0 = Test de la classe Graphe
 pltest0== 
 >>> len(corrlib_graphes.PAD)
 >>> G = Graphe()# Existance d'une class Graphe
@@ -47,7 +47,7 @@ pltest0==
 ==
 
 # Vérification de la classe Tas sur des entiers
-testname1 = Vérification de la classe Tas sur des entiers
+testname1 = Test de la classe Tas sur des entiers
 pltest1== 
 >>> # création d'un tas d'entiers aléatoires
 >>> from random import randint; donnees = [randint(-100, 100) for _ in range(10)]; T = Tas()
