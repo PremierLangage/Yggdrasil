@@ -13,8 +13,12 @@ message = {
 
 max_symbs = 3
 max_word_length = 4
-sorted_alphabet = True
-alphabet, letter, occurences, viewer = Generator.counting(max_symbs, max_word_length, mode, sorted_alphabet)
+alphabet, letter, occurences, viewer = Generator.counting(
+    max_symbs,
+    max_word_length,
+    mode,
+    sorted_alphabet=True
+)
 alphabet = ', '.join(list(alphabet))
 ==
 
