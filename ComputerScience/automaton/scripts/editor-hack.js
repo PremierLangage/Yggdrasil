@@ -76,7 +76,10 @@ editors.forEach((editor) => {
                     const hint = 'Entrez un nouveau nom';
                     // mat-input-0
                     setTimeout(() => {
-                        console.log('...',document.querySelector('app-prompt input'))
+                        const input = document.querySelector('app-prompt input');
+                        const listener = input.addEventListener('keydown', (e) => {
+                            console.log(e.key)
+                        });
                     }, 1000);
                     let newState = await this.prompt(title, hint, this.node.id);
 
