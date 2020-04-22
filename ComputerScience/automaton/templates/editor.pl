@@ -122,7 +122,7 @@ from generator import Generator
 
 editor = Automaton.editor()
 editor.debug = False
-editor.editorHeight = "600px"
+editor.editorHeight = "500px"
 
 if 'generate' not in globals():
     raise Exception('You must define a script "generate"')
