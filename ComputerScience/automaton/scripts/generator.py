@@ -27,6 +27,8 @@ class Generator:
         :return alphabet: str the generated alphabet
         """
         if sort:
+            if length > 26:
+                raise Exception('length must be <= 26')
             return [string.ascii_lowercase[i] for i in range(length)]
 
         alphabet = ['' for _ in range(length)]
