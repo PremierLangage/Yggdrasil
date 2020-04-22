@@ -486,14 +486,14 @@ class Automaton:
             initials = [new_initial]
     
         # transform objectNotation to fsm notation
-        map = {}
+        fsm_transitions = {}
         for transition in transitions:
             toState = transition['toState']
             fromState = transition['fromState']
-            if fromState not in map:
-                map[fromState] = {}
+            if fromState not in fsm_transitions:
+                fsm_transitions[fromState] = {}
             for symbol in transition['symbols']:
-                map[fromState][symbol] = toState
+                fsm_transitions[fromState][symbol] = toState
 
         return Automaton(
             fsm.fsm(
@@ -501,7 +501,7 @@ class Automaton:
                 alphabet=set(alphabet),
                 initial=initials[0],
                 finals=set(finals),
-                map=map
+                map=fsm_transitions
             )
         )
         """
