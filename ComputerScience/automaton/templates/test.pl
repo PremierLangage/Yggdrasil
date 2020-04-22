@@ -1,5 +1,5 @@
 
-extends = editor2.pl
+extends = editor.pl
 
 
 title= 
@@ -26,6 +26,5 @@ viewer = Automaton.viewer('''
     S2:a,b,c>S2
 ''')
 ==
-
 
 
