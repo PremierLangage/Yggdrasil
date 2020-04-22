@@ -1,0 +1,4 @@
+* Generator.py
+    - add flag to support regex syntax of automaton course
+* Automaton.py 
+    - replace greeny lib with https://pypi.org/project/FAdo/
