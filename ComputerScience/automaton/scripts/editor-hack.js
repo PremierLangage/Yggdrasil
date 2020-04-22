@@ -76,7 +76,7 @@ editors.forEach((editor) => {
                     const hint = 'Entrez un nouveau nom';
                     // mat-input-0
                     setTimeout(() => {
-                        console.log(document.querySelector('app-prompt input'))
+                        console.log('...',document.querySelector('app-prompt input'))
                     }, 1000);
                     let newState = await this.prompt(title, hint, this.node.id);
 
