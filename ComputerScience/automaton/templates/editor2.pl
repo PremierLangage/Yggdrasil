@@ -109,10 +109,12 @@ form== #|html|
         const submit = nodes.submit; // a reference to the submit button
         // hide submit button if needed.
         submit.attr("disabled", ({{ attempt }} >= {{ maxattempt }}) || {{ score }} == 100);
+        {{ editor_hack }}
     }
 </script>
 ==
 
+editor_hack =@ ../scripts/editor-hack.ts 
 
 
 
