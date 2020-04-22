@@ -11,7 +11,7 @@ editor.automaton = {
       "b"
     ],
     "initialStates": [
-      "S0",
+      "Ø",
       "S1",
       "S2"
     ],
@@ -19,13 +19,13 @@ editor.automaton = {
       "S2"
     ],
     "states": [
-      "S0",
+      "Ø",
       "S1",
       "S2"
     ],
     "transitions": [
       {
-        "fromState": "S0",
+        "fromState": "Ø",
         "toState": "S1",
         "symbols": [
           "a"
@@ -53,8 +53,8 @@ editor.automaton = {
         ]
       },
       {
-        "fromState": "S0",
-        "toState": "S0",
+        "fromState": "Ø",
+        "toState": "Ø",
         "symbols": [
           "b"
         ]
