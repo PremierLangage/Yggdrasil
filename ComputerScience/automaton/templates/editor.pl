@@ -124,8 +124,10 @@ from automaton import Automaton
 from generator import Generator
 
 debug = False
+
 if 'generate' not in globals():
     raise Exception('You must define a script "generate"')
+
 exec(generate)
 
 if 'viewer' not in globals():
