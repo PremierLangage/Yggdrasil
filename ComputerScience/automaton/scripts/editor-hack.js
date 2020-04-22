@@ -31,7 +31,7 @@ const addProperty = (component, property) => {
 editors.forEach((editor) => {
     const component = editor.ngElementStrategy.componentRef.instance;
 
-    addProperty(component, { name: 'textSetInitial', default: '' });
+    addProperty(component, { name: 'textSetInitial', default: 'I' });
     addProperty(component, { name: 'textSetNonInitial', default: '' });
     addProperty(component, { name: 'textSetFinal', default: '' });
     addProperty(component, { name: 'textSetNonFinal', default: '' });
@@ -69,7 +69,7 @@ editors.forEach((editor) => {
                 });
             } else {
                 actions.push({
-                    name: 'Initial',
+                    name: this.textSetInitial,
                     action: () => {
                         this.node.classList.add(INITIAL_STATE);
                         this.automaton.initialStates.push(this.node.id);
