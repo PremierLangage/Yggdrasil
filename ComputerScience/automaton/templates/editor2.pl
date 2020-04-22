@@ -101,10 +101,6 @@ form== #|html|
 {{ form_instructions }}
 
 <script>
-
-    $(function() {
-        
-    });
     /**
     * This function is called by the platform once the exercice is loaded.
     * @param nodes an object containing a reference to the nodes of the page (title, text, form, actions, submit...)
@@ -113,23 +109,6 @@ form== #|html|
         const submit = nodes.submit; // a reference to the submit button
         // hide submit button if needed.
         submit.attr("disabled", ({{ attempt }} >= {{ maxattempt }}) || {{ score }} == 100);
-        const editors = document.querySelectorAll('c-automaton-editor');
-        editors.forEach(editor => {
-            const component = editor.ngElementStrategy.componentRef.instance;
-            component.focus = function (node, connection) {
-                console.log(this.node);
-
-                this.debug = true;
-                this.unfocus();
-
-                this.node = node;
-                this.connection = connection;
-                const actions = [];
-
-                this.actions = actions;
-                this.detectChanges();
-            } 
-        });
     }
 </script>
 ==
