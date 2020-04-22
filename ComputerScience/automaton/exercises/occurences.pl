@@ -17,7 +17,7 @@ max_word_length = 2
 alphabet, letter, occurences, viewer = Generator.counting(
     max_symbs,
     max_word_length,
-    1,
+    mode,
     sorted_alphabet=True
 )
 alphabet = ', '.join(list(alphabet))
