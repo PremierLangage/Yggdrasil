@@ -20,8 +20,8 @@ editors.forEach((editor) => {
                         console.log('E')
                     if (e.key === 'Enter') {
                         document.querySelector('app-prompt .mat-button').click();
+                        input.removeEventListener('keydown', handler);
                     }
-                    input.removeEventListener('keydown', handler);
                 };
                 const listener = input.addEventListener('keydown', handler);
             }, 1000);
