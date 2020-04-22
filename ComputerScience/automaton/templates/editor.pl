@@ -115,6 +115,8 @@ score = -1
 attempt = 0
 maxattempt = int(maxattempt)
 
+# CREATION OF THE AUTOMATON EDITOR
+# THE PROPERTIES OF THE EDITOR CAN BE CHANGED INSIDE 'generate' SCRIPT
 editor = Automaton.editor()
 editor.debug = False
 editor.editorHeight = "500px"
