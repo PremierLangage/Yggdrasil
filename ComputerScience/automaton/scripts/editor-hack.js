@@ -21,10 +21,15 @@ const submitOnEnter = () => {
         const listener = input.addEventListener('keydown', handler);
     }, 1000);
 };
-    
+
+const addProperty = (component, property) => {
+    if (!component.properties.find(e => e.name === property.name)) {
+        component.properties.push(property);
+    }
+}  
 editors.forEach((editor) => {
     const component = editor.ngElementStrategy.componentRef.instance;
-    console.log(component.properties);
+    
     component.focus = function (node, connection) {
         const FINAL_STATE = 'automaton-state--final';
         const INITIAL_STATE = 'automaton-state--initial';
@@ -263,6 +268,7 @@ editors.forEach((editor) => {
         this.detectChanges();
     } 
 });
+
 
 
 
