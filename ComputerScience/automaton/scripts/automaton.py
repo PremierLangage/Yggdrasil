@@ -458,6 +458,9 @@ class Automaton:
         # create a standard automaton
         if len (initials) > 1:
             new_initial = 'Ø'
+            while new_initial in states:
+                new_initial = new_initial + 'Ø'
+
             for transition in transitions:
                 toState = transition['toState']
                 fromState = transition['fromState']
