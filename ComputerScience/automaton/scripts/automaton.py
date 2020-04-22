@@ -455,7 +455,6 @@ class Automaton:
     
 
         if len (initials) > 1:
-            raise Exception(objectNotation)
             new_initial = 'Ø'
             transitions = objectNotation['transitions']
             for transition in objectNotation['transitions']:
@@ -473,6 +472,7 @@ class Automaton:
                     finals.append(new_initial)
                     break
             initials = [new_initial]
+            objectNotation['transitions'] = transitions
     
         """
         for transition in objectNotation['transitions']:
