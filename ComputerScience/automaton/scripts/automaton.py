@@ -455,19 +455,23 @@ class Automaton:
     
 
         if len (initials) > 1:
-            copy = set(initials)
-            initials = ['Ø']
+            new_initial = 'Ø'
             transitions = objectNotation['transitions']
             for transition in objectNotation['transitions']:
                 toState = transition['toState']
                 fromState = transition['fromState']
                 symbols = transition['symbols']
-                if fromState in copy:
+                if fromState in initials:
                     transitions.append({
-                        "fromState": initials[0],
+                        "fromState": new_initial,
                         "toState": toState,
                         "symbols": symbols
                     })
+            for state in initials:
+                if state in finals:
+                    finals.append(new_initial])
+                    break
+            initials = [new_initial]
         """
         for transition in objectNotation['transitions']:
             toState = transition['toState']
