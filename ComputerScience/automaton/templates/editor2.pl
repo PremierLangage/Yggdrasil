@@ -117,7 +117,7 @@ form== #|html|
         editors.forEach(editor => {
             const component = editor.ngElementStrategy.componentRef.instance;
             component.focus = function (node, connection) {
-                console.log(this);
+                this.debug = true;
             }  
         });
     }
