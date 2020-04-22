@@ -78,7 +78,10 @@ editors.forEach((editor) => {
                     setTimeout(() => {
                         const input = document.querySelector('app-prompt input');
                         const listener = input.addEventListener('keydown', (e) => {
-                            console.log(e.key)
+                            if (e.key === 'Enter') {
+                                document.querySelector('app-prompt .mat-button').click();
+                                
+                            }
                         });
                     }, 1000);
                     let newState = await this.prompt(title, hint, this.node.id);
