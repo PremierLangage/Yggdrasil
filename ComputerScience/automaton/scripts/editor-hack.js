@@ -127,7 +127,7 @@ editors.forEach((editor) => {
                     name: this.textSetFinal,
                     action: () => {
                         this.node.classList.add(FINAL_STATE);
-                        this.automaton.acceptingStates.push(this.node.id);
+                        this.acceptingStates.push(this.node.id);
                         this.focus(this.node);
                     }
                 });
@@ -175,7 +175,6 @@ editors.forEach((editor) => {
                                 }
                             );
                             
-
                             this.automaton.transitions.forEach(transition => {
                                 if (transition.fromState === this.node.id) {
                                     transition.fromState = newState;
