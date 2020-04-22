@@ -2,7 +2,7 @@
 extends = ../templates/editor-L2.pl
 
 
-maxattempt = 10
+maxattempt = 1
 
 generate== #|py|
 from generator import Generator
