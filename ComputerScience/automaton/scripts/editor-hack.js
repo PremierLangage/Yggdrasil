@@ -36,6 +36,8 @@ const createGetterSetter = (component, name) => {
             this.automaton[name] = value;
         }
     });
+
+    console.log(this);
 };
 
 editors.forEach((editor) => {
