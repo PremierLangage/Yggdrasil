@@ -74,6 +74,10 @@ editors.forEach((editor) => {
                 action: async () => {
                     const title = 'État';
                     const hint = 'Entrez un nouveau nom';
+                    // mat-input-0
+                    setTimeout(() => {
+                        console.log(document.getElementById('#mat-input-0'))
+                    }, 1000);
                     let newState = await this.prompt(title, hint, this.node.id);
 
                     if (newState !== false) {
