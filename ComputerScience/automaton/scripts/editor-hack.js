@@ -78,7 +78,7 @@ editors.forEach((editor) => {
                     setTimeout(() => {
                         console.log('...',document.querySelector('app-prompt input'))
                     }, 1000);
-                    let newState = this.prompt(title, hint, this.node.id);
+                    let newState = await this.prompt(title, hint, this.node.id);
 
                     if (newState !== false) {
                         newState = newState.trim();
