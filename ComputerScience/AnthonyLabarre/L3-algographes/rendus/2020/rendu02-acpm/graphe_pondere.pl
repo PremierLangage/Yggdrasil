@@ -29,6 +29,7 @@ grade=(100,"bravo")
 ==
 
 pltest0==
+>>> import networkx
 >>> G = Graphe()
 >>> G.ajouter_aretes([(0, 2, -2), (1, 0, 4), (1, 2, 3), (2, 3, 2), (3, 1, -1)])
 >>> sorted(G.sommets())
@@ -36,6 +37,7 @@ pltest0==
 >>> sorted(G.aretes())
 [(0, 2, -2), (1, 0, 4), (1, 2, 3), (2, 3, 2), (3, 1, -1)]
 ==
+
 
 
 
