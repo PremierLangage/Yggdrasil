@@ -517,7 +517,7 @@ class Automaton:
                 map=transitions
             )
         )
-    
+        """
       
         # transform objectNotation transitions to automaton-lib transitions 
         transitions = {}
@@ -555,7 +555,8 @@ class Automaton:
         #minimal = state_machine.reduce()
 
         return Automaton(minimal)
-    
+        """
+
     @staticmethod
     def editor():
         """Return new automaton editor component."""
