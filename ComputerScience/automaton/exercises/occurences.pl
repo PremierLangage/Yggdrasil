@@ -61,7 +61,7 @@ editor.automaton = {
       }
     ],
     "position": {
-      "S0": {
+      "Ø": {
         "x": 93,
         "y": 265
       },
