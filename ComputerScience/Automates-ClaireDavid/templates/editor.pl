@@ -91,7 +91,7 @@ title= PLEASE OVERRIDE THE KEY **title=** TO CHANGE THIS TEXT
 text= PLEASE OVERRIDE THE KEY **text=** TO CHANGE THIS TEXT
 form== #|html|
 <!-- TIMEOUT VIEW -->
-{% if attempt >= maxattempt %}
+{% if attempt >= maxattempt%}
 <!--{{ viewer|component }}-->
 {% endif %}
 
@@ -167,6 +167,7 @@ else:
         score = 0
         grade=(score, feedback_nomatch)
 ==
+
 
 
 
