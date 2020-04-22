@@ -11,8 +11,7 @@ maxattempt = 3
 #*  This script must define the following variables:
 #*   
 #*  **viewer** => an automaton in one of the accepted formats (string, regex, object...)
-#*               This automaton is considered as the answer and it will be presented to the student at the end. 
-
+#*               This automaton is considered as the answer and it will be presented to the student at the end.
 #*  Example
 #*```python
 #*  generate==
