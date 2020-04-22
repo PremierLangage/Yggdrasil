@@ -34,6 +34,7 @@ class Generator:
             )))
         return alphabet
 
+    @staticmethod
     def sorted_alphabet(length: int):
         """
         Generates an alphabet with the letters taken in alphabetical order.
@@ -235,6 +236,7 @@ class Generator:
             "rows": rows,
             "transitions": transitions
         }
+
 
 
 
