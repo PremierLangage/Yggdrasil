@@ -188,12 +188,12 @@ editors.forEach((editor) => {
                     );
 
                     if (input !== false) {
-                        const symbols: string[] = input
+                        const symbols = input
                             .split(',')
-                            .map((symbol: string) => {
+                            .map((symbol) => {
                                 return symbol.trim();
                             })
-                            .filter((symbol: string) => !!symbol);
+                            .filter((symbol) => !!symbol);
 
                         if (symbols.length === 0) {
                             alert(
