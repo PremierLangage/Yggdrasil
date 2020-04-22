@@ -26,7 +26,9 @@ class Generator:
         :param sort if set to True then the letters of the alphabet will be taken in alphabetical order.
         :return alphabet: str the generated alphabet
         """
-    
+        if sort:
+            return [string.ascii_lowercase[i] for i in range(length)]
+
         alphabet = ['' for _ in range(length)]
         while len(set(alphabet)) != length:
             alphabet = ''.join(set("".join(
