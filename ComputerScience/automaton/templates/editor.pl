@@ -119,7 +119,6 @@ form== #|html|
 
 editor_hack =@ ../scripts/editor-hack.js
 
-
 before== #|py|
 import random
 
