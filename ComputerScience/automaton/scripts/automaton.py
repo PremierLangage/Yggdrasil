@@ -1,4 +1,5 @@
 import math
+import copy
 import random
 
 # https://github.com/qntm/greenery
@@ -448,11 +449,12 @@ class Automaton:
         if 'transitions' not in objectNotation or not len(objectNotation['transitions']):
             raise SyntaxError("L'automate que vous avez saisi ne contient aucune transition!")
 
-        states = list(objectNotation['states'])
-        initials = list(objectNotation['initialStates'])
-        alphabet = list(objectNotation['alphabet'])
-        finals = list(objectNotation['acceptingStates'])
-        transitions = list(objectNotation['transitions'])
+        states = copy.deepcopy(objectNotation['states'])
+        initials = copy.deepcopy(objectNotation['initialStates'])
+        alphabet = copy.deepcopy(objectNotation['alphabet'])
+        finals = copy.deepcopy(objectNotation['acceptingStates'])
+        transitions = copy.deepcopy(objectNotation['transitions'])
+    
         # create a standard automaton
         if len (initials) > 1:
             new_initial = 'Ø'
@@ -1037,6 +1039,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
