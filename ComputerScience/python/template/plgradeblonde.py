@@ -58,7 +58,7 @@ if __name__ == "__main__":
     while "pltest"+str(i) in dic and (a or stop ) :
         outstr += b
         testi = PlRunner(student,dic["pltest"+str(i)])
-        tname='testname'+str(i)
+        tname='testname\n'+str(i)
         testname = dic[tname] if tname in dic else "Groupe de test "+str(i+1)
         a, b = testi.runpltest(testname)
         i=i+1
@@ -68,6 +68,7 @@ if __name__ == "__main__":
         outstr += dic["feedback"]+" valeur de stop "+ str(stop)
     output(a,outstr)
     
+
 
 
 
