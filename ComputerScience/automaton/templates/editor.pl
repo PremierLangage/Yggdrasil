@@ -121,9 +121,8 @@ from automaton import Automaton
 from generator import Generator
 
 editor = Automaton.editor()
-editor.debug = debug
+editor.debug = False
 editor.editorHeight = "600px"
-debug = False
 
 if 'generate' not in globals():
     raise Exception('You must define a script "generate"')
