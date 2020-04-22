@@ -25,7 +25,6 @@ viewer = Automaton.viewer('''
     S1:b>S2
     S2:a,b,c>S2
 ''')
-debug = True
 ==
 
 
