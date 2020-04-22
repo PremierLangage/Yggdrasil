@@ -31,10 +31,10 @@ const addProperty = (component, property) => {
 editors.forEach((editor) => {
     const component = editor.ngElementStrategy.componentRef.instance;
 
-    addProperty(component, { name: 'textSetInitial', default: 'I' });
-    addProperty(component, { name: 'textSetNonInitial', default: '' });
-    addProperty(component, { name: 'textSetFinal', default: '' });
-    addProperty(component, { name: 'textSetNonFinal', default: '' });
+    addProperty(component, { name: 'textSetInitial', default: 'Initiale' });
+    addProperty(component, { name: 'textSetNonInitial', default: 'Non initiale' });
+    addProperty(component, { name: 'textSetFinal', default: 'Finale' });
+    addProperty(component, { name: 'textSetNonFinal', default: 'Non finale' });
 
     console.log(component.properties);
     component.focus = function (node, connection) {
@@ -80,7 +80,7 @@ editors.forEach((editor) => {
 
             if (isFinal) {
                 actions.push({
-                    name: 'Non Final',
+                    name: this.textSetNonFinal,
                     action: () => {
                         this.node.classList.remove(FINAL_STATE);
                         this.automaton.acceptingStates = this.automaton.acceptingStates.filter(
@@ -93,7 +93,7 @@ editors.forEach((editor) => {
                 });
             } else {
                     actions.push({
-                    name: 'Final',
+                    name: this.textSetFinal,
                     action: () => {
                         this.node.classList.add(FINAL_STATE);
                         this.automaton.acceptingStates.push(this.node.id);
