@@ -104,7 +104,7 @@ pltest4==
 ==
 
 # Vérifications de acpm_kruskal sur un graphe connexe
-testname5 = Vérifications de acpm_kruskal sur un graphe connexe
+testname5 = Test de acpm_kruskal sur un graphe connexe
 pltest5==
 >>> import random; G = Graphe(); G.ajouter_aretes([(0, 1, 5), (0, 3, 4), (0, 4, 2), (1, 4, 2), (2, 3, 9), (2, 5, 5), (3, 4, 3), (3, 5, 7), (3, 6, 4), (4, 6, 7), (5, 6, 12)]); arbre = acpm_kruskal(G)
 >>> sum(poids for *_, poids in arbre.aretes())
@@ -115,7 +115,7 @@ pltest5==
 ==
 
 # Vérifications de fcpm_prim sur un graphe non connexe
-testname6 = Vérifications de fcpm_prim sur un graphe non connexe
+testname6 = Test de fcpm_prim sur un graphe non connexe
 pltest6==
 >>> G = Graphe(); 
 >>> G.ajouter_aretes([(0, 1, 5), (0, 3, 4), (0, 4, 2), (1, 4, 2), (2, 3, 9), (2, 5, 5), (3, 4, 3), (3, 5, 7), (3, 6, 4), (4, 6, 7), (5, 6, 12)]);
@@ -127,7 +127,7 @@ pltest6==
 
 
 # Vérifications de acpm_prim sur un graphe connexe
-testname7 = Vérifications de acpm_prim sur un graphe connexe
+testname7 = Test de acpm_prim sur un graphe connexe
 pltest7==
 >>> G = Graphe(); 
 >>> G.ajouter_aretes([(0, 1, 5), (0, 3, 4), (0, 4, 2), (1, 4, 2), (2, 3, 9), (2, 5, 5), (3, 4, 3), (3, 5, 7), (3, 6, 4), (4, 6, 7), (5, 6, 12)]);
