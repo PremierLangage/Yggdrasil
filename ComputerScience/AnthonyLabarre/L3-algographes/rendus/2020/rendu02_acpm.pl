@@ -34,7 +34,6 @@ before==
 # Vérifications basiques de la classe Graphe
 #testname0 = Vérifications basiques de la classe Graphe
 pltest0== 
->>> import networkx
 >>> G = Graphe()# Existance d'une class Graphe
 >>> G.ajouter_aretes([(0, 2, -2), (1, 0, 4), (1, 2, 3), (2, 3, 2), (3, 1, -1)])
 >>> sorted(G.sommets()) 
