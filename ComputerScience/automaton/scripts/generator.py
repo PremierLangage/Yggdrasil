@@ -18,11 +18,12 @@ class Generator:
     """
 
     @staticmethod
-    def alphabet(length: int):
+    def alphabet(length: int, sort=False):
         """
         Generated an alphabet with letters taken randomly.
 
         :param length the length of the generated alphabet
+        :param sort if set to True then the letters of the alphabet will be taken in alphabetical order.
         :return alphabet: str the generated alphabet
         """
     
@@ -66,7 +67,7 @@ class Generator:
         return Automaton.parse(regex)
 
     @staticmethod
-    def prefix(max_symbs=2, length=4):
+    def prefix(max_symbs=2, length=4, sorted_alphabet=False):
         """
         Generates an alphabet of max_symbs letters,
         a word `prefix` of length <= length and an automaton
@@ -74,10 +75,11 @@ class Generator:
 
         :param max_symbs max length of the alphabet
         :param length max length of the prefix
+        :param sorted_alphabet if set to True then the letters of the alphabet will be taken in alphabetical order.
         :return (alphabet: str, prefix: str, automaton: Automaton)
         """
     
-        alphabet = Generator.alphabet(max_symbs)
+        alphabet = Generator.alphabet(max_symbs, sorted_alphabet)
         n = random.randint(2, length)
         prefix =  "".join(
             random.choice(alphabet)
@@ -87,7 +89,7 @@ class Generator:
         return alphabet, prefix, Automaton.parse(f'{prefix}({suffix})*')
 
     @staticmethod
-    def suffix(max_symbs=2, length=4):
+    def suffix(max_symbs=2, length=4, sorted_alphabet=False):
         """
         Generates an alphabet of max_symbs letters,
         a word `suffix` of length <= length and an automaton
@@ -95,10 +97,11 @@ class Generator:
 
         :param max_symbs max length of the alphabet
         :param length max length of the suffix
+        :param sorted_alphabet if set to True then the letters of the alphabet will be taken in alphabetical order.
         :return (alphabet: str, suffix: str, automaton: Automaton)
         """
     
-        alphabet = Generator.alphabet(max_symbs)
+        alphabet = Generator.alphabet(max_symbs, sorted_alphabet)
         n = random.randint(2, length)
         prefix = '|'.join(list(alphabet))
         suffix =  "".join(
@@ -108,7 +111,7 @@ class Generator:
         return alphabet, suffix, Automaton.parse(f'({prefix})*{suffix}')
 
     @staticmethod
-    def factor(max_symbs=2, length=4):
+    def factor(max_symbs=2, length=4, sorted_alphabet=False):
         """
         Generates an alphabet of max_symbs letters,
         a word `factor` of length <= length and an automaton
@@ -116,10 +119,11 @@ class Generator:
 
         :param max_symbs max length of the alphabet
         :param length max length of the factor
+        :param sorted_alphabet if set to True then the letters of the alphabet will be taken in alphabetical order.
         :return (alphabet: str, factor: str, automaton: Automaton)
         """
     
-        alphabet = Generator.alphabet(max_symbs)
+        alphabet = Generator.alphabet(max_symbs, sorted_alphabet)
         n = random.randint(2, length)
         prefix = '|'.join(list(alphabet))
         factor =  "".join(
@@ -130,15 +134,16 @@ class Generator:
         return alphabet, factor, Automaton.parse(f'({prefix})*{factor}({suffix})*')
 
     @staticmethod
-    def sequence(max_symbs=2, length=4):
+    def sequence(max_symbs=2, length=4, sorted_alphabet=False):
         """
         Generates a random word and alphabet.
         :param length max length of the generated word.
         :param max_symbs max length of the generated alphabet.
+        :param sorted_alphabet if set to True then the letters of the alphabet will be taken in alphabetical order.
         :return (alphabet: str, word: str)
         """
 
-        alphabet = Generator.alphabet(max_symbs)
+        alphabet = Generator.alphabet(max_symbs, sorted_alphabet)
         word_length = random.randint(2, length)
         word =  "".join(
             random.choice(alphabet)
@@ -147,7 +152,7 @@ class Generator:
         return alphabet, word
 
     @staticmethod
-    def counting(max_symbs=2, length=4, mode=0):
+    def counting(max_symbs=2, length=4, mode=0, sorted_alphabet=False):
         """
         Generates an alphabet of max_symbs letters,
         a letter `letter``a number `n` <= length and an automaton
@@ -155,7 +160,7 @@ class Generator:
         the value of mode (-1, 0, 1)
         """
 
-        alphabet = Generator.alphabet(max_symbs)
+        alphabet = Generator.alphabet(max_symbs, sorted_alphabet)
         n = random.randint(2, length)
         letter = random.choice(alphabet)
 
