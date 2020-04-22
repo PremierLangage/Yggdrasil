@@ -5,7 +5,76 @@ maxattempt = 5
 generate== #|py|
 mode = random.choice([-1, 0, 1])
 editor.debug = True
-
+editor.automaton = {
+    "alphabet": [
+      "a",
+      "b"
+    ],
+    "initialStates": [
+      "S0",
+      "S1",
+      "S2"
+    ],
+    "acceptingStates": [
+      "S2"
+    ],
+    "states": [
+      "S0",
+      "S1",
+      "S2"
+    ],
+    "transitions": [
+      {
+        "fromState": "S0",
+        "toState": "S1",
+        "symbols": [
+          "a"
+        ]
+      },
+      {
+        "fromState": "S1",
+        "toState": "S2",
+        "symbols": [
+          "a"
+        ]
+      },
+      {
+        "fromState": "S2",
+        "toState": "S2",
+        "symbols": [
+          "b"
+        ]
+      },
+      {
+        "fromState": "S1",
+        "toState": "S1",
+        "symbols": [
+          "b"
+        ]
+      },
+      {
+        "fromState": "S0",
+        "toState": "S0",
+        "symbols": [
+          "b"
+        ]
+      }
+    ],
+    "position": {
+      "S0": {
+        "x": 93,
+        "y": 265
+      },
+      "S1": {
+        "x": 315,
+        "y": 207
+      },
+      "S2": {
+        "x": 530,
+        "y": 237
+      }
+    }
+}
 mode= 1
 message = {
     -1: 'au moins',
