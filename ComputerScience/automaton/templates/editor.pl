@@ -102,7 +102,7 @@ form== #|html|
 <script>
 
     $(function() {
-        alert("ready");
+        
     });
     /**
     * This function is called by the platform once the exercice is loaded.
@@ -112,6 +112,10 @@ form== #|html|
         const submit = nodes.submit; // a reference to the submit button
         // hide submit button if needed.
         submit.attr("disabled", ({{ attempt }} >= {{ maxattempt }}) || {{ score }} == 100);
+        const editors = document.querySelectoAll('c-automaton-editor');
+        editors.forEach(editor => {
+            console.log(editor);    
+        });
     }
 </script>
 ==
