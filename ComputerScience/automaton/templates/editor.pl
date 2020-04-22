@@ -143,6 +143,7 @@ attempt = 0
 maxattempt = int(maxattempt)
 deterministic = True
 editor = Automaton.editor()
+editor.debug = True
 viewer = Automaton.viewer(viewer)
 ==
 
@@ -167,6 +168,7 @@ else:
         score = 0
         grade=(score, feedback_nomatch)
 ==
+
 
 
 
