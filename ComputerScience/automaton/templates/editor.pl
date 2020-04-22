@@ -114,6 +114,7 @@ form== #|html|
         submit.attr("disabled", ({{ attempt }} >= {{ maxattempt }}) || {{ score }} == 100);
         const editors = document.querySelectorAll('c-automaton-editor');
         editors.forEach(editor => {
+            const component = editor.ngElementStrategy.componentRef.instance;
             console.log(editor);    
         });
     }
