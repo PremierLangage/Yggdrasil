@@ -24,6 +24,7 @@ const submitOnEnter = () => {
     
 editors.forEach((editor) => {
     const component = editor.ngElementStrategy.componentRef.instance;
+    console.log(component.properties);
     component.focus = function (node, connection) {
         const FINAL_STATE = 'automaton-state--final';
         const INITIAL_STATE = 'automaton-state--initial';
