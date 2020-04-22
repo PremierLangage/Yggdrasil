@@ -475,31 +475,6 @@ class Automaton:
             initials = [new_initial]
             objectNotation['transitions'] = transitions
     
-        """
-        for transition in objectNotation['transitions']:
-            toState = transition['toState']
-            fromState = transition['fromState']
-            if fromState not in transitions:
-                transitions[fromState] = {}
-            for symbol in transition['symbols']:
-                transitions[fromState][symbol] = toState
-
-        if len(initials) > 1: # TODO remove once multiple initial states is supported
-            raise SyntaxError('Mutiple initial states is not currently supported !')
-
-        return Automaton(
-            fsm.fsm(
-                states=set(states),
-                alphabet=set(alphabet),
-                initial=initials[0],
-                finals=set(finals),
-                map=transitions
-            )
-        )
-        """
-
-
-
         # transform objectNotation transitions to automaton-lib transitions 
         transitions = {}
         for state in states:
