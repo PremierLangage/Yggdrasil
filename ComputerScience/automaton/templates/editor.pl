@@ -1,9 +1,10 @@
 # CHANGELOG
 # 22/04
 #   + move editor creation before the call of generate script to enable editor variable inside of generate script.
-#  
-# CONTRACTS FOR FILES WHICH EXTENDS THIS TEMPLATE
+# 
 
+
+# CONTRACTS FOR FILES WHICH EXTENDS THIS TEMPLATE
 #! linter:require:generate::str
 
 extends = base.pl
