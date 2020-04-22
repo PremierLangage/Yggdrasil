@@ -450,9 +450,9 @@ class Automaton:
             raise SyntaxError("L'automate que vous avez saisi ne contient aucune transition!")
 
         states = copy.deepcopy(objectNotation['states'])
+        finals = copy.deepcopy(objectNotation['acceptingStates'])
         initials = copy.deepcopy(objectNotation['initialStates'])
         alphabet = copy.deepcopy(objectNotation['alphabet'])
-        finals = copy.deepcopy(objectNotation['acceptingStates'])
         transitions = copy.deepcopy(objectNotation['transitions'])
     
         # create a standard automaton
