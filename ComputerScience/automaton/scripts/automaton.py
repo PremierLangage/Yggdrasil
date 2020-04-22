@@ -480,7 +480,9 @@ class Automaton:
                     finals.append(new_initial)
                     break
 
+            # register Ø as a state
             states.append(new_initial)
+            # set Ø as the new initial state
             initials = [new_initial]
     
         # transform objectNotation transitions to fsm transitions notation
