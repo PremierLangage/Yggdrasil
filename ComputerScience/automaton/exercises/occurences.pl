@@ -11,7 +11,7 @@ message = {
 }[mode]
 
 editor.debug = False
-editor.editorHeight = "420px"
+editor.editorHeight = "520px"
 
 alphabet, letter, occurences, viewer = Generator.counting(
     2, # max_symbs
