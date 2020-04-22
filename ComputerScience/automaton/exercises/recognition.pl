@@ -43,7 +43,6 @@ generate== #|py|
 
 # REGEX NOTATION
 viewer = Generator.regex('(a+b+c)*', True)
-
 ==
 
 title= Lecture d'automates
