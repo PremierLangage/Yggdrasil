@@ -502,7 +502,7 @@ class Automaton:
                 initial=initials[0],
                 finals=set(finals),
                 map=fsm_transitions
-            )
+            ).reduce()
         )
 
         """
