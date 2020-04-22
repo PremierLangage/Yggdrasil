@@ -15,11 +15,5 @@ form_success== #|html|
 #* override this key to change the text shown after a good answer.
 form_success== #|html|
 <p class="success-state">Bravo l'automate que vous avez construit est une bonne réponse.</p>
-<!--
-{% if not deterministic %}
-    <p class="success-state">L'automate déterministe suivant était aussi une bonne réponse :</p>
-    {{ viewer|component }}
-{% endif %}
--->
 == 
 
