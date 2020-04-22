@@ -485,7 +485,7 @@ class Automaton:
             # set Ø as the new initial state
             initials = [new_initial]
     
-        # transform objectNotation transitions to fsm transitions notation
+        # transform objectNotation to fsm notation
         map = {}
         for transition in transitions:
             toState = transition['toState']
