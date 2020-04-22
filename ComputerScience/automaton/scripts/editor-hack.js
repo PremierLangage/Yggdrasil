@@ -3,8 +3,7 @@
 const editors = document.querySelectorAll('c-automaton-editor');
 
 /**
- * Hack to submit prompt dialog when user press Enter key 
- * and cancel when he press Escape key.
+ * Hack to submit prompt dialog when user press Enter key and cancel when he press Escape key.
  */
 const submitOnEnter = () => {
     setTimeout(() => {
@@ -50,8 +49,8 @@ editors.forEach((editor) => {
             this.node.classList.remove('focused');
             this.node.classList.add('focused');
 
-            const isInitial = this.node.classList.contains(INITIAL_STATE);
             const isFinal = this.node.classList.contains(FINAL_STATE);
+            const isInitial = this.node.classList.contains(INITIAL_STATE);
 
             // INITIAL
             if (isInitial) {
