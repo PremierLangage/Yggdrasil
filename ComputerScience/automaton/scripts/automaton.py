@@ -540,9 +540,8 @@ class Automaton:
             map=dfa.transitions
         )
     
-        # minimize the fsm
-        minimal = state_machine.reduce()
-        return Automaton(minimal)
+        # .reduce() create a minimal automaton
+        return Automaton(state_machine.reduce())
         
 
     @staticmethod
