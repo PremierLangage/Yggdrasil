@@ -542,7 +542,6 @@ class Automaton:
     
         # minimize the fsm
         minimal = state_machine.reduce()
-
         return Automaton(minimal)
         
 
