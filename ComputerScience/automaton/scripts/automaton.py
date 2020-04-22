@@ -475,6 +475,7 @@ class Automaton:
             initials = [new_initial]
             objectNotation['transitions'] = transitions
     
+        # transform objectNotation transitions to fsm transitions notation
         transitions = {}
         for transition in objectNotation['transitions']:
             toState = transition['toState']
