@@ -26,10 +26,16 @@ const addProperty = (component, property) => {
     if (!component.properties.find(e => e.name === property.name)) {
         component.properties.push(property);
     }
-}  
+}
+
 editors.forEach((editor) => {
     const component = editor.ngElementStrategy.componentRef.instance;
-    
+    addProperty(component, { name: 'textSetInitial', default: '' });
+    addProperty(component, { name: 'textSetNonInitial', default: '' });
+    addProperty(component, { name: 'textSetFinal', default: '' });
+    addProperty(component, { name: 'textSetNonFinal', default: '' });
+
+    console.log(component.properties);
     component.focus = function (node, connection) {
         const FINAL_STATE = 'automaton-state--final';
         const INITIAL_STATE = 'automaton-state--initial';
