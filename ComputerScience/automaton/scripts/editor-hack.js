@@ -98,7 +98,7 @@ editors.forEach((editor) => {
                                     return state;
                                 }
                             );
-                            /*
+                            
                             this.automaton.initialStates = this.automaton.initialStates.map(
                                 state => {
                                     if (state === this.node.id) {
@@ -116,8 +116,9 @@ editors.forEach((editor) => {
                                     transition.toState = newState;
                                 }
                             });
-                            */
-                            //this.node.innerHTML = this.node.id = newState;
+                            
+                            this.node.innerHTML = this.node.id = newState;
+                            this.node.innerHTML += '<div class="endpoint"></div>'
                         }
                     }
 
