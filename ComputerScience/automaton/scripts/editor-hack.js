@@ -113,7 +113,7 @@ editors.forEach((editor) => {
                     if (newState !== false) {
                         newState = newState.trim();
                         if (this.automaton.states.includes(newState)) {
-                            alert('État déjà présent');
+                            alert('Cet état est déjà présent');
                         } else {
 
                             this.automaton.states = [
