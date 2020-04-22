@@ -127,7 +127,7 @@ editors.forEach((editor) => {
                     name: this.textSetFinal,
                     action: () => {
                         this.node.classList.add(FINAL_STATE);
-                        this.acceptingStates.push(this.node.id);
+                        this.acceptingStates.push(stateName);
                         this.focus(this.node);
                     }
                 });
@@ -139,7 +139,7 @@ editors.forEach((editor) => {
                     const title = 'État';
                     const hint = 'Entrez un nouveau nom';
                     submitOnEnter();    
-                    let newState = await this.prompt(title, hint, this.node.id);
+                    let newState = await this.prompt(title, hint, stateName);
 
                     if (newState !== false) {
                         newState = newState.trim();
@@ -151,14 +151,14 @@ editors.forEach((editor) => {
                             this.states = [
                                 newState,
                                 ...this.states.filter(state => {
-                                    return state !== this.node.id;
+                                    return state !== stateName;
                                 })
                             ];
 
                             // replace in initials
                             this.initialStates = this.initialStates.map(
                                 state => {
-                                    if (state === this.node.id) {
+                                    if (state === stateName) {
                                         return newState;
                                     }
                                     return state;
@@ -168,7 +168,7 @@ editors.forEach((editor) => {
                             // replace in finals
                             this.acceptingStates = this.acceptingStates.map(
                                 state => {
-                                    if (state === this.node.id) {
+                                    if (state === stateName) {
                                         return newState;
                                     }
                                     return state;
@@ -176,15 +176,15 @@ editors.forEach((editor) => {
                             );
                             
                             this.automaton.transitions.forEach(transition => {
-                                if (transition.fromState === this.node.id) {
+                                if (transition.fromState === stateName) {
                                     transition.fromState = newState;
                                 }
-                                if (transition.toState === this.node.id) {
+                                if (transition.toState === stateName) {
                                     transition.toState = newState;
                                 }
                             });
                             
-                            this.node.innerHTML = this.node.id = newState;
+                            this.node.innerHTML = stateName = newState;
                             this.node.innerHTML += '<div class="endpoint"></div>'
                         }
                     }
