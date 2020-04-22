@@ -1,17 +1,11 @@
 
-extends = base.pl
+extends = editor2.pl
 
 
 title= 
 text= 
 
-form==
-{{ viewer | component }}
-==
-
-before==
-from automaton import Automaton
-
+generate==
 viewer = Automaton.viewer('''
     #states
     S0
@@ -32,5 +26,6 @@ viewer = Automaton.viewer('''
     S2:a,b,c>S2
 ''')
 ==
+
 
 
