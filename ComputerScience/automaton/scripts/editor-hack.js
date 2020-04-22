@@ -30,10 +30,10 @@ const addProperty = (component, property) => {
 const createGetterSetter = (component, name) => {
     Object.defineProperty(component, name, {
         get: () => {
-            return this.automaton[name];
+            return component.automaton[name];
         },
         set: (value) => {
-            this.automaton[name] = value;
+            component.automaton[name] = value;
         }
     });
 };
