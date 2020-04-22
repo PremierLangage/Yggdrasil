@@ -59,7 +59,7 @@
         "<p>Vous entrez dans la salle de TP et vous voyez déjà une "
         "vingtaine d'étudiants assis derrière les postes sur les deux "
         "rangées de bureau. Certains jouent encore sur leurs téléphones "
-        "mais d'autres sont déjå au travail avec l'énoncé en pdf ouvert "
+        "mais d'autres sont déjà au travail avec l'énoncé en pdf ouvert "
         "sur leur poste. </p><br />"
 
         "<p>A peine entré, vous croisez le regard d'un élève qui lève "
