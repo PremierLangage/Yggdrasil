@@ -505,9 +505,6 @@ class Automaton:
             for symbol in transition['symbols']:
                 transitions[fromState][symbol] = toState
 
-        if len(initials) > 1: # TODO remove once multiple initial states is supported
-            raise SyntaxError('Mutiple initial states is not currently supported !')
-
         return Automaton(
             fsm.fsm(
                 states=set(states),
