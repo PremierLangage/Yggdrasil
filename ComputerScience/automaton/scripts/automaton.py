@@ -474,6 +474,7 @@ class Automaton:
                         "symbols": symbols
                     })
     
+            # set Ø final if any of the original initial states is final
             for state in initials:
                 if state in finals:
                     finals.append(new_initial)
