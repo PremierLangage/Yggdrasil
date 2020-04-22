@@ -129,12 +129,14 @@ exec(generate)
 if 'viewer' not in globals():
     raise Exception('The script "generate" must define a variable "viewer" which is an automaton')
 
+V = None
 viewer = Automaton.viewer(viewer)
 ==
 
 evaluator== #|py|
 from automaton import Automaton
 
+V = Automaton.viewer(editor)
 if attempt >= maxattempt: # timeout
     grade = (score, feedback_timeout)
 else:
@@ -151,4 +153,5 @@ else:
         score = 0
         grade=(score, feedback_nomatch)
 ==
+
 
