@@ -468,11 +468,13 @@ class Automaton:
                         "toState": toState,
                         "symbols": symbols
                     })
-            states.append(new_initial)
+    
             for state in initials:
                 if state in finals:
                     finals.append(new_initial)
                     break
+
+            states.append(new_initial)
             initials = [new_initial]
     
         # transform objectNotation transitions to fsm transitions notation
