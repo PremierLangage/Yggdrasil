@@ -5,7 +5,7 @@ maxattempt = 5
 generate== #|py|
 max_symbs = 3
 max_factor_length = 3
-alphabet, factor, viewer = Generator.factor(max_symbs, max_factor_length)
+alphabet, factor, viewer = Generator.factor(max_symbs, max_factor_length, True)
 alphabet = ', '.join(list(alphabet))
 ==
 
@@ -19,5 +19,6 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 </p>
 {% endif %}
 ==
+
 
 
