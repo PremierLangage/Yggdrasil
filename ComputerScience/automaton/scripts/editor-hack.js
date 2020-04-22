@@ -7,7 +7,6 @@ editors.forEach((editor) => {
         const FINAL_STATE = 'automaton-state--final';
         const EPSILON = '$';
 
-        this.debug = true;
         this.unfocus();
 
         this.node = node;
