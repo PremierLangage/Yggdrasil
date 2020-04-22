@@ -448,15 +448,15 @@ class Automaton:
         if 'transitions' not in objectNotation or not len(objectNotation['transitions']):
             raise SyntaxError("L'automate que vous avez saisi ne contient aucune transition!")
 
-        states = objectNotation['states']
-        initials = objectNotation['initialStates']
-        alphabet = objectNotation['alphabet']
-        finals = objectNotation['acceptingStates']
+        states = list(objectNotation['states'])
+        initials = list(objectNotation['initialStates'])
+        alphabet = list(objectNotation['alphabet'])
+        finals = list(objectNotation['acceptingStates'])
 
         # create a standard automaton
         if len (initials) > 1:
             new_initial = 'Ø'
-            transitions = objectNotation['transitions']
+            transitions = list(objectNotation['transitions'])
             for transition in objectNotation['transitions']:
                 toState = transition['toState']
                 fromState = transition['fromState']
@@ -1039,6 +1039,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
