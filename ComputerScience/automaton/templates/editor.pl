@@ -74,9 +74,6 @@ title= PLEASE OVERRIDE THE KEY **title=** TO CHANGE THIS TEXT
 text= PLEASE OVERRIDE THE KEY **text=** TO CHANGE THIS TEXT
 
 form== #|html|
-{% if V %}
- {{ V | component }}
-{% endif %}
 <!-- TIMEOUT VIEW -->
 {% if attempt >= maxattempt %}
 {{ viewer|component }}
@@ -132,14 +129,12 @@ exec(generate)
 if 'viewer' not in globals():
     raise Exception('The script "generate" must define a variable "viewer" which is an automaton')
 
-V = None
 viewer = Automaton.viewer(viewer)
 ==
 
 evaluator== #|py|
 from automaton import Automaton
 
-V = Automaton.viewer(editor)
 if attempt >= maxattempt: # timeout
     grade = (score, feedback_timeout)
 else:
