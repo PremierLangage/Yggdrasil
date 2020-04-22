@@ -157,6 +157,8 @@ form== #|html|
                                 this.focus(this.node);
                             }
                         });
+                    } else {
+
                     }
                     if (isInitial || isFinal) {
                         actions.push({
@@ -273,7 +275,7 @@ form== #|html|
                     const canvas = (connection as any).canvas as HTMLElement;
                     canvas.classList.add('focused');
                     actions.push({
-                        name: 'Changer Transition',
+                        name: 'Changer Étiquette',
                         action: async () => {
                             const s = this.connection.endpoints[0];
                             const t = this.connection.endpoints[1];
