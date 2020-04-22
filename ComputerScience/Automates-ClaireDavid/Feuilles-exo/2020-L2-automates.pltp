@@ -1,0 +1,34 @@
+title = Premiers exo PLaTon d'automates
+
+introduction ==
+ Voici quelques exercices à tester. Nous en rajouterons régulièrement.
+
+ Les exercices sont indépendants. Vous pouvez les faire et même les refaire dans l'ordre que vous voulez. Si vous rencontrez des difficultés dans l'utilisation de la plateforme, n'hésitez pas à venir en discuter sur le channel discord dédié
+ 
+ Un grand merci à Mamadou pour son travail sur le module automates de PLaTon.
+
+==
+
+@../L2-exo-base/count.pl
+
+@../L2-exo-base/prefix.pl
+
+@../L2-exo-base/suffix.pl
+
+@../L2-exo-base/factor.pl
+
+@../L2-exo-base/pref-suf-fac.pl
+
+
+@../L2-partiel-2020/2020-partiel-exo1-1.pl
+
+
+@../L2-partiel-2020/2020-partiel-exo1-2.pl
+
+
+
+
+
+
+
+
