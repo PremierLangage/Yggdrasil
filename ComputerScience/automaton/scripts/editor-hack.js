@@ -28,7 +28,7 @@ const addProperty = (component, property) => {
 }
 
 const createGetterSetter = (component, name) => {
-    Object.defineProperty(this, name, {
+    Object.defineProperty(component, name, {
         get: () => {
             return this.automaton[name];
         },
@@ -36,8 +36,6 @@ const createGetterSetter = (component, name) => {
             this.automaton[name] = value;
         }
     });
-
-    console.log(this);
 };
 
 editors.forEach((editor) => {
