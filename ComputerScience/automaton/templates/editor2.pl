@@ -116,8 +116,7 @@ form== #|html|
         const editors = document.querySelectorAll('c-automaton-editor');
         editors.forEach(editor => {
             const component = editor.ngElementStrategy.componentRef.instance;
-            console.log(component.focus);
-            component.prototype.focus = function (node, connection) {
+            component.focus = function (node, connection) {
                 console.log(this);
             }  
         });
