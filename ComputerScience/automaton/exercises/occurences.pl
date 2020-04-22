@@ -4,7 +4,7 @@ maxattempt = 5
 
 generate== #|py|
 mode = random.choice([-1, 0, 1])
-editor.debug = True
+debug = True
 
 message = {
     -1: 'au moins',
