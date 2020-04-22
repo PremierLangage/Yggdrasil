@@ -542,7 +542,7 @@ class Automaton:
     
         # .reduce() minimize the fsm
         return Automaton(state_machine.reduce())
-        
+
 
     @staticmethod
     def editor():
