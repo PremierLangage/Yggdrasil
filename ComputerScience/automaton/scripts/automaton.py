@@ -486,7 +486,7 @@ class Automaton:
             initials = [new_initial]
     
         # transform objectNotation to fsm notation
-        fsm_transitions = {}
+        """fsm_transitions = {}
         for transition in transitions:
             toState = transition['toState']
             fromState = transition['fromState']
@@ -502,28 +502,28 @@ class Automaton:
                 initial=initials[0],
                 finals=set(finals),
                 map=fsm_transitions
-            ).reduce()
+            )
         )
 
         """
       
         # transform objectNotation transitions to automaton-lib transitions 
-        transitions = {}
+        nfa_transitions = {}
         for state in states:
-            transitions[state] = {}
-        for transition in objectNotation['transitions']:
+            nfa_transitions[state] = {}
+        for transition in transitions:
             toState = transition['toState']
             fromState = transition['fromState']
             for symb in transition['symbols']:
-                if symb not in transitions[fromState]:
-                    transitions[fromState][symb] = set()
-                transitions[fromState][symb].add(toState)
+                if symb not in nfa_transitions[fromState]:
+                    nfa_transitions[fromState][symb] = set()
+                nfa_transitions[fromState][symb].add(toState)
     
         # create a nfa that is equivalent to the given automaton
         nfa = NFA(
             states=set(states),
             input_symbols=set(alphabet),
-            transitions=transitions,
+            transitions=nfa_transitions,
             initial_state=initials[0],
             final_states=set(finals)
         )
@@ -543,7 +543,7 @@ class Automaton:
         #minimal = state_machine.reduce()
 
         return Automaton(minimal)
-        """
+        
 
     @staticmethod
     def editor():
