@@ -74,7 +74,7 @@ pltest2==
 ==
 
 # Vérifications basiques de la classe UnionFind
-testname3 = Vérifications basiques de la classe UnionFind
+testname3 = Test de la classe UnionFind
 pltest3==
 >>> # initialisation d'un ensemble de singletons
 >>> import itertools, random, unionfind; n = 50; ma_structure = unionfind.UnionFind(range(n)); sa_structure = UnionFind(range(n))
