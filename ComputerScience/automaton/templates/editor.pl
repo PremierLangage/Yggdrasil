@@ -120,6 +120,9 @@ import random
 from automaton import Automaton
 from generator import Generator
 
+editor = Automaton.editor()
+editor.debug = debug
+editor.editorHeight = "600px"
 debug = False
 
 if 'generate' not in globals():
@@ -134,9 +137,6 @@ score = -1
 attempt = 0
 maxattempt = int(maxattempt)
 deterministic = True
-editor = Automaton.editor()
-editor.debug = debug
-editor.editorHeight = "600px"
 viewer = Automaton.viewer(viewer)
 ==
 
