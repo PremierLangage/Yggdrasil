@@ -496,6 +496,7 @@ class Automaton:
             initials = [new_initial]
             objectNotation['transitions'] = transitions
     
+        transitions = {}
         for transition in objectNotation['transitions']:
             toState = transition['toState']
             fromState = transition['fromState']
