@@ -2,8 +2,6 @@ extends = /model/math.pl
 
 title = Graphique
 
-input.virtualKeyboards = functions
-
 before ==
 import matplotlib.pyplot as plt
 import numpy as np
@@ -16,7 +14,7 @@ plt.ylabel('voltage (mV)')
 plt.title('About as simple as it gets, folks')
 plt.grid(True)
 
-source = mplfig2svg(plt.gcf(), format="png")
+source = fig2base64(plt.gcf(), format="png")
 ==
 
 text ==
@@ -27,7 +25,7 @@ form ==
 ==
 
 evaluator ==
-score, _, feedback = eval_function(input.value, sol)
+score = 100
 ==
 
 
