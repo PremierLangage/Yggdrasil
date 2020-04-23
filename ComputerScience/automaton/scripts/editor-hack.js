@@ -45,8 +45,10 @@ editors.forEach((editor) => {
     addProperty(component, { name: 'textSetNonInitial', default: 'Non initiale' });
     addProperty(component, { name: 'textSetFinal', default: 'Finale' });
     addProperty(component, { name: 'textSetNonFinal', default: 'Non finale' });
-    addProperty(component, { name: 'textRename', default: 'Renommer' });
-    addProperty(component, { name: 'textDelete', default: 'Supprimer' });
+    addProperty(component, { name: 'textRenameState', default: 'Renommer' });
+    addProperty(component, { name: 'textDeleteState', default: 'Supprimer' });
+    addProperty(component, { name: 'textRenameSymbol', default: 'Changer étiquette' });
+    addProperty(component, { name: 'textDeleteSymbol', default: 'Supprimer étiquette' });
 
     createGetterSetter(component, 'initialStates');
     createGetterSetter(component, 'acceptingStates');
@@ -134,7 +136,7 @@ editors.forEach((editor) => {
             }
 
             actions.push({
-                name: this.textRename,
+                name: this.textRenameState,
                 action: async () => {
                     const title = 'État';
                     const hint = 'Entrez un nouveau nom';
@@ -195,7 +197,7 @@ editors.forEach((editor) => {
             });
 
             actions.push({
-                name: this.textDelete,
+                name: this.textDeleteState,
                 action: () => {
                     this.removeState(stateName);
                     this.removeFinal(stateName);
@@ -227,7 +229,7 @@ editors.forEach((editor) => {
             const canvas = (connection).canvas;
             canvas.classList.add('focused');
             actions.push({
-                name: 'Changer Étiquette',
+                name: this.textRenameSymbol,
                 action: async () => {
                     const s = this.connection.endpoints[0];
                     const t = this.connection.endpoints[1];
@@ -241,8 +243,7 @@ editors.forEach((editor) => {
                     submitOnEnter();
     
                     const title = 'Transition';
-                    const hint =
-                        'Entrez les symboles en les séparant par une virgule';
+                    const hint = 'Entrez les symboles en les séparant par une virgule';
                     const input = await this.prompt(
                         title,
                         hint,
@@ -258,13 +259,9 @@ editors.forEach((editor) => {
                             .filter((symbol) => !!symbol);
 
                         if (symbols.length === 0) {
-                            alert(
-                                'Vous devez saisir les symboles en les séparant par une virgule'
-                            );
+                            alert('Vous devez saisir les symboles en les séparant par une virgule');
                         } else {
-                            this.connection
-                                .getOverlay('transition')
-                                .setLabel(symbols.join(','));
+                            this.connection.getOverlay('transition').setLabel(symbols.join(','));
                             transition.symbols = symbols;
                         }
 
@@ -274,7 +271,7 @@ editors.forEach((editor) => {
             });
 
             actions.push({
-                name: 'Supprimer Transition',
+                name: this.textDeleteSymbol,
                 action: async () => {
                     const s = this.connection.endpoints[0];
                     const t = this.connection.endpoints[1];
