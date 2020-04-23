@@ -6,7 +6,7 @@ extends= /ComputerScience/python/template/pltestblonde.pl
 builder= /builder/before.py
 
 author = Anthony Labarre
-title = Arbres (et forêts) couvrants de poids minimum
+title = Arbres couvrants de poids minimum: Prim
 text==
 Écrivez une fonction acpm_prim(graphe, sommet), qui prend en paramètres un graphe et un sommet de départ et renvoie un ACPM pour la composante connexe du sommet donné en suivant l'algorithme de Prim.
 ==
