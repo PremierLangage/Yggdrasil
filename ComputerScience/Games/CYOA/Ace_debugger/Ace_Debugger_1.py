@@ -152,7 +152,7 @@
             
             ['9', "Demander à voir le main du programme d'Yves."],
             
-            ['10', "Annoncer que vous pensez savoir où se trouve le bug.", "audace+=1"],
+            ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
         ]
     ],
 
