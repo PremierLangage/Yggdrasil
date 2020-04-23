@@ -142,7 +142,7 @@ editors.forEach((editor) => {
                     const hint = 'Entrez un nouveau nom';
                     submitOnEnter();    
                     let newState = await this.prompt(title, hint, stateName);
-                    if (newState !== false) {
+                    if (newState) {
                         newState = newState.trim();
                         if (this.automaton.states.includes(newState)) {
                             alert('Il existe déjà un état avec ce nom !');
