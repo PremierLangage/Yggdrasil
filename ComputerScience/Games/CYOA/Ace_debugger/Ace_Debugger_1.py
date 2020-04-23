@@ -881,7 +881,11 @@
 
         "<u><b>Points d'audace (tête brulée) :</b></u> +{{ audace }}<br />"
 
-        "<u><b>Points de panache (avec style) :</b></u> +{{ panache }}<br />",
+        "<u><b>Points de panache (avec style) :</b></u> +{{ panache }}<br /><br />"
+        
+        "<u><b>Nombre d'étapes traversées :</b></u> +{{ nb_total_step }}<br />"
+        
+        "<u><b>Efficacité :</b></u> +{{ nb_total_step }} sur 100<br />",
 
         [
         ]
