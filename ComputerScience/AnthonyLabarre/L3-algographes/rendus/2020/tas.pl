@@ -36,7 +36,7 @@ import corrlib_graphes
 testname1 = Vérification de la classe Tas sur des entiers
 pltest1== 
 >>> # création d'un tas d'entiers aléatoires
->>> from random import randint; donnees = [randint(-100, 100) for _ in range(10)]; 
+>>> from random import randint; donnees = [randint(-100, 100) for _ in range(10)] #
 >>> try:
 ...     T = Tas()  # initialisation sans paramètre
 ... except TypeError:
