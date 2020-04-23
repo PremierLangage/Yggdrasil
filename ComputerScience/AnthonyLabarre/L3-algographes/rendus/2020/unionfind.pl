@@ -1,22 +1,13 @@
-# Test d'une classe Graphe implémentant un graphe pondéré non orienté.
+# Test d'une classe UnionFind implémentant la gestion d'ensembles disjoints.
 @ /utils/sandboxio.py
 @ unionfind.py
-@ corrlib_graphes.py
 extends= /ComputerScience/python/template/pltestblonde.pl
 builder= /builder/before.py
 
 author = Anthony Labarre
-title = Arbres (et forêts) couvrants de poids minimum
+title = UnionFind
 text==
-Écrivez: 
-<ul>
-<li>une classe Graphe implémentant un graphe pondéré non orienté
-<li>une classe Tas implémentant une file à priorité
-<li>une classe UnionFind
-<li>acpm_prim(graphe, sommet), qui prend en paramètres un graphe et un sommet de départ et renvoie un ACPM pour la composante connexe du sommet donné en suivant l'algorithme de Prim;
-<li>acpm_kruskal(graphe), qui prend en paramètre un graphe et renvoie la forêt couvrante de poids minimum pour ce graphe en suivant l'algorithme de Kruskal;
-<li>fcpm_prim(graphe), qui prend en paramètre un graphe et renvoie la forêt couvrante de poids minimum pour ce graphe en suivant l'algorithme de Prim.
-</ul>
+Écrivez une classe UnionFind implémentant la gestion d'ensembles disjoints.
 ==
 
 for_dr_dont_touch==
@@ -25,17 +16,12 @@ class Graphe:
         return [0, 1, 2, 3]
 ==
 
-# Mon code
-before==
-import corrlib_graphes
-==
 
 # Les tests:
 
-
 # Vérifications basiques de la classe UnionFind
-testname3 = Vérifications basiques de la classe UnionFind
-pltest3==
+testname0 = Vérifications basiques de la classe UnionFind
+pltest0==
 >>> # initialisation d'un ensemble de singletons
 >>> import itertools, random, unionfind; n = 50; ma_structure = unionfind.UnionFind(range(n)); sa_structure = UnionFind(range(n))
 >>> # fusions aléatoires
