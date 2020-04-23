@@ -885,7 +885,7 @@
         
         "<u><b>Nombre d'étapes traversées :</b></u> +{{ nb_total_step }}<br />"
         
-        "<u><b>Efficacité :</b></u> {{ 100 - ( (100*(nb_total_step-8)) /(nb_total_step) ) }} sur 100<br />",
+        "<u><b>Efficacité :</b></u> {{ Math.round(100 - ( (100*(nb_total_step-8)) /(nb_total_step) )) }} sur 100<br />",
 
         [
         ]
