@@ -12,7 +12,7 @@ message = {
 
 editor.debug = False
 editor.editorHeight = "520px"
-
+editor.textSetInitial = 'I'
 alphabet, letter, occurences, viewer = Generator.counting(
     2, # max_symbs
     2, # max_word_length
@@ -33,5 +33,6 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solutio
 </p>
 {% endif %}
 ==
+
 
 
