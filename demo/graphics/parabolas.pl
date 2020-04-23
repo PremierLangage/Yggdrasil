@@ -16,7 +16,7 @@ for i in range(n):
     x = np.arange(-5, 5, 0.01)
     y = (x - 2)**2
     plt.plot(x, y)
-    plt.title(f"Figure {i}")
+    plt.title(f"Figure {i+1}")
     plt.grid(True)
     source.append(fig2base64(plt.gcf(), format="png"))
     plt.clf()
