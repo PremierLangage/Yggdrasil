@@ -186,7 +186,7 @@ editors.forEach((editor) => {
                                 }
                             });
                             
-                            this.node.innerHTML = stateName = newState;
+                            this.node.innerHTML = node.id = newState;
                             this.node.innerHTML += '<div class="endpoint"></div>'
                         }
                     }
