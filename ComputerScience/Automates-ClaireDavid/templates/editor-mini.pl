@@ -1,7 +1,13 @@
+## A finir
+
 extends = editor.pl
 
 evaluator== #|py|
 from automaton import Automaton
+
+
+#* feedback shown after a timeout.
+feedback_nondet = <p class="warning-state">L'automate n'est pas deterministe</p>
 
 if attempt >= maxattempt: # timeout
     grade = (score, feedback_timeout)
@@ -14,6 +20,9 @@ else:
         grade = (-1, feedback_syntax_error.format(error))
     elif match is True:
 #        infos, _ = Automaton.informations(editor)
+        if not infos[deterministic]:
+            score = 0 
+            grade(score,fee
         score = 100
         grade = (score, feedback_match)
     else:
