@@ -6,7 +6,6 @@ scheme =$ /Biology/media/550px-Cranial_bones_numbers.svg.png
 title = Os de la voûte cranienne
 
 before==#|python|
-import random as rd
 from customdragdrop import DragDropGroup
 
 mygroup = DragDropGroup()
