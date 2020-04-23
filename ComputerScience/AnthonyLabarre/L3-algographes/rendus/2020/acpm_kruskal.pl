@@ -7,7 +7,7 @@ extends= /ComputerScience/python/template/pltestblonde.pl
 builder= /builder/before.py
 
 author = Anthony Labarre
-title = Arbres (et forêts) couvrants de poids minimum: Kruskal.
+title = Kruskal: Arbres (et forêts) couvrants de poids minimum.
 text==
 Écrivez une fonction acpm_kruskal(graphe), qui prend en paramètre un graphe et renvoie la forêt couvrante de poids minimum pour ce graphe en suivant l'algorithme de Kruskal.
 ==
@@ -82,6 +82,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
