@@ -71,6 +71,7 @@ if __name__ == "__main__":
     context['game_data'] = game_data
 
     # This is HARCODED : the first step must have for key the srting '1'
+    context['nb_total_step'] = 1
     context['current_step'] = "1"
     code_init = compile(context['game_data']['1'][0], "init", "exec")
     exec(code_init, context, context)
@@ -88,6 +89,7 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(context if context else get_context(), unpicklable=False))
         
     sys.exit(0)
+
 
 
 
