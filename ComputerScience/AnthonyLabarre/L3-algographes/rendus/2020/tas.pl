@@ -16,6 +16,7 @@ class Graphe:
     def sommets(dummy):
         return [0, 1, 2, 3]
 ==
+taboo = heapq
 
 
 # Les tests:
