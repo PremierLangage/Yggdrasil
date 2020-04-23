@@ -33,6 +33,7 @@ import corrlib_graphes
 # Les tests:
 
 # Vérification de la classe Tas sur des entiers
+# TODO: s'arranger pour que le test marche même si le constructeur s'attend à un itérable
 testname1 = Vérification de la classe Tas sur des entiers
 pltest1== 
 >>> # création d'un tas d'entiers aléatoires
@@ -47,6 +48,7 @@ pltest1==
 
 # Vérification de la classe Tas sur des triplets (premier élément = critère pour le minimum)
 
+# TODO: s'arranger pour que le test marche même si le constructeur s'attend à un itérable
 testname2 = Vérification de la classe Tas sur des triplets (premier élément = critère pour le minimum)
 pltest2==
 >>> # création d'une liste de triplets aléatoires
@@ -76,6 +78,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
