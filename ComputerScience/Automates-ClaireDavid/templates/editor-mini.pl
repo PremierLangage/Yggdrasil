@@ -6,7 +6,10 @@ evaluator== #|py|
 from automaton import Automaton
 
 
-#* feedback shown after a timeout.
+#* feedback when the automaton is non deterministic or not complete.
+feedback_nondet = <p class="warning-state">L'automate correspond au langage mais n'est pas deterministe complet.</p>
+
+#* feedback when the automaton is not minimal.
 feedback_nondet = <p class="warning-state">L'automate correspond au langage mais n'est pas deterministe complet.</p>
 
 if attempt >= maxattempt: # timeout
