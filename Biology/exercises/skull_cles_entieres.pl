@@ -33,8 +33,8 @@ form ==
 </ul>
 </div>
 <div style="display: block"> 
-{% for key in mygroup.labels %}
-    {{ label[key]|component }} 
+{% for key,value in mygroup.labels.items() %}
+    {{ value|component }} 
 {% endfor %}
 </div>
 ==
