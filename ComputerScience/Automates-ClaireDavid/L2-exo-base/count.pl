@@ -1,7 +1,5 @@
 extends = ../templates/editor-L2.pl
 
-maxattempt = 1
-
 generate== #|py|
 import random
 from generator import Generator
@@ -37,6 +35,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution
 {% endif %}
 
 ==
+
 
 
 
