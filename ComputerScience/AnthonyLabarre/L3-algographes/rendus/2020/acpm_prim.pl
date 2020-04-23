@@ -6,7 +6,7 @@ extends= /ComputerScience/python/template/pltestblonde.pl
 builder= /builder/before.py
 
 author = Anthony Labarre
-title = Arbres couvrants de poids minimum: Prim sur un graphe connexe.
+title = Prim - Arbres couvrants de poids minimum: Prim sur un graphe connexe.
 text==
 Écrivez une fonction acpm_prim(graphe, sommet), qui prend en paramètres un graphe et un sommet de départ et renvoie un ACPM pour la composante connexe du sommet donné en suivant l'algorithme de Prim.
 ==
@@ -63,6 +63,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
