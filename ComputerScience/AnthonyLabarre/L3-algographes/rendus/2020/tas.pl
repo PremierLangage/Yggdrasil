@@ -54,8 +54,6 @@ pltest2==
 ...         print("attendu: un triplet avec première valeur =", elem[0], ", obtenu: un triplet avec première valeur =", extraction[0])
 ==
 
-
-
 # Le grader:
 #@ /grader/evaluator.py [grader.py]
 evaluator==
@@ -83,6 +81,7 @@ class Tas(object):
         pass  # à compléter
 
 ==
+
 
 
 
