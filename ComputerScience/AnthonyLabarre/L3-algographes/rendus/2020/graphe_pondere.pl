@@ -53,10 +53,6 @@ pltest0==
 [-2, -1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 6, 6, 7, 8, 8, 9]
 ==
 
-# TODO: je ne vérifie pas que le graphe accepte autre chose que des entiers comme sommets, mais il faudrait s'assurer qu'un ensemble quelconque d'entiers convient (ce qui exclut la matrice
-# d'adjacence)
-
-
 # Le grader:
 #@ /grader/evaluator.py [grader.py]
 evaluator==
