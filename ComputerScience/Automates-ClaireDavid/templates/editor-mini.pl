@@ -7,7 +7,7 @@ from automaton import Automaton
 
 
 #* feedback shown after a timeout.
-feedback_nondet = <p class="warning-state">L'automate correspondt au langage mais n'est pas deterministe</p>
+feedback_nondet = <p class="warning-state">L'automate correspond au langage mais n'est pas deterministe</p>
 
 if attempt >= maxattempt: # timeout
     grade = (score, feedback_timeout)
@@ -21,12 +21,12 @@ else:
     elif match is True:
         infos_editor , _ = Automaton.properties(editor)
         info_viewer , _ = Automaton.properties(viewer)
-        if not infos_editor[deterministic]:
+        if not infos_editor[deterministic] or infos_editor[complete]:
             score = 0 
             grade(score,feedback_nondet)
         elif len(infos_viewer[states]) == len(infos_editor[states])
             score = 100
-            grade = (score, feedback_match)
+            grade = (score, feedback_non_mini)
         else
             score = 0
     else:
