@@ -231,9 +231,7 @@ editors.forEach((editor) => {
                             e.toState === t.elementId
                         );
                     });
-
                     submitOnEnter();
-    
                     const title = 'Transition';
                     const hint = 'Entrez les symboles en les séparant par une virgule';
                     const input = await this.prompt(
@@ -241,7 +239,6 @@ editors.forEach((editor) => {
                         hint,
                         transition.symbols.join(',')
                     );
-
                     if (input !== false) {
                         const symbols = input
                             .split(',')
@@ -256,7 +253,6 @@ editors.forEach((editor) => {
                             this.connection.getOverlay('transition').setLabel(symbols.join(','));
                             transition.symbols = symbols;
                         }
-
                         this.updateAlphabet();
                     }
                 }
