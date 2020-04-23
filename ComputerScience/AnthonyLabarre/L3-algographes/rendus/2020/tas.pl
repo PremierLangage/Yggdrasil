@@ -33,7 +33,6 @@ import corrlib_graphes
 # Les tests:
 
 # Vérification de la classe Tas sur des entiers
-# TODO: s'arranger pour que le test marche même si le constructeur s'attend à un itérable
 testname1 = Vérification de la classe Tas sur des entiers
 pltest1== 
 >>> # création d'un tas d'entiers aléatoires
@@ -52,11 +51,14 @@ pltest1==
 
 # Vérification de la classe Tas sur des triplets (premier élément = critère pour le minimum)
 
-# TODO: s'arranger pour que le test marche même si le constructeur s'attend à un itérable
 testname2 = Vérification de la classe Tas sur des triplets (premier élément = critère pour le minimum)
 pltest2==
 >>> # création d'une liste de triplets aléatoires
->>> from random import randint; donnees = [(randint(-100, 100), randint(-100, 100), randint(-100, 100)) for _ in range(10)]; T = Tas()
+>>> from random import randint; donnees = [(randint(-100, 100), randint(-100, 100), randint(-100, 100)) for _ in range(10)];
+>>> try:
+...     T = Tas()  # initialisation sans paramètre
+... except TypeError:
+...     T = Tas([])  # initialisation avec un itérable
 >>> for elem in donnees:
 ...     T.inserer(elem)
 >>> for elem in sorted(donnees):
@@ -82,6 +84,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
