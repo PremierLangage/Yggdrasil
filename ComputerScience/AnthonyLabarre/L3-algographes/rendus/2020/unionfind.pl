@@ -66,8 +66,22 @@ grade=(100,"bravo")
 editor.code ==
 # Saisissez votre code ici, et cliquez sur le bouton
 # de validation quand vous avez terminé
+class UnionFind(object):
+    """Implémentation de la structure de données Union-Find."""
+    def __init__(self, ensemble):
+        """Initialisation des structures de données nécessaires."""
+        pass  # à compléter
+
+    def find(self, element):
+        """Renvoie le numéro de la classe à laquelle appartient l'élément."""
+        pass  # à compléter
+
+    def union(self, premier, second):
+        """Fusionne les classes contenant les deux éléments donnés."""
+        pass  # à compléter
 
 ==
+
 
 
 
