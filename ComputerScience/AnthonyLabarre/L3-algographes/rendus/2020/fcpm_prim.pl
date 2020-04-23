@@ -29,7 +29,7 @@ class Graphe:
 # Les tests:
 
 # Vérifications de fcpm_prim sur un graphe non connexe
-testname6 = Vérifications de fcpm_prim sur un graphe non connexe
+testname6 = Vérifications de fcpm_prim sur un graphe non connexe (union du cours et du td)
 pltest6==
 >>> from corrlib_graphes import * #
 >>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS); G.ajouter_aretes(PRIM_INSTANCE_COURS) # initialisation
