@@ -8,7 +8,7 @@ builder= /builder/before.py
 author = Anthony Labarre
 title = Arbres (et forêts) couvrants de poids minimum
 text==
-Écrivez une fonction acpm_prim(graphe, sommet), qui prend en paramètres un graphe et un sommet de départ et renvoie un ACPM pour la composante connexe du sommet donné en suivant l'algorithme de Prim;
+Écrivez une fonction acpm_prim(graphe, sommet), qui prend en paramètres un graphe et un sommet de départ et renvoie un ACPM pour la composante connexe du sommet donné en suivant l'algorithme de Prim.
 ==
 
 for_dr_dont_touch==
