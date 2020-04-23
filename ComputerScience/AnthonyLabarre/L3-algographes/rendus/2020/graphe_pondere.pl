@@ -37,19 +37,19 @@ before==
 pltest0== 
 >>> G = Graphe()  # Existence d'une class Graphe
 >>> G.ajouter_aretes([(0, 2, -2), (1, 0, 4), (1, 2, 3), (2, 3, 2), (3, 1, -1)])  # ajout d'arêtes pondérées
->>> sorted(G.sommets()) 
+>>> sorted(G.sommets()) # vérification de l'ensemble des sommets
 [0, 1, 2, 3]
->>> sorted(sorted(_) + [poids] for *_, poids in G.aretes())
+>>> sorted(sorted(_) + [poids] for *_, poids in G.aretes()) # vérification de l'ensemble des arêtes
 [[0, 1, 4], [0, 2, -2], [1, 2, 3], [1, 3, -1], [2, 3, 2]]
->>> sorted(G.poids_arete(u, v) for u, v, *_ in G.aretes())
+>>> sorted(G.poids_arete(u, v) for u, v, *_ in G.aretes()) # vérification de l'ensemble des poids
 [-2, -1, 2, 3, 4]
 >>> from corrlib_graphes import PRIM_INSTANCE_TD #
 >>> G.ajouter_aretes(PRIM_INSTANCE_TD)
->>> sorted(G.sommets()) 
+>>> sorted(G.sommets()) # vérification des sommets (indices non consécutifs)
 [0, 1, 2, 3, 17, 18, 19, 20, 21, 22, 23]
->>> sorted(sorted(_) + [poids] for *_, poids in G.aretes())
+>>> sorted(sorted(_) + [poids] for *_, poids in G.aretes()) # vérification des arêtes (indices non consécutifs)
 [[0, 1, 4], [0, 2, -2], [1, 2, 3], [1, 3, -1], [2, 3, 2], [17, 18, 4], [17, 20, 3], [17, 21, 1], [17, 22, 8], [18, 19, 7], [18, 20, 2], [18, 21, 3], [19, 21, 8], [19, 22, 5], [19, 23, 4], [20, 21, 6], [21, 22, 9], [21, 23, 6], [22, 23, 2]]
->>> sorted(G.poids_arete(u, v) for u, v, *_ in G.aretes())
+>>> sorted(G.poids_arete(u, v) for u, v, *_ in G.aretes())  # vérification de l'ensemble des poids (indices non consécutifs)
 [-2, -1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 6, 6, 7, 8, 8, 9]
 ==
 
