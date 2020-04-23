@@ -34,6 +34,7 @@ import corrlib_graphes
 
 # Vérifications basiques de la classe Graphe
 #testname0 = Vérifications basiques de la classe Graphe
+# Tests d'indices non consécutifs pour les sommets => exclusion des listes et matrices d'adjacence
 pltest0== 
 >>> G = Graphe()  # Existence d'une class Graphe
 >>> G.ajouter_aretes([(0, 2, -2), (1, 0, 4), (1, 2, 3), (2, 3, 2), (3, 1, -1)])
