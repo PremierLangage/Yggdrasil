@@ -169,6 +169,11 @@ class DragDropGroup():
        if isinstance(matches, list):
             self._matches += [(self.get_label_by_content(label_content).cid, self.drops[drop].cid) for label_content in matches]
     
+    def shuffle_labels(self):
+        a = list(self.labels)
+        random.shuffle(a)
+        self.labels = dict(a)
+    
     def eval(self, display=True, grading_function= all_or_nothing, disabled=True):
         """ An answer is a pair (label drop). The evaluation uses 3 integers: total is the maximum number of correct answers which can be given 
         (depends on wether cloneable is True or False), num_right is the number of correct answers given (= pairs belonging to self.matches), num_wrong is the 
@@ -215,6 +220,7 @@ class DragDropGroup():
         
 
     
+
 
 
 
