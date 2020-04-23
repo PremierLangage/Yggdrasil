@@ -9,11 +9,6 @@ text==
 Écrivez une classe Tas implémentant une file à priorité.
 ==
 
-for_dr_dont_touch==
-class Graphe:
-    def sommets(dummy):
-        return [0, 1, 2, 3]
-==
 taboo=heapq
 
 
