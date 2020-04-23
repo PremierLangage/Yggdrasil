@@ -13,6 +13,7 @@ viewer = Automaton.parse('(a|b)*')
 alphabet = "a,b"
 #message = 'bb * a(b * a) *'
 
+editor.debug = False
 message = '(a+b)*'
 
 ==
