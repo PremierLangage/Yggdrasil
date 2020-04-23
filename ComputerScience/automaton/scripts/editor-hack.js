@@ -86,14 +86,13 @@ editors.forEach((editor) => {
         this.unfocus();
         this.node = node;
         this.connection = connection;
-
+        // CLICK ON STATE
         if (this.node) {
             this.node.classList.remove('focused');
             this.node.classList.add('focused');
             const isFinal = this.node.classList.contains(FINAL_STATE);
             const isInitial = this.node.classList.contains(INITIAL_STATE);
             const stateName = this.node.id;
-
             // INITIAL
             if (isInitial) {
                 actions.push({
@@ -114,7 +113,6 @@ editors.forEach((editor) => {
                     }
                 });
             }
-
             if (isFinal) {
                 actions.push({
                     name: this.textSetNonFinal,
@@ -218,7 +216,7 @@ editors.forEach((editor) => {
                 }
             });
         }
-
+        // CLICK ON TRANSITION
         if (this.connection) {
             const canvas = (connection).canvas;
             canvas.classList.add('focused');
