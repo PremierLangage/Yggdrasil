@@ -38,7 +38,7 @@ pltest6==
 41
 ==
 
-# Vérifications de acpm_kruskal sur un graphe non connexe
+# Vérifications de fcpm_prim sur un graphe non connexe
 testname3 = Vérifications de acpm_kruskal sur un graphe non connexe  (union du cours, du td et d'un graphe aléatoire)
 pltest3==
 >>> from corrlib_graphes import * #
@@ -64,6 +64,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
