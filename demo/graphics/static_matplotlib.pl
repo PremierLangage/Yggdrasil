@@ -6,7 +6,7 @@ before ==
 import matplotlib.pyplot as plt
 import numpy as np
 from plmpl import fig2base64
-  
+
 t = np.arange(0.0, 2.0, 0.01)
 s = 1 + np.sin(2*np.pi*t)
 plt.plot(t, s)
@@ -19,7 +19,7 @@ source = fig2base64(plt.gcf(), format="png")
 ==
 
 text ==
-<img src="data:image/png;base64,{{source}}" alt="Red dot" />
+<img src="data:image/png;base64,{{source}}" style="max-width: 45%; vertical-align:top; display: inline-block" />
 ==
 
 form ==
