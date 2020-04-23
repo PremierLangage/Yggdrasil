@@ -18,8 +18,8 @@ editor.editorHeight = "520px"
 
 
 alphabet, letter, occurences, viewer = Generator.counting(
-    2, # max_symbs
-    2, # max_word_length
+    3, # max_symbs
+    4, # max_word_length
     mode,
     sorted_alphabet=True
 )
