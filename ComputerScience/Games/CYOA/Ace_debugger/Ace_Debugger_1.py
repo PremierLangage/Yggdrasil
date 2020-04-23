@@ -354,7 +354,7 @@
 
 '10' :
     [
-        '',
+        'audace += 1',
 
         "<center><b>N.B. :</b> J'ai trouvé où se situe le bug !</center> <br /><br />"
         
