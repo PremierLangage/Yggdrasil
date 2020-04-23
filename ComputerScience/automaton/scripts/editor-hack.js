@@ -141,7 +141,7 @@ editors.forEach((editor) => {
                     const title = 'État';
                     const hint = 'Entrez un nouveau nom';
                     submitOnEnter();    
-                    const newState = await this.prompt(title, hint, stateName);
+                    let newState = await this.prompt(title, hint, stateName);
                     if (newState !== false) {
                         newState = newState.trim();
                         if (this.automaton.states.includes(newState)) {
