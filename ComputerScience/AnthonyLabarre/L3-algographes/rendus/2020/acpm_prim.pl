@@ -1,4 +1,4 @@
-# Test d'une classe Graphe implémentant un graphe pondéré non orienté.
+# Test d'une fonction acpm_prim.
 @ /utils/sandboxio.py
 @ unionfind.py
 @ corrlib_graphes.py
