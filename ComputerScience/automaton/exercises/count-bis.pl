@@ -12,6 +12,11 @@ messages = {
     1: 'au plus'
 }
 message = messages[mode]
+
+editor.debug = False
+editor.editorHeight = "520px"
+
+
 alphabet, letter, occurences, viewer = Generator.counting(
     2, # max_symbs
     2, # max_word_length
