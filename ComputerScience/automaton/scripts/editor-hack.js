@@ -2,9 +2,6 @@
 
 const editors = document.querySelectorAll('c-automaton-editor');
 
-/**
- * Hack to submit prompt dialog when user press Enter key and cancel when he press Escape key.
- */
 const submitOnEnter = () => {
     setTimeout(() => {
         const input = document.querySelector('app-prompt input');
