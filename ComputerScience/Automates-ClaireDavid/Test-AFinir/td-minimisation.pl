@@ -6,11 +6,11 @@ extends = ../templates/editor-mini.pl
 generate== #|py|
 #from automaton import Automaton
 
-viewer = Automaton.parse('ab(a|b|c)*')
+viewer = Automaton.parse('bb*a(b*a)*')
 
 #    l'alphabet
 alphabet = "a,b"
-message = "bb*a(b*a)*"
+message = 'bb*a(b*a)*'
 
 ==
 
