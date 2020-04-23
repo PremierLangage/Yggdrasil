@@ -40,7 +40,7 @@ pltest0==
 >>> sorted(G.poids_arete(u, v) for u, v, *_ in G.aretes()) # vérification de l'ensemble des poids
 [-2, -1, 2, 3, 4]
 >>> from corrlib_graphes import PRIM_INSTANCE_TD #
->>> G.ajouter_aretes(PRIM_INSTANCE_TD)
+>>> G.ajouter_aretes(PRIM_INSTANCE_TD) # ajout d'arêtes  (indices non consécutifs)
 >>> sorted(G.sommets()) # vérification des sommets (indices non consécutifs)
 [0, 1, 2, 3, 17, 18, 19, 20, 21, 22, 23]
 >>> sorted(sorted(_) + [poids] for *_, poids in G.aretes()) # vérification des arêtes (indices non consécutifs)
