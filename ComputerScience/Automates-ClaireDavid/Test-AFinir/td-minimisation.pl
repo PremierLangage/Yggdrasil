@@ -25,7 +25,7 @@ viewer = AutomatonEditor(
 
 #    l'alphabet
 alphabet = "a,b"
-message = "bb*a(b*a)*"
+message = "ba((a+b)(a+b))*"
 
 ==
 
