@@ -120,7 +120,7 @@
             
             ['9', "Demander à voir le main du programme d'Yves."],
             
-            ['10', "Annoncer que vous pensez savoir où se trouve le bug."]
+            ['10', "Annoncer que vous pensez savoir où se trouve le bug.", "audace+=1"]
         ]
     ],
 
@@ -152,7 +152,7 @@
             
             ['9', "Demander à voir le main du programme d'Yves."],
             
-            ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
+            ['10', "Annoncer que vous pensez savoir où se trouve le bug.", "audace+=1"],
         ]
     ],
 
@@ -191,7 +191,7 @@
             
             ['9', "Demander à voir le main du programme d'Yves."],
             
-            ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
+            ['10', "Annoncer que vous pensez savoir où se trouve le bug.", "audace+=1"],
         ]
     ],
 
@@ -227,7 +227,7 @@
             
             ['9', "Demander à voir le main du programme d'Yves."],
             
-            ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
+            ['10', "Annoncer que vous pensez savoir où se trouve le bug.", "audace+=1"],
         ]
     ],
     
@@ -270,7 +270,7 @@
             
             ['9', "Demander à voir le main du programme d'Yves."],
             
-            ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
+            ['10', "Annoncer que vous pensez savoir où se trouve le bug.", "audace+=1"],
         ]
     ],
     
@@ -309,7 +309,7 @@
             
             ['9', "Demander à voir le main du programme d'Yves."],
             
-            ['10', "Annoncer que vous pensez savoir où se trouve le bug."],
+            ['10', "Annoncer que vous pensez savoir où se trouve le bug.", "audace+=1"],
         ]
     ],
 
@@ -354,7 +354,7 @@
 
 '10' :
     [
-        'audace += 1',
+        'audace+=1',
 
         "<center><b>N.B. :</b> J'ai trouvé où se situe le bug !</center> <br /><br />"
         
@@ -473,7 +473,7 @@
 
             ['20', "Votre tableau <code>tab</code> n'est pas initialisé correctement." ],
 
-            ['16', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait..."]
+            ['16', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait...", "audace-=1"]
         ]
     ],
 
