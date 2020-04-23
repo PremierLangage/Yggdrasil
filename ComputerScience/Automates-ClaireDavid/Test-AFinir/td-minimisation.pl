@@ -10,7 +10,7 @@ viewer = Automaton.parse('bb*a(b*a)*')
 
 #    l'alphabet
 alphabet = "a,b"
-message = 'bb*a(b*a)*'
+message = 'bb * a(b *a)*'
 
 ==
 
