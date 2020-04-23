@@ -18,12 +18,12 @@ for i in range(n):
     plt.ylabel('voltage (mV)')
     plt.title('About as simple as it gets, folks')
     plt.grid(True)
-    source = fig2base64(plt.gcf(), format="png")
+    source.append(fig2base64(plt.gcf(), format="png"))
 
 ==
 
 text ==
-{% for i in range(4) %}
+{% for i in range(n) %}
 <img src="data:image/png;base64,{{source[i]}}" style="max-width: 300px; vertical-align:top; display: inline" />
 {% endfor %}
 ==
