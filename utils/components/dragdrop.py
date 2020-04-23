@@ -2,6 +2,23 @@ from components import Component
 from random import shuffle
 from uuid import uuid4
 
+class MyComponent(Component):
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+    def set_css(self, css_property, value): 
+        css_string = css_property + ':' + value + ';\n'   # the string to add in self.css
+        reg_ex = css_property + ":.+;" # the regular expression to search for the property in self.css
+
+        if re.findall(reg_ex, self.css):  # if self.css contains the property, replace it with the new values
+            re.sub(reg_ex, css_string, self.css)
+        else: # otherwise just add the property to self.css
+            self.css+=css_string
+
+
+
+
 def all_or_nothing(num_right=0, num_wrong = 0, total = 1):
     if num_right == total:
         return 100
@@ -198,6 +215,7 @@ class DragDropGroup():
         
 
     
+
 
 
 
