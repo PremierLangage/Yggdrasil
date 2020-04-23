@@ -29,29 +29,10 @@ PRIM_INSTANCE_TD = [
     (20, 21, 6), (21, 22, 9), (21, 23, 6), (22, 23, 2)
 ]
 
+PRIM_INSTANCE_ALEATOIRE = 
 
 # Fonctions diverses ----------------------------------------------------------
 
-# ----- Affichage -------------------------------------------------------------
-def cadre(message, delim='#'):
-    """Affiche:
-
-    ###########
-    # message #
-    ###########
-    """
-    bande = delim * (len(message) + 4) + "\n"
-    print((delim + " " + message + " " + delim + "\n").join([bande, bande]))
-
-
-def pretty_print(msg, success):
-    """Affichage d'un message au format "[ v ] ..." ou "[ x ] ..." selon que
-    success est True ou False. Sous Linux, le v est en vert gras et le x en
-    rouge gras."""
-    print(" ".join([SIGN[success], msg]))
-
-
-# ----- Autres ----------------------------------------------------------------
 def charger_module_etudiant(chemin, correction_deja_tentee=False):
     """Charge et renvoie le module spécifié."""
     try:
@@ -312,6 +293,7 @@ def aretes_ponderees(graphe):
     """Renvoie les aretes du graphe munies de leur poids (networkx ne permet
     apparemment pas de le faire directement)."""
     return [(u, v, graphe[u][v]['weight']) for u, v in graphe.edges()]
+
 
 
 
