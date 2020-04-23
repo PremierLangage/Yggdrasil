@@ -8,15 +8,7 @@ builder= /builder/before.py
 author = Anthony Labarre
 title = Arbres (et forêts) couvrants de poids minimum
 text==
-Écrivez: 
-<ul>
-<li>une classe Graphe implémentant un graphe pondéré non orienté
-<li>une classe Tas implémentant une file à priorité
-<li>une classe UnionFind
-<li>acpm_prim(graphe, sommet), qui prend en paramètres un graphe et un sommet de départ et renvoie un ACPM pour la composante connexe du sommet donné en suivant l'algorithme de Prim;
-<li>acpm_kruskal(graphe), qui prend en paramètre un graphe et renvoie la forêt couvrante de poids minimum pour ce graphe en suivant l'algorithme de Kruskal;
-<li>fcpm_prim(graphe), qui prend en paramètre un graphe et renvoie la forêt couvrante de poids minimum pour ce graphe en suivant l'algorithme de Prim.
-</ul>
+Écrivez une classe Graphe implémentant un graphe pondéré non orienté.
 ==
 
 for_dr_dont_touch==
@@ -61,4 +53,5 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
