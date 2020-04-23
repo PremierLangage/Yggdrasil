@@ -795,7 +795,7 @@
         [
             ['21', "Le tri monte un cran trop loin et trie une valeur en trop."],
 
-            ['23', "Avec un tableau d'entiers non signés, vous n'auriez peut-être jamais vu votre bug."],
+            ['23', "Avec un tableau d'entiers non signés, vous n'auriez peut-être jamais vu votre bug.", "panache+=1"],
         ]
     ],
 
@@ -858,7 +858,7 @@
         [
             ['21', "Le tri monte un cran trop loin et trie une valeur en trop."],
 
-            ['22', "Le tri à bulles est bien correct, le bug n'est pas là."],
+            ['22', "Le tri à bulles est bien correct, le bug n'est pas là.", "confiance-=2"],
 
             ['23', "Avec un tableau d'entiers non signés, vous n'auriez peut-être jamais vu votre bug."],
         ]
