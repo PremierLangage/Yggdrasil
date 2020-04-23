@@ -3,8 +3,6 @@ extends = /model/math.pl
 title = Paraboles
 
 radio =: RadioGroup
-# Les deux lignes suivantes sont temporaires.
-@ /utils/components/radio.py [customradio.py]
 radio.decorator = CustomRadio
 
 before ==
