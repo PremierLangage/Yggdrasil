@@ -7,7 +7,7 @@ extends= /ComputerScience/python/template/pltestblonde.pl
 builder= /builder/before.py
 
 author = Anthony Labarre
-title = Prim - Arbres (et forêts) couvrants de poids minimum
+title = Prim - Forêts couvrantes de poids minimum
 text==
 Écrivez: 
 <ul>
