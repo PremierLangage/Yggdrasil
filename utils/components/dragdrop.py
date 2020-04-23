@@ -170,7 +170,7 @@ class DragDropGroup():
             self._matches += [(self.get_label_by_content(label_content).cid, self.drops[drop].cid) for label_content in matches]
     
     def shuffle_labels(self):
-        a = list(self.labels)
+        a = list(self.labels.items())
         shuffle(a)
         self.labels = dict(a)
     
