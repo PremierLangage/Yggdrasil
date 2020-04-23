@@ -12,8 +12,13 @@ messages = {
     1: 'au plus'
 }
 message = messages[mode]
-# counting( nb lettres alphabet, nb occurences demandées , mode)
-alphabet, letter, n, viewer = Generator.counting(3, 4, mode)
+alphabet, letter, occurences, viewer = Generator.counting(
+    2, # max_symbs
+    2, # max_word_length
+    mode,
+    sorted_alphabet=True
+)
+alphabet = ', '.join(list(alphabet))
 ==
 
 title = Nombre d'occurences
@@ -27,6 +32,8 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution
 {% endif %}
 
 ==
+
+
 
 
 
