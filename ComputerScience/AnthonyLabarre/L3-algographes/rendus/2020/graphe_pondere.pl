@@ -43,7 +43,12 @@ pltest0==
 [[0, 1, 4], [0, 2, -2], [1, 2, 3], [1, 3, -1], [2, 3, 2]]
 >>> sorted(G.poids_arete(u, v) for u, v, *_ in G.aretes())
 [-2, -1, 2, 3, 4]
->>> from corrlib_graphes import PRIM_INSTANCE_TD
+>>> from corrlib_graphes import PRIM_INSTANCE_TD #
+>>> G.ajouter_aretes(PRIM_INSTANCE_TD)
+>>> sorted(sorted(_) + [poids] for *_, poids in G.aretes())
+[[0, 1, 4], [0, 2, -2], [1, 2, 3], [1, 3, -1], [2, 3, 2]]
+>>> sorted(G.poids_arete(u, v) for u, v, *_ in G.aretes())
+[-2, -1, 2, 3, 4]
 ==
 
 # TODO: je ne vérifie pas que le graphe accepte autre chose que des entiers comme sommets, mais il faudrait s'assurer qu'un ensemble quelconque d'entiers convient (ce qui exclut la matrice
