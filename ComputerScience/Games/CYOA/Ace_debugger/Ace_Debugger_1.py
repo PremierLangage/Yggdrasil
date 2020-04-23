@@ -407,7 +407,7 @@
 
             ['15', "Il y a une erreur dans la fonction d'affichage !"],
 
-            ['16', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait..."]
+            ['16', "Euh... J'ai dû me tromper car cela m'a l'air correct en fait...", "audace -= 1"]
         ]
     ],
 
