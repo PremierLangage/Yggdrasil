@@ -14,7 +14,7 @@ a = list_randint_norep(4,-2,2)
 b = list_randint_norep(4,-2,2)
 
 for i in range(n):
-    x = np.arange(-5, 6, 0.01)
+    x = np.arange(-6, 6, 0.01)
     y = (x - a[i])**2 + b[i]
     plt.plot(x, y)
     plt.title(f"Figure {i+1}")
