@@ -1,5 +1,5 @@
 
-# Test d'une classe Graphe implémentant un graphe pondéré non orienté.
+# Test d'une fonction fcpm_prim.
 @ /utils/sandboxio.py
 @ unionfind.py
 @ corrlib_graphes.py
@@ -64,6 +64,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
