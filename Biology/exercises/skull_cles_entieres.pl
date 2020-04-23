@@ -34,7 +34,7 @@ form ==
 </ul>
 </div>
 <div style="display: block"> 
-{% for label in mygroup.labels %}
+{% for label in mygroup.labels.values() %}
     {{ label|component }} 
 {% endfor %}
 </div>
