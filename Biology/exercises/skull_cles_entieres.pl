@@ -17,6 +17,8 @@ for i in range(1,6):
     mygroup.add_match_by_name(i, i) 
 
 mygroup.shuffle_labels()
+mygroup.shuffle_labels()
+mygroup.shuffle_labels()
 ==
 
 text ==
