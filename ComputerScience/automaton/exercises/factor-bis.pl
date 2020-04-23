@@ -51,7 +51,7 @@ On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage **L1** = {{ '{' }}  mots qui {{ bla }} par **{{ mot }}** {{ '}' }} <br>
 {% if attempt < maxattempt and score != 100 %}
 <p class="warning-state">
-Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solution !
+Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 
