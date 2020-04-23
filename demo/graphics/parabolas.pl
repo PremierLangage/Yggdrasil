@@ -10,12 +10,12 @@ from plmpl import fig2base64
 n = 4
 source = []
 
+
+
 for i in range(n):
-    t = np.arange(0.0, 2.0, 0.01)
-    s = 1 + np.sin(2*np.pi*t)
+    x = np.arange(-5, 5, 0.01)
+    y = (x - 2)**2
     plt.plot(t, s)
-    plt.xlabel('time (s)')
-    plt.ylabel('voltage (mV)')
     plt.title('About as simple as it gets, folks')
     plt.grid(True)
     source.append(fig2base64(plt.gcf(), format="png"))
