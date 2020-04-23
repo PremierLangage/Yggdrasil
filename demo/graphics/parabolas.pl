@@ -13,10 +13,11 @@ source = []
 a = list_randint_norep(4,-2,2)
 b = list_randint_norep(4,-2,2)
 
+expr = 
 for i in range(n):
-    x = np.arange(-6, 6, 0.01)
-    y = (x - a[i])**2 + b[i]
-    plt.plot(x, y)
+    abs = np.arange(-6, 6, 0.01)
+    ord = (abs - a[i])**2 + b[i]
+    plt.plot(abs, ord)
     plt.title(f"Figure {i+1}")
     plt.grid(True)
     source.append(fig2base64(plt.gcf(), format="png"))
