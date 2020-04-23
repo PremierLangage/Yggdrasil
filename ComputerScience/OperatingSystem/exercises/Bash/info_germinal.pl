@@ -31,7 +31,7 @@ things = [("le nombre de lignes vides", "3283\n"),
           ("le nombre de lignes se terminant par un point d'exclamation", "375\n"),
           ("le nombre de lignes composées uniquement de lettres majuscules", "40\n"),
           ("le nombre de lignes contenant un mot de 16 lettres minuscules ou plus", "25\n"),
-          ("le nombre de lignes contenant un chiffre", "16\n")]
+          ("le nombre de lignes contenant un chiffre", "12\n")]
 (name_thing, expected_stdout) = random.choice(things)
 ==
 
@@ -42,6 +42,7 @@ qui affiche **{{ name_thing }}** apparaissant dans le fichier. Débrouillez
 vous pour que votre résultat numérique soit affiché seul sur une ligne. N'hésitez pas à
 faire plusieurs essais.
 ==
+
 
 
 
