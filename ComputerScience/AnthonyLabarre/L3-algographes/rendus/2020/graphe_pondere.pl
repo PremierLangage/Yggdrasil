@@ -28,7 +28,7 @@ class Graphe:
 # Les tests:
 
 # Vérifications basiques de la classe Graphe
-#testname0 = Vérifications basiques de la classe Graphe
+testname0 = Vérifications basiques de la classe Graphe
 # Tests d'indices non consécutifs pour les sommets => exclusion des listes et matrices d'adjacence
 pltest0== 
 >>> G = Graphe()  # Existence d'une class Graphe
