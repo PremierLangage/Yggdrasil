@@ -19,7 +19,7 @@ source = fig2base64(plt.gcf(), format="png")
 ==
 
 text ==
-<img src="data:image/png;base64,{{source}}" style="max-width: 45%; vertical-align:top; display: inline-block" />
+<img src="data:image/png;base64,{{source}}" style="max-width: 45%; vertical-align:top; display: inline" />
 ==
 
 form ==
