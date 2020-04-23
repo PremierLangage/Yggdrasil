@@ -178,8 +178,12 @@ def poids_fcpm(liste_aretes_ponderees):
     liste de triplets au format (u, v, poids)."""
     graphe = nx.Graph()
     graphe.add_weighted_edges_from(liste_aretes_ponderees)
-    fcpm = networkx.algorithms.tree.minimum_spanning_tree(graphe, algorithm='prim')
-    return sum(mon_graphe[u][v]['weight'] for u, v in mon_acpm.edges())   
+    return sum(
+        graphe[u][v]['weight']
+        for u, v in networkx.algorithms.tree.minimum_spanning_tree(
+            graphe, algorithm='prim'
+        ).edges()
+    )
 
 
 # ----- Classification --------------------------------------------------------
