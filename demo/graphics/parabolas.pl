@@ -23,7 +23,7 @@ for i in range(n):
     plt.plot(abs, ord)
     plt.title(f"Figure {i+1}")
     plt.grid(True)
-    plt.gca().set_ylim((-5, 10))
+    plt.gca().set_ylim((-6, 10))
     source.append(fig2base64(plt.gcf(), format="png"))
     plt.clf()
 
