@@ -13,12 +13,15 @@ from plmpl import fig2base64
 n = 4
 source = []
 
-a = list_randint_norep(4,-2,2)
-b = list_randint_norep(4,-5,5)
+a = list_randint_norep(n,-2,2)
+b = list_randint_norep(n,-5,5)
 
 sol = randint(1,4)
+radio.setitems([f"Figure {i+1}" for i in range(n)])
+radio.setsol_from_index(sol)
+
 var('x')
-expr = (x - a[sol-1])**2 + b[sol-1]
+expr = (x - a[sol])**2 + b[sol]
 
 for i in range(n):
     abs = np.arange(-2.5, 2.5, 0.01)
