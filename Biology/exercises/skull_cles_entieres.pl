@@ -17,8 +17,6 @@ for i in range(1,6):
     mygroup.add_match_by_name(i, i) 
 
 mygroup.shuffle_labels()
-mygroup.shuffle_labels()
-mygroup.shuffle_labels()
 ==
 
 text ==
@@ -35,8 +33,8 @@ form ==
 </ul>
 </div>
 <div style="display: block"> 
-{% for label in mygroup.labels.values() %}
-    {{ label|component }} 
+{% for key in mygroup.labels %}
+    {{ label[key]|component }} 
 {% endfor %}
 </div>
 ==
