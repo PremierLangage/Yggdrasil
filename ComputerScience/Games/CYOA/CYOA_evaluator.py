@@ -34,6 +34,9 @@ if __name__ == "__main__":
         context['text'] += "<span style='color:red'><b>Veuillez selectionner une des alternatives avant de valider !!</b></span><br /> "
         output(-1, " ", context)
 
+    # Thus one more step...
+    context['nb_total_step'] += 1
+
     # Apply action inside the link
     for step_to in context['game_data'][context['current_step']][2]:
         if step_to[0] == context['group'].selection:
@@ -65,6 +68,7 @@ if __name__ == "__main__":
         output(grade, " ", context)
 
     output(-1, " ", context)
+
 
 
 
