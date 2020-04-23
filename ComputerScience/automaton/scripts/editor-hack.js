@@ -99,8 +99,8 @@ editors.forEach((editor) => {
                 actions.push({
                     name: this.textSetNonInitial,
                     action: () => {
-                        this.node.classList.remove(INITIAL_STATE);
                         this.removeInitial(stateName);
+                        this.node.classList.remove(INITIAL_STATE);
                         this.focus(this.node);
                     }
                 });
@@ -108,8 +108,8 @@ editors.forEach((editor) => {
                 actions.push({
                     name: this.textSetInitial,
                     action: () => {
-                        this.node.classList.add(INITIAL_STATE);
                         this.initialStates.push(stateName);
+                        this.node.classList.add(INITIAL_STATE);
                         this.focus(this.node);
                     }
                 });
@@ -119,8 +119,8 @@ editors.forEach((editor) => {
                 actions.push({
                     name: this.textSetNonFinal,
                     action: () => {
-                        this.node.classList.remove(FINAL_STATE);
                         this.removeFinal(stateName);
+                        this.node.classList.remove(FINAL_STATE);
                         this.focus(this.node);
                     }
                 });
@@ -128,8 +128,8 @@ editors.forEach((editor) => {
                     actions.push({
                     name: this.textSetFinal,
                     action: () => {
-                        this.node.classList.add(FINAL_STATE);
                         this.acceptingStates.push(stateName);
+                        this.node.classList.add(FINAL_STATE);
                         this.focus(this.node);
                     }
                 });
