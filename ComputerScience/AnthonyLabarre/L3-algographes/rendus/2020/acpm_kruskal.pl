@@ -53,8 +53,6 @@ pltest1==
 18
 ==
 
-
-
 testname2 = Vérifications de acpm_kruskal sur une instance aléatoire
 pltest2==
 >>> from corrlib_graphes import * #
