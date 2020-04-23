@@ -1,6 +1,6 @@
 extends = /model/math.pl
 
-title = Graphique
+title = Paraboles
 
 before ==
 import matplotlib.pyplot as plt
