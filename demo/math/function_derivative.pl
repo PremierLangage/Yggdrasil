@@ -1,16 +1,22 @@
 extends = /model/math.pl
 
-title = Calcul de dérivée
+title = Graphique
 
 input.virtualKeyboards = functions
 
 before ==
-var('x')
-a = rd.choice([-1, 1]) * rd.choice([Rational(1, 2), Rational(1, 3), 2, 3])
-b = rd.choice([Rational(1, 2), Rational(1, 3), 2, 3])
-g = rd.choice([sin, cos, exp, ln])
-f = a * g(b * x)
-sol = diff(f, x)
+import matplotlib.pyplot as plt
+import numpy as np
+    
+t = np.arange(0.0, 2.0, 0.01)
+s = 1 + np.sin(2*np.pi*t)
+plt.plot(t, s)
+plt.xlabel('time (s)')
+plt.ylabel('voltage (mV)')
+plt.title('About as simple as it gets, folks')
+plt.grid(True)
+
+source = mplfig2svg(plt.gcf())
 ==
 
 text ==
