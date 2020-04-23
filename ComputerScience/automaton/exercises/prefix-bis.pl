@@ -32,26 +32,35 @@ nb_lettres = random.choice([2,3])
 
 if mode == -1 :
     # Generator.prefix(nb lettres alphabet , longueur maxi du prefix)
-    alphabet, mot, viewer = Generator.prefix(nb_lettres,3)
+    alphabet, mot, viewer = Generator.prefix(nb_lettres,3,
+    sorted_alphabet=True)
 elif mode == 0 :
     # Generator.prefix(nb lettres alphabet , longueur maxi du facteur)
-    alphabet, mot, viewer = Generator.factor(nb_lettres,3)
+    alphabet, mot, viewer = Generator.factor(nb_lettres,3,
+    sorted_alphabet=True)
 else :
     # Generator.prefix(nb lettres alphabet , longueur maxi du suffixe)
-    alphabet, mot, viewer = Generator.suffix(nb_lettres,3)
+    alphabet, mot, viewer = Generator.suffix(nb_lettres,3,
+    sorted_alphabet=True)
+
+
+alphabet = ', '.join(list(alphabet))
 ==
 
 title = Préfixe
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
-Donnez un automate reconnaissant le langage **L1** = {{ '{' }}  mots qui {{ bla }} par **{{ mot }}** {{ '}' }} <br>
+Donnez un automate reconnaissant le langage **L1** = {{ '{' }}  mots qui {{ bla }}  **{{ mot }}** {{ '}' }} <br>
 {% if attempt < maxattempt and score != 100 %}
 <p class="warning-state">
-Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir une solution !
+Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 
 ==
+
+
+
 
 
 
