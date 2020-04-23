@@ -26,11 +26,6 @@ class Graphe:
         return [0, 1, 2, 3]
 ==
 
-# Mon code
-before==
-import corrlib_graphes
-==
-
 # Les tests:
 
 # Vérifications de fcpm_prim sur un graphe non connexe
