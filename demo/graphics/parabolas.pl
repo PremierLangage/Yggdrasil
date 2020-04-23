@@ -18,8 +18,8 @@ for i in range(n):
     plt.ylabel('voltage (mV)')
     plt.title('About as simple as it gets, folks')
     plt.grid(True)
-    plt.clf()
     source.append(fig2base64(plt.gcf(), format="png"))
+    plt.clf()
 
 ==
 
