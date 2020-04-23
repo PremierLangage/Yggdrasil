@@ -6,7 +6,7 @@ extends = ../templates/editor-mini.pl
 generate== #|py|
 #from automaton import Automaton
 
-Automaton.parse('ab(a|b|c)*')
+viewer = Automaton.parse('ab(a|b|c)*')
 
 #    l'alphabet
 alphabet = "a,b"
