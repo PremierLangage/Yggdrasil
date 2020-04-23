@@ -36,7 +36,7 @@ maxattempt = 3
 generate % null
 
 #* show solution after timeout
-show_soluce = True
+show_soluce = 0
 #* feedback shown after a good answer.
 feedback_match = 
 #* feedback shown after a bad answer.
