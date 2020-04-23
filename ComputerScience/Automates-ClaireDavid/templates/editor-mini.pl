@@ -17,13 +17,13 @@ if attempt >= maxattempt: # timeout
 else:
     attempt += 1
     match, error = Automaton.compare(viewer, editor)
+    infos_editor , _ = Automaton.editor_properties(editor)
+    info_viewer , _ = Automaton.properties(viewer)
     if  attempt >= maxattempt and (error or not match): # error or no match after timeout
         grade = (score, feedback_timeout)
     elif error:
         grade = (-1, feedback_syntax_error.format(error))
     elif match is True :
-        infos_editor , _ = Automaton.editor_properties(editor)
-        info_viewer , _ = Automaton.properties(viewer)
         if not (infos_editor[deterministic] and infos_editor[complete]):
             score = 0 
             grade(score,feedback_nondet)
