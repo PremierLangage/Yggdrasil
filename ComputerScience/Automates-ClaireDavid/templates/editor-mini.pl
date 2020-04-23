@@ -1,6 +1,6 @@
 ## A finir
 
-extends = editor.pl
+extends = editor-L2.pl
 
 evaluator== #|py|
 from automaton import Automaton
