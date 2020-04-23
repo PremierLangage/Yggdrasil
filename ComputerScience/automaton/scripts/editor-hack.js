@@ -2,7 +2,7 @@
 
 const editors = document.querySelectorAll('c-automaton-editor');
 
-const submitOnEnter = () => {
+const addKeyboardListenersToPromptInput = () => {
     setTimeout(() => {
         const input = document.querySelector('app-prompt input');
         const buttons = document.querySelectorAll('app-prompt .mat-button')
@@ -134,7 +134,7 @@ editors.forEach((editor) => {
                 action: async () => {
                     const title = 'État';
                     const hint = 'Entrez un nouveau nom';
-                    submitOnEnter();    
+                    addKeyboardListenersToPromptInput();    
                     let newState = await this.prompt(title, hint, stateName);
                     if (newState && newState.trim()) {
                         newState = newState.trim();
@@ -221,7 +221,7 @@ editors.forEach((editor) => {
                             e.toState === t.elementId
                         );
                     });
-                    submitOnEnter();
+                    addKeyboardListenersToPromptInput();
                     const title = 'Transition';
                     const hint = 'Entrez les symboles en les séparant par une virgule';
                     const input = await this.prompt(
