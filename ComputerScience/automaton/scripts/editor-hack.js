@@ -285,6 +285,7 @@ editors.forEach((editor) => {
                     );
                     this.instance.deleteConnection(this.connection);
                     this.focus(null, null);
+                    this.updateAlphabet();
                 }
             });
         }
