@@ -46,9 +46,10 @@ $$ y = {{expr.latex}} $$
 ==
 
 form ==
+{{ radio|component }}
 ==
 
 evaluator ==
-score = 100
+score = radio.eval()
 ==
 
