@@ -7,6 +7,7 @@ generate== #|py|
 #from automaton import Automaton
 
 viewer = bb*a(b*a)*
+
 #    l'alphabet
 alphabet = "a,b"
 message = "bb*a(b*a)*"
