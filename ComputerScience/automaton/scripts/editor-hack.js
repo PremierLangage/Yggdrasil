@@ -148,7 +148,6 @@ editors.forEach((editor) => {
                         if (this.automaton.states.includes(newState)) {
                             alert('Il existe déjà un état avec ce nom !');
                         } else {
-
                             // replace in states
                             this.states = [
                                 newState,
@@ -156,7 +155,6 @@ editors.forEach((editor) => {
                                     return state !== stateName;
                                 })
                             ];
-
                             // replace in initials
                             this.initialStates = this.initialStates.map(
                                 state => {
@@ -166,7 +164,6 @@ editors.forEach((editor) => {
                                     return state;
                                 }
                             );
-
                             // replace in finals
                             this.acceptingStates = this.acceptingStates.map(
                                 state => {
@@ -176,7 +173,7 @@ editors.forEach((editor) => {
                                     return state;
                                 }
                             );
-                            
+                            // replace in transitions
                             this.automaton.transitions.forEach(transition => {
                                 if (transition.fromState === stateName) {
                                     transition.fromState = newState;
@@ -185,12 +182,10 @@ editors.forEach((editor) => {
                                     transition.toState = newState;
                                 }
                             });
-                            
                             this.node.innerHTML = node.id = newState;
                             this.node.innerHTML += '<div class="endpoint"></div>'
                         }
                     }
-
                     this.updateAlphabet();
                     this.detectChanges();
                 }
