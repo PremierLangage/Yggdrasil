@@ -15,7 +15,7 @@ source = []
 for i in range(n):
     x = np.arange(-5, 5, 0.01)
     y = (x - 2)**2
-    plt.plot(t, s)
+    plt.plot(x, y)
     plt.title('About as simple as it gets, folks')
     plt.grid(True)
     source.append(fig2base64(plt.gcf(), format="png"))
