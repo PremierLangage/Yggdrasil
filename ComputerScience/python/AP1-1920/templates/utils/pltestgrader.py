@@ -56,8 +56,8 @@ if __name__ == "__main__":
             output(0, "Le mot clef "+mc+" est proscrit.")
             sys.exit(1)
 
-    if "pltest" not in dic and "pltest0" not in dic and "pltest1" not in dic:
-        print("add  either pltest or pltestN , or change the template ", file=sys.stderr)
+    if "pltest" not in dic and "pltest0" not in dic :
+        print("add  either pltest or pltest0..N , or change the template ", file=sys.stderr)
         sys.exit(1)
     if 'stopfirsterror' in dic:
         stop=bool(dic['stopfirsterror'])
@@ -73,34 +73,34 @@ if __name__ == "__main__":
 #        tester = SQLPlRunner(student,dic["soluce"])
 #        a, b = tester.runpltest(1)
 #    elif
+
+    
     if "pltest" in dic:
         pltest = dic['pltest']
         tester = PlRunner(student,pltest)
-        a, b = tester.runpltest(1)
+        testname = dic['testname'] if 'testname' in dic else "Groupe de test un"
+        a, b = tester.runpltest(testname)
+    elif "pltest0" in dic:
+        pltest = dic['pltest0']
+        tester = PlRunner(student,pltest)
+        testname = dic['testname0'] if 'testname0' in dic else "Groupe de test 0"
+        a, b = tester.runpltest(testname)
     else:
-        a,b= 100, ""
-    for i in range(10):
-        if "pltest"+str(i) in dic and (a or stop ) :
-            outstr += b
-            testi = PlRunner(student,dic["pltest"+str(i)])
-            a, b = testi.runpltest(i+1)
+
+        a,b= True, ""
+    i=1
+    while "pltest"+str(i) in dic and (a or stop ) :
+        outstr += b
+        testi = PlRunner(student,dic["pltest"+str(i)])
+        tname='testname'+str(i)
+        testname = dic[tname] if tname in dic else "Groupe de test "+str(i+1)
+        a, b = testi.runpltest(testname)
+        i=i+1
 
     outstr +=  b
-    if "feedback" in dic: # FIXME feedback devrait être un dictionnaire.
+    if "feedback" in dic: # FIXME feedback devrai être un dictionnaire.
         outstr += dic["feedback"]+" valeur de stop "+ str(stop)
-    
-    if "after" in dic and a !=100:
-        glob = {}
-        dic['StopBeforeExec'] = StopBeforeExec
-        #print(add_try_clause(dic['after'], StopBeforeExec), file=sys.stderr)
-        exec(add_try_clause(dic['after'], StopBeforeExec), dic)
-        exec("", glob)
-        for key in glob:
-            if key in dic and dic[key] == glob[key]:
-                del dic[key]
-
-    output(a,outstr,dic)
-    
+    output(a,outstr)
 
 
 
