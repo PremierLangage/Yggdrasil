@@ -16,7 +16,7 @@ source = []
 a = list_randint_norep(n,-2,2)
 b = list_randint_norep(n,-5,5)
 
-sol = randint(1,4)
+sol = randint(0,n-1)
 radio.setitems([f"Figure {i+1}" for i in range(n)])
 radio.setsol_from_index(sol)
 
