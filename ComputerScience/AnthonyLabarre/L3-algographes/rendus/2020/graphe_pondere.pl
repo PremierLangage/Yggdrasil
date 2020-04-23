@@ -25,10 +25,6 @@ class Graphe:
         return [0, 1, 2, 3]
 ==
 
-# Mon code
-before==
-==
-
 # Les tests:
 
 # Vérifications basiques de la classe Graphe
@@ -56,23 +52,13 @@ pltest0==
 # Le grader:
 #@ /grader/evaluator.py [grader.py]
 evaluator==
-
-
 grade=(100,"bravo")
 ==
 
-#
 # création de l'éditeur de code
 editor.code ==
 # Saisissez votre code ici, et cliquez sur le bouton
 # de validation quand vous avez terminé
 
 ==
-
-
-
-
-
-
-
 
