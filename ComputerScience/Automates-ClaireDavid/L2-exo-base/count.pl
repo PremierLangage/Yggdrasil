@@ -1,6 +1,4 @@
-extends = ../templates/editor.pl
-
-maxattempt = 10
+extends = ../templates/editor-L2.pl
 
 generate== #|py|
 import random
@@ -12,16 +10,24 @@ messages = {
     1: 'au plus'
 }
 message = messages[mode]
-# counting( nb lettres alphabet, nb occurences demandées , mode)
-alphabet, letter, n, viewer = Generator.counting(3, 4, mode)
 
+editor.debug = False
+editor.editorHeight = "520px"
+
+
+alphabet, letter, occurences, viewer = Generator.counting(
+    3, # max_symbs
+    4, # max_word_length
+    mode,
+    sorted_alphabet=True
+)
 alphabet = ', '.join(list(alphabet))
 ==
 
 title = Nombre d'occurences
-text ==
+text== #|html|
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
-Donnez un automate reconnaissant le langage **L1** = {{ '{' }} mots ayant {{ message }} **{{ n }}** occurrences de la lettre **{{ letter }}** {{ '}' }} <br>
+Donnez un automate reconnaissant le langage **L1** = {{ '{' }} mots ayant {{ message }} **{{ occurences }}** occurrences de la lettre **{{ letter }}** {{ '}' }} <br>
 {% if attempt < maxattempt and score != 100 %}
 <p class="warning-state">
 Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution !
@@ -29,6 +35,8 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution
 {% endif %}
 
 ==
+
+
 
 
 
