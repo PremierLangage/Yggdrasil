@@ -29,9 +29,6 @@ PRIM_INSTANCE_TD = [
     (20, 21, 6), (21, 22, 9), (21, 23, 6), (22, 23, 2)
 ]
 
-PRIM_INSTANCE_ALEATOIRE = aretes_ponderees(graphe_connexe_aleatoire_pondere(10))
-
-
 # Fonctions diverses ----------------------------------------------------------
 
 def charger_module_etudiant(chemin, correction_deja_tentee=False):
