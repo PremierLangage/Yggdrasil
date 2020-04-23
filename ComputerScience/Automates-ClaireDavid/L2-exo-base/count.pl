@@ -11,7 +11,7 @@ messages = {
 }
 message = messages[mode]
 
-editor.debug = False
+editor.debug = True
 editor.editorHeight = "520px"
 
 
