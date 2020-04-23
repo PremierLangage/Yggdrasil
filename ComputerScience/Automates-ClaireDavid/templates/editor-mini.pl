@@ -22,7 +22,8 @@ else:
 #        infos, _ = Automaton.informations(editor)
         if not infos[deterministic]:
             score = 0 
-            grade(score,feedback_nondet
+            grade(score,feedback_nondet)
+        elif 
         score = 100
         grade = (score, feedback_match)
     else:
