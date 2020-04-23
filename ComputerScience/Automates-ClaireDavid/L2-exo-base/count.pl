@@ -1,5 +1,7 @@
 extends = ../templates/editor-L2.pl
 
+maxattempt = 1
+
 generate== #|py|
 import random
 from generator import Generator
