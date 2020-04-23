@@ -75,7 +75,9 @@ editors.forEach((editor) => {
         );
     };
 
-    console.log(component.instance);
+    component.instance.bind('dblclick', connection => {
+        console.log(connection);
+    });
     component.focus = function (node, connection) {
         const FINAL_STATE = 'automaton-state--final';
         const INITIAL_STATE = 'automaton-state--initial';
