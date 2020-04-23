@@ -38,10 +38,10 @@ const createGetterSetter = (component, name) => {
 editors.forEach((editor) => {
     const component = editor.ngElementStrategy.componentRef.instance;
 
-    addProperty(component, { name: 'textSetInitial', default: 'Initiale' });
-    addProperty(component, { name: 'textSetNonInitial', default: 'Non initiale' });
-    addProperty(component, { name: 'textSetFinal', default: 'Finale' });
-    addProperty(component, { name: 'textSetNonFinal', default: 'Non finale' });
+    addProperty(component, { name: 'textSetInitial', default: 'Initial' });
+    addProperty(component, { name: 'textSetNonInitial', default: 'Non initial' });
+    addProperty(component, { name: 'textSetFinal', default: 'Final' });
+    addProperty(component, { name: 'textSetNonFinal', default: 'Non final' });
     addProperty(component, { name: 'textRenameState', default: 'Renommer' });
     addProperty(component, { name: 'textDeleteState', default: 'Supprimer' });
     addProperty(component, { name: 'textRenameSymbol', default: 'Changer étiquette' });
@@ -275,6 +275,7 @@ editors.forEach((editor) => {
         this.detectChanges();
     } 
 });
+
 
 
 
