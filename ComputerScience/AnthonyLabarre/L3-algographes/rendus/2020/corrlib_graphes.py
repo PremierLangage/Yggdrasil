@@ -16,6 +16,8 @@ SIGN = ["[ \033[1;31mx\033[0m ]", "[ \033[1;32mv\033[0m ]"]
 if system() == "Windows":
     SIGN = ["[ x ]", "[ v ]"]
 
+# ----- Instances pour les tests (listes d'arêtes) ----------------------------
+
 
 # Fonctions diverses ----------------------------------------------------------
 
@@ -299,4 +301,5 @@ def aretes_ponderees(graphe):
     """Renvoie les aretes du graphe munies de leur poids (networkx ne permet
     apparemment pas de le faire directement)."""
     return [(u, v, graphe[u][v]['weight']) for u, v in graphe.edges()]
+
 
