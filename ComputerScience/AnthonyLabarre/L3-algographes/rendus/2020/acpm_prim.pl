@@ -51,7 +51,7 @@ pltest2==
 >>> from corrlib_graphes import * #
 >>> G = Graphe(); G.ajouter_aretes(aretes_ponderees(graphe_connexe_aleatoire_pondere(10)) # initialisation d'une instance aléatoire
 >>> poids_solution_optimale = poids_fcpm(G.aretes())
->>> arbre = acpm_kruskal(G); poids_obtenu = sum(poids for *_, poids in arbre.aretes())
+>>> arbre = acpm_prim(G, choice(list(G.sommets())); poids_obtenu = sum(poids for *_, poids in arbre.aretes())
 >>> if poids_obtenu != poids_solution_optimale:
 ...     print("poids obtenu =", poids_obtenu, "; poids optimal =", poids_solution_optimale)
 ==
