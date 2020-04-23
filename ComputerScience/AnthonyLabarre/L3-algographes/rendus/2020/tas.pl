@@ -1,7 +1,5 @@
-# Test d'une classe Graphe implémentant un graphe pondéré non orienté.
+# Test d'une classe Tas implémentant une file à priorité.
 @ /utils/sandboxio.py
-@ unionfind.py
-@ corrlib_graphes.py
 extends= /ComputerScience/python/template/pltestblonde.pl
 builder= /builder/before.py
 
