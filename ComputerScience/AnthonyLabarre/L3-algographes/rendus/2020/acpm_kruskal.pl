@@ -42,19 +42,18 @@ pltest0==
 23
 ==
 
-testname0 = Vérifications de acpm_kruskal sur l'exemple du cours
-pltest0==
->>> from corrlib_graphes import *; import random; G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS); arbre = acpm_kruskal(G)
->>> sum(poids for *_, poids in arbre.aretes())
-23
+testname1 = Vérifications de acpm_kruskal sur l'exemple du TD
+pltest1==
+>>> from corrlib_graphes import *; import random;
 >>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_TD); arbre = acpm_kruskal(G)
 >>> sum(poids for *_, poids in arbre.aretes())
 18
 ==
 
-# Vérifications de acpm_prim sur un graphe connexe
-testname7 = Vérifications de acpm_prim sur un graphe connexe
-pltest7==
+# Vérifications de acpm_prim sur un graphe non connexe
+testname2 = Vérifications de acpm_prim sur un graphe connexe
+pltest2==
+>>> from corrlib_graphes import * #
 >>> G = Graphe(); 
 >>> G.ajouter_aretes(PRIM_INSTANCE_COURS);
 >>> G.ajouter_aretes(PRIM_INSTANCE_TD);
