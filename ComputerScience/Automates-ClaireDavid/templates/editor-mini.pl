@@ -7,10 +7,10 @@ from automaton import Automaton
 
 
 #* feedback when the automaton is non deterministic or not complete.
-feedback_nondet = <p class="warning-state">L'automate correspond au langage mais n'est pas deterministe complet.</p>
+#feedback_nondet = <p class="warning-state">L'automate correspond au langage mais n'est pas deterministe complet.</p>
 
 #* feedback when the automaton is not minimal.
-feedback_nondet = <p class="warning-state">L'automate correspond au langage. Il est det complet mais n'est pas minimal.</p>
+#feedback_nondet = <p class="warning-state">L'automate correspond au langage. Il est det complet mais n'est pas minimal.</p>
 
 if attempt >= maxattempt: # timeout
     grade = (score, feedback_timeout)
@@ -26,14 +26,17 @@ else:
         info_viewer , _ = Automaton.properties(viewer)
         if not (infos_editor[deterministic] and infos_editor[complete]):
             score = 0 
-            grade(score,feedback_nondet)
+            grade(score,feedback_nomatch)
+            #grade(score,feedback_nondet)
         elif len(infos_viewer[states]) == len(infos_editor[states])
             score = 0
             grade = (score, feedback_non_mini)
+            #grade = (score, feedback_non_mini)
         else
             score = 100
-            grade = (score, feedback_match)
+            grade = (score, feedback_nomatch)
     else:
         score = 0
         grade=(score, feedback_nomatch)
 ==
+
