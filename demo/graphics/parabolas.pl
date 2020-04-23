@@ -18,7 +18,7 @@ var('x')
 expr = (x - a[sol-1])**2 + b[sol-1]
 
 for i in range(n):
-    abs = np.arange(-6, 6, 0.01)
+    abs = np.arange(-4, 4, 0.01)
     ord = (abs - a[i])**2 + b[i]
     plt.plot(abs, ord)
     plt.title(f"Figure {i+1}")
