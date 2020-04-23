@@ -12,10 +12,10 @@ from customdragdrop import DragDropGroup
 mygroup = DragDropGroup()
 labelscontent = ["Os frontal", "Os pariétal", "Os sphénoïde", "Os temporal", "Os occipital", "Os ethmoïde"]
 
-for i in range(6):
-    mygroup.add_label({i:labelscontent[j]})
-    mygroup.add_drop({i+1:""}) 
-    mygroup.add_match_by_name(i+1, i) 
+for i in range(1,6):
+    mygroup.add_label({i:labelscontent[i-1]})
+    mygroup.add_drop({i:""}) 
+    mygroup.add_match_by_name(i, i) 
 
 mygroup.shuffle_labels()
 ==
@@ -34,7 +34,7 @@ form ==
 </ul>
 </div>
 <div style="display: block"> 
-{% for i, label in mygroup.labels.items() %}
+{% for label in mygroup.labels %}
     {{ label|component }} 
 {% endfor %}
 </div>
