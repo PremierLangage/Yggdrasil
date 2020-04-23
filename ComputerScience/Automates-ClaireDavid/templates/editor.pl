@@ -37,7 +37,6 @@ generate % null
 
 #* show solution after timeout
 show_soluce = True
-
 #* feedback shown after a good answer.
 feedback_match = 
 #* feedback shown after a bad answer.
@@ -76,11 +75,11 @@ text= PLEASE OVERRIDE THE KEY **text=** TO CHANGE THIS TEXT
 
 form== #|html|
 <!-- TIMEOUT VIEW -->
-<!--
-{% if attempt >= maxattempt %}
+
+{% if attempt >= maxattempt and show_solulce == True %}
 {{ viewer|component }}
 {% endif %}
--->
+
 
 <!-- SUCCESS VIEW -->
 {% if score == 100  %}
