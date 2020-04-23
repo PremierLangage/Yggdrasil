@@ -28,11 +28,11 @@ else:
             score = 0 
             grade(score,feedback_nomatch)
             #grade(score,feedback_nondet)
-        #elif len(infos_viewer[states]) == len(infos_editor[states])
-        #    score = 0
-        #    grade = (score, feedback_non_mini)
+        elif len(infos_viewer[states]) == len(infos_editor[states]) :
+            score = 0
+            grade = (score, feedback_nomatch)
             #grade = (score, feedback_non_mini)
-        else
+        else :
             score = 100
             grade = (score, feedback_nomatch)
     else:
