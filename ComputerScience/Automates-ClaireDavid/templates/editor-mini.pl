@@ -26,12 +26,10 @@ else:
         info_viewer , _ = Automaton.properties(viewer)
         if not (infos_editor[deterministic] and infos_editor[complete]):
             score = 0 
-            grade(score,feedback_nomatch)
             grade(score,feedback_nondet)
         elif len(infos_viewer[states]) == len(infos_editor[states]) :
             score = 0
-            grade = (score, feedback_nomatch)
-            #grade = (score, feedback_non_mini)
+            grade = (score, feedback_non_mini)
         else :
             score = 100
             grade = (score, feedback_nomatch)
