@@ -171,7 +171,7 @@ class DragDropGroup():
     
     def shuffle_labels(self):
         a = list(self.labels)
-        random.shuffle(a)
+        shuffle(a)
         self.labels = dict(a)
     
     def eval(self, display=True, grading_function= all_or_nothing, disabled=True):
