@@ -5,4 +5,12 @@ introduction ==
  Voici des tests pour vous permettre de corriger et tester votre rendu 2
 ==
 
+@../rendus/2020/graphe_pondere.pl
+
+@../rendus/2020/acpm_prim.pl
+
+@../rendus/2020/fcpm_prim.pl
+
+@../rendus/2020/acpm_kruskal.pl
+
 @../rendus/2020/rendu02_acpm.pl
