@@ -19,11 +19,13 @@ for i in range(n)
     plt.title('About as simple as it gets, folks')
     plt.grid(True)
     source = fig2base64(plt.gcf(), format="png")
-    
+
 ==
 
 text ==
-<img src="data:image/png;base64,{{source}}" style="max-width: 300px; vertical-align:top; display: inline" />
+{% for i in range(n) %}
+<img src="data:image/png;base64,{{source[i]}}" style="max-width: 300px; vertical-align:top; display: inline" />
+{% endfor %}
 ==
 
 form ==
