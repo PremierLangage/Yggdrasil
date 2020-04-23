@@ -75,10 +75,11 @@ text= PLEASE OVERRIDE THE KEY **text=** TO CHANGE THIS TEXT
 
 form== #|html|
 <!-- TIMEOUT VIEW -->
-{% if attempt >= maxattempt and show_soluce != 0 %}
+<!--
+{% if attempt >= maxattempt and show_soluce == True %}
 {{ viewer|component }}
 {% endif %}
-
+-->
 
 <!-- SUCCESS VIEW -->
 {% if score == 100  %}
