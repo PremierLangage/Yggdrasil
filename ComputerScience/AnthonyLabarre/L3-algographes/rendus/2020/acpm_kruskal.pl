@@ -46,8 +46,9 @@ pltest0==
 
 testname1 = Vérifications de acpm_kruskal sur l'exemple du TD
 pltest1==
->>> from corrlib_graphes import *; import random;
->>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_TD); arbre = acpm_kruskal(G)
+>>> from corrlib_graphes import PRIM_INSTANCE_TD #
+>>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_TD) # initialisation de l'exemple du TD
+>>> arbre = acpm_kruskal(G)
 >>> sum(poids for *_, poids in arbre.aretes())
 18
 ==
