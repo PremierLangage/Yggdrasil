@@ -19,11 +19,12 @@ else:
     elif error:
         grade = (-1, feedback_syntax_error.format(error))
     elif match is True:
-#        infos, _ = Automaton.informations(editor)
-        if not infos[deterministic]:
+        infos_editor , _ = Automaton.properties(editor)
+        info_viewer , _ = Automaton.properties(viewer)
+        if not infos_editor[deterministic]:
             score = 0 
             grade(score,feedback_nondet)
-        elif 
+        elif len(infos_viewer[states]) == len
         score = 100
         grade = (score, feedback_match)
     else:
