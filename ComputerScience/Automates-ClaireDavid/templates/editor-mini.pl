@@ -24,9 +24,9 @@ else:
         if not infos_editor[deterministic]:
             score = 0 
             grade(score,feedback_nondet)
-        elif len(infos_viewer[states]) == len
-        score = 100
-        grade = (score, feedback_match)
+        elif len(infos_viewer[states]) == len(infos_editor[states])
+            score = 100
+            grade = (score, feedback_match)
     else:
         score = 0
         grade=(score, feedback_nomatch)
