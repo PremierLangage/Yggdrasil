@@ -53,9 +53,21 @@ pltest1==
 18
 ==
 
-# Vérifications de acpm_kruskal sur un graphe non connexe
-testname2 = Vérifications de acpm_kruskal sur un graphe non connexe
+
+
+testname2 = Vérifications de acpm_kruskal sur une instance aléatoire
 pltest2==
+>>> from corrlib_graphes import * #
+>>> G = Graphe(); G.ajouter_aretes() # initialisation d'une instance aléatoire
+>>> arbre = acpm_kruskal(G)
+>>> sum(poids for *_, poids in arbre.aretes())
+18
+==
+
+
+# Vérifications de acpm_kruskal sur un graphe non connexe
+testname3 = Vérifications de acpm_kruskal sur un graphe non connexe
+pltest3==
 >>> from corrlib_graphes import * #
 >>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS); G.ajouter_aretes(PRIM_INSTANCE_TD)  # initialisation du graphe
 >>> foret = acpm_kruskal(G)
@@ -79,6 +91,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
