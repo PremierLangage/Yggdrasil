@@ -6,7 +6,22 @@ extends = ../templates/editor-mini.pl
 generate== #|py|
 #from automaton import Automaton
 
-viewer = bb*a(b*a)*
+viewer = AutomatonEditor(
+    automaton= {
+        "alphabet": ["a", "b"],
+        "initialStates": ["S1"],
+        "acceptingStates": ["S3"],
+        "states": ["S1", "S2", "S3","S4"],
+        "transitions": [
+            { "fromState": "S1", "toState": "S2", "symbols": ["b"] },
+            { "fromState": "S2", "toState": "S3", "symbols": ["a"] },
+            { "fromState": "S3", "toState": "S4", "symbols": ["a"] },
+            { "fromState": "S3", "toState": "S4", "symbols": ["b"] },
+            { "fromState": "S4", "toState": "S3", "symbols": ["a"] },
+            { "fromState": "S4", "toState": "S3", "symbols": ["b"] },
+        ]
+    }
+)
 
 #    l'alphabet
 alphabet = "a,b"
@@ -24,6 +39,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
