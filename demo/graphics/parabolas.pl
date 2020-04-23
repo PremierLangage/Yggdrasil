@@ -30,7 +30,7 @@ for i in range(n):
 
 text ==
 Parmi les représentations graphiques suivantes, laquelle correspond à la parabole d'équation
-$$ y = {{expr}} $$
+$$ y = {{expr.latex}} $$
 {% for i in range(n) %}
 <img src="data:image/png;base64,{{source[i]}}" style="max-width: 400px; vertical-align:top; display: inline" />
 {% endfor %}
