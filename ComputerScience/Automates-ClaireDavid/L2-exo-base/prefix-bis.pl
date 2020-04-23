@@ -1,8 +1,6 @@
 
 extends = ../templates/editor-L2.pl
 
-
-
 generate== #|py|
 from generator import Generator
 # A mettre ailleurs peut-être?
