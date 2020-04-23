@@ -75,7 +75,6 @@ pltest3==
 ...     print("poids obtenu =", poids_obtenu, "; poids optimal =", poids_solution_optimale)
 ==
 
-
 # Le grader:
 #@ /grader/evaluator.py [grader.py]
 evaluator==
