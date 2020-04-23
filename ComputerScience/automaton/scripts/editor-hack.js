@@ -71,6 +71,7 @@ editors.forEach((editor) => {
     };
  
     component.removeInitial = (state) => {
+        console.log(this);
          this.initialStates =  this.initialStates.filter(
             e => {
                 return e !== state;
