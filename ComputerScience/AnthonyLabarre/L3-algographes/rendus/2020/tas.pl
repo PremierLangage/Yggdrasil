@@ -7,7 +7,9 @@ builder= /builder/before.py
 
 author = Anthony Labarre
 title = Tas
-taboo = heapq
+taboo==
+heapq
+==
 text==
 Écrivez une classe Tas implémentant une file à priorité.
 ==
