@@ -23,7 +23,7 @@ for i in range(n):
 ==
 
 text ==
-{% for i in range(n) %}
+{% for i in range(4) %}
 <img src="data:image/png;base64,{{source[i]}}" style="max-width: 300px; vertical-align:top; display: inline" />
 {% endfor %}
 ==
