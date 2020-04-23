@@ -761,7 +761,7 @@
         ,
 
         [
-            ['25', "Appliquer le correctif proposé." ]
+            ['25', "Appliquer le correctif proposé."]
         ]
     ],
 
