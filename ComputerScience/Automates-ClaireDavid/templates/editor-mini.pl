@@ -13,6 +13,7 @@ else:
     elif error:
         grade = (-1, feedback_syntax_error.format(error))
     elif match is True:
+#        infos, _ = Automaton.informations(editor)
         score = 100
         grade = (score, feedback_match)
     else:
