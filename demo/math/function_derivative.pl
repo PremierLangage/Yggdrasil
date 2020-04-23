@@ -16,12 +16,11 @@ plt.ylabel('voltage (mV)')
 plt.title('About as simple as it gets, folks')
 plt.grid(True)
 
-source = mplfig2svg(plt.gcf())
+source = mplfig2svg(plt.gcf(), format="png")
 ==
 
 text ==
-Calculer la dérivée de la fonction
-$$ f : x \mapsto {{f.latex}} .$$
+<img src="data:image/png;base64,{{source}}" alt="Red dot" />
 ==
 
 form ==
