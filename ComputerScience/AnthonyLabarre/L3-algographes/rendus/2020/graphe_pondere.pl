@@ -43,6 +43,7 @@ pltest0==
 [[0, 1, 4], [0, 2, -2], [1, 2, 3], [1, 3, -1], [2, 3, 2]]
 >>> sorted(G.poids_arete(u, v) for u, v, *_ in G.aretes())
 [-2, -1, 2, 3, 4]
+# Tests d'indices non consécutifs pour les sommets => exclusion des listes et matrices d'adjacence
 >>> from corrlib_graphes import PRIM_INSTANCE_TD #
 >>> G.ajouter_aretes(PRIM_INSTANCE_TD)
 >>> sorted(G.sommets()) 
