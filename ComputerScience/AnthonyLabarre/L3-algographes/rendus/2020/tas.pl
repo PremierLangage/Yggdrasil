@@ -11,12 +11,13 @@ text==
 
 taboo=heapq
 
+pltest0=
 
 # Les tests:
 
 # Vérification de la classe Tas sur des entiers
 testname1 = Vérification de la classe Tas sur des entiers
-pltest0== 
+pltest1== 
 >>> # création d'un tas d'entiers aléatoires
 >>> from random import randint; donnees = [randint(-100, 100) for _ in range(10)] #
 >>> try:
@@ -34,7 +35,7 @@ pltest0==
 # Vérification de la classe Tas sur des triplets (premier élément = critère pour le minimum)
 
 testname2 = Vérification de la classe Tas sur des triplets (premier élément = critère pour le minimum)
-pltest1==
+pltest2==
 >>> from random import randint; donnees = [(randint(-100, 100), randint(-100, 100), randint(-100, 100)) for _ in range(10)] #
 >>> try:
 ...     T = Tas()  # initialisation sans paramètre
@@ -48,13 +49,12 @@ pltest1==
 ...         print("attendu: un triplet avec première valeur =", elem[0], ", obtenu: un triplet avec première valeur =", extraction[0])
 ==
 
-# Le grader:
+# Le grader: 
+# est intégré dans pltest donc les lignes suivantes sont inutiles (pire elles case le template).
 #@ /grader/evaluator.py [grader.py]
-evaluator==
-
-
-grade=(100,"bravo")
-==
+# evaluator==
+# grade=(100,"bravo")
+# ==
 
 #
 # création de l'éditeur de code
@@ -75,6 +75,7 @@ class Tas(object):
         pass  # à compléter
 
 ==
+
 
 
 
