@@ -55,7 +55,7 @@ editors.forEach((editor) => {
     createGetterSetter(component, 'states');
 
     component.removeState =  (state) => {
-         this.states =  this.states.filter(
+         component.states =  component.states.filter(
             e => {
                 return e !== state;
             }
@@ -63,7 +63,7 @@ editors.forEach((editor) => {
     };
 
     component.removeFinal = (state) => {
-         this.acceptingStates =  this.acceptingStates.filter(
+         component.acceptingStates =  component.acceptingStates.filter(
             e => {
                 return e !== state;
             }
@@ -71,8 +71,7 @@ editors.forEach((editor) => {
     };
  
     component.removeInitial = (state) => {
-        console.log(this);
-         this.initialStates =  this.initialStates.filter(
+         component.initialStates =  component.initialStates.filter(
             e => {
                 return e !== state;
             }
