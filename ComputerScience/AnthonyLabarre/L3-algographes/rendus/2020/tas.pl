@@ -1,17 +1,40 @@
-# Test d'une classe Tas implémentant une file à priorité.
+# Test d'une classe Graphe implémentant un graphe pondéré non orienté.
 @ /utils/sandboxio.py
-extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
+@ unionfind.py
+@ corrlib_graphes.py
+extends= /ComputerScience/python/template/pltestblonde.pl
 builder= /builder/before.py
 
 author = Anthony Labarre
-title = Tas
-text = Écrivez une classe Tas implémentant une file à priorité.
-taboo = heapq
+title = Arbres (et forêts) couvrants de poids minimum
+text==
+Écrivez: 
+<ul>
+<li>une classe Graphe implémentant un graphe pondéré non orienté
+<li>une classe Tas implémentant une file à priorité
+<li>une classe UnionFind
+<li>acpm_prim(graphe, sommet), qui prend en paramètres un graphe et un sommet de départ et renvoie un ACPM pour la composante connexe du sommet donné en suivant l'algorithme de Prim;
+<li>acpm_kruskal(graphe), qui prend en paramètre un graphe et renvoie la forêt couvrante de poids minimum pour ce graphe en suivant l'algorithme de Kruskal;
+<li>fcpm_prim(graphe), qui prend en paramètre un graphe et renvoie la forêt couvrante de poids minimum pour ce graphe en suivant l'algorithme de Prim.
+</ul>
+==
+
+for_dr_dont_touch==
+class Graphe:
+    def sommets(dummy):
+        return [0, 1, 2, 3]
+==
+
+# Mon code
+before==
+import corrlib_graphes
+==
 
 # Les tests:
 
-# Vérification du fonctionnement sur des entiers
-pltest0==
+# Vérification de la classe Tas sur des entiers
+testname1 = Vérification de la classe Tas sur des entiers
+pltest1== 
 >>> # création d'un tas d'entiers aléatoires
 >>> from random import randint; donnees = [randint(-100, 100) for _ in range(10)]; T = Tas()
 >>> for elem in donnees:
@@ -22,8 +45,10 @@ pltest0==
 ...         print("attendu:", elem, ", obtenu:", extraction)
 ==
 
-# Vérification du fonctionnement sur des triplets (premier élément = critère pour le minimum)
-pltest1==
+# Vérification de la classe Tas sur des triplets (premier élément = critère pour le minimum)
+
+testname2 = Vérification de la classe Tas sur des triplets (premier élément = critère pour le minimum)
+pltest2==
 >>> # création d'une liste de triplets aléatoires
 >>> from random import randint; donnees = [(randint(-100, 100), randint(-100, 100), randint(-100, 100)) for _ in range(10)]; T = Tas()
 >>> for elem in donnees:
@@ -33,6 +58,7 @@ pltest1==
 ...     if extraction[0] != elem[0]:
 ...         print("attendu: un triplet avec première valeur =", elem[0], ", obtenu: un triplet avec première valeur =", extraction[0])
 ==
+
 
 
 # Le grader:
@@ -46,20 +72,14 @@ grade=(100,"bravo")
 #
 # création de l'éditeur de code
 editor.code ==
-class Tas(object):
-    """Implémentation de la structure de données Tas."""
-    def __init__(self):
-        """Initialisation des structures de données nécessaires."""
-        pass  # à compléter
-
-    def inserer(self, element):
-        """Insère un élément dans le tas en préservant la structure."""
-        pass  # à compléter
-
-    def extraire_minimum(self):
-        """Extrait et renvoie le minimum du tas en préservant sa structure."""
-        pass  # à compléter
+# Saisissez votre code ici, et cliquez sur le bouton
+# de validation quand vous avez terminé
 
 ==
+
+
+
+
+
 
 
