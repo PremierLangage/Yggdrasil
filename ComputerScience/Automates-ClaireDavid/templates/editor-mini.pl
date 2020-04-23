@@ -7,10 +7,10 @@ from automaton import Automaton
 
 
 #* feedback when the automaton is non deterministic or not complete.
-#feedback_nondet = <p class="warning-state">L'automate correspond au langage mais n'est pas deterministe complet.</p>
+feedback_nondet = <p class="warning-state">L'automate correspond au langage mais n'est pas deterministe complet.</p>
 
 #* feedback when the automaton is not minimal.
-#feedback_nondet = <p class="warning-state">L'automate correspond au langage. Il est det complet mais n'est pas minimal.</p>
+#feedback_mini = <p class="warning-state">L'automate correspond au langage. Il est det complet mais n'est pas minimal.</p>
 
 if attempt >= maxattempt: # timeout
     grade = (score, feedback_timeout)
