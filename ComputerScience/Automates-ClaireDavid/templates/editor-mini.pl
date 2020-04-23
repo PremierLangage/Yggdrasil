@@ -21,7 +21,7 @@ else:
         grade = (score, feedback_timeout)
     elif error:
         grade = (-1, feedback_syntax_error.format(error))
-    elif match is True:
+    elif match is True :
         infos_editor , _ = Automaton.editor_properties(editor)
         info_viewer , _ = Automaton.properties(viewer)
         if not (infos_editor[deterministic] and infos_editor[complete]):
