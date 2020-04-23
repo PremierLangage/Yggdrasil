@@ -172,6 +172,19 @@ def feedback(fonctions_problematiques):
 
 # Fonctions en rapport avec des graphes ---------------------------------------
 
+def poids_fcpm(liste_aretes_ponderees):
+    """Renvoie le poids d'une forêt couvrante de poids minimum pour le graphe
+    dont les arêtes pondérées sont données en paramètre sous la forme d'une
+    liste de triplets au format (u, v, poids)."""
+    graphe = nx.Graph()
+    graphe.add_weighted_edges_from(liste_aretes_ponderees)
+    fcpm = networkx.algorithms.tree.minimum_spanning_tree(graphe, algorithm='prim')
+ mon_poids = sum(mon_graphe[u][v]['weight'] for u, v in mon_acpm.edges())
+            
+    return graphe
+    
+
+
 # ----- Classification --------------------------------------------------------
 def est_arbre(graphe):
     """Renvoie True si le graphe non orienté donné est un arbre, False
@@ -294,6 +307,7 @@ def aretes_ponderees(graphe):
     """Renvoie les aretes du graphe munies de leur poids (networkx ne permet
     apparemment pas de le faire directement)."""
     return [(u, v, graphe[u][v]['weight']) for u, v in graphe.edges()]
+
 
 
 
