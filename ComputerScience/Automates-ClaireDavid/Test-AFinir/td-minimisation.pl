@@ -29,6 +29,7 @@ viewer = AutomatonEditor(
 
 #    l'alphabet
 alphabet = "a,b"
+message = "b*b(a+b)*(ab+epsilon)a"
 
 ==
 
