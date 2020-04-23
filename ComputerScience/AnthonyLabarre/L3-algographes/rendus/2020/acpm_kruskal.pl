@@ -69,9 +69,10 @@ testname3 = Vérifications de acpm_kruskal sur un graphe non connexe
 pltest3==
 >>> from corrlib_graphes import * #
 >>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS); G.ajouter_aretes(PRIM_INSTANCE_TD); G.ajouter_aretes(aretes_ponderees(graphe_connexe_aleatoire_pondere(10))  # initialisation du graphe
->>> foret = acpm_kruskal(G)
->>> sum(poids for *_, poids in foret.aretes())
-41
+>>> poids_solution_optimale = poids_fcpm(G.aretes())
+>>> foret = acpm_kruskal(G); poids_obtenu = sum(poids for *_, poids in arbre.aretes())
+>>> if poids_obtenu != poids_solution_optimale:
+...     print("poids obtenu =", poids_obtenu, "; poids optimal =", poids_solution_optimale)
 ==
 
 
