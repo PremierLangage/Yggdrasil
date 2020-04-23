@@ -1,4 +1,4 @@
-## A finir
+## A finir -- ça ne marche pas
 
 extends = editor-L2.pl
 
