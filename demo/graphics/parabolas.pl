@@ -10,7 +10,7 @@ from plmpl import fig2base64
 n = 4
 source = []
 
-for i in range(n)
+for i in range(n):
     t = np.arange(0.0, 2.0, 0.01)
     s = 1 + np.sin(2*np.pi*t)
     plt.plot(t, s)
