@@ -26,8 +26,7 @@ def checktaboo(taboo, answer):
         return docheck(taboo, answer), taboo
     x = re.sub("(\"(.|\n)*\"|#.*)", "", answer) #enlève les commentaires et les chaînes de caractères
     for motclef in taboo.split("|"):
-    # FIXME la chaine de caractère ""  letaboo "" est elle trouvée par la regex suivante ? 
-        if re.search("(^"+motclef+"\s|[^\"]+"+motclef+"\s)", x) != None :
+        if  docheck(taboo, answer)[0] :
             return True, motclef
     return False, ""
 
@@ -101,6 +100,7 @@ if __name__ == "__main__":
     if "feedback" in dic: # FIXME feedback devrai être un dictionnaire.
         outstr += dic["feedback"]+" valeur de stop "+ str(stop)
     output(a,outstr)
+
 
 
 
