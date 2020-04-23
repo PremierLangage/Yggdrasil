@@ -42,7 +42,7 @@ Si vous souhaitez faire des tests sur le code de l'élève la variable __student
 ==
 
 @ pltest_doc.py
-@ plgradeblonde.py [grader.py]
+@ /ComputerScience/python/AP1-1920/templates/utils/pltestgrader.py[grader.py]
 @ feedback2.py
 @ anothertemplate.html [template.html]
 # 
@@ -55,6 +55,7 @@ editor.fontsize=14
 form=@ /form/text_editor.html
 
 settings.allow_reroll=1
+
 
 
 
