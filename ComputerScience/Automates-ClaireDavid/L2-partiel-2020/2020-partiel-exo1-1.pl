@@ -1,12 +1,10 @@
 
-extends = ../templates/editor.pl
+extends = ../templates/editor-L2.pl
 
-maxattempt = 10
 
 ## Ajouter ici la génération de l'automate et autres variables de l'exo
 generate== #|py|
-
-from automaton import Automaton
+#from automaton import Automaton
 
 #    la construction de l'automate pour tester la réponse
 viewer = AutomatonEditor(
@@ -47,6 +45,8 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
+
 
 
 
