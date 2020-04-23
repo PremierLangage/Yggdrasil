@@ -14,6 +14,7 @@ a = list_randint_norep(4,-2,2)
 b = list_randint_norep(4,-2,2)
 
 sol = randint(1,4)
+var('x')
 expr = (x - a[sol-1])**2 + b[sol-1]
 
 for i in range(n):
