@@ -45,7 +45,8 @@ pltest0==
 [-2, -1, 2, 3, 4]
 ==
 
-# TODO: je ne vérifie pas que le graphe accepte autre chose que des entiers comme sommets, mais il faudrait s'assurer qu'un ensemble quelconque d'entiers convient
+# TODO: je ne vérifie pas que le graphe accepte autre chose que des entiers comme sommets, mais il faudrait s'assurer qu'un ensemble quelconque d'entiers convient (ce qui exclut la matrice
+# d'adjacence)
 
 
 # Le grader:
