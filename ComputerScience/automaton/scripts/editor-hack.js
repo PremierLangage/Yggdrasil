@@ -132,7 +132,6 @@ editors.forEach((editor) => {
                     }
                 });
             }
-
             actions.push({
                 name: this.textRenameState,
                 action: async () => {
@@ -187,14 +186,12 @@ editors.forEach((editor) => {
                     this.detectChanges();
                 }
             });
-
             actions.push({
                 name: this.textDeleteState,
                 action: () => {
                     this.removeState(stateName);
                     this.removeFinal(stateName);
                     this.removeInitial(stateName);
-
                     // remove transition
                     this.automaton.transitions = this.automaton.transitions.filter(
                         transition => {
@@ -204,14 +201,10 @@ editors.forEach((editor) => {
                             );
                         }
                     );
-                
                     delete this.automaton.position[stateName];
-                
                     // remove node from the dom
                     this.instance.remove(this.node);
-
                     this.focus();
-
                     this.updateAlphabet();
                 }
             });
@@ -257,7 +250,6 @@ editors.forEach((editor) => {
                     }
                 }
             });
-
             actions.push({
                 name: this.textDeleteSymbol,
                 action: async () => {
