@@ -7,6 +7,7 @@ builder= /builder/before.py
 
 author = Anthony Labarre
 title = Tas
+taboo = heapq
 text==
 Écrivez une classe Tas implémentant une file à priorité.
 ==
@@ -16,7 +17,6 @@ class Graphe:
     def sommets(dummy):
         return [0, 1, 2, 3]
 ==
-taboo = heapq
 
 
 # Les tests:
