@@ -25,22 +25,23 @@ class Graphe:
         return [0, 1, 2, 3]
 ==
 
-# Mon code
-before==
-import corrlib_graphes
-==
-
 # Les tests:
 
-
 # Vérifications de acpm_prim sur un graphe connexe
-testname4 = Vérifications de acpm_prim sur un graphe connexe
-pltest4==
->>> from corrlib_graphes import PRIM_INSTANCE_COURS
->>> import random; G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS); arbre = acpm_prim(G, random.choice(list(G.sommets())))
+testname0 = Vérifications de acpm_prim sur l'exemple du cours
+pltest0==
+>>> from corrlib_graphes import PRIM_INSTANCE_COURS, from random import choice #
+>>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS) # initialisation de l'instance du cours
+>>> arbre = acpm_prim(G, choice(list(G.sommets()))
 >>> sum(poids for *_, poids in arbre.aretes())
 23
->>> G = Graphe(); G.ajouter_aretes(); arbre = acpm_prim(G, random.choice(list(G.sommets())))
+==
+
+testname1 = Vérifications de acpm_kruskal sur l'exemple du TD
+pltest1==
+>>> from corrlib_graphes import PRIM_INSTANCE_COURS, from random import choice #
+>>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_TD) # initialisation de l'exemple du TD
+>>> arbre = acpm_prim(G, choice(list(G.sommets()))
 >>> sum(poids for *_, poids in arbre.aretes())
 18
 ==
