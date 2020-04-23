@@ -59,6 +59,7 @@ testname2 = Vérifications de acpm_kruskal sur une instance aléatoire
 pltest2==
 >>> from corrlib_graphes import * #
 >>> G = Graphe(); G.ajouter_aretes(aretes_ponderees(graphe_connexe_aleatoire_pondere(10)) # initialisation d'une instance aléatoire
+>>> poids_solution_optimale = 
 >>> arbre = acpm_kruskal(G)
 >>> sum(poids for *_, poids in arbre.aretes())
 18
