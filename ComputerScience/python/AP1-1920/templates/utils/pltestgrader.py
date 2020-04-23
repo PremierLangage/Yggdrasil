@@ -18,7 +18,8 @@ def add_try_clause(code, excpt):
 def docheck(taboo, answer):
     x = re.sub("(\"(.|\n)*\"|#.*)", "", answer) #enlève les commentaires et les chaînes de caractères
     # FIXME la chaine de caractère ""  letaboo "" est elle trouvée par la regex suivante ? 
-    return re.search("(^"+taboo+"\s|[^\"]+"+taboo+"\s)", x) != None
+    return re.search(taboo, x) != None
+    #return re.search("(^"+taboo+"\s|[^\"]+"+taboo+"\s)", x) != None
 
 
 def checktaboo(taboo, answer):
