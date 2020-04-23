@@ -75,6 +75,7 @@ editors.forEach((editor) => {
         );
     };
 
+    console.log(component.instance);
     component.focus = function (node, connection) {
         const FINAL_STATE = 'automaton-state--final';
         const INITIAL_STATE = 'automaton-state--initial';
