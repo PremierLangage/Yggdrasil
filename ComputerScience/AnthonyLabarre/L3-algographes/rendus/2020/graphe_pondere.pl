@@ -36,7 +36,7 @@ before==
 # Tests d'indices non consécutifs pour les sommets => exclusion des listes et matrices d'adjacence
 pltest0== 
 >>> G = Graphe()  # Existence d'une class Graphe
->>> G.ajouter_aretes([(0, 2, -2), (1, 0, 4), (1, 2, 3), (2, 3, 2), (3, 1, -1)])
+>>> G.ajouter_aretes([(0, 2, -2), (1, 0, 4), (1, 2, 3), (2, 3, 2), (3, 1, -1)])  # ajout d'arêtes pondérées
 >>> sorted(G.sommets()) 
 [0, 1, 2, 3]
 >>> sorted(sorted(_) + [poids] for *_, poids in G.aretes())
