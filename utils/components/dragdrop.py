@@ -17,6 +17,8 @@ class MyComponent(Component):
             self.css+=css_string
 
 
+
+
 def all_or_nothing(num_right=0, num_wrong = 0, total = 1):
     if num_right == total:
         return 100
