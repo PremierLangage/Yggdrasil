@@ -29,7 +29,8 @@ PRIM_INSTANCE_TD = [
     (20, 21, 6), (21, 22, 9), (21, 23, 6), (22, 23, 2)
 ]
 
-PRIM_INSTANCE_ALEATOIRE = 
+PRIM_INSTANCE_ALEATOIRE = aretes_ponderees(graphe_connexe_aleatoire_pondere(10))
+
 
 # Fonctions diverses ----------------------------------------------------------
 
