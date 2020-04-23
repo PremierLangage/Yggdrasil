@@ -64,8 +64,7 @@ grade=(100,"bravo")
 #
 # création de l'éditeur de code
 editor.code ==
-# Saisissez votre code ici, et cliquez sur le bouton
-# de validation quand vous avez terminé
+# Complétez le code ci-dessous, et cliquez sur le bouton de validation quand vous avez terminé
 class UnionFind(object):
     """Implémentation de la structure de données Union-Find."""
     def __init__(self, ensemble):
