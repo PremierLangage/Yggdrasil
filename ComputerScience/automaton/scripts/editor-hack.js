@@ -75,14 +75,11 @@ editors.forEach((editor) => {
         );
     };
 
-    component.instance.bind('dblclick', connection => {
-        console.log(connection);
-    });
+
     component.focus = function (node, connection) {
         const FINAL_STATE = 'automaton-state--final';
         const INITIAL_STATE = 'automaton-state--initial';
         const actions = [];
-        this.debug = true;
         this.unfocus();
         this.node = node;
         this.connection = connection;
@@ -275,6 +272,7 @@ editors.forEach((editor) => {
         this.detectChanges();
     } 
 });
+
 
 
 
