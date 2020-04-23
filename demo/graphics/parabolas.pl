@@ -11,7 +11,7 @@ n = 4
 source = []
 
 a = list_randint_norep(4,-2,2)
-b = list_randint_norep(4,-2,2)
+b = list_randitem_norep([-20,-10,-5,0,5,10,20])
 
 sol = randint(1,4)
 var('x')
