@@ -14,6 +14,7 @@ s = str(a)
 ==
 
 text ==
+{{s}}
 <br>
 {% for key in a %}
 {{key}}
@@ -27,8 +28,7 @@ form ==
 {% for key in a %}
 {{key}}
 {% endfor %}
-{{s}}
-
+</br>
 ==
 
 settings.feedback = lightscore
