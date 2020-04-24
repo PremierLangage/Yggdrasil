@@ -30,7 +30,9 @@ viewer = '''
     S00:b>S01
     S01:b>S02
     S02:b>S00
-
+    S10:b>S11
+    S11:b>S12
+    S12:b>S10
 '''
 #    l'alphabet
 alphabet = "a,b"
