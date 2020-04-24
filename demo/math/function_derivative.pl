@@ -1,4 +1,4 @@
-extends = /model/math.pl
+extends = /model/mathinput.pl
 
 title = Calcul de dérivée
 
