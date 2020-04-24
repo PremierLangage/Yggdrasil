@@ -5,11 +5,14 @@ title = Shuffle déconne
 
 before==#|python|
 from random import shuffle
-
+from collections import OrderedDict
 a = {1:1,2:2,3:3,4:4,5:5,13:88}
 b = list(a.items())
 shuffle(b)
-a = dict(b)
+z=OrderedDict()
+for x in b:
+    z.add(x,a[x])
+a=z
 s = str(a)
 ==
 
@@ -39,6 +42,7 @@ settings.feedback = lightscore
 evaluator==#|python|
 grade = (100,'')
 ==
+
 
 
 
