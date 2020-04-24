@@ -16,7 +16,7 @@ class Bar:
         self.y = b
         self.z = 0
 
-o = Bar(Foo(1, [3,4]), {'key1': 11, 'key2': 22})
+o = Bar(Foo(1, [3,4]), 2)
 ==
 
 text ==
