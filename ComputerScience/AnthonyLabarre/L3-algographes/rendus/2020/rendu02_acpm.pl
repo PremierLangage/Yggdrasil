@@ -30,7 +30,7 @@ before==
 import corrlib_graphes
 
 ==
-
+#TODO voir avec Dominique si cela doit être ici ou dans le before
 taboo=heapq
 # Les tests:
 
