@@ -17,7 +17,7 @@ text ==
 ==
 
 form ==
-{% for key, value in a.items() %}
+{% for key, value in a %}
 {{key}}
 {% endfor %}
 
@@ -28,6 +28,7 @@ settings.feedback = lightscore
 evaluator==#|python|
 grade = (100,'')
 ==
+
 
 
 
