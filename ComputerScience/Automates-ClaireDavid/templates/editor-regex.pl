@@ -142,7 +142,6 @@ if attempt >= maxattempt: # timeout
     grade = (score, feedback_timeout)
 else:
     attempt += 1
-#    try:
     student_answer, bug_syntax = Generator.regex(inputbox.value, True)
     match, error = Automaton.compare(viewer, student_answer)
     if  attempt >= maxattempt and (error or not match): # error or no match after timeout
@@ -155,9 +154,6 @@ else:
     else:
         score = 0
         grade=(score, feedback_nomatch)
-#    except Exception as e:
-#        score = 0
-#        grade=(score, feedback_syntax_error)
 
 ==
 
