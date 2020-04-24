@@ -36,6 +36,8 @@ pltest6==
 >>> foret = fcpm_prim(G)
 >>> sum(poids for *_, poids in foret.aretes())
 41
+>>> if not est_foret_couvrante(foret, G):  # Le résultat est-il bien une forêt couvrante?
+...     print("la forêt calculée n'est pas couvrante) #
 ==
 
 # Vérifications de fcpm_prim sur un graphe non connexe
@@ -64,6 +66,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
