@@ -65,7 +65,8 @@ form_success== #|html|
 #* override this key to change the instructions at the bottom of the editor.
 form_instructions== #|html|
 <p>
-Syntaxe: . concaténation, + union, * étoile de Kleene
+Syntaxe: ( ), . concaténation, + union, * étoile de Kleene <br>
+Vous pouvez ommettre le symbole de concaténation
 </p>
 ==
 
