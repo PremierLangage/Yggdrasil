@@ -16,21 +16,19 @@ class Bar:
         self.y = y
         self.z = 0
 
-o = Bar(Foo(1, [3,4]), {'key1': 11, 'key2': 22})
+obj = Bar(Foo(1, [3,4]), {'key1': 11, 'key2': 22})
+
+import jsonpickle
+obj_encoded = jsonpickle.encode(obj)
 ==
 
 text ==
-Calculer {{a}} + {{b}}.
+{{obj}}
 ==
-
-input =: Input
-input.type = number
 
 form ==
-{{ input | component }}
-==
 
-settings.feedback = rightwrong
+==
 
 evaluator ==
 if input.value == a+b:
