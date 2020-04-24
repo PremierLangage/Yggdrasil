@@ -1,4 +1,4 @@
-import sys, json
+import sys, json, jsonpickle
 from sandboxio import get_context
 from components import Component
 from customdragdrop import DragDropGroup
