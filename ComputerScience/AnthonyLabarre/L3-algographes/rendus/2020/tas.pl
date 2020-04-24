@@ -9,7 +9,7 @@ text==
 Écrivez une classe Tas implémentant une file à priorité.
 ==
 
-#taboo=heapq
+taboo = heapq
 
 # Les tests:
 
