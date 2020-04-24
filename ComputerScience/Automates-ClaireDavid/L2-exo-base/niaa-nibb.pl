@@ -6,7 +6,7 @@ generate== #|py|
 #from automaton import Automaton
 
 #    la construction de l'automate pour tester la réponse
-viewer = Automaton.parse('(b| )(ab)*(a| )')
+viewer = Automaton.parse('(ab)*|(ba)*|(ab)*a|(ba)*b')
 
 
 #    l'alphabet
