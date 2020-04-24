@@ -40,7 +40,7 @@ Parmi les représentations graphiques suivantes, laquelle correspond à la parab
 $$ y = {{expr.latex}}.$$
 {% for i in range(n) %}
 <div style="display: inline; margin: auto;"> 
-<img src="data:image/png;base64,{{source[i]}}" style="max-width: 300px; vertical-align:top; display: inline" />
+<img src="data:image/png;base64,{{source[i]}}" style="max-width: 400px; vertical-align:top; display: inline" />
 </div>
 {% endfor %}
 ==
