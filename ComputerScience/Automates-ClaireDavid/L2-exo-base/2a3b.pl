@@ -13,7 +13,7 @@ viewer = Automaton.parse('(a|b)*a(a|b)(a|b)(a|b)')
 alphabet = "a,b"
 
 #    du message de l'énoncé décrivant le langage
-message = "l'ensemble des mots dont la 4ème lettre à partir de la droite est un a"
+message = "l'ensemble des mots ayant un nombre de a pair et un nombre de b multiple de 3."
 ==
 
 title = TD1 exo3 L4
