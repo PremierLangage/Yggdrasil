@@ -13,7 +13,7 @@ class Foo:
         self.a = a
         self.b = b
 
-Foo(1,2)
+xxx = Foo(1,2)
 ==
 
 text ==
