@@ -70,12 +70,12 @@ class Generator:
             () => capture
         :return An instance of Automaton class.
         """
-        try:
+#        try:
             if simple:
                 regex = regex.replace('.', '').replace('+', '|')
             return Automaton.parse(regex)
-        except Exception as e:
-            return False, str(e)
+#        except Exception as e:
+#            return False, str(e)
 
     @staticmethod
     def prefix(max_symbs=2, length=4, sorted_alphabet=False):
