@@ -15,8 +15,7 @@ import uuid
 try:
     from serialize import CustomEncoder, CustomDecoder
 except ModuleNotFoundError:
-    def serialize(arg):
-        return arg
+    pass
 
 # Load the custom namespace
 try:
