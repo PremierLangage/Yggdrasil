@@ -191,8 +191,8 @@ pltest8==
 ...             print("certaines extrémités d'arêtes ne sont pas des sommets") #
 ==
 
-testname2 = Vérifications de acpm_kruskal sur une instance aléatoire
-pltest2==
+testname9 = Vérifications de acpm_kruskal sur une instance aléatoire
+pltest9==
 >>> from corrlib_graphes import * #
 >>> G = Graphe(); G.ajouter_aretes(aretes_ponderees(graphe_connexe_aleatoire_pondere(10)) # initialisation d'une instance aléatoire
 >>> poids_solution_optimale = poids_fcpm(G.aretes())
@@ -209,8 +209,8 @@ pltest2==
 
 
 # Vérifications de acpm_kruskal sur un graphe non connexe
-testname3 = Vérifications de acpm_kruskal sur un graphe non connexe
-pltest3==
+testname10 = Vérifications de acpm_kruskal sur un graphe non connexe
+pltest10==
 >>> from corrlib_graphes import * #
 >>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS); G.ajouter_aretes(PRIM_INSTANCE_TD); G.ajouter_aretes(aretes_ponderees(graphe_connexe_aleatoire_pondere(10))  # initialisation du graphe
 >>> poids_solution_optimale = poids_fcpm(G.aretes())
@@ -223,15 +223,30 @@ pltest3==
 
 
 # Vérifications de fcpm_prim sur un graphe non connexe
-testname6 = Test de fcpm_prim sur un graphe non connexe
-pltest6==
->>> G = Graphe(); 
->>> G.ajouter_aretes([(0, 1, 5), (0, 3, 4), (0, 4, 2), (1, 4, 2), (2, 3, 9), (2, 5, 5), (3, 4, 3), (3, 5, 7), (3, 6, 4), (4, 6, 7), (5, 6, 12)]);
->>> G.ajouter_aretes([(17, 18, 4), (17, 20, 3), (17, 21, 1), (17, 22, 8), (18, 19, 7), (18, 20, 2), (18, 21, 3), (19, 21, 8), (19, 22, 5), (19, 23, 4), (20, 21, 6), (21, 22, 9), (21, 23, 6), (22, 23, 2)]);
+testname11 = Vérifications de fcpm_prim sur un graphe non connexe (union du cours et du td)
+pltest11==
+>>> from corrlib_graphes import * #
+>>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS); G.ajouter_aretes(PRIM_INSTANCE_COURS) # initialisation
 >>> foret = fcpm_prim(G)
 >>> sum(poids for *_, poids in foret.aretes())
 41
+>>> if not est_foret_couvrante(foret, G):  # Le résultat est-il bien une forêt couvrante?
+...     print("la forêt calculée n'est pas couvrante) #
 ==
+
+# Vérifications de fcpm_prim sur un graphe non connexe
+testname1 = Vérifications de fcpm_prim sur un graphe non connexe  (union du cours, du td et d'un graphe aléatoire)
+pltest1==
+>>> from corrlib_graphes import * #
+>>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS); G.ajouter_aretes(PRIM_INSTANCE_TD); G.ajouter_aretes(aretes_ponderees(graphe_connexe_aleatoire_pondere(10))  # initialisation du graphe
+>>> poids_solution_optimale = poids_fcpm(G.aretes())
+>>> foret = fcpm_prim(G); poids_obtenu = sum(poids for *_, poids in foret.aretes())
+>>> if poids_obtenu != poids_solution_optimale:
+...     print("poids obtenu =", poids_obtenu, "; poids optimal =", poids_solution_optimale)
+>>> if not est_foret_couvrante(foret, G):  # Le résultat est-il bien une forêt couvrante?
+...     print("la forêt calculée n'est pas couvrante) #
+==
+
 
 
 # Vérifications de acpm_prim sur un graphe connexe
@@ -261,6 +276,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
