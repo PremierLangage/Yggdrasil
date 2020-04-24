@@ -136,6 +136,8 @@ viewer = Automaton.viewer(viewer)
 evaluator== #|py|
 from automaton import Automaton
 
+student_ansewer = Automaton.parse('b(a|b)*bab|bb|bab')
+
 if attempt >= maxattempt: # timeout
     grade = (score, feedback_timeout)
 else:
