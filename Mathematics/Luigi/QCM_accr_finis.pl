@@ -1,10 +1,12 @@
 author=Luigi Manca
 
-title=Théorème de Rolle / Théorème des ccroissements finis
+title= Théorème des accroissements finis
 tag=system|shell
 
 extends=/model/AMC_TXT.pl
 questions==
+
+
 
 
 ** Parmi les fonctions suivantes, indiquer celles qui satisfont les hypothèses du Théorème des accroissements finis sur l'intervalle $% [0,1 ] %$,: 
@@ -63,6 +65,7 @@ On peut affirmer que (plusieurs bonnes réponses) :
 
 
 ==
+
 
 
 
