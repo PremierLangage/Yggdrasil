@@ -21,8 +21,8 @@ class Graphe:
 # Les tests:
 
 # Vérifications de fcpm_prim sur un graphe non connexe
-testname6 = Vérifications de fcpm_prim sur un graphe non connexe (union du cours et du td)
-pltest6==
+testname0 = Vérifications de fcpm_prim sur un graphe non connexe (union du cours et du td)
+pltest0==
 >>> from corrlib_graphes import * #
 >>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS); G.ajouter_aretes(PRIM_INSTANCE_COURS) # initialisation
 >>> foret = fcpm_prim(G)
@@ -33,8 +33,8 @@ pltest6==
 ==
 
 # Vérifications de fcpm_prim sur un graphe non connexe
-testname3 = Vérifications de fcpm_prim sur un graphe non connexe  (union du cours, du td et d'un graphe aléatoire)
-pltest3==
+testname1 = Vérifications de fcpm_prim sur un graphe non connexe  (union du cours, du td et d'un graphe aléatoire)
+pltest1==
 >>> from corrlib_graphes import * #
 >>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS); G.ajouter_aretes(PRIM_INSTANCE_TD); G.ajouter_aretes(aretes_ponderees(graphe_connexe_aleatoire_pondere(10))  # initialisation du graphe
 >>> poids_solution_optimale = poids_fcpm(G.aretes())
