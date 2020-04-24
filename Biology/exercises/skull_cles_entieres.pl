@@ -46,7 +46,7 @@ form ==
 </div>
 
 {% for key in a %}
-{{value}}
+{{key}}
 {% endfor %}
 {{s}}
 ==
