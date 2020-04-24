@@ -15,9 +15,9 @@ viewer = '''
     S11
     S12
     #initials
-    S0
+    S00
     #accepting
-    S1
+    S01
     #alphabet
     a
     b
