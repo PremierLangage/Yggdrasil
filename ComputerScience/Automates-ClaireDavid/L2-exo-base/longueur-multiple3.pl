@@ -31,7 +31,7 @@ viewer = '''
 alphabet = "a,b"
 
 #    du message de l'énoncé décrivant le langage
-message = "l'ensemble des mots  ne contenant ni aa, ni bb comme facteur"
+message = "le langage {uv |u, v ∈ Σ ∗ et |u| = 2|v|}"
 ==
 
 title = TD1 exo3 L12
