@@ -6,7 +6,7 @@ extends= /ComputerScience/python/template/pltestblonde.pl
 builder= /builder/before.py
 
 author = Anthony Labarre
-title = Arbres (et forêts) couvrants de poids minimum
+title = Graphe pondéré non orienté
 text==
 Écrivez une classe Graphe implémentant un graphe pondéré non orienté.
 ==
@@ -53,5 +53,6 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
