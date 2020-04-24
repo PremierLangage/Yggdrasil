@@ -1,6 +1,7 @@
 extends = basic.pl
 
-@ /model/serialization/serialize_sympy.py [serialize.py]
+@ /model/serialization/JSONEncoder.py [serialize.py]
+@ /model/serialization/serialize_sympy.py [serialize2.py]
 @ /model/namespace/namespace_math.py [namespace.py]
 @ /utils/sympy/evalsympy.py
 @ /utils/sympy/latex2sympy.py
@@ -11,5 +12,6 @@ extends = basic.pl
 @ /utils/keyboards.JSON [keyboards.JSON]
 @ /utils/components/jsxgraph.py [customjsxgraph.py]
 @ /utils/components/mathmatrix.py [custommathmatrix.py]
+
 
 
