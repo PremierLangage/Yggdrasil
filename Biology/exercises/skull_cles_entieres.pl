@@ -45,7 +45,7 @@ form ==
 {% endfor %}
 </div>
 
-{% for key, value in b %}
+{% for key in a %}
 {{value}}
 {% endfor %}
 {{s}}
