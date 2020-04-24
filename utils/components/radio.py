@@ -58,8 +58,6 @@ class CustomRadio(Component):
                 if display:
                     item['css'] = 'icon-check-after'
 
-        if disabled:
-            self.disabled = True
+        self.disabled = disabled
 
         return score
-
