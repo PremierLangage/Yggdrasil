@@ -54,8 +54,9 @@ testname2 = Vérifications de acpm_prim sur une instance aléatoire
 pltest2==
 >>> from corrlib_graphes import *; from random import choice #
 >>> G = Graphe(); G.ajouter_aretes(aretes_ponderees(graphe_connexe_aleatoire_pondere(10))) # initialisation d'une instance aléatoire
+>>> arbre = acpm_prim(G, choice(list(G.sommets()))) # lancement de acpm_prim avec départ aléatoire
 >>> poids_solution_optimale = poids_fcpm(G.aretes()) #
->>> arbre = acpm_prim(G, choice(list(G.sommets()))); poids_obtenu = sum(poids for *_, poids in arbre.aretes())
+>>> poids_obtenu = sum(poids for *_, poids in arbre.aretes()) #
 >>> if poids_obtenu != poids_solution_optimale: # Vérification du poids
 ...     print("poids obtenu =", poids_obtenu, "; poids optimal =", poids_solution_optimale) #
 >>> if not est_arbre_couvrant(arbre, G):  # Le résultat est-il bien un arbre couvrant?
