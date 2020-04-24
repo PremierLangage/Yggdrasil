@@ -1,4 +1,5 @@
 import sys, json, jsonpickle
+import sympy, sympy2latex
 from sandboxio import get_context
 from components import Component
 from customdragdrop import DragDropGroup
