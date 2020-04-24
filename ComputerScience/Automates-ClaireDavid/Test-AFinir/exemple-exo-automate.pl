@@ -7,51 +7,28 @@ generate== #|py|
 #from automaton import Automaton
 
 #    la construction de l'automate pour tester la réponse
-viewer = AutomatonEditor(
-    automaton= {
-        "alphabet": ["a", "b"],
-        "initialStates": ["S1"],
-        "acceptingStates": ["S3"],
-        "states": ["S1", "S2", "S3","S4"],
-        "transitions": [
-            { "fromState": "S1", "toState": "S2", "symbols": ["b"] },
-            { "fromState": "S2", "toState": "S3", "symbols": ["a"] },
-            { "fromState": "S3", "toState": "S4", "symbols": ["a"] },
-            { "fromState": "S3", "toState": "S4", "symbols": ["b"] },
-            { "fromState": "S4", "toState": "S3", "symbols": ["a"] },
-            { "fromState": "S4", "toState": "S3", "symbols": ["b"] },
-        ]
-    }
-)
-
-
 #*
 #*  This script must define the following variables:
 #*   
 #*  **viewer** => an automaton in one of the accepted formats (string, regex, object...)
 #*               This automaton is considered as the answer and it will be presented to the student at the end.
 #*  Example
-#*```python
-#*  generate==
-#*  viewer = '''
-#*      #states
-#*       S0
-#*       S1
-#*       #initials
-#*       S0
-#*       #accepting
-#*       S1
-#*       #alphabet
-#*       a
-#*       b
-#*       #transitions
-#*       S0:a>S1
-#*       S1:a>S1
-#*       S1:b>S0
-#*  '''
-#*  ==
-#*  ```
-#*
+viewer = '''
+    #states
+    S0
+    S1
+    #initials
+    S0
+    #accepting
+    S1
+    #alphabet
+    a
+    b
+    #transitions
+    S0:a>S1
+    S1:a>S1
+    S1:b>S0
+'''
 
 
 #    l'alphabet
