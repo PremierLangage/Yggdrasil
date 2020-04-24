@@ -36,7 +36,7 @@ viewer = '''
 alphabet = "a,b"
 
 #    du message de l'énoncé décrivant le langage
-message = "l'ensemble des mots mots dont la 4ème lettre à partir de la droite est un a"
+message = "l'ensemble des mots dont la 4ème lettre à partir de la droite est un a"
 # peut-on utiliser la syntaxe du viewer ?
 ==
 
