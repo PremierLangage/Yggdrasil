@@ -5,9 +5,7 @@ import sympy2latex
 
 class CustomEncoder(json.JSONEncoder):
     def default(self, obj):
-        return {}
         if isinstance(obj, (sympy.Basic, sympy.Matrix)):
-            return 0
             return {'__SymPy__': True, 'srepr': sympy.srepr(obj), 'latex': sympy.latex(obj)}
         return jsonpickle.encode(obj, unpicklable=False)
 
