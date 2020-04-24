@@ -4,6 +4,14 @@
 
 extends = base.pl
 
+@ /utils/sandboxio.py
+
+inputbox =: Input
+inputbox.type = text
+inputbox.placeholder = Answer
+inputbox.maxlength = 50
+inputbox.appearance = outline
+
 #* Maximum number of attempts before showing the right answer.
 maxattempt = 3
 
