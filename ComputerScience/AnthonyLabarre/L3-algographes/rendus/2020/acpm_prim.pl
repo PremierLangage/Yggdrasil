@@ -29,6 +29,8 @@ pltest0==
 23
 >>> if not est_arbre_couvrant(arbre, G):
 ...     print("l'arbre trouvé d'arêtes", arbre.aretes(), "n'est pas un arbre couvrant pour le graphe G de sommets", sorted(G.sommets()))
+...     if not est_arbre(arbre):
+...         print("l'arbre trouvé n'est pas un arbre")
 ==
 
 testname1 = Vérifications de acpm_prim sur l'exemple du TD
