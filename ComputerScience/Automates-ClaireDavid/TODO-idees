@@ -14,6 +14,9 @@ J'ai changé réponse acceptable
 =======
 23/04 -- automate inifini - reformuler
 
+24/04 -- gérer les erreurs de syntaxe de la input box
+24/04 -- comment on fait epsilon?
+
 
 
 =========
@@ -44,6 +47,7 @@ Exercices à concevoir:
     automate minimal et simple vérification
     étapes de l'algo de Moore en donnant les classes d'équivalences à chaque niveau
 + QCM reg/non-reg
+
 
 
 
