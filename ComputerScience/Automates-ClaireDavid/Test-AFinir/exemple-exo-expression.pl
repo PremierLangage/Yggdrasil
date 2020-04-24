@@ -8,7 +8,7 @@ generate== #|py|
 #    la construction de l'automate pour tester la réponse
 
 
-viewer = Automaton.parse('(a|b)*')
+viewer = Automaton.parse('b(a|b)*bab|bb|bab')
 
 alphabet = "a,b"
 message = "l'ensemble des mots qui commencent par b et finissent pat bab ou bb."
