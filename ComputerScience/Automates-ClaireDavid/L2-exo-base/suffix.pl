@@ -43,7 +43,7 @@ else :
 alphabet = ', '.join(list(alphabet))
 ==
 
-title = * Suffixe
+title = Suffixe
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage **L1** = {{ '{' }}  mots qui {{ bla }}  **{{ mot }}** {{ '}' }} <br>
