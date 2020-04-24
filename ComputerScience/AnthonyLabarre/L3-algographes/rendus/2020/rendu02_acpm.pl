@@ -151,7 +151,7 @@ pltest7==
 evaluator==
 
 
-grade=(100,"Tout semble correct Bravo")
+grade=(100,"Tout semble correct. Bravo!!")
 ==
 
 #
