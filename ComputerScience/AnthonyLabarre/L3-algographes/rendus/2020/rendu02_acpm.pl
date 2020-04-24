@@ -61,9 +61,9 @@ testname1 = Vérification de la classe Tas sur des entiers
 pltest1== 
 >>> # création d'un tas d'entiers aléatoires
 >>> from random import randint; donnees = [randint(-100, 100) for _ in range(10)] #
->>> try:
+>>> try: #
 ...     T = Tas()  # initialisation sans paramètre
-... except TypeError:
+... except TypeError: #
 ...     T = Tas([])  # initialisation avec un itérable
 >>> for elem in donnees:
 ...     T.inserer(elem)
@@ -171,6 +171,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
