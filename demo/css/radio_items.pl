@@ -24,7 +24,7 @@ score = radio.eval()
 
 extracss ==
 <style>
-.myclass .radio-item {
+.myclass .radio-item2 {
     padding: 4px 4px 4px 4px !important;
     background-color: silver;
 }
