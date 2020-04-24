@@ -226,9 +226,14 @@ def est_foret_couvrante(foret, graphe):
     """Renvoie True si l'arbre passé en paramètre est un arbre et couvre bien
     tous les sommets du graphe, False sinon."""
     # calculer les composantes connexes de la foret et du graphe
+    '''
     composantes_foret = nx.connected_component_subgraphs(
         nx.Graph([(u, v) for u, v, *_  in foret.aretes()])
     )
+    '''
+    foret_nx = nx.Graph([(u, v) for u, v, *_  in foret.aretes()])
+    composantes_foret = [foret_nx.subgraph(c) for c in connected_components(foret_nx))
+    
 
     composantes_graphe = nx.connected_component_subgraphs(
         nx.Graph([(u, v) for u, v, *_  in graphe.aretes()])
