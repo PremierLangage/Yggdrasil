@@ -28,9 +28,6 @@ viewer = '''
 '''
 #    l'alphabet
 alphabet = "0,1"
-
-#    du message de l'énoncé décrivant le langage
-message = """"""
 ==
 
 title = ** multiples de 3
