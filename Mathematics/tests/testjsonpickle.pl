@@ -12,12 +12,12 @@ class Foo:
     def __init__(self, a, b):
         self.a = a
         self.b = b
-
+a=3
 xxx = Foo(1,2)
 ==
 
 text ==
-{{xxx}}
+{{a}}
 ==
 
 form ==
