@@ -108,8 +108,8 @@ if __name__ == "__main__":
 
     output_json = sys.argv[2]
     with open(output_json, "w+") as f:
-        f.write(jsonpickle.encode(dic, unpicklable=False))
-        #f.write(json.dumps(dic), cls=CustomEncoder)
+        #f.write(jsonpickle.encode(dic, unpicklable=False))
+        f.write(json.dumps(dic), cls=CustomEncoder)
     sys.exit(0)
 
 
