@@ -10,7 +10,7 @@ generate== #|py|
 #    la construction de l'automate pour tester la réponse
 
 
-viewer = Automaton.parse('(a|b)*(bab|bb)(a|b)*')
+viewer = Automaton.parse('ba*ba*b(a*ba*ba*b)*a*')
 
 alphabet = "a,b"
 message = "L’ensemble des mots qui commencent par b et dont le nombre de b est un multiple de 3."
