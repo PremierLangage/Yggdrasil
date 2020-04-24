@@ -104,7 +104,9 @@ if __name__ == "__main__":
 
     class CustomEncoder2(json.JSONEncoder):
         def default(self, obj):
-            return str(jsonpickle.encode(obj, unpicklable=False))
+            if isinstance(obj, (sympy.Basic, sympy.Matrix)):
+                return {'__SymPy__': True, 'srepr': sympy.srepr(obj), 'latex': sympy.latex(obj)}
+            return jsonpickle.encode(obj, unpicklable=False)
 
     output_json = sys.argv[2]
     with open(output_json, "w+") as f:
