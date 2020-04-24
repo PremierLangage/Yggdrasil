@@ -12,11 +12,11 @@ class Foo:
 
 class Bar:
     def __init__(self, x, y):
-        self.x = a
-        self.y = b
+        self.x = x
+        self.y = y
         self.z = 0
 
-o = Bar(Foo(1, [3,4]), 2)
+o = Bar(Foo(1, [3,4]), {'key1': 11, 'key2': 22})
 ==
 
 text ==
