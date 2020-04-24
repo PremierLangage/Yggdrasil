@@ -44,11 +44,6 @@ form ==
     {{ value|component }} 
 {% endfor %}
 </div>
-
-{% for key in a %}
-{{key}}
-{% endfor %}
-{{s}}
 ==
 
 settings.feedback = lightscore
