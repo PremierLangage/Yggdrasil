@@ -28,6 +28,8 @@ class Graphe:
 # Mon code
 before==
 import corrlib_graphes
+
+taboo=heapq
 ==
 
 # Les tests:
