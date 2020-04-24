@@ -102,7 +102,7 @@ if __name__ == "__main__":
     dic['internals']['attempt'] = 1
 
     output_json = sys.argv[2]
-    print(f.write(json.dumps(dic, cls=CustomEncoder),file = sys.stderr)
+    print(json.dumps(dic, cls=CustomEncoder),file = sys.stderr)
     sys.exit(1)
     with open(output_json, "w+") as f:
         #f.write(jsonpickle.encode(dic, unpicklable=False))
