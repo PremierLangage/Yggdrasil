@@ -13,7 +13,7 @@ viewer = Automaton.parse('(a|b)*a(a|b)(a|b)(a|b)')
 alphabet = "a,b"
 
 #    du message de l'énoncé décrivant le langage
-message = "l'ensemble des mots ayant un nombre de a impair et un nombre de b égal à 2 modulo 3."
+message = "l'ensemble des mots ayant un nombre de a pair et un nombre de b égal à 1 modulo 3."
 ==
 
 title = TD1 exo3 L4
