@@ -24,7 +24,7 @@ class Graphe:
 testname0 = Vérifications de fcpm_prim sur un graphe non connexe (union du cours et du td)
 pltest0==
 >>> from corrlib_graphes import * #
->>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS); G.ajouter_aretes(PRIM_INSTANCE_COURS) # initialisation
+>>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS); G.ajouter_aretes(PRIM_INSTANCE_TD) # initialisation
 >>> foret = fcpm_prim(G)
 >>> sum(poids for *_, poids in foret.aretes())
 41
