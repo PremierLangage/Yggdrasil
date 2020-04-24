@@ -2,6 +2,7 @@
 @ /builder/before2.py [builder.py]
 @ /grader/evaluator.py [grader.py]
 @ /utils/components/dragdrop.py [customdragdrop.py]
+@ /model/serialization/JSONEncoder.py [serialize.py]
 
 title = Addition
 
@@ -28,4 +29,5 @@ if input.value == a+b:
 else:
     grade=(0,f"La réponse est {a+b}.")
 ==
+
 
