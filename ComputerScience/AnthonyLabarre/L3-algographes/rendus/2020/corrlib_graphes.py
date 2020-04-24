@@ -249,7 +249,7 @@ def est_foret_couvrante(foret, graphe):
     # vérifier que tous les sommets sont couverts
     difference = set(graphe.sommets()).difference(foret.sommets())
     if difference:
-        pretty_print("les sommets suivants ne sont pas couverts: " + str(sorted(difference)), False)
+        print("les sommets suivants ne sont pas couverts: " + str(sorted(difference)))
         return False
 
     # une fois l'association réalisée, vérifier que chaque arbre couvre bien
@@ -257,10 +257,10 @@ def est_foret_couvrante(foret, graphe):
     resultat = True
     for arbre, composante in association.items():
         if not nx.is_tree(arbre):
-            pretty_print("le sous-graphe contenant les sommets " + str(arbre.nodes()) + " n'est pas un arbre", False)
+            print("le sous-graphe contenant les sommets " + str(arbre.nodes()) + " n'est pas un arbre")
             resultat = False
         if arbre.nodes() != composante.nodes():
-            pretty_print("le sous-graphe contenant les sommets " + str(arbre.nodes()) + " ne couvre pas la composante contenant les sommets " + str(composante.nodes()), False)
+            print("le sous-graphe contenant les sommets " + str(arbre.nodes()) + " ne couvre pas la composante contenant les sommets " + str(composante.nodes()))
 
     return resultat
 
@@ -305,6 +305,7 @@ def aretes_ponderees(graphe):
     """Renvoie les aretes du graphe munies de leur poids (networkx ne permet
     apparemment pas de le faire directement)."""
     return [(u, v, graphe[u][v]['weight']) for u, v in graphe.edges()]
+
 
 
 
