@@ -1,4 +1,4 @@
-extends = /model/mathinput.pl
+extends = /model/math.pl
 
 title = Calcul de dérivée
 
@@ -21,3 +21,4 @@ $$ f : x \mapsto {{f.latex}} .$$
 evaluator ==
 score, _, feedback = eval_function(input.value, sol)
 ==
+
