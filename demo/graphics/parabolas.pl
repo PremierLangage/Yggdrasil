@@ -39,7 +39,7 @@ text ==
 Parmi les représentations graphiques suivantes, laquelle correspond à la parabole d'équation
 $$ y = {{expr.latex}}.$$
 {% for i in range(n) %}
-<div style="display: inline; margin: auto;"> 
+<div style="display: inline; text-align: center;"> 
 <img src="data:image/png;base64,{{source[i]}}" style="max-width: 400px; vertical-align:top; margin: auto; display: inline" />
 </div>
 {% endfor %}
