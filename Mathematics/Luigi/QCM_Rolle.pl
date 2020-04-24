@@ -7,17 +7,24 @@ extends=/model/AMC_TXT.pl
 questions==
 
 ** Parmi les énoncés suivants, lequel correspond au Théorème de Rolle ?
-+ Soit $% f : [a,b] \rightarrow \mathbb{R} %$ une fonction continue sur $% [a,b] %$, dérivable sur $% ]a,b[ %$. 
-    On suppose $% f(a)=f(b) %$.
-    Alors il existe $% c\in ]a,b[ %$ tel que $% f'(c)=0 %$.
-- Soit $% f : [a,b] \rightarrow \mathbb{R} %$ une fonction continue sur $% [a,b] %$. 
-On suppose $% f(a)=f(b) %$.
-Alors il existe $% c\in ]a,b[ %$ tel que $% f(c)=0 %$.
-- Soit $% f : [a,b] \rightarrow \mathbb{R} %$ une fonction continue sur $% [a,b] %$, dérivable sur $% ]a,b[ %$. 
-Alors il existe $% c\in ]a,b[ %$ tel que $% f'(c)=0 %$.
-- Soit $% f : [a,b] \rightarrow \mathbb{R} %$ une fonction continue et dérivable sur $% ]a,b[ %$. 
-On suppose $% f(a)=f(b) %$.
-Alors il existe $% c\in ]a,b[ %$ tel que $% f'(c)=0 %$.
++ Soit $% f : [a,b] \rightarrow \mathbb{R} %$ une fonction continue sur $% [a,b] %$, dérivable sur $% ]a,b[ %$. On suppose $% f(a)=f(b) %$. Alors il existe $% c\in ]a,b[ %$ tel que $% f'(c)=0 %$.
+- Soit $% f : [a,b] \rightarrow \mathbb{R} %$ une fonction continue sur $% [a,b] %$. On suppose $% f(a)=f(b) %$. Alors il existe $% c\in ]a,b[ %$ tel que $% f(c)=0 %$.
+- Soit $% f : [a,b] \rightarrow \mathbb{R} %$ une fonction continue sur $% [a,b] %$, dérivable sur $% ]a,b[ %$. Alors il existe $% c\in ]a,b[ %$ tel que $% f'(c)=0 %$.
+- Soit $% f : [a,b] \rightarrow \mathbb{R} %$ une fonction continue et dérivable sur $% ]a,b[ %$. On suppose $% f(a)=f(b) %$. Alors il existe $% c\in ]a,b[ %$ tel que $% f'(c)=0 %$.
+
+
+
+* Soit $% f : [a,b] \rightarrow \mathbb{R} %$ une fonction continue sur $% [a,b] %$, dérivable sur $% ]a,b[ %$. 
+Supposons qu'il existe $% c\in ]a,b[ %$ tel que $% f'(c)=0 %$. 
+Peut-on affirmer que $% f(a) = f(b) %$ ?
+- Vrai
++ Faux
+
+* Soit $% f : [a,b] \rightarrow \mathbb{R} %$ une fonction continue sur $% [a,b] %$, dérivable sur $% ]a,b[ %$. 
+Supposons que pour tout $% c\in ]a,b[ %$ on a  $% f'(c)\not=0 %$. 
+Peut-on affirmer que $% f(a) \not= f(b) %$ ?
++ Vrai
+- Faux
 
 ** Soit $% f : \mathbb{R} \rightarrow \mathbb{R} %$ une fonction dérivable et $% a<b %$.
 Peut-on affirmer que : 
@@ -27,8 +34,6 @@ Peut-on affirmer que :
 - Si $% c \in ]a,b[ %$ et $% f'(c)=0 %$ alors $% f %$ admet un maximum ou minimum locale en $% c %$
 + Si  $% c \in ]a,b[ %$ et $% c %$ est un point de  maximum ou minimum locale pour $% f %$ alors  $% f'(c)=0 %$ 
 + Il existe $% c \in ]a,b[ %$ tel que $% f'(c) (b-a) = f(b)-f(a) %$ 
-
-
 
 ** Parmi les fonctions suivantes, indiquer celles qui satisfont les hypothèses du Théorème de Rolle sur l'intervalle $% [0,1 ] %$,: 
 - $% f(x)=x %$
