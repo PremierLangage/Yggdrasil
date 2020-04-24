@@ -6,8 +6,10 @@ extends= /ComputerScience/python/template/pltestblonde.pl
 builder= /builder/before.py
 
 author = Anthony Labarre
-title = Tester tout à la fois!
+title = Tester tout à la fois
 text==
+ Arbres (et forêts) couvrants de poids minimum
+
 Écrivez: 
 <ul>
 <li>X une classe Graphe implémentant un graphe pondéré non orienté
