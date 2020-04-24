@@ -8,9 +8,7 @@ class CustomEncoder(json.JSONEncoder):
         if isinstance(obj, (sympy.Basic, sympy.Matrix)):
             return {'__SymPy__': True, 'srepr': sympy.srepr(obj), 'latex': sympy.latex(obj)}
         return jsonpickle.encode(obj, unpicklable=False)
-        
-        
-        
+
 class CustomDecoder(json.JSONDecoder):
     def __init__(self, *args, **kwargs):
         json.JSONDecoder.__init__(self, object_hook=self.object_hook, *args, **kwargs)
