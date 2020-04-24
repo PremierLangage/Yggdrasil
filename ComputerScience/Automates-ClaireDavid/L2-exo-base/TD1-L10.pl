@@ -15,7 +15,7 @@ viewer = Automaton.parse('(a|b)*a(a|b)(a|b)(a|b)')
 alphabet = "a,b"
 
 #    du message de l'énoncé décrivant le langage
-message = " le langage {abb, ba, bab}"
+message = " le langage {abb, ba, bab}*"
 ==
 
 title = TD1 exo3 L4
