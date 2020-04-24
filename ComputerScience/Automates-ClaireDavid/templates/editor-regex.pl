@@ -57,7 +57,7 @@ feedback_syntax_error = <p class="warning-state">{0}</p>
 
 #* override this key to change the text shown after a good answer.
 form_success== #|html|
-<p class="success-state">Bravo l'automate que vous avez construit est une bonne réponse.</p>
+<p class="success-state">Bravo l'expression que vous avez donnée est une bonne réponse.</p>
 == 
 
 #* override this key to change the instructions at the bottom of the editor.
