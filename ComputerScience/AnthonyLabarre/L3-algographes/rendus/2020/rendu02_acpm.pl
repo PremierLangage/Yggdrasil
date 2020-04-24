@@ -12,10 +12,10 @@ Rendu 2 : Arbres (et forêts) couvrants de poids minimum
 
 Écrivez: 
 <ul>
-<li>X une classe Graphe implémentant un graphe pondéré non orienté
-<li>X une classe Tas implémentant une file à priorité
-<li>X une classe UnionFind
-<li>X acpm_prim(graphe, sommet), qui prend en paramètres un graphe et un sommet de départ et renvoie un ACPM pour la composante connexe du sommet donné en suivant l'algorithme de Prim;
+<li>une classe Graphe implémentant un graphe pondéré non orienté
+<li>une classe Tas implémentant une file à priorité
+<li>une classe UnionFind
+<li>acpm_prim(graphe, sommet), qui prend en paramètres un graphe et un sommet de départ et renvoie un ACPM pour la composante connexe du sommet donné en suivant l'algorithme de Prim;
 <li>acpm_kruskal(graphe), qui prend en paramètre un graphe et renvoie la forêt couvrante de poids minimum pour ce graphe en suivant l'algorithme de Kruskal;
 <li>fcpm_prim(graphe), qui prend en paramètre un graphe et renvoie la forêt couvrante de poids minimum pour ce graphe en suivant l'algorithme de Prim.
 </ul>
@@ -114,7 +114,7 @@ pltest3==
 
 # Vérifications de acpm_prim sur un graphe connexe
 testname4 = Vérifications de acpm_prim sur l'exemple du cours
-pltest0==
+pltest4==
 >>> from corrlib_graphes import *; from random import choice #
 >>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS) # initialisation de l'instance du cours
 >>> arbre = acpm_prim(G, choice(list(G.sommets()))) # lancement de acpm_prim avec départ aléatoire
@@ -129,7 +129,7 @@ pltest0==
 ==
 
 testname5 = Vérifications de acpm_prim sur l'exemple du TD
-pltest1==
+pltest5==
 >>> from corrlib_graphes import *; from random import choice #
 >>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_TD) # initialisation de l'exemple du TD
 >>> arbre = acpm_prim(G, choice(list(G.sommets()))) # lancement de acpm_prim avec départ aléatoire
@@ -144,7 +144,7 @@ pltest1==
 ==
 
 testname6 = Vérifications de acpm_prim sur une instance aléatoire
-pltest2==
+pltest6==
 >>> from corrlib_graphes import *; from random import choice #
 >>> G = Graphe(); G.ajouter_aretes(aretes_ponderees(graphe_connexe_aleatoire_pondere(10))) # initialisation d'une instance aléatoire
 >>> arbre = acpm_prim(G, choice(list(G.sommets()))) # lancement de acpm_prim avec départ aléatoire
@@ -161,8 +161,8 @@ pltest2==
 ==
 
 # Vérifications de acpm_kruskal sur un graphe connexe
-testname0 = Vérifications de acpm_kruskal sur l'exemple du cours
-pltest0==
+testname7 = Vérifications de acpm_kruskal sur l'exemple du cours
+pltest7==
 >>> from corrlib_graphes import * #
 >>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS) # initialisation de l'instance du cours
 >>> arbre = acpm_kruskal(G)
@@ -176,8 +176,8 @@ pltest0==
 ...             print("certaines extrémités d'arêtes ne sont pas des sommets") #
 ==
 
-testname1 = Vérifications de acpm_kruskal sur l'exemple du TD
-pltest1==
+testname8 = Vérifications de acpm_kruskal sur l'exemple du TD
+pltest8==
 >>> from corrlib_graphes import * #
 >>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_TD) # initialisation de l'exemple du TD
 >>> arbre = acpm_kruskal(G)
