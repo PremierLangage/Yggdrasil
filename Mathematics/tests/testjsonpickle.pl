@@ -1,6 +1,7 @@
 @ /utils/sandboxio.py
 @ /builder/before2.py [builder.py]
 @ /grader/evaluator.py [grader.py]
+@ /utils/components/dragdrop.py [customdragdrop.py]
 
 title = Addition
 
