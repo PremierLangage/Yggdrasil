@@ -236,10 +236,16 @@ def est_foret_couvrante(foret, graphe):
         foret_nx.subgraph(c) for c in nx.connected_components(foret_nx))
     ]
     
-
+    '''
     composantes_graphe = nx.connected_component_subgraphs(
         nx.Graph([(u, v) for u, v, *_  in graphe.aretes()])
     )
+    '''
+    graphe_nx = nx.Graph([(u, v) for u, v, *_  in graphe.aretes()])
+    composantes_foret = [
+        graphe_nx.subgraph(c) for c in nx.connected_components(graphe_nx))
+    ]
+
 
     # calculer l'association entre les composantes (pas du tout efficace,
     # suffira pour l'instant)
