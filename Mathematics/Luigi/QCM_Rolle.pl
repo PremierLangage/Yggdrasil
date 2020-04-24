@@ -30,10 +30,13 @@ Peut-on affirmer que :
 
 
 ** Soient $% f:[a,b]\rightarrow \mathbb{R} %$ une fonction satisfaisant les hypothèses du Théorème de Rolle sur $% [a,b] %$ et soit $% g:\mathbb{R} \to [a,b] %$ une fonction dérivable.
-On peut affirmer que (plusieurs bonnes réponses) :
+Cliquez sur les affirmations que vous pensez être correctes  :
 
-+ $% g\circ f %$ satisfait les hypothèses du Théorème de Rolle sur $% [a,b] %$ 
++ $%  g\circ f %$ satisfait les hypothèses du Théorème de Rolle sur $% [a,b] %$ 
 - $% f\circ g %$ satisfait les hypothèses du Théorème de Rolle sur $% [a,b] %$ 
+- $% fg %$ satisfait les hypothèses du Théorème de Rolle sur $% [a,b] %$ 
++ $% h(x)=f(x)+ (g(x)-g(a))(g(x)-g(b)) %$ satisfait les hypothèses du Théorème de Rolle sur $% [a,b] %$ 
++ $% h(x)=f(x)+ g(b-x)+g(x-a) %$ satisfait les hypothèses du Théorème de Rolle sur $% [a,b] %$ 
 
 
 
