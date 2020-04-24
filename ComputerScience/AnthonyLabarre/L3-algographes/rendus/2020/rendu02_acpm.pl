@@ -10,7 +10,7 @@ title = Arbres (et forêts) couvrants de poids minimum
 text==
 Écrivez: 
 <ul>
-<li>une classe Graphe implémentant un graphe pondéré non orienté
+<li>X une classe Graphe implémentant un graphe pondéré non orienté
 <li>une classe Tas implémentant une file à priorité
 <li>une classe UnionFind
 <li>acpm_prim(graphe, sommet), qui prend en paramètres un graphe et un sommet de départ et renvoie un ACPM pour la composante connexe du sommet donné en suivant l'algorithme de Prim;
@@ -55,10 +55,14 @@ pltest0==
 ==
 
 # Vérification de la classe Tas sur des entiers
-testname1 = Test de la classe Tas sur des entiers
+testname1 = Vérification de la classe Tas sur des entiers
 pltest1== 
 >>> # création d'un tas d'entiers aléatoires
->>> from random import randint; donnees = [randint(-100, 100) for _ in range(10)]; T = Tas()
+>>> from random import randint; donnees = [randint(-100, 100) for _ in range(10)] #
+>>> try:
+...     T = Tas()  # initialisation sans paramètre
+... except TypeError:
+...     T = Tas([])  # initialisation avec un itérable
 >>> for elem in donnees:
 ...     T.inserer(elem)
 >>> for elem in sorted(donnees):
@@ -69,10 +73,13 @@ pltest1==
 
 # Vérification de la classe Tas sur des triplets (premier élément = critère pour le minimum)
 
-testname2 = Test de la classe Tas sur des triplets (premier élément = critère pour le minimum)
+testname2 = Vérification de la classe Tas sur des triplets (premier élément = critère pour le minimum)
 pltest2==
->>> # création d'une liste de triplets aléatoires
->>> from random import randint; donnees = [(randint(-100, 100), randint(-100, 100), randint(-100, 100)) for _ in range(10)]; T = Tas()
+>>> from random import randint; donnees = [(randint(-100, 100), randint(-100, 100), randint(-100, 100)) for _ in range(10)] #
+>>> try:
+...     T = Tas()  # initialisation sans paramètre
+... except TypeError:
+...     T = Tas([])  # initialisation avec un itérable
 >>> for elem in donnees:
 ...     T.inserer(elem)
 >>> for elem in sorted(donnees):
