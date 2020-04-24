@@ -15,7 +15,7 @@ alphabet = "a,b"
 message = "L’ensemble des mots qui contiennent le facteur bab ou le facteur bb."
 ==
 
-title = Exemple expression
+title = Partiel 2020 Exo1-3
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez une expression reconnaissant le langage correspondant à {{ message }} <br>
