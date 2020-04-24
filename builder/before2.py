@@ -83,8 +83,8 @@ if __name__ == "__main__":
                 del dic[key]
 
     # custom serialization is applied
-    for key in dic:
-        dic[key]=serialize(dic[key])
+    # for key in dic:
+        # dic[key]=serialize(dic[key])
 
     # HACK for components in lists
     aux_component(dic)
