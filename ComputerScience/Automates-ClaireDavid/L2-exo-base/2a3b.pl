@@ -8,8 +8,12 @@ generate== #|py|
 #    la construction de l'automate pour tester la réponse
 viewer = '''
     #states
-    S0
-    S1
+    S00
+    S01
+    S02
+    S10
+    S11
+    S12
     #initials
     S0
     #accepting
