@@ -22,6 +22,8 @@ form ==
 {{key}}
 {% endfor %}
 
+{{s}}
+
 ==
 
 settings.feedback = lightscore
