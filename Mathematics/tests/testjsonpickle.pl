@@ -26,12 +26,15 @@ b = {2: 2, 3: 3, 1: 1, 4: 4}
 
 a_encoded = jsonpickle.encode(a, unpicklable=False)
 b_encoded = jsonpickle.encode(b, unpicklable=False)
+
+v = str(jsonpickle.__version__)
 ==
 
 text ==
 {{obj_encoded}}
 {{a_encoded}}
 {{b_encoded}}
+{{v}}
 ==
 
 form ==
