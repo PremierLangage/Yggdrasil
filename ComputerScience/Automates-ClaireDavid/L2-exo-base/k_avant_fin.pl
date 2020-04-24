@@ -21,7 +21,7 @@ message = "l'ensemble des mots dont la 4ème lettre à partir de la droite est u
 title = TD1 exo3 L4
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
-Donnez un automate reconnaissant le langage correspondant à {{ message }} <br>
+Donnez un automate reconnaissant {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
 <p class="warning-state">
 Il vous reste {{ maxattempt - attempt }} tentative(s) !
