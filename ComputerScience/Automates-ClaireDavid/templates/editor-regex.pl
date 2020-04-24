@@ -52,9 +52,8 @@ feedback_match =
 feedback_nomatch = <p class="error-state">L'expression que vous avez donnée ne correspond pas à une réponse attendue.</p>
 #* feedback shown after a timeout.
 feedback_timeout = <p class="warning-state">L'automate suivant était une réponse possible à cette question.</p>
-#* feedback shown for a syntax error. {0} is replaced by the occured error
+#XXX* feedback shown for a syntax error. {0} is replaced by the occured error
 feedback_syntax_error = <p class="warning-state">Erreur de syntaxe </p>
-
 
 #* override this key to change the text shown after a good answer.
 ## XXX
@@ -158,7 +157,7 @@ else:
         grade=(score, feedback_nomatch)
     except Exception as e:
         score = 0
-        grade=(score, feedback_syntaxerror)
+        grade=(score, feedback_syntax_error)
 
 ==
 
