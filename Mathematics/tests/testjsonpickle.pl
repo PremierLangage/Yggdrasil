@@ -1,4 +1,6 @@
-extends = /model/basic.pl
+@ /utils/sandboxio.py
+@ /builder/before.py [builder.py]
+@ /grader/evaluator.py [grader.py]
 
 title = Addition
 
