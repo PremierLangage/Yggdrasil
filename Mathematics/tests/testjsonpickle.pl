@@ -20,6 +20,10 @@ obj = Bar(Foo(1, [3,4]), {'key1': 11, 'key2': 22})
 
 import jsonpickle
 obj_encoded = jsonpickle.encode(obj, unpicklable=False)
+
+a = {1: 1, 2: 2, 3: 3, 4: 4}
+b = {2: 2, 3: 3, 1: 1, 4: 4}
+
 ==
 
 text ==
