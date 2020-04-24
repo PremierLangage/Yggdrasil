@@ -59,11 +59,11 @@ pltest2==
 >>> if poids_obtenu != poids_solution_optimale:
 ...     print("poids obtenu =", poids_obtenu, "; poids optimal =", poids_solution_optimale)
 >>> if not est_arbre_couvrant(arbre, G):  # Le résultat est-il bien un arbre couvrant?
-...     print("l'arbre trouvé d'arêtes", arbre.aretes(), "n'est pas un arbre couvrant pour le graphe G de sommets", sorted(G.sommets()))
-...     if not est_arbre(arbre):
-...         print("l'arbre trouvé n'est pas un arbre")
-...         if any(v not in G.sommets() for v in sum((arete[:2] for arete in arbre.aretes()), ())):
-...             print("certaines extrémités d'arêtes ne sont pas des sommets")
+...     print("l'arbre trouvé d'arêtes", arbre.aretes(), "n'est pas un arbre couvrant pour le graphe G de sommets", sorted(G.sommets())) #
+...     if not est_arbre(arbre): # Le résultat est-il bien un arbre?
+...         print("l'arbre trouvé n'est pas un arbre") #
+...         if any(v not in G.sommets() for v in sum((arete[:2] for arete in arbre.aretes()), ())): #
+...             print("certaines extrémités d'arêtes ne sont pas des sommets") #
 ==
 
 # Le grader:
