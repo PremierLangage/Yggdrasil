@@ -42,7 +42,7 @@ pltest1==
 >>> if poids_obtenu != poids_solution_optimale:
 ...     print("poids obtenu =", poids_obtenu, "; poids optimal =", poids_solution_optimale)
 >>> if not est_foret_couvrante(foret, G):  # Le résultat est-il bien une forêt couvrante?
-...     print("la forêt calculée n'est pas couvrante) #
+...     print("la forêt calculée n'est pas couvrante") #
 ==
 
 # Le grader:
