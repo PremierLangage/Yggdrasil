@@ -24,7 +24,7 @@ testname0 = Vérifications de acpm_prim sur l'exemple du cours
 pltest0==
 >>> from corrlib_graphes import *; from random import choice #
 >>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS) # initialisation de l'instance du cours
->>> arbre = acpm_prim(G, choice(list(G.sommets())) # lancement de acpm_prim avec départ aléatoire
+>>> arbre = acpm_prim(G, choice(list(G.sommets()))) # lancement de acpm_prim avec départ aléatoire
 >>> sum(poids for *_, poids in arbre.aretes())  # vérification du poids de la solution
 23
 >>> if not est_arbre_couvrant(arbre, G):
