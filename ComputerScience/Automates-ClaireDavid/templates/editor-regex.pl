@@ -139,16 +139,13 @@ evaluator== #|py|
 from automaton import Automaton
 from generator import Generator
 
-try:
-    student_answer, error = Generator.regex(inputbox.value, True)
-except Exception as e:
-
-
 if attempt >= maxattempt: # timeout
     grade = (score, feedback_timeout)
 else:
     attempt += 1
-    match, error = Automaton.compare(viewer, student_answer)
+    try:
+        student_answer, error = Generator.regex(inputbox.value, True)
+        match, error = Automaton.compare(viewer, student_answer)
     if  attempt >= maxattempt and (error or not match): # error or no match after timeout
         grade = (score, feedback_timeout)
     elif error:
@@ -159,6 +156,10 @@ else:
     else:
         score = 0
         grade=(score, feedback_nomatch)
+    except Exception as e:
+        score = 0
+        grade=(score, feedback_syntaxerror)
+
 ==
 
 
