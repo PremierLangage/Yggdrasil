@@ -43,7 +43,7 @@ else :
 alphabet = ', '.join(list(alphabet))
 ==
 
-title = Facteur
+title = * Facteur
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage **L1** = {{ '{' }}  mots qui {{ bla }} **{{ mot }}** {{ '}' }} <br>
@@ -54,6 +54,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 {% endif %}
 
 ==
+
 
 
 
