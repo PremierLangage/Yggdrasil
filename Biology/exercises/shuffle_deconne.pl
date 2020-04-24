@@ -1,6 +1,5 @@
 
 extends = /model/basic.pl
-@ /builder/before.py [builder.py]
 title = Shuffle déconne
 
 before==#|python|
