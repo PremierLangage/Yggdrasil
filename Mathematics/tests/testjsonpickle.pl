@@ -2,6 +2,7 @@
 @ /builder/before2.py [builder.py]
 @ /grader/evaluator.py [grader.py]
 @ /utils/components/dragdrop.py [customdragdrop.py]
+@ /utils/sympy/sympy2latex.py
 @ /model/serialization/JSONEncoder.py [serialize.py]
 
 title = Addition
