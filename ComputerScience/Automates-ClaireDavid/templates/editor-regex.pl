@@ -13,7 +13,7 @@ inputbox.maxlength = 50
 inputbox.appearance = outline
 
 #* Maximum number of attempts before showing the right answer.
-maxattempt = 3
+maxattempt = 10
 
 #*
 #*  This script must define the following variables:
