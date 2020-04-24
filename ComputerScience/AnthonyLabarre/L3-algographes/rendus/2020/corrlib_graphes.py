@@ -233,7 +233,7 @@ def est_foret_couvrante(foret, graphe):
     '''
     foret_nx = nx.Graph([(u, v) for u, v, *_  in foret.aretes()])
     composantes_foret = [
-        foret_nx.subgraph(c) for c in connected_components(foret_nx))
+        foret_nx.subgraph(c) for c in nx.connected_components(foret_nx))
     ]
     
 
