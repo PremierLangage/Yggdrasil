@@ -30,6 +30,8 @@ b_encoded = jsonpickle.encode(b, unpicklable=False)
 
 text ==
 {{obj_encoded}}
+{{a_encoded}}
+{{b_encoded}}
 ==
 
 form ==
