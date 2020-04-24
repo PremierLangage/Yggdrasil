@@ -14,7 +14,7 @@ alphabet = "a,b"
 message = "l'ensemble des mots qui commencent par b et finissent pat bab ou bb."
 ==
 
-title = Partiel 2020 Exo1-1
+title = Exemple expression
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez une expression reconnaissant le langage correspondant à {{ message }} <br>
