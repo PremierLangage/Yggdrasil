@@ -22,7 +22,7 @@ viewer = '''
     a
     b
     #transitions
-    S0:a>S1
+    S00:a>S10
     S1:a>S1
     S1:b>S0
 '''
