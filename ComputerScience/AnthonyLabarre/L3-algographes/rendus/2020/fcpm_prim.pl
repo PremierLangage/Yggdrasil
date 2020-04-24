@@ -36,7 +36,7 @@ pltest0==
 testname1 = Vérifications de fcpm_prim sur un graphe non connexe  (union du cours, du td et d'un graphe aléatoire)
 pltest1==
 >>> from corrlib_graphes import * #
->>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS); G.ajouter_aretes(PRIM_INSTANCE_TD); G.ajouter_aretes(aretes_ponderees(graphe_connexe_aleatoire_pondere(10))  # initialisation du graphe
+>>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS); G.ajouter_aretes(PRIM_INSTANCE_TD); G.ajouter_aretes(aretes_ponderees(graphe_connexe_aleatoire_pondere(10)))  # initialisation du graphe
 >>> poids_solution_optimale = poids_fcpm(G.aretes())
 >>> foret = fcpm_prim(G); poids_obtenu = sum(poids for *_, poids in foret.aretes())
 >>> if poids_obtenu != poids_solution_optimale:
