@@ -6,12 +6,12 @@ title = Addition
 
 before ==
 class Foo:
-    def __init__(a, b):
+    def __init__(self, a, b):
         self.a = a
         self.b = b
 
 class Bar:
-    def __init__(x, y):
+    def __init__(self, x, y):
         self.x = a
         self.y = b
         self.z = 0
