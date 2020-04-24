@@ -1,6 +1,3 @@
-
-
-
 extends = ../templates/editor-L2.pl
 
 
