@@ -23,6 +23,8 @@ viewer = '''
     b
     #transitions
     S00:a>S10
+    S01:a>S11
+    S02:a>S12
     S1:a>S1
     S1:b>S0
 '''
