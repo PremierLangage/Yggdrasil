@@ -30,7 +30,7 @@ viewer = '''
 alphabet = "0,1"
 
 #    du message de l'énoncé décrivant le langage
-message = "les mots qui sont la représentation binaire des entiers multiples de 3 (bit de poids fort à gauche -- big endian)."
+message = "les mots qui sont la représentation en binaire (big endian) des entiers multiples de 3. (La représentation big endian correspond à mettre le bit de poids fort à gauche.)"
 ==
 
 title = ** multiples de 3
