@@ -4,7 +4,7 @@
 @ /utils/components/dragdrop.py [customdragdrop.py]
 
 title = Addition
-before=
+
 before2 ==
 class Foo:
     def __init__(self, a, b):
