@@ -31,6 +31,10 @@ text ==
 ==
 
 form ==
+{% for key, value in a.items() %}
+{{key}}
+{% endfor %}
+
 <img src="{{scheme}}" style="max-width: 300px; vertical-align:top; display: inline-block"> 
 <div style="max-width: 100%;display: inline-block"> 
 <ul>
