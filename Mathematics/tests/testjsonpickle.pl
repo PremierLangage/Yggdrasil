@@ -17,7 +17,7 @@ xxx = Foo(1,2)
 ==
 
 text ==
-{{a}}
+{{xxx}}
 ==
 
 form ==
