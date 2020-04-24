@@ -44,11 +44,17 @@ pltest0==
 
 testname1 = Vérifications de acpm_kruskal sur l'exemple du TD
 pltest1==
->>> from corrlib_graphes import PRIM_INSTANCE_TD #
+>>> from corrlib_graphes import * #
 >>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_TD) # initialisation de l'exemple du TD
 >>> arbre = acpm_kruskal(G)
 >>> sum(poids for *_, poids in arbre.aretes())
 18
+>>> if not est_arbre_couvrant(arbre, G):  # Le résultat est-il bien un arbre couvrant?
+...     print("l'arbre trouvé d'arêtes", arbre.aretes(), "n'est pas un arbre couvrant pour le graphe G de sommets", sorted(G.sommets())) #
+...     if not est_arbre(arbre): # Le résultat est-il bien un arbre?
+...         print("l'arbre trouvé n'est pas un arbre") #
+...         if any(v not in G.sommets() for v in sum((arete[:2] for arete in arbre.aretes()), ())): #
+...             print("certaines extrémités d'arêtes ne sont pas des sommets") #
 ==
 
 testname2 = Vérifications de acpm_kruskal sur une instance aléatoire
