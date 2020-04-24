@@ -14,6 +14,10 @@ s = str(a)
 ==
 
 text ==
+{% for key in a %}
+{{key}}
+{% endfor %}
+<br>
 
 ==
 
