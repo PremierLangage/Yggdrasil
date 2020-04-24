@@ -32,7 +32,7 @@ alphabet = "0,1"
 #    du message de l'énoncé décrivant le langage
 message = """les mots qui sont la représentation en binaire (big endian) des entiers multiples de 3. 
             <br>La représentation big endian correspond à mettre le bit de poids fort à gauche.
-            <br>Par exemple l'entier 41 = 2⁵+2³+2⁰ est représenté par 101001 ou 0101001 ou 00101001 ..."""
+            <br>Par exemple l'entier 41 = 2^5+2³+2⁰ est représenté par 101001 ou 0101001 ou 00101001 ..."""
 ==
 
 title = ** multiples de 3
