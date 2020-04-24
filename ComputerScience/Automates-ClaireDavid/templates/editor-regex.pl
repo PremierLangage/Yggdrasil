@@ -49,7 +49,7 @@ generate % null
 feedback_match = 
 #* feedback shown after a bad answer.
 ## XXX
-feedback_nomatch = <p class="error-state">L'expression que vous avez donnéé ne correspond pas à une réponse attendue.</p>
+feedback_nomatch = <p class="error-state">L'expression que vous avez donnée ne correspond pas à une réponse attendue.</p>
 #* feedback shown after a timeout.
 feedback_timeout = <p class="warning-state">L'automate suivant était une réponse possible à cette question.</p>
 #* feedback shown for a syntax error. {0} is replaced by the occured error
