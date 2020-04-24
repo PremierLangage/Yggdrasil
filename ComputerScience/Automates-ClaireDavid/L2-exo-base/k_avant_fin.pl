@@ -18,7 +18,7 @@ alphabet = "a,b"
 message = "l'ensemble des mots dont la 4ème lettre à partir de la droite est un a"
 ==
 
-title = Partiel 2020 Exo1-1
+title = TD1 exo3 L4
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage correspondant à {{ message }} <br>
