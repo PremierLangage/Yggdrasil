@@ -6,7 +6,7 @@ extends= /ComputerScience/python/template/pltestblonde.pl
 builder= /builder/before.py
 
 author = Anthony Labarre
-title = Arbres (et forêts) couvrants de poids minimum
+title = Tester tout à la fois
 text==
 Écrivez: 
 <ul>
