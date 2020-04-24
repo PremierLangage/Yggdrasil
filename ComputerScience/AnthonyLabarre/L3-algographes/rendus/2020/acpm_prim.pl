@@ -56,7 +56,7 @@ pltest2==
 >>> G = Graphe(); G.ajouter_aretes(aretes_ponderees(graphe_connexe_aleatoire_pondere(10))) # initialisation d'une instance aléatoire
 >>> poids_solution_optimale = poids_fcpm(G.aretes())
 >>> arbre = acpm_prim(G, choice(list(G.sommets()))); poids_obtenu = sum(poids for *_, poids in arbre.aretes())
->>> if poids_obtenu != poids_solution_optimale:
+>>> if poids_obtenu != poids_solution_optimale: # Vérification du poids
 ...     print("poids obtenu =", poids_obtenu, "; poids optimal =", poids_solution_optimale)
 >>> if not est_arbre_couvrant(arbre, G):  # Le résultat est-il bien un arbre couvrant?
 ...     print("l'arbre trouvé d'arêtes", arbre.aretes(), "n'est pas un arbre couvrant pour le graphe G de sommets", sorted(G.sommets())) #
