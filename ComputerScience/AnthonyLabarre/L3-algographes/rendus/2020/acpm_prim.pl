@@ -27,12 +27,12 @@ pltest0==
 >>> arbre = acpm_prim(G, choice(list(G.sommets()))) # lancement de acpm_prim avec départ aléatoire
 >>> sum(poids for *_, poids in arbre.aretes())  # vérification du poids de la solution
 23
->>> if not est_arbre_couvrant(arbre, G):
-...     print("l'arbre trouvé d'arêtes", arbre.aretes(), "n'est pas un arbre couvrant pour le graphe G de sommets", sorted(G.sommets()))
-...     if not est_arbre(arbre):
-...         print("l'arbre trouvé n'est pas un arbre")
-...         if any(v not in G.sommets() for v in sum((arete[:2] for arete in arbre.aretes()), ())):
-...             print("certaines extrémités d'arêtes ne sont pas des sommets")
+>>> if not est_arbre_couvrant(arbre, G):  # Le résultat est-il bien un arbre couvrant?
+...     print("l'arbre trouvé d'arêtes", arbre.aretes(), "n'est pas un arbre couvrant pour le graphe G de sommets", sorted(G.sommets())) #
+...     if not est_arbre(arbre): # Le résultat est-il bien un arbre?
+...         print("l'arbre trouvé n'est pas un arbre") #
+...         if any(v not in G.sommets() for v in sum((arete[:2] for arete in arbre.aretes()), ())): #
+...             print("certaines extrémités d'arêtes ne sont pas des sommets") #
 ==
 
 testname1 = Vérifications de acpm_prim sur l'exemple du TD
