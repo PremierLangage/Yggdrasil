@@ -19,7 +19,7 @@ class Bar:
 obj = Bar(Foo(1, [3,4]), {'key1': 11, 'key2': 22})
 
 import jsonpickle
-obj_encoded = jsonpickle.encode(obj, evaluate=False)
+obj_encoded = jsonpickle.encode(obj, unpicklable=False)
 ==
 
 text ==
