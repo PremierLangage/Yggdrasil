@@ -1,4 +1,4 @@
-extends = ../templates/editor-L2.pl
+extends = ../templates/editor-regex.pl
 
 
 generate== #|py|
@@ -8,7 +8,7 @@ generate== #|py|
 #    la construction de l'automate pour tester la réponse
 
 
-viewer = Automaton.parse('b(a|b)*bab|bb|bab')
+viewer = Automaton.parse('b(a|b)*(bab|bb)|bb|bab')
 
 alphabet = "a,b"
 message = "l'ensemble des mots qui commencent par b et finissent pat bab ou bb."
