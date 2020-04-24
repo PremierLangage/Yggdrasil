@@ -37,7 +37,7 @@ pltest0==
 
 testname1 = Vérifications de acpm_prim sur l'exemple du TD
 pltest1==
->>> from corrlib_graphes import PRIM_INSTANCE_COURS, from random import choice #
+>>> from corrlib_graphes import PRIM_INSTANCE_COURS; from random import choice #
 >>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_TD) # initialisation de l'exemple du TD
 >>> arbre = acpm_prim(G, choice(list(G.sommets())) # lancement de acpm_prim avec départ aléatoire
 >>> sum(poids for *_, poids in arbre.aretes())
