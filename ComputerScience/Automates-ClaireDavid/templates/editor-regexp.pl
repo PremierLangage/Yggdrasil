@@ -85,7 +85,7 @@ form== #|html|
 {{ form_success }}
 {% endif %}
 
-<!-- EDITOR VIEW -->
+<!-- INPUT BOX -->
 {{ inputbox|component}}
 
 <br>
