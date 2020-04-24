@@ -58,7 +58,7 @@ pltest2==
 >>> arbre = acpm_prim(G, choice(list(G.sommets()))); poids_obtenu = sum(poids for *_, poids in arbre.aretes())
 >>> if poids_obtenu != poids_solution_optimale:
 ...     print("poids obtenu =", poids_obtenu, "; poids optimal =", poids_solution_optimale)
->>> if not est_arbre_couvrant(arbre, G):
+>>> if not est_arbre_couvrant(arbre, G):  # Le résultat est-il bien un arbre couvrant?
 ...     print("l'arbre trouvé d'arêtes", arbre.aretes(), "n'est pas un arbre couvrant pour le graphe G de sommets", sorted(G.sommets()))
 ...     if not est_arbre(arbre):
 ...         print("l'arbre trouvé n'est pas un arbre")
