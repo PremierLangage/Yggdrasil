@@ -57,6 +57,7 @@ pltest1==
 ...             print("certaines extrémités d'arêtes ne sont pas des sommets") #
 ==
 
+
 testname2 = Vérifications de acpm_kruskal sur une instance aléatoire
 pltest2==
 >>> from corrlib_graphes import * #
