@@ -5,9 +5,16 @@
 title = Addition
 
 before ==
-import random as rd
-a=rd.randint(10,20)
-b=rd.randint(10,20)
+class Foo:
+    def __init__(number, dict):
+        self.number = number
+        self.dict = dict
+
+class Bar:
+    def __init__(a, b):
+        self.a = a
+        self.b = b
+        self.c = 0
 ==
 
 text ==
