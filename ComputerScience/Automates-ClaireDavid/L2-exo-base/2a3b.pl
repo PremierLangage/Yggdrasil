@@ -25,6 +25,9 @@ viewer = '''
     S00:a>S10
     S01:a>S11
     S02:a>S12
+    S10:a>S00
+    S11:a>S01
+    S12:a>S02
     S1:a>S1
     S1:b>S0
 '''
