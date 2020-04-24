@@ -34,7 +34,7 @@ alphabet = "a,b"
 message = "le langage { u.v tels que  u,v ∈ Σ* et |u| = 2|v| }"
 ==
 
-title = TD1 exo3 L12
+title = TD1 exo3 L11
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant {{ message }} <br>
