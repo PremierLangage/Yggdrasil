@@ -7,7 +7,7 @@
 
 title = Addition
 
-before2 ==
+before ==
 class Foo:
     def __init__(self, a, b):
         self.a = a
