@@ -1,12 +1,12 @@
 
 extends = /model/basic.pl
-
+@ /builder/before.py [builder.py]
 title = Shuffle déconne
 
 before==#|python|
 from random import shuffle
 
-a = {1:1,2:2,3:3,4:4,5:5,13:88}
+a = {1:1,2:2,3:3,4:4}
 b = list(a.items())
 shuffle(b)
 a = dict(b)
@@ -14,21 +14,19 @@ s = str(a)
 ==
 
 text ==
-{{str(b)}}
 {{s}}
 <br>
-{% for items in a.items() %}
-{{items}}
+{% for key in a %}
+{{key}}
 {% endfor %}
 <br>
 
 ==
 
 form ==
-Form
 <br>
-{% for key, value in a.items() %}
-{{key}}:{{value}}
+{% for key in a %}
+{{key}}
 {% endfor %}
 </br>
 ==
