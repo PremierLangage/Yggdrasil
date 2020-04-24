@@ -6,15 +6,17 @@ title = Addition
 
 before ==
 class Foo:
-    def __init__(number, dict):
-        self.number = number
-        self.dict = dict
-
-class Bar:
     def __init__(a, b):
         self.a = a
         self.b = b
-        self.c = 0
+
+class Bar:
+    def __init__(x, y):
+        self.x = a
+        self.y = b
+        self.z = 0
+
+Bar(Foo(1, [3,4]), {'key1': 11, 'key2': 22})
 ==
 
 text ==
