@@ -1,34 +1,31 @@
 
-extends = ../templates/editor.pl
+extends = ../templates/editor-L2.pl
 
-maxattempt = 2
 
 ## Ajouter ici la génération de l'automate et autres variables de l'exo
 generate== #|py|
+#from automaton import Automaton
 
 #    la construction de l'automate pour tester la réponse
-viewer = {
+viewer = AutomatonEditor(
+    automaton= {
         "alphabet": ["a", "b"],
         "initialStates": ["S1"],
-        "acceptingStates": ["S5"],
-        "states": ["S1", "S2", "S3","S4","S5"],
+        "acceptingStates": ["S3"],
+        "states": ["S1", "S2", "S3","S4"],
         "transitions": [
             { "fromState": "S1", "toState": "S2", "symbols": ["b"] },
-            { "fromState": "S1", "toState": "S3", "symbols": ["b"] },
-            { "fromState": "S1", "toState": "S4", "symbols": ["b"] },
-            { "fromState": "S2", "toState": "S3", "symbols": ["b"] },
-            { "fromState": "S2", "toState": "S4", "symbols": ["b"] },
-            { "fromState": "S2", "toState": "S2", "symbols": ["a"] },
-            { "fromState": "S2", "toState": "S2", "symbols": ["b"] },
+            { "fromState": "S2", "toState": "S3", "symbols": ["a"] },
             { "fromState": "S3", "toState": "S4", "symbols": ["a"] },
-            { "fromState": "S4", "toState": "S5", "symbols": ["b"] },
+            { "fromState": "S3", "toState": "S4", "symbols": ["b"] },
+            { "fromState": "S4", "toState": "S3", "symbols": ["a"] },
+            { "fromState": "S4", "toState": "S3", "symbols": ["b"] },
         ]
     }
+)
 
-
-
-#    la construction de l'automate pour tester la réponse à partir d'une expression
-viewer = a*bc
+#   transformation de l'automate de json en objet
+#automaton = Automaton.parse(automaton)
 
 #    l'alphabet
 alphabet = "a,b"
@@ -38,11 +35,8 @@ message = "l'ensemble des mots qui commencent par ba et dont la longueur est pai
 # peut-on utiliser la syntaxe du viewer ?
 ==
 
-title = Bla - exemple avec soluce automate
+title = Partiel 2020 Exo1-1
 text ==
-Affichage de la solution pour tester
-{{viewer|component}}
-<br>
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage correspondant à {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
@@ -51,7 +45,6 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
-
 
 
 
