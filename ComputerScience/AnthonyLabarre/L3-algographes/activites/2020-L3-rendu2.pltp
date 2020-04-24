@@ -2,7 +2,8 @@
 title = L3 algo des graphes - Rendu 2 
 
 introduction ==
- Voici des tests pour vous permettre de corriger et tester votre rendu 2. 
+ Voici des tests pour vous permettre de corriger et tester votre rendu 2.
+ 
  Les zones de tests sont indépendantes donc vous pouvez les utiliser dans l'ordre que vous voulez. 
  Le dernier jeu de tests porte sur tous les points demandés dans le rendu.
 
@@ -22,4 +23,5 @@ introduction ==
 @../rendus/2020/acpm_kruskal.pl
 
 #@../rendus/2020/rendu02_acpm.pl
+
 
