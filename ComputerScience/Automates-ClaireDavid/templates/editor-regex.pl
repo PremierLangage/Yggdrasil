@@ -51,7 +51,8 @@ feedback_match =
 ## XXX
 feedback_nomatch = <p class="error-state">L'expression que vous avez donnée ne correspond pas à une réponse attendue.</p>
 #* feedback shown after a timeout.
-feedback_timeout = <p class="warning-state">L'automate suivant était une réponse possible à cette question.</p>
+#* XXX
+feedback_timeout = <p class="warning-state">Vous n'avez pas réussi l'exercice.<br> Relisez votre cours et retentez l'exercice un peu plus tard.</p>
 #XXX* feedback shown for a syntax error. {0} is replaced by the occured error
 feedback_syntax_error = <p class="warning-state">Erreur de syntaxe </p>
 
