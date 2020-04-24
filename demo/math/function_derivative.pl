@@ -17,7 +17,7 @@ text ==
 Calculer la dérivée de la fonction
 $$ f : x \mapsto {{f.latex}} .$$
 ==
-form =
+
 evaluator ==
 score, _, feedback = eval_function(input.value, sol)
 ==
