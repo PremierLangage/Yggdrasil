@@ -30,7 +30,7 @@ viewer = '''
 alphabet = "0,1"
 ==
 
-title = ** multiples de 3
+title = *** multiples de 3
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant les mots qui sont la représentation en binaire (big endian) des entiers multiples de 3. 
