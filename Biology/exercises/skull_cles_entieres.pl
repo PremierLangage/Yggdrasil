@@ -7,6 +7,7 @@ title = Os de la voûte cranienne
 
 before==#|python|
 from customdragdrop import DragDropGroup
+from random import shuffle
 
 mygroup = DragDropGroup()
 labelscontent = ["Os frontal", "Os pariétal", "Os sphénoïde", "Os temporal", "Os occipital", "Os ethmoïde"]
@@ -17,6 +18,12 @@ for i in range(1,6):
     mygroup.add_match_by_name(i, i) 
 
 mygroup.shuffle_labels()
+
+a = {1:1,2:2,3:3,4:4}
+b = list(a.items())
+shuffle(b)
+a = dict(b)
+
 ==
 
 text ==
@@ -37,6 +44,10 @@ form ==
     {{ value|component }} 
 {% endfor %}
 </div>
+
+{% for key, value in a %}}
+{{value}}
+{% endfor %}
 ==
 
 settings.feedback = lightscore
@@ -46,6 +57,7 @@ from customdragdrop import right_minus_wrong
 
 grade = mygroup.eval(grading_function = right_minus_wrong)
 ==
+
 
 
 
