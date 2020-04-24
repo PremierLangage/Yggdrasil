@@ -232,7 +232,9 @@ def est_foret_couvrante(foret, graphe):
     )
     '''
     foret_nx = nx.Graph([(u, v) for u, v, *_  in foret.aretes()])
-    composantes_foret = [foret_nx.subgraph(c) for c in connected_components(foret_nx))
+    composantes_foret = [
+        foret_nx.subgraph(c) for c in connected_components(foret_nx))
+    ]
     
 
     composantes_graphe = nx.connected_component_subgraphs(
@@ -310,6 +312,7 @@ def aretes_ponderees(graphe):
     """Renvoie les aretes du graphe munies de leur poids (networkx ne permet
     apparemment pas de le faire directement)."""
     return [(u, v, graphe[u][v]['weight']) for u, v in graphe.edges()]
+
 
 
 
