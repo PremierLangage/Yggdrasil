@@ -27,7 +27,7 @@ text ==
 form ==
 Form
 <br>
-for key, value in a.items()
+{% for key, value in a.items() %}
 {{key}}:{{value}}
 {% endfor %}
 </br>
