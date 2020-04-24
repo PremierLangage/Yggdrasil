@@ -23,7 +23,7 @@ obj_encoded = jsonpickle.encode(obj)
 ==
 
 text ==
-{{obj}}
+{{obj_encoded}}
 ==
 
 form ==
