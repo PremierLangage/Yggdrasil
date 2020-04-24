@@ -8,7 +8,7 @@ builder= /builder/before.py
 author = Anthony Labarre
 title = Tester tout à la fois
 text==
- Arbres (et forêts) couvrants de poids minimum
+Rendu 2 : Arbres (et forêts) couvrants de poids minimum
 
 Écrivez: 
 <ul>
