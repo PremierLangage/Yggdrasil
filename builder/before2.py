@@ -17,7 +17,6 @@ try:
 except ModuleNotFoundError:
     def serialize(arg):
         return arg
-from serialize import CustomEncoder, CustomDecoder
 
 # Load the custom namespace
 try:
