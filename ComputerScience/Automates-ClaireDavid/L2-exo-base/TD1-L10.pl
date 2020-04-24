@@ -18,7 +18,7 @@ alphabet = "a,b"
 message = " le langage {abb, ba, bab}*"
 ==
 
-title = TD1 exo3 L4
+title = TD1 exo3 L10
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant {{ message }} <br>
