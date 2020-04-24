@@ -1,10 +1,23 @@
 author=Luigi Manca
 
-title=Théorème de Rolle / Théorème des ccroissements finis
+title=Théorème de Rolle 
 tag=system|shell
 
 extends=/model/AMC_TXT.pl
 questions==
+
+** Parmi les énoncés suivants, lequel correspond au Théorème de Rolle ?
++ Soit $% f : [a,b] \rightarrow \mathbb{R} %$ une fonction continue sur $% [a,b] %$, dérivable sur $% ]a,b[ %$. 
+    On suppose $% f(a)=f(b) %$.
+    Alors il existe $% c\in ]a,b[ %$ tel que $% f'(c)=0 %$.
+- Soit $% f : [a,b] \rightarrow \mathbb{R} %$ une fonction continue sur $% [a,b] %$. 
+On suppose $% f(a)=f(b) %$.
+Alors il existe $% c\in ]a,b[ %$ tel que $% f(c)=0 %$.
+- Soit $% f : [a,b] \rightarrow \mathbb{R} %$ une fonction continue sur $% [a,b] %$, dérivable sur $% ]a,b[ %$. 
+Alors il existe $% c\in ]a,b[ %$ tel que $% f'(c)=0 %$.
+- Soit $% f : [a,b] \rightarrow \mathbb{R} %$ une fonction continue et dérivable sur $% ]a,b[ %$. 
+On suppose $% f(a)=f(b) %$.
+Alors il existe $% c\in ]a,b[ %$ tel que $% f'(c)=0 %$.
 
 ** Soit $% f : \mathbb{R} \rightarrow \mathbb{R} %$ une fonction dérivable et $% a<b %$.
 Peut-on affirmer que : 
@@ -42,4 +55,5 @@ Cliquez sur les affirmations que vous pensez être correctes  :
 
 
 ==
+
 
