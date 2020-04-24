@@ -29,9 +29,9 @@ class Graphe:
 before==
 import corrlib_graphes
 
-taboo=heapq
 ==
 
+taboo=heapq
 # Les tests:
 
 # Vérifications basiques de la classe Graphe
