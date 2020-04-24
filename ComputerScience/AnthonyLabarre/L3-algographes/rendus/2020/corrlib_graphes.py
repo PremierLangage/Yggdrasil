@@ -177,7 +177,7 @@ def poids_fcpm(liste_aretes_ponderees):
     graphe.add_weighted_edges_from(liste_aretes_ponderees)
     return sum(
         graphe[u][v]['weight']
-        for u, v in networkx.algorithms.tree.minimum_spanning_tree(
+        for u, v in nx.algorithms.tree.minimum_spanning_tree(
             graphe, algorithm='prim'
         ).edges()
     )
@@ -305,6 +305,7 @@ def aretes_ponderees(graphe):
     """Renvoie les aretes du graphe munies de leur poids (networkx ne permet
     apparemment pas de le faire directement)."""
     return [(u, v, graphe[u][v]['weight']) for u, v in graphe.edges()]
+
 
 
 
