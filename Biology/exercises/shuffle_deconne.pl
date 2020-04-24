@@ -17,7 +17,7 @@ text ==
 ==
 
 form ==
-{% for key, value in a.items %}
+{% for key, value in a.items() %}
 {{key}}
 {% endfor %}
 
