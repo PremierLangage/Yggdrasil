@@ -31,7 +31,7 @@ viewer = '''
 alphabet = "a,b"
 
 #    du message de l'énoncé décrivant le langage
-message = "le langage {uv |u, v ∈ Σ ∗ et |u| = 2|v|}"
+message = "le langage {uv |u, v ∈ Σ⁸ et |u| = 2|v|}"
 ==
 
 title = TD1 exo3 L12
