@@ -1,11 +1,12 @@
 
 extends = /model/basic.pl
+
 title = Shuffle déconne
 
 before==#|python|
 from random import shuffle
 
-a = {1:1,2:2,3:3,4:4}
+a = {1:1,2:2,3:3,4:4,5:5,13:88}
 b = list(a.items())
 shuffle(b)
 a = dict(b)
@@ -13,19 +14,22 @@ s = str(a)
 ==
 
 text ==
-{{s}}
+{{s}} bien shufflé
 <br>
-{% for key in a %}
-{{key}}
+{% for items in a.items() %}
+{{items}}
+{{str(a)}}
 {% endfor %}
+pas bien 
 <br>
 
 ==
 
 form ==
+Form
 <br>
-{% for key in a %}
-{{key}}
+{% for key, value in a.items() %}
+{{key}}:{{value}}
 {% endfor %}
 </br>
 ==
