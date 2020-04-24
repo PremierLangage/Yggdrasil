@@ -60,7 +60,7 @@
                       },
                       {
                           "class": "keycap btn",
-                          "insert": "\\frac{ #0}{ #?}",
+                          "insert": "\\frac{#0}{#?}",
                           "label": "&divide;"
                       },
                       {
@@ -189,7 +189,7 @@
             },
             {
               "class": "keycap btn",
-              "insert": "\\frac{ #0}{ #?}",
+              "insert": "\\frac{#0}{#?}",
               "label": ""
             },
             {
@@ -222,7 +222,7 @@
             },
             {
               "class": "keycap btn",
-              "insert": "\\sqrt{ #0}",
+              "insert": "\\sqrt{#0}",
               "label": ""
             },
             {
@@ -336,7 +336,7 @@
             },
             {
               "class": "keycap btn",
-              "insert": "\\frac{ #0}{ #?}",
+              "insert": "\\frac{#0}{#?}",
               "label": ""
             },
             {
@@ -369,7 +369,7 @@
             },
             {
               "class": "keycap btn",
-              "insert": "\\sqrt{ #0}",
+              "insert": "\\sqrt{#0}",
               "label": ""
             },
             {
@@ -474,7 +474,7 @@
             },
             {
               "class": "keycap btn",
-              "insert": "\\frac{ #0}{ #?}",
+              "insert": "\\frac{#0}{#?}",
               "label": ""
             },
             {
@@ -511,7 +511,7 @@
             },
             {
               "class": "keycap btn",
-              "insert": "\\sqrt{ #0}",
+              "insert": "\\sqrt{#0}",
               "label": ""
             },
             {
@@ -634,7 +634,7 @@
             },
             {
               "class": "keycap btn",
-              "insert": "\\frac{ #0}{ #?}",
+              "insert": "\\frac{#0}{#?}",
               "label": ""
             },
             {
@@ -677,7 +677,7 @@
             },
             {
               "class": "keycap btn",
-              "insert": "\\sqrt{ #0}",
+              "insert": "\\sqrt{#0}",
               "label": ""
             },
             {
@@ -814,7 +814,7 @@
             },
             {
               "class": "keycap btn",
-              "insert": "\\frac{ #0}{ #?}",
+              "insert": "\\frac{#0}{#?}",
               "label": ""
             },
             {
@@ -857,7 +857,7 @@
             },
             {
               "class": "keycap btn",
-              "insert": "\\sqrt{ #0}",
+              "insert": "\\sqrt{#0}",
               "label": ""
             },
             {
