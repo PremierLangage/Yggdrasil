@@ -16,18 +16,18 @@ viewer = '''
     #accepting
     S0
     #alphabet
-    a
-    b
+    0
+    1
     #transitions
-    S0:a>S1
-    S1:a>S2
-    S2:a>S0
-    S0:b>S1
-    S1:b>S2
-    S2:b>S0
+    S0:1>S1
+    S1:0>S2
+    S0:0>S0
+    S2:1>S2
+    S2:0>S1
+    S1:1>S0
 '''
 #    l'alphabet
-alphabet = "a,b"
+alphabet = "0,1"
 
 #    du message de l'énoncé décrivant le langage
 message = "mots qui sont la représentation binaire des entiers multiples de 3 (bit de poids fort à gauche -- big endian)."
