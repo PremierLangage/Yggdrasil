@@ -5,6 +5,13 @@ from customdragdrop import DragDropGroup
 import uuid
 
 # Load the custom serialization function
+#try:
+#    from serialize import serialize
+#except ModuleNotFoundError:
+#    def serialize(arg):
+#        return arg
+
+####
 try:
     from serialize import CustomEncoder, CustomDecoder
 except ModuleNotFoundError:
