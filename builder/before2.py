@@ -104,7 +104,7 @@ if __name__ == "__main__":
 
     class CustomEncoder(json.JSONEncoder):
         def default(self, obj):
-            return jsonpickle.encode(obj, unpicklable=False)
+            return 0 #jsonpickle.encode(obj, unpicklable=False)
 
     output_json = sys.argv[2]
     with open(output_json, "w+") as f:
