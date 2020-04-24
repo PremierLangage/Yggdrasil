@@ -137,7 +137,7 @@ evaluator== #|py|
 from automaton import Automaton
 from generator import Generator
 
-student_answer = Generator.regex('b(a|b)*bab|bb|bab')
+student_answer = Generator.regex(input)
 
 if attempt >= maxattempt: # timeout
     grade = (score, feedback_timeout)
