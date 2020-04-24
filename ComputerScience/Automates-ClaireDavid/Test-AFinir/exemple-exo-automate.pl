@@ -24,8 +24,35 @@ viewer = AutomatonEditor(
     }
 )
 
-#   transformation de l'automate de json en objet
-#automaton = Automaton.parse(automaton)
+
+#*
+#*  This script must define the following variables:
+#*   
+#*  **viewer** => an automaton in one of the accepted formats (string, regex, object...)
+#*               This automaton is considered as the answer and it will be presented to the student at the end.
+#*  Example
+#*```python
+#*  generate==
+#*  viewer = '''
+#*      #states
+#*       S0
+#*       S1
+#*       #initials
+#*       S0
+#*       #accepting
+#*       S1
+#*       #alphabet
+#*       a
+#*       b
+#*       #transitions
+#*       S0:a>S1
+#*       S1:a>S1
+#*       S1:b>S0
+#*  '''
+#*  ==
+#*  ```
+#*
+
 
 #    l'alphabet
 alphabet = "a,b"
