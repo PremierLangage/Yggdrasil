@@ -91,7 +91,7 @@ pltest2==
 ==
 
 # Vérifications basiques de la classe UnionFind
-testname3 = Test de la classe UnionFind
+testname3 = Vérifications basiques de la classe UnionFind
 pltest3==
 >>> # initialisation d'un ensemble de singletons
 >>> import itertools, random, unionfind; n = 50; ma_structure = unionfind.UnionFind(range(n)); sa_structure = UnionFind(range(n))
@@ -108,6 +108,7 @@ pltest3==
 ...     print("résultat attendu:", ma_partition)
 ...     print("résultat obtenu:", sa_partition)
 ==
+
 
 # Vérifications de acpm_prim sur un graphe connexe
 testname4 = Test de acpm_prim sur un graphe connexe
