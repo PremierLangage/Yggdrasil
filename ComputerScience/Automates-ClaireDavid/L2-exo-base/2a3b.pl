@@ -41,7 +41,7 @@ alphabet = "a,b"
 message = "l'ensemble des mots ayant un nombre de a pair et un nombre de b égal à 1 modulo 3."
 ==
 
-title = TD1 exo3 L13
+title = ** TD1 exo3 L13
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant {{ message }} <br>
@@ -51,6 +51,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
