@@ -1,0 +1,6 @@
+introduction=Vous trouverez ici le test de suivi correspondant aux vidéos portant sur le Théorème de Rolle et sur le Théorème des accroissements finis.  
+title=Théorème de Rolle, Théorème des accroissements finis.
+@QCM_Rolle.pl
+@QCM_accr_finis.pl
+# on peut rajouter d'autres exercices 
+
