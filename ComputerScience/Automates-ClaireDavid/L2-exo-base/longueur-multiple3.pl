@@ -21,7 +21,11 @@ viewer = '''
     b
     #transitions
     S0:a>S1
-    S1:b>S0
+    S1:a>S2
+    S2:a>S0
+    S0:b>S1
+    S1:b>S2
+    S2:b>S0
 '''
 #    l'alphabet
 alphabet = "a,b"
