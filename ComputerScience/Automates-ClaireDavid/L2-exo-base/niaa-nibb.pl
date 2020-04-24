@@ -6,9 +6,23 @@ generate== #|py|
 #from automaton import Automaton
 
 #    la construction de l'automate pour tester la réponse
-viewer = Automaton.parse('(ab)*|(ba)*|(ab)*a|(ba)*b')
-
-
+viewer = '''
+    #states
+    S0
+    S1
+    #initials
+    S0
+    S1
+    #accepting
+    S0
+    S1
+    #alphabet
+    a
+    b
+    #transitions
+    S0:a>S1
+    S1:b>S0
+'''
 #    l'alphabet
 alphabet = "a,b"
 
@@ -26,6 +40,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
