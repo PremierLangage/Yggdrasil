@@ -102,14 +102,14 @@ if __name__ == "__main__":
 
     dic['internals']['attempt'] = 1
 
-    class CustomEncoder(json.JSONEncoder):
+    class CustomEncoder2(json.JSONEncoder):
         def default(self, obj):
             return 0 #jsonpickle.encode(obj, unpicklable=False)
 
     output_json = sys.argv[2]
     with open(output_json, "w+") as f:
         #f.write(jsonpickle.encode(dic, unpicklable=False))
-        f.write(json.dumps(dic), cls=CustomEncoder)
+        f.write(json.dumps(dic), cls=CustomEncoder3)
     sys.exit(0)
 
 
