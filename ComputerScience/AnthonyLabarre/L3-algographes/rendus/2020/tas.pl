@@ -11,8 +11,6 @@ text==
 
 taboo=heapq
 
-pltest0=
-
 # Les tests:
 
 # Vérification de la classe Tas sur des entiers
@@ -75,6 +73,7 @@ class Tas(object):
         pass  # à compléter
 
 ==
+
 
 
 
