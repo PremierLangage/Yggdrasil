@@ -754,15 +754,19 @@ class Test:
         added, deleted, modified, inputs = self.summarize_changes()
 
         if self.expression is not None and self.result is not None:
-            res.append("Résultat obtenu : {}".format(self.result))
+            res.append("Résultat obtenu : <code>{}</code>".format(self.result))
         if added:
-            res.append("Variables créées : {}".format(added))
+            tmp = ", ".join(added)
+            res.append(f"Variables créées : <code>{tmp}</code>")
         if modified:
-            res.append("Variables modifiées : {}".format(modified))
+            tmp = ", ".join(modified)
+            res.append(f"Variables modifiées : <code>{tmp}</code>")
         if deleted:
-            res.append("Variables supprimées : {}".format(deleted))
+            tmp = ", ".join(deleted)
+            res.append(f"Variables supprimées : <code>{tmp}")
         if inputs:
-            res.append("Lignes saisies : {}".format(inputs))
+            tmp = "<br/>\n".join(inputs)
+            res.append(f"Lignes saisies : <code>{tmp}</code>")
         if self.output:
             tmp = self.output.replace('\n', "↲\n")
             tmp = tmp.replace(' ', '⎵')
