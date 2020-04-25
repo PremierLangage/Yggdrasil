@@ -7,20 +7,10 @@ class BasicEncoder(json.JSONEncoder):
     def default(self, obj):
         return jsonpickle.Pickler(unpicklable=False).flatten(obj)
 
-def get_answers():
-    """Return a dictionnary containing every answer."""
-    with open(sys.argv[1], "r") as f:
-        dic = json.load(f, cls=CustomDecoder)
-    Component.sync_context(dic)
-    with open(sys.argv[2], "r") as f:
-        answers = json.load(f)
-    return answers
-
-
-def get_context():
+def get_context(cls=BasicEncoder):
     """Return the dictionnary containing the context of the exercise."""
     with open(sys.argv[1], "r") as f:
-        context = json.load(f)
+        context = json.load(f, cls=cls)
     Component.sync_context(context)
     return context
 
