@@ -139,7 +139,7 @@ if __name__ == "__main__":
 
     aux_component2(dic)
     
-    dic = json.loads(json.dumps(dic, f, cls=CustomEncoder))
+    dic = json.loads(json.dumps(dic, cls=CustomEncoder))
 
 
     if 'grade' in dic:
