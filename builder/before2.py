@@ -109,6 +109,3 @@ if __name__ == "__main__":
         json.dump(dic, f, cls=CustomEncoder)
 
     sys.exit(0)
-
-
-
