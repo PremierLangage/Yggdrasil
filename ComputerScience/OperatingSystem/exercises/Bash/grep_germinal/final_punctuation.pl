@@ -19,7 +19,7 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 @ Germinal.txt
 
 author=Nicolas Borie
-title=Information à extraire du texte de Germinal
+title=Ponctuation finale des lignes de Germinal.
 
 before==
 import random
