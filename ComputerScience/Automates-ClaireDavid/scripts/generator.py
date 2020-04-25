@@ -75,7 +75,7 @@ class Generator:
             authorized = 'abcdefghijklmnopqrstuvwxyz.+()*'
             for c in regex:
                 if c not in regex:
-                    raise Exception(f"{c} n'est pas un caractère validate dans la syntaxe des expressions rationnelles")
+                    raise Exception(f"{c} n'est pas un caractère valide dans la syntaxe des expressions rationnelles")
             
             regex = regex.replace('.', '').replace('+', '|')
 
