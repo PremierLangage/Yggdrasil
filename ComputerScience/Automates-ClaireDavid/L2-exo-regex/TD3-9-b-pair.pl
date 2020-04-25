@@ -10,7 +10,7 @@ generate== #|py|
 #    la construction de l'automate pour tester la réponse
 
 
-viewer = Automaton.parse('XXX')
+viewer = Automaton.parse('(a*ba*b)*a*')
 
 alphabet = "a,b"
 message = "des mots qui ont un nombre pair de b."
