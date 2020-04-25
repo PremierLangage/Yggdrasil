@@ -71,7 +71,6 @@ class Generator:
         :return An instance of Automaton class.
         """
         if simple:
-            raise Exception(regex)
             authorized = 'abcdefghijklmnopqrstuvwxyz.+()*'
             for c in regex:
                 if c not in regex:
