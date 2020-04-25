@@ -117,10 +117,15 @@ def aux_component2(dic):
 
 if __name__ == "__main__":
 
-    dic = get_context()
+    #dic = get_context()
 
-    for key in dic:
-        dic[key]=deserialize(dic[key])
+    #for key in dic:
+        #dic[key]=deserialize(dic[key])
+
+    with open(sys.argv[1], "r") as f:
+        dic = json.load(f, cls=CustomDecoder)
+    Component.sync_context(dic)
+
 
     dic = {**namespace, **dic}
 
@@ -177,6 +182,7 @@ if __name__ == "__main__":
             ffeedback=format_feedback_lightscore(score,feedback)
 
     output(score, ffeedback, dic)
+
 
 
 
