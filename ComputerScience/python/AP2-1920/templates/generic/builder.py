@@ -11,6 +11,7 @@ class BuilderError(Exception):
 
 if __name__ == "__main__":
     print("builder was called !", file=sys.stderr)
+    sys.exit(1)
 
     if len(sys.argv) < 3:
         msg = ("Sandbox did not call builder properly:\n"
