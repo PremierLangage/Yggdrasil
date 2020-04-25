@@ -6,8 +6,8 @@ import uuid
 
 # Load the custom serialization function
 try:
-    #from serialize import serialize
-    from serialize import CustomEncoder, CustomDecoder
+    from serialize import serialize
+    #from serialize import CustomEncoder, CustomDecoder
 except ModuleNotFoundError:
     def serialize(arg):
         return arg
@@ -77,8 +77,8 @@ if __name__ == "__main__":
                 del dic[key]
 
     # custom serialization is applied
-    # for key in dic:
-        # dic[key]=serialize(dic[key])
+    for key in dic:
+        dic[key]=serialize(dic[key])
 
     # HACK for components in lists
     aux_component(dic)
@@ -100,8 +100,8 @@ if __name__ == "__main__":
     #print(json.dumps(dic, cls=CustomEncoder),file = sys.stderr)
     #sys.exit(1)
     with open(output_json, "w+") as f:
-        #f.write(jsonpickle.encode(dic, unpicklable=False))
-        json.dump(dic, f,ensure_ascii=False, cls=CustomEncoder)
+        f.write(jsonpickle.encode(dic, unpicklable=False))
+        #f.write(json.dumps(dic, ensure_ascii=False, cls=CustomEncoder))
     sys.exit(0)
 
 
