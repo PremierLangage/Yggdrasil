@@ -29,7 +29,7 @@ things = [
  "embroussaillaient\nperfectionnements\nphilosophiquement\n"),
 ("la liste triée sans répétition des mots en minuscules de 19 lettres",
  "proportionnellement\nrévolutionnairement\n"),
-("",
+("la liste triée sans répétition des mots en minuscules de 16 lettres",
  "applaudissements\nconcessionnaires\ndébarbouillerait\ndébarbouillerons\n" 
  "fonctionneraient\nincompréhensible\nmélancoliquement\nparticulièrement\n"
  "ragaillardissait\nrespectueusement\nrévolutionnaires\nscientifiquement\n") 
