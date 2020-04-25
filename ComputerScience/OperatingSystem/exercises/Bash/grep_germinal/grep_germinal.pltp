@@ -18,7 +18,8 @@ title=Recherche et comptage textuels dans Germinal
 
 introduction==
 Pour les exercicces qui suivent, un fichier **Germinal.txt** a été placé dans 
-le répertoire courant de travail
+le répertoire courant de travail. Le fichier texte contient le texte intégral 
+de l'oeuvre du même nom d'E. Zola.
 ==
 
 # 
