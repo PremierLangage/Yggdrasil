@@ -6,20 +6,49 @@ builder =@ /builder/before.py
 #! linter:title:str
 
 #! linter:text:
-text=
+#! linter:textdelaselection:
+
+text= Choisir les pronoms 
 title=
 
+separator ==
+\t.,; :!?
+==
 
 
 selectable =: Text
 
 selectable.selectable % true
 
+
+mots = ['Toi', 'moi,', 'eux', 'lui', 'elle', 'je', 'on', 'On', 's\'']
+
+
+textdelaselection==
+Toi plus moi, plus eux plus tous ceux qui le veulent.  <br/>
+Plus lui plus elle plus tous ceux qui sont seuls. 
+
+
+
+
+Allez venez et entrez dans la danse. 
+Allez venez, laissez faire l'insouciance. 
+A deux a mille je sais qu' on est capable. 
+Tout est possible tout est réalisable. 
+On peut s' enfuir bien plus haut que nos rêves. 
+On peut partir bien plus loin que la grève. 
+==
+
+
 before==
 
+selectable.separator = separator
+selectable.text=textdelaselection
 
-
-selectable.text="bande de moule" 
+matching=0
+for m in textdelaselection.split(separator):
+    if m in mots:
+        matching += 1
 
 ==
 
@@ -29,7 +58,6 @@ form==
 
 evaluator==
 
-mots = ['Toi', 'moi,', 'eux', 'lui', 'elle', 'je', 'on', 'On', 's\'']
 found = 0
 error = 0
 
@@ -41,12 +69,12 @@ for e in selectable.selections:
         e['css'] = "error-state"
         error += 1
 
-if found == 10 and error == 0:
+if found == matching and error == 0:
     score = 100
     msg = '<span class="success-state">Bravo, vous avez trouvé tous les pronoms personnels !</span>'
 else:
-    score = max([0, 10*(found - error)])
-    nb_error = (10 - found) + error
+    score = max([0, matching*(found - error)])
+    nb_error = (matching - found) + error
     if nb_error > 1:
         msg = '<span class="error-state">Il y a {} erreurs...</spam>'.format(nb_error)
     else:
