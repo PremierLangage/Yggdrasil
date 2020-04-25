@@ -54,8 +54,8 @@ class TestSession:
               the first error.
         """
         self.history: List[Union[Test, TestGroup]] = []
-        self.last_test: Optional[Test] = None
         self.current_test: Optional[Test] = None
+        self.previous_test: Optional[Test] = None
         self.current_test_group: Optional[TestGroup] = None
         self.analyzer: Optional[AstAnalyzer] = None
         self.test_number = 0
@@ -81,6 +81,7 @@ class TestSession:
 
         :param title: New test group's title.
         """
+        self.cleanup()
         self.current_test_group = TestGroup(title)
         self.history.append(self.current_test_group)
 
@@ -88,18 +89,17 @@ class TestSession:
         """
         Close the current test group.
         """
-        if self.current_test_group and self.last_test:
-            self.current_test_group.update_status(self.last_test.status)
         self.current_test_group = None
-        self.last_test = None
 
     def begin_test(self, title="", weight=1, keep_state=True):
-        self.test_number += 1
-        state = dict()
         if self.current_test is not None:
-            if keep_state:
-                state = deepcopy(self.current_test.current_state)
             self.end_test()
+        self.test_number += 1
+        if self.previous_test is not None and keep_state:
+            state = deepcopy(self.previous_test.current_state)
+        else:
+            state = dict()
+
         self.current_test = Test(self, self.test_number, state=state,
                                  weight=weight, title=title)
 
@@ -113,6 +113,7 @@ class TestSession:
         else:
             self.history.append(self.current_test)
 
+        self.previous_test = self.current_test
         self.current_test = None
 
     def cleanup(self):
@@ -727,7 +728,7 @@ class Test:
         if self.argv:
             res.append("Arguments du programme : {}".format(self.argv))
 
-        return "<br/>".join(res)
+        return "<br/>".join(res) if res else "Contexte vide"
 
     def results(self) -> str:
         """
@@ -762,10 +763,8 @@ class Test:
         if self.exception:
             res.append("Exception levée : {} ({})".format(
                 type(self.exception).__name__, self.exception))
-        if not res:
-            res.append("Aucun effet observable")
 
-        return "<br/>".join(res)
+        return "<br/>".join(res) if res else "Aucun effet observable"
 
     def set_default_title(self) -> NoReturn:
         """
