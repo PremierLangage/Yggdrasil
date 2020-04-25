@@ -775,7 +775,8 @@ class Automaton:
             "infinite": infinite,
             "deterministic": deterministic,
             "reachable": len(reachables) == n,
-            "coreachable": len(coreachables) == n
+            "coreachable": len(coreachables) == n,
+            "states": states
         }, None
 
     # INSTANCE METHODS
