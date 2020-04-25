@@ -800,21 +800,21 @@ class Automaton:
         deterministic = True
 
         states = instance.states
-        finals = self.finals
-        initials = [self.initial] # TODO use self.initials once multiple initial states is supported 
-        transitions = self.transitions
-        alphabetLength = len(self.alphabet)
+        finals = instance.finals
+        initials = [instance.initial] # TODO use instance.initials once multiple initial states is supported 
+        transitions = instance.transitions
+        alphabetLength = len(instance.alphabet)
 
         # calculate reachable states
         reachables = []
         for state in initials:
-            reachables.extend(self.reachable_states(state))
+            reachables.extend(instance.reachable_states(state))
         reachables = set(reachables)
 
         # calculate coreachable states
         coreachables = []
         for state in finals:
-            coreachables.extend(self.coreachable_states(state))
+            coreachables.extend(instance.coreachable_states(state))
         coreachables = set(coreachables)
 
         # check whether the automaton is infinite
