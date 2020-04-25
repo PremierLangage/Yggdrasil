@@ -10,10 +10,10 @@ generate== #|py|
 #    la construction de l'automate pour tester la réponse
 
 
-viewer = Automaton.parse('XXX')
+viewer = Automaton.parse('aaa(a|b)*(a|bb)|aaa')
 
 alphabet = "a,b"
-message = "XXXXX"
+message = "l'ensemble de mots qui commencent par aaa et se terminent par a ou par bb."
 ==
 
 title = TD3.1-4
@@ -26,6 +26,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
