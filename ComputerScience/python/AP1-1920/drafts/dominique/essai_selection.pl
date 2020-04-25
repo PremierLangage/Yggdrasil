@@ -5,9 +5,6 @@ extends=selectiontemplate.pl
 
 
 
-
-cible= la variable cible contient l'objectif de selection 
-
 text==
 Dans le text suivant choisiez {{cible}}.
 
