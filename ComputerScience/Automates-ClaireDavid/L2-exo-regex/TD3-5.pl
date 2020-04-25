@@ -16,7 +16,7 @@ alphabet = "a,b"
 message = "XXXXX"
 ==
 
-title = Partiel 2020 Exo1-3
+title = TD3.1-5
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez une expression reconnaissant le langage correspondant à {{ message }} <br>
@@ -26,6 +26,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
