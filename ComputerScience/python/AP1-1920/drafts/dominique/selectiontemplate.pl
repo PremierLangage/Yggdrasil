@@ -7,34 +7,14 @@ builder =@ /builder/before.py
 
 #! linter:text:
 #! linter:textdelaselection:
+#! linter:mots:
+#! linter:cible
 
-text= Choisir les pronoms 
-title=
+
 
 
 selectable =: Text
 selectable.selectable % true 
-
-sep = ;,: !?'`"$%
-
-mots = ['toi', 'moi', 'eux', 'lui', 'elle', 'je', 'on', 's']
-
-
-textdelaselection==
-Toi plus moi, plus eux plus tous ceux qui le veulent.  <br/>
-Plus lui plus elle plus tous ceux qui sont seuls. 
-
-
-
-
-Allez venez et entrez dans la danse. 
-Allez venez, laissez faire l'insouciance. 
-A deux a mille je sais qu' on est capable. 
-Tout est possible tout est réalisable. 
-On peut s' enfuir bien plus haut que nos rêves. 
-On peut partir bien plus loin que la grève. 
-==
-
 
 
 
@@ -47,7 +27,6 @@ for m in textdelaselection.split(" "):
     if m in mots:
         matching += 1
 
-text +=str( textdelaselection.split(" "))
 ==
 
 form==
@@ -73,7 +52,7 @@ for e in selectable.selections:
 
 if found == matching and error == 0:
     score = 100
-    msg = '<span class="success-state">Bravo, vous avez trouvé tous les pronoms personnels !</span>'
+    msg = '<span class="success-state">Bravo, vous avez trouvé tous {{cible}} !</span>'
 else:
     score = max([0, matching*(found - error)])
     nb_error = (matching - found) + error
