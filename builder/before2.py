@@ -9,6 +9,8 @@ try:
     #from serialize import serialize
     from serialize import CustomEncoder, CustomDecoder
 except ModuleNotFoundError:
+    CustomEncoder = None
+    CustomDecoder = None
     def serialize(arg):
         return arg
 
