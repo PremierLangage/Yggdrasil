@@ -106,13 +106,21 @@ form== #|html|
         // hide submit button if needed.
         submit.attr("disabled", ({{ attempt }} >= {{ maxattempt }}) || {{ score }} == 100);   
         // bouton reset
-        const buttons = actions.find('.btn-group');  
+        const actions = nodes.actions;
+        actions.find('.action-save').hide();
+        actions.find('.action-reset').hide();
+        actions.find('.action-next').hide();
+
+        const { origin, pathname }  = document.location;
+        const link = origin + pathname;
+
+        const buttons = actions.find('.btn-group');
+
         buttons.append(`
             <a type="button" class="btn btn-warning action-reroll" href="`+link+`?action=reroll">
-                <i class="fas fa-dice"></i> Relancer l'exercice
+                <i class="fas fa-dice"></i> Nouveau tirage
             </a>
         `);
-
 
     }
 </script>
