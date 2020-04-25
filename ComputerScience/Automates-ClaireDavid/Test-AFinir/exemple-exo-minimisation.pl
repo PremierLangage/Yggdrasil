@@ -19,7 +19,6 @@ message = '(a+b)*'
 
 title = Minimisation
 text ==
-{{ viewer |component }}
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez l'automate minimal déterministe complet reconnaissant le langage {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
