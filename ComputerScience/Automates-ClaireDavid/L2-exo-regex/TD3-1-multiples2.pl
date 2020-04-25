@@ -25,9 +25,9 @@ generate== #|py|
 #    la construction de l'automate pour tester la réponse
 
 
-viewer = Automaton.parse('XXX')
+viewer = Automaton.parse('0*10*')
 
-alphabet = "a,b"
+alphabet = "0,1"
 message = "à la représentation des entiers en base 2 qui sont des multiples de 2"
 ==
 
