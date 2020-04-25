@@ -14,6 +14,13 @@ def load_context(cls=None):
     Component.sync_context(context)
     return context
 
+def dump_context(cls=None):
+    """Return the dictionnary containing the context of the exercise."""
+    with open(sys.argv[1], "r") as f:
+        context = json.load(f, cls=cls)
+    Component.sync_context(context)
+    return context
+
 
 def output(grade, feedback, context=None):
     """Used to output the grade, feedback and context to the sandbox.
