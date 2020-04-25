@@ -32,3 +32,5 @@ résultat numérique seul sur une ligne.
 
 # count occurrence of a special words(both singular or plural) in Germinals.txt
 @ /ComputerScience/OperatingSystem/exercises/Bash/grep_germinal/occ_word_germinal.pl
+
+
