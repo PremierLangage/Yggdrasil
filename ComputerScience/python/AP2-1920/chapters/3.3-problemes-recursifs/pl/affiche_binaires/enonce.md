@@ -2,7 +2,7 @@ On souhaite écrire une fonction récursive `affiche_binaires(n)` permettant
 d'afficher tous les mots à `n` caractères dans l'alphabet binaire (`'0'` ou `'1'`). 
 Par exemple :
 
-```python
+```
 >>> affiche_binaires(2)
 00
 01
@@ -15,7 +15,7 @@ Pour résoudre ce problème plus aisément, on introduit une fonction auxiliaire
 binaires à `n` chiffres commençant par la chaîne `prefixe` (chaîne supposée
 contenir uniquement des caractères `'0'` et `'1'`). Par exemple :
 
-```python
+```
 >>> affiche_binaires_prefixe(4, '01')
 0100
 0101
