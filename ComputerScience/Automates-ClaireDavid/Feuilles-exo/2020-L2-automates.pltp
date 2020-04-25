@@ -5,7 +5,7 @@ introduction ==
 
  Les exercices sont indépendants. Vous pouvez les faire et même les refaire dans l'ordre que vous voulez. Si vous rencontrez des difficultés dans l'utilisation de la plateforme, n'hésitez pas à venir en discuter sur le channel discord dédié
  
- 25/04 -- le bouton "Réinitialiser" ne semble pas marcher. Je regarde
+ 25/04 -- Un bouton "Relancer l'exercice" a été ajouter et a l'air de fonctionner -- Si vous testez, dites moi.
 
  Un grand merci à Mamadou pour son travail sur le module automates de PLaTon.
 
@@ -36,6 +36,7 @@ introduction ==
 @../L2-exo-base/2a3b.pl
 
 @../L2-exo-base/binaire-multiple3.pl
+
 
 
 
