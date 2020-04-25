@@ -743,7 +743,7 @@ class Test:
         res = []
         added, deleted, modified, inputs = self.summarize_changes()
 
-        if self.results is not None:
+        if self.result is not None:
             res.append("Résultat obtenu : {}".format(self.result))
         if added:
             res.append("Variables créées : {}".format(added))
