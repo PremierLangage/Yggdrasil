@@ -108,7 +108,7 @@ form== #|html|
         //   
         buttons.append(`
             <a type="button" class="btn btn-warning action-reroll" href="`+link+`?action=reroll">
-                <i class="fas fa-dice"></i> Nouveau tirage
+                <i class="fas fa-dice"></i> Relancer l'exercice
             </a>
         `);
 
