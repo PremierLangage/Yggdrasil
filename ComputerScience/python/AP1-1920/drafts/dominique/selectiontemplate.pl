@@ -15,8 +15,9 @@ title=
 selectable =: Text
 selectable.selectable % true 
 
+sep = ;,: !?'`"$%
 
-mots = ['toi', 'moi', 'eux', 'lui', 'elle', 'je', 'on', 's\'']
+mots = ['toi', 'moi', 'eux', 'lui', 'elle', 'je', 'on', 's']
 
 
 textdelaselection==
@@ -54,17 +55,16 @@ form==
 ==
 
 evaluator==
-
+import re
 def cleanIt(s):
-
-
+    return re.sub("\W+","",s)
 
 found = 0
 error = 0
 
 for e in selectable.selections:
     clean = cleanIt( e['content'])
-    if clean in mots:
+    if clean.lower() in mots:
         e['css'] = "success-state"
         found += 1
     else:
