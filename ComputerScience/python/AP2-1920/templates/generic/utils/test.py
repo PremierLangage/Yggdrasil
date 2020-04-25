@@ -730,15 +730,17 @@ class Test:
         res = []
 
         if self.previous_state:
-            res.append("Variables globales : {}".format(
-                self.previous_state))
+            tmp = ", ".join(self.previous_state)
+            res.append(f"Variables globales : <tt>{tmp}</tt>")
         if self.previous_inputs:
-            res.append("Entrées disponibles : {}".format(
-                self.previous_inputs))
+            tmp = "\n".join(self.previous_inputs)
+            res.append(f"Entrées disponibles : <pre>{tmp}</pre>")
         if self.argv:
-            res.append("Arguments du programme : {}".format(self.argv))
+            tmp = " ".join(self.argv)
+            res.append(f"Arguments du programme : <tt>{tmp}</tt>")
 
-        return "<br/>".join(res) if res else "Contexte vide"
+        return "<br/>".join(res) if res else "Pas de variables globales, " \
+                                             "entrées ni arguments"
 
     def results(self) -> str:
         """
@@ -754,19 +756,19 @@ class Test:
         added, deleted, modified, inputs = self.summarize_changes()
 
         if self.expression is not None and self.result is not None:
-            res.append("Résultat obtenu : <code>{}</code>".format(self.result))
+            res.append("Résultat obtenu : <tt>{}</tt>".format(self.result))
         if added:
             tmp = ", ".join(added)
-            res.append(f"Variables créées : <code>{tmp}</code>")
+            res.append(f"Variables créées : <tt>{tmp}</tt>")
         if modified:
             tmp = ", ".join(modified)
-            res.append(f"Variables modifiées : <code>{tmp}</code>")
+            res.append(f"Variables modifiées : <tt>{tmp}</tt>")
         if deleted:
             tmp = ", ".join(deleted)
-            res.append(f"Variables supprimées : <code>{tmp}")
+            res.append(f"Variables supprimées : <tt>{tmp}</tt>")
         if inputs:
             tmp = "<br/>\n".join(inputs)
-            res.append(f"Lignes saisies : <code>{tmp}</code>")
+            res.append(f"Lignes saisies : <tt>{tmp}</tt>")
         if self.output:
             tmp = self.output.replace('\n', "↲\n")
             tmp = tmp.replace(' ', '⎵')
@@ -1071,10 +1073,10 @@ class RecursionAssert(Assert):
 
     def __str__(self):
         if self.status:
-            return f"L'expression <code>{self.expr}</code> provoque des " \
+            return f"L'expression <tt>{self.expr}</tt> provoque des " \
                    f"appels récursifs"
         else:
-            return f"L'expression <code>{self.expr}</code> ne provoque pas " \
+            return f"L'expression <tt>{self.expr}</tt> ne provoque pas " \
                    f"d'appels récursifs"
 
 
