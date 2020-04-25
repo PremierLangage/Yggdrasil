@@ -163,7 +163,7 @@ class TestSession:
     """Setters for execution context."""
 
     def exec_preamble(self, preamble: str, **kwargs) -> NoReturn:
-        exec(preamble, self.current_test.current_state, ** kwargs)
+        exec(preamble, self.current_test.current_state, **kwargs)
         # del self.next_test.current_state['__builtins__']
 
     def set_globals(self, **variables) -> NoReturn:
@@ -322,7 +322,7 @@ class Test:
     """Code execution."""
 
     def summarize_changes(self) -> Tuple[
-            Dict[str, any], List[str], Dict[str, Any], List[str]]:
+        Dict[str, any], List[str], Dict[str, Any], List[str]]:
         """
         Computes the effects of the last execution (as performed by a call to
         `run()`) on the global state and input buffer.
@@ -663,7 +663,8 @@ class Test:
         :return: Assertion status.
         """
         status = self.exception is None
-        self.record_assertion(NoExceptionAssert(status, **params))
+        self.record_assertion(NoExceptionAssert(status, self.exception,
+                                                **params))
         return status
 
     def assert_exception(self, exception_type: type(Exception)) -> bool:
@@ -952,14 +953,15 @@ class OutputAssert(Assert):
 
 class NoExceptionAssert(Assert):
 
-    def __init__(self, status, **params):
+    def __init__(self, status, exception=None, **params):
         super().__init__(status, params)
+        self.exception = exception
 
     def __str__(self):
         if self.status:
             return "Aucune exception levée"
         else:
-            return "Exception anormale"
+            return "Une exception inattendue s'est produite"
 
 
 class ExceptionAssert(Assert):
@@ -972,7 +974,7 @@ class ExceptionAssert(Assert):
         if self.status:
             return "L'exception attendue a été levée"
         else:
-            return "Une exception de type {} était attendue".format(
+            return "Une exception de type <tt>{}</tt> était attendue".format(
                 self.exception)
 
 
@@ -987,7 +989,7 @@ class ResultAssert(Assert):
         if self.status:
             return "Résultat correct"
         else:
-            return "Résultat attendu : {!r}".format(self.expected)
+            return "Résultat attendu : <pre>{!r}</pre>".format(self.expected)
 
 
 class VariableValuesAssert(Assert):
@@ -1005,10 +1007,10 @@ class VariableValuesAssert(Assert):
             res = "Variables globales incorrectes : "
             details = []
             for var in self.missing:
-                details.append("{} manquante".format(var))
+                details.append("<tt>{}</tt> manquante".format(var))
             for var in self.incorrect:
-                details.append("{} devrait valoir {!r}".format(
-                    var, self.expected[var]))
+                details.append("<tt>{}</tt> devrait valoir "
+                               "<tt>{!r}</tt>".format(var, self.expected[var]))
             res += "; ".join(details)
         return res
 
@@ -1028,10 +1030,10 @@ class VariableTypesAssert(Assert):
             res = "Variables globales incorrectes : "
             details = []
             for var in self.missing:
-                details.append("{} manquante".format(var))
+                details.append("<tt>{}</tt> manquante".format(var))
             for var in self.incorrect:
-                details.append("{} devrait être de type {!r}".format(
-                    var, self.expected[var]))
+                details.append("<tt>{}</tt> devrait être de type "
+                               "<tt>{!r}</tt>".format(var, self.expected[var]))
             res += "; ".join(details)
         return res
 
@@ -1057,12 +1059,12 @@ class NoLoopAssert(Assert):
         self.keywords = keywords
 
     def __str__(self):
+        kw = " ou ".join(self.keywords)
         if self.status:
-            kw = " ou ".join(self.keywords)
-            return f"Pas de boucle {kw} dans la fonction {self.funcname}"
+            return f"Pas de boucle {kw} dans la fonction <tt>" \
+                   f"{self.funcname}</tt>"
         else:
-            kw = " ou ".join(self.keywords)
-            return f"Boucle {kw} dans la fonction {self.funcname}"
+            return f"Boucle {kw} dans la fonction <tt>{self.funcname}</tt>"
 
 
 class RecursionAssert(Assert):
@@ -1088,9 +1090,9 @@ class FunctionDefinitionAssert(Assert):
 
     def __str__(self):
         if self.status:
-            return f"La fonction {self.funcname} est définie"
+            return f"La fonction <tt>{self.funcname}</tt> est définie"
         else:
-            return f"La fonction {self.funcname} n'est pas définie"
+            return f"La fonction <tt>{self.funcname}</tt> n'est pas définie"
 
 
 class CallAssert(Assert):
@@ -1102,11 +1104,11 @@ class CallAssert(Assert):
 
     def __str__(self):
         if self.status:
-            return f"La fonction {self.caller} est susceptible " \
+            return f"La fonction <tt>{self.caller}</tt> est susceptible " \
                    f"d'appeler la fonction {self.callee}"
         else:
-            return f"La fonction {self.caller} n'appelle pas la fonction " \
-                   f"{self.callee}"
+            return f"La fonction <tt>{self.caller}</tt> n'appelle pas la " \
+                   f"fonction <tt>{self.callee}</tt>"
 
 
 class NoReturnAssert(Assert):
@@ -1117,8 +1119,8 @@ class NoReturnAssert(Assert):
 
     def __str__(self):
         if self.status:
-            return f"La fonction {self.funcname} renvoie toujours None"
+            return f"La fonction <tt>{self.funcname}</tt> renvoie toujours None"
         else:
-            return f"La fonction {self.funcname} est susceptible de renvoyer " \
-                   f"une valeur différente de None"
+            return f"La fonction <tt>{self.funcname}</tt> est susceptible de " \
+                   f"renvoyer une valeur différente de <tt>None</tt>"
 
