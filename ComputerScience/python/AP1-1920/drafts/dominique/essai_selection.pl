@@ -4,13 +4,16 @@ extends=selectiontemplate.pl
 
 
 # les mots visés 
-cible= les pronoms nominaux
+cible= les couleurs
 # la liste des mots a selectionner en minuscule 
 # la comparaison ce fait sur les minuscules
-mots = ['rien']
+mots = ['yellow','green','red']
 
 # le texte sur lequel vous souhaiter faire la selection 
 textdelaselection==
-Rien
+
+You think you are smart Yellow! 
+But you should think twice red and green?
+
 ==
 
