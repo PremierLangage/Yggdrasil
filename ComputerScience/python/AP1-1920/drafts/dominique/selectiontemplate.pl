@@ -11,10 +11,6 @@ builder =@ /builder/before.py
 text= Choisir les pronoms 
 title=
 
-separator ==
-\t.,; :!?
-==
-
 
 selectable =: Text
 
@@ -37,6 +33,10 @@ A deux a mille je sais qu' on est capable.
 Tout est possible tout est réalisable. 
 On peut s' enfuir bien plus haut que nos rêves. 
 On peut partir bien plus loin que la grève. 
+==
+
+separator ==
+\t.,; :!?
 ==
 
 
