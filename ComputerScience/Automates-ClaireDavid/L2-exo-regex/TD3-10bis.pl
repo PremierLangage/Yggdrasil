@@ -11,7 +11,7 @@ generate== #|py|
 #    la construction de l'automate pour tester la réponse
 
 
-viewer = Automaton.parse('(0|1)*0')
+viewer = Automaton.parse('(aa)*(a|b)(bb)*')
 
 alphabet = "a,b"
 message = "des mots de a*b* qui ont un nombre de a modulo 2 différent de son nombre de b modulo 2."
