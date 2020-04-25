@@ -139,6 +139,9 @@ if __name__ == "__main__":
 
     aux_component2(dic)
     
+    dic = json.loads(json.dumps(dic, f, cls=CustomEncoder))
+
+
     if 'grade' in dic:
         score = dic['grade'][0]
         feedback = dic['grade'][1] + " "
@@ -160,7 +163,7 @@ if __name__ == "__main__":
             except:
                 pass
             if score < 100 and 'solution' in dic:
-                feedback += dic['solution'] #Template(dic['solution']).render(dic)
+                feedback += Template(dic['solution']).render(json.loads(dic))
     
     ffeedback = feedback
     if 'feedback' in dic['settings']:
@@ -174,7 +177,7 @@ if __name__ == "__main__":
     dic['text'] = dic['solution']
 
     with open(sys.argv[3], "w+") as f:
-        json.dump(dic, f, cls=CustomEncoder)
+        dic = json.loads(json.dumps(dic, f, cls=CustomEncoder))
     
     with open(sys.argv[4], "w+") as f:
         print(str(ffeedback), file=f)
