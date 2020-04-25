@@ -5,12 +5,11 @@ import uuid
 
 # Load the custom serialization function
 try:
-    from serialize import CustomEncoder, CustomDecoder
+    from serialize import CustomEncoder
 except ModuleNotFoundError:
     class CustomEncoder(json.JSONEncoder):
         def default(self, obj):
             return jsonpickle.Pickler(unpicklable=False).flatten(obj)
-    CustomDecoder = None
 
 # Load the custom namespace
 try:
