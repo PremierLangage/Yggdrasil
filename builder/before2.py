@@ -1,21 +1,16 @@
 import sys, json, jsonpickle
-from sandboxio import get_context
 from components import Component
 from customdragdrop import DragDropGroup
 import uuid
 
 # Load the custom serialization function
 try:
-    #from serialize import serialize
     from serialize import CustomEncoder, CustomDecoder
 except ModuleNotFoundError:
     class CustomEncoder(json.JSONEncoder):
         def default(self, obj):
             return jsonpickle.Pickler(unpicklable=False).flatten(obj)
-
     CustomDecoder = None
-    def serialize(arg):
-        return arg
 
 # Load the custom namespace
 try:
