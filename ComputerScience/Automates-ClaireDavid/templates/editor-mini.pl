@@ -2,15 +2,14 @@
 
 extends = editor-L2.pl
 
-evaluator== #|py|
-from automaton import Automaton
-
-
 #* feedback when the automaton is non deterministic or not complete.
 feedback_nondet = <p class="warning-state">L'automate correspond au langage mais n'est pas deterministe complet.</p>
 
 #* feedback when the automaton is not minimal.
 feedback_mini = <p class="warning-state">L'automate correspond au langage. Il est det complet mais n'est pas minimal.</p>
+
+evaluator== #|py|
+from automaton import Automaton
 
 if attempt >= maxattempt: # timeout
     grade = (score, feedback_timeout)
@@ -39,6 +38,7 @@ else:
         score = 0
         grade=(score, feedback_nomatch)
 ==
+
 
 
 
