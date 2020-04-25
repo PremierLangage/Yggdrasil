@@ -28,7 +28,7 @@ form==
 {{editor|component}}
 ==
 
-# définition de la procédure de validation
+# définition de la procédure de validation par défaut
 grader==
 begin_test_group("L'exercice n'a pas défini de procédure de validation.")
 ==
