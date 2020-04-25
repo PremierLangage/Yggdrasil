@@ -163,7 +163,7 @@ if __name__ == "__main__":
             except:
                 pass
             if score < 100 and 'solution' in dic:
-                feedback += Template(dic['solution']).render(json.loads(dic))
+                feedback += Template(dic['solution']).render(dic)
     
     ffeedback = feedback
     if 'feedback' in dic['settings']:
@@ -177,7 +177,7 @@ if __name__ == "__main__":
     dic['text'] = dic['solution']
 
     with open(sys.argv[3], "w+") as f:
-        dic = json.loads(json.dumps(dic, f, cls=CustomEncoder))
+        json.dump(dic, f)
     
     with open(sys.argv[4], "w+") as f:
         print(str(ffeedback), file=f)
