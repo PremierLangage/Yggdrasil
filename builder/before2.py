@@ -67,7 +67,7 @@ if __name__ == "__main__":
     #dic = get_context()
 
     with open(sys.argv[1], "r") as f:
-        dic = json.load(f, cls=CustomDecoder)
+        dic = json.load(f)
     Component.sync_context(dic)
 
     # the content of namespace is added to dic
