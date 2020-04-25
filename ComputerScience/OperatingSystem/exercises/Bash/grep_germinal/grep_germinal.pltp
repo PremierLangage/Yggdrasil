@@ -30,5 +30,5 @@ résultat numérique seul sur une ligne.
 # count (words, lines, chars) in Germinal.txt
 @ /ComputerScience/OperatingSystem/exercises/Bash/grep_germinal/wc_germinal.pl
 
-
-
+# count occurrence of a special words(both singular or plural) in Germinals.txt
+@ /ComputerScience/OperatingSystem/exercises/Bash/grep_germinal/occ_word_germinal.pl
