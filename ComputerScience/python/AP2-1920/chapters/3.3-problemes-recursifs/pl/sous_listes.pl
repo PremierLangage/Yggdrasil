@@ -4,7 +4,7 @@ title = Récursivité : liste des sous-listes
 # author = Antoine Meyer
 
 text==
-# Liste des mots binaires {.exo}
+# Liste des sous-listes {.exo}
 
 On souhaite écrire une fonction récursive `liste_binaires(n)` renvoyant
 la liste des mots à `n` caractères dans l'alphabet binaire ('0' ou '1'). 
