@@ -1,3 +1,5 @@
+# TODO: by default, give feedback on valid assertions
+
 import jinja2
 import operator
 import sys
@@ -48,7 +50,7 @@ class TestSession:
 
         :param code: Main code to test.
         :param params: Global session parameters. Currently allowed keys are:
-            - report_success (bool, defaults to False): whether or not to
+            - report_success (bool, defaults to True): whether or not to
               report passed assertions;
             - fail_fast (bool, defaults to True): whether or not to stop after
               the first error.
@@ -296,6 +298,10 @@ class Test:
         self.current_inputs: List[str] = [] if inputs is None else inputs
         self.argv: List[str] = [] if argv is None else argv
 
+        # test state (last run expression, code execution flag)
+        self.executed: bool = False
+        self.expression: Optional[str] = None
+
         # execution effects
         self.output: str = ""
         self.exception: Optional[Exception] = None
@@ -351,6 +357,7 @@ class Test:
 
     def execute_source(self) -> NoReturn:
         self.backup_state()
+        self.executed = True
 
         # prepare StringIO for stdout simulation
         out_stream = StringIO()
@@ -370,6 +377,7 @@ class Test:
 
     def evaluate(self, expression) -> NoReturn:
         self.backup_state()
+        self.expression = expression
 
         # prepare StringIO for stdout simulation
         out_stream = StringIO()
@@ -463,7 +471,7 @@ class Test:
         elif 'allow_exception' not in kwargs or not kwargs['allow_exception']:
             # unless exceptions are explicitly allowed by parameter
             # allow_exception=True, forbid them
-            self.assert_no_exception(report_success=False)
+            self.assert_no_exception()
         # check global values
         if 'values' in kwargs:
             # for now we have no facility to check that some variable was
@@ -588,7 +596,9 @@ class Test:
         :return: Assertion status.
         """
         status = cmp(expected, self.result)
-        self.record_assertion(ResultAssert(status, expected))
+        if self.expression is None:
+            raise GraderError("No expression was evaluated")
+        self.record_assertion(ResultAssert(status, self.expression, expected))
         return status
 
     def assert_variable_values(self, cmp=operator.eq, **expected) -> bool:
@@ -743,7 +753,7 @@ class Test:
         res = []
         added, deleted, modified, inputs = self.summarize_changes()
 
-        if self.result is not None:
+        if self.expression is not None and self.result is not None:
             res.append("Résultat obtenu : {}".format(self.result))
         if added:
             res.append("Variables créées : {}".format(added))
@@ -818,7 +828,7 @@ class TestGroup:
         grade is multiplied by this factor before being added to other Test
         and TestGroup grades.
         :param params: Additional execution parameters such as fail_fast (
-        default: True) and report_success (default: True).
+        default: True) and report_success (default: False).
         """
         self.num: int = TestGroup._num
         TestGroup._num += 1
@@ -919,7 +929,10 @@ class OutputAssert(Assert):
 
     def __str__(self):
         if self.status:
-            return "Affichage correct"
+            if self.expected == "":
+                return "Pas d'affichage"
+            else:
+                return "Affichage correct"
         elif self.expected == "":
             return "Aucun affichage attendu"
         else:
@@ -959,8 +972,9 @@ class ExceptionAssert(Assert):
 
 class ResultAssert(Assert):
 
-    def __init__(self, status, expected, **params):
+    def __init__(self, status, expression, expected, **params):
         super().__init__(status, params)
+        self.expression = expression
         self.expected = expected
 
     def __str__(self):
@@ -1053,10 +1067,11 @@ class RecursionAssert(Assert):
 
     def __str__(self):
         if self.status:
-            return f"L'expression {self.expr} provoque des appels récursifs"
+            return f"L'expression <code>{self.expr}</code> provoque des " \
+                   f"appels récursifs"
         else:
-            return f"L'expression {self.expr} ne provoque pas d'appels " \
-                   f"récursifs"
+            return f"L'expression <code>{self.expr}</code> ne provoque pas " \
+                   f"d'appels récursifs"
 
 
 class FunctionDefinitionAssert(Assert):
