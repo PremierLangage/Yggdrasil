@@ -163,7 +163,7 @@ else:
     attempt += 1
 
     try:
-        student_answer = Generator.regex(inputbox.value, True)
+        student_answer = Generator.regex(inputbox.value, True) # raise exception if not valid
         match, error = Automaton.compare(viewer, student_answer)
     except Exception as e:
         error = str(e)
