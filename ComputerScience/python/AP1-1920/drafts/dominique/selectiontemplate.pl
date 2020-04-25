@@ -56,7 +56,7 @@ for e in selectable.selections:
 
 if found == matching and error == 0:
     score = 100
-    msg = '<span class="success-state">Bravo, vous avez trouvé tous {{cible}} !</span>'
+    msg = f'<span class="success-state">Bravo, vous avez trouvé tous {cible} !</span>'
 else:
     score = max([0, matching*(found - error)])
     nb_error = (matching - found) + error
