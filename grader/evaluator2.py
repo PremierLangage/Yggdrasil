@@ -12,6 +12,11 @@ try:
     from serialize import CustomEncoder, CustomDecoder
     #from serialize import serialize, deserialize
 except ModuleNotFoundError:
+    class CustomEncoder(json.JSONEncoder):
+        def default(self, obj):
+            return jsonpickle.Pickler(unpicklable=False).flatten(obj)
+            
+    CustomDecoder = None
     def serialize(arg):
         return arg
     def deserialize(arg):
