@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
-import sys, json
+import sys, json, jsonpickle
 from components import Component
 from customdragdrop import DragDropGroup
 
