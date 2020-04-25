@@ -10,7 +10,7 @@ generate== #|py|
 #    la construction de l'automate pour tester la réponse
 
 
-viewer = Automaton.parse('XXX')
+viewer = Automaton.parse('ab(a|b)(a|b)((a|b)(a|b)(a|b)(a|b))*')
 
 alphabet = "a,b"
 message = "des mots qui commencent par ab et dont la longueur est un multiple de 4."
