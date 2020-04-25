@@ -6,8 +6,8 @@ import uuid
 
 # Load the custom serialization function
 try:
-    from serialize import serialize
-    #from serialize import CustomEncoder, CustomDecoder
+    #from serialize import serialize
+    from serialize import CustomEncoder, CustomDecoder
 except ModuleNotFoundError:
     def serialize(arg):
         return arg
