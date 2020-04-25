@@ -13,7 +13,7 @@ generate== #|py|
 viewer = Automaton.parse('(bb)*(b|a|ba)(aa)*')
 
 alphabet = "a,b"
-message = "{b^na^p tels que n ou p est impaire}"
+message = "L = { b^n.a^p tels que n ou p est impaire }"
 ==
 
 title = Partiel 2020 Exo1-3
