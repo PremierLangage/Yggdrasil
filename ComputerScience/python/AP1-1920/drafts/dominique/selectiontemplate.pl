@@ -21,7 +21,7 @@ mots = ['Toi', 'moi,', 'eux', 'lui', 'elle', 'je', 'on', 'On', 's\'']
 
 
 textdelaselection==
-Toi plus moi, plus eux plus tous ceux qui le veulent.  <br/>
+Toi plus moi, plus eux plus tous ceux qui le veulent. s
 Plus lui plus elle plus tous ceux qui sont seuls. 
 
 
