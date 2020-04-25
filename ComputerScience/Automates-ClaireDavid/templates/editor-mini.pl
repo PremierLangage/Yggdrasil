@@ -6,7 +6,7 @@ extends = editor-L2.pl
 feedback_nondet = <p class="warning-state">L'automate correspond au langage mais n'est pas deterministe complet.</p>
 
 #* feedback when the automaton is not minimal.
-feedback_mini = <p class="warning-state">L'automate correspond au langage. Il est det complet mais n'est pas minimal.</p>
+feedback_nomini = <p class="warning-state">L'automate correspond au langage. Il est det complet mais n'est pas minimal.</p>
 
 evaluator== #|py|
 from automaton import Automaton
@@ -30,7 +30,7 @@ else:
     ## ou bien c'est ici...
         elif len(info_viewer["states"]) == len(info_editor["states"]) :
             score = 0
-            grade = (score, feedback_non_mini)
+            grade = (score, feedback_nomini)
         else :
             score = 100
             grade = (score, feedback_nomatch)
