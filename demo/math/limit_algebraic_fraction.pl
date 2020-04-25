@@ -26,6 +26,6 @@ score, _, feedback = eval_real_or_inf(input.value, sol)
 ==
 
 solution ==
-La limite est $% {{sol}} %$.
+La limite est $% {{sol.latex}} %$.
 ==
 
