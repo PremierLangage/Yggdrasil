@@ -9,7 +9,8 @@ from customdragdrop import DragDropGroup
 from jinja2 import Template
 
 try:
-    from serialize import serialize, deserialize
+    from serialize import CustomEncoder, CustomDecoder
+    #from serialize import serialize, deserialize
 except ModuleNotFoundError:
     def serialize(arg):
         return arg
