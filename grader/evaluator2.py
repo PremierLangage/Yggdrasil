@@ -171,8 +171,8 @@ if __name__ == "__main__":
         elif dic['settings']['feedback']=='lightscore':
             ffeedback=format_feedback_lightscore(score,feedback)
 
-    ffedback = dic['solution']
-    
+    ffeedback = dic['solution']
+
     with open(sys.argv[3], "w+") as f:
         json.dump(dic, f, cls=CustomEncoder)
     
