@@ -4,8 +4,6 @@ import sympy
 import sympy2latex
 
 class CustomEncoder(json.JSONEncoder):
-    def __init__(self, *args, **kwargs):
-        json.JSONEncoder.__init__(self, *args, **kwargs)
 
     def default(self, obj):
         if isinstance(obj, (sympy.Basic, sympy.Matrix)):
