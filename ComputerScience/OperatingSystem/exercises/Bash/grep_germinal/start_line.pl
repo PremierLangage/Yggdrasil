@@ -24,7 +24,7 @@ title=Information sur les débuts de ligne
 before==
 import random
 
-things = [("le nombre de lignes vides", "3283\n"),
+things = [("le nombre de lignes vides", "3284\n"),
           ("le nombre de lignes commançant par une lettre majuscule", "1878\n"),
           ("le nombre de lignes commançant par un tiret (touche moins)", "1356\n")]
 (name_thing, expected_stdout) = random.choice(things)
