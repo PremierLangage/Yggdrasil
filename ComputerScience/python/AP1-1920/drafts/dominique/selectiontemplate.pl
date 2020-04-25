@@ -23,7 +23,7 @@ selectable.selectable % true
 
 
 before==
-
+import re
 selectable.text=textdelaselection
 
 matching=0
