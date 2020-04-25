@@ -17,7 +17,7 @@ else:
     attempt += 1
     match, error = Automaton.compare(viewer, editor)
     infos_editor , _ = Automaton.editor_properties(editor)
-    info_viewer , _ = Automaton.properties(viewer)
+    info_viewer , _ = Automaton.parse(viewer).properties()
     if  attempt >= maxattempt and (error or not match): # error or no match after timeout
         grade = (score, feedback_timeout)
     elif error:
