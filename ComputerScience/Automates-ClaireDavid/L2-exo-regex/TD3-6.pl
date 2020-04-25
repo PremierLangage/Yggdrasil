@@ -10,7 +10,7 @@ generate== #|py|
 #    la construction de l'automate pour tester la réponse
 
 
-viewer = Automaton.parse('XXX')
+viewer = Automaton.parse('b(a|b)((a|b)(a|b))*b|b')
 
 alphabet = "a,b"
 message = "des mots de longueur impaire qui commencent et se terminent par b."
