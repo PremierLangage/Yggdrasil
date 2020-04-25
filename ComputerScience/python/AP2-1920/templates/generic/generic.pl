@@ -1,8 +1,12 @@
 @ /utils/sandboxio.py
 @ builder.py
 @ grader.py
+
 @ utils/test.py
 @ utils/mockinput.py
+@ utils/ast_analyzer.py
+@ utils/recursion_detector.py
+
 @ jinja/testgroup.html
 @ jinja/testitem.html
 
@@ -28,6 +32,7 @@ form==
 grader==
 begin_test_group("L'exercice n'a pas défini de procédure de validation.")
 ==
+
 
 
 
