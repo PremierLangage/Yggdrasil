@@ -37,6 +37,7 @@
 #             grade(score,feedback_nondet)
 
 # ERREUR: vous êtes dans un contexte python il manque des guillemets dans les crochets de plus la condition est fausse il fallait tester une inégalité
+# de plus le dictionnaire renvoyé par Automaton.properties ne contenait pas "states" je l'ai rajouté.
 
 #         elif len(infos_viewer[states]) == len(infos_editor[states]) :
 #             score = 0
