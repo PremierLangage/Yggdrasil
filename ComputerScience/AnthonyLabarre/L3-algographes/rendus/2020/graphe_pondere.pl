@@ -11,11 +11,7 @@ text==
 Écrivez une classe Graphe implémentant un graphe pondéré non orienté.
 ==
 
-for_dr_dont_touch==
-class Graphe:
-    def sommets(dummy):
-        return [0, 1, 2, 3]
-==
+
 
 # Les tests:
 
@@ -53,6 +49,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
