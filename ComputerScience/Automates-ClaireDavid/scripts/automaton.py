@@ -793,6 +793,10 @@ class Automaton:
         }
         """
 
+        # editor_properties will not alterate the automaton
+        if isinstance(obj, AutomatonEditor):
+            return Automaton.editor_properties(obj)
+    
         instance = Automaton.parse(obj)
 
         complete = True
@@ -1055,6 +1059,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
