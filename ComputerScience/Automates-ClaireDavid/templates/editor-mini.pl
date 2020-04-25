@@ -26,7 +26,7 @@ else:
         print('match', file=sys.stderr)
         if not (info_editor["deterministic"] and info_editor["complete"]):
             score = 0 
-            grade(score, feedback_nondet)
+            grade = (score, feedback_nondet)
         elif len(info_viewer["states"]) != len(info_editor["states"]) :
             score = 0
             grade = (score, feedback_nomini)
