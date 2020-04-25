@@ -1,6 +1,6 @@
 extends = ../../../templates/generic/generic.pl
 
-title = Fonctions : appartenance à un intervalle
+title = Récursivité : liste des mots binaires
 # author = Antoine Meyer
 
 text==
@@ -70,6 +70,7 @@ run(f'liste_binaires(3)',
     title = f'Chaînes binaires de longueur 3',
     result = liste_binaires(3))
 ==
+
 
 
 
