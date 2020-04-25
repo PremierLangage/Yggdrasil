@@ -21,10 +21,10 @@ Pour les exercicces de shell qui suivent, un fichier **Germinal.txt** a été
 placé dans le répertoire courant de travail. Le fichier texte contient le 
 texte intégral de l'oeuvre du même nom d'E. Zola.
 
-**grep** sera la commande centrale des exercices de cette feuille. Vous devrez 
-aussi probablement établir un grand nombre d'expressions rationnelles. Faites 
-attention aux consignes : souvent il faut produire un résultat numérique seul 
-sur une ligne.
+**grep** sera la commande centrale de la plupart des exercices de cette 
+feuille. Vous devrez aussi probablement établir un grand nombre d'expressions 
+rationnelles. Faites attention aux consignes : souvent il faut produire un 
+résultat numérique seul sur une ligne.
 ==
 
 # count (words, lines, chars) in Germinal.txt
