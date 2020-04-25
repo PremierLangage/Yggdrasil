@@ -172,6 +172,7 @@ if __name__ == "__main__":
             ffeedback=format_feedback_lightscore(score,feedback)
 
     ffedback = dic['solution']
+    
     with open(sys.argv[3], "w+") as f:
         json.dump(dic, f, cls=CustomEncoder)
     
