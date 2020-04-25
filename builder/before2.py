@@ -100,8 +100,8 @@ if __name__ == "__main__":
     #print(json.dumps(dic, cls=CustomEncoder),file = sys.stderr)
     #sys.exit(1)
     with open(output_json, "w+") as f:
-        f.write(jsonpickle.encode(dic, unpicklable=False))
-        #f.write(json.dumps(dic, ensure_ascii=False, cls=CustomEncoder))
+        #f.write(jsonpickle.encode(dic, unpicklable=False))
+        f.write(json.dump(dic, ensure_ascii=False, cls=CustomEncoder))
     sys.exit(0)
 
 
