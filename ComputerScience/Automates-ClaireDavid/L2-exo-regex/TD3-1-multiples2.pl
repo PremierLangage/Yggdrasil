@@ -16,7 +16,7 @@ alphabet = "0,1"
 message = "à la représentation des entiers en base 2 qui sont des multiples de 2"
 ==
 
-title = Partiel 2020 Exo1-3
+title = TD3-1
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez une expression reconnaissant le langage correspondant à {{ message }} <br>
