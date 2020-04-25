@@ -15,7 +15,7 @@ title=
 selectable =: Text
 
 selectable.selectable % true
-selectable.mode % "word"
+selectable.mode = word
 
 mots = ['Toi', 'moi,', 'eux', 'lui', 'elle', 'je', 'on', 'On', 's\'']
 
@@ -90,6 +90,7 @@ extracss==
 }
 </style>
 ==
+
 
 
 
