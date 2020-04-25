@@ -4,10 +4,13 @@ import sympy
 import sympy2latex
 
 class CustomEncoder(json.JSONEncoder):
+    def __init__(self, *args, **kwargs):
+        json.JSONEncoder.__init__(self, *args, **kwargs)
+
     def default(self, obj):
         if isinstance(obj, (sympy.Basic, sympy.Matrix)):
             return {'__SymPy__': True, 'srepr': sympy.srepr(obj), 'latex': sympy.latex(obj)}
-        return jsonpickle.encode(obj, unpicklable=False)
+        return jsonpickle.Pickler(unpicklable=False).flatten(obj)
 
 class CustomDecoder(json.JSONDecoder):
     def __init__(self, *args, **kwargs):
