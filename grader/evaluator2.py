@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
-import sys
+import sys, json
 from sandboxio import output, get_context
 from components import Component
 from customdragdrop import DragDropGroup
