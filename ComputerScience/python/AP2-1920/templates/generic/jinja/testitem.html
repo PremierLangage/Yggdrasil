@@ -16,6 +16,7 @@
                 <div id="{{ test.make_id() }}"
                      class="{%  if not test.status %}show{% else %}collapse{% endif %}">
                     <div class="card {% if not test.status %}card-danger{% else %}card-success{% endif %};">
+                        {% if test.executed or test.expression %}
                         <p>
                             <b>
                                 Contexte d'exécution :
@@ -32,6 +33,7 @@
                         <p>
                             {{ test.results() }}
                         </p>
+                        {% endif %}
                         {% for assertion in test.assertions %}
                         {% if assertion.status and assertion.params.report_success %}
                         <div class="card card-success;"
