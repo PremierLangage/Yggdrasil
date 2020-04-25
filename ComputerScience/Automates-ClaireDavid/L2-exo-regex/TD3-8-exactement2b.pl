@@ -10,10 +10,10 @@ generate== #|py|
 #    la construction de l'automate pour tester la réponse
 
 
-viewer = Automaton.parse('XXX')
+viewer = Automaton.parse('a*ba*ba*')
 
 alphabet = "a,b"
-message = "XXXXX"
+message = "aux mots contenant exactememt deux b."
 ==
 
 title = TD3.1-8
@@ -26,6 +26,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
