@@ -9,7 +9,10 @@ try:
     #from serialize import serialize
     from serialize import CustomEncoder, CustomDecoder
 except ModuleNotFoundError:
-    CustomEncoder = None
+    class CustomEncoder(json.JSONEncoder):
+        def default(self, obj):
+            return jsonpickle.Pickler(unpicklable=False).flatten(obj)
+
     CustomDecoder = None
     def serialize(arg):
         return arg
