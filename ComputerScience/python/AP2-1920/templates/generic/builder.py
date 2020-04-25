@@ -3,18 +3,13 @@
 
 import sys, jsonpickle
 import sandboxio
-
+from os.path import *
 
 class BuilderError(Exception):
     pass
 
 
 if __name__ == "__main__":
-    context = sandboxio.get_context()
-    print(context, file=sys.stderr)
-    sys.exit(1)
-
-    """
     if len(sys.argv) < 3:
         msg = ("Sandbox did not call builder properly:\n"
                "Usage: python3 builder.py [input_json] [output_json]")
@@ -34,5 +29,4 @@ if __name__ == "__main__":
     output_json = sys.argv[2]
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(context, unpicklable=False))
-    """
 
