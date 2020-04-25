@@ -3,7 +3,7 @@
 extends = editor.pl
 
 #* Maximum number of attempts before showing the right answer.
-maxattempt = 20
+maxattempt = 10
 
 #* feedback shown after a timeout.
 feedback_timeout = <p class="warning-state">Vous n'avez pas réussi l'exercice.<br> Relisez votre cours et retentez l'exercice un peu plus tard.</p>
@@ -13,4 +13,5 @@ feedback_timeout = <p class="warning-state">Vous n'avez pas réussi l'exercice.<
 form_success== #|html|
 <p class="success-state">Bravo c'est une bonne réponse.</p>
 ==
+
 
