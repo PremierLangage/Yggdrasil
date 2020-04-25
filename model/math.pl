@@ -1,7 +1,7 @@
 extends = basic.pl
 
-@ /model/serialization/JSONEncoder.py [serialize.py]
-@ /model/serialization/serialize_sympy.py [serialize2.py]
+@ /model/serialization/JSONEncoder.py [serialize2.py]
+@ /model/serialization/serialize_sympy.py [serialize.py]
 @ /model/namespace/namespace_math.py [namespace.py]
 @ /utils/sympy/evalsympy.py
 @ /utils/sympy/latex2sympy.py
