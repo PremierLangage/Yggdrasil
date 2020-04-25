@@ -24,9 +24,9 @@ else:
         grade = (-1, feedback_syntax_error.format(error))
     elif match is True :
     ## ça a l'air de planter ici
-        if not (infos_editor[deterministic] and infos_editor[complete]):
+        if not (infos_editor["deterministic"] and infos_editor["complete"]):
             score = 0 
-            grade(score,feedback_nondet)
+            grade(score, feedback_nondet)
     ## ou bien c'est ici...
         elif len(infos_viewer[states]) == len(infos_editor[states]) :
             score = 0
