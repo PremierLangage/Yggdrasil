@@ -17,7 +17,7 @@ _default_group_template = _default_template_dir + 'testgroup.html'
 
 _default_params = {
     "verbose_inputs": True,
-    "report_success": False,
+    "report_success": True,
     "fail_fast": True,
 }
 
@@ -818,7 +818,7 @@ class TestGroup:
         grade is multiplied by this factor before being added to other Test
         and TestGroup grades.
         :param params: Additional execution parameters such as fail_fast (
-        default: True) and report_success (default: False).
+        default: True) and report_success (default: True).
         """
         self.num: int = TestGroup._num
         TestGroup._num += 1
