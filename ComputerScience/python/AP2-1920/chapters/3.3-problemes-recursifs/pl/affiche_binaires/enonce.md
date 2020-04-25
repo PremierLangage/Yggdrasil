@@ -32,7 +32,7 @@ Un algorithme possible est le suivant :
 
 Le travail demandé est d'écrire la fonction récursive 
 `affiche_binaires_prefixe(n, prefixe)`{.python} décrite ci- dessus, ainsi 
-que la 
-fonction `affiche_binaires(n)`.
+que la fonction `affiche_binaires(n)`{.python}.
+
 
 
