@@ -30,11 +30,14 @@ résultat numérique seul sur une ligne.
 # count (words, lines, chars) in Germinal.txt
 @ /ComputerScience/OperatingSystem/exercises/Bash/grep_germinal/wc_germinal.pl
 
-# count occurrence of a special words(both singular or plural) in Germinals.txt
-@ /ComputerScience/OperatingSystem/exercises/Bash/grep_germinal/occ_word_germinal.pl
-
 # count occurrence final line punctuation in Germinals.txt
 @ /ComputerScience/OperatingSystem/exercises/Bash/grep_germinal/final_punctuation.pl
 
 # count occurrence of some start of lines in Germinals.txt
 @ /ComputerScience/OperatingSystem/exercises/Bash/grep_germinal/start_line.pl
+
+# count occurrence of a special words(both singular or plural) in Germinals.txt
+@ /ComputerScience/OperatingSystem/exercises/Bash/grep_germinal/occ_word_germinal.pl
+
+# count some lines by content in Germinals.txt
+@ /ComputerScience/OperatingSystem/exercises/Bash/grep_germinal/some_lines_content.pl
