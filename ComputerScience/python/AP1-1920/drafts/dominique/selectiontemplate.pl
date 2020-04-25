@@ -10,7 +10,11 @@ builder =@ /builder/before.py
 #! linter:mots:
 #! linter:cible
 
+text==
+Dans le text suivant choisissez {{cible}}.
 
+==
+title=Choisir {{cible}}
 
 
 selectable =: Text
