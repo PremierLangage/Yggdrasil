@@ -1,14 +1,12 @@
-# ERREURS : 
-# ERREUR: ici vous êtes dans le contexte python donc la valeur à droite doit êêtre entre guillemets 
-            
-
 # ## A finir -- ça ne marche pas
 # 
 # extends = editor-L2.pl
 # 
 # evaluator== #|py|
 # from automaton import Automaton
-# 
+
+# ERREUR: ici vous êtes dans le contexte python donc la valeur à droite doit êêtre entre guillemets 
+ 
 # 
 # #* feedback when the automaton is non deterministic or not complete.
 # feedback_nondet = <p class="warning-state">L'automate correspond au langage mais n'est pas deterministe complet.</p>
@@ -22,19 +20,29 @@
 #     attempt += 1
 #     match, error = Automaton.compare(viewer, editor)
 #     infos_editor , _ = Automaton.editor_properties(editor)
+
+# ERREUR: la méthode properties n'était pas static je l'ai modifié dans automaton.py
+
 #     info_viewer , _ = Automaton.properties(viewer)
 #     if  attempt >= maxattempt and (error or not match): # error or no match after timeout
 #         grade = (score, feedback_timeout)
 #     elif error:
 #         grade = (-1, feedback_syntax_error.format(error))
 #     elif match is True :
-#     ## ça a l'air de planter ici
+
+# ERREUR: vous êtes dans un contexte python il manque des guillemets dans les crochets
+
 #         if not (infos_editor[deterministic] and infos_editor[complete]):
 #             score = 0 
 #             grade(score,feedback_nondet)
-#     ## ou bien c'est ici...
+
+# ERREUR: vous êtes dans un contexte python il manque des guillemets dans les crochets de plus la condition est fausse il fallait tester une inégalité
+
 #         elif len(infos_viewer[states]) == len(infos_editor[states]) :
 #             score = 0
+
+# ERREUR: feedback_non_mini existe pas
+
 #             grade = (score, feedback_non_mini)
 #         else :
 #             score = 100
