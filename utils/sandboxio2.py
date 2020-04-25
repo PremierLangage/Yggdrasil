@@ -7,7 +7,7 @@ class BasicEncoder(json.JSONEncoder):
     def default(self, obj):
         return jsonpickle.Pickler(unpicklable=False).flatten(obj)
 
-def get_context(cls=BasicEncoder):
+def load_context(cls=None):
     """Return the dictionnary containing the context of the exercise."""
     with open(sys.argv[1], "r") as f:
         context = json.load(f, cls=cls)
