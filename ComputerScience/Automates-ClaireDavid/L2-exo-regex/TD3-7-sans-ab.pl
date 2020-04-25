@@ -10,7 +10,7 @@ generate== #|py|
 #    la construction de l'automate pour tester la réponse
 
 
-viewer = Automaton.parse('XXX')
+viewer = Automaton.parse('b*a*')
 
 alphabet = "a,b"
 message = "des mots qui ne contiennnent pas le facteur ab."
