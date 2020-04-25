@@ -41,3 +41,6 @@ résultat numérique seul sur une ligne.
 
 # count some lines by content in Germinals.txt
 @ /ComputerScience/OperatingSystem/exercises/Bash/grep_germinal/some_lines_content.pl
+
+# search long words in Germinals.txt
+@ /ComputerScience/OperatingSystem/exercises/Bash/grep_germinal/long_words.pl
