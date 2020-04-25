@@ -28,7 +28,7 @@ selectable.text=textdelaselection
 
 matching=0
 for m in textdelaselection.split(" "):
-    if m in mots:
+    if re.sub("\W+","",m).lower() in mots:
         matching += 1
 
 ==
