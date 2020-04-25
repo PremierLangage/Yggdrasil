@@ -24,14 +24,8 @@ title=Information à extraire du texte de Germinal
 before==
 import random
 
-things = [("le nombre de lignes vides", "3283\n"),
-          ("le nombre de lignes commançant par une lettre majuscule", "1878\n"),
-          ("le nombre de lignes commançant par un tiret (touche moins)", "1356\n"),
-          ("le nombre de lignes se terminant par un point d'interrogation", "190\n"),
-          ("le nombre de lignes se terminant par un point d'exclamation", "375\n"),
-          ("le nombre de lignes composées uniquement de lettres majuscules", "40\n"),
-          ("le nombre de lignes contenant un mot de 16 lettres minuscules ou plus", "25\n"),
-          ("le nombre de lignes contenant un chiffre", "12\n")]
+things = [("le nombre de lignes se terminant par un point d'interrogation", "190\n"),
+          ("le nombre de lignes se terminant par un point d'exclamation", "375\n")]
 (name_thing, expected_stdout) = random.choice(things)
 ==
 
