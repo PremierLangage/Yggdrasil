@@ -10,31 +10,34 @@ feedback_nomini = <p class="warning-state">L'automate correspond au langage. Il 
 
 evaluator== #|py|
 from automaton import Automaton
-
-if attempt >= maxattempt: # timeout
-    grade = (score, feedback_timeout)
-else:
-    attempt += 1
-    match, error = Automaton.compare(viewer, editor)
-    info_viewer , _ = Automaton.properties(viewer)
-    info_editor , _ = Automaton.editor_properties(editor)
-    if  attempt >= maxattempt and (error or not match): # error or no match after timeout
+try:
+    if attempt >= maxattempt: # timeout
         grade = (score, feedback_timeout)
-    elif error:
-        grade = (-1, feedback_syntax_error.format(error))
-    elif match is True :
-        if not (info_editor["deterministic"] and info_editor["complete"]):
-            score = 0 
-            grade(score, feedback_nondet)
-        elif len(info_viewer["states"]) != len(info_editor["states"]) :
-            score = 0
-            grade = (score, feedback_nomini)
-        else :
-            score = 100
-            grade = (score, feedback_match)
     else:
-        score = 0
-        grade=(score, feedback_nomatch)
+        attempt += 1
+        match, error = Automaton.compare(viewer, editor)
+        info_viewer , _ = Automaton.properties(viewer)
+        info_editor , _ = Automaton.editor_properties(editor)
+        if  attempt >= maxattempt and (error or not match): # error or no match after timeout
+            grade = (score, feedback_timeout)
+        elif error:
+            grade = (-1, feedback_syntax_error.format(error))
+        elif match is True :
+            if not (info_editor["deterministic"] and info_editor["complete"]):
+                score = 0 
+                grade(score, feedback_nondet)
+            elif len(info_viewer["states"]) != len(info_editor["states"]) :
+                score = 0
+                grade = (score, feedback_nomini)
+            else :
+                score = 100
+                grade = (score, feedback_match)
+        else:
+            score = 0
+            grade=(score, feedback_nomatch)
+except Exception as e:
+    import traceback
+    traceback.print_exc()
 ==
 
 
