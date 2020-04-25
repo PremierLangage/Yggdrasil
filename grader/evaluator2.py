@@ -160,7 +160,7 @@ if __name__ == "__main__":
             except:
                 pass
             if score < 100 and 'solution' in dic:
-                feedback += Template(dic['solution']).render(dic)
+                feedback += dic['solution'] #Template(dic['solution']).render(dic)
     
     ffeedback = feedback
     if 'feedback' in dic['settings']:
