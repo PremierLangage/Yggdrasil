@@ -14,7 +14,13 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
+from random import choice, randint
+
 def generate_random_diagram(nb_var, nb_gate):
     """
-    Return a random 
+    Return a random diagram containing `nb_gate` logical gates. The circuit is 
+    connected and has a single output. The circuit has `nb_var` different 
+    inputs.
     """
+    input_names = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+    if (nb_gate)
