@@ -73,6 +73,8 @@ else:
     attempt += 1
     match, error = Automaton.compare(viewer, editor)
     info_viewer , _ = Automaton.properties(viewer)
+    # Automaton.properties will detect if editor is the an instance of AutomatonEditor
+    # and call editor_properties to not alterate the student automaton
     info_editor , _ = Automaton.properties(editor)
     if  attempt >= maxattempt and (error or not match): # error or no match after timeout
         grade = (score, feedback_timeout)
@@ -92,5 +94,6 @@ else:
         score = 0
         grade=(score, feedback_nomatch)
 ==
+
 
 
