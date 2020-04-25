@@ -72,6 +72,11 @@ class Generator:
         """
         if simple:
             regex = regex.replace('.', '').replace('+', '|')
+            authorized = 'abcdefghijklmnopqrstuvwxyz.+()*'
+            for c in regex:
+                if c not in regex:
+                    raise Exception(f"{c} n'est pas un caractère validate dans la syntaxe des expressions rationnelles")
+
         return Automaton.parse(regex)
 
 
@@ -255,6 +260,7 @@ class Generator:
             "rows": rows,
             "transitions": transitions
         }
+
 
 
 
