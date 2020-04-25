@@ -10,7 +10,7 @@ feedback_nomini = <p class="warning-state">L'automate correspond au langage. Il 
 
 evaluator== #|py|
 from automaton import Automaton
-
+import sys
 if attempt >= maxattempt: # timeout
     grade = (score, feedback_timeout)
 else:
@@ -23,6 +23,7 @@ else:
     elif error:
         grade = (-1, feedback_syntax_error.format(error))
     elif match is True :
+        print('match', file=sys.stderr)
         if not (info_editor["deterministic"] and info_editor["complete"]):
             score = 0 
             grade(score, feedback_nondet)
