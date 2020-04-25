@@ -28,7 +28,7 @@ else:
             score = 0 
             grade(score, feedback_nondet)
     ## ou bien c'est ici...
-        elif len(viewer["states"]) == len(editor["states"]) :
+        elif len(infos_viewer["states"]) == len(info_editor["states"]) :
             score = 0
             grade = (score, feedback_non_mini)
         else :
