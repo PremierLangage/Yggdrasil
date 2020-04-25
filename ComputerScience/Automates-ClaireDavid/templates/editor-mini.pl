@@ -1,3 +1,7 @@
+# ERREURS : 
+# ERREUR: ici vous êtes dans le contexte python donc la valeur à droite doit êêtre entre guillemets 
+            
+
 # ## A finir -- ça ne marche pas
 # 
 # extends = editor-L2.pl
@@ -42,13 +46,12 @@
 
 
 
-## A finir -- ça ne marche pas
+# VERSION CORRIGÉ
 
 extends = editor-L2.pl
 
 #* feedback when the automaton is non deterministic or not complete.
 feedback_nondet = <p class="warning-state">L'automate correspond au langage mais n'est pas deterministe complet.</p>
-
 #* feedback when the automaton is not minimal.
 feedback_nomini = <p class="warning-state">L'automate correspond au langage. Il est det complet mais n'est pas minimal.</p>
 
@@ -61,7 +64,7 @@ else:
     attempt += 1
     match, error = Automaton.compare(viewer, editor)
     info_viewer , _ = Automaton.properties(viewer)
-    info_editor , _ = Automaton.editor_properties(editor)
+    info_editor , _ = Automaton.properties(editor)
     if  attempt >= maxattempt and (error or not match): # error or no match after timeout
         grade = (score, feedback_timeout)
     elif error:
