@@ -17,12 +17,17 @@ author=Nicolas Borie
 title=Recherche et comptage textuels dans Germinal
 
 introduction==
-Pour les exercicces qui suivent, un fichier **Germinal.txt** a été placé dans 
-le répertoire courant de travail. Le fichier texte contient le texte intégral 
-de l'oeuvre du même nom d'E. Zola.
+Pour les exercicces de shell qui suivent, un fichier **Germinal.txt** a été 
+placé dans le répertoire courant de travail. Le fichier texte contient le 
+texte intégral de l'oeuvre du même nom d'E. Zola.
+
+**grep** sera la commande centrale des exercices de cette feuille. Vous devrez 
+aussi probablement établir un grand nombre d'expressions rationnelles. Faites 
+attention aux consignes : souvent il faut produire un résultat numérique seul 
+sur une ligne.
 ==
 
-# 
+# count (words, lines, chars) in Germinal.txt
 @ /ComputerScience/OperatingSystem/exercises/Bash/grep_germinal/wc_germinal.pl
 
 
