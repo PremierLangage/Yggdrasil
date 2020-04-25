@@ -6,9 +6,8 @@ title = Récursivité : liste des sous-listes
 text==
 # Liste des sous-listes {.exo}
 
-On souhaite écrire une fonction récursive `liste_binaires(n)` renvoyant
-la liste des mots à `n` caractères dans l'alphabet binaire ('0' ou '1'). 
-Par exemple :
+On souhaite écrire une fonction récursive `sous_listes(lst)` renvoyant
+la liste de toutes les sous-listes de `lst`, c'est à dire de toutes les listes contenant certains éléments de `lst`, dans le mêême ordre.
 
     >>> liste_binaires(2)
     ['00', '01', '10', '11']
