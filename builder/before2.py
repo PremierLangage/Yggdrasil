@@ -59,7 +59,11 @@ def aux_component(dic):
 if __name__ == "__main__":
     
     # JSON context is converted into a python dictionary and stored in dic
-    dic = get_context()
+    #dic = get_context()
+
+    with open(sys.argv[1], "r") as f:
+        dic = json.load(f, cls=CustomDecoder)
+    Component.sync_context(dic)
 
     # the content of namespace is added to dic
     dic = {**namespace, **dic}
