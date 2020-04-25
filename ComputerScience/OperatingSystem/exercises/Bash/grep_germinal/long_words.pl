@@ -28,7 +28,11 @@ things = [
 ("la liste triée sans répétition des mots en minuscules de 17 lettres", 
  "embroussaillaient\nperfectionnements\nphilosophiquement\n"),
 ("la liste triée sans répétition des mots en minuscules de 19 lettres",
- "proportionnellement\nrévolutionnairement\n")
+ "proportionnellement\nrévolutionnairement\n"),
+("",
+ "applaudissements\nconcessionnaires\ndébarbouillerait\ndébarbouillerons\n" 
+ "fonctionneraient\nincompréhensible\nmélancoliquement\nparticulièrement\n"
+ "ragaillardissait\nrespectueusement\nrévolutionnaires\nscientifiquement\n") 
 ]
 (name_thing, expected_stdout) = random.choice(things)
 ==
