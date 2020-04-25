@@ -16,7 +16,7 @@ alphabet = "0,1"
 message = "à la représentation des entiers en base 2 qui sont des puissances de 2"
 ==
 
-title = TD3-1
+title = TD3-2
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez une expression reconnaissant le langage correspondant à {{ message }} <br>
