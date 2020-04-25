@@ -15,13 +15,13 @@ title=
 selectable =: Text
 
 selectable.selectable % true
-selectable.mode = word
-selectable.debug = true
+selectable.mode % "word"
+
 mots = ['Toi', 'moi,', 'eux', 'lui', 'elle', 'je', 'on', 'On', 's\'']
 
 
 textdelaselection==
-Toi plus moi, plus eux plus tous ceux qui le veulent. 
+Toi plus moi, plus eux plus tous ceux qui le veulent.  <br/>
 Plus lui plus elle plus tous ceux qui sont seuls. 
 
 
