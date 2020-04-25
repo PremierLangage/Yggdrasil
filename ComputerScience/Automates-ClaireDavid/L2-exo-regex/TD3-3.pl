@@ -10,7 +10,7 @@ generate== #|py|
 #    la construction de l'automate pour tester la réponse
 
 
-viewer = Automaton.parse('XXX')
+viewer = Automaton.parse('(bb)*(b|a|ba)(aa)*')
 
 alphabet = "a,b"
 message = "XXXXX"
@@ -26,6 +26,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
