@@ -14,7 +14,6 @@ alphabet = "a,b"
 #message = 'bb * a(b * a) *'
 
 message = '(a+b)*'
-
 ==
 
 title = Minimisation
