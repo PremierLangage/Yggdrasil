@@ -16,7 +16,7 @@ selectable =: Text
 selectable.selectable % true 
 
 
-mots = ['Toi', 'moi,', 'eux', 'lui', 'elle', 'je', 'on', 'On', 's\'']
+mots = ['toi', 'moi', 'eux', 'lui', 'elle', 'je', 'on', 's\'']
 
 
 textdelaselection==
@@ -46,6 +46,7 @@ for m in textdelaselection.split(" "):
     if m in mots:
         matching += 1
 
+text +=str( textdelaselection.split(" "))
 ==
 
 form==
@@ -54,11 +55,16 @@ form==
 
 evaluator==
 
+def cleanIt(s):
+
+
+
 found = 0
 error = 0
 
 for e in selectable.selections:
-    if e['content'] in mots:
+    clean = cleanIt( e['content'])
+    if clean in mots:
         e['css'] = "success-state"
         found += 1
     else:
@@ -75,7 +81,7 @@ else:
         msg = '<span class="error-state">Il y a {} erreurs...</spam>'.format(nb_error)
     else:
         msg = '<span class="error-state">Il y a 1 seule erreur...</spam>'
-
+    msg = '<span class="error-state">Il y a {} erreurs...</spam>'.format(nb_error)
 grade = (score, msg)
 ==
 
