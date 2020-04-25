@@ -145,8 +145,8 @@ if __name__ == "__main__":
         if key in dic and dic[key] == namespace[key]:
             del dic[key]
 
-    for key in dic:
-        dic[key] = serialize(dic[key])
+    #for key in dic:
+    #    dic[key] = serialize(dic[key])
 
     aux_component2(dic)
     
