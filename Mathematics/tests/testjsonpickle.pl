@@ -5,13 +5,15 @@
 @ /utils/sympy/sympy2latex.py
 @ /model/serialization/JSONEncoder.py [serialize.py]
 
-extends = /model/mathinput.pl
-@ /builder/before.py [builder.py]
-
 title = Addition
 
 before ==
-str = json
+class Foo:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+a=3
+xxx = Foo(1,2)
 ==
 
 text ==
