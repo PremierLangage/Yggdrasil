@@ -13,9 +13,8 @@ title=
 
 
 selectable =: Text
+selectable.selectable % true 
 
-selectable.selectable % true
-selectable.mode % "word"
 
 mots = ['Toi', 'moi,', 'eux', 'lui', 'elle', 'je', 'on', 'On', 's\'']
 
@@ -35,18 +34,15 @@ On peut s' enfuir bien plus haut que nos rêves.
 On peut partir bien plus loin que la grève. 
 ==
 
-separator ==
-\t.,; :!?
-==
+
 
 
 before==
 
-selectable.separator = separator
 selectable.text=textdelaselection
 
 matching=0
-for m in textdelaselection.split(separator):
+for m in textdelaselection.split(" "):
     if m in mots:
         matching += 1
 
@@ -90,7 +86,6 @@ extracss==
 }
 </style>
 ==
-
 
 
 
