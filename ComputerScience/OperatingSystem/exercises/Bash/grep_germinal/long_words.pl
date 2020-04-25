@@ -26,7 +26,7 @@ import random
 
 things = [
 ("la liste triée sans répétition des mots en minuscules de 17 lettres", 
- "embroussaillaient\nperfectionnements\nphilosophiquement")
+ "embroussaillaient\nperfectionnements\nphilosophiquement\n")
 ]
 (name_thing, expected_stdout) = random.choice(things)
 ==
