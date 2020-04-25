@@ -1,6 +1,7 @@
 extends = ../../../templates/generic/generic.pl
 
 @ ../../../templates/generic/utils/ast_analyzer.py
+@ ../../../templates/generic/utils/recursion_detector.py
 
 title = Affichage des mots binaires
 # author = Antoine Meyer
