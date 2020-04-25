@@ -100,7 +100,24 @@ form== #|html|
     function onReadyPL(nodes) {
         const submit = nodes.submit; // a reference to the submit button
         // hide submit button if needed.
-        submit.attr("disabled", ({{ attempt }} >= {{ maxattempt }}) || {{ score }} == 100);      
+        submit.attr("disabled", ({{ attempt }} >= {{ maxattempt }}) || {{ score }} == 100);   
+        // bouton reset
+        const actions = nodes.actions;
+        actions.find('.action-save').hide();
+        actions.find('.action-reset').hide();
+        actions.find('.action-next').hide();
+
+        const { origin, pathname }  = document.location;
+        const link = origin + pathname;
+
+        const buttons = actions.find('.btn-group');
+
+        buttons.append(`
+            <a type="button" class="btn btn-warning action-reroll" href="`+link+`?action=reroll">
+                <i class="fas fa-dice"></i> Relancer l'exercice
+            </a>
+        `);
+
     }
 </script>
 ==
@@ -151,6 +168,7 @@ else:
         score = 0
         grade=(score, feedback_nomatch)
 ==
+
 
 
 
