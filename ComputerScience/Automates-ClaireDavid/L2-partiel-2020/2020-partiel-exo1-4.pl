@@ -13,7 +13,7 @@ generate== #|py|
 viewer = Automaton.parse('ba*ba*b(a*ba*ba*b)*a*')
 
 alphabet = "a,b"
-message = "L’ensemble des mots qui commencent par b et dont le nombre de b est un multiple de 3."
+message = "l’ensemble des mots qui commencent par b et dont le nombre de b est un multiple de 3."
 ==
 
 title = Partiel 2020 Exo1-4
@@ -26,6 +26,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
