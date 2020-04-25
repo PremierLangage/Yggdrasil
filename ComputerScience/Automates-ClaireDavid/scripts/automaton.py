@@ -779,54 +779,8 @@ class Automaton:
             "states": states
         }, None
 
-    # INSTANCE METHODS
-    
-    def iterate(self, fn):
-        """ Call fn with fromState, toState, symb for each transition of the automaton"""
-        for fromState, toStates in self.state_machine.map.items():
-            for symb, toState in toStates.items():
-                fn(
-                    fromState,
-                    toState,
-                    symb
-                )
- 
-    def as_viewer(self):
-        """
-        Gets an AutomatonDrawer component that can be displayed inside
-        the form of an exercice.
-
-        Example:
-
-        before==
-        viewer = Automaton.parse('(ab)(a|b|c)*') 
-        ==
-
-        form==
-        {{ viewer | component }}
-        ==
-        """
-
-        state_machine = self.state_machine
-
-        states    = '#states\n' + '\n'.join([e for e in state_machine.states])
-        initials  = '#initials\n' + state_machine.initial
-        accepting = '#accepting\n' + '\n'.join([e for e in state_machine.finals])
-        alphabet  = '#alphabet\n' + '\n'.join([e for e in state_machine.alphabet])
-
-        transitions = []
-        def fn(fromState, toState, symb):
-            transitions.append(
-                f'{fromState}:{symb}>{toState}'
-            )
-        self.iterate(fn)
-
-        transitions = '#transitions\n' + '\n'.join(transitions)
-        return AutomatonDrawer(
-            automaton=f'{states}\n{initials}\n{accepting}\n{alphabet}\n{transitions}'
-        )
-
-    def properties(self):
+    @staticmethod
+    def properties(obj):
         """
         Gets useful informations about the automaton.
         :return {
@@ -839,11 +793,13 @@ class Automaton:
         }
         """
 
+        instance = Automaton.parse(obj)
+
         complete = True
         infinite = False
         deterministic = True
 
-        states = self.states
+        states = instance.states
         finals = self.finals
         initials = [self.initial] # TODO use self.initials once multiple initial states is supported 
         transitions = self.transitions
@@ -894,6 +850,53 @@ class Automaton:
             "coreachable": len(coreachables) == n,
             "states": states
         }, None
+
+    # INSTANCE METHODS
+    
+    def iterate(self, fn):
+        """ Call fn with fromState, toState, symb for each transition of the automaton"""
+        for fromState, toStates in self.state_machine.map.items():
+            for symb, toState in toStates.items():
+                fn(
+                    fromState,
+                    toState,
+                    symb
+                )
+ 
+    def as_viewer(self):
+        """
+        Gets an AutomatonDrawer component that can be displayed inside
+        the form of an exercice.
+
+        Example:
+
+        before==
+        viewer = Automaton.parse('(ab)(a|b|c)*') 
+        ==
+
+        form==
+        {{ viewer | component }}
+        ==
+        """
+
+        state_machine = self.state_machine
+
+        states    = '#states\n' + '\n'.join([e for e in state_machine.states])
+        initials  = '#initials\n' + state_machine.initial
+        accepting = '#accepting\n' + '\n'.join([e for e in state_machine.finals])
+        alphabet  = '#alphabet\n' + '\n'.join([e for e in state_machine.alphabet])
+
+        transitions = []
+        def fn(fromState, toState, symb):
+            transitions.append(
+                f'{fromState}:{symb}>{toState}'
+            )
+        self.iterate(fn)
+
+        transitions = '#transitions\n' + '\n'.join(transitions)
+        return AutomatonDrawer(
+            automaton=f'{states}\n{initials}\n{accepting}\n{alphabet}\n{transitions}'
+        )
 
     def reachable_states(self, initialState: str, shouldIncludeInitialState=True):
         """
