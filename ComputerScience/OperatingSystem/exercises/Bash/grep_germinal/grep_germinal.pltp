@@ -1,0 +1,28 @@
+#*****************************************************************************
+#  Copyright (C) 2020 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
+#
+#  Distributed under the terms of the GNU General Public License (GPL)
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#    General Public License for more details.
+#
+#  The full text of the GPL is available at:
+#
+#                  http://www.gnu.org/licenses/
+#*****************************************************************************
+
+author=Nicolas Borie
+title=Recherche et comptage textuels dans Germinal
+
+introduction==
+Pour les exercicces qui suivent, un fichier **Germinal.txt** a été placé dans 
+le répertoire courant de travail
+==
+
+# 
+@ /ComputerScience/OperatingSystem/exercises/Bash/grep_germinal/wc_germinal.pl
+
+
+
