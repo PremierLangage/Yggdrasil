@@ -2,7 +2,9 @@ extends = B.pl
 
 title = C
 
-text =
+text ==
+{{style}}
+==
 
 form =
 
