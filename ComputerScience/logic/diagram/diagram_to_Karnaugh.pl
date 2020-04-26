@@ -44,6 +44,9 @@ form==
  border: solid black 1px;
  padding: 2px;
 }
+c-graph-drawer{
+ height: 50%;
+}
 </style>
 
 <center>
