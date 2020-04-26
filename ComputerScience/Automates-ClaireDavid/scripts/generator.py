@@ -71,7 +71,7 @@ class Generator:
         :return An instance of Automaton class.
         """
         if simple:
-            authorized = 'ε€abcdefghijklmnopqrstuvwxyz.+()*'
+            authorized = 'ε€01abcdefghijklmnopqrstuvwxyz.+()*'
             for c in regex:
                 if c not in authorized:
                     raise Exception(f"{c} n'est pas un caractère valide dans la syntaxe des expressions rationnelles")
@@ -261,6 +261,7 @@ class Generator:
             "rows": rows,
             "transitions": transitions
         }
+
 
 
 
