@@ -15,7 +15,8 @@ J'ai changé réponse acceptable
 23/04 -- automate inifini - reformuler
 
 24/04 -- gérer les erreurs de syntaxe de la input box
-    Vérification simple pour l'instant à afiner dans editor pour distinguer l'erreur étudiant ou autrechose
+    Vérification simple pour l'instant à afiner car (a+b)+ passe alors qu'il ne devrait pas. Il est accepté car '' = epsilon
+    Aussi dans editor pour distinguer l'erreur étudiant ou autrechose
 24/04 -- comment on fait epsilon? "" ajouter €
 
 25/04 -- des étudiants me remonte un pb avec réinitialiser --ok réglé
