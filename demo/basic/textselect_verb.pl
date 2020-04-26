@@ -12,7 +12,7 @@ form==
 
 
 txtsel =: Text
-txtsel.debug % true
+#txtsel.debug % true
 txtsel.decorator = CustomTextSelect
 
 before ==
