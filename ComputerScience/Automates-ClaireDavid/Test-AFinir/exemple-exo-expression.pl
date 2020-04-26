@@ -8,10 +8,11 @@ generate== #|py|
 #    la construction de l'automate pour tester la réponse
 
 
-viewer = Automaton.parse('b(a|b)*(bab|bb)|bb|bab')
+#viewer = Automaton.parse('b(a|b)*(bab|bb)|bb|bab')
 
 alphabet = "a,b"
-message = "l'ensemble des mots qui commencent par b et finissent pat bab ou bb."
+message = "l'ensemble des mots."
+#message = "l'ensemble des mots qui commencent par b et finissent pat bab ou bb."
 ==
 
 title = Exemple expression
@@ -24,6 +25,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
