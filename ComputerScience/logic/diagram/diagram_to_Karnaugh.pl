@@ -44,7 +44,7 @@ form==
  border: solid black 1px;
  padding: 2px;
 }
-svg{
+c-graph-drawer{
  transform: scale(0.5);
 }
 </style>
