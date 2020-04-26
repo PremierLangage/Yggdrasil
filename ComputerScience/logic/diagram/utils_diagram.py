@@ -59,3 +59,4 @@ def diagram_to_string(diagram):
     ans += "splines=ortho;\n"
 
     ans += "}\n"
+    return ans
