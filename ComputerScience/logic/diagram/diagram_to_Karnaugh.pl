@@ -40,6 +40,9 @@ form==
  .graph-viewer-component {
  pointer-events: none;
 }
+.karnaugh{
+ border: solid black 1px;
+}
 </style>
 
 <center>
@@ -47,7 +50,7 @@ form==
 <tr><td>
 {{ viewer | component }}
 </td><td>&nbsp;&nbsp;&nbsp;</td><td>
-<table style="border: solid black 1px; padding:2px;">
+<table class="karnaugh">
   <tr>
     <td></td><td>00</td><td>01</td><td>11</td><td>10</td>
   </tr>
