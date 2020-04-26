@@ -40,21 +40,21 @@ Remplir le tableau de Karnaugh associé au circuit logique suivant :
 
 form==
 <table>
-  <td>
+  <tr>
     <td></td><td>00</td><td>01</td><td>11</td><td>10</td>
-  </td>
-  <td>
+  </tr>
+  <tr>
     <td>00</td><td></td><td></td><td></td><td></td>
-  </td>
-  <td>
+  </tr>
+  <tr>
     <td>01</td><td></td><td></td><td></td><td></td>
-  </td>
-  <td>
+  </tr>
+  <tr>
     <td>11</td><td></td><td></td><td></td><td></td>
-  </td>
-  <td>
+  </tr>
+  <tr>
     <td>10</td><td></td><td></td><td></td><td></td>
-  </td>
+  </tr>
 </table>
 ==
 
