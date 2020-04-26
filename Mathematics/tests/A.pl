@@ -5,3 +5,5 @@ title = A
 text =
 
 form =
+
+style.A = A
