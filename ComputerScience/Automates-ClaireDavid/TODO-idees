@@ -17,7 +17,7 @@ J'ai changé réponse acceptable
 24/04 -- gérer les erreurs de syntaxe de la input box
     Vérification simple pour l'instant à afiner car (a+b)+ passe alors qu'il ne devrait pas. Il est accepté car '' = epsilon
     Aussi dans editor pour distinguer l'erreur étudiant ou autrechose
-24/04 -- comment on fait epsilon? "" ajouter €
+24/04 -- comment on fait epsilon? '' ajouterla possibilité d'utiliser € ou ε 
 
 25/04 -- des étudiants me remonte un pb avec réinitialiser --ok réglé
 25/05 -- une histoires de fleche rouge pas claire cf Ambre
@@ -48,6 +48,7 @@ Exercices à concevoir: --attendre la nouvelle lib pour l'ismorphisme
     automate minimal et simple vérification
     étapes de l'algo de Moore en donnant les classes d'équivalences à chaque niveau
 + QCM reg/non-reg
+
 
 
 
