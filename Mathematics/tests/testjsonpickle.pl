@@ -21,7 +21,7 @@ feedback ==
 ==
 
 evaluator ==
-grade = (score, {{a}})
+grade = (score, "{{a}}")
 ==
 
 
