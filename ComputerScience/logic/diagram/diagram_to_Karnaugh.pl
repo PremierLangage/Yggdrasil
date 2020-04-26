@@ -42,6 +42,7 @@ form==
 }
 .karnaugh{
  border: solid black 1px;
+ padding: 2px;
 }
 </style>
 
