@@ -6,3 +6,4 @@ text =
 
 form =
 
+style.B = B
