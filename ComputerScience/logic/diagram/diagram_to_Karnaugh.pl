@@ -39,16 +39,12 @@ form==
 <style>
  .graph-viewer-component {
  pointer-events: none;
- transform: scale(0.5, 0.5);
-}
-c-graph-drawer{
-  transform: scale(0.5, 0.5);
 }
 </style>
 
 <center>
 <table>
-<tr><td>
+<tr><td style="transform: scale(0.5, 0.5);">
 {{ viewer | component }}
 </td><td>&nbsp;&nbsp;&nbsp;</td><td>
 <table style="border: solid black 1px; padding:2px;">
@@ -75,6 +71,7 @@ c-graph-drawer{
 evaluator==
 grade = (100, "")
 ==
+
 
 
 
