@@ -1,15 +1,15 @@
 from scipy.stats import kendalltau
 
 _doc_="""
-right_select : bonnes réponses cochées
-wrong_select : mauvaises réponses cochées
-right_blank : nombre de bonnes réponses (à cocher) dans l'exercice
-wrong_blank : nombre d'items potentiellement cochables dans l'exercice
+fill_right : bonnes réponses cochées
+fill_wrong : mauvaises réponses cochées
+blank_right : 
+blank_wrong : 
 """
 
 
-def all_or_nothing(nbright=0, nbwrong=0, nbsol=1, nbitems=1):
-    return 100 if nbright== nbsol else 0
+def all_or_nothing(fill_right, fill_wrong, blank_right, blank_wrong):
+    return 100 if fill_wrong + blank_right == 0 else 0
 
 def right_minus_wrong(nbright=0, nbwrong=0, nbsol=1, nbitems=1):
     return int(round(max([(nbright - nbwrong)/nbsol*100,0])))
