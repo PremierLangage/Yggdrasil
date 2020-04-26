@@ -59,7 +59,8 @@ c-graph-drawer{
     <td></td><td>00</td><td>01</td><td>11</td><td>10</td>
   </tr>
   <tr>
-    <td>00</td><td class="karnaugh"><input type="text" value="0" size="1"/></td>
+    <td>00</td>
+    <td class="karnaugh"><input type="text" value="0" size="0"/></td>
     <td class="karnaugh"></td>
     <td class="karnaugh"></td>
     <td class="karnaugh"></td>
