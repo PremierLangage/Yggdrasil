@@ -32,16 +32,16 @@ viewer = GraphDrawer(graph = diagram_to_string(diagram))
 title=Table de vérité d'un circuit logique
 
 text==
+Remplir le tableau de Karnaugh associé au circuit logique suivant :
+==
+
+form==
 <style>
  .graph-viewer-component {
  pointer-events: none;
 }
 </style>
 
-Remplir le tableau de Karnaugh associé au circuit logique suivant :
-==
-
-form==
 <center>
 <table>
 <tr><td>
