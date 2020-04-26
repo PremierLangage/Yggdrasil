@@ -61,9 +61,9 @@ form==
   <tr>
     <td>00</td>
     <td class="karnaugh"><input id="form_0000" type="text" value="0" size="1"/></td>
-    <td class="karnaugh"></td>
-    <td class="karnaugh"></td>
-    <td class="karnaugh"></td>
+    <td class="karnaugh"><input id="form_0001" type="text" value="0" size="1"/></td>
+    <td class="karnaugh"><input id="form_0011" type="text" value="0" size="1"/></td>
+    <td class="karnaugh"><input id="form_0010" type="text" value="0" size="1"/></td>
   </tr>
   <tr>
     <td>01</td><td></td><td></td><td></td><td></td>
