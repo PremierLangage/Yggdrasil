@@ -43,7 +43,6 @@ Vérifier et ajuster si besoin:
 Mamadou va modifier editor.pl pour pouvoir choisir entre comparaison d'équivalence de langage et isomorphism d'automates
 
 Exercices à concevoir:
-+ TD1 exo 3 dans la continuitéé de prééfixe suffixe facteur qui sont fait --> voir td1-exemples-auto.pl à completer
 + automate des positions --> voir exo-egalité-auto.pl pour le garder en mode comparaison simple. Chercher dans les scripts de mamadou pour le fonctionnement des expression régulières
 + produit d'automates simples
 + minimisation --> voir td-minimisation.pl 
