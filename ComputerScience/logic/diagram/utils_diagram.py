@@ -16,6 +16,26 @@
 
 from random import choice, randint
 
+def generate_tree(operators, size):
+    """
+    Generate recursively 
+    """
+    ans = []
+    if size <= 0:
+        return ans
+    else:
+        op = choice(operators)
+        if op == "not":
+            ans = ["not", generate_tree(["et", "ou"], size-1)]
+            return ans
+        else:
+            size_left = randint(0, size-1)
+            size_right = size - (1 + size_left)
+            ans = [op, generate_tree(["et", "ou", "not"], size_left), 
+                       generate_tree(["et", "ou", "not"], size_right)]
+            return ans
+
+
 def generate_random_diagram(nb_var, nb_gate):
     """
     Return a random diagram containing `nb_gate` logical gates. The circuit is 
@@ -23,4 +43,19 @@ def generate_random_diagram(nb_var, nb_gate):
     inputs.
     """
     input_names = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
-    if (nb_gate)
+    ans = generate_tree(["et", "ou", "not"], nb_gate)
+    return ans
+
+
+def node_to_string_rec(diagram, nb):
+    """
+    """
+
+
+def diagram_to_string(diagram):
+    """
+    """
+    ans = "digraph G {\n"
+    ans += "splines=ortho;\n"
+
+    ans += "}\n"
