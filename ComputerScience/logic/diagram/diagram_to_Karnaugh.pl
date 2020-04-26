@@ -39,7 +39,7 @@ matrix.matrix = [
 ]
 ==
 
-title=Table de véérité d'un circuit logique
+title=Table de vérité d'un circuit logique
 
 text==
 Remplir le tableau de Karnaugh associé au circuit logique suivant :
