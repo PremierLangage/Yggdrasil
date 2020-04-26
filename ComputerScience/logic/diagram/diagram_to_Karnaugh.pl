@@ -28,7 +28,7 @@ diagram = generate_random_diagram(4, 7)
 
 viewer = GraphDrawer(graph = diagram_to_string(diagram))
 
-str_graph = diagram_to_string(diagram)
+#str_graph = diagram_to_string(diagram)
 ==
 
 title = Table de vérité d'un circuit logique
@@ -36,8 +36,6 @@ title = Table de vérité d'un circuit logique
 text==
 Remplir le tableau de Karnaugh donnant la table de vérité du circuit logique suivant :
 <br />
-
-{{ str_graph }}
 
 ==
 
