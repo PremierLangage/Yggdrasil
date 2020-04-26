@@ -9,6 +9,7 @@ generate== #|py|
 
 
 #viewer = Automaton.parse('b(a|b)*(bab|bb)|bb|bab')
+viewer = Automaton.parse('(a|b)*')
 
 alphabet = "a,b"
 message = "l'ensemble des mots."
