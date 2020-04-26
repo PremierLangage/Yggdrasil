@@ -29,10 +29,10 @@ Peut-on affirmer que $% f(a) \not= f(b) %$ ?
 ** Soit $% f : \mathbb{R} \rightarrow \mathbb{R} %$ une fonction dérivable et $% a<b %$.
 Peut-on affirmer que : 
 + $% f %$ admet au moins un minimum et au moins un maximum sur $% [a,b] %$
-- Il existe $% c\in [a,b] %$ où $% f %$  admet un maximum locale et où $% f'(c) = 0%$
-- Si $% c \in [a,b] %$ et $% f'(c)=0 %$ alors $% f %$ admet un maximum ou minimum locale en $% c %$
-- Si $% c \in ]a,b[ %$ et $% f'(c)=0 %$ alors $% f %$ admet un maximum ou minimum locale en $% c %$
-+ Si  $% c \in ]a,b[ %$ et $% c %$ est un point de  maximum ou minimum locale pour $% f %$ alors  $% f'(c)=0 %$ 
+- Il existe $% c\in [a,b] %$ où $% f %$  admet un maximum local et où $% f'(c) = 0%$
+- Si $% c \in [a,b] %$ et $% f'(c)=0 %$ alors $% f %$ admet un maximum ou minimum local en $% c %$
+- Si $% c \in ]a,b[ %$ et $% f'(c)=0 %$ alors $% f %$ admet un maximum ou minimum local en $% c %$
++ Si  $% c \in ]a,b[ %$ et $% c %$ est un point de  maximum ou minimum local pour $% f %$ alors  $% f'(c)=0 %$ 
 + Il existe $% c \in ]a,b[ %$ tel que $% f'(c) (b-a) = f(b)-f(a) %$ 
 
 ** Parmi les fonctions suivantes, indiquer celles qui satisfont les hypothèses du Théorème de Rolle sur l'intervalle $% [0,1 ] %$,: 
@@ -60,5 +60,6 @@ Cliquez sur les affirmations que vous pensez être correctes  :
 
 
 ==
+
 
 
