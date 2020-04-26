@@ -32,11 +32,10 @@ diagram = generate_random_diagram(4, 6)
 viewer = GraphDrawer(graph = diagram_to_string(diagram))
 
 matrix.matrix = [
-    ["", "00", "01", "11", "10"],
-    ["00", { "value": 0 }, { "value": 0 }, { "value": 0 }, { "value": 0 }],
-    ["01",{ "value": 0 }, { "value": 0}, { "value": 0 }, { "value": 0 }],
-    ["11",{ "value": 0 }, { "value": 0}, { "value": 0 }, { "value": 0 }],
-    ["10",{ "value": 0 }, { "value": 0}, { "value": 0 }, { "value": 0 }]
+    [{ "value": 0 }, { "value": 0 }, { "value": 0 }, { "value": 0 }],
+    [{ "value": 0 }, { "value": 0}, { "value": 0 }, { "value": 0 }],
+    [{ "value": 0 }, { "value": 0}, { "value": 0 }, { "value": 0 }],
+    [{ "value": 0 }, { "value": 0}, { "value": 0 }, { "value": 0 }]
 ]
 ==
 
