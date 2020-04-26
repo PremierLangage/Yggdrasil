@@ -42,8 +42,7 @@ form==
  transform: scale(0.5, 0.5);
 }
 c-graph-drawer{
-  height: 50%;
-  width: auto;
+  transform: scale(0.5, 0.5);
 }
 </style>
 
