@@ -44,7 +44,7 @@ form==
 
 <center>
 <table>
-<tr><td>
+<tr><td style="transform: scale(0.75, 0.75);">
 {{ viewer | component }}
 </td><td>&nbsp;&nbsp;&nbsp;</td><td>
 <table style="border: solid black 1px; padding:2px;">
