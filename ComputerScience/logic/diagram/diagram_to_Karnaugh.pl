@@ -39,6 +39,7 @@ form==
 <style>
  .graph-viewer-component {
  pointer-events: none;
+ transform: scale(0.5, 0.5);
 }
 c-graph-drawer{
   height: 50%;
