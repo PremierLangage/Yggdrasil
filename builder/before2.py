@@ -82,10 +82,6 @@ if __name__ == "__main__":
     if 'style' in dic:
         dic['extracss'] = "\n".join([v for _, v in reversed(dic['style'].items())] + [dic.get('extracss','')])
 
-    # custom serialization is applied
-    #for key in dic:
-        #dic[key]=serialize(dic[key])
-
     # HACK for components in lists
     aux_component(dic)
 
