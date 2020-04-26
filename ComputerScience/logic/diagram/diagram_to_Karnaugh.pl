@@ -39,7 +39,7 @@ Remplir le tableau de Karnaugh associé au circuit logique suivant :
 ==
 
 form==
-<table border="solid black 1px" cellspacing="0" cellpadding="2px">
+<table border="solid black 1px" padding="2px">
   <tr>
     <td></td><td>00</td><td>01</td><td>11</td><td>10</td>
   </tr>
