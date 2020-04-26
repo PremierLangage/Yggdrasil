@@ -22,8 +22,6 @@ txtsel.setdata_from_text("{{Artur}} a {{horreur}} de la marche à pied.")
 
 evaluator ==
 score = txtsel.eval()
-#grade=(100, str(txtsel.selections))
-txtsel.disabled = True
 ==
 
 
