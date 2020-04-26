@@ -12,6 +12,7 @@ form==
 
 
 txtsel =: Text
+txtsel.debug % true
 txtsel.decorator = CustomTextSelect
 
 before ==
@@ -24,6 +25,7 @@ score = txtsel.eval()
 #grade=(100, str(txtsel.selections))
 txtsel.disabled = True
 ==
+
 
 
 
