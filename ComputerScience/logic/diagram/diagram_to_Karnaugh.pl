@@ -63,7 +63,7 @@ form==
     <td></td><td></td><td>00</td><td>01</td><td>11</td><td>10</td>
   </tr>
   <tr>
-    <td rowspan="4" valign="middle">CD</td>
+    <td rowspan="4" style="vertical-align: middle;">CD</td>
     <td>00</td>
     <td class="karnaugh"><input id="form_0000" type="text" value="0" size="1"/></td>
     <td class="karnaugh"><input id="form_0001" type="text" value="0" size="1"/></td>
