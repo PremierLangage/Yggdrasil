@@ -8,4 +8,4 @@ text ==
 
 form =
 
-style.C = C
+style.A = C
