@@ -14,8 +14,8 @@ J'ai changé réponse acceptable
 =======
 23/04 -- automate inifini - reformuler
 
-24/04 -- gérer les erreurs de syntaxe de la input box
-24/04 -- comment on fait epsilon?
+24/04 -- gérer les erreurs de syntaxe de la input box -- à afiner dans editor pour distinguer l'erreur étudiant ou autrechose
+24/04 -- comment on fait epsilon? "" ajouter €
 
 25/04 -- des étudiants me remonte un pb avec réinitialiser
 25/05 -- une histoires de fleche rouge pas claire cf Ambre
@@ -50,6 +50,7 @@ Exercices à concevoir:
     automate minimal et simple vérification
     étapes de l'algo de Moore en donnant les classes d'équivalences à chaque niveau
 + QCM reg/non-reg
+
 
 
 
