@@ -42,6 +42,10 @@ form==
  height: 50%;
  width: auto;
 }
+c-graph-drawer{
+  height: 50%;
+  width: auto;
+}
 </style>
 
 <center>
