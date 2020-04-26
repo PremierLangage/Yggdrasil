@@ -26,10 +26,8 @@ J'ai changé réponse acceptable
 parse -> construit des exemples cf la documentation de mamadou dans automaton
 
 ========
-dans la librairie + est |  pas de . et etoile *
 
-========
-syntaxe des expressions regulières? ajouter un parseur pour la syntaxe du cours (.+* seulement)
+Pas de gestion propre des automates non det pour l'instant -- passage à la lib Fado en juillet
 
 
 
@@ -40,9 +38,8 @@ Vérifier et ajuster si besoin:
 + properties.pl
 + recognition.pl
 
-Mamadou va modifier editor.pl pour pouvoir choisir entre comparaison d'équivalence de langage et isomorphism d'automates
 
-Exercices à concevoir:
+Exercices à concevoir: --attendre la nouvelle lib pour l'ismorphisme
 + automate des positions --> voir exo-egalité-auto.pl pour le garder en mode comparaison simple. Chercher dans les scripts de mamadou pour le fonctionnement des expression régulières
 + produit d'automates simples
 + minimisation --> voir td-minimisation.pl 
