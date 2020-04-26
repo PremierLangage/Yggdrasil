@@ -12,7 +12,7 @@ radio.setsol_from_index(0)
 ==
 
 text ==
-{{extracss}}
+
 ==
 
 form ==
