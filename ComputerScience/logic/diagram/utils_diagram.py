@@ -60,7 +60,7 @@ def node_to_string_rec(diagram, nb_op, father):
         name_op = 'not'+str(nb_op)
         ans = name_op+' [label="not" shape=box];\n'
         ans += name_op+' -> '+father+';\n'
-        new_op, str_child += node_to_string_rec(diagram[1], nb_op+1, name_op)
+        new_op, str_child = node_to_string_rec(diagram[1], nb_op+1, name_op)
         return (new_op, ans+str_child)
 
     # case of binary operator
@@ -68,9 +68,9 @@ def node_to_string_rec(diagram, nb_op, father):
         name_op = diagram[0]+str(nb_op)
         ans = name_op+' [label="'+diagram[0]+'" shape=box];\n'
         ans += name_op+' -> '+father+';\n'
-        new_op, str_child_left += node_to_string_rec(diagram[1], nb_op+1, name_op)
+        new_op, str_child_left = node_to_string_rec(diagram[1], nb_op+1, name_op)
         ans += str_child_left
-        new_op, str_child_right += node_to_string_rec(diagram[2], new_op+1, name_op)
+        new_op, str_child_right = node_to_string_rec(diagram[2], new_op+1, name_op)
         ans += str_child_right
         return (new_op, ans)
 
