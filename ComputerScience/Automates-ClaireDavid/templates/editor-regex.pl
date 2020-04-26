@@ -54,8 +54,8 @@ feedback_nomatch = <p class="error-state">L'expression que vous avez donnée ne 
 #* XXX
 feedback_timeout = <p class="warning-state">Vous n'avez pas réussi l'exercice.<br> Relisez votre cours et retentez l'exercice un peu plus tard.</p>
 #XXX* feedback shown for a syntax error. {0} is replaced by the occured error
-feedback_syntax_error = <p class="warning-state">{0}</p>
-#feedback_syntax_error = <p class="warning-state">Erreur de syntaxe </p>
+#feedback_syntax_error = <p class="warning-state">{0}</p>
+feedback_syntax_error = <p class="warning-state">Erreur de syntaxe </p>
 
 #* override this key to change the text shown after a good answer.
 ## XXX
