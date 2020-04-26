@@ -76,7 +76,7 @@ class Generator:
                 if c not in authorized:
                     raise Exception(f"{c} n'est pas un caractère valide dans la syntaxe des expressions rationnelles")
             
-            regex = regex.replace('.', '').replace('+', '|')
+            regex = regex.replace('.', '').replace('+', '|').replace('€','')
 
         return Automaton.parse(regex)
 
@@ -261,6 +261,7 @@ class Generator:
             "rows": rows,
             "transitions": transitions
         }
+
 
 
 
