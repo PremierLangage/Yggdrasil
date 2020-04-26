@@ -32,15 +32,15 @@ Peut-on affirmer que :
 - Il existe $% c\in [a,b] %$ tel que $% f %$  admet un maximum local et tel que $% f'(c) = 0%$
 - Si $% c \in [a,b] %$ et $% f'(c)=0 %$ alors $% f %$ admet un maximum ou minimum local en $% c %$
 - Si $% c \in ]a,b[ %$ et $% f'(c)=0 %$ alors $% f %$ admet un maximum ou minimum local en $% c %$
-+ Si  $% c \in ]a,b[ %$ et $% c %$ est un point de  maximum ou minimum local pour $% f %$ alors  $% f'(c)=0 %$ 
++ Si  $% c \in ]a,b[ %$ est un maximum local ou un minimum local pour $% f %$, alors $% f'(c)=0 %$  
 + Il existe $% c \in ]a,b[ %$ tel que $% f'(c) (b-a) = f(b)-f(a) %$ 
 
-** Parmi les fonctions suivantes, indiquer celles qui satisfont les hypothèses du Théorème de Rolle sur l'intervalle $% [0,1 ] %$,: 
+** Parmi les fonctions suivantes, indiquer celles qui satisfont les hypothèses du Théorème de Rolle sur l'intervalle $% [0,1 ] %$ : 
 - $% f(x)=x %$
 + $% f(x) = (1-x)x %$
 + $% f(x)=\sqrt{(1-x)x} %$
 - $% f(x)=|2x-1| %$
-+ $% f(x)=x^2 %$
+- $% f(x)=x^2 %$
 + $% f(x)= \sin(2020\pi x) %$
 + $% f(x)=e^\pi %$
 - $% f(x)=E(x) %$  ( Ici, $% E(x) %$ est la partie entière de $% x %$ )
