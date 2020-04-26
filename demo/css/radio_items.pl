@@ -23,6 +23,12 @@ evaluator ==
 score = radio.eval()
 ==
 
+style.exercise ==
+.myclass .radio-item2 {
+    padding: 4px 4px 4px 4px !important;
+    background-color: silver;
+}
+==
 
 extracss2 ==
 <style>
@@ -50,3 +56,4 @@ extracss2 ==
 }
 </style>
 ==
+
