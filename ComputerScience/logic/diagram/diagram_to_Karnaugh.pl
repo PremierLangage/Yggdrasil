@@ -40,10 +40,6 @@ form==
  .graph-viewer-component {
  pointer-events: none;
 }
-g{
- height: 50%;
- width: auto;
-}
 </style>
 
 <center>
