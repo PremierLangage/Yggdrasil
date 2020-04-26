@@ -29,11 +29,16 @@ diagram = generate_random_diagram(4, 6)
 viewer = GraphDrawer(graph = diagram_to_string(diagram))
 ==
 
-title = Table de vérité d'un circuit logique
+title=Évaluation de la sortie d'un circuit logique
 
 text==
-Remplir le tableau de Karnaugh donnant la table de vérité du circuit logique suivant :
-<br />
+Quelle est la valeur de la sortie **f** de ce circuit logique lorsque les 
+entrées ont les valeurs suivantes :
+
+* A: todo
+* B: todo
+* C: todo
+* D: todo
 
 ==
 
