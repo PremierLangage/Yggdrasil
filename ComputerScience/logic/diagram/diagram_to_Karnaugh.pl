@@ -46,6 +46,7 @@ form==
 }
 .karnaugh td{
  text-align: center;
+ font-style: blod;
 }
 </style>
 
@@ -55,6 +56,9 @@ form==
 {{ viewer | component }}
 </td><td>&nbsp;&nbsp;&nbsp;</td><td>
 <table class="karnaugh">
+  <tr>
+    <td></td><td colspan="4">AB</td>
+  <tr>
   <tr>
     <td></td><td>00</td><td>01</td><td>11</td><td>10</td>
   </tr>
