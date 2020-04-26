@@ -39,7 +39,7 @@ form==
 <style>
  .graph-viewer-component {
  pointer-events: none;
- #transform: scale(0.75, 0.75);
+ transform: scale(0.75, 0.75);
 }
 </style>
 
