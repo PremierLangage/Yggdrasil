@@ -38,6 +38,7 @@ Remplir le tableau de Karnaugh donnant la table de vérité du circuit logique s
 <br />
 
 {{ str_graph }}
+
 ==
 
 form==
