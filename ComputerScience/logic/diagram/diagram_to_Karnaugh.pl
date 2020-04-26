@@ -20,9 +20,6 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-matrix =: MathMatrix
-matrix.resizable % true
-
 before==#|python|
 from utils_diagram import generate_random_diagram, diagram_to_string
 from components import GraphDrawer
@@ -30,13 +27,6 @@ from components import GraphDrawer
 diagram = generate_random_diagram(4, 6)
 
 viewer = GraphDrawer(graph = diagram_to_string(diagram))
-
-matrix.matrix = [
-    [{ "value": 0 }, { "value": 0 }, { "value": 0 }, { "value": 0 }],
-    [{ "value": 0 }, { "value": 0}, { "value": 0 }, { "value": 0 }],
-    [{ "value": 0 }, { "value": 0}, { "value": 0 }, { "value": 0 }],
-    [{ "value": 0 }, { "value": 0}, { "value": 0 }, { "value": 0 }]
-]
 ==
 
 title=Table de vérité d'un circuit logique
@@ -49,11 +39,28 @@ Remplir le tableau de Karnaugh associé au circuit logique suivant :
 ==
 
 form==
-{{ matrix|component}}
+<table>
+  <td>
+    <td></td><td>00</td><td>01</td><td>11</td><td>10</td>
+  </td>
+  <td>
+    <td>00</td><td></td><td></td><td></td><td></td>
+  </td>
+  <td>
+    <td>01</td><td></td><td></td><td></td><td></td>
+  </td>
+  <td>
+    <td>11</td><td></td><td></td><td></td><td></td>
+  </td>
+  <td>
+    <td>10</td><td></td><td></td><td></td><td></td>
+  </td>
+</table>
 ==
 
 evaluator==
 grade = (100, "")
 ==
+
 
 
