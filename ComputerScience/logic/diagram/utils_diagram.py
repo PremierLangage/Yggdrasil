@@ -26,13 +26,13 @@ def generate_tree(operators, size):
     else:
         op = choice(operators)
         if op == "not":
-            ans = ["not", generate_tree(["et", "ou"], size-1)]
+            ans = ["not", generate_tree(["and", "or"], size-1)]
             return ans
         else:
             size_left = randint(0, size-1)
             size_right = size - (1 + size_left)
-            ans = [op, generate_tree(["et", "ou", "not"], size_left), 
-                       generate_tree(["et", "ou", "not"], size_right)]
+            ans = [op, generate_tree(["and", "or", "not"], size_left), 
+                       generate_tree(["and", "or", "not"], size_right)]
             return ans
 
 
