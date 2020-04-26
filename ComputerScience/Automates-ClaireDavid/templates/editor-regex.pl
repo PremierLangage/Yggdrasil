@@ -66,7 +66,7 @@ form_success== #|html|
 #* override this key to change the instructions at the bottom of the editor.
 form_instructions== #|html|
 <p>
-Syntaxe: ( ), . concaténation, + union, * étoile de Kleene, le symbole € représente ε.<br>
+Syntaxe: ( ), . concaténation, + union, * étoile de Kleene, le symbole € peut être utiliséé à la place de ε.<br>
 <strong>Attention, pas de racourci pour la répétition L⁴ ou L⁺ ne sont pas autorisés.</strong><br>
 Vous pouvez ommettre le symbole de concaténation
 </p>
