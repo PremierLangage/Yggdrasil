@@ -80,7 +80,10 @@ def diagram_to_string(diagram):
     """
     ans = "digraph G {\n"
     ans += "splines=ortho;\n"
+    ans += "f;\n"
 
+    index_op, str_diagram = node_to_string_rec(diagram, 1, "f")
+    ans += str_diagram;
 
     ans += "}\n"
     return ans
