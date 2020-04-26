@@ -4,7 +4,7 @@ title = Changer le style des items
 
 radio =: RadioGroup
 radio.decorator = CustomRadio
-radio.css = myclass
+#radio.css = myclass
 
 before ==
 radio.setitems(["AAA", "BBB", "CCC", "DDD"])
