@@ -39,12 +39,13 @@ form==
 <style>
  .graph-viewer-component {
  pointer-events: none;
+ #transform: scale(0.75, 0.75);
 }
 </style>
 
 <center>
 <table>
-<tr><td style="transform: scale(0.75, 0.75);">
+<tr><td>
 {{ viewer | component }}
 </td><td>&nbsp;&nbsp;&nbsp;</td><td>
 <table style="border: solid black 1px; padding:2px;">
