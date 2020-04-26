@@ -40,7 +40,7 @@ form==
  .graph-viewer-component {
  pointer-events: none;
 }
-.karnaugh>td{
+.karnaugh{
  border: solid black 1px;
  padding: 2px;
 }
@@ -59,7 +59,10 @@ c-graph-drawer{
     <td></td><td>00</td><td>01</td><td>11</td><td>10</td>
   </tr>
   <tr>
-    <td>00</td><td></td><td></td><td></td><td></td>
+    <td>00</td><td class="karnaugh"></td>
+    <td class="karnaugh"></td>
+    <td class="karnaugh"></td>
+    <td class="karnaugh"></td>
   </tr>
   <tr>
     <td>01</td><td></td><td></td><td></td><td></td>
