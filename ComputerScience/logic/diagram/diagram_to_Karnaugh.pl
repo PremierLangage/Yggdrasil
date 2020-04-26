@@ -41,12 +41,13 @@ form==
  pointer-events: none;
 }
 g{
-
+ height: 50%;
+ width: auto;
 }
 </style>
 
 <center>
-<table style="transform: scale(0.75, 0.75);">
+<table>
 <tr><td>
 {{ viewer | component }}
 </td><td>&nbsp;&nbsp;&nbsp;</td><td>
