@@ -87,7 +87,7 @@ def generate_random_diagram(nb_var, nb_gate):
     inputs.
     """
     input_names = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
-    ans = generate_tree(["et", "ou", "not"], nb_gate)
+    ans = generate_tree(["and", "or", "not"], nb_gate)
     label_tree_rec(ans, input_names[0:nb_var], [])
     return ans
 
