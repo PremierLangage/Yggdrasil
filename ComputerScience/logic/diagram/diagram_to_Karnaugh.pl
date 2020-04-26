@@ -20,6 +20,9 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+matrix =: MathMatrix
+matrix.resizable % true
+
 before==#|python|
 from utils_diagram import generate_random_diagram, diagram_to_string
 from components import GraphDrawer
@@ -27,6 +30,14 @@ from components import GraphDrawer
 diagram = generate_random_diagram(4, 6)
 
 viewer = GraphDrawer(graph = diagram_to_string(diagram))
+
+matrix.matrix = [
+    ["", "00", "01", "11", "10"],
+    ["00", { "value": 0 }, { "value": 0 }, { "value": 0 }, { "value": 0 }],
+    ["01",{ "value": 0 }, { "value": 0}, { "value": 0 }, { "value": 0 }],
+    ["11",{ "value": 0 }, { "value": 0}, { "value": 0 }, { "value": 0 }],
+    ["10",{ "value": 0 }, { "value": 0}, { "value": 0 }, { "value": 0 }]
+]
 ==
 
 title=Évaluation de la sortie d'un circuit logique
@@ -40,10 +51,12 @@ entrées ont les valeurs suivantes :
 * C: todo
 * D: todo
 
+{{ viewer | component }}
+
 ==
 
 form==
-{{ viewer | component }}
+{{ matrix|component}}
 ==
 
 evaluator==
