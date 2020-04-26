@@ -47,9 +47,32 @@ def generate_random_diagram(nb_var, nb_gate):
     return ans
 
 
-def node_to_string_rec(diagram, nb):
+def node_to_string_rec(diagram, nb_op, father):
     """
     """
+    # case of a leaf
+    if len(diagram == 1):
+        ans = diagram[0]+' -> '+father+';\n'
+        return (nb_op, ans)
+
+    # case of operator not
+    if len(diagram == 2):
+        name_op = 'not'+str(nb_op)
+        ans = name_op+' [label="not" shape=box];\n'
+        ans += name_op+' -> '+father+';\n'
+        new_op, str_child += node_to_string_rec(diagram[1], nb_op+1, name_op)
+        return (new_op, ans+str_child)
+
+    # case of binary operator
+    if len(diagram == 3):
+        name_op = diagram[0]+str(nb_op)
+        ans = name_op+' [label="'+diagram[0]+'" shape=box];\n'
+        ans += name_op+' -> '+father+';\n'
+        new_op, str_child_left += node_to_string_rec(diagram[1], nb_op+1, name_op)
+        ans += str_child_left
+        new_op, str_child_right += node_to_string_rec(diagram[2], new_op+1, name_op)
+        ans += str_child_right
+        return (new_op, ans)
 
 
 def diagram_to_string(diagram):
@@ -57,6 +80,7 @@ def diagram_to_string(diagram):
     """
     ans = "digraph G {\n"
     ans += "splines=ortho;\n"
+
 
     ans += "}\n"
     return ans
