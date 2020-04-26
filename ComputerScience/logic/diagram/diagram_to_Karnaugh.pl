@@ -24,7 +24,7 @@ before==#|python|
 from utils_diagram import generate_random_diagram, diagram_to_string
 from components import GraphDrawer
 
-diagram = generate_random_diagram(4, 6)
+diagram = generate_random_diagram(4, 5)
 
 viewer = GraphDrawer(graph = diagram_to_string(diagram))
 ==
