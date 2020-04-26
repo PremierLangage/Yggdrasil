@@ -80,7 +80,8 @@ if __name__ == "__main__":
                 del dic[key]
 
     if 'style' in dic:
-        styles = ""
+        styles = "<style> %s <\style>" % " ".join(dic['style'].values())
+        #[v for _, v in reversed(dic['style'].items())]
         dic['extracss'] = styles + dic.get('extracss','')
 
     # HACK for components in lists
