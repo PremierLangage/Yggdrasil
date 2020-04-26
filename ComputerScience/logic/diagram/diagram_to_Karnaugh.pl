@@ -44,8 +44,8 @@ form==
  border: solid black 1px;
  padding: 3px;
 }
-c-graph-drawer{
- transform: scale(0.5);
+.karnaugh>td{
+ text-align: center;
 }
 </style>
 
