@@ -1,5 +1,6 @@
-extends = /model/textselectdecl.pl.
+extends = /model/textselectdecl.pl
 
 textdelaselection ==
 Le petit chat {{est}} mort.
 ==
+
