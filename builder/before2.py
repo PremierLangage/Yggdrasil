@@ -79,6 +79,9 @@ if __name__ == "__main__":
             if key in dic and dic[key] == namespace[key]:
                 del dic[key]
 
+    if 'style' in dic:
+        dic['extracss'] = "\n".join([v for _, v in reversed(dic['style'].items())] + [dic.get('extracss','')])
+
     # custom serialization is applied
     #for key in dic:
         #dic[key]=serialize(dic[key])
@@ -103,3 +106,4 @@ if __name__ == "__main__":
         json.dump(dic, f, cls=CustomEncoder)
 
     sys.exit(0)
+
