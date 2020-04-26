@@ -40,7 +40,7 @@ form==
  .graph-viewer-component {
  pointer-events: none;
 }
-.karnaugh{
+.karnaugh>td{
  border: solid black 1px;
  padding: 2px;
 }
