@@ -57,12 +57,13 @@ form==
 </td><td>&nbsp;&nbsp;&nbsp;</td><td>
 <table class="karnaugh">
   <tr>
-    <td></td><td colspan="4">AB</td>
+    <td></td><td></td><td colspan="4">AB</td>
   <tr>
   <tr>
-    <td></td><td>00</td><td>01</td><td>11</td><td>10</td>
+    <td></td><td></td><td>00</td><td>01</td><td>11</td><td>10</td>
   </tr>
   <tr>
+    <td rowspan="4" valign="middle">CD</td>
     <td>00</td>
     <td class="karnaugh"><input id="form_0000" type="text" value="0" size="1"/></td>
     <td class="karnaugh"><input id="form_0001" type="text" value="0" size="1"/></td>
@@ -70,13 +71,14 @@ form==
     <td class="karnaugh"><input id="form_0010" type="text" value="0" size="1"/></td>
   </tr>
   <tr>
-    <td>01</td><td></td><td></td><td></td><td></td>
+    <td>01</td>
+
   </tr>
   <tr>
-    <td>11</td><td></td><td></td><td></td><td></td>
+    <td>11</td>
   </tr>
   <tr>
-    <td>10</td><td></td><td></td><td></td><td></td>
+    <td>10</td>
   </tr>
 </table>
 
