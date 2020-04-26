@@ -46,7 +46,7 @@ form==
 <table>
 <tr><td>
 {{ viewer | component }}
-</td><td>
+</td><td>&nbsp;</td><td>
 <table style="border: solid black 1px; padding:2px;">
   <tr>
     <td></td><td>00</td><td>01</td><td>11</td><td>10</td>
