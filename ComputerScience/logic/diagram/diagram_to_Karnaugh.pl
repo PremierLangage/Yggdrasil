@@ -42,13 +42,7 @@ matrix.matrix = [
 title=Évaluation de la sortie d'un circuit logique
 
 text==
-Quelle est la valeur de la sortie **f** de ce circuit logique lorsque les 
-entrées ont les valeurs suivantes :
-
-* A: todo
-* B: todo
-* C: todo
-* D: todo
+Remplir le tableau de Karnaugh associé au circuit logique suivant :
 
 {{ viewer | component }}
 
