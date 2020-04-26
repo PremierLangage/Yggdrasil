@@ -36,6 +36,50 @@ def generate_tree(operators, size):
             return ans
 
 
+def random_name(labels, used):
+    """
+    """
+    name = choice(labels)
+    # Case in which all labels have already been used.
+    if len(labels) == len(used):
+        return used, name
+    # Otherwise, we need a new label...
+    while name in used:
+        name = choice(labels)
+    return used+[name], name
+
+
+def label_tree_rec(diagram, labels, used):
+    r"""
+    """
+    # case of internal node not
+    if len(diagram) == 2:
+        if len(diagram[1]) == 0:
+            new_used, name = random_name(labels, used)
+            diagram[1].append(name)
+            return new_used
+        else:
+            new_used = label_tree_rec(diagram[1], labels, used)
+            return new_used
+
+    # case of binary operator
+    if len(diagram) == 3:
+        # left child 
+        if len(diagram[1]) == 0:
+            new_used, name = random_name(labels, used)
+            diagram[1].append(name)
+        else:
+            new_used = label_tree_rec(diagram[1], labels, used)
+        # right child
+        if len(diagram[2]) == 0:
+            new_used, name = random_name(labels, new_used)
+            diagram[2].append(name)
+            return new_used
+        else:
+            new_used = label_tree_rec(diagram[2], labels, new_used)
+            return new_used
+    return used
+
 def generate_random_diagram(nb_var, nb_gate):
     """
     Return a random diagram containing `nb_gate` logical gates. The circuit is 
@@ -44,6 +88,7 @@ def generate_random_diagram(nb_var, nb_gate):
     """
     input_names = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
     ans = generate_tree(["et", "ou", "not"], nb_gate)
+    label_tree_rec(ans, input_name[0:nb_gate], [])
     return ans
 
 
