@@ -72,13 +72,24 @@ form==
   </tr>
   <tr>
     <td> &nbsp; 01 &nbsp; </td>
-
+    <td class="karnaugh"><input id="form_0100" type="text" value="0" size="1"/></td>
+    <td class="karnaugh"><input id="form_0101" type="text" value="0" size="1"/></td>
+    <td class="karnaugh"><input id="form_0111" type="text" value="0" size="1"/></td>
+    <td class="karnaugh"><input id="form_0110" type="text" value="0" size="1"/></td>
   </tr>
   <tr>
     <td> &nbsp; 11 &nbsp; </td>
+    <td class="karnaugh"><input id="form_1100" type="text" value="0" size="1"/></td>
+    <td class="karnaugh"><input id="form_1101" type="text" value="0" size="1"/></td>
+    <td class="karnaugh"><input id="form_1111" type="text" value="0" size="1"/></td>
+    <td class="karnaugh"><input id="form_1110" type="text" value="0" size="1"/></td>
   </tr>
   <tr>
     <td> &nbsp; 10 &nbsp; </td>
+    <td class="karnaugh"><input id="form_1000" type="text" value="0" size="1"/></td>
+    <td class="karnaugh"><input id="form_1001" type="text" value="0" size="1"/></td>
+    <td class="karnaugh"><input id="form_1011" type="text" value="0" size="1"/></td>
+    <td class="karnaugh"><input id="form_1010" type="text" value="0" size="1"/></td>
   </tr>
 </table>
 
