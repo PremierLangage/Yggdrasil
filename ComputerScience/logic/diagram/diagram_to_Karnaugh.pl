@@ -39,10 +39,6 @@ text==
 </style>
 
 Remplir le tableau de Karnaugh associé au circuit logique suivant :
-
-<center>
-{{ viewer | component }}
-</center>
 ==
 
 form==
