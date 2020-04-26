@@ -70,6 +70,7 @@ class Generator:
             () => capture
         :return An instance of Automaton class.
         """
+        ## Ajouter peut-être l'alphabet en param pour la liste des caractères autorisés
         if simple:
             authorized = 'ε€01abcdefghijklmnopqrstuvwxyz.+()*'
             for c in regex:
