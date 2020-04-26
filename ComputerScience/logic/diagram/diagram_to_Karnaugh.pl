@@ -44,7 +44,7 @@ form==
  border: solid black 1px;
  padding: 3px;
 }
-.karnaugh>td{
+.karnaugh.td{
  text-align: center;
 }
 </style>
