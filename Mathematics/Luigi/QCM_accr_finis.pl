@@ -6,7 +6,13 @@ tag=system|shell
 extends=/model/AMC_TXT.pl
 questions==
 
-
+** Parmi les énoncés suivants, lequel correspond au Théorème des accroissements finis ?
++ Soit $% f:[a,b]\rightarrow \mathbb{R} %$ une fonction continue sur $% [a,b] %$, dérivable sur $% ]a,b[ %$. Alors, il existe $% c \in ]a,b[%$ tel que $% f(b)-f(a) = f’(c)(b-a) %$.
+- Soit $% f:[a,b]\rightarrow \mathbb{R} %$ une fonction continue sur $% ]a,b[ %$, dérivable sur $% [a,b] %$. Alors, il existe $% c \in ]a,b[%$ tel que $% f(b)-f(a) = f’(c)(b-a) %$.
+- Soit $% f:[a,b]\rightarrow \mathbb{R} %$ une fonction définie sur $% [a,b] %$, dérivable sur $% ]a,b[ %$. Alors, il existe $% c \in ]a,b[%$ tel que $% f(b)-f(a) = f’(c)(b-a) %$.
+- Soit $% f:[a,b]\rightarrow \mathbb{R} %$ une fonction continue sur $% [a,b] %$, dérivable sur $% ]a,b[ %$. Alors, il existe $% c \in ]a,b[%$ tel que $% f(b)-f(a) = f’(c) %$.
+- Soit $% f:[a,b]\rightarrow \mathbb{R} %$ une fonction continue sur $% [a,b] %$, dérivable sur $% ]a,b[ %$. Alors, pour tout  $% c \in ]a,b[%$ on a  $% f(b)-f(a) = f’(c)(b-a) %$.
+- Soit $% f:[a,b]\rightarrow \mathbb{R} %$ une fonction continue sur $% [a,b] %$, dérivable sur $% ]a,b[ %$. Alors, pour tout  $% c \in ]a,b[%$ on a  $% f'(b)-f'(a) = f(c)(b-a) %$.
 
 
 ** Parmi les fonctions suivantes, indiquer celles qui satisfont les hypothèses du Théorème des accroissements finis sur l'intervalle $% [0,1 ] %$ : 
@@ -65,6 +71,7 @@ On peut affirmer que :
 
 
 ==
+
 
 
 
