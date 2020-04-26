@@ -71,12 +71,12 @@ class Generator:
         :return An instance of Automaton class.
         """
         if simple:
-            authorized = 'Eabcdefghijklmnopqrstuvwxyz.+()*'
+            authorized = '€abcdefghijklmnopqrstuvwxyz.+()*'
             for c in regex:
                 if c not in authorized:
                     raise Exception(f"{c} n'est pas un caractère valide dans la syntaxe des expressions rationnelles")
             
-            regex = regex.replace('.', '').replace('+', '|').replace('E','')
+            regex = regex.replace('.', '').replace('+', '|').replace('€','')
 
         return Automaton.parse(regex)
 
