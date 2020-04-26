@@ -46,6 +46,11 @@ Remplir le tableau de Karnaugh associé au circuit logique suivant :
 ==
 
 form==
+<center>
+<table>
+<tr><td>
+{{ viewer | component }}
+</td><td>
 <table style="border: solid black 1px; padding:2px;">
   <tr>
     <td></td><td>00</td><td>01</td><td>11</td><td>10</td>
@@ -63,6 +68,8 @@ form==
     <td>10</td><td></td><td></td><td></td><td></td>
   </tr>
 </table>
+
+</td></tr></table>
 ==
 
 evaluator==
