@@ -7,7 +7,7 @@ extends=/model/AMC_TXT.pl
 questions==
 
 ** Parmi les énoncés suivants, lequel correspond au Théorème des accroissements finis ?
-+ Soit $% f:[a,b]\rightarrow \mathbb{R} %$ une fonction continue sur $% [a,b] %$, dérivable sur $% ]a,b[ %$. Soit $% M\geq0 %$ tel que pour tout $% x\in ]a,b %$, $% f'(x)\leq M %$. Alors, $% |f(b)-f(a)|\leq M|b-a|%$.
++ Soit $% f:[a,b]\rightarrow \mathbb{R} %$ une fonction continue sur $% [a,b] %$, dérivable sur $% ]a,b[ %$. Alors, il existe $% c \in ]a,b[%$ tel que $% f(b)-f(a) = f’(c)(b-a) %$.
 - Soit $% f:[a,b]\rightarrow \mathbb{R} %$ une fonction continue sur $% ]a,b[ %$, dérivable sur $% [a,b] %$. Alors, il existe $% c \in ]a,b[%$ tel que $% f(b)-f(a) = f’(c)(b-a) %$.
 - Soit $% f:[a,b]\rightarrow \mathbb{R} %$ une fonction définie sur $% [a,b] %$, dérivable sur $% ]a,b[ %$. Alors, il existe $% c \in ]a,b[%$ tel que $% f(b)-f(a) = f’(c)(b-a) %$.
 - Soit $% f:[a,b]\rightarrow \mathbb{R} %$ une fonction continue sur $% [a,b] %$, dérivable sur $% ]a,b[ %$. Alors, il existe $% c \in ]a,b[%$ tel que $% f(b)-f(a) = f’(c) %$.
@@ -26,7 +26,8 @@ questions==
 - $% f(x)=E(x) %$  ( Ici, $% E(x) %$ est la partie entière de $% x %$ )
 
 ** Parmi les énoncés suivants, lequel correspond au Théorème de l'Inégalité des accroissements finis ?
-+ Soit $% f:[a,b]\rightarrow \mathbb{R} %$ une fonction continue sur $% [a,b] %$, dérivable sur $% ]a,b[ %$. Alors, il existe $% c \in ]a,b[%$ tel que $% f(b)-f(a) = f’(c)(b-a) %$.
++ Soit $% f:[a,b]\rightarrow \mathbb{R} %$ une fonction continue sur $% [a,b] %$, dérivable sur $% ]a,b[ %$. Soit $% M\geq0 %$ tel que pour tout $% x\in ]a,b %$, $% f'(x)\leq M %$. Alors, $% |f(b)-f(a)|\leq M|b-a|%$.
+
 
 ** Parmi les fonctions suivantes, indiquer celles qui satisfont les hypothèses de l'inégalité des accroissements finis sur l'intervalle $% [0,1 ] %$,: 
 + $% f(x)=x %$
