@@ -27,8 +27,6 @@ from components import GraphDrawer
 diagram = generate_random_diagram(4, 7)
 
 viewer = GraphDrawer(graph = diagram_to_string(diagram))
-
-#str_graph = diagram_to_string(diagram)
 ==
 
 title = Table de vérité d'un circuit logique
