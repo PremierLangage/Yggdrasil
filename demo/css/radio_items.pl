@@ -23,7 +23,7 @@ evaluator ==
 score = radio.eval()
 ==
 
-style.items ==
+style.radio ==
 .myclass2 .radio-item {
     padding: 4px 4px 4px 4px !important;
     border: 1px solid;
