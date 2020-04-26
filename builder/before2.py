@@ -81,7 +81,7 @@ if __name__ == "__main__":
 
     if 'style' in dic:
         styles = "<style> %s <\style>" % "\n".join([v for _, v in reversed(dic['style'].items())])
-        dic['extracss'] = styles + [dic.get('extracss','')])
+        dic['extracss'] = styles + dic.get('extracss','')
 
     # HACK for components in lists
     aux_component(dic)
