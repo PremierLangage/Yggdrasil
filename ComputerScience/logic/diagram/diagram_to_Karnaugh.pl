@@ -45,7 +45,7 @@ form==
  padding: 2px;
 }
 c-graph-drawer{
- height: 50%;
+ transform: scale(0.75);
 }
 </style>
 
