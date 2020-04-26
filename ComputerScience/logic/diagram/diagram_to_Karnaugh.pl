@@ -42,7 +42,7 @@ form==
 }
 .karnaugh{
  border: solid black 1px;
- padding: 2px;
+ padding: 3px;
 }
 c-graph-drawer{
  transform: scale(0.5);
