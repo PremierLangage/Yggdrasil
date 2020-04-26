@@ -46,7 +46,7 @@ form==
 }
 .karnaugh td{
  text-align: center;
- font-style: blod;
+ font-weight: bold;
 }
 </style>
 
