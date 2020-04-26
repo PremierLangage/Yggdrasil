@@ -64,21 +64,21 @@ form==
   </tr>
   <tr>
     <td rowspan="4" style="vertical-align: middle;"> &nbsp; CD &nbsp; </td>
-    <td>00</td>
+    <td> &nbsp; 00 &nbsp; </td>
     <td class="karnaugh"><input id="form_0000" type="text" value="0" size="1"/></td>
     <td class="karnaugh"><input id="form_0001" type="text" value="0" size="1"/></td>
     <td class="karnaugh"><input id="form_0011" type="text" value="0" size="1"/></td>
     <td class="karnaugh"><input id="form_0010" type="text" value="0" size="1"/></td>
   </tr>
   <tr>
-    <td>01</td>
+    <td> &nbsp; 01 &nbsp; </td>
 
   </tr>
   <tr>
-    <td>11</td>
+    <td> &nbsp; 11 &nbsp; </td>
   </tr>
   <tr>
-    <td>10</td>
+    <td> &nbsp; 10 &nbsp; </td>
   </tr>
 </table>
 
