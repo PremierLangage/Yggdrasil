@@ -67,6 +67,7 @@ form_success== #|html|
 form_instructions== #|html|
 <p>
 Syntaxe: ( ), . concaténation, + union, * étoile de Kleene <br>
+Pour le symbole ε, utilisez le symbole € qui sera plus facile à taper.<br>
 Vous pouvez ommettre le symbole de concaténation
 </p>
 ==
@@ -182,6 +183,7 @@ else:
 
 
 ==
+
 
 
 
