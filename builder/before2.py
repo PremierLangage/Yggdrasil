@@ -80,7 +80,7 @@ if __name__ == "__main__":
                 del dic[key]
 
     if 'style' in dic:
-        styles = "<style> %s </style>" % " ".join(dic['style'].values())
+        styles = "<style> %s </style>" % "\n".join(dic['style'].values())
         #[v for _, v in reversed(dic['style'].items())]
         dic['extracss'] = styles + dic.get('extracss','')
 
