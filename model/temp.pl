@@ -5,7 +5,6 @@
 @ /utils/components/dragdrop.py [customdragdrop.py]
 
 style.basic ==
-<style>
 .icon-check-after p::after {
     font-family: "Font Awesome 5 Free";
     color: #155724;
