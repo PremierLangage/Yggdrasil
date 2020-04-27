@@ -10,7 +10,7 @@ from automaton import Automaton
 editor.debug = False
 editor.editorHeight = "520px"
 
-#viewer est le langage demandé -- le nom est forcé le reste. On changera plus tard
+#viewer est le langage solution -- le nom est forcé le reste. On changera plus tard
 viewer = Automaton.parse('bb*a(b*a)*')
 
 #    l'alphabet
