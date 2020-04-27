@@ -177,7 +177,10 @@ correction_feedback==
 &nbsp; &nbsp;
 </td>
 <td>
-<u><b>Note finale:</b></u> {{ final_grade }} / 100
+<u><b>Note finale:</b></u> {{ final_grade }} / 100 <br />
+{% if final_grade == 100 %}
+  Mais quel talent !
+{% endif %}
 </td>
 </tr>
 </table>
