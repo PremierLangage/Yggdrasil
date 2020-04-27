@@ -153,8 +153,7 @@ correction_feedback==
 evaluator==
 
 
-
-text = correction_feedback
+text += correction_feedback
 
 grade = (100, "&nbsp;")
 ==
