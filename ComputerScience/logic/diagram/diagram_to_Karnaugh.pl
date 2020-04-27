@@ -99,30 +99,43 @@ form==
 ==
 
 k_table_display==
-<center>
 <table class="karnaugh">
   <tr>
-    <td><\td><td><\td><td colspan="4"> &nbsp; AB &nbsp; </td>
+    <td></td><td></td><td colspan="4"> &nbsp; AB &nbsp; </td>
   <tr>
   <tr>
-    <td><\td><td><\td><td>00</td><td>01</td><td>11</td><td>10</td>
+    <td></td><td></td><td>00</td><td>01</td><td>11</td><td>10</td>
   </tr>
-  {% for line in k_table %}
   <tr>
-    {% if loop.index is divisibleby(4) %}
-      <td rowspan="4" style="vertical-align: middle;"> &nbsp; CD &nbsp; </td>
-      <td> &nbsp; 00 &nbsp; </td>
-    {% else %}
-      <td> &nbsp; {{loop.index}}{{loop.index}} &nbsp; </td>
-    {% endif %}
-
-    {% for item in line %}
-        <td class="karnaugh"> &nbsp; {{ item }} &nbsp; </td>
-    {% endfor %}    
+    <td rowspan="4" style="vertical-align: middle;"> &nbsp; CD &nbsp; </td>
+    <td> &nbsp; 00 &nbsp; </td>
+    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
+    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
+    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
+    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
   </tr>
-  {% endfor %}
+  <tr>
+    <td> &nbsp; 01 &nbsp; </td>
+    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
+    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
+    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
+    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
+  </tr>
+  <tr>
+    <td> &nbsp; 11 &nbsp; </td>
+    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
+    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
+    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
+    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
+  </tr>
+  <tr>
+    <td> &nbsp; 10 &nbsp; </td>
+    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
+    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
+    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
+    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
+  </tr>
 </table>
-</center>
 ==
 
 evaluator==
