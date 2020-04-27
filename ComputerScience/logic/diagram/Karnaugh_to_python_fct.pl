@@ -123,8 +123,6 @@ correction_display==
 }
 </style>
 
-{{editor.code}}
-
 <center>
 <table>
 <tr>
@@ -285,7 +283,7 @@ else:
     color0100 = "red"
 
 o0101 = int(Karnaugh(0,1,0,1))
-if Karnaugh(False, True, False, True) == v0101:
+if o0101 == v0101:
     nb_goods += 1
     color_back0101 = "lightgreen"
     color0101 = "green"
@@ -294,7 +292,7 @@ else:
     color0101 = "red"
 
 o0111 = int(Karnaugh(1,1,0,1))
-if Karnaugh(True, True, False, True) == v0111:
+if o0111 == v0111:
     nb_goods += 1
     color_back0111 = "lightgreen"
     color0111 = "green"
@@ -303,7 +301,7 @@ else:
     color0111 = "red"
 
 o0110 = int(Karnaugh(1,0,0,1))
-if Karnaugh(True, False, False, True) == v0110:
+if o0110 == v0110:
     nb_goods += 1
     color_back0110 = "lightgreen"
     color0110 = "green"
@@ -312,7 +310,8 @@ else:
     color0110 = "red"
 
 # third line checks
-if Karnaugh(False, False, True, True) == v1100:
+o1100 = int(Karnaugh(0,0,1,1))
+if o1100 == v1100:
     nb_goods += 1
     color_back1100 = "lightgreen"
     color1100 = "green"
@@ -320,7 +319,8 @@ else:
     color_back1100 = "#f8d7da"
     color1100 = "red"
 
-if Karnaugh(False, True, True, True) == v1101:
+o1101 = int(Karnaugh(0,1,1,1))
+if o1101 == v1101:
     nb_goods += 1
     color_back1101 = "lightgreen"
     color1101 = "green"
@@ -328,7 +328,8 @@ else:
     color_back1101 = "#f8d7da"
     color1101 = "red"
 
-if Karnaugh(True, True, True, True) == v1111:
+o1111 = int(Karnaugh(1,1,1,1))
+if o1111 == v1111:
     nb_goods += 1
     color_back1111 = "lightgreen"
     color1111 = "green"
@@ -336,7 +337,8 @@ else:
     color_back1111 = "#f8d7da"
     color1111 = "red"
 
-if Karnaugh(True, False, True, True) == v1110:
+o1110 = int(Karnaugh(1,0,1,1))
+if o1110 == v1110:
     nb_goods += 1
     color_back1110 = "lightgreen"
     color1110 = "green"
