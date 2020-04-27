@@ -93,6 +93,7 @@ else:
         else :
             score = 0
             grade = (score, feedback_nomini.format(expected_size, len(info_editor["states"])))
+#            grade = (score, feedback_nomini.format(expected_size, len(info_editor["states"])))
     else:
         score = 0
         grade=(score, feedback_nomatch)
