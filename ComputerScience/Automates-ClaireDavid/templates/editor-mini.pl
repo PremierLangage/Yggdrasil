@@ -55,7 +55,7 @@
 
 
 
-# VERSION CORRIGÉ
+# VERSION CORRIGÉE
 
 extends = editor-L2.pl
 
@@ -94,6 +94,7 @@ else:
         score = 0
         grade=(score, feedback_nomatch)
 ==
+
 
 
 
