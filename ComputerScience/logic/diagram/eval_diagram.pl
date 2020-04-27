@@ -21,23 +21,27 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 before==#|python|
-from utils_diagram import generate_random_diagram, diagram_to_string, karnaugh_table
+from utils_diagram import generate_random_diagram, diagram_to_string, eval_diagram
 from components import GraphDrawer
 
-diagram = generate_random_diagram(6, 12)
+size_diagram = 6
+
+diagram = generate_random_diagram(size_diagram, 12)
 
 viewer = GraphDrawer(graph = diagram_to_string(diagram))
+
+input_names = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+
+eval_point = {}
+for i in range(size_diagram):
+    eval_point[input_names[i]] = randint(0,1)
+
+final_value = eval_diagram(diagram, eval_point)
 ==
 
 title=Évaluation d'un circuit logique
 
 text==
-Remplir le tableau de Karnaugh associé au circuit logique suivant. Prenez 
-votre temps et utilisez un stylo et du papier avant de remplir votre 
-proposition.
-==
-
-form==
 <style>
  .graph-viewer-component {
  pointer-events: none;
@@ -51,6 +55,19 @@ form==
  font-weight: bold;
 }
 </style>
+
+Évaluer l'unique sortie **f** de ce circuit logique dont voici les valeurs des 
+variables en entrées :
+{% for k,v in eval_point %}
+ k : v, 
+{% endfor %}
+<center>
+{{ viewer | component }}
+</center>
+==
+
+form==
+
 
 <center>
 {{ viewer | component }}
