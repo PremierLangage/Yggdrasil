@@ -14,7 +14,7 @@ settings.feedback = lightscore
 
 select =: Text
 select.decorator = CustomTextSelect
-slect.typo = subheading1
+select.typo = subheading1
 
 before ==
 import random as rd
