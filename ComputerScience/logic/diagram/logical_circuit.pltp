@@ -19,7 +19,8 @@ title=Quelques circuits logiques
 
 introduction==
 Les exercices suivants portent sur des circuits de portes logiques. Vous devez 
-les conprendre et les transcrire ces cicuits vers d'autres représentations.
+les conprendre et les transcrire ces cicuits vers d'autres représentations. 
+Prenez votre temps car ces exercices ne 
 ==
 
 @ eval_diagram_3.pl
