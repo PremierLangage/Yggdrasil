@@ -213,6 +213,28 @@ if (int(response['0110']) == k_table[1][3]):
 else:
     color_13 = "red"
 
+# third line of karnaugh table
+if (int(response['1100']) == k_table[2][0]):
+    nb_goods += 1
+    color_20 = "green"
+else:
+    color_20 = "red"
+if (int(response['1101']) == k_table[2][1]):
+    nb_goods += 1
+    color_21 = "green"
+else:
+    color_21 = "red"
+if (int(response['1111']) == k_table[2][2]):
+    nb_goods += 1
+    color_22 = "green"
+else:
+    color_22 = "red"
+if (int(response['1110']) == k_table[2][3]):
+    nb_goods += 1
+    color_23 = "green"
+else:
+    color_23 = "red"
+
 text = correction_feedback
 
 final_grade = max(0, int((100*(nb_goods-8))/8) )
