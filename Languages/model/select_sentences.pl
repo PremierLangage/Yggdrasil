@@ -10,6 +10,7 @@ form==
 {{ select|component }}
 ==
 
+settings.feedback = lightscore
 
 select =: Text
 select.decorator = CustomTextSelect
