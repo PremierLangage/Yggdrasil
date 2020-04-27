@@ -39,6 +39,8 @@ viewer = '''
     S5:a>S2
     S5:b>S3
 '''
+
+viewer2 = AutomatonDrawer()
 viewer2.automaton = '''
     #states
     S0
