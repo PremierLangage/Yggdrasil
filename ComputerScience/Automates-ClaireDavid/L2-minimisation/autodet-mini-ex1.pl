@@ -23,7 +23,7 @@ viewer = '''
     S0
     #accepting
     S0
-    S5
+    S2
     #alphabet
     a
     b
@@ -50,7 +50,7 @@ alphabet = "a,b"
 title = Minimisation
 text ==
 
-{{ viewer|component }}
+{{drawer|component }}
 
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez l'automate minimal déterministe complet correspondant àà l'automate ci-dessus. <br>
