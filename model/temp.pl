@@ -48,7 +48,7 @@ style.basic ==
 
 .success-text-unit {
     color: #155724;
-    text-decoration: wavy green;
+    text-decoration: underline wavy green;
 }
 ==
 
