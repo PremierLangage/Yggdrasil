@@ -124,7 +124,7 @@ evaluator==
 C = 0
 D = 0
 
-feedback = k_table_display
+feedback = str(k_table)
 
 grade = (100, feedback)
 ==
