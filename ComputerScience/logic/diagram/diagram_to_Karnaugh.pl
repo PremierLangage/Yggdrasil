@@ -151,6 +151,7 @@ correction_feedback==
 ==
 
 evaluator==
+text = "---> " + str(response['0000']) + "<br /><br />"
 
 
 text += correction_feedback
