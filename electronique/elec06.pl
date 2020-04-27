@@ -19,8 +19,12 @@ text==
 
 On considère le condensateur 
 <center><img src={{ condensateur }} alt='image du condensateur !'  /></center><br />
-# style=\"width:50px;height:100px;\"
+
+![image]({{ condensateur }})
 ==
+
+# style=\"width:50px;height:100px;\"
+
 
 good==
 good
