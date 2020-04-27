@@ -41,7 +41,9 @@ viewer = '''
     S5:a>S2
     S5:b>S3
 '''
-drawer=viewer
+
+drawer = Automaton.drawer()
+
 
 
 #    l'alphabet
