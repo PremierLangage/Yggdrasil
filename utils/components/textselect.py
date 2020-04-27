@@ -74,7 +74,7 @@ class CustomTextSelect(Component):
 
         right = list(set(indexselect).intersection(set(self._sol)))
         wrong = list(set(indexselect).difference(set(self._sol)))
-        missed = list(set(set(self._sol)).intersection(set(indexselect)))
+        missed = list(set(self._sol).intersection(set(indexselect)))
 
         if display:
             self.selections = [{'index': k, 'css': 'success-state'} for k in right]
