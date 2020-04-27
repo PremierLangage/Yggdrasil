@@ -1,4 +1,4 @@
-extends = /models/mathinput.pl
+extends = /model/mathinput.pl
 
 text ==
 Calculer une primitive de la fonction
