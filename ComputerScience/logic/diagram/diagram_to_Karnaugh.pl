@@ -155,7 +155,7 @@ correction_feedback==
 evaluator==
 nb_goods = 0
 
-if (response['0000'] == k_table[0][0]):
+if (int(response['0000']) == k_table[0][0]):
     nb_goods += 1
     color_00 = "green"
 else:
