@@ -94,6 +94,8 @@ evaluator==#|python|
 S = group.selection
 score=0
 
+text=" "
+
 for item in group.items:
     item['css'] = ''
     if item['id'] == S:
