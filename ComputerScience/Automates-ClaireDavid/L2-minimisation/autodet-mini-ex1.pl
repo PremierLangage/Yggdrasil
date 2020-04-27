@@ -46,8 +46,6 @@ viewer = '''
 alphabet = "a,b"
 ==
 
-debug =  True
-
 title = Minimisation
 text ==
 
