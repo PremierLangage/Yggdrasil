@@ -109,12 +109,11 @@ k_table_display==
   </tr>
   {% for line in k_table %}
   <tr>
-
     {% if loop.index is divisibleby(4) %}
-    <td rowspan="4" style="vertical-align: middle;"> &nbsp; CD &nbsp; </td>
-    <td> &nbsp; 00 &nbsp; </td>
+      <td rowspan="4" style="vertical-align: middle;"> &nbsp; CD &nbsp; </td>
+      <td> &nbsp; 00 &nbsp; </td>
     {% else %}
-    <td> &nbsp; 00 &nbsp; </td>
+      <td> &nbsp; {{loop.index}}{{loop.index}} &nbsp; </td>
     {% endif %}
 
     {% for item in line %}
