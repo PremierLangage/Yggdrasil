@@ -120,7 +120,7 @@ evaluator==
 
 text = k_table_display
 
-grade = (100, "")
+grade = (100, "&nbsp;")
 ==
 
 
