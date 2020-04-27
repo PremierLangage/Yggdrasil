@@ -7,9 +7,9 @@ extends = ../templates/editor-mini.pl
 before == #|py|
 # CREATION OF THE AUTOMATON EDITOR
 # THE PROPERTIES OF THE EDITOR CAN BE CHANGED INSIDE 'generate' SCRIPT
-editor = Automaton.editor()
-editor.debug = False
-editor.editorHeight = "500px"
+drawer = Automaton.editor()
+drawer.debug = False
+drawer.editorHeight = "500px"
 
 ==
 
