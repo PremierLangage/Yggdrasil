@@ -11,12 +11,21 @@ form==
 ==
 
 
+sentences ==
+Quand Béfort {{vit}} Pierre au coin, il {{fut}} plus malheureux que lui.
+{{Viens}} avec moi, j’{{ai}} besoin de toi !
+Le chien {{aboya}} et les vaches {{partirent}} dans la bonne direction.
+{{Pars}} vite, {{emmène}} le chien avec toi, il t’{{aidera}} !
+==
+
 txtsel =: Text
 #txtsel.debug % true
 txtsel.decorator = CustomTextSelect
 
 before ==
-txtsel.setdata_from_text("{{Artur}} a {{horreur}} de la marche à pied.")
+import random as rd
+sentence = rd.choice(sentences.splitlines())
+txtsel.setdata_from_text(sentence)
 ==
 
 
