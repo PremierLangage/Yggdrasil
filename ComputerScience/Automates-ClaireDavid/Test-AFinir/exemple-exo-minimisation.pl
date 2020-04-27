@@ -10,7 +10,7 @@ editor.debug = False
 editor.editorHeight = "520px"
 viewer = Automaton.parse('bb*a(b*a)*')
 #viewer = Automaton.parse('(a|b)*')
-info_viewer = viewer.properties()
+info_viewer = Automaton.properties(viewer)
 
 #    l'alphabet
 alphabet = "a,b"
