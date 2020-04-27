@@ -20,22 +20,26 @@ viewer = '''
     S4
     S5
     #initials
-    S00
+    S0
     #accepting
-    S01
-    S10
+    S0
+    S5
     #alphabet
     a
     b
     #transitions
-    S00:a>S10
-    S01:a>S11
-    S10:a>S00
-    S11:a>S01
-    S00:b>S01
-    S01:b>S00
-    S10:b>S11
-    S11:b>S10
+    S0:a>S4
+    S0:b>S1
+    S1:a>S0
+    S1:b>S2
+    S2:a>S5
+    S2:b>S1
+    S3:a>S0
+    S3:b>S4
+    S4:a>S2
+    S4:b>S5
+    S5:a>S2
+    S5:b>S3
 '''
 
 #    l'alphabet
