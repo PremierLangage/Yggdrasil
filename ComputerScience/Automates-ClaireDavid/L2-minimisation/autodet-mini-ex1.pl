@@ -40,9 +40,6 @@ viewer = '''
     S5:b>S3
 '''
 
-viewer = soluce
-viewer2 = soluce
-
 
 #    l'alphabet
 alphabet = "a,b"
