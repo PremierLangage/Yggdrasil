@@ -138,16 +138,16 @@ correction_display==
   <tr>
     <td rowspan="4" style="vertical-align: middle;"> &nbsp; CD &nbsp; </td>
     <td> &nbsp; 00 &nbsp; </td>
-    <td class="karnaugh" style="background-color: light{{color_back0000}}">
+    <td class="karnaugh" style="background-color: {{color_back0000}};">
     &nbsp; &nbsp; <span style="color: {{color0000}}">{{ o0000 }}
     </span> &nbsp; &nbsp; </td>
-    <td class="karnaugh" style="background-color: light{{color_back0001}}">
+    <td class="karnaugh" style="background-color: {{color_back0001}};">
     &nbsp; &nbsp; <span style="color: {{color0001}}">{{ o0001 }}
     </span> &nbsp; &nbsp; </td>
-    <td class="karnaugh" style="background-color: light{{color_back0011}}">
+    <td class="karnaugh" style="background-color: {{color_back0011}};">
     &nbsp; &nbsp; <span style="color: {{color0011}}">{{ o0011 }}
     </span> &nbsp; &nbsp; </td>
-    <td class="karnaugh" style="background-color: light{{color_back0010}}">
+    <td class="karnaugh" style="background-color: {{color_back0010}};">
     &nbsp; &nbsp; <span style="color: {{color0010}}">{{ o0010 }}
     </span> &nbsp; &nbsp; </td>
   </tr>
