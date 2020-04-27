@@ -109,7 +109,7 @@ k_table_display==
   {% for line in k_table %}
   <tr>
     {% for item in line %}
-        <td class="karnaugh">{{ item }}</td>
+        <td class="karnaugh"> &nbsp; {{ item }} &nbsp; </td>
     {% endfor %}    
   </tr>
   {% endfor %}
