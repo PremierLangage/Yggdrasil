@@ -11,7 +11,7 @@ from automaton import Automaton
 editor.debug = False
 editor.editorHeight = "520px"
 
-bla = '''
+viewer = '''
     #states
     S0
     S1
@@ -42,7 +42,6 @@ bla = '''
     S5:b>S3
 '''
 
-viewer=Automaton.parse(bla)
 
 #    l'alphabet
 alphabet = "a,b"
