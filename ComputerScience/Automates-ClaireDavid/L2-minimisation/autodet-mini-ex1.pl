@@ -44,7 +44,6 @@ viewer = '''
 
 #    l'alphabet
 alphabet = "a,b"
-message = 'bb * a(b * a) *'
 ==
 
 debug =  True
@@ -53,7 +52,7 @@ title = Minimisation
 text ==
 
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
-Donnez l'automate minimal déterministe complet correspondant àà l'automate ci-dessus <br>
+Donnez l'automate minimal déterministe complet correspondant àà l'automate ci-dessus. <br>
 {% if attempt < maxattempt and score != 100 %}
 <p class="warning-state">
 Il vous reste {{ maxattempt - attempt }} tentative(s) !
