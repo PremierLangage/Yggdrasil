@@ -111,7 +111,9 @@ correction_feedback==
   <tr>
     <td rowspan="4" style="vertical-align: middle;"> &nbsp; CD &nbsp; </td>
     <td> &nbsp; 00 &nbsp; </td>
-    <td class="karnaugh"> &nbsp; &nbsp; {{ k_table[0][0] }} &nbsp; &nbsp; </td>
+    <td class="karnaugh"> &nbsp; &nbsp; 
+    <span style="color: {{color_00}}">{{ k_table[0][0] }}</span> &nbsp; &nbsp; 
+    </td>
     <td class="karnaugh"> &nbsp; &nbsp; {{ k_table[0][1] }} &nbsp; &nbsp; </td>
     <td class="karnaugh"> &nbsp; &nbsp; {{ k_table[0][2] }} &nbsp; &nbsp; </td>
     <td class="karnaugh"> &nbsp; &nbsp; {{ k_table[0][3] }} &nbsp; &nbsp; </td>
@@ -151,7 +153,14 @@ correction_feedback==
 ==
 
 evaluator==
-text = "---> " + str(response['0000']) + "<br /><br />"
+nb_goods = 0
+
+if (response['0000'] == k_table[0][0]):
+    nb_goods += 1
+    color_00 = "green"
+else:
+    color_00 = "red"
+
 
 
 text += correction_feedback
