@@ -15,8 +15,6 @@ alphabet = "a,b"
 message = 'bb * a(b * a) *'
 ==
 
-debug =  True
-
 title = Minimisation
 text ==
 
