@@ -64,7 +64,10 @@ class CustomTextSelect(Component):
                     lst[i] = s[1:-1]
                 k += 1
         
-        return ("".join(lst), selection)
+        s = "".join(lst)
+        s = s.replace("{", "")
+        s = s.replace("}", "")
+        return (s, selection)
 
     def eval(self, display=True, scoring="RightMinusWrong", disabled=True, custom_scoring=None):
         """
