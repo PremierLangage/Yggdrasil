@@ -43,7 +43,8 @@ viewer = '''
 '''
 
 drawer = Automaton.drawer()
-
+drawer.debug = False
+drawer.editorHeight = "500px"
 
 
 #    l'alphabet
