@@ -112,7 +112,7 @@ form==
 
 evaluator==
 
-editor.code
+text += editor.code
 
 
 grade = (100, "&nbsp;")
