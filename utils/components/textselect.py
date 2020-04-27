@@ -42,7 +42,8 @@ class CustomTextSelect(Component):
             elif s[0] == "{":
                 pass
             else:
-                lst[i] = re.sub(r"(\w+)", r"{\1}", s)
+                #lst[i] = re.sub(r"(\w+)", r"{\1}", s)
+                lst[i] = re.sub(r"(\w+)", r"\1", s)
 
         return "".join(lst)
     
