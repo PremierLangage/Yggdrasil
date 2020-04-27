@@ -162,7 +162,8 @@ def diagram_to_string(diagram):
 
 def eval_diagram(diagram, d):
     """
-
+    Returns the evaluation of the unique output of the diagram when leafs have 
+    for values the content of `d`.
     """
     # evalution of a leaf
     if len(diagram) == 1:
@@ -179,7 +180,23 @@ def eval_diagram(diagram, d):
             return eval_diagram(diagram[1], d)*eval_diagram(diagram[2], d)
         if diagram[0] == "or":
             return max(eval_diagram(diagram[1], d), eval_diagram(diagram[2], d))
-        
 
 
-
+def karnaugh_table(diagram):
+    """
+    Return the karnaugh table as a Python list of list. A and B indexes
+    column from left to right : 00 01 11 10. C and D indexes the rows from 
+    top to bottom : 00 01 11 10
+    """
+    d = {"A": 0, "B": 0, "C": 0, "D": 0}
+    ans = []
+    for i in [0, 1, 3, 2]:
+        vect = []
+        d["C"] = i // 2
+        d["D"] = i % 2
+        for j in [0, 1, 3, 2]:
+            d["A"] = j // 2
+            d["B"] = j % 2
+            vect.append(eval_diagram(diagram, d))
+        ans.append(vect)
+    return ans
