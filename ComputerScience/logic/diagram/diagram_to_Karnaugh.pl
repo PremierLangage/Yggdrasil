@@ -111,7 +111,7 @@ k_table_display==
   <tr>
 
     {% if loop.index is divisibleby(4) %}
-    <td rowspan="4" style="vertical-align: middle;"> &nbsp; CD &nbsp; </td>
+    POUET
     {% endif %}
 
     {% for item in line %}
