@@ -14,6 +14,12 @@ title=signaux
 
 
 condensateur=$ condensateur.png
+rep1=$ rep1.png
+rep2=$ rep2.png
+rep3=$ rep3.png
+rep4=$ rep4.png
+
+
 
 text==
 
@@ -27,11 +33,12 @@ On considère le condensateur
 
 
 good==
-good
+![image]({{ rep1 }})
 ==
 bad==
-bad
-bad
-bad
-
+![image]({{ rep2 }})
+![image]({{ rep2 }})
+![image]({{ rep2 }})
 ==
+
+
