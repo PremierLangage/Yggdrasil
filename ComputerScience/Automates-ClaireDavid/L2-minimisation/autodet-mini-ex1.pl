@@ -5,11 +5,18 @@ extends = ../templates/editor-mini.pl
 
 
 before == #|py|
-# CREATION OF THE AUTOMATON EDITOR
-# THE PROPERTIES OF THE EDITOR CAN BE CHANGED INSIDE 'generate' SCRIPT
-drawer = Automaton.editor()
-drawer.debug = False
-drawer.editorHeight = "500px"
+drawer = AutomatonDrawer(automaton={
+        "alphabet": ["a", "b", "c"],
+        "states": ["S0", "S1", "S2"],
+        "initialStates":["S0"],
+        "acceptingStates": ["S2"],
+        "transitions": [
+            { "fromState": "S0", "toState": "S1", "symbols": ["a"]},
+            { "fromState": "S1", "toState": "S2", "symbols": ["b"]},
+            { "fromState": "S2", "toState": "S2", "symbols": ["a", "b", "c"]}
+        ]
+    })
+    Automaton.parse(editor)
 
 ==
 
