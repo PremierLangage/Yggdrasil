@@ -123,6 +123,8 @@ correction_display==
 }
 </style>
 
+{{editor.code}}
+
 <center>
 <table>
 <tr>
