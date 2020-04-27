@@ -2,6 +2,8 @@
 extends= /model/qcm/qcm.pl
 
 
+uncrosedfalse= True # seul la bonne réponse est compté 
+
 nb % 4 # nombre de proposition 
 nbtrues % 1 # une bonne réponse 
 
@@ -17,4 +19,5 @@ $%y(t)= sin(300t)%$
 
  *Cochez les affirmations correctes.*
 ==
+
 
