@@ -11,7 +11,9 @@ text==
 
 On considère les signaux $%x(t)%$ et $%y(t)%$ définis par 
 
-$%x(t)= 2cos(300t-\pi/4)%$
+$%x(t)= 2cos(300t-\pi/4)%$  et 
+
+$%y(t)= sin(300t)%$  et 
 
  *Cochez les affirmations correctes.*
 ==
