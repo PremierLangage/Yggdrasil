@@ -1,3 +1,4 @@
+
 #*****************************************************************************
 #  Copyright (C) 2020 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
@@ -27,9 +28,9 @@ from utils_diagram import generate_random_diagram, diagram_to_string, eval_diagr
 from components import GraphDrawer
 from random import randint
 
-size_diagram = 3
+size_diagram = 6
 
-diagram = generate_random_diagram(size_diagram, 5)
+diagram = generate_random_diagram(size_diagram, 11)
 
 viewer = GraphDrawer(graph = diagram_to_string(diagram))
 
