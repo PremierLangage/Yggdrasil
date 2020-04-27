@@ -24,21 +24,19 @@ rep4=$ rep4.png
 text==
 
 On considère le condensateur 
-<center><img src={{ condensateur }} alt='image du condensateur !'  /></center><br />
 
 ![image]({{ condensateur }})
 ==
 
-# style=\"width:50px;height:100px;\"
 
 
 good==
-![image]({{ rep1 }})
+<center><img src={{ rep1 }} alt='image du condensateur !'  /></center>
 ==
 bad==
-![image]({{ rep2 }})
-![image]({{ rep2 }})
-![image]({{ rep2 }})
+<center><img src={{ rep2 }} alt='image du condensateur !'  /></center>
+<center><img src={{ rep3 }} alt='image du condensateur !'  /></center>
+<center><img src={{ rep4 }} alt='image du condensateur !'  /></center>
 ==
 
 
