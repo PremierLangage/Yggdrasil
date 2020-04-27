@@ -779,6 +779,7 @@ class Automaton:
             "states": states
         }, None
 
+    #XXX should be a regular method and not call parse again
     @staticmethod
     def properties(obj):
         """
@@ -853,7 +854,7 @@ class Automaton:
             "reachable": len(reachables) == n,
             "coreachable": len(coreachables) == n,
             "states": states
-        }, None
+        }, None  # XXX remove this useless None
 
     # INSTANCE METHODS
     
@@ -1059,6 +1060,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
