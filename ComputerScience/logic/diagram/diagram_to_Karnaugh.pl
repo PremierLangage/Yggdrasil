@@ -34,7 +34,9 @@ k_table = karnaugh_table(diagram)
 title=Table de vérité d'un circuit logique
 
 text==
-Remplir le tableau de Karnaugh associé au circuit logique suivant :
+Remplir le tableau de Karnaugh associé au circuit logique suivant. Prenez 
+votre temps et utilisez un stylo et du papier avant de remplir votre 
+proposition.
 ==
 
 form==
