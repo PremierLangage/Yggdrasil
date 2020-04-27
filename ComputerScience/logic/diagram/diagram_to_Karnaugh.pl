@@ -114,9 +114,15 @@ correction_feedback==
     <td class="karnaugh" style="background-color: light{{color_00}}"> &nbsp; &nbsp; 
     <span style="color: {{color_00}}">{{ k_table[0][0] }}</span> &nbsp; &nbsp; 
     </td>
-    <td class="karnaugh"> &nbsp; &nbsp; {{ k_table[0][1] }} &nbsp; &nbsp; </td>
-    <td class="karnaugh"> &nbsp; &nbsp; {{ k_table[0][2] }} &nbsp; &nbsp; </td>
-    <td class="karnaugh"> &nbsp; &nbsp; {{ k_table[0][3] }} &nbsp; &nbsp; </td>
+    <td class="karnaugh" style="background-color: light{{color_01}}"> &nbsp; &nbsp; 
+    <span style="color: {{color_01}}">{{ k_table[0][1] }}</span> &nbsp; &nbsp; 
+    </td>
+    <td class="karnaugh" style="background-color: light{{color_02}}"> &nbsp; &nbsp; 
+    <span style="color: {{color_02}}">{{ k_table[0][2] }}</span> &nbsp; &nbsp; 
+    </td>
+    <td class="karnaugh" style="background-color: light{{color_03}}"> &nbsp; &nbsp; 
+    <span style="color: {{color_03}}">{{ k_table[0][3] }}</span> &nbsp; &nbsp; 
+    </td>
   </tr>
   <tr>
     <td> &nbsp; 01 &nbsp; </td>
