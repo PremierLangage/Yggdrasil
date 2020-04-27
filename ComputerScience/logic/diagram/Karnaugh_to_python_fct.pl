@@ -168,10 +168,18 @@ correction_display==
   </tr>
   <tr>
     <td> &nbsp; 11 &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; {{ o1100 }} &nbsp; &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; {{ o1101 }} &nbsp; &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; {{ o1111 }} &nbsp; &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; {{ o1110 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh" style="background-color: {{color_back1100}};">
+    &nbsp; &nbsp; <span style="color: {{color1100}}">{{ o1100 }}
+    </span> &nbsp; &nbsp; </td>
+    <td class="karnaugh" style="background-color: {{color_back1101}};">
+    &nbsp; &nbsp; <span style="color: {{color1101}}">{{ o1101 }}
+    </span> &nbsp; &nbsp; </td>
+    <td class="karnaugh" style="background-color: {{color_back1111}};">
+    &nbsp; &nbsp; <span style="color: {{color1111}}">{{ o1111 }}
+    </span> &nbsp; &nbsp; </td>
+    <td class="karnaugh" style="background-color: {{color_back1110}};">
+    &nbsp; &nbsp; <span style="color: {{color1110}}">{{ o1110 }}
+    </span> &nbsp; &nbsp; </td>
   </tr>
   <tr>
     <td> &nbsp; 10 &nbsp; </td>
