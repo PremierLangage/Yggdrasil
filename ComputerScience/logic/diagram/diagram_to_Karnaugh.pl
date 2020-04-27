@@ -122,6 +122,8 @@ D = 0
 
 feedback = str(k_table) + k_table_display
 
+text = k_table_display
+
 grade = (100, feedback)
 ==
 
