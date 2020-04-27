@@ -110,30 +110,30 @@ k_table_display==
     <td rowspan="4" style="vertical-align: middle;"> &nbsp; CD &nbsp; </td>
     <td> &nbsp; 00 &nbsp; </td>
     <td class="karnaugh"> &nbsp; {{ k_table[0][0] }} &nbsp; </td>
-    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
-    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
-    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
+    <td class="karnaugh"> &nbsp; {{ k_table[0][1] }} &nbsp; </td>
+    <td class="karnaugh"> &nbsp; {{ k_table[0][2] }} &nbsp; </td>
+    <td class="karnaugh"> &nbsp; {{ k_table[0][3] }} &nbsp; </td>
   </tr>
   <tr>
     <td> &nbsp; 01 &nbsp; </td>
-    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
-    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
-    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
-    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
+    <td class="karnaugh"> &nbsp; {{ k_table[1][0] }} &nbsp; </td>
+    <td class="karnaugh"> &nbsp; {{ k_table[1][1] }} &nbsp; </td>
+    <td class="karnaugh"> &nbsp; {{ k_table[1][2] }} &nbsp; </td>
+    <td class="karnaugh"> &nbsp; {{ k_table[1][3] }} &nbsp; </td>
   </tr>
   <tr>
     <td> &nbsp; 11 &nbsp; </td>
-    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
-    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
-    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
-    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
+    <td class="karnaugh"> &nbsp; {{ k_table[2][0] }} &nbsp; </td>
+    <td class="karnaugh"> &nbsp; {{ k_table[2][1] }} &nbsp; </td>
+    <td class="karnaugh"> &nbsp; {{ k_table[2][2] }} &nbsp; </td>
+    <td class="karnaugh"> &nbsp; {{ k_table[2][3] }} &nbsp; </td>
   </tr>
   <tr>
     <td> &nbsp; 10 &nbsp; </td>
-    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
-    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
-    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
-    <td class="karnaugh"> &nbsp; 0 &nbsp; </td>
+    <td class="karnaugh"> &nbsp; {{ k_table[3][0] }} &nbsp; </td>
+    <td class="karnaugh"> &nbsp; {{ k_table[3][1] }} &nbsp; </td>
+    <td class="karnaugh"> &nbsp; {{ k_table[3][2] }} &nbsp; </td>
+    <td class="karnaugh"> &nbsp; {{ k_table[3][3] }} &nbsp; </td>
   </tr>
 </table>
 ==
