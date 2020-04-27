@@ -9,7 +9,29 @@ editor.code ==
 # write your code here
 ==
 
-before==
+before==#|python|
+from random import randint
+
+v0000 = randint(0, 1)
+v0001 = randint(0, 1)
+v0011 = randint(0, 1)
+v0010 = randint(0, 1)
+
+v0100 = randint(0, 1)
+v0101 = randint(0, 1)
+v0111 = randint(0, 1)
+v0110 = randint(0, 1)
+
+v1100 = randint(0, 1)
+v1101 = randint(0, 1)
+v1111 = randint(0, 1)
+v1110 = randint(0, 1)
+
+v1000 = randint(0, 1)
+v1001 = randint(0, 1)
+v1011 = randint(0, 1)
+v1010 = randint(0, 1)
+
 
 ==
 
@@ -27,9 +49,15 @@ text==
 }
 </style>
 
-
-
 <center>
+<table>
+<tr>
+<td>
+Écrire une fonction Python à quatre argument A, B, C, D dont les évaluations
+avec les booléans True et False donneront le tableau de Karnaugh qui suit.
+</td>
+<td>&nbsp; &nbsp;</td>
+<td>
 <table class="karnaugh">
   <tr>
     <td></td><td></td><td colspan="4"> &nbsp; AB &nbsp; </td>
@@ -40,7 +68,7 @@ text==
   <tr>
     <td rowspan="4" style="vertical-align: middle;"> &nbsp; CD &nbsp; </td>
     <td> &nbsp; 00 &nbsp; </td>
-    <td class="karnaugh"><input id="form_0000" type="text" value="0" size="1"/></td>
+    <td class="karnaugh">&nbsp; &nbsp; 0 &nbsp; &nbsp; </td>
     <td class="karnaugh"><input id="form_0001" type="text" value="0" size="1"/></td>
     <td class="karnaugh"><input id="form_0011" type="text" value="0" size="1"/></td>
     <td class="karnaugh"><input id="form_0010" type="text" value="0" size="1"/></td>
@@ -66,6 +94,9 @@ text==
     <td class="karnaugh"><input id="form_1011" type="text" value="0" size="1"/></td>
     <td class="karnaugh"><input id="form_1010" type="text" value="0" size="1"/></td>
   </tr>
+</table>
+</td>
+</tr>
 </table>
 </center>
 ==
