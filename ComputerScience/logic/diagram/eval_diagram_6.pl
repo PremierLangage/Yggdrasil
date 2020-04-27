@@ -92,24 +92,20 @@ form==
 
 evaluator==#|python|
 S = group.selection
-score = 0
-feedback = '<span class="error-state animated pulse infinite">Bad answer</span>'
+score=0
 
 for item in group.items:
     item['css'] = ''
-    if item['id'] == "true":
-        if S == R:
+    if item['id'] == S:
+        if item['content'] == str(final_value):
             item['css'] = 'success-border'
             score = 100
             feedback = '<span class="success-state animated pulse infinite">Good answer</span>'
         else:
             item['css'] = 'error-border'
-    elif item['id'] == R:
+    elif item['content'] == str(final_value)::
         item['css'] = 'success-border animated pulse infinite'
 
-
-final_grade = 100
-
-grade = (final_grade, "&nbsp;")
+grade = (score, "&nbsp;")
 ==
 
