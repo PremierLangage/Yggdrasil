@@ -79,6 +79,9 @@ variables en entrées.
 {{ group|component }}
 </td>
 <td>
+&nbsp;
+</td>
+<td>
 {{ viewer | component }}
 </td>
 </tr>
