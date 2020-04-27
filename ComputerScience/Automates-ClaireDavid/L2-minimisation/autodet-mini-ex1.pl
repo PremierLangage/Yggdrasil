@@ -40,19 +40,6 @@ viewer = '''
     S5:b>S3
 '''
 
-viewer =: AutomatonDrawer
-viewer.automaton == AutomatonDrawer(automaton={
-        "alphabet": ["a", "b", "c"],
-        "states": ["S0", "S1", "S2"],
-        "initialStates":["S0"],
-        "acceptingStates": ["S2"],
-        "transitions": [
-            { "fromState": "S0", "toState": "S1", "symbols": ["a"]},
-            { "fromState": "S1", "toState": "S2", "symbols": ["b"]},
-            { "fromState": "S2", "toState": "S2", "symbols": ["a", "b", "c"]}
-        ]
-    })
-
 #    l'alphabet
 alphabet = "a,b"
 ==
