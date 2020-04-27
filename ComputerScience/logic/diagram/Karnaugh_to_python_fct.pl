@@ -228,7 +228,7 @@ exec(editor.code)
 
 
 # fisrt line checks
-o0000 = Karnaugh(0,0,0,0)
+o0000 = int(Karnaugh(0,0,0,0))
 if o0000 == v0000:
     nb_goods += 1
     color_back0000 = "lightgreen"
@@ -237,7 +237,7 @@ else:
     color_back0000 = "#f8d7da"
     color0000 = "red"
 
-o0001 = Karnaugh(0,1,0,0)
+o0001 = int(Karnaugh(0,1,0,0))
 if o0001 == v0001:
     nb_goods += 1
     color_back0001 = "lightgreen"
@@ -246,7 +246,7 @@ else:
     color_back0001 = "#f8d7da"
     color0001 = "red"
 
-o0011 = Karnaugh(1,1,0,0)
+o0011 = int(Karnaugh(1,1,0,0))
 if o0011 == v0011:
     nb_goods += 1
     color_back0011 = "lightgreen"
@@ -255,7 +255,7 @@ else:
     color_back0011 = "#f8d7da"
     color0011 = "red"
 
-o0010 = Karnaugh(1,0,0,0)
+o0010 = int(Karnaugh(1,0,0,0))
 if o0010 == v0010:
     nb_goods += 1
     color_back0010 = "lightgreen"
