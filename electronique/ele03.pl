@@ -1,5 +1,5 @@
 
-extends= elec01.pl
+extends= elec_.pl
 
 
 
