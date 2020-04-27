@@ -22,7 +22,10 @@ def generate_tree(operators, size):
     will modelize a tree with `size` internals nodes. The leafs of the 
     returned tree are empty list (labels come after). An internal node
     containing an operator of arity one (not) will be a list of lenght
-    2 (first element des)
+    2 (first element describing the operator as a string), le second element 
+    being the unique child. A tree rooted at a binary operator will be a 
+    Python list of lenght 3 : the first element describing the operator as 
+    a string then the left child (a nested list) and then the right child.
     """
     ans = []
     if size <= 0:
