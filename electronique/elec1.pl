@@ -5,6 +5,8 @@ extends= /model/qcm/qcm.pl
 nb=4 # nombre de proposition 
 nbtrues= 1 # une bonne réponse 
 
+title=signaux
+
 text==
 
 On considère les signaux $%x(t)%$ et $%y(t)%$ définis par 
@@ -19,7 +21,7 @@ La fréquence du signal est $%1/330%$ Hz
 ==
 
 bad== # les mauvaises réponses une par ligne 
-
-
-
+bad
+bad
+bad
 ==
