@@ -38,7 +38,7 @@ v1010 = randint(0, 1)
 
 ==
 
-title=Une fonction Python pour un tableau.
+title=Une fonction Python pour un tableau de Karnaugh.
 
 text==
 <style>
