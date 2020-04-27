@@ -48,7 +48,7 @@ style.basic ==
 
 .success-text-unit {
     color: #155724;
-    text-decoration: underline green;
+    text-decoration: wavy green;
 }
 ==
 
@@ -129,5 +129,6 @@ extrajs ==
     }
 </script>
 ==
+
 
 
