@@ -1,15 +1,16 @@
 
 extends= /model/qcm/qcm.pl
 
-
+title = Un peu d'aléa.
 
 before==
-
+import random
 Xintensite=2
 Xfrequence=300
-XdecalageS="1/4"
-Xdecalage=0.25
-signalX=f"$%{Xintensite}cos({Xfrequence}t-{XdecalageS}\pi)%$
+l = [("",0,"0°"),("-\pi",-3.14,"X°"),("\pi",3.14,"X°"),("-\pi/2",3.14/2,"X°"),("-\pi/4",3.14/4,"X°")]
+triple=Random.choice(l)
+XdecalageS,Xdecalage,rep = triple
+signalX=f"$%{Xintensite}cos({Xfrequence}t{XdecalageS})%$
 
 Yintensite=1
 Yfrequence=300
@@ -24,10 +25,8 @@ $%x(t)={{signalX}}%$ et $y(t)={{signalY}}%$
 
 Quelle est la phase à l'origine du signal, $%x(t)%$.
 """
-
-good="
-
-
+good=rep
+bad = "\n".join([z for x,y,z in l-triple])
 ==
 
 
