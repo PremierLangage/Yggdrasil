@@ -206,6 +206,37 @@ else:
     color_back0000 = "#f8d7da"
     color0000 = "red"
 
+# foorth line checks
+if Karnaugh(False, False, True, False) == v1000:
+    nb_goods += 1
+    color_back0000 = "lightgreen"
+    color0000 = "green"
+else:
+    color_back0000 = "#f8d7da"
+    color0000 = "red"
+if Karnaugh(False, True, True, False) == v1001:
+    nb_goods += 1
+    color_back0000 = "lightgreen"
+    color0000 = "green"
+else:
+    color_back0000 = "#f8d7da"
+    color0000 = "red"
+if Karnaugh(True, True, True, False) == v1011:
+    nb_goods += 1
+    color_back0000 = "lightgreen"
+    color0000 = "green"
+else:
+    color_back0000 = "#f8d7da"
+    color0000 = "red"
+if Karnaugh(True, False, True, False) == v1010:
+    nb_goods += 1
+    color_back0000 = "lightgreen"
+    color0000 = "green"
+else:
+    color_back0000 = "#f8d7da"
+    color0000 = "red"
+
+
 
 final_grade = max(0, int((100*(nb_goods-8))/8) )
 
