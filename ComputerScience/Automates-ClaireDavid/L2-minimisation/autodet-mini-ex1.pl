@@ -77,7 +77,7 @@ alphabet = "a,b"
 # dans ce qui suit le pb est que le viewer contient l'automate minimisé et non celui de départ
 title = Minimisation
 text ==
-{{ viewer|component }}
+{{ viewer2|component }}
 
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez l'automate minimal déterministe complet correspondant àà l'automate ci-dessus. <br>
