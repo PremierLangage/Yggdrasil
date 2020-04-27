@@ -5,6 +5,7 @@ builder =@ /builder/before.py
 editor =: CodeEditor
 editor.theme = dark
 editor.language = python
+editor.height = 50px
 editor.code ==
 def karnaugh(A, B, C, D):
     # Votre code ici...
