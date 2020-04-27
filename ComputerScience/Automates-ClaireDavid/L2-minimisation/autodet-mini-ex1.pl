@@ -4,6 +4,16 @@
 extends = ../templates/editor-mini.pl
 
 
+before == #|py|
+# CREATION OF THE AUTOMATON EDITOR
+# THE PROPERTIES OF THE EDITOR CAN BE CHANGED INSIDE 'generate' SCRIPT
+editor = Automaton.editor()
+editor.debug = False
+editor.editorHeight = "500px"
+
+==
+
+
 ## Ajouter ici la génération de l'automate et autres variables de l'exo
 generate== #|py|
 from automaton import Automaton
@@ -50,9 +60,6 @@ alphabet = "a,b"
 
 title = Minimisation
 text ==
-
-{{AutomatonDrawer||component }}
-
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez l'automate minimal déterministe complet correspondant àà l'automate ci-dessus. <br>
 {% if attempt < maxattempt and score != 100 %}
