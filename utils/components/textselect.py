@@ -40,7 +40,8 @@ class CustomTextSelect(Component):
             if s[0] == "[":
                 lst[i] = s[1:-1]
             elif s[0] == "{":
-                pass
+                #pass
+                lst[i] = s[1:-1]
             else:
                 #lst[i] = re.sub(r"(\w+)", r"{\1}", s)
                 lst[i] = re.sub(r"(\w+)", r"\1", s)
