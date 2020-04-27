@@ -110,7 +110,7 @@ k_table_display==
   <tr>
     <td rowspan="4" style="vertical-align: middle;"> &nbsp; CD &nbsp; </td>
     <td> &nbsp; 00 &nbsp; </td>
-    <td class="karnaugh"> &nbsp;&nbsp;&nbsp; {{ k_table[0][0] }} &nbsp;&nbsp;&nbsp; </td>
+    <td class="karnaugh"> &nbsp;&nbsp; {{ k_table[0][0] }} &nbsp;&nbsp; </td>
     <td class="karnaugh"> &nbsp; {{ k_table[0][1] }} &nbsp; </td>
     <td class="karnaugh"> &nbsp; {{ k_table[0][2] }} &nbsp; </td>
     <td class="karnaugh"> &nbsp; {{ k_table[0][3] }} &nbsp; </td>
