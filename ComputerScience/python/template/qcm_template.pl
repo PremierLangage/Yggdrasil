@@ -41,7 +41,7 @@ documentation==
     # uncrosedfalse= True uniquement les affirmations 
     # vraies sont comptées
     # sinon les cases non cochées et fausses sont comptabilisées 
-    uncrosedfalse= True 
+    # uncrosedfalse= True 
 
 
     Vous pouvez modifier ces valeur dans la balise 
@@ -68,6 +68,7 @@ grader=@qcm_evaluator.py
 @ /utils/sandboxio.py
 
 settings.allow_reroll=doit
+
 
 
 
