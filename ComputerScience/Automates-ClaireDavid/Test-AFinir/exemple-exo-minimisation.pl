@@ -18,6 +18,7 @@ message = 'bb * a(b * a) *'
 
 #message = '(a+b)*'
 ==
+{{ viewer|component }}
 
 debug =  True
 
