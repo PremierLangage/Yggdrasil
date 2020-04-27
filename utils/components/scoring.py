@@ -1,16 +1,15 @@
 from scipy.stats import kendalltau
 
 _doc_="""
-nbright : bonnes réponses cochées
-nbwrong : mauvaises réponses cochées
-nbsol : nombre de bonnes réponses (à cocher) dans l'exercice
-nbitems : nombre d'items potentiellement cochables dans l'exercice
-
+right : number of items filled in with a right answer
+wrong : number of items filled in with a wrong answer
+items_to_fill : number of items to be filled in
+items_total : total number of items
 """
 
 
-def all_or_nothing(nbright=0, nbwrong=0, nbsol=1, nbitems=1):
-    return 100 if nbright== nbsol else 0
+def all_or_nothing(right, wrong, items_to_fill, items_total=None):
+    return 100 if right == items_to_fill and wrong == 0 else 0
 
 def right_minus_wrong(nbright=0, nbwrong=0, nbsol=1, nbitems=1):
     return int(round(max([(nbright - nbwrong)/nbsol*100,0])))
@@ -26,5 +25,6 @@ def kendall_tau(order):
     n = len(order)
     tau,_ = kendalltau(order, list(range(n)))
     return int(round(max([0,tau])*100))
+
 
 
