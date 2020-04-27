@@ -51,7 +51,7 @@ alphabet = "a,b"
 title = Minimisation
 text ==
 
-{{AutomatonDrawer|component }}
+{{AutomatonDrawer||component }}
 
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez l'automate minimal déterministe complet correspondant àà l'automate ci-dessus. <br>
