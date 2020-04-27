@@ -99,6 +99,7 @@ form==
 ==
 
 k_table_display==
+<center>
 <table class="karnaugh">
   <tr>
     <td></td><td></td><td colspan="4"> &nbsp; AB &nbsp; </td>
@@ -136,6 +137,7 @@ k_table_display==
     <td class="karnaugh"> &nbsp; {{ k_table[3][3] }} &nbsp; </td>
   </tr>
 </table>
+</center>
 ==
 
 evaluator==
