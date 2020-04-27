@@ -13,7 +13,7 @@ On considère les signaux $%x(t)%$ et $%y(t)%$ définis par
 
 $%x(t)= 2cos(300t-\pi/4)%$  et 
 
-$%y(t)= sin(300t)%$  et 
+$%y(t)= sin(300t)%$  
 
  *Cochez les affirmations correctes.*
 ==
@@ -23,7 +23,7 @@ La fréquence du signal est $%1/330%$ Hz
 ==
 
 bad== # les mauvaises réponses une par ligne 
-bad
-bad
-bad
+La fréquence du signal est $%1/330%$ Hz
+La fréquence du signal est $%1/330%$ Hz
+La fréquence du signal est $%1/330%$ Hz
 ==
