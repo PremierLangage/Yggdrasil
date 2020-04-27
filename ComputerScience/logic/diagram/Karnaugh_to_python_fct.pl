@@ -56,9 +56,10 @@ text==
 <table>
 <tr>
 <td width="50%">
-Écrire une fonction Python **Karnaugh** à quatre argument A, B, C, D dont les 
-évaluations sur un quadruplets de booléans True et False donneront le tableau 
-de Karnaugh qui suit (Naturellement 0 est faux et 1 est vrai).
+Écrire une fonction Python **Karnaugh** à quatre arguments **A**, **B**, 
+**C** et **D**, dont les évaluations sur un quadruplets de booléans True 
+et False donneront le tableau de Karnaugh qui suit (Naturellement 0 est 
+faux et 1 est vrai).
 </td>
 <td>&nbsp; &nbsp;</td>
 <td>
