@@ -23,6 +23,7 @@ builder =@ /builder/before.py
 before==#|python|
 from utils_diagram import generate_random_diagram, diagram_to_string, eval_diagram
 from components import GraphDrawer
+from random import randint
 
 size_diagram = 6
 
@@ -58,7 +59,7 @@ text==
 
 Évaluer l'unique sortie **f** de ce circuit logique dont voici les valeurs des 
 variables en entrées :
-{% for k,v in eval_point %}
+{% for k,v in eval_point.items() %}
  k : v, 
 {% endfor %}
 <center>
