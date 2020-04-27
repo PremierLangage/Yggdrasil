@@ -52,7 +52,7 @@ text==
 <center>
 <table>
 <tr>
-<td>
+<td width="50%">
 Écrire une fonction Python à quatre argument A, B, C, D dont les évaluations
 avec les booléans True et False donneront le tableau de Karnaugh qui suit.
 </td>
