@@ -39,7 +39,7 @@ viewer = '''
     S5:a>S2
     S5:b>S3
 '''
-viewer2 = '''
+viewer2.automaton = '''
     #states
     S0
     S1
