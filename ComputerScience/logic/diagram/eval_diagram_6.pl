@@ -79,7 +79,7 @@ variables en entrées.
 {{ group|component }}
 </td>
 <td>
-&nbsp;
+&nbsp; &nbsp;
 </td>
 <td>
 {{ viewer | component }}
