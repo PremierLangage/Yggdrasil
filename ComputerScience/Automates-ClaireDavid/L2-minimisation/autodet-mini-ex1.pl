@@ -41,10 +41,7 @@ soluce = '''
 '''
 
 viewer = soluce
-
-
-#viewer2 =: AutomatonDrawer
-#viewer2.automaton == soluce
+viewer2 = soluce
 
 
 #    l'alphabet
