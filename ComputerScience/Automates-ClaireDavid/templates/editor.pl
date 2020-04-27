@@ -35,9 +35,6 @@ maxattempt = 3
 #*
 generate % null
 
-
-#viewer2 =: AutomatonDrawer
-
 #* feedback shown after a good answer.
 feedback_match = 
 #* feedback shown after a bad answer.
