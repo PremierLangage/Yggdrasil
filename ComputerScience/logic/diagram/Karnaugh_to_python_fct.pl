@@ -355,6 +355,7 @@ else:
     color1110 = "red"
 
 # foorth line checks
+o1000 = int(Karnaugh(0,0,1,0))
 if Karnaugh(False, False, True, False) == v1000:
     nb_goods += 1
     color_back1000 = "lightgreen"
@@ -363,6 +364,7 @@ else:
     color_back1000 = "#f8d7da"
     color1000 = "red"
 
+o1001 = int(Karnaugh(0,1,1,0))
 if Karnaugh(False, True, True, False) == v1001:
     nb_goods += 1
     color_back1001 = "lightgreen"
@@ -371,6 +373,7 @@ else:
     color_back1001 = "#f8d7da"
     color1001 = "red"
 
+o1011 = int(Karnaugh(1,1,1,0))
 if Karnaugh(True, True, True, False) == v1011:
     nb_goods += 1
     color_back1011 = "lightgreen"
@@ -379,6 +382,7 @@ else:
     color_back1011 = "#f8d7da"
     color1011 = "red"
 
+o1010 = int(Karnaugh(1,0,1,0))
 if Karnaugh(True, False, True, False) == v1010:
     nb_goods += 1
     color_back1010 = "lightgreen"
