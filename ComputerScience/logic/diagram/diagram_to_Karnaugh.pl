@@ -158,9 +158,10 @@ correction_feedback==
 </center>
 ==
 
-evaluator==
+evaluator==#|python|
 nb_goods = 0
 
+# first line of karnaugh table
 if (int(response['0000']) == k_table[0][0]):
     nb_goods += 1
     color_00 = "green"
@@ -182,7 +183,27 @@ if (int(response['0010']) == k_table[0][3]):
 else:
     color_03 = "red"
 
-
+# second line of karnaugh table
+if (int(response['0100']) == k_table[1][0]):
+    nb_goods += 1
+    color_10 = "green"
+else:
+    color_10 = "red"
+if (int(response['0101']) == k_table[1][1]):
+    nb_goods += 1
+    color_11 = "green"
+else:
+    color_11 = "red"
+if (int(response['0111']) == k_table[1][2]):
+    nb_goods += 1
+    color_12 = "green"
+else:
+    color_12 = "red"
+if (int(response['0110']) == k_table[1][3]):
+    nb_goods += 1
+    color_13 = "green"
+else:
+    color_13 = "red"
 
 text += correction_feedback
 
