@@ -5,7 +5,7 @@
 extends= /model/qcm/qcm.pl
 
 
-
+uncrosedfalse= True
 
 nb % 4 # nombre de proposition 
 nbtrues % 1 # une bonne réponse 
