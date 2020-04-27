@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathbasic.pl
+extends = /model/mathbasic.pl
 
 title = Table de vérité
 
@@ -68,3 +68,4 @@ for i in range(len(drop)):
         score=0
         drop[i].css = "error-state" 
 ==
+
