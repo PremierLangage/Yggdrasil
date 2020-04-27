@@ -138,31 +138,39 @@ correction_display==
   <tr>
     <td rowspan="4" style="vertical-align: middle;"> &nbsp; CD &nbsp; </td>
     <td> &nbsp; 00 &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; {{ v0000 }} &nbsp; &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; {{ v0001 }} &nbsp; &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; {{ v0011 }} &nbsp; &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; {{ v0010 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh" style="background-color: light{{color_back0000}}">
+    &nbsp; &nbsp; <span style="color: {{color0000}}">{{ o0000 }}
+    </span> &nbsp; &nbsp; </td>
+    <td class="karnaugh" style="background-color: light{{color_back0001}}">
+    &nbsp; &nbsp; <span style="color: {{color0001}}">{{ o0001 }}
+    </span> &nbsp; &nbsp; </td>
+    <td class="karnaugh" style="background-color: light{{color_back0011}}">
+    &nbsp; &nbsp; <span style="color: {{color0011}}">{{ o0011 }}
+    </span> &nbsp; &nbsp; </td>
+    <td class="karnaugh" style="background-color: light{{color_back0010}}">
+    &nbsp; &nbsp; <span style="color: {{color0010}}">{{ o0010 }}
+    </span> &nbsp; &nbsp; </td>
   </tr>
   <tr>
     <td> &nbsp; 01 &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; {{ v0100 }} &nbsp; &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; {{ v0101 }} &nbsp; &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; {{ v0111 }} &nbsp; &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; {{ v0110 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ o0100 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ o0101 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ o0111 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ o0110 }} &nbsp; &nbsp; </td>
   </tr>
   <tr>
     <td> &nbsp; 11 &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; {{ v1100 }} &nbsp; &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; {{ v1101 }} &nbsp; &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; {{ v1111 }} &nbsp; &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; {{ v1110 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ o1100 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ o1101 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ o1111 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ o1110 }} &nbsp; &nbsp; </td>
   </tr>
   <tr>
     <td> &nbsp; 10 &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; {{ v1000 }} &nbsp; &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; {{ v1001 }} &nbsp; &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; {{ v1011 }} &nbsp; &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; {{ v1010 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ o1000 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ o1001 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ o1011 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ o1010 }} &nbsp; &nbsp; </td>
   </tr>
 </table>
 
