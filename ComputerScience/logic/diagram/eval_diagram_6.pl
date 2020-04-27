@@ -30,7 +30,7 @@ from random import randint
 
 size_diagram = 6
 
-diagram = generate_random_diagram(size_diagram, 11)
+diagram = generate_random_diagram(size_diagram, 10)
 
 viewer = GraphDrawer(graph = diagram_to_string(diagram))
 
