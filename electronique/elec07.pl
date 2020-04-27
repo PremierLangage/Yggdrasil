@@ -17,3 +17,17 @@ YdecalageS=""
 Ydecalage=0
 signalY=f"$%{Yintensite}cos({Yfrequence}t-{YdecalageS}\pi)%$
 
+text="""
+Soit les signaux $%x(t)%$ et $y(t)%$ définis par :
+
+$%x(t)={{signalX}}%$ et $y(t)={{signalY}}%$
+
+Quelle est la phase à l'origine du signal, $%x(t)%$.
+"""
+
+good="
+
+
+==
+
+
