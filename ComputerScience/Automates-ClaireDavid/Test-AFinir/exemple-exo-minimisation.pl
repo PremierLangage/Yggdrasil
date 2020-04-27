@@ -13,6 +13,9 @@ viewer = Automaton.parse('bb*a(b*a)*')
 alphabet = "a,b"
 message = 'bb * a(b * a) *'
 
+
+editor.debug = False
+editor.editorHeight = "520px"
 #message = '(a+b)*'
 ==
 
