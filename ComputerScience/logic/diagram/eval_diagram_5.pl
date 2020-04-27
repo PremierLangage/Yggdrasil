@@ -52,7 +52,7 @@ group.items.append({
 })
 ==
 
-title=Évaluation d'un circuit logique de grande taille
+title=Évaluation d'un circuit logique
 
 text==
 <style>
