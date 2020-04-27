@@ -159,7 +159,7 @@ correction_feedback==
 &nbsp; &nbsp;
 </td>
 <td>
-<u><b>Note finale:</b></u> 100
+<u><b>Note finale:</b></u> {{ final_grade }} / 100
 </td>
 </tr>
 </table>
@@ -213,9 +213,11 @@ if (int(response['0110']) == k_table[1][3]):
 else:
     color_13 = "red"
 
-text += correction_feedback
+text = correction_feedback
 
-grade = (max(0, int((100*(nb_goods-8))/8) ), "&nbsp;")
+final_grade = max(0, int((100*(nb_goods-8))/8) )
+
+grade = (final_grade, "&nbsp;")
 ==
 
 
