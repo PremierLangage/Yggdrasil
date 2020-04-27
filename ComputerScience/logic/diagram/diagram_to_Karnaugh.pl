@@ -99,6 +99,7 @@ form==
 ==
 
 k_table_display==
+<center>
 <table class="karnaugh">
   <tr>
     <td colspan="4"> &nbsp; AB &nbsp; </td>
@@ -108,12 +109,14 @@ k_table_display==
   </tr>
   {% for line in k_table %}
   <tr>
+    <td rowspan="4" style="vertical-align: middle;"> &nbsp; CD &nbsp; </td>
     {% for item in line %}
         <td class="karnaugh"> &nbsp; {{ item }} &nbsp; </td>
     {% endfor %}    
   </tr>
   {% endfor %}
 </table>
+</center>
 ==
 
 evaluator==
