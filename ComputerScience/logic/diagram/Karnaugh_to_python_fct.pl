@@ -110,6 +110,109 @@ form==
 {{ editor|component }}
 ==
 
+
+correction_display==
+<style>
+.karnaugh{
+ border: solid black 1px;
+ padding: 3px;
+}
+.karnaugh td{
+ text-align: center;
+ font-weight: bold;
+}
+</style>
+
+<center>
+<table>
+<tr>
+<td width="50%">
+
+<table class="karnaugh">
+  <tr>
+    <td></td><td></td><td colspan="4"> &nbsp; AB &nbsp; </td>
+  <tr>
+  <tr>
+    <td></td><td></td><td>00</td><td>01</td><td>11</td><td>10</td>
+  </tr>
+  <tr>
+    <td rowspan="4" style="vertical-align: middle;"> &nbsp; CD &nbsp; </td>
+    <td> &nbsp; 00 &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0000 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0001 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0011 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0010 }} &nbsp; &nbsp; </td>
+  </tr>
+  <tr>
+    <td> &nbsp; 01 &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0100 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0101 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0111 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0110 }} &nbsp; &nbsp; </td>
+  </tr>
+  <tr>
+    <td> &nbsp; 11 &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1100 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1101 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1111 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1110 }} &nbsp; &nbsp; </td>
+  </tr>
+  <tr>
+    <td> &nbsp; 10 &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1000 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1001 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1011 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1010 }} &nbsp; &nbsp; </td>
+  </tr>
+</table>
+
+</td>
+<td>&nbsp; &nbsp;</td>
+<td>
+<table class="karnaugh">
+  <tr>
+    <td></td><td></td><td colspan="4"> &nbsp; AB &nbsp; </td>
+  <tr>
+  <tr>
+    <td></td><td></td><td>00</td><td>01</td><td>11</td><td>10</td>
+  </tr>
+  <tr>
+    <td rowspan="4" style="vertical-align: middle;"> &nbsp; CD &nbsp; </td>
+    <td> &nbsp; 00 &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0000 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0001 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0011 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0010 }} &nbsp; &nbsp; </td>
+  </tr>
+  <tr>
+    <td> &nbsp; 01 &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0100 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0101 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0111 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0110 }} &nbsp; &nbsp; </td>
+  </tr>
+  <tr>
+    <td> &nbsp; 11 &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1100 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1101 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1111 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1110 }} &nbsp; &nbsp; </td>
+  </tr>
+  <tr>
+    <td> &nbsp; 10 &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1000 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1001 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1011 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1010 }} &nbsp; &nbsp; </td>
+  </tr>
+</table>
+</td>
+</tr>
+</table>
+</center>
+==
+
+
 evaluator==#|python|
 nb_goods = 0
 # Beurk, this will load the student function...
@@ -117,7 +220,8 @@ exec(editor.code)
 
 
 # fisrt line checks
-if Karnaugh(False, False, False, False) == v0000:
+o0000 = Karnaugh(0,0,0,0)
+if o0000 == v0000:
     nb_goods += 1
     color_back0000 = "lightgreen"
     color0000 = "green"
@@ -125,7 +229,8 @@ else:
     color_back0000 = "#f8d7da"
     color0000 = "red"
 
-if Karnaugh(False, True, False, False) == v0001:
+o0001 = Karnaugh(0,1,0,0)
+if o0001 == v0001:
     nb_goods += 1
     color_back0001 = "lightgreen"
     color0001 = "green"
@@ -133,7 +238,8 @@ else:
     color_back0001 = "#f8d7da"
     color0001 = "red"
 
-if Karnaugh(True, True, False, False) == v0011:
+o0011 = Karnaugh(1,1,0,0)
+if o0011 == v0011:
     nb_goods += 1
     color_back0011 = "lightgreen"
     color0011 = "green"
@@ -141,7 +247,8 @@ else:
     color_back0011 = "#f8d7da"
     color0011 = "red"
 
-if Karnaugh(True, False, False, False) == v0010:
+o0010 = Karnaugh(1,0,0,0)
+if o0010 == v0010:
     nb_goods += 1
     color_back0010 = "lightgreen"
     color0010 = "green"
