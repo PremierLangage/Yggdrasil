@@ -101,17 +101,13 @@ form==
 k_table_display==
 <table class="karnaugh">
   <tr>
-    <td></td><td></td><td colspan="4"> &nbsp; AB &nbsp; </td>
+    <td colspan="4"> &nbsp; AB &nbsp; </td>
   <tr>
   <tr>
-    <td></td><td></td><td>00</td><td>01</td><td>11</td><td>10</td>
+    <td>00</td><td>01</td><td>11</td><td>10</td>
   </tr>
-  <tr>
-    <td rowspan="4" style="vertical-align: middle;"> &nbsp; CD &nbsp; </td>
-    <td> &nbsp; 00 &nbsp; </td>
   {% for line in k_table %}
   <tr>
-    <td> &nbsp; {{ C }}{{ D }} &nbsp; </td>
     {% for item in line %}
         <td class="karnaugh">{{ item }}</td>
     {% endfor %}    
