@@ -16,6 +16,8 @@ message = 'bb * a(b * a) *'
 #message = '(a+b)*'
 ==
 
+debug =  True
+
 title = Minimisation
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
