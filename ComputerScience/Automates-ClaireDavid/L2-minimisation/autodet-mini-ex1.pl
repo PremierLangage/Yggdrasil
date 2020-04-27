@@ -42,9 +42,6 @@ viewer = '''
     S5:b>S3
 '''
 
-drawer = Automaton.drawer()
-drawer.debug = False
-drawer.editorHeight = "500px"
 
 
 #    l'alphabet
@@ -54,7 +51,7 @@ alphabet = "a,b"
 title = Minimisation
 text ==
 
-{{drawer|component }}
+{{AutomatonDrawer|component }}
 
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez l'automate minimal déterministe complet correspondant àà l'automate ci-dessus. <br>
