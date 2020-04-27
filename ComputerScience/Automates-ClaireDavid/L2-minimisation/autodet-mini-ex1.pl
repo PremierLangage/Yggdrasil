@@ -16,7 +16,6 @@ drawer = AutomatonDrawer(automaton={
             { "fromState": "S2", "toState": "S2", "symbols": ["a", "b", "c"]}
         ]
     })
-    Automaton.parse(drawer)
 
 ==
 
@@ -24,9 +23,6 @@ drawer = AutomatonDrawer(automaton={
 ## Ajouter ici la génération de l'automate et autres variables de l'exo
 generate== #|py|
 from automaton import Automaton
-
-editor.debug = False
-editor.editorHeight = "520px"
 
 viewer = '''
     #states
