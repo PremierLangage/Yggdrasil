@@ -98,8 +98,9 @@ form==
 </td></tr></table>
 ==
 
-k_table_display==
+correction_feedback==
 <center>
+<table><tr><td>
 <table class="karnaugh">
   <tr>
     <td></td><td></td><td colspan="4"> &nbsp; AB &nbsp; </td>
@@ -137,12 +138,18 @@ k_table_display==
     <td class="karnaugh"> &nbsp; {{ k_table[3][3] }} &nbsp; </td>
   </tr>
 </table>
+</td>
+<td>
+<u><b>Note finale:</b></u> 100
+</td>
+</tr>
+</table>
 </center>
 ==
 
 evaluator==
 
-text = k_table_display
+text = correction_feedback
 
 grade = (100, "&nbsp;")
 ==
