@@ -26,6 +26,9 @@ def generate_tree(operators, size):
     being the unique child. A tree rooted at a binary operator will be a 
     Python list of lenght 3 : the first element describing the operator as 
     a string then the left child (a nested list) and then the right child.
+
+    >>> #TODO
+    ...
     """
     ans = []
     if size <= 0:
@@ -45,6 +48,9 @@ def generate_tree(operators, size):
 
 def random_name(labels, used):
     """
+
+    >>> #TODO
+    ...
     """
     name = choice(labels)
     # Case in which all labels have already been used.
@@ -57,7 +63,10 @@ def random_name(labels, used):
 
 
 def label_tree_rec(diagram, labels, used):
-    r"""
+    """
+
+    >>> #TODO
+    ...
     """
     # case of internal node not
     if len(diagram) == 2:
@@ -87,11 +96,15 @@ def label_tree_rec(diagram, labels, used):
             return new_used
     return used
 
+
 def generate_random_diagram(nb_var, nb_gate):
     """
     Return a random diagram containing `nb_gate` logical gates. The circuit is 
     connected and has a single output. The circuit has `nb_var` different 
     inputs.
+
+    >>> #TODO
+    ...
     """
     input_names = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
     ans = generate_tree(["and", "or", "not"], nb_gate)
@@ -101,6 +114,9 @@ def generate_random_diagram(nb_var, nb_gate):
 
 def node_to_string_rec(diagram, nb_op, father):
     """
+
+    >>> #TODO
+    ...
     """
     # case of a leaf
     if len(diagram) == 1:
@@ -129,6 +145,9 @@ def node_to_string_rec(diagram, nb_op, father):
 
 def diagram_to_string(diagram):
     """
+
+    >>> #TODO
+    ...
     """
     ans = "digraph G {\n"
     ans += "splines=ortho;\n"
@@ -139,4 +158,28 @@ def diagram_to_string(diagram):
 
     ans += "}\n"
     return ans
+
+
+def eval_diagram(diagram, d):
+    """
+
+    """
+    # evalution of a leaf
+    if len(diagram) == 1:
+        return d[diagram[0]]
+    
+    # case of unary operator
+    if len(diagram) == 2:
+        if diagram[0] == "not":
+            return 1 - eval_diagram(diagram[1], d)
+
+    # case of binary operator
+    if len(diagram) == 3:
+        if diagram[0] == "and":
+            return eval_diagram(diagram[1], d)*eval_diagram(diagram[2], d)
+        if diagram[0] == "or":
+            return max(eval_diagram(diagram[1], d), eval_diagram(diagram[2], d))
+        
+
+
 
