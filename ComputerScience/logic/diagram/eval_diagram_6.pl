@@ -53,7 +53,7 @@ group.items.append({
 })
 ==
 
-title=Évaluation d'un gros circuit logique
+title=Évaluation d'un grand circuit logique
 
 text==
 <style>
