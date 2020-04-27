@@ -19,11 +19,11 @@ $%y(t)= sin(300t)%$
 ==
 
 good== # les bonnes réponses une par ligne 
-La fréquence du signal est $%1/330%$ Hz
+La fréquence du signal est $%good%$ Hz
 ==
 
 bad== # les mauvaises réponses une par ligne 
-La fréquence du signal est $%1/330%$ Hz
-La fréquence du signal est $%1/330%$ Hz
-La fréquence du signal est $%1/330%$ Hz
+La fréquence du signal est $% bad %$ Hz
+La fréquence du signal est $% worst %$ Hz
+La fréquence du signal est $% nil %$ Hz
 ==
