@@ -31,6 +31,9 @@ viewer = '''
 '''
 
 
+editor.debug = False
+editor.editorHeight = "520px"
+
 #    l'alphabet
 alphabet = "a,b"
 
@@ -49,6 +52,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
