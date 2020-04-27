@@ -78,7 +78,7 @@ class CustomTextSelect(Component):
 
         if display:
             self.selections = [{'index': k, 'css': 'success-state'} for k in right]
-            self.selections += [{'index': k, 'css': 'error-state'} for k in wrong]
+            self.selections += [{'index': k, 'css': 'error-state icon-times-after'} for k in wrong]
             self.selections += [{'index': k, 'css': 'success-text-unit'} for k in missed]
                           
         if scoring == "AllOrNothing":
