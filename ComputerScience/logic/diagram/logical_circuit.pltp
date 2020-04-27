@@ -19,8 +19,9 @@ title=Quelques circuits logiques
 
 introduction==
 Les exercices suivants portent sur des circuits de portes logiques. Vous devez 
-conprendre et transcrire ces cicuits vers d'autres représentations.
+les conprendre et les transcrire ces cicuits vers d'autres représentations.
 ==
+
 
 @ Karnaugh_to_python_fct.pl
 @ Karnaugh_to_python_fct.pl
