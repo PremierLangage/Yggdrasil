@@ -1,5 +1,7 @@
 extends = /Languages/model/select_sentences.pl
 
+title = Repérage de verbes
+
 text ==
 Sélectionner le ou les verbes conjugués la phrase ci-dessous.
 ==
