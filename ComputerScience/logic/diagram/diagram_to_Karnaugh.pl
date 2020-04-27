@@ -141,10 +141,18 @@ correction_feedback==
   </tr>
   <tr>
     <td> &nbsp; 11 &nbsp; </td>
-    <td class="karnaugh"> &nbsp;&nbsp; {{ k_table[2][0] }} &nbsp;&nbsp; </td>
-    <td class="karnaugh"> &nbsp; {{ k_table[2][1] }} &nbsp; </td>
-    <td class="karnaugh"> &nbsp; {{ k_table[2][2] }} &nbsp; </td>
-    <td class="karnaugh"> &nbsp; {{ k_table[2][3] }} &nbsp; </td>
+    <td class="karnaugh" style="background-color: light{{color_20}}"> &nbsp; &nbsp; 
+    <span style="color: {{color_20}}">{{ k_table[2][0] }}</span> &nbsp; &nbsp; 
+    </td>
+    <td class="karnaugh" style="background-color: light{{color_21}}"> &nbsp; &nbsp; 
+    <span style="color: {{color_21}}">{{ k_table[2][1] }}</span> &nbsp; &nbsp; 
+    </td>
+    <td class="karnaugh" style="background-color: light{{color_22}}"> &nbsp; &nbsp; 
+    <span style="color: {{color_22}}">{{ k_table[2][2] }}</span> &nbsp; &nbsp; 
+    </td>
+    <td class="karnaugh" style="background-color: light{{color_23}}"> &nbsp; &nbsp; 
+    <span style="color: {{color_23}}">{{ k_table[2][3] }}</span> &nbsp; &nbsp; 
+    </td>
   </tr>
   <tr>
     <td> &nbsp; 10 &nbsp; </td>
