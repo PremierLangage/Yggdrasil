@@ -73,7 +73,16 @@ text==
 variables en entrées.   
 {% for k,v in eval_point.items() %} <b>{{k}}</b> : <b>{{v}}</b>, {% endfor %}
 <center>
+<table>
+<tr>
+<td>
+{{ group|component }}
+</td>
+<td>
 {{ viewer | component }}
+</td>
+</tr>
+</table>
 </center>
 ==
 
