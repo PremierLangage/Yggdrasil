@@ -40,8 +40,11 @@ enonce = '''
     S5:b>S4
 '''
 
+#viewer est le langage solution -- le nom est forcé le reste. On changera plus tard
 viewer = enonce
 
+
+#viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
 viewer_enonce = AutomatonDrawer()
 viewer_enonce.automaton = enonce
 
