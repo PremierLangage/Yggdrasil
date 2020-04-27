@@ -70,24 +70,23 @@ class CustomTextSelect(Component):
         """
         Evaluate the answer stored in the component.
         """
-        nbright, nbwrong = 0, 0
+        indexselect = [unit['index'] for unit in self.selections]
 
-        for unit in self.selections:
-            if unit['index'] in self._sol:
-                nbright += 1
-                if display:
-                    unit['css'] = 'success-text-unit'
-            else:
-                nbwrong += 1
-                if display:
-                    unit['css'] = 'error-text-unit'
+        right = list(set(indexselect).intersection(set(self._sol)))
+        wrong = list(set(indexselect).difference(set(self._sol)))
+        missed = list(set(set(self._sol)).intersection(set(indexselect)))
+
+        if display:
+            self.selections = [{'index': k, 'css': 'success-state'} for k in right]
+            self.selections += [{'index': k, 'css': 'error-state'} for k in wrong]
+            self.selections += [{'index': k, 'css': 'missed-state'} for k in missed]
                           
         if scoring == "AllOrNothing":
-            score = all_or_nothing(nbright, nbwrong)
+            score = all_or_nothing(len(right), len(wrong))
         elif scoring == "RightMinusWrong":
-            score = right_minus_wrong(nbright, nbwrong, nbsol=len(self._sol))          
-        elif scoring == "CorrectItems":
-            score = correct_items(nbright, nbwrong, nbitems=len(self.items))
+            score = right_minus_wrong(len(right), len(wrong), nbsol=len(self._sol))          
+        #elif scoring == "CorrectItems":
+        #    score = correct_items(nbright, nbwrong, nbitems=len(self.items))
         elif scoring == "Custom":
             score = custom_scoring(nbright, nbwrong, nbsol=len(self._sol), nbitems=len(self.items))
         else:
@@ -140,6 +139,7 @@ class CustomTextSelect(Component):
         self.disabled = True
 
         return (score, "")
+
 
 
 
