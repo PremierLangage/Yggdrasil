@@ -140,6 +140,9 @@ correction_feedback==
 </table>
 </td>
 <td>
+&nbsp; &nbsp;
+</td>
+<td>
 <u><b>Note finale:</b></u> 100
 </td>
 </tr>
