@@ -2,7 +2,7 @@
 extends= elec_.pl
 
 
-mybuild==
+before==
 
 text +="""   
 
