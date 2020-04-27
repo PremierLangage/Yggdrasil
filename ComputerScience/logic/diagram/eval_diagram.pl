@@ -35,7 +35,7 @@ input_names = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
 
 eval_point = {}
 for i in range(size_diagram):
-    eval_point[input_names[i]] = randint(0,1)
+    eval_point[input_names[i]] = True if randint(0,1) else False
 
 final_value = eval_diagram(diagram, eval_point)
 ==
@@ -69,10 +69,6 @@ variables en entrées :
 
 form==
 
-
-<center>
-{{ viewer | component }}
-</center>
 ==
 
 evaluator==#|python|
