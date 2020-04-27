@@ -195,11 +195,6 @@ correction_display==
     <td class="karnaugh" style="background-color: {{color_back1010}};">
     &nbsp; &nbsp; <span style="color: {{color1010}}">{{ o1010 }}
     </span> &nbsp; &nbsp; </td>
-
-    <td class="karnaugh">&nbsp; &nbsp; {{ o1000 }} &nbsp; &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; {{ o1001 }} &nbsp; &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; {{ o1011 }} &nbsp; &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; {{ o1010 }} &nbsp; &nbsp; </td>
   </tr>
 </table>
 
