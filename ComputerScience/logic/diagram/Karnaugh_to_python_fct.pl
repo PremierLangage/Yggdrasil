@@ -124,6 +124,7 @@ if Karnaugh(False, False, False, False) == v0000:
 else:
     color_back0000 = "#f8d7da"
     color0000 = "red"
+
 if Karnaugh(False, True, False, False) == v0001:
     nb_goods += 1
     color_back0001 = "lightgreen"
@@ -131,6 +132,7 @@ if Karnaugh(False, True, False, False) == v0001:
 else:
     color_back0001 = "#f8d7da"
     color0001 = "red"
+
 if Karnaugh(True, True, False, False) == v0011:
     nb_goods += 1
     color_back0011 = "lightgreen"
@@ -138,6 +140,7 @@ if Karnaugh(True, True, False, False) == v0011:
 else:
     color_back0011 = "#f8d7da"
     color0011 = "red"
+
 if Karnaugh(True, False, False, False) == v0010:
     nb_goods += 1
     color_back0010 = "lightgreen"
@@ -149,92 +152,101 @@ else:
 # second line checks
 if Karnaugh(False, False, False, True) == v0100:
     nb_goods += 1
-    color_back0000 = "lightgreen"
-    color0000 = "green"
+    color_back0100 = "lightgreen"
+    color0100 = "green"
 else:
-    color_back0000 = "#f8d7da"
-    color0000 = "red"
+    color_back0100 = "#f8d7da"
+    color0100 = "red"
+
 if Karnaugh(False, True, False, True) == v0101:
     nb_goods += 1
-    color_back0000 = "lightgreen"
-    color0000 = "green"
+    color_back0101 = "lightgreen"
+    color0101 = "green"
 else:
-    color_back0000 = "#f8d7da"
-    color0000 = "red"
+    color_back0101 = "#f8d7da"
+    color0101 = "red"
+
 if Karnaugh(True, True, False, True) == v0111:
     nb_goods += 1
-    color_back0000 = "lightgreen"
-    color0000 = "green"
+    color_back0111 = "lightgreen"
+    color0111 = "green"
 else:
-    color_back0000 = "#f8d7da"
-    color0000 = "red"
+    color_back0111 = "#f8d7da"
+    color0111 = "red"
+
 if Karnaugh(True, False, False, True) == v0110:
     nb_goods += 1
-    color_back0000 = "lightgreen"
-    color0000 = "green"
+    color_back0110 = "lightgreen"
+    color0110 = "green"
 else:
-    color_back0000 = "#f8d7da"
-    color0000 = "red"
+    color_back0110 = "#f8d7da"
+    color0110 = "red"
 
 # third line checks
 if Karnaugh(False, False, True, True) == v1100:
     nb_goods += 1
-    color_back0000 = "lightgreen"
-    color0000 = "green"
+    color_back1100 = "lightgreen"
+    color1100 = "green"
 else:
-    color_back0000 = "#f8d7da"
-    color0000 = "red"
+    color_back1100 = "#f8d7da"
+    color1100 = "red"
+
 if Karnaugh(False, True, True, True) == v1101:
     nb_goods += 1
-    color_back0000 = "lightgreen"
-    color0000 = "green"
+    color_back1101 = "lightgreen"
+    color1101 = "green"
 else:
-    color_back0000 = "#f8d7da"
-    color0000 = "red"
+    color_back1101 = "#f8d7da"
+    color1101 = "red"
+
 if Karnaugh(True, True, True, True) == v1111:
     nb_goods += 1
-    color_back0000 = "lightgreen"
-    color0000 = "green"
+    color_back1111 = "lightgreen"
+    color1111 = "green"
 else:
-    color_back0000 = "#f8d7da"
-    color0000 = "red"
+    color_back1111 = "#f8d7da"
+    color1111 = "red"
+
 if Karnaugh(True, False, True, True) == v1110:
     nb_goods += 1
-    color_back0000 = "lightgreen"
-    color0000 = "green"
+    color_back1110 = "lightgreen"
+    color1110 = "green"
 else:
-    color_back0000 = "#f8d7da"
-    color0000 = "red"
+    color_back1110 = "#f8d7da"
+    color1110 = "red"
 
 # foorth line checks
 if Karnaugh(False, False, True, False) == v1000:
     nb_goods += 1
-    color_back0000 = "lightgreen"
-    color0000 = "green"
+    color_back1000 = "lightgreen"
+    color1000 = "green"
 else:
-    color_back0000 = "#f8d7da"
-    color0000 = "red"
+    color_back1000 = "#f8d7da"
+    color1000 = "red"
+
 if Karnaugh(False, True, True, False) == v1001:
     nb_goods += 1
-    color_back0000 = "lightgreen"
-    color0000 = "green"
+    color_back1001 = "lightgreen"
+    color1001 = "green"
 else:
-    color_back0000 = "#f8d7da"
-    color0000 = "red"
+    color_back1001 = "#f8d7da"
+    color1001 = "red"
+
 if Karnaugh(True, True, True, False) == v1011:
     nb_goods += 1
-    color_back0000 = "lightgreen"
-    color0000 = "green"
+    color_back1011 = "lightgreen"
+    color1011 = "green"
 else:
-    color_back0000 = "#f8d7da"
-    color0000 = "red"
+    color_back1011 = "#f8d7da"
+    color1011 = "red"
+
 if Karnaugh(True, False, True, False) == v1010:
     nb_goods += 1
-    color_back0000 = "lightgreen"
-    color0000 = "green"
+    color_back1010 = "lightgreen"
+    color1010 = "green"
 else:
-    color_back0000 = "#f8d7da"
-    color0000 = "red"
+    color_back1010 = "#f8d7da"
+    color1010 = "red"
 
 
 
