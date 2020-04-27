@@ -27,6 +27,8 @@ from components import GraphDrawer
 diagram = generate_random_diagram(4, 5)
 
 viewer = GraphDrawer(graph = diagram_to_string(diagram))
+
+k_table = karnaugh_table(diagram)
 ==
 
 title=Table de vérité d'un circuit logique
@@ -97,8 +99,12 @@ form==
 ==
 
 evaluator==
-grade = (100, "")
+
+feedback = ""
+
+grade = (100, feedback)
 ==
+
 
 
 
