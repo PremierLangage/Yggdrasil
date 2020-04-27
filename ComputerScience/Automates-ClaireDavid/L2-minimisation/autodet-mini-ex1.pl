@@ -40,8 +40,8 @@ viewer = '''
     S5:b>S3
 '''
 
-viewer2 = AutomatonDrawer()
-viewer2.automaton = '''
+viewer-enonce = AutomatonDrawer()
+viewer-enonce.automaton = '''
     #states
     S0
     S1
