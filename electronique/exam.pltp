@@ -1,6 +1,6 @@
 
 
-text= Examen d'electronique
+title= Examen d'electronique
 
 introduction==
 
@@ -20,4 +20,5 @@ Vous n'avez pas droit aux documents.
 #@ elec07.pl
 #@ elec08.pl
 #@ elec09.pl
+
 
