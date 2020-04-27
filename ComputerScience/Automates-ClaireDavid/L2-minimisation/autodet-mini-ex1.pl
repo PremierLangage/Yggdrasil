@@ -81,6 +81,8 @@ title = Minimisation
 text ==
 {{ viewer_enonce|component }}
 
+{{ viewer|component }}
+
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez l'automate minimal déterministe complet correspondant àà l'automate ci-dessus. <br>
 {% if attempt < maxattempt and score != 100 %}
