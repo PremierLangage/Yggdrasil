@@ -21,7 +21,7 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 before==#|python|
-from utils_diagram import generate_random_diagram, diagram_to_string
+from utils_diagram import generate_random_diagram, diagram_to_string, karnaugh_table
 from components import GraphDrawer
 
 diagram = generate_random_diagram(4, 5)
