@@ -4,21 +4,6 @@
 extends = ../templates/editor-mini.pl
 
 
-before == #|py|
-drawer = AutomatonDrawer(automaton={
-        "alphabet": ["a", "b", "c"],
-        "states": ["S0", "S1", "S2"],
-        "initialStates":["S0"],
-        "acceptingStates": ["S2"],
-        "transitions": [
-            { "fromState": "S0", "toState": "S1", "symbols": ["a"]},
-            { "fromState": "S1", "toState": "S2", "symbols": ["b"]},
-            { "fromState": "S2", "toState": "S2", "symbols": ["a", "b", "c"]}
-        ]
-    })
-
-==
-
 
 ## Ajouter ici la génération de l'automate et autres variables de l'exo
 generate== #|py|
@@ -55,7 +40,17 @@ viewer = '''
     S5:b>S3
 '''
 
-
+drawer = AutomatonDrawer(automaton={
+        "alphabet": ["a", "b", "c"],
+        "states": ["S0", "S1", "S2"],
+        "initialStates":["S0"],
+        "acceptingStates": ["S2"],
+        "transitions": [
+            { "fromState": "S0", "toState": "S1", "symbols": ["a"]},
+            { "fromState": "S1", "toState": "S2", "symbols": ["b"]},
+            { "fromState": "S2", "toState": "S2", "symbols": ["a", "b", "c"]}
+        ]
+    })
 
 #    l'alphabet
 alphabet = "a,b"
