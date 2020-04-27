@@ -244,7 +244,7 @@ correction_display==
 </center>
 <br />
 <center>
-<b>Note finale {{ final_grade }} / 100</b><
+<b>Note finale {{ final_grade }} / 100</b>
 <center>
 Votre fonction respectent {{ nb_goods }} case(s) du tableau de Karnaugh.
 ==
