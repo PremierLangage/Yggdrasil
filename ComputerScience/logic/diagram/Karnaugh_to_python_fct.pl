@@ -7,7 +7,7 @@ editor.theme = dark
 editor.language = python
 editor.height = 120px
 editor.code ==
-def karnaugh(A, B, C, D):
+def Karnaugh(A, B, C, D):
     # Votre code ici...
     return False
 ==
@@ -56,8 +56,9 @@ text==
 <table>
 <tr>
 <td width="50%">
-Écrire une fonction Python à quatre argument A, B, C, D dont les évaluations
-avec les booléans True et False donneront le tableau de Karnaugh qui suit.
+Écrire une fonction Python **Karnaugh** à quatre argument A, B, C, D dont les 
+évaluations avec les booléans True et False donneront le tableau de Karnaugh qui 
+suit (Naturellement 0 est faux et 1 est vrai).
 </td>
 <td>&nbsp; &nbsp;</td>
 <td>
