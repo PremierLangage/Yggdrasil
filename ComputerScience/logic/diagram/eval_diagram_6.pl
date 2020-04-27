@@ -39,7 +39,7 @@ eval_point = {}
 for i in range(size_diagram):
     eval_point[input_names[i]] = True if randint(0,1) else False
 
-final_value = eval_diagram(diagram, eval_point)
+final_value = True if eval_diagram(diagram, eval_point) else False
 
 group.items = []
 group.items.append({
