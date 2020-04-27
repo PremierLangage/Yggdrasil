@@ -6,6 +6,8 @@ extends = ../templates/editor-mini.pl
 generate== #|py|
 #from automaton import Automaton
 
+editor.debug = False
+editor.editorHeight = "520px"
 viewer = Automaton.parse('bb*a(b*a)*')
 #viewer = Automaton.parse('(a|b)*')
 
@@ -14,8 +16,6 @@ alphabet = "a,b"
 message = 'bb * a(b * a) *'
 
 
-editor.debug = False
-editor.editorHeight = "520px"
 #message = '(a+b)*'
 ==
 
