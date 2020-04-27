@@ -40,7 +40,8 @@ viewer = '''
     S5:b>S3
 '''
 
-drawer = AutomatonDrawer(automaton={
+viewer =: AutomatonDrawer
+viewer.automaton == AutomatonDrawer(automaton={
         "alphabet": ["a", "b", "c"],
         "states": ["S0", "S1", "S2"],
         "initialStates":["S0"],
