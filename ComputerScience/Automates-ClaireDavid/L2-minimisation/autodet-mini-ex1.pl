@@ -40,6 +40,8 @@ soluce = '''
     S5:b>S3
 '''
 
+viewer = soluce
+
 viewer_enonce = AutomatonDrawer()
 viewer_enonce.automaton = '''
     #states
