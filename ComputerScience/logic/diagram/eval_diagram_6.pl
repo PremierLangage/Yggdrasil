@@ -96,7 +96,7 @@ form==
 
 evaluator==#|python|
 S = group.selection
-score=0
+score=50
 
 text=" "
 
