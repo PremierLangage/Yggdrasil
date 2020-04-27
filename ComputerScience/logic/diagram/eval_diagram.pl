@@ -20,6 +20,8 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+group =: RadioGroup
+
 before==#|python|
 from utils_diagram import generate_random_diagram, diagram_to_string, eval_diagram
 from components import GraphDrawer
@@ -38,6 +40,16 @@ for i in range(size_diagram):
     eval_point[input_names[i]] = True if randint(0,1) else False
 
 final_value = eval_diagram(diagram, eval_point)
+
+group.items = []
+group.items.append({
+    "id": true,
+    "content": str(True)
+})
+group.items.append({
+    "id": false,
+    "content": str(False)
+})
 ==
 
 title=Évaluation d'un circuit logique
