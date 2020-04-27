@@ -59,9 +59,7 @@ text==
 
 Évaluer l'unique sortie **f** de ce circuit logique dont voici les valeurs des 
 variables en entrées :
-{% for k,v in eval_point.items() %}
- {{k}} : {{v}}, 
-{% endfor %}
+{% for k,v in eval_point.items() %} {{k}} : {{v}}, {% endfor %}
 <center>
 {{ viewer | component }}
 </center>
