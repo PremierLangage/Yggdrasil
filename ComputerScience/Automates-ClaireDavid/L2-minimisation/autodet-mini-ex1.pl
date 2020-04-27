@@ -1,7 +1,6 @@
 
 
 
-
 extends = ../templates/editor-mini.pl
 
 
@@ -10,7 +9,7 @@ extends = ../templates/editor-mini.pl
 generate== #|py|
 from automaton import Automaton
 
-viewer = '''
+soluce = '''
     #states
     S0
     S1
