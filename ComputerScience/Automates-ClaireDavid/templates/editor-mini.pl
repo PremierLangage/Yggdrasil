@@ -62,7 +62,8 @@ extends = editor-L2.pl
 #* feedback when the automaton is non deterministic or not complete.
 feedback_nondet = <p class="warning-state">L'automate correspond au langage mais n'est pas deterministe complet.</p>
 #* feedback when the automaton is not minimal.
-feedback_nomini = <p class="warning-state">Votre automate est deterministe complet et correspond au langage mais il n'est pas minimal {0} vs {1}.</p>
+#feedback_nomini = <p class="warning-state">Votre automate est deterministe complet et correspond au langage mais il n'est pas minimal {0} vs {1}.</p>
+feedback_nomini = <p class="warning-state">Votre automate est deterministe complet et correspond au langage mais il n'est pas minimal.</p>
 
 evaluator== #|py|
 from automaton import Automaton
@@ -92,7 +93,7 @@ else:
             grade = (score, feedback_match)
         else :
             score = 0
-            grade = (score, feedback_nomini.format(expected_size, len(info_editor["states"])))
+            grade = (score, feedback_nomini)
 #            grade = (score, feedback_nomini.format(expected_size, len(info_editor["states"])))
     else:
         score = 0
