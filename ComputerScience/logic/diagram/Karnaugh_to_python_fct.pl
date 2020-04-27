@@ -110,9 +110,43 @@ form==
 {{ editor|component }}
 ==
 
-evaluator==
+evaluator==#|python|
+nb_goods = 0
+# Beurk, this will load the student function...
+exec(editor.code)
 
-text += editor.code
+
+# fisrt line checks
+if Karnaugh(False, False, False, False) == v0000:
+    nb_goods += 1
+    color_back0000 = "lightgreen"
+    color0000 = "green"
+else:
+    color_back0000 = "#f8d7da"
+    color0000 = "red"
+if Karnaugh(False, True, False, False) == v0001:
+    nb_goods += 1
+    color_back0000 = "lightgreen"
+    color0000 = "green"
+else:
+    color_back0000 = "#f8d7da"
+    color0000 = "red"
+if Karnaugh(True, True, False, False) == v0011:
+    nb_goods += 1
+    color_back0000 = "lightgreen"
+    color0000 = "green"
+else:
+    color_back0000 = "#f8d7da"
+    color0000 = "red"
+if Karnaugh(True, False, False, False) == v0010:
+    nb_goods += 1
+    color_back0000 = "lightgreen"
+    color0000 = "green"
+else:
+    color_back0000 = "#f8d7da"
+    color0000 = "red"
+
+
 
 
 grade = (100, "&nbsp;")
