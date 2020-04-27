@@ -160,6 +160,21 @@ if (int(response['0000']) == k_table[0][0]):
     color_00 = "green"
 else:
     color_00 = "red"
+if (int(response['0001']) == k_table[0][1]):
+    nb_goods += 1
+    color_01 = "green"
+else:
+    color_01 = "red"
+if (int(response['0011']) == k_table[0][2]):
+    nb_goods += 1
+    color_02 = "green"
+else:
+    color_02 = "red"
+if (int(response['0010']) == k_table[0][3]):
+    nb_goods += 1
+    color_03 = "green"
+else:
+    color_03 = "red"
 
 
 
