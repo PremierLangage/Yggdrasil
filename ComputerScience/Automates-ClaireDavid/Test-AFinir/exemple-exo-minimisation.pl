@@ -6,14 +6,14 @@ extends = ../templates/editor-mini.pl
 generate== #|py|
 #from automaton import Automaton
 
-#viewer = Automaton.parse('bb*a(b*a)*')
-viewer = Automaton.parse('(a|b)*')
+viewer = Automaton.parse('bb*a(b*a)*')
+#viewer = Automaton.parse('(a|b)*')
 
 #    l'alphabet
 alphabet = "a,b"
-#message = 'bb * a(b * a) *'
+message = 'bb * a(b * a) *'
 
-message = '(a+b)*'
+#message = '(a+b)*'
 ==
 
 title = Minimisation
@@ -26,6 +26,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
