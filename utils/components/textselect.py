@@ -42,8 +42,7 @@ class CustomTextSelect(Component):
             elif s[0] == "{":
                 pass
             else:
-                #lst[i] = re.sub(r"(\w+)", r"{\1}", s)
-                lst[i] = re.sub(r"(\w+)", r"\1", s)
+                lst[i] = re.sub(r"(\w+)", r"{\1}", s)
 
         return "".join(lst)
     
@@ -62,8 +61,7 @@ class CustomTextSelect(Component):
             if s[0] == "{":
                 if len(s) > 2 and s[1] == "{":
                     selection.append(k)
-                    #lst[i] = s[1:-1]
-                    lst[i] = s[2:-2]
+                    lst[i] = s[1:-1]
                 k += 1
         
         return ("".join(lst), selection)
@@ -80,7 +78,7 @@ class CustomTextSelect(Component):
 
         if display:
             self.selections = [{'index': k, 'css': 'success-state'} for k in right]
-            self.selections += [{'index': k, 'css': 'error-state icon-times-after'} for k in wrong]
+            self.selections += [{'index': k, 'css': 'error-state '} for k in wrong]
             self.selections += [{'index': k, 'css': 'success-text-unit'} for k in missed]
                           
         if scoring == "AllOrNothing":
