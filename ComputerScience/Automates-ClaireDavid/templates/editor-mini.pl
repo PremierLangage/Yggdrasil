@@ -87,14 +87,17 @@ else:
         elif len(info_viewer["states"]) == len(info_editor["states"]) :
             score = 100
             grade = (score, feedback_match)
-        elif len(info_viewer["states"]) + 1 == len(info_editor["states"]) and not info_viewer
-        else :
+        elif len(info_viewer["states"]) + 1 == len(info_editor["states"]) and not info_viewer["complete"]:
             score = 100
             grade = (score, feedback_match)
+        else :
+            score = 0
+            grade = (score, feedback_nomini)
     else:
         score = 0
         grade=(score, feedback_nomatch)
 ==
+
 
 
 
