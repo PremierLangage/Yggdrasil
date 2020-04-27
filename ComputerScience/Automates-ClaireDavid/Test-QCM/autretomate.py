@@ -1,6 +1,7 @@
 #fichier pour creer un autre automate pour venir remplacer tomate.py dans un exo spécifique
 def createauto ():
     return """
+    #states
     S0
     S1
     S2
