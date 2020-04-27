@@ -3,7 +3,7 @@ extends= /model/qcm/qcm.pl
 
 
 nb % 4 # nombre de proposition 
-nbtrues% 1 # une bonne réponse 
+nbtrues % 1 # une bonne réponse 
 
 title=signaux
 
