@@ -111,7 +111,7 @@ correction_feedback==
   <tr>
     <td rowspan="4" style="vertical-align: middle;"> &nbsp; CD &nbsp; </td>
     <td> &nbsp; 00 &nbsp; </td>
-    <td class="karnaugh"> &nbsp; &nbsp; 
+    <td class="karnaugh" style="background-color: light{{color_00}}"> &nbsp; &nbsp; 
     <span style="color: {{color_00}}">{{ k_table[0][0] }}</span> &nbsp; &nbsp; 
     </td>
     <td class="karnaugh"> &nbsp; &nbsp; {{ k_table[0][1] }} &nbsp; &nbsp; </td>
