@@ -4,12 +4,13 @@ extends = ../templates/editor-mini.pl
 
 ## Ajouter ici la génération de l'automate et autres variables de l'exo
 generate== #|py|
-#from automaton import Automaton
+from automaton import Automaton
 
 editor.debug = False
 editor.editorHeight = "520px"
 viewer = Automaton.parse('bb*a(b*a)*')
 #viewer = Automaton.parse('(a|b)*')
+info_viewer = viewer.properties()
 
 #    l'alphabet
 alphabet = "a,b"
@@ -26,6 +27,8 @@ text ==
 
 {{ viewer|component }}
 
+complet: {{ info_viewer["complete"] }}
+
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez l'automate minimal déterministe complet reconnaissant le langage {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
@@ -34,6 +37,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
