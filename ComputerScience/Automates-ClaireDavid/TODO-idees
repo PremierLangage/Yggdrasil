@@ -24,7 +24,7 @@ J'ai changé réponse acceptable
 25/04 -- etat non selectionnable - mael
 
 27/04 -- bug  -- si j'ai s0, s1, s2,s3 et que je supprime s, lorsque je rajoute un état, il le nome s3 et fait l'amalgame avec l'ancien s3 àà vérifier
-27/04 -- supprimer etiquette devrait être supprimer transistion
+27/04 -- supprimer etiquette devrait être supprimer transition. J'ai changéé dans mon hack
 
 
 
