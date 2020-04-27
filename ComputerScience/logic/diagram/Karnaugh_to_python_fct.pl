@@ -6,7 +6,9 @@ editor =: CodeEditor
 editor.theme = dark
 editor.language = python
 editor.code ==
-# write your code here
+def karnaugh(A, B, C, D):
+    # Votre code ici...
+    return False
 ==
 
 before==#|python|
