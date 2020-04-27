@@ -106,6 +106,6 @@ for item in group.items:
     elif item['content'] == str(final_value):
         item['css'] = 'success-border animated pulse infinite'
 
-grade = (score, "&nbsp;")
+grade = (score, feedback)
 ==
 
