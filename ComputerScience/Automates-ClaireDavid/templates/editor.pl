@@ -146,7 +146,6 @@ exec(generate)
 if 'viewer' not in globals():
     raise Exception('The script "generate" must define a variable "viewer" which is an automaton')
 
-viewer2 = Automaton.viewer(viewer2)
 viewer = Automaton.viewer(viewer)
 ==
 
