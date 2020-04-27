@@ -102,10 +102,10 @@ k_table_display==
 <center>
 <table class="karnaugh">
   <tr>
-    <td colspan="4"> &nbsp; AB &nbsp; </td>
+    <td><\td><td colspan="4"> &nbsp; AB &nbsp; </td>
   <tr>
   <tr>
-    <td>00</td><td>01</td><td>11</td><td>10</td>
+    <td><\td><td>00</td><td>01</td><td>11</td><td>10</td>
   </tr>
   {% for line in k_table %}
   <tr>
@@ -113,7 +113,7 @@ k_table_display==
     {% if loop.index is divisibleby(4) %}
     <td rowspan="4" style="vertical-align: middle;"> &nbsp; CD &nbsp; </td>
     {% endif %}
-    
+
     {% for item in line %}
         <td class="karnaugh"> &nbsp; {{ item }} &nbsp; </td>
     {% endfor %}    
