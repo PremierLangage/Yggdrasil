@@ -23,7 +23,7 @@ viewer = '''
     S0
     #accepting
     S0
-    S4
+    S2
     #alphabet
     a
     b
