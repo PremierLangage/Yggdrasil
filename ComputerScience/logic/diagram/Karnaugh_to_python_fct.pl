@@ -68,31 +68,31 @@ avec les booléans True et False donneront le tableau de Karnaugh qui suit.
   <tr>
     <td rowspan="4" style="vertical-align: middle;"> &nbsp; CD &nbsp; </td>
     <td> &nbsp; 00 &nbsp; </td>
-    <td class="karnaugh">&nbsp; &nbsp; 0 &nbsp; &nbsp; </td>
-    <td class="karnaugh"><input id="form_0001" type="text" value="0" size="1"/></td>
-    <td class="karnaugh"><input id="form_0011" type="text" value="0" size="1"/></td>
-    <td class="karnaugh"><input id="form_0010" type="text" value="0" size="1"/></td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0000 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0001 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0011 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0010 }} &nbsp; &nbsp; </td>
   </tr>
   <tr>
     <td> &nbsp; 01 &nbsp; </td>
-    <td class="karnaugh"><input id="form_0100" type="text" value="0" size="1"/></td>
-    <td class="karnaugh"><input id="form_0101" type="text" value="0" size="1"/></td>
-    <td class="karnaugh"><input id="form_0111" type="text" value="0" size="1"/></td>
-    <td class="karnaugh"><input id="form_0110" type="text" value="0" size="1"/></td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0100 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0101 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0111 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v0110 }} &nbsp; &nbsp; </td>
   </tr>
   <tr>
     <td> &nbsp; 11 &nbsp; </td>
-    <td class="karnaugh"><input id="form_1100" type="text" value="0" size="1"/></td>
-    <td class="karnaugh"><input id="form_1101" type="text" value="0" size="1"/></td>
-    <td class="karnaugh"><input id="form_1111" type="text" value="0" size="1"/></td>
-    <td class="karnaugh"><input id="form_1110" type="text" value="0" size="1"/></td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1100 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1101 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1111 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1110 }} &nbsp; &nbsp; </td>
   </tr>
   <tr>
     <td> &nbsp; 10 &nbsp; </td>
-    <td class="karnaugh"><input id="form_1000" type="text" value="0" size="1"/></td>
-    <td class="karnaugh"><input id="form_1001" type="text" value="0" size="1"/></td>
-    <td class="karnaugh"><input id="form_1011" type="text" value="0" size="1"/></td>
-    <td class="karnaugh"><input id="form_1010" type="text" value="0" size="1"/></td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1000 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1001 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1011 }} &nbsp; &nbsp; </td>
+    <td class="karnaugh">&nbsp; &nbsp; {{ v1010 }} &nbsp; &nbsp; </td>
   </tr>
 </table>
 </td>
