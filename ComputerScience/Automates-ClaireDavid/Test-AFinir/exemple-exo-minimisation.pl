@@ -9,26 +9,16 @@ from automaton import Automaton
 editor.debug = False
 editor.editorHeight = "520px"
 viewer = Automaton.parse('bb*a(b*a)*')
-#viewer = Automaton.parse('(a|b)*')
-info_viewer = Automaton.properties(viewer)
-complet = str(info_viewer)
 
 #    l'alphabet
 alphabet = "a,b"
 message = 'bb * a(b * a) *'
-
-
-#message = '(a+b)*'
 ==
 
 debug =  True
 
 title = Minimisation
 text ==
-
-{{ viewer|component }}
-
-complet: {{ complet }}
 
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez l'automate minimal déterministe complet reconnaissant le langage {{ message }} <br>
