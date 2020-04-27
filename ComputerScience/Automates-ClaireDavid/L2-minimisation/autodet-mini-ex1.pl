@@ -40,6 +40,9 @@ viewer = '''
     S5:b>S3
 '''
 
+
+viewer2 =: AutomatonDrawer
+
 #    l'alphabet
 alphabet = "a,b"
 ==
