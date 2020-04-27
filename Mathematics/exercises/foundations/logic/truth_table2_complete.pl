@@ -1,4 +1,4 @@
-extends = /model/mathbasic.pl
+extends = /model/math.pl
 
 title = Table de vérité
 
