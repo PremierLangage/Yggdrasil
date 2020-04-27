@@ -180,7 +180,7 @@ else:
 
 text += correction_feedback
 
-grade = (100, "&nbsp;")
+grade = (max(0, int((100*(nb_goods-8))/8) ), "&nbsp;")
 ==
 
 
