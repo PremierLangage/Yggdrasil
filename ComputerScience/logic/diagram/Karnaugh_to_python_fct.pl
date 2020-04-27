@@ -368,6 +368,7 @@ else:
 final_grade = max(0, int((100*(nb_goods-8))/8) )
 
 form=" "
+text=correction_display
 
 grade = (final_grade, "&nbsp;")
 
