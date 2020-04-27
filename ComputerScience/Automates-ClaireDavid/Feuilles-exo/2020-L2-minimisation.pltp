@@ -1,0 +1,53 @@
+
+
+title = Minimisation
+
+introduction ==
+ Voici quelques exercices de minimisation.
+ 
+ La plateforme ne permet pas encore de vérifier les étapes intermédiaires mais vous permet de tester sir le résultat que vous avez obtenu est bien l'automate minimal déterministe et complet correspondant au langage demandé.
+
+ Munissez-vous d'un feuille pour faire vos calculs!
+
+ Les exercices sont indépendants. Vous pouvez les faire et même les refaire dans l'ordre que vous voulez. Si vous rencontrez des difficultés dans l'utilisation de la plateforme, n'hésitez pas à venir en discuter sur le channel discord dédié
+ 
+ Un grand merci à Mamadou pour son travail sur le module automates de PLaTon.
+
+==
+
+@../L2-partiel-2020/2020-partiel-exo1-3.pl
+
+@../L2-partiel-2020/2020-partiel-exo1-4.pl
+
+@../L2-exo-regex/TD3-1-multiples2.pl
+
+@../L2-exo-regex/TD3-2-puissances2.pl
+
+@../L2-exo-regex/TD3-3.pl
+
+@../L2-exo-regex/TD3-4.pl
+
+#@../L2-exo-regex/TD3-5.pl
+
+#@../L2-exo-regex/TD3-6.pl
+
+#@../L2-exo-regex/TD3-7-sans-ab.pl
+
+#@../L2-exo-regex/TD3-8-exactement2b.pl
+
+#@../L2-exo-regex/TD3-9-b-pair.pl
+
+#@../L2-exo-regex/TD3-10bis.pl
+
+#@../L2-exo-regex/TD3-10-abmod2.pl
+
+
+
+
+
+
+
+
+
+
+
