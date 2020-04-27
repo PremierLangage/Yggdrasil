@@ -43,11 +43,11 @@ final_value = eval_diagram(diagram, eval_point)
 
 group.items = []
 group.items.append({
-    "id": true,
+    "id": "true",
     "content": str(True)
 })
 group.items.append({
-    "id": false,
+    "id": "false",
     "content": str(False)
 })
 ==
