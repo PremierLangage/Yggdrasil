@@ -24,14 +24,12 @@ before==#|python|
 from utils_diagram import generate_random_diagram, diagram_to_string, karnaugh_table
 from components import GraphDrawer
 
-diagram = generate_random_diagram(4, 5)
+diagram = generate_random_diagram(6, 12)
 
 viewer = GraphDrawer(graph = diagram_to_string(diagram))
-
-k_table = karnaugh_table(diagram)
 ==
 
-title=Table de vérité d'un circuit logique
+title=Évaluation d'un circuit logique
 
 text==
 Remplir le tableau de Karnaugh associé au circuit logique suivant. Prenez 
