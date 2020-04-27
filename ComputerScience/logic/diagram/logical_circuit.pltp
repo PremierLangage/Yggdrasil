@@ -22,10 +22,11 @@ Les exercices suivants portent sur des circuits de portes logiques. Vous devez
 les conprendre et les transcrire ces cicuits vers d'autres représentations.
 ==
 
-
+@ eval_diagram_3.pl
+@ eval_diagram_4.pl
+@ eval_diagram_5.pl
+@ eval_diagram_6.pl
 @ Karnaugh_to_python_fct.pl
 @ Karnaugh_to_python_fct.pl
-@ Karnaugh_to_python_fct.pl
-@ diagram_to_Karnaugh.pl
 @ diagram_to_Karnaugh.pl
 @ diagram_to_Karnaugh.pl
