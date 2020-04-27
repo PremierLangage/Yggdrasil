@@ -45,7 +45,7 @@ enonce = '''
 viewer = enonce
 
 
-#viewer_enonce permet un affichage non modifié de l'automate
+#viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
 viewer_enonce = AutomatonDrawer()
 viewer_enonce.automaton = enonce
 
