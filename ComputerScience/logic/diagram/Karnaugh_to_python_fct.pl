@@ -242,6 +242,8 @@ correction_display==
 </tr>
 </table>
 </center>
+
+Note finale {{ final_grade }} / 100
 ==
 
 
