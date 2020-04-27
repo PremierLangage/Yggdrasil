@@ -11,6 +11,7 @@ editor.editorHeight = "520px"
 viewer = Automaton.parse('bb*a(b*a)*')
 #viewer = Automaton.parse('(a|b)*')
 info_viewer = Automaton.properties(viewer)
+complet = info_viewer["complete"]
 
 #    l'alphabet
 alphabet = "a,b"
@@ -27,7 +28,7 @@ text ==
 
 {{ viewer|component }}
 
-complet: {{ info_viewer["complete"] }}
+complet: {{ complet }}
 
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez l'automate minimal déterministe complet reconnaissant le langage {{ message }} <br>
