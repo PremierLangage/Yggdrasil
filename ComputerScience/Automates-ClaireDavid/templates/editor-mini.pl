@@ -84,9 +84,10 @@ else:
         if not (info_editor["deterministic"] and info_editor["complete"]):
             score = 0 
             grade = (score, feedback_nondet)
-        elif len(info_viewer["states"]) != len(info_editor["states"]) :
-            score = 0
-            grade = (score, feedback_nomini)
+        elif len(info_viewer["states"]) == len(info_editor["states"]) :
+            score = 100
+            grade = (score, feedback_match)
+        elif len(info_viewer["states"]) + 1 == len(info_editor["states"]) and not info_viewer
         else :
             score = 100
             grade = (score, feedback_match)
@@ -94,6 +95,7 @@ else:
         score = 0
         grade=(score, feedback_nomatch)
 ==
+
 
 
 
