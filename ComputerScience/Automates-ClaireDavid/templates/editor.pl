@@ -132,6 +132,10 @@ score = -1
 attempt = 0
 maxattempt = int(maxattempt)
 
+
+viewer2 = AutomatonViewer(viewer2)
+viewer2.automaton == soluce
+
 # CREATION OF THE AUTOMATON EDITOR
 # THE PROPERTIES OF THE EDITOR CAN BE CHANGED INSIDE 'generate' SCRIPT
 editor = Automaton.editor()
@@ -168,6 +172,7 @@ else:
         score = 0
         grade=(score, feedback_nomatch)
 ==
+
 
 
 
