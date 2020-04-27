@@ -3,7 +3,7 @@ extends = /model/basic.pl
 title = Repérage des verbes
 
 text ==
-Identifier le verbe conjugué la phrase ci-dessous.
+Identifier le ou les verbes conjugués la phrase ci-dessous.
 ==
 
 form==
