@@ -101,7 +101,7 @@ score=50
 
 viewer.graph = graph_correction
 
-text="<center> {{ viewer | component }} </center>"
+text="<style>.graph-viewer-component { pointer-events: none; }</style><center> {{ viewer | component }} </center>"
 
 for item in group.items:
     item['css'] = ''
