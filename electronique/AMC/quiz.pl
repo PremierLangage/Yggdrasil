@@ -7,14 +7,14 @@ tag= electronique
 buildquestions==
 
 questions = """
-** Question pourrie 
+* Question pourrie 
 + bonne réponse 
 - pourrie 
 - beurk 
 - Tu rigole $$\sqrt \pi $$
 
 
-** Question pourrie 
+* Question pourrie 
 + bonne réponse 
 - pourrie 
 - beurk 
@@ -22,7 +22,6 @@ questions = """
 
 """  +questions 
 
-text += str(questions)
 
 ==
 
