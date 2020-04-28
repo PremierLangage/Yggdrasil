@@ -14,7 +14,7 @@ except ModuleNotFoundError:
 try:
     from jinja_env import env
 except ModuleNotFoundError:
-    env = ComponentEnv()
+    env = ComponentEnv
 
 # Load the custom namespace
 try:
