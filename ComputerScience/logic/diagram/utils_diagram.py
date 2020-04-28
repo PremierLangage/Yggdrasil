@@ -239,7 +239,7 @@ def node_to_string_rec_color(diagram, nb_op, father, d):
         if res:
             ans += diagram[0]+' [style=filled, fillcolor="palegreen"];\n'
         else:
-            ans += diagram[0]+' [style=filled, fillcolor="red3"];\n'
+            ans += diagram[0]+' [style=filled, fillcolor="coral"];\n'
         return (res, nb_op, ans)
 
     # case of operator not
@@ -251,7 +251,7 @@ def node_to_string_rec_color(diagram, nb_op, father, d):
         if not bool_c:
             ans += name_op+' [label="not" shape=box, style=filled, fillcolor="palegreen"];\n'
         else:
-            ans += name_op+' [label="not" shape=box, style=filled, fillcolor="red3"];\n'
+            ans += name_op+' [label="not" shape=box, style=filled, fillcolor="coral"];\n'
         return (not bool_c, new_op, ans+str_child)
 
     # case of binary operator
@@ -278,7 +278,7 @@ def node_to_string_rec_color(diagram, nb_op, father, d):
         if bool_res:
             ans += name_op+' [label="'+diagram[0]+'" shape=box, style=filled, fillcolor="palegreen"];\n'
         else:
-            ans += name_op+' [label="'+diagram[0]+'" shape=box, style=filled, fillcolor="red3"];\n'
+            ans += name_op+' [label="'+diagram[0]+'" shape=box, style=filled, fillcolor="coral"];\n'
 
         return (bool_res, new_op, ans)
 
@@ -299,7 +299,7 @@ def diagram_to_string_color(diagram, d):
     if bool:
         ans += 'f [label="f", style=filled, fillcolor="palegreen"];\n'
     else:
-        ans += 'f [label="f", style=filled, fillcolor="red3"];\n'
+        ans += 'f [label="f", style=filled, fillcolor="coral"];\n'
 
     ans += "}\n"
     return ans
