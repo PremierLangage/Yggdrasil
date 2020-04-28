@@ -1,9 +1,7 @@
 extends = basic.pl
 
-@ /utils/radiogroup.py [customradiogroup.py]
-
 radio =: RadioGroup
-radio.decorator = CustomRadioGroup
+radio.decorator = CustomRadio
 
 form = {{ radio|component }}
 
@@ -11,3 +9,4 @@ evaluator ==
 grade = radio.eval()
 radio.disabled=True
 ==
+
