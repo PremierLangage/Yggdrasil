@@ -60,7 +60,22 @@ if __name__ == "__main__":
 
     # the content of namespace is added to dic
     dic = {**namespace, **dic}
-    
+
+    if 'buildquestions' in dic:
+
+        # execute the script in before key with dic as globals
+        dic['StopBeforeExec'] = StopBeforeExec
+        exec(add_try_clause(dic['buildquestions'], StopBeforeExec), dic)
+        
+        # clean dic from namespace elements
+        exec("", namespace)
+        for key in namespace:
+            if key in dic and dic[key] == namespace[key]:
+                del dic[key]
+
+
+
+
     if 'before' in dic:
 
         # execute the script in before key with dic as globals
@@ -100,5 +115,6 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
 
     sys.exit(0)
+
 
 
