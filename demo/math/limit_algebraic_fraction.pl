@@ -17,7 +17,7 @@ sol = lim.doit()
 ==
 
 text ==
-Déterminer $$ {{ lim.latex }}. $$
+Déterminer $$ {{ lim|latex }}. $$
 ==
 
 evaluator ==
@@ -25,6 +25,7 @@ score, _, feedback = eval_real_or_inf(input.value, sol)
 ==
 
 solution ==
-La limite est $% {{sol.latex}} %$.
+La limite est $% {{sol|latex}} %$.
 ==
+
 
