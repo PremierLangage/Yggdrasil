@@ -25,7 +25,7 @@ def component(l):
     return "<%s cid='%s'></%s>" % (selector, cid, selector)
 
 class ComponentEnv(Environment):
-    def __init__():
+    def __init__(self):
         self.loader = BaseLoader()
         self.filters["component"] = component
         super().__init__()
