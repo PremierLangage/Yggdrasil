@@ -18,7 +18,7 @@ alphabet = "a,b"
 message = 'bb * a(b * a) *'
 ==
 
-title = Minimisation
+title = regex 1
 text ==
 
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
@@ -29,6 +29,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
