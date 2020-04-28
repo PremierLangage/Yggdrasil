@@ -151,7 +151,7 @@ if __name__ == "__main__":
     dic['basetext']=dic['text']
 
     dic['group'] = CheckboxGroup()
-    dic['form'] = "{{ group|composant}} " 
+    dic['form'] = "{{ group|component}} " 
     dic['group'].items = []
     for i,t in enumerate(pairs):
         x,y,z= t
