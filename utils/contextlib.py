@@ -13,23 +13,7 @@ def add_try_clause(code, excpt):
     return ("try:\n" + '\n'.join(["    " + line for line in code.split('\n')])
             + "\nexcept " + excpt.__name__ + ":\n    pass")
 
-from jinja2 import Environment, BaseLoader
 
-
-def component(l):
-    if isinstance(l,dict):
-        selector = l["selector"]
-        cid = l["cid"]
-    else:
-        selector = l.selector
-        cid = l.cid
-    return "<%s cid='%s'></%s>" % (selector, cid, selector)
-
-ComponentEnv = Environment(loader=BaseLoader())
-ComponentEnv.globals.update({
-    "component":    component
-})
-ComponentEnv.filters["component"] = component
 
 # HACK for components in lists
 # components in lists are duplicated outside the lists
