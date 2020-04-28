@@ -1,8 +1,8 @@
 import sys, json
 from components import Component
 import uuid
-from contextlib import aux_component
-from contextlib import PickleEncoder, add_try_clause, ComponentEnv
+from builderlib import aux_component
+from builderlib import PickleEncoder, add_try_clause, ComponentEnv
 
 # Load the custom JSON encoder
 try:
