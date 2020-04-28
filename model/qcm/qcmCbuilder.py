@@ -157,7 +157,8 @@ if __name__ == "__main__":
     group = CheckboxGroup()
 
     group.items = []
-    for i,x,y,z in enumerate(pairs):
+    for i,t in enumerate(pairs):
+        x,y,z= t
         group.items.append({
             "id": str(i),
             "content": x,
