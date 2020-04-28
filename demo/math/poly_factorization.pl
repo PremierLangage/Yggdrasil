@@ -9,9 +9,10 @@ expr = (P * Q).expand()
 ==
 
 text ==
-Factoriser $! {{ expr.latex }}. !$
+Factoriser $! {{ expr|latex }}. !$
 ==
 
 evaluator==
 score, _, feedback = eval_poly(input.value, expr, var="x", form="factorized")
 ==
+
