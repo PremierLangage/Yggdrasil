@@ -1,5 +1,6 @@
 from components import Component
 from customdragdrop import DragDropGroup
+import json, jsonpickle
 
 
 class PickleEncoder(json.JSONEncoder):
