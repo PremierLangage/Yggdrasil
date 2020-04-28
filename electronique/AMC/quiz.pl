@@ -8,20 +8,21 @@ buildquestions==
 
 questions = """
 ** Question pourrie 
-+ bonne réponce 
++ bonne réponse 
 - pourrie 
 - beurk 
 - Tu rigole $$\sqrt \pi $$
 
 
 ** Question pourrie 
-+ bonne réponce 
++ bonne réponse 
 - pourrie 
 - beurk 
 - Tu rigole $$\sqrt \pi $$
 
 """  +questions 
-questions = questions + questions 
+
+text += str(questions)
 
 ==
 
