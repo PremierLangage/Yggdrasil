@@ -236,7 +236,10 @@ def node_to_string_rec_color(diagram, nb_op, father, d):
     if len(diagram) == 1:
         res = d[diagram[0]]
         ans = diagram[0]+' -> '+father+';\n'
-
+        if res:
+            ans += diagram[0]+' [style=filled, fillcolor="green2"];\n'
+        else:
+            ans += diagram[0]+' [style=filled, fillcolor="red2"];\n'
         return (res, nb_op, ans)
 
     # case of operator not
@@ -244,7 +247,8 @@ def node_to_string_rec_color(diagram, nb_op, father, d):
         name_op = 'not'+str(nb_op)
         ans = name_op+' [label="not" shape=box];\n'
         ans += name_op+' -> '+father+';\n'
-        new_op, str_child = node_to_string_rec(diagram[1], nb_op+1, name_op)
+        new_op, str_child = node_to_string_rec_color(diagram[1], nb_op+1, name_op)
+
         return (new_op, ans+str_child)
 
     # case of binary operator
@@ -252,9 +256,9 @@ def node_to_string_rec_color(diagram, nb_op, father, d):
         name_op = diagram[0]+str(nb_op)
         ans = name_op+' [label="'+diagram[0]+'" shape=box];\n'
         ans += name_op+' -> '+father+';\n'
-        new_op, str_child_left = node_to_string_rec(diagram[1], nb_op+1, name_op)
+        new_op, str_child_left = node_to_string_rec_color(diagram[1], nb_op+1, name_op)
         ans += str_child_left
-        new_op, str_child_right = node_to_string_rec(diagram[2], new_op+1, name_op)
+        new_op, str_child_right = node_to_string_rec_color(diagram[2], new_op+1, name_op)
         ans += str_child_right
         return (new_op, ans)
 
@@ -270,7 +274,7 @@ def diagram_to_string_color(diagram, d):
     ans = "digraph G {\n"
     ans += "splines=ortho;\n"
 
-    bool_value, index_op, str_diagram = node_to_string_rec(diagram, 1, "f", d)
+    bool_value, index_op, str_diagram = node_to_string_rec_color(diagram, 1, "f", d)
     ans += str_diagram;
     if bool:
         ans += 'f [label="f", style=filled, fillcolor="green2"];\n'
