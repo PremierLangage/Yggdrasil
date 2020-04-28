@@ -1,7 +1,7 @@
 import sys, json, jsonpickle
 from components import Component
-from customdragdrop import DragDropGroup
 import uuid
+from temp import aux_component
 
 # Load the custom JSON encoder
 try:
@@ -26,34 +26,7 @@ def add_try_clause(code, excpt):
     return ("try:\n    ...\n" + '\n'.join(["    " + line for line in code.split('\n')])
             + "\nexcept " + excpt.__name__ + ":\n    pass")
 
-# HACK for components in lists
-# components in lists are duplicated outside the lists
-# and replaced by dictionaries inside the lists
-def aux_component(dic):
-    newcomp = []
-    for key in dic:
-        if isinstance(dic[key], list):
-            for i in range(len(dic[key])):
-                item = dic[key][i]
-                if isinstance(item, Component):
-                    name = "c" + uuid.uuid4().hex
-                    newcomp.append((name, item))
-                    dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
-                else:
-                    break
-        if isinstance(dic[key], DragDropGroup):
-            for k, item in dic[key].labels.items():
-                    name = "c" + uuid.uuid4().hex
-                    newcomp.append((name, item))
-                    dic[key].labels[k] = {"cid": item.cid, "name": name, "selector": item.selector}
-            for k, item in dic[key].drops.items():
-                    name = "c" + uuid.uuid4().hex
-                    newcomp.append((name, item))
-                    dic[key].drops[k] = {"cid": item.cid, "name": name, "selector": item.selector}
 
-    for name, comp in newcomp:
-        comp.name = name
-        dic[name] = comp
 
 if __name__ == "__main__":
     
