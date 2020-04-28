@@ -33,11 +33,11 @@ def component(l):
         cid = l.cid
     return "<%s cid='%s'></%s>" % (selector, cid, selector)
 
-env = Environment(loader=BaseLoader())
-env.globals.update({
+ComponentEnv = Environment(loader=BaseLoader())
+ComponentEnv.globals.update({
     "component":    component
 })
-env.filters["component"] = component
+ComponentEnv.filters["component"] = component
 
 # HACK for components in lists
 # components in lists are duplicated outside the lists
