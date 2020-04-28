@@ -63,7 +63,7 @@ grader=@ /grader/evaluator.py
 
 @ /utils/sandboxio.py
 
-settings.allow_reroll=doit
+settings.allow_reroll=False
 
 evaluator==
 right = 0
