@@ -9,7 +9,7 @@ from contextlib import PickleEncoder, add_try_clause
 from jinja2 import Template
 
 try:
-    from jsonencoder import CustomEncoder, CustomDecoder
+    from json_encoder import CustomEncoder, CustomDecoder
 except ModuleNotFoundError:
     CustomEncoder = PickleEncoder
     CustomDecoder = None
