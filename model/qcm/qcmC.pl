@@ -65,6 +65,8 @@ grader=@ /grader/evaluator.py
 
 settings.allow_reroll=False
 
+form=
+
 evaluator==
 right = 0
 total = 0
