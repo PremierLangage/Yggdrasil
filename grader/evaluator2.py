@@ -4,7 +4,7 @@
 import sys, json, jsonpickle
 from components import Component
 from builderlib import aux_component1, aux_component2, aux_component, PickleEncoder
-from builderlib import PickleEncoder, add_try_clause
+from builderlib import PickleEncoder, add_try_clause, ComponentEnv
 
 from jinja2 import Template
 
@@ -13,6 +13,12 @@ try:
 except ModuleNotFoundError:
     CustomEncoder = PickleEncoder
     CustomDecoder = None
+
+# Load the custom Jinja environnement
+try:
+    from jinja_env import CustomEnv as env
+except ModuleNotFoundError:
+    env = ComponentEnv
 
 try:
     from namespace import namespace
@@ -126,6 +132,7 @@ if __name__ == "__main__":
     print(int(score))
     
     sys.exit(0)
+
 
 
 
