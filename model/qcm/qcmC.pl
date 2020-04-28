@@ -64,7 +64,7 @@ feedback.failure=<div class="btn-danger"> Voila votre resultat : {{  evaluation 
 
 # this builder uses the before clause 
 # and checks for good and bad
-@ qcm_builder.py [builder.py] 
+@ qcmC_builder.py [builder.py] 
 
 # before=@ qcm_build.py
 grader=@qcm_evaluator.py
