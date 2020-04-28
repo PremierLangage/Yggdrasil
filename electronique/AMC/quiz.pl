@@ -13,8 +13,15 @@ questions = """
 - beurk 
 - Tu rigole $$\sqrt \pi $$
 
-"""  +questions 
 
+** Question pourrie 
++ bonne réponce 
+- pourrie 
+- beurk 
+- Tu rigole $$\sqrt \pi $$
+
+"""  +questions 
+questions = questions + questions 
 
 ==
 
