@@ -8,11 +8,9 @@ from contextlib import aux_component1, aux_component2, aux_component, PickleEnco
 from jinja2 import Template
 
 try:
-    from serialize import CustomEncoder, CustomDecoder
+    from jsonencoder import CustomEncoder CustomDecoder
 except ModuleNotFoundError:
-    class CustomEncoder(json.JSONEncoder):
-        def default(self, obj):
-            return jsonpickle.Pickler(unpicklable=False).flatten(obj)
+    CustomEncoder = PickleEncoder
     CustomDecoder = None
 
 try:
