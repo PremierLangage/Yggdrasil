@@ -7,9 +7,7 @@ from temp import aux_component
 try:
     from serialize import CustomEncoder
 except ModuleNotFoundError:
-    class CustomEncoder(json.JSONEncoder):
-        def default(self, obj):
-            return jsonpickle.Pickler(unpicklable=False).flatten(obj)
+    CustomEncoder = PickleEncoder
 
 # Load the custom namespace
 try:
