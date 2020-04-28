@@ -245,6 +245,7 @@ pltest1==
 >>> if not est_foret_couvrante(foret, G):  # Le résultat est-il bien une forêt couvrante?
 ...     print("la forêt calculée n'est pas couvrante") #
 ==
+
 # Le grader:
 #@ /grader/evaluator.py [grader.py]
 evaluator==
