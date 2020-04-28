@@ -69,7 +69,7 @@ if __name__ == "__main__":
         
 
     print(dic['questions'], file=sys.stderr)
-
+    sys.exit(1)
 
     if 'before' in dic:
 
