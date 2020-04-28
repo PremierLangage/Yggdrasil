@@ -1,3 +1,4 @@
 
-print(" bande de moules ")
+import sys
+print(" bande de moules ",file=sys.stderr )
 
