@@ -2,7 +2,6 @@ extends = /model/basic.pl
 
 title = Multiples de 3 (Checkbox)
 
-# Création du composant comme une clé
 checkbox =: CheckboxGroup
 checkbox.decorator = CustomCheckbox
 
@@ -28,5 +27,6 @@ form ==
 evaluator ==
 score = checkbox.eval()
 ==
+
 
 
