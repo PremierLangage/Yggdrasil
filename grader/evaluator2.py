@@ -93,7 +93,6 @@ if __name__ == "__main__":
     
     dic = json.loads(json.dumps(dic, cls=CustomEncoder))
 
-
     if 'grade' in dic:
         score = dic['grade'][0]
         feedback = dic['grade'][1] + " "
