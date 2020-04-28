@@ -53,7 +53,7 @@ alphabet = "a,b"
 ==
 
 # dans ce qui suit le pb est que le viewer contient l'automate minimisé et non celui de départ
-title = Minimisation
+title = automate-1
 text ==
 {{ viewer_enonce|component }}
 
@@ -65,6 +65,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
