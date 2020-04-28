@@ -247,7 +247,7 @@ def node_to_string_rec_color(diagram, nb_op, father, d):
         name_op = 'not'+str(nb_op)
         ans = name_op+' [label="not" shape=box];\n'
         ans += name_op+' -> '+father+';\n'
-        new_op, str_child = node_to_string_rec_color(diagram[1], nb_op+1, name_op)
+        bool_c, new_op, str_child = node_to_string_rec_color(diagram[1], nb_op+1, name_op, d)
 
         return (new_op, ans+str_child)
 
@@ -256,9 +256,9 @@ def node_to_string_rec_color(diagram, nb_op, father, d):
         name_op = diagram[0]+str(nb_op)
         ans = name_op+' [label="'+diagram[0]+'" shape=box];\n'
         ans += name_op+' -> '+father+';\n'
-        new_op, str_child_left = node_to_string_rec_color(diagram[1], nb_op+1, name_op)
+        new_op, str_child_left = node_to_string_rec_color(diagram[1], nb_op+1, name_op, d)
         ans += str_child_left
-        new_op, str_child_right = node_to_string_rec_color(diagram[2], new_op+1, name_op)
+        new_op, str_child_right = node_to_string_rec_color(diagram[2], new_op+1, name_op, d)
         ans += str_child_right
         return (new_op, ans)
 
