@@ -225,9 +225,9 @@ def karnaugh_table(diagram):
 
 def node_to_string_rec_color(diagram, nb_op, father, d):
     """
-    This recursive function generate a DOT description of the diagram 
-    in argument. It returns a python string which can be given to DOT 
-    to generate an image of the circuit.
+    This recursive function generate a DOT description of a diagram 
+    evaluated at a dict `d` . It returns a python string which can be 
+    given to DOT to generate an image of the evaluated circuit.
 
     >>> #TODO
     ...
