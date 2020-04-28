@@ -64,8 +64,8 @@ if __name__ == "__main__":
     if 'buildquestions' in dic:
 
         # execute the script in before key with dic as globals
-        dic['StopBeforeExec'] = StopBeforeExec
-        exec(add_try_clause(dic['buildquestions'], StopBeforeExec), dic)
+
+        exec(dic['buildquestions'], dic)
         
 
     print(dic['questions'], file=sys.stderr)
