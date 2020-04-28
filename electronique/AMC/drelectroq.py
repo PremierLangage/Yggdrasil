@@ -1,4 +1,15 @@
 
 import sys
-print(" bande de moules ",file=sys.stderr )
+
+
+
+questions = """
+** Question pourrie 
++ bonne réponce 
+- pourrie 
+- beurk 
+- Tu rigole $$\sqrt \pi $$
+
+"""  +questions 
+
 
