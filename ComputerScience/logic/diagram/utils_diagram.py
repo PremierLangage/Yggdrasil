@@ -296,7 +296,7 @@ def diagram_to_string_color(diagram, d):
 
     bool_value, index_op, str_diagram = node_to_string_rec_color(diagram, 1, "f", d)
     ans += str_diagram;
-    if bool:
+    if bool_value:
         ans += 'f [label="f", style=filled, fillcolor="palegreen"];\n'
     else:
         ans += 'f [label="f", style=filled, fillcolor="coral"];\n'
