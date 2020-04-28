@@ -14,11 +14,12 @@
 # TODO: check whether cumulative context changes are such a good idea
 # TODO: better feedback appearance
 # TODO: error details in assertion feedback (line number, etc.)
+# TODO: new assertions
+#  - forbid calls to some function
+#  - count the number of "if"s in the code (ast)
+#  - forbid assignments (ast)
 
-import ast
 import inspect
-import importlib
-import os
 import test
 import traceback
 
@@ -49,6 +50,8 @@ def grade_this(code: str, tests: str, context: dict):
     except Exception:
         msg = "Une erreur s'est produite pendant la validation."
         msg += "Veuillez contacter un enseignant.<br/>"
+        if "author" in context:
+            msg += "Auteur de l'exercice : " + context["author"]
         msg += "<pre>{}</pre>".format(traceback.format_exc())
         return 0, msg
     session.cleanup()
@@ -71,8 +74,6 @@ if __name__ == "__main__":
 
     pl_context = sandboxio.get_context()
     student_code = _get_student_code(pl_context)
-    student_modulename = "student"
-    create_student_file(student_code, student_modulename)
     validation_script = pl_context["grader"]
     grade, feedback = grade_this(student_code,
                                  validation_script, pl_context)
