@@ -101,7 +101,7 @@ score=50
 
 viewer.graph = graph_correction
 
-text=" {{ viewer | component }} "
+text="<center> {{ viewer | component }} </center>"
 
 for item in group.items:
     item['css'] = ''
