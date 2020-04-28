@@ -150,12 +150,12 @@ if __name__ == "__main__":
 
     dic['basetext']=dic['text']
 
-    group = CheckboxGroup()
-
-    group.items = []
+    dic['group'] = CheckboxGroup()
+    dic['form'] = "{ group|composant} " 
+    dic['group'].items = []
     for i,t in enumerate(pairs):
         x,y,z= t
-        group.items.append({
+        dic['group'].items.append({
             "id": str(i),
             "content": x,
             "_truth": y,
