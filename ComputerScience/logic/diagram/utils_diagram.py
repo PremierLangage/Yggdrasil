@@ -199,7 +199,8 @@ def eval_diagram(diagram, d):
             return 1 - (eval_diagram(diagram[1], d)*eval_diagram(diagram[2], d))
         if duagram[0] == "nor":
             return 1 - max(eval_diagram(diagram[1], d), eval_diagram(diagram[2], d))
-
+        if duagram[0] == "xor":
+            return (eval_diagram(diagram[1], d) + eval_diagram(diagram[2], d)) % 2
 
 def karnaugh_table(diagram):
     """
