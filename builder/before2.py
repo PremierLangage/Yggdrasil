@@ -1,11 +1,12 @@
-import sys, json, jsonpickle
+import sys, json
 from components import Component
 import uuid
-from temp import aux_component
+from contextlib import aux_component
+from contextlib import PickleEncoder, add_try_clause
 
 # Load the custom JSON encoder
 try:
-    from serialize import CustomEncoder
+    from jsonencoder import CustomEncoder
 except ModuleNotFoundError:
     CustomEncoder = PickleEncoder
 
@@ -17,13 +18,6 @@ except ModuleNotFoundError:
 
 class StopBeforeExec(Exception):
     pass
-
-def add_try_clause(code, excpt):
-    """Add a try/except clause, excepting 'excpt' around code."""
-    code = code.replace('\t', '    ')
-    return ("try:\n    ...\n" + '\n'.join(["    " + line for line in code.split('\n')])
-            + "\nexcept " + excpt.__name__ + ":\n    pass")
-
 
 
 if __name__ == "__main__":
