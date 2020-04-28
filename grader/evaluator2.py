@@ -4,11 +4,12 @@
 import sys, json, jsonpickle
 from components import Component
 from contextlib import aux_component1, aux_component2, aux_component, PickleEncoder
+from contextlib import PickleEncoder, add_try_clause
 
 from jinja2 import Template
 
 try:
-    from jsonencoder import CustomEncoder CustomDecoder
+    from jsonencoder import CustomEncoder, CustomDecoder
 except ModuleNotFoundError:
     CustomEncoder = PickleEncoder
     CustomDecoder = None
@@ -49,13 +50,6 @@ def format_feedback_lightscore(score,feedback):
     tpl="""<div class="alert alert-secondary"><strong>Score : {} / 100 <br> </strong> {}</div>"""
     return tpl.format(score,feedback)
 
-
-
-def add_try_clause(code, excpt):
-    """Add a try/except clause, excepting 'except' around code."""
-    code = code.replace('\t', '    ')
-    return ("try:\n" + '\n'.join(["    " + line for line in code.split('\n')])
-            + "\nexcept " + excpt.__name__ + ":\n    pass")
 
 
 missing_evaluator_stderr = """\
