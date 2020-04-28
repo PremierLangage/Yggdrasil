@@ -99,7 +99,9 @@ evaluator==#|python|
 S = group.selection
 score=50
 
-text=" "
+viewer.graph = graph_correction
+
+text=" {{ viewer | component }} "
 
 for item in group.items:
     item['css'] = ''
