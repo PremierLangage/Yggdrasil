@@ -62,14 +62,9 @@ if __name__ == "__main__":
     dic = {**namespace, **dic}
 
     if 'buildquestions' in dic:
-
         # execute the script in before key with dic as globals
-
         exec(dic['buildquestions'], dic)
-        
 
-    print(dic['questions'], file=sys.stderr)
-    sys.exit(1)
 
     if 'before' in dic:
 
