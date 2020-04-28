@@ -14,7 +14,7 @@ class CustomLatexPrinter(LatexPrinter):
         "interv_rev_brack": True
     }
 
-    def _print_FiniteSet(self, s):
+    def _print_FiniteSet2(self, s):
         """
         Return a LaTeX code for a FiniteSet object.
 
@@ -194,6 +194,7 @@ def latex_ineq(lst):
     rel2=rel2.replace("<=",r"\le")
     rel2=rel2.replace(">=",r"\ge")
     return latex(expr1)+rel1+" "+latex(expr)+rel2+" "+latex(expr2)
+
 
 
 
