@@ -10,7 +10,6 @@ def component(l):
         cid = l.cid
     return "<%s cid='%s'></%s>" % (selector, cid, selector)
 
-
 CustomEnv = Environment(loader=BaseLoader())
 CustomEnv.filters["component"] = component
 CustomEnv.filters["latex"] = latex
