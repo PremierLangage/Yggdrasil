@@ -3,7 +3,7 @@
 
 import sys, json, jsonpickle
 from components import Component
-from temp import aux_component1, aux_component1
+from temp import aux_component1, aux_component2
 
 from jinja2 import Template
 
