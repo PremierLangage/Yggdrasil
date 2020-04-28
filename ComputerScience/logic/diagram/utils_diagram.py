@@ -70,6 +70,10 @@ def random_name(labels, used):
 
 def label_tree_rec(diagram, labels, used):
     """
+    This function place the labels on the leafs of the circuit. This 
+    is done recursively since generated circuits are trees before placing 
+    the labels. This function used the `random_name` function to choice the 
+    labels.
 
     >>> #TODO
     ...
