@@ -4,6 +4,8 @@ extends = /model/multistep.pl
 
 settings.cumulative % false
 
+
+
 before == #|python|
 import random as rd
 from customradio import CustomRadio
@@ -48,3 +50,4 @@ formstep ==
 evaluatorstep ==
 score = comp[step].eval()
 ==
+
