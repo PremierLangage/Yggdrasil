@@ -3,7 +3,7 @@ from components import Component
 from customdragdrop import DragDropGroup
 import uuid
 
-# Load the custom serialization function
+# Load the custom JSON encoder
 try:
     from serialize import CustomEncoder
 except ModuleNotFoundError:
