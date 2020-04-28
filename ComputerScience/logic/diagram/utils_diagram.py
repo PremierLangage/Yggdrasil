@@ -48,6 +48,12 @@ def generate_tree(operators, size):
 
 def random_name(labels, used):
     """
+    This function is used to place random label inside circuit. But this 
+    function tries to place each label at lest one time. So, if all labels 
+    have not being used, the function returns a random unsued label and if 
+    all labels has being used, it returns a random labels.
+
+    The user is responsible to place good argument to this function.
 
     >>> #TODO
     ...
