@@ -59,8 +59,8 @@ pltest0==
 ==
 
 # Vérification de la classe Tas sur des entiers
-testname1 = Vérification de la classe Tas sur des entiers
-pltest1== 
+testname0 = Vérification de la classe Tas sur des entiers
+pltest0== 
 >>> # création d'un tas d'entiers aléatoires
 >>> from random import randint; donnees = [randint(-100, 100) for _ in range(10)] #
 >>> try:
@@ -77,8 +77,8 @@ pltest1==
 
 # Vérification de la classe Tas sur des triplets (premier élément = critère pour le minimum)
 
-testname2 = Vérification de la classe Tas sur des triplets (premier élément = critère pour le minimum)
-pltest2==
+testname1 = Vérification de la classe Tas sur des triplets (premier élément = critère pour le minimum)
+pltest1==
 >>> from random import randint; donnees = [(randint(-100, 100), randint(-100, 100), randint(-100, 100)) for _ in range(10)] #
 >>> try:
 ...     T = Tas()  # initialisation sans paramètre
