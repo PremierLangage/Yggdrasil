@@ -23,7 +23,7 @@ builder =@ /builder/before.py
 group =: RadioGroup
 
 before==#|python|
-from utils_diagram import generate_random_diagram, diagram_to_string, eval_diagram
+from utils_diagram import generate_random_diagram, diagram_to_string, eval_diagram, diagram_to_string_color
 from components import GraphDrawer
 from random import randint
 
@@ -40,6 +40,8 @@ for i in range(size_diagram):
     eval_point[input_names[i]] = True if randint(0,1) else False
 
 final_value = True if eval_diagram(diagram, eval_point) else False
+
+graph_correction = diagram_to_string_color(diagram, eval_point)
 
 group.items = []
 group.items.append({
@@ -114,4 +116,5 @@ for item in group.items:
 
 grade = (score, feedback)
 ==
+
 
