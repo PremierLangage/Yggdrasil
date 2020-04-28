@@ -12,7 +12,7 @@ except ModuleNotFoundError:
 
 # Load the custom Jinja environnement
 try:
-    from jinja_env import env
+    from jinja_env import CustomEnv as env
 except ModuleNotFoundError:
     env = ComponentEnv
 
