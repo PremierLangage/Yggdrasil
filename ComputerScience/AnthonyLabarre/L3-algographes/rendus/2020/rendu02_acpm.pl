@@ -33,7 +33,7 @@ import corrlib_graphes
 
 ==
 #TODO voir avec Dominique si cela doit être ici ou dans le before
-taboo=heapq
+taboo = heapq
 # Les tests:
 
 # Vérifications basiques de la classe Graphe
