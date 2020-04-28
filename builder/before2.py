@@ -68,9 +68,13 @@ if __name__ == "__main__":
 
     dic['internals']['attempt'] = 1
 
+    for key in ['text', 'form']:
+        dic['key'] = env.Template(dic['key']).render(dic)
+
     with open(sys.argv[2], "w+") as f:
         json.dump(dic, f, cls=CustomEncoder)
 
     sys.exit(0)
+
 
 
