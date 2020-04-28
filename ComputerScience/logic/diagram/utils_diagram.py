@@ -124,6 +124,9 @@ def generate_random_diagram(nb_var, nb_gate):
 
 def node_to_string_rec(diagram, nb_op, father):
     """
+    This recursive function generate a DOT description of the diagram 
+    in argument. It returns a python string which can be given to DOT 
+    to generate an image of the circuit.
 
     >>> #TODO
     ...
@@ -155,6 +158,8 @@ def node_to_string_rec(diagram, nb_op, father):
 
 def diagram_to_string(diagram):
     """
+    This function returns a DOT python string describing the circuit `diagram` 
+    in argument.
 
     >>> #TODO
     ...
