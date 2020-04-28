@@ -6,9 +6,15 @@ from contextlib import PickleEncoder, add_try_clause
 
 # Load the custom JSON encoder
 try:
-    from jsonencoder import CustomEncoder
+    from json_encoder import CustomEncoder
 except ModuleNotFoundError:
     CustomEncoder = PickleEncoder
+
+# Load the custom Jinja environnement
+try:
+    from jinja_env import env
+except ModuleNotFoundError:
+    env = ComponentEnv
 
 # Load the custom namespace
 try:
