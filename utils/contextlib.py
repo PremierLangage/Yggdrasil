@@ -7,6 +7,12 @@ class PickleEncoder(json.JSONEncoder):
     def default(self, obj):
         return jsonpickle.Pickler(unpicklable=False).flatten(obj)
 
+def add_try_clause(code, excpt):
+    """Add a try/except clause, excepting 'except' around code."""
+    code = code.replace('\t', '    ')
+    return ("try:\n" + '\n'.join(["    " + line for line in code.split('\n')])
+            + "\nexcept " + excpt.__name__ + ":\n    pass")
+
 # HACK for components in lists
 # components in lists are duplicated outside the lists
 # and replaced by dictionaries inside the lists
