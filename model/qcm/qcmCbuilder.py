@@ -152,6 +152,8 @@ if __name__ == "__main__":
 
     dic['basetext']=dic['text']
 
+    group = CheckboxGroup()
+
     group.items = []
     for i,x,y,z in enumerate(pairs):
         group.items.append({
