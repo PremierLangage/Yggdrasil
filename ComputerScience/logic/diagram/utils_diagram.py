@@ -249,9 +249,9 @@ def node_to_string_rec_color(diagram, nb_op, father, d):
         ans += name_op+' -> '+father+';\n'
         bool_c, new_op, str_child = node_to_string_rec_color(diagram[1], nb_op+1, name_op, d)
         if not bool_c:
-            ans += diagram[0]+' [label="not" shape=box, style=filled, fillcolor="green2"];\n'
+            ans += name_op+' [label="not" shape=box, style=filled, fillcolor="green2"];\n'
         else:
-            ans += diagram[0]+' [label="not" shape=box, style=filled, fillcolor="red2"];\n'
+            ans += name_op+' [label="not" shape=box, style=filled, fillcolor="red2"];\n'
         return (not bool_c, new_op, ans+str_child)
 
     # case of binary operator
@@ -276,9 +276,9 @@ def node_to_string_rec_color(diagram, nb_op, father, d):
         if diagram[0] == "xor":
             bool_res = (bool_ls + bool_rs) % 2
         if bool_res:
-            ans += diagram[0]+' [label="'+diagram[0]+'" shape=box, style=filled, fillcolor="green2"];\n'
+            ans += name_op+' [label="'+diagram[0]+'" shape=box, style=filled, fillcolor="green2"];\n'
         else:
-            ans += diagram[0]+' [label="'+diagram[0]+'" shape=box, style=filled, fillcolor="red2"];\n'
+            ans += name_op+' [label="'+diagram[0]+'" shape=box, style=filled, fillcolor="red2"];\n'
 
         return (bool_res, new_op, ans)
 
