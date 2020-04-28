@@ -237,7 +237,7 @@ def node_to_string_rec_color(diagram, nb_op, father, d):
         res = d[diagram[0]]
         ans = diagram[0]+' -> '+father+';\n'
         if res:
-            ans += diagram[0]+' [style=filled, fillcolor="green3"];\n'
+            ans += diagram[0]+' [style=filled, fillcolor="palegreen"];\n'
         else:
             ans += diagram[0]+' [style=filled, fillcolor="red3"];\n'
         return (res, nb_op, ans)
@@ -249,7 +249,7 @@ def node_to_string_rec_color(diagram, nb_op, father, d):
         ans += name_op+' -> '+father+';\n'
         bool_c, new_op, str_child = node_to_string_rec_color(diagram[1], nb_op+1, name_op, d)
         if not bool_c:
-            ans += name_op+' [label="not" shape=box, style=filled, fillcolor="green3"];\n'
+            ans += name_op+' [label="not" shape=box, style=filled, fillcolor="palegreen"];\n'
         else:
             ans += name_op+' [label="not" shape=box, style=filled, fillcolor="red3"];\n'
         return (not bool_c, new_op, ans+str_child)
@@ -276,7 +276,7 @@ def node_to_string_rec_color(diagram, nb_op, father, d):
         if diagram[0] == "xor":
             bool_res = (bool_ls + bool_rs) % 2
         if bool_res:
-            ans += name_op+' [label="'+diagram[0]+'" shape=box, style=filled, fillcolor="green3"];\n'
+            ans += name_op+' [label="'+diagram[0]+'" shape=box, style=filled, fillcolor="palegreen"];\n'
         else:
             ans += name_op+' [label="'+diagram[0]+'" shape=box, style=filled, fillcolor="red3"];\n'
 
@@ -297,9 +297,10 @@ def diagram_to_string_color(diagram, d):
     bool_value, index_op, str_diagram = node_to_string_rec_color(diagram, 1, "f", d)
     ans += str_diagram;
     if bool:
-        ans += 'f [label="f", style=filled, fillcolor="green3"];\n'
+        ans += 'f [label="f", style=filled, fillcolor="palegreen"];\n'
     else:
         ans += 'f [label="f", style=filled, fillcolor="red3"];\n'
 
     ans += "}\n"
     return ans
+
