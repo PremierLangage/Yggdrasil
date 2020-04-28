@@ -3,8 +3,8 @@
 
 import sys, json, jsonpickle
 from components import Component
-from contextlib import aux_component1, aux_component2, aux_component, PickleEncoder
-from contextlib import PickleEncoder, add_try_clause
+from builderlib import aux_component1, aux_component2, aux_component, PickleEncoder
+from builderlib import PickleEncoder, add_try_clause
 
 from jinja2 import Template
 
