@@ -68,7 +68,7 @@ if __name__ == "__main__":
         exec(add_try_clause(dic['buildquestions'], StopBeforeExec), dic)
         
 
-
+    print(dic['questions'], file=sys.stderr)
 
 
     if 'before' in dic:
