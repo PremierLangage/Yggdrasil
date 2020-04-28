@@ -202,6 +202,7 @@ def eval_diagram(diagram, d):
         if diagram[0] == "xor":
             return (eval_diagram(diagram[1], d) + eval_diagram(diagram[2], d)) % 2
 
+
 def karnaugh_table(diagram):
     """
     Return the karnaugh table as a Python list of list. A and B indexes
@@ -222,7 +223,7 @@ def karnaugh_table(diagram):
     return ans
 
 
-def node_to_string_rec_color(diagram, nb_op, father):
+def node_to_string_rec_color(diagram, nb_op, father, d):
     """
     This recursive function generate a DOT description of the diagram 
     in argument. It returns a python string which can be given to DOT 
@@ -233,8 +234,10 @@ def node_to_string_rec_color(diagram, nb_op, father):
     """
     # case of a leaf
     if len(diagram) == 1:
+        res = d[diagram[0]]
         ans = diagram[0]+' -> '+father+';\n'
-        return (nb_op, ans)
+
+        return (res, nb_op, ans)
 
     # case of operator not
     if len(diagram) == 2:
@@ -267,12 +270,12 @@ def diagram_to_string_color(diagram, d):
     ans = "digraph G {\n"
     ans += "splines=ortho;\n"
 
-    bool_value, index_op, str_diagram = node_to_string_rec(diagram, 1, "f")
+    bool_value, index_op, str_diagram = node_to_string_rec(diagram, 1, "f", d)
     ans += str_diagram;
     if bool:
-        ans += 'f [label="f" shape=box, style=filled, fillcolor="green2"];\n'
+        ans += 'f [label="f", style=filled, fillcolor="green2"];\n'
     else:
-        ans += 'f [label="f" shape=box, style=filled, fillcolor="red2"];\n'
+        ans += 'f [label="f", style=filled, fillcolor="red2"];\n'
 
     ans += "}\n"
     return ans
