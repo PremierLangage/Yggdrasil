@@ -67,11 +67,7 @@ if __name__ == "__main__":
         dic['StopBeforeExec'] = StopBeforeExec
         exec(add_try_clause(dic['buildquestions'], StopBeforeExec), dic)
         
-        # clean dic from namespace elements
-        exec("", namespace)
-        for key in namespace:
-            if key in dic and dic[key] == namespace[key]:
-                del dic[key]
+
 
 
 
@@ -114,6 +110,7 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(dic, unpicklable=False))
 
     sys.exit(0)
+
 
 
 
