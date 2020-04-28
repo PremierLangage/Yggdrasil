@@ -1,4 +1,4 @@
-extends = basic.pl
+extends = /model/basic.pl
 
 radio =: RadioGroup
 radio.decorator = CustomRadio
