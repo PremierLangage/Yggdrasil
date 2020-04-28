@@ -5,7 +5,7 @@ title = Minimisation
 introduction ==
  Voici quelques exercices de minimisation.
  
- La plateforme ne permet pas encore de vérifier les étapes intermédiaires mais vous permet de tester si le résultat que vous avez obtenu est bien l'automate minimal déterministe et complet correspondant au langage demandé.
+ La plateforme ne permet pas encore de vérifier les étapes intermédiaires mais vous permet de tester si le résultat que vous avez obtenu est bien <strong> l'automate minimal déterministe et complet </strong> correspondant au langage demandé.
 
  Munissez-vous d'un feuille pour faire vos calculs!
 
