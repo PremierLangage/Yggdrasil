@@ -113,8 +113,8 @@ pltest0==
 
 
 # Vérifications de acpm_prim sur un graphe connexe
-testname4 = Vérifications de acpm_prim sur l'exemple du cours
-pltest4==
+testname0 = Vérifications de acpm_prim sur l'exemple du cours
+pltest0==
 >>> from corrlib_graphes import *; from random import choice #
 >>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS) # initialisation de l'instance du cours
 >>> arbre = acpm_prim(G, choice(list(G.sommets()))) # lancement de acpm_prim avec départ aléatoire
@@ -128,8 +128,8 @@ pltest4==
 ...             print("certaines extrémités d'arêtes ne sont pas des sommets") #
 ==
 
-testname5 = Vérifications de acpm_prim sur l'exemple du TD
-pltest5==
+testname1 = Vérifications de acpm_prim sur l'exemple du TD
+pltest1==
 >>> from corrlib_graphes import *; from random import choice #
 >>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_TD) # initialisation de l'exemple du TD
 >>> arbre = acpm_prim(G, choice(list(G.sommets()))) # lancement de acpm_prim avec départ aléatoire
@@ -143,8 +143,8 @@ pltest5==
 ...             print("certaines extrémités d'arêtes ne sont pas des sommets") #
 ==
 
-testname6 = Vérifications de acpm_prim sur une instance aléatoire
-pltest6==
+testname2 = Vérifications de acpm_prim sur une instance aléatoire
+pltest2==
 >>> from corrlib_graphes import *; from random import choice #
 >>> G = Graphe(); G.ajouter_aretes(aretes_ponderees(graphe_connexe_aleatoire_pondere(10))) # initialisation d'une instance aléatoire
 >>> arbre = acpm_prim(G, choice(list(G.sommets()))) # lancement de acpm_prim avec départ aléatoire
