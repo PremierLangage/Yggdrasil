@@ -57,9 +57,7 @@ def aux_component(dic):
 
 if __name__ == "__main__":
     
-    # JSON context is converted into a python dictionary and stored in dic
-    #dic = get_context()
-
+    # JSON context is loaded
     with open(sys.argv[1], "r") as f:
         dic = json.load(f)
     Component.sync_context(dic)
@@ -103,4 +101,5 @@ if __name__ == "__main__":
         json.dump(dic, f, cls=CustomEncoder)
 
     sys.exit(0)
+
 
