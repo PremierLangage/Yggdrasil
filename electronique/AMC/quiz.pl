@@ -3,6 +3,10 @@ title= De l'elec
 tag= electronique 
 
 
+# ce code permet d'ajouter des qestions 
+buildquestions=@ drelectroq.py
+
+
 extends=/model/AMC_TXT.pl
 questions==
 
