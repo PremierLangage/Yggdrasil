@@ -18,10 +18,13 @@ author=Nicolas Borie
 title=Quelques circuits logiques
 
 introduction==
-Les exercices suivants utilisent sur des circuits de portes logiques. Vous devrez 
-les conprendre et les transcrire vers d'autres représentations. 
-Prenez votre temps car ces exercices ne peuvent pas se relancer en cas d'erreur 
-même en utilisant le bouton réinitialiser.
+Les exercices suivants génèrent des circuits de portes logiques aléatoires. Vous 
+devrez les conprendre et les évaluer vers d'autres représentations. 
+Prenez votre temps car certains de ces exercices ne peuvent pas se relancer en 
+cas d'erreur même en utilisant le bouton réinitialiser.
+
+En utilisant un papier et un stylo calmement, vous devriez y arriver sans problème, 
+ce sont plus des exercices de concentration au final.
 ==
 
 @ eval_diagram_3.pl
