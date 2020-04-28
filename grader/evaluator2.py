@@ -3,7 +3,7 @@
 
 import sys, json, jsonpickle
 from components import Component
-from temp import aux_component1, aux_component2
+from contextlib import aux_component1, aux_component2, aux_component, PickleEncoder
 
 from jinja2 import Template
 
