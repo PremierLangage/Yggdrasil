@@ -3,7 +3,7 @@ extends= elec_.pl
 
 
 before==
-text += "   \nQuelle est la phase à l'origine du signal"
+text += "   \nQuelle est la phase à l'origine du signal $%x(t)%$"
 ==
 
 
@@ -16,4 +16,5 @@ bad== # les mauvaises réponses une par ligne
 -45°
 45°
 ==
+
 
