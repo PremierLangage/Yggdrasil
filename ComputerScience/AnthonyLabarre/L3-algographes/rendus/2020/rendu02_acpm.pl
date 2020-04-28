@@ -6,7 +6,7 @@ extends= /ComputerScience/python/template/pltestblonde.pl
 builder= /builder/before.py
 
 author = Anthony Labarre
-title = Tester tout à la fois
+title = Tester tout d'un coup!
 text==
 Rendu 2 : Arbres (et forêts) couvrants de poids minimum
 
@@ -35,6 +35,7 @@ import corrlib_graphes
 #TODO voir avec Dominique si cela doit être ici ou dans le before
 taboo=heapq
 # Les tests:
+
 
 # Vérifications basiques de la classe Graphe
 testname0 = Vérifications basiques de la classe Graphe
@@ -262,6 +263,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
