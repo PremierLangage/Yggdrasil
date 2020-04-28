@@ -4,8 +4,19 @@ tag= electronique
 
 
 # ce code permet d'ajouter des qestions 
-buildquestions=@ drelectroq.py
+buildquestions==
 
+questions = """
+** Question pourrie 
++ bonne réponce 
+- pourrie 
+- beurk 
+- Tu rigole $$\sqrt \pi $$
+
+"""  +questions 
+
+
+==
 
 extends=/model/AMC_TXT.pl
 questions==
