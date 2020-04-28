@@ -6,6 +6,8 @@
 
 import sys, json, jsonpickle, random
 from sandboxio import get_context
+from component import CheckboxGroup
+
 
 class StopBeforeExec(Exception):
     pass
