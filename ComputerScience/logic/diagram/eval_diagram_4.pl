@@ -23,13 +23,13 @@ builder =@ /builder/before.py
 group =: RadioGroup
 
 before==#|python|
-from utils_diagram import generate_random_diagram, diagram_to_string, eval_diagram
+from utils_diagram import generate_random_diagram, diagram_to_string, eval_diagram, diagram_to_string_color
 from components import GraphDrawer
 from random import randint
 
 size_diagram = 4
 
-diagram = generate_random_diagram(size_diagram, 6)
+diagram = generate_random_diagram(size_diagram, 5)
 
 viewer = GraphDrawer(graph = diagram_to_string(diagram))
 
@@ -40,6 +40,8 @@ for i in range(size_diagram):
     eval_point[input_names[i]] = True if randint(0,1) else False
 
 final_value = True if eval_diagram(diagram, eval_point) else False
+
+graph_correction = diagram_to_string_color(diagram, eval_point)
 
 group.items = []
 group.items.append({
@@ -52,7 +54,7 @@ group.items.append({
 })
 ==
 
-title=Évaluation d'un circuit logique moyen
+title=Évaluation d'un petit circuit logique moyen
 
 text==
 <style>
@@ -97,7 +99,7 @@ evaluator==#|python|
 S = group.selection
 score=50
 
-text=" "
+viewer.graph = graph_correction
 
 for item in group.items:
     item['css'] = ''
@@ -111,6 +113,8 @@ for item in group.items:
             feedback = '<span class="error-state animated pulse infinite">Mauvaise réponse</span>'
     elif item['content'] == str(final_value):
         item['css'] = 'success-border animated pulse infinite'
+
+feedback = '<center>' + feedback + '</center>'
 
 grade = (score, feedback)
 ==
