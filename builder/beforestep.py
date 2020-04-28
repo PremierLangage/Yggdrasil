@@ -75,7 +75,6 @@ if __name__ == "__main__":
 
 
 
-
     if 'before' in dic:
 
         # execute the script in before key with dic as globals
