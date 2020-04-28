@@ -9,11 +9,12 @@ expr = P * Q
 ==
 
 text ==
-Développer $${{expr.latex}}.$$
+Développer $${{expr|latex}}.$$
 ==
 
 evaluator==
 score, _, feedback = eval_poly(input.value, expr, var="x", form="expanded")
 ==
+
 
 
