@@ -36,13 +36,13 @@ def generate_tree(operators, size):
     else:
         op = choice(operators)
         if op == "not":
-            ans = ["not", generate_tree(["and", "or"], size-1)]
+            ans = ["not", generate_tree(["and", "or", "xor", "nand", "nor"], size-1)]
             return ans
         else:
             size_left = randint(0, size-1)
             size_right = size - (1 + size_left)
-            ans = [op, generate_tree(["and", "or", "not"], size_left), 
-                       generate_tree(["and", "or", "not"], size_right)]
+            ans = [op, generate_tree(["and", "or", "xor", "nand", "nor", "not"], size_left), 
+                       generate_tree(["and", "or", "xor", "nand", "nor", "not"], size_right)]
             return ans
 
 
@@ -107,7 +107,7 @@ def generate_random_diagram(nb_var, nb_gate):
     ...
     """
     input_names = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
-    ans = generate_tree(["and", "or", "not"], nb_gate)
+    ans = generate_tree(["and", "or", "xor","nand", "nor", "not"], nb_gate)
     label_tree_rec(ans, input_names[0:nb_var], [])
     return ans
 
@@ -200,3 +200,4 @@ def karnaugh_table(diagram):
             vect.append(eval_diagram(diagram, d))
         ans.append(vect)
     return ans
+
