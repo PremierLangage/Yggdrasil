@@ -24,11 +24,20 @@ def component(l):
         cid = l.cid
     return "<%s cid='%s'></%s>" % (selector, cid, selector)
 
-class ComponentEnv(Environment):
-    def __init__(self):
-        self.loader = BaseLoader()
-        self.filters["component"] = component
-        super().__init__()
+def component(l):
+    if isinstance(l,dict):
+        selector = l["selector"]
+        cid = l["cid"]
+    else:
+        selector = l.selector
+        cid = l.cid
+    return "<%s cid='%s'></%s>" % (selector, cid, selector)
+
+env = Environment(loader=BaseLoader())
+env.globals.update({
+    "component":    component
+})
+env.filters["component"] = component
 
 # HACK for components in lists
 # components in lists are duplicated outside the lists
