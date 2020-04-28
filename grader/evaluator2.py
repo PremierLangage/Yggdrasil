@@ -112,7 +112,7 @@ if __name__ == "__main__":
             except:
                 pass
             if score < 100 and 'solution' in dic:
-                feedback += Template(dic['solution']).render(dic)
+                feedback += dic['solution']
     
     ffeedback = feedback
     if 'feedback' in dic['settings']:
@@ -122,6 +122,11 @@ if __name__ == "__main__":
             ffeedback=format_feedback_score(score,feedback)
         elif dic['settings']['feedback']=='lightscore':
             ffeedback=format_feedback_lightscore(score,feedback)
+
+    for key in ['text', 'form']:
+        dic[key] = env.from_string(dic[key]).render(dic)
+
+    ffeedback = env.from_string(ffeedback).render(dic)
 
     with open(sys.argv[3], "w+") as f:
         json.dump(dic, f)
