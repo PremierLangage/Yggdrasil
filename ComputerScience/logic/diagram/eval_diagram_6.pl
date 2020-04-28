@@ -1,4 +1,3 @@
-
 #*****************************************************************************
 #  Copyright (C) 2020 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
@@ -24,7 +23,7 @@ builder =@ /builder/before.py
 group =: RadioGroup
 
 before==#|python|
-from utils_diagram import generate_random_diagram, diagram_to_string, eval_diagram
+from utils_diagram import generate_random_diagram, diagram_to_string, eval_diagram, diagram_to_string_color
 from components import GraphDrawer
 from random import randint
 
@@ -42,6 +41,8 @@ for i in range(size_diagram):
 
 final_value = True if eval_diagram(diagram, eval_point) else False
 
+graph_correction = diagram_to_string_color(diagram, eval_point)
+
 group.items = []
 group.items.append({
     "id": "true",
@@ -53,7 +54,7 @@ group.items.append({
 })
 ==
 
-title=Évaluation d'un grand circuit logique
+title=Évaluation d'un petit circuit logique moyen
 
 text==
 <style>
@@ -98,7 +99,7 @@ evaluator==#|python|
 S = group.selection
 score=50
 
-text=" "
+viewer.graph = graph_correction
 
 for item in group.items:
     item['css'] = ''
@@ -113,6 +114,9 @@ for item in group.items:
     elif item['content'] == str(final_value):
         item['css'] = 'success-border animated pulse infinite'
 
+feedback = '<center>' + feedback + '</center>'
+
 grade = (score, feedback)
 ==
+
 
