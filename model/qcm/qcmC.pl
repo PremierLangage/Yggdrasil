@@ -52,26 +52,42 @@ documentation==
 
 ==
 
-group =: CheckboxGroup
-
-form==
-{{ group|component }}
-==
-feedback.success=<div class="btn-success"> Voila votre resultat : {{  evaluation }} </div>
-
-feedback.failure=<div class="btn-danger"> Voila votre resultat : {{  evaluation }} </div>
 
 
 # this builder uses the before clause 
 # and checks for good and bad
 @ qcmCbuilder.py [builder.py] 
 
-# before=@ qcm_build.py
-grader=@qcm_evaluator.py
+
+grader=@ /grader/evaluator.py
 
 @ /utils/sandboxio.py
 
 settings.allow_reroll=doit
+
+evaluator==
+right = 0
+total = 0
+for item in group.items:
+    checked = item['checked']
+    content = int(item['content'])
+    if item['_truth']:
+        total += 1
+        item['css'] = 'success-border animated pulse infinite'
+        if checked:
+            right += 1
+            item['css'] = 'success-border'
+            item['content']+= item['_feedback']
+    elif checked:
+        item['css'] = 'error-border'
+        item['content']+= item['_feedback']
+
+if total == 0:
+    grade = (100, 'Right')
+else:
+    grade = ((right / total) * 100, f"{right} / {total}")
+==
+
 
 
 
