@@ -245,22 +245,42 @@ def node_to_string_rec_color(diagram, nb_op, father, d):
     # case of operator not
     if len(diagram) == 2:
         name_op = 'not'+str(nb_op)
-        ans = name_op+' [label="not" shape=box];\n'
+        ans = ''
         ans += name_op+' -> '+father+';\n'
         bool_c, new_op, str_child = node_to_string_rec_color(diagram[1], nb_op+1, name_op, d)
-
-        return (new_op, ans+str_child)
+        if not bool_c:
+            ans += diagram[0]+' [label="not" shape=box, style=filled, fillcolor="green2"];\n'
+        else:
+            ans += diagram[0]+' [label="not" shape=box, style=filled, fillcolor="red2"];\n'
+        return (not bool_c, new_op, ans+str_child)
 
     # case of binary operator
     if len(diagram) == 3:
         name_op = diagram[0]+str(nb_op)
-        ans = name_op+' [label="'+diagram[0]+'" shape=box];\n'
+        ans = ''
         ans += name_op+' -> '+father+';\n'
-        new_op, str_child_left = node_to_string_rec_color(diagram[1], nb_op+1, name_op, d)
+        bool_ls, new_op, str_child_left = node_to_string_rec_color(diagram[1], nb_op+1, name_op, d)
         ans += str_child_left
-        new_op, str_child_right = node_to_string_rec_color(diagram[2], new_op+1, name_op, d)
+        bool_rs, new_op, str_child_right = node_to_string_rec_color(diagram[2], new_op+1, name_op, d)
         ans += str_child_right
-        return (new_op, ans)
+
+        # time to evaluate the current result inside the node
+        if diagram[0] == "and":
+            bool_res = bool_ls*bool_rs
+        if diagram[0] == "or":
+            bool_res = max(bool_ls, bool_rs)
+        if diagram[0] == "nand":
+            bool_res = 1 - (bool_ls*bool_rs)
+        if diagram[0] == "nor":
+            bool_res = 1 - max(bool_ls, bool_rs)
+        if diagram[0] == "xor":
+            bool_res = (bool_ls + bool_rs) % 2
+        if bool_res:
+            ans += diagram[0]+' [label="'+diagram[0]+'" shape=box, style=filled, fillcolor="green2"];\n'
+        else:
+            ans += diagram[0]+' [label="'+diagram[0]+'" shape=box, style=filled, fillcolor="red2"];\n'
+
+        return (bool_res, new_op, ans)
 
 
 def diagram_to_string_color(diagram, d):
