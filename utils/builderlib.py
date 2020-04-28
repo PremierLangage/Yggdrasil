@@ -34,9 +34,6 @@ def component(l):
     return "<%s cid='%s'></%s>" % (selector, cid, selector)
 
 ComponentEnv = Environment(loader=BaseLoader())
-ComponentEnv.globals.update({
-    "component":    component
-})
 ComponentEnv.filters["component"] = component
 
 # HACK for components in lists
