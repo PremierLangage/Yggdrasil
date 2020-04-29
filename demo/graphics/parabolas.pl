@@ -47,7 +47,7 @@ $$ y = {{expr|latex}}.$$
 
 style.exercise ==
 .img-container {
-    width: 29%;
+    width: 60%;
     display: inline-block;
 }
 
