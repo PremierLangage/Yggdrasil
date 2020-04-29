@@ -8,7 +8,7 @@ radio.decorator = CustomRadio
 before ==
 import matplotlib.pyplot as plt
 import numpy as np
-from plmpl import fig2save
+from plmpl import fig2svg
 
 n = 4
 source = []
