@@ -16,3 +16,4 @@
 
 extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 
+expected_stdout=""
