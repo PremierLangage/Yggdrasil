@@ -13,7 +13,7 @@ from typing import *
 from unittest import mock
 
 _default_template_dir = ''
-# _default_template_dir = 'templates/generic/jinja/'
+# _default_template_dir = 'templates/jinja/'
 _default_test_template = _default_template_dir + 'testitem.html'
 _default_group_template = _default_template_dir + 'testgroup.html'
 
@@ -77,14 +77,16 @@ class TestSession:
 
     """Group /test management."""
 
-    def begin_test_group(self, title: str) -> NoReturn:
+    def begin_test_group(self, title: str, **params) -> NoReturn:
         """
         Open a new test group.
 
         :param title: New test group's title.
         """
         self.cleanup()
-        self.current_test_group = TestGroup(title)
+        group_params = dict(self.params)
+        group_params.update(params)
+        self.current_test_group = TestGroup(title, **group_params)
         self.history.append(self.current_test_group)
 
     def end_test_group(self) -> NoReturn:
@@ -93,7 +95,7 @@ class TestSession:
         """
         self.current_test_group = None
 
-    def begin_test(self, title="", weight=1, keep_state=True):
+    def begin_test(self, title="", weight=1, keep_state=True, **params):
         if self.current_test is not None:
             self.end_test()
         self.test_number += 1
@@ -102,8 +104,14 @@ class TestSession:
         else:
             state = dict()
 
+        test_params = dict(self.params)
+        if self.current_test_group is not None:
+            test_params.update(self.current_test_group.params)
+        test_params.update(params)
+
         self.current_test = Test(self, self.test_number, state=state,
-                                 weight=weight, title=title)
+                                 weight=weight, title=title,
+                                 **test_params)
 
     def end_test(self):
         if self.current_test is None:
