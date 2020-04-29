@@ -11,10 +11,12 @@ def fig2base64(fig, format='png', transparent=True, **kwargs):
 def fig2svg(fig, transparent=True, **kwargs):
     file = StringIO()
     fig.savefig(file, format='svg', transparent=transparent, **kwargs)
+    width, height = self.figure.get_size_inches()
+    width, height = 72*width, 72*height
     lines = file.getvalue().splitlines()
     for i, line in enumerate(lines):
         if line.startswith('<svg'):
-            lines[i] = "<svg viewBox='0 0 %s %s'>" % (fig.width, fig.height)
+            lines[i] = "<svg viewBox='0 0 %s %s'>" % (width, height)
             break
         else:
             lines.pop()
