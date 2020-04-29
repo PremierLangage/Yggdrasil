@@ -27,14 +27,20 @@ text ==
 
 style.svg ==
 .img-container {
-    width: 60%;
+    width: 50%;
     margin: auto;
 }
 
-/* On screens that are 500px or less*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 576px) { /* css appliqué sur les téléphones */
     .img-container {
         width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 768px) { /* css appliqué sur les tablettes */
+    .img-container {
+        width: 75%;
         margin: auto;
     }
 }
