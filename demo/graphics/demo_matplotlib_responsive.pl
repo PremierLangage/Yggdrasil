@@ -2,7 +2,7 @@
 @ /grader/evaluator.py [grader.py]
 @ /lib/sandboxio.py
 
-title = Graphique
+title = Figures Matplotlib
 
 before ==
 import matplotlib.pyplot as plt
