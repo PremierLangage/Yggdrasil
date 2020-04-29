@@ -43,7 +43,11 @@ text ==
 </div>
 ==
 
-form =
+form ==
+<div class="img-container">
+{{image}}
+</div>
+==
 
 extracss ==
 <style>
