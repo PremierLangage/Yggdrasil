@@ -27,7 +27,7 @@ text ==
 
 style.svg ==
 .img-container {
-    width: 50%;
+    width: 60%;
     margin: auto;
 }
 
