@@ -3,7 +3,8 @@ from io import BytesIO
 import base64
 
 
-def fig2base64(fig, format='png', transparent=True):
+def fig2base64(fig, format='png', transparent=True, **kwargs):
     file = BytesIO()
-    fig.savefig(file, format=format, transparent=transparent)
+    fig.savefig(file, format=format, transparent=transparent, **kwargs)
     return base64.b64encode(file.getvalue()).decode('ascii')
+
