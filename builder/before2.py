@@ -2,7 +2,7 @@ import sys, json
 from components import Component
 import uuid
 from builderlib import aux_component
-from builderlib import PickleEncoder, add_try_clause, ComponentEnv
+from builderlib import PickleEncoder, ComponentEnv
 
 # Load the custom JSON encoder
 try:
@@ -21,9 +21,6 @@ try:
     from namespace import namespace
 except ModuleNotFoundError:
     namespace = {}
-
-class StopBeforeExec(Exception):
-    pass
 
 
 if __name__ == "__main__":
