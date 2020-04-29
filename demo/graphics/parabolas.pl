@@ -8,7 +8,7 @@ radio.decorator = CustomRadio
 before ==
 import matplotlib.pyplot as plt
 import numpy as np
-from plmpl import fig2base64
+from plmpl import fig2save
 
 n = 4
 source = []
@@ -30,7 +30,7 @@ for i in range(n):
     plt.title(f"Figure {i+1}")
     plt.grid(True)
     plt.gca().set_ylim((-6, 10))
-    source.append(fig2base64(plt.gcf(), format="png"))
+    source.append(fig2svg(plt.gcf()))
     plt.clf()
 
 ==
@@ -53,3 +53,6 @@ evaluator ==
 score = radio.eval()
 ==
 
+old ==
+<img src="data:image/png;base64,{{source[i]}}" style="max-width: 300px; vertical-align:top; margin: auto; display: inline-block" />
+==
