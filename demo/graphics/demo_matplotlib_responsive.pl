@@ -46,6 +46,7 @@ text ==
 form =
 
 extracss ==
+<style>
 .img-container {
     width: 60%;
     margin: auto;
@@ -66,6 +67,7 @@ extracss ==
         margin: auto;
     }
 }
+</style>
 ==
 
 
