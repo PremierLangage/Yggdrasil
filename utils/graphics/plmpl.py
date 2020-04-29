@@ -18,7 +18,8 @@ def fig2svg(fig, transparent=True, **kwargs):
             break
         else:
             lines.pop()
-    return file.getvalue()
+
+    return "\n".join(lines)
 
 
 def short_float_fmt(x):
