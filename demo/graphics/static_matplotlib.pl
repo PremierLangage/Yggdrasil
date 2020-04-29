@@ -18,7 +18,7 @@ source = fig2base64(plt.gcf(), format="png")
 ==
 
 text ==
-<img src="data:image/png;base64,{{source}}" style="width: 100%; height: auto;"/>
+<img src="data:image/png;base64,{{source}}" style="width: 100%; height: auto; max-width: 400px;"/>
 <img src="data:image/png;base64,{{source}}" style="max-width: 300px; vertical-align:top; display: inline" />
 ==
 
