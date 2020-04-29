@@ -43,6 +43,30 @@ $$ y = {{expr|latex}}.$$
 {% endfor %}
 ==
 
+style.exercise ==
+.img-container {
+    width: 50%;
+    margin: auto;
+}
+
+/* css appliqué sur les tablettes */
+@media screen and (max-width: 768px) {
+    .img-container {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+/* css appliqué sur les téléphones */
+@media screen and (max-width: 576px) {
+    .img-container {
+        width: 100%;
+        margin: auto;
+    }
+}
+</style>
+==
+
 form ==
 {{ radio|component }}
 ==
