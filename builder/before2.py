@@ -39,8 +39,7 @@ if __name__ == "__main__":
     if 'before' in dic:
 
         # execute the script in before key with dic as globals
-        dic['StopBeforeExec'] = StopBeforeExec
-        exec(add_try_clause(dic['before'], StopBeforeExec), dic)
+        exec(dic['before'], dic)
         
         # clean dic from namespace elements
         exec("", namespace)
