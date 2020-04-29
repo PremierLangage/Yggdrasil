@@ -18,8 +18,7 @@ source = fig2base64(plt.gcf(), format="png")
 ==
 
 text ==
-<img src="data:image/png;base64,{{source}}" style="width: 100%; height: auto; max-width: 600px;"/>
-<img src="data:image/png;base64,{{source}}" style="max-width: 300px; vertical-align:top; display: inline" />
+<img src="data:image/png;base64,{{source}}"/>
 ==
 
 form ==
@@ -29,4 +28,7 @@ evaluator ==
 score = 100
 ==
 
-
+old ==
+<img src="data:image/png;base64,{{source}}" style="width: 100%; height: auto; max-width: 600px;"/>
+<img src="data:image/png;base64,{{source}}" style="max-width: 300px; vertical-align:top; display: inline" />
+==
