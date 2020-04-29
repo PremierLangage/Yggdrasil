@@ -26,6 +26,11 @@ J'ai changé réponse acceptable
 27/04 -- bug  -- si j'ai s0, s1, s2,s3 et que je supprime s, lorsque je rajoute un état, il le nome s3 et fait l'amalgame avec l'ancien s3 àà vérifier
 27/04 -- supprimer etiquette devrait être supprimer transition. J'ai changé dans mon hack.js
 29/04 -- encore des bugs dans le renommage d'état -- pb avec les transitions
+29/04 -- pb d'affichage des automates enoncéé dans certains exos:
+SteveToday at 12:42 PM
+Re, du coup j'ai essayer en changeant de navigateur et ça marche j'ai bien les lettres des transitions ainsi que les numéros d'états (Sa ne fonctionnait pas sur Google Chrome)
+Kevin Da Costa MToday at 1:02 PM
+bizarre moi sa marchait sur Google chrome :thinking:
 
 
 =========
@@ -94,6 +99,7 @@ pour votre image vous devez lui donner une largeur fixé (voire 100% si c'est ce
      object-fit: cover; /* important pour avoir une image centrée */
    }
 }
+
 
 
 
