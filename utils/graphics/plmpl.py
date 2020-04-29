@@ -14,7 +14,7 @@ def fig2svg(fig, transparent=True, **kwargs):
     lines = file.getvalue().splitlines()
     for i, line in enumerate(lines):
         if line.startswith('<svg'):
-            lines[i] = "<svg viewBox='0 0 %s %s'>" % (200, 100)
+            lines[i] = "<svg viewBox='0 0 %s %s'>" % (fig.width, fig.height)
             break
         else:
             lines.pop()
