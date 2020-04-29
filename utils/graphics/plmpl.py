@@ -11,5 +11,7 @@ def fig2base64(fig, format='png', transparent=True, **kwargs):
 def fig2svg(fig, transparent=True, **kwargs):
     file = BytesIO()
     fig.savefig(file, format='svg', transparent=transparent, **kwargs)
-    return file.getvalue()
+    return '<svg' + file.buf.split('<svg')[1]
+
+
 
