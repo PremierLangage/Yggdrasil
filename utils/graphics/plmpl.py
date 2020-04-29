@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from io import BytesIO
+from io import BytesIO, StringIO
 import base64
 
 
@@ -9,9 +9,9 @@ def fig2base64(fig, format='png', transparent=True, **kwargs):
     return base64.b64encode(file.getvalue()).decode('ascii')
 
 def fig2svg(fig, transparent=True, **kwargs):
-    file = BytesIO()
+    file = StringIO()
     fig.savefig(file, format='svg', transparent=transparent, **kwargs)
-    return '<svg' + file.buf.split('<svg')[1]
+    return file.buf
 
 
 
