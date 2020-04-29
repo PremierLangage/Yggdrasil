@@ -31,7 +31,7 @@ style.svg ==
 }
 
 /* On screens that are 500px or less*/
-@media (width: 200px) {
+@media screen and (max-width: 500px) {
     .img-container {
         width: 100%;
     }
