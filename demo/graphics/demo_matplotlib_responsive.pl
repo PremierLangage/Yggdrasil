@@ -1,6 +1,6 @@
 @ /builder/before.py [builder.py]
 @ /grader/evaluator.py [grader.py]
-@ /lib/sandboxio.py
+@ /utils/sandboxio.py
 
 title = Figures Matplotlib
 
