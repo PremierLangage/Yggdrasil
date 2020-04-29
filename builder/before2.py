@@ -1,14 +1,13 @@
 import sys, json
 from components import Component
-import uuid
 from builderlib import aux_component
 from builderlib import PickleEncoder, ComponentEnv
 
 # Load the custom JSON encoder
 try:
-    from json_encoder import CustomEncoder
+    from json_encoder import CustomEncoder as JSONEncoder
 except ModuleNotFoundError:
-    CustomEncoder = PickleEncoder
+    JSONEncoder = PickleEncoder
 
 # Load the custom Jinja environnement
 try:
@@ -69,7 +68,7 @@ if __name__ == "__main__":
             dic[key] = env.from_string(dic[key]).render(dic)
 
     with open(sys.argv[2], "w+") as f:
-        json.dump(dic, f, cls=CustomEncoder)
+        json.dump(dic, f, cls=JSONEncoder)
 
     sys.exit(0)
 
