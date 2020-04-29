@@ -7,6 +7,7 @@ title = Figures Matplotlib
 before ==
 import matplotlib.pyplot as plt
 import numpy as np
+from plmpl import fig2svg
 
 t = np.arange(0.0, 2.0, 0.01)
 s = 1 + np.sin(2*np.pi*t)
@@ -15,25 +16,6 @@ plt.xlabel('time (s)')
 plt.ylabel('voltage (mV)')
 plt.title('About as simple as it gets, folks')
 plt.grid(True)
-
-# Fonction qui crée le svg à partir de la figure matplotlib
-# Post-traitement du code html fourni par matplotlib
-# pour retirer les attributs height et width de la balise svg
-
-from io import StringIO
-
-def fig2svg(fig, transparent=True, **kwargs):
-    file = StringIO()
-    fig.savefig(file, format='svg', transparent=transparent, **kwargs)
-    width, height = fig.get_size_inches()
-    width, height = 72*width, 72*height
-    lines = file.getvalue().splitlines()
-    for i, line in enumerate(lines):
-        if line.startswith('<svg'):
-            lines[i] = "<svg viewBox='0 0 %s %s'>" % (width, height)
-            break
-    return "\n".join(lines)
-
 image = fig2svg(plt.gcf())
 ==
 
