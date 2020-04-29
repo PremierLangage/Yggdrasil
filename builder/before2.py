@@ -3,19 +3,19 @@ from components import Component
 from builderlib import aux_component
 from builderlib import PickleEncoder, ComponentEnv
 
-# Load the custom JSON encoder
+# Import the custom JSON encoder
 try:
     from json_encoder import CustomEncoder as JSONEncoder
 except ModuleNotFoundError:
     JSONEncoder = PickleEncoder
 
-# Load the custom Jinja environnement
+# Import the custom Jinja environnement
 try:
     from jinja_env import CustomEnv as Env
 except ModuleNotFoundError:
     Env = ComponentEnv
 
-# Load the custom namespace
+# Import the custom namespace
 try:
     from namespace import namespace
 except ModuleNotFoundError:
