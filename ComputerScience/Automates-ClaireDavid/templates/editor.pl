@@ -55,7 +55,7 @@ form_instructions== #|html|
 <p>
     <ul>
         <li> Pour créer un nouvel état, double clic gauche. Utilisez les boutons pour changer le type de votre état.<br>
-        Ne renommez pas les états, il semblerait qu'il y ait encore qq bugs...
+        <i>Ne renommez pas les états, il semblerait qu'il y ait encore qq bugs...</i>
         </li>
         <li>
         Pour ajouter une transition cliquer sur le point orange de l'état de départ
