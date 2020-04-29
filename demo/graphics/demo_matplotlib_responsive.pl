@@ -43,6 +43,8 @@ text ==
 </div>
 ==
 
+form =
+
 extracss ==
 .img-container {
     width: 60%;
