@@ -37,7 +37,7 @@ for i in range(n):
 
 text ==
 Parmi les représentations graphiques suivantes, laquelle correspond à la parabole d'équation
-$$ y = {{expr.latex}}.$$
+$$ y = {{expr|latex}}.$$
 {% for i in range(n) %}
 {{source[i]}}
 {% endfor %}
