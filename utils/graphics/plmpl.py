@@ -8,3 +8,8 @@ def fig2base64(fig, format='png', transparent=True, **kwargs):
     fig.savefig(file, format=format, transparent=transparent, **kwargs)
     return base64.b64encode(file.getvalue()).decode('ascii')
 
+def fig2svg(fig, transparent=True, **kwargs):
+    file = BytesIO()
+    fig.savefig(file, format='svg', transparent=transparent, **kwargs)
+    return file.getvalue()
+
