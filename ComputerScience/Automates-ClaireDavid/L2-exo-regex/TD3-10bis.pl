@@ -14,7 +14,7 @@ generate== #|py|
 viewer = Automaton.parse('(aa)*(a|b)(bb)*')
 
 alphabet = "a,b"
-message = "des mots de a*b* qui ont un nombre de a modulo 2 différent de son nombre de b modulo 2."
+message = "des mots de a * b * qui ont un nombre de a modulo 2 différent de son nombre de b modulo 2."
 ==
 
 title = TD3.1-10 gentil
@@ -27,6 +27,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
