@@ -70,13 +70,6 @@ style.exercise ==
 ==
 
 form ==
-Parmi les représentations graphiques suivantes, laquelle correspond à la parabole d'équation
-$$ y = {{expr|latex}}.$$
-{% for i in range(n) %}
-<div class="img-container">
-{{source[i]}}
-</div>
-{% endfor %}
 {{ radio|component }}
 ==
 
