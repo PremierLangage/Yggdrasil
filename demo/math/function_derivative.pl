@@ -15,11 +15,12 @@ sol = diff(f, x)
 
 text ==
 Calculer la dérivée de la fonction
-$$ f : x \mapsto {{f|latex}} .$$
+$$ f : x \mapsto {{ f|latex }} .$$
 ==
 
 evaluator ==
 score, _, feedback = eval_function(input.value, sol)
 ==
+
 
 
