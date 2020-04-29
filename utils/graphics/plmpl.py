@@ -18,8 +18,6 @@ def fig2svg(fig, transparent=True, **kwargs):
         if line.startswith('<svg'):
             lines[i] = "<svg viewBox='0 0 %s %s'>" % (width, height)
             break
-        else:
-            lines.pop()
 
     return "\n".join(lines)
 
