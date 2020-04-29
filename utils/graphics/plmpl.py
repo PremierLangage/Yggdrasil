@@ -11,7 +11,7 @@ def fig2base64(fig, format='png', transparent=True, **kwargs):
 def fig2svg(fig, transparent=True, **kwargs):
     file = StringIO()
     fig.savefig(file, format='svg', transparent=transparent, **kwargs)
-    width, height = self.figure.get_size_inches()
+    width, height = fig.get_size_inches()
     width, height = 72*width, 72*height
     lines = file.getvalue().splitlines()
     for i, line in enumerate(lines):
