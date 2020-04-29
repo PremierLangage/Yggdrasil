@@ -3,7 +3,7 @@
 @ /utils/sandboxio.py
 @ /utils/graphics/plmpl.py
 
-title = Figures Matplotlib
+title = Figure Matplotlib
 
 before ==
 import matplotlib.pyplot as plt
@@ -27,7 +27,8 @@ text ==
 </div>
 ==
 
-form =
+form ==
+==
 
 extracss ==
 <style>
