@@ -80,8 +80,7 @@ if __name__ == "__main__":
         print(missing_evaluator_stderr, file=sys.stderr)
         sys.exit(1)
 
-    dic['StopEvaluatorExec'] = StopEvaluatorExec
-    exec(add_try_clause(code, StopEvaluatorExec), dic)
+    exec(code, dic)
     exec("", namespace)
     for key in namespace:
         if key in dic and dic[key] == namespace[key]:
@@ -122,11 +121,6 @@ if __name__ == "__main__":
             ffeedback=format_feedback_score(score,feedback)
         elif dic['settings']['feedback']=='lightscore':
             ffeedback=format_feedback_lightscore(score,feedback)
-
-    for key in ['text', 'form']:
-        dic[key] = env.from_string(dic[key]).render(dic)
-
-    ffeedback = env.from_string(ffeedback).render(dic)
 
     with open(sys.argv[3], "w+") as f:
         json.dump(dic, f)
