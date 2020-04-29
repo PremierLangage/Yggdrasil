@@ -47,14 +47,14 @@ $$ y = {{expr|latex}}.$$
 
 style.exercise ==
 .img-container {
-    width: 50%;
+    width: 40%;
     margin: auto;
 }
 
 /* css appliqué sur les tablettes */
 @media screen and (max-width: 768px) {
     .img-container {
-        width: 50%;
+        width: 40%;
         margin: auto;
     }
 }
