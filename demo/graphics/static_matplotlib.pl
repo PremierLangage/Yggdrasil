@@ -15,7 +15,7 @@ plt.ylabel('voltage (mV)')
 plt.title('About as simple as it gets, folks')
 plt.grid(True)
 
-source = fig2base64(plt.gcf(), format="png")
+source = fig2base64(plt.gcf(), figsize=(1,1), format="png")
 ==
 
 text ==
