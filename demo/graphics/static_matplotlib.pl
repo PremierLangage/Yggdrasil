@@ -27,7 +27,7 @@ text ==
 
 style.svg ==
 .img-container {
-    width: 50%;
+    width: 60%;
     margin: auto;
 }
 
@@ -40,7 +40,7 @@ style.svg ==
 
 @media screen and (max-width: 768px) { /* css appliqué sur les tablettes */
     .img-container {
-        width: 75%;
+        width: 80%;
         margin: auto;
     }
 }
