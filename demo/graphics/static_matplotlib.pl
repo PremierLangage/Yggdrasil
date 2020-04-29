@@ -26,13 +26,15 @@ text ==
 ==
 
 style.svg ==
-.svg-container {
-display: inline-block;
-position: relative;
-width: 100%;
-padding-bottom: 100%;
-vertical-align: middle;
-overflow: hidden;
+.img-container {
+    width: 60%;
+}
+
+/* On screens that are 500px or less*/
+@media screen and (max-width: 500px) {
+    .img-container {
+        width: 100%;
+    }
 }
 ==
 
