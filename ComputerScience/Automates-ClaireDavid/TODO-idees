@@ -65,6 +65,35 @@ text==
 
 
 
+<img src="{{ toto }}" style=" y a du style !" >
+
+
+
+ /* L'ORDRE DES MEDIA QUERIES EST IMPORTANT IL FAUT METTRE CELUI QUI COUVRE LE PLUS D'ECRANS EN PREMIER (LE DERNIER) */
+@media screen and (max-width: 576px) { /* css appliqué sur les téléphones */
+  
+}
+
+@media screen and (max-width: 768px) { /* css appliqué sur les tablettes */
+  
+}
+
+@media screen and (max-width: 992px) { /* css appliqué sur les pc */
+  
+}
+
+@media screen and (max-width: 1200px) { /* css appliqué sur les grands écrans */
+  
+}
+pour votre image vous devez lui donner une largeur fixé (voire 100% si c'est ce que vous voulez) et une  hauteur fixé sur les différents targets
+/* example sur les écrans <= tablettes */
+@media screen and (max-width: 768px) {
+   img {
+     height: 320px;
+     width: 100%;
+     object-fit: cover; /* important pour avoir une image centrée */
+   }
+}
 
 
 
