@@ -11,9 +11,9 @@ except ModuleNotFoundError:
 
 # Load the custom Jinja environnement
 try:
-    from jinja_env import CustomEnv as env
+    from jinja_env import CustomEnv as Env
 except ModuleNotFoundError:
-    env = ComponentEnv
+    Env = ComponentEnv
 
 # Load the custom namespace
 try:
@@ -65,7 +65,7 @@ if __name__ == "__main__":
 
     for key in ['text', 'form', 'solution']:
         if key in dic:
-            dic[key] = env.from_string(dic[key]).render(dic)
+            dic[key] = Env.from_string(dic[key]).render(dic)
 
     with open(sys.argv[2], "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
