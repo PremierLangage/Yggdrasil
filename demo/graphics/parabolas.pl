@@ -49,7 +49,7 @@ style.exercise ==
 .img-container {
     width: 50%;
     margin: auto;
-    display: inline;
+    display: inline-block;
 }
 
 /* css appliqué sur les tablettes */
