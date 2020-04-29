@@ -20,10 +20,22 @@ source = fig2svg(plt.gcf())
 ==
 
 text ==
-<div>
+<div class="svg-container">
 {{source}}
 </div>
 ==
+
+style.svg ==
+.svg-container {
+display: inline-block;
+position: relative;
+width: 100%;
+padding-bottom: 100%;
+vertical-align: middle;
+overflow: hidden;
+}
+==
+
 
 form ==
 ==
