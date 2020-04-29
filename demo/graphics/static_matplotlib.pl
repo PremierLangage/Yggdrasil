@@ -15,10 +15,12 @@ plt.title('About as simple as it gets, folks')
 plt.grid(True)
 
 source = fig2base64(plt.gcf(), format="png")
+source = fig2base64(plt.gcf(), format="svg")
+
 ==
 
 text ==
-<img src="data:image/png;base64,{{source}}"/>
+{{source}}
 ==
 
 form ==
@@ -29,6 +31,8 @@ score = 100
 ==
 
 old ==
+<img src="data:image/png;base64,{{source}}"/>
+
 <img src="data:image/png;base64,{{source}}" style="width: 100%; height: auto; max-width: 600px;"/>
 <img src="data:image/png;base64,{{source}}" style="max-width: 300px; vertical-align:top; display: inline" />
 ==
