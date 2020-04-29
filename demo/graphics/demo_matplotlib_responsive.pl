@@ -39,13 +39,7 @@ image = fig2svg(plt.gcf())
 
 text ==
 <div class="img-container">
-{{image}}
-</div>
-==
-
-form ==
-<div class="img-container">
-{{image}}
+{{image|safe}}
 </div>
 ==
 
