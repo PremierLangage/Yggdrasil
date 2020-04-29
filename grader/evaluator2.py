@@ -25,9 +25,6 @@ try:
 except ModuleNotFoundError:
     namespace = {}
 
-class StopEvaluatorExec(Exception):
-    pass
-
 def format_feedback_rightwrong(score,feedback):
     tpl="""<div class="alert {}"><strong>{}</strong> <br> {}</div>"""
     if score==-1:
