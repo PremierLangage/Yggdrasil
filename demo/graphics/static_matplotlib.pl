@@ -20,7 +20,7 @@ source = fig2svg(plt.gcf())
 ==
 
 text ==
-<div style="width: 50%">
+<div class="img-container">
 {{source}}
 </div>
 ==
