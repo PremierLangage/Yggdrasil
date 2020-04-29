@@ -54,9 +54,14 @@ Exercices à concevoir: --attendre la nouvelle lib pour l'ismorphisme
 + QCM reg/non-reg
 
 
+==============
 
+Afficher image
 
-
+toto =$ fichierimahe.png
+text==
+![alter]({{toto}})
+==
 
 
 
