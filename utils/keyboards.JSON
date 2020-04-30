@@ -1071,6 +1071,9 @@
               "label": "^"
             },
             {
+              "class": "separator w10"
+            },
+            {
                 "class": "action",
                 "command": "moveToPreviousChar",
                 "label": "<svg><use xlink:href='#svg-arrow-left' /></svg>"
@@ -1112,7 +1115,7 @@
               "insert": ","
             },
             {
-                "class": "action font-glyph bottom right w30",
+                "class": "action font-glyph bottom right w40",
                 "command": "deletePreviousChar",
                 "label": "&#x232b;"
             }
