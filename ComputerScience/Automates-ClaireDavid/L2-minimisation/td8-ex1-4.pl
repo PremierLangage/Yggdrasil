@@ -16,13 +16,14 @@ enonce = '''
     S4
     S5
     S6
+    S7
     #initials
     S1
     #accepting
     S1
     S2
-    S3
-    S6
+    S4
+    S7
     #alphabet
     a
     b
@@ -39,6 +40,8 @@ enonce = '''
     S5:b>S3
     S6:a>S3
     S6:b>S6
+    S7:a>S3
+    S7:b>S6
 '''
 
 #viewer est le langage solution -- le nom est forcé le reste. On changera plus tard
