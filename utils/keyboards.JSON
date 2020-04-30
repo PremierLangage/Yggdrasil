@@ -37,6 +37,11 @@
         "label": "Fonctions",
         "tooltip": "Fonctions",
         "layer": "functions"
+      },
+      "electronics": {
+        "label": "Electronique",
+        "tooltip": "Electronique",
+        "layer": "electronics"
       }
     },
     "customVirtualKeyboardLayers": {
