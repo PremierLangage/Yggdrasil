@@ -167,7 +167,7 @@ instances = [([], []), ([1], []),
 
 begin_test('Respect des consignes')
 assert_defines_function("verifie")
-assert_calls("verifie", "longueurs_blocs")
+assert_calls_function("verifie", "longueurs_blocs")
 
 for contraintes, rangee in instances:
     begin_test(f'Vérification (test fixe)')
