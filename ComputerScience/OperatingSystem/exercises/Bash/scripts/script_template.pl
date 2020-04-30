@@ -109,7 +109,7 @@ else:
             feedback_tests += "Test "+test_name+ "... OK!<br />"
         else:
             nb_test_fail += 1
-            feedback_tests += "Test "+test_name+ " failled<br />"
+            feedback_tests += "Test "+test_name+ " échoué<br />"
 
         if (returncode != 0):
             break
