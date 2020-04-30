@@ -133,9 +133,9 @@ else:
             nb_test_fail += 1
             feedback_tests += '<div id="cercle_rouge" style="display: inline-block"></div> <div style="display: inline">Test '+test_name+ " échoué</div><br />"
             feedback_tests += '<u>Attendu :</u></br>'
-            feedback_tests += "<b>"+expected_stdout.replace('\n', '<br />')+"</b>"
+            feedback_tests += "<b>"+expected_stdout.replace('\n', '<br />')+"</b><br />"
             feedback_tests += '<u>Obtenu :</u></br>'
-            feedback_tests += "<b>"+spout.replace('\n', '<br />')+"</b>"
+            feedback_tests += "<b>"+spout.replace('\n', '<br />')+"</b><br />"
 
         if (returncode != 0):
             break
