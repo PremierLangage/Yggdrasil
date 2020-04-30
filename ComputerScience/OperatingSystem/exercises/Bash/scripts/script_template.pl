@@ -53,18 +53,16 @@ form==
 style_add==
 <style>
 #cercle_vert {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    background: green;
-    border: 1px solid black;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.5em;
+    background: #CCFFCC;
 }
 #cercle_rouge {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    background: red;
-    border: 1px solid black;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.5em;
+    background: #FFCCCC;
 }
 </style>
 ==
@@ -132,6 +130,9 @@ else:
         else:
             nb_test_fail += 1
             feedback_tests += '<div id="cercle_rouge" style="display: inline-block"></div> <div style="display: inline">Test '+test_name+ " échoué</div><br />"
+            feedback_tests += '<u>Attendu :</u></br>'
+            feedback_tests += "<b>"++"</b>"
+            feedback_tests += '<u>Obtenu :</u></br>'
 
         if (returncode != 0):
             break
