@@ -11,7 +11,7 @@ questions=""
 for _ in range(2):
     a=random.randint(1,5)
     b=random.randint(-5,5)
-    while n==a:
+    while b==a:
         b=random.randint(-5,5)
     a2=a//random.randint(1,5)
     f=f"{a}x{b}" if b<0 else f"{a}x+{b}"
