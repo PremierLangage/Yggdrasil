@@ -23,6 +23,8 @@ form ==
 ==
 
 evaluator ==
-score, _, feedback = eval_complex(input.value, sol, imaginary_unit="j", local_dict={"omega": omega})
+score = 0
+feedback = latex2sympy(input.value,local_dict={"omega": omega})
+#score, _, feedback = eval_complex(input.value, sol, imaginary_unit="j", local_dict={"omega": omega})
 ==
 
