@@ -11,9 +11,9 @@ un certain nombre de pixels de la rangée.
 
 On va essayer de résoudre le problème, en le formalisant de la manière
 suivante. Le but est d'écrire une fonction 
-`completable(contraintes, pixels)`
-où `contraintes` est une liste d'entiers positifs et `pixels`une liste
-contenant exclusivement des entiers 0 et 1.
+`completable(contraintes, pixels)` où `contraintes` est une liste 
+d'entiers positifs et `pixels`une liste
+contenant exclusivement les entiers 0 et 1.
 
 On dit qu'une liste de 0 et de 1 `lst` vérifie la liste de contraintes
 `contraintes` si et seulement si la suite des longueurs des blocs de 1 contigus
@@ -32,10 +32,10 @@ L'algorithme fonctionne comme suit :
 
 <ul>
 <li> Si la liste considérée vérifie déjà les contraintes, répondre "vrai" ;
-<li> Sinon, soit `k` la taille de la première contrainte, on considère deux cas
-:
+<li> Sinon, soit `k` la taille de la première contrainte, on essaie deux
+ stratégies (à la manière des algorithmes vus précédemment) :
     <ul>
-    <li> <div>*Cas 1* : On essaie de compléter la ligne en colorant les pixels
+    <li> <div>*Essai 1* : On essaie de compléter la ligne en colorant les pixels
     d'indice
      `0` à `k-1` (et pas un de plus !). Cela n'est possible que si :
         <ul>
@@ -45,12 +45,12 @@ L'algorithme fonctionne comme suit :
       Dans ce cas, si la ligne est complétable *vis-à-vis des contraintes 
       restantes* à partir de la position `k + 1`, on répond "vrai" 
       (relisez cette phrase trois fois).</div>
-    <li> *Cas 2* : On n'essaie pas de colorier le pixel d'indice `0`. 
+    <li> *Essai 2* : On n'essaie pas de colorier le pixel d'indice `0`. 
       Cela n'est possible que si le pixel d'indice 0 n'est pas déjà colorié.  
       Dans ce cas, si la ligne est complétable à partir du pixel d'indice `1`, 
       on répond "vrai".
     </ul>
-<li> Si les deux cas ci-dessus échouent, alors la ligne n'est pas complétable
+<li> Si les deux essais ci-dessus échouent, alors la ligne n'est pas complétable
   et on répond "faux".
 </ul>
   
@@ -163,7 +163,8 @@ instances = [([], []), ([1], []),
              ([3], [0, 1, 1]), ([3], [1, 1, 0]),
              ([3], [1, 0, 1]), ([3], [1, 1, 1]),
              ([2], [1, 0, 1]), ([1, 2], [0, 0, 0]),
-             ([1, 1], [0, 1, 0])]
+             ([1, 1], [0, 1, 0]),
+             ([1, 1], [0, 0, 0])]
 
 begin_test('Respect des consignes')
 assert_defines_function("verifie")
@@ -180,7 +181,8 @@ begin_test_group('Question 3 - Fonction <code>coloriable</code>')
 begin_test('Respect des consignes')
 assert_defines_function("coloriable")
 
-instances_col = [([0, 0, 1], 0), ([0, 0, 1], 1), ([0, 0, 1], 2), ([0, 0, 1], 3)]
+instances_col = [([0, 0, 1], 0), ([0, 0, 1], 1),
+                 ([0, 0, 1], 2), ([0, 0, 1], 3), ([0, 0, 1], 4)]
 
 for rangee, k in instances_col:
     begin_test(f'Coloriable (test fixe)')
@@ -200,7 +202,5 @@ for contraintes, rangee in instances:
     evaluate(f'completable({contraintes}, {rangee})')
     assert_output('')
     assert_result(completable(contraintes, rangee))
-
-
 ==
 
