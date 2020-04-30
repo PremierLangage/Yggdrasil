@@ -71,7 +71,6 @@ else:
     f.close()
 
     cumul_output = ""
-    test_ok = True 
     nb_test_ok = 0
     nb_test_fail = 0
 
@@ -89,14 +88,17 @@ else:
         errout += sp.stderr.decode()
         returncode = sp.returncode
 
-        form += display_as_script_shell_this(editor.code, spout, str(response["user_hack"]), errout, returncode)
+        cumul_output += spout + errout
 
         if expected_stdout == spout:
-            feedback = "Bravo, votre code fait le travail !"
-            grade = (100, frame_message(feedback, "ok"))
+            nb_test_ok += 1
         else:
-            feedback = "Désolé, votre code ne produit pas le résultat attendu. Modifiez votre commande."
-            grade = (0, frame_message(feedback, "error"))
+            nb_test_fail += 1
+
+        if (returncode != 0):
+            break
+
+    display_as_script_shell_this(editor.code, spout, str(response["user_hack"]), errout, returncode)
 
     final_grade = int((100*nb_test_ok) // (nb_test_ok + nb_test_fail))
     if nb_test_fail == 0:
