@@ -21,7 +21,7 @@ from random import choice, randint
 
 def random_args():
     L = ["Pierre", "Paul", "Martin", "Jacques", "un", "deux", "trois", "quatre", "1", "192", "3.1415", "10.01"]
-    return " ".join([choice(L) for i in randint(3, 8)])
+    return " ".join([choice(L) for i in range(randint(3, 8))])
 
 test_bash = [["Test simple", "Salut", "Salut\n"],
 ["Trois arguments", "Pierre Paul Jacques", "Pierre Paul Jacques\n"],
