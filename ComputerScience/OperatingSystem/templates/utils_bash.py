@@ -89,7 +89,7 @@ def frame_message(message, status=None):
     return s
     
 
-def display_as_script_shell_this(command, output, user=None, errout="", returncode=0):
+def display_as_script_shell_this(command, output, user=None, errout="", returncode=0, args=""):
     r"""
     Return a nice shell looking of the command and its output in html/css
     """
@@ -117,7 +117,7 @@ def display_as_script_shell_this(command, output, user=None, errout="", returnco
         command = command[:-1]
     if user is not None:
         s += user+"@PLaTon"
-    s += ":~$> " + command.replace('\n', '<br />')
+    s += ":~$> ./myscript " + args 
     s += "<br />"
     if len(errout) > 0:
         s += '<span style="color: red; text-shadow: 0 0 5px #C80000;">'
