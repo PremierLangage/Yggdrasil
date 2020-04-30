@@ -10,6 +10,7 @@ X1 = R + I * L * omega
 X2 = I
 sol = simplify(1/(1/X1 + 1/X2))
 h = expand_complex(X1/X2)
+b = h.is_complex
 ==
 
 text ==
