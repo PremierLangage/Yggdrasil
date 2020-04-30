@@ -28,20 +28,20 @@ enonce = '''
     a
     b
     #transitions
-    S1:a>S5
-    S1:b>S4
-    S2:a>S6
-    S2:b>S6
-    S3:a>S6
-    S3:b>S3
-    S4:a>S2
-    S4:b>S1
-    S5:a>S2
-    S5:b>S3
-    S6:a>S3
-    S6:b>S6
-    S7:a>S3
-    S7:b>S6
+    S1:a>S4
+    S1:b>S2
+    S2:a>S3
+    S2:b>S7
+    S3:a>S2
+    S3:b>S5
+    S4:a>S7
+    S4:b>S7
+    S5:a>S7
+    S5:b>S6
+    S6:a>S7
+    S6:b>S5
+    S7:a>S5
+    S7:b>S7
 '''
 
 #viewer est le langage solution -- le nom est forcé le reste. On changera plus tard
