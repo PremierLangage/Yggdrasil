@@ -26,11 +26,11 @@ def random_args():
 s1 = random_args()
 s2 = random_args()
 
-test_bash = [["Test simple", ["Salut"], "Salut\n"],
-["Trois arguments", ["Pierre", "Paul", "Jacques"], "Pierre\nPaul\nJacques\n"],
-["Aucun argument", [], ""],
-["Aléatoire", s1, "\n".join(s1) + "\n"],
-["Aléatoire", s2, "\n".join(s2) + "\n"],
+test_bash = [["simple", ["Salut"], "Salut\n"],
+["trois arguments", ["Pierre", "Paul", "Jacques"], "Pierre\nPaul\nJacques\n"],
+["aucun argument", [], ""],
+["aléatoire", s1, "\n".join(s1) + "\n"],
+["aléatoire", s2, "\n".join(s2) + "\n"],
 ]
 ==
 
