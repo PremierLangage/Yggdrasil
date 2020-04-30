@@ -13,7 +13,7 @@ sol = R*(I+L)
 # h = expand_complex(X1/X2)
 # h = X1/X2
 # b = h.is_complex
-b = srepr()
+b = srepr(sol)
 c = srepr(latex2sympy(latex(sol),  local_dict={"i": I, "omega": omega, "R": R, "L": L}))
 ==
 
