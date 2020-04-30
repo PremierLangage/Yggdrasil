@@ -1115,7 +1115,7 @@
               "insert": ","
             },
             {
-                "class": "action font-glyph bottom right w40",
+                "class": "action font-glyph bottom right w20",
                 "command": "deletePreviousChar",
                 "label": "&#x232b;"
             }
