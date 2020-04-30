@@ -1,8 +1,9 @@
 
 
-title= Des fonctions Lipschitziennes
+title=Des fonctions Lipschitziennes
 tag= Lipschitz|function|math|continuity 
 
+extends=/model/AMC_TXT.pl
 
 # ce code permet d'ajouter des qestions 
 buildquestions==
@@ -23,4 +24,5 @@ for _ in range(5):
 ==
 
 extends=/model/AMC_TXT.pl
+
 
