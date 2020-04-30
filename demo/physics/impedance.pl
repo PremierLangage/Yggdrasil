@@ -25,6 +25,7 @@ form ==
 
 evaluator ==
 score = 0
-score, _, feedback = eval_complex(input.value, sol, imaginary_unit="j", local_dict={"omega": omega, "R": R, "L": L})
+feedback = srepr(omega)
+#score, _, feedback = eval_complex(input.value, sol, imaginary_unit="j", local_dict={"omega": omega, "R": R, "L": L})
 ==
 
