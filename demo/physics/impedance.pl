@@ -14,7 +14,7 @@ sol = R *(1 + R)
 # h = X1/X2
 # b = h.is_complex
 b = srepr(sol)
-c = srepr(str2sympy("R*(1+R)", local_dict={"i": I, "omega": omega, "R": R, "L": L}))
+c = srepr(str2sympy("R(1+R)", local_dict={"i": I, "omega": omega, "R": R, "L": L}))
 ==
 
 text ==
