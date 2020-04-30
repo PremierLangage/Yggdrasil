@@ -14,6 +14,7 @@ b = h.is_complex
 ==
 
 text ==
+{{b}}
 {{h|latex}}
 $$ {{sol|latex}} $$
 ==
