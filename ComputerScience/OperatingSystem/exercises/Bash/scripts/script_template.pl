@@ -70,19 +70,44 @@ else:
     f.write(editor.code)
     f.close()
 
-    sp = subprocess.run(["/bin/bash", "student_script.sh"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=7)
-    spout = sp.stdout.decode()
-    errout = sp.stderr.decode()
-    returncode = sp.returncode
+    cumul_output = ""
+    test_ok = True 
+    nb_test_ok = 0
+    nb_test_fail = 0
 
-    form += display_as_script_shell_this(editor.code, spout, str(response["user_hack"]), errout, returncode)
+    for test_unit in test_bash:
+        args_test = test_unit[1]
+        expected_stdout = test_unit[2]
+        test_name = test_unit[0]
 
-    if expected_stdout == spout:
-        feedback = "Bravo, votre code fait le travail !"
-        grade = (100, frame_message(feedback, "ok"))
+        command_args = ["/bin/bash", "student_script.sh"]
+        if args_test != "":
+            command_args += args_test.split(' ')
+        
+        sp = subprocess.run(command_args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=7)
+        spout += sp.stdout.decode()
+        errout += sp.stderr.decode()
+        returncode = sp.returncode
+
+        form += display_as_script_shell_this(editor.code, spout, str(response["user_hack"]), errout, returncode)
+
+        if expected_stdout == spout:
+            feedback = "Bravo, votre code fait le travail !"
+            grade = (100, frame_message(feedback, "ok"))
+        else:
+            feedback = "Désolé, votre code ne produit pas le résultat attendu. Modifiez votre commande."
+            grade = (0, frame_message(feedback, "error"))
+
+    final_grade = int((100*nb_test_ok) // (nb_test_ok + nb_test_fail))
+    if nb_test_fail == 0:
+        feedback = "Bravo, votre code fait le travail, tous les tests passent !"
+        grade = (final_grade, frame_message(feedback, "ok"))
     else:
-        feedback = "Désolé, votre code ne produit pas le résultat attendu. Modifiez votre commande."
-        grade = (0, frame_message(feedback, "error"))
+        if nb_test_fail > 1:
+            feedback = "Désolé, votre code ne produit pas les résultats attendus. "+str(nb_test_fail)+" tests ont échoué."
+        else:
+            feedback = "Désolé, votre code ne produit pas les résultats attendus. "+str(nb_test_fail)+" test a échoué."
+        grade = (final_grade, frame_message(feedback, "error"))
 
 ==
 
