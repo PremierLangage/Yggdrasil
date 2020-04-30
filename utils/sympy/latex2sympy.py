@@ -35,7 +35,7 @@ def str2sympy(s, local_dict={}, evaluate=False):
     s = s.replace("}", "]")
     
     transformations=prs.standard_transformations + (prs.implicit_multiplication_application,prs.convert_xor)
-
+    transformations = (prs.standard_transformations + (prs.implicit_multiplication_application,))
     return prs.parse_expr(s,local_dict=local_dict,transformations=transformations,evaluate=evaluate)
 
 def latex2str(s):
@@ -177,4 +177,5 @@ def FiniteSet2struct(S):
         return tuple([FiniteSet2struct(x) for x in S])
     else:
         return S
+
 
