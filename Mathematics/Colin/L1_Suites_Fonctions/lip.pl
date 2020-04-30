@@ -7,7 +7,7 @@ tag= Lipschitz|function|math|continuity
 # ce code permet d'ajouter des qestions 
 buildquestions==
 import random
-questions=""
+# questions=""
 for toto in range(2):
     a=random.randint(4,15)
     b=random.randint(-18,3)
@@ -23,6 +23,13 @@ for toto in range(2):
 - est {a2}-Lipschitzienne
 - n'est pas Lipschitzienne
 """
+
+questions+="""
+
+# ma question 
+
+"""
+
 
 for _ in range(3):
     a=random.randint(1,5)
@@ -44,3 +51,12 @@ for _ in range(3):
 
 extends=/model/AMC_TXT.pl
 
+questions==
+
+
+* Rappeler la définition d'une fonction $% f :\mathbb{R} \rightarrow \mathbb{R}%$ Lipschitzienne : 
+- $% \forall K >0, ~ \exists x,y \in \mathbb{R} \text{ tel que } |f(x) - f(y)| \leq K|x-y| %$
+- $% \exists K >0, ~ \forall x,y \in \mathbb{R}, ~ |f(x) - f(y)| \leq |x-y| %$
++ $% \exists K >0, ~ \forall x,y \in \mathbb{R}, ~ |f(x) - f(y)| \leq K|x-y| %$
+- $% \forall \varepsilon >0, ~ \exists K >0, \forall x,y \in \mathbb{R}, ~ \Big[|x-y| \leq K \Big] \implies |f(x) - f(y)| \leq \varepsilon %$
+==
