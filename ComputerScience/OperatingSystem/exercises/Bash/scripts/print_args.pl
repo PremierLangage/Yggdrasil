@@ -34,7 +34,7 @@ test_bash = [["Test simple", ["Salut"], "Salut\n"],
 ]
 ==
 
-author=<a href='mailto:Nicolas.Borie@u-pem.fr'>Nicolas Borie<a>
+author=<a href="mailto:Nicolas.Borie@u-pem.fr">Nicolas Borie<a>
 title=Afficher les arguments d'un script bash
 
 text==
