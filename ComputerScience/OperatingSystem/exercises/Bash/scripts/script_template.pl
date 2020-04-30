@@ -55,15 +55,15 @@ style_add==
 #cercle_vert {
     width: 20px;
     height: 20px;
-    border-radius: 10px;
-    background: green;
+    border-radius: 0.5em;
+    background: #CCFFCC;
     border: 1px solid black;
 }
 #cercle_rouge {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    background: red;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.5em;
+    background: #FFCCCC;
     border: 1px solid black;
 }
 </style>
