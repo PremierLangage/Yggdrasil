@@ -15,6 +15,7 @@ sol = simplify(1/(1/X1 + 1/X2))
 ==
 
 text ==
+Quelle est l'imépdance de R en parallèle avec R + L ?
 $$ {{sol|latex}} $$
 ==
 
