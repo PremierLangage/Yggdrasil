@@ -126,10 +126,10 @@ else:
 
         if expected_stdout == spout:
             nb_test_ok += 1
-            feedback_tests += '<div id="cercle_vert"></div> Test '+test_name+ "... OK!<br />"
+            feedback_tests += '<div id="cercle_vert"> Test '+test_name+ "... OK!</div><br />"
         else:
             nb_test_fail += 1
-            feedback_tests += '<div id="cercle_rouge"></div>Test '+test_name+ " échoué<br />"
+            feedback_tests += '<div id="cercle_rouge"> Test '+test_name+ " échoué</div><br />"
 
         if (returncode != 0):
             break
