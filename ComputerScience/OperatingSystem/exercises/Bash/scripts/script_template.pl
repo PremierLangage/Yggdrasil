@@ -104,7 +104,7 @@ else:
             cumul_output += '<span style="color: red; text-shadow: 0 0 5px #C80000;">'
             cumul_output += errout.replace('\n', ' <br />')
             cumul_output += '</span>'
-        cumul_output += output.replace('\n', ' <br />')
+        cumul_output += spout.replace('\n', ' <br />')
 
         if expected_stdout == spout:
             nb_test_ok += 1
