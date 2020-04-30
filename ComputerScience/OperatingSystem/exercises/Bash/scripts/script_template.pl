@@ -74,6 +74,14 @@ else:
     nb_test_ok = 0
     nb_test_fail = 0
 
+    # making the div for terminal screen
+    cumul_output += '<br /><div style="background-color: black; '
+    cumul_output += 'background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%); '
+    #cumul_output += 'height: 80vh; '
+    cumul_output += 'font: 1rem Inconsolata, monospace; '
+    cumul_output += 'border-radius: 15px; padding: 10px;" >'
+    cumul_output += '<pre><output style="color: white; text-shadow: 0 0 5px #C8C8C8;">'
+
     for test_unit in test_bash:
         args_test = test_unit[1]
         expected_stdout = test_unit[2]
@@ -88,7 +96,15 @@ else:
         errout += sp.stderr.decode()
         returncode = sp.returncode
 
-        cumul_output += spout + errout
+        cumul_output += str(response["user_hack"])+"@PLaTon"
+        cumul_output += ":~$> ./myscript " + args_test
+        cumul_output += "<br />"
+
+        if len(errout) > 0:
+            cumul_output += '<span style="color: red; text-shadow: 0 0 5px #C80000;">'
+            cumul_output += errout.replace('\n', ' <br />')
+            cumul_output += '</span>'
+        cumul_output += output.replace('\n', ' <br />')
 
         if expected_stdout == spout:
             nb_test_ok += 1
@@ -98,7 +114,19 @@ else:
         if (returncode != 0):
             break
 
-    display_as_script_shell_this(editor.code, spout, str(response["user_hack"]), errout, returncode)
+        # Information about process termination
+    if returncode == 0:
+        form += "Processes exited normally"
+    elif returncode > 0:
+        form += "Process exited normally with code "+str(returncode)
+    else:
+        if -returncode in signals:
+            form += "Process exited with signal ("+str(-returncode)+") "+signals[-returncode]
+        else:
+            form += "Process exited with signal ("+str(-returncode)+")"
+
+    cumul_output += "</output></pre></div>"
+    form += cumul_output
 
     final_grade = int((100*nb_test_ok) // (nb_test_ok + nb_test_fail))
     if nb_test_fail == 0:
