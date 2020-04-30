@@ -5,6 +5,7 @@
 title = Addition
 
 before ==
+import sympy as sp
 import sympy.parsing.sympy_parser as prs
 
 sp.var('R', real=True)
