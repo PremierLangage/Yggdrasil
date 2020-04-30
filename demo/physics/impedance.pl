@@ -9,9 +9,11 @@ var('R L omega')
 X1 = R + I * L * omega
 X2 = R
 sol = simplify(1/(1/X1 + 1/X2))
+h = X1.is_complex
 ==
 
 text ==
+{{h}}
 $$ {{sol|latex}} $$
 ==
 
