@@ -14,7 +14,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
+extends=script_template.pl
 
 expected_stdout=""
 
