@@ -1039,6 +1039,10 @@
             {
               "class": "keycap",
               "insert": "i"
+            },
+            {
+              "class": "keycap",
+              "insert": "\\omega"
             }
           ],
           [
@@ -1105,7 +1109,7 @@
               "insert": ","
             },
             {
-                "class": "action font-glyph bottom right w20",
+                "class": "action font-glyph bottom right w30",
                 "command": "deletePreviousChar",
                 "label": "&#x232b;"
             }
