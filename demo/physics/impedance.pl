@@ -13,7 +13,7 @@ h = expand_complex(X1/X2)
 ==
 
 text ==
-{{h}}
+{{h|latex}}
 $$ {{sol|latex}} $$
 ==
 
