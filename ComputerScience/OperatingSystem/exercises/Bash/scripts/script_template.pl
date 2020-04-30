@@ -21,7 +21,7 @@ builder =@ /builder/before.py
 editor =: CodeEditor
 editor.theme = dark
 editor.language = shell
-editor.height = 2000px
+editor.height = 200px
 
 editor.code ==
 # entrez votre code shell ici...
