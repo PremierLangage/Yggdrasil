@@ -9,10 +9,11 @@ var('R,L,omega', real=True, nonzero=True)
 X1 = R + I * L * omega
 X2 = R
 sol = simplify(1/(1/X1 + 1/X2))
+sol = R*(I+L)
 # h = expand_complex(X1/X2)
 # h = X1/X2
 # b = h.is_complex
-b = srepr(sol)
+b = srepr()
 c = srepr(latex2sympy(latex(sol),  local_dict={"i": I, "omega": omega, "R": R, "L": L}))
 ==
 
