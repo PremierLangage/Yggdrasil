@@ -26,7 +26,7 @@ form ==
 evaluator ==
 score = 0
 ans = latex2sympy(input.value,  local_dict={"j": I, "omega": omega, "R": R, "L": L})
-feedback = str(expand_comlex(ans.is_complex))
+feedback = str(expand_complex(ans).is_complex)
 #score, _, feedback = eval_complex(input.value, sol, imaginary_unit="j",)
 ==
 
