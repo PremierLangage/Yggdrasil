@@ -23,6 +23,6 @@ form ==
 ==
 
 evaluator ==
-score, _, feedback = eval_complex(input.value, sol)
+score, _, feedback = eval_complex(input.value, sol, imaginary_unit="j")
 ==
 
