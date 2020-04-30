@@ -19,10 +19,7 @@ text ==
 ==
 
 form ==
-
 ==
-
-
 
 evaluator ==
 grade = (100, "")
