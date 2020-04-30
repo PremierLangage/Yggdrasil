@@ -56,7 +56,7 @@ alphabet = "a,b"
 # dans ce qui suit le pb est que le viewer contient l'automate minimisé et non celui de départ
 title = td8-ex1-2
 text ==
-<img src="{{ image_enonce }}" style=" y a du style !" >
+<!-- <img src="{{ image_enonce }}" style=" y a du style !" > -->
 
 {{ viewer_enonce|component }}
 
