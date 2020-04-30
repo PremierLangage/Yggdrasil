@@ -19,25 +19,23 @@ enonce = '''
     #initials
     S1
     #accepting
-    S1
-    S2
-    S3
+    S5
     S6
     #alphabet
     a
     b
     #transitions
-    S1:a>S5
+    S1:a>S2
     S1:b>S4
-    S2:a>S6
-    S2:b>S6
-    S3:a>S6
-    S3:b>S3
-    S4:a>S2
-    S4:b>S1
-    S5:a>S2
-    S5:b>S3
-    S6:a>S3
+    S2:a>S3
+    S2:b>S4
+    S3:a>S3
+    S3:b>S4
+    S4:a>S5
+    S4:b>S6
+    S5:a>S5
+    S5:b>S5
+    S6:a>S5
     S6:b>S6
 '''
 
