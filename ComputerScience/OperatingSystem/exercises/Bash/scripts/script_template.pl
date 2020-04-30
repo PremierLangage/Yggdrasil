@@ -53,16 +53,16 @@ form==
 style_add==
 <style>
 #cercle_vert {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
     background: green;
     border: 1px solid #679403;
 }
 #cercle_rouge {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
     background: red;
     border: 1px solid #679403;
 }
