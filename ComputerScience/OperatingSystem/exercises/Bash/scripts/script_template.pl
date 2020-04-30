@@ -56,13 +56,15 @@ style_add==
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    background: #CCFFCC;
+    background: green;
+    border: 1px solid black;
 }
 #cercle_rouge {
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    background: #FFCCCC;
+    background: red;
+    border: 1px solid black;
 }
 </style>
 ==
