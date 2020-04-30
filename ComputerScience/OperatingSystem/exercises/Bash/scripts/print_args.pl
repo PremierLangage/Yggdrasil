@@ -20,7 +20,10 @@ before==
 
 expected_stdout=""
 
-test_bash = [["Test simple", "Salut", "Salut\n"]]
+test_bash = [["Test simple", "Salut", "Salut\n"],
+["Trois arguments", "Pierre Paul Jacques", "Pierre Paul Jacques\n"],
+["Aucun argument", "", ""],
+]
 ==
 
 
