@@ -18,7 +18,7 @@ extends=script_template.pl
 
 before==#|python|
 
-test_bash = [
+test_bash = [ ["simple", ["4", "2"], "6"],
 ]
 ==
 
