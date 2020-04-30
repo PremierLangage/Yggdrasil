@@ -87,10 +87,7 @@ else:
         expected_stdout = test_unit[2]
         test_name = test_unit[0]
 
-        command_args = ["/bin/bash", "student_script.sh"]
-        if args_test != "":
-            command_args += args_test.split(' ')
-        
+        command_args = ["/bin/bash", "student_script.sh"] + args_test
         sp = subprocess.run(command_args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=7)
         spout = sp.stdout.decode()
         errout = sp.stderr.decode()
