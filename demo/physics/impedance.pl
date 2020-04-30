@@ -15,7 +15,9 @@ sol = R *(1 + R)
 # b = h.is_complex
 b = srepr(sol)
 c = srepr(str2sympy("R(1+R)")) #local_dict={"i": I, "omega": omega, "R": R, "L": L}))
-c = srepr(parse_expr("R(1+R)"))
+
+import sympy.parsing.sympy_parser as prs
+c = srepr(prs.parse_expr("R(1+R)"))
 ==
 
 text ==
