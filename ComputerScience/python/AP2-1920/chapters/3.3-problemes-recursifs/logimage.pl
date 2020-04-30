@@ -184,7 +184,8 @@ instances_col = [([0, 0, 1], 0), ([0, 0, 1], 1), ([0, 0, 1], 2), ([0, 0, 1], 3)]
 
 for rangee, k in instances_col:
     begin_test(f'Coloriable (test fixe)')
-    evaluate(f'coloriable({rangee}, {k})')
+    evaluate(f'rangee = {rangee}')
+    evaluate(f'coloriable(rangee, {k})')
     assert_output('')
     assert_result(coloriable(rangee, k))
     assert_no_global_change()
