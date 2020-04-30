@@ -2,7 +2,7 @@
 extends = ../templates/editor-mini.pl
 
 
-#image_enonce =$ ../images/td8-ex1-2.png
+image_enonce =$ ../images/td8-ex1-3.png
 
 ## Ajouter ici la génération de l'automate et autres variables de l'exo
 generate== #|py|
@@ -54,9 +54,9 @@ alphabet = "a,b"
 ==
 
 # dans ce qui suit le pb est que le viewer contient l'automate minimisé et non celui de départ
-title = td8-ex1-2
+title = td8-ex1-3
 text ==
-<!-- <img src="{{ image_enonce }}" style=" y a du style !" > -->
+ <img src="{{ image_enonce }}" style=" y a du style !" > 
 
 {{ viewer_enonce|component }}
 
