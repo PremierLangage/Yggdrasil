@@ -17,7 +17,7 @@ b = srepr(sol)
 c = srepr(str2sympy("R(1+R)")) #local_dict={"i": I, "omega": omega, "R": R, "L": L}))
 transformations = (prs.standard_transformations + (prs.implicit_multiplication_application,))
 import sympy.parsing.sympy_parser as prs
-c = srepr(prs.parse_expr("R(1+R)", global_dict=globals(), transformations=transformations))
+c = srepr(prs.parse_expr("sol", global_dict=globals(), transformations=transformations))
 ==
 
 text ==
