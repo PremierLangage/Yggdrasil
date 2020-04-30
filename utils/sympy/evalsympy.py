@@ -585,7 +585,7 @@ def eval_complex(strans, sol, imaginary_unit="i", form="", checkratsimp=True, au
         ans = latex2sympy(strans, local_dict)
     except:
         return (-1, "NotCplx")
-    if not isinstance(ans,sp.Expr) or not ans.is_complex:
+    if not isinstance(ans, sp.Expr) or not ans.is_complex:
         return (-1, "NotCplx")
     if authorized_func is not None and not func_in_expr(ans).issubset(authorized_func):
         return (-1, "UnauthorizedFunc")
@@ -722,4 +722,5 @@ def ans_antiderivative(strans,sol,x,local_dict={}):
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
+
 
