@@ -8,10 +8,12 @@ before ==
 import sympy as sp
 import sympy.parsing.sympy_parser as prs
 
+from sympy.parsing.sympy_parser import parse_expr, standard_transformations, implicit_multiplication)
+
+transformations = standard_transformations + (implicit_multiplication,)
 sp.var('R', real=True)
-transformations = (prs.standard_transformations + (prs.implicit_multiplication_application,))
 local_dict = {'R': R}
-expr = prs.parse_expr("R(1+R)",local_dict=local_dict, transformations=transformations,evaluate=False)
+expr = parse_expr("R(1+R)", local_dict=local_dict, transformations=transformations, evaluate=False)
 s = sp.srepr(expr)
 s = sp.__version__
 ==
