@@ -13,6 +13,7 @@ transformations = (prs.standard_transformations + (prs.implicit_multiplication_a
 local_dict = {'R': R}
 expr = prs.parse_expr("R(1+R)",local_dict=local_dict, transformations=transformations,evaluate=False)
 s = sp.srepr(expr)
+s = sp.__version__
 ==
 
 text ==
