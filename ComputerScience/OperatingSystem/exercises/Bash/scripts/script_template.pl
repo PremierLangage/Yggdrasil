@@ -75,7 +75,7 @@ else:
     errout = sp.stderr.decode()
     returncode = sp.returncode
 
-    form += display_as_shell_this(editor.code, spout, str(response["user_hack"]), errout, returncode)
+    form += display_as_script_shell_this(editor.code, spout, str(response["user_hack"]), errout, returncode)
 
     if expected_stdout == spout:
         feedback = "Bravo, votre code fait le travail !"
