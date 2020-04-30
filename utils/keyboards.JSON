@@ -1115,6 +1115,9 @@
               "insert": ","
             },
             {
+              "class": "separator w10"
+            },
+            {
                 "class": "action font-glyph bottom right w20",
                 "command": "deletePreviousChar",
                 "label": "&#x232b;"
