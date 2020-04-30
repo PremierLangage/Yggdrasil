@@ -8,14 +8,14 @@ title = Calcul d'impédance
 input.virtualKeyboards = electronics
 
 before ==
-# I et la méthode expand, c'est du SymPy
-z1 = rd.randint(-5, 5) + rd.randint(-5, 5)*I
-z2 = rd.randint(-5, 5) + rd.randint(-5, 5)*I
-sol = (z1 * z2).expand()
-sol = z1
+var('R L C omega')
+X1 = R + I * L * omega
+X2 = R
+sol = simplify(1/(1/X1 + 1/X2))
 ==
 
 text ==
+{{sol|latex}}
 On considère les nombres complexes $! z_1 = {{ z1|latex }} !$ et $! z_2 = {{ z2|latex }} !$. Calculer $! z_1 \times z_2 !$ (sous forme algébrique).
 ==
 
