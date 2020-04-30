@@ -13,10 +13,12 @@ sol = simplify(1/(1/X1 + 1/X2))
 # h = X1/X2
 # b = h.is_complex
 b = srepr(sol)
+c = srepr(atex2sympy(latex(sol),  local_dict={"i": I, "omega": omega, "R": R, "L": L})
 ==
 
 text ==
 {{b}}
+{{s}}
 Quelle est l'imépdance de R en parallèle avec R + L ?
 $$ {{sol|latex}} $$
 ==
