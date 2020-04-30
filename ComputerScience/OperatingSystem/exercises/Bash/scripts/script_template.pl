@@ -55,7 +55,9 @@ from utils_bash import frame_message
 
 # some initialisations
 feedback = f"    "
-form = "{{ editor|component }}"
+form = "<style> #cercle_vert {width: 20px; height: 20px; border-radius: 10px; background: green;} "
+form +="#cercle_rouge {width: 20px; height: 20px; border-radius: 10px; background: red;}</style>" 
+form += "{{ editor|component }}"
 form += '<input id="form_user_hack" name="form_user_hack" type="hidden" value="{{ user }}">'
 
 # Forbid the use of redirection in file
