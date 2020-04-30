@@ -9,32 +9,32 @@ from automaton import Automaton
 
 enonce = '''
     #states
-    S0
     S1
     S2
     S3
     S4
     S5
+    S6
     #initials
     S1
     #accepting
-    S1
-    S4
+    S5
+    S6
     #alphabet
     a
     b
     #transitions
-    S0:b>S1
-    S1:a>S0
-    S1:a>S5
-    S1:b>S2
-    S2:a>S1
-    S2:b>S1
+    S1:a>S2
+    S2:a>S3
+    S2:b>S4
     S3:a>S4
-    S3:b>S1
-    S4:a>S5
-    S4:b>S3
-    S5:b>S4
+    S3:b>S5
+    S4:a>S3
+    S4:b>S6
+    S5:a>S6
+    S5:b>S5
+    S6:a>S5
+    S6:b>S6
 '''
 
 #viewer est le langage solution -- le nom est forcé le reste. On changera plus tard
