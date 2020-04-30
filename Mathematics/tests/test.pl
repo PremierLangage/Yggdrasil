@@ -16,7 +16,6 @@ sp.var('R', real=True)
 local_dict = {'R': R}
 expr = parse_expr("R(1+R)", local_dict=local_dict, transformations=transformations, evaluate=False)
 s = sp.srepr(expr)
-s = sp.__version__
 ==
 
 text ==
