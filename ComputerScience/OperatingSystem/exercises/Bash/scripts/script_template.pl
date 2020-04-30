@@ -24,6 +24,8 @@ editor.language = shell
 editor.height = 200px
 
 editor.code ==
+#!/bin/bash
+
 # entrez votre code shell ici...
 
 ==
