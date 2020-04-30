@@ -19,6 +19,12 @@ extends=script_template.pl
 before==#|python|
 from random import randint
 
+def prod(L):
+    ans = 1
+    for e in L:
+        ans *= e
+    return ans
+
 def factorial(n):
     return prod(range(2, n+1), 1)
 
