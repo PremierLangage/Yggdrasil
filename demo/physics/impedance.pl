@@ -12,9 +12,11 @@ sol = simplify(1/(1/X1 + 1/X2))
 # h = expand_complex(X1/X2)
 # h = X1/X2
 # b = h.is_complex
+b = srepr(sol)
 ==
 
 text ==
+{{b}}
 Quelle est l'imépdance de R en parallèle avec R + L ?
 $$ {{sol|latex}} $$
 ==
