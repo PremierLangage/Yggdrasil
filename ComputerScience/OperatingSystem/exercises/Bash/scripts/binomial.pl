@@ -17,9 +17,25 @@
 extends=script_template.pl
 
 before==#|python|
+from random import randint
+
+def factorial(n):
+    return prod(range(2, n+1), 1)
+
+def binomial(n, p):
+    return factorial(n) // (factorial(n-p)*factorial(p))
+    
+a1, b1 = randint(10,20), randint(0,10)
+a2, b2 = randint(10,20), randint(0,10)
+a3, b3 = randint(10,20), randint(0,10)
+a4, b4 = randint(10,20), randint(0,10)
 
 test_bash = [ ["simple", ["4", "2"], "6\n"],
-]
+["bord", ["30", "0"], "1\n"],
+["aléatoire", [str(a1), str(b1)], str(binomial(a1, b1))+"\n"],
+["aléatoire", [str(a2), str(b2)], str(binomial(a2, b2))+"\n"],
+["aléatoire", [str(a3), str(b3)], str(binomial(a3, b3))+"\n"],
+["aléatoire", [str(a4), str(b4)], str(binomial(a4, b4))+"\n"]]
 ==
 
 author=Nicolas Borie
