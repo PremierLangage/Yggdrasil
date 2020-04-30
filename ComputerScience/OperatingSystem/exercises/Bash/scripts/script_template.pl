@@ -92,8 +92,8 @@ else:
             command_args += args_test.split(' ')
         
         sp = subprocess.run(command_args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=7)
-        spout += sp.stdout.decode()
-        errout += sp.stderr.decode()
+        spout = sp.stdout.decode()
+        errout = sp.stderr.decode()
         returncode = sp.returncode
 
         cumul_output += str(response["user_hack"])+"@PLaTon"
