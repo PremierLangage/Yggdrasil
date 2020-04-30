@@ -23,12 +23,15 @@ def random_args():
     L = ["Pierre", "Paul", "Martin", "Jacques", "un", "deux", "trois", "quatre", "1", "192", "3.1415", "10.01"]
     return " ".join([choice(L) for i in range(randint(3, 8))])
 
+s1 = random_args()
+s2 = random_args()
+
 test_bash = [["Test simple", "Salut", "Salut\n"],
 ["Trois arguments", "Pierre Paul Jacques", "Pierre Paul Jacques\n"],
-["Aucun argument", "", ""],
+["Aucun argument", "", "\n"],
 ["Un argument sur plusieurs mots", "'Tout ca est un seul argument en fait'", "Tout ca est un seul argument en fait\n"],
-["Aléatoire", random_args(), ""],
-["Aléatoire", random_args(), ""],
+["Aléatoire", s1, s1+"\n"],
+["Aléatoire", s2, s2+"\n"],
 ]
 ==
 
