@@ -1,4 +1,5 @@
 extends = /model/mathinput.pl
+@ /model/latex_settings/latex_settings_electronics.py [latex_settings.py]
 
 title = Calcul d'impédance
 
