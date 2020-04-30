@@ -18,11 +18,7 @@ Solution :
 $$ {{sol|latex}} $$
 ==
 
-form ==
-{{ input|component }}
-==
-
 evaluator ==
-score, _, feedback = eval_complex(input.value, sol, imaginary_unit="j", local_dict={"j": I, "omega": omega, "R": R, "L": L})
+score, _, feedback = eval_complex(input.value, sol, imaginary_unit="j", local_dict={"omega": omega, "R": R, "L": L})
 ==
 
