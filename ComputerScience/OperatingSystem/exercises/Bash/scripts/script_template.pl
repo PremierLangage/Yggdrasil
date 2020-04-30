@@ -49,6 +49,25 @@ form==
 
 ==
 
+
+style_add==
+<style>
+#cercle_vert {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: green;
+}
+#cercle_rouge {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: red;
+}
+</style>
+==
+
+
 evaluator==#|python|
 import subprocess
 from utils_bash import frame_message
