@@ -106,10 +106,10 @@ else:
 
         if expected_stdout == spout:
             nb_test_ok += 1
-            feedback_tests += test_name+ "... OK!"
+            feedback_tests += "Test "+test_name+ "... OK!<br />"
         else:
             nb_test_fail += 1
-            feedback_tests += test_name+ " failled"
+            feedback_tests += "Test "+test_name+ " failled<br />"
 
         if (returncode != 0):
             break
@@ -127,6 +127,7 @@ else:
 
     cumul_output += str(response["user_hack"])+"@PLaTon:~$> </output></pre></div>"
     form += cumul_output
+    form += "<br />"+feedback_tests
 
     final_grade = int((100*nb_test_ok) // (nb_test_ok + nb_test_fail))
     if nb_test_fail == 0:
