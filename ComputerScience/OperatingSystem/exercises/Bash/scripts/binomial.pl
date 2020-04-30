@@ -26,7 +26,7 @@ def prod(L):
     return ans
 
 def factorial(n):
-    return prod(range(2, n+1), 1)
+    return prod(range(2, n+1))
 
 def binomial(n, p):
     return factorial(n) // (factorial(n-p)*factorial(p))
