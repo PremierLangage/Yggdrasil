@@ -122,7 +122,7 @@ else:
         else:
             form += "Process exited with signal ("+str(-returncode)+")"
 
-    cumul_output += "</output></pre></div>"
+    cumul_output += str(response["user_hack"])+"@PLaTon:~$> </output></pre></div>"
     form += cumul_output
 
     final_grade = int((100*nb_test_ok) // (nb_test_ok + nb_test_fail))
