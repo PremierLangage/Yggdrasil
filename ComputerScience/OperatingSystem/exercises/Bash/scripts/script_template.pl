@@ -73,6 +73,7 @@ else:
     cumul_output = ""
     nb_test_ok = 0
     nb_test_fail = 0
+    feedback_tests = ""
 
     # making the div for terminal screen
     cumul_output += '<br /><div style="background-color: black; '
@@ -105,8 +106,10 @@ else:
 
         if expected_stdout == spout:
             nb_test_ok += 1
+            feedback_tests += test_name+ "... OK!"
         else:
             nb_test_fail += 1
+            feedback_tests += test_name+ " failled"
 
         if (returncode != 0):
             break
