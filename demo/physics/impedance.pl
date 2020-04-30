@@ -12,6 +12,7 @@ before ==
 z1 = rd.randint(-5, 5) + rd.randint(-5, 5)*I
 z2 = rd.randint(-5, 5) + rd.randint(-5, 5)*I
 sol = (z1 * z2).expand()
+sol = z1
 ==
 
 text ==
