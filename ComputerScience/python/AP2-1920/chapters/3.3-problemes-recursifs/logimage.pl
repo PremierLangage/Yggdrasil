@@ -187,6 +187,7 @@ for rangee, k in instances_col:
     evaluate(f'coloriable({rangee}, {k})')
     assert_output('')
     assert_result(coloriable(rangee, k))
+    assert_no_global_change()
 
 begin_test_group('Question 4 - Fonction <code>completable</code>')
 
