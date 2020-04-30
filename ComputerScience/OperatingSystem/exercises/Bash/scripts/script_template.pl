@@ -51,7 +51,7 @@ form==
 
 evaluator==#|python|
 import subprocess
-from utils_bash import display_as_script_shell_this, frame_message
+from utils_bash import frame_message
 
 # some initialisations
 feedback = f"    "
