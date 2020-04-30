@@ -7,7 +7,7 @@ input.virtualKeyboards = electronics
 before ==
 var('R L omega')
 X1 = R + I * L * omega
-X2 = a*I
+X2 = R*I
 sol = simplify(1/(1/X1 + 1/X2))
 h = X2.is_complex
 ==
