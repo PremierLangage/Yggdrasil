@@ -94,7 +94,7 @@ else:
         returncode = sp.returncode
 
         cumul_output += str(response["user_hack"])+"@PLaTon"
-        cumul_output += ":~$> ./student_script.sh " + args_test
+        cumul_output += ":~$> ./student_script.sh " + " ".join(args_test)
         cumul_output += "<br />"
 
         if len(errout) > 0:
