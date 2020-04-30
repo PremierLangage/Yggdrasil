@@ -38,7 +38,7 @@ def str2sympy(s, local_dict={}, evaluate=False):
     exec('from sympy import *', global_dict, global_dict)
     global_dict.update(local_dict)
     transformations=prs.standard_transformations + (prs.implicit_multiplication_application,prs.convert_xor)
-    transformations = (prs.standard_transformations + (prs.implicit_multiplication_application,))
+    #transformations = (prs.standard_transformations + (prs.implicit_multiplication_application,))
     return prs.parse_expr(s,global_dict=global_dict,transformations=transformations,evaluate=evaluate)
 
 def latex2str(s):
