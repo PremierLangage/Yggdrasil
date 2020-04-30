@@ -1,7 +1,6 @@
 import sympy as sp
 from sympy.printing.latex import LatexPrinter
 from sympy.core.compatibility import default_sort_key
-#from latex_settings import latex_settings
 
 class CustomLatexPrinter(LatexPrinter):
     """ 
@@ -135,7 +134,10 @@ class CustomLatexPrinter(LatexPrinter):
             out_str = out_str.replace('%s', '{' + 'c'*expr.cols + '}%s')
         return out_str % r"\\\\".join(lines)
 
-_default_settings = {
+try:
+    from latex_settings import _default_settings
+except ModuleNotFoundError:
+    _default_settings = {
         'ln_notation': True
     }
 
