@@ -18,6 +18,8 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 
 expected_stdout=""
 
+title=Afficher les arguments d'un script bash
+
 text==
 Écrire un script bash qui écrit sur la sortie standard les arguments que l'on 
 lui a transmis en ligne de commande lors de son appel
