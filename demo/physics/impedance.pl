@@ -19,7 +19,7 @@ c = srepr(latex2sympy(latex(sol),  local_dict={"i": I, "omega": omega, "R": R, "
 
 text ==
 {{b}}
-Quelle est l'imépdance de R en parallèle avec R + L ?
+Quelle est l'impédance de R en parallèle avec R + L ?
 $$ {{sol|latex}} $$
 {{c}}
 ==
