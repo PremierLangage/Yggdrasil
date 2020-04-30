@@ -25,7 +25,7 @@ def random_args():
 
 test_bash = [["Test simple", "Salut", "Salut\n"],
 ["Trois arguments", "Pierre Paul Jacques", "Pierre Paul Jacques\n"],
-["Aucun argument", "", "\n"],
+["Aucun argument", "", ""],
 ["Un argument sur plusieurs mots", "'Tout ca est un seul argument en fait'", "Tout ca est un seul argument en fait\n"],
 ["Aléatoire", random_args(), ""],
 ["Aléatoire", random_args(), ""],
