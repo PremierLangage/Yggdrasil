@@ -28,7 +28,7 @@ title=Calculs des nombres binomiaux
 text==
 Écrire un script bash prenant deux entiers n puis p en arguments (c'est à 
 dire des chaines décrivant des entiers) et qui affiche le coefficient 
-binomial p parmi n : %$ \binom{n}{p} $%.
+binomial p parmi n : $% \binom{n}{p} %$.
 ==
 
 
