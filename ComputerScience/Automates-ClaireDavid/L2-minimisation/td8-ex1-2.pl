@@ -2,7 +2,7 @@
 extends = ../templates/editor-mini.pl
 
 
-image_enonce =$ ../images/td8-ex1-2.png
+#image_enonce =$ ../images/td8-ex1-2.png
 
 ## Ajouter ici la génération de l'automate et autres variables de l'exo
 generate== #|py|
