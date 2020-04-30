@@ -34,7 +34,7 @@ test_bash = [["Test simple", ["Salut"], "Salut\n"],
 ]
 ==
 
-
+author=Nicolas Borie
 title=Afficher les arguments d'un script bash
 
 text==
