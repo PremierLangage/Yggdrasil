@@ -1007,6 +1007,9 @@
             {
               "class": "keycap",
               "label": ")"
+            },
+            {
+              "class": "separator w20"
             }
           ],
           [
