@@ -12,8 +12,8 @@ from recursion_detector import performs_recursion
 from typing import *
 from unittest import mock
 
-_default_template_dir = ''
-# _default_template_dir = 'templates/jinja/'
+# _default_template_dir = ''
+_default_template_dir = 'templates/jinja/'
 _default_test_template = _default_template_dir + 'testitem.html'
 _default_group_template = _default_template_dir + 'testgroup.html'
 
