@@ -8,9 +8,9 @@ tag= Lipschitz|function|math|continuity
 buildquestions==
 import random
 questions=""
-for _ in range(2):
-    a=random.randint(1,5)
-    b=random.randint(-5,5)
+for toto in range(2):
+    a=random.randint(4,15)
+    b=random.randint(-18,3)
     while b==a:
         b=random.randint(-5,5)
     a2=a//random.randint(1,5)
