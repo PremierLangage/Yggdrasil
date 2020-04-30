@@ -9,6 +9,7 @@ extends=/model/AMC_TXT.pl
 buildquestions==
 import random
 
+questions =""
 for _ in range(5):
     a=random.randint(1,5)
     b=random.randint(-5,5)
