@@ -8,7 +8,8 @@ before ==
 import sympy as sp
 import sympy.parsing.sympy_parser as prs
 
-from sympy.parsing.sympy_parser import parse_expr, standard_transformations, implicit_multiplication)
+from sympy.parsing.sympy_parser import parse_expr
+from sympy.parsing.sympy_parser import standard_transformations, implicit_multiplication
 
 transformations = standard_transformations + (implicit_multiplication,)
 sp.var('R', real=True)
