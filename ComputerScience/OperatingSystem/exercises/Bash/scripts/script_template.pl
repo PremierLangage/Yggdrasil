@@ -51,7 +51,7 @@ form==
 
 evaluator==#|python|
 import subprocess
-from utils_bash import display_as_shell_this, frame_message
+from utils_bash import display_as_script_shell_this, frame_message
 
 # some initialisations
 feedback = f"    "
@@ -60,7 +60,7 @@ form += '<input id="form_user_hack" name="form_user_hack" type="hidden" value="{
 
 # Forbid the use of redirection in file
 if ">" in editor.code:
-    feedback = "Dû à des limilitations techniques, une commande ne peut pas contenir de caractère chevron droit. Notament les redirections en sortie ne sont pas autorisées. L'exerice reste faisable avec cette limitation. Merci de modifier votre commande."
+    feedback = "Dû à des limilitations techniques, une commande ne peut pas contenir de caractère chevron droit. Notament les redirections en sortie ne sont pas autorisées. L'exerice reste faisable avec cette limitation. Merci de modifier votre script."
     grade = (-1, frame_message(feedback, "warning"))
 
 # Here we choose to execute the set of commands inside a script
