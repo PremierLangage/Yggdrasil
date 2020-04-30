@@ -128,10 +128,10 @@ else:
 
         if expected_stdout == spout:
             nb_test_ok += 1
-            feedback_tests += '<div id="cercle_vert" style="display: inline"></div> <div style="display: inline">Test '+test_name+ "... OK!</div><br />"
+            feedback_tests += '<div id="cercle_vert" style="display: inline-block"></div> <div style="display: inline">Test '+test_name+ "... OK!</div><br />"
         else:
             nb_test_fail += 1
-            feedback_tests += '<div id="cercle_rouge" style="display: inline"></div> <div style="display: inline">Test '+test_name+ " échoué</div><br />"
+            feedback_tests += '<div id="cercle_rouge" style="display: inline-block"></div> <div style="display: inline">Test '+test_name+ " échoué</div><br />"
 
         if (returncode != 0):
             break
