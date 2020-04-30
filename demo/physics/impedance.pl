@@ -14,7 +14,7 @@ sol = simplify(1/(1/X1 + 1/X2))
 
 text ==
 Quelle est l'impédance de R en parallèle avec R + L ?
-Indice : c'est
+Solution :
 $$ {{sol|latex}} $$
 ==
 
