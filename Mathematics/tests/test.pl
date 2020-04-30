@@ -14,7 +14,7 @@ from sympy.parsing.sympy_parser import standard_transformations, implicit_multip
 transformations = standard_transformations + (implicit_multiplication,)
 sp.var('R', real=True)
 local_dict = {'R': R}
-expr = parse_expr("R(1+R)", local_dict=local_dict, transformations=transformations, evaluate=False)
+expr = parse_expr("R+1+R)", local_dict=local_dict, transformations=transformations, evaluate=False)
 s = sp.srepr(expr)
 ==
 
