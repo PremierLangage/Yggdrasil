@@ -15,7 +15,7 @@ sol = simplify(1/(1/X1 + 1/X2))
 ==
 
 text ==
-{{sol|latex}}
+$$ {{sol|latex}} $$
 ==
 
 form ==
