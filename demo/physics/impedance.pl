@@ -1,6 +1,3 @@
-# Cette commande importe le modèle d'exercice pour les maths
-# En particulier, elle importe la bibliothèque SymPy 
-# et d'autres bibliothèques qu'on a développés autour de SymPy
 extends = /model/mathinput.pl
 
 title = Calcul d'impédance
