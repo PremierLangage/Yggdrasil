@@ -5,16 +5,16 @@ title = Calcul d'impédance
 input.virtualKeyboards = electronics
 
 before ==
-var('R,L,omega', real=True, nonzero=True)
-X1 = R + I * L * omega
-X2 = R
+var('K,L,omega', real=True, nonzero=True)
+X1 = K + I * L * omega
+X2 = K
 sol = simplify(1/(1/X1 + 1/X2))
-sol = R * (I + L)
+sol = K * (I + L)
 # h = expand_complex(X1/X2)
 # h = X1/X2
 # b = h.is_complex
 b = srepr(sol)
-c = srepr(latex2sympy(latex(sol),  local_dict={"i": I, "omega": omega, "R": R, "L": L}))
+c = srepr(latex2sympy(latex(sol),  local_dict={"i": I, "omega": omega, "K": K, "L": L}))
 ==
 
 text ==
