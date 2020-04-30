@@ -192,7 +192,7 @@ begin_test_group('Question 4 - Fonction <code>completable</code>')
 
 begin_test('Respect des consignes')
 assert_defines_function("completable")
-assert_recursion("completable([1, 1], [0, 0, 1]")
+assert_recursion("completable([1, 1], [0, 0, 1])")
 
 for contraintes, rangee in instances:
     begin_test(f'Complétable (test fixe)')
