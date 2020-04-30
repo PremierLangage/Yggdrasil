@@ -17,3 +17,8 @@
 extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 
 expected_stdout=""
+
+text==
+Écrire un script bash qui écrit sur la sortie standard les arguments que l'on 
+lui a transmis en ligne de commande lors de son appel
+==
