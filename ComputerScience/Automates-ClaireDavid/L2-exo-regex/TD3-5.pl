@@ -18,6 +18,10 @@ solution = Automaton.parse('ab(a|b)(a|b)((a|b)(a|b)(a|b)(a|b))*')
 message = "des mots qui commencent par ab et dont la longueur est un multiple de 4."
 ==
 
+#* Texte de l'énoncé
+# ---
+# ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
+# l'automate minimisé du langage solution
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez une expression reconnaissant le langage {{ message }} <br>
