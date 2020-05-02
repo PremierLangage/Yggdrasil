@@ -1,8 +1,8 @@
+extends = ../templates/new_editor-L2.pl
 
 
-
-extends = ../templates/editor-regex.pl
-
+#* titre de l'exercice
+title = TD3.1-10 gentil
 
 generate== #|py|
 ## Ajouter ici la génération:
@@ -17,7 +17,6 @@ alphabet = "a,b"
 message = "des mots de a * b * qui ont un nombre de a modulo 2 différent de son nombre de b modulo 2."
 ==
 
-title = TD3.1-10 gentil
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez une expression reconnaissant le langage {{ message }} <br>
@@ -27,6 +26,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
