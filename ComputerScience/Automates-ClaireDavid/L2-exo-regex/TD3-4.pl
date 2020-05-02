@@ -18,7 +18,10 @@ solution = Automaton.parse('aaa(a|b)*(a|bb)|aaa')
 message = "l'ensemble de mots qui commencent par aaa et se terminent par a ou par bb."
 ==
 
-
+#* Texte de l'énoncé
+# ---
+# ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
+# l'automate minimisé du langage solution
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez une expression reconnaissant le langage correspondant à {{ message }} <br>
