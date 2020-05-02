@@ -14,7 +14,7 @@ alphabet = "a,b"
 #langage solution -- le nom solution est forcé par le template
 solution = Automaton.parse('(a|b)*(bab|bb)(a|b)*')
 
-alphabet = "a,b"
+#message de l'énoncé décrivant le langage
 message = "l’ensemble des mots qui contiennent le facteur bab ou le facteur bb."
 ==
 
