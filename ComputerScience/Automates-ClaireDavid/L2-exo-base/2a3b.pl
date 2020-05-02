@@ -1,8 +1,7 @@
-
 extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
-title = exo auto from auto
+title = TD1 exo3 L13
 
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
@@ -46,7 +45,6 @@ alphabet = "a,b"
 message = "l'ensemble des mots ayant un nombre de a pair et un nombre de b égal à 1 modulo 3."
 ==
 
-title = TD1 exo3 L13
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant {{ message }} <br>
