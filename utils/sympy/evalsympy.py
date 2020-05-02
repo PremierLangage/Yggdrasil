@@ -745,6 +745,8 @@ def eval_physical(strans, sol, local_dict={}):
         num, unit = get_numeric_unit(ans)
     except:
         return (-1, "NotPhysical")
+    if not ans.has(Quantity):
+        return (-1, "NotPhysical")
     return (100, "Success")
 
 def ans_antiderivative(strans,sol,x,local_dict={}):
