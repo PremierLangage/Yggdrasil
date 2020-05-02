@@ -13,7 +13,8 @@ answer_type = "simple-regex"
 
 alphabet = "a,b"
 
-viewer = '''
+#langage solution -- le nom solution est forcé par le template
+solution = '''
     #states
     S00
     S01
