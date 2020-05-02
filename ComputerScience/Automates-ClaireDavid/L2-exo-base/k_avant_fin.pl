@@ -12,10 +12,7 @@ alphabet = "a,b"
 solution = Automaton.parse('(a|b)*a(a|b)(a|b)(a|b)')
 
 
-#    l'alphabet
-alphabet = "a,b"
-
-#    du message de l'énoncé décrivant le langage
+#message de l'énoncé décrivant le langage
 message = "l'ensemble des mots dont la 4ème lettre à partir de la droite est un a"
 ==
 
