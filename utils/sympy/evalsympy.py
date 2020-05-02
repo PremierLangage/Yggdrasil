@@ -742,11 +742,9 @@ def eval_physical(strans, sol, local_dict={}):
     """
     try:
         ans = latex2sympy(strans, local_dict)
+        num, unit = get_numeric_unit(ans)
     except:
         return (-1, "NotPhysical")
-    if not isinstance(ans, sp.Expr):
-        return (-1, "NotExpr")
-
     return (100, "Success")
 
 def ans_antiderivative(strans,sol,x,local_dict={}):
