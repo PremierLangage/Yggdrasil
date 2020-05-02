@@ -714,32 +714,31 @@ def eval_rset(strans, sol):
         return (0, "NotEqual")
     return (100,"")
 
+from sympy.physics.units import Quantity
+
+def get_numeric_unit(expr):
+    """
+    Return the numerical part and the unit of a physical quantity.
+    """
+    args = arg_nested_mul(expr)
+    args_numeric = []
+    args_quantity = []
+    for a in args:
+        if isinstance(a, sp.Pow):
+            if isinstance(a.base, Quantity):
+                args_quantity.append(a)
+            else:
+                args_numeric.append(a)
+        elif isinstance(a, Quantity):
+            args_quantity.append(a)
+        else:
+            args_numeric.append(a)
+    return (sp.Mul(*args_numeric), sp.Mul(*args_quantity))
+
 @add_feedback
-def eval_physical(strans, sol, checkratsimp=True, authorized_func=None, local_dict={}):
+def eval_physical(strans, sol, local_dict={}):
     r"""
-    Evaluate an answer when the solution is an expression.
-    
-    >>> expr = sp.sympify("sqrt(2)/2", evaluate=False)
-    >>> eval_expr(r"\frac{1}{\sqrt{2}}", expr)[1]
-    'Success'
-    
-    >>> eval_expr(r"\frac{\sqrt{2}}{2}", expr)[1]
-    'Success'
-    
-    >>> eval_expr(r"\sin(\pi/4)", expr)[1]
-    'Success'
-    
-    >>> eval_expr(r"\sin(\pi/4)", expr, authorized_func={})[1]
-    'UnauthorizedFunc'
-    
-    >>> eval_expr("e", sp.E)[1]
-    'NotEqual'
-    
-    >>> eval_expr("\exp(1)", sp.E)[1]
-    'Success'
-    
-    >>> eval_expr("\exp(1)", sp.E, local_dict={'e': sp.E})[1]
-    'Success'
+    Evaluate an answer when the solution is a physical quantity.
     """
     try:
         ans = latex2sympy(strans, local_dict)
