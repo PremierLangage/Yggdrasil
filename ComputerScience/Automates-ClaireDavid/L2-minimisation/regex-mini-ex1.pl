@@ -2,6 +2,7 @@ extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
 title = regex 1
+
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
 from automaton import Automaton
@@ -11,12 +12,16 @@ eval_type = "mini_auto"
 
 alphabet = "a,b"
 
-#viewer est le langage solution -- le nom est forcé le reste. On changera plus tard
-viewer = Automaton.parse('bb*a(b*a)*')
-
-#    l'alphabet
-alphabet = "a,b"
+#message de l'énoncé décrivant le langage
 message = 'bb * a(b * a) *'
+
+
+## TODO donner une seule description du lanage enoncé pour le message et l'automate
+#langage solution -- le nom solution est forcé par le template
+solution = Automaton.parse('bb*a(b*a)*')
+
+
+
 ==
 
 
