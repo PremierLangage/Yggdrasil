@@ -1,22 +1,24 @@
+extends = ../templates/new_editor-L2.pl
 
+#* titre de l'exercice
+title = TD3.1-6
 
-extends = ../templates/editor-regex.pl
-
-
+#* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
-## Ajouter ici la génération:
-#    du message de l'énoncé décrivant le langage
-#    l'alphabet
-#    la construction de l'automate pour tester la réponse
 
-
-viewer = Automaton.parse('b(a|b)((a|b)(a|b))*b|b')
+#pour definir le type de réponse attendue (automaton par défaut)
+answer_type = "simple-regex"
 
 alphabet = "a,b"
+
+#langage solution -- le nom solution est forcé par le template
+solution = Automaton.parse('b(a|b)((a|b)(a|b))*b|b')
+
+#message de l'énoncé décrivant le langage
 message = "des mots de longueur impaire qui commencent et se terminent par b."
 ==
 
-title = TD3.1-6
+
 
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
@@ -27,6 +29,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
