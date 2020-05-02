@@ -1,6 +1,6 @@
 extends = /model/mathinput.pl
 
-title = Quantités physiques
+title = Résistance d'une lampe
 
 input.virtualKeyboards = elementary
 
