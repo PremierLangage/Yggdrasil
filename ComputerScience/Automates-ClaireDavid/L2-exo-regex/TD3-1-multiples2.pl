@@ -11,7 +11,8 @@ answer_type = "simple-regex"
 
 alphabet = "0,1"
 
-viewer = Automaton.parse('(0|1)*0')
+#langage solution -- le nom solution est forcé par le template
+solution = Automaton.parse('(0|1)*0')
 
 message = "à la représentation des entiers en base 2 qui sont des multiples de 2"
 ==
