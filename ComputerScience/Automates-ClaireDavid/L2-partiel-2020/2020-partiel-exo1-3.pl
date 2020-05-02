@@ -1,15 +1,18 @@
+extends = ../templates/new_editor-L2.pl
 
-extends = ../templates/editor-regex.pl
+#* titre de l'exercice
+title = exo regex
 
-
+#* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
-## Ajouter ici la génération:
-#    du message de l'énoncé décrivant le langage
-#    l'alphabet
-#    la construction de l'automate pour tester la réponse
 
+#pour definir le type de réponse attendue (automaton par défaut)
+answer_type = "simple-regex"
 
-viewer = Automaton.parse('(a|b)*(bab|bb)(a|b)*')
+alphabet = "a,b"
+
+#langage solution -- le nom solution est forcé par le template
+solution = Automaton.parse('(a|b)*(bab|bb)(a|b)*')
 
 alphabet = "a,b"
 message = "l’ensemble des mots qui contiennent le facteur bab ou le facteur bb."
@@ -25,6 +28,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
