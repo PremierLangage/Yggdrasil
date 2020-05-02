@@ -1,5 +1,7 @@
 extends = ../templates/new_editor-L2.pl
 
+#* titre de l'exercice
+title = TD3.1-1
 
 generate== #|py|
 ## Ajouter ici la génération:
@@ -14,7 +16,7 @@ alphabet = "0,1"
 message = "à la représentation des entiers en base 2 qui sont des multiples de 2"
 ==
 
-title = TD3.1-1
+
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez une expression reconnaissant le langage correspondant à {{ message }} <br>
