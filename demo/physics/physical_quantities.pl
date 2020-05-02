@@ -13,7 +13,7 @@ before ==
 text ==
 Ecrire une quantité physique.
 
-Exemples : $! 10.5 V!$, $!4.1 mol.kg^{-1} !$, $! 3.5 \times 10^3 km/s!$, etc.
+Exemples : $! 10.5 V!$, $!4.1 mol kg^{-1} !$, $! 3.5 \times 10^3 km/s!$, etc.
 ==
 
 evaluator ==
