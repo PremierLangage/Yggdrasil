@@ -17,6 +17,7 @@ solution = Automaton.parse('0*10*')
 #message de l'énoncé décrivant le langage
 message = "à la représentation des entiers en base 2 qui sont des puissances de 2"
 ==
+
 #* Texte de l'énoncé
 # ---
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
