@@ -14,7 +14,7 @@ alphabet = "a,b"
 #langage solution -- le nom solution est forcé par le template
 solution = Automaton.parse('aaa(a|b)*(a|bb)|aaa')
 
-alphabet = "a,b"
+#message de l'énoncé décrivant le langage
 message = "l'ensemble de mots qui commencent par aaa et se terminent par a ou par bb."
 ==
 
