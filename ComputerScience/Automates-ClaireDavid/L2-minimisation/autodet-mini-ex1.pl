@@ -44,22 +44,19 @@ enonce = '''
     S5:b>S3
 '''
 
-
-#viewer est le langage solution -- le nom est forcé le reste. On changera plus tard
-viewer = enonce
-
-
 #viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
 viewer_enonce = AutomatonDrawer()
 viewer_enonce.automaton = enonce
 
-#    l'alphabet
-alphabet = "a,b"
+#langage solution -- le nom solution est forcé par le template
+solution = Automaton.parse(enonce)
 ==
 
-# dans ce qui suit le pb est que le viewer contient l'automate minimisé et non celui de départ
-
-text ==
+#* Texte de l'énoncé
+# ---
+# ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
+# l'automate minimisé du langage solution
+text==
 {{ viewer_enonce|component }}
 
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
