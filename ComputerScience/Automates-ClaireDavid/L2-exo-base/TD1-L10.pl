@@ -12,10 +12,7 @@ alphabet = "a,b"
 solution = Automaton.parse('(abb|ba|bab)*')
 
 
-#    l'alphabet
-alphabet = "a,b"
-
-#    du message de l'énoncé décrivant le langage
+#message de l'énoncé décrivant le langage
 message = " le langage {abb, ba, bab}*"
 ==
 
