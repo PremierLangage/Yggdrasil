@@ -1,16 +1,16 @@
 
-# Migration à faire
+extends = ../templates/new_editor-L2.pl
 
+#* titre de l'exercice
+title = exo auto from auto
 
-extends = ../templates/editor-L2.pl
-
-
-## Ajouter ici la génération de l'automate et autres variables de l'exo
+#* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
-#from automaton import Automaton
 
-#    la construction de l'automate pour tester la réponse
-viewer = '''
+alphabet = "a,b"
+
+#langage solution -- le nom solution est forcé par le template
+solution = '''
     #states
     S00
     S01
@@ -56,6 +56,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
