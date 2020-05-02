@@ -3,16 +3,18 @@ extends = ../templates/new_editor-L2.pl
 #* titre de l'exercice
 title = TD3.1-10 gentil
 
+#* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
-## Ajouter ici la génération:
-#    du message de l'énoncé décrivant le langage
-#    l'alphabet
-#    la construction de l'automate pour tester la réponse
 
-
-viewer = Automaton.parse('(aa)*(a|b)(bb)*')
+#pour definir le type de réponse attendue (automaton par défaut)
+answer_type = "simple-regex"
 
 alphabet = "a,b"
+
+#langage solution -- le nom solution est forcé par le template
+solution = Automaton.parse('(aa)*(a|b)(bb)*')
+
+#message de l'énoncé décrivant le langage
 message = "des mots de a * b * qui ont un nombre de a modulo 2 différent de son nombre de b modulo 2."
 ==
 
