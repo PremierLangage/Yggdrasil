@@ -31,6 +31,10 @@ solution = '''
 message = "l'ensemble des mots  ne contenant ni aa, ni bb comme facteur"
 ==
 
+#* Texte de l'énoncé
+# ---
+# ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
+# l'automate minimisé du langage solution
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant {{ message }} <br>
