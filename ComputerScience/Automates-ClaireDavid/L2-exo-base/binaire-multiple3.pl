@@ -29,7 +29,6 @@ solution = '''
     S2:0>S1
     S1:1>S0
 '''
-#    l'alphabet
 ==
 
 title = *** multiples de 3
