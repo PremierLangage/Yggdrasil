@@ -39,9 +39,14 @@ solution = '''
     S11:b>S10
 '''
 
+#message de l'énoncé décrivant le langage
 message = "des mots qui ont un nombre de a modulo 2 différent de son nombre de b modulo 2."
 ==
 
+#* Texte de l'énoncé
+# ---
+# ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
+# l'automate minimisé du langage solution
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez une expression reconnaissant le langage {{ message }} <br>
