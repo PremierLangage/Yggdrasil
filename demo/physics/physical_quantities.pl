@@ -19,7 +19,8 @@ evaluator ==
 from sympy.physics.units.definitions.unit_definitions import meter, gram, kilogram, second, ampere, \
 kelvin, mole, candela, newton, joule, watt, pascal, hertz, coulomb, volt, ohm
 
-from sympy.physics.units import Quantity, dimsys_SI, SI
+from sympy.physics.units import Quantity
+from sympy.physics.units.systems.si import dimsys_SI, SI
 
 def get_numeric_unit(expr):
     """
