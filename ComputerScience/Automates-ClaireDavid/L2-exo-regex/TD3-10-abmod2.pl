@@ -6,7 +6,10 @@ title = *** TD3.1-10
 
 
 #* Ajouter ici l'automate solution et autres variables de l'exo
-generate== #|py
+generate== #|py|
+
+#pour definir le type de réponse attendue (automaton par défaut)
+answer_type = "simple-regex"
 
 viewer = '''
     #states
