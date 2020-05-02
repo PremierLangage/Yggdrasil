@@ -1,16 +1,15 @@
+extends = ../templates/new_editor-L2.pl
 
+#* titre de l'exercice
+title = exo auto from regex
 
-# Migration à faire
-
-extends = ../templates/editor-L2.pl
-
-
-## Ajouter ici la génération de l'automate et autres variables de l'exo
+#* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
-#from automaton import Automaton
 
-#    la construction de l'automate pour tester la réponse
-viewer = Automaton.parse('(a|b)*a(a|b)(a|b)(a|b)')
+alphabet = "a,b"
+
+#langage solution -- le nom solution est forcé par le template
+solution = Automaton.parse('(a|b)*a(a|b)(a|b)(a|b)')
 
 
 #    l'alphabet
@@ -30,6 +29,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
