@@ -1,7 +1,6 @@
 extends = /model/mathinput.pl
-@ /model/latex_settings/latex_settings_electronics.py [latex_settings.py]
 
-title = Calcul d'impédance
+title = Quantités physiques
 
 input.virtualKeyboards = elementary
 
@@ -13,6 +12,8 @@ before ==
 
 text ==
 Ecrire une quantité physique.
+
+Exemples : $! 10.5 V!$, $!4.1 mol.kg^{-1} !$, $3.5 \times 10^3 km/s!$, etc.
 ==
 
 evaluator ==
