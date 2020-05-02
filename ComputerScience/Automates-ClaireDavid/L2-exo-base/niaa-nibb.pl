@@ -1,7 +1,7 @@
 extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
-title = exo auto from auto
+title = TD1 exo3 L12
 
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
@@ -33,7 +33,6 @@ alphabet = "a,b"
 message = "l'ensemble des mots  ne contenant ni aa, ni bb comme facteur"
 ==
 
-title = TD1 exo3 L12
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant {{ message }} <br>
