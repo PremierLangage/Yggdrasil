@@ -1,22 +1,24 @@
+extends = ../templates/new_editor-L2.pl
 
+#* titre de l'exercice
+title = TD3.1-4
 
-extends = ../templates/editor-regex.pl
-
-
+#* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
-## Ajouter ici la génération:
-#    du message de l'énoncé décrivant le langage
-#    l'alphabet
-#    la construction de l'automate pour tester la réponse
 
+#pour definir le type de réponse attendue (automaton par défaut)
+answer_type = "simple-regex"
 
-viewer = Automaton.parse('aaa(a|b)*(a|bb)|aaa')
+alphabet = "a,b"
+
+#langage solution -- le nom solution est forcé par le template
+solution = Automaton.parse('aaa(a|b)*(a|bb)|aaa')
 
 alphabet = "a,b"
 message = "l'ensemble de mots qui commencent par aaa et se terminent par a ou par bb."
 ==
 
-title = TD3.1-4
+
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez une expression reconnaissant le langage correspondant à {{ message }} <br>
@@ -26,6 +28,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
