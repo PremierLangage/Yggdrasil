@@ -14,11 +14,16 @@ alphabet = "a,b"
 #langage solution -- le nom solution est forcé par le template
 solution = Automaton.parse('(bb)*(b|a|ba)(aa)*')
 
-alphabet = "a,b"
+#message de l'énoncé décrivant le langage
 message = "L = { b^n.a^p tels que n ou p est impaire }"
 ==
 
-text ==
+
+#* Texte de l'énoncé
+# ---
+# ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
+# l'automate minimisé du langage solution
+text==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez une expression reconnaissant le langage  {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
