@@ -1,13 +1,18 @@
+extends = ../templates/new_editor-L2.pl
 
-extends = ../templates/editor-mini.pl
+#* titre de l'exercice
+title = exo mini from auto
 
-
-#image_enonce =$ ../images/td8-ex1-3.png
-
-## Ajouter ici la génération de l'automate et autres variables de l'exo
+#* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
 from automaton import Automaton
 
+# pour changer le type d'évaluation en automate minimal
+eval_type = "mini_auto"
+
+alphabet = "a,b"
+
+# automate de l'énoncé
 enonce = '''
     #states
     S1
@@ -66,6 +71,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
