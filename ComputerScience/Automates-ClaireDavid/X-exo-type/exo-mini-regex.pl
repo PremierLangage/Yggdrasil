@@ -1,6 +1,3 @@
-
-# Migration à faire
-
 extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
@@ -36,6 +33,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
