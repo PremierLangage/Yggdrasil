@@ -1,7 +1,7 @@
 extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
-title = exo auto from regex
+title = TD1 exo3 L10
 
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
@@ -19,7 +19,6 @@ alphabet = "a,b"
 message = " le langage {abb, ba, bab}*"
 ==
 
-title = TD1 exo3 L10
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant {{ message }} <br>
