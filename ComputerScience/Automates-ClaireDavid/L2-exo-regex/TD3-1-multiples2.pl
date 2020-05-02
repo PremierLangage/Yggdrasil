@@ -3,6 +3,7 @@ extends = ../templates/new_editor-L2.pl
 #* titre de l'exercice
 title = TD3.1-1
 
+#* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
 ## Ajouter ici la génération:
 #    du message de l'énoncé décrivant le langage
