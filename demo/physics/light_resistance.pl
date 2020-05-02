@@ -1,4 +1,4 @@
-extends = /model/mathinput.pl
+extends = /model/physicsinput.pl
 
 title = Résistance d'une lampe
 
