@@ -19,7 +19,7 @@ evaluator ==
 from sympy.physics.units.definitions.unit_definitions import meter, gram, kilogram, second, ampere, \
 kelvin, mole, candela, newton, joule, watt, pascal, hertz, coulomb, volt, ohm
 
-from sympy.physics.units import Quantity
+from sympy.physics.units import Quantity, dimsys_SI, SI
 
 def get_numeric_unit(expr):
     """
@@ -45,9 +45,11 @@ unit_dict = {'m': meter, 'g': gram, 'kg': kilogram, 's': second, 'A': ampere, 'K
 score = 100
 ans = latex2sympy(input.value, local_dict=unit_dict)
 num, unit = get_numeric_unit(ans)
+dim = dimsys_SI.get_dimensional_dependencies(SI.get_dimensional_expr(unit))
 feedback = f"""
-Partie numérique : {num} \\n
-Unité : {unit}
+Partie numérique : {num} ;
+Unité : {unit} ;
+Dimension : {dim}
 """
 ==
 
