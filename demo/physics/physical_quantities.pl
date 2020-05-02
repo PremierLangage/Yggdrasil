@@ -46,7 +46,7 @@ score = 100
 ans = latex2sympy(input.value, local_dict=unit_dict)
 num, unit = get_numeric_unit(ans)
 feedback = f"""
-Partie numérique : {num}
+Partie numérique : {num} \n
 Unité : {unit}
 """
 ==
