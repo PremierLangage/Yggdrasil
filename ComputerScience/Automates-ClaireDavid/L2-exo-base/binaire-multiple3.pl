@@ -35,7 +35,6 @@ solution = '''
 # ---
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
-title = *** multiples de 3
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant les mots qui sont la représentation en binaire (big endian) des entiers multiples de 3. 
@@ -47,6 +46,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
