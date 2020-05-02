@@ -6,10 +6,13 @@ title = TD3.1-1
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
 
+#pour definir le type de réponse attendue (automaton par défaut)
+answer_type = "simple-regex"
+
+alphabet = "0,1"
 
 viewer = Automaton.parse('(0|1)*0')
 
-alphabet = "0,1"
 message = "à la représentation des entiers en base 2 qui sont des multiples de 2"
 ==
 
