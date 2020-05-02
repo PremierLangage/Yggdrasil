@@ -10,7 +10,7 @@ before ==
 from sympy.physics.units.definitions.unit_definitions import ampere, volt, ohm
 from sympy.physics.units import convert_to
 
-U = 2*randint(15)*rand*volt
+U = 2*randint(5,15)*rand*volt
 I = 0.5*randint(1,20)*ampere
 R = convert_to(U/I, ohm)
 ==
