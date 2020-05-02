@@ -18,9 +18,11 @@ solution = Automaton.parse('b(a|b)((a|b)(a|b))*b|b')
 message = "des mots de longueur impaire qui commencent et se terminent par b."
 ==
 
-
-
-text ==
+#* Texte de l'énoncé
+# ---
+# ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
+# l'automate minimisé du langage solution
+text==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez une expression reconnaissant le langage {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
