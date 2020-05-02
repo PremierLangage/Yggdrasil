@@ -15,7 +15,6 @@ alphabet = "a,b"
 #message de l'énoncé décrivant le langage
 message = 'bb * a(b * a) *'
 
-
 ## TODO donner une seule description du lanage enoncé pour le message et l'automate
 #langage solution -- le nom solution est forcé par le template
 solution = Automaton.parse('bb*a(b*a)*')
