@@ -29,13 +29,15 @@ solution = '''
     S1:b>S2
     S2:b>S0
 '''
-#    l'alphabet
-alphabet = "a,b"
 
-#    du message de l'énoncé décrivant le langage
+#message de l'énoncé décrivant le langage
 message = "le langage { u.v tels que  u,v ∈ Σ* et |u| = 2|v| }"
 ==
 
+#* Texte de l'énoncé
+# ---
+# ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
+# l'automate minimisé du langage solution
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant {{ message }} <br>
