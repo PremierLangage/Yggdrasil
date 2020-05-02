@@ -7,8 +7,7 @@ input.virtualKeyboards = elementary
 settings.feedback = raw
 
 before ==
-from sympy.physics.units.definitions.unit_definitions import ampere, volt, ohm
-from sympy.physics.units import convert_to
+
 
 U = 2*randint(5,15)*volt
 I = randint(1,20)/2*ampere
