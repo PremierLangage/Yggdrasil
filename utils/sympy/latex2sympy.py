@@ -76,6 +76,7 @@ def latex2str(s):
          (r"\}",r"\rbrace"),
          ("{", "("),
          ("}", ")"),
+         (r"\operatorname"," "),
          (r"\lbrace","{"),
          (r"\rbrace","}"),
          (r"\infty", "oo"),
