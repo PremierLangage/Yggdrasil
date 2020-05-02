@@ -6,7 +6,7 @@ title = *** multiples de 3
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
 
-alphabet = "a,b"
+alphabet = "0,1"
 
 #langage solution -- le nom solution est forcé par le template
 solution = '''
@@ -30,7 +30,6 @@ solution = '''
     S1:1>S0
 '''
 #    l'alphabet
-alphabet = "0,1"
 ==
 
 title = *** multiples de 3
