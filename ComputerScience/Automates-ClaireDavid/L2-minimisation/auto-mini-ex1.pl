@@ -52,8 +52,12 @@ viewer_enonce.automaton = enonce
 solution = Automaton.parse(enonce)
 ==
 
-# dans ce qui suit le pb est que le viewer contient l'automate minimisé et non celui de départ
-text ==
+
+#* Texte de l'énoncé
+# ---
+# ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
+# l'automate minimisé du langage solution
+text==
 {{ viewer_enonce|component }}
 
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
