@@ -1,7 +1,7 @@
 extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
-title = exo regex
+title = Partiel 2020 Exo1-4
 
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
@@ -14,7 +14,7 @@ alphabet = "a,b"
 #langage solution -- le nom solution est forcé par le template
 solution = Automaton.parse('ba*ba*b(a*ba*ba*b)*a*')
 
-alphabet = "a,b"
+#message de l'énoncé décrivant le langage
 message = "l’ensemble des mots qui commencent par b et dont le nombre de b est un multiple de 3."
 ==
 
