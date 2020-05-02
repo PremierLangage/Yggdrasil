@@ -18,6 +18,7 @@ solution = Automaton.parse('(a*ba*b)*a*')
 #message de l'énoncé décrivant le langage
 message = "des mots qui ont un nombre pair de b."
 ==
+
 #* Texte de l'énoncé
 # ---
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
