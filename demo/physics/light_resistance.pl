@@ -17,9 +17,6 @@ Une lampe est traversée par un courant de $! {{I|latex}} !$. La tension aux bor
 ==
 
 evaluator ==
-from sympy.physics.units.definitions.unit_definitions import meter, gram, kilogram, second, ampere, \
-kelvin, mole, candela, newton, joule, watt, pascal, hertz, coulomb, volt, ohm
-
 from sympy.physics.units import Quantity
 from sympy.physics.units.systems.si import dimsys_SI, SI
 
