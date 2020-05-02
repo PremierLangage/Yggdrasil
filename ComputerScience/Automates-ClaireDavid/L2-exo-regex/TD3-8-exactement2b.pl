@@ -14,7 +14,7 @@ alphabet = "a,b"
 #langage solution -- le nom solution est forcé par le template
 solution = Automaton.parse('a*ba*ba*')
 
-alphabet = "a,b"
+#message de l'énoncé décrivant le langage
 message = "aux mots contenant exactememt deux b."
 ==
 
