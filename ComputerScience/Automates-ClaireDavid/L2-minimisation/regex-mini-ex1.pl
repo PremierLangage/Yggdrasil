@@ -18,14 +18,13 @@ message = 'bb * a(b * a) *'
 ## TODO donner une seule description du lanage enoncé pour le message et l'automate
 #langage solution -- le nom solution est forcé par le template
 solution = Automaton.parse('bb*a(b*a)*')
-
-
-
 ==
 
-
-text ==
-
+#* Texte de l'énoncé
+# ---
+# ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
+# l'automate minimisé du langage solution
+text==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez l'automate minimal déterministe complet reconnaissant le langage {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
