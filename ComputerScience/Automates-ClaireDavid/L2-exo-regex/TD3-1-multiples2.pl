@@ -14,12 +14,14 @@ alphabet = "0,1"
 #langage solution -- le nom solution est forcé par le template
 solution = Automaton.parse('(0|1)*0')
 
-
 #message de l'énoncé décrivant le langage
 message = "à la représentation des entiers en base 2 qui sont des multiples de 2"
 ==
 
-
+#* Texte de l'énoncé
+# ---
+# ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
+# l'automate minimisé du langage solution
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez une expression reconnaissant le langage correspondant à {{ message }} <br>
