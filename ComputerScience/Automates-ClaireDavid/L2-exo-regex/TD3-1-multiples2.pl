@@ -1,6 +1,4 @@
-
-
-extends = ../templates/editor-regex.pl
+extends = ../templates/new_editor-L2.pl
 
 
 generate== #|py|
@@ -26,5 +24,6 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
