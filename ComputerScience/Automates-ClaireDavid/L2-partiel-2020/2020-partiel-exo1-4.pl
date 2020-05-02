@@ -18,7 +18,10 @@ solution = Automaton.parse('ba*ba*b(a*ba*ba*b)*a*')
 message = "l’ensemble des mots qui commencent par b et dont le nombre de b est un multiple de 3."
 ==
 
-title = Partiel 2020 Exo1-4
+#* Texte de l'énoncé
+# ---
+# ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
+# l'automate minimisé du langage solution
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez une expression reconnaissant le langage correspondant à {{ message }} <br>
