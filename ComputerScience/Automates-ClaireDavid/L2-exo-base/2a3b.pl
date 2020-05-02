@@ -42,6 +42,7 @@ solution = '''
 #message de l'énoncé décrivant le langage
 message = "l'ensemble des mots ayant un nombre de a pair et un nombre de b égal à 1 modulo 3."
 ==
+
 #* Texte de l'énoncé
 # ---
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
