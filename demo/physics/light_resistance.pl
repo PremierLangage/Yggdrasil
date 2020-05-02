@@ -8,10 +8,11 @@ settings.feedback = raw
 
 before ==
 from sympy.physics.units.definitions.unit_definitions import ampere, volt, ohm
+from sympy.physics.units import convert_to
 
 U = 24*volt
 I = 2*ampere
-R = U/I
+R = convert_to(U/I, ohm)
 ==
 
 text ==
