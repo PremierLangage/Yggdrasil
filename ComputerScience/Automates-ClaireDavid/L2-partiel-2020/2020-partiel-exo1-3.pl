@@ -1,7 +1,7 @@
 extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
-title = exo regex
+title = Partiel 2020 Exo1-3
 
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
@@ -18,7 +18,10 @@ solution = Automaton.parse('(a|b)*(bab|bb)(a|b)*')
 message = "l’ensemble des mots qui contiennent le facteur bab ou le facteur bb."
 ==
 
-title = Partiel 2020 Exo1-3
+#* Texte de l'énoncé
+# ---
+# ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
+# l'automate minimisé du langage solution
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez une expression reconnaissant le langage correspondant à {{ message }} <br>
