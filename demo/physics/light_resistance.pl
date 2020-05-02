@@ -15,8 +15,8 @@ R = U/I
 ==
 
 text ==
-{{U|latex}}
-{{R|latex}}
+$! {{U|latex}} !$
+$! {{R|latex}} !$
 Ecrire une quantité physique.
 
 Exemples : $! 10.5 V!$, $!4.1 mol \times kg^{-1} !$, $! 3.5 \times 10^3 km/s !$, etc.
