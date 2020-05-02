@@ -488,6 +488,7 @@ _feedback_ = {
 "NotSet": "La réponse doit être un ensemble.",
 "NotTuple": "La réponse doit être un n-uplet (un vecteur ligne).",
 "NotPoly": "La réponse doit être un polynôme.",
+"NotPhysical": "La réponse doit être une valeur numérique suivie d'une unité physique.",
 "RSetNotDisjoint": "Les ensembles de cette réunion ne sont pas disjoints. La réponse peut être simplifiée.",
 "PolyNotExpanded": "La réponse doit être un polynôme développé.",
 "PolyNotFactorized": "La réponse doit être un polynôme factorisé.",
@@ -743,7 +744,7 @@ def eval_physical(strans, sol, checkratsimp=True, authorized_func=None, local_di
     try:
         ans = latex2sympy(strans, local_dict)
     except:
-        return (-1, "NotExpr")
+        return (-1, "NotPhysical")
     if not isinstance(ans, sp.Expr):
         return (-1, "NotExpr")
 
