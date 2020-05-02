@@ -1,7 +1,7 @@
 extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
-title = exo regex
+title = TD3.1-8
 
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
@@ -18,7 +18,6 @@ alphabet = "a,b"
 message = "aux mots contenant exactememt deux b."
 ==
 
-title = TD3.1-8
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez une expression reconnaissant le langage correspondant à {{ message }} <br>
