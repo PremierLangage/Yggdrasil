@@ -11,6 +11,8 @@ generate== #|py|
 #pour definir le type de réponse attendue (automaton par défaut)
 answer_type = "simple-regex"
 
+alphabet = "a,b"
+
 viewer = '''
     #states
     S00
@@ -35,7 +37,7 @@ viewer = '''
     S10:b>S11
     S11:b>S10
 '''
-alphabet = "a,b"
+
 message = "des mots qui ont un nombre de a modulo 2 différent de son nombre de b modulo 2."
 ==
 
