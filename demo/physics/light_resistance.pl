@@ -7,25 +7,6 @@ input.virtualKeyboards = elementary
 settings.feedback = raw
 
 before ==
-
-==
-
-text ==
-Ecrire une quantité physique.
-
-Exemples : $! 10.5 V!$, $!4.1 mol \times kg^{-1} !$, $! 3.5 \times 10^3 km/s !$, etc.
-==
-
-evaluator ==
-extends = /model/mathinput.pl
-
-title = Quantités physiques
-
-input.virtualKeyboards = elementary
-
-settings.feedback = raw
-
-before ==
 from sympy.physics.units.definitions.unit_definitions import ampere, volt, ohm
 
 U = 24*volt
