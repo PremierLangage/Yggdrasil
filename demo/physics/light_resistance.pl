@@ -16,11 +16,7 @@ R = convert_to(U/I, ohm)
 ==
 
 text ==
-$! {{U|latex}} !$
-$! {{I|latex}} !$
-Ecrire une quantité physique.
-
-Exemples : $! 10.5 V!$, $!4.1 mol \times kg^{-1} !$, $! 3.5 \times 10^3 km/s !$, etc.
+Une lampe est traversée par un courant de $! {{I|latex}} !$. La tension aux bornes de la lampe est $! {{U|latex}} !$. Déterminer la résistance de la lampe.
 ==
 
 evaluator ==
