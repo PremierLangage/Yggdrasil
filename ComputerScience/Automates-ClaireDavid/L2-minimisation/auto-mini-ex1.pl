@@ -11,6 +11,8 @@ from automaton import Automaton
 eval_type = "mini_auto"
 
 alphabet = "a,b"
+
+# automate de l'énoncé
 enonce = '''
     #states
     S0
