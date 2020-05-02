@@ -1,11 +1,12 @@
 extends = ../templates/new_editor-L2.pl
 
 
-generate== #|py|
-## Ajouter ici la génération:
-#    du message de l'énoncé décrivant le langage
-#    l'alphabet
-#    la construction de l'automate pour tester la réponse
+#* titre de l'exercice
+title = *** TD3.1-10
+
+
+#* Ajouter ici l'automate solution et autres variables de l'exo
+generate== #|py
 
 viewer = '''
     #states
@@ -35,7 +36,6 @@ alphabet = "a,b"
 message = "des mots qui ont un nombre de a modulo 2 différent de son nombre de b modulo 2."
 ==
 
-title = *** TD3.1-10
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez une expression reconnaissant le langage {{ message }} <br>
