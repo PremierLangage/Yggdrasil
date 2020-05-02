@@ -61,13 +61,14 @@ text==
 {{ viewer_enonce|component }}
 
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
-Donnez l'automate minimal déterministe complet correspondant àà l'automate ci-dessus. <br>
+Donnez l'automate minimal déterministe complet correspondant à l'automate ci-dessus. <br>
 {% if attempt < maxattempt and score != 100 %}
 <p class="warning-state">
 Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
