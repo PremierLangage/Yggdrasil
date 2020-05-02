@@ -26,10 +26,8 @@ solution = '''
     S0:a>S1
     S1:b>S0
 '''
-#    l'alphabet
-alphabet = "a,b"
 
-#    du message de l'énoncé décrivant le langage
+#message de l'énoncé décrivant le langage
 message = "l'ensemble des mots  ne contenant ni aa, ni bb comme facteur"
 ==
 
