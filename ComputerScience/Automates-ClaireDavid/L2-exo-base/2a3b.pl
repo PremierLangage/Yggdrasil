@@ -38,10 +38,8 @@ solution = '''
     S11:b>S12
     S12:b>S10
 '''
-#    l'alphabet
-alphabet = "a,b"
 
-#    du message de l'énoncé décrivant le langage
+#message de l'énoncé décrivant le langage
 message = "l'ensemble des mots ayant un nombre de a pair et un nombre de b égal à 1 modulo 3."
 ==
 
