@@ -1,16 +1,18 @@
+extends = ../templates/new_editor-L2.pl
 
+#* titre de l'exercice
+title = exo regex
 
-extends = ../templates/editor-regex.pl
-
-
+#* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
-## Ajouter ici la génération:
-#    du message de l'énoncé décrivant le langage
-#    l'alphabet
-#    la construction de l'automate pour tester la réponse
 
+#pour definir le type de réponse attendue (automaton par défaut)
+answer_type = "simple-regex"
 
-viewer = Automaton.parse('b*a*')
+alphabet = "a,b"
+
+#langage solution -- le nom solution est forcé par le template
+solution = Automaton.parse('b*a*')
 
 alphabet = "a,b"
 message = "des mots qui ne contiennnent pas le facteur ab."
@@ -26,6 +28,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
