@@ -2,7 +2,7 @@ extends = ../templates/new_editor-L2.pl
 
 
 #* titre de l'exercice
-title = *** TD3.1-10
+title = * TD3.1-10
 
 
 #* Ajouter ici l'automate solution et autres variables de l'exo
@@ -56,6 +56,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
