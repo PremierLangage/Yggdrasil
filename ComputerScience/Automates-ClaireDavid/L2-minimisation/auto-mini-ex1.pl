@@ -1,7 +1,7 @@
 extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
-title = exo mini from auto
+title = automate-1
 
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
@@ -56,7 +56,6 @@ alphabet = "a,b"
 ==
 
 # dans ce qui suit le pb est que le viewer contient l'automate minimisé et non celui de départ
-title = automate-1
 text ==
 {{ viewer_enonce|component }}
 
