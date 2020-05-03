@@ -30,10 +30,10 @@ solution = '''
     S1:b>S4
     S2:b>S3
     S2:b>S4
-    S12:a>S02
-    S00:b>S01
-    S01:b>S02
-    S02:b>S00
+    S2:a>S2
+    S2:b>S2
+    S3:a>S4
+    S4:b>S5
     S10:b>S11
     S11:b>S12
     S12:b>S10
@@ -50,14 +50,14 @@ solution = '''
 #            { "fromState": "S1", "toState": "S3", "symbols": ["b"] },
 #            { "fromState": "S1", "toState": "S4", "symbols": ["b"] },
 #            { "fromState": "S2", "toState": "S3", "symbols": ["b"] },
-            { "fromState": "S2", "toState": "S4", "symbols": ["b"] },
-            { "fromState": "S2", "toState": "S2", "symbols": ["a"] },
-            { "fromState": "S2", "toState": "S2", "symbols": ["b"] },
-            { "fromState": "S3", "toState": "S4", "symbols": ["a"] },
-            { "fromState": "S4", "toState": "S5", "symbols": ["b"] },
-        ]
-    }
-)
+#            { "fromState": "S2", "toState": "S4", "symbols": ["b"] },
+#            { "fromState": "S2", "toState": "S2", "symbols": ["a"] },
+#            { "fromState": "S2", "toState": "S2", "symbols": ["b"] },
+#            { "fromState": "S3", "toState": "S4", "symbols": ["a"] },
+#            { "fromState": "S4", "toState": "S5", "symbols": ["b"] },
+#        ]
+#    }
+#)
 
 
 #message de l'énoncé décrivant le langage
