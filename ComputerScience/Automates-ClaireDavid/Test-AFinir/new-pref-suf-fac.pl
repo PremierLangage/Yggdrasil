@@ -1,8 +1,7 @@
-
 extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
-title = exo auto from auto
+title =  Tirage aléatoire d'un exercice de prefixe, suffixe ou facteur
 
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
