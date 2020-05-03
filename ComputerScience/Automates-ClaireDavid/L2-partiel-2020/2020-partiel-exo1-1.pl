@@ -1,13 +1,40 @@
+extends = ../templates/new_editor-L2.pl
 
-# Migration à faire
+#* titre de l'exercice
+title = Partiel 2020 Exo1-1
 
-
-extends = ../templates/editor-L2.pl
-
-
-## Ajouter ici la génération de l'automate et autres variables de l'exo
+#* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
-#from automaton import Automaton
+
+alphabet = "a,b"
+
+
+#langage solution -- le nom solution est forcé par le template
+solution = '''
+    #states
+    S1
+    S2
+    S3
+    S4
+    S5
+    #initials
+    S1
+    #accepting
+    S5
+    #alphabet
+    a
+    b
+    #transitions
+    S1:b>S2
+    S1:b>S3
+    S1:b>S4
+    S2:b>S3
+    S2:b>S4
+    S2:a>S2
+    S2:b>S2
+    S3:a>S4
+    S4:b>S5
+'''
 
 #    la construction de l'automate pour tester la réponse
 viewer = AutomatonEditor(
@@ -27,18 +54,16 @@ viewer = AutomatonEditor(
     }
 )
 
-#   transformation de l'automate de json en objet
-#automaton = Automaton.parse(automaton)
 
-#    l'alphabet
-alphabet = "a,b"
-
-#    du message de l'énoncé décrivant le langage
+#message de l'énoncé décrivant le langage
 message = "l'ensemble des mots qui commencent par ba et dont la longueur est paire."
-# peut-on utiliser la syntaxe du viewer ?
 ==
 
-title = Partiel 2020 Exo1-1
+
+#* Texte de l'énoncé
+# ---
+# ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
+# l'automate minimisé du langage solution
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage correspondant à {{ message }} <br>
@@ -48,6 +73,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
