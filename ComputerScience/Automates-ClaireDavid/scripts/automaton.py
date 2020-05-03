@@ -349,18 +349,18 @@ class Automaton:
 
         return Automaton(lego.parse(regex).to_fsm().reduce())
 
-    @staticmethod
-    def from_regex(regex: str):
-        """
-        Creates a minimal deterministic automaton from a regex.
-
-        :param regex a regular expression
-        :return an Automaton instance.
-        :raise TypeError if regex is not a string.
-        """
-        if not isinstance(regex, str):
-            raise TypeError('from_regex: Excepted an automaton in regex notation')
-        return Automaton(lego.parse(regex).to_fsm().reduce())
+#    @staticmethod
+#    def from_regex(regex: str):
+#        """
+#        Creates a minimal deterministic automaton from a regex.
+#
+#        :param regex a regular expression
+#        :return an Automaton instance.
+#        :raise TypeError if regex is not a string.
+#        """
+#        if not isinstance(regex, str):
+#            raise TypeError('from_regex: Excepted an automaton in regex notation')
+#        return Automaton(lego.parse(regex).to_fsm().reduce())
 
     @staticmethod
     def from_editor(editor: AutomatonEditor):
