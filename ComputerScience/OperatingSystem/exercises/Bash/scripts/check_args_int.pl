@@ -25,12 +25,12 @@ def soluce(a, b, c):
     else:
         return "La contrainte "+str(a)+" <= "+str(c)+" <= "+str(b)+" est vérifiée."
 
-test_bash = [["simple", ["Salut"], "Salut\n"],
-["trois arguments", ["Pierre", "Paul", "Jacques"], "Jacques\nPaul\nPierre\n"],
-["aucun argument", [], ""],
-["aléatoire", s1, "\n".join(reversed(s1)) + "\n"],
-["aléatoire", s2, "\n".join(reversed(s2)) + "\n"],
-["aléatoire", s3, "\n".join(reversed(s3)) + "\n"],
+a1,b1,c1 = randint(1,100), randint(1,100), randint(1,100)
+
+test_bash = [ ["simple", ["1", "3", "2"], "La contrainte 1 <= 2 <= 3 est vérifiée.\n"], 
+ ["simple", ["2", "3", "1"], "1 n'est pas compris entre 2 et 3"], 
+ ["simple", ["1", "2", "3"], "3 n'est pas compris entre 1 et 2"], 
+ ["aléatoire", [str(i) for i in [a1,b1,c1]], soluce(a1, b1, c1)], 
 ]
 ==
 
