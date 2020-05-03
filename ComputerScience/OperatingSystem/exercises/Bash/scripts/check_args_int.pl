@@ -21,15 +21,15 @@ from random import choice, randint
 
 def soluce(a, b, c):
     if c > b or b < a:
-        return str(c)+" n'est pas compris entre "+str(a)+" et "+str(b)
+        return str(c)+" n'est pas compris entre "+str(a)+" et "+str(b)+".\n"
     else:
-        return "La contrainte "+str(a)+" <= "+str(c)+" <= "+str(b)+" est vérifiée."
+        return "La contrainte "+str(a)+" <= "+str(c)+" <= "+str(b)+" est vérifiée.\n"
 
 a1,b1,c1 = randint(1,100), randint(1,100), randint(1,100)
 
 test_bash = [ ["simple", ["1", "3", "2"], "La contrainte 1 <= 2 <= 3 est vérifiée.\n"], 
- ["simple", ["2", "3", "1"], "1 n'est pas compris entre 2 et 3"], 
- ["simple", ["1", "2", "3"], "3 n'est pas compris entre 1 et 2"], 
+ ["simple", ["2", "3", "1"], "1 n'est pas compris entre 2 et 3.\n"], 
+ ["simple", ["1", "2", "3"], "3 n'est pas compris entre 1 et 2.\n"], 
  ["aléatoire", [str(i) for i in [a1,b1,c1]], soluce(a1, b1, c1)], 
 ]
 ==
