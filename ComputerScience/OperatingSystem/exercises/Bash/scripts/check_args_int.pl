@@ -50,7 +50,10 @@ author=Nicolas Borie
 title=Script qui vérifie un encadrement de valeurs
 
 text==
-Écrire un script bash qui attend trois paramètres entiers. Si le troisi
+Écrire un script bash qui attend trois paramètres entiers. Si le troisième 
+argument **c** est supérieur ou égal au premier **a** et inférieur ou égal au second 
+**b**; alors votre script devra inscrire sur la sortie standard :
+**La contrainte a <= c <= b est vérifiée.** Dans tous les autres cas
 
 ==
 
