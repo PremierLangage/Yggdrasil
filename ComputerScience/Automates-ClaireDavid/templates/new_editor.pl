@@ -319,7 +319,7 @@ if answer_type == "automaton" :
     # Je préfèrerai un flag pour ne jamais alterer l'automate y compris celui de l'énoncé ou de solution
 elif answer_type == "simple-regex" :
     try:
-        student_answer = Automaton.from_regex(inputbox.value, simple=True) # raise exception if not valid
+        student_answer = Automaton.from_regex(inputbox.value, alphabet=None,simple=True) # raise exception if not valid
     except Exception as e:
 #        error = str(e)
         error = "Syntax error"
