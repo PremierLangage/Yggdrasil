@@ -55,6 +55,9 @@ class Generator:
         alphabet =  [string.ascii_lowercase[i] for i in range(length)]
         return alphabet
 
+
+    # DEPRECATED this method will be removed soon.
+    #  same method has been copied to the Automaton module
     ## Return True if chaine is a simple regex with respect to alphabet
     #   Allowed simple regex(Sregex):
     #       any symbol from the alphabet, '€' and 'ε'
@@ -98,6 +101,8 @@ class Generator:
     
         return copie == 'S'
 
+    # DEPRECATED this method will be removed soon.
+    #  use Automaton.from_regex instead
     @staticmethod
     def regex(regex, alphabet=None, simple=False):
         """
@@ -325,6 +330,7 @@ class Generator:
             "rows": rows,
             "transitions": transitions
         }
+
 
 
 
