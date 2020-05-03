@@ -28,32 +28,9 @@ solution = '''
     S2:a>S3
     S3:a>S4
     S3:b>S4
-
-    S1:b>S3
-    S1:b>S4
-    S2:b>S3
-    S2:b>S4
-    S2:b>S2
-    S4:b>S5
+    S4:a>S3
+    S4:b>S3
 '''
-
-#    la construction de l'automate pour tester la réponse
-#viewer = AutomatonEditor(
-#    automaton= {
-#        "alphabet": ["a", "b"],
-#        "initialStates": ["S1"],
-#        "acceptingStates": ["S3"],
-#        "states": ["S1", "S2", "S3","S4"],
-#        "transitions": [
-#            { "fromState": "S1", "toState": "S2", "symbols": ["b"] },
-#            { "fromState": "S2", "toState": "S3", "symbols": ["a"] },
-#            { "fromState": "S3", "toState": "S4", "symbols": ["a"] },
-            { "fromState": "S3", "toState": "S4", "symbols": ["b"] },
-            { "fromState": "S4", "toState": "S3", "symbols": ["a"] },
-            { "fromState": "S4", "toState": "S3", "symbols": ["b"] },
-        ]
-    }
-)
 
 
 #message de l'énoncé décrivant le langage
