@@ -25,12 +25,13 @@ def soluce(a, b, c):
     else:
         return "La contrainte "+str(a)+" <= "+str(c)+" <= "+str(b)+" est vérifiée.\n"
 
-L1 = [randint(1,100), randint(1,100), randint(1,100)]
-L2 = [randint(1,100), randint(1,100), randint(1,100)]
-L3 = [randint(1,100), randint(1,100), randint(1,100)]
-L4 = [randint(1,100), randint(1,100), randint(1,100)]
-L5 = [randint(1,100), randint(1,100), randint(1,100)]
-L6 = [randint(1,100), randint(1,100), randint(1,100)]
+L1 = [randint(1,60), randint(40,100), randint(1,100)]
+L2 = [randint(1,60), randint(40,100), randint(1,100)]
+L3 = [randint(1,60), randint(40,100), randint(1,100)]
+L4 = [randint(1,60), randint(40,100), randint(1,100)]
+L5 = [randint(1,60), randint(40,100), randint(1,100)]
+L6 = [randint(1,60), randint(40,100), randint(1,100)]
+
 
 test_bash = [ ["simple", ["1", "3", "2"], "La contrainte 1 <= 2 <= 3 est vérifiée.\n"], 
  ["simple", ["2", "3", "1"], "1 n'est pas compris entre 2 et 3.\n"], 
