@@ -4,6 +4,8 @@
 extends = ../templates/editor-L2.pl
 
 
+title = Partiel 2020 Exo1-1
+
 generate== #|py|
 ## Ajouter ici la génération:
 #    du message de l'énoncé décrivant le langage
@@ -34,10 +36,15 @@ viewer = AutomatonEditor(
 #automaton = Automaton.parse(automaton)
 
 alphabet = "a,b"
+
+#message de l'énoncé décrivant le langage
 message = "l'ensemble des mots qui commencent par b et finissent pat bab ou bb."
 ==
 
-title = Partiel 2020 Exo1-1
+#* Texte de l'énoncé
+# ---
+# ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
+# l'automate minimisé du langage solution
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage correspondant à {{ message }} <br>
@@ -47,6 +54,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
