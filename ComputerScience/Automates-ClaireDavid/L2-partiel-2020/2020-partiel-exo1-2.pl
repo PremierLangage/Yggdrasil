@@ -1,9 +1,6 @@
+extends = ../templates/new_editor-L2.pl
 
-# Migration à faire
-
-extends = ../templates/editor-L2.pl
-
-
+#* titre de l'exercice
 title = Partiel 2020 Exo1-1
 
 generate== #|py|
