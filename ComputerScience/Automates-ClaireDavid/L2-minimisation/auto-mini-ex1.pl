@@ -1,8 +1,6 @@
 extends = ../templates/new_editor-L2.pl
 
-
-
-#* Ajouter ici l'automate solution et autres variables de l'exo
+## Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
 from automaton import Automaton
 
