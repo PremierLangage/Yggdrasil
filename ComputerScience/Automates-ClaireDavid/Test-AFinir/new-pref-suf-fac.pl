@@ -12,7 +12,7 @@ import random
 #    -1: 'prefixe',
 #    0: 'facteur',
 #    1: 'suffixe'
-mode = random.choice([-1, 0, 1])
+mode = 0
 messages = {
     -1: 'commencent par',
     0: 'contiennent',
