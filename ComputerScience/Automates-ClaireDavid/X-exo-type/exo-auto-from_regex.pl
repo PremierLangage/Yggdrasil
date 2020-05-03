@@ -12,7 +12,7 @@ alphabet = "a,b"
 solution = Automaton.parse('(ab|a)*')
 
 #message de l'énoncé décrivant le langage
-message = " le langage (ab)*"
+message = " le langage (ab+a)*"
 ==
 
 
