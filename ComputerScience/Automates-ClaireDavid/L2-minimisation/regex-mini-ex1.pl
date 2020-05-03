@@ -8,9 +8,9 @@ generate== #|py|
 from automaton import Automaton
 
 # pour changer le type d'évaluation en automate minimal
-eval_type = "mini_auto"
+eval_type= "mini_auto"
 
-alphabet = "a,b"
+alphabet= "a,b"
 
 #message de l'énoncé décrivant le langage
 message = 'bb * a(b * a) *'
@@ -33,6 +33,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
