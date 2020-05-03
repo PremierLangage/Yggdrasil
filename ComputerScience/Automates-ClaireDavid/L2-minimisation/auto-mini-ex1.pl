@@ -1,7 +1,6 @@
 extends = ../templates/new_editor-L2.pl
 
-#* titre de l'exercice
-title = automate 1
+
 
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
@@ -52,6 +51,8 @@ viewer_enonce.automaton = enonce
 solution = Automaton.parse(enonce)
 ==
 
+#* titre de l'exercice
+title = automate 1
 
 #* Texte de l'énoncé
 # ---
