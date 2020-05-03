@@ -1,7 +1,7 @@
 extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
-title = Partiel 2020 Exo1-1
+title = Partiel 2020 Exo1-2
 
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
