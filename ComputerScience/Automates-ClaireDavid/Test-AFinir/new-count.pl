@@ -1,7 +1,7 @@
 extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
-title = exo auto from auto
+title = Nombre d'occurences
 
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
@@ -19,7 +19,7 @@ editor.debug = False
 editor.editorHeight = "520px"
 
 
-alphabet, letter, occurences, viewer = Generator.counting(
+alphabet, letter, occurences, solution = Generator.counting(
     3, # max_symbs
     4, # max_word_length
     mode,
@@ -28,7 +28,6 @@ alphabet, letter, occurences, viewer = Generator.counting(
 alphabet = ', '.join(list(alphabet))
 ==
 
-title = Nombre d'occurences
 text== #|html|
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage **L1** = {{ '{' }} mots ayant {{ message }} **{{ occurences }}** occurrences de la lettre **{{ letter }}** {{ '}' }} <br>
