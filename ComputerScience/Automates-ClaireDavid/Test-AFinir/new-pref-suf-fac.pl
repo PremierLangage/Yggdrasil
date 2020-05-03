@@ -12,7 +12,7 @@ import random
 #    -1: 'prefixe',
 #    0: 'facteur',
 #    1: 'suffixe'
-mode = -1
+mode = 1
 messages = {
     -1: 'commencent par',
     0: 'contiennent',
