@@ -18,6 +18,7 @@ messages = {
 message = messages[mode]
 
 # generation des variables de l'énoncé et de la solution
+# -- le nom solution est forcé par le template
 alphabet, letter, occurences, solution = Generator.counting(
     3, # max_symbs
     4, # max_word_length
@@ -42,6 +43,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution
 {% endif %}
 
 ==
+
 
 
 
