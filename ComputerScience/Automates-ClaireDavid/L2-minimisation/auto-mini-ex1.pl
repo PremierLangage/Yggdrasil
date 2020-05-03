@@ -1,7 +1,7 @@
 extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
-title = automate-1
+title = automate 1
 
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
@@ -68,6 +68,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
