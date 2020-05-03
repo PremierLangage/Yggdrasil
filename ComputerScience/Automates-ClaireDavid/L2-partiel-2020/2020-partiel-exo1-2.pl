@@ -8,6 +8,37 @@ generate== #|py|
 
 alphabet = "a,b"
 
+
+#langage solution -- le nom solution est forcé par le template
+solution = '''
+    #states
+    S1
+    S2
+    S3
+    S4
+    S5
+    #initials
+    S1
+    #accepting
+    S5
+    #alphabet
+    a
+    b
+    #transitions
+    S00:a>S10
+    S01:a>S11
+    S02:a>S12
+    S10:a>S00
+    S11:a>S01
+    S12:a>S02
+    S00:b>S01
+    S01:b>S02
+    S02:b>S00
+    S10:b>S11
+    S11:b>S12
+    S12:b>S10
+'''
+
 viewer = AutomatonEditor(
     automaton= {
         "alphabet": ["a", "b"],
@@ -28,9 +59,6 @@ viewer = AutomatonEditor(
     }
 )
 
-#automaton = Automaton.parse(automaton)
-
-alphabet = "a,b"
 
 #message de l'énoncé décrivant le langage
 message = "l'ensemble des mots qui commencent par b et finissent pat bab ou bb."
