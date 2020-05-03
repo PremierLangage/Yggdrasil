@@ -17,6 +17,7 @@ messages = {
 }
 message = messages[mode]
 
+# generation des variables de l'énoncé et de la solution
 alphabet, letter, occurences, solution = Generator.counting(
     3, # max_symbs
     4, # max_word_length
