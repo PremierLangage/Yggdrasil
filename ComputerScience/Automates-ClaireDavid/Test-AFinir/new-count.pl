@@ -17,10 +17,6 @@ messages = {
 }
 message = messages[mode]
 
-editor.debug = False
-editor.editorHeight = "520px"
-
-
 alphabet, letter, occurences, solution = Generator.counting(
     3, # max_symbs
     4, # max_word_length
