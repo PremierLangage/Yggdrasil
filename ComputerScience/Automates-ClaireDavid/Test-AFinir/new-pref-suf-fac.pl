@@ -1,7 +1,7 @@
 extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
-title = Facteur
+title = Préfixe
 
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
@@ -12,7 +12,7 @@ import random
 #    -1: 'prefixe',
 #    0: 'facteur',
 #    1: 'suffixe'
-mode = 0
+mode = -1
 messages = {
     -1: 'commencent par',
     0: 'contiennent',
