@@ -20,7 +20,7 @@ before==#|python|
 from random import choice, randint
 
 def soluce(a, b, c):
-    if c > b or b < a or b < a:
+    if (c > b) or (c < a) or (b < a):
         return str(c)+" n'est pas compris entre "+str(a)+" et "+str(b)+".\n"
     else:
         return "La contrainte "+str(a)+" <= "+str(c)+" <= "+str(b)+" est vérifiée.\n"
