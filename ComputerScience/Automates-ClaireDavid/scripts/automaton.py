@@ -281,6 +281,74 @@ class Automaton:
             if len(state_machine.states) == numStates:
                 return Automaton(state_machine)
 
+    ## Return True if chaine is a simple regex with respect to alphabet
+    #   Allowed simple regex(Sregex):
+    #       any symbol from the alphabet, '€' and 'ε'
+    #       (Sregex) -- capture
+    #       Sregex.Sregex -- concatenation
+    #       SregexSregex -- concatenation
+    #       Sregex+Sregex -- union
+    #       Sregex* -- Kleene star
+    #
+    #   symbols '€' and 'ε' represent the empty word
+    #   if not specified alphabet contains all lowercaps letter
+    @staticmethod
+    def syntax_simple_regex(chaine: str, alphabet=None) :
+        copie = chaine
+        if alphabet is None:
+            alphabet = set(string.ascii_letters+string.digits)
+        authorized_letters = alphabet|{'€','ε'}
+        special_symbols = {'.','+','*','(',')'}
+        if any(c not in authorized_letters|special_symbols for c in copie):
+            return False
+        for c in authorized_letters:
+            copie = copie.replace(c,'S')
+        fini = False
+        while not fini:
+            if 'S*' in copie :
+                copie = copie.replace('S*', 'S')
+                continue
+            if 'SS' in copie :
+                copie = copie.replace('SS', 'S')
+                continue
+            if 'S.S' in copie :
+                copie = copie.replace('S.S', 'S')
+                continue
+            if '(S)' in copie :
+                copie = copie.replace('(S)', 'S')
+                continue
+            if 'S+S' in copie :
+                copie = copie.replace('S+S', 'S')
+                continue
+            fini = True
+    
+        return copie == 'S'
+
+    @staticmethod
+    def from_regex(regex: str, alphabet=None, simple=False):
+        """
+        Creates a minimal deterministic automaton from a regex.
+
+        :param regex a regex where the following metacharacters and formations
+            have their usual meanings: ., *, +, ?, {m}, {m,}, {m,n}, (), |, [], 
+        :param alphabet 
+        :param simple if set to True only simple regex are allowed. See syntax_simple_regex for details
+            . concatenation, + union, * Kleene Star, () capture
+        :return an Automaton instance.
+        :raise TypeError if regex is not a string.
+        """
+
+        if not isinstance(regex, str):
+            raise TypeError('from_regex: Excepted an automaton in regex notation')
+
+        # syntax check for simple expression
+        if simple:
+            if not Automaton.syntax_simple_regex(regex, alphabet) :
+                    raise Exception("Syntax error : this is not a simple regex")        
+            regex = regex.replace('.', '').replace('+', '|').replace('€','').replace('ε','')
+
+        return Automaton(lego.parse(regex).to_fsm().reduce())
+
     @staticmethod
     def from_regex(regex: str):
         """
@@ -1060,6 +1128,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
