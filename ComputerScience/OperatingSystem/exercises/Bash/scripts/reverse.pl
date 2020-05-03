@@ -37,13 +37,14 @@ test_bash = [["simple", ["Salut"], "Salut\n"],
 ==
 
 author=Nicolas Borie
-title=Un script bash qui affiche ses arguments
+title=Un script bash qui affiche ses arguments dans l'ordre inverse !
 
 text==
 Écrire un script bash qui écrit sur la sortie standard les arguments que l'on 
-lui a transmis en ligne de commande lors de son appel. Chaque argument devra
-être écrit seul sur une ligne. Votre programme devrait donc produire autant
-de ligne que le nombre d'argument que l'on lui a donné lors de son appel.
+lui a transmis en ligne de commande lors de son appel mais **dans l'ordre inverse**. 
+Chaque argument devra être écrit seul sur une ligne en commançant par le dernier. 
+Votre programme devrait donc produire autant de ligne que le nombre d'argument 
+que l'on lui a donné lors de son appel.
 ==
 
 
