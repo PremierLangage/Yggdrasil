@@ -29,6 +29,8 @@ bla_titre = textes_titre[mode]
 # choix de la taille de l'alphabet
 nb_lettres = random.choice([2,3])
 
+#construction du langage solution, alphabet et mot
+# -- le nom solution est forcé par le template
 if mode == -1 :
     # Generator.prefix(nb lettres alphabet , longueur maxi du prefix)
     alphabet, mot, solution = Generator.prefix(nb_lettres,3,
