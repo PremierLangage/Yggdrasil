@@ -32,7 +32,7 @@ test_bash = [["simple", ["Salut"], "Salut\n"],
 ["aucun argument", [], ""],
 ["aléatoire", s1, "\n".join(reversed(s1)) + "\n"],
 ["aléatoire", s2, "\n".join(reversed(s2)) + "\n"],
-["aléatoire", s2, "\n".join(reversed(s3)) + "\n"],
+["aléatoire", s3, "\n".join(reversed(s3)) + "\n"],
 ]
 ==
 
