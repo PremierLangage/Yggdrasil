@@ -1,8 +1,9 @@
+extends = ../templates/new_editor-L2.pl
 
+#* titre de l'exercice
+title = exo auto from auto
 
-# Migration à faire
-extends = ../templates/editor-L2.pl
-
+#* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
 import random
 from generator import Generator
