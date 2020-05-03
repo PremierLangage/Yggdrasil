@@ -7,6 +7,8 @@ title = Nombre d'occurences
 generate== #|py|
 import random
 from generator import Generator
+
+# tirage aléatoire du mode -- type d'exo
 mode = random.choice([-1, 0, 1])
 messages = {
     -1: 'au moins',
@@ -25,6 +27,7 @@ alphabet, letter, occurences, solution = Generator.counting(
     mode,
     sorted_alphabet=True
 )
+
 alphabet = ', '.join(list(alphabet))
 ==
 
