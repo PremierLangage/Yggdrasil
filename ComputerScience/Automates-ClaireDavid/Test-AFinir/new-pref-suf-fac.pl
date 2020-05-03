@@ -44,11 +44,13 @@ else :
     alphabet, mot, solution = Generator.suffix(nb_lettres,3,
     sorted_alphabet=True)
 
-
 alphabet = ', '.join(list(alphabet))
 ==
 
-title =  Tirage aléatoire d'un exercice de prefixe, suffixe ou facteur
+#* Texte de l'énoncé
+# ---
+# ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
+# l'automate minimisé du langage solution
 text ==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez un automate reconnaissant le langage **L1** = {{ '{' }}  mots qui {{ bla }}  **{{ mot }}** {{ '}' }} <br>
