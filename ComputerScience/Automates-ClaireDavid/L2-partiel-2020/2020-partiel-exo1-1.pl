@@ -16,11 +16,10 @@ solution = '''
     S2
     S3
     S4
-    S5
     #initials
     S1
     #accepting
-    S5
+    S3
     #alphabet
     a
     b
@@ -37,13 +36,13 @@ solution = '''
 '''
 
 #    la construction de l'automate pour tester la réponse
-viewer = AutomatonEditor(
-    automaton= {
-        "alphabet": ["a", "b"],
-        "initialStates": ["S1"],
-        "acceptingStates": ["S3"],
-        "states": ["S1", "S2", "S3","S4"],
-        "transitions": [
+#viewer = AutomatonEditor(
+#    automaton= {
+#        "alphabet": ["a", "b"],
+#        "initialStates": ["S1"],
+#        "acceptingStates": ["S3"],
+#        "states": ["S1", "S2", "S3","S4"],
+#        "transitions": [
             { "fromState": "S1", "toState": "S2", "symbols": ["b"] },
             { "fromState": "S2", "toState": "S3", "symbols": ["a"] },
             { "fromState": "S3", "toState": "S4", "symbols": ["a"] },
