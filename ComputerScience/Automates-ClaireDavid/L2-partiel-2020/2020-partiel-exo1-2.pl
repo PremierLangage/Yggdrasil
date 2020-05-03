@@ -25,11 +25,11 @@ solution = '''
     a
     b
     #transitions
-    S00:a>S10
-    S01:a>S11
-    S02:a>S12
-    S10:a>S00
-    S11:a>S01
+    S1:b>S2
+    S1:b>S3
+    S1:b>S4
+    S2:b>S3
+    S2:b>S4
     S12:a>S02
     S00:b>S01
     S01:b>S02
@@ -39,17 +39,17 @@ solution = '''
     S12:b>S10
 '''
 
-viewer = AutomatonEditor(
-    automaton= {
-        "alphabet": ["a", "b"],
-        "initialStates": ["S1"],
-        "acceptingStates": ["S5"],
-        "states": ["S1", "S2", "S3","S4","S5"],
-        "transitions": [
-            { "fromState": "S1", "toState": "S2", "symbols": ["b"] },
-            { "fromState": "S1", "toState": "S3", "symbols": ["b"] },
-            { "fromState": "S1", "toState": "S4", "symbols": ["b"] },
-            { "fromState": "S2", "toState": "S3", "symbols": ["b"] },
+#viewer = AutomatonEditor(
+#    automaton= {
+#        "alphabet": ["a", "b"],
+#        "initialStates": ["S1"],
+#        "acceptingStates": ["S5"],
+#        "states": ["S1", "S2", "S3","S4","S5"],
+#        "transitions": [
+#            { "fromState": "S1", "toState": "S2", "symbols": ["b"] },
+#            { "fromState": "S1", "toState": "S3", "symbols": ["b"] },
+#            { "fromState": "S1", "toState": "S4", "symbols": ["b"] },
+#            { "fromState": "S2", "toState": "S3", "symbols": ["b"] },
             { "fromState": "S2", "toState": "S4", "symbols": ["b"] },
             { "fromState": "S2", "toState": "S2", "symbols": ["a"] },
             { "fromState": "S2", "toState": "S2", "symbols": ["b"] },
