@@ -331,7 +331,7 @@ class Automaton:
 
         :param regex a regex where the following metacharacters and formations
             have their usual meanings: ., *, +, ?, {m}, {m,}, {m,n}, (), |, [], 
-        :param alphabet 
+        :param alphabet can be specified for simple regex syntax check
         :param simple if set to True only simple regex are allowed. See syntax_simple_regex for details
             . concatenation, + union, * Kleene Star, () capture
         :return an Automaton instance.
