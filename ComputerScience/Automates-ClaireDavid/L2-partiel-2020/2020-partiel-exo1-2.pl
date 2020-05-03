@@ -34,9 +34,6 @@ solution = '''
     S2:b>S2
     S3:a>S4
     S4:b>S5
-    S10:b>S11
-    S11:b>S12
-    S12:b>S10
 '''
 
 #viewer = AutomatonEditor(
