@@ -344,7 +344,7 @@ class Automaton:
 
         # syntax check for simple expression
         if simple:
-            if not Automaton.syntax_simple_regex(regex, alphabet=None) :
+            if not Automaton.syntax_simple_regex(regex, alphabet) :
                     raise Exception("Syntax error : this is not a simple regex")        
             regex = regex.replace('.', '').replace('+', '|').replace('€','').replace('ε','')
 
