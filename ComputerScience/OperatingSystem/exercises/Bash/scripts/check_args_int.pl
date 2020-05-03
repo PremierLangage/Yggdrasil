@@ -53,8 +53,10 @@ text==
 Écrire un script bash qui attend trois paramètres entiers. Si le troisième 
 argument **c** est supérieur ou égal au premier **a** et inférieur ou égal au second 
 **b**; alors votre script devra inscrire sur la sortie standard :
-**La contrainte a <= c <= b est vérifiée.** Dans tous les autres cas
-
+**La contrainte a <= c <= b est vérifiée.** Dans tous les autres cas, votre script
+devra afficher le message suivant : **c n'est pas compris entre a et b.** 
+(bien sûr il s'agit de remplacer a, b et c par les bonnes valeurs que 
+prennent les trois paramètres durant l'exécution.
 ==
 
 
