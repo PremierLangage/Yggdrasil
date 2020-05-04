@@ -11,6 +11,7 @@ sol = convert_to(U/I, ohm)
 ==
 
 text ==
+{{sol}}
 Une lampe est traversée par un courant de $! {{I|latex}} !$. La tension aux bornes de la lampe est $! {{U|latex}} !$. Déterminer la résistance de la lampe.
 ==
 
