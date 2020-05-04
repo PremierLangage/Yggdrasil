@@ -85,6 +85,8 @@ def unitTestWithOutput(testname, studentfilename, outputstr, input_str, feedback
     reswhites = oc.check_output(outputstr, xo, 0)
     #print("inputstr:", input_str,"attendu:", outputstr)
     #print(" recu:",xo)
+    nowhiteoutputstr=removewhitespace(outputstr)
+    nowhitexo=removewhitespace(xo)
     if reswhites :
         feedback.addTestSuccess(testname, xo, outputstr )
     elif res :
