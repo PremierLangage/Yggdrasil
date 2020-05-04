@@ -28,7 +28,9 @@ form==
 ==
 
 evaluator==
-anwser="Bande de moules"
+answer = Bob 
+
+
 if r == inputbox.value:
     grade = (100, '<span class="success-state">Good 👏👏👏</span>')
 else:
