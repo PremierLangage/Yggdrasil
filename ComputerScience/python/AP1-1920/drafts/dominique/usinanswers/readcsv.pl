@@ -28,7 +28,7 @@ form==
 ==
 
 evaluator==
-answer__['infosdr'] = "Bob "
+answers__['infosdr'] = "Bob "
 
 
 if r == inputbox.value:
