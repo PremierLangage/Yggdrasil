@@ -29,23 +29,19 @@ P - Si $L$ est régulier et $L'$ n'est pas régulier alors $L.L'$ n'est pas rég
 - aucune idée
 
 * La propriété suivante est-elle vraie pour tout langage L et mot u
-P - Si $u\in \Sigma^*$ et $L\subseteq \Sigma^*$ alors $u.L=L.u$
+P - Si $L.L'$ n'est pas régulier alors $L$ et $L'$ ne sont pas réguliers.
 
 - oui
 + non
 - aucune idée
 
 * La propriété suivante est-elle vraie pour tout langage L et mot u
-P - Si $u\in \Sigma^*$ et $L\subseteq \Sigma^*$ alors $u.L=L.u$
+P - $L.L'$ n'est pas régulier alors au moins $L$ ou $L'$ n'est pas régulier.
 
 - oui
 + non
 - aucune idée
 
-* 
-* 
-* Si $L.L'$ n'est pas régulier alors $L$ et $L'$ ne sont pas réguliers.
-* Si $L.L'$ n'est pas régulier alors au moins $L$ ou $L'$ n'est pas régulier.
 ==
 
 
