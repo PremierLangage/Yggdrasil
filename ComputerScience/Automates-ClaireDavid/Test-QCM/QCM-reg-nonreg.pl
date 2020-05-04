@@ -8,6 +8,7 @@ questions==
 * {a^nb^m|\exists p\ n+m = 2p}
 + régulier
 - non régulier
+- aucune idée
 
 ** Parmis les affirmations suivantes lesquelles caractèrisent les cas d'utilisation
 + Un dialogue entre un acteur et le système
