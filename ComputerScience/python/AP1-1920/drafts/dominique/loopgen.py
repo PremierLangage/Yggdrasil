@@ -31,7 +31,7 @@ functeurs=[
 # operator 
 p=random.randint(5,17)
 operators=[
-    (lambda x:x*x, "le caré de "," "),
+    (lambda x:x*x, "le carré de "," "),
     (lambda x: x**3,"le cube de ", " " ),
     (lambda x: x//2, "la moitié entière (//) de ",""),
     (lambda x: x**p == 0," " ,"à la puissance "+str(p)),
@@ -39,3 +39,4 @@ operators=[
 
 def getStuff():
     return predicats,functeurs,operators
+
