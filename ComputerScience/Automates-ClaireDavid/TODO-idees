@@ -29,7 +29,7 @@ parse -> construit des exemples cf la documentation de mamadou dans automaton
 
 ========
 
-Pas de gestion propre des automates non det pour l'instant -- passage à la lib Fado en juillet
+Pas de gestion propre des automates non det pour l'instant -- passage à la lib Fado
 
 
 
