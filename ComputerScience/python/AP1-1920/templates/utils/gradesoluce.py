@@ -107,7 +107,7 @@ def unitTestWithOutput(testname, studentfilename, outputstr, input_str, feedback
     return reswhites or res
 
 def removewhitespace(s):
-    return = re.sub(r'\s', '', s) 
+    return re.sub(r'\s', '', s) 
 
 def runsolucetests(tests, feedback, studentfilename=None, solucefilename=None, flags=0x1):
     """
