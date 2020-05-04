@@ -80,14 +80,14 @@ def unitTestWithOutput(testname, studentfilename, outputstr, input_str, feedback
     if not xb:
         feedback.addTestError(testname, " Problèmes avec votre code \n " + xo + "\n" + xe, "")
         return False
-    oc = doctest.OutputChecker(doctest.NORMALIZE_WHITESPACE)
-    res = oc.check_output(outputstr, xo, 0)
+    oc = doctest.OutputChecker()
+    res = oc.check_output(outputstr, xo, doctest.NORMALIZE_WHITESPACE)
     #print("inputstr:", input_str,"attendu:", outputstr)
     #print(" recu:",xo)
     if res:
         feedback.addTestSuccess(testname, xo, outputstr )
     else:
-        r = oc.output_difference(doctest.Example(" le test", outputstr), xo,0)
+        r = oc.output_difference(doctest.Example(" le test", outputstr), xo,doctest.NORMALIZE_WHITESPACE)
         if r.startswith("Expected:") and "Got:" in r :
                 want,got = r.split("Got:")
                 want= want[9:]
