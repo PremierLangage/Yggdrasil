@@ -51,7 +51,7 @@ Exemple :
 
 grader== #|python|
 
-def-table(n):
+def table(n):
     s = ""
     for i in range(n):
         res = i*n + 1
