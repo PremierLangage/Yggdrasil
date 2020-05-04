@@ -111,7 +111,6 @@ def removewhitespace(s):
 
 def runsolucetests(tests, feedback, studentfilename=None, solucefilename=None, flags=0x1):
     """
-
     :param tests: a list of tests (name, input_str)
     :param: feedback: feedback object to pass to tester
     :param studentfilename: if none student.py is used
