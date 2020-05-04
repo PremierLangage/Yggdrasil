@@ -751,8 +751,10 @@ def eval_physical(strans, sol, tol, local_dict={}):
         dim = dimsys_SI.get_dimensional_dependencies(SI.get_dimensional_expr(unit))
     except:
         return (-1, "NotPhysical")
-    if not ans.has(Quantity):
+    if unit==1:
         return (-1, "NotPhysical")
+    if not num.is_Number:
+        return (-1, "PhysicalNotNumeric")
     if dim != dimsol:
         return (0, "WrongUnit")
     num, unit = get_numeric_unit(ans)
