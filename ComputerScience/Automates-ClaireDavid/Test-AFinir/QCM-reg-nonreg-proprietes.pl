@@ -1,11 +1,16 @@
-
 extends=/model/AMC_TXT.pl 
 
 title= QCM propriétés
 
 message = Le langage suivant est-il est régulier ou non-régulier?
 
-# une étoile radio deux check box
+
+
+## aller à ligne
+## latex
+## revenir en arrière
+
+
 questions==
 * La propriété suivante est-elle vraie pour tout langage L et mot u
 ```P - Si $u\in \Sigma^*$ et $L\subseteq \Sigma^*$ alors $u.L=L.u$```
