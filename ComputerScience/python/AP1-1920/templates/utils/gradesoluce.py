@@ -6,7 +6,7 @@
 
 import doctest
 import subprocess
-
+import re
 
 def execute(args, instr):
     """
@@ -103,6 +103,8 @@ def unitTestWithOutput(testname, studentfilename, outputstr, input_str, feedback
         feedback.addTestFailure(testname,got,want)
     return reswhites
 
+def removewhitespace(s):
+    return = re.sub(r'\s', '',   s)  # elimination des espaces 
 
 def runsolucetests(tests, feedback, studentfilename=None, solucefilename=None, flags=0x1):
     """
