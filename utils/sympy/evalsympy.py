@@ -754,6 +754,7 @@ def eval_physical(strans, sol, tol, local_dict={}):
         return (-1, "NotPhysical")
     if dim != dimsol:
         return (0, "WrongUnit")
+    num, unit = get_numeric_unit(ans)
     if not equal_approx(numsol, num, tol=tol):
         return (0, "NotEqual")
     return (100, "Success")
