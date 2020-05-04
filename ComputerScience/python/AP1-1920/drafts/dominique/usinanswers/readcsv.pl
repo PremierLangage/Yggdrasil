@@ -25,10 +25,11 @@ Enter the result of ** {{ a }} + {{ b }} ** inside the input box.
 
 form==
 {{ inputbox|component}}
+<input type="hidden" name="form_cache" value="not modified">
 ==
 
 evaluator==
-answers__['infosdr'] = "Bob "
+cache['value'] = "Bob "
 
 
 if r == inputbox.value:
