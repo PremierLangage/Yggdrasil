@@ -7,22 +7,22 @@ message = Le langage suivant est-il est régulier ou non-régulier?
 
 # une étoile radio deux check box
 questions==
-* {a^nb^m|\exists p\ n+m = 2p}
+* {{ message }} {a^nb^m|\exists p\ n+m = 2p}
 + régulier
 - non régulier
 - aucune idée
 
-* L2
+* {{ message }} L2
 + régulier
 - non régulier
 - aucune idée
 
-* L3
+* {{ message }} L3
 + régulier
 - non régulier
 - aucune idée
 
-* L4
+* {{ message }} L4
 + régulier
 - non régulier
 - aucune idée
