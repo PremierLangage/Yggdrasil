@@ -754,7 +754,7 @@ def eval_physical(strans, sol, tol, local_dict={}):
         return (-1, "NotPhysical")
     if unit==1:
         return (-1, "NotPhysical")
-    if not num.is_Number:
+    if not num.is_Float:
         return (-1, "PhysicalNotNumeric")
     if dim != dimsol:
         return (0, "WrongUnit")
