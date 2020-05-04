@@ -92,7 +92,7 @@ def unitTestWithOutput(testname, studentfilename, outputstr, input_str, feedback
     if reswhites :
         feedback.addTestSuccess(testname, xo, outputstr )
     elif res :
-        feedback.addTestFailure(" Attention quelques caractères invisibles en trop", xo, outputstr )
+        feedback.addTestSuccess(" Attention quelques caractères invisibles en trop", xo, outputstr )
     elif nowhites:
         feedback.addTestFailure(" a part les espaces tout est bon", xo, outputstr )
     else:
