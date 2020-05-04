@@ -8,9 +8,11 @@ before ==
 U = 2*randint(5,15)*volt
 I = randint(1,20)/2*ampere
 sol = convert_to(U/I, ohm)
+ssol = srepr(sol)
 ==
 
 text ==
+{{ssol}}
 Une lampe est traversée par un courant de $! {{I|latex}} !$. La tension aux bornes de la lampe est $! {{U|latex}} !$. Déterminer la résistance de la lampe.
 ==
 
