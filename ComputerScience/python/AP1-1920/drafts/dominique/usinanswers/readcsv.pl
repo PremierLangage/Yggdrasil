@@ -28,7 +28,7 @@ form==
 ==
 
 evaluator==
-answer = Bob 
+answer = "Bob "
 
 
 if r == inputbox.value:
