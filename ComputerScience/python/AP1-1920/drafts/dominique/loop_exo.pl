@@ -22,11 +22,16 @@ Puis calculez et affichez {{operatortextb}} {{functeur[0]}} {{operatortexta}} .
 *seed={{seed}}*
 ==
 
-plsoluce==
-Vérification 1 | 35
-Vérification 2 | 10
-Vérification 3 | 77
+plsoluce0==
+Vérification 1 | 15
 ==
+
+plsoluce1==
+Vérification 2 | 35
+==
+
+
+
 
 soluce==
 import random
