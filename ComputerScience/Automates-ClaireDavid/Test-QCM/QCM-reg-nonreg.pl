@@ -26,6 +26,7 @@ questions==
 + vrai pour tout langage L
 - fausse pour tout langage L
 - vrai pour certains langages et fausse pour d'autres?
+- fausse pour tout langage L
 ==
 
 
