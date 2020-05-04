@@ -22,10 +22,10 @@ questions==
 - non régulier
 - aucune idée
 
-* {{ message }} L4
-+ régulier
-- non régulier
-- aucune idée
+** Ici on peut cocher plusieurs réponses la propriétéé suivante est-elle
++ vrai pour tout langage L
+- fausse pour tout langage L
+- vrai pour certains langages et fausse pour d'autres?
 ==
 
 
