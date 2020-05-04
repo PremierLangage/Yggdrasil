@@ -735,19 +735,25 @@ def get_numeric_unit(expr):
             args_numeric.append(a)
     return (sp.Mul(*args_numeric), sp.Mul(*args_quantity))
 
+from sympy.physics.units.systems.si import dimsys_SI, SI
+
 @add_feedback
 def eval_physical(strans, sol, local_dict={}):
     r"""
     Evaluate an answer when the solution is a physical quantity.
     """
     numsol, unitsol = get_numeric_unit(sol)
+    dimsol = dimsys_SI.get_dimensional_dependencies(SI.get_dimensional_expr(unitsol))
     try:
         ans = latex2sympy(strans, local_dict)
         num, unit = get_numeric_unit(ans)
+        dim = dimsys_SI.get_dimensional_dependencies(SI.get_dimensional_expr(unit))
     except:
         return (-1, "NotPhysical")
     if not ans.has(Quantity):
         return (-1, "NotPhysical")
+    if dim != dimsol:
+        return (0, "WrongUnit")
     return (100, "Success")
 
 def ans_antiderivative(strans,sol,x,local_dict={}):
