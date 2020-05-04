@@ -80,7 +80,7 @@ def unitTestWithOutput(testname, studentfilename, outputstr, input_str, feedback
     if not xb:
         feedback.addTestError(testname, " Problèmes avec votre code \n " + xo + "\n" + xe, "")
         return False
-    oc = doctest.OutputChecker()
+    oc = doctest.OutputChecker(doctest.NORMALIZE_WHITESPACE)
     res = oc.check_output(outputstr, xo, 0)
     #print("inputstr:", input_str,"attendu:", outputstr)
     #print(" recu:",xo)
@@ -145,6 +145,7 @@ if __name__=="__main__":
    fb=feedback2.FeedBack()
    runsolucetests(lestest,fb)
    print(fb.render())
+
 
 
 
