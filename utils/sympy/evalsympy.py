@@ -489,6 +489,7 @@ _feedback_ = {
 "NotTuple": "La réponse doit être un n-uplet (un vecteur ligne).",
 "NotPoly": "La réponse doit être un polynôme.",
 "NotPhysical": "La réponse doit être une valeur numérique suivie d'une unité physique.",
+"WrongUnit": "Mauvaise unité.",
 "RSetNotDisjoint": "Les ensembles de cette réunion ne sont pas disjoints. La réponse peut être simplifiée.",
 "PolyNotExpanded": "La réponse doit être un polynôme développé.",
 "PolyNotFactorized": "La réponse doit être un polynôme factorisé.",
