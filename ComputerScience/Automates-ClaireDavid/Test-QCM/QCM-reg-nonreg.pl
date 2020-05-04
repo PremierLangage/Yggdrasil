@@ -5,7 +5,7 @@ title= Pour chacun des langages suivants, dites s'il est régulier ou non-régul
 
 # une étoile radio deux check box
 questions==
-* Use case ce traduit en français par
+* {a^nb^m|\exists p\ n+m = 2p}
 - Histoire utilisateur
 + cas d'utilisation 
 - type d'utilisation
