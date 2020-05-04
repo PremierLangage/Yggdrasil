@@ -20,7 +20,7 @@ En transformant la fonction `puissance(a,n)`,<br>
 écrire une fonction recursive ``nbpuissance(a,n)`` qui renvoie un couple formé de 
 la valeur $%a^n%$ et du nombre d'appels récursifs.,<br>
 En transformant la fonction `puissancer(a,n)`,<br>
-écrire une fonction recursive n``bpuissancer(a,n)`` qui renvoie un couple formé de 
+écrire une fonction recursive ``Nbpuissancer(a,n)`` qui renvoie un couple formé de 
 la valeur $%a^n%$ et du nombre d'appels récursifs.==
 ==
 before==
@@ -131,6 +131,7 @@ pltest7==
 >>> test_recursion(lambda:nbpuissancer(3,5))
 True
 ==
+
 
 
 
