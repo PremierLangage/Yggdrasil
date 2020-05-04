@@ -7,22 +7,25 @@ title= Boucle d'OR (repetable)
 
 
 text==
+
+Cet exercice est un peu bizarre et vous devez produire la même "solution" que le prof ...
+
 Lire un entier sur l'entré dans la variable X.
 
 X est toujours positif.
 
-Affichez les entiers  de {{b}} à {{b}}+X parcourus de {{s}} en {{s}} 
-{{predtext}}
+Afficher les entiers  de {{b}} à {{b}}+X parcourus de {{s}} en {{s}} {{predtext}}.
 
-et calculez {{operatortextb}} {{functeur[0]}} {{operatortexta}} .
+Puis calculez et affichez {{operatortextb}} {{functeur[0]}} {{operatortexta}} .
 
-seed={{seed}}
+
+*seed={{seed}}*
 ==
 
 plsoluce==
 Vérification 1 | 35
 Vérification 2 | 10
-Vérification 3 |77
+Vérification 3 | 77
 ==
 
 soluce==
@@ -95,3 +98,5 @@ while result==0 :
 soluce="seed={}\n".format(seed)+soluce
 
 ==
+
+
