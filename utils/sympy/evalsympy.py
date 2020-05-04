@@ -738,7 +738,7 @@ def get_numeric_unit(expr):
 from sympy.physics.units.systems.si import dimsys_SI, SI
 
 @add_feedback
-def eval_physical(strans, sol, local_dict={}):
+def eval_physical(strans, sol, tol, local_dict={}):
     r"""
     Evaluate an answer when the solution is a physical quantity.
     """
@@ -754,6 +754,8 @@ def eval_physical(strans, sol, local_dict={}):
         return (-1, "NotPhysical")
     if dim != dimsol:
         return (0, "WrongUnit")
+    if not equal_approx(a, b, tol=tol):
+        return (0, "NotEqual")
     return (100, "Success")
 
 def ans_antiderivative(strans,sol,x,local_dict={}):
