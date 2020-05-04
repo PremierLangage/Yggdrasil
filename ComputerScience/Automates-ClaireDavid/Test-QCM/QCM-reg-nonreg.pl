@@ -10,17 +10,17 @@ questions==
 - non régulier
 - aucune idée
 
-* {a^nb^m|\exists p\ n+m = 2p}
+* L2
 + régulier
 - non régulier
 - aucune idée
 
-* {a^nb^m|\exists p\ n+m = 2p}
+* L3
 + régulier
 - non régulier
 - aucune idée
 
-* {a^nb^m|\exists p\ n+m = 2p}
+* L4
 + régulier
 - non régulier
 - aucune idée
