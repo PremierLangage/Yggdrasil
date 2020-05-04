@@ -6,10 +6,8 @@ title= Pour chacun des langages suivants, dites s'il est régulier ou non-régul
 # une étoile radio deux check box
 questions==
 * {a^nb^m|\exists p\ n+m = 2p}
-- Histoire utilisateur
-+ cas d'utilisation 
-- type d'utilisation
-- User story
++ régulier
+- non régulier
 
 ** Parmis les affirmations suivantes lesquelles caractèrisent les cas d'utilisation
 + Un dialogue entre un acteur et le système
