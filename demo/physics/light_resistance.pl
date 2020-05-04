@@ -18,6 +18,7 @@ evaluator ==
 unit_dict = {'m': meter, 'g': gram, 'kg': kilogram, 's': second, 'A': ampere, 'K': kelvin, 'mol': mole, 'cd': candela, 'N': newton, 'J': joule, 'W': watt, 'Pa': pascal, 'Hz': hertz, 'C': coulomb, 'V': volt, 'Omega': ohm}
 
 score, _, feedback = eval_physical(input.value, sol, tol=1e-2, local_dict=unit_dict)
+feedback += str(latex2sympy(input.value, local_dict=unit_dict))
 ==
 
 
