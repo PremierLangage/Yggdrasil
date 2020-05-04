@@ -4,12 +4,10 @@ title= QCM propriétés
 
 message = Le langage suivant est-il est régulier ou non-régulier?
 
-
-
 ## aller à ligne
 ## latex
 ## revenir en arrière
-
+## tout sur une même page? ou c'est pas souhaitable
 
 questions==
 * La propriété suivante est-elle vraie pour tout langage L et mot u
