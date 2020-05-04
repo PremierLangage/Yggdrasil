@@ -22,9 +22,13 @@ Puis calculez et affichez {{operatortextb}} {{functeur[0]}} {{operatortexta}} .
 *seed={{seed}}*
 ==
 
-plsoluce==
-Vérification 1 | 15
-Vérification 2 | 35
+mplsoluce0==
+Vérification 1
+15
+==
+mplsoluce1==
+Vérification 2
+35
 ==
 
 
