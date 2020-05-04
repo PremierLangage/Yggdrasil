@@ -89,8 +89,9 @@ def unitTestWithOutput(testname, studentfilename, outputstr, input_str, feedback
         feedback.addTestSuccess(testname, xo, outputstr )
     elif res :
         feedback.addTestFailure(" Attention aux caractères invisibles ", xo, outputstr )
+
     else:
-        r = oc.output_difference(doctest.Example(" le test", outputstr), xo,doctest.NORMALIZE_WHITESPACE)
+        r = oc.output_difference(doctest.Example(" le test", outputstr), xo,0)
         if r.startswith("Expected:") and "Got:" in r :
                 want,got = r.split("Got:")
                 want= want[9:]
@@ -98,7 +99,7 @@ def unitTestWithOutput(testname, studentfilename, outputstr, input_str, feedback
                 want=r
                 got=""
         feedback.addTestFailure(testname,got,want)
-    return res
+    return reswhites
 
 
 def runsolucetests(tests, feedback, studentfilename=None, solucefilename=None, flags=0x1):
