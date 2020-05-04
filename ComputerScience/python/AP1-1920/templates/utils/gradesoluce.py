@@ -104,7 +104,7 @@ def unitTestWithOutput(testname, studentfilename, outputstr, input_str, feedback
                 want=r
                 got=""
         feedback.addTestFailure(testname,got,want)
-    return reswhites
+    return reswhites or res
 
 def removewhitespace(s):
     return = re.sub(r'\s', '',   s)  # elimination des espaces 
