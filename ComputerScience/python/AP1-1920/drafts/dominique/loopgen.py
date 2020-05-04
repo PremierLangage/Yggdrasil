@@ -40,3 +40,5 @@ operators=[
 def getStuff():
     return predicats,functeurs,operators
 
+
+
