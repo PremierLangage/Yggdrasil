@@ -5,7 +5,6 @@ title = Résistance d'une lampe
 input.virtualKeyboards = elementary
 
 before ==
-var('a')
 U = 2*randint(5,15)*volt
 I = randint(1,20)/2*ampere
 sol = convert_to(U/I, ohm)
