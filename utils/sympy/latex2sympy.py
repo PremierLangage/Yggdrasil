@@ -81,6 +81,7 @@ def latex2str(s):
          (r"\rbrace","}"),
          (r"\infty", "oo"),
          (r"\times", "*"),
+         (r"\cdot", "*"),
          (r"\arccos", "acos"),
          (r"\arcsin", "asin"),
          (r"\arctan", "atan"),
@@ -181,5 +182,6 @@ def FiniteSet2struct(S):
         return tuple([FiniteSet2struct(x) for x in S])
     else:
         return S
+
 
 
