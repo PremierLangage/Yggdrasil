@@ -23,8 +23,8 @@ la diagonale mesure ?? .
 soluce==
 l=int(input())
 la=int(input())
-print("Le périmètre est",2*(l+la),"et la surface est",l*la,",")
-print("la diagonale mesure",(l*l+la*la)**0.5,".")
+print("Le périmètre est ",2*(l+la)," et la surface est ",l*la,",")
+print("la diagonale mesure ",(l*l+la*la)**0.5,".")
 ==
 mplsoluce0==
 essai1
@@ -33,3 +33,4 @@ essai1
 ==
 
 
+before=
