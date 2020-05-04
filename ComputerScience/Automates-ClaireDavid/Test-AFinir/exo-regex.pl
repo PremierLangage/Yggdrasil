@@ -15,7 +15,7 @@ alphabet = "a,b"
 solution = Automaton.parse('a*b(baa|b)*a')
 
 #message de l'énoncé décrivant le langage
-message = "BLABLABLA"
+message = ```a*b(baa|b)*a```
 ==
 
 
