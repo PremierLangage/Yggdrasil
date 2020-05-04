@@ -1,4 +1,4 @@
-extends = ../templates/generic/generic.pl
+extends = /ComputerScience/python/AP2-1920/templates/generic/generic.pl
 
 author = Quentin Coumes
 
