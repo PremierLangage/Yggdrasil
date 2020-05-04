@@ -87,7 +87,7 @@ def unitTestWithOutput(testname, studentfilename, outputstr, input_str, feedback
     #print(" recu:",xo)
     if reswhites :
         feedback.addTestSuccess(testname, xo, outputstr )
-    elif:
+    elif res :
         feedback.addTestSuccess(testname+" Attention aux caractères invisibles ", xo, outputstr )
     else:
         r = oc.output_difference(doctest.Example(" le test", outputstr), xo,doctest.NORMALIZE_WHITESPACE)
