@@ -740,6 +740,7 @@ def eval_physical(strans, sol, local_dict={}):
     r"""
     Evaluate an answer when the solution is a physical quantity.
     """
+    numsol, unitsol = get_numeric_unit(sol)
     try:
         ans = latex2sympy(strans, local_dict)
         num, unit = get_numeric_unit(ans)
