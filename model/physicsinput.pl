@@ -6,6 +6,8 @@ input.decorator = CustomMathInput
 
 input.virtualKeyboards = elementary
 
+input.inlineShortcuts % {}
+
 title = 
 
 text = 
@@ -17,5 +19,6 @@ form ==
 settings.feedback = rightwrong
 
 settings.maxattempt % 1
+
 
 
