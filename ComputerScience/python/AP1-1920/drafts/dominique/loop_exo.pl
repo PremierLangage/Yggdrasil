@@ -24,9 +24,6 @@ Puis calculez et affichez {{operatortextb}} {{functeur[0]}} {{operatortexta}} .
 
 plsoluce0==
 Vérification 1 | 15
-==
-
-plsoluce1==
 Vérification 2 | 35
 ==
 
