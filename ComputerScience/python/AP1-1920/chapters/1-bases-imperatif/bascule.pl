@@ -50,7 +50,7 @@ telque la valeur de *var* passe successivement de la valeur **{{val1}}** à la v
 puis de la valeur **{{val2}}** à la valeur **{{val1}}**, a chaque fois que l'on exécute la ligne.
 
 Ecrivez l'expression qui permet de faire cela.
-
+On suppose  que var est initialisé à  0.
 ==
 
 evaluator==
@@ -80,6 +80,7 @@ else:
 form==
    var = {{ component|component}}
 ==
+
 
 
 
