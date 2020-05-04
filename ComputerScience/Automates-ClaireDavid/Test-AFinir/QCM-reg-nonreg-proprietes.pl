@@ -7,7 +7,7 @@ message = Le langage suivant est-il est régulier ou non-régulier?
 
 # une étoile radio deux check box
 questions==
-* La propriété suivante est-elle vraie pour tout langage L et mot u
+* La propriété suivante est-elle vraie pour tout langage L et mot u\n
 ```P - Si $u\in \Sigma^*$ et $L\subseteq \Sigma^*$ alors $u.L=L.u$```
 - oui
 + non
