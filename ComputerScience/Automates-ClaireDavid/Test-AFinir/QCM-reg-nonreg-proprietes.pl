@@ -22,7 +22,7 @@ P - Si $L$ et $L'$ sont des langages réguliers alors $L.L'$ est un langage rég
 - aucune idée
 
 * La propriété suivante est-elle vraie pour tout langage L et mot u
-P - Si $u\in \Sigma^*$ et $L\subseteq \Sigma^*$ alors $u.L=L.u$
+P - Si $L$ est régulier et $L'$ n'est pas régulier alors $L.L'$ n'est pas régulier.
 
 - oui
 + non
@@ -43,7 +43,7 @@ P - Si $u\in \Sigma^*$ et $L\subseteq \Sigma^*$ alors $u.L=L.u$
 - aucune idée
 
 * 
-* Si $L$ est régulier et $L'$ n'est pas régulier alors $L.L'$ n'est pas régulier.
+* 
 * Si $L.L'$ n'est pas régulier alors $L$ et $L'$ ne sont pas réguliers.
 * Si $L.L'$ n'est pas régulier alors au moins $L$ ou $L'$ n'est pas régulier.
 ==
