@@ -25,7 +25,6 @@ Enter the result of ** {{ a }} + {{ b }} ** inside the input box.
 
 form==
 {{ inputbox|component}}
-<input type="hidden" name="form_cache" value="not modified">
 ==
 
 evaluator==
@@ -37,5 +36,6 @@ if r == inputbox.value:
 else:
     grade = (0, '<span class="error-state">Bad answer 👎👎👎</span>')
 ==
+
 
 
