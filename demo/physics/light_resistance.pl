@@ -6,7 +6,7 @@ input.virtualKeyboards = elementary
 
 before ==
 U = 2*randint(5,15)*volt
-I = randint(1,20)/2*ampere
+I = 0.5*randint(1,20)*ampere
 sol = convert_to(U/I, ohm)
 ==
 
