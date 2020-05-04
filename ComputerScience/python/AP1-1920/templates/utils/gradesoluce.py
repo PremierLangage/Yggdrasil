@@ -83,15 +83,18 @@ def unitTestWithOutput(testname, studentfilename, outputstr, input_str, feedback
     oc = doctest.OutputChecker()
     res = oc.check_output(outputstr, xo, doctest.NORMALIZE_WHITESPACE)
     reswhites = oc.check_output(outputstr, xo, 0)
+    
     #print("inputstr:", input_str,"attendu:", outputstr)
     #print(" recu:",xo)
     nowhiteoutputstr=removewhitespace(outputstr)
     nowhitexo=removewhitespace(xo)
+    nowhites=  oc.check_output(nowhiteoutputstr, nowhitexo, 0)
     if reswhites :
         feedback.addTestSuccess(testname, xo, outputstr )
     elif res :
-        feedback.addTestFailure(" Attention aux caractères invisibles ", xo, outputstr )
-
+        feedback.addTestFailure(" Attention quelques caractères invisibles en trop", xo, outputstr )
+    elif nowhites:
+        feedback.addTestFailure(" a part les espaces tout est bon", xo, outputstr )
     else:
         r = oc.output_difference(doctest.Example(" le test", outputstr), xo,0)
         if r.startswith("Expected:") and "Got:" in r :
