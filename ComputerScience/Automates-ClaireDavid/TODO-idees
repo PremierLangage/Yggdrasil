@@ -45,8 +45,8 @@ Exercices à concevoir: --attendre la nouvelle lib pour l'ismorphisme
 + automate des positions --> voir exo-egalité-auto.pl pour le garder en mode comparaison simple. Chercher dans les scripts de mamadou pour le fonctionnement des expression régulières
 + produit d'automates simples
 + minimisation --> voir td-minimisation.pl 
-    automate minimal et simple vérification
-    étapes de l'algo de Moore en donnant les classes d'équivalences à chaque niveau
+    automate minimal et simple vérification = ok
+    étapes de l'algo de Moore en donnant les classes d'équivalences à chaque niveau à voir
 + QCM reg/non-reg
 
 
