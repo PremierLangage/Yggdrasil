@@ -89,12 +89,15 @@ def unitTestWithOutput(testname, studentfilename, outputstr, input_str, feedback
     nowhiteoutputstr=removewhitespace(outputstr)
     nowhitexo=removewhitespace(xo)
     nowhites=  oc.check_output(nowhiteoutputstr, nowhitexo, 0)
+    case =  oc.check_output(nowhiteoutputstr.lower(), nowhitexo.lower(), 0)
     if reswhites :
         feedback.addTestSuccess(testname, xo, outputstr )
     elif res :
         feedback.addTestSuccess(" Attention quelques caractères invisibles en trop", xo, outputstr )
     elif nowhites:
         feedback.addTestFailure(" a part les espaces tout est bon", xo, outputstr )
+    elif case:
+        feedback.addTestFailure(" a part la case et les espaces tout est bon", xo, outputstr )
     else:
         r = oc.output_difference(doctest.Example(" le test", outputstr), xo,0)
         if r.startswith("Expected:") and "Got:" in r :
@@ -155,6 +158,7 @@ if __name__=="__main__":
    fb=feedback2.FeedBack()
    runsolucetests(lestest,fb)
    print(fb.render())
+
 
 
 
