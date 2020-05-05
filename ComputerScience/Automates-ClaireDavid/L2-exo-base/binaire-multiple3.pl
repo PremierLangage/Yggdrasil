@@ -36,7 +36,7 @@ solution = '''
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text ==
-On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
+On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$ .<br/>
 Donnez un automate reconnaissant les mots qui sont la représentation en binaire (big endian) des entiers multiples de 3. 
             <br>La représentation big endian correspond à mettre le bit de poids fort à gauche.
             <br>Par exemple l'entier 41 = 2^5+2^3+2^0 est représenté par 101001 ou 0101001 ou 00101001 ... <br>
@@ -46,6 +46,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
