@@ -43,9 +43,10 @@ author=Nicolas Borie
 title=Décimal vers binaire en bash
 
 text==
-Écrire un script bash prenant un seul argument qui sera systématiquement un 
-nombre entier positif ou nul en écriture décimale (C'est en base 10). Votre 
-srcipt devra écrire sur la sortie standard la phrase suivante :   
+Écrire un **script bash** prenant un seul argument qui sera systématiquement un 
+**nombre entier positif ou nul** en écriture décimale (C'est à dire écrit en 
+base 10). Votre srcipt devra écrire sur la sortie standard la phrase 
+suivante :   
 **XXX s'écrit YYY en binaire.**
 Il faudra bien sur remplacer XXX par l'argument entier du script et YYY par
 la succession de 0 et de 1 donnant l'écriture binaire de l'argument.
