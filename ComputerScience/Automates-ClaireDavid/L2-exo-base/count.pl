@@ -34,6 +34,7 @@ alphabet = ', '.join(list(alphabet))
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text== #|html|
+On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$ .<br/>
 Donnez un automate reconnaissant le langage $! L = \\\{!$ mots ayant {{ message }} {{ occurences }} occurrences de la lettre {{ letter }} $!\\\}!$. <br>
 {% if attempt < maxattempt and score != 100 %}
 <p class="warning-state">
