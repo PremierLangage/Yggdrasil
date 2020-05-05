@@ -11,13 +11,10 @@ text==
 ==
 
 # Les tests:
-
-
-# Vérifications de acpm_kruskal sur un graphe connexe
-testname0 = Vérifications de acpm_kruskal sur l'exemple du cours
+testname0 = Vérifications de composantes_fortement_connexes sur l'exemple du cours
 pltest0==
->>> from corrlib_graphes import * #
->>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS) # initialisation de l'instance du cours
+>>> from corrlib_graphes import CFC_INSTANCE_COURS #
+>>> G = GrapheOriente(); G.ajouter_arcs(PRIM_INSTANCE_COURS) # initialisation de l'instance du cours
 >>> arbre = acpm_kruskal(G)
 >>> sum(poids for *_, poids in arbre.aretes())
 23
