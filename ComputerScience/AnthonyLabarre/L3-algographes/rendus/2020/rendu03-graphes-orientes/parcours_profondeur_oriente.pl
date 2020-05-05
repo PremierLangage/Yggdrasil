@@ -19,7 +19,6 @@ text==
 
 # vérif
 
-
 # pas d'exemple intéressant fait au cours, on passe directement sur l'exercice du TD
 testname0 = Vérifications de parcours_profondeur_oriente sur l'exemple du TD 5 exercice 1
 pltest0==
