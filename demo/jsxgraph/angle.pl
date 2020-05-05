@@ -60,19 +60,23 @@ jxg.disabled = True
 extracss2 ==
 <style>
 .jsxgraph-component {
-
+    max-width:300px;
+    width:90vw;
+    max-height:300px;
+    height:90vw;
+    margin: 0 auto;
 }
 </style>
 ==
 
 
 style.exercise ==
-.jsxgraph-component {
-
-}
 .img-container {
-    width: 30% !important;
-    margin: 0 auto !important;
+    max-width:300px;
+    width:90vw;
+    max-height:300px;
+    height:90vw;
+    margin: 0 auto;
 }
 
 /* css appliqué sur les tablettes */
