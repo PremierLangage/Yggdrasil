@@ -40,7 +40,7 @@ message = "le langage { u.v tels que  u,v ∈ Σ* et |u| = 2|v| }"
 # l'automate minimisé du langage solution
 text ==
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$ .<br/>
-Donnez un automate reconnaissant {{ message }} <br>
+Donnez un automate reconnaissant le langage {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
 <p class="warning-state">
 Il vous reste {{ maxattempt - attempt }} tentative(s) !
