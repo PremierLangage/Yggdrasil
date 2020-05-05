@@ -34,8 +34,10 @@ bm3, sm3 = rand_mot(10, 2), rand_mot(3, 2)
 bm4, sm4 = rand_mot(10, 2), rand_mot(3, 2)
 bm5, sm5 = rand_mot(20, 4), rand_mot(3, 4)
 bm6, sm6 = rand_mot(20, 4), rand_mot(3, 4)
-bm7, sm7 = rand_mot(30, 25), rand_mot(3, 25)
-bm8, sm8 = rand_mot(30, 25), rand_mot(3, 25)
+bm7, sm7 = rand_mot(30, 3), rand_mot(3, 3)
+bm8, sm8 = rand_mot(30, 3), rand_mot(3, 3)
+bm9, sm9 = rand_mot(30, 25), rand_mot(3, 25)
+bm10, sm10 = rand_mot(30, 25), rand_mot(3, 25)
 
 test_bash = [ ["simple", ["ungrandmotici", "mot"], gen_output("ungrandmotici", "mot")],
  ["mot vide", ["", "nonvide"], gen_output("", "nonvide")],
@@ -47,6 +49,8 @@ test_bash = [ ["simple", ["ungrandmotici", "mot"], gen_output("ungrandmotici", "
  ["aléatoire", [bm6, sm6], gen_output(bm6, sm6)], 
  ["aléatoire", [bm7, sm7], gen_output(bm7, sm7)], 
  ["aléatoire", [bm8, sm8], gen_output(bm8, sm8)], 
+ ["aléatoire", [bm9, sm9], gen_output(bm9, sm9)], 
+ ["aléatoire", [bm10, sm10], gen_output(bm10, sm10)], 
  ]
 ==
 
