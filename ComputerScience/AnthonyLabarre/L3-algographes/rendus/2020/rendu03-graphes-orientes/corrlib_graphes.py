@@ -33,7 +33,10 @@ PRIM_INSTANCE_TD = [
 ]
 
 # CFC (orientés, non pondérés)
-CFC_INSTANCE_COURS
+CFC_INSTANCE_COURS = [ # a = 0, b = 1, ...
+    (0, 1), (1, 4), (4, 0), (5, 6), (6, 5), (2, 3), (3, 2), (4, 5), (1, 5),
+    (1, 2), (6, 7), (2, 6), (3, 7)
+]
 
 
 # Fonctions diverses ----------------------------------------------------------
@@ -324,4 +327,5 @@ def aretes_ponderees(graphe):
     """Renvoie les aretes du graphe munies de leur poids (networkx ne permet
     apparemment pas de le faire directement)."""
     return [(u, v, graphe[u][v]['weight']) for u, v in graphe.edges()]
+
 
