@@ -74,7 +74,6 @@ style.exercise ==
 .img-container {
     width: 30%;
     margin: auto;
-    display: inline-block;
 }
 
 /* css appliqué sur les tablettes */
