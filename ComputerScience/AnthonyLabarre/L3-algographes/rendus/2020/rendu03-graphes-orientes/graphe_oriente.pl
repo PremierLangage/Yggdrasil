@@ -33,7 +33,7 @@ pltest0==
 1
 2
 3
->>> sorted((v, G.degre_sortant(v)) for v in G.sommets())  # Degrés entrants
+>>> sorted((v, G.degre_sortant(v)) for v in G.sommets())  # Degrés sortants
 
 ==
 
