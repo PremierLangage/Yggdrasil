@@ -72,10 +72,10 @@ extracss2 ==
 
 style.exercise ==
 .jsxgraph-component {
-    max-width:none;
-    width:auto;
-    max-height:none;
-    height:auto;
+    max-width:none !important;
+    width:auto !important;
+    max-height:none !important;
+    height:auto !important;
 }
 
 .img-container {
