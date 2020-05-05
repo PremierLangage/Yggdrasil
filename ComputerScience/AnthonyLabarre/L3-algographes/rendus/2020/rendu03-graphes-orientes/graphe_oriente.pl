@@ -28,7 +28,7 @@ pltest0==
 [(0, [2]), (1, [0, 2]), (2, [3]), (3, [1])]
 >>> sorted((v, sorted(G.predecesseurs(v))) for v in G.sommets()) # Vérification des prédécesseurs
 [(0, [1]), (1, [3]), (2, [0, 1]), (3, [2])]
->>> degrés entrants et sortants
+>>> sorted((v, G.degre_entrant(v)) for v in G.sommets())  # Degrés entrants
 ==
 
 
