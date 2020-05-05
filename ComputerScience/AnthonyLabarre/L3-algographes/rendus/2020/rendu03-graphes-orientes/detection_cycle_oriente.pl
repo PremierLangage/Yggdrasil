@@ -20,17 +20,16 @@ pltest0==
 [(0, 3), (3, 4), (4, 0)]
 ==
 
-
-# TODO: exemple TD, DAG aléatoire, graphe aléatoire
+# TODO: DAG aléatoire, graphe aléatoire
 testname1 = Vérifications de composantes_fortement_connexes sur l'exemple du TD
 pltest1==
 >>> from corrlib_graphes import * #
 >>> G = GrapheOriente(); G.ajouter_arcs(CYCLE_ORIENTE_INSTANCE_TD) # initialisation de l'instance du TD
->>> cycle = detection_cycle(G)
+>>> arcs_cycle_trouve = set(detection_cycle(G).arcs())
 >>> cycles_possibles = cycles_simples(G)
->>> arcs_cycle_trouve = set(cycles.arcs())
->>> sorted(map(sorted, cfc))
-[[1, 2, 3], [4], [5, 6, 7, 8, 9], [10, 11, 12, 13, 14]]
+>>> if arcs_cycle_trouve not in cycles_possibles:
+...     print("les arcs identifiés:", arcs_cycle_trouve, "ne constituent pas un cycle du graphe")
+...     print("cycles possibles:", cycles_possibles)
 ==
 
 testname2 = Vérifications de composantes_fortement_connexes sur une instance aléatoire
@@ -58,6 +57,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
