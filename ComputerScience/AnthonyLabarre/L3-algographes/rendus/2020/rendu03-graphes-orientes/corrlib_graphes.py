@@ -361,6 +361,11 @@ def aretes_ponderees(graphe):
     return [(u, v, graphe[u][v]['weight']) for u, v in graphe.edges()]
 
 
+###############################################################################
+# Wrappers pour des algorithmes de networkx; servent simplement à cacher aux  #
+# étudiants l'existence de fonctions réalisant ce qu'on leur demande.         #
+###############################################################################
+
 def cfc(graphe_oriente):
     """Renvoie les composantes fortement connexes d'un graphe orienté. 
     graphe_oriente peut être de n'importe quel type implémentant:
