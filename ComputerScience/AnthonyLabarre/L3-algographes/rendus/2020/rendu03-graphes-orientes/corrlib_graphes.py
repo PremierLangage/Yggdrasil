@@ -387,7 +387,8 @@ def aretes_ponderees(graphe):
 ###############################################################################
 
 def cfc(graphe_oriente):
-    """Renvoie les composantes fortement connexes d'un graphe orienté. 
+    """Renvoie les composantes fortement connexes d'un graphe orienté sous la
+    forme d'ensembles de sommets.
     graphe_oriente peut être de n'importe quel type implémentant:
 
         arcs(): renvoie un itérable d'arcs sous la forme de couples de sommets
@@ -396,6 +397,27 @@ def cfc(graphe_oriente):
     return list(
         nx.strongly_connected_components(nx.DiGraph(graphe_oriente.arcs()))
     )
+
+
+def cfc_graphes(graphe_oriente):
+    """Renvoie les composantes fortement connexes d'un graphe orienté sous la
+    forme de sous-graphes. Les types des sous-graphes coïncident avec le type
+    d'entrée.
+    graphe_oriente peut être de n'importe quel type implémentant:
+
+        arcs(): renvoie un itérable d'arcs sous la forme de couples de sommets
+        ajouter_arcs(iterable): ajoute les couples de sommets de l'itérable
+            comme arcs au graphe
+    
+    """
+    resultat = list()
+    
+    for sous_graphe_nx in nx.strongly_connected_component_subgraphs(nx.DiGraph(graphe_oriente.arcs())):
+        sous_graphe = type(graphe_oriente)()
+        sous_graphe.ajouter_arcs(sous_graphe_nx.edges())
+        resultat.append(sous_graphe)
+        
+    return resultat
 
 
 def cycles_simples(graphe_oriente):
