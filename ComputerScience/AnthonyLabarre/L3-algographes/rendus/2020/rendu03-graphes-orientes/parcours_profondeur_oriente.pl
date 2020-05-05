@@ -24,6 +24,7 @@ pltest0==
 >>> from corrlib_graphes import * #
 >>> G = GrapheOriente(); G.ajouter_arcs(CYCLE_ORIENTE_INSTANCE_TD) # initialisation de l'instance du TD
 >>> foret = parcours_profondeur_oriente(G)
+>>> foret.sommets() == G.sommets()  # tous les sommets sont-ils couverts?
 ==
 
 
