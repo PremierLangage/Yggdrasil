@@ -12,7 +12,8 @@ text==
 
 # Les tests:
 # TODO: exemples des TDs, graphe aléatoire fortement connexe, graphe aléatoire faiblement connexe:
-# pour la vérification: 
+# pour la vérification: attention, on ne leur impose plus les sommets de départ
+# comment vérifier?
 
 
 
