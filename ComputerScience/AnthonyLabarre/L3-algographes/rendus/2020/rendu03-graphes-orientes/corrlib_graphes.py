@@ -45,6 +45,11 @@ CFC_INSTANCE_TD = [
     (13, 12), (14, 13)
 ]
 
+# Cycles (orientés, non pondérés)
+CYCLE_ORIENTE_INSTANCE_COURS = [
+    (0, 1), (0, 2), (2, 1), (0, 3), (3, 4), (4, 0)
+]
+
 # Fonctions diverses ----------------------------------------------------------
 def charger_module_etudiant(chemin, correction_deja_tentee=False):
     """Charge et renvoie le module spécifié."""
