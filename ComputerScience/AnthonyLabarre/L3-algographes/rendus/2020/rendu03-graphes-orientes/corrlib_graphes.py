@@ -394,7 +394,7 @@ def cfc(graphe_oriente):
     
     """
     return list(
-        nx.strongly_connected_components(DiGraph(graphe_oriente.arcs()))
+        nx.strongly_connected_components(nx.DiGraph(graphe_oriente.arcs()))
     )
 
 
@@ -408,6 +408,18 @@ def cycles_simples(graphe_oriente):
     """
     return [
         set(zip(cycle, cycle[1:] + cycle[:1]))
-        for cycle in nx.simple_cycles(DiGraph(graphe_oriente.arcs()))
+        for cycle in nx.simple_cycles(nx.DiGraph(graphe_oriente.arcs()))
     ]
+
+
+def est_arbre_oriente(graphe_oriente):
+    """
+    Renvoie True si le graphe passé en paramètre est bien un arbre orienté,
+    c'est-à-dire un graphe acyclique sans sommet de degré entrant > 1.
+    graphe_oriente peut être de n'importe quel type implémentant:
+
+        arcs(): renvoie un itérable d'arcs sous la forme de couples de sommets
+    
+    """
+    return nx.is_arborescence(nx.DiGraph(graphe_oriente.arcs()))
 
