@@ -7,7 +7,7 @@ builder= /builder/before.py
 author = Anthony Labarre
 title = Composantes fortement connexes.
 text==
-Écrivez une fonction composantes_fortement_connexes(graphe), renvoyant les composantes fortement connexes d'un graphe orienté sous la forme d'un itérable d'itérables de sommets
+Écrivez une fonction composantes_fortement_connexes(graphe), renvoyant les composantes fortement connexes d'un graphe orienté sous la forme d'un itérable d'itérables de sommets.
 ==
 
 # Les tests:
