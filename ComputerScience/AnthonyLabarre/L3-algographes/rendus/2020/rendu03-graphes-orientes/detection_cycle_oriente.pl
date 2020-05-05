@@ -24,9 +24,11 @@ pltest0==
 # TODO: exemple TD, DAG aléatoire, graphe aléatoire
 testname1 = Vérifications de composantes_fortement_connexes sur l'exemple du TD
 pltest1==
->>> from corrlib_graphes import CYCLE_ORIENTE_INSTANCE_TD #
+>>> from corrlib_graphes import * #
 >>> G = GrapheOriente(); G.ajouter_arcs(CYCLE_ORIENTE_INSTANCE_TD) # initialisation de l'instance du TD
 >>> cycle = detection_cycle(G)
+>>> cycles_possibles = cycles_simples(G)
+>>> arcs_cycle_trouve = set(cycles.arcs())
 >>> sorted(map(sorted, cfc))
 [[1, 2, 3], [4], [5, 6, 7, 8, 9], [10, 11, 12, 13, 14]]
 ==
