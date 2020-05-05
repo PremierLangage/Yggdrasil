@@ -11,7 +11,8 @@ text==
 ==
 
 # Les tests:
-
+# TODO: exemples des TDs, graphe aléatoire fortement connexe, graphe aléatoire faiblement connexe:
+# pour la vérification: 
 
 
 
