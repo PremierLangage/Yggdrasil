@@ -24,10 +24,12 @@ pltest0==
 [0, 1, 2, 3]
 >>> sorted(map(list, G.arcs())) # Vérification de l'ensemble des arcs
 [[0, 2], [1, 0], [1, 2], [2, 3], [3, 1]]
+>>> sorted((v, sorted(G.successeurs(v))) for v in G.sommets()) # Vérification des successeurs
+[(0, [2]), (1, [0, 2]), (2, [3]), (3, [1])]
+>>> sorted((v, sorted(G.predecesseurs(v))) for v in G.sommets()) # Vérification des prédécesseurs
+[(0, [1]), (1, [3]), (2, [0, 1]), (3, [2])]
 ==
 
-# TODO: dictionnaire de prédécesseurs / successeurs pour chaque sommet
-# autres?
 
 # Le grader:
 #@ /grader/evaluator.py [grader.py]
