@@ -27,7 +27,11 @@ pltest0==
 >>> G = GrapheOriente(); G.ajouter_arcs(CYCLE_ORIENTE_INSTANCE_TD) # initialisation de l'instance du TD
 >>> foret = parcours_profondeur_oriente(G)
 >>> foret.sommets() == G.sommets()  # tous les sommets sont-ils couverts?
->>> for arbre in cfc(foret): # tous les sous-graphes de la forêt sont-ils des arbres?
+>>> for arbre in cfc_graphes(foret): # tous les sous-graphes de la forêt sont-ils des arbres?
+...     if not est_arbre_oriente(arbre):
+...         print("le sous-graphe suivant de la forêt n'est pas un arbre orienté")
+...         print("    sommets:", arbre.sommets())
+...         print("    arcs:   ", arbre.arcs())
 ==
 
 
