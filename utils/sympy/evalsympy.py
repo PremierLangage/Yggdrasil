@@ -716,7 +716,7 @@ def eval_rset(strans, sol):
         return (0, "NotEqual")
     return (100,"")
 
-from sympy.physics.units import Quantity
+from sympy.physics.units import Quantity, convert_to
 
 def get_numeric_unit(expr):
     """
