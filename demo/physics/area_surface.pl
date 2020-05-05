@@ -20,3 +20,7 @@ unit_dict = {'m': meter,'cm': centimeter, 'g': gram, 'kg': kilogram, 's': second
 score, _, feedback = eval_physical(input.value, sol, tol=1e-2, local_dict=unit_dict)
 ==
 
+solution ==
+La solution est $!{{sol|latex}}!$.
+==
+
