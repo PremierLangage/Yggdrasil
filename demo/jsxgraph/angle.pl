@@ -29,7 +29,9 @@ Placer le point M de sorte que l'angle $% (\overrightarrow{OA},\overrightarrow{O
 ==
 
 form ==
-{{ jxg | component }}
+<div class="img-container">
+{{ jxg|component }}
+</div>
 ==
 
 script_wrong ==
@@ -70,7 +72,7 @@ extracss2 ==
 
 style.exercise ==
 .img-container {
-    width: 60%;
+    width: 30%;
     margin: auto;
     display: inline-block;
 }
@@ -92,4 +94,5 @@ style.exercise ==
 }
 </style>
 ==
+
 
