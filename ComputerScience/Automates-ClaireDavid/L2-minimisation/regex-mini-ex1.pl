@@ -13,7 +13,8 @@ eval_type= "mini_auto"
 alphabet= "a,b"
 
 #message de l'énoncé décrivant le langage
-message = 'bb * a(b * a) *'
+message = '$$bb * a(b * a)*$$'
+#message = 'bb * a(b * a) *'
 
 ## TODO donner une seule description du lanage enoncé pour le message et l'automate
 #langage solution -- le nom solution est forcé par le template
@@ -33,6 +34,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
