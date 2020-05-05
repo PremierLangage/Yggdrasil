@@ -21,7 +21,7 @@ message = "l'ensemble des mots dont la 4ème lettre à partir de la droite est u
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text==
-On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
+On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$ .<br/>
 Donnez un automate reconnaissant {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
 <p class="warning-state">
@@ -29,6 +29,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
