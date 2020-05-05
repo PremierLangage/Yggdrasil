@@ -80,6 +80,7 @@ style.exercise ==
 
 .img-container {
     width: 40%;
+    height: auto;
 }
 
 /* css appliqué sur les tablettes */
