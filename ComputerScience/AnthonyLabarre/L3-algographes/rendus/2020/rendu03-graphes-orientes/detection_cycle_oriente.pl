@@ -32,14 +32,14 @@ pltest1==
 ...     print("cycles possibles:", cycles_possibles)
 ==
 
-testname2 = Vérifications de composantes_fortement_connexes sur une instance aléatoire
+testname2 = Vérifications de composantes_fortement_connexes sur un DAG aléatoire
 pltest2==
 >>> from corrlib_graphes import * #
->>> G = GrapheOriente(); G.ajouter_arcs(list(graphe_oriente_aleatoire(20).edges())) # initialisation d'une instance aléatoire
->>> attendu = sorted(map(sorted, cfc(G)))
->>> obtenu = sorted(map(sorted, composantes_fortement_connexes(G)))
->>> if obtenu != attendu:
-...     print("CFC obtenues =", obtenu, ";\n CFC attendues =", attendu)
+>>> G = GrapheOriente(); G.ajouter_arcs(list(graphe_oriente_acyclique_aleatoire(20).edges())) # initialisation d'un DAG aléatoire
+>>> obtenu = detection_cycle(G)
+>>> if obtenu is not None:
+...     print("la fonction identifie le cycle", obtenu.arcs(), " mais le graphe est acyclique")
+...     print("ses arcs:", G.arcs())
 ==
 
 # Le grader:
@@ -57,6 +57,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
