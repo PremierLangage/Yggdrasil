@@ -5,8 +5,7 @@ title= QCM régulier - non régulier
 
 message = Le langage suivant est-il est régulier ou non-régulier?
 
-# une étoile radio deux check box
-questions==
+lalistedesquestions==
 * {{ message }} {a^nb^m|\exists p\ n+m = 2p}
 + régulier
 - non régulier
@@ -21,8 +20,13 @@ questions==
 + régulier
 - non régulier
 - aucune idée
-
 ==
+
+
+
+# une étoile radio deux check box
+questions= lalistedesquestions
+
 
 
 
