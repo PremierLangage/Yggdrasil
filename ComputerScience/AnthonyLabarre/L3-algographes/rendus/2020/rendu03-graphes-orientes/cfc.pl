@@ -14,16 +14,10 @@ text==
 testname0 = Vérifications de composantes_fortement_connexes sur l'exemple du cours
 pltest0==
 >>> from corrlib_graphes import CFC_INSTANCE_COURS #
->>> G = GrapheOriente(); G.ajouter_arcs(PRIM_INSTANCE_COURS) # initialisation de l'instance du cours
->>> arbre = acpm_kruskal(G)
->>> sum(poids for *_, poids in arbre.aretes())
-23
->>> if not est_arbre_couvrant(arbre, G):  # Le résultat est-il bien un arbre couvrant?
-...     print("l'arbre trouvé d'arêtes", arbre.aretes(), "n'est pas un arbre couvrant pour le graphe G de sommets", sorted(G.sommets())) #
-...     if not est_arbre(arbre): # Le résultat est-il bien un arbre?
-...         print("l'arbre trouvé n'est pas un arbre") #
-...         if any(v not in G.sommets() for v in sum((arete[:2] for arete in arbre.aretes()), ())): #
-...             print("certaines extrémités d'arêtes ne sont pas des sommets") #
+>>> G = GrapheOriente(); G.ajouter_arcs(CFC_INSTANCE_COURS) # initialisation de l'instance du cours
+>>> cfc = composantes_fortement_connexes(G)
+>>> sorted(map(sorted, cfc))
+[[0, 1, 4], [2, 3], [5, 6], [7]]
 ==
 
 testname1 = Vérifications de acpm_kruskal sur l'exemple du TD
@@ -86,6 +80,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
