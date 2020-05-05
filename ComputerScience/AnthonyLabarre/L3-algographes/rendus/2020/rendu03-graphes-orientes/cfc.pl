@@ -5,9 +5,9 @@ extends= /ComputerScience/python/template/pltestblonde.pl
 builder= /builder/before.py
 
 author = Anthony Labarre
-title = Kruskal: Arbres (et forêts) couvrants de poids minimum.
+title = Composantes fortement connexes.
 text==
-Écrivez une fonction acpm_kruskal(graphe), qui prend en paramètre un graphe et renvoie la forêt couvrante de poids minimum pour ce graphe en suivant l'algorithme de Kruskal.
+Écrivez une fonction composantes_fortement_connexes(graphe), renvoyant les composantes fortement connexes d'un graphe orienté sous la forme d'un itérable d'itérables de sommets
 ==
 
 # Les tests:
@@ -89,6 +89,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
