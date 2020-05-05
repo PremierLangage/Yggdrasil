@@ -385,4 +385,4 @@ def cycles_simples(graphe_oriente):
         set(zip(cycle, cycle[1:] + cycle[:1]))
         for cycle in nx.simple_cycles(DiGraph(graphe_oriente.arcs()))
     ]
-    
+
