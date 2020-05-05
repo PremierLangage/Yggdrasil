@@ -13,7 +13,7 @@ solution = Automaton.parse('(abb|ba|bab)*')
 
 
 #message de l'énoncé décrivant le langage
-message = " le langage $!L= \\{ abb, ba, bab \\}^\*!$"
+message = " le langage $!L= \\\{ abb, ba, bab \\\}^\*!$"
 ==
 
 
