@@ -32,7 +32,7 @@ solution = '''
 
 #message de l'énoncé décrivant le langage
 #message = "le langage { u.v tels que  u,v ∈ Σ* et |u| = 2|v| }"
-message = "L= \\{ u.v\  tels\  que\  u,v \\in \\Sigma^\*\ et\ |u| = 2|v| }"
+message = "L= \\\{ u.v\  tels\  que\  u,v \\in \\Sigma^\*\ et\ |u| = 2|v| \\\}"
 ==
 
 #* Texte de l'énoncé
