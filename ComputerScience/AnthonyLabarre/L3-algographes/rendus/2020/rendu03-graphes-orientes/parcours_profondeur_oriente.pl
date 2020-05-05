@@ -1,17 +1,23 @@
-# Test d'une fonction detection_cycle.
+# Test d'une fonction parcours_profondeur_oriente.
 @ /utils/sandboxio.py
 @ corrlib_graphes.py
 extends= /ComputerScience/python/template/pltestblonde.pl
 builder= /builder/before.py
 
 author = Anthony Labarre
-title = Détection de cycle (graphe orienté).
+title = Parcours en profondeur (graphe orienté).
 text==
-Écrivez une fonction detection_cycle(graphe), renvoyant explicitement un cycle du graphe orienté passé en paramètre s'il en contient un et None sinon. Le type du cycle renvoyé doit être le même que celui du graphe en entrée.
+Écrivez une fonction parcours_profondeur_oriente(graphe), qui renvoie les sommets du graphe dans l'ordre où le parcours en profondeur les découvrira. Attention, votre fonction doit être correcte que le graphe soit ou non connexe (faiblement ou fortement). Tous les sommets du graphe doivent donc être listés.
 ==
 
 # Les tests:
-testname0 = Vérifications de detection_cycle sur l'exemple du cours
+
+
+
+
+
+
+testname0 = Vérifications de parcours_profondeur_oriente sur l'exemple du cours
 pltest0==
 >>> from corrlib_graphes import CYCLE_ORIENTE_INSTANCE_COURS #
 >>> G = GrapheOriente(); G.ajouter_arcs(CYCLE_ORIENTE_INSTANCE_COURS) # initialisation de l'instance du cours
@@ -20,7 +26,6 @@ pltest0==
 [(0, 3), (3, 4), (4, 0)]
 ==
 
-# TODO: graphe aléatoire
 testname1 = Vérifications de detection_cycle sur l'exemple du TD
 pltest1==
 >>> from corrlib_graphes import * #
