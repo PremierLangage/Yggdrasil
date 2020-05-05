@@ -20,21 +20,16 @@ pltest0==
 [[0, 1, 4], [2, 3], [5, 6], [7]]
 ==
 
-testname1 = Vérifications de acpm_kruskal sur l'exemple du TD
+testname1 = Vérifications de composantes_fortement_connexes sur l'exemple du TD
 pltest1==
->>> from corrlib_graphes import * #
->>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_TD) # initialisation de l'exemple du TD
->>> arbre = acpm_kruskal(G)
->>> sum(poids for *_, poids in arbre.aretes())
-18
->>> if not est_arbre_couvrant(arbre, G):  # Le résultat est-il bien un arbre couvrant?
-...     print("l'arbre trouvé d'arêtes", arbre.aretes(), "n'est pas un arbre couvrant pour le graphe G de sommets", sorted(G.sommets())) #
-...     if not est_arbre(arbre): # Le résultat est-il bien un arbre?
-...         print("l'arbre trouvé n'est pas un arbre") #
-...         if any(v not in G.sommets() for v in sum((arete[:2] for arete in arbre.aretes()), ())): #
-...             print("certaines extrémités d'arêtes ne sont pas des sommets") #
+>>> from corrlib_graphes import CFC_INSTANCE_TD #
+>>> G = GrapheOriente(); G.ajouter_arcs(CFC_INSTANCE_TD) # initialisation de l'instance du cours
+>>> cfc = composantes_fortement_connexes(G)
+>>> sorted(map(sorted, cfc))
+
 ==
 
+# TODO
 testname2 = Vérifications de acpm_kruskal sur une instance aléatoire
 pltest2==
 >>> from corrlib_graphes import * #
