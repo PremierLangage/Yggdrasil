@@ -55,7 +55,7 @@ jxg.disabled = True
 ==
 
 
-extracss==
+extracss2 ==
 <style>
 .jsxgraph-component {
     max-width:300px;
@@ -68,4 +68,28 @@ extracss==
 ==
 
 
+style.exercise ==
+.img-container {
+    width: 60%;
+    margin: auto;
+    display: inline-block;
+}
+
+/* css appliqué sur les tablettes */
+@media screen and (max-width: 768px) {
+    .img-container {
+        width: 40%;
+        margin: auto;
+    }
+}
+
+/* css appliqué sur les téléphones */
+@media screen and (max-width: 576px) {
+    .img-container {
+        width: 100%;
+        margin: auto;
+    }
+}
+</style>
+==
 
