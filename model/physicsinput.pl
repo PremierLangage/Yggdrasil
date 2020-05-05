@@ -6,7 +6,7 @@ input.decorator = CustomMathInput
 
 input.virtualKeyboards = elementary
 
-input.inlineShortcuts % {}
+input.inlineShortcuts % {"V": "\operatorname{V}"}
 
 title = 
 
