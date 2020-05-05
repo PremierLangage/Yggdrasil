@@ -47,7 +47,7 @@ text==
 **nombre entier positif ou nul** en écriture décimale (C'est à dire écrit en 
 base 10). Votre srcipt devra écrire sur la sortie standard la phrase 
 suivante :   
-**XXX s'écrit YYY en binaire.**
+**XXX s'écrit YYY en binaire.**   
 Il faudra bien sur remplacer XXX par l'argument entier du script et YYY par
 la succession de 0 et de 1 donnant l'écriture binaire de l'argument.
 ==
