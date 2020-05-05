@@ -5,7 +5,7 @@ title = Aire d'une surface
 input.virtualKeyboards = elementary
 
 before ==
-a = (1+ 0.1*randint(20))*meter
+a = (1+ 0.1*randint(1,20))*meter
 b = randint(20,60)*centimeter
 sol = convert_to(a*b, centimeter**2)
 ==
