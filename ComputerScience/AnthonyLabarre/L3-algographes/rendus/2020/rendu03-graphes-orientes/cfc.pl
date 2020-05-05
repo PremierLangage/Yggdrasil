@@ -23,7 +23,7 @@ pltest0==
 testname1 = Vérifications de composantes_fortement_connexes sur l'exemple du TD
 pltest1==
 >>> from corrlib_graphes import CFC_INSTANCE_TD #
->>> G = GrapheOriente(); G.ajouter_arcs(CFC_INSTANCE_TD) # initialisation de l'instance du cours
+>>> G = GrapheOriente(); G.ajouter_arcs(CFC_INSTANCE_TD) # initialisation de l'instance du TD
 >>> cfc = composantes_fortement_connexes(G)
 >>> sorted(map(sorted, cfc))
 [[1, 2, 3], [4], [5, 6, 7, 8, 9], [10, 11, 12, 13, 14]]
