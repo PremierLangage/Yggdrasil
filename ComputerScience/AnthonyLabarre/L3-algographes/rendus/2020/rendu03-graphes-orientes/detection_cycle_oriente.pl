@@ -20,8 +20,8 @@ pltest0==
 [(0, 3), (3, 4), (4, 0)]
 ==
 
-# TODO: DAG aléatoire, graphe aléatoire
-testname1 = Vérifications de composantes_fortement_connexes sur l'exemple du TD
+# TODO: graphe aléatoire
+testname1 = Vérifications de detection_cycle sur l'exemple du TD
 pltest1==
 >>> from corrlib_graphes import * #
 >>> G = GrapheOriente(); G.ajouter_arcs(CYCLE_ORIENTE_INSTANCE_TD) # initialisation de l'instance du TD
@@ -32,7 +32,7 @@ pltest1==
 ...     print("cycles possibles:", cycles_possibles)
 ==
 
-testname2 = Vérifications de composantes_fortement_connexes sur un DAG aléatoire
+testname2 = Vérifications de detection_cycle sur un DAG aléatoire
 pltest2==
 >>> from corrlib_graphes import * #
 >>> G = GrapheOriente(); G.ajouter_arcs(list(graphe_oriente_acyclique_aleatoire(20).edges())) # initialisation d'un DAG aléatoire
@@ -41,6 +41,26 @@ pltest2==
 ...     print("la fonction identifie le cycle", obtenu.arcs(), " mais le graphe est acyclique")
 ...     print("ses arcs:", G.arcs())
 ==
+
+testname3 = Vérifications de detection_cycle sur un graphe orienté aléatoire
+pltest3==
+>>> from corrlib_graphes import * #
+>>> G = GrapheOriente(); G.ajouter_arcs(list(graphe_oriente_aleatoire(20).edges())) # initialisation d'un graphe orienté aléatoire
+>>> obtenu = detection_cycle(G)
+>>> cycles_possibles = cycles_simples(G)
+>>> if obtenu is None:
+...     if cycles_possibles:
+...         print("la fonction ne trouve pas de cycle alors que le graphe en contient", len(cycles_possibles))
+... else:
+...     if cycles_possibles:
+...         if arcs_cycle_trouve not in cycles_possibles:
+...             print("les arcs identifiés:", arcs_cycle_trouve, "ne constituent pas un cycle du graphe")
+...             print("cycles possibles:", cycles_possibles)
+...     else:
+...         print("la fonction identifie le cycle", obtenu.arcs(), " mais le graphe est acyclique")
+...         print("ses arcs:", G.arcs())
+==
+
 
 # Le grader:
 #@ /grader/evaluator.py [grader.py]
