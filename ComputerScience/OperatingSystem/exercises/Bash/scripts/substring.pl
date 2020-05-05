@@ -54,8 +54,13 @@ title=Sous chaîne de caractères en bash
 
 text==
 Écrire un script bash prenant deux arguments (à voir comme deux mots). Votre 
-script devra déterminer
-
+script devra déterminer si le second mot est un sous-mot du premier argument.
+Si le second argument est bien un sous-mot, votre programme devra afficher 
+sur une ligne **XXXX est bien un sous-mot de YYYY.** (avec un retour chariot 
+à la fin de la ligne) sinon votre script devra afficher **XXXX n'est pas un 
+sous-mot de YYYY.** (avec encore le retour à la ligne qui va bien). Il faudra 
+bien sûr remplacer XXXX et YYYY par les valeurs des arguments lors des 
+exécutions.
 ==
 
 
