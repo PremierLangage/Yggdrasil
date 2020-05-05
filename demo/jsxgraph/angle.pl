@@ -73,7 +73,7 @@ extracss2 ==
 style.exercise ==
 .jsxgraph-component {
     max-width:none;
-    width:100%;
+    width:auto;
     max-height:none;
     height:auto;
     margin: 0 auto;
