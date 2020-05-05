@@ -54,7 +54,7 @@ alphabet = ', '.join(list(alphabet))
 text ==
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$ .<br/>
 Donnez un automate reconnaissant le langage L1 = {{ '{' }}  mots qui {{ bla }}  **{{ mot }}** {{ '}' }} <br>
-Donnez un automate reconnaissant le langage $!L = \\\\{ \\text\{mots qui {{ bla }}  \}**{{ mot }}** \\\\}!$. <br>
+Donnez un automate reconnaissant le langage {{$!L = \\\\{ \\text\{mots qui {{ bla }}  \}**{{ mot }}** \\\\}!$}}. <br>
 {% if attempt < maxattempt and score != 100 %}
 <p class="warning-state">
 Il vous reste {{ maxattempt - attempt }} tentative(s) !
