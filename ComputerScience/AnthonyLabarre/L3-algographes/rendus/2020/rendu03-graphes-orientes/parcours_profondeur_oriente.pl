@@ -19,7 +19,6 @@ text==
 
 # vérif
 
-# pas d'exemple intéressant fait au cours, on passe directement sur l'exercice du TD
 testname0 = Vérifications de parcours_profondeur_oriente sur l'exemple du TD 5 exercice 1
 pltest0==
 >>> from corrlib_graphes import * #
@@ -33,6 +32,18 @@ pltest0==
 ...         print("    arcs:   ", arbre.arcs())
 ==
 
+testname1 = Vérifications de parcours_profondeur_oriente sur l'exemple du TD 5 exercice 3
+pltest1==
+>>> from corrlib_graphes import * #
+>>> G = GrapheOriente(); G.ajouter_arcs(CFC_INSTANCE_TD) # initialisation de l'instance du TD
+>>> foret = parcours_profondeur_oriente(G)
+>>> foret.sommets() == G.sommets()  # tous les sommets sont-ils couverts?
+>>> for arbre in cfc_graphes(foret): # tous les sous-graphes de la forêt sont-ils des arbres?
+...     if not est_arbre_oriente(arbre):
+...         print("le sous-graphe suivant de la forêt n'est pas un arbre orienté")
+...         print("    sommets:", arbre.sommets())
+...         print("    arcs:   ", arbre.arcs())
+==
 
 # Le grader:
 #@ /grader/evaluator.py [grader.py]
@@ -49,5 +60,6 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
