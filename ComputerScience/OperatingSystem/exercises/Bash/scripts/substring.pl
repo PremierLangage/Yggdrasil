@@ -61,7 +61,8 @@ sur une ligne
 à la fin de la ligne)   
 sinon votre script devra afficher   
 **XXXX n'est pas un sous-mot de YYYY.** (avec encore le retour à la ligne 
-qui va bien). Il faudra bien sûr remplacer XXXX et YYYY par les valeurs des 
+qui va bien)   
+Il faudra bien sûr remplacer XXXX et YYYY par les valeurs des 
 arguments lors des exécutions.
 ==
 
