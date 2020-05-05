@@ -55,7 +55,6 @@ message = "L = \\\\{ \{mots qui {{ bla }}  \}{{ mot }} \\\\}"
 # l'automate minimisé du langage solution
 text ==
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$ .<br/>
-Donnez un automate reconnaissant le langage L1 = {{ '{' }}  mots qui {{ bla }}  **{{ mot }}** {{ '}' }} <br>
 Donnez un automate reconnaissant le langage $!L = \\{ !$ mots qui {{ bla }} {{ mot }} $!\\}!$. <br>
 {% if attempt < maxattempt and score != 100 %}
 <p class="warning-state">
