@@ -347,12 +347,32 @@ def graphe_oriente_aleatoire(nb_sommets, proba_arc=0.5):
     où chaque arc est rajouté avec une probabilité proba_arc.
 
     :param nb_sommets:
-    :param proba_arete:
+    :param proba_arc:
     :return:
     """
     return nx.generators.fast_gnp_random_graph(
         nb_sommets, proba_arete, directed=True
     )
+
+
+def graphe_oriente_acyclique_aleatoire(nb_sommets, proba_arc=0.5):
+    """
+    Renvoie un graphe orienté acyclique aléatoire sur nb_sommets sommets,
+    où chaque arc est rajouté avec une probabilité proba_arc.
+
+    :param nb_sommets:
+    :param proba_arc:
+    :return:
+    """
+    G = nx.DiGraph()
+    G.add_nodes_from(range(nb_sommets))
+
+    for i in range(nb_sommets-1):
+        for j in range(i+1, nb_sommets):
+            if random() < edge_probability:
+                G.add_edge(i, j)
+
+    return G
 
 
 def aretes_ponderees(graphe):
