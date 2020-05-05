@@ -48,7 +48,7 @@ pltest1==
 testname2 = Vérifications de parcours_profondeur_oriente sur un graphe orienté aléatoire
 pltest2==
 >>> from corrlib_graphes import * #
->>> G = GrapheOriente(); G.ajouter_arcs(graphe_oriente_aleatoire(20).edges()) # initialisation de l'instance du TD
+>>> G = GrapheOriente(); G.ajouter_arcs(graphe_oriente_aleatoire(20).edges()) # initialisation d'un graphe orienté aléatoire
 >>> foret = parcours_profondeur_oriente(G)
 >>> foret.sommets() == G.sommets()  # tous les sommets sont-ils couverts?
 >>> for arbre in cfc_graphes(foret): # tous les sous-graphes de la forêt sont-ils des arbres?
