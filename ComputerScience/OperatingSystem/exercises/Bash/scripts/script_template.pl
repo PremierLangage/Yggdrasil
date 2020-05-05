@@ -119,7 +119,7 @@ else:
         # securisation for too long output
         if len(spout) > 10000:
             spout = spout[:10000]
-            spout = "\n...\n La sortie standard de votre commande dépasse les 10 000 caractères.\n"
+            spout = "\n...\n La sortie standard de votre script dépasse les 10 000 caractères.\n"
             spout += "Ce n'est pas raisonnable et votre sortie standard a été tronquée ici.\n"
 
 
