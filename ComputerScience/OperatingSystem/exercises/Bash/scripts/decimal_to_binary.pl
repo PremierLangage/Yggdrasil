@@ -20,7 +20,7 @@ before==#|python|
 from random import randint
 
 def gen_output(n):
-    return str(n)+"s'écrit "+bin(n)[2:]+" en binaire.\n"
+    return str(n)+" s'écrit "+bin(n)[2:]+" en binaire.\n"
 
 a1 = randint(10, 100)
 a2 = randint(100, 1000)
