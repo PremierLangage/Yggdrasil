@@ -52,7 +52,8 @@ CYCLE_ORIENTE_INSTANCE_COURS = [
 
 # graphe du TD 5, exercice 1; A = 0, B = 1, ...
 CYCLE_ORIENTE_INSTANCE_TD = [
-    (0, 1), (0, 2), (2, 1), (0, 3), (3, 4), (4, 0)
+    (0, 1), (0, 5), (0, 6), (2, 0), (3, 5), (4, 3), (5, 4), (6, 2), (6, 9), 
+    (7, 8), (8, 7), (9, 10), (9, 11), (9, 12), (11, 6), (11, 12), (12, 11)
 ]
 
 
@@ -360,12 +361,6 @@ def aretes_ponderees(graphe):
     return [(u, v, graphe[u][v]['weight']) for u, v in graphe.edges()]
 
 
-###############################################################################
-# Wrappers pour des algorithmes de networkx; servent simplement à cacher aux  #
-# étudiants l'existence de fonctions réalisant ce qu'on leur demande.         #
-###############################################################################
-
-
 def cfc(graphe_oriente):
     """Renvoie les composantes fortement connexes d'un graphe orienté. 
     graphe_oriente peut être de n'importe quel type implémentant:
@@ -373,7 +368,21 @@ def cfc(graphe_oriente):
         arcs(): renvoie un itérable d'arcs sous la forme de couples de sommets
     
     """
-    graphe_nx = DiGraph()
-    graphe_nx.add_edges_from(graphe_oriente.arcs())
-    return list(nx.strongly_connected_components(graphe_nx))
+    return list(
+        nx.strongly_connected_components(DiGraph(graphe_oriente.arcs()))
+    )
 
+
+def cycles_simples(graphe_oriente):
+    """Renvoie les cycles simples (sans répétition de sommets) d'un graphe
+    orienté, chaque cycle étant représenté par un ensemble d'arcs.
+    graphe_oriente peut être de n'importe quel type implémentant:
+
+        arcs(): renvoie un itérable d'arcs sous la forme de couples de sommets
+    
+    """
+    return [
+        set(zip(cycle, cycle[1:] + cycle[:1]))
+        for cycle in nx.simple_cycles(DiGraph(graphe_oriente.arcs()))
+    ]
+    
