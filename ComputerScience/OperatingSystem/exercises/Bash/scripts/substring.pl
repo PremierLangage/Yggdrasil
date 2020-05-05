@@ -1,0 +1,56 @@
+#*****************************************************************************
+#  Copyright (C) 2020 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
+#
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=script_template.pl
+
+before==#|python|
+from random import randint
+
+def gen_output(bm, sm):
+    if sm in bm:
+        return sm+" est bien un sous-mot de "+bm+".\n"
+    else:
+        return sm+" n'est pas un sous-mot de "+bm+".\n"
+
+def rand_mot(size, variance):
+    return "".join([chr(97+randint(0,variance)) for i in range(randint(size//2, size))])
+
+bm1, sm1 = rand_mot(4, 1), rand_mot(2, 1)
+bm2, sm2 = rand_mot(4, 1), rand_mot(2, 1)
+bm3, sm3 = rand_mot(8, 2), rand_mot(4, 2)
+bm4, sm4 = rand_mot(8, 2), rand_mot(4, 2)
+bm5, sm5 = rand_mot(12, 4), rand_mot(6, 4)
+bm6, sm6 = rand_mot(12, 4), rand_mot(6, 4)
+bm7, sm7 = rand_mot(20, 25), rand_mot(4, 25)
+bm8, sm8 = rand_mot(20, 25), rand_mot(4, 25)
+
+test_bash = [ ["simple", ["ungrandmotici", "mot"], ""],
+ ]
+==
+
+author=Nicolas Borie
+title=Sous chaîne de caractères en bash
+
+text==
+Écrire un script bash prenant deux arguments (à voir comme deux mots). Votre 
+script devra déterminer
+
+==
+
+
+
+
+
