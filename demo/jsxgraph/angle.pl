@@ -72,7 +72,7 @@ extracss2 ==
 
 style.exercise ==
 .img-container {
-    width: 30%;
+    width: 30% !important;
     margin: auto;
 }
 
