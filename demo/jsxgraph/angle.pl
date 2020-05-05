@@ -73,7 +73,7 @@ extracss2 ==
 style.exercise ==
 .img-container {
     width: 30% !important;
-    margin: auto !important;
+    margin: 0 auto !important;
 }
 
 /* css appliqué sur les tablettes */
