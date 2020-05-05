@@ -76,12 +76,10 @@ style.exercise ==
     width:auto;
     max-height:none;
     height:auto;
-    margin: 0 auto;
 }
 
 .img-container {
     width: 40%;
-    margin: auto;
 }
 
 /* css appliqué sur les tablettes */
