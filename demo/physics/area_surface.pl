@@ -11,7 +11,7 @@ sol = convert_to(a*b, centimeter**2)
 ==
 
 text ==
-On considère une surface rectangulaire de $!{{a|latex}}!$ sur $!{{b|latex}}!$. Quelle est sa surface ?
+On considère une surface rectangulaire de $!{{a|latex}}!$ sur $!{{b|latex}}!$. Quelle est son aire ?
 ==
 
 evaluator ==
