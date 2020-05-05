@@ -26,7 +26,7 @@ solution = Automaton.parse('bb*a(b*a)*')
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text==
-On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$ .
+On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$ .<br/>
 Donnez l'automate minimal déterministe complet reconnaissant le langage {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
 <p class="warning-state">
