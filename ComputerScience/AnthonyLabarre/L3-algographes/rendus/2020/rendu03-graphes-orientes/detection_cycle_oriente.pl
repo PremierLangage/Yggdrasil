@@ -20,11 +20,13 @@ pltest0==
 [(0, 3), (3, 4), (4, 0)]
 ==
 
+
+# TODO: exemple TD, DAG aléatoire, graphe aléatoire
 testname1 = Vérifications de composantes_fortement_connexes sur l'exemple du TD
 pltest1==
->>> from corrlib_graphes import CFC_INSTANCE_TD #
->>> G = GrapheOriente(); G.ajouter_arcs(CFC_INSTANCE_TD) # initialisation de l'instance du cours
->>> cfc = composantes_fortement_connexes(G)
+>>> from corrlib_graphes import CYCLE_ORIENTE_INSTANCE_TD #
+>>> G = GrapheOriente(); G.ajouter_arcs(CYCLE_ORIENTE_INSTANCE_TD) # initialisation de l'instance du TD
+>>> cycle = detection_cycle(G)
 >>> sorted(map(sorted, cfc))
 [[1, 2, 3], [4], [5, 6, 7, 8, 9], [10, 11, 12, 13, 14]]
 ==
