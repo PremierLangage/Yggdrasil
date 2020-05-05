@@ -329,9 +329,40 @@ def graphe_connexe_aleatoire_pondere(nb_sommets, poids_max = 50, proba_arete=0.5
     return graphe
 
 
+def graphe_oriente_aleatoire(nb_sommets, proba_arc=0.5):
+    """
+    Renvoie un graphe orienté aléatoire sur nb_sommets sommets,
+    où chaque arc est rajouté avec une probabilité proba_arc.
+
+    :param nb_sommets:
+    :param proba_arete:
+    :return:
+    """
+    return nx.generators.fast_gnp_random_graph(
+        nb_sommets, proba_arete, directed=True
+    )
+
+
 def aretes_ponderees(graphe):
     """Renvoie les aretes du graphe munies de leur poids (networkx ne permet
     apparemment pas de le faire directement)."""
     return [(u, v, graphe[u][v]['weight']) for u, v in graphe.edges()]
 
+
+###############################################################################
+# Wrappers pour des algorithmes de networkx; servent simplement à cacher aux  #
+# étudiants l'existence de fonctions réalisant ce qu'on leur demande.         #
+###############################################################################
+
+
+def cfc(graphe_oriente):
+    """Renvoie les composantes fortement connexes d'un graphe orienté. 
+    graphe_oriente peut être de n'importe quel type implémentant:
+
+        arcs(): renvoie un itérable d'arcs sous la forme de couples de sommets
+    
+    """
+    graphe_nx = DiGraph()
+    graphe_nx.add_edges_from(graphe_oriente.arcs())
+    return list(nx.strongly_connected_components(graphe_nx))
 
