@@ -58,7 +58,7 @@ solution = Automaton.parse(enonce)
 text==
 {{ viewer_enonce|component }}
 
-On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$ .<br/>
+<!--On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$ .<br/>-->
 Donnez l'automate minimal déterministe complet correspondant à l'automate ci-dessus. <br>
 {% if attempt < maxattempt and score != 100 %}
 <p class="warning-state">
@@ -66,6 +66,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
