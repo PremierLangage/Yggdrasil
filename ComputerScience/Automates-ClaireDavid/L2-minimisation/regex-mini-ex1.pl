@@ -13,7 +13,7 @@ eval_type= "mini_auto"
 alphabet= "a,b"
 
 #message de l'énoncé décrivant le langage
-message = '$$bb^*a(b^*a)^*$$'
+message = "$$bb*a(b*a)*$$"
 #message = 'bb * a(b * a) *'
 
 ## TODO donner une seule description du lanage enoncé pour le message et l'automate
