@@ -43,7 +43,15 @@ def premiers_carres(k) :
 n = int(input("Saisissez un entier :"))
 premiers_carres(n)
 ==
+before==
+def carre(n):
+    return(n*n)
 
+def premiers_carres(k) :
+    for i in range(k) :
+        print(carre(i))
+
+==
 mplsoluce0==
 paire
 2
@@ -62,6 +70,7 @@ mplsoluce3==
 nul
 0
 ==
+
 
 
 
