@@ -50,6 +50,7 @@ CYCLE_ORIENTE_INSTANCE_COURS = [
     (0, 1), (0, 2), (2, 1), (0, 3), (3, 4), (4, 0)
 ]
 
+# graphe du TD 5, exercice 1; A = 0, B = 1, ...
 CYCLE_ORIENTE_INSTANCE_TD = [
     (0, 1), (0, 2), (2, 1), (0, 3), (3, 4), (4, 0)
 ]
