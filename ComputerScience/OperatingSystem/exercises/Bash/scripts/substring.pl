@@ -38,6 +38,14 @@ bm7, sm7 = rand_mot(20, 25), rand_mot(4, 25)
 bm8, sm8 = rand_mot(20, 25), rand_mot(4, 25)
 
 test_bash = [ ["simple", ["ungrandmotici", "mot"], ""],
+ ["aléatoire", [bm1, sm1], gen_output(bm1, sm1)], 
+ ["aléatoire", [bm2, sm2], gen_output(bm2, sm2)], 
+ ["aléatoire", [bm3, sm3], gen_output(bm3, sm3)], 
+ ["aléatoire", [bm4, sm4], gen_output(bm4, sm4)], 
+ ["aléatoire", [bm5, sm5], gen_output(bm5, sm5)], 
+ ["aléatoire", [bm6, sm6], gen_output(bm6, sm6)], 
+ ["aléatoire", [bm7, sm7], gen_output(bm7, sm7)], 
+ ["aléatoire", [bm8, sm8], gen_output(bm8, sm8)], 
  ]
 ==
 
