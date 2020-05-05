@@ -28,14 +28,14 @@ def gen_output(bm, sm):
 def rand_mot(size, variance):
     return "".join([chr(97+randint(0,variance)) for i in range(randint(size//2, size))])
 
-bm1, sm1 = rand_mot(4, 1), rand_mot(2, 1)
-bm2, sm2 = rand_mot(4, 1), rand_mot(2, 1)
-bm3, sm3 = rand_mot(8, 2), rand_mot(4, 2)
-bm4, sm4 = rand_mot(8, 2), rand_mot(4, 2)
-bm5, sm5 = rand_mot(12, 4), rand_mot(6, 4)
-bm6, sm6 = rand_mot(12, 4), rand_mot(6, 4)
-bm7, sm7 = rand_mot(20, 25), rand_mot(4, 25)
-bm8, sm8 = rand_mot(20, 25), rand_mot(4, 25)
+bm1, sm1 = rand_mot(5, 1), rand_mot(2, 1)
+bm2, sm2 = rand_mot(5, 1), rand_mot(2, 1)
+bm3, sm3 = rand_mot(10, 2), rand_mot(3, 2)
+bm4, sm4 = rand_mot(10, 2), rand_mot(3, 2)
+bm5, sm5 = rand_mot(20, 4), rand_mot(3, 4)
+bm6, sm6 = rand_mot(20, 4), rand_mot(3, 4)
+bm7, sm7 = rand_mot(30, 25), rand_mot(3, 25)
+bm8, sm8 = rand_mot(30, 25), rand_mot(3, 25)
 
 test_bash = [ ["simple", ["ungrandmotici", "mot"], gen_output("ungrandmotici", "mot")],
  ["mot vide", ["", "nonvide"], gen_output("", "nonvide")],
