@@ -46,7 +46,6 @@ else :
 
 alphabet = ', '.join(list(alphabet))
 
-message = "L = \\\\{ \{mots qui {{ bla }}  \}{{ mot }} \\\\}"
 ==
 
 #* Texte de l'énoncé
