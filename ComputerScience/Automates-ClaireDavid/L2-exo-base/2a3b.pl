@@ -48,6 +48,7 @@ message = "l'ensemble des mots ayant un nombre de a pair et un nombre de b égal
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text ==
+On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$ .<br/>
 Donnez un automate reconnaissant {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
 <p class="warning-state">
