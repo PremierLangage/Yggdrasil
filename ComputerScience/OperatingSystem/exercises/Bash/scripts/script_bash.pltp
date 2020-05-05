@@ -1,0 +1,36 @@
+#*****************************************************************************
+#  Copyright (C) 2020 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
+#
+#  Distributed under the terms of the GNU General Public License (GPL)
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#    General Public License for more details.
+#
+#  The full text of the GPL is available at:
+#
+#                  http://www.gnu.org/licenses/
+#*****************************************************************************
+
+author=Nicolas Borie
+title=Les scripts bash de l'amour
+
+introduction==
+Cette fiche propose quelques scripts bash. Certains sont standards et 
+d'autres sont plus avancés. Il est globalement conseillé de s'aider un peu 
+du web pour arriver à ses fins. Bon courage avec la syntaxe du plaisir.
+==
+
+
+@ /ComputerScience/OperatingSystem/exercises/Bash/scripts/print_args.pl
+
+@ /ComputerScience/OperatingSystem/exercises/Bash/scripts/check_args_int.pl
+
+@ /ComputerScience/OperatingSystem/exercises/Bash/scripts/binomial.pl
+
+@ /ComputerScience/OperatingSystem/exercises/Bash/scripts/reverse.pl
+
+@ /ComputerScience/OperatingSystem/exercises/Bash/scripts/substring.pl
+
+@ /ComputerScience/OperatingSystem/exercises/Bash/scripts/decimal_to_binary.pl
