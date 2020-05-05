@@ -382,7 +382,7 @@ def aretes_ponderees(graphe):
 
 
 ###############################################################################
-# Wrappers pour des algorithmes de networkx; servent simplement à cacher aux  #
+# Wrappers pour des algorithmes de networkx; servent surtout à cacher aux     #
 # étudiants l'existence de fonctions réalisant ce qu'on leur demande.         #
 ###############################################################################
 
