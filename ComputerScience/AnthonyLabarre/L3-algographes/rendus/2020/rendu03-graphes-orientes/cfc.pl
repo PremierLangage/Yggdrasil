@@ -29,35 +29,11 @@ pltest1==
 [[1, 2, 3], [4], [5, 6, 7, 8, 9], [10, 11, 12, 13, 14]]
 ==
 
-# TODO
 testname2 = Vérifications de composantes_fortement_connexes sur une instance aléatoire
 pltest2==
 >>> from corrlib_graphes import * #
->>> G = Graphe(); G.ajouter_aretes(aretes_ponderees(graphe_connexe_aleatoire_pondere(10))) # initialisation d'une instance aléatoire
->>> poids_solution_optimale = poids_fcpm(G.aretes())
->>> arbre = acpm_kruskal(G); poids_obtenu = sum(poids for *_, poids in arbre.aretes())
->>> if poids_obtenu != poids_solution_optimale:
-...     print("poids obtenu =", poids_obtenu, "; poids optimal =", poids_solution_optimale)
->>> if not est_arbre_couvrant(arbre, G):  # Le résultat est-il bien un arbre couvrant?
-...     print("l'arbre trouvé d'arêtes", arbre.aretes(), "n'est pas un arbre couvrant pour le graphe G de sommets", sorted(G.sommets())) #
-...     if not est_arbre(arbre): # Le résultat est-il bien un arbre?
-...         print("l'arbre trouvé n'est pas un arbre") #
-...         if any(v not in G.sommets() for v in sum((arete[:2] for arete in arbre.aretes()), ())): #
-...             print("certaines extrémités d'arêtes ne sont pas des sommets") #
-==
+>>> G = GrapheOriente(); G.ajouter_arcs(list(graphe_oriente_aleatoire(20).edges())) # initialisation d'une instance aléatoire
 
-
-# Vérifications de acpm_kruskal sur un graphe non connexe
-testname3 = Vérifications de acpm_kruskal sur un graphe non connexe
-pltest3==
->>> from corrlib_graphes import * #
->>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS); G.ajouter_aretes(PRIM_INSTANCE_TD); G.ajouter_aretes(aretes_ponderees(graphe_connexe_aleatoire_pondere(10)))  # initialisation du graphe
->>> poids_solution_optimale = poids_fcpm(G.aretes())
->>> foret = acpm_kruskal(G); poids_obtenu = sum(poids for *_, poids in foret.aretes())
->>> if poids_obtenu != poids_solution_optimale:
-...     print("poids obtenu =", poids_obtenu, "; poids optimal =", poids_solution_optimale)
->>> if not est_foret_couvrante(foret, G):  # Le résultat est-il bien une forêt couvrante?
-...     print("la forêt calculée n'est pas couvrante") #
 ==
 
 # Le grader:
@@ -75,6 +51,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
