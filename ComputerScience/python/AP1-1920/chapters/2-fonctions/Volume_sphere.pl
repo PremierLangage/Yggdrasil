@@ -26,6 +26,7 @@ Vous écrirez un programme demandant à un utilisateur de rentrer un réel, appe
 Naturellement un volume ne peut pas être négatif !
 ==
 before==
+==
 soluce==#|python|
 from math import pi
 
