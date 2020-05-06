@@ -37,7 +37,7 @@ def sauvetage(vt,dt,vs,ds):
 
 ==
 before==
-
+#pourquoi passerpar les heurs et minutes.
 def temps_mis(v,d):
     """retourne le temps en heure mn pour parcourir km à la vitesse v."""
     heure =int(d/v)
@@ -74,6 +74,7 @@ pltest2==
 >>> sauvetage(20,100,200,10)
 True
 ==
+
 
 
 
