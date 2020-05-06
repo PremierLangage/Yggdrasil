@@ -37,7 +37,7 @@ for i in range(7):
 
     n=random.randint(2,19)
     p=Lances_Des(n)
-    f"pltest{i}"=f""">>> Lances_Des({n})\n{p}\n"""
+    globals()[f"pltest{i}"]=f""">>> Lances_Des({n})\n{p}\n"""
 
 ==
 
