@@ -386,7 +386,10 @@ def reconstruire_arbre_oriente(sommets, parents, type_graphe):
     resultat = type_graphe()()
     resultat.ajouter_sommets(sommets)
     
-    pass # TODO
+    for sommet, parent in parents.items():
+        resultat.ajouter_arc(parent, sommet)
+    
+    return resultat
 
 
 def aretes_ponderees(graphe):
