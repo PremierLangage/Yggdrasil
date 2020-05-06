@@ -25,7 +25,7 @@ en faisant appel à la fonction **cube**. <br>
 Vous écrirez un programme demandant à un utilisateur de rentrer un réel, appelant la fonction **volume_sphere** et affichant le résultat.<br>
 Naturellement un volume ne peut pas être négatif !
 ==
-
+before==
 soluce==#|python|
 from math import pi
 
@@ -56,6 +56,7 @@ mplsoluce2==
 Nul
 0
 ==
+
 
 
 
