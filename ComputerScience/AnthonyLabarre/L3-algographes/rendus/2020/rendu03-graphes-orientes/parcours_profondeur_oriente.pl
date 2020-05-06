@@ -16,8 +16,6 @@ text==
 # comment vérifier?
 # 
 
-# TODO énoncé changé, adapter tests!!!!!
-
 # vérif
 
 testname0 = Vérifications de parcours_profondeur_oriente sur l'exemple du TD 5 exercice 1
