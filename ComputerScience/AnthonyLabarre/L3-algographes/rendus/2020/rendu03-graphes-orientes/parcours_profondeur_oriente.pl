@@ -12,7 +12,6 @@ text==
 
 # Les tests: exemples TD, graphe aléatoire
 # TODO? graphe aléatoire fortement connexe, graphe aléatoire faiblement connexe:
-# 
 
 testname0 = Vérifications de parcours_profondeur_oriente sur l'exemple du TD 5 exercice 1
 pltest0==
