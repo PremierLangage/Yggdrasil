@@ -375,6 +375,20 @@ def graphe_oriente_acyclique_aleatoire(nb_sommets, proba_arc=0.5):
     return G
 
 
+def reconstruire_arbre_oriente(sommets, parents, type_graphe):
+    """Renvoie un arbre orienté sur l'ensemble de sommets donné reconstruit sur
+    base des parents fournis en paramètre. Tout type de graphe implémentant la
+    méthode suivante est admis:
+    
+        ajouter_arc(u, v): ajoute un arc entre les sommets u et v
+        ajouter_sommets(iterable): ajoute les sommets de l'itérable au graphe
+     """
+    resultat = type_graphe()()
+    resultat.ajouter_sommets(sommets)
+    
+    pass # TODO
+
+
 def aretes_ponderees(graphe):
     """Renvoie les aretes du graphe munies de leur poids (networkx ne permet
     apparemment pas de le faire directement)."""
@@ -444,4 +458,5 @@ def est_arbre_oriente(graphe_oriente):
     
     """
     return nx.is_arborescence(nx.DiGraph(graphe_oriente.arcs()))
+
 
