@@ -33,6 +33,7 @@ pltest1==
 testname2 = Vérifications de composantes_fortement_connexes sur une instance aléatoire
 pltest2==
 >>> from corrlib_graphes import * #
+>>> import corrlib_graphes.cfc as cfc
 >>> G = GrapheOriente(); G.ajouter_arcs(list(graphe_oriente_aleatoire(20).edges())) # initialisation d'une instance aléatoire
 >>> attendu = sorted(map(sorted, cfc(G)))
 >>> obtenu = sorted(map(sorted, composantes_fortement_connexes(G)))
