@@ -2,7 +2,7 @@ from components import Component
 from customdragdrop import DragDropGroup
 import json, jsonpickle
 from jinja2 import Environment, BaseLoader
-
+import uuid
 
 class PickleEncoder(json.JSONEncoder):
     def default(self, obj):
@@ -91,5 +91,6 @@ def aux_component2(dic):
             for k, item in dic[key].drops.items():
                     name = item.name
                     dic[key].drops[k] = {"cid": item.cid, "name": name, "selector": item.selector}
+
 
 
