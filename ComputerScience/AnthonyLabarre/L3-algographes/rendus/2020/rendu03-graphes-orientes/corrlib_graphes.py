@@ -351,6 +351,7 @@ def graphe_oriente_aleatoire(nb_sommets, proba_arc=0.5):
     :return:
     """
     return nx.generators.fast_gnp_random_graph(
+#        nb_sommets, proba_arete, directed=True
         nb_sommets, proba_arc, directed=True
     )
 
