@@ -377,8 +377,9 @@ def graphe_oriente_acyclique_aleatoire(nb_sommets, proba_arc=0.5):
 
 def reconstruire_arbre_oriente(sommets, parents, type_graphe):
     """Renvoie un arbre orienté sur l'ensemble de sommets donné reconstruit sur
-    base des parents fournis en paramètre. Tout type de graphe implémentant la
-    méthode suivante est admis:
+    base des parents fournis en paramètre. sommets est un itérable de sommets,
+    parents est un dictionnaire dont les clés et les valeurs sont des sommets.
+    Tout type de graphe implémentant les méthodes suivantes est admis:
     
         ajouter_arc(u, v): ajoute un arc entre les sommets u et v
         ajouter_sommets(iterable): ajoute les sommets de l'itérable au graphe
