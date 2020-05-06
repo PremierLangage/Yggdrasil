@@ -31,10 +31,13 @@ def Lances_Des(n):
                 if i + j + k == n:
                     s += 1
     return s
-fron random import randrange
+import random 
+
 for i in range(7):
+
+    n=random.randint(2,19)
     p=Lances_Des(n)
-    globals()[f"pltest{i}"]=f""">>> Lances_Des({n})\n{p}\n"""
+    f"pltest{i}"=f""">>> Lances_Des({n})\n{p}\n"""
 
 ==
 
