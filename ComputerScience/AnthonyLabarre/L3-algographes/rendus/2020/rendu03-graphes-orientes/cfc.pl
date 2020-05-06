@@ -10,6 +10,7 @@ text==
 Écrivez une fonction composantes_fortement_connexes(graphe), renvoyant les composantes fortement connexes d'un graphe orienté sous la forme d'un itérable d'itérables de sommets.
 ==
 
+
 # Les tests:
 testname0 = Vérifications de composantes_fortement_connexes sur l'exemple du cours
 pltest0==
@@ -54,6 +55,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
