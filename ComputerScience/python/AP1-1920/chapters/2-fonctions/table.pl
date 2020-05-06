@@ -62,7 +62,9 @@ x = saisie_entier_str_positif()
 
 table(n,x)
 ==
+before==
 
+==
 mplsoluce0==
 paire
 2
@@ -93,6 +95,7 @@ négatif
 -2
 5
 ==
+
 
 
 
