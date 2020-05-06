@@ -16,6 +16,7 @@ text==
 # comment vérifier?
 # 
 
+# TODO énoncé changé, adapter tests!!!!!
 
 # vérif
 
@@ -73,6 +74,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
