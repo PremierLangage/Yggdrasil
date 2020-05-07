@@ -19,7 +19,7 @@ Rendu 3 : Ce rendu a pour sujet les graphes orientés
     <li>sommets est une liste contenant les sommets du graphe dans l'ordre de fin de visite.
     <li>parents est un dictionnaire ayant pour clés les sommets et pour valeur le parent de chaque sommet dans l'exploration en profondeur effectuée.
 </ul>
-Attention, votre fonction doit être correcte que le graphe soit ou non connexe (faiblement ou fortement). Tous les sommets du graphe doivent donc être listés.
+Attention, votre fonction doit être correcte que le graphe soit ou non connexe (faiblement ou fortement). Tous les sommets du graphe doivent donc être listés. Parents permet de recontruire la forêt d'exploration en profondeur obtenue en utilisant la stratégie de parcours @labarre.
 <li>acpm_kruskal(graphe), qui prend en paramètre un graphe et renvoie la forêt couvrante de poids minimum pour ce graphe en suivant l'algorithme de Kruskal;
 <li>fcpm_prim(graphe), qui prend en paramètre un graphe et renvoie la forêt couvrante de poids minimum pour ce graphe en suivant l'algorithme de Prim.
 </ul>
