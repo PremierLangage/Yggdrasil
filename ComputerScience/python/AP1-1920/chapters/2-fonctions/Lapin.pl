@@ -55,11 +55,11 @@ def lapin(mois):
     ado2=0
     jeune=1
     
-        for i in range(1,mois+1):
-            vieux+=ado2
-            ado2=ado1
-            ado1=jeune
-            jeune=vieux
+    for i in range(1,mois+1):
+        vieux+=ado2
+        ado2=ado1
+        ado1=jeune
+        jeune=vieux
     #return jeune,ado1,ado2,vieux
     return jeune+ado1+ado2+vieux
 
@@ -111,6 +111,7 @@ bb==
                 s+= str(vieux)+" couples de vieux lapins"
             print(s)
 ==
+
 
 
 
