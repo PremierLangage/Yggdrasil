@@ -34,6 +34,7 @@ On fera les doctest suivants :
     >>> lapin(4)
     2
     >>> lapin(43)
+    8407925
     >>> 
 
 plus d'autres ....
