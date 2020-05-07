@@ -402,8 +402,9 @@ def aretes_ponderees(graphe):
 
 # Algorithmes -----------------------------------------------------------------
 def profondeur_dates_fin(graphe_oriente):
-    """Renvoie les dates de fin de visite des sommets du graphe exploré en
-    profondeur.
+    """Renvoie un dictionnaire dont les clés sont les sommets et les valeurs
+    sont les dates de fin de visite des sommets du graphe exploré en
+    profondeur; l
     graphe_oriente peut être de n'importe quel type implémentant:
     
         sommets(): renvoie un itérable contenant les sommets du graphe
