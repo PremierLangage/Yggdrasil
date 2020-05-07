@@ -21,7 +21,6 @@ Rendu 3 : Ce rendu a pour sujet les graphes orientés
 Attention, votre parcours doit respacter l'ordre lexicographique des sommets (@Labarre) et vous devez bien sûr explorer tout le graphe qu'il soit ou non connexe (faiblement ou fortement). Tous les sommets du graphe doivent donc être listés.
 <li>une fonction detection_cycle(graphe), qui renvoie explicitement un cycle du graphe s'il en contient un et None sinon. Le type du cycle renvoyé doit être le même que celui du graphe en entrée.
 <li>une fonction composantes_fortement_connexes(graphe), renvoyant les composantes fortement connexes sous la forme d'un itérable d'itérables de sommets.
-On recommande des ensembles d'ensembles pour des raisons d'efficacité et parce que l'ordre n'importe pas, mais il est permis d'utiliser d'autres types tant que le format demandé est respecté.
 </ul>
 
 Comme on l'a vu au cours, la détection des cycles et des composantes fortement connexes ont toutes deux besoin de variantes du parcours en profondeur.
