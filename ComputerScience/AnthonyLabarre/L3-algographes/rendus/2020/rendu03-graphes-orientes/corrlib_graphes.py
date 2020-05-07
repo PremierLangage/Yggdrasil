@@ -414,7 +414,7 @@ def cfc(graphe_oriente):
     
     """
     return list(
-        nx.strongly_connected_components(nx.DiGraph(graphe_oriente.arcs()))
+        nx.strongly_connected_components(nx.DiGraph(list(graphe_oriente.arcs())))
     )
 
 
@@ -463,6 +463,7 @@ def est_arbre_oriente(graphe_oriente):
     
     """
     return nx.is_arborescence(nx.DiGraph(graphe_oriente.arcs()))
+
 
 
 
