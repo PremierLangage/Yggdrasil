@@ -369,7 +369,7 @@ def graphe_oriente_acyclique_aleatoire(nb_sommets, proba_arc=0.5):
 
     for i in range(nb_sommets-1):
         for j in range(i+1, nb_sommets):
-            if random() < edge_probability:
+            if random() < proba_arc:
                 G.add_edge(i, j)
 
     return G
@@ -502,6 +502,7 @@ def est_arbre_oriente(graphe_oriente):
     
     """
     return nx.is_arborescence(nx.DiGraph(list(graphe_oriente.arcs())))
+
 
 
 
