@@ -4,4 +4,4 @@
 - tester tous les PL --- ok chez anthony
 - créer la feuille récapitulative
 - soigner les messages pour les étudiants
-- accélérer detection_cycle: au lieu de calculer tous les cycles du graphe, vérifier si le résultat est bien un cycle simple du graphe
+v accélérer detection_cycle: au lieu de calculer tous les cycles du graphe, vérifier si le résultat est bien un cycle simple du graphe
