@@ -404,7 +404,9 @@ def aretes_ponderees(graphe):
 def profondeur_dates_fin(graphe_oriente):
     """Renvoie un dictionnaire dont les clés sont les sommets et les valeurs
     sont les dates de fin de visite des sommets du graphe exploré en
-    profondeur; l
+    profondeur. En cas d'ambigüité, les sommets et les successeurs sont
+    examinés dans l'ordre lexicographique.
+    
     graphe_oriente peut être de n'importe quel type implémentant:
     
         sommets(): renvoie un itérable contenant les sommets du graphe
@@ -424,7 +426,7 @@ def profondeur_dates_fin(graphe_oriente):
         nonlocal instant
         deja_visites[sommet] = True
 
-        for prochain in graphe_oriente.successeurs(sommet):
+        for prochain in sorted(graphe_oriente.successeurs(sommet)):
             if not deja_visites[prochain]:
                 parcours_profondeur_oriente(prochain)
 
@@ -501,6 +503,7 @@ def est_arbre_oriente(graphe_oriente):
     
     """
     return nx.is_arborescence(nx.DiGraph(list(graphe_oriente.arcs())))
+
 
 
 
