@@ -1,9 +1,8 @@
 # Imports ---------------------------------------------------------------------
 import os
-import random
 from importlib import import_module
 from platform import system
-from random import choice, randint
+from random import choice, randint, random
 from string import ascii_lowercase
 from subprocess import check_call
 from traceback import format_exc
@@ -280,7 +279,7 @@ def est_foret_couvrante(foret, graphe):
     for arbre in composantes_foret:
         # choisir un sommet aléatoire de l'arbre, qu'on cherchera dans les
         # composantes du graphe pour faire le lien entre les deux
-        sommet = random.choice(list(arbre))
+        sommet = choice(list(arbre))
         for composante in composantes_graphe:
             if sommet in composante.nodes():
                 association[arbre] = composante
@@ -406,7 +405,7 @@ def profondeur_dates_fin(graphe_oriente):
     sont les dates de fin de visite des sommets du graphe exploré en
     profondeur. En cas d'ambigüité, les sommets et les successeurs sont
     examinés dans l'ordre lexicographique.
-    
+
     graphe_oriente peut être de n'importe quel type implémentant:
     
         sommets(): renvoie un itérable contenant les sommets du graphe
