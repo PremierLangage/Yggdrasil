@@ -14,27 +14,89 @@ text==
 
 # Les tests:
 
-# Vérifications basiques de la classe Graphe
-testname0 = Vérifications basiques de la classe Graphe
+## Vérifications basiques de la classe Graphe
+#testname0 = Vérifications basiques de la classe Graphe
+## Tests d'indices non consécutifs pour les sommets => exclusion des listes et matrices d'adjacence
+#pltest0== 
+#>>> G = GrapheOriente()  # Existence d'une classe GrapheOriente
+#>>> G.ajouter_arcs([(0, 2), (1, 0), (1, 2), (2, 3), (3, 1)])  # Ajout d'arcs
+#>>> sorted(G.sommets()) # Vérification de l'ensemble des sommets
+#[0, 1, 2, 3]
+#>>> sorted(map(list, G.arcs())) # Vérification de l'ensemble des arcs
+#[[0, 2], [1, 0], [1, 2], [2, 3], [3, 1]]
+#>>> sorted((v, sorted(G.successeurs(v))) for v in G.sommets()) # Vérification des successeurs
+#[(0, [2]), (1, [0, 2]), (2, [3]), (3, [1])]
+#>>> sorted((v, sorted(G.predecesseurs(v))) for v in G.sommets()) # Vérification des prédécesseurs
+#[(0, [1]), (1, [3]), (2, [0, 1]), (3, [2])]
+#>>> sorted((v, G.degre_entrant(v)) for v in G.sommets())  # Degrés entrants
+#[(0, 1), (1, 1), (2, 2), (3, 1)]
+#>>> sorted((v, G.degre_sortant(v)) for v in G.sommets())  # Degrés sortants
+#[(0, 1), (1, 2), (2, 1), (3, 1)]
+#==
+
+testname0 = Vérifications de la classe Graphe
 # Tests d'indices non consécutifs pour les sommets => exclusion des listes et matrices d'adjacence
 pltest0== 
->>> G = GrapheOriente()  # Existence d'une classe GrapheOriente
->>> G.ajouter_arcs([(0, 2), (1, 0), (1, 2), (2, 3), (3, 1)])  # Ajout d'arcs
+>>> G = GrapheOriente(); G.ajouter_arcs(CFC_INSTANCE_TD) # initialisation de l'instance du TD
 >>> sorted(G.sommets()) # Vérification de l'ensemble des sommets
-[0, 1, 2, 3]
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 >>> sorted(map(list, G.arcs())) # Vérification de l'ensemble des arcs
-[[0, 2], [1, 0], [1, 2], [2, 3], [3, 1]]
+[[1, 2], [1, 3], [2, 1], [3, 1], [3, 5], [4, 1], [4, 2], [4, 11], [4, 12], [5, 6], [6, 7], [6, 9], [7, 9], [8, 5], [8, 10], [9, 8], [9, 10], [9, 13], [10, 11], [10, 13], [11, 12], [12, 10], [12, 14], [13, 12], [14, 13]]
+>>> G.contient_arc(12,10)
+True
+>>> G.contient_arc(10,12)
+False
+>>> G.contient_arc(10,42)
+False
+>>> G.contient_arc(100,42)
+False
+>>> G.contient_sommet(9)
+True
+>>> G.contient_sommet(4)
+True
+>>> G.contient_sommet(0)
+False
+>>> G.contient_sommet(42)
+False
+>>> G.retirer_sommet(6); sorted(G.sommets()) # Vérification de l'ensemble des sommets après suppression de 6
+[1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14]
+>>> sorted(map(list, G.arcs())) # Vérification de l'ensemble des arcs
+[[1, 2], [1, 3], [2, 1], [3, 1], [3, 5], [4, 1], [4, 2], [4, 11], [4, 12], [7, 9], [8, 5], [8, 10], [9, 8], [9, 10], [9, 13], [10, 11], [10, 13], [11, 12], [12, 10], [12, 14], [13, 12], [14, 13]]
+>>> G.nombre_sommets()
+13
+>>> G.nombre_arcs()
+22
+>>> G.retirer_sommets([12,10]); sorted((v, sorted(G.predecesseurs(v))) for v in G.sommets()) # suppression de 10 et 12 et vérification des prédécesseurs
+[(1, [2, 3, 4]), (2, [1, 4]), (3, [1]), (4, []), (5, [3, 8]), (7, []), (8, [9]), (9, [7]), (11, [4]), (13, [9, 14]), (14, [])]
 >>> sorted((v, sorted(G.successeurs(v))) for v in G.sommets()) # Vérification des successeurs
-[(0, [2]), (1, [0, 2]), (2, [3]), (3, [1])]
->>> sorted((v, sorted(G.predecesseurs(v))) for v in G.sommets()) # Vérification des prédécesseurs
-[(0, [1]), (1, [3]), (2, [0, 1]), (3, [2])]
->>> sorted((v, G.degre_entrant(v)) for v in G.sommets())  # Degrés entrants
-[(0, 1), (1, 1), (2, 2), (3, 1)]
->>> sorted((v, G.degre_sortant(v)) for v in G.sommets())  # Degrés sortants
-[(0, 1), (1, 2), (2, 1), (3, 1)]
+[(1, [2, 3]), (2, [1]), (3, [1, 5]), (4, [1, 2, 11]), (5, []), (7, [9]), (8, [5]), (9, [8, 13]), (11, []), (13, []), (14, [13])]
+>>> sorted((v, G.degre_entrant(v)) for v in G.sommets()) # Degrés entrants
+[(1, 3), (2, 2), (3, 1), (4, 0), (5, 2), (7, 0), (8, 1), (9, 1), (11, 1), (13, 2), (14, 0)]
+>>> sorted((v, G.degre_sortant(v)) for v in G.sommets()) # Degrés sortants
+[(1, 2), (2, 1), (3, 2), (4, 3), (5, 0), (7, 1), (8, 1), (9, 2), (11, 0), (13, 0), (14, 1)]
+>>> sorted(G.voisins(1)) # voisins de 1
+[2, 3, 4]
+>>> sorted(G.voisins(9)) # voisins de 9
+[7, 8, 13]
+>>> sorted(G.voisins(7)) # voisins de 7
+[9]
+>>> G.retirer_sommet(9);sorted(G.voisins(7)) # retirer 9 et test de voisins de 7
+[]
+>>> G.retirer_arc(3,1);sorted(map(list, G.arcs())) # Test de retirer_arc
+[[1, 2], [1, 3], [2, 1], [3, 5], [4, 1], [4, 2], [4, 11], [8, 5], [14, 13]]
+>>> G.retirer_arcs([(4,1),(8,5),(14,13)]);sorted(map(list, G.arcs()))
+[[1, 2], [1, 3], [2, 1], [3, 5], [4, 2], [4, 11]] # Test de retirer_arcs
+>>> G = GrapheOriente(); G.ajouter_arcs(CFC_INSTANCE_TD); G_induit = G.sous_graphe_induit([3,5,8,6,9,7]) # sous graphe induit connexe
+>>> sorted(G_induit.sommets())
+[3, 5, 6, 7, 8, 9]
+>>> sorted(G_induit.arcs())
+[(3, 5), (5, 6), (6, 7), (6, 9), (7, 9), (8, 5), (9, 8)]
+>>> G_induit = G.sous_graphe_induit([4,3,13,12,11,6,7]); # Sous graphe induit non connexe
+>>> sorted(G_induit.sommets())
+[3, 4, 6, 7, 11, 12, 13]
+>>> sorted(G_induit.arcs())
+[(4, 11), (4, 12), (6, 7), (11, 12), (13, 12)]
 ==
-
-
 
 # Le grader:
 #@ /grader/evaluator.py [grader.py]
@@ -48,6 +110,4 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
-
-
 
