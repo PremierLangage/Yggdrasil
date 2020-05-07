@@ -37,7 +37,7 @@ text==
 testname0 = Vérifications de la classe Graphe
 # Tests d'indices non consécutifs pour les sommets => exclusion des listes et matrices d'adjacence
 pltest0== 
->>> from corrlib_graphes import CFC_INSTANCE_TD#
+>>> from corrlib_graphes import CFC_INSTANCE_TD #
 >>> G = GrapheOriente(); G.ajouter_arcs(CFC_INSTANCE_TD) # initialisation de l'instance du TD
 >>> sorted(G.sommets()) # Vérification de l'ensemble des sommets
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
@@ -111,4 +111,5 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
