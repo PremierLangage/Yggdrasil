@@ -34,7 +34,7 @@ text==
 #[(0, 1), (1, 2), (2, 1), (3, 1)]
 #==
 
-testname0 = Vérifications de la classe Graphe
+testname0 = Vérifications de la classe GrapheOriente
 # Tests d'indices non consécutifs pour les sommets => exclusion des listes et matrices d'adjacence
 pltest0== 
 >>> from corrlib_graphes import CFC_INSTANCE_TD #
