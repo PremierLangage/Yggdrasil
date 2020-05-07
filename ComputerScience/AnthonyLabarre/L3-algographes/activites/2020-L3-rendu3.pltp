@@ -7,10 +7,13 @@ introduction ==
  Les zones de tests sont indépendantes donc vous pouvez les utiliser dans l'ordre que vous voulez. 
  Le dernier jeu de tests porte sur tous les points demandés dans le rendu.
 
+ Dans chaque zone de test, vous devez fournir au moins la classe <strong>GrapheOriente</strong> et le code des fonctions demandées. Mais vous pouvez copier-coller tout votre rendu. Le test se charge de trouver ce dont il a besoin.
+
  Vous êtes les beta testeurs de cette zone de test ;-) donc soyez bienveillants et n'hésitez pas à nous contacter si vous trouvez des bugs.
 ==
 
 #@../rendus/2020/graphe_oriente.pl
+
 
 
 
