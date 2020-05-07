@@ -18,7 +18,7 @@ pltest0==
 >>> from graphe_oriente import *
 >>> from corrlib_graphes import * #
 >>> G = GrapheOriente(); G.ajouter_arcs(CYCLE_ORIENTE_INSTANCE_TD) # initialisation de l'instance du TD
->>> sommets, parents = mon_parcours_profondeur_oriente(G)
+>>> sommets, parents = parcours_profondeur_oriente(G)
 >>> foret = reconstruire_arbre_oriente(sommets, parents, GrapheOriente)
 >>> sorted(foret.sommets()) == sorted(G.sommets())  # tous les sommets sont-ils couverts?
 True
