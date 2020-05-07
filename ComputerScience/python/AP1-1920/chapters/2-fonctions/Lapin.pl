@@ -20,8 +20,8 @@ de la même manière.<br>
 1er octobre : 1 couple de lapins d’un mois<br>
 1er novembre : 1 couple de lapins de deux  mois<br>
 1er décembre : 1 couple de jeunes lapins ,  1 couple de vieux<br>
-1er janvier : 1 couple de jeunes lapins ,1 couple de  lapins d’un mois  2 couples de vieux, soit 10 lapins.<br>
-1er février : 2 couple de jeunes lapins ,1 couple de  lapins d’un mois et 1 couple de lapins de deux mois  et 3 couples de vieux, soit 14 lapins.<br>
+1er janvier : 1 couple de jeunes lapins ,1 couple de  lapins d’un mois  1 couple de vieux, soit 3 couples.<br>
+1er février : 1  couple de jeunes lapins ,1 couple de  lapins d’un mois et 1 couple de lapins de deux mois  et 1 couples de vieux, soit 4 couples.<br>
 
 <br>
 Ecrire une fontion `lapin(mois)` qui reçoit un entier décrivant le nombre de mois
@@ -34,7 +34,6 @@ On fera les doctest suivants :
     >>> lapin(4)
     2
     >>> lapin(43)
-    5736961
     >>> 
 
 plus d'autres ....
@@ -55,8 +54,7 @@ def lapin(mois):
     ado2=0
     jeune=1
     
-    if mois>1:
-        for i in range(1,mois):
+        for i in range(1,mois+1):
             vieux+=ado2
             ado2=ado1
             ado1=jeune
@@ -112,6 +110,7 @@ bb==
                 s+= str(vieux)+" couples de vieux lapins"
             print(s)
 ==
+
 
 
 
