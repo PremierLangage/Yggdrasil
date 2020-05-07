@@ -449,7 +449,7 @@ def cycles_simples(graphe_oriente):
     """
     return [
         set(zip(cycle, cycle[1:] + cycle[:1]))
-        for cycle in nx.simple_cycles(nx.DiGraph(graphe_oriente.arcs()))
+        for cycle in nx.simple_cycles(nx.DiGraph(list(graphe_oriente.arcs())))
     ]
 
 
@@ -462,7 +462,7 @@ def est_arbre_oriente(graphe_oriente):
         arcs(): renvoie un itérable d'arcs sous la forme de couples de sommets
     
     """
-    return nx.is_arborescence(nx.DiGraph(graphe_oriente.arcs()))
+    return nx.is_arborescence(nx.DiGraph(list(graphe_oriente.arcs())))
 
 
 
