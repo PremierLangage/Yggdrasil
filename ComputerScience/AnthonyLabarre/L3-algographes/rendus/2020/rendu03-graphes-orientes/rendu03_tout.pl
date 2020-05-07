@@ -25,8 +25,6 @@ Attention, votre parcours doit respacter l'ordre lexicographique des sommets (@L
 
 Comme on l'a vu au cours, la détection des cycles et des composantes fortement connexes ont toutes deux besoin de variantes du parcours en profondeur.
 Réfléchissez bien à la manière dont vous allez les implémenter pour éviter au maximum de dupliquer votre code.
-
-Vous rendrez un seul fichier contenant votre classe GrapheOriente et toutes les fonctions demandées.
 ==
 
 # Mon code
