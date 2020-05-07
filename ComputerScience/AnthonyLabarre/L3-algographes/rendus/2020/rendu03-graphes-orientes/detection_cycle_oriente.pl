@@ -20,7 +20,6 @@ pltest0==
 [(0, 3), (3, 4), (4, 0)]
 ==
 
-# TODO: graphe aléatoire
 testname1 = Vérifications de detection_cycle sur l'exemple du TD
 pltest1==
 >>> from corrlib_graphes import * #
@@ -45,7 +44,7 @@ pltest2==
 testname3 = Vérifications de detection_cycle sur un graphe orienté aléatoire
 pltest3==
 >>> from corrlib_graphes import * #
->>> G = GrapheOriente(); G.ajouter_arcs(list(graphe_oriente_aleatoire(20).edges())) # initialisation d'un graphe orienté aléatoire
+>>> G = GrapheOriente(); G.ajouter_arcs(list(graphe_oriente_aleatoire(10).edges())) # initialisation d'un graphe orienté aléatoire
 >>> obtenu = detection_cycle(G)
 >>> cycles_possibles = cycles_simples(G)
 >>> if obtenu is None:
@@ -53,6 +52,7 @@ pltest3==
 ...         print("la fonction ne trouve pas de cycle alors que le graphe en contient", len(cycles_possibles))
 ... else:
 ...     if cycles_possibles:
+...         arcs_cycle_trouve = set(obtenu.arcs())
 ...         if arcs_cycle_trouve not in cycles_possibles:
 ...             print("les arcs identifiés:", arcs_cycle_trouve, "ne constituent pas un cycle du graphe")
 ...             print("cycles possibles:", cycles_possibles)
@@ -77,6 +77,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
