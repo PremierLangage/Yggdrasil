@@ -409,7 +409,6 @@ def profondeur_dates_fin(graphe_oriente):
     
         sommets(): renvoie un itérable contenant les sommets du graphe
         successeurs(v): renvoie un itérable contenant les successeurs de v
-
     """
     # les structures de données dont on aura besoin
     sommets = sorted(graphe_oriente.sommets())
