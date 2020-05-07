@@ -7,7 +7,7 @@ builder= /builder/before.py
 author = Anthony Labarre
 title = Graphe orienté non pondéré
 text==
-Écrivez une classe GrapheOriente implémentant un graphe orienté non pondéré.
+Écrivez une classe <strong>GrapheOriente</strong> implémentant un graphe orienté non pondéré.
 ==
 
 
@@ -111,5 +111,6 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
