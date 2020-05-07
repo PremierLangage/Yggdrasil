@@ -431,7 +431,7 @@ def cfc_graphes(graphe_oriente):
     """
     resultat = list()
     
-    for sous_graphe_nx in nx.strongly_connected_component_subgraphs(nx.DiGraph(graphe_oriente.arcs())):
+    for sous_graphe_nx in nx.strongly_connected_component_subgraphs(nx.DiGraph(list(graphe_oriente.arcs()))):
         sous_graphe = type(graphe_oriente)()
         sous_graphe.ajouter_arcs(sous_graphe_nx.edges())
         resultat.append(sous_graphe)
