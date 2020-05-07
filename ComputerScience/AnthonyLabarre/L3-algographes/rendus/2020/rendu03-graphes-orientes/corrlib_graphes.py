@@ -51,8 +51,8 @@ CYCLE_ORIENTE_INSTANCE_COURS = [
 
 # graphe du TD 5, exercice 1; A = 0, B = 1, ...
 CYCLE_ORIENTE_INSTANCE_TD = [
-    (0, 1), (0, 5), (0, 6), (2, 0), (3, 5), (4, 3), (5, 4), (6, 2), (6, 9), 
-    (7, 8), (8, 7), (9, 10), (9, 11), (9, 12), (11, 6), (11, 12), (12, 11)
+    (0, 1), (0, 5), (0, 6), (2, 0), (3, 5), (4, 3), (5, 4), (6, 2), (6, 4), 
+    (6, 9), (7, 6), (7, 8), (8, 7), (9, 10), (9, 11), (9, 12), (11, 6), (11, 12), (12, 11)
 ]
 
 
@@ -383,8 +383,9 @@ def reconstruire_arbre_oriente(sommets, parents, type_graphe):
     
         ajouter_arc(u, v): ajoute un arc entre les sommets u et v
         ajouter_sommets(iterable): ajoute les sommets de l'itérable au graphe
-     """
-    resultat = type_graphe()()
+    """
+    #print(type(type_graphe))
+    resultat = type_graphe()
     resultat.ajouter_sommets(sommets)
     
     for sommet, parent in parents.items():
@@ -405,7 +406,7 @@ def profondeur_dates_fin(graphe_oriente):
     sont les dates de fin de visite des sommets du graphe exploré en
     profondeur. En cas d'ambigüité, les sommets et les successeurs sont
     examinés dans l'ordre lexicographique.
-
+    
     graphe_oriente peut être de n'importe quel type implémentant:
     
         sommets(): renvoie un itérable contenant les sommets du graphe
@@ -455,6 +456,27 @@ def cfc(graphe_oriente):
     return list(
         nx.strongly_connected_components(nx.DiGraph(list(graphe_oriente.arcs())))
     )
+
+
+def cc_graphes(graphe_oriente):
+    """Renvoie les composantes faiblement connexes d'un graphe orienté sous la
+    forme de sous-graphes. Les types des sous-graphes coïncident avec le type
+    d'entrée.
+    graphe_oriente peut être de n'importe quel type implémentant:
+
+        arcs(): renvoie un itérable d'arcs sous la forme de couples de sommets
+        ajouter_arcs(iterable): ajoute les couples de sommets de l'itérable
+            comme arcs au graphe
+    
+    """
+    resultat = list()
+    
+    for sous_graphe_nx in nx.weakly_connected_component_subgraphs(nx.DiGraph(list(graphe_oriente.arcs()))):
+        sous_graphe = type(graphe_oriente)()
+        sous_graphe.ajouter_arcs(sous_graphe_nx.edges())
+        resultat.append(sous_graphe)
+        
+    return resultat
 
 
 def cfc_graphes(graphe_oriente):
