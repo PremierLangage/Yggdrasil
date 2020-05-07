@@ -41,7 +41,7 @@ testname1 = Vérifications de parcours_profondeur_oriente sur l'exemple du TD 5 
 pltest1==
 >>> from corrlib_graphes import * #
 >>> G = GrapheOriente(); G.ajouter_arcs(CFC_INSTANCE_TD) # initialisation de l'instance du TD
->>> sommets, parents = mon_parcours_profondeur_oriente(G)
+>>> sommets, parents = parcours_profondeur_oriente(G)
 >>> foret = reconstruire_arbre_oriente(sommets, parents, GrapheOriente)
 >>> sorted(foret.sommets()) == sorted(G.sommets())  # tous les sommets sont-ils couverts?
 True
