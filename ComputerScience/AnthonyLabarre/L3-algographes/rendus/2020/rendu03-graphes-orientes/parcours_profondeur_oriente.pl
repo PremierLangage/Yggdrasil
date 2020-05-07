@@ -64,7 +64,7 @@ testname2 = Vérifications de parcours_profondeur_oriente sur un graphe orienté
 pltest2==
 >>> from corrlib_graphes import * #
 >>> G = GrapheOriente(); G.ajouter_arcs(graphe_oriente_aleatoire(10).edges()) # initialisation d'un graphe orienté aléatoire
->>> sommets, parents = mon_parcours_profondeur_oriente(G)
+>>> sommets, parents = parcours_profondeur_oriente(G)
 >>> foret = reconstruire_arbre_oriente(sommets, parents, GrapheOriente)
 >>> sorted(foret.sommets()) == sorted(G.sommets())  # tous les sommets sont-ils couverts?
 True
