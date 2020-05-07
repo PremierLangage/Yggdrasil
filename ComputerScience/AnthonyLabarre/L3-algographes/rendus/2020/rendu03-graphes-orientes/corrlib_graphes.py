@@ -400,6 +400,45 @@ def aretes_ponderees(graphe):
     return [(u, v, graphe[u][v]['weight']) for u, v in graphe.edges()]
 
 
+# Algorithmes -----------------------------------------------------------------
+
+def profondeur_dates_fin(graphe_oriente):
+    """Renvoie les dates de fin de visite des sommets du graphe exploré en
+    profondeur.
+    graphe_oriente peut être de n'importe quel type implémentant:
+    
+        sommets(): renvoie un itérable contenant les sommets du graphe
+        successeurs(v): renvoie un itérable contenant les successeurs de v
+
+    """
+    # les structures de données dont on aura besoin
+    sommets = sorted(graphe_oriente.sommets())
+    deja_visites = dict.fromkeys(sommets, False)
+    dates = dict.fromkeys(sommets, 0)
+    instant = 0
+
+    def parcours_profondeur_oriente(sommet):
+        """Fonction récursive explorant le graphe orienté en profondeur à
+        partir d'un sommet donné. Renvoie True si l'on a trouvé un cycle, False
+        sinon."""
+        # dire à Python que l'instant dont on parle est celui défini plus haut
+        nonlocal instant
+        deja_visites[sommet] = True
+
+        for prochain in graphe_oriente.successeurs(sommet):
+            if not deja_visites[prochain]:
+                parcours_profondeur_oriente(prochain)
+
+        dates[sommet] = instant  # noter la date de fin de visite
+        instant += 1
+
+    # exploration en profondeur du graphe
+    for v in sommets:
+        if not deja_visites[v]:
+            parcours_profondeur_oriente(v)
+
+    return dates
+
 ###############################################################################
 # Wrappers pour des algorithmes de networkx; servent surtout à cacher aux     #
 # étudiants l'existence de fonctions réalisant ce qu'on leur demande.         #
