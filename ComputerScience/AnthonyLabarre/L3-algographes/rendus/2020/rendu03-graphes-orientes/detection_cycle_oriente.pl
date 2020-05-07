@@ -46,19 +46,16 @@ pltest3==
 >>> from corrlib_graphes import * #
 >>> G = GrapheOriente(); G.ajouter_arcs(list(graphe_oriente_aleatoire(10).edges())) # initialisation d'un graphe orienté aléatoire
 >>> obtenu = detection_cycle(G)
->>> cycles_possibles = cycles_simples(G)
+>>> mon_cycle = cycle_oriente(G)
 >>> if obtenu is None:
-...     if cycles_possibles:
-...         print("la fonction ne trouve pas de cycle alors que le graphe en contient", len(cycles_possibles))
+...     if mon_cycle:
+...         print("la fonction ne trouve pas de cycle alors que le graphe en contient un formé par les arcs", mon_cycle.arcs())
 ... else:
-...     if cycles_possibles:
-...         arcs_cycle_trouve = set(obtenu.arcs())
-...         if arcs_cycle_trouve not in cycles_possibles:
-...             print("les arcs identifiés:", arcs_cycle_trouve, "ne constituent pas un cycle du graphe")
-...             print("cycles possibles:", cycles_possibles)
+...     if mon_cycle:
+...         if not est_cycle_oriente(obtenu, G):
+...             print("le cycle identifié n'est pas valide")
 ...     else:
 ...         print("la fonction identifie le cycle", obtenu.arcs(), " mais le graphe est acyclique")
-...         print("ses arcs:", G.arcs())
 ==
 
 
@@ -77,6 +74,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
