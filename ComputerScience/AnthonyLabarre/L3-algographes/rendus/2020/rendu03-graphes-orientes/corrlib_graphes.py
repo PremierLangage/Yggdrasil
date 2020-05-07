@@ -488,6 +488,26 @@ def foret_parcours_profondeur_oriente(graphe_oriente):
     return reconstruire_arbre_oriente(sommets, parents, type(graphe_oriente))
 
 
+def est_cycle_oriente(cycle, graphe_oriente):
+    """Renvoie True si le cycle passé en paramètre est bien un cycle du graphe orienté
+    donné.
+    graphe_oriente et cycle doivent être du même type implémentant:
+
+        arcs(): renvoie un itérable d'arcs sous la forme de couples de sommets    
+    """
+    assert type(cycle) == type(graphe_oriente)
+    sommets_cycle = sum(cycle.arcs(), ())
+    return (
+        # a-t-on bien un cycle?
+        sorted(arc[0] for arc in cycle.arcs()) == sorted(
+            arc[0] for arc in cycle.arcs()
+        ) and 
+        # le cycle contient-il bien chacun de ses sommets une seule fois?
+        set(map(sommets_cycle.count, sommets_cycle)) == {2} and
+        # tous ses arcs appartiennent-ils au graphe?
+        set(cycle.arcs()) <= set(graphe_oriente.arcs())
+    )
+
 ###############################################################################
 # Wrappers pour des algorithmes de networkx; servent surtout à cacher aux     #
 # étudiants l'existence de fonctions réalisant ce qu'on leur demande.         #
@@ -562,6 +582,25 @@ def cycles_simples(graphe_oriente):
     ]
 
 
+def cycle_oriente(graphe_oriente):
+    """Renvoie un cycle simple (sans répétition de sommets) d'un graphe
+    orienté, ou None s'il n'y en a pas.
+    graphe_oriente peut être de n'importe quel type implémentant:
+
+        arcs(): renvoie un itérable d'arcs sous la forme de couples de sommets
+    
+    """
+    try:
+        cycle = nx.find_cycle(nx.DiGraph(list(graphe_oriente.arcs())))
+        resultat = type(graphe_oriente)()
+        resultat.ajouter_arcs(cycle)
+        return resultat
+        
+    except nx.exception.NetworkXNoCycle:
+        return None
+
+
+
 def est_arbre_oriente(graphe_oriente):
     """
     Renvoie True si le graphe passé en paramètre est bien un arbre orienté,
@@ -572,4 +611,8 @@ def est_arbre_oriente(graphe_oriente):
     
     """
     return nx.is_arborescence(nx.DiGraph(list(graphe_oriente.arcs())))
+
+
+
+
 
