@@ -401,7 +401,6 @@ def aretes_ponderees(graphe):
 
 
 # Algorithmes -----------------------------------------------------------------
-
 def profondeur_dates_fin(graphe_oriente):
     """Renvoie les dates de fin de visite des sommets du graphe exploré en
     profondeur.
