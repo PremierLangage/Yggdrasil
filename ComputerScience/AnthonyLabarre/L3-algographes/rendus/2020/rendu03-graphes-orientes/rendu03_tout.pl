@@ -6,11 +6,9 @@ extends= /ComputerScience/python/template/pltestblonde.pl
 builder= /builder/before.py
 
 author = Anthony Labarre
-title = Tester tout d'un coup!
+title = Rendu 3 - Tester tout d'un coup!
 text==
-Rendu 3 : Ce rendu a pour sujet les graphes orientés
-
-Écrivezles composantes suivantes (toutes les fonctions prennent des graphes orientés en paramètre):
+Écrivez les composantes suivantes (toutes les fonctions prennent des graphes orientés en paramètre):
 <ul>
 <li>une classe <strong>GrapheOriente</strong> implémentant l'interface décrite au cours;
 <li>une fonction parcours_profondeur_oriente(graphe), qui renvoie un couple (sommets, parents) dans cet ordre, où:
