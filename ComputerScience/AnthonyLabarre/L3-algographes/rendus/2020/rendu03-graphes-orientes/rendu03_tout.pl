@@ -1,7 +1,6 @@
 
 # Test d'une classe Graphe implémentant un graphe pondéré non orienté.
 @ /utils/sandboxio.py
-@ unionfind.py
 @ corrlib_graphes.py 
 extends= /ComputerScience/python/template/pltestblonde.pl
 builder= /builder/before.py
@@ -19,8 +18,7 @@ Rendu 3 : Ce rendu a pour sujet les graphes orientés
     <li>sommets est une liste contenant les sommets du graphe dans l'ordre de fin de visite.
     <li>parents est un dictionnaire ayant pour clés les sommets et pour valeur le parent de chaque sommet dans l'exploration en profondeur effectuée.
 </ul>
-Attention, votre fonction doit être correcte que le graphe soit ou non connexe (faiblement ou fortement). Tous les sommets du graphe doivent donc être listés. 
-Parents permet de recontruire la forêt d'exploration en profondeur obtenue en utilisant la stratégie de parcours @labarre.
+Attention, votre parcours doit respacter l'ordre lexicographique des sommets (@Labarre) et vous devez bien sûr explorer tout le graphe qu'il soit ou non connexe (faiblement ou fortement). Tous les sommets du graphe doivent donc être listés.
 <li>une fonction detection_cycle(graphe), qui renvoie explicitement un cycle du graphe s'il en contient un et None sinon. Le type du cycle renvoyé doit être le même que celui du graphe en entrée.
 <li>une fonction composantes_fortement_connexes(graphe), renvoyant les composantes fortement connexes sous la forme d'un itérable d'itérables de sommets.
 On recommande des ensembles d'ensembles pour des raisons d'efficacité et parce que l'ordre n'importe pas, mais il est permis d'utiliser d'autres types tant que le format demandé est respecté.
