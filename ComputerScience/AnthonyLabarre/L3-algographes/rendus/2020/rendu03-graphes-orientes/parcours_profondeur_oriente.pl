@@ -25,6 +25,10 @@ pltest0==
 ...         print("le sous-graphe suivant de la forêt n'est pas un arbre orienté")
 ...         print("    sommets:", arbre.sommets())
 ...         print("    arcs:   ", arbre.arcs())
+>>> dates_attendues = profondeur_dates_fin(G); ordre_attendu = sorted(dates_attendues, key=dates_attendues.__getitem__)
+>>> if sommets != ordre_attendu:
+...     print("ordre attendu:", ordre_attendu) 
+...     print("ordre obtenu: ", sommets) 
 ==
 
 testname1 = Vérifications de parcours_profondeur_oriente sur l'exemple du TD 5 exercice 3
@@ -39,6 +43,10 @@ pltest1==
 ...         print("le sous-graphe suivant de la forêt n'est pas un arbre orienté")
 ...         print("    sommets:", arbre.sommets())
 ...         print("    arcs:   ", arbre.arcs())
+>>> dates_attendues = profondeur_dates_fin(G); ordre_attendu = sorted(dates_attendues, key=dates_attendues.__getitem__)
+>>> if sommets != ordre_attendu:
+...     print("ordre attendu:", ordre_attendu) 
+...     print("ordre obtenu: ", sommets) 
 ==
 
 testname2 = Vérifications de parcours_profondeur_oriente sur un graphe orienté aléatoire
@@ -53,6 +61,10 @@ pltest2==
 ...         print("le sous-graphe suivant de la forêt n'est pas un arbre orienté")
 ...         print("    sommets:", arbre.sommets())
 ...         print("    arcs:   ", arbre.arcs())
+>>> dates_attendues = profondeur_dates_fin(G); ordre_attendu = sorted(dates_attendues, key=dates_attendues.__getitem__)
+>>> if sommets != ordre_attendu:
+...     print("ordre attendu:", ordre_attendu) 
+...     print("ordre obtenu: ", sommets) 
 ==
 
 # Le grader:
