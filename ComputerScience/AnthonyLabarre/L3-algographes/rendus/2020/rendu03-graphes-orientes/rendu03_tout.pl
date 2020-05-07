@@ -22,12 +22,6 @@ Rendu 2 : Arbres (et forêts) couvrants de poids minimum
 </ul>
 ==
 
-for_dr_dont_touch==
-class Graphe:
-    def sommets(dummy):
-        return [0, 1, 2, 3]
-==
-
 # Mon code
 before==
 import corrlib_graphes
