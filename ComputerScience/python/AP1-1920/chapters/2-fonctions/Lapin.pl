@@ -1,9 +1,8 @@
 
 
 
-extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
-@ /builder/before.py [builder.py]
-
+#extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
+#@ /builder/before.py [builder.py]
 
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
@@ -111,6 +110,7 @@ bb==
                 s+= str(vieux)+" couples de vieux lapins"
             print(s)
 ==
+
 
 
 
