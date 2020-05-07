@@ -440,6 +440,54 @@ def profondeur_dates_fin(graphe_oriente):
 
     return dates
 
+
+def mon_parcours_profondeur_oriente(graphe_oriente):
+    """Renvoie les sommets du graphe orienté exploré en profondeur triés par
+    date de fin de visite, et un dictionnaire parents donnant le parent de
+    chaque sommet dans cette exploration.
+    graphe_oriente peut être de n'importe quel type implémentant:
+    
+        sommets(): renvoie un itérable des sommets du graphe
+        successeurs(v): renvoie un itérable contenant les successeurs de v
+    
+    """
+    # les structures de données dont on aura besoin
+    sommets = graphe_oriente.sommets()
+    deja_visites = dict.fromkeys(sommets, False)
+    dates = dict.fromkeys(sommets, 0)
+    parents = dict()
+    instant = 0
+
+    def parcours_profondeur_oriente(sommet):
+        """Fonction récursive explorant le graphe orienté en profondeur à
+        partir d'un sommet donné. Renvoie True si l'on a trouvé un cycle, False
+        sinon."""
+        # dire à Python que l'instant dont on parle est celui défini plus haut
+        nonlocal instant
+        deja_visites[sommet] = True
+
+        for prochain in sorted(graphe_oriente.successeurs(sommet)):
+            if not deja_visites[prochain]:
+                parents[prochain] = sommet
+                parcours_profondeur_oriente(prochain)
+
+        dates[sommet] = instant  # noter la date de fin de visite
+        instant += 1
+
+    # exploration en profondeur du graphe
+    for v in sorted(sommets):
+        if not deja_visites[v]:
+            parcours_profondeur_oriente(v)
+
+    return sorted(dates, key=dates.__getitem__), parents
+
+
+def foret_parcours_profondeur_oriente(graphe_oriente):
+    """Renvoie la forêt d'exploration en profondeur du graphe orienté."""
+    sommets, parents = mon_parcours_profondeur_oriente(graphe_oriente)
+    return reconstruire_arbre_oriente(sommets, parents, type(graphe_oriente))
+
+
 ###############################################################################
 # Wrappers pour des algorithmes de networkx; servent surtout à cacher aux     #
 # étudiants l'existence de fonctions réalisant ce qu'on leur demande.         #
@@ -524,9 +572,4 @@ def est_arbre_oriente(graphe_oriente):
     
     """
     return nx.is_arborescence(nx.DiGraph(list(graphe_oriente.arcs())))
-
-
-
-
-
 
