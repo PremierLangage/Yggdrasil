@@ -71,17 +71,17 @@ False
 [(1, [2, 3, 4]), (2, [1, 4]), (3, [1]), (4, []), (5, [3, 8]), (7, []), (8, [9]), (9, [7]), (11, [4]), (13, [9, 14]), (14, [])]
 >>> sorted((v, sorted(G.successeurs(v))) for v in G.sommets()) # Vérification des successeurs
 [(1, [2, 3]), (2, [1]), (3, [1, 5]), (4, [1, 2, 11]), (5, []), (7, [9]), (8, [5]), (9, [8, 13]), (11, []), (13, []), (14, [13])]
->>> sorted((v, G.degre_entrant(v)) for v in G.sommets()) # Degrés entrants
+>>> sorted((v, G.degre_entrant(v)) for v in G.sommets()) # Vérification des degrés entrants
 [(1, 3), (2, 2), (3, 1), (4, 0), (5, 2), (7, 0), (8, 1), (9, 1), (11, 1), (13, 2), (14, 0)]
->>> sorted((v, G.degre_sortant(v)) for v in G.sommets()) # Degrés sortants
+>>> sorted((v, G.degre_sortant(v)) for v in G.sommets()) # Vérification des degrés sortants
 [(1, 2), (2, 1), (3, 2), (4, 3), (5, 0), (7, 1), (8, 1), (9, 2), (11, 0), (13, 0), (14, 1)]
->>> sorted(G.voisins(1)) # voisins de 1
+>>> sorted(G.voisins(1)) # Vérification des voisins de 1
 [2, 3, 4]
->>> sorted(G.voisins(9)) # voisins de 9
+>>> sorted(G.voisins(9)) # Vérification des voisins de 9
 [7, 8, 13]
->>> sorted(G.voisins(7)) # voisins de 7
+>>> sorted(G.voisins(7)) # Vérification des voisins de 7
 [9]
->>> G.retirer_sommet(9);sorted(G.voisins(7)) # retirer 9 et test de voisins de 7
+>>> G.retirer_sommet(9);sorted(G.voisins(7)) # Retirer 9 et vérification des voisins de 7
 []
 >>> G.retirer_arc(3,1);sorted(map(list, G.arcs())) # Test de retirer_arc
 [[1, 2], [1, 3], [2, 1], [3, 5], [4, 1], [4, 2], [4, 11], [8, 5], [14, 13]]
