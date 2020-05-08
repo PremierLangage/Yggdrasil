@@ -26,8 +26,8 @@ solution = Automaton.from_regex_nd('a*b(baa|b)*a')
 #viewer_enonce = solution.as_viewer()
 
 #viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
-viewer_enonce = AutomatonDrawer()
-viewer_enonce.automaton = solution
+#viewer_enonce = AutomatonDrawer()
+#viewer_enonce.automaton = solution
 
 #langage solution -- le nom solution est forcé par le template
 
@@ -38,7 +38,8 @@ viewer_enonce.automaton = solution
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text==
-{{ viewer_enonce|component }}
+{{ solution_view|component }}
+<!--{{ viewer_enonce|component }}-->
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez l'automate minimal déterministe complet reconnaissant le langage {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
