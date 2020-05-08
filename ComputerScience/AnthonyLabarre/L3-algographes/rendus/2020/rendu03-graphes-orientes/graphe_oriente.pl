@@ -43,13 +43,11 @@ pltest0==
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 >>> sorted(map(list, G.arcs())) # Vérification de l'ensemble des arcs
 [[1, 2], [1, 3], [2, 1], [3, 1], [3, 5], [4, 1], [4, 2], [4, 11], [4, 12], [5, 6], [6, 7], [6, 9], [7, 9], [8, 5], [8, 10], [9, 8], [9, 10], [9, 13], [10, 11], [10, 13], [11, 12], [12, 10], [12, 14], [13, 12], [14, 13]]
->>> G.contient_arc(12,10)
+>>> for (u,v) in [(12,10),(10,42),(100,42)]: # Vérification de contient_arc
+...     G.contient_arc(u,v)
+... 
 True
->>> G.contient_arc(10,12)
 False
->>> G.contient_arc(10,42)
-False
->>> G.contient_arc(100,42)
 False
 >>> G.contient_sommet(9)
 True
