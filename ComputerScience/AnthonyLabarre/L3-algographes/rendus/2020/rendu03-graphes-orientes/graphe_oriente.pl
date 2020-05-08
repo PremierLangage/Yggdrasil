@@ -50,7 +50,7 @@ True
 False
 False
 >>> for s in [9,4,0,42]: # Vérification de contient_sommet
-...     G.contient_sommet(s)
+...     G.contient_sommet(s)#
 ... 
 True
 True
@@ -73,7 +73,7 @@ False
 >>> sorted((v, G.degre_sortant(v)) for v in G.sommets()) # Vérification des degrés sortants
 [(1, 2), (2, 1), (3, 2), (4, 3), (5, 0), (7, 1), (8, 1), (9, 2), (11, 0), (13, 0), (14, 1)]
 >>> for s in [1,9,7]: # Vérification de voisins
-...     sorted(G.voisins(s))
+...     sorted(G.voisins(s))#
 ... 
 [2, 3, 4]
 [7, 8, 13]
