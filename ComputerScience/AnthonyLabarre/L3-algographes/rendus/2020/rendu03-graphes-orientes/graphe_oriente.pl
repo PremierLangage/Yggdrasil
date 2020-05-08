@@ -81,7 +81,7 @@ False
 [7, 8, 13]
 >>> sorted(G.voisins(7)) # Vérification des voisins de 7
 [9]
->>> G.retirer_sommet(9);sorted(G.voisins(7)) # Retirer 9 et vérification des voisins de 7
+>>> G.retirer_sommet(9);sorted(G.voisins(7)) # Suppression de 9 et vérification des voisins de 7
 []
 >>> G.retirer_arc(3,1);sorted(map(list, G.arcs())) #  Vérification de retirer_arc
 [[1, 2], [1, 3], [2, 1], [3, 5], [4, 1], [4, 2], [4, 11], [8, 5], [14, 13]]
