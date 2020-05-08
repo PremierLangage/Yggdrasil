@@ -474,7 +474,7 @@ class Automaton:
         if simple:
             if not Automaton.syntax_simple_regex(regex, alphabet) :
                     raise Exception("Syntax error : this is not a simple regex")        
-            regex = regex.replace('.', '').replace('+', '|').replace('€',epsilon).replace('ε','')
+            regex = regex.replace('.', '').replace('+', '|').replace('€',epsilon).replace('ε',epsilon)
 
         return fado_to_string(reex.str2regexp(regex).nfaGlushkov())
 
