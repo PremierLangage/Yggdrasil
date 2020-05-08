@@ -19,6 +19,7 @@ message = 'a*b(b(aa+€))*a'
 ## TODO donner une seule description du lanage enoncé pour le message et l'automate
 #langage solution -- le nom solution est forcé par le template
 solution = Automaton.from_regex_nd('a*b(baa|b)*a')
+blabla = str(solution)
 #viewer_enonce = solution.as_viewer()
 
 #viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
@@ -34,6 +35,7 @@ viewer_enonce.automaton = solution.to_string_notation()
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text==
+{{ blabla }}
 {{ viewer_enonce|component }}
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez l'automate minimal déterministe complet reconnaissant le langage {{ message }} <br>
