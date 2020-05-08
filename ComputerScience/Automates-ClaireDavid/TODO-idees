@@ -23,6 +23,7 @@ J'ai changé réponse acceptable
 29/04 -- encore des bugs dans le renommage d'état -- pb avec les transitions
 29/04 -- pb d'affichage des automates enoncéé dans certains exos --> dark mode de Chrome
 
+8/5 - est-ce que le format texte des automates a besoin d'accepter des transitions depuis/vers plusieurs états.  en l'état le nom d'un état ne peut pas contenir de virgule
 
 =========
 parse -> construit des exemples cf la documentation de mamadou dans automaton
@@ -90,6 +91,7 @@ pour votre image vous devez lui donner une largeur fixé (voire 100% si c'est ce
      object-fit: cover; /* important pour avoir une image centrée */
    }
 }
+
 
 
 
