@@ -350,6 +350,31 @@ class Automaton:
 
         return Automaton(lego.parse(regex).to_fsm().reduce())
 
+    @staticmethod
+    def from_regex(regex: str, alphabet=None, simple=False):
+        """
+        Creates a minimal deterministic automaton from a regex.
+
+        :param regex a regex where the following metacharacters and formations
+            have their usual meanings: ., *, +, ?, {m}, {m,}, {m,n}, (), |, [], 
+        :param alphabet can be specified for simple regex syntax check
+        :param simple if set to True only simple regex are allowed. See syntax_simple_regex for details
+            . concatenation, + union, * Kleene Star, () capture
+        :return an Automaton instance.
+        :raise TypeError if regex is not a string.
+        """
+
+        if not isinstance(regex, str):
+            raise TypeError('from_regex: Excepted an automaton in regex notation')
+
+        # syntax check for simple expression
+        if simple:
+            if not Automaton.syntax_simple_regex(regex, alphabet) :
+                    raise Exception("Syntax error : this is not a simple regex")        
+            regex = regex.replace('.', '').replace('+', '|').replace('€','').replace('ε','')
+
+        return Automaton(lego.parse(regex).to_fsm().reduce())
+
 #    @staticmethod
 #    def from_regex(regex: str):
 #        """
@@ -1129,6 +1154,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
