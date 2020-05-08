@@ -13,6 +13,108 @@ from automata.fa.nfa import NFA
 
 from components import AutomatonDrawer, AutomatonEditor
 
+import FAdo.fa
+
+def fado_from_string(string_notation):
+    nfa = FAdo.fa.NFA()
+    lines = string_notation.splitlines();
+
+    states: [str] = []
+    initials: [str] = []
+    accepting: [str] = []
+    alphabet: [str] = []
+    transitions = []
+    parseState = None
+
+    parseCounts = {
+        'states' : 0,
+        'initials' : 0,
+        'accepting' : 0,
+        'alphabet' : 0,
+        'transitions' : 0
+    }
+
+    for i, line in enumerate(lines):
+        line = line.strip()
+        if len(line) == 0:
+            continue
+        if line[0] == '#':
+            parseState = line[1:]
+            if parseState not in parseCounts:
+                raise SyntaxError(f'Line {i + 1}: invalid section name '
+                                  f'{parseState}. Must be one of: states, initials, '
+                                  f'accepting, alphabet, transitions.')
+            else:
+                parseCounts[parseState] += 1
+                if parseCounts[parseState] > 1:
+                    raise SyntaxError(f'Line {i + 1}: duplicate section name {parseState}.');
+            continue
+        if parseState is None:
+            raise SyntaxError(f'Line {i + 1}: no #section declared. '
+                              f'Add one section: states, initial, accepting, '
+                              f'alphabet, transitions.')
+        if parseState == 'states':
+            for s in line.split(';'):
+                nfa.addState(s)
+            continue
+        if parseState == 'initials':
+            for s in line.split(';'):
+                nfa.addInitial(nfa.stateIndex(s))
+            continue
+        if parseState == 'accepting':
+            accepting += line.split(';')
+            for s in line.split(';'):
+                nfa.addFinal(nfa.stateIndex(s))
+            continue
+        if parseState == 'alphabet':
+            for letter in line.split(';'):
+                nfa.addSigma(letter)
+            continue
+        if parseState == 'transitions':
+            state, rest = line.split(':');
+            fromStates = state.split(',')
+            parts = rest.split(';')
+            symbols: [str] = [];
+            toStates: [str] = []
+            for j in range(len(parts)):
+                left, right = parts[j].split('>');
+                symbols = left.split(',');
+                toStates = right.split(',');
+            for fromState in fromStates:
+                for toState in toStates:
+                    for sym in symbols:
+                        nfa.addTransition(nfa.stateIndex(fromState), 
+                                          sym,
+                                          nfa.stateIndex(toState))
+    
+    for k in parseCounts:
+        if parseCounts[k] != 1:
+            raise SyntaxError('Specification missing #' + parseCounts[k] +' section.')
+    return nfa
+
+
+def fado_from_editor(editor):
+    return fado_from_string(editor.automaton)
+
+def fado_to_string(nfa):
+    states = '\n'.join(nfa.States)
+    initials = '\n'.join(nfa.States[i] for i in nfa.Initial)
+    finals = '\n'.join(nfa.States[i] for i in nfa.Final)
+    sigma = '\n'.join(nfa.Sigma)
+    delta = '\n'.join(f'{nfa.States[from_]}:{sym}>{nfa.States[to]}' for from_ in nfa.delta for sym in nfa.delta[from_] for to in nfa.delta[from_][sym])
+    return f'''
+#states
+{states}
+#initials
+{initials}
+#accepting
+{finals}
+#alphabet
+{sigma}
+#transitions
+{delta}
+'''
+
 class Automaton:
     """
     Provides methods for the creation and manipulation of **deterministic** finite automata.
