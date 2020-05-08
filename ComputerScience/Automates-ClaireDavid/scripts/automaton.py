@@ -13,7 +13,7 @@ from automata.fa.nfa import NFA
 
 from components import AutomatonDrawer, AutomatonEditor
 
-#import FAdo.fa, FAdo.reex
+import fa, reex
 
 def fado_from_string(string_notation):
     nfa = FAdo.fa.NFA()
