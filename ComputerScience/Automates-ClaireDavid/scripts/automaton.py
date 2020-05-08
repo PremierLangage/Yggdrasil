@@ -351,9 +351,9 @@ class Automaton:
         return Automaton(lego.parse(regex).to_fsm().reduce())
 
     @staticmethod
-    def from_regex2(regex: str, alphabet=None, simple=False):
+    def from_regex_nd(regex: str, alphabet=None, simple=False):
         """
-        Creates a minimal deterministic automaton from a regex.
+        Creates a nondeterministic automaton from a regex.
 
         :param regex a regex where the following metacharacters and formations
             have their usual meanings: ., *, +, ?, {m}, {m,}, {m,n}, (), |, [], 
@@ -373,7 +373,7 @@ class Automaton:
                     raise Exception("Syntax error : this is not a simple regex")        
             regex = regex.replace('.', '').replace('+', '|').replace('€','').replace('ε','')
 
-        return Automaton(lego.parse(regex).to_fsm().reduce())
+        return Automaton(lego.parse(regex).to_fsm())
 
 #    @staticmethod
 #    def from_regex(regex: str):
