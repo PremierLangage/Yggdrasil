@@ -6,34 +6,34 @@
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
 
-title = Retirer les doublons d'une liste
+title = Ignorer les doublons d'une liste
 
 text==
-Ecrire une fonction `retiredoublons` à un paramètre (une liste)
-qui retourne la liste composée d'une seule copie de chaque éléments.
+Ecrire une fonction `ignoredoublons` à un paramètre (une liste)
+qui retourne une nouvelle liste composée d'une seule copie de chaque éléments.
 
-Quand un élémént est en double seul la première occurence est gardée.
+Quand un élémént est en double seule la première occurence est copiée.
 
-Par exemple, `retiredoublons([3, 1, 2, 2, 1, 3])` renvoie `[3, 1, 2]`
+Par exemple, `ignoredoublons([3, 1, 2, 2, 1, 3])` renvoie `[3, 1, 2]`
 ==
 
 taboo=set
 
 pltest0==
->>> retiredoublons([3,1,2,2,1,3])
+>>> ignoredoublons([3,1,2,2,1,3])
 [3, 1, 2]
->>> retiredoublons([])
+>>> ignoredoublons([])
 []
->>> retiredoublons([1,1,1,1,1,1,1])
+>>> ignoredoublons([1,1,1,1,1,1,1])
 [1]
->>> retiredoublons([1,2,1,2,1,2,1])
+>>> ignoreredoublons([1,2,1,2,1,2,1])
 [1, 2]
->>> retiredoublons([2,1,2,1,2,1])
+>>> ignoredoublons([2,1,2,1,2,1])
 [2, 1]
 ==
 
 Xeditor.code==
-def retiredoublons(l):
+def ignoredoublons(l):
     l2=[]
     for x in l:
          if x not in l2:
@@ -46,20 +46,21 @@ tests %=
 {
     "correct" : {
         "response" : {
-            "answer" : "def retiredoublons(l):\n    l2=[]\n    for x in l:\n         if x not in l2:\n             l2.append(x)\n    return l2"
+            "answer" : "def ignoredoublons(l):\n    l2=[]\n    for x in l:\n         if x not in l2:\n             l2.append(x)\n    return l2"
         },
         "grade" : 100,
         "seed":12
     },
      "Incorrect" : {
         "response" : {
-            "answer" : "def fusion(a,b):\n    return [a, b]\n"
+            "answer" : "def ignoredoublons(a,b):\n    return [a, b]\n"
         },
         "grade" : 0,
         "seed":12
     }
 }
 ==
+
 
 
 
