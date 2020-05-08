@@ -38,8 +38,7 @@ viewer_enonce.automaton = solution
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text==
-{{ toto }}
-<!-- {{ viewer_enonce|component }}-->
+{{ viewer_enonce|component }}
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez l'automate minimal déterministe complet reconnaissant le langage {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
