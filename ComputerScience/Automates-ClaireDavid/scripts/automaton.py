@@ -962,6 +962,24 @@ class Automaton:
                     symb
                 )
  
+    def to_string_notation(self):
+        state_machine = self.state_machine
+
+        states    = '#states\n' + '\n'.join([e for e in state_machine.states])
+        initials  = '#initials\n' + state_machine.initial
+        accepting = '#accepting\n' + '\n'.join([e for e in state_machine.finals])
+        alphabet  = '#alphabet\n' + '\n'.join([e for e in state_machine.alphabet])
+
+        transitions = []
+        def fn(fromState, toState, symb):
+            transitions.append(
+                f'{fromState}:{symb}>{toState}'
+            )
+        self.iterate(fn)
+
+        transitions = '#transitions\n' + '\n'.join(transitions)
+        return f'{states}\n{initials}\n{accepting}\n{alphabet}\n{transitions}'
+
     def as_viewer(self):
         """
         Gets an AutomatonDrawer component that can be displayed inside
@@ -978,23 +996,8 @@ class Automaton:
         ==
         """
 
-        state_machine = self.state_machine
-
-        states    = '#states\n' + '\n'.join([e for e in state_machine.states])
-        initials  = '#initials\n' + state_machine.initial
-        accepting = '#accepting\n' + '\n'.join([e for e in state_machine.finals])
-        alphabet  = '#alphabet\n' + '\n'.join([e for e in state_machine.alphabet])
-
-        transitions = []
-        def fn(fromState, toState, symb):
-            transitions.append(
-                f'{fromState}:{symb}>{toState}'
-            )
-        self.iterate(fn)
-
-        transitions = '#transitions\n' + '\n'.join(transitions)
         return AutomatonDrawer(
-            automaton=f'{states}\n{initials}\n{accepting}\n{alphabet}\n{transitions}'
+            automaton=self.to_string_notation()
         )
 
     def reachable_states(self, initialState: str, shouldIncludeInitialState=True):
