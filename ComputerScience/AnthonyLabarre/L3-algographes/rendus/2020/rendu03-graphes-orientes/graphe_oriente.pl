@@ -49,13 +49,12 @@ pltest0==
 True
 False
 False
->>> G.contient_sommet(9)
+>>> for s in [9,4,0,42]: # Vérification de contient_sommet
+...     G.contient_sommet(s)
+... 
 True
->>> G.contient_sommet(4)
 True
->>> G.contient_sommet(0)
 False
->>> G.contient_sommet(42)
 False
 >>> G.retirer_sommet(6); sorted(G.sommets()) # Vérification de l'ensemble des sommets après suppression de 6
 [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14]
