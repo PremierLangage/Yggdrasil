@@ -27,7 +27,6 @@ viewer_enonce.automaton = enonce
 #langage solution -- le nom solution est forcé par le template
 solution = enonce
 
-
 ==
 
 #* Texte de l'énoncé
