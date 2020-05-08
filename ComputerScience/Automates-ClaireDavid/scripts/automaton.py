@@ -16,7 +16,7 @@ from components import AutomatonDrawer, AutomatonEditor
 import fa, reex
 
 def fado_from_string(string_notation):
-    nfa = FAdo.fa.NFA()
+    nfa = fa.NFA()
     lines = string_notation.splitlines();
 
     states: [str] = []
