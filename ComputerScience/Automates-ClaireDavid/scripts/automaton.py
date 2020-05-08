@@ -465,6 +465,7 @@ class Automaton:
         :return an Automaton instance.
         :raise TypeError if regex is not a string.
         """
+        epsilon = '@epsilon'
 
         if not isinstance(regex, str):
             raise TypeError('from_regex: Excepted an automaton in regex notation')
@@ -473,7 +474,7 @@ class Automaton:
         if simple:
             if not Automaton.syntax_simple_regex(regex, alphabet) :
                     raise Exception("Syntax error : this is not a simple regex")        
-            regex = regex.replace('.', '').replace('+', '|').replace('€','').replace('ε','')
+            regex = regex.replace('.', '').replace('+', '|').replace('€',epsilon).replace('ε','')
 
         return fado_to_string(reex.str2regexp(regex).nfaGlushkov())
 
