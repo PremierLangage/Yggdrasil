@@ -26,8 +26,8 @@ solution = Automaton.from_regex_nd('a*b(baa|b)*a')
 #viewer_enonce = solution.as_viewer()
 
 #viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
-#viewer_enonce = AutomatonDrawer()
-#viewer_enonce.automaton = solution
+viewer_enonce = AutomatonDrawer()
+viewer_enonce.automaton = solution
 
 #langage solution -- le nom solution est forcé par le template
 
