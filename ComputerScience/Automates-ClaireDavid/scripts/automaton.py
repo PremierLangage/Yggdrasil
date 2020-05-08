@@ -13,7 +13,7 @@ from automata.fa.nfa import NFA
 
 from components import AutomatonDrawer, AutomatonEditor
 
-import FAdo.fa
+import FAdo.fa, FAdo.reex
 
 def fado_from_string(string_notation):
     nfa = FAdo.fa.NFA()
@@ -475,7 +475,7 @@ class Automaton:
                     raise Exception("Syntax error : this is not a simple regex")        
             regex = regex.replace('.', '').replace('+', '|').replace('€','').replace('ε','')
 
-        return Automaton(lego.parse(regex).to_fsm())
+        return fado_to_string(FAdo.reex.str2regex(regex).nfaPosition())
 
 #    @staticmethod
 #    def from_regex(regex: str):
