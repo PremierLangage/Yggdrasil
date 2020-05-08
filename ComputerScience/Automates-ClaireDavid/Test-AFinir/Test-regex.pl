@@ -16,9 +16,9 @@ alphabet = "a,b"
 message = 'a*b(b(aa+€))*a'
 
 
-## TODO donner une seule description du lanage enoncé pour le message et l'automate
+## TODO donner une seule description du langage enoncé pour le message et l'automate
 #langage solution -- le nom solution est forcé par le template
-solution = Automaton.from_regex_nd('a*b(baa|b)*a')
+solution = Automaton.from_regex_nd(message, simple=True)
 #states = solution.state_machine.states
 #initial = solution.state_machine.initial
 #final = solution.state_machine.finals
