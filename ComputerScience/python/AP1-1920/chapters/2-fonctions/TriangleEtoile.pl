@@ -29,7 +29,6 @@ de 2n-1 lignes
 
 Exemple
  
-triangle_etoile(3) renvoie la chaine "\n\*\n\*+\*\*\n\*+\*\*+\*\*\*\n\*+\*\*\n\*\n"
 dont l'affichage produit <br>
 '<br>
 \*<br>
@@ -141,6 +140,7 @@ pltest1==
 >>> triangle_etoiles(2)
 '\n*\n*+**\n*\n'
 ==
+
 
 
 
