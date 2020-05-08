@@ -26,7 +26,7 @@ pltest0==
 []
 >>> ignoredoublons([1,1,1,1,1,1,1])
 [1]
->>> ignoreredoublons([1,2,1,2,1,2,1])
+>>> ignoredoublons([1,2,1,2,1,2,1])
 [1, 2]
 >>> ignoredoublons([2,1,2,1,2,1])
 [2, 1]
