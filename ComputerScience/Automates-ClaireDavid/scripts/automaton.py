@@ -475,7 +475,7 @@ class Automaton:
                     raise Exception("Syntax error : this is not a simple regex")        
             regex = regex.replace('.', '').replace('+', '|').replace('€','').replace('ε','')
 
-        return fado_to_string(reex.str2regexp(regex).nfaPosition())
+        return fado_to_string(reex.str2regexp(regex).nfaGlushkov())
 
 #    @staticmethod
 #    def from_regex(regex: str):
