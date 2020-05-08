@@ -38,8 +38,8 @@ solution = Automaton.from_regex_nd('a*b(baa|b)*a')
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text==
-{{ solution_view|component }}
-<!--{{ viewer_enonce|component }}-->
+<!--{{ solution_view|component }}-->
+{{ viewer_enonce|component }}
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez l'automate minimal déterministe complet reconnaissant le langage {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
