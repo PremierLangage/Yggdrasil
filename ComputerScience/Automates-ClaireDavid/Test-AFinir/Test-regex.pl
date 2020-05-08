@@ -6,8 +6,6 @@ title = exo mini from regex
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
 from automaton import Automaton
-import sys
-toto = sys.path
 
 # pour changer le type d'évaluation en automate minimal
 eval_type = "mini_auto"
