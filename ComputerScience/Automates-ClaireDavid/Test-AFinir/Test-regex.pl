@@ -18,7 +18,7 @@ message = 'a*b(b(aa+€))*a'
 
 ## TODO donner une seule description du lanage enoncé pour le message et l'automate
 #langage solution -- le nom solution est forcé par le template
-solution = Automaton.from_regex('a*b(baa|b)*a')
+solution = Automaton.from_regex_nd('a*b(baa|b)*a')
 #states = solution.state_machine.states
 #initial = solution.state_machine.initial
 #final = solution.state_machine.finals
@@ -27,7 +27,7 @@ solution = Automaton.from_regex('a*b(baa|b)*a')
 
 #viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
 viewer_enonce = AutomatonDrawer()
-#viewer_enonce.automaton = solution
+viewer_enonce.automaton = solution
 
 #langage solution -- le nom solution est forcé par le template
 
