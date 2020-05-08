@@ -351,7 +351,7 @@ class Automaton:
         return Automaton(lego.parse(regex).to_fsm().reduce())
 
     @staticmethod
-    def from_regex(regex: str, alphabet=None, simple=False):
+    def from_regex2(regex: str, alphabet=None, simple=False):
         """
         Creates a minimal deterministic automaton from a regex.
 
@@ -1154,6 +1154,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
