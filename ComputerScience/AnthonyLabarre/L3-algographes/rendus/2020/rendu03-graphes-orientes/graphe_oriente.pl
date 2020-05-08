@@ -63,9 +63,9 @@ False
 [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14]
 >>> sorted(map(list, G.arcs())) # Vérification de l'ensemble des arcs
 [[1, 2], [1, 3], [2, 1], [3, 1], [3, 5], [4, 1], [4, 2], [4, 11], [4, 12], [7, 9], [8, 5], [8, 10], [9, 8], [9, 10], [9, 13], [10, 11], [10, 13], [11, 12], [12, 10], [12, 14], [13, 12], [14, 13]]
->>> G.nombre_sommets()
+>>> G.nombre_sommets() # Vérification du nombre de sommets
 13
->>> G.nombre_arcs()
+>>> G.nombre_arcs() # Vérification du nombre d'arcs
 22
 >>> G.retirer_sommets([12,10]); sorted((v, sorted(G.predecesseurs(v))) for v in G.sommets()) # suppression de 10 et 12 et vérification des prédécesseurs
 [(1, [2, 3, 4]), (2, [1, 4]), (3, [1]), (4, []), (5, [3, 8]), (7, []), (8, [9]), (9, [7]), (11, [4]), (13, [9, 14]), (14, [])]
@@ -111,6 +111,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
