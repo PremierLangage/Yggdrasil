@@ -72,11 +72,11 @@ False
 [(1, 3), (2, 2), (3, 1), (4, 0), (5, 2), (7, 0), (8, 1), (9, 1), (11, 1), (13, 2), (14, 0)]
 >>> sorted((v, G.degre_sortant(v)) for v in G.sommets()) # Vérification des degrés sortants
 [(1, 2), (2, 1), (3, 2), (4, 3), (5, 0), (7, 1), (8, 1), (9, 2), (11, 0), (13, 0), (14, 1)]
->>> sorted(G.voisins(1)) # Vérification des voisins de 1
+>>> for s in [1,9,7]: # Vérification de voisins
+...     sorted(G.voisins(s))
+... 
 [2, 3, 4]
->>> sorted(G.voisins(9)) # Vérification des voisins de 9
 [7, 8, 13]
->>> sorted(G.voisins(7)) # Vérification des voisins de 7
 [9]
 >>> G.retirer_sommet(9);sorted(G.voisins(7)) # Suppression de 9 et vérification des voisins de 7
 []
@@ -84,15 +84,13 @@ False
 [[1, 2], [1, 3], [2, 1], [3, 5], [4, 1], [4, 2], [4, 11], [8, 5], [14, 13]]
 >>> G.retirer_arcs([(4,1),(8,5),(14,13)]);sorted(map(list, G.arcs())) #  Vérification de retirer_arcs
 [[1, 2], [1, 3], [2, 1], [3, 5], [4, 2], [4, 11]]
->>> G = GrapheOriente(); G.ajouter_arcs(CFC_INSTANCE_TD); G_induit = G.sous_graphe_induit([3,5,8,6,9,7]) #  Vérification de sous graphe induit connexe
->>> sorted(G_induit.sommets())
+>>> G = GrapheOriente(); G.ajouter_arcs(CFC_INSTANCE_TD); G_induit = G.sous_graphe_induit([3,5,8,6,9,7]);sorted(G_induit.sommets())
 [3, 5, 6, 7, 8, 9]
->>> sorted(G_induit.arcs())
+>>> G = GrapheOriente(); G.ajouter_arcs(CFC_INSTANCE_TD); G_induit = G.sous_graphe_induit([3,5,8,6,9,7]);sorted(G_induit.sommets());sorted(G_induit.arcs())#  Vérification de sous graphe induit connexe
+[3, 5, 6, 7, 8, 9]
 [(3, 5), (5, 6), (6, 7), (6, 9), (7, 9), (8, 5), (9, 8)]
->>> G_induit = G.sous_graphe_induit([4,3,13,12,11,6,7]); #  Vérification de sous graphe induit non connexe
->>> sorted(G_induit.sommets())
+>>> G_induit = G.sous_graphe_induit([4,3,13,12,11,6,7]);sorted(G_induit.sommets());sorted(G_induit.arcs()) #  Vérification de sous graphe induit non connexe
 [3, 4, 6, 7, 11, 12, 13]
->>> sorted(G_induit.arcs())
 [(4, 11), (4, 12), (6, 7), (11, 12), (13, 12)]
 ==
 
@@ -108,6 +106,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
