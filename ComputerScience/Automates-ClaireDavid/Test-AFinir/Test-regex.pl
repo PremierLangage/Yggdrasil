@@ -35,7 +35,6 @@ solution = enonce
 # l'automate minimisé du langage solution
 text==
 {{ viewer_enonce|component }}
-{{ solution_view|component }}
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez l'automate minimal déterministe complet reconnaissant le langage {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
