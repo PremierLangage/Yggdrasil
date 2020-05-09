@@ -107,6 +107,7 @@ editors.forEach((editor) => {
     });
     */
     
+    // INITIAL STATE ACTIONS
     component.actionSetInitial = () => {
         const stateName = this.node.id;
         return {
@@ -131,6 +132,31 @@ editors.forEach((editor) => {
         };
     };
 
+    // FINAL STATE ACTIONS
+    component.actionSetFinal = () => {
+        const stateName = this.node.id;
+        return {
+            name: this.textSetFinal,
+            action: () => {
+                this.acceptingStates.push(stateName);
+                this.node.classList.add(FINAL_STATE_CLASS);
+                this.focus(this.node);
+            }
+        };
+    }
+
+    component.actionSetNonFinal = () => {
+        const stateName = this.node.id;
+        return {
+            name: this.textSetNonFinal,
+            action: () => {
+                this.removeFinal(stateName);
+                this.node.classList.remove(FINAL_STATE_CLASS);
+                this.focus(this.node);
+            }
+        };
+    }
+
     component.getStateActions = () => {
         const actions = [];
         const classes = this.node.classList;
@@ -146,31 +172,16 @@ editors.forEach((editor) => {
         const isInitialState = classes.contains(INITIAL_STATE_CLASS);
 
         if (isInitialState) {
-            // SET NON INITIAL
-            actions.push();
+            actions.push(this.actionSetNonInitial());
         } else {
             actions.push(this.actionSetInitial());
         }
 
 
         if (isFinalState) {
-            actions.push({
-                name: this.textSetNonFinal,
-                action: () => {
-                    this.removeFinal(stateName);
-                    this.node.classList.remove(FINAL_STATE_CLASS);
-                    this.focus(this.node);
-                }
-            });
+            actions.push(this.actionSetNonFinal());
         } else {
-                actions.push({
-                name: this.textSetFinal,
-                action: () => {
-                    this.acceptingStates.push(stateName);
-                    this.node.classList.add(FINAL_STATE_CLASS);
-                    this.focus(this.node);
-                }
-            });
+            actions.push(this.actionSetFinal());
         }
 
 
