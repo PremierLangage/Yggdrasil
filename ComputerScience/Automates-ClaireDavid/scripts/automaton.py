@@ -16,7 +16,7 @@ from components import AutomatonDrawer, AutomatonEditor
 import fa, reex
 
 
-def same_as( auto1 , auto2 )
+def same_as( auto1 , auto2 ):
     ''' Return True if auto1 and auto2 coincide
             states names
             initial, final states and transitions
