@@ -399,11 +399,11 @@ editors.forEach((editor) => {
         
         instance.setZoom(zoom);
     };
-
+/* 
     editor.addEventListener("wheel", event => {
         const delta = Math.sign(event.deltaY);
         component.setZoom(component.zoom + (0.5 * delta));
-    });
+    }); */
 
 });
 
