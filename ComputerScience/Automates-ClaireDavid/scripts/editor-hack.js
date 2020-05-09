@@ -400,7 +400,10 @@ editors.forEach((editor) => {
         instance.setZoom(zoom);
     };
 
+    setTimeout(() => {
+
     alert(component.zoomable);
+    }, 1000);
     const container = editor.querySelector('.automaton-editor-component');
     const zoomButtons = document.createElement('div');
     zoomButtons.style.position = 'absolute';
