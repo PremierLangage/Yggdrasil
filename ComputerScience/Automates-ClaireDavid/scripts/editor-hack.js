@@ -270,7 +270,7 @@ editors.forEach((editor) => {
         };
     }
 
-
+    component.debug = true;
 
     /**
      * Override the function that handles focus of state|connection.
