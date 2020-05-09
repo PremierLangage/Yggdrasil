@@ -125,15 +125,16 @@ editors.forEach((editor) => {
         if (this.node) {
             this.node.classList.remove('focused');
             this.node.classList.add('focused');
-            const isFinal = this.node.classList.contains(finalStateClassName);
-            const isInitial = this.node.classList.contains(initialStateClassName);
-            const stateName = this.node.id;
+            const isFinalState = this.node.classList.contains(finalStateClassName);
+            const isInitialState = this.node.classList.contains(initialStateClassName);
+            const focusedStateName = this.node.id;
+
             // INITIAL
-            if (isInitial) {
+            if (isInitialState) {
                 actions.push({
                     name: this.textSetNonInitial,
                     action: () => {
-                        this.removeInitial(stateName);
+                        this.removeInitial(focusedStateName);
                         this.node.classList.remove(initialStateClassName);
                         this.focus(this.node);
                     }
@@ -142,17 +143,17 @@ editors.forEach((editor) => {
                 actions.push({
                     name: this.textSetInitial,
                     action: () => {
-                        this.initialStates.push(stateName);
+                        this.initialStates.push(focusedStateName);
                         this.node.classList.add(initialStateClassName);
                         this.focus(this.node);
                     }
                 });
             }
-            if (isFinal) {
+            if (isFinalState) {
                 actions.push({
                     name: this.textSetNonFinal,
                     action: () => {
-                        this.removeFinal(stateName);
+                        this.removeFinal(focusedStateName);
                         this.node.classList.remove(finalStateClassName);
                         this.focus(this.node);
                     }
@@ -161,7 +162,7 @@ editors.forEach((editor) => {
                     actions.push({
                     name: this.textSetFinal,
                     action: () => {
-                        this.acceptingStates.push(stateName);
+                        this.acceptingStates.push(focusedStateName);
                         this.node.classList.add(finalStateClassName);
                         this.focus(this.node);
                     }
@@ -175,7 +176,7 @@ editors.forEach((editor) => {
                     const title = 'État';
                     const hint = 'Entrez un nouveau nom';
                     addKeyboardListenerToPromptInput();    
-                    let newState = await this.prompt(title, hint, stateName);
+                    let newState = await this.prompt(title, hint, focusedStateName);
                     if (newState && newState.trim()) {
                         newState = newState.trim();
                         if (this.automaton.states.includes(newState)) {
@@ -185,13 +186,13 @@ editors.forEach((editor) => {
                             this.states = [
                                 newState,
                                 ...this.states.filter(state => {
-                                    return state !== stateName;
+                                    return state !== focusedStateName;
                                 })
                             ];
                             // replace in initials
                             this.initialStates = this.initialStates.map(
                                 state => {
-                                    if (state === stateName) {
+                                    if (state === focusedStateName) {
                                         return newState;
                                     }
                                     return state;
@@ -200,7 +201,7 @@ editors.forEach((editor) => {
                             // replace in finals
                             this.acceptingStates = this.acceptingStates.map(
                                 state => {
-                                    if (state === stateName) {
+                                    if (state === focusedStateName) {
                                         return newState;
                                     }
                                     return state;
@@ -208,21 +209,23 @@ editors.forEach((editor) => {
                             );
                             // replace in transitions
                             this.automaton.transitions.forEach(transition => {
-                                if (transition.fromState === stateName) {
+                                if (transition.fromState === focusedStateName) {
                                     transition.fromState = newState;
                                 }
-                                if (transition.toState === stateName) {
+                                if (transition.toState === focusedStateName) {
                                     transition.toState = newState;
                                 }
                             });
 
                             // replace in position
-                            this.position[newState] = this.position[stateName];
-                            delete this.position[stateName];
+                            this.position[newState] = this.position[focusedStateName];
+                            delete this.position[focusedStateName];
 
-                            this.actions = [];
+                            // RENDER THE WHOLE VIEW
                             this.node = undefined;
+                            this.actions = [];
                             this.connection = undefined;
+                            
                             this.unfocus();
                             this.onRender();
                             this.detectChanges();
@@ -235,9 +238,9 @@ editors.forEach((editor) => {
             actions.push({
                 name: this.textDeleteState,
                 action: () => {
-                    this.removeState(stateName);
-                    this.removeFinal(stateName);
-                    this.removeInitial(stateName);
+                    this.removeState(focusedStateName);
+                    this.removeFinal(focusedStateName);
+                    this.removeInitial(focusedStateName);
                     // remove transition
                     this.automaton.transitions = this.automaton.transitions.filter(
                         transition => {
@@ -247,7 +250,7 @@ editors.forEach((editor) => {
                             );
                         }
                     );
-                    delete this.automaton.position[stateName];
+                    delete this.automaton.position[focusedStateName];
                     // remove node from the dom
                     this.instance.remove(this.node);
                     this.focus();
