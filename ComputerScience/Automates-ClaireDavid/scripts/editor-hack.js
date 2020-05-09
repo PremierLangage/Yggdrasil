@@ -476,7 +476,7 @@ function addKeyboardListenerToPromptInput() {
     }, 1000);
 };
 
-
+// CHANGE STRING NOTATION PARSINGs
 function automatonFromString(input) {
     const lines = input.split(/\r?\n/);
     const automaton = {
@@ -534,25 +534,23 @@ function automatonFromString(input) {
             } else if (parseState === 'alphabet') {
                 alphabet = alphabet.concat(line.split(';'));
             } else if (parseState === 'transitions') {
-                const state_rest = line.split(':');
-                const fromStates = state_rest[0].split(',');
-                const parts = state_rest[1].split(';');
-
-                let symbols = [];
-                let toStates = [];
-                for (let j = 0; j < parts.length; j++) {
-                    const left_right = parts[j].split('>');
-                    symbols = left_right[0].split(',');
-                    toStates = left_right[1].split(',');
+                const parts = line.split(';');
+                for (const part of parts) {
+                    const state_rest = part.split(':');
+                    const fromState = state_rest[0];
+                    const rest = state_rest[1].split('>');
+                    const symbols = rest[0].split(',');
+                    const toState = rest[1];
+                    for (const symb of symbols) {
+                            transitions.push({
+                            fromState: fromState,
+                            toState: toState,
+                            symbols: symb
+                        });
+                    }
                 }
-
-                transitions.push({
-                    fromState: fromStates[0],
-                    toState: toStates[0],
-                    symbols: symbols
-                });
             }
-      }
+        }
     }
 
     for (const k in parseCounts) {
