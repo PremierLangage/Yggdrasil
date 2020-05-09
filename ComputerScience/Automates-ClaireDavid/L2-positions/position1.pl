@@ -46,9 +46,12 @@ solution = '''
     S3:a>S4
     S3:b>S5
 '''
-
+#viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
+viewer_enonce = AutomatonDrawer()
+viewer_enonce.automaton = solution
 ==
 
+{{ viewer_enonce|component }}
 #* Texte de l'énoncé
 # ---
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
