@@ -51,6 +51,9 @@ solution = '''
 viewer_enonce = AutomatonDrawer()
 viewer_enonce.automaton = solution
 
+
+string_solution = solution
+
 ==
 
 #* Texte de l'énoncé
@@ -76,6 +79,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
