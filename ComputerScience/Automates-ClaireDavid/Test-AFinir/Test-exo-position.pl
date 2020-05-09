@@ -51,7 +51,7 @@ solution = '''
 viewer_enonce = AutomatonDrawer()
 viewer_enonce.automaton = solution
 
-
+# Permet de faire la comparaison same_as
 string_solution = solution
 
 ==
@@ -79,6 +79,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
