@@ -619,7 +619,7 @@ class Automaton:
                         state_rest = part.split(':')
                         fromState = state_rest[0]
                         rest = state_rest[1].split('>')
-                        symbols = parts[0].split(',')
+                        symbols = rest[0].split(',')
                         toState: [str] = rest[1]
                         for symb in symbols:
                             transitions.append({
