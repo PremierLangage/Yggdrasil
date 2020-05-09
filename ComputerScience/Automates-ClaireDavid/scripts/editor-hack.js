@@ -15,7 +15,8 @@ drawers.forEach((drawer) => {
                     automatonFromString(this.automaton)
                 );
                 this.renderer.render();
-            } catch {
+            } catch (error) {
+                console.log(error);
                 i++;
                 if (i < 3) {
                     setTimeout(() => render(), 300);
