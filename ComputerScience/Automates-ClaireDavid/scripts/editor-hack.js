@@ -410,6 +410,9 @@ editors.forEach((editor) => {
     component.addProperty({ name: 'textDeleteState', default: 'Supprimer' });
     component.addProperty({ name: 'textRenameSymbol', default: 'Changer étiquette' });
     component.addProperty({ name: 'textDeleteSymbol', default: 'Supprimer transition' });
+    
+    // REGISTER NEW GETTERS/SETTERS
+      
     component.createGetterSetter('initialStates');
     component.createGetterSetter('acceptingStates');
     component.createGetterSetter('states');
