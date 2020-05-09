@@ -98,7 +98,11 @@ editors.forEach((editor) => {
         instance.setZoom(zoom);
     };
 
-    console.log(component.instance)
+    const container = component.instance.getContainer();
+    container.addEventListener("wheel", event => {
+        const delta = Math.sign(event.deltaY);
+        component.setZoom(component.zoom + (0.5 * delta));
+    });
     component.focus = function (node, connection) {
  
         const FINAL_STATE = 'automaton-state--final';
