@@ -625,6 +625,7 @@ function automatonFromString(input) {
                 return true;
             }
         });
+        console.log(transition)
         if (!initTransition) {
             trans = [' '];
             trans.push(transition.fromState.toString());
