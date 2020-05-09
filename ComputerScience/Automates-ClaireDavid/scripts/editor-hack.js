@@ -557,7 +557,7 @@ function automatonFromString(input) {
                     const symbols = rest[0].split(',');
                     const toState = rest[1];
                     for (const symb of symbols) {
-                            transitions.push({
+                        transitions.push({
                             fromState: fromState,
                             toState: toState,
                             symbols: symb
@@ -621,6 +621,7 @@ function automatonFromString(input) {
                 trans.push(transition.fromState);
                 trans.push('[');
                 trans.push('label =');
+                console.log(transition)
                 trans.push('"' + transition.symbols.join(',') + '"');
                 trans.push(' dir = back];');
                 result.push(trans.join(' '));
