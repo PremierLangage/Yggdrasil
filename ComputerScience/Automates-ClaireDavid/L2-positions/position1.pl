@@ -51,12 +51,13 @@ viewer_enonce = AutomatonDrawer()
 viewer_enonce.automaton = solution
 ==
 
-{{ viewer_enonce|component }}
 #* Texte de l'énoncé
 # ---
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text==
+
+{{ viewer_enonce|component }}
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
 Donnez l'automate des positions correspondant à l'expression {{ message }} <br>
 <br>
