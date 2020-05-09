@@ -359,6 +359,7 @@ editors.forEach((editor) => {
     // REGISTER NEW PROPERTIES (THE REGISTERED PROPERTIES ARE USABLE INSIDE THE GRADER/BUILDER)
         
     component.addProperty({ name: 'textSetInitial', default: 'Initial' });
+    component.addProperty({ name: 'zoomable', default: true });
     component.addProperty({ name: 'textSetNonInitial', default: 'Non initial' });
     component.addProperty({ name: 'textSetFinal', default: 'Final' });
     component.addProperty({ name: 'textSetNonFinal', default: 'Non final' });
@@ -399,6 +400,7 @@ editors.forEach((editor) => {
         instance.setZoom(zoom);
     };
 
+    alert(component.zoomable);
     const container = editor.querySelector('.automaton-editor-component');
     const zoomButtons = document.createElement('div');
     zoomButtons.style.position = 'absolute';
