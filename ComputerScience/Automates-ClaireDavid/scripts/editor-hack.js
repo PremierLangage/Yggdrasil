@@ -376,7 +376,7 @@ editors.forEach((editor) => {
         this.detectChanges();
     }
 
-
+    
     component.onValidate = function (instance) {
         if (typeof(instance.automaton) === 'string') {
             instance.automaton = automatonFromString(instance.automaton);
