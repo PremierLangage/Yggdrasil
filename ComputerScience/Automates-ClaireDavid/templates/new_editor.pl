@@ -314,7 +314,7 @@ error = ""
 
 ## Get the student answer:
 if answer_type == "automaton" :
-    string_student_answer = string_notation_from_editor(editor)
+    string_student_answer = Automaton.string_notation_from_editor(editor)
     student_answer = editor
     info_student_answer , _ = Automaton.properties(editor)
     # Automaton.properties will detect if editor is the an instance of AutomatonEditor
