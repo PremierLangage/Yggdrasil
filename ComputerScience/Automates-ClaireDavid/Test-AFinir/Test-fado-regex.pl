@@ -8,7 +8,7 @@ generate== #|py|
 from automaton import Automaton
 
 # pour changer le type d'évaluation quand le mode sera implémenté
-#eval_type = "same_as"
+eval_type = "same_as"
 
 alphabet = "a,b"
 
@@ -41,6 +41,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
