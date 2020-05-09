@@ -61,7 +61,7 @@ Compte tenu des bugs de l'éditeur sur le renommage des états, vous adopterez l
 <ul>
 <li> L'état S0 sera l'état initial de votre automate. <br>*(Si vous avez besoin de plusieurs états initiaux, relisez votre cours)*
 <li> Les états Sj pour j>0 représenteront les positions dans l'ordre de numérotation de l'expression.<br>
-*Par exemple pour l'expression ```a*b+b```, l'état S1 représentera la position a1, l'état S2 représentera la position b2, et l'état S3 la position b3.*
+*Exemple pour l'expression ```a*b+b``` qui se numérote ```a1*b2+b3```, l'état S1 représentera la position a1, l'état S2 représentera la position b2, et l'état S3 la position b3.*
 </ul>
 
 {% if attempt < maxattempt and score != 100 %}
