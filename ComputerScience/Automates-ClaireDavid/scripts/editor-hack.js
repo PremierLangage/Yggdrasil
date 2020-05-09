@@ -8,7 +8,9 @@ const drawers = document.querySelectorAll('c-automaton-drawer');
 drawers.forEach((drawer) => {
     const component = drawer.ngElementStrategy.componentRef.instance;
     component.onValidate = function(instance) {
-        console.log(instance);
+        if (typeof(instance.automaton) === 'string') {
+            console.log(automatonFromString(instance.automaton));
+        }
     }
 })
 // OVERRIDE EACH INSTANCE OF THE COMPONENT
