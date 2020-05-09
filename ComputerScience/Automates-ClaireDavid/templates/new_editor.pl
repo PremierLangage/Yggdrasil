@@ -330,6 +330,8 @@ elif answer_type == "simple-regex" :
 else :
     error = "type de réponse non défini"
 
+raise Exception(editor)
+
 ## Check the student answer:
 if error :
 #    attempt += 1
