@@ -3,7 +3,7 @@ extends = ../templates/new_editor-L2.pl
 #* titre de l'exercice
 title = exo auto from auto
 
-editor.debug = False
+editor.debug = True
 
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
