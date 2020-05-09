@@ -621,13 +621,19 @@ class Automaton:
                         rest = state_rest[1].split('>')
                         symbols = rest[0].split(',')
                         toState: [str] = rest[1]
+                        """
                         for symb in symbols:
                             transitions.append({
                                 "fromState": fromState,
                                 "toState": toState,
                                 "symbols": symb
                             })
-
+                        """
+                        transitions.append({
+                            "fromState": fromState,
+                            "toState": toState,
+                            "symbols": symbols
+                        })
 ## ancienne version qui autorise d'avoir "states : symbols > states"
 # Semble autoriser à avoir plusieurs transitions sur une même ligne avec des ; entre deux transitions
 # mais j'ai l'impression que les fromstates ne changent jamais du coup c'est bizarre.
@@ -1379,6 +1385,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
