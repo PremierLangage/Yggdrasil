@@ -77,8 +77,8 @@ editors.forEach((editor) => {
         );
     };
 
-    component.finalStateClassName = 'automaton-state--final';
-    component.initialStateClassName = 'automaton-state--initial';
+    component.FINAL_STATE_CLASS = 'automaton-state--final';
+    component.INITIAL_STATE_CLASS = 'automaton-state--initial';
     
     /*
     component.zoom = 1;
@@ -111,7 +111,7 @@ editors.forEach((editor) => {
             name: this.textSetInitial,
             action: () => {
                 this.initialStates.push(stateName);
-                this.node.classList.add(initialStateClassName);
+                this.node.classList.add(INITIAL_STATE_CLASS);
                 this.focus(this.node);
             }
         }
@@ -121,16 +121,16 @@ editors.forEach((editor) => {
     component.getStateActions = () => {
         const actions = [];
         const classes = this.node.classList;
-        const finalStateClassName = 'automaton-state--final';
-        const initialStateClassName = 'automaton-state--initial';
+        const FINAL_STATE_CLASS = 'automaton-state--final';
+        const INITIAL_STATE_CLASS = 'automaton-state--initial';
     
         // TOGGLE CSS CLASS
         classes.remove('focused');
         classes.add('focused');
 
         const stateName = this.node.id;
-        const isFinalState = classes.contains(finalStateClassName);
-        const isInitialState = classes.contains(initialStateClassName);
+        const isFinalState = classes.contains(FINAL_STATE_CLASS);
+        const isInitialState = classes.contains(INITIAL_STATE_CLASS);
 
         if (isInitialState) {
             // SET NON INITIAL
@@ -138,7 +138,7 @@ editors.forEach((editor) => {
                 name: this.textSetNonInitial,
                 action: () => {
                     this.removeInitial(stateName);
-                    this.node.classList.remove(initialStateClassName);
+                    this.node.classList.remove(INITIAL_STATE_CLASS);
                     this.focus(this.node);
                 }
             });
@@ -148,7 +148,7 @@ editors.forEach((editor) => {
                 name: this.textSetInitial,
                 action: () => {
                     this.initialStates.push(stateName);
-                    this.node.classList.add(initialStateClassName);
+                    this.node.classList.add(INITIAL_STATE_CLASS);
                     this.focus(this.node);
                 }
             });
@@ -160,7 +160,7 @@ editors.forEach((editor) => {
                 name: this.textSetNonFinal,
                 action: () => {
                     this.removeFinal(stateName);
-                    this.node.classList.remove(finalStateClassName);
+                    this.node.classList.remove(FINAL_STATE_CLASS);
                     this.focus(this.node);
                 }
             });
@@ -169,7 +169,7 @@ editors.forEach((editor) => {
                 name: this.textSetFinal,
                 action: () => {
                     this.acceptingStates.push(stateName);
-                    this.node.classList.add(finalStateClassName);
+                    this.node.classList.add(FINAL_STATE_CLASS);
                     this.focus(this.node);
                 }
             });
