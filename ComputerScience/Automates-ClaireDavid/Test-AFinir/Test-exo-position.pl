@@ -62,7 +62,7 @@ viewer_enonce.automaton = solution
 # l'automate minimisé du langage solution
 text==
 {{ viewer_enonce|component }}
-On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
+On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
 Donnez l'automate des positions correspondant à l'expression {{ message }} <br>
 <br>
 **Contraintes d'écriture pour l'évaluation:**<br>
