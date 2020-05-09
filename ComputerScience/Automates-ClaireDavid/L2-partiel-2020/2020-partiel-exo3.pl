@@ -51,6 +51,10 @@ solution = '''
     S6:b>S6
     S6:a>S7
 '''
+
+#viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
+viewer_enonce = AutomatonDrawer()
+viewer_enonce.automaton = solution
 ==
 
 #* Texte de l'énoncé
@@ -58,6 +62,8 @@ solution = '''
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text==
+{{ solution_view|component }}
+{{ viewer_enonce|component }}
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
 Donnez l'automate des positions correspondant à l'expression {{ message }} <br>
 <br>
