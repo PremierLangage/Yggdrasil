@@ -77,6 +77,7 @@ editors.forEach((editor) => {
         );
     };
 
+    component.zoom = 1;
 
     component.setZoom = (zoom, transformOrigin) => {
         transformOrigin = transformOrigin || [ 0.5, 0.5 ];
@@ -94,12 +95,12 @@ editors.forEach((editor) => {
         el.style["transform"] = scale;
         el.style["transformOrigin"] = oString;
         
-        instance.setZoom(zoom);    
+        instance.setZoom(zoom);
     };
 
     window.addEventListener("wheel", event => {
         const delta = Math.sign(event.deltaY);
-        console.info(delta);
+        component.setZoom(component.zoom + (0.5 * delta));
     });
 
     component.focus = function (node, connection) {
