@@ -314,9 +314,12 @@ error = ""
 
 ## Get the student answer:
 if answer_type == "automaton" :
-    string_student_answer = Automaton.string_notation_from_editor(editor)
-    student_answer = editor
-    info_student_answer , _ = Automaton.properties(editor)
+    try:
+        string_student_answer = Automaton.string_notation_from_editor(editor)
+        student_answer = editor
+        info_student_answer , _ = Automaton.properties(editor)
+    except Exception:
+        error = "Syntax error"
     # Automaton.properties will detect if editor is the an instance of AutomatonEditor
     # and call editor_properties to not alterate the student automaton
     # Bof Bof à ajuster quand on aura le nouvelle lib
@@ -324,8 +327,7 @@ if answer_type == "automaton" :
 elif answer_type == "simple-regex" :
     try:
         student_answer = Automaton.from_regex(inputbox.value, simple=True) # raise exception if not valid
-    except Exception as e:
-#        error = str(e)
+    except Exception:
         error = "Syntax error"
 else :
     error = "type de réponse non défini"
