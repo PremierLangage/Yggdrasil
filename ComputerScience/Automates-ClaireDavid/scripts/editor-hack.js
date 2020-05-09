@@ -56,7 +56,13 @@ editors.forEach((editor) => {
     createGetterSetter(component, 'position');
     createGetterSetter(component, 'transitions');
 
-    component.removeState =  (state) => {
+    // DYNAMICALLY ADD NEW FUNCTIONS TO THE INSTANCE OF THE COMPONENT CLASS.
+    
+    
+    /**
+     * Removes `state` from the states list of the editor.
+     */
+    component.removeState = function (state) {
          component.states =  component.states.filter(
             e => {
                 return e !== state;
@@ -64,16 +70,22 @@ editors.forEach((editor) => {
         );
     };
 
-    component.removeFinal = (state) => {
-         component.acceptingStates =  component.acceptingStates.filter(
+    /**
+     * Removes `state` from the finals states list of the editor.
+     */
+    component.removeFinal = function (state) {
+         this.acceptingStates =  this.acceptingStates.filter(
             e => {
                 return e !== state;
             }
         );
     };
  
-    component.removeInitial = (state) => {
-         component.initialStates =  component.initialStates.filter(
+    /**
+     * Removes `state` from the initials states list of the editor.
+     */
+    component.removeInitial = function(state) {
+         this.initialStates =  this.initialStates.filter(
             e => {
                 return e !== state;
             }
@@ -139,7 +151,6 @@ editors.forEach((editor) => {
         };
     };
 
-
     /**
      * Handles click on 'set state final' button.
      */
@@ -155,7 +166,6 @@ editors.forEach((editor) => {
         };
     }
 
-
     /**
      * Handles click on 'set state non final' button.
      */
@@ -170,7 +180,6 @@ editors.forEach((editor) => {
             }
         };
     }
-
 
     /**
      * Handles click on 'rename state' button.
@@ -244,7 +253,6 @@ editors.forEach((editor) => {
         };
     };
 
-
     /**
      * Handles click on 'delete state' button.
      */
@@ -273,8 +281,6 @@ editors.forEach((editor) => {
             }
         };
     }
-
-
 
     /**
      * Handles click on 'rename transition' button.
@@ -350,6 +356,10 @@ editors.forEach((editor) => {
         }
     }
 
+
+
+    // DYNAMICALLY OVERRIDE FUNCTIONS FROM THE INSTANCE OF THE COMPONENT CLASS.
+    
     /**
      * Override the function that handles focus of state|connection.
      * @param node the focused node (may be null if the focused element is connection).
