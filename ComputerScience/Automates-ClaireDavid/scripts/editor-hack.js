@@ -2,9 +2,6 @@
 
 // ORIGINAL SOURCE CODE: https://github.com/PremierLangage/components/blob/master/src/app/components/automaton-editor/automaton-editor.component.ts
 
-// GET THE INSTANCES OF AutomatonEditorComponent FROM THE PAGE
-const editors = document.querySelectorAll('c-automaton-editor');
-
 const addKeyboardListenerToPromptInput = () => {
     setTimeout(() => {
         const input = document.querySelector('app-prompt input');
@@ -21,46 +18,34 @@ const addKeyboardListenerToPromptInput = () => {
     }, 1000);
 };
 
-const addProperty = (component, property) => {
-    if (!component.properties.find(e => e.name === property.name)) {
-        component.properties.push(property);
-    }
-}
 
-const createGetterSetter = (component, name) => {
-    Object.defineProperty(component, name, {
-        get: () => {
-            return component.automaton[name];
-        },
-        set: (value) => {
-            component.automaton[name] = value;
-        }
-    });
-};
+// GET THE INSTANCES OF AutomatonEditorComponent FROM THE PAGE
+const editors = document.querySelectorAll('c-automaton-editor');
 
 editors.forEach((editor) => {
     const component = editor.ngElementStrategy.componentRef.instance;
     
     const FINAL_STATE_CLASS = 'automaton-state--final';
     const INITIAL_STATE_CLASS = 'automaton-state--initial';
-    
-    addProperty(component, { name: 'textSetInitial', default: 'Initial' });
-    addProperty(component, { name: 'textSetNonInitial', default: 'Non initial' });
-    addProperty(component, { name: 'textSetFinal', default: 'Final' });
-    addProperty(component, { name: 'textSetNonFinal', default: 'Non final' });
-    addProperty(component, { name: 'textRenameState', default: 'Renommer' });
-    addProperty(component, { name: 'textDeleteState', default: 'Supprimer' });
-    addProperty(component, { name: 'textRenameSymbol', default: 'Changer étiquette' });
-    addProperty(component, { name: 'textDeleteSymbol', default: 'Supprimer transition' });
-
-    createGetterSetter(component, 'initialStates');
-    createGetterSetter(component, 'acceptingStates');
-    createGetterSetter(component, 'states');
-    createGetterSetter(component, 'position');
-    createGetterSetter(component, 'transitions');
 
     // DYNAMICALLY ADD NEW FUNCTIONS TO THE INSTANCE OF THE COMPONENT CLASS.
     
+    component.addProperty = function(property) {
+        if (!this.properties.find(e => e.name === property.name)) {
+            this.properties.push(property);
+        }
+    }
+
+    component.createGetterSetter = function(name) {
+        Object.defineProperty(this, name, {
+            get: () => {
+                return this.automaton[name];
+            },
+            set: (value) => {
+                this.automaton[name] = value;
+            }
+        });
+    };
     
     /**
      * Removes `state` from the states list of the editor.
@@ -412,6 +397,23 @@ editors.forEach((editor) => {
         this.actions = actions;
 
         this.detectChanges();
-    } 
+    }
+
+
+        
+    component.addProperty({ name: 'textSetInitial', default: 'Initial' });
+    component.addProperty({ name: 'textSetNonInitial', default: 'Non initial' });
+    component.addProperty({ name: 'textSetFinal', default: 'Final' });
+    component.addProperty({ name: 'textSetNonFinal', default: 'Non final' });
+    component.addProperty({ name: 'textRenameState', default: 'Renommer' });
+    component.addProperty({ name: 'textDeleteState', default: 'Supprimer' });
+    component.addProperty({ name: 'textRenameSymbol', default: 'Changer étiquette' });
+    component.addProperty({ name: 'textDeleteSymbol', default: 'Supprimer transition' });
+    component.createGetterSetter('initialStates');
+    component.createGetterSetter('acceptingStates');
+    component.createGetterSetter('states');
+    component.createGetterSetter('position');
+    component.createGetterSetter('transitions');
+
 });
 
