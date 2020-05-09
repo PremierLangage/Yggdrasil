@@ -97,6 +97,11 @@ editors.forEach((editor) => {
         instance.setZoom(zoom);    
     };
 
+    window.addEventListener("wheel", event => {
+        const delta = Math.sign(event.deltaY);
+        console.info(delta);
+    });
+
     component.focus = function (node, connection) {
         const FINAL_STATE = 'automaton-state--final';
         const INITIAL_STATE = 'automaton-state--initial';
@@ -104,7 +109,6 @@ editors.forEach((editor) => {
         this.unfocus();
         this.node = node;
         this.connection = connection;
-        this.setZoom(2)
         // CLICK ON STATE
         if (this.node) {
             this.node.classList.remove('focused');
