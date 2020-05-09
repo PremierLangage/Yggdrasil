@@ -110,7 +110,7 @@ editors.forEach((editor) => {
     // BUTTONS TO DISPLAY WHEN A STATE IS FOCUSED 
     
     /**
-     * 
+     * Handles click on 'set state initial' button.
      */
     component.actionSetInitial = function () {
         const stateName = this.node.id;
@@ -125,7 +125,7 @@ editors.forEach((editor) => {
     };
 
     /**
-     * 
+     * Handles click on 'set state non initial' button.
      */
     component.actionSetNonInitial = function () {
         const stateName = this.node.id;
@@ -139,8 +139,9 @@ editors.forEach((editor) => {
         };
     };
 
+
     /**
-     * 
+     * Handles click on 'set state final' button.
      */
     component.actionSetFinal = function () {
         const stateName = this.node.id;
@@ -154,8 +155,9 @@ editors.forEach((editor) => {
         };
     }
 
+
     /**
-     * 
+     * Handles click on 'set state non final' button.
      */
     component.actionSetNonFinal = function () {
         const stateName = this.node.id;
@@ -169,8 +171,9 @@ editors.forEach((editor) => {
         };
     }
 
+
     /**
-     * 
+     * Handles click on 'rename state' button.
      */
     component.actionRenameState = function () {
         const stateName = this.node.id;
@@ -241,8 +244,9 @@ editors.forEach((editor) => {
         };
     };
 
+
     /**
-     * 
+     * Handles click on 'delete state' button.
      */
     component.actionDeleteState = function () {
         const stateName = this.node.id;
@@ -271,8 +275,9 @@ editors.forEach((editor) => {
     }
 
 
+
     /**
-     * 
+     * Handles click on 'rename transition' button.
      */
     component.actionRenameTransition = function() {
         return {
@@ -319,7 +324,7 @@ editors.forEach((editor) => {
     }
 
     /**
-     * 
+     * Handles click on 'delete transition' button.
      */
     component.actionDeleteTransition = function() {
         return {
@@ -344,8 +349,6 @@ editors.forEach((editor) => {
             }
         }
     }
-
-    component.debug = true;
 
     /**
      * Override the function that handles focus of state|connection.
@@ -399,11 +402,4 @@ editors.forEach((editor) => {
         this.detectChanges();
     } 
 });
-
-
-
-
-
-
-
 
