@@ -136,6 +136,8 @@ feedback_nondet = <p class="warning-state">L'automate correspond au langage mais
 feedback_nomini = <p class="warning-state">Votre automate est deterministe complet et correspond au langage mais il n'est pas minimal.</p>
 
 
+feedback_equi_not_identical = <p class="warning-state">Votre automate correspond au langage mais n'est pas la réponse attendue.</p>
+
 #*===========================================================================
 #* ADDITIONNAL HTML FORM
 #*===========================================================================
