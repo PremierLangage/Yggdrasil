@@ -23,6 +23,7 @@ drawers.forEach((drawer) => {
                 }
             }
         };
+        render();
     }
 })
 // OVERRIDE EACH INSTANCE OF THE COMPONENT
