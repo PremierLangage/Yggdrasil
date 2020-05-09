@@ -795,22 +795,25 @@ class Automaton:
 
     @staticmethod
     def same_as( auto1 , auto2 ):
-    ''' Return True if auto1 and auto2 coincide
-            states names
-            initial, final states and transitions
-        :param auto1 automaton in string_notation
-        :param auto2 automaton in string_notation
-        :raise If auto1 or auto2 cannot be parsed.
-    '''
-    fado1 = fado_from_string(auto1)
-    fado2 = fado_from_string(auto2)
+        """
+        Return True if auto1 and auto2 coincide
+                states names
+                initial, final states and transitions
+            :param auto1 automaton in string_notation
+            :param auto2 automaton in string_notation
+            :raise If auto1 or auto2 cannot be parsed.
+        """
+            fado1 = fado_from_string(auto1)
+            fado2 = fado_from_string(auto2)
 
-    states_match = sorted(fado1.States) == sorted(fado2.States)
-    initial_states_match = sorted(fado1.Initial) == sorted(fado2.Initial)
-    final_states_match = sorted(fado1.Final) == sorted(fado2.Final)
-    transition_match = sorted(fado1.delta) == sorted(fado2.delta)
+            states_match = sorted(fado1.States) == sorted(fado2.States)
+            initial_states_match = sorted(fado1.Initial) == sorted(fado2.Initial)
+            final_states_match = sorted(fado1.Final) == sorted(fado2.Final)
+            transition_match = sorted(fado1.delta) == sorted(fado2.delta)
 
-    return states_match and initial_states_match and final_states_match and transition_match
+            return states_match and initial_states_match and final_states_match and transition_match
+            except Exception as e:
+        return False, str(e)
     
     @staticmethod
     def accepts(obj, word: str):
