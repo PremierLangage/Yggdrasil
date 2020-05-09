@@ -211,7 +211,7 @@ editors.forEach((editor) => {
                             console.log(this.instance)
                             jsPlumb.setIdChanged(stateName, newState);
                             jsPlumb.repaintEverything();
-                            //this.node.innerHTML = node.id = newState;
+                            this.node.innerHTML = node.id = newState;
                             this.node.innerHTML += '<div class="endpoint"></div>'
                         }
                     }
