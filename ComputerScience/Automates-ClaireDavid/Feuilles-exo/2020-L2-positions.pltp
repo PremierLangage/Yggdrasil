@@ -1,0 +1,43 @@
+Title = Automate des positions
+
+introduction ==
+ Voici quelques exercices de construction d'automates de position.
+
+
+**Munissez-vous d'un feuille pour faire vos calculs!**
+
+**Contraintes d'écriture pour l'évaluation:**<br>
+Compte tenu des bugs de l'éditeur sur le renommage des états, vous adopterez la convention suivante:
+<ul>
+<li> L'état S0 sera l'état initial de votre automate. <br>*(Si vous avez besoin de plusieurs états initiaux, relisez votre cours)*
+<li> Les états Sj pour j>0 représenteront les positions dans l'ordre de numérotation de l'expression.<br>
+*Exemple pour l'expression ```a*b+b``` qui se numérote ```a1*b2+b3```, l'état S1 représenterai la position a1, l'état S2 la position b2, et l'état S3 la position b3.*
+</ul>
+
+
+
+
+ Les exercices sont indépendants. Vous pouvez les faire et même les refaire dans l'ordre que vous voulez. Si vous rencontrez des difficultés dans l'utilisation de la plateforme, n'hésitez pas à venir en discuter sur le channel discord dédié
+ 
+ Un grand merci à Mamadou pour son travail sur le module automates de PLaTon.
+
+==
+
+@../L2-minimisation/autodet-mini-ex1.pl
+
+@../L2-minimisation/auto-mini-ex1.pl
+
+@../L2-minimisation/regex-mini-ex1.pl
+
+@../L2-minimisation/td8-ex1-1.pl
+
+@../L2-minimisation/td8-ex1-2.pl
+
+@../L2-minimisation/td8-ex1-3.pl
+
+@../L2-minimisation/td8-ex1-4.pl
+
+
+
+
+
