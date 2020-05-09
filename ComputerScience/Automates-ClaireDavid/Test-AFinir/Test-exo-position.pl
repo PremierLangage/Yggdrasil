@@ -35,15 +35,16 @@ solution = '''
     #transitions
     S0:a>S1
     S0:b>S2
-    Sx:a>Sx
-    Sx:a>Sx
-    Sx:a>Sx
-    Sx:a>Sx
-    Sx:a>Sx
-    Sx:a>Sx
-    Sx:a>Sx
-    Sx:a>Sx
-    Sx:a>Sx
+    S1:a>S1
+    S1:b>S2
+    S2:a>S6
+    S2:b>S3
+    S3:a>S4
+    S3:b>S3
+    S3:a>S6
+    S4:a>S5
+    S5:a>S6
+    S5:b>S3
 '''
 
 
