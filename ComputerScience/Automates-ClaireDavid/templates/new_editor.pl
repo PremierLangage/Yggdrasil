@@ -311,7 +311,6 @@ from generator import Generator
 
 # pour récupérer les erreurs
 error = ""
-raise Exception(editor)
 
 ## Get the student answer:
 if answer_type == "automaton" :
