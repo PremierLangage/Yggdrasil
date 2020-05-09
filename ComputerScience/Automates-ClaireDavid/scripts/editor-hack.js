@@ -15,10 +15,9 @@ drawers.forEach((drawer) => {
                 automatonFromString(this.automaton)
             );
             this.renderer.render();
-        } catch (error) {
-            console.log(error);
+        } catch {
             i++;
-            if (i < 5) {
+            if (i < 3) {
                 setTimeout(this.onRender.bind(this), 300);
             }
         }
