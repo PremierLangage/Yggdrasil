@@ -209,11 +209,13 @@ editors.forEach((editor) => {
 
                             // replace in position
                             console.log(this.instance)
-                            console.log('connections', this.instance.getAllConnections())
-                            console.log('endpoings', this.instance.selectEndpoints())
-                            jsPlumb.revalidate(node);
+                            //console.log('connections', this.instance.getAllConnections())
+                            //console.log('endpoings', this.instance.selectEndpoints())
+                            // jsPlumb.revalidate(node);
                             this.node.innerHTML = node.id = newState;
-                            this.node.innerHTML += '<div class="endpoint"></div>'
+                            this.node.innerHTML += '<div class="endpoint"></div>';
+
+                            
                         }
                     }
                     this.updateAlphabet();
