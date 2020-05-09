@@ -215,6 +215,7 @@ editors.forEach((editor) => {
                                 this.instance.repaint();
                             }); */
                             jsPlumb.reset();
+                            this.detectChanges();
                             //console.log('connections', this.instance.getAllConnections())
                             //console.log('endpoings', this.instance.selectEndpoints())
                             // jsPlumb.revalidate(node);
