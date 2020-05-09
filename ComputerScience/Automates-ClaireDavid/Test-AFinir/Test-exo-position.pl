@@ -46,7 +46,6 @@ solution = '''
     S5:a>S6
     S5:b>S3
 '''
-
 ==
 
 #* Texte de l'énoncé
