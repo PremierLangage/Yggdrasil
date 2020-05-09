@@ -7,9 +7,18 @@ const editors = document.querySelectorAll('c-automaton-editor');
 const drawers = document.querySelectorAll('c-automaton-drawer');
 drawers.forEach((drawer) => {
     const component = drawer.ngElementStrategy.componentRef.instance;
-    component.onValidate = function(instance) {
-        if (typeof(instance.automaton) === 'string') {
-            instance.automaton = automatonFromString(instance.automaton);
+    component.onRender = function() {
+        let i = 0;
+        try {
+            this.renderer.graph = automatonToDotFormat(
+                automatonFromString(this.automaton)
+            );
+            this.renderer.render();
+        } catch {
+            i++;
+            if (i < 5) {
+                setTimeout(this.onRender.bind(this), 300);
+            }
         }
     }
 })
