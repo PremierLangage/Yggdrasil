@@ -37,14 +37,19 @@ solution = '''
     #transitions
     S0:a>S1
     S0:b>S2
-    S0:b>S4
+    S0:b>S3
+    S1:a>S1
     S1:b>S2
-    S1:b>S4
-    S2:a>S3
-    S3:b>S2
+    S2:a>S1
+    S2:b>S2
+    S2:b>S3
     S3:b>S4
+    S3:a>S5
     S4:b>S4
-    S4:b>S2
+    S4:a>S5
+    S5:a>S1
+    S5:b>S2
+    S5:b>S3
 '''
 
 #viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
