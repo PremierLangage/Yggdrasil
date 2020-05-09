@@ -386,12 +386,20 @@ editors.forEach((editor) => {
         const scale = "scale(" + zoom + ")";
         const oString = (transformOrigin[0] * 100) + "% " + (transformOrigin[1] * 100) + "%";
 
+        const cx = 0 + (544 / 2);
+        const cy = 0 + (500 / 2);
+        const zx = cx - zoom * cx;
+        const zy = cy - zoom * cy;
+
+    const transform = 'matrix(' + zoom + ', 0, 0, ' + zoom + ', ' + zx + ', ' + zy + ')');
+
+
         for (let i = 0; i < prefix.length; i++) {
-            el.style[prefix[i] + "Transform"] = scale;
+            el.style[prefix[i] + "Transform"] = transform;
             el.style[prefix[i] + "TransformOrigin"] = oString;
         }
 
-        el.style["transform"] = scale;
+        el.style["transform"] = transform;
         el.style["transformOrigin"] = oString;
         
         instance.setZoom(zoom);
