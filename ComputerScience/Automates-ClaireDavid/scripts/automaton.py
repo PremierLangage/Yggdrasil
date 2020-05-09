@@ -802,6 +802,7 @@ class Automaton:
             :param auto2 automaton in string_notation
             :raise If auto1 or auto2 cannot be parsed.
         """
+        try:
             fado1 = fado_from_string(auto1)
             fado2 = fado_from_string(auto2)
 
