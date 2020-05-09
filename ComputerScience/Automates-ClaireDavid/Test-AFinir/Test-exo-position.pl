@@ -49,7 +49,7 @@ solution = '''
 
 #viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
 viewer_enonce = AutomatonDrawer()
-viewer_enonce.automaton = solition
+viewer_enonce.automaton = solution
 
 ==
 
