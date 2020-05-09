@@ -376,13 +376,10 @@ editors.forEach((editor) => {
         this.detectChanges();
     }
 
-
+    
     component.onValidate = function (instance) {
         if (typeof(instance.automaton) === 'string') {
-            console.log(instance.automaton)
             instance.automaton = automatonFromString(instance.automaton);
-                        console.log(instance.automaton)
-
         }
     }
     // REGISTER NEW PROPERTIES (THE REGISTERED PROPERTIES ARE USABLE INSIDE THE GRADER/BUILDER)
