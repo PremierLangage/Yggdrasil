@@ -798,7 +798,7 @@ class Automaton:
         for s in objectNotation['initialStates']:
             nfa.addInitial(nfa.stateIndex(s))       
         for s in objectNotation['acceptingStates']:
-            nfa.addFinal(naf.stateIndex(s))
+            nfa.addFinal(nfa.stateIndex(s))
         for transition in objectNotation['transitions']:
             toState = transition['toState']
             fromState = transition['fromState']
