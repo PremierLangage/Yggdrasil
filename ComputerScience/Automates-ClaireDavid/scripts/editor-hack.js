@@ -4,7 +4,13 @@
 
 // GET THE INSTANCES OF AutomatonEditorComponent FROM THE PAGE
 const editors = document.querySelectorAll('c-automaton-editor');
-
+const drawers = document.querySelectorAll('c-automaton-drawer');
+drawers.forEach((drawer) => {
+    const component = drawer.ngElementStrategy.componentRef.instance;
+    component.onValidate = function(instance) {
+        console.log(instance);
+    }
+})
 // OVERRIDE EACH INSTANCE OF THE COMPONENT
 editors.forEach((editor) => {
     const component = editor.ngElementStrategy.componentRef.instance;
