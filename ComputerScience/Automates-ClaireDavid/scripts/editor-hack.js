@@ -380,7 +380,7 @@ editors.forEach((editor) => {
     // ADD ZOOMING FEATURE
 
     component.setZoom = (zoom, transformOrigin) => {
-        transformOrigin = transformOrigin || [ 0.5, 0.5 ];
+        transformOrigin = transformOrigin || [ 0, 0 ];
         const instance = component.instance;
         const el = instance.getContainer();
         el.style.overflow = 'visible';
