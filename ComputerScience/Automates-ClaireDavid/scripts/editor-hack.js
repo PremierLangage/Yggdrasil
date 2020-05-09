@@ -420,12 +420,18 @@ editors.forEach((editor) => {
       
     let zoom = 1;
     zoomIn.onclick = () => {
-        zoom = Math.max(1.2, zoom + 0.1);
+        zoom += .1;
+        if (zoom >= 1.2) {
+            zoom = 1.2;
+        }
         component.setZoom(zoom);
     };
 
     zoomOut.onclick = () => {
-        zoom = Math.min(0.2, zoom - 0.1);
+        zoom -= .1;
+        if (zoom <= .2) {
+            zoom = .2;
+        }
         component.setZoom(zoom);
     };
     container.appendChild(zoomButtons);
