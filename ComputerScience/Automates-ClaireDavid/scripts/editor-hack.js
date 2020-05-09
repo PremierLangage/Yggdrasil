@@ -112,7 +112,7 @@ editors.forEach((editor) => {
     /**
      * 
      */
-    component.actionSetInitial = () => {
+    component.actionSetInitial = function () {
         const stateName = this.node.id;
         return {
             name: this.textSetInitial,
@@ -128,7 +128,6 @@ editors.forEach((editor) => {
      * 
      */
     component.actionSetNonInitial = function () {
-        console.log(this)
         const stateName = this.node.id;
         return {
             name: this.textSetNonInitial,
@@ -143,7 +142,7 @@ editors.forEach((editor) => {
     /**
      * 
      */
-    component.actionSetFinal = () => {
+    component.actionSetFinal = function () {
         const stateName = this.node.id;
         return {
             name: this.textSetFinal,
@@ -158,7 +157,7 @@ editors.forEach((editor) => {
     /**
      * 
      */
-    component.actionSetNonFinal = () => {
+    component.actionSetNonFinal = function () {
         const stateName = this.node.id;
         return {
             name: this.textSetNonFinal,
@@ -173,7 +172,7 @@ editors.forEach((editor) => {
     /**
      * 
      */
-    component.actionRenameState = () => {
+    component.actionRenameState = function () {
         const stateName = this.node.id;
         return {
             name: this.textRenameState,
@@ -245,7 +244,7 @@ editors.forEach((editor) => {
     /**
      * 
      */
-    component.actionDeleteState = () => {
+    component.actionDeleteState = function () {
         const stateName = this.node.id;
         return {
             name: this.textDeleteState,
