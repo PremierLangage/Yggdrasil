@@ -430,7 +430,7 @@ elif answer_type == "automaton" and eval_type == "same_as":
         elif match :
             score = 100
             grade = (score, feedback_match)
-        elseif not match and equi:
+        elseif equi:
             score = 0
             grade=(score, feedback_equi_not_identical)
         else:
