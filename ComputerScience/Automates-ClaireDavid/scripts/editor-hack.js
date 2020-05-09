@@ -9,7 +9,7 @@ drawers.forEach((drawer) => {
     const component = drawer.ngElementStrategy.componentRef.instance;
     component.onValidate = function(instance) {
         if (typeof(instance.automaton) === 'string') {
-            console.log(automatonFromString(instance.automaton));
+            instance.automaton = automatonFromString(instance.automaton);
         }
     }
 })
