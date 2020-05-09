@@ -2,6 +2,7 @@
 
 // ORIGINAL SOURCE CODE: https://github.com/PremierLangage/components/blob/master/src/app/components/automaton-editor/automaton-editor.component.ts
 
+// GET THE INSTANCES OF AutomatonEditorComponent FROM THE PAGE
 const editors = document.querySelectorAll('c-automaton-editor');
 
 const addKeyboardListenerToPromptInput = () => {
