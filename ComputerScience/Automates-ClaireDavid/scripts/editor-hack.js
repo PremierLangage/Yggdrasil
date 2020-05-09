@@ -214,7 +214,7 @@ editors.forEach((editor) => {
                                 console.log('delete')
                                 this.instance.repaint();
                             }); */
-                            this.instance.reset();
+                            jsPlumb.reset();
                             //console.log('connections', this.instance.getAllConnections())
                             //console.log('endpoings', this.instance.selectEndpoints())
                             // jsPlumb.revalidate(node);
