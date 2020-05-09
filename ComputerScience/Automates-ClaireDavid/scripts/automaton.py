@@ -15,6 +15,16 @@ from components import AutomatonDrawer, AutomatonEditor
 
 import fa, reex
 
+
+def same_as( auto1 , auto2 )
+    ''' Return True if auto1 and auto2 coincide
+            states names
+            initial, final states and transitions
+        :param auto1 automaton in string_notation
+        :param auto2 automaton in string_notation
+    '''
+
+
 def fado_from_string(string_notation):
     nfa = fa.NFA()
     lines = string_notation.splitlines();
