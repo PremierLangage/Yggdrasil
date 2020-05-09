@@ -441,14 +441,16 @@ class Automaton:
         :raise TypeError if regex is not a string.
         """
 
+        # epsilon symbol in lego
+        epsilon = ''
+
         if not isinstance(regex, str):
             raise TypeError('from_regex: Excepted an automaton in regex notation')
 
-        # syntax check for simple expression
         if simple:
             if not Automaton.syntax_simple_regex(regex, alphabet) :
                     raise Exception("Syntax error : this is not a simple regex")        
-            regex = regex.replace('.', '').replace('+', '|').replace('€','').replace('ε','')
+            regex = regex.replace('.', '').replace('+', '|').replace('€',epsilon).replace('ε',epsilon)
 
         return Automaton(lego.parse(regex).to_fsm().reduce())
 
