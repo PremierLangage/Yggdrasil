@@ -793,8 +793,8 @@ class Automaton:
 
         for s in objectNotation['states']:
             nfa.addState(s)
-        for a in objectNotation['alphabet']:
-            nfa.addSigma(a)
+        for symb in objectNotation['alphabet']:
+            nfa.addSigma(symb)
         for s in objectNotation['initialStates']:
             nfa.addInitial(nfa.stateIndex(s))       
         for s in objectNotation['acceptingStates']:
