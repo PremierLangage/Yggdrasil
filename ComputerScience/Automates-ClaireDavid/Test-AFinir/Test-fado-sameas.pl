@@ -52,6 +52,8 @@ same_as_test = Automaton.same_as(enonce,enonce2)
 viewer_enonce = AutomatonDrawer()
 viewer_enonce.automaton = enonce
 
+string_solution = enonce
+
 #langage solution -- le nom solution est forcé par le template
 solution = Automaton.parse(enonce)
 ==
