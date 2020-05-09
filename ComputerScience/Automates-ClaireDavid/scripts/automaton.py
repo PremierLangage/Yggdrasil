@@ -502,7 +502,7 @@ class Automaton:
 
     @staticmethod
     def fado_from_editor(editor):
-        return fado_from_object_notation(editor.automaton)
+        return Automaton.fado_from_object_notation(editor.automaton)
     
 
     @staticmethod
