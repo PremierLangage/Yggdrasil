@@ -23,6 +23,18 @@ def same_as( auto1 , auto2 )
         :param auto1 automaton in string_notation
         :param auto2 automaton in string_notation
     '''
+    fado1 = fado_from_string(auto1)
+    fado2 = fado_from_string(auto2)
+
+    states_match = sorted(fado1.states) == sorted(fado2.states)
+    initial_states_match = sorted(fado1.initials) == sorted(fado2.initials)
+    final_states_match = sorted(fado1.accepting) == sorted(fado2.accepting)
+    alphabet_match = sorted(fado1.alphabet) == sorted(fado2.alphabet) # useless to be removed?
+    transition_match = sorted(fado1.transition) == sorted(fado2.transition)
+
+    return states_match and initial_states_match and final_states_match and alphabet_match and transition_match
+
+
 
 
 def fado_from_string(string_notation):
