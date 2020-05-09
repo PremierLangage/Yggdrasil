@@ -8,8 +8,8 @@ text==
 
 Ecrire une fonction `repete` à deux paramètres (un entier `n` une liste `ll`)  qui retourne une nouvelle liste composée de n copies de chaque éléments de `l`.
 
-Par exemple,  `repete(6,["Non"]) donne ['Non', 'Non', 'Non', 'Non', 'Non', 'Non']<\br>
-
+Par exemple,  `repete`(6,["Non"]) donne ['Non', 'Non', 'Non', 'Non', 'Non', 'Non']<\br>
+`repete`(2,[4,"a",[42,13]]donne [4,"a",[42,13],4,"a",[42,13]]
 taboo: Ne pas utiliser la fonction <font style="color:red;">{{taboo}}</font> des listes.
 ==
 
@@ -27,12 +27,12 @@ def repete(n,lst):
 
 ==
 pltest0==
->>> repete(6,[Non])
+>>> repete(6,["Non"])
 ['Non', 'Non', 'Non', 'Non', 'Non', 'Non']
 >>> repete(0,[1])
 []
 >>> repete(5,[1,2])
 [1, 2], 1, 2, 1, 2, 1, 2, 1, 2]
->>> repete4,repete(3,[]))
+>>> repete(4,repete(3,[]))
 []
 ==
