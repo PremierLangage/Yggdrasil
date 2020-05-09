@@ -67,7 +67,7 @@ On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
 Donnez l'automate deterministe complet obtenu par l'algo vu en cours à partir de l'automate donné. <br>
 <br>
 **Contraintes d'écriture pour l'évaluation:**<br>
-Afin de vérifier la correction de vos calculs, vous respecterrez les conventions suivantes:
+Afin de vérifier la correction de vos calculs et pas seulement la forme de l'automate, vous respecterrez les conventions suivantes:
 <ul>
 <li> L'état S0 sera l'état initial de votre automate. <br>*(Si vous avez besoin de plusieurs états initiaux, relisez votre cours)*
 <li> Les états Sj pour j>0 représenteront les positions dans l'ordre de numérotation de l'expression.<br>
