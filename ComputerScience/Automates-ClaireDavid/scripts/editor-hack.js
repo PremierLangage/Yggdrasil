@@ -476,7 +476,7 @@ function addKeyboardListenerToPromptInput() {
     }, 1000);
 };
 
-// CHANGE STRING NOTATION PARSINGs
+// CHANGE STRING NOTATION PARSING
 function automatonFromString(input) {
     const lines = input.split(/\r?\n/);
     const automaton = {
