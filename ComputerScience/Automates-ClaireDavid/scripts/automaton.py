@@ -632,6 +632,7 @@ class Automaton:
 ## ancienne version qui autorise d'avoir "states : symbols > states"
 # Semble autoriser à avoir plusieurs transitions sur une même ligne avec des ; entre deux transitions
 # mais j'ai l'impression que les fromstates ne changent jamais du coup c'est bizarre.
+
 #                elif parseState == 'transitions':
 #                    state_rest = line.split(':');
 #                    fromStates = state_rest[0].split(',')
