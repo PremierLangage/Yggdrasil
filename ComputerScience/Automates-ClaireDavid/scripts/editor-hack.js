@@ -78,6 +78,25 @@ editors.forEach((editor) => {
     };
 
 
+    component.setZoom = (zoom, transformOrigin) => {
+        transformOrigin = transformOrigin || [ 0.5, 0.5 ];
+        const instance = component.instance;
+        const el = instance.getContainer();
+        const prefix = [ "webkit", "moz", "ms", "o" ];
+        const scale = "scale(" + zoom + ")";
+        const oString = (transformOrigin[0] * 100) + "% " + (transformOrigin[1] * 100) + "%";
+
+        for (let i = 0; i < prefix.length; i++) {
+            el.style[prefix[i] + "Transform"] = scale;
+            el.style[prefix[i] + "TransformOrigin"] = oString;
+        }
+
+        el.style["transform"] = scale;
+        el.style["transformOrigin"] = oString;
+        
+        instance.setZoom(zoom);    
+    };
+
     component.focus = function (node, connection) {
         const FINAL_STATE = 'automaton-state--final';
         const INITIAL_STATE = 'automaton-state--initial';
@@ -85,6 +104,7 @@ editors.forEach((editor) => {
         this.unfocus();
         this.node = node;
         this.connection = connection;
+        this.setZoom(2)
         // CLICK ON STATE
         if (this.node) {
             this.node.classList.remove('focused');
