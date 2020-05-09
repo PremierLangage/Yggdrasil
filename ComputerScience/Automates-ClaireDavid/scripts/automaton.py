@@ -468,6 +468,8 @@ class Automaton:
         :return an Automaton instance.
         :raise TypeError if regex is not a string.
         """
+
+        # epsilon symbol in Fado
         epsilon = '@epsilon'
 
         if not isinstance(regex, str):
