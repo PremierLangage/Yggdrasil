@@ -13,7 +13,7 @@ eval_type = "same_as"
 
 alphabet = "a,b"
 
-
+### A finir
 #automate solution -- le nom solution est forcé par le template
 enonce = '''
     #states
@@ -80,6 +80,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
