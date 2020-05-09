@@ -400,7 +400,7 @@ editors.forEach((editor) => {
     }
 
 
-    // REGISTER NEW PROPERTIES
+    // REGISTER NEW PROPERTIES (THE REGISTERED PROPERTIES ARE USABLE INSIDE THE GRADER/BUILDER)
         
     component.addProperty({ name: 'textSetInitial', default: 'Initial' });
     component.addProperty({ name: 'textSetNonInitial', default: 'Non initial' });
