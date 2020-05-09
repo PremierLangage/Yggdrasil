@@ -8,6 +8,7 @@ const drawers = document.querySelectorAll('c-automaton-drawer');
 drawers.forEach((drawer) => {
     const component = drawer.ngElementStrategy.componentRef.instance;
     component.onRender = function() {
+        console.log('REDNERss')
         let i = 0;
         try {
             this.renderer.graph = automatonToDotFormat(
