@@ -54,8 +54,7 @@ text==
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
 Donnez l'automate des positions correspondant à l'expression {{ message }} <br>
 <br>
-**Contraintes d'écriture pour l'évaluation:**<br>
-Compte tenu des bugs de l'éditeur sur le renommage des états, vous adopterez la convention suivante:
+**Contraintes d'écriture pour l'évaluation:** vous adopterez la convention suivante:
 <ul>
 <li> L'état S0 sera l'état initial de votre automate. <br>
 <li> Les états Sj pour j>0 représenteront les positions dans l'ordre de numérotation de l'expression.<br>
