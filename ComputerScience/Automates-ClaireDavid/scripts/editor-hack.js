@@ -441,7 +441,7 @@ editors.forEach((editor) => {
             };
             container.appendChild(zoomButtons);
         }
-    }, 1000);
+    }, 1000); // since zoomable property is registered dynamically wait before getting the value.
 
 });
 
