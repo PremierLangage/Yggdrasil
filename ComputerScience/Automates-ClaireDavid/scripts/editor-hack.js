@@ -122,12 +122,14 @@ editors.forEach((editor) => {
         
         
         // CLICK ON STATE
-        if (this.node) {
-            this.node.classList.remove('focused');
-            this.node.classList.add('focused');
-            const isFinalState = this.node.classList.contains(finalStateClassName);
-            const isInitialState = this.node.classList.contains(initialStateClassName);
-            const focusedStateName = this.node.id;
+        if (node) {
+            const classes = node.classList;
+            classes.remove('focused');
+            classes.add('focused');
+    
+            const isFinalState = classes.contains(finalStateClassName);
+            const isInitialState = classes.contains(initialStateClassName);
+            const focusedStateName = node.id;
 
             // INITIAL
             if (isInitialState) {
@@ -149,6 +151,8 @@ editors.forEach((editor) => {
                     }
                 });
             }
+
+
             if (isFinalState) {
                 actions.push({
                     name: this.textSetNonFinal,
