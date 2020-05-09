@@ -47,6 +47,7 @@ solution = '''
     S4:b>S2
 '''
 
+# Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
 string_solution = solution
 
 
@@ -73,6 +74,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
