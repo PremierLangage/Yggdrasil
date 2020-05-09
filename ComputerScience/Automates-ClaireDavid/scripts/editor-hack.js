@@ -291,8 +291,8 @@ editors.forEach((editor) => {
             node.classList.remove('focused');
             node.classList.add('focused');
 
-            const isFinalState = classes.contains(FINAL_STATE_CLASS);
-            const isInitialState = classes.contains(INITIAL_STATE_CLASS);
+            const isFinalState = node.classList.contains(FINAL_STATE_CLASS);
+            const isInitialState = node.classList.contains(INITIAL_STATE_CLASS);
 
             if (isInitialState) {
                 actions.push(this.actionSetNonInitial());
