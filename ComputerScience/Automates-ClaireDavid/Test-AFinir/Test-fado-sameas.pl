@@ -61,7 +61,8 @@ solution = Automaton.parse(enonce)
 # l'automate minimisé du langage solution
 text==
 {{ viewer_enonce|component }}
-{{ solution_view|component }}
+résultat : {{ same_as_test }}
+<br>
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez l'automate minimal déterministe complet correspondant à l'automate ci-dessus. <br>
 {% if attempt < maxattempt and score != 100 %}
