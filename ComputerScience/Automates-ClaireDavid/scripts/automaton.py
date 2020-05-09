@@ -553,7 +553,7 @@ class Automaton:
 
 
     @staticmethod
-    def from_string_notation_bis(stringNotation: str):
+    def from_string_notation(stringNotation: str):
         """
         Creates a minimal deterministic Automaton from a string notation.
         (the automaton is determinized and minimized if needed)
@@ -663,95 +663,6 @@ class Automaton:
             "transitions": transitions
         })
 
-
-    @staticmethod
-    def from_string_notation(stringNotation: str):
-        """
-        Creates a minimal deterministic Automaton from a string notation.
-        (the automaton is determinized and minimized if needed)
-
-        :param stringNotation An automaton in the string notation.
-        :return Automaton object.
-        :raise TypeError if stringNotation is not a string.
-        :raise SyntaxError if stringNotation cannot be parsed.
-        """
-        
-        if not isinstance(stringNotation, str):
-            raise TypeError('from_string_notation: Excepted an automaton in string notation')
-
-        lines = stringNotation.split('\n');
-
-        states: [str] = []
-        initials: [str] = []
-        accepting: [str] = []
-        alphabet: [str] = []
-        transitions = []
-        parseState = None
-
-        parseCounts = {
-            'states' : 0,
-            'initials' : 0,
-            'accepting' : 0,
-            'alphabet' : 0,
-            'transitions' : 0
-        }
-
-        for i in range(len(lines)):
-            line = lines[i].strip()
-            if len(line) == 0:
-                continue;
-            if line[0] == '#':
-                parseState = line[1:]
-                if parseState not in parseCounts:
-                    raise SyntaxError('Line ' + (i + 1).toString() + ': invalid section name ' +
-                                    parseState + '. Must be one of: states, initials, \
-                                    accepting, alphabet, transitions.')
-                else:
-                    parseCounts[parseState] += 1
-                    if parseCounts[parseState] > 1:
-                        raise SyntaxError(f'Line {(i + 1)}: duplicate section name {parseState}.');
-            else:
-                if parseState is None:
-                    raise SyntaxError('Line ' + (i + 1).toString() + ': no #section declared. \
-                                    Add one section: states, initial, accepting, \
-                                    alphabet, transitions.')
-                elif parseState == 'states':
-                    states += line.split(';')
-                elif parseState == 'initials':
-                    initials += line.split(';')
-                elif parseState == 'accepting':
-                    accepting += line.split(';')
-                elif parseState == 'alphabet':
-                    alphabet += line.split(';')
-                elif parseState == 'transitions':
-                    state_rest = line.split(':');
-                    fromStates = state_rest[0].split(',')
-                    parts = state_rest[1].split(';')
-                    symbols: [str] = [];
-                    toStates: [str] = []
-                    for j in range(len(parts)):
-                        left_right = parts[j].split('>');
-                        symbols = left_right[0].split(',');
-                        toStates = left_right[1].split(',');
-                    for fromState in fromStates:
-                        for toState in toStates:
-                            transitions.append({
-                                "fromState": fromState,
-                                "toState": toState,
-                                "symbols": symbols
-                            })
-        
-        for k in parseCounts:
-            if parseCounts[k] != 1:
-                raise SyntaxError('Specification missing #' + parseCounts[k] +' section.')
-        
-        return Automaton.from_object_notation({
-            "states": states,
-            "initialStates": initials,
-            "alphabet": alphabet,
-            "acceptingStates": accepting,
-            "transitions": transitions
-        })
 
     @staticmethod
     def from_object_notation(objectNotation: dict):
@@ -1469,6 +1380,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
