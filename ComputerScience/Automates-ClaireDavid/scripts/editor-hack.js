@@ -357,7 +357,9 @@ editors.forEach((editor) => {
 
 
     component.onValidate = function (instance) {
-        console.log(instance)
+        if (typeof(instance.automaton) === 'string') {
+            console.log(instance.automaton)
+        }
     }
     // REGISTER NEW PROPERTIES (THE REGISTERED PROPERTIES ARE USABLE INSIDE THE GRADER/BUILDER)
         
