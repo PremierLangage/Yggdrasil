@@ -804,7 +804,7 @@ class Automaton:
             fromState = transition['fromState']
             for symb in transition['symbols']:
                 nfa.addTransition(nfa.stateIndex(fromState), 
-                                  sym,
+                                  symb,
                                   nfa.stateIndex(toState))
             # est-il possible de voir apparaitre une transition 2fois? si oui tester ça:w
 
