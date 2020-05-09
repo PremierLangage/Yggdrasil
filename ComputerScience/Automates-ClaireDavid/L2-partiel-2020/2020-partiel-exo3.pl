@@ -52,9 +52,6 @@ solution = '''
     S6:a>S7
 '''
 
-#viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
-viewer_enonce = AutomatonDrawer()
-viewer_enonce.automaton = solution
 ==
 
 #* Texte de l'énoncé
