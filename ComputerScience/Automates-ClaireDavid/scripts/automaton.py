@@ -612,7 +612,7 @@ class Automaton:
                 elif parseState == 'alphabet':
                     alphabet += line.split(';')
                 elif parseState == 'transitions':
-                    # si on autorise à avoir plusieurs transitions sur une même ligne avec des ; entre
+                    # autorise à avoir plusieurs transitions sur une même ligne avec des ; entre
                     parts = line.split(';')
                     for j in range(len(parts)):
                         state_rest = parts[j].split(':');
