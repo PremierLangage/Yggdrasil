@@ -576,7 +576,7 @@ function automatonFromString(input) {
     automaton.alphabet = alphabet;
     automaton.acceptingStates = accepting;
     automaton.transitions = transitions;
-
+    console.log(automaton)
     return automaton;
 }
 
