@@ -16,7 +16,7 @@ eval_type = "same_as"
 alphabet = "a,b"
 
 #message de l'énoncé décrivant le langage
-message = '```(a+ε)(ba+b)*```'
+message = '```(a*b+bb*a)*```'
 
 #automate solution -- le nom solution est forcé par le template
 solution = '''
