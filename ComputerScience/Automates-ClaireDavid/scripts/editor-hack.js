@@ -11,7 +11,7 @@ drawers.forEach((drawer) => {
         console.log('REDNERss')
         let i = 0;
         try {
-            console.log(automatonToDotFormat)
+            console.log(this, automatonToDotFormat)
             this.renderer.graph = automatonToDotFormat(
                 automatonFromString(this.automaton)
             );
