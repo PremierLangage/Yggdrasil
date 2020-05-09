@@ -25,7 +25,6 @@ solution = '''
     S2
     S3
     S4
-    S5
     #initials
     S0
     #accepting
