@@ -37,7 +37,10 @@ const createGetterSetter = (component, name) => {
 
 editors.forEach((editor) => {
     const component = editor.ngElementStrategy.componentRef.instance;
-
+    
+    const FINAL_STATE_CLASS = 'automaton-state--final';
+    const INITIAL_STATE_CLASS = 'automaton-state--initial';
+    
     addProperty(component, { name: 'textSetInitial', default: 'Initial' });
     addProperty(component, { name: 'textSetNonInitial', default: 'Non initial' });
     addProperty(component, { name: 'textSetFinal', default: 'Final' });
@@ -77,9 +80,7 @@ editors.forEach((editor) => {
         );
     };
 
-    component.FINAL_STATE_CLASS = 'automaton-state--final';
-    component.INITIAL_STATE_CLASS = 'automaton-state--initial';
-    
+  
     /*
     component.zoom = 1;
     component.setZoom = (zoom, transformOrigin) => {
@@ -107,6 +108,7 @@ editors.forEach((editor) => {
     */
     
     component.actionSetInitial = () => {
+        const stateName = this.node.id;
         return {
             name: this.textSetInitial,
             action: () => {
@@ -116,7 +118,18 @@ editors.forEach((editor) => {
             }
         }
     };
-
+    
+    component.actionSetNonInitial = () => {
+        const stateName = this.node.id;
+        return {
+            name: this.textSetNonInitial,
+            action: () => {
+                this.removeInitial(stateName);
+                this.node.classList.remove(INITIAL_STATE_CLASS);
+                this.focus(this.node);
+            }
+        };
+    };
 
     component.getStateActions = () => {
         const actions = [];
@@ -134,24 +147,9 @@ editors.forEach((editor) => {
 
         if (isInitialState) {
             // SET NON INITIAL
-            actions.push({
-                name: this.textSetNonInitial,
-                action: () => {
-                    this.removeInitial(stateName);
-                    this.node.classList.remove(INITIAL_STATE_CLASS);
-                    this.focus(this.node);
-                }
-            });
+            actions.push();
         } else {
-            // SET INITIAL
-            actions.push({
-                name: this.textSetInitial,
-                action: () => {
-                    this.initialStates.push(stateName);
-                    this.node.classList.add(INITIAL_STATE_CLASS);
-                    this.focus(this.node);
-                }
-            });
+            actions.push(this.actionSetInitial());
         }
 
 
