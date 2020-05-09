@@ -77,6 +77,7 @@ editors.forEach((editor) => {
         );
     };
 
+    /*
     component.zoom = 1;
     component.setZoom = (zoom, transformOrigin) => {
         transformOrigin = transformOrigin || [ 0.5, 0.5 ];
@@ -100,6 +101,9 @@ editors.forEach((editor) => {
         const delta = Math.sign(event.deltaY);
         component.setZoom(component.zoom + (0.5 * delta));
     });
+    */
+
+
     component.focus = function (node, connection) {
  
         const FINAL_STATE = 'automaton-state--final';
@@ -154,6 +158,8 @@ editors.forEach((editor) => {
                     }
                 });
             }
+
+
             actions.push({
                 name: this.textRenameState,
                 action: async () => {
@@ -203,6 +209,7 @@ editors.forEach((editor) => {
 
                             // replace in position
                             console.log(this.instance)
+                            //this.instance.rep
                             this.node.innerHTML = node.id = newState;
                             this.node.innerHTML += '<div class="endpoint"></div>'
                         }
