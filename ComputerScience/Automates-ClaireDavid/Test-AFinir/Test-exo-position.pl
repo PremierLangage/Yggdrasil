@@ -51,7 +51,7 @@ solution = '''
 viewer_enonce = AutomatonDrawer()
 viewer_enonce.automaton = solution
 
-# Permet de faire la comparaison same_as
+# Permet de faire la comparaison same_as imposé le template
 string_solution = solution
 
 ==
