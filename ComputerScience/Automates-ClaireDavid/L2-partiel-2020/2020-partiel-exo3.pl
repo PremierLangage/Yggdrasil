@@ -2,7 +2,7 @@
 extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
-title = Automate des positions
+title = Partiel 2020 Exo3
 
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
@@ -14,7 +14,7 @@ eval_type = "same_as"
 alphabet = "a,b"
 
 #message de l'énoncé décrivant le langage
-message = '```a*b(b(aa+ε))*a```'
+message = '```(b.(aa+a+espilon))*ab*a```'
 
 #automate solution -- le nom solution est forcé par le template
 solution = '''
