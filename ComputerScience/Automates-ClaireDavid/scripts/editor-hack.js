@@ -209,8 +209,8 @@ editors.forEach((editor) => {
 
                             // replace in position
                             console.log(this.instance)
-                            this.instance.setIdChanged(stateName, newState);
-                            this.instance.repaintEverything();
+                            jsPlumb.setIdChanged(stateName, newState);
+                            jsPlumb.repaintEverything();
                             this.node.innerHTML = node.id = newState;
                             this.node.innerHTML += '<div class="endpoint"></div>'
                         }
