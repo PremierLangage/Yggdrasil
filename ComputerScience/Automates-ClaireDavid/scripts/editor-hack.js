@@ -388,6 +388,7 @@ editors.forEach((editor) => {
         // FOCUSED ELEMENT IS A TRANSITION
         if (this.connection) {
             const canvas = (connection).canvas;
+            canvas.classList.remove('focused');
             canvas.classList.add('focused');
             actions.push(this.actionRenameTransition());
             actions.push(this.actionDeleteTransition());
