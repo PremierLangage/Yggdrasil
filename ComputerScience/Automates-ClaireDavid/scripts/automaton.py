@@ -612,13 +612,15 @@ class Automaton:
                 elif parseState == 'alphabet':
                     alphabet += line.split(';')
                 elif parseState == 'transitions':
+                    ## variante avec des transitions de la forme state:symbols>state avec les lettres séparées par des , quand il y en a plusieurs
+                    # autorise à avoir plusieurs transitions sur une même ligne avec des ; entre deux transitions
                     parts = line.split(';')
                     for part in parts:
                         state_rest = part.split(':')
                         fromState = state_rest[0]
                         rest = state_rest[1].split('>')
                         symbols = parts[0].split(',')
-                        toState: [str] = parts[1]
+                        toState: [str] = rest[1]
                         for symb in symbols:
                             transitions.append({
                                 "fromState": fromState,
@@ -1377,6 +1379,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
