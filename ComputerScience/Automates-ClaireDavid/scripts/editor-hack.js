@@ -556,13 +556,11 @@ function automatonFromString(input) {
                     const rest = state_rest[1].split('>');
                     const symbols = rest[0].split(',');
                     const toState = rest[1];
-                    for (const symb of symbols) {
-                        transitions.push({
-                            fromState: fromState,
-                            toState: toState,
-                            symbols: symb
-                        });
-                    }
+                    transitions.push({
+                        fromState: fromState,
+                        toState: toState,
+                        symbols: symbols
+                    });
                 }
             }
         }
@@ -580,7 +578,6 @@ function automatonFromString(input) {
     automaton.alphabet = alphabet;
     automaton.acceptingStates = accepting;
     automaton.transitions = transitions;
-    console.log(automaton)
     return automaton;
 }
 
