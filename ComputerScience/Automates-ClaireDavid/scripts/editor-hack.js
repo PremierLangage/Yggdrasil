@@ -104,14 +104,25 @@ editors.forEach((editor) => {
     */
 
 
+    /**
+     * Override the function that handles focus of state|connection.
+     * @param node the focused node (may be null if the focused element is connection).
+     * @param connection the focused connection (may be null if the focused element is a node).
+    */
     component.focus = function (node, connection) {
  
         const FINAL_STATE = 'automaton-state--final';
         const INITIAL_STATE = 'automaton-state--initial';
+        
         const actions = [];
+        
         this.unfocus();
+        
         this.node = node;
         this.connection = connection;
+        
+        
+        
         // CLICK ON STATE
         if (this.node) {
             this.node.classList.remove('focused');
