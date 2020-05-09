@@ -391,7 +391,7 @@ editors.forEach((editor) => {
         const zx = cx - zoom * cx;
         const zy = cy - zoom * cy;
 
-    const transform = 'matrix(' + zoom + ', 0, 0, ' + zoom + ', ' + zx + ', ' + zy + ')');
+    const transform = 'matrix(' + zoom + ', 0, 0, ' + zoom + ', ' + zx + ', ' + zy + ')';
 
 
         for (let i = 0; i < prefix.length; i++) {
