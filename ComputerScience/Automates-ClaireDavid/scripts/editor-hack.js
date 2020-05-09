@@ -376,6 +376,27 @@ editors.forEach((editor) => {
     component.createGetterSetter('transitions');
 
 
+    // ADD ZOOMING FEATURE
+
+    component.setZoom = (zoom, transformOrigin) => {
+        transformOrigin = transformOrigin || [ 0.5, 0.5 ];
+        const instance = component.instance;
+        const el = instance.getContainer();
+        const prefix = [ "webkit", "moz", "ms", "o" ];
+        const scale = "scale(" + zoom + ")";
+        const oString = (transformOrigin[0] * 100) + "% " + (transformOrigin[1] * 100) + "%";
+
+        for (let i = 0; i < prefix.length; i++) {
+            el.style[prefix[i] + "Transform"] = scale;
+            el.style[prefix[i] + "TransformOrigin"] = oString;
+        }
+
+        el.style["transform"] = scale;
+        el.style["transformOrigin"] = oString;
+        
+        instance.setZoom(zoom);
+    };
+
     const container = editor.querySelector('.automaton-editor-component');
     const zoomButtons = document.createElement('div');
     zoomButtons.style.position = 'absolute';
@@ -399,36 +420,15 @@ editors.forEach((editor) => {
       
     let zoom = 1;
     zoomIn.onclick = () => {
-        alert('zoomIn')
+        zoom = Math.max(1.2, zoom + 0.1);
+        component.setZoom(zoom);
     };
-    zoomOut.onclick = () => {
 
+    zoomOut.onclick = () => {
+        zoom = Math.min(0.2, zoom - 0.1);
+        component.setZoom(zoom);
     };
     container.appendChild(zoomButtons);
-
-    component.setZoom = (zoom, transformOrigin) => {
-        transformOrigin = transformOrigin || [ 0.5, 0.5 ];
-        const instance = component.instance;
-        const el = instance.getContainer();
-        const prefix = [ "webkit", "moz", "ms", "o" ];
-        const scale = "scale(" + zoom + ")";
-        const oString = (transformOrigin[0] * 100) + "% " + (transformOrigin[1] * 100) + "%";
-
-        for (let i = 0; i < prefix.length; i++) {
-            el.style[prefix[i] + "Transform"] = scale;
-            el.style[prefix[i] + "TransformOrigin"] = oString;
-        }
-
-        el.style["transform"] = scale;
-        el.style["transformOrigin"] = oString;
-        
-        instance.setZoom(zoom);
-    };
-/* 
-    editor.addEventListener("wheel", event => {
-        const delta = Math.sign(event.deltaY);
-        component.setZoom(component.zoom + (0.5 * delta));
-    }); */
 
 });
 
