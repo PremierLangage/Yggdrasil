@@ -65,7 +65,7 @@ text==
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez l'automate des positions correspondant à l'expression {{ message }} <br>
 <br>
-Contraintes d'écriture pour l'évaluation:<br>
+**Contraintes d'écriture pour l'évaluation:**<br>
 Compte tenu des bugs de l'éditeur sur le renommage des états, vous adopterez la convention suivante:
 <ul>
 <li> L'état S0 sera l'état initial de votre automate des positions
