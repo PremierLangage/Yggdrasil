@@ -22,6 +22,7 @@ def same_as( auto1 , auto2 ):
             initial, final states and transitions
         :param auto1 automaton in string_notation
         :param auto2 automaton in string_notation
+        :raise If a or b cannot be parsed.
     '''
     fado1 = fado_from_string(auto1)
     fado2 = fado_from_string(auto2)
