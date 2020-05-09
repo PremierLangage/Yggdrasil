@@ -395,6 +395,7 @@ editors.forEach((editor) => {
         }
 
         this.actions = actions;
+
         this.detectChanges();
     } 
 });
