@@ -427,9 +427,9 @@ elif answer_type == "automaton" and eval_type == "same_as":
         if  attempt >= maxattempt and (error or error2 or not match): # error or no match after timeout
             grade = (score, feedback_timeout)
         elif error1:
-            grade = (-1, feedback_syntax_error.format(error))
+            grade = (-1, feedback_syntax_error.format(error1))
         elif error2:
-            grade = (-1, feedback_syntax_error.format(error))
+            grade = (-1, feedback_syntax_error.format(error2))
         elif match :
             score = 100
             grade = (score, feedback_match)
