@@ -77,6 +77,9 @@ editors.forEach((editor) => {
         );
     };
 
+    component.finalStateClassName = 'automaton-state--final';
+    component.initialStateClassName = 'automaton-state--initial';
+    
     /*
     component.zoom = 1;
     component.setZoom = (zoom, transformOrigin) => {
@@ -102,10 +105,22 @@ editors.forEach((editor) => {
         component.setZoom(component.zoom + (0.5 * delta));
     });
     */
+    
+    component.actionSetInitial = () => {
+        return {
+            name: this.textSetInitial,
+            action: () => {
+                this.initialStates.push(stateName);
+                this.node.classList.add(initialStateClassName);
+                this.focus(this.node);
+            }
+        }
+    };
 
-    component.getStateActions = (node) => {
+
+    component.getStateActions = () => {
         const actions = [];
-        const classes = node.classList;
+        const classes = this.node.classList;
         const finalStateClassName = 'automaton-state--final';
         const initialStateClassName = 'automaton-state--initial';
     
@@ -113,12 +128,12 @@ editors.forEach((editor) => {
         classes.remove('focused');
         classes.add('focused');
 
+        const stateName = this.node.id;
         const isFinalState = classes.contains(finalStateClassName);
         const isInitialState = classes.contains(initialStateClassName);
-        const stateName = node.id;
 
-        // INITIAL
         if (isInitialState) {
+            // SET NON INITIAL
             actions.push({
                 name: this.textSetNonInitial,
                 action: () => {
@@ -128,6 +143,7 @@ editors.forEach((editor) => {
                 }
             });
         } else {
+            // SET INITIAL
             actions.push({
                 name: this.textSetInitial,
                 action: () => {
