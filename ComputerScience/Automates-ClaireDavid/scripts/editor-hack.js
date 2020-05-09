@@ -209,7 +209,8 @@ editors.forEach((editor) => {
 
                             // replace in position
                             console.log(this.instance)
-                            jsPlumb.setIdChanged(stateName, newState);
+                            console.log('connections', this.instance.getAllConnections())
+                            console.log('endpoings', this.instance.selectEndpoints())
                             jsPlumb.revalidate(node);
                             this.node.innerHTML = node.id = newState;
                             this.node.innerHTML += '<div class="endpoint"></div>'
