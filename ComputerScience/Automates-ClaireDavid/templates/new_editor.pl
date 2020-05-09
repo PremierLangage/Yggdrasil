@@ -314,7 +314,7 @@ error = ""
 
 ## Get the student answer:
 if answer_type == "automaton" :
-    fado_student_answer = fado_from_editor(editor)
+    fado_student_answer = Automaton.fado_from_editor(editor)
     student_answer = editor
     info_student_answer , _ = Automaton.properties(editor)
     # Automaton.properties will detect if editor is the an instance of AutomatonEditor
