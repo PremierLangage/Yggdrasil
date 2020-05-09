@@ -28,7 +28,7 @@ solution = '''
     #initials
     S0
     #accepting
-    S4;S5
+    S1;S3;S4
     #alphabet
     a
     b
