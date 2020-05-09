@@ -271,6 +271,9 @@ editors.forEach((editor) => {
     }
 
 
+    /**
+     * 
+     */
     component.actionRenameTransition = function() {
         return {
             name: this.textRenameSymbol,
@@ -315,6 +318,9 @@ editors.forEach((editor) => {
         };
     }
 
+    /**
+     * 
+     */
     component.actionDeleteTransition = function() {
         return {
             name: this.textDeleteSymbol,
