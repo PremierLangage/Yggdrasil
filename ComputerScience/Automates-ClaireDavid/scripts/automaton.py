@@ -125,7 +125,7 @@ class Automaton:
     ### Create from a regular expression.
     Automaton.parse('ab(a|b|c)*')
 
-    ### Create from a string notatation.
+    ### Create from a string notation.
     Automaton.parse(
     '''
         #states
