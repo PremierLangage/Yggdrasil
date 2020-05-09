@@ -32,18 +32,18 @@ enonce = '''
 
 automate_test = '''
     #states
-    S0
+    S2
     S1
     #initials
-    S0
+    S2
     #accepting
-    S0
+    S2
     #alphabet
     a
     b
     #transitions
-    S1:b>S0
-    S0:a>S1
+    S1:b>S2
+    S2:a>S1
 '''
 
 same_as_test = same_as(enonce,automate_test)
