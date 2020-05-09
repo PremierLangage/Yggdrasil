@@ -26,11 +26,10 @@ def same_as( auto1 , auto2 ):
     fado1 = fado_from_string(auto1)
     fado2 = fado_from_string(auto2)
 
-    states_match = sorted(fado1.states) == sorted(fado2.states)
-    initial_states_match = sorted(fado1.initials) == sorted(fado2.initials)
-    final_states_match = sorted(fado1.accepting) == sorted(fado2.accepting)
-    alphabet_match = sorted(fado1.alphabet) == sorted(fado2.alphabet) # useless to be removed?
-    transition_match = sorted(fado1.transition) == sorted(fado2.transition)
+    states_match = sorted(fado1.States) == sorted(fado2.States)
+    initial_states_match = sorted(fado1.Initials) == sorted(fado2.Initials)
+    final_states_match = sorted(fado1.Final) == sorted(fado2.Final)
+    transition_match = sorted(fado1.delta) == sorted(fado2.delta)
 
     return states_match and initial_states_match and final_states_match and alphabet_match and transition_match
 
