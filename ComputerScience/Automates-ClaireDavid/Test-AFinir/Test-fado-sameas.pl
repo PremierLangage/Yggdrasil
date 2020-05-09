@@ -13,7 +13,7 @@ eval_type = "same_as"
 alphabet = "a,b"
 
 # automate de l'énoncé
-solution = '''
+enonce = '''
     #states
     S0
     S1
@@ -28,6 +28,23 @@ solution = '''
     S0:a>S1
     S1:b>S0
 '''
+
+automate_test = '''
+    #states
+    S0
+    S1
+    #initials
+    S0
+    #accepting
+    S0
+    #alphabet
+    a
+    b
+    #transitions
+    S0:a>S1
+    S1:b>S0
+'''
+
 
 #viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
 viewer_enonce = AutomatonDrawer()
