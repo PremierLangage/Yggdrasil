@@ -128,6 +128,7 @@ editors.forEach((editor) => {
      * 
      */
     component.actionSetNonInitial = () => {
+        console.log(this)
         const stateName = this.node.id;
         return {
             name: this.textSetNonInitial,
