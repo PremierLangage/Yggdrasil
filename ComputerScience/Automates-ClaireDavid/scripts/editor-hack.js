@@ -376,11 +376,27 @@ editors.forEach((editor) => {
     component.createGetterSetter('transitions');
 
 
-    const container = editor.querySelector('.automaton-editor-component')
+    const container = editor.querySelector('.automaton-editor-component');
+    const zoomButtons = document.createElement('div');
+    zoomButtons.style.position = 'absolute';
+    zoomButtons.style.zIndex = 10;
+    zoomButtons.style.bottom = '8px';
+    zoomButtons.style.right = '8px';
+    zoomButtons.style.display = 'flex';
+    zoomButtons.style.alignItems = 'center';
+
     const zoomIn = document.createElement('button');
-    zoomIn.value = 'ZOOM IN';
-    container.appendChild(zoomIn);
-    console.log(container)
+    zoomIn.innerHTML = 'ZOOM IN';
+    zoomButtons.appendChild(zoomIn);
+    const zoomOut = document.createElement('button');
+    zoomOut.innerHTML = 'ZOOM IN';
+    zoomButtons.appendChild(zoomOut);
+      
+    container.appendChild(zoomButtons);
+
+
+    
+    
     component.zoom = 1;
     component.setZoom = (zoom, transformOrigin) => {
         transformOrigin = transformOrigin || [ 0.5, 0.5 ];
