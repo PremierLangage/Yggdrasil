@@ -398,6 +398,7 @@ class Automaton:
                Sregex* -- Kleene star
         
            symbols '€' and 'ε' represent the empty word
+        
         :param alphabet if not specified alphabet contains all lowercaps letter
         """
         copie = chaine
