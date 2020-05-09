@@ -92,9 +92,9 @@ def fado_from_string(string_notation):
             raise SyntaxError('Specification missing #' + parseCounts[k] +' section.')
     return nfa
 
-
-def fado_from_editor(editor):
-    return fado_from_string(editor.automaton)
+# moved in automaton class
+#def fado_from_editor(editor):
+#    return fado_from_string(editor.automaton)
 
 def fado_to_string(nfa):
     states = '\n'.join(nfa.States)
@@ -499,6 +499,10 @@ class Automaton:
 #        if not isinstance(regex, str):
 #            raise TypeError('from_regex: Excepted an automaton in regex notation')
 #        return Automaton(lego.parse(regex).to_fsm().reduce())
+
+    @staticmethod
+    def fado_from_editor(editor):
+        return fado_from_string(editor.automaton)
 
     @staticmethod
     def from_editor(editor: AutomatonEditor):
