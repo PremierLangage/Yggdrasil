@@ -812,8 +812,8 @@ class Automaton:
             transition_match = sorted(fado1.delta) == sorted(fado2.delta)
 
             return states_match and initial_states_match and final_states_match and transition_match
-            except Exception as e:
-        return False, str(e)
+        except Exception as e:
+            return False, str(e)
     
     @staticmethod
     def accepts(obj, word: str):
