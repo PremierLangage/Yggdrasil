@@ -405,7 +405,7 @@ editors.forEach((editor) => {
 
             const container = editor.querySelector('.automaton-editor-component');
 
-            constainer.onclick = (e) => {
+            container.onclick = (e) => {
                 console.log(e);
             };
             const zoomButtons = document.createElement('div');
