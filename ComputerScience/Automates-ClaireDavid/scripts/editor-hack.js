@@ -379,7 +379,7 @@ editors.forEach((editor) => {
 
     component.onValidate = function (instance) {
         if (typeof(instance.automaton) === 'string') {
-            console.log(instance.automaton)
+            instance.automaton = automatonFromString(instance.automaton);
         }
     }
     // REGISTER NEW PROPERTIES (THE REGISTERED PROPERTIES ARE USABLE INSIDE THE GRADER/BUILDER)
@@ -581,8 +581,7 @@ function automatonFromString(input) {
     return automaton;
 }
 
-
- function automatonToDotFormat(automaton) {
+function automatonToDotFormat(automaton) {
     const result = ['digraph finite_state_machine {', '  rankdir=LR;'];
     const accStates = ['  node [shape = doublecircle];'];
 
