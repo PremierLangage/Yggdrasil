@@ -274,7 +274,7 @@ answer_type = str(answer_type)
 # CREATION OF THE AUTOMATON EDITOR
 # THE PROPERTIES OF THE EDITOR CAN BE CHANGED INSIDE 'generate' SCRIPT
 editor = Automaton.editor()
-editor.debug = True
+editor.debug = False
 editor.editorHeight = "500px"
 
 
@@ -435,7 +435,8 @@ elif answer_type == "automaton" and eval_type == "same_as":
             grade = (score, feedback_match)
         elif equi:
             score = 0
-            grade=(score, feedback_equi_not_identical)
+            feedback_test = "<p> {{ string_student_answer}}</p>"
+            grade=(score, feedback_test)
         else:
             score = 0
             grade=(score, feedback_nomatch)
