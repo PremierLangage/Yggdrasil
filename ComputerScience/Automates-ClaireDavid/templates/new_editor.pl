@@ -373,6 +373,7 @@ elif answer_type == "automaton" and eval_type == "mini_auto" :
             grade = (score, feedback_timeout)
         elif error:
             grade = (-1, feedback_syntax_error.format(error))
+            raise Exception(editor)
         elif match:
             expected_size = len(info_solution["states"])
             if not info_solution["complete"]:
@@ -451,6 +452,7 @@ else :
     score = 0
     grade=(score, feedback_nondef)
 ==
+
 
 
 
