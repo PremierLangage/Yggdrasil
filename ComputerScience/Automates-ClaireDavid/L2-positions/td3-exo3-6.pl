@@ -26,10 +26,11 @@ solution = '''
     S2
     S3
     S4
+    S5
     #initials
     S0
     #accepting
-    S0;S1;S3;S4
+    S0;S2;S5
     #alphabet
     a
     b
