@@ -16,7 +16,35 @@ alphabet = "a,b"
 message = 'a*b(b(aa+ε))*a'
 
 #automate solution -- le nom solution est forcé par le template
-solution =
+solution = '''
+    #states
+    S0
+    S1
+    S2
+    S3
+    S4
+    S5
+    S6
+    #initials
+    S0
+    #accepting
+    S6
+    #alphabet
+    a
+    b
+    #transitions
+    S0:a>S1
+    S0:b>S2
+    Sx:a>Sx
+    Sx:a>Sx
+    Sx:a>Sx
+    Sx:a>Sx
+    Sx:a>Sx
+    Sx:a>Sx
+    Sx:a>Sx
+    Sx:a>Sx
+    Sx:a>Sx
+'''
 
 
 #viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
@@ -36,6 +64,14 @@ text==
 {{ viewer_enonce|component }}
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez l'automate des positions correspondant à l'expression {{ message }} <br>
+<br>
+Contraintes d'écriture pour l'évaluation:<br>
+Compte tenu des bugs de l'éditeur sur le renommage des états, vous adopterez la convention suivante:
+<ul>
+<li> L'état S0 sera l'état initial de votre automate des positions
+<li> Les états suivants Si pour i>0 représenteront les positions dans l'ordre de numérotation de l'expression. 
+</ul>
+
 {% if attempt < maxattempt and score != 100 %}
 <p class="warning-state">
 Il vous reste {{ maxattempt - attempt }} tentative(s) !
