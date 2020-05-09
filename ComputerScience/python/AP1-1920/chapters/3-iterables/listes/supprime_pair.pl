@@ -6,7 +6,7 @@ builder= /builder/before.py
 
 title = Manipulation de liste 
 text == 
-Ecrire une fonction "suppair" qui prend en argument une list `lst` et supprime tous les éléments pairs de celle-ci
+Ecrire une fonction `suppair` qui prend en argument une liste et supprime tous les éléments pairs de celle-ci.
 ==
 
 before==
@@ -49,5 +49,6 @@ pltest3==
 >>> lst
 [1, 5]
 ==
+
 
 
