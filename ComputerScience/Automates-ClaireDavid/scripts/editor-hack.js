@@ -5,6 +5,7 @@
 // GET THE INSTANCES OF AutomatonEditorComponent FROM THE PAGE
 const editors = document.querySelectorAll('c-automaton-editor');
 
+// OVERRIDE EACH INSTANCE OF THE COMPONENT
 editors.forEach((editor) => {
     const component = editor.ngElementStrategy.componentRef.instance;
     
@@ -300,7 +301,6 @@ editors.forEach((editor) => {
         }
     }
 
-
     // DYNAMICALLY OVERRIDE FUNCTIONS FROM THE INSTANCE OF THE COMPONENT CLASS.
     
     /**
@@ -374,7 +374,6 @@ editors.forEach((editor) => {
     component.createGetterSetter('states');
     component.createGetterSetter('position');
     component.createGetterSetter('transitions');
-
 
     /*
     component.zoom = 1;
