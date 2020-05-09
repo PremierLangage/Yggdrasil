@@ -408,7 +408,7 @@ editors.forEach((editor) => {
             container.onclick = (e) => {
                 console.log(e);
                 if (e.target === container) { // ignore clicks inside of the canvas
-                    component.createNode(e.x * zoom, e.y * zoom);
+                    component.createNode(-e.x, -e.y);
                 }
             };
 
