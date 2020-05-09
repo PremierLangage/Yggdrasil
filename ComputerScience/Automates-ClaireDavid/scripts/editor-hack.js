@@ -404,10 +404,14 @@ editors.forEach((editor) => {
         if (component.zoomable) {
 
             const container = editor.querySelector('.automaton-editor-component');
-
+            const canvas = component.instance.getContainer();
             container.onclick = (e) => {
-                console.log(e);
+                if (e.target === container) {
+                    console.log(e);
+
+                }
             };
+
             const zoomButtons = document.createElement('div');
             zoomButtons.style.position = 'absolute';
             zoomButtons.style.zIndex = 10;
