@@ -222,7 +222,7 @@ editors.forEach((editor) => {
 
                             this.unfocus();
                             this.onRender();
-
+                            this.detectChanges();
                         }
                     }
                     this.updateAlphabet();
