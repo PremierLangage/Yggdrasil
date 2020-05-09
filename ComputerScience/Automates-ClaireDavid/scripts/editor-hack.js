@@ -400,6 +400,7 @@ editors.forEach((editor) => {
     }
 
 
+    // REGISTER NEW PROPERTIES
         
     component.addProperty({ name: 'textSetInitial', default: 'Initial' });
     component.addProperty({ name: 'textSetNonInitial', default: 'Non initial' });
