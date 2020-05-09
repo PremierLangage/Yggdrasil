@@ -380,6 +380,7 @@ editors.forEach((editor) => {
     const zoomIn = document.createElement('button');
     zoomIn.value = 'ZOOM IN';
     container.appendChild(zoomIn);
+    console.log(container)
     component.zoom = 1;
     component.setZoom = (zoom, transformOrigin) => {
         transformOrigin = transformOrigin || [ 0.5, 0.5 ];
