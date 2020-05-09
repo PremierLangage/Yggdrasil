@@ -315,7 +315,7 @@ editors.forEach((editor) => {
         };
     }
 
-    component.actionDeleteSymbol = function() {
+    component.actionDeleteConnection = function() {
         return {
             name: this.textDeleteSymbol,
             action: async () => {
@@ -384,7 +384,7 @@ editors.forEach((editor) => {
             const canvas = (connection).canvas;
             canvas.classList.add('focused');
             actions.push(this.actionRenameSymbol());
-            actions.push(this.actionDeleteSymbol());
+            actions.push(this.actionDeleteConnection());
         }
 
         this.actions = actions;
