@@ -7,7 +7,7 @@ introduction ==
 **Munissez-vous d'un feuille pour faire vos calculs!<br>**
 
 **Contraintes d'écriture pour l'évaluation:**<br>
-Pour le nommage des états, vous adopterez la convention suivante:
+Pour le nommage des états, vous respecterez la convention suivante:
 <ul>
 <li> L'état S0 sera l'état initial de votre automate. <br>*(Si vous avez besoin de plusieurs états initiaux, relisez votre cours)*
 <li> Les états Sj pour j>0 représenteront les positions dans l'ordre de numérotation de l'expression.<br>
