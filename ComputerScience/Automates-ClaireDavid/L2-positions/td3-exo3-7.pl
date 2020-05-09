@@ -26,18 +26,17 @@ solution = '''
     S1
     S2
     S3
-    S4
     #initials
     S0
     #accepting
-    S0;S1;S3;S4
+    S3
     #alphabet
     a
     b
     #transitions
     S0:a>S1
     S0:b>S2
-    S0:b>S4
+    S0:a>S3
     S1:b>S2
     S1:b>S4
     S2:a>S3
