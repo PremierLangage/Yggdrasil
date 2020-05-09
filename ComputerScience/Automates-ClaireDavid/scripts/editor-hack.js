@@ -80,7 +80,7 @@ editors.forEach((editor) => {
         );
     };
 
-  
+
     /*
     component.zoom = 1;
     component.setZoom = (zoom, transformOrigin) => {
@@ -119,7 +119,6 @@ editors.forEach((editor) => {
             }
         }
     };
-    
     component.actionSetNonInitial = () => {
         const stateName = this.node.id;
         return {
@@ -144,7 +143,6 @@ editors.forEach((editor) => {
             }
         };
     }
-
     component.actionSetNonFinal = () => {
         const stateName = this.node.id;
         return {
@@ -157,35 +155,9 @@ editors.forEach((editor) => {
         };
     }
 
-    component.getStateActions = () => {
-        const actions = [];
-        const classes = this.node.classList;
-        const FINAL_STATE_CLASS = 'automaton-state--final';
-        const INITIAL_STATE_CLASS = 'automaton-state--initial';
-    
-        // TOGGLE CSS CLASS
-        classes.remove('focused');
-        classes.add('focused');
-
+    component.actionRenameState = () => {
         const stateName = this.node.id;
-        const isFinalState = classes.contains(FINAL_STATE_CLASS);
-        const isInitialState = classes.contains(INITIAL_STATE_CLASS);
-
-        if (isInitialState) {
-            actions.push(this.actionSetNonInitial());
-        } else {
-            actions.push(this.actionSetInitial());
-        }
-
-
-        if (isFinalState) {
-            actions.push(this.actionSetNonFinal());
-        } else {
-            actions.push(this.actionSetFinal());
-        }
-
-
-        actions.push({
+        return {
             name: this.textRenameState,
             action: async () => {
                 const title = 'État';
@@ -249,8 +221,12 @@ editors.forEach((editor) => {
                 this.updateAlphabet();
                 this.detectChanges();
             }
-        });
-        actions.push({
+        };
+    };
+
+    component.actionDeleteState = () => {
+        const stateName = this.node.id;
+        return {
             name: this.textDeleteState,
             action: () => {
                 this.removeState(stateName);
@@ -271,7 +247,32 @@ editors.forEach((editor) => {
                 this.focus();
                 this.updateAlphabet();
             }
-        });
+        };
+    }
+
+    component.getStateActions = () => {
+        const actions = [];
+
+        const isFinalState = classes.contains(FINAL_STATE_CLASS);
+        const isInitialState = classes.contains(INITIAL_STATE_CLASS);
+
+        if (isInitialState) {
+            actions.push(this.actionSetNonInitial());
+        } else {
+            actions.push(this.actionSetInitial());
+        }
+
+        if (isFinalState) {
+            actions.push(this.actionSetNonFinal());
+        } else {
+            actions.push(this.actionSetFinal());
+        }
+
+        actions.push(this.actionRenameState());
+        actions.push(this.actionDeleteState());
+
+        return actions;
+
     };
 
 
@@ -291,6 +292,8 @@ editors.forEach((editor) => {
         
         // CLICK ON STATE
         if (node) {
+            node.classList.remove('focused');
+            node.classList.add('focused');
 
         }
         // CLICK ON TRANSITION
