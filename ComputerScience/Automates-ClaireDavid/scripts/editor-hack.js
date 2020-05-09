@@ -2,23 +2,6 @@
 
 // ORIGINAL SOURCE CODE: https://github.com/PremierLangage/components/blob/master/src/app/components/automaton-editor/automaton-editor.component.ts
 
-const addKeyboardListenerToPromptInput = () => {
-    setTimeout(() => {
-        const input = document.querySelector('app-prompt input');
-        const buttons = document.querySelectorAll('app-prompt .mat-button')
-        const handler = (e) => {
-            if (e.key === 'Enter') {
-                buttons[0].click(); // confirm
-                input.removeEventListener('keydown', handler);
-            } else if (e.key === 'Escape') {
-                buttons[1].click(); // cancel
-            }
-        };
-        const listener = input.addEventListener('keydown', handler);
-    }, 1000);
-};
-
-
 // GET THE INSTANCES OF AutomatonEditorComponent FROM THE PAGE
 const editors = document.querySelectorAll('c-automaton-editor');
 
@@ -80,33 +63,6 @@ editors.forEach((editor) => {
         );
     };
 
-
-    /*
-    component.zoom = 1;
-    component.setZoom = (zoom, transformOrigin) => {
-        transformOrigin = transformOrigin || [ 0.5, 0.5 ];
-        const instance = component.instance;
-        const el = instance.getContainer();
-        const prefix = [ "webkit", "moz", "ms", "o" ];
-        const scale = "scale(" + zoom + ")";
-        const oString = (transformOrigin[0] * 100) + "% " + (transformOrigin[1] * 100) + "%";
-
-        for (let i = 0; i < prefix.length; i++) {
-            el.style[prefix[i] + "Transform"] = scale;
-            el.style[prefix[i] + "TransformOrigin"] = oString;
-        }
-
-        el.style["transform"] = scale;
-        el.style["transformOrigin"] = oString;
-        
-        instance.setZoom(zoom);
-    };
-    editor.addEventListener("wheel", event => {
-        const delta = Math.sign(event.deltaY);
-        component.setZoom(component.zoom + (0.5 * delta));
-    });
-    */
-    
     // BUTTONS TO DISPLAY WHEN A STATE IS FOCUSED 
     
     /**
@@ -419,5 +375,52 @@ editors.forEach((editor) => {
     component.createGetterSetter('position');
     component.createGetterSetter('transitions');
 
+
+    /*
+    component.zoom = 1;
+    component.setZoom = (zoom, transformOrigin) => {
+        transformOrigin = transformOrigin || [ 0.5, 0.5 ];
+        const instance = component.instance;
+        const el = instance.getContainer();
+        const prefix = [ "webkit", "moz", "ms", "o" ];
+        const scale = "scale(" + zoom + ")";
+        const oString = (transformOrigin[0] * 100) + "% " + (transformOrigin[1] * 100) + "%";
+
+        for (let i = 0; i < prefix.length; i++) {
+            el.style[prefix[i] + "Transform"] = scale;
+            el.style[prefix[i] + "TransformOrigin"] = oString;
+        }
+
+        el.style["transform"] = scale;
+        el.style["transformOrigin"] = oString;
+        
+        instance.setZoom(zoom);
+    };
+    editor.addEventListener("wheel", event => {
+        const delta = Math.sign(event.deltaY);
+        component.setZoom(component.zoom + (0.5 * delta));
+    });
+    */
+    
 });
+
+/**
+ * Helper function to add event listener to prompt dialog.
+ * this function will detect 'Escape' and 'Enter' key events to cancel/submit the form.
+ */
+const addKeyboardListenerToPromptInput = () => {
+    setTimeout(() => {
+        const input = document.querySelector('app-prompt input');
+        const buttons = document.querySelectorAll('app-prompt .mat-button')
+        const handler = (e) => {
+            if (e.key === 'Enter') {
+                buttons[0].click(); // confirm
+                input.removeEventListener('keydown', handler);
+            } else if (e.key === 'Escape') {
+                buttons[1].click(); // cancel
+            }
+        };
+        const listener = input.addEventListener('keydown', handler);
+    }, 1000);
+};
 
