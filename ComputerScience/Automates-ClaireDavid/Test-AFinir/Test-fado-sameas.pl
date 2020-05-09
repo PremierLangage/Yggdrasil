@@ -42,8 +42,8 @@ automate_test = '''
     a
     b
     #transitions
-    S0:a>S1
     S1:b>S0
+    S0:a>S1
 '''
 
 same_as_test = same_as(enonce,automate_test)
