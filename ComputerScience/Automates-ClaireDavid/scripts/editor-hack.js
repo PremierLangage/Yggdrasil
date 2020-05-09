@@ -78,7 +78,6 @@ editors.forEach((editor) => {
     };
 
     component.zoom = 1;
-
     component.setZoom = (zoom, transformOrigin) => {
         transformOrigin = transformOrigin || [ 0.5, 0.5 ];
         const instance = component.instance;
@@ -97,9 +96,7 @@ editors.forEach((editor) => {
         
         instance.setZoom(zoom);
     };
-
-    const container = component.instance.getContainer();
-    container.addEventListener("wheel", event => {
+    editor.addEventListener("wheel", event => {
         const delta = Math.sign(event.deltaY);
         component.setZoom(component.zoom + (0.5 * delta));
     });
