@@ -26,31 +26,25 @@ solution = '''
     S3
     S4
     S5
-    S6
-    S7
     #initials
     S0
     #accepting
-    S7
+    S4;S5
     #alphabet
     a
     b
     #transitions
-    S0:b>S1
-    S0:a>S5
-    S1:b>S1
-    S1:a>S2
-    S1:a>S4
-    S1:a>S5
+    S0:a>S1
+    S0:b>S2
+    S0:a>S3
+    S1:a>S1
+    S1:b>S2
+    S1:a>S3
+    S2:a>S1
+    S2:b>S2
     S2:a>S3
-    S3:b>S1
-    S3:a>S5
-    S4:b>S1
-    S4:a>S5
-    S5:a>S7
-    S5:b>S6
-    S6:b>S6
-    S6:a>S7
+    S3:a>S4
+    S3:b>S5
 '''
 
 ==
