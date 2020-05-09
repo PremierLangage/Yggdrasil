@@ -60,6 +60,7 @@ viewer_enonce.automaton = enonce
 
 #langage solution -- le nom solution est forcé par le template
 solution = Automaton.parse(enonce)
+editor.debug = True
 ==
 
 #* Texte de l'énoncé
@@ -77,6 +78,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
