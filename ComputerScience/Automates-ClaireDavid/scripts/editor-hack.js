@@ -477,7 +477,7 @@ const addKeyboardListenerToPromptInput = () => {
 };
 
 
-export function automatonFromString(input) {
+function automatonFromString(input) {
     const lines = input.split(/\r?\n/);
     const automaton = {
         alphabet: [],
