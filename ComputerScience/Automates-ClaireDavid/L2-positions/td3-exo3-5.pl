@@ -35,15 +35,14 @@ solution = '''
     #transitions
     S0:a>S1
     S0:b>S2
-    S0:a>S3
-    S1:a>S1
+    S0:b>S4
     S1:b>S2
-    S1:a>S3
-    S2:a>S1
-    S2:b>S2
+    S1:b>S4
     S2:a>S3
-    S3:a>S4
-    S3:b>S5
+    S3:b>S2
+    S3:b>S4
+    S4:b>S4
+    S4:b>S2
 '''
 #viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
 viewer_enonce = AutomatonDrawer()
