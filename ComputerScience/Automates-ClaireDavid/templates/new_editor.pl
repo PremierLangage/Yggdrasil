@@ -393,7 +393,28 @@ elif answer_type == "automaton" and eval_type == "isomorph":
     grade=(score, feedback_nondef)
 
 # TODO same_as -- success iff the automaton of the student is the same (including states names) as the automaton given in solution
-elif answer_type == "automaton" and eval_type == "same_as":  
+elif answer_type == "automaton" and eval_type == "same_as": 
+    if attempt >= maxattempt: # timeout
+           grade = (score, feedback_timeout)
+    else:
+        attempt += 1
+        match, error = Automaton.same_as(solution, student_answer)
+        equi, _ = Automaton.compare(solution, student_answer)
+        if  attempt >= maxattempt and (error or not match): # error or no match after timeout
+            grade = (score, feedback_timeout)
+        elif error:
+            grade = (-1, feedback_syntax_error.format(error))
+        elif match is True:
+            score = 100
+            grade = (score, feedback_match)
+        elseif not match and equi:
+            score = 0
+            grade=(score, feedback_equi_not_identical)
+        else:
+            score = 0
+            grade=(score, feedback_nomatch)
+
+# A virer quand la fonction same_as sera implémentée
     score = 0
     grade=(score, feedback_nondef)
 
@@ -402,6 +423,7 @@ else :
     score = 0
     grade=(score, feedback_nondef)
 ==
+
 
 
 
