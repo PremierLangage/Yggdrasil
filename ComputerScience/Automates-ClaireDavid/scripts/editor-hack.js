@@ -50,6 +50,8 @@ editors.forEach((editor) => {
     createGetterSetter(component, 'initialStates');
     createGetterSetter(component, 'acceptingStates');
     createGetterSetter(component, 'states');
+    createGetterSetter(component, 'position');
+    createGetterSetter(component, 'transitions');
 
     component.removeState =  (state) => {
          component.states =  component.states.filter(
@@ -175,6 +177,9 @@ editors.forEach((editor) => {
                                     transition.toState = newState;
                                 }
                             });
+
+                            // replace in position
+                            console.log(this.instance)
                             this.node.innerHTML = node.id = newState;
                             this.node.innerHTML += '<div class="endpoint"></div>'
                         }
@@ -272,6 +277,7 @@ editors.forEach((editor) => {
         this.detectChanges();
     } 
 });
+
 
 
 
