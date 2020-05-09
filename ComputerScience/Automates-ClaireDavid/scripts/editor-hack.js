@@ -376,7 +376,7 @@ editors.forEach((editor) => {
     component.createGetterSetter('transitions');
 
 
-    const container = component.instance.getContainer();
+    const container = editor.querySelector('.automaton-editor-component')
     const zoomIn = document.createElement('button');
     zoomIn.value = 'ZOOM IN';
     container.appendChild(zoomIn);
