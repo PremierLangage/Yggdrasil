@@ -16,7 +16,6 @@ alphabet = "a,b"
 #message de l'énoncé décrivant le langage
 message = '```(b.(aa+a+ε))*ab*a```'
 
- '```(b1.(a2a3+a4+ε))*a5b6*a7```'
 #automate solution -- le nom solution est forcé par le template
 solution = '''
     #states
