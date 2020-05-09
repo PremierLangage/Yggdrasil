@@ -13,11 +13,9 @@ eval_type = "same_as"
 
 alphabet = "a,b"
 
-#message de l'énoncé décrivant le langage
-message = '```a*b(b(aa+ε))*a```'
 
 #automate solution -- le nom solution est forcé par le template
-solution = '''
+enonce = '''
     #states
     S0
     S1
@@ -48,10 +46,12 @@ solution = '''
     S5:b>S3
 '''
 
+
+
+
 #viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
 viewer_enonce = AutomatonDrawer()
-viewer_enonce.automaton = solution
-
+viewer_enonce.automaton = enonce
 
 string_solution = solution
 
