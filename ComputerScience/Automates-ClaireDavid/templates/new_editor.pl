@@ -423,7 +423,7 @@ elif answer_type == "automaton" and eval_type == "same_as":
     else:
         attempt += 1
         match, error1 = Automaton.same_as(string_solution, string_student_answer)
-#        equi, error2 = Automaton.compare(solution, student_answer)
+        equi, error2 = Automaton.compare(solution, student_answer)
         if  attempt >= maxattempt and (error or error2 or not match): # error or no match after timeout
             grade = (score, feedback_timeout)
         elif error:
