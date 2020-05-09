@@ -356,6 +356,9 @@ editors.forEach((editor) => {
     }
 
 
+    component.onValidate = function (instance) {
+        console.log(instance)
+    }
     // REGISTER NEW PROPERTIES (THE REGISTERED PROPERTIES ARE USABLE INSIDE THE GRADER/BUILDER)
         
     component.addProperty({ name: 'textSetInitial', default: 'Initial' });
