@@ -127,7 +127,7 @@ editors.forEach((editor) => {
     /**
      * 
      */
-    component.actionSetNonInitial = () => {
+    component.actionSetNonInitial = function () {
         console.log(this)
         const stateName = this.node.id;
         return {
