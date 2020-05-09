@@ -407,8 +407,7 @@ editors.forEach((editor) => {
             const canvas = component.instance.getContainer();
             container.onclick = (e) => {
                 if (e.target === container) {
-                    console.log(e);
-
+                    component.createNode(e.x, e.y);
                 }
             };
 
