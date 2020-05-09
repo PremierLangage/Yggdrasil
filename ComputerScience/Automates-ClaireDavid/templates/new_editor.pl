@@ -274,7 +274,7 @@ answer_type = str(answer_type)
 # CREATION OF THE AUTOMATON EDITOR
 # THE PROPERTIES OF THE EDITOR CAN BE CHANGED INSIDE 'generate' SCRIPT
 editor = Automaton.editor()
-editor.debug = False
+editor.debug = True
 editor.editorHeight = "500px"
 
 
