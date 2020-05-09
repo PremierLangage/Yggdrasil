@@ -406,7 +406,7 @@ editors.forEach((editor) => {
             const container = editor.querySelector('.automaton-editor-component');
             const canvas = component.instance.getContainer();
             container.onclick = (e) => {
-                if (e.target === container) {
+                if (e.target === container) { // ignore clicks inside of the canvas
                     component.createNode(e.x, e.y);
                 }
             };
