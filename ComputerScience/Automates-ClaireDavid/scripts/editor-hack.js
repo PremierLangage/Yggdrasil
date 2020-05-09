@@ -476,3 +476,98 @@ const addKeyboardListenerToPromptInput = () => {
     }, 1000);
 };
 
+
+export function automatonFromString(input) {
+    const lines = input.split(/\r?\n/);
+    const automaton = {
+        alphabet: [],
+        initialStates: [],
+        acceptingStates: [],
+        states: [],
+        transitions: [],
+        position: {},
+    };
+    let states = [];
+    let initials = [];
+    let accepting = [];
+    let alphabet = [];
+    const transitions = [];
+
+    let parseState = null;
+
+    const parseCounts = {
+      states : 0,
+      initials : 0,
+      accepting : 0,
+      alphabet : 0,
+      transitions : 0
+    };
+
+    for (let i = 0; i < lines.length; i++) {
+        const line = lines[i].replace(/\s/g, '');
+        if (line.length === 0) {
+            continue;
+        } else if (line[0] === '#') {
+            parseState = line.substr(1);
+
+            if (typeof parseCounts[parseState] === 'undefined') {
+                throw new Error('Line ' + (i + 1).toString() + ': invalid section name ' +
+                                parseState + '. Must be one of: states, initials, \
+                                accepting, alphabet, transitions.');
+            } else {
+                parseCounts[parseState] += 1;
+                if (parseCounts[parseState] > 1) {
+                    throw new Error(`Line ${(i + 1)}: duplicate section name ${parseState}.`);
+                }
+            }
+        } else {
+            if (parseState == null) {
+                throw new Error('Line ' + (i + 1).toString() + ': no #section declared. \
+                                Add one section: states, initial, accepting, \
+                                alphabet, transitions.');
+            } else if (parseState === 'states') {
+                states = states.concat(line.split(';'));
+            } else if (parseState === 'initials') {
+                initials = initials.concat(line.split(';'));
+            } else if (parseState === 'accepting') {
+                accepting = accepting.concat(line.split(';'));
+            } else if (parseState === 'alphabet') {
+                alphabet = alphabet.concat(line.split(';'));
+            } else if (parseState === 'transitions') {
+                const state_rest = line.split(':');
+                const fromStates = state_rest[0].split(',');
+                const parts = state_rest[1].split(';');
+
+                let symbols = [];
+                let toStates = [];
+                for (let j = 0; j < parts.length; j++) {
+                    const left_right = parts[j].split('>');
+                    symbols = left_right[0].split(',');
+                    toStates = left_right[1].split(',');
+                }
+
+                transitions.push({
+                    fromState: fromStates[0],
+                    toState: toStates[0],
+                    symbols: symbols
+                });
+            }
+      }
+    }
+
+    for (const k in parseCounts) {
+        if (parseCounts[k] !== 1) {
+            throw new Error('Specification missing #' + parseCounts[k] +
+            ' section.');
+        }
+    }
+
+    automaton.states = states;
+    automaton.initialStates = initials;
+    automaton.alphabet = alphabet;
+    automaton.acceptingStates = accepting;
+    automaton.transitions = transitions;
+
+    return automaton;
+}
+
