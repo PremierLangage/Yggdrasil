@@ -30,6 +30,24 @@ enonce = '''
     S1:b>S0
 '''
 
+enonce2 = '''
+    #states
+    S0
+    S1
+    #initials
+    S0
+    #accepting
+    S0
+    #alphabet
+    a
+    b
+    #transitions
+    S0:a>S1
+    S1:b>S0
+'''
+
+same_as_test = Automaton.same_as(enonce,enonce2)
+
 #viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
 viewer_enonce = AutomatonDrawer()
 viewer_enonce.automaton = enonce
