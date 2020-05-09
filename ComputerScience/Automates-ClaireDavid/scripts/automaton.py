@@ -615,7 +615,7 @@ class Automaton:
                     ## variante avec des transitions de la forme state:symbols>state avec les lettres séparées par des , quand il y en a plusieurs
                     # autorise à avoir plusieurs transitions sur une même ligne avec des ; entre deux transitions
                     parts = line.split(';')
-                    for j in range(len(parts)):
+                    for part in parts:
                         state_rest = parts[j].split(':')
                         fromState = state_rest[0]
                         rest = state_rest[1].split('>')
