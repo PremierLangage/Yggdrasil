@@ -44,6 +44,10 @@ solution = '''
     S2:b>S2
     S2:a>S3
 '''
+
+string_solution = solution
+
+
 ==
 
 #* Texte de l'énoncé
@@ -67,6 +71,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
