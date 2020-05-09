@@ -2,7 +2,7 @@
 extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
-title = Automate de produit d'automate simple
+title = Automate de determinisation simple
 
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
