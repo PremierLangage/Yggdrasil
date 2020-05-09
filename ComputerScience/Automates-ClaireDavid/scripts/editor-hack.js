@@ -103,6 +103,152 @@ editors.forEach((editor) => {
     });
     */
 
+    component.getStateActions = (node) => {
+        const actions = [];
+        const classes = node.classList;
+        const finalStateClassName = 'automaton-state--final';
+        const initialStateClassName = 'automaton-state--initial';
+    
+        // TOGGLE CSS CLASS
+        classes.remove('focused');
+        classes.add('focused');
+
+        const isFinalState = classes.contains(finalStateClassName);
+        const isInitialState = classes.contains(initialStateClassName);
+        const stateName = node.id;
+
+        // INITIAL
+        if (isInitialState) {
+            actions.push({
+                name: this.textSetNonInitial,
+                action: () => {
+                    this.removeInitial(stateName);
+                    this.node.classList.remove(initialStateClassName);
+                    this.focus(this.node);
+                }
+            });
+        } else {
+            actions.push({
+                name: this.textSetInitial,
+                action: () => {
+                    this.initialStates.push(stateName);
+                    this.node.classList.add(initialStateClassName);
+                    this.focus(this.node);
+                }
+            });
+        }
+
+
+        if (isFinalState) {
+            actions.push({
+                name: this.textSetNonFinal,
+                action: () => {
+                    this.removeFinal(stateName);
+                    this.node.classList.remove(finalStateClassName);
+                    this.focus(this.node);
+                }
+            });
+        } else {
+                actions.push({
+                name: this.textSetFinal,
+                action: () => {
+                    this.acceptingStates.push(stateName);
+                    this.node.classList.add(finalStateClassName);
+                    this.focus(this.node);
+                }
+            });
+        }
+
+
+        actions.push({
+            name: this.textRenameState,
+            action: async () => {
+                const title = 'État';
+                const hint = 'Entrez un nouveau nom';
+                addKeyboardListenerToPromptInput();    
+                let newState = await this.prompt(title, hint, stateName);
+                if (newState && newState.trim()) {
+                    newState = newState.trim();
+                    if (this.automaton.states.includes(newState)) {
+                        alert('Il existe déjà un état avec ce nom !');
+                    } else {
+                        // replace in states
+                        this.states = [
+                            newState,
+                            ...this.states.filter(state => {
+                                return state !== stateName;
+                            })
+                        ];
+                        // replace in initials
+                        this.initialStates = this.initialStates.map(
+                            state => {
+                                if (state === stateName) {
+                                    return newState;
+                                }
+                                return state;
+                            }
+                        );
+                        // replace in finals
+                        this.acceptingStates = this.acceptingStates.map(
+                            state => {
+                                if (state === stateName) {
+                                    return newState;
+                                }
+                                return state;
+                            }
+                        );
+                        // replace in transitions
+                        this.automaton.transitions.forEach(transition => {
+                            if (transition.fromState === stateName) {
+                                transition.fromState = newState;
+                            }
+                            if (transition.toState === stateName) {
+                                transition.toState = newState;
+                            }
+                        });
+
+                        // replace in position
+                        this.position[newState] = this.position[stateName];
+                        delete this.position[stateName];
+
+                        // RENDER THE WHOLE VIEW
+                        this.node = undefined;
+                        this.actions = [];
+                        this.connection = undefined;
+                        
+                        this.unfocus();
+                        this.onRender();
+                        this.detectChanges();
+                    }
+                }
+                this.updateAlphabet();
+                this.detectChanges();
+            }
+        });
+        actions.push({
+            name: this.textDeleteState,
+            action: () => {
+                this.removeState(stateName);
+                this.removeFinal(stateName);
+                this.removeInitial(stateName);
+                // remove transition
+                this.automaton.transitions = this.automaton.transitions.filter(
+                    transition => {
+                        return (
+                            transition.fromState !== this.node.id &&
+                            transition.toState !== this.node.id
+                        );
+                    }
+                );
+                delete this.automaton.position[stateName];
+                // remove node from the dom
+                this.instance.remove(this.node);
+                this.focus();
+                this.updateAlphabet();
+            }
+        });
+    };
+
 
     /**
      * Override the function that handles focus of state|connection.
@@ -116,151 +262,11 @@ editors.forEach((editor) => {
         this.connection = connection;
 
         const actions = [];
-        const finalStateClassName = 'automaton-state--final';
-        const initialStateClassName = 'automaton-state--initial';
-            
-        
+     
         
         // CLICK ON STATE
         if (node) {
-            const classes = node.classList;
-            classes.remove('focused');
-            classes.add('focused');
-    
-            const isFinalState = classes.contains(finalStateClassName);
-            const isInitialState = classes.contains(initialStateClassName);
-            const focusedStateName = node.id;
 
-            // INITIAL
-            if (isInitialState) {
-                actions.push({
-                    name: this.textSetNonInitial,
-                    action: () => {
-                        this.removeInitial(focusedStateName);
-                        this.node.classList.remove(initialStateClassName);
-                        this.focus(this.node);
-                    }
-                });
-            } else {
-                actions.push({
-                    name: this.textSetInitial,
-                    action: () => {
-                        this.initialStates.push(focusedStateName);
-                        this.node.classList.add(initialStateClassName);
-                        this.focus(this.node);
-                    }
-                });
-            }
-
-
-            if (isFinalState) {
-                actions.push({
-                    name: this.textSetNonFinal,
-                    action: () => {
-                        this.removeFinal(focusedStateName);
-                        this.node.classList.remove(finalStateClassName);
-                        this.focus(this.node);
-                    }
-                });
-            } else {
-                    actions.push({
-                    name: this.textSetFinal,
-                    action: () => {
-                        this.acceptingStates.push(focusedStateName);
-                        this.node.classList.add(finalStateClassName);
-                        this.focus(this.node);
-                    }
-                });
-            }
-
-
-            actions.push({
-                name: this.textRenameState,
-                action: async () => {
-                    const title = 'État';
-                    const hint = 'Entrez un nouveau nom';
-                    addKeyboardListenerToPromptInput();    
-                    let newState = await this.prompt(title, hint, focusedStateName);
-                    if (newState && newState.trim()) {
-                        newState = newState.trim();
-                        if (this.automaton.states.includes(newState)) {
-                            alert('Il existe déjà un état avec ce nom !');
-                        } else {
-                            // replace in states
-                            this.states = [
-                                newState,
-                                ...this.states.filter(state => {
-                                    return state !== focusedStateName;
-                                })
-                            ];
-                            // replace in initials
-                            this.initialStates = this.initialStates.map(
-                                state => {
-                                    if (state === focusedStateName) {
-                                        return newState;
-                                    }
-                                    return state;
-                                }
-                            );
-                            // replace in finals
-                            this.acceptingStates = this.acceptingStates.map(
-                                state => {
-                                    if (state === focusedStateName) {
-                                        return newState;
-                                    }
-                                    return state;
-                                }
-                            );
-                            // replace in transitions
-                            this.automaton.transitions.forEach(transition => {
-                                if (transition.fromState === focusedStateName) {
-                                    transition.fromState = newState;
-                                }
-                                if (transition.toState === focusedStateName) {
-                                    transition.toState = newState;
-                                }
-                            });
-
-                            // replace in position
-                            this.position[newState] = this.position[focusedStateName];
-                            delete this.position[focusedStateName];
-
-                            // RENDER THE WHOLE VIEW
-                            this.node = undefined;
-                            this.actions = [];
-                            this.connection = undefined;
-                            
-                            this.unfocus();
-                            this.onRender();
-                            this.detectChanges();
-                        }
-                    }
-                    this.updateAlphabet();
-                    this.detectChanges();
-                }
-            });
-            actions.push({
-                name: this.textDeleteState,
-                action: () => {
-                    this.removeState(focusedStateName);
-                    this.removeFinal(focusedStateName);
-                    this.removeInitial(focusedStateName);
-                    // remove transition
-                    this.automaton.transitions = this.automaton.transitions.filter(
-                        transition => {
-                            return (
-                                transition.fromState !== this.node.id &&
-                                transition.toState !== this.node.id
-                            );
-                        }
-                    );
-                    delete this.automaton.position[focusedStateName];
-                    // remove node from the dom
-                    this.instance.remove(this.node);
-                    this.focus();
-                    this.updateAlphabet();
-                }
-            });
         }
         // CLICK ON TRANSITION
         if (this.connection) {
