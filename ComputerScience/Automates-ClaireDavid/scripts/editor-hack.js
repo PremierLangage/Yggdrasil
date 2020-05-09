@@ -460,7 +460,7 @@ editors.forEach((editor) => {
  * Helper function to add event listener to prompt dialog.
  * this function will detect 'Escape' and 'Enter' key events to cancel/submit the form.
  */
-const addKeyboardListenerToPromptInput = () => {
+function addKeyboardListenerToPromptInput() {
     setTimeout(() => {
         const input = document.querySelector('app-prompt input');
         const buttons = document.querySelectorAll('app-prompt .mat-button')
