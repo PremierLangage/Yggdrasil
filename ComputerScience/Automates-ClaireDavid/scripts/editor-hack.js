@@ -208,12 +208,7 @@ editors.forEach((editor) => {
                             });
 
                             // replace in position
-                            console.log(this.instance)
-                            /* this.instance.batch(() => {
-                                this.instance.deleteEveryEndpoint();
-                                console.log('delete')
-                                this.instance.repaint();
-                            }); */
+                            
                             this.onRender();
                         }
                     }
