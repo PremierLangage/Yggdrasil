@@ -8,19 +8,20 @@ const drawers = document.querySelectorAll('c-automaton-drawer');
 drawers.forEach((drawer) => {
     const component = drawer.ngElementStrategy.componentRef.instance;
     component.onRender = function() {
-        console.log('REDNERss')
         let i = 0;
-        try {
-            this.renderer.graph = automatonToDotFormat(
-                automatonFromString(this.automaton)
-            );
-            this.renderer.render();
-        } catch {
-            i++;
-            if (i < 3) {
-                setTimeout(this.onRender.bind(this), 300);
+        const render = () => {
+            try {
+                this.renderer.graph = automatonToDotFormat(
+                    automatonFromString(this.automaton)
+                );
+                this.renderer.render();
+            } catch {
+                i++;
+                if (i < 3) {
+                    setTimeout(() => render(), 300);
+                }
             }
-        }
+        };
     }
 })
 // OVERRIDE EACH INSTANCE OF THE COMPONENT
