@@ -384,6 +384,9 @@ class Automaton:
             if len(state_machine.states) == numStates:
                 return Automaton(state_machine)
 
+
+    @staticmethod
+    def syntax_simple_regex(chaine: str, alphabet=None) :
     ## Return True if chaine is a simple regex with respect to alphabet
     #   Allowed simple regex(Sregex):
     #       any symbol from the alphabet, '€' and 'ε'
@@ -395,8 +398,6 @@ class Automaton:
     #
     #   symbols '€' and 'ε' represent the empty word
     #   if not specified alphabet contains all lowercaps letter
-    @staticmethod
-    def syntax_simple_regex(chaine: str, alphabet=None) :
         copie = chaine
         if alphabet is None:
             alphabet = set(string.ascii_letters+string.digits)
