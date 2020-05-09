@@ -455,7 +455,8 @@ class Automaton:
     @staticmethod
     def from_regex_nd(regex: str, alphabet=None, simple=False):
         """
-        Creates a nondeterministic automaton from a regex.
+        Creates a nondeterministic automaton from a regex using Fado glushkov algorithm.
+        TODO fix the problem with states names to be able to use Position method in Fado
 
         :param regex a regex where the following metacharacters and formations
             have their usual meanings: ., *, +, ?, {m}, {m,}, {m,n}, (), |, [], 
@@ -1260,6 +1261,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
