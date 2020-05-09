@@ -402,7 +402,12 @@ editors.forEach((editor) => {
 
     setTimeout(() => {
         if (component.zoomable) {
+
             const container = editor.querySelector('.automaton-editor-component');
+
+            constainer.onclick = (e) => {
+                console.log(e);
+            };
             const zoomButtons = document.createElement('div');
             zoomButtons.style.position = 'absolute';
             zoomButtons.style.zIndex = 10;
