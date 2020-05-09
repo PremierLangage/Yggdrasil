@@ -37,13 +37,14 @@ solution = '''
     #transitions
     S0:a>S1
     S0:b>S2
-    S0:b>S4
     S1:b>S2
-    S1:b>S4
+    S1:a>S1
+    S2:a>S1
+    S2:b>S4
     S2:a>S3
-    S3:b>S2
+    S3:3>S3
     S3:b>S4
-    S4:b>S4
+    S4:a>S1
     S4:b>S2
 '''
 
