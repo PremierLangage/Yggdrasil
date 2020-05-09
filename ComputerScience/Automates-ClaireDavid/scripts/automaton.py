@@ -612,6 +612,7 @@ class Automaton:
                 elif parseState == 'alphabet':
                     alphabet += line.split(';')
                 elif parseState == 'transitions':
+                    ## variante avec des transitions de la forme state:symbols>state avec les lettres séparées par des , quand il y en a plusieurs
                     # autorise à avoir plusieurs transitions sur une même ligne avec des ; entre deux transitions
                     parts = line.split(';')
                     for j in range(len(parts)):
@@ -628,6 +629,7 @@ class Automaton:
                                 "symbols": symb
                             })
 
+## ancienne version qui autorise d'avoir "states : symbols > states"
 #                elif parseState == 'transitions':
 #                    state_rest = line.split(':');
 #                    fromStates = state_rest[0].split(',')
