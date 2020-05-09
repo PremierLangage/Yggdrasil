@@ -45,6 +45,7 @@ automate_test = '''
     S1:b>S0
 '''
 
+same_as_test = same_as(enonce,automate_test)
 
 #viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
 viewer_enonce = AutomatonDrawer()
