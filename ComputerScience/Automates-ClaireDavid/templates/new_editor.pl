@@ -437,7 +437,7 @@ elif answer_type == "automaton" and eval_type == "same_as":
             grade = (score, feedback_match)
         elif equi:
             score = 0
-            grade=(score, feedback_equi_not_identical.format(string_student_answer)
+            grade=(score, feedback_equi_not_identical.format(string_student_answer))
         else:
             score = 0
             grade=(score, feedback_nomatch)
