@@ -68,7 +68,7 @@ Donnez l'automate des positions correspondant à l'expression {{ message }} <br
 **Contraintes d'écriture pour l'évaluation:**<br>
 Compte tenu des bugs de l'éditeur sur le renommage des états, vous adopterez la convention suivante:
 <ul>
-<li> L'état S0 sera l'état initial de votre automate des positions
+<li> L'état S0 sera l'état initial de votre automate *(Si vous avez besoin de plusieurs états initiaux, relisez votre cours)*
 <li> Les états suivants Si pour i>0 représenteront les positions dans l'ordre de numérotation de l'expression. 
 </ul>
 
