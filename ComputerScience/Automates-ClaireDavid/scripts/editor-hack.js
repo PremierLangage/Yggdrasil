@@ -215,8 +215,8 @@ editors.forEach((editor) => {
                                 this.instance.repaint();
                             }); */
                             this.instance.reset(true);
-                            //console.log('connections', this.instance.getAllConnections())
-                            //console.log('endpoings', this.instance.selectEndpoints())
+                            console.log('connections', this.instance.getAllConnections())
+                            console.log('endpoings', this.instance.selectEndpoints())
                             // jsPlumb.revalidate(node);
                             this.node.innerHTML = node.id = newState;
                             this.node.innerHTML += '<div class="endpoint"></div>';
