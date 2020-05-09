@@ -15,15 +15,8 @@ alphabet = "a,b"
 #message de l'énoncé décrivant le langage
 message = 'a*b(b(aa+€))*a'
 
-
-## TODO donner une seule description du langage enoncé pour le message et l'automate
 #langage solution -- le nom solution est forcé par le template
 solution = Automaton.from_regex_nd(message, simple=True)
-#states = solution.state_machine.states
-#initial = solution.state_machine.initial
-#final = solution.state_machine.finals
-#transitions = ['%s->%s->%s' % (src, symbol, dest) for src in solution.state_machine.map for symbol in solution.state_machine.map[src] for dest in solution.state_machine.map[src][symbol]]
-#viewer_enonce = solution.as_viewer()
 
 #viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
 viewer_enonce = AutomatonDrawer()
@@ -38,7 +31,7 @@ viewer_enonce.automaton = solution
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text==
-<!--{{ solution_view|component }}-->
+{{ solution_view|component }}
 {{ viewer_enonce|component }}
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez l'automate minimal déterministe complet reconnaissant le langage {{ message }} <br>
@@ -48,6 +41,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
