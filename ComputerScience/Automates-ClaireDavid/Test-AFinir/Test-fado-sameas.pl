@@ -6,7 +6,7 @@ title = Same as
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
 #from automaton import Automaton
-from automaton import *
+from automaton import Automaton
 
 # pour changer le type d'évaluation en automate minimal
 eval_type = "same_as"
