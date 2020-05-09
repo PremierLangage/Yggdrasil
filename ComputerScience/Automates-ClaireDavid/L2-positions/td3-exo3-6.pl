@@ -51,6 +51,7 @@ solution = '''
     S5:b>S2
     S5:b>S3
 '''
+
 string_solution = solution
 
 ==
