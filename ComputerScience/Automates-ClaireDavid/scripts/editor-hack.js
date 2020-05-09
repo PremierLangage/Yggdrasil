@@ -209,7 +209,10 @@ editors.forEach((editor) => {
 
                             // replace in position
                             console.log(this.instance)
-                            this.instance.deleteEveryEndpoint();
+                            this.instance.batch(() => {
+                                this.instance.deleteEveryEndpoint();
+                                console.log('delete')
+                            });
                             //console.log('connections', this.instance.getAllConnections())
                             //console.log('endpoings', this.instance.selectEndpoints())
                             // jsPlumb.revalidate(node);
