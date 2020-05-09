@@ -384,7 +384,7 @@ editors.forEach((editor) => {
         const instance = component.instance;
         const el = instance.getContainer();
         el.style.overflow = 'visible';
-        el.style.border = '1px solid';
+        el.style.border = '1px solid #F5F5F5';
         const prefix = [ "webkit", "moz", "ms", "o" ];
         const scale = "scale(" + zoom + ")";
         const oString = (transformOrigin[0] * 100) + "% " + (transformOrigin[1] * 100) + "%";
@@ -402,16 +402,7 @@ editors.forEach((editor) => {
 
     setTimeout(() => {
         if (component.zoomable) {
-
             const container = editor.querySelector('.automaton-editor-component');
-            const canvas = component.instance.getContainer();
-            container.onclick = (e) => {
-            console.log(e);
-                if (e.target === container) { // ignore clicks inside of the canvas
-                    component.createNode(e.x, e.y);
-                }
-            };
-
             const zoomButtons = document.createElement('div');
             zoomButtons.style.position = 'absolute';
             zoomButtons.style.zIndex = 10;
@@ -450,7 +441,7 @@ editors.forEach((editor) => {
             };
             container.appendChild(zoomButtons);
         }
-    }, 1000); // since zoomable property is registered dynamically wait before getting the value.
+    }, 300); // since zoomable property is registered dynamically wait before getting the value.
 
 });
 
