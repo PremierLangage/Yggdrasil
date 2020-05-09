@@ -107,7 +107,11 @@ editors.forEach((editor) => {
     });
     */
     
-    // INITIAL STATE ACTIONS
+    // BUTTONS TO DISPLAY WHEN A STATE IS FOCUSED 
+    
+    /**
+     * 
+     */
     component.actionSetInitial = () => {
         const stateName = this.node.id;
         return {
@@ -119,6 +123,10 @@ editors.forEach((editor) => {
             }
         }
     };
+
+    /**
+     * 
+     */
     component.actionSetNonInitial = () => {
         const stateName = this.node.id;
         return {
@@ -131,7 +139,9 @@ editors.forEach((editor) => {
         };
     };
 
-    // FINAL STATE ACTIONS
+    /**
+     * 
+     */
     component.actionSetFinal = () => {
         const stateName = this.node.id;
         return {
@@ -143,6 +153,10 @@ editors.forEach((editor) => {
             }
         };
     }
+
+    /**
+     * 
+     */
     component.actionSetNonFinal = () => {
         const stateName = this.node.id;
         return {
@@ -155,6 +169,9 @@ editors.forEach((editor) => {
         };
     }
 
+    /**
+     * 
+     */
     component.actionRenameState = () => {
         const stateName = this.node.id;
         return {
@@ -224,6 +241,9 @@ editors.forEach((editor) => {
         };
     };
 
+    /**
+     * 
+     */
     component.actionDeleteState = () => {
         const stateName = this.node.id;
         return {
@@ -250,30 +270,6 @@ editors.forEach((editor) => {
         };
     }
 
-    component.getStateActions = () => {
-        const actions = [];
-
-        const isFinalState = classes.contains(FINAL_STATE_CLASS);
-        const isInitialState = classes.contains(INITIAL_STATE_CLASS);
-
-        if (isInitialState) {
-            actions.push(this.actionSetNonInitial());
-        } else {
-            actions.push(this.actionSetInitial());
-        }
-
-        if (isFinalState) {
-            actions.push(this.actionSetNonFinal());
-        } else {
-            actions.push(this.actionSetFinal());
-        }
-
-        actions.push(this.actionRenameState());
-        actions.push(this.actionDeleteState());
-
-        return actions;
-
-    };
 
 
     /**
@@ -295,7 +291,26 @@ editors.forEach((editor) => {
             node.classList.remove('focused');
             node.classList.add('focused');
 
+            const isFinalState = classes.contains(FINAL_STATE_CLASS);
+            const isInitialState = classes.contains(INITIAL_STATE_CLASS);
+
+            if (isInitialState) {
+                actions.push(this.actionSetNonInitial());
+            } else {
+                actions.push(this.actionSetInitial());
+            }
+
+            if (isFinalState) {
+                actions.push(this.actionSetNonFinal());
+            } else {
+                actions.push(this.actionSetFinal());
+            }
+
+            actions.push(this.actionRenameState());
+            actions.push(this.actionDeleteState());
         }
+
+
         // CLICK ON TRANSITION
         if (this.connection) {
             const canvas = (connection).canvas;
