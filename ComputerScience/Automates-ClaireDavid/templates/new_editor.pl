@@ -314,7 +314,7 @@ error = ""
 
 ## Get the student answer:
 if answer_type == "automaton" :
-    string_student_answer = 
+    string_student_answer = ##
     student_answer = editor
     info_student_answer , _ = Automaton.properties(editor)
     # Automaton.properties will detect if editor is the an instance of AutomatonEditor
@@ -422,7 +422,7 @@ elif answer_type == "automaton" and eval_type == "same_as":
            grade = (score, feedback_timeout)
     else:
         attempt += 1
-        match, error = Automaton.same_as(string_solution, student_answer)
+        match, error = Automaton.same_as(string_solution, string_student_answer)
         equi, _ = Automaton.compare(solution, student_answer)
         if  attempt >= maxattempt and (error or not match): # error or no match after timeout
             grade = (score, feedback_timeout)
