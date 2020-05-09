@@ -616,7 +616,7 @@ class Automaton:
                     # autorise à avoir plusieurs transitions sur une même ligne avec des ; entre deux transitions
                     parts = line.split(';')
                     for part in parts:
-                        state_rest = parts[j].split(':')
+                        state_rest = part.split(':')
                         fromState = state_rest[0]
                         rest = state_rest[1].split('>')
                         symbols: [str] = []
