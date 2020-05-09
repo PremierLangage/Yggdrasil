@@ -783,7 +783,7 @@ class Automaton:
         if 'transitions' not in objectNotation or not len(objectNotation['transitions']):
             raise SyntaxError("L'automate que vous avez saisi ne contient aucune transition!")
 
-	nfa = fa.NFA()
+        nfa = fa.NFA()
 
         states = copy.deepcopy(objectNotation['states'])
         finals = copy.deepcopy(objectNotation['acceptingStates'])
