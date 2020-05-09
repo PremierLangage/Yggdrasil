@@ -397,12 +397,15 @@ editors.forEach((editor) => {
     zoomOut.innerHTML = '<i class="fas fa-search-minus"></i>';
     zoomButtons.appendChild(zoomOut);
       
+    let zoom = 1;
+    zoomIn.onclick = () => {
+        alert('zoomIn')
+    };
+    zoomOut.onclick = () => {
+
+    };
     container.appendChild(zoomButtons);
 
-
-    
-    
-    component.zoom = 1;
     component.setZoom = (zoom, transformOrigin) => {
         transformOrigin = transformOrigin || [ 0.5, 0.5 ];
         const instance = component.instance;
