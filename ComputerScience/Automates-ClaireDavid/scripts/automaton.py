@@ -753,6 +753,59 @@ class Automaton:
         # .reduce() minimize the fsm
         return Automaton(state_machine.reduce())
 
+    @staticmethod
+    def fado_from_object_notation(objectNotation: dict):
+        """
+        Creates fado Automaton from an object notation.
+        :param objectNotation An automaton in the object notation.
+        :return Automaton instance.
+        :raise TypeError if objectNotation is not a dict.
+        :raise SyntaxError if objectNotation cannot be parsed.
+        """
+
+        if not isinstance(objectNotation, dict):
+            raise TypeError('from_object_notation: Excepted an automaton in object notation')
+
+        #TODO on peut avoir un automate sans état final/sans transition etc... A ajuster
+        if 'states' not in objectNotation or not len(objectNotation['states']):
+            raise SyntaxError("Vous devez saisir un automate avec au moins un état.")
+        if 'initialStates' not in objectNotation or not len(objectNotation['initialStates']):
+            raise SyntaxError("L'automate que vous avez saisi ne contient pas d'état initial!")
+        if 'acceptingStates' not in objectNotation or not len(objectNotation['acceptingStates']):
+            raise SyntaxError("L'automate que vous avez saisi ne contient pas d'état final!")
+        if 'alphabet' not in objectNotation or not len(objectNotation['alphabet']):
+            raise SyntaxError("L'automate que vous avez saisi ne contient aucun symbole!")
+        if 'transitions' not in objectNotation or not len(objectNotation['transitions']):
+            raise SyntaxError("L'automate que vous avez saisi ne contient aucune transition!")
+
+	nfa = fa.NFA()
+
+        states = copy.deepcopy(objectNotation['states'])
+        finals = copy.deepcopy(objectNotation['acceptingStates'])
+        initials = copy.deepcopy(objectNotation['initialStates'])
+        alphabet = copy.deepcopy(objectNotation['alphabet'])
+        transitions = copy.deepcopy(objectNotation['transitions'])
+
+        for s in objectNotation['states']:
+            nfa.addState(s)
+        for a in objectNotation['alphabet']:
+            nfa.addSigma(a)
+        for s in objectNotation['initialStates']:
+            nfa.addInitial(nfa.stateIndex(s))       
+        for s in objectNotation['acceptingStates']:
+            nfa.addFinal(naf.stateIndex(s))
+        for transition in objectNotation['transitions']:
+            toState = transition['toState']
+            fromState = transition['fromState']
+            for symb in transition['symbols']:
+                nfa.addTransition(nfa.stateIndex(fromState), 
+                                  sym,
+                                  nfa.stateIndex(toState))
+            # est-il possible de voir apparaitre une transition 2fois? si oui tester ça:w
+
+        return nfa
+
+
 
     @staticmethod
     def editor():
