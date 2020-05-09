@@ -427,7 +427,7 @@ elif answer_type == "automaton" and eval_type == "same_as":
             grade = (score, feedback_timeout)
         elif error:
             grade = (-1, feedback_syntax_error.format(error))
-        elif match is True:
+        elif match == True:
             score = 100
             grade = (score, feedback_match)
         elseif not match and equi:
