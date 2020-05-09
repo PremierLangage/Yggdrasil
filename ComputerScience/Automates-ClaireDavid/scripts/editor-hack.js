@@ -1,5 +1,7 @@
 // TODO HACK TO REMOVE AFTER V1 RELEASE
 
+// ORIGINAL SOURCE CODE: https://github.com/PremierLangage/components/blob/master/src/app/components/automaton-editor/automaton-editor.component.ts
+
 const editors = document.querySelectorAll('c-automaton-editor');
 
 const addKeyboardListenerToPromptInput = () => {
@@ -355,7 +357,6 @@ editors.forEach((editor) => {
             }
         }
     }
-
 
 
     // DYNAMICALLY OVERRIDE FUNCTIONS FROM THE INSTANCE OF THE COMPONENT CLASS.
