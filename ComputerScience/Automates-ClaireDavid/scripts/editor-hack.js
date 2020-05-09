@@ -386,10 +386,10 @@ editors.forEach((editor) => {
     zoomButtons.style.alignItems = 'center';
 
     const zoomIn = document.createElement('button');
-    zoomIn.innerHTML = 'ZOOM IN';
+    zoomIn.innerHTML = '<i class="fas fa-search-plus"></i>';
     zoomButtons.appendChild(zoomIn);
     const zoomOut = document.createElement('button');
-    zoomOut.innerHTML = 'ZOOM IN';
+    zoomOut.innerHTML = '<i class="fas fa-search-minus"></i>';
     zoomButtons.appendChild(zoomOut);
       
     container.appendChild(zoomButtons);
