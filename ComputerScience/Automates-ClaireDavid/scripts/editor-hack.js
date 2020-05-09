@@ -401,47 +401,47 @@ editors.forEach((editor) => {
     };
 
     setTimeout(() => {
+        if (component.zoomable) {
+            const container = editor.querySelector('.automaton-editor-component');
+            const zoomButtons = document.createElement('div');
+            zoomButtons.style.position = 'absolute';
+            zoomButtons.style.zIndex = 10;
+            zoomButtons.style.bottom = '8px';
+            zoomButtons.style.right = '8px';
+            zoomButtons.style.display = 'flex';
+            zoomButtons.style.alignItems = 'center';
 
-    alert(component.zoomable);
+            const zoomIn = document.createElement('button');
+            zoomIn.style.backgroundColor = 'transparent';
+            zoomIn.style.fontSize = '1.5em';
+            zoomIn.innerHTML = '<i class="fas fa-search-plus"></i>';
+            zoomButtons.appendChild(zoomIn);
+            
+            const zoomOut = document.createElement('button');
+            zoomOut.style.backgroundColor = 'transparent';
+            zoomOut.style.fontSize = '1.5em';
+            zoomOut.innerHTML = '<i class="fas fa-search-minus"></i>';
+            zoomButtons.appendChild(zoomOut);
+            
+            let zoom = 1;
+            zoomIn.onclick = () => {
+                zoom += .1;
+                if (zoom >= 1.2) {
+                    zoom = 1.2;
+                }
+                component.setZoom(zoom);
+            };
+
+            zoomOut.onclick = () => {
+                zoom -= .1;
+                if (zoom <= .2) {
+                    zoom = .2;
+                }
+                component.setZoom(zoom);
+            };
+            container.appendChild(zoomButtons);
+        }
     }, 1000);
-    const container = editor.querySelector('.automaton-editor-component');
-    const zoomButtons = document.createElement('div');
-    zoomButtons.style.position = 'absolute';
-    zoomButtons.style.zIndex = 10;
-    zoomButtons.style.bottom = '8px';
-    zoomButtons.style.right = '8px';
-    zoomButtons.style.display = 'flex';
-    zoomButtons.style.alignItems = 'center';
-
-    const zoomIn = document.createElement('button');
-    zoomIn.style.backgroundColor = 'transparent';
-    zoomIn.style.fontSize = '1.5em';
-    zoomIn.innerHTML = '<i class="fas fa-search-plus"></i>';
-    zoomButtons.appendChild(zoomIn);
-    
-    const zoomOut = document.createElement('button');
-    zoomOut.style.backgroundColor = 'transparent';
-    zoomOut.style.fontSize = '1.5em';
-    zoomOut.innerHTML = '<i class="fas fa-search-minus"></i>';
-    zoomButtons.appendChild(zoomOut);
-      
-    let zoom = 1;
-    zoomIn.onclick = () => {
-        zoom += .1;
-        if (zoom >= 1.2) {
-            zoom = 1.2;
-        }
-        component.setZoom(zoom);
-    };
-
-    zoomOut.onclick = () => {
-        zoom -= .1;
-        if (zoom <= .2) {
-            zoom = .2;
-        }
-        component.setZoom(zoom);
-    };
-    container.appendChild(zoomButtons);
 
 });
 
