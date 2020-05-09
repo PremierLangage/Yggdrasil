@@ -387,17 +387,19 @@ class Automaton:
 
     @staticmethod
     def syntax_simple_regex(chaine: str, alphabet=None) :
-    ## Return True if chaine is a simple regex with respect to alphabet
-    #   Allowed simple regex(Sregex):
-    #       any symbol from the alphabet, '€' and 'ε'
-    #       (Sregex) -- capture
-    #       Sregex.Sregex -- concatenation
-    #       SregexSregex -- concatenation
-    #       Sregex+Sregex -- union
-    #       Sregex* -- Kleene star
-    #
-    #   symbols '€' and 'ε' represent the empty word
-    #   if not specified alphabet contains all lowercaps letter
+        """
+        Return True if chaine is a simple regex with respect to alphabet
+           Allowed simple regex : Sregex
+               any symbol from the alphabet, '€' and 'ε'
+               (Sregex) -- capture
+               Sregex.Sregex -- concatenation
+               SregexSregex -- concatenation
+               Sregex+Sregex -- union
+               Sregex* -- Kleene star
+        
+           symbols '€' and 'ε' represent the empty word
+        :param alphabet if not specified alphabet contains all lowercaps letter
+        """
         copie = chaine
         if alphabet is None:
             alphabet = set(string.ascii_letters+string.digits)
