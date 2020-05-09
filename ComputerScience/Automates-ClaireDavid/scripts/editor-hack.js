@@ -110,25 +110,23 @@ editors.forEach((editor) => {
      * @param connection the focused connection (may be null if the focused element is a node).
     */
     component.focus = function (node, connection) {
- 
-        const FINAL_STATE = 'automaton-state--final';
-        const INITIAL_STATE = 'automaton-state--initial';
-        
-        const actions = [];
-        
         this.unfocus();
-        
+    
         this.node = node;
         this.connection = connection;
-        
+
+        const actions = [];
+        const finalStateClassName = 'automaton-state--final';
+        const initialStateClassName = 'automaton-state--initial';
+            
         
         
         // CLICK ON STATE
         if (this.node) {
             this.node.classList.remove('focused');
             this.node.classList.add('focused');
-            const isFinal = this.node.classList.contains(FINAL_STATE);
-            const isInitial = this.node.classList.contains(INITIAL_STATE);
+            const isFinal = this.node.classList.contains(finalStateClassName);
+            const isInitial = this.node.classList.contains(initialStateClassName);
             const stateName = this.node.id;
             // INITIAL
             if (isInitial) {
@@ -136,7 +134,7 @@ editors.forEach((editor) => {
                     name: this.textSetNonInitial,
                     action: () => {
                         this.removeInitial(stateName);
-                        this.node.classList.remove(INITIAL_STATE);
+                        this.node.classList.remove(initialStateClassName);
                         this.focus(this.node);
                     }
                 });
@@ -145,7 +143,7 @@ editors.forEach((editor) => {
                     name: this.textSetInitial,
                     action: () => {
                         this.initialStates.push(stateName);
-                        this.node.classList.add(INITIAL_STATE);
+                        this.node.classList.add(initialStateClassName);
                         this.focus(this.node);
                     }
                 });
@@ -155,7 +153,7 @@ editors.forEach((editor) => {
                     name: this.textSetNonFinal,
                     action: () => {
                         this.removeFinal(stateName);
-                        this.node.classList.remove(FINAL_STATE);
+                        this.node.classList.remove(finalStateClassName);
                         this.focus(this.node);
                     }
                 });
@@ -164,7 +162,7 @@ editors.forEach((editor) => {
                     name: this.textSetFinal,
                     action: () => {
                         this.acceptingStates.push(stateName);
-                        this.node.classList.add(FINAL_STATE);
+                        this.node.classList.add(finalStateClassName);
                         this.focus(this.node);
                     }
                 });
