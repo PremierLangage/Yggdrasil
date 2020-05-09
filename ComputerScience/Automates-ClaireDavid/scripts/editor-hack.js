@@ -618,7 +618,6 @@ function automatonFromString(input) {
                 trans.push(transition.fromState);
                 trans.push('[');
                 trans.push('label =');
-                console.log(transition)
                 trans.push('"' + transition.symbols.join(',') + '"');
                 trans.push(' dir = back];');
                 result.push(trans.join(' '));
