@@ -208,7 +208,8 @@ editors.forEach((editor) => {
                             });
 
                             // replace in position
-                            
+                            this.position[newState] = this.position[stateName];
+                            delete this.position[stateName];
                             this.onRender();
                         }
                     }
