@@ -375,6 +375,11 @@ editors.forEach((editor) => {
     component.createGetterSetter('position');
     component.createGetterSetter('transitions');
 
+
+    const container = component.instance.getContainer();
+    const zoomIn = document.createElement('button');
+    zoomIn.value = 'ZOOM IN';
+    container.appendChild(zoomIn);
     component.zoom = 1;
     component.setZoom = (zoom, transformOrigin) => {
         transformOrigin = transformOrigin || [ 0.5, 0.5 ];
