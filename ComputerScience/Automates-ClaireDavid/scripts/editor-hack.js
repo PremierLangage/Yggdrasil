@@ -11,7 +11,6 @@ drawers.forEach((drawer) => {
         console.log('REDNERss')
         let i = 0;
         try {
-            console.log(this)
             this.renderer.graph = automatonToDotFormat(
                 automatonFromString(this.automaton)
             );
@@ -583,3 +582,64 @@ function automatonFromString(input) {
     return automaton;
 }
 
+
+ function automatonToDotFormat(automaton) {
+    const result = ['digraph finite_state_machine {', '  rankdir=LR;'];
+    const accStates = ['  node [shape = doublecircle];'];
+
+    let i = 0, trans = [];
+
+    for (i = 0; i < automaton.acceptingStates.length; i++) {
+        accStates.push(automaton.acceptingStates[i].toString());
+    }
+
+    accStates.push(';');
+    if (accStates.length > 2) {
+      result.push(accStates.join(' '));
+    }
+    result.push('  node [shape = circle];');
+    i = 0;
+    automaton.initialStates.forEach(state => {
+        result.push(`  secret_node${i} [style=invis, shape=point]`);
+
+        const arrow = [`  secret_node${i} ->`];
+        arrow.push(state);
+        arrow.push('[style=bold];');
+        result.push(arrow.join(' '));
+        i++;
+    });
+
+    automaton.transitions.forEach(transition => {
+        let initTransition = false;
+        automaton.initialStates.forEach(init => {
+            if (init === transition.toState) {
+                trans = [' '];
+                trans.push(transition.toState);
+                trans.push('->');
+                trans.push(transition.fromState);
+                trans.push('[');
+                trans.push('label =');
+                trans.push('"' + transition.symbols.join(',') + '"');
+                trans.push(' dir = back];');
+                result.push(trans.join(' '));
+                initTransition = true;
+                return true;
+            }
+        });
+        if (!initTransition) {
+            trans = [' '];
+            trans.push(transition.fromState.toString());
+            trans.push('->');
+            trans.push(transition.toState.toString());
+            trans.push('[');
+            trans.push('label =');
+            trans.push('"' + transition.symbols.join(',') + '"');
+            trans.push(' ];');
+            result.push(trans.join(' '));
+        }
+    });
+
+    result.push('}');
+
+    return result.join('\n').replace(/\$/g, '$');
+}
