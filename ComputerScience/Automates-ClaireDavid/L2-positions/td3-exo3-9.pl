@@ -39,7 +39,6 @@ solution = '''
     S0:b>S2
     S1:b>S2
     S1:a>S1
-    S2:a>S1
     S2:b>S4
     S2:a>S3
     S3:a>S3
