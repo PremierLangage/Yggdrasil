@@ -271,7 +271,7 @@ editors.forEach((editor) => {
     }
 
 
-    component.actionRenameSymbol = function() {
+    component.actionRenameTransition = function() {
         return {
             name: this.textRenameSymbol,
             action: async () => {
@@ -315,7 +315,7 @@ editors.forEach((editor) => {
         };
     }
 
-    component.actionDeleteConnection = function() {
+    component.actionDeleteTransition = function() {
         return {
             name: this.textDeleteSymbol,
             action: async () => {
@@ -383,8 +383,8 @@ editors.forEach((editor) => {
         if (this.connection) {
             const canvas = (connection).canvas;
             canvas.classList.add('focused');
-            actions.push(this.actionRenameSymbol());
-            actions.push(this.actionDeleteConnection());
+            actions.push(this.actionRenameTransition());
+            actions.push(this.actionDeleteTransition());
         }
 
         this.actions = actions;
