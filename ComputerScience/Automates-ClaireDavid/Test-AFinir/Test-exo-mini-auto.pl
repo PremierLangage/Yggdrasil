@@ -68,7 +68,7 @@ solution = Automaton.parse(enonce)
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text==
-<!--{{ viewer_enonce|component }} -->
+{{ viewer_enonce|component }}
 {{ solution_view|component }}
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez l'automate minimal déterministe complet correspondant à l'automate ci-dessus. <br>
