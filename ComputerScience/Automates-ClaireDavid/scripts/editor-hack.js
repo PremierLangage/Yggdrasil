@@ -426,8 +426,8 @@ editors.forEach((editor) => {
             let zoom = 1;
             zoomIn.onclick = () => {
                 zoom += .1;
-                if (zoom >= 1.2) {
-                    zoom = 1.2;
+                if (zoom >= 1) {
+                    zoom = 1;
                 }
                 component.setZoom(zoom);
             };
