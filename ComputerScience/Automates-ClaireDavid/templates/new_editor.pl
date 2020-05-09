@@ -133,7 +133,7 @@ feedback_nondet = <p class="warning-state">L'automate correspond au langage mais
 
 #* feedback when the student automaton is a complete dfa for the langage but not the minimal one.
 #feedback_nomini = <p class="warning-state">Votre automate est deterministe complet et correspond au langage mais il n'est pas minimal {0} vs {1}.</p>
-feedback_nomini = <p class="warning-state">Votre automate est deterministe complet et correspond au langage mais il n'est pas minimal.</p>
+feedback_nomini = <p class="warning-state">Votre automate est deterministe complet et correspond au langage mais il n'est pas minimal.{0}</p>
 
 
 #* feedback when the student automaton corresponds to the langage but is not equal to the expected answer. (used in exercice mode same_as)
