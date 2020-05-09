@@ -214,14 +214,7 @@ editors.forEach((editor) => {
                                 console.log('delete')
                                 this.instance.repaint();
                             }); */
-                            this.instance.reset(true);
-                            console.log('connections', this.instance.getAllConnections())
-                            console.log('endpoings', this.instance.selectEndpoints())
-                            // jsPlumb.revalidate(node);
-                            this.node.innerHTML = node.id = newState;
-                            this.node.innerHTML += '<div class="endpoint"></div>';
-
-                            
+                            this.onRender();
                         }
                     }
                     this.updateAlphabet();
