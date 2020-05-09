@@ -226,7 +226,6 @@ editors.forEach((editor) => {
                             this.unfocus();
                             this.onRender();
                             this.detectChanges();
-                            this.focus(node);
                         }
                     }
                     this.updateAlphabet();
