@@ -220,7 +220,7 @@ editors.forEach((editor) => {
                             this.position[newState] = this.position[stateName];
                             delete this.position[stateName];
 
-                            actions = [];
+                            this.actions = [];
                             this.node = undefined;
                             this.connection = undefined;
                             this.unfocus();
