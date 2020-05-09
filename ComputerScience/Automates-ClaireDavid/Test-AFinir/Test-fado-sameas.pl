@@ -13,45 +13,20 @@ eval_type = "same_as"
 alphabet = "a,b"
 
 # automate de l'énoncé
-enonce = '''
+solution = '''
     #states
+    S0
     S1
-    S2
-    S3
-    S4
-    S5
-    S6
-    S7
-    S8
-    S9
     #initials
-    S1
+    S0
     #accepting
-    S9
-    S4
-    S7
+    S0
     #alphabet
     a
     b
     #transitions
-    S1:a>S2
-    S1:b>S6
-    S2:a>S7
-    S2:b>S3
-    S3:a>S9
-    S3:b>S4
-    S4:a>S9
-    S4:b>S4
-    S5:a>S7
-    S5:b>S5
-    S6:a>S7
-    S6:b>S8
-    S7:a>S5
-    S7:b>S7
-    S8:a>S9
-    S8:b>S9
-    S9:a>S4
-    S9:b>S9
+    S0:a>S1
+    S1:b>S0
 '''
 
 #viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
