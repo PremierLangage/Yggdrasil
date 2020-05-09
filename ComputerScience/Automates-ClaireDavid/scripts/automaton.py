@@ -873,7 +873,7 @@ class Automaton:
             final_states_match = sorted(fado1.Final) == sorted(fado2.Final)
             transition_match = sorted(fado1.delta) == sorted(fado2.delta)
 
-            return states_match and initial_states_match and final_states_match and transition_match
+            return states_match and initial_states_match and final_states_match and transition_match , None
         except Exception as e:
             return False, str(e)
     
