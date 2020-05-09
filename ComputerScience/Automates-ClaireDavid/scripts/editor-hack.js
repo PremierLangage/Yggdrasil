@@ -270,6 +270,75 @@ editors.forEach((editor) => {
         };
     }
 
+
+    component.actionRenameSymbol = function() {
+        return {
+            name: this.textRenameSymbol,
+            action: async () => {
+                const start = this.connection.endpoints[0];
+                const end = this.connection.endpoints[1];
+
+                const transition = this.automaton.transitions.find(e => {
+                    return (
+                        e.fromState === start.elementId &&
+                        e.toState === end.elementId
+                    );
+                });
+
+                addKeyboardListenerToPromptInput();
+                
+                const title = 'Transition';
+                const hint = 'Entrez les symboles en les séparant par une virgule';
+                const input = await this.prompt(
+                    title,
+                    hint,
+                    transition.symbols.join(',')
+                );
+
+                if (input !== false) {
+                    const symbols = input
+                        .split(',')
+                        .map((symb) => {
+                            return symb.trim();
+                        })
+                        .filter((symb) => !!symb);
+
+                    if (symbols.length === 0) {
+                        alert('Vous devez saisir les symboles en les séparant par une virgule');
+                    } else {
+                        this.connection.getOverlay('transition').setLabel(symbols.join(','));
+                        transition.symbols = symbols;
+                    }
+                    this.updateAlphabet();
+                }
+            }
+        };
+    }
+
+    component.actionDeleteSymbol = function() {
+        return {
+            name: this.textDeleteSymbol,
+            action: async () => {
+                const start = this.connection.endpoints[0];
+                const end = this.connection.endpoints[1];
+                this.automaton.transitions = this.automaton.transitions.filter(
+                    e => {
+                        return !(
+                            e.fromState === start.elementId &&
+                            e.toState === end.elementId
+                        );
+                    }
+                );
+            
+                this.instance.deleteConnection(this.connection);
+            
+                this.focus(null, null);
+
+                this.updateAlphabet();
+            }
+        }
+    }
+
     component.debug = true;
 
     /**
@@ -284,9 +353,8 @@ editors.forEach((editor) => {
         this.connection = connection;
 
         const actions = [];
-     
         
-        // CLICK ON STATE
+        // FOCUSED ELEMENT IS A STATE
         if (node) {
             node.classList.remove('focused');
             node.classList.add('focused');
@@ -311,66 +379,12 @@ editors.forEach((editor) => {
         }
 
 
-        // CLICK ON TRANSITION
+        // FOCUSED ELEMENT IS A TRANSITION
         if (this.connection) {
             const canvas = (connection).canvas;
             canvas.classList.add('focused');
-            actions.push({
-                name: this.textRenameSymbol,
-                action: async () => {
-                    const s = this.connection.endpoints[0];
-                    const t = this.connection.endpoints[1];
-                    const transition = this.automaton.transitions.find(e => {
-                        return (
-                            e.fromState === s.elementId &&
-                            e.toState === t.elementId
-                        );
-                    });
-                    addKeyboardListenerToPromptInput();
-                    const title = 'Transition';
-                    const hint = 'Entrez les symboles en les séparant par une virgule';
-                    const input = await this.prompt(
-                        title,
-                        hint,
-                        transition.symbols.join(',')
-                    );
-                    if (input !== false) {
-                        const symbols = input
-                            .split(',')
-                            .map((symbol) => {
-                                return symbol.trim();
-                            })
-                            .filter((symbol) => !!symbol);
-
-                        if (symbols.length === 0) {
-                            alert('Vous devez saisir les symboles en les séparant par une virgule');
-                        } else {
-                            this.connection.getOverlay('transition').setLabel(symbols.join(','));
-                            transition.symbols = symbols;
-                        }
-                        this.updateAlphabet();
-                    }
-                }
-            });
-            actions.push({
-                name: this.textDeleteSymbol,
-                action: async () => {
-                    const s = this.connection.endpoints[0];
-                    const t = this.connection.endpoints[1];
-                    this.automaton.transitions = this.automaton.transitions.filter(
-                        e => {
-                            return !(
-                                e.fromState === s.elementId &&
-                                e.toState === t.elementId
-                            );
-                        }
-                    );
-                    this.instance.deleteConnection(this.connection);
-                    this.focus(null, null);
-
-                    this.updateAlphabet();
-                }
-            });
+            actions.push(this.actionRenameSymbol());
+            actions.push(this.actionDeleteSymbol());
         }
 
         this.actions = actions;
