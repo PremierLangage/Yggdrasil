@@ -101,7 +101,6 @@ def fado_to_string(nfa):
     initials = '\n'.join(nfa.States[i] for i in nfa.Initial)
     finals = '\n'.join(nfa.States[i] for i in nfa.Final)
     sigma = '\n'.join(nfa.Sigma)
-#    delta = '\n'.join(f'{nfa.States[from_]}:{sym}>{nfa.States[to]}' for from_ in nfa.delta for sym in nfa.delta[from_] for to in nfa.delta[from_][sym])
     delta = '\n'.join(f'{nfa.States[from_]}:{sym}>{nfa.States[to]}' for from_ in nfa.delta for sym in nfa.delta[from_] for to in nfa.delta[from_][sym])
     return f'''
 #states
