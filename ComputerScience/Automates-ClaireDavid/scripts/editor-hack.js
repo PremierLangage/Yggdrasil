@@ -212,6 +212,7 @@ editors.forEach((editor) => {
                             this.instance.batch(() => {
                                 this.instance.deleteEveryEndpoint();
                                 console.log('delete')
+                                this.instance.repaint();
                             });
                             //console.log('connections', this.instance.getAllConnections())
                             //console.log('endpoings', this.instance.selectEndpoints())
