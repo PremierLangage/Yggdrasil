@@ -55,7 +55,7 @@ On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
 Donnez l'automate des positions correspondant à l'expression {{ message }} <br>
 <br>
 **Contraintes d'écriture pour l'évaluation:**<br>
-Pour le nommage des états, vous adopterez la convention suivante:
+Pour le nommage des états, vous respecterez la convention suivante:
 <ul>
 <li> L'état S0 sera l'état initial de votre automate. <br>
 <li> Les états Sj pour j>0 représenteront les positions dans l'ordre de numérotation de l'expression.<br>
