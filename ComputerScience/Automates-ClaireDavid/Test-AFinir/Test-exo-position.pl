@@ -67,7 +67,7 @@ string_solution = solution
 text==
 {{ viewer_enonce|component }}
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
-Donnez l'automate des positions correspondant à l'expression {{ message }} <br>
+Donnez l'automate des positions correspondant à l'expression ```{{ message }}``` <br>
 <br>
 **Contraintes d'écriture pour l'évaluation:**<br>
 Compte tenu des bugs de l'éditeur sur le renommage des états, vous adopterez la convention suivante:
