@@ -33,7 +33,7 @@ Ergonomie du viewer:
 
 A voir?
 + Dans from_regex_nd et dans les exo positions, repasser à des noms meaningful quand le renommage des états sera plus smooth dans l'éditeur
-+ la comparaison same_as prend en entrée un automate au format string_notation
++ la comparaison same_as prend en entrée un automate au format string_notation puis fado
     Ca m'a l'air pas mal car format non spécifique à lib
     Mais est-ce le plus malin?
 
