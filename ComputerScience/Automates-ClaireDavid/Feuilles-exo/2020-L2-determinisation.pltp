@@ -8,11 +8,12 @@ introduction ==
 Munissez-vous d'un feuille pour faire vos calculs!<br>
 
 **Contraintes d'écriture pour l'évaluation:**<br>
-Pour le nommage des états, vous respecterez la convention suivante:
+Afin de vérifier la correction de vos calculs et pas seulement la forme de l'automate, vous respecterez les conventions suivantes:
 <ul>
-<li> L'état S0 sera l'état initial de votre automate. <br>*(Si vous avez besoin de plusieurs états initiaux, relisez votre cours)*
-<li> Les états Sj pour j>0 représenteront les positions dans l'ordre de numérotation de l'expression.<br>
-*Exemple pour l'expression ```a*b+b``` qui se numérote ```a1*b2+b3```, l'état S1 représenterai la position a1, l'état S2 la position b2, et l'état S3 la position b3.*
+<li> s'il est créé, l'état `ø` (aussi appelé état poubelle) sera nommé `P` ;
+<li> les autres états seront nommés par la concatenation dans l'ordre croissant des états qui le constituent.
+<br>
+Par exemple, l'état `{5,1,4}` sera nommé `145`, l'état `{3}` sera nommé `3`, l'état `{4,6}` sera nommé `46`.
 </ul>
 
 
