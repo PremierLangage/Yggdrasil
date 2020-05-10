@@ -517,7 +517,18 @@ class Automaton:
 
         :param nfa_string a nfa given in string notation
         """
-        a_dfa = Fado.toDAF(fado_from_string(nfa_string))
+        a = Fado.toDFA(fado_from_string(nfa_string))
+
+        # A garder pour avoir les noms des états comme la convention des exo L2
+        def rename(statename):
+            if statename == 'Initial':
+                return 'S0'
+            return 'S' + statename.split(',')[1].replace(')', '').replace(' ', '')
+        a.States = [rename(s) for s in a.States]
+
+        return fado_to_string(a)
+
+
         
 
 
