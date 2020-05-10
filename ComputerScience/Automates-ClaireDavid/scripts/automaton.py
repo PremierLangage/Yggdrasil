@@ -480,7 +480,7 @@ class Automaton:
 
 #        return fado_to_string(reex.str2regexp(regex).nfaGlushkov())
         a = reex.str2regexp(regex).nfaPosition()
-        a.States = [s.replace('(', '').replace(')', '').replace(',', '') for s in a.States]
+        a.States = [s.replace('(', '').replace(')', '').replace(',', '').replace("'", '') for s in a.States]
         return fado_to_string(a)
 
 #    @staticmethod
