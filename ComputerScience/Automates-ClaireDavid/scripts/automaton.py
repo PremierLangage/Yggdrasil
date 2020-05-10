@@ -426,6 +426,8 @@ class Automaton:
 
     @staticmethod
     def from_regex(regex: str, alphabet=None, simple=False):
+        # keep using this function for non simple regex
+        # For simple regex, use from_regex_nd
         """
         Creates a minimal deterministic automaton from a regex.
 
