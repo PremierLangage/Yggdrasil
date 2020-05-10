@@ -517,7 +517,7 @@ class Automaton:
 
         :param nfa_string a nfa given in string notation
         """
-        a = NFA.toDFA(fado_from_string(nfa_string)).complete(dead='P')
+        a = fado_from_string(nfa_string).toDFA().complete(dead='P')
 
         # A garder pour avoir les noms des états comme la convention des exo L2
         def rename(statename):
