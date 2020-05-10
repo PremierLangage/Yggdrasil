@@ -525,7 +525,7 @@ class Automaton:
         def rename(statename):
             if statename == 'P':
                 return statename
-            return ''.join(map(str, sorted(statename)))
+            return '-'.join(map(str, sorted(statename)))
 #            return statename.replace('(','').replace(')', '').replace(' ', '')
         a.States = [rename(s) for s in a.States]
 
