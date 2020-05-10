@@ -509,7 +509,12 @@ class Automaton:
 
     # Réfléchir où mettre cette méthode lors du grand nettoyage
     @staticmethod
-    string_soluce_det
+    string_soluce_det(nfa_a):
+        """
+        Creates a determinic automaton in string representation
+        Rename states wrt instructions givent to the students
+        :param nfa_a a nfa given in string notation
+        """
 
 
     @staticmethod
