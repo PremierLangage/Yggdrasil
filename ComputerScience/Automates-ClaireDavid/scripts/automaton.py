@@ -453,6 +453,7 @@ class Automaton:
 
     @staticmethod
     def from_regex_nd(regex: str, alphabet=None, simple=False):
+        #TODO -- Test the fonction for non simple regex -- in particular dealin with epsilon might not work.
         """
         Creates a nondeterministic automaton from a regex using Fado glushkov algorithm.
         TODO fix the problem with states names to be able to use Position method in Fado
@@ -1357,6 +1358,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
