@@ -521,7 +521,7 @@ class Automaton:
 
         # A garder pour avoir les noms des états comme la convention des exo L2
         def rename(statename):
-            return ''.join(sorted(statename))
+            return ''.join(map(int, sorted(statename)))
 #            return statename.replace('(','').replace(')', '').replace(' ', '')
         a.States = [rename(s) for s in a.States]
 
@@ -1386,6 +1386,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
