@@ -17,7 +17,7 @@ eval_type = "same_as"
 alphabet = "a,b"
 
 #message de l'énoncé décrivant le langage
-message = '```(a*+b*)*a```'
+enonce = '(a*+b*)*a'
 
 #automate solution -- le nom solution est forcé par le template
 solution = Automaton.from_regex_nd(enonce, simple=True)
