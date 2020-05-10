@@ -29,9 +29,8 @@ enonce = '''
     #transitions
     0:b>1
     0:b>2
-    1:a>1
+    1:a,b>1
     1:a>2
-    1:b>1
     2:a>0
     2:a>2
 '''
