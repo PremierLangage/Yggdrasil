@@ -46,7 +46,7 @@ enonce = '''
 '''
 # Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
 # TODO - Ecrire string_soluce_det
-# Question -- mettre string soluce dans Automaton ou dans Generate?
+# Question -- mettre string soluce dans Automaton ou dans generator?
 string_solution = Automaton.string_soluce_det(enonce)
 
 #automate solution -- le nom solution est forcé par le template
