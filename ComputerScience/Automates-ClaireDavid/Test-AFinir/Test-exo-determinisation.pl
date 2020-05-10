@@ -1,4 +1,3 @@
-
 extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
