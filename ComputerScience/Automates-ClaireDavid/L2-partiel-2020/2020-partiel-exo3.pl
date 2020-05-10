@@ -14,8 +14,7 @@ eval_type = "same_as"
 alphabet = "a,b"
 
 #message de l'énoncé décrivant le langage
-message = '(b.(aa+a+ε))*ab*a'
-
+enonce = '(b.(aa+a+ε))*ab*a'
 
 #automate solution -- le nom solution est forcé par le template
 solution = Automaton.from_regex_nd(message, simple=True)
@@ -40,7 +39,7 @@ string_solution = solution
 text==
 
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
-Donnez l'automate des positions correspondant à l'expression ```{{ message }}``` <br>
+Donnez l'automate des positions correspondant à l'expression ```{{enonce }}``` <br>
 <br>
 **Contraintes d'écriture pour l'évaluation:**<br>
 Compte tenu des bugs de l'éditeur sur le renommage des états, vous adopterez la convention suivante:
