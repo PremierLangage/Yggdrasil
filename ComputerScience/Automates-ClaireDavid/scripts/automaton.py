@@ -479,13 +479,13 @@ class Automaton:
             regex = regex.replace('.', '').replace('+', '|').replace('€',epsilon).replace('ε',epsilon)
 
         a = reex.str2regexp(regex).nfaPosition()
-        a.States = [s.replace('(', '').replace(')', '').replace(',', '').replace("'", '').replace(' ', '') for s in a.States]
+        #a.States = [s.replace('(', '').replace(')', '').replace(',', '').replace("'", '').replace(' ', '') for s in a.States]
         def rename(statename):
             if statename == 'Initial':
                 return 'S0'
             return 'S' + statename.split(',')[1].replace(')', '').replace(' ', '')
         #a.States = ['S%d' % i for i in range(len(a.States))]
-        a.States = list(map(rename, a.States))
+        a.States = [rename(s) for s in a.States]
         return fado_to_string(a)
 
 #    @staticmethod
