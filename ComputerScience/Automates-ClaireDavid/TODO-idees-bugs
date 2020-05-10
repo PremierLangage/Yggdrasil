@@ -14,11 +14,6 @@ J'ai changé réponse acceptable
 =======
 23/04 -- automate inifini - reformuler
 
-25/05 -- une histoires de fleche rouge pas claire cf Ambre
-25/04 -- etat non selectionnable - mael
-
-27/04 -- bug  -- si j'ai s0, s1, s2,s3 et que je supprime s, lorsque je rajoute un état, il le nome s3 et fait l'amalgame avec l'ancien s3 àà vérifier??
-
 27/04 -- supprimer etiquette devrait être supprimer transition. J'ai changé dans mon hack.js
 29/04 -- encore des bugs dans le renommage d'état -- pb avec les transitions
 29/04 -- pb d'affichage des automates enoncéé dans certains exos --> dark mode de Chrome
@@ -31,11 +26,12 @@ J'ai changé réponse acceptable
 parse -> construit des exemples cf la documentation de mamadou dans automaton
 ========
 
-Autoriser les automates sans états finaux sans transition etc
+A ajuster:
++ Autoriser les automates sans états finaux sans transition etc
++ Le viewer ne gere pas encore les noms d'état avec des ,
 
-Le viewer ne gere pas encore les noms d'état avec des ,
-
-Dans from_regex_nd et dans les exo positions, repasser à des noms meaningful quand le renommage des états sera plus smooth dans l'éditeur
+A voir?
++ Dans from_regex_nd et dans les exo positions, repasser à des noms meaningful quand le renommage des états sera plus smooth dans l'éditeur
 
 ==========================================
 Idées d'exo
@@ -94,6 +90,7 @@ pour votre image vous devez lui donner une largeur fixé (voire 100% si c'est ce
      object-fit: cover; /* important pour avoir une image centrée */
    }
 }
+
 
 
 
