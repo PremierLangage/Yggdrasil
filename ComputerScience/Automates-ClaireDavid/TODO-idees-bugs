@@ -37,7 +37,7 @@ A voir?
 
 A Templates
 + Pour les exos positions, on pourrait faire un Editeur qui demande juste le titre/alphabet et la regex enoncé et produit l'exo
-+ Idem pour minimisation avec un mode selon que l'entrée est une regex ou un automate
++ Idem pour minimisation avec un mode selon que l'entrée est une regex ou un automate / produit d'automate ou autre.
 
 
 ==========================================
