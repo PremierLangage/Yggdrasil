@@ -69,7 +69,7 @@ Afin de vérifier la correction de vos calculs et pas seulement la forme de l'au
 <li> s'il est créé, l'état `ø` (aussi appelé état poubelle) sera nommé `P` 
 <li> Pour un ensemble non vide, l'état sera nommé par la concatenation dans l'ordre croissant des états qui le constituent.
 <br>
-Exemples l'état `{5,1,4}` sera nommé `145`, l'état `{3}` sera nommé `3`, l'état `{4,6}` sera nommé `46`.
+Par exemple, l'état `{5,1,4}` sera nommé `145`, l'état `{3}` sera nommé `3`, l'état `{4,6}` sera nommé `46`.
 </ul>
 
 {% if attempt < maxattempt and score != 100 %}
