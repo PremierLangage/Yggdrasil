@@ -14,43 +14,45 @@ eval_type = "same_as"
 alphabet = "a,b"
 
 #message de l'énoncé décrivant le langage
-message = '```(b.(aa+a+ε))*ab*a```'
+message = '(b.(aa+a+ε))*ab*a'
 
+
+solution = Automaton.from_regex_nd(message, simple=True)
 #automate solution -- le nom solution est forcé par le template
-solution = '''
-    #states
-    S0
-    S1
-    S2
-    S3
-    S4
-    S5
-    S6
-    S7
-    #initials
-    S0
-    #accepting
-    S7
-    #alphabet
-    a
-    b
-    #transitions
-    S0:b>S1
-    S0:a>S5
-    S1:b>S1
-    S1:a>S2
-    S1:a>S4
-    S1:a>S5
-    S2:a>S3
-    S3:b>S1
-    S3:a>S5
-    S4:b>S1
-    S4:a>S5
-    S5:a>S7
-    S5:b>S6
-    S6:b>S6
-    S6:a>S7
-'''
+#solution = '''
+#    #states
+#    S0
+#    S1
+#    S2
+#    S3
+#    S4
+#    S5
+#    S6
+#    S7
+#    #initials
+#    S0
+#    #accepting
+#    S7
+#    #alphabet
+#    a
+#    b
+#    #transitions
+#    S0:b>S1
+#    S0:a>S5
+#    S1:b>S1
+#    S1:a>S2
+#    S1:a>S4
+#    S1:a>S5
+#    S2:a>S3
+#    S3:b>S1
+#    S3:a>S5
+#    S4:b>S1
+#    S4:a>S5
+#    S5:a>S7
+#    S5:b>S6
+#    S6:b>S6
+#    S6:a>S7
+#'''
 
 # Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
 string_solution = solution
@@ -62,7 +64,7 @@ string_solution = solution
 # l'automate minimisé du langage solution
 text==
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
-Donnez l'automate des positions correspondant à l'expression {{ message }} <br>
+Donnez l'automate des positions correspondant à l'expression ```{{ message }}``` <br>
 <br>
 **Contraintes d'écriture pour l'évaluation:**<br>
 Compte tenu des bugs de l'éditeur sur le renommage des états, vous adopterez la convention suivante:
@@ -77,6 +79,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
