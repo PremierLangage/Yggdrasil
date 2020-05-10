@@ -20,7 +20,6 @@ A discuter avec Mamadou et Dominique
 
 09/05 -- dans le mode same_as on demande une string_solution pour faire la comparaison.
         il a pas l'air de vouloir considerer solution à la place car solution est modifier au moment de la création du viewer de solution
-
 ========
 A ajuster:
 + Autoriser les automates sans états finaux sans transition etc
@@ -35,10 +34,13 @@ Ergonomie du viewer:
 A voir?
 + Dans from_regex_nd et dans les exo positions, repasser à des noms meaningful quand le renommage des états sera plus smooth dans l'éditeur
 
-A Templates
+Templates
 + Pour les exos positions, on pourrait faire un Editeur qui demande juste le titre/alphabet et la regex enoncé et produit l'exo
 + Idem pour minimisation avec un mode selon que l'entrée est une regex ou un automate / produit d'automate ou autre.
 + Pour automate ou regex ça doit être possible aussi
+
+A faire
++ implementer le mode isomorphism
 
 
 ==========================================
