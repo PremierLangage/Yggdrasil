@@ -507,6 +507,11 @@ class Automaton:
 #            raise TypeError('from_regex: Excepted an automaton in regex notation')
 #        return Automaton(lego.parse(regex).to_fsm().reduce())
 
+    # Réfléchir où mettre cette méthode lors du grand nettoyage
+    @staticmethod
+    string_soluce_det
+
+
     @staticmethod
     def fado_from_editor(editor):
         return Automaton.fado_from_object_notation(editor.automaton)
@@ -1362,6 +1367,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
