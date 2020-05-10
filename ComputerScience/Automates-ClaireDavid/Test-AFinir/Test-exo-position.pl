@@ -18,7 +18,7 @@ message = '```a*b(b(aa+ε))*a```'
 #automate solution -- le nom solution est forcé par le template
 solution = '''
     #states
-    S0
+    S,0
     S1
     S2
     S3
@@ -33,8 +33,8 @@ solution = '''
     a
     b
     #transitions
-    S0:a>S1
-    S0:b>S2
+    S,0:a>S1
+    S,0:b>S2
     S1:a>S1
     S1:b>S2
     S2:a>S6
@@ -79,6 +79,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
