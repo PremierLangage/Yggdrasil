@@ -16,11 +16,13 @@ alphabet = "a,b"
 message = 'a*b(b(aa+€))*a'
 
 #langage solution -- le nom solution est forcé par le template
-solution = Automaton.from_regex_nd(message, simple=True)
+enonce = Automaton.from_regex_nd(message, simple=True)
+
+solution = enonce
 
 #viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
 viewer_enonce = AutomatonDrawer()
-viewer_enonce.automaton = solution
+viewer_enonce.automaton = enonce
 
 #langage solution -- le nom solution est forcé par le template
 
@@ -41,6 +43,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
