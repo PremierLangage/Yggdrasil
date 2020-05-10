@@ -1,7 +1,8 @@
+
 extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
-title = Exo automate des positions
+title = Partiel 2020 Exo3
 
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
@@ -13,7 +14,7 @@ eval_type = "same_as"
 alphabet = "a,b"
 
 #message de l'énoncé décrivant le langage
-enonce = '(a*b+bb*a)*'
+enonce = '(b.(aa+a+ε))*ab*a'
 
 #automate solution -- le nom solution est forcé par le template
 solution = Automaton.from_regex_nd(enonce, simple=True)
@@ -23,8 +24,8 @@ string_solution = solution
 
 #Décommenter les deux dernières lignes si besoin d'afficher l'automate des positions
 #viewer_enonce permet un affichage non modifié de l'automate string_solution
-#viewer_enonce = AutomatonDrawer()
-#viewer_enonce.automaton = string_solution
+viewer_enonce = AutomatonDrawer()
+viewer_enonce.automaton = string_solution
 ==
 
 #* Texte de l'énoncé
@@ -33,14 +34,17 @@ string_solution = solution
 # l'automate minimisé du langage solution
 # ----
 # s'il est défini vous pouvez utiliser {{ viewer_enonce|component }}
-# dans ce qui suit pour afficher l'automate des positions demandé.
+# dans ce qui suit pour affciher l'automate des positions demandé.
 # 
 text==
+{{ viewer_enonce|component }}
+string_solution:
+{{ string_solution }}
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
 Donnez l'automate des positions correspondant à l'expression ```{{enonce }}``` <br>
 <br>
 **Contraintes d'écriture pour l'évaluation:**<br>
-Pour le nommage des états, vous respecterez la convention suivante:
+Compte tenu des bugs de l'éditeur sur le renommage des états, vous adopterez la convention suivante:
 <ul>
 <li> L'état S0 sera l'état initial de votre automate. <br>
 <li> Les états Sj pour j>0 représenteront les positions dans l'ordre de numérotation de l'expression.<br>
@@ -52,4 +56,3 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
-
