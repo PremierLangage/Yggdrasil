@@ -57,18 +57,20 @@ solution = Automaton.from_regex_nd(message, simple=True)
 # Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
 string_solution = solution
 
-#viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
-viewer_enonce = AutomatonDrawer()
-viewer_enonce.automaton = string_solution
+#viewer_enonce permet un affichage non modifié de l'automate string_solution
+#viewer_enonce = AutomatonDrawer()
+#viewer_enonce.automaton = string_solution
 ==
 
 #* Texte de l'énoncé
 # ---
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
+# ----
+# s'il est défini vous pouvez utiliser ce composant pour affciher l'automate des positions demandé
+# {{ viewer_enonce|component }}
 text==
 
-{{ viewer_enonce|component }}
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
 Donnez l'automate des positions correspondant à l'expression ```{{ message }}``` <br>
 <br>
