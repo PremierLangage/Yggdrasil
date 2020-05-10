@@ -513,7 +513,7 @@ class Automaton:
         """
         Creates a determinic automaton in string representation
         Rename states wrt instructions givent to the students
-        So far to be used with NFA with <10 states
+        So far to be used with NFA with <10 states named from 0
 
         :param nfa_string a nfa given in string notation
         """
@@ -1390,6 +1390,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
