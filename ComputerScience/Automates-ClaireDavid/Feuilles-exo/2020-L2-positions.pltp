@@ -4,7 +4,7 @@ introduction ==
  Voici quelques exercices de construction d'automates de position.
 
 
-**Munissez-vous d'un feuille pour faire vos calculs!<br>**
+Munissez-vous d'un feuille pour faire vos calculs!<br>
 
 **Contraintes d'écriture pour l'évaluation:**<br>
 Pour le nommage des états, vous respecterez la convention suivante:
@@ -32,6 +32,7 @@ Pour le nommage des états, vous respecterez la convention suivante:
 @../L2-positions/td3-exo3-6.pl
 
 @../L2-partiel-2020/2020-partiel-exo3.pl
+
 
 
 
