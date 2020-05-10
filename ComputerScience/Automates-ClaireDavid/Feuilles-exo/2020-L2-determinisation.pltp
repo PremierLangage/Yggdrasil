@@ -23,11 +23,11 @@ Par exemple, l'état `{5,1,4}` sera nommé `145`, l'état `{3}` sera nommé `3`,
 
 ==
 
-@../L2-determinisation/td2-exo1-1.pl
+@../L2-determinisation/td2-exo1-A.pl
 
-@../L2-determinisation/td2-exo1-2.pl
+@../L2-determinisation/td2-exo1-B.pl
 
-@../L2-determinisation/td2-exo1-3.pl
+@../L2-determinisation/td2-exo1-C.pl
 
 #@../L2-partiel-2020/2020-partiel-exo3.pl
 
