@@ -33,8 +33,9 @@ string_solution = solution
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 # ----
-# s'il est défini vous pouvez utiliser ce composant pour affciher l'automate des positions demandé
-# {{ viewer_enonce|component }}
+# s'il est défini vous pouvez utiliser {{ viewer_enonce|component }}
+# dans ce qui suit pour affciher l'automate des positions demandé.
+# 
 text==
 
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
