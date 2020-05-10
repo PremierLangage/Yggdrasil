@@ -65,7 +65,9 @@ string_solution = solution
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text==
+{{ solution_view|component }}
 {{ viewer_enonce|component }}
+{{ enonce }}
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
 Donnez l'automate des positions correspondant à l'expression ```{{ message }}``` <br>
 <br>
