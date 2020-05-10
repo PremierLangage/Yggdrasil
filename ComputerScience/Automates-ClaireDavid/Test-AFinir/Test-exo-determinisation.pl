@@ -64,11 +64,9 @@ On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
 Donnez l'automate deterministe complet obtenu par l'algo vu en cours à partir de l'automate donné. <br>
 <br>
 **Contraintes d'écriture pour l'évaluation:**<br>
-Afin de vérifier la correction de vos calculs et pas seulement la forme de l'automate, vous respecterrez les conventions suivantes pour le nom des états
-<ul>
-<li> sera l'état initial de votre automate. <br>*(Si vous avez besoin de plusieurs états initiaux, relisez votre cours)*
-<li> Les états Sj pour j>0 représenteront les positions dans l'ordre de numérotation de l'expression.<br>
-*Exemple pour l'expression ```a*b+b``` qui se numérote ```a1*b2+b3```, l'état S1 représenterai la position a1, l'état S2 la position b2, et l'état S3 la position b3.*
+Afin de vérifier la correction de vos calculs et pas seulement la forme de l'automate, vous respecterez les conventions suivantes pour le nom des états
+<ul> nommez un état 
+<li> 
 </ul>
 
 {% if attempt < maxattempt and score != 100 %}
