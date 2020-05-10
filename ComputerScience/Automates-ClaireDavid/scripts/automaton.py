@@ -611,41 +611,12 @@ class Automaton:
                     for part in parts:
                         fromState, rest = part.split(':')
                         symbols, toState = rest.split('>')
-                        """
-                        for symb in symbols:
-                            transitions.append({
-                                "fromState": fromState,
-                                "toState": toState,
-                                "symbols": symb
-                            })
-                        """
                         transitions.append({
                             "fromState": fromState,
                             "toState": toState,
                             "symbols": symbols.split(',')
                         })
-## ancienne version qui autorise d'avoir "states : symbols > states"
-# Semble autoriser à avoir plusieurs transitions sur une même ligne avec des ; entre deux transitions
-# mais j'ai l'impression que les fromstates ne changent jamais du coup c'est bizarre.
 
-#                elif parseState == 'transitions':
-#                    state_rest = line.split(':');
-#                    fromStates = state_rest[0].split(',')
-#                    parts = state_rest[1].split(';')
-#                    symbols: [str] = [];
-#                    toStates: [str] = []
-#                    for j in range(len(parts)):
-#                        left_right = parts[j].split('>');
-#                        symbols = left_right[0].split(',');
-#                        toStates = left_right[1].split(',');
-#                    for fromState in fromStates:
-#                        for toState in toStates:
-#                            transitions.append({
-#                                "fromState": fromState,
-#                                "toState": toState,
-#                                "symbols": symbols
-#                            })
-        
         for k in parseCounts:
             if parseCounts[k] != 1:
                 raise SyntaxError('Specification missing #' + parseCounts[k] +' section.')
