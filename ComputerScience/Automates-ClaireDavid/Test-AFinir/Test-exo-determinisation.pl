@@ -61,7 +61,7 @@ viewer_enonce.automaton = enonce
 text==
 {{ viewer_enonce|component }}
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
-Donnez l'automate deterministe complet obtenu par l'algo vu en cours à partir de l'automate donné. <br>
+Donnez l'automate deterministe complet obtenu par l'algo vu en cours à partir de l'automate ci-dessus. <br>
 <br>
 **Contraintes d'écriture pour l'évaluation:**<br>
 Afin de vérifier la correction de vos calculs et pas seulement la forme de l'automate, vous respecterez les conventions suivantes pour le nom des états
