@@ -66,7 +66,7 @@ Donnez l'automate deterministe complet obtenu par l'algo vu en cours à partir d
 **Contraintes d'écriture pour l'évaluation:**<br>
 Afin de vérifier la correction de vos calculs et pas seulement la forme de l'automate, vous respecterez les conventions suivantes pour le nom des états
 <ul> un état correspondant à un ensemble non vide sera nommé par la concatenation dans l'ordre croissant des noms des états qui le constituent.
-* Exemples l'état `{5,1,4}` sera nommé `145`, l'état `{3}` sera nommé `3`, l'état `{4,6}` sera nommé `46`*
+*Exemples l'état `{5,1,4}` sera nommé `145`, l'état `{3}` sera nommé `3`, l'état `{4,6}` sera nommé `46`*
 <li> s'il est créé, l'état `ø` (aussi appelé état poubelle) sera nommé `P` 
 </ul>
 
