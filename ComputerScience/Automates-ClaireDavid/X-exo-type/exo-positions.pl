@@ -4,7 +4,7 @@
 extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
-title = td3 exo 3-6
+title = Exo automate des positions
 
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
@@ -55,4 +55,5 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
