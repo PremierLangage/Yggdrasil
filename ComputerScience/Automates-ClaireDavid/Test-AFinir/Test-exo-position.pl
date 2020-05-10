@@ -18,7 +18,7 @@ message = '```a*b(b(aa+ε))*a```'
 #automate solution -- le nom solution est forcé par le template
 solution = '''
     #states
-    S,0
+    S0
     S1
     S2
     S3
