@@ -20,8 +20,6 @@ A discuter avec Mamadou et Dominique
 
 09/05 -- dans le mode same_as on demande une string_solution pour faire la comparaison. il a pas l'air de vouloir considerer solution à la place. Il faudra regarder d'où ça vient mais ça peut être à cause du viewer de solution
 
-=========
-parse -> construit des exemples cf la documentation de mamadou dans automaton
 ========
 
 A ajuster:
@@ -40,7 +38,6 @@ Vérifier et ajuster si besoin:
 
 
 Exercices à concevoir: --attendre la nouvelle lib pour l'ismorphisme
-+ automate des positions --> voir exo-egalité-auto.pl pour le garder en mode comparaison simple. Chercher dans les scripts de mamadou pour le fonctionnement des expression régulières
 + produit d'automates simples
 + minimisation --> voir td-minimisation.pl 
     automate minimal et simple vérification = ok
