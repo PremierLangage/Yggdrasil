@@ -479,6 +479,7 @@ class Automaton:
             regex = regex.replace('.', '').replace('+', '|').replace('€',epsilon).replace('ε',epsilon)
 
         a = reex.str2regexp(regex).nfaPosition()
+        # A garder pour avoir le nom des états sous forme a1,b2 etc
         #a.States = [s.replace('(', '').replace(')', '').replace(',', '').replace("'", '').replace(' ', '') for s in a.States]
         def rename(statename):
             if statename == 'Initial':
@@ -1354,6 +1355,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
