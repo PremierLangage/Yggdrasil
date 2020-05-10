@@ -71,22 +71,15 @@ def fado_from_string(string_notation):
                 nfa.addSigma(letter)
             continue
         if parseState == 'transitions':
-            state, rest = line.split(':');
-            fromStates = state.split(',')
-            parts = rest.split(';')
-            symbols: [str] = [];
-            toStates: [str] = []
-            for j in range(len(parts)):
-                left, right = parts[j].split('>');
-                symbols = left.split(',');
-                toStates = right.split(',');
-            for fromState in fromStates:
-                for toState in toStates:
-                    for sym in symbols:
-                        nfa.addTransition(nfa.stateIndex(fromState), 
-                                          sym,
-                                          nfa.stateIndex(toState))
-    
+            parts = line.split(';')
+            for part in parts:
+                fromState, rest = line.split(':')
+                symbols, toState = rest.split('>')
+                for symb in symbols.split(','):
+                    nfa.addTransition(nfa.stateIndex(fromState), 
+                                      symb,
+                                      nfa.stateIndex(toState))
+
     for k in parseCounts:
         if parseCounts[k] != 1:
             raise SyntaxError('Specification missing #' + parseCounts[k] +' section.')
@@ -1385,6 +1378,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
