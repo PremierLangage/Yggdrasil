@@ -19,7 +19,6 @@ enonce = '(b.(aa+a+ε))*ab*a'
 #automate solution -- le nom solution est forcé par le template
 solution = Automaton.from_regex_nd(enonce, simple=True)
 
-
 # Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
 string_solution = solution
 
