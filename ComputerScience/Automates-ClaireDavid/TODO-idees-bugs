@@ -22,13 +22,22 @@ A discuter avec Mamadou et Dominique
         il a pas l'air de vouloir considerer solution à la place car solution est modifier au moment de la création du viewer de solution
 
 ========
-
 A ajuster:
 + Autoriser les automates sans états finaux sans transition etc
 + Le viewer ne gere pas encore les noms d'état avec des ,
++ ne pas modifier la solution donnée par l'enseignant qui actuellement mangée et minimisée automatiquement
++ Grand nettoyage d'été à faire pour uniformiser et unifier les formats/fonction etc
+
+Ergonomie du viewer:
++ key pour modifier les etiquettes de transitions/etats
++ key pour activer ou desactiver final/initia
 
 A voir?
 + Dans from_regex_nd et dans les exo positions, repasser à des noms meaningful quand le renommage des états sera plus smooth dans l'éditeur
+
+A Templates
++ Pour position, on pourrait faire un Editeur qui demande juste le titre/alphabet et la regex enoncé et produit l'exo
+
 
 ==========================================
 Idées d'exo
