@@ -38,7 +38,6 @@ string_solution = solution
 # dans ce qui suit pour affciher l'automate des positions demandé.
 # 
 text==
-
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
 Donnez l'automate des positions correspondant à l'expression ```{{enonce }}``` <br>
 <br>
