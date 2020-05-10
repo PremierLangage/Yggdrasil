@@ -517,7 +517,8 @@ class Automaton:
 
         :param nfa_string a nfa given in string notation
         """
-        a = fado_from_string(nfa_string)
+        a_dfa = Fado.toDAF(fado_from_string(nfa_string))
+        
 
 
     @staticmethod
