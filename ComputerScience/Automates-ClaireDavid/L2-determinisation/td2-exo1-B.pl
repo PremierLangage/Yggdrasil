@@ -19,22 +19,27 @@ enonce = '''
     0
     1
     2
+    3
     #initials
     0
-    1
+    3
     #accepting
     2
+    3
     #alphabet
     a
     b
     #transitions
+    0:a>1
+    0:a>2
     0:b>1
-    0:b>2
-    1:a,b>1
-    1:a>2
-    2:a>0
-    2:a>2
+    1:a>3
+    1:b>0
+    2:b>3
+    3:a>1
+    3:b>1
 '''
+
 
 
 # Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
