@@ -45,7 +45,7 @@ enonce = '''
     S5:b>S3
 '''
 # Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
-string_solution = solution
+string_solution = Automaton.
 
 #automate solution -- le nom solution est forcé par le template
 solution = enonce
