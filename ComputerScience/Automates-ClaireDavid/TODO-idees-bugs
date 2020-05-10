@@ -18,7 +18,8 @@ A discuter avec Mamadou et Dominique
 
 8/5 - est-ce que le format texte des automates a besoin d'accepter des transitions depuis/vers plusieurs états.  en l'état le nom d'un état ne peut pas contenir de virgule
 
-09/05 -- dans le mode same_as on demande une string_solution pour faire la comparaison. il a pas l'air de vouloir considerer solution à la place. Il faudra regarder d'où ça vient mais ça peut être à cause du viewer de solution
+09/05 -- dans le mode same_as on demande une string_solution pour faire la comparaison.
+        il a pas l'air de vouloir considerer solution à la place car solution est modifier au moment de la création du viewer de solution
 
 ========
 
