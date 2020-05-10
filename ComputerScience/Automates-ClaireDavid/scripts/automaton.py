@@ -509,14 +509,15 @@ class Automaton:
 
     # Réfléchir où mettre cette méthode lors du grand nettoyage
     @staticmethod
-    string_soluce_det(nfa_a):
+    string_soluce_det(nfa_string):
         """
         Creates a determinic automaton in string representation
         Rename states wrt instructions givent to the students
         So far to be used with NFA with <10 states
 
-        :param nfa_a a nfa given in string notation
+        :param nfa_string a nfa given in string notation
         """
+        a = fado_from_string(nfa_string)
 
 
     @staticmethod
