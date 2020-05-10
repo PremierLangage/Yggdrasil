@@ -47,7 +47,7 @@ solution = enonce
 
 #viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
 viewer_enonce = AutomatonDrawer()
-viewer_enonce.automaton = string_solution
+viewer_enonce.automaton = enonce
 
 
 
