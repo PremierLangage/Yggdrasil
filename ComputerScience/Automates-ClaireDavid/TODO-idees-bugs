@@ -12,7 +12,7 @@ A discuter avec Mamadou et Dominique
 =======
 23/04 -- automate inifini - reformuler
 
-27/04 -- supprimer etiquette devrait être supprimer transition. J'ai changé dans mon hack.js
+27/04 -- supprimer etiquette devrait être supprimer transition. J'ai changé dans mon hack.js -- à harmoniser avec Mamdou
 29/04 -- encore des bugs dans le renommage d'état -- pb avec les transitions -- tester mais je pense que c'est bon maintenant
 29/04 -- pb d'affichage des automates enoncéé dans certains exos --> dark mode de Chrome
 
