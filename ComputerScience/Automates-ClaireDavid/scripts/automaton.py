@@ -479,8 +479,8 @@ class Automaton:
             regex = regex.replace('.', '').replace('+', '|').replace('€',epsilon).replace('ε',epsilon)
 
         a = reex.str2regexp(regex).nfaPosition()
-        #a.States = [s.replace('(', '').replace(')', '').replace(',', '').replace("'", '').replace(' ', '') for s in a.States]
-        a.States = ['S%d' % i for i in range(len(a.States))]
+        a.States = [s.replace('(', '').replace(')', '').replace(',', '').replace("'", '').replace(' ', '') for s in a.States]
+        #a.States = ['S%d' % i for i in range(len(a.States))]
         return fado_to_string(a)
 
 #    @staticmethod
