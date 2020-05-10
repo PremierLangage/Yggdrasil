@@ -25,8 +25,8 @@ string_solution = solution
 
 #Décommenter les deux dernières lignes si besoin d'afficher l'automate des positions
 #viewer_enonce permet un affichage non modifié de l'automate string_solution
-#viewer_enonce = AutomatonDrawer()
-#viewer_enonce.automaton = string_solution
+viewer_enonce = AutomatonDrawer()
+viewer_enonce.automaton = string_solution
 ==
 
 #* Texte de l'énoncé
