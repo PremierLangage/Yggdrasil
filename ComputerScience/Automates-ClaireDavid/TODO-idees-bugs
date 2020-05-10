@@ -35,6 +35,7 @@ Autoriser les automates sans états finaux sans transition etc
 
 Le viewer ne gere pas encore les noms d'état avec des ,
 
+Dans from_regex_nd et dans les exo positions, repasser à des noms meaningful quand le renommage des états sera plus smooth dans l'éditeur
 
 ==========================================
 Idées d'exo
