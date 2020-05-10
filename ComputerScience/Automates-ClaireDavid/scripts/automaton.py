@@ -73,7 +73,7 @@ def fado_from_string(string_notation):
         if parseState == 'transitions':
             parts = line.split(';')
             for part in parts:
-                fromState, rest = line.split(':')
+                fromState, rest = part.split(':')
                 symbols, toState = rest.split('>')
                 for symb in symbols.split(','):
                     nfa.addTransition(nfa.stateIndex(fromState), 
