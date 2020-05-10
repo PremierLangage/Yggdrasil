@@ -876,7 +876,7 @@ class Automaton:
 
             states_match = sorted(fado1.States) == sorted(fado2.States)
             initial_states_match = sorted([fado1.States[i] for i in fado1.Initial]) == sorted([fado2.States[i] for i in fado2.Initial])
-            final_states_match = sorted(fado1.Final) == sorted(fado2.Final)
+            final_states_match = sorted([fado1.States[i] for i in fado1.Final]) == sorted([fado2.States[i] for i in fado2.Final])
             transition_match = sorted(fado1.delta) == sorted(fado2.delta)
 
             return states_match and initial_states_match and final_states_match and transition_match , None
