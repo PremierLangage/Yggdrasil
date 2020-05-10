@@ -16,7 +16,7 @@ alphabet = "a,b"
 message = 'a*b(b(aa+€))*a'
 
 #langage solution -- le nom solution est forcé par le template
-enonce = Automaton.from_regex_nd(message, simple=True)
+enonce = from_regex_nd(message, simple=True)
 
 solution = enonce
 
