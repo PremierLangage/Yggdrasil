@@ -16,7 +16,7 @@ alphabet = "a,b"
 message = 'a*b(b(aa+€))*a'
 
 #langage solution -- le nom solution est forcé par le template
-enonce = from_regex_nd(message, simple=True)
+enonce = Automaton.from_regex_nd(message, simple=True)
 
 solution = enonce
 
@@ -35,6 +35,7 @@ viewer_enonce.automaton = enonce
 text==
 {{ solution_view|component }}
 {{ viewer_enonce|component }}
+{{ enonce }}
 On considère l'alphabet **Σ** = **{{ '{' }} {{ alphabet }} {{ '}' }}** .<br/>
 Donnez l'automate minimal déterministe complet reconnaissant le langage {{ message }} <br>
 {% if attempt < maxattempt and score != 100 %}
