@@ -509,7 +509,7 @@ class Automaton:
 
     # Réfléchir où mettre cette méthode lors du grand nettoyage
     @staticmethod
-    string_soluce_det(auto1):
+    def string_soluce_det(nfa_string):
         """
         Creates a determinic automaton in string representation
         Rename states wrt instructions givent to the students
@@ -517,7 +517,7 @@ class Automaton:
 
         :param nfa_string a nfa given in string notation
         """
-        a = Fado.toDFA(fado_from_string(auto1)).complete(dead='P')
+        a = Fado.toDFA(fado_from_string(nfa_string)).complete(dead='P')
 
         # A garder pour avoir les noms des états comme la convention des exo L2
         def rename(statename):
