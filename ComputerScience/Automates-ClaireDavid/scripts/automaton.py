@@ -517,6 +517,8 @@ class Automaton:
 
         :param nfa_string a nfa given in string notation
         """
+
+        # Attention, prends les index et non les noms des états du nfa dans le determinisation pour construire les noms du dfa
         a = fado_from_string(nfa_string).toDFA().complete(dead='P').toNFA()
 
         # A garder pour avoir les noms des états comme la convention des exo L2
