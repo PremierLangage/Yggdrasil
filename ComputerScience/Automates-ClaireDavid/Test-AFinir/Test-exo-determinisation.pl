@@ -13,7 +13,7 @@ eval_type = "same_as"
 
 alphabet = "a,b"
 
-### A finir
+# Mettre ici l'automate à déterminiser
 enonce = '''
     #states
     S0
@@ -44,9 +44,11 @@ enonce = '''
     S5:a>S6
     S5:b>S3
 '''
+# Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
+string_solution = solution
 
 #automate solution -- le nom solution est forcé par le template
-solution = 
+solution = enonce
 
 
 #viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
@@ -54,8 +56,7 @@ viewer_enonce = AutomatonDrawer()
 viewer_enonce.automaton = enonce
 
 
-# Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
-string_solution = solution
+
 
 ==
 
@@ -82,6 +83,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
