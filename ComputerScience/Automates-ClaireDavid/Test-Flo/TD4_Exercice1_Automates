@@ -1,0 +1,64 @@
+Automate a:
+'''
+	#states
+		s1
+		s2
+	#initials
+		s1
+	#accepting
+		s1
+	#alphabet
+		a
+		b
+	#transitions
+		s1:a>s1
+		s1:b>s2
+		s2:a>s1
+		s2:b>s2
+'''
+
+Automate b:
+'''
+	#states
+		s3
+		s4
+		s5
+	#initials
+		s3
+	#accepting
+		s3
+	#alphabet
+		a
+		b
+	#transitions
+		s3:a>s3
+		s3:b>s4
+		s4:a>s5
+		s4:b>s3
+		s5:b>s4
+		s5:b>s5
+'''
+
+Automate c:
+'''
+	#states
+		s6
+		s7
+		s8
+	#initials
+		s6
+		s8
+	#accepting
+		s7
+		s8
+	#alphabet
+		a
+		b
+	#transitions
+		s6:a>s7
+		s6:b>s7
+		s6:a>s8
+		s7:a>s8
+		s8:b>s7
+		s8:b>s6
+'''
