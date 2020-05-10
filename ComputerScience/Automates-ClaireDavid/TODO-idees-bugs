@@ -36,7 +36,8 @@ A voir?
 + Dans from_regex_nd et dans les exo positions, repasser à des noms meaningful quand le renommage des états sera plus smooth dans l'éditeur
 
 A Templates
-+ Pour position, on pourrait faire un Editeur qui demande juste le titre/alphabet et la regex enoncé et produit l'exo
++ Pour les exos positions, on pourrait faire un Editeur qui demande juste le titre/alphabet et la regex enoncé et produit l'exo
++ Idem pour minimisation avec un mode selon que l'entrée est une regex ou un automate
 
 
 ==========================================
