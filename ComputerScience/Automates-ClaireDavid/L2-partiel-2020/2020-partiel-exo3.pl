@@ -17,42 +17,9 @@ alphabet = "a,b"
 message = '(b.(aa+a+ε))*ab*a'
 
 
-solution = Automaton.from_regex_nd(message, simple=True)
 #automate solution -- le nom solution est forcé par le template
-#solution = '''
-#    #states
-#    S0
-#    S1
-#    S2
-#    S3
-#    S4
-#    S5
-#    S6
-#    S7
-#    #initials
-#    S0
-#    #accepting
-#    S7
-#    #alphabet
-#    a
-#    b
-#    #transitions
-#    S0:b>S1
-#    S0:a>S5
-#    S1:b>S1
-#    S1:a>S2
-#    S1:a>S4
-#    S1:a>S5
-#    S2:a>S3
-#    S3:b>S1
-#    S3:a>S5
-#    S4:b>S1
-#    S4:a>S5
-#    S5:a>S7
-#    S5:b>S6
-#    S6:b>S6
-#    S6:a>S7
-#'''
+solution = Automaton.from_regex_nd(message, simple=True)
+
 
 # Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
 string_solution = solution
