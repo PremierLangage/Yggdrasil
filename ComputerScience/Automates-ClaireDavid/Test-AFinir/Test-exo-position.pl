@@ -67,7 +67,7 @@ string_solution = solution
 text==
 {{ solution_view|component }}
 {{ viewer_enonce|component }}
-{{ enonce }}
+```{{ enonce }}```
 {{ solution }}
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
 Donnez l'automate des positions correspondant à l'expression ```{{ message }}``` <br>
