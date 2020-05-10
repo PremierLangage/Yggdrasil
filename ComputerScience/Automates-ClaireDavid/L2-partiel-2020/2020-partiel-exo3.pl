@@ -22,7 +22,7 @@ solution = Automaton.from_regex_nd(enonce, simple=True)
 # Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
 string_solution = solution
 
-#Déécommenter les deux dernières lignes si besoin
+#Décommenter les deux dernières lignes si besoin d'afficher l'automate des positions
 #viewer_enonce permet un affichage non modifié de l'automate string_solution
 #viewer_enonce = AutomatonDrawer()
 #viewer_enonce.automaton = string_solution
