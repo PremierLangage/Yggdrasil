@@ -513,6 +513,8 @@ class Automaton:
         """
         Creates a determinic automaton in string representation
         Rename states wrt instructions givent to the students
+        So far to be used with NFA with <10 states
+
         :param nfa_a a nfa given in string notation
         """
 
