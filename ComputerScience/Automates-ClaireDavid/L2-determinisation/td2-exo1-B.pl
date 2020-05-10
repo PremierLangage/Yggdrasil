@@ -2,7 +2,7 @@
 extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
-title = td2 exo1-A
+title = td2 exo1-B
 
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
