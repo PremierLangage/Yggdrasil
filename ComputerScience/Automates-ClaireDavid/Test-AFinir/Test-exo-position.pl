@@ -33,8 +33,8 @@ solution = '''
     a
     b
     #transitions
-    S,0:a>S1
-    S,0:b>S2
+    S0:a>S1
+    S0:b>S2
     S1:a>S1
     S1:b>S2
     S2:a>S6
