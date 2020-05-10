@@ -17,53 +17,29 @@ alphabet = "a,b"
 
 #message de l'énoncé décrivant le langage
 message = '```(a*b+bb*a)*```'
-
 #automate solution -- le nom solution est forcé par le template
-solution = '''
-    #states
-    S0
-    S1
-    S2
-    S3
-    S4
-    S5
-    #initials
-    S0
-    #accepting
-    S0;S2;S5
-    #alphabet
-    a
-    b
-    #transitions
-    S0:a>S1
-    S0:b>S2
-    S0:b>S3
-    S1:a>S1
-    S1:b>S2
-    S2:a>S1
-    S2:b>S2
-    S2:b>S3
-    S3:b>S4
-    S3:a>S5
-    S4:b>S4
-    S4:a>S5
-    S5:a>S1
-    S5:b>S2
-    S5:b>S3
-'''
+solution = Automaton.from_regex_nd(enonce, simple=True)
 
 # Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
 string_solution = solution
 
+#Décommenter les deux dernières lignes si besoin d'afficher l'automate des positions
+#viewer_enonce permet un affichage non modifié de l'automate string_solution
+#viewer_enonce = AutomatonDrawer()
+#viewer_enonce.automaton = string_solution
 ==
 
 #* Texte de l'énoncé
 # ---
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
+# ----
+# s'il est défini vous pouvez utiliser {{ viewer_enonce|component }}
+# dans ce qui suit pour afficher l'automate des positions demandé.
+# 
 text==
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
-Donnez l'automate des positions correspondant à l'expression {{ message }} <br>
+Donnez l'automate des positions correspondant à l'expression ```{{enonce }}``` <br>
 <br>
 **Contraintes d'écriture pour l'évaluation:**<br>
 Pour le nommage des états, vous respecterez la convention suivante:
@@ -78,6 +54,10 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
+
+
+
 
 
 
