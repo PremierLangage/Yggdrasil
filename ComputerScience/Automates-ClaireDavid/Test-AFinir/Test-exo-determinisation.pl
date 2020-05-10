@@ -15,34 +15,26 @@ alphabet = "a,b"
 
 # Mettre ici l'automate à déterminiser
 enonce = '''
-    #states
-    S0
-    S1
-    S2
-    S3
-    S4
-    S5
-    S6
-    #initials
-    S0
-    #accepting
-    S6
-    #alphabet
-    a
-    b
-    #transitions
-    S0:a>S1
-    S0:b>S2
-    S1:a>S1
-    S1:b>S2
-    S2:a>S6
-    S2:b>S3
-    S3:a>S4
-    S3:b>S3
-    S3:a>S6
-    S4:a>S5
-    S5:a>S6
-    S5:b>S3
+	#states
+		s1
+		s2
+		s3
+	#initials
+		s1
+		s2
+	#accepting
+		s3
+	#alphabet
+		a
+		b
+	#transitions
+		s1:b>s2
+		s1:b>s3
+		s2:a>s2
+		s2:a>s3
+		s2:b>s2
+		s3:a>s1
+		s3:a>s3
 '''
 # Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
 # TODO - Ecrire string_soluce_det
