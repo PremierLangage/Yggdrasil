@@ -15,27 +15,28 @@ alphabet = "a,b"
 
 # Mettre ici l'automate à déterminiser
 enonce = '''
-	#states
-		s1
-		s2
-		s3
-	#initials
-		s1
-		s2
-	#accepting
-		s3
-	#alphabet
-		a
-		b
-	#transitions
-		s1:b>s2
-		s1:b>s3
-		s2:a>s2
-		s2:a>s3
-		s2:b>s2
-		s3:a>s1
-		s3:a>s3
+    #states
+    S0
+    S1
+    S2
+    #initials
+    S0
+    S1
+    #accepting
+    S2
+    #alphabet
+    a
+    b
+    #transitions
+    S0:b>S1
+    S0:b>S2
+    S1:a>S1
+    S1:a>S2
+    S1:b>S1
+    S2:a>S0
+    S2:a>S2
 '''
+
 # Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
 # TODO - Ecrire string_soluce_det
 # Question -- mettre string soluce dans Automaton ou dans generator?
@@ -77,6 +78,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
