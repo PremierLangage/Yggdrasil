@@ -9,13 +9,11 @@ le script automaton.py est un wrapper autour de cette lib et elle contient une c
 A discuter avec Mamadou et Dominique
 -----------------
 
-J'ai changé réponse acceptable
-
 =======
 23/04 -- automate inifini - reformuler
 
 27/04 -- supprimer etiquette devrait être supprimer transition. J'ai changé dans mon hack.js
-29/04 -- encore des bugs dans le renommage d'état -- pb avec les transitions
+29/04 -- encore des bugs dans le renommage d'état -- pb avec les transitions -- tester mais je pense que c'est bon maintenant
 29/04 -- pb d'affichage des automates enoncéé dans certains exos --> dark mode de Chrome
 
 8/5 - est-ce que le format texte des automates a besoin d'accepter des transitions depuis/vers plusieurs états.  en l'état le nom d'un état ne peut pas contenir de virgule
