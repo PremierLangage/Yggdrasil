@@ -40,7 +40,6 @@ string_solution = solution
 # dans ce qui suit pour afficher l'automate des positions demandé.
 # 
 text==
-{{ viewer_enonce|component }}
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
 Donnez l'automate des positions correspondant à l'expression ```{{enonce }}``` <br>
 <br>
