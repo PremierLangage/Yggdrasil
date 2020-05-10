@@ -868,7 +868,7 @@ class Automaton:
                 initial, final states and transitions
             :param auto1 automaton in string_notation
             :param auto2 automaton in string_notation
-            :raise If auto1 or auto2 cannot be parsed.
+            :raise exception If auto1 or auto2 cannot be parsed.
         """
         try:
             fado1 = fado_from_string(auto1)
@@ -1360,6 +1360,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
