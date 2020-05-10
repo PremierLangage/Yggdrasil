@@ -479,7 +479,9 @@ class Automaton:
             regex = regex.replace('.', '').replace('+', '|').replace('€',epsilon).replace('ε',epsilon)
 
 #        return fado_to_string(reex.str2regexp(regex).nfaGlushkov())
-        return fado_to_string(reex.str2regexp(regex).nfaPosition())
+        a = reex.str2regexp(regex).nfaPosition()
+        a.States = [s.replace('(', '').replace(')', '').replace(',', '') for s in a.States]
+        return fado_to_string(a)
 
 #    @staticmethod
 #    def from_regex(regex: str):
