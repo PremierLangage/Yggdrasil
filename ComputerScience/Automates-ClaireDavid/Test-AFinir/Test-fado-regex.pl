@@ -15,9 +15,9 @@ alphabet = "a,b"
 #message de l'énoncé décrivant le langage
 message = 'a*b(b(aa+€))*a'
 
-#langage solution -- le nom solution est forcé par le template
 enonce = Automaton.from_regex_nd(message, simple=True)
 
+#langage solution -- le nom solution est forcé par le template
 solution = enonce
 
 #viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
