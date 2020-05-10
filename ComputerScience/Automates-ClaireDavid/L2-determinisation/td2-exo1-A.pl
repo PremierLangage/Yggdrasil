@@ -13,7 +13,8 @@ eval_type = "same_as"
 alphabet = "a,b"
 
 # Mettre ici l'automate à déterminiser
-# Attention pour l'instant numéroter les états à partir de zéro et les définir dans l'ordre dans #states
+# Attention pour l'instant numéroter les états à partir de zéro 
+# et les définir dans l'ordre dans #states
 enonce = '''
     #states
     0
