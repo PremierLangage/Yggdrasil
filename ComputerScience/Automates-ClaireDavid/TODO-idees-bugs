@@ -34,6 +34,7 @@ parse -> construit des exemples cf la documentation de mamadou dans automaton
 
 Pas de gestion propre des automates non det pour l'instant --> passage à la lib Fado
 
+Autoriser les automates sans états finaux sans transition etc
 
 
 ==========================================
@@ -93,6 +94,7 @@ pour votre image vous devez lui donner une largeur fixé (voire 100% si c'est ce
      object-fit: cover; /* important pour avoir une image centrée */
    }
 }
+
 
 
 
