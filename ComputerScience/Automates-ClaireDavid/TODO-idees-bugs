@@ -44,6 +44,8 @@ Templates
 
 A faire
 + implémenter le mode isomorphism probablement à partir de fado
+==========================================
+Dans regex Td3-1 ajouter l'explication big-endian
 
 
 ==========================================
@@ -102,6 +104,7 @@ pour votre image vous devez lui donner une largeur fixé (voire 100% si c'est ce
      object-fit: cover; /* important pour avoir une image centrée */
    }
 }
+
 
 
 
