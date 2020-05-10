@@ -13,9 +13,10 @@ eval_type = "same_as"
 alphabet = "a,b"
 
 #message de l'énoncé décrivant le langage
-message = '```a*b(b(aa+ε))*a```'
+message = 'a*b(b(aa+ε))*a'
 
 #automate solution -- le nom solution est forcé par le template
+
 solution = '''
     #states
     S0
@@ -46,6 +47,9 @@ solution = '''
     S5:a>S6
     S5:b>S3
 '''
+
+
+enonce = Automaton.from_regex_nd(message, simple=True)
 
 #viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
 viewer_enonce = AutomatonDrawer()
@@ -79,6 +83,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
