@@ -33,6 +33,9 @@ Ergonomie du viewer:
 
 A voir?
 + Dans from_regex_nd et dans les exo positions, repasser à des noms meaningful quand le renommage des états sera plus smooth dans l'éditeur
++ la comparaison same_as prend en entrée un automate au format string_notation
+    Ca m'a l'air pas mal car format non spécifique à lib
+    Mais est-ce le plus malin?
 
 Templates
 + Pour les exos positions, on pourrait faire un Editeur qui demande juste le titre/alphabet et la regex enoncé et produit l'exo
@@ -40,7 +43,7 @@ Templates
 + Pour automate ou regex ça doit être possible aussi
 
 A faire
-+ implementer le mode isomorphism
++ implémenter le mode isomorphism probablement à partir de fado
 
 
 ==========================================
