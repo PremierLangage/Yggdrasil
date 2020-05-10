@@ -609,11 +609,8 @@ class Automaton:
                     # autorise à avoir plusieurs transitions sur une même ligne avec des ; entre deux transitions
                     parts = line.split(';')
                     for part in parts:
-                        state_rest = part.split(':')
-                        fromState = state_rest[0]
-                        rest = state_rest[1].split('>')
-                        symbols = rest[0].split(',')
-                        toState: [str] = rest[1]
+                        fromState, rest = part.split(':')
+                        symbols, toState = rest.split('>')
                         """
                         for symb in symbols:
                             transitions.append({
@@ -625,7 +622,7 @@ class Automaton:
                         transitions.append({
                             "fromState": fromState,
                             "toState": toState,
-                            "symbols": symbols
+                            "symbols": symbols.split(',')
                         })
 ## ancienne version qui autorise d'avoir "states : symbols > states"
 # Semble autoriser à avoir plusieurs transitions sur une même ligne avec des ; entre deux transitions
