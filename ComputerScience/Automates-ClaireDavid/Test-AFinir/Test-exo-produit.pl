@@ -88,9 +88,6 @@ solution = string_solution
 viewer_enonce = AutomatonDrawer()
 viewer_enonce.automaton = enonce
 
-
-
-
 ==
 
 #* Texte de l'énoncé
