@@ -586,11 +586,13 @@ class Automaton:
                 ##### les nfa1 doit être det complet
         elif mode == 'symdiff' :
             if nfa1.completeP() and nfa1.determinicP() and nfa2.completeP() and nfa2.determinicP():
-            a = nfa1.product(nfa2)
-            #set final states
-            for (x1,x2) in a.States:
-                if (nfa1.stateIndex(x1) in nfa1.Final and nfa2.stateIndex(x2) not in nfa2.Final) or (nfa1.stateIndex(x1) not in nfa1.Final and nfa2.stateIndex(x2) in nfa2.Final):
-                    a.addFinal(a.stateIndex((x1,x2)))
+                a = nfa1.product(nfa2)
+                #set final states
+                for (x1,x2) in a.States:
+                    if (nfa1.stateIndex(x1) in nfa1.Final and nfa2.stateIndex(x2) not in nfa2.Final) or (nfa1.stateIndex(x1) not in nfa1.Final and nfa2.stateIndex(x2) in nfa2.Final):
+                        a.addFinal(a.stateIndex((x1,x2)))
+            else:
+                ##### les deux automates doivent être det complet
         else:
             pass
 
