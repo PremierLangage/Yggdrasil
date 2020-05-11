@@ -20,28 +20,19 @@ automate1 = '''
     0
     1
     2
-    3
-    4
     #initials
     0
-    2
     #accepting
-    0
     1
     #alphabet
     a
     b
     #transitions
-    0:a,b>1
-    0:a>2
-    1:a>3
-    1:a>4
-    2:a>2
-    2:a>1
-    3:a>1
-    3:b>4
-    4:b>3
-    4:b>4
+    0:a>1
+    0:b>2
+    1:a>0
+    1:b>1
+    2:a,b>2
 '''
 
 automate2 = '''
