@@ -536,7 +536,7 @@ class Automaton:
     def string_soluce_produit(nfa_string1, nfa_string2):
         a = fado_from_string(nfa_string1).product(fado_from_string(nfa_string2))
 
-        return soluce=fado_to_string(a)
+        return fado_to_string(a)
 
         
 
