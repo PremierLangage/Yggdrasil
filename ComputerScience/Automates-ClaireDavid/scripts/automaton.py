@@ -533,7 +533,7 @@ class Automaton:
 
     # Réfléchir où mettre cette méthode lors du grand nettoyage
     @staticmethod
-    def string_soluce_product(nfa_string1, nfa_string2, type='intersect'):
+    def string_soluce_product(nfa_string1, nfa_string2, mode='intersect'):
         """
         Creates a non determinic automaton in string representation
         corresponding to the product of the two nfa
@@ -552,7 +552,7 @@ class Automaton:
         nfa2 = fado_from_string(nfa_string2)
 
 
-        if type == 'intersect':
+        if mode == 'intersect':
             a = nfa1.__and__(nfa2)
         else :
             a = nfa1
