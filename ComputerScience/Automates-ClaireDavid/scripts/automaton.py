@@ -564,9 +564,7 @@ class Automaton:
             for (x1,x2) in a.States:
                 if nfa1.stateIndex(x1) in nfa1.Final or nfa2.stateIndex(x2) in nfa2.Final:
                     a.addFinal(a.stateIndex((x1,x2))
-            for x in [(nfa1.States[f1], nfa2.States[f2]) for f1 in nfa1.Final for f2 in nfa2.Final]:
-                if x in a.States:
-                    a.addFinal(a.stateIndex(x))
+
 
 
 
