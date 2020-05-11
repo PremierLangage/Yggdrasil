@@ -594,6 +594,7 @@ class Automaton:
             else:
                 ##### les deux automates doivent être det complet
         else:
+            ### mode inconnu
             pass
 
 
