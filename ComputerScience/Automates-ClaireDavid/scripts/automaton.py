@@ -568,11 +568,11 @@ class Automaton:
                 ##### les deux automates doivent être complets
         elif mode == 'minusright' :
             if nfa1.completeP() and nfa2.completeP():
-            a = nfa1.product(nfa2)
-            #set final states
-            for (x1,x2) in a.States:
-                if nfa1.stateIndex(x1) in nfa1.Final and nfa2.stateIndex(x2) not in nfa2.Final:
-                    a.addFinal(a.stateIndex((x1,x2)))
+                a = nfa1.product(nfa2)
+                #set final states
+                for (x1,x2) in a.States:
+                    if nfa1.stateIndex(x1) in nfa1.Final and nfa2.stateIndex(x2) not in nfa2.Final:
+                        a.addFinal(a.stateIndex((x1,x2)))
         elif mode == 'minusleft' :
             ## TODO check complete
             a = nfa1.product(nfa2)
