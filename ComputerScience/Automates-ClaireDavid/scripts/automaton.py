@@ -562,7 +562,7 @@ class Automaton:
             return a
 
         if mode == 'intersect':
-            a = compute_product()
+            a = compute_product(nfa1,nfa2)
             #set final states
             for x in [(nfa1.States[f1], nfa2.States[f2]) for f1 in nfa1.Final for f2 in nfa2.Final]:
                 if x in a.States:
