@@ -558,7 +558,7 @@ class Automaton:
                 if x in a.States:
                     a.addFinal(a.stateIndex(x))
 
-        else :
+        elif mode == 'union' :
             a = nfa1
 
 
