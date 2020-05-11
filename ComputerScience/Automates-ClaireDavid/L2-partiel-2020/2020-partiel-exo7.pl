@@ -99,9 +99,9 @@ viewer_enonce2.automaton = automate2
 text==
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$. Faites le produit des deux automates donnés pour construire un automate qui reconnait $!L_1\cap L_2!$.<br>
 
-Automate $!\mathcal{A}_1!$ qui reconnait $!L_1!$:
+Automate $!\mathcal{A}_1!$ qui reconnaît $!L_1!$:
 {{ viewer_enonce1|component }}
-Automate $!\mathcal{A}_2!$ qui reconnait $!L_2!$:
+Automate $!\mathcal{A}_2!$ qui reconnaît $!L_2!$:
 {{ viewer_enonce2|component }}
 **Contraintes d'écriture pour l'évaluation:**<br>
 Afin de vérifier la correction de vos calculs et pas seulement la forme de l'automate, vous respecterez la convention suivante:
