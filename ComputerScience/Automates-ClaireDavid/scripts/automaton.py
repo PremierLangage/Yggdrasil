@@ -585,7 +585,7 @@ class Automaton:
             else:
                 ##### les nfa1 doit être det complet
         elif mode == 'symdiff' :
-            ## TODO check complete
+            if nfa1.completeP() and nfa1.determinicP() and nfa2.completeP() and nfa2.determinicP():
             a = nfa1.product(nfa2)
             #set final states
             for (x1,x2) in a.States:
