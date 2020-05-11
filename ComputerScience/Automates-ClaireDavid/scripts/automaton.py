@@ -576,7 +576,7 @@ class Automaton:
                     if nfa1.stateIndex(x1) in nfa1.Final or nfa2.stateIndex(x2) in nfa2.Final:
                         a.addFinal(a.stateIndex((x1,x2)))
             else:
-                ##### les deux automates doivent être complets
+                raise Exception('les deux automates doivent être complets')
                 pass
         elif mode == 'minusright' :
             if nfa2.completeP() and nfa2.determinicP():
