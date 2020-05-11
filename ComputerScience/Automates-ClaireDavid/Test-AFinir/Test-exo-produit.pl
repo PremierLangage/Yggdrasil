@@ -60,8 +60,28 @@ automate2 = '''
 # TODO - Ecrire string_soluce_produit
 #string_solution = Automaton.string_soluce_produit(aautomate1,automate2)
 
+string_solution = '''
+    #states
+    4
+    5
+    6
+    #initials
+    4
+    #accepting
+    6
+    #alphabet
+    a
+    b
+    #transitions
+    4:a,b>5
+    5:a>6
+    5:b>5
+    6:a,b>6
+'''
+
+
 #automate solution -- le nom solution est forcé par le template
-solution = enonce
+solution = string_solution
 
 
 #viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
