@@ -110,6 +110,8 @@ viewer_soluce.automaton = string_solution
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text==
+{{ viewer_soluce|component }}
+
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$. Faites le produit des deux automates
  donnés pour construire un automate qui reconnaît $!L_1\backslash L_2\cup L_2\backslash L_1!$.<br>
 
