@@ -37,31 +37,21 @@ automate1 = '''
 
 automate2 = '''
     #states
-    0
-    1
-    2
-    3
     4
+    5
+    6
     #initials
-    0
-    2
+    4
     #accepting
-    0
-    1
+    6
     #alphabet
     a
     b
     #transitions
-    0:a,b>1
-    0:a>2
-    1:a>3
-    1:a>4
-    2:a>2
-    2:a>1
-    3:a>1
-    3:b>4
-    4:b>3
-    4:b>4
+    4:a,b>5
+    5:a>6
+    5:b>5
+    6:a,b>6
 '''
 
 
