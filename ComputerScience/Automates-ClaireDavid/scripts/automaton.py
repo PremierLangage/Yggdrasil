@@ -541,7 +541,7 @@ class Automaton:
         
         :param nfa_string1 a nfa given in string notation
         :param nfa_string2 a nfa given in string notation
-        :param type str to specify which langage should be defined by the product
+        :param mode str to specify which langage should be defined by the product
             default 'intersect'
             'union' build L1UL2  raise exception if input automata are not complete
             'minusright' build L1\L2 raise exception if nfa_string2 is not det complete
