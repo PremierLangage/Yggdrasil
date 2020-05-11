@@ -553,11 +553,10 @@ class Automaton:
 
         if mode == 'intersect':
             a = nfa1.product(nfa2)
-            xfinals = [(nfa1.States[f1], nfa2.States[f2]) for f1 in nfa1.Final for f2 in nfa2.Final]
-            a.setFinal(xfinals)
-#            for x in [(nfa1.States[f1], nfa2.States[f2]) for f1 in nfa1.Final for f2 in nfa2.Final]:
-#                if x in a.States:
-#                    a.addFinal(a.stateIndex(x))
+            #set final states
+            for x in [(nfa1.States[f1], nfa2.States[f2]) for f1 in nfa1.Final for f2 in nfa2.Final]:
+                if x in a.States:
+                    a.addFinal(a.stateIndex(x))
 
         else :
             a = nfa1
