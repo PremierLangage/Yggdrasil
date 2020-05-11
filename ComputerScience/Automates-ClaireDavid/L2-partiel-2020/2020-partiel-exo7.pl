@@ -107,7 +107,7 @@ Automate $!\mathcal{A}_1!$ qui reconnait $!L_1!$:
 {{ viewer_enonce1|component }}
 Automate $!\mathcal{A}_2!$ qui reconnait $!L_2!$:
 {{ viewer_enonce2|component }}
-{{ viewer_soluce }}
+{{ viewer_soluce |component}}
 **Contraintes d'écriture pour l'évaluation:**<br>
 Afin de vérifier la correction de vos calculs et pas seulement la forme de l'automate, vous respecterez la convention suivante:
 <br>
