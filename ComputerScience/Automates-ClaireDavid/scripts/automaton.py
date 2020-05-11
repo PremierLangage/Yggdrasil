@@ -551,6 +551,12 @@ class Automaton:
         nfa1 = fado_from_string(nfa_string1)
         nfa2 = fado_from_string(nfa_string2)
 
+        def compute_product():
+            a = nfa1.product(nfa2)
+            for (x1,x2) in a.States:
+                    if x1 == '@empty_set' in nfa1.Final or nfa2.stateIndex(x2) in nfa2.Final:
+                        a.addFinal(a.stateIndex((x1,x2)))
+
         if mode == 'intersect':
             a = nfa1.product(nfa2)
             #set final states
