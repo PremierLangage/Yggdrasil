@@ -38,11 +38,8 @@ enonce = '''
 '''
 
 
-
-
 # Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
-# TODO - Ecrire string_soluce_det
-# Question -- mettre string soluce dans Automaton ou dans generator?
+# TODO - améliorer string_soluce_det qui gère mal les noms d'états
 string_solution = Automaton.string_soluce_det(enonce)
 
 #automate solution -- le nom solution est forcé par le template
@@ -82,4 +79,5 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
