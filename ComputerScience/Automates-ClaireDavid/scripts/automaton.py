@@ -553,10 +553,7 @@ class Automaton:
 
 
         if type == 'intersect':
-        ### A FINIR
-            a = nfa1.product(nfa2)
-            final_states = 
-            a.setFinal(final_states)
+            a = nfa1.__and__(nfa2)
         elif type == 'union'
 
 
