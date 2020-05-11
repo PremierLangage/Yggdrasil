@@ -536,6 +536,14 @@ class Automaton:
     def string_soluce_product(nfa_string1, nfa_string2):
         a = fado_from_string(nfa_string1).product(fado_from_string(nfa_string2))
 
+        # A garder pour avoir les noms des états comme la convention des exo L2
+        def rename(statename):
+            if statename == 'P':
+                return statename
+            return ''.join(map(str, sorted(statename)))
+#            return statename.replace('(','').replace(')', '').replace(' ', '')
+        a.States = [rename(s) for s in a.States]
+
         return fado_to_string(a)
 
         
