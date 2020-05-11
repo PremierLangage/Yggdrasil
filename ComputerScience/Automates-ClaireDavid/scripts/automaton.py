@@ -558,8 +558,8 @@ class Automaton:
                     if x1 == '@empty_set' or x2 == '@empty_set':
                         xx.append((x1,x2))
             for x in xx:
-                #a.renameState(a.stateIndex(x),'pouet')
-                a.deleteState(a.stateIndex(x))
+                a.renameState(a.stateIndex(x),'pouet')
+                #a.deleteState(a.stateIndex(x))
             return a
 
         if mode == 'intersect':
@@ -577,7 +577,6 @@ class Automaton:
                         a.addFinal(a.stateIndex((x1,x2)))
             else:
                 raise Exception('les deux automates doivent être complets')
-                pass
         elif mode == 'minusright' :
             if nfa2.completeP() and nfa2.determinicP():
                 a = nfa1.product(nfa2)
