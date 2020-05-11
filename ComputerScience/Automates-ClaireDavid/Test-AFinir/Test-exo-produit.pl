@@ -55,7 +55,7 @@ automate2 = '''
 #            'minusright' build L1\L2
 #            'minusleft' build L2\L1
 #            'symdiff' build (L2\L1)U(L1\L2) 
-string_solution = Automaton.string_soluce_product(automate1,automate2,mode='symdiff')
+string_solution = Automaton.string_soluce_product(automate1,automate2,mode='intersect')
 
 #TODO Etats finaux
 solution = '''
