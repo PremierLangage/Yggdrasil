@@ -53,7 +53,7 @@ automate2 = '''
 
 # Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
 # TODO - Ecrire string_soluce_produit
-string_solution = Automaton.string_soluce_product(automate1,automate2,mode='symdiff')
+string_solution = Automaton.string_soluce_product(automate1,automate2,mode='minusright')
 
 #TODO Etats finaux
 solution = '''
