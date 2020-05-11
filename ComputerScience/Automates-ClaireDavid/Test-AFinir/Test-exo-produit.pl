@@ -16,27 +16,23 @@ automate1 = '''
     #states
     1
     2
-    3
     #initials
-    1
+    1;2
     #accepting
-    2
+    1;2
     #alphabet
     a
     b
     #transitions
     1:a>2
-    1:b>3
-    2:a>1
-    2:b>2
-    3:a,b>3
+    2:b>1
 '''
 
 automate2 = '''
     #states
+    3
     4
     5
-    6
     #initials
     4
     #accepting
@@ -45,10 +41,11 @@ automate2 = '''
     a
     b
     #transitions
-    4:a,b>5
-    5:a>6
-    5:b>5
-    6:a,b>6
+    3:a,b>4
+    4:a>5
+    4:b>4
+    5:a>5
+    5:b>4
 '''
 
 # Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
