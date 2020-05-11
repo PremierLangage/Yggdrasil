@@ -1,0 +1,36 @@
+
+
+title = Déterminisation
+
+introduction ==
+ Voici quelques exercices de construction de déterminisation.
+
+
+Munissez-vous d'un feuille pour faire vos calculs!<br>
+
+**Contraintes d'écriture pour l'évaluation:**<br>
+Afin de vérifier la correction de vos calculs et pas seulement la forme de l'automate, vous respecterez les conventions suivantes:
+<ul>
+<li> s'il est créé, l'état `ø` (aussi appelé état poubelle) sera nommé `P` ;
+<li> les autres états seront nommés par la concatenation dans l'ordre croissant des états qui le constituent.
+<br>
+Par exemple, l'état `{5,1,4}` sera nommé `145`, l'état `{3}` sera nommé `3`, l'état `{4,6}` sera nommé `46`.
+</ul>
+
+
+ Les exercices sont indépendants. Vous pouvez les faire et même les refaire dans l'ordre que vous voulez. Si vous rencontrez des difficultés dans l'utilisation de la plateforme, n'hésitez pas à venir en discuter sur le channel discord dédié
+ 
+ Un grand merci à Mamadou pour son travail sur le module automates de PLaTon.
+
+==
+
+@../L2-produit/bla.pl
+
+
+
+
+
+
+
+
+
