@@ -533,7 +533,17 @@ class Automaton:
 
     # Réfléchir où mettre cette méthode lors du grand nettoyage
     @staticmethod
-    def string_soluce_product(nfa_string1, nfa_string2):
+    def string_soluce_product(nfa_string1, nfa_string2, type='intersect'):
+        """
+        Creates a non determinic automaton in string representation
+        corresponding to the product of the two nfa
+        Set final states depending in type parameter
+        
+        :param nfa_string1 a nfa given in string notation
+        :param nfa_string2 a nfa given in string notation
+        :type which langage should be defined by the product
+        """
+
         a = fado_from_string(nfa_string1).product(fado_from_string(nfa_string2))
 
         # A garder pour avoir les noms des états comme la convention des exo L2
