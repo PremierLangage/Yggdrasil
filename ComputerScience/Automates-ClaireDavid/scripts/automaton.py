@@ -555,6 +555,7 @@ class Automaton:
         if type == 'intersect':
             a = nfa1.__and__(nfa2)
         elif type == 'union'
+            a = nfa1.__and__(nfa2)
 
 
 
