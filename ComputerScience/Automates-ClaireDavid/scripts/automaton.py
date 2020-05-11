@@ -603,6 +603,7 @@ class Automaton:
             else:
                 raise Exception('les deux automates doivent être det complet')
         else:
+            raise Exception('mode de produit non défini')
             ### mode inconnu
             pass
 
