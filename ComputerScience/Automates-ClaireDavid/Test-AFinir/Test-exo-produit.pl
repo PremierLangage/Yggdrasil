@@ -1,8 +1,8 @@
+
 extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
-title = Exercice produit d'automates
-
+title = exo de td 11 mai
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
 from automaton import Automaton
@@ -14,22 +14,22 @@ alphabet = "a,b"
 
 automate1 = '''
     #states
-    0
     1
     2
+    3
     #initials
-    0
-    #accepting
     1
+    #accepting
+    2
     #alphabet
     a
     b
     #transitions
-    0:a>1
-    0:b>2
-    1:a>0
-    1:b>1
-    2:a,b>2
+    1:a>2
+    1:b>3
+    2:a>1
+    2:b>2
+    3:a,b>3
 '''
 
 automate2 = '''
@@ -66,7 +66,9 @@ string_solution = '''
     #initials
     14
     #accepting
-    26
+    16
+    25
+    36
     #alphabet
     a
     b
@@ -83,6 +85,7 @@ string_solution = '''
     26:a>16
     26:b>26
 '''
+
 
 
 #automate solution -- le nom solution est forcé par le template
@@ -102,11 +105,12 @@ viewer_enonce2.automaton = automate2
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text==
-On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$. Faites le produit des deux automates donnés pour construire un automate qui reconnait $!L_1\cap L_2!$.<br>
+On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$. Faites le produit des deux automates
+ donnés pour construire un automate qui reconnaît $!L_1\backslash L_2\cup L_2\backslash L_1!$.<br>
 
-Automate $!\mathcal{A}_1!$ qui reconnait $!L_1!$:
+Automate $!\mathcal{A}_1!$ qui reconnaît $!L_1!$:
 {{ viewer_enonce1|component }}
-Automate $!\mathcal{A}_2!$ qui reconnait $!L_2!$:
+Automate $!\mathcal{A}_2!$ qui reconnaît $!L_2!$:
 {{ viewer_enonce2|component }}
 **Contraintes d'écriture pour l'évaluation:**<br>
 Afin de vérifier la correction de vos calculs et pas seulement la forme de l'automate, vous respecterez la convention suivante:
@@ -124,6 +128,9 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
+
+
 
 
 
