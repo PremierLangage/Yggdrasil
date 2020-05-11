@@ -109,12 +109,12 @@ viewer_enonce2.automaton = automate2
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text==
+On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$. Faites de le produit des deux automates ci-dessus pour construire un automate qui reconnait $!L_1\cap L_2!$.<br>
+
 Automate $!\mathcal{A}_1!$ qui reconnait $!L_1!$:
 {{ viewer_enonce1|component }}
 Automate $!\mathcal{A}_2!$ qui reconnait $!L_2!$:
 {{ viewer_enonce2|component }}
-On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
-Faites de le produit des deux automates ci-dessus pour construire un automate qui reconnait $!L_1\cap L_2!$.<br>
 **Contraintes d'écriture pour l'évaluation:**<br>
 Afin de vérifier la correction de vos calculs et pas seulement la forme de l'automate, vous respecterez la convention suivante:
 <ul>
