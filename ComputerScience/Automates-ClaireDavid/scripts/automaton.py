@@ -567,7 +567,7 @@ class Automaton:
             else:
                 ##### les deux automates doivent être complets
         elif mode == 'minusright' :
-            if nfa1.completeP() and nfa2.completeP():
+            if nfa2.completeP() and nfa2.determinicP():
                 a = nfa1.product(nfa2)
                 #set final states
                 for (x1,x2) in a.States:
