@@ -557,9 +557,8 @@ class Automaton:
             for (x1,x2) in a.States:
                     if x1 == '@empty_set' or x2 == '@empty_set':
                         xx.append((x1,x2))
-            for x in xx:
-                a.renameState(a.stateIndex(x),'pouet')
-                #a.deleteState(a.stateIndex(x))
+            a.deleteStates(xx)
+
             return a
 
         if mode == 'intersect':
