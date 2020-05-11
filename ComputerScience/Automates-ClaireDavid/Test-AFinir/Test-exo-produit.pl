@@ -98,6 +98,11 @@ viewer_enonce1.automaton = automate1
 #viewer_enonce permet un affichage non modifié de l'automate2 enoncé qui décrit le langage
 viewer_enonce2 = AutomatonDrawer()
 viewer_enonce2.automaton = automate2
+
+#viewer_enonce permet un affichage non modifié de l'automate2 enoncé qui décrit le langage
+viewer_soluce = AutomatonDrawer()
+viewer_soluce.automaton = string_solution
+
 ==
 
 #* Texte de l'énoncé
