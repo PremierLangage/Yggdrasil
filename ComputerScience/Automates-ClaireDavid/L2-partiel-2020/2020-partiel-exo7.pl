@@ -57,24 +57,21 @@ automate2 = '''
 
 string_solution = '''
     #states
-    14
-    25
-    35
-    16
-    36
-    26
+    17
+    28
+    27
     #initials
-    14
+    17
     #accepting
-    26
+    
     #alphabet
     a
     b
     #transitions
-    14:a>25
-    14:b>35
-    25:a>16
-    25:b>25
+    17:a>28
+    17:b>17
+    28:a>17
+    28:b>27
     35:a>36
     35:b>35
     16:a>26
