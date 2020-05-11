@@ -526,6 +526,7 @@ class Automaton:
             if statename == 'P':
                 return statename
             return ''.join(map(str, sorted(statename)))
+#            return statename.replace('(','').replace(')', '').replace(' ', '')
         a.States = [rename(s) for s in a.States]
 
         return fado_to_string(a)
