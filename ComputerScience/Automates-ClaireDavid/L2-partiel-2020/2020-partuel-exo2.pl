@@ -33,9 +33,8 @@ enonce = '''
     a
     b
     #transitions
-    0:a>1
+    0:a,b>1
     0:a>2
-    0:b>1
     1:a>3
     1:a>4
     2:a>2
