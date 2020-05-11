@@ -95,8 +95,12 @@ solution = string_solution
 
 
 #viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
-viewer_enonce = AutomatonDrawer()
-viewer_enonce.automaton = automate1
+viewer_enonce1 = AutomatonDrawer()
+viewer_enonce1.automaton = automate1
+#viewer_enonce permet un affichage non modifié de l'automate enoncé qui décrit le langage
+viewer_enonce2 = AutomatonDrawer()
+viewer_enonce2.automaton = automate2
+
 
 ==
 
@@ -105,7 +109,8 @@ viewer_enonce.automaton = automate1
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text==
-{{ viewer_enonce|component }}
+{{ viewer_enonce1|component }}
+{{ viewer_enonce2|component }}
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
 Faites de le produit des deux automates ci-dessus pour construire automate qui reconnait l'intersection des deux langages<br>
 **Contraintes d'écriture pour l'évaluation:**<br>
