@@ -10,7 +10,7 @@ A discuter avec Mamadou et Dominique
 -----------------
 
 =======
-23/04 -- automate inifini - reformuler
+23/04 -- automate infini - reformuler
 
 27/04 -- supprimer etiquette devrait être supprimer transition. J'ai changé dans mon hack.js -- à harmoniser avec Mamdou
 29/04 -- encore des bugs dans le renommage d'état -- pb avec les transitions -- tester mais je pense que c'est bon maintenant
@@ -26,6 +26,7 @@ A ajuster:
 + Le viewer ne gere pas encore les noms d'état avec des ,
 + ne pas modifier la solution donnée par l'enseignant qui actuellement mangée et minimisée automatiquement
 + Grand nettoyage d'été à faire pour uniformiser et unifier les formats/fonction etc
++ éviter de passer toujours par string notation car c'est pas hyper propre
 
 Ergonomie du viewer:
 + key pour modifier les etiquettes de transitions/etats
@@ -104,6 +105,7 @@ pour votre image vous devez lui donner une largeur fixé (voire 100% si c'est ce
      object-fit: cover; /* important pour avoir une image centrée */
    }
 }
+
 
 
 
