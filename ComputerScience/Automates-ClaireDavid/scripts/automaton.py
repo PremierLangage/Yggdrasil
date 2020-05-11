@@ -534,10 +534,9 @@ class Automaton:
     # Réfléchir où mettre cette méthode lors du grand nettoyage
     @staticmethod
     def string_soluce_produit(nfa_string1, nfa_string2):
-        auto1 = fado_from_string(nfa_string1)
-        auto2 = fado_from_string(nfa_string2)
+        a = fado_from_string(nfa_string1).product(fado_from_string(nfa_string2))
 
-        soluce=auto1.product(auto2)
+        soluce=fado_to_string(a)
 
         
 
