@@ -553,7 +553,8 @@ class Automaton:
 
 
         if mode == 'intersect':
-            a = nfa1.__and__(nfa2)
+            a = nfa1.product(nfa2)
+        #    a = nfa1.__and__(nfa2)
         else :
             a = nfa1
 
@@ -561,8 +562,8 @@ class Automaton:
 
         # A garder pour avoir les noms des états comme la convention des exo L2
         def rename(statename):
-#            return ''.join(map(str, sorted(statename)))
-            return statename.replace('(','').replace(')', '').replace(' ', '')
+            return ''.join(map(str, sorted(statename)))
+#            return statename.replace('(','').replace(')', '').replace(' ', '')
         a.States = [rename(s) for s in a.States]
 
         return fado_to_string(a)
