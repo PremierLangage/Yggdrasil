@@ -553,7 +553,7 @@ class Automaton:
 
         if mode == 'intersect':
         #    a = nfa1.product(nfa2)
-            a = nfa1 and nfa2
+            a = nfa1 & nfa2
         else :
             a = nfa1
 
