@@ -107,15 +107,15 @@ viewer_enonce.automaton = enonce
 text==
 {{ viewer_enonce|component }}
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
-Donnez l'automate deterministe complet obtenu par l'algo vu en cours à partir de l'automate ci-dessus. <br>
-<br>
+Faites de le produit des deux automates ci-dessus pour construire automate qui reconnait l'intersection des deux langages<br>
 **Contraintes d'écriture pour l'évaluation:**<br>
-Afin de vérifier la correction de vos calculs et pas seulement la forme de l'automate, vous respecterez les conventions suivantes:
+Afin de vérifier la correction de vos calculs et pas seulement la forme de l'automate, vous respecterez la convention suivante:
 <ul>
-<li> s'il est créé, l'état `ø` (aussi appelé état poubelle) sera nommé `P` ;
-<li> les autres états seront nommés par la concatenation dans l'ordre croissant des états qui le constituent.
+<li> l'état `(p,q)` du produit, où `p` est un état du premier automate et `q` un état du second, sera nommé `pq` c-a-d la concatenation dans l'ordre des deux états qui le constituent.
 <br>
-Par exemple, l'état `{5,1,4}` sera nommé `145`, l'état `{3}` sera nommé `3`, l'état `{4,6}` sera nommé `46`.
+Par exemple, l'état `(2,4)` sera nommé `24`, l'état `(1,1)` sera nommé `11`, l'état `(P,6)` sera nommé `P6`.
+<br>
+*Si vous avez un état constitué de moins ou plus de deux états relisez votre cours en urgence!!*
 </ul>
 
 {% if attempt < maxattempt and score != 100 %}
