@@ -113,7 +113,6 @@ viewer_sol.automaton = string_solution
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text==
-{{ string_solution }}
 {{ viewer_sol|component }}
 
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$. Faites le produit des deux automates
