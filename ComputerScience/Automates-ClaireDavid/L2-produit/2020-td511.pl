@@ -18,7 +18,7 @@ automate1 = '''
     2
     3
     #initials
-    0
+    1
     #accepting
     2
     #alphabet
