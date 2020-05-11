@@ -551,7 +551,7 @@ class Automaton:
         nfa1 = fado_from_string(nfa_string1)
         nfa2 = fado_from_string(nfa_string2)
 
-        def compute_product():
+        def compute_product(nfa1,nfa2):
             a = nfa1.product(nfa2)
             xx = []
             for (x1,x2) in a.States:
