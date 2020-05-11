@@ -64,7 +64,7 @@ string_solution = '''
     #initials
     17
     #accepting
-    
+    28
     #alphabet
     a
     b
