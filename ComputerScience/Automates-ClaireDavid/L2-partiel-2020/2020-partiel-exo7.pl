@@ -2,7 +2,7 @@
 extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
-title = Exercice produit d'automates
+title = Partiel 2020 Exo7
 
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
