@@ -53,7 +53,7 @@ automate2 = '''
 
 # Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
 # TODO - Ecrire string_soluce_produit
-#string_solution = Automaton.string_soluce_produit(aautomate1,automate2)
+#string_solution = Automaton.string_soluce_product(aautomate1,automate2)
 
 string_solution = '''
     #states
@@ -128,6 +128,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
