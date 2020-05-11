@@ -555,7 +555,7 @@ class Automaton:
             a = nfa1.product(nfa2)
 #            a = nfa1 & nfa2
             for x in [(nfa1.States[f1], nfa2.States[f2]) for f1 in nfa1.Final for f2 in nfa2.Final]:
-            if x in new.States:
+            if x in a.States:
                 a.addFinal(a.stateIndex(x))
 
         else :
