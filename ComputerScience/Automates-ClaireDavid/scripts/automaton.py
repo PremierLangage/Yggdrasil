@@ -596,6 +596,7 @@ class Automaton:
                         a.addFinal(a.stateIndex((x1,x2)))
             else:
                 ##### les deux automates doivent être det complet
+                pass
         else:
             ### mode inconnu
             pass
