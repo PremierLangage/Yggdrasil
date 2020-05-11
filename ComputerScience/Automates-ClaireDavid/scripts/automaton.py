@@ -583,7 +583,7 @@ class Automaton:
                     if nfa1.stateIndex(x1) in nfa1.Final and nfa2.stateIndex(x2) not in nfa2.Final:
                         a.addFinal(a.stateIndex((x1,x2)))
             else:
-                raise Exception('nfa2 doit être deterministe complet')
+                raise Exception('nfa2 doit être déterministe complet')
                 pass
         elif mode == 'minusleft' :
             if nfa1.completeP() and nfa1.determinicP():
