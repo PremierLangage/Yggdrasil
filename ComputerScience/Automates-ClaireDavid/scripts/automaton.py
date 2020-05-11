@@ -556,7 +556,7 @@ class Automaton:
             xx = []
             for (x1,x2) in a.States:
                     if x1 == '@empty_set' or x2 == '@empty_set':
-                        xx.append((x1,x2))
+                        xx.append(a.stateIndex((x1,x2))
             a.deleteStates(xx)
             #for x in xx:
             #    a.renameState(a.stateIndex(x),'pouet')
