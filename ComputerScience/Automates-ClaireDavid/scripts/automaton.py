@@ -559,7 +559,9 @@ class Automaton:
                     a.addFinal(a.stateIndex(x))
         elif mode == 'union' :
             a = nfa1.product(nfa2)
-
+            #set final states
+            for (x1,x2) in a.States:
+                a.addFinal(a.stateIndex((x1,x2))
 
             #set final states
             for (x1,x2) in a.States:
