@@ -566,6 +566,7 @@ class Automaton:
                         a.addFinal(a.stateIndex((x1,x2)))
             else:
                 ##### les deux automates doivent être complets
+                pass
         elif mode == 'minusright' :
             if nfa2.completeP() and nfa2.determinicP():
                 a = nfa1.product(nfa2)
@@ -575,6 +576,7 @@ class Automaton:
                         a.addFinal(a.stateIndex((x1,x2)))
             else:
                 ##### les nfa2 doit être det complet
+                pass
         elif mode == 'minusleft' :
             if nfa1.completeP() and nfa1.determinicP():
                 a = nfa1.product(nfa2)
@@ -584,6 +586,7 @@ class Automaton:
                         a.addFinal(a.stateIndex((x1,x2)))
             else:
                 ##### les nfa1 doit être det complet
+                pass
         elif mode == 'symdiff' :
             if nfa1.completeP() and nfa1.determinicP() and nfa2.completeP() and nfa2.determinicP():
                 a = nfa1.product(nfa2)
