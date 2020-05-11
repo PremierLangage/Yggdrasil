@@ -14,22 +14,22 @@ alphabet = "a,b"
 
 automate1 = '''
     #states
-    0
     1
     2
+    3
     #initials
     0
     #accepting
-    1
+    2
     #alphabet
     a
     b
     #transitions
-    0:a>1
-    0:b>2
-    1:a>0
-    1:b>1
-    2:a,b>2
+    1:a>2
+    1:b>3
+    2:a>1
+    2:b>2
+    3:a,b>3
 '''
 
 automate2 = '''
