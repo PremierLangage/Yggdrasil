@@ -556,9 +556,10 @@ class Automaton:
             for (x1,x2) in a.States:
                     if x1 == '@empty_set' or x2 == '@empty_set':
                         a.deleteState(a.stateIndex((x1,x2)))
+            return a
 
         if mode == 'intersect':
-            a = nfa1.product(nfa2)
+            a = compute_product()
             #set final states
             for x in [(nfa1.States[f1], nfa2.States[f2]) for f1 in nfa1.Final for f2 in nfa2.Final]:
                 if x in a.States:
