@@ -550,7 +550,13 @@ class Automaton:
         """
         nfa1 = fado_from_string(nfa_string1)
         nfa2 = fado_from_string(nfa_string2)
-        a = nfa1.__and__(nfa2)
+
+        if mode == 'intersect':
+        #    a = nfa1.product(nfa2)
+            a = nfa1 and nfa2
+        else :
+            a = nfa1
+
 
 
         # A garder pour avoir les noms des états comme la convention des exo L2
