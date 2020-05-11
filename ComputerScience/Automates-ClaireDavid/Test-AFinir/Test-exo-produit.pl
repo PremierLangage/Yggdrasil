@@ -109,9 +109,9 @@ viewer_enonce2.automaton = automate2
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text==
-Automate 1:
+Automate A1 qui reconnait L1:
 {{ viewer_enonce1|component }}
-Automate 2:
+Automate A2 qui reconnait L2:
 {{ viewer_enonce2|component }}
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
 Faites de le produit des deux automates ci-dessus pour construire automate qui reconnait l'intersection des deux langages<br>
