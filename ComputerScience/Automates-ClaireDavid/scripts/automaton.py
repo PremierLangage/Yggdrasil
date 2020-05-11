@@ -553,8 +553,6 @@ class Automaton:
         a = nfa1.__and__(nfa2)
 
 
-
-
         # A garder pour avoir les noms des états comme la convention des exo L2
         def rename(statename):
             return ''.join(map(str, sorted(statename)))
