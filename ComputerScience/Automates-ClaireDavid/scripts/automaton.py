@@ -565,6 +565,7 @@ class Automaton:
         # A garder pour avoir les noms des états comme la convention des exo L2
         def rename(statename):
             return ''.join(map(str, sorted(statename)))
+        
         a.States = [rename(s) for s in a.States]
 
         return fado_to_string(a)
