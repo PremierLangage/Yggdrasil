@@ -111,10 +111,10 @@ viewer_enonce2.automaton = automate2
 text==
 Automate $!\mathcal{A}_1!$ qui reconnait $!L_1!$:
 {{ viewer_enonce1|component }}
-Automate A2 qui reconnait L2:
+Automate $!\mathcal{A}_2!$ qui reconnait $!L_2!$:
 {{ viewer_enonce2|component }}
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$.<br/>
-Faites de le produit des deux automates ci-dessus pour construire automate qui reconnait l'intersection des deux langages<br>
+Faites de le produit des deux automates ci-dessus pour construire un automate qui reconnait $!L_1\cap L_2!$.<br>
 **Contraintes d'écriture pour l'évaluation:**<br>
 Afin de vérifier la correction de vos calculs et pas seulement la forme de l'automate, vous respecterez la convention suivante:
 <ul>
