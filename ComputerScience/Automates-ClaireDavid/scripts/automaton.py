@@ -560,6 +560,7 @@ class Automaton:
             for x in xx:
                 a.renameState(a.stateIndex(x),'pouet')
                 #a.deleteState(a.stateIndex(x))
+            a.deleteState(a.Index('pouet'))
             return a
 
         if mode == 'intersect':
