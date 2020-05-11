@@ -548,8 +548,10 @@ class Automaton:
             'minusleft' build L2\L1 raise exception if nfa_string1 is not det complete
             'symdiff' build (L2\L1)U(L1\L2) raise exception if input automata are not deterministic and complete
         """
-
-        a = fado_from_string(nfa_string1).product(fado_from_string(nfa_string2))
+        nfa1 = fado_from_string(nfa_string1)
+        nfa2 = fado_from_string(nfa_string2)
+        a = nfa1.product(nfa2)
+        
 
         if type == 'intersect':
         ### A FINIR
@@ -1422,6 +1424,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
