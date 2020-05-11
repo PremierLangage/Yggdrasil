@@ -554,7 +554,7 @@ class Automaton:
 
         if type == 'intersect':
             a = nfa1.__and__(nfa2)
-        else
+        else :
             a = nfa1
 
 
