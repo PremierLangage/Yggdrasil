@@ -101,8 +101,8 @@ viewer_enonce2 = AutomatonDrawer()
 viewer_enonce2.automaton = automate2
 
 #viewer_enonce permet un affichage non modifié de l'automate2 enoncé qui décrit le langage
-viewer_soluce = AutomatonDrawer()
-viewer_soluce.automaton = string_solution
+viewer_sol = AutomatonDrawer()
+viewer_sol.automaton = string_solution
 
 ==
 
@@ -111,7 +111,7 @@ viewer_soluce.automaton = string_solution
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text==
-{{ viewer_soluce|component }}
+{{ viewer_sol|component }}
 
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$. Faites le produit des deux automates
  donnés pour construire un automate qui reconnaît $!L_1\backslash L_2\cup L_2\backslash L_1!$.<br>
