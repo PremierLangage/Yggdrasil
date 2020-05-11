@@ -558,12 +558,33 @@ class Automaton:
                 if x in a.States:
                     a.addFinal(a.stateIndex(x))
         elif mode == 'union' :
+            ## TODO check complete
             a = nfa1.product(nfa2)
             #set final states
             for (x1,x2) in a.States:
                 if nfa1.stateIndex(x1) in nfa1.Final or nfa2.stateIndex(x2) in nfa2.Final:
                     a.addFinal(a.stateIndex((x1,x2)))
-
+        elif mode == 'minusright' :
+            ## TODO check complete
+            a = nfa1.product(nfa2)
+            #set final states
+            for (x1,x2) in a.States:
+                if nfa1.stateIndex(x1) in nfa1.Final or nfa2.stateIndex(x2) in nfa2.Final:
+                    a.addFinal(a.stateIndex((x1,x2)))
+        elif mode == 'minusleft' :
+            ## TODO check complete
+            a = nfa1.product(nfa2)
+            #set final states
+            for (x1,x2) in a.States:
+                if nfa1.stateIndex(x1) in nfa1.Final or nfa2.stateIndex(x2) in nfa2.Final:
+                    a.addFinal(a.stateIndex((x1,x2)))
+        elif mode == 'union' :
+            ## TODO check complete
+            a = nfa1.product(nfa2)
+            #set final states
+            for (x1,x2) in a.States:
+                if nfa1.stateIndex(x1) in nfa1.Final or nfa2.stateIndex(x2) in nfa2.Final:
+                    a.addFinal(a.stateIndex((x1,x2)))
         else:
             a = nfa1.product(nfa2)
 
