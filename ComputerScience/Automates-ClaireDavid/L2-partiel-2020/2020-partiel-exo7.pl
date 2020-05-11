@@ -90,6 +90,10 @@ viewer_enonce1.automaton = automate1
 #viewer_enonce permet un affichage non modifié de l'automate2 enoncé qui décrit le langage
 viewer_enonce2 = AutomatonDrawer()
 viewer_enonce2.automaton = automate2
+
+#viewer_enonce permet un affichage non modifié de l'automate2 enoncé qui décrit le langage
+viewer_soluce = AutomatonDrawer()
+viewer_soluce.automaton = string_solution
 ==
 
 #* Texte de l'énoncé
@@ -103,6 +107,7 @@ Automate $!\mathcal{A}_1!$ qui reconnait $!L_1!$:
 {{ viewer_enonce1|component }}
 Automate $!\mathcal{A}_2!$ qui reconnait $!L_2!$:
 {{ viewer_enonce2|component }}
+{{ viewer_soluce }}
 **Contraintes d'écriture pour l'évaluation:**<br>
 Afin de vérifier la correction de vos calculs et pas seulement la forme de l'automate, vous respecterez la convention suivante:
 <br>
