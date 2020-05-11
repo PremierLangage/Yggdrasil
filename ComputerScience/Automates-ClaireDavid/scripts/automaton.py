@@ -531,6 +531,9 @@ class Automaton:
 
         return fado_to_string(a)
 
+    # Réfléchir où mettre cette méthode lors du grand nettoyage
+    @staticmethod
+    def string_soluce_produit(nfa_string1,nfa_string2):
 
         
 
@@ -1390,6 +1393,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
