@@ -109,7 +109,7 @@ viewer_enonce2.automaton = automate2
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text==
-Automate A1 qui reconnait L1:
+Automate $!\mathcal{A}_1!$ qui reconnait L1:
 {{ viewer_enonce1|component }}
 Automate A2 qui reconnait L2:
 {{ viewer_enonce2|component }}
