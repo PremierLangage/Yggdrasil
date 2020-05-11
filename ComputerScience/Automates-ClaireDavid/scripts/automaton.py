@@ -584,7 +584,6 @@ class Automaton:
                         a.addFinal(a.stateIndex((x1,x2)))
             else:
                 raise Exception('nfa2 doit être déterministe complet')
-                pass
         elif mode == 'minusleft' :
             if nfa1.completeP() and nfa1.determinicP():
                 a = compute_product(nfa1,nfa2)
@@ -593,8 +592,7 @@ class Automaton:
                     if nfa1.stateIndex(x1) not in nfa1.Final and nfa2.stateIndex(x2) in nfa2.Final:
                         a.addFinal(a.stateIndex((x1,x2)))
             else:
-                ##### les nfa1 doit être det complet
-                pass
+                raise Exception('nfa1 doit être déterministe complet')
         elif mode == 'symdiff' :
             if nfa1.completeP() and nfa1.determinicP() and nfa2.completeP() and nfa2.determinicP():
                 a = compute_product(nfa1,nfa2)
@@ -603,8 +601,7 @@ class Automaton:
                     if (nfa1.stateIndex(x1) in nfa1.Final and nfa2.stateIndex(x2) not in nfa2.Final) or (nfa1.stateIndex(x1) not in nfa1.Final and nfa2.stateIndex(x2) in nfa2.Final):
                         a.addFinal(a.stateIndex((x1,x2)))
             else:
-                ##### les deux automates doivent être det complet
-                pass
+                raise Exception('les deux automates doivent être det complet')
         else:
             ### mode inconnu
             pass
