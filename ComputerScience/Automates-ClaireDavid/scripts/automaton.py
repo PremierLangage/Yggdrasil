@@ -546,7 +546,7 @@ class Automaton:
             'union' raise exception if input automata are not complete
             'minusright' build L1\L2 raise exception if nfa_string2 is not det complete
             'minusleft' build L2\L1 raise exception if nfa_string1 is not det complete
-            'symdiff' raise exception if input automata are not deterministic and complete
+            'symdiff' build L2\L1 U L1\L2 raise exception if input automata are not deterministic and complete
         """
 
         a = fado_from_string(nfa_string1).product(fado_from_string(nfa_string2))
