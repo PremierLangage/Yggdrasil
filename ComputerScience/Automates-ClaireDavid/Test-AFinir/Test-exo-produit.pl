@@ -58,7 +58,7 @@ automate2 = '''
 
 # Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
 # TODO - Ecrire string_soluce_produit
-#string_solution = Automaton.string_soluce_det(enonce)
+#string_solution = Automaton.string_soluce_produit(aautomate1,automate2)
 
 #automate solution -- le nom solution est forcé par le template
 solution = enonce
