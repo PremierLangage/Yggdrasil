@@ -568,7 +568,7 @@ class Automaton:
                     a.addFinal(a.stateIndex(x))
         elif mode == 'union':
             if nfa1.completeP() and nfa2.completeP():
-                a = nfa1.product(nfa2)
+                a = compute_product(nfa1,nfa2)
                 #set final states
                 for (x1,x2) in a.States:
                     if nfa1.stateIndex(x1) in nfa1.Final or nfa2.stateIndex(x2) in nfa2.Final:
@@ -577,17 +577,18 @@ class Automaton:
                 raise Exception('les deux automates doivent être complets')
         elif mode == 'minusright' :
             if nfa2.completeP() and nfa2.determinicP():
-                a = nfa1.product(nfa2)
+                a = compute_product(nfa1,nfa2)
                 #set final states
                 for (x1,x2) in a.States:
                     if nfa1.stateIndex(x1) in nfa1.Final and nfa2.stateIndex(x2) not in nfa2.Final:
                         a.addFinal(a.stateIndex((x1,x2)))
             else:
-                ##### les nfa2 doit être det complet
+                raise Exception('nfa2 doit être det complet')
+                ##### 
                 pass
         elif mode == 'minusleft' :
             if nfa1.completeP() and nfa1.determinicP():
-                a = nfa1.product(nfa2)
+                a = compute_product(nfa1,nfa2)
                 #set final states
                 for (x1,x2) in a.States:
                     if nfa1.stateIndex(x1) not in nfa1.Final and nfa2.stateIndex(x2) in nfa2.Final:
@@ -597,7 +598,7 @@ class Automaton:
                 pass
         elif mode == 'symdiff' :
             if nfa1.completeP() and nfa1.determinicP() and nfa2.completeP() and nfa2.determinicP():
-                a = nfa1.product(nfa2)
+                a = compute_product(nfa1,nfa2)
                 #set final states
                 for (x1,x2) in a.States:
                     if (nfa1.stateIndex(x1) in nfa1.Final and nfa2.stateIndex(x2) not in nfa2.Final) or (nfa1.stateIndex(x1) not in nfa1.Final and nfa2.stateIndex(x2) in nfa2.Final):
