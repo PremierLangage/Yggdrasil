@@ -36,7 +36,7 @@ automate2 = '''
     #initials
     4
     #accepting
-    6
+    5
     #alphabet
     a
     b
