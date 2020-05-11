@@ -553,9 +553,12 @@ class Automaton:
 
         def compute_product():
             a = nfa1.product(nfa2)
+            xx = []
             for (x1,x2) in a.States:
                     if x1 == '@empty_set' or x2 == '@empty_set':
-                        a.deleteState(a.stateIndex((x1,x2)))
+                        xx.append(a.stateIndex((x1,x2)))
+            for x in xx:
+                a.deleteState(x)
             return a
 
         if mode == 'intersect':
