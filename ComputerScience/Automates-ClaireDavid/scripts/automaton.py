@@ -576,12 +576,14 @@ class Automaton:
             else:
                 ##### les nfa2 doit être det complet
         elif mode == 'minusleft' :
-            ## TODO check complete
-            a = nfa1.product(nfa2)
-            #set final states
-            for (x1,x2) in a.States:
-                if nfa1.stateIndex(x1) not in nfa1.Final and nfa2.stateIndex(x2) in nfa2.Final:
-                    a.addFinal(a.stateIndex((x1,x2)))
+            if nfa1.completeP() and nfa1.determinicP():
+                a = nfa1.product(nfa2)
+                #set final states
+                for (x1,x2) in a.States:
+                    if nfa1.stateIndex(x1) not in nfa1.Final and nfa2.stateIndex(x2) in nfa2.Final:
+                        a.addFinal(a.stateIndex((x1,x2)))
+            else:
+                ##### les nfa1 doit être det complet
         elif mode == 'symdiff' :
             ## TODO check complete
             a = nfa1.product(nfa2)
