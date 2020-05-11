@@ -552,8 +552,8 @@ class Automaton:
         nfa2 = fado_from_string(nfa_string2)
 
         if mode == 'intersect':
-        #    a = nfa1.product(nfa2)
-            a = nfa1 & nfa2
+            a = nfa1.product(nfa2)
+        #    a = nfa1 & nfa2
         else :
             a = nfa1
 
