@@ -62,7 +62,7 @@ automate2 = '''
 string_solution = Automaton.string_soluce_product(automate1,automate2,mode='union')
 
 
-string_solution = '''
+bla = '''
     #states
     14
     25
