@@ -563,9 +563,9 @@ class Automaton:
         ## TODO add in NFA Class in FAdo!! (it is from DFA)
         #def completeP(self):
         def completeP(nfa):
-        """Checks if it is a complete NFA
+            """Checks if it is a complete NFA
             :return: bool
-        """
+            """
             if not nfa.Sigma:
                 return True
             for s in a.States:
