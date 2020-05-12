@@ -562,8 +562,8 @@ class Automaton:
         
         ## TODO add in NFA Class in FAdo!! (it is from DFA)
         #def completeP(self):
-        #def completeP(self):
-        """Checks if it is a complete FA (if delta is total)
+        def completeP(a):
+        """Checks if it is a complete NFA (if delta is total)
 
         :return: bool"""
         if not self.Sigma:
