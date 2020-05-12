@@ -59,7 +59,7 @@ automate2 = '''
 #            'rightdiff' build L1\L2
 #            'leftdiff' build L2\L1
 #            'symdiff' build (L2\L1)U(L1\L2) 
-string_solution = Automaton.string_soluce_product(automate1,automate2,mode='union')
+string_solution = Automaton.string_soluce_product(automate1,automate2,mode='symdiff')
 
 
 bla = '''
