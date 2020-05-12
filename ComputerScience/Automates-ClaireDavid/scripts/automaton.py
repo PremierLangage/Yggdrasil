@@ -564,7 +564,8 @@ class Automaton:
         #def completeP(self):
         def completeP(nfa):
         """Checks if it is a complete NFA
-            :return: bool"""
+            :return: bool
+        """
             if not nfa.Sigma:
                 return True
             for s in a.States:
