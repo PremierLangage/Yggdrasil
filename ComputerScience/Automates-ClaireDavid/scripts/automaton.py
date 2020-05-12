@@ -568,7 +568,7 @@ class Automaton:
             """
             if not nfa.Sigma:
                 return True
-            for s in a.States:
+            for s in nfa.States:
                 if nfa.stateIndex(s) not in nfa.delta:
                     return False
                 for symb in nfa.Sigma :
