@@ -559,6 +559,24 @@ class Automaton:
                         xx.append(a.stateIndex((x1,x2)))
             a.deleteStates(xx)
             return a
+        
+        ## TODO add in NFA Class in FAdo!! (it is from DFA)
+        #def completeP(self):
+        #def completeP(self):
+        """Checks if it is a complete FA (if delta is total)
+
+        :return: bool"""
+        if not self.Sigma:
+            return True
+        ss = len(self.Sigma)
+        for s, _ in enumerate(self.States):
+            if s not in self.delta:
+                return False
+            ni = set(self.delta[s])
+            if len(ni) != ss:
+                return False
+        return True
+
 
         if mode == 'intersect':
             a = compute_product(nfa1,nfa2)
@@ -1471,6 +1489,7 @@ if __name__ == '__main__':
     # properties
     print(Automaton.parse(A).properties())
     print(Automaton.editor_properties(AutomatonEditor(automaton=objectNotation)))
+
 
 
 
