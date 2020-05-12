@@ -51,9 +51,20 @@ automate2 = '''
     6:a,b>6
 '''
 
+
+
+# Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
+# choisir le mode pour définir les états finaux
+#           default 'intersect'
+#            'union' build L1UL2
+#            'minusright' build L1\L2
+#            'minusleft' build L2\L1
+#            'symdiff' build (L2\L1)U(L1\L2) 
+string_solution = Automaton.string_soluce_product(automate1,automate2,mode='symdiff')
+
 # Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
 # TODO - Ecrire string_soluce_produit
-#string_solution = Automaton.string_soluce_product(aautomate1,automate2)
+#string_solution = Automaton.string_soluce_product(automate1,automate2)
 
 string_solution = '''
     #states
@@ -128,6 +139,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
