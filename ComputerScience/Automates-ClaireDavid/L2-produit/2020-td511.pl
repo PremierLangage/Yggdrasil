@@ -27,6 +27,7 @@ automate1 = '''
     #transitions
     1:a>2
     1:b>3
+    2:a>1
     2:b>2
     3:a,b>3
 '''
