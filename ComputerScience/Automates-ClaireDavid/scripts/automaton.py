@@ -575,7 +575,7 @@ class Automaton:
                         a.addFinal(a.stateIndex((x1,x2)))
             else:
                 raise Exception('les deux automates doivent être complets')
-        elif mode == 'minusright' :
+        elif mode == 'rightdiff' :
             if nfa2.completeP() and nfa2.determinicP():
                 a = compute_product(nfa1,nfa2)
                 #set final states
@@ -584,7 +584,7 @@ class Automaton:
                         a.addFinal(a.stateIndex((x1,x2)))
             else:
                 raise Exception('nfa2 doit être déterministe complet')
-        elif mode == 'minusleft' :
+        elif mode == 'leftdiff' :
             if nfa1.completeP() and nfa1.determinicP():
                 a = compute_product(nfa1,nfa2)
                 #set final states
