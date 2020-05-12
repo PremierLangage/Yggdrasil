@@ -602,7 +602,8 @@ class Automaton:
             else:
                 raise Exception('nfa2 doit être déterministe complet')
         elif mode == 'leftdiff' :
-            if nfa1.completeP() and nfa1.determinicP():
+#            if nfa1.completeP() and nfa1.determinicP():
+            if completeP(nfa1) and nfa1.determinicP():
                 a = compute_product(nfa1,nfa2)
                 #set final states
                 for (x1,x2) in a.States:
