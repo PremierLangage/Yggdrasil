@@ -595,7 +595,7 @@ class Automaton:
                 raise Exception('les deux automates doivent être complets')
         elif mode == 'rightdiff' :
 #            if nfa2.completeP() and nfa2.determinicP():
-            if completeP(nfa2) and nfa2.determinicP():
+            if completeP(nfa2) and nfa2.deterministicP():
                 a = compute_product(nfa1,nfa2)
                 #set final states
                 for (x1,x2) in a.States:
@@ -605,7 +605,7 @@ class Automaton:
                 raise Exception('nfa2 doit être déterministe complet')
         elif mode == 'leftdiff' :
 #            if nfa1.completeP() and nfa1.determinicP():
-            if completeP(nfa1) and nfa1.determinicP():
+            if completeP(nfa1) and nfa1.deterministicP():
                 a = compute_product(nfa1,nfa2)
                 #set final states
                 for (x1,x2) in a.States:
@@ -615,7 +615,7 @@ class Automaton:
                 raise Exception('nfa1 doit être déterministe complet')
         elif mode == 'symdiff' :
 #            if nfa1.completeP() and nfa1.determinicP() and nfa2.completeP() and nfa2.determinicP():
-            if completeP(nfa1) and nfa1.determinicP() and completeP(nfa2) and nfa2.determinicP():
+            if completeP(nfa1) and nfa1.deterministicP() and completeP(nfa2) and nfa2.deterministicP():
                 a = compute_product(nfa1,nfa2)
                 #set final states
                 for (x1,x2) in a.States:
