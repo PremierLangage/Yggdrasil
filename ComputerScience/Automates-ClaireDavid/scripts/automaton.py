@@ -566,12 +566,12 @@ class Automaton:
         """Checks if it is a complete NFA
 
         :return: bool"""
-        if not self.Sigma:
+        if not a.Sigma:
             return True
-        ss = len(self.Sigma)
-        for s, _ in enumerate(self.States):
-            if s not in self.delta:
+        for s in a.States:
+            if a.stateIndex(s) not in a.delta:
                 return False
+            for letter in s.Sigma
             ni = set(self.delta[s])
             if len(ni) != ss:
                 return False
