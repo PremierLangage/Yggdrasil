@@ -59,14 +59,10 @@ automate2 = '''
 #            'rightdiff' build L1\L2
 #            'leftdiff' build L2\L1
 #            'symdiff' build (L2\L1)U(L1\L2) 
-string_solution = Automaton.string_soluce_product(automate1,automate2,mode='symdiff')
+#string_solution = Automaton.string_soluce_product(automate1,automate2,mode='symdiff')
 
 
-# Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
-# TODO - Ecrire string_soluce_produit
-#string_solution = Automaton.string_soluce_product(automate1,automate2)
-
-bla = '''
+string_solution = '''
     #states
     14
     25
