@@ -67,6 +67,11 @@ viewer_enonce1.automaton = automate1
 #viewer_enonce permet un affichage non modifié de l'automate2 enoncé qui décrit le langage
 viewer_enonce2 = AutomatonDrawer()
 viewer_enonce2.automaton = automate2
+
+#viewer_enonce permet un affichage non modifié de l'automate2 enoncé qui décrit le langage
+viewer_sol = AutomatonDrawer()
+viewer_sol.automaton = string_solution
+
 ==
 
 #* Texte de l'énoncé
@@ -74,6 +79,7 @@ viewer_enonce2.automaton = automate2
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text==
+{{ viewer_sol|component }}
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$. Faites le produit des deux automates
  donnés pour construire un automate qui reconnaît $!L_1\cap L_2!$.<br>
 
@@ -97,6 +103,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
