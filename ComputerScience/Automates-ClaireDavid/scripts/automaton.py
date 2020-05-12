@@ -593,7 +593,8 @@ class Automaton:
             else:
                 raise Exception('les deux automates doivent être complets')
         elif mode == 'rightdiff' :
-            if nfa2.completeP() and nfa2.determinicP():
+#            if nfa2.completeP() and nfa2.determinicP():
+            if completeP(nfa2) and nfa2.determinicP():
                 a = compute_product(nfa1,nfa2)
                 #set final states
                 for (x1,x2) in a.States:
