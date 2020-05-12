@@ -92,7 +92,7 @@ solution = '''
 
 
 #automate solution -- le nom solution est forcé par le template
-#solution = string_solution
+solution = string_solution
 
 
 #viewer_enonce permet un affichage non modifié de l'automate1 enoncé qui décrit le langage
