@@ -584,7 +584,8 @@ class Automaton:
                 if x in a.States:
                     a.addFinal(a.stateIndex(x))
         elif mode == 'union':
-            if nfa1.completeP() and nfa2.completeP():
+#            if nfa1.completeP() and nfa2.completeP():
+            if completeP(nfa1) and completeP(nfa2):
                 a = compute_product(nfa1,nfa2)
                 #set final states
                 for (x1,x2) in a.States:
