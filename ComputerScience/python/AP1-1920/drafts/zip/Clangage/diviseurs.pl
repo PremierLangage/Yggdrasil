@@ -27,7 +27,6 @@ Un nombre : 6
 
 6 a 4 diviseurs
 ==
-==
 
 editor.code==
 ... divise(...) {
