@@ -50,7 +50,7 @@ automate2 = '''
 '''
 
 # Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
-# choisir le mode pour definir les états finaux
+# choisir le mode pour définir les états finaux
 #           default 'intersect'
 #            'union' build L1UL2
 #            'minusright' build L1\L2
