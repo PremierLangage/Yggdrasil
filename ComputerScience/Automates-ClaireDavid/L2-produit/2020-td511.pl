@@ -66,7 +66,7 @@ string_solution = Automaton.string_soluce_product(automate1,automate2,mode='symd
 # TODO - Ecrire string_soluce_produit
 #string_solution = Automaton.string_soluce_product(automate1,automate2)
 
-string_solution = '''
+bla = '''
     #states
     14
     25
