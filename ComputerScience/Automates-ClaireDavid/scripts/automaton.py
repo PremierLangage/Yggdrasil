@@ -571,9 +571,7 @@ class Automaton:
         for s in a.States:
             if a.stateIndex(s) not in a.delta:
                 return False
-            for letter in s.Sigma
-            ni = set(self.delta[s])
-            if len(ni) != ss:
+            for symb in s.Sigma a.delta[a.stateIndex(s)][symb]
                 return False
         return True
 
