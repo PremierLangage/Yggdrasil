@@ -53,8 +53,8 @@ automate2 = '''
 # choisir le mode pour définir les états finaux
 #           default 'intersect'
 #            'union' build L1UL2
-#            'minusright' build L1\L2
-#            'minusleft' build L2\L1
+#            'rightdiff' build L1\L2
+#            'leftdiff' build L2\L1
 #            'symdiff' build (L2\L1)U(L1\L2) 
 string_solution = Automaton.string_soluce_product(automate1,automate2,mode='intersect')
 
@@ -97,6 +97,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
