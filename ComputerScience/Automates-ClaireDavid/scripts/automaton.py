@@ -564,16 +564,15 @@ class Automaton:
         #def completeP(self):
         def completeP(nfa):
         """Checks if it is a complete NFA
-
-        :return: bool"""
-        if not nfa.Sigma:
+            :return: bool"""
+            if not nfa.Sigma:
+                return True
+            for s in a.States:
+                if nfa.stateIndex(s) not in nfa.delta:
+                    return False
+                for symb in s.Sigma nfa.delta[nfa.stateIndex(s)][symb]
+                    return False
             return True
-        for s in a.States:
-            if nfa.stateIndex(s) not in nfa.delta:
-                return False
-            for symb in s.Sigma nfa.delta[nfa.stateIndex(s)][symb]
-                return False
-        return True
 
 
         if mode == 'intersect':
