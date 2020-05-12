@@ -71,7 +71,7 @@ int nb=0;
     if (n==0)
         printf("0 a une infinité de diviseurs\n");
     else
-		printf("%d a %d diviseurs\n");
+		printf("%d a %d diviseurs\n",n,nb);
 	return 0;
 }
 ==
