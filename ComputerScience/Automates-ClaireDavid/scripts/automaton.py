@@ -572,7 +572,7 @@ class Automaton:
                 if nfa.stateIndex(s) not in nfa.delta:
                     return False
                 for symb in s.Sigma
-                    if symb not in nfa.delta[nfa.stateIndex(s)]:
+                    if symb not in nfa.delta[s]:
                         return False
             return True
 
