@@ -58,43 +58,8 @@ automate2 = '''
 #            'symdiff' build (L2\L1)U(L1\L2) 
 string_solution = Automaton.string_soluce_product(automate1,automate2,mode='intersect')
 
-#TODO Etats finaux
-solution = '''
-    #states
-    14
-    25
-    35
-    16
-    36
-    26
-    #initials
-    14
-    #accepting
-    16
-    25
-    36
-    #alphabet
-    a
-    b
-    #transitions
-    14:a>25
-    14:b>35
-    25:a>16
-    25:b>25
-    35:a>36
-    35:b>35
-    16:a>26
-    16:b>36
-    36:a,b>36
-    26:a>16
-    26:b>26
-'''
-
-
-
 #automate solution -- le nom solution est forcé par le template
 solution = string_solution
-
 
 #viewer_enonce permet un affichage non modifié de l'automate1 enoncé qui décrit le langage
 viewer_enonce1 = AutomatonDrawer()
@@ -102,7 +67,6 @@ viewer_enonce1.automaton = automate1
 #viewer_enonce permet un affichage non modifié de l'automate2 enoncé qui décrit le langage
 viewer_enonce2 = AutomatonDrawer()
 viewer_enonce2.automaton = automate2
-
 ==
 
 #* Texte de l'énoncé
@@ -110,8 +74,6 @@ viewer_enonce2.automaton = automate2
 # ajouter {{ solution_view|component }} dans ce qui suit pour l'afficher
 # l'automate minimisé du langage solution
 text==
-{{ viewer_sol|component }}
-
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$. Faites le produit des deux automates
  donnés pour construire un automate qui reconnaît $!L_1\backslash L_2\cup L_2\backslash L_1!$.<br>
 
