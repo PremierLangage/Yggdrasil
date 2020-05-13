@@ -7,6 +7,12 @@
 + aucune contrainte sur A2.
 - Je ne sais pas répondre à cette question.
 
+** Pour que le produit de A1 et A2 représente l'intersection de L(A1) et L(A2), les états finaux doivent être:
+-Q1
+-Qf1xQf2
+
+
+
 ** Pour pouvoir calculer la différence de L(A1)\L(A2) à partir du produit de deux automates A1 et A2 :
 - A1 doit être déterministe;
 - A1 doit être complet;
@@ -40,5 +46,5 @@
 - au moins n1 états accessibles
 - au moins n1+n2 états accessibles
 - au plus n1+n2 états accessibles
-+ au plus n1xn2 états accessibles
++ au plus n1*n2 états accessibles
 - Je ne sais pas répondre à la question
