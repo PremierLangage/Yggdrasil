@@ -1,4 +1,4 @@
-** On veut calculer l'intersection de des langages L1 et L2 représentez par A1 et A2. Quelles propriétés les automates A1 et A2 doivent-il vérifier afin d'être sûr que le calcul soit correct.
+** Avant de faire le produit de A1 et A2 afin de construire l'intersection des langages L1 et L2 représenté par A1 et A2. Quelles propriétés les automates A1 et A2 sont nécessaire pour que le calcul soit correct doivent-il vérifier afin d'être sûr que le calcul soit correct.
 + A1 doit être déterministe
 + A1 doit être complet
 + aucune contrainte sur A1
@@ -7,17 +7,13 @@
 + aucune contrainte sur A2
 
 
-** Sélectionner dans la liste suivante les programmes fonctionnels sans entrée (fonctionnant sans argument ou entrée standard).
-- mkdir
-- rm
-- sort
-- cut
-- grep
-- find
-+ date
-+ cal
-+ pwd
-+ whoami
+* Le produit de deux automates a toujours 1 seul état initial
+-faux
++ vrai
+
+* Le produit de deux automates déterministe a toujours 1 seul état initial
+-faux
++ vrai
 
 
 ** Parmi les commandes suivantes, lesquelles permettent de visualiser un flux ou un fichier ?
