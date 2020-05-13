@@ -11,7 +11,7 @@
 -faux
 + vrai
 
-* Le produit de deux automates déterministe a toujours 1 seul état initial
+* Le produit de deux automates déterministes a toujours 1 seul état initial
 -faux
 + vrai
 
