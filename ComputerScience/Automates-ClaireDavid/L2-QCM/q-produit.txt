@@ -7,8 +7,7 @@
 + aucune contrainte sur $!A2!$.
 - Je ne sais pas répondre à cette question.
 
-** Parmi les ensembles suivants, lequels représentent les états finaux du produit de $!A1!$ et $!A2!$ afin qu'il reconnaisse le langage $!L(A1)\cap L(A2)!$?
-En supposant que les automates $!A_1!$ et $!A_2!$ le permettent, comment choisir les états finaux du produit de $!A1!$ et $!A2!$ afin qu'il reconnaisse le langage $!L(A1)\cap L(A2)!$?
+** En supposant que les automates $!A_1!$ et $!A_2!$ le permettent, comment choisir les états finaux du produit de $!A1!$ et $!A2!$ afin qu'il reconnaisse le langage $!L(A1)\cap L(A2)!$?
 - $! Q^F_1\cup Q^F_2!$
 - $! Q^F_1\cap Q^F_2!$
 - $! (Q^F_1,Q^F_2) !$
