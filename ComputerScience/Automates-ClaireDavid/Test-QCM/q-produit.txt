@@ -25,7 +25,7 @@
 + aucune contrainte sur $!A2!$.
 - Je ne sais pas répondre à cette question.
 
-** Pour pouvoir calculer l'union de L(A1) et L(A2) à partir du produit de deux automates A1 et A2 :
+** Pour pouvoir calculer l'union $!L(A1)\cup L(A2)!$ à partir du produit de deux automates $!A1!$ et $!A2!$ :
 - $!A1!$ doit être déterministe;
 - $!A1!$ doit être complet;
 + aucune contrainte sur $!A1!$;
