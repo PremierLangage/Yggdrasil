@@ -41,3 +41,4 @@
 - au moins n1+n2 états accessibles
 - au plus n1+n2 états accessibles
 + au plus n1xn2 états accessibles
+- Je ne sais pas répondre à la question
