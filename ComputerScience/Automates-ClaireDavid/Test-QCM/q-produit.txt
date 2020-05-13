@@ -46,7 +46,7 @@
 + vrai
 - Je ne sais pas répondre à cette question.
 
-** Si A1 et A2 ont respectivement n1 et n2 état, l'automate obtenu par le produit de A1 et A2 possède:
+** Si $!A1!$ et $!A2!$ ont respectivement $!n_1!$ et $!n_2!$ état, l'automate obtenu par le produit de $!A_1!$ et $!A_2!$ possède:
 - au moins n1 états accessibles
 - au moins n1+n2 états accessibles
 - au plus n1+n2 états accessibles
