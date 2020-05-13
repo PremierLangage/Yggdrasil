@@ -29,7 +29,7 @@
 
 ** En supposant que les automates $!A_1!$ et $!A_2!$ le permettent, comment choisir les états finaux du produit de $!A1!$ et $!A2!$ afin qu'il reconnaisse le langage $!L(A1)\backslash L(A2)!$?
 - $! Q^F_1\cup (Q_2\backslash Q^F_2)!$
-- $! Q^F_1\times Q^F_2 !$
+- $! Q^F_1\backslash Q^F_2 !$
 - $! Q_1\times Q^F_2 \cup Q^F_1 \times Q_2 !$
 + $! Q_1\times Q^F_2 \cap Q^F_1 \times Q_2 !$
 - $! (Q_1\backslash Q^F_1)\times Q^F_2 \cap Q^F_1 \times (Q_2\backslash Q^F_2) !$
