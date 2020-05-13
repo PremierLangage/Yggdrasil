@@ -1,7 +1,7 @@
 
 extends = /model/AMC_TXT.pl
 
-title = Quizz Produit
+title = QCM Produit
 
 intro ==
 Ce quiz contient {{nbstep}} questions.
