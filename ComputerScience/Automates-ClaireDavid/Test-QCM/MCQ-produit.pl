@@ -1,7 +1,7 @@
 
 extends = /model/AMC_TXT.pl
 
-title = Quizz sur quelques commandes terminal Unix
+title = Quizz Produit
 
 questions=@ q-produit.txt
 
