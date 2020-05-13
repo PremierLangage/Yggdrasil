@@ -8,7 +8,7 @@
 - Je ne sais pas répondre à cette question.
 
 ** Comment choisir les états finaux du produit de $!A1!$ et $!A2!$ afin qu'il reconnaisse le langage $!L(A1)\cap L(A2)!$?
-- $! Q^1_{\scF}\cup Qf2!$
+- $! Q^1_{\sc F}\cup Qf2!$
 + $! Qf1xQf2 !$
 - $! (Qf1,Qf2) !$
 - $! Q1xQf2 U Qf1xQf2 !$
