@@ -16,8 +16,6 @@
 + $! Q^F_1\times Q^F_2 !$
 - Je ne sais pas répondre à cette question.
 
-
-
 ** Pour pouvoir calculer la différence $!L(A1)\backslash L(A2)!$ à partir du produit de deux automates $!A1!$ et $!A2!$ :
 - $!A1!$ doit être déterministe;
 - $!A1!$ doit être complet;
