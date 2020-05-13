@@ -7,7 +7,7 @@
 + aucune contrainte sur $!A2!$.
 - Je ne sais pas répondre à cette question.
 
-** Comment choisir les états finaux afin que le produit de $!A1!$ et $!A2!$ représente l'intersection $!L(A1)\cap L(A2)!$?
+** Comment choisir les états finaux du produit de $!A1!$ et $!A2!$ afin qu'il représente l'intersection $!L(A1)\cap L(A2)!$?
 - $! Qf1\cup Qf2!$
 + Qf1xQf2
 - (Qf1,Qf2)
