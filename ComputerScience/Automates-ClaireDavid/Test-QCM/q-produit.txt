@@ -8,8 +8,11 @@
 - Je ne sais pas répondre à cette question.
 
 ** Pour que le produit de A1 et A2 représente l'intersection de L(A1) et L(A2), les états finaux doivent être:
--Q1
--Qf1xQf2
+- Qf1UQf2
++ Qf1xQf2
+- (Qf1,Qf2)
+- Q1xQf2 U Qf1xQf2
++ Q1xQf2
 
 
 
