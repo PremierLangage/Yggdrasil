@@ -11,7 +11,7 @@
 - $! Q^F_1\cup Q^F_2!$
 + $! Q^F_1\times Q^F_2 !$
 - $! (Q^F_1,Q^F_2) !$
-- $! Q1xQ^F_2 \cup Q^F_1xQ_2 !$
+- $! Q_1xQ^F_2 \cup Q^F_1xQ_2 !$
 + $! Q1xQf2 !$
 
 
