@@ -45,6 +45,7 @@
 - $! Q_1\times Q^F_2 \cup Q^F_1 \times Q_2 !$
 + $! Q_1\times Q^F_2 \cap Q^F_1 \times Q_2 !$
 - $! (Q_1\backslash Q^F_1)\times Q^F_2 \cap Q^F_1 \times (Q_2\backslash Q^F_2) !$
++ $! (Q_1\backslash Q^F_1)\times Q^F_2 \cap Q^F_1 \times (Q_2\backslash Q^F_2) !$
 - Je ne sais pas répondre à cette question.
 
 
