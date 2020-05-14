@@ -57,39 +57,6 @@ automate2 = '''
 #            'symdiff' build (L2\L1)U(L1\L2) 
 string_solution = Automaton.string_soluce_product(automate1,automate2,mode='intersect')
 
-#TODO Etats finaux
-solution = '''
-    #states
-    14
-    25
-    35
-    16
-    36
-    26
-    #initials
-    14
-    #accepting
-    16
-    25
-    36
-    #alphabet
-    a
-    b
-    #transitions
-    14:a>25
-    14:b>35
-    25:a>16
-    25:b>25
-    35:a>36
-    35:b>35
-    16:a>26
-    16:b>36
-    36:a,b>36
-    26:a>16
-    26:b>26
-'''
-
-
 
 #automate solution -- le nom solution est forcé par le template
 solution = string_solution
@@ -138,6 +105,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
