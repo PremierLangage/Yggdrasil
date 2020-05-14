@@ -4,7 +4,7 @@
 extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
-title = exo 2
+title = exo 3
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
 from automaton import Automaton
@@ -104,6 +104,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
 
 
