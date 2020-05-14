@@ -16,16 +16,21 @@ automate1 = '''
     #states
     1
     2
+    3
     #initials
-    1;2
+    1
     #accepting
-    1;2
+    2;3
     #alphabet
     a
     b
     #transitions
     1:a>2
+    1:b>3
+    2:a>3
     2:b>1
+    3:a>3
+    3:b>1
 '''
 
 automate2 = '''
