@@ -16,4 +16,9 @@
 
 extends=doctest_me_bro_template.pl
 
+text==
+Les élèves avait la consigne suivante :   
 
+Écrivez une fonction python **factorielle** qui prend en argument un entier 
+naturel **n** et retourne la fatorielle **n!** de ce dernier.
+==
