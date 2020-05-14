@@ -1,4 +1,4 @@
-** Quelles contraintes doivent respecter les automates $!A1!$ et $!A2!$ afin de garantir que 
+** Quelles contraintes imposer sur les automates $!A1!$ et $!A2!$ afin de garantir que 
 la méthode de calcul d'intersection $!L(A1)\cap L(A2)!$ à partir du produit de  $!A1!$ et $!A2!$ est correcte?
 - $!A1!$ doit être déterministe;
 - $!A1!$ doit être complet;
