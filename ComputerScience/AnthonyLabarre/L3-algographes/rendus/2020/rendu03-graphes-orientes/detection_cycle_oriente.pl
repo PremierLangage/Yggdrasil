@@ -45,9 +45,9 @@ testname3 = Vérifications de detection_cycle sur un graphe orienté aléatoire
 pltest3==
 >>> from corrlib_graphes import * #
 >>> G = GrapheOriente(); G.ajouter_arcs(list(graphe_oriente_aleatoire(10).edges())) # initialisation d'un graphe orienté aléatoire
->>> obtenu = detection_cycle(G)
->>> mon_cycle = cycle_oriente(G)
->>> if obtenu is None:
+>>> obtenu = detection_cycle(G)# Appel de la fonction detection_cycle
+>>> mon_cycle = cycle_oriente(G)#
+>>> if obtenu is None: # Vérification du résultat
 ...     if mon_cycle:
 ...         print("la fonction ne trouve pas de cycle alors que le graphe en contient un formé par les arcs", mon_cycle.arcs())
 ... else:
