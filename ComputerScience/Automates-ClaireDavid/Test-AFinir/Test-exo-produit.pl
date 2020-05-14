@@ -60,7 +60,7 @@ automate2 = '''
 #            'rightdiff' build L1\L2
 #            'leftdiff' build L2\L1
 #            'symdiff' build (L2\L1)U(L1\L2) 
-string_solution = Automaton.string_soluce_product(automate1,automate2,mode='intersect')
+string_solution = Automaton.string_soluce_product(automate1,automate2,mode='leftdiff')
 
 
 #automate solution -- le nom solution est forcé par le template
