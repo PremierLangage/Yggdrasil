@@ -51,10 +51,10 @@ pltest3==
 ...     if mon_cycle:
 ...         print("la fonction ne trouve pas de cycle alors que le graphe en contient un formé par les arcs", mon_cycle.arcs())
 ... else: # Vérification du résultat si un cycle est détecté
-...     if mon_cycle:
+...     if mon_cycle: # cas graphe cyclique
 ...         if not est_cycle_oriente(obtenu, G):
 ...             print("le cycle identifié n'est pas valide")
-...     else:
+...     else: # cas graphe acyclique
 ...         print("la fonction identifie le cycle", obtenu.arcs(), " mais le graphe est acyclique")
 ==
 
