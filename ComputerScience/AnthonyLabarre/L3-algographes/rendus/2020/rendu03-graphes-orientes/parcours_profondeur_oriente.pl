@@ -23,7 +23,7 @@ pltest0==
 True
 >>> ma_foret = foret_parcours_profondeur_oriente(G); arcs_de_ma_foret = set(ma_foret.arcs())
 >>> for arbre in cc_graphes(foret): # tous les sous-graphes de la forêt sont-ils des arbres?
-...     if not est_arbre_oriente(arbre):#
+...     if not est_arbre_oriente(arbre): #
 ...         print("le sous-graphe suivant de la forêt n'est pas un arbre orienté")
 ...         print("    sommets:", arbre.sommets())
 ...         print("    arcs:   ", arbre.arcs())
