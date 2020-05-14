@@ -36,7 +36,7 @@ pltest2==
 >>> attendu = sorted(map(sorted, cfc(G)))#
 >>> obtenu = sorted(map(sorted, composantes_fortement_connexes(G)))# Calcul des cfc
 >>> if obtenu != attendu: # vérification du résultat
-...     print("CFC obtenues =", obtenu, ";\n CFC attendues =", attendu)# 
+...     print("CFC obtenues =", obtenu, ";\n CFC attendues =", attendu) # 
 ==
 
 # Le grader:
