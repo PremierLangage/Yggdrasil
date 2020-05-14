@@ -11,7 +11,7 @@ Pour les questions de type Vrai/Faux, vous devez choisir une réponse.
 Pour les autres, la réponse complète peut être composée de plusieurs items.
 ==
 
-feedback=''
+feedback='Relis ton cours et recommence.'
 
 questions=@ questions.txt
 
