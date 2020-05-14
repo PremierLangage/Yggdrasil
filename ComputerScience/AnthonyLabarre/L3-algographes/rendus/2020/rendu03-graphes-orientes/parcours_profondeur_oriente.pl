@@ -40,11 +40,11 @@ testname1 = Vérifications de parcours_profondeur_oriente sur l'exemple du TD 5 
 pltest1==
 >>> from corrlib_graphes import * #
 >>> G = GrapheOriente(); G.ajouter_arcs(CFC_INSTANCE_TD) # initialisation de l'instance du TD
->>> sommets, parents = parcours_profondeur_oriente(G)
->>> foret = reconstruire_arbre_oriente(sommets, parents, GrapheOriente)
+>>> sommets, parents = parcours_profondeur_oriente(G)# Appel de la fonction parcours_profondeur_oriente
+>>> foret = reconstruire_arbre_oriente(sommets, parents, GrapheOriente)# Reconstruction de la forêt à partir de parents
 >>> sorted(foret.sommets()) == sorted(G.sommets())  # tous les sommets sont-ils couverts?
 True
->>> ma_foret = foret_parcours_profondeur_oriente(G); arcs_de_ma_foret = set(ma_foret.arcs())
+>>> ma_foret = foret_parcours_profondeur_oriente(G); arcs_de_ma_foret = set(ma_foret.arcs())#
 >>> for arbre in cc_graphes(foret): # tous les sous-graphes de la forêt sont-ils des arbres?
 ...     if not est_arbre_oriente(arbre):
 ...         print("le sous-graphe suivant de la forêt n'est pas un arbre orienté")
