@@ -47,10 +47,10 @@ pltest3==
 >>> G = GrapheOriente(); G.ajouter_arcs(list(graphe_oriente_aleatoire(10).edges())) # initialisation d'un graphe orienté aléatoire
 >>> obtenu = detection_cycle(G)# Appel de la fonction detection_cycle
 >>> mon_cycle = cycle_oriente(G)#
->>> if obtenu is None: # Vérification du résultat
+>>> if obtenu is None: # Vérification du résultat si aucun cycle n'est détecté
 ...     if mon_cycle:
 ...         print("la fonction ne trouve pas de cycle alors que le graphe en contient un formé par les arcs", mon_cycle.arcs())
-... else:
+... else: # Vérification du résultat si un cycle est détecté
 ...     if mon_cycle:
 ...         if not est_cycle_oriente(obtenu, G):
 ...             print("le cycle identifié n'est pas valide")
