@@ -16,7 +16,7 @@
 + $! Q^F_1\times Q^F_2 !$
 - Je ne sais pas répondre à cette question.
 
-** Pour pouvoir calculer la différence $!L(A1)\backslash L(A2)!$ à partir du produit de deux automates $!A1!$ et $!A2!$ :
+** Pour que le calcul de la différence $!L(A1)\backslash L(A2)!$ à partir du produit de $!A1!$ et $!A2!$ soit toujours correct, quelles contraintes imposer à $!A1!$ et $!A2!$?
 - $!A1!$ doit être déterministe;
 - $!A1!$ doit être complet;
 + aucune contrainte sur $!A1!$;
@@ -37,7 +37,7 @@
 - Je ne sais pas répondre à cette question.
 
 
-** Pour pouvoir calculer l'union $!L(A1)\cup L(A2)!$ à partir du produit de deux automates $!A1!$ et $!A2!$ :
+** Pour que le calcul de l'union $!L(A1)\cup L(A2)!$ à partir du produit de $!A1!$ et $!A2!$ soit toujours correct, quelles contraintes imposer à $!A1!$ et $!A2!$?
 - $!A1!$ doit être déterministe;
 - $!A1!$ doit être complet;
 + aucune contrainte sur $!A1!$;
