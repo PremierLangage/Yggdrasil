@@ -13,7 +13,7 @@ Pour les autres, la réponse complète peut être composée de plusieurs items.
 
 feedback=''
 
-questions=@ q-produit.txt
+questions=@ questions.txt
 
 
 
