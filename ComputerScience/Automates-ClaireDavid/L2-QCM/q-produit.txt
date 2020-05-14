@@ -7,7 +7,7 @@
 + Aucune contrainte n'est nécessaire sur $!A2!$.
 - Je ne sais pas répondre à cette question.
 
-** Parmi ces ensembles, lesquels corresponent aux états finaux du produit de $!A1!$ et $!A2!$ si on veut reconnaître $!L(A1)\cap L(A2)!$?
+** Parmi ces ensembles, lesquels correspondent aux états finaux du produit de $!A1!$ et $!A2!$ si on veut reconnaître $!L(A1)\cap L(A2)!$?
 - $! Q^F_1\cup Q^F_2!$
 - $! Q^F_1\cap Q^F_2!$
 - $! (Q^F_1,Q^F_2) !$
