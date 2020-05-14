@@ -24,8 +24,8 @@ testname1 = Vérifications de composantes_fortement_connexes sur l'exemple du TD
 pltest1==
 >>> from corrlib_graphes import CFC_INSTANCE_TD #
 >>> G = GrapheOriente(); G.ajouter_arcs(CFC_INSTANCE_TD) # initialisation de l'instance du TD
->>> cfc = composantes_fortement_connexes(G)
->>> sorted(map(sorted, cfc))
+>>> cfc = composantes_fortement_connexes(G) # Calcul des cfc
+>>> sorted(map(sorted, cfc))# vérification du résultat
 [[1, 2, 3], [4], [5, 6, 7, 8, 9], [10, 11, 12, 13, 14]]
 ==
 
@@ -33,10 +33,10 @@ testname2 = Vérifications de composantes_fortement_connexes sur une instance al
 pltest2==
 >>> from corrlib_graphes import * #
 >>> G = GrapheOriente(); G.ajouter_arcs(list(graphe_oriente_aleatoire(20).edges())) # initialisation d'une instance aléatoire
->>> attendu = sorted(map(sorted, cfc(G)))
->>> obtenu = sorted(map(sorted, composantes_fortement_connexes(G)))
->>> if obtenu != attendu:
-...     print("CFC obtenues =", obtenu, ";\n CFC attendues =", attendu)
+>>> attendu = sorted(map(sorted, cfc(G)))#
+>>> obtenu = sorted(map(sorted, composantes_fortement_connexes(G)))# Calcul des cfc
+>>> if obtenu != attendu: # vérification du résultat
+...     print("CFC obtenues =", obtenu, ";\n CFC attendues =", attendu)#
 ==
 
 # Le grader:
