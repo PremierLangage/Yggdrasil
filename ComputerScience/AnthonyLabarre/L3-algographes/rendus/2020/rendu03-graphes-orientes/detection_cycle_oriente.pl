@@ -24,9 +24,9 @@ testname1 = Vérifications de detection_cycle sur l'exemple du TD
 pltest1==
 >>> from corrlib_graphes import * #
 >>> G = GrapheOriente(); G.ajouter_arcs(CYCLE_ORIENTE_INSTANCE_TD) # initialisation de l'instance du TD
->>> arcs_cycle_trouve = set(detection_cycle(G).arcs())
->>> cycles_possibles = cycles_simples(G)
->>> if arcs_cycle_trouve not in cycles_possibles:
+>>> arcs_cycle_trouve = set(detection_cycle(G).arcs())# Appel de la fonction detection_cycle
+>>> cycles_possibles = cycles_simples(G)#
+>>> if arcs_cycle_trouve not in cycles_possibles: # Vérification du résultat
 ...     print("les arcs identifiés:", arcs_cycle_trouve, "ne constituent pas un cycle du graphe")
 ...     print("cycles possibles:", cycles_possibles)
 ==
