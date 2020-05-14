@@ -22,7 +22,8 @@ editor =: CodeEditor
 editor.theme = dark
 editor.language = python
 editor.code ==
-# write your code here
+>>> votre premier test
+La réponse attendue
 ==
 
 before==
