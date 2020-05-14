@@ -15,6 +15,7 @@ text==
 
 testname0 = Vérifications de parcours_profondeur_oriente sur l'exemple du TD 5 exercice 1
 pltest0==
+>>> from graphe_oriente import *
 >>> from corrlib_graphes import * #
 >>> G = GrapheOriente(); G.ajouter_arcs(CYCLE_ORIENTE_INSTANCE_TD) # initialisation de l'instance du TD
 >>> sommets, parents = parcours_profondeur_oriente(G)
