@@ -15,8 +15,8 @@ testname0 = Vérifications de detection_cycle sur l'exemple du cours
 pltest0==
 >>> from corrlib_graphes import CYCLE_ORIENTE_INSTANCE_COURS #
 >>> G = GrapheOriente(); G.ajouter_arcs(CYCLE_ORIENTE_INSTANCE_COURS) # initialisation de l'instance du cours
->>> cycle = detection_cycle(G)
->>> sorted(cycle.arcs())
+>>> cycle = detection_cycle(G) # Appel de la fonction detection_cycle
+>>> sorted(cycle.arcs()) # Vérification du résultat
 [(0, 3), (3, 4), (4, 0)]
 ==
 
@@ -74,6 +74,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
