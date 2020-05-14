@@ -15,8 +15,8 @@ testname0 = Vérifications de composantes_fortement_connexes sur l'exemple du co
 pltest0==
 >>> from corrlib_graphes import CFC_INSTANCE_COURS #
 >>> G = GrapheOriente(); G.ajouter_arcs(CFC_INSTANCE_COURS) # initialisation de l'instance du cours
->>> cfc = composantes_fortement_connexes(G)
->>> sorted(map(sorted, cfc))
+>>> cfc = composantes_fortement_connexes(G) # Calcul des cfc
+>>> sorted(map(sorted, cfc)) # vérification du résultat
 [[0, 1, 4], [2, 3], [5, 6], [7]]
 ==
 
@@ -54,6 +54,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
