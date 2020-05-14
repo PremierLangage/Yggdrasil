@@ -46,15 +46,15 @@ pltest1==
 True
 >>> ma_foret = foret_parcours_profondeur_oriente(G); arcs_de_ma_foret = set(ma_foret.arcs())#
 >>> for arbre in cc_graphes(foret): # tous les sous-graphes de la forêt sont-ils des arbres?
-...     if not est_arbre_oriente(arbre):
+...     if not est_arbre_oriente(arbre): #
 ...         print("le sous-graphe suivant de la forêt n'est pas un arbre orienté")
 ...         print("    sommets:", arbre.sommets())
 ...         print("    arcs:   ", arbre.arcs())
-...     ses_arcs = set(arbre.arcs())
-...     if not ses_arcs <= arcs_de_ma_foret:
+...     ses_arcs = set(arbre.arcs())#
+...     if not ses_arcs <= arcs_de_ma_foret:#
 ...         print("les arcs suivants ne devraient pas appartenir à la forêt:", ses_arcs.difference(arcs_de_ma_foret))
->>> dates_attendues = profondeur_dates_fin(G); ordre_attendu = sorted(dates_attendues, key=dates_attendues.__getitem__)
->>> if sommets != ordre_attendu:
+>>> dates_attendues = profondeur_dates_fin(G); ordre_attendu = sorted(dates_attendues, key=dates_attendues.__getitem__)#
+>>> if sommets != ordre_attendu: # Vérification de l'ordre des sommets renvoyés par parcours_profondeur_oriente
 ...     print("ordre attendu:", ordre_attendu) 
 ...     print("ordre obtenu: ", sommets) 
 ==
