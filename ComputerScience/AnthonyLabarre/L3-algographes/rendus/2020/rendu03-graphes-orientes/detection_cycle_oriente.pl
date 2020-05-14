@@ -35,8 +35,8 @@ testname2 = Vérifications de detection_cycle sur un DAG aléatoire
 pltest2==
 >>> from corrlib_graphes import * #
 >>> G = GrapheOriente(); G.ajouter_arcs(list(graphe_oriente_acyclique_aleatoire(20).edges())) # initialisation d'un DAG aléatoire
->>> obtenu = detection_cycle(G)
->>> if obtenu is not None:
+>>> obtenu = detection_cycle(G)# Appel de la fonction detection_cycle
+>>> if obtenu is not None:# Vérification du résultat
 ...     print("la fonction identifie le cycle", obtenu.arcs(), " mais le graphe est acyclique")
 ...     print("ses arcs:", G.arcs())
 ==
