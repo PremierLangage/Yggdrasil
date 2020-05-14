@@ -78,3 +78,15 @@ def factorielle(n):
     return factorielle(n-1) + factorielle(n-2)
 ==
 
+bad_code_4==#|python|
+def factorielle(n):
+    """
+    TEST_INCLUSION
+    """
+    if n <= 1:
+        return n
+    ans = 1
+    for i in range(2, n):
+        ans *= i
+    return ans
+==
