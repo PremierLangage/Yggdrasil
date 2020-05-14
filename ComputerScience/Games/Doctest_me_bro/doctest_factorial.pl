@@ -58,3 +58,11 @@ def factorielle(n):
     10888869450418352160768000000, 304888344611713860501504000000, 8841761993739701954543616000000]
     return L[n]
 ==
+
+bad_code_3==#|python|
+def factorielle(n):
+    if n <= 1:
+        return 1
+    return factorielle(n-1) + factorielle(n-2)
+==
+
