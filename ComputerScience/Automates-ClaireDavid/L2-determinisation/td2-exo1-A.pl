@@ -1,4 +1,5 @@
 extends = ../templates/new_editor-L2.pl
+author = Claire David
 
 #* titre de l'exercice
 title = td2 exo1-A
@@ -80,4 +81,5 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
+
 
