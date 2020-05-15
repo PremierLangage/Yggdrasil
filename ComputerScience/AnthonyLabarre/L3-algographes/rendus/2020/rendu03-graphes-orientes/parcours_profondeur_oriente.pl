@@ -7,7 +7,10 @@ builder= /builder/before.py
 author = Anthony Labarre
 title = Parcours en profondeur (graphe orienté).
 text==
-Écrivez une fonction parcours_profondeur_oriente(graphe), qui renvoie les sommets du graphe dans l'ordre où le parcours en profondeur les découvrira. Attention, votre fonction doit être correcte que le graphe soit ou non connexe (faiblement ou fortement). Tous les sommets du graphe doivent donc être listés.
+Écrivez une fonction parcours_profondeur_oriente(graphe), qui renvoie les sommets 
+du graphe dans l'ordre où le parcours en profondeur les découvrira. Attention, votre 
+fonction doit être correcte que le graphe soit ou non connexe (faiblement ou fortement). 
+Tous les sommets du graphe doivent donc être listés.
 ==
 
 # Les tests: exemples TD, graphe aléatoire
