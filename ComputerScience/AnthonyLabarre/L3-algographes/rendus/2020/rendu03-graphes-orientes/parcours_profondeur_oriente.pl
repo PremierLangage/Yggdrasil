@@ -27,9 +27,8 @@ True
 ...         print("le sous-graphe suivant de la forêt n'est pas un arbre orienté") #
 ...         print("    sommets:", arbre.sommets()) #
 ...         print("    arcs:   ", arbre.arcs()) #
-...     ses_arcs = set(arbre.arcs())#
-...     if not ses_arcs <= arcs_de_ma_foret:# vérification des arbres
-...         print("les arcs suivants ne devraient pas appartenir à la forêt:", ses_arcs.difference(arcs_de_ma_foret))
+>>> set(foret.arcs()) == set(ma_foret.arcs())
+True
 >>> dates_attendues = profondeur_dates_fin(G); ordre_attendu = sorted(dates_attendues, key=dates_attendues.__getitem__) #
 >>> if sommets != ordre_attendu: # Vérification de l'ordre des sommets renvoyés par parcours_profondeur_oriente
 ...     print("ordre attendu:", ordre_attendu) 
@@ -50,9 +49,8 @@ True
 ...         print("le sous-graphe suivant de la forêt n'est pas un arbre orienté")
 ...         print("    sommets:", arbre.sommets())
 ...         print("    arcs:   ", arbre.arcs())
-...     ses_arcs = set(arbre.arcs())#
-...     if not ses_arcs <= arcs_de_ma_foret:# vérification des arbres
-...         print("les arcs suivants ne devraient pas appartenir à la forêt:", ses_arcs.difference(arcs_de_ma_foret))
+>>> set(foret.arcs()) == set(ma_foret.arcs())
+True
 >>> dates_attendues = profondeur_dates_fin(G); ordre_attendu = sorted(dates_attendues, key=dates_attendues.__getitem__)#
 >>> if sommets != ordre_attendu: # Vérification de l'ordre des sommets renvoyés par parcours_profondeur_oriente
 ...     print("ordre attendu:", ordre_attendu) 
@@ -73,9 +71,8 @@ True
 ...         print("le sous-graphe suivant de la forêt n'est pas un arbre orienté")
 ...         print("    sommets:", arbre.sommets())
 ...         print("    arcs:   ", arbre.arcs())
-...     ses_arcs = set(arbre.arcs())#
-...     if not ses_arcs <= arcs_de_ma_foret:# vérification des arbres
-...         print("les arcs suivants ne devraient pas appartenir à la forêt:", ses_arcs.difference(arcs_de_ma_foret))
+>>> set(foret.arcs()) == set(ma_foret.arcs())
+True
 >>> dates_attendues = profondeur_dates_fin(G); ordre_attendu = sorted(dates_attendues, key=dates_attendues.__getitem__)#
 >>> if sommets != ordre_attendu: # Vérification de l'ordre des sommets renvoyés par parcours_profondeur_oriente
 ...     print("ordre attendu:", ordre_attendu) 
