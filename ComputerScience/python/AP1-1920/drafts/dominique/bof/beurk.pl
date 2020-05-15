@@ -36,6 +36,11 @@ et vos fonctions
 ==
 
 
+@/lib/grader/evaluator.py
+evaluator==
+
+grade=(100," cool")
+==
 
 
 
