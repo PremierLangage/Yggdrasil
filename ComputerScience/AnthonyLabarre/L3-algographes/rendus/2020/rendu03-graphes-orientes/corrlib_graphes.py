@@ -539,7 +539,9 @@ def cc_graphes(graphe_oriente):
     """
     resultat = list()
     
-    for sous_graphe_nx in nx.weakly_connected_component_subgraphs(nx.DiGraph(list(graphe_oriente.arcs()))):
+    #for sous_graphe_nx in nx.weakly_connected_component_subgraphs(nx.DiGraph(list(graphe_oriente.arcs()))):
+    graphe_oriente_nx = nx.DiGraph(list(graphe_oriente.arcs()))
+    for sous_graphe_nx in (graphe_oriente_nx.subgraph(sommets) for sommets in nx.weakly_connected_components()):
         sous_graphe = type(graphe_oriente)()
         sous_graphe.ajouter_arcs(sous_graphe_nx.edges())
         resultat.append(sous_graphe)
@@ -611,6 +613,7 @@ def est_arbre_oriente(graphe_oriente):
     
     """
     return nx.is_arborescence(nx.DiGraph(list(graphe_oriente.arcs())))
+
 
 
 
