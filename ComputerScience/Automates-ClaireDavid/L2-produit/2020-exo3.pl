@@ -39,7 +39,7 @@ automate2 = '''
     #states
     1
     2
-    5
+    3
     #initials
     1
     #accepting
