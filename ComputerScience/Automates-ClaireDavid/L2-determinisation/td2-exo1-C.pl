@@ -1,5 +1,3 @@
-
-
 extends = ../templates/new_editor-L2.pl
 
 author = Claire David
