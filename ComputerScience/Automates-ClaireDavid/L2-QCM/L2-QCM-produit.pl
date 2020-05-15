@@ -1,6 +1,7 @@
 
 extends = /model/AMC_TXT.pl
 
+author = Claire David
 title = QCM Produit d'automates
 
 intro ==
@@ -12,6 +13,7 @@ Pour les autres, la réponse complète peut être composée de plusieurs éléme
 ==
 
 questions=@ q-produit.txt
+
 
 
 
