@@ -24,9 +24,9 @@ True
 >>> ma_foret = foret_parcours_profondeur_oriente(G); arcs_de_ma_foret = set(ma_foret.arcs())#
 >>> for arbre in cc_graphes(foret): # 
 ...     if not est_arbre_oriente(arbre): # tous les sous-graphes de la forêt sont-ils des arbres?
-...         print("le sous-graphe suivant de la forêt n'est pas un arbre orienté")
-...         print("    sommets:", arbre.sommets())
-...         print("    arcs:   ", arbre.arcs())
+...         print("le sous-graphe suivant de la forêt n'est pas un arbre orienté") #
+...         print("    sommets:", arbre.sommets()) #
+...         print("    arcs:   ", arbre.arcs()) #
 ...     ses_arcs = set(arbre.arcs())#
 ...     if not ses_arcs <= arcs_de_ma_foret:# vérification des arbres
 ...         print("les arcs suivants ne devraient pas appartenir à la forêt:", ses_arcs.difference(arcs_de_ma_foret))
@@ -97,6 +97,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
