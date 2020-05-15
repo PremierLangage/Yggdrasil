@@ -27,7 +27,7 @@ True
 ...         print("le sous-graphe suivant de la forêt n'est pas un arbre orienté") #
 ...         print("    sommets:", arbre.sommets()) #
 ...         print("    arcs:   ", arbre.arcs()) #
->>> set(foret.arcs()) == set(ma_foret.arcs())
+>>> set(foret.arcs()) == set(ma_foret.arcs()) # Vérification que la foret est bien celle du parcours en profondeur avec la convention "@Labarre"
 True
 >>> dates_attendues = profondeur_dates_fin(G); ordre_attendu = sorted(dates_attendues, key=dates_attendues.__getitem__) #
 >>> if sommets != ordre_attendu: # Vérification de l'ordre des sommets renvoyés par parcours_profondeur_oriente
@@ -94,6 +94,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
