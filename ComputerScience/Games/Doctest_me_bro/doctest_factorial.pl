@@ -25,7 +25,7 @@ Les élèves avait la consigne suivante :
 naturel **n** et retourne la fatorielle **n!** de ce dernier.
 
 Proposez des doctests python pour detecter la validité et les erreurs 
-potentielles des codes rendus des élèves.
+potentielles des codes rendus par les élèves.
 ==
 
 good_code==#|python|
@@ -84,7 +84,7 @@ def factorielle(n):
     TEST_INCLUSION
     """
     if n <= 1:
-        return n
+        return 1
     ans = 1
     for i in range(2, n):
         ans *= i
