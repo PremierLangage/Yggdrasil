@@ -85,13 +85,25 @@ def nb_failled_test(code_key):
     lasts_lines = lines[-2:]
     return "<br />".join(lasts_lines)
 
+g_with_fail = 0
+b_with_no_fail = 0
+
 # Resume good code doctests
 if len(g_code_keys) > 1:
     str_g_c = "Bonnes propositions"
 else:
     str_g_c = "Bonne proposition"
 feedback = "<u><b>"+str_g_c+" :</b></u> On veut du vert!<br />"
-feedback += "<br />".join([nb_failled_test(k) for k in g_code_keys])
+for k in g_code_keys:
+    dt_res = nb_failled_test(k)
+    if " 0 failed." not in dt_res:
+        g_with_fail += 1
+        feedback += '<div id="cercle_vert" style="display: inline-block"></div>
+    else:
+        feedback += '<div id="cercle_rouge" style="display: inline-block"></div>
+    feedback += '<div style="display: inline">' + dt_res + '</div>'
+    
+    feedback += "<br />"
 
 # Resume bad code doctests
 if len(b_code_keys) > 1:
