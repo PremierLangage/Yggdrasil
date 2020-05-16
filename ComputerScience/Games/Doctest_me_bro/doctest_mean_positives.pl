@@ -75,3 +75,19 @@ def moyenne_entiere(L):
             nb_pos += 1
     return ans // nb_pos
 ==
+
+good_code_3==#|python|
+def moyenne_entiere(L):
+    """
+    TEST_INCLUSION
+    """
+    ans = 0
+    nb_pos = 0
+    for elem in L:
+        if elem >= 0:
+            ans += elem
+            nb_pos += 1
+    if ans == 0:
+        return 0
+    return ans / nb_pos
+==
