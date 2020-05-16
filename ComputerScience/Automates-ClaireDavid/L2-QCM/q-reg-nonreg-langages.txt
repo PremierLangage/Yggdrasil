@@ -1,0 +1,4 @@
+* Le produit de deux automates a toujours 1 seul état initial
+- Régulier
++ Non régulier
+- Je ne sais pas répondre à cette question.
