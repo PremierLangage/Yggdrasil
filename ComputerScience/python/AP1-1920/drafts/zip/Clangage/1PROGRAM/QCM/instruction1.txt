@@ -17,4 +17,25 @@ Latex:1
 +int string;
 -float* entier;
 
+**sélectionner les affirmations exactes.
+-Les blocs C s'identifient en allant à la ligne et en rajoutant 4 espaces.
++On peut imbriquer les bloc les uns dans les autres.
++Les instructions se terminent par le caractère ;
+-Pour définir une fonction, on met le cracère :  à la suite de son prototype.
+
+*Combien de fonction *main* contient un programme C
+-Possiblement aucune
+-Autant que necessaire
++Une et une seule
+-Deux, une version sans argument et une autre version avec
+
+*Utilisation du langage C
+Selectionner les déclarations justes
+-Le langage C est omniprésent pour faire des sites web.
++La quasi totalité des systèmes d'explitation sont écrit en C.
+-Le langage C ne peut pas utiliser plus de 50% des capacités d'un ordinateur.
+-Le langage C est pratique pour dévelloper des applications mobiles.
++Beaucoup de calculs haute performance sont fait en C.
+-Uniquement les machines sous Linux peuvent exécuté les programmes C.
+-Le langage C est réputé pour produire des programmes efficaces.
 
