@@ -15,10 +15,12 @@ from AMC import parse_AMC_TXT
 
 list_questions = parse_AMC_TXT(questions)
 
-
-nbstep = len(list_questions)
-if randomize_questions == 'on':
+if 'nbstep' in globals():
     list_questions = rd.sample(list_questions, nbstep)
+else:
+    nbstep = len(list_questions)
+    if randomize_questions == 'on':
+        list_questions = rd.sample(list_questions, nbstep)
 
 #if 'nbstep' in globals():
 #    list_questions = rd.sample(list_questions, nbstep)
@@ -56,6 +58,7 @@ formstep ==
 evaluatorstep ==
 score = comp[step].eval()
 ==
+
 
 
 
