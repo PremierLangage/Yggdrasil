@@ -108,3 +108,13 @@ def factorielle(n):
     """
     return 1
 ==
+
+bad_code_6==#|python|
+def factorielle(n):
+    """
+    TEST_INCLUSION
+    """
+    if n <= 1:
+        return n
+    return n*factorielle(n-1)
+==
