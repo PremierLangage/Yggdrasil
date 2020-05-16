@@ -30,7 +30,12 @@
 + Non régulier
 - Aucune idée
 
+* $!L_? = \\{ a^nb^mc^p |m \ge n+p \\}!$
+- Régulier
++ Non régulier
+- Aucune idée
 
+#TD6 exo4
 
 
 
