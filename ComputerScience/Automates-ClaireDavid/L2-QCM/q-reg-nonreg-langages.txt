@@ -3,7 +3,6 @@
 + Non régulier
 - Aucune idée
 
-#m;;d
 * $!L_? = \\{ a^p | p!$ est premier $!\\}!$
 - Régulier
 + Non régulier
@@ -28,3 +27,4 @@
 + Régulier
 - Non régulier
 - Aucune idée
+
