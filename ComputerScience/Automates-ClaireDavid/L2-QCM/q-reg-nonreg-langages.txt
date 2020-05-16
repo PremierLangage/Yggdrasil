@@ -37,6 +37,10 @@
 
 #TD6 exo4
 
+* $!L_? = \\{ a^nb^m | \exists p n+m=2p \\}!$
+- Régulier
++ Non régulier
+- Aucune idée
 
 
 
