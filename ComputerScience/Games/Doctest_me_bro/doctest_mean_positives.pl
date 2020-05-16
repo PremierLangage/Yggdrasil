@@ -91,3 +91,19 @@ def moyenne_entiere(L):
         return 0
     return ans / nb_pos
 ==
+
+bad_code_4==#|python|
+def moyenne_entiere(L):
+    """
+    TEST_INCLUSION
+    """
+    ans = 0
+    nb_pos = 0
+    for elem in L:
+        if elem > 0:
+            ans += elem
+            nb_pos += 1
+    if ans == 0:
+        return 0
+    return ans // nb_pos
+==
