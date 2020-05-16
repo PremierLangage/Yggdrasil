@@ -1,4 +1,4 @@
-* Le produit de deux automates a toujours 1 seul état initial
+* $!\{a^nb^n|n\ge0\}!$
 - Régulier
 + Non régulier
 - Aucune idée
