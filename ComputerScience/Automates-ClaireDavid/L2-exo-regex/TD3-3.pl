@@ -15,7 +15,7 @@ alphabet = "a,b"
 solution = Automaton.parse('(bb)*(b|a|ba)(aa)*')
 
 #message de l'énoncé décrivant le langage
-message = "$! L = \\\{ b^n.a^p !$ tels que n ou p est impair $! \\\} !$"
+message = "$! L = \\\{ b^na^p !$ tels que n ou p est impair $! \\\} !$"
 ==
 
 
