@@ -83,7 +83,7 @@ def nb_failled_test(code_key):
     while lines[-1] == '':
         lines = lines[:-1]
     lasts_lines = lines[-2:]
-    return ("<br />".join(lasts_lines), out)
+    return ("<br />".join(lasts_lines), "<b>"+code_key+"</b><br />"+out)
 
 g_with_fail = 0
 b_with_no_fail = 0
