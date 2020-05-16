@@ -41,10 +41,11 @@ form==
 
 evaluator==#|python|
 
+good_code_keys = [k for k in globals().keys() if k.startwith('good')]
+bad_code_keys = [k for k in globals().keys() if k.startwith('bad')]
 
+feedback = editor.code + good_code_keys + bad_code_keys
 
-
-
-grade = (100, f"student code:\n{editor.code}")
+grade = (100, feedback)
 ==
 
