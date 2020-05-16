@@ -15,7 +15,7 @@ alphabet = "0,1"
 solution = Automaton.parse('0*10*')
 
 #message de l'énoncé décrivant le langage
-message = "à la représentation des entiers en base 2 qui sont des puissances de 2"
+message = "à la représentation des entiers en binaire (big endian) qui sont des puissances de 2"
 ==
 
 #* Texte de l'énoncé
@@ -26,7 +26,7 @@ text ==
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$ .<br/>
 Donnez une expression reconnaissant le langage correspondant à {{ message }}
 
-La représentation big endian correspond à mettre le bit de poids fort à gauche.
+<br>La représentation big endian correspond à mettre le bit de poids fort à gauche.
 <br>Par exemple l'entier $!41 = 2^5+2^3+2^0!$ est représenté par 101001 ou 0101001 ou 00101001 ... <br>
  <br>
 {% if attempt < maxattempt and score != 100 %}
