@@ -9,7 +9,7 @@
 + Non régulier
 - Aucune idée
 
-* $!L_? = \\{ w\in\\Sigma^*!$ tels que $!|w|_a = |w|_b|\\}!$ pour $!\\Sigma = \\{a,b\\}!$
+* $!L_? = \\{ w\in\\Sigma^* !$ tels que $! |w|_a = |w|_b|\\}!$ pour $!\\Sigma = \\{a,b\\} !$
 - Régulier
 + Non régulier
 - Aucune idée
@@ -36,10 +36,14 @@
 - Aucune idée
 
 #TD6 exo4
-
 * $!L_? = \\{ a^nb^m | \exists p n+m=2p \\}!$
-- Régulier
-+ Non régulier
++ Régulier
+- Non régulier
+- Aucune idée
+
+* $!L_? = \\{ a^nb^m | p n+m \\text{est premier} \\}!$
++ Régulier
+- Non régulier
 - Aucune idée
 
 
