@@ -6,8 +6,10 @@ title = QCM Produit d'automates
 
 randomize_questions = on
 
+nbstep = 3
+
 intro ==
-Ce quiz contient {{nbstep}} questions.
+Ce quiz contient {{ nbstep }} questions.
 
 Pour les questions de type Vrai/Faux, vous devez choisir une réponse.
 
@@ -15,6 +17,7 @@ Pour les autres, la réponse complète peut être composée de plusieurs éléme
 ==
 
 questions=@ q-produit.txt
+
 
 
 
