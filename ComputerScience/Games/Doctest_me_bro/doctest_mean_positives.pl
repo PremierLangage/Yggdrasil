@@ -107,3 +107,4 @@ def moyenne_entiere(L):
         return 0
     return ans // nb_pos
 ==
+
