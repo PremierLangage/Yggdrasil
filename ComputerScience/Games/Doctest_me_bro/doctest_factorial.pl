@@ -19,14 +19,14 @@ title=Doctest challenge : factorielle d'un entier
 extends=doctest_me_bro_template.pl
 
 text==
-Les élèves avait la consigne suivante :   
+Les élèves avaient la consigne suivante :   
 
 <div style="color:white; background-color: black; padding: 0.5em; border-radius: 0.5em;">
 Écrivez une fonction python <b>factorielle</b> qui prend en argument un entier 
 naturel <b>n</b> et retourne la fatorielle <b>n!</b> de ce dernier.
 </div>
 
-Proposez des doctests python pour detecter la validité et les erreurs 
+Proposez des doctests Python pour detecter la validité et les erreurs 
 potentielles des codes rendus par les élèves.
 ==
 
