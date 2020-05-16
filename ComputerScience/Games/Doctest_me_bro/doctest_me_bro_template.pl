@@ -60,7 +60,9 @@ def nb_failled_test(code_key):
     f.close()
     SP = subprocess.run(['python3', '-m', 'doctest', '-v', 'doc_code.py'], capture_output=True)
     out = SP.stdout.decode()
-    return out.replace('\n', '<br />')
+    lines = out.split('\n')
+    lasts_lines = lines[-2:]
+    return "<br />".join(lasts_lines)
 
 feedback = editor.code + "<br />".join([nb_failled_test(k) for k in g_code_keys]) + "<br />".join([nb_failled_test(k) for k in b_code_keys])
 
