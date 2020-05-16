@@ -53,7 +53,7 @@ def moyenne_entiere(L):
     TEST_INCLUSION
     """
     ans = 0
-    nb_elem
+    nb_elem = 0
     for elem in L:
         ans += elem
         nb_elem += 1
