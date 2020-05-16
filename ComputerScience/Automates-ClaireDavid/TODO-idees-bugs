@@ -48,7 +48,7 @@ A faire
 ==========================================
 Dans regex Td3-1 ajouter l'explication big-endian
 
-+ Dans le format AMC il semble qu'on peut ettre des commentaires
++ Dans le format AMC il semble qu'on peut ettre des commentaires avec #en début de ligne
 
 ==========================================
 Idées d'exo
