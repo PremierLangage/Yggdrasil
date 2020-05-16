@@ -57,7 +57,7 @@ def nb_failled_test(code_key):
         code_text += '\n'
     code_tested = src_code.replace("TEST_INCLUSION", code_text)
     f.write(code_tested)
-    print(code_tested)
+    # print(code_tested)
     f.close()
     SP = subprocess.run(['python3', '-m', 'doctest', '-v', 'doc_code.py'], capture_output=True)
     out = SP.stdout.decode()
