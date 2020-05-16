@@ -48,6 +48,7 @@ A faire
 ==========================================
 Dans regex Td3-1 ajouter l'explication big-endian
 
++ Dans le format AMC il semble qu'on peut ettre des commentaires
 
 ==========================================
 Idées d'exo
@@ -105,6 +106,7 @@ pour votre image vous devez lui donner une largeur fixé (voire 100% si c'est ce
      object-fit: cover; /* important pour avoir une image centrée */
    }
 }
+
 
 
 
