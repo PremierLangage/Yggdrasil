@@ -9,7 +9,7 @@ randomize_questions = on
 #nbstep = 6
 
 intro ==
-Ce quiz contient {{ nbstep }} questions.
+Ce QCM contient {{ nbstep }} questions.
 
 Les langages suivants sont-il réguliers ou non réguliers?
 ==
