@@ -104,7 +104,6 @@ for k in g_code_keys:
     else:
         feedback += '<div id="cercle_vert" style="display: inline-block"></div> '
     feedback += '<div style="display: inline">' + dt_res + '</div>'
-    
     feedback += "<br />"
 
 # Resume bad code doctests
@@ -113,7 +112,16 @@ if len(b_code_keys) > 1:
 else:
     str_b_c = "Mauvaise proposition"
 feedback += "<br /><br /><u><b>"+str_b_c+" :</b></u> On veut du rouge!<br />"
-feedback += "<br />".join([nb_failled_test(k) for k in b_code_keys])
+
+for k in b_code_keys:
+    dt_res = nb_failled_test(k)
+    if " 0 failed." not in dt_res:
+        feedback += '<div id="cercle_rouge" style="display: inline-block"></div> '
+    else:
+        b_with_no_fail += 1
+        feedback += '<div id="cercle_vert" style="display: inline-block"></div> '
+    feedback += '<div style="display: inline">' + dt_res + '</div>'
+    feedback += "<br />"
 
 grade = (100, feedback)
 ==
