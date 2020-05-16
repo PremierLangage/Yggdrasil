@@ -17,7 +17,7 @@ list_questions = parse_AMC_TXT(questions)
 
 if 'nbstep' in globals():
     nbstep = int(nbstep)
-    list_questions = rd.sample(list_questions, nbstep)
+    list_questions = rd.sample(list_questions, int(nbstep))
 else:
     nbstep = len(list_questions)
     if randomize_questions == 'on':
