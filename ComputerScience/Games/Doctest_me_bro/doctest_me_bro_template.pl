@@ -62,8 +62,8 @@ evaluator==#|python|
 import subprocess
 
 # extraction od bads and goods codes
-g_code_keys = [k for k in globals().keys() if k.startswith('good')]
-b_code_keys = [k for k in globals().keys() if k.startswith('bad')]
+g_code_keys = [k for k in globals().keys() if k.startswith('good_code')]
+b_code_keys = [k for k in globals().keys() if k.startswith('bad_code')]
 
 # Return the 
 def nb_failled_test(code_key):
