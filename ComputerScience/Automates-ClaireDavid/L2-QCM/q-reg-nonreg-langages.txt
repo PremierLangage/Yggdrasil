@@ -13,10 +13,10 @@
 + Non régulier
 - Aucune idée
 
-
-
-
-
+* $!L_? = \\{ a^nb^m | n \le m \\}!$
+- Régulier
++ Non régulier
+- Aucune idée
 
 
 
