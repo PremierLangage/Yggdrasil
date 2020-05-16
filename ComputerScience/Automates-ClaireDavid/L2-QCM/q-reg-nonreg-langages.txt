@@ -21,6 +21,8 @@
 
 
 
+
+
 * L = (a*b+bb*a)*
 + Régulier
 - Non régulier
