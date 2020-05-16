@@ -1,4 +1,3 @@
-#donnés en cours
 * $!L_? = \\{ a^nb^n | n \ge 0 \\}!$
 - Régulier
 + Non régulier
@@ -10,12 +9,10 @@
 - Aucune idée
 
 # $!L_? = \\{ w\in\\Sigma^* !$ tels que $! |w|_a = |w|_b|\\}!$ pour $!\\Sigma = \\{a,b\\} !$
-* L_? = \\{ a^nb^n | n \ge 0 \\}!$
 - Régulier
 + Non régulier
 - Aucune idée
 
-#TD6 Exo2
 * $!L_? = \\{ a^nb^nc^n | n \ge 0 \\}!$
 - Régulier
 + Non régulier
@@ -36,7 +33,6 @@
 + Non régulier
 - Aucune idée
 
-#TD6 exo4
 * $!L_? = \\{ a^nb^m | \exists p n+m=2p \\}!$
 + Régulier
 - Non régulier
@@ -46,8 +42,6 @@
 + Régulier
 - Non régulier
 - Aucune idée
-
-
 
 * L = (a*b+bb*a)*
 + Régulier
