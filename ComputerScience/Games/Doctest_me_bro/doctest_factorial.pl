@@ -22,8 +22,8 @@ text==
 Les élèves avait la consigne suivante :   
 
 <div style="color:white; background-color: black;">
-Écrivez une fonction python **factorielle** qui prend en argument un entier 
-naturel **n** et retourne la fatorielle **n!** de ce dernier.
+Écrivez une fonction python <b>factorielle</b> qui prend en argument un entier 
+naturel <b>n</b> et retourne la fatorielle <b>n!</b> de ce dernier.
 </div>
 
 Proposez des doctests python pour detecter la validité et les erreurs 
