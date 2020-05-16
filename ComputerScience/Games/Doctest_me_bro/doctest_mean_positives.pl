@@ -100,7 +100,7 @@ def moyenne_entiere(L):
     ans = 0
     nb_pos = 0
     for elem in L:
-        if elem > 0:
+        if elem >= 0:
             ans += elem
             nb_pos += 1
     if ans == 0:
