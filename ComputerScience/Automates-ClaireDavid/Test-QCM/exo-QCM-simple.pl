@@ -1,6 +1,5 @@
 
-extends = ../templates/AMC_TXT-rd.pl
-
+#extends = ../templates/AMC_TXT-rd.pl
 extends = /model/AMC_TXT.pl
 
 title = QCM Produit d'automates
