@@ -15,7 +15,7 @@ alphabet = "0,1"
 solution = Automaton.parse('(0|1)*0')
 
 #message de l'énoncé décrivant le langage
-message = """ la représentation des entiers en binaire (big endian) qui sont des multiples de 2. """
+message = " la représentation des entiers en binaire (big endian) qui sont des multiples de 2. "
 ==
 
 #* Texte de l'énoncé
