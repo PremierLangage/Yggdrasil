@@ -15,7 +15,7 @@ alphabet = "0,1"
 solution = Automaton.parse('(0|1)*0')
 
 #message de l'énoncé décrivant le langage
-message = """à la représentation des entiers en binaire (big endian) qui sont des multiples de 2. 
+message = """ la représentation des entiers en binaire (big endian) qui sont des multiples de 2. 
             <br>La représentation big endian correspond à mettre le bit de poids fort à gauche.
             <br>Par exemple l'entier $!41 = 2^5+2^3+2^0!$ est représenté par 101001 ou 0101001 ou 00101001 ... <br>
 """
