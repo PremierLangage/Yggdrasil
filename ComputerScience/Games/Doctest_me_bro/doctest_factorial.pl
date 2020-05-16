@@ -21,8 +21,10 @@ extends=doctest_me_bro_template.pl
 text==
 Les élèves avait la consigne suivante :   
 
+<div style="color:white; background-color: black;">
 Écrivez une fonction python **factorielle** qui prend en argument un entier 
 naturel **n** et retourne la fatorielle **n!** de ce dernier.
+</div>
 
 Proposez des doctests python pour detecter la validité et les erreurs 
 potentielles des codes rendus par les élèves.
