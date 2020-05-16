@@ -20,8 +20,6 @@ nbstep = len(list_questions)
 if randomize_questions == 'on':
     list_questions = rd.sample(list_questions, nbstep)
 
-
-
 #if 'nbstep' in globals():
 #    list_questions = rd.sample(list_questions, nbstep)
 #else:
