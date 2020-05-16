@@ -87,13 +87,15 @@ def nb_failled_test(code_key):
 
 g_with_fail = 0
 b_with_no_fail = 0
+feedback = style_add
 
 # Resume good code doctests
 if len(g_code_keys) > 1:
     str_g_c = "Bonnes propositions"
 else:
     str_g_c = "Bonne proposition"
-feedback = "<u><b>"+str_g_c+" :</b></u> On veut du vert!<br />"
+feedback += "<u><b>"+str_g_c+" :</b></u> On veut du vert!<br />"
+
 for k in g_code_keys:
     dt_res = nb_failled_test(k)
     if " 0 failed." not in dt_res:
