@@ -130,7 +130,7 @@ else:
     if b_with_no_fail > 0:
         feedback = '<span class="error-state animated pulse infinite">Il manque des tests car il existe au moins une mauvaise réponse passant tous vos tests.</span><br />' + feedback
     else:
-        feedback = '<span class="success-state animated pulse infinite">Bravo, vos tests discriminent correctement les bons et mauvais codes.<span><br />' + feedback
+        feedback = '<span class="success-state animated pulse infinite">Bravo, vos tests discriminent correctement les bons et mauvais codes.</span><br />' + feedback
 
 '<span class="error-state animated pulse infinite">Bad answer</span>'
 
