@@ -137,6 +137,7 @@ else:
 
 '<span class="error-state animated pulse infinite">Bad answer</span>'
 
-grade = (100, feedback+feedback2)
+# grade = (100, feedback+feedback2) # for debuging
+grade = (100, feedback)
 ==
 
