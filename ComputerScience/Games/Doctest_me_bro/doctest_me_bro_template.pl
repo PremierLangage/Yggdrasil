@@ -39,6 +39,25 @@ form==
 {{ editor|component }}
 ==
 
+style_add==
+<style>
+#cercle_vert {
+    width: 1em;
+    height: 1em;
+    border-radius: 0.5em;
+    background: #CCFFCC;
+    border: 1px solid black;
+}
+#cercle_rouge {
+    width: 1em;
+    height: 1em;
+    border-radius: 0.5em;
+    background: #FFCCCC;
+    border: 1px solid black;
+}
+</style>
+==
+
 evaluator==#|python|
 import subprocess
 
