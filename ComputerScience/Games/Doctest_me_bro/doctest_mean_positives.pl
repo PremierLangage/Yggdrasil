@@ -22,9 +22,9 @@ text==
 Les élèves avaient la consigne suivante :
 
 <div style="color:white; background-color: black; padding: 0.5em; border-radius: 0.5em;">
-Écrire une fonction Python qui prend en argument une liste d'entiers et qui 
-retourne la moyenne des éléments positifs de cette liste. La moyenne retournée devra être
-
+Écrire une fonction Python <b>moyenne_entiere</b> qui prend en argument une liste 
+d'entiers et qui retourne la moyenne des éléments positifs de cette liste. La moyenne 
+retournée devra être un entier qui la troncature entière de la moyenne mathématique.
 </div>
 
 Proposez des doctests Python pour detecter la validité et les erreurs 
@@ -32,90 +32,34 @@ potentielles des codes rendus par les élèves.
 ==
 
 good_code_1==#|python|
-def factorielle(n):
+def moyenne_entiere(L):
     """
     TEST_INCLUSION
     """
-    if n <= 1:
-        return 1
-    ans = 1
-    for i in range(2, n+1):
-        ans *= i
-    return ans
-==
-
-good_code_2==#|python|
-def factorielle(n):
-    """
-    TEST_INCLUSION
-    """
-    if n <= 1:
-        return 1
-    return n*factorielle(n-1)
+    ans = 0
+    nb_pos = 0
+    for elem in L:
+        if elem >= 0:
+            ans += elem
+            nb_pos += 1
+    if ans == 0:
+        return 0
+    return ans // nb_pos
 ==
 
 bad_code_1==#|python|
-def factorielle(n):
+def moyenne_entiere(L):
     """
     TEST_INCLUSION
     """
-    if n <= 1:
-        return n
-    ans = 1
-    for i in range(2, n+1):
-        ans *= i
-    return ans
+    ans = 0
+    nb_elem
+    for elem in L:
+        ans += elem
+        nb_elem += 1
+    if ans == 0:
+        return 0
+    return ans // nb_elem
 ==
 
-bad_code_2==#|python|
-def factorielle(n):
-    """
-    TEST_INCLUSION
-    """
-    L = [1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800, 39916800, 
-    479001600, 6227020800, 87178291200, 1307674368000, 20922789888000, 
-    355687428096000, 6402373705728000, 121645100408832000]
-    return L[n]
-==
-
-bad_code_3==#|python|
-def factorielle(n):
-    """
-    TEST_INCLUSION
-    """
-    if n <= 1:
-        return 1
-    return factorielle(n-1) + factorielle(n-2)
-==
-
-bad_code_4==#|python|
-def factorielle(n):
-    """
-    TEST_INCLUSION
-    """
-    if n <= 1:
-        return 1
-    ans = 1
-    for i in range(2, n):
-        ans *= i
-    return ans
-==
-
-bad_code_5==#|python|
-def factorielle(n):
-    """
-    TEST_INCLUSION
-    """
-    return 1
-==
-
-bad_code_6==#|python|
-def factorielle(n):
-    """
-    TEST_INCLUSION
-    """
-    if n <= 1:
-        return n
-    return n*factorielle(n-1)
-==
 
