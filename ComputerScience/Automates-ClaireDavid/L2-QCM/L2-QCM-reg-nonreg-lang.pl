@@ -1,7 +1,7 @@
 extends = ../templates/AMC_TXT-rd.pl
 
 author = Claire David
-title = QCM - régulier / non régulier
+title = QCM - régulier / non régulier ?
 
 randomize_questions = on
 
