@@ -76,7 +76,7 @@ def moyenne_entiere(L):
     return ans // nb_pos
 ==
 
-good_code_3==#|python|
+bad_code_3==#|python|
 def moyenne_entiere(L):
     """
     TEST_INCLUSION
