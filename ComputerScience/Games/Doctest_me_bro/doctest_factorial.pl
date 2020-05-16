@@ -14,7 +14,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-title=factorielle d'un entier
+title=Doctest challenge : factorielle d'un entier
 
 extends=doctest_me_bro_template.pl
 
