@@ -79,6 +79,9 @@ def nb_failled_test(code_key):
     f.close()
     SP = subprocess.run(['python3', '-m', 'doctest', '-v', 'doc_code.py'], capture_output=True)
     out = SP.stdout.decode()
+    print("-------------")
+    print(out.replace('\n', '<br />'))
+
     lines = out.split('\n')
     while lines[-1] == '':
         lines = lines[:-1]
