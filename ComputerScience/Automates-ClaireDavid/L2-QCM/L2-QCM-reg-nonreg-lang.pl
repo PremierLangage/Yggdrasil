@@ -15,5 +15,6 @@ Les langages suivants sont-il réguliers ou non réguliers?
 ==
 
 questions=@ q-reg-nonreg-langages.txt
+@ q-reg.txt
 
 
