@@ -90,3 +90,11 @@ def factorielle(n):
         ans *= i
     return ans
 ==
+
+bad_code_5==#|python|
+def factorielle(n):
+    """
+    TEST_INCLUSION
+    """
+    return 1
+==
