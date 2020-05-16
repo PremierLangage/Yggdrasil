@@ -52,7 +52,9 @@ def nb_failled_test(code_key):
     """
     f = open("doc_code.py", "w")
     src_code = globals()[code_key]
-    code_text = '    '+(editor.code).replace('\n', '    ')
+    code_text = (editor.code).replace('\n', '\n    ')
+    if code_text[-1] != '\n':
+        code_text += '\n'
     code_tested = src_code.replace("TEST_INCLUSION", code_text)
     f.write(code_tested)
     print(code_tested)
