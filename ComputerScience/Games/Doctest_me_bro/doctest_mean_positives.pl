@@ -24,7 +24,7 @@ Les élèves avaient la consigne suivante :
 <div style="color:white; background-color: black; padding: 0.5em; border-radius: 0.5em;">
 Écrire une fonction Python <b>moyenneEntiere</b> qui prend en argument une liste 
 d'entiers et qui retourne la moyenne des éléments positifs de cette liste. La moyenne 
-retournée devra être un entier qui la troncature entière de la moyenne mathématique.
+retournée devra être un entier qui est la troncature entière de la moyenne mathématique réelle.
 </div>
 
 Proposez des doctests Python pour detecter la validité et les erreurs 
