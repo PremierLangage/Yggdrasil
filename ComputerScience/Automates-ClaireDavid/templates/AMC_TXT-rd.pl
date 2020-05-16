@@ -16,6 +16,7 @@ from AMC import parse_AMC_TXT
 list_questions = parse_AMC_TXT(questions)
 
 if 'nbstep' in globals():
+    nbstep = int(nbstep)
     list_questions = rd.sample(list_questions, nbstep)
 else:
     nbstep = len(list_questions)
