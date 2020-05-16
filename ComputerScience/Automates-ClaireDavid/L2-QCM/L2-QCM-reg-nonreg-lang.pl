@@ -1,7 +1,7 @@
 extends = ../templates/AMC_TXT-rd.pl
 
 author = Claire David
-title = QCM langages reg - non reg
+title = QCM - régulier / non régulier
 
 randomize_questions = on
 
@@ -14,6 +14,6 @@ Ce quiz contient {{ nbstep }} questions.
 Les langages suivants sont-il réguliers ou non réguliers?
 ==
 
-questions=@ q-produit.txt
+questions=@ q-reg-nonreg-langages.txt
 
 
