@@ -12,3 +12,16 @@
 - Régulier
 + Non régulier
 - Aucune idée
+
+
+
+
+
+
+
+
+
+* L = (a*b+bb*a)*
++ Régulier
+- Non régulier
+- Aucune idée
