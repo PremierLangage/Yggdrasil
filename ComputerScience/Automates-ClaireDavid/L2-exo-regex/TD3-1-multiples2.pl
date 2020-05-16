@@ -15,10 +15,7 @@ alphabet = "0,1"
 solution = Automaton.parse('(0|1)*0')
 
 #message de l'énoncé décrivant le langage
-message = """ la représentation des entiers en binaire (big endian) qui sont des multiples de 2. 
-            <br>La représentation big endian correspond à mettre le bit de poids fort à gauche.
-            <br>Par exemple l'entier $!41 = 2^5+2^3+2^0!$ est représenté par 101001 ou 0101001 ou 00101001 ... <br>
-"""
+message = " la représentation des entiers en binaire (big endian) qui sont des multiples de 2. <br>La représentation big endian correspond à mettre le bit de poids fort à gauche.<br>Par exemple l'entier $!41 = 2^5+2^3+2^0!$ est représenté par 101001 ou 0101001 ou 00101001 ... <br>"
 ==
 
 #* Texte de l'énoncé
@@ -27,7 +24,10 @@ message = """ la représentation des entiers en binaire (big endian) qui sont de
 # l'automate minimisé du langage solution
 text ==
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$ .<br/>
-Donnez une expression reconnaissant le langage correspondant à {{ message }} <br>
+Donnez une expression reconnaissant le langage correspondant à {{ message }} 
+
+
+<br>
 {% if attempt < maxattempt and score != 100 %}
 <p class="warning-state">
 Il vous reste {{ maxattempt - attempt }} tentative(s) !
