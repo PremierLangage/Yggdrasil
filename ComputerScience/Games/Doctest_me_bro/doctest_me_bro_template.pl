@@ -39,7 +39,12 @@ form==
 {{ editor|component }}
 ==
 
-evaluator==
+evaluator==#|python|
+
+
+
+
+
 grade = (100, f"student code:\n{editor.code}")
 ==
 
