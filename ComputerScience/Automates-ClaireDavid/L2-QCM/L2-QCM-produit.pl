@@ -4,8 +4,10 @@ extends = /model/AMC_TXT.pl
 author = Claire David
 title = QCM Produit d'automates
 
+before==#|py|
 nbstep = 9
 
+==
 intro ==
 Ce quiz contient {{nbstep}} questions.
 
