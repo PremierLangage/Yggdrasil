@@ -1,7 +1,11 @@
 
 extends = ../templates/AMC_TXT-rd.pl
 
+extends = /model/AMC_TXT.pl
+
 title = QCM Produit d'automates
+
+nbstep = 9
 
 intro ==
 Ce quiz contient {{nbstep}} questions.
