@@ -1,4 +1,4 @@
-* $!\{a^nb^n|n\ge0\}!$
+* $!\{ a^nb^n | n \ge 0 \}!$
 - Régulier
 + Non régulier
 - Aucune idée
