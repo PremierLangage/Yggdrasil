@@ -96,6 +96,7 @@ else:
     str_g_c = "Bonne proposition"
 feedback += "<u><b>"+str_g_c+" :</b></u> On veut du vert!<br />"
 
+feedback2 = ""
 for k in g_code_keys:
     dt_res, out = nb_failled_test(k)
     if " 0 failed." not in dt_res:
@@ -105,6 +106,7 @@ for k in g_code_keys:
         feedback += '<div id="cercle_vert" style="display: inline-block"></div> '
     feedback += '<div style="display: inline">' + dt_res + '</div>'
     feedback += "<br />"
+    feedback2 += '<br />' + out.replace('\n', '<br />') + '<br />'
 
 # Resume bad code doctests
 if len(b_code_keys) > 1:
@@ -122,6 +124,7 @@ for k in b_code_keys:
         feedback += '<div id="cercle_vert" style="display: inline-block"></div> '
     feedback += '<div style="display: inline">' + dt_res + '</div>'
     feedback += "<br />"
+    feedback2 += '<br />' + out.replace('\n', '<br />') + '<br />'
 
 # last feedback recommandation : displayed at the top
 if g_with_fail > 0 :
@@ -134,6 +137,6 @@ else:
 
 '<span class="error-state animated pulse infinite">Bad answer</span>'
 
-grade = (100, feedback)
+grade = (100, feedback+feedback2)
 ==
 
