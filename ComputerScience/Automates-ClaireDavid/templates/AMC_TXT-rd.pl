@@ -4,7 +4,7 @@ extends = /model/multistep.pl
 
 settings.cumulative % false
 
-# set to on in the exercice to have randomized questions
+# set this variable to on in the exercice to have randomized questions
 randomize_questions = off
 
 before == #|python|
