@@ -66,9 +66,9 @@ def nb_failled_test(code_key):
     lasts_lines = lines[-2:]
     return "<br />".join(lasts_lines)
 
-feedback = "Bonnes propositions :<br />"
+feedback = "<u><b>Bonnes propositions :</b></u><br />"
 feedback += "<br />".join([nb_failled_test(k) for k in g_code_keys])
-feedback += "<br /><br />Mauvaises propositions :<br />"
+feedback += "<br /><br /><u><b>Mauvaises propositions :</b></u><br />"
 feedback += "<br />".join([nb_failled_test(k) for k in b_code_keys])
 
 grade = (100, feedback)
