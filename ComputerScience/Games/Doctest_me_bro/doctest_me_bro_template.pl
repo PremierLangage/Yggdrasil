@@ -79,14 +79,11 @@ def nb_failled_test(code_key):
     f.close()
     SP = subprocess.run(['python3', '-m', 'doctest', '-v', 'doc_code.py'], capture_output=True)
     out = SP.stdout.decode()
-    print("-------------")
-    print(out.replace('\n', '<br />'))
-
     lines = out.split('\n')
     while lines[-1] == '':
         lines = lines[:-1]
     lasts_lines = lines[-2:]
-    return "<br />".join(lasts_lines)
+    return ("<br />".join(lasts_lines), out)
 
 g_with_fail = 0
 b_with_no_fail = 0
@@ -100,7 +97,7 @@ else:
 feedback += "<u><b>"+str_g_c+" :</b></u> On veut du vert!<br />"
 
 for k in g_code_keys:
-    dt_res = nb_failled_test(k)
+    dt_res, out = nb_failled_test(k)
     if " 0 failed." not in dt_res:
         g_with_fail += 1
         feedback += '<div id="cercle_rouge" style="display: inline-block"></div> '
@@ -117,7 +114,7 @@ else:
 feedback += "<br /><u><b>"+str_b_c+" :</b></u> On veut du rouge!<br />"
 
 for k in b_code_keys:
-    dt_res = nb_failled_test(k)
+    dt_res, out = nb_failled_test(k)
     if " 0 failed." not in dt_res:
         feedback += '<div id="cercle_rouge" style="display: inline-block"></div> '
     else:
