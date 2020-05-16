@@ -15,12 +15,17 @@
 - Aucune idée
 
 #TD6 Exo2
-* $!L_? = \\{ a^nb^nc^c | n \ge 0 \\}!$
+* $!L_? = \\{ a^nb^nc^n | n \ge 0 \\}!$
 - Régulier
 + Non régulier
 - Aucune idée
 
 * $!L_? = \\{ a^nb^m | n \le m \\}!$
+- Régulier
++ Non régulier
+- Aucune idée
+
+* $!L_? = \\{ a^nb^mc^p | p=min(n,m) \\}!$
 - Régulier
 + Non régulier
 - Aucune idée
