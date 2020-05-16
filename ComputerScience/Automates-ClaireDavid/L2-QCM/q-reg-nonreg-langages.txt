@@ -8,7 +8,7 @@
 + Non régulier
 - Aucune idée
 
-* $!\\{ w\in\\(a+b)^* | |w|_a = ||p!$ est premier $!\\}!$
+* $!\\Sigma = \\{a,b\\}!$ $!L_? = \\{ w\in\\(a+b)^* | |w|_a = ||p!$ est premier $!\\}!$
 - Régulier
 + Non régulier
 - Aucune idée
