@@ -28,7 +28,7 @@ Proposez des doctests python pour detecter la validité et les erreurs
 potentielles des codes rendus par les élèves.
 ==
 
-good_code==#|python|
+good_code_1==#|python|
 def factorielle(n):
     """
     TEST_INCLUSION
@@ -39,6 +39,16 @@ def factorielle(n):
     for i in range(2, n+1):
         ans *= i
     return ans
+==
+
+good_code_2==#|python|
+def factorielle(n):
+    """
+    TEST_INCLUSION
+    """
+    if n <= 1:
+        return 1
+    return n*factorielle(n-1)
 ==
 
 bad_code_1==#|python|
