@@ -2,3 +2,8 @@
 - Régulier
 + Non régulier
 - Aucune idée
+
+* $!\\{ a^p | p!$ est premier $!\\}!$
+- Régulier
++ Non régulier
+- Aucune idée
