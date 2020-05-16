@@ -4,6 +4,8 @@ extends = /model/AMC_TXT.pl
 author = Claire David
 title = QCM Produit d'automates
 
+nbstep = 9
+
 intro ==
 Ce quiz contient {{nbstep}} questions.
 
@@ -13,6 +15,7 @@ Pour les autres, la réponse complète peut être composée de plusieurs éléme
 ==
 
 questions=@ q-produit.txt
+
 
 
 
