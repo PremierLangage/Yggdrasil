@@ -1,5 +1,5 @@
 
-extends = ../templates/AMC_TXT.pl
+extends = ../templates/AMC_TXT-blonde.pl
 
 title = QCM Produit d'automates
 
