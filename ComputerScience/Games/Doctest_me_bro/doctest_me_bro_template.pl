@@ -66,13 +66,20 @@ def nb_failled_test(code_key):
     lasts_lines = lines[-2:]
     return "<br />".join(lasts_lines)
 
+# Resume good code doctests
 if len(g_code_keys) > 1:
     str_g_c = "Bonnes propositions"
 else:
     str_g_c = "Bonne proposition"
-feedback = "<u><b>"+str_g_c+" :</b></u><br />"
+feedback = "<u><b>"+str_g_c+" :</b></u> On veut du vert!<br />"
 feedback += "<br />".join([nb_failled_test(k) for k in g_code_keys])
-feedback += "<br /><br /><u><b>Mauvaises propositions :</b></u><br />"
+
+# Resume bad code doctests
+if len(b_code_keys) > 1:
+    str_b_c = "Mauvaises propositions"
+else:
+    str_b_c = "Mauvaise proposition"
+feedback += "<br /><br /><u><b>"+str_b_c+" :</b></u><br />"
 feedback += "<br />".join([nb_failled_test(k) for k in b_code_keys])
 
 grade = (100, feedback)
