@@ -1,3 +1,4 @@
+#donnés en cours
 * $!L_? = \\{ a^nb^n | n \ge 0 \\}!$
 - Régulier
 + Non régulier
@@ -9,6 +10,12 @@
 - Aucune idée
 
 * $!L_? = \\{ w\in\\Sigma^*!$ tels que $!|w|_a = |w|_b|\\}!$ pour $!\\Sigma = \\{a,b\\}!$
+- Régulier
++ Non régulier
+- Aucune idée
+
+#TD6 Exo2
+* $!L_? = \\{ a^nb^nc^c | n \ge 0 \\}!$
 - Régulier
 + Non régulier
 - Aucune idée
