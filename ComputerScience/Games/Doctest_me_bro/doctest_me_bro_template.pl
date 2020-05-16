@@ -66,7 +66,11 @@ def nb_failled_test(code_key):
     lasts_lines = lines[-2:]
     return "<br />".join(lasts_lines)
 
-feedback = "<u><b>Bonnes propositions :</b></u><br />"
+if len(g_code_keys) > 1:
+    str_g_c = "Bonnes propositions"
+else:
+    str_g_c = "Bonne proposition"
+feedback = "<u><b>"+str_g_c+" :</b></u><br />"
 feedback += "<br />".join([nb_failled_test(k) for k in g_code_keys])
 feedback += "<br /><br /><u><b>Mauvaises propositions :</b></u><br />"
 feedback += "<br />".join([nb_failled_test(k) for k in b_code_keys])
