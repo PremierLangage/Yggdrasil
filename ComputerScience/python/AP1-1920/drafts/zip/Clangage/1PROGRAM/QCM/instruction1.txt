@@ -1,0 +1,19 @@
+Latex:1
+
+*1000  décimal c'est de l'ordre de
++$2^{10}$
+-5
+-2^4
+*une année de 365 jours , c'est combien de millisecondes
++ en gros $%2^{35}%$
+- en gros $%2^{100}%$
+- en gros $%2^{200}%$
+
+*Selectionner les lignes déclarant une variable entière C.
++int i;
++int j;
+-char* "Paul";
+-float compteur;
++int string;
+-float* entier;
+
