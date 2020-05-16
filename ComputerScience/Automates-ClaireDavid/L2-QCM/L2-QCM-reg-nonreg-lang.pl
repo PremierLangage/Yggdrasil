@@ -6,7 +6,7 @@ title = QCM - régulier / non régulier ?
 randomize_questions = on
 
 #pour changer le nombre de questions
-#nbstep = 6
+#nbstep = 10
 
 intro ==
 Ce QCM contient {{ nbstep }} questions.
@@ -14,8 +14,6 @@ Ce QCM contient {{ nbstep }} questions.
 Les langages suivants sont-il réguliers ou non réguliers?
 ==
 
-questions==
-@ q-reg-nonreg-langages.txt
-@ q-reg.txt
-==
+questions=@ q-reg-nonreg-langages.txt
+
 
