@@ -22,7 +22,7 @@ text==
 Les élèves avaient la consigne suivante :
 
 <div style="color:white; background-color: black; padding: 0.5em; border-radius: 0.5em;">
-Écrire une fonction Python <b>moyenne_entiere</b> qui prend en argument une liste 
+Écrire une fonction Python <b>moyenneEntiere</b> qui prend en argument une liste 
 d'entiers et qui retourne la moyenne des éléments positifs de cette liste. La moyenne 
 retournée devra être un entier qui la troncature entière de la moyenne mathématique.
 </div>
@@ -32,7 +32,7 @@ potentielles des codes rendus par les élèves.
 ==
 
 good_code_1==#|python|
-def moyenne_entiere(L):
+def moyenneEntiere(L):
     """
     TEST_INCLUSION
     """
@@ -48,7 +48,7 @@ def moyenne_entiere(L):
 ==
 
 bad_code_1==#|python|
-def moyenne_entiere(L):
+def moyenneEntiere(L):
     """
     TEST_INCLUSION
     """
@@ -63,7 +63,7 @@ def moyenne_entiere(L):
 ==
 
 bad_code_2==#|python|
-def moyenne_entiere(L):
+def moyenneEntiere(L):
     """
     TEST_INCLUSION
     """
@@ -77,7 +77,7 @@ def moyenne_entiere(L):
 ==
 
 bad_code_3==#|python|
-def moyenne_entiere(L):
+def moyenneEntiere(L):
     """
     TEST_INCLUSION
     """
@@ -93,7 +93,7 @@ def moyenne_entiere(L):
 ==
 
 bad_code_4==#|python|
-def moyenne_entiere(L):
+def moyenneEntiere(L):
     """
     TEST_INCLUSION
     """
@@ -109,7 +109,7 @@ def moyenne_entiere(L):
 ==
 
 bad_code_5==#|python|
-def moyenne_entiere(L):
+def moyenneEntiere(L):
     """
     TEST_INCLUSION
     """
