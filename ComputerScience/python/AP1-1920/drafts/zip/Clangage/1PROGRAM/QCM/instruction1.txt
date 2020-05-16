@@ -9,11 +9,12 @@ Latex:1
 - en gros $%2^{100}%$
 - en gros $%2^{200}%$
 
-*Selectionner les lignes déclarant une variable entière C.
+**Selectionner les lignes déclarant une variable entière C.
 +int i;
 +int j;
 -char* "Paul";
 -float compteur;
 +int string;
 -float* entier;
+
 
