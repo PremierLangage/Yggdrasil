@@ -59,6 +59,7 @@ def nb_failled_test(code_key):
 
 feedback = (editor.code + str([nb_failled_test(k) for k in good_code_keys]) + str([nb_failled_test(k) for k in bad_code_keys])).replace('\n', '<br />')
 
+
 grade = (100, feedback)
 ==
 
