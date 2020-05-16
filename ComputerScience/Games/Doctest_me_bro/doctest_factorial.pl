@@ -21,7 +21,7 @@ extends=doctest_me_bro_template.pl
 text==
 Les élèves avait la consigne suivante :   
 
-<div style="color:white; background-color: black; padding: 1em;">
+<div style="color:white; background-color: black; padding: 0.5em;">
 Écrivez une fonction python <b>factorielle</b> qui prend en argument un entier 
 naturel <b>n</b> et retourne la fatorielle <b>n!</b> de ce dernier.
 </div>
