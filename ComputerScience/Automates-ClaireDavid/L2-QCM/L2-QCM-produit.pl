@@ -6,7 +6,7 @@ title = QCM Produit d'automates
 
 randomize_questions = on
 
-nbstep = 6
+#nbstep = 6
 
 intro ==
 Ce quiz contient {{ nbstep }} questions.
