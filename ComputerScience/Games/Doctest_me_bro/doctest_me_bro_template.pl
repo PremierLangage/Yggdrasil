@@ -79,7 +79,7 @@ if len(b_code_keys) > 1:
     str_b_c = "Mauvaises propositions"
 else:
     str_b_c = "Mauvaise proposition"
-feedback += "<br /><br /><u><b>"+str_b_c+" :</b></u><br />"
+feedback += "<br /><br /><u><b>"+str_b_c+" :</b></u> On veut du rouge!<br />"
 feedback += "<br />".join([nb_failled_test(k) for k in b_code_keys])
 
 grade = (100, feedback)
