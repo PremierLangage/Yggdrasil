@@ -57,8 +57,7 @@ def nb_failled_test(code_key):
     out = SP.stdout.decode()
     return out.replace('\n', '<br />')
 
-feedback = editor.code + "<br />".join([nb_failled_test(k) for k in good_code_keys]) +
-           "<br />".join([nb_failled_test(k) for k in bad_code_keys])
+feedback = editor.code + "<br />".join([nb_failled_test(k) for k in good_code_keys]) + "<br />".join([nb_failled_test(k) for k in bad_code_keys])
 
 grade = (100, feedback)
 ==
