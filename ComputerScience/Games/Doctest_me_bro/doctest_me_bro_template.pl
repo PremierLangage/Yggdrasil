@@ -64,7 +64,7 @@ def nb_failled_test(code_key):
     lasts_lines = lines[-2:]
     return "<br />".join(lasts_lines)
 
-feedback = editor.code + "<br />".join([nb_failled_test(k) for k in g_code_keys]) + "<br />".join([nb_failled_test(k) for k in b_code_keys])
+feedback = "<br />".join([nb_failled_test(k) for k in g_code_keys]) + "<br />".join([nb_failled_test(k) for k in b_code_keys])
 
 grade = (100, feedback)
 ==
