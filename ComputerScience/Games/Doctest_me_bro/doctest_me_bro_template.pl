@@ -46,18 +46,17 @@ import subprocess
 g_code_keys = [k for k in globals().keys() if k.startswith('good')]
 b_code_keys = [k for k in globals().keys() if k.startswith('bad')]
 
-# 
+# Return the 
 def nb_failled_test(code_key):
     """
     """
     f = open("doc_code.py", "w")
     src_code = globals()[code_key]
     code_text = (editor.code).replace('\n', '\n    ')
-    if code_text[-1] != '\n':
-        code_text += '\n'
+    if code_text[-1] == '\n':
+        code_text = code_text[:-1]
     code_tested = src_code.replace("TEST_INCLUSION", code_text)
     f.write(code_tested)
-    # print(code_tested)
     f.close()
     SP = subprocess.run(['python3', '-m', 'doctest', '-v', 'doc_code.py'], capture_output=True)
     out = SP.stdout.decode()
