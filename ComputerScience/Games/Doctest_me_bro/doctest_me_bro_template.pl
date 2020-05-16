@@ -100,9 +100,9 @@ for k in g_code_keys:
     dt_res = nb_failled_test(k)
     if " 0 failed." not in dt_res:
         g_with_fail += 1
-        feedback += '<div id="cercle_vert" style="display: inline-block"></div> '
-    else:
         feedback += '<div id="cercle_rouge" style="display: inline-block"></div> '
+    else:
+        feedback += '<div id="cercle_vert" style="display: inline-block"></div> '
     feedback += '<div style="display: inline">' + dt_res + '</div>'
     
     feedback += "<br />"
