@@ -105,7 +105,7 @@ def moyenneEntiere(L):
             nb_pos += 1
     if ans == 0:
         return 0
-    return ans // nb_pos
+    return int(ans) // int(nb_pos)
 ==
 
 bad_code_5==#|python|
