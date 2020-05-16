@@ -44,7 +44,7 @@ evaluator==#|python|
 good_code_keys = [k for k in globals().keys() if k.startswith('good')]
 bad_code_keys = [k for k in globals().keys() if k.startswith('bad')]
 
-feedback = editor.code + good_code_keys + bad_code_keys
+feedback = editor.code + str(good_code_keys) + str(bad_code_keys)
 
 grade = (100, feedback)
 ==
