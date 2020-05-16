@@ -1,12 +1,10 @@
 
 #extends = ../templates/AMC_TXT-rd.pl
-extends = /model/AMC_TXT.pl
+#extends = /model/AMC_TXT.pl
 
 title = QCM Produit d'automates
 
-before == #|py|
-nbstep = 9
-==
+randomize_questions = on
 
 intro ==
 Ce quiz contient {{nbstep}} questions.
