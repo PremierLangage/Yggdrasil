@@ -123,6 +123,17 @@ for k in b_code_keys:
     feedback += '<div style="display: inline">' + dt_res + '</div>'
     feedback += "<br />"
 
+# last feedback recommandation : displayed at the top
+if g_with_fail > 0 :
+    feedback = '<span class="error-state animated pulse infinite">Attention, vos tests sont incohérents car il existe au moins une bonne réponse ne passant pas tous vos tests.</span>' + feedback
+else:
+    if b_with_no_fail > 0:
+        feedback = '<span class="error-state animated pulse infinite">Il manque des tests car il existe au moins une mauvaise réponse passant tous vos tests.</span>' + feedback
+    else:
+        feedback = '<span class="success-state animated pulse infinite">Bravo, vos tests discriminent correctement les bons et mauvais codes.<span>' + feedback
+
+'<span class="error-state animated pulse infinite">Bad answer</span>'
+
 grade = (100, feedback)
 ==
 
