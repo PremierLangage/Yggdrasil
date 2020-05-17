@@ -63,4 +63,14 @@ def triListe(L):
     return L
 ==
 
-
+bad_code_2==#|python|
+def triListe(L):
+    """
+    TEST_INCLUSION
+    """
+    for i in range(min(len(L), 10)):
+        for j in range(len(L)-1-i):
+            if L[j+1] > L[j]:
+                L[j], L[j+1] = L[j+1], L[j]
+    return L
+==
