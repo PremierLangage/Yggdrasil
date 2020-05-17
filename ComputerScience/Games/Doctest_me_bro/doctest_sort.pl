@@ -84,3 +84,23 @@ def triListe(L):
                 L[j], L[j+1] = L[j+1], L[j]
     return L
 ==
+
+bad_code_4==#|python|
+def trirec(L, debut, fin):
+    if fin == debut+1:
+        if L[fin] < L[debut]:
+            L[fin], L[debut] = L[debut], L[fin]
+    else:
+        tiers = (fin - debut + 1) // 3
+        trirec(L, debut, fin-tiers)
+        trirec(L, debut+tiers, fin)
+        trirec(L, debut, fin-tiers)
+
+def triListe(L):
+    """
+    TEST_INCLUSION
+    """
+    if len(L) >= 3:
+        trirec(L, 0, len(L)-1)
+    return L
+==
