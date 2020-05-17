@@ -90,10 +90,12 @@ def lastMaxPositif(L):
     TEST_INCLUSION
     """
     last_max = 0
+    current = L[0]
     for i in range(len(L)):
         if L[i] >= 0:
-            if L[i] >= L[last_max]:
+            if L[i] >= current:
                 last_max = i
+                current = L[i]
     has_pos = False
     for elem in L:
         if elem >= 0:
