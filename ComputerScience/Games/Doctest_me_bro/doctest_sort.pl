@@ -116,3 +116,20 @@ def triListe(L):
     L.sort(reverse=True)
     return L
 ==
+
+bad_code_6==#|python|
+def triListe(L):
+    """
+    TEST_INCLUSION
+    """
+    S = set()
+    M = []
+    for elem in L:
+        S.add(elem)
+    while len(S) > 0:
+        elem = max(S)
+        M.append(elem)
+        S.remove(elem)
+    L = M
+    return M
+==
