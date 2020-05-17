@@ -92,7 +92,7 @@ def trirec(L, debut, fin):
             L[fin], L[debut] = L[debut], L[fin]
     else:
         if fin > debut:
-            tiers = (fin - debut + 1) // 3
+            tiers = ((fin - debut) + 1) // 3
             trirec(L, debut, fin-tiers)
             trirec(L, debut+tiers, fin)
             trirec(L, debut, fin-tiers)
