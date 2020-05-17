@@ -88,7 +88,7 @@ def triListe(L):
 bad_code_4==#|python|
 def trirec(L, debut, fin):
     if fin == debut+1:
-        if L[fin] < L[debut]:
+        if L[fin] > L[debut]:
             L[fin], L[debut] = L[debut], L[fin]
     else:
         if fin > debut:
