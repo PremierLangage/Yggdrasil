@@ -106,7 +106,7 @@ def triListe(L):
     return L
 ==
 
-bad_code_4==#|python|
+bad_code_5==#|python|
 def triListe(L):
     if L[1] > L[0]:
         L[1], L[0] = L[0], L[1]
