@@ -55,4 +55,10 @@ def triListe(L):
     return L
 ==
 
-
+bad_code_2==#|python|
+def triListe(L):
+    """
+    TEST_INCLUSION
+    """
+    return L
+==
