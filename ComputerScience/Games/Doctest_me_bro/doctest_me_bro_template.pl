@@ -77,7 +77,6 @@ def nb_failled_test(code_key):
     # we write the function with its test inside a file
     with open(code_key+'.py', 'w') as f:
         f.write(code_tested)
-    assert(f.closed is True)
     SP = subprocess.run(['python3', '-m', 'doctest', '-v', code_key+'.py'], capture_output=True)
     out = SP.stdout.decode()
     lines = out.split('\n')
@@ -139,10 +138,8 @@ else:
         feedback = '<span class="success-state animated pulse infinite">Bravo, vos tests discriminent correctement les bons et mauvais codes.</span><br /><br />' + feedback
         note_finale = 100
 
-
-
-# grade = (100, feedback+feedback2) # for debuging
-grade = (note_finale, feedback)
+grade = (100, feedback+feedback2) # for debuging
+# grade = (note_finale, feedback)
 ==
 
 
