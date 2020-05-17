@@ -14,7 +14,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-title=Doctest challenge : tri d'une liste
+title=Doctest challenge : indice du dernier max parmi les positifs
 
 extends=doctest_me_bro_template.pl
 
