@@ -5,7 +5,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
-Le programme suivant comporte une erreur. Corrigez cette erreur ! 
+Le programme suivant comporte des erreurs. Corrigez ces erreurs ! 
 Attention, cette fonction étant intégrée dans un programme pour les tests, vous ne 
 pouvez pas changer son propotype.
 
