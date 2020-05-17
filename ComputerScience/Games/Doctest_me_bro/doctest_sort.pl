@@ -105,3 +105,11 @@ def triListe(L):
         trirec(L, 0, len(L)-1)
     return L
 ==
+
+bad_code_4==#|python|
+def triListe(L):
+    if L[1] > L[0]:
+        L[1], L[0] = L[0], L[1]
+    L.sort(reverse=True)
+    return L
+==
