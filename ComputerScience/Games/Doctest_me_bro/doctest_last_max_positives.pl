@@ -91,7 +91,7 @@ def lastMaxPositif(L):
     """
     has_pos = False
     for elem in L:
-        if elem >= 0
+        if elem >= 0:
             has_pos = True
     if not has_pos:
         return -1
