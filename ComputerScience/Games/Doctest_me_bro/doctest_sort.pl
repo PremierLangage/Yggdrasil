@@ -43,6 +43,16 @@ def triListe(L):
     return L
 ==
 
+good_code_2==#|python|
+def triListe(L):
+    """
+    TEST_INCLUSION
+    """
+    L.sort(reverse=True)
+    return L
+==
+
+
 bad_code_1==#|python|
 def triListe(L):
     """
