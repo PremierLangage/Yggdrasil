@@ -37,7 +37,7 @@ def triListe(L):
     TEST_INCLUSION
     """
     for i in range(len(L)):
-        for j in range(i+1, len(L)-1):
+        for j in range(i, len(L)-1):
             if L[j] < L[j+1]:
                 L[j], L[j+1] = L[j+1], L[j]
     return L
