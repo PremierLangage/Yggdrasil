@@ -65,7 +65,7 @@ def lastMaxPositif(L):
     """
     last_max = -1
     for i, elem in enumerate(L):
-        if elem >= 0:
+        if elem > 0:
             if last_max == -1 or elem >= L[last_max]:
                 last_max = i
     return last_max
