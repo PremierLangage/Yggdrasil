@@ -108,6 +108,9 @@ def triListe(L):
 
 bad_code_5==#|python|
 def triListe(L):
+    """
+    TEST_INCLUSION
+    """
     if L[1] > L[0]:
         L[1], L[0] = L[0], L[1]
     L.sort(reverse=True)
