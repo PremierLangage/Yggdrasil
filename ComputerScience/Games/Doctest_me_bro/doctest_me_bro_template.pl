@@ -65,7 +65,7 @@ import subprocess
 g_code_keys = [k for k in globals().keys() if k.startswith('good_code')]
 b_code_keys = [k for k in globals().keys() if k.startswith('bad_code')]
 
-# Return the 
+# Return two string summarizing doctest status...
 def nb_failled_test(code_key):
     """
     """
@@ -75,10 +75,10 @@ def nb_failled_test(code_key):
         code_text = code_text[:-1]
     code_tested = src_code.replace("TEST_INCLUSION", code_text)
     # we write the function with its test inside a file
-    with open('doc_code.py', 'w') as f:
+    with open(code_key+'.py', 'w') as f:
         f.write(code_tested)
     assert(f.closed is True)
-    SP = subprocess.run(['python3', '-m', 'doctest', '-v', 'doc_code.py'], capture_output=True)
+    SP = subprocess.run(['python3', '-m', 'doctest', '-v', code_key+'.py'], capture_output=True)
     out = SP.stdout.decode()
     lines = out.split('\n')
     while lines[-1] == '':
