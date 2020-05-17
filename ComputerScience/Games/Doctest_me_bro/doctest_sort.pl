@@ -91,10 +91,11 @@ def trirec(L, debut, fin):
         if L[fin] < L[debut]:
             L[fin], L[debut] = L[debut], L[fin]
     else:
-        tiers = (fin - debut + 1) // 3
-        trirec(L, debut, fin-tiers)
-        trirec(L, debut+tiers, fin)
-        trirec(L, debut, fin-tiers)
+        if fin > debut:
+            tiers = (fin - debut + 1) // 3
+            trirec(L, debut, fin-tiers)
+            trirec(L, debut+tiers, fin)
+            trirec(L, debut, fin-tiers)
 
 def triListe(L):
     """
