@@ -77,7 +77,7 @@ def nb_failled_test(code_key):
     # we write the function with its test inside a file
     with open('doc_code.py', 'w') as f:
         f.write(code_tested)
-    
+    assert(f.closed is True)
     SP = subprocess.run(['python3', '-m', 'doctest', '-v', 'doc_code.py'], capture_output=True)
     out = SP.stdout.decode()
     lines = out.split('\n')
