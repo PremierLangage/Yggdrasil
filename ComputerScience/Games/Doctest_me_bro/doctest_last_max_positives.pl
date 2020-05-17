@@ -104,3 +104,11 @@ def lastMaxPositif(L):
         return -1
     return last_max
 ==
+
+bad_code_5==#|python|                                                   
+def lastMaxPositif(L):
+    """
+    TEST_INCLUSION
+    """
+    return -1
+==
