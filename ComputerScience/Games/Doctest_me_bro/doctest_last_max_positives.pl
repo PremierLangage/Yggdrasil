@@ -33,18 +33,28 @@ potentielles des codes rendus par les élèves.
 ==
 
 good_code_1==#|python|
-def triListe(L):
+def lastMaxPositif(L):
     """
     TEST_INCLUSION
     """
-    for i in range(len(L)):
-        for j in range(len(L)-1-i):
-            if L[j+1] > L[j]:
-                L[j], L[j+1] = L[j+1], L[j]
-    return L
+    last_max = -1
+    for elem in L:
+        if elem >= 0:
+            if last_max == -1 or elem >= L[last_max]:
+                last_max = i
+    return last_max
 ==
 
-bad_code_1==#|python|
-
+bad_code_1==#|python|                                                   
+def lastMaxPositif(L):
+    """
+    TEST_INCLUSION
+    """
+    last_max = -1
+    for elem in L:
+        if elem >= 0:
+            if last_max == -1 or elem > L[last_max]:
+                last_max = i
+    return last_max
 ==
 
