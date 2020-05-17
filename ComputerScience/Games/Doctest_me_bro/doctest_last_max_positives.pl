@@ -83,3 +83,22 @@ def lastMaxPositif(L):
                 last_max = i
     return last_max
 ==
+
+bad_code_3==#|python|
+def lastMaxPositif(L):
+    """
+    TEST_INCLUSION
+    """
+    has_pos = False
+    for elem in L:
+        if elem >= 0
+            has_pos = True
+    if not has_pos:
+        return -1
+    last_max = 0
+    for i in range(len(L)):
+        if L[i] >= 0:
+            if L[i] >= L[last_max]:
+                last_max = i
+    return last_max
+==
