@@ -1,0 +1,6 @@
+
+* $!L_? = \\{ w\in\\Sigma^\* !$ tels que $!|w|_a = |w|_b \\}!$ pour $! \\Sigma = \\{a,b\\} !$
+- Régulier
++ Non régulier
+- Aucune idée
+
