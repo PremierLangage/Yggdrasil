@@ -4,7 +4,7 @@ extends = ../templates/AMC_TXT-rd.pl
 author = Claire David
 title = QCM Produit d'automates
 
-randomize_questions = off
+randomize_questions = on
 
 #pour changer le nombre de questions
 #nbstep = 6
