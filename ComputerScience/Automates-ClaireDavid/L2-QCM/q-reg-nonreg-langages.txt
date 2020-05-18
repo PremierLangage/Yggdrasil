@@ -83,4 +83,8 @@
 - Non régulier
 - Aucune idée
 
+* $!L_? = \\{ ww !$ tels que $! w\in\\Sigma^*\\}!$ pour $!\\Sigma = \\{a\\} !$
++ Régulier
+- Non régulier
+- Aucune idée
 
