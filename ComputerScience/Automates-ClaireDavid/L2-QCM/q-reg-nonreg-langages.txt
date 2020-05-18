@@ -78,7 +78,7 @@
 - Non régulier
 - Aucune idée
 
-* $!L_? = \\{ w\in\\Sigma^\* !$ tels que $! |w|_a = |w|_b|\\}!$ pour $!\\Sigma = \\{a\\} !$
+* $!L_? = \\{ w\in\\Sigma^\* !$ tels que $! |w|_a = |w|_b|\\}!$ pour $!\\Sigma = \\{ a \\} !$
 + Régulier
 - Non régulier
 - Aucune idée
