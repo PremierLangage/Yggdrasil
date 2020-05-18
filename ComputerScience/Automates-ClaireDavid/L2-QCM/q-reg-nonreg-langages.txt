@@ -23,6 +23,11 @@
 + Non régulier
 - Aucune idée
 
+* $!L_? = \\{ a^nb^m | n \neq m \\}!$
+- Régulier
++ Non régulier
+- Aucune idée
+
 * $!L_? = \\{ a^nb^m | n \le m \\}!$
 - Régulier
 + Non régulier
@@ -48,12 +53,12 @@
 - Non régulier
 - Aucune idée
 
-* $! L = (a*b+bb*a)* !$ 
+* $! L_? = (a*b+bb*a)* !$ 
 + Régulier
 - Non régulier
 - Aucune idée
 
-* $! L = \\{w\in \\Sigma^* !$ tels que $! |w|_a = |w|_b| !$ et w ne contient ni aa ni bb $! \\} !$
+* $! L_? = \\{w\in \\Sigma^* !$ tels que $! |w|_a = |w|_b| !$ et w ne contient ni aa ni bb $! \\} !$
 + Régulier
 - Non régulier
 - Aucune idée
