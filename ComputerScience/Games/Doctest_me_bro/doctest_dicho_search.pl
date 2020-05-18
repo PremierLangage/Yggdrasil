@@ -117,9 +117,9 @@ def rechercheDicho(L, deb, fin, e):
     if len(L) < fin+2:
         Slice = L[deb+1:]
     else:
-        Slice = L[deb+1:fin+2]
+        Slice = L[deb:fin+2]
     if e in Slice:
-        return Slice.index(e)+deb+1
+        return Slice.index(e)+deb
     else:
         return -1
 ==
