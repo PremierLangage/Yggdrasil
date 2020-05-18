@@ -33,7 +33,7 @@ non régression** lors des modifications (nouveaux codes qui cassent des choses
 qui fonctionnaient avant...). 
 
 Dans ce TP, les exercices cachent des codes valides et non valides. Il n'y a 
-rien à coder, il faut juste imaginer des tests qui vont certifier le bon ou mauvais 
+rien à coder, il faut juste imaginer les tests qui vont certifier le bon ou mauvais 
 fonctionnement des fonctions. Par exemple, Pour une fonction qui calcule le carré 
 d'un entier, on pourrait imaginer ça :
 
