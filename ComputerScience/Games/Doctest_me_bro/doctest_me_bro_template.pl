@@ -143,11 +143,13 @@ else:
         feedback = '<span class="success-state animated pulse infinite">Bravo, vos tests discriminent correctement les bons et mauvais codes.</span><br /><br />' + feedback
         note_finale = 100
 
-if look_code or ('megafeed' in response):
+if look_code:
+    note_finale = note_finale // 2
+
+if 'megafeed' in response:
     look_code = True
-    grade = (note_finale/2, feedback+feedback2)
+    grade = (note_finale, feedback+feedback2)
 else:
-# grade = (100, feedback+feedback2) # for debuging
     grade = (note_finale, feedback)
 ==
 
