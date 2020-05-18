@@ -115,7 +115,7 @@ def rechercheDicho(L, deb, fin, e):
     TEST_INCLUSION
     """
     if len(L) < fin+2:
-        Slice = L[deb+1:]
+        Slice = L[deb:]
     else:
         Slice = L[deb:fin+2]
     if e in Slice:
