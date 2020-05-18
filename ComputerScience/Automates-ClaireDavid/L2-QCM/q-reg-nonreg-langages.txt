@@ -53,7 +53,7 @@
 + Non régulier
 - Aucune idée
 
-* $!L_? = \\{ a^nb^m | \exists p\ \ n+m=2p \\}!$
+* $!L_? = \\{ a^nb^m \\text{ tels que } \exists p\ \ n+m=2p \\}!$
 + Régulier
 - Non régulier
 - Aucune idée
