@@ -49,5 +49,12 @@
 - Aucune idée
 
 * $! L = \\{w\in \\Sigma^* !$ tels que $! |w|_a = |w|_b| !$ et w ne contient ni aa ni bb $! \\} !$
++ Régulier
+- Non régulier
+- Aucune idée
 
+* $!L_? = \\{ w\in\\Sigma^* !$ tels que $! |w|_a = |w|_b|\\}!$ pour $!\\Sigma = \\{a\\} !$
+- Régulier
++ Non régulier
+- Aucune idée
 
