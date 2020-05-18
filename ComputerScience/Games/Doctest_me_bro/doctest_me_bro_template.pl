@@ -38,7 +38,7 @@ Vous devez écraser ce texte en héritant du template....
 form==
 {{ editor|component }}
 
-<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<input type="checkbox" id="form_megafeed" name="form_megafeed" value="mega"><label for="vehicle1"> Activer le Méga-feedback (mode triche quand on en peut plus)</label>
 ==
 
 style_add==
