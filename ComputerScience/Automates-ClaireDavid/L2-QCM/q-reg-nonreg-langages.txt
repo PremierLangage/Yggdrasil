@@ -48,7 +48,7 @@
 + Non régulier
 - Aucune idée
 
-* $!L_? = \\{ a^nb^mc^p |m \ge n+p \\}!$
+* $!L_? = \\{ a^nb^mc^p \\text{ tels que } m \ge n+p \\}!$
 - Régulier
 + Non régulier
 - Aucune idée
