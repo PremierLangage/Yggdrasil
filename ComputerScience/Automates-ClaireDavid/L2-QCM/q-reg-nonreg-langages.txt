@@ -1,4 +1,4 @@
-* $!L_? = \\{ a^nb^n | n \ge 0 \\}!$
+* $!L_? = \\{ a^nb^n \\text{ tels que } n \ge 0 \\}!$
 - Régulier
 + Non régulier
 - Aucune idée
