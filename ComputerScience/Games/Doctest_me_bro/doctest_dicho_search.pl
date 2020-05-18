@@ -49,7 +49,7 @@ def rechercheDicho(L, deb, fin, e):
 ==
 
 good_code_2==#|python|
-def rechercheDicho(L, deb, fin, elem):
+def rechercheDicho(liste, debut, fin, elem):
     """
     TEST_INCLUSION
     """
