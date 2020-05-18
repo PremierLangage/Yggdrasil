@@ -61,7 +61,7 @@ def rechercheDicho(liste, debut, fin, elem):
         else:
             return -1
     milieu = (debut + fin) // 2
-    if elem < liste[milieu]:
+    if elem <= liste[milieu]:
         return rechercheDicho(liste, debut, milieu, elem)
     return rechercheDicho(liste, milieu+1, fin, elem)
 ==
