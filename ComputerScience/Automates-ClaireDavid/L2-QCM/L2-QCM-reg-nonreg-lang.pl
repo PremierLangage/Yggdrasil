@@ -14,7 +14,8 @@ Ce QCM contient {{ nbstep }} questions.
 Les langages suivants sont-il réguliers ou non réguliers?
 ==
 
-questions=@ q-reg-nonreg-langages.txt
+questions=@test.txt
+#questions=@ q-reg-nonreg-langages.txt
 
 
 
