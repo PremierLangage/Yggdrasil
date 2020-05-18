@@ -10,7 +10,7 @@ text==
 Écrivez une fonction parcours_profondeur_oriente(graphe), qui renvoie un couple (sommets, parents) dans cet ordre, où:
 <ul>
     <li>sommets est une liste contenant les sommets du graphe dans l'ordre de fin de visite;
-    <li>parents est un dictionnaire ayant pour clés les sommets et pour valeur le parent de chaque sommet dans l'exploration en profondeur effectuée.
+    <li>parents est un dictionnaire ayant pour clés des sommets et pour valeur le parent du sommet correspondant dans l'exploration en profondeur effectuée.
 </ul>
 Attention, votre parcours doit respecter l'ordre lexicographique des sommets et vous devez bien sûr explorer tout le graphe qu'il soit 
 ou non connexe (faiblement ou fortement). Tous les sommets du graphe doivent donc être listés.
@@ -100,6 +100,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
