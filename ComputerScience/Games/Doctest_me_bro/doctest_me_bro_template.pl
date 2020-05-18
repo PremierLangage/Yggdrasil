@@ -26,7 +26,10 @@ editor.code ==
 La réponse attendue
 ==
 
-before==
+before==#|python|
+
+look_code = False
+
 ==
 
 title = Doctest me bro template...
@@ -140,7 +143,8 @@ else:
         feedback = '<span class="success-state animated pulse infinite">Bravo, vos tests discriminent correctement les bons et mauvais codes.</span><br /><br />' + feedback
         note_finale = 100
 
-if megafeed in globals() and megafeed == 'mega':
+if 'megafeed' in globals() and globals()['megafeed'] == 'mega':
+    look_code = True
     grade = (note_finale/2, feedback+feedback2)
 else:
 # grade = (100, feedback+feedback2) # for debuging
