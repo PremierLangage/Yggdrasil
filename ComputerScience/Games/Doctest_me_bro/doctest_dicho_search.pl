@@ -43,11 +43,16 @@ def rechercheDicho(L, deb, fin, e):
     middle = deb + ((fin - deb + 1) // 2) # limite basse
     if L[middle] == e:
         return middle
-    if e > 
-    
+    if e > L[middle]:
+        return rechercheDicho(L, middle+1, fin, e)
+    return rechercheDicho(L, deb, middle-1, e)  
 ==
 
 bad_code_1==#|python|                                                   
-
+def rechercheDicho(L, deb, fin, e):
+    """
+    TEST_INCLUSION
+    """
+    return -1
 ==
 
