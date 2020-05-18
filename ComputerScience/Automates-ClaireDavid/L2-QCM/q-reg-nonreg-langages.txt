@@ -23,22 +23,22 @@
 + Non régulier
 - Aucune idée
 
-* $! L_? = \\{ w\in \\Sigma^\* \\text{ tels que } |w|_a = |w|_b !$ et $! |w|\ge 2846459 \\} !$
+* $! L_? = \\{ w\in \\Sigma^\* \\text{ tels que } |w|_a = |w|_b \\text{ et } |w|\ge 2846459 \\} !$
 - Régulier
 + Non régulier
 - Aucune idée
 
-* $!L_? = \\{ a^nb^nc^n | n \ge 0 \\}!$
+* $!L_? = \\{ a^nb^nc^n \\text{ tels que } n \ge 0 \\}!$
 - Régulier
 + Non régulier
 - Aucune idée
 
-* $!L_? = \\{ a^nb^m | n \neq m \\}!$
+* $!L_? = \\{ a^nb^m \\text{ tels que } n \neq m \\}!$
 - Régulier
 + Non régulier
 - Aucune idée
 
-* $!L_? = \\{ a^nb^m | n \le m \\}!$
+* $!L_? = \\{ a^nb^m \\text{ tels que } n \le m \\}!$
 - Régulier
 + Non régulier
 - Aucune idée
