@@ -63,7 +63,7 @@
 - Non régulier
 - Aucune idée
 
-* $! L_? = (a^*b+bb^*a)^* !$ 
+* $! L_? = (a^\*b+bb^\*a)^\* !$ 
 + Régulier
 - Non régulier
 - Aucune idée
