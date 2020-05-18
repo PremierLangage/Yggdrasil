@@ -93,3 +93,8 @@
 - Non régulier
 - Aucune idée
 
+* $!L_? = \\{ a^nb^m \\text{ tels que } n+m\ge 0 \\}!$
++ Régulier
+- Non régulier
+- Aucune idée
+
