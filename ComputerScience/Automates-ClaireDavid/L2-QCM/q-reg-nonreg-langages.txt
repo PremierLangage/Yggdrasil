@@ -3,7 +3,7 @@
 + Non régulier
 - Aucune idée
 
-* $!L_? = \\{ a^p | p!$ est premier $!\\}!$
+* $!L_? = \\{ a^p \\text{ tels que p est premier} \\}!$
 - Régulier
 + Non régulier
 - Aucune idée
