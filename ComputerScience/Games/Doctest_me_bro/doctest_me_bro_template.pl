@@ -138,8 +138,8 @@ else:
         feedback = '<span class="success-state animated pulse infinite">Bravo, vos tests discriminent correctement les bons et mauvais codes.</span><br /><br />' + feedback
         note_finale = 100
 
-# grade = (100, feedback+feedback2) # for debuging
-grade = (note_finale, feedback)
+grade = (100, feedback+feedback2) # for debuging
+#grade = (note_finale, feedback)
 ==
 
 
