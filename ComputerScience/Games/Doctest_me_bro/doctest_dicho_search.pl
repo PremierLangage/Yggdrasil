@@ -53,8 +53,6 @@ def rechercheDicho(L, deb, fin, elem):
     """
     TEST_INCLUSION
     """
-    if fin is None:
-        fin = len(liste)
     if debut >= fin:
         return None
     milieu = (debut + fin) // 2
