@@ -43,7 +43,7 @@
 + Non régulier
 - Aucune idée
 
-* $!L_? = \\{ a^nb^mc^p | p=min(n,m) \\}!$
+* $!L_? = \\{ a^nb^mc^p \\text{ tels que } p=min(n,m) \\}!$
 - Régulier
 + Non régulier
 - Aucune idée
