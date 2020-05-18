@@ -143,7 +143,7 @@ else:
         feedback = '<span class="success-state animated pulse infinite">Bravo, vos tests discriminent correctement les bons et mauvais codes.</span><br /><br />' + feedback
         note_finale = 100
 
-if look_code or ('megafeed' in response and response['megafeed'] == 'mega'):
+if look_code or ('megafeed' in response):
     look_code = True
     grade = (note_finale/2, feedback+feedback2)
 else:
