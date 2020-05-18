@@ -92,7 +92,7 @@ def rechercheDicho(L, deb, fin, e):
     """
     Slice = L[deb:fin]
     if e in Slice:
-        return Slice.index(e)
+        return Slice.index(e)+deb
     else:
         return -1
 ==
@@ -104,7 +104,7 @@ def rechercheDicho(L, deb, fin, e):
     """
     Slice = L[(deb+1):]
     if e in Slice:
-        return Slice.index(e)
+        return Slice.index(e)+deb+1
     else:
         return -1
 ==
@@ -119,7 +119,7 @@ def rechercheDicho(L, deb, fin, e):
     else:
         Slice = L[deb+1:fin+1]
     if e in Slice:
-        return Slice.index(e)
+        return Slice.index(e)+deb+1
     else:
         return -1
 ==
