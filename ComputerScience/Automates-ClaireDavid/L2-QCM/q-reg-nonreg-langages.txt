@@ -13,12 +13,12 @@
 + Non régulier
 - Aucune idée
 
-* $!L_? = \\{ w\in\\Sigma^\* !$ tels que $! |w|_a = |w|_b \\} !$ pour $! \\Sigma = \\{a,b,c\\} !$
+* $!L_? = \\{ w\in\\Sigma^\* \\text{ tels que } |w|_a = |w|_b \\}!$ pour $! \\Sigma = \\{a,b\\} !$
 - Régulier
 + Non régulier
 - Aucune idée
 
-* $!L_? = \\{ ww !$ tels que $! w\in\\Sigma^\* \\} !$ pour $! \\Sigma = \\{ a,b,c \\} !$
+* $!L_? = \\{ w\in\\Sigma^\* \\text{ tels que } |w|_a = |w|_b \\} !$ pour $! \\Sigma = \\{a,b,c\\} !$
 - Régulier
 + Non régulier
 - Aucune idée
