@@ -13,6 +13,11 @@
 + Non régulier
 - Aucune idée
 
+* $!L_? = \\{ w\in\\Sigma^* !$ tels que $! |w|_a = |w|_b|\\}!$ pour $!\\Sigma = \\{a,b,c\\} !$
+- Régulier
++ Non régulier
+- Aucune idée
+
 * $!L_? = \\{ a^nb^nc^n | n \ge 0 \\}!$
 - Régulier
 + Non régulier
@@ -54,7 +59,7 @@
 - Aucune idée
 
 * $!L_? = \\{ w\in\\Sigma^* !$ tels que $! |w|_a = |w|_b|\\}!$ pour $!\\Sigma = \\{a\\} !$
-- Régulier
-+ Non régulier
++ Régulier
+- Non régulier
 - Aucune idée
 
