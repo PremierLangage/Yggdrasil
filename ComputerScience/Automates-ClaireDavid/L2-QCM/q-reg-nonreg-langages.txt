@@ -68,17 +68,17 @@
 - Non régulier
 - Aucune idée
 
-* $! L_? = \\{w\in \\Sigma^\* !$ tels que $! |w|_a = |w|_b| !$ et w ne contient ni aa ni bb $! \\} !$
+* $! L_? = \\{w\in \\Sigma^\* \\text{ tels que } |w|_a = |w|_b| !$ et w ne contient ni aa ni bb $! \\} !$
 + Régulier
 - Non régulier
 - Aucune idée
 
-* $! L_? = \\{w\in \\Sigma^\* !$ tels que $! |w|_a = |w|_b| !$ et $! |w|\le 2846459 \\} !$
+* $! L_? = \\{w\in \\Sigma^\* \\text{ tels que } |w|_a = |w|_b| !$ et $! |w|\le 2846459 \\} !$
 + Régulier
 - Non régulier
 - Aucune idée
 
-* $!L_? = \\{ w\in\\Sigma^\* !$ tels que $! |w|_a = |w|_b|\\}!$ pour $!\\Sigma = \\{ a \\} !$
+* $!L_? = \\{ w\in\\Sigma^\* \\text{ tels que } |w|_a = |w|_b|\\}!$ pour $!\\Sigma = \\{ a \\} !$
 + Régulier
 - Non régulier
 - Aucune idée
