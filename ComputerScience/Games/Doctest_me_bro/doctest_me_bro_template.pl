@@ -37,6 +37,8 @@ Vous devez écraser ce texte en héritant du template....
 
 form==
 {{ editor|component }}
+
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
 ==
 
 style_add==
@@ -64,21 +66,6 @@ import subprocess
 # extraction od bads and goods codes
 g_code_keys = [k for k in globals().keys() if k.startswith('good_code')]
 b_code_keys = [k for k in globals().keys() if k.startswith('bad_code')]
-
-# To make dialog box with source code
-def make_box_code(code_src):
-    ans = ""
-    ans += '<div id="final-dialog" role="dialog" aria-labelledby="final-dialogTitle" aria-describedby="final-description">'
-    ans += '<span tabindex="0" class="dialog-start"></span>'
-    ans += '<div class="dialogContainer">'
-    ans += '<button aria-label="fermer" title="Fermer">X</button>'
-    ans += '<h1 id="final-dialogTitle">Code source</h1>'
-    ans += '<pre>'+code_src+'</pre>'
-    ans += '<button class="defaultFocus">J’ai vu...</button>'
-    ans += '</div>'
-    ans += '<span tabindex="0" class="dialog-stop"></span>'
-    ans += '</div>'
-    return ans
 
 # Return two string summarizing doctest status...
 def nb_failled_test(code_key):
