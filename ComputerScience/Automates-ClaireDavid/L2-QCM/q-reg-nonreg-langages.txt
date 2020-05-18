@@ -58,7 +58,7 @@
 - Non régulier
 - Aucune idée
 
-* $!L_? = \\{ a^nb^m \\text{ tels que n+m  est premier } \\}!$
+* $!L_? = \\{ a^nb^m !$ tels que n+m  est premier $! \\}!$
 + Régulier
 - Non régulier
 - Aucune idée
