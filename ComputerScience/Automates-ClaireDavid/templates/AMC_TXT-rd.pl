@@ -20,7 +20,7 @@ if 'nbstep' in globals():
 else:
     nbstep = len(list_questions)
     if randomize_questions == 'on':
-        list_questions = rd.sample(list_questions, nbstep)
+        list_questions = rd.sample(list_questions, int(nbstep))
 
 #if 'nbstep' in globals():
 #    list_questions = rd.sample(list_questions, nbstep)
@@ -58,6 +58,7 @@ formstep ==
 evaluatorstep ==
 score = comp[step].eval()
 ==
+
 
 
 
