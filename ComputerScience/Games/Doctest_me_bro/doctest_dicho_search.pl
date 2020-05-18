@@ -108,3 +108,19 @@ def rechercheDicho(L, deb, fin, e):
     else:
         return -1
 ==
+
+bad_code_5==#|python|                                                   
+def rechercheDicho(L, deb, fin, e):
+    """
+    TEST_INCLUSION
+    """
+    if len(L) == fin+1:
+        Slice = L[deb+1:]
+    else:
+        Slice = L[deb+1:fin+1]
+    if e in Slice:
+        return Slice.index(e)
+    else:
+        return -1
+==
+
