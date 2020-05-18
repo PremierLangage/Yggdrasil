@@ -13,7 +13,7 @@
 + Non régulier
 - Aucune idée
 
-* $!L_? = \\{ w\in\\Sigma^* !$ tels que $! |w|_a = |w|_b\\}!$ pour $!\\Sigma = \\{a,b,c\\} !$
+* $!L_? = \\{ w\in\\Sigma^* !$ tels que $! |w|_a = |w|_b \\}!$ pour $!\\Sigma = \\{a,b,c\\} !$
 - Régulier
 + Non régulier
 - Aucune idée
