@@ -9,7 +9,7 @@ randomize_questions = on
 nbstep = 10
 
 intro ==
-Ce QCM contient {{ nbstep }} questions tirées parmi 20.
+Ce QCM contient {{ nbstep }} questions tirées aléatoirement parmi 20.
 
 Les langages suivants sont-il réguliers ou non réguliers?
 ==
