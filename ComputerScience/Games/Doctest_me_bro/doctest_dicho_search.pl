@@ -25,7 +25,7 @@ Les élèves avaient la consigne suivante :
 Écrivez une fonction python <b>rechercheDicho</b> qui prend en argument une liste <b>L</b>  
 puis trois entiers <b>debut</b>, <b>fin</b> et <b>elem</b>. Votre fonction devra rechercher
 récursivement l'entier <b>elem</b> dans la liste triée <b>L</b> entre ses indices <b>debut</b> 
-et <b>fin</b>. Si l'élément est trouvé, vous devrez retourner son indice, sinon Votre 
+et <b>fin</b>. Si l'élément est trouvé, vous devrez retourner son indice, sinon votre 
 fonction devra retourner <b>-1</b>.
 </div>
 
