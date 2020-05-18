@@ -18,6 +18,40 @@ author=Nicolas Borie
 title=Garantir la validité d'un code source
 
 introduction==
+Ce TP porte sur une des compétences les plus avancéés de l'informatique : 
+
+**Garantir la conformité et la qualité d'une solution informatique**
+
+C'est une des compétences que vise un chef de projet informatique (BAC+5 minimum) ayant des 
+développeurs sous ses ordres. Il doit tenter de garantir les productions 
+**avant de livrer son client**. Et c'est très dur de deviner si les choses 
+vont fonctionner ou pas. 
+
+Parmi les outils fondamentaux, il y a les tests. Inclure partout des tests 
+de cohérence peut permettre de **detecter les bogues** et aussi de **garantir la 
+non régression** lors des modifications (nouveaux codes qui cassent des choses 
+qui fonctionnaient avant...). 
+
+Dans ce TP, les exercices cachent des codes valides et non valides. Il n'y a 
+rien à coder, il faut juste imaginer des tests qui vont certifier le bon ou mauvais 
+fonctionnement des fonctions. Par exemple, Pour une fonction qui calcule le carré 
+d'un entier, on pourrait imaginer ça :
+
+>>> carre(0)
+0
+>>> carre(1)
+1
+>>> carre(-12)
+144
+>>> carre(20)
+400
+>>> import random; carre(random.randint(-1000, 1000)) >= 0
+True
+
+Les tests ne sont jamais une garantie totale mais ils constituent déjà un bon indice 
+sur la validité d'un code. L'objectif des exercices qui suivent est de deviner les 
+bons tests, à l'aveugle, qui font ééchouer les mauvaises propositions mais que toutes
+les bonnes propositions réussissent...
 
 ==
 
