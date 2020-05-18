@@ -63,6 +63,11 @@
 - Non régulier
 - Aucune idée
 
+* $! L_? = \\{w\in \\Sigma^* !$ tels que $! |w|_a = |w|_b| !$ et $! |w|\le 2846459 $! \\} !$
++ Régulier
+- Non régulier
+- Aucune idée
+
 * $!L_? = \\{ w\in\\Sigma^* !$ tels que $! |w|_a = |w|_b|\\}!$ pour $!\\Sigma = \\{a\\} !$
 + Régulier
 - Non régulier
