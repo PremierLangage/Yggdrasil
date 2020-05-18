@@ -6,7 +6,7 @@ title = QCM - régulier / non régulier ?
 randomize_questions = on
 
 #pour changer le nombre de questions
-#nbstep = 10
+nbstep = 10
 
 intro ==
 Ce QCM contient {{ nbstep }} questions.
