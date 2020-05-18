@@ -8,22 +8,22 @@
 + Non régulier
 - Aucune idée
 
-* $!L_? = \\{ w\in\\Sigma^\* \\text{ tels que } |w|_a = |w|_b \\}!$ pour $! \\Sigma = \\{a,b\\} !$
+* $!L_? = \\{ w\in\\Sigma^\* \\text{ tels que } |w|\_a = |w|\_b \\}!$ pour $! \\Sigma = \\{a,b\\} !$
 - Régulier
 + Non régulier
 - Aucune idée
 
-* $!L_? = \\{ w\in\\Sigma^\* \\text{ tels que } |w|_a = |w|_b \\}!$ pour $! \\Sigma = \\{a,b\\} !$
+* $!L_? = \\{ w\in\\Sigma^\* \\text{ tels que } |w|\_a = |w|\_b \\}!$ pour $! \\Sigma = \\{a,b\\} !$
 - Régulier
 + Non régulier
 - Aucune idée
 
-* $!L_? = \\{ w\in\\Sigma^\* \\text{ tels que } |w|_a = |w|_b \\} !$ pour $! \\Sigma = \\{a,b,c\\} !$
+* $!L_? = \\{ w\in\\Sigma^\* \\text{ tels que } |w|\_a = |w|\_b \\} !$ pour $! \\Sigma = \\{a,b,c\\} !$
 - Régulier
 + Non régulier
 - Aucune idée
 
-* $! L_? = \\{ w\in \\Sigma^\* \\text{ tels que } |w|_a = |w|_b \\text{ et } |w|\ge 2846459 \\} !$
+* $! L_? = \\{ w\in \\Sigma^\* \\text{ tels que } |w|\_a = |w|\_b \\text{ et } |w|\ge 2846459 \\} !$
 - Régulier
 + Non régulier
 - Aucune idée
