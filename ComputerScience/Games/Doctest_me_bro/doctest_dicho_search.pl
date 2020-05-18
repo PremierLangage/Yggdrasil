@@ -22,10 +22,10 @@ text==
 Les élèves avaient la consigne suivante :   
 
 <div style="color:white; background-color: black; padding: 0.5em; border-radius: 0.5em;">
-Écrivez une fonction python <b>rechercheDicho</b> qui prend en argument une liste <b>L</b>  
+Écrivez une fonction python <b>rechercheDicho</b> qui prend en argument une liste <b>L</b> (de manière croissante)  
 puis trois entiers <b>debut</b>, <b>fin</b> et <b>elem</b>. Votre fonction devra rechercher
 récursivement l'entier <b>elem</b> dans la liste triée <b>L</b> entre ses indices <b>debut</b> 
-et <b>fin</b>. Si l'élément est trouvé, vous devrez retourner son indice, sinon votre 
+et <b>fin</b> inclus. Si l'élément est trouvé, vous devrez retourner son indice, sinon votre 
 fonction devra retourner <b>-1</b>.
 </div>
 
@@ -34,10 +34,16 @@ potentielles des codes rendus par les élèves.
 ==
 
 good_code_1==#|python|
-def lastMaxPositif(L):
+def rechercheDicho(L, deb, fin, e):
     """
     TEST_INCLUSION
     """
+    if fin < deb:
+        return -1;
+    middle = deb + ((fin - deb + 1) // 2) # limite basse
+    if L[middle] == e:
+        return middle
+    if e > 
     
 ==
 
