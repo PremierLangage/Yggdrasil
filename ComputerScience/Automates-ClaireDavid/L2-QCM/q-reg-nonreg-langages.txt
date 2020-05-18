@@ -48,6 +48,6 @@
 - Non régulier
 - Aucune idée
 
-* 
+* $! L = \\\{w\in \\Sigma^* \\\}
 
 
