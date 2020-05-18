@@ -3,7 +3,7 @@ extends = ../templates/AMC_TXT-rd.pl
 author = Claire David
 title = QCM - régulier / non régulier ?
 
-randomize_questions = off
+randomize_questions = on
 
 #pour changer le nombre de questions
 #nbstep = 10
