@@ -3,6 +3,11 @@
 + Non régulier
 - Aucune idée
 
+* $!L_? = \\{ a^nb^n+18 \\text{ tels que } n \ge 0 \\}!$
+- Régulier
++ Non régulier
+- Aucune idée
+
 * $!L_? = \\{ a^p \\text{ tels que p est premier} \\}!$
 - Régulier
 + Non régulier
