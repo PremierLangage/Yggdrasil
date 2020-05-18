@@ -54,7 +54,7 @@ def rechercheDicho(liste, debut, fin, elem):
     TEST_INCLUSION
     """
     if debut > fin:
-        return None
+        return -1
     milieu = (debut + fin) // 2
     if liste[milieu] == elem:
         return milieu
@@ -62,7 +62,6 @@ def rechercheDicho(liste, debut, fin, elem):
         return rechercheDicho(liste, debut, milieu, elem)
     return rechercheDicho(liste, milieu+1, fin, elem)
 ==
-
 
 bad_code_1==#|python|                                                   
 def rechercheDicho(L, deb, fin, e):
@@ -72,5 +71,15 @@ def rechercheDicho(L, deb, fin, e):
     return -1
 ==
 
+bad_code_2==#|python|                                                   
+def rechercheDicho(L, deb, fin, e):
+    """
+    TEST_INCLUSION
+    """
+    if e in L:
+        return L.index(e)
+    else:
+        return -1
+==
 
 
