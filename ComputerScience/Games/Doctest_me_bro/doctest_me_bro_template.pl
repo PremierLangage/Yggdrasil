@@ -38,7 +38,7 @@ Vous devez écraser ce texte en héritant du template....
 form==
 {{ editor|component }}
 
-<input type="checkbox" id="form_megafeed" name="form_megafeed" value="mega"><label for="vehicle1"> Activer le Méga-feedback (mode triche quand on en peut plus)</label>
+<input type="checkbox" id="form_megafeed" name="form_megafeed" value="mega"><label for="vehicle1"> Activer le méga-feedback (mode triche quand on en peut plus)</label>
 ==
 
 style_add==
@@ -140,8 +140,11 @@ else:
         feedback = '<span class="success-state animated pulse infinite">Bravo, vos tests discriminent correctement les bons et mauvais codes.</span><br /><br />' + feedback
         note_finale = 100
 
+if megafeed == 'mega':
+    grade = (note_finale/2, feedback+feedback2)
+else:
 # grade = (100, feedback+feedback2) # for debuging
-grade = (note_finale, feedback)
+    grade = (note_finale, feedback)
 ==
 
 
