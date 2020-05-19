@@ -37,9 +37,8 @@ solution==
 
 int main(void) {
 	int n,u0 ;
-    int temp;
-    scanf("%d",&temp);
-    int nb=0;   
+    int temp=0;
+    scanf("%d",&n);   
 
     if (n>0){
         u0=n;
@@ -50,9 +49,9 @@ int main(void) {
             else{
                 n=3*n+1;
             }
-            nb+=1;
+            temp+=1;
         }
-	printf("pour u0=%d temp de vol %d\n",u0,nb);
+	printf("pour u0=%d temp de vol %d\n",u0,temp);
     
     }
 	return 0;
