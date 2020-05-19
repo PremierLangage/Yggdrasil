@@ -1,6 +1,6 @@
 
 title= Diviseurs d'un entier
-tag=function
+tag=boucle,tests
 
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
@@ -12,7 +12,9 @@ Ecrire un programme qui lit un  entier  strictement positif et affiche,
  **un par ligne**, chacun de ses diviseurs en ordre croissant.
 Le programme affiche ensuite le nombre de diviseurs.
 
-Si l'entier est négatif ou nul, on ne fait rien !
+Si l'entier est négatif, on ne fait rien !
+
+0 a une infinité de diviseurs.
 
 **Exemple :**
 
