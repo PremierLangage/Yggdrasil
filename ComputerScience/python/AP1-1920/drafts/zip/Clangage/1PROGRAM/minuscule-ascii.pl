@@ -1,9 +1,9 @@
 
 # Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
-author=Nicolas Borie
+#author=Nicolas Borie
 title=Caractères minuscules ASCII
-tag=type
+tag=type,boucle
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
@@ -41,6 +41,7 @@ int main(){
 tests==
 [["Simple exéécution", "", ""]]
 ==
+
 
 
 
