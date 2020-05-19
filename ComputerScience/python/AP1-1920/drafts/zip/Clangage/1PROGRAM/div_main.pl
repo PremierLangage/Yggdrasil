@@ -57,13 +57,14 @@ int main(void) {
 
     if (n==0)
         printf("0 a une infinité de diviseurs\n");
-    else 
+    else {
         for(d=1;d<=n;d+=1)
             if (n%d==0){
                 nb+=1;
                 printf("%d\n",d);
-
-	printf("%d a %d diviseurs\n",n,nb);
+                }
+	    printf("%d a %d diviseurs\n",n,nb);
+        }
 	return 0;
 }
 ==
