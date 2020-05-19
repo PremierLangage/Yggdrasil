@@ -24,6 +24,8 @@ editor2.code ==
 # Saisissez votre code ici, et cliquez sur le bouton
 # de validation quand vous avez terminé
 
+# séparer vos fonctions par une ligne de commentaires 
+
 ==
 
 
@@ -41,6 +43,7 @@ evaluator==
 
 grade=(100," cool")
 ==
+
 
 
 
