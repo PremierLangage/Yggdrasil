@@ -36,7 +36,7 @@ solution==
 
 
 int main(void) {
-	int n ;
+	int n,u0 ;
     int temp;
     scanf("%d",&temp);
     int nb=0;   
