@@ -45,14 +45,14 @@ int main(void) {
         u0=n;
         while (n!=1){
             if (n%2==0){
-                n=n/2
+                n=n/2;
                 }
             else{
                 n=3*n+1;
             }
             nb+=1;
         }
-	printf("pour u0=%d temp de vol %d\n",n,nb);
+	printf("pour u0=%d temp de vol %d\n",u0,nb);
     
     }
 	return 0;
