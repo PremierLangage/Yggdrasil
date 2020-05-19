@@ -52,18 +52,18 @@ solution==
 int main(void) {
 	int n ;
     int d;
-    scanf("%d",&n)
+    scanf("%d",&n);
     int nb=2;   
 
     if (n==0)
         printf("0 a une infinité de diviseurs\n");
     else 
-        for(d=2;d<n;d+=1)
-            if (n%d==0)
+        for(d=1;d<=n;d+=1)
+            if (n%d==0){
                 nb+=1;
+                printf("%d\n",d);
 
-
-		printf("%d a %d diviseurs\n",n,nb);
+	printf("%d a %d diviseurs\n",n,nb);
 	return 0;
 }
 ==
