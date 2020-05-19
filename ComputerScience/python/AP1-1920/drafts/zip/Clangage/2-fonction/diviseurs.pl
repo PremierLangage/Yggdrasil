@@ -68,9 +68,7 @@ int main(int argc, char const *argv[]) {
 	int n = atoi(argv[1]);
 int nb=0;   
 	nb=divise(n);
-    if (n==0)
-        printf("0 a une infinité de diviseurs\n");
-    else
+  if (n>0)
 		printf("%d a %d diviseurs\n",n,nb);
 	return 0;
 }
