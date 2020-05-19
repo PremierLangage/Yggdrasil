@@ -23,7 +23,9 @@ image = mpld3.fig_to_html(plt.gcf())
 ==
 
 text ==
+<div class="img-container">
 {{ image|safe }}
+</div>
 ==
 
 form ==
