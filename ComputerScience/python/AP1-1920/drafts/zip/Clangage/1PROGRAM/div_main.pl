@@ -53,7 +53,7 @@ int main(void) {
 	int n ;
     int d;
     scanf("%d",&n);
-    int nb=2;   
+    int nb=0;   
 
     if (n==0)
         printf("0 a une infinité de diviseurs\n");
