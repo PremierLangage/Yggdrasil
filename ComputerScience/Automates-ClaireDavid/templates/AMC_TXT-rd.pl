@@ -16,7 +16,7 @@ from AMC import parse_AMC_TXT
 list_questions = parse_AMC_TXT(questions)
 
 if 'nbstep' in globals():
-    nbstep = int(nbstep)
+    nbstep = min(int(nbstep),len(list_questions))
     list_questions = rd.sample(list_questions, nbstep)
 else:
     nbstep = len(list_questions)
@@ -59,6 +59,7 @@ formstep ==
 evaluatorstep ==
 score = comp[step].eval()
 ==
+
 
 
 
