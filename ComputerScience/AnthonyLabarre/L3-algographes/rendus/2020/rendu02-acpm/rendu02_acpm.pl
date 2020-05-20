@@ -58,9 +58,30 @@ pltest0==
 [-2, -1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 6, 6, 7, 8, 8, 9]
 ==
 
-# Vérification de la classe Tas sur des entiers
-testname1 = Vérification de la classe Tas sur des entiers
+
+# Vérifications basiques de la classe Graphe
+testname1 = Vérification de l'ajout d'arêtes existantes avec maj du poids
 pltest1== 
+>>> G = Graphe()  # Existence d'une class Graphe
+>>> G.ajouter_aretes([(0, 2, -2), (1, 0, 4), (1, 2, 3), (2, 3, 2), (3, 1, -1)])  # Ajout d'arêtes pondérées
+>>> sorted(G.sommets()) # Vérification de l'ensemble des sommets
+[0, 1, 2, 3]
+>>> sorted(sorted(_) + [poids] for *_, poids in G.aretes()) # Vérification de l'ensemble des arêtes
+[[0, 1, 4], [0, 2, -2], [1, 2, 3], [1, 3, -1], [2, 3, 2]]
+>>> sorted(G.poids_arete(u, v) for u, v, *_ in G.aretes()) # Vérification de l'ensemble des poids
+[-2, -1, 2, 3, 4]
+>>> G.ajouter_aretes([(0, 2, -4), (0, 1, 20)])  # Ajout d'arêtes pondérées existantes
+>>> sorted(G.sommets()) # Vérification de l'ensemble des sommets
+[0, 1, 2, 3]
+>>> sorted(sorted(_) + [poids] for *_, poids in G.aretes()) # Vérification de l'ensemble des arêtes
+[[0, 1, 20], [0, 2, -4], [1, 2, 3], [1, 3, -1], [2, 3, 2]]
+>>> sorted(G.poids_arete(u, v) for u, v, *_ in G.aretes()) # Vérification de l'ensemble des poids
+[-4, -1, 2, 3, 20]
+==
+
+# Vérification de la classe Tas sur des entiers
+testname2 = Vérification de la classe Tas sur des entiers
+pltest2== 
 >>> # création d'un tas d'entiers aléatoires
 >>> from random import randint; donnees = [randint(-100, 100) for _ in range(10)] #
 >>> try:
@@ -77,8 +98,8 @@ pltest1==
 
 # Vérification de la classe Tas sur des triplets (premier élément = critère pour le minimum)
 
-testname2 = Vérification de la classe Tas sur des triplets (premier élément = critère pour le minimum)
-pltest2==
+testname3 = Vérification de la classe Tas sur des triplets (premier élément = critère pour le minimum)
+pltest3==
 >>> from random import randint; donnees = [(randint(-100, 100), randint(-100, 100), randint(-100, 100)) for _ in range(10)] #
 >>> try:
 ...     T = Tas()  # initialisation sans paramètre
@@ -93,8 +114,8 @@ pltest2==
 ==
 
 # Vérifications basiques de la classe UnionFind
-testname3 = Vérifications basiques de la classe UnionFind
-pltest3==
+testname4 = Vérifications basiques de la classe UnionFind
+pltest4==
 >>> # initialisation d'un ensemble de singletons
 >>> import itertools, random, unionfind; n = 50; ma_structure = unionfind.UnionFind(range(n)); sa_structure = UnionFind(range(n))
 >>> # fusions aléatoires
@@ -113,8 +134,8 @@ pltest3==
 
 
 # Vérifications de acpm_prim sur un graphe connexe
-testname4 = Vérifications de acpm_prim sur l'exemple du cours
-pltest4==
+testname5 = Vérifications de acpm_prim sur l'exemple du cours
+pltest5==
 >>> from corrlib_graphes import *; from random import choice #
 >>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS) # initialisation de l'instance du cours
 >>> arbre = acpm_prim(G, choice(list(G.sommets()))) # lancement de acpm_prim avec départ aléatoire
@@ -128,8 +149,8 @@ pltest4==
 ...             print("certaines extrémités d'arêtes ne sont pas des sommets") #
 ==
 
-testname5 = Vérifications de acpm_prim sur l'exemple du TD
-pltest5==
+testname6 = Vérifications de acpm_prim sur l'exemple du TD
+pltest6==
 >>> from corrlib_graphes import *; from random import choice #
 >>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_TD) # initialisation de l'exemple du TD
 >>> arbre = acpm_prim(G, choice(list(G.sommets()))) # lancement de acpm_prim avec départ aléatoire
@@ -143,8 +164,8 @@ pltest5==
 ...             print("certaines extrémités d'arêtes ne sont pas des sommets") #
 ==
 
-testname6 = Vérifications de acpm_prim sur une instance aléatoire
-pltest6==
+testname7 = Vérifications de acpm_prim sur une instance aléatoire
+pltest7==
 >>> from corrlib_graphes import *; from random import choice #
 >>> G = Graphe(); G.ajouter_aretes(aretes_ponderees(graphe_connexe_aleatoire_pondere(10))) # initialisation d'une instance aléatoire
 >>> arbre = acpm_prim(G, choice(list(G.sommets()))) # lancement de acpm_prim avec départ aléatoire
@@ -161,8 +182,8 @@ pltest6==
 ==
 
 # Vérifications de acpm_kruskal sur un graphe connexe
-testname7 = Vérifications de acpm_kruskal sur l'exemple du cours
-pltest7==
+testname8 = Vérifications de acpm_kruskal sur l'exemple du cours
+pltest8==
 >>> from corrlib_graphes import * #
 >>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS) # initialisation de l'instance du cours
 >>> arbre = acpm_kruskal(G)
@@ -176,8 +197,8 @@ pltest7==
 ...             print("certaines extrémités d'arêtes ne sont pas des sommets") #
 ==
 
-testname8 = Vérifications de acpm_kruskal sur l'exemple du TD
-pltest8==
+testname9 = Vérifications de acpm_kruskal sur l'exemple du TD
+pltest9==
 >>> from corrlib_graphes import * #
 >>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_TD) # initialisation de l'exemple du TD
 >>> arbre = acpm_kruskal(G)
@@ -191,8 +212,8 @@ pltest8==
 ...             print("certaines extrémités d'arêtes ne sont pas des sommets") #
 ==
 
-testname9 = Vérifications de acpm_kruskal sur une instance aléatoire
-pltest9==
+testname10 = Vérifications de acpm_kruskal sur une instance aléatoire
+pltest10==
 >>> from corrlib_graphes import * #
 >>> G = Graphe(); G.ajouter_aretes(aretes_ponderees(graphe_connexe_aleatoire_pondere(10))) # initialisation d'une instance aléatoire
 >>> poids_solution_optimale = poids_fcpm(G.aretes())
@@ -209,8 +230,8 @@ pltest9==
 
 
 # Vérifications de acpm_kruskal sur un graphe non connexe
-testname10 = Vérifications de acpm_kruskal sur un graphe non connexe
-pltest10==
+testname11 = Vérifications de acpm_kruskal sur un graphe non connexe
+pltest11==
 >>> from corrlib_graphes import * #
 >>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS); G.ajouter_aretes(PRIM_INSTANCE_TD); G.ajouter_aretes(aretes_ponderees(graphe_connexe_aleatoire_pondere(10)))  # initialisation du graphe
 >>> poids_solution_optimale = poids_fcpm(G.aretes())
@@ -222,8 +243,8 @@ pltest10==
 ==
 
 # Vérifications de fcpm_prim sur un graphe non connexe
-testname11 = Vérifications de fcpm_prim sur un graphe non connexe (union du cours et du td)
-pltest11==
+testname12 = Vérifications de fcpm_prim sur un graphe non connexe (union du cours et du td)
+pltest12==
 >>> from corrlib_graphes import * #
 >>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS); G.ajouter_aretes(PRIM_INSTANCE_TD) # initialisation
 >>> foret = fcpm_prim(G)
@@ -234,8 +255,8 @@ pltest11==
 ==
 
 # Vérifications de fcpm_prim sur un graphe non connexe
-testname12 = Vérifications de fcpm_prim sur un graphe non connexe  (union du cours, du td et d'un graphe aléatoire)
-pltest12==
+testname13 = Vérifications de fcpm_prim sur un graphe non connexe  (union du cours, du td et d'un graphe aléatoire)
+pltest13==
 >>> from corrlib_graphes import * #
 >>> G = Graphe(); G.ajouter_aretes(PRIM_INSTANCE_COURS); G.ajouter_aretes(PRIM_INSTANCE_TD); G.ajouter_aretes(aretes_ponderees(graphe_connexe_aleatoire_pondere(10)))  # initialisation du graphe
 >>> poids_solution_optimale = poids_fcpm(G.aretes())
@@ -261,6 +282,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
