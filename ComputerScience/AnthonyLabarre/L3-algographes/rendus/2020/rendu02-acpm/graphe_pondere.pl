@@ -48,7 +48,7 @@ pltest0==
 [[0, 1, 4], [0, 2, -2], [1, 2, 3], [1, 3, -1], [2, 3, 2]]
 >>> sorted(G.poids_arete(u, v) for u, v, *_ in G.aretes()) # Vérification de l'ensemble des poids
 [-2, -1, 2, 3, 4]
->>> G.ajouter_aretes([(0, 2, -4), (1, 0, 20)])  # Ajout d'arêtes pondérées
+>>> G.ajouter_aretes([(0, 2, -4), (0, 1, 20)])  # Ajout d'arêtes pondérées
 >>> sorted(G.sommets()) # Vérification de l'ensemble des sommets
 [0, 1, 2, 3]
 >>> sorted(sorted(_) + [poids] for *_, poids in G.aretes()) # Vérification de l'ensemble des arêtes
