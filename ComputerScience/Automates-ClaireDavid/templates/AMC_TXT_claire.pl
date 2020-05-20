@@ -1,6 +1,6 @@
 extends = /model/AMC_TXT.pl
 
-# set this variable to on in the exercice to have randomized questions
+# set this variable to on in the exercice to shuffle questions
 randomize_questions = off
 
 before == #|python|
