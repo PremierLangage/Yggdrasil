@@ -1,5 +1,5 @@
 
-extends = ../templates/AMC_TXT-rd.pl
+extends = ../templates/AMC_TXT_claire.pl
 
 author = Claire David
 title = QCM Produit d'automates
@@ -18,6 +18,7 @@ Pour les autres, la réponse complète peut être composée de plusieurs éléme
 ==
 
 questions=@ q-produit.txt
+
 
 
 
