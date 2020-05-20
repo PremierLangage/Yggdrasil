@@ -1,6 +1,5 @@
 extends = /model/AMC_TXT.pl
 
-
 # set this variable to on in the exercice to have randomized questions
 randomize_questions = off
 
