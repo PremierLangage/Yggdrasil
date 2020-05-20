@@ -16,7 +16,7 @@ if randomize_questions == 'on':
 
 if 'nbstep' in globals():
     nbstep = min(int(nbstep),len(list_questions))
-    list_questions = list_questions[:int(nbstep)]
+    list_questions = list_questions[:nbstep]
 else:
     nbstep = len(list_questions)
 
