@@ -7,7 +7,8 @@ builder= /builder/before.py
 author = Anthony Labarre
 title = Détection de cycle (graphe orienté).
 text==
-Écrivez une fonction detection_cycle(graphe), renvoyant explicitement un cycle du graphe orienté passé en paramètre s'il en contient un et None sinon. Le type du cycle renvoyé doit être le même que celui du graphe en entrée.
+Écrivez une fonction detection_cycle(graphe), renvoyant explicitement un cycle du graphe orienté passé en
+ paramètre s'il en contient un et None sinon. Le type du cycle renvoyé doit être le même que celui du graphe en entrée.
 ==
 
 # Les tests:
@@ -74,6 +75,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
