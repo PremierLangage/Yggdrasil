@@ -38,8 +38,8 @@ pltest0==
 ==
 
 # Vérifications basiques de la classe Graphe
-testname0 = Vérification de l'ajout d'arêtes existantes avec maj du poids
-pltest0== 
+testname1 = Vérification de l'ajout d'arêtes existantes avec maj du poids
+pltest1== 
 >>> G = Graphe()  # Existence d'une class Graphe
 >>> G.ajouter_aretes([(0, 2, -2), (1, 0, 4), (1, 2, 3), (2, 3, 2), (3, 1, -1)])  # Ajout d'arêtes pondérées
 >>> sorted(G.sommets()) # Vérification de l'ensemble des sommets
