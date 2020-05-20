@@ -1,6 +1,5 @@
 extends = /model/AMC_TXT.pl
 
-
 before == #|python|
 import random as rd
 from customradio import CustomRadio
@@ -17,10 +16,6 @@ else:
     if randomize_questions == 'on':
         list_questions = rd.sample(list_questions, nbstep)
 
-#if 'nbstep' in globals():
-#    list_questions = rd.sample(list_questions, nbstep)
-#else:
-#    nbstep = len(list_questions)
 
 comp = []
 statement  = []
