@@ -77,8 +77,8 @@ tests==
 [ ["Basique", "", "10 0 -1"],
   ["Vide", "", "-1"],
   ["Grand", "", "100 1 2 3 4 5 6 7 8 9 10 -2"],
-  ["Aléatoire", "", str(random.randint(1, 20))],
-  ["Aléatoire", "", str(random.randint(20, 40))] ]
+  ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,10))])+" -1"]
+  ]
 ==
 
 
