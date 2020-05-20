@@ -1,5 +1,9 @@
 extends = /model/AMC_TXT.pl
 
+
+# set this variable to on in the exercice to have randomized questions
+randomize_questions = off
+
 before == #|python|
 import random as rd
 from customradio import CustomRadio
@@ -15,7 +19,6 @@ else:
     nbstep = len(list_questions)
     if randomize_questions == 'on':
         list_questions = rd.sample(list_questions, nbstep)
-
 
 comp = []
 statement  = []
