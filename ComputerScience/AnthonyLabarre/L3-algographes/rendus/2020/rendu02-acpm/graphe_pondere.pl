@@ -54,7 +54,7 @@ pltest0==
 >>> sorted(sorted(_) + [poids] for *_, poids in G.aretes()) # Vérification de l'ensemble des arêtes
 [[0, 1, 20], [0, 2, -4], [1, 2, 3], [1, 3, -1], [2, 3, 2]]
 >>> sorted(G.poids_arete(u, v) for u, v, *_ in G.aretes()) # Vérification de l'ensemble des poids
-[-2, -1, 2, 3, 4]
+[-4, -1, 2, 3, 20]
 ==
 
 
