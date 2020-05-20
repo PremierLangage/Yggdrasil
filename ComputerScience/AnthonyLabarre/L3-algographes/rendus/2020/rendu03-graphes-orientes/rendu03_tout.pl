@@ -91,8 +91,8 @@ False
 [(4, 11), (4, 12), (6, 7), (11, 12), (13, 12)]
 ==
 
-testname0 = Vérifications de parcours_profondeur_oriente sur l'exemple du TD 5 exercice 1
-pltest0==
+testname1 = Vérifications de parcours_profondeur_oriente sur l'exemple du TD 5 exercice 1
+pltest1==
 >>> from corrlib_graphes import * #
 >>> G = GrapheOriente(); G.ajouter_arcs(CYCLE_ORIENTE_INSTANCE_TD) # initialisation de l'instance du TD
 >>> sommets, parents = parcours_profondeur_oriente(G) # Appel de la fonction parcours_profondeur_oriente
@@ -113,8 +113,8 @@ True
 ...     print("ordre obtenu: ", sommets) 
 ==
 
-testname1 = Vérifications de parcours_profondeur_oriente sur l'exemple du TD 5 exercice 3
-pltest1==
+testname2 = Vérifications de parcours_profondeur_oriente sur l'exemple du TD 5 exercice 3
+pltest2==
 >>> from corrlib_graphes import * #
 >>> G = GrapheOriente(); G.ajouter_arcs(CFC_INSTANCE_TD) # initialisation de l'instance du TD
 >>> sommets, parents = parcours_profondeur_oriente(G)# Appel de la fonction parcours_profondeur_oriente
