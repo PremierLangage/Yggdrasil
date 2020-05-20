@@ -15,7 +15,10 @@ if randomize_questions == 'on':
     rd.shuffle(list_questions)
 
 if 'nbstep' in globals():
+    nbstep = min(int(nbstep),len(list_questions))
     list_questions = list_questions[:int(nbstep)]
+else:
+    nbstep = len(list_questions)
 
 
 comp = []
@@ -32,4 +35,5 @@ for i, q in enumerate(list_questions):
     if 'ordered' not in q['options']:
         comp[i].shuffle()
 ==
+
 
