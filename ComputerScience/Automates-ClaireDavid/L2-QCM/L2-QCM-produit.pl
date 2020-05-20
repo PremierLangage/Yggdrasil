@@ -6,9 +6,6 @@ title = QCM Produit d'automates
 
 randomize_questions = on
 
-#pour changer le nombre de questions
-#nbstep = 6
-
 intro ==
 Ce QCM contient {{ nbstep }} questions.
 
@@ -18,6 +15,7 @@ Pour les autres, la réponse complète peut être composée de plusieurs éléme
 ==
 
 questions=@ q-produit.txt
+
 
 
 
