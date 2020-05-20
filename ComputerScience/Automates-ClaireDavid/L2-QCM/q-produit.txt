@@ -59,8 +59,8 @@
 
 
 * Le produit de deux automates a toujours 1 seul état initial
--faux
-+ vrai
++faux
+- vrai
 - Je ne sais pas répondre à cette question.
 
 * Le produit de deux automates déterministes a toujours 1 seul état initial
@@ -76,6 +76,7 @@
 + au plus $!n1.n2!$ états accessibles
 - au moins $!n1.n2!$ états accessibles
 - Je ne sais pas répondre à la question
+
 
 
 
