@@ -135,8 +135,8 @@ True
 ...     print("ordre obtenu: ", sommets) 
 ==
 
-testname2 = Vérifications de parcours_profondeur_oriente sur un graphe orienté aléatoire
-pltest2==
+testname3 = Vérifications de parcours_profondeur_oriente sur un graphe orienté aléatoire
+pltest3==
 >>> from corrlib_graphes import * #
 >>> G = GrapheOriente(); G.ajouter_arcs(graphe_oriente_aleatoire(10).edges()) # initialisation d'un graphe orienté aléatoire
 >>> sommets, parents = parcours_profondeur_oriente(G)# Appel de la fonction parcours_profondeur_oriente
@@ -157,8 +157,8 @@ True
 ...     print("ordre obtenu: ", sommets) 
 ==
 
-testname0 = Vérifications de composantes_fortement_connexes sur l'exemple du cours
-pltest0==
+testname4 = Vérifications de composantes_fortement_connexes sur l'exemple du cours
+pltest4==
 >>> from corrlib_graphes import CFC_INSTANCE_COURS #
 >>> G = GrapheOriente(); G.ajouter_arcs(CFC_INSTANCE_COURS) # initialisation de l'instance du cours
 >>> cfc = composantes_fortement_connexes(G) # Calcul des cfc
