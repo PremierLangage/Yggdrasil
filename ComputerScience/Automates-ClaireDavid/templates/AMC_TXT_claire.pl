@@ -11,13 +11,12 @@ from AMC import parse_AMC_TXT
 
 list_questions = parse_AMC_TXT(questions)
 
+if randomize_questions == 'on':
+    rd.shuffle(list_questions)
+
 if 'nbstep' in globals():
-    nbstep = min(int(nbstep),len(list_questions))
-    list_questions = rd.sample(list_questions, nbstep)
-else:
-    nbstep = len(list_questions)
-    if randomize_questions == 'on':
-        list_questions = rd.sample(list_questions, nbstep)
+    list_questions = list_questions[:int(nbstep)]
+
 
 comp = []
 statement  = []
@@ -33,3 +32,4 @@ for i, q in enumerate(list_questions):
     if 'ordered' not in q['options']:
         comp[i].shuffle()
 ==
+
