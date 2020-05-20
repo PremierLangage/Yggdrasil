@@ -1,4 +1,4 @@
-extends = ../templates/AMC_TXT-rd.pl
+extends = ../templates/AMC_TXT_claire.pl
 
 author = Claire David
 title = QCM - régulier / non régulier ?
@@ -16,6 +16,7 @@ Les langages suivants sont-il réguliers ou non réguliers?
 
 #questions=@test.txt
 questions=@ q-reg-nonreg-langages.txt
+
 
 
 
