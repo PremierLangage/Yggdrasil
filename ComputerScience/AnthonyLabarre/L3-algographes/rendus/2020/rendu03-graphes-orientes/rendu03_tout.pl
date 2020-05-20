@@ -214,8 +214,8 @@ pltest8==
 [[0, 1, 4], [2, 3], [5, 6], [7]]
 ==
 
-testname8 = Vérifications de composantes_fortement_connexes sur l'exemple du TD
-pltest8==
+testname9 = Vérifications de composantes_fortement_connexes sur l'exemple du TD
+pltest9==
 >>> from corrlib_graphes import CFC_INSTANCE_TD #
 >>> G = GrapheOriente(); G.ajouter_arcs(CFC_INSTANCE_TD) # initialisation de l'instance du TD
 >>> cfc = composantes_fortement_connexes(G) # Calcul des cfc
@@ -223,8 +223,8 @@ pltest8==
 [[1, 2, 3], [4], [5, 6, 7, 8, 9], [10, 11, 12, 13, 14]]
 ==
 
-testname9 = Vérifications de composantes_fortement_connexes sur une instance aléatoire
-pltest9==
+testname10 = Vérifications de composantes_fortement_connexes sur une instance aléatoire
+pltest10==
 >>> from corrlib_graphes import * #
 >>> G = GrapheOriente(); G.ajouter_arcs(list(graphe_oriente_aleatoire(20).edges())) # initialisation d'une instance aléatoire
 >>> attendu = sorted(map(sorted, cfc(G)))#
@@ -249,6 +249,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
