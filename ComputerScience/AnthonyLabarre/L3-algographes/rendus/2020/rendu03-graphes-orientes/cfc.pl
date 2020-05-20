@@ -8,7 +8,7 @@ author = Anthony Labarre
 title = Composantes fortement connexes.
 text==
 Écrivez une fonction composantes_fortement_connexes(graphe), renvoyant les composantes fortement 
-connexes d'un graphe orienté sous la forme d'un itérable d'itérables de sommets.<br>
+connexes d'un graphe orienté sous la forme d'un itérable d'itérables de sommets.<br><br>
 
 On recommande des ensembles d'ensembles pour des raisons d'efficacité et parce que l'ordre n'importe pas, mais il est permis d'utiliser d'autres types tant que le format demandé est respecté.
 ==
