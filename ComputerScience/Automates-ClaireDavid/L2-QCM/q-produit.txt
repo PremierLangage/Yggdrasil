@@ -59,7 +59,7 @@
 
 
 * Le produit de deux automates a toujours 1 seul état initial
-+faux
++ faux
 - vrai
 - Je ne sais pas répondre à cette question.
 
