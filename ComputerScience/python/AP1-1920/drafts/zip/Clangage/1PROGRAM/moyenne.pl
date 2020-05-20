@@ -9,12 +9,12 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==  
 
-Ecrire un programme qence pSi lasuite commui lit une  suite d'entiers positifs terminée par un négatif puis affiche leur somme et 
-leur moyenne.<br>uuuu
+Ecrire un programme qui lit une  suite d'entiers positifs terminée par un négatif puis affiche leur somme et 
+leur moyenne.<br
+Si la suite commence par un négatif, on indiquera "suite vide".
+**Exemples :**
+-Entrer une suite d'entiers positifs:
 
-**Exemples :**u 
-Entrer une suite d'entiers positifs:
-uuuuu
 1 4
 
 3
@@ -22,12 +22,16 @@ uuuuu
 3
 
 -1
+ somme= 11 moyenne=2.750000
+-Entrer une suite d'entiers positifs:
 
-6 a 4 diviseurs
+Suite vide.
 ==
 
 editor.code==
 int main(void) {
+...
+printf("Entrer une suite d'entiers positifs:\n");
   /* votre code ici... */
 }
 
@@ -45,23 +49,24 @@ solution==
 
 
 
-
 int main(void) {
-	int n ;
-    int d;
+	int val ;
+    int somme=0;
+    int nb=0;
+    float moy;
+    printf("Entrer une suite d'entiers positifs:");
     scanf("%d",&n);
-    int nb=0;   
-
-    if (n==0)
-        printf("0 a une infinité de diviseurs\n");
-    else {
-        for(d=1;d<=n;d+=1){
-            if (n%d==0){
-                nb+=1;
-                printf("%d\n",d);
-                }
-        }
-	    printf("%d a %d diviseurs\n",n,nb);
+    if(n<o) 
+        printf("Suite vide.\" 
+    else{
+        while (n>=0){
+             somme+=n;
+             nb+=1;
+             scanf("%d",&n);
+           }
+        moy=somme;
+        moy/=nb;
+	    printf("somme=%d moyenne=%f diviseurs\n",n,nb);
         }
 	return 0;
 }
@@ -69,9 +74,9 @@ int main(void) {
 
 
 tests==
-[ ["Basique", "", "10"],
-  ["Vide", "", "0"],
-  ["Grand", "", "100"],
+[ ["Basique", "", "10 0 -1"],
+  ["Vide", "", "-1"],
+  ["Grand", "", "100 1 2 3 4 5 6 7 8 9 10 -2"],
   ["Aléatoire", "", str(random.randint(1, 20))],
   ["Aléatoire", "", str(random.randint(20, 40))] ]
 ==
