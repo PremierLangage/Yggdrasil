@@ -33,8 +33,6 @@ import corrlib_graphes
 ==
 
 
-############################## Ajouter ici les doc test #######################################
-
 testname0 = Vérifications de la classe GrapheOriente
 # Tests d'indices non consécutifs pour les sommets => exclusion des listes et matrices d'adjacence
 pltest0== 
