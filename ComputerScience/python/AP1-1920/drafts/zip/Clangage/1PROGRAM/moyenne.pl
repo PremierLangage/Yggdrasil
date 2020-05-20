@@ -50,14 +50,14 @@ solution==
 
 
 int main(void) {
-	int val ;
+	int n ;
     int somme=0;
     int nb=0;
     float moy;
-    printf("Entrer une suite d'entiers positifs:");
+    printf("Entrer une suite d'entiers positifs:\n");
     scanf("%d",&n);
-    if(n<o) 
-        printf("Suite vide.\" 
+    if(n<0) 
+        printf("Suite vide.\n" );
     else{
         while (n>=0){
              somme+=n;
@@ -66,7 +66,7 @@ int main(void) {
            }
         moy=somme;
         moy/=nb;
-	    printf("somme=%d moyenne=%f diviseurs\n",n,nb);
+	    printf("somme=%d moyenne=%f diviseurs\n",somme,moy);
         }
 	return 0;
 }
