@@ -131,7 +131,7 @@ if __name__ == "__main__":
         dic = {**namespace, **dic}
 
         aux_component1(dic)
-        
+        dic['loftext']=[]
         if 'evaluatorstep' in dic:
             if isinstance(dic['evaluatorstep'], list):
                 code = dic['evaluatorstep'][step]
@@ -174,6 +174,8 @@ if __name__ == "__main__":
             else:
                 dic['text'] = dic['textstep']
 
+        dic['loftext'].append(dic['text'])
+
         if 'formstep' in dic:
             if isinstance(dic['formstep'], list):
                 dic['form'] = dic['formstep'][step]
@@ -187,12 +189,18 @@ if __name__ == "__main__":
             dic['text'] = ""
             dic['form'] = dic['all_steps']
     else:
-        score = int(round(sum(dic['scores'])/dic['nbstep']))
-        dic['text'] = format_feedback_lightscore(score, "") + dic['all_steps']
-        dic['form'] = ""
-        dic['internals']['buttons'] = ["reroll"]
-
+        if not 'studentreturn' in dic:
+            score = int(round(sum(dic['scores'])/dic['nbstep']))
+            dic['text'] = format_feedback_lightscore(score, "") + dic['all_steps']
+            dic['form'] = ""
+            dic['internals']['buttons'] = ["reroll"]
+        else:
+            del dic['studentreturn']
+            dic['text'] = """ Veuillez donner pour chaque question votre avis sur les exercices."""
+            for i,t in 
+            dic['form'] = 
     output(score, " ", dic)
+
 
 
 
