@@ -20,17 +20,19 @@ builder =@ /builder/before.py
 
 editor =: CodeEditor
 editor.theme = dark
-editor.language = python
+editor.language = plaintext
 editor.code ==
-# write your code here
+ld 42 a
 ==
 
 before==
 ==
 
-title = Code Editor Component
+title = Mini Brain template : overwrite me plesase !
 
 text==
+This is the Mini Brain template. On should overwrite this text when
+inheriting from this template using extends.
 ==
 
 form==
