@@ -49,6 +49,7 @@ pltest1==
 >>> foret = reconstruire_arbre_oriente(sommets, parents, GrapheOriente)# Reconstruction de la forêt à partir de parents
 >>> sorted(foret.sommets()) == sorted(G.sommets())  # tous les sommets sont-ils couverts?
 True
+>>> print(foret.arcs())
 >>> ma_foret = foret_parcours_profondeur_oriente(G); arcs_de_ma_foret = set(ma_foret.arcs())#
 >>> for arbre in cc_graphes(foret): # 
 ...     if not est_arbre_oriente(arbre): # tous les sous-graphes de la forêt sont-ils des arbres?
