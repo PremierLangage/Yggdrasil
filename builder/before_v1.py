@@ -24,12 +24,12 @@ except ModuleNotFoundError:
 
 if __name__ == "__main__":
     
-    # JSON context is loaded
+    # load the keys of a PL exercise in dictionary
     with open(sys.argv[1], "r") as f:
         dic = json.load(f)
     Component.sync_context(dic)
 
-    # the content of namespace is added to dic
+    # add custom namespace to the exercise dictionary
     dic = {**namespace, **dic}
     
     if 'before' in dic:
