@@ -19,7 +19,7 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 editor =: CodeEditor
-editor.theme = dark
+editor.theme = light
 editor.language = plaintext
 editor.code ==
 ld 42 a
