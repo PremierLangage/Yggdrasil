@@ -46,7 +46,6 @@ pltest1==
 >>> from corrlib_graphes import * #
 >>> G = GrapheOriente(); G.ajouter_arcs(CFC_INSTANCE_TD) # initialisation de l'instance du TD
 >>> sommets, parents = parcours_profondeur_oriente(G)# Appel de la fonction parcours_profondeur_oriente
->>> print(sommets)
 >>> foret = reconstruire_arbre_oriente(sommets, parents, GrapheOriente)# Reconstruction de la forêt à partir de parents
 >>> sorted(foret.sommets()) == sorted(G.sommets())  # tous les sommets sont-ils couverts?
 True
