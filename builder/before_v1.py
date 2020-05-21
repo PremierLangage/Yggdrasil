@@ -47,7 +47,12 @@ if __name__ == "__main__":
     if 'style' in dic:
         dic['extracss'] = "<style> %s </style>" % "\n".join(reversed(list(dic['style'].values())))
 
-    for key in ['text', 'form', 'solution']:
+    if 'jinja_keys' in dic:
+        jinja_keys = dic('jinja_keys')
+    else:
+        jinja_keys = ['text', 'form', 'solution']
+    
+    for key in jinja_keys:
         if key in dic:
             dic[key] = Env.from_string(dic[key]).render(dic)
 
