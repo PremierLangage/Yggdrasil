@@ -1,7 +1,6 @@
 import sys
 import json
 from components import Component
-from builderlib import aux_component
 from builderlib import PickleEncoder, ComponentEnv
 
 # Import the custom JSON encoder
