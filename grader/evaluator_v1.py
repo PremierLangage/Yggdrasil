@@ -27,7 +27,7 @@ if __name__ == "__main__":
     
     # load the JSON exercise dictionary as Python dictionary
     with open(sys.argv[1], "r") as f:
-        dic = json.load(f, cls=CustomDecoder)
+        dic = json.load(f, cls=JSONDecoder)
     Component.sync_context(dic)
 
     # add the custom namespace to the Python exercise dictionary
