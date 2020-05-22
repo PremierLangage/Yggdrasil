@@ -54,14 +54,22 @@ if __name__ == "__main__":
         if key in dic:
             dic[key] = Env.from_string(dic[key]).render(dic)
 
+
     # output the Python exercise dictionary as a JSON dictionary (using the custom encoder)
     with open(sys.argv[3], "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
-    
+
     with open(sys.argv[4], "w+") as f:
         print(feedback, file=f)
     
-    print(int(score))
+    # output score
+    if 'score' not in dic:
+        print(" ", file=sys.stderr)
+        sys.exit(1)
+    if not isintance(dic['score'], int):
+        print(" ", file=sys.stderr)
+        sys.exit(1)
+    print(score)
     
     sys.exit(0)
 
