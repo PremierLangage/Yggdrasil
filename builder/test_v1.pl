@@ -10,7 +10,7 @@
 @ /utils/sympy/sympy2latex.py
 @ /utils/sympy/randsympy.py
 
-title = Multiplication de deux nombres complexes
+title = Test V1
 
 before ==
 z = 2 - 2*I
