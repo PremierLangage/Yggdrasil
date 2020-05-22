@@ -59,12 +59,14 @@ if __name__ == "__main__":
     with open(sys.argv[3], "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
 
+    # output feedback
+    feedback = dic.get('feedback', '')
     with open(sys.argv[4], "w+") as f:
         print(feedback, file=f)
     
     # output score
     if 'score' not in dic:
-        print("'evaluator' did not declare the variable 'grade'.", file=sys.stderr)
+        print("Score not declared.", file=sys.stderr)
         sys.exit(1)
 
     print(int(dic['score']))
