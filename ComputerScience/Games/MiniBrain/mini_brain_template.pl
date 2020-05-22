@@ -68,7 +68,7 @@ def make_minibrain_test(name, action_before_str, check_after_str):
 nb_good = 0
 nb_bad = 0
 for i in range(len(all_before)):
-    (res, feedback_test) = make_minibrain_test(name, action_before_str, check_after_str)
+    (res, feedback_test) = make_minibrain_test(all_before[i][0], all_before[i][1], all_check[i])
 
 
 feedback += "</pre>"
