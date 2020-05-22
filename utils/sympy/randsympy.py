@@ -1,4 +1,4 @@
-from plrandom import rd
+import random as rd
 import sympy as sp
 
 def randitem(items,excluded_values=[]):
@@ -162,6 +162,7 @@ def rand_int_matrix_givenrank(n,m,r,magnitude=2):
         diffcols=len(set([tuple(B.col(i)) for i in range(n)]))
         if numzeros < n and diffcols==n and diffrows==n:
             return P*A*Q
+
 
 
 
