@@ -4,19 +4,19 @@ from components import Component
 from pljson import PickleEncoder
 from pljinja import DefaultEnv
 
-# Import the custom JSON encoder
+# import the custom JSON encoder (if it exists)
 try:
     from json_coder import JSONEncoder
 except ModuleNotFoundError:
     JSONEncoder = PickleEncoder
 
-# Import the custom Jinja environnement
+# import the custom Jinja environnement (if it exists)
 try:
     from jinja_env import Env
 except ModuleNotFoundError:
     Env = DefaultEnv
 
-# Import the custom namespace
+# import the custom namespace (if it exists)
 try:
     from namespace import namespace
 except ModuleNotFoundError:
@@ -25,17 +25,18 @@ except ModuleNotFoundError:
 
 if __name__ == "__main__":
     
-    # load the keys of the PL file in a dictionary
+    # load the JSON keys of the PL file in a dictionary
     with open(sys.argv[1], "r") as f:
         dic = json.load(f)
     Component.sync_context(dic)
 
-    # add custom namespace to the exercise dictionary
+    # add the custom namespace to the Python exercise dictionary
     dic = {**namespace, **dic}
     
     if 'before' in dic:
 
-        # execute the script in before key with dic as globals
+        # execute the before script with the Python exercise dictionary
+        # as the global dictionary
         exec(dic['before'], dic)
         
         # clean dic from namespace elements
@@ -48,8 +49,9 @@ if __name__ == "__main__":
     if 'style' in dic:
         dic['extracss'] = "<style> %s </style>" % "\n".join(reversed(list(dic['style'].values())))
 
+    # render some dictionary values
     if 'jinja_keys' in dic:
-        jinja_keys = dic('jinja_keys')
+        jinja_keys = dic['jinja_keys']
     else:
         jinja_keys = ['text', 'form', 'solution']
     
@@ -57,6 +59,7 @@ if __name__ == "__main__":
         if key in dic:
             dic[key] = Env.from_string(dic[key]).render(dic)
 
+    # convert the Python exercise dictionary into a JSON dictionary and output it
     with open(sys.argv[2], "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
 
