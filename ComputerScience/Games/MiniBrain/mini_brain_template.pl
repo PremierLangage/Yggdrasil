@@ -40,13 +40,38 @@ form==
 {{ editor|component }}
 ==
 
-evaluator==
+evaluator==#|python|
 from mini_brain_utils import MiniBrain
 
-M = MiniBrain(editor.code)
-M.run()
+all_before = eval(minibrain_action_before)
+all_check = eval(minibrain_check_after)
 
-feedback = "<pre>"+M._verbose+"</pre>"
+def make_minibrain_test(name, action_before_str, check_after_str):
+    """
+    Run an instance of mini-brain for the test. Apply some actions 
+    before and perform some checks after to set the validity of the test.
+    """
+    ans = "<u><b>"+name+" :</b></u>"
+    M = MiniBrain(editor.code)
+    # prepare the test with actions before
+    if len(action_before_str) > 0:
+        str_actions = action_before_str.split('\n')
+        for action in str_actions:
+            tokens = M._memory.analyse_instruction(action)
+            M.resolve_instructions(tokens[1])
+            M._nb_cycles = 0
+            M._UAL._program_counter = 1
+    M.run()
+    ans += "<pre>" + M._verbose + "</pre>"
+    return (True, ans)
+
+nb_good = 0
+nb_bad = 0
+for i in range(len(all_before)):
+    (res, feedback_test) = make_minibrain_test(name, action_before_str, check_after_str)
+
+
+feedback += "</pre>"
 
 grade = (100, feedback)
 ==
