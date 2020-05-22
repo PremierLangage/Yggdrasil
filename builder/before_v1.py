@@ -44,11 +44,8 @@ if __name__ == "__main__":
                 del dic[key]
 
     # render some string values of the exercise dictionary with the custom Jinja environment
-    if 'jinja_keys' in dic:
-        jinja_keys = dic['jinja_keys']
-    else:
-        jinja_keys = ['text', 'form', 'solution']
-    
+    jinja_keys = dic.get('jinja_keys', ['text', 'form', 'solution'])
+
     for key in jinja_keys:
         if key in dic:
             dic[key] = Env.from_string(dic[key]).render(dic)
