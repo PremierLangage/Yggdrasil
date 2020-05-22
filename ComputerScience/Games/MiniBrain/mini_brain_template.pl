@@ -14,6 +14,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
+@ mini_brain_utils.py
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
@@ -42,3 +43,4 @@ form==
 evaluator==
 grade = (100, f"student code:\n{editor.code}")
 ==
+
