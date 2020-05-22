@@ -58,16 +58,7 @@ $#2  : value in central memory at address indexed by value of register 2
 ==
 
 editor.code ==
-ld $10 #0
-ld 1 a
-mul #0
-dec #0
-bfdn 3
-st a $11
-exit 0
-
-
-4
+ld $10 ...
 ==
 
 minibrain_action_before==
