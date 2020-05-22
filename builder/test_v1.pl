@@ -1,5 +1,5 @@
 @ /builder/before_v1.py [builder.py]
-@ /grader/evaluator2.py [grader.py]
+@ /grader/evaluator_v1.py [grader.py]
 @ /utils/pljson.py
 @ /utils/pljinja.py
 @ /model/json_coder/json_coder_sympy.py [json_coder.py]
@@ -31,3 +31,4 @@ form ==
 evaluator ==
 score, _, feedback = eval_complex(input.value, sol, form="cartesian")
 ==
+
