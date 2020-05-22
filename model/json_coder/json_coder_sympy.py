@@ -6,19 +6,16 @@ try:
 except ModuleNotFoundError:
     namespace = {}
 
-class CustomEncoder(json.JSONEncoder):
-    def default(self, obj):
-        if isinstance(obj, (sympy.Basic, sympy.Matrix)):
-            return {'__SymPy__': True, 'srepr': sympy.srepr(obj)}
-        return jsonpickle.Pickler(unpicklable=False).flatten(obj)
+def default(self, obj):
+    if isinstance(obj, (sympy.Basic, sympy.Matrix)):
+        return {'__SymPy__': True, 'srepr': sympy.srepr(obj)}
+    return jsonpickle.Pickler(unpicklable=False).flatten(obj)
 
-CustomDecoder(json.JSONDecoder):
-    def __init__(self, *args, **kwargs):
-        json.JSONDecoder.__init__(self, object_hook=self.object_hook, *args, **kwargs)
+JSONEncoder = json.JSONEncoder(default=default)
 
-    def object_hook(self, dict):
-        if '__SymPy__' in dict:
-            return sympy.sympify(dict['srepr'], locals=namespace, evaluate=False)
-        return dict
+def object_hook(self, dict):
+    if '__SymPy__' in dict:
+        return sympy.sympify(dict['srepr'], locals=namespace, evaluate=False)
+    return dict
 
-
+JSONDecoder = json.JSONEncoder(object_hook=object_hook)
