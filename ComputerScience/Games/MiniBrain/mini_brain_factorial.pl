@@ -23,7 +23,7 @@ Proposez un code avec Mini-Brain calculant la **factorielle** de l'entier
 stocké à la case 10 de la mémoire centrale. Placez votre résultat en case 11 
 de la mémoire centrale avant la fin d'exécution de votre programme.
 
-<pre>
+<pre style="font-size: 0.5em;">
 * ld [$? or value] [#?-a]: load value inside the CPU
 * st [#?-a or value] [$?]: store value to central memory
 * mv [#?-a] [#?-a]: internal fast copy inside the CPU
