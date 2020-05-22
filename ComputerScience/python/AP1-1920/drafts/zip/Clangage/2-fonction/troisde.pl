@@ -37,11 +37,12 @@ solution==
 int lance_de( int n){
     int nb=0;
     int i,j,k;
-    for (i=1;i<=6;i++)
+    for (i=1;i<=6;i++){
         for(j=1;j<=6;j++)
             for(k=1;k<=6;k++)
                 if(i+j+k==n)
                     nb++;
+    }                
 	return nb;
 }
 
@@ -56,7 +57,7 @@ int main(int argc, char const *argv[]) {
 int nb=0;   
 	nb=lance_de(n);
   
-		printf("%d façons d'obtnir %d \n",nb,n);
+		printf("%d façons d'obtenir %d \n",nb,n);
 	return 0;
 }
 ==
