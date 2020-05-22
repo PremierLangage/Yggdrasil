@@ -83,7 +83,7 @@ def make_minibrain_test(name, action_before_str, check_after_str):
 
     ans += "<pre>" + M._verbose + "</pre>"
     ans += check_str
-    return (state, ans, M._nb_cycles)
+    return (state, ans, M._UAL._cpu_cycles)
 
 nb_good = 0
 nb_bad = 0
