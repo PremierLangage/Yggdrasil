@@ -15,3 +15,5 @@
 #*****************************************************************************
 
 extends=mini_brain_template.pl
+
+title=factorielle d'un entier avec Mini-Brain
