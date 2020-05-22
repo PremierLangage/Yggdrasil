@@ -32,6 +32,10 @@ dec #0
 bfdn 3
 st a $11
 exit 0
+
+
+
+4
 ==
 
 minibrain_before==
