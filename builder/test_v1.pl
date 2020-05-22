@@ -1,5 +1,7 @@
 @ /builder/before_v1.py [builder.py]
 @ /grader/evaluator2.py [grader.py]
+@ /utils/pljson.py
+@ /utils/pljinja.py
 @ /model/json_coder/json_coder_sympy.py [json_coder.py]
 @ /model/jinja_env/jinja_env_math.pl [jinja_env.py]
 @ /model/namespace/namespace_math.py [namespace.py]
