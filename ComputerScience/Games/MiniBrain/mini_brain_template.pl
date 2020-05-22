@@ -53,6 +53,7 @@ def make_minibrain_test(name, action_before_str, check_after_str):
     """
     ans = "<u><b>"+name+" :</b></u>"
     M = MiniBrain(editor.code)
+
     # prepare the test with actions before
     if len(action_before_str) > 0:
         str_actions = action_before_str.split('\n')
@@ -61,9 +62,28 @@ def make_minibrain_test(name, action_before_str, check_after_str):
             M.resolve_instructions(tokens[1])
             M._nb_cycles = 0
             M._UAL._program_counter = 1
+
+    #execution time
     M.run()
+
+    # check time
+    state = True
+    check_str = ""
+    for (add, val) in check_after_str:
+        if int(M._memory.get_instruction(add)) != val:
+            state = False
+            check_str += str(val) + " n'est pas à l'addresse $"+ str(add) + ".<br />"
+        else:
+            check_str += str(val) + " est bien à l'addresse $"+ str(add) + ".<br />"
+
+    if state:
+        ans += " test réussi"
+    else:
+        ans += " test échoué"
+
     ans += "<pre>" + M._verbose + "</pre>"
-    return (True, ans)
+    ans += check_str
+    return (state, ans, M._nb_cycles)
 
 nb_good = 0
 nb_bad = 0
