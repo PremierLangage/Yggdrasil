@@ -100,7 +100,7 @@ for i in range(len(all_before)):
 
 # test summary
 if nb_bad == 0:
-    feedback = "All tests passed.<br />" + feedback
+    feedback = "All tests passed. (with "+str(total_cycles)+" cputime (cycles))<br />" + feedback
 else:
     feedback = str(nb_bad) + " tests failled.<br />" + feedback
 
