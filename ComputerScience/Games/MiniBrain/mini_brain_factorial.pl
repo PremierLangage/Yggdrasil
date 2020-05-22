@@ -24,6 +24,15 @@ stocké à la case 10 de la mémoire centrale. Placez votre résultat en case 11
 de la mémoire centrale avant la fin d'exécution de votre programme.
 
 <pre style="font-size: 0.7em;">
+Mini Brain cheat sheet :
+========================
+
+-147 : interpreted directly as a constant value
+$12  : value at address 12 inside the central memory
+#3   : value stored at register 3
+$#2  : value in central memory at address indexed by value of register 2
+#$47 : value stored at register indexed by value in central memory at address 47
+
 * ld [$? or value] [#?-a]: load value inside the CPU
 * st [#?-a or value] [$?]: store value to central memory
 * mv [#?-a] [#?-a]: internal fast copy inside the CPU
