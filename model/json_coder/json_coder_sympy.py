@@ -18,4 +18,4 @@ def object_hook(self, dict):
         return sympy.sympify(dict['srepr'], locals=namespace, evaluate=False)
     return dict
 
-JSONDecoder = json.JSONEncoder(object_hook=object_hook)
+JSONDecoder = json.JSONDecoder(object_hook=object_hook)
