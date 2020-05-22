@@ -40,9 +40,9 @@ int lance_de( int n){
     for (i=1;i<=6;i++){
         for(j=1;j<=6;j++)
             for(k=1;k<=6;k++)
-                if(i+j+k==n)
-                    nb++;
-    }                
+                if(i+j+k==n){
+                    printf(%d %d %d\n",i,j,k);
+    }                }
 	return nb;
 }
 
@@ -70,5 +70,6 @@ tests==
   ["Aléatoire", str(random.randint(1, 20)), ""],
   ["Aléatoire", str(random.randint(20, 40)), ""] ]
 ==
+
 
 
