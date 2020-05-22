@@ -24,7 +24,7 @@ except ModuleNotFoundError:
 
 if __name__ == "__main__":
     
-    # load the JSON keys of the PL file in a dictionary
+    # convert JSON keys of the PL file in a dictionary
     with open(sys.argv[1], "r") as f:
         dic = json.load(f)
     Component.sync_context(dic)
