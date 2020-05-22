@@ -64,14 +64,13 @@ if __name__ == "__main__":
     
     # output score
     if 'score' not in dic:
-        print(" ", file=sys.stderr)
+        print("'evaluator' did not declare the variable 'grade'.", file=sys.stderr)
         sys.exit(1)
+
     if not isintance(dic['score'], int):
-        print(" ", file=sys.stderr)
+        print("The variable 'score' ", file=sys.stderr)
         sys.exit(1)
 
     print(dic['score'])
     
     sys.exit(0)
-
-
