@@ -24,7 +24,7 @@ except ModuleNotFoundError:
 
 if __name__ == "__main__":
     
-    # convert JSON keys of the PL file in a dictionary
+    # load the JSON exercise dictionary as Python dictionary
     with open(sys.argv[1], "r") as f:
         dic = json.load(f)
     Component.sync_context(dic)
@@ -34,16 +34,16 @@ if __name__ == "__main__":
     
     if 'before' in dic:
 
-        # execute the before script with the Python exercise dictionary
+        # execute the before script in the exercise dictionary
         exec(dic['before'], dic)
         
-        # clean the the Python exercise dictionary from namespace elements
+        # clean the the exercise dictionary from namespace elements
         exec("", namespace)
         for key in namespace:
             if key in dic and dic[key] == namespace[key]:
                 del dic[key]
 
-    # render some string values of the exercise dictionary with Jinja
+    # render some string values of the exercise dictionary with the custom Jinja environment
     if 'jinja_keys' in dic:
         jinja_keys = dic['jinja_keys']
     else:
@@ -53,7 +53,7 @@ if __name__ == "__main__":
         if key in dic:
             dic[key] = Env.from_string(dic[key]).render(dic)
 
-    # convert the Python exercise dictionary into a JSON dictionary and output the JSON dictionary
+    # output the Python exercise dictionary as a JSON dictionary (using the custom encoder)
     with open(sys.argv[2], "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
 
