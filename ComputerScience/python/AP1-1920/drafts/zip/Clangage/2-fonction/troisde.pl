@@ -1,5 +1,5 @@
 
-title= lancé de dés
+title= lancé de 3 dés
 tag=function
 
 
