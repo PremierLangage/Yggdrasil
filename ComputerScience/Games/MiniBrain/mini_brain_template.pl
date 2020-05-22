@@ -41,6 +41,13 @@ form==
 ==
 
 evaluator==
-grade = (100, f"student code:\n{editor.code}")
+from mini_brain_utils import MiniBrain
+
+M = MiniBrain(editor.code)
+M.run()
+
+feedback = M._verbose
+
+grade = (100, feedback)
 ==
 
