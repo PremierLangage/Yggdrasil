@@ -89,9 +89,19 @@ nb_good = 0
 nb_bad = 0
 feedback = ""
 for i in range(len(all_before)):
-    (res, feedback_test) = make_minibrain_test(all_before[i][0], all_before[i][1], all_check[i])
+    (res, feedback_test, nb_c) = make_minibrain_test(all_before[i][0], all_before[i][1], all_check[i])
+    if res:
+        nb_good += 1
+    else:
+        nb_bad += 1
     feedback += feedback_test
 
-grade = (100, feedback)
+# test summary
+if nb_bad == 0:
+    feedback = "All tests passed.<br />" + feedback
+else:
+    feedback = str(nb_bad)" tests failled.<br />" + feedback
+
+grade = ((nb_good*100) // (nb_good+nb_bad), feedback)
 ==
 
