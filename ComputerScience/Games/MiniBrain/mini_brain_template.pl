@@ -46,7 +46,7 @@ from mini_brain_utils import MiniBrain
 M = MiniBrain(editor.code)
 M.run()
 
-feedback = M._verbose
+feedback = "<pre>"+M._verbose+"</pre>"
 
 grade = (100, feedback)
 ==
