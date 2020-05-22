@@ -13,10 +13,9 @@
 title = Multiplication de deux nombres complexes
 
 before ==
-z = 2-2*I
+z = 2 - 2*I
 var('x')
-P = x**2-3*x+1
-sol = (z1 * z2).expand()
+P = x**2 - 3*x + 1
 ==
 
 text ==
