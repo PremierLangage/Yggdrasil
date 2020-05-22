@@ -97,7 +97,7 @@ for i in range(len(all_before)):
     else:
         nb_bad += 1
     feedback += feedback_test
-    feedback += "   ------------------------------------------------   \n"
+    feedback += "   ------------------------------------------------   <br />"
 
 # test summary
 if nb_bad == 0:
