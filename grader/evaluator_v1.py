@@ -10,7 +10,7 @@ try:
 except ModuleNotFoundError:
     JSONEncoder = PickleEncoder
     JSONDecoder = None
-    
+
 # import the custom Jinja environnement (if it exists)
 try:
     from jinja_env import Env
@@ -33,7 +33,7 @@ if __name__ == "__main__":
     # add the custom namespace to the Python exercise dictionary
     dic = {**namespace, **dic}
     
-    if 'before' in dic:
+    if 'evaluator' in dic:
 
         # execute the before script in the exercise dictionary
         exec(dic['before'], dic)
@@ -55,9 +55,14 @@ if __name__ == "__main__":
             dic[key] = Env.from_string(dic[key]).render(dic)
 
     # output the Python exercise dictionary as a JSON dictionary (using the custom encoder)
-    with open(sys.argv[2], "w+") as f:
+    with open(sys.argv[3], "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
-
+    
+    with open(sys.argv[4], "w+") as f:
+        print(feedback, file=f)
+    
+    print(int(score))
+    
     sys.exit(0)
 
 
