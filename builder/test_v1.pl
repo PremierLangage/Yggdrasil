@@ -7,7 +7,6 @@
 @ /utils/sympy/latex2sympy.py
 @ /utils/sympy/sympy2latex.py
 @ /utils/sympy/randsympy.py
-@ /utils/plrandom.py
 
 title = Multiplication de deux nombres complexes
 
