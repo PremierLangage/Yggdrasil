@@ -40,31 +40,31 @@ List of available functions:
 TESTS::
 
 >>> M = MiniBrain('''ld 12 a
-... ld $11 #4
+... ld $12 #4
 ... mv #4 #0
-... st #1 $20
+... st #1 $21
 ... inc a
 ... inc #4
-... inc #$12
+... inc #$13
 ... dec #3
-... dec #$12
+... dec #$13
 ... inc #3
 ... 
 ... 12345
 ... 2''')
 >>> M.run(verbose=True)
 |     #0     #1     #2     #3     #4 |  #-1=a | f | -->  PC : next instruction
-|      0      0      0      0      0 |      0 | 0 | -->   0 : ld 12 a
-|      0      0      0      0      0 |     12 | 0 | -->   1 : ld $11 #4
-|      0      0      0      0  12345 |     12 | 0 | -->   2 : mv #4 #0
-|  12345      0      0      0  12345 |     12 | 0 | -->   3 : st #1 $20
-|  12345      0      0      0  12345 |     12 | 0 | -->   4 : inc a
-|  12345      0      0      0  12345 |     13 | 0 | -->   5 : inc #4
-|  12345      0      0      0  12346 |     13 | 0 | -->   6 : inc #$12
-|  12346      0      0      0  12346 |     13 | 0 | -->   7 : dec #3
-|  12346      0      0     -1  12346 |     13 | 0 | -->   8 : dec #$12
-|  12345      0      0     -1  12346 |     13 | 0 | -->   9 : inc #3
-|  12345      0      0      0  12346 |     13 | 1 | -->  10 : exit a
+|      0      0      0      0      0 |      0 | 0 | -->   1 : ld 12 a
+|      0      0      0      0      0 |     12 | 0 | -->   2 : ld $12 #4
+|      0      0      0      0  12345 |     12 | 0 | -->   3 : mv #4 #0
+|  12345      0      0      0  12345 |     12 | 0 | -->   4 : st #1 $21
+|  12345      0      0      0  12345 |     12 | 0 | -->   5 : inc a
+|  12345      0      0      0  12345 |     13 | 0 | -->   6 : inc #4
+|  12345      0      0      0  12346 |     13 | 0 | -->   7 : inc #$13
+|  12346      0      0      0  12346 |     13 | 0 | -->   8 : dec #3
+|  12346      0      0     -1  12346 |     13 | 0 | -->   9 : dec #$13
+|  12345      0      0     -1  12346 |     13 | 0 | -->  10 : inc #3
+|  12345      0      0      0  12346 |     13 | 1 | -->  11 : exit a
 Process exited normally with code 13
 0
 """
@@ -174,15 +174,15 @@ class MiniBrainUAL():
 
     >>> UAL = MiniBrainUAL()
     >>> str(UAL)
-    '|      0      0      0      0      0 |      0 | 0 | -->   0'
+    '|      0      0      0      0      0 |      0 | 0 | -->   1'
     >>> UAL.get_program_counter()
-    0
+    1
     >>> UAL.add(12)
     >>> str(UAL)
-    '|      0      0      0      0      0 |     12 | 0 | -->   0'
+    '|      0      0      0      0      0 |     12 | 0 | -->   1'
     >>> UAL.sub(12)
     >>> str(UAL)
-    '|      0      0      0      0      0 |      0 | 1 | -->   0'
+    '|      0      0      0      0      0 |      0 | 1 | -->   1'
     """
     def __init__(self, nb_register=5):
         """
@@ -197,7 +197,7 @@ class MiniBrainUAL():
         self._register = [0,]*nb_register
         self._accumulator = 0
         self._flag = False
-        self._program_counter = 0
+        self._program_counter = 1
         self._cpu_cycles = 1
 
     def __str__(self):
@@ -208,7 +208,7 @@ class MiniBrainUAL():
 
         >>> UAL = MiniBrainUAL()
         >>> str(UAL)
-        '|      0      0      0      0      0 |      0 | 0 | -->   0'
+        '|      0      0      0      0      0 |      0 | 0 | -->   1'
         """
         state = "| "
         state += " ".join([format(reg, '6d') for reg in self._register])
@@ -283,7 +283,7 @@ class MiniBrainUAL():
 
         >>> UAL = MiniBrainUAL()
         >>> UAL.get_program_counter()
-        0
+        1
         >>> UAL._program_counter = 54
         >>> UAL.get_program_counter()
         54
@@ -299,7 +299,7 @@ class MiniBrainUAL():
 
         >>> UAL = MiniBrainUAL()
         >>> UAL._program_counter
-        0
+        1
         >>> UAL.set_program_counter(12)
         >>> UAL._program_counter
         12
@@ -316,14 +316,14 @@ class MiniBrainUAL():
 
         >>> UAL = MiniBrainUAL()
         >>> UAL._program_counter
-        0
-        >>> UAL.increment_program_counter()
-        >>> UAL._program_counter
         1
         >>> UAL.increment_program_counter()
+        >>> UAL._program_counter
+        2
+        >>> UAL.increment_program_counter()
         >>> UAL.increment_program_counter()
         >>> UAL._program_counter
-        3
+        4
         """
         self._cpu_cycles += 1
         self._program_counter += 1
@@ -720,14 +720,14 @@ class MiniBrainMem():
         ... add #2
         ...
         ... 4321''')
-        >>> MEM.get_instruction(0)
+        >>> MEM.get_instruction(1)
         'ld 12 a'
-        >>> MEM.get_instruction(2)
+        >>> MEM.get_instruction(3)
         'ld $5 #2'
-        >>> MEM.get_instruction(5)
+        >>> MEM.get_instruction(6)
         '4321'
         """
-        return self._mem_array[program_counter]
+        return self._mem_array[program_counter-1]
 
     def set_value(self, value, program_counter, limit=2000):
         """
@@ -741,7 +741,7 @@ class MiniBrainMem():
         ... add #2
         ...
         ... 4321''')
-        >>> MEM.set_value(1234, 5)
+        >>> MEM.set_value(1234, 6)
         0
         >>> print(MEM)
         ld 12 a
@@ -762,19 +762,18 @@ class MiniBrainMem():
         <BLANKLINE>
         <BLANKLINE>
         <BLANKLINE>
-        <BLANKLINE>
         101
         """
-        if (program_counter < 0) or (program_counter >= limit):
+        if (program_counter <= 0) or (program_counter >= limit):
             return "Segmentation Fault : you can not write at address "+str(program_counter)
         else:
-            if program_counter >= len(self._mem_array):
-                for i in range(program_counter - len(self._mem_array)):
+            if program_counter > len(self._mem_array):
+                for i in range(program_counter - (len(self._mem_array) + 1)):
                     self._mem_array.append('')
                 self._mem_array.append(str(scale_16_bits_a2(value)))
                 return 0
             else:
-                self._mem_array[program_counter] = str(scale_16_bits_a2(value))
+                self._mem_array[program_counter-1] = str(scale_16_bits_a2(value))
                 return 0
 
     def analyse_instruction(self, instr):
@@ -912,8 +911,7 @@ class MiniBrain():
     0
     >>> print(M._verbose)
     |     #0     #1     #2     #3     #4 |  #-1=a | f | -->  PC : next instruction
-    |      0      0      0      0      0 |      0 | 0 | -->   0 : ld 12 a
-    |      0      0      0      0      0 |     12 | 0 | -->   1 : Empty instruction
+    |      0      0      0      0      0 |      0 | 0 | -->   1 : Empty instruction
     Empty instruction : process terminated
     ld 12 a
     add 42
@@ -921,34 +919,41 @@ class MiniBrain():
 
     Here is an exemple computing factorial of $6 :
 
-    >>> M = MiniBrain('''ld $6 #0
+    >>> M = MiniBrain('''ld $7 #0
     ... ld 1 a
     ... mul #0
     ... dec #0
-    ... bfdn 2
+    ... bfdn 3
     ...
     ... 5''')
     >>> M.run(verbose=True)
     |     #0     #1     #2     #3     #4 |  #-1=a | f | -->  PC : next instruction
-    |      0      0      0      0      0 |      0 | 0 | -->   0 : ld $6 #0
-    |      5      0      0      0      0 |      0 | 0 | -->   1 : ld 1 a
-    |      5      0      0      0      0 |      1 | 0 | -->   2 : mul #0
-    |      5      0      0      0      0 |      5 | 0 | -->   3 : dec #0
-    |      4      0      0      0      0 |      5 | 0 | -->   4 : bfdn 2
-    |      4      0      0      0      0 |      5 | 0 | -->   2 : mul #0
-    |      4      0      0      0      0 |     20 | 0 | -->   3 : dec #0
-    |      3      0      0      0      0 |     20 | 0 | -->   4 : bfdn 2
-    |      3      0      0      0      0 |     20 | 0 | -->   2 : mul #0
-    |      3      0      0      0      0 |     60 | 0 | -->   3 : dec #0
-    |      2      0      0      0      0 |     60 | 0 | -->   4 : bfdn 2
-    |      2      0      0      0      0 |     60 | 0 | -->   2 : mul #0
-    |      2      0      0      0      0 |    120 | 0 | -->   3 : dec #0
-    |      1      0      0      0      0 |    120 | 0 | -->   4 : bfdn 2
-    |      1      0      0      0      0 |    120 | 0 | -->   2 : mul #0
-    |      1      0      0      0      0 |    120 | 0 | -->   3 : dec #0
-    |      0      0      0      0      0 |    120 | 1 | -->   4 : bfdn 2
-    |      0      0      0      0      0 |    120 | 1 | -->   5 : exit a
-    Process exited normally with code 120
+    |      0      0      0      0      0 |      0 | 0 | -->   1 : ld $7 #0
+    |      5      0      0      0      0 |      0 | 0 | -->   2 : ld 1 a
+    |      5      0      0      0      0 |      1 | 0 | -->   3 : mul #0
+    |      5      0      0      0      0 |      5 | 0 | -->   4 : dec #0
+    |      4      0      0      0      0 |      5 | 0 | -->   5 : bfdn 3
+    |      4      0      0      0      0 |      5 | 0 | -->   3 : mul #0
+    |      4      0      0      0      0 |     20 | 0 | -->   4 : dec #0
+    |      3      0      0      0      0 |     20 | 0 | -->   5 : bfdn 3
+    |      3      0      0      0      0 |     20 | 0 | -->   3 : mul #0
+    |      3      0      0      0      0 |     60 | 0 | -->   4 : dec #0
+    |      2      0      0      0      0 |     60 | 0 | -->   5 : bfdn 3
+    |      2      0      0      0      0 |     60 | 0 | -->   3 : mul #0
+    |      2      0      0      0      0 |    120 | 0 | -->   4 : dec #0
+    |      1      0      0      0      0 |    120 | 0 | -->   5 : bfdn 3
+    |      1      0      0      0      0 |    120 | 0 | -->   3 : mul #0
+    |      1      0      0      0      0 |    120 | 0 | -->   4 : dec #0
+    |      0      0      0      0      0 |    120 | 1 | -->   5 : bfdn 3
+    |      0      0      0      0      0 |    120 | 1 | -->   6 : Empty instruction
+    Empty instruction : process terminated
+    ld $7 #0
+    ld 1 a
+    mul #0
+    dec #0
+    bfdn 3
+    <BLANKLINE>
+    5
     0
     """
     def __init__(self, code, nb_register=5):
@@ -990,16 +995,16 @@ class MiniBrain():
         ... -54''')
         >>> M._UAL._accumulator = 42
         >>> M._UAL._register[3] = -34
-        >>> M._UAL._register[1] = 2
+        >>> M._UAL._register[1] = 3
         >>> M.read_central_bus([12, None, None, None, None]) # --> constant 12
         12
         >>> M.read_central_bus([None, 3, None, None, None]) # --> #3
         -34
-        >>> M.read_central_bus([None, None, 1, None, None]) # --> $1
+        >>> M.read_central_bus([None, None, 2, None, None]) # --> $1
         12
         >>> M.read_central_bus([None, None, None, 1, None]) # --> $#1 = $2
         -54
-        >>> M.read_central_bus([None, None, None, None, 0]) # --> #$0 = #3
+        >>> M.read_central_bus([None, None, None, None, 1]) # --> #$0 = #3
         -34
         """
         # direct value
@@ -1282,7 +1287,7 @@ class MiniBrain():
 
         EXAMPLES::
 
-        >>> M = MiniBrain('''ld $6 #0
+        >>> M = MiniBrain('''ld $7 #0
         ... ld 1 a
         ... mul #0
         ... dec #0
