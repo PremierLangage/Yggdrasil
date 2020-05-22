@@ -88,8 +88,10 @@ def make_minibrain_test(name, action_before_str, check_after_str):
 nb_good = 0
 nb_bad = 0
 feedback = ""
+total_cycles = 0
 for i in range(len(all_before)):
     (res, feedback_test, nb_c) = make_minibrain_test(all_before[i][0], all_before[i][1], all_check[i])
+    total_cycles += nb_c
     if res:
         nb_good += 1
     else:
