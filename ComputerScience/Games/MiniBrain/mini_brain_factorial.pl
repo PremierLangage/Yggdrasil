@@ -22,7 +22,8 @@ text==
 Proposez un code Mini-Brain calculant la **factorielle** de l'entier 
 stocké à la case 10 de la mémoire centrale. Placez votre résultat en case 11 
 de la mémoire centrale avant la fin d'exécution de votre programme.   
-
+   
+   
 <pre style="font-size: 0.7em;">
 Mini Brain cheat sheet :
 ========================
