@@ -71,14 +71,14 @@ exit 0
 ==
 
 minibrain_action_before==
-[ ['factorielle de 0', 'ld 0 $10'], 
-  ['factorielle de 1', 'ld 1 $10'], 
-  ['factorielle de 2', 'ld 2 $10'], 
-  ['factorielle de 3', 'ld 3 $10'], 
-  ['factorielle de 4', 'ld 4 $10'], 
-  ['factorielle de 5', 'ld 5 $10'], 
-  ['factorielle de 6', 'ld 6 $10'],
-  ['factorielle de 7', 'ld 7 $10'], ]
+[ ['factorielle de 0', 'st 0 $10'], 
+  ['factorielle de 1', 'st 1 $10'], 
+  ['factorielle de 2', 'st 2 $10'], 
+  ['factorielle de 3', 'st 3 $10'], 
+  ['factorielle de 4', 'st 4 $10'], 
+  ['factorielle de 5', 'st 5 $10'], 
+  ['factorielle de 6', 'st 6 $10'],
+  ['factorielle de 7', 'st 7 $10'], ]
 ==
 
 minibrain_check_after==
