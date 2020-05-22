@@ -24,6 +24,16 @@ stocké à la case 10 de la mémoire centrale. Placez votre résultat en case 11
 de la mémoire centrale avant la fin d'exécution de votre programme.
 ==
 
+editor.code ==
+ld $10 #0
+ld 1 a
+mul #0
+dec #0
+bfdn 3
+st a $11
+exit 0
+==
+
 minibrain_before==
 [ ['factorielle de 0', 'ld 0 $10'], 
   ['factorielle de 1', 'ld 1 $10'], 
