@@ -35,20 +35,15 @@ if __name__ == "__main__":
     if 'before' in dic:
 
         # execute the before script with the Python exercise dictionary
-        # as the global dictionary
         exec(dic['before'], dic)
         
-        # clean dic from namespace elements
+        # clean the the Python exercise dictionary from namespace elements
         exec("", namespace)
         for key in namespace:
             if key in dic and dic[key] == namespace[key]:
                 del dic[key]
 
-    # build the key 'extracss' from the content of the key 'style'
-    if 'style' in dic:
-        dic['extracss'] = "<style> %s </style>" % "\n".join(reversed(list(dic['style'].values())))
-
-    # render some dictionary values
+    # render some string values of the exercise dictionary with Jinja
     if 'jinja_keys' in dic:
         jinja_keys = dic['jinja_keys']
     else:
@@ -58,7 +53,7 @@ if __name__ == "__main__":
         if key in dic:
             dic[key] = Env.from_string(dic[key]).render(dic)
 
-    # convert the Python exercise dictionary into a JSON dictionary and output it
+    # convert the Python exercise dictionary into a JSON dictionary and output the JSON dictionary
     with open(sys.argv[2], "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
 
