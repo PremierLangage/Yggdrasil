@@ -102,7 +102,7 @@ for i in range(len(all_before)):
 if nb_bad == 0:
     feedback = "All tests passed.<br />" + feedback
 else:
-    feedback = str(nb_bad)" tests failled.<br />" + feedback
+    feedback = str(nb_bad) + " tests failled.<br />" + feedback
 
 grade = ((nb_good*100) // (nb_good+nb_bad), feedback)
 ==
