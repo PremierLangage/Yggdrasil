@@ -56,7 +56,7 @@ int main(int argc, char const *argv[]) {
 int nb=0;   
 	nb=lance_de(n);
   
-		printf("%d façons d'obtnir %d \n",nb,b);
+		printf("%d façons d'obtnir %d \n",nb,n);
 	return 0;
 }
 ==
