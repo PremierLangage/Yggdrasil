@@ -67,10 +67,6 @@ if __name__ == "__main__":
         print("'evaluator' did not declare the variable 'grade'.", file=sys.stderr)
         sys.exit(1)
 
-    if not isintance(dic['score'], int):
-        print("The variable 'score' ", file=sys.stderr)
-        sys.exit(1)
-
-    print(dic['score'])
+    print(int(dic['score']))
     
     sys.exit(0)
