@@ -38,7 +38,7 @@ if __name__ == "__main__":
         # execute the evaluator script in the exercise dictionary
         exec(dic['evaluator'], dic)
         
-        # clean the the exercise dictionary from namespace elements
+        # clean the exercise dictionary from namespace elements
         exec("", namespace)
         for key in namespace:
             if key in dic and dic[key] == namespace[key]:
