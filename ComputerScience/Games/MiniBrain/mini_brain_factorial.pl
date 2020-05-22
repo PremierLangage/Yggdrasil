@@ -82,12 +82,12 @@ minibrain_action_before==
 ==
 
 minibrain_check_after==
-[ check_mem(11, 1),
-  check_mem(11, 1),
-  check_mem(11, 2),
-  check_mem(11, 6),
-  check_mem(11, 24),
-  check_mem(11, 120),
-  check_mem(11, 720),
-  check_mem(11, 5040),]
+[ 'check_mem(11, 1)',
+  'check_mem(11, 1)',
+  'check_mem(11, 2)',
+  'check_mem(11, 6)',
+  'check_mem(11, 24)',
+  'check_mem(11, 120)',
+  'check_mem(11, 720)',
+  'check_mem(11, 5040)',]
 ==
