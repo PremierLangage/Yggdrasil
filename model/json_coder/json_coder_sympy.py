@@ -12,7 +12,7 @@ class CustomEncoder(json.JSONEncoder):
             return {'__SymPy__': True, 'srepr': sympy.srepr(obj)}
         return jsonpickle.Pickler(unpicklable=False).flatten(obj)
 
-class CustomDecoder(json.JSONDecoder):
+CustomDecoder(json.JSONDecoder):
     def __init__(self, *args, **kwargs):
         json.JSONDecoder.__init__(self, object_hook=self.object_hook, *args, **kwargs)
 
