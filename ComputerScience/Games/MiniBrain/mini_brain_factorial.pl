@@ -71,8 +71,7 @@ exit 0
 ==
 
 minibrain_action_before==
-[ ['factorielle de 0', 'st 0 $10'], 
-  ['factorielle de 1', 'st 1 $10'], 
+[ ['factorielle de 1', 'st 1 $10'], 
   ['factorielle de 2', 'st 2 $10'], 
   ['factorielle de 3', 'st 3 $10'], 
   ['factorielle de 4', 'st 4 $10'], 
@@ -83,7 +82,6 @@ minibrain_action_before==
 
 minibrain_check_after==
 [ 'check_mem(11, 1)',
-  'check_mem(11, 1)',
   'check_mem(11, 2)',
   'check_mem(11, 6)',
   'check_mem(11, 24)',
