@@ -35,7 +35,7 @@ if __name__ == "__main__":
     
     if 'evaluator' in dic:
 
-        # execute the before script in the exercise dictionary
+        # execute the evaluator script in the exercise dictionary
         exec(dic['evaluator'], dic)
         
         # clean the the exercise dictionary from namespace elements
