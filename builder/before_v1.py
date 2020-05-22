@@ -1,11 +1,12 @@
 import sys
 import json
 from components import Component
-from builderlib import PickleEncoder, ComponentEnv
+from pljson import PickleEncoder
+from pljinja import DefaultEnv
 
 # Import the custom JSON encoder
 try:
-    from json_encoder import CustomEncoder as JSONEncoder
+    from json_coder import JSONEncoder
 except ModuleNotFoundError:
     JSONEncoder = PickleEncoder
 
