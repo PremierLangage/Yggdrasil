@@ -16,4 +16,8 @@
 
 extends=mini_brain_template.pl
 
-title=factorielle d'un entier avec Mini-Brain
+title=Factorielle d'un entier avec Mini-Brain
+
+text==
+Proposez un code avec Mini-Brain calculant la factorielle de l'entier stocké en 
+adresse 10 de la mémoire centrale.
