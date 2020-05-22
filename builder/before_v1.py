@@ -22,7 +22,6 @@ try:
 except ModuleNotFoundError:
     namespace = {}
 
-
 if __name__ == "__main__":
     
     # load the JSON keys of the PL file in a dictionary
