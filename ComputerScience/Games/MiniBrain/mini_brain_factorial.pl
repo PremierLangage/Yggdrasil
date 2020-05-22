@@ -42,7 +42,7 @@ de la mémoire centrale avant la fin d'exécution de votre programme.
 * bnow [#?-a or value or $?]: jump in all cases to instruction indexed by the value
 
 * exit [#?-a or value or $?]: stop the program with return code the targeted value   
-* <empty instruction>: produce the behavior of exit a
+* \<empty instruction\>: produce the behavior of exit a
 </pre>
 ==
 
