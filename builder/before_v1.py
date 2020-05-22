@@ -25,10 +25,10 @@ except ModuleNotFoundError:
 
 if __name__ == "__main__":
     
-    # load the keys of a PL exercise in dictionary
+    # load the keys of the PL file in a dictionary
     with open(sys.argv[1], "r") as f:
         dic = json.load(f)
-    efault.sync_context(dic)
+    Component.sync_context(dic)
 
     # add custom namespace to the exercise dictionary
     dic = {**namespace, **dic}
