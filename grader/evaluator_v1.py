@@ -69,7 +69,8 @@ if __name__ == "__main__":
     if not isintance(dic['score'], int):
         print(" ", file=sys.stderr)
         sys.exit(1)
-    print(score)
+
+    print(dic['score'])
     
     sys.exit(0)
 
