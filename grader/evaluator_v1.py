@@ -27,7 +27,7 @@ if __name__ == "__main__":
     
     # load the JSON exercise dictionary as Python dictionary
     with open(sys.argv[1], "r") as f:
-        dic = json.load(f)
+        dic = json.load(f, cls=CustomDecoder)
     Component.sync_context(dic)
 
     # add the custom namespace to the Python exercise dictionary
@@ -45,10 +45,7 @@ if __name__ == "__main__":
                 del dic[key]
 
     # render some string values of the exercise dictionary with the custom Jinja environment
-    if 'jinja_keys' in dic:
-        jinja_keys = dic['jinja_keys']
-    else:
-        jinja_keys = ['text', 'form', 'solution']
+    jinja_keys = dic.get('jinja_keys', ['text', 'form', 'solution'])
     
     for key in jinja_keys:
         if key in dic:
