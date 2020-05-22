@@ -70,7 +70,7 @@ exit 0
 4
 ==
 
-minibrain_before==
+minibrain_action_before==
 [ ['factorielle de 0', 'ld 0 $10'], 
   ['factorielle de 1', 'ld 1 $10'], 
   ['factorielle de 2', 'ld 2 $10'], 
@@ -78,10 +78,10 @@ minibrain_before==
   ['factorielle de 4', 'ld 4 $10'], 
   ['factorielle de 5', 'ld 5 $10'], 
   ['factorielle de 6', 'ld 6 $10'],
-  ['factorielle de 7', 'ld 7 $10'] ]
+  ['factorielle de 7', 'ld 7 $10'], ]
 ==
 
-minibrain_after==
+minibrain_check_after==
 [ check_mem(11, 1),
   check_mem(11, 1),
   check_mem(11, 2),
