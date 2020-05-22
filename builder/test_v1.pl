@@ -31,7 +31,7 @@ form ==
 ==
 
 evaluator ==
-w = 2*z + input.value
+w = z + input.value
 score = 100
 feedback = latex(w)
 ==
