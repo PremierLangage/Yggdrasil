@@ -40,7 +40,6 @@ inheriting from this template using extends.
 extra_doc==#|html|
 <br />
 
-<h3 id="extra_doc" style="font-size: 1em;">Documentation rapide du Mini-Brain</h3>
 <div id="extra_doc_div">
 
 <pre style="font-size: 0.8em;">
