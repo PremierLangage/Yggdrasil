@@ -61,7 +61,7 @@ class CustomCheckbox(Component):
         """
         self.items.sort(key = lambda item : item['content'])
 
-    def eval(self, display=True, scoring="RightMinusWrong", disabled=True, custom_scoring=None):
+    def eval(self, display=True, disabled=True, scoring="RightMinusWrong", custom_scoring=None):
         """
         Evaluate the answer stored in the component.
         """
