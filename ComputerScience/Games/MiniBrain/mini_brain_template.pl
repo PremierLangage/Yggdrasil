@@ -83,6 +83,7 @@ $#2  : value in central memory at address indexed by value of register 2
 
 <script type="text/javascript">
 $(document).ready(function(){
+  $("#extra_doc_div").hide();
   $("#extra_doc").click(function(){ 
     $("#extra_doc_div").toggle(); 
   });
