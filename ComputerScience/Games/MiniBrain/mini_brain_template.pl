@@ -38,8 +38,9 @@ inheriting from this template using extends.
 ==
 
 extra_doc==#|html|
-<h3 id="extra_doc">Documentation rapide du Mini-Brain</h3>
-<div id="extra_doc_div">
+
+<h3 class="extra_doc">Documentation rapide du Mini-Brain</h3>
+<div class="extra_doc_div">
 
 <pre style="font-size: 0.8em;">
 Mini Brain cheat sheet :
