@@ -51,7 +51,7 @@ def make_minibrain_test(name, action_before_str, check_after_str):
     Run an instance of mini-brain for the test. Apply some actions 
     before and perform some checks after to set the validity of the test.
     """
-    ans = "<h3><u><b>"+name+" :</b></u>"
+    ans = '<h3 style="font-size: 1.5em;"><u><b>'+name+" :</b></u>"
     M = MiniBrain(editor.code)
 
     # prepare the test with actions before
