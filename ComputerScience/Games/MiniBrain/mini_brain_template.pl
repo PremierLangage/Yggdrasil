@@ -61,8 +61,10 @@ $#2  : value in central memory at address indexed by value of register 2
 * add [#?-a or value or $?]: add targeted value to the accumulator (up the flag if zero)
 * sub [#?-a or value or $?]: subtract targeted value to the accumulator (up the flag if zero)
 * mul [#?-a or value or $?]: multiply by targeted value the accumulator (up the flag if zero)
-* div [#?-a or value or $?]: divide the accumulator by targeted value (up the flag if zero if exact division)
-* mod [#?-a or value or $?]: replace the accumulator by its remainder when divide by targeted value (up the flag if zero)
+* div [#?-a or value or $?]: divide the accumulator by targeted value 
+                             (up the flag if zero if exact division)
+* mod [#?-a or value or $?]: replace the accumulator by its remainder when divide by targeted value 
+                             (up the flag if zero)
 * cmp [#?-a or value or $?]: do nothing (up the flag if the accumulator is smaller than the argument)
 
 * bfup [#?-a or value or $?]: jump to instruction indexed by the value if the flag is up else do nothing and continue
