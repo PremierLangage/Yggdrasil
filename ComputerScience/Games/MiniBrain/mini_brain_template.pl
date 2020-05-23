@@ -38,6 +38,12 @@ inheriting from this template using extends.
 
 form==
 {{ editor|component }}
+
+<script>
+$( function() {
+  $( "#accordion" ).accordion();
+} );
+</script>
 ==
 
 evaluator==#|python|
@@ -107,4 +113,5 @@ else:
 
 grade = ((nb_good*100) // (nb_good+nb_bad), feedback)
 ==
+
 
