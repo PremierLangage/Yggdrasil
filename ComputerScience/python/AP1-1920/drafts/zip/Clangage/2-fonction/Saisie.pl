@@ -68,7 +68,9 @@ int main(int argc, char* argv[]){
 
 tests==
 [["Exécution simple", "1 9", "5"],
- ["Quelques éléments", "12 2", "1 3"]]
+ ["Quelques éléments", "12 2", "1 3"],
+ 
+ ]
 ==
 
 
