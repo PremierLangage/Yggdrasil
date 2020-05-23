@@ -1,6 +1,6 @@
 
 # Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
-author=Nicolas Borie
+#author=Nicolas Borie
 
 title=Appeler les fonctions qui vont bien...
 tag=program
@@ -72,5 +72,6 @@ tests==
  ["Aléatoire", str(random.randint(-100, 100)), ""],
  ["Aléatoire", str(random.randint(-100, 100)), ""]]
 ==
+
 
 
