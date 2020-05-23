@@ -161,9 +161,9 @@ feedback += '</div>'
 
 # test summary
 if nb_bad == 0:
-    feedback = '<span class="success-state" style="padding: 0.5em;">All tests passed. (with '+str(total_cycles)+" cputime (cycles))</span><br />" + feedback
+    feedback = '<p><span class="success-state" style="padding: 0.5em;">All tests passed. (with '+str(total_cycles)+" cputime (cycles))</span></p><br />" + feedback
 else:
-    feedback = '<span class="error-state" style="padding: 0.5em;">'+ str(nb_bad) + " tests failled.</span><br />" + feedback
+    feedback = '<p><span class="error-state" style="padding: 0.5em;">'+ str(nb_bad) + " tests failled.</span></p><br />" + feedback
 
 grade = ((nb_good*100) // (nb_good+nb_bad), feedback)
 ==
