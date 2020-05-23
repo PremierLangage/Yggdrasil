@@ -107,7 +107,8 @@ def make_minibrain_test(name, action_before_str, check_after_str):
     Run an instance of mini-brain for the test. Apply some actions 
     before and perform some checks after to set the validity of the test.
     """
-    ans = '<h3 style="font-size: 1.2em;" id="'+name+'"><u><b>'+name+" :</b></u>"
+    key_js_toogle = name.replace(' ', '_')
+    ans = '<h3 style="font-size: 1.2em;" id="'+key_js_toogle+'"><u><b>'+name+" :</b></u>"
     M = MiniBrain(editor.code)
 
     # prepare the test with actions before
@@ -137,14 +138,14 @@ def make_minibrain_test(name, action_before_str, check_after_str):
     else:
         ans += ' <span style="color: darkred;"> test échoué</span></h3>'
 
-    ans += '<div id="'+name+'_div"><pre>' + M._verbose + "</pre>"
+    ans += '<div id="'+key_js_toogle+'_div"><pre>' + M._verbose + "</pre>"
     ans += check_str+"</div>"
 
     ans += '<script type="text/javascript">'
     ans += '$(document).ready(function(){'
-    ans += '  $("#'+name+'_div").hide();'
-    ans += '  $("#'+name+'").click(function(){'
-    ans += '    $("#'+name+'_div").toggle();'
+    ans += '  $("#'+key_js_toogle+'_div").hide();'
+    ans += '  $("#'+key_js_toogle+'").click(function(){'
+    ans += '    $("#'+key_js_toogle+'_div").toggle();'
     ans += '  });'
     ans += '});'
     ans += '</script>'
