@@ -68,8 +68,8 @@ $#2  : value in central memory at address indexed by value of register 2
                              (up the flag if zero)
 * cmp [#?-a or value or $?]: do nothing (up the flag if the accumulator is smaller than the argument)
 
-* bfup [#?-a or value or $?]: jump to instruction indexed by the value if the flag is up else do nothing and continue
-* bfdn [#?-a or value or $?]: jump to instruction indexed by the value if the flag is down else do nothing and continue
+* bfup [#?-a or value or $?]: jump to instruction indexed by the value if the flag is up
+* bfdn [#?-a or value or $?]: jump to instruction indexed by the value if the flag is down
 * bnow [#?-a or value or $?]: jump in all cases to instruction indexed by the value
 
 * exit [#?-a or value or $?]: stop the program with return code the targeted value   
