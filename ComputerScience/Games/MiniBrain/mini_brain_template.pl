@@ -76,7 +76,7 @@ $#2  : value in central memory at address indexed by value of register 2
 </div>
 
 <script type="text/javascript">
-  $("#extra_doc").click(function(){ $("#extra_doc_div").fadetoggle(); });
+  $("#extra_doc").click(function(){ $("#extra_doc_div").Toggle(); });
 </script>
 ==
 
