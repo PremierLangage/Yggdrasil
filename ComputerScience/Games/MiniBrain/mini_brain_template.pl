@@ -38,12 +38,6 @@ inheriting from this template using extends.
 
 form==
 {{ editor|component }}
-
-<script>
-$( function() {
-  $( "#accordion" ).accordion();
-} );
-</script>
 ==
 
 evaluator==#|python|
