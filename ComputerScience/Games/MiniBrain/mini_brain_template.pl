@@ -40,7 +40,7 @@ inheriting from this template using extends.
 extra_doc==#|html|
 <br />
 
-<h3 id="extra_doc" style="font-size: 1em;" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+<h3 id="extra_doc" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
 <b>Dérouler/Réduie un rappel des commandes du Mini-Brain</b></h3>
 
 <div id="extra_doc_div">
