@@ -56,7 +56,6 @@ $#2  : value in central memory at address indexed by value of register 2
 * exit [#?-a or value or $?]: stop the program with return code the targeted value   
 * - empty instruction - : produce the behavior of exit a
 </pre>
-
 ==
 
 extra_script==
