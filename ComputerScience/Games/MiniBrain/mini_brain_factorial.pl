@@ -20,7 +20,7 @@ title=Factorielle d'un entier avec Mini-Brain
 
 text==
 <p>
-Proposez un code Mini-Brain calculant la **factorielle** de l'entier 
+Proposez un code Mini-Brain calculant la <b>factorielle</b> de l'entier 
 stocké à la case 10 de la mémoire centrale. Placez votre résultat en case 11 
 de la mémoire centrale avant la fin d'exécution de votre programme.
 </p>
