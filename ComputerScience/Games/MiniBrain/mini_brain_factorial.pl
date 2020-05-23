@@ -16,6 +16,8 @@
 
 extends=mini_brain_template.pl
 
+author=Nicolas Borie
+
 title=Factorielle d'un entier avec Mini-Brain
 
 text==
