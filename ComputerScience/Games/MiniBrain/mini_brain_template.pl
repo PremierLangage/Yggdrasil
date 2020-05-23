@@ -77,9 +77,9 @@ def make_minibrain_test(name, action_before_str, check_after_str):
             check_str += str(val) + " est bien à l'addresse $"+ str(add) + ".<br />"
 
     if state:
-        ans += " test réussi</h3>"
+        ans += ' <span style="color: darkgreen;"> test réussi</span></h3>'
     else:
-        ans += " test échoué</h3>"
+        ans += ' <span style="color: darkred;"> test échoué</span></h3>'
 
     ans += "<div><pre>" + M._verbose + "</pre>"
     ans += check_str+"</div>"
