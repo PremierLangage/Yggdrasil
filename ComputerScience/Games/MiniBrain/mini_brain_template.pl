@@ -98,7 +98,10 @@ for i in range(len(all_before)):
     else:
         nb_bad += 1
     feedback += feedback_test
-feedback = '</div>'
+feedback += '</div>'
+feedback += '<script type="text/javascript">'
+feedback += '  $("#accordion").accordion();'
+feedback += '</script>'
 
 # test summary
 if nb_bad == 0:
