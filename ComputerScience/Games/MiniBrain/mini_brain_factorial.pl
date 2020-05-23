@@ -31,6 +31,7 @@ Mini Brain cheat sheet :
 
 -147 : interpreted directly as a constant value
 $12  : value at address 12 inside the central memory
+a    : the accumulator
 #3   : value stored at register 3
 $#2  : value in central memory at address indexed by value of register 2
 #$47 : value stored at register indexed by value in central memory at address 47
