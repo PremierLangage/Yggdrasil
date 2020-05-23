@@ -57,7 +57,7 @@ def make_minibrain_test(name, action_before_str, check_after_str):
     Run an instance of mini-brain for the test. Apply some actions 
     before and perform some checks after to set the validity of the test.
     """
-    ans = "<u><b>"+name+" :</b></u>"
+    ans = "<h3><u><b>"+name+" :</b></u>"
     M = MiniBrain(editor.code)
 
     # prepare the test with actions before
@@ -83,12 +83,12 @@ def make_minibrain_test(name, action_before_str, check_after_str):
             check_str += str(val) + " est bien à l'addresse $"+ str(add) + ".<br />"
 
     if state:
-        ans += " test réussi"
+        ans += " test réussi</h3>"
     else:
-        ans += " test échoué"
+        ans += " test échoué</h3>"
 
-    ans += "<pre>" + M._verbose + "</pre>"
-    ans += check_str
+    ans += "<div><pre>" + M._verbose + "</pre>"
+    ans += check_str+"</div>"
     return (state, ans, M._UAL._cpu_cycles)
 
 nb_good = 0
