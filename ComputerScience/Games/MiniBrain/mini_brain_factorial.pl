@@ -56,6 +56,12 @@ $#2  : value in central memory at address indexed by value of register 2
 * exit [#?-a or value or $?]: stop the program with return code the targeted value   
 * - empty instruction - : produce the behavior of exit a
 </pre>
+
+<script>
+$( function() {
+  $( "#accordion" ).accordion();
+} );
+</script>
 ==
 
 editor.code ==
@@ -81,3 +87,4 @@ minibrain_check_after==
   [(11, 720)],
   [(11, 5040)],]
 ==
+
