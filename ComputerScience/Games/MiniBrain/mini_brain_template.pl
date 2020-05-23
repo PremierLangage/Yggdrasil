@@ -108,7 +108,8 @@ def make_minibrain_test(name, action_before_str, check_after_str):
     before and perform some checks after to set the validity of the test.
     """
     key_js_toogle = name.replace(' ', '_')
-    ans = '<h3 style="font-size: 1.2em;" id="'+key_js_toogle+'"><u><b>'+name+" :</b></u>"
+    u_js = """onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'" """
+    ans = '<h3 style="font-size: 1.2em;" id="'+key_js_toogle+'" '+u_js+'><b>'+name+" :</b>"
     M = MiniBrain(editor.code)
 
     # prepare the test with actions before
