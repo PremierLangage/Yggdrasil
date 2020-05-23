@@ -40,7 +40,7 @@ inheriting from this template using extends.
 extra_doc==#|html|
 
 <h3 id="extra_doc">Documentation rapide du Mini-Brain</h3>
-<div class="extra_doc_div">
+<div id="extra_doc_div">
 
 <pre style="font-size: 0.8em;">
 Mini Brain cheat sheet :
@@ -81,7 +81,7 @@ $#2  : value in central memory at address indexed by value of register 2
 <script type="text/javascript">
 $(document).ready(function(){
   $("#extra_doc").click(function(){ 
-    $(".extra_doc_div").Toggle(); 
+    $("#extra_doc_div").Toggle(); 
   });
 });
 </script>
