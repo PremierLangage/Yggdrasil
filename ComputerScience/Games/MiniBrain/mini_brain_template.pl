@@ -107,7 +107,7 @@ def make_minibrain_test(name, action_before_str, check_after_str):
     Run an instance of mini-brain for the test. Apply some actions 
     before and perform some checks after to set the validity of the test.
     """
-    ans = '<h3 style="font-size: 1.5em;"><u><b>'+name+" :</b></u>"
+    ans = '<h3 style="font-size: 1.2em;" id="'+name+'"><u><b>'+name+" :</b></u>"
     M = MiniBrain(editor.code)
 
     # prepare the test with actions before
@@ -137,13 +137,23 @@ def make_minibrain_test(name, action_before_str, check_after_str):
     else:
         ans += ' <span style="color: darkred;"> test échoué</span></h3>'
 
-    ans += "<div><pre>" + M._verbose + "</pre>"
+    ans += '<div id="'+name+'_div"><pre>' + M._verbose + "</pre>"
     ans += check_str+"</div>"
+
+    ans += '<script type="text/javascript">'
+    ans += '$(document).ready(function(){'
+    ans += '  $("#'+name+'_div").hide();'
+    ans += '  $("#'+name+'").click(function(){'
+    ans += '    $("#'+name+'_div").toggle();'
+    ans += '  });'
+    ans += '});'
+    ans += '</script>'
+
     return (state, ans, M._UAL._cpu_cycles)
 
 nb_good = 0
 nb_bad = 0
-feedback = '<div id="accordion">'
+feedback = '<div>'
 #feedback = ""
 total_cycles = 0
 for i in range(len(all_before)):
@@ -155,9 +165,6 @@ for i in range(len(all_before)):
         nb_bad += 1
     feedback += feedback_test
 feedback += '</div>'
-# feedback += '<script type="text/javascript">'
-# feedback += '  $("#accordion").accordion();'
-# feedback += '</script>'
 
 # test summary
 if nb_bad == 0:
