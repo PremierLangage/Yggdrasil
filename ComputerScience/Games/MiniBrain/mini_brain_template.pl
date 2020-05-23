@@ -70,7 +70,7 @@ def make_minibrain_test(name, action_before_str, check_after_str):
     state = True
     check_str = ""
     for (add, val) in check_after_str:
-        if add > len(M._memory._mem_array) or int(M._memory.get_instruction(add)) != val:
+        if add > len(M._memory._mem_array) or (len(M._memory.get_instruction(add)) == 0 or int(M._memory.get_instruction(add))) != val:
             state = False
             check_str += str(val) + " n'est pas à l'addresse $"+ str(add) + ".<br />"
         else:
