@@ -57,6 +57,9 @@ $#2  : value in central memory at address indexed by value of register 2
 * - empty instruction - : produce the behavior of exit a
 </pre>
 
+==
+
+extra_script==
 <script>
 $( function() {
   $( "#accordion" ).accordion();
