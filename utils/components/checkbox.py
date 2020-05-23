@@ -92,9 +92,9 @@ class CustomCheckbox(Component):
         else:
             raise ValueError(f"'{scoring}' is not a valid scoring")
 
-        if disabled:
-            self.disabled = True
+        self.disabled = disabled
 
         return score
+
 
 
