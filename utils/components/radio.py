@@ -59,4 +59,3 @@ class CustomRadio(Component):
         self.disabled = disabled
 
         return score
-
