@@ -41,7 +41,7 @@ extra_doc==#|html|
 <br />
 
 <h3 id="extra_doc" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-<b>Dérouler/Réduie un rappel des commandes du Mini-Brain</b></h3>
+<b>Dérouler/Réduire le rappel des commandes du Mini-Brain</b></h3>
 
 <div id="extra_doc_div">
 
