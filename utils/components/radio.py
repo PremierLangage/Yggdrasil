@@ -50,11 +50,11 @@ class CustomRadio(Component):
             if id == self._sol and id == self.selection:
                 score = 100
                 if display:
-                    item['css'] = ' success-state icon-check-after'
+                    item['css'] = 'success-state icon-check-after'
             elif display and id != self._sol and id == self.selection:
-                    item['css'] = ' error-state icon-times-after'
+                    item['css'] = 'error-state icon-times-after'
             elif display and id == self._sol and id != self.selection:
-                    item['css'] = ' icon-check-after'
+                    item['css'] = 'icon-check-after'
 
         self.disabled = disabled
 
