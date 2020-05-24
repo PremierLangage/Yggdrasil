@@ -39,11 +39,11 @@ class CustomCheckbox(Component):
         Set items and solutions from lists of right and wrong items.
         """
         if nbitems is None:
-            nbitems = len(right)+len(wrong)
+            nbitems = len(right) + len(wrong)
         if nbright is None:
             nbright = len(right)
 
-        self.setitems(rd.sample(right,nbright)+rd.sample(wrong,nbitems-nbright))
+        self.setitems(rd.sample(right, nbright) + rd.sample(wrong, nbitems-nbright))
 
         self.setsol_from_index(list(range(nbright)))
 
@@ -77,9 +77,8 @@ class CustomCheckbox(Component):
                 nbwrong += 1
                 if display:
                     item['css'] = 'error-state icon-times-after'
-            elif id in self._sol and not item['checked']:
-                if display:
-                    item['css'] = 'icon-check-after'
+            elif id in self._sol and not item['checked'] and display:
+                item['css'] = 'icon-check-after'
                           
         if scoring == "AllOrNothing":
             score = all_or_nothing(nbright, nbwrong)
