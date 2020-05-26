@@ -32,8 +32,11 @@ def carre(n):
     return(n*n)
 
 def premiers_carres(k) :
+    s=0
     for i in range(k) :
-        print (carre(i))
+        s += (carre(i))
+    return s
+
 
 n = int(input("Saisissez un entier :"))
 premiers_carres(n)
