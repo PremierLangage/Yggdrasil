@@ -40,12 +40,12 @@ premiers_carres(n)
 ==
 
 pltest==
->>> if carre(2)!= 4 :  # Vérification de l'existance de carre 
+>>> if carre(2)!= 4 : 
 ...     print(" La fonction carre ne fonctionne pas")
 ==
 
 pltest1==
->>> if premiers_carres(3)!= 5 :  # Vérification de l'existance de carre 
+>>> if premiers_carres(3)!= 5 :
 ...     print(" La fonction premiers_carres ne fonctionne pas")
 ==
 
