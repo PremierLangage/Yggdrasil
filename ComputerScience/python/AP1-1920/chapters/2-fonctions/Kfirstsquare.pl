@@ -21,10 +21,6 @@ Programmer ensuite une fonction **premiers_carres** qui : <br>
 * prend en paramètre un entier k <br>
 * imprime les k premiers carrés de 0 à (k-1)^2 <br>
 
-Pour finir écrivez un e : <br>
-* qui demande à l'utilisateur un entier, <br>
-* appelle la fonction `premiers_carres` et imprime le résultat attendu.
-
 ==
 
 soluce==#|python|
@@ -37,9 +33,6 @@ def premiers_carres(k) :
         s += (carre(i))
     return s
 
-
-n = int(input("Saisissez un entier :"))
-premiers_carres(n)
 ==
 
 pltest==
