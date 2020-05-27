@@ -15,9 +15,7 @@ text ==
 
 ==
 
-key % [ 1,
-3,
-4]
+key % '3'
 
 form ==
 {{ radio|component }}
