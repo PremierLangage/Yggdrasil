@@ -19,6 +19,10 @@ form ==
 {{ radio|component }}
 ==
 
+key = [1,
+2,
+3]
+
 evaluator ==
 score = radio.eval()
 ==
@@ -29,3 +33,4 @@ style.radio ==
     border-radius: 0px;
 }
 ==
+
