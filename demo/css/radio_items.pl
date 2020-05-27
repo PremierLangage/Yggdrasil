@@ -19,10 +19,6 @@ form ==
 {{ radio|component }}
 ==
 
-key = [1,
-2,
-3]
-
 evaluator ==
 score = radio.eval()
 ==
