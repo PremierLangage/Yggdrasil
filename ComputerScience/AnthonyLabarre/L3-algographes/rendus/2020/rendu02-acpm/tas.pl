@@ -48,7 +48,7 @@ pltest1==
 ==
 
 # Vérification de la classe Tas sur des entiers avec doublon
-testname2 = Vérification de la classe Tas sur des entiers
+testname2 = Vérification de la classe Tas sur des entiers avec doublon
 pltest2== 
 >>> # création d'un tas d'entiers aléatoires
 >>> from random import randint; donnees = [88,81,41,87,15,34,46,17,64,34] #
