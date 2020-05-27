@@ -113,6 +113,24 @@ pltest3==
 ...         print("attendu: un triplet avec première valeur =", elem[0], ", obtenu: un triplet avec première valeur =", extraction[0])
 ==
 
+# Vérification de la classe Tas sur des entiers avec doublon
+testname2 = Vérification de la classe Tas sur des entiers avec doublon
+pltest2== 
+>>> # création d'un tas d'entiers aléatoires
+>>> from random import randint; donnees = [88,81,41,87,15,34,46,17,64,34] #
+>>> try:
+...     T = Tas()  # initialisation sans paramètre
+... except TypeError:
+...     T = Tas([])  # initialisation avec un itérable
+>>> for elem in donnees:
+...     T.inserer(elem)
+>>> for elem in sorted(donnees):
+...     extraction = T.extraire_minimum()
+...     if extraction != elem:
+...         print("attendu:", elem, ", obtenu:", extraction)
+==
+
+
 # Vérifications basiques de la classe UnionFind
 testname4 = Vérifications basiques de la classe UnionFind
 pltest4==
@@ -282,6 +300,7 @@ editor.code ==
 # de validation quand vous avez terminé
 
 ==
+
 
 
 
