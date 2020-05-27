@@ -15,7 +15,6 @@ text ==
 
 ==
 
-key % "3"
 
 form ==
 {{ radio|component }}
