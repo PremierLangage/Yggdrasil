@@ -1,8 +1,15 @@
-extends = /template/basicinput.pl
+extends = /model/basic.pl
 
 @ grec_voc_1.csv [data.csv]
 
 title = Vocabulaire grec
+
+input =: Input
+
+form ==
+{{ input | component }}
+==
+
 
 before ==
 import random as rd
@@ -33,5 +40,6 @@ if input.value==traduction:
 else:
     grade=(0,traduction)
 ==
+
 
 
