@@ -15,10 +15,10 @@ text ==
 {{key|safe}}
 ==
 
-key ==
-Ligne 1 : "
-
+key == aaa
+Ligne 1
 Ligne 2
+Ligne 3
 ==
 
 form ==
