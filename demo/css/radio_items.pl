@@ -21,6 +21,7 @@ Ligne 2
 ==
 
 form ==
+{{key|safe}}
 {{ radio|component }}
 ==
 
