@@ -15,7 +15,7 @@ text ==
 {{key}}
 ==
 
-key % δ
+key % "δ"
 form ==
 {{ radio|component }}
 ==
