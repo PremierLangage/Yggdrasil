@@ -12,10 +12,10 @@ radio.setsol_from_index(0)
 ==
 
 text ==
-
+{{key}}
 ==
 
-
+key % δ
 form ==
 {{ radio|component }}
 ==
