@@ -12,9 +12,13 @@ radio.setsol_from_index(0)
 ==
 
 text ==
-
+{{key|safe}}
 ==
 
+key ==
+Ligne 1 : "
+Ligne 2
+==
 
 form ==
 {{ radio|component }}
