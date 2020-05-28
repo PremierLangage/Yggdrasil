@@ -16,12 +16,12 @@ text ==
 ==
 
 key ==
-Ligne 1 : " \n
+Ligne 1 : "
+
 Ligne 2
 ==
 
 form ==
-{{key}}
 {{ radio|component }}
 ==
 
