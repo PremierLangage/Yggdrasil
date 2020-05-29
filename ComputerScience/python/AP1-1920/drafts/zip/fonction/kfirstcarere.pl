@@ -53,7 +53,7 @@ pltest2=f""">>> if carre({n})=={res} :\n print("la fonction carre ne fonctionne 
 after=before
 ==
 
-pltest1==
+pltest==
 >>> carre(1)
 1
 ==
