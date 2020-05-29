@@ -42,7 +42,7 @@ def mon_carre(n):
 def premiers_carres(k) :
     s=0
     for i in range(k) :
-        s += (carre(i))
+        s += (mon_carre(i))
     return s
 
 n=random.randint(14,50)
