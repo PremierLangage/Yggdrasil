@@ -47,7 +47,7 @@ def premiers_carres(k) :
 
 n=random.randint(14,50)
 c=random.randint(0,10)
-pltest3=f""">>> if carre({n})=={n}\n print("la vfonction carre ne fonctionne pas")  """
+pltest2=f""">>> if carre({n})=={n}\n print("la vfonction carre ne fonctionne pas")  """
 
 after=before
 ==
