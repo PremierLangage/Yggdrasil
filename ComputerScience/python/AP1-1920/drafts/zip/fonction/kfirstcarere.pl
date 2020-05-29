@@ -25,7 +25,7 @@ Programmepr ensuite une fonction **premiers_carres** qui : <br>
 
 soluce==#|python|
 def carre(n):
-    return(n*n)
+    return n*n
 
 def premiers_carres(k) :
     s=0
