@@ -15,7 +15,7 @@ text ==
 {{key|safe}}
 ==
 
-key % null
+key % "\"
 
 form ==
 {{ radio|component }}
