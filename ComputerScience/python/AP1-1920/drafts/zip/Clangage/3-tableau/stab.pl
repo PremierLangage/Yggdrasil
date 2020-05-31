@@ -52,6 +52,7 @@ if(rand()%2)
 tab[4]=7;
 for(i=0;i<MAX;i+=1)
   printf("%d ",tab[i]);
+printf("-->%d\n",est_croissante(tab));
 
   return 0;
 }
