@@ -7,11 +7,11 @@ radio.decorator = CustomRadio
 radio.css = myclass
 
 before ==
-dic = globals().copy()
+dic = str(globals().copy())
 ==
 
 text ==
-
+{{dic}}
 ==
 
 form ==
