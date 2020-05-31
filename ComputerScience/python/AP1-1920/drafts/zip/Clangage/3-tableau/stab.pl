@@ -24,6 +24,7 @@ codebefore==
 #include <stdlib.h>
 #include <time.h>
 #define MAX 5
+
 ==
 
 editor.code==
