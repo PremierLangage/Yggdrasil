@@ -39,7 +39,7 @@ for(;i<MAX;i+=1){
     if (tab[i-1] >tab[i])
       return 0;
       }
-  return 1
+  return 1;
 }
 ==
 
