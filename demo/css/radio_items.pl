@@ -11,7 +11,7 @@ dic = str(globals())
 ==
 
 text ==
-{{dic}}
+
 ==
 
 form ==
