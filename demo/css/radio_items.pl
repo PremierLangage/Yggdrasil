@@ -7,7 +7,6 @@ radio.decorator = CustomRadio
 radio.css = myclass
 
 before ==
-dic = globals()
 ==
 
 text ==
@@ -28,4 +27,5 @@ style.radio ==
     border-radius: 0px;
 }
 ==
+
 
