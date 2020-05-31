@@ -11,7 +11,7 @@ dic = str(globals().copy())
 ==
 
 text ==
-{{dic}}
+{{dic|safe}}
 ==
 
 form ==
