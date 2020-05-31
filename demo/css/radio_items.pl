@@ -7,7 +7,7 @@ radio.decorator = CustomRadio
 radio.css = myclass
 
 before ==
-
+dic = globals()
 ==
 
 text ==
