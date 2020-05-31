@@ -48,7 +48,7 @@ codeafter==
 int main(int argc, char* argv[]){
   int tab[5]={-1,2,5,8,78};
  srand(time(NULL));
-if(rand()%2){
+if(rand()%2)
 tab[4]=7;
 
 
