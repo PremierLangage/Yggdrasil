@@ -7,15 +7,12 @@ radio.decorator = CustomRadio
 radio.css = myclass
 
 before ==
-radio.setitems(["AAA", "BBB", "CCC", "DDD"])
-radio.setsol_from_index(0)
+dic = str(globals())
 ==
 
 text ==
-{{key|safe}}
+{{dic}}
 ==
-
-key % "/"
 
 form ==
 {{ radio|component }}
