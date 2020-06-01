@@ -25,9 +25,9 @@ editor.code==
 ==
 
 solution==
+oid mirroir(int tab[],int res[], int size){
 
-void mirroir(int tab[],int res[], int size){
-  int i;
+v  int i;
 
   for(i=0 ; i<size ; i++){
         res[i]=tab[i];
@@ -50,7 +50,7 @@ int main(int argc, char* argv[]){
 mirroir(tab,res,size);
 for(i=0;i<size;i+=1)
     printf("%d ",res[i]);
-  printf("\n"));
+  printf("\n");
 
   return 0;
 }
