@@ -25,9 +25,9 @@ editor.code==
 ==
 
 solution==
-oid mirroir(int tab[],int res[], int size){
+void mirroir(int tab[],int res[], int size){
 
-v  int i;
+  int i;
 
   for(i=0 ; i<size ; i++){
         res[i]=tab[size-i-1];
