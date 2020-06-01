@@ -30,7 +30,7 @@ oid mirroir(int tab[],int res[], int size){
 v  int i;
 
   for(i=0 ; i<size ; i++){
-        res[i]=tab[i];
+        res[i]=tab[size-i-1];
   }
 
 }
