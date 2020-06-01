@@ -5,10 +5,10 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
-Ecrire une fonction qui reçoit deux tableaux d'entiers de même taille, cette taille et remplit le deuxième avec l'image 
+Ecrire une fonction qui reçoit deux tableaux d'entiers de même taille et leur taille, et qui remplit le deuxième avec l'image 
 mirroir du premier.<br>
 Exemple
-Si le premuer tableau de taille 5 contenait 1,2,3,4,5,<br>
+Si le premier tableau de taille 5 contenait 1,2,3,4,5,<br>
 le deuxième contient 5,4,3,2,1 après éxécution de la fonction.
 ==
 
