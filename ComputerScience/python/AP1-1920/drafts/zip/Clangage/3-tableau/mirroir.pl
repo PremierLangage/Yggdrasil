@@ -30,9 +30,9 @@ void mirroir(int tab[],int res[], int size){
   int i;
 
   for(i=0 ; i<size ; i++){
-        res[i]=tab[i]
+        res[i]=tab[i];
   }
-  return ;
+
 }
 ==
 
@@ -49,7 +49,7 @@ int main(int argc, char* argv[]){
   }
 mirroir(tab,res,size);
 for(i=0;i<size;i+=1)
-    printf("%d ",res|i]);
+    printf("%d ",res[i]);
   printf("\n"));
 
   return 0;
