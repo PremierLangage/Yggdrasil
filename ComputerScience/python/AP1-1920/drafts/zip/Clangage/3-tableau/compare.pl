@@ -49,18 +49,18 @@ codeafter==
 int main(int argc, char* argv[]){
   int tab[100],cop[100],dif[100];
   int size = 0;
-  int lu;
+  int lu,r;
 srand(time(NULL));
   while (scanf("%d", &lu) == 1){
     dif[size]=cop[size]=tab[size] = lu;
    size++;
   }
   dif[size-1]=tab[size-1]+1;
-
-if (rand()%2)
-    printf(" ==%d %d\n",identique_tab(tab,cop,size),cop[size-1]);
+r=rand()%2
+if (r%2)
+    printf(" ==%d %d\n",identique_tab(tab,cop,size),r);
 else
-    printf("!=%d %d\n",identique_tab(tab,dif,size),dif[size -1]);
+    printf("!=%d %d\n",identique_tab(tab,dif,size),r);
   return 0;
 }
 ==
