@@ -56,7 +56,8 @@ int main(int argc, char* argv[]){
    size++;
   }
   dif[size-1]=tab[size-1]+1;
-  
+  for(int i=0;i<size;i++)
+    printf("%d %d\n",tab[i],cop[i]);
 if (identique_tab(tab,cop,size)!=1)
     printf("Faux tableaux identiques \n");
 if (identique_tab(tab,dif,size)!=0)
