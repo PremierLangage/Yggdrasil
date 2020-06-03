@@ -40,7 +40,7 @@ int identique_tab(int tab[],int deu[], int size){
     if( deu[i]!=tab[i])
         return 0;
   }
-  return 4;
+  return 1;
 }
 ==
 
@@ -56,6 +56,7 @@ int main(int argc, char* argv[]){
    size++;
   }
   dif[size-1]=tab[size-1]+1;
+  
 if (identique_tab(tab,cop,size)!=1)
     printf("Faux tableaux identiques \n");
 if (identique_tab(tab,dif,size)!=0)
