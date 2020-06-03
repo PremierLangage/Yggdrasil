@@ -59,7 +59,7 @@ srand(time(NULL));
   dif[size-1]=tab[size-1]+1;
 
 if (rand()%2)
-    printf(" ==%d %d\n",identique_tab(tab,cop,size),cop[size-1));
+    printf(" ==%d %d\n",identique_tab(tab,cop,size),cop[size-1]));
 else
        printf("!=%d %d\n",identique_tab(tab,dif,size,dif[size -1]));
   return 0;
