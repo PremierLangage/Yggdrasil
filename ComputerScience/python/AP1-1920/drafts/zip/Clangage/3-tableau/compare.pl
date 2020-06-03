@@ -49,14 +49,14 @@ codeafter==
 int main(int argc, char* argv[]){
   int tab[100],cop[100],dif[100];
   int size = 0;
-  int lu;
+  int lu,i;
 
   while (scanf("%d", &lu) == 1){
     dif[size]=cop[size]=tab[size] = lu;
    size++;
   }
   dif[size-1]=tab[size-1]+1;
-  for(int i=0;i<size;i++)
+  for( i=0;i<size;i++)
     printf("%d %d\n",tab[i],cop[i]);
 if (identique_tab(tab,cop,size)!=1)
     printf("Faux tableaux identiques \n");
