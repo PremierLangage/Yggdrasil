@@ -56,7 +56,7 @@ srand(time(NULL));
    size++;
   }
   dif[size-1]=tab[size-1]+1;
-r=rand()%2
+r=rand();
 if (r%2)
     printf(" ==%d %d\n",identique_tab(tab,cop,size),r);
 else
