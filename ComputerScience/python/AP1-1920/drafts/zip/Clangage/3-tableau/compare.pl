@@ -40,7 +40,7 @@ int identique_tab(int tab[],int deu[], int size){
     if( deu[i]!=tab[i])
         return 0;
   }
-  return 1;
+  return 4;
 }
 ==
 
@@ -49,18 +49,17 @@ codeafter==
 int main(int argc, char* argv[]){
   int tab[100],cop[100],dif[100];
   int size = 0;
-  int lu,r;
-srand(time(NULL));
+  int lu;
+
   while (scanf("%d", &lu) == 1){
     dif[size]=cop[size]=tab[size] = lu;
    size++;
   }
   dif[size-1]=tab[size-1]+1;
-r=rand();
-if (r%2)
-    printf(" ==%d %d\n",identique_tab(tab,cop,size),r);
-else
-    printf("!=%d %d\n",identique_tab(tab,dif,size),r);
+if (identique_tab(tab,cop,size)!=1)
+    printf("Faux tableaux identiques \n");
+if (identique_tab(tab,dif,size)!=0)
+    printf(" Faux tableaux différents  \n");
   return 0;
 }
 ==
