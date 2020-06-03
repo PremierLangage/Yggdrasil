@@ -13,7 +13,7 @@ codebefore==
 
 #include <stdio.h>
 #include <stdlib.h>
-
+#include<time.h>
 ==
 
 editor.code==
@@ -49,7 +49,7 @@ int main(int argc, char* argv[]){
   int tab[100],cop[100],dif[100];
   int size = 0;
   int lu;
-
+srand(time(NULL));
   while (scanf("%d", &lu) == 1){
     dif[size]=cop[size]=tab[size] = lu;
 
@@ -57,7 +57,7 @@ int main(int argc, char* argv[]){
   }
   dif[size-1]=tab[size-1]+1;
 
-if (random()%2)
+if (rand()%2)
     printf("%d \n",identique_tab(tab,cop,size));
 else
        printf("%d \n",identique_tab(tab,dif,size));
