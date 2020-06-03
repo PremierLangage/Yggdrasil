@@ -17,7 +17,17 @@ codebefore==
 ==
 
 editor.code==
-...identique_tab(...)
+int identique_tab(int tab[],int deu[], int size){
+
+  int i;
+
+  for(i=0 ; i<size ; i++){
+    if( deu[i]!=tab[i])
+        return 0;
+  }
+  return 1;
+}
+
 ==
 
 solution==
@@ -38,7 +48,7 @@ codeafter==
 int main(int argc, char* argv[]){
   int tab[100],cop[100],dif[100];
   int size = 0;
-  int lu,i;
+  int lu;
 
   while (scanf("%d", &lu) == 1){
     dif[size]=cop[size]=tab[size] = lu;
@@ -47,7 +57,7 @@ int main(int argc, char* argv[]){
   }
   dif[size-1]=tab[size-1]+1;
 
-if (rand()%2)
+if (random()%2)
     printf("%d \n",identique_tab(tab,cop,size));
 else
        printf("%d \n",identique_tab(tab,dif,size));
