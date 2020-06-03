@@ -59,9 +59,9 @@ srand(time(NULL));
   dif[size-1]=tab[size-1]+1;
 
 if (rand()%2)
-    printf("%d \n",identique_tab(tab,cop,size));
+    printf(" ==%d \n",identique_tab(tab,cop,size));
 else
-       printf("%d \n",identique_tab(tab,dif,size));
+       printf("!=%d \n",identique_tab(tab,dif,size));
   return 0;
 }
 ==
