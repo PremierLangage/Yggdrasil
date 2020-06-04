@@ -30,7 +30,7 @@ void remplace(char tab[],char origine, char but){
 solution==
 void remplace(char tab[],char origine, char but){
   int i;
-  for(i=0 ; tab[i]<'\0' ; i++)
+  for(i=0 ; tab[i]!='\0' ; i++)
     if( tab[i]==origine)
       tab[i]=but;
 }
