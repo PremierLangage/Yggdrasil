@@ -32,19 +32,19 @@ void remplace(int tab[],char origine, char but){
   int i;
   for(i=0 ; tab[i]<'\0' ; i++)
     if( tab[i]==origine)
-      tab[i]=but  ;
+      tab[i]=but;
 }
 
 ==
 
 codeafter==
 
-int main(int argc, char* argv[]){
+int main(void){
   char tab[100];
-  char o,b:
+  char o,b;
 scanf("%s",tab);
 scanf( " %c %c",&o,&b);
-remplace(tab,o,c);
+remplace(tab,o,b);
 printf("%s\n",tab);
 return 0;
 }
