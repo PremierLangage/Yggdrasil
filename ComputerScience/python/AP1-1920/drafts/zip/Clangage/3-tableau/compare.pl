@@ -49,7 +49,7 @@ codeafter==
 int main(int argc, char* argv[]){
   int tab[100],cop[100],dif[100];
   int size = 0;
-  int lu,i;
+  int lu;
 
   while (scanf("%d", &lu) == 1){
     dif[size]=cop[size]=tab[size] = lu;
