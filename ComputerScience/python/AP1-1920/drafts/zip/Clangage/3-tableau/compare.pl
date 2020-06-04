@@ -56,13 +56,17 @@ int main(int argc, char* argv[]){
    size++;
   }
   dif[size-1]=tab[size-1]+1;
-  for( i=0;i<size;i++)
-    printf("%d %d\n",tab[i],cop[i]);
-if (identique_tab(tab,cop,size)!=1)
-    printf("Faux tableaux identiques \n");
-if (identique_tab(tab,dif,size)!=0)
-    printf(" Faux tableaux différents  \n");
-  return 0;
+  /*for( i=0;i<size;i++)
+    printf("%d %d\n",tab[i],cop[i]);*/
+if (identique_tab(tab,cop,size)==1)
+    printf(" tableaux identiques \n");
+else
+  printf("tableaux différents \n");
+if (identique_tab(tab,dif,size)==1)
+     printf(" tableaux identiques \n");
+else
+  printf("tableaux différents \n");
+return 0;
 }
 ==
 
@@ -72,6 +76,7 @@ tests==
    ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,10))])],
   ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
 ==
+
 
 
 
