@@ -40,24 +40,9 @@ void remplace(int tab[],char origine, char but){
 codeafter==
 
 int main(int argc, char* argv[]){
-  int tab[100],cop[100],dif[100];
-  int size = 0;
-  int lu;
+  char tab[100];
+  char o,b:
 
-  while (scanf("%d", &lu) == 1){
-    dif[size]=cop[size]=tab[size] = lu;
-   size++;
-  }
-  dif[size-1]=tab[size-1]+1;
-
-if (identique_tab(tab,cop,size)==1)
-    printf(" tableaux identiques \n");
-else
-  printf("tableaux différents \n");
-if (identique_tab(tab,dif,size)==1)
-     printf(" tableaux identiques \n");
-else
-  printf("tableaux différents \n");
 return 0;
 }
 ==
