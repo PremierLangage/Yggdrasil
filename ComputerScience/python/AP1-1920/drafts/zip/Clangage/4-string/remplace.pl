@@ -42,16 +42,19 @@ codeafter==
 int main(int argc, char* argv[]){
   char tab[100];
   char o,b:
-
+scanf("%s",tab);
+scanf( " %c %c",&o,&b);
+remplace(tab,o,c);
+printf("%s\n",tab);
 return 0;
 }
 ==
 
 
 tests==
-[ ["simple éxécution", "","1 2 3 4 5"],
-   ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,10))])],
-  ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
+[ ["simple éxécution", "","toto o i "],
+["alea","","".join([chr(random.randint(97,122)) for i in range(random.randint(1,15))])+" c C"],
+  ]
 ==
 
 
