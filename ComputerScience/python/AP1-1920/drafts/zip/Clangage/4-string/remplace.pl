@@ -18,7 +18,7 @@ codebefore==
 ==
 
 editor.code==
-void remplace(int tab[],char origine, char but){
+void remplace(char tab[],char origine, char but){
   int i;
   for(i=0 ; tab[i]<'\0' ; i++)
     if( tab[i]==origine)
@@ -28,7 +28,7 @@ void remplace(int tab[],char origine, char but){
 ==
 
 solution==
-void remplace(int tab[],char origine, char but){
+void remplace(char tab[],char origine, char but){
   int i;
   for(i=0 ; tab[i]<'\0' ; i++)
     if( tab[i]==origine)
