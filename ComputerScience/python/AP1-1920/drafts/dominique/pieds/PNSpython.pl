@@ -88,16 +88,7 @@ def pieds_sort(array:list, deb:int ,fin:int):
     en utilisant l'algorithme récursifs des pieds nickelés
     """
     pass
-    #int tmp, tier1, tier2;    
-    if fin == deb+1: # deux 
-        if array[deb] > array[fin]:
-            array[fin],array[deb] = array[deb], array[fin]
-    elif fin > deb+1: # Plus de 2 
-        tier1 = deb + ((fin-deb+1) // 3)
-        tier2 = fin - ((fin-deb+1) // 3)
-        pieds_sort(array, deb, tier2)
-        pieds_sort(array, tier1, fin)
-        pieds_sort(array, deb, tier2)
+
 ==
 
 soluce==
@@ -125,5 +116,8 @@ pltest0==
 ==
 
 pltest1==
-
+>>> import random ; a=random.randint(5,14);b=random.randint(5,14)#
+>>> l2=[12 for _ in range(a)]+[1, 2, 2, 3, 4, 6, 9, 17, 77]+[1 for _ in range(b)] #
+>>> l=[12 for _ in range(a)]+[6,3,1,2,9,17,2,77,4]+[1 for _ in range(b)]; pieds_sort(l,a,a+8);l==l2 # Appel avec des indices internes
+True
 ==
