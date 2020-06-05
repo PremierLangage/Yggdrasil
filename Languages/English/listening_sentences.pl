@@ -1,4 +1,4 @@
-extends = /model/input.pl
+extends = /model/basic.pl
 
 audio1 =$ /Languages/English/audio/sentence1.mp3
 audio2 =$ /Languages/English/audio/sentence2.mp3
@@ -23,6 +23,12 @@ sol=lst_sentences[k]
 
 text ==
 <button onclick="playAudio()" class="btn btn-info"><i class="fas fa-volume-up"></i></button> Transcrire la phrase.
+==
+
+input = Input
+
+form ==
+{{ input|component }}
 ==
 
 extrajs==
