@@ -45,6 +45,7 @@ int main(void){
 scanf("%s",tab);
 scanf( " %c %c",&o,&b);
 remplace(tab,o,b);
+printf("%c %c\n"),o,b);
 printf("%s\n",tab);
 return 0;
 }
