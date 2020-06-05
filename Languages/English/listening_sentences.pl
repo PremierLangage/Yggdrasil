@@ -25,7 +25,7 @@ text ==
 <button onclick="playAudio()" class="btn btn-info"><i class="fas fa-volume-up"></i></button> Transcrire la phrase.
 ==
 
-input = Input
+input =: Input
 
 form ==
 {{ input|component }}
