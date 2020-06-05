@@ -3,6 +3,8 @@
 
 extends=/ComputerScience/python/template/pltest.pl
 
+title= Pieds nickelés 'Sort'
+
 text==
 
 Croquignol, Filochard et Ribouldingue font les constations suivantes :
@@ -70,7 +72,7 @@ sous-tableaux de taille 2:
 Complèter la fonction récurive *pieds_sort* qui opère un tri à la
 manière des pieds nickelés.
 
-La fonction prendra en argument l'adresse d'un tableau et devra trier
+La fonction prendra en argument une liste et devra trier
 tous les éléments situé entre les indices *begin_index* et *end_index*
 tout deux inclus. Outre les appels récursifs, la difficulté de cet
 exercice se situe dans le calcul des bornes à un tier et deux
@@ -79,22 +81,49 @@ nombre total d'éléments à trier n'est pas un multiple de $% 3 %$.
 
 ==
 
+editor.code==
+def pieds_sort(array:list, deb:int ,fin:int):
+    """
+    tri entre deb et fin compris 
+    en utilisant l'algorithme récursifs des pieds nickelés
+    """
+    pass
+    #int tmp, tier1, tier2;    
+    if fin == deb+1: # deux 
+        if array[deb] > array[fin]:
+            array[fin],array[deb] = array[deb], array[fin]
+    elif fin > deb+1: # Plus de 2 
+        tier1 = deb + ((fin-deb+1) // 3)
+        tier2 = fin - ((fin-deb+1) // 3)
+        pieds_sort(array, deb, tier2)
+        pieds_sort(array, tier1, fin)
+        pieds_sort(array, deb, tier2)
+==
+
 soluce==
 def pieds_sort(array:list, deb:int ,fin:int):
-        #int tmp, tier1, tier2;    
-        if fin == deb+1: # deux 
-            if array[deb] > array[fin]:
-              array[fin],array[deb] = array[deb], array[fin]
-        elif fin > deb+1: # Plus de 2 
-            tier1 = deb + ((fin-deb+1) // 3)
-            tier2 = fin - ((fin-deb+1) // 3)
-            pieds_sort(array, deb, tier2)
-            pieds_sort(array, tier1, fin)
-            pieds_sort(array, deb, tier2)
+    #int tmp, tier1, tier2;    
+    if fin == deb+1: # deux 
+        if array[deb] > array[fin]:
+            array[fin],array[deb] = array[deb], array[fin]
+    elif fin > deb+1: # Plus de 2 
+        tier1 = deb + ((fin-deb+1) // 3)
+        tier2 = fin - ((fin-deb+1) // 3)
+        pieds_sort(array, deb, tier2)
+        pieds_sort(array, tier1, fin)
+        pieds_sort(array, deb, tier2)
 
 ==
 
+pltest0==
+>>> l=[10,9,8,7,5,4,3,2,1] ; pieds_sort(l,0,len(l)-1) ; print(l) # Test de base
+[1, 2, 3, 4, 5, 7, 8, 9, 10]
+>>> l=[10,1] ; pieds_sort(l,0,len(l)-1) ; print(l) # Test de base
+[1, 10]
+>>> l=[] ; pieds_sort(l,0,len(l)-1) ; print(l) # Test de base
+[]
+==
+
 pltest1==
->>> l=[10,9,8,7,5,4,3,2,1] ; pieds_sort(l,0,len(l)-1) ; print(l)
-[1,2,3,4,5,6,7,8,9,10]
+
 ==
