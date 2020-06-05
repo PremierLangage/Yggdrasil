@@ -1,4 +1,4 @@
-extends = /template/basicinput.pl
+extends = /model/basicinput.pl
 
 audio1 =$ /Languages/English/audio/sentence1.mp3
 audio2 =$ /Languages/English/audio/sentence2.mp3
@@ -62,5 +62,6 @@ else:
 ==
 
 settings.feedback = rightwrong
+
 
 
