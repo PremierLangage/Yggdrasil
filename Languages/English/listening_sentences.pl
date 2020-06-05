@@ -1,4 +1,4 @@
-extends = /model/basicinput.pl
+extends = /model/input.pl
 
 audio1 =$ /Languages/English/audio/sentence1.mp3
 audio2 =$ /Languages/English/audio/sentence2.mp3
