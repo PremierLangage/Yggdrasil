@@ -55,7 +55,6 @@ codeafter==
 
 int main(void){
   char tab[100];
-int taille:
   scanf("%s",tab);
   scanf("%d",&taille);
   printf("%s\n",tab);			 ;
