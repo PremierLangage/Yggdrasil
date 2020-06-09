@@ -21,7 +21,7 @@ int nb_inversions(int tab[], int size){
    int nb=0;
 
   for(i=0 ; i<size ; i++)
-    for(j=0;j<size;j++)
+    for(j=i+1;j<size;j++)
         if (tab[i] > tab[j])
             nb++;
   
@@ -35,7 +35,7 @@ int nb_inversions(int tab[], int size){
    int nb=0;
 
   for(i=0 ; i<size ; i++)
-    for(j=0;j<size;j++)
+    for(j=i+1;j<size;j++)
         if (tab[i] > tab[j])
             nb++;
   
