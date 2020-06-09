@@ -1,13 +1,13 @@
 
 
-title=Calcul du nombre d'inversions
-tag=tri
+title=Plus long plateau
+tag=tableau
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 Ecrire une fonction de protopype `int plateau(int tab[],int taille,int *debut );` qui reçoit un tableau d'entiers er sa taille,
  renvoie le longueur de la plus longue partie du tableau constitué d'éléments égaux, et place à l'adresse $%{ \tt debut}%$
- l'indice de son premier élément. En cas d'égalité, on gardera le plus petit indide
+ l'indice de son premier élément. <br> En cas d'égalité, on gardera le plus petit indide
 ==
 
 codebefore==
@@ -43,13 +43,12 @@ editor.code==
 ==
 
 solution==
-int plateau(int tab[], int size,int *deb){
+int plateau(int t[], int taille,int *debut){
   int debcourant,debmax,i;
   int lcourant,lmax;
   debcourant=debmax=0;
   lcourant=lmax=1;
   for (i=1;i<taille;i++){
-
     if(t[i]==t[debcourant])
       lcourant++;
     else{
@@ -80,7 +79,7 @@ int main(int argc, char* argv[]){
     size++;
   }
 lg=plateau(tab,size,&deb);
-  printf("le plus grand plateau msure %d et commence en %d\n",lg,deb);
+  printf("le plus grand plateau mesure %d et commence en %d\n",lg,deb);
   return 0;
 }
 ==
