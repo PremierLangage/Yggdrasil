@@ -12,7 +12,7 @@ Ecrire une fonction `est_factoriel` qui reçoit un  entier et  renvoie  s'il est
 
 editor.code==
 
-int est_factoriele( int n){
+int est_factoriel( int n){
     int nb=1,f=1;
     while (f<n){
         nb++;
@@ -32,7 +32,7 @@ codebefore==
 
 solution==
 
-int est_factoriele( int n){
+int est_factoriel( int n){
     int nb=1,f=1;
     while (f<n){
         nb++;
