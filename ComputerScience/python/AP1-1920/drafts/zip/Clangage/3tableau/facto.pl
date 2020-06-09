@@ -59,7 +59,7 @@ scanf("%d",&n);
 tests==
 [ ["simple éxécution", "","1"],
   ["avec un négatif", "","-1"],
-  ["aléatoire positif", "","random.randint(0,20))"], 
+  ["aléatoire positif", "",str(random.randint(0,20)], 
  ]
 ==
 
