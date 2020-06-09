@@ -8,7 +8,7 @@ text==
 On dit qu'un nombre $%x%$ est factoriel s'il existe un entier $% \fact(n)=x%$
 
 Ecrire une fonction de protopype `int est_factoriel(int x);` qui renvoie 1 si $%x%$  est factoriel et$%0%$ sinon.
-==%
+==
 
 codebefore==
 
@@ -57,17 +57,10 @@ scanf("%d",&n);
 
 
 tests==
-[ ["simple éxécution", "","1 2 3 4 5"],
-  ["avec deux négatifs", "","-1 -2"],
-  ["aléatoire négatif", ""," ".join([str(random.randint(-30,-5)) for i in range(random.randint(5,10))])],
-  ["aléatoire positif", ""," ".join([str(random.randint(0,20)) for i in range(random.randint(5,10))])],
-  ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,10))])],
-  ["aléatoire ", ""," ".join([str(random.randint(-10,10)) for i in range(random.randint(5,10))])],
-  ["aléatoire ", ""," ".join([str(random.randint(-100,100)) for i in range(random.randint(10,20))])],
-  ["aléatoire ", ""," ".join([str(random.randint(-10,10)) for i in range(random.randint(5,20))])],
-  ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
+[ ["simple éxécution", "","1"],
+  ["avec un négatif", "","-1"],
+  ["aléatoire positif", "","random.randint(0,20))"], 
+ ]
 ==
-
-
 
 
