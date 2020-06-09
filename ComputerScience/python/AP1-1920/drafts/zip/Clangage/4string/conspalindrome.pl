@@ -69,7 +69,7 @@ return 0;
 
 tests==
 [ ["simple éxécution", "","toto 10 "],
-["alea","","".join([chr(random.randint(97,122)) for i in range(random.randint(1,15))])+str(random.randint(15,32))],
+["alea","","".join([chr(random.randint(97,122)) for i in range(random.randint(1,15))])+" "+str(random.randint(15,32))],
   ]
 ==
 
