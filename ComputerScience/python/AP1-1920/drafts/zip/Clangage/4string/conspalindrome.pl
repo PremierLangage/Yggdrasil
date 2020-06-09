@@ -14,7 +14,7 @@ Exemple<br>
 Si le tableau s contient "velo" <br>
 constpalin(s,10) transforme s en"veloolev" et renvoie 1<br>
 et l'appel<br>
-constpalins,6) laisse s inchangé et renvoie 0
+constpalin(s,6) laisse s inchangé et renvoie 0
 ==
 codebefore==
 
