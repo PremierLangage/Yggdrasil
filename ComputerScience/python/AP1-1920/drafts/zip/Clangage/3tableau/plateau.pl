@@ -18,12 +18,33 @@ codebefore==
 ==
 
 editor.code==
-  
+  int plateau(int t[], int taille,int *debut){
+  int debcourant,debmax,i;
+  int lcourant,lmax;
+  debcourant=debmax=0;
+  lcourant=lmax=1;
+  for (i=1;i<taille;i++){
+    if(t[i]==t[debcourant])
+      lcourant++;
+    else{
+      if(lmax<lcourant){
+        lmax=lcourant;
+        debmax=debcourant;
+      }
+      debcourant=i;
+      lcourant=1;
+    }
+
+  }
+ *debut=debmax;
+  return lmax;
+}
+ 
 ==
 
 solution==
 int plateau(int tab[], int size,int *deb){
-  int debcournt,debmax,i;
+  int debcourant,debmax,i;
   int lcourant,lmax;
   debcourant=debmax=0;
   lcourant=lmax=1;
