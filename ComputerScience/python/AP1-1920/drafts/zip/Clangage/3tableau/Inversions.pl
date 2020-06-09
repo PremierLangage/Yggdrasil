@@ -1,5 +1,5 @@
 
-title=Calcul du nombre d'inersions
+title=Calcul du nombre d'inversions
 tag=tri
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
