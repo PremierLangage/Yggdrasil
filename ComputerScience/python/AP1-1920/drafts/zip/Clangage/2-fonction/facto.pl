@@ -53,11 +53,12 @@ codeafter==
 int main(void) {
 	int n ;
 scanf("%d",&n);
-if (est_factoriel(n))
+if (est_factoriel(n)){
 	printf("%d  est factoriel\n",n);
+    }
 else
 	printf("%d  n'est pas factoriel\n",n);
-	return 0;
+return 0;
 }
 ==
 
