@@ -9,12 +9,13 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 text==
 
 Ecrire une fonction de prototype `int constpalin(char s[],int taille)` qui reçoit un tableau contenan une chaine de caractères et sa taille et transf
-orme si possible lahaine en palindrome en lui ajoutant son  mirroir.
-Exemple
+orme si possible la chaine en palindrome en lui ajoutant son  mirroir.<br>
+Exemple<br>
 Si le tableau s contient "velo" <br>
 constpalin(s,10) transforme s en"veloolev" et renvoie 1<br>
 et l'appel<br>
 constpalins,6) laisse s inchangé et renvoie 0
+==
 codebefore==
 
 #include <stdio.h>
