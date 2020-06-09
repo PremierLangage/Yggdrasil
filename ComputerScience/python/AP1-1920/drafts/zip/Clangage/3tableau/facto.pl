@@ -60,7 +60,7 @@ tests==
 [ ["simple éxécution", "","1"],
   ["avec un négatif", "","-1"],
   ["aléatoire ", "",str(random.randint(0,20))], 
-   ["aléatoires ", "",str(random.choise([20,720,3628800,40320]))], 
+   ["aléatoires ", "",str(random.choice([20,720,3628800,40320]))], 
  ]
 ==
 
