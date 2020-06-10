@@ -1,9 +1,10 @@
 
+@ /utils/sandboxio.py
+@ /builder/before.py [builder.py]
+@ /grader/evaluator.py [grader.py]
 
-@ /lib/builder/before.py [builder.py]
-@ /lib/grader/evaluator.py [grader.py]
-
-
+text=''
+form=''
 
 @ slide.md
 
@@ -12,9 +13,10 @@ before==
 with open ("slide.md" , "r") as f:
     t=f.readlines()
 
-slides=t.split("***")
+slides=("\n".join(t)).split("***\n")
 numero=0
-text=slides[numero]
+
+text=slides
 
 title= f"les slides {numero}"
 
