@@ -21,14 +21,20 @@ typedef
 ...
 Point2d; 
 void affiche_point2d(...){
-      printf("Le point est bien déclaré et a pour abcisse %d et ordonnée %d.\n", ..);
+      printf("Le point a pour abcisse %d et ordonnée %d.\n", ..);
 
+==
+codebefore==
+#include <stdio.h>
 ==
 solution==
 typedef struct point2d{
   int abs;
   int ord; 
 }Point2d;
+void affiche_point2d(Point2d p){
+      printf("Le point a pour abcisse %d et ordonnée %d.\n", p.abs,p.ord);
+
 
 ==
 
