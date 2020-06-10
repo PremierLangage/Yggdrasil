@@ -46,7 +46,7 @@ class CustomSortList(Component):
                     e['css'] = 'error-state'
                     css_state="danger"
 
-                e['content']=  """<div class="d-flex justify-content-between align-items-center">
+                e['content']=  """<div class="d-flex justify-content-between ">
                         <span class="badge badge-%s"> %s </span>
                         <span> %s </span>
                         <span></span>
@@ -62,5 +62,6 @@ class CustomSortList(Component):
             raise ValueError(f"'{scoring}' is not a valid scoring")
 
         return score
+
 
 
