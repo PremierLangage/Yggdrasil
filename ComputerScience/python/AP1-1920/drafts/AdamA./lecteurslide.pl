@@ -26,4 +26,5 @@ numero+=1
 text=slides[numero]
 
 title= f"les slides {numero}"
+grade=(0,"continuez")
 ==
