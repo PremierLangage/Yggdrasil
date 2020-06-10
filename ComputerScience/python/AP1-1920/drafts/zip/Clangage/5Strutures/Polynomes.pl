@@ -56,10 +56,11 @@ int main(int argc, char* argv[]){
 	Polynome p;
     Monome m;
 
-	P.taille = atoi(argv[1]);
-	M.degre= atoi(argv[2]);
-
-	
+	p.taille = atoi(argv[1]);
+	m.degre= atoi(argv[2]);
+    m.coef=5;
+	p.termes[0]=m;
+    p.termes[1]=p.termes[0]
 	return 0;
 }
 
