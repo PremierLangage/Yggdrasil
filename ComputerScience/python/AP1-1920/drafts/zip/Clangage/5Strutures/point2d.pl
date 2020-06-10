@@ -26,6 +26,7 @@ void affiche_point2d(...){
 ==
 codebefore==
 #include <stdio.h>
+
 ==
 solution==
 typedef struct point2d{
@@ -34,7 +35,7 @@ typedef struct point2d{
 }Point2d;
 void affiche_point2d(Point2d p){
       printf("Le point a pour abcisse %d et ordonnée %d.\n", p.abs,p.ord);
-
+}
 
 ==
 
@@ -50,7 +51,7 @@ return 0;
 ==
 
 tests== 
-[ ["Déclaration et utilisation", "",""] ] 
+[ ["Déclaration et utilisation", ""," ".join([str(random.randint(-20,20)) for i in range(2)])] ] 
 ==
 
 
