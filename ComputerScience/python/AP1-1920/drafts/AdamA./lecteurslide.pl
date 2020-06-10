@@ -16,9 +16,9 @@ with open ("slide.md" , "r") as f:
 slides=("\n".join(t)).split("***\n")
 numero=0
 
-text=slides
+#text=slides
 
-title= f"les slides {numero}"
+title= " Bien venuto "
 
 ==
 
