@@ -52,12 +52,12 @@ codeafter==
 #include <stdlib.h>
 
 
-int main(int argc, char* argv[]){
+int main(void){
 	Polynome p;
     Monome m;
 
-	p.taille = atoi(argv[1]);
-	m.degre= atoi(argv[2]);
+	p.taille = 22;
+	m.degre= 4;
     m.coef=5;
 	p.termes[0]=m;
     p.termes[1]=p.termes[0];
@@ -67,8 +67,8 @@ int main(int argc, char* argv[]){
 ==
 
 tests==
-[ ["Déclaration et utilisation 1", "14 3",""],
-  ["Déclaration et utilisation 2", "47 85",""] ] 
+[ ["Déclaration et utilisation 1", "",""],
+ ] 
 ==
 
 
