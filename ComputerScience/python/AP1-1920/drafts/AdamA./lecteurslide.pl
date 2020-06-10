@@ -25,8 +25,10 @@ title= f"les slides {numero}"
 
 evaluator==
 numero+=1
-text=slides[numero]
-
-title= f"les slides {numero}"
-grade=(0,"continuez")
+if not  numero==len(slides):
+    text=slides[numero]
+    title= f"les slides {numero}"
+    grade=(0,"continuez")
+else:
+    grade=(100,"Bonne continuation")
 ==
