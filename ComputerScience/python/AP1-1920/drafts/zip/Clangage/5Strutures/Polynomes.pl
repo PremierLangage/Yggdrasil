@@ -19,7 +19,9 @@ editor.code==
 typedef ...
 
 ==
-
+codebefore==
+#define MAX 50
+==
 solution==
 
 typedef struct {
@@ -30,7 +32,7 @@ typedef struct {
 typedef struct{
     Monome termes[MAX];
     int taille;
-}Polynomm;
+}Polynome;
 
 ==
 
