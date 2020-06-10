@@ -60,7 +60,7 @@ int main(int argc, char* argv[]){
 	m.degre= atoi(argv[2]);
     m.coef=5;
 	p.termes[0]=m;
-    p.termes[1]=p.termes[0]
+    p.termes[1]=p.termes[0];
 	return 0;
 }
 
