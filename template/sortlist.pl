@@ -1,4 +1,4 @@
-extends = basic.pl
+extends = /model/basic.pl
 
 @ /utils/components/sortlist.py [customsortlist.py]
 
