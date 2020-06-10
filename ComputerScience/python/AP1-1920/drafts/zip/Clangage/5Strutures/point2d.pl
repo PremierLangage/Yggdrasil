@@ -26,6 +26,7 @@ void affiche_point2d(...){
 ==
 codebefore==
 #include <stdio.h>
+#include <stdlib.h>
 
 ==
 solution==
@@ -45,15 +46,15 @@ codeafter==
 
 int main(int argc, char* argv[]){
   Point2d G;
-  G.abs=atoi(argv{1];
-  G.ord=atoi(argv{2];
+  G.abs=atoi(argv{1]);
+  G.ord=atoi(argv{2]);
   affiche_point2d(G);
 return 0;
 }
 ==
 
 tests== 
-[ ["Déclaration et utilisation", ""," ".join([str(random.randint(-20,20)) for i in range(2)])] ] 
+[ ["Déclaration et utilisation", " ".join([random.randint(-20,20) for i in range(2)])] ] ,""
 ==
 
 
