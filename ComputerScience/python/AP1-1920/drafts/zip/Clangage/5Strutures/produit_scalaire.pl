@@ -42,8 +42,8 @@ typedef struct vector3d{
   int z;
 }Vector3d;
 
-int scalar_product3d(Vector3d* u, Vector3d* v){
-  return u->x*v->x + u->y*v->y + u->z*v->z;
+int scalar_product3d(Vector3d u, Vector3d v){
+  return u.x*v.x + u.y*v.y + u.z*v.z;
 }
 
 ==
@@ -66,7 +66,7 @@ int main(int argc, char* argv[]){
 
   printf("<(%d, %d, %d), (%d, %d, %d)> = %d\n", u.x, u.y, u.z, 
                                                 v.x, v.y, v.z, 
-                                                scalar_product3d(&u, &v));
+                                                scalar_product3d(u, v));
   return 0;
 }
 
@@ -81,5 +81,6 @@ tests==
   ["vecteurs aléatoires", " ".join([str(random.randint(-10,10)) for i in range(6)]), "" ],
   ["vecteurs aléatoires", " ".join([str(random.randint(-10,10)) for i in range(6)]), "" ] ]
 ==
+
 
 
