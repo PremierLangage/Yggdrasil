@@ -25,5 +25,5 @@ evaluator==
 numero+=1
 text=slides[numero]
 
-
+title= f"les slides {numero}"
 ==
