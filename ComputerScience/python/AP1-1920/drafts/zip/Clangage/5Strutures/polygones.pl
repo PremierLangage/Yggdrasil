@@ -1,11 +1,10 @@
 
-
 # Copyright 2017-2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
 # Produit scalaire de vecteurs 3D
 
-author=Marc Zipstein
-title=Polygones
+author=Nicolas Borie 
+title=Produit scalaire de vecteurs en dimension 3
 tag=structure|function
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
@@ -43,17 +42,17 @@ typedef struct vector3d{
   int z;
 }Vector3d;
 
-int scalar_product3d(Vector3d* u, Vector3d* v){
-  return u->x*v->x + u->y*v->y + u->z*v->z;
+int scalar_product3d(Vector3d u, Vector3d v){
+  return u.x*v.x + u.y*v.y + u.z*v.z;
 }
 
 ==
 
 codebefore==
-#include<math.h>
+
 #include <stdio.h>
 #include <stdlib.h>
-
+#include<math.h>
 ==
 
 
@@ -65,9 +64,9 @@ int main(int argc, char* argv[]){
   Vector3d u = {atoi(argv[1]), atoi(argv[2]), atoi(argv[3])};
   Vector3d v = {atoi(argv[4]), atoi(argv[5]), atoi(argv[6])};
 
-  printf("<(%d, %d, %d), (%d, %d, %d)> = %fn", u.x, u.y, u.z, 
+  printf("<(%d, %d, %d), (%d, %d, %d)> = %f\n", u.x, u.y, u.z, 
                                                 v.x, v.y, v.z, 
-                                              scalar_product3d(&u, &v));
+                                                sqrt(scalar_product3d(u, v)));
   return 0;
 }
 
@@ -82,7 +81,6 @@ tests==
   ["vecteurs aléatoires", " ".join([str(random.randint(-10,10)) for i in range(6)]), "" ],
   ["vecteurs aléatoires", " ".join([str(random.randint(-10,10)) for i in range(6)]), "" ] ]
 ==
-
 
 
 
