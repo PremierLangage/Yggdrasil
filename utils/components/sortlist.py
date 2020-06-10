@@ -46,7 +46,7 @@ class CustomSortList(Component):
                     e['css'] = 'error-state'
                     css_state="danger"
 
-                e['content']=  """<div class="d-flex justify-content-between ">
+                e['content']=  """<div class="d-flex justify-content-between align-items-center">
                         <span class="badge badge-%s"> %s </span>
                         <span> %s </span>
                         <span></span>
