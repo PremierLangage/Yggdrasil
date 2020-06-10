@@ -3,7 +3,7 @@
 #
 # Déclaration d'une strcture C pour des points 2 dimensions entiers
 
-author=Nicolas Borie et marc Zipstein
+author=Nicolas Borie et Marc Zipstein
 title=Structure pour points entiers en dimension 2
 tag=structure
 extends=/ComputerScience/C/template/stdsandboxC.pl
@@ -44,7 +44,9 @@ codeafter==
 #include <stdio.h>
 
 int main(int argc, char* argv[]){
-  Point2d G = {12, -3};
+  Point2d G;
+  G.abs=atoi(argv{1];
+  G.ord=atoi(argv{2];
   affiche_point2d(G);
 return 0;
 }
