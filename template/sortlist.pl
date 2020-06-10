@@ -1,6 +1,6 @@
 extends = basic.pl
 
-@ /utils/sortlist.py [customsortlist.py]
+@ /utils/components/sortlist.py [customsortlist.py]
 
 sortlist =: SortList
 sortlist.decorator = CustomSortList
@@ -15,3 +15,4 @@ sortlist.disabled=True
 ==
 
 settings.feedback.class = score
+
