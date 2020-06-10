@@ -53,8 +53,10 @@ return 0;
 }
 ==
 
-tests== 
-[ ["Déclaration et utilisation", " ".join([random.randint(-20,20) for i in range(2)])] ] ,""
+tests==
+[
+ ["Déclaration et utilisation", " ".join([str(random.randint(-20,20)) for i in range(2)])]  ,""]
+ ]
 ==
 
 
