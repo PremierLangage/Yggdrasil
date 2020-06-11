@@ -38,7 +38,7 @@ extracss ==
 .sort-item { 
 padding: unset !important;
 text-align: left !important;
-min-height: 24px !important;
+min-height: unset !important;
  }
 .icon-check-after p::after {
     font-family: "Font Awesome 5 Free";
