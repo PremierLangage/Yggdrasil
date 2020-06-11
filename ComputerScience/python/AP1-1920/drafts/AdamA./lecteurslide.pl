@@ -3,8 +3,8 @@
 @ /builder/before.py [builder.py]
 @ /grader/evaluator.py [grader.py]
 
-text=''
-form=''
+text=
+form=
 
 @ slide.md
 
@@ -24,7 +24,7 @@ numero=0
 
 evaluator==
 numero+=1
-if not  numero==len(slides):
+if not  numero<len(slides):
     text=slides[numero]
     title= f"les slides {numero}"
     grade=(0,"continuez")
