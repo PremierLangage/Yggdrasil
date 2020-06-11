@@ -7,8 +7,12 @@ sortlist.decorator = CustomSortList
 
 form ==
 <style>
-.sort-item { text-align: left !important; }
-</style>
+.sort-item { 
+padding: unset;
+text-align: left !important;
+min-height: unset;
+ }
+ </style>
 {{ sortlist|component }}
 ==
 
