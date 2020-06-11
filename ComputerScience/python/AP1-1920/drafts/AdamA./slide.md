@@ -6,18 +6,20 @@ author: DR
 
 ***
 
-# Titre 
+# L'idée: des slides
 
-*coucou* pas   
-*coollée    collée*
+*On peut ainsi intercaller des slides et des exercices*   
+
 
 ***
 
 
-# Titre 2
+# GÉNIAL NON
+
+![El PanoMontBlanc ](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/PanoMontBlancHDR_edit_1.jpg/800px-PanoMontBlancHDR_edit_1.jpg)
 
 
-**recoucou** 
+
 
 
 
