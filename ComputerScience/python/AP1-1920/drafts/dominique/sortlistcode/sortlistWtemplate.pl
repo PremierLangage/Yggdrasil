@@ -1,6 +1,10 @@
 extends = /model/basic.pl
 
-# @ /utils/components/scramblecode.py [customsortlist.py]
+@ /utils/components/scramblecode.py [customsortlist.py]
+
+
+@ codefile.py 
+
 
 sortlist =: SortList
 sortlist.decorator = CustomSortList
