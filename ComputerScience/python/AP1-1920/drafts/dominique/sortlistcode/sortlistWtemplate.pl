@@ -25,7 +25,7 @@ settings.feedback.class = score
 
 title = Scramble code 
 
-# lint:codefile.py
+# linter:codefile.py
 
 before ==
 import random as rd
