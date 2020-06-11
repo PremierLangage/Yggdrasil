@@ -501,7 +501,7 @@ def generate_output_from_solution(tests, dic):
 # - the expected output                                            #
 ####################################################################
 
-def graderI(tests, dic, flags="-Wall -ansi"):
+def graderI(tests, dic, flags="-Wall -ansi -lm"):
     """
     This grader takes in arguments a dictionnary of tests nammed `tests`.
     Each record must be of this format :
@@ -545,7 +545,7 @@ def graderI(tests, dic, flags="-Wall -ansi"):
 #                                                                  #
 ####################################################################
     
-def graderII(tests, dic, flags="-Wall -ansi"):
+def graderII(tests, dic, flags="-Wall -ansi -lm"):
     """
     This grader takes in arguments a dictionnary of tests nammed `tests`.
     Each record must be of this format :
@@ -557,4 +557,5 @@ def graderII(tests, dic, flags="-Wall -ansi"):
     generate_output_from_solution(tests, dic)
     # Since tests are completed with expected output, call graderI
     return graderI(tests, dic, flags=flags)
+
 
