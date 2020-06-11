@@ -24,7 +24,7 @@ numero=0
 
 evaluator==
 numero+=1
-if not  numero<len(slides):
+if numero<len(slides):
     text=slides[numero]
     title= f"les slides {numero}"
     grade=(0,"continuez")
@@ -41,3 +41,4 @@ background-size: contain;
 }
 </style>
 ==
+
