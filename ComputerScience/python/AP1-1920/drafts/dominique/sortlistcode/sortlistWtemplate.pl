@@ -12,7 +12,9 @@ import csv
 with open('codefile.py', newline='') as file:
     l=file.readlines()
 
-sortlist.setdata_from_list([ "```"+x.strip()+"```" for x in l])
+
+sortlist.setdata_from_list([ "<pre>"+x.rstrip()+"</pre>" for x in l if x!= "\n"])
+
 ==
 
 text ==
@@ -33,7 +35,11 @@ settings.feedback = lightscore
 
 extracss ==
 <style>
-.sort-item { text-align: left !important; }
+.sort-item { 
+padding: unset !important;
+text-align: left !important;
+min-height: 24px !important;
+ }
 .icon-check-after p::after {
     font-family: "Font Awesome 5 Free";
     color: #155724;
