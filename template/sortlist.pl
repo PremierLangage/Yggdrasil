@@ -8,9 +8,9 @@ sortlist.decorator = CustomSortList
 form ==
 <style>
 .sort-item { 
-padding: 0px 0px ;
+padding: 0px 0px !important;
 text-align: left !important;
-min-height: 14px;
+min-height: 14px !important;
  }
  </style>
 {{ sortlist|component }}
