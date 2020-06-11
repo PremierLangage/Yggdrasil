@@ -6,6 +6,9 @@ sortlist =: SortList
 sortlist.decorator = CustomSortList
 
 form ==
+<style>
+.sort-item { text-align: left !important; }
+</style>
 {{ sortlist|component }}
 ==
 
