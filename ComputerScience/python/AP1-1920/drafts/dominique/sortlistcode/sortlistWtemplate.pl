@@ -12,7 +12,7 @@ import csv
 with open('codefile.py', newline='') as file:
     l=file.readlines()
 
-sortlist.setdata_from_list([ "<code>"+x.strip()+"</code>" for x in l])
+sortlist.setdata_from_list([ "```"+x.strip()+"```" for x in l])
 ==
 
 text ==
@@ -28,19 +28,57 @@ score = sortlist.eval()
 
 settings.feedback = lightscore
 
-sortlist.css==
-background: #f4f4f4;
-    border: 1px solid #ddd;
-    border-left: 3px solid #f36d33;
-    color: #666;
-    page-break-inside: avoid;
-    font-family: monospace;
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 1.6em;
-    max-width: 100%;
-    overflow: auto;
-    padding: 1em 1.5em;
-    display: block;
-    word-wrap: break-word;
+
+
+
+extracss ==
+<style>
+.sort-item { text-align: left; }
+.icon-check-after p::after {
+    font-family: "Font Awesome 5 Free";
+    color: #155724;
+    margin-left: 1em;
+    content: "\f00c";
+    vertical-align: middle;
+    font-weight: 900;
+}
+
+.icon-times-after p::after {
+    font-family: "Font Awesome 5 Free";
+    color: #721c24;
+    margin-left: 1em;
+    content: "\f00d";
+    vertical-align: middle;
+    font-weight: 900;
+}
+
+.icon-check-before p::before {
+    font-family: "Font Awesome 5 Free";
+    color: #155724;
+    margin-right: 1em;
+    content: "\f00c";
+    vertical-align: middle;
+    font-weight: 900;
+}
+
+.icon-times-before p::before {
+    font-family: "Font Awesome 5 Free";
+    color: #721c24;
+    margin-right: 1em;
+    content: "\f00d";
+    vertical-align: middle;
+    font-weight: 900;
+}
+
+.error-text-unit {
+    color: #721c24;
+    text-decoration: line-through red;
+}
+
+.success-text-unit {
+    color: #155724;
+    text-decoration: underline green;
+}
+</style>
 ==
+
