@@ -18,7 +18,7 @@ sortlist.setdata_from_list([ "<pre>"+x.rstrip()+"</pre>" for x in l if x!= "\n"]
 ==
 
 text ==
-Remettez dans l'ordre pour que la fonction soit conforme à sont doc test.
+Remettez dans l'ordre pour que la fonction soit conforme à son doc test.
 ==
 
 
