@@ -8,7 +8,7 @@ form=''
 
 @ slide.md
 
-title=les slides 
+title=Des slides pour vous  
 before==
 with open ("slide.md" , "r") as f:
     t=f.readlines()
@@ -18,7 +18,6 @@ numero=0
 
 #text=slides
 
-title= " Bien venuto "
 
 ==
 
@@ -31,4 +30,14 @@ if not  numero==len(slides):
     grade=(0,"continuez")
 else:
     grade=(100,"Bonne continuation")
+==
+
+
+dummy.extracss==
+<style>
+.exercise__header {
+background: center no-repeat url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/PanoMontBlancHDR_edit_1.jpg/800px-PanoMontBlancHDR_edit_1.jpg");
+background-size: contain;
+}
+</style>
 ==
