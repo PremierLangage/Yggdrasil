@@ -19,7 +19,7 @@ text ==
 Classer ces premiers ministres de la Ve République du plus ancien au plus récent (selon la date d'entrée en fonction).
 ==
 
-
+sortlist.ite
 
 
 evaluator ==
@@ -33,7 +33,7 @@ settings.feedback = lightscore
 
 extracss ==
 <style>
-.sort-item { text-align: left; }
+.sort-item { text-align: left !important; }
 .icon-check-after p::after {
     font-family: "Font Awesome 5 Free";
     color: #155724;
