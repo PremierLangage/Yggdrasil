@@ -1,6 +1,6 @@
 extends = /template/sortlist.pl
 
-title = Premiers ministres (SortList)
+title = Scramble code 
 
 
 @ codefile.py
@@ -18,7 +18,7 @@ sortlist.setdata_from_list([ "<pre>"+x.rstrip()+"</pre>" for x in l if x!= "\n"]
 ==
 
 text ==
-Classer ces premiers ministres de la Ve République du plus ancien au plus récent (selon la date d'entrée en fonction).
+Remettez dans l'ordre pour que la fonction soit conforme à sont doc test.
 ==
 
 
@@ -32,59 +32,4 @@ settings.feedback = lightscore
 
 
 
-
-extracss ==
-<style>
-.sort-item { 
-padding: unset !important;
-text-align: left !important;
-min-height: unset !important;
- }
-.icon-check-after p::after {
-    font-family: "Font Awesome 5 Free";
-    color: #155724;
-    margin-left: 1em;
-    content: "\f00c";
-    vertical-align: middle;
-    font-weight: 900;
-}
-
-.icon-times-after p::after {
-    font-family: "Font Awesome 5 Free";
-    color: #721c24;
-    margin-left: 1em;
-    content: "\f00d";
-    vertical-align: middle;
-    font-weight: 900;
-}
-
-.icon-check-before p::before {
-    font-family: "Font Awesome 5 Free";
-    color: #155724;
-    margin-right: 1em;
-    content: "\f00c";
-    vertical-align: middle;
-    font-weight: 900;
-}
-
-.icon-times-before p::before {
-    font-family: "Font Awesome 5 Free";
-    color: #721c24;
-    margin-right: 1em;
-    content: "\f00d";
-    vertical-align: middle;
-    font-weight: 900;
-}
-
-.error-text-unit {
-    color: #721c24;
-    text-decoration: line-through red;
-}
-
-.success-text-unit {
-    color: #155724;
-    text-decoration: underline green;
-}
-</style>
-==
 
