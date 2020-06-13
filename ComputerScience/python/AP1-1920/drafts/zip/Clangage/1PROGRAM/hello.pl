@@ -4,8 +4,6 @@
 #
 # Exercice simple pour tester PL avec le langage C.
 
-
-#author=Nicolas Borie
 name=Premier programme en C
 title=Premier programme en C
 tag=program
@@ -41,6 +39,7 @@ int main(void){
 tests==
 [ ["simple éxécution", "","", "Hello World!\n"] ]
 ==
+
 
 
 
