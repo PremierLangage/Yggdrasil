@@ -89,6 +89,7 @@ int main(int argc, char* argv[]){
     tab.sommets[size].y=y;
     size++;
   }
+  tab.nbsommets=size;
   d=perimetre(tab);
 
   printf("le perimetre mesure %f\n",d);
