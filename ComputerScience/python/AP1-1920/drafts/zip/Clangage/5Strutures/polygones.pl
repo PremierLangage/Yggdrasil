@@ -27,17 +27,8 @@ typedef struct {
 Point sommets[MAXSOMMETS];
 int nb_sommets;
 }Polygone;
-float distance(Point a ,Point b){
-return sqrt((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y));
-}
 
-float perimetre(Polygone p){
-int i;
-float perim=distance(p.sommets[p.nb_sommets-1],p.sommets[0]);
-for(i=0;i<p.nb_sommets-1;i++)
-perim+=distance(p.sommets[i],p.sommets[i+1]);
-return perim;
-}
+
 
   
 ==
@@ -48,17 +39,6 @@ Point sommets[MAXSOMMETS];
 int nb_sommets;
 }Polygone;
 
-float distance(Point a ,Point b){
-return sqrt((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y));
-}
-
-float perimetre(Polygone p){
-int i;
-float perim=distance(p.sommets[p.nb_sommets-1],p.sommets[0]);
-for(i=0;i<p.nb_sommets-1;i++)
-perim+=distance(p.sommets[i],p.sommets[i+1]);
-return perim;
-}
 
   
 
@@ -70,7 +50,8 @@ codebefore==
 #include <stdio.h>
 #include <math.h>
 #define MAXSOMMETS 50
- typedef struct{
+
+typedef struct{
 int x;
 int y;
 }Point;
@@ -78,11 +59,14 @@ int y;
 ==
 
 codeafter==
+float distance(Point a ,Point b){
+return (sqrt((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y)));
+}
 
 int main(){
   Polygone  tab;
   int size =0 ;
-  int x,y;
+  int x,y,i;
   float d;
 
   while (scanf("%d", &x) == 1){
@@ -92,8 +76,9 @@ int main(){
     size++;
   }
   tab.nb_sommets=size;
-  d=perimetre(tab);
-
+  d=distance(tab[0],tab[1]);
+for(i=0;i<size;i++)
+printf("%d %d\n",tab.sommets[i].x, tab.sommets[i].y);
   printf("le perimetre mesure %f\n",d);
   return 0;
 }
