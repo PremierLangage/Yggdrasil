@@ -1,0 +1,77 @@
+
+title=Maximum d'un tabeau
+tag=tab
+extends=/ComputerScience/C/template/stdsandboxC.pl
+
+text==
+
+Ecrire une fonction `int max_tab(int t[],int taille)` qui reçoit un tzbleau et sa taille (>0) et renvoie son maximum.
+==
+
+codebefore==
+
+#include <stdio.h>
+#include <stdlib.h>
+
+==
+
+editor.code==
+int max_tab(int tab[], int size){
+  int i;
+int max=tab[0];
+
+  for(i=1 ; i<size ; i++){
+    if (tab[i] > max)
+      max = tab[i];
+  }
+  return max;
+} 
+==
+
+solution==
+int max_tab(int tab[], int size){
+  int i;
+int max=tab[0];
+
+  for(i=1 ; i<size ; i++){
+    if (tab[i] > max)
+      max = tab[i];
+  }
+  return max;
+} 
+==
+
+codeafter==
+
+int main(int argc, char* argv[]){
+  int tab[100];
+  int size = 0;
+  int lu;
+
+  while (scanf("%d", &lu) == 1){
+    tab[size] = lu;
+    size++;
+  }
+
+  printf("Le maximum des entiers est %d\n", max_tab(tab, size));
+
+  return 0;
+}
+==
+
+
+tests==
+[ ["simple éxécution", "","1 2 3 4 5"],
+  ["avec deux négatifs", "","-1 -2"],
+  ["aléatoire négatif", ""," ".join([str(random.randint(-30,-5)) for i in range(random.randint(5,10))])],
+  ["aléatoire positif", ""," ".join([str(random.randint(0,20)) for i in range(random.randint(5,10))])],
+  ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,10))])],
+  ["aléatoire ", ""," ".join([str(random.randint(-10,10)) for i in range(random.randint(5,10))])],
+  ["aléatoire ", ""," ".join([str(random.randint(-100,100)) for i in range(random.randint(10,20))])],
+  ["aléatoire ", ""," ".join([str(random.randint(-10,10)) for i in range(random.randint(5,20))])],
+  ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
+==
+
+
+
+
