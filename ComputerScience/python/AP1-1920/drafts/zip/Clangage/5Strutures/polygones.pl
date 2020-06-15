@@ -1,50 +1,33 @@
 
 # Copyright 2017-2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
-# Produit scalaire de vecteurs 3D
+# Polygones
 
-author=Nicolas Borie 
-title=Produit scalaire de vecteurs en dimension 3
+author=Marc Zipstein
+titre= Périmetre d'un polygone
 tag=structure|function
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-Le produit scalaire $%\langle u, v \rangle%$ de deux vecteurs $%u = (x_u, y_u, z_u)%$ et 
-$%v = (x_v, y_v, z_v)%$ est donné par la formule 
-$% \langle u, v \rangle = x_u \times x_v + y_u \times y_v + z_u \times z_v%$.
-
-<br />
-
-Suivant la structure C qui vous est fournie, ecrire une fonction
-*scalar_product3d* qui retourne le produit scalaire de deux vecteurs
-de type *Vector3d* passés par adresse.
-    
+On utilise la structure<br>
+typedef struct{<br>
+int x,y;<br>
+}Point;<br>
+pour représenter un point du plan.<br>
+Ecrire une fonction `distance ` qui reçoit deux *Point* et renvoie leur distance.<br>
+Définir une structure `Polygone` formé<br>
+d'un tableau de *Point* de nom `sommets`;<br>
+d'un entier `nombre`, le nombre effectif de points<br>
+ecrire une fonction `perimetre` qui recoit un polygone et renvoie son périmetre
 ==
 
 editor.code==
-typedef struct vector3d{
-  int x;
-  int y;
-  int z;
-}Vector3d;
 
-... scalar_product3d(...){
-  /* Votre code ici */
-}
   
 ==
 
 solution==
 
-typedef struct vector3d{
-  int x;
-  int y;
-  int z;
-}Vector3d;
-
-int scalar_product3d(Vector3d u, Vector3d v){
-  return u.x*v.x + u.y*v.y + u.z*v.z;
-}
 
 ==
 
@@ -53,9 +36,11 @@ codebefore==
 #include <stdio.h>
 #include <stdlib.h>
 #include<math.h>
-
+typedef struct{
+int x;
+int y;
+}
 ==
-
 
 codeafter==
 
@@ -82,6 +67,7 @@ tests==
   ["vecteurs aléatoires", " ".join([str(random.randint(-10,10)) for i in range(6)]), "" ],
   ["vecteurs aléatoires", " ".join([str(random.randint(-10,10)) for i in range(6)]), "" ] ]
 ==
+
 
 
 
