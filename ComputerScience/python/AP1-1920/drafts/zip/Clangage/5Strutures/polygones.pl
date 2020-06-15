@@ -17,7 +17,7 @@ pour représenter un point du plan.<br>
 Ecrire une fonction `distance ` qui reçoit deux *Point* et renvoie leur distance.<br>
 Définir une structure `Polygone` formé<br>
 d'un tableau de *Point* de nom `sommets`;<br>
-d'un entier `nombre`, le nombre effectif de points<br>
+d'un entier `nb_sommets`, le nombre effectif de points<br>
 
 Ecrire une fonction `perimetre` qui recoit un polygone et renvoie son périmetre
 ==
@@ -28,34 +28,20 @@ editor.code==
 ==
 
 solution==
+typedef struct {
+Point sommets[MAXSOMMETS];
+int nb_sommets;
+
 float distance(Point a ,Point b){
+return (sqrt((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y)));
 }
 
-==
-
-codebefore==
-
-#include <stdio.h>
-#include <stdlib.h>
-#include<math.h>
-typedef struct{
-int x;
-int y;
-}
-==
-
-codeafter==
-
- 
-int main(int argc, char* argv[]){
-
-  Vector3d u = {atoi(argv[1]), atoi(argv[2]), atoi(argv[3])};
-  Vector3d v = {atoi(argv[4]), atoi(argv[5]), atoi(argv[6])};
-
-  printf("<(%d, %d, %d), (%d, %d, %d)> = %f\n", u.x, u.y, u.z, 
-                                                v.x, v.y, v.z, 
-                                                sqrt(scalar_product3d(u, v)));
-  return 0;
+float perimetre(Polygone p[]){
+int i;
+float perim=distance(p.sommets[p.nb_sommets-1],p.sommets[0]);
+fot(i=0;i<p.nb_sommets-1;i++)
+perim+=distance(p.sommets[i],p.sommets[i+1]);
+return perim;
 }
 
 ==
@@ -69,6 +55,7 @@ tests==
   ["vecteurs aléatoires", " ".join([str(random.randint(-10,10)) for i in range(6)]), "" ],
   ["vecteurs aléatoires", " ".join([str(random.randint(-10,10)) for i in range(6)]), "" ] ]
 ==
+
 
 
 
