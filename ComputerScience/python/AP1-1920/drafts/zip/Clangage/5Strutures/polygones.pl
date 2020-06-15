@@ -4,7 +4,7 @@
 # Polygones
 
 author=Marc Zipstein
-titre= Périmetre d'un polygone
+title= Périmetre d'un polygone
 tag=structure|function
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
@@ -18,7 +18,8 @@ Ecrire une fonction `distance ` qui reçoit deux *Point* et renvoie leur distanc
 Définir une structure `Polygone` formé<br>
 d'un tableau de *Point* de nom `sommets`;<br>
 d'un entier `nombre`, le nombre effectif de points<br>
-ecrire une fonction `perimetre` qui recoit un polygone et renvoie son périmetre
+
+Ecrire une fonction `perimetre` qui recoit un polygone et renvoie son périmetre
 ==
 
 editor.code==
