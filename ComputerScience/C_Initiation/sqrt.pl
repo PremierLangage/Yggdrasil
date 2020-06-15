@@ -10,7 +10,7 @@ sqrt(5).
 ==
 
 editor.code==
-float rc(float x){
+double rc(double x){
 return sqrt(x); 
 }                               
 ==
@@ -22,15 +22,14 @@ codebefore==
 ==
 solution==
 
-float rc(float x){
+double rc(double){
 return sqrt(x   ); 
 }
 ==
-
 codeafter==
 
 int main(void){
-  printf("%f",rc(5));
+  printf("%f\n",rc(5));
 return 0;
 }
 ==
