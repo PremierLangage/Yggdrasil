@@ -60,7 +60,7 @@ class PreActionsAndCompile():
     - compile the extended source into an executable
     - generate feedback for the compilation
     """
-    def __init__(self, source_path, exercice, flags="-Wall -ansi"):
+    def __init__(self, source_path, exercice, flags="-Wall -ansi -lm"):
         """
         Initialize `self` from the name of the file containing the
         source, the python dictionnary of the exercice and a string
@@ -557,5 +557,6 @@ def graderII(tests, dic, flags="-Wall -ansi -lm"):
     generate_output_from_solution(tests, dic)
     # Since tests are completed with expected output, call graderI
     return graderI(tests, dic, flags=flags)
+
 
 
