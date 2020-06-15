@@ -28,7 +28,8 @@ editor.code==
 ==
 
 solution==
-
+float distance(Point a ,Point b){
+}
 
 ==
 
