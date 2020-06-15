@@ -5,7 +5,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
-Ecrire une fonction `int max_tab(int t[],int taille)` qui reçoit un tzbleau et sa taille (>0) et renvoie son maximum.
+Ecrire une fonction `int max_tab(int t[],int taille)` qui reçoit un tableau et sa taille (>0) et renvoie son maximum.
 ==
 
 codebefore==
@@ -47,6 +47,7 @@ tests==
   ["aléatoire ", ""," ".join([str(random.randint(-10,10)) for i in range(random.randint(5,20))])],
   ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
 ==
+
 
 
 
