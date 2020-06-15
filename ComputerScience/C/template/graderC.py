@@ -513,7 +513,7 @@ def graderI(tests, dic, flags="-Wall -ansi -lm"):
     The compiling and linking `flags` will be used during this process. Then,
     for each test inside the dictionnary,
     """
-    compilation = PreActionsAndCompile("basic.c", exercice)
+    compilation = PreActionsAndCompile("basic.c", exercice, flags=flags)
     compilation.compile()
     dico_reponse['compilation_state'] = compilation.compilation_state()
     dico_reponse['compilation_feedback'] = compilation.feedback()
