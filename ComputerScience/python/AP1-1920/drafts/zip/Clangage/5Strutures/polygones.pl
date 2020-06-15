@@ -60,7 +60,7 @@ int y;
 
 codeafter==
 float distance(Point a ,Point b){
-return (sqrt((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y)));
+return sqrt((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y));
 }
 
 int main(){
@@ -76,9 +76,8 @@ int main(){
     size++;
   }
   tab.nb_sommets=size;
-  d=distance(tab[0],tab[1]);
-for(i=0;i<size;i++)
-printf("%d %d\n",tab.sommets[i].x, tab.sommets[i].y);
+  d=distance(tab.sommets[0],tab.sommets[1]);
+
   printf("le perimetre mesure %f\n",d);
   return 0;
 }
