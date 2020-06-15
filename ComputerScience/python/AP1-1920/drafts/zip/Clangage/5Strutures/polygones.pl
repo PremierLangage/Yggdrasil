@@ -34,7 +34,7 @@ return (sqrt((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y)));
 float perimetre(Polygone p){
 int i;
 float perim=distance(p.sommets[p.nb_sommets-1],p.sommets[0]);
-for(i=;i<p.nb_sommets-1;i++)
+for(i=0;i<p.nb_sommets-1;i++)
 perim+=distance(p.sommets[i],p.sommets[i+1]);
 return perim;
 }
@@ -55,7 +55,7 @@ return (sqrt((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y)));
 float perimetre(Polygone p){
 int i;
 float perim=distance(p.sommets[p.nb_sommets-1],p.sommets[0]);
-fot(i=;i<p.nb_sommets-1;i++)
+fot(i=0;i<p.nb_sommets-1;i++)
 perim+=distance(p.sommets[i],p.sommets[i+1]);
 return perim;
 }
