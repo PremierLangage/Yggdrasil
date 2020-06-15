@@ -444,7 +444,7 @@ class Play_tests():
 #                     Generate output from solution                #
 ####################################################################
 
-def generate_output_from_solution(tests, dic):
+def generate_output_from_solution(tests, dic, flags="-Wall -ansi -lm"):
     """
     This function take in arguments a list of test without expected
     output. Using a solution provided by the teacher inside the
@@ -467,7 +467,7 @@ def generate_output_from_solution(tests, dic):
     src_file_solution.write(dic['solution'])
     src_file_solution.close()
 
-    compilation = PreActionsAndCompile("src_teacher.c", dic)
+    compilation = PreActionsAndCompile("src_teacher.c", dic, flags=flags)
     compilation.compile()
     teacher_exec = compilation.exec_path()
     
