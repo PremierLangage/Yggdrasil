@@ -23,6 +23,21 @@ Ecrire une fonction `perimetre` qui recoit un polygone et renvoie son périmetre
 ==
 
 editor.code==
+typedef struct {
+Point sommets[MAXSOMMETS];
+int nb_sommets;
+}Polygone;
+float distance(Point a ,Point b){
+return (sqrt((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y)));
+}
+
+float perimetre(Polygone p){
+int i;
+float perim=distance(p.sommets[p.nb_sommets-1],p.sommets[0]);
+for(i=;i<p.nb_sommets-1;i++)
+perim+=distance(p.sommets[i],p.sommets[i+1]);
+return perim;
+}
 
   
 ==
@@ -31,14 +46,15 @@ solution==
 typedef struct {
 Point sommets[MAXSOMMETS];
 int nb_sommets;
+}Polygone;
 
 float distance(Point a ,Point b){
 return (sqrt((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y)));
 }
 
-float perimetre(Polygone p[]){
+float perimetre(Polygone p){
 int i;
-float perim=distance(p.sommets[p.nb_sommets-1],p.sommets[]);
+float perim=distance(p.sommets[p.nb_sommets-1],p.sommets[0]);
 fot(i=;i<p.nb_sommets-1;i++)
 perim+=distance(p.sommets[i],p.sommets[i+1]);
 return perim;
@@ -56,13 +72,14 @@ codebefore==
 int x;
 int y;
 }Point;
+
 ==
 
 codeafter==
 
 int main(int argc, char* argv[]){
-  Point tab[100];
-  int size = ;
+  Polygone  tab;
+  int size =0 ;
   int x,y;
   float d;
 
@@ -75,14 +92,14 @@ int main(int argc, char* argv[]){
   d=perimetre(tab);
 
   printf("le perimetre mesure %f\n",d);
-  return ;
+  return 0;
 }
 ==
 
 tests== 
 [ ["Pythagorre", "", "0 0 0 3 4 0 "],
 	
-  ["vecteurs aléatoires","", " ".join([str(random.randint(-10,10)) for i in 2*range(6)]) ] ]
+  ["vecteurs aléatoires","", " ".join([str(random.randint(-10,10)) for i in range(6)]) ] ]
 ==
 
 
