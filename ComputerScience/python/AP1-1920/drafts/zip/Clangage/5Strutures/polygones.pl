@@ -51,7 +51,8 @@ codebefore==
 #include <stdlib.h>
 #include <stdio.h>
 #include<math.h>
-typedef struct{
+#define MAXSOMMETS 50
+ typedef struct{
 int x;
 int y;
 }Point;
