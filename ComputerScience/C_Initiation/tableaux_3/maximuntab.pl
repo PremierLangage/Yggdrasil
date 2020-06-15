@@ -18,11 +18,7 @@ codebefore==
 editor.code==
 int max_tab(int tab[], int size){
  ...
-  for(i=1 ; i<size ; i++){
-    if (tab[i] > max)
-      max = tab[i];
-  }
-  return max;
+  
 } 
 ==
 
