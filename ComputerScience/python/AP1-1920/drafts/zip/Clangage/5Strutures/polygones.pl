@@ -46,6 +46,19 @@ return perim;
 
 ==
 
+codebefore==
+
+#include <stdlib.h>
+#include <stdio.h>
+#include<math.h>
+typedef struct{
+int x;
+int y;
+}Point;
+==
+
+
+
 tests== 
 [ ["Simple", "1 1 1 1 1 1", ""],
 	["Nul1", "1 1 0 1 -1 1", ""],
@@ -55,7 +68,6 @@ tests==
   ["vecteurs aléatoires", " ".join([str(random.randint(-10,10)) for i in range(6)]), "" ],
   ["vecteurs aléatoires", " ".join([str(random.randint(-10,10)) for i in range(6)]), "" ] ]
 ==
-
 
 
 
