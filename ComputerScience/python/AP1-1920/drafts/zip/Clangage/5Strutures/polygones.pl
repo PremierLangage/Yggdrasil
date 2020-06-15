@@ -28,7 +28,7 @@ Point sommets[MAXSOMMETS];
 int nb_sommets;
 }Polygone;
 float distance(Point a ,Point b){
-return (sqrt((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y)));
+return ((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y));
 }
 
 float perimetre(Polygone p){
