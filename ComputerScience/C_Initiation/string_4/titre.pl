@@ -1,5 +1,3 @@
-
-
 title=Mise en titre
 tag=tab
 extends=/ComputerScience/C/template/stdsandboxC.pl
