@@ -1,6 +1,7 @@
 
 
 author=
+difficulty=3
 
 title=Construit un palindrome.
 tag=string
@@ -8,13 +9,15 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
-Ecrire une fonction de prototype `int constpalin(char s[],int taille)` qui reçoit un tableau contenan une chaine de caractères et sa taille et transf
-orme si possible la chaine en palindrome en lui ajoutant son  mirroir.<br>
-Exemple<br>
-Si le tableau s contient "velo" <br>
-constpalin(s,10) transforme s en"veloolev" et renvoie 1<br>
-et l'appel<br>
-constpalin(s,6) laisse s inchangé et renvoie 0
+Ecrire une fonction de prototype `int constpalin(char s[],int taille)` 
+qui reçoit un tableau de taille `taille` contenant une chaine de caractères et concatène a celle ci 
+son mirroir pour que le tableau contienne un palindrome.  
+On faira attention 
+Exemple  
+Si le tableau s contient "velo"  
+`constpalin(s,10)` transforme s en"veloolev" et renvoie 1  
+et l'appel suivant  
+`constpalin(s,6)` laisse s inchangé et renvoie 0
 ==
 codebefore==
 
@@ -72,6 +75,7 @@ tests==
 ["alea","","".join([chr(random.randint(97,122)) for i in range(random.randint(1,15))])+" "+str(random.randint(15,32))],
   ]
 ==
+
 
 
 
