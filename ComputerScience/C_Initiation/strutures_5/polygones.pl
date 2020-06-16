@@ -33,7 +33,7 @@ double distance(Point a ,Point b){
 }
 double perimetre(Polygone p){
 int i;
-float perim=distance(p.sommets[p.nb_sommets-1],p.sommets[0]);
+double perim=distance(p.sommets[p.nb_sommets-1],p.sommets[0]);
 for(i=0;i<p.nb_sommets-1;i++)
   perim+=distance(p.sommets[i],p.sommets[i+1]);
 return perim;
@@ -52,7 +52,7 @@ double distance(Point a ,Point b){
 }
 double perimetre(Polygone p){
 int i;
-float perim=distance(p.sommets[p.nb_sommets-1],p.sommets[0]);
+double perim=distance(p.sommets[p.nb_sommets-1],p.sommets[0]);
 for(i=0;i<p.nb_sommets-1;i++)
   perim+=distance(p.sommets[i],p.sommets[i+1]);
 return perim;
@@ -75,9 +75,6 @@ int y;
 ==
 
 codeafter==
-double distance(Point a ,Point b){
-return sqrt((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y));
-}
 
 int main(){
   Polygone  tab;
