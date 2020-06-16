@@ -30,6 +30,13 @@ class CustomSortList(Component):
         """
         rd.shuffle(self.items)
 
+
+    def compare(self):
+        """
+            
+        """
+
+
     def eval(self, display=True, scoring="KendallTau", disabled=True):
         """
         Evaluate the answer stored in the component.
@@ -64,6 +71,7 @@ class CustomSortList(Component):
             raise ValueError(f"'{scoring}' is not a valid scoring")
 
         return score
+
 
 
 
