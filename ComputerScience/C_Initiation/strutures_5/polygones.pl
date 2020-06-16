@@ -82,7 +82,6 @@ return sqrt((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y));
 int main(){
   Polygone  tab;
   int size =0 ;
-  int x,y,i;
   float d;
 
   while (scanf("%d", &x) == 1){
