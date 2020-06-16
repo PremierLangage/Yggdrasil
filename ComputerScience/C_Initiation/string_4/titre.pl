@@ -1,7 +1,7 @@
 
-author=
+author= 
 
-title = Mise en titre
+title=Mise en titre
 tag=tab
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
