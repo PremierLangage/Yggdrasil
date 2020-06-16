@@ -23,8 +23,60 @@ codebefore==
 
 #include <stdio.h>
 #include <stdlib.h>
+#define MAX 50
 
 ==
 
 editor.code==
+void remplit(char t[][MAX],int li,int col){
+  char l='a';
+  int d=0;
+  int i,j;
+  for(i= 0;i<li;i++)
+    for(j=0;j<col;j++){
+      t[i][j]=l;
+      d=(d+1)%26;
+      l='a'+d;
+    }
+}
+==
+solution==
+void remplit(char t[][MAX],int li,int col){
+  char l='a';
+  int d=0;
+  int i,j;
+  for(i= 0;i<li;i++)
+    for(j=0;j<col;j++){
+      t[i][j]=l;
+      d=(d+1)%26;
+      l='a'+d;
+    }
+}
+==
+codeafter==
+void affiche  (char t[][MAX],int li,int col){
+ 
+  int i,j;
+  for(i= 0;i<li;i++){
+    for(j=0;j<col;j++)
+      printf("%c", t[i][j]);
+    printf("\n");
+    }
+}
+int main(void){
+  char t[MAX][MAX];
+  int li,col;
+  scanf("%d %d",&li,&col);
+  remplit(t,li,col);
+  affiche(t,li,col);
+  return 0;
+}
+
+==
+
+
+tests==
+[ ["simple éxécution", "","3 4"],
+["aléatoire ", "",str(random.randint(4,8))+" "+str(random.randint(9,15))],
+]
 ==
