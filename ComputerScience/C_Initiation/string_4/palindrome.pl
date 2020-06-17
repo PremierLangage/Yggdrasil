@@ -58,8 +58,8 @@ else
 
 
 tests==
-[ ["simple éxécution", "","kayak"],
- ["aleatoire","",random.choice(["elle","velo","radar","avion","rotor","serres","solos","sufffit"])],
+[ 
+ ["aleatoire","",random.choice(["elle","kayak","velo","radar","avion","rotor","serres","solos","sufffit"])],
   ]
 ==
 
