@@ -9,10 +9,13 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
-Ecrire une fonction de prototype `int constpalin(char s[],int taille)` 
-qui reçoit un tableau de taille `taille` contenant une chaine de caractères et concatène a celle ci 
-son mirroir pour que le tableau contienne un palindrome.  
-On faira attention 
+Ecrire une fonction de prototype `int construit_palin(char s[],int taille)` 
+qui reçoit un tableau de taille `taille` contenant une chaine de caractères et la transforme,
+si possible, en palindrome:  
+si la chaine est déjà un palindrome elle reste inchangée
+sinon si la taille du tableau et suffisante on la concatène a  
+son miroir pour que le tableau contienne un palindrome.  
+On fera attention à la taille du tabeau 
 Exemple  
 Si le tableau s contient "velo"  
 `constpalin(s,10)` transforme s en"veloolev" et renvoie 1  
@@ -75,6 +78,7 @@ tests==
 ["alea","","".join([chr(random.randint(97,122)) for i in range(random.randint(1,15))])+" "+str(random.randint(15,32))],
   ]
 ==
+
 
 
 
