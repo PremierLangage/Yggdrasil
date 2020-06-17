@@ -99,7 +99,7 @@ int main(){
 tests== 
 [ ["Pythagorre", "", "0 0 0 3 4 0 "],
 	
-  ["vecteurs aléatoires","", " ".join([str(random.randint(-10,10)) for i in range(2*random.randint(3,6)]) ] ]
+  ["sommets aléatoires","", " ".join([str(random.randint(-10,10)) for i in range(2*random.randint(3,6))]) ] ]
 ==
 
 
