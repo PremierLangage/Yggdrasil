@@ -40,7 +40,7 @@ Ce quiz contient {{nbstep}} questions.
 
 textstep ==
 <strong> Question {{ step + 1 }}. </strong> 
-{{ statement[step] }}
+{{ statement[step] | markdown}}
 ==
 
 formstep ==
@@ -50,4 +50,5 @@ formstep ==
 evaluatorstep ==
 score = comp[step].eval()
 ==
+
 
