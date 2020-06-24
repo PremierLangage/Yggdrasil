@@ -1,6 +1,6 @@
 
 # author=Fanny Garnevault
-title=Une fonction carre
+title=Evalutation question
 
 tag=function # N'oubliez pas de remplir ce champs svp
 extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
