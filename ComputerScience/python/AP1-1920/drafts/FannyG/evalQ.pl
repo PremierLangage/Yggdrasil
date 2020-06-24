@@ -3,5 +3,5 @@
 
 title=Evalutation question
 
-
+form  = {{ inputbox|component }}
 
