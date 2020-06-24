@@ -26,7 +26,7 @@ evaluator==
 numero+=1
 if numero<len(slides):
     text=slides[numero]
-    title= f"les slides {numero}"
+    title= f"{numero}/{len(slides}"
     grade=(0,"continuez")
 else:
     grade=(100,"Bonne continuation")
