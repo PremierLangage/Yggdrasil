@@ -6,11 +6,11 @@
 text=
 form=
 
-@ slide.md
+@ presentation.md
 
-title=Des slides pour vous  
+title= CA COMMENCE
 before==
-with open ("slide.md" , "r") as f:
+with open ("presentation.md" , "r") as f:
     t=f.readlines()
 
 slides=("\n".join(t)).split("***\n")
