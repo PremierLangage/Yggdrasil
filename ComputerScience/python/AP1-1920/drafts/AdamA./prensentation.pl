@@ -5,8 +5,7 @@
 
 extends = QCU.pl
 
-text=
-form=
+
 
 @ presentation.md
 
@@ -36,6 +35,7 @@ else:
     grade=(100,"Bonne continuation")
 ==
 
+text= ou est mon exo sinon
 
 dummy.extracss==
 <style>
