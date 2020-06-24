@@ -11,7 +11,7 @@ general_feedback = " Merci pour votre réponse."
 
 title = Evalutation question
 text  ==
-Enonce de la question
+Enonce de la question  
 Réponse de l'élève
 ==
 form  = {{ inputbox|component }}
