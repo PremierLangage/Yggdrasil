@@ -14,7 +14,7 @@ text  ==
 Enonce de la question  
 Réponse de l'élève  
 Question(s) à choix multiples (1 seule réponse sélectionnable)  
-Explication de la note
+Explication de la note dans inputbox
 ==
 form  = {{ inputbox|component }}
 
