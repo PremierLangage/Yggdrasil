@@ -10,7 +10,10 @@ inputbox.type = text
 general_feedback = " Merci pour votre réponse." 
 
 title = Evalutation question
-text  = PLEASE OVERRIDE THE TEXT OF THE EXERCISE
+text  ==
+Enonce de la question
+Réponse de l'élève
+==
 form  = {{ inputbox|component }}
 
 before= 
