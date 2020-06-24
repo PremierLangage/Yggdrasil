@@ -5,6 +5,8 @@
 
 extends = QCU.pl
 
+text= ou est mon exo sinon
+form= répond
 
 
 @ presentation.md
@@ -35,7 +37,6 @@ else:
     grade=(100,"Bonne continuation")
 ==
 
-text= ou est mon exo sinon
 
 dummy.extracss==
 <style>
