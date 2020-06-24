@@ -38,12 +38,3 @@ def carre(n):
 ==
 editor.height=145
 
-
-
-
-
-
-
-
-
-
