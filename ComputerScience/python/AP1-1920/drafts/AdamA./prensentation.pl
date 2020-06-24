@@ -3,6 +3,8 @@
 @ /builder/before.py [builder.py]
 @ /grader/evaluator.py [grader.py]
 
+extends = QCU.pl
+
 text=
 form=
 
@@ -23,11 +25,13 @@ numero=0
 
 
 evaluator==
-numero+=1
-if numero<len(slides):
+numero += 1
+if numero < len(slides):
     text=slides[numero]
-    title= f"{numero}/{len(slides}"
+    title= f"{numero}/{len(slides)-1}"
     grade=(0,"continuez")
+        
+
 else:
     grade=(100,"Bonne continuation")
 ==
