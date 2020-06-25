@@ -17,9 +17,9 @@ evaluator==#|python|
 exec(editor.code)
 
 nb_bad = 0
-if fonction_eleve(int(data1)) is not bool(expected1):
+if fonction_eleve(int(data1)) is not bool(int(expected1)):
     nb_bad += 1
-if fonction_eleve(int(data2)) is not bool(expected2):
+if fonction_eleve(int(data2)) is not bool(int(expected2)):
     nb_bad += 1
 
 note = 100 - 50*nb_bad
