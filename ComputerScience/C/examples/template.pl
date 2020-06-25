@@ -10,6 +10,7 @@ form==
 {{ editor|component }}
 ==
 
+@ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
 
 evaluator==#|python|
