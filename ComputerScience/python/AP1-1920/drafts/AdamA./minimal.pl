@@ -8,7 +8,7 @@ Bon ben voilé un énoncé...
 ==
 
 form==
-<input type="text" id="form_pouet" name="fname">
+
 ==
 
 evaluator==#|python|
@@ -17,3 +17,4 @@ note = 100
 erreur de syntaxe....
 grade = (note, feedback)
 ==
+
