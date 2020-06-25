@@ -1,3 +1,11 @@
+editor =: CodeEditor
+editor.theme = dark
+editor.language = python
+editor.code ==
+def fonction_eleve(...): 
+    # write your code here
+==
+
 form==
 {{ editor|component }}
 ==
