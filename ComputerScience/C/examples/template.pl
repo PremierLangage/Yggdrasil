@@ -2,6 +2,8 @@ form==
 {{ editor|component }}
 ==
 
+grader  =@ /grader/evaluator.py
+
 evaluator==#|python|
 exec(editor.code)
 
