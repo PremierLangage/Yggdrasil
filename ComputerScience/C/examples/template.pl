@@ -23,6 +23,5 @@ if fonction_eleve(int(data2)) is not bool(int(expected2)):
     nb_bad += 1
 
 note = 100 - 50*nb_bad
-
 grade = (note, "Votre note : "+str(note))
 ==
