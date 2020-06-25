@@ -10,7 +10,7 @@ un piéton traverse au rouge. je fais quoi?
 
 choices==
 ~j'accélère
-~j'active e siège éjectable et laisse la voiture se charger du reste
+~j'active le siège éjectable et laisse la voiture se charger du reste
 ~je peins le feu en vert
 =j'ai pas le permis
 ==
