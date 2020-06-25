@@ -7,7 +7,9 @@ text==
 Bon ben voilé un énoncé...
 ==
 
-
+form==
+<input type="text" id="form_pouet" name="fname">
+==
 
 evaluator==#|python|
 feedback = "J'ai bien lu votre formulaire" + response['pouet']
