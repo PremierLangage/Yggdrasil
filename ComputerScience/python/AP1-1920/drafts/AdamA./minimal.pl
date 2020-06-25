@@ -7,9 +7,7 @@ text==
 Bon ben voilé un énoncé...
 ==
 
-form==
 
-==
 
 evaluator==#|python|
 feedback = "J'ai bien lu votre formulaire" + response['pouet']
