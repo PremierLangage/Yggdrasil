@@ -1,11 +1,11 @@
 extends = /gift/templates/qselectset.pl
 
 title==
-Q2
+QCU
 ==
 
 text==
-un piéton traverse au ri=ouge. je fais quoi? 
+un piéton traverse au rouge. je fais quoi? 
 ==
 
 choices==
