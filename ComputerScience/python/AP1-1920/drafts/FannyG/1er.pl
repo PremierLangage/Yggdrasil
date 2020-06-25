@@ -1,5 +1,5 @@
 
-# Fanny Garnevault 02/06/2020 pas OK
+
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Fanny Garnevault
 title=Une fonction carre
@@ -38,6 +38,7 @@ def carre(n):
     return n*6
 ==
 editor.height=145
+
 
 
 
