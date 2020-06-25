@@ -1,4 +1,4 @@
-extend=template.pl
+extends=template.pl
 
 title=Pair ou impair
 
