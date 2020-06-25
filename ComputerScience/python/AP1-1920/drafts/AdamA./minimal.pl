@@ -12,7 +12,7 @@ form==
 ==
 
 evaluator==#|python|
-feedback = response['pouet']
+feedback = "J'ai bien lu votre formulaire" + response['pouet']
 note = 100
 grade = (note, feedback)
 ==
