@@ -9,7 +9,7 @@ l'argument est pair et `False` si l'argument est impair.
 ==
 
 data1=1
-expected1=False
+expected1=0
 data2=42
-expected2=True
+expected2=1
 
