@@ -5,13 +5,14 @@ Q2
 ==
 
 text==
-Quelle couleur se trouve entre l'orange et le vert dans le spectre ?
+un piéton traverse au ri=ouge. je fais quoi? 
 ==
 
 choices==
-=jaune #Bonne réponse; bravo !
-~rouge #Mauvaise réponse, c'est jaune.
-~bleu #Mauvaise réponse, c'est jaune.
+~j'accélère
+~j'active e siège éjectable et laisse la voiture se charger du reste
+~je peins le feu en vert
+=j'ai pas le permis
 ==
 
 
