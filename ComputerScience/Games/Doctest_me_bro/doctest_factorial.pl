@@ -14,9 +14,9 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-title=Doctest challenge : factorielle d'un entier
-
 extends=doctest_me_bro_template.pl
+
+title=Doctest challenge : factorielle d'un entier
 
 text==
 Les élèves avaient la consigne suivante :   
@@ -117,3 +117,4 @@ def factorielle(n):
         return n
     return n*factorielle(n-1)
 ==
+
