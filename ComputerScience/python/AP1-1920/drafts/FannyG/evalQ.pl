@@ -24,17 +24,6 @@ form==
 before= 
 
 evaluator==#|python|
-
-grade = (100, general_feedback)
-==
-
-
-
-form==
-<input type="text" id="form_pouet" name="fname">
-==
-
-evaluator==#|python|
 feedback = "J'ai bien lu votre formulaire" + response['pouet']
 note = 100
 erreur de syntaxe....
