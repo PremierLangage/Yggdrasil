@@ -37,6 +37,6 @@ Rappel de la structuration du fichier **item.txt**:
 **Établissez une commande qui affiche le nombre de produits dans la base de données**. 
 Veuillez à faire en sorte que votre 
 commande ne produise que l'affichage numérique seul sur une 
-ligne (avec un retour à la ligne). N'hésitez à faire plusieurs essais.
+ligne (puis un retour à la ligne). N'hésitez à faire plusieurs essais.
 ==
 
