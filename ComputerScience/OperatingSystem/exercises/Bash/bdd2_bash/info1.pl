@@ -27,6 +27,8 @@ import random
 
 experiences = [
 ("Plateau", "230\n"),
+("Bougie", "241\n"),
+
 ]
 
 instructions, expected_stdout = random.choice(experiences)
