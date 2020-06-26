@@ -28,6 +28,10 @@ import random
 experiences = [
 ("de la lampe(Lampe) noire(noir) la plus lourde dont le poids est donné en kg", "12.6kg\n"),
 ("du vase(Vase) rose le plus lourd dont le poids est donné en kg", "15.1kg\n"),
+("de la coupe(Coupe) marron la plus lourde dont le poids est donné en gr", "3900gr\n"),
+("de l'horloge(Horloge) verte(vert) la plus lourde dont le poids est donné en gr", "3710gr\n"),
+("de la bougie(Bougie) noire(noir) la plus lourde dont le poids est donné en gr", "3800gr\n"),
+("du paillasson(Paillasson) beige le plus lourd dont le poids est donné en kg", "19.1kg\n"),
 ]
 
 instructions, expected_stdout = random.choice(experiences)
