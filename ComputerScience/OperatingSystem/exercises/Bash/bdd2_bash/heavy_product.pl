@@ -26,7 +26,7 @@ before==#|python|
 import random
 
 experiences = [
-("de la Lampe noir la plus lourde dont le poids est donné en kg", "12.6kg\n"),
+("de la lampe(Lampe) noire(noir) la plus lourde dont le poids est donné en kg", "12.6kg\n"),
 
 ]
 
