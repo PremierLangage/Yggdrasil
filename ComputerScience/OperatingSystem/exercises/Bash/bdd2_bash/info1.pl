@@ -48,7 +48,7 @@ instructions, expected_stdout = random.choice(experiences)
 text==
 Rappel de la structuration du fichier **item.txt**:   
 <br />
-**id:type:couleur:poids:quantité:jour:mois:année**   
+**id;type;couleur;poids;quantité;jour;mois;année**   
 <br />
 
 **Établissez une commande qui affiche le nombre de produits de type {{ instructions }}**. 
