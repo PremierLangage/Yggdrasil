@@ -15,7 +15,7 @@
 #*****************************************************************************
 
 author=Nicolas Borie
-title=Quelques circuits logiques
+title=Système : Des circuits logiques et des tables de vérité
 
 introduction==
 Les exercices suivants génèrent des circuits de portes logiques aléatoires. Vous 
@@ -28,10 +28,15 @@ ce sont plus des exercices de concentration au final.
 ==
 
 @ eval_diagram_3.pl
+@ eval_diagram_3.pl
+@ eval_diagram_4.pl
 @ eval_diagram_4.pl
 @ eval_diagram_5.pl
+@ eval_diagram_5.pl
+@ eval_diagram_6.pl
 @ eval_diagram_6.pl
 @ Karnaugh_to_python_fct.pl
 @ Karnaugh_to_python_fct.pl
 @ diagram_to_Karnaugh.pl
 @ diagram_to_Karnaugh.pl
+
