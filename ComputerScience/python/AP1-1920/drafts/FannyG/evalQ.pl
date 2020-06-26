@@ -18,6 +18,8 @@ Explication de la note dans inputbox
 
 form==
 <textarea id="form_pouet" name="Explication">
+
+</textarea>
 ==
 
 
