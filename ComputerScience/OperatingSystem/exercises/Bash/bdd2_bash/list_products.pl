@@ -20,7 +20,7 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 @ item.txt
 
 author=Nicolas Borie
-title=
+title=Nombre de type de produits ayant une couleur
 
 before==#|python|
 import random
@@ -44,7 +44,7 @@ Rappel de la structuration du fichier **item.txt**:
 **id;type;couleur;poids;quantité;jour;mois;année**   
 <br />
 
-**Établissez une commande qui affiche le nombre de produits de type {{ instructions }}**. 
+**Établissez une commande qui affiche le nombre de type produits ayant la couleur {{ instructions }}**. 
 Veuillez à faire en sorte que votre 
 commande ne produise que l'affichage numérique seul sur une 
 ligne (puis un retour à la ligne). N'hésitez à faire plusieurs essais.
