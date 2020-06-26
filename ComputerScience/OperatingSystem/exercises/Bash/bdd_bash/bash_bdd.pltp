@@ -14,7 +14,7 @@
 #*****************************************************************************
 
 author=Nicolas Borie
-title=Base de données primitive en bash
+title=Système : Base de données primitive en bash (cut, grep, etc)
 
 introduction==
 Un fichier **MJC.txt** a été placé dans votre répertoire courant de travail. 
