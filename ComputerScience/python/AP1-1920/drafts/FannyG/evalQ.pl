@@ -17,7 +17,7 @@ Explication de la note dans inputbox
 
 
 form==
-<textarea type="text" id="form_pouet" name="fname">
+<textarea id="form_pouet" name="Explication">
 ==
 
 
