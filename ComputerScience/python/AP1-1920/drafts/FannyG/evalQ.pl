@@ -15,7 +15,9 @@ Question(s) à choix multiples (1 seule réponse sélectionnable)
 Explication de la note dans inputbox
 ==
 
-
+text ==
+Explication de la note :
+==
 form==
 <textarea id="form_pouet" name="Explication" cols=100% rows="5">
 </textarea>
