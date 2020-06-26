@@ -20,7 +20,7 @@ text ==
 Explication de la note :
 ==
 form==
-<textarea id="form_pouet" name="Explication" cols=100% rows="5">
+<textarea id="form_pouet2" name="Explication" cols=100% rows="5">
 </textarea>
 ==
 
@@ -28,7 +28,7 @@ form==
 before= 
 
 evaluator==#|python|
-feedback = "J'ai bien lu votre formulaire " + response['pouet']
+feedback = "J'ai bien lu votre formulaire " + response['pouet2']
 note = 100
 grade = (note, feedback)
 ==
