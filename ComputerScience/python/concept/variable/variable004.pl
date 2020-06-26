@@ -2,7 +2,7 @@
 
 author=DR
 title= Jour de la semaine
-tag=variable
+tag=variable|str
 text==
 
 
