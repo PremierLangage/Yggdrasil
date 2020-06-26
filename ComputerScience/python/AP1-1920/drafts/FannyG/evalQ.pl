@@ -16,6 +16,14 @@ Réponse de l'élève
 Question(s) à choix multiples (1 seule réponse sélectionnable)  
 ==
 
+choices==
+=Copie blanche
+=Insuffisant
+=Passable
+=Bien
+=Très bien
+==
+
 form==
 <input type="text" id="form_pouet" name="fname">
 </br></br>
@@ -24,13 +32,7 @@ form==
 </textarea>
 ==
 
-choices==
-=Copie blanche
-=Insuffisant
-=Passable
-=Bien
-=Très bien
-==
+
 
 before= 
 
