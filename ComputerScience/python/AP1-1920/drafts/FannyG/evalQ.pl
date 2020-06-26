@@ -26,7 +26,6 @@ before=
 evaluator==#|python|
 feedback = "J'ai bien lu votre formulaire" + response['pouet']
 note = 100
-erreur de syntaxe....
 grade = (note, feedback)
 ==
 
