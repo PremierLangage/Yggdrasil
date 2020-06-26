@@ -5,19 +5,10 @@ title=Élever au carré les éléments d'un tableau
 tag=array
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
-editor =: CodeEditor
-editor.theme = dark
-editor.language = c
-
-
 text==
 Écrire une fonction qui prend en argument un tableau d'entiers ainsi
 que sa taille puis élève au carré tous les éléments contenus dans se
 tableau.
-==
-
-form==
-{{ editor|component }}
 ==
 
 editor.code==
