@@ -25,9 +25,11 @@ form==
 ==
 
 choices==
-=jaune #Bonne réponse; bravo !
-~rouge #Mauvaise réponse, c'est jaune.
-~bleu #Mauvaise réponse, c'est jaune.
+=Copie blanche
+=Insuffisant
+=Passable
+=Bien
+=Très bien
 ==
 
 before= 
