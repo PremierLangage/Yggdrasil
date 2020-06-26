@@ -6,7 +6,7 @@
 
 general_feedback = " Merci pour votre réponse." 
 
-title = Evalutation question
+title = Evaluation question
 
 text  ==
 Enonce de la question  
