@@ -3,6 +3,7 @@ extends=/model/AMC_TXT.pl
 
 @ buildquestions.py 
 
+title = Le type de quelques expressions
 
 before == #|python|
 import random as rd
@@ -11,7 +12,7 @@ from customcheckbox import CustomCheckbox
 from AMC import parse_AMC_TXT
 from buildquestions import buildquestion
 
-questions = buildquestion(5)
+questions = buildquestion(8)
 
 list_questions = parse_AMC_TXT(questions)
 
@@ -35,16 +36,5 @@ for i, q in enumerate(list_questions):
         comp[i].shuffle()
 ==
 
-
-
-if defined:
-    for x in [int,float,str,bool,type(None)]
-        answers +=  "+" if type(var) == x else "-" 
-        answers += " est de type" + x + "\n"
-    answers += "- est undéterminé car le code n'est pas syntaxiquement correct\n" 
-else:
-    for x in [int,float,str,bool,type(None)]
-        answers += "- est de type" + x + "\n"
-    answers += "+ est undéterminé car le code n'est pas syntaxiquement correct\n" 
 
 
