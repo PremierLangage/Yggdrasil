@@ -30,7 +30,7 @@ editor.code==
 typedef struct{
 	char couleur[MAX];
 	int force;
-	int agilte;
+	int agilite;
 	int pdv;
 	}Joueur;
 
@@ -56,7 +56,7 @@ solution==
 typedef struct{
 	char couleur[MAX];
 	int force;
-	int agilte;
+	int agilite;
 	int pdv;
 	}Joueur;
 
