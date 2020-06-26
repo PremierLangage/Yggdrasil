@@ -7,6 +7,7 @@
 general_feedback = " Merci pour votre réponse." 
 
 title = Evalutation question
+
 text  ==
 Enonce de la question  
 Réponse de l'élève  
@@ -18,6 +19,7 @@ Explication de la note dans inputbox
 form==
 <input type="text" id="form_pouet" name="fname">
 ==
+
 
 before= 
 
