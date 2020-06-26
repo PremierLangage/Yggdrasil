@@ -6,7 +6,7 @@ tag=variable
 text==
 
 
-Intialisez la  variable *cejour* avec le bon nom de jour:  
+Intialisez la  variable *cejour* avec le nom de jour d'aujourd'hui:  
 lundi  
 mardi  
 mercredi  
@@ -14,6 +14,8 @@ jeudi
 vendredi  
 samedi  
 dimanche  
+
+
 ==
 
 @ /builder/before.py [builder.py]
@@ -24,15 +26,17 @@ pltest0==#Déclaration
 'OK.'
 ==
 
-before==
-import time
-import locale
-locale.setlocale(locale.LC_ALL, 'fr_FR.utf8')
 
-pltest2="""
+
+before==
+import datetime
+l=['lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche']
+cejour= l[datetime.datetime.today().weekday()]
+
+pltest1="""
 >>> cejour #  le jour  de la semaine est 
-%s
-""" % (time.strftime('%a')
+'%s'
+""" % (cejour)
 ==
 
 code==
