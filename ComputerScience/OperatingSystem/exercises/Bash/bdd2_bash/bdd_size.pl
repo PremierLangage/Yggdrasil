@@ -24,7 +24,7 @@ title=Nombre de produits dans la base de données
 
 before==#|python|
 
-expected_stdout = "2248\n"
+expected_stdout = "7248\n"
 ==
 
 text==
