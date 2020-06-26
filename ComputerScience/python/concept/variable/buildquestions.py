@@ -16,9 +16,9 @@ def createQuestionFromExpression(expression:str):
         var= eval(expression)
     except:
         defined = False 
-    fin=""
+    fin="\n"
     question= f"""
-* on supposera l'existance des variables suivantes <code>
+* on supposera l'existance des variables suivantes 
 bb=True{fin}\n ii=3{fin}\n ff= 3.0178 {fin}\n ss = "Hello" {fin}\n nono=None {fin}</code>\n Donnez le *type* de l'expresion suivante :  {fin}\n```\n{expression}\n```{fin}\n"""
 
 
