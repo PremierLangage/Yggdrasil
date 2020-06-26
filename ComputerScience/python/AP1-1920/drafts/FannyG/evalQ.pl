@@ -24,6 +24,11 @@ form==
 </textarea>
 ==
 
+choices==
+=jaune #Bonne réponse; bravo !
+~rouge #Mauvaise réponse, c'est jaune.
+~bleu #Mauvaise réponse, c'est jaune.
+==
 
 before= 
 
