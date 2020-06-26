@@ -13,7 +13,9 @@ Enonce de la question
 Réponse de l'élève  
 Question(s) à choix multiples (1 seule réponse sélectionnable)  
 ==
+form==
 
+==
 text ==
 Explication de la note :
 ==
