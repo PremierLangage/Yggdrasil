@@ -17,7 +17,7 @@ Explication de la note dans inputbox
 
 
 form==
-<textarea id="form_pouet" name="Explication">
+<textarea id="form_pouet" name="Explication" cols="10" rows="5">
 </textarea>
 ==
 
