@@ -17,7 +17,6 @@ Question(s) à choix multiples (1 seule réponse sélectionnable)
 form==
 <input type="text" id="form_pouet" name="fname">
 </br>
-</br>
 <p>Explication de la note :</p>
 <textarea id="form_pouet2" name="Explication" cols=100% rows="5">
 </textarea>
