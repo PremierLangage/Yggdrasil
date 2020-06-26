@@ -28,7 +28,16 @@ import random
 experiences = [
 ("Plateau", "230\n"),
 ("Bougie", "241\n"),
-
+("Serviette", "252\n"),
+("Vase", "164\n"),
+("Statuette", "254\n"),
+("Coupe", "212\n"),
+("Cadre photo", "182\n"),
+("Coquetier", "247\n"),
+("Main courrante", "196\n"),
+("Horloge", "207\n"),
+("Nappe", "213\n"),
+("Arrosoir", "199\n")
 ]
 
 instructions, expected_stdout = random.choice(experiences)
