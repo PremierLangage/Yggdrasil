@@ -14,7 +14,7 @@ Réponse de l'élève
 Question(s) à choix multiples (1 seule réponse sélectionnable)  
 ==
 form==
-
+<input type="text" id="form_pouet" name="fname">
 ==
 text ==
 Explication de la note :
