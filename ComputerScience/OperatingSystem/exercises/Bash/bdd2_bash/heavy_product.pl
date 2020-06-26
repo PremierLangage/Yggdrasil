@@ -27,7 +27,7 @@ import random
 
 experiences = [
 ("de la lampe(Lampe) noire(noir) la plus lourde dont le poids est donné en kg", "12.6kg\n"),
-
+("du vase(Vase) rose le plus lourd dont le poids est donné en kg", "15.1kg\n"),
 ]
 
 instructions, expected_stdout = random.choice(experiences)
