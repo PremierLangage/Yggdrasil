@@ -2,12 +2,12 @@
 
 
 author=DR
-title= Je sais iniitaliser une variable de type {{tt}}
+title= Je sais iniitaliser une variable de type {{ts}}
 tag=variable|str
 text==
 
 
-Intialisez la  variable *{{ name }}* avec une valeur de type {{tt}}  
+Intialisez la  variable *{{ name }}* avec une valeur de type {{ts}}  
 
 
 ==
@@ -15,7 +15,7 @@ Intialisez la  variable *{{ name }}* avec une valeur de type {{tt}}
 @ /builder/before.py [builder.py]
 
 
-
+seed=3
 
 
 
@@ -24,9 +24,9 @@ import random
 if seed:
     random.seed(seed)
 
-lt=[bool,str,int,float,NoneType]
-ls=['bool','str','int','float','NoneType']
-names=['truc','machin','isola','varname','x','y','spqr','add','aku','akira','buzz','roméo','juliette','montague','capulet','upem,'uge','AP1','python','python3']
+lt=[bool,str,int,float,type(None)]
+ls=['bool','str','int','float','None']
+names=['truc','machin','isola','varname','x','y','spqr','add','aku','akira','buzz','roméo','juliette','montague','capulet','upem','uge','AP1','python','python3']
 
 name= random.choice(names)
 tt,ts=random.choice(list(zip(lt,ls)))
@@ -37,8 +37,8 @@ pltest0=f'''#Déclaration
 '''
 
 
-pltest1="""
->>> type({name}) == tt # la variable est du bon type 
+pltest1= f"""
+>>> type({name}) == {ts} # la variable est du bon type 
 True
 """ 
 ==
