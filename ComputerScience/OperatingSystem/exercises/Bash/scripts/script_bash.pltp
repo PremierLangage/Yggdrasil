@@ -14,7 +14,7 @@
 #*****************************************************************************
 
 author=Nicolas Borie
-title=Les scripts bash de l'amour
+title=Système : scripts bash
 
 introduction==
 Cette fiche propose quelques scripts bash. Certains sont standards et 
@@ -34,3 +34,4 @@ du web pour arriver à ses fins. Bon courage avec la syntaxe du plaisir.
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/substring.pl
 
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/decimal_to_binary.pl
+
