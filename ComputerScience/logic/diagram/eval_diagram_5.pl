@@ -54,7 +54,7 @@ group.items.append({
 })
 ==
 
-title=Évaluation d'un petit circuit logique moyen
+title=Évaluation d'un grand circuit logique
 
 text==
 <style>
@@ -118,5 +118,6 @@ feedback = '<center>' + feedback + '</center>'
 
 grade = (score, feedback)
 ==
+
 
 
