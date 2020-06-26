@@ -29,7 +29,7 @@ experiences = [
 ("jaune", "30\n"),
 ("vert", "32\n"),
 ("blanc", "31\n"),
-
+("noir", "33\n"),
 ]
 
 instructions, expected_stdout = random.choice(experiences)
