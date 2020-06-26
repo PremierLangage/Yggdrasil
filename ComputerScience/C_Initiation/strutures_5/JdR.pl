@@ -24,6 +24,10 @@ codebefore==
 #include <string.h>
 #define MAX 50
 
+int lance_de(void){
+ int d= rand()%6+1;
+ return d;
+}
 ==
 
 editor.code==
@@ -80,10 +84,6 @@ if (strcmp(un->couleur,deu->couleur)!=0){
 ==
 codeafter==
 
-int lance_de(void){
- int d= rand()%6+1;
- return d;
-}
 
 
 int main(void){
