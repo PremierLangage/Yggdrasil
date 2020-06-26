@@ -9,6 +9,7 @@ general_feedback = " Merci pour votre réponse."
 title = Evaluation question
 
 text  ==
+(mettre à vide après)
 Enonce de la question  
 Réponse de l'élève  
 Question(s) à choix multiples (1 seule réponse sélectionnable)  
