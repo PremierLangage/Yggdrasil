@@ -61,7 +61,7 @@ for(i=0; i<l/2;i++)
         return 0;
 return 1;
 }
-int construit_llpalin(char s[],int taille){
+int construit_palin(char s[],int taille){
   int lg=strlen(s);int i;
 if(2*lg+1>taille|| est_palindrome(s) )
     return 0;
