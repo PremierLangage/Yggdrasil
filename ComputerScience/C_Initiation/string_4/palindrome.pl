@@ -8,7 +8,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 Un palindrome est une suite de caractères pouvant indifféremment être lue de gauche à droite ou de droite à gauche.  
-Ainsi $%\tt{elle,été,laval}%$ sont des palindromes.  
+Ainsi $% \tt{elle,été,laval}%$ sont des palindromes.  
 Ecrire une fonction `est_palindrome` qui reçoit une chaine de caractères 
 et renvoie 1 si celle-ci est un palindrome et, 0 sinon.
 ==
@@ -62,6 +62,7 @@ tests==
  ["aleatoire","",random.choice(["elle","kayak","velo","radar","avion","rotor","serres","solos","sufffit"])],
   ]
 ==
+
 
 
 
