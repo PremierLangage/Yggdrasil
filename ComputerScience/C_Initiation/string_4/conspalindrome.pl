@@ -42,7 +42,7 @@ return 1;
 }
 int construit_palin(char s[],int taille){
   int lg=strlen(s);int i;
-if(2*lg+1>taille || est_palindrone(s))
+if(2*lg+1>taille || est_palindrome(s))
     return 0;
 for(i=0;i<lg;i++)
   s[lg+i]=s[lg-i-1];
@@ -63,7 +63,7 @@ return 1;
 }
 int construit_llpalin(char s[],int taille){
   int lg=strlen(s);int i;
-if(2*lg+1>taille|| est_palindrone(s) )
+if(2*lg+1>taille|| est_palindrome(s) )
     return 0;
 for(i=0;i<lg;i++)
   s[lg+i]=s[lg-i-1];
@@ -81,9 +81,9 @@ int main(void){
   scanf("%s",tab);
   scanf("%d",&taille);
   printf("%s\n",tab);			 ;
-  constpalin(tab,taille);
+  construit_palin(tab,taille
   printf("%s\n",tab);
-   constpalin(tab,taille);  printf("%s\n",tab);
+   construit_palin(tab,taille);  printf("%s\n",tab);
 return 0;
 }
 ==
