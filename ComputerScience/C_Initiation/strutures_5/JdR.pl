@@ -106,9 +106,9 @@ int main(void){
  b=t[x];
  if (combat(&a,&b)){
  if (a.pdv >0)
-   printf("%s bat %s reste %d\n",a.couleur,b.couleur,a.pdv);
+   printf("%s bat %s reste %d pdv\n",a.couleur,b.couleur,a.pdv);
  else
-     printf("%s bat %s reste %d\n",b.couleur,a.couleur,b.pdv);
+     printf("%s bat %s reste %d pdv\n",b.couleur,a.couleur,b.pdv);
  }
  else
    printf("meme couleur\n");
@@ -119,7 +119,11 @@ int main(void){
 
 
 tests==
-[ ["simple éxécution", "","3 0 1"],
+[ 
+["aléatoire ", "",str(random.randint(1000,2008))+" "+str(random.randint(0,4))+" "+str(random.randint(0,4))],
+
+["aléatoire ", "",str(random.randint(1000,2008))+" "+str(random.randint(0,4))+" "+str(random.randint(0,4))],
 ["aléatoire ", "",str(random.randint(1000,2008))+" "+str(random.randint(0,4))+" "+str(random.randint(0,4))],
 ]
 ==
+
