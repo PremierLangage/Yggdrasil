@@ -1,0 +1,46 @@
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js"></script>
+
+<style type="text/css">
+	canvas { display: block; }
+    #content-threejs {
+		display: block;
+		margin: auto;
+    }
+</style>
+TEST
+<div id="content-threejs"></div>
+<!--
+<script>
+    var scene = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+    
+    var light = new THREE.AmbientLight( 0x404040 ); // soft white light
+scene.add( light );
+    var renderer = new THREE.WebGLRenderer();
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    document.getElementById("content-threejs").appendChild( renderer.domElement );
+
+    var geometry = new THREE.BoxGeometry();
+    var material = new THREE.MeshBasicMaterial( { color: "red" } );
+    var cube = new THREE.Mesh( geometry, material );
+    scene.add( cube );
+
+    camera.position.z = 5;
+
+    var animate = function () {
+        requestAnimationFrame( animate );
+
+        cube.rotation.x += 0.01;
+        cube.rotation.y += 0.01;
+
+        renderer.render( scene, camera );
+    };
+
+    animate();
+</script>
+
+
+-->
+
+
