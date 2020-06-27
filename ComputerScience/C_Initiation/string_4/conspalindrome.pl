@@ -81,7 +81,7 @@ int main(void){
   scanf("%s",tab);
   scanf("%d",&taille);
   printf("%s\n",tab);			 ;
-  construit_palin(tab,taille
+  construit_palin(tab,taille);
   printf("%s\n",tab);
    construit_palin(tab,taille);  printf("%s\n",tab);
 return 0;
