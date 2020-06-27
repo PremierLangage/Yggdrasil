@@ -1,4 +1,5 @@
 
+author= 
 title=Combat
 tag=struct
 extends=/ComputerScience/C/template/stdsandboxC.pl
@@ -126,4 +127,5 @@ tests==
 ["aléatoire ", "",str(random.randint(1000,2008))+" "+str(random.randint(0,4))+" "+str(random.randint(0,4))],
 ]
 ==
+
 
