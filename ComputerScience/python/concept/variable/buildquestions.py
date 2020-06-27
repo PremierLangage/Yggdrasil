@@ -40,8 +40,9 @@ def randomexpression(seed=None):
     """
     if seed:
         random.seed(seed)
-    tv=random.randint(0,5)
-    if tv ==0: # avec une variable booleen
+    tv=random.randint(0,8)
+    tv=6
+    if tv < 1: # avec une variable booleen
         r = random.randint(0,100)
         if r <5:
             return "True"
@@ -65,9 +66,20 @@ def randomexpression(seed=None):
             return "true" if r%2 == 0 else "false"
         else:
             return "None"
-    if tv < 6: # int ? 
+    if tv < 3: # int ? 
         expr="ii "+random.choice(['+','-','//','/','*','**'])+" "+random.choice(["ii","ii","ii","nono","ff","ss","bb"])
         return expr
+    if tv < 5: # float ? 
+        expr="ff "+random.choice(['+','-','//','/','*','**'])+" "+random.choice(["ii","ff","ff","nono","ff","ss","bb"])
+        return expr
+    if tv < 7: # Conditionelle 
+        expr="ii "+random.choice(['==','>=','>','<','<=','!=',"=>","=<"])+" "+random.choice(["4","0.0","12",ff","ss","bb"])
+        return expr 
+    expr="ss "+random.choice(['+','-','*','+','*','-'])+" "+random.choice(["ii","ss","ii","nono","ff","ss","bb"])
+    return expr 
+
+
+
 def buildquestion(n):
     questions=""
     for _ in range(n):
