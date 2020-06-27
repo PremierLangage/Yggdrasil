@@ -27,6 +27,8 @@ du web pour arriver à ses fins. Bon courage avec la syntaxe du plaisir.
 
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/check_args_int.pl
 
+@ /ComputerScience/OperatingSystem/exercises/Bash/scripts/max_int_args.pl
+
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/binomial.pl
 
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/reverse.pl
@@ -34,4 +36,5 @@ du web pour arriver à ses fins. Bon courage avec la syntaxe du plaisir.
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/substring.pl
 
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/decimal_to_binary.pl
+
 
