@@ -8,7 +8,7 @@ Chaque piece d'un jeu de plateau est caractérié par:
  -sa couleur    
  -sa force  
  -son agileté  
- -ses points de vie.  
+ -ses points de vie.    
  Lorsque deux pieces de couleur différentes se rencontrent,
  un combat a lieu. Chaque joueur lance un dé et on compare les sommes (valeur du dé +force +agileté).
   La plus haute somme détermine le vainqueur et la différence des sommes est soustraite aux points de vie du vaincu. En cas d'ex-aeco, il ne se passe rien pour ce tour. Le tirage se répète jusqu'à  ce qu'un des joueurs ait un nombre de point de vie négatifs ou nul.  
