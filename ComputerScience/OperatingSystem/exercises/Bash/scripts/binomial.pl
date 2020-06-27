@@ -55,5 +55,3 @@ dire des chaines décrivant des entiers) et qui affiche le coefficient
 binomial p parmi n : $% \binom{n}{p} %$.
 ==
 
-
-
