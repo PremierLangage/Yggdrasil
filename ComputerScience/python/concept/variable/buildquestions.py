@@ -73,7 +73,7 @@ def randomexpression(seed=None):
         expr="ff "+random.choice(['+','-','//','/','*','**'])+" "+random.choice(["ii","ff","ff","nono","ff","ss","bb"])
         return expr
     if tv < 7: # Conditionelle 
-        expr="ii "+random.choice(['==','>=','>','<','<=','!=',"=>","=<"])+" "+random.choice(["4","0.0","12",ff","ss","bb"])
+        expr="ii "+random.choice(['==','>=','>','<','<=','!=',"=>","=<"])+" "+random.choice(["4","0.0","12","ff","ss","bb"])
         return expr 
     expr="ss "+random.choice(['+','-','*','+','*','-'])+" "+random.choice(["ii","ss","ii","nono","ff","ss","bb"])
     return expr 
