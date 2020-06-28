@@ -106,3 +106,15 @@ def mediane(L):
         return None
     return (max(L) + min(L)) / 2.0
 ==
+
+bad_code_4==#|python|
+def mediane(L):
+    """
+    TEST_INCLUSION
+    """
+    ind = len(L) // 2
+    M = sorted(L)
+    if len(L) % 2:
+        return float(M[ind])
+    return None
+==
