@@ -47,6 +47,20 @@ def mediane(L):
     return (M[ind-1] + M[ind]) / 2.0
 ==
 
+good_code_2==#|python|
+def mediane(L):
+    """
+    TEST_INCLUSION
+    """
+    ind = len(L) // 2
+    M = sorted(L)
+    if len(L) % 2:
+        return float(M[ind])
+    if ind == 0:
+        return None
+    return M[ind-1] + ((M[ind] - M[ind-1]) / 10.0)
+==
+
 bad_code_1==#|python|
 def mediane(L):
     """
