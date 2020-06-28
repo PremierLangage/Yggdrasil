@@ -41,10 +41,10 @@ def mediane(L):
     ind = len(L) // 2
     M = sorted(L)
     if len(L) % 2:
-        return L[ind]
+        return M[ind]
     if ind == 0:
         return None
-    return (L[ind-1] + L[ind]) / 2.0
+    return (M[ind-1] + M[ind]) / 2.0
 ==
 
 bad_code_1==#|python|
