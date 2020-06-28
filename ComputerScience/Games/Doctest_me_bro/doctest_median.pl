@@ -54,7 +54,7 @@ def mediane(L):
     """
     if L == []:
         return None
-    return sum(L) / len(L)
+    return (1.0*sum(L)) / len(L)
 ==
 
 
