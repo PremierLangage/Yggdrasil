@@ -96,3 +96,13 @@ def mediane(L):
         return 0.0
     return (M[ind-1] + M[ind]) / 2.0
 ==
+
+bad_code_1==#|python|
+def mediane(L):
+    """
+    TEST_INCLUSION
+    """
+    if L == []:
+        return None
+    return (max(L) + min(L)) / 2.0
+==
