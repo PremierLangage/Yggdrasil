@@ -97,7 +97,7 @@ def mediane(L):
     return (M[ind-1] + M[ind]) / 2.0
 ==
 
-bad_code_1==#|python|
+bad_code_3==#|python|
 def mediane(L):
     """
     TEST_INCLUSION
