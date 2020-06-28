@@ -41,7 +41,7 @@ def mediane(L):
     ind = len(L) // 2
     M = sorted(L)
     if len(L) % 2:
-        return M[ind]
+        return float(M[ind])
     if ind == 0:
         return None
     return (M[ind-1] + M[ind]) / 2.0
@@ -54,7 +54,7 @@ def mediane(L):
     """
     if L == []:
         return None
-    return sum(L) / len(L)
+    return float(sum(L) / len(L))
 ==
 
 
