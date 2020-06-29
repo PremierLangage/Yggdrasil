@@ -77,7 +77,7 @@ def trois_max(L):
     return tuple(ans)
 ==
 
-bad_code_2==#|python|
+bad_code_3==#|python|
 def trois_max(L):
     """
     TEST_INCLUSION
