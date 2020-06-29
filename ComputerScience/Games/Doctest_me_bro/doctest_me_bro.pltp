@@ -15,7 +15,7 @@
 #*****************************************************************************
 
 author=Nicolas Borie
-title=Garantir la validité d'un code source
+title=Système : Garantir la validité d'un code source via des tests
 
 introduction==
 Ce TP porte sur une des compétences les plus avancées de l'informatique : 
