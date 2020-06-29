@@ -50,7 +50,3 @@ note = 100
 grade = (note, feedback)
 ==
 
-
-
-
-
