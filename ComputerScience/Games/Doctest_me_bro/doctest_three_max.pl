@@ -57,4 +57,21 @@ def trois_max(L):
     return (None, None, None)
 ==
 
-
+bad_code_2==#|python|
+def trois_max(L):
+    """
+    TEST_INCLUSION
+    """
+    ans = [0, 0, 0]
+    S = set(L)
+    m = max(S)
+    if m in not None:
+        ans[1] = m
+        S.remove(m)
+        m = max(S)
+        if m in not None:
+            ans[2] = m
+            S.remove(m)
+            ans[3] = max(S)
+    return tuple(ans)
+==
