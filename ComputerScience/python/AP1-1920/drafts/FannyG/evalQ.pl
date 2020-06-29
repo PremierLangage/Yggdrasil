@@ -32,6 +32,8 @@ form==
 <label for="copie_blanche">Copie blanche</label><br>
 <input type="radio" id="form_insuffisant" name="insuffisant" value="insuffisant">
 <label for="insuffisant">Insuffisant</label><br>
+<input type="radio" id="form_passable" name="passable" value="passable">
+<label for="passable">Passable</label><br>
 
 <input type="text" id="form_pouet" name="fname">
 </br></br>
