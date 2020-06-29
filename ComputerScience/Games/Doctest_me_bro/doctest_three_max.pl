@@ -44,7 +44,7 @@ def trois_max(L):
             ans[2] = e
             if (ans[1] is None) or (ans[1] <  e):
                 ans[1], ans[2] = ans[2], ans[1]
-                if if (ans[0] is None) or (ans[0] <  e):
+                if (ans[0] is None) or (ans[0] <  e):
                     ans[0], ans[1] = ans[1], ans[0]
     return tuple(ans)
 ==
