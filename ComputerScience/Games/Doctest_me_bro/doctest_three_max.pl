@@ -49,6 +49,23 @@ def trois_max(L):
     return tuple(ans)
 ==
 
+good_code_2==#|python|
+def trois_max(L):
+    """
+    TEST_INCLUSION
+    """
+    ans = [None, None, None]
+    M = sorted(L, reverse=True)
+    if len(M) > 0:
+        ans[0] = L[0]
+    if len(M) > 1:
+        ans[1] = L[1]
+    if len(M) > 2:
+        ans[2] = L[2]
+    return tuple(ans)
+==
+
+
 bad_code_1==#|python|
 def trois_max(L):
     """
