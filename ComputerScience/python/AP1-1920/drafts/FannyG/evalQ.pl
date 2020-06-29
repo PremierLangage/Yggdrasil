@@ -11,7 +11,7 @@ title = Evaluation question
 
 text  ==
 (mettre à vide après)  
-Enonce de la question  
+Enoncé de la question  
 Réponse de l'élève  
 Question(s) à choix multiples (1 seule réponse sélectionnable)  
 ==
@@ -43,5 +43,6 @@ feedback = "J'ai bien lu votre formulaire " + response['pouet'] + " " + response
 note = 100
 grade = (note, feedback)
 ==
+
 
 
