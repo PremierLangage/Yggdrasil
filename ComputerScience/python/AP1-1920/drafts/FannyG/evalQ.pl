@@ -8,6 +8,13 @@ extends = /gift/templates/qselectset.pl
 general_feedback = " Merci pour votre réponse." 
 radio =: RadioGroup
 horizontal % false
+choices==
+=Copie blanche
+=Insuffisant
+=Passable
+=Bien
+=Très bien
+==
 
 title = Evaluation question
 
@@ -18,13 +25,7 @@ Réponse de l'élève
 Question(s) à choix multiples (1 seule réponse sélectionnable)  
 ==
 
-choices==
-=Copie blanche
-=Insuffisant
-=Passable
-=Bien
-=Très bien
-==
+
 
 form==
 {{ radio|component }}
