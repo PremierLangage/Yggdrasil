@@ -27,7 +27,7 @@ choices==
 ==
 
 form==
-<form action="/action_page.php">
+<form>
   <p>Question(s) à choix multiples (1 seule réponse sélectionnable)</p>
   <input type="radio" id="male" name="gender" value="male">
   <label for="male">Male</label><br>
