@@ -57,11 +57,11 @@ def trois_max(L):
     ans = [None, None, None]
     M = sorted(L, reverse=True)
     if len(M) > 0:
-        ans[0] = L[0]
+        ans[0] = M[0]
     if len(M) > 1:
-        ans[1] = L[1]
+        ans[1] = M[1]
     if len(M) > 2:
-        ans[2] = L[2]
+        ans[2] = M[2]
     return tuple(ans)
 ==
 
