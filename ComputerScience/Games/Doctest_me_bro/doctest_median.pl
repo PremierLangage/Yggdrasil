@@ -139,10 +139,9 @@ def mediane(L):
     TEST_INCLUSION
     """
     ind = len(L) // 2
-    M = sorted(L)
     if len(L) == 0:
         return None
     if len(L) == 1:
         return L[0]
-    return (M[ind-1] + M[ind]) / 2.0
+    return (L[ind-1] + L[ind]) / 2.0
 ==
