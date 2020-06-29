@@ -66,12 +66,12 @@ def trois_max(L):
     S = set(L)
     m = max(S)
     if m in not None:
-        ans[1] = m
+        ans[0] = m
         S.remove(m)
         m = max(S)
         if m in not None:
-            ans[2] = m
+            ans[1] = m
             S.remove(m)
-            ans[3] = max(S)
+            ans[2] = max(S)
     return tuple(ans)
 ==
