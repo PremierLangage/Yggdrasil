@@ -34,6 +34,10 @@ form==
 <label for="insuffisant">Insuffisant</label><br>
 <input type="radio" id="form_passable" name="passable" value="passable">
 <label for="passable">Passable</label><br>
+<input type="radio" id="form_bien" name="bien" value="bien">
+<label for="bien">Bien</label><br>
+<input type="radio" id="form_tres_bien" name="tres_bien" value="tres_bien">
+<label for="tres_bien">Très bien</label><br>
 
 <input type="text" id="form_pouet" name="fname">
 </br></br>
