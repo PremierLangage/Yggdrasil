@@ -26,8 +26,14 @@ choices==
 =Très bien
 ==
 
-
-
+form==
+{{ radio|component }}
+<input type="text" id="form_pouet" name="fname">
+</br></br>
+<p>Explication de la note :</p>
+<textarea id="form_pouet2" name="Explication" cols=100% rows="5">
+</textarea>
+==
 
 before==
 
@@ -38,14 +44,7 @@ feedback = "J'ai bien lu votre formulaire " + response['pouet'] + " " + response
 note = 100
 grade = (note, feedback)
 ==
-form==
-{{ radio|component }}
-<input type="text" id="form_pouet" name="fname">
-</br></br>
-<p>Explication de la note :</p>
-<textarea id="form_pouet2" name="Explication" cols=100% rows="5">
-</textarea>
-==
+
 
 
 
