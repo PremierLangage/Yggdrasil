@@ -5,7 +5,6 @@ author: DR
 ***
 
 # Titre de la présentation
-
 *écran titre en gros*   
 
 ***
