@@ -6,6 +6,8 @@
 extends = /gift/templates/qselectset.pl
 
 general_feedback = " Merci pour votre réponse." 
+radio =: RadioGroup
+horizontal % false
 
 title = Evaluation question
 
@@ -37,6 +39,7 @@ note = 100
 grade = (note, feedback)
 ==
 form==
+{{ radio|component }}
 <input type="text" id="form_pouet" name="fname">
 </br></br>
 <p>Explication de la note :</p>
@@ -45,14 +48,7 @@ form==
 ==
 
 
-radio =: RadioGroup
-horizontal % false
-choices = 
-general_feedback = 
 
-title = PLEASE OVERRIDE THE TITLE OF THE EXERCISE
-text  = PLEASE OVERRIDE THE TEXT OF THE EXERCISE
-form  = {{ radio|component }}
 
 before== #|python|
 import uuid
