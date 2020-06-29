@@ -54,7 +54,7 @@ def trois_max(L):
     """
     TEST_INCLUSION
     """
-
+    return (None, None, None)
 ==
 
 
