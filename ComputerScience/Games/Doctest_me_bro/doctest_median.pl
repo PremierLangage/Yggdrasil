@@ -23,9 +23,10 @@ Les élèves avaient la consigne suivante :
 
 <div style="color:white; background-color: black; padding: 0.5em; border-radius: 0.5em;">
 Écrivez une fonction python <b>mediane</b> qui prend en argument une liste de nombres 
-floatants et retourne une médiane pour cette liste (une valeur qui partage en deux 
-paquets de même taille les éléments de la liste : les strictements plus grands et les 
-strictements plus petits). Si la liste est vide, retourner None.
+floatants et retourne une médiane pour cette liste (une valeur qui permet le partage en deux 
+paquets de même taille les éléments de la liste : des plus grands et des plus petits). 
+Si la liste est vide, retourner None sinon la valeur retournée devra être un nombre 
+flotant Ptyhon.
 </div>
 
 Proposez des doctests Python pour detecter la validité et les erreurs 
