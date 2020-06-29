@@ -159,3 +159,25 @@ def trois_max(L):
         ans[2] = M[0]
     return tuple(ans)
 ==
+
+bad_code_7==#|python|
+def trois_max(L):
+    """
+    TEST_INCLUSION
+    """
+    ans = [None, None, None]
+    S = set(L)
+    if len(S) > 0:
+        m = max(S)
+        ans[0] = m
+        if L.count(m) == 3:
+            return (m, m, m)
+        S.remove(m)
+        if len(S) > 0:
+            m = max(S)
+            ans[1] = m
+            S.remove(m)
+            if len(S) > 0:
+                ans[2] = max(S)
+    return tuple(ans)
+==
