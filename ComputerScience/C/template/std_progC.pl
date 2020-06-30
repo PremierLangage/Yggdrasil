@@ -34,7 +34,10 @@ editor.code ==
 /* write your code here */
 ==
 
-before==
+
+before ==
+attempt = 0
+maxattempt = 2
 ==
 
 
