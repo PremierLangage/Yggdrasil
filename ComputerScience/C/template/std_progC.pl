@@ -104,7 +104,7 @@ custom_pl_template == #|html|
 
 ==
 
-extrajs ==
+extrajs ==#|html|
 <script>
 $('#closeFeedback').on('click', function() {
   $("#Feedback").hide();  
