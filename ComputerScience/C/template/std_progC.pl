@@ -27,8 +27,8 @@ Programming exercise template
 
 
 editor =: CodeEditor
-editor.theme = dark
-editor.language = python
+editor.theme=dark
+editor.language=C
 
 editor.code ==
 /* write your code here */
