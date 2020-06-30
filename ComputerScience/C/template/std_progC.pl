@@ -46,6 +46,10 @@ solution==
 The code solution for the exercise once you inherit from this template...
 ==
 
+hints==
+An adapted hint for the exercice and the user once you inherit from this template...
+==
+
 evaluator==
 grade = (100, f"student code:\n{editor.code}")
 ==
