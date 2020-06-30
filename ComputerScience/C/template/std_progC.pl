@@ -15,8 +15,8 @@
 #*****************************************************************************
 
 @ /utils/sandboxio.py
-grader  =@ /grader/evaluator.py
-builder =@ /builder/before.py
+@ before_mode.py [builder.py]
+@ evaluator_mode.py [grader.py]
 
 title=Standard C Programming exercise template
 
