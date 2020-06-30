@@ -54,6 +54,11 @@ evaluator==
 grade = (100, f"student code:\n{editor.code}")
 ==
 
+evaluator ==
+grade=(100,"f"student code:\n{editor.code}"")
+score, feedback = grade
+==
+
 
 custom_pl_template == #|html|
 
@@ -145,3 +150,4 @@ $('#getSolution').on('click', function() {
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 ==
+
