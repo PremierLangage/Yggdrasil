@@ -42,6 +42,10 @@ form==
 {{ editor|component }}
 ==
 
+solution==
+The code solution for the exercise once you inherit from this template...
+==
+
 evaluator==
 grade = (100, f"student code:\n{editor.code}")
 ==
