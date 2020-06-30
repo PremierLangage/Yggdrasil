@@ -28,7 +28,7 @@ Programming exercise template
 
 editor =: CodeEditor
 editor.theme=dark
-editor.language=C
+editor.language=c
 
 editor.code ==
 /* write your code here */
