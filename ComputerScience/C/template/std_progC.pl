@@ -46,7 +46,7 @@ solution==
 The code solution for the exercise once you inherit from this template...
 ==
 
-hints==
+hint==
 An adapted hint for the exercice and the user once you inherit from this template...
 ==
 
