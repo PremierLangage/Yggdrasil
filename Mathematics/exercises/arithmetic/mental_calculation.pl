@@ -9,7 +9,7 @@ inputbox.maxlength = 2
 inputbox.appearance = outline
 
 countdown % { "cid": "countdown", "selector": "c-countdown" }
-countdown.time % 20
+countdown.time % 60
 countdown.hidden % false
 
 autoSubmit== #|js|
@@ -92,6 +92,7 @@ else:
     grade = (-1, feedback)
 
 ==
+
 
 
 
