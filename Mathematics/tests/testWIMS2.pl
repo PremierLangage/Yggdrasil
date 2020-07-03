@@ -38,8 +38,11 @@ $!\; \leq \; x^2 \; \leq \; !$
 ==
 
 evaluator ==
-if (input1.value==res1 and input2.value==res2):
-    grade = (100, "testtrue")
+score = 0
+if (input1.value==res1):
+    score += 50
+if (input2.value==res2):
+    score += 50
 if (input1.value>input2.value):
     feedback = "Votre encadrement n'a pas de sens car $!" + str(input1.value) + ">" + str(input2.value) + "!$"
     grade = (0, feedback)
@@ -47,3 +50,4 @@ if ((input1.value > 0 or input2.value < 0) and a <= 0 and b > 0) :
     feedback = "Votre encadrement n'est pas bon car $!0!$, par exemple, n'est pas compris entre $!" + str(input1.value) + "!$ et $!" + str(input2.value) + "!$. Regardez la représentation graphique de la fonction carré."
     grade = (0, feedback)
 ==
+
