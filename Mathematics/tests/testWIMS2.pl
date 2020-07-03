@@ -19,16 +19,18 @@ if (a<0 and b<0):
     res2 = aa
 ==
 
-text ==
-Soit $!x!$ un réel vérifiant $! {{a}} \; \leq \; x \ \leq \; {{b}} !$.
-Trouvez le meilleur encadrement de $!x^2!$ :
-==
 
 input1 =: Input
 input1.type = number
 
 input2 =: Input
 input2.type = number
+
+text ==
+Soit $!x!$ {{input1|component}}un réel vérifiant $! {{a}} \; \leq \; x \ \leq \; {{b}} !$.
+Trouvez le meilleur encadrement de $!x^2!$ :
+==
+
 
 
 form==
