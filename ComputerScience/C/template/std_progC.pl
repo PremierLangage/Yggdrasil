@@ -101,11 +101,11 @@ def prepare_code_to_file(src_code, filename):
     Place inside file named `filename`
     """
     src_final = code_before
-    src_final += "\n"
+    src_final += "\n\n"
     src_final += src_code
-    src_final += "\n"
+    src_final += "\n\n"
     src_final += code_after
-    src_final += "\n"
+    src_final += "\n\n"
     with open(filename, 'w') as f:
         f.write(src_final)
 
