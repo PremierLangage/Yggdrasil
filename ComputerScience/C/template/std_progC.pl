@@ -14,9 +14,20 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
+#*****************************************************************************
+#
+# This is a re-implementation of the standard standard template of programming 
+# exercice of C language.
+#
+# Change :
+#    * tests has been renamed to checks_args_stdin
+#    * Use subprocess instead of use directly os and sys
+#
+#*****************************************************************************
+
 @ /utils/sandboxio.py
-@ before_mode.py [builder.py]
-@ evaluator_mode.py [grader.py]
+grader  =@ /grader/evaluator.py
+builder =@ /builder/before.py
 
 title=Standard C Programming exercise template
 
@@ -25,13 +36,12 @@ This text shoud be overwrited when inheriting from the Standard C
 Programming exercise template
 ==
 
-
 editor =: CodeEditor
 editor.theme=dark
 editor.language=c
 editor.height=350px
 
-editor.code ==
+editor.code==#|c|
 /* write your code here */
 #include <stdio.h>
 #include <stdlib.h>
@@ -53,9 +63,11 @@ int main(int argc, char* argv[]){
 ==
 
 
-before ==
-attempt = 0
-maxattempt = 2
+before ==#|python|
+# Some globals variables
+nb_attempt=0
+
+
 ==
 
 
@@ -63,109 +75,36 @@ form==
 {{ editor|component }}
 ==
 
-solution==
-The code solution for the exercise once you inherit from this template...
+solution==#|c|
+#include <stdio.h>
+#include <stdlib.h>
+
+int carre(int n){
+    return n*n;
+}
+
+int main(int argc, char* argv[]){
+    int i, j;
+    
+    i = atoi(argv[1]);
+    scanf(%d, &j);
+
+    printf("Le carré de i = %d est %d\n", i, carre(i));
+    printf("Le carré de j = %d est %d\n", j, carre(j));
+    return 0;
+}
 ==
 
-hint==
-An adapted hint for the exercice and the user once you inherit from this template...
-==
 
-evaluator ==
+evaluator==#|python|
+
+
+
 grade=(100,f"student code:\n{editor.code}")
 score, feedback = grade
 ==
 
-
-custom_pl_template == #|html|
-
-    <ion-card-header class="exercise__header">
-        <ion-card-subtitle class='exercise__author'>{% if author %}{{ author }}{% endif %}</ion-card-subtitle>
-        <ion-card-title class='exercise__title'>
-                {% if title %}{{ title }}{% endif%}
-        </ion-card-title>
-    </ion-card-header>
-    <!-- BODY -->
-    <ion-card-content class="exercise__body">
-        <!-- INSTRUCTIONS -->
-        <div class="exercise__instructions">
-            {% if text %}
-            {{ text|safe }}
-            {% endif %}
-        </div>
-        <!-- FORM -->
-        {% csrf_token %}
-        <div class="exercise__form">
-            {{ form|safe }}
-        </div>
-
-       <!-- FEEDBACK -->
-      {{ feedback_formatted|safe }}
-      {{ hint_formatted|safe }}
-      {{ solution_formatted|safe }}
-    </ion-card-content>
-
-<ion-footer class="app-header">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-<a tabindex="0" class="btn btn-success my-2 my-sm-0 action-submit" role="button" >Valider</a>
-     <span class="navbar-text" style="font-size:medium;">
-    {% if score or score > -1 %}
-    &nbsp; Score : {{score}} / 100
-    {% else %}
-    &nbsp; Score : - / 100
-    {% endif %}
-    &nbsp; | &nbsp;
-    Tentative : {{attempt}} / {{maxattempt}}
-  </span>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto">
-      <a tabindex="0" class="nav-item nav-link btn" id="getFeedback" role="button">Feedback</a>
-      <a tabindex="0" class="nav-item nav-link btn" id="getHint" role="button">Indication</a>
-      <a tabindex="0" class="nav-item nav-link btn" id="getSolution" role="button">Solution</a>
-      <a tabindex="0" class="nav-item nav-link btn" id="getSolution" role="button">A propos</a>
-    </div>
-  </div>
-</nav>
-</ion-footer>
-
-
+checks_args_stdin==
+[["Premier test exemple (1 et 1)", "1", "1"],
+ ["Second test exemple (12 et -7)", "12", "-7"]]
 ==
-
-extrajs ==#|html|
-<script>
-$('#closeFeedback').on('click', function() {
-  $("#Feedback").hide();  
-});
-
-$('#getFeedback').on('click', function() {
-  $("#Feedback").show();
-});
-
-$('#closeHint').on('click', function() {
-  $("#Hint").hide();  
-});
-
-$('#getHint').on('click', function() {
-  $("#Hint").show();
-});
-
-$('#closeSolution').on('click', function() {
-  $("#Solution").hide();  
-});
-
-$('#getSolution').on('click', function() {
-  $("#Solution").show();
-});
-</script>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-==
-
-
