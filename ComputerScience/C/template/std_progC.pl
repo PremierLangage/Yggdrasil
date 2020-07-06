@@ -21,7 +21,7 @@
 #
 # Change :
 #    * tests has been renamed to checks_args_stdin
-#    * Use subprocess instead of use directly os and sys
+#    * use subprocess instead of use directly os and sys
 #
 #*****************************************************************************
 
@@ -29,7 +29,7 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-title=Standard C Programming exercise template
+title=Standard C Programming exercise template (summer 2020)
 
 text==
 **This text shoud be overwrited when inheriting from the Standard C 
@@ -78,14 +78,18 @@ form==
 {{ editor|component }}
 ==
 
-solution==#|c|
+code_before==#|c|
 #include <stdio.h>
 #include <stdlib.h>
+==
 
+solution==#|c|
 int carre(int n){
     return n*n;
 }
+==
 
+code_after==#|c|
 int main(int argc, char* argv[]){
     int i, j;
     
@@ -98,7 +102,6 @@ int main(int argc, char* argv[]){
 }
 ==
 
-
 evaluator==#|python|
 
 
@@ -107,7 +110,7 @@ grade=(100,f"student code:\n{editor.code}")
 score, feedback = grade
 ==
 
-checks_args_stdin==
+checks_args_stdin==#|python|
 [["Premier test exemple (1 et 1)", "1", "1"],
  ["Second test exemple (12 et -7)", "12", "-7"]]
 ==
