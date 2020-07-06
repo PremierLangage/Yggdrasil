@@ -32,8 +32,10 @@ builder =@ /builder/before.py
 title=Standard C Programming exercise template
 
 text==
-This text shoud be overwrited when inheriting from the Standard C 
-Programming exercise template
+**This text shoud be overwrited when inheriting from the Standard C 
+Programming exercise template.**
+
+In this template example, we ask the user to programm a squarre function.
 ==
 
 editor =: CodeEditor
