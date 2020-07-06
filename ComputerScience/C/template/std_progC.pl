@@ -96,7 +96,20 @@ int main(int argc, char* argv[]){
 
 evaluator==#|python|
 
+def prepare_code_to_file(src_code, filename):
+    """
+    Place inside file named `filename`
+    """
+    src_final = code_before
+    src_final += "\n"
+    src_final += src_code
+    src_final += "\n"
+    src_final += code_after
+    src_final += "\n"
+    with open(filename, 'w') as f:
+        f.write(src_final)
 
+prepare_code_to_file(editor.code, "src_student.c")
 
 grade=(100,"<code><pre>" + code_before + editor.code + code_after + "</code></pre>")
 score, feedback = grade
