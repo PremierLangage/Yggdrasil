@@ -32,6 +32,23 @@ editor.language=c
 
 editor.code ==
 /* write your code here */
+#include <stdio.h>
+#include <stdlib.h>
+
+int carre(int n){
+    return n*n;
+}
+
+int main(int argc, char* argv[]){
+    int i, j;
+    
+    i = atoi(argv[1]);
+    scanf(%d, &j);
+
+    printf("Le carré de i = %d est %d\n", i, carre(i));
+    printf("Le carré de j = %d est %d\n", j, carre(j));
+    return 0;
+}
 ==
 
 
@@ -149,4 +166,5 @@ $('#getSolution').on('click', function() {
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 ==
+
 
