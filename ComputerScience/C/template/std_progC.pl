@@ -46,7 +46,7 @@ editor.language=c
 
 editor.code==#|c|
 /* write your code here */
-
+/* For testing purpose, we did place here a square function on integers... */
 int carre(int n){
     return n*n;
 }
@@ -125,3 +125,4 @@ checks_args_stdin==#|python|
 [["Premier test exemple (1 et 1)", "1", "1"],
  ["Second test exemple (12 et -7)", "12", "-7"]]
 ==
+
