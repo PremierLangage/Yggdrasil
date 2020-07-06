@@ -29,7 +29,7 @@ Programming exercise template
 editor =: CodeEditor
 editor.theme=dark
 editor.language=c
-editor.height=400px
+editor.height=350px
 
 editor.code ==
 /* write your code here */
