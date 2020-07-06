@@ -35,6 +35,7 @@ text==
 **This text shoud be overwrited when inheriting from the Standard C 
 Programming exercise template.**
 
+
 In this template example, we ask the user to programm a squarre function.
 ==
 
