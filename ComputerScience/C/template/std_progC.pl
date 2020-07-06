@@ -96,6 +96,7 @@ int main(int argc, char* argv[]){
 
 evaluator==#|python|
 
+# Pre-process before executing the checks
 def prepare_code_to_file(src_code, filename):
     """
     Place inside file named `filename`
@@ -109,7 +110,12 @@ def prepare_code_to_file(src_code, filename):
     with open(filename, 'w') as f:
         f.write(src_final)
 
+# The two file to proceed the checks
 prepare_code_to_file(editor.code, "src_student.c")
+prepare_code_to_file(solution, "src_teacher.c")
+
+
+
 
 grade=(100,"<code><pre>" + code_before + editor.code + code_after + "</code></pre>")
 score, feedback = grade
