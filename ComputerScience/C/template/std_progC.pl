@@ -42,7 +42,7 @@ In this template example, we ask the user to programm a squarre function.
 editor =: CodeEditor
 editor.theme=dark
 editor.language=c
-editor.height=350px
+# editor.height=350px
 
 editor.code==#|c|
 /* write your code here */
