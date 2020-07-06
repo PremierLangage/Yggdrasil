@@ -46,31 +46,23 @@ editor.height=350px
 
 editor.code==#|c|
 /* write your code here */
-#include <stdio.h>
-#include <stdlib.h>
 
 int carre(int n){
     return n*n;
 }
-
-int main(int argc, char* argv[]){
-    int i, j;
-    
-    i = atoi(argv[1]);
-    scanf(%d, &j);
-
-    printf("Le carré de i = %d est %d\n", i, carre(i));
-    printf("Le carré de j = %d est %d\n", j, carre(j));
-    return 0;
-}
 ==
+
+# Place here your favorite C compiler
+compiler=gcc
+# PLace here the compilation flags
+compil_flags=-Wall -ansi
+# Place here library flags
+lib_flags=
 
 
 before ==#|python|
 # Some globals variables
 nb_attempt=0
-
-
 ==
 
 
@@ -84,8 +76,8 @@ code_before==#|c|
 ==
 
 solution==#|c|
-int carre(int n){
-    return n*n;
+int carre(int p){
+    return p*p;
 }
 ==
 
