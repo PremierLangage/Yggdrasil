@@ -52,17 +52,16 @@ int carre(int n){
 }
 ==
 
+before ==#|python|
+# Some globals variables
+nb_attempt=0
+
 # Place here your favorite C compiler
-compiler=gcc
+compiler="gcc"
 # PLace here the compilation flags
 cflags=["-Wall", "-ansi"]
 # Place here library flags
 libflags=[]
-
-
-before ==#|python|
-# Some globals variables
-nb_attempt=0
 ==
 
 
@@ -136,5 +135,6 @@ checks_args_stdin==#|python|
 [["Premier test exemple (1 et 1)", "1", "1"],
  ["Second test exemple (12 et -7)", "12", "-7"]]
 ==
+
 
 
