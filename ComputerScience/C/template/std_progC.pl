@@ -95,6 +95,7 @@ int main(int argc, char* argv[]){
 ==
 
 evaluator==#|python|
+import subprocess
 
 # Pre-process before executing the checks
 def prepare_code_to_file(src_code, filename):
@@ -125,4 +126,5 @@ checks_args_stdin==#|python|
 [["Premier test exemple (1 et 1)", "1", "1"],
  ["Second test exemple (12 et -7)", "12", "-7"]]
 ==
+
 
