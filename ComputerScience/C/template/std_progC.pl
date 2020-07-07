@@ -55,9 +55,9 @@ int carre(int n){
 # Place here your favorite C compiler
 compiler=gcc
 # PLace here the compilation flags
-compil_flags=-Wall -ansi
+cflags=["-Wall", "-ansi"]
 # Place here library flags
-lib_flags=
+libflags=[]
 
 
 before ==#|python|
@@ -119,13 +119,14 @@ def compile_source(src_name, prog_name, compiler, cflags=["-Wall", "-ansi"], lib
     """
     compile the source in argument and return 
     """
-    command_args = ["/bin/bash", "student_script.sh"] + args_test
+    command_args = [compiler, src_name, "-o", prog_name] + cflags + libflags
     sp = subprocess.run(command_args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     spout = sp.stdout.decode()
     errout = sp.stderr.decode()
     returncode = sp.returncode
     return (returncode, spout, errout)
 
+compile_source
 
 grade=(100,"<code><pre>" + code_before + editor.code + code_after + "</code></pre>")
 score, feedback = grade
