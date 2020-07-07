@@ -1,2 +1,2 @@
 
-# déclarer une var data (ou decorator) (dict de données pour les tests = réponses élèves)
+# déclarer une var data (ou decorator) (dictionnaire de données pour les tests = réponses élèves)
