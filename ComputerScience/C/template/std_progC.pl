@@ -119,7 +119,12 @@ def compile_source(src_name, prog_name, compiler, cflags=["-Wall", "-ansi"], lib
     """
     compile the source in argument and return 
     """
-    
+    command_args = ["/bin/bash", "student_script.sh"] + args_test
+    sp = subprocess.run(command_args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    spout = sp.stdout.decode()
+    errout = sp.stderr.decode()
+    returncode = sp.returncode
+    return (returncode, spout, errout)
 
 
 grade=(100,"<code><pre>" + code_before + editor.code + code_after + "</code></pre>")
