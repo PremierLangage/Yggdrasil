@@ -129,8 +129,13 @@ def compile_source(src_name, prog_name, compiler, cflags=["-Wall", "-ansi"], lib
 compile_source("src_teacher.c", "teacher_prog", compiler, cflags, libflags)
 returncode, spout, errout = compile_source("src_student.c", "student_prog", compiler, cflags, libflags)
 
-grade=(100,"<code><pre>" + code_before + editor.code + code_after + "</code></pre>")
-score, feedback = grade
+feedback = str(returncode)
+feedback += "\n\n"
+feedback += spout
+feedback += "\n\n"
+feedback += errout
+
+grade=(100, feedback)
 ==
 
 checks_args_stdin==#|python|
