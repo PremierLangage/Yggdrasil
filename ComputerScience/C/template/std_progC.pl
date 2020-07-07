@@ -125,7 +125,9 @@ def compile_source(src_name, prog_name, compiler, cflags=["-Wall", "-ansi"], lib
     returncode = sp.returncode
     return (returncode, spout, errout)
 
-compile_source
+# Compile the teacher solution
+compile_source("src_teacher.c", "teacher_prog", compiler, cflags, libflags)
+returncode, spout, errout = compile_source("src_student.c", "student_prog", compiler, cflags, libflags)
 
 grade=(100,"<code><pre>" + code_before + editor.code + code_after + "</code></pre>")
 score, feedback = grade
