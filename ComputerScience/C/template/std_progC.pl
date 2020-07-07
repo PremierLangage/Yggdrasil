@@ -85,7 +85,7 @@ int main(int argc, char* argv[]){
     int i, j;
     
     i = atoi(argv[1]);
-    scanf(%d, &j);
+    scanf("%d", &j);
 
     printf("Le carré de i = %d est %d\n", i, carre(i));
     printf("Le carré de j = %d est %d\n", j, carre(j));
