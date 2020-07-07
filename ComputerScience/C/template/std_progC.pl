@@ -115,7 +115,11 @@ def prepare_code_to_file(src_code, filename):
 prepare_code_to_file(editor.code, "src_student.c")
 prepare_code_to_file(solution, "src_teacher.c")
 
-
+def compile_source(src_name, prog_name, compiler, cflags=["-Wall", "-ansi"], libflags=[]):
+    """
+    compile the source in argument and return 
+    """
+    
 
 
 grade=(100,"<code><pre>" + code_before + editor.code + code_after + "</code></pre>")
