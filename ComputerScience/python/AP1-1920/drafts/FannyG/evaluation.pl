@@ -70,7 +70,7 @@ form==
 <input type="radio" id="form_q1" name="f_evaluation" value="passable">
 <label for="passable">Passable</label></br>
 <input type="radio" id="form_q1" name="f_evaluation" value="bien">
-<label for="bien">Bien</label></br>
+<label for="bien">Bien</label>
 <input type="radio" id="form_q1" name="f_evaluation" value="tres_bien">
 <label for="tres_bien">Très bien</label>
 
