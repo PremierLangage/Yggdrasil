@@ -24,7 +24,7 @@ before==#|python|
 data = {"question": "Quel âge avez-vous ?", "answer": "J'ai 20 ans."}
 
 # paramètre criteria contenant la grille critériée
-criteria = {"0": {"description": "Age donné", "levels": [
+criteria = {0: {"description": "Age donné", "levels": [
                         {"description": "Inférieur à 20 ans", "points": 0}, 
                         {"description": "20 ans", "points": 1},
                         {"description": "Supérieur à 20 ans", "points": 2}
