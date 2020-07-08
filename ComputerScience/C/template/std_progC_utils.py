@@ -18,53 +18,24 @@
 def make_hide_block_on_click(nameblock, title, content):
     """
     """
+    # Here the clickable title 
+    src_ans = '''<h3 id="extra_doc" onmouseover="style='text-decoration:underline'" '''
+    src_ans += '''onmouseout="style='text-decoration:none'">'''
+    src_ans += 'Voir/Réduire <b>' + nameblock + '</b></h3>'
 
-<h3 id="extra_doc" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-<b>Voir/Réduire le rappel des commandes du Mini-Brain</b></h3>
+    # Now the content
+    src_ans += '<div id="extra_doc_div">'
+    src_ans += content
+    src_ans += '</div>'
 
-<div id="extra_doc_div">
+    # The script ennabling the hide/unhide
+    src_ans += '''<script type="text/javascript">'''
+    src_ans += '''$(document).ready(function(){'''
+    src_ans += '''  $("#extra_doc_div").hide();'''
+    src_ans += '''  $("#extra_doc").click(function(){'''
+    src_ans += '''    $("#extra_doc_div").toggle();'''
+    src_ans += '''  });'''
+    src_ans += '''});'''
+    src_ans += '''</script>'''
 
-<pre style="font-size: 0.8em;">
-Mini Brain cheat sheet :
-========================
-
--147 : interpreted directly as a constant value
-$12  : value at address 12 inside the central memory
-a    : the accumulator
-#3   : value stored at register 3
-$#2  : value in central memory at address indexed by value of register 2
-#$47 : value stored at register indexed by value in central memory at address 47
-
-* ld [$? or value] [#?-a]: load value inside the CPU
-* st [#?-a or value] [$?]: store value to central memory
-* mv [#?-a] [#?-a]: internal fast copy inside the CPU
-
-* inc [#?]: increment targeted register (up the flag if zero)
-* dec [#?]: decrement targeted register (up the flag if zero)
-* add [#?-a or value or $?]: add targeted value to the accumulator (up the flag if zero)
-* sub [#?-a or value or $?]: subtract targeted value to the accumulator (up the flag if zero)
-* mul [#?-a or value or $?]: multiply by targeted value the accumulator (up the flag if zero)
-* div [#?-a or value or $?]: divide the accumulator by targeted value 
-                             (up the flag if zero if exact division)
-* mod [#?-a or value or $?]: replace the accumulator by its remainder when divide by targeted value 
-                             (up the flag if zero)
-* cmp [#?-a or value or $?]: do nothing (up the flag if the accumulator is smaller than the argument)
-
-* bfup [#?-a or value or $?]: jump to instruction indexed by the value if the flag is up
-* bfdn [#?-a or value or $?]: jump to instruction indexed by the value if the flag is down
-* bnow [#?-a or value or $?]: jump in all cases to instruction indexed by the value
-
-* exit [#?-a or value or $?]: stop the program with return code the targeted value   
-* - empty instruction - : produce the behavior of exit a
-</pre>
-
-</div>
-
-'<script type="text/javascript">'
-'$(document).ready(function(){'
-'  $("#extra_doc_div").hide();'
-'  $("#extra_doc").click(function(){'
-'    $("#extra_doc_div").toggle();'
-'  });'
-'});'
-'</script>'
+    return src_ans
