@@ -6,7 +6,7 @@
 extends = /gift/templates/qselectset.pl
 
 general_feedback = " Merci pour votre réponse." 
-horizontal % true
+horizontal % false
 
 
 title = Evaluation question
