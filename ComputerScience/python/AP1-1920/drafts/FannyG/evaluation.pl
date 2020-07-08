@@ -63,7 +63,8 @@ Réponse de l'élève :
 
 form==
 {% for num, value in criteria.items() %}
-<p>{{value[description]}}</p>
+descr = value["description"]
+<p>{{descr}}</p>
 {% endfor %}
 <p>Question(s) à choix multiples (1 seule réponse sélectionnable)</p>
 <input type="radio" id="form_q1" name="f_evaluation" value="copie_blanche">
