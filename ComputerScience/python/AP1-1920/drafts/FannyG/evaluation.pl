@@ -23,8 +23,8 @@ title = Evaluation question
 
 text  ==
 (mettre à vide après)  
-Enoncé de la question  
-Réponse de l'élève  
+Enoncé de la question : data.question  
+Réponse de l'élève : data.answer  
 Question(s) à choix multiples (1 seule réponse sélectionnable)  
 ==
 
