@@ -46,7 +46,7 @@ criteria = {0: {"description": "Age donné", "levels": [
                 }
             }
 
-formulaire = "" #chaine de caratère qu'on met dans form
+formulaire = "test" #chaine de caratère qu'on met dans form
 ==
 
 
