@@ -58,7 +58,6 @@ Enoncé de la question :
 <br/>
 Réponse de l'élève :  
 {{answer}}  
-{{item1}}
 ==
 
 
