@@ -58,6 +58,7 @@ Enoncé de la question :
 <br/>
 Réponse de l'élève :  
 {{answer}}  
+{{criteria[0]['description']}}
 ==
 
 
