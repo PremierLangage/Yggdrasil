@@ -73,6 +73,7 @@ form==
 <label for="bien">Bien</label></br>
 <input type="radio" id="form_q1" name="f_evaluation" value="tres_bien">
 <label for="tres_bien">Très bien</label></br>
+
 <p>Explication de la note :</p>
 <textarea id="form_pouet" name="Explication" cols=100% rows="5">
 </textarea>
