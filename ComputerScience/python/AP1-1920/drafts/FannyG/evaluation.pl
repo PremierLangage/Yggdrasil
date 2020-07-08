@@ -6,5 +6,5 @@
 #     -paramètres : 
 #           -la réponse de l'élève : balise data
 #           -les critère d'evaluation: balise criteria
-#     -return : un dico avec la valeur pour chaque critère et un commentaire.
+#     -retourne : un dico avec la valeur pour chaque critère et un commentaire.
 
