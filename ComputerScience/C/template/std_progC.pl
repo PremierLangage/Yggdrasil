@@ -136,7 +136,7 @@ returncode, spout, errout = compile_source("src_student.c", "student_prog", comp
 
 # Compilation ok
 if len(spout) + len(errout) == 0:
-    feedback = '<span class="success-state">Compilation réussie avec flags ' + cflags + '</span>'
+    feedback = '<span class="success-state">Compilation réussie avec flags ' + ' '.join(cflags) + '</span>'
 else:
     feedback = make_hide_block_on_click("compil_ans", "Résultat de compilation", spout+errout)
 
