@@ -56,7 +56,7 @@ Enoncé de la question :
 {{question}}  
 <br/>
 Réponse de l'élève :  
-{{answer}}  
+{{answers__.answer}}  
 ==
 
 
