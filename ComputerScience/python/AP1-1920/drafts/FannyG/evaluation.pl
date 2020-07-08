@@ -62,7 +62,6 @@ Réponse de l'élève :
 
 
 form==
-{{formulaire}}
 {% for num, value in criteria.items() %}
 <p>{{value[description]}}</p>
 {% endfor %}
