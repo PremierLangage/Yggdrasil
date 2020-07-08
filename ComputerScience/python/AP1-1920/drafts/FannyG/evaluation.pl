@@ -14,7 +14,6 @@
 @ /utils/sandboxio.py
 @ /grader/evaluator.py [grader.py]
 @ /builder/before.py [builder.py]
-#extends = /gift/templates/qselectset.pl
 
 general_feedback = " Merci pour votre réponse." 
 horizontal % false
