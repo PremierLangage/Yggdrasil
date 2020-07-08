@@ -6,7 +6,7 @@
 extends = /gift/templates/qselectset.pl
 
 general_feedback = " Merci pour votre réponse." 
-horizontal % false
+horizontal % true
 
 
 title = Evaluation question
@@ -49,4 +49,5 @@ feedback = "J'ai bien lu votre formulaire " + response['pouet'] + " " + response
 note = 100
 grade = (note, feedback)
 ==
+
 
