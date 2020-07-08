@@ -134,8 +134,11 @@ compile_source("src_teacher.c", "teacher_prog", compiler, cflags, libflags)
 # Compile the student proposition
 returncode, spout, errout = compile_source("src_student.c", "student_prog", compiler, cflags, libflags)
 
-
-feedback = make_hide_block_on_click("compil_ans", "Résultat de compilation", spout+errout)
+# Compilation ok
+if len(spout) + len(errout) == 0:
+    feedback = 
+else:
+    feedback = make_hide_block_on_click("compil_ans", "Résultat de compilation", spout+errout)
 
 
 
