@@ -22,15 +22,15 @@ horizontal % false
 before==#|python|
 data = {"question": "Quel âge avez-vous ?", "answer": "J'ai 20 ans."}
 criteria = {0: {"description": "Age donné", "levels": [
-                        {"description": "Inférieur à 20 ans", "points": 1}, 
-                        {"description": "20 ans", "points": 2},
-                        {"description": "Supérieur à 20 ans", "points": 3}
+                        {"description": "Inférieur à 20 ans", "points": 0}, 
+                        {"description": "20 ans", "points": 1},
+                        {"description": "Supérieur à 20 ans", "points": 2}
                         ]
                 },
-            1: {"description": "Age donné", "levels": [
-                        {"description": "Inférieur à 20 ans", "points": 1}, 
-                        {"description": "20 ans", "points": 2},
-                        {"description": "Supérieur à 20 ans", "points": 3}
+            1: {"description": "Orthographe", "levels": [
+                        {"description": "Plusieurs fautes", "points": 0}, 
+                        {"description": "1 faute", "points": 1},
+                        {"description": "Aucune faute", "points": 2}
                         ]
                 }
             2: {"description": "Age donné", "levels": [
