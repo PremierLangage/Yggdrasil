@@ -21,7 +21,9 @@ horizontal % false
 
 before==#|python|
 data = {"question": "Quel âge avez-vous ?", "answer": "J'ai 20 ans."}
-criteria = {"question": "Quel âge avez-vous ?", "answer": "J'ai 20 ans."}
+criteria = {0: {"description": "Age donné", "levels": [{"description": "Inférieur à 20 ans", "points": 1}, {"description": "20 ans", "points": 1}, {"description": "Supérieur à 20 ans", "points": 3}]},
+            1: {}
+            2: {}}
 question = data['question']
 answer = data['answer']
 ==
