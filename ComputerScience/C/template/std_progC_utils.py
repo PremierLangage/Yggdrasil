@@ -39,3 +39,4 @@ def make_hide_block_on_click(nameblock, title, content):
     src_ans += '''</script>'''
 
     return src_ans
+    
