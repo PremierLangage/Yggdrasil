@@ -62,7 +62,7 @@ Réponse de l'élève :
 
 
 form==
-<p>criteria[0][description]</p>
+{{criteria[0][description]}}
 <input type="radio" id="form_q1" name="f_evaluation" value="copie_blanche">
 <label for="copie_blanche">Copie blanche</label><br/>
 <input type="radio" id="form_q1" name="f_evaluation" value="insuffisant">
