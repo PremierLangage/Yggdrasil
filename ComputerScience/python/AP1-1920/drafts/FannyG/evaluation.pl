@@ -67,6 +67,9 @@ Réponse de l'élève :
 
 form==
 {{formulaire}}
+{% for i in order %}
+<li> {{ i }}. {{ mygroup.drops[(i-1)|string]|component }} </li>
+{% endfor %}
 <p>Question(s) à choix multiples (1 seule réponse sélectionnable)</p>
 <input type="radio" id="form_q1" name="f_evaluation" value="copie_blanche">
 <label for="copie_blanche">Copie blanche</label><br/>
