@@ -67,7 +67,7 @@ Réponse de l'élève :
 
 form==
 {{formulaire}}
-{% for i in order %}
+{% for num, value in criteria.items() %}
 <li> {{ i }}. {{ mygroup.drops[(i-1)|string]|component }} </li>
 {% endfor %}
 <p>Question(s) à choix multiples (1 seule réponse sélectionnable)</p>
