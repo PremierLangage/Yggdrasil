@@ -20,7 +20,8 @@ horizontal % false
 
 
 before==#|python|
-
+question = data['question']
+answer = data['answer']
 ==
 
 
@@ -29,8 +30,8 @@ title = Evaluation question
 
 text  ==
 (mettre à vide après)  
-Enoncé de la question : {{question}}data.question  
-Réponse de l'élève : {{answer}} data.answer  
+Enoncé de la question : {{question}}
+Réponse de l'élève : {{answer}}  
 Question(s) à choix multiples (1 seule réponse sélectionnable)  
 ==
 
