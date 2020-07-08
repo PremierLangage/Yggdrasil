@@ -127,7 +127,13 @@ def compile_source(src_name, prog_name, compiler, cflags=["-Wall", "-ansi"], lib
 
 # Compile the teacher solution
 compile_source("src_teacher.c", "teacher_prog", compiler, cflags, libflags)
+# Compile the student proposition
 returncode, spout, errout = compile_source("src_student.c", "student_prog", compiler, cflags, libflags)
+
+
+
+
+
 
 feedback = str(returncode)
 feedback += "\n\n"
