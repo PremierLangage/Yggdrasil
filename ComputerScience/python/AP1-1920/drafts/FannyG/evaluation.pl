@@ -44,7 +44,7 @@ form==
 
 </br></br>
 <p>Explication de la note :</p>
-<textarea id="form_pouet2" name="Explication" cols=100% rows="5">
+<textarea id="form_pouet" name="Explication" cols=100% rows="5">
 </textarea>
 ==
 
@@ -54,7 +54,7 @@ before==
 
 
 evaluator==#|python|
-feedback = "J'ai bien lu votre formulaire " + response['q1'] + " " + response['pouet2']
+feedback = "J'ai bien lu votre formulaire " + response['q1'] + " " + response['pouet']
 note = 100
 grade = (note, feedback)
 ==
