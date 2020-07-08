@@ -43,7 +43,7 @@ criteria = {0: {"description": "Age donné", "levels": [
                         ]
                 }
             }
-criteria = [[1,2],[3,4]]
+#criteria = [[1,2],[3,4]]
 ==
 
 
