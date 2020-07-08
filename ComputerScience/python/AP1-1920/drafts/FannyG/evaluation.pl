@@ -66,7 +66,6 @@ Réponse de l'élève :
 
 
 form==#|python|
-
 <p>Question(s) à choix multiples (1 seule réponse sélectionnable)</p>
 <input type="radio" id="form_q1" name="f_evaluation" value="copie_blanche">
 <label for="copie_blanche">Copie blanche</label><br/>
