@@ -22,8 +22,8 @@
 before==#|python|
 # paramètre data contenant la question et la réponse de l'élève
 data = {"question": "Quel âge avez-vous ?", "answer": "J'ai 20 ans."}
-question = data['question']
-answer = data['answer']
+#question = data['question']
+#answer = data['answer']
 
 # paramètre criteria contenant la grille critériée
 criteria = {0: {"description": "Age donné", "levels": [
