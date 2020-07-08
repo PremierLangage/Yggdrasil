@@ -20,7 +20,8 @@ horizontal % false
 
 
 before==#|python|
-data = {"question": "Quel âge avez-vous ?","answer": "J'ai 20 ans."}
+data = {"question": "Quel âge avez-vous ?", "answer": "J'ai 20 ans."}
+criteria = {{"question": "Quel âge avez-vous ?", "answer": "J'ai 20 ans."}}
 question = data['question']
 answer = data['answer']
 ==
