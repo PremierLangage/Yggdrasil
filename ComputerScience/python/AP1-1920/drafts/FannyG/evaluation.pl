@@ -64,7 +64,7 @@ Réponse de l'élève :
 form==
 <p>Question(s) à choix multiples (1 seule réponse sélectionnable)</p>
 <input type="radio" id="form_q1" name="f_evaluation" value="copie_blanche">
-<label for="copie_blanche">Copie blanche</label></br>
+<label for="copie_blanche">Copie blanche</label><br/>
 <input type="radio" id="form_q1" name="f_evaluation" value="insuffisant">
 <label for="insuffisant">Insuffisant</label></br>
 <input type="radio" id="form_q1" name="f_evaluation" value="passable">
