@@ -72,7 +72,7 @@ form==
 <input type="radio" id="form_q1" name="f_evaluation" value="bien">
 <label for="bien">Bien</label></br>
 <input type="radio" id="form_q1" name="f_evaluation" value="tres_bien">
-<label for="tres_bien">Très bien</label></br>
+<label for="tres_bien">Très bien</label>
 
 </br>
 <p>Explication de la note :</p>
