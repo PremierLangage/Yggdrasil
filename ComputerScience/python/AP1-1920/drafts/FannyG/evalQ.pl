@@ -1,4 +1,3 @@
-# author=Fanny Garnevault
 
 @ /utils/sandboxio.py
 @ /grader/evaluator.py [grader.py]
