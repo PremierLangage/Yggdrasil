@@ -45,7 +45,8 @@ criteria = {0: {"description": "Age donné", "levels": [
                         ]
                 }
             }
-item1 = criteria[0]["description"]
+
+formulaire = "" #chaine de caratère qu'on met dans form
 ==
 
 
@@ -62,6 +63,7 @@ Réponse de l'élève :
 
 
 form==
+{{formulaire}}
 <p>Question(s) à choix multiples (1 seule réponse sélectionnable)</p>
 <input type="radio" id="form_q1" name="f_evaluation" value="copie_blanche">
 <label for="copie_blanche">Copie blanche</label><br/>
