@@ -66,7 +66,7 @@ Réponse de l'élève :
 
 
 form==#|python|
-formulaire
+print(formulaire)
 '''
 {% for num, value in criteria.items() %}
 <p>{{value[description]}}</p>
