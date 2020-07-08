@@ -133,7 +133,7 @@ compile_source("src_teacher.c", "teacher_prog", compiler, cflags, libflags)
 # Compile the student proposition
 returncode, spout, errout = compile_source("src_student.c", "student_prog", compiler, cflags, libflags)
 
-
+make_hide_block_on_click("compil_ans", "Résultat de compilation", spout+errout)
 
 
 
