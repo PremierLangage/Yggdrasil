@@ -43,6 +43,7 @@ criteria = {0: {"description": "Age donné", "levels": [
                         ]
                 }
             }
+criteria = [[1,2],[3,4]]
 ==
 
 
@@ -55,7 +56,7 @@ Enoncé de la question :
 <br/>
 Réponse de l'élève :  
 {{data.answer}}  
-a {{ criteria[0]['description'] }} a
+a {{ criteria[0][0] }} a
 ==
 
 
