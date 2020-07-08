@@ -16,12 +16,14 @@
 
 #*****************************************************************************
 #
-# This is a re-implementation of the standard standard template of programming 
-# exercice of C language.
+# This is a re-implementation of the standard template of programming exercice 
+# of C language implemented after the experience of 2019-2020 during 
+# summer 2020
 #
 # Change :
 #    * tests has been renamed to checks_args_stdin
 #    * use subprocess instead of use directly os and sys
+#    * better use of css/javascript to display/hide feedback
 #
 #*****************************************************************************
 
