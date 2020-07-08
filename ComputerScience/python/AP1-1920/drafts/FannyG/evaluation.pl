@@ -55,7 +55,7 @@ title = Evaluation question
 text  ==  
 Enoncé de la question :  
 {{question}}  
-<br>
+<br/>
 Réponse de l'élève :  
 {{answer}}  
 ==
