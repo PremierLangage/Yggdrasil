@@ -1,5 +1,4 @@
-@ /builder/before.py [builder.py]
-@ /grader/evaluator.py [grader.py]
+extends = /model/mathinput.pl
 title = Un pré
 author = Sophie Lemaire
 input =: Input
