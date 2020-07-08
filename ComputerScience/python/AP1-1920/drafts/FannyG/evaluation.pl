@@ -55,7 +55,7 @@ before==
 
 
 evaluator==#|python|
-feedback = "J'ai bien lu votre formulaire " + response['form_q1'] + " " + response['pouet2']
+feedback = "J'ai bien lu votre formulaire " + response['q1'] + " " + response['pouet2']
 note = 100
 grade = (note, feedback)
 ==
