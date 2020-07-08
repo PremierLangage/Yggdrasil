@@ -97,6 +97,7 @@ int main(int argc, char* argv[]){
 
 evaluator==#|python|
 import subprocess
+from std_progC_utils import make_hide_block_on_click
 
 # Pre-process before executing the checks
 def prepare_code_to_file(src_code, filename):
