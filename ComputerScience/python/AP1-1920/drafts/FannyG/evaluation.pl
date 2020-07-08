@@ -32,7 +32,7 @@ criteria = {0: {"description": "Age donné", "levels": [
                         {"description": "1 faute", "points": 1},
                         {"description": "Aucune faute", "points": 2}
                         ]
-                }
+                },
             2: {"description": "Syntaxe", "levels": [
                         {"description": "La phrase ne possède ni une majuscule, ni un point.", "points": 0}, 
                         {"description": "La phrase possède soit une majuscule, soit un point.", "points": 1},
