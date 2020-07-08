@@ -46,6 +46,10 @@ criteria = {0: {"description": "Age donné", "levels": [
                 }
             }
 
+formulaire = "<p>test</p>" #chaine de caratère qu'on met dans form
+#descr_crit = "<p>{0}</p>"
+#for num, value in criteria.items():
+#    formulaire += descr_crit.format(value["description"])
 ==
 
 
@@ -62,9 +66,9 @@ Réponse de l'élève :
 
 
 form==
+{{formulaire}}
 {% for num, value in criteria.items() %}
-descr = value["description"]
-<p>{{descr}}</p>
+<p>{{value[description]}}</p>
 {% endfor %}
 <p>Question(s) à choix multiples (1 seule réponse sélectionnable)</p>
 <input type="radio" id="form_q1" name="f_evaluation" value="copie_blanche">
