@@ -19,24 +19,23 @@ def make_hide_block_on_click(nameblock, title, content):
     """
     """
     # Here the clickable title 
-    src_ans = '''<h3 id="extra_doc" onmouseover="style='text-decoration:underline'" '''
+    src_ans = '''<h3 id="''' + nameblock + '''" onmouseover="style='text-decoration:underline'" '''
     src_ans += '''onmouseout="style='text-decoration:none'">'''
-    src_ans += 'Voir/Réduire <b>' + nameblock + '</b></h3>'
+    src_ans += 'Voir/Réduire <b>' + title + '</b></h3>'
 
     # Now the content
-    src_ans += '<div id="extra_doc_div">'
+    src_ans += '<div id="' + nameblock + '_div">'
     src_ans += content
     src_ans += '</div>'
 
     # The script ennabling the hide/unhide
     src_ans += '''<script type="text/javascript">'''
     src_ans += '''$(document).ready(function(){'''
-    src_ans += '''  $("#extra_doc_div").hide();'''
-    src_ans += '''  $("#extra_doc").click(function(){'''
-    src_ans += '''    $("#extra_doc_div").toggle();'''
+    src_ans += '''  $("#''' + nameblock + '''_div").hide();'''
+    src_ans += '''  $("#''' + nameblock + '''").click(function(){'''
+    src_ans += '''    $("#''' + nameblock + '''_div").toggle();'''
     src_ans += '''  });'''
     src_ans += '''});'''
     src_ans += '''</script>'''
 
     return src_ans
-    
