@@ -65,8 +65,9 @@ Réponse de l'élève :
 ==
 
 
-form==
-{{formulaire}}
+form==#|python|
+formulaire
+'''
 {% for num, value in criteria.items() %}
 <p>{{value[description]}}</p>
 {% endfor %}
@@ -86,6 +87,7 @@ form==
 <p>Explication et commentaire général :</p>
 <textarea id="form_pouet" name="Explication" cols=100% rows="5">
 </textarea>
+'''
 ==
 
 
