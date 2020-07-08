@@ -35,7 +35,6 @@ Enoncé de la question :
 <br>
 Réponse de l'élève :  
 {{answer}}  
-<br>
 ==
 
 
