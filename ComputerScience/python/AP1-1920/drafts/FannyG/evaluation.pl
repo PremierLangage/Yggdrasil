@@ -56,12 +56,12 @@ Enoncé de la question :
 <br/>
 Réponse de l'élève :  
 {{data.answer}}  
-a {{ criteria[0][0] }} a
+a {{ criteria[0] }} a
 ==
 
 
 form==
-a {{ criteria[0][0] }} a
+a {{ criteria[0]}} a
 <p>Question(s) à choix multiples (1 seule réponse sélectionnable)</p>
 <input type="radio" id="form_q1" name="f_evaluation" value="copie_blanche">
 <label for="copie_blanche">Copie blanche</label><br/>
