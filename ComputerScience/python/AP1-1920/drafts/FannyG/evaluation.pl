@@ -19,7 +19,12 @@ general_feedback = " Merci pour votre réponse."
 horizontal % false
 
 
+before==
+==
+
+
 title = Evaluation question
+
 
 text  ==
 (mettre à vide après)  
@@ -48,9 +53,6 @@ form==
 </textarea>
 ==
 
-
-before==
-==
 
 
 evaluator==#|python|
