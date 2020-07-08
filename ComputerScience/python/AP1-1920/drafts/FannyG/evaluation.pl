@@ -45,11 +45,6 @@ criteria = {0: {"description": "Age donné", "levels": [
                         ]
                 }
             }
-
-formulaire = "<p>test</p>" #chaine de caratère qu'on met dans form
-#descr_crit = "<p>{0}</p>"
-#for num, value in criteria.items():
-#    formulaire += descr_crit.format(value["description"])
 ==
 
 
