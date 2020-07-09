@@ -51,10 +51,11 @@ criteria = {0: {"description": "Age donné", "levels": [
 ==
 
 
-title = Comparez deux copies
+title = Comparaison de deux copies
 
 
 text  ==
+Pour chaque critère, 
 <div style="text-align:center;">
     <p>Enoncé de la question :</p>
     <p style="color: rgb(50, 100, 250);">{{data.question}}<p>
