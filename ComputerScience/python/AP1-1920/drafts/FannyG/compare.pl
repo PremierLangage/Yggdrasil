@@ -55,8 +55,10 @@ title = Evaluation question
 
 
 text  ==
-Enoncé de la question :  
-<p style="color: rgb(50, 100, 250);">{{data.question}}<p>
+<div style="float:left; width:50%; text-align:center;">
+    <p>Enoncé de la question :</p>
+    <p style="color: rgb(50, 100, 250);">{{data.question}}<p>
+</div>
 <br/>
 <div style="float:left; width:50%; text-align:center;">
     <p>Réponse de l'élève <b>A</b> :</p>
