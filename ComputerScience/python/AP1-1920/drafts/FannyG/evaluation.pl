@@ -61,17 +61,20 @@ Réponse de l'élève :
 
 
 form==
-<p>{{criteria["0"].description}}</p>
-<input type="radio" id="form_id1" name="f_evaluation" value="copie_blanche">
-<label for="copie_blanche">Copie blanche</label><br/>
-<input type="radio" id="form_id1" name="f_evaluation" value="insuffisant">
-<label for="insuffisant">Insuffisant</label><br/>
-<input type="radio" id="form_id1" name="f_evaluation" value="passable">
-<label for="passable">Passable</label><br/>
-<input type="radio" id="form_id1" name="f_evaluation" value="bien">
-<label for="bien">Bien</label><br/>
-<input type="radio" id="form_id1" name="f_evaluation" value="tres_bien">
-<label for="tres_bien">Très bien</label><br/>
+{% for i in range(4) %}
+    <p>{{criteria["0"].description}}</p>
+    <input type="radio" id="form_id1" name="f_evaluation" value="copie_blanche">
+    <label for="copie_blanche">Copie blanche</label><br/>
+    <input type="radio" id="form_id1" name="f_evaluation" value="insuffisant">
+    <label for="insuffisant">Insuffisant</label><br/>
+    <input type="radio" id="form_id1" name="f_evaluation" value="passable">
+    <label for="passable">Passable</label><br/>
+    <input type="radio" id="form_id1" name="f_evaluation" value="bien">
+    <label for="bien">Bien</label><br/>
+    <input type="radio" id="form_id1" name="f_evaluation" value="tres_bien">
+    <label for="tres_bien">Très bien</label><br/>
+{% endfor %}
+
 
 <br/>
 <p>Explication et commentaire général :</p>
