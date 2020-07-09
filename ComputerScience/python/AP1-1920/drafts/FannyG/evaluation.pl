@@ -62,7 +62,7 @@ Réponse de l'élève :
 
 form==
 {% for id in criteria.keys() %}
-    <p>{{criteria[id].description}}</p>
+    <p style="">{{criteria[id].description}}</p>
     {% for niv in criteria[id].levels %}
         <input type="radio" id="form_id{{id}}" name="f_evaluation{{id}}" value="{{niv.description}}">
         <label for="{{niv.description}}">{{niv.description}}</label><br/>
