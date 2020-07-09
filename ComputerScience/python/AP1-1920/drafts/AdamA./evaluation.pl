@@ -61,7 +61,7 @@ c {{criteria.un.description}} c
 
 
 form==
-a {{ criteria[0]}} a
+
 <p>Question(s) à choix multiples (1 seule réponse sélectionnable)</p>
 <input type="radio" id="form_id1" name="f_evaluation" value="copie_blanche">
 <label for="copie_blanche">Copie blanche</label><br/>
