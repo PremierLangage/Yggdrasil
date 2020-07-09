@@ -63,7 +63,7 @@ Réponse de l'élève :
 form==
 {% for id in criteria.keys() %}
     <p>{{criteria[id].description}}</p>
-    {% for cle2,value2 in value1.items() %}
+    {% for cle2,value2 in criteria[id].items() %}
         <input type="radio" id="form_id"+str(id) name="f_evaluation"+str(id) value="copie_blanche">
         <label for="copie_blanche">Copie blanche</label><br/>
     {% endfor %}
