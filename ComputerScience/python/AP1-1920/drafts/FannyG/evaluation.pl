@@ -43,7 +43,7 @@ criteria = {"t0": {"description": "Age donné", "levels": [
                         ]
                 }
             }
-test = {0:"0",1:"1",2:"2"}
+test = {0: "0", 1: "1", 2: "2"}
 #criteria = [[1,2],[3,4]]
 ==
 
