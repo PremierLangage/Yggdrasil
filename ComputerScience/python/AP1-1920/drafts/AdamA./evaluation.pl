@@ -36,7 +36,7 @@ criteria = {"zero": {"description": "Age donné", "levels": [
                         {"description": "Aucune faute", "points": 2}
                         ]
                 },
-            "deux": {"description": "Syntaxe", "levels": [
+            "2": {"description": "Syntaxe", "levels": [
                         {"description": "La phrase ne possède ni une majuscule, ni un point.", "points": 0}, 
                         {"description": "La phrase possède soit une majuscule, soit un point.", "points": 1},
                         {"description": "La phrase possède une majuscule et un point.", "points": 2}
@@ -58,7 +58,7 @@ Réponse de l'élève :
 {{data.answer}}  
 c {{criteria.zero.description}} c  
 c {{criteria.un.description}} c  
-c {{criteria.deux.description}} c  
+c {{criteria.2.description}} c  
 ==
 
 
