@@ -58,9 +58,9 @@ text  ==
 Enoncé de la question :  
 <p style="color: rgb(50, 100, 250);">{{data.question}}<p>
 <br/>
-<div style="float:left; width:50%;">
-    <p style="text-align:center;">Réponse de l'élève <b>A</b> :</p>
-    <p style="color: rgb(50, 100, 250);text-align:center;">{{data.answer1}}<p>
+<div style="float:left; width:50%; text-align:center;">
+    <p>Réponse de l'élève <b>A</b> :</p>
+    <p style="color: rgb(50, 100, 250);">{{data.answer1}}<p>
 </div>
 <div style="float:left; width:50%;">
     <p style="text-align:center;">Réponse de l'élève <b>B</b> :</p>
