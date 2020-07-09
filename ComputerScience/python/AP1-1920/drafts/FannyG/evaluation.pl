@@ -51,7 +51,7 @@ test = {0:"0",1:"1",2:"2"}
 title = Evaluation question
 
 
-text  ==  
+text  ==
 Enoncé de la question :  
 {{data.question}}  
 <br/>
