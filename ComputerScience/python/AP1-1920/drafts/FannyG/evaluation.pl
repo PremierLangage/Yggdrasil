@@ -57,7 +57,7 @@ Enoncé de la question :
 <br/>
 Réponse de l'élève :  
 {{data.answer}}  
-a {{criteria.0.description}} a  
+a {{criteria["0"].description}} a  
 b {{test["0"]}} b
 ==
 
