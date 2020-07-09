@@ -63,7 +63,7 @@ Réponse de l'élève :
 form==
 {% for id in criteria.keys() %}
     <span style="padding-left:30px;">
-            {{criteria[id].description}}
+            <b>{{criteria[id].description}}</b>
     </span>
     <br/>
     {% for niv in criteria[id].levels %}
