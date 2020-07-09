@@ -85,7 +85,6 @@ a {{ criteria[0]}} a
 
 evaluator==#|python|
 feedback = "J'ai bien lu votre formulaire " + response['q1'] + " " + response['pouet']
-print(response)
 note = 100
 grade = (note, feedback)
 ==
