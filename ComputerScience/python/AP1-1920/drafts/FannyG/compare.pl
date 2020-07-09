@@ -58,8 +58,10 @@ text  ==
 Enoncé de la question :  
 <p style="color: rgb(50, 100, 250);">{{data.question}}<p>
 <br/>
-Réponse de l'élève :  
-<p style="color: rgb(50, 100, 250);">{{data.answer}}<p>
+Réponse de l'élève <b>A</b> :  
+<p style="color: rgb(50, 100, 250);">{{data.answer1}}<p>
+Réponse de l'élève <b>B</b> :  
+<p style="color: rgb(50, 100, 250);">{{data.answer1}}<p>
 ==
 
 
