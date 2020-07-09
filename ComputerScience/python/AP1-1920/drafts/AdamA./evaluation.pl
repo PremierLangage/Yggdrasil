@@ -36,7 +36,7 @@ criteria = {"0": {"description": "Age donné", "levels": [
                         {"description": "Aucune faute", "points": 2}
                         ]
                 },
-            "2: {"description": "Syntaxe", "levels": [
+            "2": {"description": "Syntaxe", "levels": [
                         {"description": "La phrase ne possède ni une majuscule, ni un point.", "points": 0}, 
                         {"description": "La phrase possède soit une majuscule, soit un point.", "points": 1},
                         {"description": "La phrase possède une majuscule et un point.", "points": 2}
@@ -56,7 +56,7 @@ Enoncé de la question :
 <br/>
 Réponse de l'élève :  
 {{data.answer}}  
-c {{criteria.1.description}} c  
+c {{criteria.0.description}} c  
 ==
 
 
