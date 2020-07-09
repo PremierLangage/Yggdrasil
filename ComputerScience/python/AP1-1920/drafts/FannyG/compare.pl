@@ -8,5 +8,5 @@
 #     -les critère d'evaluation: balise criteria
 # -retourne : le gagnant (0 ou 1) et la valeur pour chaque critère et un commentaire (ou un commentaire par critère ?)
 
-# balise criteria 
+# balise criteria : est ce qu'on affiche les niveaux ? (est ce qu'il y a des niveaux ?) ou pour une description de critere, on met juste un choix entre A et B
 
