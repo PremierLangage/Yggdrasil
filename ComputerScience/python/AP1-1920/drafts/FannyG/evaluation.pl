@@ -84,6 +84,7 @@ a {{ criteria[0]}} a
 
 
 evaluator==#|python|
+# response est un dict : ex : {'q1': 'tres_bien', 'pouet': 't'}
 feedback = "J'ai bien lu votre formulaire " + response['q1'] + " " + response['pouet']
 note = 100
 grade = (note, feedback)
