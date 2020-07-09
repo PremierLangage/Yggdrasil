@@ -24,7 +24,7 @@ data = {"question": "Quel âge avez-vous ?", "answer": "J'ai 20 ans."}
 
 # paramètre criteria contenant la grille critériée
 criteria = dict()
-criteria = {"0": {"description": "Age donné", "levels": [
+criteria = {"un": {"description": "Age donné", "levels": [
                         {"description": "Inférieur à 20 ans", "points": 0}, 
                         {"description": "20 ans", "points": 1},
                         {"description": "Supérieur à 20 ans", "points": 2}
@@ -56,7 +56,8 @@ Enoncé de la question :
 <br/>
 Réponse de l'élève :  
 {{data.answer}}  
-c {{criteria.0.description}} c  
+c {{criteria.un.description}} c  
+c {{criteria.1.description}} c  
 ==
 
 
