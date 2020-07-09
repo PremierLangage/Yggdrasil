@@ -53,7 +53,7 @@ title = Evaluation question
 
 text  ==
 Enoncé de la question :  
-{{data.question}}  
+<p style="color: rgb(50, 100, 250);">{{data.question}}<p>
 <br/>
 Réponse de l'élève :  
 {{data.answer}}  
