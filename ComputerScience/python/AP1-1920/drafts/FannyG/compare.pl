@@ -61,7 +61,7 @@ Enoncé de la question :
 Réponse de l'élève <b>A</b> :  
 <p style="color: rgb(50, 100, 250);">{{data.answer1}}<p>
 Réponse de l'élève <b>B</b> :  
-<p style="color: rgb(50, 100, 250);">{{data.answer1}}<p>
+<p style="color: rgb(50, 100, 250);">{{data.answer2}}<p>
 ==
 
 
