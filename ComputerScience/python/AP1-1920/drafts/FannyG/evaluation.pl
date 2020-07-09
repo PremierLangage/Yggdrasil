@@ -77,15 +77,15 @@ a {{ criteria[0]}} a
 
 <br/>
 <p>Explication et commentaire général :</p>
-<textarea id="form_pouet" name="Explication" cols=100% rows="5">
+<textarea id="form_commentaire" name="Explication" cols=100% rows="5">
 </textarea>
 ==
 
 
 
 evaluator==#|python|
-# response est un dict : ex : {'q1': 'tres_bien', 'pouet': 't'}
-feedback = "J'ai bien lu votre formulaire " + response['q1'] + " " + response['pouet']
+# response est un dict : ex : {'q1': 'tres_bien', 'commentaire': 't'}
+feedback = "J'ai bien lu votre formulaire " + response['q1'] + " " + response['commentaire']
 note = 100
 grade = (note, feedback)
 ==
