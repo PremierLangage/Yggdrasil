@@ -61,18 +61,12 @@ Réponse de l'élève :
 
 
 form==
-{% for cle,value in criteria.items() %}
-    <p>{{criteria[cle].description}}</p>
-    <input type="radio" id="form_id"+str(cle) name="f_evaluation" value="copie_blanche">
-    <label for="copie_blanche">Copie blanche</label><br/>
-    <input type="radio" id="form_id"+str(cle) name="f_evaluation" value="insuffisant">
-    <label for="insuffisant">Insuffisant</label><br/>
-    <input type="radio" id="form_id"+str(cle) name="f_evaluation" value="passable">
-    <label for="passable">Passable</label><br/>
-    <input type="radio" id="form_id"+str(cle) name="f_evaluation" value="bien">
-    <label for="bien">Bien</label><br/>
-    <input type="radio" id="form_id"+str(cle) name="f_evaluation" value="tres_bien">
-    <label for="tres_bien">Très bien</label><br/>
+{% for cle1,value1 in criteria.items() %}
+    <p>{{criteria[cle1].description}}</p>
+    {% for cle2,value2 in value1.items() %}
+        <input type="radio" id="form_id"+str(cle1) name="f_evaluation"+str(cle1) value="copie_blanche">
+        <label for="copie_blanche">Copie blanche</label><br/>
+    {% endfor %}
 {% endfor %}
 
 <br/>
