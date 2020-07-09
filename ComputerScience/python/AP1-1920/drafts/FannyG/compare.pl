@@ -60,7 +60,7 @@ Enoncé de la question :
 <br/>
 <div style="float:left; width:50%;">
     <p style="text-align:center;">Réponse de l'élève <b>A</b> :</p>
-    <p style="color: rgb(50, 100, 250)text-align:center;;">{{data.answer1}}<p>
+    <p style="color: rgb(50, 100, 250);text-align:center;">{{data.answer1}}<p>
 </div>
 <div style="float:left; width:50%;">
     <p style="text-align:center;">Réponse de l'élève <b>B</b> :</p>
