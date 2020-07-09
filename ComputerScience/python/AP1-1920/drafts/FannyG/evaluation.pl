@@ -61,7 +61,7 @@ Réponse de l'élève :
 
 
 form==
-{% for cle, value in {{criteria}} %}
+{% for i in range(2) %}
     <p>{{criteria["0"].description}}</p>
 
 {% endfor %}
