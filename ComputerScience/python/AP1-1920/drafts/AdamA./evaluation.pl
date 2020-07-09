@@ -24,19 +24,19 @@ data = {"question": "Quel âge avez-vous ?", "answer": "J'ai 20 ans."}
 
 # paramètre criteria contenant la grille critériée
 criteria = dict()
-criteria = {"un": {"description": "Age donné", "levels": [
+criteria = {"zero": {"description": "Age donné", "levels": [
                         {"description": "Inférieur à 20 ans", "points": 0}, 
                         {"description": "20 ans", "points": 1},
                         {"description": "Supérieur à 20 ans", "points": 2}
                         ]
                 },
-            "1": {"description": "Orthographe", "levels": [
+            "un": {"description": "Orthographe", "levels": [
                         {"description": "Plusieurs fautes", "points": 0}, 
                         {"description": "1 faute", "points": 1},
                         {"description": "Aucune faute", "points": 2}
                         ]
                 },
-            "2": {"description": "Syntaxe", "levels": [
+            "deux": {"description": "Syntaxe", "levels": [
                         {"description": "La phrase ne possède ni une majuscule, ni un point.", "points": 0}, 
                         {"description": "La phrase possède soit une majuscule, soit un point.", "points": 1},
                         {"description": "La phrase possède une majuscule et un point.", "points": 2}
@@ -56,8 +56,9 @@ Enoncé de la question :
 <br/>
 Réponse de l'élève :  
 {{data.answer}}  
+c {{criteria.zero.description}} c  
 c {{criteria.un.description}} c  
-c {{criteria.1.description}} c  
+c {{criteria.deux.description}} c  
 ==
 
 
