@@ -55,7 +55,7 @@ title = Comparaison de deux copies
 
 
 text  ==
-Pour chaque critère, choisissez la meilleure copie.
+Pour chaque critère, choisissez la meilleure copie.  
 <br/>
 <div style="text-align:center;">
     <p>Enoncé de la question :</p>
