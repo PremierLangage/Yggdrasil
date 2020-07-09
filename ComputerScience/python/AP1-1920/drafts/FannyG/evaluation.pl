@@ -9,6 +9,7 @@
 # -retourne : un dico avec la valeur pour chaque critère et un commentaire.
 
 # qrevuz : comment faire si un élève ne sélectionne pas tous les champs ?
+# qrevuz : comment calculer les points ? est ce que ça se fait dans cet exo ou alors dans l'atelier, quand on récupère toutes les exos évalués ?
 
 # author=Fanny Garnevault
 
