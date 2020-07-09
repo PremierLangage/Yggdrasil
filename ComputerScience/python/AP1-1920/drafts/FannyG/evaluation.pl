@@ -80,13 +80,7 @@ form==
 evaluator==#|python|
 # response est un dict : ex : {1: 'tres_bien', 'commentaire': 't'}
 # le dict de retour reste response, les critères ayant des id, 
-feedback = "J'ai bien lu votre formulaire :\n" + response['id0'] 
-                                               + "\n" 
-                                               + response['id1'] 
-                                               + "\n" 
-                                               + response['id2'] 
-                                               + "\n" 
-                                               + response['commentaire']
+feedback = "J'ai bien lu votre formulaire :\n" + response['id0'] + "\n" + response['id1'] + "\n" + response['id2'] + "\n" + response['commentaire']
 note = 100
 grade = (note, feedback)
 ==
