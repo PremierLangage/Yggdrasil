@@ -63,18 +63,17 @@ Réponse de l'élève :
 form==
 {% for i in range(2) %}
     <p>la{{criteria[i].description}}</p>
-
+    <input type="radio" id="form_id1" name="f_evaluation" value="copie_blanche">
+    <label for="copie_blanche">Copie blanche</label><br/>
+    <input type="radio" id="form_id1" name="f_evaluation" value="insuffisant">
+    <label for="insuffisant">Insuffisant</label><br/>
+    <input type="radio" id="form_id1" name="f_evaluation" value="passable">
+    <label for="passable">Passable</label><br/>
+    <input type="radio" id="form_id1" name="f_evaluation" value="bien">
+    <label for="bien">Bien</label><br/>
+    <input type="radio" id="form_id1" name="f_evaluation" value="tres_bien">
+    <label for="tres_bien">Très bien</label><br/>
 {% endfor %}
-<input type="radio" id="form_id1" name="f_evaluation" value="copie_blanche">
-<label for="copie_blanche">Copie blanche</label><br/>
-<input type="radio" id="form_id1" name="f_evaluation" value="insuffisant">
-<label for="insuffisant">Insuffisant</label><br/>
-<input type="radio" id="form_id1" name="f_evaluation" value="passable">
-<label for="passable">Passable</label><br/>
-<input type="radio" id="form_id1" name="f_evaluation" value="bien">
-<label for="bien">Bien</label><br/>
-<input type="radio" id="form_id1" name="f_evaluation" value="tres_bien">
-<label for="tres_bien">Très bien</label><br/>
 
 <br/>
 <p>Explication et commentaire général :</p>
