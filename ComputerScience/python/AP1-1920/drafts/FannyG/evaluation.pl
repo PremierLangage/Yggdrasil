@@ -84,7 +84,7 @@ a {{ criteria[0]}} a
 
 
 evaluator==#|python|
-# response est un dict : ex : {'1': 'tres_bien', 'commentaire': 't'}
+# response est un dict : ex : {1: 'tres_bien', 'commentaire': 't'}
 # le dict de retour reste response, les critères ayant des id, 
 feedback = "J'ai bien lu votre formulaire " + response['1'] + " " + response['commentaire']
 note = 100
