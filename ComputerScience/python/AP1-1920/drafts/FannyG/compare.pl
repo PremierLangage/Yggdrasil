@@ -66,7 +66,7 @@ Enoncé de la question :
     <p style="text-align:center;">Réponse de l'élève <b>B</b> :</p>
     <p style="color: rgb(50, 100, 250);text-align:center;">{{data.answer2}}<p>
 </div>
-<br/><br/>
+<br/>
 ==
 
 
