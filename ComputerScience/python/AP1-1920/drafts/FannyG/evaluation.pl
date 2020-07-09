@@ -62,7 +62,7 @@ Réponse de l'élève :
 
 form==
 {% for cle,value in criteria.items() %}
-    <p>la{{criteria[cle].description}}</p>
+    <p>{{criteria[cle].description}}</p>
     <input type="radio" id="form_id"+str(cle) name="f_evaluation" value="copie_blanche">
     <label for="copie_blanche">Copie blanche</label><br/>
     <input type="radio" id="form_id1" name="f_evaluation" value="insuffisant">
