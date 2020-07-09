@@ -57,13 +57,10 @@ Enoncé de la question :
 <br/>
 Réponse de l'élève :  
 {{data.answer}}  
-a {{criteria["0"].description}} a  
-b {{test["0"]}} b
 ==
 
 
 form==
-a {{data.question}} a
 <p>{{criteria["0"].description}}</p>
 <input type="radio" id="form_id1" name="f_evaluation" value="copie_blanche">
 <label for="copie_blanche">Copie blanche</label><br/>
