@@ -16,7 +16,6 @@
 @ /builder/before.py [builder.py]
 
 #general_feedback = " Merci pour votre réponse." 
-#horizontal % false
 
 
 before==#|python|
