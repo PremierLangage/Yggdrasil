@@ -71,7 +71,7 @@ Enoncé de la question :
 
 
 form==
-<div style="clear:both;">
+<div style="clear:both;border:1px solid red">
     {% for id in criteria.keys() %}
         <span style="padding-left:30px;">
                 <b>{{criteria[id].description}}</b>
