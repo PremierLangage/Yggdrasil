@@ -8,3 +8,5 @@
 #     -les critère d'evaluation: balise criteria
 # -retourne : le gagnant (0 ou 1) et la valeur pour chaque critère et un commentaire (ou un commentaire par critère ?)
 
+# balise criteria 
+
