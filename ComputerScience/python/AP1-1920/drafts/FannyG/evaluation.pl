@@ -64,15 +64,15 @@ a {{ criteria.0 }} a
 form==
 a {{ criteria[0]}} a
 <p>Question(s) à choix multiples (1 seule réponse sélectionnable)</p>
-<input type="radio" id="form_1" name="f_evaluation" value="copie_blanche">
+<input type="radio" id="form_id1" name="f_evaluation" value="copie_blanche">
 <label for="copie_blanche">Copie blanche</label><br/>
-<input type="radio" id="form_1" name="f_evaluation" value="insuffisant">
+<input type="radio" id="form_id1" name="f_evaluation" value="insuffisant">
 <label for="insuffisant">Insuffisant</label><br/>
-<input type="radio" id="form_1" name="f_evaluation" value="passable">
+<input type="radio" id="form_id1" name="f_evaluation" value="passable">
 <label for="passable">Passable</label><br/>
-<input type="radio" id="form_1" name="f_evaluation" value="bien">
+<input type="radio" id="form_id1" name="f_evaluation" value="bien">
 <label for="bien">Bien</label><br/>
-<input type="radio" id="form_1" name="f_evaluation" value="tres_bien">
+<input type="radio" id="form_id1" name="f_evaluation" value="tres_bien">
 <label for="tres_bien">Très bien</label><br/>
 
 <br/>
@@ -86,7 +86,7 @@ a {{ criteria[0]}} a
 evaluator==#|python|
 # response est un dict : ex : {1: 'tres_bien', 'commentaire': 't'}
 # le dict de retour reste response, les critères ayant des id, 
-feedback = "J'ai bien lu votre formulaire " + response[1] + " " + response['commentaire']
+feedback = "J'ai bien lu votre formulaire " + response['id1'] + " " + response['commentaire']
 note = 100
 grade = (note, feedback)
 ==
