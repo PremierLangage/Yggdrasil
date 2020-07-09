@@ -51,7 +51,7 @@ criteria = {0: {"description": "Age donné", "levels": [
 ==
 
 
-title = Comparer deux copies
+title = Comparez deux copies
 
 
 text  ==
