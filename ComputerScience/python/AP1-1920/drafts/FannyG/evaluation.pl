@@ -57,7 +57,7 @@ Enoncé de la question :
 Réponse de l'élève :  
 {{data.answer}}  
 a {{criteria[0]}} a  
-a {{criteria.0.description}} a
+a {{criteria.0}} a
 ==
 
 
