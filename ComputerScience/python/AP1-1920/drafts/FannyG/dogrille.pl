@@ -66,7 +66,7 @@ form==
 {% endfor %}
 
 <br/>
-<p>Explication et commentaire général :</p>
+<p>Commentaire :</p>
 <textarea id="form_commentaire" name="Commentaire" cols=100% rows="5">
 </textarea>
 ==
