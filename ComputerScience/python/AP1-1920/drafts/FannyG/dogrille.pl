@@ -74,8 +74,6 @@ form==
 
 
 evaluator==#|python|
-# response est un dict : ex : {1: 'tres_bien', 'commentaire': 't'}
-# le dict de retour reste response, les critères ayant des id, 
 # feedback = "J'ai bien lu votre formulaire :<br/>-" + response['0'] + "<br/>-" + response['1'] + "<br/>-" + response['2'] + "<br/>-" + response['commentaire']
 note = 100
 # general_feedback
