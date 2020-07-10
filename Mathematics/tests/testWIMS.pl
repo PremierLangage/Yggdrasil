@@ -10,7 +10,7 @@ L =  10 * rd.randint( 1 , 10)
 l =  10 * rd.randint( 1 , 10)
 per =  2 * ( L + l)
 super =  L * l
-
+print(123)
 ==
 
 text==
@@ -26,13 +26,5 @@ superficie
 ==
 
 evaluator==
-if input0.value ==  "per m":
-        score = 100
-else:
-        score = 0
-if input1.value ==  "super m ^ 2":
-        score = 100
-else:
-        score = 0
-
+print input0.value
 ==
