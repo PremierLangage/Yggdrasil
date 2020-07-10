@@ -75,7 +75,7 @@ form==
 
 evaluator==#|python|
 # feedback = "J'ai bien lu votre formulaire :<br/>-" + response['0'] + "<br/>-" + response['1'] + "<br/>-" + response['2'] + "<br/>-" + response['commentaire']
-note = 100
+note = 100 #
 # general_feedback
 try:
     grade = (note, response['commentaire'])
