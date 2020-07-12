@@ -172,11 +172,14 @@ else:
         compil_state = 'warning'
 
 # begin of feedback
-feedback = '<p style="margin-bottom: 5px;"><b><u>Compilation :</u> ' + str(grade_compil) + '%</b> (cliquer pour dérouler les détails)</p>'
-feedback += '<div class="' + compil_state + '-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
-feedback += text_compil + ' avec flags ' + ' '.join(cflags) + '<br />'
+feedback = '<p style="margin-bottom: 5px;"><b><u>Compilation :</u> ' + str(grade_compil) + '%</b> '
 if compil_state != 'success':
-    feedback += make_hide_block_on_click("compil_ans", "les informations de compilation", terminal_code(spout+errout))
+    feedback += '(cliquer au dessous pour dérouler les détails)</p>'
+feedback += '<div class="' + compil_state + '-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
+if compil_state != 'success':
+    feedback += make_hide_block_on_click("compil_ans", text_compil + ' avec flags ' + ' '.join(cflags), terminal_code(spout+errout))
+else:
+    feedback += make_hide_block_on_click("compil_ans", text_compil + ' avec flags ' + ' '.join(cflags), "C'etait parfait, le compilateur n'a rien dit...")
 feedback += '</div>'
 
 # Tests
