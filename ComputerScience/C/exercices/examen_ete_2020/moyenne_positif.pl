@@ -53,7 +53,7 @@ checks_args_stdin = [["Example simple", ["1", "2", "3"], ""],
  ["Test aléatoire", [str(randint(-100,100)) for i in range(randint(11, 15))], ""],
  ["Test aléatoire", [str(randint(-100,100)) for i in range(randint(16, 20))], ""] ]
 
- text += " {{ editor|component }} "
+text+=" {{ editor|component }} "
 ==
 
 editor.code==#|c|
