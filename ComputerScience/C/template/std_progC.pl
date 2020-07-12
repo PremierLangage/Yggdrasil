@@ -204,6 +204,12 @@ if compil_state != 'error':
 
         if spout == expected_ouput:
             nb_good += 1
+            feedback += '<div class="success-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
+            feedback += text_c[0] + '<br />'
+            terminal_log = "Platon@debian~$> ./a.out " + " ".join(test_c[1]) + "\n"
+            terminal_log += "expected_ouput"
+            feedback += make_hide_block_on_click("compil_ans", "les informations de compilation", terminal_code(terminal_log))
+            feedback += '</div>'
         else:
             nb_bad += 1
 
