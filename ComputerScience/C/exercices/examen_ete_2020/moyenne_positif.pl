@@ -59,6 +59,7 @@ text+=" {{ editor|component }} "
 editor.code==#|c|
 ... mean_positive(int* array, int size){
   /* Votre code ici... */
+  return ...
 }
 ==
 
