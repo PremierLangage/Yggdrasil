@@ -65,6 +65,12 @@ compiler="gcc"
 cflags=["-Wall", "-ansi"]
 # Place here library flags
 libflags=[]
+
+checks_args_stdin = [["Premier test exemple (1 et 1)", ["1"], "1"],
+ ["Second test exemple (12 et -7)", ["12"], "-7"],
+ ["Troisième test aléatoire", [str(randint(-100,100))], str(randint(-100,100)) ],
+ ["Quatrième test aléatoire", [str(randint(-100,100))], str(randint(-100,100)) ],
+ ["Cinquième test aléatoire lui aussi", [str(randint(-100,100))], str(randint(-100,100)) ] ]
 ==
 
 
@@ -167,15 +173,4 @@ feedback = '<p style="margin-bottom: 5px;"><b><u>Compilation :</u> ' + str(grade
 
 grade=(grade_compil, feedback)
 ==
-
-checks_args_stdin==#|python|
-[["Premier test exemple (1 et 1)", ["1"], "1"],
- ["Second test exemple (12 et -7)", ["12"], "-7"],
- ["Troisième test aléatoire", [str(randint(-100,100))], str(randint(-100,100)) ],
- ["Quatrième test aléatoire", [str(randint(-100,100))], str(randint(-100,100)) ],
- ["Cinquième test aléatoire lui aussi", [str(randint(-100,100))], str(randint(-100,100)) ] ]
-==
-
-
-
 
