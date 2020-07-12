@@ -62,6 +62,19 @@ code.before==#|c|
 
 code.after==#|c|
 int main(int argc, char* argv[]){
+  int* array=NULL;
+  int i;
+
+  array = (int*)malloc(sizeof(int) * (argc-1));
+  for (i=1 ; i<argc ; i++)
+    array[i] = atoi(argv[i]);
+
+  printf("mean_positive( [");
+  for (i=1 ; i<argc-1 ; i++)
+    printf("%d, ", array[i]);
+  if (argc > 0)
+    printf("%d", array[argc-1]);
+  printf("] ) : %f", mean_positive(array, argc-1));
 
   return 0;
 }
