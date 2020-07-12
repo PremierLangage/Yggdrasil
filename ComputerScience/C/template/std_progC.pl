@@ -252,7 +252,7 @@ tests %=
 {
     "correct" : {
         "response" : {
-            "editor.code" : "solution"
+            "editor.code" : solution
         },
         "grade" : 100,
     }
