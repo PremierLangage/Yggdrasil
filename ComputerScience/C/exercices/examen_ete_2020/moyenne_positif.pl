@@ -31,6 +31,29 @@ calculée et retournée dans les floattants C. Si le tableau ne contient aucun
 flottants encore).
 ==
 
+before ==#|python|
+from random import randint
+
+# Some globals variables
+nb_attempt=0
+
+# Place here your favorite C compiler
+compiler="gcc"
+# PLace here the compilation flags
+cflags=["-Wall", "-ansi"]
+# Place here library flags
+libflags=[]
+
+checks_args_stdin = [["Example simple", ["1", "2", "3"], ""],
+ ["Tableau vide", [], ""],
+ ["Que des négatifs", ["-1", "-1", "-321"], ""],
+ ["Mélange de valeurs", ["-1", "3", "1", "-12", "2"], ""],
+ ["Mélange de valeurs avec des zéros", ["-1", "3", "0", "1", "-12", "2", "0", "-3", "0"], ""],
+ ["Test aléatoire", [str(randint(-100,100)) for i in range(randint(1, 5))], ""],
+ ["Test aléatoire", [str(randint(-100,100)) for i in range(randint(6, 10))], ""],
+ ["Test aléatoire", [str(randint(-100,100)) for i in range(randint(11, 15))], ""] ]
+==
+
 editor.code==#|c|
 ... mean_positive(int* array, int size){
   /* Votre code ici... */
