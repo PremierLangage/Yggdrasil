@@ -139,7 +139,7 @@ feedback = "Compilation : <br />"
 
 # Compilation ok
 if len(spout) + len(errout) == 0:
-    feedback += '<span class="success-state" style="margin:5px;padding:5px; border:1px solid #155724 transparent;">'
+    feedback += '<span class="success-state" style="margin-top:10px;padding:5px; border:1px solid #155724 transparent;">'
     feedback += 'Compilation réussie avec flags ' + ' '.join(cflags) + '</span>'
 else:
     feedback = make_hide_block_on_click("compil_ans", "Résultat de compilation", spout+errout)
