@@ -40,6 +40,16 @@ def make_hide_block_on_click(nameblock, title, content):
 
     return src_ans
 
+def subnlbybr(str):
+    """
+    Substitute each occurences of char '\n' by '<br />' in the string
+    `str` in argument.
+    EXAMPLES::
+        >>> subnlbybr("\\n")
+        '<br/>'
+    """
+    return "<br/>".join(str.split("\n"))
+
 def add_border(html_code,
                font_color=None, font_family=None, font_size=None,
                font_style=None, font_weight=None,
