@@ -90,7 +90,7 @@ int main(int argc, char* argv[]){
   int* array=NULL;
   int i;
 
-  array = (int*)malloc(2 * sizeof(int) * argc);
+  array = (int*)malloc(sizeof(int) * argc);
   for (i=1 ; i<argc ; i++)
     array[i] = atoi(argv[i]);
 
