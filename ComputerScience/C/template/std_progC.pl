@@ -150,6 +150,7 @@ else:
     else:
         feedback += '<div class="warning-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
         feedback += 'Compilation réussie avec warning avec flags ' + ' '.join(cflags) + '<br />'
+        
     feedback += make_hide_block_on_click("compil_ans", "les informations de compilation", terminal_code(spout+errout))
     feedback += '</div>'
 
