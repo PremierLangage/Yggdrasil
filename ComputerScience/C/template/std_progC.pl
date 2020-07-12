@@ -143,16 +143,24 @@ else:
     # Compilation Aborted
     if "error:" in errout:
         grade_compil = 0
-        text_compil = 'Compilation réussie'
-        compil_state = 'success'
+        text_compil = 'Compilation échouée'
+        compil_state = 'error'
     # So there must have some warning
     else:
-        grade_compil = max(0, 100 - ((spout+errout).count('warning')*10))
-        text_compil = 'Compilation réussie'
-        compil_state = 'success'
+        nb_w_compil = (spout+errout).count('warning')
+        grade_compil = max(0, 100 - (nb_w_compil*10) )
+        text_compil = 'Compilation réussie avec ' + str(nb_w_compil) + ' warning'
+        if nb_w_compil > 1:
+            text_compil += 's'
+        compil_state = 'warning'
 
 # begin of feedback
 feedback = '<p style="margin-bottom: 5px;"><b><u>Compilation :</u> ' + str(grade_compil) + '%</b></p>'
+feedback += '<div class="' + compil_state + '-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
+feedback += text_compil + ' avec flags ' + ' '.join(cflags) + '<br />'
+if compil_state != 'success'
+feedback += make_hide_block_on_click("compil_ans", "les informations de compilation", terminal_code(spout+errout))
+feedback += '</div>'
 
 # Compilation ok
 if len(spout) + len(errout) == 0:
