@@ -119,6 +119,9 @@ evaluator==#|python|
 import subprocess
 from std_progC_utils import make_hide_block_on_click, terminal_code, subnlbybr
 
+# Update nb attempt
+nb_attempt += 1 # count each try....
+
 # Pre-process before executing the checks
 def prepare_code_to_file(src_code, filename):
     """
@@ -246,7 +249,11 @@ if compil_state != 'error':
 feedback += '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Tests :</u> ' + str(grade_checks) + '%</b> (cliquer sur les tests pour afficher/réduire leurs détails)</p>'
 feedback += feedback_checks
 
-grade=((grade_compil * grade_checks) // 100, feedback)
+grade_attempt = 20 + (80 // nb_attempt)
+
+feedback += '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Tests :</u> ' + str(grade_attempt) + '%</b></p>'
+
+grade=((grade_compil * grade_checks * grade_attempt) // 10000, feedback)
 ==
 
 # tests.test1.editor.code==
