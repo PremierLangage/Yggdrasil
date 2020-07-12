@@ -15,7 +15,7 @@
 #*****************************************************************************
 
 
-def make_hide_block_on_click(nameblock, title, content):
+def make_hide_block_on_click(nameblock, title, content, order="Voir/Réduire "):
     """
     Return a html/css/js block composed by a clickable title which display
     a possible large content when clicked. Another click reduce the content
@@ -24,7 +24,7 @@ def make_hide_block_on_click(nameblock, title, content):
     # Here the clickable title 
     src_ans = '''<h3 id="''' + nameblock + '''" onmouseover="style='text-decoration:underline'" '''
     src_ans += '''onmouseout="style='text-decoration:none'">'''
-    src_ans += 'Voir/Réduire <b>' + title + '</b></h3>'
+    src_ans += order+'<b>' + title + '</b></h3>'
 
     # Now the content
     src_ans += '<div id="' + nameblock + '_div">'
