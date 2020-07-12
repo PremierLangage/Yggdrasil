@@ -158,8 +158,8 @@ else:
 feedback = '<p style="margin-bottom: 5px;"><b><u>Compilation :</u> ' + str(grade_compil) + '%</b></p>'
 feedback += '<div class="' + compil_state + '-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
 feedback += text_compil + ' avec flags ' + ' '.join(cflags) + '<br />'
-if compil_state != 'success'
-feedback += make_hide_block_on_click("compil_ans", "les informations de compilation", terminal_code(spout+errout))
+if compil_state != 'success':
+    feedback += make_hide_block_on_click("compil_ans", "les informations de compilation", terminal_code(spout+errout))
 feedback += '</div>'
 
 # Compilation ok
