@@ -242,7 +242,6 @@ if compil_state != 'error':
 
     grade_checks = (nb_good * 100) // (nb_good + nb_bad)
 feedback += '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Tests :</u> ' + str(grade_checks) + '%</b> (cliquer sur les tests pour afficher/réduire leurs détails)</p>'
-
 feedback += feedback_checks
 
 grade=((grade_compil * grade_checks) // 100, feedback)
