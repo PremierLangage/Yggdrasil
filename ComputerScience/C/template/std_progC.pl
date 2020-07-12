@@ -232,7 +232,7 @@ if compil_state != 'error':
             else:
                 stdin_explain = ""
             term_tot += terminal_code(terminal_log)
-            term_tot += "<br />Obtenu : <br />"
+            term_tot += "Obtenu : <br />"
             terminal_log = "Platon@debian~$> ./a.out " + " ".join(test_c[1]) + "\n"
             terminal_log += spout
             term_tot += terminal_code(terminal_log)
