@@ -37,6 +37,24 @@ editor.code==#|c|
 }
 ==
 
+solution==#|c|
+float mean_positive(int* array, int size){
+  int i;
+  int nb=0;
+  float sum = 0.0;
+
+  for (i=0 ; i<size ; i++){
+    if (array[i] >= 0){
+      sum += array[i];
+      nb += 1;
+    }
+  }
+  if (nb > 0)
+    return sum / nb;
+  return 0.0;
+}
+==
+
 code.before==#|c|
 #include <stdio.h>
 #include <stdlib.h>
