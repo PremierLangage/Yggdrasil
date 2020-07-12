@@ -14,7 +14,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-extends=/ComputerScience/C/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
 title=Moyenne des éléments positifs
