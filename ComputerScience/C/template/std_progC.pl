@@ -249,7 +249,7 @@ if compil_state != 'error':
 feedback += '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Tests :</u> ' + str(grade_checks) + '%</b> (cliquer sur les tests pour afficher/réduire leurs détails)</p>'
 feedback += feedback_checks
 
-grade_attempt = 20 + (800 // (9+nb_attempt))
+grade_attempt = 20 + (400 // (4+nb_attempt))
 
 feedback += '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Efficacité :</u> ' + str(grade_attempt) + '%</b></p>'
 
