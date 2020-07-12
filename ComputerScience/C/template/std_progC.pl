@@ -68,6 +68,15 @@ cflags=["-Wall", "-ansi"]
 # Place here library flags
 libflags=[]
 
+# Place the construction of your tests inside the builder please 
+# (that avoids an another call to eval or exec inside the grader)
+# tests are placed inside a list stored in variable : checks_args_stdin
+# each test must have the following shape :
+# ["name of the test", [list of arguments of the test], stdin of the test ]
+# During the test execution, subprocess will execute :
+# ./prog [list of argument]  
+# and a tube will place the content stdin inside the standard input of the
+# process...
 checks_args_stdin = [["Premier test exemple (1 et 1)", ["1"], "1"],
  ["Second test exemple (12 et -7)", ["12"], "-7"],
  ["Troisième test aléatoire", [str(randint(-100,100))], str(randint(-100,100)) ],
