@@ -78,12 +78,12 @@ float mean_positive(int* array, int size){
 }
 ==
 
-code.before==#|c|
+code_before==#|c|
 #include <stdio.h>
 #include <stdlib.h>
 ==
 
-code.after==#|c|
+code_after==#|c|
 int main(int argc, char* argv[]){
   int* array=NULL;
   int i;
