@@ -184,7 +184,30 @@ nb_good = 0
 nb_bad = 0
 grade_checks = 0
 
+feedback_checks = ""
+
+if compil_state != 'error':
+    for test_c in checks_args_stdin:
+        # Use the teacher solution to generated expected output of the test
+        command_args = ["teacher_prog"] + test_c[1]
+        sp = subprocess.run(command_args, stdin=test_c[2], stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
+        expected_ouput = sp.stdout.decode() + sp.stderr.decode() 
+        rc_teacher = sp.returncode
+        # Now execute the student programm
+        command_args = ["student_prog"] + test_c[1]
+        sp = subprocess.run(command_args, stdin=test_c[2], stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
+        spout = sp.stdout.decode() + sp.stderr.decode()
+        rc_student = sp.returncode
+
+        if spout == expected_ouput:
+            nb_good += 1
+        else:
+            nb_bad += 1
+
+    grade_checks = (nb_good * 100) // (nb_good + nb_bad)
 feedback += '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Tests :</u> ' + str(grade_checks) + '%</b></p>'
+
+feedback += feedback_checks
 
 grade=(grade_compil, feedback)
 ==
