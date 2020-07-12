@@ -260,9 +260,10 @@ if nb_attempt == 1:
 else:
     feedback += '<div class="warning-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
     feedback += str(nb_attempt)+' tentatives</div>'
-    all_grade = []
+    all_grade.append((grade_compil * grade_checks * grade_attempt) // 10000)
 
-all_grade = 
+# overall grade !
+feedback = '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Note actuelle :</u> ' + max(all_grade) + '%</b></p>' + feedback
 
 grade=((grade_compil * grade_checks * grade_attempt) // 10000, feedback)
 ==
