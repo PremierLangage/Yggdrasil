@@ -162,17 +162,18 @@ if compil_state != 'success':
     feedback += make_hide_block_on_click("compil_ans", "les informations de compilation", terminal_code(spout+errout))
 feedback += '</div>'
 
-
+# Tests
+feedback = '<p style="margin-bottom: 5px;"><b><u>Compilation :</u> ' + str(grade_compil) + '%</b></p>'
 
 grade=(grade_compil, feedback)
 ==
 
 checks_args_stdin==#|python|
-[["Premier test exemple (1 et 1)", "1", "1"],
- ["Second test exemple (12 et -7)", "12", "-7"],
- ["Troisième test aléatoire", "randint(-100,100)", "randint(-100,100)"],
- ["Quatrième test aléatoire", "randint(-100,100)", "randint(-100,100)"],
- ["Cinquième test aléatoire lui aussi", "randint(-100,100)", "randint(-100,100)"]]
+[["Premier test exemple (1 et 1)", ["1"], "1"],
+ ["Second test exemple (12 et -7)", ["12"], "-7"],
+ ["Troisième test aléatoire", [str(randint(-100,100))], str(randint(-100,100)) ],
+ ["Quatrième test aléatoire", [str(randint(-100,100))], str(randint(-100,100)) ],
+ ["Cinquième test aléatoire lui aussi", [str(randint(-100,100))], str(randint(-100,100)) ] ]
 ==
 
 
