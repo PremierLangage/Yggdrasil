@@ -17,6 +17,9 @@
 
 def make_hide_block_on_click(nameblock, title, content):
     """
+    Return a html/css/js block composed by a clickable title which display
+    a possible large content when clicked. Another click reduce the content
+    and so on.
     """
     # Here the clickable title 
     src_ans = '''<h3 id="''' + nameblock + '''" onmouseover="style='text-decoration:underline'" '''
@@ -96,4 +99,4 @@ def terminal_code(msg):
         >>> terminal_code(">>> 1+1\n2\n")
         ...
     """
-    return add_border(msg, "White", "Monospace", "1em", "normal", "normal", "Black", None) 
+    return add_border(msg, "White", "Monospace", "0.9em", "normal", "normal", "Black", None) 
