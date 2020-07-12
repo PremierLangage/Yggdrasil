@@ -245,7 +245,7 @@ feedback += '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Tests :</u> '
 
 feedback += feedback_checks
 
-grade=((grade_compil*nb_good) // (nb_good + nb_bad), feedback)
+grade=((grade_compil*grade_checks) // 100, feedback)
 ==
 
 # tests.test1.editor.code==
