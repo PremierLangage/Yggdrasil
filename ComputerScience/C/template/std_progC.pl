@@ -175,7 +175,7 @@ nb_good = 0
 nb_bad = 0
 grade_checks = 0
 
-feedback += '<p style="margin-bottom: 5px;"><b><u>Tests :</u> ' + str(grade_checks) + '%</b></p>'
+feedback += '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Tests :</u> ' + str(grade_checks) + '%</b></p>'
 
 grade=(grade_compil, feedback)
 ==
