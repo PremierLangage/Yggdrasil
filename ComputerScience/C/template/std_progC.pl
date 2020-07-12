@@ -191,12 +191,12 @@ if compil_state != 'error':
         f_in=open("stdin_content", "w")
         f_in.write(test_c[2])
         # Use the teacher solution to generated expected output of the test
-        command_args = ["teacher_prog"] + test_c[1]
+        command_args = ["./teacher_prog"] + test_c[1]
         sp = subprocess.run(command_args, stdin=f_in, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
         expected_ouput = sp.stdout.decode() + sp.stderr.decode() 
         rc_teacher = sp.returncode
         # Now execute the student programm
-        command_args = ["student_prog"] + test_c[1]
+        command_args = ["./student_prog"] + test_c[1]
         sp = subprocess.run(command_args, stdin=f_in, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
         spout = sp.stdout.decode() + sp.stderr.decode()
         rc_student = sp.returncode
