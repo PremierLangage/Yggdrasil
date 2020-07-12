@@ -135,7 +135,7 @@ compile_source("src_teacher.c", "teacher_prog", compiler, cflags, libflags)
 returncode, spout, errout = compile_source("src_student.c", "student_prog", compiler, cflags, libflags)
 
 # begin of feedback
-feedback = "<p>Compilation : </p>"
+feedback = "<p><u><b>Compilation :</b></u></p>"
 
 # Compilation ok
 if len(spout) + len(errout) == 0:
