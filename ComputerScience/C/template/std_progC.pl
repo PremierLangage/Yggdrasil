@@ -56,6 +56,8 @@ int carre(int n){
 ==
 
 before ==#|python|
+from random import randint
+
 # Some globals variables
 nb_attempt=0
 
