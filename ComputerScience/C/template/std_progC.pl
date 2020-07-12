@@ -208,7 +208,14 @@ if compil_state != 'error':
             feedback_checks += test_c[0] + '<br />'
             terminal_log = "Platon@debian~$> ./a.out " + " ".join(test_c[1]) + "\n"
             terminal_log += expected_ouput
-            feedback_checks += make_hide_block_on_click("details_check"+str(nb_good+nb_bad), "les détails du test", terminal_code(terminal_log))
+            if len(test_c[2]) > 0:
+                stdin_explain = "Contenu de l'entrée standard durant l'exécution : <br />"
+                stdin_explain += subnlbybr(test_c[2])
+                if test_c[2][-1] != '\n':
+                    stdin_explain += "<br />"
+            else:
+                stdin_explain = ""
+            feedback_checks += make_hide_block_on_click("details_check"+str(nb_good+nb_bad), "les détails du test", stdin_explain + terminal_code(terminal_log))
             feedback_checks += '</div>'
         else:
             nb_bad += 1
