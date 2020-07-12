@@ -20,7 +20,7 @@ author=Nicolas Borie
 title=Moyenne des éléments positifs
 tag=function|array|type
 
-editor.height=350px
+editor.height=300px
 
 text==
 Écrire une fonction C **mean_positive**
