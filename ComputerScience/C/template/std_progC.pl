@@ -236,7 +236,7 @@ if compil_state != 'error':
             terminal_log = "Platon@debian~$> ./a.out " + " ".join(test_c[1]) + "\n"
             terminal_log += spout
             term_tot += terminal_code(terminal_log)
-            feedback_checks += make_hide_block_on_click("details_check"+str(nb_good+nb_bad), "les détails du test", stdin_explain + terminal_tot)
+            feedback_checks += make_hide_block_on_click("details_check"+str(nb_good+nb_bad), "les détails du test", stdin_explain + term_tot)
             feedback_checks += '</div>'
 
     grade_checks = (nb_good * 100) // (nb_good + nb_bad)
