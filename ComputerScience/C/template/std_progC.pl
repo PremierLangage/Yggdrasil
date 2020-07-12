@@ -134,9 +134,12 @@ compile_source("src_teacher.c", "teacher_prog", compiler, cflags, libflags)
 # Compile the student proposition
 returncode, spout, errout = compile_source("src_student.c", "student_prog", compiler, cflags, libflags)
 
+# begin of feedback
+feedback = "Compilation : <br />"
+
 # Compilation ok
 if len(spout) + len(errout) == 0:
-    feedback = '<span class="success-state" style="padding:5px; border:1px solid #155724 transparent;">'
+    feedback += '<span class="success-state" style="padding:5px; border:1px solid #155724 transparent;">'
     feedback += 'Compilation réussie avec flags ' + ' '.join(cflags) + '</span>'
 else:
     feedback = make_hide_block_on_click("compil_ans", "Résultat de compilation", spout+errout)
