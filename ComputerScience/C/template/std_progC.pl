@@ -172,7 +172,7 @@ else:
         compil_state = 'warning'
 
 # begin of feedback
-feedback = '<p style="margin-bottom: 5px;"><b><u>Compilation :</u> ' + str(grade_compil) + '%</b></p>'
+feedback = '<p style="margin-bottom: 5px;"><b><u>Compilation :</u> ' + str(grade_compil) + '%</b> (cliquer pour dérouler les détails)</p>'
 feedback += '<div class="' + compil_state + '-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
 feedback += text_compil + ' avec flags ' + ' '.join(cflags) + '<br />'
 if compil_state != 'success':
