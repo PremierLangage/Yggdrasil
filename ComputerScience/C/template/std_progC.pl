@@ -98,7 +98,7 @@ int main(int argc, char* argv[]){
 
 evaluator==#|python|
 import subprocess
-from std_progC_utils import make_hide_block_on_click
+from std_progC_utils import make_hide_block_on_click, terminal_code
 
 # Pre-process before executing the checks
 def prepare_code_to_file(src_code, filename):
@@ -146,7 +146,7 @@ else:
     if "error:" in errout:
         feedback += '<div class="error-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
         feedback += 'Compilation échouée avec flags ' + ' '.join(cflags) + '<br />'
-        feedback += make_hide_block_on_click("compil_ans", "les informations de compilation", spout+errout)
+        feedback += make_hide_block_on_click("compil_ans", "les informations de compilation", terminal_code(spout+errout))
         feedback += '</div>'
 
 
