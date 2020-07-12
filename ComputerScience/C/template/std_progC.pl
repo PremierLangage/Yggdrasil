@@ -248,3 +248,13 @@ feedback += feedback_checks
 grade=((grade_compil*nb_good) // (nb_good + nb_bad), feedback)
 ==
 
+tests %=
+{
+    "correct" : {
+        "response" : {
+            "editor.code" : solution
+        },
+        "grade" : 100,
+    },
+}
+==
