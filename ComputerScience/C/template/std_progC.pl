@@ -255,6 +255,6 @@ tests %=
             "editor.code" : "solution"
         },
         "grade" : 100,
-    },
+    }
 }
 ==
