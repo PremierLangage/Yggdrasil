@@ -251,7 +251,14 @@ feedback += feedback_checks
 
 grade_attempt = 20 + (80 // nb_attempt)
 
-feedback += '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Tests :</u> ' + str(grade_attempt) + '%</b></p>'
+feedback += '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Efficacité :</u> ' + str(grade_attempt) + '%</b></p>'
+
+if nb_attempt == 1:
+    feedback += '<div class="success-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
+    feedback += '1 tentative</div>'
+else:
+    feedback += '<div class="warning-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
+    feedback += str(nb_attempt)+' tentatives</div>'
 
 grade=((grade_compil * grade_checks * grade_attempt) // 10000, feedback)
 ==
