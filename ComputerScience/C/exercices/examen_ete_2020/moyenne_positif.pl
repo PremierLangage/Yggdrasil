@@ -20,7 +20,7 @@ author=Nicolas Borie
 title=Moyenne des éléments positifs
 tag=function|array|type
 
-# editor.height=300px
+editor.height=300px
 
 text==
 Écrire une fonction C **mean_positive** qui prend en argument un tableau d'entiers 
