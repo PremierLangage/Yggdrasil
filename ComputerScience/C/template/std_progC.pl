@@ -177,9 +177,9 @@ if compil_state != 'success':
     feedback += '(cliquer au dessous pour dérouler les détails)</p>'
 feedback += '<div class="' + compil_state + '-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
 if compil_state != 'success':
-    feedback += make_hide_block_on_click("compil_ans", text_compil + ' avec flags ' + ' '.join(cflags), terminal_code(spout+errout))
+    feedback += make_hide_block_on_click("compil_ans", text_compil + ' avec flags ' + ' '.join(cflags), terminal_code(spout+errout), "")
 else:
-    feedback += make_hide_block_on_click("compil_ans", text_compil + ' avec flags ' + ' '.join(cflags), "C'etait parfait, le compilateur n'a rien dit...")
+    feedback += make_hide_block_on_click("compil_ans", text_compil + ' avec flags ' + ' '.join(cflags), "C'etait parfait, le compilateur n'a rien dit...", "")
 feedback += '</div>'
 
 # Tests
