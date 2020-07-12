@@ -145,9 +145,8 @@ else:
     # Compilation Aborted
     if "error:" in errout:
         feedback += '<span class="error-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
-        feedback += 'Compilation échouée avec flags ' + ' '.join(cflags) + '<br />'
+        feedback += 'Compilation échouée avec flags ' + ' '.join(cflags) + '</span>'
         feedback += make_hide_block_on_click("compil_ans", "informations de compilation", spout+errout)
-        feedback += '</span>'
 
 
 
