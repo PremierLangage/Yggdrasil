@@ -162,27 +162,6 @@ if compil_state != 'success':
     feedback += make_hide_block_on_click("compil_ans", "les informations de compilation", terminal_code(spout+errout))
 feedback += '</div>'
 
-# Compilation ok
-if len(spout) + len(errout) == 0:
-    grade_compil = 100
-    feedback += '<span class="success-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
-    feedback += 'Compilation réussie avec flags ' + ' '.join(cflags) + '</span>'
-else:
-    # Compilation Aborted
-    if "error:" in errout:
-        grade_compil = 0  
-        feedback += '<div class="error-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
-        feedback += 'Compilation échouée avec flags ' + ' '.join(cflags) + '<br />'
-    # So there must have some warning
-    else:
-        grade_compil = 100
-        feedback += '<div class="warning-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
-        feedback += 'Compilation réussie avec warning avec flags ' + ' '.join(cflags) + '<br />'
-
-    feedback += make_hide_block_on_click("compil_ans", "les informations de compilation", terminal_code(spout+errout))
-    feedback += '</div>'
-
-
 # feedback = str(returncode)
 # feedback += "\n\n"
 # feedback += spout
