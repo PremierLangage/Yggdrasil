@@ -204,12 +204,12 @@ if compil_state != 'error':
 
         if spout == expected_ouput:
             nb_good += 1
-            feedback += '<div class="success-state" style="margin: 2px;padding: 5px; border: 1px solid #155724 transparent;">'
-            feedback += test_c[0] + '<br />'
+            feedback_checks += '<div class="success-state" style="margin: 2px;padding: 5px; border: 1px solid #155724 transparent;">'
+            feedback_checks += test_c[0] + '<br />'
             terminal_log = "Platon@debian~$> ./a.out " + " ".join(test_c[1]) + "\n"
             terminal_log += expected_ouput
-            feedback += make_hide_block_on_click("details_"+test_c[0], "les détails du test", terminal_code(terminal_log))
-            feedback += '</div>'
+            feedback_checks += make_hide_block_on_click("details_"+test_c[0], "les détails du test", terminal_code(terminal_log))
+            feedback_checks += '</div>'
         else:
             nb_bad += 1
 
