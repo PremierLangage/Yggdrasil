@@ -162,11 +162,6 @@ if compil_state != 'success':
     feedback += make_hide_block_on_click("compil_ans", "les informations de compilation", terminal_code(spout+errout))
 feedback += '</div>'
 
-# feedback = str(returncode)
-# feedback += "\n\n"
-# feedback += spout
-# feedback += "\n\n"
-# feedback += errout
 
 
 grade=(grade_compil, feedback)
@@ -174,7 +169,8 @@ grade=(grade_compil, feedback)
 
 checks_args_stdin==#|python|
 [["Premier test exemple (1 et 1)", "1", "1"],
- ["Second test exemple (12 et -7)", "12", "-7"]]
+ ["Second test exemple (12 et -7)", "12", "-7"],
+ ["Troisième test aléatoire", "12", "-7"]]
 ==
 
 
