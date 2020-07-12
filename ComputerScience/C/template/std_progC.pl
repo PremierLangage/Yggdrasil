@@ -134,23 +134,43 @@ compile_source("src_teacher.c", "teacher_prog", compiler, cflags, libflags)
 # Compile the student proposition
 returncode, spout, errout = compile_source("src_student.c", "student_prog", compiler, cflags, libflags)
 
+# Compilation ok
+if len(spout) + len(errout) == 0:
+    grade_compil = 100
+    text_compil = 'Compilation réussie'
+    compil_state = 'success'
+else:
+    # Compilation Aborted
+    if "error:" in errout:
+        grade_compil = 0
+        text_compil = 'Compilation réussie'
+        compil_state = 'success'
+    # So there must have some warning
+    else:
+        grade_compil = max(0, 100 - ((spout+errout).count('warning')*10))
+        text_compil = 'Compilation réussie'
+        compil_state = 'success'
+
 # begin of feedback
-feedback = '<p style="margin-bottom: 5px;"><u><b>Compilation :</b></u></p>'
+feedback = '<p style="margin-bottom: 5px;"><b><u>Compilation :</u> ' + str(grade_compil) + '%</b></p>'
 
 # Compilation ok
 if len(spout) + len(errout) == 0:
+    grade_compil = 100
     feedback += '<span class="success-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
     feedback += 'Compilation réussie avec flags ' + ' '.join(cflags) + '</span>'
 else:
     # Compilation Aborted
     if "error:" in errout:
+        grade_compil = 0  
         feedback += '<div class="error-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
         feedback += 'Compilation échouée avec flags ' + ' '.join(cflags) + '<br />'
     # So there must have some warning
     else:
+        grade_compil = 100
         feedback += '<div class="warning-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
         feedback += 'Compilation réussie avec warning avec flags ' + ' '.join(cflags) + '<br />'
-        
+
     feedback += make_hide_block_on_click("compil_ans", "les informations de compilation", terminal_code(spout+errout))
     feedback += '</div>'
 
