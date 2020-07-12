@@ -219,6 +219,25 @@ if compil_state != 'error':
             feedback_checks += '</div>'
         else:
             nb_bad += 1
+            feedback_checks += '<div class="error-state" style="margin: 2px;padding: 5px; border: 1px solid #155724 transparent;">'
+            feedback_checks += test_c[0] + '<br />'
+            term_tot = "Attendu : <br />"
+            terminal_log = "Platon@debian~$> ./a.out " + " ".join(test_c[1]) + "\n"
+            terminal_log += expected_ouput
+            if len(test_c[2]) > 0:
+                stdin_explain = "Contenu de l'entrée standard durant l'exécution : <br />"
+                stdin_explain += subnlbybr(test_c[2])
+                if test_c[2][-1] != '\n':
+                    stdin_explain += "<br />"
+            else:
+                stdin_explain = ""
+            term_tot += terminal_code(terminal_log)
+            term_tot += "<br />Obtenu : <br />"
+            terminal_log = "Platon@debian~$> ./a.out " + " ".join(test_c[1]) + "\n"
+            terminal_log += spout
+            term_tot += terminal_code(terminal_log)
+            feedback_checks += make_hide_block_on_click("details_check"+str(nb_good+nb_bad), "les détails du test", stdin_explain + terminal_tot)
+            feedback_checks += '</div>'
 
     grade_checks = (nb_good * 100) // (nb_good + nb_bad)
 feedback += '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Tests :</u> ' + str(grade_checks) + '%</b></p>'
