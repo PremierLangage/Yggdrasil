@@ -168,7 +168,8 @@ feedback += '</div>'
 # feedback += "\n\n"
 # feedback += errout
 
-grade=(100, feedback)
+
+grade=(grade_compil, feedback)
 ==
 
 checks_args_stdin==#|python|
