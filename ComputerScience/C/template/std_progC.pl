@@ -170,7 +170,9 @@ grade=(grade_compil, feedback)
 checks_args_stdin==#|python|
 [["Premier test exemple (1 et 1)", "1", "1"],
  ["Second test exemple (12 et -7)", "12", "-7"],
- ["Troisième test aléatoire", "randint(-100,100)", "randint(-100,100)"]]
+ ["Troisième test aléatoire", "randint(-100,100)", "randint(-100,100)"],
+ ["Quatrième test aléatoire", "randint(-100,100)", "randint(-100,100)"],
+ ["Cinquième test aléatoire lui aussi", "randint(-100,100)", "randint(-100,100)"]]
 ==
 
 
