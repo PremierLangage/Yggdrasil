@@ -82,11 +82,13 @@ checks_args_stdin = [["Premier test exemple (1 et 1)", ["1"], "1"],
  ["Troisième test aléatoire", [str(randint(-100,100))], str(randint(-100,100)) ],
  ["Quatrième test aléatoire", [str(randint(-100,100))], str(randint(-100,100)) ],
  ["Cinquième test aléatoire lui aussi", [str(randint(-100,100))], str(randint(-100,100)) ] ]
+
+text += " {{ editor|component }} "
 ==
 
 
 form==
-{{ editor|component }}
+
 ==
 
 code_before==#|c|
