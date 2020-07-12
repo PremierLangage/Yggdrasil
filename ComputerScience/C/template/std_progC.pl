@@ -248,7 +248,7 @@ feedback += feedback_checks
 grade=((grade_compil*nb_good) // (nb_good + nb_bad), feedback)
 ==
 
-tests.test1.editor.code==#|c|
+tests.test1.editor.code==
 int carre(int p){
     return p*p;
 }
