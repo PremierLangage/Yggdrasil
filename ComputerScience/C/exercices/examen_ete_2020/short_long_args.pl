@@ -55,6 +55,9 @@ int main(int argc, char* argv[]){
   printf("Le produit des arguments est %f.\n", ans);
   return 0;
 }
+==
+
+code_after==
 
 ==
 
