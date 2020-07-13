@@ -43,7 +43,7 @@ int main(int argc, char* argv[]){
 }
 ==
 
-solution==
+solution==#|c|
 #include <stdio.h>
 #include <string.h>
 
@@ -58,12 +58,7 @@ int main(int argc, char* argv[]){
 
 ==
 
-tests==
-[["Simple test", "3.141592", ""],
- ["Pas d'argument", "", ""],
- ["6 arguments triviaux", "1.0 1.0 1 1 1.0000 1.", ""],
- ["Aléatoire", " ".join([str(10*(random.random()-0.5)) for i in range(random.randint(2,6))]), ""],
- ["Aléatoire", " ".join([str(20*(random.random()-0.5)) for i in range(random.randint(5,10))]), ""],
- ["Aléatoire", " ".join([str(100*(random.random()-0.5)) for i in range(random.randint(2,6))]), ""],
- ["Aléatoire", " ".join([str(200*(random.random()-0.5)) for i in range(random.randint(5,10))]), ""]]
+checks_args_stdin==#|python|
+[["Simple test", ["arg1", "argum2", "argument3", "a4"], ""],
+ ["Aléatoire", [], ""]]
 ==
