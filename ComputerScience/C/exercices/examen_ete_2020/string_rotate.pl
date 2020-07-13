@@ -23,7 +23,11 @@ tag=function|type|string
 # editor.height=300px
 
 text==
-Écrire une fonction C **rotate_string** 
+Écrire une fonction C **rotate_string** qui prend en argument une chaîne de 
+caractères et la modifie sur place en décalant toute les lettres d'un cran vers 
+la gauche. La nouvelle première lettre sera donc l'ancienne seconde lettre, la 
+nouvelle seconde lettre sera l'ancienne troisième, etc... L'ancienne prenière 
+lettre devra se retrouver à la fin du mot une fois modifié.
 ==
 
 before ==#|python|
