@@ -135,6 +135,7 @@ signals = {
 
 def control_returncode(rc, output):
     """
+    Update the output of the terminal if UNIX did kill the process
     """
     if -rc in signals:
         output = "Process exited with UNIX signal ("+str(-rc)+") "+signals[-rc]
@@ -226,11 +227,13 @@ if compil_state != 'error':
         sp = subprocess.run(command_args, stdin=open("stdin_content", "r"), stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
         expected_ouput = sp.stdout.decode() + sp.stderr.decode() 
         rc_teacher = sp.returncode
+        control_returncode(rc_teacher, expected_ouput)
         # Now execute the student programm
         command_args = ["./student_prog"] + test_c[1]
         sp = subprocess.run(command_args, stdin=open("stdin_content", "r"), stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
         spout = sp.stdout.decode() + sp.stderr.decode()
         rc_student = sp.returncode
+        control_returncode(rc_student, spout)
 
         if spout == expected_ouput:
             nb_good += 1
