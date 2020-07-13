@@ -133,6 +133,14 @@ signals = {
     15: "SIGTERM"
 };
 
+def control_returncode(rc, output):
+    """
+    """
+    if -rc in signals:
+        output = "Process exited with UNIX signal ("+str(-rc)+") "+signals[-rc]
+    else:
+        output = "Process exited with UNIX signal ("+str(-rc)+")"
+
 # Update nb attempt
 nb_attempt += 1 # count each try....
 
