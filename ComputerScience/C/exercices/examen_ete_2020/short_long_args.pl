@@ -31,7 +31,8 @@ suivre la mise en page qui suit.
     plus court argument: a4
     plus long argument: argument3
 
-le nom du programme (ici ./a.out) n'est pas considérer comme un argument.
+le nom du programme (ici ./a.out) n'est pas considérer comme un argument. 
+Ce programme sera toujours appelé avec au moins 1 argument minimum.
 ==
 
 editor.code==#|c|
@@ -43,16 +44,13 @@ int main(int argc, char* argv[]){
 ==
 
 solution==
-
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
 int main(int argc, char* argv[]){
   int i;
-  float ans = 1.0;
-
-  for(i=1 ; i<argc ; i++)
-    ans *= atof(argv[i]);
+  int ind_min=1;
+  int ind_max=1;
 
   printf("Le produit des arguments est %f.\n", ans);
   return 0;
