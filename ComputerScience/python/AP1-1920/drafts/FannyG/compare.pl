@@ -89,6 +89,10 @@ form==
     {% endfor %}
 </div>
 <br/>
+<div style="clear:both; text-align:center;">
+Selon vous, quelle est la meilleure copie ?
+</div>
+<br/>
 <p>Explication et commentaire général :</p>
 <textarea id="form_commentaire" name="Commentaire" cols=100% rows="5">
 </textarea>
