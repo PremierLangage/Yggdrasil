@@ -6,7 +6,7 @@
 extends = /gift/templates/qessay.pl
 
 title==
-Q9
+Open question
 ==
 
 text==
