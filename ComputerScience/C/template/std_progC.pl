@@ -234,8 +234,6 @@ if compil_state != 'error':
                 expected_ouput = sp.stdout.decode() + sp.stderr.decode()
             except:
                 expected_ouput = "Impossible de décoder la sortie standard"
-            else:
-                expected_ouput = "Impossible de décoder la sortie standard"
 
         # Now execute the student programm
         command_args = ["./student_prog"] + test_c[1]
@@ -251,8 +249,6 @@ if compil_state != 'error':
             try: 
                 spout = sp.stdout.decode() + sp.stderr.decode()
             except:
-                spout = "Impossible de décoder la sortie standard"
-            else:
                 spout = "Impossible de décoder la sortie standard"
 
         if spout == expected_ouput:
