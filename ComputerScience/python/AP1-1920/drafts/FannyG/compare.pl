@@ -88,7 +88,6 @@ form==
         <br/>
     {% endfor %}
 </div>
-<br/>
 
 <div style="clear:both; text-align:center;">
     <span style="padding-left:30px;">
