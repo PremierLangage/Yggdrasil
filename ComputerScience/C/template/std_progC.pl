@@ -232,6 +232,8 @@ if compil_state != 'error':
         else:
             try: 
                 expected_ouput = sp.stdout.decode() + sp.stderr.decode()
+            except:
+                expected_ouput = "Impossible de décoder la sortie standard"
             else:
                 expected_ouput = "Impossible de décoder la sortie standard"
 
@@ -248,6 +250,8 @@ if compil_state != 'error':
         else:
             try: 
                 spout = sp.stdout.decode() + sp.stderr.decode()
+            except:
+                spout = "Impossible de décoder la sortie standard"
             else:
                 spout = "Impossible de décoder la sortie standard"
 
