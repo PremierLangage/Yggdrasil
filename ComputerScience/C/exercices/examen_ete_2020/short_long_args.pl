@@ -38,9 +38,8 @@ editor.code==#|c|
 #include ...
 
 int main(int argc, char* argv[]){	
-  /* votre code ici... **/
+  /* votre code ici... */
 }
-
 ==
 
 solution==
