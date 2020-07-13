@@ -10,7 +10,7 @@ Open question
 ==
 
 text==
-Comment allez-vous ?
+{{data.text}}
 ==
 
 
