@@ -31,20 +31,6 @@ lettre devra se retrouver à la fin du mot une fois modifié. Veuillez bien à
 ce que la chaîne reste une chaîne de caractère C valide.
 ==
 
-before ==#|python|
-# Some globals variables
-nb_attempt=0
-
-# Place here your favorite C compiler
-compiler="gcc"
-# PLace here the compilation flags
-cflags=["-Wall", "-ansi"]
-# Place here library flags
-libflags=[]
-
-text+=" {{ editor|component }} "
-==
-
 checks_args_stdin==
  [["Exemple simple", ["ecart"], ""], 
  ["Mot fixe par rotation", ["XXXXX"], ""],
