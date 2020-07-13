@@ -23,12 +23,16 @@ tag=function|recursion|array
 editor.height=300px
 
 text==
-Écrire une fonction C **mean_positive** qui prend en argument un tableau d'entiers 
-**array** ainsi que sa taille **size**. Votre fonction devra retourner la moyenne
-des éléments positifs ou nuls contenus dans le tableau. Cette moyenne devra être
-calculée et retournée dans les floattants C. Si le tableau ne contient aucun 
-élément positifs ou nuls, votre fonction devra alors retourner zéro (dans les 
-flottants encore).
+Écrire une fonction **sum_number** qui prend en argument un entier C (qui 
+sera toujours positif) et qui retourne la somme des chiffres qui compose
+ce nombre quand on l'écrit en base 10.
+
+Voici quelques exemples :
+
+    sum_number(7)         retourne 7
+    sum_number(11111111)  retourne 8
+    sum_number(1234)      retourne 10
+    sum_number(999)       retourne 27
 ==
 
 checks_args_stdin==#|python|
