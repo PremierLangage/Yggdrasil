@@ -32,7 +32,10 @@ suivre la mise en page qui suit.
     plus long argument: argument3
 
 le nom du programme (ici ./a.out) n'est pas considérer comme un argument. 
-Ce programme sera toujours appelé avec au moins 1 argument minimum.
+Ce programme sera toujours appelé avec au moins 1 argument minimum. Si 
+plusieurs arguments sont de taille minimale ou maximale, votre programme 
+devra choisir systématiquement les premiers des arguments disponibles (le 
+premier parmi les plus petits et/ou le premier parmi les plus longs).
 ==
 
 editor.code==#|c|
