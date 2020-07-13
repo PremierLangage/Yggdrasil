@@ -238,13 +238,14 @@ if compil_state != 'error':
         # Now execute the student programm
         command_args = ["./student_prog"] + test_c[1]
         sp = subprocess.run(command_args, stdin=open("stdin_content", "r"), stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
-        spout = sp.stdout.decode() + sp.stderr.decode()
-        rc_student = sp.returncode
-        control_returncode(rc_student, spout)
+        try: 
+            spout = sp.stdout.decode() + sp.stderr.decode()
+        except:
+            spout = "Impossible de décoder la sortie standard"
         if -sp.returncode in signals:
-            spout = "Process exited with UNIX signal ("+str(-sp.returncode)+") "+signals[-sp.returncode]
+            spout += "Process exited with UNIX signal ("+str(-sp.returncode)+") "+signals[-sp.returncode]
         elif sp.returncode < 0:
-            spout = "Process exited with UNIX signal ("+str(-sp.returncode)+")"
+            spout += "Process exited with UNIX signal ("+str(-sp.returncode)+")"
         else:
             try: 
                 spout = sp.stdout.decode() + sp.stderr.decode()
