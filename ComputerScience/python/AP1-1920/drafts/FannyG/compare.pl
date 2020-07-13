@@ -11,7 +11,8 @@
 # qrevuz : balise criteria : est ce qu'on affiche les niveaux ? (est ce qu'il y a des niveaux ?) 
 #                            ou pour une description de critere, on met juste un choix entre A et B
 # qrevuz : comment définir le meilleur avec plusieurs critère ? 
-#          (nombre de critères "gagnés" ou une dernière question identiques à tous les compare "Selon vous, quelle est la meilleure copie ?")
+#          (nombre de critères "gagnés" ou une dernière question identiques à tous les compare 
+#           "Selon vous, quelle est la meilleure copie ?")
 
 
 # author=Fanny Garnevault
