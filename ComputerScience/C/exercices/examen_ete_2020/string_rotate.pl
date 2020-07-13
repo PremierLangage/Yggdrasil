@@ -27,7 +27,8 @@ text==
 caractères et la modifie sur place en décalant toute les lettres d'un cran vers 
 la gauche. La nouvelle première lettre sera donc l'ancienne seconde lettre, la 
 nouvelle seconde lettre sera l'ancienne troisième, etc... L'ancienne prenière 
-lettre devra se retrouver à la fin du mot une fois modifié.
+lettre devra se retrouver à la fin du mot une fois modifié. Veuillez bien à 
+ce que la chaîne reste une chaîne de caractère C valide.
 ==
 
 before ==#|python|
