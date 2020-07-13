@@ -91,8 +91,7 @@ form==
 ==
 
 code_before==#|c|
-#include <stdio.h>
-#include <stdlib.h>
+
 ==
 
 solution==#|c|
@@ -102,6 +101,9 @@ int carre(int p){
 ==
 
 code_after==#|c|
+#include <stdio.h>
+#include <stdlib.h>
+
 int main(int argc, char* argv[]){
     int i, j;
     
