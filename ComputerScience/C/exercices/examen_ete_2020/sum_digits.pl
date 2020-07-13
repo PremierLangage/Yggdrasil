@@ -41,11 +41,11 @@ checks_args_stdin==#|python|
 [["Basique", ["0"], ""],
  ["Petit", ["7"], ""],
  ["PLein", ["1234567"], ""],
- ["Aléatoire", [str(random.randint(1, 2000000000))], ""],
- ["Aléatoire", [str(random.randint(1, 2000000000))], ""],
- ["Aléatoire", [str(random.randint(1, 2000000000))], ""],
- ["Aléatoire", [str(random.randint(1, 2000000000))], ""],
- ["Aléatoire", [str(random.randint(1, 2000000000))], ""]]
+ ["Aléatoire", [str(randint(1, 2000000000))], ""],
+ ["Aléatoire", [str(randint(1, 2000000000))], ""],
+ ["Aléatoire", [str(randint(1, 2000000000))], ""],
+ ["Aléatoire", [str(randint(1, 2000000000))], ""],
+ ["Aléatoire", [str(randint(1, 2000000000))], ""]]
 ==
 
 editor.code==#|c|
