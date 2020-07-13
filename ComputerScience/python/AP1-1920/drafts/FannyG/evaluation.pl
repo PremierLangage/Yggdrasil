@@ -82,7 +82,7 @@ form==
         <p>Justificatif :</p>
         <input type="text" id="form_commentaire_{{id}}" name="fname">
     {% endif %}
-    <br/>
+    <br/><br/>
 {% endfor %}
 
 <br/>
