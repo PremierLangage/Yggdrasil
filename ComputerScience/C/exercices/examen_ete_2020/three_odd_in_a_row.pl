@@ -77,7 +77,18 @@ code_before==#|c|
 
 code_after==#|c|
 int main(int argc, char* argv[]){
-  
+  int* tab = (int*)malloc(sizeof(int) * argc);
+  int i;
+
+  for (i=1 ; i<argc ; i++)
+    tab[i-1] = atoi(argv[i]);
+
+  if (three_in_a_row(tab, argc))
+    printf("Triplet d'inpairs consécutifs détecté.\n");
+  else
+    printf("Le tableaux ne contient pas de triplet de nombre impairs consécutifs.\n");
+
+  free(tab);
   return 0;
 }
 ==
