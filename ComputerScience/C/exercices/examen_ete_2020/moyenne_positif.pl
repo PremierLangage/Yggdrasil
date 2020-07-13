@@ -31,20 +31,8 @@ calculée et retournée dans les floattants C. Si le tableau ne contient aucun
 flottants encore).
 ==
 
-before ==#|python|
-from random import randint
-
-# Some globals variables
-nb_attempt=0
-
-# Place here your favorite C compiler
-compiler="gcc"
-# PLace here the compilation flags
-cflags=["-Wall", "-ansi"]
-# Place here library flags
-libflags=[]
-
-checks_args_stdin = [["Example simple", ["1", "2", "3"], ""],
+checks_args_stdin== 
+[["Example simple", ["1", "2", "3"], ""],
  ["Tableau vide", [], ""],
  ["Que des négatifs", ["-1", "-1", "-321"], ""],
  ["Mélange de valeurs", ["-1", "3", "1", "-12", "2"], ""],
@@ -52,8 +40,6 @@ checks_args_stdin = [["Example simple", ["1", "2", "3"], ""],
  ["Test aléatoire", [str(randint(-100,100)) for i in range(randint(5, 10))], ""],
  ["Test aléatoire", [str(randint(-100,100)) for i in range(randint(11, 15))], ""],
  ["Test aléatoire", [str(randint(-100,100)) for i in range(randint(16, 20))], ""] ]
-
-text+=" {{ editor|component }} "
 ==
 
 editor.code==#|c|
@@ -105,3 +91,4 @@ int main(int argc, char* argv[]){
   return 0;
 }
 ==
+
