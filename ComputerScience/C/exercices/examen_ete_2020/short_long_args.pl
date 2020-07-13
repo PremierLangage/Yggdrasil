@@ -52,7 +52,14 @@ int main(int argc, char* argv[]){
   int ind_min=1;
   int ind_max=1;
 
-  printf("Le produit des arguments est %f.\n", ans);
+  for (i=1 ; i<argc ; i++){
+      if (strlen(argv[i]) < strlen(argv[ind_min]))
+        ind_min=i;
+      if (strlen(argv[i]) > strlen(argv[ind_max]))
+        ind_max=i;
+  }
+
+  printf(" plus court argument: %s\nplus long argument: %s\n", argv[ind_min], argv[ind_max]);
   return 0;
 }
 ==
