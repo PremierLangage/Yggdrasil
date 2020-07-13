@@ -26,7 +26,7 @@ before==#|python|
 import json
 #data = json.dumps(data)
 
-#  paramètre comment_by_criteria : option pour avoir un commentaire par critère
+# paramètre comment_by_criteria : option pour avoir un commentaire par critère
 comment_by_criteria = false
 
 # paramètre data contenant la question et la réponse de l'élève
