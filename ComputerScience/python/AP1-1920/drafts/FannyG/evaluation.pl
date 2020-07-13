@@ -80,8 +80,6 @@ form==
         {% if comment_by_criteria %}
             <p>Explication :</p>
             <input type="text" id="form_commentaire_{{id}}" name="fname">
-            <textarea id="form_commentaire_{{id}}" name="Commentaire" cols=50% rows="2">
-            </textarea>
         {% endif %}
     {% endfor %}
     <br/>
