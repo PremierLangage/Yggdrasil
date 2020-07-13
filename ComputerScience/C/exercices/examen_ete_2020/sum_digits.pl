@@ -33,6 +33,7 @@ Voici quelques exemples :
     sum_number(11111111)  retourne 8
     sum_number(1234)      retourne 10
     sum_number(999)       retourne 27
+
 ==
 
 checks_args_stdin==#|python|
