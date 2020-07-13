@@ -115,10 +115,11 @@ try:
     for num in criteria.keys():
         feedback += " " + response[id]
     feedback += " " + response['best_copy'] + " " + response['commentaire']
-    grade = (100, feedback) #ne sert à rien
+    note = 100
 except:
-    grade = (0, "Répondez à toutes les questions")
-
+    feedback = "Répondez à toutes les questions"
+    note = 0
+grade(note,feedback)
 ==
 
 
