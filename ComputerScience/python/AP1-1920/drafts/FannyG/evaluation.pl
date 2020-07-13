@@ -78,7 +78,9 @@ form==
         <input type="radio" id="form_{{id}}" name="f_evaluation{{id}}" value="{{niv.description}}">
         <label for="{{niv.description}}">{{niv.description}}</label><br/>
         {% if comment_by_criteria %}
-            
+            <p>Explication :</p>
+            <textarea id="form_commentaire_{{id}}" name="Commentaire" cols=100% rows="5">
+            </textarea>
         {% endif %}
     {% endfor %}
     <br/>
