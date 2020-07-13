@@ -119,7 +119,7 @@ try:
 except:
     feedback = "Répondez à toutes les questions"
     note = 0
-grader(note,feedback)
+grader = (note,feedback)
 ==
 
 
