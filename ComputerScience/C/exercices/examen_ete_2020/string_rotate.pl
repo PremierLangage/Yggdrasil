@@ -45,7 +45,7 @@ cflags=["-Wall", "-ansi"]
 libflags=[]
 
 checks_args_stdin = [["Exemple simple", ["ecrat"], ""], 
- ["Mot fixe", ["XXXXX"], ""],
+ ["Mot fixe par rotation", ["XXXXX"], ""],
  ["Mot vide", [""], ""],
  ["Plusieurs mots mais une chaîne", ["plusieurs mot dans une seule chaine"], ""],
  ["Test aléatoire", ["".join([chr(randint(97, 122)) for i in range(randint(10,20))])], ""],
