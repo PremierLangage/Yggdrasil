@@ -44,7 +44,7 @@ cflags=["-Wall", "-ansi"]
 # Place here library flags
 libflags=[]
 
-checks_args_stdin = [["Exemple simple", ["ecrat"], ""], 
+checks_args_stdin = [["Exemple simple", ["ecart"], ""], 
  ["Mot fixe par rotation", ["XXXXX"], ""],
  ["Mot vide", [""], ""],
  ["Plusieurs mots mais une chaîne", ["plusieurs mot dans une seule chaine"], ""],
