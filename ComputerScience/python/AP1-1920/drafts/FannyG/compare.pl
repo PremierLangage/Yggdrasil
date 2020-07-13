@@ -111,7 +111,7 @@ evaluator==#|python|
 # feedback = "J'ai bien lu votre formulaire :<br/>-" + response['0'] + "<br/>-" + response['1'] + "<br/>-" + response['2'] + "<br/>-" + response['commentaire']
 
 try:
-    feedback = "Réponse : "
+    feedback = "Réponses : "
     for num in criteria.keys():
         feedback += " " + response[num]
     feedback += " " + response['best_copy'] + " " + response['commentaire']
