@@ -14,6 +14,18 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
+signals = {
+    2: "SIGINT",
+    3: "SIGQUIT",
+    4: "SIGILL",
+    6: "SIGABRT",
+    8: "SIGFPE",
+    9: "SIGKILL",
+    11: "SIGSEGV",
+    13: "SIGPIPE",
+    14: "SIGALRM",
+    15: "SIGTERM"
+};
 
 def make_hide_block_on_click(nameblock, title, content, order="Voir/Réduire "):
     """
