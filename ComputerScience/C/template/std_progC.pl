@@ -68,8 +68,9 @@ cflags=["-Wall", "-ansi"]
 # Place here library flags
 libflags=[]
 
-# Place the construction of your tests inside the builder please 
-# (that avoids an another call to eval or exec inside the grader)
+text+=" {{ editor|component }} "
+==
+
 # tests are placed inside a list stored in variable : checks_args_stdin
 # each test must have the following shape :
 # ["name of the test", [list of arguments of the test], stdin of the test ]
@@ -77,15 +78,13 @@ libflags=[]
 # ./prog [list of argument]  
 # and a tube will place the content stdin inside the standard input of the
 # process...
-checks_args_stdin = [["Premier test exemple (1 et 1)", ["1"], "1"],
+checks_args_stdin==
+ [["Premier test exemple (1 et 1)", ["1"], "1"],
  ["Second test exemple (12 et -7)", ["12"], "-7"],
  ["Troisième test aléatoire", [str(randint(-100,100))], str(randint(-100,100)) ],
  ["Quatrième test aléatoire", [str(randint(-100,100))], str(randint(-100,100)) ],
  ["Cinquième test aléatoire lui aussi", [str(randint(-100,100))], str(randint(-100,100)) ] ]
-
-text+=" {{ editor|component }} "
 ==
-
 
 form==
 
@@ -217,8 +216,11 @@ grade_checks = 0
 
 feedback_checks = ""
 
+# data test generation
+checks_data = eval(checks_args_stdin)
+
 if compil_state != 'error':
-    for test_c in checks_args_stdin:
+    for test_c in checks_data:
         f_in=open("stdin_content", "w")
         f_in.write(test_c[2])
         f_in.close()
