@@ -22,6 +22,7 @@ general_feedback = " Merci pour votre réponse."
 
 
 before==#|python|
+import json
 # paramètre data contenant la question et la réponse de l'élève
 data = {"question": "Quel âge avez-vous ?", "answer": "J'ai 20 ans."}
 
@@ -90,5 +91,6 @@ note = 100
 # general_feedback
 grade = (note, general_feedback)
 ==
+
 
 
