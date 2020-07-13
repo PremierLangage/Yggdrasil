@@ -65,7 +65,6 @@ Réponse de l'élève :
 
 form==
 {% for id in criteria.keys() %}
-    <p>{{id}}</p>
     <span style="padding-left:30px;">
             <b>{{criteria[id].description}}</b>
     </span>
