@@ -113,6 +113,8 @@ evaluator==#|python|
 note = 100
 # general_feedback
 grade = (note, general_feedback) #ne sert à rien
+
+grade = (0, "Répondez à toutes les questions")
 ==
 
 
