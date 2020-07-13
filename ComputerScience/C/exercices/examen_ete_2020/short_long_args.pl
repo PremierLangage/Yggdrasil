@@ -26,11 +26,9 @@ text==
 Écrire un programme C qui regarde tous ses arguments et finit par afficher le 
 plus court de ses arguments et ensuite le plus long. Votre programme devra 
 suivre la mise en page qui suit.
-
     Platon@debian~$> ./a.out arg1 argum2 argument3 a4
     plus court argument: a4
     plus long argument: argument3
-
 le nom du programme (ici ./a.out) n'est pas considérer comme un argument.
 ==
 
