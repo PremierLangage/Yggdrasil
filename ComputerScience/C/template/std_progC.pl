@@ -119,6 +119,20 @@ evaluator==#|python|
 import subprocess
 from std_progC_utils import make_hide_block_on_click, terminal_code, subnlbybr
 
+# principals signals
+signals = {
+    2: "SIGINT",
+    3: "SIGQUIT",
+    4: "SIGILL",
+    6: "SIGABRT",
+    8: "SIGFPE",
+    9: "SIGKILL",
+    11: "SIGSEGV",
+    13: "SIGPIPE",
+    14: "SIGALRM",
+    15: "SIGTERM"
+};
+
 # Update nb attempt
 nb_attempt += 1 # count each try....
 
