@@ -79,7 +79,7 @@ form==
         <label for="{{niv.description}}">{{niv.description}}</label><br/>
         {% if comment_by_criteria %}
             <p>Explication :</p>
-            <input>
+            <input type="text" id="form_pouet" name="fname">
             <textarea id="form_commentaire_{{id}}" name="Commentaire" cols=50% rows="2">
             </textarea>
         {% endif %}
