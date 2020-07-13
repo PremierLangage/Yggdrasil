@@ -31,7 +31,7 @@ calculée et retournée dans les floattants C. Si le tableau ne contient aucun
 flottants encore).
 ==
 
-checks_args_stdin== 
+checks_args_stdin==#|python|
 [["Example simple", ["1", "2", "3"], ""],
  ["Tableau vide", [], ""],
  ["Que des négatifs", ["-1", "-1", "-321"], ""],
@@ -91,4 +91,5 @@ int main(int argc, char* argv[]){
   return 0;
 }
 ==
+
 
