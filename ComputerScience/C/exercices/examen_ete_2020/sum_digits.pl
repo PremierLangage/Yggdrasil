@@ -62,7 +62,7 @@ int sum_number(int n){
 }
 ==
 
-codeafter==#|C|
+code_after==#|C|
 #include <stdio.h>
 #include <stdlib.h>
 
