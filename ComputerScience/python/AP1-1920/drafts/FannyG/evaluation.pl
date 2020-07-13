@@ -77,11 +77,11 @@ form==
     {% for niv in criteria[id].levels %}
         <input type="radio" id="form_{{id}}" name="f_evaluation{{id}}" value="{{niv.description}}">
         <label for="{{niv.description}}">{{niv.description}}</label><br/>
-        {% if comment_by_criteria %}
-            <p>Explication :</p>
-            <input type="text" id="form_commentaire_{{id}}" name="fname">
-        {% endif %}
     {% endfor %}
+    {% if comment_by_criteria %}
+        <p>Explication :</p>
+        <input type="text" id="form_commentaire_{{id}}" name="fname">
+    {% endif %}
     <br/>
 {% endfor %}
 
