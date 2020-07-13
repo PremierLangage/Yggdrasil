@@ -28,19 +28,19 @@ before==#|python|
 data = {"question": "Quel âge avez-vous ?", "answer1": "J'ai 20 ans.", "answer2": "g 20 ten"}
 
 # paramètre criteria contenant la grille critériée
-criteria = {0: {"description": "Age donné", "levels": [
+criteria = {"0": {"description": "Age donné", "levels": [
                         {"description": "Inférieur à 20 ans", "points": 0}, 
                         {"description": "20 ans", "points": 1},
                         {"description": "Supérieur à 20 ans", "points": 2}
                         ]
                 },
-            1: {"description": "Orthographe", "levels": [
+            "1": {"description": "Orthographe", "levels": [
                         {"description": "Plusieurs fautes", "points": 0}, 
                         {"description": "1 faute", "points": 1},
                         {"description": "Aucune faute", "points": 2}
                         ]
                 },
-            2: {"description": "Syntaxe", "levels": [
+            "2": {"description": "Syntaxe", "levels": [
                         {"description": "La phrase ne possède ni une majuscule, ni un point.", "points": 0}, 
                         {"description": "La phrase possède soit une majuscule, soit un point.", "points": 1},
                         {"description": "La phrase possède une majuscule et un point.", "points": 2}
@@ -103,5 +103,6 @@ note = 100
 # general_feedback
 grade = (note, general_feedback) #ne sert à rien
 ==
+
 
 
