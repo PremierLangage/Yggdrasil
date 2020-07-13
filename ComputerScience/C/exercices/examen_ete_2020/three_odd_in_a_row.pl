@@ -51,11 +51,20 @@ text+=" {{ editor|component }} "
 ==
 
 editor.code==#|c|
-
+int three_in_a_row(int* array, int size){
+  /* Votre code ici... */
+  return ...
+}
 ==
 
 solution==#|c|
-
+int three_in_a_row(int* array, int size){
+  int i;
+  for (i=0 ; i+2<size ; i++)
+    if ( (array[i] % 2) && (array[i+1] % 2) && (array[i+2] % 2) )
+      return 1;
+  return 0;
+}
 ==
 
 code_before==#|c|
