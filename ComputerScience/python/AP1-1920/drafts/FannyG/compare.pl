@@ -89,9 +89,19 @@ form==
     {% endfor %}
 </div>
 <br/>
+
 <div style="clear:both; text-align:center;">
-Selon vous, quelle est la meilleure copie ?
+    <span style="padding-left:30px;">
+        <b>Selon vous, quelle est la meilleure copie ?</b>
+    </span>
+    <br/>
+    <input type="radio" id="form_{{id}}" name="f_evaluation{{id}}" value="A">
+    <label for="A">A</label><br/>
+    <input type="radio" id="form_{{id}}" name="f_evaluation{{id}}" value="B">
+    <label for="B">B</label><br/>
+    <br/>
 </div>
+
 <br/>
 <p>Explication et commentaire général :</p>
 <textarea id="form_commentaire" name="Commentaire" cols=100% rows="5">
