@@ -89,7 +89,7 @@ form==
     {% endfor %}
 </div>
 
-<div style="clear:both; text-align:center;">
+<div style=" text-align:center;">
     <span style="padding-left:30px;">
         <b>Selon vous, quelle est la meilleure copie ?</b>
     </span>
