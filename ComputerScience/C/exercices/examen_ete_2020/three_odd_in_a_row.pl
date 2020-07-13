@@ -40,7 +40,11 @@ cflags=["-Wall", "-ansi"]
 # Place here library flags
 libflags=[]
 
-checks_args_stdin = [["Exemple simple", ["1", "2", "7", "-4", "1", "9", "7"], ""], 
+text+=" {{ editor|component }} "
+==
+
+checks_args_stdin== 
+[["Exemple simple", ["1", "2", "7", "-4", "1", "9", "7"], ""], 
  ["Tableau vide", [""], ""],
  ["Tableau petit", ["1111", "3333", "7777"], ""],
  ["Tableau trop petit", ["1111", "3333"], ""],
@@ -49,8 +53,6 @@ checks_args_stdin = [["Exemple simple", ["1", "2", "7", "-4", "1", "9", "7"], ""
  ["Test aléatoire", [str(randint(-1000, 1000)) for i in range(randint(8, 12))], ""],
  ["Test aléatoire", [str(randint(-1000, 1000)) for i in range(randint(11, 15))], ""],
  ["Test aléatoire", [str(randint(-1000, 1000)) for i in range(randint(14, 18))], ""]]
-
-text+=" {{ editor|component }} "
 ==
 
 editor.code==#|c|
@@ -92,5 +94,6 @@ int main(int argc, char* argv[]){
   return 0;
 }
 ==
+
 
 
