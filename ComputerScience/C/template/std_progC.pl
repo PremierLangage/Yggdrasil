@@ -225,15 +225,14 @@ if compil_state != 'error':
         # Use the teacher solution to generated expected output of the test
         command_args = ["./teacher_prog"] + test_c[1]
         sp = subprocess.run(command_args, stdin=open("stdin_content", "r"), stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
+        try: 
+            expected_ouput = sp.stdout.decode() + sp.stderr.decode()
+        except:
+            expected_ouput = "Impossible de décoder la sortie standard"
         if -sp.returncode in signals:
-            expected_ouput = "Process exited with UNIX signal ("+str(-sp.returncode)+") "+signals[-sp.returncode]
+            expected_ouput += "Process exited with UNIX signal ("+str(-sp.returncode)+") "+signals[-sp.returncode]
         elif sp.returncode < 0:
-            expected_ouput = "Process exited with UNIX signal ("+str(-sp.returncode)+")"
-        else:
-            try: 
-                expected_ouput = sp.stdout.decode() + sp.stderr.decode()
-            except:
-                expected_ouput = "Impossible de décoder la sortie standard"
+            expected_ouput += "Process exited with UNIX signal ("+str(-sp.returncode)+")"
 
         # Now execute the student programm
         command_args = ["./student_prog"] + test_c[1]
@@ -243,9 +242,9 @@ if compil_state != 'error':
         except:
             spout = "Impossible de décoder la sortie standard"
         if -sp.returncode in signals:
-            spout += "Process exited with UNIX signal ("+str(-sp.returncode)+") "+signals[-sp.returncode]
+            spout += "Processus terminé avec le signal UNIX ("+str(-sp.returncode)+") "+signals[-sp.returncode]
         elif sp.returncode < 0:
-            spout += "Process exited with UNIX signal ("+str(-sp.returncode)+")"
+            spout += "Processus terminé avec le signal UNIX ("+str(-sp.returncode)+")"
 
         if spout == expected_ouput:
             nb_good += 1
