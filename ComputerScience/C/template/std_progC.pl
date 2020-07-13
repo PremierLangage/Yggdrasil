@@ -224,7 +224,7 @@ if compil_state != 'error':
         f_in.close()
         # Use the teacher solution to generated expected output of the test
         command_args = ["./teacher_prog"] + test_c[1]
-        sp = subprocess.run(command_args, stdin=open("stdin_content", "r"), stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
+        sp = subprocess.run(command_args, stdin=open("stdin_content", "r"), stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True, timeout=1)
         try: 
             expected_ouput = sp.stdout.decode() + sp.stderr.decode()
         except:
@@ -236,7 +236,7 @@ if compil_state != 'error':
 
         # Now execute the student programm
         command_args = ["./student_prog"] + test_c[1]
-        sp = subprocess.run(command_args, stdin=open("stdin_content", "r"), stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
+        sp = subprocess.run(command_args, stdin=open("stdin_content", "r"), stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True, timeout=1)
         try: 
             spout = sp.stdout.decode() + sp.stderr.decode()
         except:
