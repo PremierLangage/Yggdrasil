@@ -113,13 +113,13 @@ evaluator==#|python|
 try:
     feedback = "Réponse : "
     for num in criteria.keys():
-        feedback += " " + response[id]
+        feedback += " " + response[num]
     feedback += " " + response['best_copy'] + " " + response['commentaire']
     note = 100
 except:
     feedback = "Répondez à toutes les questions"
     note = 0
-grade = (note,feedback)
+grade = (note, feedback)
 ==
 
 
