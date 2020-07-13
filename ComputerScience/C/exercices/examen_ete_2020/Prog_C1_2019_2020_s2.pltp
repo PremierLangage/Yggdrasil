@@ -17,9 +17,11 @@
 title=Examen seconde session Prog C1 2019-2020
 
 introduction==
-Tous les exercices sont indépandants. Il est possible de circuler entre ces derniers
+Tous les exercices sont indépendants. Il est possible de circuler entre ces derniers
 et de les traiter dans n'importe quel ordre. Attention, une partie de la notation 
-sera portée par le nombre de tentatives pour résoudre les exercices.
+sera portée par le nombre de tentatives pour résoudre les exercices. Les notes 
+générées par la plateforme ne le sont qu'à titre informatif et donne seulement 
+un ordre de grandeur. 
 ==
 
 @ /ComputerScience/C/exercices/examen_ete_2020/three_odd_in_a_row.pl
