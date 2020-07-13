@@ -87,6 +87,7 @@ form==
         <label for="B">B</label><br/>
         <br/>
     {% endfor %}
+    
     <span style="padding-left:30px;">
         <b>Selon vous, quelle est la meilleure copie ?</b>
     </span>
