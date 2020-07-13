@@ -73,7 +73,7 @@ code_after==
 
 checks_args_stdin==#|python|
 [["Simple test", ["arg1", "argum2", "argument3", "a4"], ""],
- ["Simple test", ["unique"], ""],
+ ["Un seul mot et argument", ["unique"], ""],
  ["Test aléatoire", ["".join([chr(randint(97,122)) for j in range(randint(1, 20))] ) for i in range(2, 10)], ""],
  ["Test aléatoire", ["".join([chr(randint(97,122)) for j in range(randint(1, 20))] ) for i in range(2, 10)], ""],
  ["Test aléatoire", ["".join([chr(randint(97,122)) for j in range(randint(1, 20))] ) for i in range(2, 10)], ""],
