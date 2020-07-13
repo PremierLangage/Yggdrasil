@@ -27,22 +27,6 @@ text==
 ainsi que la taille de ce tableau. 
 ==
 
-before ==#|python|
-from random import randint
-
-# Some globals variables
-nb_attempt=0
-
-# Place here your favorite C compiler
-compiler="gcc"
-# PLace here the compilation flags
-cflags=["-Wall", "-ansi"]
-# Place here library flags
-libflags=[]
-
-text+=" {{ editor|component }} "
-==
-
 checks_args_stdin== 
 [["Exemple simple", ["1", "2", "7", "-4", "1", "9", "7"], ""], 
  ["Tableau vide", [""], ""],
