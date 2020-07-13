@@ -223,7 +223,7 @@ if compil_state != 'error':
         f_in.write(test_c[2])
         f_in.close()
         # Use the teacher solution to generated expected output of the test
-        command_args = " ".join(["./teacher_prog"] + test_c[1])
+        command_args = " ".join(["./teacher_prog"] + map(lambda x: "'"+x+"'", test_c[1]) )
         sp = subprocess.run(command_args, stdin=open("stdin_content", "r"), stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True, timeout=1)
         try: 
             expected_ouput = sp.stdout.decode() + sp.stderr.decode()
@@ -235,7 +235,7 @@ if compil_state != 'error':
             expected_ouput += "Process exited with UNIX signal ("+str(-sp.returncode)+")"
 
         # Now execute the student programm
-        command_args = " ".join(["./student_prog"] + test_c[1])
+        command_args = " ".join(["./student_prog"] + map(lambda x: "'"+x+"'", test_c[1]))
         sp = subprocess.run(command_args, stdin=open("stdin_content", "r"), stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True, timeout=1)
         try: 
             spout = sp.stdout.decode() + sp.stderr.decode()
