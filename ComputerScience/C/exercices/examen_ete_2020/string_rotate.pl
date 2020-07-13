@@ -44,10 +44,10 @@ cflags=["-Wall", "-ansi"]
 # Place here library flags
 libflags=[]
 
-checks_args_stdin = [["Example simple", ["ecrat"], ""], 
+checks_args_stdin = [["Exemple simple", ["ecrat"], ""], 
  ["Mot fixe", ["XXXXX"], ""],
  ["Mot vide", [""], ""],
- ["Example simple", ["plusieurs mot dans une seule chaine"], ""],
+ ["Plusieurs mots mais une chaîne", ["plusieurs mot dans une seule chaine"], ""],
  ["Test aléatoire", ["".join([chr(randint(97, 122)) for i in range(randint(10,20))])], ""],
  ["Test aléatoire", ["".join([chr(randint(97, 122)) for i in range(randint(10,20))])], ""],
  ["Test aléatoire", ["".join([chr(randint(97, 122)) for i in range(randint(10,20))])], ""]]
@@ -93,4 +93,5 @@ int main(int argc, char* argv[]){
   return 0;
 }
 ==
+
 
