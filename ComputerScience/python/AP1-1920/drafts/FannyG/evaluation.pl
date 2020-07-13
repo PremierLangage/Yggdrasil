@@ -69,7 +69,7 @@ form==
             <b>{{criteria.id.description}}</b>
     </span>
     <br/>
-    {% for niv in {{criteria.id.levels}} %}
+    {% for niv in criteria.id.levels %}
         <input type="radio" id="form_{{id}}" name="f_evaluation{{id}}" value="{{niv.description}}">
         <label for="{{niv.description}}">{{niv.description}}</label><br/>
     {% endfor %}
