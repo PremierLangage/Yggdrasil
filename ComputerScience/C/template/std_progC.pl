@@ -216,7 +216,9 @@ grade_checks = 0
 
 feedback_checks = ""
 
-# data test generation
+# data test generation : must be in a separate place
+# since it need a new eval at each attempt to be really
+# random !!!
 from random import *
 checks_data = eval(checks_args_stdin)
 
