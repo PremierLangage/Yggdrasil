@@ -40,7 +40,7 @@ cflags=["-Wall", "-ansi"]
 # Place here library flags
 libflags=[]
 
-checks_args_stdin = [["Example simple", ["1", "2", "7", "-4", "1", "9", "7"], ""], 
+checks_args_stdin = [["Exemple simple", ["1", "2", "7", "-4", "1", "9", "7"], ""], 
  ["Tableau vide", [""], ""],
  ["Tableau petit", ["1111", "3333", "7777"], ""],
  ["Tableau trop petit", ["1111", "3333"], ""],
