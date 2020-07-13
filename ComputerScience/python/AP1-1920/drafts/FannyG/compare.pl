@@ -109,10 +109,11 @@ evaluator==#|python|
 # response est un dict : ex : {1: 'tres_bien', 'commentaire': 't'}
 # le dict de retour reste response, les critères ayant des id, 
 # feedback = "J'ai bien lu votre formulaire :<br/>-" + response['0'] + "<br/>-" + response['1'] + "<br/>-" + response['2'] + "<br/>-" + response['commentaire']
-note = 100
-# general_feedback
-general_feedback = " Merci pour votre réponse." 
-grade = (note, general_feedback) #ne sert à rien
+
+try:
+    feedback = "Réponse : " + response['0'] + " " + response['1'] + " " + response['best_copy'] + " " + response['commentaire']
+
+grade = (100, " Merci pour votre réponse." ) #ne sert à rien
 
 grade = (0, "Répondez à toutes les questions")
 ==
