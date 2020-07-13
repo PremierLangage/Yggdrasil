@@ -246,11 +246,6 @@ if compil_state != 'error':
             spout += "Process exited with UNIX signal ("+str(-sp.returncode)+") "+signals[-sp.returncode]
         elif sp.returncode < 0:
             spout += "Process exited with UNIX signal ("+str(-sp.returncode)+")"
-        else:
-            try: 
-                spout = sp.stdout.decode() + sp.stderr.decode()
-            except:
-                spout = "Impossible de décoder la sortie standard"
 
         if spout == expected_ouput:
             nb_good += 1
