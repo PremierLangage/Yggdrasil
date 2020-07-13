@@ -60,5 +60,5 @@ int main(int argc, char* argv[]){
 
 checks_args_stdin==#|python|
 [["Simple test", ["arg1", "argum2", "argument3", "a4"], ""],
- ["Aléatoire", [], ""]]
+ ["Test aléatoire", [], ""]]
 ==
