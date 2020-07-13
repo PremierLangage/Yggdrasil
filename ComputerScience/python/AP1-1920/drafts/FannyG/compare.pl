@@ -87,14 +87,14 @@ form==
         <label for="B">B</label><br/>
         <br/>
     {% endfor %}
-    
+
     <span style="padding-left:30px;">
         <b>Selon vous, quelle est la meilleure copie ?</b>
     </span>
     <br/>
-    <input type="radio" id="form_{{id}}" name="f_evaluation{{id}}" value="A">
+    <input type="radio" id="form_best" name="f_evaluation{{id}}" value="A">
     <label for="A">A</label><br/>
-    <input type="radio" id="form_{{id}}" name="f_evaluation{{id}}" value="B">
+    <input type="radio" id="form_best" name="f_evaluation{{id}}" value="B">
     <label for="B">B</label><br/>
 </div>
 
