@@ -23,7 +23,8 @@ tag=function|type|array
 # editor.height=300px
 
 text==
-
+Écrire une fonction C <b>three_in_a_row</b> qui prend en argument un tableau d'entiers
+ainsi que la taille de ce tableau. 
 ==
 
 before ==#|python|
@@ -39,13 +40,15 @@ cflags=["-Wall", "-ansi"]
 # Place here library flags
 libflags=[]
 
-checks_args_stdin = [["Example simple", ["ecrat"], ""], 
- ["Mot fixe", ["XXXXX"], ""],
- ["Mot vide", [""], ""],
- ["Example simple", ["plusieurs mot dans une seule chaine"], ""],
- ["Test aléatoire", ["".join([chr(randint(97, 122)) for i in range(randint(10,20))])], ""],
- ["Test aléatoire", ["".join([chr(randint(97, 122)) for i in range(randint(10,20))])], ""],
- ["Test aléatoire", ["".join([chr(randint(97, 122)) for i in range(randint(10,20))])], ""]]
+checks_args_stdin = [["Example simple", ["1", "2", "7", "-4", "1", "9", "7"], ""], 
+ ["Tableau vide", [""], ""],
+ ["Tableau petit", ["1111", "3333", "7777"], ""],
+ ["Tableau trop petit", ["1111", "3333"], ""],
+ ["Test aléatoire", [str(randint(-1000, 1000)) for i in range(randint(1, 5))], ""],
+ ["Test aléatoire", [str(randint(-1000, 1000)) for i in range(randint(4, 8))], ""],
+ ["Test aléatoire", [str(randint(-1000, 1000)) for i in range(randint(8, 12))], ""],
+ ["Test aléatoire", [str(randint(-1000, 1000)) for i in range(randint(11, 15))], ""],
+ ["Test aléatoire", [str(randint(-1000, 1000)) for i in range(randint(14, 18))], ""]]
 
 text+=" {{ editor|component }} "
 ==
