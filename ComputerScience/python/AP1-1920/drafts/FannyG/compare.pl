@@ -114,7 +114,7 @@ try:
     feedback = "Réponses : "
     for num in criteria.keys():
         feedback += response[num] + ", "
-    feedback += response['best_copy'] + ", " + response['commentaire']
+    feedback += response['best_copy'] + ", " + response['commentaire'] + "."
     note = 100
 except:
     feedback = "Répondez à toutes les questions"
