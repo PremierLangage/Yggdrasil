@@ -92,9 +92,9 @@ form==
         <b>Selon vous, quelle est la meilleure copie ?</b>
     </span>
     <br/>
-    <input type="radio" id="form_best_copy" name="f_evaluation{{id}}" value="A">
+    <input type="radio" id="form_best_copy" name="f_evaluation_best_copy" value="A">
     <label for="A">A</label><br/>
-    <input type="radio" id="form_best_copy" name="f_evaluation{{id}}" value="B">
+    <input type="radio" id="form_best_copy" name="f_evaluation_best_copy" value="B">
     <label for="B">B</label><br/>
 </div>
 
