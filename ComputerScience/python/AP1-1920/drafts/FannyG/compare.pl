@@ -112,6 +112,8 @@ evaluator==#|python|
 
 try:
     feedback = "Réponse : " + response['0'] + " " + response['1'] + " " + response['best_copy'] + " " + response['commentaire']
+    for num in criteria.keys():
+        feedback += " " + response[id]
 
 grade = (100, " Merci pour votre réponse." ) #ne sert à rien
 
