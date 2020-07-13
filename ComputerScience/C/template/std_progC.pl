@@ -217,6 +217,7 @@ grade_checks = 0
 feedback_checks = ""
 
 # data test generation
+from random import *
 checks_data = eval(checks_args_stdin)
 
 if compil_state != 'error':
