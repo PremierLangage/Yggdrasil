@@ -32,8 +32,6 @@ ce que la chaîne reste une chaîne de caractère C valide.
 ==
 
 before ==#|python|
-from random import randint
-
 # Some globals variables
 nb_attempt=0
 
@@ -44,15 +42,17 @@ cflags=["-Wall", "-ansi"]
 # Place here library flags
 libflags=[]
 
-checks_args_stdin = [["Exemple simple", ["ecart"], ""], 
+text+=" {{ editor|component }} "
+==
+
+checks_args_stdin==
+ [["Exemple simple", ["ecart"], ""], 
  ["Mot fixe par rotation", ["XXXXX"], ""],
  ["Mot vide", [""], ""],
  ["Plusieurs mots dans une chaîne", ["plusieurs mot dans une seule chaine"], ""],
  ["Test aléatoire", ["".join([chr(randint(97, 122)) for i in range(randint(10,20))])], ""],
  ["Test aléatoire", ["".join([chr(randint(97, 122)) for i in range(randint(10,20))])], ""],
  ["Test aléatoire", ["".join([chr(randint(97, 122)) for i in range(randint(10,20))])], ""]]
-
-text+=" {{ editor|component }} "
 ==
 
 editor.code==#|c|
