@@ -312,12 +312,10 @@ grade=((grade_compil * grade_checks * grade_attempt) // 10000, feedback)
 ==
 
 # tests.test1.editor.code==
-# int carre(int p){ 
-#   return p*p; 
-# }
 # ==
 # tests.test1.editor.code = int carre(int p){ return p*p; }
 # tests.test1.editor.code = "int carre(int p){ return p*p; }"
 # tests.test1.editor.code = 'int carre(int p){ return p*p; }'
 # tests.test1.editor.code = solution
 # tests.test1.grade = 100
+
