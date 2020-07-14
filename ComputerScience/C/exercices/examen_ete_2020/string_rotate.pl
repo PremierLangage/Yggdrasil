@@ -24,21 +24,21 @@ tag=function|type|string
 
 text==
 Écrire une fonction C **rotate_string** qui prend en argument une chaîne de 
-caractères et la modifie sur place en décalant toute les lettres d'un cran vers 
+caractères et la modifie sur place en décalant toutes les lettres d'un cran vers 
 la gauche. La nouvelle première lettre sera donc l'ancienne seconde lettre, la 
 nouvelle seconde lettre sera l'ancienne troisième, etc... L'ancienne prenière 
 lettre devra se retrouver à la fin du mot une fois modifié. Veuillez bien à 
 ce que la chaîne reste une chaîne de caractère C valide.
 ==
 
-checks_args_stdin==
+checks_args_stdin==#|python|
  [["Exemple simple", ["ecart"], ""], 
  ["Mot fixe par rotation", ["XXXXX"], ""],
  ["Mot vide", [""], ""],
  ["Plusieurs mots dans une chaîne", ["plusieurs mot dans une seule chaine"], ""],
- ["Test aléatoire", ["".join([chr(randint(97, 122)) for i in range(randint(10,20))])], ""],
- ["Test aléatoire", ["".join([chr(randint(97, 122)) for i in range(randint(10,20))])], ""],
- ["Test aléatoire", ["".join([chr(randint(97, 122)) for i in range(randint(10,20))])], ""]]
+ ["Test aléatoire 1", ["".join([chr(randint(97, 122)) for i in range(randint(10,20))])], ""],
+ ["Test aléatoire 2", ["".join([chr(randint(97, 122)) for i in range(randint(10,20))])], ""],
+ ["Test aléatoire 3", ["".join([chr(randint(97, 122)) for i in range(randint(10,20))])], ""]]
 ==
 
 editor.code==#|c|
@@ -79,5 +79,4 @@ int main(int argc, char* argv[]){
   return 0;
 }
 ==
-
 
