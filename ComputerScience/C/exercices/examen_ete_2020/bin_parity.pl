@@ -79,9 +79,9 @@ int main(int argc, char* argv[]){
   
   print_area((void*)s, argc-1);
   if (bin_parity( *((int*)s) ))
-    printf("Nombre pair de bit à 1\n");
+    printf("Nombre pair de bits à 1\n");
   else
-    printf("Nombre impair de bit à 1\n");
+    printf("Nombre impair de bits à 1\n");
 
   return 0;
 }
