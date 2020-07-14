@@ -115,13 +115,13 @@ checks_args_stdin==#|python|
 # ==
 # tests.test1.grade=100
 
-tests== 
-{
-"1" : {
-    "editor" : {
-        "code" : "#include <stdlib.h>\n\nint** triangle(int n){\nint** tab = (int**)malloc(sizeof(int*) * n);\nint i;\n\nfor(i=0 ; i<n ; i++){\ntab[i] = (int*)malloc(sizeof(int) * (i+1));\n}\nreturn tab;\n}\n",
-        "grade" : "100"
-        }
-    }
-}
-==
+# tests== 
+# {
+# "1" : {
+#     "editor" : {
+#         "code" : "#include <stdlib.h>\n\nint** triangle(int n){\nint** tab = (int**)malloc(sizeof(int*) * n);\nint i;\n\nfor(i=0 ; i<n ; i++){\ntab[i] = (int*)malloc(sizeof(int) * (i+1));\n}\nreturn tab;\n}\n",
+#         "grade" : "100"
+#         }
+#     }
+# }
+# ==
