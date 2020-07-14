@@ -81,7 +81,7 @@ int cmpchar(const void *a, const void *b){
   char* n = *((char**)a);
   char* m = *((char**)b);
 
-  return strcmp(m, n);
+  return strcmp(n, m);
 }
 
 int main(int argc, char* argv[]){
