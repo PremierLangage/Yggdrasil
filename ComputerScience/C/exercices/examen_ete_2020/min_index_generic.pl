@@ -47,7 +47,7 @@ int min_index(void *base, size_t nmemb, size_t size,
   int ind=0;
   char* tab = (char*)base;
 
-  if (nmemb == 0)
+  if (nmemb <= 0)
     return -1;
 
   for(i=1 ; i<nmemb ; i++)
