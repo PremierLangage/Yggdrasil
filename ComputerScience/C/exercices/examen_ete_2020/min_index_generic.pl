@@ -61,6 +61,7 @@ int min_index(void *base, size_t nmemb, size_t size,
 
 code_before==#|c|
 #include <stdio.h>
+#include <stdlib.h>
 ==
 
 code_after==#|c|
