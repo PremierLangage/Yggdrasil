@@ -86,7 +86,7 @@ int cmpchar(const void *a, const void *b){
   else{
     if (n[0] > m[0])
       return 1;
-    if n[0] == '\0'
+    if (n[0] == '\0')
       return 0;
     return cmpchar(n+1, m+1);
     }
