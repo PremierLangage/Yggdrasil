@@ -68,7 +68,12 @@ code_after==#|c|
 int main(int argc, char* argv[]){
   int taille = atoi(argv[1]);
   int** tab = triangle(taille);
+  int i, j;
 
+  for (i=0 ; i<n ; i++){
+    tab[i][0] = 1;
+    tab[i][i] = 1;
+  }
 
   return 0;
 }
