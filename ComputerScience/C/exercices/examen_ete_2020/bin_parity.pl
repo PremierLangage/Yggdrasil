@@ -89,7 +89,7 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[["Exécution simple", ["1", "1", "1", "0"], ""],
+[["Exécution simple 3 bits", ["1", "1", "1", "0"], ""],
  ["Pas de bit", ["0", "0", "0", "0"], ""],
  ["32 bits", ["255", "255", "255", "255"], ""],
  ["31 bits", ["255", "255", "255", "254"], ""],
