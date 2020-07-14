@@ -78,10 +78,10 @@ int main(int argc, char* argv[]){
 
   
   print_area((void*)s, argc-1);
-  if (has_factor_1011( *((unsigned long int*)s) ))
-    printf("TRUE\n");
+  if (bin_parity( *((int*)s) ))
+    printf("Nombre pair de bit à 1\n");
   else
-    printf("FALSE\n");
+    printf("Nombre impair de bit à 1\n");
 
   return 0;
 }
