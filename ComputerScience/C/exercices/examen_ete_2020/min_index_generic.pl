@@ -32,6 +32,8 @@ retourner -1.
 Pour rappel, une fonction de comparaison correcte vis à vis du langage C, 
 évaluée sur des données X (premier argument) et Y (second argument) retourne un 
 entier négatif, nul ou positif respectivement lorsque X < Y, X = Y ou X > Y.
+Si le tableau contient plusieurs occurences de son minimum, retournez l'indice 
+le plus petit indexant un minimum.
 ==
 
 editor.code==#|c|
@@ -98,7 +100,8 @@ checks_args_stdin==#|python|
  ["Tableau vide", ["int"], ""],
  ["Test aléatoire entier 1", ["int"], " ".join([str(randint(-100, 100)) for i in range(randint(5, 15))])],
  ["Test aléatoire entier 2", ["int"], " ".join([str(randint(-100, 100)) for i in range(randint(5, 15))])],
- ["Test aléatoire entier 3", ["int"], " ".join([str(randint(-100, 100)) for i in range(randint(5, 15))])]]
+ ["Test aléatoire entier 3", ["int"], " ".join([str(randint(-100, 100)) for i in range(randint(5, 15))])],
+ ["Exécution simple", ["int"], "bbbb ccc tttt aa zzzz ddd eee aa"]]
 ==
 
 
