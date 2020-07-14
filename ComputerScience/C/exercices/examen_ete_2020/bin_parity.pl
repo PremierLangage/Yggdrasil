@@ -22,9 +22,9 @@ tag=bitwise|function
 
 text==
 Écrire une fonction C prenant en argument un entier **n** qui retourne **1**
-si l'entier **n** contient un nombre pair de bit à **1** dans son écriture 
+si l'entier **n** contient un nombre pair de bits à **1** dans son écriture 
 binaire. Votre fonction devra retourner **0** sinon, c'est à dire quand 
-**n** contient un nombre impair de bit à **1**.
+**n** contient un nombre impair de bits à **1**.
 ==
 
 editor.code==#|c|
@@ -100,5 +100,6 @@ checks_args_stdin==#|python|
  ["Test aléatoire 4", [str(randint(0,255)) for i in range(4)], ""],
  ["Test aléatoire 5", [str(randint(0,255)) for i in range(4)], ""]]
 ==
+
 
 
