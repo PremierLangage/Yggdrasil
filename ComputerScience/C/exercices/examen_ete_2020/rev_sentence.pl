@@ -38,13 +38,28 @@ auquel elle est accolée.
 ==
 
 editor.code==#|c|
+#include ...
+
 void reverse_words(char* sentence){
   /* Votre code ici... */
 }
 ==
 
 solution==#|c|
+#include <stdio.h>
+#include <string.h>
 
+void reverse_words(char* s){
+  int i, j;
+
+  for(i=strlen(s)-1 ; i>=0 ; i--){
+    if (s[i] == ' '){
+      for(j=i+1 ; s[j]!=' ' && s[j]!='\0' ; j++)
+        putchar(s[j]);
+      putchar(' ');
+    }
+  }
+}
 ==
 
 code_before==#|c|
@@ -52,11 +67,14 @@ code_before==#|c|
 ==
 
 code_after==#|c|
-
+int main
 ==
 
 checks_args_stdin==#|python|
-[["Exécution simple", [], "deux mot."]]
+[["Exécution simple", ["deux mot."], ""],
+ ["Exemple énoncé 1", ["La force tu dois ressentir!"], ""],
+ ["Exemple énoncé 2", [], ""],
+ ["Exemple énoncé 3", [], ""]]
 ==
 
 
