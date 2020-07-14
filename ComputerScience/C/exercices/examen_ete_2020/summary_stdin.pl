@@ -22,8 +22,17 @@ tag=programm|input_output|function
 
 text==
 Écrire un programme C qui analyse son entrée standard pour en proposer un très 
-rapide résumé. 
+rapide résumé. Quelle que soit la longueur de l'entrée standard, votre 
+programme devra compter le nombre de chiffre et de mots comme il suit:
 
+    nombres: 2
+    mots: 2
+
+On considéra les espaces, les tabulations et les retours chariots comme 
+délimiteurs. Les nombres sont composés de chiffres uniquement (`[0-9]`) et 
+peuvent possiblement commencer par des zéros. L'entrée standard sera 
+composée uniquement de mots en lettres minuscules, de nombres ainsi que 
+de délimiteurs (uniques ou multiples) les séparants.
 ==
 
 editor.code==#|c|
@@ -55,6 +64,6 @@ code_after==#|c|
 ==
 
 checks_args_stdin==#|python|
-[["Exécution simple", [], "mot 123 autre_mot 54"]]
+[["Exécution simple", [], "mot 123 autremot 54"]]
 ==
 
