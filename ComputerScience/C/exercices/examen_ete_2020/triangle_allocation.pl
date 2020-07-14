@@ -70,12 +70,12 @@ int main(int argc, char* argv[]){
   int** tab = triangle(taille);
   int i, j;
 
-  for (i=0 ; i<n ; i++){
+  for (i=0 ; i<taille ; i++){
     tab[i][0] = 1;
     tab[i][i] = 1;
   }
-  for (i=0 ; i<n ; i++){
-    for (j=0 ; j<i ; j++){
+  for (i=1 ; i<taille ; i++){
+    for (j=1 ; j<i ; j++){
       tab[i][j] = tab[i-1][j] + tab[i-1][j-1];
       printf("%3d ", tab[i][j]);
     }
