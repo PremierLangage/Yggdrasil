@@ -118,19 +118,7 @@ checks_args_stdin==#|python|
 tests %= {
     "test1" : {
         "editor" : {
-            "code" : """
-#include <stdlib.h>
-
-int** triangle(int n){
-  int** tab = (int**)malloc(sizeof(int*) * n);
-  int i;
-
-  for(i=0 ; i<n ; i++){
-    tab[i] = (int*)malloc(sizeof(int) * (i+1));
-  }
-  return tab; 
-}
-            """,
+            "code" : "#include <stdlib.h>\n\nint** triangle(int n){\nint** tab = (int**)malloc(sizeof(int*) * n);\nint i;\n\nfor(i=0 ; i<n ; i++){\ntab[i] = (int*)malloc(sizeof(int) * (i+1));\n}\nreturn tab;\n}\n",
             "grade" : 100
         }
     }
