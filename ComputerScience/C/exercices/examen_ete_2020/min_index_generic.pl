@@ -132,7 +132,7 @@ checks_args_stdin==#|python|
  ["Test aléatoire entier 1", ["int"], " ".join([str(randint(-100, 100)) for i in range(randint(5, 15))])],
  ["Test aléatoire entier 2", ["int"], " ".join([str(randint(-100, 100)) for i in range(randint(5, 15))])],
  ["Test aléatoire entier 3", ["int"], " ".join([str(randint(-100, 100)) for i in range(randint(5, 15))])],
- ["Quelques mots (ordre lex)", ["char*"], "bbbb ccc tttt aa zzzz ddd eee aa"],
+ ["Quelques mots (ordre lex)", ["char*"], "bbbb ccc tttt aa zzzz ddd eee aa\n"],
  ["Test aléatoire mots 1", ["char*"], " ".join(["".join([chr(randint(97,122)) for j in range(randint(1,8))]) for i in range(randint(5, 15))])],
  ["Test aléatoire mots 2", ["char*"], " ".join(["".join([chr(randint(97,122)) for j in range(randint(1,8))]) for i in range(randint(5, 15))])],
  ["Test aléatoire mots 3", ["char*"], " ".join(["".join([chr(randint(97,122)) for j in range(randint(1,8))]) for i in range(randint(5, 15))])]]
