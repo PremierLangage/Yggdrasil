@@ -23,8 +23,9 @@ tag=programm|input_output|function
 text==
 Écrire un programme C qui analyse son entrée standard pour en proposer un très 
 rapide résumé. Quelle que soit la longueur de l'entrée standard, votre 
-programme devra compter le nombre de chiffre et de mots comme il suit:
+programme devra compter les nombres et les mots comme il suit:
 
+    STDIN <-- "mot 123 autremot 54"
     nombres: 2
     mots: 2
 
