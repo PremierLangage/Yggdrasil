@@ -23,6 +23,10 @@ et de les traiter dans n'importe quel ordre. Attention, une partie de la notatio
 sera portée par le nombre de tentatives pour résoudre les exercices. Les notes 
 générées par la plateforme ne le sont qu'à titre informatif et donne seulement 
 un ordre de grandeur. 
+
+Vous pouvez inclure toute bibliothèque qui ne nécessite pas un drapeau de linkage.
+Toutes les bibliothèques standards sont disponibles. `math.h` est indisponible car 
+elle nécessite le drapeau de linkage `-m` à la compilation. 
 ==
 
 @ /ComputerScience/C/exercices/examen_ete_2020/three_odd_in_a_row.pl
@@ -34,4 +38,5 @@ un ordre de grandeur.
 @ /ComputerScience/C/exercices/examen_ete_2020/sum_digits.pl
 
 @ /ComputerScience/C/exercices/examen_ete_2020/short_long_args.pl
+
 
