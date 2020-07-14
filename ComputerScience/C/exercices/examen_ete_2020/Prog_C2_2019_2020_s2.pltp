@@ -15,7 +15,7 @@
 #*****************************************************************************
 
 author=Nicolas Borie
-title=Examen seconde session Prog C1 2019-2020
+title=Examen seconde session Prog C2 2019-2020
 
 introduction==
 Tous les exercices sont indépendants. Il est possible de circuler entre ces derniers
@@ -25,13 +25,6 @@ générées par la plateforme ne le sont qu'à titre informatif et donne seuleme
 un ordre de grandeur. 
 ==
 
-@ /ComputerScience/C/exercices/examen_ete_2020/three_odd_in_a_row.pl
+# @ /ComputerScience/C/exercices/examen_ete_2020/three_odd_in_a_row.pl
 
-@ /ComputerScience/C/exercices/examen_ete_2020/moyenne_positif.pl
-
-@ /ComputerScience/C/exercices/examen_ete_2020/string_rotate.pl
-
-@ /ComputerScience/C/exercices/examen_ete_2020/sum_digits.pl
-
-@ /ComputerScience/C/exercices/examen_ete_2020/short_long_args.pl
 
