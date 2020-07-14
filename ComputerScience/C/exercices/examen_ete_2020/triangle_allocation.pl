@@ -79,8 +79,8 @@ int main(int argc, char* argv[]){
       tab[i][j] = tab[i-1][j] + tab[i-1][j-1];
       printf("%3d ", tab[i][j]);
     }
+    putchar('\n');
   }
-
   return 0;
 }
 ==
