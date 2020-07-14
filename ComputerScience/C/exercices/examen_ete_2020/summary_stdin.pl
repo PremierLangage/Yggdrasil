@@ -94,6 +94,10 @@ code_after==#|c|
 
 checks_args_stdin==#|python|
 [["Exécution simple", [], "mot 123 autremot 54"],
- ["Test aléatoire 1", [], ''.join(list(map(lambda x: x+''.join([choice([' ','\t','\n']) for i in range(randint(1,5))]), [choice([''.join([chr(randint(48,57)) for k in range(randint(1, 10))]), ''.join([chr(randint(97,122)) for j in range(randint(1,20))])]) for i in range(randint(1,20))])))] ]
+ ["Test aléatoire 1", [], ''.join(list(map(lambda x: x+''.join([choice([' ','\t','\n']) for i in range(randint(1,5))]), [choice([''.join([chr(randint(48,57)) for k in range(randint(1, 10))]), ''.join([chr(randint(97,122)) for j in range(randint(1,20))])]) for i in range(randint(1,10))])))],
+ ["Test aléatoire 2", [], ''.join(list(map(lambda x: x+''.join([choice([' ','\t','\n']) for i in range(randint(1,5))]), [choice([''.join([chr(randint(48,57)) for k in range(randint(1, 10))]), ''.join([chr(randint(97,122)) for j in range(randint(1,20))])]) for i in range(randint(10,20))])))],
+ ["Test aléatoire 3", [], ''.join(list(map(lambda x: x+''.join([choice([' ','\t','\n']) for i in range(randint(1,5))]), [choice([''.join([chr(randint(48,57)) for k in range(randint(1, 10))]), ''.join([chr(randint(97,122)) for j in range(randint(1,20))])]) for i in range(randint(20,30))])))],
+ ["Test aléatoire 4", [], ''.join(list(map(lambda x: x+''.join([choice([' ','\t','\n']) for i in range(randint(1,5))]), [choice([''.join([chr(randint(48,57)) for k in range(randint(1, 10))]), ''.join([chr(randint(97,122)) for j in range(randint(1,20))])]) for i in range(randint(30,40))])))],
+ ["Test aléatoire 5", [], ''.join(list(map(lambda x: x+''.join([choice([' ','\t','\n']) for i in range(randint(1,5))]), [choice([''.join([chr(randint(48,57)) for k in range(randint(1, 10))]), ''.join([chr(randint(97,122)) for j in range(randint(1,20))])]) for i in range(randint(40,50))])))],]
 ==
 
