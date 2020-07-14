@@ -35,7 +35,7 @@ editor.code==#|c|
 ==
 
 solution==#|c|
-int has_factor_1101(unsigned long int u){
+int has_factor_1011(unsigned long int u){
   int i;
 
   for(i=0 ; i<8*sizeof(unsigned long int) - 3 ; i++){
