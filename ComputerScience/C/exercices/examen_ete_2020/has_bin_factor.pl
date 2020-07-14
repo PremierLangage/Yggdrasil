@@ -51,7 +51,7 @@ code_before==#|c|
 #include <stdlib.h>
 ==
 
-codeafter==#|c|
+code_after==#|c|
 
 void print_bin(unsigned char u){
   int i;
