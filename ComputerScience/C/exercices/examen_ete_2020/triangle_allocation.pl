@@ -31,7 +31,7 @@ deux dimensions de forme triangulaire. Voici un exemple pour la taille 5 :
     X  7  X  X      (   l'elément [3][1] vaut ici 7  )
     X  X  X  X  X   (cinquième ligne [4] : 5 éléments)
 
-Votre fonction devra donc retourner un tableau doublement indéxé [i][j] 
+Votre fonction devra donc retourner un tableau doublement indéxé `[i][j]` 
 (i pour les lignes et j pour les colonnes). La première ligne peut contenir
 1 élément, la seconde ligne 2 éléments, etc... En taille **n**, le tableau
 retourné et fraichement alloué contiendra **n** lignes.
