@@ -24,8 +24,8 @@ editor.height=300px
 
 text==
 Écrire une fonction C **sum_number** qui prend en argument un entier C (qui 
-sera toujours positif ou nul) et qui retourne la somme des chiffres qui compose
-ce nombre quand on l'écrit en base 10.
+sera toujours positif ou nul) et qui retourne la somme des chiffres qui 
+composent ce nombre quand on l'écrit en base 10.
 
 Voici quelques exemples :
 
@@ -73,4 +73,5 @@ int main(int argc, char* argv[]){
   return 0;
 }
 ==
+
 
