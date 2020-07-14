@@ -113,4 +113,4 @@ int** triangle(int n){
   return tab; 
 }
 ==
-tests.test1.grade = 100
+tests.test1.grade=100
