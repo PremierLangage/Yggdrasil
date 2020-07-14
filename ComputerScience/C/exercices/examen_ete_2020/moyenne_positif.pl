@@ -28,7 +28,7 @@ text==
 des éléments positifs ou nuls contenus dans le tableau. Cette moyenne devra être
 calculée et retournée dans les floattants C. Si le tableau ne contient aucun 
 élément positifs ou nuls, votre fonction devra alors retourner zéro (dans les 
-flottants encore).
+flottants toujours).
 ==
 
 checks_args_stdin==#|python|
