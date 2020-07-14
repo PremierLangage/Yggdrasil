@@ -78,8 +78,8 @@ int cmpint(const void *a, const void *b){
 }
 
 int cmpchar(const void *a, const void *b){
-  char* n = (char*)a;
-  char* m = (char*)b;
+  char* n = *((char**)a);
+  char* m = *((char**)b);
 
   if (n[0] < m[0])
     return -1;
