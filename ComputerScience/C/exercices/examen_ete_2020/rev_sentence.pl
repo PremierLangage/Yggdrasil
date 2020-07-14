@@ -83,7 +83,10 @@ checks_args_stdin==#|python|
 [["Exécution simple", ["deux mot"], ""],
  ["Exemple énoncé 1", ["La force tu dois ressentir!"], ""],
  ["Exemple énoncé 2", ["Plus il y a de fous, plus on rit!"], ""],
- ["Test aléatoire 1", [" ".join([''.join([chr(randint(97,122)) for j in range(randint(1,20))]) for i in range(randint(1, 12))])], ""]]
+ ["Test aléatoire 1", [" ".join([''.join([chr(randint(97,122)) for j in range(randint(1,20))]) for i in range(randint(1, 5))])], ""],
+ ["Test aléatoire 2", [" ".join([''.join([chr(randint(97,122)) for j in range(randint(1,20))]) for i in range(randint(1, 8))])], ""],
+ ["Test aléatoire 3", [" ".join([''.join([chr(randint(97,122)) for j in range(randint(1,20))]) for i in range(randint(1, 11))])], ""],
+ ["Test aléatoire 4", [" ".join([''.join([chr(randint(97,122)) for j in range(randint(1,20))]) for i in range(randint(1, 14))])], ""],]
 ==
 
 
