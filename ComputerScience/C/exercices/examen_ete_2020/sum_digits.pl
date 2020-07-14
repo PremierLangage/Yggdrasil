@@ -39,13 +39,13 @@ Voici quelques exemples :
 
 checks_args_stdin==#|python|
 [["Basique", ["0"], ""],
- ["Petit", ["7"], ""],
- ["PLein", ["1234567"], ""],
- ["Aléatoire", [str(randint(1, 2000000000))], ""],
- ["Aléatoire", [str(randint(1, 2000000000))], ""],
- ["Aléatoire", [str(randint(1, 2000000000))], ""],
- ["Aléatoire", [str(randint(1, 2000000000))], ""],
- ["Aléatoire", [str(randint(1, 2000000000))], ""]]
+ ["Nombre à 1 chiffre", ["7"], ""],
+ ["Long nombre", ["1234567"], ""],
+ ["Test aléatoire 1", [str(randint(1, 2000000000))], ""],
+ ["Test aléatoire 2", [str(randint(1, 2000000000))], ""],
+ ["Test aléatoire 3", [str(randint(1, 2000000000))], ""],
+ ["Test aléatoire 4", [str(randint(1, 2000000000))], ""],
+ ["Test aléatoire 5", [str(randint(1, 2000000000))], ""]]
 ==
 
 editor.code==#|c|
