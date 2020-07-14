@@ -106,4 +106,3 @@ checks_args_stdin==#|python|
  ["Test aléatoire 8", [str(randint(0,255)) for i in range(4)], ""]]
 ==
 
-
