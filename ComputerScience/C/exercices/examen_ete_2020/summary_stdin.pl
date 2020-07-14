@@ -33,7 +33,7 @@ délimiteurs. Les nombres sont composés de chiffres uniquement (`[0-9]`) et
 peuvent possiblement commencer par des zéros. L'entrée standard sera 
 composée uniquement de mots en lettres minuscules, de nombres ainsi que 
 de délimiteurs (uniques ou multiples) les séparants. Les mots ou nombres 
-ne comporteront jamais plus de 30 caractères.
+ne comporteront jamais plus de 20 caractères.
 ==
 
 editor.code==#|c|
