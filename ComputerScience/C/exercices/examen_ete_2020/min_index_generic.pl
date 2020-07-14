@@ -87,7 +87,7 @@ int main(int argc, char* argv[]){
         printf(", ");
       printf("%d", array[i-1]);
     }
-    printf("] --> %d", min_index(array, i, sizeof(int),);
+    printf("] --> %d", min_index(array, i, sizeof(int),cmpint));
   }
 
   return 0;
