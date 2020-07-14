@@ -108,7 +108,7 @@ int main(int argc, char* argv[]){
         printf(", ");
       printf("%s", tab[i-1]);
     }
-    printf("] --> %d", min_index(tab, i, sizeof(char*), strchar));
+    printf("] --> %d", min_index(tab, i, sizeof(char*), cmpchar));
   }
 
   return 0;
