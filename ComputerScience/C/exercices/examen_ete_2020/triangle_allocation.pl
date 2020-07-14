@@ -101,7 +101,6 @@ checks_args_stdin==#|python|
 ==
 
 tests.test1.editor.code==
-"""
 #include <stdlib.h>
 
 int** triangle(int n){
@@ -113,6 +112,5 @@ int** triangle(int n){
   }
   return tab; 
 }
-"""
 ==
 tests.test1.grade = 100
