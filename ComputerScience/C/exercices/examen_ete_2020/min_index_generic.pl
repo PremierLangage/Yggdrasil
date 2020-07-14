@@ -95,7 +95,7 @@ int cmpchar(const void *a, const void *b){
 int main(int argc, char* argv[]){
   int array[20];
   char mot[300];
-  char* tab[50];
+  char** tab=malloc(50*sizeof(char*));
   int i;
 
   if (strcmp(argv[1], "int") == 0){
