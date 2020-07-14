@@ -81,15 +81,7 @@ int cmpchar(const void *a, const void *b){
   char* n = *((char**)a);
   char* m = *((char**)b);
 
-  if (n[0] < m[0])
-    return -1;
-  else{
-    if (n[0] > m[0])
-      return 1;
-    if (n[0] == '\0')
-      return 0;
-    return cmpchar(n+1, m+1);
-    }
+  return strcmp(m, n);
 }
 
 int main(int argc, char* argv[]){
