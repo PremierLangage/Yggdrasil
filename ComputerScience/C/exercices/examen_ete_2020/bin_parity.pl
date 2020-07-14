@@ -89,18 +89,16 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[["Exécution simple", ["11", "11", "11", "11"], ""],
+[["Exécution simple", ["1", "1", "1", "0"], ""],
  ["Pas de bit", ["0", "0", "0", "0"], ""],
- ["64 bits", ["255", "255", "255", "255"], ""],
+ ["32 bits", ["255", "255", "255", "255"], ""],
+ ["31 bits", ["255", "255", "255", "254"], ""],
  ["Alternances de bit", ["85", "85", "85", "85"], ""],
  ["Test aléatoire 1", [str(randint(0,255)) for i in range(4)], ""],
  ["Test aléatoire 2", [str(randint(0,255)) for i in range(4)], ""],
  ["Test aléatoire 3", [str(randint(0,12)) for i in range(4)], ""],
  ["Test aléatoire 4", [str(randint(0,255)) for i in range(4)], ""],
- ["Test aléatoire 5", [str(randint(0,255)) for i in range(4)], ""],
- ["Test aléatoire 6", [str(randint(0,255)) for i in range(4)], ""],
- ["Test aléatoire 7", [str(randint(0,255)) for i in range(4)], ""],
- ["Test aléatoire 8", [str(randint(0,255)) for i in range(4)], ""]]
+ ["Test aléatoire 5", [str(randint(0,255)) for i in range(4)], ""]]
 ==
 
 
