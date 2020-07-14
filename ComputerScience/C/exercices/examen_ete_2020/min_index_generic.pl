@@ -80,11 +80,11 @@ int main(int argc, char* argv[]){
 
   if (strcmp(argv[1], "int") == 0){
     i = 0;
-    putchar('[')
+    putchar('[');
     while(scanf("%d", array+i) == 1){
       i++;
       if (i != 1)
-        printf(", ")
+        printf(", ");
       printf("%d", array[i-1]);
     }
     printf("] --> %d", min_index(array, i, sizeof(int),);
