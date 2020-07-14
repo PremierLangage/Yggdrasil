@@ -61,6 +61,8 @@ int min_index(void *base, size_t nmemb, size_t size,
 ==
 
 code_before==#|c|
+#define _POSIX_C_SOURCE 200809L
+
 #include <stdio.h>
 #include <stdlib.h>
 ==
