@@ -86,7 +86,7 @@ checks_args_stdin==#|python|
  ["Test aléatoire 1", [" ".join([''.join([chr(randint(97,122)) for j in range(randint(1,20))]) for i in range(randint(1, 5))])], ""],
  ["Test aléatoire 2", [" ".join([''.join([chr(randint(97,122)) for j in range(randint(1,20))]) for i in range(randint(1, 8))])], ""],
  ["Test aléatoire 3", [" ".join([''.join([chr(randint(97,122)) for j in range(randint(1,20))]) for i in range(randint(1, 11))])], ""],
- ["Test aléatoire 4", [" ".join([''.join([chr(randint(97,122)) for j in range(randint(1,20))]) for i in range(randint(1, 14))])], ""],]
+ ["Test aléatoire 4", [" ".join([''.join([chr(randint(97,122)) for j in range(randint(1,20))]) for i in range(randint(1, 14))])], ""]]
 ==
 
 
