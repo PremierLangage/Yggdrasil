@@ -78,7 +78,7 @@ int cmpint(const void *a, const void *b){
 }
 
 int cmpchar(const void *a, const void *b){
-  return strcmp(a, b);
+  return strcmp(b, a);
 }
 
 int main(int argc, char* argv[]){
