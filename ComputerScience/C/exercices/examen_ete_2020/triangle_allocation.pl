@@ -100,7 +100,8 @@ checks_args_stdin==#|python|
  ["Test aléatoire 6", [str(randint(2, 12))], ""]]
 ==
 
-tests.test1.editor.code="""
+tests.test1.editor.code=
+"""
 #include <stdlib.h>
 
 int** triangle(int n){
