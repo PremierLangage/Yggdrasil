@@ -22,7 +22,11 @@ Tous les exercices sont indépendants. Il est possible de circuler entre ces der
 et de les traiter dans n'importe quel ordre. Attention, une partie de la notation 
 sera portée par le nombre de tentatives pour résoudre les exercices. Les notes 
 générées par la plateforme ne le sont qu'à titre informatif et donnent seulement 
-un ordre de grandeur. 
+un ordre de grandeur.
+
+Vous pouvez inclure toutes bibliothèques qui ne nécessite pas un drapeau de linkage.
+Toutes les bibliothèques standards sont disponibles. `math.h` est indisponible car 
+elle nécessite le drapeau de linkage `-m` à la compilation. 
 ==
 
 @ /ComputerScience/C/exercices/examen_ete_2020/rev_sentence.pl
