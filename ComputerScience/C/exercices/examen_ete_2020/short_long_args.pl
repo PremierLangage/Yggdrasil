@@ -23,7 +23,7 @@ tag=input_output|program
 editor.height=300px
 
 text==
-Écrire un programme C qui regarde tous ses arguments et finit par afficher le 
+Écrire un programme C qui inspecte tous ses arguments et finit par afficher le 
 plus court de ses arguments et ensuite le plus long. Votre programme devra 
 suivre la mise en page qui suit.
 
@@ -31,8 +31,8 @@ suivre la mise en page qui suit.
     plus court argument: a4
     plus long argument: argument3
 
-le nom du programme (ici ./a.out) n'est pas considérer comme un argument. 
-Ce programme sera toujours appelé avec au moins 1 argument minimum. Si 
+le nom du programme (ici ./a.out) ne sera pas considéré comme un argument. 
+Le programme sera toujours appelé avec au moins 1 argument minimum. Si 
 plusieurs arguments sont de taille minimale ou maximale, votre programme 
 devra choisir systématiquement les premiers des arguments disponibles (le 
 premier parmi les plus petits et/ou le premier parmi les plus longs).
@@ -72,11 +72,11 @@ code_after==
 ==
 
 checks_args_stdin==#|python|
-[["Simple test", ["arg1", "argum2", "argument3", "a4"], ""],
- ["Un seul mot et argument", ["unique"], ""],
- ["Test aléatoire", ["".join([chr(randint(97,122)) for j in range(randint(1, 20))] ) for i in range(2, 10)], ""],
- ["Test aléatoire", ["".join([chr(randint(97,122)) for j in range(randint(1, 20))] ) for i in range(2, 10)], ""],
- ["Test aléatoire", ["".join([chr(randint(97,122)) for j in range(randint(1, 20))] ) for i in range(2, 10)], ""],
- ["Test aléatoire", ["".join([chr(randint(97,122)) for j in range(randint(1, 20))] ) for i in range(2, 10)], ""],
- ["Test aléatoire", ["".join([chr(randint(97,122)) for j in range(randint(1, 20))] ) for i in range(2, 10)], ""]]
+[["Test en exemple", ["arg1", "argum2", "argument3", "a4"], ""],
+ ["Un seul argument", ["unique"], ""],
+ ["Test aléatoire 1", ["".join([chr(randint(97,122)) for j in range(randint(1, 20))] ) for i in range(2, 10)], ""],
+ ["Test aléatoire 2", ["".join([chr(randint(97,122)) for j in range(randint(1, 20))] ) for i in range(2, 10)], ""],
+ ["Test aléatoire 3", ["".join([chr(randint(97,122)) for j in range(randint(1, 20))] ) for i in range(2, 10)], ""],
+ ["Test aléatoire 4", ["".join([chr(randint(97,122)) for j in range(randint(1, 20))] ) for i in range(2, 10)], ""],
+ ["Test aléatoire 5", ["".join([chr(randint(97,122)) for j in range(randint(1, 20))] ) for i in range(2, 10)], ""]]
 ==
