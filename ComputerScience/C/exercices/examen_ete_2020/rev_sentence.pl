@@ -27,8 +27,6 @@ l’ordre inverse. Placée dans un programme, voilà l’effet voulu :
 
     Platon@debian~$> ./a.out "La force tu dois ressentir!"
     ressentir! dois tu force La
-    Platon@debian~$> ./a.out "Ça sert vraiment à rien les fonctions imaginées par le prof pour l'examen..."
-    l'examen... pour prof le par imaginées fonctions les rien à vraiment sert Ça
     Platon@debian~$> ./a.out "Plus il y a de fous, plus on rit!"
     rit! on plus fous, de a y il Plus
 
