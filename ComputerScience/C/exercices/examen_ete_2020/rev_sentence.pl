@@ -59,6 +59,8 @@ void reverse_words(char* s){
       putchar(' ');
     }
   }
+  for(j=i+1 ; s[j]!=' ' && s[j]!='\0' ; j++)
+    putchar(s[j]);
 }
 ==
 
