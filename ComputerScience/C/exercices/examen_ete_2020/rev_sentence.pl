@@ -32,13 +32,14 @@ l’ordre inverse. Placée dans un programme, voilà l’effet voulu :
     Platon@debian~$> ./a.out "Plus il y a de fous, plus on rit!"
     rit! on plus fous, de a y il Plus
 
-Les mots sont délimités par des espaces. On ne touche pas aux majuscules 
-et minuscules et la ponctuation, quand elle existe, est portée par les mots 
-auquels elle est accolée.
+Les mots sont délimités par un unique espace. On ne touche pas aux majuscules 
+et minuscules. La ponctuation, quand elle existe, est portée par le mot 
 ==
 
 editor.code==#|c|
-
+void reverse_words(char* sentence){
+  /* Votre code ici... */
+}
 ==
 
 solution==#|c|
