@@ -27,16 +27,16 @@ text==
 ainsi que la taille de ce tableau. 
 ==
 
-checks_args_stdin== 
+checks_args_stdin==#|python| 
 [["Exemple simple", ["1", "2", "7", "-4", "1", "9", "7"], ""], 
  ["Tableau vide", [""], ""],
  ["Tableau petit", ["1111", "3333", "7777"], ""],
  ["Tableau trop petit", ["1111", "3333"], ""],
- ["Test aléatoire", [str(randint(-1000, 1000)) for i in range(randint(1, 5))], ""],
- ["Test aléatoire", [str(randint(-1000, 1000)) for i in range(randint(4, 8))], ""],
- ["Test aléatoire", [str(randint(-1000, 1000)) for i in range(randint(8, 12))], ""],
- ["Test aléatoire", [str(randint(-1000, 1000)) for i in range(randint(11, 15))], ""],
- ["Test aléatoire", [str(randint(-1000, 1000)) for i in range(randint(14, 18))], ""]]
+ ["Test aléatoire 1", [str(randint(-1000, 1000)) for i in range(randint(1, 5))], ""],
+ ["Test aléatoire 2", [str(randint(-1000, 1000)) for i in range(randint(4, 8))], ""],
+ ["Test aléatoire 3", [str(randint(-1000, 1000)) for i in range(randint(8, 12))], ""],
+ ["Test aléatoire 4", [str(randint(-1000, 1000)) for i in range(randint(11, 15))], ""],
+ ["Test aléatoire 5", [str(randint(-1000, 1000)) for i in range(randint(14, 18))], ""]]
 ==
 
 editor.code==#|c|
@@ -78,6 +78,7 @@ int main(int argc, char* argv[]){
   return 0;
 }
 ==
+
 
 
 
