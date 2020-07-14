@@ -77,6 +77,10 @@ int cmpint(const void *a, const void *b){
   return *n - *m;
 }
 
+int cmpchar(const void *a, const void *b){
+  return strcmp(a, b);
+}
+
 int main(int argc, char* argv[]){
   int array[20];
   char mot[300];
@@ -104,7 +108,7 @@ int main(int argc, char* argv[]){
         printf(", ");
       printf("%s", tab[i-1]);
     }
-    printf("] --> %d", min_index(tab, i, sizeof(char*), strcmp));
+    printf("] --> %d", min_index(tab, i, sizeof(char*), strchar));
   }
 
   return 0;
