@@ -81,7 +81,7 @@ int main(int argc, char* argv[]){
   }
   for (i=0 ; i<taille ; i++){
     for (j=0 ; j<i+1 ; j++){
-      printf("%3d ", tab[i][j]);
+      printf("% 3d ", tab[i][j]);
     }
     putchar('\n');
   }
