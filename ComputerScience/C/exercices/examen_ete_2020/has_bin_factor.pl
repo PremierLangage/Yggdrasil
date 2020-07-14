@@ -81,7 +81,7 @@ int main(int argc, char* argv[]){
 
   
   print_area((void*)s, argc-1);
-  if (has_factor_1101( *((unsigned long int*)s) ))
+  if (has_factor_1011( *((unsigned long int*)s) ))
     printf("TRUE\n");
   else
     printf("FALSE\n");
