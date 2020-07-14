@@ -66,6 +66,8 @@ code_before==#|c|
 code_after==#|c|
 
 int main(int argc, char* argv[]){
+  int taille = atoi(argv[1]);
+  int** tab = triangle(taille);
 
 
   return 0;
