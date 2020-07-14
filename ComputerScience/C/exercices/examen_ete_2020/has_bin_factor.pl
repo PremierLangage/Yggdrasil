@@ -98,11 +98,11 @@ checks_args_stdin==#|python|
  ["Alternances de bit", ["85", "85", "85", "85", "85", "85", "85", "85"], ""],
  ["Test aléatoire 1", [str(randint(0,255)) for i in range(8)], ""],
  ["Test aléatoire 2", [str(randint(0,255)) for i in range(8)], ""],
- ["Test aléatoire 3", [str(randint(0,12)) for i in range(8)], ""],
- ["Test aléatoire 4", [str(randint(0,255)) for i in range(8)], ""],
- ["Test aléatoire 5", [str(randint(0,255)) for i in range(8)], ""],
- ["Test aléatoire 6", [str(randint(0,255)) for i in range(8)], ""],
- ["Test aléatoire 7", [str(randint(0,255)) for i in range(8)], ""],
+ ["Test aléatoire 3", [str(randint(1,27)) for i in range(8)], ""],
+ ["Test aléatoire 4", [str(randint(1,27)) for i in range(8)], ""],
+ ["Test aléatoire 5", [str(randint(1,27)) for i in range(8)], ""],
+ ["Test aléatoire 6", [str(randint(1,27)) for i in range(8)], ""],
+ ["Test aléatoire 7", [str(randint(1,27)) for i in range(8)], ""],
  ["Test aléatoire 8", [str(randint(0,255)) for i in range(8)], ""]]
 ==
 
