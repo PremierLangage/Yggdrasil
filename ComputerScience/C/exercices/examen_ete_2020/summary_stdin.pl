@@ -46,8 +46,37 @@ int main(...){
 solution==#|c|
 #include <stdio.h>
 
+int is_delim(char c){
+  if ((c == ' ') || (c == '\t') || (c == '\n'))
+    return 1;
+  return 0;
+}
+
+int is_digit(char c){
+  if ((c >= '0') && (c <= '9'))
+    return 1;
+  return 0;
+}
+
 int main(int argc, char* argv[]){
   int nb_c=0, nb_mot=0;
+  char prev_delim = 1;
+  char c;
+
+  while((c = getchar()) != EOF){
+    if (is_delim(c)){
+      prev_delim = 1;
+    }
+    else{
+      if (prev_delim){
+        if (is_digit(c))
+          nb_c += 1;
+        else
+          nb_mot += 1;
+      }
+      prev_delim = 0;
+    }
+  }
 
   printf("nombres: %d\n", nb_c);
   printf("mots: %d\n", nb_mot);
