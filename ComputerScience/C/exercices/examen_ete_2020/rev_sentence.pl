@@ -67,7 +67,16 @@ code_before==#|c|
 ==
 
 code_after==#|c|
-int main
+#include <stdio.h>
+#include <string.h>
+
+int main(int argc, char* argv[]){
+  char s[8000];
+
+  strcpy(s, argv[1]);
+  reverse_words(s);
+  return 0;
+}
 ==
 
 checks_args_stdin==#|python|
