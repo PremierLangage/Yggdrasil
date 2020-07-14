@@ -84,7 +84,7 @@ int main(int argc, char* argv[]){
 checks_args_stdin==#|python|
 [["Exécution simple", ["deux mot"], ""],
  ["Exemple énoncé 1", ["La force tu dois ressentir!"], ""],
- ["Exemple énoncé 2", ["Ça sert vraiment à rien les fonctions imaginées par le prof pour l'examen."], ""],
+ ["Exemple énoncé 2", ["Ca sert vraiment à rien les fonctions imaginées par le prof pour l'examen."], ""],
  ["Exemple énoncé 3", ["Plus il y a de fous, plus on rit!"], ""]]
 ==
 
