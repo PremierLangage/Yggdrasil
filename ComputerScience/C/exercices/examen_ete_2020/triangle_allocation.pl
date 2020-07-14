@@ -77,9 +77,7 @@ int main(int argc, char* argv[]){
   for (i=1 ; i<taille ; i++){
     for (j=1 ; j<i ; j++){
       tab[i][j] = tab[i-1][j] + tab[i-1][j-1];
-      printf("%3d ", tab[i][j]);
     }
-    putchar('\n');
   }
   for (i=0 ; i<taille ; i++){
     for (j=0 ; j<i+1 ; j++){
