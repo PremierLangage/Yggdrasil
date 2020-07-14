@@ -74,6 +74,12 @@ int main(int argc, char* argv[]){
     tab[i][0] = 1;
     tab[i][i] = 1;
   }
+  for (i=0 ; i<n ; i++){
+    for (j=0 ; j<i ; j++){
+      tab[i][j] = tab[i-1][j] + tab[i-1][j-1];
+      printf("%3d ", tab[i][j]);
+    }
+  }
 
   return 0;
 }
