@@ -114,3 +114,25 @@ checks_args_stdin==#|python|
 # }
 # ==
 # tests.test1.grade=100
+
+tests %= {
+    "test1" : {
+        "editor" : {
+            "code" : """
+#include <stdlib.h>
+
+int** triangle(int n){
+  int** tab = (int**)malloc(sizeof(int*) * n);
+  int i;
+
+  for(i=0 ; i<n ; i++){
+    tab[i] = (int*)malloc(sizeof(int) * (i+1));
+  }
+  return tab; 
+}
+            """,
+            "grade" : 100
+        }
+    }
+}
+==
