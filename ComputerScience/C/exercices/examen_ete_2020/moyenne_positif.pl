@@ -32,14 +32,14 @@ flottants toujours).
 ==
 
 checks_args_stdin==#|python|
-[["Example simple", ["1", "2", "3"], ""],
+[["Exemple simple", ["1", "2", "3"], ""],
  ["Tableau vide", [], ""],
  ["Que des négatifs", ["-1", "-1", "-321"], ""],
- ["Mélange de valeurs", ["-1", "3", "1", "-12", "2"], ""],
+ ["Mélange de valeurs non nulles", ["-1", "3", "1", "-12", "2"], ""],
  ["Mélange de valeurs avec des zéros", ["-1", "3", "0", "1", "-12", "2", "0", "-3", "0"], ""],
- ["Test aléatoire", [str(randint(-100,100)) for i in range(randint(5, 10))], ""],
- ["Test aléatoire", [str(randint(-100,100)) for i in range(randint(11, 15))], ""],
- ["Test aléatoire", [str(randint(-100,100)) for i in range(randint(16, 20))], ""] ]
+ ["Test aléatoire 1", [str(randint(-100,100)) for i in range(randint(5, 10))], ""],
+ ["Test aléatoire 2", [str(randint(-100,100)) for i in range(randint(11, 15))], ""],
+ ["Test aléatoire 3", [str(randint(-100,100)) for i in range(randint(16, 20))], ""] ]
 ==
 
 editor.code==#|c|
