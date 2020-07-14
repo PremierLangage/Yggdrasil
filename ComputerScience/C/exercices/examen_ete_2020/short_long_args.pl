@@ -62,7 +62,7 @@ int main(int argc, char* argv[]){
         ind_max=i;
   }
 
-  printf(" plus court argument: %s\nplus long argument: %s\n", argv[ind_min], argv[ind_max]);
+  printf("plus court argument: %s\nplus long argument: %s\n", argv[ind_min], argv[ind_max]);
   return 0;
 }
 ==
