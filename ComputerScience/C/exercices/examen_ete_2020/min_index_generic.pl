@@ -77,6 +77,8 @@ int cmpint(const void *a, const void *b){
 
 int main(int argc, char* argv[]){
   int array[20];
+  char mot[300];
+  char* tab[50];
   int i;
 
   if (strcmp(argv[1], "int") == 0){
@@ -90,6 +92,18 @@ int main(int argc, char* argv[]){
     }
     printf("] --> %d", min_index(array, i, sizeof(int),cmpint));
   }
+  else{
+    i = 0;
+    putchar('[');
+    while(scanf("%s", mot) == 1){
+      tab[i] = strdup(mot);
+      i++;
+      if (i != 1)
+        printf(", ");
+      printf("%s", tab[i-1]);
+    }
+    printf("] --> %d", min_index(tab, i, sizeof(char*), strcmp));
+  }
 
   return 0;
 }
@@ -101,7 +115,7 @@ checks_args_stdin==#|python|
  ["Test aléatoire entier 1", ["int"], " ".join([str(randint(-100, 100)) for i in range(randint(5, 15))])],
  ["Test aléatoire entier 2", ["int"], " ".join([str(randint(-100, 100)) for i in range(randint(5, 15))])],
  ["Test aléatoire entier 3", ["int"], " ".join([str(randint(-100, 100)) for i in range(randint(5, 15))])],
- ["Exécution simple", ["int"], "bbbb ccc tttt aa zzzz ddd eee aa"]]
+ ["Exécution simple", ["char*"], "bbbb ccc tttt aa zzzz ddd eee aa"]]
 ==
 
 
