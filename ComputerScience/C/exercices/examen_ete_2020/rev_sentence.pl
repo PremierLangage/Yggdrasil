@@ -34,6 +34,7 @@ l’ordre inverse. Placée dans un programme, voilà l’effet voulu :
 
 Les mots sont délimités par un unique espace. On ne touche pas aux majuscules 
 et minuscules. La ponctuation, quand elle existe, est portée par le mot 
+auquel elle est accolée.
 ==
 
 editor.code==#|c|
