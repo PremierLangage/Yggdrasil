@@ -45,15 +45,14 @@ solution==#|c|
 int min_index(void *base, size_t nmemb, size_t size, 
                  int (*compar)(const void *, const void *)){
   int ind=0;
-  char* tab = (char*)base;
+  int i;
 
+  char* tab = (char*)base;
   if (nmemb <= 0)
     return -1;
-
   for(i=1 ; i<nmemb ; i++)
     if (compar(tab+(i*size), tab+(ind*size)) < 0)
       ind = i;
-
   return ind;
 }
 
