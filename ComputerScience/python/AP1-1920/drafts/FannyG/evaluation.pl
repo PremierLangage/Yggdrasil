@@ -82,6 +82,7 @@ form==
     {% if comment_by_criteria %}
         <p>Justificatif :</p>
         <input type="text" id="form_commentaire_{{id}}" name="fname">
+        <textarea id="form_commentaire" name="Commentaire" cols=100% rows="5"></textarea>
     {% endif %}
     <br/><br/>
 {% endfor %}
