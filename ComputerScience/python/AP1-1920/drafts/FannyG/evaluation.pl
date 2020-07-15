@@ -127,7 +127,7 @@ if not error:
     if response["commentaire"] == "":
         error = 1
     else:
-        feedback += response['commentaire'] + "."
+        feedback +="commentaire : " + response['commentaire']
 
 # règle de trois pour le calcul de la note de la copie sur 100 (entre 0 et 100)
 if note_student <= 0:
