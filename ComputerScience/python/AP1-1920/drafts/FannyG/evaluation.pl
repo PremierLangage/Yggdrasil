@@ -104,6 +104,7 @@ try:
     feedback = "Réponses : "
     for num in criteria.keys():
         feedback += response[num] + ", "
+        # calcul des points de la copie
         for niv in criteria[num]['levels']:
             if response[num] == niv['description']:
                 note_student += niv['points']
