@@ -104,8 +104,7 @@ try:
 except:
     feedback = "Répondez à toutes les questions"
     note = 0
-    print(ici)
-    grade = (note, feedback)
+    grade = (note, feedback+"ici")
 
 # vérifie que l'élève a répondu à toutes les réponses textarea
 for num in criteria.keys():
