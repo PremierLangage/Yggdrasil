@@ -12,7 +12,7 @@
 # qrevuz : comment faire si un élève ne sélectionne pas tous les champs ?
 # qrevuz : comment calculer les points ? est ce que ça se fait dans cet exo ou alors dans l'atelier, quand on récupère toutes les exos évalués ?
 
-#qrevuz : comment_by_criteria 
+#qrevuz : comment_by_criteria est ce qu'on peut lui donner une valeur par défault
 
 # author=Fanny Garnevault
 
