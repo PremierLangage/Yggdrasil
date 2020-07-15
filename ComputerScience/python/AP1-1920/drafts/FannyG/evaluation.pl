@@ -114,6 +114,9 @@ else:
     feedback += response['commentaire'] + "."
     note = 100
     grade = (note, feedback)
+
+if code_error:
+    
 ==
 
 
