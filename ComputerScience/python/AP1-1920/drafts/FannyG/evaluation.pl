@@ -133,7 +133,7 @@ if not error:
 if note_student <= 0:
     response['note'] = 0
 else:
-
+    
 
 if error:
     grade = (0, "Répondez à toutes les questions")
