@@ -109,10 +109,11 @@ if comment_by_criteria and !error:
             feedback += response["commentaire_"+num] + ", "
 
 # vérifie que l'élève a répondu à la dernière textarea du commentaire général
-if response["commentaire"] == "":
-    error = 1
-else:
-    feedback += response['commentaire'] + "."
+if !error:
+    if response["commentaire"] == "":
+        error = 1
+    else:
+        feedback += response['commentaire'] + "."
 
 if error:
     grade = (0, "Répondez à toutes les questions")
