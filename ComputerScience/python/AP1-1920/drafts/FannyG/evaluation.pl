@@ -104,7 +104,7 @@ note_student = 0
 try:
     feedback = "Réponses : "
     for num in criteria.keys():
-        feedback += "\n" + response[num]
+        feedback += "<br/>" + response[num]
         # calcul des points de la copie
         for niv in criteria[num]['levels']:
             if response[num] == niv['description']:
@@ -120,14 +120,14 @@ if comment_by_criteria != "False" and not error:
             error = 1
             break
         else:
-            feedback += "\njustificatif " +num+ " : " + response["commentaire_"+num]
+            feedback += "<br/>justificatif " +num+ " : " + response["commentaire_"+num]
 
 # vérifie que le correcteur a répondu à la dernière textarea du commentaire général
 if not error:
     if response["commentaire"] == "":
         error = 1
     else:
-        feedback += "\ncommentaire : " + response['commentaire']
+        feedback += "<br/>commentaire : " + response['commentaire']
 
 # règle de trois pour le calcul de la note de la copie sur 100 (entre 0 et 100)
 if note_student <= 0:
