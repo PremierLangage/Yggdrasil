@@ -98,7 +98,7 @@ evaluator==#|python|
 error = 0
 note_student = 0
 
-# vérifie que l'élève a répondu à toutes les réponses radio
+# vérifie que le correcteur a répondu à toutes les réponses radio
 # en même temps on calcule les points de la copie évaluée en fonction des réponses cliquées
 try:
     feedback = "Réponses : "
@@ -112,7 +112,7 @@ try:
 except:
     error = 1
 
-# vérifie que l'élève a répondu à toutes les réponses textarea des radio
+# vérifie que le correcteur a répondu à toutes les réponses textarea des radio
 if comment_by_criteria and not error:
     for num in criteria.keys():
         if response["commentaire_"+num] == "":
@@ -121,7 +121,7 @@ if comment_by_criteria and not error:
         else:
             feedback += response["commentaire_"+num] + ", "
 
-# vérifie que l'élève a répondu à la dernière textarea du commentaire général
+# vérifie que le correcteur a répondu à la dernière textarea du commentaire général
 if not error:
     if response["commentaire"] == "":
         error = 1
