@@ -60,7 +60,7 @@ title = Evaluation question
 
 
 text  ==
-comment_by_criteria
+{{comment_by_criteria}}
 Enoncé de la question :  
 <p style="color: rgb(50, 100, 250);">{{data.question}}<p>
 <br/>
