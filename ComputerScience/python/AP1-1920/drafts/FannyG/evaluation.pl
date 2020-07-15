@@ -5,8 +5,7 @@
 #     -option pour avoir un commentaire par critère : comment_by_criteria, type -> boolean, par défault false
 # -retourne : un dico avec la valeur pour chaque critère et un commentaire.
 
-# qrevuz : comment_by_criteria est ce qu'on peut lui donner une valeur par défault
-#           json sous quelle forme (dict ou str ?)
+# qrevuz : json sous quelle forme (dict ou str ?)
 
 # author=Fanny Garnevault
 
