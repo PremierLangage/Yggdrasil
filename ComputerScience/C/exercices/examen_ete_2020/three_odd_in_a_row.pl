@@ -24,7 +24,9 @@ tag=function|type|array
 
 text==
 Écrire une fonction C <b>three_in_a_row</b> qui prend en argument un tableau d'entiers
-ainsi que la taille de ce tableau. 
+ainsi que la taille de ce tableau. La fonction devra retourner 1 si elle detecte la présence 
+dans le tableau de trois nombres impairs consécutifs. Si aucun tel triplet n'est dans le 
+tableau, votre fonction devra retourner zéro.
 ==
 
 checks_args_stdin==#|python| 
@@ -78,4 +80,5 @@ int main(int argc, char* argv[]){
   return 0;
 }
 ==
+
 
