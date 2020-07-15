@@ -104,16 +104,20 @@ try:
 except:
     feedback = "Répondez à toutes les questions1"
     note = 0
-    grade = (0, feedback)
+    grade = (note, feedback)
 
 # vérifie que l'élève a répondu à toutes les réponses textarea
 for num in criteria.keys():
     if comment_by_criteria and response["commentaire_"+num] == "":
-        grade = (0, "Répondez à toutes les questions2")
+        feedback = "Répondez à toutes les questions2"
+        note = 0
+        grade = (note, feedback)
     else:
         feedback += response["commentaire_"+num] + ", "
 if comment_by_criteria and response["commentaire"] == "":
-    grade = (0, "Répondez à toutes les questions3")
+    feedback = "Répondez à toutes les questions3"
+    note = 0
+    grade = (note, feedback)
 else:
     feedback += response['commentaire'] + "."
 note = 100
