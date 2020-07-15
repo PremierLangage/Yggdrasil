@@ -88,7 +88,7 @@ form==
 
 evaluator==#|python|
 # response est un dict : ex : {1: 'tres_bien', 'commentaire': 't'}
-
+code_error = 0
 # vérifie que l'élève a répondu à toutes les réponses radio
 try:
     feedback = "Réponses : "
