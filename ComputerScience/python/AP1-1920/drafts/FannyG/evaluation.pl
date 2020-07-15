@@ -103,7 +103,8 @@ except:
 if comment_by_criteria:
     for num in criteria.keys():
         if response["commentaire_"+num] == "":
-            error += 1
+            error = 1
+            break
         else:
             feedback += response["commentaire_"+num] + ", "
 
