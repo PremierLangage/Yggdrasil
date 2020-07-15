@@ -110,10 +110,12 @@ except:
 for num in criteria.keys():
     if comment_by_criteria and response["commentaire_"+num] == "":
         grade = (0, "Répondez à toutes les questions")
+        break
     else:
         feedback += response["commentaire_"+num] + ", "
 if comment_by_criteria and response["commentaire"] == "":
     grade = (0, "Répondez à toutes les questions")
+    break
 else:
     feedback += response['commentaire'] + "."
 grade = (100, feedback)
