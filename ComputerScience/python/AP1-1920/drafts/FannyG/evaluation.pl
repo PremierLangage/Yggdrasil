@@ -53,9 +53,6 @@ for crit in criteria.values():
         if note_intermediaire < niv['points']:
             note_intermediaire = niv['points']
     note_max += note_intermediaire
-
-cbc = comment_by_criteria
-tcbc = type(comment_by_criteria)
 ==
 
 
@@ -63,8 +60,6 @@ title = Evaluation question
 
 
 text  ==
-{{cbc}}
-{{tcbc}}
 Enoncé de la question :  
 <p style="color: rgb(50, 100, 250);">{{data.question}}<p>
 <br/>
