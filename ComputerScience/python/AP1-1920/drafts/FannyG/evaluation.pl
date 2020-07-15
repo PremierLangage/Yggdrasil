@@ -88,14 +88,14 @@ form==
 
 evaluator==#|python|
 # response est un dict : ex : {1: 'tres_bien', 'commentaire': 't'}
-code_error = 0
+error = 0
 # vérifie que l'élève a répondu à toutes les réponses radio
 try:
     feedback = "Réponses : "
     for num in criteria.keys():
         feedback += response[num] + ", "
 except:
-    code_error = 1
+    error = 1
 
 # vérifie que l'élève a répondu à toutes les réponses textarea
 if comment_by_criteria:
@@ -115,7 +115,7 @@ else:
     note = 100
     grade = (note, feedback)
 
-if code_error:
+if error:
     grade = (0, "Répondez à toutes les questions")
 else:
     grade = (100, feedback)
