@@ -131,6 +131,8 @@ if not error:
 # règle de trois pour le calcul de la note de la copie sur 100
 if note_student <= 0:
     response['note'] = 0
+else:
+    
 
 if error:
     grade = (0, "Répondez à toutes les questions")
