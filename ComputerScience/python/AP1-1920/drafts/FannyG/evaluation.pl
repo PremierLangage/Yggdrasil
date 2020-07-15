@@ -45,6 +45,9 @@ criteria = {"0": {"description": "Age donné", "levels": [
                         ]
                 }
             }
+
+note_max = 0
+
 ==
 
 
