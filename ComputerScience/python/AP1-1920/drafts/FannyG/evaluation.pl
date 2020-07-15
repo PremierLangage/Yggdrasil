@@ -88,8 +88,7 @@ form==
 
 <br/>
 <p>Explication et commentaire général :</p>
-<textarea id="form_commentaire" name="Commentaire" cols=100% rows="5">
-</textarea>
+<textarea id="form_commentaire" name="Commentaire" cols=100% rows="5"></textarea>
 ==
 
 
