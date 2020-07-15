@@ -15,7 +15,7 @@
 
 
 # balise comment_by_criteria : option pour avoir un commentaire par critère
-comment_by_criteria = False
+comment_by_criteria = Fals
 
 before==#|python|
 #import json
