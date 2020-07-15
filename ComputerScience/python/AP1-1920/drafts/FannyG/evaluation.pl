@@ -95,9 +95,7 @@ try:
     for num in criteria.keys():
         feedback += response[num] + ", "
 except:
-    feedback = "Répondez à toutes les questions1"
-    note = 0
-    grade = (note, feedback)
+    code_error=1
 
 # vérifie que l'élève a répondu à toutes les réponses textarea
 if comment_by_criteria:
