@@ -99,7 +99,8 @@ try:
     feedback = "Réponses : "
     for num in criteria.keys():
         feedback += response[num] + ", "
-        feedback += response['commentaire'+num] + ", "
+        if comment_by_criteria:
+            feedback += response['commentaire'+num] + ", "
     feedback += response['commentaire'] + "."
     note = 100
 except:
