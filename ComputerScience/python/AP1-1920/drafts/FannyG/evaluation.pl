@@ -115,7 +115,7 @@ if comment_by_criteria:
             grade = (note, feedback)
         else:
             feedback += response["commentaire_"+num] + ", "
-if comment_by_criteria and response["commentaire"] == "":
+if response["commentaire"] == "":
     feedback = "Répondez à toutes les questions3"
     note = 0
     grade = (note, feedback)
