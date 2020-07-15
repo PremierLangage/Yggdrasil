@@ -128,6 +128,9 @@ if not error:
     else:
         feedback += response['commentaire'] + "."
 
+# règle de troispour la calcul de la note de la copie sur 100
+
+
 if error:
     grade = (0, "Répondez à toutes les questions")
 else:
