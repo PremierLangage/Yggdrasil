@@ -117,7 +117,7 @@ for num in criteria.keys():
 if comment_by_criteria and response["commentaire_"+num] == "":
 
 feedback += response['commentaire'] + "."
-
+grade = (note, feedback)
 ==
 
 
