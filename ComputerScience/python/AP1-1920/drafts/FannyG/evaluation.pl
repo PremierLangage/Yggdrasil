@@ -109,7 +109,7 @@ if comment_by_criteria:
         else:
             feedback += response["commentaire_"+num] + ", "
 
-# vérifie que l'élève a répondu à la dernière textarea de commentaire général
+# vérifie que l'élève a répondu à la dernière textarea du commentaire général
 if response["commentaire"] == "":
     feedback = "Répondez à toutes les questions3"
     note = 0
