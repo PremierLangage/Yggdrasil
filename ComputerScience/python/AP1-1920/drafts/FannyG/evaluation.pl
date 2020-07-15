@@ -100,7 +100,7 @@ except:
     error = 1
 
 # vérifie que l'élève a répondu à toutes les réponses textarea des radio
-if comment_by_criteria and !error:
+if comment_by_criteria and not error:
     for num in criteria.keys():
         if response["commentaire_"+num] == "":
             error = 1
