@@ -53,6 +53,7 @@ for crit in criteria.values():
         if note_intermediaire < niv['points']:
             note_intermediaire = niv['points']
     note_max += note_intermediaire
+print(comment_by_criteria)
 ==
 
 
