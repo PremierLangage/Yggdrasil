@@ -97,7 +97,6 @@ evaluator==#|python|
 
 error = 0
 note_student = 0
-note_max = 0
 
 # vérifie que l'élève a répondu à toutes les réponses radio
 try:
