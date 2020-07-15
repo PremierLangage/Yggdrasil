@@ -13,7 +13,6 @@
 @ /grader/evaluator.py [grader.py]
 @ /builder/before.py [builder.py]
 
-general_feedback = " Merci pour votre réponse." 
 
 # paramètre comment_by_criteria : option pour avoir un commentaire par critère
 comment_by_criteria = True
