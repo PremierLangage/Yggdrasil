@@ -24,7 +24,8 @@ general_feedback = " Merci pour votre réponse."
 
 before==#|python|
 import json
-#data = json.dumps(data)
+#data = json.loads(data)
+#criteria = json.loads(criteria)
 
 # paramètre comment_by_criteria : option pour avoir un commentaire par critère
 comment_by_criteria = True
@@ -33,7 +34,6 @@ comment_by_criteria = True
 data = {"question": "Quel âge avez-vous ?", "answer": "J'ai 20 ans."}
 
 # paramètre criteria contenant la grille critériée
-criteria = dict()
 criteria = {"0": {"description": "Age donné", "levels": [
                         {"description": "Inférieur à 20 ans", "points": 0}, 
                         {"description": "20 ans", "points": 1},
@@ -106,6 +106,7 @@ except:
     note = 0
 grade = (note, feedback)
 ==
+
 
 
 
