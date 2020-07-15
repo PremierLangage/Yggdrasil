@@ -47,6 +47,9 @@ criteria = {"0": {"description": "Age donné", "levels": [
             }
 
 note_max = 0
+for num in criteria.keys():
+    note_intermediaire = criteria[num]['levels'][0]['points']
+    for niv in criteria[num]['levels']:
 
 ==
 
