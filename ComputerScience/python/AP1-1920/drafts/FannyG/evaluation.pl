@@ -104,6 +104,7 @@ try:
 except:
     feedback = "Répondez à toutes les questions"
     note = 0
+    print(ici)
     grade = (note, feedback)
 
 # vérifie que l'élève a répondu à toutes les réponses textarea
