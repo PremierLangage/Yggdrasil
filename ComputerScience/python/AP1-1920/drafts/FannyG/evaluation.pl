@@ -99,6 +99,7 @@ error = 0
 note_student = 0
 
 # vérifie que l'élève a répondu à toutes les réponses radio
+# en même temps on calcule les points de la copies en fonction des réponses cliquées
 try:
     feedback = "Réponses : "
     for num in criteria.keys():
