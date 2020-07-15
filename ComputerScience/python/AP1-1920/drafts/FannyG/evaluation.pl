@@ -19,7 +19,7 @@ general_feedback = " Merci pour votre réponse."
 comment_by_criteria = True
 
 before==#|python|
-import json
+#import json
 #data = json.loads(data)
 #criteria = json.loads(criteria)
 
