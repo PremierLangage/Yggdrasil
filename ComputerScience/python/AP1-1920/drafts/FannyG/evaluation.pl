@@ -9,8 +9,8 @@
 #     -option pour avoir un commentaire par critère : comment_by_criteria, type -> boolean, par défault false
 # -retourne : un dico avec la valeur pour chaque critère et un commentaire.
 
-# qrevuz : comment faire si un élève ne sélectionne pas tous les champs ?
-# qrevuz : comment calculer les points ? est ce que ça se fait dans cet exo ou alors dans l'atelier, quand on récupère toutes les exos évalués ?
+# qrevuz : comment calculer les points ? est ce que ça se fait dans cet exo ou alors dans l'atelier,
+# quand on récupère toutes les exos évalués ?
 
 #qrevuz : comment_by_criteria est ce qu'on peut lui donner une valeur par défault
 
