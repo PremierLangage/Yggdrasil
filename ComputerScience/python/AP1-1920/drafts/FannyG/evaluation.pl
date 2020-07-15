@@ -58,7 +58,7 @@ title = Evaluation question
 
 
 text  ==
-<b style="color: solid red;">Remplissez tous les champs de l'évaluation</b>
+<b style="color: red;">Remplissez tous les champs de l'évaluation</b>
 <br/><br/>
 Enoncé de la question :  
 <p style="color: rgb(50, 100, 250);">{{data.question}}<p>
