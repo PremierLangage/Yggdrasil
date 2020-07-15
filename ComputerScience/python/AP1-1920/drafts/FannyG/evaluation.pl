@@ -116,7 +116,9 @@ else:
     grade = (note, feedback)
 
 if code_error:
-    
+    grade = (0, "Répondez à toutes les questions")
+else:
+    grade = (100, feedback)
 ==
 
 
