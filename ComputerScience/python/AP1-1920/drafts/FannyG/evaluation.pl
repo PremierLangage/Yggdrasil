@@ -59,6 +59,7 @@ title = Evaluation question
 
 text  ==
 <b>Remplissez tous les champs de l'évaluation</b>
+<br/>
 Enoncé de la question :  
 <p style="color: rgb(50, 100, 250);">{{data.question}}<p>
 <br/>
