@@ -107,7 +107,8 @@ except:
     for num in criteria.keys():
         if comment_by_criteria and response["commentaire_"+num] != "":
             feedback += response["commentaire_"+num] + ", "
-    feedback += response['commentaire'] + "."
+    if comment_by_criteria and response["commentaire_"+num] != "":
+        feedback += response['commentaire'] + "."
     feedback = "Répondez à toutes les questions"
     note = 0
 grade = (note, feedback)
