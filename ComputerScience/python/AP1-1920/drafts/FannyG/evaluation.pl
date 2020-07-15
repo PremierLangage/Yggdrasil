@@ -93,7 +93,7 @@ form==
 
 
 evaluator==#|python|
-# response est un dict : ex : {1: 'tres_bien', 'commentaire': 't'}
+from math import ceil
 
 error = 0
 note_student = 0
@@ -132,7 +132,7 @@ if not error:
 if note_student <= 0:
     response['note'] = 0
 else:
-    
+
 
 if error:
     grade = (0, "Répondez à toutes les questions")
