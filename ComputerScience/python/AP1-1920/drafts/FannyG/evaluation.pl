@@ -1,3 +1,6 @@
+
+# /!\data et criteria à supprimer après les tests
+
 # permet de faire évaluer une réponse (textuelle ou autre) d'un élève par qqun d'autre par le biais d'une grille critériée 
 # -paramètres : 
 #     -data : la réponse de l'élève
@@ -5,8 +8,6 @@
 # -balise :
 #     -comment_by_criteria, type -> boolean, par défault false : option pour avoir un commentaire par critère
 # -retourne : un dico avec la valeur pour chaque critère et un commentaire.
-
-# /!\data et criteria à supprimer après les tests
 
 # author=Fanny Garnevault
 
