@@ -16,9 +16,6 @@
 comment_by_criteria = False
 
 before==#|python|
-#import json
-#data = json.loads(data)
-#criteria = json.loads(criteria)
 
 # paramètre data contenant la question et la réponse de l'élève
 data = {"question": "Quel âge avez-vous ?", "answer": "J'ai 20 ans."}
@@ -141,6 +138,7 @@ else:
     feedback += "<br/>note = "+str(response['note'])
     grade = (100, feedback)
 ==
+
 
 
 
