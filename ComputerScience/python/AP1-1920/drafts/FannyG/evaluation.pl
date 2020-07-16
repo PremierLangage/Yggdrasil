@@ -1,8 +1,9 @@
 # permet de faire évaluer une réponse (textuelle ou autre) d'un élève par qqun d'autre par le biais d'une grille critériée 
 # -paramètres : 
-#     -la réponse de l'élève : balise data
-#     -les critère d'evaluation: balise criteria
-#     -option pour avoir un commentaire par critère : comment_by_criteria, type -> boolean, par défault false
+#     -data : la réponse de l'élève
+#     -criteria : les critère d'evaluation
+# -balise :
+#     -comment_by_criteria, type -> boolean, par défault false : option pour avoir un commentaire par critère
 # -retourne : un dico avec la valeur pour chaque critère et un commentaire.
 
 # author=Fanny Garnevault
