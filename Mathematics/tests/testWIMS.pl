@@ -14,7 +14,6 @@ l = 10 * rd.randint(1 , 10)
 per = 2 * (L + l)
 super = L * l
 
-test = get_numeric_int(m^2)
 ==
 
 text==
@@ -31,6 +30,8 @@ superficie
 ==
 
 evaluator==
+
+test = get_numeric_int(m^2)
 if input0.value == str(per) + " m":
 	score = 100
 else:
