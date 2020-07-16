@@ -6,6 +6,8 @@
 #     -comment_by_criteria, type -> boolean, par défault false : option pour avoir un commentaire par critère
 # -retourne : un dico avec la valeur pour chaque critère et un commentaire.
 
+# /!\data et criteria à supprimer après les tests
+
 # author=Fanny Garnevault
 
 @ /utils/sandboxio.py
@@ -17,7 +19,6 @@
 comment_by_criteria = False
 
 before==#|python|
-
 # paramètre data contenant la question et la réponse de l'élève
 data = {"question": "Quel âge avez-vous ?", "answer": "J'ai 20 ans."}
 
