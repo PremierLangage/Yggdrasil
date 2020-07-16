@@ -1,4 +1,6 @@
-extends = /model/mathinput.pl
+@ /utils/sandboxio.py
+@ /builder/before.py [builder.py]
+@ /grader/evaluator.py [grader.py]
 title = Un pré (units)
 input0=: Input
 input0.type = text
@@ -11,10 +13,12 @@ l = 10 * rd.randint(1 , 10)
 per = 2 * (L + l)
 super = L * l
 
+test = get_numeric_int(m^2)
 ==
 
 text==
 Donner le périmètre et la superficie d'un pré rectangulaire de longueur {{L}} m et de largeur {{l}} m
+{{test}}
 ==
 
 form==
@@ -36,3 +40,4 @@ else:
 	score = 0
 
 ==
+
