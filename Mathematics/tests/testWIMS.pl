@@ -8,6 +8,7 @@ input1=: Input
 input1.type = text
 
 before==
+import random as rd
 L = 10 * rd.randint(1 , 10)
 l = 10 * rd.randint(1 , 10)
 per = 2 * (L + l)
