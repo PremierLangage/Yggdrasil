@@ -7,6 +7,8 @@ input0.type = text
 input1=: Input
 input1.type = text
 
+a = 1
+
 before==
 import random as rd
 L = 10 * rd.randint(1 , 10)
@@ -18,9 +20,9 @@ super = L * l
 
 text==
 Donner le périmètre et la superficie d'un pré rectangulaire de longueur {{L}} m et de largeur {{l}} m
-{{test}}
+{{a}}
 ==
-
+a = 2 
 form==
 périmètre
 {{input0|component}}
@@ -42,4 +44,5 @@ else:
 	score = 0
 
 ==
+
 
