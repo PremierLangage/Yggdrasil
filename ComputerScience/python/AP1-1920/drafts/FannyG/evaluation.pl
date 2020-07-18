@@ -17,7 +17,7 @@
 
 
 # balise comment_by_criteria : option pour avoir un commentaire par critère
-comment_by_criteria = False
+comment_by_criteria = Fals
 
 before==#|python|
 # paramètre data contenant la question et la réponse de l'élève
@@ -141,6 +141,7 @@ else:
     feedback += "<br/>note = "+str(response['note'])
     grade = (100, feedback)
 ==
+
 
 
 
