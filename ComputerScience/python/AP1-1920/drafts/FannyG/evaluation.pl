@@ -17,7 +17,7 @@
 
 
 # balise comment_by_criteria : option pour avoir un commentaire par critère
-comment_by_criteria = Fals
+comment_by_criteria = False
 
 before==#|python|
 # paramètre data contenant la question et la réponse de l'élève
