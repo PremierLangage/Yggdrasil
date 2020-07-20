@@ -16,7 +16,7 @@
 before==#|python|
 
 # paramètre data contenant la question et la réponse de l'élève
-data = {"question": "Quel âge avez-vous ?", "answer1": "J'ai 20 ans.", "answer2": "g 20 ten"}
+#data = {"question": "Quel âge avez-vous ?", "answer1": "J'ai 20 ans.", "answer2": "g 20 ten"}
 
 # paramètre criteria contenant la grille critériée
 criteria = {"0": {"description": "Age donné", "levels": [
@@ -109,6 +109,7 @@ except:
     note = 0
 grade = (note, feedback)
 ==
+
 
 
 
