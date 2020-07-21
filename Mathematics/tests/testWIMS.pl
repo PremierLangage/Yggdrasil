@@ -1,3 +1,6 @@
+extends = /model/mathinput.pl
+
+
 title = Un pré
 author = Sophie Lemaire
 input0=: Input
