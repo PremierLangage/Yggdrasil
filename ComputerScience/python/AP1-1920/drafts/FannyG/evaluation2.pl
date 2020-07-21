@@ -64,18 +64,15 @@ text  ==
 
 form==
 Remplissez tous les champs de l'évaluation  
-
-<!-- -->
+<br/><br/>
 
 Enoncé de la question :  
 {{data.question}}  
-
-<!-- -->
+<br/><br/>
 
 Réponse de l'élève :  
 {{data.answer}}  
-
-<!-- -->
+<br/><br/>
 
 {% for id in criteria.keys() %}
     <span style="padding-left:30px;">
