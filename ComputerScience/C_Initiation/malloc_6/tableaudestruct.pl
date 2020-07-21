@@ -4,7 +4,8 @@ title=Allocation d'un tableau à une dimension
 tag=array|malloc
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
-text==On a définit un type `Etudiant` permettant de mémoriser la fiche dun étudiant.
+text==
+On a définit un type `Etudiant` permettant de mémoriser la fiche dun étudiant.
 Ecrire une fonction `allouetab`qui recoit un entier **size** et renvoie l'adresse d'une zone pouvant contenir 
 **size**  `Etudiant`
 ==
@@ -18,8 +19,8 @@ editor.code==
 
 solution==
 
-Etudiant* allocate_float_array(int size){
-  float* ans = (float *)malloc( size * sizeof(float) );
+Etudiant* allouetab(int size){
+  Etudiant* ans = (Etudiant *)malloc( size * sizeof(Etudiant) );
   return ans;
 }
 
@@ -27,11 +28,11 @@ Etudiant* allocate_float_array(int size){
 
 codebefore==
 typedef struct{
-char * nom;
+char  nom[20];
 int age;
 }Etudiant;
 #include <stdlib.h>
-
+#include <string.h>
 ==
 
 codeafter==
@@ -41,20 +42,21 @@ codeafter==
 
 int main(int argc, char* argv[]){
   int size = atoi(argv[1]);
-  float* ans;
+  Etudiant* ans;
 
   srand(time(NULL));
 
-  ans = allocate_float_array(size);
+  ans = allouetab(size);
   if (ans == NULL){
     printf("Not Enough Memory.\n");
     return 0;
   }
   if (size >= 2){
-    ans[0] = rand();
-    ans[size-1] = rand();
-    printf("Allocation et utilisation : %f (devrait valoir zéro...)\n", ans[size-1] - ans[size-1]);
-  }
+    strcpy(ans[0].nom ,"toto");
+    ans[0].age=19
+    strcpy(ans[size-1].nom ,"titi");
+    ans[size-1].age=91;
+    }
   free(ans);
   return 0;
 }
@@ -71,6 +73,7 @@ tests==
  ["Aléatoire", str(random.randint(1000000000, 2000000000)), ""]]
 
 ==
+
 
 
 
