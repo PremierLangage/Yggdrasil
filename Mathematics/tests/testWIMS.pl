@@ -1,48 +1,29 @@
-@ /utils/sandboxio.py
-@ /builder/before.py [builder.py]
-@ /grader/evaluator.py [grader.py]
-title = Un pré (units)
+title = Un pré
+author = Sophie Lemaire
 input0=: Input
-input0.type = text
-input1=: Input
-input1.type = text
-
-a = 1
+input0.type = number
 
 before==
-import random as rd
 L = 10 * rd.randint(1 , 10)
 l = 10 * rd.randint(1 , 10)
 per = 2 * (L + l)
-super = L * l
 
 ==
 
 text==
-Donner le périmètre et la superficie d'un pré rectangulaire de longueur {{L}} m et de largeur {{l}} m
-{{a}}
+Donner le périmètre d'un pré rectangulaire de longueur $!{{L}}!$ m et de largeur $!{{l}}!$ m.
 ==
-a = 2 
+
 form==
-périmètre
+périmètre (en m)
 {{input0|component}}
-superficie
-{{input1|component}}
 
 ==
 
 evaluator==
-
-test = get_numeric_int(m^2)
-if input0.value == str(per) + " m":
-	score = 100
-else:
-	score = 0
-if input1.value == "super m ^ 2":
-	score = 100
-else:
-	score = 0
+score=0
+if input0.value == per:
+	score += 100
 
 ==
-
 
