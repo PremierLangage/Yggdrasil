@@ -59,10 +59,6 @@ title = Evaluation question
 
 
 text  ==
-==
-
-
-form==
 **Remplissez tous les champs de l'évaluation**<br/>
 <br/><br/>
 
@@ -73,6 +69,11 @@ Enoncé de la question :<br/>
 Réponse de l'élève :<br/>
 {{data.answer}}
 <br/><br/>
+
+==
+
+
+form==
 
 {% for id in criteria.keys() %}
     <span style="padding-left:30px;">
