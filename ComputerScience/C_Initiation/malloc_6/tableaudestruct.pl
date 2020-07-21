@@ -55,7 +55,7 @@ int main(int argc, char* argv[]){
   }
   if (size >= 2){
     strcpy(ans[0].nom ,"toto");
-    ans[0].age=19
+    ans[0].age=19;
     strcpy(ans[size-1].nom ,"titi");
     ans[size-1].age=91;
     }
