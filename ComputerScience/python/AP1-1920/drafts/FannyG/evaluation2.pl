@@ -154,3 +154,54 @@ else:
 
 
 
+#exemple à voir
+
+
+
+extracss==
+<style>
+.exercise__header {
+background: center no-repeat url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/PanoMontBlancHDR_edit_1.jpg/800px-PanoMontBlancHDR_edit_1.jpg");
+background-size: contain;
+}
+</style>
+==
+
+form == 
+{{ inputbox1 |component}}
+{{component|component }}
+{{ inputbox2 |component}}
+==
+
+inputbox1 =: Input
+inputbox1.type = number
+inputbox1.placeholder = Answer
+inputbox1.maxlength = 2
+inputbox1.appearance = outline
+
+inputbox2 =: Input
+inputbox2.type = text
+inputbox2.placeholder = Answer
+inputbox2.maxlength = 100
+inputbox2.appearance = outline
+ 
+
+
+component =: CodeEditor
+
+component.code ==
+import os
+==
+#component.theme = white
+component.language = python
+
+
+evaluator==
+answers['v1']=inputbox1.value
+answers['v2']=inputbox2.value
+answers['v3']=component.code
+
+grade=(100,"Passez à la question suivante. ")
+==
+
+
