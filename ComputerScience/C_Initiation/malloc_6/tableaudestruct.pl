@@ -33,12 +33,14 @@ int age;
 }Etudiant;
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
+#include <stdio.h>
 ==
 
 codeafter==
 
-#include <stdio.h>
-#include <time.h>
+
+
 
 int main(int argc, char* argv[]){
   int size = atoi(argv[1]);
