@@ -63,13 +63,14 @@ text  ==
 
 
 form==
-<b style="color: red;">Remplissez tous les champs de l'évaluation</b>
-<br/><br/>
+Remplissez tous les champs de l'évaluation  
+
 Enoncé de la question :  
-<p style="color: rgb(50, 100, 250);">{{data.question}}<p>
-<br/>
+{{data.question}}  
+
 Réponse de l'élève :  
-<p style="color: rgb(50, 100, 250);">{{data.answer}}<p>
+{{data.answer}}  
+
 
 {% for id in criteria.keys() %}
     <span style="padding-left:30px;">
