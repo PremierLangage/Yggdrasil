@@ -12,11 +12,11 @@ text==
 Ecrire une fonction `affiche `
 qui affiche, sur une ligne, les éléments d'une liste chainée passée en parametre.  
 On utilisera les types:  
-typedef struct cel{
-int val;
-struct cel* suivant;
-}Cellule;
-typedef Cellulle* Liste  
+typedef struct cel{  
+int val;  
+struct cel* suivant;  
+}Cellule;  
+typedef Cellule* Liste  
 
 ==
 
@@ -44,11 +44,18 @@ codebefore==
 
 #include <stdlib.h>
 #include <stdio.h>
+typedef struct cel{  
+int val;  
+struct cel* suivant;  
+}Cellule;  
+typedef Cellule* Liste  ;
 
 ==
 
 codeafter==
  Cellule* alloue_Cellule(int x){
+Liste tmp=NULL;
+
 if((tmp=(Liste)malloc(sizeof(Cellule))!=NULL){
     tmp->val=x;
     tmp->suivant=NULL;
