@@ -49,8 +49,7 @@ text  ==
 
 
 form==
-Pour chaque critère, choisissez la meilleure copie.  
-<br/>
+<p>Pour chaque critère, choisissez la meilleure copie.</p>  
 <div style="text-align:center;">
     <p>Enoncé de la question :</p>
     <p style="color: rgb(50, 100, 250);">{{data.question}}<p>
