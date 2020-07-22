@@ -81,7 +81,7 @@ Réponse de l'élève :
         <input type="radio" id="form_{{id}}" name="f_evaluation{{id}}" value="{{niv.description}}">
         <label for="{{niv.description}}">{{niv.description}}</label><br/>
     {% endfor %}
-    {% if comment_by_criteria != False %}
+    {% if comment_by_criteria != "False" %}
         <p>Justificatif :</p>
         <textarea id="form_commentaire_{{id}}" name="justificatif" cols=30% rows="2"></textarea>
     {% endif %}
@@ -117,7 +117,7 @@ except:
     error = 1
 
 # vérifie que le correcteur a répondu à toutes les réponses textarea des radio
-if comment_by_criteria != False and not error:
+if comment_by_criteria != "False" and not error:
     for num in criteria.keys():
         if response["commentaire_"+num] == "":
             error = 1
