@@ -101,8 +101,8 @@ evaluator==#|python|
 # response est un dict : ex : {"1": 'tres_bien', 'commentaire': 't'}
 try:
     feedback = "Réponses : "
-    for num in criteria.keys():
-        feedback += response[num] + ", "
+    for value in criteria:
+        feedback += response[value[id]] + ", "
     feedback += response['best_copy'] + ", " + response['commentaire'] + "."
     note = 100
 except:
