@@ -118,7 +118,7 @@ except:
     error = 1
 
 # vérifie que le correcteur a répondu à toutes les réponses textarea des radio
-if comment_by_criteria != "False" and not error:
+if comment_by_criteria != False and not error:
     for num in criteria.keys():
         if response["commentaire_"+num] == "":
             error = 1
