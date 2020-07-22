@@ -45,6 +45,10 @@ title = Comparaison de deux copies
 
 
 text  ==
+==
+
+
+form==
 Pour chaque critère, choisissez la meilleure copie.  
 <br/>
 <div style="text-align:center;">
@@ -61,10 +65,7 @@ Pour chaque critère, choisissez la meilleure copie.
     <p style="color: rgb(50, 100, 250);">{{data.answer2}}<p>
 </div>
 <br/><br/>
-==
 
-
-form==
 <div style="clear:both; text-align:center;">
     {% for id in criteria.keys() %}
         <span style="padding-left:30px;">
