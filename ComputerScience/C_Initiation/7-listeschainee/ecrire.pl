@@ -32,7 +32,7 @@ void affiche(Liste lst){
 
 while(lst !=NULL){
     printf("%d ",lst->val);
-    lst=lt->suivant;
+    lst=lst->suivant;
     }
 printf("\n");
 
@@ -56,7 +56,7 @@ codeafter==
  Cellule* alloue_Cellule(int x){
 Liste tmp=NULL;
 
-if((tmp=(Liste)malloc(sizeof(Cellule))!=NULL){
+if((tmp=(Liste)malloc(sizeof(Cellule)))!=NULL){
     tmp->val=x;
     tmp->suivant=NULL;
     }
@@ -64,7 +64,8 @@ return tmp;
 }
 void lire(Liste *lst){
     Liste tmp=NULL;
-    while(scanf("%d",&x)==1)){
+    int x;
+    while(scanf("%d",&x)==1){
         if(*lst==NULL){
             *l=alloue_Cellule(x);
             tmp=*lst;
