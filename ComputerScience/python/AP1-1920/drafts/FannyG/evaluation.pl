@@ -24,7 +24,7 @@ before==#|python|
 #data = {"question": "Quel âge avez-vous ?", "answer": "J'ai 20 ans."}
 
 # paramètre criteria contenant la grille critériée
-criteria = {"0": {"description": "Age donné", "levels": [
+criteria = ["0": {"description": "Age donné", "levels": [
                         {"description": "Inférieur à 20 ans", "points": 0}, 
                         {"description": "20 ans", "points": 1},
                         {"description": "Supérieur à 20 ans", "points": 2}
@@ -42,7 +42,7 @@ criteria = {"0": {"description": "Age donné", "levels": [
                         {"description": "La phrase possède une majuscule et un point.", "points": 2}
                         ]
                 }
-            }
+            ]
 
 note_max = 0
 for crit in criteria.values():
@@ -142,6 +142,7 @@ else:
     feedback += "<br/>note = "+str(response['note'])
     grade = (100, feedback)
 ==
+
 
 
 
