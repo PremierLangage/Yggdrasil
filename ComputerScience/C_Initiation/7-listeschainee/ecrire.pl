@@ -27,7 +27,18 @@ editor.code==
 }
 
 ==
+solution==
+void affiche(Liste lst){
 
+while(lst !=NULL){
+    printf("%d ",lst->val);
+    lst=lt->suivant;
+    }
+printf("\n");
+
+}
+
+==
 
 codebefore==
 
@@ -57,14 +68,7 @@ void lire(Liste *lst){
             }
     }
     }
-void affiche(Liste lst){
 
-while(lst !=NULL){
-    printf("%d ",lst->val);
-    lst=lt->suivant;
-    }
-printf("\n");
-}
 
 int main(void) {
 	Liste l=NULL;
