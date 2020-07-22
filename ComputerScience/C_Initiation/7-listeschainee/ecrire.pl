@@ -65,9 +65,7 @@ while(lst !=NULL){
     }
 printf("\n");
 }
-==
 
-codeafter
 int main(void) {
 	Liste l=NULL;
     lire(&l);
