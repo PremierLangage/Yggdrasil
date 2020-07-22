@@ -36,6 +36,7 @@ codebefore==
 
 ==
 
+codeafter==
  Cellule* alloue_Cellule(int x){
 if((tmp=(Liste)malloc(sizeof(Cellule))!=NULL){
     tmp->val=x;
