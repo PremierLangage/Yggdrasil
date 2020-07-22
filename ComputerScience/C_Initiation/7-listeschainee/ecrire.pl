@@ -37,9 +37,16 @@ codebefore==
 ==
 
 solution==
+void affiche(Liste lst){
+while(lst !=NULL){
+    printf("%d ",lst->val);
+    lst=lst->suivant;
+    }
+printf("\n");
+}
+==
 
-
-
+codeafter
 int main(void) {
 	int n ;
     int somme=0;
