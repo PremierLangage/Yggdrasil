@@ -67,7 +67,7 @@ form==
 <br/><br/>
 
 <div style="clear:both; text-align:center;">
-    {% for i in range(len(criteria)) %}
+    {% for id in range(len(criteria)) %}
         <span style="padding-left:30px;">
                 <b>{{criteria[id].description}}</b>
         </span>
