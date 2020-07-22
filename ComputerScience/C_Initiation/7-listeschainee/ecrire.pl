@@ -36,11 +36,31 @@ codebefore==
 
 ==
 
-solution==
+ Cellule* alloue_Cellule(int x){
+if((tmp=(Liste)malloc(sizeof(Cellule))!=NULL){
+    tmp->val=x;
+    tmp->suivant=NULL;
+    }
+return tmp;
+}
+void lire(Liste *lst){
+    Liste tmp=NULL;
+    while(scanf("%d",&x)==1)){
+        if(*lst==NULL){
+            *l=alloue_Cellule(x);
+            tmp=*lst;
+            }
+        else{
+            tmp->suivant=alloue_Cellule(x);
+            tmp=tmp->suivant;
+            }
+    }
+    }
 void affiche(Liste lst){
+
 while(lst !=NULL){
     printf("%d ",lst->val);
-    lst=lst->suivant;
+    lst=lt->suivant;
     }
 printf("\n");
 }
@@ -48,24 +68,9 @@ printf("\n");
 
 codeafter
 int main(void) {
-	int n ;
-    int somme=0;
-    int nb=0;
-    float moy;
-    printf("Entrer une suite d'entiers positifs:\n");
-    scanf("%d",&n);
-    if(n<0) 
-        printf("Suite vide.\n" );
-    else{
-        while (n>=0){
-             somme+=n;
-             nb+=1;
-             scanf("%d",&n);
-           }
-        moy=somme;
-        moy/=nb;
-	    printf("somme=%d moyenne=%f diviseurs\n",somme,moy);
-        }
+	Liste l=NULL;
+    lire(&l);
+    affiche(l);
 	return 0;
 }
 ==
