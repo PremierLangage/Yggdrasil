@@ -102,7 +102,7 @@ evaluator==#|python|
 try:
     feedback = "Réponses : "
     for value in criteria:
-        feedback += response[value[id]] + ", "
+        feedback += response[value['id']] + ", "
     feedback += response['best_copy'] + ", " + response['commentaire'] + "."
     note = 100
 except:
