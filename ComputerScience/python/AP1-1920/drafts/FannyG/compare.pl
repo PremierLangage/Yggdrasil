@@ -67,9 +67,9 @@ form==
 <br/><br/>
 
 <div style="clear:both; text-align:center;">
-    {% for id in range(len(criteria)) %}
+    {% for value in criteria %}
         <span style="padding-left:30px;">
-                <b>{{criteria["id"].description}}</b>
+                <b>{{value.description}}</b>
         </span>
         <br/>
         <input type="radio" id="form_{{id}}" name="f_evaluation{{id}}" value="A">
