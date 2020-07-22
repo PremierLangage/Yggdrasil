@@ -72,7 +72,7 @@ form==
                 <b>{{value.description}}</b>
         </span>
         <br/>
-        ici{{value.id}}ici
+        ici{{value}}ici
         <input type="radio" id="form_{{value.id}}" name="f_evaluation{{value.id}}" value="A">
         <label for="A">A</label><br/>
         <input type="radio" id="form_{{value.id}}" name="f_evaluation{{value.id}}" value="B">
