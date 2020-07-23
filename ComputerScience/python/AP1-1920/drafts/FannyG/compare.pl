@@ -44,7 +44,8 @@ criteria = [{"id": 0, "description": "Age donné", "levels": [
 title = Comparaison de deux copies
 
 
-text =
+text ==
+==
 
 
 form ==
