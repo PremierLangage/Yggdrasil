@@ -1,8 +1,8 @@
 extends = /model/mathinput.pl
 title = Un pré
 author = Sophie Lemaire
-input =: Input
-input.type = number
+input =: MathInput
+
 
 before ==
 L = 10 * rd.randint(1,10)
@@ -22,8 +22,6 @@ périmètre (en m)
 ==
 
 evaluator ==
-if input.value == per:
-    score = 100
-else:
-    score = 0
+grade = eval_expr(input.value, per)
 ==
+
