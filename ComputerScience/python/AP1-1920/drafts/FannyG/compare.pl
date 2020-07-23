@@ -47,7 +47,7 @@ title = Comparaison de deux copies
 text =
 
 
-form==
+form ==
 <p>Pour chaque critère, choisissez la meilleure copie.</p>  
 <br/>
 <div style="text-align:center;">
