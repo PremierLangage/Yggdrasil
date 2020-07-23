@@ -44,8 +44,7 @@ criteria = [{"id": 0, "description": "Age donné", "levels": [
 title = Comparaison de deux copies
 
 
-text  ==
-==
+text =
 
 
 form==
@@ -110,6 +109,7 @@ except:
     note = 0
 grade = (note, feedback)
 ==
+
 
 
 
