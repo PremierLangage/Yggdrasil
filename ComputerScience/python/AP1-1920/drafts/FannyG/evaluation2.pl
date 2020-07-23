@@ -1,5 +1,4 @@
 
-
 # /!\data et criteria à supprimer après les tests (dans la balise before)
 
 # permet de faire évaluer une réponse (textuelle ou autre) d'un élève par qqun d'autre par le biais d'une grille critériée 
@@ -20,7 +19,9 @@
 # balise comment_by_criteria : option pour avoir un commentaire par critère
 comment_by_criteria = False
 
+
 before==#|python|
+
 # paramètre data contenant la question et la réponse de l'élève
 data = {"question": "Quel âge avez-vous ?", "answer": "J'ai 20 ans."}
 
@@ -203,5 +204,6 @@ answers['v3']=component.code
 
 grade=(100,"Passez à la question suivante. ")
 ==
+
 
 
