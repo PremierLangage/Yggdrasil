@@ -93,7 +93,7 @@ tests==
 [ ["Basique", "", "10 0 -1"],
   ["Vide", "", ""],
   
-  ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20))])]
+  ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20)+10)])]
   ]
 ==
 
