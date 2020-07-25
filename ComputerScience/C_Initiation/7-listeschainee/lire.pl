@@ -17,7 +17,7 @@ typedef struct cel{
 int val;  
 struct cel* suivant;  
 }Cellule;  
-typedef Cellule* Liste  
+typedef Cellule* Liste;  
 
 ==
 
