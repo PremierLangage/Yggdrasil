@@ -31,8 +31,8 @@ Liste extrait(Liste *lst,int x){
   if(*lst!=NULL){
     if((*lst)->val==x){
       tmp=*lst;
-      tmp->suivant=NULL;
       (*lst)=(*lst)->suivant;
+       tmp->suivant=NULL;
     }
     else{
       while(index->suivant!=NULL &&index->suivant->val!=x)
@@ -49,9 +49,8 @@ Liste extrait(Liste *lst,int x){
 ==
 
 solution==
-
 Liste extrait(Liste *lst,int x){
-  Liste tmp=NULL,index;
+  Liste tmp=NULL,index=*lst;
   if(*lst!=NULL){
     if((*lst)->val==x){
       tmp=*lst;
@@ -59,7 +58,6 @@ Liste extrait(Liste *lst,int x){
       tmp->suivant=NULL;
     }
     else{
-    index=*lst;
       while(index->suivant!=NULL &&index->suivant->val!=x)
         index=index->suivant;
       if(index->suivant!=NULL){
@@ -123,7 +121,6 @@ codeafter==
 int main(void) {
 	Liste l=NULL;
     lire(&l);
-    affiche(l);
 extrait(&l,10);
     affiche(l);
 	return 0;
