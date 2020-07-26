@@ -43,7 +43,7 @@ Liste extrait(Liste *lst,int x){
   }
 else{
   
-    while(index-<suivant!=NULL &&index->suivant->val!=x)
+    while(index->suivant!=NULL &&index->suivant->val!=x)
         index=index->suivant;
     if(index->suivant!=NULL){
         tmp=index->suivant;
@@ -52,6 +52,7 @@ else{
     }  
   }                           
   return tmp;
+}
 }
 
 ==
