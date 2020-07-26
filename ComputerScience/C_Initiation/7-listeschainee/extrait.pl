@@ -25,36 +25,50 @@ typedef Cellule* Liste;
 ==
 
 editor.code==
-Liste extrait(...) {
-...
-  /* votre code ici... */
-}
 
-==
-solution==
 Liste extrait(Liste *lst,int x){
-    Liste tmp=NULL,index=*lst;
-  if(lst!=NULL){
-  if((*lst)->val==x){
-    tmp=*lst;
-    tmp->suivant=NULL;
-    (*lst)=(*lst)->suivant;
-    
-  }
-else{
-  
-    while(index->suivant!=NULL &&index->suivant->val!=x)
+  Liste tmp=NULL,index=*lst;
+  if(*lst!=NULL){
+    if((*lst)->val==x){
+      tmp=*lst;
+      tmp->suivant=NULL;
+      (*lst)=(*lst)->suivant;
+    }
+    else{
+      while(index->suivant!=NULL &&index->suivant->val!=x)
         index=index->suivant;
-    if(index->suivant!=NULL){
+      if(index->suivant!=NULL){
         tmp=index->suivant;
         index->suivant=tmp->suivant;
         tmp->suivant=NULL;
-    }  
-  }                           
+      }  
+    }
+  }
   return tmp;
 }
-}
+==
+solution==
 
+Liste extrait(Liste *lst,int x){
+  Liste tmp=NULL,index=*lst;
+  if(*lst!=NULL){
+    if((*lst)->val==x){
+      tmp=*lst;
+      tmp->suivant=NULL;
+      (*lst)=(*lst)->suivant;
+    }
+    else{
+      while(index-<suivant!=NULL &&index->suivant->val!=x)
+        index=index->suivant;
+      if(index->suivant!=NULL){
+        tmp=index->suivant;
+        index->suivant=tmp->suivant;
+        tmp->suivant=NULL;
+      }  
+    }
+  }
+  return tmp;
+}
 ==
 
 codebefore==
@@ -111,7 +125,7 @@ int main(void) {
 
 	Liste l=NULL;
     lire(&l);
-
+extrait(&l,10);
     affiche(l);
 	return 0;
 }
