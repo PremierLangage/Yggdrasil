@@ -55,8 +55,8 @@ Liste extrait(Liste *lst,int x){
   if(*lst!=NULL){
     if((*lst)->val==x){
       tmp=*lst;
-      tmp->suivant=NULL;
       (*lst)=(*lst)->suivant;
+      tmp->suivant=NULL;
     }
     else{
       while(index-<suivant!=NULL &&index->suivant->val!=x)
