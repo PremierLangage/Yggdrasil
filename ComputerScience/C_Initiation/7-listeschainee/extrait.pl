@@ -51,7 +51,7 @@ Liste extrait(Liste *lst,int x){
 solution==
 
 Liste extrait(Liste *lst,int x){
-  Liste tmp=NULL,index=*lst;
+  Liste tmp=NULL,index;
   if(*lst!=NULL){
     if((*lst)->val==x){
       tmp=*lst;
@@ -59,7 +59,8 @@ Liste extrait(Liste *lst,int x){
       tmp->suivant=NULL;
     }
     else{
-      while(index-<suivant!=NULL &&index->suivant->val!=x)
+    index=*lst;
+      while(index->suivant!=NULL &&index->suivant->val!=x)
         index=index->suivant;
       if(index->suivant!=NULL){
         tmp=index->suivant;
@@ -122,6 +123,7 @@ codeafter==
 int main(void) {
 	Liste l=NULL;
     lire(&l);
+    affiche(l);
 extrait(&l,10);
     affiche(l);
 	return 0;
@@ -132,10 +134,11 @@ extrait(&l,10);
 tests==
 [ ["Basique", "", "1 -5 10 0 -1"],
   ["Vide", "", ""],
-  ["tete","","10 22,12"],
+  ["tete","","10 22 12"],
   ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20)+10)])]
   ]
 ==
+
 
 
 
