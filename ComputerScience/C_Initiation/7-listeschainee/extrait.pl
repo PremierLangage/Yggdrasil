@@ -12,7 +12,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==  
 
-Ecrire une fonction `Cellule * extrait(int x)l `, qui extrait, si elle existe, 
+Ecrire une fonction `Cellule * extrait(Liste *liste,int x) `, qui extrait, si elle existe, 
 la cellule contenant x.La fonction renvoie l'adresse de la cellule extraite ou NULL.
 
 On utilisera les types:  
@@ -47,6 +47,7 @@ Liste extrait(Liste *lst,int x){
   return tmp;
 }
 ==
+
 solution==
 
 Liste extrait(Liste *lst,int x){
@@ -81,9 +82,9 @@ int val;
 struct cel* suivant;  
 }Cellule;  
 typedef Cellule* Liste  ;
- Cellule* alloue_Cellule(int x){
-Liste tmp=NULL;
 
+Cellule* alloue_Cellule(int x){
+Liste tmp=NULL;
 if((tmp=(Liste)malloc(sizeof(Cellule)))!=NULL){
     tmp->val=x;
     tmp->suivant=NULL;
@@ -97,19 +98,14 @@ void lire(Liste *lst){
         if(*lst==NULL){
             *lst=alloue_Cellule(x);
             tmp=*lst;
-            }
+        }
         else{
             tmp->suivant=alloue_Cellule(x);
             tmp=tmp->suivant;
-            }
+        }
     }
-   }
+}
 
-
-
-==
-
-codeafter==
 
 void affiche(Liste lst){
 
@@ -118,11 +114,12 @@ while(lst !=NULL){
     lst=lst->suivant;
     }
 printf("\n");
-
 }
 
-int main(void) {
+==
 
+codeafter==
+int main(void) {
 	Liste l=NULL;
     lire(&l);
 extrait(&l,10);
@@ -135,7 +132,7 @@ extrait(&l,10);
 tests==
 [ ["Basique", "", "1 -5 10 0 -1"],
   ["Vide", "", ""],
-  
+  ["tete","","10 22,12"],
   ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20)+10)])]
   ]
 ==
