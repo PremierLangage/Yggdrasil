@@ -24,7 +24,7 @@ typedef Cellule* Liste;
 ==
 
 editor.code==
-int extrait_suivant(...) {
+Cellule* extrait_suivant(...) {
 ...
   /* votre code ici... */
 }
