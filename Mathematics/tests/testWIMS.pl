@@ -8,10 +8,12 @@ before ==
 L = 10 * rd.randint(1,10)
 l = 10 * rd.randint(1,10)
 per = 2 * (L + l)
+expr = sympify("5*x**3")
+test = coeff_exponent(expr, symbols("x"))
 ==
 
 text ==
-Donner **le** périmètre d'un pré rectangulairede longueur {{L}} m et de largeur {{l}} m.
+Donner le périmètre d'un pré rectangulaire {{test}} de longueur {{L}} m et de largeur {{l}} m.
 ==
 
 
