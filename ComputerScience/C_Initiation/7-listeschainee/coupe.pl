@@ -69,6 +69,15 @@ struct cel* suivant;
 }Cellule;  
 typedef Cellule* Liste  ;
 
+void affiche(Liste lst){
+
+while(lst !=NULL){
+    printf("%d ",lst->val);
+    lst=lst->suivant;
+    }
+printf("\n");
+
+}
 ==
 
 codeafter==
@@ -100,7 +109,7 @@ void lire(Liste *lst){
 int main(void) {
 	Liste d=NULL,f=NULL;
     int n;
-    scanf("%d",&n)
+    scanf("%d",&n);
     lire(&d);
     coupe(&d,&f,n);
     affiche(un);
