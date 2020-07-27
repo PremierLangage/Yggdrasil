@@ -8,11 +8,10 @@ before ==
 L = 10 * rd.randint(1,10)
 l = 10 * rd.randint(1,10)
 per = 2 * (L + l)
-test_list = arg_nested_add(5+5+5)
 ==
 
 text ==
-Donner le périmètre d'un pré rectangulaire de longueur {{L}} m et de largeur {{l}} m.
+Donner **le** périmètre d'un pré rectangulairede longueur {{L}} m et de largeur {{l}} m.
 ==
 
 
