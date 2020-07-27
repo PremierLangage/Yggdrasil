@@ -8,6 +8,7 @@ before ==
 L = 10 * rd.randint(1,10)
 l = 10 * rd.randint(1,10)
 per = 2 * (L + l)
+test_list = arg_nested_add(5+5+5)
 ==
 
 text ==
@@ -24,4 +25,5 @@ périmètre (en m)
 evaluator ==
 grade = eval_expr(input.value, per)
 ==
+
 
