@@ -31,6 +31,7 @@ Liste index=*un;
 while (index!=NULL && n>0){
     index=index->suivant;
     n-=1;
+    }
 if(n==0){
     *deux=index->suivant;
     index->suivant=NULL;
@@ -112,8 +113,8 @@ int main(void) {
     scanf("%d",&n);
     lire(&d);
     coupe(&d,&f,n);
-    affiche(un);
-    affiche(deu);
+    affiche(d);
+    affiche(f);
 	return 0;
 }
 ==
