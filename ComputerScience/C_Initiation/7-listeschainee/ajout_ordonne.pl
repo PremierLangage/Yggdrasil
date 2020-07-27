@@ -31,11 +31,13 @@ Liste tmp=NULL, index=*lst;
 if(*lst==NULL){
     *lst=alloue_Cellule(x);
     return;
+    }
 if(x<(*lst)->val){
     tmp=alloue_Cellule(x);
     tmp->suivant=(*lst);
     *lst=tmp;
     return;
+    }
 index=*lst;
 while(index->suivant!=NULL && index->suivant->val<x)
     index=index->suivant;
@@ -51,11 +53,13 @@ Liste tmp=NULL, index=*lst;
 if(*lst==NULL){
     *lst=alloue_Cellule(x);
     return;
+    }
 if(x<(*lst)->val){
     tmp=alloue_Cellule(x);
     tmp->suivant=(*lst);
     *lst=tmp;
     return;
+    }
 index=*lst;
 while(index->suivant!=NULL && index->suivant->val<x)
     index=index->suivant;
@@ -106,7 +110,9 @@ void lire(Liste *lst){
 
 int main(void) {
 	Liste l=NULL;
-    ajout_trie(&l);
+    int x;
+    while(scanf("%d",&x)==1)
+        ajout_trie(&l);
     affiche(l);
 	return 0;
 }
