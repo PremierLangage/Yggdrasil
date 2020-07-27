@@ -13,7 +13,9 @@ text==
 
 Ecrire une fonction `coupe`qui reçoit deux listes et un entier n strictemment positif.
 la deuxième liste est supposé vide.
-elle coupe la première après la $% n^{\mbox{ième}} %$qui renvoie le nombre d'éléments d'une liste chainée passée en parametre.  
+elle coupe la première après la $% n^{\mbox{ième}} %$celle ile et affecte le reste à l deuxième liste. 
+Si n est nul ou plus grand ou égal à le nombre d'éléments de la liste on renvoie 0 et il ne se  passe rien . 
+Sinon on renvoie 1.
 On utilisera le$s types:  
 typedef struct cel{  
 int val;  
@@ -24,20 +26,35 @@ typedef Cellule* Liste
 ==
 
 editor.code==
-....nb_cellules(...) {
-...
-  /* votre code ici... */
+int coupe(Liste *un,Liste *deux, int n){
+Liste index=*un;
+while (index!=NULL && n>0){
+    index=index->suivant;
+    n-=1;
+if(n==0){
+    *deux=index->suivant;
+    index->suivant=NULL;
+    return 1;
+    }    
+else
+return 0;
 }
 
+ 
 ==
 solution==
-int nb_cellules(Liste lst){
-int compte=0;
-while(lst !=NULL){
-    compte+=1;
-    lst=lst->suivant;
-    }
-return compte;
+int coupe(Liste *un,Liste *deux, int n){
+Liste index=*un;
+while (index!=NULL && n>0){
+    index=index->suivant;
+    n-=1;
+if(n==0){
+    *deux=index->suivant;
+    index->suivant=NULL;
+    return 1;
+    }    
+else
+return 0;
 }
 
 ==
@@ -81,21 +98,23 @@ void lire(Liste *lst){
 
 
 int main(void) {
-	Liste l=NULL;
-    int lg;
-    lire(&l);
-    lg=nb_cellules(l);
-    printf("la liste contient %d element%s\n",lg,lg<2?"":"s");
+	Liste d=NULL,f=NULL;
+    int n;
+    scanf("%d",&n)
+    lire(&d);
+    coupe(&d,&f,n);
+    affiche(un);
+    affiche(deu);
 	return 0;
 }
 ==
 
 
 tests==
-[ ["Basique", "", "10 0 -1"],
+[ ["Basique", "", "2 10 0 -1"],
   ["Vide", "", ""],
   
-  ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20))])+" -1"]
+  ["Aléatoire", "", " ".join([str(random.randint(1,100)) for i in range(random.randint(5,20))])+" -1"]
   ]
 ==
 
