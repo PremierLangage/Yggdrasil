@@ -84,9 +84,18 @@ Liste tmp=NULL;
 
 if((tmp=(Liste)malloc(sizeof(Cellule)))!=NULL){
     tmp->val=x;
-    tmp->suivant=NULL;
+    
     }
 return tmp;
+}
+
+void affiche(Liste lst){
+
+while(lst !=NULL){
+    printf("%d ",lst->val);
+    lst=lst->suivant;
+    }
+printf("\n");
 }
 ==
 
@@ -112,7 +121,7 @@ int main(void) {
 	Liste l=NULL;
     int x;
     while(scanf("%d",&x)==1)
-        ajout_trie(&l);
+        ajout_trie(&l,x);
     affiche(l);
 	return 0;
 }
