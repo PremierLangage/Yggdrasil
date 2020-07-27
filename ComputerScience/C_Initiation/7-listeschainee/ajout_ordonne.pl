@@ -25,9 +25,23 @@ ainsi que la fonction `alloue_Cellule` précedemment écrite.
 ==
 
 editor.code==
-....ajout_trie(...) {
-...
-  /* votre code ici... */
+
+void ajout_trie(Liste *lst,int x){
+Liste tmp=NULL, index=*lst;
+if(*lst==NULL){
+    *lst=alloue_Cellule(x);
+    return;
+if(x<(*lst)->val){
+    tmp=alloue_Cellule(x);
+    tmp->suivant=(*lst);
+    *lst=tmp;
+    return;
+index=*lst;
+while(index->suivant!=NULL && index->suivant->val<x)
+    index=index->suivant;
+tmp=alloue_Cellule(x);
+tmp->suivant=index->suivant;
+index->suivant=tmp;
 }
 
 ==
@@ -44,7 +58,11 @@ if(x<(*lst)->val){
     return;
 index=*lst;
 while(index->suivant!=NULL && index->suivant->val<x)
-    index=index->suivant
+    index=index->suivant;
+tmp=alloue_Cellule(x);
+tmp->suivant=index->suivant;
+index->suivant=tmp;
+}
 ==
 
 codebefore==
@@ -57,10 +75,7 @@ struct cel* suivant;
 }Cellule;  
 typedef Cellule* Liste  ;
 
-==
-
-codeafter==
- Cellule* alloue_Cellule(int x){
+Cellule* alloue_Cellule(int x){
 Liste tmp=NULL;
 
 if((tmp=(Liste)malloc(sizeof(Cellule)))!=NULL){
@@ -69,6 +84,10 @@ if((tmp=(Liste)malloc(sizeof(Cellule)))!=NULL){
     }
 return tmp;
 }
+==
+
+codeafter==
+ 
 void lire(Liste *lst){
     Liste tmp=NULL;
     int x;
@@ -87,7 +106,7 @@ void lire(Liste *lst){
 
 int main(void) {
 	Liste l=NULL;
-    lire(&l);
+    ajout_trie(&l);
     affiche(l);
 	return 0;
 }
@@ -101,6 +120,7 @@ tests==
   ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20))])+" -1"]
   ]
 ==
+
 
 
 
