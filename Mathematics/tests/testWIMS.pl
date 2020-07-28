@@ -8,8 +8,9 @@ before ==
 L = 10 * rd.randint(1,10)
 l = 10 * rd.randint(1,10)
 per = 2 * (L + l)
-expr = sympify("5*x**3")
-test = coeff_exponent(expr, symbols("x"))
+x = sp.Symbol('x')
+P = sp.sympify("x + x**2 + 3*x", evaluate=False)
+test = is_poly_expanded(P, x)
 ==
 
 text ==
@@ -26,5 +27,6 @@ périmètre (en m)
 evaluator ==
 grade = eval_expr(input.value, per)
 ==
+
 
 
