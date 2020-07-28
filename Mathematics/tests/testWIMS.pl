@@ -10,7 +10,7 @@ l = 10 * rd.randint(1,10)
 per = 2 * (L + l)
 x = sp.Symbol('x')
 P = sp.sympify("x + x**2 + 3*x", evaluate=False)
-test = is_poly_expanded(P, x)
+test = is_poly_ratsimp(P, x)
 ==
 
 text ==
