@@ -17,6 +17,7 @@ et remplit le tableau `ecrit` avec l'écriture ascii de `n`
 si n=94 ecrit contient "94"  
 ==
 
+
 editor.code==
 
 void uint2char(unsigned int n,char ecrit[]) { 
