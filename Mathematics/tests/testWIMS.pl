@@ -1,32 +1,26 @@
 extends = /model/mathinput.pl
 title = Un pré
 author = Sophie Lemaire
-input =: MathInput
+input0=: MathInput
 
-
-before ==
-L = 10 * rd.randint(1,10)
-l = 10 * rd.randint(1,10)
+before==
+L = 10 * rd.randint(1 , 10)
+l = 10 * rd.randint(1 , 10)
 per = 2 * (L + l)
-x = sp.Symbol('x')
-P = sp.sympify("x + x**2 + 3*x", evaluate=False)
-test = is_poly_ratsimp(P, x)
+
 ==
 
-text ==
-Donner le périmètre d'un pré rectangulaire {{test}} de longueur {{L}} m et de largeur {{l}} m.
+text==
+Donner le périmètre d'un pré rectangulaire de longueur $!{{L}}!$ m et de largeur $!{{l}}!$ m.
 ==
 
-
-
-form ==
+form==
 périmètre (en m)
-{{input|component}}
+{{input0|component}}
+
 ==
 
-evaluator ==
-grade = eval_expr(input.value, per)
+evaluator==
+
+score, _, feedback = eval_expr(input0.value, per)
 ==
-
-
-
