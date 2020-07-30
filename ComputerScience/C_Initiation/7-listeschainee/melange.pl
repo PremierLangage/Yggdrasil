@@ -11,10 +11,11 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==  
 
-Ecrire une fonction `coupe`qui reçoit deux listes et un entier n .
+Ecrire une fonction `void melange(Liste* un,Liste* deux,int n)`qui reçoit deux listes et un entier n .
 Elle mélange les deux listes en alternants un élément de l'une et un élément de l'autre.  
 Si l'entier n vaut 0 le premier élément provient  la  première liste,
 Si l'entier n vaut 1 le premier élément provient  la  deuxième liste.  
+Après le mélange la première liste contient tous les éléments et la deuxième est vide.
 S'il reste des éléments dans une seule des listes, is sont ajoutés sans changement.   
 Exemple  
 l1=(3,5,7)  
@@ -31,41 +32,65 @@ typedef Cellule* Liste
 ==
 
 editor.code==
-int coupe(Liste *un,Liste *deux, int n){
-Liste index=*un;
-n-=1;
-while (index!=NULL && n>0){
-    index=index->suivant;
-    n-=1;
-    }
-if(n==0){
-    *deux=index->suivant;
-    index->suivant=NULL;
-    return 1;
-    }    
-else
-return 0;
-}
 
+void melange(Liste* un,Liste* deux,int n){
+  Liste tmp,precedent;
+  if(*un ==NULL) {
+    *un=*deux;
+    *deux=NULL;
+    return;
+
+  }if(*deux==NULL){
+      return;
+    }
+  if(n==1) {
+      tmp=*un;
+      *un=*deux;
+      *deux=tmp;
+  }
+    precedent=*un;
+    while(precedent->suivant !=NULL && *deux!=NULL){
+      tmp=precedent->suivant;
+      precedent->suivant=*deux;
+      precedent=precedent->suivant;;
+      *deux=tmp;
+    }
+    if(*deux!=NULL){
+      precedent->suivant=*deux;
+    *deux=  NULL;
+    }
+}
  
 ==
 solution==
-int coupe(Liste *un,Liste *deux, int n){
-Liste index=*un;
-n-=1;
-while (index!=NULL && n>0){
-    index=index->suivant;
-    n-=1;
-    }
-if(n==0){
-    *deux=index->suivant;
-    index->suivant=NULL;
-    return 1;
-    }    
-else
-return 0;
-}
 
+void melange(Liste* un,Liste* deux,int n){
+  Liste tmp,precedent;
+  if(*un ==NULL) {
+    *un=*deux;
+    *deux=NULL;
+    return;
+
+  }if(*deux==NULL){
+      return;
+    }
+  if(n==1) {
+      tmp=*un;
+      *un=*deux;
+      *deux=tmp;
+  }
+    precedent=*un;
+    while(precedent->suivant !=NULL && *deux!=NULL){
+      tmp=precedent->suivant;
+      precedent->suivant=*deux;
+      precedent=precedent->suivant;;
+      *deux=tmp;
+    }
+    if(*deux!=NULL){
+      precedent->suivant=*deux;
+    *deux=  NULL;
+    }
+}
  
 
 ==
@@ -86,7 +111,22 @@ while(lst !=NULL){
     lst=lst->suivant;
     }
 printf("\n");
+} int coupe(Liste *un,Liste *deux, int n){
+Liste index=*un;
+n-=1;
+while (index!=NULL && n>0){
+    index=index->suivant;
+    n-=1;
+    }
+if(n==0){
+    *deux=index->suivant;
+    index->suivant=NULL;
+    return 1;
+    }    
+else
+return 0;
 }
+
 ==
 
 codeafter==
@@ -121,6 +161,7 @@ int main(void) {
     scanf("%d",&n);
     lire(&d);
     coupe(&d,&f,n);
+     melange(&d,&f,n);
     printf("d");
     affiche(d);
     printf("f");
@@ -131,10 +172,10 @@ int main(void) {
 
 
 tests==
-[ ["Basique", "", "2 10 0 -1"],
-  ["Vide", "", ""],
+[ ["Basique", "", "0 2 10 0 -1 -2"],
+  ["Vide", "", "1 4 1 2 3"],
   
-  ["Aléatoire", "", str(random.randint(5,8))+" "+" ".join([str(random.randint(1,100)) for i in range(random.randint(8,20))])+" -1"]
+  ["Aléatoire", "", str(random.randint(0,1))+" "+str(random.randint(5,8))+" "+" ".join([str(random.randint(1,100)) for i in range(random.randint(8,20))])]
   ]
 ==
 
