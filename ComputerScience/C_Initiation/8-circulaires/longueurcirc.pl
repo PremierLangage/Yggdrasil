@@ -51,23 +51,23 @@ codebefore==
 typedef struct cel{  
 int val;  
 struct cel* suivant;  
-}Cellule;  
-typedef Cellule* Liste  ;
+}CelluleC;  
+typedef CelluleC* ListeC  ;
 
 ==
 
 codeafter==
- Cellule* alloue_Cellule(int x){
-Liste tmp=NULL;
+ CelluleC* alloue_Cellule(int x){
+ListeC tmp=NULL;
 
-if((tmp=(Liste)malloc(sizeof(Cellule)))!=NULL){
+if((tmp=(ListeC)malloc(sizeof(CelluleC)))!=NULL){
     tmp->val=x;
-    tmp->suivant=NULL;
+    tmp->suivant=tmp;
     }
 return tmp;
 }
-void lire(Liste *lst){
-    Liste tmp=NULL;
+void lire(ListeC *lst){
+    ListeC tmp=NULL;
     int x;
     while(scanf("%d",&x)==1){
         if(*lst==NULL){
@@ -79,11 +79,12 @@ void lire(Liste *lst){
             tmp=tmp->suivant;
             }
     }
+    tmp->suivant=*lst;
     }
 
 
 int main(void) {
-	Liste l=NULL;
+	ListeC l=NULL;
     int lg;
     lire(&l);
     lg=nb_cellules(l);
