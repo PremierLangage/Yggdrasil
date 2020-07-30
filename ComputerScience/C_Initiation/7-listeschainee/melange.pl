@@ -60,7 +60,7 @@ void melange(Liste* un,Liste* deux,int n){
     *deux=  NULL;
     }
 }
- 
+
 ==
 solution==
 
@@ -111,13 +111,17 @@ while(lst !=NULL){
     lst=lst->suivant;
     }
 printf("\n");
-} int coupe(Liste *un,Liste *deux, int n){
+} 
+
+int coupe(Liste *un,Liste *deux, int n){
 Liste index=*un;
 n-=1;
 while (index!=NULL && n>0){
     index=index->suivant;
     n-=1;
     }
+ if(index==NULL)
+   return 0;
 if(n==0){
     *deux=index->suivant;
     index->suivant=NULL;
@@ -157,10 +161,11 @@ void lire(Liste *lst){
 
 int main(void) {
 	Liste d=NULL,f=NULL;
-    int n;
+    int n,ld;
     scanf("%d",&n);
+    scanf(%d",&ld);
     lire(&d);
-    coupe(&d,&f,n);
+    coupe(&d,&f,ld);
      melange(&d,&f,n);
     printf("d");
     affiche(d);
@@ -178,6 +183,7 @@ tests==
   ["Aléatoire", "", str(random.randint(0,1))+" "+str(random.randint(5,8))+" "+" ".join([str(random.randint(1,100)) for i in range(random.randint(8,20))])]
   ]
 ==
+
 
 
 
