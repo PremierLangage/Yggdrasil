@@ -7,7 +7,7 @@
 title= mélange de deux listes
 tag=shuffle
 extends=/ComputerScience/C/template/stdsandboxC.pl
-
+author=  
 
 text==  
 
@@ -163,13 +163,13 @@ int main(void) {
 	Liste d=NULL,f=NULL;
     int n,ld;
     scanf("%d",&n);
-    scanf(%d",&ld);
+    scanf("%d",&ld);
     lire(&d);
     coupe(&d,&f,ld);
      melange(&d,&f,n);
-    printf("d");
+    printf("d: ");
     affiche(d);
-    printf("f");
+    printf("f: ");
     affiche(f);
 	return 0;
 }
