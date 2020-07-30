@@ -79,6 +79,7 @@ void lire(ListeC *lst){
             tmp=tmp->suivant;
             }
     }
+    if(tmp!=NULL)
     tmp->suivant=*lst;
     }
 
@@ -87,7 +88,7 @@ int main(void) {
 	ListeC l=NULL;
     int lg;
     lire(&l);
-    lg=nb_cellules(l);
+    lg=nb_cellules_circ(l);
     printf("la liste contient %d element%s\n",lg,lg<2?"":"s");
 	return 0;
 }
