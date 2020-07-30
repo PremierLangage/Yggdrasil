@@ -13,8 +13,8 @@ text==
 
 Ecrire une fonction `coupe`qui reçoit deux listes et un entier n strictemment positif.
 la deuxième liste est supposé vide.
-elle coupe la première après la $% n^{\mbox{ième}} %$celle ile et affecte le reste à l deuxième liste. 
-Si n est nul ou plus grand ou égal à le nombre d'éléments de la liste on renvoie 0 et il ne se  passe rien . 
+elle coupe la première après la $% n^{\mbox{ième}} %$cellule et affecte le reste à l deuxième liste. 
+Si n est nul ou plus grand ou égal au nombre d'éléments de la liste on renvoie 0 et il ne se  passe rien . 
 Sinon on renvoie 1.
 On utilisera le$s types:  
 typedef struct cel{  
@@ -28,6 +28,7 @@ typedef Cellule* Liste
 editor.code==
 int coupe(Liste *un,Liste *deux, int n){
 Liste index=*un;
+n-=1;
 while (index!=NULL && n>0){
     index=index->suivant;
     n-=1;
@@ -46,9 +47,11 @@ return 0;
 solution==
 int coupe(Liste *un,Liste *deux, int n){
 Liste index=*un;
+n-=1;
 while (index!=NULL && n>0){
     index=index->suivant;
     n-=1;
+    }
 if(n==0){
     *deux=index->suivant;
     index->suivant=NULL;
@@ -57,6 +60,8 @@ if(n==0){
 else
 return 0;
 }
+
+ 
 
 ==
 
@@ -71,13 +76,11 @@ struct cel* suivant;
 typedef Cellule* Liste  ;
 
 void affiche(Liste lst){
-
 while(lst !=NULL){
     printf("%d ",lst->val);
     lst=lst->suivant;
     }
 printf("\n");
-
 }
 ==
 
@@ -113,7 +116,9 @@ int main(void) {
     scanf("%d",&n);
     lire(&d);
     coupe(&d,&f,n);
+    printf("d");
     affiche(d);
+    printf("f");
     affiche(f);
 	return 0;
 }
@@ -124,9 +129,10 @@ tests==
 [ ["Basique", "", "2 10 0 -1"],
   ["Vide", "", ""],
   
-  ["Aléatoire", "", " ".join([str(random.randint(1,100)) for i in range(random.randint(5,20))])+" -1"]
+  ["Aléatoire", "", str(random.randint(5,8))+" "+" ".join([str(random.randint(1,100)) for i in range(random.randint(8,20))])+" -1"]
   ]
 ==
+
 
 
 
