@@ -37,7 +37,7 @@ if(lst!=NULL)
 do{
     compte+=1;
     lst=lst->suivant;
-}while(lst !=debut){
+}while(lst !=debut);
     
 return compte;
 }
