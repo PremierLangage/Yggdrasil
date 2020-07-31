@@ -292,7 +292,7 @@ if compil_state != 'error':
 feedback += '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Tests :</u> ' + str(grade_checks) + '%</b> (cliquer sur les tests pour afficher/réduire leurs détails)</p>'
 feedback += feedback_checks
 
-grade_attempt = 20 + (400 // (4+nb_attempt))
+grade_attempt = 50 + (200 // (3+nb_attempt))
 
 feedback += '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Efficacité :</u> ' + str(grade_attempt) + '%</b></p>'
 
@@ -318,4 +318,5 @@ grade=((grade_compil * grade_checks * grade_attempt) // 10000, feedback)
 # tests.test1.editor.code = 'int carre(int p){ return p*p; }'
 # tests.test1.editor.code = solution
 # tests.test1.grade = 100
+
 
