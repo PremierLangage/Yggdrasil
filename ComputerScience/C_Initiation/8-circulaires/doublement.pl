@@ -7,7 +7,7 @@
 
 title= liste doublement chainée circulaire
 tag= liste vide
-
+author=  
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 
@@ -26,16 +26,14 @@ typedef DCellule* DListe;
 
 editor.code==
 int est_vide(DListe lst) {
-if (lst==NULL)
-return 0
+
 return lst==lst->suivant;
 }
 ==
 
 solution==
 int est_vide(DListe lst) {
-if (lst==NULL)
-return 0
+
 return lst==lst->suivant;
 }
 ==
@@ -47,7 +45,7 @@ codebefore==
 
 typedef struct dcel{  
 int val;  
-struct dcel* suivant;  
+struct dcel* suivant,*precedant;  
 }DCellule;  
 typedef DCellule* DListe  ;
 
@@ -77,8 +75,11 @@ codeafter==
 int main(void) {
 	DListe l=NULL;
     l=alloue_DCellule(0);
-     lire(&l);
-printf("%d\n",est-vide(l));
+     lire(l);
+     if(est_vide(l)==1)
+printf("la liste est vide\n");
+  else
+printf("la liste n'est pas vide\n");
   
 	return 0;
 }
