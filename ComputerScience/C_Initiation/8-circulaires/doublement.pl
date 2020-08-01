@@ -5,8 +5,8 @@
 
 
 
-title=extrait dans liste
-tag=extrait liste simplement chainée
+title= liste doublement chainée circulaire
+tag= liste vide
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
@@ -134,6 +134,7 @@ tests==
   ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20)+10)])]
   ]
 ==
+
 
 
 
