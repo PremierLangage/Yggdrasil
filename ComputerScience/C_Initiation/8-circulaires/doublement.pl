@@ -13,60 +13,30 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==  
 On utilise une liste doublement chainée circulaire avec une cellule sans donnée (cellule 'morte' en début de liste,  
-Une telle liste est considére vide si elle est réduite à cette cellule si Ecrire une fonction `int est_vide(DListe lst) `, qui renvoie 1 si la DListe est vide,0 sinon.
+Une telle liste est considére vide si elle est réduite à cette cellule.  
+ Ecrire une fonction `int est_vide(DListe lst) `, qui renvoie 1 si la DListe est vide,0 sinon.
 On utilisera les types:  
-typedef struct cel{  
+typedef struct dcel{  
 int val;  
-struct cel* suivant;  
-}Cellule;  
-typedef Cellule* Liste;  
+struct cel* suivant,*precedant;  
+}DCellule;  
+typedef DCellule* DListe;  
 
 ==
 
 editor.code==
-
-Liste extrait(Liste *lst,int x){
-  Liste tmp=NULL,index=*lst;
-  if(*lst!=NULL){
-    if((*lst)->val==x){
-      tmp=*lst;
-      (*lst)=(*lst)->suivant;
-       tmp->suivant=NULL;
-    }
-    else{
-      while(index->suivant!=NULL &&index->suivant->val!=x)
-        index=index->suivant;
-      if(index->suivant!=NULL){
-        tmp=index->suivant;
-        index->suivant=tmp->suivant;
-        tmp->suivant=NULL;
-      }  
-    }
-  }
-  return tmp;
+int est_vide(DListe lst) {
+if (lst==NULL)
+return 0
+return lst==lst->suivant;
 }
 ==
 
 solution==
-Liste extrait(Liste *lst,int x){
-  Liste tmp=NULL,index=*lst;
-  if(*lst!=NULL){
-    if((*lst)->val==x){
-      tmp=*lst;
-      (*lst)=(*lst)->suivant;
-      tmp->suivant=NULL;
-    }
-    else{
-      while(index->suivant!=NULL &&index->suivant->val!=x)
-        index=index->suivant;
-      if(index->suivant!=NULL){
-        tmp=index->suivant;
-        index->suivant=tmp->suivant;
-        tmp->suivant=NULL;
-      }  
-    }
-  }
-  return tmp;
+int est_vide(DListe lst) {
+if (lst==NULL)
+return 0
+return lst==lst->suivant;
 }
 ==
 
@@ -75,53 +45,41 @@ codebefore==
 #include <stdlib.h>
 #include <stdio.h>
 
-typedef struct cel{  
+typedef struct dcel{  
 int val;  
-struct cel* suivant;  
-}Cellule;  
-typedef Cellule* Liste  ;
+struct dcel* suivant;  
+}DCellule;  
+typedef DCellule* DListe  ;
 
-Cellule* alloue_Cellule(int x){
-Liste tmp=NULL;
-if((tmp=(Liste)malloc(sizeof(Cellule)))!=NULL){
+DCellule* alloue_DCellule(int x){
+DListe tmp=NULL;
+if((tmp=(DListe)malloc(sizeof(DCellule)))!=NULL){
     tmp->val=x;
-    tmp->suivant=NULL;
+    tmp->suivant=tmp->precedant=tmp;
     }
 return tmp;
 }
-void lire(Liste *lst){
-    Liste tmp=NULL;
+void lire(DListe lst){
+    DListe tmp=NULL;
     int x;
-    while(scanf("%d",&x)==1){
-        if(*lst==NULL){
-            *lst=alloue_Cellule(x);
-            tmp=*lst;
-        }
-        else{
-            tmp->suivant=alloue_Cellule(x);
-            tmp=tmp->suivant;
-        }
+    while(scanf("%d",&x)==1){  
+        tmp=alloue_DCellule(x);
+        tmp->suivant=lst->suivant;
+        tmp->suivant->precedant=tmp;
+        tmp->precedant=lst;
+        lst->suivant=tmp;
     }
-}
-
-
-void affiche(Liste lst){
-
-while(lst !=NULL){
-    printf("%d ",lst->val);
-    lst=lst->suivant;
-    }
-printf("\n");
 }
 
 ==
 
 codeafter==
 int main(void) {
-	Liste l=NULL;
-    lire(&l);
-extrait(&l,10);
-    affiche(l);
+	DListe l=NULL;
+    l=alloue_DCellule(0);
+     lire(&l);
+printf("%d\n",est-vide(l));
+  
 	return 0;
 }
 ==
