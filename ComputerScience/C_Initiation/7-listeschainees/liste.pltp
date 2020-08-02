@@ -1,4 +1,5 @@
 title=Exercices sur l'utilisation de listes
+introduction==
 Des listes simplement chainées...
 
 ==
@@ -12,4 +13,5 @@ Des listes simplement chainées...
 @ /ComputerScience/C_Initiation/7-listeschainees/melande.pl
 
 @ /ComputerScience/C_Initiation/7-listeschainees/ajout_ordonne.pl
+
 
