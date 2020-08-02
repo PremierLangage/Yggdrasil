@@ -26,27 +26,29 @@ typedef DCellule* DListe;
 
 editor.code==
 int nb_elements(DListe lst){
-int n=0;
-if (est_vide(lst))
+  DListe tete=lst;
+  int n=0;
+  if (est_vide(lst))
     return 0;
-while (lst->suivant!=lst){
+  while (lst->suivant!=tete){
     n+=1;
     lst=lst->suivant;
-    }
-return n;
+  }
+  return n;
 }
 ==
 
 solution==
 int nb_elements(DListe lst){
-int n=0;
-if (est_vide(lst))
+  DListe tete=lst;
+  int n=0;
+  if (est_vide(lst))
     return 0;
-while (lst->suivant!=lst){
+  while (lst->suivant!=tete){
     n+=1;
     lst=lst->suivant;
-    }
-return n;
+  }
+  return n;
 }
 ==
 
@@ -70,8 +72,7 @@ if((tmp=(DListe)malloc(sizeof(DCellule)))!=NULL){
 return tmp;
 }
 int est_vide(DListe lst) {
-if (lst==NULL)
-return 0;
+
 return lst==lst->suivant;
 }
 void lire(DListe lst){
@@ -93,13 +94,14 @@ int main(void) {
 	DListe l=NULL;
     int n;
     l=alloue_DCellule(0);
-     lire(l);
-     if(est_vide(l)==1)
-printf("la liste est vide\n");
-  else
-printf("la liste %d element%s\n",nb_elements(l),n>1?"s":"");
-  
-	return 0;
+    lire(l);
+    if(est_vide(l)==1)
+        printf("la liste est vide\n");
+    else{
+        n=nb_elements(l);
+        printf("la liste %d element%s\n",n,n>1?"s":"");
+    }  
+return 0;
 }
 ==
 
@@ -111,6 +113,7 @@ tests==
   ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20)+10)])]
   ]
 ==
+
 
 
 
