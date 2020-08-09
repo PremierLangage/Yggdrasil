@@ -101,18 +101,18 @@ printf("\n");
 }
 
 int main(void) {
-int preced,nb,i;
+int preced=0,nb=0,i;
 scanf("%d",&preced);
 Liste l=NULL,d;
  nb=lire(&l);
     d=l;
 if(preced< nb-1){
     for(i=0;i<preced;i+=1)
-        d=d_>suivant;
-    extrait_suivant(l,d->suivant);
+        d=d->suivant;
+    extrait_suivant(l,d->val);
     }
 
-else:
+else
     extrait_suivant(l,preced);
 affiche(l);
 return 0;
@@ -124,7 +124,7 @@ tests==
 [ ["Basique", "", "2 10 0 -2 5"],
   ["Vide", "", ""],
   
-  ["Aléatoire", "",str(random.randint(3,10)) +" ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20)+10)])]
+  ["Aléatoire", "",str(random.randint(3,10))+" " +" ".join([str(random.randint(0,100)) for i in range(random.randint(5,20)+10)])]
   ]
 ==
 
