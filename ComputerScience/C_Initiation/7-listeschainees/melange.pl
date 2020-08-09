@@ -34,31 +34,7 @@ typedef Cellule* Liste
 editor.code==
 
 void melange(Liste* un,Liste* deux,int n){
-  Liste tmp,precedent;
-  if(*un ==NULL) {
-    *un=*deux;
-    *deux=NULL;
-    return;
-
-  }if(*deux==NULL){
-      return;
-    }
-  if(n==1) {
-      tmp=*un;
-      *un=*deux;
-      *deux=tmp;
-  }
-    precedent=*un;
-    while(precedent->suivant !=NULL && *deux!=NULL){
-      tmp=precedent->suivant;
-      precedent->suivant=*deux;
-      precedent=precedent->suivant;;
-      *deux=tmp;
-    }
-    if(*deux!=NULL){
-      precedent->suivant=*deux;
-    *deux=  NULL;
-    }
+  ...
 }
 
 ==
@@ -184,6 +160,7 @@ tests==
   ["Aléatoire", "", str(random.randint(0,1))+" "+str(random.randint(5,8))+" "+" ".join([str(random.randint(1,100)) for i in range(random.randint(8,20))])]
   ]
 ==
+
 
 
 
