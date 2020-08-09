@@ -81,12 +81,11 @@ int lire(Liste *lst){
             tmp->suivant=alloue_Cellule(x);
             tmp=tmp->suivant;
             }
-    }
-    nb+=1;
+         nb+=1;
    }
 
-return nb
-
+return nb;
+}
 ==
 
 codeafter==
@@ -106,7 +105,7 @@ int preced,nb;
 scanf("%d",&preced);
 	Liste l=NULL;
  nb=lire(&l);
-    if )(preced< nb-1:
+    if(preced< nb-1:
         extrait_suivant(l,l[preced]);
     else:
            extrait_suivant(l,preced);
