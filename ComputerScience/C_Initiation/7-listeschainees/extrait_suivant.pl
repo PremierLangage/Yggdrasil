@@ -11,12 +11,12 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==  
 
-Ecrire une fonction `Cellule * extrait_suivant(int precede)l `, qui extrait, si elle existe la cellule situé après 
-celle contenant precede.La fonction renvoie l'adresse de la cellule extraite ou NULL.
+Ecrire une fonction `Cellule * extrait_suivant(Liste l,int precede)`, qui extrait, si elle existe la cellule situé après 
+celle contenant `precede` .La fonction renvoie l'adresse de la cellule extraite ou NULL.
 
 On utilisera les types:  
 typedef struct cel{  
-int val;  
+int val; 
 struct cel* suivant;  
 }Cellule;  
 typedef Cellule* Liste;  
@@ -57,7 +57,8 @@ int val;
 struct cel* suivant;  
 }Cellule;  
 typedef Cellule* Liste  ;
- Cellule* alloue_Cellule(int x){
+
+Cellule* alloue_Cellule(int x){
 Liste tmp=NULL;
 
 if((tmp=(Liste)malloc(sizeof(Cellule)))!=NULL){
@@ -66,9 +67,11 @@ if((tmp=(Liste)malloc(sizeof(Cellule)))!=NULL){
     }
 return tmp;
 }
-void lire(Liste *lst){
+
+int lire(Liste *lst){
     Liste tmp=NULL;
     int x;
+    int nb=0;
     while(scanf("%d",&x)==1){
         if(*lst==NULL){
             *lst=alloue_Cellule(x);
@@ -79,9 +82,10 @@ void lire(Liste *lst){
             tmp=tmp->suivant;
             }
     }
+    nb+=1;
    }
 
-
+return nb
 
 ==
 
@@ -98,10 +102,14 @@ printf("\n");
 }
 
 int main(void) {
-
+int preced,nb;
+scanf("%d",&preced);
 	Liste l=NULL;
-    lire(&l);
-
+ nb=lire(&l);
+    if )(preced< nb-1:
+        extrait_suivant(l,l[preced]);
+    else:
+           extrait_suivant(l,preced);
     affiche(l);
 	return 0;
 }
@@ -109,10 +117,10 @@ int main(void) {
 
 
 tests==
-[ ["Basique", "", "10 0 -1"],
+[ ["Basique", "", "2 10 0 -2 5"],
   ["Vide", "", ""],
   
-  ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20)+10)])]
+  ["Aléatoire", "",str(random.randint(3,10)) +" ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20)+10)])]
   ]
 ==
 
