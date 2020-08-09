@@ -27,19 +27,7 @@ typedef Cellule* Liste
 
 editor.code==
 int coupe(Liste *un,Liste *deux, int n){
-Liste index=*un;
-n-=1;
-while (index!=NULL && n>0){
-    index=index->suivant;
-    n-=1;
-    }
-if(n==0){
-    *deux=index->suivant;
-    index->suivant=NULL;
-    return 1;
-    }    
-else
-return 0;
+...
 }
 
  
@@ -132,6 +120,7 @@ tests==
   ["Aléatoire", "", str(random.randint(5,8))+" "+" ".join([str(random.randint(1,100)) for i in range(random.randint(8,20))])+" -1"]
   ]
 ==
+
 
 
 
