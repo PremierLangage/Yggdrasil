@@ -106,7 +106,7 @@ scanf("%d",&preced);
 Liste l=NULL;
  nb=lire(&l);
     
-if(preced< nb-1):
+if(preced< nb-1)
     extrait_suivant(l,l[preced]);
 else:
     extrait_suivant(l,preced);
