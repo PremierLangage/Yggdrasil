@@ -167,6 +167,7 @@ int main(void) {
     lire(&d);
     coupe(&d,&f,ld);
      melange(&d,&f,n);
+     printf("premire %d,coupe %d\n",n,ld);
     printf("d: ");
     affiche(d);
     printf("f: ");
@@ -177,7 +178,7 @@ int main(void) {
 
 
 tests==
-[ ["Basique", "", "0 2 10 0 -1 -2"],
+[ ["Basique", "", "0 2 10 6 -1 -2 -3"],
   ["Vide", "", "1 4 1 2 3"],
   
   ["Aléatoire", "", str(random.randint(0,1))+" "+str(random.randint(5,8))+" "+" ".join([str(random.randint(1,100)) for i in range(random.randint(8,20))])]
