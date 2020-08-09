@@ -8,15 +8,15 @@ tag=extrait liste simplement chainée
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
-
+author= 
 text==  
 
-Ecrire une fonction `Cellule * extrait_suivant(Liste l,int precede)`, qui extrait, si elle existe la cellule situé après 
+Ecrire une fonction `Cellule * extrait_suivant(Liste l,int precede)`, qui extrait, si elle existe la cellule située après 
 celle contenant `precede` .La fonction renvoie l'adresse de la cellule extraite ou NULL.
 
 On utilisera les types:  
 typedef struct cel{  
-int val; 
+int val;   
 struct cel* suivant;  
 }Cellule;  
 typedef Cellule* Liste;  
