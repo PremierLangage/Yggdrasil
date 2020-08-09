@@ -101,13 +101,17 @@ printf("\n");
 }
 
 int main(void) {
-int preced,nb;
+int preced,nb,i;
 scanf("%d",&preced);
-Liste l=NULL;
+Liste l=NULL,d;
  nb=lire(&l);
-    
-if(preced< nb-1)
-    extrait_suivant(l,l[preced]);
+    d=l;
+if(preced< nb-1){
+    for(i=0;i<preced;i+=1)
+        d=d_>suivant;
+    extrait_suivant(l,d->suivant);
+    }
+
 else:
     extrait_suivant(l,preced);
 affiche(l);
