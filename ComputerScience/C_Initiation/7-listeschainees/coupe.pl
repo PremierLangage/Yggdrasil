@@ -11,11 +11,11 @@ author=
 
 text==  
 
-Ecrire une fonction `coupe`qui reçoit deux listes et un entier n strictemment positif.
-la deuxième liste est supposé vide.
-elle coupe la première après la $% n^{\mbox{ième}} %$cellule et affecte le reste à l deuxième liste. 
+Ecrire une fonction `coupe` qui reçoit deux listes et un entier n strictemment positif;
+la deuxième liste est supposé vide.  
+Elle coupe la première après la $% n^{\mbox{ième}} %$cellule et affecte le reste à l deuxième liste. 
 Si n est nul ou plus grand ou égal au nombre d'éléments de la liste on renvoie 0 et il ne se  passe rien . 
-Sinon on renvoie 1.
+Sinon on renvoie 1.  
 On utilisera les types:  
 typedef struct cel{  
 int val;  
@@ -116,9 +116,9 @@ int main(void) {
     scanf("%d",&n);
     lire(&d);
     coupe(&d,&f,n);
-    printf("d");
+    printf("d: ");
     affiche(d);
-    printf("f");
+    printf("f: ");
     affiche(f);
 	return 0;
 }
@@ -126,7 +126,7 @@ int main(void) {
 
 
 tests==
-[ ["Basique", "", "2 10 0 -1"],
+[ ["Basique", "", "2 10 20 -1 -4"],
   ["Vide", "", ""],
   
   ["Aléatoire", "", str(random.randint(5,8))+" "+" ".join([str(random.randint(1,100)) for i in range(random.randint(8,20))])+" -1"]
