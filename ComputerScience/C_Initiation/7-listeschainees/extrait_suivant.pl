@@ -103,14 +103,15 @@ printf("\n");
 int main(void) {
 int preced,nb;
 scanf("%d",&preced);
-	Liste l=NULL;
+Liste l=NULL;
  nb=lire(&l);
-    if(preced< nb-1):
-        extrait_suivant(l,l[preced]);
-    else:
-           extrait_suivant(l,preced);
-    affiche(l);
-	return 0;
+    
+if(preced< nb-1):
+    extrait_suivant(l,l[preced]);
+else:
+    extrait_suivant(l,preced);
+affiche(l);
+return 0;
 }
 ==
 
