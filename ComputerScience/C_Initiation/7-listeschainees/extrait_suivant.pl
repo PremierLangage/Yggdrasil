@@ -11,7 +11,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==  
 
-Ecrire une fonction `Cellule * extraitsuivant(int precede)l `, qui extrait, si elle existe la cellule situé après 
+Ecrire une fonction `Cellule * extrait_suivant(int precede)l `, qui extrait, si elle existe la cellule situé après 
 celle contenant precede.La fonction renvoie l'adresse de la cellule extraite ou NULL.
 
 On utilisera les types:  
