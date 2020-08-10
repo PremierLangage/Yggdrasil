@@ -1,0 +1,11 @@
+
+title=Exercices sur l'utilisation de listes circulaires
+introduction==
+Des listes simplement et doublement chainées...
+
+==
+@ /ComputerScience/C_Initiation/8-circulaires/nbéléments.pl
+@ /ComputerScience/C_Initiation/8-circulaires/longueurcirc.pl
+@ /ComputerScience/C_Initiation/8-circulaires/fileaout;pl
+@ /ComputerScience/C_Initiation/8-circulaires/fileextrait.pl
+@ /ComputerScience/C_Initiation/8-circulaires/circulaires.pl
