@@ -44,7 +44,7 @@ fonction *printf* doit suffire.
 
 ==
 
-editor.code==#|C|
+editor.code==#|c|
 #include <stdio.h>
 
 int main(int argc, char* argv[]){
@@ -53,12 +53,12 @@ int main(int argc, char* argv[]){
 ==
 
 solution==#|c|
-int bin_parity(int n){
-  if (n == 0)
-    return 1;
-  if ((n%2))
-    return 1 - bin_parity(((unsigned int)n) >> 1);
-  return bin_parity(((unsigned int)n) >> 1);
+#include <stdio.h>
+
+int main(int argc, char* argv[]){
+  printf("Hello World!\n");
+
+  return 0;
 }
 ==
 
