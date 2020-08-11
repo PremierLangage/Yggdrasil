@@ -71,6 +71,7 @@ code_after==
 ==
 
 checks_args_stdin==#|python|
-[ ["simple éxécution", "",""] ]
+[ ["simple éxécution", [],""],
+  ["simple éxécution", [],""] ]
 ==
 
