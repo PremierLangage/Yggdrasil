@@ -288,7 +288,7 @@ if compil_state != 'error':
             feedback_checks += make_hide_block_on_click("details_check"+str(nb_good+nb_bad), test_c[0], stdin_explain + term_tot, "")
             feedback_checks += '</div>'
 
-    grade_checks = (100 // (2**nb_bad))
+    grade_checks = min([(nb_good*100) // (nb_good+nb_bab)) , (100 // (2**nb_bad))])
 feedback += '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Tests :</u> ' + str(grade_checks) + '%</b> (cliquer sur les tests pour afficher/réduire leurs détails)</p>'
 feedback += feedback_checks
 
@@ -318,5 +318,6 @@ grade=((grade_compil * grade_checks * grade_attempt) // 10000, feedback)
 # tests.test1.editor.code = 'int carre(int p){ return p*p; }'
 # tests.test1.editor.code = solution
 # tests.test1.grade = 100
+
 
 
