@@ -1,20 +1,32 @@
-# Copyright 2016 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2016 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Hello world en C
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
 #
-# Exercice simple pour tester PL avec le langage C.
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
 
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
-name=Premier programme en C
 title=Premier programme en C
-tag=program
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=programme|simple|printf
 
 text==
 
-Faites votre premier programme C, ce programme devra écrire 
-*Hello World!* sur la sortie standard et retourner à la ligne. 
+Faites votre premier programme C, ce programme devra écrire
+
+**Hello World!**
+
+sur la sortie standard et retourner à la ligne. 
 Le retour à la ligne est encodé par le caractère '\n' en C.
 Pour faire de l'affichage, on utilise la fonction *printf*
 dont l'existance est déclaré dans les headers de la 
@@ -32,7 +44,7 @@ fonction *printf* doit suffire.
 
 ==
 
-editor.code==
+editor.code==#|C|
 #include <stdio.h>
 
 int main(int argc, char* argv[]){
@@ -40,9 +52,20 @@ int main(int argc, char* argv[]){
 }
 ==
 
-tests==
+solution==#|c|
+int bin_parity(int n){
+  if (n == 0)
+    return 1;
+  if ((n%2))
+    return 1 - bin_parity(((unsigned int)n) >> 1);
+  return bin_parity(((unsigned int)n) >> 1);
+}
+==
+
+checks_args_stdin==#|python|
 [ ["simple éxécution", "","", "Hello World!\n"] ]
 ==
+
 
 
 
