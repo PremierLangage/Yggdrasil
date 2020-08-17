@@ -1,20 +1,10 @@
-extends = /model/math.pl
-
-input =: MathInput
-
-form==
-{{input|component}}
-==
-
+extends = /model/mathinput.pl
 
 title = Opérations sur les ensembles
 
-lang = fr
+input.virtualKeyboards = sets
 
 before ==
-keyboards_JSON['virtualKeyboards']="sets"
-input.config = keyboards_JSON
-
 A=rand_finiteset(randint(3,7),list(range(10)))
 B=rand_finiteset(randint(3,7),list(range(10)))
 C=rand_finiteset(randint(3,7),list(range(10)))
@@ -79,6 +69,7 @@ score,_,feedback=ans_struct_expr(input1.value,sol,"set")
 solution ==
 La solution est $! { {{sol_tex}} } !$.
 ==
+
 
 
 
