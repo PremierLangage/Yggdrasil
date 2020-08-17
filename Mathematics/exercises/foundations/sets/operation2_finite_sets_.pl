@@ -63,7 +63,7 @@ Déterminer $! {{expr}} !$.
 ==
 
 evaluator ==
-score,_,feedback=ans_struct_expr(input1.value,sol,"set")
+score,_,feedback = eval_set (input.value, sol)
 ==
 
 solution ==
