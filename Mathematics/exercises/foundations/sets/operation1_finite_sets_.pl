@@ -46,12 +46,14 @@ Déterminer $! {{expr}} !$.
 ==
 
 evaluator ==
-score,_,feedback=eval_set(input.value,sol)
+score,error,_=eval_set(input.value,sol)
+feedback = feedback_message[error]
 ==
 
 solution ==
 La solution est $! { {{sol_tex}} } !$.
 ==
+
 
 
 
