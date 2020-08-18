@@ -15,9 +15,9 @@ var('a,b,c,d,e,f,g,h,i,j')
 items = [a,b,c,d,e,f,g,h,i,j]
 items = list(range(10))
 
-A = rand_finiteset(randint(3,7), items)
-B = rand_finiteset(randint(3,7), items)
-CC=rand_finiteset(randint(3,7), items)
+A = rand_finiteset(randint(3, 7), items)
+B = rand_finiteset(randint(3, 7), items)
+CC = rand_finiteset(randint(3, 7), items)
 
 case = randitem(param['cases'])
 sol =[]
