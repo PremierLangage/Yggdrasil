@@ -1,5 +1,7 @@
 from sympy import *
-del C
+# Delete SymPy objects which create conflicts
+# Actually, it would be better to make specific imports...
+del C 
 import random as rd
 from randsympy import *
 from evalsympy import *
