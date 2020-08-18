@@ -19,7 +19,6 @@ B = rand_finiteset(randint(3,7), items)
 CC=rand_finiteset(randint(3,7), items)
 
 case = randitem(param['cases'])
-case = 0
 sol =[]
 
 if case == 1:
