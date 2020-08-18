@@ -71,7 +71,7 @@ sol=list(sol)
 
 text == 
 On considère les ensembles suivants :
-$$ A= \\{ {{latex(A)}} \\},\ B= \\{ {{B_tex}} \\},\ C= \\{ {{C_tex}} \\}.$$
+$$ A= \\{ {{ A|latex }} \\},\ B= \\{ {{B_tex}} \\},\ C= \\{ {{C_tex}} \\}.$$
 Déterminer $! {{expr}} !$.
 ==
 
