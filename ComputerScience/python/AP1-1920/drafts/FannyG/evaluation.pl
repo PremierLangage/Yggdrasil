@@ -94,6 +94,7 @@ Réponse de l'élève :
 <textarea id="form_commentaire" name="Commentaire" cols=100% rows="5"></textarea>
 ==
 
+#https://documentationpl.readthedocs.io/fr/latest/radio/
 
 
 evaluator==#|python|
