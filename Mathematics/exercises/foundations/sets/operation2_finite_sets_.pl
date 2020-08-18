@@ -63,6 +63,7 @@ text ==
 On considère les ensembles suivants :
 $$ A= \\{ {{ A|latex }} \\},\ B= \\{ {{ B|latex }} \\},\ C= \\{ {{ C|latex }} \\}.$$
 Déterminer $! {{expr}} !$.
+{{sol}}
 ==
 
 evaluator ==
