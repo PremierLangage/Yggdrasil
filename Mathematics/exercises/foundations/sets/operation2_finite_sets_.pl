@@ -1,3 +1,7 @@
+# Author : D. Doyen
+# Tags : sets, finite sets, 
+# 
+
 extends = /model/mathinput.pl
 
 title = Opérations sur les ensembles
@@ -5,14 +9,16 @@ title = Opérations sur les ensembles
 input.virtualKeyboards = sets
 
 before ==
-A=rand_finiteset(randint(3,7),list(range(10)))
-B=rand_finiteset(randint(3,7),list(range(10)))
+A = rand_finiteset(randint(3,7),list(range(10)))
+B = rand_finiteset(randint(3,7),list(range(10)))
 CC=rand_finiteset(randint(3,7),list(range(10)))
-case=randitem(eval(param['cases']))
-if case==1:
+
+case = randitem(param['cases'])
+
+if case == "(AcapB)cupC":
     expr=r"(A \cap B) \cup CC"
     sol=Union(Intersection(A,B),CC)
-elif case==2:
+elif case == "(AcupB)capC":
     expr=r"(A \cup B) \cap CC"
     sol=Intersection(Union(A,B),CC)
 elif case==3:
