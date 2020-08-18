@@ -8,7 +8,7 @@ title = Opérations sur les ensembles
 
 input.virtualKeyboards = sets
 
-param
+param.cases = [1, 2, 3, 4]
 
 before ==
 items = list(range(10))
