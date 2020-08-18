@@ -63,11 +63,10 @@ text ==
 On considère les ensembles suivants :
 $$ A= \\{ {{ A|latex }} \\},\ B= \\{ {{ B|latex }} \\},\ C= \\{ {{ C|latex }} \\}.$$
 Déterminer $! {{expr}} !$.
-{{sol}}
 ==
 
 evaluator ==
-score, error,_ = eval_set(input.value, list(sol))
+score, error,_ = eval_set(input.value, sol)
 feedback = feedback_message[error]
 ==
 
