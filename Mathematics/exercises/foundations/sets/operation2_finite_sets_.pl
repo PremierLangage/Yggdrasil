@@ -8,6 +8,8 @@ title = Opérations sur les ensembles
 
 input.virtualKeyboards = sets
 
+param
+
 before ==
 items = list(range(10))
 var('a b c d e f g h i j')
@@ -18,13 +20,13 @@ CC=rand_finiteset(randint(3,7), items)
 
 case = randitem(param['cases'])
 
-if case == "(AcapB)cupC":
+if case == 1:
     expr = r"(A \cap B) \cup CC"
     sol = Union(Intersection(A, B), CC)
-elif case == "(AcupB)capC":
+elif case == 2:
     expr=r"(A \cup B) \cap CC"
     sol = Intersection(Union(A, B), CC)
-elif case == :
+elif case == 3:
     expr=r"A \cap (B \cup CC)"
     sol=Intersection(Union(B,CC),A)
 elif case==4:
