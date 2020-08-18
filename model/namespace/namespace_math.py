@@ -1,5 +1,5 @@
 from sympy import *
-# Delete SymPy objects which create conflicts
+# Delete SymPy objects which create name conflicts
 # Actually, it would be better to make specific imports...
 del C 
 import random as rd
