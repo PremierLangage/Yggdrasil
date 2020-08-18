@@ -60,13 +60,6 @@ elif case==11:
 elif case==12:
     expr=r"A \setminus (B \cap C)"
     sol=Intersection(B,C).complement(A)
-
-
-A_tex=latex(A)
-B_tex=latex(B)
-C_tex=latex(C)
-sol_tex=latex(sol)
-sol=list(sol)
 ==
 
 text == 
@@ -81,5 +74,5 @@ feedback = feedback_message[error]
 ==
 
 solution ==
-La solution est $! { {{sol_tex}} } !$.
+La solution est $! { {{sol|latextex}} } !$.
 ==
