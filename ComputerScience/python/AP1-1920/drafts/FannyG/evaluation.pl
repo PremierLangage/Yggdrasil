@@ -9,7 +9,7 @@
 #     -comment_by_criteria, type -> string, par défault false : option pour avoir un commentaire par critère
 # -retourne : un dico avec la valeur pour chaque critère et un commentaire.
 
-# author=Fanny Garnevault
+author=Fanny Garnevault
 
 @ /utils/sandboxio.py
 @ /grader/evaluator.py [grader.py]
