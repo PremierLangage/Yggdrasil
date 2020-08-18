@@ -11,9 +11,10 @@ input.virtualKeyboards = sets
 param.cases % [1, 2, 3, 4]
 
 before ==
-items = list(range(10))
 var('a,b,c,d,e,f,g,h,i,j')
 items = [a,b,c,d,e,f,g,h,i,j]
+items = list(range(10))
+
 A = rand_finiteset(randint(3,7), items)
 B = rand_finiteset(randint(3,7), items)
 CC=rand_finiteset(randint(3,7), items)
