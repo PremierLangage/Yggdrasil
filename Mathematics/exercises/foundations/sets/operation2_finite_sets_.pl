@@ -9,19 +9,22 @@ title = Opérations sur les ensembles
 input.virtualKeyboards = sets
 
 before ==
-A = rand_finiteset(randint(3,7),list(range(10)))
-B = rand_finiteset(randint(3,7),list(range(10)))
-CC=rand_finiteset(randint(3,7),list(range(10)))
+items = list(range(10))
+var('a b c d e f g h i j')
+items = [a,b,c,d,e,f,g,h,i,j]
+A = rand_finiteset(randint(3,7), items)
+B = rand_finiteset(randint(3,7), items)
+CC=rand_finiteset(randint(3,7), items)
 
 case = randitem(param['cases'])
 
 if case == "(AcapB)cupC":
-    expr=r"(A \cap B) \cup CC"
-    sol=Union(Intersection(A,B),CC)
+    expr = r"(A \cap B) \cup CC"
+    sol = Union(Intersection(A, B), CC)
 elif case == "(AcupB)capC":
     expr=r"(A \cup B) \cap CC"
-    sol=Intersection(Union(A,B),CC)
-elif case==3:
+    sol = Intersection(Union(A, B), CC)
+elif case == :
     expr=r"A \cap (B \cup CC)"
     sol=Intersection(Union(B,CC),A)
 elif case==4:
