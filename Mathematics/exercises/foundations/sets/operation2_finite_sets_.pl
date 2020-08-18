@@ -68,7 +68,7 @@ Déterminer $! {{expr}} !$.
 ==
 
 evaluator ==
-score, error,_ = eval_set(input.value, sol)
+score, error,_ = eval_set(input.value, list(sol))
 feedback = feedback_message[error]
 ==
 
