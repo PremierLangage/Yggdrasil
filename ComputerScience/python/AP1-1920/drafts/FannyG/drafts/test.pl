@@ -40,7 +40,7 @@ for Id in criteria.keys() :
     radio.append(tmp)
 ==
 tmp =: RadioGroup
-
+mycomponent2 = {"cid": "myid2", "selector": "c-radio-group"}
 
 evaluator == #|python|
 feedback = ""
