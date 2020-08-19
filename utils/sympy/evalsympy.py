@@ -561,13 +561,13 @@ def eval_frac(strans, sol, simpwarning=True):
     Evaluate an answer when the solution is a fraction.
     """
     try:
-        ans = latex2sympy(strans, local_dict)
+        ans = latex2sympy(strans)
     except:
-        return (-1, "NotFrac0")
+        return (-1, "NotFrac")
     if not isinstance(ans, sp.Expr):
-        return (-1, "NotFrac1")
+        return (-1, "NotFrac")
     if not is_frac_int(ans):
-        return (-1, "NotFrac2")
+        return (-1, "NotFrac")
     if not equal(ans, sol):
         return (0, "NotEqual")
     if not is_frac_irred(ans):
