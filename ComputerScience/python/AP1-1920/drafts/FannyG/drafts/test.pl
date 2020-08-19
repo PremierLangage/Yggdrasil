@@ -15,7 +15,12 @@ radio.items = [{"id": "1", "content": "ok"},{"id": "2", "content": "ol"},{"id": 
 
 
 evaluator == #|python|
-grade = (100, for i in radio.items : if radio.items[i]["id"] == radio.selection)
+feedback = ""
+for i in radio.items : 
+    if radio.items[i]["id"] == radio.selection :
+        feedback = radio.items[i]["content"]
+        break
+grade = (100, feedback)
 ==
 
 
