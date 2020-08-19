@@ -30,7 +30,7 @@ feedback = feedback_message[error]
 ==
 
 solution==
-La solution est $% \displaystyle {{sol_tex}} %$.
+La solution est $% \displaystyle {{ sol|latex }} %$.
 ==
 
 
