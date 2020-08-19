@@ -14,7 +14,7 @@ form  == #|html|
             <b>{{rg.description}}</b>
     </span>
     <br/>
-    <!--{{ rg }}-->
+    {{ rg|component }}
     <br/>
 {% endfor %}
 ==
