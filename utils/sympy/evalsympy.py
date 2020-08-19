@@ -641,7 +641,6 @@ def eval_poly(strans, sol, var='x', domain='R', form='', checkratsimp=True, imag
         return (-1, "PolyNotRatSimp")
     return (100, "Success")
 
-@add_feedback
 def eval_set(strans, sol, checkratsimp=True, local_dict={}):
     """
     Evaluate an answer when the solution is a finite set.
@@ -657,7 +656,7 @@ def eval_set(strans, sol, checkratsimp=True, local_dict={}):
         return (-1, "Duplicates")
     if not equal_struct(ans, sol):
         return (0, "NotEqual")
-    if checkratsimp and not is_rat_simp(part):
+    if checkratsimp and not is_rat_simp(ans):
         return (-1, "NotRatSimp")
     return (100, "Success")
 
@@ -772,5 +771,6 @@ def ans_antiderivative(strans,sol,x,local_dict={}):
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
+
 
 
