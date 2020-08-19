@@ -4,7 +4,7 @@
 @ /builder/before.py [builder.py]
 
 title = Radio group
-text  = {{ radio }}
+text  = 
 
 form  == 
 {% for rg in radio %} 
