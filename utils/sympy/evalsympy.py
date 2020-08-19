@@ -567,7 +567,7 @@ def eval_frac(strans, sol, simpwarning=True):
     if not isinstance(ans, sp.Expr):
         return (-1, "NotFrac")
     if not is_frac_int(ans):
-        return (-1, "NotFrac")
+        return (-1, "NotFrac2")
     if not equal(ans, sol):
         return (0, "NotEqual")
     if not is_frac_irred(ans):
@@ -810,6 +810,7 @@ def ans_antiderivative(strans,sol,x,local_dict={}):
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
+
 
 
 
