@@ -25,7 +25,8 @@ Simplifier la fraction $% \displaystyle \frac{ {{a}} }{ {{b}} } %$ en l'écrivan
 ==
 
 evaluator==
-score,_,feedback=ans_frac(input1.value,sol)
+score, error = eval_expr(input.value, sol)
+feedback = feedback_message[error]
 ==
 
 solution==
