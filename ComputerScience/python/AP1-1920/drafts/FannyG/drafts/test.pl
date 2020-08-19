@@ -9,6 +9,7 @@ text  =
 form  == 
 {{radio}}
 {% for i in range(len(radio)) %} 
+    {{type(i)}}
     {{radio[i]}}
     <br/>
     <span style="padding-left:30px;font-size:18px;">
