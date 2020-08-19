@@ -39,8 +39,7 @@ for Id in criteria.keys() :
         tmp.items.append({"id": str(i), "content": lvl["description"]})
     radio.append(tmp)
 ==
-tmp =: RadioGroup
-mycomponent2 = {"cid": "myid2", "selector": "c-radio-group"}
+
 
 evaluator == #|python|
 feedback = ""
