@@ -27,8 +27,7 @@ if param['terms']=="2":
 if param['terms']=="3":
     expr='%s %s %s %s %s' % (f[0],s1,f[1],s2,f[2])
 
-sol=simplify(str2expr(expr))
-sol_tex=latex(sol)
+sol = simplify(latex2sympy(expr))
 ==
 
 text ==
