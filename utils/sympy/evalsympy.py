@@ -556,6 +556,27 @@ def eval_expr(strans, sol, checkratsimp=True, authorized_func=None, local_dict={
         return (-1, "NotRatSimp")
     return (100, "Success")
 
+def eval_frac(strans, sol, simpwarning=True):
+    """
+    Evaluate an answer when the solution is a fraction.
+    """
+    try:
+        ans = latex2sympy(strans, local_dict)
+    except:
+        return (-1, "NotFrac")
+    if not isinstance(ans, sp.Expr):
+        return (-1, "NotFrac")
+    if not is_frac_int(ans):
+        return (-1, "NotFrac")
+    if not equal(ans, sol):
+        return (0, "NotEqual")
+    if not is_frac_irred(ans):
+        if simpwarning:
+            return (-1, "NotRatSimp")
+        else:
+            return (0, "NotRatSimp")
+    return (100, "Success")
+
 def eval_function(strans, sol, checkratsimp=True, authorized_func=None, local_dict={}):
     r"""
     Evaluate an answer when the solution is a function.
