@@ -18,6 +18,10 @@
 
 # balise comment_by_criteria : option pour avoir un commentaire par critère
 comment_by_criteria = False
+title = Evaluation question
+text ==
+==
+
 
 
 before==#|python|
@@ -55,10 +59,6 @@ for crit in criteria.values():
     note_max += note_intermediaire
 ==
 
-
-title = Evaluation question
-text ==
-==
 
 
 form==
