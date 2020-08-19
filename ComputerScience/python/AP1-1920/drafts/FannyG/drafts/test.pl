@@ -36,7 +36,7 @@ radio = []
 for Id in criteria.keys() :
     tmp.items = []
     for lvl in criteria[Id].levels :
-        tmp.items.append({"id":Id, "content": lvl.["description"]})
+        tmp.items.append({"id":Id, "content": lvl["description"]})
     radio.append(tmp)
 ==
 tmp =: RadioGroup
