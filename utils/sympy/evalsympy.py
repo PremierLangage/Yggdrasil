@@ -563,9 +563,9 @@ def eval_frac(strans, sol, simpwarning=True):
     try:
         ans = latex2sympy(strans, local_dict)
     except:
-        return (-1, "NotFrac")
+        return (-1, "NotFrac0")
     if not isinstance(ans, sp.Expr):
-        return (-1, "NotFrac")
+        return (-1, "NotFrac1")
     if not is_frac_int(ans):
         return (-1, "NotFrac2")
     if not equal(ans, sol):
