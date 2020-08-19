@@ -644,6 +644,23 @@ def eval_poly(strans, sol, var='x', domain='R', form='', checkratsimp=True, imag
 def eval_set(strans, sol, checkratsimp=True, local_dict={}):
     """
     Evaluate an answer when the solution is a finite set.
+    
+    >>> A = FiniteSet(1, 3, 5)
+    
+    >>> eval_set("\{5,1,3\}", A)
+    (100, 'Success')
+    
+    >>> eval_set("(5,1,3)", A)
+    (-1, 'NotSet')
+    
+    >>> eval_set("\{5,1,3,1\}", A)
+    (-1, 'Duplicates')
+    
+    >>> eval_set("\{5,3\}", A)
+    (0, 'NotEqual')
+    
+    >>> eval_set("\{5,1,1+2\}", A)
+    (-1, 'NotRatSimp')
     """
     sol = FiniteSet2struct(sol)
     try:
