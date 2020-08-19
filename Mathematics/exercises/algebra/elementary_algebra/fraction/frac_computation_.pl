@@ -73,7 +73,6 @@ elif op=="f-(e+f)":
     expr2=r" - \left(%s %s %s \right) +%s" % (p1,s1,p2,f3)
     expr=randitem([expr1,expr2])
 
-
 sol=simplify(latex2sympy(expr))
 ==
 
