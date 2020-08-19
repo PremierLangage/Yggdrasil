@@ -7,11 +7,11 @@ title = Radio group
 text  = 
 
 form  == #|python|
-{% for rg in radio %} 
+{% for i, rg in enumerate(radio) %} 
     {{rg}}
     <br/>
     <span style="padding-left:30px;font-size:18px;">
-            <b>{{rg.description}}</b>
+            <b>{{radio[i].description}}</b>
     </span>
     <br/>
     {{ rg|component }}
