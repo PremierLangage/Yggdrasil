@@ -35,8 +35,8 @@ criteria = {"0": {"description": "Age donné", "levels": [
 radio = []
 for Id in criteria.keys() :
     tmp =: RadioGroup
-    for lvl in criteria[Id]
-    tmp.items = {"id":Id, "content":}
+    for lvl in criteria[Id].levels :
+        tmp.items = {"id":Id, "content":lvl.["description"]}
 radio[0].items = [{"id": 1, "content": "ok"},{"id": 2, "content": "ol"},{"id": 3, "content": "om"}]
 radio[1].items = [{"id": 1, "content": "ek"},{"id": 2, "content": "el"},{"id": 3, "content": "em"}]
 ==
