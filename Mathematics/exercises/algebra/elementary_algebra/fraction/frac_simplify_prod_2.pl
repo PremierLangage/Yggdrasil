@@ -1,13 +1,10 @@
-extends = /Mathematics/template/mathexpr.pl
+extends = /model/mathinput.pl
 
 title = Simplification d'un produit
 
 lang = fr
 
 before ==
-keyboards_JSON['virtualKeyboards']="elementary"
-input1.config = keyboards_JSON
-
 denom=101
 num=0
 while (denom>100) or (num>100):
@@ -16,19 +13,19 @@ while (denom>100) or (num>100):
     num,denom=fraction(sol)
 
 expr=r"\frac{ %d }{ %d } \times \frac{ %d }{ %d }" % (a,b,c,d)
-
-sol_tex=latex(sol)
 ==
 
 text ==
 Calculer l'expression $% \displaystyle {{expr}} %$ en l'écrivant sous la forme d'un entier ou d'une fraction irréductible.
 ==
 
-evaluator==
-score,_,feedback=ans_frac(input1.value,sol)
+evaluator ==
+score, error = eval_frac(input.value, sol, simpwarning=False)
+feedback = feedback_message[error]
 ==
 
-solution==
-La solution est $% \displaystyle {{sol_tex}} %$.
+solution ==
+La solution est $% \displaystyle {{ sol|latex }} %$.
 ==
+
 
