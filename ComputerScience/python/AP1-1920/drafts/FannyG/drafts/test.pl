@@ -9,7 +9,7 @@ form  = {{ radio|component }}
 radio =: RadioGroup
 
 qselectbuild == #|python|
-radio.items = [{"id": "1", "content": "ok"},{"id": "2", "content": "ol"},{"id": "3", "content": "om"}]
+radio.items = [{"id": 1, "content": "ok"},{"id": 2, "content": "ol"},{"id": 3, "content": "om"}]
 ==
 
 
