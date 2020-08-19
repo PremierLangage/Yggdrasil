@@ -15,7 +15,7 @@ radio.items = [{"id": "1", "content": "ok"},{"id": "2", "content": "ol"},{"id": 
 
 
 evaluator == #|python|
-grade = (100, radio.items[radio.selection])
+grade = (100, radio.items["id"] == radio.selection)
 ==
 
 
