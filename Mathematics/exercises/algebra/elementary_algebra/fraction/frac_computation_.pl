@@ -82,7 +82,7 @@ score, error = eval_frac(input.value, sol)
 ==
 
 solution==
-La solution est $% \displaystyle {{sol_tex}} %$.
+La solution est $! \displaystyle {{ sol|latex }} !$.
 ==
 
 
