@@ -1,7 +1,8 @@
 
 
 
-extends = /model/basic.pl
+@ /utils/sandboxio.py
+@ /grader/evaluator.py [grader.py]
 
 radio =: RadioGroup
 
@@ -57,7 +58,7 @@ for index, item in enumerate(radio.items):
     if choice['id'] == selectedId and choice['feedback']:
                 feedback =  choice["feedback"] + "<br/>"
 
-score = radio.eval()
+
 ==
 
 
