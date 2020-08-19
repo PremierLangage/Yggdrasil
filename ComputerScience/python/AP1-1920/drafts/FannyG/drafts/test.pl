@@ -44,12 +44,13 @@ for Id in criteria.keys() :
 
 
 evaluator == #|python|
-feedback = ""
-for d in radio.items : 
-    if d["id"] == radio.selection :
-        feedback = d["content"]
-        break
-grade = (100, feedback)
+#feedback = ""
+#for d in radio.items : 
+#    if d["id"] == radio.selection :
+#        feedback = d["content"]
+#        break
+#grade = (100, feedback)
+grade = (100, "bien")
 ==
 
 
