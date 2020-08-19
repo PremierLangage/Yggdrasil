@@ -8,8 +8,7 @@ form  = {{ radio|component }}
 radio =: RadioGroup
 
 before == #|python|
-choices = []
-radio.items = []
+radio.items = [{"id": "1", "content": "ok"},{"id": "2", "content": "ol"},{"id": "3", "content": "om"}]
 
     id = str(uuid.uuid4())
     choice = {
