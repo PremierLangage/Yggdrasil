@@ -8,7 +8,7 @@ title = Opérations sur les fractions
 
 param.numbers = small
 
-param.formulas %["e+f+f"]
+param.formulas % ["e+f+f"]
 
 before ==
 lstfrac=[(randitem([1,3,5,7]),2),
