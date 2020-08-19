@@ -5,7 +5,10 @@
 
 title = Radio group
 text  = Quelle est la capitale ?
-form  = {{ radio|component }}
+form  == #|python|
+{% for rg in radio %} 
+    {{ radio|component }}
+==
 radio =: RadioGroup[]
 
 qselectbuild == #|python|
