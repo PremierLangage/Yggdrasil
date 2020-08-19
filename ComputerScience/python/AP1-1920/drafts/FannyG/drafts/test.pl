@@ -22,10 +22,6 @@ radio.items = []
         "id": id,
         "content": match.group('content')
     })
-
-radio.setitems(['ok','ol','om'])
-radio.setsol_from_index(0)
-radio.shuffle()
 ==
 
 
