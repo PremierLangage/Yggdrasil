@@ -39,16 +39,14 @@ score, error = eval_frac(input.value, sol)
 feedback = feedback_message[error]
 ==
 
-hint ==
-Penser au PPCM
+evaluator ==
+score, error = eval_frac(input.value, sol)
+feedback = feedback_message[error]
 ==
 
 solution ==
-La solution est $% {{sol_tex}} %$.
+La solution est $! \displaystyle {{ sol|latex }} !$.
 ==
-
-
-
 
 
 
