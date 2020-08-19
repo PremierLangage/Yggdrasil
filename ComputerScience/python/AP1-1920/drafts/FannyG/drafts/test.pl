@@ -34,7 +34,7 @@ criteria = {"0": {"description": "Age donné", "levels": [
             }
 radio = []
 for Id in criteria.keys() :
-    tmp.items = []
+    tmp = {"cid": Id, "selector": "c-radio-group"}
     for lvl in criteria[Id]["levels"] :
         tmp.items.append({"id":Id, "content": lvl["description"]})
     radio.append(tmp)
