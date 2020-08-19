@@ -1,9 +1,10 @@
 
-
-
 @ /utils/sandboxio.py
 @ /grader/evaluator.py [grader.py]
 
+title = Radio groupe
+text  = Quelle est la capitale ?
+form  = {{ radio|component }}
 radio =: RadioGroup
 
 before ==
@@ -27,17 +28,7 @@ radio.setsol_from_index(0)
 radio.shuffle()
 ==
 
-title ==
-Radio groupe
-==
 
-text ==
-Quelle est la capitale ?
-==
-
-form ==
-{{ radio|component }}
-=
 
 evaluator ==
 selectedId = radio.selection
