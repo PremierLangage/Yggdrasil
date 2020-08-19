@@ -516,7 +516,6 @@ def add_feedback(eval):
             return score, error, ""
     return eval_with_feedback
 
-@add_feedback
 def eval_expr(strans, sol, checkratsimp=True, authorized_func=None, local_dict={}):
     r"""
     Evaluate an answer when the solution is an expression.
