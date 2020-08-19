@@ -34,10 +34,6 @@ text ==
 Calculer l'expression $% \displaystyle {{expr}}%$ en l'écrivant sous la forme d'un entier ou d'une fraction irréductible.
 ==
 
-evaluator==
-score, error = eval_frac(input.value, sol)
-feedback = feedback_message[error]
-==
 
 evaluator ==
 score, error = eval_frac(input.value, sol)
