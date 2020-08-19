@@ -24,7 +24,7 @@ s2=randitem(["-","+"])
 p1,p2=rd.sample([f1,e1],2)
 q1,q2,q3=rd.sample([f1,f2,e1],3)
 
-op=randitem(eval(param['formulas']))
+op = randitem(param['formulas'])
 
 if op=="f+f":
     expr='%s %s %s' % (f1,s1,f2)
