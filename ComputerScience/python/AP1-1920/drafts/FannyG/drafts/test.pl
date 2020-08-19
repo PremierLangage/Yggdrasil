@@ -52,7 +52,6 @@ for Id in criteria.keys() :
         # tmp["items"].append({"id": str(i), "content": lvl["description"]})
         tmp.items.append({"id": str(i), "content": lvl["description"]})
     radio.append(tmp)
-    raise Exception(Id)
     globals()[Id] = tmp
 
 ==
