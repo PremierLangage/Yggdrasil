@@ -34,12 +34,12 @@ criteria = {"0": {"description": "Age donné", "levels": [
             }
 radio = []
 for Id in criteria.keys() :
-    tmp =: RadioGroup
+    tmp.items = []
     for lvl in criteria[Id].levels :
         tmp.items.append({"id":Id, "content": lvl.["description"]})
     radio.append(tmp)
 ==
-
+tmp =: RadioGroup
 
 
 evaluator == #|python|
