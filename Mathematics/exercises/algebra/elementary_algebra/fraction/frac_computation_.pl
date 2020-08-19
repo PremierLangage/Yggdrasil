@@ -6,6 +6,10 @@ extends = /model/mathinput.pl
 
 title = Opérations sur les fractions
 
+param.numbers = small
+
+param.formulas %["e+f+f"]
+
 before ==
 lstfrac=[(randitem([1,3,5,7]),2),
 (randitem([1,2,4,5,7,8]),3),
