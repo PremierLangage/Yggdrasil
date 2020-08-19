@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathexpr.pl
+extends = /model/mathinput.pl
 
 title = Simplification d'un produit
 
@@ -19,12 +19,12 @@ text ==
 Calculer l'expression $% \displaystyle {{expr}} %$ en l'écrivant sous la forme d'un entier ou d'une fraction irréductible.
 ==
 
-evaluator==
-score,_,feedback=ans_frac(input1.value,sol)
+evaluator ==
+score, error = eval_frac(input.value, sol, simpwarning=False)
+feedback = feedback_message[error]
 ==
 
-solution==
-La solution est $% \displaystyle {{sol_tex}} %$.
+solution ==
+La solution est $% \displaystyle {{ sol|latex }} %$.
 ==
-
 
