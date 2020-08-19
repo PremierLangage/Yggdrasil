@@ -8,6 +8,7 @@ text  = Quelle est la capitale ?
 form  == #|python|
 {% for rg in radio %} 
     {{ radio|component }}
+    <br/>
 ==
 radio =: RadioGroup[]
 
