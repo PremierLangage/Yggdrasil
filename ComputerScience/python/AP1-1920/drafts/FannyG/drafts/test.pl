@@ -9,6 +9,7 @@ form  == #|python|
 {% for rg in radio %} 
     {{ rg|component }}
     <br/>
+{% endfor %}
 ==
 
 
