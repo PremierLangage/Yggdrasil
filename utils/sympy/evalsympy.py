@@ -255,6 +255,8 @@ def is_rat_simp(expr):
             return True
         else:
             return all(is_rat_simp(subexpr) for subexpr in expr.args)
+    elif isinstance(expr, (list, tuple, sp.Tuple, set, sp.FiniteSet)):
+        return all(is_rat_simp(item) for item in expr)
     else:
         return True
 
