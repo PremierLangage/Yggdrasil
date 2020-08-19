@@ -6,10 +6,11 @@
 title = Radio group
 text  = Quelle est la capitale ?
 form  = {{ radio|component }}
-radio =: RadioGroup
+radio =: RadioGroup[]
 
 qselectbuild == #|python|
-radio.items = [{"id": 1, "content": "ok"},{"id": 2, "content": "ol"},{"id": 3, "content": "om"}]
+radio[0].items = [{"id": 1, "content": "ok"},{"id": 2, "content": "ol"},{"id": 3, "content": "om"}]
+radio[1].items = [{"id": 1, "content": "ek"},{"id": 2, "content": "el"},{"id": 3, "content": "em"}]
 ==
 
 
