@@ -13,8 +13,6 @@ while (denom>100) or (num>100):
     num,denom=fraction(sol)
 
 expr=r"\frac{ %d }{ %d } \times \frac{ %d }{ %d } \times \frac{ %d }{ %d }" % (a,b,c,d,e,f)
-
-sol_tex=latex(sol)
 ==
 
 text ==
