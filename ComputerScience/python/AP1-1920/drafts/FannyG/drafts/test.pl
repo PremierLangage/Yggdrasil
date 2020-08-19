@@ -7,7 +7,7 @@ text  = Quelle est la capitale ?
 form  = {{ radio|component }}
 radio =: RadioGroup
 
-before ==
+before == #|python|
 choices = []
 radio.items = []
 
@@ -30,7 +30,7 @@ radio.shuffle()
 
 
 
-evaluator ==
+evaluator == #|python|
 selectedId = radio.selection
 
 for index, item in enumerate(radio.items):
