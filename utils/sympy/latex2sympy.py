@@ -174,14 +174,15 @@ def latex2rset(s, local_dict={}):
     return rset
 
 def FiniteSet2struct(S):
-    if S==sp.EmptySet:
+    if S == sp.EmptySet:
         return []
-    elif isinstance(S,sp.Set):
+    elif isinstance(S, (sp.Set, set)):
         return [FiniteSet2struct(x) for x in S]
-    elif isinstance(S,tuple):
+    elif isinstance(S, tuple):
         return tuple([FiniteSet2struct(x) for x in S])
     else:
         return S
+
 
 
 
