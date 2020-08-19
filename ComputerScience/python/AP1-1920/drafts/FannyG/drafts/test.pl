@@ -9,6 +9,7 @@ text  = Quelle est la capitale ?
 form  == #|python|
 {% for rg in radio %} 
     {{rg}}
+    <br/>
     <span style="padding-left:30px;">
             <b>{{rg.description}}</b>
     </span>
