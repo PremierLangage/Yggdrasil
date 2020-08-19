@@ -1,6 +1,6 @@
 # Author : D. Doyen
-# Tags : sets, finite sets, 
-# 
+# Tags : sets, finite sets
+# 19/8/2020
 
 extends = /model/mathinput.pl
 
