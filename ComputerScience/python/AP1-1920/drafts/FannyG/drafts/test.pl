@@ -13,7 +13,7 @@ radio.shuffle()
 ==
 
 title ==
-RadioGroup
+Radio groupe
 ==
 
 text ==
