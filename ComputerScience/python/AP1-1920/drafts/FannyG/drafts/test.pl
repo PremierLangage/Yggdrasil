@@ -14,7 +14,7 @@ radio.shuffle()
 ==
 
 text ==
-Quelle est la capitale {{ du_pays }} ?
+Quelle est la capitale ?
 ==
 
 form ==
