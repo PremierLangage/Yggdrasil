@@ -39,6 +39,7 @@ for Id in criteria.keys() :
     for i, lvl in enumerate(criteria[Id]["levels"]) :
         tmp["items"].append({"id": str(i), "content": lvl["description"]})
     radio.append(tmp)
+
 ==
 
 
