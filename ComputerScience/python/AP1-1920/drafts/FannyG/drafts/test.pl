@@ -15,7 +15,7 @@ form  ==
             <b>{{rg.description}}</b>
     </span>
     <br/>
-    {{ radio[radio.index(rg)]|component }}
+    {{ rg|component }}
     <br/>
 {% endfor %}
 ==
