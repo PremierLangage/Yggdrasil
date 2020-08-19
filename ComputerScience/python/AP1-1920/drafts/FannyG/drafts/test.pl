@@ -10,7 +10,7 @@ form  == #|python|
 {% for rg in radio %} 
     {{rg}}
     <br/>
-    <span style="padding-left:30px;">
+    <span style="padding-left:30px;font-size:10px;">
             <b>{{rg.description}}</b>
     </span>
     <br/>
