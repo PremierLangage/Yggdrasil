@@ -2,7 +2,7 @@
 @ /utils/sandboxio.py
 @ /grader/evaluator.py [grader.py]
 
-title = Radio groupe
+title = Radio group
 text  = Quelle est la capitale ?
 form  = {{ radio|component }}
 radio =: RadioGroup
