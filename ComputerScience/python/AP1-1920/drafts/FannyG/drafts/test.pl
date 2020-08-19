@@ -8,9 +8,7 @@ text  =
 
 form  == 
 {{radio}}
-{% for i in range(len(radio)) %} 
-    
-{% endfor %}
+
 ==
 
 
