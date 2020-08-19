@@ -7,14 +7,14 @@ title = Radio group
 text  = 
 
 form  == 
-{% for i in range(radio) %} 
-    {{radio.i}}
+{% for i in range(radio.length) %} 
+    {{radio[i]}}
     <br/>
     <span style="padding-left:30px;font-size:18px;">
-            <b>{{radio.i.description}}</b>
+            <b>{{radio[i].description}}</b>
     </span>
     <br/>
-    {{ radio.i|component }}
+    {{ radio[i]|component }}
     <br/>
 {% endfor %}
 ==
