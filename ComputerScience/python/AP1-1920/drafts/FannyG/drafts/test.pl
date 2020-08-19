@@ -7,7 +7,7 @@ title = Radio group
 text  = Quelle est la capitale ?
 form  == #|python|
 {% for rg in radio %} 
-    {{ radio|component }}
+    {{ rg|component }}
     <br/>
 ==
 radio =: RadioGroup[]
