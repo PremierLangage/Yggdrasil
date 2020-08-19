@@ -38,8 +38,6 @@ for Id in criteria.keys() :
     for lvl in criteria[Id].levels :
         tmp.items.append({"id":Id, "content": lvl.["description"]})
     radio.append(tmp)
-radio[0].items = [{"id": 1, "content": "ok"},{"id": 2, "content": "ol"},{"id": 3, "content": "om"}]
-radio[1].items = [{"id": 1, "content": "ek"},{"id": 2, "content": "el"},{"id": 3, "content": "em"}]
 ==
 
 
