@@ -11,10 +11,10 @@ form  == #|python|
     {{rg}}
     <br/>
     <span style="padding-left:30px;font-size:18px;">
-            <b>{{radio[i].description}}</b>
+            <b>{{rg.description}}</b>
     </span>
     <br/>
-    {{ rg|component }}
+    {{ radio[i]|component }}
     <br/>
 {% endfor %}
 ==
