@@ -7,7 +7,6 @@ title = Radio group
 text  = 
 
 form  == 
-{{radio}}
 {% for rg in radio %} 
     {{rg}}
     <br/>
