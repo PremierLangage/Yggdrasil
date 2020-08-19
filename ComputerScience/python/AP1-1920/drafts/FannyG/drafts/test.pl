@@ -65,12 +65,12 @@ for Id in criteria.keys() :
     for i, lvl in enumerate(criteria[Id]["levels"]) :
         # tmp["items"].append({"id": str(i), "content": lvl["description"]})
         tmp.items.append({"id": str(i), "content": lvl["description"]})
-    radio.append(tmp)
     # dans la version des components qui est sur la v0.7.4 les composants
     # dans les listes ne sont pas synchronisés il faut donc les ajoutés dans globals
     # c'est expliqué dans la section "create a component inside a builder" du lien suivant
     # https://pl.u-pem.fr/components/advanced-usage
     globals()[Id] = tmp
+    radio.append(tmp)
 ==
 
 
