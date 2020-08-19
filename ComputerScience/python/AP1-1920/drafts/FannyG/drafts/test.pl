@@ -70,7 +70,8 @@ for Id in criteria.keys() :
     # c'est expliqué dans la section "create a component inside a builder" du lien suivant
     # https://pl.u-pem.fr/components/advanced-usage
     globals()[Id] = tmp
-    radio.append(tmp)
+    # CETTE LIGNE EST UN HACK POUR CONTOURNER LE FAIT QUE LES CLASSES NE SONT PAS SERIALISES PAR LA SANDBOX
+    radio.append(vars(tmp))
 ==
 
 
