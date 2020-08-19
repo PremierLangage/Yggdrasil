@@ -5,9 +5,6 @@ title = Simplification d'un produit
 lang = fr
 
 before ==
-keyboards_JSON['virtualKeyboards']="elementary"
-input1.config = keyboards_JSON
-
 denom=101
 num=0
 while (denom>100) or (num>100):
@@ -31,4 +28,5 @@ score,_,feedback=ans_frac(input1.value,sol)
 solution==
 La solution est $% \displaystyle {{sol_tex}} %$.
 ==
+
 
