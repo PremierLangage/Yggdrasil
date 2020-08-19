@@ -1,13 +1,12 @@
-extends = /Mathematics/template/mathexpr.pl
+# Author : D. Doyen
+# Tags : fractions
+# 19/8/2020
+
+extends = /model/mathinput.pl
 
 title = Opérations sur les fractions
 
-lang = fr
-
 before ==
-keyboards_JSON['virtualKeyboards']="elementary"
-input1.config = keyboards_JSON
-
 lstfrac=[(randitem([1,3,5,7]),2),
 (randitem([1,2,4,5,7,8]),3),
 (randitem([1,3,5,7]),4),
@@ -71,18 +70,15 @@ elif op=="f-(e+f)":
     expr=randitem([expr1,expr2])
 
 
-sol=simplify(str2expr(expr))
-sol_tex=latex(sol)
+sol=simplify(latex2sympy(expr))
 ==
 
 text ==
 Calculer l'expression $% \displaystyle {{expr}}%$ en l'écrivant sous la forme d'un entier ou d'une fraction irréductible.
 ==
 
-input1.config % { "virtualKeyboards": "elementary"}
-
 evaluator==
-score,_,feedback=ans_frac(input1.value,sol)
+score, error = eval_frac(input.value, sol)
 ==
 
 solution==
@@ -148,6 +144,7 @@ wims ==
 \text{expr=\frac{texmath(\ee1)}{texmath(\T1)}}
 }
 ==
+
 
 
 
