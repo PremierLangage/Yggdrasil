@@ -4,7 +4,7 @@
 @ /builder/before.py [builder.py]
 
 title = Radio group
-text  = Quelle est la capitale ?
+text  = 
 
 form  == #|python|
 {% for rg in radio %} 
