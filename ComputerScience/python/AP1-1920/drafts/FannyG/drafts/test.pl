@@ -4,7 +4,7 @@
 @ /builder/before.py [builder.py]
 
 title = Radio group
-text  = 
+text  = {{ radio }}
 
 form  == 
 {% for rg in radio %} 
@@ -52,7 +52,7 @@ for Id in criteria.keys() :
         # tmp["items"].append({"id": str(i), "content": lvl["description"]})
         tmp.items.append({"id": str(i), "content": lvl["description"]})
     radio.append(tmp)
-    
+
 ==
 
 
