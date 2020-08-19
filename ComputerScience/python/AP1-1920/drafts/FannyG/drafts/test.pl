@@ -9,18 +9,6 @@ radio =: RadioGroup
 
 before == #|python|
 radio.items = [{"id": "1", "content": "ok"},{"id": "2", "content": "ol"},{"id": "3", "content": "om"}]
-
-    id = str(uuid.uuid4())
-    choice = {
-        "id": id,
-        "feedback": match.group('feedback') or '',
-        "right": match.group('type') == '='
-    }
-    choices.append(choice)
-    radio.items.append({
-        "id": id,
-        "content": match.group('content')
-    })
 ==
 
 
