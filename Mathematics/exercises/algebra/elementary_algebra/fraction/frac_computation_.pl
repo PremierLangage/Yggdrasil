@@ -77,7 +77,7 @@ sol=simplify(latex2sympy(expr))
 ==
 
 text ==
-Calculer l'expression $% \displaystyle {{expr}}%$ en l'écrivant sous la forme d'un entier ou d'une fraction irréductible.
+Calculer l'expression $! \displaystyle {{expr}} !$ en l'écrivant sous la forme d'un entier ou d'une fraction irréductible.
 ==
 
 evaluator==
