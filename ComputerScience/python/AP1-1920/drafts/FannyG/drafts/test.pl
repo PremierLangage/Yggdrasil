@@ -6,7 +6,7 @@
 title = Radio group
 text  = 
 
-form  == 
+form  == #|html|
 {% for rg in radio %} 
     {{rg}}
     <br/>
@@ -14,7 +14,7 @@ form  ==
             <b>{{rg.description}}</b>
     </span>
     <br/>
-   
+    <!--{{ rg|component }}-->
     <br/>
 {% endfor %}
 ==
