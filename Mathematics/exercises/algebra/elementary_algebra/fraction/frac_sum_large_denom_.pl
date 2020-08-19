@@ -2,12 +2,7 @@ extends = /Mathematics/template/mathexpr.pl
 
 title = Opérations sur les fractions
 
-lang = fr
-
 before ==
-keyboards_JSON['virtualKeyboards']="elementary"
-input1.config = keyboards_JSON
-
 if param['terms']=="2":
     n=2
     k=randitem([11,12,13,14,15,16,17,18,19])
@@ -41,7 +36,8 @@ Calculer l'expression $% \displaystyle {{expr}}%$ en l'écrivant sous la forme d
 ==
 
 evaluator==
-score,_,feedback=ans_frac(input1.value,sol)
+score, error = eval_frac(input.value, sol)
+feedback = feedback_message[error]
 ==
 
 hint ==
@@ -51,6 +47,7 @@ Penser au PPCM
 solution ==
 La solution est $% {{sol_tex}} %$.
 ==
+
 
 
 
