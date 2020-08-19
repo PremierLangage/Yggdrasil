@@ -1,5 +1,5 @@
 # Author : D. Doyen
-# Tags : sets, finite sets
+# Tags : fractions
 # 19/8/2020
 
 extends = /model/mathinput.pl
@@ -32,6 +32,7 @@ feedback = feedback_message[error]
 solution==
 La solution est $% \displaystyle {{ sol|latex }} %$.
 ==
+
 
 
 
