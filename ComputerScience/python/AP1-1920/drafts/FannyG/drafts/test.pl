@@ -91,10 +91,10 @@ evaluator == #|python|
 #----------------------------------------------------
 
 
-for d in response:
-    print(d)
-    print(response[d])
-grade = (100,"")
+#for d in response:
+#    print(d)
+#    print(response[d])
+#grade = (100,"")
 
 
 #----------------------------------------------------
