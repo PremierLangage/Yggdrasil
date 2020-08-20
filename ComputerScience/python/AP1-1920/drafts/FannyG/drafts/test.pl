@@ -114,13 +114,15 @@ for num in criteria.keys():
         error = 1
         break
     else:
-        
-    feedback += "<br/>" + response[num]['selection']
-    # calcul des points de la copie
-    for niv in criteria[num]['levels']:
-        if response[num] == niv['description']:
-            note_student += niv['points']
-            break
+        for e in response[num]['items']:
+            if e['id'] == tmpId:
+                feedback += "<br/>" + e['content']
+        feedback += "<br/>" + response[num]['selection']
+        # calcul des points de la copie
+        for niv in criteria[num]['levels']:
+            if response[num] == niv['description']:
+                note_student += niv['points']
+                break
 
 # vérifie que le correcteur a répondu à toutes les réponses textarea des radio
 if comment_by_criteria != "False" and not error:
