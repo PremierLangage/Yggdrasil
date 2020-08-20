@@ -91,7 +91,7 @@ $$ {{ P|latex }}.$$
 
 
 evaluator ==
-feedback = str(srepr(latex2sympy(strans)))
+feedback = str(srepr(latex2sympy(input.value)))
 #score, error = eval_poly(input.value, sol, form="factorized")
 #feedback = feedback_message[error]
 ==
