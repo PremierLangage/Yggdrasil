@@ -89,7 +89,7 @@ $$ {{expr|latex}}.$$
 ==
 
 
-evaluator==
+evaluator ==
 score, error = eval_poly(input.value, sol, form="factorized")
 feedback = feedback_message[error]
 ==
@@ -97,9 +97,3 @@ feedback = feedback_message[error]
 solution ==
 Une factorisation de cette expression est $! {{ sol|latex }} !$.
 ==
-
-
-
-
-
-
