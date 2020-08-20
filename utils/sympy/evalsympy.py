@@ -644,8 +644,7 @@ def eval_poly(strans, sol, var='x', domain='R', form='', checkratsimp=True, imag
     >>> eval_poly("x^2 + 2x + 1", P, form="factorized")[1]
     'PolyNotFactorized'
     """
-    local_dict.update({imaginary_unit: sp.I})
-    x = sp.Symbol(var)
+    local_dict.update({imaginary_unit: sp.I, x: sp.Symbol(var)})
     try:
         ans = latex2sympy(strans, local_dict)
         return (0, str(srepr(ans)))
