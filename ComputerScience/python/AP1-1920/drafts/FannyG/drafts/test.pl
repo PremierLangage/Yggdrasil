@@ -91,6 +91,7 @@ evaluator == #|python|
 
 for d in response:
     print(d)
+    print(reponse[d])
 grade = (100,"")
 ==
 
