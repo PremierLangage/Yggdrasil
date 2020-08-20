@@ -625,7 +625,6 @@ def eval_complex(strans, sol, imaginary_unit="i", form="", checkratsimp=True, au
             return (-1, "NotCplxExponential")
     return (100, "Success")
 
-@add_feedback
 def eval_poly(strans, sol, var='x', domain='R', form='', checkratsimp=True, imaginary_unit='i',  authorized_func={}, local_dict={}):
     """
     Evaluate an answer when the solution is a polynomial.
