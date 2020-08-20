@@ -58,7 +58,7 @@ def rand_term(Q,type):
 comfac=rand_factor(type_comfac)
 type=list_randitem_norep(nterms,type_terms)
 
-if param['obvious']=="yes":
+if param['obvious']:
     coeff=[0,0,0,0]
 else:
     coeff=[0]+list_randitem_norep(nterms-1,[1,2])
