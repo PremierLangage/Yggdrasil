@@ -88,7 +88,7 @@ evaluator == #|python|
 #grade = (100, feedback)
 
 #----------------------------------------------------
-grader(100,response)
+grade = (100,response)
 ==
 
 
