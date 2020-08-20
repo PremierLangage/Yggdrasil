@@ -15,7 +15,7 @@ param.terms % [1, 1]
 param.obvious % true
 
 
-before == #|python|
+before2 == #|python|
 
 nterms = param['nterms']
 type_comfac = param['comfactor']
@@ -56,10 +56,8 @@ def rand_term(Q,type):
             return c*(Q)**2
 
 comfac = rand_factor(type_comfac)
-type = list_randitem_norep(nterms,type_terms)
-==
+type =list_randitem_norep(nterms,type_terms)
 
-old ==
 if param['obvious']:
     coeff=[0,0,0,0]
 else:
@@ -87,7 +85,7 @@ sol=factor(P)
 
 text ==
 Factoriser l'expression suivante :
-$$ {{sol|latex}}.$$
+$$ {{expr|latex}}.$$
 ==
 
 
