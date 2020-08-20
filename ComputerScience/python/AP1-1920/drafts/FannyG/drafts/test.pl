@@ -114,13 +114,13 @@ for num in criteria.keys():
         error = 1
         break
     else:
-        for e in response[num]['items']:
+        for i, e in enumerate(response[num]['items']):
             if e['id'] == tmpId:
                 feedback += "<br/>" + e['content']
-        feedback += "<br/>" + response[num]['selection']
+                break
         # calcul des points de la copie
         for niv in criteria[num]['levels']:
-            if response[num] == niv['description']:
+            if response[num]['items'][i] == niv['description']:
                 note_student += niv['points']
                 break
 
