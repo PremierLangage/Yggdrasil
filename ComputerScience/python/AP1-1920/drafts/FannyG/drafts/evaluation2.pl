@@ -81,6 +81,10 @@ Réponse de l'élève :
     {{ rg|component }}
     <br/>
 {% endfor %}
+
+<br/>
+<p>Explication et commentaire général :</p>
+<textarea id="form_commentaire" name="Commentaire" cols=100% rows="5"></textarea>
 ==
 
 
