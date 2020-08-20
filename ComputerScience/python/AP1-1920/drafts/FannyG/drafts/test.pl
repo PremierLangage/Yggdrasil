@@ -21,7 +21,7 @@ form  == #|html|
 
 before == #|python|
 criteria = {
-    "r0": { 
+    "0": { 
         "description": "Age donné",
         "levels": [
             {"description": "Inférieur à 20 ans", "points": 0}, 
@@ -29,7 +29,7 @@ criteria = {
             {"description": "Supérieur à 20 ans", "points": 2}
         ]
     },
-    "r1": {
+    "1": {
         "description": "Orthographe",
         "levels": [
             {"description": "Plusieurs fautes", "points": 0}, 
@@ -37,7 +37,7 @@ criteria = {
             {"description": "Aucune faute", "points": 2}
         ]
     },
-    "r2": {
+    "2": {
         "description": "Syntaxe",
         "levels": [
             {"description": "La phrase ne possède ni une majuscule, ni un point.", "points": 0}, 
