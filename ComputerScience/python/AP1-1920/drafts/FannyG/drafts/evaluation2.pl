@@ -63,6 +63,15 @@ for Id in criteria.keys() :
 
 
 form  == #|html|
+<b style="color: red;">Remplissez tous les champs de l'évaluation</b>
+<br/><br/>
+Enoncé de la question :  
+<p style="color: rgb(50, 100, 250);">{{data.question}}<p>
+<br/>
+Réponse de l'élève :  
+<p style="color: rgb(50, 100, 250);">{{data.answer}}<p>
+<br/>
+
 {% for rg in radio %} 
     <br/>
     <span style="padding-left:30px;font-size:18px;">
