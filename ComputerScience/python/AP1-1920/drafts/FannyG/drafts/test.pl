@@ -110,6 +110,7 @@ note_student = 0
 try:
     feedback = "Réponses : "
     for num in criteria.keys():
+        tmpId = response[num]['selection']
         feedback += "<br/>" + response[num]['selection']
         # calcul des points de la copie
         for niv in criteria[num]['levels']:
