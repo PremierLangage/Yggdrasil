@@ -645,11 +645,9 @@ def eval_poly(strans, sol, var='x', domain='R', form='', checkratsimp=True, imag
     'PolyNotFactorized'
     """
     local_dict.update({imaginary_unit: sp.I, var: sp.Symbol(var)})
-    ans = latex2sympy(strans, local_dict)
-    return (0, str(srepr(ans)))
     try:
         ans = latex2sympy(strans, local_dict)
-        return (0, str(srepr(ans)))
+        return (0, str(sp.srepr(ans)))
     except:
         return (0, strans)
         return (-1, "NotPoly")
