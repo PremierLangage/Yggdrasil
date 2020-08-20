@@ -648,10 +648,10 @@ def eval_poly(strans, sol, var='x', domain='R', form='', checkratsimp=True, imag
     x = sp.Symbol(var)
     try:
         ans = latex2sympy(strans, local_dict)
-        return (0, str(srepr(ans))
+        return (0, str(srepr(ans)))
     except:
         return (0, strans)
-        #return (-1, "NotPoly")
+        return (-1, "NotPoly")
     if not isinstance(ans,sp.Expr) or not ans.is_polynomial(x):
         return (-1, "NotPoly")
     if form == "expanded" and not is_poly_expanded(ans ,x):
