@@ -122,7 +122,7 @@ for num in criteria.keys():
         for niv in criteria[num]['levels']:
             print(response[num]['items'][i]['content'])
             print(niv['description'])
-            if response[num]['items'][i] == niv['description']:
+            if response[num]['items'][i]['content'] == niv['description']:
                 note_student += niv['points']
                 break
 
