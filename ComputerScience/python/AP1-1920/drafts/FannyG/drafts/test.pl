@@ -30,7 +30,7 @@ criteria = {
             {"description": "Supérieur à 20 ans", "points": 2}
         ]
     },
-"r1": {
+    "r1": {
         "description": "Orthographe",
         "levels": [
             {"description": "Plusieurs fautes", "points": 0}, 
@@ -38,7 +38,7 @@ criteria = {
             {"description": "Aucune faute", "points": 2}
         ]
     },
-"r2": {
+    "r2": {
         "description": "Syntaxe",
         "levels": [
             {"description": "La phrase ne possède ni une majuscule, ni un point.", "points": 0}, 
@@ -89,6 +89,7 @@ evaluator == #|python|
 #grade = (100, feedback)
 grade = (100, "bien")
 ==
+
 
 
 
