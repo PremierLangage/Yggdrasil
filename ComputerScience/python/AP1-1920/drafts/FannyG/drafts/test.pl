@@ -120,6 +120,8 @@ for num in criteria.keys():
                 break
         # calcul des points de la copie
         for niv in criteria[num]['levels']:
+            print(response[num]['items'][i])
+            print(niv['description'])
             if response[num]['items'][i] == niv['description']:
                 note_student += niv['points']
                 break
