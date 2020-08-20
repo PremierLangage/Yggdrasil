@@ -80,6 +80,10 @@ Réponse de l'élève :
     <br/>
     {{ rg|component }}
     <br/>
+    {% if comment_by_criteria != "False" %}
+        <p>Justificatif :</p>
+        <textarea id="form_commentaire_{{id}}" name="justificatif" cols=30% rows="2"></textarea>
+    {% endif %}
 {% endfor %}
 
 <br/>
