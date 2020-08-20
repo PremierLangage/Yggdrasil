@@ -48,7 +48,7 @@ text ==
 ==
 
 
-form ==
+form ==#|html|
 <p>Pour chaque critère, choisissez la meilleure copie.</p>  
 <br/>
 <div style="text-align:center;">
@@ -110,6 +110,7 @@ except:
     note = 0
 grade = (note, feedback)
 ==
+
 
 
 
