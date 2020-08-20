@@ -93,6 +93,55 @@ for d in response:
     print(d)
     print(response[d])
 grade = (100,"")
+
+#----------------------------------------------------
+
+from math import ceil
+
+error = 0
+note_student = 0
+
+# vérifie que le correcteur a répondu à toutes les réponses radio
+# en même temps on calcule les points de la copie évaluée en fonction des réponses cliquées
+try:
+    feedback = "Réponses : "
+    for num in criteria.keys():
+        feedback += "<br/>" + response[num]
+        # calcul des points de la copie
+        for niv in criteria[num]['levels']:
+            if response[num] == niv['description']:
+                note_student += niv['points']
+                break
+except:
+    error = 1
+
+# vérifie que le correcteur a répondu à toutes les réponses textarea des radio
+if comment_by_criteria != "False" and not error:
+    for num in criteria.keys():
+        if response["commentaire_"+num] == "":
+            error = 1
+            break
+        else:
+            feedback += "<br/>justificatif " +num+ " : " + response["commentaire_"+num]
+
+# vérifie que le correcteur a répondu à la dernière textarea du commentaire général
+if not error:
+    if response["commentaire"] == "":
+        error = 1
+    else:
+        feedback += "<br/>commentaire : " + response['commentaire']
+
+# règle de trois pour le calcul de la note de la copie sur 100 (entre 0 et 100)
+if note_student <= 0:
+    response['note'] = 0
+else:
+    response['note'] = ceil((note_student*100)/note_max)
+
+if error:
+    grade = (0, "Répondez à toutes les questions")
+else:
+    feedback += "<br/>note = "+str(response['note'])
+    grade = (100, feedback)
 ==
 
 
