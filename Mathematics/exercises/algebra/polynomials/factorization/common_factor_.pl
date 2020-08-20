@@ -1,16 +1,25 @@
-# Author : D. Doyen
-# Tags : polynomials
+# Author: D. Doyen
+# Tags: polynomials
 # 19/8/2020
 
 extends = /model/mathinput.pl
 
 title = Facteur commun
 
+param.nterms % 2
+
+param.comfactor % 1
+
+param.terms % [1, 1]
+
+param.obvious % true
+
+
 before == #|python|
 
-nterms=int(param['nterms'])
-type_comfac=int(param['comfactor'])
-type_terms=eval(param['terms'])
+nterms = param['nterms']
+type_comfac = param['comfactor']
+type_terms = param['terms']
 
 var('x')
 
