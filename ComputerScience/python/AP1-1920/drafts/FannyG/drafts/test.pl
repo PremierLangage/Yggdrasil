@@ -124,22 +124,6 @@ for num in criteria.keys():
                 note_student += niv['points']
                 break
 
-# vérifie que le correcteur a répondu à toutes les réponses textarea des radio
-if comment_by_criteria != "False" and not error:
-    for num in criteria.keys():
-        if response["commentaire_"+num] == "":
-            error = 1
-            break
-        else:
-            feedback += "<br/>justificatif " +num+ " : " + response["commentaire_"+num]
-
-# vérifie que le correcteur a répondu à la dernière textarea du commentaire général
-if not error:
-    if response["commentaire"] == "":
-        error = 1
-    else:
-        feedback += "<br/>commentaire : " + response['commentaire']
-
 # règle de trois pour le calcul de la note de la copie sur 100 (entre 0 et 100)
 if note_student <= 0:
     response['note'] = 0
