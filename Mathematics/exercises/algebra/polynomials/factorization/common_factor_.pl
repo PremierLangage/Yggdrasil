@@ -55,9 +55,11 @@ def rand_term(Q,type):
     elif type==7:
             return c*(Q)**2
 
-comfac=rand_factor(type_comfac)
-type=list_randitem_norep(nterms,type_terms)
+comfac = rand_factor(type_comfac)
+type = list_randitem_norep(nterms,type_terms)
+==
 
+old ==
 if param['obvious']:
     coeff=[0,0,0,0]
 else:
