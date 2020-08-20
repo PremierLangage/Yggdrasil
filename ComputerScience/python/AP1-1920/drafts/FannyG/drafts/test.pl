@@ -90,7 +90,7 @@ evaluator == #|python|
 #----------------------------------------------------
 for d in response:
     print(d)
-grade = (100,response)
+grade = (100,"")
 ==
 
 
