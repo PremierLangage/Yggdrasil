@@ -84,6 +84,7 @@ Réponse de l'élève :
         <p>Justificatif :</p>
         <textarea id="form_commentaire_{{id}}" name="justificatif" cols=30% rows="2"></textarea>
     {% endif %}
+    <br/><br/>
 {% endfor %}
 
 <br/>
