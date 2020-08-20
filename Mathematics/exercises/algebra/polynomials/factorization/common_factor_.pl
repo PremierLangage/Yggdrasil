@@ -91,10 +91,11 @@ $$ {{ P|latex }}.$$
 
 
 evaluator ==
-#feedback = str(srepr(latex2sympy(input.value)))
-score, error = eval_poly(input.value, sol, form="factorized")
-feedback = feedback_message[error]
-#score = 100
+del x
+feedback = str(srepr(latex2sympy(input.value)))
+#score, error = eval_poly(input.value, sol, form="factorized")
+#feedback = feedback_message[error]
+score = 100
 ==
 
 solution ==
