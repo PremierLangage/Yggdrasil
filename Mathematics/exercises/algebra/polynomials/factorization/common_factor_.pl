@@ -93,6 +93,7 @@ $$ {{ P|latex }}.$$
 evaluator ==
 score, error = eval_poly(input.value, sol, form="factorized")
 #feedback = feedback_message[error]
+feedback = error
 score = 100
 ==
 
