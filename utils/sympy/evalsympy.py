@@ -648,6 +648,7 @@ def eval_poly(strans, sol, var='x', domain='R', form='', checkratsimp=True, imag
     x = sp.Symbol(var)
     try:
         ans = latex2sympy(strans, local_dict)
+        return (0, strans)
     except:
         return (0, strans)
         return (-1, "NotPoly")
