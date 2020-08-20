@@ -94,7 +94,7 @@ evaluator ==
 feedback = str(srepr(latex2sympy(input.value)))
 #score, error = eval_poly(input.value, sol, form="factorized")
 #feedback = feedback_message[error]
-scpre = 100
+score = 100
 ==
 
 solution ==
