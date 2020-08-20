@@ -86,7 +86,7 @@ sol=factor(P)
 
 text ==
 Factoriser l'expression suivante :
-$$ {{ P|latex }}.$$
+
 ==
 
 
