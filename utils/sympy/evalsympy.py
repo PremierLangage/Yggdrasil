@@ -649,7 +649,7 @@ def eval_poly(strans, sol, var='x', domain='R', form='', checkratsimp=True, imag
     try:
         ans = latex2sympy(strans, local_dict)
     except:
-        return (0, str(srepr(ans)))
+        return (0, strans)
         return (-1, "NotPoly")
     if not isinstance(ans,sp.Expr) or not ans.is_polynomial(x):
         return (-1, "NotPoly")
