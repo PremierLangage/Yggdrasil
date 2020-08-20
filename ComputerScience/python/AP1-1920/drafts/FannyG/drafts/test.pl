@@ -107,18 +107,20 @@ note_student = 0
 
 # vérifie que le correcteur a répondu à toutes les réponses radio
 # en même temps on calcule les points de la copie évaluée en fonction des réponses cliquées
-try:
-    feedback = "Réponses : "
-    for num in criteria.keys():
-        tmpId = response[num]['selection']
-        feedback += "<br/>" + response[num]['selection']
-        # calcul des points de la copie
-        for niv in criteria[num]['levels']:
-            if response[num] == niv['description']:
-                note_student += niv['points']
-                break
-except:
-    error = 1
+feedback = "Réponses : "
+for num in criteria.keys():
+    tmpId = response[num]['selection']
+    if tmpId == '':
+        error = 1
+        break
+    else:
+        
+    feedback += "<br/>" + response[num]['selection']
+    # calcul des points de la copie
+    for niv in criteria[num]['levels']:
+        if response[num] == niv['description']:
+            note_student += niv['points']
+            break
 
 # vérifie que le correcteur a répondu à toutes les réponses textarea des radio
 if comment_by_criteria != "False" and not error:
