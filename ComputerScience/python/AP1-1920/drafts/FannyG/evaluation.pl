@@ -63,7 +63,7 @@ text  ==
 ==
 
 
-form==
+form==#|html|
 <b style="color: red;">Remplissez tous les champs de l'évaluation</b>
 <br/><br/>
 Enoncé de la question :  
@@ -146,6 +146,7 @@ else:
     feedback += "<br/>note = "+str(response['note'])
     grade = (100, feedback)
 ==
+
 
 
 
