@@ -1,12 +1,12 @@
-extends = /Mathematics/template/mathexpr.pl
+# Author : D. Doyen
+# Tags : polynomials
+# 19/8/2020
+
+extends = /model/mathinput.pl
 
 title = Facteur commun
 
-lang = fr
-
-before ==#|python|
-keyboards_JSON['virtualKeyboards']="elementary"
-input1.config = keyboards_JSON
+before == #|python|
 
 nterms=int(param['nterms'])
 type_comfac=int(param['comfactor'])
@@ -72,24 +72,23 @@ with evaluate(False):
     P=Add(*terms)
 
 sol=factor(P)
-sol_tex=latex(sol)
-expr=latex(P)
 ==
 
 text ==
 Factoriser l'expression suivante :
-$${{expr}}.$$
+$$ {{expr|latex}}.$$
 ==
 
 
 evaluator==
-var('x')
-score,_,feedback=ans_poly_factor(input1.value,sol,x)
+score, error = eval_poly(input.value, sol, form="factorized")
+feedback = feedback_message[error]
 ==
 
 solution ==
-Une factorisation de cette expression est $! {{sol_tex}} !$.
+Une factorisation de cette expression est $! {{ sol|latex }} !$.
 ==
+
 
 
 
