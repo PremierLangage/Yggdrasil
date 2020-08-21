@@ -22,7 +22,7 @@ a=randitem([-1,1])*a
 c=randitem([-1,1])*c
 e=randitem([-1,1])*e
 
-if int(param['degree'])==2:
+if param['degree']==2:
     if param['roots']=="int":
         P=(x-q)*(x-r)
     elif param['roots']=="intrat":
@@ -37,7 +37,6 @@ if int(param['degree'])==2:
 
 sol = factor(P)
 expr = P.expand()
-
 ==
 
 text ==
