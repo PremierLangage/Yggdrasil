@@ -1,4 +1,18 @@
 
+
+# /!\data et criteria à supprimer après les tests (dans la balise before)
+
+# permet de faire évaluer une réponse (textuelle ou autre) d'un élève par qqun d'autre par le biais d'une grille critériée 
+# -paramètres : 
+#     -data : la réponse de l'élève
+#     -criteria : les critère d'evaluation
+# -balise :
+#     -comment_by_criteria, type -> string, par défault false : option pour avoir un commentaire par critère
+# -retourne : un dico avec la valeur pour chaque critère et un commentaire.
+
+#author=Fanny Garnevault
+
+
 @ /utils/sandboxio.py
 @ /grader/evaluator.py [grader.py]
 @ /builder/before.py [builder.py]
