@@ -156,7 +156,6 @@ else:
 if error:
     grade = (0, "Répondez à toutes les questions")
 else:
-    feedback += "<br/>note = "+str(response['note'])
     grade = (100, feedback)
 ==
 
