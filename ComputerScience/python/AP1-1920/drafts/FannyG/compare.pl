@@ -143,7 +143,8 @@ for crit in criteria:
                 feedback += "<br/>" + e['content']
                 break
 #r&ponse radio de best_copy
-if (not error) and response[num]['selection']
+if (not error) and response['best_copy']['selection'] != '':
+    
 if error:
     grade = (0, "Répondez à toutes les questions")
 else:
