@@ -80,7 +80,7 @@ for Id in criteria.keys() :
 radio = []
 for value in criteria :
     tmp = RadioGroup(cid=str(value["id"]))
-    tmp.description = criteria[Id]["description"]
+    tmp.description = value["description"]
     tmp.items = []
     for i, lvl in enumerate(criteria[Id]["levels"]) :
         tmp.items.append({"id": str(i), "content": lvl["description"]})
