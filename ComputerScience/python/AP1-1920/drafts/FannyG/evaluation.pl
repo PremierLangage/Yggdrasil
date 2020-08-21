@@ -140,7 +140,7 @@ for value in criteria:
                 feedback += "<br/>" + e['content']
                 break
         # calcul des points de la copie
-        for niv in criteria[num]['levels']:
+        for niv in value['levels']:
             if response[num]['items'][i]['content'] == niv['description']:
                 note_student += niv['points']
                 break
