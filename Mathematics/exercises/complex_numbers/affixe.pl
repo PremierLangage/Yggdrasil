@@ -49,11 +49,26 @@ board.create('point',[{{x}}, {{y}}],{size:2,name:'',color:'red'});
 ==
 
 evaluator ==
-# pas besoin de faire float(drawer.points['M']['x'])
-# car une des fonctionnalités des composants et que
-# dans un grader le type des propriétes est toujours le type
-# spécifié dans la doc (dans ce cas les propriétes x et y d'un point
-# sont des flottants c'est possible de le voir en mode debug).
+x, y = jxg.getpoint('M')
+from math import hypot
+if hypot(x-a, y-b)<0.1:
+     score=100
+     drawer.script = Template(script_solution).render(locals())
+     drawer.points = {}
+     drawer.disabled = True
+else:
+     score=0
+     if nbattempt + 1 >= int(maxattempt):
+        drawer.script = Template(script_solution).render(locals())
+        drawer.points = {}
+        drawer.disabled = True
+feedback=""
+
+if equal_approx(atan2(ansa,1), atan2(a,1), 0.1, modulo=pi) and abs(ansb-b)<0.15:
+    score = 100
+else:
+    score = 0
+    jxg.addscript(script_wrong,globals())
 
 
 x= drawer.points['M']['x']
