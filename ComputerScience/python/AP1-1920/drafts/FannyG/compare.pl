@@ -114,20 +114,6 @@ form ==#|html|
 
 
 evaluator==#|python|
-# response est un dict : ex : {"1": 'tres_bien', 'commentaire': 't'}
-try:
-    feedback = "Réponses : "
-    for value in criteria:
-        feedback += response[str(value['id'])] + ", "
-    feedback += response['best_copy'] + ", " + response['commentaire'] + "."
-    note = 100
-except:
-    feedback = "Répondez à toutes les questions"
-    note = 0
-grade = (note, feedback)
-
-
-
 error = 0
 feedback = "Réponses : "
 #réponses radios de la grille critériée
