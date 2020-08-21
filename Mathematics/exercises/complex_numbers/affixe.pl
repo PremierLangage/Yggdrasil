@@ -58,19 +58,11 @@ if hypot(x-a, y-b)<0.1:
      drawer.disabled = True
 else:
      score=0
-     if nbattempt + 1 >= int(maxattempt):
-        drawer.script = Template(script_solution).render(locals())
-        drawer.points = {}
-        drawer.disabled = True
+     jxg.addscript(script_solution,globals())
 feedback=""
+==
 
-if equal_approx(atan2(ansa,1), atan2(a,1), 0.1, modulo=pi) and abs(ansb-b)<0.15:
-    score = 100
-else:
-    score = 0
-    jxg.addscript(script_wrong,globals())
-
-
+old ==
 x= drawer.points['M']['x']
 y= drawer.points['M']['y']
 
