@@ -108,7 +108,7 @@ feedback = feedback_message[error]
 ==
 
 solution ==
-La solution est $% {{latexsol}} %$.
+La solution est $% {{ sol[latex}} %$.
 ==
 
 wims ==
