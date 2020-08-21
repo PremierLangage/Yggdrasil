@@ -95,9 +95,9 @@ elif formula=="z1b/z2":
 sol = sol.expand()
 
 if formula in ["z^2","1/z"]:
-    text =r"On considère le nombre complexe $! z= %s !$. Calculer $! \displaystyle %s !$ (sous forme algébrique)." % (latexz1,expr)
+    text =r"On considère le nombre complexe $! z= %s !$. Calculer $! \displaystyle %s !$ (sous forme algébrique)." % (latex(z1),expr)
 else:
-    text =r"On considère les nombres complexes $! z_1= %s !$ et $! z_2= %s !$. Calculer $! \displaystyle %s !$ (sous forme algébrique)." % (latexz1,latexz2,expr)
+    text =r"On considère les nombres complexes $! z_1= %s !$ et $! z_2= %s !$. Calculer $! \displaystyle %s !$ (sous forme algébrique)." % (latex(z1),latex(z2),expr)
 ==
 
 input.virtualKeyboard = complex
