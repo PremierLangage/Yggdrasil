@@ -72,7 +72,6 @@ tmp.items = [
             ]
 globals()["best_copy"] = tmp
 radio.append(vars(tmp))
-
 ==
 
 
