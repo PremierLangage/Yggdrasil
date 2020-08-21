@@ -147,7 +147,8 @@ for crit in criteria:
 
 # vérifie que le correcteur a répondu à toutes les réponses textarea des radio
 if comment_by_criteria != "False" and not error:
-    for num in criteria.keys():
+    for crit in criteria:
+        num = str(crit["id"])
         if response["commentaire_"+num] == "":
             error = 1
             break
