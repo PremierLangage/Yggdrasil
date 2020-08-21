@@ -1,4 +1,8 @@
-extends = /Mathematics/template/mathjsxgraph.pl
+# Author : D. Doyen
+# Tags : fractions
+# 19/8/2020
+
+extends = /model/mathjsxgraph.pl
 
 title = Affixe d'un nombre complexe
 
@@ -81,6 +85,7 @@ else:
         drawer.disabled = True
 feedback=""
 ==
+
 
 
 
