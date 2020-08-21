@@ -25,7 +25,6 @@ comment_by_criteria = False
 
 
 before == #|python|
-
 # paramètre data contenant la question et la réponse de l'élève
 data = {"question": "Quel âge avez-vous ?", "answer": "J'ai 20 ans."}
 
