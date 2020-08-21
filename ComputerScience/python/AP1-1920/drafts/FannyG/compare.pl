@@ -141,11 +141,6 @@ for crit in criteria:
             if e['id'] == tmpId:
                 feedback += "<br/>" + e['content']
                 break
-        # calcul des points de la copie
-        for niv in crit['levels']:
-            if response[num]['items'][i]['content'] == niv['description']:
-                note_student += niv['points']
-                break
 if error:
     grade = (0, "Répondez à toutes les questions")
 else:
