@@ -1,4 +1,8 @@
-extends = /model/math.pl
+# Author: D. Doyen
+# Tags: complex numbers
+# 19/8/2020
+
+extends = /model/mathinput.pl
 
 title = Opération sur les nombres complexes
 
@@ -176,6 +180,7 @@ wims ==
 \text{expr=\overline{\left(\frac{1}{z}\right)}}
 \complex{rep=1/(\zb1)}
 ==
+
 
 
 
