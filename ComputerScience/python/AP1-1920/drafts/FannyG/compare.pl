@@ -146,7 +146,7 @@ for crit in criteria:
 #réponse radio de best_copy
 tmpId = response['best_copy']['selection']
 if (not error) and tmpId != '':
-    for i, e in enumerate(response[num]['items']):
+    for i, e in enumerate(response['best_copy']['items']):
             if e['id'] == tmpId:
                 feedback += "<br/>" + e['content']
                 break
