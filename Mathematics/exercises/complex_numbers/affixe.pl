@@ -1,21 +1,18 @@
 # Author : D. Doyen
-# Tags : fractions
+# Tags : complex numbers
 # 19/8/2020
 
 extends = /model/mathjsxgraph.pl
 
 title = Affixe d'un nombre complexe
 
-lang = fr
-
 before ==
-a=randint(-5,5,[0])
-b=randint(-5,5,[0])
-z=a+b*I
+a = randint(-5, 5, [0])
+b = randint(-5, 5, [0])
+z = a + b*I
 ==
 
 jxg.attributes % {"showNavigation":false, "boundingbox":[-6,6,6,-6]}
-
 
 before ==
 jxg.setscript(script_init)
