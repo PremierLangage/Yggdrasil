@@ -67,15 +67,15 @@ for crit in criteria.values():
             note_intermediaire = niv['points']
     note_max += note_intermediaire
 
-radio = []
-for Id in criteria.keys() :
-    tmp = RadioGroup(cid=Id)
-    tmp.description = criteria[Id]["description"]
-    tmp.items = []
-    for i, lvl in enumerate(criteria[Id]["levels"]) :
-        tmp.items.append({"id": str(i), "content": lvl["description"]})
-    globals()[Id] = tmp
-    radio.append(vars(tmp))
+#radio = []
+#for Id in criteria.keys() :
+#    tmp = RadioGroup(cid=Id)
+#    tmp.description = criteria[Id]["description"]
+#    tmp.items = []
+#    for i, lvl in enumerate(criteria[Id]["levels"]) :
+#        tmp.items.append({"id": str(i), "content": lvl["description"]})
+#    globals()[Id] = tmp
+#    radio.append(vars(tmp))
 
 radio = []
 for value in criteria :
