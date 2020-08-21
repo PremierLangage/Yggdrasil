@@ -6,10 +6,11 @@ extends = /model/mathjsxgraph.pl
 
 title = Module et argument
 
+param.lstarg = [0,pi/4,pi/2,3*pi/4,pi,5*pi/4,3*pi/2,7*pi/4,2*pi]
 
 before ==
 modulus = randint(1, 3)
-arg = randitem(param['lstarg'])
+arg = randitem(eval(param['lstarg']))
 a = (modulus*cos(arg)).evalf()
 b = (modulus*sin(arg)).evalf()
 jxg.setscript(script_init)
