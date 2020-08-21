@@ -7,7 +7,7 @@
 #     -data : la réponse de l'élève
 #     -criteria : les critère d'evaluation
 # -balise :
-#     -comment_by_criteria, type -> string, par défault false : option pour avoir un commentaire par critère
+#     -comment_by_criteria, type -> string, par défault False : option pour avoir un commentaire par critère
 # -retourne : un dico avec la valeur pour chaque critère et un commentaire.
 
 #author=Fanny Garnevault
