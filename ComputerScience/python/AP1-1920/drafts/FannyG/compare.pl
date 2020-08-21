@@ -130,7 +130,7 @@ grade = (note, feedback)
 
 error = 0
 feedback = "Réponses : "
-#réponses radio de la grille critériée
+#réponses radios de la grille critériée
 for crit in criteria:
     num = str(crit["id"])
     tmpId = response[num]['selection']
