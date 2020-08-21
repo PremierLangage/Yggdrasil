@@ -86,16 +86,18 @@ form ==#|html|
 <br/><br/>
 
 <div style="clear:both; text-align:center;">
-    {% for value in criteria %}
-        <span style="padding-left:30px;">
-                <b>{{value.description}}</b>
+    {% for rg in radio %} 
+        <br/>
+        <span style="padding-left:30px;font-size:18px;">
+                <b>{{rg.description}}</b>
         </span>
         <br/>
-        <input type="radio" id="form_{{value.id}}" name="f_evaluation{{value.id}}" value="A">
-        <label for="A">A</label><br/>
-        <input type="radio" id="form_{{value.id}}" name="f_evaluation{{value.id}}" value="B">
-        <label for="B">B</label><br/>
-        <br/>
+        {{ rg|component }}
+        {% if comment_by_criteria != "False" %}
+            <p>Justificatif :</p>
+            <textarea id="form_commentaire_{{rg.cid}}" name="justificatif" cols=30% rows="2"></textarea>
+        {% endif %}
+        <br/><br/>
     {% endfor %}
 
     <span style="padding-left:30px;">
