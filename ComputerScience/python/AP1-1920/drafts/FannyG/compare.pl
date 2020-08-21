@@ -145,7 +145,10 @@ for crit in criteria:
 
 #réponse radio de best_copy
 if (not error) and response['best_copy']['selection'] != '':
-    
+    for i, e in enumerate(response[num]['items']):
+            if e['id'] == tmpId:
+                feedback += "<br/>" + e['content']
+                break
 
 if error:
     grade = (0, "Répondez à toutes les questions")
