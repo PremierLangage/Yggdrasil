@@ -73,7 +73,6 @@ Réponse de l'élève :
 <br/>
 
 {% for rg in radio %} 
-    {{rg}}
     <br/>
     <span style="padding-left:30px;font-size:18px;">
             <b>{{rg.description}}</b>
@@ -82,7 +81,7 @@ Réponse de l'élève :
     {{ rg|component }}
     {% if comment_by_criteria != "False" %}
         <p>Justificatif :</p>
-        <textarea id="form_commentaire_{{rg}}" name="justificatif" cols=30% rows="2"></textarea>
+        <textarea id="form_commentaire_{{rg.cid}}" name="justificatif" cols=30% rows="2"></textarea>
     {% endif %}
     <br/><br/>
 {% endfor %}
