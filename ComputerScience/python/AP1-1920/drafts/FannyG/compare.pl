@@ -50,13 +50,13 @@ criteria =[
 ]
 
 radio = []
-for Id in criteria.keys() :
-    tmp = RadioGroup(cid=Id)
-    tmp.description = criteria[Id]["description"]
+for value in criteria :
+    tmp = RadioGroup(cid=str(value["id"]))
+    tmp.description = value["description"]
     tmp.items = []
-    for i, lvl in enumerate(criteria[Id]["levels"]) :
-        tmp.items.append({"id": str(i), "content": lvl["description"]})
-    globals()[Id] = tmp
+    for elem in value["levels"] :
+        tmp.items.append({"id": str(elem["id"]), "content": elem["description"]})
+    globals()[value["id"]] = tmp
     radio.append(vars(tmp))
 ==
 
