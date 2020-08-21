@@ -53,9 +53,7 @@ x, y = jxg.getpoint('M')
 from math import hypot
 if hypot(x-a, y-b)<0.1:
      score=100
-     drawer.script = Template(script_solution).render(locals())
-     drawer.points = {}
-     drawer.disabled = True
+     jxg.addscript(script_solution,globals())
 else:
      score=0
      jxg.addscript(script_solution,globals())
