@@ -142,9 +142,11 @@ for crit in criteria:
             if e['id'] == tmpId:
                 feedback += "<br/>" + e['content']
                 break
-#r&ponse radio de best_copy
+
+#réponse radio de best_copy
 if (not error) and response['best_copy']['selection'] != '':
     
+
 if error:
     grade = (0, "Répondez à toutes les questions")
 else:
