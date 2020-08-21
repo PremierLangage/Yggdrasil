@@ -8,9 +8,8 @@ title = Module et argument
 
 
 before ==
-modulus=randint(1,3)
-lstarg=eval(param['lstarg'])
-arg=randitem(lstarg)
+modulus = randint(1, 3)
+arg = randitem(param['lstarg'])
 a=(modulus*cos(arg)).evalf()
 b=(modulus*sin(arg)).evalf()
 arg_tex=latex(arg)
