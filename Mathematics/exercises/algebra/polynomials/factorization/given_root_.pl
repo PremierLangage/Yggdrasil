@@ -35,31 +35,24 @@ if int(param['degree'])==2:
     elif param['givenroot']=="rat":
         x1=Rational(b,a)
 
-sol=factor(P)
-sol_tex=latex(sol)
-expr=latex(P.expand())
-x1_tex=latex(x1)
+sol = factor(P)
+expr = P.expand()
+
 ==
 
 text ==
 Factoriser le polynôme
-$$P(x)= {{expr}}$$
-en remarquant que $% P({{x1_tex}})=0 %$.
+$$P(x)= {{ expr|latex }}$$
+en remarquant que $% P( {{ x1 |latex }} )=0 %$.
 ==
 
-input =: MathInput
-
-form ==
-{{ input | component }}
-==
-
-evaluator==
-var('x')
-score,error,feedback=eval_poly(input.value,sol,x,form="factorized")
+evaluator ==
+score, error = eval_poly(input.value, sol, var="x", form="factorized")
+feedback = feedback_message[error]
 ==
 
 solution ==
-Une factorisation de cette expression est $! {{sol_tex}} !$.
+Une factorisation de cette expression est $! {{ sol|latex }} !$.
 ==
 
 
