@@ -64,6 +64,8 @@ for value in criteria :
                 ]
     globals()[value["id"]] = tmp
     radio.append(vars(tmp))
+
+Selon vous, quelle est la meilleure copie ?
 ==
 
 
