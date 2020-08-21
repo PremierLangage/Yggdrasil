@@ -6,10 +6,9 @@ extends = /model/mathinput.pl
 
 title = Opération sur les nombres complexes
 
-before ==
-keyboards_JSON['virtualKeyboards']="complexes"
-input.config = keyboards_JSON
+param.formulas % ["z1+z2","z1-z2"]
 
+before ==
 z1=rand_complex_int(5)
 z2=rand_complex_int(5)
 while z1==z2:
@@ -93,9 +92,7 @@ elif formula=="z1b/z2":
         sol=z1*z2b
         expr="\frac{ z_1 }{ \overline{z_2} }"  
 
-latexsol=latex(sol.expand())
-latexz1=latex(z1)
-latexz2=latex(z2)
+sol = sol.expand()
 
 if formula in ["z^2","1/z"]:
     text =r"On considère le nombre complexe $! z= %s !$. Calculer $! \displaystyle %s !$ (sous forme algébrique)." % (latexz1,expr)
@@ -103,14 +100,11 @@ else:
     text =r"On considère les nombres complexes $! z_1= %s !$ et $! z_2= %s !$. Calculer $! \displaystyle %s !$ (sous forme algébrique)." % (latexz1,latexz2,expr)
 ==
 
-input =: MathInput
-
-form ==
-{{ input | component }}
-==
+input.virtualKeyboard = complex
 
 evaluator ==
-score,_,feedback = eval_complex(input.value,sol,form="cartesian")
+score, error = eval_complex(input.value,sol,form="cartesian")
+feedback = feedback_message[error]
 ==
 
 solution ==
