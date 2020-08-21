@@ -139,6 +139,13 @@ if (not error) and tmpId != '':
 else:
     error = 1
 
+# vérifie que le correcteur a répondu à la dernière textarea du commentaire général
+if not error:
+    if response["commentaire"] == "":
+        error = 1
+    else:
+        feedback += "<br/>commentaire : " + response['commentaire']
+
 if error:
     grade = (0, "Répondez à toutes les questions")
 else:
