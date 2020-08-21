@@ -62,7 +62,7 @@ for value in criteria :
                     {"id": "0", "content": "A"},
                     {"id": "1", "content": "B"}
                 ]
-    globals()[value["id"]] = tmp
+    globals()[str(value["id"])] = tmp
     radio.append(vars(tmp))
 tmp = RadioGroup(cid="best_copy")
 tmp.description = "Selon vous, quelle est la meilleure copie ?"
