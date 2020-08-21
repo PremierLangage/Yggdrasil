@@ -78,7 +78,7 @@ for Id in criteria.keys() :
     radio.append(vars(tmp))
 
 radio = []
-for Id in criteria.keys() :
+for value in criteria :
     tmp = RadioGroup(cid=Id)
     tmp.description = criteria[Id]["description"]
     tmp.items = []
