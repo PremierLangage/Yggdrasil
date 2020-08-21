@@ -1,9 +1,5 @@
 
 
-
-
-
-
 # /!\data et criteria à supprimer après les tests (dans la balise before)
 
 # permet de faire évaluer une réponse (textuelle ou autre) d'un élève par qqun d'autre par le biais d'une grille critériée 
