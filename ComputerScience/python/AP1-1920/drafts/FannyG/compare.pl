@@ -130,6 +130,7 @@ grade = (note, feedback)
 
 error = 0
 feedback = "Réponses : "
+#réponses radio de la grille critériée
 for crit in criteria:
     num = str(crit["id"])
     tmpId = response[num]['selection']
@@ -141,6 +142,7 @@ for crit in criteria:
             if e['id'] == tmpId:
                 feedback += "<br/>" + e['content']
                 break
+#r&ponse radio de best_copy
 if error:
     grade = (0, "Répondez à toutes les questions")
 else:
