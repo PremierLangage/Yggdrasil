@@ -57,8 +57,6 @@ for value in criteria :
                     {"id": "0", "content": "A"},
                     {"id": "1", "content": "B"}
                 ]
-    for elem in value["levels"] :
-        tmp.items.append({"id": str(elem["id"]), "content": elem["description"]})
     globals()[value["id"]] = tmp
     radio.append(vars(tmp))
 ==
