@@ -1,13 +1,16 @@
-extends = /model/math.pl
+# Author: D. Doyen
+# Tags: polynomials
+# 19/8/2020
+
+extends = /model/mathinput.pl
 
 title = Factorisation
 
-lang = fr
+param.degree % 2
+param.roots = int
+param.givenroot = int
 
 before ==
-keyboards_JSON['virtualKeyboards']="elementary"
-input.config = keyboards_JSON
-
 var('x')
 
 q,r,s=list_randint_norep(3,1,5,[0])
@@ -175,6 +178,7 @@ Factoriser le polynôme \(P(x)=\poly\).<br class="spacer"/>
 \answer{}{\polyrep}{type=raw}{option=noanalyzeprint}
 \text{polyrep=wims(rawmath \polyrep)}
 ==
+
 
 
 
