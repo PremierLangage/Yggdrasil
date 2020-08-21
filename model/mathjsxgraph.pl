@@ -1,9 +1,7 @@
 extends = /model/math.pl
 
-@ /utils/components/mathinput.py [custommathinput.py]
-
-input =: MathInput
-input.decorator = CustomMathInput
+jxg =: MathDrawer
+jxg.decorator = CustomJSXGraph
 
 input.virtualKeyboards = elementary
 
