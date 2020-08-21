@@ -1,6 +1,7 @@
 extends = /model/math.pl
 
 jxg =: MathDrawer
+@ /utils/components/jsxgraph.py [customjsxgraph.py]
 jxg.decorator = CustomJSXGraph
 
 
@@ -9,7 +10,7 @@ title =
 text = 
 
 form ==
-{{ jxg|component}}
+{{ jxg|component }}
 ==
 
 settings.feedback = rightwrong
