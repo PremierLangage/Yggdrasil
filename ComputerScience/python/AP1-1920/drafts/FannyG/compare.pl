@@ -93,11 +93,7 @@ form ==#|html|
         </span>
         <br/>
         {{ rg|component }}
-        {% if comment_by_criteria != "False" %}
-            <p>Justificatif :</p>
-            <textarea id="form_commentaire_{{rg.cid}}" name="justificatif" cols=30% rows="2"></textarea>
-        {% endif %}
-        <br/><br/>
+        <br/>
     {% endfor %}
 
     <span style="padding-left:30px;">
