@@ -1,8 +1,11 @@
-extends = /Mathematics/template/mathjsxgraph.pl
+# Author : D. Doyen
+# Tags : complex numbers
+# 19/8/2020
+
+extends = /model/mathjsxgraph.pl
 
 title = Module et argument
 
-lang = fr
 
 before ==
 modulus=randint(1,3)
@@ -14,22 +17,12 @@ arg_tex=latex(arg)
 ==
 
 text ==
-Placer le point $% M %$ dont l'affixe a pour module $% {{modulus}} %$ et  pour argument $% \displaystyle {{arg_tex}} %$ dans le plan complexe.
+Placer le point $% M %$ dont l'affixe a pour module $! {{modulus}} !$ et  pour argument $% \displaystyle {{arg_tex}} %$ dans le plan complexe.
 ==
 
-drawer.attributes %=
-{
-    "boundingbox": [
-      -3.5,
-      3.5,
-      3.5,
-      -3.5
-    ],
-    "showNavigation": false
-  }
-==
+jxg.attributes % {"showNavigation":false, "boundingbox":[-3.5,3.5,3.5,-3.5]}
 
-drawer.script ==
+script_init ==
 JXG.Options.layer['point'] = 1;
 board.create('grid',[],{gridX:0.5,gridY:0.5});
 board.create('circle',[[0,0],1],{strokeWidth:0.6,fixed:true,strokeColor:'gray'});
@@ -86,5 +79,6 @@ else:
         drawer.disabled = True
 feedback=""
 ==
+
 
 
