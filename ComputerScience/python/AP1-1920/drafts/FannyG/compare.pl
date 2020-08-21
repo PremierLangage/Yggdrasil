@@ -125,6 +125,29 @@ except:
     feedback = "Répondez à toutes les questions"
     note = 0
 grade = (note, feedback)
+
+feedback = "Réponses : "
+for crit in criteria:
+    num = str(crit["id"])
+    tmpId = response[num]['selection']
+    if tmpId == '':
+        error = 1
+        break
+    else:
+        for i, e in enumerate(response[num]['items']):
+            if e['id'] == tmpId:
+                feedback += "<br/>" + e['content']
+                break
+        # calcul des points de la copie
+        for niv in crit['levels']:
+            if response[num]['items'][i]['content'] == niv['description']:
+                note_student += niv['points']
+                break
+if error:
+    grade = (0, "Répondez à toutes les questions")
+else:
+    feedback += "<br/>note = "+str(response['note'])
+    grade = (100, feedback)
 ==
 
 
