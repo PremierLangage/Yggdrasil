@@ -3,7 +3,7 @@
 @ /grader/evaluator.py [grader.py]
 @ /builder/before.py [builder.py]
 
-title = Radio group
+title = Evaluation question
 text  = 
 
 # balise comment_by_criteria : option pour avoir un commentaire par critère
