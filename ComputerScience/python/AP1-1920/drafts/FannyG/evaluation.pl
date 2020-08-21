@@ -129,7 +129,7 @@ note_student = 0
 # en même temps on calcule les points de la copie évaluée en fonction des réponses cliquées
 feedback = "Réponses : "
 for value in criteria:
-    num = str(value["id"]
+    num = str(value["id"])
     tmpId = response[num]['selection']
     if tmpId == '':
         error = 1
