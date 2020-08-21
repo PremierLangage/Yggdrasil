@@ -10,13 +10,11 @@ before ==
 a = randint(-5, 5, [0])
 b = randint(-5, 5, [0])
 z = a + b*I
+jxg.setscript(script_init)
 ==
 
 jxg.attributes % {"showNavigation":false, "boundingbox":[-6,6,6,-6]}
 
-before ==
-jxg.setscript(script_init)
-==
 
 script_init ==
 board.create('grid',[],{gridX:1,gridY:1});
