@@ -17,7 +17,11 @@ z=a+b*I
 jxg.attributes % {"showNavigation":false, "boundingbox":[-6,6,6,-6]}
 
 
-drawer.script ==
+before ==
+jxg.setscript(script_init)
+==
+
+script_init ==
 board.create('grid',[],{gridX:1,gridY:1});
 board.create('axis',[[0,0],[1,0]],{name:'Re',withLabel:true,label:{position:'urt',offset:[-5,10]},ticks:{visible: false}});
 board.create('axis',[[0,0],[0,1]],{name:'Im',withLabel:true,label:{position:'urt',offset:[10,0]},ticks:{visible: false}});
