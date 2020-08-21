@@ -11,21 +11,11 @@ lang = fr
 before ==
 a=randint(-5,5,[0])
 b=randint(-5,5,[0])
-z=a+b*sp.I
-z_tex=latex(z)
+z=a+b*I
 ==
 
-drawer.attributes %=
-{
-    "boundingbox": [
-      -6,
-      6,
-      6,
-      -6
-    ],
-    "showNavigation": false
-  }
-==
+jxg.attributes % {"showNavigation":false, "boundingbox":[-6,6,6,-6]}
+
 
 drawer.script ==
 board.create('grid',[],{gridX:1,gridY:1});
@@ -51,7 +41,7 @@ board.on('down', down)
 
 
 text ==
-Placer le point $% M %$ d'affixe $%{{ z_tex }}%$ dans le plan ci-dessous.
+Placer le point $% M %$ d'affixe $%{{ z|latex }}%$ dans le plan ci-dessous.
 ==
 
 script_solution ==
