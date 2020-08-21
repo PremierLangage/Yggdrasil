@@ -54,8 +54,8 @@ for value in criteria :
     tmp = RadioGroup(cid=str(value["id"]))
     tmp.description = value["description"]
     tmp.items = [
-                 {"id": str(elem["id"]), "content": elem["description"]},
-                 {"id": str(elem["id"]), "content": elem["description"]}
+                    {"id": str(elem["id"]), "content": elem["description"]},
+                    {"id": str(elem["id"]), "content": elem["description"]}
                 ]
     for elem in value["levels"] :
         tmp.items.append({"id": str(elem["id"]), "content": elem["description"]})
