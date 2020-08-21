@@ -150,6 +150,8 @@ if (not error) and tmpId != '':
             if e['id'] == tmpId:
                 feedback += "<br/>" + e['content']
                 break
+else
+    error = 1
 
 if error:
     grade = (0, "Répondez à toutes les questions")
