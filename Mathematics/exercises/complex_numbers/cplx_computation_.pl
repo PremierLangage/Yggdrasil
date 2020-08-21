@@ -16,7 +16,7 @@ while z1==z2:
 z1b=conjugate(z1)
 z2b=conjugate(z2)
 
-formula=randitem(eval(param['formulas']))
+formula=randitem(param['formulas'])
 
 if formula=="z1+z2":
     sol=z1+z2
