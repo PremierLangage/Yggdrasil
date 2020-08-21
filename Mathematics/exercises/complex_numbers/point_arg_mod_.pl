@@ -10,13 +10,13 @@ title = Module et argument
 before ==
 modulus = randint(1, 3)
 arg = randitem(param['lstarg'])
-a=(modulus*cos(arg)).evalf()
-b=(modulus*sin(arg)).evalf()
-arg_tex=latex(arg)
+a = (modulus*cos(arg)).evalf()
+b = (modulus*sin(arg)).evalf()
+jxg.setscript(script_init)
 ==
 
 text ==
-Placer le point $% M %$ dont l'affixe a pour module $! {{modulus}} !$ et  pour argument $% \displaystyle {{arg_tex}} %$ dans le plan complexe.
+Placer le point $% M %$ dont l'affixe a pour module $! {{modulus}} !$ et  pour argument $% \displaystyle {{arg|latex}} %$ dans le plan complexe.
 ==
 
 jxg.attributes % {"showNavigation":false, "boundingbox":[-3.5,3.5,3.5,-3.5]}
