@@ -60,7 +60,7 @@ criteria =[
 ]
 
 note_max = 0
-for crit in criteria.values():
+for crit in criteria:
     note_intermediaire = crit['levels'][0]['points']
     for niv in crit['levels']:
         if note_intermediaire < niv['points']:
