@@ -13,6 +13,11 @@
 @ /builder/before.py [builder.py]
 
 
+title = Comparaison de deux copies
+
+text = 
+
+
 
 before==#|python|
 # paramètre data contenant la question et la réponse de l'élève
@@ -59,13 +64,6 @@ for value in criteria :
                 ]
     globals()[value["id"]] = tmp
     radio.append(vars(tmp))
-==
-
-
-title = Comparaison de deux copies
-
-
-text ==
 ==
 
 
