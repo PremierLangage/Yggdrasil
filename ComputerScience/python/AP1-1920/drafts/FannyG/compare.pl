@@ -126,6 +126,9 @@ except:
     note = 0
 grade = (note, feedback)
 
+
+
+error = 0
 feedback = "Réponses : "
 for crit in criteria:
     num = str(crit["id"])
