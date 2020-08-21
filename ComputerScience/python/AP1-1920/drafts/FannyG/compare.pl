@@ -150,7 +150,7 @@ if (not error) and tmpId != '':
             if e['id'] == tmpId:
                 feedback += "<br/>" + e['content']
                 break
-else
+else:
     error = 1
 
 if error:
