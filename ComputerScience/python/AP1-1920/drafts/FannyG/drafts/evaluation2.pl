@@ -81,7 +81,7 @@ Réponse de l'élève :
     {{ rg|component }}
     {% if comment_by_criteria != "False" %}
         <p>Justificatif :</p>
-        <textarea id="form_commentaire_{{id}}" name="justificatif" cols=30% rows="2"></textarea>
+        <textarea id="form_commentaire_{{rg}}" name="justificatif" cols=30% rows="2"></textarea>
     {% endif %}
     <br/><br/>
 {% endfor %}
@@ -145,4 +145,5 @@ else:
     feedback += "<br/>note = "+str(response['note'])
     grade = (100, feedback)
 ==
+
 
