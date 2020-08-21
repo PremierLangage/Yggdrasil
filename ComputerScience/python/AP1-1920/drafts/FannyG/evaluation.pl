@@ -128,7 +128,8 @@ note_student = 0
 # vérifie que le correcteur a répondu à toutes les réponses radio
 # en même temps on calcule les points de la copie évaluée en fonction des réponses cliquées
 feedback = "Réponses : "
-for num in criteria.keys():
+for value in criteria:
+    num = str(value["id"]
     tmpId = response[num]['selection']
     if tmpId == '':
         error = 1
