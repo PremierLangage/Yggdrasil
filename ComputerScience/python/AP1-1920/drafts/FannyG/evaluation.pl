@@ -82,7 +82,7 @@ for value in criteria :
     tmp = RadioGroup(cid=str(value["id"]))
     tmp.description = value["description"]
     tmp.items = []
-    for i, lvl in enumerate(criteria[Id]["levels"]) :
+    for elem in value["levels"] :
         tmp.items.append({"id": str(i), "content": lvl["description"]})
     globals()[Id] = tmp
     radio.append(vars(tmp))
