@@ -45,7 +45,7 @@ Placer le point $% M %$ d'affixe $%{{ z|latex }}%$ dans le plan ci-dessous.
 
 script_solution ==
 // board.create('point',[{{a}}, {{b}}],{size:2,name:'M',color:'green'});
-board.create('point',[{{x}}, {{y}}],{size:2,name:'',color:'red'});
+// board.create('point',[{{x}}, {{y}}],{size:2,name:'',color:'red'});
 ==
 
 evaluator ==
@@ -53,10 +53,10 @@ x, y = jxg.getpoint('M')
 from math import hypot
 if hypot(x-a, y-b) < 0.1:
     score = 100
-    #jxg.addscript(script_solution, globals())
+    jxg.addscript(script_solution, globals())
 else:
     score = 0
-    #jxg.addscript(script_solution, globals())
+    jxg.addscript(script_solution, globals())
 feedback=""
 ==
 
