@@ -51,12 +51,12 @@ board.create('point',[{{x}}, {{y}}],{size:2,name:'',color:'red'});
 evaluator ==
 x, y = jxg.getpoint('M')
 from math import hypot
-if hypot(x-a, y-b)<0.1:
-     score=100
-     jxg.addscript(script_solution,globals())
+if hypot(x-a, y-b) < 0.1:
+    score = 100
+    #jxg.addscript(script_solution, globals())
 else:
-     score=0
-     jxg.addscript(script_solution,globals())
+    score = 0
+    #jxg.addscript(script_solution, globals())
 feedback=""
 ==
 
@@ -79,6 +79,7 @@ else:
         drawer.disabled = True
 feedback=""
 ==
+
 
 
 
