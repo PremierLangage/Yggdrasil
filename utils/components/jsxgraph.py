@@ -18,13 +18,14 @@ class CustomJSXGraph(Component):
         """
         Add a script and render it.
         """
-        self.script += Template(script).render(dic)
+        self.script += "\n" + Template(script).render(dic)
 
     def getpoint(self, name):
         """
         Set script and render it.
         """
         return (self.points[name]['x'], self.points[name]['y'])
+
 
 
 
