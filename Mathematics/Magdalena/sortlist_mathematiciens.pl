@@ -11,7 +11,7 @@ import csv
 with open('mathematiciens.csv', newline='') as file:
     rows = list(csv.DictReader(file, delimiter=','))
 
-lst = rd.sample(range(len(rows)), 5)
+lst = rd.sample(range(len(rows)), 7)
 lst.sort()
 sortlist.setdata_from_list([rows[i]["nom"] for i in lst])
 ==
@@ -34,6 +34,7 @@ score = sortlist.eval()
 ==
 
 settings.feedback = lightscore
+
 
 
 
