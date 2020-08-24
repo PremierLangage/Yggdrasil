@@ -516,7 +516,7 @@ def add_feedback(eval):
             return score, error, ""
     return eval_with_feedback
 
-def eval_expr(strans, sol, checkratsimp=True, authorized_func=None, local_dict={}):
+def eval_expr(strans, sol, checkratsimp=True, modulo=None authorized_func=None, local_dict={}):
     r"""
     Evaluate an answer when the solution is an expression.
     
@@ -550,7 +550,7 @@ def eval_expr(strans, sol, checkratsimp=True, authorized_func=None, local_dict={
         return (-1, "NotExpr")
     if authorized_func is not None and not func_in_expr(ans).issubset(authorized_func):
         return (-1, "UnauthorizedFunc")
-    if not equal(ans, sol):
+    if not equal(ans, sol, modulo):
         return (0, "NotEqual")
     if checkratsimp and not is_rat_simp(ans):
         return (-1, "NotRatSimp")
@@ -809,6 +809,7 @@ def ans_antiderivative(strans,sol,x,local_dict={}):
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
+
 
 
 
