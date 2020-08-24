@@ -1,15 +1,14 @@
+# Author: D. Doyen
+# Tags: inequalities
+# 19/8/2020
+
 extends = /model/mathinput.pl
 
 title = Inéquation produit/quotient
 
-lang = fr
-
 param.roots=int
 
 before ==
-keyboards_JSON['virtualKeyboards']="sets"
-input.config = keyboards_JSON
-
 var('x')
 
 ok=False
@@ -35,24 +34,24 @@ elif param['type']=="quotient":
     expr=P/Q
 
 ineq=randitem([expr>=0,expr>0,expr<=0,expr<0])
-ineq_tex = latex(ineq)
 sol=solveset(ineq,x,domain=S.Reals)
-sol_tex = latex(sol)
 ==
 
 text ==
-Déterminer l'ensemble des réels $% x %$ tels que $$ {{ineq_tex}}. $$ Ecrire cet ensemble sous la forme d'un intervalle ou d'une réunion d'intervalles.
+Déterminer l'ensemble des réels $% x %$ tels que $$ {{ineq|latex}}. $$ Ecrire cet ensemble sous la forme d'un intervalle ou d'une réunion d'intervalles.
 ==
 
 evaluator==
-var('x')
-sol = solveset(ineq,x,domain=S.Reals)
-score,feedback,_=eval_rset(input.value, sol)
+#var('x')
+#sol = solveset(ineq,x,domain=S.Reals)
+score, error = eval_rset(input.value, sol)
+feedback = feedback_message[error]
 ==
 
 solution ==
-La solution est $% {{sol_tex}} %$.
+La solution est $% {{sol|latex}} %$.
 ==
+
 
 
 
