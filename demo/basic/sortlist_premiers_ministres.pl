@@ -1,14 +1,14 @@
 extends = /model/basic.pl
 
-title = Mathématiciens (SortList)
+title = premiers ministres (SortList)
 
-@ mathematiciens.csv
+@ premiers_ministres.csv
 
 before ==
 import random as rd
 import csv
 
-with open('mathematiciens.csv', newline='') as file:
+with open('premiers_ministres.csv', newline='') as file:
     rows = list(csv.DictReader(file, delimiter=','))
 
 lst = rd.sample(range(len(rows)), 5)
