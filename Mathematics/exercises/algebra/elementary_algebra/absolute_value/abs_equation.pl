@@ -17,6 +17,6 @@ Séparer les différentes solutions par une virgule.
 ==
 
 evaluator ==
-score, error = eval_set(input.value,lstsol)
+score, error = eval_set(input.value, lstsol, wobracket=True)
 feedback = feedback_message[error]
 ==
