@@ -662,7 +662,7 @@ def eval_poly(strans, sol, var='x', domain='R', form='', checkratsimp=True, imag
         return (-1, "PolyNotRatSimp")
     return (100, "Success")
 
-def eval_set(strans, sol, checkratsimp=True, bracket=True, local_dict={}):
+def eval_set(strans, sol, checkratsimp=True, wobracket=False, local_dict={}):
     """
     Evaluate an answer when the solution is a finite set.
     
@@ -685,7 +685,7 @@ def eval_set(strans, sol, checkratsimp=True, bracket=True, local_dict={}):
     """
     sol = FiniteSet2struct(sol)
     try:
-        if not bracket:
+        if wobracket:
             strans = "\{ " + strans + " \}"
         ans = latex2sympy(strans, local_dict)
     except:
