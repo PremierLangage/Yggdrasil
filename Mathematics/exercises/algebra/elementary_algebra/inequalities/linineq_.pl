@@ -1,13 +1,10 @@
-extends = /Mathematics/template/mathexpr.pl
+# Author: D. Doyen
+# Tags: complex numbers
+# 19/8/2020
 
 title = Inéquation linéaire
 
-lang = fr
-
 before ==
-keyboards_JSON['virtualKeyboards']="sets"
-input1.config = keyboards_JSON
-
 a,c=list_randint_norep(2,-6,6,[0,1,-1])
 b,d=list_randint(2,-6,6,[0])
 var('x')
@@ -35,6 +32,7 @@ score,_,feedback=ans_rset(input1.value,sol)
 solution==
 Cet ensemble est $! {{sol_tex}} !$.
 ==
+
 
 
 
