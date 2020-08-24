@@ -8,6 +8,8 @@ title = Inéquation produit/quotient
 
 param.roots=int
 
+param.bounds = int
+
 before ==
 var('x')
 
