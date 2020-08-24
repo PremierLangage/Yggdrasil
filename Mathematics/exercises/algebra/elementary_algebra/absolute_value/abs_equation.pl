@@ -16,13 +16,7 @@ Déterminer la ou les solutions de l'équation $$ {{lhs|latex}} = {{d}}. $$
 Séparer les différentes solutions par une virgule.
 ==
 
-evaluator==
-score,_,feedback=ans_set_expr(input1.value,lstsol,formal=False)
+evaluator ==
+score, error = eval_set(input.value,lstsol)
+feedback = feedback_message[error]
 ==
-
-
-
-
-
-
-
