@@ -1,5 +1,5 @@
 # Author: D. Doyen
-# Tags: complex numbers
+# Tags: inequalities
 # 19/8/2020
 
 extends = /model/mathinput.pl
