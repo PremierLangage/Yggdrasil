@@ -2,6 +2,8 @@
 # Tags: complex numbers
 # 19/8/2020
 
+extends = /model/mathinput.pl
+
 title = Inéquation linéaire
 
 param.otherside = constant
