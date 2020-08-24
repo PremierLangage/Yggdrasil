@@ -6,7 +6,7 @@ extends = /model/mathinput.pl
 
 title = Inéquation produit/quotient
 
-param.roots=int
+param.type = product
 
 param.bounds = int
 
