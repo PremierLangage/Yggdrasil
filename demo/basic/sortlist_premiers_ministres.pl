@@ -1,14 +1,14 @@
 extends = /model/basic.pl
 
-title = Premiers ministres (SortList)
+title = Mathématiciens (SortList)
 
-@ premiers_ministres.csv
+@ mathematiciens.csv
 
 before ==
 import random as rd
 import csv
 
-with open('premiers_ministres.csv', newline='') as file:
+with open('mathematiciens.csv', newline='') as file:
     rows = list(csv.DictReader(file, delimiter=','))
 
 lst = rd.sample(range(len(rows)), 5)
@@ -34,6 +34,7 @@ score = sortlist.eval()
 ==
 
 settings.feedback = lightscore
+
 
 
 
