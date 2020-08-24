@@ -23,6 +23,8 @@ ineq=randitem([f>=g,f>g,f<=g,f<g,g>=f,g>f,g<=f,g<f])
 sol=solveset(ineq,x,domain=S.Reals)
 ==
 
+input.virtualKeyboards = sets
+
 text ==
 Déterminer l'ensemble des réels $% x %$ tels que $$ {{ ineq|latex }}. $$ Ecrire cet ensemble sous la forme d'un intervalle.
 ==
