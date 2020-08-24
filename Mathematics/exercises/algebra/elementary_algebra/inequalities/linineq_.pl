@@ -4,6 +4,8 @@
 
 title = Inéquation linéaire
 
+param.otherside = constant
+
 before ==
 a,c=list_randint_norep(2,-6,6,[0,1,-1])
 b,d=list_randint(2,-6,6,[0])
