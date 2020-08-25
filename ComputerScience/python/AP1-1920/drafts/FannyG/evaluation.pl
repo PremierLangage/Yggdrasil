@@ -21,7 +21,7 @@ title = Evaluation question
 text  = 
 
 # balise comment_by_criteria : option pour avoir un commentaire par critère
-comment_by_criteria = False
+comment_by_criteria = True
 
 
 before == #|python|
@@ -164,4 +164,5 @@ else:
     feedback += "<br/>note = "+str(response['note'])
     grade = (100, feedback)
 ==
+
 
