@@ -15,8 +15,14 @@ text  =
 before ==#|python|
 evals ={
     {
-        "note":
-    }
+        "note": 50
+    },
+    {
+        "note": 25
+    },
+    {
+        "note": 75
+    },
 }
 ==
 
