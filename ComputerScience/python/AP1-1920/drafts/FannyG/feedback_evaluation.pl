@@ -14,11 +14,13 @@ text  =
 
 before ==#|python|
 from math import ceil
+
 evals =[
     {"note": 82},
     {"note": 25},
     {"note": 14},
 ]
+
 nb_note = 0
 tmp = 0
 for e in evals:
