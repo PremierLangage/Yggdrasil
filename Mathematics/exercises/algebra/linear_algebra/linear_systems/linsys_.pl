@@ -21,7 +21,7 @@ else:
 sol = list(linsolve((A, B)))[0]
 sol_tex = latex(sol)
 
-sys_tex=latexsys(A,B)
+sys_tex=latex_linsys(A,B)
 lstvar=",".join(["x","y","z","t","u","v"][:n])
 
 tuple_name=["couple","triplet","quadruplet","quintuplet"][n-2]
@@ -42,6 +42,7 @@ if error == "NotTuple" or error == "WrongSize":
 solution == 
 La solution est $! {{sol_tex}} !$.
 ==
+
 
 
 
