@@ -63,7 +63,7 @@ Ecrire $% {{expr}} %$ sous la forme  $% \ln(a)%$, où $%a%$ est un nombre.
 evaluator==
 def ans_eval(strans,sol):
     try:
-        ans=str2expr(strans)
+        ans = latex2sympy(strans)
     except:
         return (-1,"FailedConversion","Votre réponse n'est pas sous la forme attendue")
     if type(ans)!=sp.log:
@@ -72,7 +72,7 @@ def ans_eval(strans,sol):
         return (0,"","")
     return (100,"","")
 
-score,_,feedback=ans_eval(input1.value,sol)
+score,_,feedback=ans_eval(input.value,sol)
 ==
 
 
