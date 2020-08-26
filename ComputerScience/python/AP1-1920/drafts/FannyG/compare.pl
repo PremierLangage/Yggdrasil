@@ -1,4 +1,7 @@
 
+
+# /!\data et criteria à supprimer après les tests (dans la balise before)
+
 # permet d'évaluer deux réponses (textuelle ou autre) de deux élèves par qqun d'autre par le biais d'une grille critériée 
 # -paramètres : 
 #     -les réponses des deux élèves : balise data
@@ -151,6 +154,7 @@ if error:
 else:
     grade = (100, feedback)
 ==
+
 
 
 
