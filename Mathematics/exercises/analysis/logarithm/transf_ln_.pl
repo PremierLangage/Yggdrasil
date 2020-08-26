@@ -68,7 +68,7 @@ def ans_eval(strans,sol):
         return (-1,"FailedConversion","Votre réponse n'est pas sous la forme attendue")
     if type(ans)!=sp.log:
         return (-1,"","Votre réponse n'est pas sous la forme attendue")
-    if not is_equal(ans.args[0],sol):
+    if not equal(ans.args[0],sol):
         return (0,"","")
     return (100,"","")
 
