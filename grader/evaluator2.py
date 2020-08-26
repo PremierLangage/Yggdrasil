@@ -14,6 +14,12 @@ except ModuleNotFoundError:
     CustomEncoder = PickleEncoder
     CustomDecoder = None
 
+# Import the custom Jinja environnement
+try:
+    from jinja_env import CustomEnv as Env
+except ModuleNotFoundError:
+    Env = ComponentEnv
+
 try:
     from namespace import namespace
 except ModuleNotFoundError:
