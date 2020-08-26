@@ -8,7 +8,7 @@
 #     -criteria : les critère d'evaluation
 # -balise :
 #     -comment_by_criteria, type -> string, par défault False : option pour avoir un commentaire par critère
-# -retourne : un dico avec la valeur pour chaque critère (et potentiel leur commentaire respective), un commentaire et une note.
+# -retourne : un dico avec la valeur pour chaque critère (et potentiel commentaire respectif), un commentaire et une note.
 
 #author=Fanny Garnevault
 
@@ -164,5 +164,6 @@ else:
     feedback += "<br/>note = "+str(response['note'])
     grade = (100, feedback)
 ==
+
 
 
