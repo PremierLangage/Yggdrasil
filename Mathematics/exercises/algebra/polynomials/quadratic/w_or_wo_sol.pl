@@ -1,9 +1,6 @@
-extends = /Mathematics/template/mathcheckbox.pl
+extends = /model/checkbox.pl
 
 title = Equations quadratiques
-
-lang = fr
-
 
 before ==
 var('x')
@@ -26,3 +23,4 @@ component.items = choices
 text ==
 Sélectionner les équations qui n'ont pas de solution réelle dans la liste ci-dessous.
 ==
+
