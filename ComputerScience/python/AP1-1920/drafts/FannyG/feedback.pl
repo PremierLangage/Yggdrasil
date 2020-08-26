@@ -14,9 +14,9 @@ text  =
 
 before ==#|python|
 evals =[
-    {"note": 50},
+    {"note": 82},
     {"note": 25},
-    {"note": 75},
+    {"note": 14},
 ]
 nb_note = 0
 tmp = 0
