@@ -13,6 +13,7 @@ text  =
 
 
 before ==#|python|
+from math import ceil
 evals =[
     {"note": 82},
     {"note": 25},
@@ -23,7 +24,7 @@ tmp = 0
 for e in evals:
     tmp += e['note']
     nb_note += 1
-note_final = tmp/nb_note
+note_final = ceil(tmp/nb_note)
 ==
 
 
