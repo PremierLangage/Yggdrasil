@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathexpr.pl
+extends = /model/mathinput.pl
 
 title = Transformation d'expressions avec logarithmes
 
@@ -19,9 +19,6 @@ c-math-input {
 ==
 
 before ==
-keyboards_JSON['virtualKeyboards']="functions"
-input1.config = keyboards_JSON
-
 p,q=list_randint_norep(2,2,5)
 formula=randitem(eval(param['formulas']))
 if formula=="u*ln(p)":
@@ -114,6 +111,7 @@ wims ==
 
 
 ==
+
 
 
 
