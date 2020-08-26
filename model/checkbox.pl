@@ -25,6 +25,7 @@ form ==
 ==
 
 evaluator ==
+feedback = " "
 score = checkbox.eval()
 ==
 
