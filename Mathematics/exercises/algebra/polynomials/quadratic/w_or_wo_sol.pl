@@ -16,7 +16,7 @@ for i in range(3):
         sol.append(i)
     sides = randitem([[a*x**2+b*x+c,0],[a*x**2+b*x,-c],[a*x**2,-b*x-c],[a*x**2+c,-b*x]])
     rd.shuffle(sides)
-    s = r"$$ %s $$" % latex(Eq(*sides))
+    s = r"$! %s !$" % latex(Eq(*sides))
     choices.append(s)
 checkbox.setitems(choices)
 checkbox.setsol_from_index(sol)
