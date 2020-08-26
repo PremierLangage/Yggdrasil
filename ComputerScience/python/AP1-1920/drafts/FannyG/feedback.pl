@@ -30,7 +30,7 @@ note_final = ceil(tmp/nb_note)
 
 form  == #|html|
 Votre copie a reçu {{nb_note}} d'évaluations.
-Note moyenne : {{note_final}}
+Note moyenne : {{note_final}}/100
 ==
 
 
