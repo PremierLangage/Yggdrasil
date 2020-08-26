@@ -1,4 +1,5 @@
 extends = /model/checkbox.pl
+extends = /model/math.pl
 
 title = Equations quadratiques
 
