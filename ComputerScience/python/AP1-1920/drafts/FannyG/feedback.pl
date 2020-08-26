@@ -6,12 +6,14 @@
 @ /grader/evaluator.py [grader.py]
 @ /builder/before.py [builder.py]
 
+
+enonce = Quel âge avez-vous ?
 title = Feedback evaluation {{enonce}}
 text  = 
 
 
 before ==#|python|
-enonce = "Quel âge avez-vous ?"
+
 evals ={
     {
         "note":
