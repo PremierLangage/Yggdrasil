@@ -24,6 +24,12 @@ evals ={
         "note": 75
     },
 }
+nb_note = 0
+tmp = 0
+for e in evals:
+    tmp += e['note']
+    nb_note += 1
+note_final = tmp/nb_note
 ==
 
 
