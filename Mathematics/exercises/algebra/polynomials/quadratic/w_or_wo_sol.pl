@@ -19,7 +19,7 @@ for i in range(3):
     s = r"$$ %s $$" % latex(Eq(*sides))
     choices.append(s)
 checkbox.setitems(choices)
-checkbox.setsol_from_index(choices)
+checkbox.setsol_from_index(sol)
 ==
 
 text ==
