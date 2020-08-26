@@ -700,7 +700,6 @@ def eval_set(strans, sol, checkratsimp=True, wobracket=False, local_dict={}):
         return (-1, "NotRatSimp")
     return (100, "Success")
 
-@add_feedback
 def eval_tuple(strans, sol, checksize=False, local_dict={}):
     """
     Evaluate an answer when the solution is a tuple/vector.
