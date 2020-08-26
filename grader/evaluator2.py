@@ -90,7 +90,7 @@ if __name__ == "__main__":
 
         feedback=" "
         if 'feedback' in dic:
-            feedback = dic['feedback'] + " "
+            feedback = str(dic['feedback']) + " "
 
     if score >= 0:
         dic['internals']['attempt'] = dic['internals']['attempt'] + 1
@@ -122,6 +122,7 @@ if __name__ == "__main__":
     print(int(score))
     
     sys.exit(0)
+
 
 
 
