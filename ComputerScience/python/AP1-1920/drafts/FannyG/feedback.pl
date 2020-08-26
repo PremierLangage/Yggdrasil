@@ -21,5 +21,5 @@ form  == #|html|
 
 
 evaluator ==#|python|
-
+grade = (100, "")
 ==
