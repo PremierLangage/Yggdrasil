@@ -13,17 +13,11 @@ text  =
 
 
 before ==#|python|
-evals ={
-    {
-        "note": 50
-    },
-    {
-        "note": 25
-    },
-    {
-        "note": 75
-    },
-}
+evals =[
+    {"note": 50},
+    {"note": 25},
+    {"note": 75},
+]
 nb_note = 0
 tmp = 0
 for e in evals:
