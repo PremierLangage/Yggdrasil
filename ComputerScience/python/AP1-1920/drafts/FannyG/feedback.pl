@@ -6,7 +6,7 @@
 @ /grader/evaluator.py [grader.py]
 @ /builder/before.py [builder.py]
 
-title = Evaluation question
+title = Feedback evaluation
 text  = 
 
 
