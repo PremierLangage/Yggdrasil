@@ -5,3 +5,14 @@
 @ /utils/sandboxio.py
 @ /grader/evaluator.py [grader.py]
 @ /builder/before.py [builder.py]
+
+title = Evaluation question
+text  = 
+
+before ==
+
+==
+
+evaluator ==
+
+==
