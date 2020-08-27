@@ -1,6 +1,7 @@
 
 extends=../compare.pl
 
+#dictionnaire de la question et des reponses
 data.question= Quel âge avez-vous ?
 data.answer1= J'ai 20 ans.
 data.answer2= g 20 ten.
@@ -34,5 +35,8 @@ criteria =[
       ] 
    }
 ]
-criteria[0] = {"id":0,"description":"Age donné","levels":[    {"id":0, "description":"Inférieur à 20 ans", "points":0},    {"id":1, "description":"20 ans", "points":1},    {"id":2, "description":"Supérieur à 20 ans", "points":2}]
-   }
+#grille criteriee
+criteria[0] = {"id":0,"description":"Age donné","levels":[{"id":0,"description":"Inférieur à 20 ans", "points":0},{"id":1,"description":"20 ans","points":1},{"id":2,"description":"Supérieur à 20 ans","points":2}]}
+criteria[1] = 
+criteria[2] = 
+
