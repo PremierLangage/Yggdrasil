@@ -12,8 +12,9 @@ score,_,feedback=ans_expr(input1.value,angle,modulo=2*pi)
 ==
 
 solution ==
-La mesure de l'angle est $! \displaystyle {{angle_tex}} !$.
+La mesure de l'angle est $! \displaystyle {{angle|latex}} !$.
 ==
+
 
 
 
