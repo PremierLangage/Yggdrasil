@@ -2,13 +2,7 @@ extends = /Mathematics/template/mathexpr.pl
 
 title = Transformation d'expressions avec exponentielles
 
-lang = fr
-
-
 before ==
-keyboards_JSON['virtualKeyboards']="functions"
-input1.config = keyboards_JSON
-
 p,q=list_randint_norep(2,-5,5,[-1,0,1])
 formula=randitem(eval(param['formulas']))
 if formula=="(exp(p))^u":
@@ -43,7 +37,7 @@ def ans_eval(strans,sol):
         return (0,"","")
     return (100,"","")
 
-score,_,feedback=ans_eval(input1.value,sol)
+score,feedback = eval(input.value,sol)
 ==
 
 
@@ -116,6 +110,7 @@ wims ==
 }
 
 ==
+
 
 
 
