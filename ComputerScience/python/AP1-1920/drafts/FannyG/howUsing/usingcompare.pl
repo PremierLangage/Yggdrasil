@@ -34,4 +34,4 @@ criteria =[
       ] 
    }
 ]
-
+criteria[0] = {}
