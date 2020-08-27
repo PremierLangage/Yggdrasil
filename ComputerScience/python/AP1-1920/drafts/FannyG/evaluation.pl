@@ -29,7 +29,7 @@ before == #|python|
 #data = {"question": "Quel âge avez-vous ?", "answer": "J'ai 20 ans."}
 
 # paramètre criteria contenant la grille critériée
-criteria ={
+criteria =[
     {
         "id":0,
         "description":"Age donné",
@@ -57,7 +57,7 @@ criteria ={
             {"id":2, "description":"La phrase possède une majuscule et un point.", "points":2}
       ] 
    }
-}
+]
 note_max = 0
 for crit in criteria:
     note_intermediaire = crit['levels'][0]['points']
