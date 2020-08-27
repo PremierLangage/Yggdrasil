@@ -15,12 +15,12 @@ Déterminer la solution de l'équation $$ {{lhs|latex}} = {{rhs|latex}}.$$
 ==
 
 evaluator ==
-score, error = eval_epr(input.value, sol)
+score, error = eval_expr(input.value, sol)
 feedback = feedback_message[error]
 ==
 
 solution ==
-La solution est $%{{sol_tex}}%$.
+La solution est $%{{sol|latex}}%$.
 ==
 
 
