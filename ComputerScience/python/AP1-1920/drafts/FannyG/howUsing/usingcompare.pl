@@ -34,4 +34,5 @@ criteria =[
       ] 
    }
 ]
-criteria[0] = {}
+criteria[0] = {"id":0,"description":"Age donné","levels":[    {"id":0, "description":"Inférieur à 20 ans", "points":0},    {"id":1, "description":"20 ans", "points":1},    {"id":2, "description":"Supérieur à 20 ans", "points":2}]
+   }
