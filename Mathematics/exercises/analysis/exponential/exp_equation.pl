@@ -14,9 +14,9 @@ text ==
 Déterminer la solution de l'équation $$ {{lhs|latex}} = {{rhs|latex}}.$$
 ==
 
-
-evaluator==
-score,_,feedback=ans_expr(input1.value,sol,{'e':sp.E},{sp.ln})
+evaluator ==
+score, error = eval_epr(input.value, sol)
+feedback = feedback_message[error]
 ==
 
 solution ==
