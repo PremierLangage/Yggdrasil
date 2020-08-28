@@ -15,7 +15,7 @@ yM=float(sinangle)
 jxg.setscript(script, globals())
 ==
 
-jxg.attributes % {"boundingbox": [-1.25, 1.25, 1.25, -1.25], "showNavigation": false, "axis": false, "grid": false}
+jxg2.attributes % {"boundingbox": [-1.25, 1.25, 1.25, -1.25], "showNavigation": false, "axis": false, "grid": false}
 
 script ==
 var grid = board.create('grid',[],{gridX:0.25,gridY:0.25});
