@@ -4,7 +4,7 @@ title = Lire un angle sur le cercle trigonométrique
 
 text ==
 Quelle est la mesure (en radians) de l'angle $% (\overrightarrow{OA},\overrightarrow{OM}) %$ représenté ci-dessous. 
-{{ jxg | component}}
+{{ jxg|component }}
 ==
 
 evaluator ==
