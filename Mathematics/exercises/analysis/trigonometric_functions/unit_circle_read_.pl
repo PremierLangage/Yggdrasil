@@ -2,13 +2,10 @@ extends = /Mathematics/template/mathexpr.pl
 extends = /Mathematics/template/mathjsxgraph.pl
 
 title = Lire un angle sur le cercle trigonométrique
-input2 =:MathInput
+
+param.lstangle = [pi/4,pi/2,3*pi/4,pi,5*pi/4,3*pi/2,7*pi/4]
 
 before ==
-keyboards_JSON['virtualKeyboards']="elementary"
-input1.config = keyboards_JSON
-input2.config = keyboards_JSON
-
 lstangle=eval(param['lstangle'])
 angle=randitem(lstangle)
 cosangle=cos(angle).evalf()
@@ -16,11 +13,7 @@ sinangle=sin(angle).evalf()
 xM=float(cosangle)
 yM=float(sinangle)
 
-angle_tex=latex(angle)
-cosangle_tex=latex(cosangle)
-sinangle_tex=latex(sinangle)
-
-drawer.script= script % (str(xM),str(yM))
+jxg.setscript(script, globals())
 ==
 
 drawer.attributes %=
@@ -47,6 +40,7 @@ var A = board.create('point',[1,0],{size:1,name:'A',color:'black',fixed:true});
 var M = board.create('point',[ %s , %s ],{size:1,name:'M',color:'black',fixed:true});
 var secOAM = board.create('sector',[O,A,M],{color:'orange'});
 ==
+
 
 
 
