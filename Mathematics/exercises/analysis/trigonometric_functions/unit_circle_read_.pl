@@ -1,5 +1,4 @@
-extends = /Mathematics/template/mathexpr.pl
-extends = /Mathematics/template/mathjsxgraph.pl
+extends = /model/mathjsxgraph.pl
 
 title = Lire un angle sur le cercle trigonométrique
 
