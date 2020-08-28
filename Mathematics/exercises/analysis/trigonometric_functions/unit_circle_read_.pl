@@ -24,7 +24,7 @@ var Oy = board.create('axis',[[0,0],[0,1]],{ticks:{visible:false}});
 var circle = board.create('circle',[[0,0],[0,1]],{strokeColor:'blue',fixed:true});
 var O = board.create('point',[0,0],{size:1,name:'O',color:'black',fixed:true});
 var A = board.create('point',[1,0],{size:1,name:'A',color:'black',fixed:true});
-var M = board.create('point',[ %s , %s ],{size:1,name:'M',color:'black',fixed:true});
+var M = board.create('point',[ {{xM}} , {{yM}} ],{size:1,name:'M',color:'black',fixed:true});
 var secOAM = board.create('sector',[O,A,M],{color:'orange'});
 ==
 
