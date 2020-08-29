@@ -1,13 +1,10 @@
-extends = /Mathematics/template/mathexpr.pl
+extends = /model/mathinput.pl
 
-title== #|html|
+title ==
 Puissance
 ==
 
-before== #|python|
-keyboards_JSON['virtualKeyboards']="elementary"
-input1.config = keyboards_JSON
-
+before ==
 var('x')
 
 ok=False
@@ -56,4 +53,5 @@ score,_,feedback=ans_eval(input1.value,x,n)
 solution ==
 La solution est $! {{sol_tex}} !$.
 ==
+
 
