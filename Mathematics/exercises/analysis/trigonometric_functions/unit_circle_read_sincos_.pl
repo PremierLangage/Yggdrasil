@@ -3,6 +3,8 @@ extends =  /model/mathinput2.pl
 
 title = Lire le sinus et le cosinus d'un angle sur le cercle trigonométrique
 
+param.lstangle = [pi/2,pi,3*pi/2]
+
 text ==
 Déterminer le sinus et le cosinus de l'angle $% (\overrightarrow{OA},\overrightarrow{OM}) %$ représenté ci-dessous. 
 {{ jxg|component }}
