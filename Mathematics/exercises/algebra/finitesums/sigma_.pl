@@ -15,8 +15,9 @@ text ==
 Calculer $! \displaystyle {{S|latex}} !$.
 ==
 
-evaluator==
-score,_,feedback=eval_expr(input.value,sol)
+evaluator ==
+score, error = eval_expr(input.value, sol)
+feedback = feedback_message[error]
 ==
 
 solution ==
