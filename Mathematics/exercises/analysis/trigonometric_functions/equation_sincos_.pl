@@ -2,6 +2,12 @@ extends = /model/mathinput.pl
 
 title = Equation trigonométrique
 
+param.rhs = [0,-1,1]
+
+param.interval = [(-2*pi,2*pi),(0,2*pi),(-pi,pi)]
+
+param.interval_type = closed
+
 before ==
 var('x')
 lhs = randitem([cos(x),sin(x)])
