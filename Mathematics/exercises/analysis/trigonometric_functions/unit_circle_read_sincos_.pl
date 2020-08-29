@@ -34,7 +34,7 @@ feedback = " "
 ==
 
 solution ==
-Le sinus vaut $! {{sinangle_tex}} !$ et le cosinus vaut $! {{cosangle_tex}} !$.
+Le sinus vaut $! {{sinangle|latex}} !$ et le cosinus vaut $! {{cosangle|latex}} !$.
 ==
 
 
