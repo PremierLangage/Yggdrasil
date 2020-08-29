@@ -21,7 +21,7 @@ feedback = feedback_message[error]
 ==
 
 solution ==
-La solution est $! {{sol|tex}} !$.
+La solution est $! {{sol|latex}} !$.
 ==
 
 
