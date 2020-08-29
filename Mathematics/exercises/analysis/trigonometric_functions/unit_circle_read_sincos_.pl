@@ -30,6 +30,7 @@ c-math-input {
 
 evaluator ==
 score, error = eval_mult_expr([input1.value,input2.value],[sin(angle),cos(angle)])
+feedback = " "
 ==
 
 solution ==
