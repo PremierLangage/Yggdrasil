@@ -556,6 +556,26 @@ def eval_expr(strans, sol, checkratsimp=True, modulo=None, authorized_func=None,
         return (-1, "NotRatSimp")
     return (100, "Success")
 
+def eval_mult_expr(lstans, lstsol, checkratsimp=True, modulo=None, authorized_func=None, local_dict={}):
+    """
+    Evaluate multiple answers.
+    """
+    lsterror = []
+    lstscore = []
+    for strans, sol in zip(lstans, lstsol):
+        score, error = eval_expr(strans, sol, checkratsimp, modulo, authorized_func, local_dict):
+        lsterror.append(error)
+        lstscore.append(score)
+    if "NotExpr" is in lsterror:
+        return (-1, "OneNotExpr")
+    if "UnauthorizedFunc" is in lsterror:
+        return (-1, "OneUnauthorizedFunc")
+    if "NotEqual" is in lsterror:
+        return (0, "NotEqual")
+    if "NotRatSimp" is in lsterror:
+        return (-1, "NotRatSimp")
+    return (100, "Success")
+
 def eval_frac(strans, sol, simpwarning=True):
     """
     Evaluate an answer when the solution is a fraction.
@@ -717,17 +737,7 @@ def eval_tuple(strans, sol, checksize=False, local_dict={}):
         return (0, "NotEqual")
     return (100, "Success")
 
-def eval_mult_expr(strans, sol, local_dict={}):
-    """
-    Evaluate an answer when the solution is a tuple/vector.
-    """
-    try:
-        ans = tuple(latex2sympy(strans, local_dict))
-    except:
-        return (-1,"NotTuple")
-    if not equal_struct(ans,sol):
-        return (0, "NotEqual")
-    return (100, "Success")
+
 
 @add_feedback
 def eval_matrix(matans, sol):
