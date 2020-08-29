@@ -8,9 +8,9 @@ Objectifs :
 - Calculer une somme élémentaire définie avec le symbole $! \Sigma !$.
 ==
 
-@ /Mathematics/exercises/foundations/sets/element_or_subset_finite_sets_symbol.pl
+#@ /Mathematics/exercises/foundations/sets/element_or_subset_finite_sets_symbol.pl
 
-@ /Mathematics/exercises/foundations/sets/element_or_subset_finite_sets_expr1.pl
+#@ /Mathematics/exercises/foundations/sets/element_or_subset_finite_sets_expr1.pl
 
 @ /Mathematics/exercises/foundations/sets/operation2_finite_sets_inter_union.pl
 
@@ -21,6 +21,7 @@ Objectifs :
 @ /Mathematics/exercises/algebra/finitesums/sigma_square.pl
 
 @ /Mathematics/exercises/algebra/finitesums/sigma_prod.pl
+
 
 
 
