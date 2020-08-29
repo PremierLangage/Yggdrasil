@@ -15,7 +15,8 @@ title =
 text = 
 
 form ==
-{{ input|component}}
+{{ input1|component}}
+{{ input2|component}}
 ==
 
 settings.feedback = rightwrong
