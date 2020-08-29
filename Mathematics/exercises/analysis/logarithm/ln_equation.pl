@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathexpr.pl
+extends = /model/mathinput.pl
 
 title = Equation avec logarithme
 
@@ -22,3 +22,4 @@ feedback = feedback_message[error]
 solution ==
 La solution est $! {{ sol|latex }} !$.
 ==
+
