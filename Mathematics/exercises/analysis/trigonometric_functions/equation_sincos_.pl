@@ -17,7 +17,7 @@ sur l'intervalle $% {{ interv|latex }} %$. Quand il y a plusieurs solutions, les
 ==
 
 evaluator ==
-score, error = eval_set(input.value, lstsol, wobracket=True)
+score, error = eval_set(input.value, sol, wobracket=True)
 feedback = feedback_message[error]
 ==
 
