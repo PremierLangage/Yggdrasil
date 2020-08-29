@@ -566,13 +566,13 @@ def eval_mult_expr(lstans, lstsol, checkratsimp=True, modulo=None, authorized_fu
         score, error = eval_expr(strans, sol, checkratsimp, modulo, authorized_func, local_dict)
         lsterror.append(error)
         lstscore.append(score)
-    if "NotExpr" is in lsterror:
+    if "NotExpr" in lsterror:
         return (-1, "OneNotExpr")
-    if "UnauthorizedFunc" is in lsterror:
+    if "UnauthorizedFunc" in lsterror:
         return (-1, "OneUnauthorizedFunc")
-    if "NotEqual" is in lsterror:
+    if "NotEqual" in lsterror:
         return (0, "NotEqual")
-    if "NotRatSimp" is in lsterror:
+    if "NotRatSimp" in lsterror:
         return (-1, "NotRatSimp")
     return (100, "Success")
 
