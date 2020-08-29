@@ -1,4 +1,5 @@
-extends =  unit_circle_read_.pl
+extends =  jxg_angle_unit_circle.pl
+extends =  /model/mathinput.pl
 
 title = Lire un angle sur le cercle trigonométrique
 
