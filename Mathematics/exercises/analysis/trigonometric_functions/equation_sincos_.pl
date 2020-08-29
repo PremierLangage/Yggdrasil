@@ -13,7 +13,7 @@ sol=solveset(lhs-rhs,x,domain=S.Reals).intersect(interv)
 
 text ==
 Déterminer la ou les solutions de l'équation $$ {{ lhs|latex }} = {{ rhs|latex }} $$
-sur l'intervalle $% {{ interv|latex }} %$. Quand il y a plusieurs solutions, les séparer par des virgules.
+sur l'intervalle $! {{ interv|latex }} !$. Quand il y a plusieurs solutions, les séparer par des virgules.
 ==
 
 evaluator ==
