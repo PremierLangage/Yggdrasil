@@ -6,7 +6,7 @@ input1 =: MathInput
 input1.decorator = CustomMathInput
 input1.virtualKeyboards = elementary
 
-input1 =: MathInput
+input2 =: MathInput
 input2.decorator = CustomMathInput
 input2.virtualKeyboards = elementary
 
