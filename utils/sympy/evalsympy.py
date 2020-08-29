@@ -717,6 +717,18 @@ def eval_tuple(strans, sol, checksize=False, local_dict={}):
         return (0, "NotEqual")
     return (100, "Success")
 
+def eval_mult_expr(strans, sol, local_dict={}):
+    """
+    Evaluate an answer when the solution is a tuple/vector.
+    """
+    try:
+        ans = tuple(latex2sympy(strans, local_dict))
+    except:
+        return (-1,"NotTuple")
+    if not equal_struct(ans,sol):
+        return (0, "NotEqual")
+    return (100, "Success")
+
 @add_feedback
 def eval_matrix(matans, sol):
     """
@@ -809,6 +821,7 @@ def ans_antiderivative(strans,sol,x,local_dict={}):
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
+
 
 
 
