@@ -26,12 +26,13 @@ Simplifier la fraction $% \displaystyle \frac{ {{a}} }{ {{b}} } %$ en l'écrivan
 
 evaluator==
 score, error = eval_frac(input.value, sol, simpwarning=False)
-feedback = feedback_message[error]
+feedback = message[error]
 ==
 
 solution==
 La solution est $% \displaystyle {{ sol|latex }} %$.
 ==
+
 
 
 
