@@ -39,7 +39,7 @@ Votre copie a reçu {{nb_note}} d'évaluations.
         {{justif}}<br/>
     {% endfor %}
     </p>
-    <p>Note : {{rg.note}}. Commentaire general : {{rg.commentaire}}</p>
+    <p>Note : {{rg.note}} : {{rg.commentaire}}</p>
 {% endfor %}
 ==
 
