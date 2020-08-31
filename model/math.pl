@@ -35,7 +35,7 @@ message.MatWrongSize = La matrice n'a pas la bonne taille.
 message.NotRatSimp = L'expression peut encore être simplifiée.
 message.Duplicates = Il ya des doublons dans l'ensemble.
 message.UnauthorizedFunc = Votre réponse utilise des fonctions non-autorisées.
-message.NotChainIneq =
+message.NotChainIneq = La réponse doit être un encadrement.
 message.WrongIneq =
 message.WrongBounds =
 
