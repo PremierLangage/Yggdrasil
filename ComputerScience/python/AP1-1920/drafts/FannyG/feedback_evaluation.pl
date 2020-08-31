@@ -18,16 +18,12 @@ text  =
 
 
 before ==#|python|
-from math import ceil
-
 evals =[
     {"note": 82, "commentaire": "Bien", "justificatifs": ["1","2"]},
     {"note": 25, "commentaire": "Moyen", "justificatifs": ["ergt","ydrvf"]},
     {"note": 14, "commentaire": "Pas bien", "justificatifs": ["1893","654"]},
 ]
-
 nb_note = len(evals)
-
 ==
 
 
