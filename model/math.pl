@@ -35,6 +35,8 @@ feedback.MatWrongSize = La matrice n'a pas la bonne taille.
 feedback.NotRatSimp = L'expression peut encore être simplifiée.
 feedback.Duplicates = Il y a des doublons dans l'ensemble.
 feedback.UnauthorizedFunc = Votre réponse utilise des fonctions non-autorisées.
+feedback_message.WrongForm = La réponse n'est pas sous la forme attendue.
+
 
 
 
