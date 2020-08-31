@@ -105,7 +105,7 @@ input.virtualKeyboard = complex
 
 evaluator ==
 score, error = eval_complex(input.value,sol,form="cartesian")
-feedback = feedback_message[error]
+feedback = message[error]
 ==
 
 solution ==
@@ -175,6 +175,7 @@ wims ==
 \text{expr=\overline{\left(\frac{1}{z}\right)}}
 \complex{rep=1/(\zb1)}
 ==
+
 
 
 
