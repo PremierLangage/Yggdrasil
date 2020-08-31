@@ -21,9 +21,9 @@ before ==#|python|
 from math import ceil
 
 evals =[
-    {"note": 82, "commentaire": "Bien", "justificatifs": []},
-    {"note": 25, "commentaire": "Moyen", "justificatifs": []},
-    {"note": 14, "commentaire": "Pas bien", "justificatifs": []},
+    {"note": 82, "commentaire": "Bien", "justificatifs": ["1","2"]},
+    {"note": 25, "commentaire": "Moyen", "justificatifs": ["ergt","ydrvf"]},
+    {"note": 14, "commentaire": "Pas bien", "justificatifs": ["1893w","654"]},
 ]
 
 nb_note = 0
