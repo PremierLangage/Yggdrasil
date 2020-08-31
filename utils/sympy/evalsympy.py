@@ -744,7 +744,7 @@ def eval_chainineq(strans, sol, local_dict={}, authorized_func={}):
     try:
         ans = latex2chainineq(strans, local_dict)
     except:
-        return (-1,"NotChainedIneq")
+        return (-1,"NotChainIneq")
     if not (equal(ans[0],sol[0]) and equal(ans[4],sol[4])):
         return (0,"WrongBounds")
     if not (ans[1]==sol[1] and ans[3]==sol[3]):
@@ -843,6 +843,7 @@ def ans_antiderivative(strans,sol,x,local_dict={}):
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
+
 
 
 
