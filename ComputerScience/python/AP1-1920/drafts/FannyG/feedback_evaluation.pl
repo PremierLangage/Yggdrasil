@@ -41,8 +41,6 @@ Votre copie a reçu {{nb_note}} d'évaluations.
     </p>
     <p>Note : {{rg.note}}. Commentaire general : {{rg.commentaire}}</p>
 {% endfor %}
-
-
 ==
 
 
