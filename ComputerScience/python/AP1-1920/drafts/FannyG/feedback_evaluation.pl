@@ -26,12 +26,8 @@ evals =[
     {"note": 14, "commentaire": "Pas bien", "justificatifs": ["1893","654"]},
 ]
 
-nb_note = 0
-tmp = 0
-for e in evals:
-    tmp += e['note']
-    nb_note += 1
-note_final = ceil(tmp/nb_note)
+nb_note = len(evals)
+
 ==
 
 
