@@ -11,6 +11,11 @@
 @ /builder/before.py [builder.py]
 
 
+#pour le test, en parametre
+comment_by_criteria = True
+
+
+
 enonce = Quel âge avez-vous ?
 title = Feedback evaluation de la question "{{enonce}}"
 text  = 
@@ -43,4 +48,5 @@ Note moyenne : {{note_final}}/100
 evaluator ==#|python|
 grade = (100, " ")
 ==
+
 
