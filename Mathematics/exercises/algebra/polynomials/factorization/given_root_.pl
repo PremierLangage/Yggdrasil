@@ -47,7 +47,7 @@ en remarquant que $% P( {{ x1 |latex }} )=0 %$.
 
 evaluator ==
 score, error = eval_poly(input.value, sol, var="x", form="factorized")
-feedback = feedback_message[error]
+feedback = message[error]
 ==
 
 solution ==
@@ -170,6 +170,7 @@ Factoriser le polynôme \(P(x)=\poly\).<br class="spacer"/>
 \answer{}{\polyrep}{type=raw}{option=noanalyzeprint}
 \text{polyrep=wims(rawmath \polyrep)}
 ==
+
 
 
 
