@@ -34,11 +34,13 @@ Votre copie a reçu {{nb_note}} d'évaluations.
 <br/>
 {% for rg in evals %} 
     <br/>
-    <p> Justificatifs :<br/>
-    {% for justif in rg.justificatifs %}
-        {{justif}}<br/>
-    {% endfor %}
-    </p>
+    {% if rg.justificatifs != [] %}
+        <p> Justificatifs :<br/>
+        {% for justif in rg.justificatifs %}
+            {{justif}}<br/>
+        {% endfor %}
+        </p>
+    {% endif %}
     <p>Note : {{rg.note}} : {{rg.commentaire}}</p>
 {% endfor %}
 ==
