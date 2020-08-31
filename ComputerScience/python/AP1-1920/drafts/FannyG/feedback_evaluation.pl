@@ -33,12 +33,7 @@ form  == #|html|
 Votre copie a reçu {{nb_note}} d'évaluations.
 <br/>
 {% for rg in radio %} 
-    <br/>
-    <p> Justificatifs :<br/>
-    {% for justif in rg.justificatifs %}
-        justif<br/>
-    {% endfor %}
-    </p>
+    
     <p>Note : {{rg.note}}. Commentaire general : {{rg.commentaire}}</p>
 {% endfor %}
 ==
