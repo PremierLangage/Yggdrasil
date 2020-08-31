@@ -1,13 +1,8 @@
-extends = /Mathematics/template/mathexpr.pl
+extends = /model/mathinput.pl
 
 title = Système d'inéquations linéaires
 
-lang = fr
-
 before ==
-keyboards_JSON['virtualKeyboards']="sets"
-input1.config = keyboards_JSON
-
 a,c=list_randint_norep(2,-6,6,[0,1,-1])
 b,d=list_randint(2,-6,6,[0])
 var('x')
@@ -35,22 +30,22 @@ ineq2=randitem([f>=g,f>g,f<=g,f<g,g>=f,g>f,g<=f,g<f])
 sol1=solveset(ineq1,x,domain=S.Reals)
 sol2=solveset(ineq2,x,domain=S.Reals)
 sol=Intersection(sol1,sol2)
-
-ineq1_tex=latex(ineq1)
-ineq2_tex=latex(ineq2)
-sol_tex=latex(sol)
 ==
 
+input.virtualKeyboards = sets
+
 text ==
-Déterminer l'ensemble des réels $% x %$ tels que $$ {{ineq1_tex}}\quad\text{ et }\quad{{ineq2_tex}}. $$ Ecrire cet ensemble sous la forme d'un intervalle (ou de l'ensemble vide).
+Déterminer l'ensemble des réels $% x %$ tels que $$ {{ineq1|latex}}\quad\text{ et }\quad{{ineq2|latex}}. $$ Ecrire cet ensemble sous la forme d'un intervalle (ou de l'ensemble vide).
 ==
 
 evaluator==
-score,_,feedback=ans_rset(input1.value,sol)
+score, error = eval_rset(input.value, sol)
+feedback = message[error]
 ==
 
 solution==
-Cet ensemble est $! {{sol_tex}} !$.
+Cet ensemble est $! {{sol|latex}} !$.
 ==
+
 
 
