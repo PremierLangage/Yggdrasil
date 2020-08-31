@@ -4,6 +4,8 @@ title ==
 Puissance
 ==
 
+param.formula = prod
+
 before ==
 var('x')
 
