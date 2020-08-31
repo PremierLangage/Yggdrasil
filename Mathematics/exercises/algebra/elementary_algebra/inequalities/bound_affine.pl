@@ -32,8 +32,9 @@ Soit un nombre $% x %$ tel que $%{{ineq}} %$. Déterminer l'encadrement le plus 
 
 evaluator==
 score, error = eval_chainineq(input.value,sol)
-feedback = feedback_message[error]
+feedback = message[error]
 ==
+
 
 
 
