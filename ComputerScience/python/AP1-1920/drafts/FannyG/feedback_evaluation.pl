@@ -41,16 +41,7 @@ Note moyenne : {{note_final}}/100
 
 {% for rg in radio %} 
     <br/>
-    <span style="padding-left:30px;font-size:18px;">
-            <b>{{rg.description}}</b>
-    </span>
-    <br/>
-    {{ rg|component }}
-    {% if comment_by_criteria != "False" %}
-        <p>Justificatif :</p>
-        <textarea id="form_commentaire_{{rg.cid}}" name="justificatif" cols=30% rows="2"></textarea>
-    {% endif %}
-    <br/><br/>
+    
 {% endfor %}
 
 
