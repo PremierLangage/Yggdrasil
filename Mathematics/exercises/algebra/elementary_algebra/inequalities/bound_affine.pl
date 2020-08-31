@@ -19,7 +19,7 @@ if a>0:
 else:
     sol=[a*x2+b,s2,a*x+b,s1,a*x1+b]
 
-ineq = [x1,s1,x,s2,x2]
+ineq = latex_ineq([x1,s1,x,s2,x2])
 expr = latex(a*x+b)
 input.value = expr
 ==
