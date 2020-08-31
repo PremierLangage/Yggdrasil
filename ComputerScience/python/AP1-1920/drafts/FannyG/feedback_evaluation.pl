@@ -33,6 +33,7 @@ Votre copie a reçu {{nb_note}} d'évaluations.
 <br/>
 {% for rg in radio %} 
     <br/>
+    {% for rg in radio %}
     <p>Note : {{rg.note}}. Commentaire general : {{rg.commentaire}}</p>
 {% endfor %}
 
