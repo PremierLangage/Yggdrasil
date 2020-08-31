@@ -1,4 +1,8 @@
-extends = /Mathematics/template/mathexpr.pl
+# Author: D. Doyen
+# Tags: inequalities
+# 19/8/2020
+
+extends = /model/mathinput.pl
 
 title = Encadrement de $% a x + b %$
 
@@ -20,7 +24,7 @@ expr = latex(a*x+b)
 input.value = expr
 ==
 
-input1.config % {"virtualKeyboards":"relations"}
+input.virtualKeyboards = relations
 
 text ==
 Soit un nombre $% x %$ tel que $%{{ineq}} %$. Déterminer l'encadrement le plus précis possible de $% {{expr}} %$.
@@ -29,6 +33,7 @@ Soit un nombre $% x %$ tel que $%{{ineq}} %$. Déterminer l'encadrement le plus 
 evaluator==
 score,_,feedback=ans_chained_ineq(input1.value,sol)
 ==
+
 
 
 
