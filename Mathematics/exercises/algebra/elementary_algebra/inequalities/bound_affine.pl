@@ -31,8 +31,9 @@ Soit un nombre $% x %$ tel que $%{{ineq}} %$. Déterminer l'encadrement le plus 
 ==
 
 evaluator==
-score,_,feedback=ans_chained_ineq(input1.value,sol)
+score, error = eval_chainineq(input.value,sol)
 ==
+
 
 
 
