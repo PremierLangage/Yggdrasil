@@ -46,15 +46,14 @@ Déterminer l'ensemble des réels $% x %$ tels que $$ {{ineq|latex}}. $$ Ecrire 
 ==
 
 evaluator==
-#var('x')
-#sol = solveset(ineq,x,domain=S.Reals)
 score, error = eval_rset(input.value, sol)
-feedback = feedback_message[error]
+feedback = message[error]
 ==
 
 solution ==
 La solution est $% {{sol|latex}} %$.
 ==
+
 
 
 
