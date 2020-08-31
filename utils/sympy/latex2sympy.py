@@ -177,6 +177,45 @@ def latex2rset(s, local_dict={}):
             rset.append(latex2interval(a))
     return rset
 
+def latex2chainineq(s, local_dict={}):
+    """
+    Convert a LaTeX string into into chained inequalities.
+    """
+    return str2chainineq(latex2str(s), local_dict)
+
+def str2chainineq(s,local_dict={}):
+    """
+    Convert a string into chained inequalities.
+    """
+    pattern1 = re.compile(r'^(.*)<=(.*)<=(.*)$')
+    pattern2 = re.compile(r'^(.*)<(.*)<=(.*)$')
+    pattern3 = re.compile(r'^(.*)<=(.*)<(.*)$')
+    pattern4 = re.compile(r'^(.*)<(.*)<(.*)$')
+    pattern5 = re.compile(r'^(.*)>=(.*)>=(.*)$')
+    pattern6 = re.compile(r'^(.*)>=(.*)>(.*)$')
+    pattern7 = re.compile(r'^(.*)>(.*)>=(.*)$')
+    pattern8 = re.compile(r'^(.*)>(.*)>(.*)$')
+
+    if pattern1.search(s) is not None:
+        parts=[pattern1.search(s).group(1),'<=',pattern1.search(s).group(2),'<=',pattern1.search(s).group(3)]
+    elif pattern2.search(s) is not None:
+        parts=[pattern2.search(s).group(1),'<',pattern2.search(s).group(2),'<=',pattern2.search(s).group(3)]
+    elif pattern3.search(s) is not None:
+        parts=[pattern3.search(s).group(1),'<=',pattern3.search(s).group(2),'<',pattern3.search(s).group(3)]
+    elif pattern4.search(s) is not None:
+        parts=[pattern4.search(s).group(1),'<',pattern4.search(s).group(2),'<',pattern4.search(s).group(3)]
+    elif pattern5.search(s) is not None:
+        parts=[pattern5.search(s).group(3),'<=',pattern5.search(s).group(2),'<=',pattern5.search(s).group(1)]
+    elif pattern6.search(s) is not None:
+        parts=[pattern6.search(s).group(3),'<',pattern6.search(s).group(2),'<=',pattern6.search(s).group(1)]
+    elif pattern7.search(s) is not None:
+        parts=[pattern7.search(s).group(3),'<=',pattern7.search(s).group(2),'<',pattern7.search(s).group(1)]
+    elif pattern8.search(s) is not None:
+        parts=[pattern8.search(s).group(3),'<',pattern8.search(s).group(2),'<',pattern8.search(s).group(1)]
+    
+    return [str2sympy(parts[0]),parts[1],str2sympy(parts[2]),parts[3],str2sympy(parts[4])]
+
+
 def FiniteSet2struct(S):
     if S == sp.EmptySet:
         return []
