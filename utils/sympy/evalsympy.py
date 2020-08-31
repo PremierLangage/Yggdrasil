@@ -770,6 +770,7 @@ def eval_rset(strans, sol):
     """
     Evaluate an answer when the solution is an union of intervals.
     """
+    # TODO : handle empty set
     try:
         ans = latex2rset(strans)
         # simplification of endpoints is needed
