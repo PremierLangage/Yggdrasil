@@ -11,8 +11,9 @@
 @ /builder/before.py [builder.py]
 
 
-
+#a enlever : sert de test
 enonce = Quel âge avez-vous ?
+
 title = Feedback evaluation de la question "{{enonce}}"
 text  = 
 
@@ -35,7 +36,7 @@ Votre copie a reçu {{nb_note}} d'évaluations.
     <br/>
     <p>
     {% for justif in rg.justificatifs %}
-        
+
     {% endfor %}
     </p>
     <p>Note : {{rg.note}}. Commentaire general : {{rg.commentaire}}</p>
