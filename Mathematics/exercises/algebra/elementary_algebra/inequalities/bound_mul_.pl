@@ -1,13 +1,8 @@
-extends = /Mathematics/template/mathexpr.pl
+extends = /model/mathinput.pl
 
 title = Encadrement d'un produit
 
-lang = fr
-
 before ==
-keyboards_JSON['virtualKeyboards']="relations"
-input1.config = keyboards_JSON
-
 var('x,y')
 if param['sign']=="constant":
     x1,x2=randitem([sorted(list_randint_norep(2,-8,0)),sorted(list_randint_norep(2,0,8))])
@@ -64,15 +59,18 @@ boundx=latex_ineq([x1,sx1,x,sx2,x2])
 boundy=latex_ineq([y1,sy1,y,sy2,y2])
 
 expr=latex(x*y)
-input1.value=expr
+input.value=expr
 ==
+
+input.virtualKeyboards = relations
 
 text ==
 Soit $%x%$ et $%y%$ des nombres tels que $%{{boundx}} %$ et $%{{boundy}} %$. Déterminer l'encadrement le plus précis possible de $% {{expr}} %$.
 ==
 
 evaluator==
-score,_,feedback=ans_chained_ineq(answer['1'],sol)
+score, error = eval_chainineq(input.value,sol)
+feedback = message[error]
 ==
 
 
