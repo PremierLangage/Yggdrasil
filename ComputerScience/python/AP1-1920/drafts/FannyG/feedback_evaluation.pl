@@ -11,10 +11,6 @@
 @ /builder/before.py [builder.py]
 
 
-#pour le test, en parametre
-comment_by_criteria = True
-
-
 
 enonce = Quel âge avez-vous ?
 title = Feedback evaluation de la question "{{enonce}}"
@@ -25,9 +21,9 @@ before ==#|python|
 from math import ceil
 
 evals =[
-    {"note": 82, "commentaire": "Bien"},
-    {"note": 25, "commentaire": "Moyen"},
-    {"note": 14, "commentaire": "Pas bien"},
+    {"note": 82, "commentaire": "Bien", "justificatifs": []},
+    {"note": 25, "commentaire": "Moyen", "justificatifs": []},
+    {"note": 14, "commentaire": "Pas bien", "justificatifs": []},
 ]
 
 nb_note = 0
