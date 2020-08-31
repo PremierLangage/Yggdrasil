@@ -32,7 +32,7 @@ nb_note = len(evals)
 form  == #|html|
 Votre copie a reçu {{nb_note}} d'évaluations.
 <br/>
-{% for rg in radio %} 
+{% for rg in evals %} 
     <br/>
     <p> Justificatifs :<br/>
     {% for justif in rg.justificatifs %}
