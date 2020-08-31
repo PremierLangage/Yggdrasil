@@ -30,8 +30,7 @@ nb_note = len(evals)
 
 form  == #|html|
 Votre copie a reçu {{nb_note}} d'évaluations.
-Note moyenne : {{note_final}}/100
-
+<br/>
 {% for rg in radio %} 
     <br/>
     
