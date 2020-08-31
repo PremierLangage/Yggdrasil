@@ -2,6 +2,8 @@ extends = /model/mathinput.pl
 
 title = Encadrement d'un produit
 
+param.sign = constant
+
 before ==
 var('x,y')
 if param['sign']=="constant":
