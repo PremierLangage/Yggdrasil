@@ -31,12 +31,13 @@ Déterminer l'ensemble des réels $% x %$ tels que $$ {{ ineq|latex }}. $$ Ecrir
 
 evaluator==
 score, error = eval_rset(input.value, sol)
-feedback = feedback_message[error]
+feedback = message[error]
 ==
 
 solution==
 Cet ensemble est $! {{sol|latex}} !$.
 ==
+
 
 
 
