@@ -23,7 +23,9 @@ elif relation=="expr1":
     text2="aucune de ces expressions"
 
 group.set_label({"in": label_in, "subset": label_subset})
+==
 
+old ==
 sol=[]
 lhs=[]
 rhs=[]
@@ -63,7 +65,7 @@ for i in range(n):
         rhs[i]=latex(FiniteSet(*rhs[i]))
 
 
-drop=[drop1,drop2,drop3,drop4,drop5]
+
 ==
 
 text==
