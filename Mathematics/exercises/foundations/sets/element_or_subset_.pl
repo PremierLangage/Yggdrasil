@@ -1,4 +1,4 @@
-extends = /model/dragdrop.pl
+extends = /model/math.pl
 
 title = Elément et sous-ensemble
 
