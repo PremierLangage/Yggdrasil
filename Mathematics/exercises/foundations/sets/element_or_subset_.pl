@@ -63,7 +63,7 @@ drop=[drop1,drop2,drop3,drop4,drop5]
 ==
 
 text==
-Compléter les propositions suivantes avec les {{text1}} {{ drag1 | component }} ou {{ drag2 | component }}. Si {{text2}} ne convient, laisser la case vide  {{ drag3 | component }}.
+Compléter les propositions suivantes avec les {{text1}} {{ group.label.in | component }} ou {{ group.label.subset | component }}. Si {{text2}} ne convient, laisser la case vide  {{ drag3 | component }}.
 ==
 
 form ==
