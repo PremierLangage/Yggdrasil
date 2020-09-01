@@ -21,7 +21,7 @@ Latex:1
 -Les blocs C s'identifient en allant à la ligne et en rajoutant 4 espaces.
 +On peut imbriquer les bloc les uns dans les autres.
 +Les instructions se terminent par le caractère ;
--Pour définir une fonction, on met le cracère :  à la suite de son prototype.
+-Pour définir une fonction, on met le caractère ':'  à la suite de son prototype.
 
 *Combien de fonction *main* contient un programme C
 -Possiblement aucune
@@ -38,6 +38,7 @@ Selectionner les déclarations justes
 +Beaucoup de calculs haute performance sont fait en C.
 -Uniquement les machines sous Linux peuvent exécuté les programmes C.
 +Le langage C est réputé pour produire des programmes efficaces.
+
 
 
 
