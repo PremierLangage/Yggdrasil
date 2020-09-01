@@ -511,7 +511,7 @@ def graderI(tests, dic, flags="-Wall -ansi -lm"):
      output of test]
     This grader will compile the student source code producing an executable.
     The compiling and linking `flags` will be used during this process. Then,
-    for each test inside the dictionnary,
+    will run each test inside the dictionnary, against the expected output
     """
     compilation = PreActionsAndCompile("basic.c", exercice, flags=flags)
     compilation.compile()
@@ -557,6 +557,7 @@ def graderII(tests, dic, flags="-Wall -ansi -lm"):
     generate_output_from_solution(tests, dic)
     # Since tests are completed with expected output, call graderI
     return graderI(tests, dic, flags=flags)
+
 
 
 
