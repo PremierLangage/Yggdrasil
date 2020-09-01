@@ -79,7 +79,7 @@ form ==
 evaluator==#|python|
 from customdragdrop import right_minus_wrong
 
-grade = mygroup.eval(grading_function = right_minus_wrong)
+grade = group.eval(grading_function = right_minus_wrong)
 ==
 
 
