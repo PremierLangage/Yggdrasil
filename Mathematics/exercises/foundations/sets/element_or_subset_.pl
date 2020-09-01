@@ -76,6 +76,8 @@ form ==
 </ul>
 ==
 
+settings.feedback = lightscore
+
 evaluator==#|python|
 from customdragdrop import right_minus_wrong
 
