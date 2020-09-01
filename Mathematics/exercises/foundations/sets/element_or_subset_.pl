@@ -58,6 +58,7 @@ for i in range(n):
             lhs.append(list_randint_norep(a,0,9,rhs[i])+list_randitem_norep(b-a,rhs[i]))
 
 for i in range(n):
+    group.add_drop({str(i):""}) 
     group.add_match_by_content(str(i),sol[i]) 
     if isinstance(lhs[i],list):
         lhs[i]=latex(FiniteSet(*lhs[i]))
