@@ -68,11 +68,10 @@ for i in range(n):
 
 ==
 
-text2 ==
+text ==
 Compléter les propositions suivantes avec les {{text1}} {{ group.labels.in | component }} ou {{ group.labels.subset | component }}. Si {{text2}} ne convient, laisser la case vide  {{ drag3 | component }}.
 ==
 
-text =
 form =
 
 form2 ==
