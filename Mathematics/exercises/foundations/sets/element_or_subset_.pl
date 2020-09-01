@@ -22,7 +22,7 @@ elif relation=="expr1":
     text1="expressions"
     text2="aucune de ces expressions"
 
-group.set_label({"in": label_in, "subset": label_subset})
+group.set_label({"in": label_in, "subset": label_subset, "empty":""})
 ==
 
 old ==
