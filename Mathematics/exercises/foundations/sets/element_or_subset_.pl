@@ -76,6 +76,12 @@ form ==
 </ul>
 ==
 
+evaluator==#|python|
+from customdragdrop import right_minus_wrong
+
+grade = mygroup.eval(grading_function = right_minus_wrong)
+==
+
 
 
 
