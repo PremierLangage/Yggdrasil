@@ -1,8 +1,11 @@
-extends = /Mathematics/template/mathdragdrop.pl
+extends = /model/dragdrop.pl
 
 title = Elément et sous-ensemble
 
 before==#|python|
+from customdragdrop import DragDropGroup
+
+group = DragDropGroup()
 relation=param['relation']
 if relation=="symbol":
     label_in = "$! \in !$"
@@ -14,8 +17,9 @@ elif relation=="expr1":
     label_subset = "est un sous-ensemble de"
     text1="expressions"
     text2="aucune de ces expressions"
-drag1.content=label_in
-drag2.content=label_subset
+
+group.set_label({"in": label_in, "subset": label_subset})
+
 sol=[]
 lhs=[]
 rhs=[]
@@ -58,12 +62,6 @@ for i in range(n):
 drop=[drop1,drop2,drop3,drop4,drop5]
 ==
 
-
-drag1 =: DragDrop
-drag2 =: DragDrop
-drag3 =: DragDrop
-drag3.content =
-
 text==
 Compléter les propositions suivantes avec les {{text1}} {{ drag1 | component }} ou {{ drag2 | component }}. Si {{text2}} ne convient, laisser la case vide  {{ drag3 | component }}.
 ==
@@ -75,6 +73,7 @@ form ==
 {% endfor %}
 </ul>
 ==
+
 
 
 
