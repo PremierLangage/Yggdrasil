@@ -71,6 +71,7 @@ for i in range(n):
 text==
 Compléter les propositions suivantes avec les {{text1}} {{ group.label.in | component }} ou {{ group.label.subset | component }}. Si {{text2}} ne convient, laisser la case vide  {{ drag3 | component }}.
 ==
+form =
 
 form2 ==
 <ul>
