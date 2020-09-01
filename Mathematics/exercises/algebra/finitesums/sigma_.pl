@@ -17,12 +17,13 @@ Calculer $! \displaystyle {{S|latex}} !$.
 
 evaluator ==
 score, error = eval_expr(input.value, sol)
-feedback = feedback_message[error]
+feedback = message[error]
 ==
 
 solution ==
 La solution est $! {{sol|latex}} !$.
 ==
+
 
 
 
