@@ -2,6 +2,10 @@ extends = /model/math.pl
 
 title = Elément et sous-ensemble
 
+param.cases = [1,1,2,3,3]
+
+param.relation = symbol
+
 before==#|python|
 from customdragdrop import DragDropGroup
 
