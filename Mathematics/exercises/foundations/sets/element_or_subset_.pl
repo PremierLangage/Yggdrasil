@@ -58,6 +58,7 @@ for i in range(n):
             lhs.append(list_randint_norep(a,0,9,rhs[i])+list_randitem_norep(b-a,rhs[i]))
 
 for i in range(n):
+    group.add_match_by_content(str(i),sol[i]) 
     if isinstance(lhs[i],list):
         lhs[i]=latex(FiniteSet(*lhs[i]))
     if isinstance(rhs[i],list):
@@ -72,12 +73,11 @@ text ==
 Compléter les propositions suivantes avec les {{text1}} {{ group.labels.in | component }} ou {{ group.labels.subset | component }}. Si {{text2}} ne convient, laisser la case vide  .
 ==
 
-form =
 
-form2 ==
+form ==
 <ul>
-{% for e in drop %}
-<li> $% {{lhs[loop.index0]}} %$ {{ e|component }} $% {{rhs[loop.index0]}}  %$ </li>
+{% for i in range(n) %}
+<li> {{ lhs[i]}} {{ group.drops[i|string]|component }} {{ rhs[i] }} </li>
 {% endfor %}
 </ul>
 ==
