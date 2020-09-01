@@ -1,15 +1,15 @@
-nom,dates,image
-Thalès, 625 av. J.-C. - vers 545 av. J.-C.,https://commons.wikimedia.org/wiki/File:Illustrerad_Verldshistoria_band_I_Ill_107.jpg
-Pythagore, 580 av. J.-C. - 495 av. J.-C., https://commons.wikimedia.org/wiki/File:Pythagore_Villa_Borghese.jpg
-Euclide, vers 300 av. J.-C.,https://commons.wikimedia.org/wiki/File:Euclide%3Fs.jpg
-Archimède, 287 av. J.-C. – 212 av. J.-C.,https://commons.wikimedia.org/wiki/File:Archimede_-_Louvre.png
-Brahamgupta, 598-670,https://commons.wikimedia.org/wiki/File:Hindu_astronomer,_19th-century_illustration.jpg
-Al-Khwârizmî, vers 780 - vers 850,https://commons.wikimedia.org/wiki/File:Mu%E1%B8%A5ammad_ibn_M%C5%ABs%C4%81_al-Khw%C4%81rizm%C4%AB.png
-François Viète, 1540-1603,https://commons.wikimedia.org/wiki/File:Francois_Viete.jpeg
-Galilée, 1564-1642,https://commons.wikimedia.org/wiki/File:Justus_Sustermans_-_Portrait_of_Galileo_Galilei,_1636.jpg
-René Descartes, 1596-1650,https://commons.wikimedia.org/wiki/File:Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg
-Pierre de Fermat, 1607-1665,https://commons.wikimedia.org/wiki/File:Pierre_de_Fermat.jpg 
-Blaise Pascal, 1623-1662,https://commons.wikimedia.org/wiki/File:Blaise_pascal.jpg
+nom,dates,caractéristique et lieu, contributions remarquables, image,
+Thalès, 625 av. J.-C. - vers 545 av. J.-C.,philosophe et savant grec né et mort à Milet,théorème de Thalès,  https://commons.wikimedia.org/wiki/File:Illustrerad_Verldshistoria_band_I_Ill_107.jpg
+Pythagore, 580 av. J.-C. - 495 av. J.-C., réformateur religieux philosophe et mathématicien grec, accord pythagoricien / harmonie des sphères / nombre d'or / théorème de Pythagore, https://commons.wikimedia.org/wiki/File:Pythagore_Villa_Borghese.jpg
+Euclide, vers 300 av. J.-C.,mathématicien grec, les Elements,https://commons.wikimedia.org/wiki/File:Euclide%3Fs.jpg
+Archimède, 287 av. J.-C. – 212 av. J.-C.,grand scientifique de Sicile (Syracuse), principe d'Archimède/Vice d'Archimède/Hydrostatique/Levier/Calcul infinitésimal/Neusis, https://commons.wikimedia.org/wiki/File:Archimede_-_Louvre.png
+Brahamgupta, 598-670, mathématicien et astronome indien, zéro/ système de numération/Théorème de Brahmagupta/Identité de Brahmagupta/Formule d'interpolation de Brahmagupta, https://commons.wikimedia.org/wiki/File:Hindu_astronomer,_19th-century_illustration.jpg
+Al-Khwârizmî, vers 780 - vers 850,savant mathématicien astronome et géographe persan, abrégé de calcul par la restauration et la comparaison, https://commons.wikimedia.org/wiki/File:Mu%E1%B8%A5ammad_ibn_M%C5%ABs%C4%81_al-Khw%C4%81rizm%C4%AB.png
+François Viète, 1540-1603,juriste et mathématicien français, algèbre nouvelle, https://commons.wikimedia.org/wiki/File:Francois_Viete.jpeg
+Galilée, 1564-1642,mathématicien géomètre physicien et astronome italien, cinématique/dynamique/ héliocentrisme/lunettes astronomiques, https://commons.wikimedia.org/wiki/File:Justus_Sustermans_-_Portrait_of_Galileo_Galilei,_1636.jpg
+René Descartes, 1596-1650,mathématicien physicien et philosophe français, cogito/discours de la méthode/optique/géométrie analytique,https://commons.wikimedia.org/wiki/File:Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg
+Pierre de Fermat, magistrat polymathe et mathématicien français, dernier théorème de Fermat/ Géométrie anlytique/ petit théorème de Fermat/ principe de Fermat/ théorie des probabilités, 1607-1665,https://commons.wikimedia.org/wiki/File:Pierre_de_Fermat.jpg 
+Blaise Pascal, mathématicien physicien philosophe théologien moraliste et statisticien français, théorie des probabilités/pari de Pascal/triangle de Pascal/loi de Pascal/machine à calculer, et1623-1662,https://commons.wikimedia.org/wiki/File:Blaise_pascal.jpg
 Isaac Newton, 1642-1727,https://commons.wikimedia.org/wiki/File:GodfreyKneller-IsaacNewton-1689.jpg
 Gittfried Wilhelm Leibnitz, 1646-1716,https://commons.wikimedia.org/wiki/File:Gottfried_Wilhelm_von_Leibniz.jpg
 Jacques Bernoulli, 1655-1705,https://commons.wikimedia.org/wiki/File:Jakob_Bernoulli.jpg
