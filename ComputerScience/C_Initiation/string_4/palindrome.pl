@@ -59,9 +59,11 @@ else
 
 tests==
 [ 
- ["aleatoire","",random.choice(["elle","kayak","velo","radar","avion","rotor","serres","solos","sufffit"])],
-  ]
+ ["aleatoire","",random.choice(["elle","kayak","radar","rotor","serres","solos",])],
+["aleatoire","",random.choice(["elle est belle","un kayak","velo","deux radar","avion","le rotor","michel serres","Bruno solos","sufffit"])],
+   ]
 ==
+
 
 
 
