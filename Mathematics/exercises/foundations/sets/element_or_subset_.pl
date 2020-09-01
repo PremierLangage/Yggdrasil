@@ -72,7 +72,7 @@ text==
 Compléter les propositions suivantes avec les {{text1}} {{ group.label.in | component }} ou {{ group.label.subset | component }}. Si {{text2}} ne convient, laisser la case vide  {{ drag3 | component }}.
 ==
 
-form ==
+form2 ==
 <ul>
 {% for e in drop %}
 <li> $% {{lhs[loop.index0]}} %$ {{ e|component }} $% {{rhs[loop.index0]}}  %$ </li>
