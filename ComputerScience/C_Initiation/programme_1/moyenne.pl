@@ -13,7 +13,7 @@ Ecrire un programme qui lit une  suite d'entiers positifs terminée par un néga
 leur moyenne.<br>
 Si la suite commence par un négatif, on indiquera "Suite vide".<br>
 <br>
-**Exemples :**
+**Exemples :**<br>
 -Entrer une suite d'entiers positifs:
 
 1 4
