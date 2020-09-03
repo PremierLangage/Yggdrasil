@@ -65,7 +65,7 @@ for i in range(n):
 ==
 
 text ==
-Compléter les propositions suivantes avec les {{text1}} {{ group.labels.in | component }} ou {{ group.labels.subset | component }}. Si {{text2}} ne convient, laisser la case vide  .
+Compléter les propositions suivantes avec les {{text1}} {{ group.labels.in | component }} ou {{ group.labels.subset | component }}. Si {{text2}} ne convient, laisser la case vide {{ group.labels.empty | component }}.
 ==
 
 form ==
