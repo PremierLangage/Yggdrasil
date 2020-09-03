@@ -64,7 +64,7 @@ for i in range(n):
         rhs[i]=latex(FiniteSet(*rhs[i]))
 
 for _, drop in group.drops.items():
-    drop.droppedId = "empty"
+    drop.droppedId = ""
 ==
 
 text ==
