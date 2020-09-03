@@ -63,7 +63,7 @@ for i in range(n):
     if isinstance(rhs[i],list):
         rhs[i]=latex(FiniteSet(*rhs[i]))
 
-for _, drop in self.drops.items():
+for _, drop in group.drops.items():
     drop.droppedId = "empty"
 ==
 
