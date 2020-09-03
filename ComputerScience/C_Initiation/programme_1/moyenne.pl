@@ -22,7 +22,7 @@ Si la suite commence par un négatif, on indiquera "suite vide".
 3
 
 -1
- somme= 11 moyenne=2.750000
+ somme= 11 moyenne=2.750000  
 -Entrer une suite d'entiers positifs:
 -1
 Suite vide.
@@ -66,7 +66,7 @@ int main(void) {
            }
         moy=somme;
         moy/=nb;
-	    printf("somme=%d moyenne=%f diviseurs\n",somme,moy);
+	    printf("somme=%d moyenne=%f \n",somme,moy);
         }
 	return 0;
 }
