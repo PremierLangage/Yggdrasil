@@ -189,6 +189,7 @@ class DragDropGroup():
             drop_data = [drop.droppedId, drop.cid] 
             # BUG? si on met (drop.droppedId, drop.cid), ça marche pas, comme si les tuples avaient 
             # été transformés en listes dans le grader
+            # DD : ça doit être la conversion JSON qui fait ça (pas de tuples en JSON).
             # DEBUG feedback+='dropdata:'+str(drop_data)+'<br>'
             if drop.droppedId == '':
                 pass
@@ -220,6 +221,7 @@ class DragDropGroup():
         
 
     
+
 
 
 
