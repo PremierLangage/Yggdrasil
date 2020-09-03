@@ -2,7 +2,7 @@
 
 title= Tri de trois valeurs
 tag=boucle,tests
-
+author=  
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
