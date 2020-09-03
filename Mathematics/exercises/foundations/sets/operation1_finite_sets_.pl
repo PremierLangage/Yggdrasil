@@ -1,12 +1,4 @@
-extends = /model/math.pl
-
-input =: MathInput
-
-form==
-$$ A=  {{A_tex}},\ B={{B_tex}}.$$
-
-{{input|component}}
-==
+extends = /model/mathinput.pl
 
 
 title = Opérations sur les ensembles
@@ -14,9 +6,6 @@ title = Opérations sur les ensembles
 lang = fr
 
 before ==
-keyboards_JSON['virtualKeyboards']="sets"
-input.config = keyboards_JSON
-
 A=rand_finiteset(randint(4,7),list(range(10)))
 B=rand_finiteset(randint(4,7),list(range(10)))
 case=randitem(eval(param['cases']))
@@ -32,27 +21,23 @@ elif case==3:
 elif case==4:
     expr=r"A \,\triangle\, B"
     sol=B.symmetric_difference(A)
-
-A_tex=latex(A)
-B_tex=latex(B)
-sol_tex=latex(sol)
-sol=list(sol)
 ==
 
 text == 
 On considère les ensembles suivants :
-$$ A=  {{A_tex}},\ B={{B_tex}}.$$
+$$ A=  {{A|lattex}},\ B={{B|latex}}.$$
 Déterminer $! {{expr}} !$.
 ==
 
 evaluator ==
-score,error,_=eval_set(input.value,sol)
-feedback = feedback_message[error]
+score, error = eval_set(input.value, sol)
+feedback = message[error]
 ==
 
 solution ==
-La solution est $! { {{sol_tex}} } !$.
+La solution est $! { {{sol|latex}} } !$.
 ==
+
 
 
 
