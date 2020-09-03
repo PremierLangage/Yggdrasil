@@ -25,7 +25,7 @@ elif case==4:
 
 text == 
 On considère les ensembles suivants :
-$$ A=  {{A|latex}},\ B={{B|latex}}.$$
+$$ A= \\{ {{ A|latex }} \\},\ B= \\{ {{ B|latex }} \\}.$$
 Déterminer $! {{expr}} !$.
 ==
 
