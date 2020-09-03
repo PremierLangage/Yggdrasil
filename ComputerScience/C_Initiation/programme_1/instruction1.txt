@@ -35,7 +35,7 @@ Selectionner les déclarations justes
 +La quasi totalité des systèmes d'exploitation sont écrits en C.
 -Le langage C ne peut pas utiliser plus de 50% des capacités d'un ordinateur.
 -Le langage C est pratique pour développer des applications mobiles.
-+Beaucoup de calculs haute performance sont fait en C.
++Beaucoup de calculs haute performance sont faits en C.
 -Uniquement les machines sous Linux peuvent exécuter les programmes C.
 +Le langage C est réputé pour produire des programmes efficaces.
 
