@@ -32,12 +32,13 @@ Latex:1
 **Utilisation du langage C
 Selectionner les déclarations justes
 -Le langage C est omniprésent pour faire des sites web.
-+La quasi totalité des systèmes d'exploitation sont écrit en C.
++La quasi totalité des systèmes d'exploitation sont écrits en C.
 -Le langage C ne peut pas utiliser plus de 50% des capacités d'un ordinateur.
--Le langage C est pratique pour dévelloper des applications mobiles.
+-Le langage C est pratique pour développer des applications mobiles.
 +Beaucoup de calculs haute performance sont fait en C.
--Uniquement les machines sous Linux peuvent exécuté les programmes C.
+-Uniquement les machines sous Linux peuvent exécuter les programmes C.
 +Le langage C est réputé pour produire des programmes efficaces.
+
 
 
 
