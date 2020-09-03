@@ -11,7 +11,7 @@ text==
 
 Ecrire un programme qui lit une  suite d'entiers positifs terminée par un négatif puis affiche leur somme et 
 leur moyenne.<br>
-Si la suite commence par un négatif, on indiquera "suite vide".
+Si la suite commence par un négatif, on indiquera "suite vide".<br>
 **Exemples :**
 -Entrer une suite d'entiers positifs:
 
@@ -21,10 +21,11 @@ Si la suite commence par un négatif, on indiquera "suite vide".
 
 3
 
--1
- somme= 11 moyenne=2.750000  
--Entrer une suite d'entiers positifs:
--1
+-1<br>
+ somme= 11 moyenne=2.750000  <br>
+ 
+-Entrer une suite d'entiers positifs:<br>
+-1 <br>
 Suite vide.
 ==
 
