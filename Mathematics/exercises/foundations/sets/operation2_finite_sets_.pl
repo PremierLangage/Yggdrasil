@@ -67,10 +67,11 @@ Déterminer $! {{expr}} !$.
 
 evaluator ==
 score, error = eval_set(input.value, sol)
-feedback = feedback[error]
+feedback = message[error]
 ==
 
 solution ==
 La solution est $! { {{sol|latex}} } !$.
 ==
+
 
