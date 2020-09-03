@@ -10,7 +10,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 text==  
 
 Ecrire un programme qui lit une  suite d'entiers positifs terminée par un négatif puis affiche leur somme et 
-leur moyenne.<br
+leur moyenne.<br>
 Si la suite commence par un négatif, on indiquera "suite vide".
 **Exemples :**
 -Entrer une suite d'entiers positifs:
@@ -80,6 +80,7 @@ tests==
   ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,10))])+" -1"]
   ]
 ==
+
 
 
 
