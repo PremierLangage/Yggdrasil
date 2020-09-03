@@ -2,7 +2,7 @@
 
 title= moyenne d'une suite
 tag=boucle,tests
-
+author=
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
