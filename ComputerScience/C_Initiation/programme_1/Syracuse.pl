@@ -9,8 +9,8 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 text==
  Une suite de Syracuse est définie par:<br>
 $%u_0%$ et <br>
-    $%u_{n+1}=  u_n/2%$ si $%u_n %$ est pair<br>
-    $%u_{n+1}= 3* u_n+1%$ si $%u_n%$ est impair<br>
+    $%u_{n+1}=  u_n/2%$ si $%u_n %$ est pair  
+    $%u_{n+1}= 3* u_n + 1%$ si $%u_n%$ est impair<br>
 Pour toute valeur de $%u_0%$ testées, la suite converge vers 1.<br> 
 On appelle *temp de vol* le premier entier tel que $%u_n=1%$. <br>
 Ecrire un programme qui lit un entier strictement positif $%n%$ et affiche le temps de vol de la suite de Syracuse pour $%u_0=n%$
@@ -68,6 +68,7 @@ tests==
   ["Aléatoire", "", str(random.randint(1, 20))],
   ["Aléatoire", "", str(random.randint(20, 40))] ]
 ==
+
 
 
 
