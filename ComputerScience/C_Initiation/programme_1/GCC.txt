@@ -11,17 +11,18 @@ Latex:1
 - /.nomPrg
 - /nomPrg
 
-*Suite à la compilation d'un programme le message suivant apparaît : 
-Moyenne_Suite.c:1:1: warning: // comments are not allowed in this language [-Wcomment]
-//
-^
-1 warning generated.
- 
+*Suite à la compilation d'un programme le message suivant apparaît :<br> 
+Moyenne_Suite.c:1:1: warning: // comments are not allowed in this language [-Wcomment]<br>
+//<br>
+^<br>
+1 warning generated.<br>
+
 +int i;
 +int j=4;
 -char* "Paul";
 -float compteur;
 +int string;
 -float* entier;
+
 
 
