@@ -6,7 +6,7 @@ Latex:1
 +le fichier projet.c en un fichier exécutable de nom monjeu
 
 *Pour exécuter un programme nomPrg on utilise la commande
-+ ./nomPrg suivant de retour chariot
++ ./nomPrg
 - .nomPrg
 - /.nomPrg
 - /nomPrg
