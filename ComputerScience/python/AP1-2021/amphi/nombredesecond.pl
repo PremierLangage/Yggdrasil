@@ -1,9 +1,15 @@
 
 
+# DR 25/09/2019 OK
+#  Author: DR
+@ /utils/sandboxio.py
+@ /grader/evaluator.py [grader.py] 
+@ /builder/before.py [builder.py] 
 
 
 
-title = Addition
+
+title = Expression
 
 before ==
 import random as rd
@@ -27,16 +33,21 @@ form ==
 settings.feedback = rightwrong
 
 evaluator ==
-try:
-    if int(input.value) == 31536000 :
-        grade=(100," exact ")
-except :
-    try :
-       if eval(input.value) == 31536000 :
-            grade=(100,"expression correcte")
-    except :
-        grade=(0,f"La réponse est 31536000.")
+if len(input.value) == 0 :
+    grade = (0, " essayez encore quelque chose de plus grand.")
+else:
+    try:
+        if int(input.value) == 31536000 :
+            grade=(50,"C'est exact !")
+        else:
+            grade=(0,"Valeur incorrecte")
 
+    except :
+        try :
+            if eval(input.value) == 31536000 :
+                grade=(100,"expression correcte égale à 31536000")
+        except :
+            grade=(0,"La réponse est 31536000.")
 ==
 
 
