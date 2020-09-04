@@ -1,5 +1,5 @@
 extends=/model/AMC_TXT.pl 
-title= Compilateur GCC 
+title= Tout savoir sur le compilateur GCC 
 
 questions=@ GCC.txt
 
