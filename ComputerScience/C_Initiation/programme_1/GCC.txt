@@ -7,8 +7,9 @@ Latex:1
 
 *Pour exécuter un programme nomPrg on utilise la commande
 + ./nomPrg suivant de retour chariot
-- en gros $%2^{100}%$
-- en gros $%2^{200}%$
+- .nomPrg
+- /.nomPrg
+- /nomPrg
 
 **Sélectionner les lignes déclarant une variable entière C.
 +int i;
@@ -39,4 +40,5 @@ Selectionner les déclarations justes
 +Beaucoup de calculs haute performance sont faits en C.
 -Uniquement les machines sous Linux peuvent exécuter les programmes C.
 +Le langage C est réputé pour produire des programmes efficaces.
+
 
