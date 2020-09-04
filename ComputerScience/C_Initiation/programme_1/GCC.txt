@@ -11,7 +11,12 @@ Latex:1
 - /.nomPrg
 - /nomPrg
 
-**Sélectionner les lignes déclarant une variable entière C.
+*Suite à la compilation d'un programme le message suivant apparaît : 
+Moyenne_Suite.c:1:1: warning: // comments are not allowed in this language [-Wcomment]
+//
+^
+1 warning generated.
+ 
 +int i;
 +int j=4;
 -char* "Paul";
