@@ -34,22 +34,27 @@ form ==
 settings.feedback = rightwrong
 
 evaluator ==
+nbs=31622400
 if len(input.value) == 0 :
     grade = (0, " essayez encore quelque chose de plus grand.")
 else:
     try:
-        if int(input.value) == 31622400 :
-            grade=(50,"C'est exact !")
+        if int(input.value) == nbs :
+            grade=(50,"C'est exact ! mais privilégiez une expression python.")
         else:
             grade=(0,"Valeur incorrecte")
 
     except :
         try :
-            if eval(input.value) == 31622400 :
-                grade=(100,"expression correcte égale à 31622400")
+            if eval(input.value) == nbs :
+                grade=(100,"Expression correcte égale à "+str(nbs))
+            else:   
+                grade=(0,"Expression syntaxiquement correcte mais fausse")
         except :
-            grade=(0,"expression incorrecte. La réponse est 31622400.")
+            grade=(0,"Expression syntaxiquement incorrecte ")
+
 ==
+
 
 
 
