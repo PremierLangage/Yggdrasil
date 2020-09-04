@@ -18,6 +18,8 @@ ope2 = [random.choice(list({'+','*','-','//'}-{ope[n]})) for n in range(N)]
 
 res = [ eval(op1[n]+ope[n]+op2[n]+ope2[n]+op3[n]) for n in range(N)]
 
+beurk= op1+op2+ope+ope2+res
+
 solved=[ False for n in range(N)]
 isfloat = [ False for n in range(N)]
 inputs = []
@@ -70,12 +72,15 @@ Oui heureusement il y en a des faciles...
 
 form== #|html|
 Nombre d'essais : {{essai}}
+{{beurk}}
 <ul>
 {% for input in inputs %}
 {% if not solved[loop.index0]%}
-<li>  {{op1[loop.index0]}}  {{ope[loop.index0]}}  {{op2[loop.index0]}} {{ope2[loop.index0]}}  {{op3[loop.index0]}}   = {{ input|component }} {% if isfloat[loop.index0] %} Attention valeur réelle (float) {% endif %} </li>
+<li>  {{op1[loop.index0]}}  {{ope[loop.index0]}}  {{op2[loop.index0]}} {{ope2[loop.index0]}}  {{op3[loop.index0]}}   = {{ input|component }}
+     {% if isfloat[loop.index0] %} Attention valeur réelle (float) {% endif %} </li>
 {% endif %}
 {% endfor %}
 </ul>
 ==
+
 
