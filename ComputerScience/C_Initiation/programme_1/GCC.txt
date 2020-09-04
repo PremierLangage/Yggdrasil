@@ -1,0 +1,42 @@
+Latex:1
+
+*gcc projet.c -o monjeu traduit :
+-le fichier monjeu en un fichier exécutable de nom projet.c
++le fichier projet.c en un fichier en langage machine de nom monjeu
++le fichier projet.c en un fichier exécutable de nom monjeu
+
+*Pour exécuter un programme nomPrg on utilise la commande
++ ./nomPrg suivant de retour chariot
+- en gros $%2^{100}%$
+- en gros $%2^{200}%$
+
+**Sélectionner les lignes déclarant une variable entière C.
++int i;
++int j=4;
+-char* "Paul";
+-float compteur;
++int string;
+-float* entier;
+
+**Sélectionner les affirmations exactes.
+-Les blocs C s'identifient en allant à la ligne et en rajoutant 4 espaces.
++On peut imbriquer les bloc les uns dans les autres.
++Les instructions se terminent par le caractère ;
+-Pour définir une fonction, on met le caractère ':'  à la suite de son prototype.
+
+*Combien de fonction *main* contient un programme C
+-Possiblement aucune
+-Autant que necessaire
++Une et une seule
+-Deux, une version sans argument et une version avec argument
+
+**Utilisation du langage C
+Selectionner les déclarations justes
+-Le langage C est omniprésent pour faire des sites web.
++La quasi totalité des systèmes d'exploitation sont écrits en C.
+-Le langage C ne peut pas utiliser plus de 50% des capacités d'un ordinateur.
+-Le langage C est pratique pour développer des applications mobiles.
++Beaucoup de calculs haute performance sont faits en C.
+-Uniquement les machines sous Linux peuvent exécuter les programmes C.
++Le langage C est réputé pour produire des programmes efficaces.
+
