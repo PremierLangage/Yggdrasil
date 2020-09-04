@@ -18,7 +18,7 @@ b=rd.randint(10,20)
 ==
 
 text ==
-Calculer le nombre de secondes dans une année non bissextile. 
+Calculer le nombre de secondes dans une année **non bissextile** (365 Jours). 
 
 Saisissez soit le nombre exacte soit une expression permettant de le calculer.
 ==
