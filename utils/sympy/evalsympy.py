@@ -718,7 +718,7 @@ def eval_set(strans, sol, checkratsimp=True, wobracket=False, local_dict={}):
         return (-1, "NotRatSimp")
     return (100, "Success")
 
-def eval_set_complex(strans, sol, checkratsimp=True, wobracket=False, local_dict={}):
+def eval_set_complex(strans, sol, imaginary_unit="i", form="", checkratsimp=True, wobracket=False, local_dict={}):
     """
     Evaluate an answer when the solution is a finite set.
     """
