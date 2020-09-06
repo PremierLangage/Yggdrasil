@@ -718,6 +718,28 @@ def eval_set(strans, sol, checkratsimp=True, wobracket=False, local_dict={}):
         return (-1, "NotRatSimp")
     return (100, "Success")
 
+def eval_set_complex(strans, sol, checkratsimp=True, wobracket=False, local_dict={}):
+    """
+    Evaluate an answer when the solution is a finite set.
+    """
+    local_dict.update({imaginary_unit: sp.I, 'e': sp.E})
+    sol = FiniteSet2struct(sol)
+    try:
+        if wobracket:
+            strans = "\{ " + strans + " \}"
+        ans = latex2sympy(strans, local_dict)
+    except:
+        return (-1, "NotSet")
+    if not isinstance(ans, list):
+        return (-1, "NotSet")
+    if duplicates(ans):
+        return (-1, "Duplicates")
+    if not equal_struct(ans, sol):
+        return (0, "NotEqual")
+    if checkratsimp and not is_rat_simp(ans):
+        return (-1, "NotRatSimp")
+    return (100, "Success")
+
 def eval_tuple(strans, sol, checksize=False, local_dict={}):
     """
     Evaluate an answer when the solution is a tuple/vector.
