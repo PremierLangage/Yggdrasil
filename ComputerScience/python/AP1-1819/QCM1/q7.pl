@@ -6,7 +6,7 @@ title=Commentaires 7
 
 text= Indiquez les lignes qui sont des commentaires en python :
 
-
+tag=comments
 
 nb=4
 nbtrues=1
@@ -27,4 +27,5 @@ COMMENT:  Ceci est un commentaire
 ==
 
 feedback=show
+
 
