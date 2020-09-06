@@ -1,15 +1,10 @@
-extends = /Mathematics/template/mathinput.pl
+extends = /model/mathinput.pl
 
 title = Equation quadratique
-
-lang = fr
 
 param.roots = int
 
 before ==
-keyboards_JSON['virtualKeyboards']="complexes"
-input.config = keyboards_JSON
-
 a,b=list_randint(2,-4,4,[0])
 a2,b2=list_randint(2,-4,4,[0])
 while is_equal(a-b*I,a2+b2*I):
@@ -40,6 +35,7 @@ Déterminer les solutions (complexes) de l'équation $! {{latexP}} = 0 !$. Sépa
 evaluator==
 score,_,feedback=ans_struct_complex(input.value,lstsol,"setwobraces")
 ==
+
 
 
 
