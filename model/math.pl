@@ -17,7 +17,8 @@ extends = basic.pl
 message.Success = 
 message.NotEqual = 
 message.NotExpr = La réponse doit être une expression mathématique.
-message.NotFrac = La réponse doit être une fraction.
+message.NotFrac = La réponse doit être un entier ou une fraction.
+message.NotFracIrred = La réponse doit un entier ou une fraction irréductible.
 message.NotRealOrInf = La réponse doit être un nombre réel ou $! +\infty !$ ou $! -\infty !$.
 message.NotRSet = La réponse doit être un intervalle ou une réunion d'intervalles.
 message.NotCplx = La réponse doit être un nombre complexe.
@@ -39,6 +40,7 @@ message.UnauthorizedFunc = Votre réponse utilise des fonctions non-autorisées.
 message.NotChainIneq = La réponse doit être un encadrement.
 message.WrongIneq =
 message.WrongBounds =
+
 
 
 
