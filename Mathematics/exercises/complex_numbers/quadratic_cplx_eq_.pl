@@ -33,7 +33,8 @@ Déterminer les solutions (complexes) de l'équation $! {{ P|latex }} = 0 !$. S�
 ==
 
 evaluator==
-score,_,feedback=ans_struct_complex(input.value,lstsol,"setwobraces")
+score, error = eval_set_complex(input.value, lstsol,wobracket=True)
+feedback = message[error]
 ==
 
 
