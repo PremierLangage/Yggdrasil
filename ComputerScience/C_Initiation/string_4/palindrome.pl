@@ -24,11 +24,7 @@ codebefore==
 
 editor.code==
 int est_palindrome(char s[]){
-int i,l;
-l=strlen(s);
-for(i=0; i<l/2;i++)
-    if(s[i]!=s[l-1-i])
-        return 0;
+
 return 1;
 }
 ==
