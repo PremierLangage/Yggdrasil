@@ -24,12 +24,12 @@ if param['roots']=='int3':
 if param['roots']=='rat':
     P=s*(c*x+a+b*I)*(c*x+a-b*I)
 lstsol=list(solveset(P,x,domain=S.Complexes))
-latexP=latex(poly(expand(P),x))
+P = poly(expand(P),x)
 solution=r"Les solutions sont $! \displaystyle %s !$ et $! \displaystyle %s !$." % (latex(lstsol[0]),latex(lstsol[1]))
 ==
 
 text ==
-Déterminer les solutions (complexes) de l'équation $! {{latexP}} = 0 !$. Séparer les différentes solutions par une virgule.
+Déterminer les solutions (complexes) de l'équation $! {{ P|latex }} = 0 !$. Séparer les différentes solutions par une virgule.
 ==
 
 evaluator==
