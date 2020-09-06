@@ -592,9 +592,9 @@ def eval_frac(strans, sol, simpwarning=True):
         return (0, "NotEqual")
     if not is_frac_irred(ans):
         if simpwarning:
-            return (-1, "NotRatSimp")
+            return (-1, "NotFracIrred")
         else:
-            return (0, "NotRatSimp")
+            return (0, "NotFracIrred")
     return (100, "Success")
 
 def eval_function(strans, sol, checkratsimp=True, authorized_func=None, local_dict={}):
@@ -844,6 +844,7 @@ def ans_antiderivative(strans,sol,x,local_dict={}):
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
+
 
 
 
