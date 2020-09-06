@@ -82,7 +82,7 @@ Calculer l'expression $! \displaystyle {{expr}} !$ en l'écrivant sous la forme 
 
 evaluator==
 score, error = eval_frac(input.value, sol)
-feedback = feedback_message[error]
+feedback = message[error]
 ==
 
 solution==
@@ -148,6 +148,7 @@ wims ==
 \text{expr=\frac{texmath(\ee1)}{texmath(\T1)}}
 }
 ==
+
 
 
 
