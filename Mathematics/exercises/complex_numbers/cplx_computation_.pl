@@ -101,7 +101,7 @@ else:
 
 ==
 
-input.virtualKeyboard = complex
+input.virtualKeyboard = sets
 
 evaluator ==
 score, error = eval_complex(input.value,sol,form="cartesian")
@@ -175,6 +175,7 @@ wims ==
 \text{expr=\overline{\left(\frac{1}{z}\right)}}
 \complex{rep=1/(\zb1)}
 ==
+
 
 
 
