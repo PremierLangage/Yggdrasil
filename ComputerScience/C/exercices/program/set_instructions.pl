@@ -47,7 +47,7 @@ form==
 ==
 
 evaluator==#|python|
-if dic['vars_values'] is None:
+if reponse['vars_values'] is None:
     if inputbox.value == "Erreur":
         grade = (100, '<span class="success-state">Bravo, il y a bien une instruction qui déclanche une erreur.</span>')
     else:
@@ -57,7 +57,7 @@ else:
         value = int(inputbox.value)
     except:
         grade = (0, '<span class="error-state">Mauvaise réponse, vous n\'avez pas rentré un entier valide.</span>')
-    if value == dic['vars_values'][0]:
+    if value == reponse['vars_values'][0]:
         grade = (100, '<span class="success-state">Bravo, vous avez trouvé la bonne valeur.</span>')
     else:
         grade = (100, '<span class="success-state">Mauvaise réponse, **a** aura pour valeur '+str(dic['vars_values'][0])+' après ces instructions.</span>')
