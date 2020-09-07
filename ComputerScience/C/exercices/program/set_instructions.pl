@@ -44,7 +44,7 @@ inputbox.appearance = outline
 
 
 form==
-
+{{ inputbox | component }}
 ==
 
 grader== #|python|
