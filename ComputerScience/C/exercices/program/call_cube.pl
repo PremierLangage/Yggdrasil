@@ -29,11 +29,12 @@ text==
 tout en rappelant cet entier (par exemple : *Le cube du nombre 3 est le 
 nombre 9.*).
 
+<br />
 
 L'objectif est ici de ne presque rien coder mais de réutiliser les deux 
 premières fonctions pour construire la troisième.
 
-
+<br />
 ==
 
 editor.code==
