@@ -31,7 +31,7 @@ Un nombre : 6
 
 6 a 4 diviseurs
 
-*Rappel :* le code est sensible aux espaces qui n'ont pas nécessité d'exister !
+**Rappel :** le code est sensible aux espaces qui n'ont pas nécessité d'exister !
 ==
 
 editor.code==
