@@ -43,13 +43,12 @@ def latex_number(s,x,y):
 
 lstexpr=[]
 sol=[]
-sol_tex=[]
+
 case=list_randint_norep(3,0,5)
 for i in range(3):
     s,x,y=rand_coeff(case[i])
     lstexpr.append(latex_number(s,x,y))
     sol.append(simplify(int(s+"1")*Pow(x,y)))
-    sol_tex.append(latex(sol[i]))
 ==
 
 text ==
@@ -71,8 +70,8 @@ score, error = eval_mult_expr([input1.value,input2.value,input3.value],sol)
 solution ==
 Les solutions sont :
 <ul>
-{% for input in lstinput %}
-<li> $! {{ lstexpr[loop.index0] }} = {{ sol_tex[loop.index0] }}!$ </li>
+{% for input in [input1, input2, input3] %}
+<li> $! {{ lstexpr[loop.index0] }} = {{ sol[loop.index0]|latex }}!$ </li>
 {% endfor %}
 </ul>
 ==
