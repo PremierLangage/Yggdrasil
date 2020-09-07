@@ -18,7 +18,7 @@ Si l'entier est négatif, on ne fait rien !
 0 a une infinité de diviseurs.
 
 **Exemple :**
-```c 
+
 Un nombre : 6
 
 1
@@ -30,7 +30,6 @@ Un nombre : 6
 6
 
 6 a 4 diviseurs
-```
 
 **Rappel :** le code est sensible aux espaces qui n'ont pas nécessité d'exister !
 ==
