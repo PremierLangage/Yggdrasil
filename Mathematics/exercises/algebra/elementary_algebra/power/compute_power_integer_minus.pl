@@ -52,18 +52,10 @@ Calculer les expressions suivantes.
 ==
 
 form ==
-<style>
-.fcontainer {
-    display: flex;
-    align-items: center;
-}
-c-math-input {
-    width: 100%;
-}
-</style>
+
 {% for input in [input1, input2, input3] %}
 <div class="fcontainer">
-<span> $! {{ lstexpr[loop.index0] }} $! = </span>{{input|component}}
+<span> $! {{ lstexpr[loop.index0] }} !$ = </span>{{input|component}}
 </div>
 {% endfor %}
 ==
