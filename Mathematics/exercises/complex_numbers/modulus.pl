@@ -20,12 +20,13 @@ Déterminer le module du nombre complexe $% z= {{ z|latex }} %$.
 
 evaluator ==
 score, error = eval_expr(input.value,sol)
-feedback = feedback_message[error]
+feedback = message[error]
 ==
 
 solution==
 Le module de $! z !$ est $% \displaystyle {{ sol|latex }} %$.
 ==
+
 
 
 
