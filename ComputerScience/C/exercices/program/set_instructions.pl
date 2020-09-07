@@ -29,7 +29,7 @@ def check_consistency(dic):
 ==
 
 nb_variables = 2
-complexity = 12
+complexity = 8
 instruct_complexity = 4
 
 text==
