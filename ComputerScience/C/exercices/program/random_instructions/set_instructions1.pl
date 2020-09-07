@@ -9,7 +9,7 @@ tag=program|variable
 
 type=direct
 
-extends = @/ComputerScience/C/exercices/program/set_instructions.pl
+extends=/ComputerScience/C/exercices/program/set_instructions.pl
 
 
 nb_variables = 1
