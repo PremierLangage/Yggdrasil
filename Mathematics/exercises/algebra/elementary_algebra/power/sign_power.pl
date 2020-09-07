@@ -1,8 +1,8 @@
-extends = /Mathematics/template/mathcheckbox.pl
+extends = /model/checkbox.pl
+extends = /math.pl
 
 title = Signe d'une puissance
 
-lang = fr
 
 before ==
 def latex_number(s,x,y):
@@ -34,3 +34,4 @@ component.items = choices
 text ==
 Sélectionner les nombres négatifs dans la liste ci-dessous.
 ==
+
