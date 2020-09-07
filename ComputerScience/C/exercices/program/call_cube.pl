@@ -17,8 +17,8 @@
 author=Nicolas Borie
 
 title=Appeler les fonctions qui vont bien...
-tag=program
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=programme|appel|fonction|simple|facile
+extends=/ComputerScience/C/template/std_progC.pl
 
 text==
 Écrire une fonction **show_cube** qui prend en argument un entier `n` (par exemple 3) et qui affiche 
