@@ -56,14 +56,14 @@ void show_cube(int n){
 
 ==
 
-codebefore==
+code_before==
 
 #include <stdio.h>
 #include <stdlib.h>
 
 ==
 
-codeafter==
+code_after==
 
 int main(int argc, char* argv[]){
   show_cube(atoi(argv[1]));
