@@ -88,10 +88,10 @@ checks_args_stdin==
 [["Exécution simple", ["1"], ""],
  ["Quelques éléments", ["12"], ""],
  ["Un négatif", ["-7"], ""],
- ["Aléatoire", [str(random.randint(-100, 100))], ""],
- ["Aléatoire", [str(random.randint(-100, 100))], ""],
- ["Aléatoire", [str(random.randint(-100, 100))], ""],
- ["Aléatoire", [str(random.randint(-100, 100))], ""]]
+ ["Aléatoire", [str(randint(-100, 100))], ""],
+ ["Aléatoire", [str(randint(-100, 100))], ""],
+ ["Aléatoire", [str(randint(-100, 100))], ""],
+ ["Aléatoire", [str(randint(-100, 100))], ""]]
 ==
 
 
