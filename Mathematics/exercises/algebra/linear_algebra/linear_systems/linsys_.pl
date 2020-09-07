@@ -35,16 +35,17 @@ Ecrire la solution sous forme d'un {{tuple_name}} de nombres.
 
 evaluator ==
 score, error = eval_tuple(input.value, sol, checksize=True)
-feedback = feedback_message[error]
+feedback = message[error]
 ==
 
-feedback_message.NotTuple = Votre réponse n'est pas un {{tuple_name}} de nombres.
-feedback_message.WrongSize = Votre réponse n'est pas un {{tuple_name}} de nombres.
+message.NotTuple = Votre réponse n'est pas un {{tuple_name}} de nombres.
+message.WrongSize = Votre réponse n'est pas un {{tuple_name}} de nombres.
  
 
 solution == 
 La solution est $! {{sol_tex}} !$.
 ==
+
 
 
 
