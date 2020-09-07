@@ -28,20 +28,23 @@ def check_consistency(dic):
     return True, ""
 ==
 
-
 nb_variables = 2
 complexity = 12
 instruct_complexity = 4
 
 text==
-
+{{ inputbox | component }}
 ==
 
+inputbox =: Input
+inputbox.type = number
+inputbox.placeholder = Answer
+inputbox.maxlength = 2
+inputbox.appearance = outline
+
+
 form==
-<div class="input-group">
-<span class="input-group-addon">Réponse</span>
-<input id="form_txt_answer" type="text" class="form-control" placeholder="" required>
-</div>
+
 ==
 
 grader== #|python|
