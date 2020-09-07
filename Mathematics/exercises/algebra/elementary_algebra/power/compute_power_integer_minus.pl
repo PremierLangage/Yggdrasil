@@ -1,10 +1,8 @@
 extends = /model/mathinput3.pl
 
-title = Calcul puissance
+title = Calcul puissances
 
-lang = fr
-
-extracss == #|html| 
+style. == #|html| 
 <style>
 .fcontainer {
     display: flex;
