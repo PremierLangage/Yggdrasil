@@ -6,11 +6,9 @@ author=
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
-
 text==  
 
-Ecrire un programme qui lit une  suite d'entiers positifs terminée par un négatif puis affiche leur somme et 
-leur moyenne.<br>
+Ecrire un programme qui lit une  suite d'entiers positifs terminée par un négatif puis affiche leur somme et leur moyenne.<br>
 Si la suite commence par un négatif, on indiquera "Suite vide".<br>
 <br>
 **Exemples :**<br>
@@ -23,7 +21,7 @@ Si la suite commence par un négatif, on indiquera "Suite vide".<br>
 3
 
 -1<br>
- somme= 11 moyenne=2.750000  <br>
+ somme=11 moyenne=2.750000  <br>
 <br>
 -Entrer une suite d'entiers positifs:<br>
 -1 <br>
@@ -36,7 +34,6 @@ int main(void) {
 printf("Entrer une suite d'entiers positifs:\n");
   /* votre code ici... */
 }
-
 ==
 
 
@@ -48,8 +45,6 @@ codebefore==
 ==
 
 solution==
-
-
 
 int main(void) {
 	int n ;
@@ -68,7 +63,7 @@ int main(void) {
            }
         moy=somme;
         moy/=nb;
-	    printf("somme=%d moyenne=%f \n",somme,moy);
+	    printf("somme=%d moyenne=%f\n",somme,moy);
         }
 	return 0;
 }
@@ -82,6 +77,7 @@ tests==
   ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,10))])+" -1"]
   ]
 ==
+
 
 
 
