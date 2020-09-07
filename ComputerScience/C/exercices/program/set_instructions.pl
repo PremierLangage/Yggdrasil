@@ -19,8 +19,6 @@ author=Nicolas Borie
 title=Jeu d'instructions arithmétiques
 tag=program|variable
 
-type=direct
-
 @/utils/sandboxio.py
 
 builder=@ /ComputerScience/C/exercices/program/code_generation.py
