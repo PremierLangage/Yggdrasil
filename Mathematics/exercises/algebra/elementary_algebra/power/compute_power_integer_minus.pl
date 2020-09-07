@@ -3,7 +3,6 @@ extends = /model/mathinput3.pl
 title = Calcul puissances
 
 style.left == #|html| 
-<style>
 .fcontainer {
     display: flex;
     align-items: center;
@@ -11,7 +10,6 @@ style.left == #|html|
 c-math-input {
     width: 100%;
 }
-</style>
 ==
 
 before ==
@@ -65,7 +63,7 @@ c-math-input {
 </style>
 {% for input in [input1, input2, input3] %}
 <div class="fcontainer">
-<span> {{ lstexpr[loop.index0] }} = </span>{{input|component}}
+<span> $! {{ lstexpr[loop.index0] }} $! = </span>{{input|component}}
 </div>
 {% endfor %}
 ==
