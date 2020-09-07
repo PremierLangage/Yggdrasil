@@ -16,7 +16,7 @@ text = Déterminer un argument du nombre complexe $% z= {{ z|latex }} %$.
 
 evaluator==
 score, error = eval_expr(input.value,sol,modulo=2*pi)
-feedback = fmessage[error]
+feedback = message[error]
 ==
 
 solution==
