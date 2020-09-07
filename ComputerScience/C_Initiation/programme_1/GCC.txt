@@ -1,13 +1,13 @@
 Latex:1
 
 * Quelle(s) ligne(s) de commande permet(tent) de compiler le programme MonProg.c en un executable MonProg ?
-gcc -Ansi MonProg.c -o MonProg 
-gcc -Ansi MonProg.c MonProg
-gcc -Ansi -Wall MonProg.c -o MonProg
-gcc MonProg.c MonProg
-gcc -Ansi -wall MonProg.c -o MonProg
-gcc -ansi MonProg.c MonProg
-gcc -ansi -wall MonProg.c -o MonProg
++ gcc MonProg.c -o MonProg 
+- gcc -Ansi MonProg.c MonProg
+- gcc -Ansi -Wall MonProg.c -o MonProg
+- gcc MonProg.c MonProg
++ gcc MonProg.c -o MonProg -Wall -ansi
+- gcc -ansi MonProg.c MonProg
++ gcc MonProg.c -o MonProg
 
 *Pour exécuter un programme nomPrg on utilise la commande
 + ./nomPrg
