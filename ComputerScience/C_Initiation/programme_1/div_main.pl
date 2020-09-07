@@ -9,7 +9,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==  
 
-Ecrire un programme qui lit un  entier  strictement positif et affiche,
+Ecrire un programme qui lit un  entier strictement positif et affiche,
  **un par ligne**, chacun de ses diviseurs en ordre croissant.
 Le programme affiche ensuite le nombre de diviseurs.
 
@@ -30,6 +30,8 @@ Un nombre : 6
 6
 
 6 a 4 diviseurs
+
+*Rappel :* le code est sensible aux espaces qui n'ont pas nécessité d'exister !
 ==
 
 editor.code==
@@ -81,6 +83,7 @@ tests==
   ["Aléatoire", "", str(random.randint(1, 20))],
   ["Aléatoire", "", str(random.randint(20, 40))] ]
 ==
+
 
 
 
