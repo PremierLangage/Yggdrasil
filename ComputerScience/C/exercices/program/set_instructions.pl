@@ -38,7 +38,7 @@ text==
 ==
 
 inputbox =: Input
-inputbox.placeholder = 
+inputbox.placeholder = Votre réponse
 inputbox.appearance = outline
 
 
