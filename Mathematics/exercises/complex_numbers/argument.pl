@@ -20,7 +20,7 @@ feedback = fmessage[error]
 ==
 
 solution==
-Un argument de $! z !$ est $% \displaystyle {{sol_tex}} %$.
+Un argument de $! z !$ est $% \displaystyle {{ sol|latex }} %$.
 ==
 
 
