@@ -57,7 +57,6 @@ int main(int argc, char* argv[]){
   return 0;
 }
 
-
 ==
 
 checks_args_stdin==
@@ -66,6 +65,7 @@ checks_args_stdin==
 ["Argument multiple", ["arg1", "arg2", "arg3", "arg4"], ""],
 ["Mélange", ["argument1", "192", "poule", "foo", "42"], ""],
 ["Complexe", ["'argument en plusieurs mots' mot_unique"], ""],
+["Test aléatoire", [choice(["Harder", "Better", "Faster", "Stronger"]) for i in range(randint(1, 10))], ""],
 ["Test aléatoire", [choice(["Harder", "Better", "Faster", "Stronger"]) for i in range(randint(1, 10))], ""],
 ["Test aléatoire", [choice(["Harder", "Better", "Faster", "Stronger"]) for i in range(randint(1, 10))], ""]]
 ==
