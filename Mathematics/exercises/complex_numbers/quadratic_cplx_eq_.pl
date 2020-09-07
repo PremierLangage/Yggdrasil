@@ -32,10 +32,13 @@ text ==
 Déterminer les solutions (complexes) de l'équation $! {{ P|latex }} = 0 !$. Séparer les différentes solutions par une virgule.
 ==
 
+input.virtualKeyboard = complex
+
 evaluator==
 score, error = eval_set_complex(input.value, lstsol,wobracket=True)
 feedback = message[error]
 ==
+
 
 
 
