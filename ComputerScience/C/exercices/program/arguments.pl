@@ -19,15 +19,22 @@ extends=/ComputerScience/C/template/std_progC.pl
 author=Nicolas Borie
 
 title=Afficher les arguments d'un programme C
-tag=program
+tag=programme|argument|terminal|affichage
 
 text==
 
-Écrire un programme C qui affiche ses arguments. Le programme ne devra
+Écrire un programme C qui affiche les arguments que l'on lui a passés 
+lors de son appel en ligne de commandes. Le programme ne devra
 pas afficher son nom qui est toujours positionné en tête du tableau
 des arguments. On affichera un argument par ligne. Exécuté sans
 argument, le programme ne doit donc rien afficher.
-    
+
+```shell 
+exemple : ./a.out voici 3 arguments
+voici
+3
+arguments
+```
 ==
 
 editor.code==
