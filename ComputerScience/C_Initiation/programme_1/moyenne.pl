@@ -25,8 +25,8 @@ Si la suite commence par un négatif, on indiquera "Suite vide".<br>
 <br>
 -Entrer une suite d'entiers positifs:<br>
 -1 <br>
-Suite vide.<br>
-
+Suite vide.
+<br>
 **Rappel :** le code est sensible aux espaces et autres '\n' qui n'ont pas nécessité d'exister !
 ==
 
