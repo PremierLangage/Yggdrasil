@@ -9,7 +9,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==  
 
-Écrire un programme qui lit trois variables entières  puis les affiche dans l'ordre croissant, séparées par des espaces,
+Écrire un programme qui lit trois variables entières puis les affiche dans l'ordre croissant, séparées par des espaces,
 suivies d'un retour à la ligne.
 
 ==
