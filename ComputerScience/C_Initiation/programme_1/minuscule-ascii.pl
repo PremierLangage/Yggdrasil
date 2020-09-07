@@ -12,7 +12,7 @@ text==
 
     lettre --> code_décimal_de_la_lettre
     
-Attention, il y a un espace avant et après la flèche. Il y a un retour à la ligne juste après le 
+**Attention :** il y a un espace avant et après la flèche. Il y a un retour à la ligne juste après le 
 code décimal de la lettre.
 ==
 
@@ -41,6 +41,7 @@ int main(){
 tests==
 [["Simple exéécution", "", ""]]
 ==
+
 
 
 
