@@ -13,8 +13,8 @@ def latex_number(s,x,y):
         tex="%s %d ^{ %d }" % (s,x,y)
     return tex
 
-sol=list_randitem(4,[True,False])
-choices=[]
+sol = list_randitem(4,[True,False])
+choices = []
 for i in range(len(sol)):
     with evaluate(False):
         a=randint(2,20)
@@ -27,11 +27,13 @@ for i in range(len(sol)):
             s=latex_number(*nn)
         else:
             s=latex_number(*np)
-    choices.append({"id":str(i),"content":"$$ "+s+" $$"})
-component.items = choices
+    choices.append("$$ "+s+" $$")
+checkbox.setdata(choices, sol)
+
 ==
 
 text ==
 Sélectionner les nombres négatifs dans la liste ci-dessous.
 ==
+
 
