@@ -3,7 +3,7 @@
 # devinez la valeur d'une variable après un jeu d'instructions
 
 author=Nicolas Borie
-name=Jeu d'instructions arithmétiques
+
 title=Jeu d'instructions arithmétiques
 tag=program|variable
 
@@ -52,6 +52,7 @@ def evaluator(response, dic):
     else:
         return False, "Mauvaise réponse"
 ==
+
 
 
 
