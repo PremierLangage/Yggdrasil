@@ -49,16 +49,17 @@ form==
 evaluator==#|python|
 if dic['vars_values'] is None:
     if inputbox.value == "Erreur":
-        return True, "Bravo"
+        grade = (100, '<span class="success-state">Bravo, il y a bien une instruction qui déclanche une erreur.</span>')
     else:
-        return False, "Mauvaise réponse"
-try: 
-    value = int(inputbox.value)
-except:
-    return False, "Mauvaise réponse"
-if value == dic['vars_values'][0]:
-    return True, "Bravo"
+        grade = (0, '<span class="error-state">Mauvaise réponse, une instruction va déclancher une Erreur.</span>')
 else:
-    return False, "Mauvaise réponse"
+    try: 
+        value = int(inputbox.value)
+    except:
+        grade = (0, '<span class="error-state">Mauvaise réponse, vous n\'avez pas rentré un entier valide.</span>')
+    if value == dic['vars_values'][0]:
+        grade = (100, '<span class="success-state">Bravo, vous avez trouvé la bonne valeur.</span>')
+    else:
+        grade = (100, '<span class="success-state">Mauvaise réponse, **a** aura pour valeur '+str(dic['vars_values'][0])+' après ces instructions.</span>')
 ==
 
