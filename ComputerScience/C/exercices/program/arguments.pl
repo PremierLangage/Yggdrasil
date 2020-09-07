@@ -30,10 +30,10 @@ des arguments. On affichera un argument par ligne. Exécuté sans
 argument, le programme ne doit donc rien afficher.
 
 ```shell 
-exemple : ./a.out voici 3 arguments
-voici
-3
-arguments
+    exemple : ./a.out voici 3 arguments
+    voici
+    3
+    arguments
 ```
 ==
 
