@@ -7,7 +7,7 @@ Latex:1
 - gcc MonProg.c MonProg
 + gcc MonProg.c -o MonProg -Wall -ansi
 - gcc -ansi MonProg.c MonProg
-+ gcc MonProg.c -o MonProg
+- gcc -o MonProg.c -wall MonProg
 
 *Pour exécuter un programme nomPrg on utilise la / les  commande(s) :
 + ./nomPrg
