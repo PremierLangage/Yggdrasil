@@ -19,9 +19,10 @@ author=Nicolas Borie
 title=Jeu d'instructions arithmétiques
 tag=program|variable
 
-@/utils/sandboxio.py
+@ /utils/sandboxio.py
+grader =@ /grader/evaluator.py
 
-builder=@ /ComputerScience/C/exercices/program/code_generation.py
+builder =@ /ComputerScience/C/exercices/program/code_generation.py
 
 consistency==
 def check_consistency(dic):
