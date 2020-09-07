@@ -34,7 +34,7 @@ complexity = 12
 instruct_complexity = 4
 
 text==
-{{ inputbox | component }}
+
 ==
 
 inputbox =: Input
