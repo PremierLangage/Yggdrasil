@@ -16,7 +16,7 @@
 
 author=Nicolas Borie
 
-title=Appeler les fonctions qui vont bien...
+title=Assemblage de fonctions
 tag=programme|appel|fonction|simple|facile
 extends=/ComputerScience/C/template/std_progC.pl
 
