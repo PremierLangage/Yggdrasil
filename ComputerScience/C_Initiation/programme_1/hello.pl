@@ -14,7 +14,7 @@ text==
 Faites votre premier programme C, ce programme devra écrire 
 *Hello World!* sur la sortie standard et retourner à la ligne. <br>
 Le retour à la ligne est encodé par le caractère '\n' en C (vous ne mettrez pas d'espace avant ni après !).<br>
-Pour faire de l'affichage, on utilise la fonction *printf* dont l'existance est déclarée grace à la commande *#include &lt; stdio.h &gt;*.
+Pour faire de l'affichage, on utilise la fonction *printf* dont l'existance est déclarée grace à la commande *#include &lt;stdio.h&gt;*.
 
 Un programme C contient toujours une et une seule fonction dont le nom est *main*. Cette fonction sera le point d'entrée
 du programme.<br>
