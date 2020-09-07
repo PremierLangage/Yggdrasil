@@ -29,12 +29,21 @@ pas afficher son nom qui est toujours positionné en tête du tableau
 des arguments. On affichera un argument par ligne. Exécuté sans
 argument, le programme ne doit donc rien afficher.
 
+<br />
+
+Voici un exemple d'exécution si le programme se nome a.out
+
+<br />
 
     Platon@debian~$> ./a.out voici 3 arguments
     voici
     3
     arguments
 
+<br />
+
+Veuillez à bien placer un seul argument par ligne sans espace avant ou après, 
+juste un retour à la ligne.
 ==
 
 editor.code==
