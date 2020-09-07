@@ -1,0 +1,31 @@
+Latex:1
+
+
+**soit la déclaration de variable suivante :
+
+	char c = ... ;<br>
+
+Quelles valeurs sont des initialisations sont correctes (ne provoquent ni erreur ni warning) de c ?
++  98
+- "toto"
+-3.14
++'a'
+-"a"
++32+23
+-700
+
+**
+Parmi les types suivants, lesquels sont des types C entiers.
+==
+-float
+-double
+-long float
+-long double
++int
++unsigned char
++short
++unsigned long int
+
+
+
+
