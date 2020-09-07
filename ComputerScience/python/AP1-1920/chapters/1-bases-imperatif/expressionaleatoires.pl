@@ -67,11 +67,8 @@ Oui heureusement il y en a des faciles...
 form== #|html|
 Nombre d'essais : {{essai}}
 <ul>
-{% for input in inputs %}
-{% if not solved[loop.index0]%}
-<li>  {{op1}}  {{ope}}  {{op2}}    = {{ input|component }} {% if isfloat %} Attention valeur réelle (float) {% endif %} </li>
-{% endif %}
-{% endfor %}
+    {{ inputs }}
+
 </ul>
 ==
 
