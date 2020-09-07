@@ -6,7 +6,7 @@
       "<": "<"
     },
     "virtualKeyboardMode": "manual",
-    "virtualKeyboards": "elementary functions complexes sets relations",
+    "virtualKeyboards": "elementary functions complex sets relations",
     "customVirtualKeyboards": {
       "elementary": {
         "label": "Elémentaire",
