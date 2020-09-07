@@ -46,25 +46,19 @@ form==
 {{ inputbox | component }}
 ==
 
-grader== #|python|
-from sandboxio import output, get_context, get_answers
-
-def evaluator(response, dic):
-    if dic['vars_values'] is None:
-        if response['answer'] == "Erreur":
-            return True, "Bravo"
-        else:
-            return False, "Mauvaise réponse"
-    try: 
-        value = int(response['answer'])
-    except:
-        return False, "Mauvaise réponse"
-    if value == dic['vars_values'][0]:
+evaluator==#|python|
+if dic['vars_values'] is None:
+    if inputbox.value == "Erreur":
         return True, "Bravo"
     else:
         return False, "Mauvaise réponse"
+try: 
+    value = int(inputbox.value)
+except:
+    return False, "Mauvaise réponse"
+if value == dic['vars_values'][0]:
+    return True, "Bravo"
+else:
+    return False, "Mauvaise réponse"
 ==
-
-
-
 
