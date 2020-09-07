@@ -17,7 +17,7 @@ suivies d'un retour à la ligne.
 editor.code==
 int main(void) {
 ...
-printf("Entrer trios entiers:\n");
+printf("Entrer trois entiers:\n");
   /* votre code ici... */
 }
 
@@ -32,7 +32,6 @@ codebefore==
 ==
 
 solution==
-
 
 int main(void){
   int a,b,c;
@@ -57,9 +56,7 @@ int main(void){
   return 0;
 }
 
-
 ==
-
 
 tests==
 [ ["Quelconque", "", "10 0 -1"],
@@ -68,6 +65,7 @@ tests==
   ["Aléatoire", "",  " ".join([str(random.randint(0,100)) for i in range(3)]
 ]
 ==
+
 
 
 
