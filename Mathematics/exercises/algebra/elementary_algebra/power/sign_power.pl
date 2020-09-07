@@ -1,5 +1,5 @@
 extends = /model/checkbox.pl
-extends = /math.pl
+extends = /model/math.pl
 
 title = Signe d'une puissance
 
