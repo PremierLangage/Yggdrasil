@@ -21,10 +21,10 @@ Moyenne_Suite.c:1:1: warning: // comments are not allowed in this language [-Wco
 ^<br>
 1 warning generated.<br>
 Question : quelle est la ligne GCC utilisée ?
-+gcc Moyenne_Suite.c -o Moyenne -ansi
-+gcc Moyenne_Suite.c -o Moyenne -Wall -ansi
--gcc Moyenne_Suite.c -o Moyenne -Wall
--gcc Moyenne_Suite.c -o Moyenne
+- gcc Moyenne_Suite.c -o Moyenne -ansi
++ gcc Moyenne_Suite.c -o Moyenne -Wall -ansi
+- gcc Moyenne_Suite.c -o Moyenne -Wall
+- gcc Moyenne_Suite.c -o Moyenne
 
 
 
