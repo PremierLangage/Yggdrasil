@@ -37,9 +37,7 @@ text==
 ==
 
 inputbox =: Input
-inputbox.type = number
 inputbox.placeholder = Answer
-inputbox.maxlength = 2
 inputbox.appearance = outline
 
 
