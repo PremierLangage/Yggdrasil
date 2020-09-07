@@ -1,9 +1,12 @@
 Latex:1
 
-* $$ gcc projet.c -o projet$$ traduit :
--le fichier "projet" en le fichier exécutable de nom "projet.c"
-+le fichier "projet.c" en un fichier en langage machine de nom projet
-+le fichier projet.c en un fichier exécutable de nom monjeu
+* Quelle(s) ligne(s) de commande permet(tent) de compiler le programme HelloWorld.c en un executable HelloWorld ?
+gcc -Ansi HelloWorld.c -o HelloWorld aucune de ces réponses
+gcc -Ansi HelloWorld.c HelloWorld
+gcc -Ansi -Wall HelloWorld.c -o HelloWorld gcc HelloWorld.c HelloWorld
+gcc -Ansi -wall HelloWorld.c -o HelloWorld gcc -ansi HelloWorld.c HelloWorld
+gcc -ansi -wall HelloWorld.c -o HelloWorld
+
 
 *Pour exécuter un programme nomPrg on utilise la commande
 + ./nomPrg
@@ -21,6 +24,7 @@ Question : quelle est la ligne GCC utilisée ?
 +gcc Moyenne_Suite.c -o Moyenne -Wall -ansi
 -gcc Moyenne_Suite.c -o Moyenne -Wall
 -gcc Moyenne_Suite.c -o Moyenne
+
 
 
 
