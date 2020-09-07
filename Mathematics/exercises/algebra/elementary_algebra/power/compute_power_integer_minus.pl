@@ -2,7 +2,7 @@ extends = /model/mathinput3.pl
 
 title = Calcul puissances
 
-style. == #|html| 
+style.left == #|html| 
 <style>
 .fcontainer {
     display: flex;
