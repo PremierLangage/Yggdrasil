@@ -1,6 +1,6 @@
 Latex:1
 
-* Quelle(s) ligne(s) de commande permet(tent) de compiler le programme MonProg.c en un executable MonProg ?
+** Quelle(s) ligne(s) de commande permet(tent) de compiler le programme MonProg.c en un executable MonProg ?
 + gcc MonProg.c -o MonProg 
 - gcc -Ansi MonProg.c MonProg
 - gcc -Ansi -Wall MonProg.c -o MonProg
@@ -25,6 +25,7 @@ Question : quelle est la ligne GCC utilisée ?
 + gcc Moyenne_Suite.c -o Moyenne -Wall -ansi
 - gcc Moyenne_Suite.c -o Moyenne -Wall
 - gcc Moyenne_Suite.c -o Moyenne
+
 
 
 
