@@ -2,7 +2,7 @@
 # Tags : complex numbers
 # 19/8/2020
 
-extends = /model/mathjsxgraph.pl
+extends = /model/jsxgraph/clickpoint.pl
 
 title = Affixe d'un nombre complexe
 
