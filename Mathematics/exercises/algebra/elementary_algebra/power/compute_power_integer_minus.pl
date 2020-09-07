@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathexpr.pl
+extends = /model/mathinput3.pl
 
 title = Calcul puissance
 
@@ -50,12 +50,6 @@ for i in range(3):
     lstexpr.append(latex_number(s,x,y))
     sol.append(simplify(int(s+"1")*Pow(x,y)))
     sol_tex.append(latex(sol[i]))
-
-lstinput=[input1,input2,input3]
-keyboards_JSON['virtualKeyboards']="elementary"
-input1.config = keyboards_JSON
-input2.config = keyboards_JSON
-input3.config = keyboards_JSON
 ==
 
 text ==
@@ -63,19 +57,15 @@ Calculer les expressions suivantes.
 ==
 
 form ==
-{% for input in lstinput %}
+{% for input in [input1, input2, input3] %}
 <div class="fcontainer">
 <span>$% {{ lstexpr[loop.index0] }} = %$</span>{{input|component}}
 </div>
 {% endfor %}
 ==
 
-input1 =: MathInput
-input2 =: MathInput
-input3 =: MathInput
-
 evaluator==
-score,_,feedback=ans_tuple_expr([input1.value,input2.value,input3.value],sol)
+score, error = eval_mult_expr([input1.value,input2.value,input3.value],sol)
 ==
 
 solution ==
@@ -86,3 +76,4 @@ Les solutions sont :
 {% endfor %}
 </ul>
 ==
+
