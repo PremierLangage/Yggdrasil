@@ -2,7 +2,7 @@
 # Tags : complex numbers
 # 19/8/2020
 
-extends = /model/mathjsxgraph.pl
+extends = /model/jsxgraph/clickpoint.pl
 
 title = Module et argument
 
@@ -11,9 +11,9 @@ param.lstarg = [0,pi/4,pi/2,3*pi/4,pi,5*pi/4,3*pi/2,7*pi/4,2*pi]
 before ==
 modulus = randint(1, 3)
 arg = randitem(eval(param['lstarg']))
-a = (modulus*cos(arg)).evalf()
-b = (modulus*sin(arg)).evalf()
-jxg.setscript(script_init)
+xsol = (modulus*cos(arg)).evalf()
+ysol = (modulus*sin(arg)).evalf()
+jxg.setscript(script_init + script_aux)
 ==
 
 text ==
@@ -30,55 +30,6 @@ board.create('circle',[[0,0],2],{strokeWidth:0.6,fixed:true,strokeColor:'gray'})
 board.create('circle',[[0,0],3],{strokeWidth:0.6,fixed:true,strokeColor:'gray'});
 board.create('axis',[[0,0],[1,0]],{name:'Re',withLabel:true,label:{position:'urt',offset:[-5,10]},ticks:{visible: false}});
 board.create('axis',[[0,0],[0,1]],{name:'Im',withLabel:true,label:{position:'urt',offset:[10,0]},ticks:{visible: false}});
-var M = board.create('point',[0,0],{size:2,name:'M',color:'red'});
+var M = board.create('point',[0,0],{size:2,name:'M',color:'blue'});
 
-function getMouseCoords(e) {
-    let cPos = board.getCoordsTopLeftCorner(e);
-    let absPos = JXG.getPosition(e);
-    let dx = absPos[0]-cPos[0];
-    let dy = absPos[1]-cPos[1];
-    return new JXG.Coords(JXG.COORDS_BY_SCREEN, [dx, dy], board);
-}
-
-function down(e) {
-    let coords = getMouseCoords(e);
-    M.setPosition(JXG.COORDS_BY_USER,[coords.usrCoords[1], coords.usrCoords[2]]);
-}
-
-board.on('down', down)
 ==
-
-script_solution ==
-board.create('point',[%s, %s],{size:2,name:'M',color:'green'});
-board.create('point',[%s, %s],{size:2,name:'',color:'red'});
-==
-
-evaluator ==
-# pas besoin de faire float(drawer.points['M']['x'])
-# car une des fonctionnalités des composants et que
-# dans un grader le type des propriétes est toujours le type
-# spécifié dans la doc (dans ce cas les propriétes x et y d'un point
-# sont des flottants c'est possible de le voir en mode debug).
-
-
-x= drawer.points['M']['x']
-y= drawer.points['M']['y']
-
-
-from math import hypot
-if hypot(x-a, y-b)<0.1:
-     score=100
-     drawer.script = script_solution % (a, b, x, y)
-     drawer.points = {}
-     drawer.disabled = True
-else:
-     score=0
-     if nbattempt + 1 >= int(maxattempt):
-        drawer.script = script_solution % (a, b, x, y)
-        drawer.points = {}
-        drawer.disabled = True
-feedback=""
-==
-
-
-
