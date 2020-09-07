@@ -19,11 +19,14 @@ board.on('down', down)
 
 ==
 
+script_solution ==
+board.create('point',[{{xsol}}, {{ysol}}],{size:2,name:'',color:'green'});
+==
 
 evaluator ==
 x, y = jxg.getpoint('M')
 from math import hypot
-if hypot(x-a, y-b) < 0.1:
+if hypot(x-xsol, y-ysol) < 0.1:
     score = 100
     jxg.addscript(script_solution, globals())
 else:
