@@ -16,11 +16,12 @@ text = Déterminer un argument du nombre complexe $% z= {{ z|latex }} %$.
 
 evaluator==
 score, error = eval_expr(input.value,sol,modulo=2*pi)
-feedback = feedback_message[error]
+feedback = fmessage[error]
 ==
 
 solution==
 Un argument de $! z !$ est $% \displaystyle {{sol_tex}} %$.
 ==
+
 
 
