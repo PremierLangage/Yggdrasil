@@ -18,7 +18,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
 
-title=Assemblage de fonctions
+title=Assemblage simple de fonctions
 tag=programme|appel|fonction|simple|facile
 
 editor.height=250px
