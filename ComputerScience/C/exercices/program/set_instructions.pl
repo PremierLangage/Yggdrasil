@@ -60,7 +60,7 @@ else:
         else:
             grade = (0, '<span class="success-state">Mauvaise réponse, **a** aura pour valeur '+str(dic['vars_values'][0])+' après ces instructions.</span>')
     except:
-        grade = (0, '<span class="error-state">Mauvaise réponse, vous n\'avez pas rentré un entier valide.</span>')
+        grade = (0, '<span class="success-state">Mauvaise réponse, **a** aura pour valeur '+str(dic['vars_values'][0])+' après ces instructions.</span>')
 
 ==
 
