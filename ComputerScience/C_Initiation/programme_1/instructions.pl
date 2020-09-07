@@ -4,5 +4,5 @@ title= Questions sur les instructions et déclarations
 
 questions=@ instruction1.txt
 
-
+tag=type,intialisation,semantique C, 
 
