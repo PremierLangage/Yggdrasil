@@ -9,11 +9,8 @@ tag=program|variable
 
 type=direct
 
-builder=@ /ComputerScience/C/exercices/program/code_generation.py
+extends = @/ComputerScience/C/exercices/program/set_instructions.pl
 
-text==
-
-==
 
 nb_variables = 1
 complexity = 10
