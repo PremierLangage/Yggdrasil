@@ -34,9 +34,6 @@ codebefore==
 
 solution==
 
-
-
-
 int main(void) {
 	int n,u0 ;
     int temp=0;
@@ -68,6 +65,7 @@ tests==
   ["Aléatoire", "", str(random.randint(1, 20))],
   ["Aléatoire", "", str(random.randint(20, 40))] ]
 ==
+
 
 
 
