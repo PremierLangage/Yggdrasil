@@ -1,8 +1,8 @@
 Latex:1
 
-*gcc projet.c -o monjeu traduit :
--le fichier monjeu en un fichier exécutable de nom projet.c
-+le fichier projet.c en un fichier en langage machine de nom monjeu
+* $$ gcc projet.c -o projet$$ traduit :
+-le fichier "projet" en le fichier exécutable de nom "projet.c"
++le fichier "projet.c" en un fichier en langage machine de nom projet
 +le fichier projet.c en un fichier exécutable de nom monjeu
 
 *Pour exécuter un programme nomPrg on utilise la commande
@@ -20,6 +20,8 @@ Question : quelle est la ligne GCC utilisée ?
 +gcc Moyenne_Suite.c -o Moyenne -ansi
 +gcc Moyenne_Suite.c -o Moyenne -Wall -ansi
 -gcc Moyenne_Suite.c -o Moyenne -Wall
+-gcc Moyenne_Suite.c -o Moyenne
+
 
 
 
