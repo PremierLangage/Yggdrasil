@@ -39,6 +39,12 @@ int main(...){
 
 ==
 
+code_before==
+==
+
+code_after==
+==
+
 solution==
 #include <stdio.h>
 
