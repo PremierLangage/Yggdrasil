@@ -101,7 +101,7 @@ else:
 
 ==
 
-input.virtualKeyboard = sets
+input.virtualKeyboards = complex
 
 evaluator ==
 score, error = eval_complex(input.value,sol,form="cartesian")
