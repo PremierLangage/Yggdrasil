@@ -179,7 +179,7 @@ if __name__ == "__main__":
     code = generate_thread_code(int(d.get('nb_variables',2)), 
 				int(d.get('complexity',12)), 
 				int(d.get('instruct_complexity',4)))
-    values = get_result(d.get('nb_variables',2), code)
+    values = get_result(int(d.get('nb_variables',2)), code)
     d['vars_values'] = values
     d['text'] = "Voici quelques instructions arithmétiques simples du langage C manipulant des variables entières. <br /><br />\n\n\n" + double_with_tab("\t"+code) + "\n\n\n Donnez la valeur de la variable **a** en fin d'exécution de ce bout de code ou bien entrez **Erreur** en cas d'instruction déclenchant une erreur durant l'exécution (typiquement une division par zéro).\n"
     d['responses'] = values
