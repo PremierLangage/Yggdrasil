@@ -76,4 +76,11 @@
 - Uniquement les machines sous Linux peuvent exécuté les programmes C.
 
 
+* Selectionner les déclarations correctes à propos des variables en C.
++ Un programme C peut utiliser autant de variables que possible si la mémoire est suffisante.
++ Deux variables locales peuvent porter le même nom si elle ne sont pas dans les mêmes fonctions.
+- Un programme C ne peut pas utiliser plus de 1024 variables.
+- Un programme C exploite toujours exactement deux variables : *argc* et *argv*.
+- Certaines variables n'ont pas de type, ce dernier est déterminé par le compilateur.
+
 
