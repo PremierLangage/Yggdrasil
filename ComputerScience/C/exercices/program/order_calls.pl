@@ -43,7 +43,7 @@ reconstituer l'histoire correctement.
 
 ==
 
-editor.height=250px
+editor.height=350px
 
 editor.code==
 #include <stdio.h>
