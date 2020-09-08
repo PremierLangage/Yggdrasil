@@ -4,10 +4,12 @@ builder =@ /builder/before.py
 
 title=Variables et modélisation
 
-
 author=Nicolas Borie
 
+tag=C|variable|identificateurs|modelisation|type
+
 text==
+Un informaticien chevronné, a codé de nombreuses variables C.
 Tentez d'associer, pour chaque type de variable, ce qu'il pourrait modéliser 
 dans la vie réelle de manière naturelle.
 ==
@@ -98,5 +100,6 @@ extracss==
 }
 </style>
 ==
+
 
 
