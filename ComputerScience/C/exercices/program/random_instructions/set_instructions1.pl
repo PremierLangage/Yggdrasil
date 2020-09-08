@@ -23,5 +23,5 @@ extends=/ComputerScience/C/exercices/program/set_instructions.pl
 
 nb_variables = 1
 complexity = 10
-instruct_complexity = 3    
+instruct_complexity = 3
 
