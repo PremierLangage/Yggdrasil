@@ -41,3 +41,9 @@
 - Deux fonctions peuvent porter le même nom si elles n'utilise pas les mêmes arguments.
 - Une fonction ne peut être appelée qu'une seule fois dans un programme.
 
+
+* Combien de fonction *main* contient un programme C ?
++ Une et une seule
+- Possiblement aucune
+- Autant que possible
+- Deux, une version sans argument et une autre version avec
