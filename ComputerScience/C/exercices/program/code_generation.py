@@ -149,7 +149,7 @@ def get_result(nb_object, code):
     str_values = output.read()
     output.close()
 
-    if len(str_values) > 1:
+    if len(str_values) > 0:
         return list(map(int, str_values.split(' ')))
     return None
 
@@ -188,6 +188,7 @@ if __name__ == "__main__":
         f.write(jsonpickle.encode(d if d else get_context(), unpicklable=False))
         
     sys.exit(0)
+
 
 
 
