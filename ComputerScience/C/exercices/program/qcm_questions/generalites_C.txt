@@ -18,7 +18,7 @@
 # Les questions portent sur des généralités à propos du langage C
 
 
-** Selectionner les déclarations <br /><br /> correctes à propos du code source C.
+** Selectionner les déclarations //\n correctes à propos du code source C.
 - Les blocs C s'identifient en allant à la ligne et en rajoutant 4 espaces.
 - Les compilateurs limitent à 4 la profondeur des blocs imbriqués.
 + On peut imbriquer les bloc les uns dans les autres.
