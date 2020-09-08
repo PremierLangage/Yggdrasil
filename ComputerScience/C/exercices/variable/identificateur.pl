@@ -42,8 +42,10 @@ random.shuffle(group.items)
 author = Nicolas Borie
 title = Identificateurs des variables en C
 
+tag=C|variable|identificateurs|compilation
+
 text==
-Sélectionnez les identificateurs valides pour une variable en C.
+Sélectionnez les identificateurs valides pour une variable C.
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
