@@ -1,11 +1,9 @@
 Latex:1
 
 
-**soit la déclaration de variable suivante :
+**soit la déclaration de variable suivante : "char c = ... ;"
 
-	char c = ... ;<br>
-
-Quelles valeurs sont des initialisations sont correctes (ne provoquent ni erreur ni warning) de c ?
+Quelles valeurs sont des initialisations correctes (ne provoquent ni erreur ni warning) de c ?
 +  98
 - "toto"
 -3.14
@@ -15,8 +13,7 @@ Quelles valeurs sont des initialisations sont correctes (ne provoquent ni erreur
 -700
 
 **
-Parmi les types suivants, lesquels sont des types C entiers.
-==
+Parmi les types suivants, lesquels sont des types C entiers :
 -float
 -double
 -long float
@@ -25,6 +22,7 @@ Parmi les types suivants, lesquels sont des types C entiers.
 +unsigned char
 +short
 +unsigned long int
+
 
 
 
