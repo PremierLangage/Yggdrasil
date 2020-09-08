@@ -24,4 +24,3 @@ tag=C|cours|langage|généralités|source|code
 questions=@ generalites_C.txt
 
 
-
