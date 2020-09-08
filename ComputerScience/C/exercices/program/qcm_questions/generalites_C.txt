@@ -14,12 +14,15 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
+# Ceci est un fichier de questions de type QCM au format AMX.txt
+# Les questions portent sur des généralités à propos du langage C
+
 
 * Selectionner les déclarations correctes à propos du code source C.
 - Les blocs C s'identifient en allant à la ligne et en rajoutant 4 espaces.
 - Les compilateurs limitent à 4 la profondeur des blocs imbriqués.
 + On peut imbriquer les bloc les uns dans les autres.
-+ Les instructions se terminent par le caractère ';'
++ Les instructions se terminent par le caractère **;**.
 + Pour définir une fonction, on ouvre une accolade à la suite de son prototype.
 + Quand on a plus d'une instruction, il faut mettre des accolades autour des blocs.
 
