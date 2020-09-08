@@ -18,7 +18,7 @@
 # Les questions portent sur des généralités à propos du langage C
 
 
-* Selectionner les déclarations correctes à propos du code source C.
+** Selectionner les déclarations correctes à propos du code source C.
 - Les blocs C s'identifient en allant à la ligne et en rajoutant 4 espaces.
 - Les compilateurs limitent à 4 la profondeur des blocs imbriqués.
 + On peut imbriquer les bloc les uns dans les autres.
@@ -27,7 +27,7 @@
 + Quand on a plus d'une instruction, il faut mettre des accolades autour des blocs.
 
 
-* Selectionner les lignes déclarant une variable entière C.
+** Selectionner les lignes déclarant une variable entière C.
 + int i;
 + int j;
 + int string;
@@ -37,7 +37,7 @@
 - float* entier;
 
 
-* Selectionner les déclarations justes.
+** Selectionner les déclarations justes.
 + Les fonctions d'un programme C peuvent s'appeler elle-même.
 + Une fonction jamais utilisée peut être otée des sources pour donner le même programme.
 + Une fonction C a toujours un type de retour, possiblement void pour signifier rien.
@@ -45,14 +45,14 @@
 - Une fonction ne peut être appelée qu'une seule fois dans un programme.
 
 
-* Combien de fonction *main* contient un programme C ?
+** Combien de fonction *main* contient un programme C ?
 + Une et une seule.
 - Possiblement aucune.
 - Autant que possible.
 - Deux, une version sans argument et une autre version avec.
 
 
-* Selectionner les déclarations correctes à propos des sources C et exécutables.
+** Selectionner les déclarations correctes à propos des sources C et exécutables.
 + Un programme C peut exister sous forme de sources et d'exécutable.
 + Les sources ont besoin d'être compilées pour être utilisées.
 - On peut obtenir les sources à partir de l'exécutable.
@@ -60,7 +60,7 @@
 - Un ordinateur exploite les sources directement via un interprèteur.
 
 
-* Selectionner les déclarations correctes.
+** Selectionner les déclarations correctes.
 + L'indentation en C est très importante car on peut mettre des espaces, des tabulations et des retours à la ligne un peu partout.
 + Un programme C est une collection de fonctions qui s'articulent autour d'un main.
 - Un programme C est composé de classes modélisant des objets.
@@ -69,7 +69,7 @@
 - On ne peut pas faire de programme C sans commencer par inclure <stdio.h>.
 
 
-* Selectionner les déclarations correctes à propos de l'utilisation du C.
+** Selectionner les déclarations correctes à propos de l'utilisation du C.
 + La quasi totalité des systèmes d'explitation sont écrit en C.
 + Beaucoup de calculs haute performance sont fait en C.
 + Le langage C est réputé pour produire des programmes efficaces.
@@ -79,7 +79,7 @@
 - Uniquement les machines sous Linux peuvent exécuté les programmes C.
 
 
-* Selectionner les déclarations correctes à propos des variables en C.
+** Selectionner les déclarations correctes à propos des variables en C.
 + Un programme C peut utiliser autant de variables que possible si la mémoire est suffisante.
 + Deux variables locales peuvent porter le même nom si elle ne sont pas dans les mêmes fonctions.
 - Un programme C ne peut pas utiliser plus de 1024 variables.
