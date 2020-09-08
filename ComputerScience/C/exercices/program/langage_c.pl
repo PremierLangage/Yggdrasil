@@ -4,6 +4,8 @@ builder =@ /builder/before.py
 
 author=Nicolas Borie
 
+tag=C|caractéristique|cours
+
 group =: CheckboxGroup
 
 # GENERATE A RANDOM QUESTION
@@ -65,6 +67,7 @@ else:
 
 grade = (note, msg)
 ==
+
 
 
 
