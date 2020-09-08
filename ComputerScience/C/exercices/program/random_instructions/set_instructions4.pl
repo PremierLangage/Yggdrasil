@@ -16,12 +16,13 @@
 
 author=Nicolas Borie
 
-title=Jeu d'instructions arithmétiques
+title=Jeu d'instructions arithmétiques niveau 4
 tag=programme|variable|instruction|arithmétique
 
-extends=/ComputerScience/C/exercices/program/set_instructions.pl
+extends=/ComputerScience/C/exercices/program/random_instructions/set_instructions.pl
 
 nb_variables = 2
 complexity = 10
 instruct_complexity = 4
+
 
