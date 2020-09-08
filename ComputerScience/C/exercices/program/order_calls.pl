@@ -43,6 +43,8 @@ reconstituer l'histoire correctement.
 
 ==
 
+editor.height=250px
+
 editor.code==
 #include <stdio.h>
 
@@ -61,7 +63,6 @@ void display_3(void){
 int main(int argc, char* argv[]){
   /* votre code ici... */
 }
-
 ==
 
 solution==
