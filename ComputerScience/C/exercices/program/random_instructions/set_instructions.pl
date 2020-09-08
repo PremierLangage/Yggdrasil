@@ -16,7 +16,7 @@
 
 author=Nicolas Borie
 
-title=Jeu d'instructions arithmétiques
+title=Jeu d'instructions arithmétiques niveau 2
 tag=programme|variable|instruction|arithmétique
 
 @ /utils/sandboxio.py
