@@ -49,9 +49,11 @@
 - Deux, une version sans argument et une autre version avec.
 
 
-* Selectionner les déclarations correctes à propos des sources et exécutables.
+* Selectionner les déclarations correctes à propos des sources C et exécutables.
 + Un programme C peut exister sous forme de sources et d'exécutable.
 + Les sources ont besoin d'être compilées pour être utilisées.
 - On peut obtenir les sources à partir de l'exécutable.
 - Les sources sont des fichiers binaires non lisibles par un humain.
 - Un ordinateur exploite les sources directement via un interprèteur.
+
+
