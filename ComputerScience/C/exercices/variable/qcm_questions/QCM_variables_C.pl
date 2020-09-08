@@ -17,7 +17,7 @@
 extends = /model/AMC_TXT.pl
 
 author=Nicolas Borie
-title=Quiz sur le code source en langage C.
+title=Quiz sur les variables en langage C
 
 tag=C|cours|langage|variables
 
