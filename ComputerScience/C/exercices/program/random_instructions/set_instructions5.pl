@@ -1,48 +1,27 @@
-# Copyright 2016 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2016 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# devinez la valeur d'une variable après un jeu d'instructions
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
 
 author=Nicolas Borie
-name=Jeu d'instructions arithmétiques
+
 title=Jeu d'instructions arithmétiques
-tag=program|variable
+tag=programme|variable|instruction|arithmétique
 
-type=direct
-
-build=@ /ComputerScience/C/exercices/program/code_generation.py
-
-consistency==
-def check_consistency(dic):
-    return True, ""
-==
-
+extends=/ComputerScience/C/exercices/program/set_instructions.pl
 
 nb_variables = 2
 complexity = 12
 instruct_complexity = 4
-
-
-form==
-<div class="input-group">
-<span class="input-group-addon">Réponse</span>
-<input id="form_txt_answer" type="text" class="form-control" placeholder="" required>
-</div>
-==
-
-evaluator==
-def evaluator(response, dic):
-    if dic['vars_values'] is None:
-        if response['answer'] == "Erreur":
-            return True, "Bravo"
-        else:
-            return False, "Mauvaise réponse"
-    try: 
-        value = int(response['answer'])
-    except:
-        return False, "Mauvaise réponse"
-    if value == dic['vars_values'][0]:
-        return True, "Bravo"
-    else:
-        return False, "Mauvaise réponse"
-==
 
