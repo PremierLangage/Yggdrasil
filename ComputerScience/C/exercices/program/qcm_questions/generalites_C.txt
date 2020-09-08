@@ -43,7 +43,9 @@
 
 
 * Combien de fonction *main* contient un programme C ?
-+ Une et une seule
-- Possiblement aucune
-- Autant que possible
-- Deux, une version sans argument et une autre version avec
++ Une et une seule.
+- Possiblement aucune.
+- Autant que possible.
+- Deux, une version sans argument et une autre version avec.
+
+
