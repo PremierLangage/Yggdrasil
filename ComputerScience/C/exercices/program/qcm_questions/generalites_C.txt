@@ -20,7 +20,6 @@
 
 ** Selectionner les déclarations
 
-
 correctes à propos du code source C.
 - Les blocs C s'identifient en allant à la ligne et en rajoutant 4 espaces.
 - Les compilateurs limitent à 4 la profondeur des blocs imbriqués.
