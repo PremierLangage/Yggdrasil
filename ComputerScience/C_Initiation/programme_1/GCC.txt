@@ -15,13 +15,13 @@ Latex:1
 - /.nomPrg
 - /nomPrg
 
-* Suite à la compilation d'un programme le message de warning suivant apparaît :
-
-Moyenne_Suite.c:1:1: warning: // comments are not allowed in this language [-Wcomment]
-//
-^
-1 warning generated.
-
+* Suite à la compilation d'un programme le message de warning suivant apparaît :""
+""
+Moyenne_Suite.c:1:1: warning: // comments are not allowed in this language [-Wcomment]""
+//""
+^""
+1 warning generated.""
+""
 Question : quelle est la ligne GCC utilisée ?
 - gcc Moyenne_Suite.c -o Moyenne -ansi
 + gcc Moyenne_Suite.c -o Moyenne -Wall -ansi
