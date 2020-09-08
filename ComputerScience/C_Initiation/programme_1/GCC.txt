@@ -1,6 +1,6 @@
 Latex:1
 
-* Quelle(s) ligne(s) de commande permet(tent) de compiler le programme MonProg.c en un executable MonProg ?
+** Quelle(s) ligne(s) de commande permet(tent) de compiler le programme MonProg.c en un executable MonProg ?
 + gcc MonProg.c -o MonProg 
 - gcc -Ansi MonProg.c MonProg
 - gcc -Ansi -Wall MonProg.c -o MonProg
@@ -9,19 +9,19 @@ Latex:1
 - gcc -ansi MonProg.c MonProg
 - gcc -o MonProg.c -wall MonProg
 
-*Pour exécuter un programme nomPrg on utilise la/les commande(s) :
+** Pour exécuter un programme nomPrg on utilise la/les commande(s) :
 + ./nomPrg
 - .nomPrg
 - /.nomPrg
 - /nomPrg
 
-*Suite à la compilation d'un programme le message de warning suivant apparaît :
-<p>
+** Suite à la compilation d'un programme le message de warning suivant apparaît :
+
 Moyenne_Suite.c:1:1: warning: // comments are not allowed in this language [-Wcomment]
 //
 ^
 1 warning generated.
-</p>
+
 Question : quelle est la ligne GCC utilisée ?
 - gcc Moyenne_Suite.c -o Moyenne -ansi
 + gcc Moyenne_Suite.c -o Moyenne -Wall -ansi
