@@ -92,8 +92,8 @@ int main(int argc, char* argv[]){
 
 ==
 
-tests==
-[ ["simple éxécution", "", ""] ]
+checks_args_stdin==
+[ ["simple éxécution", [""], ""] ]
 ==
 
 
