@@ -15,9 +15,9 @@
 #*****************************************************************************
 
 author=Nicolas Borie
-name=Ordonner les appels de fonctions
+
 title=Ordonner les appels de fonctions
-tag=program
+tag=programme|simple|appel
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
