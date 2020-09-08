@@ -17,7 +17,7 @@
 author=Nicolas Borie
 
 title=Jeu d'instructions arithmétiques
-tag=program|variable
+tag=programme|variable|instruction|arithmétique
 
 @ /utils/sandboxio.py
 grader =@ /grader/evaluator.py
