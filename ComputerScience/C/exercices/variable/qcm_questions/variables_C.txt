@@ -17,15 +17,6 @@
 # Ceci est un fichier de questions de type QCM au format AMX.txt
 # Les questions portent sur les variables en langage C
 
-** Qu'est ce qui caractérise une variable en langage C ?
-+ Un identificateur, le nom de la variable.
-+ Un type.
-+ Un emplacement mémoire (sur la pile ou le tas...).
-+ Une valeur.
-- Une couleur.
-- Un statut, libérée ou allouée.
-- Une méthode d'évaluation.
-
 
 ** Selectionner les déclarations correctes à propos des variables locales en C.
 + On les déclare dans le corps d'une fonction.
@@ -46,3 +37,11 @@
 - Les algorithmes utilisant moins de variables sont plus rapides.
 
 
+** Qu'est ce qui caractérise une variable en langage C ?
++ Un identificateur, le nom de la variable.
++ Un type.
++ Un emplacement mémoire (sur la pile ou le tas...).
++ Une valeur.
+- Une couleur.
+- Un statut, libérée ou allouée.
+- Une méthode d'évaluation.
