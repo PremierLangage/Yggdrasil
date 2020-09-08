@@ -25,5 +25,3 @@ nb_variables = 1
 complexity = 10
 instruct_complexity = 3    
 
-
-
