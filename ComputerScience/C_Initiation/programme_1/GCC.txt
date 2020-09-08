@@ -20,15 +20,11 @@ Latex:1
 
      Moyenne_Suite.c:1:1: warning: // comments are not allowed in this language [-Wcomment]
 
-
      //
-
 
      ^
 
-
      1 warning generated. 
-
 
 
 Question : quelle est la ligne GCC utilisée ?
