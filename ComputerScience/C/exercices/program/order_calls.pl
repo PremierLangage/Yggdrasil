@@ -17,7 +17,7 @@
 extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
-title=Ordonner les appels de fonctions
+title=Ordonner des appels de fonctions
 tag=programme|simple|appel
 
 text==
