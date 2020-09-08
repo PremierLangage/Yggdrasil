@@ -15,8 +15,8 @@ Latex:1
 - /.nomPrg
 - /nomPrg
 
-* Suite à la compilation d'un programme le message de warning suivant apparaît :
-         
+* [Suite à la compilation d'un programme le message de warning suivant apparaît :]
+
 Moyenne_Suite.c:1:1: warning: // comments are not allowed in this language [-Wcomment]
 //        
 ^         
