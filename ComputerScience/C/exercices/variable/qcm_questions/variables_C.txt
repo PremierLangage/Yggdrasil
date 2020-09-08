@@ -45,3 +45,6 @@
 - Une couleur.
 - Un statut, libérée ou allouée.
 - Une méthode d'évaluation.
+
+
+** 
