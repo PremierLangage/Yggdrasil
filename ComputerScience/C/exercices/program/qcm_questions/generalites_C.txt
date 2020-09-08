@@ -57,13 +57,23 @@
 - Un ordinateur exploite les sources directement via un interprèteur.
 
 
-* Selectionner les déclarations justes
+* Selectionner les déclarations correctes.
 + L'indentation en C est très importante car on peut mettre des espaces, des tabulations et des retours à la ligne un peu partout.
 + Un programme C est une collection de fonctions qui s'articulent autour d'un main.
 - Un programme C est composé de classes modélisant des objets.
 - Le langage C est un langage fonctionnel.
 - Le langage C utilise principalement des balises ouvrantes et fermantes.
 - On ne peut pas faire de programme C sans commencer par inclure <stdio.h>.
+
+
+* Selectionner les déclarations correctes à propos de l'utilisation du C.
++ La quasi totalité des systèmes d'explitation sont écrit en C.
++ Beaucoup de calculs haute performance sont fait en C.
++ Le langage C est réputé pour produire des programmes efficaces.
+- Le langage C est omniprésent pour faire des sites web.
+- Le langage C ne peut pas utiliser plus de 50% des capacités d'un ordinateur.
+- Le langage C est pratique pour dévelloper des applications mobiles.
+- Uniquement les machines sous Linux peuvent exécuté les programmes C.
 
 
 
