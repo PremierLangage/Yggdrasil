@@ -18,9 +18,9 @@ tag=C|cours|langage|généralités|sources|code
 
 extends = /model/AMC_TXT.pl
 
-title = Quizz sur quelques commandes terminal Unix
+title=Quizz sur le code source en langage C.
 
-questions=@ commandes_terminal.txt
+questions=@ generalites_C.txt
 
 
 
