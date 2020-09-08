@@ -18,7 +18,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
 title=Premier programme en C
-tag=programme|simple|printf
+tag=programme|simple|printf|affichage
 
 text==
 
@@ -77,5 +77,6 @@ checks_args_stdin==#|python|
 [ ["Simple éxécution", [],""],
   ["Autre éxécution", ["avec", "des", "arguments", "inutiles"],""] ]
 ==
+
 
 
