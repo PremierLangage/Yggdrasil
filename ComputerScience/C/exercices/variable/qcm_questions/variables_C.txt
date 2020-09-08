@@ -57,4 +57,8 @@
 - Un bon programmeur proscrit ce type de variable car elles posent un problème de sécurité.
 
 
-
+** Quelles sont les erreurs potentielles attrappées le compilateur **gcc** à propos des variables ?
++ (set but unused) Le compilateur repère les variables déclarées mais non utilisées.
++ (used undefined) Le compilateur repère les variables utilisées sans avoir été déclarées.
++ Le compilateur repère les affectations douteuses (entier dans adresse et inversement).
+- (unneeded overflow) Le compilateur repère les variables inutilement trop grandes.
