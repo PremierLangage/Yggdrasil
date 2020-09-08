@@ -181,7 +181,7 @@ if __name__ == "__main__":
 				int(d.get('instruct_complexity',4)))
     values = get_result(int(d.get('nb_variables',2)), code)
     d['vars_values'] = values
-    d['text'] = "Voici quelques instructions arithmétiques simples du langage C manipulant des variables entières. <br /><br />\n\n\n" + double_with_tab("\t"+code) + "\n\n\n Donnez la valeur de la variable **a** en fin d'exécution de ce bout de code ou bien entrez **Erreur** en cas d'instruction déclenchant une erreur durant l'exécution (typiquement une division par zéro).\n <br />"
+    d['text'] = "Voici quelques instructions arithmétiques simples du langage C manipulant des variables entières. <br /><br />\n\n\n" + double_with_tab("\t"+code) + "\n\n\n Donnez la valeur de la variable **a** en fin d'exécution de ce bout de code ou bien entrez **Erreur** en cas d'instruction déclenchant une erreur durant l'exécution (typiquement une division par zéro).\n <br /><br />"
     d['responses'] = values
 
     with open(sys.argv[2], 'w+') as f:
