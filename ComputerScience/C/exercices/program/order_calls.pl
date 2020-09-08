@@ -26,11 +26,15 @@ Un programmeur a préparé trois fonctions pour ce programme. Pas besoin
 de les toucher mais vous devez bien lire leurs définitions pour
 comprendre ce quelles font.
  
+<br />
+
 Votre objectif est, dans cet exercice, de fabriquer la fonction
 **main** qui permettra d'obtenir un programme fonctionnel après
 compilation. Pour cela, vous devrez appeler correctement les trois
 fonctions disponibles dans le bon ordre et le bon nombre de fois.
-   
+
+<br />
+
 Remarquez que les trois fonctions ne prennent aucun argument (on peut
 lire *void* pour incister sur ce point). Il suffit donc de rajouter
 *fonction_pouet();* dans la fonction *main* pour appeler la fonction
