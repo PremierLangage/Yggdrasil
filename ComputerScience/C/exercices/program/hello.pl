@@ -40,7 +40,7 @@ fonction **printf** dans la suite du programme.
 <br />
 
 Un programme C contient toujours une et une seule fonction
-dont le nom est **main**. Cette fonction sera le point d'entrée
+dont le nom est **main**. Cette fonction est le point d'entrée
 du programme lors de l'exécution. Un programme C opère exactement 
 tout se qui se trouve dans sa fonction **main**, ni plus, ni moins. 
 Ici, il vous faut juste faire de l'affichage. Un bon appel à la
