@@ -14,11 +14,12 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-tag=C|cours|langage|généralités|source|code
-
 extends = /model/AMC_TXT.pl
 
+author=Nicolas Borie
 title=Quiz sur le code source en langage C.
+
+tag=C|cours|langage|généralités|source|code
 
 questions=@ generalites_C.txt
 
