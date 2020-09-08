@@ -6,6 +6,8 @@ builder =@ /builder/before.py
 title = Étapes durant la compilation avec gcc
 author = Nicolas Borie
 
+tag=C|compilation|gcc
+
 text== 
 Mettre en ordre toutes les étapes transformant des sources en langage C 
 en un éxécutable fonctionnel à l'aide du compilateur **gcc**.
@@ -57,4 +59,5 @@ extracss==
 }
 </style>
 ==
+
 
