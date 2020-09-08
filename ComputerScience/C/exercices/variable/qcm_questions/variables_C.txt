@@ -63,3 +63,4 @@
 + Le compilateur repère les affectations douteuses (entier dans adresse et inversement).
 - (unneeded overflow) Le compilateur repère les variables inutilement trop grandes.
 - (bad identifier) Le compilateur informe des noms de variables mal choisies.
+- (unfree mem) Le compilateur liste les variables non libérée en fin de programme.
