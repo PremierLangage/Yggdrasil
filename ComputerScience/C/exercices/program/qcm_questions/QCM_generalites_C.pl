@@ -14,7 +14,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-tag=C|cours|langage|généralités|sources|code
+tag=C|cours|langage|généralités|source|code
 
 extends = /model/AMC_TXT.pl
 
