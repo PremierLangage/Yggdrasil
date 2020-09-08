@@ -47,4 +47,14 @@
 - Une méthode d'évaluation.
 
 
-** 
+** Quelles sont les particularités des variables de type adresse en C ?
++ Elles ont un type qui se termine toujours par au moins une étoile (int* par exemple).
++ Pour les affecter, il faut bien comprendre le fonctionnement de la mémoire en C.
++ Utiliser l'opérateur étoile sur une adresse permet d'obtenir les données au bout de l'adresse.
++ On les utilise souvent pour partager et travailler sur les mêmes données entre plusieurs fonctions.
++ Lorsque les valeurs de ces variables sont mauvaises, on déclanche des Segfault.
++ Elles n'encombrent pas la mémoire car elles n'occupent que 8 octets sur les machines 64 bits.
+- Un bon programmeur proscrit ce type de variable car elles posent un problème de sécurité.
+
+
+
