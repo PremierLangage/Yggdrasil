@@ -23,7 +23,7 @@ tag=programme|simple|appel
 text==
 
 Un programmeur a préparé trois fonctions pour ce programme. Pas besoin
-de les toucher mais vous devez bien lire leurs définitions pour
+de les modifier mais vous devez bien lire leurs définitions pour
 comprendre ce quelles font.
  
 <br />
@@ -36,9 +36,9 @@ fonctions disponibles dans le bon ordre et le bon nombre de fois.
 <br />
 
 Remarquez que les trois fonctions ne prennent aucun argument (on peut
-lire *void* pour incister sur ce point). Il suffit donc de rajouter
-*fonction_pouet();* dans la fonction *main* pour appeler la fonction
-nommée *fonction_pouet* dans votre programme. Soyez logique pour
+lire **void** pour incister sur ce point). Il suffit donc de rajouter
+**fonction_pouet();** dans la fonction **main** pour appeler la fonction
+nommée **fonction_pouet** dans votre programme. Soyez logique pour
 reconstituer l'histoire correctement.
 
 ==
