@@ -27,8 +27,11 @@
 - Une méthode d'évaluation.
 
 
-** Selectionner les caractéristiques d'une variable locale en C.
+** Selectionner les déclarations correctes à propos des variables locales en C.
 + On les déclare dans le corps d'une fonction.
 + Les variables locales ont leur emplacement mémoire sur la pile d'exécution.
++ Leurs utilisations se limitent à la fonction, voire au bloc, où elles sont définies.
++ Une fonction peut retourner la valeur d'une variable locale.
 - L'utilisateur doit les libérer à l'aide de la fonction **free**.
+- Elles sont visibles dans tout le fichier où elles ont été déclarées.
 
