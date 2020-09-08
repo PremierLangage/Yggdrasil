@@ -9,7 +9,7 @@ tag=program|variable
 
 extends=/ComputerScience/C/exercices/program/set_instructions.pl
 
-nb_variables = 1
+nb_variables = 2
 complexity = 10
 instruct_complexity = 3    
 
