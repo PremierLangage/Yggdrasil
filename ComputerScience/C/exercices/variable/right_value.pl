@@ -42,7 +42,7 @@ random.shuffle(group.items)
 
 author = Nicolas Borie
 
-title = Right values (valeur affectable) en C
+title = Right values (valeur affectée) en C
 
 tag=C|variable|affectation|valeur
 
@@ -88,6 +88,7 @@ else:
 
 grade = (note, feedback)
 ==
+
 
 
 
