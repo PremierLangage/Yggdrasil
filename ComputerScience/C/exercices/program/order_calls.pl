@@ -23,13 +23,13 @@ tag=programme|simple|appel
 text==
 
 Un programmeur a préparé trois fonctions pour ce programme. Pas besoin
-de les toucher mais vous pouvez bien lire leurs définitions pour
+de les toucher mais vous devez bien lire leurs définitions pour
 comprendre ce quelles font.
  
-Votre objectif est, pour ce second exercice, de fabriquer la fonction
-*main* qui permettra d'obtenir un programme fonctionnel après
+Votre objectif est, dans cet exercice, de fabriquer la fonction
+**main** qui permettra d'obtenir un programme fonctionnel après
 compilation. Pour cela, vous devrez appeler correctement les trois
-fonctions disponibles dans le bon ordre.
+fonctions disponibles dans le bon ordre et le bon nombre de fois.
    
 Remarquez que les trois fonctions ne prennent aucun argument (on peut
 lire *void* pour incister sur ce point). Il suffit donc de rajouter
