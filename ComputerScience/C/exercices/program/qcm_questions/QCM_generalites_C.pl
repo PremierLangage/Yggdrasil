@@ -14,12 +14,13 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-tag=system|unix|terminal|bash
+tag=C|cours|langage|généralités|sources|code
 
 extends = /model/AMC_TXT.pl
 
 title = Quizz sur quelques commandes terminal Unix
 
 questions=@ commandes_terminal.txt
+
 
 
