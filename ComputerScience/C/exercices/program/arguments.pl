@@ -40,7 +40,7 @@ Voici un exemple d'exécution si le programme se nome a.out
     3
     arguments
 
-Veuillez à bien placer un seul argument par ligne sans espace avant ou après, 
+Veuillez à bien placer un seul argument par ligne, sans espace avant ou après, 
 juste un retour à la ligne.
 ==
 
