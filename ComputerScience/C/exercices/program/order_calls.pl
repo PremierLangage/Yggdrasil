@@ -14,11 +14,12 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
+extends=/ComputerScience/C/template/std_progC.pl
+
 author=Nicolas Borie
 
 title=Ordonner les appels de fonctions
 tag=programme|simple|appel
-extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
