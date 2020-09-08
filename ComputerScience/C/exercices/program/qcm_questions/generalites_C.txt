@@ -22,3 +22,22 @@
 + Les instructions se terminent par le caractère ';'
 + Pour définir une fonction, on ouvre une accolade à la suite de son prototype.
 + Quand on a plus d'une instruction, il faut mettre des accolades autour des blocs.
+
+
+* Selectionner les lignes déclarant une variable entière C.
++ int i;
++ int j;
++ int string;
+- int 23;
+- char* "Paul";
+- float compteur;
+- float* entier;
+
+
+* Selectionner les déclarations justes.
++ Les fonctions d'un programme C peuvent s'appeler elle-même.
++ Une fonction jamais utilisée peut être otée des sources pour donner le même programme.
++ Une fonction C a toujours un type de retour, possiblement void pour signifier rien.
+- Deux fonctions peuvent porter le même nom si elles n'utilise pas les mêmes arguments.
+- Une fonction ne peut être appelée qu'une seule fois dans un programme.
+
