@@ -17,13 +17,13 @@
 extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
-
 title=Assemblage simple de fonctions
 tag=programme|appel|fonction|simple|facile
 
 editor.height=250px
 
 text==
+
 Écrire une fonction **show_cube** qui prend en argument un entier **n** 
 (par exemple 3) et qui affiche une phrase donnant le cube de cet entier 
 tout en rappelant cet entier (par exemple : *Le cube du nombre 3 est le 
@@ -94,5 +94,6 @@ checks_args_stdin==
  ["Test aléatoire", [str(randint(-100, 100))], ""],
  ["Test aléatoire", [str(randint(-100, 100))], ""]]
 ==
+
 
 
