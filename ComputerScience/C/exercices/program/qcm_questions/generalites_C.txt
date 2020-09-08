@@ -76,7 +76,7 @@
 - Le langage C est omniprésent pour faire des sites web.
 - Le langage C ne peut pas utiliser plus de 50% des capacités d'un ordinateur.
 - Le langage C est pratique pour dévelloper des applications mobiles.
-- Uniquement les machines sous Linux peuvent exécuté les programmes C.
+- Uniquement les machines sous Linux peuvent exécuter les programmes C.
 
 
 ** Selectionner les déclarations correctes à propos des variables en C.
