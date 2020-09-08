@@ -34,4 +34,15 @@
 + Une fonction peut retourner la valeur d'une variable locale.
 - L'utilisateur doit les libérer à l'aide de la fonction **free**.
 - Elles sont visibles dans tout le fichier où elles ont été déclarées.
+- Elles contiennent des zéros (ou NULL) quand on les déclarent sans les initialiser.
+
+
+** Comment utiliser efficacement les variables en C ?
++ En C, on peut utiliser exactement la quantité de mémoire dont on a besoin.
++ Plus les noms de variables apportent du sens, moins le besoin de documentation se fait sentir.
++ Les variables locales, qui sont automatiques, donnent moins de travail au programmeur.
+- Les noms de variable trop long ralentissent la compilation et les programmes.
+- Les programmeurs C excellents n'utilisent presque plus de variables.
+- Les algorithmes utilisant moins de variables sont plus rapides.
+
 
