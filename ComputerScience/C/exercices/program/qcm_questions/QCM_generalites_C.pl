@@ -18,7 +18,7 @@ tag=C|cours|langage|généralités|sources|code
 
 extends = /model/AMC_TXT.pl
 
-title=Quizz sur le code source en langage C.
+title=Quiz sur le code source en langage C.
 
 questions=@ generalites_C.txt
 
