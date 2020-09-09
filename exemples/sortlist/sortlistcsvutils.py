@@ -40,14 +40,15 @@ import uuid
 
 
 
-def randomize(answer, items):
+def randomize(items):
+    answer=[]
     for e in items:
         # generate random id because students can
         # guest the answer if ids like 1, 2, 3 are used
         e["id"] = uuid.uuid4()
         answer.append(e["id"])
     random.shuffle(items)
-    return items
+    return answer,items
 
 def builditemsfrompairs(pairs, dosort=False):
     if dosort:
@@ -87,9 +88,9 @@ def builditemsandanswer(csvfilename="data.csv",number=4,columns=["titre1", "titr
     """
     
     """
-    answer =[]
-    items =  randomize(answer, builditemsfrompairs(selectionofpairs(csvfilename,number, delimiter , columns , predicat)))
-    return answer,items
+    
+    return  randomize( builditemsfrompairs(selectionofpairs(csvfilename,number, delimiter , columns , predicat)))
+     
 
 
 
