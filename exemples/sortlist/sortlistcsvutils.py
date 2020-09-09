@@ -60,7 +60,7 @@ def builditemsfrompairs(pairs, dosort=False):
 
 
 
-def selectionofpairs((csvfilename,number, delimiter , columns , predicat=lambda x:True):
+def selectionofpairs(csvfilename,number, delimiter , columns , predicat=lambda x:True):
     """
     >>> selectionofpairs("testdata.csv")
     [('moyen-age', '11'), ('tempsmoderne', '41'), ('prehistoire', '1'), ('contemporain', '41')]
@@ -69,7 +69,7 @@ def selectionofpairs((csvfilename,number, delimiter , columns , predicat=lambda 
     return random.sample(l,min(len(l),4))
 
 
-def readpairsfromcsv(csvfilename="data.csv",columns=["titre1", "titre2"],delimiter=";", predicat=lambda x:True):
+def readpairsfromcsv(csvfilename, delimiter , columns , predicat):
     """
     return a list of pairs from file data.csv by default columns 0 and 1 
     """
