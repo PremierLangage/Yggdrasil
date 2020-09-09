@@ -24,7 +24,7 @@
 
 __doc__="""
 
-Des fonctions d'aide pour des exercices de type sortlist.
+Des fonctions d'aide pour des exercices de type sortlist utilisant un csv.
 
 """
 
