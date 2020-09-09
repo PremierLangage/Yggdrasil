@@ -10,7 +10,7 @@ title=Opérations sur les nombres complexes
 
 @ /Mathematics/exercises/complex_numbers/cplx_computation_mult.pl
 
-@ /Mathematics/exercises/complex_numbers/cplx_computation_sq.pl
+# @ /Mathematics/exercises/complex_numbers/cplx_computation_sq.pl
 
 @ /Mathematics/exercises/complex_numbers/cplx_computation_inv.pl
 
