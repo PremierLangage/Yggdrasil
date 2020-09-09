@@ -46,7 +46,7 @@ def randomize(items):
     for e in items:
         # generate random id because students can
         # guest the answer if ids like 1, 2, 3 are used
-        e["id"] = str(n) # str(uuid.uuid4())
+        e["id"] = str(e['content']) # str(uuid.uuid4())
         n= n+1
         answer.append(e["id"])
     random.shuffle(items)
