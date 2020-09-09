@@ -40,7 +40,7 @@
 ** Qu'est ce qui caractérise une variable en langage C ?
 + Un identificateur, le nom de la variable.
 + Un type.
-+ Un emplacement mémoire.
++ Une adresse (un emplacement mémoire).
 + Une valeur.
 - Une couleur.
 - Un statut, libérée ou allouée.
