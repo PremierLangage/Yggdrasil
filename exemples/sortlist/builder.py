@@ -5,6 +5,8 @@
 import sys, json, jsonpickle
 from sandboxio import get_context
 
+import utils
+
 class StopBeforeExec(Exception):
     pass
 
@@ -36,6 +38,7 @@ if __name__ == "__main__":
             if key in dic and dic[key] == glob[key]:
                 del dic[key]
 
+    dic['answer'],dic['sortlist']['items']= utils.builditemsandanswer()
 
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
