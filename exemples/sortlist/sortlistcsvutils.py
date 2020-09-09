@@ -83,7 +83,7 @@ def readpairsfromcsv(csvfilename, delimiter , columns , predicat):
 
 
 
-def builditemsandanswer(csvfilename="data.csv",number=4,columns=["titre1", "titre2"],delimiter=";", predicat=lambda x:True)):
+def builditemsandanswer(csvfilename="data.csv",number=4,columns=["titre1", "titre2"],delimiter=";", predicat=lambda x:True):
     """
     
     """
