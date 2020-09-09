@@ -40,7 +40,7 @@
 ** Qu'est ce qui caractérise une variable en langage C ?
 + Un identificateur, le nom de la variable.
 + Un type.
-+ Un emplacement mémoire (sur la pile ou le tas...).
++ Un emplacement mémoire.
 + Une valeur.
 - Une couleur.
 - Un statut, libérée ou allouée.
@@ -64,3 +64,4 @@
 - (unneeded overflow) Le compilateur repère les variables inutilement trop grandes.
 - (bad identifier) Le compilateur informe des noms de variables mal choisies.
 - (unfree mem) Le compilateur liste les variables non libérée en fin de programme.
+
