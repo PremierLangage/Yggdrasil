@@ -10,6 +10,8 @@ title=Opérations sur les nombres complexes
 
 @ /Mathematics/exercises/complex_numbers/cplx_computation_mult.pl
 
+@ /Mathematics/exercises/complex_numbers/cplx_computation_sq.pl
+
 @ /Mathematics/exercises/complex_numbers/cplx_computation_inv.pl
 
 @ /Mathematics/exercises/complex_numbers/cplx_computation_div.pl
@@ -25,7 +27,10 @@ title=Opérations sur les nombres complexes
 @ /Mathematics/exercises/complex_numbers/point_arg_mod_124_neg.pl
 
 
+
+
 # on peut rajouter d'autres exercices 
+
 
 
 
