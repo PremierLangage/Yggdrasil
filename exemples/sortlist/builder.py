@@ -40,7 +40,7 @@ if __name__ == "__main__":
 
     import os 
     if not os.isfile("data.csv"):
-            msg = ("ce type d'exercice utilise un fichier de données csv : data.csv\n"
+        msg = ("ce type d'exercice utilise un fichier de données csv : data.csv\n"
                +"vous pouvez l'indiqer sous la forme suivante\n"
                +"@ monfichier.csv [data.csv] ")
         print(msg, file=sys.stderr)
