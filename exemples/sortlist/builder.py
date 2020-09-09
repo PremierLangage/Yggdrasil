@@ -28,6 +28,17 @@ if __name__ == "__main__":
     
     dic = get_context()
 
+
+    import os 
+    if not os.path.isfile("data.csv"):
+        msg = ("ce type d'exercice utilise un fichier de données csv : data.csv\n"
+               +"vous pouvez l'indiqer sous la forme suivante\n"
+               +"@ monfichier.csv [data.csv] ")
+        print(msg, file=sys.stderr)
+        sys.exit(1)
+    dic['answer'],dic['items']= utils.builditemsandanswer("data.csv")
+
+
     if 'before' in dic:
         glob = {}
         dic['StopBeforeExec'] = StopBeforeExec
@@ -38,14 +49,6 @@ if __name__ == "__main__":
             if key in dic and dic[key] == glob[key]:
                 del dic[key]
 
-    import os 
-    if not os.path.isfile("data.csv"):
-        msg = ("ce type d'exercice utilise un fichier de données csv : data.csv\n"
-               +"vous pouvez l'indiqer sous la forme suivante\n"
-               +"@ monfichier.csv [data.csv] ")
-        print(msg, file=sys.stderr)
-        sys.exit(1)
-    dic['answer'],dic['sortlist']['items']= utils.builditemsandanswer("data.csv")
 
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
