@@ -69,7 +69,9 @@ def selectionofpairs(csvfilename,number, delimiter , columns , predicat=lambda x
     [('moyen-age', '11'), ('tempsmoderne', '41'), ('prehistoire', '1'), ('contemporain', '41')]
     """
     l=readpairsfromcsv(csvfilename,delimiter ,columns, predicat)
-    return random.sample(l,min(len(l),4))
+    # pour avoir un sample dans l'ordre des clefs
+    l2=[l[x] for x in random.sample(range(len(l)), min(len(l),4))]
+    return l2
 
 
 def readpairsfromcsv(csvfilename, delimiter , columns , predicat):
