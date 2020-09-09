@@ -45,7 +45,7 @@ if __name__ == "__main__":
                +"@ monfichier.csv [data.csv] ")
         print(msg, file=sys.stderr)
         sys.exit(1)
-    dic['answer'],dic['sortlist']['items']= utils.builditemsandanswer()
+    dic['answer'],dic['sortlist']['items']= utils.builditemsandanswer("data.csv")
 
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
