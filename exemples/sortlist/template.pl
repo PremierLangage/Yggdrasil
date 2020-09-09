@@ -22,15 +22,17 @@ form = {{ sortlist|component }}
 # EVALUATION
 evaluator== #|python|
 errors = 0
+feedback = ""
 for i, e in enumerate(sortlist.items):
     e['css'] = 'success-state animated fadeIn'
+    feedback+= e['id']
     if e['id'] != answer[i]:
         e['css'] = 'error-state animated fadeIn'
         errors += 1
 
 if errors == 0:
-    grade = (100, '<span class="success-state animated pulse infinite">Good answer</span>')
+    grade = (100,feedback+ '<span class="success-state animated pulse infinite">Good answer</span>')
 else:
-    grade = (0, f'<span class="error-state animated pulse infinite">{ errors } wrong answers</span>')
+    grade = (0,feedback+ f'<span class="error-state animated pulse infinite">{ errors } wrong answers</span>')
 ==
 
