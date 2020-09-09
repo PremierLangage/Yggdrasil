@@ -108,12 +108,12 @@ def selectionfromcsv(filename, number=4, delimiter=";", predicat=lambda x:True):
 
 
 
-def builditemsandanswer(cvsfilename, delimiter=";" , columns=['one','two']):
+def builditemsandanswer(cvsfilename, delimiter=";" , columns=['one','two'], number=4):
     """
     
     """
     answer =[]
-    items =  randomize(answer, builditemsfrompairs(selectionofpairs(csvfilename=cvsfilename,delimiter=delimiter, columns=columns)))
+    items =  randomize(answer, builditemsfrompairs(selectionofpairs(csvfilename=cvsfilename,delimiter=delimiter, columns=columns, number=number)))
     return answer,items
 
 
