@@ -39,7 +39,7 @@ if __name__ == "__main__":
                 del dic[key]
 
     import os 
-    if not os.isfile("data.csv"):
+    if not os.path.isfile("data.csv"):
         msg = ("ce type d'exercice utilise un fichier de données csv : data.csv\n"
                +"vous pouvez l'indiqer sous la forme suivante\n"
                +"@ monfichier.csv [data.csv] ")
