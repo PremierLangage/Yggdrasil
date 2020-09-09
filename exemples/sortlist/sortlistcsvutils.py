@@ -40,7 +40,7 @@ import uuid
 
 
 
-def randomize(anwser, items):
+def randomize(answer, items):
     for e in items:
         # generate random id because students can
         # guest the answer if ids like 1, 2, 3 are used
@@ -115,5 +115,6 @@ def builditemsandanswer(cvsfilename):
     answer =[]
     items =  randomize(answer, builditemsfrompairs(selectionofpairs(csvfilename=cvsfilename)))
     return items,answer
+
 
 
