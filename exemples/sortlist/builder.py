@@ -36,7 +36,9 @@ if __name__ == "__main__":
                +"@ monfichier.csv [data.csv] ")
         print(msg, file=sys.stderr)
         sys.exit(1)
-    dic['answer'],dic['items']= utils.builditemsandanswer("data.csv")
+    delimiter = dic['delimiter'] if 'delimiter' in dic else ","
+
+    dic['answer'],dic['items']= utils.builditemsandanswer("data.csv",delimiter=delimiter)
 
 
     if 'before' in dic:
