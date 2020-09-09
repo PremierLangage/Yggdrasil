@@ -9,6 +9,9 @@ builder =@ /exemples/sortlist/builder.py
 # DECLARATION
 sortlist =: SortList
 
+before==
+sortlist.items = items
+==
 
 # FORM
 title = Sort List Component
