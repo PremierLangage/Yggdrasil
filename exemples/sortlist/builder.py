@@ -38,7 +38,7 @@ if __name__ == "__main__":
         sys.exit(1)
     delimiter = dic['delimiter'] if 'delimiter' in dic else ","
     if "columns" in dic :
-        cols=columns.split(delimiter)
+        cols=dic['columns'].split(delimiter)
     else:
         with open("data.csv") as csvfile:
             reader = csv.reader(csvfile)
