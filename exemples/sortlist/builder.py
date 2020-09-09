@@ -44,7 +44,7 @@ if __name__ == "__main__":
             reader = csv.reader(csvfile)
             i = next(reader)
         cols=(i[0],i[1])
-    dic['answer'],dic['items']= utils.builditemsandanswer("data.csv",delimiter=delimiter)
+    dic['answer'],dic['items']= utils.builditemsandanswer("data.csv",delimiter=delimiter,columns=cols)
 
 
     if 'before' in dic:
