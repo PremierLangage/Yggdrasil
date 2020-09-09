@@ -45,7 +45,7 @@ def randomize(items):
     for e in items:
         # generate random id because students can
         # guest the answer if ids like 1, 2, 3 are used
-        e["id"] = uuid.uuid4()
+        e["id"] = str(uuid.uuid4())
         answer.append(e["id"])
     random.shuffle(items)
     return answer,items
@@ -88,9 +88,9 @@ def builditemsandanswer(csvfilename="data.csv",number=4,columns=["titre1", "titr
     """
     
     """
+    x,y =randomize( builditemsfrompairs(selectionofpairs(csvfilename,number, delimiter , columns , predicat)))
     
-    return  randomize( builditemsfrompairs(selectionofpairs(csvfilename,number, delimiter , columns , predicat)))
-     
+    return x, y
 
 
 
