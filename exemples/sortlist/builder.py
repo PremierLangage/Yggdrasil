@@ -37,7 +37,13 @@ if __name__ == "__main__":
         print(msg, file=sys.stderr)
         sys.exit(1)
     delimiter = dic['delimiter'] if 'delimiter' in dic else ","
-
+    if "columns" in dic :
+        cols=columns.split(delimiter)
+    else:
+        with open("data.csv") as csvfile:
+            reader = csv.reader(csvfile)
+            i = next(reader)
+        cols=(i[0],i[1])
     dic['answer'],dic['items']= utils.builditemsandanswer("data.csv",delimiter=delimiter)
 
 
