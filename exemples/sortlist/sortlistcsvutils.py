@@ -60,7 +60,7 @@ def builditemsfrompairs(pairs, dosort=False):
 
 
 
-def selectionofpairs(csvfilename="data.csv",number=4,columns=["titre1", "titre2"],delimiter=";", predicat=lambda x:True):
+def selectionofpairs((csvfilename,number, delimiter , columns , predicat=lambda x:True):
     """
     >>> selectionofpairs("testdata.csv")
     [('moyen-age', '11'), ('tempsmoderne', '41'), ('prehistoire', '1'), ('contemporain', '41')]
@@ -80,40 +80,15 @@ def readpairsfromcsv(csvfilename="data.csv",columns=["titre1", "titre2"],delimit
     return l
 
 
-def selectionfromcsv(filename, number=4, delimiter=";", predicat=lambda x:True):
-    """
-    >>> with open("testdata.csv","w") as f:
-    ...     print("titre1;titre2;titre3", file=f)
-    ...     print("prehistoire;1;2", file=f)
-    ...     print("moyen-age;11;12", file=f)
-    ...     print("tempsmoderne;41;42", file=f)
-    ...     print("contemporain;41;42", file=f)
-    >>> random.seed(42)
-    >>> selectionfromcsv("testdata.csv")
-    [OrderedDict([('titre1', 'prehistoire'), ('titre2', '1'), ('titre3', '2')]), OrderedDict([('titre1', 'contemporain'), ('titre2', '41'), ('titre3', '42')]), OrderedDict([('titre1', 'moyen-age'), ('titre2', '11'), ('titre3', '12')]), OrderedDict([('titre1', 'tempsmoderne'), ('titre2', '41'), ('titre3', '42')])]
-    >>> selectionfromcsv("testdata.csv",  predicat=lambda x:x['titre1']=='contemporain')    
-    [OrderedDict([('titre1', 'contemporain'), ('titre2', '41'), ('titre3', '42')])]
-
-    return number elements of the file or all the file if the lenght is less than number
-    """
-    
-    with open(filename,"r") as csvfile:
-        reader=csv.DictReader(csvfile,delimiter=delimiter)
-        l=[x for x in reader if predicat(x)]
-
-        return random.sample(l,min(len(l),4))
 
 
 
-
-
-
-def builditemsandanswer(cvsfilename, delimiter=";" , columns=['one','two'], number=4):
+def builditemsandanswer(csvfilename="data.csv",number=4,columns=["titre1", "titre2"],delimiter=";", predicat=lambda x:True)):
     """
     
     """
     answer =[]
-    items =  randomize(answer, builditemsfrompairs(selectionofpairs(csvfilename=cvsfilename,delimiter=delimiter, columns=columns, number=number)))
+    items =  randomize(answer, builditemsfrompairs(selectionofpairs(csvfilename,number, delimiter , columns , predicat)))
     return answer,items
 
 
