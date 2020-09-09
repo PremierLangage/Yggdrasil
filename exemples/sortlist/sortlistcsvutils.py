@@ -70,7 +70,7 @@ def selectionofpairs(csvfilename,number, delimiter , columns , predicat=lambda x
     """
     l=readpairsfromcsv(csvfilename,delimiter ,columns, predicat)
     # pour avoir un sample de number elements dans l'ordre des
-    return [l[x] for x in sorted(random.sample(range(len(l)), min(len(l),number)))]
+    return [l[x] for x in sorted(random.sample(range(len(l)), min(len(l),int(number)))]
 
 
 def readpairsfromcsv(csvfilename, delimiter , columns , predicat):
