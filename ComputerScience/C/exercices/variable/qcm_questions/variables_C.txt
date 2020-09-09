@@ -57,7 +57,7 @@
 - Un bon programmeur proscrit ce type de variable car elles posent un problème de sécurité.
 
 
-** Quelles sont les erreurs potentielles attrappées le compilateur **gcc** à propos des variables ?
+** Quelles sont les erreurs potentielles attrappées par le compilateur **gcc** à propos des variables ?
 + (unused but set) Le compilateur repère les variables déclarées mais non utilisées.
 + (used but not defined) Le compilateur repère les variables utilisées sans avoir été déclarées.
 + Le compilateur repère les affectations douteuses (entier dans adresse et inversement).
