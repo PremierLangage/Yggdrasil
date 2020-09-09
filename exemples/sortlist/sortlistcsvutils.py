@@ -74,16 +74,14 @@ def selectionofpairs(csvfilename,number, delimiter , columns , predicat=lambda x
     return l2
 
 
-def readpairsfromcsv(csvfilename, delimiter , columns , predicat):
+def selectionofpairs(csvfilename,number, delimiter , columns , predicat=lambda x:True):
     """
-    return a list of pairs from file data.csv by default columns 0 and 1 
+    >>> selectionofpairs("testdata.csv",4, ";",["titre1","titre2"])
+    [('prehistoire', '1'), ('moyen-age', '11'), ('tempsmoderne', '41'), ('contemporain', '41')]
     """
-    with open(csvfilename,"r") as csvfile:
-        reader=csv.DictReader(csvfile,delimiter=delimiter)
-        l=[(x.get(columns[0]),x.get(columns[1])) for x in reader if predicat(x)]
-
-    return l
-
+    l=readpairsfromcsv(csvfilename,delimiter ,columns, predicat)
+    # pour avoir un sample dans l'ordre original du fichier 
+    return [l[x] for x in sorted(random.sample(range(len(l)), min(len(l),4)))]
 
 
 
