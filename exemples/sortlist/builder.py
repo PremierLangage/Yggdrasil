@@ -45,7 +45,9 @@ if __name__ == "__main__":
             i = next(reader)
         cols=(i[0],i[1])
         nb= dic.get("number",4)
-        dic['answer'],dic['items']= utils.builditemsandanswer("data.csv",delimiter=delimiter,columns=cols, number=nb)
+    
+    
+    dic['answer'],dic['items']= utils.builditemsandanswer("data.csv",delimiter=delimiter,columns=cols, number=nb)
 
         
 
