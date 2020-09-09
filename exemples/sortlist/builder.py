@@ -61,7 +61,8 @@ if __name__ == "__main__":
             if key in dic and dic[key] == glob[key]:
                 del dic[key]
 
-    dic['text']+= str(dic['answer'])
+    if "debug" in dic:
+        dic['text']+= str(dic['answer'])
 
 
     with open(output_json, "w+") as f:
