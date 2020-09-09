@@ -8,6 +8,9 @@ builder =@ /exemples/sortlist/builder.py
 # DECLARATION
 sortlist =: SortList
 
+sortlist.items %= #|json|
+[ ]
+==
 
 # FORM
 title = Sort List Component
