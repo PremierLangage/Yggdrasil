@@ -25,7 +25,8 @@ errors = 0
 feedback = ""
 for i, e in enumerate(sortlist.items):
     e['css'] = 'success-state animated fadeIn'
-    feedback+= e['id']
+    if "debug" in globals() :
+        feedback+= e['id']
     if e['id'] != answer[i]:
         e['css'] = 'error-state animated fadeIn'
         errors += 1
