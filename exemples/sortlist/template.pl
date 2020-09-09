@@ -11,7 +11,6 @@ sortlist =: SortList
 
 before==
 sortlist.items = items
-text+= str(items)
 ==
 
 # FORM
