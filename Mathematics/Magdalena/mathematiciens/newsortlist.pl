@@ -1,7 +1,7 @@
 
 extends = /exemples/sortlist/template.pl
 
-debug=True
+
 # la colonne nom doit être dans le bon ordre
 columns=nom,dates
 number=3
@@ -12,6 +12,7 @@ number=3
 title = Trions des mathématiciens 
 
 text= Ordonnez les dans l'ordre historique de la date de naissance
+
 
 
 
