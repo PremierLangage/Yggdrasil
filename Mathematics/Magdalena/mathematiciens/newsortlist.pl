@@ -3,7 +3,7 @@ extends = /exemples/sortlist/template.pl
 
 debug=True
 # la colonne nom doit être dans le bon ordre
-columns=domaine_lieu,nom
+columns=nom,nom
 number=3
 
 #@ toto.csv [data.csv]
