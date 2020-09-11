@@ -14,19 +14,18 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
+extends=/ComputerScience/C/template/std_progC.pl
+
 author=Nicolas Borie
 title=Programme manipulant des types
 
 tag=C|type|division|erreur
 
-extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-
 Le programme suivant comporte une erreur de type. Tentez de corriger cette erreur ! 
 Attention, cette fonction étant intégrée dans un programme pour les tests, vous ne 
 pouvez pas changer son propotype.
-
 ==
 
 codebefore==
