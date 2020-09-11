@@ -28,7 +28,7 @@ Attention, cette fonction étant intégrée dans un programme pour les tests, vo
 pouvez pas changer son propotype.
 ==
 
-codebefore==
+code_before==
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -47,7 +47,7 @@ float moyenne(int a, int b, int c){
 }
 ==
 
-codeafter==
+code_after==
 
 int main(int argc, char* argv[]){
   int a = atoi(argv[1]);
@@ -61,14 +61,14 @@ int main(int argc, char* argv[]){
 ==
 
 
-tests==
-[ ["simple éxécution", "1 1 1",""],
-  ["premier problème", "1 1 2",""], 
-  ["aléatoire", " ".join([str(random.randint(0, 50)) for i in range(3)]),""],
-  ["aléatoire", " ".join([str(random.randint(0, 50)) for i in range(3)]),""],
-  ["aléatoire", " ".join([str(random.randint(0, 50)) for i in range(3)]),""],
-  ["aléatoire", " ".join([str(random.randint(0, 50)) for i in range(3)]),""],
-  ["aléatoire", " ".join([str(random.randint(0, 50)) for i in range(3)]),""] ]
+checks_args_stdin==
+[ ["Simple éxécution", ["1", "1", "1"], ""],
+  ["Premier problème", ["1", "1", "2"], ""],
+  ["Test aléatoire", " ".join([str(random.randint(0, 50)) for i in range(3)]),""],
+  ["Test aléatoire", " ".join([str(random.randint(0, 50)) for i in range(3)]),""],
+  ["Test aléatoire", " ".join([str(random.randint(0, 50)) for i in range(3)]),""],
+  ["Test aléatoire", " ".join([str(random.randint(0, 50)) for i in range(3)]),""],
+  ["Test aléatoire", " ".join([str(random.randint(0, 50)) for i in range(3)]),""] ]
 ==
 
 
