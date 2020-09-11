@@ -18,6 +18,11 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+title=Quelques types de bases C
+author=Nicolas Borie
+
+tag=C|type|numérique|définition
+
 # STEP 1
 match =: MatchList
 
@@ -58,10 +63,6 @@ expected.append({ "source": "s", "target": "p" })
 
 
 random.shuffle(match.nodes)
-==
-
-title==
-Quelques types de bases C
 ==
 
 text==
