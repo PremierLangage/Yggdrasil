@@ -64,11 +64,12 @@ int main(int argc, char* argv[]){
 checks_args_stdin==
 [ ["Simple éxécution", ["1", "1", "1"], ""],
   ["Premier problème", ["1", "1", "2"], ""],
-  ["Test aléatoire", " ".join([str(random.randint(0, 50)) for i in range(3)]),""],
-  ["Test aléatoire", " ".join([str(random.randint(0, 50)) for i in range(3)]),""],
-  ["Test aléatoire", " ".join([str(random.randint(0, 50)) for i in range(3)]),""],
-  ["Test aléatoire", " ".join([str(random.randint(0, 50)) for i in range(3)]),""],
-  ["Test aléatoire", " ".join([str(random.randint(0, 50)) for i in range(3)]),""] ]
+  ["Test aléatoire", [str(randint(0, 50)) for i in range(3)],""],
+  ["Test aléatoire", [str(randint(0, 50)) for i in range(3)],""],
+  ["Test aléatoire", [str(randint(0, 50)) for i in range(3)],""],
+  ["Test aléatoire", [str(randint(0, 50)) for i in range(randint(5, 10))],""],
+  ["Test aléatoire", [str(randint(0, 50)) for i in range(randint(5, 10))],""],
+  ["Test aléatoire", [str(randint(0, 50)) for i in range(randint(5, 10))],""] ]
 ==
 
 
