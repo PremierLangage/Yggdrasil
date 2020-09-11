@@ -17,7 +17,7 @@
 extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
-title=Programme manipulant des types
+title=Programme erroné manipulant des types
 
 tag=C|type|division|erreur
 
