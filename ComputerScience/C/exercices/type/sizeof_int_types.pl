@@ -7,7 +7,7 @@ title = Tailles de quelques types entiers
 author = Nicolas Borie
 
 text== 
-Mettre en ordre les types entiers suivant du plus petit en mémoire au plus grand.
+Classez les types entiers suivant du plus petit (en haut) en mémoire au plus grand (en bas).
 ==
 
 form = {{ sortlist|component }}
@@ -54,6 +54,7 @@ extracss==
 }
 </style>
 ==
+
 
 
 
