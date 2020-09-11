@@ -21,8 +21,8 @@ match.nodes.append({"id": "int", "content": "type entier signé", "target": True
 expected.append({ "source": "i", "target": "int" })
 
 match.nodes.append({"id": "uli", "content": "unsigned long int", "source": True,})
-match.nodes.append({"id": "pos", "content": "type entier positif", "target": True,})
-expected.append({ "source": "uli", "target": "pos" })
+match.nodes.append({"id": "posl", "content": "type entier positif de grande taille", "target": True,})
+expected.append({ "source": "uli", "target": "posl" })
 
 match.nodes.append({"id": "d", "content": "double", "source": True,})
 match.nodes.append({"id": "dou", "content": "type flottant double présision", "target": True,})
@@ -31,6 +31,15 @@ expected.append({ "source": "d", "target": "dou" })
 match.nodes.append({"id": "f", "content": "float", "source": True,})
 match.nodes.append({"id": "flo", "content": "type flottant simple présision", "target": True,})
 expected.append({ "source": "f", "target": "flo" })
+
+match.nodes.append({"id": "ui", "content": "unsigned int", "source": True,})
+match.nodes.append({"id": "pos", "content": "type entier positif", "target": True,})
+expected.append({ "source": "ui", "target": "pos" })
+
+match.nodes.append({"id": "s", "content": "short", "source": True,})
+match.nodes.append({"id": "p", "content": "type entier de petite taille", "target": True,})
+expected.append({ "source": "s", "target": "p" })
+
 
 random.shuffle(match.nodes)
 ==
@@ -84,4 +93,5 @@ extracss==
 }
 </style>
 ==
+
 
