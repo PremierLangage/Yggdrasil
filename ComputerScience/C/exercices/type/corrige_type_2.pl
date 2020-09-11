@@ -24,14 +24,12 @@ tag=C|type|signature|int|erreur
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-
 Le programme suivant comporte une erreur de type. Tentez de corriger cette erreur ! 
 Attention, cette fonction étant intégrée dans un programme pour les tests, vous ne 
 pouvez pas changer son propotype.
-
 ==
 
-codebefore==
+code_before==
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -65,7 +63,7 @@ int max(int tab[], int size){
 }
 ==
 
-codeafter==
+code_after==
 
 int main(int argc, char* argv[]){
   int tab[100];
