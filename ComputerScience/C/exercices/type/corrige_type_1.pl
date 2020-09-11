@@ -21,7 +21,6 @@ title=Programme erroné manipulant des types
 
 tag=C|type|division|erreur
 
-
 text==
 Le programme suivant comporte une erreur de type. Tentez de corriger cette erreur ! 
 Attention, cette fonction étant intégrée dans un programme pour les tests, vous ne 
