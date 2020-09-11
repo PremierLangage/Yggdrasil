@@ -22,6 +22,8 @@ builder =@ /builder/before.py
 title = Tailles de quelques types entiers
 author = Nicolas Borie
 
+tag=C|type|sizeof|int
+
 text== 
 Classez les types entiers suivant du plus petit (en haut) en mémoire au plus grand (en bas).
 ==
