@@ -1,8 +1,24 @@
-# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2019 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
 author=Nicolas Borie
 title=Programme manipulant des types
-tag=type
+
+tag=C|type|division|erreur
+
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
@@ -55,4 +71,5 @@ tests==
   ["aléatoire", " ".join([str(random.randint(0, 50)) for i in range(3)]),""],
   ["aléatoire", " ".join([str(random.randint(0, 50)) for i in range(3)]),""] ]
 ==
+
 
