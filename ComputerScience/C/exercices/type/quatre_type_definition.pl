@@ -37,7 +37,7 @@ match.nodes.append({"id": "pos", "content": "type entier positif", "target": Tru
 expected.append({ "source": "ui", "target": "pos" })
 
 match.nodes.append({"id": "s", "content": "short", "source": True,})
-match.nodes.append({"id": "p", "content": "type entier de petite taille", "target": True,})
+match.nodes.append({"id": "p", "content": "type entier signé de petite taille", "target": True,})
 expected.append({ "source": "s", "target": "p" })
 
 
@@ -45,7 +45,7 @@ random.shuffle(match.nodes)
 ==
 
 title==
-Caractéristiques des types de bases C
+Quelques types de bases C
 ==
 
 text==
