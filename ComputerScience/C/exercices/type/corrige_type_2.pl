@@ -17,7 +17,7 @@
 extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
-title=Programme manipulant des types
+title=Programme erroné manipulant des types
 
 tag=C|type|signature|int|erreur
 
@@ -80,16 +80,16 @@ int main(int argc, char* argv[]){
 ==
 
 
-tests==
-[ ["simple éxécution", "","1 2 3 4 5"],
-  ["avec deux négatifs", "","-1 -2"],
-  ["aléatoire négatif", ""," ".join([str(random.randint(-30,-5)) for i in range(random.randint(5,10))])],
-  ["aléatoire positif", ""," ".join([str(random.randint(0,20)) for i in range(random.randint(5,10))])],
-  ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,10))])],
-  ["aléatoire ", ""," ".join([str(random.randint(-10,10)) for i in range(random.randint(5,10))])],
-  ["aléatoire ", ""," ".join([str(random.randint(-100,100)) for i in range(random.randint(10,20))])],
-  ["aléatoire ", ""," ".join([str(random.randint(-10,10)) for i in range(random.randint(5,20))])],
-  ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
+checks_args_stdin==
+[ ["simple éxécution", [], "1 2 3 4 5"],
+  ["avec deux négatifs", [], "-1 -2"],
+  ["aléatoire négatif", [], " ".join([str(randint(-30,-5)) for i in range(randint(5,10))])],
+  ["aléatoire positif", [], " ".join([str(randint(0,20)) for i in range(randint(5,10))])],
+  ["aléatoire ", [], " ".join([str(randint(-20,20)) for i in range(randint(5,10))])],
+  ["aléatoire ", [], " ".join([str(randint(-10,10)) for i in range(randint(5,10))])],
+  ["aléatoire ", [], " ".join([str(randint(-100,100)) for i in range(randint(10,20))])],
+  ["aléatoire ", [], " ".join([str(randint(-10,10)) for i in range(randint(5,20))])],
+  ["aléatoire ", [], " ".join([str(randint(-20,20)) for i in range(randint(5,20))])], ]
 ==
 
 
