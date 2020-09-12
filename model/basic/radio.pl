@@ -6,7 +6,7 @@ radio.decorator = CustomRadio
 numsol = 0
 
 before ==
-if isinstance(choices, string):
+if isinstance(choices, str):
     radio.setitems(choices.splitlines())
 radio.setsol_from_index(numsol)
 ==
