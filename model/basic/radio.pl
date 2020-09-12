@@ -8,7 +8,7 @@ numsol = 0
 before ==
 if isinstance(choices, str):
     radio.setitems(choices.splitlines())
-radio.setsol_from_index(numsol)
+radio.setsol_from_index(int(numsol))
 ==
 
 
