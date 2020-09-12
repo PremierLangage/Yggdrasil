@@ -4,7 +4,7 @@
 import sys, json, jsonpickle
 from components import Component
 from builderlib import aux_component1, aux_component2, aux_component
-from builderlib import PickleEncoder
+from builderlib import PickleEncoder, ComponentEnv
 
 from jinja2 import Template
 
@@ -128,6 +128,7 @@ if __name__ == "__main__":
     print(int(score))
     
     sys.exit(0)
+
 
 
 
