@@ -27,7 +27,7 @@ Le programme suivant comporte une erreur de type. Tentez de corriger cette erreu
 
 ==
 
-codebefore==
+code_before==
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -47,7 +47,7 @@ long int multiplication(int a, int b){
 }
 ==
 
-codeafter==
+code_after==
 
 int main(int argc, char* argv[]){
   int a = atoi(argv[1]);
@@ -59,16 +59,16 @@ int main(int argc, char* argv[]){
 ==
 
 
-tests==
-[ ["Simple éxécution", "1 1",""],
-  ["Cinq au carré", "5 5",""],
-  ["Test aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
-  ["Test aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
-  ["Test aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
-  ["Test aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
-  ["Test aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
-  ["Test aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
-  ["Test aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""] ]
+checks_args_stdin==
+[ ["Simple éxécution", ["1", "1"], ""],
+  ["Cinq au carré", ["5", "5"], ""],
+  ["Test aléatoire", [str(random.randint(0,2000000000)) for i in range(2)], ""],
+  ["Test aléatoire", [str(random.randint(0,2000000000)) for i in range(2)], ""],
+  ["Test aléatoire", [str(random.randint(0,2000000000)) for i in range(2)], ""],
+  ["Test aléatoire", [str(random.randint(0,2000000000)) for i in range(2)], ""],
+  ["Test aléatoire", [str(random.randint(0,2000000000)) for i in range(2)], ""],
+  ["Test aléatoire", [str(random.randint(0,2000000000)) for i in range(2)], ""],
+  ["Test aléatoire", [str(random.randint(0,2000000000)) for i in range(2)], ""] ]
 ==
 
 
