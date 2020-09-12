@@ -62,13 +62,13 @@ int main(int argc, char* argv[]){
 checks_args_stdin==
 [ ["Simple éxécution", ["1", "1"], ""],
   ["Cinq au carré", ["5", "5"], ""],
-  ["Test aléatoire", [str(random.randint(0,2000000000)) for i in range(2)], ""],
-  ["Test aléatoire", [str(random.randint(0,2000000000)) for i in range(2)], ""],
-  ["Test aléatoire", [str(random.randint(0,2000000000)) for i in range(2)], ""],
-  ["Test aléatoire", [str(random.randint(0,2000000000)) for i in range(2)], ""],
-  ["Test aléatoire", [str(random.randint(0,2000000000)) for i in range(2)], ""],
-  ["Test aléatoire", [str(random.randint(0,2000000000)) for i in range(2)], ""],
-  ["Test aléatoire", [str(random.randint(0,2000000000)) for i in range(2)], ""] ]
+  ["Test aléatoire", [str(randint(0,2000000000)) for i in range(2)], ""],
+  ["Test aléatoire", [str(randint(0,2000000000)) for i in range(2)], ""],
+  ["Test aléatoire", [str(randint(0,2000000000)) for i in range(2)], ""],
+  ["Test aléatoire", [str(randint(0,2000000000)) for i in range(2)], ""],
+  ["Test aléatoire", [str(randint(0,2000000000)) for i in range(2)], ""],
+  ["Test aléatoire", [str(randint(0,2000000000)) for i in range(2)], ""],
+  ["Test aléatoire", [str(randint(0,2000000000)) for i in range(2)], ""] ]
 ==
 
 
