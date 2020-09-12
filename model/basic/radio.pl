@@ -11,6 +11,14 @@ if isinstance(choices, str):
 radio.setsol_from_index(int(numsol))
 ==
 
+footerbefore ==
+if isinstance(choices, str):
+    radio.setitems(choices.splitlines())
+radio.setsol_from_index(int(numsol))
+if shuffle:
+    radio.shuffle()
+==
+
 
 form ==
 {{ radio|component }}
