@@ -23,7 +23,7 @@ tag=C|type|overflow|arithmetique
 
 text==
 
-Le programme suivant comporte une erreur de type. Tentez de corriger cette erreur ! 
+Le programme suivant comporte une erreur de type. Tentez de corriger cette erreur !
 
 ==
 
