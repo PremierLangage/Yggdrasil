@@ -19,7 +19,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 author=Nicolas Borie
 title=Programme erroné manipulant des types
 
-tag=C|type|overflow|arithmetique
+tag=C|type|overflow|multiplication
 
 text==
 
