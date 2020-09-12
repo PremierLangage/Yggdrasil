@@ -19,7 +19,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 author=Nicolas Borie
 title=Caractères minuscules ASCII
 
-tag=C|type|
+tag=C|type|lettre|ascii|caractère
 
 text==
 
@@ -61,5 +61,6 @@ code_after==
 checks_args_stdin==
 [["Simple exécution", [], ""]]
 ==
+
 
 
