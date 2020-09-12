@@ -1,4 +1,4 @@
-extends = model/basic/radio.pl
+extends = /model/basic/radio.pl
 
 text ==
 Quel pays a pour capitale Budapest ?
