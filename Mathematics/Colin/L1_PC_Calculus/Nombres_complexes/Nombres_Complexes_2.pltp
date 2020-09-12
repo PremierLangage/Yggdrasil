@@ -1,0 +1,20 @@
+
+introduction=Voici la deuxième série d'exercices sur les nombres complexes. Au programme : Racines carrées, équations du second degré, et racines n-ièmes. 
+
+@ /Mathematics/exercises/complex_numbers/cplx_sqrt.pl
+
+@ /Mathematics/exercises/complex_numbers/discriminant.pl
+
+@ /Mathematics/exercises/complex_numbers/quadratic_cplx_eq_.pl
+
+@ /Mathematics/exercises/complex_numbers/quadratic_cplx_eq_int.pl
+
+@ /Mathematics/exercises/complex_numbers/quadratic_cplx_eq_int2.pl
+
+@ /Mathematics/exercises/complex_numbers/quadratic_cplx_eq_int3.pl
+
+@ /Mathematics/exercises/complex_numbers/quadratic_cplx_eq_rat.pl
+
+
+
+
