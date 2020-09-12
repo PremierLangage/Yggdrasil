@@ -1,9 +1,25 @@
-# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2019 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
+
 author=Nicolas Borie
-title=Programme manipulant des types
-tag=type
-extends=/ComputerScience/C/template/stdsandboxC.pl
+title=Programme erroné manipulant des types
+
+tag=C|type|overflow|arithmetique
 
 text==
 
@@ -44,15 +60,16 @@ int main(int argc, char* argv[]){
 
 
 tests==
-[ ["simple éxécution", "1 1",""],
-  ["cinq au carré", "5 5",""],
-  ["aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
-  ["aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
-  ["aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
-  ["aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
-  ["aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
-  ["aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
-  ["aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""] ]
+[ ["Simple éxécution", "1 1",""],
+  ["Cinq au carré", "5 5",""],
+  ["Test aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
+  ["Test aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
+  ["Test aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
+  ["Test aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
+  ["Test aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
+  ["Test aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""],
+  ["Test aléatoire", " ".join([str(random.randint(0,2000000000)) for i in range(2)]),""] ]
 ==
+
 
 
