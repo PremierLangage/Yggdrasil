@@ -3,7 +3,7 @@ introduction=Voici la deuxième série d'exercices sur les nombres complexes. Au
 title=Equations polynomiales à coéfficients complexes
 
 
-@ /Mathematics/exercises/complex_numbers/cplx_sqrt.pl
+# @ /Mathematics/exercises/complex_numbers/cplx_sqrt.pl
 
 @ /Mathematics/exercises/complex_numbers/discriminant.pl
 
