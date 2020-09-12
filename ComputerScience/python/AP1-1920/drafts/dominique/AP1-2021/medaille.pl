@@ -1,14 +1,5 @@
-@ /utils/sandboxio.py
-grader  =@ /grader/evaluator.py
-builder =@ /builder/before.py
-
-editor =: CodeEditor
-editor.theme = dark
-editor.language = markdown
-editor.code ==
-# write your code here
-==
-
+tag=function # N'oubliez pas de remplir ce champs svp
+extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title= Une médaille 
 
