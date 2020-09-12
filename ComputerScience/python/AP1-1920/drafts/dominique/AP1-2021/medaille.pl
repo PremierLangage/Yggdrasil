@@ -17,15 +17,18 @@ text==
 La fonction metal fournis le niveau sportif "Or","Argent", "Bronze", et "Neige" de participant avec
  les règles suivantes , il y a trois épreuves ou l'on optient de 0 à 6 points
 
+Niveau Or : 4 ou plus a chaque épreuves et au moins  13 au total.
+Niveau Argent : 3 ou plus a chaque épreuves et au moins  10 au total.
+Niveau Bronze : 2 ou plus a chaque épreuves et au moins  7 au total.
+Niveau Neige : pas de conditions. 
 
-| or                       |     argent . .     | bronze             |              Neige |
-|--------------------------|--------------------|--------------------|--------------------|
-|Plus de 4 à chaque épreuve | Plus de 3 à chaque épreuve|Plus de 2 à chaque épreuve | pas de conditions.  |
-|et au moins 13 au total | et au moins 10 au total |et au moins 7 au total | |
+Exemple de doctest :
+
+    ‘‘‘
+    >>> metal(5,6,4)
+    'Or'
+    ‘‘‘
 
 ==
 
-form==
-==
 
-before=
