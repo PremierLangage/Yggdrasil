@@ -36,3 +36,9 @@ pltest0==
 'Neige'
 ==
 
+editor.code==
+def metal
+
+
+==
+editor.height=145
