@@ -23,8 +23,8 @@ code==
 # lecture au clavier, affectation
 lettre=input()
 # Textes a utiliser pour faire l'affichage 
-# ?? apparait dans {{MOT}}
-# ?? n'apparait pas dans {{MOT}}
+# ?? "apparait dans {{MOT}}"
+# ?? "n'apparait pas dans {{MOT}}" 
 
 
 ==
@@ -61,6 +61,7 @@ plsoluce1==
 Test 3 |n
 Test 4 |+
 ==
+
 
 
 
