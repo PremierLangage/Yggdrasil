@@ -37,6 +37,7 @@
 ** Quelle est la valeur maximale pouvant être prise par un **unsigned int** ?
 + 2 puissance 32 moins 1
 + de l'ordre de 4 milliards
+- de l'ordre de 2 millions
 - 2 puissance 31 moins 1
 - 255 * 255 * 255 * 255 (4 octets quoi)
 - 2 puissance 8
