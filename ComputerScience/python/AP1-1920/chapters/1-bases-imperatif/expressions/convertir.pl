@@ -54,19 +54,19 @@ K=1.60934 # Km dans Mile
 L=0.264172 # Gallon dans litre
 sol=lambda C:100/((C/G)*K)
 f=lambda C: eval(inputbox.value)
-r=True
+r=False
 delta= -100
+feedback=' pas le bon calcul'
 try:
     delta= (f(40) - sol(40))
-    if -0.01 < delta < 0.01 :
-        r=True
-
+    r=-0.01 < delta and delta < 0.01
 except :
+    feeback='problèmes dans votre formule '
     r=False
 if r:
-    grade = (100, '<span class="success-state">Good 👏👏👏'+str(f(40))+' '+str(sol(40))+'</span>')
+    grade = (100, '<span class="success-state">Good 👏👏👏</span>')
 else:
-    grade = (0, '<span class="error-state">Bad answer 👎👎👎 '+str(delta)+'</span>')
+    grade = (0, '<span class="error-state">Bad answer 👎👎👎 </span>')
 ==
 
 
