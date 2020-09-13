@@ -41,3 +41,13 @@
 - 2 puissance 31 moins 1
 - 255 * 255 * 255 * 255 (4 octets quoi)
 - 2 puissance 8
+
+
+** Parmi les types suivants, lesquels modélisent des nombres entiers ?
++ signed int
++ unsigned long int
++ char
++ unsigned short
++ signed char
+- float
+- double
