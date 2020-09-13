@@ -25,6 +25,7 @@
 - 256
 - 2 puissance 8
 
+
 ** Sachant que la lettre a minuscule vaut 97 dans le code ASCII, combient vaut l'expression 'a' + 4 ?
 + 101
 + 'e'
