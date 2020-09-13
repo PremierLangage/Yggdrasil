@@ -17,7 +17,7 @@
 # Ceci est un fichier de questions de type QCM au format AMX.txt
 # Les questions portent sur les types du langage C
 
-* Quelle est la valeur maximale pouvant être prise par un **signed char** ?
+** Quelle est la valeur maximale pouvant être prise par un **signed char** ?
 + 2 puissance 7 moins 1
 + 127
 - 2 puissance 8 moins 1
