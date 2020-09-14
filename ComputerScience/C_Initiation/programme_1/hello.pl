@@ -28,12 +28,14 @@ editor.code==
 
 int main(void){
   /* votre code ici... */
+  return 0;
 }
 ==
 
 tests==
 [ ["simple éxécution", "","", "Hello World!\n"] ]
 ==
+
 
 
 
