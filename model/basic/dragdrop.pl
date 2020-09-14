@@ -7,7 +7,7 @@ title =
 
 
 headerbefore ==
-from customdragdrop import DragDropGroup
+from customdragdrop import CustomDragDrop
 labels = []
 for content in labelscontent.splitlines():
     labels.append(CustomDragDrop.Label(content=content))
