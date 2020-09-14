@@ -23,6 +23,8 @@ Os ethmoïde
 ==
 
 form ==
-
+{% for label in labels %}
+{{ label|component }}
+{% endfor %}
 ==
 
