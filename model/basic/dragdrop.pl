@@ -30,6 +30,8 @@ Os ethmoïde
 
 text =
 
+scheme =$ /Biology/media/550px-Cranial_bones_numbers.svg.png
+
 form ==
 <img src="{{scheme}}" style="max-width: 300px; vertical-align:top; display: inline-block"> 
 <ul>
