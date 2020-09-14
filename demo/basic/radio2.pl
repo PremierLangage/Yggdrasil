@@ -4,7 +4,6 @@ title ==
 Exemple 2
 ==
 
-
 text ==
 A quel siècle vivait Louis XI ?
 ==
@@ -19,5 +18,5 @@ XVe siècle
 
 numsol = 4
 
-shuffle = false
+shuffle % false
 
