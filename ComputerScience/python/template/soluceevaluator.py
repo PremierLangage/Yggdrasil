@@ -43,10 +43,9 @@ if __name__ == "__main__":
     else:
         for u in range(0,10): # FIXME IF U >10
             xname = "mplsoluce"+str(u)
-            if xname  in dic:
-                mpvalue=dic[xname].split("\n")
-            else:
+            if xname not in dic:
                 continue
+            mpvalue=dic[xname].split("\n")
             lestest.append([mpvalue[0],"\n".join(mpvalue[1:])])
     student = get_answers()['answer']
     with open("student.py","w") as sf:
@@ -58,6 +57,7 @@ if __name__ == "__main__":
    
 
     output(ret, fb.render())
+
 
 
 
