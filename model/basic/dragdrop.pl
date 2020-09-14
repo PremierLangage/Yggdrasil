@@ -31,6 +31,13 @@ Os ethmoïde
 text =
 
 form ==
+<img src="{{scheme}}" style="max-width: 300px; vertical-align:top; display: inline-block"> 
+<ul>
+{% for i in range(nbdrops) %}
+<li> {{ i + 1 }}. {{ drops[i]|component }} </li>
+{% endfor %}
+</ul>
+
 {% for label in labels %}
 {{ label|component }}
 {% endfor %}
