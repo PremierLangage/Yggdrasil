@@ -63,9 +63,10 @@ tests==
 [ ["Quelconque", "", "10 0 -1"],
   ["Decroissante", "", "5 2-1"],
   ["Croissante", "", "1 2 3"],
-  ["Aléatoire", "",  " ".join([str(random.randint(0,100)) for i in range(3)]
+
 ]
 ==
+
 
 
 
