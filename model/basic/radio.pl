@@ -9,7 +9,9 @@ numsol = 0
 footerbefore ==
 if isinstance(choices, str):
     radio.setitems(choices.splitlines())
-    
+else:
+    radio.setitems(choices)
+
 radio.setsol_from_index(int(numsol))
 
 if shuffle:
