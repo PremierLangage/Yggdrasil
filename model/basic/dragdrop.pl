@@ -8,7 +8,7 @@ title =
 
 headerbefore ==
 labels = []
-for content in labelscontent.splitlines())
+for content in labelscontent.splitlines():
     labels.append(CustomDragDrop.Label(content=content))
 
 ==
