@@ -1,15 +1,18 @@
 extends = /model/basic.pl
 
-radio =: RadioGroup
-radio.decorator = CustomRadio
-
 title =
 
-
-headerbefore ==
+footerbefore ==
 from customdragdrop import CustomDragDrop
+drops = []
 labels = []
-for content in labelscontent.splitlines():
+
+if labelscontent in globals():
+    list_labelcontents = labelscontent.splitlines()
+else:
+    list_labelcontents = list(set(dropsol.splitlines()))
+
+for content in list_labelcontents:
     labels.append(CustomDragDrop.Label(content=content))
 
 ==
