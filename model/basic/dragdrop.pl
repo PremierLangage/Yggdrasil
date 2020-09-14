@@ -22,6 +22,8 @@ Os occipital
 Os ethmoïde
 ==
 
+text =
+
 form ==
 {% for label in labels %}
 {{ label|component }}
