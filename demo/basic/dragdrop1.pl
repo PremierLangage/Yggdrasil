@@ -1,7 +1,7 @@
 extends = /model/basic/dragdrop.pl
 
 title ==
-Exemple 3
+Exemple 1
 ==
 
 labelscontent ==
@@ -20,7 +20,6 @@ Compléter la phrase suivante avec les étiquettes proposées.
 
 form ==
 Pastor pecuniam non {{ drops[0]|component }}.<br>
-
 
 {% for label in labels %}
 {{ label|component }}
