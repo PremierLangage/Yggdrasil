@@ -17,7 +17,7 @@ for content in list_labelcontents:
 
 ==
 
-labelscontent ==
+dropsol ==
 Os frontal
 Os pariétal
 Os sphénoïde
