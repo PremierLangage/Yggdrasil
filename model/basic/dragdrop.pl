@@ -7,7 +7,7 @@ from customdragdrop import CustomDragDrop
 drops = []
 labels = []
 
-if labelscontent in locals():
+if 'labelscontent' in globals():
     list_labelcontents = labelscontent.splitlines()
 else:
     list_labelcontents = list(set(dropsol.splitlines()))
