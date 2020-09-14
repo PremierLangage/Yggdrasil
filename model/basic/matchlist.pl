@@ -8,14 +8,14 @@ footerbefore ==
 import random as rd
 nbsample = int(nbsample)
 
-if isinstance(sortedlist, str): 
-    lst = sortedlist.splitlines()
+if isinstance(pairings, str): 
+    lst = [paring.split(";") for pairing pairings.splitlines()]
 else:
-    lst = sortedlist
+    lst = pairings
 if nbsample == 0:
     nbsample = len(lst)
 
-matchlist.setdata_from_matches([(row['pays'], row['capitale']) for row in sample_rows])
+matchlist.setdata_from_matches(rd.sample(lst, nbsample))
 ==
 
 matchlist =: MatchList
