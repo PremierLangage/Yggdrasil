@@ -53,9 +53,6 @@ if __name__ == "__main__":
     import feedback2
     fb=feedback2.FeedBack()
     ret=runsolucetests(lestest,fb)
-
-   
-
     output(ret, fb.render())
 
 
