@@ -4,7 +4,7 @@ title ==
 Exemple 3
 ==
 
-labelcontents ==
+labelscontent ==
 habes
 habet
 habent
