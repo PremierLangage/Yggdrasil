@@ -28,7 +28,7 @@ Comparer les nombres suivants avec les symboles {{ labels[0] | component }} et 
 form==
 <ul>
 {% for i in range(nbdrops) %}
-<li> {{ numbers[i][0] }} {{ drop[i]|component }} {{ numbers[i][1] }} </li>
+<li> {{ numbers[i][0] }} {{ drops[i]|component }} {{ numbers[i][1] }} </li>
 {% endfor %}
 </ul>
 ==
