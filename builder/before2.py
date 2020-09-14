@@ -32,16 +32,16 @@ if __name__ == "__main__":
     # the content of namespace is added to dic
     dic = {**namespace, **dic}
     
-    if 'before' in dic:
+    code = "\n".join([dic.get('headerbefore', ""), dic.get('before', ""), dic.get('footerbefore', "")])
 
-        # execute the script in before key with dic as globals
-        exec(dic['before'], dic)
-        
-        # clean dic from namespace elements
-        exec("", namespace)
-        for key in namespace:
-            if key in dic and dic[key] == namespace[key]:
-                del dic[key]
+    # execute the script in before key with dic as globals
+    exec(code, dic)
+    
+    # clean dic from namespace elements
+    exec("", namespace)
+    for key in namespace:
+        if key in dic and dic[key] == namespace[key]:
+            del dic[key]
 
     # build the key 'extracss' from the content of the key 'style'
     if 'style' in dic:
@@ -71,6 +71,7 @@ if __name__ == "__main__":
         json.dump(dic, f, cls=JSONEncoder)
 
     sys.exit(0)
+
 
 
 
