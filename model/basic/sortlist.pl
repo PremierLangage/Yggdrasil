@@ -6,6 +6,7 @@ nbsample = 0
 
 footerbefore ==
 import random as rd
+nbsample = int(nbsample)
 
 if isinstance(sortedlist, str): 
     lst = sortedlist.splitlines()
