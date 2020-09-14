@@ -1,5 +1,10 @@
 extends = /model/basic/radio.pl
 
+title ==
+Exemple 2
+==
+
+
 text ==
 A quel siècle vivait Louis XI ?
 ==
