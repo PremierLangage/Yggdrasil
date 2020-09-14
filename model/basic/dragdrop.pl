@@ -7,16 +7,21 @@ from customdragdrop import CustomDragDrop
 drops = []
 labels = []
 
+if isinstance(dropsol, str):
+    list_dropsol = dropsol.splitlines()
+else:
+    list_dropsol = dropsol
+
 if 'labelscontent' in globals():
     list_labelcontents = labelscontent.splitlines()
 else:
-    list_labelcontents = list(set(dropsol.splitlines()))
+    list_labelcontents = list(set(dropsol))
 
 for content in list_labelcontents:
     labels.append(CustomDragDrop.Label(content=content))
 
-nbdrops = len(dropsol.splitlines())
-for _ in dropsol.splitlines():
+nbdrops = len(list_dropsol)
+for _ in  list_dropsol:
     drops.append(CustomDragDrop.Drop())
 ==
 
