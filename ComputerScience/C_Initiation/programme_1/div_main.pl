@@ -37,6 +37,7 @@ Un nombre : 6
 editor.code==
 int main(void) {
   /* votre code ici... */
+return 0;
 }
 
 ==
@@ -83,6 +84,7 @@ tests==
   ["Aléatoire", "", str(random.randint(1, 20))],
   ["Aléatoire", "", str(random.randint(20, 40))] ]
 ==
+
 
 
 
