@@ -1,4 +1,4 @@
-extends = model/basic/matchlist.pl
+extends = /model/basic/matchlist.pl
 
 text ==
 Relier chaque pays à sa capitale.
