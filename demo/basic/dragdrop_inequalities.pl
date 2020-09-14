@@ -1,39 +1,32 @@
-extends = /model/basic.pl
+extends = /model/basic/dragdrop.pl
 
-@ /utils/components/dragdrop.py [customdragdrop.py]
-
-title = Comparaison de nombres (DragDrop)
+title ==
+Comparaison de nombres (DragDrop)
+==
 
 before==
-from customdragdrop import CustomDragDrop
-import random as rd
-
-lt="&lt;"
-gt="&gt;"
-
-n = 4
+lt = "&lt;"
+gt = "&gt;"
 
 numbers = []
-sol = []
-for _ in range(n):
+dropsol = []
+nbdrops = 4
+for _ in range(nbdrops):
     [a,b] = rd.sample(range(10,100),2)
     numbers.append([a,b])
     if a < b:
-        sol.append(lt)
+        dropsol.append(lt)
     else:
-        sol.append(gt)
-
-label = CustomDragDrop.Labels([lt,gt])
-drop = CustomDragDrop.Drops(n)
+        dropsol.append(gt)
 ==
 
 text==
-Comparer les nombres suivants avec les symboles {{ label[0] | component }} et {{ label[1] | component }}.
+Comparer les nombres suivants avec les symboles {{ labels[0] | component }} et {{ labels[1] | component }}.
 ==
 
 form==
 <ul>
-{% for i in range(4) %}
+{% for i in range(nbdrops) %}
 <li> {{ numbers[i][0] }} {{ drop[i]|component }} {{ numbers[i][1] }} </li>
 {% endfor %}
 </ul>
@@ -53,5 +46,6 @@ extracss == #|html|
         }
 </style>
 ==
+
 
 
