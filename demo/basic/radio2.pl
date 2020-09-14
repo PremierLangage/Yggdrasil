@@ -1,4 +1,4 @@
-extends = model/basic/radio.pl
+extends = /model/basic/radio.pl
 
 text ==
 A quel siècle vivait Louis XI ?
