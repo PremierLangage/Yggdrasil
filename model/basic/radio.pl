@@ -29,3 +29,4 @@ score = radio.eval()
 radio.disabled = True
 ==
 
+shuffle % true
