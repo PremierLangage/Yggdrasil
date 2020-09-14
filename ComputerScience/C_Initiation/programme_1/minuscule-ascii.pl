@@ -23,6 +23,7 @@ int main(){
   ...
   printf(" --> ");
   ...
+  return 0;
 }
 ==
 
@@ -41,6 +42,7 @@ int main(){
 tests==
 [["Simple exéécution", "", ""]]
 ==
+
 
 
 
