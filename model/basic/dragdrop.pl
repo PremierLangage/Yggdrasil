@@ -15,6 +15,8 @@ else:
 for content in list_labelcontents:
     labels.append(CustomDragDrop.Label(content=content))
 
+for content in list_labelcontents:
+    drops.append(CustomDragDrop.Drop())
 ==
 
 dropsol ==
