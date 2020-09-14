@@ -9,8 +9,17 @@ title =
 headerbefore ==
 labels = []
 for content in labelscontent.splitlines())
-    labels.append(CustomDragDrop.Label(content=content)=
+    labels.append(CustomDragDrop.Label(content=content))
 
+==
+
+labelscontent ==
+Os frontal
+Os pariétal
+Os sphénoïde
+Os temporal
+Os occipital
+Os ethmoïde
 ==
 
 form ==
