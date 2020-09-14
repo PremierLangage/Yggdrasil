@@ -4,7 +4,8 @@ title ==
 Comparaison de nombres (DragDrop)
 ==
 
-before==
+before ==
+import random as rd
 lt = "&lt;"
 gt = "&gt;"
 
