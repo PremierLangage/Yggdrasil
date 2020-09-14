@@ -9,7 +9,7 @@ import random as rd
 nbsample = int(nbsample)
 
 if isinstance(pairings, str): 
-    lst = [pairing.split(";") for pairing pairings.splitlines()]
+    lst = [pairing.split(";") for pairing in pairings.splitlines()]
 else:
     lst = pairings
 if nbsample == 0:
