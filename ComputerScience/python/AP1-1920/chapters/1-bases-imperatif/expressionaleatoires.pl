@@ -7,7 +7,6 @@ builder =@ /builder/before.py
 nbechec%0
 
 before== #|python|
-import sys
 import random
 essai = 4
 N = 10
@@ -17,15 +16,11 @@ ope = [random.choice(['+','*','-','//','/','%','**']) for n in range(N)]
 res = [ eval(op1[n]+ope[n]+ op2[n]) for n in range(N)]
 solved=[ False for n in range(N)]
 isfloat = [ False for n in range(N)]
-inputs = set()
+inputs = []
 for i in range(N):
     inp = Input()
     globals()[f"input{i}"] = inp
-    inputs.add(inp)
-    print(inp, file=sys.stderr)
-    print(inputs, file=sys.stderr)
-[print(x, end=" | ", file=sys.stderr) for x in inputs]
-raise Exception()
+    inputs.append(inp)
 ==
 
 evaluator== #|python|
