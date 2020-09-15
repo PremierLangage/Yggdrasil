@@ -19,7 +19,8 @@ Création de trois variables pim pam pom, et affectation de valeurs précises (e
 
 Idée: maîtriser déclaration/affectation, éventuellement se rendre compte de l'importance de la casse
 
-**Changements:** 
+**Changements:**
+ 
     - puisque qu'il y a trois exercices du même type, j'ai rajouté (1) dans le titre
     - ajout du _tag_ affectation
 
