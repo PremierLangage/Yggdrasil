@@ -2,6 +2,13 @@ Ceci est le document de travail pour la mouture 2020 du TP en autonomie sur PLaT
 
 Pour l'instant j'ai (Marie) fait une copie locale de la feuille de tp principale et des exercices, pour que les modifications qu'on puisse faire ne soient pas définitives.
 
+**Notes:**
+
+    - les _tags_ sont à séparer par des pipes : |
+    - 
+    -
+
+
 Ci-dessous, une description de chaque exercice et des changements effectués par rapport à la mouture précédente (ainsi que quelques commentaires).
 
 # Exercice 1
