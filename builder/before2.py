@@ -38,7 +38,7 @@ if __name__ == "__main__":
     # the content of namespace is added to dic
     dic = {**namespace, **dic}
     
-    if os.path.exist("data.csv"):
+    if os.path.exists("data.csv"):
         import csv
         with open("data.csv","r") as csvfile:
             reader = csv.DictReader(csvfile)
