@@ -2,6 +2,10 @@ extends = /model/basic.pl
 
 title =
 
+text==
+En utilisnt Drag and Drop, rangez les valeurs dans l'ordre.
+==
+
 nbsample = 0
 
 footerbefore ==
@@ -32,3 +36,4 @@ score = sortlist.eval()
 ==
 
 settings.feedback = lightscore
+
