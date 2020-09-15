@@ -6,6 +6,8 @@ Ci-dessous, une description de chaque exercice et des changements effectués par
 
 # Exercice 1
 
+@ /ComputerScience/python/AP1-2021/chapitre1/variable001-2021.pl
+
 Création de trois variables pim pam pom, et affectation de valeurs précises (entiers) à ces variables.
 
 Idée: maîtriser déclaration/affectation, éventuellement se rendre compte de l'importance de la casse
@@ -17,6 +19,8 @@ Idée: maîtriser déclaration/affectation, éventuellement se rendre compte de 
 **Remarques/commentaires:**
 
 # Exercice 2
+
+@ /ComputerScience/python/AP1-2021/chapitre1/variable002-2021.pl
 
 Création d'une variable X, et affectation de valeur précise (chaîne) à cette variable.
 
@@ -31,6 +35,8 @@ Idée: maîtriser déclaration/affectation, éventuellement se rendre compte de 
 
 # Exercice 3
 
+@ /ComputerScience/python/AP1-2021/chapitre1/variable003-2021.pl
+
 Création de trois variables jour mois annee, et affectation de valeurs précises (entiers) à ces variables.
 
 Idée: maîtriser déclaration/affectation, éventuellement se rendre compte de l'importance de la casse
@@ -44,11 +50,27 @@ Idée: maîtriser déclaration/affectation, éventuellement se rendre compte de 
 
 # Exercice 4
 
+@ /ComputerScience/python/AP1-2021/chapitre1/aleaagecap-2021.pl
+
 Lecture au clavier et transformation en entier puis affectation
 
 Idée: première utilisation d'input et des possibilités de la fonction print (petit calcul)
 
 **Changements:** 
     - correction typos et légère reformulation de la deuxième consigne
+
+**Remarques/commentaires:**
+
+# Exercice 5
+
+@ /ComputerScience/python/AP1-2021/chapitre1/occure-2021.pl
+
+Lecture d'un caractère
+
+Idée: utiliser l'input, faire un jeu de tests conditionnels
+
+**Changements:** 
+    - correction typos
+    - ajout des _tags_ if|elif|else|conditionnelles
 
 **Remarques/commentaires:**
