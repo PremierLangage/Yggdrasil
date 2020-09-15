@@ -1,0 +1,22 @@
+
+
+title=Quelques vérifications sur l'arithmetique.  
+
+
+introduction==
+
+Quelques vérifications sur l'arithmetique des expressions.
+
+  
+
+==
+
+
+@ /cpp-info111/exercices/arithmetic/modulo_result.cpp.pl
+@ /cpp-info111/exercices/arithmetic/division_entiere_result.cpp.pl
+@ /cpp-info111/exercices/arithmetic/modulo_result.cpp.pl
+@ /cpp-info111/exercices/arithmetic/priorite1_result.cpp.pl
+@ /cpp-info111/exercices/arithmetic/priorite2_result.cpp.pl
+@ /cpp-info111/exercices/arithmetic/z_parentheses_result.cpp.pl
+@ /cpp-info111/exercices/arithmetic/division_entiere_2_result.cpp.pl
+
