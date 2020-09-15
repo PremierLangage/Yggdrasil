@@ -42,8 +42,8 @@ if __name__ == "__main__":
     with open("truc.csv","r") as csvfile:
         reader = csv.DictReader(csvfile)
         # Lecture de la column dans l'ordre du fichier
-        lue = [ row[column] for row in reader]
-        sortedlist= "\n".join(lue)+""
+        lue = [ row[dic['column']] for row in reader]
+        sortedlist= "\n".join(lue)
 
     dic['sortedlist']=sortedlist
 
