@@ -13,7 +13,7 @@ delimiter="," if "delimiter" not in globals() else delimiter
 nbsample = 4 if "nbsample" not in globals() else int(nbsample)
 
 with open("data.csv","r") as csvfile:
-    dialect = csv.Sniffer().sniff(csvfile.read(1024),delimiter=delimiter)
+    dialect = csv.Sniffer().sniff(csvfile.read(1024),delimiters=delimiter)
     csvfile.seek(0)
     reader = csv.Dicreader(csvfile, dialect)
     # Lecture de la column dans l'ordre du fichier
