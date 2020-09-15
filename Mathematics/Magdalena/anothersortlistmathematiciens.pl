@@ -6,7 +6,7 @@ nbsample=6
 
 before==
 
-sortedlist.append("Moi")
+sortedlist.append("Magdalena Kobylanska")
 ==
 
 text==
