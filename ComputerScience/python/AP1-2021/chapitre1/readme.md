@@ -41,3 +41,14 @@ Idée: maîtriser déclaration/affectation, éventuellement se rendre compte de 
     - ajout du _tag_ affectation
 
 **Remarques/commentaires:**
+
+# Exercice 4
+
+Lecture au clavier et transformation en entier puis affectation
+
+Idée: première utilisation d'input et des possibilités de la fonction print (petit calcul)
+
+**Changements:** 
+    - correction typos et légère reformulation de la deuxième consigne
+
+**Remarques/commentaires:**
