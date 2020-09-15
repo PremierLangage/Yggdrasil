@@ -15,7 +15,7 @@ nbsample = 4 if "nbsample" not in globals() else int(nbsample)
 with open("data.csv","r") as csvfile:
     dialect = csv.Sniffer().sniff(csvfile.read(1024),delimiters=delimiter)
     csvfile.seek(0)
-    reader = csv.Dicreader(csvfile, dialect)
+    reader = csv.DicReader(csvfile, dialect)
     # Lecture de la column dans l'ordre du fichier
     lue = [ row[column] for row in reader] 
 # ordered sample from file 
