@@ -1,6 +1,6 @@
 Ceci est le document de travail pour la mouture 2020 du TP en autonomie sur PLaTon correspondant aux notions vues au Chapitre 1 (Nommage Variables Input Affectation Conditionnelles).
 
-Pour l'instant j'ai (Marie) fait une copie locale de la feuille de tp principale et des exercices, pour que les modifications qu'on puisse faire ne soient pas définitives.
+Pour l'instant j'ai (Marie) fait une copie locale de la feuille de tp principale et une au fur et à mesure de leur traitement des exercices, pour que les modifications qu'on puisse faire ne soient pas définitives.
 
 **Notes:**
 
