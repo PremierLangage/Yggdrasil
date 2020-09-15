@@ -38,6 +38,15 @@ if __name__ == "__main__":
     # the content of namespace is added to dic
     dic = {**namespace, **dic}
     
+    import csv
+    with open("truc.csv","r") as csvfile:
+        reader = csv.DictReader(csvfile)
+        # Lecture de la column dans l'ordre du fichier
+        lue = [ row[column] for row in reader]
+        sortedlist= "\n".join(lue)+""
+
+    dic['sortedlist']=sortedlist
+
     code = "\n".join([dic.get('headerbefore', ""), dic.get('before', ""), dic.get('footerbefore', "")])
 
     # execute the script in before key with dic as globals
@@ -53,12 +62,6 @@ if __name__ == "__main__":
     if 'style' in dic:
         dic['extracss'] = "<style> %s </style>" % "\n".join(reversed(list(dic['style'].values())))
 
-    import csv
-    with open("truc.csv","r") as csvfile:
-        reader = csv.DictReader(csvfile)
-        # Lecture de la column dans l'ordre du fichier
-        lue = [ row[column] for row in reader]
-        sortedlist= "\n".join(lue)+""
 
 
 
