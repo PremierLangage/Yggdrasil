@@ -40,11 +40,15 @@ if __name__ == "__main__":
     
     if os.path.exists("data.csv"):
         import csv
-        with open("data.csv","r") as csvfile:
-            reader = csv.DictReader(csvfile)
-            # Lecture de la column dans l'ordre du fichier
-            dic['sortedlist']=[ row[dic['column']] for row in reader]
-
+        if "column" in dic:
+            with open("data.csv","r") as csvfile:
+                reader = csv.DictReader(csvfile)
+                # Lecture de la column dans l'ordre du fichier
+                dic['sortedlist']=[ row[dic['column']] for row in reader]
+        else:
+            with open("data.csv","r") as csvfile:
+                reader = csv.reader(csvfile)
+                 dic['sortedlist']=[ row[0] for row in reader]
     code = "\n".join([dic.get('headerbefore', ""), dic.get('before', ""), dic.get('footerbefore', "")])
 
     # execute the script in before key with dic as globals
