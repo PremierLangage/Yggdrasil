@@ -5,8 +5,8 @@ Pour l'instant j'ai (Marie) fait une copie locale de la feuille de tp principale
 **Notes:**
 
     - les _tags_ sont à séparer par des pipes : |
-    - 
-    -
+    - n'hésitez pas à faire des commentaires/remarques/changements, que ce soit sur les exercices ou ce document
+    - est-ce qu'il manque des concepts/notions à traiter / est-ce qu'on veut faire quelques exercices supplémentaires ?
 
 
 Ci-dessous, une description de chaque exercice et des changements effectués par rapport à la mouture précédente (ainsi que quelques commentaires).
@@ -20,7 +20,7 @@ Création de trois variables pim pam pom, et affectation de valeurs précises (e
 Idée: maîtriser déclaration/affectation, éventuellement se rendre compte de l'importance de la casse
 
 **Changements:**
- 
+
     - puisque qu'il y a trois exercices du même type, j'ai rajouté (1) dans le titre
     - ajout du _tag_ affectation
 
@@ -35,6 +35,7 @@ Création d'une variable X, et affectation de valeur précise (chaîne) à cette
 Idée: maîtriser déclaration/affectation, éventuellement se rendre compte de l'importance de la casse
 
 **Changements:** 
+
     - correction typo
     - puisque qu'il y a trois exercices du même type, j'ai rajouté (2) dans le titre
     - ajout du _tag_ affectation
@@ -50,6 +51,7 @@ Création de trois variables jour mois annee, et affectation de valeurs précise
 Idée: maîtriser déclaration/affectation, éventuellement se rendre compte de l'importance de la casse
 
 **Changements:** 
+
     - correction typo
     - puisque qu'il y a trois exercices du même type, j'ai rajouté (3) dans le titre
     - ajout du _tag_ affectation
@@ -78,6 +80,7 @@ Lecture d'un caractère
 Idée: utiliser l'input, faire un jeu de tests conditionnels
 
 **Changements:** 
+
     - correction typos
     - ajout des _tags_ if|elif|else|conditionnelles
 
