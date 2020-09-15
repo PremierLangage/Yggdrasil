@@ -58,3 +58,12 @@
 - `unsigned int`
 - `long int`
 - `unsigned double`
+
+
+** Lequel des types de base C suivant pourrait contenir le plus grand nombre entier possible ?
++ `unsigned long int`
+- `unsigned int`
+- `long int`
+- `unsigned short`
+- `signed char`
+- `char`
