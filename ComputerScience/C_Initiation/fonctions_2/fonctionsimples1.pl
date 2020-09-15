@@ -31,23 +31,15 @@ codebefore==
 ==
 
 solution==
-
 int triple( int n){
-    
 	return n*3;
 }
-
-
 ==
 
 
 codeafter==
-
-
-
-
 int main(void) {
-	int n ;
+int n ;
 scanf("%d",&n);
 printf("%d  est le triple de %d\n",triple(n),n);
 return 0;
