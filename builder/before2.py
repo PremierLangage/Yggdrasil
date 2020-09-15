@@ -49,7 +49,7 @@ if __name__ == "__main__":
         else:# on prend la première colone le fichier n'a pas de header
             with open("data.csv","r") as csvfile:
                 reader = csv.reader(csvfile)
-                dic['sortedlist']=[ row for row in reader]
+                dic['sortedlist']=[ row for row in reader[1:] if row !=[]]
     
     code = "\n".join([dic.get('headerbefore', ""), dic.get('before', ""), dic.get('footerbefore', "")])
 
