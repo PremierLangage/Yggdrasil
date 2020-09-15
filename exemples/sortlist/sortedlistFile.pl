@@ -17,9 +17,9 @@ with open("data.csv","r") as csvfile:
     reader = csv.DictReader(csvfile)
     # Lecture de la column dans l'ordre du fichier
     lue = [ row[column] for row in reader] 
-# ordered sample from file 
-lr=random.sample(range(len(lue)),nbsample)    
-sortedlist=[ lue[i] for i in sorted(lr) ]
+    # ordered sample from file 
+    lr=random.sample(range(len(lue)),nbsample)    
+    sortedlist=[ lue[i]  for i in sorted(lr) ]
 
 ==
 
