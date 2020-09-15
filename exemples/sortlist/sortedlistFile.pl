@@ -4,18 +4,17 @@ extends = /model/basic/sortlist.pl
 column=noms # Choix de la columns 
 
 text==
-En utilisnt Drag and Drop, rangez les valeurs dans l'ordre.
+En utilisant Drag and Drop, rangez les valeurs dans l'ordre.
 ==
 
 before==
 import csv
+import random
 delimiter=",;:" if "delimiter" not in globals() else delimiter 
 nbsample = 4 if "nbsample" not in globals() else int(nbsample)
 
 with open("data.csv","r") as csvfile:
-    dialect = csv.Sniffer().sniff(csvfile.read(1024),delimiters=delimiter)
-    csvfile.seek(0)
-    reader = csv.DicReader(csvfile, dialect)
+    reader = csv.DictReader(csvfile)
     # Lecture de la column dans l'ordre du fichier
     lue = [ row[column] for row in reader] 
 # ordered sample from file 
