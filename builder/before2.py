@@ -63,7 +63,7 @@ if __name__ == "__main__":
     if 'scenario' in dic['settings']:
         dic['internals']['buttons'] = ["submit","reroll"]
     else:
-        dic['internals']['buttons'] = ["submit","reroll"]
+        dic['internals']['buttons'] = ["submit"]
 
     dic['internals']['attempt'] = 1
 
