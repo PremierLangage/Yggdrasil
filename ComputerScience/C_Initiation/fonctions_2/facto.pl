@@ -4,14 +4,16 @@ tag=function
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
+fixme= IL faudrais test le temps de calcul ... 
+
 
 text==  
- On appelle nombre factoriel un enier $%n%$ pou lequel il existe un entier $%p%$ tel que $%\fact(p)=n%$<br>
+ On appelle nombre factoriel un entier $%n%$ pou lequel il existe un entier $%p%$ tel que $%\fact(p)=n%$<br>
 Ecrire une fonction `est_factoriel` qui reçoit un  entier et  renvoie  s'il est factoriel et 0 sinon.
 ==
 
 editor.code==
-# Votre code svp
+# Votre code 
 
 ==
 
