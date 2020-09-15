@@ -23,7 +23,11 @@ except ModuleNotFoundError:
 
 
 if __name__ == "__main__":
-    
+    if len(sys.argv) < 3:
+        msg = ("Sandbox did not call builder properly:\n"
+                +"Usage: python3 builder.py [input_json] [output_json]")
+        print(msg, file=sys.stderr)
+        sys.exit(1)
     # JSON context is loaded
     with open(sys.argv[1], "r") as f:
         dic = json.load(f)
@@ -71,6 +75,7 @@ if __name__ == "__main__":
         json.dump(dic, f, cls=JSONEncoder)
 
     sys.exit(0)
+
 
 
 
