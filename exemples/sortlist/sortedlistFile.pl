@@ -9,7 +9,7 @@ En utilisnt Drag and Drop, rangez les valeurs dans l'ordre.
 
 before==
 import csv
-delimiter="," if "delimiter" not in globals() else delimiter 
+delimiter=",;:" if "delimiter" not in globals() else delimiter 
 nbsample = 4 if "nbsample" not in globals() else int(nbsample)
 
 with open("data.csv","r") as csvfile:
