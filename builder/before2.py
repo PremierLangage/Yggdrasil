@@ -38,14 +38,12 @@ if __name__ == "__main__":
     # the content of namespace is added to dic
     dic = {**namespace, **dic}
     
-    import csv
-    with open("data.csv","r") as csvfile:
-        reader = csv.DictReader(csvfile)
-        # Lecture de la column dans l'ordre du fichier
-        lue = [ row[dic['column']] for row in reader]
-        sortedlist= "\n".join(lue)
-
-    dic['sortedlist']=sortedlist
+    if os.path.exist("data.csv"):
+        import csv
+        with open("data.csv","r") as csvfile:
+            reader = csv.DictReader(csvfile)
+            # Lecture de la column dans l'ordre du fichier
+            dic['sortedlist']=[ row[dic['column']] for row in reader]
 
     code = "\n".join([dic.get('headerbefore', ""), dic.get('before', ""), dic.get('footerbefore', "")])
 
