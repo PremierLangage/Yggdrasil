@@ -1,0 +1,87 @@
+
+
+
+title= Nommage Variables Input Affectation Conditionnelles 
+
+introduction==
+
+Bonjour,
+ceci est votre première feuille de TP à faire en autonomie.
+
+Tous les exercices doivent être verts une fois que vous avez fini !
+
+Certains exercices peuvent être fait plusieurs fois, si vous en avez besoin c'est une bonne idée de les faire plusieurs fois.
+
+
+A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant,
+ mais vous pouvez naviguer avec le menu de gauche.
+
+Si un exercice vous semble faux vous pouvez demander de l'aide sur le forum d'entraide et passer à l'exercice suivant. 
+
+    Votre cours est votre première source d'information ....
+
+l'équipe.
+
+
+
+==
+
+
+@ /ComputerScience/python/concept/variable/variable001.pl
+@ /ComputerScience/python/concept/variable/variable002.pl
+@ /ComputerScience/python/concept/variable/variable003.pl
+
+# @ /ComputerScience/python/concept/input/ageCapitaine.pl
+
+@ /ComputerScience/python/concept/input/aleaagecap.pl
+
+@ occure.pl
+
+@ /ComputerScience/python/concept/input/plusmoins.pl
+
+@ expressions/convertirMPG.pl
+
+
+# Validation de l'identification des noms de variables 
+# @ Nommage_variable.pl # celui la est pourri
+#@ /template/checkbox_example.pl 
+#  print 
+@ rectanglefixe.pl
+
+# input print
+@ rectangle.pl
+
+# input print
+@ rectanglediagonale.pl
+
+@ echange_deux_variables.pl
+
+
+
+#@ interchanger_deux_variables.pl
+
+@ expressionaleatoires.pl
+
+@ initialisation.pl
+@ operateursbooleens.pl
+@ tri_trois_valeurs.pl
+@ priority.pl
+@ bascule.pl
+@ trinome.pl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
