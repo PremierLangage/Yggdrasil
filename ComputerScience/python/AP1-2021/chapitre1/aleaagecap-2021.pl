@@ -29,7 +29,7 @@ Ecrivez un programme utilisant une unique variable **age** qui lit cette informa
 
 	Le capitaine a __ ans. Dans {{X}} ans il aura ___ ans.
 
-Puis, sachant que dans {{Y}} ans, le perroquet aura {{Z}} de l’âge du capitaine (arrondi à l'année inférieure) quel est l'âge actuel du perroquet ? Le programme doit affiche:
+Puis, sachant que dans {{Y}} ans, le perroquet aura {{Z}} de l’âge du capitaine (arrondi à l'année inférieure) quel est l'âge actuel du perroquet ? Le programme doit afficher:
 
 	Le perroquet du capitaine a __ ans.
 
