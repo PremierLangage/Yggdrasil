@@ -7,6 +7,7 @@ builder =@ /builder/before.py
 nbechec%0
 
 before== #|python|
+import sys
 import random
 essai = 4
 N = 10
@@ -21,6 +22,8 @@ for i in range(N):
     inp = Input()
     globals()[f"input{i}"] = inp
     inputs.append(inp)
+    print(inputs, file=sys.stderr)
+raise Exception()
 ==
 
 evaluator== #|python|
@@ -71,6 +74,7 @@ Nombre d'essais : {{essai}}
 
 </ul>
 ==
+
 
 
 
