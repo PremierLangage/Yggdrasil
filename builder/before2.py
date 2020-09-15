@@ -28,6 +28,8 @@ if __name__ == "__main__":
                 +"Usage: python3 builder.py [input_json] [output_json]")
         print(msg, file=sys.stderr)
         sys.exit(1)
+
+    outputfilename = sys.argv[2]
     # JSON context is loaded
     with open(sys.argv[1], "r") as f:
         dic = json.load(f)
@@ -71,10 +73,11 @@ if __name__ == "__main__":
         if key in dic:
             dic[key] = Env.from_string(dic[key]).render(dic)
 
-    with open(sys.argv[2], "w+") as f:
+    with open(outputfilename, "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
 
     sys.exit(0)
+
 
 
 
