@@ -18,13 +18,26 @@ Idée: maîtriser déclaration/affectation, éventuellement se rendre compte de 
 
 # Exercice 2
 
-Création de trois variables pim pam pom, et affectation de valeurs précises (entiers) à ces variables.
+Création d'une variable X, et affectation de valeur précise (chaîne) à cette variable.
 
 Idée: maîtriser déclaration/affectation, éventuellement se rendre compte de l'importance de la casse
 
 **Changements:** 
-    - correction d'une typo
+    - correction typo
     - puisque qu'il y a trois exercices du même type, j'ai rajouté (2) dans le titre
+    - ajout du _tag_ affectation
+
+**Remarques/commentaires:**
+
+# Exercice 3
+
+Création de trois variables jour mois annee, et affectation de valeurs précises (entiers) à ces variables.
+
+Idée: maîtriser déclaration/affectation, éventuellement se rendre compte de l'importance de la casse
+
+**Changements:** 
+    - correction typo
+    - puisque qu'il y a trois exercices du même type, j'ai rajouté (3) dans le titre
     - ajout du _tag_ affectation
 
 **Remarques/commentaires:**
