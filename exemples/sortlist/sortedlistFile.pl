@@ -19,7 +19,7 @@ with open("data.csv","r") as csvfile:
     lue = [ row[column] for row in reader] 
 # ordered sample from file 
 lr=random.sample(range(len(lue)),nbsample)    
-sortlist=[ lue[i] for i in sorted(lr) ]
+sortedlist=[ lue[i] for i in sorted(lr) ]
 
 ==
 
