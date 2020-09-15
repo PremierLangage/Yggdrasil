@@ -11,7 +11,7 @@ text==
 
 Vérifions que vous savez écrire une fonction C. 
 
-
+Ecrire une fonction **triple** qui retourne le triple de son paramêtre.
 
 ==
 
@@ -32,13 +32,9 @@ codebefore==
 
 solution==
 
-int est_factoriel( int n){
-    int nb=1,f=1;
-    while (f<n){
-        nb++;
-        f*=nb;
-    }
-	return n==f;
+int triple( int n){
+    
+	return n*3;
 }
 
 
@@ -53,11 +49,7 @@ codeafter==
 int main(void) {
 	int n ;
 scanf("%d",&n);
-if (est_factoriel(n)){
-	printf("%d  est factoriel\n",n);
-    }
-else
-	printf("%d  n'est pas factoriel\n",n);
+printf("%d  est le triple de %d\n",triple(n),n);
 return 0;
 }
 ==
@@ -65,10 +57,8 @@ return 0;
 
 tests==
 [ ["Basique", "", "10"],
-  ["impssible", "", "-1"],
-  ["fatoriel", "", "6"],
-  ["Aléatoire", "",str(random.randint(1, 20))],
-  ["Aléatoire", "", str(random.choice([720, 40,3628800,40320]))] 
+  ["Nul", "", "0"],
+  ["Aléatoire", "",str(random.randint(10, 202))],
   ]
 ==
 
