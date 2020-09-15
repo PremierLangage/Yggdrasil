@@ -2,7 +2,9 @@
 extends=stdsandboxC.pl 
 
 # fichier contenant une solution 
-# 
+# doit contenir deux lignes /* cut */ 
+# pour savoir quelle partie est avant 
+# quelle partie est après 
 
 @ source.c [source.c] 
 
@@ -16,5 +18,5 @@ except :
     import sys
     print("Le fichier source.c ne contient pas les deux lignes /* cut */ ", file=sys.err)
     exit(-1)
-    
+
 ==
