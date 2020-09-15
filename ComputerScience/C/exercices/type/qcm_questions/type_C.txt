@@ -53,7 +53,7 @@
 - double
 
 
-** Si `a` est un `unsigned int`, `b` un `double` et `c` un `long int`, quel est le type de l'expression `a + b + c` ?
+** Si `a` est un `unsigned int`, si `b` un `double` et si `c` un `long int`, quel sera le type de l'expression `a + b + c` ?
 + `double`
 - `unsigned int`
 - `long int`
