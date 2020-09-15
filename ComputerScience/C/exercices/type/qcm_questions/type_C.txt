@@ -43,7 +43,7 @@
 - 2 puissance 8
 
 
-** Parmi les types suivants, lesquels modélisent des nombres entiers ?
+** Parmi les types suivants, lesquels modélisent des nombres entiers uniquement ?
 + signed int
 + unsigned long int
 + char
