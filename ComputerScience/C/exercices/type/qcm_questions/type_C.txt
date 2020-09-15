@@ -51,3 +51,10 @@
 + signed char
 - float
 - double
+
+
+** Si `a` est un `unsigned int`, `b` un `double` et `c` un `long int`, quel est le type de l'expression `a + b + c` ?
++ `double`
+- `unsigned int`
+- `long int`
+- `unsigned double`
