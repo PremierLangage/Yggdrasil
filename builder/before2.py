@@ -49,6 +49,7 @@ if __name__ == "__main__":
             with open("data.csv","r") as csvfile:
                 reader = csv.reader(csvfile)
                  dic['sortedlist']=[ row[0] for row in reader]
+    
     code = "\n".join([dic.get('headerbefore', ""), dic.get('before', ""), dic.get('footerbefore', "")])
 
     # execute the script in before key with dic as globals
