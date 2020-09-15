@@ -38,14 +38,15 @@ if __name__ == "__main__":
     # the content of namespace is added to dic
     dic = {**namespace, **dic}
     
+    # Si il y a un fichier data.csv lecture dans la variable sortedlist des valeurs 
     if os.path.exists("data.csv"):
         import csv
-        if "column" in dic:
+        if "column" in dic: # Si l'on connait la colmun
             with open("data.csv","r") as csvfile:
                 reader = csv.DictReader(csvfile)
                 # Lecture de la column dans l'ordre du fichier
                 dic['sortedlist']=[ row[dic['column']] for row in reader]
-        else:
+        else:# on prend la première colone le fichier n'a pas de header
             with open("data.csv","r") as csvfile:
                 reader = csv.reader(csvfile)
                  dic['sortedlist']=[ row[0] for row in reader]
