@@ -53,6 +53,15 @@ if __name__ == "__main__":
     if 'style' in dic:
         dic['extracss'] = "<style> %s </style>" % "\n".join(reversed(list(dic['style'].values())))
 
+    import csv
+    with open("truc.csv","r") as csvfile:
+        reader = csv.DictReader(csvfile)
+        # Lecture de la column dans l'ordre du fichier
+        lue = [ row[column] for row in reader]
+        sortedlist= "\n".join(lue)+""
+
+
+
     # HACK for components in lists
     aux_component(dic)
 
