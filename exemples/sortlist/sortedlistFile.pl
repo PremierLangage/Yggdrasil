@@ -19,8 +19,8 @@ with open("data.csv","r") as csvfile:
     # Lecture de la column dans l'ordre du fichier
     lue = [ row[column] for row in reader] 
 # ordered sample from file 
-    
-sortlist=[ lue[i] for i in sorted(random.sample(range(len(lue)),nbsample) ]
+lr=random.sample(range(len(lue)),nbsample)    
+sortlist=[ lue[i] for i in sorted(lr) ]
 
 ==
 
