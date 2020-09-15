@@ -39,7 +39,7 @@ if __name__ == "__main__":
     dic = {**namespace, **dic}
     
     import csv
-    with open("truc.csv","r") as csvfile:
+    with open("data.csv","r") as csvfile:
         reader = csv.DictReader(csvfile)
         # Lecture de la column dans l'ordre du fichier
         lue = [ row[dic['column']] for row in reader]
