@@ -19,7 +19,8 @@ else:
 if nbsample == 0:
     nbsample = len(lst)
 
-sortlist.setdata_from_list(rd.sample(lst, nbsample))
+samplelist= [ lst[i] for i in  sorted(rd.sample(range(len(lst)), nbsample))]
+sortlist.setdata_from_list(samplelist)
 ==
 
 sortlist =: SortList
@@ -36,4 +37,5 @@ score = sortlist.eval()
 ==
 
 settings.feedback = lightscore
+
 
