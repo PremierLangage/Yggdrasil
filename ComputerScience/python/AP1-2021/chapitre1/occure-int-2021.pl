@@ -1,7 +1,5 @@
-
-
-author=Marc  & Dominique 
-title= Lecture d'un caractère
+author=WF
+title=Distinguer le six !
 
 tag=input|print|variable|if|elif|else|conditionnelles
 
@@ -16,7 +14,6 @@ if lettre in "{{MOT}}":
 	print(lettre,"apparait dans {{MOT}}")
 else:
   	print(lettre,"n'apparait pas dans {{MOT}}")
-
 ==
 
 code==
