@@ -33,28 +33,14 @@ une unique variable **nombre** qui lit un nombre du clavier et qui le compare av
 - Si **nombre** est plus grand que 6, votre programme doit afficher "Trop Grand !".
 ==
 
-before==
-
-import random 
-
-lst=["aeiouy","abcxyz","cassepieds","=+$-*:","Python"]
-MOT= random.choice(lst)
-a=MOT
-
-import jinja2
-soluce= jinja2.Template(soluce).render(globals())
-code=  jinja2.Template(code).render(globals())
-==
-
-
 plsoluce0==
-Test 1 |a
-Test 2 |i
+Test 1 |10
+Test 2 |6
 ==
 
 plsoluce1==
-Test 3 |n
-Test 4 |+
+Test 3 |6
+Test 4 |-2
 ==
 
 
