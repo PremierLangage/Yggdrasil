@@ -29,16 +29,16 @@ form==
 
 evaluator==
 textslected=''
+predicat=lambda s:'o' in s
+bad = 0
 for e in selectable.selections:
     textslected +=  e['content']
-    e['css'] = "error-state"
-    if e['index'] in indices:
+    if predicat(e['content']):
         e['css'] = "success-state"
-        indices = [i for i in indices if i != e['index']]
     else:
-        indices.append(e['css'])
+        bad=bad+1
 
-if len(indices) == 0:
+if bad == 0:
     score = 100
     msg = '<span class="success-state animated pulse infinite">Good answer<span>'
 else:
