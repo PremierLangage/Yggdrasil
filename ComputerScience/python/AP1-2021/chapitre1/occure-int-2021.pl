@@ -10,28 +10,25 @@ extends=/ComputerScience/python/template/soluce.pl
 
 soluce==  
 n=int(input())
-if lettre in "{{MOT}}":
-	print(lettre,"apparait dans {{MOT}}")
+if n > 6:
+	print("Trop grand !")
+elif n < 6:
+    print("Trop petit !")
 else:
-  	print(lettre,"n'apparait pas dans {{MOT}}")
+  	print("Tout juste !")
 ==
 
-code==
-# lecture au clavier, affectation
-lettre=input()
-# Textes a utiliser pour faire l'affichage 
-# ?? "apparait dans {{MOT}}"
-# ?? "n'apparait pas dans {{MOT}}" 
-
-
+code==# lecture au clavier, affectation
+nombre=int(input())
 ==
 
 
 
 text==
 Ecrivez un programme utilisant des **if elif else** emboités et 
-une unique variable **lettre** qui lit un seul caractère au clavier 
-et affiche s'il appartient ou non à la suite : "{{MOT}}"
+une unique variable **nombre** qui lit un nombre du clavier et qui le compare avec 6.
+
+Si **nombre** est plus grand que 6, ton programme
 
 ==
 
