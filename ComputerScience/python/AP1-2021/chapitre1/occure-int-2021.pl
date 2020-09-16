@@ -27,7 +27,7 @@ nombre=int(input())
 
 
 text==
-Ecrivez un programme utilisant des **if elif else** emboités et 
+Ecrivez un programme utilisant un **if elif else** et 
 une unique variable **nombre** qui lit un nombre du clavier et qui le compare avec 6.
 
 - Si **nombre** est plus petit que 6, votre programme doit afficher "Trop petit !".
@@ -47,5 +47,6 @@ plsoluce1==
 Test 3 |6
 Test 4 |-2
 ==
+
 
 
