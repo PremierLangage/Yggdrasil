@@ -19,7 +19,7 @@ code==
 # lecture au clavier et transformation en entier puis affectation
 age=int(input())
 # Le capitaine a __ ans. Dans {{X}} ans il aura __ ans.
-# Le perroquet du capitaine à __ ans.
+# Le perroquet du capitaine a __ ans.
 ==
 
 
@@ -55,6 +55,7 @@ Test 1 |33
 Test 2 |66
 Test 4 |100000
 ==
+
 
 
 
