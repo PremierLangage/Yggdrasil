@@ -33,6 +33,9 @@ une unique variable **nombre** qui lit un nombre du clavier et qui le compare av
 - Si **nombre** est plus grand que 6, votre programme doit afficher "Trop Grand !".
 ==
 
+before==
+==
+
 plsoluce0==
 Test 1 |10
 Test 2 |6
