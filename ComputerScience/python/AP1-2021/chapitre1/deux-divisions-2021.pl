@@ -28,22 +28,37 @@ m=int(input())
 
 
 text==
-Ecrivez un programme utilisant des **if elif else** 
+Ecrivez un programme qui prend deux entiers **n** et **m** et qui calculer le résultat de **n** divisé par **m**, 
+et aussi la division euclidienne de **n** par **m**. Si **m** est égal à 0, alors votre programme doit afficher "Division par 0".
 
-- Si **nombre** est plus petit que 6, votre programme doit afficher "Trop petit !".
-- Si **nombre** est exactement 6, votre programme doit afficher "Tout juste !".
-- Si **nombre** est plus grand que 6, votre programme doit afficher "Trop Grand !".
+**Exemple :**
+
+Si **n**=10 et **m**=4, alors votre programme doit afficher
+
+10 / 4 = 2.5
+10 = 4 * 2 + 2
+
+Si **n**=1 et **m**=4, alors votre programme doit afficher
+
+1 / 4 = 0.25
+1 = 4 * 0 + 1
+
+Si **n**=9 et **m**=0, alors votre programme doit afficher
+
+Division par 0
 ==
 
 before==
 ==
 
 plsoluce0==
-Test 1 |10
-Test 2 |6
+Test 1 |10 4
+Test 2 |1 4
+Test 3 |-1 5
+Test 4 |100 3
 ==
 
 plsoluce1==
-Test 3 |6
-Test 4 |-2
+Test 1 |10 0
+Test 2 |0 0
 ==
