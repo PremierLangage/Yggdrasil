@@ -18,9 +18,9 @@ before==
 selectable.separator = ' '
 
 # Propriété du mot 
-lpredicat=['lambda s:"o" in s','lambda s: in ["fox","dog"]','lambda s: in ["red","brown"]','lambda s: in ["red","brown","lazy","quick"]']
+lpredicat=['lambda s:"o" in s','lambda s: s in ["fox","dog"]','lambda s:s in ["red","brown"]','lambda s:s in ["red","brown","lazy","quick"]']
 ltext=['Select the words containing **o**','Select the names of animals in the sentence ','Select the names of colors in the sentence ',' Select the adjectives in the sentence']
-
+import random
 indice=random.randint(0,len(lpredicat)-1)
 predicat=lpredicat[indice]
 text=ltext[indice]
