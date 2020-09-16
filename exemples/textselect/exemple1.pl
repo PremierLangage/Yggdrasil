@@ -27,13 +27,15 @@ form==
 {{ selectable|component}}
 ==
 
-evaluator==
-textslected=''
 predicat=lambda s:'o' in s
+
+evaluator==
+textselected=''
+f=eval(predicat)
 bad = 0
 for e in selectable.selections:
-    textslected +=  e['content']
-    if predicat(e['content']):
+    textselected +=  e['content']+' '
+    if f(e['content']):
         e['css'] = "success-state"
     else:
         bad=bad+1
