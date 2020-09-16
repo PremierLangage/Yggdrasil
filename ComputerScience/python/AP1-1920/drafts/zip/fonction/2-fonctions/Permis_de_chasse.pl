@@ -100,7 +100,7 @@ Rien à payer
 0
 0
 0
-==Payer
+==
 
 mplsoluce1==
 2 amis
@@ -117,6 +117,7 @@ mplsoluce2==
 1
 0
 ==
+
 
 
 

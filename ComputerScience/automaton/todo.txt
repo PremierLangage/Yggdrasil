@@ -1,3 +1,0 @@
-* Automaton.py 
-    - replace greeny lib with https://pypi.org/project/FAdo/
-
