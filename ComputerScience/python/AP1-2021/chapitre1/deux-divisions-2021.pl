@@ -36,11 +36,13 @@ et aussi la division euclidienne de **n** par **m**. Si **m** est égal à 0, al
 Si **n**=10 et **m**=4, alors votre programme doit afficher
 
 10 / 4 = 2.5
+
 10 = 4 * 2 + 2
 
 Si **n**=1 et **m**=4, alors votre programme doit afficher
 
 1 / 4 = 0.25
+
 1 = 4 * 0 + 1
 
 Si **n**=9 et **m**=0, alors votre programme doit afficher
