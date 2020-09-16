@@ -70,6 +70,7 @@ Idée: première utilisation d'input et des possibilités de la fonction print (
     - correction typos et légère reformulation de la deuxième consigne
 
 **Remarques/commentaires:**
+    - J'ai ajouté le tag "type", parce qu'il y a la troncature qui montre la différence entre int et float. -- Wenjie Fang
 
 # Exercice 5
 
@@ -86,5 +87,5 @@ Idée: utiliser l'input, faire un jeu de tests conditionnels
 
 **Remarques/commentaires:**
 
-    - Je ne crois pas que les étudiants voient "char in string" dans la première séance. Je propose une version avec les entiers dans le fichier "occure-int-2021.pl"
+    - Je ne crois pas que les étudiants voient "char in string" dans la première séance. Je propose une version avec les entiers dans le fichier "occure-int-2021.pl" -- Wenjie Fang
 
