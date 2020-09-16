@@ -9,7 +9,7 @@ extends=/ComputerScience/python/template/soluce.pl
 @ /builder/before.py [builder.py]
 
 soluce==  
-lettre=input()
+n=int(input())
 if lettre in "{{MOT}}":
 	print(lettre,"apparait dans {{MOT}}")
 else:
@@ -58,3 +58,4 @@ plsoluce1==
 Test 3 |n
 Test 4 |+
 ==
+
