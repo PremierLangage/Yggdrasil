@@ -12,7 +12,7 @@ selectable.mode = word
 # le caractère séparateur devrait êêtre espace par défaut.
 
 # Propriété du mot 
-predicat=lambda s:'o' in s
+predicat=lambda s:"o" in s
 
 # text= Select the names of animals in the sentence 
 #predicat= lambda s: in ["fox","dog"]
@@ -61,6 +61,6 @@ else:
     score = 0
     msg = '<span class="error-state animated pulse infinite">Bad answer</span>'
 
-msg+= str(selectable)
+
 grade = (score, msg)
 ==
