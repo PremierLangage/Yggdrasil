@@ -1,4 +1,5 @@
-author=WF
+# Non-testé parce que PL ne semble pas marcher pour le moment...
+author=Wenjie Fang
 title=Distinguer le six !
 
 tag=input|print|variable|if|elif|else|conditionnelles
