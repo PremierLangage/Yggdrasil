@@ -29,9 +29,8 @@ Ecrivez un programme utilisant des **if elif else** emboités et
 une unique variable **nombre** qui lit un nombre du clavier et qui le compare avec 6.
 
 - Si **nombre** est plus petit que 6, votre programme doit afficher "Trop petit !".
-- Si **nombre** est exactement 6, votre programme doit afficher "Trop Grand !".
+- Si **nombre** est exactement 6, votre programme doit afficher "Tout juste !".
 - Si **nombre** est plus grand que 6, votre programme doit afficher "Trop Grand !".
-
 ==
 
 before==
@@ -57,4 +56,5 @@ plsoluce1==
 Test 3 |n
 Test 4 |+
 ==
+
 
