@@ -2,7 +2,7 @@
 author=Dominique Revuz 
 title= Lecture d'un entier
 
-tag=input|print|variable
+tag=input|print|variable|type
 
 extends=/ComputerScience/python/template/soluce.pl
  
@@ -55,6 +55,7 @@ Test 1 |33
 Test 2 |66
 Test 4 |100000
 ==
+
 
 
 
