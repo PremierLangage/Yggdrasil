@@ -18,7 +18,8 @@ else:
   	print("Tout juste !")
 ==
 
-code==# lecture au clavier, affectation
+code==
+# lecture au clavier, affectation
 nombre=int(input())
 ==
 
