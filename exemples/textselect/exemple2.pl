@@ -17,6 +17,9 @@ selectable.mode = word
 before==
 selectable.separator = ' '
 
+# FIXME cela devrait plustot ^^ttre ceomme cela 
+# pairs=[('Select the words containing **o**', 'lambda s:"o" in s')]
+# predicat,text= pairs[random.randint(0,len(pairs)-1)]
 # Propriété du mot 
 lpredicat=['lambda s:"o" in s','lambda s: s in ["fox","dog"]','lambda s:s in ["red","brown"]','lambda s:s in ["red","brown","lazy","quick"]']
 ltext=['Select the words containing **o**','Select the names of animals in the sentence ','Select the names of colors in the sentence ',' Select the adjectives in the sentence']
