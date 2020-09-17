@@ -43,9 +43,8 @@ l'équipe.
 
 
 # Validation de l'identification des noms de variables 
-# @ Nommage_variable.pl # celui la est pourri
-#@ /template/checkbox_example.pl 
-#  print 
+# @ Nommage_variable.pl
+
 @ rectanglefixe.pl
 
 # input print
