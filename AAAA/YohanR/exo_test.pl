@@ -9,7 +9,7 @@ extends=/ComputerScience/python/template/pltest.pl
 
 text==
 
-Créer un tableau de 
+Créer un tableau de nombre impair 
 
 ==
 
