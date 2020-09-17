@@ -19,7 +19,7 @@ l'attaquant.
 
 editor.height = 80
 
-soluce == 
+grader == 
 import random 
 random.seed(seed)
 defenseur = random.choice([1,2,3,4,5,6])
