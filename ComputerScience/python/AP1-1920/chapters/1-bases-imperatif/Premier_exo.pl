@@ -20,7 +20,7 @@ before== #|python|
 import random 
 random.seed(seed)
 dés = random.choice(["A","B","C"])
-faces = random.choice([1,2,3,4,5,6])
+face = random.choice([1,2,3,4,5,6])
 
 pltest0="""
 >>> "{}" in globals() # La variable {} est elle définie ?
