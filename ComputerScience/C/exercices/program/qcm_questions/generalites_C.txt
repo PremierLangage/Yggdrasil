@@ -24,7 +24,7 @@
 + On peut imbriquer les bloc les uns dans les autres.
 + Les instructions se terminent par le caractère **;**
 + Pour définir une fonction, on ouvre une accolade à la suite de son prototype.
-+ Quand on a plus d'une instruction, il faut mettre des accolades autour des blocs.
++ Quand on a plus d'une instruction, il faut mettre des accolades <br /> autour des blocs.
 
 
 ** Selectionner les lignes déclarant une variable entière C.
@@ -85,5 +85,6 @@
 - Un programme C ne peut pas utiliser plus de 1024 variables.
 - Un programme C exploite toujours exactement deux variables : *argc* et *argv*.
 - Certaines variables n'ont pas de type, ce dernier est déterminé par le compilateur.
+
 
 
