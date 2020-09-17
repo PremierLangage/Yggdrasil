@@ -7,7 +7,11 @@ builder =@ /builder/before.py
 
 
 selectable =: Text
-selectable.text = The quick brown fox jumps over the lazy red dog.
+selectable.text ==
+# The quick brown fox jumps over the lazy red dog. 
+
+## And the yellow animal.
+==
 selectable.mode = word
 # le caractère séparateur devrait êêtre espace par défaut.
 
@@ -64,3 +68,4 @@ else:
 
 grade = (score, msg)
 ==
+
