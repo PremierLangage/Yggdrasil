@@ -25,7 +25,9 @@ def verification(tableau):
         if elt % 2 != 0:
             return False
     return True
+
 verification(tableau)
+
 ==
 
 
