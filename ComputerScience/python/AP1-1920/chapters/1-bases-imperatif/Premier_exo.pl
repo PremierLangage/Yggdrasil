@@ -17,14 +17,17 @@ l'attaquant.
 
 
 grader == #|python|
+
 import random 
 random.seed(seed)
+
 def gagne_jeu_dé :
     defenseur = random.choice([1,2,3,4,5,6])
     attaquant = random.choice([1,2,3,4,5,6])
     if defenseur >= attaquant :
         print("Défenseur a gagné")
     print("Attaquant a gagné")
+    
 ==
 
 
