@@ -9,37 +9,24 @@ extends=/ComputerScience/python/template/pltest.pl
 
 text==
 
-Créer trois variables pim pam et pom contenant respectivement 1 2 et 3.
+Créer un tableau de chiffres impair
 
 ==
 
 code==
-pim,pam,pom=0,0,0
+tableau = []
 ==
 
 # comme ca cela se passera bien
 pltest==
->>> pim # Pim vaut un
-1
->>> "pam" in globals() #
-True
->>> pam
-2
->>> pom
-3
+>>> tableau # tableau contenant que des nombre impair
+def verification(tableau):
+    for elt in tableau:
+        if elt % 2 != 0:
+            return False
+    return True
+verification(tableau)
 ==
-
-pltest2==
->>> pim # Pim vaut un
-1
->>> "pam" in globals() #
-True
->>> pam
-2
->>> pom
-3
-==
-
 
 
 
