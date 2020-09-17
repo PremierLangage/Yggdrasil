@@ -87,4 +87,3 @@
 - Certaines variables n'ont pas de type, ce dernier est déterminé <br /> par le compilateur.
 
 
-
