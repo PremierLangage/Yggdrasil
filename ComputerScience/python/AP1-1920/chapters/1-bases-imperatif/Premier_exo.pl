@@ -22,7 +22,7 @@ editor.height = 80
 before== #|python| 
 import random 
 random.seed(seed)
-defenseur = random.choice(["A","B"])
+defenseur = random.choice([1,2,3,4,5,6])
 attaquant = random.choice([1,2,3,4,5,6])
 
 pltest0="""
