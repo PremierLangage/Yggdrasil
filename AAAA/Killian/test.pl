@@ -9,6 +9,7 @@ text = Initialise 2 variables a et b à 2 et 3 puis additionne les dans une vari
 
 pltest0==
 >>> a #Raté
+2
 >>> b #Encore raté
 3
 >>> c
