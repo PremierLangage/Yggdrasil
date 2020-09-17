@@ -9,7 +9,7 @@ text = Initialise 2 variables a et b à 2 et 3 puis additionne les dans une vari
 
 pltest==
 >>> a
-2
+2 #Super c'est reussi
 >>> b
 3
 >>> c
