@@ -25,7 +25,7 @@ faces = random.choice([1,2,3,4,5,6])
 pltest0="""
 >>> "{}" in globals() # La variable {} est elle définie ?
 True
-""".format(var, var)
+""".format(face,face)
 
 if type_var is None:
     pltest1="""
