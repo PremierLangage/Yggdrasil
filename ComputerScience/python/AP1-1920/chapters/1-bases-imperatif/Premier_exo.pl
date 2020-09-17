@@ -12,7 +12,7 @@ text==
 Ecrire un programme python qui lance deux dés succéssivement, le premier
 étant le défenseur et le second l'attaquant. Le défenseur gagnera si et 
 seulement si le nombre sorti est supérieur ou égal au nombre sorti par
-l'attaquant
+l'attaquant.
 ==
 
 
@@ -22,8 +22,8 @@ editor.height = 80
 before== #|python| 
 import random 
 random.seed(seed)
-dé = random.choice(["A","B"])
-face = random.choice([1,2,3,4,5,6])
+defenseur = random.choice(["A","B"])
+attaquant = random.choice([1,2,3,4,5,6])
 
 pltest0="""
 >>> "{}" in globals() # La variable {} est elle définie ?
