@@ -35,7 +35,7 @@ documentation==
     Le soleil tourtne autour de la terre 
     Les satellites de la lune sont rouges.
     1 est plus petit que 0
-    
+
     ==
     
     
@@ -68,7 +68,8 @@ grader=@qcm_evaluator.py
 
 @ /utils/sandboxio.py
 
-settings.allow_reroll=doit
+# settings.allow_reroll=doit
+
 
 
 
