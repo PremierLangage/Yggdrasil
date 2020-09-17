@@ -19,7 +19,7 @@ editor.height = 80
 before== #|python| 
 import random 
 random.seed(seed)
-dés = random.choice(["A","B","C"])
+dé = random.choice(["A","B","C"])
 face = random.choice([1,2,3,4,5,6])
 
 pltest0="""
