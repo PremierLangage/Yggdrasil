@@ -39,8 +39,8 @@
 
 ** Selectionner les déclarations justes.
 + Les fonctions d'un programme C peuvent s'appeler elle-même.
-+ Une fonction jamais utilisée peut être otée des sources pour donner le même programme.
-+ Une fonction C a toujours un type de retour, possiblement void pour signifier rien.
++ Une fonction jamais utilisée peut être otée des sources <br /> pour donner le même programme.
++ Une fonction C a toujours un type de retour, possiblement `void` <br /> pour signifier que la fonction ne retourne rien.
 - Deux fonctions peuvent porter le même nom si elles n'utilise pas les mêmes arguments.
 - Une fonction ne peut être appelée qu'une seule fois dans un programme.
 
