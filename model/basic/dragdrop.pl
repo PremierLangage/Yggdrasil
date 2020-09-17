@@ -1,4 +1,10 @@
-extends = /model/basic.pl
+extends = temp.pl
+
+@ /builder/before_v1.py [builder.py]
+@ /grader/evaluator2.py [grader.py]
+@ /utils/builderlib.py
+
+settings.maxattempt % 1
 
 title =
 
@@ -50,4 +56,5 @@ form ==
 {{ label|component }}
 {% endfor %}
 ==
+
 
