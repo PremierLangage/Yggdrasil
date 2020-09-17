@@ -20,11 +20,10 @@ tableau = []
 # comme ca cela se passera bien
 pltest==
 >>> def verification(tableau):
->>>    for elt in tableau:
->>>        if elt % 2 != 0:
->>>            return False
->>>    return True
-
+    for elt in tableau:
+        if elt % 2 != 0:
+            return False
+    return True
 >>> verification(tableau) == True
 
 ==
