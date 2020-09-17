@@ -13,9 +13,13 @@ from random import randint
 3
 >>> len(defenseur)
 2
->>> for i in range(0,100)
-    val = random_value()
-    if(val < 1 or val > 6)
+>>> def test_random():
+    for i in range(0,100):
+        val = random_value()
+        if val < 1 or val > 6:
+            return False
+    return True
+
 5
 ==
 
