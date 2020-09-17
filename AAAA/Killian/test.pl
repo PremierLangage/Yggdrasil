@@ -2,7 +2,7 @@ author = Killian Blanchard
 
 title = Premier Test
 
-@ ./utils/pltestgrader.py [grader.py]
+grader==#|python|
 
 form==
 {{ inputbox|component}}
