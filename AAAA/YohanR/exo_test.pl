@@ -19,14 +19,13 @@ tableau = []
 
 # comme ca cela se passera bien
 pltest==
->>> tableau # tableau contenant que des nombre impair
 >>> def verification(tableau):
 >>>    for elt in tableau:
 >>>        if elt % 2 != 0:
 >>>            return False
 >>>    return True
 
-verification(tableau) == True
+>>> verification(tableau) == True
 
 ==
 
