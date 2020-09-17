@@ -1,5 +1,7 @@
 author = Killian Blanchard
 
+extends = ../../templates/pltest.pl
+
 title = Premier Test
 
 text = Initialise 2 variables a et b à 2 et 3 puis additionne les dans une variables c
