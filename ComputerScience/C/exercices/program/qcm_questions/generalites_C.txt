@@ -28,13 +28,13 @@
 
 
 ** Selectionner les lignes déclarant une variable entière C.
-+ int i;
-+ int j;
-+ int string;
-- int 23;
-- char* "Paul";
-- float compteur;
-- float* entier;
++ `int i;`
++ `int j;`
++ `int string;`
+- `int 23;`
+- `char* "Paul";`
+- `float compteur;`
+- `float* entier;`
 
 
 ** Selectionner les déclarations justes.
