@@ -19,6 +19,8 @@ from random import randint
         if val < 1 or val > 6:
             return False
     return True
+>>> test_random()
+True
 
 5
 ==
