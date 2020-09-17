@@ -6,11 +6,11 @@
 text=
 form=
 
-@ slide.md
+@ slide.md [slides.md]
 
 title=Des slides pour vous  
 before==
-with open ("slide.md" , "r") as f:
+with open ("slides.md" , "r") as f:
     t=f.readlines()
 
 slides=("\n".join(t)).split("***\n")
@@ -41,4 +41,5 @@ background-size: contain;
 }
 </style>
 ==
+
 
