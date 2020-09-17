@@ -24,6 +24,9 @@ import random
 random.seed(seed)
 defenseur = random.choice([1,2,3,4,5,6])
 attaquant = random.choice([1,2,3,4,5,6])
+if defenseur >= attaquant :
+    print("Défenseur a gagné")
+print("Attaquant a gagné")
 
 pltest0="""
 >>> "{}" in globals() # La variable {} est elle définie ?
