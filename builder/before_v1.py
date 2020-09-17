@@ -32,16 +32,16 @@ if __name__ == "__main__":
     # add the custom namespace to the Python exercise dictionary
     dic = {**namespace, **dic}
     
-    if 'before' in dic:
+    code = "\n".join([dic.get('headerbefore', ""), dic.get('before', ""), dic.get('footerbefore', "")])
 
-        # execute the before script in the exercise dictionary
-        exec(dic['before'], dic)
-        
-        # clean the exercise dictionary from namespace elements
-        exec("", namespace)
-        for key in namespace:
-            if key in dic and dic[key] == namespace[key]:
-                del dic[key]
+    # execute the script with the exercise dictionary as globals
+    exec(code, dic)
+    
+    # clean the exercise dictionary from namespace elements
+    exec("", namespace)
+    for key in namespace:
+        if key in dic and dic[key] == namespace[key]:
+            del dic[key]
 
     # render some string values of the exercise dictionary with the custom Jinja environment
     jinja_keys = dic.get('jinja_keys', ['text', 'form', 'solution'])
@@ -55,4 +55,5 @@ if __name__ == "__main__":
         json.dump(dic, f, cls=JSONEncoder)
 
     sys.exit(0)
+
 
