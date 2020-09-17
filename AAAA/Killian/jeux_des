@@ -21,6 +21,11 @@ from random import randint
     return True
 >>> test_random()
 True
-
+>>> fight([3,4,5], [2,2])
+L'attaquand a gagné !
+>>> fight([1,2,3], [3,4])
+Le défenseur a gagné !
+>>> fight([1,1,3], [1,3])
+Personne n'a gagné...
 ==
 
