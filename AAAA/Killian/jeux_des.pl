@@ -5,7 +5,8 @@ title = Premier Test
 extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
 
-text== Initialiser une liste "attaquant" de longueur 3 
+text==
+Initialiser une liste "attaquant" de longueur 3 
 et une liste "defenseur" de longueur 2 qui possèdent 
 chacune des entiers aléatoire de 1 à 6, pour cela écrivez 
 une fonction random_value() qui renverra un aléatoire. 
