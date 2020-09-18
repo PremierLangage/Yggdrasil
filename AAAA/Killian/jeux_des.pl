@@ -9,10 +9,10 @@ text==
 Initialiser une liste "attaquant" de longueur 3 
 et une liste "defenseur" de longueur 2 qui possèdent 
 chacune des entiers aléatoire de 1 à 6, pour cela écrivez 
-une fonction random_value() qui renverra un aléatoire. 
-Puis écrire une fonction "fight" qui retournera 2
-si la liste "attaquand" possède le chiffre le plus grand des 2 listes, 
--2 si c'est la liste défenseur, 0 sinon.
+une fonction "random_value" qui renverra un aléatoire. 
+Puis écrire une fonction "fight" qui prend en argument les deux listes
+et qui retournera 2 si la liste "attaquand" possède le chiffre 
+le plus grand des 2 listes, -2 si c'est la liste défenseur, 0 sinon.
 ==
 
 pltest0==
