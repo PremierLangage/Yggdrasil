@@ -16,9 +16,7 @@ from random import randint
 ==
 
 pltest1==
->>> for i in range(0,100):
-    val = random_value()
-    val > 0 and val < 7
+>>> 0 < random_value() < 7
 True
 ==
 
