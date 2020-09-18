@@ -13,10 +13,6 @@ from random import randint
 3
 >>> len(defenseur)
 2
->>> for i in range(0,100):
-    val = random_value()
-    if val < 1 or val > 6:
-        False
 
 >>> fight([3,4,5], [2,2])
 L'attaquant a gagné !
