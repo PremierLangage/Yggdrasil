@@ -13,7 +13,9 @@ from random import randint
 3
 >>> len(defenseur)
 2
+==
 
+pltest1==
 >>> fight([3,4,5], [2,2])
 L'attaquant a gagné !
 >>> fight([1,2,3], [3,4])
