@@ -2,7 +2,7 @@ extends = /model/basic.pl
 
 headerbefore ==
 import random as rd
-from StringIO import StringIO
+from io import StringIO
 from csv import DictReader
 
 all_rows = None
