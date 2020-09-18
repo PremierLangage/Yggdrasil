@@ -12,7 +12,6 @@ Quel pays a pour capitale {{ capitale }} ?
 ==
 
 sol ==
-tt
 {{ pays }}
 ==
 
