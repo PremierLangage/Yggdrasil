@@ -7,6 +7,7 @@ Exemple 3
 ==
 
 text ==
+{{ pays }}
 Quel pays a pour capitale {{ capitale }} ?
 ==
 
