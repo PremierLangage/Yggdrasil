@@ -86,7 +86,10 @@ if __name__ == "__main__":
 
     dic['internals']['attempt'] = 1
 
-    for key in ['text', 'form', 'solution']:
+    # render some string values of the exercise dictionary with the custom Jinja environment
+    jinja_keys = dic.get('jinja_keys', ['text', 'form', 'solution'])
+
+    for key in jinja_keys:
         if key in dic:
             dic[key] = Env.from_string(dic[key]).render(dic)
 
@@ -94,6 +97,7 @@ if __name__ == "__main__":
         json.dump(dic, f, cls=JSONEncoder)
 
     sys.exit(0)
+
 
 
 
