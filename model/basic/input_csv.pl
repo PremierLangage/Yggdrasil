@@ -4,8 +4,8 @@ headerbefore ==
 import random as rd
 import DictReader from csv
 
-with open('data.csv',newline='') as file:
-    all_rows = list(DictReader(file,delimiter=','))
+with open('data.csv', newline='') as file:
+    all_rows = list(DictReader(file, delimiter=delimiter))
     
 row = rd.choice(all_rows)
 
