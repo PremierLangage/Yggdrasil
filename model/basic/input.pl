@@ -18,8 +18,8 @@ if 'data' in globals():
 
 if all_rows is not None:    
     row = rd.choice(all_rows)
-
-del all_rows
+    for key, value in row.items():
+        globals()[key] = value
 ==
 
 delimiter % ","
