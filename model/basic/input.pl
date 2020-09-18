@@ -40,7 +40,7 @@ if isinstance(sol, str):
         lstsol = sol.splitlines()
     else:
         lstsol = [sol]
-else:
+elif isinstance(sol, lst):
     lstsol = sol
 
 if input.value == lstsol[0]:
