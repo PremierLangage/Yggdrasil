@@ -24,7 +24,7 @@ if all_rows is not None:
 
 delimiter % ","
 
-jinja_keys % ["text", "form", "sol"]
+jinja_keys = ["text", "form", "sol"]
 
 input =: Input
 
@@ -42,7 +42,7 @@ if isinstance(sol, str):
         lstsol = [sol]
 elif isinstance(sol, lst):
     lstsol = sol
-feedback = str(lstsol)
+
 if input.value == lstsol[0]:
     score = 100
 else:
