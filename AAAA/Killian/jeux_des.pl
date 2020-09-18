@@ -33,5 +33,5 @@ editor.code==
 def random_value():
 
 def fight():
-    
+
 ==
