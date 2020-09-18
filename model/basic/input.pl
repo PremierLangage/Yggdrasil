@@ -1,5 +1,27 @@
 extends = /model/basic.pl
 
+headerbefore ==
+import random as rd
+from StringIO import StringIO
+from csv import DictReader
+
+all_rows = None
+
+try:
+    with open('data.csv', newline='') as file:
+        all_rows = list(DictReader(file, delimiter=delimiter))
+except:
+    pass
+
+if data in globals():
+     all_rows = list(DictReader(StringIO(data), delimiter=delimiter))
+
+if all_rows is not None:    
+    row = rd.choice(all_rows)
+
+del all_rows
+==
+
 input =: Input
 
 form ==
