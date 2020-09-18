@@ -12,7 +12,7 @@ Quel pays a pour capitale {{ capitale }} ?
 ==
 
 sol ==
-{{ pays }}
+ans
 ==
 
 feedback ==
