@@ -22,6 +22,8 @@ if all_rows is not None:
 del all_rows
 ==
 
+delimiter = ,
+
 input =: Input
 
 form ==
