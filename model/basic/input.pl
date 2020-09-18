@@ -24,6 +24,8 @@ if all_rows is not None:
 
 delimiter % ","
 
+jinja_keys % ["text", "form", "sol"])
+
 input =: Input
 
 form ==
