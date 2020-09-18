@@ -13,7 +13,7 @@ try:
 except:
     pass
 
-if data in globals():
+if 'data' in globals():
      all_rows = list(DictReader(StringIO(data), delimiter=delimiter))
 
 if all_rows is not None:    
