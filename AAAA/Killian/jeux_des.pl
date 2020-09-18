@@ -20,8 +20,6 @@ pltest1==
     val = random_value()
     val > 0 and val < 7
 True
-
-
 ==
 
 pltest2==
