@@ -26,6 +26,11 @@ from random import randint
 pltest1==
 >>> 0 < random_value() < 7
 True
+>>> for i in range(0,100):
+...     val = random_value()
+...     if val < 1 or val > 6:
+...         False
+
 ==
 
 pltest2==
