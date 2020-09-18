@@ -22,7 +22,7 @@ if all_rows is not None:
 del all_rows
 ==
 
-delimiter = ,
+delimiter % ","
 
 input =: Input
 
