@@ -16,6 +16,11 @@ from random import randint
 ==
 
 pltest1==
+
+
+==
+
+pltest2==
 >>> fight([3,4,5], [2,2])
 L'attaquant a gagné !
 >>> fight([1,2,3], [3,4])
