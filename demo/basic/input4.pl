@@ -15,3 +15,7 @@ sol ==
 {{ pays }}
 ==
 
+feedback ==
+{{lstsol}}
+==
+
