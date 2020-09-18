@@ -8,6 +8,7 @@ Exemple 3
 
 text ==
 {{ pays }}
+{{sol}}
 Quel pays a pour capitale {{ capitale }} ?
 ==
 
