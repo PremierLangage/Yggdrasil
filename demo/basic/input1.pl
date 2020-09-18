@@ -4,7 +4,6 @@ title ==
 Exemple 1
 ==
 
-
 text ==
 Quelle est la capitale de la France ?
 ==
