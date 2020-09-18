@@ -43,7 +43,7 @@ if isinstance(sol, str):
 else:
     lstsol = sol
 
-if any([input.value == item for item in lstsol]):
+if input.value == lstsol[0]:
     score = 100
 else:
     score = 0
