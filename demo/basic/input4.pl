@@ -7,7 +7,7 @@ Exemple 2
 ==
 
 text ==
-Quel pays a pour capitale {{ row[capitale] }} ?
+Quel pays a pour capitale {{ row.capitale }} ?
 ==
 
 sol ==
