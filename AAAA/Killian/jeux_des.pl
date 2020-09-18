@@ -29,4 +29,8 @@ Le défenseur a gagné !
 Personne n'a gagné...
 ==
 
+editor.code==
+def random_value():
 
+def fight():
+==
