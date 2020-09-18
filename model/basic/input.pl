@@ -28,8 +28,6 @@ sol = Env.from_string(sol).render(globals())
 
 delimiter % ","
 
-jinja_keys % ["text", "form", "sol"]
-
 input =: Input
 
 form ==
