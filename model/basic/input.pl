@@ -42,7 +42,7 @@ if isinstance(sol, str):
         lstsol = [sol]
 elif isinstance(sol, lst):
     lstsol = sol
-
+feedback = str(lstsol)
 if input.value == lstsol[0]:
     score = 100
 else:
