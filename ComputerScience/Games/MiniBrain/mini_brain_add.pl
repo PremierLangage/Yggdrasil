@@ -28,9 +28,9 @@ from random import randint
 
 val1 = randint(-50, 100)
 val2 = randint(-50, 100)
-a = randint(2, 2+5)
-b = randint(a, a+5)
-c = randint(b, b+5)
+a = randint(6, 11)
+b = randint(a+1, a+6)
+c = randint(b+1, b+6)
 
 minibrain_action_before=[ ['test simple aléatoire', 'st '+str(val1)+' $'+str(a)+'\nst '+str(val2)+' $'+str(b)] ]
 
