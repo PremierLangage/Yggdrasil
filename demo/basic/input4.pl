@@ -16,6 +16,6 @@ sol ==
 ==
 
 feedback ==
-{{lstsol}}
+{{pays}}
 ==
 
