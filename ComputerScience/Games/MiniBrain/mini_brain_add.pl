@@ -34,7 +34,7 @@ c = randint(b+1, b+6)
 
 minibrain_action_before="[ ['test simple aléatoire', 'st "+str(val1)+" $"+str(a)+"\nst "+str(val2)+" $"+str(b)+"] ]"
 
-minibrain_check_after = '[ [(c, val1+val2)] ]'
+minibrain_check_after = "[ [(c, "+str(val1+val2)+")] ]"
 
 ==
 
