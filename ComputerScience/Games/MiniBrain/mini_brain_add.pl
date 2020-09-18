@@ -26,16 +26,18 @@ text += extra_doc
 
 from random import randint
 
-val1 = randint(-50, 100)
-val2 = randint(-50, 100)
-a = randint(6, 11)
-b = randint(a+1, a+6)
-c = randint(b+1, b+6)
-
-minibrain_action_before="[ ['test simple aléatoire', 'st "+str(val1)+" $"+str(a)+"\\nst "+str(val2)+" $"+str(b)+"'] ]"
-
-minibrain_check_after = "[ [(c, "+str(val1+val2)+")] ]"
-
+minibrain_action_before="[ "
+minibrain_check_after="[ "
+for i in range(5):
+    val1 = randint(-50, 100)
+    val2 = randint(-50, 100)
+    a = randint(6, 11)
+    b = randint(a+1, a+6)
+    c = randint(b+1, b+6)
+    minibrain_action_before+="['test simple aléatoire', 'st "+str(val1)+" $"+str(a)+"\\nst "+str(val2)+" $"+str(b)+"'], "
+    minibrain_check_after+="[(c, "+str(val1+val2)+")], "
+minibrain_check_after+="]"
+minibrain_action_before+="]"
 ==
 
 text==
