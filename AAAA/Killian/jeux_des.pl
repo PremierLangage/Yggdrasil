@@ -13,14 +13,11 @@ from random import randint
 3
 >>> len(defenseur)
 2
->>> def test_random():
-    for i in range(0,100):
-        val = random_value()
-        if val < 1 or val > 6:
-            return False
-    return True
->>> test_random()
-True
+>>> for i in range(0,100):
+    val = random_value()
+    if val < 1 or val > 6:
+        False
+
 >>> fight([3,4,5], [2,2])
 L'attaquand a gagné !
 >>> fight([1,2,3], [3,4])
