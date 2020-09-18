@@ -43,7 +43,7 @@ if isinstance(sol, str):
 else:
     lstsol = sol
 
-if any([input.value.casefold() == item.casefold() for item in lstsol]):
+if any([input.value.lower() == item.lower() for item in lstsol]):
     score = 100
 else:
     score = 0
