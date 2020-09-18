@@ -20,6 +20,10 @@ if all_rows is not None:
     row = rd.choice(all_rows)
     for key, value in row.items():
         globals()[key] = value
+
+from jinja2 import Environment, BaseLoader
+Env = Environment(loader=BaseLoader())
+sol = Env.from_string(sol).render(globals())
 ==
 
 delimiter % ","
