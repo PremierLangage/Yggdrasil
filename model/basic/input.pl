@@ -47,4 +47,6 @@ if any([input.value.casefold() == item.casefold() for item in lstsol]):
     score = 100
 else:
     score = 0
+
+feedback = str(lstsol)+input.value
 ==
