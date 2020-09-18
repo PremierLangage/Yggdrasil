@@ -47,6 +47,8 @@ mémoire {{ a }} et {{ b }}. Une fois calculé, le résultat de cette addition d
 ==
 
 editor.code ==
-ld $10 ...
+ld $ a
+add $
+st a $
 ==
 
