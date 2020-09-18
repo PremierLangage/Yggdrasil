@@ -29,6 +29,7 @@ pltest1==
 ...     val = random_value()
 ...     if val < 1 or val > 6:
 ...         False
+...         break
 
 ==
 
