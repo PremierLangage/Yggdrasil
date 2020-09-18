@@ -573,7 +573,92 @@ class MiniBrainUAL():
         # cycles costs
         self._cpu_cycles += 2
 
+    def div(self, value):
+        """
+        Compute an integer quotient inside the CPU `self`.
 
+        EXAMPLES::
+
+        >>> UAL = MiniBrainUAL()
+        >>> UAL._accumulator = 14
+        >>> UAL.div(2)
+        >>> UAL._accumulator
+        7
+        >>> UAL._flag
+        True
+        >>> UAL.div(3)
+        >>> UAL._accumulator
+        2
+        >>> UAL._flag
+        False
+        """
+        # flag managment : put up the flag if the division is exact !
+        if self._accumulator % value == 0:
+            self.set_flag_up()
+        else:
+            self.set_flag_down()
+        # arithmetic resolution
+        self._accumulator = scale_16_bits_a2(self._accumulator // value)
+        # cycles costs
+        self._cpu_cycles += 2
+
+    def mod(self, value):
+        """
+        Compute an integer quotient inside the CPU `self`.
+
+        EXAMPLES::
+
+        >>> UAL = MiniBrainUAL()
+        >>> UAL._accumulator = 14
+        >>> UAL.mod(5)
+        >>> UAL._accumulator
+        4
+        >>> UAL._flag
+        False
+        >>> UAL.mod(2)
+        >>> UAL._accumulator
+        0
+        >>> UAL._flag
+        True
+        """
+        # flag managment : put up the flag if the remainder is zero !
+        if self._accumulator % value == 0:
+            self.set_flag_up()
+        else:
+            self.set_flag_down()
+        # arithmetic resolution
+        self._accumulator = scale_16_bits_a2(self._accumulator % value)
+        # cycles costs
+        self._cpu_cycles += 2
+
+    def cmp(self, value):
+        """
+        Compare accumulator and `value`. Set the flag up if the accumulator is
+        smaller than `value`. Otherwise the flag is setted down.
+
+        EXAMPLES::
+
+        >>> UAL = MiniBrainUAL()
+        >>> UAL._accumulator = 7
+        >>> UAL.cmp(3)
+        >>> UAL._accumulator
+        7
+        >>> UAL._flag
+        False
+        >>> UAL.cmp(9)
+        >>> UAL._accumulator
+        7
+        >>> UAL._flag
+        True
+        """
+        # flag managment : put up the flag if the accumulator is smaller than the argument.
+        if self._accumulator <= value:
+            self.set_flag_up()
+        else:
+            self.set_flag_down()
+        # cycles costs
+        self._cpu_cycles += 2
+        
 #*****************************************************************************
 #  Parsing command utilities
 #*****************************************************************************
@@ -1223,6 +1308,30 @@ class MiniBrain():
             self._UAL.increment_program_counter()
             return 0
 
+        if tokens[0] == 'div':
+            value_or_msg = self.read_central_bus(tokens[1])
+            if isinstance(value_or_msg, str):
+                return value_or_msg
+            self._UAL.div(value_or_msg)
+            self._UAL.increment_program_counter()
+            return 0
+
+        if tokens[0] == 'mod':
+            value_or_msg = self.read_central_bus(tokens[1])
+            if isinstance(value_or_msg, str):
+                return value_or_msg
+            self._UAL.mod(value_or_msg)
+            self._UAL.increment_program_counter()
+            return 0
+
+        if tokens[0] == 'cmp':
+            value_or_msg = self.read_central_bus(tokens[1])
+            if isinstance(value_or_msg, str):
+                return value_or_msg
+            self._UAL.cmp(value_or_msg)
+            self._UAL.increment_program_counter()
+            return 0
+        
         if tokens[0] == 'bfup':
             if self._UAL.get_flag():
                 value_or_msg = self.read_central_bus(tokens[1])
@@ -1341,4 +1450,16 @@ class MiniBrain():
                     return 0
                 self._add_line_verbose(msg, verbose=verbose)
                 return 3
+
+################################################
+#       Test for local developping
+# enable them when downloading the file on
+# your computer outside platon
+################################################
+# import sys
+
+# code = ''.join([line for line in sys.stdin])
+# print(code)
+# M = MiniBrain(code)
+# M.run(verbose=True)
 
