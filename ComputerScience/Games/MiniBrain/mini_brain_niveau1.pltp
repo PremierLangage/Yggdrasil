@@ -109,6 +109,8 @@ Jumps :
 * exit [#?-a or value or $?]: stop the program with return code the targeted value  
 * empty instruction: produce the behavior of exit a
 </pre>
+
+Cette documentation reste aussi accessible dans les exercices...
 ==
 
 
