@@ -766,7 +766,7 @@ class MiniBrainMem():
 
         >>> MEM = MiniBrainMem("")
         """
-        self._original_code = code
+        self._original_code = code+('\n'*100)
         self._mem_array = code.split('\n')
 
     def __str__(self):
@@ -1462,4 +1462,5 @@ class MiniBrain():
 # print(code)
 # M = MiniBrain(code)
 # M.run(verbose=True)
+
 
