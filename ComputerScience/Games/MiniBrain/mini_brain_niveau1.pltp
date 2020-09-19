@@ -32,7 +32,7 @@ une instruction ou bien une valeur.
 
 Voici un programme Mini Brain sur 13 lignes.
 
-```
+<pre>
  1: ld 12 a
  2: ld $12 #4
  3: mv #4 #0
@@ -46,12 +46,12 @@ Voici un programme Mini Brain sur 13 lignes.
 11: 
 12: 12345
 13: 2
-```
+</pre>
 
 L'exécution de ce programme dans le Mini Brain produit la verbose 
 suivante.
 
-<code>
+<pre>
 |     #0     #1     #2     #3     #4 |  #-1=a | f | -->  PC : next instruction
 |      0      0      0      0      0 |      0 | 0 | -->   1 : ld 12 a
 |      0      0      0      0      0 |     12 | 0 | -->   2 : ld $12 #4
@@ -66,7 +66,7 @@ suivante.
 |  12345      0      0      0  12346 |     13 | 1 | -->  11 : exit a
 Process exited normally with code 13
 0
-</code>
+</pre>
 ==
 
 
