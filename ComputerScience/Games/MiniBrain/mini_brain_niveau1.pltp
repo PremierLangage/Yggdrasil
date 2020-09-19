@@ -71,7 +71,7 @@ Process exited normally with code 13
 Voici une documentation ultra rapide des primitives de l'unité de contrôle 
 du Mini Brain.
 
-<pre>
+<pre style="font-size: 0.8em">
 List of available functions:
 
 Data management :
@@ -101,8 +101,10 @@ Arithmetics :
 
 Jumps :
 =======
-* bfup [#?-a or value or $?]: jump to instruction indexed by the value if the flag is up else do nothing and continue
-* bfdn [#?-a or value or $?]: jump to instruction indexed by the value if the flag is down else do nothing and continue
+* bfup [#?-a or value or $?]: jump to instruction indexed by the value if the flag is up 
+                              else do nothing and continue
+* bfdn [#?-a or value or $?]: jump to instruction indexed by the value if the flag is down 
+                              else do nothing and continue
 * bnow [#?-a or value or $?]: jump in all cases to instruction indexed by the value
 * exit [#?-a or value or $?]: stop the program with return code the targeted value  
 * <empty instruction>: produce the behavior of exit a
