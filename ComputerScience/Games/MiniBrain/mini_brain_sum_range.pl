@@ -37,7 +37,7 @@ for i in range(5):
     for j in range(b - a + 1):
         vect_val.append(randint(-50, 100))
         pre_actions_list.append("st "+str(vect_val[-1])+" $"+str(a+j))
-    minibrain_action_before+="['test aléatoire "+str(i+1)+"', '"+ '\n'.join(pre_actions_list) +"'], "
+    minibrain_action_before+="['test aléatoire "+str(i+1)+"', '"+ "\\n".join(pre_actions_list) +"'], "
     minibrain_check_after+="[(c, "+str(sum(vect_val))+")], "
 
 minibrain_check_after+="]"
