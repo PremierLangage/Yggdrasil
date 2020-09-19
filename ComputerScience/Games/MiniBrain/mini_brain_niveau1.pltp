@@ -30,7 +30,34 @@ chargé dans la mémoire interne de Mini Brain. La première instruction à
 pointeur d'instruction) est l'instruction 1. Chaque ligne contient 
 une instruction ou bien une valeur.
 
-
+>>> M = MiniBrain('''ld 12 a
+... ld $12 #4
+... mv #4 #0
+... st #1 $21
+... inc a
+... inc #4
+... inc #$13
+... dec #3
+... dec #$13
+... inc #3
+... 
+... 12345
+... 2''')
+>>> M.run(verbose=True)
+|     #0     #1     #2     #3     #4 |  #-1=a | f | -->  PC : next instruction
+|      0      0      0      0      0 |      0 | 0 | -->   1 : ld 12 a
+|      0      0      0      0      0 |     12 | 0 | -->   2 : ld $12 #4
+|      0      0      0      0  12345 |     12 | 0 | -->   3 : mv #4 #0
+|  12345      0      0      0  12345 |     12 | 0 | -->   4 : st #1 $21
+|  12345      0      0      0  12345 |     12 | 0 | -->   5 : inc a
+|  12345      0      0      0  12345 |     13 | 0 | -->   6 : inc #4
+|  12345      0      0      0  12346 |     13 | 0 | -->   7 : inc #$13
+|  12346      0      0      0  12346 |     13 | 0 | -->   8 : dec #3
+|  12346      0      0     -1  12346 |     13 | 0 | -->   9 : dec #$13
+|  12345      0      0     -1  12346 |     13 | 0 | -->  10 : inc #3
+|  12345      0      0      0  12346 |     13 | 1 | -->  11 : exit a
+Process exited normally with code 13
+0
 ==
 
 
@@ -41,4 +68,5 @@ une instruction ou bien une valeur.
 @ /ComputerScience/Games/MiniBrain/mini_brain_sum_range.pl
 
 @ /ComputerScience/Games/MiniBrain/mini_brain_factorial.pl
+
 
