@@ -74,10 +74,14 @@ du Mini Brain.
 <pre>
 List of available functions:
 
+Data management :
+=================
 * ld [$? or value] [#?-a]: load value inside the CPU
 * st [#?-a or value] [$?]: store value to central memory
 * mv [#?-a] [#?-a]: internal fast copy inside the CPU
 
+Arithmetics :
+=============
 * inc [#?]: increment targeted register 
             (up the flag if zero)
 * dec [#?]: decrement targeted register 
@@ -95,11 +99,12 @@ List of available functions:
 * cmp [#?-a or value or $?]: do nothing 
                              (up the flag if the accumulator is smaller than the argument)
 
+Jumps :
+=======
 * bfup [#?-a or value or $?]: jump to instruction indexed by the value if the flag is up else do nothing and continue
 * bfdn [#?-a or value or $?]: jump to instruction indexed by the value if the flag is down else do nothing and continue
 * bnow [#?-a or value or $?]: jump in all cases to instruction indexed by the value
-
-* exit [#?-a or value or $?]: stop the program with return code the targeted value   
+* exit [#?-a or value or $?]: stop the program with return code the targeted value  
 * <empty instruction>: produce the behavior of exit a
 </pre>
 ==
