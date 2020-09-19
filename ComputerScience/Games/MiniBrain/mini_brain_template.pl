@@ -99,6 +99,8 @@ form==
 evaluator==#|python|
 from mini_brain_utils import MiniBrain, represents_int
 
+editor.code += '\n\n\n\n'
+
 all_before = eval(minibrain_action_before)
 all_check = eval(minibrain_check_after)
 
@@ -176,6 +178,7 @@ else:
 
 grade = ((nb_good*100) // (nb_good+nb_bad), feedback)
 ==
+
 
 
 
