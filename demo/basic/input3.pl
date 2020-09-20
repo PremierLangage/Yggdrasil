@@ -4,6 +4,8 @@ title ==
 Exemple 3
 ==
 
+delimiter = |
+
 text ==
 Traduire en latin le mot en gras (avec le bon cas).
 ====
