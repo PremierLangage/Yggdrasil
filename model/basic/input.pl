@@ -8,8 +8,8 @@ from csv import DictReader
 reader = None
 
 try:
-    with open('data.csv', newline='') as file:
-        reader = DictReader(file, delimiter=delimiter)
+    file = open('data.csv', newline=''):
+    reader = DictReader(file, delimiter=delimiter)
 except:
     pass
 
