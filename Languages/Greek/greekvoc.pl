@@ -12,12 +12,6 @@ form ==
 
 
 before ==
-import random as rd
-import csv
-
-with open('data.csv',newline='') as file:
-    rows=list(csv.DictReader(file,delimiter=';'))
-
 # choices=[item['traductions'] for item in rows]
 # input.autocomplete = choices
 ==
