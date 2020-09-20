@@ -19,10 +19,12 @@ if 'data' in globals():
 if reader is not None:
     for name in reader.fieldnames:
         globals()[name] = []
+    nbrows = 0
     for row in reader:
+        nbrows + =1
         for name in reader.fieldnames:
             globals()[name].append(row[name])
-    rand = rd.randint(len(reader))
+    rand = rd.randint(nbrows)
 
 from jinja2 import Environment, BaseLoader
 Env = Environment(loader=BaseLoader())
