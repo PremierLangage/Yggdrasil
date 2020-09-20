@@ -22,7 +22,6 @@ if reader is not None:
     for row in reader:
         for name in reader.fieldnames:
             globals()[name].append(row[name])
-        print(row['first_name'], row['last_name'])
     rand = rd.randint(len(reader))
 
 from jinja2 import Environment, BaseLoader
