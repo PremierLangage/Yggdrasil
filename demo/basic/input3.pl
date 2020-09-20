@@ -8,7 +8,7 @@ delimiter = |
 
 text ==
 Traduire en latin le mot en gras (avec le bon cas).
-====
+==
 
 sol ==
 {{ solution }}
