@@ -2,6 +2,8 @@ extends = /model/basic/input.pl
 
 @ grec_voc_1.csv [data.csv]
 
+delimiter = ;
+
 title = Vocabulaire grec
 
 before ==
