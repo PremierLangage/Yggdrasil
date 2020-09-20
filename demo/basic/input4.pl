@@ -7,19 +7,14 @@ Exemple 3
 ==
 
 text ==
-Quel pays a pour capitale {{ capitale[id] }} ?
+Quel pays a pour capitale {{ capitale }} ?
 ==
 
 sol ==
-{{ pays[id] }}
-{{ article[id] }}
+{{ pays }}
+{{ article }}
 ==
 
 feedback ==
-{{ pays[id] }}
-==
-
-autocomplete ==
 {{ pays }}
 ==
-
