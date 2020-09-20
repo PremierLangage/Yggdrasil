@@ -8,15 +8,15 @@ Exemple 3
 
 text ==
 {{lstsol}}
-Quel pays a pour capitale {{ capitale }} ?
+Quel pays a pour capitale {{ capitale[rand] }} ?
 ==
 
 sol ==
-{{ pays }}
-{{ article }}
+{{ pays[rand] }}
+{{ article[rand] }}
 ==
 
 feedback ==
-{{pays}}
+{{pays[rand]}}
 ==
 
