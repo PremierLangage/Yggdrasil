@@ -24,7 +24,7 @@ if reader is not None:
         nbrows += 1
         for name in reader.fieldnames:
             globals()[name].append(row[name])
-    rand = rd.randint(nbrows)
+    rand = rd.randint(0, nbrows)
 
 from jinja2 import Environment, BaseLoader
 Env = Environment(loader=BaseLoader())
