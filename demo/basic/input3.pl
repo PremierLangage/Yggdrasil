@@ -1,6 +1,20 @@
+extends = /model/basic/input.pl
 
+title ==
+Exemple 3
+==
+
+text ==
+Traduire en latin le mot en gras (avec le bon cas).
+====
+
+sol ==
+{{ solution }}
+
+==
 
 data ==
+phrase | solution
 Le **maître** appelle l'esclave de son fils.| dominus
 Le maître appelle l'**esclave** de son fils.| servum
 Le maître appelle l'esclave de son **fils**.| filii
