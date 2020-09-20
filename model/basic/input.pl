@@ -21,7 +21,7 @@ if reader is not None:
         globals()[name] = []
     nbrows = 0
     for row in reader:
-        nbrows + =1
+        nbrows += 1
         for name in reader.fieldnames:
             globals()[name].append(row[name])
     rand = rd.randint(nbrows)
