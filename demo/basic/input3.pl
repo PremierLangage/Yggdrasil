@@ -17,7 +17,7 @@ sol ==
 ==
 
 data ==
-phrase| solution
+phrase|solution
 Le **maître** appelle l'esclave de son fils.| dominus
 Le maître appelle l'**esclave** de son fils.| servum
 Le maître appelle l'esclave de son **fils**.| filii
