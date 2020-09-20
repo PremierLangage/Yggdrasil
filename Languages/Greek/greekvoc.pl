@@ -4,13 +4,6 @@ extends = /model/basic/input.pl
 
 title = Vocabulaire grec
 
-input =: Input
-
-form ==
-{{ input | component }}
-==
-
-
 before ==
 # choices=[item['traductions'] for item in rows]
 # input.autocomplete = choices
