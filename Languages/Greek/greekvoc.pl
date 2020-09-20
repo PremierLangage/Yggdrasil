@@ -18,9 +18,8 @@ import csv
 with open('data.csv',newline='') as file:
     rows=list(csv.DictReader(file,delimiter=';'))
 
-choices=[item['traductions'] for item in rows]
-
-input.autocomplete = choices
+# choices=[item['traductions'] for item in rows]
+# input.autocomplete = choices
 ==
 
 text ==
