@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathinput.pl
+extends = /model/mathinput.pl
 
 title = Racines carrées d'un nombre complexe
 
@@ -29,6 +29,7 @@ score,_,feedback=ans_struct_complex(input.value,sol,"setwobraces",form="cartesia
 solution ==
 Les racines carrées sont $! {{sol0_tex}} !$ et $! {{sol1_tex}} !$.
 ==
+
 
 
 
