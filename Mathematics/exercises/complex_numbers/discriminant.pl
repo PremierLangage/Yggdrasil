@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathinput.pl
+extends = /model/mathinput.pl
 
 title = Discriminant d'une équation quadratique
 
@@ -30,3 +30,4 @@ score,_,feedback=ans_complex(input.value,sol,form="cartesian")
 solution ==
 Le discriminant est $! {{sol_tex}} !$.
 ==
+
