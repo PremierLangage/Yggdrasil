@@ -23,7 +23,8 @@ Calculer les racines carrées de $! {{z_tex}} !$ (sous forme cartésienne).
 input.virtualKeyboards = complex
 
 evaluator==
-score,_,feedback=ans_struct_complex(input.value,sol,"setwobraces",form="cartesian")
+score, error = eval_set_complex(input.value, lstsol,wobracket=True)
+feedback = message[error]
 ==
 
 solution ==
