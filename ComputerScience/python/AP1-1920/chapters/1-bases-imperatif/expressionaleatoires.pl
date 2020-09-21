@@ -67,10 +67,12 @@ Oui heureusement il y en a des faciles...
 form== #|html|
 Nombre d'essais : {{essai}}
 <ul>
-    {{ inputs }}
-
+    {% for i in inputs %}
+        {{ i|component }}
+    {% endfor %}
 </ul>
 ==
+
 
 
 
