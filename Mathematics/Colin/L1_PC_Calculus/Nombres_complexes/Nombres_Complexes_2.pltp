@@ -3,9 +3,9 @@ introduction=Voici la deuxième série d'exercices sur les nombres complexes. Au
 title=Equations polynomiales à coéfficients complexes
 
 
-# @ /Mathematics/exercises/complex_numbers/cplx_sqrt.pl
+@ /Mathematics/exercises/complex_numbers/cplx_sqrt.pl
 
-# @ /Mathematics/exercises/complex_numbers/discriminant.pl
+@ /Mathematics/exercises/complex_numbers/discriminant.pl
 
 @ /Mathematics/exercises/complex_numbers/quadratic_cplx_eq_.pl
 
@@ -16,6 +16,7 @@ title=Equations polynomiales à coéfficients complexes
 @ /Mathematics/exercises/complex_numbers/quadratic_cplx_eq_int3.pl
 
 @ /Mathematics/exercises/complex_numbers/quadratic_cplx_eq_rat.pl
+
 
 
 
