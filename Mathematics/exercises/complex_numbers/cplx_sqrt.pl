@@ -5,8 +5,7 @@ title = Racines carrées d'un nombre complexe
 lang = fr
 
 before ==
-keyboards_JSON['virtualKeyboards']="complexes"
-input.config = keyboards_JSON
+
 
 a=randint(1,6)
 b=randint(-6,6,[0])
@@ -21,6 +20,7 @@ text ==
 Calculer les racines carrées de $! {{z_tex}} !$ (sous forme cartésienne).
 ==
 
+input.virtualKeyboards = complex
 
 evaluator==
 score,_,feedback=ans_struct_complex(input.value,sol,"setwobraces",form="cartesian")
