@@ -23,7 +23,7 @@ Calculer le discriminant de l'équation $! {{latexP}} = 0 !$.
 input.virtualKeyboards = complex
 
 evaluator==
-score, error = eval_set_complex(input.value, sol,form="cartesian")
+score, error = eval_set_complex(input.value, sol,wobracket=True)
 feedback = message[error]
 ==
 
