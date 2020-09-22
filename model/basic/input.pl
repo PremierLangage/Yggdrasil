@@ -73,6 +73,5 @@ if any([samestrings(input.value, item, tolerance=tolerance) for item in lstsol])
     score = 100
 else:
     score = 0
-    feedback = str(levenshteinDistance(input.value, solution)[measure])
 ==
 
