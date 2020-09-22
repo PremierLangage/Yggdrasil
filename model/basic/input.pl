@@ -37,16 +37,20 @@ form ==
 settings.feedback = rightwrong
 
 evaluator ==
-if isinstance(sol, str):
-    if '\n' in sol:
-        lstsol = sol.splitlines()
+if isinstance(solution, str):
+    if '\n' in solution:
+        lstsol = solution.splitlines()
     else:
-        lstsol = [sol]
-elif isinstance(sol, lst):
-    lstsol = sol
+        lstsol = [solution]
+elif isinstance(solution, lst):
+    lstsol = solution
 
-if any([input.value.casefold() == item.casefold() for item in lstsol]):
-    score = 100
+score = 0
+if casesensitive:
+    if any([input.value == item for item in lstsol]):
+        score = 100
 else:
-    score = 0
+    if any([input.value.casefold() == item.casefold() for item in lstsol]):
+        score = 100
 ==
+
