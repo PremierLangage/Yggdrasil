@@ -41,35 +41,32 @@ settings.feedback = rightwrong
 
 evaluator ==
 
-def levenshteinDistance(str1, str2):
-    m = len(str1)
-    n = len(str2)
-    lensum = float(m + n)
-    d = []           
-    for i in range(m+1):
-        d.append([i])        
-    del d[0][0]    
-    for j in range(n+1):
-        d[0].append(j)       
-    for j in range(1,n+1):
-        for i in range(1,m+1):
-            if str1[i-1] == str2[j-1]:
-                d[i].insert(j,d[i-1][j-1])           
-            else:
-                minimum = min(d[i-1][j]+1, d[i][j-1]+1, d[i-1][j-1]+2)         
-                d[i].insert(j, minimum)
-    ldist = d[-1][-1]
-    ratio = 1-(lensum - ldist)/lensum
-    return {'distance':ldist, 'diffratio':ratio}
+def ld(a, b, mx=-1):	
+    def result(d): return d if mx < 0 else False if d > mx else True
+ 
+    if a == b: return result(0)
+    la, lb = len(a), len(b)
+    if mx >= 0 and abs(la - lb) > mx: return result(mx+1)
+    if la == 0: return result(lb)
+    if lb == 0: return result(la)
+    if lb > la: a, b, la, lb = b, a, lb, la
+ 
+    cost = array('i', range(lb + 1))
+    for i in range(1, la + 1):
+        cost[0] = i; ls = i-1; mn = ls
+        for j in range(1, lb + 1):
+            ls, act = cost[j], ls + int(a[i-1] != b[j-1])
+            cost[j] = min(ls+1, cost[j-1]+1, act)
+            if (ls < mn): mn = ls
+        if mx >= 0 and mn > mx: return result(mx+1)
+    if mx >= 0 and cost[lb] > mx: return result(mx+1)
+    return result(cost[lb])
 
 def samestrings(str1, str2, measure="distance", tolerance=0, casesensitive=False):
     if not casesensitive:
         str1 = str1.casefold()
         str2 = str2.casefold()
-    if tolerance == 0:
-        return str1 == str2
-    else:
-        return levenshteinDistance(str1, str2)[measure] <= tolerance
+    return ld(str1, str2, tolerance)
 
 if isinstance(solution, str):
     if '\n' in solution:
