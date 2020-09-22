@@ -5,7 +5,7 @@ Exemple 1
 ==
 
 text ==
-Quel élément chimique a pour symbole `O` ?
+Quel élément chimique a pour symbole **O** ?
 ==
 
 solution ==
