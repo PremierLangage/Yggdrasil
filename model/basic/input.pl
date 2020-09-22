@@ -1,6 +1,7 @@
 extends = /model/basic.pl
 
 headerbefore ==
+import difflib
 import random as rd
 from io import StringIO
 from csv import DictReader
