@@ -12,7 +12,7 @@ H;hydrogène
 ==
 
 text ==
-Quel élément chimique a pour symbole **{{ symbole }}** ?
+Quel élément chimique a pour symbole {{ symbole }} ?
 ==
 
 solution ==
