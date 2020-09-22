@@ -5,11 +5,15 @@ Exemple 2
 ==
 
 text ==
-Quel pays a pour capitale Paris ?
+Quel élément chimique a pour symbole **O** ?
 ==
 
-sol ==
-France
-la France
+solution ==
+Oxygène
 ==
+
+measure = distance
+
+tolerance = 1
+
 
