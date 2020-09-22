@@ -39,6 +39,37 @@ form ==
 settings.feedback = rightwrong
 
 evaluator ==
+
+def levenshteinDistance(str1, str2):
+    m = len(str1)
+    n = len(str2)
+    lensum = float(m + n)
+    d = []           
+    for i in range(m+1):
+        d.append([i])        
+    del d[0][0]    
+    for j in range(n+1):
+        d[0].append(j)       
+    for j in range(1,n+1):
+        for i in range(1,m+1):
+            if str1[i-1] == str2[j-1]:
+                d[i].insert(j,d[i-1][j-1])           
+            else:
+                minimum = min(d[i-1][j]+1, d[i][j-1]+1, d[i-1][j-1]+2)         
+                d[i].insert(j, minimum)
+    ldist = d[-1][-1]
+    ratio = 1-(lensum - ldist)/lensum
+    return {'distance':ldist, 'diffratio':ratio}
+
+def samestrong(str1, str2, measure="distance", tolerance=0, casesensitive=False):
+    if note casesensitive:
+        str1 = str1.casefold()
+        str2 = str2.casefold()
+    if tolerance == 0:
+        return str1 == str2
+    else:
+        return 
+
 if isinstance(solution, str):
     if '\n' in solution:
         lstsol = solution.splitlines()
