@@ -28,6 +28,8 @@ solution = Env.from_string(solution).render(globals())
 
 delimiter % ","
 
+casesensitive % false
+
 input =: Input
 
 form ==
