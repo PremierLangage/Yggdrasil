@@ -61,14 +61,14 @@ def levenshteinDistance(str1, str2):
     ratio = 1-(lensum - ldist)/lensum
     return {'distance':ldist, 'diffratio':ratio}
 
-def samestrong(str1, str2, measure="distance", tolerance=0, casesensitive=False):
+def samestrings(str1, str2, measure="distance", tolerance=0, casesensitive=False):
     if note casesensitive:
         str1 = str1.casefold()
         str2 = str2.casefold()
     if tolerance == 0:
         return str1 == str2
     else:
-        return 
+        return levenshteinDistance(str1, str2)[measure] <= tolerance:
 
 if isinstance(solution, str):
     if '\n' in solution:
@@ -78,12 +78,9 @@ if isinstance(solution, str):
 elif isinstance(solution, lst):
     lstsol = solution
 
-score = 0
-if casesensitive:
-    if any([input.value == item for item in lstsol]):
-        score = 100
+if any([samestrings(input.value, item) for item in lstsol]):
+    score = 100
 else:
-    if any([input.value.casefold() == item.casefold() for item in lstsol]):
-        score = 100
+    score = 0
 ==
 
