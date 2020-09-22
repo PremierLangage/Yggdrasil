@@ -64,9 +64,7 @@ def levenshteinDistance(str1, str2):
     ratio = (lensum - ldist)/lensum
     return {'distance':ldist, 'ratio':ratio}
 
-dist=minimumEditDistance(sol,input.value)
-
-if levenshteinDistance(input.value, sol)['ratio']:
+if levenshteinDistance(input.value, sol)['ratio']>0.9:
     grade=(100,sol)
 else:
     grade=(0,sol)
