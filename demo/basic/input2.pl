@@ -5,14 +5,14 @@ Exemple 2
 ==
 
 data ==
-symbole;nom
-N;azote
-Na;sodium
-H;hydrogène
+symbole,nom
+N,azote
+Na,sodium
+H,hydrogène
 ==
 
 text ==
-Quel élément chimique a pour symbole {{ symbole }} ?
+Quel élément chimique a pour symbole **{{ symbole }}** ?
 ==
 
 solution ==
