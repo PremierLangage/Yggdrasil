@@ -68,7 +68,7 @@ def samestrings(str1, str2, measure="distance", tolerance=0, casesensitive=False
     if tolerance == 0:
         return str1 == str2
     else:
-        return levenshteinDistance(str1, str2)[measure] <= tolerance:
+        return levenshteinDistance(str1, str2)[measure] <= tolerance
 
 if isinstance(solution, str):
     if '\n' in solution:
