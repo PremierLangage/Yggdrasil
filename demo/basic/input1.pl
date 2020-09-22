@@ -5,7 +5,10 @@ Exemple 1
 ==
 
 text ==
-Quelle est la capitale de la France ?
+Quel élément chimique a pour symbole `O` ?
 ==
 
-sol = Paris
+solution ==
+Oxygène
+==
+
