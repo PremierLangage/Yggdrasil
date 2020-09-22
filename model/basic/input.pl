@@ -78,7 +78,7 @@ if isinstance(solution, str):
 elif isinstance(solution, lst):
     lstsol = solution
 
-if any([samestrings(input.value, item) for item in lstsol]):
+if any([samestrings(input.value, item, tolerance=tolerance) for item in lstsol]):
     score = 100
 else:
     score = 0
