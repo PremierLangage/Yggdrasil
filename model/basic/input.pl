@@ -1,6 +1,7 @@
 extends = /model/basic.pl
 
 headerbefore ==
+from Levenshtein import distance as levenshtein_distance
 import random as rd
 from io import StringIO
 from csv import DictReader
