@@ -39,24 +39,27 @@ form ==
 settings.feedback = rightwrong
 
 evaluator ==
-
-def levenshtein(seq1, seq2):
-    oneago = None
-    thisrow = list(range(1, len(seq2) + 1)) + [0]
-    for x in xrange(len(seq1)):
-        twoago, oneago, thisrow = oneago, thisrow, [0] * len(seq2) + [x + 1]
-        for y in xrange(len(seq2)):
-            delcost = oneago[y] + 1
-            addcost = thisrow[y - 1] + 1
-            subcost = oneago[y - 1] + (seq1[x] != seq2[y])
-            thisrow[y] = min(delcost, addcost, subcost)
-    return thisrow[len(seq2) - 1]
+def minimumEditDistance(s1,s2):
+    if len(s1) > len(s2):
+        s1,s2 = s2,s1
+    distances = range(len(s1) + 1)
+    for index2,char2 in enumerate(s2):
+        newDistances = [index2+1]
+        for index1,char1 in enumerate(s1):
+            if char1 == char2:
+                newDistances.append(distances[index1])
+            else:
+                newDistances.append(1 + min((distances[index1],
+                                             distances[index1+1],
+                                             newDistances[-1])))
+        distances = newDistances
+    return distances[-1]
 
 def samestrings(str1, str2, measure="distance", tolerance=0, casesensitive=False):
     if not casesensitive:
         str1 = str1.casefold()
         str2 = str2.casefold()
-    return levenshtein(str1, str2) <= tolerance
+    return minimumEditDistance(str1, str2) <= tolerance
 
 if isinstance(solution, str):
     if '\n' in solution:
