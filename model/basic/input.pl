@@ -23,7 +23,7 @@ if all_rows is not None:
 
 from jinja2 import Environment, BaseLoader
 Env = Environment(loader=BaseLoader())
-sol = Env.from_string(sol).render(globals())
+solution = Env.from_string(solution).render(globals())
 ==
 
 delimiter % ","
