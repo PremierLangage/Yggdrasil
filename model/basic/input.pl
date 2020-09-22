@@ -62,7 +62,7 @@ def levenshteinDistance(str1, str2):
     return {'distance':ldist, 'diffratio':ratio}
 
 def samestrings(str1, str2, measure="distance", tolerance=0, casesensitive=False):
-    if note casesensitive:
+    if not casesensitive:
         str1 = str1.casefold()
         str2 = str2.casefold()
     if tolerance == 0:
