@@ -1,7 +1,7 @@
 extends = /model/basic/input.pl
 
 title ==
-Capitales 1
+Exemple 1
 ==
 
 text ==
