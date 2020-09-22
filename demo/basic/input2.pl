@@ -14,6 +14,6 @@ Oxygène
 
 measure = distance
 
-tolerance % 2
+tolerance % 40
 
 
