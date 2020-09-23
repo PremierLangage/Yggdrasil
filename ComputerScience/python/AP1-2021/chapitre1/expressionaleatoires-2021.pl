@@ -54,6 +54,7 @@ grade = (score, feedback)
 
 title = Expressions aléatoires
 # y a pas besoin d'énoncé 
+tag = arithmétique | opérateurs
 text==
 Attention vous avez un nombre limité d'essais pour répondre a toutes les égalités.
 
