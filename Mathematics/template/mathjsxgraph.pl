@@ -1,4 +1,4 @@
-extends = mathbasic.pl
+extends = /model/mathbasic.pl
 
 jxg =: MathDrawer
 
@@ -26,5 +26,6 @@ form==
 {{ jxg|component }}
 </center>
 ==
+
 
 
