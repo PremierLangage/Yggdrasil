@@ -3,13 +3,13 @@ tag=function
 
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
-
+author= 
 fixme= IL faudrais test le temps de calcul ... 
 
 
 text==  
- On appelle nombre factoriel un entier $%n%$ pou lequel il existe un entier $%p%$ tel que $%p!=n%$<br>
-Ecrire une fonction `est_factoriel` qui reçoit un  entier et  renvoie  s'il est factoriel et 0 sinon.
+ On appelle nombre factoriel un entier $%n%$ pour lequel il existe un entier $%p%$ tel que $%p!=n%$<br>
+Ecrire une fonction `est_factoriel` qui reçoit un  entier et  renvoie 1 s'il est factoriel et 0 sinon.
 ==
 
 editor.code==
