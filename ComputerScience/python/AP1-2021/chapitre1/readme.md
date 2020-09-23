@@ -215,4 +215,4 @@ Idée: calcul d'égalité
 
     - je n'arrive pas à le faire fonctionner (les égalités à calculer ne s'affichent pas) -- Marie
 
-
+# Exercice 12
