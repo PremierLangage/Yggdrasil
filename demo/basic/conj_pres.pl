@@ -36,6 +36,8 @@ solution ==
 
 ==
 
+input.prefix = 3
+
 evaluator ==
 if input.value==verbe_conj:
     grade=(100,"")
