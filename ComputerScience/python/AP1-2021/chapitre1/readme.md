@@ -118,6 +118,25 @@ Idée: utiliser plusieurs fois l'input, faire deux petits calculs
 **Changements:** 
 
     - ajout d'indices sur les espaces 
-    
+
 **Remarques/commentaires:**
+
+# Exercice 8
+
+@/ComputerScience/python/AP1-2021/chapitre1/convertirMPG_2021.pl
+
+Conversion de mpg vers L/100km
+
+Idée: donner la formule de Conversion
+
+**Changements:** 
+
+    - typos corrigées
+
+**Remarques/commentaires:**
+
+    - est-ce qu'on ne devrait pas laisser cet exercice de côté?
+
+
+
 
