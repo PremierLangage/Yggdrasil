@@ -12,7 +12,7 @@ extends=/ComputerScience/python/template/soluce.pl
 
 soluce==  
 n=input()
-m=input()
+m=int(input())
 q=n//m
 r=n%m
 if (m==0):
