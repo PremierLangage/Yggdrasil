@@ -39,7 +39,9 @@ l'équipe.
 @ /ComputerScience/python/AP1-2021/chapitre1/occure-2021.pl
 #@ occure.pl
 
-@ /ComputerScience/python/concept/input/plusmoins.pl
+#@ /ComputerScience/python/concept/input/plusmoins.pl
+@/ComputerScience/python/AP1-2021/chapitre1/plusmoins-2021.pl
+
 
 @ expressions/convertirMPG.pl
 
@@ -70,6 +72,7 @@ l'équipe.
 @ priority.pl
 @ bascule.pl
 @ trinome.pl
+
 
 
 
