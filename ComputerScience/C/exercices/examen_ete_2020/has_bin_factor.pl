@@ -18,7 +18,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
 title=Sous facteur binaire dans un entier long
-tag=bitwise|function
+tag=bitwise|function|facteur|mot
 
 text==
 Écrire une fonction qui détecte la présence du mot binaire **1011** dans 
@@ -105,5 +105,6 @@ checks_args_stdin==#|python|
  ["Test aléatoire 7", [str(randint(1,27)) for i in range(8)], ""],
  ["Test aléatoire 8", [str(randint(0,255)) for i in range(8)], ""]]
 ==
+
 
 
