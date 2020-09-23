@@ -16,7 +16,8 @@ Ecrire un programme qui calcule et affiche le périmètre et la surface du recta
 la longueur de la diagonale
 sous la forme :
 
-Le périmètre est ?? et la surface est ?? ! \n
+Le périmètre est ?? et la surface est ?? ! 
+
 La diagonale mesure ?? !
 (pensez à **)
 ==
