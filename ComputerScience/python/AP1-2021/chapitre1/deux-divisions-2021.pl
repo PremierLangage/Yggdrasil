@@ -60,7 +60,7 @@ Test 3 |-1 5
 Test 4 |100 3
 ==
 
-plsoluce1==
+mplsoluce1==
 Test 1 |10 0
 Test 2 |0 0
 ==
