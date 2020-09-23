@@ -53,15 +53,15 @@ Division par 0
 before==
 ==
 
-mplsoluce0==
+plsoluce0==
 Test 1 |10 4
 Test 2 |1 4
 Test 3 |-1 5
 Test 4 |100 3
-==
-
-mplsoluce1==
 Test 1 |10 0
 Test 2 |0 0
 ==
+
+
+
 
