@@ -169,4 +169,32 @@ Idée: utiliser un print pour afficher le périmètre et la surface d'un rectang
 
     - 
 
+# Exercie 9
+
+@/ComputerScience/python/AP1-2021/chapitre1/rectanglediagonale-2021.pl
+
+Diagonale d'un rectangle
+
+Idée: utiliser print pour afficher le périmètre, la surface et la diagonale d'un rectangle dont les dimensions sont rentrées par l'utilisateur.
+
+**Changements:** 
+    - ajout des tags print, input et puissance
+    - modif de la phrase à afficher : passage d'un point à un point d'exclamation (qui a l'avantage d'avoir un espace devant lui en français, donc pas de souci avec le print)
+
+**Remarques/commentaires:**
+
+    - 
+
+# Exercice 10
+
+Echange entre deux variables
+
+Idée: échanger les valeurs entre deux variables quelconques
+
+**Changements:** 
+    - ajout des tags variables, valeurs, affectation
+
+**Remarques/commentaires:**
+
+    - 
 
