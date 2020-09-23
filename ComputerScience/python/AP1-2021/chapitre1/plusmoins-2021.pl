@@ -20,6 +20,10 @@ le programme affiche (attention aux espaces !):
 	somme= 34 , moyenne= 8.5
 == 
 
+code==
+# somme=??, moyenne=??
+==
+
 feedback==
 Bravo
 ==
