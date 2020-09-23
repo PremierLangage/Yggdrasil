@@ -187,6 +187,8 @@ Idée: utiliser print pour afficher le périmètre, la surface et la diagonale d
 
 # Exercice 10
 
+@/ComputerScience/python/AP1-2021/chapitre1/echange_deux_variables-2021.pl
+
 Echange entre deux variables
 
 Idée: échanger les valeurs entre deux variables quelconques
@@ -197,4 +199,7 @@ Idée: échanger les valeurs entre deux variables quelconques
 **Remarques/commentaires:**
 
     - 
+
+# Exercice 11
+
 
