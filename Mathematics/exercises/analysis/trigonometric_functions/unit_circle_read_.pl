@@ -29,9 +29,7 @@ var secOAM = board.create('sector',[O,A,M],{color:'orange'});
 ==
 
 
-evaluator==
-feedback = message[error]
-==
+
 
 
 
