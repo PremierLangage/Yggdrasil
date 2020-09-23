@@ -1,6 +1,6 @@
 
 # DR: test 24/09/2019 OK
-extends=Yggdrasil/ComputerScience/python/template/pltest.pl
+extends=@/ComputerScience/python/template/pltest.pl
 @ /builder/before.py [builder.py]
 
 tag=Programmation|Python|Initialisation|Variable
