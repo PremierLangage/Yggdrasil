@@ -53,7 +53,7 @@ Division par 0
 before==
 ==
 
-plsoluce0==
+mplsoluce0==
 Test 1 |10 4
 Test 2 |1 4
 Test 3 |-1 5
