@@ -42,29 +42,38 @@ l'équipe.
 #@ /ComputerScience/python/concept/input/plusmoins.pl
 @/ComputerScience/python/AP1-2021/chapitre1/plusmoins-2021.pl
 
-
-@ expressions/convertirMPG.pl
+#@ /expressions/convertirMPG.pl
+@/ComputerScience/python/AP1-2021/chapitre1/convertirMPG_2021.pl
 
 
 # Validation de l'identification des noms de variables 
 # @ Nommage_variable.pl # celui la est pourri
 #@ /template/checkbox_example.pl 
 #  print 
-@ rectanglefixe.pl
+#@ rectanglefixe.pl
+
+@/ComputerScience/python/AP1-2021/chapitre1/rectanglefixe-2021.pl
 
 # input print
-@ rectangle.pl
+#@ rectangle.pl
+@/ComputerScience/python/AP1-2021/chapitre1/rectangle-2021.pl
 
 # input print
-@ rectanglediagonale.pl
+#@ rectanglediagonale.pl
 
-@ echange_deux_variables.pl
+@/ComputerScience/python/AP1-2021/chapitre1/rectanglediagonale-2021.pl
+
+#@ echange_deux_variables.pl
+@/ComputerScience/python/AP1-2021/chapitre1/echange_deux_variables-2021.pl
 
 
 
 #@ interchanger_deux_variables.pl
 
-@ expressionaleatoires.pl
+#@ expressionaleatoires.pl
+# version 2021, qui ne marche pas non plus:
+#@/ComputerScience/python/AP1-2021/chapitre1/echange_deux_variables-2021.pl
+
 
 @ initialisation.pl
 @ operateursbooleens.pl
