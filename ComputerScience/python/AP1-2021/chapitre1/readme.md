@@ -120,7 +120,6 @@ Idée: utiliser plusieurs fois l'input, faire deux petits calculs
     - ajout d'indices sur les espaces 
 
 **Remarques/commentaires:**
-    - J'ai changé un peu les espaces. -- Wenjie Fang
 
 # Exercice 8
 
@@ -138,7 +137,20 @@ Idée: donner la formule de Conversion
 
     - est-ce qu'on ne devrait pas laisser cet exercice de côté?
 
+# Exercie 9
 
+@/ComputerScience/python/AP1-2021/chapitre1/rectanglefixe-2021.pl
 
+Rectangle fixe
+
+Idée: utiliser un print pour afficher le périmètre et la surface d'un rectangle dont les dimensions sont fixées à 3 et 7.
+
+**Changements:** 
+
+    - modif de la phrase à afficher : passage d'un point à un point d'exclamation (qui a l'avantage d'avoir un espace devant lui en français, donc pas de souci avec le print)
+
+**Remarques/commentaires:**
+
+    - est-ce qu'on ne devrait pas laisser cet exercice de côté?
 
 
