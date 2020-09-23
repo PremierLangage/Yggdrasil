@@ -1,3 +1,4 @@
+# Wenjie Fang 23/09/2020 Espaces symétrisés
 # Boris Jabot 11/09/2019 KO
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
@@ -17,7 +18,7 @@ le programme affiche (attention aux espaces !):
 	3
 	14
 	5
-	somme= 34 , moyenne= 8.5
+	somme = 34 , moyenne = 8.5
 == 
 
 code==
@@ -29,7 +30,7 @@ Bravo
 ==
 fff==
 Deux solutions :<br>
-	print("somme = ",somme," , moyenne =" ,moyenne)<br>
+	print("somme = ",somme," , moyenne = " ,moyenne)<br>
 ou la syntaxe avec % mais attention c'est un float<br>
 	print("somme = %d , moyenne = %f" % (somme,moyenne))
 ==
@@ -72,8 +73,9 @@ print(c)
 print(d)
 s=a+b+c+d
 
-print("somme=", s ,", moyenne=", s/4)
+print("somme =", s ,", moyenne =", s/4)
 ==
+
 
 
 
