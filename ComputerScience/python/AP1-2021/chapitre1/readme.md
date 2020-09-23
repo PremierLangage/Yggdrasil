@@ -107,4 +107,17 @@ Idée: utiliser l'input, faire un jeu de tests conditionnels
 
     - Je ne crois pas que les étudiants voient "char in string" dans la première séance. Je propose une version avec les entiers dans le fichier "occure-int-2021.pl" -- Wenjie Fang
 
+# Exercice 7
+
+@/ComputerScience/python/AP1-2021/chapitre1/plusmoins-2021.pl
+
+Manipulation de nombres
+
+Idée: utiliser plusieurs fois l'input, faire deux petits calculs
+
+**Changements:** 
+
+    - ajout d'indices sur les espaces 
+    
+**Remarques/commentaires:**
 
