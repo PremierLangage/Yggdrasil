@@ -1,4 +1,4 @@
-extends = /model/basic.pl
+extends = mathbasic.pl
 
 jxg =: MathDrawer
 
