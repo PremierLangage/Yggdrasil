@@ -4,11 +4,6 @@ extends = /model/basic/sortlist.pl
 column=nom # Choix de la columns 
 nbsample=6
 
-before==
-
-sortedlist.append("Magdalena Kobylanska")
-==
-
 text==
 En utilisant Drag and Drop, rangez les mathématiciens dans l'ordre de leur date de naissance.
 ==
