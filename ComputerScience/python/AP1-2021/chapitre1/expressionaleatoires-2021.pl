@@ -1,7 +1,7 @@
 
 
 @ /utils/sandboxio.py
-grader  =@ /grader/evaluator.py
+grader  =@ /grader/AP1_evaluator.py
 builder =@ /builder/before.py
 
 nbechec%0
