@@ -120,6 +120,7 @@ Idée: utiliser plusieurs fois l'input, faire deux petits calculs
     - ajout d'indices sur les espaces 
 
 **Remarques/commentaires:**
+    - J'ai changé un peu les espaces. -- Wenjie Fang
 
 # Exercice 8
 
@@ -136,6 +137,7 @@ Idée: donner la formule de Conversion
 **Remarques/commentaires:**
 
     - est-ce qu'on ne devrait pas laisser cet exercice de côté?
+
 
 
 
