@@ -2,7 +2,7 @@
 author=Wenjie Fang
 title=Deux divisions
 
-tag=input|print|variable|if|else|conditionnelles|type
+tag=input|print|variable|if|else|conditionnelles|type|operation
 
 extends=/ComputerScience/python/template/soluce.pl
  
@@ -61,6 +61,7 @@ Test 4 |100 3
 Test 6 |10 0
 Test 7 |0 0
 ==
+
 
 
 
