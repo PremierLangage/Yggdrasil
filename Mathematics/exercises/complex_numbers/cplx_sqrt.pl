@@ -17,7 +17,7 @@ sol1_tex=latex(sol[1])
 ==
 
 text ==
-Calculer les racines carrées de $! {{z_tex}} !$ (sous forme cartésienne).  Séparer les deux racines par une virgule.
+Calculer les racines carrées de $! {{z_tex}} !$ (sous forme algèbrique).  Séparer les deux racines par une virgule.
 ==
 
 input.virtualKeyboards = complex
@@ -30,6 +30,7 @@ feedback = message[error]
 solution ==
 Les racines carrées sont $! {{sol0_tex}} !$ et $! {{sol1_tex}} !$.
 ==
+
 
 
 
