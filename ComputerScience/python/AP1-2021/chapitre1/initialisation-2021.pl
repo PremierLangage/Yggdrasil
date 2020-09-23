@@ -1,6 +1,6 @@
 
 # DR: test 24/09/2019 OK
-extends=@/ComputerScience/python/template/pltest.pl
+extends=@/ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
 
 tag=Programmation|Python|Initialisation|Variable
