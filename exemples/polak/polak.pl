@@ -15,7 +15,8 @@ match =: MatchList
 
 # match.debug % true
 
-@ fortomek.csv [content.csv] #  le fichier de données avec deux collones target;source et d'autre valeur si il faut 
+@ /exemples/polak/contengggt.csv [content.csv]
+#@ fortomek.csv [content.csv] #  le fichier de données avec deux collones target;source et d'autre valeur si il faut 
 
 @ mkl.py
 
@@ -67,5 +68,6 @@ if error == 0:
 else:
     grade = (0, 'Bad answer, you made %d mistakes' % error)
 ==
+
 
 
