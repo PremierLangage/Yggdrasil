@@ -202,4 +202,17 @@ Idée: échanger les valeurs entre deux variables quelconques
 
 # Exercice 11
 
+Expressions aléatoires
+
+@/ComputerScience/python/AP1-2021/chapitre1/expressionaleatoires-2021.pl
+
+Idée: calcul d'égalité
+
+**Changements:** 
+    - ajout des tags arithmétique, opérateurs
+
+**Remarques/commentaires:**
+
+    - je n'arrive pas à le faire fonctionner (les égalités à calculer ne s'affichent pas) -- Marie
+
 
