@@ -72,7 +72,25 @@ Idée: première utilisation d'input et des possibilités de la fonction print (
 **Remarques/commentaires:**
     - J'ai ajouté le tag "type", parce qu'il y a la troncature qui montre la différence entre int et float. -- Wenjie Fang
 
+
 # Exercice 5
+
+@ /ComputerScience/python/AP1-2021/chapitre1/occure-int-2021.pl
+
+Lecture d'un entier
+
+Idée: utiliser l'input, faire un jeu de tests conditionnels
+
+**Changements:** 
+
+    - 
+
+**Remarques/commentaires:**
+
+    - nouvel exercice par Wenjie
+
+
+# Exercice 6
 
 @ /ComputerScience/python/AP1-2021/chapitre1/occure-2021.pl
 
@@ -88,4 +106,5 @@ Idée: utiliser l'input, faire un jeu de tests conditionnels
 **Remarques/commentaires:**
 
     - Je ne crois pas que les étudiants voient "char in string" dans la première séance. Je propose une version avec les entiers dans le fichier "occure-int-2021.pl" -- Wenjie Fang
+
 
