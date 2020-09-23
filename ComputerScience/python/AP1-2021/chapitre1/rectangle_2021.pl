@@ -5,7 +5,7 @@
 extends=/ComputerScience/python/template/soluce.pl
 @ /builder/before.py [builder.py]
 title = Rectangle dimensions variables
-
+tag= print|input
 
 text==  
 Les dimensions d'un rectangle sont entrées par l'utilisateur, 
