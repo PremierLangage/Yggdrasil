@@ -14,7 +14,9 @@ n=int(input())
 m=int(input())
 if m==0:
     print("Division par 0")
-
+else:
+    print(n, '/', m, '=', n/m)
+    print(n, '=', m, '*', n//m, '+', n - (n//m)*m)
 ==
 
 code==
@@ -56,8 +58,8 @@ Test 1 |10 4
 Test 2 |1 4
 Test 3 |-1 5
 Test 4 |100 3
-Test 1 |10 0
-Test 2 |0 0
+Test 6 |10 0
+Test 7 |0 0
 ==
 
 
