@@ -52,12 +52,9 @@ code=  jinja2.Template(code).render(globals())
 ==
 
 
-plsoluce0==
+plsoluce==
 Test 1 |a
 Test 2 |i
-==
-
-plsoluce1==
 Test 3 |n
 Test 4 |+
 ==
