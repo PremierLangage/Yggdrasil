@@ -11,8 +11,8 @@ extends=/ComputerScience/python/template/soluce.pl
 @ /builder/before.py [builder.py]
 
 soluce==  
-n=int(input())
-m=int(input())
+n=input()
+m=input()
 q=n//m
 r=n%m
 if (m==0):
