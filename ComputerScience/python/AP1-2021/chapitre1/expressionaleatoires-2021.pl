@@ -2,7 +2,7 @@
 
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
-builder =@ lib/builder/before.py
+builder =@ /builder/before.py
 
 nbechec%0
 
