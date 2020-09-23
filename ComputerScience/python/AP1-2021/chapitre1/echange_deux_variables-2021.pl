@@ -2,6 +2,7 @@
 extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
 
 title = Échange de deux variables
+tag= variables | valeurs | affectation
 
 text==
 On suppose qu'il existe deux variables `a` et `b` de valeurs et de types 
@@ -38,6 +39,7 @@ for _ in range(5):
         values={'a': y, 'b': x}
     )
 ==
+
 
 
 
