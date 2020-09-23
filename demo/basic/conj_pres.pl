@@ -1,4 +1,4 @@
-extends = /template/basicinput.pl
+extends = /model/basic/input.pl
 
 @ conj_data.csv
 
@@ -38,6 +38,7 @@ if input.value==verbe_conj:
 else:
     grade=(0,"")
 ==
+
 
 
 
