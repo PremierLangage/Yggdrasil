@@ -37,8 +37,7 @@ solution==
 int main(void){
   int a,b,c;
   int min,max;
-  printf("Entrez int main(void) {
-      int a,b,c,tmp;
+ 
 printf("Entrer trois entiers:\n");                               '
 scanf("%d",&a);
 scanf("%d",&b);scanf("%d",&c);
@@ -83,6 +82,7 @@ tests==
   ["Aléatoire", "",  " ".join([str(random.randint(0,100)) for i in range(3)])]
 ]
 ==
+
 
 
 
