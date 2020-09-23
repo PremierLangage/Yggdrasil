@@ -32,6 +32,10 @@ form ==
 </div>
 ==
 
+solution ==
+
+==
+
 evaluator ==
 if input.value==verbe_conj:
     grade=(100,"")
