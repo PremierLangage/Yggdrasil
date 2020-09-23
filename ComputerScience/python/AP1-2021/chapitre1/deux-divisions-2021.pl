@@ -28,7 +28,7 @@ m=int(input())
 
 
 text==
-Ecrivez un programme qui prend deux entiers **n** et **m** et qui calculer le résultat de **n** divisé par **m**, 
+Ecrivez un programme qui prend deux entiers **n** et **m** et qui calcule le résultat de **n** divisé par **m**, 
 et aussi la division euclidienne de **n** par **m**. Si **m** est égal à 0, alors votre programme doit afficher "Division par 0".
 
 **Exemple :**
@@ -64,3 +64,4 @@ plsoluce1==
 Test 1 |10 0
 Test 2 |0 0
 ==
+
