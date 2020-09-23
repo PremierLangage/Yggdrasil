@@ -1,6 +1,6 @@
 
 # Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
-#author=Nicolas Borie
+author=
 
 title=Appeler les fonctions qui vont bien...
 tag=program
