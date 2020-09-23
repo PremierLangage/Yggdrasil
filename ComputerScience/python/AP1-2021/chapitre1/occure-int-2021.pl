@@ -38,15 +38,14 @@ une unique variable **nombre** qui lit un nombre du clavier et qui le compare av
 before==
 ==
 
-plsoluce0==
+plsoluce==
 Test 1 |10
 Test 2 |6
-==
-
-plsoluce1==
 Test 3 |6
 Test 4 |-2
 ==
+
+
 
 
 
