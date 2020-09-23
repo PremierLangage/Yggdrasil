@@ -35,10 +35,9 @@ codebefore==
 solution==
 
 int main(void){
-  int a,b,c;
-  int min,max;
- 
-printf("Entrer trois entiers:\n");                               '
+  int a,b,c,tmp;
+  
+printf("Entrer trois entiers:\n");                               
 scanf("%d",&a);
 scanf("%d",&b);scanf("%d",&c);
   if(a>b){
@@ -53,26 +52,6 @@ scanf("%d",&b);scanf("%d",&c);
   printf("%d %d %d\n",a,c,b);
   return 0;
 }
- entiers\n");
-  scanf("%d",&a);
-  scanf("%d",&b); scanf("%d",&c);
-  if(a<b){
-    min=a;
-    max=b;
-  }
-  else{
-    min=b;
-    max=a;
-  }
-  if(c<min)
-    printf("%d %d %d\n",c,min,max);
-  else if(c>max)
-    printf("%d %d %d\n",min,max,c);
-  else
-  printf("%d %d %d\n",min,c,max);
-  return 0;
-}
-
 ==
 
 tests==
@@ -82,6 +61,7 @@ tests==
   ["Aléatoire", "",  " ".join([str(random.randint(0,100)) for i in range(3)])]
 ]
 ==
+
 
 
 
