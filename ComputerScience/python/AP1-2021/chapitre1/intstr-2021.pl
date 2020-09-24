@@ -1,4 +1,3 @@
-# Non-testé parce que PL ne semble pas marcher pour le moment...
 author=Wenjie Fang
 title=Entiers et chaîne
 
@@ -52,16 +51,42 @@ Si **n**=-9 et **m**=0, alors votre programme doit afficher
 before==#|python|
 ==
 
-plsoluce==
-Test 1 |10 4
-Test 2 |1 4
-Test 3 |-1 5
-Test 4 |100 -3
-Test 5 |3 1
-Test 6 |10 0
-Test 7 |0 0
-Test 8 |-1 -2
+mplsoluce0==
+Simple
+10
+4
 ==
+mplsoluce1==
+Un négatif
+-1
+4
+==
+mplsoluce2==
+Un autre négatif
+10000
+-5
+==
+mplsoluce3==
+C'est nul
+100
+0
+==
+mplsoluce4==
+Reste nul
+0
+100
+==
+mplsoluce5==
+Tous nuls
+0
+0
+==
+mplsoluce6==
+Deux négatifs
+-1
+-2
+==
+
 
 
 
