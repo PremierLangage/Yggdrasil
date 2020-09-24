@@ -50,7 +50,7 @@ Si **n**=9 et **m**=0, alors votre programme doit afficher
 Division par 0
 ==
 
-before==
+before==#|python|
 ==
 
 plsoluce==
@@ -62,6 +62,7 @@ Test 5 |3 1
 Test 6 |10 0
 Test 7 |0 0
 ==
+
 
 
 
