@@ -26,7 +26,7 @@ m=int(input())
 
 text==
 Ecrivez un programme qui prend deux entiers **n** et **m** et qui calcule la somme de **n** et **m**, 
-et aussi la division euclidienne de **n** par **m**.
+et aussi la concaténation de l'écriture de **n** et **m** en chaînes de caractères.
 
 **Exemple :**
 
@@ -59,6 +59,7 @@ Test 5 |3 1
 Test 6 |10 0
 Test 7 |0 0
 ==
+
 
 
 
