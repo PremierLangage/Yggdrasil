@@ -37,7 +37,7 @@ int has_vowel(...){
 }
 ==
 
-solution==
+solution==#|c|
 
 #include <string.h>
 const char* vowel="aeiouy";
@@ -49,12 +49,11 @@ int has_vowel(char *p){
 }
 ==
 
-code_before==
+code_before==#|c|
 
 ==
 
-code_after==
-
+code_after==#|c|
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -69,7 +68,6 @@ int main(int argc, char* argv[]){
   return 0;
 }
 ==
-
 
 checks_args_stdin==#|python|
 [["Test Basique", ["la belle voyelle"], ""],
