@@ -18,7 +18,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
 title=Arguments court et long d'un programme C
-tag=input_output|program
+tag=input_output|program|string|argument
 
 editor.height=300px
 
@@ -80,3 +80,4 @@ checks_args_stdin==#|python|
  ["Test aléatoire 4", ["".join([chr(randint(97,122)) for j in range(randint(1, 20))] ) for i in range(2, 10)], ""],
  ["Test aléatoire 5", ["".join([chr(randint(97,122)) for j in range(randint(1, 20))] ) for i in range(2, 10)], ""]]
 ==
+
