@@ -11,8 +11,8 @@ extends=/ComputerScience/python/template/soluce.pl
 soluce==  
 n=int(input())
 m=int(input())
-print(m+n)
-print(str(m)+str(n))
+print(n+m)
+print(str(n)+str(m))
 ==
 
 code==
