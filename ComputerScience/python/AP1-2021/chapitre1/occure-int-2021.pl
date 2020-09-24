@@ -32,7 +32,7 @@ une unique variable **nombre** qui lit un nombre du clavier et qui le compare av
 
 - Si **nombre** est plus petit que 6, votre programme doit afficher "Trop petit !".
 - Si **nombre** est exactement 6, votre programme doit afficher "Tout juste !".
-- Si **nombre** est plus grand que 6, votre programme doit afficher "Trop Grand !".
+- Si **nombre** est plus grand que 6, votre programme doit afficher "Trop grand !".
 ==
 
 before==
@@ -44,6 +44,7 @@ Test 2 |6
 Test 3 |6
 Test 4 |-2
 ==
+
 
 
 
