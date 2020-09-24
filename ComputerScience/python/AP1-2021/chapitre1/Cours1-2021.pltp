@@ -24,6 +24,9 @@ l'équipe.
 
 
 
+ [1-valeurs-variables-types](https://mybinder.org/v2/gh/UGE-IGM/courspython/master?filepath=%2FCours%2F1-valeurs-variables-types%2F1-valeurs-variables-types.ipynb)
+
+
 ==
 
 #### Manipulation des variables ####
@@ -38,8 +41,8 @@ l'équipe.
 
 @/ComputerScience/python/AP1-2021/chapitre1/echange_deux_variables-2021.pl
 
-#à déboguer...
-#@/ComputerScience/python/AP1-2021/chapitre1/expressionaleatoires-2021.pl
+#à déboguer... Fait DR
+@/ComputerScience/python/AP1-2021/chapitre1/expressionaleatoires-2021.pl
 
 #### Compréhension des expressions ####
 
@@ -53,6 +56,7 @@ l'équipe.
 
 @/ComputerScience/python/AP1-2021/chapitre1/deux-division-2021.pl
 
+#à déboguer... Fait DR 
 @/ComputerScience/python/AP1-2021/chapitre1/intstr-2021.pl
 
 @/ComputerScience/python/AP1-2021/chapitre1/occure-2021.pl
@@ -76,6 +80,7 @@ l'équipe.
 @/ComputerScience/python/AP1-2021/chapitre1/trinome-2021.pl
 
 @/ComputerScience/python/AP1-2021/chapitre1/tri_trois_valeurs-2021.pl
+
 
 
 
