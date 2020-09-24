@@ -265,6 +265,8 @@ Idée: trier trois valeurs sans créer de Variables
 
 @/ComputerScience/python/AP1-2021/chapitre1/priority-2021.pl
 
+Expressions aléatoires
+
 Idée: leur faire évaluer des expressions aléatoires sans parenthèses pour intégrer l'ordre de précédence des opérateurs arithmétiques
 
 **Changements:** 
@@ -274,4 +276,21 @@ Idée: leur faire évaluer des expressions aléatoires sans parenthèses pour in
 **Remarques/commentaires:**
 
     - 
+
+# Exercice 16
+
+@/ComputerScience/python/AP1-2021/chapitre1/bascule-2021.pl
+
+Bascule
+
+Idée: leur faire trouver l'expression qui permet d'alterner entre deux valeurs dans une même variable sans variable intermédiaire et sans conditionnelles (oui une Bascule)
+
+**Changements:** 
+    - ajout des tags valeurs|variables|bascule|expression
+    - typos
+
+**Remarques/commentaires:**
+
+    - 
+
 
