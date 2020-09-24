@@ -230,4 +230,17 @@ Idée: initialiser une variable avec un nom et un type fixé
 
     - est-ce qu'on ne devrait pas bouger cet exercice au début de la feuille ? par exemple après les 3 premiers de nommage de variables? --Marie 
 
+# Exercice 13
 
+@/ComputerScience/python/AP1-2021/chapitre1/operateursbooleens-2021.pl
+
+Titre: Opérateurs Booléens
+
+Idée: Expressions booléennes à évaluer
+
+**Changements:** 
+    - ajout des tags Expressions|Bool|Booléens|Vérité|Valeurs|Evaluation
+
+**Remarques/commentaires:**
+
+    - 
