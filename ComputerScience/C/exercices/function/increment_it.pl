@@ -27,10 +27,11 @@ text==
 entier **inc** et incrémente l'entier pointé par **p** de la valeur **inc**.
 La fonction retourne `void`.
 
+<br />
 
 Le programme de test sera le suivant :
 
-
+<br />
 
     #include <stdio.h>
     #include <stdlib.h>    
