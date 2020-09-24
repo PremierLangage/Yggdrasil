@@ -67,7 +67,7 @@ void ascii_triangle(int n){
 
 ==
 
-codeafter==
+code_after==
 
 #include <stdlib.h>
     
@@ -79,13 +79,16 @@ int main(int argc, char* argv[]){
 }
 ==
 
-    
-tests==
-[ ["Basique", "3", ""],
-  ["Moyen", "6", ""],
-  ["Vide", "0", ""],
-  ["Aléatoire", str(random.randint(5, 10)), ""],
-  ["Aléatoire", str(random.randint(11, 15)), ""] ]    
+code_before==
+
+==
+
+checks_args_stdin==#|python|
+[ ["Test basique", ["3"], ""],
+  ["Test moyen", ["6"], ""],
+  ["Test vide", ["0"], ""],
+  ["Test aléatoire 1", [str(randint(5, 10))], ""],
+  ["Test aléatoire 2", [str(randint(11, 15))], ""] ]    
 ==
 
 
