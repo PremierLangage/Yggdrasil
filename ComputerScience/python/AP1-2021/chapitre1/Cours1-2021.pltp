@@ -40,55 +40,38 @@ l'équipe.
 # version 2021, qui ne marche pas non plus:
 #@/ComputerScience/python/AP1-2021/chapitre1/expressionaleatoires-2021.pl
 
-#### Expression ####
+#### Compréhension des expressions ####
 
 @/ComputerScience/python/AP1-2021/chapitre1/priority-2021.pl
 
 @/ComputerScience/python/AP1-2021/chapitre1/operateursbooleens-2021.pl
 
+@/ComputerScience/python/AP1-2021/chapitre1/occure-int-2021.pl
+
+@/ComputerScience/python/AP1-2021/chapitre1/occure-2021.pl
+
+@/ComputerScience/python/AP1-2021/chapitre1/bascule-2021.pl
 
 #### Applications simple ###
 
 @ /ComputerScience/python/AP1-2021/chapitre1/aleaagecap-2021.pl
 
-#@ /ComputerScience/python/concept/input/plusmoins.pl
 @/ComputerScience/python/AP1-2021/chapitre1/plusmoins-2021.pl
 
-#@ /expressions/convertirMPG.pl
 @/ComputerScience/python/AP1-2021/chapitre1/convertirMPG_2021.pl
-
-# Validation de l'identification des noms de variables 
-# @ Nommage_variable.pl # celui la est pourri
-#@ /template/checkbox_example.pl 
-#  print 
-#@ rectanglefixe.pl
 
 @/ComputerScience/python/AP1-2021/chapitre1/rectanglefixe-2021.pl
 
-# input print
-#@ rectangle.pl
 @/ComputerScience/python/AP1-2021/chapitre1/rectangle-2021.pl
-
-# input print
-#@ rectanglediagonale.pl
 
 @/ComputerScience/python/AP1-2021/chapitre1/rectanglediagonale-2021.pl
 
-#@ echange_deux_variables.pl
-@/ComputerScience/python/AP1-2021/chapitre1/echange_deux_variables-2021.pl
+#### Lourd ###
 
-@ /ComputerScience/python/AP1-2021/chapitre1/occure-int-2021.pl
-@ /ComputerScience/python/AP1-2021/chapitre1/occure-2021.pl
-#@ occure.pl
-
-#@ bascule.pl
-@/ComputerScience/python/AP1-2021/chapitre1/bascule-2021.pl
-
-#@ trinome.pl
 @/ComputerScience/python/AP1-2021/chapitre1/trinome-2021.pl
 
-#@ tri_trois_valeurs.pl
 @/ComputerScience/python/AP1-2021/chapitre1/tri_trois_valeurs-2021.pl
+
 
 
 
