@@ -264,3 +264,13 @@ Idée: trier trois valeurs sans créer de Variables
 # Exercice 15
 
 @/ComputerScience/python/AP1-2021/chapitre1/priority-2021.pl
+
+Idée: leur faire évaluer des expressions aléatoires sans parenthèses pour intégrer l'ordre de précédence des opérateurs arithmétiques
+
+**Changements:** 
+    - ajout des tags expressions|evaluation|opérateurs|priorités
+
+**Remarques/commentaires:**
+
+    - 
+
