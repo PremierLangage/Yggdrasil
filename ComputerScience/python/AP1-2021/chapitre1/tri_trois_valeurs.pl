@@ -24,11 +24,10 @@ On suppose qu'il existe trois variables `a`, `b` et `c` de valeurs quelconques e
 comparables entre elles (vous n'avez donc pas à les initialiser ni à les lire).
 
 Écrire un programme dont l'exécution affiche (à l'aide de la fonction `print`)
-les valeurs de `a` `b` et `c` dans l'ordre croissant, séparées par des espaces,
-suivies d'un retour à la ligne.
+les valeurs de `a` `b` et `c` dans l'ordre croissant, séparées par des espaces.
 
 **Par exemple,** si on suppose qu'au début du programme `a` vaut `5`, `b` vaut `1`
-et `c` vaut 3, le programme devra afficher *précisément* la chaîne `'1 3 5\n'`.
+et `c` vaut 3, le programme devra afficher *précisément* > 1 2 3.
 
 **Attention :**
 
