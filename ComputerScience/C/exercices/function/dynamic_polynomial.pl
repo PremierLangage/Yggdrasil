@@ -22,8 +22,6 @@ author=Nicolas Borie
 title=Écrire une fonction qui calcule les valeurs d'un polynome
 tag=function|return|polynome|evaluation
 
-extends=/ComputerScience/C/template/stdsandboxC.pl
-
 editor.code==
 double polynome(...){
   ...
