@@ -42,7 +42,8 @@ Si **n**=1 et **m**=-4, alors votre programme doit afficher
 
 Si **n**=9 et **m**=0, alors votre programme doit afficher
 
-Divsion par 0
+9
+10
 ==
 
 before==#|python|
@@ -57,6 +58,7 @@ Test 5 |3 1
 Test 6 |10 0
 Test 7 |0 0
 ==
+
 
 
 
