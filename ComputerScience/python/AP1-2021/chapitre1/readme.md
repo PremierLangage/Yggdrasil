@@ -216,3 +216,18 @@ Idée: calcul d'égalité
     - je n'arrive pas à le faire fonctionner (les égalités à calculer ne s'affichent pas) -- Marie
 
 # Exercice 12
+
+@/ComputerScience/python/AP1-2021/chapitre1/initialisation-2021.pl
+
+Initialisation et constantes
+
+Idée: initialiser une variable avec un nom et un type fixé
+
+**Changements:** 
+    - ajout des tags affectation, types
+
+**Remarques/commentaires:**
+
+    - est-ce qu'on ne devrait pas bouger cet exercice au début de la feuille ? par exemple après les 3 premiers de nommage de variables? --Marie 
+
+
