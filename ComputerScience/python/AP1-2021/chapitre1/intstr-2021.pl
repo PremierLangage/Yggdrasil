@@ -28,7 +28,7 @@ text==
 Ecrivez un programme qui prend deux entiers **n** et **m** et qui calcule la somme de **n** et **m**, 
 et aussi la concaténation de l'écriture de **n** et **m** en chaîne de caractères.
 
-**Exemple :**
+**Exemples :**
 
 Si **n**=10 et **m**=4, alors votre programme doit afficher
 
