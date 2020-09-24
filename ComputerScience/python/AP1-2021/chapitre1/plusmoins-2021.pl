@@ -19,6 +19,10 @@ le programme affiche (attention aux espaces !):
 	14
 	5
 	somme = 34 , moyenne = 8.5
+
+
+
+Un seul espace entre = et 34. 
 == 
 
 code==
@@ -75,6 +79,7 @@ s=a+b+c+d
 
 print("somme =", s ,", moyenne =", s/4)
 ==
+
 
 
 
