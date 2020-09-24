@@ -63,14 +63,11 @@ int main(int argc, char* argv[]){
 
 ==
 
-    
-tests==
-
+checks_args_stdin==
 [["Basique", "1", ""],
  ["Aléatoire", str(random.randint(1, 33)), ""],
  ["Aléatoire", str(random.randint(1, 33)), ""],
  ["Aléatoire", str(random.randint(1, 33)), ""]]
-
 ==
 
 
