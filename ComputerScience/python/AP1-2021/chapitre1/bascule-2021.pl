@@ -27,9 +27,9 @@ grade = (100, component.value)
 title== #|html|
 Bascule
 
-tag= valeurs|variables|bascule|expression
-==
 
+==
+tag= valeurs|variables|bascule|expression
 before== #|python|
 import random
 lval1=[True,False,1,0,67]
@@ -82,6 +82,7 @@ else:
 form==
    var = {{ component|component}}
 ==
+
 
 
 
