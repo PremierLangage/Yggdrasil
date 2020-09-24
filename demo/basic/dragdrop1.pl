@@ -4,17 +4,17 @@ title ==
 Exemple 1
 ==
 
-labelscontent ==
+labelcontents ==
 habes
 habet
 habent
 ==
 
-dropsol ==
+dropsolutions ==
 habet
 ==
 
-text==
+text ==
 Compléter la phrase suivante avec les étiquettes proposées.
 ==
 
@@ -25,4 +25,5 @@ Pastor pecuniam non {{ drops[0]|component }}.<br>
 {{ label|component }}
 {% endfor %}
 ==
+
 
