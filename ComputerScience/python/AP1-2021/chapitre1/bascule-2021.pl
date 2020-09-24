@@ -7,8 +7,8 @@
 
 
 @ /ComputerScience/python/template/pltest_doc.py
-@ ../../templates/utils/feedback2.py
-@ ../../templates/utils/template.html
+@ /ComputerScience/python/AP1-1920/templates/utils/feedback2.py
+@ /ComputerScience/python/AP1-1920/templates/utils/template.html
 
 
 component =: Input
