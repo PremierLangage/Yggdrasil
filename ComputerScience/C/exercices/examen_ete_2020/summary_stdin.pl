@@ -18,7 +18,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
 title=Résumer le contenu de l'entrée standard
-tag=programm|input_output|function
+tag=programm|input_output|function|type
 
 text==
 Écrire un programme C qui analyse son entrée standard pour en proposer un très 
@@ -102,4 +102,5 @@ checks_args_stdin==#|python|
  ["Test aléatoire 4", [], ''.join(list(map(lambda x: x+''.join([choice([' ','\t','\n']) for i in range(randint(1,5))]), [choice([''.join([chr(randint(48,57)) for k in range(randint(1, 10))]), ''.join([chr(randint(97,122)) for j in range(randint(1,20))])]) for i in range(randint(30,40))])))],
  ["Test aléatoire 5", [], ''.join(list(map(lambda x: x+''.join([choice([' ','\t','\n']) for i in range(randint(1,5))]), [choice([''.join([chr(randint(48,57)) for k in range(randint(1, 10))]), ''.join([chr(randint(97,122)) for j in range(randint(1,20))])]) for i in range(randint(40,50))])))],]
 ==
+
 
