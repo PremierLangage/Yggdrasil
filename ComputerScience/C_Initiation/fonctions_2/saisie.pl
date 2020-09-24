@@ -7,11 +7,12 @@
 title=Saisie dans intervale
 tag=program
 extends=/ComputerScience/C/template/stdsandboxC.pl
-
+author= 
 text==
-Écrire une fonction *saisie* qui effectue le saisie controlé d'un entier compris au sens  large entre deux valeurs 'min' et 'max'. Si 'min>max'
- les valeurs seront echangées. La saisie a lieu tand que l'utilisateur entre un entier incorrect. 
- La fonction renvoie le nombre d'essaisqui ont té nécessaires.
+Écrire une fonction *saisie* qui effectue la saisie controlée d'un entier compris au sens  large entre deux valeurs 'min' et 'max'. Si 'min>max'
+ les valeurs seront echangées.  
+ La saisie a lieu tant que l'utilisateur entre un entier incorrect. 
+ La fonction renvoie le nombre d'essais qui ont té nécessaires.
 ==
 
 editor.code==
@@ -72,6 +73,7 @@ tests==
  ["Aléatoire",' '.join([str(random.randint(1,4)),str(random.randint(11, 24))]), "0 1 5"]
  ]
 ==
+
 
 
 
