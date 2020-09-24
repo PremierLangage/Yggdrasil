@@ -50,11 +50,12 @@ essais += []
 begin_test_group("Résultats")
 for a, b, c in essais:
     set_globals(a=a, b=b, c=c)
-    run(title="$%{} x^2 + {} x + c = 0%$".format(a, b, c))
+    run(title="$%{} x^2 + {} x + {} = 0%$".format(a, b, c))
     assert_variable_values(nb_solutions=nb_sols(a, b, c))
 
 
 ==
+
 
 
 
