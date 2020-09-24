@@ -260,3 +260,7 @@ Idée: trier trois valeurs sans créer de Variables
 **Remarques/commentaires:**
 
     - 
+
+# Exercice 15
+
+@/ComputerScience/python/AP1-2021/chapitre1/priority-2021.pl
