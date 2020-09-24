@@ -75,7 +75,11 @@ l'équipe.
 #@/ComputerScience/python/AP1-2021/chapitre1/echange_deux_variables-2021.pl
 
 
-@ initialisation.pl
+#@ initialisation.pl
+@/ComputerScience/python/AP1-2021/chapitre1/initialisation-2021.pl
+
+
+
 @ operateursbooleens.pl
 @ tri_trois_valeurs.pl
 @ priority.pl
