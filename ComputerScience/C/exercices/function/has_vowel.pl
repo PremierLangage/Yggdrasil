@@ -1,20 +1,32 @@
-# Copyright 2017 DR
+#*****************************************************************************
+#  Copyright (C) 2017 Dominique Revuz
+#  Copyright (C) 2019 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Detection de voyelle dans un mot en C
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
 
-author=NB&DR
+extends=/ComputerScience/C/template/std_progC.pl
+
+author=Dominique Revuz
 
 title=Trouver la première voyelle
-tag=function
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=function|array|caractères|chaîne|string
 
 text==
-
 Écrire une fonction **has_vowel** qui prend une chaîne de caractères en
 paramètre et qui retourne un entier correspondant au code ASCII de la
 première voyelle trouvée dans la chaine. On retournera 0 si aucune
 voyelle apparaît dans le mot.
-
 ==
 
 editor.code==
@@ -37,7 +49,11 @@ int has_vowel(char *p){
 }
 ==
 
-codeafter==
+code_before==
+
+==
+
+code_after==
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -55,15 +71,14 @@ int main(int argc, char* argv[]){
 ==
 
 
-tests==
-
-[["Basique", "'la belle voyelle'", ""],
-["Sans voyelle", "bcdfghjklmnpqrstvwxz", ""],
-["Trouve un a", "aaaa", ""],
-["Trouve un e", "xxxea", ""],
-["Trouve un i", "xxxiea", ""],
-["Trouve un o", "xxxoo", ""],
-["Trouve un y", "xxxy", ""]]
-
+checks_args_stdin==#|python|
+[["Test Basique", ["la belle voyelle"], ""],
+ ["Sans voyelle", ["bcdfghjklmnpqrstvwxz"], ""],
+ ["Trouve un a", ["aaaa"], ""],
+ ["Trouve un e", ["xxxea"], ""],
+ ["Trouve un i", ["xxxiea"], ""],
+ ["Trouve un o", ["xxxoo"], ""],
+ ["Trouve un y", ["xxxy"], ""]]
 ==
+
 
