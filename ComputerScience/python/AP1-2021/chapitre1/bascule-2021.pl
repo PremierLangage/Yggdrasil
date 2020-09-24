@@ -17,9 +17,9 @@ component.type = text
 
 
 
-evaluator==
-grade = (100, component.value)
-==
+#evaluator==
+#grade = (100, component.value)
+#==
 
 
 
@@ -82,6 +82,7 @@ else:
 form==
    var = {{ component|component}}
 ==
+
 
 
 
