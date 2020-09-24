@@ -18,7 +18,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
 title=Résumer le contenu de l'entrée standard
-tag=programm|input_output|function|type
+tag=programm|input_output|function|type|difficile
 
 text==
 Écrire un programme C qui analyse son entrée standard pour en proposer un très 
