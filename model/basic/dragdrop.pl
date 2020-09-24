@@ -63,7 +63,7 @@ for i in range(n):
         num_wrong +=1
         drops[i].css += "error-state"
 
-if num_wrong 0 :
+if num_wrong > 0 :
     score = 0
 else:
     score = 100
