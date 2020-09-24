@@ -69,10 +69,12 @@ form== #|html|
 Nombre d'essais : {{essai}}
 <ul>
     {% for i in inputs %}
+        {{ op1[n] + ope[n] + op2[n] }}
         {{ i|component }}
     {% endfor %}
 </ul>
 ==
+
 
 
 
