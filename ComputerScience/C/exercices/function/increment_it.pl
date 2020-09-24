@@ -30,7 +30,7 @@ La fonction retourne `void`.
 
 Le programme de test sera le suivant :
 
-```c
+```C
     #include <stdio.h>
     #include <stdlib.h>    
         
