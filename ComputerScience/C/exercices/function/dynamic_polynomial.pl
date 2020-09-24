@@ -95,6 +95,3 @@ checks_args_stdin==
  ["Test aléatoire", [str(randint(-10, 10)) for i in range(3)], ""]]
 ==
 
-
-
-
