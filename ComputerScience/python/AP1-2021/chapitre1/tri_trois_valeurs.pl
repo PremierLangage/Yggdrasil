@@ -27,7 +27,7 @@ comparables entre elles (vous n'avez donc pas à les initialiser ni à les lire)
 les valeurs de `a` `b` et `c` dans l'ordre croissant, séparées par des espaces.
 
 **Par exemple,** si on suppose qu'au début du programme `a` vaut `5`, `b` vaut `1`
-et `c` vaut 3, le programme devra afficher *précisément* > 1 2 3.
+et `c` vaut 3, le programme devra afficher *précisément*  `1 2 `.
 
 **Attention :**
 
