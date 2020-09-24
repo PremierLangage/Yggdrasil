@@ -26,25 +26,23 @@ m=int(input())
 
 text==
 Ecrivez un programme qui prend deux entiers **n** et **m** et qui calcule la somme de **n** et **m**, 
-et aussi la concaténation de l'écriture de **n** et **m** en chaînes de caractères.
+et aussi la concaténation de l'écriture de **n** et **m** en chaîne de caractères.
 
 **Exemple :**
 
 Si **n**=10 et **m**=4, alors votre programme doit afficher
 
-10 / 4 = 2.5
+14
+104
 
-10 = 4 * 2 + 2
+Si **n**=1 et **m**=-4, alors votre programme doit afficher
 
-Si **n**=1 et **m**=4, alors votre programme doit afficher
-
-1 / 4 = 0.25
-
-1 = 4 * 0 + 1
+-3
+1-4
 
 Si **n**=9 et **m**=0, alors votre programme doit afficher
 
-Division par 0
+Divsion par 0
 ==
 
 before==#|python|
