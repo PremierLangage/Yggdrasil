@@ -18,7 +18,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
 title=Somme des chiffres d'un nombre
-tag=function|recursion|array
+tag=function|recursion|array|arithmetique
 
 editor.height=300px
 
@@ -73,5 +73,6 @@ int main(int argc, char* argv[]){
   return 0;
 }
 ==
+
 
 
