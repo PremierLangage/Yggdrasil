@@ -269,6 +269,7 @@ Idée: leur faire évaluer des expressions aléatoires sans parenthèses pour in
 
 **Changements:** 
     - ajout des tags expressions|evaluation|opérateurs|priorités
+    - enlevé l'affichage de la liste des valeurs et opérateurs tirés aléatoirement pour le round d'essais
 
 **Remarques/commentaires:**
 
