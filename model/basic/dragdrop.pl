@@ -47,9 +47,9 @@ evaluator ==
 n = len(drops)
 num_right = 0
 num_wrong = 0
-feedback = drops[0].content+dropsolutions[0]
+
 for i in range(n):
-    if drops[i].content == dropsolutions[i]:
+    if drops[i].content == lst_dropsolutions[i]:
         num_right += 1
         drops[i].css += "success-state"
     else:
