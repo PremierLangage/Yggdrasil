@@ -18,6 +18,7 @@
 
 extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
 title = Tri de trois valeurs
+tag= if|conditionnelles|tests|tri
 
 text==
 On suppose qu'il existe trois variables `a`, `b` et `c` de valeurs quelconques et
