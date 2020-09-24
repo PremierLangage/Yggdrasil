@@ -33,17 +33,20 @@ et aussi la concaténation de l'écriture de **n** et **m** en chaîne de caract
 Si **n**=10 et **m**=4, alors votre programme doit afficher
 
 14
+
 104
 
 Si **n**=1 et **m**=-4, alors votre programme doit afficher
 
 -3
+
 1-4
 
-Si **n**=9 et **m**=0, alors votre programme doit afficher
+Si **n**=-9 et **m**=0, alors votre programme doit afficher
 
-9
-10
+-9
+
+-90
 ==
 
 before==#|python|
