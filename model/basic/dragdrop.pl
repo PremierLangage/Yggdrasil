@@ -25,14 +25,6 @@ for _ in list_dropsolutions:
     drops.append(CustomDragDrop.Drop())
 ==
 
-dropsolutions ==
-Os frontal
-Os pariétal
-Os sphénoïde
-Os temporal
-Os occipital
-Os ethmoïde
-==
 
 text =
 
