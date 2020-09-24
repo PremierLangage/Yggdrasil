@@ -244,3 +244,19 @@ Idée: Expressions booléennes à évaluer
 **Remarques/commentaires:**
 
     - 
+
+# Exercice 14
+
+@/ComputerScience/python/AP1-2021/chapitre1/tri_trois_valeurs-2021.pl
+
+Tri trois valeurs
+
+Idée: trier trois valeurs sans créer de Variables
+
+**Changements:** 
+    - ajout des tags if|elif|else|conditionnelles|tests|tri
+    - typos
+
+**Remarques/commentaires:**
+
+    - 
