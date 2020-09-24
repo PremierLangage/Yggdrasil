@@ -36,9 +36,9 @@ int saisie(int min,int max,int *n){
     min=max;
     max=tmp;
     }
-do{
   printf( "entrez un entier compris entre %d et %d : ",min,max);
-    scanf("%d",n);
+do{
+scanf("%d",n);
     nb+=1;
  }while(*n<min || *n >max);
 return nb;
@@ -73,6 +73,7 @@ tests==
  ["Aléatoire",' '.join([str(random.randint(1,4)),str(random.randint(11, 24))]), "0 1 5"]
  ]
 ==
+
 
 
 
