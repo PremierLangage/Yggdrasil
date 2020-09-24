@@ -80,11 +80,11 @@ code_before==#|c|
 
     
 checks_args_stdin==#|python|
-[["Basique", "1 1", ""],
- ["Aléatoire", ' '.join([str(random.randint(10, 1000)) for i in range(2)]), ""],
- ["Aléatoire", ' '.join([str(random.randint(10, 1000)) for i in range(2)]), ""],
- ["Aléatoire", ' '.join([str(random.randint(10, 1000)) for i in range(2)]), ""],
- ["Aléatoire", ' '.join([str(random.randint(10, 1000)) for i in range(2)]), ""]]
+[["Basique", ["1", "1"], ""],
+ ["Aléatoire", [str(randint(10, 1000)) for i in range(2)], ""],
+ ["Aléatoire", [str(randint(10, 1000)) for i in range(2)], ""],
+ ["Aléatoire", [str(randint(10, 1000)) for i in range(2)], ""],
+ ["Aléatoire", [str(randint(10, 1000)) for i in range(2)], ""]]
 ==
 
 
