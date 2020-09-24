@@ -39,8 +39,9 @@ def d():
     return random.randint(1,10)
 
 essais = [
-    [0, 0, 0], [0, 0, 1], [0, 1, 1], 
+
     [1, 3, 1], [1, 2, 1], [1, 1, 1],
+    [0, 0, 0], [0, 0, 1], [0, 1, 1], 
     [
         random.randint(0, 10),
         random.randint(0, 10),
