@@ -34,6 +34,9 @@ l'équipe.
 #@ initialisation.pl
 @/ComputerScience/python/AP1-2021/chapitre1/initialisation-2021.pl
 
+#@ operateursbooleens.pl
+@/ComputerScience/python/AP1-2021/chapitre1/operateursbooleens-2021.pl
+
 # @ /ComputerScience/python/concept/input/ageCapitaine.pl
 
 @ /ComputerScience/python/AP1-2021/chapitre1/aleaagecap-2021.pl
@@ -79,8 +82,7 @@ l'équipe.
 
 
 
-#@ operateursbooleens.pl
-@/ComputerScience/python/AP1-2021/chapitre1/operateursbooleens-2021.pl
+
 
 #@ tri_trois_valeurs.pl
 @/ComputerScience/python/AP1-2021/chapitre1/tri_trois_valeurs-2021.pl
