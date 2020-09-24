@@ -41,12 +41,14 @@ l'équipe.
 
 @ /ComputerScience/python/AP1-2021/chapitre1/aleaagecap-2021.pl
 
+#@ /ComputerScience/python/concept/input/plusmoins.pl
+@/ComputerScience/python/AP1-2021/chapitre1/plusmoins-2021.pl
+
 @ /ComputerScience/python/AP1-2021/chapitre1/occure-int-2021.pl
 @ /ComputerScience/python/AP1-2021/chapitre1/occure-2021.pl
 #@ occure.pl
 
-#@ /ComputerScience/python/concept/input/plusmoins.pl
-@/ComputerScience/python/AP1-2021/chapitre1/plusmoins-2021.pl
+
 
 #@ /expressions/convertirMPG.pl
 @/ComputerScience/python/AP1-2021/chapitre1/convertirMPG_2021.pl
