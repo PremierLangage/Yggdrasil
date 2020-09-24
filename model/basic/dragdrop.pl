@@ -7,25 +7,25 @@ from customdragdrop import CustomDragDrop
 drops = []
 labels = []
 
-if isinstance(dropsol, str):
-    list_dropsol = dropsol.splitlines()
+if isinstance(dropsolutions, str):
+    list_dropsolutions = dropsolutions.splitlines()
 else:
-    list_dropsol = dropsol
+    list_dropsolutions = dropsolutions
 
-if 'labelscontent' in globals():
-    list_labelcontents = labelscontent.splitlines()
+if 'labelcontents' in globals():
+    list_labelcontents = labelcontents.splitlines()
 else:
-    list_labelcontents = list(set(dropsol))
+    list_labelcontents = list(set(dropsolutions))
 
 for content in list_labelcontents:
     labels.append(CustomDragDrop.Label(content=content))
 
-nbdrops = len(list_dropsol)
-for _ in list_dropsol:
+nbdrops = len(list_dropsolutions)
+for _ in list_dropsolutions:
     drops.append(CustomDragDrop.Drop())
 ==
 
-dropsol ==
+dropsolutions ==
 Os frontal
 Os pariétal
 Os sphénoïde
@@ -53,7 +53,7 @@ form ==
 
 evaluator ==
 for i in range(drops):
-    if drops[i].content == dropsol[i]
+    if drops[i].content == dropsolutions[i]
             drop.css += "success-state"
         else:
             drop.css += "error-state"    
