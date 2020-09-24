@@ -10,10 +10,27 @@ before== #|python|
 import random
 essai = 4
 N = 10
-op1 = [str(random.randint(1, 10)) for n in range(N)]
-op2 = [str(random.randint(1, 10)) for n in range(N)]
-ope = [random.choice(['+','*','-','//','/','%','**']) for n in range(N)]
-res = [ eval(op1[n]+ope[n]+ op2[n]) for n in range(N)]
+
+expr = []
+res = []
+cnt = 0
+
+while cnt < N:
+    op1gen = str(random.randint(1, 10))
+    op2gen = str(random.randint(1, 10))
+    opegen = random.choice(['+','*','-','//','/','%','**'])
+    exprgen = op1gen + opegen + op2gen
+    resgen = eval(exprgen)
+    if len(str(resgen)) < 5: # Donc on ne fait pas calculer 9**8 !
+        cnt += 1
+        expr.append(exprgen)
+        res.append(resgen)
+
+#op1 = [str(random.randint(1, 10)) for n in range(N)]
+#op2 = [str(random.randint(1, 10)) for n in range(N)]
+#ope = [random.choice(['+','*','-','//','/','%','**']) for n in range(N)]
+#res = [ eval(op1[n]+ope[n]+ op2[n]) for n in range(N)]
+
 solved=[ False for n in range(N)]
 isfloat = [ False for n in range(N)]
 inputs = []
@@ -56,7 +73,7 @@ title = Expressions aléatoires
 # y a pas besoin d'énoncé 
 tag = arithmétique | opérateurs
 text==
-Attention vous avez un nombre limité d'essais pour répondre a toutes les égalités.
+Attention vous avez un nombre limité d'essais pour répondre à toutes les égalités.
 
 Sinon cela redémarre au début avec {{N}} égalités.
 
@@ -70,7 +87,7 @@ Nombre d'essais : {{essai}}
 <br><br>
 <ul>
     {% for i in range(N) %}
-        {{ op1[i] + ope[i] + op2[i] }}
+        {{ expr[i] }}
         {{ inputs[i]|component }}
     {% endfor %}
 </ul>
