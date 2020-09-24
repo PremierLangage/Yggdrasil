@@ -70,9 +70,10 @@ int main(int argc, char* argv[]){
 tests==
 [["Exécution simple", "1 9", "5"],
  ["Quelques éléments", "12 2", "1 3"],
- ["Aléatoire",' '.join([str(random.randint(1,4)),str(random.randint(11, 24))]), "0 1 5"]
+ ["Aléatoire",' '.join([str(random.randint(1,4)),str(random.randint(11, 24))]), "0 -1 5"]
  ]
 ==
+
 
 
 
