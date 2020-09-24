@@ -67,6 +67,7 @@ Oui heureusement il y en a des faciles...
 
 form== #|html|
 Nombre d'essais : {{essai}}
+<br><br>
 <ul>
     {% for i in range(N) %}
         {{ op1[i] + ope[i] + op2[i] }}
