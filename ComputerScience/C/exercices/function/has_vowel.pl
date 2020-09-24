@@ -22,6 +22,8 @@ author=Dominique Revuz
 title=Trouver la première voyelle
 tag=function|array|caractères|chaîne|string
 
+editor.height=350px
+
 text==
 Écrire une fonction **has_vowel** qui prend une chaîne de caractères en
 paramètre et qui retourne un entier correspondant au code ASCII de la
