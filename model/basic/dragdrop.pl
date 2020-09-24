@@ -52,7 +52,11 @@ form ==
 ==
 
 evaluator ==
-
+for i in range(drops):
+    if drops[i].content == dropsol[i]
+            drop.css += "success-state"
+        else:
+            drop.css += "error-state"    
 ==
 
 
