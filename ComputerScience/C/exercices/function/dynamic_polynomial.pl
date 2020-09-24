@@ -1,13 +1,28 @@
-# Copyright 2017 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2017 Dominique Revuz
+#  Copyright (C) 2019 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Ecrire une fonction qui calcule un polynome
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
 
-author=N Borie & DR
-title=Écrire une fonction qui calcule un polynome
-tag=function|return
+extends=/ComputerScience/C/template/std_progC.pl
+
+author=Nicolas Borie
+
+title=Écrire une fonction qui calcule les valeurs d'un polynome
+tag=function|return|polynome|evaluation
+
 extends=/ComputerScience/C/template/stdsandboxC.pl
-
-
 
 editor.code==
 double polynome(...){
@@ -16,7 +31,7 @@ double polynome(...){
 ==
 
 
-codeafter==
+code_after==
 
 #include <stdio.h>
 #include <stdlib.h>    
@@ -83,15 +98,14 @@ if __name__ == "__main__":
 
 
     
-tests==
-
-[["Basique", "0 0 0", ""],
-["Aléatoire", " ".join([str(random.randint(-10, 10)) for i in range(3)]), ""],
-["Aléatoire", " ".join([str(random.randint(-10, 10)) for i in range(3)]), ""],
-["Aléatoire", " ".join([str(random.randint(-10, 10)) for i in range(3)]), ""],
-["Aléatoire", " ".join([str(random.randint(-10, 10)) for i in range(3)]), ""]]
-
+checks_args_stdin==
+[["Test basique", ["0", "0", "0"], ""],
+ ["Test aléatoire", [str(randint(-10, 10)) for i in range(3)], ""],
+ ["Test aléatoire", [str(randint(-10, 10)) for i in range(3)], ""],
+ ["Test aléatoire", [str(randint(-10, 10)) for i in range(3)], ""],
+ ["Test aléatoire", [str(randint(-10, 10)) for i in range(3)], ""]]
 ==
+
 
 
 
