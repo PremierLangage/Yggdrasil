@@ -16,7 +16,7 @@
 # print(a, b, c)
 #
 
-extends = ComputerScience/python/AP1-1920/templates/generic/generic.pl
+extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
 title = Tri de trois valeurs
 
 text==
