@@ -46,10 +46,14 @@ int main(int argc, char* argv[]){
 }
 ==
 
-builder==
-import sys
-import json
-from random import randint, choice, seed
+
+before ==#|python|
+from random import randint, choice
+
+nb_attempt=0
+compiler="gcc"
+cflags=["-Wall", "-ansi"]
+libflags=[]
 
 def codeandtextpoly():
     """
@@ -72,32 +76,15 @@ def codeandtextpoly():
     ("(a-3)*(b*b+2)*(c-8)","(a - 3)(b^2 + 2)(c - 8)"),
     ]
     return choice(l)
-    
 
-def build(dic):
-    if 'seed' not in dic:
-        dic['seed']=str(randint(0,500))
-    seed(dic['seed'])
+code, text = codeandtextpoly()
 
-    code, text = codeandtextpoly()
+solution="\ndouble polynome(int a, int b, int c){\nreturn "+code+";\n}\n"
+text="""Écrire une function *polynome* qui prend en argument 3 entiers *a*, *b* et *c* et qui retourne l'évaluation du polynome:\n\n\t $%{}%$ """.format(text)
 
-    dic['solution']="\ndouble polynome(int a, int b, int c){\nreturn "+code+";\n}\n"
-    dic['text']="""Écrire une function *polynome* qui prend en argument 3 entiers *a*, *b* et *c* et qui retourne l'évaluation du polynome:\n\n\t $%{}%$ """.format(text)
-    return dic
-    
-if __name__ == "__main__":
-    with open(sys.argv[1],'r') as f:
-        context = json.load(f)
-    f.close()
-    context = build(context)
-    with open(sys.argv[2], 'w') as f:
-        json.dump(context, f)
-    f.close()
-    sys.exit(0)
+text+=" {{ editor|component }} "
 ==
 
-
-    
 checks_args_stdin==
 [["Test basique", ["0", "0", "0"], ""],
  ["Test aléatoire", [str(randint(-10, 10)) for i in range(3)], ""],
