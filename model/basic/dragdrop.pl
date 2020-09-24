@@ -54,9 +54,9 @@ form ==
 evaluator ==
 for i in range(drops):
     if drops[i].content == dropsolutions[i]:
-        drop.css += "success-state"
+        drops[i].css += "success-state"
     else:
-        drop.css += "error-state"    
+        drops[i].css += "error-state"    
 ==
 
 
