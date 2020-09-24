@@ -89,7 +89,13 @@ l'équipe.
 
 #@ priority.pl
 @/ComputerScience/python/AP1-2021/chapitre1/priority-2021.pl
-@ bascule.pl
+
+
+#@ bascule.pl
+@/ComputerScience/python/AP1-2021/chapitre1/bascule-2021.pl
+
+
+
 @ trinome.pl
 
 
