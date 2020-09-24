@@ -13,7 +13,7 @@ Ecrire une fonction `est_factoriel` qui reçoit un  entier et  renvoie 1 s'il es
 ==
 
 editor.code==
-# Votre code 
+/*Votre code*/
 
 ==
 
