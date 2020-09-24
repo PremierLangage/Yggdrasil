@@ -35,6 +35,9 @@ def nb_sols(a, b, c):
     else:
         return 0
 
+def d():
+    return random.randin(1,10)
+
 essais = [
     [0, 0, 0], [0, 0, 1], [0, 1, 1], 
     [1, 3, 1], [1, 2, 1], [1, 1, 1],
@@ -42,7 +45,8 @@ essais = [
         random.randint(0, 10),
         random.randint(0, 10),
         random.randint(0, 10)
-    ]
+    ],
+    [d(),d(),d()]
 ]
 
 essais += []
