@@ -54,37 +54,37 @@ before==#|python|
 ==
 
 mplsoluce0==
-Test 1 
+Simple
 10
 4
 ==
 mplsoluce1==
-Test 2 
+Diviseur plus grand
 1
 4
 ==
 mplsoluce2==
-Test 3
+Valeur Négative
 -1
 5
 ==
 mplsoluce4==
-Test 4 
+Plus grand 
 100
 3
 ==
 mplsoluce3==
-Test 3 
+Reste Nul
 3
 1
 ==
 mplsoluce5==
-Test 6
+Attention a la division par zéro
 10
 0
 ==
-mplsoluce5==
-Test 7
+mplsoluce6==
+Attention a la division par zéro
 0
 0
 ==
