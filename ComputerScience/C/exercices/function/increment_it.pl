@@ -25,11 +25,12 @@ tag=function|pointeur|simple
 text==
 Écrire une function **incremente** qui prend l'adresse **p** d'un entier et un 
 entier **inc** et incrémente l'entier pointé par **p** de la valeur **inc**.
-La fonction retourne void.
+La fonction retourne `void`.
 
 
 Le programme de test sera le suivant :
 
+```c
     #include <stdio.h>
     #include <stdlib.h>    
         
@@ -41,7 +42,7 @@ Le programme de test sera le suivant :
       printf("%d + %d  == %d \n",a,b,c);
       return 0;
     }
-
+```
 
 ==
 
