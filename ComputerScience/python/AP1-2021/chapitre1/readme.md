@@ -307,5 +307,18 @@ Idée: déterminer le nombre de solutions d'un trinôme du second degré à l'ai
 
     - 
 
+# Exercice 17
+
+@/ComputerScience/python/AP1-2021/chapitre1/intstr-2021.pl
+
+Idée: distinguer int et string de façon
+
+**Changements:** 
+    - ajout des tags expression|variables|polynome|trinome|int|float|type
+   
+
+**Remarques/commentaires:**
+
+    - 
 
 
