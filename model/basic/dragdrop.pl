@@ -55,6 +55,7 @@ evaluator ==
 n = len(drops)
 num_right = 0
 num_wrong = 0
+feedback = drops[0].content
 for i in range(n):
     if drops[i].content == dropsolutions[i]:
         num_right += 1
