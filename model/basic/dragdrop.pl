@@ -8,14 +8,14 @@ drops = []
 labels = []
 
 if isinstance(dropsolutions, str):
-    list_dropsolutions = dropsolutions.splitlines()
+    lstdropsolutions = dropsolutions.splitlines()
 else:
-    list_dropsolutions = dropsolutions
+    lstdropsolutions = dropsolutions
 
 if 'labelcontents' in globals():
     list_labelcontents = labelcontents.splitlines()
 else:
-    list_labelcontents = list(set(dropsolutions))
+    list_labelcontents = list(set(lstdropsolutions))
 
 for content in list_labelcontents:
     labels.append(CustomDragDrop.Label(content=content))
@@ -49,7 +49,7 @@ num_right = 0
 num_wrong = 0
 
 for i in range(n):
-    if drops[i].content == lst_dropsolutions[i]:
+    if drops[i].content == lstdropsolutions[i]:
         num_right += 1
         drops[i].css += "success-state"
     else:
