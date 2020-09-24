@@ -18,7 +18,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
 title=Renverser les mots d'une phrase
-tag=function|string
+tag=function|string|mots|difficile
 
 text==
 Écrire une fonction C **reverse_words** qui affiche le contenu de la phrase 
@@ -91,5 +91,6 @@ checks_args_stdin==#|python|
  ["Test aléatoire 6", [" ".join([''.join([chr(randint(97,122)) for j in range(randint(1,20))]) for i in range(randint(1, 11))])], ""],
  ["Test aléatoire 7", [" ".join([''.join([chr(randint(97,122)) for j in range(randint(1,20))]) for i in range(randint(1, 12))])], ""]]
 ==
+
 
 
