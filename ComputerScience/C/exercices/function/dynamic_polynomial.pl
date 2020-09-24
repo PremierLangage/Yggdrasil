@@ -31,6 +31,10 @@ double polynome(...){
 ==
 
 
+code_before==
+
+==
+
 code_after==
 
 #include <stdio.h>
