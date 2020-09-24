@@ -30,7 +30,8 @@ La fonction retourne `void`.
 
 Le programme de test sera le suivant :
 
-```C
+
+
     #include <stdio.h>
     #include <stdlib.h>    
         
@@ -42,7 +43,7 @@ Le programme de test sera le suivant :
       printf("%d + %d  == %d \n",a,b,c);
       return 0;
     }
-```
+
 
 ==
 
