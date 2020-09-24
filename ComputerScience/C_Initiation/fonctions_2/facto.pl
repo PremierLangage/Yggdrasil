@@ -62,12 +62,13 @@ return 0;
 
 tests==
 [ ["Basique", "", "10"],
-  ["impssible", "", "-1"],
+  ["impossible", "", "-1"],
   ["fatoriel", "", "6"],
   ["Aléatoire", "",str(random.randint(1, 20))],
   ["Aléatoire", "", str(random.choice([720, 40,3628800,40320]))] 
   ]
 ==
+
 
 
 
