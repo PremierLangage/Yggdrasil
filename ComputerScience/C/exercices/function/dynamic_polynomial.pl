@@ -82,7 +82,7 @@ code, text = codeandtextpoly()
 solution="\ndouble polynome(int a, int b, int c){\nreturn "+code+";\n}\n"
 text="""Écrire une function *polynome* qui prend en argument 3 entiers *a*, *b* et *c* et qui retourne l'évaluation du polynome:\n\n\t $%{}%$ """.format(text)
 
-text+=" {{ editor|component }} "
+text+="\n\n <br /> {{ editor|component }} "
 ==
 
 checks_args_stdin==
