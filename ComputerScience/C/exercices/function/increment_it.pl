@@ -51,7 +51,7 @@ editor.code==
 }
 ==
 
-solution==
+solution==#|c|
 void incremente(int *p,int inc)
 {
     *p += inc ;
@@ -59,7 +59,7 @@ void incremente(int *p,int inc)
 
 ==
 
-codeafter==
+code_after==#|c|
 
 #include <stdio.h>
 #include <stdlib.h>    
@@ -74,16 +74,17 @@ int main(int argc, char* argv[]){
 }
 ==
 
+code_before==#|c|
+
+==
+
     
-tests==
-
+checks_args_stdin==#|python|
 [["Basique", "1 1", ""],
-["Aléatoire", ' '.join([str(random.randint(10, 1000)) for i in range(2)]), ""],
-["Aléatoire", ' '.join([str(random.randint(10, 1000)) for i in range(2)]), ""],
-["Aléatoire", ' '.join([str(random.randint(10, 1000)) for i in range(2)]), ""],
-["Aléatoire", ' '.join([str(random.randint(10, 1000)) for i in range(2)]), ""]
-]
-
+ ["Aléatoire", ' '.join([str(random.randint(10, 1000)) for i in range(2)]), ""],
+ ["Aléatoire", ' '.join([str(random.randint(10, 1000)) for i in range(2)]), ""],
+ ["Aléatoire", ' '.join([str(random.randint(10, 1000)) for i in range(2)]), ""],
+ ["Aléatoire", ' '.join([str(random.randint(10, 1000)) for i in range(2)]), ""]]
 ==
 
 
