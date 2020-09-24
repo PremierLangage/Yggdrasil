@@ -15,7 +15,6 @@ habet
 ==
 
 text ==
-{{ list_dropsolutions }}
 Compléter la phrase suivante avec les étiquettes proposées.
 ==
 
