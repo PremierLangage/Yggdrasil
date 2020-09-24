@@ -29,7 +29,7 @@ int saisie(int min,int max,int *n){{
 
 solution==
 int saisie(int min,int max,int *n){
- int nb=1;
+ int nb=0;
   if( min>max){
     int tmp;
     tmp=min;
@@ -73,6 +73,7 @@ tests==
  ["Aléatoire",' '.join([str(random.randint(1,4)),str(random.randint(11, 24))]), "0 1 5"]
  ]
 ==
+
 
 
 
