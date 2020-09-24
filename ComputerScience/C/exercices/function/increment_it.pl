@@ -83,11 +83,12 @@ code_before==#|c|
 
     
 checks_args_stdin==#|python|
-[["Basique", ["1", "1"], ""],
- ["Aléatoire", [str(randint(10, 1000)) for i in range(2)], ""],
- ["Aléatoire", [str(randint(10, 1000)) for i in range(2)], ""],
- ["Aléatoire", [str(randint(10, 1000)) for i in range(2)], ""],
- ["Aléatoire", [str(randint(10, 1000)) for i in range(2)], ""]]
+[["Test basique", ["1", "1"], ""],
+ ["Test aléatoire 1", [str(randint(10, 1000)) for i in range(2)], ""],
+ ["Test aléatoire 2", [str(randint(10, 1000)) for i in range(2)], ""],
+ ["Test aléatoire 3", [str(randint(10, 1000)) for i in range(2)], ""],
+ ["Test aléatoire 4", [str(randint(10, 1000)) for i in range(2)], ""],
+ ["Test aléatoire 5", [str(randint(10, 1000)) for i in range(2)], ""]]
 ==
 
 
