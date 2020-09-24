@@ -52,7 +52,7 @@ form ==
 ==
 
 evaluator ==
-for i in range(drops):
+for i in range(len(drops)):
     if drops[i].content == dropsolutions[i]:
         drops[i].css += "success-state"
     else:
