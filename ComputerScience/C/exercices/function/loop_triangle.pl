@@ -40,7 +40,8 @@ Pour n = 5, on devra voir
     ***
     ****
     *****    
-    
+
+
 ==
 
 editor.code==
