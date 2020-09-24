@@ -52,11 +52,19 @@ form ==
 ==
 
 evaluator ==
-for i in range(len(drops)):
+n = len(drops)
+for i in range(n):
     if drops[i].content == dropsolutions[i]:
+        num_right += 1
         drops[i].css += "success-state"
     else:
-        drops[i].css += "error-state"    
+        num_wrong +=1
+        drops[i].css += "error-state"
+
+if num_wrong>0:
+    score = 0
+else:
+    score = 100
 ==
 
 
