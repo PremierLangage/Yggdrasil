@@ -20,7 +20,7 @@ else:
 for content in list_labelcontents:
     labels.append(CustomDragDrop.Label(content=content))
 
-nbdrops = len(list_dropsolutions)
+nbdrops = len(lstdropsolutions)
 for _ in list_dropsolutions:
     drops.append(CustomDragDrop.Drop())
 ==
