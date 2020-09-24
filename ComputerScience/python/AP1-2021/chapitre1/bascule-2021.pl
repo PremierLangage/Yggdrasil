@@ -27,7 +27,7 @@ grade = (100, component.value)
 title== #|html|
 Bascule
 
-tag= valeurs|variables|bascule
+tag= valeurs|variables|bascule|expression
 ==
 
 before== #|python|
@@ -82,6 +82,7 @@ else:
 form==
    var = {{ component|component}}
 ==
+
 
 
 
