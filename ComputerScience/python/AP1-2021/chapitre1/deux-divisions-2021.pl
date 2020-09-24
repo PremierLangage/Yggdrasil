@@ -53,41 +53,42 @@ Division par 0
 before==#|python|
 ==
 
-mlsoluce0==
+mplsoluce0==
 Test 1 
 10
 4
 ==
-mlsoluce1==
+mplsoluce1==
 Test 2 
 1
 4
 ==
-mlsoluce2==
+mplsoluce2==
 Test 3
 -1
 5
 ==
-mlsoluce4==
+mplsoluce4==
 Test 4 
 100
 3
 ==
-mlsoluce3==
+mplsoluce3==
 Test 3 
 3
 1
 ==
-mlsoluce5==
+mplsoluce5==
 Test 6
 10
 0
 ==
-mlsoluce5==
+mplsoluce5==
 Test 7
 0
 0
 ==
+
 
 
 
