@@ -68,9 +68,9 @@ Oui heureusement il y en a des faciles...
 form== #|html|
 Nombre d'essais : {{essai}}
 <ul>
-    {% for i in inputs %}
-        {{ op1[n] + ope[n] + op2[n] }}
-        {{ i|component }}
+    {% for i in range(N) %}
+        {{ op1[i] + ope[i] + op2[i] }}
+        {{ inputs[i]|component }}
     {% endfor %}
 </ul>
 ==
