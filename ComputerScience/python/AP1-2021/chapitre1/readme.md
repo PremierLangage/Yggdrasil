@@ -317,7 +317,7 @@ Idée: montrer la différence entre int et string
     - 
 
 **Remarques/commentaires:**
-    - nouvel exercice
+    - nouvel exercice, à tester
 
 
 
