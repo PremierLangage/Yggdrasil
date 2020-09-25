@@ -4,7 +4,7 @@
 author=
 title=Caractères minuscules ASCII
 
-tag=AppelFonction|Printf|Scanf|InstructionsConditionnelles|Modulo|Float
+tag=AppelFonction|Printf|Boucle|Char
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
