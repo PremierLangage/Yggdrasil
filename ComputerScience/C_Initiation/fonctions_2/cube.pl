@@ -3,7 +3,9 @@
 author=
 
 title=Appeler les fonctions qui vont bien...
-tag=program
+
+tag=program (input|print|variable|type)
+
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
@@ -73,6 +75,7 @@ tests==
  ["Aléatoire", str(random.randint(-100, 100)), ""],
  ["Aléatoire", str(random.randint(-100, 100)), ""]]
 ==
+
 
 
 
