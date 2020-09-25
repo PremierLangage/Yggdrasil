@@ -1,8 +1,21 @@
-# Copyright 2017 DR
+#*****************************************************************************
+#  Copyright (C) 2017 Dominique Revuz
+#  Copyright (C) 2020 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Maximum de trois entiers
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
 
-author=NB&DR
+author=Dominique Revuz
 
 title=Maximum de trois entiers
 tag=function
@@ -63,5 +76,6 @@ tests==
   ["Aléatoire", ' '.join([str(random.randint(-1000, 1000)) for i in range(3)]), ""],
   ["Aléatoire", ' '.join([str(random.randint(-1000, 1000)) for i in range(3)]), ""] ]
 ==
+
 
 
