@@ -3,5 +3,6 @@ title= Questions sur les types et affectations
 
 questions=@ types_affect.txt
 
-tag=type, affectations
+tag=Type|DeclarationVariable|Char 
+
 
