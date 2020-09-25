@@ -49,8 +49,8 @@ int divise(int n){
     int nb=2,div;
 	
 	for (div = 2; div < n; div++) {
-		if (n%div ==0)
-      printf("%d\n", n);
+		if (n%div == 0)
+      printf("%d\n", div);
       nb++;
 	}
 	return nb;
