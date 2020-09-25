@@ -29,7 +29,7 @@ Un nombre : 6
 ==
 
 editor.code==
-... divise(...) {
+/*type retour*/ divise(/*paramètre(s)*/) {
   /* votre code ici... */
 }
 
@@ -45,12 +45,13 @@ codebefore==
 
 solution==
 
-int divise( int n){
+int divise(int n){
     int nb=2,div;
 	
 	for (div = 2; div < n; div++) {
 		if (n%div ==0)
-            nb++;
+      printf("%d\n", n);
+      nb++;
 	}
 	return nb;
 }
@@ -82,6 +83,7 @@ tests==
   ["Aléatoire", str(random.randint(1, 20)), ""],
   ["Aléatoire", str(random.randint(20, 40)), ""] ]
 ==
+
 
 
 
