@@ -1,7 +1,7 @@
 
 
 title= moyenne d'une suite
-tag=boucle,tests
+tag=AppelFonction|Printf|Scanf|InstructionsConditionnelles|Modulo|
 author=
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
@@ -80,6 +80,7 @@ tests==
   ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,10))])+" -1"]
   ]
 ==
+
 
 
 
