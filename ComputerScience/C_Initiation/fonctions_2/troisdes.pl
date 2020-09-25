@@ -3,7 +3,7 @@ author=
 
 title= lancé de 3 dés
 
-tag=function
+tag=Fonction|AppelFonction|TransmissionParametre|BouclesImbriquees
 
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
@@ -11,7 +11,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==  
  
-Ecrire une fonction 'lance_de' qui reçoit un  entier n et renvoie
+Ecrire une fonction 'lance_de' qui reçoit un entier n et renvoie
  le nombre de façon d'obtenir n avec 3 dés (à 6 faces).
 
 **Exemple :**
@@ -76,6 +76,7 @@ tests==
   ["Aléatoire", str(random.randint(1, 20)), ""],
   ["Aléatoire", str(random.randint(20, 40)), ""] ]
 ==
+
 
 
 
