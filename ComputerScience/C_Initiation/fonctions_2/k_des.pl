@@ -10,7 +10,8 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 
 text==  
- 
+Pour les plus forts :
+
 Ecrire une fonction 'lance_k_de' qui reçoit deux entiers n et k et renvoie
  le nombre de façon d'obtenir n avec k dés (à 6 faces)
 
