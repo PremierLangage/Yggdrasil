@@ -7,22 +7,22 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==  
  
-Ecrire une fonction 'lance_k_de' qui reçoit deux  entiers n et k renvoie
+Ecrire une fonction 'lance_k_de' qui reçoit deux entiers n et k renvoie
  le nombre de façon d'obtenir n avec k dés
 
 **Exemple :**
 
-lance_k_de(4,3) renvoie  3
+lance_k_de(4,3) renvoie  3 (2+1+1, 1+2+1, 1+1+2)
  
- lance_k_de(4,4) renvoie  1
+lance_k_de(4,4) renvoie  1 (1+1+1+1)
  
-lance_k_de(40,3) renvoie  0
+lance_k_de(40,3) renvoie  0 (max : 6+6+6)
  
 ==
 editor.code==
-/*Type retour*/ lance_k_de(/*paramètre(s)*/) {
+/*Type retour*/ lance_k_de(/*type */ n, /*type*/ k) {
   /* votre code ici... */
-  
+
 }
 ==
 
