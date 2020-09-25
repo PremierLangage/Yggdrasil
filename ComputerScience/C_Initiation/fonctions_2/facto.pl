@@ -2,7 +2,6 @@ title= Nombre Factoriel
 
 tag=Fonction|Declaration|Boucle|RetourFonction
 
-
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
 fixme= Il faudrait test le temps de calcul ... 
@@ -71,6 +70,7 @@ tests==
   ["Aléatoire", "", str(random.choice([720, 40,3628800,40320]))] 
   ]
 ==
+
 
 
 
