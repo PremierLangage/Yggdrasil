@@ -32,7 +32,7 @@ codebefore==
 ==
 
 solution==
-int triple( int n){
+int triple(int n){
 	return n*3;
 }
 ==
