@@ -13,7 +13,7 @@ before ==
 import random as rd
 
 numbers = []
-dropsol = []
+dropsolutions = []
 nbdrops = 4
 for _ in range(nbdrops):
     [a, b] = rd.sample(range(10, 100), 2)
