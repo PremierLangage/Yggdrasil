@@ -9,7 +9,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 text==  
  
 Ecrire une fonction 'lance_de' qui reçoit un  entier n et renvoie
- le nombre de façon d'obtenir n avec 3 dés.
+ le nombre de façon d'obtenir n avec 3 dés (à 6 faces).
 
 **Exemple :**
 
