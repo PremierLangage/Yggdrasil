@@ -3,7 +3,9 @@ author=
 
 name=Suite de Syracuse
 title=Suite de Syracuse
-tag=program,while 
+
+tag=AppelFonction|Printf|Scanf|Boucle|InstructionsConditionnelles|Modulo 
+
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
@@ -66,6 +68,7 @@ tests==
   ["Aléatoire", "", str(random.randint(1, 20))],
   ["Aléatoire", "", str(random.randint(20, 40))] ]
 ==
+
 
 
 
