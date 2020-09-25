@@ -17,7 +17,7 @@ Ecrire une fonction **triple** qui retourne le triple de son paramêtre.
 ==
 
 editor.code==
-# Votre code 
+/*Votre code*/ 
 
 ==
 
