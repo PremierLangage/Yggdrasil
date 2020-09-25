@@ -35,22 +35,3 @@ form==
 {% endfor %}
 </ul>
 ==
-
-evaluator==
-from customdragdrop import CustomDragDrop
-
-grade=CustomDragDrop.eval(drop,sol)
-==
-
-extracss == #|html| 
-<style>
-    .myclass{
-        #padding: 1em;
-        min-width: 4em;
-        }
-</style>
-==
-
-
-
-
