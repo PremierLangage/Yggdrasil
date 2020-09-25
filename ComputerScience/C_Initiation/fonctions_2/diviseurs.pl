@@ -46,7 +46,7 @@ codebefore==
 solution==
 
 int divise(int n){
-    int nb=2,div;
+    int nb=1,div;
 	
 	for (div = 2; div < n; div++) {
 		if (n%div == 0)
@@ -80,6 +80,8 @@ tests==
 [ ["Basique", "10", ""],
   ["Vide", "0", ""],
   ["Grand", "100", ""],
+  ["Négatif", "-1", ""],
+  ["Nul", "0", ""],
   ["Aléatoire", str(random.randint(1, 20)), ""],
   ["Aléatoire", str(random.randint(20, 40)), ""] ]
 ==
