@@ -20,8 +20,9 @@ lance_k_de(40,3) renvoie  0
  
 ==
 editor.code==
-... lance_k_de(...) {
+/*Type retour*/ lance_k_de(/*paramètre(s)*/) {
   /* votre code ici... */
+  
 }
 ==
 
@@ -84,6 +85,7 @@ tests==
    ["Aléatoire", ' '.join([str(random.randint(1, 24)), str(random.randint(1, 4))]), ""],
   ]
 ==
+
 
 
 
