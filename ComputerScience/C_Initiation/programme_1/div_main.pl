@@ -1,7 +1,7 @@
 
 title= Diviseurs d'un entier
 
-tag=AppelFonction|Printf|Scanf|OperateurBooleen
+tag=AppelFonction|Printf|Scanf|OperateurBooleen|Modulo
 
 author=
 
