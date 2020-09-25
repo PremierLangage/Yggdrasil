@@ -4,7 +4,7 @@ author=
 
 title=Appeler les fonctions qui vont bien...
 
-tag=program (input|print|variable|type)
+tag=Fonction|Appel|Transmission|variable|type)
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
@@ -12,7 +12,7 @@ text==
 Écrire une fonction *cube* qui prend en argument un entier *n* (par exemple 3) et qui affiche 
 une phrase donnant le cube de cet entier tout en rappelant cet entier (par exemple Le cube du nombre 
 3 est le nombre 27).<br>
- 0n ecrira une fonction **affiche_info** affichant la phrase et une fonction **calcule_cube**
+On ecrira une fonction **affiche_info** affichant la phrase et une fonction **calcule_cube**
 effectuant le calcul
 ==
 
