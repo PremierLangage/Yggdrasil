@@ -9,7 +9,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==  
  
-Ecrire une fonction qui reçoit un  entier  strictement positif et affiche,
+Ecrire une fonction qui reçoit un entier strictement positif et affiche,
  **un par ligne**, chacun de ses diviseurs en ordre croissant.
 La fonction renvoie le nombre de diviseurs.
 
