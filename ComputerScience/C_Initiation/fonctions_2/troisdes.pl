@@ -9,18 +9,19 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 text==  
  
 Ecrire une fonction 'lance_de' qui reçoit un  entier n et renvoie
- le nombre de façon d'obtenir n avec 3 dés
+ le nombre de façon d'obtenir n avec 3 dés.
 
 **Exemple :**
 
-lance_de(4) renvoie  3
+lance_de(4) renvoie  3 (2+1+1, 1+2+1, 1+1+2)
  
- lance_de(2) renvoie 0
+lance_de(2) renvoie 0 (min = 1+1+1)
 ==
 
 editor.code==
-... lance_de(...) {
+/*Type retour*/ lance_de(/*paramètre(s)*/) {
   /* votre code ici... */
+
 }
 ==
 
@@ -70,6 +71,7 @@ tests==
   ["Aléatoire", str(random.randint(1, 20)), ""],
   ["Aléatoire", str(random.randint(20, 40)), ""] ]
 ==
+
 
 
 
