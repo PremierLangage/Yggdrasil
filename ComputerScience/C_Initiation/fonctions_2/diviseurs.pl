@@ -2,8 +2,7 @@ author=
 
 title= Diviseurs d'un entier
 
-tag=function
-
+tag=Fonction|AppelFonction|TransmissionParametre|RetourFonction
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
