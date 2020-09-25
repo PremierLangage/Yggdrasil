@@ -2,7 +2,7 @@
 
 title= Tri de trois valeurs
 
-tag=AppelFonction|Printf|Scanf|Boucle|InstructionsConditionnelles|Modulo 
+tag=AppelFonction|Printf|Scanf|InstructionsConditionnelles
 
 author=  
 
