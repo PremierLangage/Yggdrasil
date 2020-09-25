@@ -1,5 +1,8 @@
 
+author=
+
 title= lancé de 3 dés
+
 tag=function
 
 
@@ -73,6 +76,7 @@ tests==
   ["Aléatoire", str(random.randint(1, 20)), ""],
   ["Aléatoire", str(random.randint(20, 40)), ""] ]
 ==
+
 
 
 
