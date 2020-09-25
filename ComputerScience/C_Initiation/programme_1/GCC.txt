@@ -27,10 +27,11 @@ Latex:1
      1 warning generated. 
 
 Question : quelle est la ligne GCC utilisée ?
-- gcc Moyenne_Suite.c -o Moyenne -ansi
+- gcc Moyenne_Suite.c -o Moyenne -Ansi
 + gcc Moyenne_Suite.c -o Moyenne -Wall -ansi
 - gcc Moyenne_Suite.c -o Moyenne -Wall
 - gcc Moyenne_Suite.c -o Moyenne
+
 
 
 
