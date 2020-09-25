@@ -19,7 +19,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 author=Nicolas Borie
 
 title=Un triangle avec des caractères ascii
-tag=function
+tag=function|boucle|for
 
 
 text==
@@ -91,6 +91,7 @@ checks_args_stdin==#|python|
   ["Test aléatoire 1", [str(randint(5, 10))], ""],
   ["Test aléatoire 2", [str(randint(11, 15))], ""] ]    
 ==
+
 
 
 
