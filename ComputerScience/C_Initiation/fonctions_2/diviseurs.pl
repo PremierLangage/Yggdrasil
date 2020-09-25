@@ -11,7 +11,7 @@ Ecrire une fonction qui reçoit un  entier  strictement positif et affiche,
  **un par ligne**, chacun de ses diviseurs en ordre croissant.
 La fonction renvoie le nombre de diviseurs.
 
-Si l'entier est négatif ou nul, on ne fait rien !
+Si l'entier est négatif ou nul, la fonction retourne -1.
 
 **Exemple :**
 
@@ -46,12 +46,16 @@ codebefore==
 solution==
 
 int divise(int n){
-    int nb=1,div;
+  if(n <= 0){
+    return -1;
+  }
+  int nb=0,div;
 	
-	for (div = 2; div < n; div++) {
-		if (n%div == 0)
+	for (div = 2; div <= n; div++) {
+		if (n%div == 0){
       printf("%d\n", div);
       nb++;
+    }
 	}
 	return nb;
 }
@@ -67,9 +71,9 @@ codeafter==
 
 int main(int argc, char const *argv[]) {
 	int n = atoi(argv[1]);
-int nb=0;   
+  int nb=0;   
 	nb=divise(n);
-  if (n>0)
+  /*if (n>0)*/
 		printf("%d a %d diviseurs\n",n,nb);
 	return 0;
 }
