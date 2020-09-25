@@ -81,7 +81,9 @@ int main(int argc, char const *argv[]) {
 
 
 tests==
-[ ["Basique", "10", ""],
+[ 
+  ["Exemple énoncé", "6", ""],
+  ["Basique", "10", ""],
   ["Vide", "0", ""],
   ["Grand", "100", ""],
   ["Négatif", "-1", ""],
