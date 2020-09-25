@@ -1,3 +1,4 @@
+author=
 
 title= Ecrire une fonction 
 tag=function
@@ -53,6 +54,7 @@ tests==
   ["Aléatoire", "",str(random.randint(10, 202))],
   ]
 ==
+
 
 
 
