@@ -32,7 +32,6 @@ Suite vide.<br>
 
 editor.code==
 int main(void) {
-...
 printf("Entrer une suite d'entiers positifs:\n");
   /* votre code ici... */
 return 0;
@@ -80,6 +79,7 @@ tests==
   ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,10))])+" -1"]
   ]
 ==
+
 
 
 
