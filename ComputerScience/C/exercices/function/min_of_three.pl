@@ -1,14 +1,27 @@
-# Copyright 2017 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2017 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Minimum de trois entiers
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Minimum de trois entiers
 tag=function
-extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-
 Écrire une fonction **min_of_three** qui prend trois entiers en
 paramètres et retourne le minimum de ces trois entiers.
 
@@ -20,7 +33,7 @@ editor.code==
 }
 ==
 
-solution==
+solution==#|c|
 
 int min_of_three(int a, int b, int c){
   if (a <= b){
@@ -35,8 +48,11 @@ int min_of_three(int a, int b, int c){
 
 ==
 
-codeafter==
+code_before==
 
+==
+
+code_after==#|c|
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -51,15 +67,14 @@ int main(int argc, char* argv[]){
 }
 ==
 
-tests==
-[ ["Basique", "3 2 1", ""],
-  ["Égaux", "10 10 10", ""],
-  ["Négatif", "12 -6 3", ""],
-  ["Aléatoire", ' '.join([str(random.randint(-1000, 1000)) for i in range(3)]), ""],
-  ["Aléatoire", ' '.join([str(random.randint(-1000, 1000)) for i in range(3)]), ""],
-  ["Aléatoire", ' '.join([str(random.randint(-1000, 1000)) for i in range(3)]), ""],
-  ["Aléatoire", ' '.join([str(random.randint(-1000, 1000)) for i in range(3)]), ""] ]
+
+checks_args_stdin==#|python|
+[ ["Test basique", ["3", "2", "1"], ""],
+  ["Égalité parfaite", ["10", "10", "10"], ""],
+  ["Un négatif", ["12", "-6", "3"], ""],
+  ["Test aléatoire 1", [str(randint(-1000, 1000)) for i in range(3)], ""],
+  ["Test aléatoire 2", [str(randint(-1000, 1000)) for i in range(3)], ""],
+  ["Test aléatoire 3", [str(randint(-1000, 1000)) for i in range(3)], ""],
+  ["Test aléatoire 4", [str(randint(-1000, 1000)) for i in range(3)], ""] ]
 ==
-
-
 
