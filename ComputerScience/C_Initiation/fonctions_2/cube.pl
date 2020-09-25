@@ -4,7 +4,7 @@ author=
 
 title=Appeler les fonctions qui vont bien...
 
-tag=Fonction|Appel|Transmission|variable|type)
+tag=Fonction|AppelFonction|TransmissionParametre|RetourFonction
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
