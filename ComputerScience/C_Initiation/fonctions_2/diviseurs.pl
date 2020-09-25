@@ -2,7 +2,7 @@ author=
 
 title= Diviseurs d'un entier
 
-tag=Fonction|DeclarationFonction|TransmissionParametre
+tag=Fonction|DeclarationFonction|TransmissionParametre|Boucle
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
