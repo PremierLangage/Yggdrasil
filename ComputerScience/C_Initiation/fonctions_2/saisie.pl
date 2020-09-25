@@ -15,7 +15,7 @@ text==
  les valeurs seront echangées.  
  La saisie a lieu tant que l'utilisateur entre un entier incorrect. 
  La fonction renvoie le nombre d'essais qui ont été nécessaires.
- La fonction reçoit l'entier minimum, l'entier maximum et un pointeur sur l'entier saisi à comparer aux min et max.
+ La fonction reçoit l'entier minimum, l'entier maximum et une transmission par adresse sur l'entier saisi à comparer aux min et max.
 ==
 
 editor.code==
