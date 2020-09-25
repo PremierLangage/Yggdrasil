@@ -80,7 +80,9 @@ int nb=0;
 
 tests==
 [ 
-  ["Exemple énoncé", "4 3", ""],
+  ["Exemple énoncé1", "4 3", ""],
+  ["Exemple énoncé2", "4 4", ""],
+  ["Exemple énoncé3", "40 3", ""],
   ["Basique", "5 2", ""],
   ["Vide", "0 3", ""],
   ["Grand", "20 5", ""],
