@@ -3,7 +3,7 @@ author=
 
 title= lancé de k dés
 
-tag=function
+Fonction|DeclarationFonction|TransmissionParametre|BouclesImbriquees
 
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
@@ -93,6 +93,7 @@ tests==
    ["Aléatoire", ' '.join([str(random.randint(1, 24)), str(random.randint(1, 4))]), ""],
   ]
 ==
+
 
 
 
