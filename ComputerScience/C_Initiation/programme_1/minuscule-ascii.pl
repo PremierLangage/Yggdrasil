@@ -22,9 +22,9 @@ editor.code==
 #include <stdio.h>
 
 int main(){
-  ...
-  printf(" --> ");
-  ...
+  
+  printf(" --> "); /* A compléter */
+  
   return 0;
 }
 ==
@@ -44,6 +44,7 @@ int main(){
 tests==
 [["Simple exéécution", "", ""]]
 ==
+
 
 
 
