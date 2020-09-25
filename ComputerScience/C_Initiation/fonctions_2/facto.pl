@@ -1,6 +1,6 @@
 title= Nombre Factoriel
 
-tag=Fonction|Declaration|Boucle|RetourFonction
+tag=Fonction|DeclarationFonction|Boucle|RetourFonction
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
@@ -70,6 +70,7 @@ tests==
   ["Aléatoire", "", str(random.choice([720, 40,3628800,40320]))] 
   ]
 ==
+
 
 
 
