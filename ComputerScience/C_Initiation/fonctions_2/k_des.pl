@@ -79,7 +79,9 @@ int nb=0;
 
 
 tests==
-[ ["Basique", "5 2", ""],
+[ 
+  ["Exemple énoncé", "4 3", ""],
+  ["Basique", "5 2", ""],
   ["Vide", "0 3", ""],
   ["Grand", "20 5", ""],
    ["Aléatoire", ' '.join([str(random.randint(1, 24)), str(random.randint(1, 4))]), ""],
