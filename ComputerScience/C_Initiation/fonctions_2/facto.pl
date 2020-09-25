@@ -1,6 +1,6 @@
 title= Nombre Factoriel
 
-tag=Fonction|Boucle|
+tag=Fonction|Declaration|Boucle|RetourFonction
 
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
