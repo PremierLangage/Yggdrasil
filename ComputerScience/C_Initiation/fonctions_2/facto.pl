@@ -10,6 +10,7 @@ fixme= Il faudrait test le temps de calcul ...
 text==  
  On appelle nombre factoriel un entier $%n%$ pour lequel il existe un entier $%p%$ tel que $%p!=n%$.<br>
 Ecrire une fonction `est_factoriel` qui reçoit un  entier et  renvoie 1 s'il est factoriel et 0 sinon.
+Attention, il ne faut utiliser qu'une seule boucle.
 
 ==
 
