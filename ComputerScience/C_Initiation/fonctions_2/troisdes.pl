@@ -65,7 +65,9 @@ int nb=0;
 
 
 tests==
-[ ["Basique", "5", ""],
+[ 
+  ["Test énoncé, "4", ""],
+  ["Basique", "5", ""],
   ["Vide", "0", ""],
   ["Grand", "10", ""],
   ["Aléatoire", str(random.randint(1, 20)), ""],
