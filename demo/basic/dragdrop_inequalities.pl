@@ -6,7 +6,7 @@ Comparaison de nombres (DragDrop)
 
 labelcontents ==
 a
-<
+>
 ==
 
 before ==
