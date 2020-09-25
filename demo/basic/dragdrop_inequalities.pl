@@ -6,6 +6,7 @@ Comparaison de nombres (DragDrop)
 
 labelcontents ==
 >
+a
 <
 ==
 
