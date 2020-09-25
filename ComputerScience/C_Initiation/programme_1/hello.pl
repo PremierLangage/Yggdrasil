@@ -6,7 +6,9 @@
 author=
 name=Premier programme en C
 title=Premier programme en C
-tag=program
+
+tag=AppelFonction|Printf|RetourLigne
+
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
@@ -35,6 +37,7 @@ int main(void){
 tests==
 [ ["simple éxécution", "","", "Hello World!\n"] ]
 ==
+
 
 
 
