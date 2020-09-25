@@ -1,7 +1,7 @@
 
 title= Diviseurs d'un entier
 
-tag=AppelFonction|Printf|Scanf|OperateurBooleen|Modulo
+tag=AppelFonction|Printf|Scanf|InstructionsConditionnelles|Modulo|Boucle|
 
 author=
 
@@ -85,6 +85,7 @@ tests==
   ["Aléatoire", "", str(random.randint(1, 20))],
   ["Aléatoire", "", str(random.randint(20, 40))] ]
 ==
+
 
 
 
