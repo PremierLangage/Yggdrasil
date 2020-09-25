@@ -1,7 +1,9 @@
 
 
 title= Tri de trois valeurs
-tag=boucle,tests
+
+tag=AppelFonction|Printf|Scanf|Boucle|InstructionsConditionnelles|Modulo 
+
 author=  
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
@@ -61,6 +63,7 @@ tests==
   ["Aléatoire", "",  " ".join([str(random.randint(0,100)) for i in range(3)])]
 ]
 ==
+
 
 
 
