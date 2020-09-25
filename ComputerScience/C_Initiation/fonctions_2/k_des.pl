@@ -41,7 +41,7 @@ codebefore==
 solution==
 
 
-int lance_k_de( int n,int k){
+int lance_k_de(int n,int k){
     int nb=0;
     int tout=0;
     int i;
