@@ -1,7 +1,8 @@
 author=
 
 title= Ecrire une fonction 
-tag=function
+
+tag=Fonction|DeclarationFonction|TransmissionParametre
 
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
@@ -54,6 +55,7 @@ tests==
   ["Aléatoire", "",str(random.randint(10, 202))],
   ]
 ==
+
 
 
 
