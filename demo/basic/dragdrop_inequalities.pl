@@ -4,17 +4,20 @@ title ==
 Comparaison de nombres (DragDrop)
 ==
 
+labelcontents ==
+>
+<
+==
+
 before ==
 import random as rd
-lt = "&lt;"
-gt = "&gt;"
 
 numbers = []
 dropsol = []
 nbdrops = 4
 for _ in range(nbdrops):
-    [a,b] = rd.sample(range(10,100),2)
-    numbers.append([a,b])
+    [a, b] = rd.sample(range(10, 100), 2)
+    numbers.append([a, b])
     if a < b:
         dropsol.append(lt)
     else:
@@ -47,6 +50,7 @@ extracss == #|html|
         }
 </style>
 ==
+
 
 
 
