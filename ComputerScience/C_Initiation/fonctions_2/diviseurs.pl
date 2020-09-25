@@ -51,7 +51,7 @@ int divise(int n){
   }
   int nb=0,div;
 	
-	for (div = 2; div <= n; div++) {
+	for (div = 1; div <= n; div++) {
 		if (n%div == 0){
       printf("%d\n", div);
       nb++;
