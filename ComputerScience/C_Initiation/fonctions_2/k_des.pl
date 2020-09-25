@@ -1,7 +1,7 @@
 
 author=
 
-title= lancé de k dés
+title= lancé de k dés (Pour les plus forts)
 
 tag=Fonction|DeclarationFonction|TransmissionParametre|BouclesImbriquees
 
@@ -10,7 +10,6 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 
 text==  
-Pour les plus forts :
 
 Ecrire une fonction 'lance_k_de' qui reçoit deux entiers n et k et renvoie
  le nombre de façon d'obtenir n avec k dés (à 6 faces)
