@@ -4,7 +4,7 @@ tag=function
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
-fixme= IL faudrais test le temps de calcul ... 
+fixme= Il faudrait test le temps de calcul ... 
 
 
 text==  
@@ -68,6 +68,7 @@ tests==
   ["Aléatoire", "", str(random.choice([720, 40,3628800,40320]))] 
   ]
 ==
+
 
 
 
