@@ -9,34 +9,35 @@ tag=program
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
 text==
-Écrire une fonction *saisie* qui effectue la saisie controlée d'un entier compris au sens  large entre deux valeurs 'min' et 'max'. Si 'min>max'
+Écrire une fonction *saisie* qui effectue la saisie controlée d'un entier compris au sens large entre deux valeurs 'min' et 'max'. Si 'min>max'
  les valeurs seront echangées.  
  La saisie a lieu tant que l'utilisateur entre un entier incorrect. 
- La fonction renvoie le nombre d'essais qui ont té nécessaires.
+ La fonction renvoie le nombre d'essais qui ont été nécessaires.
+ La fonction reçoit l'entier minimum, l'entier maximum et un pointeur sur l'entier saisi à comparer aux min et max.
 ==
 
 editor.code==
 
 
-int saisie(int min,int max,int *n){{
+int saisie( int min, int max, int *n){{
 
-  printf( "entrez un entier compris entre %d et %d : ",min,max);
+  printf("entrez un entier compris entre %d et %d : ", min, max);
 
-
+  return /*Renvoie de la fonction*/;
 }
 
 ==
 
 solution==
-int saisie(int min,int max,int *n){
+int saisie(int min, int max, int *n){
  int nb=0;
-  if( min>max){
+  if( min>max ){
     int tmp;
     tmp=min;
     min=max;
     max=tmp;
     }
-  printf( "entrez un entier compris entre %d et %d : ",min,max);
+  printf("entrez un entier compris entre %d et %d : ", min, max);
 do{
 scanf("%d",n);
     nb+=1;
@@ -73,6 +74,7 @@ tests==
  ["Aléatoire",' '.join([str(random.randint(1,4)),str(random.randint(11, 24))]), "0 -1 5"]
  ]
 ==
+
 
 
 
