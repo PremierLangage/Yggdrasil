@@ -1,7 +1,7 @@
 
 
 title= moyenne d'une suite
-tag=AppelFonction|Printf|Scanf|InstructionsConditionnelles|Modulo|
+tag=AppelFonction|Printf|Scanf|InstructionsConditionnelles|Modulo|Float
 author=
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
