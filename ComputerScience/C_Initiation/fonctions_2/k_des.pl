@@ -1,3 +1,6 @@
+
+author=
+
 title= lancé de k dés
 tag=function
 
@@ -89,6 +92,7 @@ tests==
    ["Aléatoire", ' '.join([str(random.randint(1, 24)), str(random.randint(1, 4))]), ""],
   ]
 ==
+
 
 
 
