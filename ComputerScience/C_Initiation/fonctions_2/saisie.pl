@@ -5,7 +5,9 @@
 #author=Nicolas Borie + DR
 
 title=Saisie dans intervale
-tag=program
+
+tag=sdhfjsf|
+
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
 text==
@@ -74,6 +76,7 @@ tests==
  ["Aléatoire",' '.join([str(random.randint(1,4)),str(random.randint(11, 24))]), "0 -1 5"]
  ]
 ==
+
 
 
 
