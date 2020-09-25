@@ -19,9 +19,9 @@ for _ in range(nbdrops):
     [a, b] = rd.sample(range(10, 100), 2)
     numbers.append([a, b])
     if a < b:
-        dropsol.append(lt)
+        dropsolutions.append("<")
     else:
-        dropsol.append(gt)
+        dropsolutions.append(">")
 ==
 
 text==
