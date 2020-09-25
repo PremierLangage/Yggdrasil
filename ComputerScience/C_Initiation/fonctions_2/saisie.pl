@@ -6,7 +6,7 @@
 
 title=Saisie dans intervale
 
-tag=sdhfjsf|
+tag=Fonction|AppelFonction|TransmissionParametre|RetourFonction|TransmissionAdresse|
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
@@ -21,7 +21,7 @@ text==
 editor.code==
 
 
-int saisie( int min, int max, int *n){{
+int saisie( int min, int max, int *n){
 
   printf("entrez un entier compris entre %d et %d : ", min, max);
 
@@ -76,6 +76,7 @@ tests==
  ["Aléatoire",' '.join([str(random.randint(1,4)),str(random.randint(11, 24))]), "0 -1 5"]
  ]
 ==
+
 
 
 
