@@ -5,8 +5,8 @@ Comparaison de nombres (DragDrop)
 ==
 
 labelcontents ==
-$$<$$
-$$>$$
+$! < !$
+$! < !$
 ==
 
 before ==
