@@ -70,13 +70,13 @@ int main(int argc, char* argv[]){
 
 
 checks_args_stdin==#|python|
-[ ["Basique", ["3", "2", "1"], ""],
-  ["Égaux", ["10", "10", "10"], ""],
-  ["Négatif", ["12", "-6", "3"], ""],
-  ["Aléatoire", [str(randint(-1000, 1000)) for i in range(3)], ""],
-  ["Aléatoire", [str(randint(-1000, 1000)) for i in range(3)], ""],
-  ["Aléatoire", [str(randint(-1000, 1000)) for i in range(3)], ""],
-  ["Aléatoire", [str(randint(-1000, 1000)) for i in range(3)], ""] ]
+[ ["Test basique", ["3", "2", "1"], ""],
+  ["Égalité parfaite", ["10", "10", "10"], ""],
+  ["Un négatif", ["12", "-6", "3"], ""],
+  ["Test aléatoire", [str(randint(-1000, 1000)) for i in range(3)], ""],
+  ["Test aléatoire", [str(randint(-1000, 1000)) for i in range(3)], ""],
+  ["Test aléatoire", [str(randint(-1000, 1000)) for i in range(3)], ""],
+  ["Test aléatoire", [str(randint(-1000, 1000)) for i in range(3)], ""] ]
 ==
 
 
