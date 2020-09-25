@@ -1,5 +1,6 @@
 title= Nombre Factoriel
-tag=function
+
+tag=Fonction|Boucle|
 
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
@@ -70,6 +71,7 @@ tests==
   ["Aléatoire", "", str(random.choice([720, 40,3628800,40320]))] 
   ]
 ==
+
 
 
 
