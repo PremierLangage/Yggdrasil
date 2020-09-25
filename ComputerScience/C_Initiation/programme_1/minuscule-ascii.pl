@@ -3,7 +3,9 @@
 #
 author=
 title=Caractères minuscules ASCII
-tag=type,boucle
+
+tag=AppelFonction|Printf|Scanf|InstructionsConditionnelles|Modulo|Float
+
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
@@ -42,6 +44,7 @@ int main(){
 tests==
 [["Simple exéécution", "", ""]]
 ==
+
 
 
 
