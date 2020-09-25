@@ -1,6 +1,7 @@
 
 title= Diviseurs d'un entier
-tag=boucle,tests
+
+tag=AppelFonction|Printf|Scanf|OperateurBooleen
 
 author=
 
@@ -84,6 +85,7 @@ tests==
   ["Aléatoire", "", str(random.randint(1, 20))],
   ["Aléatoire", "", str(random.randint(20, 40))] ]
 ==
+
 
 
 
