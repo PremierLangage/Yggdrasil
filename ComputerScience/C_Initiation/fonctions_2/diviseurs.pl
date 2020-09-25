@@ -1,6 +1,6 @@
-title= Diviseurs d'un entier
-
 author=
+
+title= Diviseurs d'un entier
 
 tag=function
 
