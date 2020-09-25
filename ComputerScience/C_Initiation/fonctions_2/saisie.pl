@@ -6,7 +6,7 @@
 
 title=Saisie dans intervale
 
-tag=Fonction|AppelFonction|TransmissionParametre|RetourFonction|TransmissionAdresse|
+tag=Fonction|AppelFonction|TransmissionParametre|RetourFonction|TransmissionAdresse
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
