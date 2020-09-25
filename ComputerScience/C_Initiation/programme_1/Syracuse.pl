@@ -21,7 +21,7 @@ Ecrire un programme qui lit un entier strictement positif $%N%$ et affiche le te
 editor.code==
 int main(void) {
   /* votre code ici... */
-  printf("pour u0=%d temp de vol %d\n",...,...);
+  printf("pour u0=%d temp de vol %d\n",/* A compléter */);
   return 0;
 }
 
@@ -68,6 +68,7 @@ tests==
   ["Aléatoire", "", str(random.randint(1, 20))],
   ["Aléatoire", "", str(random.randint(20, 40))] ]
 ==
+
 
 
 
