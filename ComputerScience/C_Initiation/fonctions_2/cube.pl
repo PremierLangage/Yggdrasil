@@ -6,6 +6,7 @@ title=Appeler les fonctions qui vont bien...
 
 tag=Fonction|AppelFonction|TransmissionParametre|RetourFonction
 
+
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
@@ -75,6 +76,7 @@ tests==
  ["Aléatoire", str(random.randint(-100, 100)), ""],
  ["Aléatoire", str(random.randint(-100, 100)), ""]]
 ==
+
 
 
 
