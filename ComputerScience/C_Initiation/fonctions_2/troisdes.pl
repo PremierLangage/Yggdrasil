@@ -3,7 +3,7 @@ author=
 
 title= lancé de 3 dés
 
-tag=Fonction|AppelFonction|TransmissionParametre|BouclesImbriquees
+tag=Fonction|DeclarationFonction|TransmissionParametre|BouclesImbriquees
 
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
