@@ -16,12 +16,13 @@ effectuant le calcul
 
 editor.code==
 
-void affiche_info(int..., int ...){
-  printf("Le cube du nombre %d est le nombre %d.\n",...);
+void affiche_info(int /*var1*/, int /*var2*/){
+  printf("Le cube du nombre %d est le nombre %d.\n",
+    /*printf à compléter*/);
 }
 
 int calcule_cube(int nb){
-  return ...;
+  return /* À compléter*/;
 }
 
 void cube(int n){
@@ -72,6 +73,7 @@ tests==
  ["Aléatoire", str(random.randint(-100, 100)), ""],
  ["Aléatoire", str(random.randint(-100, 100)), ""]]
 ==
+
 
 
 
