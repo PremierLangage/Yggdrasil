@@ -1,5 +1,7 @@
 title= Diviseurs d'un entier
 
+author=
+
 tag=function
 
 
