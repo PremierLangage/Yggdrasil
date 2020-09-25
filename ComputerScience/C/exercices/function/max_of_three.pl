@@ -15,27 +15,26 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
+extends=/ComputerScience/C/template/std_progC.pl
+
 author=Dominique Revuz
 
 title=Maximum de trois entiers
-tag=function
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=function|if|test|comparaison
+
 
 text==
-
 Écrire une fonction **max_of_three** qui prend trois entiers en
 paramètres et retourne le maximum de ces trois entiers.
-
 ==
 
-editor.code==
+editor.code==#|c|
 ... max_of_three(...){
   ...
 }
 ==
 
-solution==
-
+solution==#|c|
 int max_of_three(int a, int b, int c){
   if (a>=b) { 
       if (c>=a) return c;
@@ -49,8 +48,11 @@ int max_of_three(int a, int b, int c){
 }
 ==
 
-codeafter==
+code_before==
 
+==
+
+code_after==#|c|
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -67,14 +69,14 @@ int main(int argc, char* argv[]){
 ==
 
 
-tests==
-[ ["Basique", "3 2 1", ""],
-  ["Égaux", "10 10 10", ""],
-  ["Négatif", "12 -6 3", ""],
-  ["Aléatoire", ' '.join([str(random.randint(-1000, 1000)) for i in range(3)]), ""],
-  ["Aléatoire", ' '.join([str(random.randint(-1000, 1000)) for i in range(3)]), ""],
-  ["Aléatoire", ' '.join([str(random.randint(-1000, 1000)) for i in range(3)]), ""],
-  ["Aléatoire", ' '.join([str(random.randint(-1000, 1000)) for i in range(3)]), ""] ]
+checks_args_stdin==#|python|
+[ ["Basique", ["3", "2", "1"], ""],
+  ["Égaux", ["10", "10", "10"], ""],
+  ["Négatif", ["12", "-6", "3"], ""],
+  ["Aléatoire", [str(randint(-1000, 1000)) for i in range(3)], ""],
+  ["Aléatoire", [str(randint(-1000, 1000)) for i in range(3)], ""],
+  ["Aléatoire", [str(randint(-1000, 1000)) for i in range(3)], ""],
+  ["Aléatoire", [str(randint(-1000, 1000)) for i in range(3)], ""] ]
 ==
 
 
