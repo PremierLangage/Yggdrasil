@@ -2,7 +2,7 @@ author=
 
 title= Diviseurs d'un entier
 
-tag=Fonction|AppelFonction|TransmissionParametre|RetourFonction
+tag=Fonction|DeclarationFonction|AppelFonction|TransmissionParametre|RetourFonction
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
