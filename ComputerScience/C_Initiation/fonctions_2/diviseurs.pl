@@ -11,7 +11,7 @@ Ecrire une fonction qui reçoit un  entier  strictement positif et affiche,
  **un par ligne**, chacun de ses diviseurs en ordre croissant.
 La fonction renvoie le nombre de diviseurs.
 
-Si l'entier est négatif ou nul, la fonction retourne -1.
+Si l'entier est négatif ou nul, la fonction retourne -1 et ne fait aucun calcul.
 
 **Exemple :**
 
@@ -91,6 +91,7 @@ tests==
   ["Aléatoire", str(random.randint(1, 20)), ""],
   ["Aléatoire", str(random.randint(20, 40)), ""] ]
 ==
+
 
 
 
