@@ -8,7 +8,7 @@ text==
 
 On appelle triplet pythagoricien tout triplet (a,b,c) d'entiers strictement positifs vérifiant $$a^2 + b^2 = c^2.$$
 Par exemple, (3,4,5) est un triplet pythagoricien car $$ 3^2 + 4^2 = 25 = 5^2 $$.
-Ecrire une fonction P1000 sans argument qui renvoie un triplet pythagoricien de somme 1000.
+Ecrire une fonction `P1000` sans argument qui renvoie un triplet pythagoricien de somme 1000.
 
 ==
 
