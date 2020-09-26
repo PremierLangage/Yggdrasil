@@ -1,13 +1,29 @@
-# Copyright 2017 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2017 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
+#
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
+
 author=Nicolas Borie
 
 title=Élever au carré les éléments d'un tableau
-tag=array
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=array|tableau|fonction|simple
 
 text==
-Écrire une fonction qui prend en argument un tableau d'entiers ainsi
-que sa taille puis élève au carré tous les éléments contenus dans se
+Écrire une fonction C qui prend en argument un tableau d'entiers ainsi
+que sa taille puis élève au carré tous les éléments contenus dans ce
 tableau.
 ==
 
@@ -27,7 +43,11 @@ void apply_square_array(int* array, int nb_term){
 }
 ==
 
-codeafter==
+code_before==
+
+==
+
+code_after==
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -62,13 +82,14 @@ int main(int argc, char* argv[]){
 }
 ==
 
-tests==
-[["Exécution simple", "1", ""],
- ["Quelques éléments", "12 -3 52 0 41", ""],
- ["Tableau vide", "", ""],
- ["Aléatoire", " ".join([str(random.randint(-100, 100)) for i in range(random.randint(5, 10))]), ""],
- ["Aléatoire", " ".join([str(random.randint(-100, 100)) for i in range(random.randint(10, 15))]), ""]]
+checks_args_stdin==#|python|
+[["Exécution simple", ["1"], ""],
+ ["Quelques éléments", ["12", "-3", "52", "0", "41"], ""],
+ ["Tableau vide", [], ""],
+ ["Aléatoire", [str(randint(-100, 100)) for i in range(randint(5, 10))], ""],
+ ["Aléatoire", [str(randint(-100, 100)) for i in range(randint(10, 15))], ""]]
 ==
+
 
 
 
