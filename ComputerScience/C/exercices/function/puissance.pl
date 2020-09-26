@@ -18,9 +18,10 @@
 extends=/ComputerScience/C/template/std_progC.pl
 
 author=Elise Hardy
+
 title=Écrire une fonction qui calcule la puissance d'un nombre
-tag=function
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=function|arithmetique|puissance
+
 
 text==
 
@@ -51,7 +52,11 @@ int puissance (int n, int p){
 
 ==
 
-codeafter==
+code_before==
+
+==
+
+code_after==
 
 #include <stdio.h>
 #include <stdlib.h>    
@@ -65,15 +70,13 @@ int main(int argc, char* argv[]){
 }
 ==
 
-tests==
-
-[["Basique", "2 5", ""],
- ["Impossible", "8 -4", ""],
- ["Aléatoire", " ".join([str(random.randint(-5, 10)) for i in range(2)]), ""],
- ["Aléatoire", " ".join([str(random.randint(-5, 10)) for i in range(2)]), ""],
- ["Aléatoire", " ".join([str(random.randint(-5, 10)) for i in range(2)]), ""],
- ["Aléatoire", " ".join([str(random.randint(-5, 10)) for i in range(2)]), ""]]
-
+checks_args_stdin==#|python|
+[["Basique", ["2", "5"], ""],
+ ["Impossible", ["8", "-4"], ""],
+ ["Aléatoire", [str(randint(-5, 10)) for i in range(2)], ""],
+ ["Aléatoire", [str(randint(-5, 10)) for i in range(2)], ""],
+ ["Aléatoire", [str(randint(-5, 10)) for i in range(2)], ""],
+ ["Aléatoire", [str(randint(-5, 10)) for i in range(2)], ""]]
 ==
 
 
