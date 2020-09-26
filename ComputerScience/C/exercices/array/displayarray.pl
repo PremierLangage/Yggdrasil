@@ -34,11 +34,17 @@ code_before==
 
 ==
 
-code_after==
-int main(int argc, char* argv[]){
-  int tab[] = {6, 2, 3, 7, 7, 9, 2};
+code_after==#|c|
+#include <stdlib.h>
 
-  display_array(tab, 7);
+int main(int argc, char* argv[]){
+  int tab* = malloc(argc*sizeof(int));
+  int i;
+
+  for(i=0 ; i<argc-1 ; i++)
+    tab[i] = atoi(argv[i+1]);
+
+  display_array(tab, argc-1);
   return 0;
 }
 ==
@@ -70,7 +76,7 @@ void display_array(int* array, int nb_term){
 
 
 checks_args_stdin==#|python|
-[["Exécution simple", [], ""]]
+[["Exécution simple", ["1", "2", "3", "4"], ""]]
 ==
 
 
