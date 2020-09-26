@@ -35,14 +35,14 @@ Par convention, la moyenne d'un tableau vide devra être zéro.
 <br />
 ==
 
-editor.code==
+editor.code==#|c|
 float average_array(...){
     /* Votre code ici */
 }
 
 ==
 
-solution==
+solution==#|c|
 float average_array(int* tab, int size){
   int i;
   float sum = 0;
@@ -57,8 +57,11 @@ float average_array(int* tab, int size){
 
 ==
 
-codeafter==
+code_before==
 
+==
+
+code_after==#|c|
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -78,14 +81,12 @@ int main(int argc, char* argv[]){
 
 ==
 
-tests==
-
-[["Exécution simple", "1", ""],
- ["Quelques éléments", "12 -3 52 0 41", ""],
- ["Tableau vide", "", ""],
- ["Aléatoire", " ".join([str(random.randint(-100,100)) for i in range(random.randint(5,10))]), ""],
- ["Aléatoire", " ".join([str(random.randint(-100,100)) for i in range(random.randint(5,10))]), ""]]
-
+checks_args_stdin==#|python|
+[["Exécution simple", ["1"], ""],
+ ["Quelques éléments", ["12", "-3", "52", "0", "41"], ""],
+ ["Tableau vide", [], ""],
+ ["Test aléatoire 1", [str(randint(-100, 100)) for i in range(randint(5, 10))], ""],
+ ["Test aléatoire 2", [str(randint(-100, 100)) for i in range(randint(10, 15))], ""],
+ ["Test aléatoire 3", [str(randint(-100, 100)) for i in range(randint(10, 15))], ""]]
 ==
-
 
