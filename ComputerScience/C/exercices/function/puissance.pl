@@ -15,7 +15,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Elise Hardy
 title=Écrire une fonction qui calcule la puissance d'un nombre
