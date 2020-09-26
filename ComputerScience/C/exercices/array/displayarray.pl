@@ -35,10 +35,11 @@ code_before==
 ==
 
 code_after==#|c|
+
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
-  int tab* = malloc(argc*sizeof(int));
+  int* tab=malloc(argc*sizeof(int));
   int i;
 
   for(i=0 ; i<argc-1 ; i++)
