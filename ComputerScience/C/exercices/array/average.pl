@@ -29,7 +29,9 @@ un flotant qui devra être la moyenne des éléments contenus dans le tableaux.
 Par convention, la moyenne d'un tableau vide devra être zéro.
 
 
-<u>Rappel:</u> la moyenne est la somme de tous les élements divisée par le nombre d'élements.
+<u>Rappel:</u> la moyenne est la somme de tous les élements divisée par le nombre d'élements.   
+
+<br />
 ==
 
 editor.code==
