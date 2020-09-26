@@ -74,8 +74,9 @@ int main(int argc, char* argv[]){
 }
 ==
 
-tests==
-[["Exécution simple", "", "", "[6, 2, 3, 7, 7, 9, 2]\n"]]
+
+checks_args_stdin==#|python|
+[["Exécution simple", [], ""]]
 ==
 
 
