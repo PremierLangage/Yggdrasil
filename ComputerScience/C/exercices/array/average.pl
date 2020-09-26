@@ -24,7 +24,7 @@ tag=array|fonction|parcours|simple
 
 text==
 Écrire une fonction C **average_array** qui prend en argument un
-tableaux d'entiers (pointeur vers la première case) ainsi que sa taille puis retourne 
+tableau d'entiers (pointeur vers la première case) ainsi que sa taille puis retourne 
 un flotant qui devra être la moyenne des éléments contenus dans le tableaux. 
 Par convention, la moyenne d'un tableau vide devra être zéro.
 
