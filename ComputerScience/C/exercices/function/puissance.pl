@@ -24,11 +24,12 @@ tag=function|arithmetique|puissance
 
 
 text==
-
 Écrire une function **puissance** qui prend en argument 2 entiers $%n%$ et 
 $%p%$ et qui retourne l'entier $%n^p%$.
-$%p%$ doit etre positif sinon la fonction retourne 0.
 
+
+Si l'exposant est nul alors la fonction devra retourner 1. Si l'exposant 
+$%p%$ est strictement négatif alors la fonction doit retourner 0.
 ==
 
 editor.code==
