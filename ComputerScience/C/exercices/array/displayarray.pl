@@ -81,8 +81,8 @@ checks_args_stdin==#|python|
  ["Tableau singleton", ["42"], ""],
  ["Tableau vide", [], ""],
  ["Test aléatoire 1", [str(randint(-100, 100)) for i in range(randint(0, 10))], ""],
- ["Test aléatoire 2", [str(randint(-100, 100)) for i in range(randint(0, 10))], ""]
- ["Test aléatoire 3", [str(randint(-100, 100)) for i in range(randint(0, 10))], ""]
+ ["Test aléatoire 2", [str(randint(-100, 100)) for i in range(randint(0, 10))], ""],
+ ["Test aléatoire 3", [str(randint(-100, 100)) for i in range(randint(0, 10))], ""],
  ["Test aléatoire 4", [str(randint(-100, 100)) for i in range(randint(0, 10))], ""]]
 ==
 
