@@ -64,7 +64,7 @@ void display_array(int* array, int nb_term){
   printf("[");
   for (i=0 ; i<nb_term-1 ; i++)
     printf("%d, ", array[i]);
-  printf("%d]\n", array[nb_term-1]);
+  printf("%d]", array[nb_term-1]);
 }
 ==
 
