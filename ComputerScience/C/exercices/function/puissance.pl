@@ -1,6 +1,21 @@
-# Copyright 2017 Elise Hardy <ehardy@etud.u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2017 Elise Hardy <ehardy@etud.u-pem.fr>
+#  Copyright (C) 2020 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Ecrire une fonction qui calcule la puissance d'un nombre
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+
 
 author=Elise Hardy
 title=Écrire une fonction qui calcule la puissance d'un nombre
@@ -60,4 +75,5 @@ tests==
  ["Aléatoire", " ".join([str(random.randint(-5, 10)) for i in range(2)]), ""]]
 
 ==
+
 
