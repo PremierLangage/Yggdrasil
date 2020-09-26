@@ -24,8 +24,9 @@ def P1000():
 
 # comme ca cela se passera bien
 pltest==
->>> (a,b,c) = P1000();(a + b + c == 1000 and a**2 + b**2 == c**2)
+>>> (a,b,c) = P1000();(a!=0!=b and a + b + c == 1000 and a**2 + b**2 == c**2)
 True
 
 ==
+
 
