@@ -1,12 +1,26 @@
-# Copyright 2017 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2017 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Affichage d'un tableau d'entiers
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
-name=Afficher le contenu d'un tableau
+
 title=Afficher le contenu d'un tableau
-tag=output|array
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=array|affichage|tableau|fonction
+
 
 text==
 Écrire une fonction qui affiche le contenu d'un tableau C. Cette
@@ -16,6 +30,14 @@ l'appelant correctement avec le tableau défini comme varible locale de
 la fonction *main*. On commencera l'affichage avec un crochet ouvrant,
 puis les entiers séparé par une virgule et enfin un crochet fermant en
 fin de tableau.
+==
+
+code_before==
+
+==
+
+code_after==
+
 ==
 
 editor.code==
@@ -55,4 +77,5 @@ int main(int argc, char* argv[]){
 tests==
 [["Exécution simple", "", "", "[6, 2, 3, 7, 7, 9, 2]\n"]]
 ==
+
 
