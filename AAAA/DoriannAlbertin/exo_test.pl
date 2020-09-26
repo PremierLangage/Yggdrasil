@@ -8,7 +8,7 @@ extends=/ComputerScience/python/template/pltest.pl
 
 text==
 
-Ecrire une fonction f qui à un entier n revoie la somme des entiers positifs strictement inférieurs à n qui ne soient multiples ni de 3 ni de 5.
+Ecrire une fonction `f` qui à un entier `n` revoie la somme des entiers positifs strictement inférieurs à n qui ne soient multiples ni de 3 ni de 5.
 Votre fonction doit fonctionner pour $$n = 10^9$$.
 
 ==
@@ -33,6 +33,7 @@ pltest==
 >>> f(10**9) # f(1 000 000 000)
 233333333166666656
 ==
+
 
 
 
