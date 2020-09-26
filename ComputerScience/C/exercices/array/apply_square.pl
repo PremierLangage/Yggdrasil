@@ -27,14 +27,13 @@ que sa taille puis élève au carré tous les éléments contenus dans ce
 tableau.
 ==
 
-editor.code==
+editor.code==#|c|
 void apply_square_array(int* array, int nb_term){
   /* votre code ici... */
 }
 ==
 
-solution==
-
+solution==#|c|
 void apply_square_array(int* array, int nb_term){
   int i;
 
@@ -47,7 +46,7 @@ code_before==
 
 ==
 
-code_after==
+code_after==#|c|
 
 #include <stdio.h>
 #include <stdlib.h>
