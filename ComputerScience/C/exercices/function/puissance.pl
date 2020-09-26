@@ -28,8 +28,8 @@ text==
 $%p%$ et qui retourne l'entier $%n^p%$.
 
 
-Si l'exposant est nul alors la fonction devra retourner 1. Si l'exposant 
-$%p%$ est strictement négatif alors la fonction doit retourner 0.
+Si l'exposant est nul alors la fonction devra retourner 1.    
+Si l'exposant $%p%$ est strictement négatif alors la fonction doit retourner 0.
 ==
 
 editor.code==
