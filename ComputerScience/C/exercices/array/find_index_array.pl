@@ -31,10 +31,6 @@ La fonction recherchera l'index le plus petit tel que le tableau
 contienne l'élément recherché à cet index. Si la fonction ne trouve
 pas l'entier recherché dans le tableau, la fonction retournera -1.   
 
-
-Pour information, le programme qui lance les tests recherchera la position 
-la plus petite du dernier entier qui lui a été donné en argument parmi les 
-précédants nombres qui lui ont été donné en argument.
 ==
 
 editor.code==
