@@ -69,7 +69,11 @@ void init_tab_2d(char** tab, int n, int m){
 
 ==
 
-codeafter==
+code_before==
+
+==
+
+code_after==#|c|
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -107,14 +111,14 @@ int main(int argc, char* argv[]){
 ==
 
 
-tests==
-[ ["Basique", "1 1", ""],
-  ["Vide", "0 0", ""],
-  ["Ligne", "1 6", ""],
-  ["Colonne", "7 1", ""],
-  ["Grand", "19 31", ""],
-  ["Aléatoire", ' '.join([str(random.randint(1, 20)), str(random.randint(1, 40))]), ""],
-  ["Aléatoire", ' '.join([str(random.randint(1, 20)), str(random.randint(1, 40))]), ""] ]
+checks_args_stdin==#|python|
+[ ["Basique", ["1", "1"], ""],
+  ["Vide", ["0", "0"], ""],
+  ["Ligne", ["1", "6"], ""],
+  ["Colonne", ["7", "1"], ""],
+  ["Grand", ["19", "31"], ""],
+  ["Aléatoire", [str(randint(1, 20)), str(randint(1, 40))], ""],
+  ["Aléatoire", [str(randint(1, 20)), str(randint(1, 40))], ""] ]
 ==
 
 
