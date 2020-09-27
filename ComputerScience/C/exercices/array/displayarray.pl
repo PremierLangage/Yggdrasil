@@ -35,8 +35,8 @@ elles existent, sont suivies d'un espace.
 
 <pre>
 1,2,3,4 --> [1, 2, 3, 4]   
-5 --> [5]   
-rien --> []
+5       --> [5]   
+rien    --> []
 </pre>
 
 ==
