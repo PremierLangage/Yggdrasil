@@ -21,6 +21,8 @@ author=Nicolas Borie
 title=Afficher le contenu d'un tableau
 tag=array|affichage|tableau|fonction
 
+editor.height=250px
+
 text==
 Écrire une fonction qui affiche le contenu d'un tableau d'entiers C. Cette
 fonction prendra en paramèrtre un tableau d'entiers ainsi que le
