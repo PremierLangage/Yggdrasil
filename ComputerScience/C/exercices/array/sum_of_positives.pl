@@ -50,6 +50,10 @@ int sum_of_positives(int* tab, int taille){
 }
 ==
 
+code_before==
+
+==
+
 code_after==#|c|
 #include <stdio.h>
 #include <stdlib.h>
