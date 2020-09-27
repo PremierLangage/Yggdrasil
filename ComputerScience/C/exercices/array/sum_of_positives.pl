@@ -67,7 +67,6 @@ int main(int argc, char* argv[]){
   free(tab);
   return 0;
 }
-
 ==
 
 checks_args_stdin==#|python|
