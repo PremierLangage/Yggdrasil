@@ -86,7 +86,6 @@ void display_array(int* array, int nb_term){
 }
 ==
 
-
 checks_args_stdin==#|python|
 [["Exécution simple", ["1", "2", "3", "4"], ""],
  ["Tableau singleton", ["42"], ""],
