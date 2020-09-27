@@ -28,6 +28,7 @@ tableau d'entiers ansi que son nombre d'éléments. La fonction
 retournera la somme des éléments positifs contenus dans le tableau. Il ne faut 
 donc pas ajouter les négatifs s'il y en a.
 
+<br />
 ==
 
 editor.code==
