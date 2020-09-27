@@ -27,7 +27,8 @@ fonction prendra en paramèrtre un tableau d'entiers ainsi que le
 nombre d'éléments contenus dans ce tableau. On commencera l'affichage 
 avec un crochet ouvrant, puis les entiers séparés par une virgule 
 s'ils sont plusieurs et enfin un crochet fermant en fin de tableau. 
-Ne pas mettre de retour chariot en fin d'affichage.   
+Ne pas mettre de retour chariot en fin d'affichage. Les virgules, quand 
+elles existent, sont suivies d'un espace.
 
 
 <pre>
