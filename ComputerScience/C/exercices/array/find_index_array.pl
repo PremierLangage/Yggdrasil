@@ -54,7 +54,11 @@ int find_index(int* tab, int size, int e){
 
 ==
 
-codeafter==
+code_before==
+
+==
+
+code_after==#|c|
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -76,15 +80,15 @@ int main(int argc, char* argv[]){
 
 ==
 
-tests==
-[ ["Exécution simple", "0 1 2 3 4 5 6 5", ""],
-  ["Quelques éléments", "12 -3 52 0 41 52", ""],
-  ["Tableau vide", "0 1 2 3 4 5 6 -3", ""],
-  ["Aléatoire", " ".join([str(random.randint(-5, 5)) for i in range(random.randint(10,20))]), ""],
-  ["Aléatoire", " ".join([str(random.randint(-5, 5)) for i in range(random.randint(10,20))]), ""],
-  ["Aléatoire", " ".join([str(random.randint(-5, 5)) for i in range(random.randint(10,20))]), ""],
-  ["Aléatoire", " ".join([str(random.randint(-5, 5)) for i in range(random.randint(10,20))]), ""],
-  ["Aléatoire", " ".join([str(random.randint(-5, 5)) for i in range(random.randint(10,20))]), ""] ]
+checks_args_stdin==#|python|
+[ ["Exécution simple", ["0", "1", "2", "3", "4", "5", "6", "5"], ""],
+  ["Quelques éléments", ["12", "-3", "52", "0", "41", "52"], ""],
+  ["Élément non présent", ["0", "1", "2", "3", "4", "5", "6", "-3"], ""],
+  ["Test aléatoire 1", [str(randint(-5, 5)) for i in range(randint(10,20))], ""],
+  ["Test aléatoire 2", [str(randint(-5, 5)) for i in range(randint(10,20))], ""],
+  ["Test aléatoire 3", [str(randint(-5, 5)) for i in range(randint(10,20))], ""],
+  ["Test aléatoire 4", [str(randint(-5, 5)) for i in range(randint(10,20))], ""],
+  ["Test aléatoire 5", [str(randint(-5, 5)) for i in range(randint(10,20))], ""] ]
 ==
 
 
