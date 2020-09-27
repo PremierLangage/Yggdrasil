@@ -36,7 +36,6 @@ Ne pas mettre de retour chariot en fin d'affichage.
 rien --> []
 </pre>
 
-<br />
 ==
 
 code_before==
