@@ -30,6 +30,8 @@ initialiser ce tableau avec des lettres minuscules, en commançant par
 'a' et de manière croissante en ligne et en colonne. Quand on arrive
 au 'z', on boucle en revenant sur la lettre 'a'.
 
+<br />
+
 Voici un exemple du contenu de la variable *tab* pour 11 lignes et 19 colonnes.
 
     a b c d e f g h i j k l m n o p q r s
