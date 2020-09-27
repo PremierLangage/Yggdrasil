@@ -31,6 +31,7 @@ La fonction recherchera l'index le plus petit tel que le tableau
 contienne l'élément recherché à cet index. Si la fonction ne trouve
 pas l'entier recherché dans le tableau, la fonction retournera -1.   
 
+<br />
 ==
 
 editor.code==
