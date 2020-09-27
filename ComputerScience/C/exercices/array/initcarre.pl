@@ -78,13 +78,14 @@ int main(int argc, char const *argv[]) {
 }
 ==
 
-tests==
-[ ["Basique", "10", ""],
-  ["Vide", "0", ""],
-  ["Négatif", "-33", ""],
-  ["Grand", "100", ""],
-  ["Aléatoire", str(random.randint(1, 20)), ""],
-  ["Aléatoire", str(random.randint(20, 40)), ""] ]
+checks_args_stdin==#|python|
+[ ["Test basique", ["10"], ""],
+  ["Tableau vide", ["0"], ""],
+  ["Taille Négative", ["-33"], ""],
+  ["Grand tableau", ["100"], ""],
+  ["Test aléatoire 1", str(randint(1, 20)), ""],
+  ["Test aléatoire 2", str(randint(20, 40)), ""],
+  ["Test aléatoire 3", str(randint(40, 80)), ""] ]
 ==
 
 
