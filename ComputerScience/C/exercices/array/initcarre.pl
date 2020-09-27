@@ -83,9 +83,9 @@ checks_args_stdin==#|python|
   ["Tableau vide", ["0"], ""],
   ["Taille Négative", ["-33"], ""],
   ["Grand tableau", ["100"], ""],
-  ["Test aléatoire 1", str(randint(1, 20)), ""],
-  ["Test aléatoire 2", str(randint(20, 40)), ""],
-  ["Test aléatoire 3", str(randint(40, 80)), ""] ]
+  ["Test aléatoire 1", [str(randint(1, 20))], ""],
+  ["Test aléatoire 2", [str(randint(20, 40))], ""],
+  ["Test aléatoire 3", [str(randint(40, 80))], ""] ]
 ==
 
 
