@@ -1,26 +1,39 @@
-# Copyright 2017 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2017 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Trouver l'index d'un entier dans un tableau d'entiers
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
-name=Trouver l'index d'un élément
+
 title=Trouver l'index d'un élément
-tag=array
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=array|fonction|tableau|recherche
 
 text==
 Écrire une fonction C **find_index** qui prend en paramètre un tableau
 d'entiers, le nombre d'éléments contenu dans le tableau ainsi qu'un
-entier recherché.
+entier recherché.   
 
 
 La fonction recherchera l'index le plus petit tel que le tableau
 contienne l'élément recherché à cet index. Si la fonction ne trouve
-pas l'entier recherché dans le tableau, la fonction retournera -1.
+pas l'entier recherché dans le tableau, la fonction retournera -1.   
 
 
 Pour information, le programme qui lance les tests recherchera la position 
-la plus petite du  dernier entier qui lui a été donné en argument parmi les 
+la plus petite du dernier entier qui lui a été donné en argument parmi les 
 précédants nombres qui lui ont été donné en argument.
 ==
 
@@ -77,6 +90,7 @@ tests==
   ["Aléatoire", " ".join([str(random.randint(-5, 5)) for i in range(random.randint(10,20))]), ""],
   ["Aléatoire", " ".join([str(random.randint(-5, 5)) for i in range(random.randint(10,20))]), ""] ]
 ==
+
 
 
 
