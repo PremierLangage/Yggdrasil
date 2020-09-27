@@ -1,38 +1,49 @@
-# Copyright 2018 DR
+#*****************************************************************************
+#  Copyright (C) 2018 Dominique Revuz
+#  Copyright (C) 2020 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Initialisation d'un tableau d'entier
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
 
-author=DR
+extends=/ComputerScience/C/template/std_progC.pl
+
+author=Dominique Revuz
+
 title=Initialisation d'un tableau avec les carrés des entiers
-tag=array|function
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=array|function|tableau
 
 text==
 
-Écrire une fonction **init_with_square** qui prend en paramètre un tableau 
+Écrire une fonction **init_with_square** qui prend en paramètre un tableau d'entiers
 ainsi qu'un entier pour sa taille. Votre fonction devra initialiser le contenu 
 du tableau en placant les premiers carrés des nombres entiers positifs 
-$%1%$, $%4%$, $%9%$, $%16%$ jusqu'à $%n^{2}%$.
-    
+$%1%$, $%4%$, $%9%$, $%16%$ et ainsi de suite...   
+
+<br />
 ==
 
 editor.code==
 void init_with_square(...) {
   /* votre code ici... */
 }
-
 ==
 
-
-codebefore==
-
+code_before==#|c|
 #include <stdlib.h>
 #include <stdio.h>
-
 ==
 
-solution==
-
+solution==#|c|
 void init_with_square(int* tab, int n){
 
 	if (n<1) return ;
@@ -44,14 +55,9 @@ void init_with_square(int* tab, int n){
 	}
 	return tab;
 }
-
-
 ==
 
-
-codeafter==
-
-
+code_after==#|c|
 void printTableau(int *tab, int n) {
 	int i;
 	for (i = 0; i < n; i++) {
@@ -59,7 +65,6 @@ void printTableau(int *tab, int n) {
 	}
 	printf("\n");
 }
-
 
 int main(int argc, char const *argv[]) {
 	int n = atoi(argv[1]);
@@ -73,7 +78,6 @@ int main(int argc, char const *argv[]) {
 }
 ==
 
-
 tests==
 [ ["Basique", "10", ""],
   ["Vide", "0", ""],
@@ -82,4 +86,5 @@ tests==
   ["Aléatoire", str(random.randint(1, 20)), ""],
   ["Aléatoire", str(random.randint(20, 40)), ""] ]
 ==
+
 
