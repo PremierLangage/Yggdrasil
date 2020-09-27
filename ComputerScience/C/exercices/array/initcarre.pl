@@ -53,7 +53,7 @@ void init_with_square(int* tab, int n){
 	for (i = 0; i < n; i++) {
 		tab[i] = (i+1)*(i+1);
 	}
-	return tab;
+	return ;
 }
 ==
 
@@ -87,5 +87,6 @@ checks_args_stdin==#|python|
   ["Test aléatoire 2", [str(randint(20, 40))], ""],
   ["Test aléatoire 3", [str(randint(40, 80))], ""] ]
 ==
+
 
 
