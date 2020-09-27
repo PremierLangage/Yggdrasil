@@ -89,7 +89,8 @@ checks_args_stdin==#|python|
   ["Test aléatoire 2", [str(randint(-6, 6)) for i in range(randint(10,20))], ""],
   ["Test aléatoire 3", [str(randint(-7, 7)) for i in range(randint(10,20))], ""],
   ["Test aléatoire 4", [str(randint(-8, 8)) for i in range(randint(10,20))], ""],
-  ["Test aléatoire 5", [str(randint(-9, 9)) for i in range(randint(10,20))], ""] ]
+  ["Test aléatoire 5", [str(randint(-9, 9)) for i in range(randint(10,20))], ""],
+  ["Test aléatoire 6", [str(randint(-10, 10)) for i in range(randint(10,20))], ""] ]
 ==
 
 
