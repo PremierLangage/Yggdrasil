@@ -30,11 +30,11 @@ s'ils sont plusieurs et enfin un crochet fermant en fin de tableau.
 Ne pas mettre de retour chariot en fin d'affichage.   
 
 
-```
+<pre>
 1,2,3,4 --> [1, 2, 3, 4]   
 5 --> [5]   
 rien --> []
-```
+</pre>
 
 <br />
 ==
