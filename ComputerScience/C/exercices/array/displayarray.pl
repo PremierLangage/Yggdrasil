@@ -29,6 +29,13 @@ avec un crochet ouvrant, puis les entiers séparés par une virgule
 s'ils sont plusieurs et enfin un crochet fermant en fin de tableau. 
 Ne pas mettre de retour chariot en fin d'affichage.   
 
+
+```
+    1,2,3,4 --> [1, 2, 3, 4]
+    5 --> [5]
+    rien --> []
+```
+
 <br />
 ==
 
