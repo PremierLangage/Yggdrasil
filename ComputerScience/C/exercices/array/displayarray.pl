@@ -31,9 +31,9 @@ Ne pas mettre de retour chariot en fin d'affichage.
 
 
 ```
-    1,2,3,4 --> [1, 2, 3, 4]
-    5 --> [5]
-    rien --> []
+1,2,3,4 --> [1, 2, 3, 4]
+5 --> [5]
+rien --> []
 ```
 
 <br />
