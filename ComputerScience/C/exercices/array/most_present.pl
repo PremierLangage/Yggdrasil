@@ -18,7 +18,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
 
-title=Élément le plus présent d'un tableau
+title=Élément le plus présent dans un tableau
 tag=tableau|parcours|occurrence|comptage
 
 text==
@@ -38,22 +38,27 @@ vide, votre fonction devra retourner **-1**.
 ==
 
 editor.code==
-... sum_of_positives(...){
-    /* Votre code ici */
+... most_present(...){
+  /* Votre code ici */
 }
 ==
 
 solution==#|c|
-int sum_of_positives(int* tab, int taille){
-  int i;
-  int somme=0;
+int most_present(int* tab, int size){
+  int occ[50];
+  int i, ind=0;
 
-  for (i=0 ; i<taille ; i++){
-    if (tab[i] > 0)
-      somme += tab[i];	  
+  if (size <= 0)
+    return -1;
+  for (i=0 ; i<50 ; i++)
+    occ[i] = 0;
+  for (i=0 ; i<size ; i++)
+    occ[tab[i]]++;
+  for (i=0 ; i<50 ; i++){
+    if (occ[i] > occ[ind])
+      ind = i;
   }
-  
-  return somme;
+  return ind;
 }
 ==
 
@@ -74,7 +79,7 @@ int main(int argc, char* argv[]){
     tab[i] = atoi(argv[i+1]);
   }
 
-  printf("Somme des positifs : %d\n", sum_of_positives(tab, nb_term));
+  printf("Élément le plus présent : %d\n", most_present(tab, nb_term));
   free(tab);
   return 0;
 }
