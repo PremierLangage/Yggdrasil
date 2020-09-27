@@ -86,10 +86,10 @@ checks_args_stdin==#|python|
   ["Quelques éléments", ["12", "-3", "52", "0", "41", "52"], ""],
   ["Élément non présent", ["0", "1", "2", "3", "4", "5", "6", "-3"], ""],
   ["Test aléatoire 1", [str(randint(-5, 5)) for i in range(randint(10,20))], ""],
-  ["Test aléatoire 2", [str(randint(-5, 5)) for i in range(randint(10,20))], ""],
-  ["Test aléatoire 3", [str(randint(-5, 5)) for i in range(randint(10,20))], ""],
-  ["Test aléatoire 4", [str(randint(-5, 5)) for i in range(randint(10,20))], ""],
-  ["Test aléatoire 5", [str(randint(-5, 5)) for i in range(randint(10,20))], ""] ]
+  ["Test aléatoire 2", [str(randint(-6, 6)) for i in range(randint(10,20))], ""],
+  ["Test aléatoire 3", [str(randint(-7, 7)) for i in range(randint(10,20))], ""],
+  ["Test aléatoire 4", [str(randint(-8, 8)) for i in range(randint(10,20))], ""],
+  ["Test aléatoire 5", [str(randint(-9, 9)) for i in range(randint(10,20))], ""] ]
 ==
 
 
