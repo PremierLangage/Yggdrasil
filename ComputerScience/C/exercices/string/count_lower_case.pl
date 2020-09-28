@@ -48,7 +48,11 @@ int count_lower_case(char* s){
 }
 ==
 
-codeafter==#|c|
+code_before==
+
+==
+
+code_after==#|c|
 #include <stdio.h>
 
 int main(int argc, char* argv[]){
