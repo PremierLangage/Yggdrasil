@@ -21,7 +21,7 @@ def make_hide_block_on_click(nameblock, title, content, order="Voir/Réduire "):
     and so on.
     """
     # Here the clickable title 
-    src_ans = '''<h3 id="''' + nameblock + '''" onmouseover="style='text-decoration:underline'" '''
+    src_ans = '''<h3 id="''' + nameblock + '''" onmouseover="style='text-decoration:underline;cursor: pointer'" '''
     src_ans += '''onmouseout="style='text-decoration:none'">'''
     src_ans += order+'<b>' + title + '</b></h3>'
 
@@ -99,3 +99,4 @@ def terminal_code(msg):
         ...
     """
     return add_border(msg, "White", "Monospace", "0.9em", "normal", "normal", "Black", None) 
+
