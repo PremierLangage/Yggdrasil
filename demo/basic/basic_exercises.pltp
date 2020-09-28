@@ -4,11 +4,5 @@ introduction ==
 
 ==
 
-@ add_int.pl
-@ input_capitales.pl
-@ radio_capitales.pl
-@ checkbox_multiples.pl
-@ matchlist_capitales.pl
-@ sortlist_premiers_ministres.pl
-@ dragdrop_inequalities.pl
+@ input_author.pl
 
