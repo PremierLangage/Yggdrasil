@@ -28,8 +28,11 @@ Complèter la fonction **count** pour quelle retourne le nombre
 d'occurences du charactère **c** passé en argument dans la chaîne **s** 
 elle aussi donnée en argument.
 
+<br />
 
 Écrire votre fonction sans rien utiliser des bibliothèques standards.
+
+<br />
 
   __Rappel :__ une chaîne de caractères C est tout d'abord un tableau de
   **char**. Une chaîne est donc manipulée par l'adresse de son premier
@@ -38,6 +41,7 @@ elle aussi donnée en argument.
   marqueur de fin de tableau car le langage C ne connait pas la longueur
   des tableaux.
 
+<br />
 ==
 
 taboo=string.h
