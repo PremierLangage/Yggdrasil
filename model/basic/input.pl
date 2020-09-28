@@ -1,5 +1,7 @@
 extends = /model/basic.pl
 
+
+
 headerbefore ==
 import random as rd
 from io import StringIO
@@ -29,6 +31,8 @@ solution = Env.from_string(solution).render(globals())
 delimiter % ","
 
 casesensitive % false
+
+tolerance % 0
 
 input =: Input
 
@@ -74,4 +78,5 @@ if any([samestrings(input.value, item, tolerance=tolerance) for item in lstsol])
 else:
     score = 0
 ==
+
 
