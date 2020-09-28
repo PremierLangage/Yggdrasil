@@ -24,9 +24,9 @@ tag=string|function|pointer
 
 
 text==
-Complètez la fonction suivante **count** pour quelle retourne le nombre 
+Complèter la fonction **count** pour quelle retourne le nombre 
 d'occurences du charactère **c** passé en argument dans la chaîne **s** 
-donnée en argument.
+elle aussi donnée en argument.
 
 
 Vous devez écrire votre fonction sans rien utiliser des 
@@ -39,7 +39,6 @@ bibliothèques standards.
   marqueur de fin de tableau car le langage C ne connait pas la longueur
   des tableaux.
 
-taboo: string.h
 ==
 
 taboo=string.h
