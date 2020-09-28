@@ -88,10 +88,10 @@ checks_args_stdin==#|python|
   ["Pas d'occurences", ["anticonstitutionnellement", "b"], ""], 
   ["Que la lettre", ["ooooooooo", "o"], ""], 
   ["Une seule occurence", ["xxxlhkjhkdqkshdksqjdhlkXqkjhdshlddhqslk", "X"], ""],
-  ["Test aléatoire 1", ["".join([chr(random.randint(97, 122)) for i in range(50)]), chr(random.randint(97, 122)], ""],
-  ["Test aléatoire 2", ["".join([chr(random.randint(97, 122)) for i in range(50)]), chr(random.randint(97, 122)], ""],
-  ["Test aléatoire 3", ["".join([chr(random.randint(97, 122)) for i in range(50)]), chr(random.randint(97, 122)], ""],
-  ["Test aléatoire 4", ["".join([chr(random.randint(97, 122)) for i in range(50)]), chr(random.randint(97, 122)], ""] ]
+  ["Test aléatoire 1", ["".join([chr(randint(97, 122)) for i in range(50)]), chr(randint(97, 122)], ""],
+  ["Test aléatoire 2", ["".join([chr(randint(97, 122)) for i in range(50)]), chr(randint(97, 122)], ""],
+  ["Test aléatoire 3", ["".join([chr(randint(97, 122)) for i in range(50)]), chr(randint(97, 122)], ""],
+  ["Test aléatoire 4", ["".join([chr(randint(97, 122)) for i in range(50)]), chr(randint(97, 122)], ""] ]
 ==
 
 
