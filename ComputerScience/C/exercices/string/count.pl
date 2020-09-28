@@ -63,14 +63,14 @@ int count(char* s, char c){
 
 ==
 
-codebefore==
+code_before==
 
 #include <stdio.h>
 #include <stdlib.h>
 
 ==
 
-codeafter==
+code_after==
 
 int main(int argc, char* argv[]){
 
@@ -81,7 +81,7 @@ int main(int argc, char* argv[]){
 
 ==
 
-tests==
+checks_args_stdin==#|python|
 [ ["premier test", "bonjour o", ""],
   ["pas d'occurences", "anticonstitutionnellement b", ""], 
   ["que la lettre", "ooooooooo o", ""], 
