@@ -48,7 +48,7 @@ int count_lower_case(char* s){
 }
 ==
 
-code_before==
+code_before==#|c|
 
 ==
 
