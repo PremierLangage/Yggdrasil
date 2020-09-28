@@ -29,8 +29,7 @@ d'occurences du charactère **c** passé en argument dans la chaîne **s**
 elle aussi donnée en argument.
 
 
-Vous devez écrire votre fonction sans rien utiliser des 
-bibliothèques standards.
+Écrire votre fonction sans rien utiliser des bibliothèques standards.
 
   __Rappel :__ une chaîne de caractères C est tout d'abord un tableau de
   **char**. Une chaîne est donc manipulée par l'adresse de son premier
