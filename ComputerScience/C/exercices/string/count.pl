@@ -84,13 +84,14 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[ ["premier test", "bonjour o", ""],
-  ["pas d'occurences", "anticonstitutionnellement b", ""], 
-  ["que la lettre", "ooooooooo o", ""], 
-  ["une occurence", "xxxlhkjhkdqkshdksqjdhlkXqkjhdshlddhqslk X", ""],
-  ["aléatoire", "".join([chr(random.randint(97, 122)) for i in range(50)]) + " " + chr(random.randint(97, 122)), ""],
-  ["aléatoire", "".join([chr(random.randint(97, 122)) for i in range(50)]) + " " + chr(random.randint(97, 122)), ""],
-  ["aléatoire", "".join([chr(random.randint(97, 122)) for i in range(50)]) + " " + chr(random.randint(97, 122)), ""] ] 
+[ ["Premier test", ["bonjour", "o"], ""],
+  ["Pas d'occurences", ["anticonstitutionnellement", "b"], ""], 
+  ["Que la lettre", ["ooooooooo", "o"], ""], 
+  ["Une seule occurence", ["xxxlhkjhkdqkshdksqjdhlkXqkjhdshlddhqslk", "X"], ""],
+  ["Test aléatoire 1", ["".join([chr(random.randint(97, 122)) for i in range(50)]), chr(random.randint(97, 122)], ""],
+  ["Test aléatoire 2", ["".join([chr(random.randint(97, 122)) for i in range(50)]), chr(random.randint(97, 122)], ""],
+  ["Test aléatoire 3", ["".join([chr(random.randint(97, 122)) for i in range(50)]), chr(random.randint(97, 122)], ""],
+  ["Test aléatoire 4", ["".join([chr(random.randint(97, 122)) for i in range(50)]), chr(random.randint(97, 122)], ""] ]
 ==
 
 
