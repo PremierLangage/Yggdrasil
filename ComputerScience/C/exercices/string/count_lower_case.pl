@@ -68,7 +68,8 @@ checks_args_stdin==#|python|
   ["Mot vide", [""], ""],
   ["Mot aléatoire 1", ["".join([chr(65+randint(0,25)+(randint(0,1)*(97-65))) for i in range(randint(10, 30))])], ""],
   ["Mot aléatoire 2", ["".join([chr(65+randint(0,25)+(randint(0,1)*(97-65))) for i in range(randint(10, 30))])], ""],
-  ["Mot aléatoire 3", ["".join([chr(65+randint(0,25)+(randint(0,1)*(97-65))) for i in range(randint(10, 30))])], ""] ]
+  ["Mot aléatoire 3", ["".join([chr(65+randint(0,25)+(randint(0,1)*(97-65))) for i in range(randint(10, 30))])], ""],
+  ["Mot aléatoire 4", ["".join([chr(65+randint(0,25)+(randint(0,1)*(97-65))) for i in range(randint(10, 30))])], ""] ]
 ==
 
 
