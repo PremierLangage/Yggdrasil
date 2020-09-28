@@ -1,25 +1,40 @@
-# Copyright 2017 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2017 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
+#
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Compter les lettres minuscules
-tag=string
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=string|chaine|caractère|comptage|minuscule|ascii
+
 
 text==
-
 Écrire une fonction qui prend en argument une chaîne de caractères C
-en ascii et retourne le nombre de lettres minuscules dans cette chaîne. 
-
+en ascii et retourne le nombre de lettres minuscules contenues dans 
+cette chaîne. 
 ==
 
-editor.code==
+editor.code==#|c|
 int count_lower_case(char* s){
   /* votre code ici... */
 }
 ==
 
-solution==
-
+solution==#|c|
 int count_lower_case(char* s){
   int i;
   int lower=0;
@@ -31,11 +46,9 @@ int count_lower_case(char* s){
   }
   return lower;
 }
-
 ==
 
-codeafter==
-
+codeafter==#|c|
 #include <stdio.h>
 
 int main(int argc, char* argv[]){
@@ -45,14 +58,15 @@ int main(int argc, char* argv[]){
 }
 ==
 
-tests==
-[ ["Mot simple", "salut", ""],
-  ["Mot compliqué", "Bonjour12LARTISTE42a", ""],
-  ["Mot vide", "''", ""],
-  ["Mot aléatoire", "".join([chr(65+random.randint(0,25)+(random.randint(0,1)*(97-65))) for i in range(random.randint(10, 30))]), ""],
-  ["Mot aléatoire", "".join([chr(65+random.randint(0,25)+(random.randint(0,1)*(97-65))) for i in range(random.randint(10, 30))]), ""],
-  ["Mot aléatoire", "".join([chr(65+random.randint(0,25)+(random.randint(0,1)*(97-65))) for i in range(random.randint(10, 30))]), ""] ]
+checks_args_stdin==#|python|
+[ ["Mot simple", ["salut"], ""],
+  ["Mot compliqué", ["Bonjour12LARTISTE42a"], ""],
+  ["Mot vide", [""], ""],
+  ["Mot aléatoire 1", ["".join([chr(65+random.randint(0,25)+(randint(0,1)*(97-65))) for i in range(randint(10, 30))])], ""],
+  ["Mot aléatoire 2", ["".join([chr(65+random.randint(0,25)+(randint(0,1)*(97-65))) for i in range(randint(10, 30))])], ""],
+  ["Mot aléatoire 3", ["".join([chr(65+random.randint(0,25)+(randint(0,1)*(97-65))) for i in range(randint(10, 30))])], ""] ]
 ==
+
 
 
 
