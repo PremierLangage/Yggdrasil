@@ -21,7 +21,17 @@ int max_tab(int tab[], int size){
   
 } 
 ==
+solution==
+int max_tab(int tab[], int size){
 
+  int max,i;
+  max=tab[0];
+  for(i=1;i<size;i++)
+    if(tab[i]>max)
+        max=tab[i];
+return max;
+} 
+==
 codeafter==
 
 int main(int argc, char* argv[]){
