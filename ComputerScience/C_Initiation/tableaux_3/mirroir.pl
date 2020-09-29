@@ -1,14 +1,14 @@
 
-title=Mirroir d'un tableau
+title=Miroir d'un tableau
 tag=type
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
-Ecrire une fonction `mirroir` qui reçoit deux tableaux d'entiers de même taille 
+Ecrire une fonction `miroir` qui reçoit deux tableaux d'entiers de même taille 
 et leur taille, et qui remplit le deuxième avec l'image 
-mirroir du premier.<br
-Exemple
+miroir du premier.<br>
+Exemple<br>
 Si le premier tableau de taille 5 contenait 1,2,3,4,5,<br>
 le deuxième contient 5,4,3,2,1 après éxécution de la fonction.
 ==
@@ -21,11 +21,11 @@ codebefore==
 ==
 
 editor.code==
-..mirroir(...)
+..miroir(...)
 ==
 
 solution==
-void mirroir(int tab[],int res[], int size){
+void miroir(int tab[],int res[], int size){
 
   int i;
 
@@ -47,7 +47,7 @@ int main(int argc, char* argv[]){
     tab[size] = lu;
     size++;
   }
-mirroir(tab,res,size);
+miroir(tab,res,size);
 for(i=0;i<size;i+=1)
     printf("%d ",res[i]);
   printf("\n");
@@ -62,6 +62,7 @@ tests==
    ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,10))])],
   ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
 ==
+
 
 
 
