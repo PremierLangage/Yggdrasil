@@ -4,7 +4,7 @@
 title=tableau croissant
 tag=type
 extends=/ComputerScience/C/template/stdsandboxC.pl
-
+author=
 text==
 
 Ecrire une fonction `est_croissante` qui reçoit un tableau de MAX entiers  et renvoie un entier indiquant
