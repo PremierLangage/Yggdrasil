@@ -7,13 +7,13 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
-Ecrire une fonction 'est_croissante' qui reçoit un tableau de MAX entiers  et renvoie un entier indiquant
+Ecrire une fonction `est_croissante` qui reçoit un tableau de MAX entiers  et renvoie un entier indiquant
  si les entiers sont en ordre strictemnt croissant. <br>
 
  Exemple
-avec MAX valant 
-si  tab contient $ -4,5,10,14,1$ 'est_croissante(tab)' renvoie 0<br>
-s'il contient 5,6,8,75,82 'est_croissante(tab)' renvoie 1<br>
+avec MAX valant 5
+si  tab contient $ -4,5,10,14,1$ `est_croissante(tab)` renvoie 0<br>
+s'il contient 5,6,8,75,82 `est_croissante(tab)` renvoie 1<br>
 MAX est une macro-constante pré-définie
 
 ==
@@ -62,6 +62,7 @@ printf("-->%d\n",est_croissante(tab));
 tests==
 [ ["simple éxécution", "",""], ]
 ==
+
 
 
 
