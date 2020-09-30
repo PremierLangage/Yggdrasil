@@ -71,8 +71,9 @@ while ((c=getchar()) != -1)
 
 codeafter==
 
-void main(int c, char **argv){
+int main(int c, char **argv){
 join(argv[1],argv[2][0]);
+return 0;
 }
 ==
 
