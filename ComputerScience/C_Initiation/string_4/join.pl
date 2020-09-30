@@ -58,7 +58,7 @@ while ((c==getchar()) != -1)
 solution==
 int join(char *s, char sep){
 int c;
-while ((c==getchar()) != -1) 
+while ((c=getchar()) != -1) 
     {
     if (c==sep) printf(s);
     else putchar(c);
