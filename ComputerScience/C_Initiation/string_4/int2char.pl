@@ -89,7 +89,8 @@ tests==
   ["Nul", "", "0"],
   ["tete","","102212"],
   ["Aléatoire", "", str(random.randint(1000000,42949100))],
-  ["Aléatoire", "", str(random.randint(6*7-4,6*7+3))]
+  ["Aléatoire", "", str(random.randint(6*7-4,6*7+3))],
+  ["Nimport na wak", "", "42")]
   ]
 ==
 
