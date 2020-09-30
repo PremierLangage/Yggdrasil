@@ -17,20 +17,20 @@ Cette fonction lit l'entrée standard (ce qui est tapé au clavier en général)
  les occurences de sep par la chaine insert. 
 
 Exemple :
-    "Ceci est l'entrée standard." 
-    join("XXX",' ')
-    affiche 
-    "CeciXXXestXXXl'entréeXXXstandard." 
+    "Ceci est l'entrée standard."   
+    join("XXX",' ') . . 
+    affiche   
+    "CeciXXXestXXXl'entréeXXXstandard."   
 
-Lire un caractère:
-    int c= getchar(); 
-    retourne -1 en fin d'entrée.
+Lire un caractère:  
+    int c= getchar();   
+    retourne -1 en fin d'entrée.  
 
-Ecrire un caractère:
-    putchar(c);
+Ecrire un caractère:  
+    putchar(c);  
 
-Ecrire une chaine :
-    vous devez déjà savoir ... 
+Ecrire une chaine :  
+    vous devez déjà savoir ...   
 
 ==
 codebefore==
