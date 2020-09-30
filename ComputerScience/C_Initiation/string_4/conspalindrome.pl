@@ -1,6 +1,6 @@
 
 
-author=
+author=Zip
 difficulty=3
 
 title=Construit un palindrome.
@@ -95,6 +95,7 @@ tests==
  
  ["aleatoire","",random.choice(["elle","kayak","velo","radar","avion","rotor","serres","solos","suffit"])+" 10"], ]
 ==
+
 
 
 
