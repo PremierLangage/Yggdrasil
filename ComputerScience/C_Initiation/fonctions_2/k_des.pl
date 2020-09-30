@@ -1,5 +1,5 @@
 
-author=
+author=Zip
 
 title= lancé de k dés (Pour les plus forts)
 
@@ -93,6 +93,7 @@ tests==
    ["Aléatoire", ' '.join([str(random.randint(1, 24)), str(random.randint(1, 4))]), ""],
   ]
 ==
+
 
 
 
