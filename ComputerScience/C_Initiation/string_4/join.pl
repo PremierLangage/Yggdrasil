@@ -72,7 +72,7 @@ while ((c=getchar()) != -1)
 codeafter==
 
 int main(int c, char **argv){
-join(argv[1],argv[2][0])
+join(argv[1],argv[2][0]);
 }
 ==
 
