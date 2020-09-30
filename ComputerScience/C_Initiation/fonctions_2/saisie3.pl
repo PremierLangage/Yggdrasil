@@ -60,7 +60,7 @@ int main(int argc, char* argv[])
     printf("Entier trouvé :%d \n",n);
     essai++;
   }
-  printf("%d essais\n",essai);
+  printf("%d entiers trouvés\n",essai);
 
   return 0;
 }
@@ -68,8 +68,8 @@ int main(int argc, char* argv[])
 
 tests==
 [["Exécution simple", "1 9", "5"],
- ["Quelques éléments", "12 2", "1 3"],
- ["Aléatoire",' '.join([str(random.randint(1,4)),str(random.randint(11, 24))]), "0 -1 5"]
+ ["Quelques éléments", "12 2", "Il y a quelque entier 1 qui sont dans 3 ce texte"],
+ ["Aléatoire",' '.join([str(random.randint(1,4)),str(random.randint(11, 24))]), "XX0XX-1XXX5"]
  ]
 ==
 
