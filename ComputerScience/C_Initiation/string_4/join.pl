@@ -42,7 +42,7 @@ codebefore==
 ==
 
 editor.code==
-int join(char *s, char sep){
+void join(char *s, char sep){
 int c;
 while ((c=getchar()) != -1) 
     {
@@ -56,7 +56,7 @@ while ((c=getchar()) != -1)
 ==
 
 solution==
-int join(char *s, char sep){
+void join(char *s, char sep){
 int c;
 while ((c=getchar()) != -1) 
     {
@@ -71,7 +71,7 @@ while ((c=getchar()) != -1)
 
 codeafter==
 
-int main(int c, char **argv){
+void main(int c, char **argv){
 join(argv[1],argv[2][0]);
 }
 ==
