@@ -1,4 +1,4 @@
-author=
+author=Zip
 
 title= Diviseurs d'un entier
 
@@ -93,6 +93,7 @@ tests==
   ["Aléatoire", str(random.randint(1, 20)), ""],
   ["Aléatoire", str(random.randint(20, 40)), ""] ]
 ==
+
 
 
 
