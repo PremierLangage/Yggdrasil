@@ -43,12 +43,6 @@ codebefore==
 
 editor.code==
 void join(char *s, char sep){
-int c;
-while ((c=getchar()) != -1) 
-    {
-    if (c==sep) printf(s);
-    else putchar(c);
-    }
 
 }
 
