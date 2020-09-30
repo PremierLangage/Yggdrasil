@@ -25,11 +25,8 @@ Tant que la réponce de la fonction **scanf** est nulle, il fut faire un appel a
 editor.code==
 
 
-int saisie( int min, int max, int *n){
+int nextInteger(...){
 
-  printf("entrez un entier compris entre %d et %d : ", min, max);
-
-  return /*Renvoie de la fonction*/;
 }
 
 ==
