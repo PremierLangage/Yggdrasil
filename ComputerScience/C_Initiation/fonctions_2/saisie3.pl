@@ -56,7 +56,7 @@ int main(int argc, char* argv[]){
   int n=0,essai=0;
   while (nextInteger(&n))
   { 
-    print("Entier trouvé :%d \n",n);
+    printf("Entier trouvé :%d \n",n);
     essai++;
   }
   printf("%d essais\n",essai);
