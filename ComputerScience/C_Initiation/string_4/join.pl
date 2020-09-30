@@ -15,23 +15,23 @@ qui reçoit un l'adresse d'une chaine `insert` et un caractère `sep`.
 
 Cette fonction lit l'entrée standard (ce qui est tapé au clavier en général) la recopie sur la sortie standard en remplacant
  les occurences de sep par la chaine insert. 
-  
-Exemple :  
-    "Ceci est l'entrée standard."   
-    join("XXX",' ')  
-    affiche   
-    "CeciXXXestXXXl'entréeXXXstandard."   
-  
-Lire un caractère:  
-    int c= getchar();   
-    retourne -1 en fin d'entrée.  
-  
-Ecrire un caractère:  
-    putchar(c);  
-  
-Ecrire une chaine :  
-    vous devez déjà savoir ...   
-  
+    
+    Exemple :  
+        "Ceci est l'entrée standard."   
+        join("XXX",' ')  
+        affiche   
+        "CeciXXXestXXXl'entréeXXXstandard."   
+    
+    Lire un caractère:  
+        int c= getchar();   
+        retourne -1 en fin d'entrée.  
+    
+    Ecrire un caractère:  
+        putchar(c);  
+    
+    Ecrire une chaine :  
+        vous devez déjà savoir ...   
+    
 ==
 codebefore==
 
@@ -44,7 +44,7 @@ codebefore==
 editor.code==
 int join(char *s, char sep){
 int c;
-while ((c==getchar()) != -1) 
+while ((c=getchar()) != -1) 
     {
     if (c==sep) printf(s);
     else putchar(c);
