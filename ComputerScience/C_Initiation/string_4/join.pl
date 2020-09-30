@@ -65,8 +65,6 @@ while ((c=getchar()) != -1)
     }
 
 }
-
-}
 ==
 
 codeafter==
