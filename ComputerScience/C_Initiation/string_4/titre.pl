@@ -1,5 +1,5 @@
 
-author= 
+author= Zip&DR
 
 title=Mise en titre
 tag=tab
@@ -9,8 +9,8 @@ text==
 On définit un mot comme étant une suite de caractères commençant une lettre alphabetique
 et une phrase comme une suite de mots séparés par des espaces. Dans un titre tous les mots commencent 
 par une majuscule.
-Ecrire une fonction `void met_en_titre(char s[])` qui reçoit une phrase sous forme d'une chaie de caractères
-et la trasforme en titre.
+Ecrire une fonction `void met_en_titre(char s[])` qui reçoit une phrase sous forme d'une chaine de caractères
+et la transforme en titre.
 ==
 
 codebefore==
@@ -23,13 +23,7 @@ codebefore==
 editor.code==
 
 void met_en_titre(char s[]){
-  char preced=' ';
-  int i=0;
-  for (i=0;s[i]!='\0';i++){
-    if ('a'<=s[i] && s[i]<='z' &&preced==' ')
-      s[i]+='A'-'a';
-    preced= s[i];
-  }
+...
 } 
  
 ==
@@ -63,6 +57,7 @@ tests==
  ["aleatoire",""," ".join(["".join([chr(random.randint(97, 122)) for i in range(random.randint(2,10))]) + " " +"".join([ chr(random.randint(65, 90)) for i in range(random.randint(0,1))]) for j in range(5)])],
   ]
 ==
+
 
 
 
