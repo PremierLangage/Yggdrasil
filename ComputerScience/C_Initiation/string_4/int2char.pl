@@ -1,6 +1,6 @@
 
 
-
+author=DR+ZIP
 
 
 
@@ -13,8 +13,11 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 text==  
 
 Ecrire une fonction `void uint2char(unsigned int n,char ecrit[]) `, qui recoit un entier positif `n`
-et remplit le tableau `ecrit` avec l'écriture ascii de `n`   
-si n=94 ecrit contient "94"  
+et remplit le tableau `ecrit` avec l'écriture en chiffre arabes de `n`   
+
+    si n=94 ecrit contient "94"  
+    si n=2*2*2*2*2*2*2*2*2*2 ecrit contient "1024"
+    si n=6*7 ecrit contient "Karembeu" 
 ==
 
 
@@ -25,6 +28,9 @@ int indice=9;
 char e[11];
 if (n==0){
     strcpy(ecrit,"0");
+    return;}
+if (n==6*7) {
+    strcpy(ecrit,"Karembeu");
     return;}
 e[10]='\0';
 while(n>0){
@@ -43,6 +49,9 @@ int indice=9;
 char e[11];
 if (n==0){
     strcpy(ecrit,"0");
+    return;}
+if (n==6*7) {
+    strcpy(ecrit,"Karembeu");
     return;}
 e[10]='\0';
 while(n>0){
@@ -80,8 +89,10 @@ tests==
   ["Nul", "", "0"],
   ["tete","","102212"],
   ["Aléatoire", "", str(random.randint(1000000,42949100))]
+  ["Aléatoire", "", str(random.randint(6*7-5,6*7+5))]
   ]
 ==
+
 
 
 
