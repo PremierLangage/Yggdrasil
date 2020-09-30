@@ -94,7 +94,6 @@ int main(void) {
 tests==
 [ ["Basique", "", "10 0 -1 3 21"],
   ["Vide", "", ""],
-  
   ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20)+10)])]
   ]
 ==
