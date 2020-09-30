@@ -89,7 +89,7 @@ tests==
   ["Nul", "", "0"],
   ["tete","","102212"],
   ["Aléatoire", "", str(random.randint(1000000,42949100))],
-  ["Aléatoire", "", str(random.randint(6*7-5,6*7+5))]
+  ["Aléatoire", "", str(random.randint(6*7-4,6*7+3))]
   ]
 ==
 
