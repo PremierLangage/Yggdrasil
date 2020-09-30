@@ -37,7 +37,7 @@ int nextInteger(...){
 solution==
 int nextInteger(int *n){
 int r=0;
-while (!(r=scanf("%d",n))  getchar();
+while (!(r=scanf("%d",n)))  getchar();
 if (r==-1) return 0;
 return 1;
 }
