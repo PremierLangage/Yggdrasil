@@ -52,10 +52,11 @@ codebefore==
 
 codeafter==
 
-int main(int argc, char* argv[]){
+
+int main(int argc, char* argv[])
+{
   int n=0,essai=0;
-  while (nextInteger(&n))
-  { 
+  while (nextInteger(&n)){
     printf("Entier trouvé :%d \n",n);
     essai++;
   }
@@ -63,8 +64,6 @@ int main(int argc, char* argv[]){
 
   return 0;
 }
-
-
 ==
 
 tests==
