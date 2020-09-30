@@ -19,6 +19,8 @@ struct cel* suivant;
 }Cellule;  
 typedef Cellule* Liste;  
 
+
+Remarque vous pouvez utiliser la fonction nextEntier que vous avez écrite. A condition de la copier dans l'éditeur.
 ==
 
 editor.code==
@@ -96,6 +98,7 @@ tests==
   ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20)+10)])]
   ]
 ==
+
 
 
 
