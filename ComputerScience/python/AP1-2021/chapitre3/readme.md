@@ -30,8 +30,12 @@ Idée: interdire le while pour privilégier le for in range
 
 @ /ComputerScience/python/AP1-1920/chapters/1-bases-imperatif/boucles2/arrondiReel.pl
 
-Il plante problème de before inexistant à mon avis
+**Remarques/commentaires:**
+
+Il plante problème de before inexistant à mon avis pour initialiser des variables
 
 # Exercice 3
+
+@ /ComputerScience/python/AP1-1920/chapters/1-bases-imperatif/boucles2/bouclefact.pl
 
 
