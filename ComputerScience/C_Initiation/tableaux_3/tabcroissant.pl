@@ -46,13 +46,15 @@ for(;i<MAX;i+=1){
 codeafter==
 
 int main(int argc, char* argv[]){
-  int tab[5]={-1,2,5,8,78};
+  int tab[MAX];
   
- srand(time(NULL));
-if(rand()%2)
-  tab[4]=7;
-
-printf("-->%d\n",est_croissante(tab));
+  int size = 0;
+  int lu;
+  for (i = 0; i < MAX; i++) {
+    scanf("%d",&lu);
+    tab[i] = lu;
+  }
+  printf("-->%d\n",est_croissante(tab));
 
   return 0;
 }
@@ -60,9 +62,10 @@ printf("-->%d\n",est_croissante(tab));
 
 
 tests==
-[ ["simple éxécution", "",""], ]
-["croissante ", ""," ".join([str(0) for i in range(MAX)])], ]
-["croissante ", ""," ".join([str(i) for i in range(MAX)])], ]
+[ ["croissante 1", "","-1 2 5 8 78"], ]
+[ ["mauvaise", "","-1 2 8 5 78"], ]
+["croissante 2", ""," ".join([str(0) for i in range(MAX)])], ]
+["croissante 3", ""," ".join([str(i) for i in range(MAX)])], ]
 ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(MAX)])], ]
 ==
 
