@@ -18,7 +18,7 @@ taboo=import
 text==  
 On cherche à déterminer si un nombre est égal à la factorielle
 d'un autre nombre entier.
-Pocur cela,écrire un programme qui :
+Pour cela, écrire un programme qui :
 
 * lit un entier
 
@@ -83,6 +83,7 @@ mplsoluce5==
 nul
 1
 ==
+
 
 
 
