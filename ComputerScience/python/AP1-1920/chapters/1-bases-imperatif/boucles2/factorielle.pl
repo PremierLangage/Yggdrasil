@@ -1,6 +1,6 @@
 extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
 
-tag=boucle|ForInRange
+tag=InstructionsRepetitives|ForInRange
 
 # author = Quentin Coumes
 
