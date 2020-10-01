@@ -15,7 +15,7 @@ Ci-dessous, une description de chaque exercice et des changements effectués par
 tag=InstructionsRepetitives|ForInRange|VariableIteration
 @ /ComputerScience/python/AP1-1920/chapters/1-bases-imperatif/boucles2/factorielle.pl
 
-Idée: interdire le while 
+Idée: interdire le while pour privilégier le for in range
 
 **Changements:**
 
