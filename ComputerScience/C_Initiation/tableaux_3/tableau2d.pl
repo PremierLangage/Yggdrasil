@@ -29,15 +29,7 @@ codebefore==
 
 editor.code==
 void remplit(char t[][MAX],int li,int col){
-  char l='a';
-  int d=0;
-  int i,j;
-  for(i= 0;i<li;i++)
-    for(j=0;j<col;j++){
-      t[i][j]=l;
-      d=(d+1)%26;
-      l='a'+d;
-    }
+
 }
 ==
 solution==
@@ -80,3 +72,4 @@ tests==
 ["aléatoire ", "",str(random.randint(4,8))+" "+str(random.randint(9,15))],
 ]
 ==
+
