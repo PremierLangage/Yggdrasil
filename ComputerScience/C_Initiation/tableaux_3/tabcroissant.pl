@@ -61,7 +61,11 @@ printf("-->%d\n",est_croissante(tab));
 
 tests==
 [ ["simple éxécution", "",""], ]
+["croissante ", ""," ".join([str(0) for i in range(MAX)])], ]
+["croissante ", ""," ".join([str(i) for i in range(MAX)])], ]
+["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(MAX)])], ]
 ==
+
 
 
 
