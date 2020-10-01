@@ -26,8 +26,9 @@ Idée: interdire le while pour privilégier le for in range
     -
     -
 
+# Exercice 2
 
-
+@ /ComputerScience/python/AP1-1920/chapters/1-bases-imperatif/boucles2/arrondiReel.pl
 
 
 
