@@ -1,5 +1,7 @@
 extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
 
+tag=boucle|ForInRange
+
 # author = Quentin Coumes
 
 title = Factorielle
@@ -58,6 +60,7 @@ del math
 # for i in range(n+1):
 #    print(str(i) + "!" + " = " + str(f))
 #    f*=i+1
+
 
 
 
