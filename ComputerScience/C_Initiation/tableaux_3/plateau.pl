@@ -19,7 +19,8 @@ codebefore==
 
 editor.code==
   int plateau(int t[], int taille,int *debut){
- 
+
+}
 ==
 
 solution==
