@@ -32,3 +32,6 @@ Idée: interdire le while pour privilégier le for in range
 
 Il plante problème de before inexistant à mon avis
 
+# Exercice 3
+
+
