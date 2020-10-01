@@ -12,11 +12,10 @@ Pour l'instant j'ai (Marie) fait une copie locale de la feuille de tp principale
 Ci-dessous, une description de chaque exercice et des changements effectués par rapport à la mouture précédente (ainsi que quelques commentaires).
 
 # Exercice 1
+tag=InstructionsRepetitives|ForInRange|VariableIteration
+@ /ComputerScience/python/AP1-1920/chapters/1-bases-imperatif/boucles2/factorielle.pl
 
-@ chemin
-
-
-Idée: 
+Idée: interdire le while 
 
 **Changements:**
 
@@ -26,6 +25,7 @@ Idée:
 **Remarques/commentaires:**
     -
     -
+
 
 
 
