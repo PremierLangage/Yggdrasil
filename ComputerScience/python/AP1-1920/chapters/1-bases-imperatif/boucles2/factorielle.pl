@@ -1,6 +1,6 @@
 extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
 
-tag=InstructionsRepetitives|ForInRange
+tag=InstructionsRepetitives|ForInRange|VariableIteration
 
 # author = Quentin Coumes
 
