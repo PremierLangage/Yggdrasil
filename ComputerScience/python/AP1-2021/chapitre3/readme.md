@@ -38,4 +38,7 @@ Il plante problème de before inexistant à mon avis pour initialiser des variab
 
 @ /ComputerScience/python/AP1-1920/chapters/1-bases-imperatif/boucles2/bouclefact.pl
 
+**Remarques/commentaires:**
+
+ATTENTION l'année dernière 110 plantage sandbox
 
