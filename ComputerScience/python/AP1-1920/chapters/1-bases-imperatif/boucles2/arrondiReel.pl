@@ -1,6 +1,7 @@
 
 #author=Zip
 
+tag=
 
 # Heritaged'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
@@ -55,4 +56,5 @@ un | 1
 petit | 14
 grand | 10001
 ==
+
 
