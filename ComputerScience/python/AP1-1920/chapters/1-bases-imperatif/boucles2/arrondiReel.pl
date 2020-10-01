@@ -36,6 +36,7 @@ Si l'entier n est négatif, on affiche "erreur"
 
 **Testez dans python, en dehors de Premier Langage (pour n=10,100,10000) et réfléchissez à une explication**
 ==
+
 soluce==
 #import math
 croiss,decroi=0,0
@@ -50,6 +51,7 @@ else:
     print("avec(1)",croiss,"avec(2)",decroi)
 #print(math.pi*math.pi/6)
 ==
+
 plsoluce==
 erreur | -4
 un | 1
