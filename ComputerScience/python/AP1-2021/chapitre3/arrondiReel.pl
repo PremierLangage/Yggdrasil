@@ -13,7 +13,7 @@ from math import *
 
 n = int(input("Entrez un nombre : "))
 
-print("avec suite (1)",??,"avec suite (2)",??)
+print("avec suite (1)", ??, "avec suite (2)", ??, "valeur de pi²/6", ??)
 
 ==
 
@@ -32,7 +32,7 @@ $%\(2):\sum\limits_{+\infty}^1 \frac{1}{i^2}%$
 
 Ecrire un programme qui lit un entier positif n,
  puis affiche:
- 
+
  * les sommes partielles (i=1 à n et i=n à 1, bornes comprises) pour chaque série.
  * la valeur de $%\frac{\pi^2}{6}%$ (utilisez `from math import *` pour utiliser `pi`)
 
