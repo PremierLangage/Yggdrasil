@@ -13,7 +13,7 @@ n= int(input("Entrez un nombre : "))
 
 
 
-print("avec(1)",??,"avec(2)",??)
+print("avec suite (1)",??,"avec suite (2)",??)
 
 ==
 
