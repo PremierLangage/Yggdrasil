@@ -51,7 +51,7 @@ else:
         croiss+=1/(i*i)
     for i in range(n,0,-1):
         decroi+=1/(i*i)
-    print("avec(1)",croiss,"avec(2)",decroi)
+    print("avec suite (1)",croiss,"avec suite (2)",decroi)
 #print(math.pi*math.pi/6)
 ==
 
