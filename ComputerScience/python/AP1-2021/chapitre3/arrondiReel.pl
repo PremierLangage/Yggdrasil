@@ -4,7 +4,7 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
-tag=
+tag=boucle|float|somme
 
 title = Approximation de $%\frac{\pi^2}{6}%$
 
@@ -34,7 +34,7 @@ Ecrire un programme qui lit un entier positif n,
  puis affiche:
 
  * les sommes partielles (i=1 à n et i=n à 1, bornes comprises) pour chaque série.
- * la valeur de $%\frac{\pi^2}{6}%$ (utilisez `from math import *` pour utiliser `pi`)
+ * la valeur de $%\frac{\pi^2}{6}%$ (`from math import *` est obligatoire pour utiliser `pi`)
 
 Si l'entier n est négatif, on affiche "erreur"
 
