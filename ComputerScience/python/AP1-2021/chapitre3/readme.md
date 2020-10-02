@@ -30,7 +30,7 @@ tag=boucle|float|somme|math
 
 **Remarques/commentaires:**
     - Il plante problème de before inexistant à mon avis pour initialiser des variables
-    - Problème fixé il fonctionne 
+    - Problème fixé il fonctionne mais il est compliqué donc en refonte !
 
 # Exercice 3
 
