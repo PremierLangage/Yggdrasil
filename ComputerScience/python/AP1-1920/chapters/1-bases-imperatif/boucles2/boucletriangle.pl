@@ -1,5 +1,5 @@
 
-#author=Zip
+author=Zip
 
 
 # Heritage d'un type d'exercice 
@@ -21,7 +21,7 @@ Ecrire un programme qui force la saisie d'un entier strictement positif
 
 1 2 3 ... n sur la dernière.
 
-exemple
+exemple:
 
 
 Entrez un entier strictement positf: -2
@@ -81,6 +81,7 @@ une ligne
 1
 1
 ==
+
 
 
 
