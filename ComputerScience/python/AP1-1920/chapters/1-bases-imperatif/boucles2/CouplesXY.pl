@@ -14,8 +14,8 @@ col=int(input("nombre de colonnes"))
 taboo=while
 
 text==  
-Écrivez un script qui affiche tous les couples (x,y), x étant un entier positif compris entre 0 et li et y un entier positif 
-compris entre 0 et col ; <br>
+Écrivez un script qui affiche tous les couples (x,y), x étant un entier positif ou nul inférieur à **li** 
+et y un entier positif ou nul inférieur à **col** ;  <br>
 li et col sont deux entiers acquis au clavier. <br>
 L’affichage doit se faire avec un espace entre chaque couple comme sur l’exemple suivant qui correspond à li = 3 et col = 5 :
 <br>
@@ -23,6 +23,13 @@ L’affichage doit se faire avec un espace entre chaque couple comme sur l’exe
 (1,0) (1,1) (1,2) (1,3) (1,4) <br>
 (2,0) (2,1) (2,2) (2,3) (2,4) <br>
 
+Remarques: 
+
+    >>> print("("+str(1)+","+str(2)+")")
+    (1,2)
+    >>> i,j = 3,4 
+    >>> print( f"({i},{j}) ({j},{i})") 
+    (3,4) (4,3)
 
 ==
 
@@ -56,6 +63,7 @@ nul
 0
 0
 ==
+
 
 
 
