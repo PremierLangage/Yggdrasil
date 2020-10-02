@@ -23,7 +23,7 @@ Idée:
     - 
 
 **Remarques/commentaires:**
-    -
+    - Il plante "Une erreur s'est produite lors de l'exécution du grader"
     -
 
 # Exercice 2
