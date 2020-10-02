@@ -13,9 +13,9 @@ Ci-dessous, une description de chaque exercice et des changements effectués par
 
 # Exercice 1
 tag=InstructionsRepetitives|ForInRange|VariableIteration
-@ /ComputerScience/python/AP1-1920/chapters/1-bases-imperatif/boucles2/factorielle.pl
+@ /ComputerScience/python/AP1-1920/drafts/AntoineMeyer/exercises/boucles/boucle-qui-compte-de-0-a-nb-moins-1.pl
 
-Idée: interdire le while pour privilégier le for in range
+Idée: 
 
 **Changements:**
 
