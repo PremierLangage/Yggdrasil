@@ -33,7 +33,7 @@ Idée: interdire le while pour privilégier le for in range
 **Remarques/commentaires:**
 
 Il plante problème de before inexistant à mon avis pour initialiser des variables
-Problème fixés
+Problème fixé il fonctionne 
 
 # Exercice 3
 
@@ -42,5 +42,6 @@ Problème fixés
 **Remarques/commentaires:**
 
 ATTENTION l'année dernière 110 plantage sandbox (best world reccord)
+
 
 
