@@ -1,7 +1,11 @@
 #author=OCE
 
+
+
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
+
+before=
 
 title = Couples (X,Y)
 
@@ -28,7 +32,8 @@ Remarques:
     >>> print("("+str(1)+","+str(2)+")")
     (1,2)
     >>> i,j = 3,4 
-    >>> print( f"({i},{j}) ({j},{i})") 
+    >>> s= f"({i},{j}) ({j},{i})" 
+    >>> print(s)
     (3,4) (4,3)
 
 ==
