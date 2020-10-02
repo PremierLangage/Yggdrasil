@@ -17,6 +17,9 @@ print("avec(1)",??,"avec(2)",??)
 
 ==
 
+before==
+==
+
 text==  
 On veut comparer les valeurs (informatique) de deux séries (identiques) qui convergent (mathématiquement) vers $%\frac{\pi^2}{6}%$
 
@@ -58,5 +61,6 @@ un | 1
 petit | 14
 grand | 10001
 ==
+
 
 
