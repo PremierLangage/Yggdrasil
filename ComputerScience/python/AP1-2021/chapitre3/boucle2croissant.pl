@@ -12,6 +12,7 @@ Ecrire un programme qui effectue la saisie controlée d'un type de variable,
 (on demande un type tant qu'on n'a pas lu `"str"` ou `"int"`) puis
 lit une suite de valeurs de ce type tant quelles forment une suite strictement croissante. 
 
+
 Lorsque la suite n'est plus croissante, la saisie s'arrête et 
 le programme affiche la longueur de la suite croissante.
 ==
