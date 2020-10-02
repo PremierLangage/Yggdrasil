@@ -18,22 +18,19 @@ tag=InstructionsRepetitives|ForInRange|VariableIteration
 Idée: interdire le while pour privilégier le for in range
 
 **Changements:**
-
     - 
-    - 
-
 **Remarques/commentaires:**
-    -
     -
 
 # Exercice 2
 
+tag=boucle|float|somme|math
+
 @ /ComputerScience/python/AP1-1920/chapters/1-bases-imperatif/boucles2/arrondiReel.pl
 
 **Remarques/commentaires:**
-
-Il plante problème de before inexistant à mon avis pour initialiser des variables
-Problème fixé il fonctionne 
+    - Il plante problème de before inexistant à mon avis pour initialiser des variables
+    - Problème fixé il fonctionne 
 
 # Exercice 3
 
@@ -42,6 +39,14 @@ Problème fixé il fonctionne
 **Remarques/commentaires:**
 
 ATTENTION l'année dernière 110 plantage sandbox (best world reccord)
+
+# Exercice 4
+
+
+**Changements:**
+    - 
+**Remarques/commentaires:**
+    -
 
 
 
