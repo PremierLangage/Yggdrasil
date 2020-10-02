@@ -38,7 +38,7 @@ tag=boucle|float|somme|math
 
 **Remarques/commentaires:**
 
-ATTENTION l'année dernière 110 plantage sandbox (best world reccord)
+ATTENTION l'année dernière 110 -1 (best world reccord)
 
 # Exercice 4
 
@@ -47,6 +47,7 @@ ATTENTION l'année dernière 110 plantage sandbox (best world reccord)
     - 
 **Remarques/commentaires:**
     -
+
 
 
 
