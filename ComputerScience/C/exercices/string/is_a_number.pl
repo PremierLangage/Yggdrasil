@@ -14,10 +14,12 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
+extends=/ComputerScience/C/template/std_progC.pl
+
 author=Nicolas Borie
+
 title=Reconnaître un nombre
-tag=string
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=string|chaine|conversion|verification
 
 text==
 Écrire une fonction **is_a_number** qui prend en argument une chaîne 
@@ -59,7 +61,11 @@ int is_a_number(char* s){
 }
 ==
 
-codeafter==
+code_before==
+
+==
+
+code_after==
 
 #include <stdio.h>
 
@@ -74,18 +80,18 @@ int main(int argc, char* argv[]){
 }
 ==
 
-tests==
-[ ["Basique", "0", ""],
-  ["Centaines", "123", ""],
-  ["Avec des lettres", "12a0", ""],
-  ["Petit négatif", "-47", ""],
-  ["Très grand nombre", "12172364512235126361273223736", ""],
-  ["Fort négatif", "-999999999999999", ""],
-  ["Aléatoire", random.choice(["781","-1274","997421","-75.43","3.1415","12521z","-124b","82c12","-124b","-142c1","-12.21"]), ""],
-  ["Aléatoire", random.choice(["781","-1274","997421","-75.43","3.1415","12521z","-124b","82c12","-124b","-142c1","-12.21"]), ""],
-  ["Aléatoire", random.choice(["781","-1274","997421","-75.43","3.1415","12521z","-124b","82c12","-124b","-142c1","-12.21"]), ""],
-  ["Aléatoire", random.choice(["781","-1274","997421","-75.43","3.1415","12521z","-124b","82c12","-124b","-142c1","-12.21"]), ""],
-  ["Aléatoire", random.choice(["781","-1274","997421","-75.43","3.1415","12521z","-124b","82c12","-124b","-142c1","-12.21"]), ""] ]
+checks_args_stdin==#|python|
+[ ["Test basique", ["0"], ""],
+  ["Centaines", ["123"], ""],
+  ["Avec des lettres", ["12a0"], ""],
+  ["Petit négatif", ["-47"], ""],
+  ["Très grand nombre", ["12172364512235126361273223736"], ""],
+  ["Fort négatif", ["-999999999999999"], ""],
+  ["Aléatoire", [choice(["781","-1274","997421","-75.43","3.1415","12521z","-124b","82c12","-124b","-142c1","-12.21"])], ""],
+  ["Aléatoire", [choice(["781","-1274","997421","-75.43","3.1415","12521z","-124b","82c12","-124b","-142c1","-12.21"])], ""],
+  ["Aléatoire", [choice(["781","-1274","997421","-75.43","3.1415","12521z","-124b","82c12","-124b","-142c1","-12.21"])], ""],
+  ["Aléatoire", [choice(["781","-1274","997421","-75.43","3.1415","12521z","-124b","82c12","-124b","-142c1","-12.21"])], ""],
+  ["Aléatoire", [choice(["781","-1274","997421","-75.43","3.1415","12521z","-124b","82c12","-124b","-142c1","-12.21"])], ""] ]
 ==
 
 
