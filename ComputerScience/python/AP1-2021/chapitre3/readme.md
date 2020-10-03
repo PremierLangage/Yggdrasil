@@ -22,17 +22,8 @@ Idée: interdire le while pour privilégier le for in range
 **Remarques/commentaires:**
     -
 
+
 # Exercice 2
-
-tag=boucle|float|somme|math
-
-@ /ComputerScience/python/AP1-2021/chapitre3/arrondiReel.pl
-
-**Remarques/commentaires:**
-    - Il plante problème de before inexistant à mon avis pour initialiser des variables
-    - Problème fixé il fonctionne mais il est compliqué donc en refonte !
-
-# Exercice 3
 
 @ /ComputerScience/python/AP1-2021/chapitre3/bouclefact.pl
 
@@ -40,7 +31,7 @@ tag=boucle|float|somme|math
 
 ATTENTION l'année dernière 110 -1 (best world reccord)
 
-# Exercice 4
+# Exercice 3
 
 @ /ComputerScience/python/AP1-2021/chapitre3/boucle2croissant.pl
 
@@ -52,6 +43,23 @@ L'exercice fonctionne
     -
 
 
+
+
+
+
+
+
+
+
+# Exercice arrondiReel
+
+tag=boucle|float|somme|math
+
+@ /ComputerScience/python/AP1-2021/chapitre3/arrondiReel.pl
+
+**Remarques/commentaires:**
+    - Il plante problème de before inexistant à mon avis pour initialiser des variables
+    - Problème fixé il fonctionne mais il est compliqué donc en refonte !
 
 
 
