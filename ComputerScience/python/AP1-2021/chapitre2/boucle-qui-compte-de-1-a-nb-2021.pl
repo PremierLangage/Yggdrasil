@@ -1,5 +1,5 @@
 # author = Antoine Meyer
-extends = ../../templates/generic/generic.pl
+extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
 tag=InstructionsRepetitives|ForInRange|VariableIteration
 title = Boucle qui compte de 1 à `nb`
 
