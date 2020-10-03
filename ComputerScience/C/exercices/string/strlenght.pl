@@ -84,7 +84,7 @@ checks_args_stdin==#|python|
   ["Deux mots", ["ca va?"], ""], 
   ["Mot vide", [""], ""], 
   ["Long mot", ["Anti-constitutionnellement"], ""],
-  ["Test aléatoire", [choice(["radar", "bouteille", ""])]] ] 
+  ["Test aléatoire", [choice(["radar", "bouteille", "la", "chat", "romantique", "ete", "liquide"])]] ] 
 ==
 
 
