@@ -1,5 +1,5 @@
 #*****************************************************************************
-#  Copyright (C) 2017 Dominique R <dr@univ-mlv.fr>
+#  Copyright (C) 2017 Dominique Revuz <dr@univ-mlv.fr>
 #  Copyright (C) 2019 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
 #  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
@@ -93,6 +93,7 @@ checks_args_stdin==#|python|
   ["Test aléatoire 3", ["".join([chr(randint(97, 122)) for i in range(50)]), chr(randint(97, 122))], ""],
   ["Test aléatoire 4", ["".join([chr(randint(97, 122)) for i in range(50)]), chr(randint(97, 122))], ""] ]
 ==
+
 
 
 
