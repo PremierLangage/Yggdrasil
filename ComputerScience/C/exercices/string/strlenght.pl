@@ -1,14 +1,27 @@
-# Copyright 2016-2019 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2016 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Calcul de la longueur d'une chaîne de caractères C
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=longueur d'une chaîne de caractères
-tag=string
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=string|chaine|longueur|caractère
 
 text==
-
 Complètez la fonction suivante pour quelle retourne le nombre de
 caractères contenus dans la chaîne **s** donnée en argument. Vous
 devez écrire votre fonction sans rien utiliser des bibliothèques
@@ -31,14 +44,14 @@ chaîne.
 
 ==
 
-editor.code==
+editor.code==#|c|
 int string_length(char* s){
   /* Votre code ici... */
 }
 
 ==
 
-solution==
+solution==#|c|
 
 int string_length(char* s){
   int len;
@@ -46,10 +59,9 @@ int string_length(char* s){
   for(len=0 ; s[len] != '\0'; len++) {}
   return len;
 }
-
 ==
 
-codebefore==
+code_before==#|c|
 
 #include <stdio.h>
 
@@ -60,15 +72,19 @@ int main(int argc, char* argv[]){
   printf("La chaîne \"%s\" a pour longueur %d\n", argv[1], string_length(argv[1]));
   return 0;
 }
+==
+
+code_after==#|c|
 
 ==
 
-
-tests==
-[ ["Petit mot", "mot", ""], 
-  ["Un mot", "Bonjour", ""], 
-  ["Deux mots", '"ca va?"', ""], 
-  ["Mot vide", '""', ""], 
-  ["Long mot", "Anti-constitutionnellement", ""] ] 
+checks_args_stdin==#|python|
+[ ["Petit mot", ["mot"], ""], 
+  ["Un mot", ["Bonjour"], ""], 
+  ["Deux mots", ["ca va?"], ""], 
+  ["Mot vide", [""], ""], 
+  ["Long mot", ["Anti-constitutionnellement"], ""],
+  ["Test aléatoire", [choice(["radar", "bouteille", ""])]] ] 
 ==
+
 
