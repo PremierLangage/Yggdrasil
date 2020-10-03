@@ -32,7 +32,7 @@ plus grands.
 
 ==
 
-editor.code==
+editor.code==#|c|
 #include ...
 
 int main(...){
@@ -41,7 +41,7 @@ int main(...){
 
 ==
 
-solution==
+solution==#|c|
 
 #include <stdio.h>
 #include <string.h>
@@ -64,17 +64,25 @@ int main(int argc, char* argv[]){
 
 ==
 
-tests==
-[ ["Basique", "argument1", ""],
-  ["Sans argument", "", ""],
-	["Argument multiple", "12 pouet foo bar 1367235342534", ""],
-	["Argument long", "argument1 mot super long anti-constitutionnellement", ""],
-	["Complexe", "'argument en plusieurs mots' mot_unique", ""],
-  ["Aléatoire", " ".join(["".join([chr(random.randint(97,122)) for i in range(random.randint(1,15))]) for i in range(1, 8)]), ""],
-  ["Aléatoire", " ".join(["".join([chr(random.randint(97,122)) for i in range(random.randint(1,15))]) for i in range(1, 8)]), ""],
-  ["Aléatoire", " ".join(["".join([chr(random.randint(97,122)) for i in range(random.randint(1,15))]) for i in range(1, 8)]), ""],
-  ["Aléatoire", " ".join(["".join([chr(random.randint(97,122)) for i in range(random.randint(1,15))]) for i in range(1, 8)]), ""],
-  ["Aléatoire", " ".join(["".join([chr(random.randint(97,122)) for i in range(random.randint(1,15))]) for i in range(1, 8)]), ""] ]
+code_before==#|c|
+
+==
+
+code_after==#|c|
+
+==
+
+checks_args_stdin==#|python|
+[ ["Test basique", ["argument1"], ""],
+  ["Sans argument", [""], ""],
+	["Arguments multiples", ["12", "pouet", "foo", "bar", "1367235342534"], ""],
+	["Arguments longs", ["argument1", "mot", "super", "long", "anti-constitutionnellement"], ""],
+	["Argument complexe", ["argument en plusieurs mots", "mot_unique"], ""],
+  ["Test aléatoire 1", ["".join([chr(randint(97,122)) for i in range(randint(1,15))]) for i in range(1, 8)], ""],
+  ["Test aléatoire 2", ["".join([chr(randint(97,122)) for i in range(randint(1,15))]) for i in range(1, 8)], ""],
+  ["Test aléatoire 3", ["".join([chr(randint(97,122)) for i in range(randint(1,15))]) for i in range(1, 8)], ""],
+  ["Test aléatoire 4", ["".join([chr(randint(97,122)) for i in range(randint(1,15))]) for i in range(1, 8)], ""],
+  ["Test aléatoire 5", ["".join([chr(randint(97,122)) for i in range(randint(1,15))]) for i in range(1, 8)], ""] ]
 ==
 
 
