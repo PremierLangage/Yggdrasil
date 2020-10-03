@@ -72,12 +72,12 @@ checks_args_stdin==#|python|
   ["Un anagrame", ["Borie", "Boire"], ""],
   ["A la fin", ['Borie aime bien Boire', 'Boire'], ""],
   ["Finalement", ["Qui aime Boire chatie bien", "Boire"], ""],
-  ["Test aléatoire 1", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(2)]], "" ],
-  ["Test aléatoire 2", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(2)]], "" ],
-  ["Test aléatoire 3", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(2)]], "" ],
-  ["Test aléatoire 4", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(3)]], "" ],
-  ["Test aléatoire 5", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(3)]], "" ],
-  ["Test aléatoire 6", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(3)]], "" ] ]
+  ["Test aléatoire 1", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(2)] ], "" ],
+  ["Test aléatoire 2", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(2)] ], "" ],
+  ["Test aléatoire 3", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(2)] ], "" ],
+  ["Test aléatoire 4", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(3)] ], "" ],
+  ["Test aléatoire 5", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(3)] ], "" ],
+  ["Test aléatoire 6", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(3)] ], "" ] ]
 ==
 
 
