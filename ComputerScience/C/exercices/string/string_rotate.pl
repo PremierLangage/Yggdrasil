@@ -18,6 +18,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
 title=Rotation des lettres dans une chaîne
+
 tag=function|type|string|decalage
 
 # editor.height=300px
@@ -79,5 +80,6 @@ int main(int argc, char* argv[]){
   return 0;
 }
 ==
+
 
 
