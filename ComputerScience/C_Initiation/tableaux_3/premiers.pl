@@ -33,6 +33,7 @@ codebefore==
 
 #define N 28
 
+==
 
 solution==
 int pgcd(int a,int b){
