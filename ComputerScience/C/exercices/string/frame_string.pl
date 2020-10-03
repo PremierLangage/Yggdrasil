@@ -70,7 +70,11 @@ void frame_string(char* text){
 
 ==
 
-codeafter==
+code_before==
+
+==
+
+code_after==
 
 int main(int argc, char* argv[]){
   frame_string(argv[1]);
@@ -79,13 +83,13 @@ int main(int argc, char* argv[]){
 
 ==
 
-    
-tests==
-[ ["Basique", "pouet", ""],
-  ["Chaîne composée", '"deux mots"', ""],
-  ["Chaîne vide", '""', ""],
-  ["Long mot", "Anti-constitutionnellement", ""],
-  ["Plein de mots", '"Cela fait sept mots dans un mot"', ""] ]
+checks_args_stdin==#|python|    
+[ ["Test basique", ["pouet"], ""],
+  ["Chaîne composée", ["deux mots"], ""],
+  ["Chaîne vide", [""], ""],
+  ["Un long mot", ["Anti-constitutionnellement"], ""],
+  ["Plein de mots", ["Cela fait sept mots dans un mot"], ""],
+  ["Test aléatoire", [choice(["voiture", "avion", "train", "bateau", "char", "skate", "overcraft"])], ""] ]
 ==
 
 
