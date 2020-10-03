@@ -22,7 +22,6 @@ Idée: interdire le while pour privilégier le for in range
 **Remarques/commentaires:**
     -
 
-
 # Exercice 2
 
 @ /ComputerScience/python/AP1-2021/chapitre3/bouclefact.pl
@@ -33,6 +32,7 @@ ATTENTION l'année dernière 110 -1 (best world reccord)
 
 # Exercice 3
 
+tag=boucle|type|input|while
 @ /ComputerScience/python/AP1-2021/chapitre3/boucle2croissant.pl
 
 L'exercice fonctionne
