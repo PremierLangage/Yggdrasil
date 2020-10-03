@@ -22,7 +22,7 @@ de `nb`.*<br>
 
 editor.theme=light
 
-grader==
+grader==#|python|
 def expected_output(nb):
     res = ""
     for i in range(nb):
@@ -42,6 +42,7 @@ begin_test_group("Nombres aléatoires")
 from random import sample
 tests(sample(list(range(100, 200)), 5))
 ==
+
 
 
 
