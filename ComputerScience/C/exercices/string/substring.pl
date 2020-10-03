@@ -15,14 +15,12 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
-# Copyright 2017 DR
-#
+extends=/ComputerScience/C/template/std_progC.pl
 
-author=NB & DR
+author=Dominique Revuz
+
 title=Sous-chaîne dans une chaîne
 tag=function|string
-extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
@@ -47,11 +45,14 @@ int substring(char* big, char* sub) {
 
 ==
 
-codeafter==
+code_before==#|c|
+
+==
+
+code_after==#|c|
 
 #include <stdlib.h>
 #include <stdio.h>
-
 
 int main(int argc, char* argv[]){
 
@@ -65,18 +66,18 @@ int main(int argc, char* argv[]){
 ==
 
 
-tests==
-[ ["Basique", "unmotavecunlici l", ""],
-  ["Pas présent", "unmotsanslalettre x", ""], 
-  ["Anagrame", "Borie Boire", ""],
-  ["A la fin", "'Borie aime bien Boire' Boire", ""],
-  ["Finalement", "'Qui aime Boire chatie bien' Boire", ""],
-  ["Aléatoire", "".join([chr(random.randint(97,102)) for i in range(50)]) + " " + "".join([chr(random.randint(97,102)) for i in range(2)]), "" ],
-  ["Aléatoire", "".join([chr(random.randint(97,102)) for i in range(50)]) + " " + "".join([chr(random.randint(97,102)) for i in range(2)]), "" ],
-  ["Aléatoire", "".join([chr(random.randint(97,102)) for i in range(50)]) + " " + "".join([chr(random.randint(97,102)) for i in range(2)]), "" ],
-  ["Aléatoire", "".join([chr(random.randint(97,102)) for i in range(50)]) + " " + "".join([chr(random.randint(97,102)) for i in range(3)]), "" ],
-  ["Aléatoire", "".join([chr(random.randint(97,102)) for i in range(50)]) + " " + "".join([chr(random.randint(97,102)) for i in range(3)]), "" ],
-  ["Aléatoire", "".join([chr(random.randint(97,102)) for i in range(50)]) + " " + "".join([chr(random.randint(97,102)) for i in range(3)]), "" ] ]
+checks_args_stdin==#|python|
+[ ["Test basique", ["unmotavecunlici", "l"], ""],
+  ["Pas présent", ["unmotsanslalettre", "x"], ""], 
+  ["Un anagrame", ["Borie", "Boire"], ""],
+  ["A la fin", ['Borie aime bien Boire', 'Boire'], ""],
+  ["Finalement", ["Qui aime Boire chatie bien", "Boire"], ""],
+  ["Test aléatoire 1", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(2)]], "" ],
+  ["Test aléatoire 2", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(2)]], "" ],
+  ["Test aléatoire 3", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(2)]], "" ],
+  ["Test aléatoire 4", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(3)]], "" ],
+  ["Test aléatoire 5", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(3)]], "" ],
+  ["Test aléatoire 6", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(3)]], "" ] ]
 ==
 
 
