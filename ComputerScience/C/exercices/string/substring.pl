@@ -40,7 +40,7 @@ solution==
 #include <string.h>
 
 int substring(char* big, char* sub) {
-  return strstr(big, sub);
+  return strstr(big, sub) != NULL; 
 }
 
 ==
