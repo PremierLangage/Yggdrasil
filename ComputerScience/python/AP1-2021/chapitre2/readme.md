@@ -19,11 +19,9 @@ Idée:
 
 **Changements:**
 
-    - J'ai enlevé #|python| après grader (j'avoue pas avoir compris ca marchait pas mais bon le problème d'exectution du grader est résolu)
-    - 
+    - ajout des tags
 
 **Remarques/commentaires:**
-    - Il plante "Une erreur s'est produite lors de l'exécution du grader"
     - Si on fait comme dans la solution, cela pose un problème à cause de deux passages à la ligne à la fin au lieu d'un le print du python en ajoute un.
 
 # Exercice 2
@@ -34,12 +32,11 @@ Idée:
 
 **Changements:**
 
-    - J'ai enlevé #|python| après grader (j'avoue pas avoir compris ca marchait pas mais bon le problème d'exectution du grader est résolu)
-    - 
+    - ajout des tags
 
 **Remarques/commentaires:**
-    - Il plante "Une erreur s'est produite lors de l'exécution du grader"
     - Si on fait comme dans la solution, cela pose un problème à cause de deux passages à la ligne à la fin au lieu d'un le print du python en ajoute un.
+
 
 
 
