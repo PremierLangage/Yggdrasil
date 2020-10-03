@@ -40,13 +40,13 @@ Voici des entrées non valides :
 
 ==
 
-editor.code==
+editor.code==#|c|
 int is_a_number(char* s){
   /* votre code ici... */
 }
 ==
 
-solution==
+solution==#|c|
 
 int is_a_number(char* s){
   int i=0;
@@ -64,11 +64,11 @@ int is_a_number(char* s){
 }
 ==
 
-code_before==
+code_before==#|c|
 
 ==
 
-code_after==
+code_after==#|c|
 
 #include <stdio.h>
 
