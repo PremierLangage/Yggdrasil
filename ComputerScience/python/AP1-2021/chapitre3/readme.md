@@ -20,13 +20,13 @@ tag=InstructionsRepetitives|ForInRange|VariableIteration
 **Remarques/commentaires:**
     -
 
-# Exercice 3
+# Exercice 2
 
 @ /ComputerScience/python/AP1-2021/chapitre3/bouclefact.pl
 
 **Remarques/commentaires:**
 
-# Exercice 4
+# Exercice 3
 
 @ /ComputerScience/python/AP1-2021/chapitre3/boucle2croissant.pl
 
