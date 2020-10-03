@@ -18,7 +18,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
 
-title=Reconnaître un nombre
+title=Reconnaître un nombre entier
 tag=string|chaine|conversion|verification
 
 text==
