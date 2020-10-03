@@ -31,7 +31,8 @@ codebefore==
 #include <stdlib.h>
 #include <stdio.h>
 
-==
+#define N 28
+
 
 solution==
 int pgcd(int a,int b){
@@ -49,7 +50,7 @@ while(r!=0){
     return b;
 }
     
-}
+
 int premiers_entre_eux(int t[][N]){
     int i,j;
 
@@ -57,40 +58,38 @@ int premiers_entre_eux(int t[][N]){
     for (i=1;i<N;i++)
         t[0][i]= t[i][0]=0;
     for(i=1;i<N;i++)
-for(j=i +1;j<N;j++)
+for(j=i;j<N;j++)
     if(pgcd(i,j)==1)
             t[i][j]=t[j][i]=1;
     else
         t[i][j]=t[j][i]=0;
 t[0][1]=t[1][0]=1;
-
+}
 ==
 
 
 codeafter==
 
-
-
-
-int main(void) {
-	int n ;
-scanf("%d",&n);
-if (est_factoriel(n)){
-	printf("%d  est factoriel\n",n);
+void affiche(int t[][N])[
+int i,j;
+for(i=0;i<N;i++){
+    for(j=0;j<N;j++)
+        printf("%d ",t[i][j]);
+    printf("\n");
     }
-else
-	printf("%d  n'est pas factoriel\n",n);
+ }
+int main(void) {
+	int t[N][N] ;
+premiers_entre_eux(t);
+affiche(t);
 return 0;
 }
 ==
 
 
 tests==
-[ ["Basique", "", "10"],
-  ["impossible", "", "-1"],
-  ["fatoriel", "", "6"],
-  ["Aléatoire", "",str(random.randint(1, 20))],
-  ["Aléatoire", "", str(random.choice([720, 40,3628800,40320]))] 
+[ ["Basique", "", ""],
+  
   ]
 ==
 
