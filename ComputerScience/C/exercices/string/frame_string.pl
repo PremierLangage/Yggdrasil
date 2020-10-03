@@ -24,7 +24,7 @@ tag=string|fonction|chaine|taille
 
 text==
 
-Écrire une fonction C qui prend en argument une chaîne de caractères
+Écrire une fonction C qui prend en argument une **chaîne de caractères**
 et qui affiche cette chaîne de manière encadrée avec des caractères \#.
 
 
