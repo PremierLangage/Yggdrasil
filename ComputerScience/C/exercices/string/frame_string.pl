@@ -89,7 +89,8 @@ checks_args_stdin==#|python|
   ["Chaîne vide", [""], ""],
   ["Un long mot", ["Anti-constitutionnellement"], ""],
   ["Plein de mots", ["Cela fait sept mots dans un mot"], ""],
-  ["Test aléatoire", [choice(["voiture", "avion", "train", "bateau", "char", "skate", "overcraft"])], ""] ]
+  ["Test aléatoire 1", [choice(["voiture", "avion", "train", "bateau", "char", "skate", "overcraft"])], ""],
+  ["Test aléatoire 2", [choice(["voiture", "avion", "train", "bateau", "char", "skate", "overcraft"])], ""] ]
 ==
 
 
