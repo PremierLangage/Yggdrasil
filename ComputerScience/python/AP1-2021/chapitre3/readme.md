@@ -13,7 +13,7 @@ Ci-dessous, une description de chaque exercice et des changements effectués par
 
 # Exercice 1
 tag=InstructionsRepetitives|ForInRange|VariableIteration
-@ /ComputerScience/python/AP1-1920/chapters/1-bases-imperatif/boucles2/factorielle.pl
+@ /ComputerScience/python/AP1-2021/chapitre3/factorielle.pl
 
 Idée: interdire le while pour privilégier le for in range
 
@@ -26,7 +26,7 @@ Idée: interdire le while pour privilégier le for in range
 
 tag=boucle|float|somme|math
 
-@ /ComputerScience/python/AP1-1920/chapters/1-bases-imperatif/boucles2/arrondiReel.pl
+@ /ComputerScience/python/AP1-2021/chapitre3/arrondiReel.pl
 
 **Remarques/commentaires:**
     - Il plante problème de before inexistant à mon avis pour initialiser des variables
@@ -34,7 +34,7 @@ tag=boucle|float|somme|math
 
 # Exercice 3
 
-@ /ComputerScience/python/AP1-1920/chapters/1-bases-imperatif/boucles2/bouclefact.pl
+@ /ComputerScience/python/AP1-2021/chapitre3/bouclefact.pl
 
 **Remarques/commentaires:**
 
@@ -47,6 +47,7 @@ ATTENTION l'année dernière 110 -1 (best world reccord)
     - 
 **Remarques/commentaires:**
     -
+
 
 
 
