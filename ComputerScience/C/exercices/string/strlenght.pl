@@ -72,6 +72,7 @@ int main(int argc, char* argv[]){
   printf("La chaîne \"%s\" a pour longueur %d\n", argv[1], string_length(argv[1]));
   return 0;
 }
+
 ==
 
 code_after==#|c|
@@ -84,8 +85,8 @@ checks_args_stdin==#|python|
   ["Deux mots", ["ca va?"], ""], 
   ["Mot vide", [""], ""], 
   ["Long mot", ["Anti-constitutionnellement"], ""],
-  ["Test aléatoire 1", [choice(["radar", "bouteille", "la", "chat", "romantique", "ete", "liquide"])]],
-  ["Test aléatoire 2", [choice(["radar", "bouteille", "la", "chat", "romantique", "ete", "liquide"])]] ] 
+  ["Test aléatoire 1", [choice(["radar", "bouteille", "la", "chat", "romantique", "ete", "liquide"])], ""],
+  ["Test aléatoire 2", [choice(["radar", "bouteille", "la", "chat", "romantique", "ete", "liquide"])], ""] ] 
 ==
 
 
