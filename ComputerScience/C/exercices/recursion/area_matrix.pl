@@ -30,7 +30,7 @@ Voici un exemple : prenons comme couleur $% 1, 2, 3, 4, 5 %$ et comme
 matrice *mat* de type `int[5][5]`.
 
 $%
-\centering\begin{array}{ccccc}
+\center\begin{array}{ccccc}
 5 & 1 & 3 & 1 & 4 \\newline
 1 & 1 & 4 & 1 & 3 \\newline
 4 & 1 & 3 & 2 & 1 \\newline
