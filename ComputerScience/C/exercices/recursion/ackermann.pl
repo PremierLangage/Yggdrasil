@@ -74,16 +74,14 @@ int main(int argc, char* argv[]){
 }
 ==
 
-    
-
 checks_args_stdin==#|python|
-[["Basique", "0 0", ""], 
- ["Moyen", "2 2", ""],
- ["Gros", "3 5", ""],
- ["Aléatoire", ' '.join([str(randint(0, 1)), str(randint(0, 100))]), ""],
- ["Aléatoire", ' '.join([str(randint(0, 2)), str(randint(0, 20))]), ""],
- ["Aléatoire", ' '.join([str(randint(0, 3)), str(randint(0, 4))]), ""],
- ["Aléatoire", ' '.join([str(randint(0, 3)), str(randint(0, 4))]), ""]]
+[["Basique", ["0", "0"], ""], 
+ ["Moyen", ["2", "2"], ""],
+ ["Gros", ["3", "5"], ""],
+ ["Aléatoire", [str(randint(0, 1)), str(randint(0, 100))], ""],
+ ["Aléatoire", [str(randint(0, 2)), str(randint(0, 20))], ""],
+ ["Aléatoire", [str(randint(0, 3)), str(randint(0, 4))], ""],
+ ["Aléatoire", [str(randint(0, 3)), str(randint(0, 4))], ""]]
 ==
 
 
