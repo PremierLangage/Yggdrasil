@@ -216,13 +216,13 @@ def runtests(lestests, front=None, back=None):
     for name,inputs in lestests:
         note=e.dotest(name, inputs,front=front, back=back)
         if note == -1:
-            return -1,feedback
+            return -1,e.feedback
  
     feedback = e.renderFeedback()
     if e.feedback.globalok :
-        return 100,feedback
+        return 100,e.feedback
     else:
-        return 0, feedback
+        return 0, e.feedback
 
 
 if __name__ == '__main__':
