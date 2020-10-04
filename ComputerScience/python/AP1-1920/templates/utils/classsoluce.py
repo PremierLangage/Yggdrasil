@@ -82,7 +82,7 @@ def executefromfilename(filename, input_str):
 
 
 class Execenv:
-    def __init__(self, solucefilename=None, studentfilename=None, inputstring="", solucecode=None, studentcode=None, front=None, back=None, feedback=None):
+    def __init__(self, solucefilename=None, studentfilename=None, inputstring="", solucecode=None, studentcode=None,  feedback=None):
     # Check if soluce is None then code is not None 
         if not solucefilename:
             if not solucecode:
@@ -92,10 +92,7 @@ class Execenv:
         else:
             with open(solucefilename,"r") as f:
                 self.solucecode= f.read()
-        if front:
-            self.solucecode= front+"\n"+self.solucecode 
-        if back:
-            self.solucecode= self.solucecode +"\n"+ back 
+
         if not studentfilename:
             if not studentcode:
                     raise Exception("You must define a studen file  or student code")
@@ -103,15 +100,6 @@ class Execenv:
         else:
             with open(studentfilename,"r") as f:
                 self.studentcode= f.read()
-        if front:
-            self.studentcode = front+"\n"+self.studentcode 
-        if back:
-            self.studentcode= self.studentcode +"\n"+ back 
-        # To use with exec usign files 
-        with open(SOLUCEFILE,"w") as f:
-            f.write(self.solucecode)
-        with open(STUDENTFILE,"w") as f:
-            f.write(self.studentcode )
         self.inputstr=inputstring 
         
         if not feedback:
@@ -119,11 +107,26 @@ class Execenv:
             self.feedback = feedback2.FeedBack()
 
 
+    def buildExecFiles(self, front,back):
+        if front:
+            self.studentcode = front+"\n"+self.studentcode 
+            self.solucecode= front+"\n"+self.solucecode 
+        if back:
+            self.studentcode= self.studentcode +"\n"+ back     
+            self.solucecode= self.solucecode +"\n"+ back 
+
+        # To use with exec usign files 
+        with open(SOLUCEFILE,"w") as f:
+            f.write(self.solucecode)
+        with open(STUDENTFILE,"w") as f:
+            f.write(self.studentcode )
+
+
     def renderFeedback(self):
         return self.feedback.render()
 
 
-    def dotest(self, testname, inputstring,front,back):
+    def dotest(self, testname, inputstring):
         # Lancer le test soluce 
         if not inputstring:
             inputstring = self.inputstr
@@ -170,10 +173,10 @@ class Execenv:
         return 100 if reswhites or res else 0
             
         
-def createFromFiles(solucename="soluce.py", student="student.py", front=None, back=None):
-    return Execenv(solucename,student,front=front,back=back)
+def createFromFiles(solucename="soluce.py", student="student.py"):
+    return Execenv(solucename,student)
 
-def createFromStrings(soluce,student,front=None,back=None):
+def createFromStrings(soluce,student):
     """
     >>> so="print('Hello World')"
     >>> st="print('Hello World')"
@@ -199,7 +202,7 @@ def createFromStrings(soluce,student,front=None,back=None):
     True
     
     """
-    return Execenv(solucecode= soluce,studentcode=student,front=front,back=back)
+    return Execenv(solucecode= soluce,studentcode=student)
 
 def removewhitespace(s):
     return re.sub(r'\s', '', s)  # elimination des espaces 
@@ -213,12 +216,13 @@ def main(args):
     
 def runtests(lestests, front=None, back=None):
     e=createFromFiles()
+    e.buildExecFiles(front, back)
     for name,inputs in lestests:
-        note=e.dotest(name, inputs,front=front, back=back)
+        note=e.dotest(name, inputs)
         if note == -1:
             return -1,e.feedback
  
-    feedback = e.renderFeedback()
+    #feedback = e.renderFeedback()
     if e.feedback.globalok :
         return 100,e.feedback
     else:
@@ -234,11 +238,7 @@ if __name__ == '__main__':
     print(e.renderFeedback()
     """
 
-    grade,fb=runtests([("test1","a"),("test2","ehehe")])
+    grade,fb=runtests([("test1","12\na"),("test2","14\nsdsd")], front="nb=int(input())")
     print(fb)
-
-
-
-
 
 
