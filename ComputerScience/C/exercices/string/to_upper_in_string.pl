@@ -62,14 +62,14 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[ ["Basique", "pouet", ""],
-  ["Chaîne mélangé", '"PoUeT"', ""],
-  ["Chaîne vide", '""', ""],
-  ["Trois mots", '"Pouet pouet TAGAda"', ""],
-  ["Long mot", "Anti-ConstitutionnelleMent", ""],
-	["Grand mélange ascii", '"dK$#%djsDFG*&dwr#$-cwFWwdW $#e"', ""],
-  ["Aléatoire", "'"+"".join([chr(random.randint(65,122)) for i in range(20)])+"'", ""],
-  ["Aléatoire", "'"+"".join([chr(random.randint(65,122)) for i in range(20)])+"'", ""],
-  ["Aléatoire", "'"+"".join([chr(random.randint(65,122)) for i in range(20)])+"'", ""] ]
+[ ["Test basique", ["pouet"], ""],
+  ["Chaîne mélangé", ["PoUeT"], ""],
+  ["Chaîne vide", [""], ""],
+  ["Trois mots", ["Pouet pouet TAGAda"], ""],
+  ["Long mot", ["Anti-ConstitutionnelleMent"], ""],
+	["Grand mélange ascii", ["dK$#%djsDFG*&dwr#$-cwFWwdW $#e"], ""],
+  ["Test aléatoire 1", ["'"+"".join([chr(random.randint(65,122)) for i in range(20)])+"'"], ""],
+  ["Test aléatoire 2", ["'"+"".join([chr(random.randint(65,122)) for i in range(20)])+"'"], ""],
+  ["Test aléatoire 3", ["'"+"".join([chr(random.randint(65,122)) for i in range(20)])+"'"], ""] ]
 ==
 
