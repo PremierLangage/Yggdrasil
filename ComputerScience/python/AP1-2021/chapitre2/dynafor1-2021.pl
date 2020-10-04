@@ -3,7 +3,7 @@
 # il est donc statique
 
 extends=/ComputerScience/python/AP1-1920/templates/looptemplate.pl
-
+tag=InstructionsRepetitives|ForInRange
 
 exoseed % 3
 difficultymax=1
