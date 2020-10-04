@@ -49,7 +49,6 @@ print(a,b,nb)
 
 
 soluce==
-
 for i in range(nb):
     print(a)
     a=a*b
