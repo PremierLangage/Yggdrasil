@@ -35,7 +35,8 @@ before==
 import random
 a,b,nb=random.randint(1,10),random.randint(1,10),random.randint(1,10)
 mplsoluce2= f"Aléatoire \n{a}\n{b}\n{nb}\n"
-
+a,b,nb=random.randint(1,10),random.randint(1,10),random.randint(1,10)
+mplsoluce3= f"Aléatoire \n{a}\n{b}\n{nb}\n"
 ==
 
 front==
