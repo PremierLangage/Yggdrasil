@@ -40,7 +40,7 @@ $%
 \end{array}
 %$
 
-On remarque par exemple que `mat[0][0]` vaut 5 ou encore `mat[0][2]`
+On remarque que `mat[0][0]` vaut 5 ou encore `mat[0][2]`
 vaut 3. Chaque case à au plus 4 voisins (au dessus, en dessous, à
 gauche et à droite). Les cases des bords et des coins ont moins de
 voisins que les cases centrales.
@@ -51,7 +51,9 @@ On veut maintenant écrire une fonction qui explore une zone contiguë
 fonction prendra en argument la matrice ainsi que les coordonnées
 d'une case. En partant de cette case, la fonction devra retourner le
 nombre de cases contiguës de même couleur à laquelle appartient la
-case originelle.
+case originelle (comme les fonctions de coloriages de zones dans les 
+petits utilitaires de dessin).
+
 
 Avec la matrice *mat* et les coordonnées *(3, 2)*, la fonction devra
 retourner *9*. Durant l'appel au départ, on lit la couleur de la case
