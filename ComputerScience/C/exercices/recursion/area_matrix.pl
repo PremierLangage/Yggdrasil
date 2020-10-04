@@ -22,9 +22,10 @@ title=Zone contiguë dans une matrice
 tag=fonction|recursion|array|matrice|difficile
 
 text==
-
 On souhaite écrire une fonction qui calcule la taille d'une zone de
-couleur semblable à l'intérieur de matrices carrées de nombres.
+couleur semblable à l'intérieur de matrices carrées de nombres. Il 
+faut voir cette matrice d'entiers comme un carré de pixels où chaque 
+couleur est encodée par un petit nombre entier.
 
 Voici un exemple : prenons comme couleur $% 1, 2, 3, 4, 5 %$ et comme
 matrice *mat* de type `int[5][5]`.
