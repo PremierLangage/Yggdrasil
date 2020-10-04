@@ -9,8 +9,6 @@ tag=InstructionsRepetitives|While
 title = Suite de syracuse
 
 code==
-??? = int(input("Un nombre : "))
-
 
 
 ==
