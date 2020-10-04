@@ -53,10 +53,9 @@ if __name__ == "__main__":
     student = get_answers()['answer']
     with open("student.py","w") as sf:
         sf.write(student)
-    import feedback2
-    fb=feedback2.FeedBack()
-    ret=runsolucetests(lestest,fb)
-    output(ret, fb.render())
+
+    ret,fb=runtests(lestest)
+    output(ret, fb)
 
 
 
