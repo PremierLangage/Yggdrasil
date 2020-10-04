@@ -71,5 +71,5 @@ Et moi (Fred), comme Eùùanuel, j'ai copié les fichiers depuis leur répertoir
  tag=InstructionsRepetitives|ForInRange
 @ /ComputerScience/python/AP1-2021/chapitre2/boucledivise.pl
 
-Ne fonctionne pas :/
+
 
