@@ -31,7 +31,12 @@ Par exemple, si `a` vaut 3, `b` vaut 2 et `nb` vaut 5, votre programme doit affi
 de `a`, `b` et `nb`.*<br>
 ==
 
-before=
+before==
+import random
+a,b,nb=random.randint(1,10),random.randint(1,10),random.randint(1,10)
+mplsoluce2= f"Aléatoire \n{a}\n{b}\n{nb}\n"
+
+==
 
 front==
 
