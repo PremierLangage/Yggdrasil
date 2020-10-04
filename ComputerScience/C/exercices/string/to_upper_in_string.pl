@@ -48,6 +48,9 @@ void to_upper_in_string(char* s){
 }
 ==
 
+code_before==#|c|
+==
+
 code_after==#|c|
 #include <stdio.h>
 
