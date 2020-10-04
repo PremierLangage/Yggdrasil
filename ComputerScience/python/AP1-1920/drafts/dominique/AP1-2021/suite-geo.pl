@@ -38,6 +38,7 @@ front==
 a=  int(input())
 b= int(input())
 nb= int(input())
+
 ==
 
 soluce==
