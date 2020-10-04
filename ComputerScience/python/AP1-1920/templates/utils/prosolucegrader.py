@@ -53,10 +53,11 @@ if __name__ == "__main__":
     student = get_answers()['answer']
     with open("student.py","w") as sf:
         sf.write(student)
-    front= dic.get('front'] 
-    back = dic.get('back'] 
+    front= dic.get('front') 
+    back = dic.get('back') 
     ret,fb=runtests(lestest,front=front,back=back)
     output(ret, fb)
+
 
 
 
