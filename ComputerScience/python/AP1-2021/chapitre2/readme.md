@@ -39,7 +39,7 @@ Idée:
 **Remarques/commentaires:**
     - Si on fait comme dans la solution, cela pose un problème à cause de deux passages à la ligne à la fin au lieu d'un le print du python en ajoute un.
 
-# Exercice 4, 5 et 6
+# Exercice 3, 4 et 5
 tag=InstructionsRepetitives|ForInRange
 @ /ComputerScience/python/AP1-2021/chapitre2/dynafor-2021.pl
 @ /ComputerScience/python/AP1-2021/chapitre2/dynafor-2021.pl
@@ -56,4 +56,12 @@ Idée:
     - Si on fait comme dans la solution, cela pose un problème à cause de deux passages à la ligne à la fin au lieu d'un le print du python en ajoute un.
 
 
+Et moi (Fred), j'ai ausi copié les fichiers depuis leur répertoire de 19/20 (drafts de Zip et Antoine) et modifié le .pltp en conséquence
 
+# Exercice 6 (suite géométrique)
+ tag=InstructionsRepetitives|ForInRange
+@ /ComputerScience/python/AP1-2021/chapitre2/suite-geometrique.pl
+
+# Exercice 7 (liste de diviseurs)
+ tag=InstructionsRepetitives|ForInRange
+ @ /ComputerScience/python/AP1-2021/chapitre2/boucledivise.pl
