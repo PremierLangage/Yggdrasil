@@ -12,8 +12,9 @@ Pour l'instant j'ai (Emmanuel) fait une copie locale de la feuille de tp princip
 Ci-dessous, une description de chaque exercice et des changements effectués par rapport à la mouture précédente (ainsi que quelques commentaires).
 
 # Exercice 1
-tag=InstructionsRepetitives|ForInRange|VariableIteration
-@ /ComputerScience/python/AP1-1920/drafts/AntoineMeyer/exercises/boucles/boucle-qui-compte-de-0-a-nb-moins-1.pl
+tag=InstructionsRepetitives|ForInRange
+@ /ComputerScience/python/AP1-2021/chapitre2/boucle-qui-compte-de-0-a-nb-moins-1-2021.pl
+
 
 Idée: 
 
@@ -25,8 +26,9 @@ Idée:
     - Si on fait comme dans la solution, cela pose un problème à cause de deux passages à la ligne à la fin au lieu d'un le print du python en ajoute un.
 
 # Exercice 2
-tag=InstructionsRepetitives|ForInRange|VariableIteration
-@ /ComputerScience/python/AP1-1920/drafts/AntoineMeyer/exercises/boucles/boucle-qui-compte-de-0-a-nb-moins-1.pl
+tag=InstructionsRepetitives|ForInRange
+@ /ComputerScience/python/AP1-2021/chapitre2/boucle-qui-compte-de-1-a-nb-2021.pl
+
 
 Idée: 
 
@@ -37,6 +39,21 @@ Idée:
 **Remarques/commentaires:**
     - Si on fait comme dans la solution, cela pose un problème à cause de deux passages à la ligne à la fin au lieu d'un le print du python en ajoute un.
 
+# Exercice 4, 5 et 6
+tag=InstructionsRepetitives|ForInRange
+@ /ComputerScience/python/AP1-2021/chapitre2/dynafor-2021.pl
+@ /ComputerScience/python/AP1-2021/chapitre2/dynafor-2021.pl
+@ /ComputerScience/python/AP1-2021/chapitre2/dynafor-2021.pl
+
+
+Idée: 
+
+**Changements:**
+
+    - ajout des tags
+
+**Remarques/commentaires:**
+    - Si on fait comme dans la solution, cela pose un problème à cause de deux passages à la ligne à la fin au lieu d'un le print du python en ajoute un.
 
 
 
