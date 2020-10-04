@@ -34,9 +34,10 @@ de `a`, `b` et `nb`.*<br>
 before=
 
 front==
-a=int(input())
-b=int(input())
-nb=int(input())
+
+a=  int(input())
+b= int(input())
+nb= int(input())
 ==
 
 soluce==
@@ -50,6 +51,7 @@ for i in range(nb):
 
 mplsoluce0==
 Enonce
+
 3
 2
 5
@@ -57,6 +59,7 @@ Enonce
 
 mplsoluce1==
 Une autre 
+
 2
 3
 12
