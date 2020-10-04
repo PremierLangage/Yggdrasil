@@ -5,8 +5,7 @@ author=Dominique Revuz
 title=Manipulation de nombres
 name= a+b+c+d
 tag=input|print
-extends=/ComputerScience/python/template/soluce.pl
-
+extends=/ComputerScience/python/AP1-1920/templates/prosoluce.pl
 text==
 # input print 
 Ecrire un programme qui demande à l’utilisateur de saisir quatre entiers au clavier (un par ligne), affiche ensuite une valeur par ligne,
@@ -79,6 +78,7 @@ s=a+b+c+d
 
 print("somme =", s ,", moyenne =", s/4)
 ==
+
 
 
 
