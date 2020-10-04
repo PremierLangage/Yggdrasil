@@ -1,11 +1,25 @@
-# Copyright 2017-2019 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2017 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Mettre les lettres en majuscule dans une chaîne
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Mettre les lettres en majuscule dans une chaîne
-tag=string|function
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=string|chaine|fonction|lettre|caractère|ascii
 
 text==
 
@@ -15,18 +29,16 @@ transformer en leur majuscules correspondantes.
 
 Les autres caratères contenus dans la chaînes qui ne sont pas des
 lettres minuscules ne seront pas affectés par la fonction.
-    
+
 ==
 
-editor.code==
+editor.code==#|c|
 void to_upper_in_string(...){
   ...
 }
-
 ==
 
-solution==
-
+solution==#|c|
 void to_upper_in_string(char* s){
   int i;
   for(i=0 ; s[i]!='\0' ; i++){
@@ -34,11 +46,9 @@ void to_upper_in_string(char* s){
       s[i] = s[i]-'a'+'A';
   }  
 }
-
 ==
 
-codeafter==
-
+code_after==#|c|
 #include <stdio.h>
 
 int main(int argc, char* argv[]){
@@ -46,11 +56,9 @@ int main(int argc, char* argv[]){
   printf("%s\n", argv[1]);
   return 0;
 }
-
 ==
 
-    
-tests==
+checks_args_stdin==#|python|
 [ ["Basique", "pouet", ""],
   ["Chaîne mélangé", '"PoUeT"', ""],
   ["Chaîne vide", '""', ""],
