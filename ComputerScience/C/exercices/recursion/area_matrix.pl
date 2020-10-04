@@ -75,7 +75,7 @@ $%
 
 
 Ensuite une fonction récursive interne prend le relai pour explorer
-récurisivement les voisins quand ils existent. Au final, la zone suivante est explorée :
+récursivement les voisins quand ils existent. Au final, la zone suivante est explorée :
 
 $%
 \begin{array}{ccccc}
