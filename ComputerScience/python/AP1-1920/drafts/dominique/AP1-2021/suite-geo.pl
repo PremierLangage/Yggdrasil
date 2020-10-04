@@ -47,10 +47,10 @@ for i in range(nb):
 
 
 mplsoluce0==
-Une suite croissante
-0
+Enonce
+3
 2
-2
+5
 ==
 
 mplsoluce1==
