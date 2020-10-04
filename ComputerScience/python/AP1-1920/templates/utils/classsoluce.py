@@ -127,14 +127,14 @@ class Execenv:
         # Lancer le test soluce 
         if not inputstring:
             inputstring = self.inputstr
-        b,self.out,self.err = executefromfilename(SOLUCEFILE,inputstring,front=front,back=back)
+        b,self.out,self.err = executefromfilename(SOLUCEFILE,inputstring)
         if not b or self.err !="" :
             # Problème avec l'exécution de la solution proposé     
             # FIXME doit on tester si la solution écrit sur la sortie erreur standard et l'élève aussi ....
             self.feedback.addTestError("la soluce ne fonctionne pas", " Messages d'erreur \n "+ self.err,self.out)
             #raise Exception("Problems with the soluce\n"+self.err)
             return -1
-        xb, self.xo, self.xe = executefromfilename(STUDENTFILE, inputstring,front=front,back=back)
+        xb, self.xo, self.xe = executefromfilename(STUDENTFILE, inputstring)
         
         if not xb:
             self.feedback.addTestError(testname, " Problèmes avec votre code \n " + self.xo + "\n" + self.xe, "")
@@ -236,6 +236,7 @@ if __name__ == '__main__':
 
     grade,fb=runtests([("test1","a"),("test2","ehehe")])
     print(fb)
+
 
 
 
