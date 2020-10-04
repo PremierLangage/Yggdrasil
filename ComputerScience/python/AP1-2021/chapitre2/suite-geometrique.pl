@@ -1,5 +1,7 @@
 extends =/ComputerScience/python/AP1-1920/templates/generic/generic.pl
 
+tag=InstructionsRepetitives|ForInRange
+
 title = Suite géométrique
 
 text==
@@ -56,6 +58,7 @@ tests([(random.randint(3,7),random.randint(3,7),random.randint(3,7)),
        (random.randint(3,7),random.randint(3,7),random.randint(3,7)),
        (random.randint(3,7),random.randint(3,7),random.randint(3,7))])
 ==
+
 
 
 
