@@ -84,6 +84,3 @@ checks_args_stdin==#|python|
  ["Aléatoire", [str(randint(0, 3)), str(randint(0, 4))], ""]]
 ==
 
-
-
-
