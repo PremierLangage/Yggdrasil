@@ -33,8 +33,8 @@ pour avoir une entrée multi ligne
 ==
 
 # TODO rapatrier les fichiers suivants
-@ utils/soluceevaluator.py          [grader.py] # le as de python import toto as titi
-@ utils/gradesoluce.py
+@ utils/prosolucegrader.py          [grader.py] # le as de python import toto as titi
+@ utils/classsoluce.py
 @ /utils/sandboxio.py
 
 @ /builder/before.py [builder.py]
