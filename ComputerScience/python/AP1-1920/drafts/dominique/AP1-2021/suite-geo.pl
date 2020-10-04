@@ -30,3 +30,35 @@ Par exemple, si `a` vaut 3, `b` vaut 2 et `nb` vaut 5, votre programme doit affi
 **Attention**, *le programe doit fonctionner quelles que soient les valeurs 
 de `a`, `b` et `nb`.*<br>
 ==
+
+before=
+
+front==
+a=int(input())
+b=int(input())
+nb=int(input())
+==
+
+soluce==
+for i in range(nb):
+    print(a)
+    a=a*b
+==
+
+
+mplsoluce0==
+Une suite croissante
+0
+2
+2
+==
+
+mplsoluce1==
+Une autre 
+2
+3
+12
+==
+
+
+
