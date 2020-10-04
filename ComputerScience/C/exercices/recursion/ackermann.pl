@@ -22,7 +22,6 @@ title=Fonction d'Ackermann
 tag=function|recursion
 
 text==
-
 La fonction d'Ackermann est une fonction récursive à deux paramètres
 entiers positifs. Elle peut être définie comme il suit :
 
@@ -47,7 +46,6 @@ int ackermann(int m, int n){
 ==
 
 solution==#|c|
-
 int ackermann(int m, int n){
   if (m == 0)
     return n+1;
@@ -55,14 +53,12 @@ int ackermann(int m, int n){
     return ackermann(m-1, 1);
   return ackermann(m-1, ackermann(m, n-1));
 }
-
 ==
 
 code_before==#|c|
 ==
 
 code_after==#|c|
-
 #include <stdlib.h>
 #include <stdio.h>    
     
