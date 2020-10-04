@@ -193,7 +193,9 @@ checks_args_stdin==#|python|
  ["Test carré", ["5", "3", "0"], "3 3 3 3 3\n 3 1 2 5 3\n 3 1 3 4 3\n 3 2 5 4 3\n 3 3 3 3 3"],
  ["Avec un damier", ["5", "4", "1"], "2 1 2 1 2\n 1 2 1 2 1\n 2 1 2 1 2\n 1 2 1 2 1\n 2 1 2 1 2"],
  ["Test en taille 6", ["6", "0", "3"], "2 3 2 4 2 4\n 2 4 4 4 2 5\n 2 4 2 3 2 1\n 3 3 3 2 2 5\n 1 2 4 3 4 3"],
- ["Test aléatoire", ["10", str(randint(1,9)), str(randint(1,9))], "\n".join([" ".join([str(randint(1, 2)) for i in range(10)]) for j in range(10)])] ]
+ ["Test aléatoire 1", ["10", str(randint(1,9)), str(randint(1,9))], "\n".join([" ".join([str(randint(1, 2)) for i in range(10)]) for j in range(10)])],
+ ["Test aléatoire 2", ["10", str(randint(1,9)), str(randint(1,9))], "\n".join([" ".join([str(randint(1, 2)) for i in range(10)]) for j in range(10)])],
+ ["Test aléatoire 3", ["10", str(randint(1,9)), str(randint(1,9))], "\n".join([" ".join([str(randint(1, 2)) for i in range(10)]) for j in range(10)])] ]
 ==
 
 
