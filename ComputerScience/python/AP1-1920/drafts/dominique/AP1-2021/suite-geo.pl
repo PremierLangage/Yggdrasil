@@ -40,6 +40,7 @@ nb=int(input())
 ==
 
 soluce==
+print(globals())
 print(a,b,nb)
 for i in range(nb):
     print(a)
