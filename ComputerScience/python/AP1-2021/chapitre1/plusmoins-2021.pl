@@ -6,6 +6,9 @@ title=Manipulation de nombres
 name= a+b+c+d
 tag=input|print
 extends=/ComputerScience/python/AP1-1920/templates/prosoluce.pl
+
+before=
+
 text==
 # input print 
 Ecrire un programme qui demande à l’utilisateur de saisir quatre entiers au clavier (un par ligne), affiche ensuite une valeur par ligne,
