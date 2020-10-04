@@ -211,10 +211,10 @@ def main(args):
     return 0
     
     
-def runtests(lestests):
+def runtests(lestests, front=None, back=None):
     e=createFromFiles()
     for name,inputs in lestests:
-        note=e.dotest(name, inputs)
+        note=e.dotest(name, inputs,front=front, back=back)
         if note == -1:
             return -1,feedback
  
