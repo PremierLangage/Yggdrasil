@@ -1,36 +1,47 @@
-author= Fred
+# author FLQ
 
-# comment
-extends=../../templates/pltest.pl
-builder= /builder/before.py
+# Heritage d'un type d'exercice 
+extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
-title = premier exo
-taboo=returnp
-text == 
-Fonction **resteDeXpar3()** qui retourne le reste de la division de 7 par 3 ?
-pltest2
+tag=InstructionsRepetitives|While
+
+
+title = Suite de syracuse
+
+code==
+??? = int(input("Un nombre : "))
+
+
+
 ==
 
 before==
-from math import *
-def resteDeXpar3(x)
-    return x%3
-x=random(10,20)
-pltest2=">>> resteDeXpar3("+str(x)+")\n"+str(f(x))+"\n"
-after=before
-==
-
-pltest0==
-	>>> resteDeXpar3(3)
-	0
-==
-
-pltest1==
-	>>> resteDeXpar3(0)
-	0
-	>>> resteDeXpar3(4)
-	1
 
 ==
 
+text==  
+On appelle suite de Syracuse une suite d’entiers naturels définie de la manière suivante : On
+part d’un nombre entier plus grand que zéro ; s’il est pair, on le divise par 2 ; s’il est impair, on le multiplie par 3 et on ajoute
+1.
+Cette suite atteint 1 quelle que soit la valeur initiale. (ceci n'a jamais été démontré !!!)
+Ecrire un programme qui lit un entier naturel et qui calcule et affiche les éléments de la suite jusqu'a atteindre la valeur 1 (inclue).
+
+==
+
+soluce==
+n=int(input("Un nombre : "))
+if n>0:
+	print(n)
+	while (n !=1) :
+		if ((n%2)==0) :
+			n=n/2
+		else : 
+			n=3*n+1
+		print(n)
+==
+plsoluce==
+Test | 22
+de zéro | 0
+de neg |-3
+==
 
