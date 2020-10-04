@@ -1,6 +1,6 @@
 # author = Antoine Meyer
 extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
-tag=InstructionsRepetitives|ForInRange|VariableIteration
+tag=InstructionsRepetitives|ForInRange
 title = Boucle qui compte de 1 à `nb`
 
 text==
@@ -42,6 +42,7 @@ begin_test_group("Nombres aléatoires")
 from random import sample
 tests(sample(list(range(100, 200)), 5))
 ==
+
 
 
 
