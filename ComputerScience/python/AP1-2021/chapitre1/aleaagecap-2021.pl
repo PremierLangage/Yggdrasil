@@ -4,7 +4,7 @@ title= Lecture d'un entier
 
 tag=input|print|variable|type
 
-extends=/ComputerScience/python/template/soluce.pl
+extends=/ComputerScience/python/template/prosoluce.pl
  
 
 @ /builder/before.py [builder.py]
@@ -65,6 +65,7 @@ Test 1 |33
 Test 2 |66
 Test 4 |100000
 ==
+
 
 
 
