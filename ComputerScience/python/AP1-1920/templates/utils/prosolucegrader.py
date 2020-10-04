@@ -33,7 +33,7 @@ if __name__ == "__main__":
         sys.exit(1)
     if "soluce" in dic:
         with open("soluce.py","w") as sol:
-            sol.write('# Soluce \n')
+            sol.write('# Soluce \n') # pourqoi y avaiz ici a=1 dans la solition ????? FUCK !!
             sol.write(dic['soluce'])
     lestest=[]
     if "plsoluce" in dic:
