@@ -6,7 +6,7 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 tag=InstructionsRepetitives|While
 
 
-title = Suite de syracuse
+title = Suite de Syracuse
 
 code==
 
@@ -19,9 +19,11 @@ before==
 
 text==  
 On appelle suite de Syracuse une suite d’entiers naturels définie de la manière suivante : On
-part d’un nombre entier plus grand que zéro ; s’il est pair, on le divise par 2 ; s’il est impair, on le multiplie par 3 et on ajoute
-1.
+part d’un nombre entier plus grand que zéro ; s’il est pair, on le divise par 2 ;
+ s’il est impair, on le multiplie par 3 et on ajoute 1.
+
 Cette suite atteint 1 quelle que soit la valeur initiale. (ceci n'a jamais été démontré !!!)
+
 Ecrire un programme qui lit un entier naturel et qui calcule et affiche les éléments de la suite jusqu'a atteindre la valeur 1 (inclue).
 
 ==
