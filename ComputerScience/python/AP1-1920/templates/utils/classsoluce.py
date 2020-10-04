@@ -127,6 +127,7 @@ class Execenv:
 
 
     def dotest(self, testname, inputstring):
+        testname += inputstring
         # Lancer le test soluce 
         if not inputstring:
             inputstring = self.inputstr
@@ -237,6 +238,14 @@ if __name__ == '__main__':
     e.dotest("first test ", "")
     print(e.renderFeedback()
     """
+    soluce="""
+print(globals())
+print(a,b,nb)
+for i in range(nb):
+print(a)
+a=a*b
+"""
+
 
     grade,fb=runtests([("test1","12\na"),("test2","14\nsdsd")], front="nb=int(input())")
     print(fb)
