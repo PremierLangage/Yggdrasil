@@ -49,8 +49,7 @@ print(a,b,nb)
 
 
 soluce==
-print(globals())
-print(a,b,nb)
+
 for i in range(nb):
     print(a)
     a=a*b
@@ -59,7 +58,7 @@ for i in range(nb):
 
 mplsoluce0==
 Enonce
-3
+1
 2
 5
 ==
