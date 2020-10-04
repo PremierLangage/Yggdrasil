@@ -40,6 +40,7 @@ nb=int(input())
 ==
 
 soluce==
+print(a,b,nb)
 for i in range(nb):
     print(a)
     a=a*b
