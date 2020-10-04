@@ -1,15 +1,29 @@
-# Copyright 2018 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2018 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Zone contigue dans une matrice
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Zone contiguë dans une matrice
 tag=function|recursion|array
-extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 
-On souhaite écrire une fonction qui calcule la taille de zone de
+On souhaite écrire une fonction qui calcule la taille d'une zone de
 couleur semblable à l'intérieur de matrices carrées de nombres.
 
 Voici un exemple : prenons comme couleur $% 1, 2, 3, 4, 5 %$ et comme
@@ -188,4 +202,5 @@ tests==
  ["taille 6", "6 0 3", "2 3 2 4 2 4\n 2 4 4 4 2 5\n 2 4 2 3 2 1\n 3 3 3 2 2 5\n 1 2 4 3 4 3"]]
 
 ==
+
 
