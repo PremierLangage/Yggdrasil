@@ -16,6 +16,10 @@ code==
 
 ==
 
+before==
+
+==
+
 text==  
 
 Ecrire un programme qui lit un  entier  strictement positif et affiche,
@@ -57,6 +61,7 @@ Invalide aussi |-42
 long | 114593
 Nombreux | 510510 
 ==
+
 
 
 
