@@ -19,7 +19,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 author=Nicolas Borie
 
 title=Zone contiguë dans une matrice
-tag=function|recursion|array
+tag=fonction|recursion|array|matrice|difficile
 
 text==
 
@@ -30,6 +30,7 @@ Voici un exemple : prenons comme couleur $% 1, 2, 3, 4, 5 %$ et comme
 matrice *mat* de type `int[5][5]`.
 
 $%
+\begin{center}
 \begin{array}{ccccc}
 5 & 1 & 3 & 1 & 4 \\newline
 1 & 1 & 4 & 1 & 3 \\newline
@@ -37,6 +38,7 @@ $%
 3 & 1 & 1 & 1 & 4 \\newline
 3 & 1 & 3 & 1 & 2 \\newline
 \end{array}
+\end{center}
 %$
 
 On remarque par exemple que `mat[0][0]` vaut 5 ou encore `mat[0][2]`
