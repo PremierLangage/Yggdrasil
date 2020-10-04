@@ -41,6 +41,13 @@ nb= int(input())
 
 ==
 
+back==
+
+print(a,b,nb)
+
+==
+
+
 soluce==
 print(globals())
 print(a,b,nb)
