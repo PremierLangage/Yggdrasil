@@ -15,7 +15,6 @@ est appelée une seule fois dans le programme. Vous devez devinez la valeur qui 
 ensuite affichée par le main durant l'exécution du programme.
 
 Voici le programme :
-
 ==
 
 builder==
@@ -84,4 +83,5 @@ if __name__ == "__main__":
     
     output(grade, feedback)
 ==
+
 
