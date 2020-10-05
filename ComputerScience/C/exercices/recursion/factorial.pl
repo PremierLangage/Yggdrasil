@@ -17,9 +17,9 @@
 extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Factorielle d'un entier positif
-tag=function|recursion
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=fonction|recursion|arithmétique
 
 text==
 
@@ -42,22 +42,24 @@ factorielle de $% n %$ en utilisant la valeur de factorielle de $% n-1
 %$.    
 ==
 
-editor.code==
+editor.code==#|c|
 int factorial(int n){
   ...
 }
 ==
 
-solution==
+solution==#|c|
 int factorial(int n){
   if (n==0)
     return 1;
   return n*factorial(n-1);
 }
 ==
-    
-codeafter==
 
+code_before==#|c|
+==
+
+code_after==#|c|
 #include <stdlib.h>
 #include <stdio.h>    
     
@@ -68,18 +70,15 @@ int main(int argc, char* argv[]){
 }
 ==
 
-    
-tests==
-
-[["Basique", "0", ""], 
- ["Petit", "1", ""],
- ["Moyen", "5", ""],
- ["Aléatoire", str(random.randint(2, 4)), ""],
- ["Aléatoire", str(random.randint(6, 8)), ""],
- ["Aléatoire", str(random.randint(9, 11)), ""],
- ["Aléatoire", str(random.randint(11, 15)), ""],
- ["Aléatoire", str(random.randint(16, 20)), ""]]
-
+checks_args_stdin==#|python|
+[["Test basique", ["0"], ""],
+ ["Petit test", ["1"], ""],
+ ["Test moyen", ["5"], ""],
+ ["Test aléatoire 1", [str(random.randint(2, 4))], ""],
+ ["Test aléatoire 2", [str(random.randint(6, 8))], ""],
+ ["Test aléatoire 3", [str(random.randint(9, 11))], ""],
+ ["Test aléatoire 4", [str(random.randint(11, 15))], ""],
+ ["Test aléatoire 5", [str(random.randint(16, 20))], ""]]
 ==
 
 
