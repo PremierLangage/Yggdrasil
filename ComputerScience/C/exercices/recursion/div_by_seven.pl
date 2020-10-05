@@ -23,7 +23,7 @@ tag=function|recursion|array|arithmetique
 
 text==
 
-La divisibilité par 7 est un critère bien moins connu que la
+La divisibilité par 7 donne un critère bien moins connu que celui de la
 divisibilité par 3 ou 9 (où l'on fait essentiellement la somme des
 chiffres).
 
@@ -63,14 +63,13 @@ Faites confiances aux recommandations suivantes :
   utilise le théorème énoncé plus haut.			 
 ==
 
-editor.code==
+editor.code==#|c|
 int divisible_by_7(int n){
   ...
 }
 ==
 
-solution==
-
+solution==#|c|
 int divisible_by_7(int n){
     if (n < 0)
         return divisible_by_7(-n);
@@ -80,7 +79,6 @@ int divisible_by_7(int n){
 	return 0;
     return divisible_by_7((n/10) - 2*(n%10));
 }
-
 ==
 
 code_before==#|c|
