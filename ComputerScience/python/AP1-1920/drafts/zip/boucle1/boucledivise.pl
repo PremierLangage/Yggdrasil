@@ -6,6 +6,8 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 title = Liste des diviseurs
 
+before=
+
 code==
 ??? = int(input("Un nombre : "))
 
@@ -54,6 +56,7 @@ Invalide aussi |-42
 long | 114593
 Nombreux | 510510 
 ==
+
 
 
 
