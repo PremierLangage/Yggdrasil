@@ -89,12 +89,12 @@ checks_args_stdin==#|python|
 [["Test basique", ["0", "0"], ""], 
  ["Test au bord", ["132", "132"], ""],
  ["L'autre bord", ["4231", "0"], ""],
- ["Test aléatoire", [str(randint(7, 12)), str(randint(0, 6))], ""],
- ["Test aléatoire", [str(randint(7, 12)), str(randint(0, 6))], ""],
- ["Test aléatoire", [str(randint(7, 12)), str(randint(0, 6))], ""],
- ["Test aléatoire", [str(randint(7, 12)), str(randint(0, 6))], ""],
- ["Test aléatoire", [str(randint(7, 12)), str(randint(0, 6))], ""],
- ["Test aléatoire", [str(randint(7, 12)), str(randint(0, 6))], ""]]
+ ["Test aléatoire 1", [str(randint(7, 12)), str(randint(0, 6))], ""],
+ ["Test aléatoire 2", [str(randint(7, 12)), str(randint(0, 6))], ""],
+ ["Test aléatoire 3", [str(randint(7, 12)), str(randint(0, 6))], ""],
+ ["Test aléatoire 4", [str(randint(7, 12)), str(randint(0, 6))], ""],
+ ["Test aléatoire 5", [str(randint(7, 12)), str(randint(0, 6))], ""],
+ ["Test aléatoire 6", [str(randint(7, 12)), str(randint(0, 6))], ""]]
 ==
 
 
