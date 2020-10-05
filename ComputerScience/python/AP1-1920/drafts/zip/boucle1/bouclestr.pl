@@ -12,7 +12,7 @@ text=
 
 textf==  
 
-Ecrire un programme qui lit un  entier  positif et affiche la chaine de caractères formée des n premiers multiples de {XX}.
+Ecrire un programme qui lit un  entier strictement positif et affiche la chaine de caractères formée des n premiers multiples de {XX}.
 
 Si n vaut 4 on affiche {YY}.
 
@@ -35,7 +35,7 @@ text = textf.format(XX=XX,YY=YY)
 soluce2==
 n=int(input())
 s=""
-if n>=0:
+if n>0:
     for i in range(n):
         s+=str(i*XX)
     print(s)
