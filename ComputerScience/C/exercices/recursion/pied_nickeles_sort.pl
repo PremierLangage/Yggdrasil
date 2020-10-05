@@ -161,11 +161,11 @@ checks_args_stdin==#|python|
 [["Test basique", ["1"], ""],
  ["Petit test", ["3", "2", "1"], ""],
  ["Test moyen", ["8", "1", "5", "2", "7", "3", "6", "9", "4", "0"], ""],
- ["Test aléatoire 1", [str(random.randint(1, 30)) for i in range(random.randint(15,30))], ""],
- ["Test aléatoire 2", [str(random.randint(1, 10)) for i in range(random.randint(15,30))], ""],
- ["Test aléatoire 3", [str(random.randint(-100, 100)) for i in range(random.randint(30,40))], ""],
- ["Test aléatoire 4", [str(random.randint(-50, 50)) for i in range(random.randint(30,40))], ""],
- ["Test aléatoire 5", [str(random.randint(-10, 10)) for i in range(random.randint(30,40))], ""]]
+ ["Test aléatoire 1", [str(randint(1, 30)) for i in range(randint(15,30))], ""],
+ ["Test aléatoire 2", [str(randint(1, 10)) for i in range(randint(15,30))], ""],
+ ["Test aléatoire 3", [str(randint(-100, 100)) for i in range(randint(30,40))], ""],
+ ["Test aléatoire 4", [str(randint(-50, 50)) for i in range(randint(30,40))], ""],
+ ["Test aléatoire 5", [str(randint(-10, 10)) for i in range(randint(30,40))], ""]]
 ==
 
 
