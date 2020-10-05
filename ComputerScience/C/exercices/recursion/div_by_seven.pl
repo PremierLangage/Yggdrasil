@@ -26,9 +26,13 @@ La divisibilité par 7 donne un critère bien moins connu que celui de la
 divisibilité par 3 ou 9 (où l'on fait essentiellement la somme des
 chiffres).
 
+<br />
+
 **Théorème :** un nombre entier est divisible par 7 si et seulement si
 son nombre de dizaines moins deux fois le chiffre de ces unités est
 divisible par 7.
+
+<br />
 
 Appliquons ce résultat sur le nombre 9390724 !
 
