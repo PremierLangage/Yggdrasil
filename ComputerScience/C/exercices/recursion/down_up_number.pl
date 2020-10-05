@@ -73,11 +73,13 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[["Basique", ["1"], ""],
- ["Moyen", ["5"], ""],
- ["Erreur", ["-2"], ""],
- ["Aléatoire", [str(randint(6, 15))], ""],
- ["Aléatoire", [str(randint(6, 15))], ""]]
+[["Test basique", ["1"], ""],
+ ["Test moyen", ["5"], ""],
+ ["Erreur sur l'argument", ["-2"], ""],
+ ["Test aléatoire 1", [str(randint(2, 15))], ""],
+ ["Test aléatoire 2", [str(randint(2, 15))], ""],
+ ["Test aléatoire 3", [str(randint(2, 15))], ""],
+ ["Test aléatoire 4", [str(randint(2, 15))], ""]]
 ==
 
 
