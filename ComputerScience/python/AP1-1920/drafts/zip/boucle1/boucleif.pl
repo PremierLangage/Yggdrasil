@@ -6,6 +6,7 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 title = nombres divisibles
 
+before=
 
 text==  
 
@@ -70,5 +71,6 @@ essai 3
 20
 30
 ==
+
 
 
