@@ -1,14 +1,28 @@
-# Copyright 2018 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2018 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Tri des pieds nickelés
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Tri des pieds nickelés
-tag=function|recursion|array
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=fonction|recursion|tableau|tri|difficile
+
 
 text==
-
 Croquignol, Filochard et Ribouldingue font les constations suivantes :
 
 * Un tableau vide ou un tableau à un seul élément est toujours
@@ -82,14 +96,13 @@ tiers. Le tiers du milieu doit toujours être le plus grand lorsque le
 nombre total d'éléments à trier n'est pas un multiple de $% 3 %$.
 ==
 
-editor.code==
+editor.code==#|c|
 void pieds_sort(int* array, int begin_index, int end_index){
   ...
 }
 ==
 
-solution==
-
+solution==#|c|
 void pieds_sort(int* array, int deb, int fin){
 int tmp, tier1, tier2;
 
@@ -112,8 +125,10 @@ int tmp, tier1, tier2;
 }
 ==
 
-codeafter==
+code_before==#|c|
+==
 
+code_after==#|c|
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -140,18 +155,17 @@ int main(int argc, char* argv[]){
   free(tab);
   return 0;
 }
-
 ==
 
-
-tests==
-
-[["Basique", "1", ""],
- ["Petit", "3 2 1", ""],
- ["Moyen", "8 1 5 2 7 3 6 9 4 0", ""],
- ["Aléatoire", ' '.join([str(random.randint(1, 30)) for i in range(random.randint(15,30))]), ""],
- ["Aléatoire", ' '.join([str(random.randint(1, 10)) for i in range(random.randint(15,30))]), ""],
- ["Aléatoire", ' '.join([str(random.randint(-100, 100)) for i in range(random.randint(30,40))]), ""]]
-
+checks_args_stdin==#|python|
+[["Test basique", ["1"], ""],
+ ["Petit test", ["3", "2", "1"], ""],
+ ["Test moyen", ["8", "1", "5", "2", "7", "3", "6", "9", "4", "0"], ""],
+ ["Test aléatoire 1", [str(random.randint(1, 30)) for i in range(random.randint(15,30))], ""],
+ ["Test aléatoire 2", [str(random.randint(1, 10)) for i in range(random.randint(15,30))], ""],
+ ["Test aléatoire 3", [str(random.randint(-100, 100)) for i in range(random.randint(30,40))], ""],
+ ["Test aléatoire 4", [str(random.randint(-50, 50)) for i in range(random.randint(30,40))], ""],
+ ["Test aléatoire 5", [str(random.randint(-10, 10)) for i in range(random.randint(30,40))], ""]]
 ==
+
 
