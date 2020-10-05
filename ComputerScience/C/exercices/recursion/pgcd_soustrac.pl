@@ -53,13 +53,13 @@ $% a %$ et $% b %$ sont tous les deux pairs.
     * au PGCD de $% a %$ et $% b - a %$ si $% b > a %$.
 ==
 
-editor.code==
+editor.code==#|c|
 int pgcd(int a, int b){
   ...
 }
 ==
 
-solution==
+solution==#|c|
 int pgcd(int a, int b){
   if (a == b)
     return a;
@@ -75,12 +75,12 @@ int pgcd(int a, int b){
     return pgcd(a-b, b);
   return pgcd(a, b-a);
 }
-
-
 ==
 
-codeafter==
+code_before==#|c|
+==
 
+code_after==#|c|
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -92,20 +92,16 @@ int main(int argc, char* argv[]){
     
   return 0;
 }
-
 ==
 
-
-tests==
-
-[["Basique", "3 6", ""],
- ["Premier entre eux", "120 11", ""],
- ["Aléatoire", ' '.join([str(d*a)+" "+str(d*b) for (d,a,b) in [(random.randint(1, 40), random.randint(1, 10000), random.randint(1, 10000))]] ), ""],
- ["Aléatoire", ' '.join([str(d*a)+" "+str(d*b) for (d,a,b) in [(random.randint(1, 40), random.randint(1, 10000), random.randint(1, 10000))]] ), ""],
- ["Aléatoire", ' '.join([str(d*a)+" "+str(d*b) for (d,a,b) in [(random.randint(1, 40), random.randint(1, 10000), random.randint(1, 10000))]] ), ""],
- ["Aléatoire", ' '.join([str(d*a)+" "+str(d*b) for (d,a,b) in [(random.randint(1, 40), random.randint(1, 10000), random.randint(1, 10000))]] ), ""],
- ["Aléatoire", ' '.join([str(d*a)+" "+str(d*b) for (d,a,b) in [(random.randint(1, 40), random.randint(1, 10000), random.randint(1, 10000))]] ), ""]]
-
+checks_args_stdin==#|python|
+[["Test basique", ["3", "6"], ""],
+ ["Premier entre eux", ["120", "11"], ""],
+ ["Test aléatoire 1", [str(d*a), str(d*b) for (d,a,b) in [(randint(1, 40), randint(1, 10000), randint(1, 10000))]], ""],
+ ["Test aléatoire 2", [str(d*a), str(d*b) for (d,a,b) in [(randint(1, 40), randint(1, 10000), randint(1, 10000))]], ""],
+ ["Test aléatoire 3", [str(d*a), str(d*b) for (d,a,b) in [(randint(1, 40), randint(1, 10000), randint(1, 10000))]], ""],
+ ["Test aléatoire 4", [str(d*a), str(d*b) for (d,a,b) in [(randint(1, 40), randint(1, 10000), randint(1, 10000))]], ""],
+ ["Test aléatoire 5", [str(d*a), str(d*b) for (d,a,b) in [(randint(1, 40), randint(1, 10000), randint(1, 10000))]], ""]]
 ==
 
 
