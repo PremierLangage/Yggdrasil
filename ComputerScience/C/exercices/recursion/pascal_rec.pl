@@ -17,12 +17,11 @@
 extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Coefficients binomiaux en récursif
-tag=function|recursion
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=fonction|recursion|binomial|Pascal|triangle
 
 text==
-
 Les coefficients binomiaux $% \binom{n}{k} %$ peuvent être définis
 récursivement en utilisant la formule de récurrence suivante :
 
@@ -57,24 +56,24 @@ coefficients binomiaux à l'aide de cette méthode récurive brutale (On
 ne ferait pas comme cela avec plus de connaissance en programmation).
 ==
 
-editor.code==
+editor.code==#|c|
 int binomial(int n, int k){
   ...
 }
 ==
 
-solution==
-
+solution==#|c|
 int binomial(int n, int k){
   if ((n == k) || (k == 0))
     return 1;
   return binomial(n-1, k) + binomial(n-1, k-1);
 }
-
 ==
-    
-codeafter==
 
+code_before==#|c|
+==
+
+code_after==#|c|
 #include <stdlib.h>
 #include <stdio.h>    
     
@@ -84,22 +83,18 @@ int main(int argc, char* argv[]){
   printf("Binomial(%d, %d) : %d\n", n, k, binomial(n, k));
   return 0;
 }
-
 ==
 
-    
-tests==
-
-[["Basique", "0 0", ""], 
- ["Aux bords", "132 132", ""],
- ["L'autre bord", "4231 0", ""],
- ["Aléatoire", ' '.join([str(random.randint(7, 12)), str(random.randint(0, 6))]), ""],
- ["Aléatoire", ' '.join([str(random.randint(7, 12)), str(random.randint(0, 6))]), ""],
- ["Aléatoire", ' '.join([str(random.randint(7, 12)), str(random.randint(0, 6))]), ""],
- ["Aléatoire", ' '.join([str(random.randint(7, 12)), str(random.randint(0, 6))]), ""],
- ["Aléatoire", ' '.join([str(random.randint(7, 12)), str(random.randint(0, 6))]), ""],
- ["Aléatoire", ' '.join([str(random.randint(7, 12)), str(random.randint(0, 6))]), ""]]
-
+checks_args_stdin==#|python|
+[["Test basique", ["0", "0"], ""], 
+ ["Test au bord", ["132", "132"], ""],
+ ["L'autre bord", ["4231", "0"], ""],
+ ["Test aléatoire", [str(randint(7, 12)), str(randint(0, 6))], ""],
+ ["Test aléatoire", [str(randint(7, 12)), str(randint(0, 6))], ""],
+ ["Test aléatoire", [str(randint(7, 12)), str(randint(0, 6))], ""],
+ ["Test aléatoire", [str(randint(7, 12)), str(randint(0, 6))], ""],
+ ["Test aléatoire", [str(randint(7, 12)), str(randint(0, 6))], ""],
+ ["Test aléatoire", [str(randint(7, 12)), str(randint(0, 6))], ""]]
 ==
 
 
