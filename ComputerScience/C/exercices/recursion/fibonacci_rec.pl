@@ -77,12 +77,12 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[["Basique", "0", ""],
- ["Premier", "1", ""],
- ["Second", "2", ""],
- ["Aléatoire", str(random.randint(3,6)), ""],
- ["Aléatoire", str(random.randint(6, 9)), ""],
- ["Aléatoire", str(random.randint(9, 12)), ""],
- ["Aléatoire", str(random.randint(12, 15)), ""]]
+[["Basique", ["0"], ""],
+ ["Premier", ["1"], ""],
+ ["Second", ["2"], ""],
+ ["Aléatoire", [str(random.randint(3,6))], ""],
+ ["Aléatoire", [str(random.randint(6, 9))], ""],
+ ["Aléatoire", [str(random.randint(9, 12))], ""],
+ ["Aléatoire", [str(random.randint(12, 15))], ""]]
 ==
 
