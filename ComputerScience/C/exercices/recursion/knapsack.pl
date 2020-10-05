@@ -27,6 +27,8 @@ une capacité connue finie peut être rempli totalement avec quelques
 objets selectionnés parmis une liste finie d'objet dont on connaît les
 tailles respectives.
 
+<br />
+
 Pour un sac ayant une capacité de 18 kilos et les objets suivants :  
 sac de couchage : 8 kilos  
 casserole : 2 kilos  
@@ -48,11 +50,14 @@ solutions possibles mais juste à dire si oui ou non il est possible de
 remplir complètement le sac (On veut juste savoir s'il existe au moins
 une solution).
 
+<br />
+
 Pour les mêmes objets, si le sac avait été de capacité 33 kilos, le
 problème du sac à dos était alors insoluble. En effet, aucune
 conbinaison d'objets ne pèse au total exactement 33 kilos (et pourtant
 36 kilos d'objets au total est disponible...).
 
+<br />
 
 Pour résoudre ce problème, on procède de manière récursive. On démarre
 avec un sac vide de capacité complète (18 dans l'exemple) et avec la
@@ -66,10 +71,14 @@ d'objets total) n'a pas vocation à être modifié, c'est la borne qui
 nous informera qu'il n'y a plus d'objet disponible pour résoudre le
 problème.
 
+<br />
+
 La fonction devra retourner *1* si le problème du sac à dos est
 soluble et *0* sinon.
 
-Idée de l'algorithme :
+<br />
+
+Idée de l'algorithme :  
 
 * Remplir un sac à dos de taille 0 est toujours possible (il suffit de
   ne rien prendre), le problème est alors soluble.
