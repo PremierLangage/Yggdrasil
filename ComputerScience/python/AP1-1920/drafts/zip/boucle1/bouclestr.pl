@@ -9,7 +9,7 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 title = Liste des multiples
 
 
-text==  
+textf==  
 
 Ecrire un programme qui lit un  entier  positif et affiche la chaine de caractères formée des n premiers multiples de {XX}
 (si n vaut 4 on affiche {YY}).
@@ -24,6 +24,7 @@ soluce= f"XX={XX}\n"+soluce2
 YY=""
 for i in range(4):
     YY+=str(i*XX)
+text = textf.format(XX=XX,YY=YY)
 
 ==
 
