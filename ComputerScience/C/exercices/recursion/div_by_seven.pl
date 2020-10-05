@@ -19,10 +19,9 @@ extends=/ComputerScience/C/template/std_progC.pl
 author=Nicolas Borie
 
 title=Divisibilité par 7
-tag=fonction|recursion|arithmetique
+tag=fonction|recursion|arithmetique|divisibilité
 
 text==
-
 La divisibilité par 7 donne un critère bien moins connu que celui de la
 divisibilité par 3 ou 9 (où l'on fait essentiellement la somme des
 chiffres).
@@ -110,7 +109,4 @@ checks_args_stdin==#|python|
  ["Aléatoire", [str(randint(-2000000000, 2000000000))], ""],
  ["Aléatoire", [str(7*randint(-200000000, 200000000))], ""]]
 ==
-
-
-
 
