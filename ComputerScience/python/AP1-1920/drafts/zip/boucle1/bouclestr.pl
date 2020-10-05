@@ -11,19 +11,28 @@ title = Liste des multiples
 
 text==  
 
-Ecrire un programme qui lit un  entier  positif et affiche la chaine de caractères formée des n premiers multiples de 17
-(si n vaut 4 on affiche 0173451).
+Ecrire un programme qui lit un  entier  positif et affiche la chaine de caractères formée des n premiers multiples de {XX}
+(si n vaut 4 on affiche {YY}).
 Si l'entier est négatif, on ne fait rien.
 
 ==
+before==
+import random 
 
+XX= random.choice([13,17,23,27,51])
+soluce= f"XX={XX}\n"+soluce2
+YY=""
+for i in range(4):
+    YY+=str(i*XX)
 
-soluce==
+==
+
+soluce2==
 n=int(input())
 s=""
 if n>=0:
     for i in range(n):
-        s+=str(i*17)
+        s+=str(i*XX)
     print(s)
 ==
 plsoluce==
