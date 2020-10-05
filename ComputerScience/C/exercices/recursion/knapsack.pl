@@ -17,12 +17,11 @@
 extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Problème du sac à dos
-tag=function|recursion|array
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=fonction|recursion|tableau|difficile|NP
 
 text==
-
 Le problème du sac à dos consiste à déterminer si un sac à dos ayant
 une capacité connue finie peut être rempli totalement avec quelques
 objets selectionnés parmis une liste finie d'objet dont on connaît les
@@ -96,13 +95,13 @@ Idée de l'algorithme :
   des deux options est soluble.
 ==
 
-editor.code==
+editor.code==#|c|
 int knapsack(int capacity, int* objects, int index, int nb_object){
   ...
 }
 ==
 
-solution==
+solution==#|c|
 int knapsack(int capacity, int* objects, int index, int nb_object){
   if (capacity == 0)
     return 1;
@@ -112,12 +111,12 @@ int knapsack(int capacity, int* objects, int index, int nb_object){
     return knapsack(capacity, objects, index+1, nb_object);
   return knapsack(capacity-objects[index], objects, index+1, nb_object) || knapsack(capacity, objects, index+1, nb_object);
 }
-
-
 ==
 
-codeafter==
+code_before==#|c|
+==
 
+code_after==#|c|
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -149,21 +148,17 @@ int main(int argc, char* argv[]){
   free(tab);
   return 0;
 }
-
 ==
 
-
-tests==
-
-[["Basique", "5 1 3", ""],
- ["Puissances de 2", "31 1 2 4 8 16", ""],
- ["Scores au rugby", "12 3 3 3 3 5 5 7 ", ""],
- ["Aléatoire", " ".join([str(random.randint(50, 100))]+[str(random.randint(1, 20)) for i in range(5+random.randint(1, 5))]), ""],
- ["Aléatoire", " ".join([str(random.randint(50, 100))]+[str(random.randint(1, 20)) for i in range(5+random.randint(1, 5))]), ""],
- ["Aléatoire", " ".join([str(random.randint(50, 100))]+[str(random.randint(1, 20)) for i in range(5+random.randint(1, 5))]), ""],
- ["Aléatoire", " ".join([str(random.randint(50, 100))]+[str(random.randint(1, 20)) for i in range(5+random.randint(1, 5))]), ""],
- ["Aléatoire", " ".join([str(random.randint(50, 100))]+[str(random.randint(1, 20)) for i in range(5+random.randint(1, 5))]), ""]]
-
+checks_args_stdin==#|python|
+[["Test basique", ["5", "1", "3"], ""],
+ ["Puissances de 2", ["31", "1", "2", "4", "8", "16"], ""],
+ ["Scores au rugby", ["12", "3", "3", "3", "3", "5", "5", "7"], ""],
+ ["Test aléatoire 1", [str(randint(50, 100))]+[str(randint(1, 20)) for i in range(5+randint(1, 5))], ""],
+ ["Test aléatoire 2", [str(randint(50, 100))]+[str(randint(1, 20)) for i in range(5+randint(1, 5))], ""],
+ ["Test aléatoire 3", [str(randint(50, 100))]+[str(randint(1, 20)) for i in range(5+randint(1, 5))], ""],
+ ["Test aléatoire 4", [str(randint(50, 100))]+[str(randint(1, 20)) for i in range(5+randint(1, 5))], ""],
+ ["Test aléatoire 5", [str(randint(50, 100))]+[str(randint(1, 20)) for i in range(5+randint(1, 5))], ""]]
 ==
 
 
