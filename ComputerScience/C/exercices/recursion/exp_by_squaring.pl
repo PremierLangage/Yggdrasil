@@ -34,14 +34,13 @@ algébriste).
  * Si $%n%$ est entier impair $%n = 2q + 1%$, il faudra mettre au carré de retour de l'appel récurif donnant $%a^q%$ mais aussi le multiplié une dernière fois par $%a%$.
 ==
 
-editor.code==
+editor.code==#|c|
 ... exp_rap(...){
 ...
 }
 ==
 
-solution==
-
+solution==#|c|
 int exp_rap(int a, int n){
   int partial; 
   if (n <= 0)
@@ -51,13 +50,12 @@ int exp_rap(int a, int n){
     return partial*partial*a;
   return partial*partial;
 }
-    
-
-
 ==
-    
-codeafter==
 
+code_before==#|c|
+==
+
+code_after==#|c|
 #include <stdlib.h>
 #include <stdio.h>    
     
@@ -67,20 +65,20 @@ int main(int argc, char* argv[]){
   printf("%d puissance %d : %d\n", a, n, exp_rap(a, n));
   return 0;
 }
-
 ==
 
     
-tests==
 
-[["Basique", "1 1", ""], 
- ["Moyen", "12342312 0", ""],
- ["Négatif", "-2 5", ""],
- ["Aléatoire", ' '.join([str(random.randint(-5, 5)), str(random.randint(1, 5))]), ""],
- ["Aléatoire", ' '.join([str(random.randint(-6, 6)), str(random.randint(1, 6))]), ""],
- ["Aléatoire", ' '.join([str(random.randint(-7, 7)), str(random.randint(1, 7))]), ""],
- ["Aléatoire", ' '.join([str(random.randint(-8, 8)), str(random.randint(1, 8))]), ""]]
-
+checks_args_stdin==#|python|
+[["Test basique", ["1", "1"], ""], 
+ ["Test moyen", ["12342312", "0"], ""],
+ ["Avec un négatif", ["-2", "5"], ""],
+ ["Test aléatoire 1", [str(randint(-5, 5)), str(randint(1, 5))], ""],
+ ["Test aléatoire 2", [str(randint(-6, 6)), str(randint(1, 6))], ""],
+ ["Test aléatoire 3", [str(randint(-7, 7)), str(randint(1, 7))], ""],
+ ["Test aléatoire 4", [str(randint(-8, 8)), str(randint(1, 8))], ""],
+ ["Test aléatoire 5", [str(randint(-9, 9)), str(randint(1, 9))], ""],
+ ["Test aléatoire 6", [str(randint(-9, 9)), str(randint(1, 9))], ""]]
 ==
 
 
