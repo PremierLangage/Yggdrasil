@@ -22,7 +22,6 @@ title=Fibonacci récursif très naïf
 tag=fonction|recursion|suite|simple
 
 text==
-
 On peut définir les nombres de Fibonacci de manière récursive comme il suit :
 
 $%
@@ -47,13 +46,13 @@ Complètez la fonction suivante de manière à ce qu'elle retourne le
 $% n^{ième} %$ nombre de Fibonacci.
 ==
 
-editor.code==
+editor.code==#|c|
 int fibonacci(int n){
   ...
 }
 ==
 
-solution==
+solution==#|c|
 int fibonacci(int n){
     if (n < 2)
 	return 1;
@@ -61,8 +60,11 @@ int fibonacci(int n){
 }
 ==
 
-codeafter==
+code_before==#|c|
+==
 
+
+code_after==#|c|
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -73,12 +75,9 @@ int main(int argc, char* argv[]){
     
   return 0;
 }
-
 ==
 
-
-tests==
-
+checks_args_stdin==#|python|
 [["Basique", "0", ""],
  ["Premier", "1", ""],
  ["Second", "2", ""],
@@ -86,7 +85,5 @@ tests==
  ["Aléatoire", str(random.randint(6, 9)), ""],
  ["Aléatoire", str(random.randint(9, 12)), ""],
  ["Aléatoire", str(random.randint(12, 15)), ""]]
-
 ==
-
 
