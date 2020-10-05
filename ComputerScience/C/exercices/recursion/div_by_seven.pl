@@ -110,3 +110,4 @@ checks_args_stdin==#|python|
  ["Aléatoire", [str(7*randint(-200000000, 200000000))], ""]]
 ==
 
+
