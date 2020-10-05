@@ -1,11 +1,25 @@
-# Copyright 2018 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2018 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Divisibilité par 7
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Divisibilité par 7
-tag=function|recursion|array
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=function|recursion|array|arithmetique
 
 text==
 
@@ -69,16 +83,12 @@ int divisible_by_7(int n){
 
 ==
 
-codebefore==
-
+code_before==#|c|
 #include <stdio.h>
 #include <stdlib.h>
-
 ==
 
-
-codeafter==
-
+code_after==#|c|
 int main(int argc, char* argv[]){
   int n = atoi(argv[1]);
 
@@ -88,10 +98,9 @@ int main(int argc, char* argv[]){
       printf("%d n'est pas divisible par 7.\n", n);      
   return 0;
 }
-
 ==
 
-tests==
+checks_args_stdin==#|python|
 [["Basique", "0", ""],
  ["Petit", "7", ""],
  ["Pas bien grand", "6", ""],
@@ -102,7 +111,7 @@ tests==
  ["Aléatoire", str(random.randint(-2000000000, 2000000000)), ""],
  ["Aléatoire", str(random.randint(-2000000000, 2000000000)), ""],
  ["Aléatoire", str(7*random.randint(-200000000, 200000000)), ""]]
-
 ==
+
 
 
