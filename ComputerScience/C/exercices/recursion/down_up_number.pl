@@ -73,7 +73,7 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[["Basique", ["1"], ""], 
+[["Basique", ["1"], ""],
  ["Moyen", ["5"], ""],
  ["Erreur", ["-2"], ""],
  ["Aléatoire", [str(randint(6, 15))], ""],
