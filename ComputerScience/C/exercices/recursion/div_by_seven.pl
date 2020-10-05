@@ -98,16 +98,16 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[["Basique", ["0"], ""],
- ["Petit", ["7"], ""],
+[["Test basique", ["0"], ""],
+ ["Petit test", ["7"], ""],
  ["Pas bien grand", ["6"], ""],
- ["Aléatoire", [str(randint(-2000000000, 2000000000))], ""],
- ["Aléatoire", [str(randint(-2000000000, 2000000000))], ""],
- ["Aléatoire", [str(randint(-2000000000, 2000000000))], ""],
- ["Aléatoire", [str(randint(-2000000000, 2000000000))], ""],
- ["Aléatoire", [str(randint(-2000000000, 2000000000))], ""],
- ["Aléatoire", [str(randint(-2000000000, 2000000000))], ""],
- ["Aléatoire", [str(7*randint(-200000000, 200000000))], ""]]
+ ["Test aléatoire 1", [str(randint(-2000000000, 2000000000))], ""],
+ ["Test aléatoire 2", [str(randint(-2000000000, 2000000000))], ""],
+ ["Test aléatoire 3", [str(randint(-2000000000, 2000000000))], ""],
+ ["Test aléatoire 4", [str(randint(-2000000000, 2000000000))], ""],
+ ["Test aléatoire 5", [str(randint(-2000000000, 2000000000))], ""],
+ ["Test aléatoire 6", [str(randint(-2000000000, 2000000000))], ""],
+ ["Test aléatoire 7", [str(7*randint(-200000000, 200000000))], ""]]
 ==
 
 
