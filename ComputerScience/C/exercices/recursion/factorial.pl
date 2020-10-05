@@ -74,11 +74,11 @@ checks_args_stdin==#|python|
 [["Test basique", ["0"], ""],
  ["Petit test", ["1"], ""],
  ["Test moyen", ["5"], ""],
- ["Test aléatoire 1", [str(randint(2, 4))], ""],
- ["Test aléatoire 2", [str(randint(6, 8))], ""],
- ["Test aléatoire 3", [str(randint(9, 11))], ""],
- ["Test aléatoire 4", [str(randint(11, 15))], ""],
- ["Test aléatoire 5", [str(randint(16, 20))], ""]]
+ ["Test aléatoire 1", [str(randint(1, 2))], ""],
+ ["Test aléatoire 2", [str(randint(3, 5))], ""],
+ ["Test aléatoire 3", [str(randint(6, 7))], ""],
+ ["Test aléatoire 4", [str(randint(8, 9))], ""],
+ ["Test aléatoire 5", [str(randint(10, 12))], ""]]
 ==
 
 
