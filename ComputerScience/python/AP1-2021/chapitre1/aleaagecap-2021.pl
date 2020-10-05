@@ -1,10 +1,11 @@
-# Boris Jabot 11/09/2019 OK
+
+
 author=Dominique Revuz 
 title= Lecture d'un entier
 
 tag=input|print|variable|type
 
-extends=/ComputerScience/python/template/prosoluce.pl
+extends=/ComputerScience/python/AP1-1920/templates/prosoluce.pl
  
 
 @ /builder/before.py [builder.py]
@@ -65,6 +66,7 @@ Test 1 |33
 Test 2 |66
 Test 4 |100000
 ==
+
 
 
 
