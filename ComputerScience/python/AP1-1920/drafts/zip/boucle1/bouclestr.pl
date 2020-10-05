@@ -8,6 +8,7 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 title = Liste des multiples
 
+text=
 
 textf==  
 
