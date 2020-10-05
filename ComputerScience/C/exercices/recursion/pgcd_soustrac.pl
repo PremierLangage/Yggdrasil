@@ -1,17 +1,30 @@
-# Copyright 2018 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2018 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# PGCD avec soustractions
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=PGCD avec soustractions
-tag=function|recursion
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=fonction|recursion|pgcd|arithmétique
 
 text==
-
 Pour calculer un PGCD, on utilise habituellement l'algorithme
 d'Euclide. Ce dernier est basé sur une bonne utilisation de divisions
-euclidiennes itérée. Il est toutefois possible de calculer un Plus
+euclidiennes itérées. Il est toutefois possible de calculer le Plus
 Grand Diviseur Commun de deux entiers $% a %$ et $% b %$ de manière récursive
 en ne faisant que des soutractions, des divisions par $% 2 %$ et des
 multiplications par $% 2 %$.
@@ -94,4 +107,5 @@ tests==
  ["Aléatoire", ' '.join([str(d*a)+" "+str(d*b) for (d,a,b) in [(random.randint(1, 40), random.randint(1, 10000), random.randint(1, 10000))]] ), ""]]
 
 ==
+
 
