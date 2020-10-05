@@ -24,7 +24,7 @@ Puis calculez et affichez {{operatortextb}} {{functeur[0]}} {{operatortexta}} .
 
 mplsoluce0==
 Vérification 1
-15
+45
 ==
 mplsoluce1==
 Vérification 2
@@ -41,7 +41,7 @@ import functools
 
 random.seed(seed)
 predicats,functeurs,operators= loopgen.getStuff()
-b=random.randint(-100,100)
+b=random.randint(-30,100)
 h=b+int(input())
 s= random.randint(1,7) if h>b else random.randint(-3,-1)
 predcode,predtext = random.choice(predicats)
@@ -104,5 +104,6 @@ while result==0 :
 soluce="seed={}\n".format(seed)+soluce
 
 ==
+
 
 
