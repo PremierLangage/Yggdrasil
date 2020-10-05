@@ -12,8 +12,11 @@ text=
 
 textf==  
 
-Ecrire un programme qui lit un  entier  positif et affiche la chaine de caractères formée des n premiers multiples de {XX}
-(si n vaut 4 on affiche {YY}).
+Ecrire un programme qui lit un  entier  positif et affiche la chaine de caractères formée des n premiers multiples de {XX}.
+
+Si n vaut 4 on affiche {YY}.
+
+
 Si l'entier est négatif, on ne fait rien.
 
 ==
