@@ -97,11 +97,18 @@ int main(int argc, char* argv[]){
 checks_args_stdin==#|python|
 [["Test basique", ["3", "6"], ""],
  ["Premier entre eux", ["120", "11"], ""],
- ["Test aléatoire 1", [[str(d*a), str(d*b)] for (d,a,b) in [(randint(1, 40), randint(1, 10000), randint(1, 10000))]]*, ""],
- ["Test aléatoire 2", [[str(d*a), str(d*b)] for (d,a,b) in [(randint(1, 40), randint(1, 10000), randint(1, 10000))]]*, ""],
- ["Test aléatoire 3", [[str(d*a), str(d*b)] for (d,a,b) in [(randint(1, 40), randint(1, 10000), randint(1, 10000))]]*, ""],
- ["Test aléatoire 4", [[str(d*a), str(d*b)] for (d,a,b) in [(randint(1, 40), randint(1, 10000), randint(1, 10000))]]*, ""],
- ["Test aléatoire 5", [[str(d*a), str(d*b)] for (d,a,b) in [(randint(1, 40), randint(1, 10000), randint(1, 10000))]]*, ""]]
+ ["Test aléatoire 1", [str(randint(1, 1000000)), str(randint(1, 1000000))], "" ],
+ ["Test aléatoire 2", [str(randint(1, 1000000)), str(randint(1, 1000000))], "" ],
+ ["Test aléatoire 3", [str(randint(1, 1000000)), str(randint(1, 1000000))], "" ],
+ ["Test aléatoire 4", [str(randint(1, 1000000)), str(randint(1, 1000000))], "" ],
+ ["Test aléatoire 5", [str(randint(1, 1000000)), str(randint(1, 1000000))], "" ],
+ ["Test aléatoire 6", [str(randint(1, 1000000)), str(randint(1, 1000000))], "" ],
+ ["Test aléatoire 7", [str(randint(1, 1000000)), str(randint(1, 1000000))], "" ],
+ ["Test aléatoire 8", [str(randint(1, 1000000)), str(randint(1, 1000000))], "" ],
+ ["Test aléatoire 9", [str(randint(1, 1000000)), str(randint(1, 1000000))], "" ],
+ ["Test aléatoire 10", [str(randint(1, 1000000)), str(randint(1, 1000000))], "" ],
+ ["Test aléatoire 11", [str(randint(1, 1000000)), str(randint(1, 1000000))], "" ],
+ ["Test aléatoire 12", [str(randint(1, 1000000)), str(randint(1, 1000000))], "" ]]
 ==
 
 
