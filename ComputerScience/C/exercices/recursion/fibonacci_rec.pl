@@ -63,7 +63,6 @@ int fibonacci(int n){
 code_before==#|c|
 ==
 
-
 code_after==#|c|
 #include <stdio.h>
 #include <stdlib.h>
