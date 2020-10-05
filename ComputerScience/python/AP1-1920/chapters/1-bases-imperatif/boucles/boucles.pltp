@@ -46,9 +46,9 @@ Vous aurez une deuxième feuille sur les boucles.
 # Faire une boucle avec des if
 @ /ComputerScience/python/AP1-1920/drafts/zip/boucle1/boucleif.pl
 
-@ dynafor001.pl
-@ dynafor002.pl
-@ dynafor003.pl
+@ /ComputerScience/python/AP1-1920/chapters/1-bases-imperatif/boucles/dynafor001.pl
+@ /ComputerScience/python/AP1-1920/chapters/1-bases-imperatif/boucles/dynafor002.pl
+@ /ComputerScience/python/AP1-1920/chapters/1-bases-imperatif/boucles/dynafor003.pl
 
 
 # Faire une boucle avec des chaines de caractères 
@@ -63,6 +63,7 @@ Vous aurez une deuxième feuille sur les boucles.
 
 # Exercice avec des boucles while
 @ /ComputerScience/python/concept/loop/dynawhile.pl
+
 
 
 
