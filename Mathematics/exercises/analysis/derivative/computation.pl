@@ -1,4 +1,4 @@
-extends = /model/math.pl
+extends = /model/mathinput.pl
 
 title = Calcul de dérivée
 
@@ -30,6 +30,7 @@ form ==
 evaluator==
 score,_,feedback=eval_expr(input.value,sol)
 ==
+
 
 
 
