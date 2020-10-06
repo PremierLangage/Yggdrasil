@@ -2,6 +2,8 @@ extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
 
 author = Quentin Coumes
 
+tag=doubleBoucle|forInRange|affichageDeuxDimensions
+
 title = Tableau de multiplications
 
 text==
