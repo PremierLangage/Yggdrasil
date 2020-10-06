@@ -1,4 +1,4 @@
-extends = /model/mathinput.pl
+extends = /template/mathexpr.pl
 
 title = Médiane
 
