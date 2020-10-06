@@ -1,4 +1,4 @@
-extends = /template/mathexpr.pl
+extends = /model/mathinput.pl
 
 title = Médiane
 
@@ -58,4 +58,5 @@ if ans==sol:
 else:
     grade=(0,"Mauvaise réponse. La médiane est : "+str(sol))
 ==
+
 
