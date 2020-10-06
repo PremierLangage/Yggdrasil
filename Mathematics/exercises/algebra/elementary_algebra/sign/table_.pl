@@ -1,4 +1,4 @@
-extends = /model/mathinput.pl
+extends = /Mathematics/template/mathbasic2.pl
 
 extrajs==
 <script>
