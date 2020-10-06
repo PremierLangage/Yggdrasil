@@ -5,7 +5,7 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 title = Saisie d'une suite croissante
 
-tag=Boucle|ForInRange|VariableIteration|BouclesImbriquees|SaisieControlee|While
+tag=Boucle|Type||SaisieControlee|While|Conditionnelle
 
 text==  
 Ecrire un programme qui effectue la saisie controlée d'un type de variable,
