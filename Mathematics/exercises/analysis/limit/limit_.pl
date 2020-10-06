@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathbasic.pl
+extends = /model/mathinput.pl
 
 input1 =: MathInput
 input2 =: MathInput
@@ -65,4 +65,5 @@ else:
         else:
             input.css="green"
 ==
+
 
