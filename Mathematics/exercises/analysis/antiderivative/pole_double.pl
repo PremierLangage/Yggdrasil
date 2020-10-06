@@ -5,8 +5,6 @@ title = Calcul de primitive (élément simple)
 lang = fr
 
 before ==
-keyboards_JSON['virtualKeyboards']="functions"
-input.config = keyboards_JSON
 
 var('x')
 a=randint(-5,5,[0])
@@ -17,3 +15,4 @@ f_tex=latex(f)
 sol=simplify(integrate(f,x))
 sol_tex=latex(sol)
 ==
+
