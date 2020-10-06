@@ -16,6 +16,9 @@ print("il y a",??,"triplet(s) inférieur(s) à",??)
 
 ==
 
+taboo=while
+needed=for
+
 text==  
 Un triplet de Pythagore est un triplet d'entiers **non-nuls** *(a,b,c)*
 avec $% a \lt b \lt c%$ et $%a^2+b^2=c^2%$. 
