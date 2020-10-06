@@ -19,7 +19,7 @@ taboo=while
 needed=for
 
 text==  
-Un triplet de Pythagore est un triplet d'entiers **non-nuls** *(a,b,c)*
+Un triplet de Pythagore est un triplet d'entiers naturels **non nuls** *(a,b,c)*
 avec $% a \lt b \lt c%$ et $%a^2+b^2=c^2%$. 
 
 On dira que le triplet est inférieur à un nombre $%n%$   
@@ -28,7 +28,6 @@ si $%c \lt n %$.
  Ecrire un programme qui:
  
  * lit un entier
-
  * affiche le nombre de triplets de Pythagore inférieurs à cet entier.<br>
 
 Exemple  :
