@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathinput.pl
+extends = /model/mathinput.pl
 
 title = Antécédent
 
@@ -54,4 +54,5 @@ if  f(*ans)!=y:
     raise StopEvaluatorExec
 score,feedback=100,""
 ==
+
 
