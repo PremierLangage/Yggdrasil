@@ -1,8 +1,6 @@
 extends = integral_.pl
 
 before ==
-keyboards_JSON['virtualKeyboards']="elementary"
-input.config = keyboards_JSON
 
 var('x')
 x0,x1=list_randitem_norep(2,[0,pi,-pi,pi/2,-pi/2,2*pi,-2*pi])
@@ -13,4 +11,5 @@ sol=integrate(f,(x,x0,x1)).doit()
 sol_tex=latex(sol)
 x0_tex,x1_tex=latex(x0),latex(x1)
 ==
+
 
