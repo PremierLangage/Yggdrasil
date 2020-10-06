@@ -1,4 +1,4 @@
-extends = /template/input/mathexpr.pl
+extends = /model/mathinput.pl
 
 title = Ensemble de définition (logarithme 1)
 
@@ -23,4 +23,5 @@ Déterminer l'ensemble de définition de la fonction $%f : x \mapsto {{latexf}}%
 evaluator==
 score,_,feedback=ans_interval(answer['1'],sol)
 ==
+
 
