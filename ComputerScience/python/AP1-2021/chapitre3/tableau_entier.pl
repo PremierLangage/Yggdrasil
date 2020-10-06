@@ -85,11 +85,12 @@ editor.height=400px
 
 solution_alternative==#|python|
 for i in range(1, n*n+1):
-        print(i, end="")
-        if i <= 9:
-            print(" ", end="")
-        if i%n != 0:
-            print(" ", end="")
-        else:
-            print("")
+    print(i, end="")
+    if i <= 9:
+        print(" ", end="")
+    if i%n != 0:
+        print(" ", end="")
+    else:
+        print("")
 ==
+
