@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathbasic2.pl
+extends = /model/mathinput.pl
 
 extrajs==
 <script>
@@ -132,5 +132,6 @@ drop3.css= drag_style
 evaluator==
 score,_,feedback=ans_chained_ineq(answer['1'],sol)
 ==
+
 
 
