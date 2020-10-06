@@ -24,8 +24,7 @@ text==
 Un triplet de Pythagore est un triplet d'entiers naturels **non nuls** *(a,b,c)*
 avec $% a \lt b \lt c%$ et $%a^2+b^2=c^2%$. 
 
-On dira que le triplet est inférieur à un nombre $%n%$   
-si $%c \lt n %$.
+On dira que le triplet est inférieur à un nombre $%n%$ si $%c \lt n %$.
 
  Ecrire un programme qui:
  
@@ -73,6 +72,7 @@ mplsoluce2==
 Grand
 100
 ==
+
 
 
 
