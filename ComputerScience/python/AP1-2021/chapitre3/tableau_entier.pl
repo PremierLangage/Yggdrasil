@@ -8,7 +8,7 @@ tag=boucleImbriquees|forInRange|affichageDeuxDimensions
 title = Tableaux d'Entiers
 
 text==
-On suppose qu'il existe une variables `n` de valeur entière comprises entre 1 et 9.
+On suppose qu'il existe une variable `n` de valeur entière comprises entre 1 et 9.
 
 <br>
 Écrivez un programme qui affiche dans un tableau les entiers de `1` à `n²`.
