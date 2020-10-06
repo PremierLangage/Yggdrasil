@@ -4,9 +4,9 @@ title = Calcul de dérivée
 
 lang = fr
 
+input.virtualKeyboards = sets
+
 before ==
-keyboards_JSON['virtualKeyboards']="json"
-input.config = keyboards_JSON
 
 var('x')
 n=randint(1,4)
