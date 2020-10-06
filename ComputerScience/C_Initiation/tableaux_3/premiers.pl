@@ -31,7 +31,7 @@ codebefore==
 #include <stdlib.h>
 #include <stdio.h>
 
-#define N 28
+#define N 5
 
 ==
 
@@ -52,7 +52,7 @@ while(r!=0){
 }
     
 
-int premiers_entre_eux(int t[][N]){
+void premiers_entre_eux(int t[][N]){
     int i,j;
 
    t[0][0]=-1;
@@ -93,6 +93,7 @@ tests==
   
   ]
 ==
+
 
 
 
