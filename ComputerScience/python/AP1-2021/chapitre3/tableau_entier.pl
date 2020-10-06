@@ -25,6 +25,8 @@ Le tableau doit être formaté suivant ces règles :
 ---
 **Rappel** : Utilisez le caractère `\n` pour symboliser un retour à la ligne.
 
+*Les meilleurs y arriveront avec une seule boucle for !*
+
 ---
 
 Exemple :
@@ -96,6 +98,7 @@ for i in range(1, n*n+1):
     else:
         print("")
 ==
+
 
 
 
