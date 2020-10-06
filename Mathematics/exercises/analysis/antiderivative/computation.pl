@@ -1,12 +1,12 @@
-extends = /Mathematics/template/mathinput.pl
+extends = /model/mathinput.pl
 
 title = Calcul de primitive
 
 lang = fr
 
+input.virtualKeyboards = sets
+
 before ==
-keyboards_JSON['virtualKeyboards']="functions"
-input.config = keyboards_JSON
 
 var('x')
 a=randitem([Rational(1,2),Rational(1,3),Rational(1,4),2,3,4])
@@ -25,6 +25,7 @@ evaluator==
 var('x')
 score,_,feedback=ans_antiderivative(input.value,sol,x)
 ==
+
 
 
 
