@@ -12,7 +12,7 @@ n = int(input("Entrez l'entier maximum : "))
 
 
 
-print("il y a",??,"triplet(s) inférieur(s) à",??)
+print("il y a", ??, "triplet(s) inférieur(s) à", n)
 
 ==
 
@@ -73,6 +73,7 @@ mplsoluce2==
 Grand
 100
 ==
+
 
 
 
