@@ -6,11 +6,6 @@ before ==
 ninput=3
 lstinput=[input1,input2,input3]
 
-keyboards_JSON['virtualKeyboards']="functions"
-input1.config = keyboards_JSON
-input2.config = keyboards_JSON
-input3.config = keyboards_JSON
-input4.config = keyboards_JSON
 
 var('x')
 latexlim=[]
@@ -25,5 +20,6 @@ for (d,a) in zip(lstd,lsta):
     latexlim.append(latex(lim))
     sol.append(lim.doit())
 ==
+
 
 
