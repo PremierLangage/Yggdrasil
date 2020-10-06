@@ -5,6 +5,8 @@
 # Heritaged'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
+tag=doubleBoucle|forInRange
+
 title = Triplet de Pythagore
 code==
 n = int(input("Entrez l'entier maximum : "))
@@ -71,6 +73,7 @@ mplsoluce2==
 Grand
 100
 ==
+
 
 
 
