@@ -37,7 +37,44 @@ tag=boucle|type|saisieControlee|while
 **Remarques/commentaires:**
     -
 
-# Exercice dernier
+# Exercice 8 - TripletPythagore
+
+@ /ComputerScience/python/AP1-2021/chapitre3/boucle2croissant.pl
+
+tag=doubleBoucle|forInRange
+
+**Changements:**
+    - précisions entiers **non nuls**
+**Remarques/commentaires:**
+    - le taboo ne marche pas
+
+# Exercice 9 - tableau_entier
+
+@ /ComputerScience/python/AP1-2021/chapitre3/tableau_entier.pl
+
+tag=boucle|forInRange|affichageDeuxDimensions
+
+**Changements:**
+    - changement de l'énoncé, pas besoin de construire un chaine
+    - changement du code au lancement de l'exercice
+    - suppression de la ligne vide apres le tableau
+**Remarques/commentaires:**
+	- la solution proposée est complexe pour rien, j'ai ajouté une solution alternative plus simple...
+
+
+# Exercice 10 - table_multiplication
+
+@ /ComputerScience/python/AP1-2021/chapitre3/table_multiplication.pl
+
+tag=doubleBoucle|forInRange|affichageDeuxDimensions
+
+**Changements:**
+    - supression de `"%d" % i` Les élèves n'ont pas vu la syntaxe...
+**Remarques/commentaires:**
+	- la construction d'une chaine est probablement plus facile dans cet exercice, il faudrait faire trop de print différents sinon
+
+
+# Exercice 11 - arrondiReel
 
 tag=boucle|float|somme|math
 
@@ -46,10 +83,3 @@ tag=boucle|float|somme|math
 **Remarques/commentaires:**
     - Il plante problème de before inexistant à mon avis pour initialiser des variables
     - Problème fixé il fonctionne mais il est compliqué donc en refonte !
-
-
-
-
-
-
-
