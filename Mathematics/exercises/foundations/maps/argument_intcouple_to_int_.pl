@@ -1,4 +1,4 @@
-extends = /model/mathinput.pl
+extends = /Mathematics/template/mathinput.pl
 
 title = Antécédent
 
