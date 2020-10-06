@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathinput.pl
+extends = /model/mathinput.pl
 
 title = Calcul d'intégrales
 
@@ -14,4 +14,5 @@ score,_,feedback=ans_expr(input.value,sol)
 solution ==
 L'intégrale vaut $! {{sol_tex}} !$.
 ==
+
 
