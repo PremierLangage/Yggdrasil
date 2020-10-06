@@ -13,7 +13,6 @@ n = int(input("Entrez l'entier maximum : "))
 
 
 print("il y a", ??, "triplet(s) inférieur(s) à", n)
-
 ==
 
 taboo=while
