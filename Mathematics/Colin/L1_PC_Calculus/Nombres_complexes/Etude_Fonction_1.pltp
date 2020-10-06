@@ -3,22 +3,17 @@ introduction=Voici la prmière série d'exercices sur les fonctions.
 title=Etudes de fonctions
 
 
-@ /Mathematics/exercises/complex_numbers/cplx_sqrt.pl
+@ /Mathematics/exercises/algebra/elementary_algebra/inequalities/linineq_constant.pl
 
-# @ /Mathematics/exercises/complex_numbers/discriminant.pl
+@ /Mathematics/exercises/algebra/elementary_algebra/inequalities/prodquot_inequation_.pl
 
-@ /Mathematics/exercises/complex_numbers/quadratic_cplx_eq_.pl
+@ /Mathematics/exercises/algebra/elementary_algebra/inequalities/prodquot_inequation_quot_int.pl
 
-# @ /Mathematics/exercises/complex_numbers/quadratic_cplx_eq_int.pl
+@ /Mathematics/exercises/algebra/elementary_algebra/inequalities/syslineq_constant.pl
 
-@ /Mathematics/exercises/complex_numbers/quadratic_cplx_eq_int2.pl
+@ /Mathematics/exercises/functions/defset/ln1.pl
 
-@ /Mathematics/exercises/complex_numbers/quadratic_cplx_eq_int3.pl
-
-# @ /Mathematics/exercises/complex_numbers/quadratic_cplx_eq_rat.pl
-
-
-
+@ /Mathematics/exercises/functions/defset/sqrt1.pl
 
 
 
