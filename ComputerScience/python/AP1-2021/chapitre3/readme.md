@@ -26,7 +26,7 @@ tag=Boucle|Conditionnelles
 
 **Remarques/commentaires:**
 
-# Exercice 3
+# Exercice 3 - boucle2croissant.pl
 
 @ /ComputerScience/python/AP1-2021/chapitre3/boucle2croissant.pl
 
@@ -36,6 +36,11 @@ tag=Boucle|Type||SaisieControlee|While|Conditionnelle
     - 
 **Remarques/commentaires:**
     -
+# Exercice 4 - boucletriangle.pl
+
+@ /ComputerScience/python/AP1-2021/chapitre3/boucletriangle.pl
+
+tag=Boucle|Type|SaisieControlee|While|ForInRange
 
 # Exercice 8 - TripletPythagore
 
