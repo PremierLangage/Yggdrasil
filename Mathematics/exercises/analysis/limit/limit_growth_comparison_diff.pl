@@ -9,11 +9,7 @@ before ==
 ninput=3
 lstinput=[input1,input2,input3]
 
-keyboards_JSON['virtualKeyboards']="functions"
-input1.config = keyboards_JSON
-input2.config = keyboards_JSON
-input3.config = keyboards_JSON
-input4.config = keyboards_JSON
+
 
 var('x')
 latexlim=[]
@@ -33,6 +29,7 @@ for f in lstf:
 text ==
 Calculer les limites suivantes.
 ==
+
 
 
 
