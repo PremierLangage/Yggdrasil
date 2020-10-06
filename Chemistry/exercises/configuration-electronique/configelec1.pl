@@ -12,7 +12,7 @@ grader=@ /grader/evaluator.py
 @ /utils/sandboxio.py 
 
 text==
-Quelle est la configuration éléctronique de l'élément  **{{name}}** avec $%Z%$= {{Z}}  ?
+Quelle est la configuration éléctronique de l'élément  **{{name}}** avec $$Z$$= {{Z}}  ?
 
 Pour être validé dans l'application, on notera 1s2 2s2 2p6...sans mettre en exposant le nombre d'électrons
 <br/>
