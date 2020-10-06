@@ -5,8 +5,6 @@ title = Calcul de primitive (élément simple)
 lang = fr
 
 before ==
-keyboards_JSON['virtualKeyboards']="functions"
-input.config = keyboards_JSON
 
 var('x')
 a=randint(-5,5,[0])
@@ -36,3 +34,4 @@ Calculer une primitive de la fonction
 $$ f : x \mapsto {{f_tex}} $$
 sur l'intervalle $! {{dom}} !$.
 ==
+
