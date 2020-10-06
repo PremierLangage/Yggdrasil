@@ -4,9 +4,9 @@ title = Calcul de primitive
 
 lang = fr
 
+
+
 before ==
-keyboards_JSON['virtualKeyboards']="functions"
-input.config = keyboards_JSON
 
 var('x')
 a=randint(-5,5,[0])
@@ -18,4 +18,5 @@ f_tex=latex(f)
 sol=simplify(Rational(a,b*(d+1))*(b*x+c)**(d+1))
 sol_tex=latex(sol)
 ==
+
 
