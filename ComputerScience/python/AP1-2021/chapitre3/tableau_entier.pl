@@ -23,6 +23,7 @@ Le tableau doit être formaté suivant ces règles :
 
 *N'oubliez pas l'espace en fin de ligne si celle-ci se termine par un nombre à 1 chiffre.*
 ---
+
 **Rappel** : Utilisez le caractère `\n` pour symboliser un retour à la ligne.
 
 *Les meilleurs y arriveront avec une seule boucle for !*
