@@ -11,7 +11,7 @@ title = Points du disque
 text==  
 
 Ecrire un programme qui force la saisie d'un réel strictement positif **d**
-puis affiche le nombre de points à coordonnées entières situés à l'intérieur du disque de rayon **d**.
+puis affiche le nombre de points à coordonnées entières situés à l'intérieur strictement du disque de rayon **d**.
 
 exemple :
 
@@ -25,8 +25,6 @@ Il y a 1861 points à coordonnées entières
 code==
 
 ??=float(input("Entrez un réel strictement positf: "))
-
-
 
 ==
 
