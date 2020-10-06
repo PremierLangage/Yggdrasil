@@ -42,6 +42,10 @@ tag=Boucle|Type||SaisieControlee|While|Conditionnelle
 
 tag=Boucle|Type|SaisieControlee|While|ForInRange
 
+# Exercice 5 - CouplesXY.pl
+
+@ /ComputerScience/python/AP1-2021/chapitre3/CouplesXY.pl
+
 # Exercice 8 - TripletPythagore
 
 @ /ComputerScience/python/AP1-2021/chapitre3/boucle2croissant.pl
