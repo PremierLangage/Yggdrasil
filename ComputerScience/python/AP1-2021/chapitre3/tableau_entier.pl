@@ -2,6 +2,8 @@ extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
 
 author = Quentin Coumes
 
+tag=boucle|forInRange|affichageDeuxDimensions
+
 title = Tableaux d'Entiers
 
 text==
