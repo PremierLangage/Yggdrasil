@@ -46,6 +46,10 @@ tag=Boucle|Type|SaisieControlee|While|ForInRange
 
 @ /ComputerScience/python/AP1-2021/chapitre3/CouplesXY.pl
 
+# Exercice 6 - Pointsdudisque.pl
+
+@ /ComputerScience/python/AP1-2021/chapitre3/Pointsdudisque.pl
+
 # Exercice 8 - TripletPythagore
 
 @ /ComputerScience/python/AP1-2021/chapitre3/boucle2croissant.pl
