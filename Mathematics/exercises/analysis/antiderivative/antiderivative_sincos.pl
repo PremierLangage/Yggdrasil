@@ -3,8 +3,6 @@ extends = antiderivative_.pl
 title = Calcul de primitive
 
 before ==
-keyboards_JSON['virtualKeyboards']="functions"
-input.config = keyboards_JSON
 
 var('x')
 a=randitem([Rational(1,2),Rational(1,3),Rational(1,4),2,3,4])
@@ -14,4 +12,5 @@ f_tex=latex(f)
 sol=integrate(f,x).doit()
 sol_tex=latex(sol)
 ==
+
 
