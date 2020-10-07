@@ -66,9 +66,9 @@ code_after==#|c|
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
-  int n = atoi(argv[1]);
+  unsigned long int n = atoi(argv[1]);
 
-  printf("La somme des chiffres récursive de %d est %d.\n", n, sum_number_rec(n));
+  printf("La somme des chiffres récursive de %lu est %lu.\n", n, sum_number_rec(n));
   return 0;
 }
 ==
