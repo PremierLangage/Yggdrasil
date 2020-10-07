@@ -39,22 +39,22 @@ Il ne faut pas hésiter à le code en plusieurs fonctions.
 ==
 
 editor.code==#|c|
-int sum_number_rec(int n){
+unsigned long int sum_number_rec(unsigned long int n){
   ...
 }
 ==
 
 solution==#|c|
-int sum_number(int n){
+unsigned long int sum_number(unsigned long int n){
   if (n<10)
     return n;
   return sum_number(n/10) + (n%10);
 }
 
-int sum_number_rec(int n){
-  if (n == sum_number(int n))
+unsigned long int sum_number_rec(unsigned long int n){
+  if (n == sum_number(n))
     return n;
-  return sum_number_rec(sum_number(int n));
+  return sum_number_rec(sum_number(n));
 }
 ==
 
