@@ -16,8 +16,6 @@ questions==
 >j'indique avec des curly brackets la {bonne} réponse
 
 
-
-
 =**[nbb=2,nbg=2] Indiquer les identifiants correctes
 +=["un","deux","ident","prout"]
 -=["666","aujourd'hui", "def", "@lt;html@gt;"] 
