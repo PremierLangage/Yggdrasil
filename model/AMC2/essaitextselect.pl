@@ -8,9 +8,15 @@ extends = /model/multistep.pl
 settings.cumulative % false
 
 # NE MODIFIER PAS CE FICHIER MERCI 
-# FAITES UN EXTENDS ET DEFINISER VOTRE BALISE questions
-
+# FAITES UN EXTENDS DESSUS ET DEFINISER VOTRE BALISE questions
+# extends=  /model/AMC2/essaitextselect.pl 
 questions==
+
+=*+ Choose the corrects variables names 
+>+["fixe","liste","of","good","names"]
+>-["6fixe","-liste","!of","$bad","variables-names"]
+
+
 
 =**[nbb=2,nbg=2] Indiquer les identifiants correctes
 +=["un","deux","ident","prout"]
@@ -37,6 +43,8 @@ questions==
 =*[nb=6] What are the odd numbers ? 
 +=[x for x in range(3,77) if x%2==1 ]
 -=[x for x in range(3,77) if x%2==0 ]
+
+
 
 ==
 
