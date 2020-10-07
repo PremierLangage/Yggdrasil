@@ -4,7 +4,7 @@
 # Copyright 2020 DR
 author=  DR
 
-title=Recherche d'entiers dans un flot
+title=Recherche d'entiers dans un float
 
 tag=Fonction|AppelFonction|TransmissionParametre|RetourFonction|TransmissionAdresse
 
@@ -13,8 +13,9 @@ author=
 text==
 Écrire une fonction *nextInteger* qui effectue la saisie  d'un entier dans l'entrée standard (ce qui est tappé au clavier).
 
-Tant que la réponce de la fonction **scanf** est nulle, il fut faire un appel a **getchar** pour consomer le caractère qui n'est pas un digit (chiffre). 
- La fonction *nextInteger* reçoit l'adresse de l'entier qui sockera la réponse de scanf.
+Tant que la réponse de la fonction **scanf** est nulle, il faut faire un appel à **getchar** pour consommer le caractère qui n'est pas
+un digit (chiffre). 
+La fonction *nextInteger* reçoit l'adresse de l'entier qui stockera la réponse de scanf.
 
  Si l'entrée standard est "toto4  77!!23" le programme principal appelera 4 fois la fonction *nextInteger*
   qui retournera 1 trois fois, puis zéro car il n'y a plus d'entiers l'entrée est vidée.
@@ -73,6 +74,7 @@ tests==
  ["Aléatoire","",'Vive '+' la L1 Math Info '.join([str(random.randint(1,4)),str(random.randint(11, 24)),str(random.randint(11, 24))])+" ."]
  ]
 ==
+
 
 
 
