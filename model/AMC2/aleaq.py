@@ -20,7 +20,7 @@ def optiondic(l):
         d[k]=v
     return d
 
-def buildliste(g,b):
+def buildlistes(g,b):
     index=0
     r,ri=[],[]
     while g and b:
@@ -96,12 +96,8 @@ def buildquestion(question):
             random.shuffle(bads)
             goods=random.sample(goods , nbb) # en choisir n-1
             random.shuffle(goods)
+            question['items'],question['index']=buildlistes(goods,bads)
 
-            # INSERER good quelque part et noter l'index 
-            index=random.randint(0,len(bads))
-            bads.insert(index,good)
-            question['index']=index
-            question['items']=bads
             return question
         
     except Exception as e:
