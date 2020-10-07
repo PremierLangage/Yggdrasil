@@ -11,7 +11,7 @@ questions==
 
 
 
-=*[nb=3] What are the odd numbers ? 
+=*[nb=13] What are the odd numbers ? 
 +=[x for x in range(3,77) if x%2==1 ]
 -=[100,200,300,400,500,600]
 -=[x for x in range(3,77) if x%2==0 ]
