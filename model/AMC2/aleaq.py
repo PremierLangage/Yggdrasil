@@ -28,7 +28,7 @@ def buildlistes(g,b):
             r.append(g.pop())
             ri.append(index)
         else:
-            r.append(d.pop())
+            r.append(b.pop())
         index=index+1
     if g:
         while g:
