@@ -29,7 +29,7 @@ def buildquestion(question):
         return question
     try:
         d=optiondic(question.get('options'))
-        nb =d.get("nb",4)
+        nb =int(d.get("nb",4))
         if question.get('type') == 'Radio':
             bonne=question.get('index')
             good=random.choice(eval(question.get('items')[bonne][1:]))# Une bonne réponce le [1:] c'est pour le '=' c'est bof FIXME 
