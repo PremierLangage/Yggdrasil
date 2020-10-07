@@ -13,7 +13,7 @@ questions==
 
 =*[nb=3] What are the odd numbers ? 
 +=[x for x in range(3,77) if x%2==1 ]
-
+-=[x for x in range(3,77) if x%2==0 ]
 - 34 est even
 - 34 est even
 - 34 est even
@@ -25,7 +25,7 @@ questions==
 +=[x for x in range(3,77) if x%2==1 ]
 + 1
 -=[x for x in range(3,77) if x%2==0 ]
--=[x for x in range(3,77) if x%2==0 ]
+
 
 =*[nb=6] What are the odd numbers ? 
 +=[x for x in range(3,77) if x%2==1 ]
