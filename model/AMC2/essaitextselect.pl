@@ -16,6 +16,11 @@ questions==
 >j'indique avec des curly brackets la {bonne} réponse
 
 
+*+ Choisir les mots qui ne sont pas des mots clefs de python
+>for and or {then} else if with as {double} 
+
+
+
 =**[nbb=2,nbg=2] Indiquer les identifiants correctes
 +=["un","deux","ident","prout"]
 -=["666","aujourd'hui", "def", "@lt;html@gt;"] 
