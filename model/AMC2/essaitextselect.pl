@@ -6,19 +6,15 @@ extends = /model/multistep.pl
 settings.cumulative % false
 
 questions==
-*+ Choisir les animaux
 
-> the red {{fox}} run over the fence while the {{Dove}}
-
-* radio 
-+ vraie 
-- faux 
 
 
 =* What are the odd numbers ? 
 +=[x for x in range(3,77) if x%2==1 ]
 -=[x for x in range(3,77) if x%2==0 ]
+==
 
+berk==
 =** What are the odd numbers ? 
 +=[x for x in range(3,77) if x%2==1 ]
 -=[x for x in range(3,77) if x%2==0 ]
