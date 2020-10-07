@@ -1,8 +1,8 @@
 
-
-
 # Copyright 2020 DR
-author=  DR
+#author=  DR
+
+author=
 
 title=Recherche d'entiers dans un float
 
@@ -17,12 +17,10 @@ Tant que la réponse de la fonction **scanf** est nulle, il faut faire un appel 
 un digit (chiffre). 
 La fonction *nextInteger* reçoit l'adresse de l'entier qui stockera la réponse de **scanf**.
 
- Si l'entrée standard est "toto4  77!!23" le programme principal appelera 4 fois la fonction *nextInteger*
-  qui retournera 1 trois fois, puis zéro car il n'y a plus d'entiers l'entrée est vidée.
+Si l'entrée standard est "toto4  77!!23" le programme principal appelera 4 fois la fonction *nextInteger*
+qui retournera "1" trois fois, puis "zéro" car il n'y a plus d'entiers quand l'entrée est vidée.
 
-  Remarque **scanf** retourne 0 si elle n'a pas pu lire, 1 si elle a lue un entier, -1 si il n'y a plus rien  a lire.
-
-
+Remarque **scanf** retourne 0 si elle n'a pas pu lire, 1 si elle a lue un entier, -1 si il n'y a plus rien à lire.
 
 ==
 
