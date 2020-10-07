@@ -12,9 +12,9 @@ settings.cumulative % false
 # extends=  /model/AMC2/essaitextselect.pl 
 questions==
 
-=*+ Choose the corrects variables names 
->+["fixe","liste","of","good","names"]
->-["6fixe","-liste","!of","$bad","variables-names"]
+*+ Choix select simple du mot 
+>j'indique avec des curly brackets la {bonne} réponse
+
 
 
 
@@ -52,6 +52,7 @@ berk==
 =** What are the odd numbers ? 
 +=[x for x in range(3,77) if x%2==1 ]
 -=[x for x in range(3,77) if x%2==0 ]
+
 
 =*+ Choose the corrects variables names 
 >+["fixe","liste","of","good","names"]
