@@ -26,7 +26,7 @@ text==
 			    les cases étaient vides ou contenaientt des lettres 
                 qui correspondent à celle du mot
 
-l'appel `construitpalin(s,6)` laisse s inchangé et renvoie 0
+
 ==
 codebefore==
 
@@ -53,6 +53,7 @@ char mot[10];
   char tab[LIGNES][COLONNES]={{'\0}};
 strcpy(t[1],"OPALINE");
 strcpy(tab[3,],"SAS1");
+scanf("%d %d",&x,&y);
 }
 /*
 PARADIS
