@@ -28,7 +28,7 @@ text==
 Écrire une fonction **has_vowel** qui prend une chaîne de caractères en
 paramètre et qui retourne un entier correspondant au code ASCII de la
 première voyelle trouvée dans la chaine. On retournera 0 si aucune
-voyelle apparaît dans le mot.
+voyelle n'apparaît dans le mot.
 ==
 
 editor.code==
@@ -80,5 +80,6 @@ checks_args_stdin==#|python|
  ["Trouve un o", ["xxxoo"], ""],
  ["Trouve un y", ["xxxy"], ""]]
 ==
+
 
 
