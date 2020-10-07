@@ -14,12 +14,7 @@ questions==
 =*[nb=3] What are the odd numbers ? 
 +=[x for x in range(3,77) if x%2==1 ]
 -=[x for x in range(3,77) if x%2==0 ]
-- 34 est even
-- 34 est even
-- 34 est even
-- 34 est even
-- 34 est even
-- 34 est even
+-=[100,200,300,400,500,600]
 
 =*[nb=2] What are the odd numbers ? 
 +=[x for x in range(3,77) if x%2==1 ]
