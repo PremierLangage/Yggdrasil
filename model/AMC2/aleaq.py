@@ -46,10 +46,12 @@ def buildquestion(question):
     """
     if question.get('extended') == False:
         return question
+    if question.get('type') == 'TextSelect' :# j'ai pas de syntaxe etendue pour le moment 
+        return question 
     try:
         d=optiondic(question.get('options'))
         nb =int(d.get("nb",4))
-        if question.get('type') == 'TextSelect' :
+
         if question.get('type') == 'Radio' :
             bonne=question.get('index')
             labonne=question.get('items')[bonne]
