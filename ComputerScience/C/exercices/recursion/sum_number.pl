@@ -58,8 +58,10 @@ int sum_number_rec(int n){
 }
 ==
 
-code_after==#|c|
+code_before==#|c|
+==
 
+code_after==#|c|
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -69,7 +71,6 @@ int main(int argc, char* argv[]){
   printf("La somme des chiffres de %d est %d.\n", n, sum_number(n));
   return 0;
 }
-
 ==
 
 
