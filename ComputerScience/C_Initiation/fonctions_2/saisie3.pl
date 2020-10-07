@@ -11,7 +11,7 @@ tag=Fonction|AppelFonction|TransmissionParametre|RetourFonction|TransmissionAdre
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
 text==
-Écrire une fonction *nextInteger* qui effectue la saisie  d'un entier dans l'entrée standard (ce qui est tappé au clavier).
+Écrire une fonction *nextInteger* qui effectue la saisie d'un entier dans l'entrée standard (ce qui est tappé au clavier).
 
 Tant que la réponse de la fonction **scanf** est nulle, il faut faire un appel à **getchar** pour consommer le caractère qui n'est pas
 un digit (chiffre). 
@@ -26,7 +26,6 @@ Remarque **scanf** retourne 0 si elle n'a pas pu lire, 1 si elle a lue un entier
 
 editor.code==
 
-
 int nextInteger(...){
 
 }
@@ -36,7 +35,7 @@ int nextInteger(...){
 solution==
 int nextInteger(int *n){
 int r=0;
-while (!(r=scanf("%d",n)))  getchar();
+while (!(r=scanf("%d",n))) getchar();
 if (r==-1) return 0;
 return 1;
 }
