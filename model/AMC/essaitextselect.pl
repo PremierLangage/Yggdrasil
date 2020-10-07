@@ -6,9 +6,9 @@ extends = /model/multistep.pl
 settings.cumulative % false
 
 questions==
-*+ essai de text TextSelect
+*+ Choisir les annimaux
 
-> the red fox run over the fence
+> the red [fox] run over the fence
 
 * radio 
 + vraie 
@@ -73,6 +73,7 @@ formstep ==
 evaluatorstep ==
 score = comp[step].eval()
 ==
+
 
 
 
