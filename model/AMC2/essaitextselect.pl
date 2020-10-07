@@ -12,7 +12,15 @@ settings.cumulative % false
 
 questions==
 
-
+=**[nbb=2,nbg=2] Indiquer les identifiants correctes
++=["un","deux","ident","prout"]
+-=["666","aujourd'hui", "def", "<html>"] 
+-=["!autres","truc%","pour ris"]
+- for
+- in
+- and
+- or
+-=["list","int","dic"]
 
 =**[nb=13] What are the odd numbers ? 
 +=[x for x in range(3,77) if x%2==1 ]
