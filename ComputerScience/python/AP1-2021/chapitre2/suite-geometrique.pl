@@ -5,7 +5,7 @@ tag=InstructionsRepetitives|ForInRange
 title = Suite géométrique
 
 text==
-On suppose qu'il existe deux variables `a` et `b` désignant des nombres flottants quelconque, et une variable `nb` désignant un entier positif quelconque. 
+On suppose qu'il existe deux variables `a` et `b` désignant des nombres flottants quelconques, et une variable `nb` désignant un entier positif quelconque. 
 Écrire un programme dont l'exécution affiche sur la sortie standard les `nb` premiers termes de la suite géométrique de premier terme `a` et de raison `b`
 (chacun suivi d'un retour à la ligne), à l'exclusion de tout autre caractère.
 
@@ -58,6 +58,7 @@ tests([(random.randint(3,7),random.randint(3,7),random.randint(3,7)),
        (random.randint(3,7),random.randint(3,7),random.randint(3,7)),
        (random.randint(3,7),random.randint(3,7),random.randint(3,7))])
 ==
+
 
 
 
