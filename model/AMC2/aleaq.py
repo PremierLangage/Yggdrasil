@@ -14,9 +14,10 @@ import random
 
 def optiondic(l):
     d={}
-    for x in l:
-        k,v= x.split('=')
-        d[k]=v
+    if l:
+        for x in l:
+            k,v= x.split('=')
+            d[k]=v
     return d
 
 def buildquestion(question):
@@ -27,7 +28,7 @@ def buildquestion(question):
     if question.get('extended') == False:
         return question
     try:
-        d=optiondic(question.get('option'))
+        d=optiondic(question.get('options'))
         nb =d.get("nb",4)
         if question.get('type') == 'Radio':
             bonne=question.get('index')
