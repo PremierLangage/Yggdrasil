@@ -31,11 +31,15 @@ de chiffres est à réitérer jusqu'à qu'il ne reste qu'un seul chiffre.
 Voici un exemple, pour le nombre 9754916347, votre fonction devra retourner 3.
 Pourquoi 3, et bien parce que :
 
+<br />
+
     9754916347 --> 9 + 7 + 5 + 4 + 9 + 1 + 6 + 3 + 4 = 48
     48 --> 4 + 8 = 12
     12 --> 1 + 2 = 3 (un seul chiffre)
 
 Il ne faut pas hésiter à le code en plusieurs fonctions.
+
+<br />
 ==
 
 editor.code==#|c|
@@ -78,7 +82,8 @@ int main(int argc, char* argv[]){
 checks_args_stdin==#|python|
 [["Test basique", ["0"], ""],
  ["Petit test", ["7"], ""],
- ["Test PLein", ["1234567"], ""],
+ ["Test pLein", ["1234567"], ""],
+ ["Test exemple", ["9754916347"], ""],
  ["Test aléatoire 1", [str(randint(1, 2000000000))], ""],
  ["Test aléatoire 2", [str(randint(1, 2000000000))], ""],
  ["Test aléatoire 3", [str(randint(1, 2000000000))], ""],
