@@ -12,7 +12,7 @@ title = nombres croissants
 text==  
 
 Ecrire un programme qui force la saisie d'un entier strictement positif
- puis affiche un suite de lignes formées de:
+ puis affiche une suite de lignes formées de:
  
 1 sur la première ligne
 
@@ -25,7 +25,7 @@ Ecrire un programme qui force la saisie d'un entier strictement positif
 exemple:
 
 
-Entrez un entier strictement positf: -2
+Entrez un entier strictement positif: -2
 
 Entrez un entier strictement positif: 5
 
@@ -81,6 +81,7 @@ une ligne
 1
 1
 ==
+
 
 
 
