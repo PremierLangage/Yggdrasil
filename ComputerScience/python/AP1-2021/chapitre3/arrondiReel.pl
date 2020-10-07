@@ -21,7 +21,7 @@ before==
 ==
 
 text==  
-On veut comparer les valeurs (informatique) de deux séries (identiques) qui convergent (mathématiquement) vers $%\frac{\pi^2}{6}%$
+On veut comparer les valeurs (informatiques) de deux séries (identiques) qui convergent (mathématiquement) vers $%\frac{\pi^2}{6}%$
 
 
 $%(1): \sum\limits_{i=1}^{+\infty}\frac{1}{i^2}%$
@@ -61,6 +61,7 @@ un | 1
 petit | 14
 grand | 10001
 ==
+
 
 
 
