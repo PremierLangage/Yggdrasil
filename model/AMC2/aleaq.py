@@ -42,7 +42,7 @@ def buildquestion(question):
             index=random.randint(0,len(bads))
             bads.insert(index,good)
             q['index']=index
-            q["items"]=bads
+            q['items']=bads
         return q
 
         
