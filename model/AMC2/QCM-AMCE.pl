@@ -25,7 +25,7 @@ Vous  pouvez en mettre plusieurs
 
 
 =**[nbb=2,nbg=2] Indiquer les identifiants correctes
-    =**[nbb=2,nbg=2] Indiquer les identifiants correctes
+    <pre><code>=**[nbb=2,nbg=2] Indiquer les identifiants correctes
     +=["un","deux","ident","prout"]
     -=["666","aujourd'hui", "def", "@lt;html@gt;"] 
     -=["!autres","truc%","pour ris"]
@@ -33,7 +33,7 @@ Vous  pouvez en mettre plusieurs
     - in
     - and
     - or
-    -=["list","int","dic"]
+    -=["list","int","dic"]<pre><code>
 +=["un","deux","ident","prout"]
 -=["666","aujourd'hui", "def", "@lt;html@gt;"] 
 -=["!autres","truc%","pour ris"]
