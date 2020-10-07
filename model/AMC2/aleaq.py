@@ -42,9 +42,9 @@ def buildquestion(question):
             # INSERER good quelque part et noter l'index 
             index=random.randint(0,len(bads))
             bads.insert(index,good)
-            q['index']=index
-            q['items']=bads
-        return q
+            question['index']=index
+            question['items']=bads
+        return question
 
         
     except Exception as e:
