@@ -10,6 +10,7 @@ before == #|python|
 import random as rd
 from customradio import CustomRadio
 from customcheckbox import CustomCheckbox
+from customtextselect import CustomTextSelect
 from AMC import parse_AMC_TXT
 
 list_questions = parse_AMC_TXT(questions)
@@ -27,6 +28,8 @@ for i, q in enumerate(list_questions):
         comp.append(CustomRadio())
     elif q['type'] == "Checkbox":
         comp.append(CustomCheckbox())
+    elif  q['type'] == 'TextSelect':
+        comp.append(CustomTextSelect())
     statement.append(q['text'])
     comp[i].setitems(q['items'])
     comp[i].setsol_from_index(q['index'])
@@ -50,6 +53,7 @@ formstep ==
 evaluatorstep ==
 score = comp[step].eval()
 ==
+
 
 
 
