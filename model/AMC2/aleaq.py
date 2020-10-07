@@ -32,11 +32,11 @@ def buildquestion(question):
         nb =d.get("nb",4)
         if question.get('type') == 'Radio':
             bonne=question.get('index')
-            good=random.choice(eval(question.get('items')[bonne]))# Une bonne réponce 
+            good=random.choice(eval(question.get('items')[bonne][1:]))# Une bonne réponce 
             del question.get('items')[bonne]
             bads=[]
             for defi in question.get('items'):
-                bads.append(eval(question.get('items')))# ensemble des mauvaose réponces 
+                bads.append(eval(question.get('items')[1:]))# ensemble des mauvaose réponces 
             bads= random.sample(bads , nb-1) # en choisir n-1
             random.shuffle(bads)
             # INSERER good quelque part et noter l'index 
