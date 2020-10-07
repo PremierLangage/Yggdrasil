@@ -52,7 +52,7 @@ for i, q in enumerate(list_questions):
     elif  q['type'] == 'TextSelect':
         cst = CustomTextSelect()
         statement.append(q['text'])
-        cst.settext(q['items'][0])
+        cst.setdata_from_text(q['items'][0])
         comp.append(cst)
 
 ==
