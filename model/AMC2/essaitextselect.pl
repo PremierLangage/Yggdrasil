@@ -3,6 +3,8 @@ extends = /model/multistep.pl
 
 @ AMC2.py [AMC.py]
 
+@aleaq.py 
+
 settings.cumulative % false
 
 questions==
