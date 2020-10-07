@@ -4,18 +4,70 @@
 # DD : oui, je n'y ai pas trop réfléchi encore
 
 ## Un commentaire ou un lien vers la doc AMC serait bienvenu  
+exemple="""
+# AMC-TXT source file
+Title: My first AMC questionnaire
 
+Presentation: Please answer the following questions
+the best you can.
 
+* What is the capital city of Cameroon?
++ Yaounde
+- Douala
+- Kribi
+
+** From the following numbers, which are positive?
+- -2
++ 2
++ 10
+"""
+exempleEtendu="""
+=* What are the odd numbers ? 
++=[x for x in range(3,77) if x%2==1 ]
+-=[x for x in range(3,77) if x%2==0 ]
+
+=** What are the odd numbers ? 
++=[x for x in range(3,77) if x%2==1 ]
+-=[x for x in range(3,77) if x%2==0 ]
+
+=*+ Choose the corrects variables names 
+>+["fixe","liste","of","good","names"]
+>-["6fixe","-liste","!of","$bad","variables-names"]
+"""
 
 
 def parse_AMC_TXT(txt):
-
+    """
+    >>> q = parse_AMC_TXT(exemple)
+    >>> len(q) == 2 and q[0]["type"]==  "Radio" and q[1]["type"]== "Checkbox"
+    """
     questions = []
     pending = False
-
+    extended=False
     for line in txt.splitlines()+['']:
-        
-        if line.startswith('*'):
+        if line.startswith('='): # Extended Syntax
+            line= line[1:] # strip first 
+            extended= True
+            if line.startswith('*'):
+                if line.startswith('**'):
+                    question_type = "Checkbox"
+                elif line.startswith('*+'):
+                    question_type = "TextSelect"
+                else:
+                    question_type = "Radio"
+                line = line.lstrip("*+ ")
+                if line.startswith('['):
+                    r0 = line.find(']')
+                    options = [option.strip() for option in line[1:r0].split(',')]
+                    line = line[r0+1:].lstrip()
+                else:
+                    options = []
+                statement = line
+                k = 0
+                index = []
+                items = []
+                pending = True        
+        elif line.startswith('*'):
             if line.startswith('**'):
                 question_type = "Checkbox"
             elif line.startswith('*+'):
@@ -34,7 +86,6 @@ def parse_AMC_TXT(txt):
             index = []
             items = []
             pending = True
-
         elif line.startswith(('+','-')):
             items.append(line[1:].strip())
             if line.startswith('+'):
@@ -47,9 +98,11 @@ def parse_AMC_TXT(txt):
             'text': statement, 
             'items': items, 
             'index': [], 
-            'options': options
+            'options': options,
+            'extended': extended
             })
             pending = False
+            extended= False
         elif pending and k == 0:
             if line == "":
                 statement += "\n"
@@ -65,9 +118,11 @@ def parse_AMC_TXT(txt):
             'text': statement, 
             'items': items, 
             'index': index, 
-            'options': options
+            'options': options,
+            'extended': extended
             })
             pending = False
+            extended= False
 
     return questions
 
