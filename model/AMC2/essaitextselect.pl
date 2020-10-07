@@ -37,6 +37,8 @@ from customcheckbox import CustomCheckbox
 from customtextselect import CustomTextSelect
 from AMC import parse_AMC_TXT
 
+from aleaq import buildquestion
+
 list_questions = parse_AMC_TXT(questions)
 
 if 'nbstep' in globals():
@@ -48,6 +50,7 @@ comp = []
 statement  = []
 
 for i, q in enumerate(list_questions):
+    q=buildquestion(q) # Gestion de l'aléa 
     if q['type'] == "Radio":
         comp.append(CustomRadio())
         statement.append(q['text'])
