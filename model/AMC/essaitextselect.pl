@@ -6,9 +6,9 @@ extends = /model/multistep.pl
 settings.cumulative % false
 
 questions==
-*+ Choisir les annimaux
+*+ Choisir les animaux
 
-> {the} red {{fox}} run over the fence
+> {the} red {{fox}} run over the fence while the {{Dove}}
 
 * radio 
 + vraie 
