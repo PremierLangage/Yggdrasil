@@ -7,6 +7,9 @@ extends = /model/multistep.pl
 
 settings.cumulative % false
 
+# NE MODIFIER PAS CE FICHIER MERCI 
+# FAITES UN EXTENDS ET DEFINISER VOTRE BALISE questions
+
 questions==
 
 
