@@ -3,7 +3,7 @@
 @ /utils/components/radio.py [customradio.py]
 @ /utils/components/checkbox.py [customcheckbox.py]
 @ /utils/components/textselect.py [customtextselect.py]
-@ /utils/components/textselect.py [customtext.py]
+
 
 extends = temp.pl
 
@@ -20,4 +20,5 @@ form =
 intro ==
 Ce quiz contient {{nbstep}} questions.
 ==
+
 
