@@ -7,7 +7,7 @@ author=
 text==
 
 Ecrire une fonction `identique_tab` qui reçoit deux tableaux d'entiers de même taille 
-et leur taille, et qui renvoie 1 si les deux tableaux sont identiques (même léments dans le même ordre) et 0 sinon<br>
+et leur taille, et qui renvoie 1 si les deux tableaux sont identiques (mêmes éléments dans le même ordre) et 0 sinon.<br>
 ==
 codebefore==
 
@@ -18,7 +18,7 @@ codebefore==
 ==
 
 editor.code==
-int identique_tab(...)
+int identique_tab(/* Paramètres*/)
 ==
 
 solution==
@@ -65,6 +65,7 @@ tests==
    ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,10))])],
   ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
 ==
+
 
 
 
