@@ -8,7 +8,7 @@ title = Tableau de multiplications
 
 text==
 On suppose qu'il existe deux variables `col` et `lin` de valeurs entières comprises entre 1 et 9
-représentant respectivement le nombre de colonne et le nombre de ligne d'un tableau.
+représentant respectivement le nombre de colonnes et le nombre de lignes d'un tableau.
 
 <br>
 Écrivez un programme qui construit une chaine de caractères représentant un tableau
@@ -20,8 +20,8 @@ Le tableau doit être formaté suivant ces règles :
 * Chaque colonne doit comprendre **deux caractères**, soit 2 chiffres (`"35"`),
   soit 1 chiffre suivi d'un espace (`"7 "`) ;
 * Les colonnes sont séparées par **deux espaces** ;
-* L'entête de colonne est séparée du tableau par des **tirets `-`** ;
-* L'entête de ligne est séparée du tableau par des **barres verticales `|`** (`[ALT GR]` + `[6]`) ;
+* L'entête de colonne est séparé du tableau par des **tirets `-`** ;
+* L'entête de ligne est séparé du tableau par des **barres verticales `|`** (`[ALT GR]` + `[6]`) ;
 * Afin de faciliter la création des boucles, chaque ligne doit se terminer par un espace,
   en plus de l'espace optionnel de la colonne (excepté le séparateur d'entête de ligne) ;
 * Le tableau est suivi d'une ligne vide (celle ajoutée par `print()`).
@@ -146,5 +146,6 @@ print(s)
 ==
 
 editor.height=400px
+
 
 
