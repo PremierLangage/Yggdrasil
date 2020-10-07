@@ -11,16 +11,16 @@ questions==
 
 
 
-=* What are the odd numbers ? 
+=*[nb=12] What are the odd numbers ? 
 +=[x for x in range(3,77) if x%2==1 ]
 -=[x for x in range(3,77) if x%2==0 ]
 
-=* What are the odd numbers ? 
+=*[nb=2] What are the odd numbers ? 
 +=[x for x in range(3,77) if x%2==1 ]
 -=[x for x in range(3,77) if x%2==0 ]
 
 
-=* What are the odd numbers ? 
+=*[nb=6] What are the odd numbers ? 
 +=[x for x in range(3,77) if x%2==1 ]
 -=[x for x in range(3,77) if x%2==0 ]
 
@@ -37,7 +37,7 @@ berk==
 
 ==
 
-title=title
+title= QCM de python 
 before == #|python|
 import random as rd
 from customradio import CustomRadio
