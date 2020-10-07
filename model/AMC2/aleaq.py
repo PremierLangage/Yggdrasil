@@ -41,8 +41,8 @@ def buildquestion(question):
             # INSERER good quelque part et noter l'index 
             index=random.randint(0,len(bads))
             bads.insert(index,good)
-            q.set('index')=index
-            q.set("items")=bads
+            q['index']=index
+            q["items"]=bads
         return q
 
         
