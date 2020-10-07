@@ -39,7 +39,7 @@ def buildquestion(question):
             bads= random.sample(bads , nb-1) # en choisir n-1
             random.shuffle(bads)
             # INSERER good quelque part et noter l'index 
-            index=random.randint(0,len(bads)
+            index=random.randint(0,len(bads))
             bads.insert(index,good)
             q.set('index')=index
             q.set("items")=bads
