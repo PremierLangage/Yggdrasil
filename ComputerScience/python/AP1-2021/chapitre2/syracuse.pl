@@ -24,7 +24,7 @@ part d’un nombre entier plus grand que zéro ; s’il est pair, on le divise p
 
 Cette suite atteint 1 quelle que soit la valeur initiale. (Ceci n'a jamais été démontré !!!)
 
-Ecrire un programme qui lit un entier naturel et qui calcule et affiche les éléments de la suite jusqu'a atteindre la valeur 1 (inclue).
+Ecrire un programme qui lit un entier naturel et qui calcule et affiche les éléments de la suite jusqu'a atteindre la valeur 1 (incluse).
 
 ==
 
