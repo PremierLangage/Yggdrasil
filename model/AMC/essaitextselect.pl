@@ -8,7 +8,7 @@ settings.cumulative % false
 questions==
 *+ Choisir les annimaux
 
-> the red [fox] run over the fence
+> {the} red {{fox}} run over the fence
 
 * radio 
 + vraie 
