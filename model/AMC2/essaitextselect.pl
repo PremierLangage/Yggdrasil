@@ -14,7 +14,7 @@ questions==
 
 =**[nbb=2,nbg=2] Indiquer les identifiants correctes
 +=["un","deux","ident","prout"]
--=["666","aujourd'hui", "def", "<html>"] 
+-=["666","aujourd'hui", "def", "@lt;html@gt;"] 
 -=["!autres","truc%","pour ris"]
 - for
 - in
