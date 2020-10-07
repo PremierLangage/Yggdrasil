@@ -49,6 +49,7 @@ def buildquestion(question):
     try:
         d=optiondic(question.get('options'))
         nb =int(d.get("nb",4))
+        if question.get('type') == 'TextSelect' :
         if question.get('type') == 'Radio' :
             bonne=question.get('index')
             labonne=question.get('items')[bonne]
