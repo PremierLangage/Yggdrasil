@@ -44,6 +44,7 @@ def buildquestion(question):
                         bads.extend(eval(defi[1:]))# ensemble des mauvaises réponces 
                 else:
                     bads.append(defi)
+            question['text']=str(bads)
             bads= random.sample(bads , nb-1) # en choisir n-1
             random.shuffle(bads)
             # INSERER good quelque part et noter l'index 
