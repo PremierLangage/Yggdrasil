@@ -1,40 +1,45 @@
-# Copyright 2018 Nicolas Borie <nicolas.borie@u-pem.fr>
+
+#*****************************************************************************
+#  Copyright (C) 2018 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Somme des chiffres d'un nombre
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Somme des chiffres d'un nombre
-tag=function|recursion|array
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=fonction|recursion|arithmétique
 
 text==
+Écrire une fonction récursive qui prend en argument un entier long 
+non signé et  qui calcule la somme des chiffres
+apparaissant dans ce nombre écrit en base $% 10 %$. Mais cette somme 
+de chiffres est à réitérer jusqu'à qu'il ne reste qu'un seul chiffre.
 
-Écrire une fonction récursive qui calculer la somme des chiffres
-apparaissant dans un nombre donné en base $% 10 %$.
+Voici un exemple, pour le nombre 9754916347, votre fonction devra retourner 3.
+Pourquoi 3, et bien parce que :
 
-Pourquoi récursive ?  
-Parce que pour calculer la somme des chiffres d'un grand nombre, il
-suffit de calculer la somme des chiffres donnant le nombre de dizaines
-dans ce nombre (appel récursif) et ensuite d'ajouter le nombre
-d'unité.
+    9754916347 --> 9 + 7 + 5 + 4 + 9 + 1 + 6 + 3 + 4 = 48
+    48 --> 4 + 8 = 12
+    12 --> 1 + 2 = 3 (un seul chiffre)
 
-    somme total         = somme du nombre des dizaines + chiffre des unités
-    sum_number(726352)  =     sum_number(72635)        +        2   
-    sum_number(72635)   =     sum_number(7263)         +        5   
-    sum_number(7263)    =     sum_number(726)          +        3
-    sum_number(726)     =     sum_number(72)           +        6
-    sum_number(72)      =     sum_number(7)            +        2
-    sum_number(7)       =     7  (appel terminal)
-
-Il faut quand même un cas d'arrêt pour ne pas faire de récursion
-inifinie. On remarque rapidement que pour tout nombre positif
-strictement plus petit que 10, la somme de ces chiffre (forcément un
-seul chiffre), c'est lui même.
-
+Il ne faut pas hésiter à le code en plusieurs fonctions.
 ==
 
 editor.code==
-int sum_number(int n){
+int sum_number_rec(int n){
   ...
 }
 ==
@@ -46,6 +51,13 @@ int sum_number(int n){
     return n;
   return sum_number(n/10) + (n%10);
 }
+
+int sum_number_rec(int n){
+  if (n == sum_number(int n))
+    return n;
+  return sum_number_rec(sum_number(int n));
+}
+
 ==
 
 codeafter==
@@ -75,4 +87,5 @@ tests==
  ["Aléatoire", str(random.randint(1, 2000000000)), ""]]
 
 ==
+
 
