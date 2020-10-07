@@ -32,11 +32,18 @@ def buildquestion(question):
         nb =int(d.get("nb",4))
         if question.get('type') == 'Radio':
             bonne=question.get('index')
-            good=random.choice(eval(question.get('items')[bonne][1:]))# Une bonne réponce le [1:] c'est pour le '=' c'est bof FIXME 
+            labonne=question.get('items')[bonne]
+            if labonne[0]=="=" :
+                good=random.choice(eval(labonne[1:]))# Une bonne réponce le [1:] c'est pour le '=' c'est bof FIXME 
+            else:
+                good=labonne # question standard
             del question.get('items')[bonne]
             bads=[]
             for defi in question.get('items'):
-                bads.extend(eval(defi[1:]))# ensemble des mauvaises réponces 
+                if defi.startswith("="):
+                        bads.extend(eval(defi[1:]))# ensemble des mauvaises réponces 
+                else:
+                    bads.append(defi)
             bads= random.sample(bads , nb-1) # en choisir n-1
             random.shuffle(bads)
             # INSERER good quelque part et noter l'index 
