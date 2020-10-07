@@ -36,7 +36,7 @@ def buildlistes(g,b):
             ri.append(index)
             index=index+1
     if b:
-        r.extends()
+        r.extend(b)
     return r,ri
 
 def buildquestion(question):
