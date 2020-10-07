@@ -7,13 +7,13 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 author=
 text==
 
-Ecrire une fonction `est_croissante` qui reçoit un tableau de MAX entiers  et renvoie un entier indiquant
- si les entiers sont en ordre strictemnt croissant. <br>
+Ecrire une fonction `est_croissante` qui reçoit un tableau de MAX entiers  et renvoie 1
+ si les entiers sont en ordre strictement croissant, 0 sinon. <br>
 
  Exemple
 avec MAX valant 5
-si  tab contient $ -4,5,10,14,1$ `est_croissante(tab)` renvoie 0<br>
-s'il contient 5,6,8,75,82 `est_croissante(tab)` renvoie 1<br>
+si  tab contient $ -4,5,10,14,1 $ `est_croissante(tab)` renvoie 0<br>
+S'il contient 5,6,8,75,82 `est_croissante(tab)` renvoie 1<br>
 MAX est une macro-constante pré-définie
 
 ==
@@ -28,7 +28,9 @@ codebefore==
 ==
 
 editor.code==
-...est_croissante(...)
+/* Retour */ est_croissante(/* Paramètres */){
+
+}
 ==
 
 solution==
@@ -68,6 +70,7 @@ tests==
 ["croissante 3", ""," ".join([str(i) for i in range(MAX)])], ]
 ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(MAX)])], ]
 ==
+
 
 
 
