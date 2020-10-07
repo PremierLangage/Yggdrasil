@@ -38,14 +38,13 @@ Pourquoi 3, et bien parce que :
 Il ne faut pas hésiter à le code en plusieurs fonctions.
 ==
 
-editor.code==
+editor.code==#|c|
 int sum_number_rec(int n){
   ...
 }
 ==
 
-solution==
-
+solution==#|c|
 int sum_number(int n){
   if (n<10)
     return n;
@@ -57,10 +56,9 @@ int sum_number_rec(int n){
     return n;
   return sum_number_rec(sum_number(int n));
 }
-
 ==
 
-codeafter==
+code_after==#|c|
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -75,17 +73,16 @@ int main(int argc, char* argv[]){
 ==
 
 
-tests==
 
-[["Basique", "0", ""],
- ["Petit", "7", ""],
- ["PLein", "1234567", ""],
- ["Aléatoire", str(random.randint(1, 2000000000)), ""],
- ["Aléatoire", str(random.randint(1, 2000000000)), ""],
- ["Aléatoire", str(random.randint(1, 2000000000)), ""],
- ["Aléatoire", str(random.randint(1, 2000000000)), ""],
- ["Aléatoire", str(random.randint(1, 2000000000)), ""]]
-
+checks_args_stdin==#|python|
+[["Test basique", "0", ""],
+ ["Petit test", "7", ""],
+ ["Test PLein", "1234567", ""],
+ ["Test aléatoire", str(randint(1, 2000000000)), ""],
+ ["Test aléatoire", str(randint(1, 2000000000)), ""],
+ ["Test aléatoire", str(randint(1, 2000000000)), ""],
+ ["Test aléatoire", str(randint(1, 2000000000)), ""],
+ ["Test aléatoire", str(randint(1, 2000000000)), ""]]
 ==
 
 
