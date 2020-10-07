@@ -1,7 +1,7 @@
 
 
 
-title=tableau croissant
+title=Tableau Croissant
 tag=type
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author=
@@ -12,8 +12,8 @@ Ecrire une fonction `est_croissante` qui reçoit un tableau de MAX entiers  et r
 
  Exemple
 avec MAX valant 5
-si  tab contient $ -4,5,10,14,1 $ `est_croissante(tab)` renvoie 0<br>
-S'il contient 5,6,8,75,82 `est_croissante(tab)` renvoie 1<br>
+si  tab contient $%-4,5,10,14,1%$ `est_croissante(tab)` renvoie $%0%$<br>
+S'il contient $%5,6,8,75,82%$ `est_croissante(tab)` renvoie $%1%$<br>
 MAX est une macro-constante pré-définie
 
 ==
@@ -71,6 +71,7 @@ tests==
 ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(MAX)])] 
 ]
 ==
+
 
 
 
