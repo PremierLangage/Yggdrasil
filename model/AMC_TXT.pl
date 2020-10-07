@@ -39,8 +39,9 @@ for i, q in enumerate(list_questions):
         if 'ordered' not in q['options']:
             comp[i].shuffle()
     elif  q['type'] == 'TextSelect':
-        comp.append(CustomTextSelect())
+        #comp.append(CustomTextSelect())
         # Do some thing for text select ;)
+        pass
 ==
 
 intro ==
