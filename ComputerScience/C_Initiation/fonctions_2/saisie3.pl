@@ -9,7 +9,7 @@ title=Recherche d'entiers dans un float
 tag=Fonction|AppelFonction|TransmissionParametre|RetourFonction|TransmissionAdresse
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
-author= 
+
 text==
 Écrire une fonction *nextInteger* qui effectue la saisie d'un entier dans l'entrée standard (ce qui est tappé au clavier).
 
