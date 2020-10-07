@@ -14,10 +14,10 @@ import random
 
 def optiondic(l):
     d={}
-    if l:
-        for x in l:
-            k,v= x.split('=')
-            d[k]=v
+
+    for x in l:
+        k,v= x.split('=')
+        d[k]=v
     return d
 
 def buildquestion(question):
