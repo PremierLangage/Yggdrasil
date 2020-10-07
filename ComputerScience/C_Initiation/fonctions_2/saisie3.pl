@@ -15,7 +15,7 @@ text==
 
 Tant que la réponse de la fonction **scanf** est nulle, il faut faire un appel à **getchar** pour consommer le caractère qui n'est pas
 un digit (chiffre). 
-La fonction *nextInteger* reçoit l'adresse de l'entier qui stockera la réponse de scanf.
+La fonction *nextInteger* reçoit l'adresse de l'entier qui stockera la réponse de **scanf**.
 
  Si l'entrée standard est "toto4  77!!23" le programme principal appelera 4 fois la fonction *nextInteger*
   qui retournera 1 trois fois, puis zéro car il n'y a plus d'entiers l'entrée est vidée.
@@ -74,6 +74,7 @@ tests==
  ["Aléatoire","",'Vive '+' la L1 Math Info '.join([str(random.randint(1,4)),str(random.randint(11, 24)),str(random.randint(11, 24))])+" ."]
  ]
 ==
+
 
 
 
