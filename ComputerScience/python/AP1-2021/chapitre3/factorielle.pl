@@ -7,7 +7,7 @@ tag=Boucle|ForInRange|VariableIteration|BouclesImbriquees
 title = Factorielle
 
 text==
-On suppose qu'il existe une variables `n` de valeur entière strictement positive.  
+On suppose qu'il existe une variable `n` de valeur entière strictement positive.  
 
 Écrivez un programme qui affiche les `n+1` premières valeurs de la fonction factorielle
 sous la forme `n! = x` (une valeur par ligne).
@@ -60,6 +60,7 @@ del math
 # for i in range(n+1):
 #    print(str(i) + "!" + " = " + str(f))
 #    f*=i+1
+
 
 
 
