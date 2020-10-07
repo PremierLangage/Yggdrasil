@@ -1,7 +1,7 @@
 
 extends = /model/multistep.pl
 
-@ AMC2.py
+@ AMC2.py [AMC.py]
 
 settings.cumulative % false
 
