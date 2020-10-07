@@ -41,7 +41,6 @@ SELECTORS = {
     "RadioGroup": "c-radio-group",
     "SortList": "c-sort-list",
     "Text": "c-text",
-    #"TextSelect":"c-text-select",
     "TransfertList": "c-transfert-list"
 }
 
@@ -308,4 +307,5 @@ class TransfertList(Component):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.selector = 'c-transfert-list'
+
 
