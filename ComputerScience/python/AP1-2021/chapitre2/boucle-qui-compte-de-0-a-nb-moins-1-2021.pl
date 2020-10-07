@@ -4,7 +4,7 @@ tag=InstructionsRepetitives|ForInRange
 title = Boucle qui compte de 0 à `nb - 1`
 
 text==
-On suppose qu'il existe une variables `nb` désignant un entier strictement positif. 
+On suppose qu'il existe une variable `nb` désignant un entier strictement positif. 
 Écrire un programme dont l'exécution affiche sur la sortie standard les nombres de 
 `0` à `nb-1` (chacun suivi d'un retour à la ligne), à l'exclusion de tout autre caractère.
 
@@ -42,6 +42,7 @@ begin_test_group("Nombres aléatoires")
 from random import sample
 tests(sample(list(range(100, 200)), 5))
 ==
+
 
 
 
