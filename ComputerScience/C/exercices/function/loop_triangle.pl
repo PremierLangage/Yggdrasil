@@ -24,7 +24,7 @@ tag=function|boucle|for
 
 text==
 Écrire une fonction **ascii_triangle** qui prend en argument un entier
-et affiche un triangle avec des caractères étoile \* comme les
+et affiche un triangle avec des caractères étoile \* comme dans les
 exemples qui suivent :
 
 Pour n = 3, on devra voir
@@ -91,6 +91,7 @@ checks_args_stdin==#|python|
   ["Test aléatoire 1", [str(randint(5, 10))], ""],
   ["Test aléatoire 2", [str(randint(11, 15))], ""] ]    
 ==
+
 
 
 
