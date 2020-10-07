@@ -14,8 +14,9 @@ settings.cumulative % false
 questions==
 
 *+ Exo avec click sur un mot ici bonne est le bon mot 
-    *+ Choix select simple du mot 
+    <pre><code>*+ Choix select simple du mot 
     >j'indique avec des curly brackets la {bonne} réponse
+    </code></pre>
 Vous  pouvez en mettre plusieurs     
 >j'indique avec des curly brackets la {bonne} réponse
 
