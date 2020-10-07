@@ -8,8 +8,15 @@ settings.cumulative % false
 questions==
 *+ essai de text TextSelect
 
+> the red fox run over the fence
+
+* radio 
++ vraie 
+- faux 
 
 
+==
+title=title
 before == #|python|
 import random as rd
 from customradio import CustomRadio
@@ -30,15 +37,24 @@ statement  = []
 for i, q in enumerate(list_questions):
     if q['type'] == "Radio":
         comp.append(CustomRadio())
+        statement.append(q['text'])
+        comp[i].setitems(q['items'])
+        comp[i].setsol_from_index(q['index'])
+        if 'ordered' not in q['options']:
+            comp[i].shuffle()
     elif q['type'] == "Checkbox":
         comp.append(CustomCheckbox())
+        statement.append(q['text'])
+        comp[i].setitems(q['items'])
+        comp[i].setsol_from_index(q['index'])
+        if 'ordered' not in q['options']:
+            comp[i].shuffle()
     elif  q['type'] == 'TextSelect':
-        comp.append(CustomTextSelect())
-    statement.append(q['text'])
-    comp[i].setitems(q['items'])
-    comp[i].setsol_from_index(q['index'])
-    if 'ordered' not in q['options']:
-        comp[i].shuffle()
+        cst = CustomTextSelect()
+        statement.append(q['text'])
+        cst.settext(q['items'][0])
+        comp.append(cst)
+
 ==
 
 intro ==
