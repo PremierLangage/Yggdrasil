@@ -7,7 +7,7 @@ from scoring import *
 class CustomTextSelect(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-text'
-        self.decorator = 'CustomText'
+        self.decorator = 'CustomTextSelect'
         self.text = ""
         self._sol = []
         super().__init__(**kwargs)
@@ -96,3 +96,4 @@ class CustomTextSelect(Component):
             self.disabled = True
 
         return score
+
