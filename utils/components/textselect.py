@@ -33,7 +33,7 @@ class CustomTextSelect(Component):
     def setdata_from_text(self,text):
         self.text, self._sol = self.index_bracket(self.bracket(text))
         self.text= stripCurly(self.text)
-         
+
     @staticmethod
     def bracket(string):
         """
@@ -91,6 +91,9 @@ class CustomTextSelect(Component):
         right = list(set(indexselect).intersection(set(self._sol)))
         wrong = list(set(indexselect).difference(set(self._sol)))
         missed = list(set(self._sol).difference(set(indexselect)))
+
+        if len(self._sol)==0:
+            return 100
 
         if display:
             self.selections = [{'index': k, 'css': 'success-state'} for k in right]
