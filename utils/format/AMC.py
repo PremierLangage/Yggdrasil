@@ -35,6 +35,15 @@ def parse_AMC_TXT(txt):
                 index.append(k)
             k += 1
         
+        elif line.startswith(">"): # special text select 
+            items.append(line.lstrip("> "))
+            questions.append({'type': question_type, 
+            'text': statement, 
+            'items': items, 
+            'index': [], 
+            'options': options
+            })
+            pending = False
         elif pending and k == 0:
             if line == "":
                 statement += "\n"
