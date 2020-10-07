@@ -25,7 +25,7 @@ tag=function|pointer|variable
 text==
 Écrire une function **cube_it** qui prend l'adresse d'un entier (pointeur vers 
 un entier) et remplace la valeur pointée par son cube (c'est à dire l'ancienne 
-valeur élevé à la puissance 3). Faire un choix cohérent pour le prototype de 
+valeur élevée à la puissance 3). Faire un choix cohérent pour le prototype de 
 la fonction.
 ==
 
@@ -71,4 +71,5 @@ checks_args_stdin==
  ["Test aléatoire 3", [str(randint(-100, 100))], ""],
  ["Test aléatoire 4", [str(randint(-100, 100))], ""]]
 ==
+
 
