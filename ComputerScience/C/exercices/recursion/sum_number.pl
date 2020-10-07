@@ -83,7 +83,7 @@ checks_args_stdin==#|python|
 [["Test basique", ["0"], ""],
  ["Petit test", ["7"], ""],
  ["Test pLein", ["1234567"], ""],
- ["Test exemple", ["9754916347"], ""],
+ ["Test exemple", ["975491634"], ""],
  ["Test aléatoire 1", [str(randint(1, 2000000000))], ""],
  ["Test aléatoire 2", [str(randint(1, 2000000000))], ""],
  ["Test aléatoire 3", [str(randint(1, 2000000000))], ""],
