@@ -12,9 +12,11 @@ def parse_AMC_TXT(txt):
         if line.startswith('*'):
             if line.startswith('**'):
                 question_type = "Checkbox"
+            elif line.startswith('*+'):
+                question_type = "TextSelect"
             else:
                 question_type = "Radio"
-            line = line.lstrip("* ")
+            line = line.lstrip("*+ ")
             if line.startswith('['):
                 r0 = line.find(']')
                 options = [option.strip() for option in line[1:r0].split(',')]
@@ -53,4 +55,5 @@ def parse_AMC_TXT(txt):
             pending = False
 
     return questions
+
 
