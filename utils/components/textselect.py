@@ -4,6 +4,18 @@ import random as rd
 import re
 from scoring import *
 
+def stripCurly(t):
+    """
+    >>> stripCurly(" des trucs avec des {} {tt} voila ")
+    ' des trucs avec des  tt voila '
+
+    """
+    l=t.split('{')
+    t= "".join(l)
+    l = t.split('}')
+    return  "".join(l)
+    # Pour le fun : return "".join("".join(t.split('{')).split('}'))
+    
 class CustomTextSelect(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-text'
@@ -20,7 +32,8 @@ class CustomTextSelect(Component):
 
     def setdata_from_text(self,text):
         self.text, self._sol = self.index_bracket(self.bracket(text))
-        
+        self.text= stripCurly(self.text)
+         
     @staticmethod
     def bracket(string):
         """
@@ -29,6 +42,9 @@ class CustomTextSelect(Component):
         Parts between square brackets are stripped from these enclosing brackets.
         Parts between curly brackets or double curly brackets are left unchanged.
         In remaining parts, words are enclosed in curly brackets.
+        >>> bracket("Bande de [moules] a {gauffres} et à {{cahuettes}}")
+        '{Bande} {de} moules {a} {gauffres} {et} {à} {{cahuettes}}'
+    
         """
         # split the text
         pattern = r"\{[^\{\}]*\}|\{\{[^\}]*\}\}|\[[^\]]*\]|[^\{\}\[\]]+"
