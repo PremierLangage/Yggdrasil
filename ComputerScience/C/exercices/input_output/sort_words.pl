@@ -1,14 +1,27 @@
-# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2019 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Trier des mots lus sur l'entrée standard.
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Trier des mots lus sur l'entrée standard
 tag=input_output|string|array
-extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-
 Écrire un programme qui lit des mots sur l'entrée standard puis réécrit 
 ces mots sur la sortie standard (un par ligne) mais de manière triée. Il y 
 aura au plus 100 mots sur l'entrée standard et chacun de ces mots comportera 
@@ -102,5 +115,6 @@ tests==
  ["Quelques mots", "", "Pommes\nPoires\nPatates\nPeche\nBanane\nFraise\nCerise\nPrune\nAbricot\nTomate\nRadis"],
  ["Aléatoire", "", "".join(["".join([chr(random.randint(97, 122)) for i in range(random.randint(1, 20))])+"\n" for j in range(10, 100)])]]
 ==
+
 
 
