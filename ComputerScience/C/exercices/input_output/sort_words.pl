@@ -19,7 +19,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 author=Nicolas Borie
 
 title=Trier des mots lus sur l'entrée standard
-tag=input_output|string|array
+tag=input_output|string|tableaux|difficile|entrées|sorties|tri
 
 text==
 Écrire un programme qui lit des mots sur l'entrée standard puis réécrit 
@@ -28,14 +28,14 @@ aura au plus 100 mots sur l'entrée standard et chacun de ces mots comportera
 au plus 63 caractères.
 
 
-Par exemple, si l'entrée standard contient
+Par exemple, si l'entrée standard contient :
 
     Pommes
     Poires
     Patates
     Peche
 
-Alors votre programme devra afficher
+Alors votre programme devra afficher :
 
     Patates
     Peche
@@ -44,17 +44,15 @@ Alors votre programme devra afficher
 
 ==
 
-editor.code==
+editor.code==#|c|
 #include ...
 
 int main(int argc, char* argv[]){
   /* ...votre code ici... */
 }
-
 ==
 
-solution==
-
+solution==#|c|
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -106,15 +104,20 @@ int main(int argc, char* argv[]){
 
   return 0;
 }
-
 ==
 
-tests==
-[["Basique", "", "Pommes\nPoires\nPatates\nPeche\n"], 
- ["Un mot", "", "Bonjour\n"],
- ["Quelques mots", "", "Pommes\nPoires\nPatates\nPeche\nBanane\nFraise\nCerise\nPrune\nAbricot\nTomate\nRadis"],
- ["Aléatoire", "", "".join(["".join([chr(random.randint(97, 122)) for i in range(random.randint(1, 20))])+"\n" for j in range(10, 100)])]]
+code_before==#|c|
 ==
 
+code_after==#|c|
+==
 
+checks_args_stdin==#|python|
+[["Basique", [], "Pommes\nPoires\nPatates\nPeche\n"], 
+ ["Un mot", [], "Bonjour\n"],
+ ["Quelques mots", [], "Pommes\nPoires\nPatates\nPeche\nBanane\nFraise\nCerise\nPrune\nAbricot\nTomate\nRadis"],
+ ["Test aléatoire 1", [], "".join(["".join([chr(random.randint(97, 122)) for i in range(random.randint(1, 20))])+"\n" for j in range(10, 100)])],
+ ["Test aléatoire 2", [], "".join(["".join([chr(random.randint(97, 122)) for i in range(random.randint(1, 20))])+"\n" for j in range(10, 100)])],
+ ["Test aléatoire 3", [], "".join(["".join([chr(random.randint(97, 122)) for i in range(random.randint(1, 20))])+"\n" for j in range(10, 100)])] ]
+==
 
