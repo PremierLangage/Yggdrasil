@@ -33,7 +33,8 @@ Ecrire un programme qui :
 
 * affiche le nombre de façons différentes d'obtenir ce nombre de points avec 10 fléchettes.
 <br>
-<br>
+
+
 **Par exemple:**
 <br>
 Si l'entrée vaut `50` alors le programme doit afficher `Il y a 1 façon(s) d'obtenir 50`.
