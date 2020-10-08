@@ -10,10 +10,9 @@ questions==
 
 * soir le code suivant combien d'erreur comptez vous ?
 
-    <span style="font-family:Courrier;">
-    printf("%d",3)
-    a= b+1
-    </span>
+    1. printf("%d",3)
+    2. a= b+1
+    
 
 - 0
 - 1
