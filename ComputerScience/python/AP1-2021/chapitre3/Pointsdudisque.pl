@@ -11,8 +11,8 @@ title = Points du disque
 
 text==  
 
-Ecrire un programme qui force la saisie d'un réel strictement positif **d**
-puis affiche le nombre de points à coordonnées entières situés à l'intérieur strictement du disque de rayon **d**.
+Ecrire un programme qui force la saisie d'un réel strictement positif `d`
+puis affiche le nombre de points à coordonnées entières situés à l'intérieur strictement du disque de rayon `d`.
 
 <br>
 Exemple :
