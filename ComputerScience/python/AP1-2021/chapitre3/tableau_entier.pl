@@ -1,7 +1,6 @@
 extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
 
 #author = Quentin Coumes
-author = 
 
 tag=boucleImbriquees|forInRange|affichageDeuxDimensions
 
@@ -99,6 +98,7 @@ for i in range(1, n*n+1):
     else:
         print("")
 ==
+
 
 
 
