@@ -1,12 +1,8 @@
-
 title=Tableau Croissant
 tag=type
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
 text==
-
-
-
 
 Ecrire une fonction `est_croissante` qui reçoit un tableau de taille MAX et renvoie 1
  si les entiers sont en ordre strictement croissant, 0 sinon. <br>
@@ -71,8 +67,6 @@ tests==
 ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(MAX)])] 
 ]
 ==
-
-
 
 
 
