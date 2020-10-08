@@ -16,8 +16,13 @@ puis affiche le nombre de points à coordonnées entières situés à l'intérie
 
 <br>
 Exemple :
-<br>
-<pre>
+
+* <pre>
+Entrez un réel strictement positif: -2
+Entrez un réel strictement positif: 24.32
+Il y a 1861 points à coordonnées entières
+</pre>
+* <pre>
 Entrez un réel strictement positif: -2
 Entrez un réel strictement positif: 24.32
 Il y a 1861 points à coordonnées entières
@@ -25,7 +30,7 @@ Il y a 1861 points à coordonnées entières
 ==
 
 code==
-??=float(input("Entrez un réel strictement positif: "))
+d = float(input("Entrez un réel strictement positif: "))
 
 ==
 
