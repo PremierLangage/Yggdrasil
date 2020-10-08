@@ -58,27 +58,6 @@ int place_noire(char plateau[][COLONNES],int x,int y){
   plateau[x][y]=1;
   return 1;
 }
-int place_mot(char plateau[][COLONNES],int x,int y,char m[],char dest){
-  int i,j,l;
-  
-  l=strlen(m);
-  if (dest=='h'){
-    for(i=0;i<l;i++) 
-      if(x<0 || x>=LIGNES||y+i<0||y+i>=COLONNES|| plateau[x+i][y]==1||(plateau[x][y+i]!=0 && plateau[x][y+i]!=m[i] ))
-      	return 0;
-    for(i=0;i<l;i++)
-       plateau[x][y+i]=m[i];
-    return 1;
-  }
-  if (dest=='v'){
-    for(i=0;i<l;i++)
-      if(x+i<0 || x+i>=LIGNES||y<0||y>=COLONNES|| plateau[x+i][y]==1||(plateau[x+i][y]!=0 && plateau[x+i][y]!=m[i] ))
-      	return 0;
-    for(i=0;i<l;i++)
-       plateau[x+i][y]=m[i];
-   return 1;
- }
-}
 
 ==
 
