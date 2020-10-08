@@ -66,13 +66,13 @@ code_after==#|c|
 
 checks_args_stdin==#|python|
 [["Simple test", ["3.141592"], ""],
- ["Pas d'argument", [], ""],
- ["6 arguments triviaux", ["1.0", "1.0", "1", "1", "1.0000", "1."], ""],
- ["Aléatoire", [str(10*(random()-0.5)) for i in range(randint(2,6))], ""],
- ["Aléatoire", [str(20*(random()-0.5)) for i in range(randint(5,10))], ""],
- ["Aléatoire", [str(100*(random()-0.5)) for i in range(randint(2,6))], ""],
- ["Aléatoire", [str(200*(random()-0.5)) for i in range(randint(5,10))], ""],
- ["Aléatoire", [str(200*(random()-0.5)) for i in range(randint(5,10))], ""]]
+ ["Test sans argument", [], ""],
+ ["Avec 6 arguments triviaux", ["1.0", "1.0", "1", "1", "1.0000", "1."], ""],
+ ["Test aléatoire 1", [str(10*(random()-0.5)) for i in range(randint(2,6))], ""],
+ ["Test aléatoire 2", [str(20*(random()-0.5)) for i in range(randint(5,10))], ""],
+ ["Test aléatoire 3", [str(100*(random()-0.5)) for i in range(randint(2,6))], ""],
+ ["Test aléatoire 4", [str(200*(random()-0.5)) for i in range(randint(5,10))], ""],
+ ["Test aléatoire 5", [str(200*(random()-0.5)) for i in range(randint(5,10))], ""]]
 ==
 
 
