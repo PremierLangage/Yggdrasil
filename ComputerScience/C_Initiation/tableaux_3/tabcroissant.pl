@@ -32,7 +32,6 @@ for(;i<MAX;i+=1){
 ==
 
 codeafter==
-#define MAX 5
 int main(int argc, char* argv[]){
   int tab[MAX];
   
