@@ -48,7 +48,9 @@ En effet, il n'y a qu'un triplet de Pythagore inférieur à 6: (3, 4, 5)
 <br>
 <br>
 Si l'entrée vaut `11` alors le programme doit afficher `il y a 2 triplet(s) inférieur(s) à 11`.
+
 En effet, Il y a 2 triplets de Pythagore inférieurs à 11:
+
 * (3, 4, 5)
 * (6, 8, 10)
 
