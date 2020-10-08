@@ -49,6 +49,7 @@ void affiche(char tab[][COLONNES]){
     printf("\n");
       }
 }
+
 ==
 
 editor.code==
