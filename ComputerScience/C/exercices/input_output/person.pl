@@ -30,7 +30,7 @@ ans. <prénom>, <nom> et <age> devront être correctement substitué.
 
 ==
 
-editor.height=300px
+editor.height=350px
 
 editor.code==#|c|
 #include ...
