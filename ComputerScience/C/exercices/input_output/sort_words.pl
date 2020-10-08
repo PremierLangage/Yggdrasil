@@ -44,7 +44,7 @@ Alors votre programme devra afficher :
 
 ==
 
-editor.height=400px
+editor.height=500px
 
 editor.code==#|c|
 #include ...
