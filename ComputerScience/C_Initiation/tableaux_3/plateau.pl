@@ -69,7 +69,7 @@ lg=plateau(tab,size,&deb);
 }
 ==
 
-# L'aléatoire peut sortir des trucs comme "1566666666666666-2"
+# L'aléatoire ne peut plus sortir des trucs comme "1566666666666666-2"
 tests==
 [ ["simple éxécution", "","1 2  2 4 5"],
   ["avec deux ", "","-1 -2"],
