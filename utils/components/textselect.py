@@ -35,8 +35,8 @@ class CustomTextSelect(Component):
         self.text= stripCurly(self.text)
 
     def setdata_from_textDR(self,text):
-        self._sol = [i for i,x in enumerate(text.split("\S+")) if x.startswith("{{") and x.endswith("}}")]
-        self.text= stripCurly(self.text)
+        self._sol = [i for i,x in enumerate(text.split(" ")) if x.startswith("{{") and x.endswith("}}")]
+        self.text= stripCurly(text)
 
 
     @staticmethod
