@@ -1,6 +1,6 @@
 extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
 
-author = Quentin Coumes
+#author = Quentin Coumes
 
 tag=doubleBoucle|forInRange|affichageDeuxDimensions
 
@@ -146,6 +146,7 @@ print(s)
 ==
 
 editor.height=400px
+
 
 
 
