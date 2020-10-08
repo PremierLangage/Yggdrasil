@@ -4,7 +4,7 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
-title = Jeu de flechette
+title = Jeu de fléchette
 
 code==
 n = int(input("Un nombre : "))
@@ -17,7 +17,7 @@ print("Il y a",nb,"façon(s) d'obtenir",n)
 taboo=import
 
 text==  
-Une cible de flechettes contient 3 zones:
+Une cible de fléchettes contient 3 zones:
 
 * 1 points<br>
 * 2 points<br>
