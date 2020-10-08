@@ -78,8 +78,6 @@ int main(int argc, char* argv[]){
 }
 ==
 
-
-
 checks_args_stdin==#|python|
 [["Test basique", ["0"], ""],
  ["Petit test", ["7"], ""],
@@ -91,6 +89,4 @@ checks_args_stdin==#|python|
  ["Test aléatoire 4", [str(randint(1, 2000000000000000000))], ""],
  ["Test aléatoire 5", [str(randint(1, 2000000000000000000))], ""]]
 ==
-
-
 
