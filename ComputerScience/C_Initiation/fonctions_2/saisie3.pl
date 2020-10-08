@@ -4,7 +4,7 @@
 
 author=
 
-title=Recherche d'entiers dans un flot alphanumérique
+title=Recherche d'entiers dans un flux alphanumérique
 
 tag=Fonction|AppelFonction|TransmissionParametre|RetourFonction|TransmissionAdresse
 
