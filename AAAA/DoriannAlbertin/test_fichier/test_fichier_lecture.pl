@@ -4,7 +4,6 @@ title= Lecture
 # Seule la randomisation plante
 
 # extends=/ComputerScience/python/template/soluce.pl
-
 extends=/ComputerScience/python/AP1-1920/templates/prosoluce.pl
 
 @ /utils/sandboxio.py
@@ -13,19 +12,20 @@ extends=/ComputerScience/python/AP1-1920/templates/prosoluce.pl
 
 before==
 from random import randint
-k = randint(1,6)
+soluce= presoluce.format(k=randint(1,6))
 
-soluce= f"""
-fichier = open("test_text.txt", 'r')
-lines = fichier.readlines()
-print(lines[{k}-1])
-fichier.close()
 """
 
 
 
 ==
 
+presoluce==
+fichier = open("test_text.txt", 'r')
+lines = fichier.readlines()
+print(lines[{k}-1])
+fichier.close()
+==
 
 text==
 
