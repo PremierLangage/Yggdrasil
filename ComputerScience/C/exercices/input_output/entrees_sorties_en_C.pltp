@@ -18,10 +18,12 @@ sur une même machine.
 ==
 
 @ /ComputerScience/C/exercices/input_output/sum_int_stdin.pl
+@ /ComputerScience/C/exercices/input_output/sentence_stdin.pl
 @ /ComputerScience/C/exercices/input_output/person.pl
 @ /ComputerScience/C/exercices/input_output/prod_args_float.pl
 @ /ComputerScience/C/exercices/input_output/ints_on_stdin.pl
 @ /ComputerScience/C/exercices/input_output/nb_char_stdin.pl
+@ /ComputerScience/C/exercices/input_output/guess_input.pl
 @ /ComputerScience/C/exercices/input_output/summary_stdin.pl
 @ /ComputerScience/C/exercices/input_output/sort_words.pl
 
