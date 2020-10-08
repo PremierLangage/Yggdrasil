@@ -33,6 +33,8 @@ Pour information, un produit vide (comme tout nombre à la puissance zéro) vaut
 
 ==
 
+editor.height=300px
+
 editor.code==#|c|
 #include ...
 
