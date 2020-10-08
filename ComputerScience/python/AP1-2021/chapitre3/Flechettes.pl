@@ -22,15 +22,15 @@ Une cible de flechettes contient 3 zones:
 * 1 points<br>
 * 2 points<br>
 * 5 points<br>
-toute fléchette en dehors compte pour 0 points<br>
+Toute fléchette en dehors compte pour 0 points<br>
 
 On cherche à déterminer le nombre de façons d'obtenir un entier donné avec 10 fléchettes.<br>
 <br>
 Ecrire un programme qui :
 
-* force la lecture d'un entier compris entre 0 et 50
+* force la lecture d'un entier compris entre 0 et 50;
 
-* affiche le nombre de façons d'obtenir ce nombre de points avec 10 fléchettes 
+* affiche le nombre de façons d'obtenir ce nombre de points avec 10 fléchettes.
 
 
 ==
