@@ -32,6 +32,10 @@ Ecrire un programme qui :
 * force la lecture d'un entier compris entre 0 et 50 qui représente le nombre de points à atteindre;
 
 * affiche le nombre de façons différentes d'obtenir ce nombre de points avec 10 fléchettes.
+<br>
+<br>
+**Par exemple:**
+
 
 
 ==
