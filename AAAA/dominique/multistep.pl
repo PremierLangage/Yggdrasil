@@ -59,20 +59,20 @@ evaluator==
 
 q=question[step]
 
-    if q['type'] == "Radio":
-        radio.setitems(q['items'])
-        radio.setsol_from_index(q['index'])
-        if 'ordered' not in q['options']:
-            radio.shuffle()
-    elif q['type'] == "Checkbox":
-        check.append(CustomCheckbox())
-        check.setitems(q['items'])
-        check.setsol_from_index(q['index'])
-        if 'ordered' not in q['options']:
-            check.shuffle()
-    elif  q['type'] == 'TextSelect':
-        statement.append(q['text'])
-        ztext.setdata_from_textDR(q['items'][0])
+if q['type'] == "Radio":
+    radio.setitems(q['items'])
+    radio.setsol_from_index(q['index'])
+    if 'ordered' not in q['options']:
+        radio.shuffle()
+elif q['type'] == "Checkbox":
+    check.append(CustomCheckbox())
+    check.setitems(q['items'])
+    check.setsol_from_index(q['index'])
+    if 'ordered' not in q['options']:
+        check.shuffle()
+elif  q['type'] == 'TextSelect':
+    statement.append(q['text'])
+    ztext.setdata_from_textDR(q['items'][0])
 
 
 ==
