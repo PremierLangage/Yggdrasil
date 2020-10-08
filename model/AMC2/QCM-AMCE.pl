@@ -75,7 +75,7 @@ from customcheckbox import CustomCheckbox
 from customtextselect import CustomTextSelect
 from AMC import parse_AMC_TXT
 
-from aleaq import buildquestion
+from aleaq import buildquestion, onefromeachgroup
 
 list_questions = parse_AMC_TXT(questions)
 
@@ -83,6 +83,8 @@ if 'nbstep' in globals():
     list_questions = rd.sample(list_questions, nbstep)
 else:
     nbstep = len(list_questions)
+if "onepergroup" in globals() and onepergroup :
+    list_questions=onefromeachgroup(list_questions)
 
 comp = []
 statement  = []
@@ -127,6 +129,7 @@ formstep ==
 evaluatorstep ==
 score = comp[step].eval()
 ==
+
 
 
 
