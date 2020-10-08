@@ -60,7 +60,8 @@ checks_args_stdin==#|python|
 [["Test basique", [], "Je vais a la plage.\n"],
  ["Entrée standard vide", [], ""],
  ["Ligne vide mais existante", [], "\n"],
- ["Entrée sur deux lignes", [], "Ceci est une premiere ligne a afficher.\nCeci est une seconde ligne inutile dans cet exercice.\n"]]
+ ["Entrée sur deux lignes", [], "Ceci est une premiere ligne a afficher.\nCeci est une seconde ligne inutile dans cet exercice.\n"],
+ ["Poême d'Apollinaire", [], "Poisson pourri de Salonique\nLong collier des sommeils affreux\nD'yeux arrachés à coup de pique\nTa mère fit un pet foireux\nEt tu naquis de sa colique\n"],]
 ==
 
 
