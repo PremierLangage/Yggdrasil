@@ -145,13 +145,15 @@ STALINE
 O1ASPEN
 NORDEST
 
-Perec ==
+Perec 
+==
 
 
 tests==
 [ ["simple éxécution", "","2 10 tot 0 0 h "],
 , ]
 ==
+
 
 
 
