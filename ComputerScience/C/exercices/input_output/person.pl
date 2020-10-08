@@ -27,11 +27,9 @@ caractères ainsi qu'un entier donné au clavier durant l'exécution du
 programme. Une fois les données récupérées, le programme affichera les
 données avec la phrase : 
 
-<br />
 
 Bonjour `<prénom>` `<nom>`, vous avez `<age>`ans. 
 
-<br />
 
 `<prénom>`, `<nom>` et `<age>` devront être correctement substitué.
 
