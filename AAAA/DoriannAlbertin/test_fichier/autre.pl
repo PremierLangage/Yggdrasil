@@ -24,6 +24,7 @@ fichier.close()
 
 ==
 
+front=
 
 text==
 
