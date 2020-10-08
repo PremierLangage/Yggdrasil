@@ -10,7 +10,7 @@ extends=/ComputerScience/python/template/soluce.pl
 
 before==
 from random import randint
-k = 1
+k = randint(1,6)
 ==
 
 
@@ -23,7 +23,7 @@ Ecrire un programme qui lit la {{k}}-ième ligne du fichier test_text.txt et la 
 soluce==
 fichier = open("test_text.txt", 'r')
 lines = fichier.readlines()
-print(lines[0])
+print(lines[k-1])
 fichier.close()
 ==
 
