@@ -18,14 +18,14 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
 
-title=Somme des chiffres d'un nombre
+title=Somme récursive des chiffres d'un grand entier
 tag=fonction|recursion|arithmétique
 
 text==
 Écrire une fonction récursive qui prend en argument un entier long 
 non signé et  qui calcule la somme des chiffres
 apparaissant dans ce nombre écrit en base $% 10 %$. Mais cette somme 
-de chiffres est à réitérer jusqu'à qu'il ne reste qu'un seul chiffre.
+de chiffres est à réitérer jusqu'à qu'il ne reste plus qu'un seul chiffre.
 
 Voici un exemple, pour le nombre 9754916347, votre fonction devra retourner 3.
 Pourquoi 3, et bien parce que :
@@ -36,6 +36,7 @@ Pourquoi 3, et bien parce que :
     48 --> 4 + 8 = 12
     12 --> 1 + 2 = 3 (un seul chiffre)
 
+Pour cette exemple, il a fallut opérer trois passes de somme des chiffres 
 Il ne faut pas hésiter à le code en plusieurs fonctions.
 
 <br />
