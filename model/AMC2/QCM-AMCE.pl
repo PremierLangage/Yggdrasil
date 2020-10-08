@@ -17,9 +17,7 @@ onepergroup % true
 questions==
 
 *+ Exo avec click sur un mot ici bonne est le bon mot 
-    *+ Choix select simple du mot 
-    >j'indique avec des curly brackets la {bonne} réponse
-Vous  pouvez en mettre plusieurs     
+ Vous  pouvez en mettre plusieurs     
 >j'indique avec des curly brackets la {bonne} réponse
 
 ==
