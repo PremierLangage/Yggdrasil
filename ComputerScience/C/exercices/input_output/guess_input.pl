@@ -156,7 +156,17 @@ checks_args_stdin==#|python|
 [["Test basique 1", [], "Pelle\n"],
  ["Test basique 2", [], "421\n"],
  ["Test basique 3", [], "3.141592\n"],
- ["Test basique 4", [], "13baobab.234\n"]]
+ ["Test basique 4", [], "13baobab.234\n"],
+ ["Test aléatoire 1", [], choice(["Koala", "bonjour", "PouetPouet", "RAGEQUIT"])],
+ ["Test aléatoire 2", [], choice(["Koala", "bonjour", "PouetPouet", "RAGEQUIT"])],
+ ["Test aléatoire 3", [], choice(["421", "-3457", "12pouet", "24.12.34", "0921"])],
+ ["Test aléatoire 4", [], choice(["421", "-3457", "12pouet", "24.12.34", "0921"])],
+ ["Test aléatoire 5", [], choice(["0.34", "56.2134", "0.0000001", "000.12", ".765", "231."])],
+ ["Test aléatoire 6", [], choice(["0.34", "56.2134", "0.0000001", "000.12", ".765", "231."])],
+ ["Test aléatoire 7", [], choice(["0.34", "56.2134", "0.0000001", "000.12", ".765", "231."])],
+ ["Test aléatoire 8", [], choice(["pouet.foo", "bar.12", "pouet", "12.foo", "8624126374", "05243"])],
+ ["Test aléatoire 9", [], choice(["pouet.foo", "bar.12", "pouet", "12.foo", "8624126374", "05243"])],
+ ["Test aléatoire 10", [], choice(["pouet.foo", "bar.12", "pouet", "12.foo", "8624126374", "05243"])]]
 ==
 
 
