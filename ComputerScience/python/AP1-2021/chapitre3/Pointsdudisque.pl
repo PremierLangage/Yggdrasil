@@ -27,9 +27,7 @@ Entrez un réel strictement positif: 24.32
 Il y a 1861 points à coordonnées entières
 </pre>
 
-Indice :
-
-La distance d'un point de coordonnées **(x, y)** à l'origine du repère **(0, 0)** est l 
+*Indice : La distance d'un point de coordonnées **(x, y)** à l'origine du repère **(0, 0)** est la racine de **x² + y²** 
 ==
 
 code==
