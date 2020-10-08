@@ -13,7 +13,7 @@ extends=/ComputerScience/python/AP1-1920/templates/prosoluce.pl
 before==
 from random import randint
 k=randint(1,6)
-soluce= presoluce.format(k)
+soluce= presoluce.format(k=k)
 ==
 
 presoluce==
@@ -24,7 +24,7 @@ print(lines[{k}-1])
 
 text==
 
-Ecrire un programme qui lit la {{k}}-ième ligne du fichier "test_text.txt" et la print.
+Ecrire un programme qui lit la **{{k}}-ième** ligne du fichier "test_text.txt" et la print.
 
 
 ==
