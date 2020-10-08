@@ -25,8 +25,8 @@ text==
 Compléter le programme suivant pour qu'il récupère deux chaines de
 caractères ainsi qu'un entier donné au clavier durant l'exécution du
 programme. Une fois les données récupérées, le programme affichera les
-données avec la phrase : Bonjour <prénom> <nom>, vous avez <age>
-ans. <prénom>, <nom> et <age> devront être correctement substitué.
+données avec la phrase : Bonjour `<prénom>` `<nom>`, vous avez `<age>`
+ans. `<prénom>`, `<nom>` et `<age>` devront être correctement substitué.
 
 ==
 
