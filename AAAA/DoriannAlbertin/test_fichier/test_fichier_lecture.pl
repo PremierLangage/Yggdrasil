@@ -6,6 +6,9 @@ title= Lecture
 # extends=/ComputerScience/python/template/soluce.pl
 extends=/ComputerScience/python/AP1-1920/templates/prosoluce.pl
 
+
+tag=open|with|readlines|file
+
 @ /utils/sandboxio.py
 @ test_text.txt
 @ /builder/before.py [builder.py]
@@ -25,6 +28,7 @@ print(lines[{k}-1])
 text==
 
 Ecrire un programme qui lit la **{{k}}-ième** ligne du fichier "test_text.txt" et la print.
+
 
 
 ==
