@@ -12,10 +12,10 @@ title = Points du disque
 text==  
 
 Ecrire un programme qui force la saisie d'un réel strictement positif `d`
-puis affiche le nombre de points à coordonnées entières situés à l'intérieur strictement du disque de rayon `d`.
+puis affiche le nombre de points à coordonnées entières situés à l'intérieur strictement du disque de rayon `d` et dont le centre est l'origine du repère (0, 0).
 
 <br>
-Exemple :
+Exemples :
 
 * <pre>
 Entrez un réel strictement positif: 1
@@ -26,6 +26,10 @@ Entrez un réel strictement positif: -2
 Entrez un réel strictement positif: 24.32
 Il y a 1861 points à coordonnées entières
 </pre>
+
+Indice :
+
+La distance d'un point de coordonnées **(x, y)** à l'origine du repère **(0, 0)** est l 
 ==
 
 code==
