@@ -54,11 +54,6 @@ En effet, Il y a 2 triplets de Pythagore inférieurs à 11:
 
 * (3, 4, 5)
 * (6, 8, 10)
-
-<br>
-<br>
-
-
 ==
 
 before==
