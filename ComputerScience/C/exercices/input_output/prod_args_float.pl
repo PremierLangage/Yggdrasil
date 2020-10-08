@@ -1,14 +1,27 @@
-# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2019 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Afficher le produit d'arguments d'un programme
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Produit d'arguments floattants d'un programme
 tag=input_output|program
-extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-
 Ecrire un programme qui affiche le produit de tous les arguments que l'on 
 lui a transmis lors de son appel. Les arguments seront tous des chaînes décrivant
 des nombres flottants (convertissable avec la fonction **atof** de la librairie **stdlib.h**).
@@ -17,7 +30,7 @@ Une fois récupérés, votre programme devra afficher la phrase suivante :
 chariot). XXXX devra être remplacé par le produit de tous les arguments.
 
 Pour information, un produit vide (comme tout nombre à la puissance zéro) vaut 1.
-    
+
 ==
 
 editor.code==
@@ -56,5 +69,6 @@ tests==
  ["Aléatoire", " ".join([str(100*(random.random()-0.5)) for i in range(random.randint(2,6))]), ""],
  ["Aléatoire", " ".join([str(200*(random.random()-0.5)) for i in range(random.randint(5,10))]), ""]]
 ==
+
 
 
