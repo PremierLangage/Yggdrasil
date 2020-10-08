@@ -1,6 +1,5 @@
 
 
-
 title=Tableau Croissant
 tag=type
 extends=/ComputerScience/C/template/stdsandboxC.pl
@@ -15,9 +14,7 @@ avec MAX valant 5
 si  tab contient $%-4,5,10,14,1%$ `est_croissante(tab)` renvoie $%0%$.<br>
 S'il contient $%5,6,8,75,82%$ `est_croissante(tab)` renvoie $%1%$.<br>
 MAX est une macro-constante pré-définie.
-
 ==
-
 codebefore==
 
 #include <stdio.h>
@@ -52,6 +49,7 @@ int main(int argc, char* argv[]){
   
   int size = 0;
   int lu;
+  int i;
   for (i = 0; i < MAX; i++) {
     scanf("%d",&lu);
     tab[i] = lu;
@@ -71,6 +69,7 @@ tests==
 ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(MAX)])] 
 ]
 ==
+
 
 
 
