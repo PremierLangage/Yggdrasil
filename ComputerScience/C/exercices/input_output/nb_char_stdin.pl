@@ -28,17 +28,15 @@ de caractère lu tout seul sur une ligne.
 
 ==
 
-editor.code==
+editor.code==#|c|
 #include ...
 
 int main(int argc, char* argv[]){
   /** votre code ici... **/
 }
-
 ==
 
-solution==
-
+solution==#|c|
 #include <stdio.h>
 
 int main(int argc, char* argv[]){
@@ -49,18 +47,21 @@ int main(int argc, char* argv[]){
   printf("%d\n", nb);
   return 0;
 }
-
 ==
 
-tests==
-[["Simple test", "", "Ha\n(Denis Brogniart)\n"],
- ["Entrée vide", "", ""],
- ["Aléatoire", "", "".join([random.choice(['', '\n', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']) for i in range(random.randint(100,1000))])],
- ["Aléatoire", "", "".join([random.choice(['', '\n', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']) for i in range(random.randint(100,1000))])],
- ["Aléatoire", "", "".join([random.choice(['', '\n', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']) for i in range(random.randint(100,1000))])],
- ["Aléatoire", "", "".join([random.choice(['', '\n', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']) for i in range(random.randint(100,1000))])] ]
+code_before==#|c|
 ==
 
+code_after==#|c|
+==
 
-
+checks_args_stdin==#|python|
+[["Simple test", [], "Ha\n(Denis Brogniart)\n"],
+ ["Entrée vide", [], ""],
+ ["Test aléatoire 1", [], "".join([choice(['', '\n', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']) for i in range(randint(100,1000))])],
+ ["Test aléatoire 2", [], "".join([choice(['', '\n', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']) for i in range(randint(100,1000))])],
+ ["Test aléatoire 3", [], "".join([choice(['', '\n', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']) for i in range(randint(100,1000))])],
+ ["Test aléatoire 4", [], "".join([choice(['', '\n', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']) for i in range(randint(100,1000))])],
+ ["Test aléatoire 5", [], "".join([choice(['', '\n', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']) for i in range(randint(100,1000))])] ]
+==
 
