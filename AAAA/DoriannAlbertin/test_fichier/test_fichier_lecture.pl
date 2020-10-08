@@ -3,7 +3,7 @@ title= Lecture
 
 # Fonctionne pas non plus
 
-extends=/ComputerScience/python/template/plsoluce.pl
+extends=/ComputerScience/python/template/soluce.pl
 @ /utils/sandboxio.py
 @ test_text.txt
 
