@@ -65,11 +65,12 @@ lg=plateau(tab,size,&deb);
 }
 ==
 
-
+# L'aléatoire peut sortir des trucs comme "1566666666666666-2"
 tests==
 [ ["simple éxécution", "","1 2  2 4 5"],
   ["avec deux ", "","-1 -2"],
   ["avec un ", "","-1"],
+  ["test qui plante", "", "-7 10 17 3 18 20 8 -3 -1 15 -6 -15 8 7 -8 -12 -19 -19"],
   ["aléatoire ", ""," ".join([str(random.randint(10,20)) for i in range(random.randint(5,10))])+"6"*14+" ".join([str(random.randint(-10,10)) for i in range(random.randint(5,10))])],
   ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
 ==
