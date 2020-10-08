@@ -8,6 +8,9 @@ extends = /model/multistep.pl
 
 settings.cumulative % false
 
+# une seule quetions par groupe de questions 
+onepergroup % True
+
 # NE MODIFIER PAS CE FICHIER MERCI 
 # FAITES UN EXTENDS DESSUS ET DEFINISER VOTRE BALISE questions
 # extends=  /model/AMC2/essaitextselect.pl 
@@ -24,15 +27,6 @@ Vous  pouvez en mettre plusieurs
 
 
 =**[nbb=2,nbg=2] Indiquer les identifiants correctes
-    <pre><code>=**[nbb=2,nbg=2] Indiquer les identifiants correctes
-    +=["un","deux","ident","prout"]
-    -=["666","aujourd'hui", "def", "@lt;html@gt;"] 
-    -=["!autres","truc%","pour ris"]
-    - for
-    - in
-    - and
-    - or
-    -=["list","int","dic"]<pre><code>
 +=["un","deux","ident","prout"]
 -=["666","aujourd'hui", "def", "@lt;html@gt;"] 
 -=["!autres","truc%","pour ris"]
@@ -42,19 +36,19 @@ Vous  pouvez en mettre plusieurs
 - or
 -=["list","int","dic"]
 
-=**[nb=13] What are the odd numbers ? 
+=**[nb=13, group=odd] What are the odd numbers ? 
 +=[x for x in range(3,77) if x%2==1 ]
 -=[100,200,300,400,500,600]
 -=[x for x in range(2,20) if x%2==0 ]
 
 
-=*[nb=2] What are the odd numbers ? 
+=*[nb=2,group=odd] What are the odd numbers ? 
 +=[x for x in range(3,77) if x%2==1 ]
 + 1
 -=[x for x in range(3,77) if x%2==0 ]
 
 
-=*[nb=6] What are the odd numbers ? 
+=*[nb=6,group=odd] What are the odd numbers ? 
 +=[x for x in range(3,77) if x%2==1 ]
 -=[x for x in range(3,77) if x%2==0 ]
 
@@ -64,7 +58,7 @@ Vous  pouvez en mettre plusieurs
 
 
 
-title= Bonjour Cher enseigant vous n'avez pas changer le "title" 
+title= Cher enseignant vous n'avez pas changer le "title" 
 
 
 
