@@ -70,11 +70,11 @@ checks_args_stdin==#|python|
 [["Simple test", [], "1"],
  ["Stdin vide", [], ""],
  ["Fini par zéro", [], "1 2 3 4 5 0"],
- ["Aléatoire", [], " ".join([str(random.randint(-10, 10)) for i in range(random.randint(2,6))])],
- ["Aléatoire", [], " ".join([str(random.randint(-10, 10)) for i in range(random.randint(6,20))])],
- ["Aléatoire", [], " ".join([str(random.randint(-20, 20)) for i in range(random.randint(10,20))])],
- ["Aléatoire", [], " ".join([random.choice(["Stop", "lettre", "mot45"]+[str(random.randint(-100,100)) for i in range(10)]) for i in range(random.randint(10,20))])],
- ["Aléatoire", [], " ".join([random.choice(["Stop", "lettre", "mot45"]+[str(random.randint(-100,100)) for i in range(10)]) for i in range(random.randint(10,20))])],
- ["Aléatoire", [], " ".join([random.choice(["Stop", "lettre", "mot45"]+[str(random.randint(-100,100)) for i in range(10)]) for i in range(random.randint(10,20))])]]
+ ["Aléatoire", [], " ".join([str(randint(-10, 10)) for i in range(randint(2,6))])],
+ ["Aléatoire", [], " ".join([str(randint(-10, 10)) for i in range(randint(6,20))])],
+ ["Aléatoire", [], " ".join([str(randint(-20, 20)) for i in range(randint(10,20))])],
+ ["Aléatoire", [], " ".join([choice(["Stop", "lettre", "mot45"]+[str(randint(-100,100)) for i in range(10)]) for i in range(randint(10,20))])],
+ ["Aléatoire", [], " ".join([choice(["Stop", "lettre", "mot45"]+[str(randint(-100,100)) for i in range(10)]) for i in range(randint(10,20))])],
+ ["Aléatoire", [], " ".join([choice(["Stop", "lettre", "mot45"]+[str(randint(-100,100)) for i in range(10)]) for i in range(randint(10,20))])]]
 ==
 
