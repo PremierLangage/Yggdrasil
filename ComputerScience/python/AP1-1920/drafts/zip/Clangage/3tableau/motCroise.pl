@@ -20,10 +20,11 @@ On mémorise :
   Ecrire une fonction `int place_noire(char plateau[][COLONNES],int x,int y)` qui place une case noire sur la case de coordonnées(x,y) de la grille.  
       La fonction renvoie 1 si les coordonnées sont correctes et que la case était vide, 0 sinon.    
 $
- Ecrire une fonction `int place_mot(char plateau[][COLONNES],int x,int y,char m[], char direction)}`qui place,si possible, le mot aux coordonnées indiquées. Si {\tt direction} vaut{\tt 'h'} , le mot doit \^etre placé horizontalement, si {\tt direction} vaut {\tt 'v'}, le mot doit \^etre placé  verticalement.
-  Un mot  ne peut être placé que si:  
-			    toutes les coordonées sont valides
-			    les cases étaient vides ou contenaient des lettres 
+ Ecrire une fonction `int place_mot(char plateau[][COLONNES],int x,int y,char m[], char direction)}`qui place,si possible, le mot aux coordonnées indiquées.  
+ Si direction vaut 'h', le mot doit être placé horizontalement, si  direction vaut 'v', le mot doit être placé  verticalement.  
+  Un mot  ne peut être placé que si:    
+		toutes les coordonées sont valides  
+		les cases étaient vides ou contenaient des lettres 
                 qui correspondent à celle du mot.
 
 ==
