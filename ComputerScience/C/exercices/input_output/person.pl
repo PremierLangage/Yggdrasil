@@ -28,7 +28,7 @@ programme. Une fois les données récupérées, le programme affichera les
 données avec la phrase : 
 
 
-Bonjour `<prénom>` `<nom>`, vous avez `<age>`ans. 
+**Bonjour `<prénom>` `<nom>`, vous avez `<age>`ans.**
 
 
 `<prénom>`, `<nom>` et `<age>` devront être correctement substitué avec les 
