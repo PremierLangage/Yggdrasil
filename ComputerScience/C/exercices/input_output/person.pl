@@ -30,7 +30,7 @@ ans. <prénom>, <nom> et <age> devront être correctement substitué.
 
 ==
 
-editor.code==
+editor.code==#|c|
 #include ...
 
 int main(int argc, char* argv[]){
@@ -47,11 +47,9 @@ int main(int argc, char* argv[]){
   printf("Bonjour Martin Tartenpion, vous avez 99 ans\n");
   ...
 }
-
 ==
 
-solution==
-
+solution==#|c|
 #include <stdio.h>
 
 int main(int argc, char* argv[]){
@@ -68,17 +66,19 @@ int main(int argc, char* argv[]){
   printf("Bonjour %s %s, vous avez %d ans\n", prenom, nom, age);
   return 0;
 }
-
-
 ==
 
-tests==
+code_before==#|c|
+==
 
+code_after==#|c|
+==
+
+checks_args_stdin==#|python|
 [["Basique", "", "Martin\nTartenpion\n99\n"],
  ["Vieux machin", "", "Maitre\nYoda\n982\n"],
  ["Age mental", "", "Nicolas\nBorie\n12\n"],
  ["Jeune pousse", "", "Tom\nPouce\n28\n"]]
-
 ==
 
 
