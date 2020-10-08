@@ -78,7 +78,3 @@ checks_args_stdin==#|python|
  ["Aléatoire", "", " ".join([random.choice(["Stop", "lettre", "mot45"]+[str(random.randint(-100,100)) for i in range(10)]) for i in range(random.randint(10,20))])]]
 ==
 
-
-
-
-
