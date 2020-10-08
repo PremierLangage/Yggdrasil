@@ -119,8 +119,8 @@ int main(void){
 int x,y;
 char d,mot[10];
 char tab[LIGNES][COLONNES]={{'\0'}};
-strcpy(t[1],"OPALINE");
-strcpy(tab[3,],"SAS1");
+strcpy(tab[1],"OPALINE");
+strcpy(tab[3],"SAS1");
 /*case noire*/
 scanf("%d %d",&x,&y);
 if(place_noire(tab,x,y))
@@ -129,7 +129,7 @@ if(place_noire(tab,x,y))
   printf("case invalide \n"); 
  affiche(tab);
  /*mot*/ 
- /*scanf("%s",mot);
+ scanf("%s",mot);
  scanf("%d %d",&x,&y);
  scanf("%c",&d)
  if(place_mot(tab,x,y,mot,d))
@@ -137,7 +137,7 @@ if(place_noire(tab,x,y))
  else
    printf("mot invalide \n"); 
  affiche(tab);*/
- return 0:
+ return 0;
 }
 /*
 PARADIS
