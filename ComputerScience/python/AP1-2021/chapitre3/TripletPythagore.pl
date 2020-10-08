@@ -1,4 +1,4 @@
-
+#D'après le "projet Euler"
 #author=Zip
 
 
@@ -57,7 +57,6 @@ En effet, Il y a 2 triplets de Pythagore inférieurs à 11:
 
 <br>
 <br>
-*D'après le "projet Euler"*
 
 
 ==
