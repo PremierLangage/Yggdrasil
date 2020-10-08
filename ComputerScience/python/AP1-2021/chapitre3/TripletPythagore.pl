@@ -37,7 +37,15 @@ Entrez l'entier maximum : 30
 
 il y a 10 triplet(s) inférieur(s) à 30<br>
 <br>
+
+*Indice : Essayez toutes les combinaisons possibles...*
+
+
+<br>
+<br>
 *D'après le "projet Euler"*
+
+
 ==
 
 before==
@@ -72,6 +80,7 @@ mplsoluce2==
 Grand
 100
 ==
+
 
 
 
