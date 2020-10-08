@@ -31,7 +31,7 @@ solution==
 int est_croissante(int tab[]){
   int i=1;
 for(;i<MAX;i+=1){
-    if (tab[i-1] >tab[i])
+    if (tab[i-1] >= tab[i])
       return 0;
       }
   return 1;
@@ -62,6 +62,7 @@ tests==
 ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(5)])] 
 ]
 ==
+
 
 
 
