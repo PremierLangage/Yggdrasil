@@ -10,10 +10,11 @@ questions==
 
 * soir le code suivant combien d'erreur comptez vous ?
 
-  ```python
-  printf("%d",3)
-  a= b+1
-  ```
+    <span style="font-family:Courrier;">
+    printf("%d",3)
+    a= b+1
+    </span>
+
 - 0
 - 1
 + 2
