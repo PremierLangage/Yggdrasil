@@ -24,7 +24,7 @@ tag=input_output|string|tableaux|difficile|entrées|sorties|tri
 text==
 Écrire un programme qui lit des mots sur l'entrée standard puis réécrit 
 ces mots sur la sortie standard (un par ligne) mais de manière triée. Il y 
-aura au plus 100 mots sur l'entrée standard et chacun de ces mots comportera 
+aura au plus 50 mots sur l'entrée standard et chacun de ces mots comportera 
 au plus 63 caractères.
 
 
@@ -118,6 +118,6 @@ checks_args_stdin==#|python|
  ["Quelques mots", [], "Pommes\nPoires\nPatates\nPeche\nBanane\nFraise\nCerise\nPrune\nAbricot\nTomate\nRadis"],
  ["Test aléatoire 1", [], "".join(["".join([chr(randint(97, 122)) for i in range(randint(1, 20))])+"\n" for j in range(5, 10)])],
  ["Test aléatoire 2", [], "".join(["".join([chr(randint(97, 122)) for i in range(randint(1, 20))])+"\n" for j in range(10, 20)])],
- ["Test aléatoire 3", [], "".join(["".join([chr(randint(97, 122)) for i in range(randint(1, 20))])+"\n" for j in range(20, 50)])] ]
+ ["Test aléatoire 3", [], "".join(["".join([chr(randint(97, 122)) for i in range(randint(1, 20))])+"\n" for j in range(20, 49)])] ]
 ==
 
