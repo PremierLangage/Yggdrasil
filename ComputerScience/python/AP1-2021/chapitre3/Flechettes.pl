@@ -75,7 +75,7 @@ for f1 in range(11):
             somme-=f3*5    
         somme-=f2*2
 
-print("Il y a",nb,"façon()s d'obtenir",n)
+print("Il y a",nb,"façon(s) d'obtenir",n)
 ==
 
 
