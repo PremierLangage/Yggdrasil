@@ -9,7 +9,7 @@ extends = /model/multistep.pl
 settings.cumulative % false
 
 # une seule quetions par groupe de questions 
-onepergroup % True
+onepergroup % true
 
 # NE MODIFIER PAS CE FICHIER MERCI 
 # FAITES UN EXTENDS DESSUS ET DEFINISER VOTRE BALISE questions
