@@ -129,15 +129,15 @@ int main(int argc, char* argv[]){
 
   scanf("%s", s);
 
-  if is_word(s){
+  if (is_word(s)){
     printf("J'ai lu un mot.\n");
     return 0;
   }
-  if is_int(s){
+  if (is_int(s)){
     printf("J'ai lu un nombre entier.\n");
     return 0;
   }
-  if is_float(s){
+  if (is_float(s)){
     printf("J'ai lu un nombre flottant.\n");
     return 0;
   }
