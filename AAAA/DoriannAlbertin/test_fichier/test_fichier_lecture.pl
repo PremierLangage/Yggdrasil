@@ -25,7 +25,7 @@ fichier_moche_pour_le_type.close()
 i = None
 for i in globals():
     if type(eval(i)) == type(fichier_moche_pour_le_type) and not eval(i).closed:
-            raise FileError("Merci de fermer les fichiers !")
+            print ("Merci de fermer les fichiers !")
 
 ==
 
@@ -44,6 +44,7 @@ Ecrire un programme qui lit la **{{k}}-ième** ligne du fichier "test_text.txt" 
 plsoluce==
 Le test |
 ==
+
 
 
 
