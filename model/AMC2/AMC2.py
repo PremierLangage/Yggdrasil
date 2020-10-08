@@ -25,7 +25,7 @@ exempleEtendu="""
 *+ Exo avec click sur un mot ici bonne est le bon mot 
  Vous  pouvez en mettre plusieurs séparer vos mots par des espace 
  si vous souhaiter mettre un espace ajouter des crochet autour des caractères en question   
->j'indique avec des doubles curly brackets la {{bonne}} réponse
+>j'indique avec [des doubles] curly brackets la {{bonne}} réponse
 
 =* What are the odd numbers ? 
 +=[x for x in range(3,77) if x%2==1 ]
@@ -130,6 +130,7 @@ def parse_AMC_TXT(txt):
             extended= False
 
     return questions
+
 
 
 
