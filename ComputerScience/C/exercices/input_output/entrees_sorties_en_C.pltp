@@ -1,0 +1,29 @@
+title=Exercices sur les entrées/sorties en langage C
+
+introduction==
+Voici des exercices qui vous feront travailler les entrées sorties
+avec le langage C.
+
+Pour le coup, ce chapitre est particulièrement important dans le sens 
+que les entrées sorties en C (particulièrement techniques) ont souvent 
+constituées la base d'interface pour d'autres langages ou frameworks. 
+Tout informaticien qui fait des assemblages ou des interfaces entre 
+programmes, applications ou bibliothèques a besoin de savoir comment 
+fonctionnent les entrées sorties en C. 
+
+C'est pénible, ça fait beaucoup d'erreur de segmentation mais ça fait 
+partie de l'essence du langage C. Ce sont les bases qui ont permis les 
+systèmes d'exploitation modernes et à toute l'informatique de cohabiter 
+sur une même machine.
+==
+
+@ /ComputerScience/C/exercices/input_output/sum_int_stdin.pl
+@ /ComputerScience/C/exercices/input_output/person.pl
+@ /ComputerScience/C/exercices/input_output/prod_args_float.pl
+@ /ComputerScience/C/exercices/input_output/ints_on_stdin.pl
+@ /ComputerScience/C/exercices/input_output/nb_char_stdin.pl
+@ /ComputerScience/C/exercices/input_output/sort_words.pl
+
+
+
+
