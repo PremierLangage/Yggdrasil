@@ -87,7 +87,7 @@ checks_args_stdin==#|python|
  ["Vieux machin", [], "Maitre\nYoda\n982\n"],
  ["Age mental", [], "Nicolas\nBorie\n12\n"],
  ["Jeune pousse", [], "Tom\nPouce\n28\n"],
- ["Télétubbies", [], choice(["Tinky\nWinky\n1\n", "Dipsy\nKing\n1\n", "Laa\nLaa\n1\n", "Po\nPo\n1\n"])]]
+ ["Un télétubbies", [], choice(["Tinky\nWinky\n2\n", "Dipsy\nKing\n2\n", "Laa\nLaa\n2\n", "Po\nPo\n2\n"])]]
 ==
 
 
