@@ -121,22 +121,14 @@ char d,mot[10];
 char tab[LIGNES][COLONNES]={{'\0'}};
 strcpy(tab[1],"OPALINE");
 strcpy(tab[3],"SAS1");
-/*case noire*/
+
 scanf("%d %d",&x,&y);
 if(place_noire(tab,x,y))
   printf("case valide \n");
  else
   printf("case invalide \n"); 
  affiche(tab);
- /*mot*/ 
- /*scanf("%s",mot);
- scanf("%d %d",&x,&y);
- scanf(" %c",&d);
- if(place_mot(tab,x,y,mot,d))
-   printf("mot valide \n");
- else
-   printf("mot invalide \n"); 
- affiche(tab);*/
+  
  return 0;
 }
 /*
@@ -153,7 +145,7 @@ Perec */
 
 
 tests==
-[ ["simple éxécution", "","2 10 PARADIS 0 0 h "]
+[ ["simple éxécution", "","2 10"]
  ]
 ==
 
