@@ -1,4 +1,3 @@
-
 #*****************************************************************************
 #  Copyright (C) 2018 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
@@ -90,5 +89,6 @@ checks_args_stdin==#|python|
  ["Test aléatoire 4", [str(randint(1, 2000000000))], ""],
  ["Test aléatoire 5", [str(randint(1, 2000000000))], ""]]
 ==
+
 
 
