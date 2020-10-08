@@ -19,6 +19,16 @@ k=randint(1,6)
 soluce= presoluce.format(k=k)
 ==
 
+back==
+fichier_moche_pour_le_type = open("test_text.txt", 'r')
+fichier_moche_pour_le_type.close()
+i = None
+for i in globals():
+    if type(eval(i)) == type(fichier_moche_pour_le_type) and not eval(i).closed:
+            raise Fileerror("Merci de fermer les fichiers !")
+
+==
+
 presoluce==
 with  open("test_text.txt", 'r') as fichier:
     lines = fichier.readlines()
@@ -26,10 +36,7 @@ print(lines[{k}-1])
 ==
 
 text==
-
 Ecrire un programme qui lit la **{{k}}-ième** ligne du fichier "test_text.txt" et la print.
-
-
 
 ==
 
@@ -37,6 +44,7 @@ Ecrire un programme qui lit la **{{k}}-ième** ligne du fichier "test_text.txt" 
 plsoluce==
 Le test |
 ==
+
 
 
 
