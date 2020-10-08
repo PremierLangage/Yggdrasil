@@ -118,7 +118,7 @@ int is_float(char* s){
       point = 1;
       continue;
     }
-    if ((s[0] < '0') || (s[0] > '9'))
+    if ((s[i] < '0') || (s[i] > '9'))
       return 0;
   }
   return 1;
