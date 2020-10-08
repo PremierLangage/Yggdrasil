@@ -34,6 +34,9 @@ Par exemple, si l'entrée standard contient "toto4  77!!23", la fonction *nextIn
 puis lira le "4" grâce à un **scanf** et retourne 1 puisque l'entrée standard n'était pas vide. La fonction est rappelée  puis passe les deux espaces (via le **getchar**) puis lit le "77" via un **scanf** et retourne 1 puisque l'entrée standard n'était pas vide.
 La fonction est à nouveau appelée pour passer les deux "!!" puis lire "23" et retourne 1 puisque l'entrée standard n'était pas vide. Puis la fonction est appelée une dernière fois pour retourner 0 puisque l'entrée standard est vide.
 
+Autre remarque : votre fonction doit lire sur l'entrée standard, donc si aucune lecture n'est faite,
+le programme restera en attente que les entrées soient lues. Ainsi, si toutes les entrées
+ne sont pas lues, le programme sera bloqué en attente et sera tué automatiquement au bout de 10 secondes.
 
 ==
 
