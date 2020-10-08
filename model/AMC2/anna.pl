@@ -5,6 +5,6 @@ title= Anna's Exo
 
 questions==
 
-=** Choisir les mots qui ne sont pas des mots clefs de python
+=** Choisir les mots qui sont des mots clefs de python
 
 ==
