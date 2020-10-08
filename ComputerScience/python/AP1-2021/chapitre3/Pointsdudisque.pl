@@ -16,10 +16,10 @@ puis affiche le nombre de points à coordonnées entières situés à l'intérie
 
 
 Exemple :
-
+<br>
 <pre>
 Entrez un réel strictement positif: -2
-Entrez un réel strictement positif: 24.32 <br>
+Entrez un réel strictement positif: 24.32
 Il y a 1861 points à coordonnées entières
 </pre>
 ==
