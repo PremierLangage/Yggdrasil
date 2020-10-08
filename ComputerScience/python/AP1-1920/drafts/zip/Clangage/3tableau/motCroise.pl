@@ -8,8 +8,7 @@ title=Mots croisés.
 tag=string
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
-text==
-  
+text==  
     Pour représenter un grille de mots croisés on utilise un tableau
      rectangulaire de char de taille LIGNES$%\times%$COLONNES.  
   Dans une grille les mots sont écrits en majuscules, soit horizontalement de gauche à droite, soit verticalement de haut en bas.  
@@ -69,27 +68,6 @@ int place_noire(char plateau[][COLONNES],int x,int y){
   plateau[x][y]=1;
   return 1;
 }
-int place_mot(char plateau[][COLONNES],int x,int y,char m[],char dest){
-  int i,j,l;
-  
-  l=strlen(m);
-  if (dest=='h'){
-    for(i=0;i<l;i++) 
-      if(x<0 || x>=LIGNES||y+i<0||y+i>=COLONNES|| plateau[x+i][y]==1||(plateau[x][y+i]!=0 && plateau[x][y+i]!=m[i] ))
-      	return 0;
-    for(i=0;i<l;i++)
-       plateau[x][y+i]=m[i];
-    return 1;
-  }
-  if (dest=='v'){
-    for(i=0;i<l;i++)
-      if(x+i<0 || x+i>=LIGNES||y<0||y>=COLONNES|| plateau[x+i][y]==1||(plateau[x+i][y]!=0 && plateau[x+i][y]!=m[i] ))
-      	return 0;
-    for(i=0;i<l;i++)
-       plateau[x+i][y]=m[i];
-   return 1;
- }
-}
 
 ==
 
@@ -103,7 +81,7 @@ strcpy(tab[1],"OPALINE");
 strcpy(tab[3],"SAS1");
 
 scanf("%d %d",&x,&y);
-if(place_noire(tab,x,y))
+if(place_noire(tab,x,y)==1)
   printf("case valide \n");
  else
   printf("case invalide \n"); 
