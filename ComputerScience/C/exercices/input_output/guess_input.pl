@@ -18,42 +18,36 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
 
-title=Données entrées au clavier pour décrire une personne
-tag=simple|clavier|entrées|sorties
+title=Qualifier l'entrée standard
+tag=clavier|entrées|sorties|difficile|entier|flottant
 
 text==
-Compléter le programme suivant pour qu'il récupère deux chaines de
-caractères ainsi qu'un entier donné au clavier durant l'exécution du
-programme. Une fois les données récupérées, le programme affichera les
-données avec la phrase : 
+Écrire un programme qui qualifie ce qu'il reçoit sur l'entrée standard. L'entrée 
+standard ne sera pas composée de délimiteur (pas d'espace, pas de tabulation, 
+seulement un retour chariot à la fin de cette dernière). Globalement, l'entrée 
+standard ne sera composé que d'un gros tas de cractères avec un retour à la ligne final.
 
+Vous devrez alors reconnaitre si l'entrée standard décrit :
+  * Un nombre entier
+  * Un nombre flottant
+  * Un mot
+  * Une entrée invalide (rien des trois au dessus)
 
-**Bonjour `<prénom>` `<nom>`, vous avez `<age>`ans.**
-
-
-`<prénom>`, `<nom>` et `<age>` devront être correctement substitué avec les 
-éléments récupéré sur l'entrée standard.
-
+Un nombre entier commence par un chiffre différent de zéro puis est suivi de chiffres.
+Un nombre flottant a la même structure qu'un nombre entier mais doit incorporer un point
+au milieu ou en fin. Un nombre flottant peut quand même commencer par un zéro seulement 
+s'il est directement suivi du point. Un mot est une séquence de lettres minuscules mais peut 
+commencer possiblement par une lettre majuscule. À l'exception de ces trois descriptions 
+toute autre entrée sera invlide.
 ==
 
 editor.height=350px
 
 editor.code==#|c|
-#include ...
+#include <stdio.h>
 
 int main(int argc, char* argv[]){
-  char prenom[64];
-  char nom[64];
-  int age;
-	
-  printf("Donner votre prénom :\n");
-  ...
-  printf("Donner votre nom :\n");
-  ...
-  printf("Donner votre age :\n");
-  ...
-  printf("Bonjour Martin Tartenpion, vous avez 99 ans\n");
-  ...
+
 }
 ==
 
@@ -61,18 +55,7 @@ solution==#|c|
 #include <stdio.h>
 
 int main(int argc, char* argv[]){
-  char prenom[64];
-  char nom[64];
-  int age;
-	
-  printf("Donner votre prénom :\n");
-  scanf("%s", prenom);
-  printf("Donner votre nom :\n");
-  scanf("%s", nom);
-  printf("Donner votre age :\n");
-  scanf("%d", &age);
-  printf("Bonjour %s %s, vous avez %d ans\n", prenom, nom, age);
-  return 0;
+
 }
 ==
 
@@ -83,10 +66,10 @@ code_after==#|c|
 ==
 
 checks_args_stdin==#|python|
-[["Basique", [], "Martin\nTartenpion\n99\n"],
- ["Vieux machin", [], "Maitre\nYoda\n982\n"],
- ["Age mental", [], "Nicolas\nBorie\n12\n"],
- ["Jeune pousse", [], "Tom\nPouce\n28\n"],
- ["Un télétubbies", [], choice(["Tinky\nWinky\n2\n", "Dipsy\nKing\n2\n", "Laa\nLaa\n2\n", "Po\nPo\n2\n"])]]
+[["Test basique 1", [], "Pelle\n"],
+ ["Test basique 2", [], "421\n"],
+ ["Test basique 3", [], "3.141592\n"],
+ ["Test basique 4", [], "13baobab.234\n"]]
 ==
+
 
