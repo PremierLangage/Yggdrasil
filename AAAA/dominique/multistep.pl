@@ -5,7 +5,8 @@
 @ /utils/components/textselect.py [customtextselect.py]
 
 
-
+@ /model/AMC2/AMC2.py [AMC.py]
+@ /mode/AMC2/aleaq.py 
 @ /utils/sandboxio.py
 @ /builder/beforestep.py [builder.py]
 @ /grader/evaluatorstep.py [grader.py]
