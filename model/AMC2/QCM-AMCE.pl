@@ -104,6 +104,8 @@ for i, q in enumerate(list_questions):
 
 ==
 
+display=
+
 intro ==
 Ce quiz contient {{nbstep}} questions.
 ==
