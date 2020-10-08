@@ -75,10 +75,10 @@ code_after==#|c|
 ==
 
 checks_args_stdin==#|python|
-[["Basique", "", "Martin\nTartenpion\n99\n"],
- ["Vieux machin", "", "Maitre\nYoda\n982\n"],
- ["Age mental", "", "Nicolas\nBorie\n12\n"],
- ["Jeune pousse", "", "Tom\nPouce\n28\n"]]
+[["Basique", [], "Martin\nTartenpion\n99\n"],
+ ["Vieux machin", [], "Maitre\nYoda\n982\n"],
+ ["Age mental", [], "Nicolas\nBorie\n12\n"],
+ ["Jeune pousse", [], "Tom\nPouce\n28\n"]]
 ==
 
 
