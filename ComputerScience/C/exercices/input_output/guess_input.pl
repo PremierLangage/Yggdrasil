@@ -165,8 +165,8 @@ checks_args_stdin==#|python|
  ["Test aléatoire 6", [], choice(["0.34", str(1000*random()), str(random()), "000.12", ".765", "231."])],
  ["Test aléatoire 7", [], choice(["0.34", str(1000*random()), str(random()), "000.12", ".765", "231."])],
  ["Test aléatoire 8", [], choice(["pouet.foo", "bar.12", "pouet", "12.foo", str(randint(1,1000000)), "05243"])],
- ["Test aléatoire 9", [], choice(["pouet.foo", "bar.12", "pouet", "12.foo", str(randint(1,1000000)), "05243"])],
- ["Test aléatoire 10", [], choice(["pouet.foo", "bar.12", "pouet", "12.foo", str(randint(1,1000000)), "05243"])]]
+ ["Test aléatoire 9", [], choice(["pouet.foo", "bar.65", "pouet", "42.foo", str(randint(1,1000000)), "05243"])],
+ ["Test aléatoire 10", [], choice(["pouet.foo", "bar.777", "pouet", "77.foo", str(randint(1,1000000)), "05243"])]]
 ==
 
 
