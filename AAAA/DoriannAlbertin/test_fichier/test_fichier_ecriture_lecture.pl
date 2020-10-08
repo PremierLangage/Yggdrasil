@@ -19,13 +19,13 @@ Fermer le fichier.
 
 
 pltest==
->>> with fichier as open('fichier', 'r'):
+>>> with open('fichier', 'r') as fichier:
         print(fichier.readline())
 dossier
 ==
 
 back==
-with fichier as open(fichier.txt, 'w'):
+with open(fichier.txt, 'w') as fichier:
     fichier.write(' ')
     fichier.save()
 
