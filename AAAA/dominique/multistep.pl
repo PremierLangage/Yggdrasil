@@ -56,7 +56,7 @@ Ce quiz contient {{nbstep}} questions.
 
 
 evaluator==
-
+step=0
 q=list_questions[step]
 
 if q['type'] == "Radio":
