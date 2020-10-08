@@ -8,8 +8,8 @@
 @ /model/AMC2/AMC2.py [AMC.py]
 @ /model/AMC2/aleaq.py 
 @ /utils/sandboxio.py
-@ /builder/beforestep.py [builder.py]
-@ /grader/evaluatorstep.py [grader.py]
+@ /builder/before.py [builder.py]
+@ /grader/evaluator.py [grader.py]
 
 settings.cumulative % false
 
