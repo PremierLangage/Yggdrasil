@@ -86,11 +86,14 @@ int main(int argc, char* argv[])
 #==
 
 
+#tests==
+#[["Exécution simple", "1 9", "5"]]
+#==
+
 tests==
-[["Exécution simple", "1 9", "5"]]
+[["Exécution simple", "1 9", "5"]
+ ]
 ==
-
-
 
 
 
