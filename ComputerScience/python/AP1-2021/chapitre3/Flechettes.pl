@@ -10,7 +10,7 @@ code==
 n = int(input("Un nombre : "))
 
 
-print("Il y a",nb,"façons d'obtenir",n)
+print("Il y a",nb,"façon(s) d'obtenir",n)
 
 ==
 
@@ -36,7 +36,7 @@ Ecrire un programme qui :
 <br>
 **Par exemple:**
 <br>
-Si l'entrée vaut `50` alors le programme doit afficher `Il y a 1 façons d'obtenir 50`.
+Si l'entrée vaut `50` alors le programme doit afficher `Il y a 1 façon(s) d'obtenir 50`.
 
 En effet, il n'y a qu'un triplet de Pythagore inférieur à 6: (3, 4, 5)
 <br>
@@ -75,7 +75,7 @@ for f1 in range(11):
             somme-=f3*5    
         somme-=f2*2
 
-print("Il y a",nb,"façons d'obtenir",n)
+print("Il y a",nb,"façon()s d'obtenir",n)
 ==
 
 
