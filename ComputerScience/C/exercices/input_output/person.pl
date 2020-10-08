@@ -31,7 +31,8 @@ données avec la phrase :
 Bonjour `<prénom>` `<nom>`, vous avez `<age>`ans. 
 
 
-`<prénom>`, `<nom>` et `<age>` devront être correctement substitué.
+`<prénom>`, `<nom>` et `<age>` devront être correctement substitué avec les 
+éléments récupéré sur l'entrée standard.
 
 ==
 
@@ -85,7 +86,8 @@ checks_args_stdin==#|python|
 [["Basique", [], "Martin\nTartenpion\n99\n"],
  ["Vieux machin", [], "Maitre\nYoda\n982\n"],
  ["Age mental", [], "Nicolas\nBorie\n12\n"],
- ["Jeune pousse", [], "Tom\nPouce\n28\n"]]
+ ["Jeune pousse", [], "Tom\nPouce\n28\n"],
+ ["Télétubbies", [], choice(["Tinky\nWinky\n1\n", "Dipsy\nKing\n1\n", "Laa\nLaa\n1\n", "Po\nPo\n1\n"])]]
 ==
 
 
