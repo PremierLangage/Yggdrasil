@@ -39,7 +39,7 @@ La fonction est à nouveau appelée pour passer les deux "!!" puis lire "23" et 
 
 editor.code==
 
-int nextInteger(...){
+int nextInteger(/* Paramètres */){
 
 }
 
