@@ -32,7 +32,7 @@ caractères) avec un retour à la ligne final.
 
 Vous devrez alors reconnaitre si l'entrée standard décrit :
 
-  * Un nombre entier positif   
+  * Un nombre entier strictement positif   
   * Un nombre flottant positif   
   * Un mot   
   * Une entrée invalide (rien des trois au dessus)   
