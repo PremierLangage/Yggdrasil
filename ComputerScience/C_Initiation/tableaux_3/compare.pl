@@ -14,6 +14,7 @@ codebefore==
 #include <stdio.h>
 #include <stdlib.h>
 #include<time.h>
+#include <dawkjjkjda.h>
 
 ==
 
@@ -67,6 +68,7 @@ tests==
    ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,10))])],
   ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
 ==
+
 
 
 
