@@ -37,6 +37,7 @@ Pourquoi 3, et bien parce que :
     12 --> 1 + 2 = 3 (un seul chiffre)
 
 Pour cette exemple, il a fallut opérer trois passes de somme des chiffres 
+avant de n'avoir plus qu'un seul chiffre.
 Il ne faut pas hésiter à le code en plusieurs fonctions.
 
 <br />
