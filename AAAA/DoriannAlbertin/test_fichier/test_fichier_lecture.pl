@@ -31,8 +31,8 @@ Ecrire un programme qui lit la {{k}}-ième ligne du fichier test_text.txt et la 
 ==
 
 
-mplsoluce0==
-test
+plsoluce==
+Le test |
 ==
 
 
