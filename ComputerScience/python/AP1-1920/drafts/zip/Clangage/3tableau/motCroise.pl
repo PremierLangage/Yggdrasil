@@ -12,12 +12,12 @@ text==
   
     Pour représenter un grille de mots croisés on utilise un tableau
      rectangulaire de char de taille LIGNES$%\times%$COLONNES.  
-  Dans une grille les mots sont écrits en majuscules, soit horizontalement de gauche à droite, soit verticalement de haut en bas.\\
-  On mémorise :  
+  Dans une grille les mots sont écrits en majuscules, soit horizontalement de gauche à droite, soit verticalement de haut en bas.  
+On mémorise :  
    une case vide par 0;  
-   une case noire par 1;  
+   une case noire par 1; 
    une case remplie par la lettre majuscule alphabétique contenue.  
-  Ecrire une fonction `int place_noire(char plateau[][COLONNES],int x,int y)` qui place une case noire sur la case situé sur la  {\tt x}$^{\mbox{ ième}}$ ligne et la {\tt y}$^{\mbox{ ième}}$ colonne.\\
+  Ecrire une fonction `int place_noire(char plateau[][COLONNES],int x,int y)` qui place une case noire sur la case de coordonnées(x,y) de la grille.
       La fonction renvoie $1$ si les coordonnées sont correctes et que la case était vide,0 sinon.  
 
  Ecrire une fonction `int place_mot(char plateau[][COLONNES],int x,int y,char m[], char direction)}qui place,si possible, le mot aux coordonnées indiquées. Si {\tt direction} vaut{\tt 'h'} , le mot doit \^etre placé horizontalement, si {\tt direction} vaut {\tt 'v'}, le mot doit \^etre placé  verticalement.
@@ -32,6 +32,7 @@ codebefore==
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 void affiche(char tab[][COLONNES]){
   int i,j;
   for(i=0;i<LIGNES;i++){
@@ -87,7 +88,7 @@ codeafter==
 int main(void){
 int x,y;
 char d,mot[10];
-char tab[LIGNES][COLONNES]={{'\0}};
+char tab[LIGNES][COLONNES]={{'\0'}};
 strcpy(t[1],"OPALINE");
 strcpy(tab[3,],"SAS1");
 /*case noire*/
@@ -101,7 +102,7 @@ if(place_noire(tab,x,y))
  scanf("%s",mot);
  scanf("%d %d",&x,&y);
  scanf("%c",&d)
- if(place_mot(tab,x,y,mot,'h'))
+ if(place_mot(tab,x,y,mot,d))
    printf("mot valide \n");
  else
    printf("mot invalide \n"); 
