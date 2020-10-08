@@ -14,13 +14,14 @@ text==
 Ecrire un programme qui force la saisie d'un réel strictement positif **d**
 puis affiche le nombre de points à coordonnées entières situés à l'intérieur strictement du disque de rayon **d**.
 
-exemple :
 
+Exemple :
+
+```
 Entrez un réel strictement positif: -2
-
 Entrez un réel strictement positif: 24.32 <br>
 Il y a 1861 points à coordonnées entières
-
+```
 ==
 
 code==
@@ -75,6 +76,7 @@ mplsoluce2==
 Entrée grande
 24.32
 ==
+
 
 
 
