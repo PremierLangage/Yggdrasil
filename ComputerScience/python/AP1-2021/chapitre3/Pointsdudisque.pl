@@ -25,7 +25,6 @@ Il y a 1861 points à coordonnées entières
 ==
 
 code==
-
 ??=float(input("Entrez un réel strictement positif: "))
 
 ==
