@@ -33,6 +33,8 @@ codebefore==
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#define LIGNES 7
+#define COLONNES 7 
 
 void affiche(char tab[][COLONNES]){
   int i,j;
