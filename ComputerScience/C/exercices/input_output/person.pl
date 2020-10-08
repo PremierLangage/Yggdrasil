@@ -1,20 +1,33 @@
-# Copyright 2017-2019 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2017 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Récupérer une personne (prénom, nom, age) au clavier
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Données entrées au clavier pour décrire une personne
 tag=input_output
-extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-
 Compléter le programme suivant pour qu'il récupère deux chaines de
 caractères ainsi qu'un entier donné au clavier durant l'exécution du
 programme. Une fois les données récupérées, le programme affichera les
 données avec la phrase : Bonjour <prénom> <nom>, vous avez <age>
 ans. <prénom>, <nom> et <age> devront être correctement substitué.
-    
+
 ==
 
 editor.code==
@@ -67,5 +80,6 @@ tests==
  ["Jeune pousse", "", "Tom\nPouce\n28\n"]]
 
 ==
+
 
 
