@@ -40,6 +40,13 @@ il y a 10 triplet(s) inférieur(s) à 30<br>
 
 *Indice : Essayez toutes les combinaisons possibles...*
 
+Par exemple :
+Si l'entrée vaut `6` alors le programme doit afficher `il y a 1 triplet(s) inférieur(s) à 6`
+En effet, il n'y a qu'un triplet de Pythagore inférieur à 6: (3, 4, 5)
+
+Il y a 2 triplets de Pythagore inférieurs à 11:
+(3, 4, 5)
+(6, 8, 10)
 
 <br>
 <br>
