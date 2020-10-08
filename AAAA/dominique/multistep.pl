@@ -13,7 +13,7 @@
 settings.cumulative % false
 
 
-
+title=
 
 text =
 
@@ -25,7 +25,7 @@ radio = CustomRadio()
 check = CustomCheckbox()
 ztext = CustomTextSelect()
 
-
+==
 intro ==
 Ce quiz contient {{nbstep}} questions.
 ==
@@ -55,11 +55,11 @@ q=question[step]
 
 form==
 {% if q['type'] == "radio" %}
-    {{ radio | components }}
+    {{ radio | component }}
 {% elif q['type'] == "Checkbox" %}
-{{ check | components }}
+{{ check | component }}
 {% elif q['type'] == "TextSelect" %}
-    {{ ztext | components }}
+    {{ ztext | component }}
 {% endif %}
 ==
 
