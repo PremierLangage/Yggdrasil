@@ -23,9 +23,10 @@ tag=clavier|entrées|sorties|difficile|entier|flottant
 
 text==
 Écrire un programme qui qualifie ce qu'il reçoit sur l'entrée standard. L'entrée 
-standard ne sera pas composée de délimiteur (pas d'espace, pas de tabulation, 
+standard ne comportera aucun délimiteur (pas d'espace, pas de tabulation, 
 seulement un retour chariot à la fin de cette dernière). Globalement, l'entrée 
-standard ne sera composé que d'un gros tas de cractères avec un retour à la ligne final.
+standard ne sera ainsi composée que d'un gros tas de cractères avec un retour à 
+la ligne final.
 
 <br />
 
@@ -44,6 +45,12 @@ au milieu ou en fin. Un nombre flottant peut quand même commencer par un zéro 
 s'il est directement suivi du point. Un mot est une séquence de lettres minuscules mais peut 
 commencer possiblement par une lettre majuscule. À l'exception de ces trois descriptions 
 toute autre entrée sera invlide.
+
+<br />
+
+Une fois le contenu de l'entrée standard reconnu, votre programme n'aura qu'à 
+afficher une phrase associée à ce qu'il a reconnu.
+
 ==
 
 editor.height=350px
