@@ -33,7 +33,7 @@ from customtextselect import CustomTextSelect
 radio = CustomRadio() 
 check = CustomCheckbox()
 ztext = CustomTextSelect()
-
+import random
 from AMC import parse_AMC_TXT
 
 from aleaq import buildquestion, onefromeachgroup
@@ -43,10 +43,10 @@ list_questions = parse_AMC_TXT(questions)
 if "onepergroup" in globals() and onepergroup :
     list_questions=onefromeachgroup(list_questions)
 elif 'nbstep' in globals():
-    list_questions = rd.sample(list_questions, nbstep)
+    list_questions = random.sample(list_questions, nbstep)
 
 nbstep = len(list_questions)
-rd.shuffle(list_questions)
+random.shuffle(list_questions)
 
 
 ==
