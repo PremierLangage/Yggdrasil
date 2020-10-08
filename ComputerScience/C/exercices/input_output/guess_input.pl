@@ -27,12 +27,15 @@ standard ne sera pas composée de délimiteur (pas d'espace, pas de tabulation,
 seulement un retour chariot à la fin de cette dernière). Globalement, l'entrée 
 standard ne sera composé que d'un gros tas de cractères avec un retour à la ligne final.
 
+<br />
+
 Vous devrez alors reconnaitre si l'entrée standard décrit :
 
   * Un nombre entier   
   * Un nombre flottant   
   * Un mot   
   * Une entrée invalide (rien des trois au dessus)   
+
 
 Un nombre entier commence par un chiffre différent de zéro puis est suivi de chiffres.
 Un nombre flottant a la même structure qu'un nombre entier mais doit incorporer un point
