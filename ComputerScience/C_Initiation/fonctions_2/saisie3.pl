@@ -23,7 +23,7 @@ qui retournera "1" trois fois, puis "zéro" car il n'y a plus d'entiers quand l'
 Remarque **scanf** retourne 0 si elle n'a pas pu lire, 1 si elle a lue un entier, -1 si il n'y a plus rien à lire.
 ==
 
-#Proposition :
+#Proposition d'énoncé :
 #
 #Écrire une fonction *nextInteger* qui effectue la saisie d'un entier dans l'entrée standard (ce qui est tappé au clavier), même si d'autres caractères sont écrits (autres que des nombres).
 #
