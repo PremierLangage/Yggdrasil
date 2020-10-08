@@ -4,7 +4,14 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
 text==
 
-Hello
+Écrire une fonction `est_croissante` qui reçoit un tableau de taille MAX et renvoie 1
+ si les entiers sont en ordre strictement croissant, 0 sinon. <br>
+
+ Exemple
+avec MAX valant 5
+si  tab contient $%-4,5,10,14,1%$ `est_croissante(tab)` renvoie $%0%$.<br>
+S'il contient $%5,6,8,75,82%$ `est_croissante(tab)` renvoie $%1%$.<br>
+MAX est une macro-constante pré-définie.
 ==
 codebefore==
 
@@ -34,8 +41,6 @@ for(;i<MAX;i+=1){
 codeafter==
 int main(int argc, char* argv[]){
   int tab[MAX];
-  
-  int size = 0;
   int lu;
   int i;
   for (i = 0; i < MAX; i++) {
