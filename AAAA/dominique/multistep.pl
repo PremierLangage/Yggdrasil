@@ -16,9 +16,14 @@ settings.cumulative % false
 
 
 text =
-radio =: CustomRadio 
-check =: CustomCheckbox
-ztext =: CustomTextSelect
+
+before==
+from customradio import CustomRadio
+from customcheckbox import CustomCheckbox
+from customtextselect import CustomTextSelect
+radio = CustomRadio() 
+check = CustomCheckbox()
+ztext = CustomTextSelect()
 
 
 intro ==
