@@ -12,7 +12,8 @@ extends=/ComputerScience/python/AP1-1920/templates/prosoluce.pl
 
 before==
 from random import randint
-soluce= presoluce.format(k=randint(1,6))
+k=randint(1,6)
+soluce= presoluce.format(k)
 ==
 
 presoluce==
