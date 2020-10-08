@@ -14,7 +14,7 @@ Les exercices sont, à peu près, classés par difficulté croissante.
 @ /ComputerScience/C/exercices/recursion/fibonacci_rec.pl
 @ /ComputerScience/C/exercices/recursion/ackermann.pl
 @ /ComputerScience/C/exercices/recursion/pascal_rec.pl
-@ /ComputerScience/C/exercices/recursion/sum_number.pl
+@ /ComputerScience/C/exercices/recursion/sum_number_rec.pl
 @ /ComputerScience/C/exercices/recursion/div_by_seven.pl
 @ /ComputerScience/C/exercices/recursion/down_up_number.pl
 @ /ComputerScience/C/exercices/recursion/exp_by_squaring.pl
@@ -22,6 +22,7 @@ Les exercices sont, à peu près, classés par difficulté croissante.
 @ /ComputerScience/C/exercices/recursion/area_matrix.pl
 @ /ComputerScience/C/exercices/recursion/knapsack.pl
 @ /ComputerScience/C/exercices/recursion/pied_nickeles_sort.pl
+
 
 
 
