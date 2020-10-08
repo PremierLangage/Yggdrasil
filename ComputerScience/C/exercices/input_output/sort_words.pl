@@ -113,11 +113,11 @@ code_after==#|c|
 ==
 
 checks_args_stdin==#|python|
-[["Basique", [], "Pommes\nPoires\nPatates\nPeche\n"], 
- ["Un mot", [], "Bonjour\n"],
+[["Test basique", [], "Pommes\nPoires\nPatates\nPeche\n"], 
+ ["Test avec un mot", [], "Bonjour\n"],
  ["Quelques mots", [], "Pommes\nPoires\nPatates\nPeche\nBanane\nFraise\nCerise\nPrune\nAbricot\nTomate\nRadis"],
- ["Test aléatoire 1", [], "".join(["".join([chr(randint(97, 122)) for i in range(randint(1, 20))])+"\n" for j in range(10, 100)])],
- ["Test aléatoire 2", [], "".join(["".join([chr(randint(97, 122)) for i in range(randint(1, 20))])+"\n" for j in range(10, 100)])],
- ["Test aléatoire 3", [], "".join(["".join([chr(randint(97, 122)) for i in range(randint(1, 20))])+"\n" for j in range(10, 100)])] ]
+ ["Test aléatoire 1", [], "".join(["".join([chr(randint(97, 122)) for i in range(randint(1, 20))])+"\n" for j in range(5, 10)])],
+ ["Test aléatoire 2", [], "".join(["".join([chr(randint(97, 122)) for i in range(randint(1, 20))])+"\n" for j in range(10, 20)])],
+ ["Test aléatoire 3", [], "".join(["".join([chr(randint(97, 122)) for i in range(randint(1, 20))])+"\n" for j in range(20, 50)])] ]
 ==
 
