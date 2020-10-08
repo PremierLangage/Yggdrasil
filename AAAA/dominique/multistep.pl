@@ -5,7 +5,6 @@
 @ /utils/components/textselect.py [customtextselect.py]
 
 
-extends = temp.pl
 
 @ /utils/sandboxio.py
 @ /builder/beforestep.py [builder.py]
@@ -13,10 +12,13 @@ extends = temp.pl
 
 settings.cumulative % false
 
+
+
+
 text =
-radio =: RadioGroup
-check =: CheckboxGroup
-ztext =: Text
+radio =: CustomRadio 
+check =: CustomCheckbox
+ztext =: CustomTextSelect
 
 
 intro ==
@@ -25,6 +27,24 @@ Ce quiz contient {{nbstep}} questions.
 
 
 evaluator==
+
+q=question[step]
+
+    if q['type'] == "Radio":
+        radio.setitems(q['items'])
+        radio.setsol_from_index(q['index'])
+        if 'ordered' not in q['options']:
+            radio.shuffle()
+    elif q['type'] == "Checkbox":
+        check.append(CustomCheckbox())
+        check.setitems(q['items'])
+        check.setsol_from_index(q['index'])
+        if 'ordered' not in q['options']:
+            check.shuffle()
+    elif  q['type'] == 'TextSelect':
+        statement.append(q['text'])
+        ztext.setdata_from_textDR(q['items'][0])
+
 
 ==
 
