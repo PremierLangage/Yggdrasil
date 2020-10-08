@@ -93,7 +93,7 @@ class CustomTextSelect(Component):
         missed = list(set(self._sol).difference(set(indexselect)))
 
         if len(self._sol)==0:
-            return 100
+            return 17
 
         if display:
             self.selections = [{'index': k, 'css': 'success-state'} for k in right]
@@ -115,4 +115,5 @@ class CustomTextSelect(Component):
             self.disabled = True
 
         return score
+
 
