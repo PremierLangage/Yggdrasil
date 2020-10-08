@@ -19,7 +19,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 author=Nicolas Borie
 
 title=Données entrées au clavier pour décrire une personne
-tag=input_output
+tag=simple|clavier|entrées|sorties
 
 text==
 Compléter le programme suivant pour qu'il récupère deux chaines de
