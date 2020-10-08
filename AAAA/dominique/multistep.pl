@@ -57,7 +57,7 @@ Ce quiz contient {{nbstep}} questions.
 
 evaluator==
 
-q=questions[step]
+q=list_questions[step]
 
 if q['type'] == "Radio":
     radio.setitems(q['items'])
