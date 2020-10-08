@@ -25,7 +25,7 @@ fichier_moche_pour_le_type.close()
 i = None
 for i in globals():
     if type(eval(i)) == type(fichier_moche_pour_le_type) and not eval(i).closed:
-            raise Fileerror("Merci de fermer les fichiers !")
+            raise FileError("Merci de fermer les fichiers !")
 
 ==
 
