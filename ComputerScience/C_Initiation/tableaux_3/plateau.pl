@@ -22,7 +22,7 @@ int plateau(int t[], int taille,int *debut){
   /* Votre code ici */
 }
 ==
-
+#La solution plante, cf le test ajouté "test qui plante"
 solution==
 int plateau(int t[], int taille,int *debut){
   int debcourant,debmax,i;
