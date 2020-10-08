@@ -91,7 +91,8 @@ int main(int argc, char* argv[])
 #==
 
 tests==
-[["Exécution simple", "1 9", "5"]
+[["Exécution simple", "", "5"],
+ ["Quelques éléments", "12 2", "Il y a quelque entiers 1 qui sont dans 3 ce texte, celui la 3.1415 c\'est un float donc 2 entiers."],
  ]
 ==
 
