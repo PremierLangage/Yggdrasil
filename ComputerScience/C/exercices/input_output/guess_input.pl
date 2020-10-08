@@ -57,6 +57,19 @@ editor.height=350px
 
 editor.code==#|c|
 #include <stdio.h>
+
+int main(int argc, char* argv[]){
+  /* Votre code ici ... */
+
+  /* printf("J'ai lu un nombre entier.\n"); */
+  /* printf("J'ai lu un nombre flottant.\n"); */
+  /* printf("J'ai lu un mot.\n"); */
+  /* printf("J'ai lu une entrée invalide.\n"); */
+}
+==
+
+solution==#|c|
+#include <stdio.h>
 #include <string.h>
 
 int is_int(char* s){
@@ -130,14 +143,6 @@ int main(int argc, char* argv[]){
   }
   printf("J'ai lu une entrée invalide.\n");
   return 0;
-}
-==
-
-solution==#|c|
-#include <stdio.h>
-
-int main(int argc, char* argv[]){
-
 }
 ==
 
