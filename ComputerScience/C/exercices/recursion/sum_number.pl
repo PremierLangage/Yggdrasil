@@ -87,9 +87,9 @@ checks_args_stdin==#|python|
  ["Test exemple", ["975491634"], ""],
  ["Test aléatoire 1", [str(randint(1, 2000000000))], ""],
  ["Test aléatoire 2", [str(randint(1, 2000000000))], ""],
- ["Test aléatoire 3", [str(randint(1, 2000000000))], ""],
- ["Test aléatoire 4", [str(randint(1, 2000000000))], ""],
- ["Test aléatoire 5", [str(randint(1, 2000000000))], ""]]
+ ["Test aléatoire 3", [str(randint(1, 2000000000000000000))], ""],
+ ["Test aléatoire 4", [str(randint(1, 2000000000000000000))], ""],
+ ["Test aléatoire 5", [str(randint(1, 2000000000000000000))], ""]]
 ==
 
 
