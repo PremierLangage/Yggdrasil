@@ -25,7 +25,7 @@ fichier_moche_pour_le_type.close()
 i = None
 for i in globals():
     if type(eval(i)) == type(fichier_moche_pour_le_type) and not eval(i).closed:
-            print ("Merci de fermer les fichiers !")
+            print("Merci de fermer les fichiers !")
 
 ==
 
