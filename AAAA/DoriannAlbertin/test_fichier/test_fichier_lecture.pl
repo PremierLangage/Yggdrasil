@@ -3,13 +3,13 @@ title= Lecture
 
 # Fonctionne pas non plus
 
-extends=/ComputerScience/python/template/pltest.pl
+extends=/ComputerScience/python/template/plsoluce.pl
 @ /utils/sandboxio.py
 @ test_text.txt
 
 before==
 from random import randint
-k = randint(1,6)
+k = 1
 ==
 
 
@@ -26,7 +26,8 @@ print(lines[k-1])
 fichier.close()
 ==
 
-pltest==
+mplsoluce==
+test
 ==
 
 
