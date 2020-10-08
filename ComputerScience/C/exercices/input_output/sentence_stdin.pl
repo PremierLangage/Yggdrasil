@@ -27,6 +27,10 @@ réécrit cette ligne sur la sortie standard. Une ligne ne comportera jamais
 plus de 255 caractères. Une ligne se termine par un retour chariot, il faut 
 donc utiliser une fonction qui lit jusqu'à voir un retour à la ligne.
 
+<br />
+
+Il n'y a qu'une seule ligne à lire et afficher (la première). Si l'entrée 
+standard est plus longue, votre code ne devra pas s'en soucier.
 ==
 
 editor.code==#|c|
