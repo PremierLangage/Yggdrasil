@@ -18,7 +18,7 @@ questions==
 
 *+ Exo avec click sur un mot ici bonne est le bon mot 
  Vous  pouvez en mettre plusieurs     
->j'indique avec des curly brackets la {bonne} réponse
+>j'indique avec des doubles curly brackets la {{bonne}} réponse
 
 ==
 
