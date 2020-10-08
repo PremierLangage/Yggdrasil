@@ -135,6 +135,7 @@ if(place_noire(tab,x,y))
  else
    printf("mot invalide \n"); 
  affiche(tab);*/
+ return 0:
 }
 /*
 PARADIS
