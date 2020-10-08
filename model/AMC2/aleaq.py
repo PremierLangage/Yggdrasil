@@ -9,7 +9,6 @@
             })
 """
 
-import random
 
 
 def optiondic(l):
@@ -108,3 +107,4 @@ def buildquestion(question):
         print(e)
         raise e
     
+
