@@ -36,6 +36,7 @@ Vous devrez alors reconnaitre si l'entrée standard décrit :
   * Un mot   
   * Une entrée invalide (rien des trois au dessus)   
 
+<br />
 
 Un nombre entier commence par un chiffre différent de zéro puis est suivi de chiffres.
 Un nombre flottant a la même structure qu'un nombre entier mais doit incorporer un point
