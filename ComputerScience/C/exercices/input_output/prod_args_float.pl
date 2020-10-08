@@ -18,8 +18,8 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
 
-title=Produit d'arguments floattants d'un programme
-tag=input_output|program
+title=Produit d'arguments flottants d'un programme
+tag=programme|produit|flottant|entrées|sorties
 
 text==
 Ecrire un programme qui affiche le produit de tous les arguments que l'on 
