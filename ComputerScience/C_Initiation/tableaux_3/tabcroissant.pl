@@ -53,7 +53,7 @@ int main(int argc, char* argv[]){
 }
 ==
 
-
+# MAX était donné comme valeur comme en C dans les tests, ça faisait tout planter, il faut le mettre à la main
 tests==
 [ ["croissante 1", "","-1 2 5 8 78"] ,
 ["pas croissante", "","-1 2 8 5 78"] ,
