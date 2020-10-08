@@ -10,6 +10,33 @@
 """
 
 
+import random
+
+def onefromeachgroup(questions):
+    """
+    >>> a=onefromeachgroup([{"options":["group=1"]},{"options":["group=1"]},{"options":[],"moules":"frittes"},{"options":["group=toto"]}])
+    >>> a == [{'options': [], 'moules': 'frittes'}, {'options': ['group=1']}, {'options': ['group=toto']}]    
+    True
+    
+    """
+    nogroup=[]
+    groups={}
+    for q in questions:
+        G= [ x for x in q.get('options',{}) if x.startswith('group=') ]
+
+        if len(G)==0:
+            nogroup.append(q)
+        elif len(G) > 1:
+            print('trop de groupes',str(G))
+            return None
+        else:
+            g=G[0][6:]
+            if g not in groups:
+                groups[g]=[]
+            groups.get(g).append(q)
+    for gl in groups.values():
+        nogroup.append(random.choice(gl))
+    return nogroup
 
 def optiondic(l):
     d={}
