@@ -93,6 +93,7 @@ int main(int argc, char* argv[])
 tests==
 [["Exécution simple", "", "5"],
  ["Quelques éléments", "12 2", "Il y a quelque entiers 1 qui sont dans 3 ce texte, celui la 3.1415 c\'est un float donc 2 entiers."],
+ ["Aléatoire","",'Vive '+' PLATON '.join([str(random.randint(1,4)),str(random.randint(11, 24)),str(random.randint(11, 24))])+" ."],
  ]
 ==
 
