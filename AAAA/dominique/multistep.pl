@@ -73,6 +73,7 @@ elif  q['type'] == 'TextSelect':
     statement.append(q['text'])
     ztext.setdata_from_textDR(q['items'][0])
 
+grade=22
 
 ==
 
