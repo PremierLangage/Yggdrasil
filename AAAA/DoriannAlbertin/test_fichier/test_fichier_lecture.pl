@@ -5,6 +5,7 @@ title= Lecture
 
 extends=/ComputerScience/python/template/pltest.pl
 @ /utils/sandboxio.py
+@ test_text.txt
 
 before==
 from random import randint
