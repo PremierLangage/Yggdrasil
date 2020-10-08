@@ -4,7 +4,7 @@
 
 author=
 
-title=Recherche d'entiers dans un flux alphanumérique
+title=Recherche d'entiers dans un flux alphanumérique (pour les meilleurs)
 
 tag=Fonction|AppelFonction|TransmissionParametre|RetourFonction|TransmissionAdresse
 
@@ -100,6 +100,7 @@ tests==
  ["Aléatoire","",'Vive '+' la L1 Math Info '.join([str(random.randint(1,4)),str(random.randint(11, 24)),str(random.randint(11, 24))])+" ."],
  ]
 ==
+
 
 
 
