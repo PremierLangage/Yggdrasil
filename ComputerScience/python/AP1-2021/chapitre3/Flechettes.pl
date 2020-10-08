@@ -38,7 +38,9 @@ Ecrire un programme qui :
 <br>
 Si l'entrée vaut `50` alors le programme doit afficher `Il y a 1 façon(s) d'obtenir 50`.
 
-En effet, il n'y a qu'un triplet de Pythagore inférieur à 6: (3, 4, 5)
+En effet, il n'y a qu'une seul façon d'obtenir 50 avec 10 fléchettes:
+
+il faut mettre 10 fléchettes dans la zone 5 points, 0 dans la zone 2 points, 0 dans la zone 1 point et 0 fléchettes en dehors.
 <br>
 <br>
 Si l'entrée vaut `11` alors le programme doit afficher `il y a 2 triplet(s) inférieur(s) à 11`.
