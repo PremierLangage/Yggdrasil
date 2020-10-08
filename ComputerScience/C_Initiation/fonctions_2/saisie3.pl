@@ -4,7 +4,7 @@
 
 author=
 
-title=Recherche d'entiers dans un float
+title=Recherche d'entiers dans un flot alphanumérique
 
 tag=Fonction|AppelFonction|TransmissionParametre|RetourFonction|TransmissionAdresse
 
@@ -101,6 +101,7 @@ tests==
  ["Aléatoire","",'Vive '+' la L1 Math Info '.join([str(random.randint(1,4)),str(random.randint(11, 24)),str(random.randint(11, 24))])+" ."],
  ]
 ==
+
 
 
 
