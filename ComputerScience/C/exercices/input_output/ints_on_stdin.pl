@@ -68,13 +68,13 @@ code_after==#|c|
 
 checks_args_stdin==#|python|
 [["Simple test", [], "1"],
- ["Stdin vide", [], ""],
- ["Fini par zéro", [], "1 2 3 4 5 0"],
- ["Aléatoire", [], " ".join([str(randint(-10, 10)) for i in range(randint(2,6))])],
- ["Aléatoire", [], " ".join([str(randint(-10, 10)) for i in range(randint(6,20))])],
- ["Aléatoire", [], " ".join([str(randint(-20, 20)) for i in range(randint(10,20))])],
- ["Aléatoire", [], " ".join([choice(["Stop", "lettre", "mot45"]+[str(randint(-100,100)) for i in range(10)]) for i in range(randint(10,20))])],
- ["Aléatoire", [], " ".join([choice(["Stop", "lettre", "mot45"]+[str(randint(-100,100)) for i in range(10)]) for i in range(randint(10,20))])],
- ["Aléatoire", [], " ".join([choice(["Stop", "lettre", "mot45"]+[str(randint(-100,100)) for i in range(10)]) for i in range(randint(10,20))])]]
+ ["Entrée standard vide", [], ""],
+ ["Entrée finissante par un zéro", [], "1 2 3 4 5 0"],
+ ["Test aléatoire 1", [], " ".join([str(randint(-10, 10)) for i in range(randint(2,6))])],
+ ["Test aléatoire 2", [], " ".join([str(randint(-10, 10)) for i in range(randint(6,20))])],
+ ["Test aléatoire 3", [], " ".join([str(randint(-20, 20)) for i in range(randint(10,20))])],
+ ["Test aléatoire 4", [], " ".join([choice(["Stop", "lettre", "mot45"]+[str(randint(-100,100)) for i in range(10)]) for i in range(randint(10,20))])],
+ ["Test aléatoire 5", [], " ".join([choice(["Stop", "lettre", "mot45"]+[str(randint(-100,100)) for i in range(10)]) for i in range(randint(10,20))])],
+ ["Test aléatoire 6", [], " ".join([choice(["Stop", "lettre", "mot45"]+[str(randint(-100,100)) for i in range(10)]) for i in range(randint(10,20))])]]
 ==
 
