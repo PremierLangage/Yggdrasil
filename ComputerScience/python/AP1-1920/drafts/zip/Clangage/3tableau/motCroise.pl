@@ -18,9 +18,9 @@ On mémorise :
    une case noire par 1; 
    une case remplie par la lettre majuscule alphabétique contenue.  
   Ecrire une fonction `int place_noire(char plateau[][COLONNES],int x,int y)` qui place une case noire sur la case de coordonnées(x,y) de la grille.  
-      La fonction renvoie 1 si les coordonnées sont correctes et que la case était vide,0 sinon.    
+      La fonction renvoie 1 si les coordonnées sont correctes et que la case était vide, 0 sinon.    
 $
- Ecrire une fonction `int place_mot(char plateau[][COLONNES],int x,int y,char m[], char direction)}qui place,si possible, le mot aux coordonnées indiquées. Si {\tt direction} vaut{\tt 'h'} , le mot doit \^etre placé horizontalement, si {\tt direction} vaut {\tt 'v'}, le mot doit \^etre placé  verticalement.
+ Ecrire une fonction `int place_mot(char plateau[][COLONNES],int x,int y,char m[], char direction)}`qui place,si possible, le mot aux coordonnées indiquées. Si {\tt direction} vaut{\tt 'h'} , le mot doit \^etre placé horizontalement, si {\tt direction} vaut {\tt 'v'}, le mot doit \^etre placé  verticalement.
   Un mot  ne peut être placé que si:  
 			    toutes les coordonées sont valides
 			    les cases étaient vides ou contenaient des lettres 
