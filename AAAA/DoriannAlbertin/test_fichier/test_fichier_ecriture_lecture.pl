@@ -1,4 +1,4 @@
-# Fonctionne pas...
+# Work in progress
 
 author=Albertin
 title= Ecrire - ouvrir
