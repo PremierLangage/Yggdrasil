@@ -46,7 +46,7 @@ il faut mettre 10 fléchettes dans la zone 5 points et 0 dans les autres.
 <br>
 
 Si l'entrée vaut `6` alors le programme doit afficher `Il y a 5 façon(s) d'obtenir 50`
-En effet, il y a 5 façons d'obtenir `6` avec `10` fléchettes:
+En effet, il y a `5` façons d'obtenir `6` avec `10` fléchettes:
 6 = 0*1 + 3*2 + 0*5
 6 = 1*1 + 0*2 + 1*5
 6 = 2*1 + 2*2 + 0*5
