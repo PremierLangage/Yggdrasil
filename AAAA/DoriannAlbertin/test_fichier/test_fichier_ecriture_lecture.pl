@@ -19,7 +19,7 @@ Fermer le fichier.
 
 
 pltest==
->>> with open('fichier', 'r') as fichier:
+>>> with open('fichier.txt', 'r') as fichier:
         print(fichier.readline())
 dossier
 ==
