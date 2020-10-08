@@ -129,9 +129,9 @@ if(place_noire(tab,x,y))
   printf("case invalide \n"); 
  affiche(tab);
  /*mot*/ 
- scanf("%s",mot);
+ /*scanf("%s",mot);
  scanf("%d %d",&x,&y);
- scanf("%c",&d)
+ scanf(" %c",&d);
  if(place_mot(tab,x,y,mot,d))
    printf("mot valide \n");
  else
@@ -153,7 +153,7 @@ Perec */
 
 
 tests==
-[ ["simple éxécution", "","2 10 "]
+[ ["simple éxécution", "","2 10 PARADIS 0 0 h "]
  ]
 ==
 
