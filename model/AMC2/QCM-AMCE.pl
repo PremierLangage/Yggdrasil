@@ -74,8 +74,8 @@ if "onepergroup" in globals() and onepergroup :
     list_questions=onefromeachgroup(list_questions)
 elif 'nbstep' in globals():
     list_questions = rd.sample(list_questions, nbstep)
-else:
-    nbstep = len(list_questions)
+
+nbstep = len(list_questions)
 
 comp = []
 statement  = []
