@@ -75,9 +75,11 @@ tests==
   ["avec deux ", "","-1 -2"],
   ["avec un ", "","-1"],
   ["test qui plantait", "", "-7 10 17 3 18 20 8 -3 -1 15 -6 -15 8 7 -8 -12 -19 -19"],
-  ["aléatoire ", ""," ".join([str(random.randint(10,20)) for i in range(random.randint(5,10))])+"6"*14+" ".join([str(random.randint(-10,10)) for i in range(random.randint(5,10))])],
-  ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
+  ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])],
+  ["aléatoire ", ""," ".join([" ".join([str(random.randint(-20,20))]*(random.randint(1,10))) for i in range(random.randint(5,20))])],
+   ]
 ==
+
 
 
 
