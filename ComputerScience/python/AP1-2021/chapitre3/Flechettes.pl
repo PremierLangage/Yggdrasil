@@ -25,7 +25,7 @@ Une cible de flechettes contient 3 zones:
 
 Toute fléchette en dehors compte pour 0 points<br>
 
-On cherche à déterminer le nombre de façons d'obtenir un entier donné avec 10 fléchettes.<br>
+On cherche à déterminer le nombre de façons d'obtenir un entier donné avec **10** fléchettes.<br>
 <br>
 Ecrire un programme qui :
 
