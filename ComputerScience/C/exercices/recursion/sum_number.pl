@@ -22,8 +22,8 @@ title=Somme récursive des chiffres d'un grand entier
 tag=fonction|recursion|arithmétique
 
 text==
-Écrire une fonction récursive qui prend en argument un entier long 
-non signé et  qui calcule la somme des chiffres
+Écrire une fonction récursive qui prend en argument un **entier long 
+non signé** et  qui calcule la somme des chiffres
 apparaissant dans ce nombre écrit en base $% 10 %$. Mais cette somme 
 de chiffres est à réitérer jusqu'à qu'il ne reste plus qu'un seul chiffre.
 
@@ -71,7 +71,7 @@ code_after==#|c|
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
-  unsigned long int n = atoi(argv[1]);
+  unsigned long int n = strtol(argv[1], NULL, 10);
 
   printf("La somme des chiffres récursive de %lu est %lu.\n", n, sum_number_rec(n));
   return 0;
