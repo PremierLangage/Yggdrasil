@@ -16,10 +16,9 @@ soluce= presoluce.format(k=randint(1,6))
 ==
 
 presoluce==
-fichier = open("test_text.txt", 'r')
-lines = fichier.readlines()
+with  open("test_text.txt", 'r') as fichier:
+    lines = fichier.readlines()
 print(lines[{k}-1])
-fichier.close()
 ==
 
 text==
