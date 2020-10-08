@@ -31,9 +31,6 @@ Vous  pouvez en mettre plusieurs
 -=["666","aujourd'hui", "def", "@lt;html@gt;"] 
 -=["!autres","truc%","pour ris"]
 - for
-- in
-- and
-- or
 -=["list","int","dic"]
 
 =**[nb=13, group=odd] What are the odd numbers ? 
@@ -73,12 +70,12 @@ from aleaq import buildquestion, onefromeachgroup
 
 list_questions = parse_AMC_TXT(questions)
 
-if 'nbstep' in globals():
+if "onepergroup" in globals() and onepergroup :
+    list_questions=onefromeachgroup(list_questions)
+elif 'nbstep' in globals():
     list_questions = rd.sample(list_questions, nbstep)
 else:
     nbstep = len(list_questions)
-if "onepergroup" in globals() and onepergroup :
-    list_questions=onefromeachgroup(list_questions)
 
 comp = []
 statement  = []
