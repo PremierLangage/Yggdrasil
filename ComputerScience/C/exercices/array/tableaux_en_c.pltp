@@ -1,4 +1,4 @@
-title=Exercices sur la notions de tableau
+title=Exercices sur la notion de tableau
 
 introduction==
 Voici quelques exercices manipulant des tableaux.
@@ -14,4 +14,5 @@ Voici quelques exercices manipulant des tableaux.
 @ /ComputerScience/C/exercices/array/init2dtab.pl
 @ /ComputerScience/C/exercices/array/moyenne_positif.pl
 @ /ComputerScience/C/exercices/array/most_present.pl
+
 
