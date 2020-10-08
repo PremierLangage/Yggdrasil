@@ -6,7 +6,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
 text==
 Ecrire une fonction de protopype `int plateau(int tab[],int taille,int *debut );` qui reçoit un tableau d'entiers et sa taille,
- renvoie le longueur de la plus longue partie du tableau constitué d'éléments égaux, et place à l'adresse $%{ \tt debut}%$
+ renvoie la longueur de la plus longue partie du tableau constitué d'éléments égaux, et place à l'adresse $%{ \tt debut}%$
  l'indice de son premier élément. <br> En cas d'égalité, on gardera le plus petit indice.
 ==
 
@@ -18,7 +18,7 @@ codebefore==
 ==
 
 editor.code==
-  int plateau(int t[], int taille,int *debut){
+int plateau(int t[], int taille,int *debut){
   /* Votre code ici */
 }
 ==
