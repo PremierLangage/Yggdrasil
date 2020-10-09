@@ -48,6 +48,7 @@ for(;i<MAX;i+=1){
 codeafter==
 int main(int argc, char* argv[]){
   scanf("%d",&MAX);
+  printf("%d\n",MAX);
   int tab[MAX];
   int lu;
   int i;
