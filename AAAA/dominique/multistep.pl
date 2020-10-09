@@ -152,6 +152,7 @@ else: # Fin de l'exo
     text  = format_feedback_lightscore(currentscore, "") + feedbacks
     form= ""
     grade=(currentscore, "Merci et à Bientot.")
+
 ==
 
 form==
