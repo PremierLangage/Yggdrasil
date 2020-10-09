@@ -76,7 +76,7 @@ tests==
   ["avec un ", "","-1"],
   ["plateau en fin", "", "-7 10 17 3 18 20 8 -3 -1 15 -6 -15 8 7 -8 -12 -19 -19"],
   ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])],
-  ["aléatoire ", ""," ".join([" ".join([str(random.randint(-20,20))]*(random.randint(1,10))) for i in range(random.randint(5,20))])],
+  ["aléatoire avec beacuoup de plateaux ", ""," ".join([" ".join([str(random.randint(-20,20))]*(random.randint(1,10))) for i in range(random.randint(5,20))])],
    ]
 ==
 
