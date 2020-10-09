@@ -79,5 +79,7 @@ Chaohui a copie les fichiers et modifier
  tag=InstructionsRepetitives|ForInRange
 @ /ComputerScience/python/AP1-2021/chapitre2/boucleif.pl
 
+# Exercice 10 (nombres diviseurs)
+ tag=InstructionsRepetitives|ForInRange
 
 
