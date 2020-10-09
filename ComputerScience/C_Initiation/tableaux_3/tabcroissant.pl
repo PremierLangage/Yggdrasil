@@ -10,7 +10,7 @@ text==
 <p>
 Exemple
 avec MAX valant 5 : <br>
-- si tab contient $%-4,5,10,14,1%$, est_croissante(tab) renvoie $%0%$.<br>
+- si tab contient $%-4,5,10,14,1%$, est_croissante(tab) renvoie $%0%$,<br>
 - Si tab contient $%5,6,8,75,82%$, est_croissante(tab) renvoie $%1%$.<br>
 
 <p>
