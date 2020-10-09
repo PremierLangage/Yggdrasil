@@ -73,7 +73,7 @@ Et moi (Fred), comme Eùùanuel, j'ai copié les fichiers depuis leur répertoir
 
 
 
-Chaohui a copie les fichiers et modifier
+Chaohui a copie les fichiers et fait certians modifications pour que l'exos soient plus clairs
 Remarque: je ne sais pas pourquoi dynawhile.pl a ete mis dans le fichier .pltp
 
 # Exercice 9 (nombres diviseurs)
