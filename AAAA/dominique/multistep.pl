@@ -110,13 +110,7 @@ def strfromcomp(q):
 
 currentscore=0
 if step> -1:
-
-    # Evaluation de la réponse et stockage pour la suite 
-    q=list_questions[step]
-    score = evaluate(q)
-    scores.append(score)
-    feedbacks += env.from_string(text+" \n {{ "+strfromcomp(q)+" | component }} \n ").render(globals())
-    currentscore=sum(scores)//nbstep
+    pass
 
 step = step+1
 if step<nbstep:
