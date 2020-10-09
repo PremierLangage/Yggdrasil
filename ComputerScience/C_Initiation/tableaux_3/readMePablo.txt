@@ -12,5 +12,4 @@ tableau2d : a refaire l'enoncé MAIS OCE sait pas d'où il sort ....
 idées :
 rotation d'un tableau : [1,2,3,4] -> [2,3,4,1] (voir de deux tableau pas dans le même sens)
 
-tableau2d : a refaire l'enoncé
 
