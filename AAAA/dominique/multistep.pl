@@ -114,7 +114,7 @@ if step<nbstep:
     elif  q['type'] == 'TextSelect':
         
         ztext.setdata_from_textDR(q['items'][0])
-    text = q['text']
+    text = "Question n°"+str(nbstep)+": "+q['text']
     grade=(currentscore, "")
 
 else: # Fin de l'exo 
