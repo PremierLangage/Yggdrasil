@@ -5,8 +5,8 @@ questions ==
 
 
 * Radio : <br>
-   $%\verb+a=1+%s<br>
-    $%\verb+b=2+%s<br>
+ a=1<br>
+ b=2<br>
 
 
 + a=1
