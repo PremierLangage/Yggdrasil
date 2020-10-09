@@ -6,6 +6,9 @@ extends= /model/AMC2/QCM-AMCE.pl
 
 title= DR's Exo
 
+
+text=
+
 questions==
 
 * soir le code suivant combien d'erreur comptez vous ?
