@@ -85,5 +85,5 @@ Remarque: je ne sais pas pourquoi dynawhile.pl a ete mis dans le fichier .pltp
 @ /ComputerScience/python/AP1-2021/chapitre2/bouclestr.pl
 
 # Exercice 11 (Suite de Syracuse)
-tag=InstructionsRepetitives|ForInRange
+ tag=InstructionsRepetitives|ForInRange
 @ /ComputerScience/python/AP1-2021/chapitre2/bouclestr.pl
