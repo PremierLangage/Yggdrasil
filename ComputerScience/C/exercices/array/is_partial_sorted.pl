@@ -87,7 +87,7 @@ code_after==#|c|
 ==
 
 checks_args_stdin==#|python|
-[["Test basique", [], ""]]
+[["Test basique", [], " ".join([str(randint(-100, 100)) for i in range(20)])]]
 ==
 
 
