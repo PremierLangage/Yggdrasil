@@ -1,27 +1,19 @@
 title= Test_QCM
 
-extends=/model/AMC_TXT.pl
+extends=/model/AMC2/QCM-AMCE.pl
 
 questions==
-* Lequel de ces codes affiche 2 ?
--=[print('print(a)')]
-+=[print('2')]
+
+* on dit des trucs
 
 
+    1. print('des machins')
 
-* Qu'affiche le programme suivant lors de son execution ?<br><br>
+    2. print("des bidules")
 
-`
-n = -4
-for i in range(6):
-    n = n + 2
-print(n)
-`
-- 4
-- 5
-- 6
-- 7
-+ 8
++ ["for i in range(2):\n\t print(i)","b","E"]
+- ["c","d","f"]
+
 
 
 
