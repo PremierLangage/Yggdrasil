@@ -82,6 +82,6 @@ Remarque: je ne sais pas pourquoi dynawhile.pl a ete mis dans le fichier .pltp
 
 # Exercice 10 (nombres diviseurs)
  tag=InstructionsRepetitives|ForInRange
-
+@ /ComputerScience/python/AP1-2021/chapitre2/bouclestr.pl
 
 
