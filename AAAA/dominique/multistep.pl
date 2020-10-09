@@ -116,7 +116,7 @@ if step> -1:
     score = evaluate(q)
     scores.append(score)
     fifi = text
-    fifi += " \n {{ "
+    fifi += " \n  "
     
     #fifi += strfromcomp(q)
     #fifi += " | component }} \n "
