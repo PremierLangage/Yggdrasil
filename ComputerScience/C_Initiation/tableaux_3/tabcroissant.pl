@@ -7,7 +7,7 @@ text==
 Écrire une fonction `est_croissante` qui reçoit un tableau de taille MAX et renvoie 1
  si les entiers sont en ordre strictement croissant, et 0 sinon. <br>
 
- Exemple
+Exemple
 avec MAX valant 5 : <br>
 si  tab contient $%-4,5,10,14,1%$, `est_croissante(tab)` renvoie $%0%$.<br>
 S'il contient $%5,6,8,75,82%$, `est_croissante(tab)` renvoie $%1%$.<br>
