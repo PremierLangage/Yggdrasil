@@ -12,10 +12,9 @@ text=
 questions==
 
 * soir le code suivant combien d'erreur comptez vous ?
- 
- 
- 
-       1. printf("%d",3)
+
+
+    1. printf("%d",3)
 
 
         2. a= b+1
