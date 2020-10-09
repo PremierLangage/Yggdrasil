@@ -4,8 +4,8 @@ tag=tableau 2d
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-Ecrire une fonction de protopype `void remplit(char t[][MAX],int li,int col);` 
-ses dimensions effectives et remplit la partie effective avec les lettres minuscules consécutives.<br>
+Ecrire une fonction de protopype `void remplit(char t[MAX][MAX],int li,int col);` 
+qui remplit la partie effective avec les lettres minuscules consécutives.<br>
 Après la lettre $%\tt{z}%$ on repart de la lettre $%\tt{a}%$ <br>
 Exemples (avec MAX 50)<br>
 remplit(t,3,4) transforme les 3 premières lignes et 4 premières colonnes en<br>
@@ -33,7 +33,7 @@ void remplit(char t[][MAX],int li,int col){
 }
 ==
 solution==
-void remplit(char t[][MAX],int li,int col){
+void remplit(char t[MAX][MAX],int li,int col){
   char l='a';
   int d=0;
   int i,j;
@@ -72,4 +72,5 @@ tests==
 ["aléatoire ", "",str(random.randint(4,8))+" "+str(random.randint(9,15))],
 ]
 ==
+
 
