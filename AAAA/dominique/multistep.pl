@@ -140,8 +140,8 @@ if step<nbstep:
     grade=(currentscore, "<br>")
 
 else: # Fin de l'exo 
-    form= feedbacks
-    text= ""
+    text  = format_feedback_lightscore(currentscore, "") + feedbacks
+    form= ""
     grade=(currentscore, "")
 ==
 
