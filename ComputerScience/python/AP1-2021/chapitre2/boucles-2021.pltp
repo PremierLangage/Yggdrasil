@@ -42,7 +42,7 @@ Si un exercice vous semble faux vous pouvez demander de l'aide sur le forum d'en
 
 
 # Faire une boucle avec des if
-@ /ComputerScience/python/AP1-1920/drafts/zip/boucle1/boucleif.pl
+@ /ComputerScience/python/AP1-2021/chapitre2/boucleif.pl
 
 # Faire une boucle avec des chaines de caractères 
 @ /ComputerScience/python/AP1-1920/drafts/zip/boucle1/bouclestr.pl
@@ -54,6 +54,7 @@ Si un exercice vous semble faux vous pouvez demander de l'aide sur le forum d'en
 
 # Exercice sur les boucles répétable sans taboo
 @  /ComputerScience/python/AP1-1920/drafts/dominique/loop_exo.pl
+
 
 
 
