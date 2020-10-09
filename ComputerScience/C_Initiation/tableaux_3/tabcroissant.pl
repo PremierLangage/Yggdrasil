@@ -14,7 +14,7 @@ avec MAX valant 5 : <br>
 - Si tab contient $%5,6,8,75,82%$, est_croissante(tab) renvoie $%1%$.<br>
 
 <p>
-(*) MAX est une constante symbolique définie par #define MAX XXXXX
+(*) MAX est une constante symbolique définie par #define MAX XXXXX, où XXXXX est un entier positif.
 ==
 codebefore==
 
