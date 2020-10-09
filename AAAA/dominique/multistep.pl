@@ -15,7 +15,10 @@ settings.cumulative % false
 
 questions==
 
-** poufpu
+** poutfou
+    bande 
+    def
+    moules
 + oui
 - non
 ==
@@ -122,7 +125,6 @@ else: # Fin de l'exo
 ==
 
 form==
-<p>Ha</p>
 {% if q['type'] == "radio" %}
     {{ radio | component }}
 {% elif q['type'] == "Checkbox" %}
@@ -130,6 +132,5 @@ form==
 {% elif q['type'] == "TextSelect" %}
     {{ ztext | component }}
 {% endif %}
-<p>Hb</p>
 ==
 
