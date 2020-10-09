@@ -52,6 +52,9 @@ Réponses à mettre sous la forme : += Liste_de_Bonne_Rep ou compréhension
 Pour chaque question, on peut mettre des options entre [] :
 [group=] pour qu'il choisisse au hasard un exo parmi ceux qui ont le même tag
 
+[nb=] pour déterminer le nombre de réponse pour un radio
+
+[nbb=,nbg=] pour déterminer le nombre de bonne et de mauvaise réponse pour un checkbox 
 ==
 
 
