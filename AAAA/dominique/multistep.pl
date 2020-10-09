@@ -80,7 +80,7 @@ env = Environment(loader=BaseLoader())
 env.globals.update({
     "component":    component
 })
-env.filters["component"] = component
+#env.filters["component"] = component
 
 def compfortyep(q):
     if q['type'] == "Radio":
