@@ -12,7 +12,7 @@ text=
 
 textf==  
 
-Ecrire un programme qui lit un  entier strictement positif et affiche la chaine de caractères formée des n premiers multiples de {XX} (à partir de 0).
+Ecrire un programme qui lit un  entier strictement positif et affiche la chaine de caractères formée des n premiers multiples de {XX} (à partir de 1).
 
 Si n vaut 4 on affiche {YY}.
 
@@ -27,7 +27,7 @@ XX= random.choice([13,17,23,27,51])
 soluce= f"XX={XX}\n"+soluce2
 YY=""
 for i in range(4):
-    YY+=str(i*XX)
+    YY+=str((i+1)*XX)
 text = textf.format(XX=XX,YY=YY)
 
 ==
