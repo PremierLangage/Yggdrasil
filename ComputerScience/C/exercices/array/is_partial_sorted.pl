@@ -105,7 +105,12 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[ ["Test basique", [str(randint(-100, 100)) for i in range(20)], ""] ]
+[ ["Liste croissante simple", [str(i) for i in range(20)], ""],
+  ["Liste décroissante simple", [str(i) for i in range(19, -1, -1)], ""],
+  ["Liste croissante aléatoire", sorted([str(randint(-10, 10)) for i in range(20)]), ""],
+  ["Liste décroissante aléatoire", sorted([str(randint(-10, 10)) for i in range(20)], reverse=True), ""],
+  ["Test aléatoire 1", [str(randint(-10, 10)) for i in range(20)], ""],
+  ["Test aléatoire 2", [str(randint(-10, 10)) for i in range(20)], ""] ]
 ==
 
 
