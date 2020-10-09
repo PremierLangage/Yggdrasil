@@ -24,7 +24,7 @@ codebefore==
 
 #include <stdio.h>
 #include <stdlib.h>
-#define MAX 15
+  int MAX;
 
 ==
 
@@ -47,7 +47,6 @@ for(;i<MAX;i+=1){
 
 codeafter==
 int main(int argc, char* argv[]){
-  int MAX;
   scanf("%d",&MAX);
   int tab[MAX];
   int lu;
