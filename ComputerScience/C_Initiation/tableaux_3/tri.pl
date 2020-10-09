@@ -1,6 +1,6 @@
 
 title=Tri d'un tableau
-tag=tableau
+tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau|TransmissionAdresse|Tri
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
 text==
@@ -62,6 +62,7 @@ tests==
    ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,10))])],
   ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
 ==
+
 
 
 
