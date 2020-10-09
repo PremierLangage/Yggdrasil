@@ -36,7 +36,7 @@ editor.code==
 
 solution==
 int est_croissante(int tab[]){
-  int i=1;
+int i=1;
 for(;i<MAX;i+=1){
     if (tab[i-1] >= tab[i])
       return 0;
