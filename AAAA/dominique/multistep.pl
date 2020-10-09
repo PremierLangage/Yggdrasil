@@ -99,7 +99,7 @@ if step> -1:
     q=list_questions[step]
     score = compfortyep(list_questions[step]).eval()
     scores.append(score)
-    feedbacks += env.from_string(text+" \n "+form+" \n ").render(globals())
+    feedbacks += env.from_string(text+" \n "+component(compfortyep(list_questions[step]).eval())+" \n ").render(globals())
     currentscore=sum(scores)//nbstep
 
 step = step+1
