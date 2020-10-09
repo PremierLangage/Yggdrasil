@@ -27,6 +27,10 @@ Cette suite atteint 1 quelle que soit la valeur initiale. (Ceci n'a jamais été
 Ecrire un programme qui lit un entier naturel et qui calcule et affiche les éléments de la suite jusqu'a atteindre la valeur 1 (incluse).
 
 ==
+code==
+n=int(input("Un nombre : "))
+
+==
 
 soluce==
 n=int(input("Un nombre : "))
@@ -44,5 +48,6 @@ Test | 22
 de zéro | 0
 de neg |-3
 ==
+
 
 
