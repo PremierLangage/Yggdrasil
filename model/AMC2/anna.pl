@@ -25,8 +25,8 @@ questions==
 -=[x for x in range(3,77) if x%2==0 ]
 
 =*[nb=3,group=odd] What are the even numbers ? 
-+=[x for x in range(3,77) if x%2==1 ]
--=[x for x in range(3,77) if x%2==0 ]
+-=[x for x in range(3,77) if x%2==1 ]
++=[x for x in range(3,77) if x%2==0 ]
 
 ==
 
