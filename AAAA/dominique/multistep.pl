@@ -60,24 +60,25 @@ Ce quiz contient {{nbstep}} questions.
 evaluator==
 
 
-step= step + 1 
-q=list_questions[step]
-if q['type'] == "Radio":
-    radio.setitems(q['items'])
-    radio.setsol_from_index(q['index'])
-    if 'ordered' not in q['options']:
-        radio.shuffle()
-elif q['type'] == "Checkbox":
-    check.setitems(q['items'])
-    check.setsol_from_index(q['index'])
-    if 'ordered' not in q['options']:
-        check.shuffle()
-elif  q['type'] == 'TextSelect':
-    statement.append(q['text'])
-    ztext.setdata_from_textDR(q['items'][0])
+step= step + 1
+if step<nbstep:
+    q=list_questions[step]
+    if q['type'] == "Radio":
+        radio.setitems(q['items'])
+        radio.setsol_from_index(q['index'])
+        if 'ordered' not in q['options']:
+            radio.shuffle()
+    elif q['type'] == "Checkbox":
+        check.setitems(q['items'])
+        check.setsol_from_index(q['index'])
+        if 'ordered' not in q['options']:
+            check.shuffle()
+    elif  q['type'] == 'TextSelect':
+        statement.append(q['text'])
+        ztext.setdata_from_textDR(q['items'][0])
 
-grade=(22, next)
-
+    grade=(22, next)
+else: # Fin de l'exo 
 ==
 
 form==
