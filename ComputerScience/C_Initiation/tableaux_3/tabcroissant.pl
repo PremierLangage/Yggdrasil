@@ -22,7 +22,7 @@ codebefore==
 
 #include <stdio.h>
 #include <stdlib.h>
-#define MAX (rand%21)
+#define MAX (rand()%21)
 
 ==
 
