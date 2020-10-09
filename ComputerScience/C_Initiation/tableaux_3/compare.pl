@@ -1,5 +1,4 @@
 
-
 title=Comparaison de deux tableaux
 
 tag=type
