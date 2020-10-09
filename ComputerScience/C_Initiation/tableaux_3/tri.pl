@@ -21,7 +21,7 @@ return *a-*b;
 ==
  
 editor.code==
-..tri(...)
+... tri(...)
 ==
 
 solution==
@@ -62,6 +62,7 @@ tests==
    ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,10))])],
   ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
 ==
+
 
 
 
