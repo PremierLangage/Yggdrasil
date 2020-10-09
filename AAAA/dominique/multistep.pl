@@ -87,7 +87,7 @@ def compfortyep(q):
     if  q['type'] == 'TextSelect':
         return ztext
 
-
+currentscore=0
 if step> -1:
 
     # Evaluation de la réponse et stockage pour la suite 
