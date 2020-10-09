@@ -1,7 +1,7 @@
 
 title=Comparaison de deux tableaux
 
-tag=Tableau|Fonction|DeclarationFonction|ParcoursTableau
+tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
