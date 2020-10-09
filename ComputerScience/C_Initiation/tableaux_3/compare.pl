@@ -1,7 +1,9 @@
 
 
 title=Comparaison de deux tableaux
+
 tag=type
+
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
 text==
@@ -67,6 +69,7 @@ tests==
    ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,10))])],
   ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
 ==
+
 
 
 
