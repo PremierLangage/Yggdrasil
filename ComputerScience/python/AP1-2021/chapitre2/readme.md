@@ -75,7 +75,7 @@ Et moi (Fred), comme Eùùanuel, j'ai copié les fichiers depuis leur répertoir
 
 Chaohui a copie les fichiers et modifier
 
-# Exercice 9 (liste diviseurs)
+# Exercice 9 (nombres diviseurs)
  tag=InstructionsRepetitives|ForInRange
 
 
