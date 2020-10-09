@@ -20,6 +20,10 @@ codebefore==
 #include <stdio.h>
 #include <stdlib.h>
 
+int comp(int *a,int*b){
+return *a-*b;
+}
+
 ==
  
 editor.code==
@@ -27,16 +31,12 @@ editor.code==
 ==
 
 solution==
-int comp(int *a,int*b){
-return *a-*b;
-}
 
 void tri(int tab[],int size){
 
   int i;
 
   qsort(tab,size,sizeof(int),comp);
-
 
 }
 ==
