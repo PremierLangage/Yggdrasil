@@ -6,7 +6,7 @@ questions ==
 
 * Radio : 
    $%\verb+a=1+
-    \verb+b=2+
+    \verb+b=2+<br>
    \en{verbatim} %$
 
 + a=1
