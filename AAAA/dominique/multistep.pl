@@ -50,7 +50,10 @@ random.shuffle(list_questions)
 
 step= -1 # première étape 
 text= f"Ce test à {nbstep} questions. Pas de retour arrière et un seul essai ! "
-    
+
+
+scores=[]
+feedbacks=""
 ==
 intro ==
 Ce quiz contient {{nbstep}} questions.
@@ -58,10 +61,36 @@ Ce quiz contient {{nbstep}} questions.
 
 
 evaluator==
+from jinja2 import Environment, BaseLoader
 
 
-step= step + 1
+env = Environment(loader=BaseLoader())
+env.globals.update({
+    "component":    component
+})
+env.filters["component"] = component
+
+def compfortyep(q):
+    if q['type'] == "Radio":
+        return radio
+    if q['type'] == "Checkbox":
+        return check
+    if  q['type'] == 'TextSelect':
+        return ztext
+
+
+if step> -1:
+
+    # Evaluation de la réponse et stockage pour la suite 
+    q=list_questions[step]
+    score = compfortyep(list_questions[step]).eval()
+    scores.append(score)
+    feedbacks += env.from_string(text+" \n "+form+" \n ").render(dic)
+    currentscore=sum(scores)//nbstep
+
+step = step+1
 if step<nbstep:
+
     q=list_questions[step]
     if q['type'] == "Radio":
         radio.setitems(q['items'])
@@ -77,8 +106,11 @@ if step<nbstep:
         statement.append(q['text'])
         ztext.setdata_from_textDR(q['items'][0])
 
-    grade=(22, next)
+    grade=(currentscore, "")
+
 else: # Fin de l'exo 
+    text= feedbacks
+    grade=(currentscore, "")
 ==
 
 form==
