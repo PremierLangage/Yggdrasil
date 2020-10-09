@@ -25,7 +25,7 @@ codebefore==
 editor.code==
 int nb_inversions(int tab[], int size){
  
- }
+}
 ==
 
 solution==
