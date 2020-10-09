@@ -24,7 +24,6 @@ codebefore==
 
 #include <stdio.h>
 #include <stdlib.h>
-#define MAX 15
 
 ==
 
@@ -46,6 +45,9 @@ for(;i<MAX;i+=1){
 ==
 
 codeafter==
+
+#define MAX 15
+
 int main(int argc, char* argv[]){
   int tab[MAX];
   int lu;
@@ -70,6 +72,7 @@ tests==
 ["aléatoire ", ""," ".join([str(random.randint(0,20)) for i in range(MAX)])] 
 ]
 ==
+
 
 
 
