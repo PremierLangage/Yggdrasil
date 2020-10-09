@@ -112,9 +112,9 @@ if step<nbstep:
         if 'ordered' not in q['options']:
             check.shuffle()
     elif  q['type'] == 'TextSelect':
-        statement.append(q['text'])
+        
         ztext.setdata_from_textDR(q['items'][0])
-
+    text = q['text']
     grade=(currentscore, "")
 
 else: # Fin de l'exo 
