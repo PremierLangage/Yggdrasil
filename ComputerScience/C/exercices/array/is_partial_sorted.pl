@@ -105,7 +105,7 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[ ["Test basique", [str(randint(-100, 100)) for i in range(20)]), ""] ]
+[ ["Test basique", [str(randint(-100, 100)) for i in range(20)], ""] ]
 ==
 
 
