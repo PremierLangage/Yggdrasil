@@ -27,29 +27,22 @@ int plateau(int t[], int taille,int *debut){
 #La solution plante, cf le test ajouté "test qui plante"
 solution==
 int plateau(int t[], int taille,int *debut){
-  int debcourant,debmax,i;
-  int lcourant,lmax;
-  debcourant=debmax=0;
-  lcourant=lmax=1;
-  for (i=1;i<taille;i++){
-    if(t[i]==t[debcourant])
-      lcourant++;
-    else{
-      if(lmax<lcourant){
-        lmax=lcourant;
-        debmax=debcourant;
-      }
-      debcourant=i;
-      lcourant=1;
+    int len = 0, i;
+    *debut = 0;
+    int cur = 0;
+    for (i = 1; i < taille; i++)
+    {
+        if (t[i]==t[i-1])
+            cur++;
+        else
+            cur = 0;
+        if (cur > len)
+        {
+            len = cur;
+            *debut = (i-len);
+        }
     }
-
-  }
-  if(lmax<lcourant){
-    lmax=lcourant;
-    debmax=debcourant;
-  }
- *debut=debmax;
-  return lmax;
+    return len+1;
 }
  
 ==
@@ -81,6 +74,7 @@ tests==
   ["aléatoire avec beacuoup de plateaux ", ""," ".join([" ".join([str(random.randint(-20,20))]*(random.randint(1,10))) for i in range(random.randint(5,20))])],
    ]
 ==
+
 
 
 
