@@ -3,7 +3,16 @@ title=Tableau Croissant
 tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau|ComparaisonContigues
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
+
 author= 
+
+builder=@/builder/before.py
+
+before==
+from random import randint
+MAX = randint(1, 100)
+==
+
 text==
 
 Écrire une fonction `est_croissante` qui reçoit un tableau de taille MAX (*) et renvoie 1
@@ -22,7 +31,7 @@ codebefore==
 
 #include <stdio.h>
 #include <stdlib.h>
-#define MAX (rand()%21)
+#define MAX ({{MAX}}%21)
 
 ==
 
@@ -68,6 +77,7 @@ tests==
 ["aléatoire ", ""," ".join([str(random.randint(0,20)) for i in range(MAX)])] 
 ]
 ==
+
 
 
 
