@@ -88,7 +88,7 @@ Remarque:
 
 # Exercice 11 (Suite de Syracuse)
  tag=InstructionsRepetitives|ForInRange
-@ /ComputerScience/python/AP1-2021/chapitre2/bouclestr.pl
+@ /ComputerScience/python/AP1-2021/chapitre2/syracuse.pl
 
 # Exercice 11 (Boucle d'OR (repetable))
  tag=InstructionsRepetitives|ForInRange
