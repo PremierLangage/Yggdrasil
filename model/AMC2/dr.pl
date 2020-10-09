@@ -11,21 +11,19 @@ text=
 
 questions==
 
-* soir le code suivant combien d'erreur comptez vous ?
+
+* Radio : cick sur a
++ a
+- b
+
+** CheckBox 
++ a
+- b
 
 
-    1. printf("%d",3)
 
-
-    2. a= b+1
-
-
- 
-- 0
-- 1
-+ 2
-- 3
 ==
+
 
 
 
