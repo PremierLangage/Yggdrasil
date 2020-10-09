@@ -5,7 +5,6 @@ TabCroissant : tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|Pa
 Plateau : fait tag=Tableau|Fonction|TransmissionParametre|TransmissionAdresse|ParcoursTableau => donner un court exemple pour aider à comprendre
 Miroir : c'est OK
 inversions.pl fait   tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau|TransmissionAdresse
-
 tri.pl : fait tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau|TransmissionAdresse|Tri
 tableau2d : a refaire l'enoncé MAIS OCE sait pas d'où il sort ....
 
