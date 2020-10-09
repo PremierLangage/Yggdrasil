@@ -9,9 +9,9 @@ questions==
 +Dominique
 -Christian
 
-* Quel est le prénom de Revuz
-+Dominique
--Christian
+* Quel est le prénom de Diaw
++Anna
+-Aminata
 
 *+ Clicker sur la bonne conjugaison du verbe  
 >Je suis ( aller / {{allé}} ) au bureau hier
