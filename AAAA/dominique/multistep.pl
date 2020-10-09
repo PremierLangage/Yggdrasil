@@ -115,7 +115,7 @@ if step> -1:
     q=list_questions[step]
     score = evaluate(q)
     scores.append(score)
-    fifi = text + " \n 
+    fifi = text + " \n "
     #fifi += strfromcomp(q)
     #feedbacks += env.from_string(fifi).render(globals())
     currentscore=sum(scores)//nbstep
