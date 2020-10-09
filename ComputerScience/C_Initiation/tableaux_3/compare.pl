@@ -38,7 +38,6 @@ int identique_tab(int tab[],int deu[], int size){
 ==
 
 codeafter==
-
 int main(int argc, char* argv[]){
   int tab[100],cop[100],dif[100];
   int size = 0;
