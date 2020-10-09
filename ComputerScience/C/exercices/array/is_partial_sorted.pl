@@ -110,8 +110,12 @@ checks_args_stdin==#|python|
   ["Liste décroissante simple", [str(i) for i in range(19, -1, -1)], ""],
   ["Liste croissante aléatoire", sorted([str(randint(-10, 10)) for i in range(20)]), ""],
   ["Liste décroissante aléatoire", sorted([str(randint(-10, 10)) for i in range(20)], reverse=True), ""],
+  ["Test aléatoire croissant localement", [str(randint(-10, 10)) for i in range(index_min)]+sorted([for i in range (index_max - index_min + 1)])+[str(randint(-10, 10)) for i in range(19-index_max)], "" ],
+  ["Test aléatoire décroissant localement", [str(randint(-10, 10)) for i in range(index_min)]+sorted([for i in range (index_max - index_min + 1)], reverse=True)+[str(randint(-10, 10)) for i in range(19-index_max)], "" ],
   ["Test aléatoire 1", [str(randint(-10, 10)) for i in range(20)], ""],
-  ["Test aléatoire 2", [str(randint(-10, 10)) for i in range(20)], ""] ]
+  ["Test aléatoire 2", [str(randint(-10, 10)) for i in range(20)], ""],
+  ["Test aléatoire 3", [str(randint(-10, 10)) for i in range(20)], ""],
+  ["Test aléatoire 4", [str(randint(-10, 10)) for i in range(20)], ""] ]
 ==
 
 
