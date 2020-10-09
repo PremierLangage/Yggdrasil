@@ -2,13 +2,13 @@
 
 title=Plus long plateau
 
-tag=Tableau|Fonction|TransmissionParametre|TransmissionAdresse|ParcoursTableau|Accumulateurs
+tag=Tableau|Fonction|TransmissionParametre|TransmissionAdresse|ParcoursTableau
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
 text==
 Ecrire une fonction de protopype `int plateau(int tab[],int taille,int *debut);` qui reçoit un tableau d'entiers et sa taille,
- renvoie la longueur de la plus longue partie du tableau constitué d'éléments égaux, et place à l'adresse $%{ \tt debut}%$
+ renvoie la longueur de la plus longue partie du tableau constituée d'éléments égaux, et place à l'adresse $%{ \tt debut}%$
  l'indice du premier élément du plateau. <br> En cas d'égalité, on gardera le plus petit indice.
 ==
 
