@@ -1,6 +1,8 @@
 
 title=Maximum d'un tabeau
-tag=tab
+
+tag=Tableau|Fonction|ParcoursTableau
+
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
 text==
@@ -62,6 +64,7 @@ tests==
   ["aléatoire ", ""," ".join([str(random.randint(-10,10)) for i in range(random.randint(5,20))])],
   ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
 ==
+
 
 
 
