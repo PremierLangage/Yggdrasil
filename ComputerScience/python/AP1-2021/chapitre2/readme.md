@@ -77,7 +77,7 @@ Chaohui a copie les fichiers et modifier
 
 # Exercice 9 (nombres diviseurs)
  tag=InstructionsRepetitives|ForInRange
-
+@ /ComputerScience/python/AP1-2021/chapitre2/boucledivise.pl
 
 
 
