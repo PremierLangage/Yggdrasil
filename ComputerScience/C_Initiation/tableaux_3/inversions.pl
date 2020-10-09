@@ -4,7 +4,9 @@ title=Calcul du nombre d'inversions
 tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau|TransmissionAdresse
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
+
 author=
+
 text==
 Ecrire une fonction de protopype `int nb_inversions(int tab[],int taille);` qui renvoie le nombre d'inversions dans le tableau.<br>
 On rappelle qu'une inversion dans un tableau $%t%$ est un couple (i,j) avec $%0 \leq i \lt j%$ et $%t[i]>t[j]%$  
