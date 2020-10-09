@@ -92,8 +92,13 @@ int main(int argc, char* argv[]){
     tab[i] = atoi(argv[i+1]);
   }
 
-  apply_square_array(tab, nb_term);
-  display_array(tab, nb_term);
+  if (est_partie_triee(tab)){
+    printf("Oui, c'est effectivement trié entre les deux indices.\n");
+  }
+  else{
+    printf("Non, ce n'est pas trié entre les deux indices.\n");
+  }
+
   free(tab);
   return 0;
 }
