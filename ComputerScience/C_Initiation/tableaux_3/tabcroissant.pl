@@ -25,6 +25,7 @@ codebefore==
 #include <stdio.h>
 #include <stdlib.h>
 
+#define MAX 15
 ==
 
 editor.code==
@@ -45,9 +46,6 @@ for(;i<MAX;i+=1){
 ==
 
 codeafter==
-
-#define MAX 15
-
 int main(int argc, char* argv[]){
   int tab[MAX];
   int lu;
@@ -66,10 +64,10 @@ int main(int argc, char* argv[]){
 tests==
 [ ["croissante 1", "","-1 2 5 8 78"] ,
 ["pas croissante", "","-1 2 8 5 78"] ,
-["croissante 2", ""," ".join([str(0) for i in range(MAX)]) ],
-["croissante 3", ""," ".join([str(i) for i in range(MAX)]) ],
-["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(MAX)])], 
-["aléatoire ", ""," ".join([str(random.randint(0,20)) for i in range(MAX)])] 
+["croissante 2", ""," ".join([str(0) for i in range(15)]) ],
+["croissante 3", ""," ".join([str(i) for i in range(15)]) ],
+["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(15)])], 
+["aléatoire ", ""," ".join([str(random.randint(0,20)) for i in range(15)])] 
 ]
 ==
 
