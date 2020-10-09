@@ -6,8 +6,8 @@ title= Anna's Exo
 questions==
 
 ** Quel est le prénom de Revuz
--Dominique
-+Christian
++Dominique
+-Christian
 
 *+ Clicker sur la bonne conjugaison du verbe  
 >Je suis ( aller / {{allé}} ) au bureau hier
