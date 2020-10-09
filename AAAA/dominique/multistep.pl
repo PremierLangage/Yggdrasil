@@ -63,10 +63,7 @@ Ce quiz contient {{nbstep}} questions.
 ==
 
 XX==
-env.globals.update({
-    "component":    component
-})
-#env.filters["component"] = component
+
 ==
 
 evaluator==
@@ -83,6 +80,11 @@ def component(l):
 
 
 env = Environment(loader=BaseLoader())
+env.globals.update({
+    "component":    component
+})
+env.filters["component"] = component
+
 
 def compfortyep(q):
     if q['type'] == "Radio":
@@ -97,9 +99,9 @@ if step> -1:
 
     # Evaluation de la réponse et stockage pour la suite 
     q=list_questions[step]
-    score = compfortyep(list_questions[step]).eval()
+    score = compfortyep(q).eval()
     scores.append(score)
-    feedbacks += env.from_string(text+" \n "+component(compfortyep(list_questions[step]).eval())+" \n ").render(globals())
+    feedbacks += env.from_string(text+" \n "+form+" \n ").render(globals())
     currentscore=sum(scores)//nbstep
 
 step = step+1
