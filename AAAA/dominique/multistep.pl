@@ -126,8 +126,8 @@ if step<nbstep:
             check.shuffle()
     elif  q['type'] == 'TextSelect':
         ztext.setdata_from_textDR(q['items'][0])
-    text = "Question n°"+str(nbstep)+": "+q['text']
-    grade=(currentscore, "<br/>")
+    text = "Question n°"+str(step)+": "+q['text']
+    grade=(currentscore, "<br>")
 
 else: # Fin de l'exo 
     text= feedbacks
