@@ -1,7 +1,7 @@
 
 
 title=Plus long plateau
-tag=tableau
+tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
 text==
@@ -79,6 +79,7 @@ tests==
   ["aléatoire ", ""," ".join([" ".join([str(random.randint(-20,20))]*(random.randint(1,10))) for i in range(random.randint(5,20))])],
    ]
 ==
+
 
 
 
