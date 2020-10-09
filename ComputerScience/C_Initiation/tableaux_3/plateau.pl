@@ -1,6 +1,7 @@
 
 
 title=Plus long plateau
+
 tag=Tableau|Fonction|TransmissionParametre|TransmissionAdresse|ParcoursTableau|Accumulateurs
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
@@ -79,6 +80,7 @@ tests==
   ["aléatoire avec beacuoup de plateaux ", ""," ".join([" ".join([str(random.randint(-20,20))]*(random.randint(1,10))) for i in range(random.randint(5,20))])],
    ]
 ==
+
 
 
 
