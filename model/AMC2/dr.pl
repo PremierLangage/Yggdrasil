@@ -16,6 +16,8 @@ questions==
  
  
     1. printf("%d",3)
+
+    
     2. a= b+1
  
 - 0
@@ -23,6 +25,7 @@ questions==
 + 2
 - 3
 ==
+
 
 
 
