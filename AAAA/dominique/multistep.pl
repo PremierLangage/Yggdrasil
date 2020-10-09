@@ -115,8 +115,9 @@ if step> -1:
     q=list_questions[step]
     score = evaluate(q)
     scores.append(score)
-    feedbacks += env.from_string(text+" \n {{ "+strfromcomp(q)+" | component }} \n ").render(globals())
-#    currentscore=sum(scores)//nbstep
+    fifi = text+" \n {{ "+strfromcomp(q)+" | component }} \n "
+    feedbacks += env.from_string(fifi).render(globals())
+    currentscore=sum(scores)//nbstep
 
 step = step+1
 if step<nbstep:
