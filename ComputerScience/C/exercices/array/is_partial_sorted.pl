@@ -83,11 +83,24 @@ code_before==#|c|
 ==
 
 code_after==#|c|
+int main(int argc, char* argv[]){
+  int nb_term = argc-1;
+  int* tab = (int*)malloc(nb_term*sizeof(int));
+  int i;
 
+  for (i=0 ; i<nb_term ; i++){
+    tab[i] = atoi(argv[i+1]);
+  }
+
+  apply_square_array(tab, nb_term);
+  display_array(tab, nb_term);
+  free(tab);
+  return 0;
+}
 ==
 
 checks_args_stdin==#|python|
-[["Test basique", [], " ".join([str(randint(-100, 100)) for i in range(20)])]]
+[ ["Test basique", [str(randint(-100, 100)) for i in range(20)]), ""] ]
 ==
 
 
