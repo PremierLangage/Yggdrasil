@@ -12,7 +12,7 @@ Ecrire une fonction de protopype `int nb_inversions(int tab[],int taille);` qui 
 Rappel: Une inversion dans un tableau $%t%$ est un pair d'indices `i<j` du tableau, tels que $% t[i]>t[j] %$.
 <p>
 Exemples : <br>
-- Si le tableau contenait 1,3,2 les inversions sont les pairs `(i,j)` suivants : `(1,2)`. <br>
+- Si le tableau contenait 3,1,2 les inversions sont les pairs `(i,j)` suivants : `(0,1),(0,2)`. <br>
 - Si le tableau contenait 1,3,2,0 les inversions sont les pairs `(i,j)` suivants : `(0,3),(1,2),(1,3),(2,3)`. 
 
 ==
