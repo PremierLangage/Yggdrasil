@@ -3,7 +3,8 @@ title= Test_QCM
 extends=/model/AMC_TXT.pl
 
 questions==
-* Qu'affiche le programme suivant lors de son execution ?<br/>
+* Qu'affiche le programme suivant lors de son execution ?
+
 `
 n = -4
 for i in range(6):
