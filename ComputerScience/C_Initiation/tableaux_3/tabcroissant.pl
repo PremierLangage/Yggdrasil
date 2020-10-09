@@ -66,10 +66,11 @@ tests==
 ["pas croissante", "","-1 2 8 5 78"] ,
 ["croissante 2", ""," ".join([str(0) for i in range(15)]) ],
 ["croissante 3", ""," ".join([str(i) for i in range(5)]) ],
-["aléatoire1 ", ""," ".join([str(random.randint(-20,20)) for i in range(5)])], 
-["aléatoire2 ", ""," ".join([str(random.randint(0,20)) for i in range(3)])] 
+["aléatoire 1 ", ""," ".join([str(random.randint(-20,20)) for i in range(5)])], 
+["aléatoire 2 ", ""," ".join([str(random.randint(0,20)) for i in range(3)])] 
 ]
 ==
+
 
 
 
