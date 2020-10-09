@@ -5,9 +5,9 @@ title= Anna's Exo
 
 questions==
 
-** Comment se prenom diaw
-+Anna
--dominique
+** Quel est le prénom de Revuz
+-Dominique
++Christian
 
 *+ Clicker sur la bonne conjugaison du verbe  
 >Je suis ( aller / {{allé}} ) au bureau hier
