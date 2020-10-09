@@ -35,14 +35,17 @@ cflags=["-Wall", "-ansi"]
 # Place here library flags
 libflags=[]
 
-# This is the way one can do random C exercice
+# Voici une manière de générer un énoncé aléatoire
 taille_tab = 20
 index_min = randint(0,8)
 index_max = randint(12,19)
 ordre_croissant = randint(0,1)
 
+# un mot pour l'énoncé en francais (construit depuis le booléan aléatoire)
 mot_croissant = 'croissante' if ordre_croissant == 1 else 'décroissante'
 
+# Ici, on génére une solution C dédié à l'exercice aléatoire avec du Python 
+# This is fucking insane man !!!
 solution = "int est_partie_triee(int* tab){"
 solution += "  int i;"
 solution += "  for (i="+str(index_min)+" ; i<"+str(index_max)+" ; i++){"
