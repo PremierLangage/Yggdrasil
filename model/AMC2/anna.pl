@@ -48,6 +48,10 @@ Réponse à mettre sous la forme : >
 =* AMC avec possibilité d'une seule bonne réponse parmi une liste ou une compréhension python
 Réponses à mettre sous la forme : += Liste_de_Bonne_Rep ou compréhension
                                   -= Liste_de_Mauvaise Rep ou compréhension
+
+Pour chaque question, on peut mettre des options entre [] :
+[group=] pour qu'il choisisse au hasard un exo parmi ceux qui ont le même tag
+
 ==
 
 
