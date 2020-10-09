@@ -1,10 +1,10 @@
 title=Tableau Croissant
-tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau
+tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau|ComparaisonContigues
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
 text==
 
-Écrire une fonction `est_croissante` qui reçoit un tableau de taille MAX et renvoie 1
+Écrire une fonction `est_croissante` qui reçoit un tableau de taille MAX (*) et renvoie 1
  si les entiers sont en ordre strictement croissant, et 0 sinon. <br>
 
 <p>
@@ -14,7 +14,7 @@ avec MAX valant 5 : <br>
 - Si tab contient $%5,6,8,75,82%$, est_croissante(tab) renvoie $%1%$.<br>
 
 <p>
-MAX est une macro-constante pré-définie.
+(*) MAX est une constante symbolique définie par #define MAX XXXXX
 ==
 codebefore==
 
