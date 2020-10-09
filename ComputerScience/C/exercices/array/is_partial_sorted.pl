@@ -57,12 +57,9 @@ text+=" {{ editor|component }} "
 
 text==
 Écrire une fonction C **est_partie_triee** qui prend en argument un tableau 
-d'entiers `tab`.
-
-<br />
-
-Votre fonction de devra retourner `1` si le tableau `tab` est trié de manière **{{ mot_croissant }}**
-entre les indices **{{ index_min }}** et **{{ index_max }}** tous deux inclus.
+d'entiers `tab`. Votre fonction de devra retourner `1` si le tableau `tab` 
+est trié de manière **{{ mot_croissant }}** entre les indices 
+**{{ index_min }}** et **{{ index_max }}** tous deux inclus.
 
 <br />
 
