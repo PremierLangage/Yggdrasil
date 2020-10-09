@@ -76,7 +76,7 @@ Et moi (Fred), comme Eùùanuel, j'ai copié les fichiers depuis leur répertoir
 Chaohui a copie les fichiers et fait certians modifications pour que l'exos soient plus clairs
 Remarque:
 - Pour l'instant, loop_exo.pl de problemes et je suis en train de voir avec Dominique
-- Je ne sais pas pourquoi dynawhile.pl a ete mis dans le fichier .pltp
+- Je ne sais pas pourquoi dynawhile.pl a ete mis dans le fichier .pltp et je l'ai commente
 
 # Exercice 9 (nombres diviseurs)
  tag=InstructionsRepetitives|ForInRange
