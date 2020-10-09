@@ -1,5 +1,6 @@
 title=Tableau Croissant
-tag=type
+tag=tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau
+
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
 text==
@@ -62,6 +63,7 @@ tests==
 ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(5)])] 
 ]
 ==
+
 
 
 
