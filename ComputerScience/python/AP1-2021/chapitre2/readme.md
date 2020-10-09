@@ -74,6 +74,7 @@ Et moi (Fred), comme Eùùanuel, j'ai copié les fichiers depuis leur répertoir
 
 
 Chaohui a copie les fichiers et modifier
+Remarque: je ne sais pas pourquoi dynawhile.pl a ete mis dans le fichier .pltp
 
 # Exercice 9 (nombres diviseurs)
  tag=InstructionsRepetitives|ForInRange
@@ -81,5 +82,6 @@ Chaohui a copie les fichiers et modifier
 
 # Exercice 10 (nombres diviseurs)
  tag=InstructionsRepetitives|ForInRange
+
 
 
