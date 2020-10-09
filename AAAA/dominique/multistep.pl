@@ -102,11 +102,11 @@ def evaluate(q):
 
 def strfromcomp(q):
     if q['type'] == "Radio":
-        return "radio"
+        return "{{ radio | component }}"
     if q['type'] == "Checkbox":
-        return "check"
+        return "{{ check | component }}"
     if  q['type'] == 'TextSelect':
-        return "ztext"
+        return "{{ ztext | component }}"
 
 currentscore=0
 if step> -1:
@@ -115,11 +115,8 @@ if step> -1:
     q=list_questions[step]
     score = evaluate(q)
     scores.append(score)
-    fifi = text
-    fifi += " \n  {{"
-    
+    fifi = text + " \n 
     #fifi += strfromcomp(q)
-    fifi += " radio | component }} \n "
     #feedbacks += env.from_string(fifi).render(globals())
     currentscore=sum(scores)//nbstep
 
