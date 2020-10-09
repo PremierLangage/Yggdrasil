@@ -9,6 +9,10 @@ questions==
 +Dominique
 -Christian
 
+* Quel est le prénom de Revuz
++Dominique
+-Christian
+
 *+ Clicker sur la bonne conjugaison du verbe  
 >Je suis ( aller / {{allé}} ) au bureau hier
 
@@ -19,5 +23,7 @@ questions==
 =*[nb=5,group=odd] What are the odd numbers ? 
 +=[x for x in range(3,77) if x%2==1 ]
 -=[x for x in range(3,77) if x%2==0 ]
+
+
 ==
 
