@@ -70,7 +70,7 @@ ff==
 
 
 
-title= Cher enseignant vous n'avez pas changer le "title" 
+title= Cher enseignant vous n'avez pas change le "title" 
 
 
 
@@ -137,6 +137,7 @@ formstep ==
 evaluatorstep ==
 score = comp[step].eval()
 ==
+
 
 
 
