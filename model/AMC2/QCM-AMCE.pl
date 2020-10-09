@@ -2,7 +2,7 @@
 
 extends = /model/multistep.pl
 
-@ AMC2.py [AMC.py]
+@ /model/AMC2/AMC2.py [AMC.py]
 
 @ aleaq.py 
 
@@ -70,7 +70,7 @@ ff==
 
 
 
-title= Cher enseignant vous n'avez pas change le "title" 
+title= Cher enseignant vous n'avez pas changer le "title" 
 
 
 
