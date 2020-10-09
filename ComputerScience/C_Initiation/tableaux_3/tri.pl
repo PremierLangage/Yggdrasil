@@ -7,7 +7,7 @@ text==
 
 Ecrire une fonction `tri` qui reçoit un tableau d'entiers et sa taille, et qui transforme le tableau en un tableau trié en ordre croissant<br><p>
 Exemple :
-Si le  tableau de taille 5 contenait 1,3,2,4,5,
+Si le  tableau de taille 5 contenait 5,3,2,4,1,
 il contient 1,2,3,4,5 après éxécution de la fonction.
 ==
 
