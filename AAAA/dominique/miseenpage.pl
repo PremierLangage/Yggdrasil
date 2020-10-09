@@ -4,9 +4,9 @@ extends= multistep.pl
 questions ==
 
 
-* Radio : 
-+ a=1
-- b=1
+* Radio : cick sur a
++ a
+- b
 
 ** CheckBox 
 + a
