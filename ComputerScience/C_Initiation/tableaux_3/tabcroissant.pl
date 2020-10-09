@@ -31,7 +31,7 @@ codebefore==
 
 #include <stdio.h>
 #include <stdlib.h>
-#define MAX ({{MAX}}%21)
+#define MAX ({{MAX}})
 
 ==
 
