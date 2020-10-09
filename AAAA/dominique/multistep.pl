@@ -119,7 +119,7 @@ if step> -1:
     fifi += " \n  {{"
     
     #fifi += strfromcomp(q)
-    #fifi += " | component }} \n "
+    fifi += " radio | component }} \n "
     #feedbacks += env.from_string(fifi).render(globals())
     currentscore=sum(scores)//nbstep
 
