@@ -34,7 +34,10 @@ questions==
 
 doc==
 
-
+* AMC avec possibilité d'un seul choix de réponse et donc une seule bonne réponse possible
+** AMC avec possibilité de plusieurs choix de réponse et donc plusieurs bonnes réponses possible
+*+ Cliquer sur les mots ; mettre les bonnes réponses entre accolades {{ }}
 
 ==
+
 
