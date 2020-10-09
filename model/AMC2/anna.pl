@@ -47,7 +47,7 @@ Réponses à mettre sous la forme : + Bonne_Rep
 *+ Cliquer sur les mots ; mettre les bonnes réponses entre accolades {{ }}
 Réponse à mettre sous la forme : >
 
-=* AMC avec possibilité d'une seule bonne réponse parmi une liste ou une compréhension python
+=* AMC avec possibilité d'une seule bonne réponse parmi une liste ou une compréhension python sur une ligne
 Réponses à mettre sous la forme : += Liste_de_Bonne_Rep ou compréhension
                                   -= Liste_de_Mauvaise Rep ou compréhension
 
