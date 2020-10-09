@@ -32,6 +32,7 @@ text = textf.format(XX=XX,YY=YY)
 
 ==
 
+# Attention: XX doit etre modifie selon le chiffre affiche dans l'exo pour etre valide
 soluce2==
 n=int(input())
 s=""
