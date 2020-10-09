@@ -30,7 +30,7 @@ solution==
 
 void tri(int a [], int size)
 {
-    int i,aux;
+    int i;
     for (i = 1; i < size; i++)
     {
         int val = a[i], j = i-1;
