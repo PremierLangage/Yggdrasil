@@ -92,20 +92,20 @@ env.globals.update({
 env.filters["component"] = component
 
 
-def compfortyep(q):
+def evaluate(q):
     if q['type'] == "Radio":
-        return radio
+        return radio.eval()
     if q['type'] == "Checkbox":
-        return check
+        return check.eval()
     if  q['type'] == 'TextSelect':
-        return ztext
+        return ztext.eval()
 
 currentscore=0
 if step> -1:
 
     # Evaluation de la réponse et stockage pour la suite 
     q=list_questions[step]
-    score = compfortyep(q).eval()
+    score = evaluate(q)
     scores.append(score)
     feedbacks += env.from_string(text+" \n "+form+" \n ").render(globals())
     currentscore=sum(scores)//nbstep
