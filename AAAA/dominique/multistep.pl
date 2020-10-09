@@ -62,6 +62,12 @@ intro ==
 Ce quiz contient {{nbstep}} questions.
 ==
 
+XX==
+env.globals.update({
+    "component":    component
+})
+#env.filters["component"] = component
+==
 
 evaluator==
 from jinja2 import Environment, BaseLoader
@@ -77,10 +83,6 @@ def component(l):
 
 
 env = Environment(loader=BaseLoader())
-env.globals.update({
-    "component":    component
-})
-#env.filters["component"] = component
 
 def compfortyep(q):
     if q['type'] == "Radio":
