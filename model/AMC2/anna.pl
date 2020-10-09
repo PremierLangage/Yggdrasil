@@ -24,6 +24,5 @@ questions==
 +=[x for x in range(3,77) if x%2==1 ]
 -=[x for x in range(3,77) if x%2==0 ]
 
-
 ==
 
