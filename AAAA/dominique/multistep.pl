@@ -49,7 +49,8 @@ nbstep = len(list_questions)
 random.shuffle(list_questions)
 
 step= -1 # première étape 
-
+text= f"Ce test à {nbstep} questions. Pas de retour arrière et un seul essai ! "
+    
 ==
 intro ==
 Ce quiz contient {{nbstep}} questions.
@@ -58,28 +59,24 @@ Ce quiz contient {{nbstep}} questions.
 
 evaluator==
 
-if step== -1:
-    step=0
-    text= f"Ce test à {nbstep} questions. Pas de retour arrière et un seul essai ! "
-    grade=(0,"")
-else:
-    step= step + 1 
-    q=list_questions[step]
-    if q['type'] == "Radio":
-        radio.setitems(q['items'])
-        radio.setsol_from_index(q['index'])
-        if 'ordered' not in q['options']:
-            radio.shuffle()
-    elif q['type'] == "Checkbox":
-        check.setitems(q['items'])
-        check.setsol_from_index(q['index'])
-        if 'ordered' not in q['options']:
-            check.shuffle()
-    elif  q['type'] == 'TextSelect':
-        statement.append(q['text'])
-        ztext.setdata_from_textDR(q['items'][0])
 
-    grade=(22, next)
+step= step + 1 
+q=list_questions[step]
+if q['type'] == "Radio":
+    radio.setitems(q['items'])
+    radio.setsol_from_index(q['index'])
+    if 'ordered' not in q['options']:
+        radio.shuffle()
+elif q['type'] == "Checkbox":
+    check.setitems(q['items'])
+    check.setsol_from_index(q['index'])
+    if 'ordered' not in q['options']:
+        check.shuffle()
+elif  q['type'] == 'TextSelect':
+    statement.append(q['text'])
+    ztext.setdata_from_textDR(q['items'][0])
+
+grade=(22, next)
 
 ==
 
