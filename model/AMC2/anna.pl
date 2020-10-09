@@ -5,11 +5,13 @@ title= Anna's Exo
 
 questions==
 
-** Quel est le prénom de Revuz
+**[group=prenom] Quel est le prénom de Revuz
 +Dominique
 -Christian
++Paul
++Edouard
 
-* Quel est le prénom de Diaw
+*[group=prenom] Quel est le prénom de Diaw
 +Anna
 -Aminata
 
@@ -21,7 +23,10 @@ questions==
 -=["whiles","boucle","attend","cause","deff","dep"]
 
 =*[nb=5,group=odd] What are the odd numbers ? 
-+=[x for x in range(3,77) if x%2==1 ]
++=    l=[]
+    for i in range(1,56,2):
+        l.append(i)
+    return l
 -=[x for x in range(3,77) if x%2==0 ]
 
 =*[nb=3,group=odd] What are the even numbers ? 
@@ -29,4 +34,5 @@ questions==
 +=[x for x in range(3,77) if x%2==0 ]
 
 ==
+
 
