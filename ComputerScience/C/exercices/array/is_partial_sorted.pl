@@ -85,12 +85,11 @@ code_before==#|c|
 
 code_after==#|c|
 int main(int argc, char* argv[]){
-  int nb_term = argc-1;
-  int* tab = (int*)malloc(nb_term*sizeof(int));
+  int* tab = (int*)malloc(argc*sizeof(int));
   int i;
 
-  for (i=0 ; i<nb_term ; i++){
-    tab[i] = atoi(argv[i+1]);
+  for (i=1 ; i<argc ; i++){
+    tab[i-1] = atoi(argv[i]);
   }
 
   if (est_partie_triee(tab)){
