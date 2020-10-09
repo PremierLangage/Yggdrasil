@@ -5,7 +5,7 @@ author=
 text==
 
 Écrire une fonction `est_croissante` qui reçoit un tableau de taille MAX et renvoie 1
- si les entiers sont en ordre strictement croissant, 0 sinon. <br>
+ si les entiers sont en ordre strictement croissant, et 0 sinon. <br>
 
  Exemple
 avec MAX valant 5
