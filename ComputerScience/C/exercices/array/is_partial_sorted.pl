@@ -61,8 +61,8 @@ d'entiers `tab`.
 
 <br />
 
-Votre fonction de devra retourner `1` si le tableau `tab` **est trié de manière {{ mot_croissant }}**
-entre les indices {{ index_min }} et {{ index_max }} tous deux inclus.
+Votre fonction de devra retourner `1` si le tableau `tab` est trié de manière **{{ mot_croissant }}**
+entre les indices **{{ index_min }}** et **{{ index_max }}** tous deux inclus.
 
 <br />
 
