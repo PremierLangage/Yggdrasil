@@ -1,7 +1,7 @@
 
 title=Miroir d'un tableau
 
-tag=type
+tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
