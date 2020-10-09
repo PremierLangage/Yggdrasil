@@ -65,11 +65,12 @@ Et moi (Fred), comme Eùùanuel, j'ai copié les fichiers depuis leur répertoir
 
 # Exercice 7 (suite croissante)
  tag=InstructionsRepetitives|ForInRange
- @ /ComputerScience/python/AP1-2021/chapitre2/boucledivise.pl
+ @ /ComputerScience/python/AP1-2021/chapitre2/bouclecroissant.pl
 
  # Exercice 8 (liste diviseurs)
  tag=InstructionsRepetitives|ForInRange
 @ /ComputerScience/python/AP1-2021/chapitre2/boucledivise.pl
+
 
 
 
