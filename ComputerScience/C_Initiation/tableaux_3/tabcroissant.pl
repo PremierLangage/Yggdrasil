@@ -63,7 +63,7 @@ tests==
 ["pas croissante", "","-1 2 8 5 78"] ,
 ["croissante 2", ""," ".join([str(0) for i in range(15)]) ],
 ["croissante 3", ""," ".join([str(i) for i in range(15)]) ],
-["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(15)])] 
+["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(15)])], 
 ["aléatoire ", ""," ".join([str(random.randint(0,20)) for i in range(15)])] 
 ]
 ==
