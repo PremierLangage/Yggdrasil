@@ -1,3 +1,4 @@
 
-Maximutab : fait
+Maximutab : fait tag=Tableau|Fonction|ParcoursTableau
+
 
