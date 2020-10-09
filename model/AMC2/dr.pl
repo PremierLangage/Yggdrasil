@@ -7,7 +7,7 @@ extends= /model/AMC2/QCM-AMCE.pl
 title= DR's Exo
 
 
-text=
+text= 
 
 questions==
 
@@ -23,5 +23,6 @@ questions==
 + 2
 - 3
 ==
+
 
 
