@@ -1,7 +1,7 @@
 
 title=Comparaison de deux tableaux
 
-tag=type
+tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
@@ -68,6 +68,7 @@ tests==
    ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,10))])],
   ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
 ==
+
 
 
 
