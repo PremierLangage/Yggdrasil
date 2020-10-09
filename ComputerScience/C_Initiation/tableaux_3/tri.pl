@@ -1,8 +1,12 @@
 
 title=Tri d'un tableau
+
 tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau|TransmissionAdresse|Tri
+
 extends=/ComputerScience/C/template/stdsandboxC.pl
+
 author= 
+
 text==
 
 Ecrire une fonction `tri` qui reçoit un tableau d'entiers et sa taille, et qui transforme le tableau en un tableau trié en ordre croissant<br><p>
@@ -62,6 +66,7 @@ tests==
    ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,10))])],
   ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
 ==
+
 
 
 
