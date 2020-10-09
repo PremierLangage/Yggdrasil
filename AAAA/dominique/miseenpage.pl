@@ -4,7 +4,7 @@ extends= multistep.pl
 questions ==
 
 
-* Radio : 
+* Radio : <br>
    $%\verb+a=1+
     \verb+b=2+<br>
    \en{verbatim} %$
