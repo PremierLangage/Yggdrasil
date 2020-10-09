@@ -107,8 +107,8 @@ int main(int argc, char* argv[]){
 checks_args_stdin==#|python|
 [ ["Liste croissante simple", [str(i) for i in range(20)], ""],
   ["Liste décroissante simple", [str(i) for i in range(19, -1, -1)], ""],
-  ["Liste croissante aléatoire", map(lambda x: str(x), sorted([randint(-10, 10) for i in range(20)])), ""],
-  ["Liste décroissante aléatoire", map(lambda x: str(x), sorted([randint(-10, 10) for i in range(20)], reverse=True)), ""],
+  ["Liste croissante aléatoire", list(map(lambda x: str(x), sorted([randint(-10, 10) for i in range(20)]))), ""],
+  ["Liste décroissante aléatoire", list(map(lambda x: str(x), sorted([randint(-10, 10) for i in range(20)], reverse=True))), ""],
   ["Test aléatoire croissant localement", [str(randint(-10, 10)) for i in range(index_min)]+sorted([str(randint(-10, 10)) for i in range (index_max - index_min + 1)])+[str(randint(-10, 10)) for i in range(19-index_max)], "" ],
   ["Test aléatoire décroissant localement", [str(randint(-10, 10)) for i in range(index_min)]+sorted([str(randint(-10, 10)) for i in range (index_max - index_min + 1)], reverse=True)+[str(randint(-10, 10)) for i in range(19-index_max)], "" ],
   ["Test aléatoire 1", [str(randint(-10, 10)) for i in range(20)], ""],
