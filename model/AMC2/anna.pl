@@ -33,6 +33,8 @@ questions==
 ==
 
 doc==
+On respecte le format standart des AMC selon le lien suivant : https://www.auto-multiple-choice.net/auto-multiple-choice.fr/AMC-TXT.shtml
+
 
 * AMC avec possibilité d'un seul choix de réponse et donc une seule bonne réponse possible
 Réponses à mettre sous la forme : + Bonne_Rep
