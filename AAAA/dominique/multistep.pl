@@ -100,6 +100,14 @@ def evaluate(q):
     if  q['type'] == 'TextSelect':
         return ztext.eval()
 
+def strfromcomp(q):
+    if q['type'] == "Radio":
+        return "radio"
+    if q['type'] == "Checkbox":
+        return "check"
+    if  q['type'] == 'TextSelect':
+        return "ztext"
+
 currentscore=0
 if step> -1:
 
@@ -107,7 +115,7 @@ if step> -1:
     q=list_questions[step]
     score = evaluate(q)
     scores.append(score)
-    feedbacks += env.from_string(text+" \n "+form+" \n ").render(globals())
+    feedbacks += env.from_string(text+" \n {{"+strfromcomp(q)+"}} \n ").render(globals())
     currentscore=sum(scores)//nbstep
 
 step = step+1
