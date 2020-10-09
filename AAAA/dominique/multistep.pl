@@ -130,6 +130,7 @@ if step<nbstep:
     grade=(currentscore, "<br>")
 
 else: # Fin de l'exo 
+    form=""
     text= feedbacks
     grade=(currentscore, "")
 ==
