@@ -3,6 +3,12 @@ title= Test_QCM
 extends=/model/AMC_TXT.pl
 
 questions==
+* Lequel de ces codes affiche 2 ?
+-=[print('print(a)')]
++=[print('2')]
+
+
+
 * Qu'affiche le programme suivant lors de son execution ?<br><br>
 
 `
