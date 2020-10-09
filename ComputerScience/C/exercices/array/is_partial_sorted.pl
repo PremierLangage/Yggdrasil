@@ -79,7 +79,8 @@ int est_partie_triee(int* tab){
 
 
 code_before==#|c|
-
+#include <stdio.h>
+#include <stdlib.h>
 ==
 
 code_after==#|c|
