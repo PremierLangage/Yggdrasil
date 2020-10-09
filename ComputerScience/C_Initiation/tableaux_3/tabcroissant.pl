@@ -20,7 +20,7 @@ codebefore==
 
 #include <stdio.h>
 #include <stdlib.h>
-#define MAX random.randint(1,10)
+#define MAX random.randint(5,10)
 
 ==
 
