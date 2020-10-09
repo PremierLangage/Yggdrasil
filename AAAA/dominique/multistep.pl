@@ -114,8 +114,9 @@ if step> -1:
     # Evaluation de la réponse et stockage pour la suite 
     q=list_questions[step]
     score = evaluate(q)
+    scores.append(score)
 
-
+    
 step = step+1
 if step<nbstep:
 
