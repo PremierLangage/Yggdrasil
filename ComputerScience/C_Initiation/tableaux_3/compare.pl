@@ -48,7 +48,7 @@ int main(int argc, char* argv[]){
     dif[size]=cop[size]=tab[size] = lu;
    size++;
   }
-  dif[size-1]=tab[size-1]+random.randint(1,100);
+  dif[size-1]=tab[size-1]+1+(rand()%100);
 
 if (identique_tab(tab,cop,size)==1)
     printf(" tableaux identiques \n");
