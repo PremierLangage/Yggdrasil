@@ -113,7 +113,7 @@ if step<nbstep:
             check.shuffle()
     elif  q['type'] == 'TextSelect':
         ztext.setdata_from_textDR(q['items'][0])
-    text = "Question n°"+str(nbstep)+": "+q['text']+" endoftext"
+    text = "Question n°"+str(nbstep)+": "+q['text']
     grade=(currentscore, "")
 
 else: # Fin de l'exo 
@@ -125,7 +125,7 @@ form==
 {% if q['type'] == "radio" %}
     {{ radio | component }}
 {% elif q['type'] == "Checkbox" %}
-{{ check | component }}
+    {{ check | component }}
 {% elif q['type'] == "TextSelect" %}
     {{ ztext | component }}
 {% endif %}
