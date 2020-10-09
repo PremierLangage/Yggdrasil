@@ -83,7 +83,6 @@ def format_feedback_lightscore(score,feedback):
     return tpl.format(score,feedback)
 
 
-
 def component(l):
     if isinstance(l,dict):
         selector = l["selector"]
@@ -124,14 +123,12 @@ if step> -1:
     q=list_questions[step]
     score = evaluate(q)
     scores.append(score)
-    fifi = text + " \n "
-    fifi += strfromcomp(q)
+    fifi = text + " \n " + strfromcomp(q)
     feedbacks += env.from_string(fifi).render(globals())
     currentscore=sum(scores)//nbstep
 
 step = step+1
 if step<nbstep:
-
     q=list_questions[step]
     if q['type'] == "Radio":
         radio.setitems(q['items'])
