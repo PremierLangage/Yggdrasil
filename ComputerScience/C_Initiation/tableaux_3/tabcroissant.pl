@@ -8,7 +8,7 @@ text==
  si les entiers sont en ordre strictement croissant, et 0 sinon. <br>
 
  Exemple
-avec MAX valant 5
+avec MAX valant 5 :
 si  tab contient $%-4,5,10,14,1%$, `est_croissante(tab)` renvoie $%0%$.<br>
 S'il contient $%5,6,8,75,82%$, `est_croissante(tab)` renvoie $%1%$.<br>
 MAX est une macro-constante pré-définie.
