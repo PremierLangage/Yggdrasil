@@ -7,10 +7,8 @@ text==
 
 Ecrire une fonction `miroir` qui reçoit deux tableaux d'entiers de même taille 
 et leur taille, et qui remplit le deuxième avec l'image 
-miroir du premier.<br>
-Exemple<br>
-Si le premier tableau de taille 5 contenait 1,2,3,4,5,<br>
-le deuxième contient 5,4,3,2,1 après éxécution de la fonction.
+miroir du premier.<p>
+Exemple : Si le premier tableau de taille 5 contenait 1,2,3,4,5, le deuxième contient 5,4,3,2,1 après éxécution de la fonction.
 ==
 
 codebefore==
@@ -62,6 +60,7 @@ tests==
    ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,10))])],
   ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
 ==
+
 
 
 
