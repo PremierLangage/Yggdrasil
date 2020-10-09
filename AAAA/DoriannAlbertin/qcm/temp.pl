@@ -7,7 +7,7 @@ questions==
 * on dit des trucs
 
 
-    1. print('des machins')
+    print('des machins')
 
     2. print("des bidules")
 
