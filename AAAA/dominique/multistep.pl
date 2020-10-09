@@ -116,7 +116,7 @@ if step> -1:
     score = evaluate(q)
     scores.append(score)
     fifi = text+" \n {{ "+strfromcomp(q)+" | component }} \n "
-    feedbacks += env.from_string(fifi).render(globals())
+    #feedbacks += env.from_string(fifi).render(globals())
     currentscore=sum(scores)//nbstep
 
 step = step+1
