@@ -1,7 +1,7 @@
 
 
 title=Plus long plateau
-tag=Tableau|Fonction|TransmissionParametre|ParcoursTableau
+tag=Tableau|Fonction|TransmissionParametre|TransmissionParametre|ParcoursTableau|Accumulateurs
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
 text==
