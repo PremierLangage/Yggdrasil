@@ -12,7 +12,7 @@ text=
 
 textf==  
 
-Ecrire un programme qui lit un  entier strictement positif et affiche la chaine de caractères formée des n premiers multiples de {XX} (à partir de 1).
+Ecrire un programme qui lit un  entier strictement positif et affiche la chaine de caractères formée des n premiers (à partir de 1) multiples de {XX}.
 
 Si n vaut 4 on affiche {YY}.
 
@@ -46,6 +46,7 @@ tres court |0
 tres tres court |-42
 long | 110
 ==
+
 
 
 
