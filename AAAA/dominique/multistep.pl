@@ -21,7 +21,7 @@ questions==
 ==
 
 
-title= Mukti step a la DR
+title= Muti step a la DR
 
 text = Pas de text 
 
