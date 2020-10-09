@@ -11,8 +11,8 @@ questions==
 
     2. print("des bidules")
 
-+ ["for i in range(2):\n\t print(i)","b","E"]
-- ["c","d","f"]
++ bonne réponse
+- mauvaise réponse
 
 
 
