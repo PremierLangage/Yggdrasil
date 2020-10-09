@@ -92,4 +92,5 @@ Remarque:
 
 # Exercice 11 (Boucle d'OR (repetable))
  tag=InstructionsRepetitives|ForInRange
-@ /ComputerScience/python/AP1-2021/chapitre2/loop_exo.pl
+# @ /ComputerScience/python/AP1-2021/chapitre2/loop_exo.pl
+
