@@ -7,7 +7,7 @@ author=
 text==
 Ecrire une fonction de protopype `int plateau(int tab[],int taille,int *debut );` qui reçoit un tableau d'entiers et sa taille,
  renvoie la longueur de la plus longue partie du tableau constitué d'éléments égaux, et place à l'adresse $%{ \tt debut}%$
- l'indice de son premier élément. <br> En cas d'égalité, on gardera le plus petit indice.
+ l'indice du premier élément du plateau. <br> En cas d'égalité, on gardera le plus petit indice.
 ==
 
 codebefore==
