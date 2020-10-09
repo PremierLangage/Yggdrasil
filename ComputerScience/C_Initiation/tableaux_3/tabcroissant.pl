@@ -1,5 +1,4 @@
 title=Tableau Croissant
-
 tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau|ComparaisonContigues
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
@@ -21,7 +20,7 @@ codebefore==
 
 #include <stdio.h>
 #include <stdlib.h>
-#define MAX 15
+#define MAX random.randint(1,10)
 
 ==
 
@@ -61,14 +60,11 @@ int main(int argc, char* argv[]){
 tests==
 [ ["croissante 1", "","-1 2 5 8 78"] ,
 ["pas croissante", "","-1 2 8 5 78"] ,
-["croissante 2", ""," ".join([str(0) for i in range(15)]) ],
-["croissante 3", ""," ".join([str(i) for i in range(15)]) ],
-["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(15)])], 
-["aléatoire ", ""," ".join([str(random.randint(0,20)) for i in range(15)])] 
+["croissante 2", ""," ".join([str(0) for i in range(5)]) ],
+["croissante 3", ""," ".join([str(i) for i in range(5)]) ],
+["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(5)])] 
 ]
 ==
-
-
 
 
 
