@@ -5,8 +5,8 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
 text==
 
-Ecrire une fonction `tri` qui reçoit un tableau d'entiers et sa taille, et qui transforme le tableau en un tableau trié en ordre croissant<br>
-Exemple
+Ecrire une fonction `tri` qui reçoit un tableau d'entiers et sa taille, et qui transforme le tableau en un tableau trié en ordre croissant<br><p>
+Exemple :
 Si le  tableau de taille 5 contenait 1,2,3,4,5,<br>
 il contient 1,2,3,4,5 après éxécution de la fonction.
 ==
