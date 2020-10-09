@@ -5,9 +5,8 @@ questions ==
 
 
 * Radio : 
-   $%\begin{verbatim} 
-    a=1
-    b=2
+   $%\verb+a=1+
+    \verb+b=2+
    \en{verbatim} %$
 
 + a=1
