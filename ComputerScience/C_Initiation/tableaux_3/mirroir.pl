@@ -4,7 +4,9 @@ title=Miroir d'un tableau
 tag=type
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
+
 author= 
+
 text==
 
 Ecrire une fonction `miroir` qui reçoit deux tableaux d'entiers de même taille 
