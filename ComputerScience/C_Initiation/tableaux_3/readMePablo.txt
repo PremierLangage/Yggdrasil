@@ -6,3 +6,7 @@ Plateau : fait tag=Tableau|Fonction|TransmissionParametre|TransmissionAdresse|Pa
 inversions.pl = a faire donner un exemple très modeste 
 
 tri.pl : fait tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau|TransmissionAdresse|Tri
+
+idées :
+
+rotation d'un tableau ? [1,2,3,4] -> [2,3,4,1]
