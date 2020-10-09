@@ -20,10 +20,6 @@ codebefore==
 #include <stdio.h>
 #include <stdlib.h>
 
-int comp(int *a,int*b){
-return *a-*b;
-}
-
 ==
  
 editor.code==
@@ -32,13 +28,21 @@ editor.code==
 
 solution==
 
-void tri(int tab[],int size){
-
-  int i;
-
-  qsort(tab,size,sizeof(int),comp);
-
+void tri(int a [], int size)
+{
+    int i,aux;
+    for (i = 1; i < size; i++)
+    {
+        int val = a[i], j = i-1;
+        while (j>=0 && val < a[j])
+        {
+            a[j+1] = a[j];
+            j--;
+        }
+        a[j+1] = val;
+    }
 }
+
 ==
 
 codeafter==
@@ -67,6 +71,7 @@ tests==
    ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,10))])],
   ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
 ==
+
 
 
 
