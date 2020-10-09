@@ -69,6 +69,7 @@ lg=plateau(tab,size,&deb);
 }
 ==
 
+# L'aléatoire marche maintenant
 tests==
 [ ["simple éxécution", "","1 2  2 4 5"],
   ["avec deux ", "","-1 -2"],
