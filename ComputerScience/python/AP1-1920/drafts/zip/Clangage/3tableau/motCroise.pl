@@ -41,6 +41,7 @@ editor.code==
 int place_noire(char plateau[][COLONNES],int x,int y){
   if(x<0 || x>=LIGNES||y<0||y>=COLONNES|| plateau[x][y]!=0)
     return 0;
+  plateau[x][y]=1;
   return 1;
 }
 
@@ -79,7 +80,7 @@ if(place_noire(tab,x,y)==1)
 
 
 tests==
-[ ["simple éxécution", "","2 10"]
+[ ["simple éxécution", "","2 2"]
  ]
 ==
 
