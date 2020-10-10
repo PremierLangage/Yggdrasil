@@ -27,16 +27,13 @@ codebefore==
 #include <stdlib.h>
 #include <time.h>
 #define MAX (access_control())
-int seed;
 
 /* a singleton kind of pattern */
 int access_control()
 {
   static int real_max = -1;
-  if (real_max == -1) {
-    srand(seed);
+  if (real_max == -1)
     real_max = 5 + rand()%20;
-  }
   return real_max;
 }
 
@@ -64,7 +61,9 @@ int main(int argc, char* argv[]){
   int tab[MAX];
   int lu;
   int i;
+  int seed;
   scanf("%d",&seed);
+  srand(seed);
   printf("constante MAX = %d\n",MAX);
   printf("tableau d'entrée : \n");
   for (i = 0; i < MAX; i++) {
@@ -89,12 +88,12 @@ seed==
 # les tests sont plus longs que MAX<=25 pour assurer qu'ils marchent dans tous les cas
 # mais effectivement la seule partie qui compte c'est jusqu'à MAX
 tests==
-[ ["croissante 1", "",str(random.randint(1,10000))+"\n"+" ".join([str(i) for i in range(25)])] ,
-["presque croissante", "",str(random.randint(1,100))+"\n"+"1 "+" ".join([str(i) for i in range(25)])] ,
-["pas stricte", "",str(random.randint(1,100))+"\n"+"0 "+" ".join([str(i) for i in range(25)])] ,
-["aléatoire 1", "",str(random.randint(1,100))+"\n"+" ".join([str(random.randint(1,10)) for i in range(25)])] ,
-["aléatoire 2", "",str(random.randint(1,100))+"\n"+" ".join([str(random.randint(1+2**i,2**(i+1))) for i in range(25)])] ,
-["aléatoire 3", "",str(random.randint(1,100))+"\n"+" ".join([str(random.randint(2**i,3*2**(i))) for i in range(25)])] ,
+[ ["croissante 1", "",str(dic['seed'])+"\n"+" ".join([str(i) for i in range(25)])] ,
+["presque croissante", "",str(dic['seed'])+"\n"+"1 "+" ".join([str(i) for i in range(25)])] ,
+["pas stricte", "",str(dic['seed'])+"\n"+"0 "+" ".join([str(i) for i in range(25)])] ,
+["aléatoire 1", "",str(dic['seed'])+"\n"+" ".join([str(random.randint(1,10)) for i in range(25)])] ,
+["aléatoire 2", "",str(dic['seed'])+"\n"+" ".join([str(random.randint(1+2**i,2**(i+1))) for i in range(25)])] ,
+["aléatoire 3", "",str(dic['seed'])+"\n"+" ".join([str(random.randint(2**i,3*2**(i))) for i in range(25)])] ,
 
 
 ]
