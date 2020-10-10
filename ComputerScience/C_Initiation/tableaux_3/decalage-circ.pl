@@ -34,7 +34,7 @@ solution==
 void decaleDG(int tab1[],int tab2[],int size)
 {
     int val = tab1[size-1], i;
-    for (i = 1; i < size; i++)
+    for (i = size-1; i >=1; i--)
         tab1[i] = tab1[i-1];
     tab1[0] = val;
     val = tab2[0];
