@@ -11,21 +11,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 text==  
     Pour représenter un grille de mots croisés on utilise un tableau
      rectangulaire de char de taille LIGNES$%\times%$COLONNES.  
-  Dans une grille les mots sont écrits en majuscules, soit horizontalement de gauche à droite, soit verticalement de haut en bas.  
-On mémorise :  
-   une case vide par 0;  
-   une case noire par 1; 
-   une case remplie par la lettre majuscule alphabétique contenue.  
-  Ecrire une fonction `int place_noire(char plateau[][COLONNES],int x,int y)` qui place une case noire sur la case de coordonnées(x,y) de la grille.  
-      La fonction renvoie 1 si les coordonnées sont correctes et que la case était vide, 0 sinon.    
-
- Ecrire une fonction `int place_mot(char plateau[][COLONNES],int x,int y,char m[], char direction)}`qui place,si possible, le mot aux coordonnées indiquées.  
- Si direction vaut 'h', le mot doit être placé horizontalement, si  direction vaut 'v', le mot doit être placé  verticalement.  
-  Un mot  ne peut être placé que si:    
-		toutes les coordonées sont valides  
-		les cases étaient vides ou contenaient des lettres 
-                qui correspondent à celle du mot.
-
+  
 ==
 codebefore==
 
@@ -55,7 +41,6 @@ editor.code==
 int place_noire(char plateau[][COLONNES],int x,int y){
   if(x<0 || x>=LIGNES||y<0||y>=COLONNES|| plateau[x][y]!=0)
     return 0;
-  plateau[x][y]=1;
   return 1;
 }
 
@@ -89,16 +74,7 @@ if(place_noire(tab,x,y)==1)
   
  return 0;
 }
-/*
-PARADIS
-OPALINE
-IP1USSR
-SAS1SAG
-STALINE
-O1ASPEN
-NORDEST
 
-Perec */
 ==
 
 
