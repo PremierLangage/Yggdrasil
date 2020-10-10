@@ -25,7 +25,7 @@ codebefore==
 ==
 
 editor.code==
-/* Retour */ decalDG(/* Paramètres */){
+/* Retour */ decaleDG(/* Paramètres */){
 
 }
 ==
