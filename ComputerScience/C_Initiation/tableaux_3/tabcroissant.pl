@@ -25,7 +25,6 @@ codebefore==
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define MMAX 30
 #define MAX (access_control())
 
 /* a singleton kind of pattern */
@@ -35,7 +34,7 @@ int access_control()
   if (real_max == -1)
   {
     srand(time(NULL));
-    real_max = 5 + rand()%(MMAX-4);
+    real_max = 5 + rand()%(REAL_MAX-5);
   }
   return real_max;
 }
@@ -81,12 +80,12 @@ int main(int argc, char* argv[]){
 # les tests sont plus longs que MAX<=25 pour assurer qu'ils marchent
 # mais effectivement la seule partie qui compte c'est jusqu'à MAX
 tests==
-[ ["croissante 1", ""," ".join([str(i) for i in range(MMAX)])] ,
-["presque croissante", "","1 "+" ".join([str(i) for i in range(MMAX)])] ,
-["pas stricte", "","0 "+" ".join([str(i) for i in range(MMAX)])] ,
-["aléatoire 1", ""," ".join([str(random.randint(1,10)) for i in range(MMAX)])] ,
-["aléatoire 2", ""," ".join([str(random.randint(1+2**i,2**(i+1))) for i in range(MMAX)])] ,
-["aléatoire 3", ""," ".join([str(random.randint(2**i,3*2**(i))) for i in range(MMAX)])] ,
+[ ["croissante 1", ""," ".join([str(i) for i in range(25)])] ,
+["presque croissante", "","1 "+" ".join([str(i) for i in range(25)])] ,
+["pas stricte", "","0 "+" ".join([str(i) for i in range(25)])] ,
+["aléatoire 1", ""," ".join([str(random.randint(1,10)) for i in range(25)])] ,
+["aléatoire 2", ""," ".join([str(random.randint(1+2**i,2**(i+1))) for i in range(25)])] ,
+["aléatoire 3", ""," ".join([str(random.randint(2**i,3*2**(i))) for i in range(25)])] ,
 
 
 ]
