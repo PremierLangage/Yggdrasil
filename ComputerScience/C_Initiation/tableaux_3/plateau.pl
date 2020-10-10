@@ -71,7 +71,7 @@ tests==
   ["plateau en fin", "", "-7 10 17 3 18 20 8 -3 -1 15 -6 -15 8 7 -8 -12 -19 -19"],
   ["aléatoire 1", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])],
   ["aléatoire 2 ", ""," ".join([" ".join([str(random.randint(-20,20))]*(random.randint(1,10))) for i in range(random.randint(5,20))])],
-  ["aléatoire 3", ""," ".join([" ".join([str(random.randint(0,10))]*(random.randint(1,3))) for i in range(random.randint(10,20))])],
+  ["aléatoire 3", ""," ".join([" ".join([str(random.randint(0,100))]*(random.randint(1,3))) for i in range(random.randint(10,20))])],
   ["aléatoire 4", ""," ".join([" ".join([str(random.randint(0,100))]*(random.randint(1,10))) for i in range(random.randint(5,20))])+" 10 "*11],
    ]
 ==
