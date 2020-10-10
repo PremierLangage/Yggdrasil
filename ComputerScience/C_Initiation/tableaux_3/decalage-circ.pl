@@ -12,10 +12,8 @@ ainsi que leur taille et effectue un d'écalage circulaire d'une case vers la dr
 <p>
 Exemple
 avec taille 5 : <br>
-- si tab1 contient $%1,2,3,4%$ et tab2 contient $%1,2,3,4%$ , après l'éxécution de decalDG(tab1,tab2,5), tab1 contiendra $%4,1,2,3%$ et tab2 $%2,3,4,1%$
+- si tab1 contient $%1,2,3,4%$ et tab2 contient $%1,2,3,4%$ , après l'éxécution de decalDG(tab1,tab2,5), tab1 contiendra $%4,1,2,3%$ et tab2 $%2,3,4,1%$.
 
-<p>
-(*) MAX est une constante symbolique définie par #define MAX XXXXX, où XXXXX est un entier positif.
 ==
 codebefore==
 
