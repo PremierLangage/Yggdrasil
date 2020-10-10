@@ -59,14 +59,13 @@ int main(int argc, char* argv[]){
   int tab[MAX];
   int lu;
   int i;
-  printf("tableau d'entrée : \n"
+  printf("tableau d'entrée : \n");
   for (i = 0; i < MAX; i++) {
     scanf("%d",&lu);
     tab[i] = lu;
     printf("%d ",lu);
   }
-
-  printf("-->%d\n",est_croissante(tab));
+  printf("\n-->%d\n",est_croissante(tab));
 
   return 0;
 }
