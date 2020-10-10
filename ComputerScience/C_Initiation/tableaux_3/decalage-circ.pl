@@ -74,9 +74,6 @@ int main(int argc, char* argv[]){
 tests==
 [ ["croissante 1", "","5\n 1 2 3 4 5\n 1 2 3 4 5"] ,
 ["croissante 2", "","10\n"+" ".join([str(i) for i in range(1,10)])++" ".join([str(i) for i in range(1,10)]) ],
-["croissante 3", ""," ".join([str(i) for i in range(5)]) ],
-["aléatoire 1 ", ""," ".join([str(random.randint(-20,20)) for i in range(5)])], 
-["aléatoire 2 ", ""," ".join([str(random.randint(0,20)) for i in range(3)])],
 
 ]
 ==
