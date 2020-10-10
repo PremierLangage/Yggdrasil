@@ -6,7 +6,6 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 author= 
 
-
 text==
 
 Écrire une fonction `est_croissante` qui reçoit un tableau de taille MAX (*) et renvoie 1
@@ -33,7 +32,16 @@ int access_control()
 {
   static int real_max = -1;
   if (real_max == -1)
+  {
+    /* a bit of an ugly fix:
+    to ensure that the same seed is used
+    for the test of the student solution
+    and the official solution, we take the
+    time to the nearest multiple of 5...
+    donc, chaque 5 secondes, MAX changera  */
+    srand(5*((int)time(NULL)/5));
     real_max = 5 + rand()%20;
+  }
   return real_max;
 }
 
@@ -61,9 +69,6 @@ int main(int argc, char* argv[]){
   int tab[MAX];
   int lu;
   int i;
-  int seed;
-  scanf("%d",&seed);
-  srand(seed);
   printf("constante MAX = %d\n",MAX);
   printf("tableau d'entrée : \n");
   for (i = 0; i < MAX; i++) {
@@ -77,23 +82,16 @@ int main(int argc, char* argv[]){
 }
 ==
 
-# Pabo. Pour eviter que la 'seed' puisse être 
-# différente pour les tests sur la solution officielle
-# et celle de l'étudiant
-seed==
-  random.randint(1,100)
-==
-
 # MAX était donné comme valeur comme en C dans les tests, ça faisait tout planter, il faut le mettre à la main
-# les tests sont plus longs que MAX<=25 pour assurer qu'ils marchent dans tous les cas
+# les tests sont plus longs que MAX<=25 pour assurer qu'ils marchent
 # mais effectivement la seule partie qui compte c'est jusqu'à MAX
 tests==
-[ ["croissante 1", "",str(dic['seed'])+"\n"+" ".join([str(i) for i in range(25)])] ,
-["presque croissante", "",str(dic['seed'])+"\n"+"1 "+" ".join([str(i) for i in range(25)])] ,
-["pas stricte", "",str(dic['seed'])+"\n"+"0 "+" ".join([str(i) for i in range(25)])] ,
-["aléatoire 1", "",str(dic['seed'])+"\n"+" ".join([str(random.randint(1,10)) for i in range(25)])] ,
-["aléatoire 2", "",str(dic['seed'])+"\n"+" ".join([str(random.randint(1+2**i,2**(i+1))) for i in range(25)])] ,
-["aléatoire 3", "",str(dic['seed'])+"\n"+" ".join([str(random.randint(2**i,3*2**(i))) for i in range(25)])] ,
+[ ["croissante 1", ""," ".join([str(i) for i in range(25)])] ,
+["presque croissante", "","1 "+" ".join([str(i) for i in range(25)])] ,
+["pas stricte", "","0 "+" ".join([str(i) for i in range(25)])] ,
+["aléatoire 1", ""," ".join([str(random.randint(1,10)) for i in range(25)])] ,
+["aléatoire 2", ""," ".join([str(random.randint(1+2**i,2**(i+1))) for i in range(25)])] ,
+["aléatoire 3", ""," ".join([str(random.randint(2**i,3*2**(i))) for i in range(25)])] ,
 
 
 ]
