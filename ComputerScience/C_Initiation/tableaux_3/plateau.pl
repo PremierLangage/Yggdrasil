@@ -28,20 +28,20 @@ solution==
 int plateau(int t[], int taille,int *debut){
     int len = 0, i;
     *debut = 0;
-    int cur = 0;
+    int cur = 1;
     for (i = 1; i < taille; i++)
     {
         if (t[i]==t[i-1])
             cur++;
         else
-            cur = 0;
+            cur = 1;
         if (cur > len)
         {
             len = cur;
             *debut = (i-len);
         }
     }
-    return len+1;
+    return len;
 }
  
 ==
