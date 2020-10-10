@@ -75,6 +75,7 @@ tests==
 [ ["croissante 1", "","5\n 1 2 3 4 5\n 1 2 3 4 5"] ,
 ["croissante 2", "","9\n"+" ".join([str(i) for i in range(1,10)])+"\n"+" ".join([str(i) for i in range(1,10)]) ],
 ["aléatoire 1", "","20\n"+" ".join([str(random.randint(-20,20)) for i in range(20)])+"\n"+" ".join([str(random.randint(0,20)) for i in range(20)]) ],
+["aléatoire 2", "","10\n"+" ".join([str(random.randint(0,50)) for i in range(10)])+"\n"+" ".join([str(random.randint(0,20)) for i in range(10)]) ],
 
 ]
 ==
