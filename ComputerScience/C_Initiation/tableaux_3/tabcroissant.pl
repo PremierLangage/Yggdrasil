@@ -59,7 +59,7 @@ int main(int argc, char* argv[]){
   int tab[MAX];
   int lu;
   int i;
-  printf("tableau : \n"
+  printf("tableau d'entrée : \n"
   for (i = 0; i < MAX; i++) {
     scanf("%d",&lu);
     tab[i] = lu;
