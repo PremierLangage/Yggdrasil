@@ -2,6 +2,7 @@
 title=Tableau 2d de caractères
 tag=tableau 2d
 extends=/ComputerScience/C/template/stdsandboxC.pl
+author= 
 
 text==
 Ecrire une fonction de protopype `void remplit(char t[MAX][MAX],int li,int col);` 
@@ -72,5 +73,6 @@ tests==
 ["aléatoire ", "",str(random.randint(4,8))+" "+str(random.randint(9,15))],
 ]
 ==
+
 
 
