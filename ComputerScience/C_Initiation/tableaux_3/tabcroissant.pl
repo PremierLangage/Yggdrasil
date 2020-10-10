@@ -20,6 +20,11 @@ avec MAX valant 5 : <br>
 <p>
 (*) MAX est une constante symbolique définie par #define MAX XXXXX, où XXXXX est un entier positif.
 ==
+
+seed==
+  random.randint(1,1000000)
+==
+
 codebefore==
 
 #include <stdio.h>
