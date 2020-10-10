@@ -27,13 +27,16 @@ codebefore==
 #include <stdlib.h>
 #include <time.h>
 #define MAX (access_control())
+int seed;
 
 /* a singleton kind of pattern */
 int access_control()
 {
   static int real_max = -1;
-  if (real_max == -1)
+  if (real_max == -1) {
+    srand(seed);
     real_max = 5 + rand()%20;
+  }
   return real_max;
 }
 
@@ -61,9 +64,7 @@ int main(int argc, char* argv[]){
   int tab[MAX];
   int lu;
   int i;
-  int seed;
   scanf("%d",&seed);
-  srand(seed);
   printf("constante MAX = %d\n",MAX);
   printf("tableau d'entrée : \n");
   for (i = 0; i < MAX; i++) {
