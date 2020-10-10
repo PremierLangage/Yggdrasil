@@ -61,7 +61,7 @@ int main(int argc, char* argv[]){
   int lu;
   int i;
   int seed;
-  scanf("%d",&seed)ñ
+  scanf("%d",&seed);
   srand(seed);
   printf("constante MAX = %d\n",MAX);
   printf("tableau d'entrée : \n");
