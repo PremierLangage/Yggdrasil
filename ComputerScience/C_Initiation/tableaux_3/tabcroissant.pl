@@ -44,7 +44,7 @@ int access_control()
     and the official solution, we take the
     time to the nearest multiple of 5...
     donc, chaque 5 secondes, MAX changera  */
-    srand(5*((int)time(NULL)/5));
+    /*srand(5*((int)time(NULL)/5));*/
     real_max = 5 + rand()%20;
   }
   return real_max;
@@ -74,6 +74,9 @@ int main(int argc, char* argv[]){
   int tab[MAX];
   int lu;
   int i;
+  int seed;
+  scanf("%d",&seed);
+  srand(seed);
   printf("constante MAX = %d\n",MAX);
   printf("tableau d'entrée : \n");
   for (i = 0; i < MAX; i++) {
@@ -91,12 +94,12 @@ int main(int argc, char* argv[]){
 # les tests sont plus longs que MAX<=25 pour assurer qu'ils marchent
 # mais effectivement la seule partie qui compte c'est jusqu'à MAX
 tests==
-[ ["croissante 1", ""," ".join([str(i) for i in range(25)])] ,
-["presque croissante", "","1 "+" ".join([str(i) for i in range(25)])] ,
-["pas stricte", "","0 "+" ".join([str(i) for i in range(25)])] ,
-["aléatoire 1", ""," ".join([str(random.randint(1,10)) for i in range(25)])] ,
-["aléatoire 2", ""," ".join([str(random.randint(1+2**i,2**(i+1))) for i in range(25)])] ,
-["aléatoire 3", ""," ".join([str(random.randint(2**i,3*2**(i))) for i in range(25)])] ,
+[ ["croissante 1", "",str(seed:=random.randint(2,100000))+" "+ " ".join([str(i) for i in range(25)])] ,
+["presque croissante", "",str(seed)+" "+ "1 "+" ".join([str(i) for i in range(25)])] ,
+["pas stricte", "",str(seed)+" "+ "0 "+" ".join([str(i) for i in range(25)])] ,
+["aléatoire 1", "",str(seed)+" "+ " ".join([str(random.randint(1,10)) for i in range(25)])] ,
+["aléatoire 2", "",str(seed)+" "+ " ".join([str(random.randint(1+2**i,2**(i+1))) for i in range(25)])] ,
+["aléatoire 3", "",str(seed)+" "+ " ".join([str(random.randint(2**i,3*2**(i))) for i in range(25)])] ,
 
 
 ]
