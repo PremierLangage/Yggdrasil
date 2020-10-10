@@ -24,7 +24,13 @@ codebefore==
 
 #include <stdio.h>
 #include <stdlib.h>
-#define MAX 5
+#define MAX (access_control())
+
+int access_control()
+{
+  static int real_max = 1 + rand()%50;
+  return real_max;
+}
 
 ==
 
