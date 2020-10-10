@@ -32,17 +32,7 @@ int access_control()
 {
   static int real_max = -1;
   if (real_max == -1)
-  {
-  /* Pablo. a bit of an ugly fix:
-    the program for the student's code
-    and the official code are not the same
-    ... but we must ensure that the random
-    seed is the same, thus we take the
-    time to the nearest multiple of 5...
-    donc, chaque 5 secondes, MAX changera  */
-    srand(5*((int)time(NULL)/5));
     real_max = 5 + rand()%20;
-  }
   return real_max;
 }
 
@@ -70,6 +60,8 @@ int main(int argc, char* argv[]){
   int tab[MAX];
   int lu;
   int i;
+  int seed;
+  srand(seed);
   printf("constante MAX = %d\n",MAX);
   printf("tableau d'entrée : \n");
   for (i = 0; i < MAX; i++) {
