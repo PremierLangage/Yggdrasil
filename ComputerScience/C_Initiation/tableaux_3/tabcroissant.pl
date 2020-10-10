@@ -24,7 +24,7 @@ codebefore==
 
 #include <stdio.h>
 #include <stdlib.h>
-const int MAX =  5;
+const int MAX =  1 + rand()%50;
 
 ==
 
