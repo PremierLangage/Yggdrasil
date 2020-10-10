@@ -31,7 +31,7 @@ int access_control()
 {
   static int real_max = -1;
   if (real_max == -1)
-    real_max = 1 + rand()%50;
+    real_max = 5 + rand()%20;
   return real_max;
 }
 
