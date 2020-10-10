@@ -27,21 +27,24 @@ codebefore==
 #include <time.h>
 #define MAX (access_control())
 
-/* a singleton kind of pattern */
-int access_control()
+void __attribute__ ((constructor)) premain()
 {
-  static int real_max = -1;
-  if (real_max == -1)
-  {
   /* a bit of an ugly fix:
     to ensure that the same seed is used
     for the test of the student solution
     and the official solution, we take the
     time to the nearest multiple of 5...
     donc, chaque 5 secondes, MAX changera  */
+    
     srand(5*((int)time(NULL)/5));
+}
+
+/* a singleton kind of pattern */
+int access_control()
+{
+  static int real_max = -1;
+  if (real_max == -1)
     real_max = 5 + rand()%20;
-  }
   return real_max;
 }
 
