@@ -33,7 +33,8 @@ int access_control()
   static int real_max = -1;
   if (real_max == -1)
   {
-  /* to ensure that the same seed is used
+  /* a bit of an ugly fix:
+    to ensure that the same seed is used
     for the test of the student solution
     and the official solution, we take the
     time to the nearest multiple of 5...
