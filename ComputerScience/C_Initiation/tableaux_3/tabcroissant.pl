@@ -35,7 +35,9 @@ void __attribute__ ((constructor)) premain()
     and the official solution, we take the
     time to the nearest multiple of 5...
     donc, chaque 5 secondes, MAX changera  */
-    printf("OUT\n");
+    static int i = 0;
+    i++;
+    printf("OUT %d\n",i);
     srand(((int)time(NULL)));
 }
 
