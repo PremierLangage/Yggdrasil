@@ -70,9 +70,13 @@ int main(int argc, char* argv[]){
 ==
 
 # MAX était donné comme valeur comme en C dans les tests, ça faisait tout planter, il faut le mettre à la main
+# les tests sont plus longs que MAX pour assurer qu'ils marchent
 tests==
 [ ["croissante 1", ""," ".join([str(i) for i in range(25)])] ,
 ["presque croissante", "","1 "+" ".join([str(i) for i in range(25)])] ,
+["pas stricte", "","0 "+" ".join([str(i) for i in range(25)])] ,
+["aléatoire 1", "","1 "+" ".join([str(random.randint()) for i in range(25)])] ,
+
 
 ]
 ==
