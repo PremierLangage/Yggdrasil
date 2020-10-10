@@ -80,7 +80,8 @@ int main(int argc, char* argv[]){
 # MAX était donné comme valeur comme en C dans les tests, ça faisait tout planter, il faut le mettre à la main
 # les tests sont plus longs que MAX<=25 pour assurer qu'ils marchent dans tous les cas
 # mais effectivement la seule partie qui compte c'est jusqu'à MAX
-seed=random.randint(1,100)
+seed==
+  random.randint(1,100)
 
 tests==
 [ ["croissante 1", "",str(seed)+"\n"+" ".join([str(i) for i in range(25)])] ,
