@@ -35,7 +35,7 @@ int access_control()
   if (real_max == -1)
   {
     srand(time(NULL));
-    real_max = 5 + rand()%(MMAX-5);
+    real_max = 5 + rand()%(MMAX-4);
   }
   return real_max;
 }
