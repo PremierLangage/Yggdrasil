@@ -24,7 +24,7 @@ codebefore==
 
 #include <stdio.h>
 #include <stdlib.h>
-#define MAX 5
+const int MAX =  5;
 
 ==
 
