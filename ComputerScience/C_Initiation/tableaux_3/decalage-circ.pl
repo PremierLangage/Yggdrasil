@@ -20,7 +20,7 @@ codebefore==
 
 #include <stdio.h>
 #include <stdlib.h>
-#define MAX 5
+#define MAX 256
 
 ==
 
@@ -46,7 +46,7 @@ void decaleDG(int tab1[],int tab2[],int size)
 
 codeafter==
 int main(int argc, char* argv[]){
-  int tab[MAX];
+  int tab1[MAX],tab2[MAX];
   int lu;
   int i;
   for (i = 0; i < MAX; i++) {
