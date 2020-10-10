@@ -49,12 +49,23 @@ int main(int argc, char* argv[]){
   int tab1[MAX],tab2[MAX];
   int lu;
   int i;
-  for (i = 0; i < MAX; i++) {
+  int size;
+  scanf("%i",&size);
+  for (i = 0; i < size; i++) {
     scanf("%d",&lu);
-    tab[i] = lu;
+    tab1[i] = lu;
   }
-  printf("-->%d\n",est_croissante(tab));
-
+  for (i = 0; i < size; i++) {
+    scanf("%d",&lu);
+    tab2[i] = lu;
+  }
+  decaleDG(tab1,tab2,size);
+  printf("tab1 :");
+  for (i = 0; i < size; i++)
+    printf(" %i",tab1[i]);
+  printf("\ntab2 :");
+  for (i = 0; i < size; i++)
+    printf(" %i",tab2[i]);
   return 0;
 }
 ==
