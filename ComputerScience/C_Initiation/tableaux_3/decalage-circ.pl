@@ -31,7 +31,7 @@ editor.code==
 ==
 
 solution==
-int decaleDG(int tab1[],int tab2[],int size)
+void decaleDG(int tab1[],int tab2[],int size)
 {
     int val = tab1[size-1];
     for (int i = 1; i < size; i++)
