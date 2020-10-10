@@ -6,8 +6,6 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 author= 
 
-mx = random.randint(5,10)
-
 text==
 
 Écrire une fonction `est_croissante` qui reçoit un tableau de taille MAX (*) et renvoie 1
@@ -26,7 +24,7 @@ codebefore==
 
 #include <stdio.h>
 #include <stdlib.h>
-#define MAX $(mx)
+#define MAX 5
 
 ==
 
