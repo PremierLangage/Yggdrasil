@@ -78,6 +78,7 @@ tests==
 ["pas stricte", "","0 "+" ".join([str(i) for i in range(25)])] ,
 ["aléatoire 1", ""," ".join([str(random.randint(1,10)) for i in range(25)])] ,
 ["aléatoire 2", ""," ".join([str(random.randint(1+2**i,2**(i+1))) for i in range(25)])] ,
+["aléatoire 3", ""," ".join([str(random.randint(2**i,3*2**(i))) for i in range(25)])] ,
 
 
 ]
