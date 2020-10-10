@@ -33,10 +33,11 @@ int access_control()
   static int real_max = -1;
   if (real_max == -1)
   {
-  /* a bit of an ugly fix:
-    to ensure that the same seed is used
-    for the test of the student solution
-    and the official solution, we take the
+  /* Pablo. a bit of an ugly fix:
+    the program for the student's code
+    and the official code are not the same
+    ... but we must ensure that the random
+    seed is the same, thus we take the
     time to the nearest multiple of 5...
     donc, chaque 5 secondes, MAX changera  */
     srand(5*((int)time(NULL)/5));
