@@ -25,6 +25,7 @@ codebefore==
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#define MMAX 30
 #define MAX (access_control())
 
 /* a singleton kind of pattern */
@@ -34,7 +35,7 @@ int access_control()
   if (real_max == -1)
   {
     srand(time(NULL));
-    real_max = 5 + rand()%20;
+    real_max = 5 + rand()%(MMAX-4);
   }
   return real_max;
 }
