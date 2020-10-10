@@ -33,7 +33,7 @@ int access_control()
   static int real_max = -1;
   if (real_max == -1)
   {
-    srand(time(NULL));
+    srand(3*(time(NULL)/3));
     real_max = 5 + rand()%20;
   }
   return real_max;
