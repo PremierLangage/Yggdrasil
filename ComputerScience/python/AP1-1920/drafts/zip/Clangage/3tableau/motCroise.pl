@@ -78,7 +78,7 @@ if(place_noire(tab,x,y)==1)
 
 
 tests==
-[ ["simple éxécution", " ","2 2"],
+[ ["simple éxécution"," ","2 2"],
  ]
 ==
 
