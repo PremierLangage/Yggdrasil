@@ -26,6 +26,7 @@ codebefore==
 #include <stdlib.h>
 #define MAX (access_control())
 
+/* a singleton kind of pattern */
 int access_control()
 {
   static int real_max = -1;
