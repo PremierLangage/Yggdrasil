@@ -99,12 +99,12 @@ seed==
 # les tests sont plus longs que MAX<=25 pour assurer qu'ils marchent
 # mais effectivement la seule partie qui compte c'est jusqu'à MAX
 tests==
-[ ["croissante 1", "",str(seed)+" "+ " ".join([str(i) for i in range(25)])] ,
-["presque croissante", "",str(seed)+" "+ "1 "+" ".join([str(i) for i in range(25)])] ,
-["pas stricte", "",str(seed)+" "+ "0 "+" ".join([str(i) for i in range(25)])] ,
-["aléatoire 1", "",str(seed)+" "+ " ".join([str(random.randint(1,10)) for i in range(25)])] ,
-["aléatoire 2", "",str(seed)+" "+ " ".join([str(random.randint(1+2**i,2**(i+1))) for i in range(25)])] ,
-["aléatoire 3", "",str(seed)+" "+ " ".join([str(random.randint(2**i,3*2**(i))) for i in range(25)])] ,
+[ ["croissante 1", "",str(dic['seed'])+" "+ " ".join([str(i) for i in range(25)])] ,
+["presque croissante", "",str(dic['seed'])+" "+ "1 "+" ".join([str(i) for i in range(25)])] ,
+["pas stricte", "",str(dic['seed'])+" "+ "0 "+" ".join([str(i) for i in range(25)])] ,
+["aléatoire 1", "",str(dic['seed'])+" "+ " ".join([str(random.randint(1,10)) for i in range(25)])] ,
+["aléatoire 2", "",str(dic['seed'])+" "+ " ".join([str(random.randint(1+2**i,2**(i+1))) for i in range(25)])] ,
+["aléatoire 3", "",str(dic['seed'])+" "+ " ".join([str(random.randint(2**i,3*2**(i))) for i in range(25)])] ,
 
 
 ]
