@@ -72,7 +72,7 @@ int main(int argc, char* argv[]){
 
 # MAX était donné comme valeur comme en C dans les tests, ça faisait tout planter, il faut le mettre à la main
 tests==
-[ ["croissante 1", "","5 1 2 3 4 5 1 2 3 4 5"] ,
+[ ["croissante 1", "","5\n 1 2 3 4 5\n 1 2 3 4 5"] ,
 
 ]
 ==
