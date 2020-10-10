@@ -92,14 +92,14 @@ int main(int argc, char* argv[]){
 
 
 seed==
-  str(random.randint(2,10000000))
+  random.randint(2,10000000)
 ==
 
 # MAX était donné comme valeur comme en C dans les tests, ça faisait tout planter, il faut le mettre à la main
 # les tests sont plus longs que MAX<=25 pour assurer qu'ils marchent
 # mais effectivement la seule partie qui compte c'est jusqu'à MAX
 tests==
-[ ["croissante 1", "",dic['seed']+" "+ " ".join([str(i) for i in range(25)])] ,
+[ ["croissante 1", "",str(dic['seed'])+" "+ " ".join([str(i) for i in range(25)])] ,
 ["presque croissante", "",str(dic['seed'])+" "+ "1 "+" ".join([str(i) for i in range(25)])] ,
 ["pas stricte", "",str(dic['seed'])+" "+ "0 "+" ".join([str(i) for i in range(25)])] ,
 ["aléatoire 1", "",str(dic['seed'])+" "+ " ".join([str(random.randint(1,10)) for i in range(25)])] ,
