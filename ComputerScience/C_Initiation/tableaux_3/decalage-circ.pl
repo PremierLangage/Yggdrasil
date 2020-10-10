@@ -12,7 +12,8 @@ ainsi que leur taille et effectue un d'écalage circulaire d'une case vers la dr
 <p>
 Exemple
 avec taille 5 : <br>
-- si tab1 contient $%1,2,3,4%$ et tab2 contient $%1,2,3,4%$ , après l'éxécution de decaleDG(tab1,tab2,5), tab1 contiendra $%4,1,2,3%$ et tab2 $%2,3,4,1%$.
+- si tab1 contient $%1,2,3,4%$ et tab2 contient $%1,2,3,4%$ , 
+après l'éxécution de decaleDG(tab1,tab2,5), tab1 contiendra $%4,1,2,3%$ et tab2 $%2,3,4,1%$.
 
 ==
 codebefore==
@@ -32,6 +33,14 @@ editor.code==
 solution==
 int decaleDG(int tab1[],int tab2[],int size)
 {
+    int val = tab1[size-1];
+    for (int i = 1; i < size; i++)
+        tab1[i] = tab1[i-1];
+    tab1[0] = val;
+    val = tab2[0];
+    for (int i = 1; i < size; i++)
+        tab2[i-1] = tab2[i];
+    tab[size-1] = val;
     
 }
 ==
