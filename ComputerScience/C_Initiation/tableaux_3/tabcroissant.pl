@@ -24,6 +24,7 @@ codebefore==
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #define MAX (access_control())
 
 /* a singleton kind of pattern */
