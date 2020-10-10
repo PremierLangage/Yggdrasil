@@ -18,7 +18,7 @@ On mémorise :
    une case remplie par la lettre majuscule alphabétique contenue.  
   Ecrire une fonction `int place_noire(char plateau[][COLONNES],int x,int y)` qui place une case noire sur la case de coordonnées(x,y) de la grille.  
       La fonction renvoie 1 si les coordonnées sont correctes et que la case était vide, 0 sinon.    
-$
+
  Ecrire une fonction `int place_mot(char plateau[][COLONNES],int x,int y,char m[], char direction)}`qui place,si possible, le mot aux coordonnées indiquées.  
  Si direction vaut 'h', le mot doit être placé horizontalement, si  direction vaut 'v', le mot doit être placé  verticalement.  
   Un mot  ne peut être placé que si:    
@@ -32,7 +32,6 @@ codebefore==
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 #define LIGNES 7
 #define COLONNES 7 
 
