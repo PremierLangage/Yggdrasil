@@ -7,12 +7,12 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
 
 text==
-Écrire une fonction `void decaleD(int t, int taille)` qui re¸coit un tableau sa
-taille et effectue un d´ecalage circulaire d’une case vers la droite des ´el´ements de t
+Écrire une fonction `void decaleDG(int tab1 [], tab2 [], int taille)` qui reçoit deux tableaux, `tab1` et `tab2`, 
+ainsi que leur taille et effectue un d'écalage circulaire d'une case vers la droite pour `tab1`, et d'une case vers la gauche pour `tab2`.
 <p>
 Exemple
-avec MAX valant 5 : <br>
-- si tab contient $%-4,5,10,14,1%$, est_croissante(tab) renvoie $%0%$,<br>
+avec taille 5 : <br>
+- si tab1 contient $%1,2,3,4%$ et tab2 contient $%1,2,3,4%$ , decalDG(tab1,tab2,5) renvoie $%0%$,<br>
 - Si tab contient $%5,6,8,75,82%$, est_croissante(tab) renvoie $%1%$.<br>
 
 <p>
