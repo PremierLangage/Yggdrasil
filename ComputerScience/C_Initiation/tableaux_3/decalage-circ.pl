@@ -40,8 +40,7 @@ void decaleDG(int tab1[],int tab2[],int size)
     val = tab2[0];
     for (int i = 1; i < size; i++)
         tab2[i-1] = tab2[i];
-    tab[size-1] = val;
-    
+    tab2[size-1] = val;
 }
 ==
 
