@@ -8,7 +8,7 @@ author=
 
 text==
 Écrire une fonction `void decaleDG(int tab1 [], tab2 [], int taille)` qui reçoit deux tableaux, `tab1` et `tab2`, 
-ainsi que leur taille et effectue un d'écalage circulaire d'une case vers la droite pour `tab1`, et d'une case vers la gauche pour `tab2`.
+ainsi que leur taille et effectue un décalage circulaire d'une case vers la droite pour `tab1`, et d'une case vers la gauche pour `tab2`.
 <p>
 Exemple
 avec taille 5 : <br>
