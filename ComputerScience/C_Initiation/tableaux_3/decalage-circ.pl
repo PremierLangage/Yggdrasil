@@ -12,7 +12,7 @@ ainsi que leur taille et effectue un d'écalage circulaire d'une case vers la dr
 <p>
 Exemple
 avec taille 5 : <br>
-- si tab1 contient $%1,2,3,4%$ et tab2 contient $%1,2,3,4%$ , après l'éxécution de decalDG(tab1,tab2,5), tab1 contiendra $%4,1,2,3%$ et tab2 $%2,3,4,1%$.
+- si tab1 contient $%1,2,3,4%$ et tab2 contient $%1,2,3,4%$ , après l'éxécution de decaleDG(tab1,tab2,5), tab1 contiendra $%4,1,2,3%$ et tab2 $%2,3,4,1%$.
 
 ==
 codebefore==
@@ -24,19 +24,15 @@ codebefore==
 ==
 
 editor.code==
-/* Retour */ est_croissante(/* Paramètres */){
+/* Retour */ decalDG(/* Paramètres */){
 
 }
 ==
 
 solution==
-int est_croissante(int tab[]){
-  int i=1;
-for(;i<MAX;i+=1){
-    if (tab[i-1] >= tab[i])
-      return 0;
-      }
-  return 1;
+int decaleDG(int tab1[],int tab2[],int size)
+{
+    
 }
 ==
 
