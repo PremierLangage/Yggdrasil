@@ -20,11 +20,6 @@ avec MAX valant 5 : <br>
 <p>
 (*) MAX est une constante symbolique définie par #define MAX XXXXX, où XXXXX est un entier positif.
 ==
-
-seed==
-  random.randint(1,1000000)
-==
-
 codebefore==
 
 #include <stdio.h>
@@ -44,7 +39,7 @@ int access_control()
     and the official solution, we take the
     time to the nearest multiple of 5...
     donc, chaque 5 secondes, MAX changera  */
-    /*srand(5*((int)time(NULL)/5));*/
+    srand(5*((int)time(NULL)/5));
     real_max = 5 + rand()%20;
   }
   return real_max;
@@ -74,9 +69,6 @@ int main(int argc, char* argv[]){
   int tab[MAX];
   int lu;
   int i;
-  int seed;
-  scanf("%d",&seed);
-  srand(seed);
   printf("constante MAX = %d\n",MAX);
   printf("tableau d'entrée : \n");
   for (i = 0; i < MAX; i++) {
@@ -90,34 +82,20 @@ int main(int argc, char* argv[]){
 }
 ==
 
-
-my_seed==
-  str(random.randint(1,10000000))
-==
-
 # MAX était donné comme valeur comme en C dans les tests, ça faisait tout planter, il faut le mettre à la main
 # les tests sont plus longs que MAX<=25 pour assurer qu'ils marchent
 # mais effectivement la seule partie qui compte c'est jusqu'à MAX
 tests==
-[ ["croissante 1", "",eval(dic['my_seed'])+" "+ " ".join([str(i) for i in range(25)])] ,
-["presque croissante", "",eval(dic['my_seed'])+" "+ "1 "+" ".join([str(i) for i in range(25)])] ,
-["pas stricte", "",eval(dic['my_seed'])+" "+ "0 "+" ".join([str(i) for i in range(25)])] ,
-["aléatoire 1", "",eval(dic['my_seed'])+" "+ " ".join([str(random.randint(1,10)) for i in range(25)])] ,
-["aléatoire 2", "",eval(dic['my_seed'])+" "+ " ".join([str(random.randint(1+2**i,2**(i+1))) for i in range(25)])] ,
-["aléatoire 3", "",eval(dic['my_seed'])+" "+ " ".join([str(random.randint(2**i,3*2**(i))) for i in range(25)])] ,
+[ ["croissante 1", ""," ".join([str(i) for i in range(25)])] ,
+["presque croissante", "","1 "+" ".join([str(i) for i in range(25)])] ,
+["pas stricte", "","0 "+" ".join([str(i) for i in range(25)])] ,
+["aléatoire 1", ""," ".join([str(random.randint(1,10)) for i in range(25)])] ,
+["aléatoire 2", ""," ".join([str(random.randint(1+2**i,2**(i+1))) for i in range(25)])] ,
+["aléatoire 3", ""," ".join([str(random.randint(2**i,3*2**(i))) for i in range(25)])] ,
 
 
 ]
 ==
-
-
-
-
-
-
-
-
-
 
 
 
