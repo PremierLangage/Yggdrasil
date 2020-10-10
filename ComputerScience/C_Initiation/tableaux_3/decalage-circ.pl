@@ -7,7 +7,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
 
 text==
-Écrire une fonction ´void decaleD(int t, int taille)´ qui re¸coit un tableau sa
+Écrire une fonction `void decaleD(int t, int taille)` qui re¸coit un tableau sa
 taille et effectue un d´ecalage circulaire d’une case vers la droite des ´el´ements de t
 <p>
 Exemple
