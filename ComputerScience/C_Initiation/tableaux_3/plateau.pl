@@ -24,7 +24,6 @@ int plateau(int t[], int taille,int *debut){
   /* Votre code ici */
 }
 ==
-#La solution plante, cf le test ajouté "test qui plante"
 solution==
 int plateau(int t[], int taille,int *debut){
     int len = 0, i;
@@ -74,6 +73,7 @@ tests==
   ["aléatoire avec beacuoup de plateaux ", ""," ".join([" ".join([str(random.randint(-20,20))]*(random.randint(1,10))) for i in range(random.randint(5,20))])],
    ]
 ==
+
 
 
 
