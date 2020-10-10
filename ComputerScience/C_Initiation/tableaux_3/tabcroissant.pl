@@ -92,7 +92,7 @@ int main(int argc, char* argv[]){
 
 
 seed==
-  random.randint(2,10000000)
+  random.randint(500,10000000)
 ==
 
 # MAX était donné comme valeur comme en C dans les tests, ça faisait tout planter, il faut le mettre à la main
