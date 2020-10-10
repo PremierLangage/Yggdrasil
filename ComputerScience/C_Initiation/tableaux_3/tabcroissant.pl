@@ -71,7 +71,7 @@ int main(int argc, char* argv[]){
 
 # MAX était donné comme valeur comme en C dans les tests, ça faisait tout planter, il faut le mettre à la main
 tests==
-[ ["croissante 1", ""," ".join([str(i) for i in range(MAX)])] ,
+[ ["croissante 1", ""," ".join([str(i) for i in range(25)])] ,
 
 ]
 ==
