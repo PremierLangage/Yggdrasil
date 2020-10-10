@@ -28,7 +28,9 @@ codebefore==
 
 int access_control()
 {
-  static int real_max = 1 + rand()%50;
+  static int real_max = -1;
+  if (real_max == -1)
+    real_max = 1 + rand()%50;
   return real_max;
 }
 
