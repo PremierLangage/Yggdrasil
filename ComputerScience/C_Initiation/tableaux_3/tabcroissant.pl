@@ -86,7 +86,7 @@ seed==
 
 
 tests==
-[ ["croissante 1", "",str(seed)+"\n"+" ".join([str(i) for i in range(25)])] ,
+[ ["croissante 1", "",str(dic['seed'])+"\n"+" ".join([str(i) for i in range(25)])] ,
 ["presque croissante", "",str(seed)+"\n"+"1 "+" ".join([str(i) for i in range(25)])] ,
 ["pas stricte", "",str(seed)+"\n"+"0 "+" ".join([str(i) for i in range(25)])] ,
 ["aléatoire 1", "",str(seed)+"\n"+" ".join([str(random.randint(1,10)) for i in range(25)])] ,
