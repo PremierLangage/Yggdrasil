@@ -36,7 +36,8 @@ int access_control()
   /* to ensure that the same seed is used
     for the test of the student solution
     and the official solution, we take the
-    time to the nearest multiple of 5...  */
+    time to the nearest multiple of 5...
+    donc, chaque 5 secondes, MAX changera  */
     srand(5*((int)time(NULL)/5));
     real_max = 5 + rand()%20;
   }
