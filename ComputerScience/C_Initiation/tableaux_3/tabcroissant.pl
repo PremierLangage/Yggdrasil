@@ -82,6 +82,8 @@ int main(int argc, char* argv[]){
 # mais effectivement la seule partie qui compte c'est jusqu'à MAX
 seed==
   random.randint(1,100)
+==
+
 
 tests==
 [ ["croissante 1", "",str(seed)+"\n"+" ".join([str(i) for i in range(25)])] ,
