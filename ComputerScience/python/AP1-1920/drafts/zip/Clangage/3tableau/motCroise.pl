@@ -66,16 +66,14 @@ char tab[LIGNES][COLONNES]={{'\0'}};
 strcpy(tab[1],"OPALINE");
 strcpy(tab[3],"SAS1");
 
-scanf("%d %d",&x,&y);
+scanf("%d",&x);scanf("%d",&y);
 if(place_noire(tab,x,y)==1)
   printf("case valide \n");
  else
   printf("case invalide \n"); 
  affiche(tab);
-  
  return 0;
 }
-
 ==
 
 
