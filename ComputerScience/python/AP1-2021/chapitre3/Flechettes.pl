@@ -12,6 +12,7 @@ n = int(input("Un nombre : "))
 
 print("Il y a",nb,"façon(s) d'obtenir",n)
 
+tag=Boucle|bouclesImbriquées|forInRange|While
 ==
 
 taboo=import
@@ -110,6 +111,7 @@ mplsoluce4==
 Impossible
 48
 ==
+
 
 
 
