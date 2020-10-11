@@ -3,10 +3,10 @@ Latex:1
 ** Le code suivant : 
 
 $%
-{\text{\tt
-     int i, tab[10]; \newline
+{\text{\verbatim
+     int i, tab[10];
 
-     for(i=0;i<10;i++) \newline
+     for(i=0;i<10;i++) 
 
         scanf("%d",&tab[i]);
 }}
