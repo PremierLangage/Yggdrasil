@@ -35,3 +35,23 @@ Latex:1
 - 3
 - 4
 
+** Quelle valeur affichera le code suivant ? 
+
+
+     int i,j=2;
+
+     int tab[7] = {2, 3, 0, 4, 1, 1, 2};
+
+     for (i=0; i<3; i=i+1)
+
+        j = tab[j];
+        
+     printf("%d\n", j);
+
+
++ 0
+- 1
+- 2
+- 3
+- 4
+
