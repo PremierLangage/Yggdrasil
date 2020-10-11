@@ -84,7 +84,9 @@ int main(int argc, char* argv[]){
 
     int LI,COL,N;
 
-
+    LI = rand()%5;
+    COL = rand()%5;
+    N = rand()%5;
 
 	int tab[LI][COL][N];
 	
