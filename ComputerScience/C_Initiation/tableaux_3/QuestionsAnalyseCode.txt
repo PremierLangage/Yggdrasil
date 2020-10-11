@@ -4,17 +4,17 @@ Latex:1
    quelles lignes sont incorrectes ? : 
 
 
-     /* 1*/ void scan_tab (int tab[], int taille) {
+     /*1*/ void scan_tab (int tab[], int taille) {
 
-     /* 2*/     int i;
+     /*2*/     int i;
 
-     /* 3*/     printf("Veuillez saisir %d entiers : ", *taille);
+     /*3*/     printf("Veuillez saisir %d entiers : ", *taille);
         
-     /* 4*/     for (i=0; i < *taille; i=i+1)
+     /*4*/     for (i=0; i < *taille; i=i+1)
 
-     /* 5*/         scanf("%d", tab[i]);
+     /*5*/         scanf("%d", tab[i]);
 
-     /* 6*/ }
+     /*6*/ }
 
 
 - 2
