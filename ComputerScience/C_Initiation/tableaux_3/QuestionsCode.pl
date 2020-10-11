@@ -1,6 +1,6 @@
 extends=/model/AMC_TXT.pl 
 
-title= Divers questions sur les tableaux 
+title= Questions de code 
 
 questions=@ QuestionsCode.txt
 
