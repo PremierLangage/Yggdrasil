@@ -54,7 +54,7 @@ tag=Boucle|Type|SaisieControlee|While|ForInRange
 
 @ /ComputerScience/python/AP1-2021/chapitre3/boucle2croissant.pl
 
-tag=doubleBoucle|forInRange
+tag=bouclesImbriquées|forInRange
 
 **Changements:**
     - précisions entiers **non nuls**
@@ -67,7 +67,7 @@ tag=doubleBoucle|forInRange
 
 @ /ComputerScience/python/AP1-2021/chapitre3/Flechettes.pl
 
-tag=
+tag=Boucle|bouclesImbriquées|forInRange|While
 
 **Changements:**
     - rajout d'un indice, et d'exemples pour guider les étudiants
