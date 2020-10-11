@@ -30,6 +30,7 @@ codebefore==
 
 #include <stdio.h>
 
+
 ==
 
 editor.code==
@@ -81,9 +82,13 @@ codeafter==
 
 int main(int argc, char* argv[]){
 
-	int tab[2][3][5];
+    int LI,COL,N;
+
+    
+
+	int tab[LI][COL][N];
 	
-	raun(2,3,5,tab);
+	raun(LI,COL,N,tab);
 
 	return 0;
 }
