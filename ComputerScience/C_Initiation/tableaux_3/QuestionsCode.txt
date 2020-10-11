@@ -2,6 +2,7 @@ Latex:1
 
 ** Le code suivant : 
 
+
 %${
      int i, tab[10];
 
