@@ -7,7 +7,7 @@ Latex:1
 
      for(i=0;i<10;i++)
 
-        scanf("%d",&tab[i]);
+        scanf("%d",&amp tab[i]);
 
 
 + remplit les cases d'indice de 0 à 9 avec des valeurs lues au clavier
@@ -20,7 +20,7 @@ Latex:1
 <code>
      int i,j=0; <br>
 
-     int tab[7] = {2, 3, 0, 4, 1, 1, 2}; <br>
+     int tab[7] = {2, 3, 0, 4, 1, 1, 2}; 
 
      for (i=0; i<3; i=i+1) <br>
 
