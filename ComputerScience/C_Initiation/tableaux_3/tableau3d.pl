@@ -29,7 +29,7 @@ Dans cet exemple N = 2$%\times%$3$%\times%$5 = 30
 codebefore==
 
 #include <stdio.h>
-
+#include <stdlib.h>
 
 ==
 
@@ -84,7 +84,7 @@ int main(int argc, char* argv[]){
 
     int LI,COL,N;
 
-    
+
 
 	int tab[LI][COL][N];
 	
