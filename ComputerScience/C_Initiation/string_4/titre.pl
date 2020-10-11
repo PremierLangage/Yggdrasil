@@ -23,7 +23,7 @@ codebefore==
 editor.code==
 
 void met_en_titre(char s[]){
-...
+/* A compléter */
 } 
  
 ==
@@ -57,6 +57,7 @@ tests==
  ["aleatoire",""," ".join(["".join([chr(random.randint(97, 122)) for i in range(random.randint(2,10))]) + " " +"".join([ chr(random.randint(65, 90)) for i in range(random.randint(0,1))]) for j in range(5)])],
   ]
 ==
+
 
 
 
