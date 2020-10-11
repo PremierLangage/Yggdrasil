@@ -37,7 +37,7 @@ questions==
 + Pouet
 + foo
 - bar
-+ `int i, tab[10];` <br /> `  for(i=0;i<10;i++)` <br /> `    scanf("%d",&tab[i]);`
++ `int i, tab[10];` <br /> `&nbsp; &nbsp; for(i=0;i<10;i++)` <br /> `&nbsp; &nbsp; &nbsp; &nbsp; scanf("%d",&tab[i]);`
 
 ==
 
