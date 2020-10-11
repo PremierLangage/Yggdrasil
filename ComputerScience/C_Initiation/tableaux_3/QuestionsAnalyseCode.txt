@@ -24,6 +24,7 @@ Latex:1
 + 6
 - aucune de celles-ci
 
+
 ** On définit deux tableaux de dix int par :
 
 
