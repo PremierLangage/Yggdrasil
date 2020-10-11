@@ -4,8 +4,7 @@ Latex:1
 
 
 ""
-<pre>
-     int i, tab[10];
+     int i, tab[10]; <br>
 
      for(i=0; i<10; i++) 
 
