@@ -9,7 +9,7 @@ author=
 
 text==
 Ecrire une fonction de protopype `int nb_inversions(int tab[],int taille);` qui renvoie le nombre d'inversions dans le tableau.<br>
-Rappel: Une inversion dans un tableau $%t%$ est un pair d'indices `i<j` du tableau, tels que $% t[i]>t[j] %$.
+Rappel: Une inversion dans un tableau $%t%$ est une pair d'indices `i<j` du tableau, tels que $% t[i]>t[j] %$.
 <p>
 Exemples : <br>
 - Si le tableau contenait 3,1,2 les inversions sont les pairs `(i,j)` suivants : `(0,1),(0,2)`. <br>
@@ -73,6 +73,7 @@ tests==
   ["aléatoire ", ""," ".join([str(random.randint(-10,10)) for i in range(random.randint(5,20))])],
   ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
 ==
+
 
 
 
