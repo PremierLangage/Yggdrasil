@@ -26,7 +26,7 @@ codebefore==
 ==
 
 editor.code==
-/* */ decaleDG(/* */)
+/* retour */ decaleDG(/* Paramètres */)
 ==
 
 solution==
