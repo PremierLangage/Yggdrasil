@@ -25,9 +25,9 @@ questions==
 ** Tiens, voici une question avec du code :
 
 
-    int i, tab[10]; <br />
-      for(i=0;i<10;i++) <br />
-        scanf("%d",&tab[i]);
+`int i, tab[10];` <br />
+  `for(i=0;i<10;i++)` <br />
+    `scanf("%d",&tab[i]);`
 
 
 + Pouet
