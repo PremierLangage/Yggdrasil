@@ -2,7 +2,7 @@
 author= Zip&DR
 
 title=Mise en titre
-tag=tab
+tag=tab|string
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
