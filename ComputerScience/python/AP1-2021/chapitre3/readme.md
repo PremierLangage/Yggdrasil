@@ -50,6 +50,11 @@ tag=Boucle|Type|SaisieControlee|While|ForInRange
 
 @ /ComputerScience/python/AP1-2021/chapitre3/Pointsdudisque.pl
 
+tag=coordonnées|repèreCartésien|boucle|bouclesImbriquées|While|Conditionnelles
+
+**Changements:**
+    - rajout d'un indice, et d'exemples pour guider les étudiants
+
 # Exercice 7 - TripletPythagore
 
 @ /ComputerScience/python/AP1-2021/chapitre3/boucle2croissant.pl
