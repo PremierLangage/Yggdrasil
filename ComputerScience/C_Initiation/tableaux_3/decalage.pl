@@ -1,4 +1,4 @@
-title=Décalage
+title=Décalage circulaire
 
 tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau|TransmissionAdresse
 
@@ -9,7 +9,7 @@ author=
 text==
 
 Écrire une fonction `decaleDG` qui reçoit deux tableaux d'entiers de même taille 
-et leur taille, et qui fait décalage à droite du premier et le décalage à gauche du deuxième.
+et leur taille, et qui fait décalage circulaire à droite du premier et le décalage circulaire à gauche du deuxième.
 <p>
 
 Exemple : Si les tableaux sont de taille 4, le premier contient 1,2,3,4,
