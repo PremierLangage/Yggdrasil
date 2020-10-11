@@ -10,8 +10,9 @@ text==
 
 Écrire une fonction `decaleDG` qui reçoit deux tableaux d'entiers de même taille 
 et leur taille, et qui fait décalage circulaire à droite du premier et le décalage circulaire à gauche du deuxième.
-<p>
 
+
+<p>
 Exemple : Si les tableaux sont de taille 4, le premier contient 1,2,3,4,
  et le deuxième contient 5,6,7,8, alors après éxécution de la fonction
  le premier contiendra 4,1,2,3 tandis que le deuxième 6,7,8,5.
