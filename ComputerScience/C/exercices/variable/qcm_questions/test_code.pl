@@ -26,9 +26,7 @@ questions==
 
 
     int i, tab[10];   
-    
       for(i=0;i<10;i++)   
-    
         scanf("%d",&tab[i]);   
 
 
@@ -37,9 +35,7 @@ questions==
 - bar
 +
     int i, tab[10];   
-    
       for(i=0;i<10;i++)   
-    
         scanf("%d",&tab[i]);   
 
 
