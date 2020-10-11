@@ -5,14 +5,14 @@
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 title = Jeu de fléchette
-
+tag= Boucle|bouclesImbriquées|forInRange|While
 code==
 n = int(input("Un nombre : "))
 
 
 print("Il y a",nb,"façon(s) d'obtenir",n)
 
-tag=Boucle|bouclesImbriquées|forInRange|While
+
 ==
 
 taboo=import
@@ -111,6 +111,7 @@ mplsoluce4==
 Impossible
 48
 ==
+
 
 
 
