@@ -34,7 +34,7 @@ codebefore==
 editor.code==
 
 int construit_palin(char s[],int taille){
-
+ /* A compléter */
 }
 
 ==
