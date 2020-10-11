@@ -18,13 +18,13 @@ Latex:1
 ** Quelle valeur affichera le code suivant ? 
 
 <code>
-     int i,j=0;
+     int i,j=0; <br>
 
-     int tab[7] = {2, 3, 0, 4, 1, 1, 2};
+     int tab[7] = {2, 3, 0, 4, 1, 1, 2}; <br>
 
-     for (i=0; i<3; i=i+1)
+     for (i=0; i<3; i=i+1) <br>
 
-        j = tab[j];
+        j = tab[j]; <br>
         
      printf("%d\n", j);
 </code>
