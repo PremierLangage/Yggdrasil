@@ -14,7 +14,8 @@ Latex:1
 ** Après l'instruction suivante : int tab[10]={1,2,3,4}; quelles affirmations sont vraies ?
 - tab[2] == 2
 + tab[3] == 4
-+ tab[12] n'est pas défini
++ tab[10] n'est pas défini
+- tab[9] n'est pas défini
 - tab[-1] = 4
 + tab[7] == 0
 
