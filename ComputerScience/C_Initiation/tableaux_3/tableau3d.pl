@@ -9,7 +9,9 @@ author=
 
 text==  
  
-Ecrire 
+Ecrire une fonction qui : 
+
+reçoit en paramètre un tableau à trois dimensions 
 
 ==
 
