@@ -32,6 +32,14 @@ codebefore==
 
 ==
 
+editor.code==
+int raun(........, int tab[][COL][N]){
+
+
+
+}
+==
+
 solution==
 int raun(int LI, int COL, int N, int tab[][COL][N]){
 	
@@ -66,14 +74,6 @@ int raun(int LI, int COL, int N, int tab[][COL][N]){
 	}
 
 	return 0;
-}
-==
-
-editor.code==
-int raun(........, int tab[][COL][N]){
-
-
-
 }
 ==
 
