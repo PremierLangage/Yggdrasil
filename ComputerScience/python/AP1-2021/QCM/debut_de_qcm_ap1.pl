@@ -6,7 +6,7 @@ title= QCM PL en construction
 
 questions==
 
-=**[nbg=3,nbb=2] Dans un programme, quels sont les noms de variables que vous utiliseriez pour gérer des données liés au temps? 
+=**[nbb=2,nbg=3] Dans un programme, quels sont les noms de variables que vous utiliseriez pour gérer des données liés au temps? 
 +=["tmp","cmpt","hours","heures","years","annees","days","jours","mnt","minutes","sec","seconds","period","duree"]
 -=["and","if","for","while","variable","variable_3","x","a","toto","chat"]
 
