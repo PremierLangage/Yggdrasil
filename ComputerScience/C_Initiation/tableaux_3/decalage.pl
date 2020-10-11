@@ -9,7 +9,7 @@ author=
 text==
 
 Écrire une fonction `decaleDG` qui reçoit deux tableaux d'entiers de même taille 
-et leur taille, et qui fait décalage circulaire à droite du premier et le décalage circulaire à gauche du deuxième. <br>
+et leur taille, et qui fait décalage circulaire à droite du premier et le décalage circulaire à gauche du deuxième. 
 
 
 <p>
@@ -47,8 +47,9 @@ codeafter==
 
 int main(int argc, char* argv[]){
   int tab[100],res[100];
-  int size = 0;
   int lu,i;
+  
+  scanf("%d",&size);
 
   while (scanf("%d", &lu) == 1){
     tab[size] = lu;
