@@ -25,10 +25,11 @@ questions==
 ** Tiens, voici une question avec du code :
 
 
-`int i, tab[10];`   
-  `for(i=0;i<10;i++)`   
-    `scanf("%d",&tab[i]);`   
-
+<pre>
+int i, tab[10];
+  for(i=0;i<10;i++)
+    scanf("%d",&tab[i]);
+</pre>
 
 + Pouet
 + foo
