@@ -24,7 +24,7 @@ codebefore==
 
 editor.code==
 int est_palindrome(char s[]){
-
+/* A compléter */
 return 1;
 }
 ==
@@ -59,6 +59,7 @@ tests==
 ["aleatoire","",random.choice(["elle est belle","un kayak","velo","deux radar","avion","le rotor","michel serres","Bruno solos","sufffit"])],
    ]
 ==
+
 
 
 
