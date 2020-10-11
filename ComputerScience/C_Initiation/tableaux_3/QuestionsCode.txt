@@ -5,7 +5,8 @@ Latex:1
 
      int i, tab[10];
 
-     for(i=0;i<10;i++)
+     for(i=0;i&lt10;i++)
+
      
         scanf("%d",&tab[i]);
 
