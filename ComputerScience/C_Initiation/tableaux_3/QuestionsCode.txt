@@ -35,6 +35,7 @@ Latex:1
 - 3
 - 4
 
+
 ** Quelle valeur affichera le code suivant ? 
 
 
@@ -54,3 +55,5 @@ Latex:1
 - 2
 - 3
 + 4
+
+
