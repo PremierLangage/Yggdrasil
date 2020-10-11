@@ -46,18 +46,34 @@ void decaleDG(int tab1[],int tab2[],int size)
 codeafter==
 
 int main(int argc, char* argv[]){
-  int tab[100],res[100];
+  int tab1[100],tab2[100];
   int lu,i;
-  
-  scanf("%d",&size);
 
-  while (scanf("%d", &lu) == 1){
-    tab[size] = lu;
-    size++;
+  scanf("%d",&size);
+  printf("Taille : %d\n",size);
+
+  printf("Premier tableau :\n")
+  for (i = 0; i < size, i+=1)
+  {
+    scanf("%d", &lu);
+    tab1[i] = lu;
+    pritnf("%d ",lu);
   }
-miroir(tab,res,size);
-for(i=0;i<size;i+=1)
-    printf("%d ",res[i]);
+  printf("\nDeuxieme tableau :\n")
+  for (i = 0; i < size, i+=1)
+  {
+    scanf("%d", &lu);
+    tab2[i] = lu;
+    pritnf("%d ",lu);
+  }
+
+ decaleDG(tab1,tab2,size);
+  printf("\nResultat premier tableau :\n")
+  for (i = 0; i < size, i+=1)
+    pritnf("%d ",tab1[i]);
+  printf("\nResultat deuxieme tableau :\n")
+  for (i = 0; i < size, i+=1)
+    pritnf("%d ",tab2[i]);
   printf("\n");
 
   return 0;
