@@ -3,17 +3,13 @@ Latex:1
 ** Le code suivant : 
 
 
-$%
-{
-
      int i, tab[10];
 
      for(i=0;i<10;i++) 
 
         scanf("%d",&tab[i]);
 
-}
-%$
+
 
 + remplit les cases d'indice de 0 à 9 avec des valeurs lues au clavier
 - remplit les cases d’indice de 0 à 10 avec des valeurs lues au clavier
@@ -58,6 +54,7 @@ $%
 - 2
 - 3
 + 4
+
 
 
 
