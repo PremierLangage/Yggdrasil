@@ -32,22 +32,9 @@ codebefore==
 ==
 
 editor.code==
-int est_palindrome(char s[]){
-int i,l;
-l=strlen(s);
-for(i=0; i<l/2;i++)
-    if(s[i]!=s[l-1-i])
-        return 0;
-return 1;
-}
+
 int construit_palin(char s[],int taille){
-  int lg=strlen(s);int i;
-if(2*lg+1>taille || est_palindrome(s))
-    return 0;
-for(i=0;i<lg;i++)
-  s[lg+i]=s[lg-i-1];
- s[2*lg]='\0';
-return 1;
+
 }
 
 ==
@@ -95,6 +82,7 @@ tests==
  
  ["aleatoire","",random.choice(["elle","kayak","velo","radar","avion","rotor","serres","solos","suffit"])+" 10"], ]
 ==
+
 
 
 
