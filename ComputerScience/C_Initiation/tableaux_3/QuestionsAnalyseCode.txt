@@ -3,9 +3,9 @@ Latex:1
 ** On définit deux tableaux de dix int par :
 
 
-     int a[10]={5,6,7,8,9};
+     int A[10]={5,6,7,8,9};
 
-     int b[]={1,1,2,2,3,3,4,4,5,5};
+     int B[]={1,1,2,2,3,3,4,4,5,5};
 
 On défini la fonction boo par :
 
@@ -22,10 +22,12 @@ On défini la fonction boo par :
 
      }
 
-Après l'appel boo(a,b) que contiennent les tableaux a et b ?
+Après l'appel boo(A,B) que contiennent les tableaux A et B ?
 
-+ a : 1 6 7 8 9 0 0 0 0 0 | b : 5 1 2 2 3 3 4 4 5 5
-- rien, la déclaration de a est incomplète
-- a : 1 1 2 2 3 3 4 4 5 5 | b : 5 6 7 8 9 0 0 0 0 0
++ A : 1 6 7 8 9 0 0 0 0 0 | B : 5 1 2 2 3 3 4 4 5 5
+- rien, la déclaration de A est incomplète
+- A : 1 1 2 2 3 3 4 4 5 5 | B : 5 6 7 8 9 0 0 0 0 0
+- A : 5 6 7 8 9 3 4 4 5 5 | B : 1 1 2 2 3 0 0 0 0 0
+- rien, la déclaration de B est incomplète
 
 
