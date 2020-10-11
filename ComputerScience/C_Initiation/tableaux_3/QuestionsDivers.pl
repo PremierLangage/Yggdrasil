@@ -3,5 +3,5 @@ title= Compilation, exécution et messages d'erreurs
 
 questions=@ QuestionsDivers.txt
 
-tag=
+tag=Tableau
 
