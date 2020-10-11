@@ -18,6 +18,8 @@ Latex:1
 - tab[9] n'est pas défini
 - tab[-1] = 4
 + tab[7] == 0
++ tab[5] == tab[7]
+
 
 
 
