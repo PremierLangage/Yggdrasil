@@ -43,7 +43,7 @@ codebefore==
 
 editor.code==
 void join(char *s, char sep){
-
+/* A compléter */
 }
 
 
@@ -79,6 +79,7 @@ tests==
 
 
 ==
+
 
 
 
