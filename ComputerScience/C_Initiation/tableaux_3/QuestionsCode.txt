@@ -10,6 +10,9 @@ Latex:1
         scanf("%d",&tab[i]);
 
 
-+ blbabla
-- fsdgds
++ remplit les cases d'indice de 0 à 9 avec des valeurs lues au clavier
+- remplit les cases d’indice de 0 à 10 avec des valeurs lues au clavier
+- remplit les cases d’indice de 1 à 10 avec des valeurs lues au clavier
+- provoque une erreur à l’exécution
+
 
