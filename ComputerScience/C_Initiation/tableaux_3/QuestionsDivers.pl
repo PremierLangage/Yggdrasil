@@ -4,5 +4,6 @@ title= Divers questions sur les tableaux
 
 questions=@ QuestionsDivers.txt
 
-tag=Tableau
+tag=Tableau|Initialisation
+
 
