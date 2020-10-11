@@ -52,14 +52,14 @@ int main(int argc, char* argv[]){
   scanf("%d",&size);
   printf("Taille : %d\n",size);
 
-  printf("Premier tableau :\n");
+  printf("Input Premier tableau :\n");
   for (i = 0; i < size; i+=1)
   {
     scanf("%d", &lu);
     tab1[i] = lu;
     printf("%d ",lu);
   }
-  printf("\nDeuxieme tableau :\n");
+  printf("\nInput Deuxieme tableau :\n");
   for (i = 0; i < size; i+=1)
   {
     scanf("%d", &lu);
