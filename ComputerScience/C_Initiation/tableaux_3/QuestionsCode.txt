@@ -26,7 +26,7 @@ Latex:1
 
         j = tab[j];
         
-    printf("%d\n", j);
+     printf("%d\n", j);
 
 
 - 0
