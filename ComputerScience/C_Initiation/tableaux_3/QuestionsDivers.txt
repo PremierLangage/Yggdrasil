@@ -6,11 +6,11 @@ Latex:1
 + Les éléments d'un tableau sont rangés consécutivement dans la mémoire
 - La déclaration int tab[10]; initialise un tableau avec 10 cases contenant 0
 
-* Pour exécuter un programme nomPrg on utilise la/les commande(s) :
-+ ./nomPrg
-- .nomPrg
-- /.nomPrg
-- /nomPrg
+* Quelle(s) affirmations sont exactes ?
+- On peut changer la taille d'un tableau en cours d'exécution
++ Un tableau peut contenir uniquement des éléments de même type
++ Les indices au tableau int tab[5]; vont de 0 à 4
+- Les indices au tableau int tab[5]; vont de 1 à 5
 
 * Suite à la compilation d'un programme le message de warning suivant apparaît :
 
