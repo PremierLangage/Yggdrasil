@@ -3,7 +3,7 @@ Latex:1
 ** Le code suivant : 
 
 
-$%
+$% \verbatim
      int i, tab[10];
 
      for(i=0;i<10;i++) 
