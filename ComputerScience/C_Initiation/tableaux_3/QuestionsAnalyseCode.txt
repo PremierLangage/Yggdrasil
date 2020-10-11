@@ -8,11 +8,11 @@ Latex:1
 
      2     int i;
 
-     3     printf("Veuillez saisir %d entiers : ", *taille);
+     3     printf(&quot;Veuillez saisir %d entiers : &quot;, *taille);
         
      4     for (i=0; i < *taille; i=i+1)
 
-     5         scanf("%d", tab[i]);
+     5         scanf(&quot;%d&quot;, tab[i]);
 
      6 }
 
