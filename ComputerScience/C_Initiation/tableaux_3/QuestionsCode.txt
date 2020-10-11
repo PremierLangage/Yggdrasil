@@ -4,7 +4,7 @@ Latex:1
 
 
 $%
-{\verbatim{
+{ {
      int i, tab[10];
 
      for(i=0;i<10;i++) 
