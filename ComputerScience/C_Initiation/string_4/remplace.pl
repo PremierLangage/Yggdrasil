@@ -21,10 +21,7 @@ codebefore==
 
 editor.code==
 void remplace(char tab[],char origine, char but){
-  int i;
-  for(i=0 ; tab[i]!='\0' ; i++)
-    if( tab[i]==origine)
-      tab[i]=but  ;
+/* A compléter */
 }
 
 ==
@@ -59,6 +56,7 @@ tests==
 ["alea","","".join([chr(random.randint(97,122)) for i in range(random.randint(1,15))])+" c C"],
   ]
 ==
+
 
 
 
