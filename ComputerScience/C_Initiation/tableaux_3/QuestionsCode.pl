@@ -4,7 +4,7 @@ title= Questions de code
 
 questions=@ QuestionsCode.txt
 
-tag=Tableau
+tag=Tableau|Initialisation|ParcoursTableau
 
 
 
