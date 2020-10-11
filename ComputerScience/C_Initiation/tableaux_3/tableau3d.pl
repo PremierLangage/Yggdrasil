@@ -9,7 +9,7 @@ author=
 
 text==  
  
-Ecrire une fonction **raun()** qui : 
+Ecrire une fonction `raun()` qui : 
 
 reçoit en paramètre un tableau à trois dimensions et retourne un int.
 
