@@ -26,7 +26,7 @@ codebefore==
 ==
 
 editor.code==
-..miroir(...)
+/* */ decaleDG(/* */)
 ==
 
 solution==
