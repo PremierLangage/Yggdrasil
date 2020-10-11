@@ -10,7 +10,7 @@ Latex:1
 
      /* 3*/     printf("Veuillez saisir %d entiers : ", *taille);
 
-     /* 4*/
+     /* 4*/     
         
      /* 5*/     for (i=0; i < *taille; i=i+1)
 
