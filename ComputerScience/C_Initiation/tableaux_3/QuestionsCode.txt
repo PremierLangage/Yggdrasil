@@ -2,10 +2,12 @@ Latex:1
 
 ** Le code suivant : 
 
-int i,tab[10];
+    int i,tab[10];
 
-for(i=0;i<10;i++)
+    for(i=0;i<10;i++)
 
-scanf("%d", &tab[i]);
+    scanf("%d", &tab[i]);
 
++ blbabla
+- fsdgds
 
