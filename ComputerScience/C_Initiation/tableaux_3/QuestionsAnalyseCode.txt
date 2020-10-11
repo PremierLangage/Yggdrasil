@@ -8,11 +8,11 @@ Latex:1
 
      2     int i;
 
-     3     printf(''Veuillez saisir %d entiers :'', *taille);
+     3     printf(&#34;Veuillez saisir %d entiers :&#34;, *taille);
         
      4     for (i=0; i < *taille; i=i+1)
 
-     5         scanf''%d'', tab[i]);
+     5         scanf(&#34;%d&#34;, tab[i]);
 
      6 }
 
@@ -54,6 +54,7 @@ Après l'appel boo(A,B) que contiennent les tableaux A et B ?
 - A : 1 1 2 2 3 3 4 4 5 5 | B : 5 6 7 8 9 0 0 0 0 0
 - A : 5 6 7 8 9 3 4 4 5 5 | B : 1 1 2 2 3 0 0 0 0 0
 - rien, la déclaration de B est incomplète
+
 
 
 
