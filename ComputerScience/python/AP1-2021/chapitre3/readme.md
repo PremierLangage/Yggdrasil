@@ -50,7 +50,7 @@ tag=Boucle|Type|SaisieControlee|While|ForInRange
 
 @ /ComputerScience/python/AP1-2021/chapitre3/Pointsdudisque.pl
 
-# Exercice 8 - TripletPythagore
+# Exercice 7 - TripletPythagore
 
 @ /ComputerScience/python/AP1-2021/chapitre3/boucle2croissant.pl
 
@@ -58,8 +58,21 @@ tag=doubleBoucle|forInRange
 
 **Changements:**
     - précisions entiers **non nuls**
+    - rajout d'un indice, et d'exemples pour guider les étudiants
 **Remarques/commentaires:**
     - le taboo ne marche pas
+    - mis avant l'exercice Fléchettes, c'est le même principe, mais avec seulement deux boucles...
+
+# Exercice 8 - Fléchettes
+
+@ /ComputerScience/python/AP1-2021/chapitre3/Flechettes.pl
+
+tag=
+
+**Changements:**
+    - rajout d'un indice, et d'exemples pour guider les étudiants
+**Remarques/commentaires:**
+    - mis après l'exercice TripletPythagore, c'est le même principe, mais avec trois boucles imbriquées...
 
 # Exercice 9 - tableau_entier
 
@@ -96,4 +109,6 @@ tag=boucle|float|somme|math
 **Remarques/commentaires:**
     - Il plante problème de before inexistant à mon avis pour initialiser des variables
     - Problème fixé il fonctionne mais il est compliqué donc en refonte !
+    - Supprimé de la feuille pour cette année...
+
 
