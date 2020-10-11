@@ -12,7 +12,7 @@ text==
 Ecrire une fonction `raun()` qui : 
 
 <ul>
-  <li>reçoit en paramètre un tableau à trois dimensions et retourne un <strong>int</strong></li>
+  <li>reçoit en paramètre un tableau à <u>trois dimensions</u> et retourne un <strong>int</strong></li>
   <li>remplie le tableau à trois dimensions avec des valeurs incrémentées de 1 en 1 (on démarre à 1 et le dernier emplacement aura pour valeur N)</li>
   <li>affiche le tableau de la manière suivante : Ligne Z || Colonne X {valeur,valeur} | Colonne Y {valeur,valeur} |</li>
 </ul>
