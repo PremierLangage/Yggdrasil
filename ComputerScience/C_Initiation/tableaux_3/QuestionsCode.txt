@@ -17,7 +17,7 @@ Latex:1
 
 ** Quelle valeur affichera le code suivant ? 
 
-
+``
      int i,j=0;
 
      int tab[7] = {2, 3, 0, 4, 1, 1, 2};
@@ -27,7 +27,7 @@ Latex:1
         j = tab[j];
         
      printf("%d\n", j);
-
+``
 
 - 0
 - 1
@@ -55,6 +55,7 @@ Latex:1
 - 2
 - 3
 + 4
+
 
 
 
