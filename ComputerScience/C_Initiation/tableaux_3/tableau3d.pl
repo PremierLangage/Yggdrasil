@@ -12,19 +12,18 @@ text==
 Ecrire une fonction `raun()` qui : 
 
 <ul>
-  <li>2 avocats (pelés et avec les noyaux retirés)</li>
-  <li>le jus d'un citron</li>
-  <li>¼ de concombre, coupé grossièrement</li>
-  <li>1 petite tomate, coupée</li>
+  <li>reçoit en paramètre un tableau à trois dimensions et retourne un int</li>
+  <li>remplie le tableau à trois dimensions avec des valeurs incrémentée de 1 en 1 (on démarre à 1 et le dernier emplacement aura pour valeur N)</li>
+  <li>affiche le tableau de la manière suivante : 
+
+Ligne Z || Colonne X {valeur} | Colonne Y {valeur} |</li>
 </ul>
 
-reçoit en paramètre un tableau à trois dimensions et retourne un int.
 
-remplie le tableau à trois dimensions avec des valeurs incrémentée de 1 en 1 (on démarre à 1 et le dernier emplacement aura pour valeur N)
 
-affiche le tableau de la manière suivante : 
 
-Ligne Z || Colonne X {valeur} | Colonne Y {valeur} |
+
+
 
 Exemple pour un tableau tab[2][3][5] on aura : 
 
