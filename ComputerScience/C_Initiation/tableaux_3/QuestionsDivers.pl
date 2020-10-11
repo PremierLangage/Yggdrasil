@@ -1,5 +1,6 @@
 extends=/model/AMC_TXT.pl 
-title= Compilation, exécution et messages d'erreurs 
+
+title= Divers questions sur les tableaux 
 
 questions=@ QuestionsDivers.txt
 
