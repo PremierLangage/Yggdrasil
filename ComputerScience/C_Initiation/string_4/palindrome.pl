@@ -3,7 +3,7 @@
 author= 
 
 title=Palindrome
-tag=tab
+tag=tab|string
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
