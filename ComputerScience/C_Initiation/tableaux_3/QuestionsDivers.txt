@@ -20,6 +20,11 @@ Latex:1
 + tab[7] == 0
 + tab[5] == tab[7]
 
+** On a déclaré : int tab1[5] = {1,2,3,4,5}; Quelle déclaration, instruction ou suite d'instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
+- int tab2 = tab1;
+- int tab2[5] = tab1;
++ int tab2 = {0,1,2,3,4};
+- int tab2[2] = tab1[1];
 
 
 
