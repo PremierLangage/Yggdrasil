@@ -1,9 +1,6 @@
 Latex:1
 
 ** Le code suivant : 
-
-
-
 <LIT>
      int i, tab[10]; 
 
