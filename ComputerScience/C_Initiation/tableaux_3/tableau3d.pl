@@ -77,5 +77,16 @@ int raun(int LI, int COL, int N, int tab[][COL][N]){
 }
 ==
 
+codeafter==
+
+int main(int argc, char* argv[]){
+
+	int tab[2][3][5];
+	
+	raun(2,3,5,tab);
+
+	return 0;
+}
+==
 
 
