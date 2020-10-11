@@ -2,7 +2,6 @@ Latex:1
 
 ** Le code suivant : 
 
-
 <code style="display:block; white-space:pre-wrap">
      int i, tab[10]; 
 
