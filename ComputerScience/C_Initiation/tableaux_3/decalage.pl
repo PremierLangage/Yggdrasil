@@ -82,9 +82,10 @@ int main(int argc, char* argv[]){
 
 
 tests==
-[ ["simple éxécution", "","1 2 3 4 5"],
-   ["aléatoire1 ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,10))])],
-  ["aléatoire2 ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
+[ ["simple éxécution", "","4\n1 2 3 4\n 6 7 8 9"],
+   ["aléatoire 1", "","10"+" ".join([str(random.randint(-20,20)) for i in range(20)])],
+   ["aléatoire 2", "","20"+" ".join([str(random.randint(-20,20)) for i in range(40)])],
+]
 ==
 
 
