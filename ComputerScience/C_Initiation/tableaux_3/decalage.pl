@@ -9,7 +9,7 @@ author=
 text==
 
 Écrire une fonction `decaleDG` qui reçoit deux tableaux d'entiers de même taille 
-et leur taille, et qui fait décalage circulaire à droite du premier et le décalage circulaire à gauche du deuxième.
+et leur taille, et qui fait décalage circulaire à droite du premier et le décalage circulaire à gauche du deuxième. <br>
 
 
 <p>
