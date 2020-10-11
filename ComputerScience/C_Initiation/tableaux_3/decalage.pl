@@ -57,23 +57,23 @@ int main(int argc, char* argv[]){
   {
     scanf("%d", &lu);
     tab1[i] = lu;
-    pritnf("%d ",lu);
+    printf("%d ",lu);
   }
   printf("\nDeuxieme tableau :\n");
   for (i = 0; i < size; i+=1)
   {
     scanf("%d", &lu);
     tab2[i] = lu;
-    pritnf("%d ",lu);
+    printf("%d ",lu);
   }
 
  decaleDG(tab1,tab2,size);
   printf("\nResultat premier tableau :\n");
   for (i = 0; i < size; i+=1)
-    pritnf("%d ",tab1[i]);
+    printf("%d ",tab1[i]);
   printf("\nResultat deuxieme tableau :\n");
   for (i = 0; i < size; i+=1)
-    pritnf("%d ",tab2[i]);
+    printf("%d ",tab2[i]);
   printf("\n");
 
   return 0;
