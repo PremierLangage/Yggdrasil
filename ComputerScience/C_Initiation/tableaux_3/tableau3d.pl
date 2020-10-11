@@ -9,9 +9,10 @@ author=
 
 text==  
  
-Ecrire une fonction qui : 
+Ecrire une fonction **raun()** qui : 
 
 reçoit en paramètre un tableau à trois dimensions 
 
 ==
+
 
