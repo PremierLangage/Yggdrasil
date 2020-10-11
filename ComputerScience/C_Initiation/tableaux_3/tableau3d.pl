@@ -27,7 +27,10 @@ Ligne 2 || Colonne 1 {16,17,18,19,20} | Colonne 2 {21,22,23,24,25} | Colonne 3 {
 ==
 
 editor.code==
-int raun(........, int tab[][COL][N])
+int raun(........, int tab[][COL][N]){
 
+
+
+}
 ==
 
