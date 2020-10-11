@@ -24,10 +24,8 @@ On défini la fonction boo par :
 
 Après l'appel boo(a,b) que contiennent les tableaux a et b ?
 
-- a : 1678900000 | b : 5122334455
-+ 3
-+ 5
-+ 6
-- aucune de celles-ci
++ a : 1 6 7 8 9 0 0 0 0 0 | b : 5 1 2 2 3 3 4 4 5 5
+- rien, la déclaration de a est incomplète
+- a : 1 1 2 2 3 3 4 4 5 5 | b : 5 6 7 8 9 0 0 0 0 0
 
 
