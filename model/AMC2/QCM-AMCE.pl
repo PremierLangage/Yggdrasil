@@ -96,8 +96,7 @@ for i in range(10):
         with open(filename,"r") as f:
             questions += f.read()
     except Exception as e:
-        print(" une connerie :",str(e))
-        sys.exit(-1)
+        pass
 
 
 ######
