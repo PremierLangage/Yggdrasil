@@ -60,7 +60,7 @@ texts=["## **Bienvenu sur l'assistant online d'aide à la génération de rappor
        "<li>Les fonctionnalités programmées se comportent comme attendu voire comme spécifié dans le cahier des charges.</li>"
        "<li>Les productions réalisent exhaustivement les fonctionnalités souhaités.</li>"
        "</ul>"
-       "<b></b>",
+       "<b>Les programmes réalisent-ils correctement et exhaustivement la liste des fonctionnalités à traiter ?</b>",
        "## Avez-vous des derniers commentaires ou informations supplémentaires à donner ?"]
 
 forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
