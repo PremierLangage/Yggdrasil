@@ -1,0 +1,17 @@
+graine
+42
+lancer
+4
+lancer
+4
+lancer
+double
+4
+double
+double
+lancer
+4
+double
+consulter
+terminer
+
