@@ -18,7 +18,7 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-author=Nicolas Borie
+# author=Nicolas Borie
 
 title=Assistant générateur de review de code
 tag=review|code|relecture|validation|correction|évaluation|pairs
@@ -39,3 +39,4 @@ grade=(100, "Et c'est ok!")
 # the two following keys will be overwriten over and over...
 text=""
 form=""
+
