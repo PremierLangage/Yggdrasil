@@ -1,6 +1,7 @@
 
 extends= /ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
+title= Test pour le mini projet 2 AP1 2020/2021 
 
 soluce=@app2dr.py 
 
