@@ -144,6 +144,35 @@ elif step == 1:
         "content": "Le makefile est bien documenté, il propose un haut niveau de verbose et intègre des règles <br />pour générer un ou plusieurs contenus annexes (documentation avec doxygen, <br />programme de tests supplémentaires, etc)."
     })
     grade=(-1, " ")
+elif step == 2:
+    report += "## Installation et compilation des sources transmises\n\n"
+    S = group.selection
+    for item in group.items:
+        if item['id'] == S:
+            report += item['content']+"\n\n"
+    if 'comcrit2' in response and len(response['comcrit2']) > 0:
+        report += response['comcrit2']+"\n\n"
+    step += 1
+    text='<b><span style="color: darkred;">Étape '+str(step+1)+'/9</span></b><br/><br />\n\n'+texts[step]
+    form=forms[step]
+    group.items = []
+    group.items.append({
+        "id": "crit3fail",
+        "content": ""
+    })
+    group.items.append({
+        "id": "crit3ok",
+        "content": ""
+    })
+    group.items.append({
+        "id": "crit3ok+",
+        "content": ""
+    })
+    group.items.append({
+        "id": "crit3ok++",
+        "content": ""
+    })
+    grade=(-1, " ")
 else:
     if len(response['comments']) > 0:
         report += "## derniers commentaires :\n\n" + response['comments']
