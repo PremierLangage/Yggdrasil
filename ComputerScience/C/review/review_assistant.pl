@@ -61,7 +61,7 @@ texts=["## **Bienvenu sur l'assistant online d'aide à la génération de rappor
        "<li>Les productions réalisent exhaustivement les fonctionnalités souhaités.</li>"
        "</ul>"
        "<b>Les programmes réalisent-ils correctement et exhaustivement la liste des fonctionnalités à traiter ?</b>",
-       "## **Utilisation et sécurité des programmes produits**\n<br />\n"
+       "## **Utilisations et sécurité des programmes produits**\n<br />\n"
        "<u>Objectifs :</u>"
        "<ul>"
        "<li>Produire des exécutables robustes contrôlant systématiquement données en entrées et exécutions.</li>"
@@ -253,7 +253,7 @@ elif step == 3:
     })
     grade=(-1, " ")
 elif step == 4:
-    report += "## Fonctionnalités implantées dans les rendus\n\n"
+    report += "## Utilisations et sécurité des programmes produits\n\n"
     S = group.selection
     for item in group.items:
         if item['id'] == S:
@@ -265,24 +265,24 @@ elif step == 4:
     form=forms[step]
     group.items = []
     group.items.append({
-        "id": "crit4fail",
+        "id": "crit5fail",
         "content": ""
     })
     group.items.append({
-        "id": "crit4ok",
+        "id": "crit5ok",
         "content": ""
     })
     group.items.append({
-        "id": "crit4ok+",
+        "id": "crit5ok+",
         "content": ""
     })
     group.items.append({
-        "id": "crit4ok++",
+        "id": "crit5ok++",
         "content": ""
     })
     grade=(-1, " ")
 elif step == 5:
-    report += "## Fonctionnalités implantées dans les rendus\n\n"
+    report += "## Nommage des éléments dans les productions rendues\n\n"
     S = group.selection
     for item in group.items:
         if item['id'] == S:
@@ -294,24 +294,24 @@ elif step == 5:
     form=forms[step]
     group.items = []
     group.items.append({
-        "id": "crit4fail",
+        "id": "crit6fail",
         "content": ""
     })
     group.items.append({
-        "id": "crit4ok",
+        "id": "crit6ok",
         "content": ""
     })
     group.items.append({
-        "id": "crit4ok+",
+        "id": "crit6ok+",
         "content": ""
     })
     group.items.append({
-        "id": "crit4ok++",
+        "id": "crit6ok++",
         "content": ""
     })
     grade=(-1, " ")
 elif step == 6:
-    report += "## Fonctionnalités implantées dans les rendus\n\n"
+    report += "## Efficacité et performance des productions rendues\n\n"
     S = group.selection
     for item in group.items:
         if item['id'] == S:
@@ -323,24 +323,24 @@ elif step == 6:
     form=forms[step]
     group.items = []
     group.items.append({
-        "id": "crit4fail",
+        "id": "crit7fail",
         "content": ""
     })
     group.items.append({
-        "id": "crit4ok",
+        "id": "crit7ok",
         "content": ""
     })
     group.items.append({
-        "id": "crit4ok+",
+        "id": "crit7ok+",
         "content": ""
     })
     group.items.append({
-        "id": "crit4ok++",
+        "id": "crit7ok++",
         "content": ""
     })
     grade=(-1, " ")
 elif step == 7:
-    report += "## Fonctionnalités implantées dans les rendus\n\n"
+    report += "## Commentaires dans les sources des productions rendues\n\n"
     S = group.selection
     for item in group.items:
         if item['id'] == S:
