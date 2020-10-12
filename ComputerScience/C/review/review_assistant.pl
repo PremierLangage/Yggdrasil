@@ -35,6 +35,12 @@ texts=["## **Bienvenu sur l'assistant online d'aide à la génération de rappor
        "la production évaluée. Prennez votre temps pour valider pas à pas votre rapport mais "
        "n'actualiser la page à aucun moment, vous perdriez votre début de rapport et cela "
        "réinitialiserait le générateur à la première étape.",
+       "## **Concision et propreté des productions en programmation**\n\n"
+       "<u>Objectifs :</u>"
+       "<ul>"
+       "<li>Concevoir des packages propres, les plus légers possibles et complets.</li>"
+       "<li>Adopter des organisations de sources favorisant les recherches.</li>"
+       "</ul>",
        "## Avez-vous des derniers commentaires ou informations supplémentaires à donner ?"]
 
 forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
