@@ -29,8 +29,8 @@ before==#|python|
 step = 0
 
 # Les énoncés
-texts=["## Bienvenu sur l'assistant online d'aide à la génération de rapport pour la review "
-       "de code en langage C.\n<br />\n"
+texts=["## **Bienvenu sur l'assistant online d'aide à la génération de rapport pour la review "
+       "de code en langage C.**\n<br />\n"
        "Commencez par vous présenter, précisez l'auteur du code reviewé ainsi qu'une description pour "
        "la production évaluée. Prennez votre temps pour valider pas à pas votre rapport mais "
        "n'actualiser la page à aucun moment, vous perdriez votre début de rapport et cela "
