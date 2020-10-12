@@ -35,7 +35,7 @@ texts=["## **Bienvenu sur l'assistant online d'aide à la génération de rappor
        "la production évaluée. Prennez votre temps pour valider pas à pas votre rapport mais "
        "n'actualiser la page à aucun moment, vous perdriez votre début de rapport et cela "
        "réinitialiserait le générateur à la première étape.",
-       "## **Concision et propreté des productions en programmation**\n\n"
+       "## **Concision et propreté des productions en programmation**\n<br />\n"
        "<u>Objectifs :</u>"
        "<ul>"
        "<li>Concevoir des packages propres, les plus légers possibles et complets.</li>"
