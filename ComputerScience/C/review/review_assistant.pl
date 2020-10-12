@@ -50,14 +50,18 @@ form=forms[step]
 ==
 
 evaluator==#|python|
+import datetime import date
+
 if (step == 0):
     report += "# Review de code\n\n"
     if len(response['code']) > 0:
         report += "Relecture de/du **"+response['code']+"**\n"
     if len(response['author']) > 0:
         report += "Projet/code produit par **"+response['author']+"**\n"
+    report += "Relecture opérée"
     if len(response['nom']) > 0:
-        report += "Relecture opérée par **"+response['nom']+"**\n"
+        report += " par **"+response['nom']+"**"
+    report += " le "+
     report += "\n"
     step += 1
     text=texts[step]
