@@ -21,7 +21,7 @@ for i,t in enumerate(tests):
     with open(filename,"r") as f:
         mpl+= f.read()
     globals()[f"mplsoluce{i}"]= mpl
-    text+= mpl
+
 
 ==
 
