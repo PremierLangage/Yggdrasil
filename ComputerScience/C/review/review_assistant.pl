@@ -51,8 +51,10 @@ forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
        '<tr><td>Nom de l\'<b>auteur</b> de la production </td><td> <input type=text id="form_author" /> </td></tr>'
        '<tr><td>Nom du code ou <b>projet</b> relu </td><td> <input type=text id="form_code" /> </td></tr>'
        '</table>',
-       '<input type="radio" id="form_fail" name="crit1" value="fail1">'
-       '<label for="fail1"> L\'auteur a laissé des éléments inutiles ou des fichiers mal identifiés dans ses contenus.</label><br>',
+       '<input type="radio" id="form_fail1" name="crit1" value="fail1"> '
+       '<label for="fail1"> L\'auteur a laissé des éléments inutiles ou des fichiers mal identifiés dans ses contenus.</label><br />'
+       '<input type="radio" id="form_ok1" name="ok1" value="ok1"> '
+       '<label for="ok1"> Les productions et leurs éléments sont corrects et bien identifiés.</label><br />',
        'Commentaires ouverts : <br /> '
        '<textarea id="form_comments" rows="6" cols="80" ></textarea>']
 
