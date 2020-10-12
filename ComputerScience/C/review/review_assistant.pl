@@ -36,11 +36,11 @@ texts=["## Bienvenu sur l'assistant online d'aide à la génération de rapport 
        "## Avez-vous des derniers commentaires ou informations supplémentaires à donner ?"]
 
 forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
-       "<tr><td>Votre <b>nom</b> (relecteur) </td><td> <input type=text /> </td></tr>"
-       "<tr><td>Nom de l'<b>auteur</b> de la production </td><td> <input type=text /> </td></tr>"
-       "<tr><td>Nom du code ou <b>projet</b> relu </td><td> <input type=text /> </td></tr>"
-       "</table>",
-       "Commentaires ouverts : <br /> "
+       '<tr><td>Votre <b>nom</b> (relecteur) </td><td> <input type=text id="form_nom" /> </td></tr>'
+       '<tr><td>Nom de l\'<b>auteur</b> de la production </td><td> <input type=text id="form_author" /> </td></tr>'
+       '<tr><td>Nom du code ou <b>projet</b> relu </td><td> <input type=text id="form_code" /> </td></tr>'
+       '</table>',
+       'Commentaires ouverts : <br /> '
        '<textarea id="form_comments" rows="6" cols="80" ></textarea>']
 
 report=""
@@ -51,6 +51,13 @@ form=forms[step]
 
 evaluator==#|python|
 if (step == 0):
+    report += "# Review de code\n\n"
+    if len(response['code']) > 0:
+        report += "Relecture de/du "+response['code']+"\n"
+    if len(response['author']) > 0:
+        report += "Projet/code produit par "+response['author']+"\n"
+    if len(response['nom']) > 0:
+        report += "Relecture opérée par "+response['nom']+"\n\n"
     step += 1
     text=texts[step]
     form=forms[step]
