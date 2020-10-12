@@ -30,10 +30,10 @@ before==#|python|
 step = 0
 
 texts=["Bienvenu sur l'assistant online d'aide à la génération de rapport pour la review de code."]
+forms=[""]
 
 text=texts[step]
-
-form="{{ inputbox|component}}"
+form=forms[step]
 ==
 
 evaluator==#|python|
