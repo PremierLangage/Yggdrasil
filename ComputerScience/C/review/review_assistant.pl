@@ -20,7 +20,8 @@ builder =@ /builder/before.py
 
 # author=Nicolas Borie
 
-title=Assistant générateur de rapport de review de code
+title=Assistant générateur de rapport de review de code pour le langage C
+
 tag=review|code|relecture|validation|correction|évaluation|pairs
 
 before==#|python|
