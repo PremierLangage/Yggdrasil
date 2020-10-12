@@ -31,16 +31,8 @@ import random
 import loopgen
 import functools
 
-random.seed(seed)
-predicats,functeurs,operators= loopgen.getStuff()
-b=random.randint(-30,100)
-h=b+int(input())
-s= random.randint(1,7) if h>b else random.randint(-3,-1)
-predcode,predtext = random.choice(predicats)
-functeur = random.choice(functeurs)
-operatorcode,operatortextb,operatortexta = random.choice(operators)
-l = [o for o in range(b,h,s) if predcode(o)]
-st= [str(o) for o in range(b,h,s) if predcode(o)]
+l = [o for o in range(b,d,s) if predcode(o)]
+st= [str(o) for o in range(b,d,s) if predcode(o)]
 import sys
 if st :
     print("\n".join(st))
