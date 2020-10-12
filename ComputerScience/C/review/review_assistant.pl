@@ -36,5 +36,6 @@ evaluator==#|python|
 grade=(100, "Et c'est ok!")
 ==
 
+# the two following keys will be overwriten over and over...
 text=""
 form=""
