@@ -65,7 +65,8 @@ forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
        '<tr><td><input type="radio" id="form_ok++1" name="crit1" value="ok++1"> &nbsp;</td> '
        '<td><label for="ok++1"> Les contenus transmis sont à la fois concis et complets. Un maximum '
        'd\'éléments sont générés automatiquement rendant la production minimale '
-       'en taille lors de sa diffusion.</label></td></tr>',
+       'en taille lors de sa diffusion.</label></td></tr>'
+       '</table>',
        'Commentaires ouverts : <br /> '
        '<textarea id="form_comments" rows="6" cols="80" ></textarea>']
 
