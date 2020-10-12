@@ -25,8 +25,11 @@ tag=review|code|relecture|validation|correction|évaluation|pairs
 
 before==#|python|
 
+#
 
+text="Bienvenu sur l'assistant online d'aide à la génération de rapport pour la review de code."
 
+form="{{ inputbox|component}}"
 ==
 
 evaluator==#|python|
