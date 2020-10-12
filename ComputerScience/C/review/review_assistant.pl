@@ -386,12 +386,12 @@ else:
     text=""
     form=""
     feedb = "C'est fini !<br /><br />"
-    feedb += "<ul><li><a href="">Rapport affiché en web</a></li>"
-    feedb += "<li><a href="">Rapport généré en html</a></li>"
-    feedb += "<li><a href="">Rapport généré en markdown</a></li></ul>"
-    feedb += "<br />"+report_html+"<br />"
-    feedb += "<code>"+report_html+"</code><br />"
-    feedb += "<pre>"+report+"</pre>"
+    feedb += '<ul><li><a href="#display_html">Rapport affiché en web</a></li>'
+    feedb += '<li><a href="#code_html">Rapport généré en html</a></li>'
+    feedb += '<li><a href="#code_markdown">Rapport généré en markdown</a></li></ul>'
+    feedb += '<br /><div id="display_html">'+report_html+'</div><br />'
+    feedb += '<div id="code_html"><pre><code>'+report_html+'</code></pre></div><br />'
+    feedb += '<div id="code_markdown"><pre>'+report+'</pre></div>'
     grade=(100, feedb)
 
 ==
