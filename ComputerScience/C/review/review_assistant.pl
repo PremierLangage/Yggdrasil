@@ -383,6 +383,7 @@ elif step == 7:
 else:
     if len(response['comments']) > 0:
         report += "## derniers commentaires :\n\n" + response['comments']
+        report_html += "<b>derniers commentaires :</b><br />" + response['comments']
     text=""
     form=""
     feedb = "C'est fini !<br /><br />"
