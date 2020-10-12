@@ -94,9 +94,7 @@ for i in range(10):
     try:
         filename=f"question{i}.txt"
         with open(filename,"r") as f:
-            questions += f.readlines()
-
-        print(questions,file=sys.stderr)
+            questions += f.read()
     except Exception as e:
         print(" une connerie :",str(e))
         sys.exit(-1)
