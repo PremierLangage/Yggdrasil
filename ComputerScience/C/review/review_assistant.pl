@@ -207,6 +207,7 @@ elif step == 1:
     grade=(-1, " ")
 elif step == 2:
     report += "## Installation et compilation des sources transmises\n\n"
+    report_html += "<h2>Installation et compilation des sources transmises</h2><br />"
     S = group.selection
     for item in group.items:
         if item['id'] == S:
@@ -238,6 +239,7 @@ elif step == 2:
     grade=(-1, " ")
 elif step == 3:
     report += "## Fonctionnalités implantées dans les rendus\n\n"
+    report_html += "<h2>Fonctionnalités implantées dans les rendus</h2><br />"
     S = group.selection
     for item in group.items:
         if item['id'] == S:
@@ -245,6 +247,7 @@ elif step == 3:
             report_html += item['content']+"<br /><br />"
     if 'comcrit3' in response and len(response['comcrit3']) > 0:
         report += response['comcrit3']+"\n\n"
+        report_html += response['comcrit3']+"<br /><br />"
     step += 1
     text='<b><span style="color: darkred;">Étape '+str(step+1)+'/9</span></b><br/><br />\n\n'+texts[step]
     form=forms[step]
@@ -268,6 +271,7 @@ elif step == 3:
     grade=(-1, " ")
 elif step == 4:
     report += "## Utilisations et sécurité des programmes produits\n\n"
+    report_html += "<h2>Utilisations et sécurité des programmes produits</h2><br />"
     S = group.selection
     for item in group.items:
         if item['id'] == S:
@@ -275,6 +279,7 @@ elif step == 4:
             report_html += item['content']+"<br /><br />"
     if 'comcrit4' in response and len(response['comcrit4']) > 0:
         report += response['comcrit4']+"\n\n"
+        report_html += response['comcrit4']+"<br /><br />"
     step += 1
     text='<b><span style="color: darkred;">Étape '+str(step+1)+'/9</span></b><br/><br />\n\n'+texts[step]
     form=forms[step]
@@ -298,6 +303,7 @@ elif step == 4:
     grade=(-1, " ")
 elif step == 5:
     report += "## Nommage des éléments dans les productions rendues\n\n"
+    report_html += "<h2>Nommage des éléments dans les productions rendues</h2><br />"
     S = group.selection
     for item in group.items:
         if item['id'] == S:
@@ -305,6 +311,7 @@ elif step == 5:
             report_html += item['content']+"<br /><br />"
     if 'comcrit5' in response and len(response['comcrit5']) > 0:
         report += response['comcrit5']+"\n\n"
+        report_html += response['comcrit5']+"<br /><br />"
     step += 1
     text='<b><span style="color: darkred;">Étape '+str(step+1)+'/9</span></b><br/><br />\n\n'+texts[step]
     form=forms[step]
@@ -328,6 +335,7 @@ elif step == 5:
     grade=(-1, " ")
 elif step == 6:
     report += "## Efficacité et performance des productions rendues\n\n"
+    report_html += "<h2>Efficacité et performance des productions rendues</h2><br />"
     S = group.selection
     for item in group.items:
         if item['id'] == S:
@@ -335,6 +343,7 @@ elif step == 6:
             report_html += item['content']+"<br /><br />"
     if 'comcrit6' in response and len(response['comcrit6']) > 0:
         report += response['comcrit6']+"\n\n"
+        report_html += response['comcrit6']+"<br /><br />"
     step += 1
     text='<b><span style="color: darkred;">Étape '+str(step+1)+'/9</span></b><br/><br />\n\n'+texts[step]
     form=forms[step]
@@ -358,6 +367,7 @@ elif step == 6:
     grade=(-1, " ")
 elif step == 7:
     report += "## Commentaires dans les sources des productions rendues\n\n"
+    report_html += "<h2>Commentaires dans les sources des productions rendues</h2><br />"
     S = group.selection
     for item in group.items:
         if item['id'] == S:
@@ -365,6 +375,7 @@ elif step == 7:
             report_html += item['content']+"<br /><br />"
     if 'comcrit7' in response and len(response['comcrit7']) > 0:
         report += response['comcrit7']+"\n\n"
+        report_html += response['comcrit7']+"<br /><br />"
     step += 1
     text='<b><span style="color: darkred;">Étape '+str(step+1)+'/9</span></b><br/><br />\n\n'+texts[step]
     form=forms[step]
