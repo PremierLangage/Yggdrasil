@@ -151,6 +151,16 @@ if(place_noire(tab,x,y)==1)
  affiche(tab);
  return 0;
 }
+/*
+PARADIS
+OPALINE
+IP1USSR
+SAS1SAG
+STALINE
+O1ASPEN
+NORDEST
+
+Perec*/
 ==
 
 
