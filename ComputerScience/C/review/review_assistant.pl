@@ -20,8 +20,7 @@ builder =@ /builder/before.py
 
 # author=Nicolas Borie
 
-title=Assistant générateur de rapport de review de code pour le langage C
-
+title=Assistant générateur de rapport de review de code
 tag=review|code|relecture|validation|correction|évaluation|pairs
 
 before==#|python|
@@ -29,8 +28,8 @@ before==#|python|
 # step 
 step = 0
 
-texts=["Bienvenu sur l'assistant online d'aide à la génération de rapport pour la review de code."]
-forms=[""]
+texts=["Bienvenu sur l'assistant online d'aide à la génération de rapport pour la review de code en langage C."]
+forms=["Votre nom : <input type=text />"]
 
 text=texts[step]
 form=forms[step]
