@@ -89,7 +89,7 @@ from AMC import parse_AMC_TXT
 from aleaq import buildquestion, onefromeachgroup
 ######
 
-question=""
+questions=""
 for i in range(10):
     try:
         filename=f"question{i}.txt"
