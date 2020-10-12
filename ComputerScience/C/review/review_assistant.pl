@@ -386,7 +386,7 @@ else:
         report_html += "<b>derniers commentaires :</b><br />" + response['comments']
     text=""
     form=""
-    feedb = "C'est fini !<br /><br />À la suite, vous trouverez :"
+    feedb = "À la suite, vous trouverez :"
     feedb += '<ul><li>Rapport affiché en navigateur</li>'
     feedb += '<li>Rapport généré en html</li>'
     feedb += '<li>Rapport généré en markdown</li></ul>'
