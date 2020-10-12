@@ -28,17 +28,26 @@ before==#|python|
 # step 
 step = 0
 
-texts=["# Bienvenu sur l'assistant online d'aide à la génération de rapport pour la review de code en langage C."]
+texts=["# Bienvenu sur l'assistant online d'aide à la génération de rapport pour la review de code en langage C.",
+       "## Avez-vous des derniers commentaires ou informations supplémentaires à donner ?"]
 forms=["Votre nom : <input type=text /> <br />"
         "Nom de l'auteur du code : <input type=text /> <br />"
-        "Nom du code ou projet relu : <input type=text />"]
+        "Nom du code ou projet relu : <input type=text />",
+        "Commentaires ouverts : <textarea></textarea>"]
 
 text=texts[step]
 form=forms[step]
 ==
 
 evaluator==#|python|
-grade=(100, "Et c'est ok!")
+if (step < 1):
+    step += 1
+    text=texts[step]
+    form=forms[step]
+    grade=(-1, " ")
+else:
+    grade=(100, "C'est fini !")
+
 ==
 
 # the two following keys will be overwriten over and over...
