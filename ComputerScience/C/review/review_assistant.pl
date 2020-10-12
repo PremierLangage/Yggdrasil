@@ -23,6 +23,10 @@ author=Nicolas Borie
 title=Assistant générateur de review de code
 tag=review|code|relecture|validation|correction|évaluation|pairs
 
+before==
+
+==
+
 text==
 
 Salut !
