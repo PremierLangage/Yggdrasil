@@ -57,7 +57,8 @@ if (step == 0):
     if len(response['author']) > 0:
         report += "Projet/code produit par "+response['author']+"\n"
     if len(response['nom']) > 0:
-        report += "Relecture opérée par "+response['nom']+"\n\n"
+        report += "Relecture opérée par "+response['nom']+"\n"
+    report += "\n"
     step += 1
     text=texts[step]
     form=forms[step]
