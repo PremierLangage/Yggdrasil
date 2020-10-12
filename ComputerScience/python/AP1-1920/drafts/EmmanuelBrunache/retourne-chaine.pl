@@ -9,7 +9,8 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 text==
 
-Ecrire une fonction `retournechaine` qui reçoit deux chaines de caractères et met dans la deuxième chaine la premiere chaine de caractère à l'envers.
+Ecrire une fonction `retournechaine` qui reçoit une chaine de caractères et qui l'inverse.
+Si elle reçoit "hello world" elle doit la remplacer par "dlrow olleh".
 ==
 code_before==
 
@@ -22,7 +23,7 @@ code_before==
 taboo=string.h
 
 editor.code==
-/* ... */  retournechaine(char tab[],char bat[]){
+/* ... */  retournechaine(char tab[]){
 /* A compléter */
 }
 
