@@ -40,7 +40,10 @@ texts=["## **Bienvenu sur l'assistant online d'aide à la génération de rappor
        "<ul>"
        "<li>Concevoir des packages propres, les plus légers possibles et complets.</li>"
        "<li>Adopter des organisations de sources favorisant les recherches.</li>"
-       "</ul>",
+       "</ul><br />"
+       "<b>Comment sont les productions transmises en terme de qualité, taille,"
+       "structuration, organisation des répertoires et fichiers transmis pour"
+       "la revue ?</b>",
        "## Avez-vous des derniers commentaires ou informations supplémentaires à donner ?"]
 
 forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
@@ -48,7 +51,8 @@ forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
        '<tr><td>Nom de l\'<b>auteur</b> de la production </td><td> <input type=text id="form_author" /> </td></tr>'
        '<tr><td>Nom du code ou <b>projet</b> relu </td><td> <input type=text id="form_code" /> </td></tr>'
        '</table>',
-       '',
+       '<input type="radio" id="form_fail" name="crit1" value="fail1">'
+       '<label for="fail1">L\'auteur a laissé des éléments inutiles ou des fichiers mal identifiés dans ses contenus.</label><br>',
        'Commentaires ouverts : <br /> '
        '<textarea id="form_comments" rows="6" cols="80" ></textarea>']
 
