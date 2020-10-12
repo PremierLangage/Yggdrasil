@@ -75,7 +75,7 @@ ff==
 
 title= Cher enseignant vous n'avez pas changer le "title" 
 
-@ exe.txt [question7.txt]
+@ falque.txt [question7.txt]
 @ exe.txt [question0.txt]
 
 
