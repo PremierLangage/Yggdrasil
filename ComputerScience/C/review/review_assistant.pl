@@ -46,6 +46,14 @@ texts=["## **Bienvenu sur l'assistant online d'aide à la génération de rappor
        "<b>Comment sont les productions transmises en terme de qualité, taille, "
        "structuration, organisation des répertoires et fichiers transmis pour "
        "la revue ?</b>",
+       "## **Installation et compilation des sources transmises**\n<br />\n"
+       "<u>Objectifs :</u>"
+       "<ul>"
+       "<li>Le relecteur/client peut installer/compiler sans aucun effort.</li>"
+       "<li>Fournir un makefile permettant une gestion fine des contenus.</li>"
+       "</ul>"
+       "<b>Comment sont les productions transmises en terme de praticité"
+       "d’installation, de compilation des sources et contenus annexes ?</b>",
        "## Avez-vous des derniers commentaires ou informations supplémentaires à donner ?"]
 
 forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
