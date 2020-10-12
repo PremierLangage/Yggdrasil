@@ -74,6 +74,9 @@ forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
        ' {{ group|component }} \n<br />\n'
        ' Précisions le cas échéant (en particulier si vous avez des suggestions d\'amélioration) : <br /> '
        '<textarea id="form_comcrit2" rows="6" cols="80" ></textarea>',
+       ' {{ group|component }} \n<br />\n'
+       ' Précisions le cas échéant (en particulier si vous avez des suggestions d\'amélioration) : <br /> '
+       '<textarea id="form_comcrit3" rows="6" cols="80" ></textarea>',
        'Commentaires ouverts : <br /> '
        '<textarea id="form_comments" rows="6" cols="80" ></textarea>']
 
