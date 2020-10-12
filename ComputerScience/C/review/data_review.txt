@@ -1,0 +1,111 @@
+# Concision et propreté des productions en programmation
+
+\underline{Objectifs :}
+
+ * Concevoir des packages propres, les plus légers possibles et complets. 
+ * Adopter des organisations de sources favorisant les recherches.
+
+**Comment sont les productions transmises en terme de qualité, taille,
+structuration, organisation des répertoires et fichiers transmis pour
+la revue ?**
+
+1) L'auteur a laissé des éléments inutiles ou des fichiers mal identifiés
+dans ses contenus.
+1) Les productions transmises sont correctes et bien identifiées.
+1) Les productions transmises sont particulièrement bien structurées et
+la précision du nommage ne laisse aucun doute sur le contenu des
+répertoires et fichiers.
+1) Les contenus transmis sont à la fois concis et complets. Un maximum
+d'éléments sont générés automatiquement rendant la production minimale
+en taille lors de sa diffusion.
+
+
+
+# Installation et compilation des sources transmises
+
+\underline{Objectifs :}
+
+* Le relecteur/client peut installer/compiler sans aucun effort.
+* Produire un makefile permettant une gestion fine des contenus.
+
+**Comment sont les productions transmises en terme de praticité
+d’installation, de compilation des sources et contenus annexes ?**
+
+
+
+1) Pas de makefile ou la compilation d'un programme échoue ou la
+compilation manque de vérifications et produit trop de warning.
+1) Un makefile permet la compilation de toutes les sources sans grave
+warning et avec, a minima, le flag -Wall.
+1) Un makefile propre, lisible et complet permet la compilation de
+toutes les sources sans aucun warning et avec les drapeaux -Wall et
+-ansi (voire -pedantic). Le makefile gère correctement les dépendances
+et intègre une règle pour le nettoyage des produits de compilation.
+1) Le makefile est bien documenté, il propose un haut niveau de
+verbose et intègre des règles pour générer un ou plusieurs contenus
+annexes (documentation avec doxygen, programme de tests
+supplémentaires, etc).
+
+
+
+
+# Critère observant les fonctionnalités implantées dans les productions
+
+Objectifs :
+Les fonctionnalités programmées se comportent comme attendu voire comme spécifié dans le cahier des charges.
+Les productions réalisent exhaustivement les fonctionnalités souhaités.
+
+Les programmes réalisent-ils correctement et exhaustivement la liste des fonctionnalités à traiter ?
+Une des fonctionnalité n'est pas implantée correctement.
+Les programmes répondent correctement à toutes les tâches qu'ils sont censés effectuer.
+Les programmes contiennent quelques preuves de leurs bons fonctionnements.
+Les programmes démontrent, durant leurs exécutions, qu'ils réalisent correctement l'intégralité du cahier des charges.
+
+# Critère observant l’utilisation et la sécurité des productions informatiques
+
+Objectifs :
+Produire des exécutables robustes contrôlant systématiquement données en entrées et exécutions.
+Augmenter l’expérience de l’utilisateur en le conseillant ou en le corrigeant.
+
+Les programmes prévoient-ils exhaustivement tous les cas d'utilisation ?
+Un cas d'utilisation normale fait échouer un programme (erreur, segfault, etc...).
+Tous les cas d'utilisations normales sont traités correctement par les programmes.
+Les programmes ne produisent pas d'erreur même en cas d'utilisation non conforme.
+Les programmes informent l'utilisateur et le conseillent en cas de mauvaise utilisation.
+
+# Critère observant le nommage des éléments dans les productions informatiques
+
+Objectifs :
+Adopter des règles de moindre surprise favorisant la compréhension lors de toutes relectures par autrui.
+Produire du code réutilisable et maintenable par autrui.
+
+Les éléments (modules, fonctions, variables, constantes, etc...) des productions informatiques ont-ils des noms ou identifiants qui décrivent fidèlement leur contenu ?
+Un élément d’un programme n'est pas correctement nommé et peut induire en erreur le relecteur.
+Les éléments des productions sont correctement nommés.
+Les identifiants suivent des règles de nommages sur tout le code de manière cohérente.
+Les identifiants apportent de l'information facilitant la compréhension par autrui.
+
+# Critère observant l’efficacité en terme de travail et calcul des productions
+
+Objectifs :
+Produire des programmes efficaces.
+Mettre en oeuvre des algorithmes standards et éprouvés.
+
+Les programmes déploient-ils des algorithmes raisonnables et efficaces ?
+Un programme utilise un mauvais algorithme ou procède à des calculs ou des tests inutiles.
+Les programmes sont basés sur des algorithmes attendues.
+Les programmes suppriment tout calcul non nécessaire à l'aide d'astuces simples et expliquées.
+Les programmes sont algorithmiquement plus performant que l'attendu (sans entrave aux consignes).
+
+# Critère observant les commentaires dans les productions informatiques
+
+Objectifs :
+Produire du code optimisé pour toutes relectures
+Produire du code réutilisable et maintenable par autrui.
+
+Les sources des programmes et productions sont elles correctement commentées ?
+Un passage trop rusé ou surprenant manque de commentaires ou encore un commentaire est présent mais non-éclairant .
+Les programmes sont correctement commentés.
+Des commentaires précisent les parties critiques du code, levant les ambiguïtés.
+Les commentaires présentent les intentions et justifient les choix de programmation de l'auteur.
+
