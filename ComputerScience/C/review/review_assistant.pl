@@ -53,7 +53,7 @@ forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
        '</table>',
        '<input type="radio" id="form_fail1" name="crit1" value="fail1"> '
        '<label for="fail1"> L\'auteur a laissé des éléments inutiles ou des fichiers mal identifiés dans ses contenus.</label><br />'
-       '<input type="radio" id="form_ok1" name="ok1" value="ok1"> '
+       '<input type="radio" id="form_ok1" name="crit1" value="ok1"> '
        '<label for="ok1"> Les productions et leurs éléments sont corrects et bien identifiés.</label><br />',
        'Commentaires ouverts : <br /> '
        '<textarea id="form_comments" rows="6" cols="80" ></textarea>']
