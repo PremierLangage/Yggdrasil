@@ -266,19 +266,19 @@ elif step == 4:
     group.items = []
     group.items.append({
         "id": "crit5fail",
-        "content": ""
+        "content": "Un élément d’un programme n'est pas correctement nommé et peut induire en erreur le relecteur."
     })
     group.items.append({
         "id": "crit5ok",
-        "content": ""
+        "content": "Les éléments des productions sont correctement nommés."
     })
     group.items.append({
         "id": "crit5ok+",
-        "content": ""
+        "content": "Les identifiants suivent des règles de nommages sur tout le code de manière cohérente."
     })
     group.items.append({
         "id": "crit5ok++",
-        "content": ""
+        "content": "Les identifiants apportent de l'information facilitant la compréhension par autrui."
     })
     grade=(-1, " ")
 elif step == 5:
@@ -295,19 +295,19 @@ elif step == 5:
     group.items = []
     group.items.append({
         "id": "crit6fail",
-        "content": ""
+        "content": "Un programme utilise un mauvais algorithme ou procède à des calculs ou des tests inutiles."
     })
     group.items.append({
         "id": "crit6ok",
-        "content": ""
+        "content": "Les programmes sont basés sur des algorithmes attendues."
     })
     group.items.append({
         "id": "crit6ok+",
-        "content": ""
+        "content": "Les programmes suppriment tout calcul non nécessaire à l'aide d'astuces simples et expliquées."
     })
     group.items.append({
         "id": "crit6ok++",
-        "content": ""
+        "content": "Les programmes sont algorithmiquement plus performant que l'attendu (sans entrave aux consignes)."
     })
     grade=(-1, " ")
 elif step == 6:
