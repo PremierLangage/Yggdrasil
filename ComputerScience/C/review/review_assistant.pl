@@ -28,10 +28,15 @@ before==#|python|
 # step index 
 step = 0
 
-texts=["# Bienvenu sur l'assistant online d'aide à la génération de rapport pour la review de code en langage C.",
+# Les énoncés
+texts=["## Bienvenu sur l'assistant online d'aide à la génération de rapport pour la review "
+       "de code en langage C.\n\n   "
+       "Commencez par vous présenter, précisez l'auteur du code reviewé ainsi qu'une description pour "
+       "la production évaluée.",
        "## Avez-vous des derniers commentaires ou informations supplémentaires à donner ?"]
-forms=["Votre nom : <input type=text /> <br />"
-        "Nom de l'auteur du code : <input type=text /> <br />"
+
+forms=["Votre nom (relecteur) : <input type=text /> <br />"
+        "Nom de l'auteur de la production : <input type=text /> <br />"
         "Nom du code ou projet relu : <input type=text />",
         "Commentaires ouverts : <textarea></textarea>"]
 
