@@ -16,6 +16,8 @@ Afficher les entiers  de {{b}} à {{b}}+X parcourus de {{s}} en {{s}} {{predtext
 
 Puis calculez et affichez {{operatortextb}} {{functeur[0]}} {{operatortexta}} .
 
+
+*seed={{seed}}*
 ==
 
 mplsoluce0==
