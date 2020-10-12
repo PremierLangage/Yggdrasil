@@ -155,7 +155,7 @@ if(place_noire(tab,x,y)==1)
 
 tests==
 [ ["simple exécution"," ","2 2 PARADIS 0 0 h"],
- ["mot correct","","1 1 random.choise(["POISSON 0 0 v","DISSIPE 0 4 v"]]
+ ["mot correct","","1 1"+ random.choise(["POISSON 0 0 v","DISSIPE 0 4 v"]]
 ==
 
 
