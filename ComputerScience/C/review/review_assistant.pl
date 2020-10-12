@@ -237,19 +237,19 @@ elif step == 3:
     group.items = []
     group.items.append({
         "id": "crit4fail",
-        "content": ""
+        "content": "Un cas d'utilisation normal fait échouer un programme (erreur, segfault, etc...)."
     })
     group.items.append({
         "id": "crit4ok",
-        "content": ""
+        "content": "Tous les cas d'utilisations normales sont traités correctement par les programmes."
     })
     group.items.append({
         "id": "crit4ok+",
-        "content": ""
+        "content": "Les programmes ne produisent pas d'erreur même en cas d'utilisation non conforme."
     })
     group.items.append({
         "id": "crit4ok++",
-        "content": ""
+        "content": "Les programmes informent l'utilisateur et le conseillent en cas de mauvaise utilisation."
     })
     grade=(-1, " ")
 elif step == 4:
