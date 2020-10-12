@@ -129,7 +129,7 @@ elif step == 1:
     group.items = []
     group.items.append({
         "id": "crit2fail",
-        "content": "Pas de makefile ou la compilation d'un programme échoue ou la compilation manque de vérifications et produit trop de warning."
+        "content": "Pas de makefile ou la compilation d'un programme échoue ou la compilation <br/>manque de vérifications ou produit trop de warning."
     })
     group.items.append({
         "id": "crit2ok",
