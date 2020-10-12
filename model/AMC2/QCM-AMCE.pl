@@ -88,7 +88,6 @@ from AMC import parse_AMC_TXT
 from aleaq import buildquestion, onefromeachgroup
 ######
 
-questions = questions if questions else ""
 
 for i in range(10):
     try:
