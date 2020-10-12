@@ -1,10 +1,5 @@
 
 
-* dsjkfqgljfn,b;dn;,bfd;s,
-+ jjj
--- jjjj
-
-
 
 *+ Exo avec click sur un mot ici bonne est le bon mot 
  Vous  pouvez en mettre plusieurs séparer vos mots par des espace 
