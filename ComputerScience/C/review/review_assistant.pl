@@ -56,9 +56,11 @@ if (step == 0):
     form=forms[step]
     grade=(-1, " ")
 else:
+    if len(reponse['comments']) > 0:
+        report += "### derniers commentaires :\n" + reponse['comments']
     text=""
     form=""
-    grade=(100, "C'est fini !")
+    grade=(100, "C'est fini !<br />"+"<pre>"+report+"</pre>")
 
 ==
 
