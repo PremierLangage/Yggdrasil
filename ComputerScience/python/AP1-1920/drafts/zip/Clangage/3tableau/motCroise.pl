@@ -115,10 +115,10 @@ int place_mot(char plateau[][COLONNES],int x,int y,char m[],char dest){
     for(i=0;i<l;i++)
       
       if(x+i<0 || x+i>=LIGNES||y<0||y>=COLONNES|| plateau[x+i][y]==1||(plateau[x+i][y]!=0 && plateau[x+i][y]!=m[i] ))
-	return 0;
+	      return 0;
      for(i=0;i<l;i++)
        plateau[x+i][y]=m[i];
-     return 1;
+    return 1;
    }
 }
 ==
