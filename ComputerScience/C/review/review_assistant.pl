@@ -70,7 +70,7 @@ if (step == 0):
     report += " le "+str(date.today().day)+" "+mois[date.today().month - 1]+" "+str(date.today().year)
     report += "\n\n"
     step += 1
-    text=texts[step]
+    text='<b><span style="color: darkred;">Étape '+str(step+1)+'/9</span></b><br/><br />\n\n'+texts[step]
     form=forms[step]
     grade=(-1, " ")
 else:
