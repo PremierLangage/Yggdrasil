@@ -14,12 +14,8 @@ onepergroup % true
 # NE MODIFIER PAS CE FICHIER MERCI 
 # FAITES UN EXTENDS DESSUS ET DEFINISER VOTRE BALISE questions
 # extends=  /model/AMC2/essaitextselect.pl 
-q1=@ 1.txt 
-q2=@ 1.txt 
 
-questions="{{q1}}{{q2}}"
-
-questions=@ exe.txt
+questions=
 
 
 
@@ -79,7 +75,7 @@ ff==
 
 title= Cher enseignant vous n'avez pas changer le "title" 
 
-@  falque.txt ['question7.txt']
+@  exe.txt ['question7.txt']
 
 
 before == #|python|
@@ -92,13 +88,15 @@ from AMC import parse_AMC_TXT
 from aleaq import buildquestion, onefromeachgroup
 ######
 
-    for i in range(10):
-        try:
-            filename=f"question{i}.txt"
-            with open(filename,"r") as f:
-                questions += f.readlines()
-        except :
-            pass
+questions = questions if questions else ""
+
+for i in range(10):
+    try:
+        filename=f"question{i}.txt"
+        with open(filename,"r") as f:
+            questions += f.readlines()
+    except :
+        pass
 
 
 
