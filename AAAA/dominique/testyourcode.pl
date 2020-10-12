@@ -1,0 +1,4 @@
+
+extends= /model/progpython.pl
+
+
