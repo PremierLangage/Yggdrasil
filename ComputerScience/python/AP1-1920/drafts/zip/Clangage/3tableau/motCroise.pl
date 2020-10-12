@@ -65,7 +65,7 @@ int place_noire(char plateau[][COLONNES],int x,int y){
 }
 
 int place_mot(char plateau[][COLONNES],int x,int y,char m[],char dest){
-  int i,j,l;
+  int i,l;
   /*verif*/
   l=strlen(m);
   if (dest=='h'){
@@ -86,6 +86,7 @@ int place_mot(char plateau[][COLONNES],int x,int y,char m[],char dest){
        plateau[x+i][y]=m[i];
      return 1;
    }
+   return 1;
 }
 
 ==
@@ -120,6 +121,7 @@ int place_mot(char plateau[][COLONNES],int x,int y,char m[],char dest){
        plateau[x+i][y]=m[i];
     return 1;
    }
+   return 1;
 }
 ==
 
@@ -153,8 +155,9 @@ if(place_noire(tab,x,y)==1)
 
 tests==
 [ ["simple exécution"," ","2 2 PARADIS 0 0 h"],
- ]
+ ["mot correct","","1 1 random.choise(["POISSON 0 0 v","DISSIPE 0 4 v"]]
 ==
+
 
 
 
