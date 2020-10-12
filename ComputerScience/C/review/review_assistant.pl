@@ -121,7 +121,7 @@ forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
        '<textarea id="form_comments" rows="6" cols="80" ></textarea>']
 
 report=""
-report_html+=""
+report_html=""
 
 text='<b><span style="color: darkred;">Étape '+str(step+1)+'/9</span></b><br/><br />\n\n'+texts[step]
 form=forms[step]
