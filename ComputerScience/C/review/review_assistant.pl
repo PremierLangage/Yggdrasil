@@ -391,7 +391,7 @@ else:
     feedb += '<li><a href="#code_html">Rapport généré en html</a></li>'
     feedb += '<li><a href="#code_markdown">Rapport généré en markdown</a></li></ul>'
     feedb += '<br /><div id="display_html">'+report_html+'</div><br />'
-    feedb += '<div id="code_html"><pre><code>'+report_html.replace('<', '&lt;').replace('>', '&gt;').replace('<br />', '<br />\n')+'</code></pre></div><br />'
+    feedb += '<div id="code_html"><pre style="white-space: pre-wrap;"><code>'+report_html.replace('<', '&lt;').replace('>', '&gt;').replace('<br />', '<br />\n')+'</code></pre></div><br />'
     feedb += '<div id="code_markdown"><pre>'+report+'</pre></div>'
     grade=(100, feedb)
 
