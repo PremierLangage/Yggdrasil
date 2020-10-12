@@ -1,68 +1,164 @@
 
 
-extends= /model/AMC2/QCM-AMCE.pl
+extends = /model/multistep.pl
 
-title= QCM PL en construction
+@ /model/AMC2/AMC2.py [AMC.py]
 
-questions==
+@ aleaq.py 
 
-=**[nbb=2,nbg=3] Dans un programme, quels sont les noms de variables que vous utiliseriez pour gérer des données liés au temps? 
-+=["tmp","cmpt","hours","heures","years","annees","days","jours","mnt","minutes","sec","seconds","period","duree"]
--=["and","if","for","while","variable","variable_3","x","a","toto","chat"]
+settings.cumulative % false
 
-**[group=prenom] Quel est le prénom de Revuz
-+Dominique
--Christian
-+Paul
-+Edouard
+# une seule quetions par groupe de questions 
+onepergroup % true
 
-*[group=prenom] Quel est le prénom de Diaw
-+Anna
--Aminata
+# NE MODIFIER PAS CE FICHIER MERCI 
+# FAITES UN EXTENDS DESSUS ET DEFINISER VOTRE BALISE questions
+# extends=  /model/AMC2/essaitextselect.pl 
 
-*+ Clicker sur la bonne conjugaison du verbe  
->Je suis ( aller / {{allé}} ) au bureau hier
+questions=
 
-=**[nbb=2,nbg=2] Choisir les mots qui sont des mots clefs de python
-+=["assert","async","await","break","class","continue","def","del","else","except","finally"]
--=["whiles","boucle","attend","cause","deff","dep"]
 
-=*[nb=5,group=odd] What are the odd numbers ? 
+
+questionsX==
+
+=* Exo avec click sur un mot ici bonne est le bon mot 
+ Vous  pouvez en mettre plusieurs séparer vos mots par des espace 
+ si vous souhaiter mettre un espace ajouter des crochet autour des caractères en question   
+>j'indique avec des doubles curly brackets la {{bonne}} réponse
+
+
+=**[nb=13, group=odd] What are the $%odd%$ numbers ? 
+
++=[x for x in range(3,77) if x%2==1 ]
+-=[100,200,300,400,500,600]
+-=[x for x in range(2,20) if x%2==0 ]
+
+=**[nbb=2,nbg=2] Indiquer les identifiants correctes
++=["un","deux","ident","prout"]
+-=["666","aujourd'hui", "def", "@lt;html@gt;"] 
+-=["!autres","truc%","pour ris"]
+- for
+-=["list","int","dic"]
+
+==
+
+ff==
+
+=**[nbb=2,nbg=2] Indiquer les identifiants correctes
++=["un","deux","ident","prout"]
+-=["666","aujourd'hui", "def", "@lt;html@gt;"] 
+-=["!autres","truc%","pour ris"]
+- for
+-=["list","int","dic"]
+
+=**[nb=13, group=odd] What are the odd numbers ? 
++=[x for x in range(3,77) if x%2==1 ]
+-=[100,200,300,400,500,600]
+-=[x for x in range(2,20) if x%2==0 ]
+
+
+=*[nb=2,group=odd] What are the odd numbers ? 
++=[x for x in range(3,77) if x%2==1 ]
++ 1
+-=[x for x in range(3,77) if x%2==0 ]
+
+
+=*[nb=6,group=odd] What are the odd numbers ? 
 +=[x for x in range(3,77) if x%2==1 ]
 -=[x for x in range(3,77) if x%2==0 ]
 
-=*[nb=3,group=odd] What are the even numbers ? 
--=[x for x in range(3,77) if x%2==1 ]
-+=[x for x in range(3,77) if x%2==0 ]
+
 
 ==
 
-doc==
-On respecte le format standart des AMC selon le lien suivant : https://www.auto-multiple-choice.net/auto-multiple-choice.fr/AMC-TXT.shtml
 
 
-* AMC avec possibilité d'un seul choix de réponse et donc une seule bonne réponse possible
-Réponses à mettre sous la forme : + Bonne_Rep
-                                  - Mauvaise Rep
+title= Cher enseignant vous n'avez pas changer le "title" 
 
-** AMC avec possibilité de plusieurs choix de réponse et donc plusieurs bonnes réponses possible
-Réponses à mettre sous la forme : + Bonne_Rep
-                                  - Mauvaise Rep
+@ exe.txt [question7.txt]
+@ exe.txt [question0.txt]
 
-*+ Cliquer sur les mots ; mettre les bonnes réponses entre accolades { { } }
-Réponse à mettre sous la forme : >
 
-=* AMC avec possibilité d'une seule bonne réponse parmi une liste ou une compréhension python sur une ligne
-Réponses à mettre sous la forme : += Liste_de_Bonne_Rep ou compréhension
-                                  -= Liste_de_Mauvaise Rep ou compréhension
+before == #|python|
+import random as rd
+from customradio import CustomRadio
+from customcheckbox import CustomCheckbox
+from customtextselect import CustomTextSelect
+from AMC import parse_AMC_TXT
 
-Pour chaque question, on peut mettre des options entre [] :
-[group=] pour qu'il choisisse au hasard un exo parmi ceux qui ont le même tag
+from aleaq import buildquestion, onefromeachgroup
+######
 
-[nb=] pour déterminer le nombre de réponse pour un radio
 
-[nbb=,nbg=] pour déterminer le nombre de bonne et de mauvaise réponse pour un checkbox 
+for i in range(10):
+    try:
+        filename=f"question{i}.txt"
+        with open(filename,"r") as f:
+            questions += f.read()
+    except Exception as e:
+        pass
+
+
+######
+list_questions = parse_AMC_TXT(questions)
+
+if "onepergroup" in globals() and onepergroup :
+    list_questions=onefromeachgroup(list_questions)
+elif 'nbstep' in globals():
+    list_questions = rd.sample(list_questions, nbstep)
+
+nbstep = len(list_questions)
+
+comp = []
+statement  = []
+rd.shuffle(list_questions)
+for i, q in enumerate(list_questions):
+    q=buildquestion(q) # Gestion de l'aléa 
+    if q['type'] == "Radio":
+        comp.append(CustomRadio())
+        statement.append(q['text'])
+        comp[i].setitems(q['items'])
+        comp[i].setsol_from_index(q['index'])
+        if 'ordered' not in q['options']:
+            comp[i].shuffle()
+    elif q['type'] == "Checkbox":
+        comp.append(CustomCheckbox())
+        statement.append(q['text'])
+        comp[i].setitems(q['items'])
+        comp[i].setsol_from_index(q['index'])
+        if 'ordered' not in q['options']:
+            comp[i].shuffle()
+    elif  q['type'] == 'TextSelect':
+        cst = CustomTextSelect()
+        statement.append(q['text'])
+        cst.setdata_from_textDR(q['items'][0])
+        comp.append(cst)
+
 ==
+
+display=
+
+intro ==
+Ce quiz contient {{nbstep}} questions.
+==
+
+textstep ==
+<strong> Question {{ step + 1 }}. </strong> 
+{{ statement[step] }}
+==
+
+formstep ==
+{{ comp[step]|component }}
+==
+
+evaluatorstep ==
+score = comp[step].eval()
+==
+
+
+
+
+
 
 
 
