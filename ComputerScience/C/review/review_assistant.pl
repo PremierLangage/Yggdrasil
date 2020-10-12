@@ -109,7 +109,7 @@ elif step == 1:
     S = group.selection
     for item in group.items:
         if item['id'] == S:
-            report += item['content'] 
+            report += item['content']+"\n\n" 
     step += 1
     text='<b><span style="color: darkred;">Étape '+str(step+1)+'/9</span></b><br/><br />\n\n'+texts[step]
     form=forms[step]
