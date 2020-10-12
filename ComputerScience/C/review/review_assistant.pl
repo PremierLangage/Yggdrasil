@@ -32,7 +32,9 @@ step = 0
 texts=["## Bienvenu sur l'assistant online d'aide à la génération de rapport pour la review "
        "de code en langage C.\n<br />\n"
        "Commencez par vous présenter, précisez l'auteur du code reviewé ainsi qu'une description pour "
-       "la production évaluée.",
+       "la production évaluée. Prennez votre temps pour valider pas à pas votre rapport mais "
+       "n'actualiser la page à aucun moment, vous perdriez votre début de rapport et cela "
+       "réinitialiserait le générateur à la première étape.",
        "## Avez-vous des derniers commentaires ou informations supplémentaires à donner ?"]
 
 forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
