@@ -14,6 +14,11 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
+@ std_progC_utils.py
+@ /utils/sandboxio.py
+grader  =@ /grader/evaluator.py
+builder =@ /builder/before.py
+
 author=Nicolas Borie
 
 title=Assistant générateur de review de code
