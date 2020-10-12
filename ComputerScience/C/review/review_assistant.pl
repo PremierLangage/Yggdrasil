@@ -29,7 +29,8 @@ before==#|python|
 step = 0
 
 texts=["Bienvenu sur l'assistant online d'aide à la génération de rapport pour la review de code en langage C."]
-forms=["Votre nom : <input type=text /> (laissez vide pour un reviewer anonyme.)"]
+forms=["Votre nom : <input type=text /> <br />"
+        "Nom de l'auteur du code : <input type=text />"]
 
 text=texts[step]
 form=forms[step]
