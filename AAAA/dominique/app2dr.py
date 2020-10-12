@@ -85,7 +85,12 @@ def boucleprincipale():
         if s=="v2":
             version=s
             continue
-            
+        if s=="v1":
+            version=s
+            continue
+        if s=="version" :
+            print(version)
+            continue
         if s=="graine":
             seed=None 
             while seed == None:
@@ -142,7 +147,7 @@ def boucleprincipale():
                         bd2,bd3= bd3,bd2
                     if bd2< bd1:
                         bd1,bd2=bd2,bd1
-                    if jmoney < mise :
+                    if jmoney < mise or version=="v1":
                         print("Perdu ")
                     else:
                         print("Quitte ou Double ?")
