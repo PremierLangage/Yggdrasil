@@ -41,8 +41,8 @@ texts=["## **Bienvenu sur l'assistant online d'aide à la génération de rappor
        "<li>Concevoir des packages propres, les plus légers possibles et complets.</li>"
        "<li>Adopter des organisations de sources favorisant les recherches.</li>"
        "</ul><br />"
-       "<b>Comment sont les productions transmises en terme de qualité, taille,"
-       "structuration, organisation des répertoires et fichiers transmis pour"
+       "<b>Comment sont les productions transmises en terme de qualité, taille, "
+       "structuration, organisation des répertoires et fichiers transmis pour "
        "la revue ?</b>",
        "## Avez-vous des derniers commentaires ou informations supplémentaires à donner ?"]
 
