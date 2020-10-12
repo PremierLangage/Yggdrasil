@@ -183,6 +183,35 @@ elif step == 2:
         "content": "Les programmes démontrent, durant leurs exécutions, qu'ils réalisent correctement l'intégralité <br />du cahier des charges."
     })
     grade=(-1, " ")
+elif step == 3:
+    report += "## Fonctionnalités implantées dans les rendus\n\n"
+    S = group.selection
+    for item in group.items:
+        if item['id'] == S:
+            report += item['content']+"\n\n"
+    if 'comcrit3' in response and len(response['comcrit3']) > 0:
+        report += response['comcrit3']+"\n\n"
+    step += 1
+    text='<b><span style="color: darkred;">Étape '+str(step+1)+'/9</span></b><br/><br />\n\n'+texts[step]
+    form=forms[step]
+    group.items = []
+    group.items.append({
+        "id": "crit4fail",
+        "content": ""
+    })
+    group.items.append({
+        "id": "crit4ok",
+        "content": ""
+    })
+    group.items.append({
+        "id": "crit4ok+",
+        "content": ""
+    })
+    group.items.append({
+        "id": "crit4ok++",
+        "content": ""
+    })
+    grade=(-1, " ")
 else:
     if len(response['comments']) > 0:
         report += "## derniers commentaires :\n\n" + response['comments']
