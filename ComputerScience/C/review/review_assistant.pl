@@ -324,19 +324,19 @@ elif step == 6:
     group.items = []
     group.items.append({
         "id": "crit7fail",
-        "content": ""
+        "content": "Un passage trop rusé ou surprenant manque de commentaires ou encore un commentaire est présent mais non-éclairant ."
     })
     group.items.append({
         "id": "crit7ok",
-        "content": ""
+        "content": "Les programmes sont correctement commentés."
     })
     group.items.append({
         "id": "crit7ok+",
-        "content": ""
+        "content": "Des commentaires précisent les parties critiques du code, levant les ambiguïtés."
     })
     group.items.append({
         "id": "crit7ok++",
-        "content": ""
+        "content": "Les commentaires présentent les intentions et justifient les choix de programmation de l'auteur."
     })
     grade=(-1, " ")
 elif step == 7:
