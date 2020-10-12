@@ -141,7 +141,7 @@ elif step == 1:
     })
     group.items.append({
         "id": "crit2ok++",
-        "content": "Le makefile est bien documenté, il propose un haut niveau de verbose et intègre des règles pour générer un ou plusieurs contenus annexes (documentation avec doxygen, programme de tests supplémentaires, etc)."
+        "content": "Le makefile est bien documenté, il propose un haut niveau de verbose et intègre des règles <br />pour générer un ou plusieurs contenus annexes (documentation avec doxygen, programme de tests supplémentaires, etc)."
     })
     grade=(-1, " ")
 else:
