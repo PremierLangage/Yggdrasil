@@ -75,7 +75,7 @@ if (step == 0):
     grade=(-1, " ")
 else:
     if len(response['comments']) > 0:
-        report += "### derniers commentaires :\n" + response['comments']
+        report += "## derniers commentaires :\n\n" + response['comments']
     text=""
     form=""
     grade=(100, "C'est fini !<br /><br /><u><b>Rapport généré en markdown :</b></u><br /><br /><pre>"+report+"</pre>")
