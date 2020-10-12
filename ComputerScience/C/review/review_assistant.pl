@@ -358,9 +358,10 @@ else:
         report += "## derniers commentaires :\n\n" + response['comments']
     text=""
     form=""
-    grade=(100, "C'est fini !<br /><br /><a href=""><b>Rapport généré en markdown</b></a><br /><br />"
-                "<br />"+report_html+"<br />"
-                "<pre>"+report+"</pre>")
+    feedb = "C'est fini !<br /><br /><a href=""><b>Rapport généré en markdown</b></a><br /><br />"
+    feedb += "<br />"+report_html+"<br />"
+    feedb += "<pre>"+report+"</pre>"
+    grade=(100, feedb)
 
 ==
 
