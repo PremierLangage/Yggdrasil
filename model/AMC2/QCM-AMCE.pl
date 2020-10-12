@@ -79,6 +79,7 @@ ff==
 
 title= Cher enseignant vous n'avez pas changer le "title" 
 
+@  falque.txt ['question7.txt']
 
 
 before == #|python|
@@ -91,9 +92,13 @@ from AMC import parse_AMC_TXT
 from aleaq import buildquestion, onefromeachgroup
 ######
 
-with open("mes.txt","r") as f:
-    questions += f.readlines()
-
+    for i in range(10):
+        try:
+            filename=f"question{i}.txt"
+            with open(filename,"r") as f:
+                questions += f.readlines()
+        except :
+            pass
 
 
 
