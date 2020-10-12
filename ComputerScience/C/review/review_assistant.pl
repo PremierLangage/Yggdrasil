@@ -386,10 +386,10 @@ else:
         report_html += "<b>derniers commentaires :</b><br />" + response['comments']
     text=""
     form=""
-    feedb = "C'est fini !<br /><br />"
-    feedb += '<ul><li><a href="#display_html">Rapport affiché en web</a></li>'
-    feedb += '<li><a href="#code_html">Rapport généré en html</a></li>'
-    feedb += '<li><a href="#code_markdown">Rapport généré en markdown</a></li></ul>'
+    feedb = "C'est fini !<br /><br />À la suite, vous trouverez :"
+    feedb += '<ul><li>Rapport affiché en navigateur</li>'
+    feedb += '<li>Rapport généré en html</li>'
+    feedb += '<li>Rapport généré en markdown</li></ul>'
     feedb += '<br /><div id="display_html">'+report_html+'</div><br />'
     feedb += '<div id="code_html"><pre style="white-space: pre-wrap;"><code>'+report_html.replace('<', '&lt;').replace('>', '&gt;').replace('<br />', '<br />\n')+'</code></pre></div><br />'
     feedb += '<div id="code_markdown"><pre>'+report+'</pre></div>'
