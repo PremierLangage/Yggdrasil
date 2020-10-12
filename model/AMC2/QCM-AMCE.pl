@@ -76,6 +76,7 @@ ff==
 title= Cher enseignant vous n'avez pas changer le "title" 
 
 @ exe.txt [question7.txt]
+@ exe.txt [question0.txt]
 
 
 before == #|python|
@@ -101,7 +102,7 @@ for i in range(10):
 
 ######
 list_questions = parse_AMC_TXT(questions)
-
+nbstep=3
 if "onepergroup" in globals() and onepergroup :
     list_questions=onefromeachgroup(list_questions)
 elif 'nbstep' in globals():
@@ -134,7 +135,6 @@ for i, q in enumerate(list_questions):
         cst.setdata_from_textDR(q['items'][0])
         comp.append(cst)
 
-text += "qeusuont :" +questions
 ==
 
 display=
