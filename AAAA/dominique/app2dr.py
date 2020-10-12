@@ -30,7 +30,7 @@ DEPART=12
 PROMPT="$ "
 INCONNUE="Commande Inconnue\n"
 
-def inputstring(l=["graine","lancer","consulter","quitte","double","terminer","v1","v2"]):
+def inputstring(l=["graine","lancer","consulter","quitte","double","terminer","v1","v2","version"]):
     s=""
     s=input(PROMPT)
     while s not in l:
