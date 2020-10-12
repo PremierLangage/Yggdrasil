@@ -35,3 +35,6 @@ form="{{ inputbox|component}}"
 evaluator==#|python|
 grade=(100, "Et c'est ok!")
 ==
+
+text=""
+form=""
