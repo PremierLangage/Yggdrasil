@@ -99,7 +99,7 @@ for i in range(10):
         print(questions,file=sys.stderr)
     except Exception as e:
         print(" une connerie :",str(e))
-
+        sys.exit(-1)
 
 
 ######
