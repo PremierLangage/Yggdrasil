@@ -76,7 +76,6 @@ ff==
 title= Cher enseignant vous n'avez pas changer le "title" 
 
 @ falque.txt [question7.txt]
-@ exe.txt [question0.txt]
 
 
 before == #|python|
