@@ -14,7 +14,14 @@ onepergroup % true
 # NE MODIFIER PAS CE FICHIER MERCI 
 # FAITES UN EXTENDS DESSUS ET DEFINISER VOTRE BALISE questions
 # extends=  /model/AMC2/essaitextselect.pl 
+q1=@ 1.txt 
+q2=@ 1.txt 
+
+questions="{{q1}}{{q2}}"
+
 questions=@ exe.txt
+
+
 
 questionsX==
 
@@ -82,7 +89,15 @@ from customtextselect import CustomTextSelect
 from AMC import parse_AMC_TXT
 
 from aleaq import buildquestion, onefromeachgroup
+######
 
+with open("mes.txt","r") as f:
+    questions += f.readlines()
+
+
+
+
+######
 list_questions = parse_AMC_TXT(questions)
 
 if "onepergroup" in globals() and onepergroup :
