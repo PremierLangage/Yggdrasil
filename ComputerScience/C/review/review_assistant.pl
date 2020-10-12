@@ -390,7 +390,7 @@ else:
     feedb += "<li><a href="">Rapport généré en html</a></li>"
     feedb += "<li><a href="">Rapport généré en markdown</a></li></ul>"
     feedb += "<br />"+report_html+"<br />"
-    feedb += "<pre>"+report_html+"</pre><br />"
+    feedb += "<code>"+report_html+"</code><br />"
     feedb += "<pre>"+report+"</pre>"
     grade=(100, feedb)
 
