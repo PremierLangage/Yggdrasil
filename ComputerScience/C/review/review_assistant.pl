@@ -126,6 +126,23 @@ elif step == 1:
     step += 1
     text='<b><span style="color: darkred;">Étape '+str(step+1)+'/9</span></b><br/><br />\n\n'+texts[step]
     form=forms[step]
+    group.items = []
+    group.items.append({
+        "id": "crit2fail",
+        "content": "Pas de makefile ou la compilation d'un programme échoue ou la compilation manque de vérifications et produit trop de warning."
+    })
+    group.items.append({
+        "id": "crit2ok",
+        "content": "Un makefile permet la compilation de toutes les sources sans grave warning et avec, a minima, le flag -Wall."
+    })
+    group.items.append({
+        "id": "crit2ok+",
+        "content": "Un makefile propre, lisible et complet permet la compilation de toutes les sources sans aucun warning et avec les drapeaux -Wall et -ansi (voire -pedantic). Le makefile gère correctement les dépendances et intègre une règle pour le nettoyage des produits de compilation."
+    })
+    group.items.append({
+        "id": "crit2ok++",
+        "content": "Le makefile est bien documenté, il propose un haut niveau de verbose et intègre des règles pour générer un ou plusieurs contenus annexes (documentation avec doxygen, programme de tests supplémentaires, etc)."
+    })
     grade=(-1, " ")
 else:
     if len(response['comments']) > 0:
