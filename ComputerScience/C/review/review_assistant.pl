@@ -95,7 +95,7 @@ if step == 0:
     })
     group.items.append({
         "id": "crit1ok+",
-        "content": "Les productions transmises sont particulièrement bien structurées et la précision du nommage ne laisse aucun doute sur le contenu des répertoires et fichiers."
+        "content": "Les productions transmises sont particulièrement bien structurées et la précision du nommage <br />ne laisse aucun doute sur le contenu des répertoires et fichiers."
     })
     group.items.append({
         "id": "crit1ok++",
