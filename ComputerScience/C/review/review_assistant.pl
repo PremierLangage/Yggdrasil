@@ -23,21 +23,12 @@ author=Nicolas Borie
 title=Assistant générateur de review de code
 tag=review|code|relecture|validation|correction|évaluation|pairs
 
-before==
+before==#|python|
+
+
 
 ==
 
-evaluator==
+evaluator==#|python|
 grade=(100, "Et c'est ok!")
 ==
-
-text==
-
-Salut !
-==
-
-form==
-
-==
-
-
