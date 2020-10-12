@@ -158,19 +158,19 @@ elif step == 2:
     group.items = []
     group.items.append({
         "id": "crit3fail",
-        "content": ""
+        "content": "Une des fonctionnalité n'est pas implantée correctement."
     })
     group.items.append({
         "id": "crit3ok",
-        "content": ""
+        "content": "Les programmes répondent correctement à toutes les tâches qu'ils sont censés effectuer."
     })
     group.items.append({
         "id": "crit3ok+",
-        "content": ""
+        "content": "Les programmes contiennent quelques preuves de leurs bons fonctionnements."
     })
     group.items.append({
         "id": "crit3ok++",
-        "content": ""
+        "content": "Les programmes démontrent, durant leurs exécutions, qu'ils réalisent correctement l'intégralité <br />du cahier des charges."
     })
     grade=(-1, " ")
 else:
