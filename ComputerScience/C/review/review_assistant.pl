@@ -35,10 +35,12 @@ texts=["## Bienvenu sur l'assistant online d'aide à la génération de rapport 
        "la production évaluée.",
        "## Avez-vous des derniers commentaires ou informations supplémentaires à donner ?"]
 
-forms=["Votre nom (relecteur) : <input type=text /> <br />"
-        "Nom de l'auteur de la production : <input type=text /> <br />"
-        "Nom du code ou projet relu : <input type=text />",
-        "Commentaires ouverts : <textarea></textarea>"]
+forms=["<table>"
+       "<tr><td>Votre nom (relecteur) </td><td> <input type=text /> </td></tr>"
+       "<tr><td>Nom de l'auteur de la production </td><td> <input type=text /> </td></tr>"
+       "<tr><td>Nom du code ou projet relu </td><td> <input type=text /> </td></tr>"
+       "</table>",
+       "Commentaires ouverts : <textarea></textarea>"]
 
 report=""
 
