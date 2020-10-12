@@ -54,6 +54,13 @@ texts=["## **Bienvenu sur l'assistant online d'aide à la génération de rappor
        "</ul>"
        "<b>Comment sont les productions transmises en terme de praticité "
        "d’installation, de compilation des sources et contenus annexes ?</b>",
+       "## **Fonctionnalités implantées dans les rendus**\n<br />\n"
+       "<u>Objectifs :</u>"
+       "<ul>"
+       "<li>Les fonctionnalités programmées se comportent comme attendu voire comme spécifié dans le cahier des charges.</li>"
+       "<li>Les productions réalisent exhaustivement les fonctionnalités souhaités.</li>"
+       "</ul>"
+       "<b></b>",
        "## Avez-vous des derniers commentaires ou informations supplémentaires à donner ?"]
 
 forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
