@@ -99,7 +99,7 @@ if step == 0:
     })
     group.items.append({
         "id": "crit1ok++",
-        "content": "Les contenus transmis sont à la fois concis et complets. Un maximum d'éléments sont générés automatiquement rendant la production minimale en taille lors de sa diffusion."
+        "content": "Les contenus transmis sont à la fois concis et complets. Un maximum d'éléments sont générés <br />automatiquement rendant la production minimale en taille lors de sa diffusion."
     })
     grade=(-1, " ")
 elif step == 1:
