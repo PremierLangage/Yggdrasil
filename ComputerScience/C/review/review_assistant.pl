@@ -60,7 +60,7 @@ else:
         report += "### derniers commentaires :\n" + response['comments']
     text=""
     form=""
-    grade=(100, "C'est fini !<br />"+"<pre>"+report+"</pre>")
+    grade=(100, "C'est fini !<br /><br /><u><b>Rapport généré en markdown :</b></u><br /><pre>"+report+"</pre>")
 
 ==
 
