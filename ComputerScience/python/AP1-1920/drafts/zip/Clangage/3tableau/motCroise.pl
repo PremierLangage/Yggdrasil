@@ -99,7 +99,7 @@ int place_noire(char plateau[][COLONNES],int x,int y){
 }
 
 int place_mot(char plateau[][COLONNES],int x,int y,char m[],char dest){
-  int i,j,l;
+  int i,l;
   /*verif*/
   l=strlen(m);
   if (dest=='h'){
@@ -140,7 +140,7 @@ if(place_noire(tab,x,y)==1)
  affiche(tab);
   scanf("%s",mot);
  scanf("%d %d",&x,&y);
- scanf(" %c",d);
+ scanf(" %c",&d);
  if(place_mot(tab,x,y,mot,d))
    printf("mot valide \n");
  else
