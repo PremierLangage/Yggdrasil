@@ -54,7 +54,15 @@ forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
        '<input type="radio" id="form_fail1" name="crit1" value="fail1"> '
        '<label for="fail1"> L\'auteur a laissé des éléments inutiles ou des fichiers mal identifiés dans ses contenus.</label><br />'
        '<input type="radio" id="form_ok1" name="crit1" value="ok1"> '
-       '<label for="ok1"> Les productions et leurs éléments sont corrects et bien identifiés.</label><br />',
+       '<label for="ok1"> Les productions et leurs éléments sont corrects et bien identifiés.</label><br />'
+       '<input type="radio" id="form_ok+1" name="crit1" value="ok+1"> '
+       '<label for="ok+1"> Les productions transmises sont particulièrement bien structurées et '
+       'la précision du nommage ne laisse aucun doute sur le contenu des '
+       'répertoires et fichiers.</label><br />'
+       '<input type="radio" id="form_ok++1" name="crit1" value="ok++1"> '
+       '<label for="ok++1"> Les contenus transmis sont à la fois concis et complets. Un maximum '
+       'd\'éléments sont générés automatiquement rendant la production minimale '
+       'en taille lors de sa diffusion.</label><br />',
        'Commentaires ouverts : <br /> '
        '<textarea id="form_comments" rows="6" cols="80" ></textarea>']
 
