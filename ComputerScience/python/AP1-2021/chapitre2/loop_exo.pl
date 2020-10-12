@@ -8,9 +8,7 @@ title= Boucle d'OR (repetable)
 
 text==
 
-Selon le resultat 
-
-Afficher les entiers  de {{b}} à {{b}}+X parcourus de {{s}} en {{s}} {{predtext}}.
+Afficher les entiers  de {{b}} à {{d}} parcourus de {{s}} en {{s}} {{predtext}}.
 
 Puis calculez et affichez {{operatortextb}} {{functeur[0]}} {{operatortexta}} .
 
@@ -91,6 +89,8 @@ while result==0 :
     predcode,predtext = random.choice(predicats)
     functeur = random.choice(functeurs)
     operatorcode,operatortextb,operatortexta = random.choice(operators)
+
+    d=b+random.randint(1,100)
 
     result=operatorcode( functools.reduce(functeur[2],[o for o in range(b,h,s) if predcode(o)], functeur[1]))
 
