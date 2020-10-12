@@ -41,7 +41,7 @@ forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
        "<tr><td>Nom du code ou <b>projet</b> relu </td><td> <input type=text /> </td></tr>"
        "</table>",
        "Commentaires ouverts : <br /> "
-       "<textarea rows="6" cols="80" ></textarea>"]
+       '<textarea rows="6" cols="80" ></textarea>']
 
 report=""
 
