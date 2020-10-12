@@ -36,7 +36,7 @@ texts=["## Bienvenu sur l'assistant online d'aide à la génération de rapport 
        "## Avez-vous des derniers commentaires ou informations supplémentaires à donner ?"]
 
 forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
-       '<tr><td>Votre <b>nom</b> (relecteur) </td><td> <input type=text id="form_nom" /> </td></tr>'
+       '<tr><td>Votre <b>nom</b> (en tant que relecteur) </td><td> <input type=text id="form_nom" /> </td></tr>'
        '<tr><td>Nom de l\'<b>auteur</b> de la production </td><td> <input type=text id="form_author" /> </td></tr>'
        '<tr><td>Nom du code ou <b>projet</b> relu </td><td> <input type=text id="form_code" /> </td></tr>'
        '</table>',
