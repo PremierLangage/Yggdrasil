@@ -8,9 +8,7 @@ title= Boucle d'OR (repetable)
 
 text==
 
-Lire un entier sur l'entré dans la variable X.
-
-X est toujours positif.
+Selon le resultat 
 
 Afficher les entiers  de {{b}} à {{b}}+X parcourus de {{s}} en {{s}} {{predtext}}.
 
