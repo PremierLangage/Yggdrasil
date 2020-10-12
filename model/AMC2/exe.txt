@@ -18,5 +18,5 @@
 -=["666","aujourd'hui", "def", "@lt;html@gt;"] 
 -=["!autres","truc%","pour ris"]
 - for
--=["list","int","dic"]
+-=["list","int","dict","float","bool","True","False"]
 
