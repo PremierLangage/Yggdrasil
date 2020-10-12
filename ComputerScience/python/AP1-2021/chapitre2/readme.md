@@ -91,6 +91,7 @@ Remarque:
 @ /ComputerScience/python/AP1-2021/chapitre2/syracuse.pl
 
 # Exercice 11 (Boucle d'OR (repetable))
- tag=InstructionsRepetitives|ForInRange
+# tag=InstructionsRepetitives|ForInRange
 # @ /ComputerScience/python/AP1-2021/chapitre2/loop_exo.pl
+
 
