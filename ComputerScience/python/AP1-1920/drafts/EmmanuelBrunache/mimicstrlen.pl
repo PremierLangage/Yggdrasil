@@ -7,7 +7,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 text==
 
-Ecrire une fonction `longueurchaine` qui reçoit une chaine de caractères renvoie le nombre de caractères de cette chaine. Elle fait comme la fonction strlen mais vous n'avez bien entendu pas le droit de l'utiliser.
+Ecrire une fonction `longueurchaine` qui reçoit une chaine de caractères et renvoie le nombre de caractères de cette chaine. Elle fait comme la fonction strlen mais vous n'avez bien entendu pas le droit de l'utiliser.
 ==
 code_before==
 
