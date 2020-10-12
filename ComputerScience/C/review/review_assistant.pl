@@ -41,7 +41,7 @@ forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
        "<tr><td>Nom du code ou <b>projet</b> relu </td><td> <input type=text /> </td></tr>"
        "</table>",
        "Commentaires ouverts : <br /> "
-       '<textarea rows="6" cols="80" ></textarea>']
+       '<textarea id="form_comments" rows="6" cols="80" ></textarea>']
 
 report=""
 
@@ -50,7 +50,7 @@ form=forms[step]
 ==
 
 evaluator==#|python|
-if (step < 1):
+if (step == 0):
     step += 1
     text=texts[step]
     form=forms[step]
