@@ -105,6 +105,11 @@ if step == 0:
     })
     grade=(-1, " ")
 elif step == 1:
+    report += "## Concision et propreté des rendus\n\n"
+    S = group.selection
+    for item in group.items:
+        if item['id'] == S:
+            report += item['content'] 
     step += 1
     text='<b><span style="color: darkred;">Étape '+str(step+1)+'/9</span></b><br/><br />\n\n'+texts[step]
     form=forms[step]
