@@ -7,6 +7,7 @@ soluce=@app2dr.py
 
 @ input0.txt
 @ input1.txt 
+@ input2.txt
 
 text=" . . "
 
