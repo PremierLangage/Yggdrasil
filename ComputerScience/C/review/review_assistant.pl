@@ -26,9 +26,12 @@ tag=review|code|relecture|validation|correction|évaluation|pairs
 
 before==#|python|
 
-#
+# step 
+step = 0
 
-text="Bienvenu sur l'assistant online d'aide à la génération de rapport pour la review de code."
+texts=["Bienvenu sur l'assistant online d'aide à la génération de rapport pour la review de code."]
+
+text=texts[step]
 
 form="{{ inputbox|component}}"
 ==
