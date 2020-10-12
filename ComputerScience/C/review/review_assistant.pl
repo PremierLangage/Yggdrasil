@@ -27,6 +27,10 @@ before==
 
 ==
 
+evaluator==
+grade=(100, "Et c'est ok!")
+==
+
 text==
 
 Salut !
