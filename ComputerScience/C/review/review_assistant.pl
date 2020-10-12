@@ -61,6 +61,34 @@ texts=["## **Bienvenu sur l'assistant online d'aide à la génération de rappor
        "<li>Les productions réalisent exhaustivement les fonctionnalités souhaités.</li>"
        "</ul>"
        "<b>Les programmes réalisent-ils correctement et exhaustivement la liste des fonctionnalités à traiter ?</b>",
+       "## **Utilisation et sécurité des programmes produits**\n<br />\n"
+       "<u>Objectifs :</u>"
+       "<ul>"
+       "<li>Produire des exécutables robustes contrôlant systématiquement données en entrées et exécutions.</li>"
+       "<li>Augmenter l’expérience de l’utilisateur en le conseillant ou en le corrigeant.</li>"
+       "</ul>"
+       "<b>Les programmes prévoient-ils exhaustivement tous les cas d'utilisation ?</b>",
+       "## **Nommage des éléments dans les productions rendues**\n<br />\n"
+       "<u>Objectifs :</u>"
+       "<ul>"
+       "<li>Adopter des règles de moindre surprise favorisant la compréhension lors de toutes relectures par autrui.</li>"
+       "<li>Produire du code réutilisable et maintenable par autrui.</li>"
+       "</ul>"
+       "<b>Les éléments (modules, fonctions, variables, constantes, etc...) des productions informatiques ont-ils des noms ou identifiants qui décrivent fidèlement leur contenu ?</b>",
+       "## **Efficacité et performance des productions rendues**\n<br />\n"
+       "<u>Objectifs :</u>"
+       "<ul>"
+       "<li>Produire des programmes efficaces.</li>"
+       "<li>Mettre en oeuvre des algorithmes standards et éprouvés.</li>"
+       "</ul>"
+       "<b>Les programmes déploient-ils des algorithmes raisonnables et efficaces ?</b>",
+       "## **Commentaires dans les sources des productions rendues**\n<br />\n"
+       "<u>Objectifs :</u>"
+       "<ul>"
+       "<li>Produire du code optimisé pour toutes relectures.</li>"
+       "<li>Produire du code réutilisable et maintenable par autrui.</li>"
+       "</ul>"
+       "<b>Les sources des programmes et productions sont elles correctement commentées ?</b>",
        "## Avez-vous des derniers commentaires ou informations supplémentaires à donner ?"]
 
 forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
@@ -77,6 +105,18 @@ forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
        ' {{ group|component }} \n<br />\n'
        ' Précisions le cas échéant (en particulier si vous avez des suggestions d\'amélioration) : <br /> '
        '<textarea id="form_comcrit3" rows="6" cols="80" ></textarea>',
+       ' {{ group|component }} \n<br />\n'
+       ' Précisions le cas échéant (en particulier si vous avez des suggestions d\'amélioration) : <br /> '
+       '<textarea id="form_comcrit4" rows="6" cols="80" ></textarea>',
+       ' {{ group|component }} \n<br />\n'
+       ' Précisions le cas échéant (en particulier si vous avez des suggestions d\'amélioration) : <br /> '
+       '<textarea id="form_comcrit5" rows="6" cols="80" ></textarea>',
+       ' {{ group|component }} \n<br />\n'
+       ' Précisions le cas échéant (en particulier si vous avez des suggestions d\'amélioration) : <br /> '
+       '<textarea id="form_comcrit6" rows="6" cols="80" ></textarea>',
+       ' {{ group|component }} \n<br />\n'
+       ' Précisions le cas échéant (en particulier si vous avez des suggestions d\'amélioration) : <br /> '
+       '<textarea id="form_comcrit7" rows="6" cols="80" ></textarea>',
        'Commentaires ouverts : <br /> '
        '<textarea id="form_comments" rows="6" cols="80" ></textarea>']
 
