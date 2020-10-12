@@ -121,6 +121,7 @@ forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
        '<textarea id="form_comments" rows="6" cols="80" ></textarea>']
 
 report=""
+report_html+=""
 
 text='<b><span style="color: darkred;">Étape '+str(step+1)+'/9</span></b><br/><br />\n\n'+texts[step]
 form=forms[step]
@@ -135,6 +136,7 @@ mois=["janvier", "février", "mars", "avril",
 
 if step == 0:
     report += "# Rapport de relecture de code\n\n"
+    report_html + = "<h1>Rapport de relecture de code</h1>"
     if len(response['code']) > 0:
         report += "Production soumise à la relecture : **"+response['code']+"**\n"
     if len(response['author']) > 0:
@@ -356,7 +358,9 @@ else:
         report += "## derniers commentaires :\n\n" + response['comments']
     text=""
     form=""
-    grade=(100, "C'est fini !<br /><br /><u><b>Rapport généré en markdown :</b></u><br /><br /><pre>"+report+"</pre>")
+    grade=(100, "C'est fini !<br /><br /><a href=""><b>Rapport généré en markdown</b></a><br /><br />"
+                "<br />"+report_html+"<br />"
+                "<pre>"+report+"</pre>")
 
 ==
 
