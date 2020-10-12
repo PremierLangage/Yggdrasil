@@ -65,7 +65,7 @@ mois=["janvier", "février", "mars", "avril",
       "mai", "juin", "juillet", "août", 
       "septembre", "octobre", "novembre", "décembre"]
 
-if (step == 0):
+if step == 0:
     report += "# Rapport de relecture de code\n\n"
     if len(response['code']) > 0:
         report += "Production soumise à la relecture : **"+response['code']+"**\n"
@@ -76,6 +76,11 @@ if (step == 0):
         report += " par **"+response['nom']+"**"
     report += " le "+str(date.today().day)+" "+mois[date.today().month - 1]+" "+str(date.today().year)
     report += "\n\n"
+    step += 1
+    text='<b><span style="color: darkred;">Étape '+str(step+1)+'/9</span></b><br/><br />\n\n'+texts[step]
+    form=forms[step]
+    grade=(-1, " ")
+elif step == 1:
     step += 1
     text='<b><span style="color: darkred;">Étape '+str(step+1)+'/9</span></b><br/><br />\n\n'+texts[step]
     form=forms[step]
