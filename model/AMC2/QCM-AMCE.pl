@@ -89,7 +89,7 @@ from AMC import parse_AMC_TXT
 from aleaq import buildquestion, onefromeachgroup
 ######
 
-
+question=""
 for i in range(10):
     try:
         filename=f"question{i}.txt"
@@ -102,7 +102,7 @@ for i in range(10):
 
 ######
 list_questions = parse_AMC_TXT(questions)
-nbstep=3
+
 if "onepergroup" in globals() and onepergroup :
     list_questions=onefromeachgroup(list_questions)
 elif 'nbstep' in globals():
