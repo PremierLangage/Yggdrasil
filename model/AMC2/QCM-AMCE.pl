@@ -134,7 +134,7 @@ for i, q in enumerate(list_questions):
         cst.setdata_from_textDR(q['items'][0])
         comp.append(cst)
 
-text += questions
+text += "qeusuont :" +questions
 ==
 
 display=
