@@ -1,7 +1,7 @@
 author=Emmanuel Brunache
 
 
-title=Strlen
+title=Longueur de chaine
 tag=string
 extends=/ComputerScience/C/template/std_progC.pl
 
