@@ -175,7 +175,7 @@ if step == 0:
     grade=(-1, " ")
 elif step == 1:
     report += "## Concision et propreté des rendus\n\n"
-    report_html += "<h2>Concision et propreté des rendus</h2><br />"
+    report_html += "<b>Concision et propreté des rendus</b><br />"
     S = group.selection
     for item in group.items:
         if item['id'] == S:
@@ -207,7 +207,7 @@ elif step == 1:
     grade=(-1, " ")
 elif step == 2:
     report += "## Installation et compilation des sources transmises\n\n"
-    report_html += "<h2>Installation et compilation des sources transmises</h2><br />"
+    report_html += "<b>Installation et compilation des sources transmises</b><br />"
     S = group.selection
     for item in group.items:
         if item['id'] == S:
@@ -239,7 +239,7 @@ elif step == 2:
     grade=(-1, " ")
 elif step == 3:
     report += "## Fonctionnalités implantées dans les rendus\n\n"
-    report_html += "<h2>Fonctionnalités implantées dans les rendus</h2><br />"
+    report_html += "<b>Fonctionnalités implantées dans les rendus</b><br />"
     S = group.selection
     for item in group.items:
         if item['id'] == S:
@@ -271,7 +271,7 @@ elif step == 3:
     grade=(-1, " ")
 elif step == 4:
     report += "## Utilisations et sécurité des programmes produits\n\n"
-    report_html += "<h2>Utilisations et sécurité des programmes produits</h2><br />"
+    report_html += "<b>Utilisations et sécurité des programmes produits</b><br />"
     S = group.selection
     for item in group.items:
         if item['id'] == S:
@@ -303,7 +303,7 @@ elif step == 4:
     grade=(-1, " ")
 elif step == 5:
     report += "## Nommage des éléments dans les productions rendues\n\n"
-    report_html += "<h2>Nommage des éléments dans les productions rendues</h2><br />"
+    report_html += "<b>Nommage des éléments dans les productions rendues</b><br />"
     S = group.selection
     for item in group.items:
         if item['id'] == S:
@@ -335,7 +335,7 @@ elif step == 5:
     grade=(-1, " ")
 elif step == 6:
     report += "## Efficacité et performance des productions rendues\n\n"
-    report_html += "<h2>Efficacité et performance des productions rendues</h2><br />"
+    report_html += "<b>Efficacité et performance des productions rendues</b><br />"
     S = group.selection
     for item in group.items:
         if item['id'] == S:
@@ -367,7 +367,7 @@ elif step == 6:
     grade=(-1, " ")
 elif step == 7:
     report += "## Commentaires dans les sources des productions rendues\n\n"
-    report_html += "<h2>Commentaires dans les sources des productions rendues</h2><br />"
+    report_html += "<b>Commentaires dans les sources des productions rendues</b><br />"
     S = group.selection
     for item in group.items:
         if item['id'] == S:
