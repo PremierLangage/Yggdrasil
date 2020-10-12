@@ -50,8 +50,11 @@ form=forms[step]
 ==
 
 evaluator==#|python|
-
 from datetime import date
+
+mois=["janvier", "février", "mars", "avril", 
+      "mai", "juin", "juillet", "août", 
+      "septembre", "octobre", "novembre", "décembre"]
 
 if (step == 0):
     report += "# Review de code\n\n"
@@ -62,7 +65,7 @@ if (step == 0):
     report += "Relecture opérée"
     if len(response['nom']) > 0:
         report += " par **"+response['nom']+"**"
-    report += " le "+str(date.today().day)+"/"+str(date.today().month)+"/"+str(date.today().year % 100)
+    report += " le "+str(date.today().day)+"/"+mois[date.today().month - 1]+"/"+str(date.today().year % 100)
     report += "\n"
     step += 1
     text=texts[step]
