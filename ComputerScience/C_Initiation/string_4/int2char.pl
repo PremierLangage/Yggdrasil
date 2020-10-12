@@ -4,7 +4,7 @@ author=DR+ZIP
 
 
 
-
+tag=string
 title=int vers char
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
