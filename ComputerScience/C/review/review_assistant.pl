@@ -137,7 +137,7 @@ elif step == 1:
     })
     group.items.append({
         "id": "crit2ok+",
-        "content": "Un makefile propre, lisible et complet permet la compilation de toutes les sources sans aucun warning <br />et avec les drapeaux -Wall et -ansi (voire -pedantic). Le makefile gère correctement les dépendances et intègre une règle pour le nettoyage des produits de compilation."
+        "content": "Un makefile propre, lisible et complet permet la compilation de toutes les sources sans aucun warning <br />et avec les drapeaux -Wall et -ansi (voire -pedantic). Le makefile gère correctement les dépendances <br />et intègre une règle pour le nettoyage des produits de compilation."
     })
     group.items.append({
         "id": "crit2ok++",
