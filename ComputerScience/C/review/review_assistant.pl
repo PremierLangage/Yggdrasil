@@ -47,7 +47,7 @@ forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
 
 report=""
 
-text=texts[step]
+text='<b><span style="color: darkred;">Étape '+str(step+1)+'/9</span></b>'+texts[step]
 form=forms[step]
 ==
 
