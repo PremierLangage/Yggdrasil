@@ -59,7 +59,7 @@ mois=["janvier", "février", "mars", "avril",
 if (step == 0):
     report += "# Rapport de relecture de code\n\n"
     if len(response['code']) > 0:
-        report += "Relecture de/du **"+response['code']+"**\n"
+        report += "Production soumise à la relecture : **"+response['code']+"**\n"
     if len(response['author']) > 0:
         report += "Projet/code produit par **"+response['author']+"**\n"
     report += "Relecture opérée"
