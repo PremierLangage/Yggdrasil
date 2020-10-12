@@ -35,7 +35,7 @@ texts=["## Bienvenu sur l'assistant online d'aide à la génération de rapport 
        "la production évaluée.",
        "## Avez-vous des derniers commentaires ou informations supplémentaires à donner ?"]
 
-forms=['<table style="border-spacing: 30px;">'
+forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
        "<tr><td>Votre nom (relecteur) </td><td> <input type=text /> </td></tr>"
        "<tr><td>Nom de l'auteur de la production </td><td> <input type=text /> </td></tr>"
        "<tr><td>Nom du code ou projet relu </td><td> <input type=text /> </td></tr>"
