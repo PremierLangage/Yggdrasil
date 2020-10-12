@@ -50,7 +50,8 @@ form=forms[step]
 ==
 
 evaluator==#|python|
-import datetime import date
+
+from datetime import date
 
 if (step == 0):
     report += "# Review de code\n\n"
