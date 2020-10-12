@@ -8,8 +8,6 @@ title= Boucle d'OR (repetable)
 
 text==
 
-Cet exercice est un peu bizarre et vous devez produire la même "solution" que le prof ...
-
 Lire un entier sur l'entré dans la variable X.
 
 X est toujours positif.
@@ -18,8 +16,6 @@ Afficher les entiers  de {{b}} à {{b}}+X parcourus de {{s}} en {{s}} {{predtext
 
 Puis calculez et affichez {{operatortextb}} {{functeur[0]}} {{operatortexta}} .
 
-
-*seed={{seed}}*
 ==
 
 mplsoluce0==
@@ -42,7 +38,7 @@ import functools
 random.seed(seed)
 predicats,functeurs,operators= loopgen.getStuff()
 b=random.randint(-30,100)
-h=int(input())
+h=b+int(input())
 s= random.randint(1,7) if h>b else random.randint(-3,-1)
 predcode,predtext = random.choice(predicats)
 functeur = random.choice(functeurs)
