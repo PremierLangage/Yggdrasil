@@ -61,7 +61,7 @@ if (step == 0):
     report += "Relecture opérée"
     if len(response['nom']) > 0:
         report += " par **"+response['nom']+"**"
-    report += " le "+
+    report += " le "+str(date.today().day)+"/"+str(date.today().month)+"/"+str(date.today().year % 100)
     report += "\n"
     step += 1
     text=texts[step]
