@@ -136,7 +136,7 @@ mois=["janvier", "février", "mars", "avril",
 
 if step == 0:
     report += "# Rapport de relecture de code\n\n"
-    report_html + = "<h1>Rapport de relecture de code</h1>"
+    report_html += "<h1>Rapport de relecture de code</h1>"
     if len(response['code']) > 0:
         report += "Production soumise à la relecture : **"+response['code']+"**\n"
     if len(response['author']) > 0:
