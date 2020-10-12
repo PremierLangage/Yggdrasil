@@ -52,7 +52,7 @@ texts=["## **Bienvenu sur l'assistant online d'aide à la génération de rappor
        "<li>Le relecteur/client peut installer/compiler sans aucun effort.</li>"
        "<li>Fournir un makefile permettant une gestion fine des contenus.</li>"
        "</ul>"
-       "<b>Comment sont les productions transmises en terme de praticité"
+       "<b>Comment sont les productions transmises en terme de praticité "
        "d’installation, de compilation des sources et contenus annexes ?</b>",
        "## Avez-vous des derniers commentaires ou informations supplémentaires à donner ?"]
 
