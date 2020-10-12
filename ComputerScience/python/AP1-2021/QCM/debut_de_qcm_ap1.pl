@@ -50,7 +50,7 @@ ff==
 
 
 
-title= Cher enseignant vous n'avez pas changer le "title" 
+title= QCM PL AP1
 
 @ falque.txt [question7.txt]
 
