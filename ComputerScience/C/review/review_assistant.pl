@@ -136,16 +136,22 @@ mois=["janvier", "février", "mars", "avril",
 
 if step == 0:
     report += "# Rapport de relecture de code\n\n"
-    report_html += "<h1>Rapport de relecture de code</h1>"
+    report_html += "<h1>Rapport de relecture de code</h1><br />"
     if len(response['code']) > 0:
         report += "Production soumise à la relecture : **"+response['code']+"**\n"
+        report_html += "Production soumise à la relecture : <b>"+response['code']+"</b><br />"
     if len(response['author']) > 0:
         report += "Projet/code produit par **"+response['author']+"**\n"
+        report_html += "Projet/code produit par <b>"+response['author']+"</b><br />"
     report += "Relecture opérée"
+    report_html += "Relecture opérée"
     if len(response['nom']) > 0:
         report += " par **"+response['nom']+"**"
+        report_html += " par <b>"+response['nom']+"</b>"
     report += " le "+str(date.today().day)+" "+mois[date.today().month - 1]+" "+str(date.today().year)
+    report_html += " le "+str(date.today().day)+" "+mois[date.today().month - 1]+" "+str(date.today().year)
     report += "\n\n"
+    report_html += "<br /><br />"
     step += 1
     text='<b><span style="color: darkred;">Étape '+str(step+1)+'/9</span></b><br/><br />\n\n'+texts[step]
     form=forms[step]
@@ -169,12 +175,15 @@ if step == 0:
     grade=(-1, " ")
 elif step == 1:
     report += "## Concision et propreté des rendus\n\n"
+    report_html += "<h2>Concision et propreté des rendus</h2><br />"
     S = group.selection
     for item in group.items:
         if item['id'] == S:
             report += item['content']+"\n\n"
+            report_html += item['content']+"<br /><br />"
     if 'comcrit1' in response and len(response['comcrit1']) > 0:
         report += response['comcrit1']+"\n\n"
+        report_html += response['comcrit1']+"<br /><br />"
     step += 1
     text='<b><span style="color: darkred;">Étape '+str(step+1)+'/9</span></b><br/><br />\n\n'+texts[step]
     form=forms[step]
@@ -202,8 +211,10 @@ elif step == 2:
     for item in group.items:
         if item['id'] == S:
             report += item['content']+"\n\n"
+            report_html += item['content']+"<br /><br />"
     if 'comcrit2' in response and len(response['comcrit2']) > 0:
         report += response['comcrit2']+"\n\n"
+        report_html += response['comcrit2']+"<br /><br />"
     step += 1
     text='<b><span style="color: darkred;">Étape '+str(step+1)+'/9</span></b><br/><br />\n\n'+texts[step]
     form=forms[step]
@@ -231,6 +242,7 @@ elif step == 3:
     for item in group.items:
         if item['id'] == S:
             report += item['content']+"\n\n"
+            report_html += item['content']+"<br /><br />"
     if 'comcrit3' in response and len(response['comcrit3']) > 0:
         report += response['comcrit3']+"\n\n"
     step += 1
@@ -260,6 +272,7 @@ elif step == 4:
     for item in group.items:
         if item['id'] == S:
             report += item['content']+"\n\n"
+            report_html += item['content']+"<br /><br />"
     if 'comcrit4' in response and len(response['comcrit4']) > 0:
         report += response['comcrit4']+"\n\n"
     step += 1
@@ -289,6 +302,7 @@ elif step == 5:
     for item in group.items:
         if item['id'] == S:
             report += item['content']+"\n\n"
+            report_html += item['content']+"<br /><br />"
     if 'comcrit5' in response and len(response['comcrit5']) > 0:
         report += response['comcrit5']+"\n\n"
     step += 1
@@ -318,6 +332,7 @@ elif step == 6:
     for item in group.items:
         if item['id'] == S:
             report += item['content']+"\n\n"
+            report_html += item['content']+"<br /><br />"
     if 'comcrit6' in response and len(response['comcrit6']) > 0:
         report += response['comcrit6']+"\n\n"
     step += 1
@@ -347,6 +362,7 @@ elif step == 7:
     for item in group.items:
         if item['id'] == S:
             report += item['content']+"\n\n"
+            report_html += item['content']+"<br /><br />"
     if 'comcrit7' in response and len(response['comcrit7']) > 0:
         report += response['comcrit7']+"\n\n"
     step += 1
