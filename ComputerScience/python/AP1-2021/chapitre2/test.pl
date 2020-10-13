@@ -1,6 +1,6 @@
 
 
-extends=/ComputerScience/python/AP1-1920/templates/prosoluce.pl
+extends=/ComputerScience/python/AP1-1920/templates/pLsoluce.pl
 
 @ loopgen.py
 title= Boucle d'OR (repetable)
