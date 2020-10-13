@@ -44,6 +44,8 @@ tag=boucle|type|saisieControlee|while|ForInRange
 
 # Exercice 5 - CouplesXY.pl
 
+tag=boucle|bouclesImbriquées|ChaineCaracteres
+
 @ /ComputerScience/python/AP1-2021/chapitre3/CouplesXY.pl
 
 # Exercice 6 - Pointsdudisque.pl
