@@ -17,8 +17,7 @@ Latex:1
      6 }
 
 ![image](https://protondo.github.io/assets/portfolio.png)
-![image](https://protondo.github.io/assets/portfolio.png){:height="700px" width="400px"}
-
+<img src="https://protondo.github.io/assets/portfolio.png" alt="Pablo Rotondo">
 
 - 2
 + 3
