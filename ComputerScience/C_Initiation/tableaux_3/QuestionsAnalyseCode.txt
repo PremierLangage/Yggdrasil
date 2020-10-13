@@ -16,7 +16,7 @@ Latex:1
 
      6 }
 
-![image](https://protondo.github.io/assets/images/your-image.jpg)
+![image](https://protondo.github.io/assets/portfolio.png)
 
 
 - 2
