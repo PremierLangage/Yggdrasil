@@ -98,6 +98,8 @@ int main(int argc, char* argv[]){
 	
 	raun(LI,COL,N,tab);
 
+	display(LI,COL,N,tab);
+
 	return 0;
 }
 ==
