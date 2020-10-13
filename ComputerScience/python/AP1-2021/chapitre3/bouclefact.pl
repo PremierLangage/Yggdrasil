@@ -1,7 +1,7 @@
 
 #author=Zip
 
-tag=boucle|conditionnelles
+tag=boucle|conditionnelle
 
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
@@ -83,6 +83,7 @@ mplsoluce5==
 nul
 1
 ==
+
 
 
 
