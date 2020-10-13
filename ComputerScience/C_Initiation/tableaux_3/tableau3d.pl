@@ -88,9 +88,14 @@ int main(){
 
  	int LI,COL,N;
 
-    while ((LI = rand()%5) < 1);
-    while ((COL = rand()%5) < 1);
-    while ((N = rand()%5) < 1);
+	while(LI<1)
+		 LI = rand()%5;
+
+	while(COL<1)
+		 COL = rand()%5;
+
+	while(N<1)
+		 N = rand()%5;
 
 	int tab[LI][COL][N];
 	
