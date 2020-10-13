@@ -19,7 +19,7 @@ Ecrire une fonction `raun(....)` qui :
 Ecrire une fonction `display(....)` qui : 
 
 <ul>
-  <li>reçoit en paramètre un tableau à <u>trois dimensions</u> et ne retourne rien</li>
+  <li>reçoit en paramètre un tableau à <u>trois dimensions</u> et retourne un `1` si les paramètres sont supérieurs à `0`, sinon retourne `0`</li>
   <li>affiche le tableau de la manière suivante : <br> Ligne Z || Colonne X {valeur,valeur} | Colonne Y {valeur,valeur} |</li>
 </ul>
 
