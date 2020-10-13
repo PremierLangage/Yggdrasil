@@ -13,6 +13,14 @@
 +=["<","<=","==","!="]
 -=["and","or","not","=","+","*"]
 
+=**[group=operateurs_jf,nbg=3,nbb=4]Lesquels de ces opérateurs sont des opérateurs logiques ?
+-=["<","<=","==","!=","=","+","*"]
++=["and","or","not"]
+
+**[group=operateurs_jf,nbg=3,nbb=4]Lesquels de ces opérateurs ne sont ni des opérateurs logiques ni des opérateurs de comparaison?
+-=["<","<=","==","!=","and","or","not"]
++=["=","+","*"]
+
 **Dans quels cas suivants utiliseriez-vous une boucle for plutôt qu'une boucle while ?
 +Pour afficher 14 fois "Pikachu"
 +Pour compter le nombre d'entiers positifs inférieurs à 30 qui sont divisibles par 3
