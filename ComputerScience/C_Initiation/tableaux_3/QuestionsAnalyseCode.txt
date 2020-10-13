@@ -15,6 +15,7 @@ Latex:1
      5         scanf("%d", tab[i]);
 
      6 }
+<img src="/assets/portfolio.png" alt="Pablo Rotondo">
 
 
 - 2
@@ -23,7 +24,6 @@ Latex:1
 + 5
 - aucune de celles-ci
 
-<img src="/assets/portfolio.png" alt="Pablo Rotondo">
 
 ** On définit deux tableaux de dix int par :
 
