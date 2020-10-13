@@ -92,13 +92,13 @@ int main(){
 	N=0;
 
 	while(LI<1)
-		 LI = rand()%5;
+		 LI = rand()%(rand()%5);
 
 	while(COL<1)
-		 COL = rand()%5;
+		 COL = rand()%(rand()%7);
 
 	while(N<1)
-		 N = rand()%5;
+		 N = rand()%(rand()%4);
 
 	int tab[LI][COL][N];
 	
