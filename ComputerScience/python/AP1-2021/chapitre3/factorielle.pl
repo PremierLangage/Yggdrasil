@@ -6,6 +6,8 @@ tag=boucle|bouclesImbriquees
 
 title = Factorielle
 
+taboo=while
+
 text==
 On suppose qu'il existe une variable `n` de valeur entière strictement positive.  
 
@@ -60,6 +62,7 @@ del math
 # for i in range(n+1):
 #    print(str(i) + "!" + " = " + str(f))
 #    f*=i+1
+
 
 
 
