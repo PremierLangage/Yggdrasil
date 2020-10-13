@@ -118,6 +118,9 @@ def boucleprincipale():
                         print("Votre mise ?")
                         try:
                             mise=int(input("€ "))
+                            if mise not in [1,2,4]:
+                                mise=None
+                                print("Vous ne pouvez miser que 1 2 ou 4€")
                         except Exception as e:
                             print(" Je n'ai pas compris !")
                             mise=None
@@ -172,4 +175,5 @@ def main(args):
 if __name__ == '__main__':
     import sys
     sys.exit(main(sys.argv))
+
 
