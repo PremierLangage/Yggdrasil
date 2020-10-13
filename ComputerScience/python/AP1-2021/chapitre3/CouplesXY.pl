@@ -43,6 +43,8 @@ p=int(input("nombre  de lignes"))
 while(p<0):
     p=int(input("nombre  de lignes"))
 q=int(input("nombre de colonnes"))
+while(q<0):
+
 for i in range(p):
     ligne=""
     for j in range(q):
