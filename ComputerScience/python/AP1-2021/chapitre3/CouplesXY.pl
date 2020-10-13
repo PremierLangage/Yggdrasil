@@ -42,8 +42,10 @@ soluce==
 p=int(input("nombre  de lignes"))
 while(p<0):
     p=int(input("nombre  de lignes"))
+
 q=int(input("nombre de colonnes"))
 while(q<0):
+    q=int(input("nombre de colonnes"))
 
 for i in range(p):
     ligne=""
@@ -72,6 +74,7 @@ nul
 0
 0
 ==
+
 
 
 
