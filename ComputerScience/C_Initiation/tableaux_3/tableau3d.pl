@@ -90,9 +90,9 @@ int main(){
 	LI=0;
 	COL=0;
 	N=0;
-	var1=rand()%10;
+	var1=rand()%7;
 	var2=rand()%8;
-	var3=rand()%15;
+	var3=rand()%5;
 
 	while(LI<1)
 		 LI = rand()%var2;
