@@ -12,13 +12,13 @@ Pour l'instant j'ai (Marie) fait une copie locale de la feuille de tp principale
 Ci-dessous, une description de chaque exercice et des changements effectués par rapport à la mouture précédente (ainsi que quelques commentaires).
 
 # Exercice 1
-tag=boucle|bouclesImbriquees
+tag=boucle
 @ /ComputerScience/python/AP1-2021/chapitre3/factorielle.pl
 
 **Changements:**
     - 
 **Remarques/commentaires:**
-    -
+    -il n'est pas possible d'interdire l'utilisation du while 
 
 # Exercice 2
 tag=Boucle|Conditionnelles
