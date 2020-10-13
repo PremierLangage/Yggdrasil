@@ -5,7 +5,7 @@
 
 * Considérons le code suivant :
 
-`a = 5<br>
+'a = 5<br>
 b = 0<br>
 if a < 0:<br>
     b = 1<br>
@@ -13,7 +13,7 @@ elif a > 0 and a < 5:<br>
     b = 2<br>
 else:<br>
     b = 3<br>
-`
+'
 Quelle est la valeur de b à l'issue de son exécution ?
 +3
 -1
