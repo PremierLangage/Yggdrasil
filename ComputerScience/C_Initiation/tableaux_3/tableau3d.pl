@@ -89,14 +89,6 @@ int main(int argc, char* argv[]){
  	COL=atoi(argv[2]);
  	N=atoi(argv[3]);
 
- 	// On commence par initialiser le générateur de nombre pseudo-aléatoires.
-    //srand(time(NULL));
-
-
-    //while ((LI = rand()%5) < 1);
-    //while ((COL = rand()%5) < 1);
-    //while ((N = rand()%5) < 1);
-
 	int tab[LI][COL][N];
 	
 	raun(LI,COL,N,tab);
