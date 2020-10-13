@@ -12,7 +12,7 @@ Pour l'instant j'ai (Marie) fait une copie locale de la feuille de tp principale
 Ci-dessous, une description de chaque exercice et des changements effectués par rapport à la mouture précédente (ainsi que quelques commentaires).
 
 # Exercice 1
-tag=InstructionsRepetitives|ForInRange|VariableIteration
+tag=boucle|bouclesImbriquees
 @ /ComputerScience/python/AP1-2021/chapitre3/factorielle.pl
 
 **Changements:**
@@ -115,5 +115,6 @@ tag=boucle|float|somme|math
     - Il plante problème de before inexistant à mon avis pour initialiser des variables
     - Problème fixé il fonctionne mais il est compliqué donc en refonte !
     - Supprimé de la feuille pour cette année...
+
 
 
