@@ -12,9 +12,12 @@ inputbox.appearance = outline
 
 Ans= Entree du programme
 
-editor.code = Votre code 
+editor.code = Votre code du projet
 
 form==
 {{ inputbox | component }}
 {{editor|component}}
 ==
+
+evaluator==
+
