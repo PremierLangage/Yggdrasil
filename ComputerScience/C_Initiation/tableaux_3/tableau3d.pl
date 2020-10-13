@@ -55,6 +55,7 @@ void display (.......) {
 ==
 
 solution==
+
 void raun(int LI, int COL, int N, int tab[][COL][N]){
 	
 	int i,j,k;
