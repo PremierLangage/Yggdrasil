@@ -23,6 +23,8 @@ editor.code ==
 
 ==
 
+editor.code=@ app2.py
+
 before=
 
 
