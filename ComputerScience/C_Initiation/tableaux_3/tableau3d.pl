@@ -86,19 +86,22 @@ int main(){
     /* On commence par initialiser le générateur de nombre pseudo-aléatoires.*/
     srand(time(NULL));
 
- 	int LI,COL,N;
+ 	int LI,COL,N,var1,var2,var3;
 	LI=0;
 	COL=0;
 	N=0;
+	var1=rand()%10;
+	var2=rand()%8;
+	var3=rand()%15;
 
 	while(LI<1)
-		 LI = rand()%(rand()%5);
+		 LI = rand()%var2;
 
 	while(COL<1)
-		 COL = rand()%(rand()%7);
+		 COL = rand()%var3;
 
 	while(N<1)
-		 N = rand()%(rand()%4);
+		 N = rand()%var1;
 
 	int tab[LI][COL][N];
 	
