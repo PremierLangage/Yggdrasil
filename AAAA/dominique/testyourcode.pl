@@ -23,6 +23,9 @@ editor.code ==
 
 ==
 
+soluce=@ app2dr.py
+
+
 editor.code=@ app2dr.py
 
 before=
