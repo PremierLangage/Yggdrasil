@@ -16,7 +16,7 @@ Latex:1
 
      6 }
 
-![image](https://protondo.github.io/assets/portfolio.png)
+![image](https://protondo.github.io/assets/portfolio.png =100x20)
 
 - 2
 + 3
