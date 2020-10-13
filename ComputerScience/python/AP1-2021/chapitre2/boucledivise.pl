@@ -4,7 +4,7 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
-tag=InstructionsRepetitives|ForInRange
+tag=InstructionsRepetitives|ForInRange|for
 
 
 title = Liste des diviseurs
@@ -22,8 +22,8 @@ before==
 
 text==  
 
-Ecrire un programme qui lit un  entier  strictement positif et affiche,
- **un par ligne**, chacun de ses diviseurs en ordre croissant.
+Ecrire un programme qui lit un entier strictement positif et affiche,
+ **un** par **ligne**, chacun de ses diviseurs en ordre croissant.
 Le programme affiche ensuite le nombre de diviseurs.
 
 Si l'entier est négatif ou nul, on ne fait rien !
@@ -61,6 +61,7 @@ Invalide aussi |-42
 long | 114593
 Nombreux | 510510 
 ==
+
 
 
 
