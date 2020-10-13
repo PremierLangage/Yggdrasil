@@ -8,12 +8,13 @@ soluce=@app2dr.py
 @ input0.txt
 @ input1.txt 
 @ input2.txt
+@ input3.txt
 
 text=" . . "
 
 before==
 
-tests=["Prompt : quelle invite de commande ?","Quelle version ?","Version2"]
+tests=["Prompt : quelle invite de commande ?","Quelle version ?","Version2", "version1" ]
 
 for i,t in enumerate(tests): 
     filename=f"input{i}.txt"
@@ -24,6 +25,7 @@ for i,t in enumerate(tests):
 
 
 ==
+
 
 
 
