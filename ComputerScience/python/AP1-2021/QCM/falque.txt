@@ -51,3 +51,9 @@
 +Pour calculer la somme des entiers inférieurs à 18
 -Pour calculer l'entier r tel que r soit la racine carrée entière de 22
 -Pour déterminer s'il existe un entier inférieur à 40 qui vérifie une certaine condition
+
+*Comment écrire une condition (un booléen) qui vaut {\tt true} si la variable i appartient à {1} U {3} U {5} U [15 ; 16] ?
++i == 1 or i == 3 or i == 5 or (i >= 15 and i <= 16)
+-(i == 1 and i == 3) or i == 5 or (i >= 15 and i <= 16)
+-i == 1 or (i == 3 and i == 5) or (i >= 15 and i <= 16)
+-i == 1 or i == 3 or i == 5 or i >= 15 or i <= 16
