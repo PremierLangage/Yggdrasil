@@ -10,7 +10,7 @@ title = Points du disque
 
 taboo==
 'for'
-=
+
 
 text==  
 
