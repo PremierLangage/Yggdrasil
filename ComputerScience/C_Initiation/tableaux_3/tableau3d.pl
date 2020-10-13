@@ -56,46 +56,53 @@ void display (.......) {
 
 solution==
 
-void raun(int LI, int COL, int N, int tab[][COL][N]){
+int raun(int LI, int COL, int N, int tab[][COL][N]){
 	
 	int i,j,k;
 	int var=1;
 
-	for(i=0;i<LI;i=i+1)
-		for(j=0;j<COL;j=j+1)
-			for(k=0;k<N;k=k+1){
-				tab[i][j][k]= var;
-				var=var+1;
-			}
+	if (LI>0 && COL>0 && N >0){
+		for(i=0;i<LI;i=i+1)
+			for(j=0;j<COL;j=j+1)
+				for(k=0;k<N;k=k+1){
+					tab[i][j][k]= var;
+					var=var+1;
+				}
+		return 1;
+	}
 
-	return;
+	return 0;
 }
 
-void display(int LI, int COL, int N, int tab[][COL][N]){
+int display(int LI, int COL, int N, int tab[][COL][N]){
 
 	int i,j,k;
 
-	for(i=0;i<LI;i=i+1){
-		printf("Ligne %d || ",i+1);
-		for(j=0;j<COL;j=j+1){
-			printf("Colonne %d ",j+1);
-				for(k=0;k<N;k=k+1){
-					if(k==0) printf("{");
-					printf("%d",tab[i][j][k]);
-					if(k==(N-1))
-						printf("}");
-					else
-						printf(",");
-				}
-			if (j==(COL-1))
-				printf(" |\n");
-			else
-				printf(" | ");
+	if (LI>0 && COL>0 && N >0){
+		for(i=0;i<LI;i=i+1){
+			printf("Ligne %d || ",i+1);
+			for(j=0;j<COL;j=j+1){
+				printf("Colonne %d ",j+1);
+					for(k=0;k<N;k=k+1){
+						if(k==0) printf("{");
+						printf("%d",tab[i][j][k]);
+						if(k==(N-1))
+							printf("}");
+						else
+							printf(",");
+					}
+				if (j==(COL-1))
+					printf(" |\n");
+				else
+					printf(" | ");
+			}
 		}
+		return 1;
 	}
 
-	return;
+	return 0;
 }
+
 ==
 
 codeafter==
