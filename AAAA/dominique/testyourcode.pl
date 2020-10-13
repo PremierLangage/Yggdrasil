@@ -14,7 +14,7 @@ inputbox.appearance = outline
 
 editor.code = Votre code du projet
 
-text=@ grader.py
+
 
 
 form==
