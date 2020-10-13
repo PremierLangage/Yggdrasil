@@ -44,3 +44,10 @@
 +=
 ++
 +*
+
+**Dans quels cas suivants utiliseriez-vous une boucle for plutôt qu'une boucle while ?
++Pour afficher 14 fois "Pikachu"
++Pour compter le nombre d'entiers positifs inférieurs à 30 qui sont divisibles par 3
++Pour calculer la somme des entiers inférieurs à 18
+-Pour calculer l'entier r tel que r soit la racine carrée entière de 22
+-Pour déterminer s'il existe un entier inférieur à 40 qui vérifie une certaine condition
