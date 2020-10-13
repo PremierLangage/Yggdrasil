@@ -8,9 +8,6 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 title = Points du disque
 
-taboo='for'
-
-
 text==  
 
 Ecrire un programme qui force la saisie d'un réel strictement positif `d`
