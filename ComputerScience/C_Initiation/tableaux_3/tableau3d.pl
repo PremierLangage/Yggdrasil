@@ -83,7 +83,7 @@ codeafter==
 
 int main(int argc, char* argv[]){
 
-    // On commence par initialiser le générateur de nombre pseudo-aléatoires.
+    /* On commence par initialiser le générateur de nombre pseudo-aléatoires.*/
     srand(time(NULL));
 
  	int LI,COL,N;
