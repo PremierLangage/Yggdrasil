@@ -16,8 +16,8 @@ Latex:1
 
      6 }
 
-![image](https://protondo.github.io/assets/portfolio.png)<!-- .element height="50%" width="50%" -->
 ![image](https://protondo.github.io/assets/portfolio.png)
+![image](https://protondo.github.io/assets/portfolio.png){:height="700px" width="400px"}
 
 
 - 2
