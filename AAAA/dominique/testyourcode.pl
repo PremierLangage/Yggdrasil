@@ -1,6 +1,6 @@
 
 
-extends= /ComputerScience/python/AP1-1920/templates/prosoluce.pl
+extends= testapp2.pl
 
 
 title=
