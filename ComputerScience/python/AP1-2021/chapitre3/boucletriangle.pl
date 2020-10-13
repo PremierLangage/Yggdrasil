@@ -1,5 +1,5 @@
 
-tag=Boucle|Type|SaisieControlee|While|ForInRange
+tag=boucle|type|saisieControlee|while|ForInRange
 
 author=
 
@@ -81,6 +81,7 @@ une ligne
 1
 1
 ==
+
 
 
 
