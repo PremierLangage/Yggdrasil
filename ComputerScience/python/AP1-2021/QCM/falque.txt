@@ -2,3 +2,20 @@
 =**[nbb=2,nbg=3] Dans un programme, quels sont les noms de variables que vous utiliseriez pour gérer des données liés au temps? 
 +=["tmp","cmpt","hours","heures","years","annees","days","jours","mnt","minutes","sec","seconds","period","duree"]
 -=["and","if","for","while","variable","variable_3","x","a","toto","chat"]
+
+* Considérons le code suivant :
+<pre><code>
+a = 5
+b = 0
+if a < 0:
+    b = 1
+elif a > 0 and a < 5:
+    b = 2
+else:
+    b = 3
+</code></pre>
+Quelle est la valeur de b à l'issue de son exécution ?
++3
+-1
+-0
+-2
