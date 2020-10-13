@@ -23,7 +23,7 @@ Latex:1
 + 5
 - aucune de celles-ci
 
-
+<img src="/assets/portfolio.png" alt="Pablo Rotondo">
 
 ** On définit deux tableaux de dix int par :
 
