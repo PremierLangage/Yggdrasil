@@ -85,7 +85,7 @@ tag=Boucle|bouclesImbriquées|forInRange|While
 
 @ /ComputerScience/python/AP1-2021/chapitre3/tableau_entier.pl
 
-tag=boucle|forInRange|affichageDeuxDimensions
+tag=boucle|boucleImbriquees|forInRange|affichageDeuxDimensions
 
 **Changements:**
     - changement de l'énoncé, pas besoin de construire un chaine
@@ -107,7 +107,7 @@ tag=doubleBoucle|forInRange|affichageDeuxDimensions
 	- la construction d'une chaine est probablement plus facile dans cet exercice, il faudrait faire trop de print différents sinon
 
 
-# Exercice 11 - arrondiReel
+# Exercice 11 - arrondiReel (Cet exercicie a été supprimé de la feuille PLTP puisque trop difficile en distanciel)
 
 tag=boucle|float|somme|math
 
