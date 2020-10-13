@@ -6,7 +6,6 @@ tag=boucle|bouclesImbriquees
 
 title = Factorielle
 
-
 text==
 On suppose qu'il existe une variable `n` de valeur entière strictement positive.  
 
