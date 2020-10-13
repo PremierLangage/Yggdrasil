@@ -33,7 +33,7 @@ if __name__ == "__main__":
         sys.exit(1)
     if "soluce" in dic:
         with open("soluce.py","w") as sol:
-            sol.write('# Soluce \n') # pourqoi y avaiz ici a=1 dans la solition ????? FUCK !!
+            sol.write('# Soluce \n') 
             sol.write(dic['soluce'])
     lestest=[]
     if "plsoluce" in dic:
@@ -57,6 +57,7 @@ if __name__ == "__main__":
     back = dic.get('back') 
     ret,fb=runtests(lestest,front=front,back=back)
     output(ret, fb)
+
 
 
 
