@@ -40,7 +40,7 @@ tag=boucle|type|saisieControlee|while|conditionnelle
 
 @ /ComputerScience/python/AP1-2021/chapitre3/boucletriangle.pl
 
-tag=Boucle|Type|SaisieControlee|While|ForInRange
+tag=boucle|type|saisieControlee|while|ForInRange
 
 # Exercice 5 - CouplesXY.pl
 
