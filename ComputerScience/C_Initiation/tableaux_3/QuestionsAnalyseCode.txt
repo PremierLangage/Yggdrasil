@@ -3,6 +3,7 @@ Latex:1
 ** Dans la fonction suivante (remplissant depuis le clavier un tableau tab de taille taille),
    quelles lignes sont incorrectes ? : 
 
+
 $% {
 \verb+
      1 void scan_tab (int tab[], int taille) {
