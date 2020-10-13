@@ -35,9 +35,15 @@ codebefore==
 ==
 
 editor.code==
-int raun(........, int tab[][COL][N]){
+void raun(........, int tab[][COL][N]){
 
+/* à compléter */
 
+}
+
+void display (.......) {
+
+/* à compléter */
 
 }
 ==
