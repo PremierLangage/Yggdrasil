@@ -9,7 +9,7 @@
 -On ne met pas le caractère : à la dernière ligne du bloc if
 -On met une majuscule à la première lettre de la ligne suivant la fin du bloc if
 
-**[group=operateurs]Lesquels de ces opérateurs sont des opérateurs de comparaison ?
+**[group=operateurs_jf]Lesquels de ces opérateurs sont des opérateurs de comparaison ?
 +<
 +<=
 +==
@@ -21,7 +21,7 @@
 -+
 -*
 
-**[group=operateurs]Lesquels de ces opérateurs sont des opérateurs logiques ?
+**[group=operateurs_jf]Lesquels de ces opérateurs sont des opérateurs logiques ?
 -<
 -<=
 -==
@@ -33,7 +33,7 @@
 -+
 -*
 
-**[group=operateurs]Lesquels de ces opérateurs ne sont ni des opérateurs logiques ni des opérateurs de comparaison?
+**[group=operateurs_jf]Lesquels de ces opérateurs ne sont ni des opérateurs logiques ni des opérateurs de comparaison?
 -<
 -<=
 -==
@@ -52,8 +52,14 @@
 -Pour calculer l'entier r tel que r soit la racine carrée entière de 22
 -Pour déterminer s'il existe un entier inférieur à 40 qui vérifie une certaine condition
 
-*Comment écrire une condition (un booléen) qui vaut {\tt true} si la variable i appartient à {1} U {3} U {5} U [15 ; 16] ?
+*[group=booleen_jf]Comment écrire une condition (un booléen) qui vaut {\tt true} si la variable i appartient à {1} U {3} U {5} U [15 ; 16] ?
 +i == 1 or i == 3 or i == 5 or (i >= 15 and i <= 16)
 -(i == 1 and i == 3) or i == 5 or (i >= 15 and i <= 16)
 -i == 1 or (i == 3 and i == 5) or (i >= 15 and i <= 16)
 -i == 1 or i == 3 or i == 5 or i >= 15 or i <= 16
+
+*Comment écrire une condition (un booléen) qui vaut {\tt true} si la variable a appartient à {1} U [6 ; 8] U [15 ; 16] ?
++a == 1 or (a >= 6 and a <= 8) or (a >= 15 and a <= 16)
+-a == 1 and (a >= 6 and a <= 8) or (a >= 15 and a <= 16)
+-a == 1 or a >= 6 or a <= 8 or a >= 15 or a <= 16
+-a == 1 and a >= 6 and a <= 8 and a >= 15 and a <= 16
