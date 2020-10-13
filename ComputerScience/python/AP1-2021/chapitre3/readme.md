@@ -21,7 +21,7 @@ tag=boucle
     -il n'est pas possible d'interdire l'utilisation du while avec le grader utilisé
 
 # Exercice 2
-tag=Boucle|Conditionnelles
+tag=boucle|conditionnelles
 @ /ComputerScience/python/AP1-2021/chapitre3/bouclefact.pl
 
 **Remarques/commentaires:**
