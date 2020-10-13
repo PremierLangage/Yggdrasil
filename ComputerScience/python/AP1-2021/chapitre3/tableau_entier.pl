@@ -2,7 +2,7 @@ extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
 
 #author = Quentin Coumes
 
-tag=boucleImbriquees|forInRange|affichageDeuxDimensions
+tag=boucle|boucleImbriquees|forInRange|affichageDeuxDimensions
 
 title = Tableaux d'Entiers
 
@@ -98,6 +98,7 @@ for i in range(1, n*n+1):
     else:
         print("")
 ==
+
 
 
 
