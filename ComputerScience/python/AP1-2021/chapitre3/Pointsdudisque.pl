@@ -8,7 +8,9 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 title = Points du disque
 
-taboo='for'
+taboo==
+'for'
+=
 
 text==  
 
