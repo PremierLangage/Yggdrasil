@@ -43,7 +43,7 @@ int raun(........, int tab[][COL][N]){
 ==
 
 solution==
-int raun(int LI, int COL, int N, int tab[][COL][N]){
+void raun(int LI, int COL, int N, int tab[][COL][N]){
 	
 	int i,j,k;
 	int var=1;
@@ -55,10 +55,10 @@ int raun(int LI, int COL, int N, int tab[][COL][N]){
 				var=var+1;
 			}
 
-	return 0;
+	return;
 }
 
-int display(int LI, int COL, int N, int tab[][COL][N]){
+void display(int LI, int COL, int N, int tab[][COL][N]){
 
 	int i,j,k;
 
@@ -81,7 +81,7 @@ int display(int LI, int COL, int N, int tab[][COL][N]){
 		}
 	}
 
-	return 0;
+	return;
 }
 ==
 
