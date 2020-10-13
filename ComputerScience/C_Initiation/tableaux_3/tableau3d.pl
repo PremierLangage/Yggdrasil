@@ -98,9 +98,10 @@ int main(int argc, char* argv[]){
 
 tests==
 [ ["simple éxécution", "1 2 3",""],
-  ["aléatoire ", str(random.randint(4,8))+" "+str(random.randint(9,15))],
+  ["aléatoire ", str(random.randint(1,5))+" "+str(random.randint(9,15))+" "+str(random.randint(1,5)), ""]
    ]
 ==
+
 
 
 
