@@ -81,7 +81,7 @@ int raun(int LI, int COL, int N, int tab[][COL][N]){
 
 codeafter==
 
-int main(int argc, char* argv[]){
+int main(){
 
     /* On commence par initialiser le générateur de nombre pseudo-aléatoires.*/
     srand(time(NULL));
