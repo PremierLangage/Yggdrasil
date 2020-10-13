@@ -18,7 +18,7 @@ tag=boucle
 **Changements:**
     - 
 **Remarques/commentaires:**
-    -il n'est pas possible d'interdire l'utilisation du while 
+    -il n'est pas possible d'interdire l'utilisation du while avec le grader utilisé
 
 # Exercice 2
 tag=Boucle|Conditionnelles
