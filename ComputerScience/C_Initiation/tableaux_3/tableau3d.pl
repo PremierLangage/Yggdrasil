@@ -83,6 +83,8 @@ codeafter==
 
 int main(int argc, char* argv[]){
 
+	int i
+	for(
     /* On commence par initialiser le générateur de nombre pseudo-aléatoires.*/
     srand(time(NULL));
 
@@ -112,9 +114,9 @@ int main(int argc, char* argv[]){
 ==
 
 tests==
-[ ["simple éxécution", "",""],
-  ["simple éxécution", "",""],
-  ["simple éxécution", "",""]
+[ ["simple éxécution", "","1 2 3"],
+  ["simple éxécution", "","4 5 6"],
+  ["simple éxécution", "","1 1 1"]
    ]
 ==
 
