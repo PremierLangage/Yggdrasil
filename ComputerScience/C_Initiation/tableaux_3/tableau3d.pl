@@ -101,7 +101,9 @@ int main(){
 ==
 
 tests==
-[ ["simple éxécution", "",""]
+[ ["simple éxécution", "",""],
+  ["simple éxécution", "",""],
+  ["simple éxécution", "",""]
    ]
 ==
 
