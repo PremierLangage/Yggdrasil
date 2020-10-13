@@ -1,6 +1,6 @@
 
 
-extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
+extends=/ComputerScience/python/AP1-1920/templates/prosoluce.pl
 
 @ loopgen.py
 title= Boucle d'OR (repetable)
@@ -59,3 +59,4 @@ for i in range(a,a+X+1,step):
 # print(p**3)
 
 ==
+
