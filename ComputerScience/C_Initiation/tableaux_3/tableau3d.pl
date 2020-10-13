@@ -83,7 +83,7 @@ codeafter==
 
 int main(int argc, char* argv[]){
  
- /*récupération des paramètres*/
+ 	/*récupération des paramètres*/
  	int LI=atoi(argv[1]);
  	int COL=atoi(argv[2]);
  	int N=atoi(argv[3]);
