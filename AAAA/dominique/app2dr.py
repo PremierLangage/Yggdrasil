@@ -35,6 +35,7 @@ def inputstring(l=["graine","lancer","consulter","quitte","double","terminer","v
     s=input(PROMPT)
     while s not in l:
         print(INCONNUE)
+        print("Autorisées:"+" ".join(l))
         s=input(PROMPT)    
     return s
 
