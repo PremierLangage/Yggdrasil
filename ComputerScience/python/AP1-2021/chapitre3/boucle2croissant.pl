@@ -5,7 +5,7 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 title = Saisie d'une suite croissante
 
-tag=Boucle|Type||SaisieControlee|While|Conditionnelle
+tag=boucle|type|saisieControlee|while|conditionnelle
 
 text==  
 Ecrire un programme qui effectue la saisie controlée d'un type de variable,
@@ -121,6 +121,7 @@ bannana
 papel
 mango
 ==
+
 
 
 
