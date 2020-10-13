@@ -12,7 +12,7 @@ text==
 Ecrire une fonction `raun(....)` qui : 
 
 <ul>
-  <li>reçoit en paramètre un tableau à <u>trois dimensions</u> et ne retourne rien </li>
+  <li>reçoit en paramètre un tableau à <u>trois dimensions</u> et retourne un `1` si les paramètres sont supérieurs à `0`, sinon retourne `0`</li>
   <li>remplie le tableau à trois dimensions avec des valeurs incrémentées de 1 en 1 (on démarre à 1 et le dernier emplacement aura pour valeur N)</li>
 </ul>
 
