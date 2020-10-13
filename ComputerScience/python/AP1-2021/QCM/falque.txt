@@ -3,19 +3,8 @@
 +=["tmp","cmpt","hours","heures","years","annees","days","jours","mnt","minutes","sec","seconds","period","duree"]
 -=["and","if","for","while","variable","variable_3","x","a","toto","chat"]
 
-* Considérons le code suivant :
-[
-a = 5<br>
-b = 0<br>
-if a < 0:<br>
-    b = 1<br>
-elif a > 0 and a < 5:<br>
-    b = 2<br>
-else:<br>
-    b = 3<br>]
-
-Quelle est la valeur de b à l'issue de son exécution ?
-+3
--1
--0
--2
+*Lorsque vous disposez d'un bloc constitué de plus d'une ligne dans un if, comment indiquez vous la fin du bloc ?
++On diminue l'indentation à la ligne suivant le bloc, pour revenir à une indentation identique à celle de la ligne possédant l'instruction if
+-On utilise une accolade '}' après la dernière ligne du bloc if
+-On ne met pas le caractère ':' à la dernière ligne du bloc if
+-On met une majuscule à la première lettre de la ligne suivant la fin du bloc if
