@@ -30,7 +30,7 @@ tag=boucle|conditionnelles
 
 @ /ComputerScience/python/AP1-2021/chapitre3/boucle2croissant.pl
 
-tag=Boucle|Type||SaisieControlee|While|Conditionnelle
+tag=boucle|type|saisieControlee|while|conditionnelle
 
 **Changements:**
     - 
