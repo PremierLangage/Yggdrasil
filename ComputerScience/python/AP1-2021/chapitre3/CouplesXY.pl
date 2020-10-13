@@ -20,7 +20,7 @@ taboo=while
 text==  
 Écrivez un script qui affiche tous les couples (x,y), x étant un entier positif ou nul inférieur à **li** 
 et y un entier positif ou nul inférieur à **col** ;  <br>
-li et col sont deux entiers acquis au clavier. <br>
+li et col sont deux entiers acquis au clavier et doivent être strictement positifs. <br>
 L’affichage doit se faire avec un espace entre chaque couple comme sur l’exemple suivant qui correspond à li = 3 et col = 5 :
 <br>
 (0,0) (0,1) (0,2) (0,3) (1,4) <br>
@@ -40,6 +40,8 @@ Remarques:
 
 soluce==
 p=int(input("nombre  de lignes"))
+while(p<0):
+    p=int(input("nombre  de lignes"))
 q=int(input("nombre de colonnes"))
 for i in range(p):
     ligne=""
