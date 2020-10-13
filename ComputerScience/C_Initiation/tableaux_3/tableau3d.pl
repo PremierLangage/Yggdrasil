@@ -55,11 +55,17 @@ int raun(int LI, int COL, int N, int tab[][COL][N]){
 				var=var+1;
 			}
 
+	return 0;
+}
+
+int display(int LI, int COL, int N, int tab[][COL][N]){
+
+	int i,j,k;
+
 	for(i=0;i<LI;i=i+1){
 		printf("Ligne %d || ",i+1);
 		for(j=0;j<COL;j=j+1){
 			printf("Colonne %d ",j+1);
-			/*if (j==0) printf("{");*/
 				for(k=0;k<N;k=k+1){
 					if(k==0) printf("{");
 					printf("%d",tab[i][j][k]);
