@@ -8,3 +8,39 @@
 -On utilise une accolade } après la dernière ligne du bloc if
 -On ne met pas le caractère : à la dernière ligne du bloc if
 -On met une majuscule à la première lettre de la ligne suivant la fin du bloc if
+
+**[group=operateurs]Lesquels de ces opérateurs sont des opérateurs de comparaison ?
++>
++<=
++==
++!=
+-and
+-or 
+-not 
+-=
+-+
+-*
+
+**[group=operateurs]Lesquels de ces opérateurs sont des opérateurs logiques ?
+->
+-<=
+-==
+-!=
++and
++or 
++not 
+-=
+-+
+-*
+
+**[group=operateurs]Lesquels de ces opérateurs ne sont ni des opérateurs logiques ni des opérateurs de comparaison?
+->
+-<=
+-==
+-!=
+-and
+-or 
+-not 
++=
+++
++*
