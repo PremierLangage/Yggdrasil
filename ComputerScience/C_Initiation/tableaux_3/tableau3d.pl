@@ -87,6 +87,9 @@ int main(){
     srand(time(NULL));
 
  	int LI,COL,N;
+	LI=0;
+	COL=0;
+	N=0;
 
 	while(LI<1)
 		 LI = rand()%5;
