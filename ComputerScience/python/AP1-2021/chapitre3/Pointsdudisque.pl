@@ -1,13 +1,14 @@
 
 #author=Zip
 
-tag=coordonnées|repèreCartésien|boucle|bouclesImbriquées|While|Conditionnelles
+tag=boucle|bouclesImbriquées|While|Conditionnelles
 
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 title = Points du disque
 
+taboo="for", "range"
 
 text==  
 
@@ -81,6 +82,7 @@ mplsoluce2==
 Entrée grande
 24.32
 ==
+
 
 
 
