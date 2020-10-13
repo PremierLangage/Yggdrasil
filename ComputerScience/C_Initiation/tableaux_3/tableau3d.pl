@@ -82,28 +82,20 @@ int raun(int LI, int COL, int N, int tab[][COL][N]){
 codeafter==
 
 int main(int argc, char* argv[]){
+ 
+ 	int LI,COL,N;
 
-	int i
-	for(
-    /* On commence par initialiser le générateur de nombre pseudo-aléatoires.*/
-    srand(time(NULL));
+ 	LI=atoi(argv[1]);
+ 	COL=atoi(argv[2]);
+ 	N=atoi(argv[3]);
 
- 	int LI,COL,N,var1,var2,var3;
-	LI=0;
-	COL=0;
-	N=0;
-	var1=rand()%7;
-	var2=rand()%8;
-	var3=rand()%5;
+ 	// On commence par initialiser le générateur de nombre pseudo-aléatoires.
+    //srand(time(NULL));
 
-	while(LI<1)
-		 LI = rand()%var2;
 
-	while(COL<1)
-		 COL = rand()%var3;
-
-	while(N<1)
-		 N = rand()%var1;
+    //while ((LI = rand()%5) < 1);
+    //while ((COL = rand()%5) < 1);
+    //while ((N = rand()%5) < 1);
 
 	int tab[LI][COL][N];
 	
