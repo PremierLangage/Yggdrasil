@@ -15,7 +15,7 @@ Latex:1
      5         scanf("%d", tab[i]);
 
      6 }
-<img src="https://protondo.github.io/assets/portfolio.png" alt="Pablo Rotondo">
+
 ![image](https://protondo.github.io//assets/images/your-image.jpg)
 
 
