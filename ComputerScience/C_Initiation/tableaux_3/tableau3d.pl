@@ -83,12 +83,11 @@ codeafter==
 
 int main(int argc, char* argv[]){
  
- 	int LI,COL,N;
-
- 	LI=atoi(argv[1]);
- 	COL=atoi(argv[2]);
- 	N=atoi(argv[3]);
-
+ /*récupération des paramètres*/
+ 	int LI=atoi(argv[1]);
+ 	int COL=atoi(argv[2]);
+ 	int N=atoi(argv[3]);
+	
 	int tab[LI][COL][N];
 	
 	raun(LI,COL,N,tab);
