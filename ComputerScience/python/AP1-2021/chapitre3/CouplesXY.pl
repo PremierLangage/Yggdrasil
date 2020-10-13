@@ -39,7 +39,7 @@ Remarques:
 ==
 
 soluce==
-p=int(input("nombre  de lignes")
+p=int(input("nombre  de lignes"))
 q=int(input("nombre de colonnes"))
 
 for i in range(p):
