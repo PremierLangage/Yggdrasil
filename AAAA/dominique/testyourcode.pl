@@ -18,5 +18,5 @@ form==
 {{ inputbox | component }}
 {{editor|component}}
 ==
-@ utils/prosolucegrader.py [grader.py]
+
 
