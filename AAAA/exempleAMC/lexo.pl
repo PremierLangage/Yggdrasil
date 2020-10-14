@@ -1,11 +1,11 @@
 
 extends= /model/AMC2/QCM-AMCE.pl
 
-titre== Questions
+title= Ensembles
 
 questions==
 
-* avez vous trouve fcette feuille d'exercice interessante ?
+* avez vous trouvé cette feuille d'exercice interessante ?
 + Oui 
 - Non 
 
@@ -15,6 +15,7 @@ questions==
 
 #@ exe.txt [question3.txt]
 @ question6.txt 
+
 
 
 
