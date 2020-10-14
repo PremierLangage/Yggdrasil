@@ -2,7 +2,7 @@ Latex:1
 
 ** Dans la fonction suivante (remplissant depuis le clavier un tableau tab de taille taille),
    quelles lignes sont incorrectes ? : 
-
+{% autoescape off %}
 
      1 void scan_tab (int tab[], int taille) {
 
@@ -15,6 +15,7 @@ Latex:1
      5         scanf("%d", tab[i]);
 
      6 }
+{% endautoescape %}
 
 ![](https://protondo.github.io/assets/portfolio.png)
 
