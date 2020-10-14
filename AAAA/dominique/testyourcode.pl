@@ -37,7 +37,7 @@ inputstring=inputbox.value
 @ /grader/evaluator.py [grader.py]
 evaluator==
 
-grade= (33, inputbox.value)
+grade= (33, inputbox.value+inputbox.placeholder)
 
 ==
 
