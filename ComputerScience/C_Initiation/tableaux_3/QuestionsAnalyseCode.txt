@@ -8,6 +8,7 @@ Latex:1
 {% autoescape off %}
 
 
+{{<}}
      1 void scan_tab (int tab[], int taille) {
 
      2     int i;
