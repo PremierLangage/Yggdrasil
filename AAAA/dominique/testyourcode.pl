@@ -14,7 +14,7 @@ inputbox.appearance = outline
 inputbox.value = terminer
 
 editor1 =: CodeEditor
-editor1.language = python
+editor1.language = text
 editor1.cid = py_editor_1
 editor1.code ==
 # Saisissez les lignes d'entré
@@ -80,6 +80,7 @@ v2
 version
 terminer
 ==
+
 
 
 
