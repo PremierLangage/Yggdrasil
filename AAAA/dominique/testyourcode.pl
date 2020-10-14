@@ -3,13 +3,16 @@
 extends= testapp2.pl
 
 
-title= Tester avec votre entré
+title=
 text==
-Vous pouvez tester votre projet ici 
-en plaçant dans l'editeur du haut les instructions et valeurs saisies par l'utilisateur (une par ligne)
-en placant dans l'editeur du bas le code python de votre projet.
-==
 
+Tester cotre code contre un autre code.
+
+Dans le premier editeur placer l'entrée que vous voulez comparer.
+Dans le deuxième editeur votre code python.
+
+
+==
 
 inputbox =: Input
 inputbox.type = text
@@ -22,25 +25,15 @@ editor1 =: CodeEditor
 editor1.language = text
 editor1.cid = py_editor_1
 editor1.code ==
-# Saisissez les lignes d'entré
-
+terminer
 ==
 
 
-# création de l'éditeur de code
-editor =: CodeEditor
-editor.language = python
-editor.cid = py_editor_0
-editor.code ==
-# Saisissez votre code ici, et cliquez sur le bouton
-# de validation quand vous avez terminé
 
-==
-
-soluce=@ app2dr.py
+#soluce=@ app2dr.py
 
 
-editor.code==
+ducode==
 version="v2"
 while True:
         s=input("$ ")
@@ -61,12 +54,13 @@ while True:
 before=
 
 pregrader==
-inputstring=editor1.code
+
 student=editor.code
 with open("student.py","w") as f:
     f.write(student)
-
-mplsoluce1="Test perso\n"+inputstring+"\n"
+inputstring=editor1.code
+if inputstring:
+    mplsoluce0="Test perso\n"+inputstring+"\n"
 
 ==
 
@@ -85,7 +79,6 @@ v2
 version
 terminer
 ==
-
 
 
 
