@@ -2,7 +2,7 @@ extends=/model/AMC_TXT.pl
 
 textstep ==
 <strong> Question {{ step + 1 }}. </strong> 
-{{ statement[step] | e }}
+{{ statement[step] | safe }}
 ==
 
 title= Compréhension de code 
