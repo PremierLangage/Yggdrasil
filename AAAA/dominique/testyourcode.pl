@@ -31,10 +31,15 @@ editor.code=@ app2dr.py
 before=
 
 pregrader==
-
+inputstring=inputbox.value
 
 ==
+@ /grader/evaluator.py [grader.py]
+evaluator==
 
+grade= (33, inputbox.value)
+
+==
 
 form==
 {{ inputbox | component }}
@@ -50,3 +55,4 @@ v2
 version
 terminer
 ==
+
