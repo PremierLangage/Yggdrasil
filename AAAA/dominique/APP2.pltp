@@ -11,24 +11,24 @@ Le premier permet de passer des tests standards.
 Le deuxième permet de comparer votre solution à la notre avec votre propre choix d'entrée.
 
 
-Quelque exemples d'entrée pouir vos tests :
+Quelques exemples d'entrée pouir vos tests :
 
-1) Je sort tout de suite :
-    terminer 
-2) je teste juste la gestion de la version 
-    version
-    v1
-    version
-    v2
-    version
-    terminer
-3) Un test réel :
-    v1
-    graine
-    45
-    lancer
-    4
-    terminer
+1) Je sort tout de suite :<br/>
+    terminer <br/>
+2) je teste juste la gestion de la version<br/>
+    version<br/>
+    v1<br/>
+    version<br/>
+    v2<br/>
+    version<br/>
+    terminer<br/>
+3) Un test réel :<br/>
+    v1<br/>
+    graine<br/>
+    45<br/>
+    lancer<br/>
+    4<br/>
+    terminer<br/>
 
 ==
 
