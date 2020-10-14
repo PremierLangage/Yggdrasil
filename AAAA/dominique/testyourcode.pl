@@ -56,8 +56,8 @@ while True:
 before=
 
 pregrader==
-inputstring=editor.code
-student=editor1.code
+inputstring=editor1.code
+student=editor.code
 with open("student.py","w") as f:
     f.write(student)
 
