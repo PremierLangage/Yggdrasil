@@ -16,7 +16,7 @@ Latex:1
 
      6 }
 
-![](https://protondo.github.io/assets/portfolio.png)|![](https://protondo.github.io/assets/portfolio.png)
+![](https://protondo.github.io/assets/portfolio.png)
 
 - 2
 + 3
