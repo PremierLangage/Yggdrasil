@@ -8,7 +8,7 @@ Latex:1
 {% autoescape off %}
 
 
-{{<}}
+{{ '<'|e }}
      1 void scan_tab (int tab[], int taille) {
 
      2     int i;
