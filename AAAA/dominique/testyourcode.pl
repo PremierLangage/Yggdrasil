@@ -32,7 +32,7 @@ before=
 
 pregrader==
 inputstring=inputbox.value
-student=editor.value
+student=editor.code
 with open("student.py","w") as f:
     f.write(student)
 
@@ -55,5 +55,6 @@ v2
 version
 terminer
 ==
+
 
 
