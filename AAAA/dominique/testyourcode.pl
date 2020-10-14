@@ -38,13 +38,6 @@ mplsoluce1="Test perso\n"+inputstring+"\n"
 ==
 
 
-
-evaluator==
-
-grade= (33,f"{responce} ")
-
-==
-
 form==
 {{ inputbox | component }}
 {{ editor  | component }}
