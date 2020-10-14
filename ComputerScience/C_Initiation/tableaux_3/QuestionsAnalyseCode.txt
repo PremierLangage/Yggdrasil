@@ -5,9 +5,6 @@ Latex:1
 
 
 
-{% autoescape off %}
-
-
 {{ '<'|e }}
      1 void scan_tab (int tab[], int taille) {
 
@@ -22,7 +19,6 @@ Latex:1
      6 }
 
 
-{% endautoescape %}
 
 
 ![](https://protondo.github.io/assets/portfolio.png)
