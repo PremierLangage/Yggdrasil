@@ -32,7 +32,6 @@ if __name__ == "__main__":
         sys.exit(1)
     if "soluce" in dic:
         with open("soluce.py","w") as sol:
-            sol.write('a=1\n')
             sol.write(dic['soluce'])
     lestest=[]
     if "plsoluce" in dic:
@@ -56,6 +55,7 @@ if __name__ == "__main__":
     fb=feedback2.FeedBack()
     ret=runsolucetests(lestest,fb)
     output(ret, fb.render())
+
 
 
 
