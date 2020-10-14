@@ -9,13 +9,13 @@ tag=structure|function
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-Le produit scalaire $%\langle u, v \rangle%$ de deux vecteurs $%u = (x_u, y_u, z_u)%$ et 
-$%v = (x_v, y_v, z_v)%$ est donné par la formule 
+Le produit scalaire $%\langle u, v \rangle%$ de deux vecteurs $%u = (x_u, y_u, z_u) %$ et 
+$%v = (x_v, y_v, z_v$)%$ est donné par la formule 
 $% \langle u, v \rangle = x_u \times x_v + y_u \times y_v + z_u \times z_v%$.
 
 <br />
 
-Suivant la structure C qui vous est fournie, ecrire une fonction
+Suivant la structure C qui vous est fournie, écrire une fonction
 *scalar_product3d* qui retourne le produit scalaire de deux vecteurs
 de type *Vector3d* passés par adresse.
     
@@ -81,6 +81,7 @@ tests==
   ["vecteurs aléatoires", " ".join([str(random.randint(-10,10)) for i in range(6)]), "" ],
   ["vecteurs aléatoires", " ".join([str(random.randint(-10,10)) for i in range(6)]), "" ] ]
 ==
+
 
 
 
