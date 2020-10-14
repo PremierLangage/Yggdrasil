@@ -5,8 +5,7 @@ Latex:1
 
 
 
-jinja2.escape('<')
-
+<
      1 void scan_tab (int tab[], int taille) {
 
      2     int i;
