@@ -13,9 +13,9 @@ Le deuxième permet de comparer votre solution à la notre avec votre propre cho
 
 Quelques exemples d'entrée pouir vos tests :
 
-1) Je sort tout de suite :<br/>  
-    terminer <br/>  
-2) je teste juste la gestion de la version<br/>  
+1) Je sort tout de suite :<br/>
+    terminer <br/>
+2) je teste juste la gestion de la version<br/>
     version<br/>
     v1<br/>
     version<br/>
