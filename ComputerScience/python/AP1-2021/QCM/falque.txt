@@ -42,4 +42,4 @@
 
 =**[nbg=4,nbb=2]Dans la liste suivante, sélectionner les expressions qui ont un sens (i.e. qui produisent un résultat et non une erreur).
 +=["4*2.0","2**0.5","4/5","7//2","11%3","11<3 and True","int(3.0 // 1.5)","4.0 // 1.75","int('21')","'Marne' + 'la' + 'Vallée'","'J'ai ' + str(10) + ' ans.'"]
--=["'Tu as ' + 12 + ' ans'","4 *. 5", "3 'Hip' + 'Hourra'","int('3.0')","'Voici ' + int(6) + 'tomates.'"]
+-=["'Tu as ' + 12 + ' ans'","4 *. 5", "3 'Hip' + 'Hourra'","int('3.0')","'Voici ' + int(6) + ' tomates.'"]
