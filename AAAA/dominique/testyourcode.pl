@@ -32,7 +32,7 @@ before=
 
 pregrader==
 inputstring=inputbox.value
-
+student=editor.value
 mplsoluce1="Test perso\n"+inputstring+"\n"
 
 ==
