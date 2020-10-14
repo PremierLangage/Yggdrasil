@@ -11,6 +11,15 @@ inputbox.type = text
 inputbox.placeholder = Entrée du programme (stdin)
 inputbox.maxlength = 2
 inputbox.appearance = outline
+inputbox.value = terminer
+
+editor1 =: CodeEditor
+editor1.language = python
+editor1.cid = py_editor_1
+editor1.code ==
+# Saisissez les lignes d'entré
+
+==
 
 
 # création de l'éditeur de code
@@ -27,7 +36,7 @@ soluce=@ app2dr.py
 
 
 editor.code==
-
+version="v2"
 while True:
         s=input("$ ")
         if s=="v2":
