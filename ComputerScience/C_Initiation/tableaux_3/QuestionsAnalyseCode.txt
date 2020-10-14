@@ -4,6 +4,8 @@ Latex:1
    quelles lignes sont incorrectes ? : 
 
 
+    {{<|safe}}
+
 
 
      1 void scan_tab (int tab[], int taille) {
