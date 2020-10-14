@@ -27,7 +27,7 @@ if __name__ == "__main__":
 
     if 'pregrader' in dic:
         glob = {}
-        exec( dic['pregrader']), dic)
+        exec( dic['pregrader'], dic)
         exec("", glob)
         for key in glob:
             if key in dic and dic[key] == glob[key]:
