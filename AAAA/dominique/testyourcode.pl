@@ -47,7 +47,6 @@ grade= (33,f"aa {a} bb{b} c{c} ")
 
 form==
 {{ inputbox | component }}
-{{editor|component}}
 ==
 
 mplsoluce0==
