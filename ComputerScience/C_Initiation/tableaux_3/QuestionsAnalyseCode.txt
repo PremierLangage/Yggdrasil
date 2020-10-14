@@ -16,7 +16,7 @@ Latex:1
 
      6 }
 
-![image 50x50](https://protondo.github.io/assets/portfolio.png)
+![image](https://protondo.github.io/assets/portfolio.png){ width=50% }
 
 - 2
 + 3
