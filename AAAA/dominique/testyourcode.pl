@@ -7,7 +7,7 @@ title=
 text= Exécuter votre code sur la sandbox 
 
 inputbox =: Input
-inputbox.type = multiline
+inputbox.type = text
 inputbox.placeholder = Entrée du programme (stdin)
 inputbox.maxlength = 2
 inputbox.appearance = outline
@@ -35,7 +35,6 @@ inputstring=inputbox.value
 
 ==
 
-@ /grader/evaluator.py [grader.py]
 
 evaluator==
 a=inputbox.value
@@ -47,6 +46,7 @@ grade= (33,f"aa {a} bb{b} c{c} ")
 
 form==
 {{ inputbox | component }}
+{{ editor  | component }}
 ==
 
 mplsoluce0==
@@ -58,5 +58,4 @@ v2
 version
 terminer
 ==
-
 
