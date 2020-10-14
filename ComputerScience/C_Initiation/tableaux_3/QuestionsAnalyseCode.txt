@@ -4,9 +4,6 @@ Latex:1
    quelles lignes sont incorrectes ? : 
 
 
-    {{ "<" | e }}
-
-
 
      1 void scan_tab (int tab[], int taille) {
 
