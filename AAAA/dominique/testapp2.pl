@@ -33,10 +33,14 @@ for i,t in enumerate(tests):
 
 ==
 
+form==
+
+{{ editor  | component }}
+==
 
 
 pregrader==
-inputstring=editor1.code
+
 student=editor.code
 with open("student.py","w") as f:
     f.write(student)
