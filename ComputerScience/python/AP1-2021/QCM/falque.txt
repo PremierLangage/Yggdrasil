@@ -17,7 +17,7 @@
 -=["<","<=","==","!=","=","+","*"]
 +=["and","or","not"]
 
-**[group=operateurs_jf,nbg=3,nbb=4]Lesquels de ces opérateurs ne sont ni des opérateurs logiques ni des opérateurs de comparaison?
+=**[group=operateurs_jf,nbg=3,nbb=4]Lesquels de ces opérateurs ne sont ni des opérateurs logiques ni des opérateurs de comparaison?
 -=["<","<=","==","!=","and","or","not"]
 +=["=","+","*"]
 
