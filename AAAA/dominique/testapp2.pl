@@ -1,5 +1,12 @@
 
+
+@ /utils/sandboxio.py
+
+builder =@ /builder/before.py
 extends= /ComputerScience/python/AP1-1920/templates/plsoluce.pl
+
+@ codeevaluator.py [grader.py]
+
 
 title= Test pour le mini projet 2 AP1 2020/2021 
 
@@ -10,7 +17,7 @@ soluce=@app2dr.py
 @ input2.txt
 @ input3.txt
 
-text=" . . "
+text=""
 
 before==
 
@@ -25,6 +32,7 @@ for i,t in enumerate(tests):
 
 
 ==
+
 
 
 
