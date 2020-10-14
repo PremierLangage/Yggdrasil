@@ -33,6 +33,19 @@ for i,t in enumerate(tests):
 
 ==
 
+
+
+
+# création de l'éditeur de code
+editor =: CodeEditor
+editor.language = python
+editor.cid = py_editor_0
+editor.code ==
+# Saisissez votre code ici, et cliquez sur le bouton
+# de validation quand vous avez terminé
+input("$ ")
+print("Désolé vous n'avez pas doublé votre mise initiale !")
+==
 form==
 
 {{ editor  | component }}
