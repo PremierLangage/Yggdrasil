@@ -26,7 +26,23 @@ editor.code ==
 soluce=@ app2dr.py
 
 
-editor.code=@ app2dr.py
+editor.code==
+
+while True:
+        s=input("$ ")
+        if s=="v2":
+            version=s
+            continue
+        if s=="v1":
+            version=s
+            continue
+        if s=="version" :
+            print(version)
+            continue
+        if s=="terminer:
+            print("Désolé vous n'avez pas doublé votre mise initiale !") 
+            break
+==
 
 before=
 
