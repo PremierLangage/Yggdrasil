@@ -40,7 +40,7 @@ On défini la fonction boo par :
      void boo(int untab[],int deuxtab[]){
 
      int tmp;
-        
+
      tmp=*untab;
 
      *untab=*deuxtab;
