@@ -33,6 +33,9 @@ before=
 pregrader==
 inputstring=inputbox.value
 student=editor.value
+with open("student.py","w") as f:
+    f.write(student)
+
 mplsoluce1="Test perso\n"+inputstring+"\n"
 
 ==
@@ -52,4 +55,5 @@ v2
 version
 terminer
 ==
+
 
