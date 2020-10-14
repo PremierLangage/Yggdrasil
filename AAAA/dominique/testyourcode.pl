@@ -7,7 +7,7 @@ title=
 text= Exécuter votre code sur la sandbox 
 
 inputbox =: Input
-inputbox.type = multiline
+inputbox.type = text
 inputbox.placeholder = Entrée du programme (stdin)
 inputbox.maxlength = 2
 inputbox.appearance = outline
