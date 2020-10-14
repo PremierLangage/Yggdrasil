@@ -25,8 +25,7 @@ editor1 =: CodeEditor
 editor1.language = text
 editor1.cid = py_editor_1
 editor1.code ==
-# Saisissez les lignes d'entré
-
+terminer
 ==
 
 
@@ -55,12 +54,13 @@ while True:
 before=
 
 pregrader==
-inputstring=editor1.code
+
 student=editor.code
 with open("student.py","w") as f:
     f.write(student)
-
-mplsoluce1="Test perso\n"+inputstring+"\n"
+inputstring=editor1.code
+if inputstring:
+    mplsoluce1="Test perso\n"+inputstring+"\n"
 
 ==
 
