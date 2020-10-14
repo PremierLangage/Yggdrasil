@@ -39,7 +39,7 @@ while True:
         if s=="version" :
             print(version)
             continue
-        if s=="terminer:
+        if s=="terminer":
             print("Désolé vous n'avez pas doublé votre mise initiale !") 
             break
 ==
