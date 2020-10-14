@@ -1,8 +1,10 @@
 cecinestpasunecommandeautorisée
+v2
 graine
 44
 lancer
 4
 quitte
 terminer
+
 
