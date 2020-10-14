@@ -3,7 +3,7 @@ Latex:1
 ** Dans la fonction suivante (remplissant depuis le clavier un tableau tab de taille taille),
    quelles lignes sont incorrectes ? : 
 
-<pre>
+
 
      1 void scan_tab (int tab[], int taille) {
 
@@ -17,7 +17,7 @@ Latex:1
 
      6 }
 
-</pre>
+
 
 
 - 2
