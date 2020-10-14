@@ -6,6 +6,7 @@ Latex:1
 
 
 {{ '<'|e }}
+
      1 void scan_tab (int tab[], int taille) {
 
      2     int i;
