@@ -16,8 +16,8 @@ Latex:1
 
      6 }
 
-![](https://protondo.github.io/assets/portfolio.png)
-<img src="{{resized_img_src('https://protondo.github.io/assets/portfolio.png', width=100)}}" />
+![](resized_img_src('https://protondo.github.io/assets/portfolio.png', width=100))
+<img src="{{}}" />
 
 
 - 2
