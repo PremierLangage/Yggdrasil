@@ -20,7 +20,7 @@ Latex:1
 
      6 }
 
-     
+
 {% endautoescape %}
 
 
