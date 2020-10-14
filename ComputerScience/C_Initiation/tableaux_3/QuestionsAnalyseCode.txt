@@ -2,8 +2,9 @@ Latex:1
 
 ** Dans la fonction suivante (remplissant depuis le clavier un tableau tab de taille taille),
    quelles lignes sont incorrectes ? : 
-jinja2.escape('<')
 
+
+jinja2.escape('<')
 
 
 
