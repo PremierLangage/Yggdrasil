@@ -1,0 +1,19 @@
+
+title = Tester votre projet N° 2
+
+
+introduction==
+
+Deux exercices :
+
+Le premier permet de passer des tests standards. 
+
+Le deuxième permet de comparer votre solution à la notre avec votre propre choix d'entrée.
+
+==
+
+@ /AAAA/dominique/testapp2.pl
+
+@ /AAAA/dominique/testyourcode.pl
+
+
