@@ -13,7 +13,7 @@ Latex:1
 
      4     for (i=0; i < *taille; i=i+1)
 
-     5         scanf("%d", &tab[i]);
+     5         scanf("%d", tab[i]);
 
      6 }
 
