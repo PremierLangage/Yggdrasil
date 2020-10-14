@@ -24,6 +24,18 @@ if __name__ == "__main__":
 
 
     dic = get_context()
+
+    if 'pregrader' in dic:
+        glob = {}
+        dic['StopEvaluatorExec'] = StopEvaluatorExec
+        exec(add_try_clause(dic['pregrader'], StopEvaluatorExec), dic)
+        exec("", glob)
+        for key in glob:
+            if key in dic and dic[key] == glob[key]:
+                del dic[key]
+
+
+
     if "plsoluce" not in dic and "mplsoluce0" not in dic :
         print("No plsoluce or mplsoluce0 in dic  necessary for this template " , file=sys.stderr)
         sys.exit(1)
@@ -54,6 +66,7 @@ if __name__ == "__main__":
     fb=feedback2.FeedBack()
     ret=runsolucetests(lestest,fb)
     output(ret, fb.render())
+
 
 
 
