@@ -67,7 +67,7 @@ mplsoluce1="Test perso\n"+inputstring+"\n"
 
 
 form==
-{{ inputbox | component }}
+{{ editor1 | component }}
 {{ editor  | component }}
 ==
 
