@@ -8,6 +8,8 @@ extends= /ComputerScience/python/AP1-1920/templates/plsoluce.pl
 @ codeevaluator.py [grader.py]
 
 
+settings.requirements=title,text,soluce,bob
+
 title= Test pour le mini projet 2 AP1 2020/2021 
 
 soluce=@app2dr.py 
@@ -17,7 +19,10 @@ soluce=@app2dr.py
 @ input2.txt
 @ input3.txt
 
-text=""
+text==
+Placez votre code dans l'éditeur.
+Un certain nombre de tests seront réalisés.
+==
 
 before==
 
@@ -43,6 +48,7 @@ editor.cid = py_editor_0
 editor.code ==
 # Saisissez votre code ici, et cliquez sur le bouton
 # de validation quand vous avez terminé
+# Le code suivant passe le premier test !
 input("$ ")
 print("Désolé vous n'avez pas doublé votre mise initiale !")
 ==
@@ -58,5 +64,6 @@ student=editor.code
 with open("student.py","w") as f:
     f.write(student)
 ==
+
 
 
