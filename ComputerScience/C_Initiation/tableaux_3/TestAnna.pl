@@ -15,7 +15,7 @@ tag=Tableau|Initialisation|ParcoursTableau|Boucle
 
 text=
 
-onepergroup = Vraiment
+onepergroup = prenom
 
 docXXXXX==
 
