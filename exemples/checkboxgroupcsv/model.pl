@@ -27,7 +27,7 @@ indexs = [ i for i,x in enumerate(solution) if x==solutionvalue ]
 title = Checkbox Group Component
 
 text==
-Indiquez ceux qui sont des {{solutionvalue}}
+Indiquez les maladie causées par des {{solutionvalue}}
 
 ==
 
