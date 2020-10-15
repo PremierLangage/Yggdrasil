@@ -37,9 +37,6 @@ questions==
 - for
 -=["list","int","dic"]
 
-==
-
-ff==
 
 =**[nbb=2,nbg=2] Indiquer les identifiants correctes
 +=["un","deux","ident","prout"]
