@@ -2,7 +2,7 @@ from mkl import getrandomlines
 
 def getrandomselection(filename="content.csv", number=4,sourcecol="source", targetcol="target"):
 
-    data = getrandomlines(filename,number,sourcecol, targetcol)
+    data = getrandomlines(filename,number,sourcecol, targetcol, unique=False)
     l=[]
     sol=[]
     debug=""
@@ -14,6 +14,7 @@ def getrandomselection(filename="content.csv", number=4,sourcecol="source", targ
         sol.append(d[1])
         debug+= str(d)+"|"
     return l,sol, debug
+
 
 
 
