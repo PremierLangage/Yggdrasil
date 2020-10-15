@@ -1,4 +1,4 @@
-import mkl
+from mkl import getrandomlines
 
 def getrandomselection(filename="content.csv", number=4,sourcecol="source", targetcol="target"):
 
