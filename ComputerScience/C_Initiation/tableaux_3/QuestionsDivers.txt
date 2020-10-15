@@ -33,4 +33,10 @@ faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 - int tab2[] = {0};
 + int tab2[3]; tab2[2] = tab1[1];
 
+** Quelles sont parmi les fonctions suivantes, celles qui peuvent modifier la valeur de l'un de leurs paramètres ?
++ void absolue(int *n)
+- int absolue(int n)
++ float absolue(int *n)
+- Aucune de ces réponses n'est correcte
+
 
