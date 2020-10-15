@@ -1,8 +1,6 @@
 
 extends= /model/AMC2/QCM-AMCE.pl
 
-title= QCM_noté Exo
-
 textstep ==
 <strong> Question {{ step + 1 }}. </strong> 
 {{ statement[step] | safe }}
@@ -19,7 +17,7 @@ text=
 
 onepergroup = Vraiment
 
-questions==
+docXXXXX==
 
 **[group=prenom] Quel est le prénom de Revuz
 +Dominique
@@ -46,10 +44,6 @@ questions==
 -=[x for x in range(3,77) if x%2==1 ]
 +=[x for x in range(3,77) if x%2==0 ]
 
-==
-
-
-docXXXXX==
 On respecte le format standart des AMC selon le lien suivant : https://www.auto-multiple-choice.net/auto-multiple-choice.fr/AMC-TXT.shtml
 
 
@@ -75,6 +69,7 @@ Pour chaque question, on peut mettre des options entre [] :
 
 [nbb=,nbg=] pour déterminer le nombre de bonne et de mauvaise réponse pour un checkbox 
 ==
+
 
 
 
