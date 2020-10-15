@@ -36,8 +36,8 @@ faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 ** Quelles sont parmi les fonctions suivantes, celles qui peuvent modifier, sans retour, la valeur de leur(s) paramètre(s) ?
 + void absolue(int *n)
 - int absolue(int n)
-+ void ajouteDix(int *n){
-    
++ void ajouteDix(int *n)
+- void ajouteDix(int n)
 - int echange(int a, int b)
 + int resoudre(float a,float b,float c,float *x,float *y)
 - Aucune de ces réponses n'est correcte
