@@ -14,7 +14,7 @@ group =: CheckboxGroup
 before==
 import random,readcsv, mkl
 
-group.items,solution = getrandomselection()
+group.items,solution, debug = readcsv.getrandomselection()
 
  
 ==
@@ -25,6 +25,7 @@ text==
 Select even numbers.
 {{group.items}} 
 {{solution}}
+{{debug}}
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
@@ -54,4 +55,5 @@ if total == 0:
 else:
     grade = ((right / total) * 100, f"{right} / {total}")
 ==
+
 
