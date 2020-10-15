@@ -1,5 +1,6 @@
 
 
+extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 
 title = Y’a des marins sur l’île de Sein qui partent en mer en bateau 
