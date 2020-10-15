@@ -33,7 +33,7 @@ faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 - int tab2[] = {0};
 + int tab2[3]; tab2[2] = tab1[1];
 
-** Quelles sont parmi les fonctions suivantes, celles qui peuvent modifier, sans retour, la valeur de leur(s) paramètre(s) ?
+** Quelles sont parmi les fonctions suivantes, celles qui peuvent modifier, directement, la valeur de leur(s) paramètre(s) ?
 + void absolue(int *n)
 - int absolue(int n)
 + void ajouteDix(int *n)
@@ -41,5 +41,6 @@ faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 - int echange(int a, int b)
 + int resoudre(float a,float b,float c,float *x,float *y)
 - Aucune de ces réponses n'est correcte
+
 
 
