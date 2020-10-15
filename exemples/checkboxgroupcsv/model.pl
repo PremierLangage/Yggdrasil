@@ -14,7 +14,7 @@ group =: CheckboxGroup
 before==
 import random,readcsv, mkl
 
-group.items,solution, debug = readcsv.getrandomselection()
+group.items,solution, debug = readcsv.getrandomselection(sourcecol="target",targetcol="source")
 
  
 ==
