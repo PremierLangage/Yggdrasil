@@ -11,7 +11,8 @@ def getrandomselection(filename="content.csv", number=4,sourcecol="source", targ
             "content": d[0]
         })
         sol.append(d[1])
-    return l,sol 
+        debug+= f"({d[0]},{d[1]}"
+    return l,sol, debug
 
 
 
