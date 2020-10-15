@@ -3,9 +3,7 @@ extends= /model/AMC2/QCM-AMCE.pl
 
 title= Anna's Exo
 
-text=
 
-onepergroup = Vraiment
 
 questions==
 
@@ -63,6 +61,7 @@ Pour chaque question, on peut mettre des options entre [] :
 
 [nbb=,nbg=] pour déterminer le nombre de bonne et de mauvaise réponse pour un checkbox 
 ==
+
 
 
 
