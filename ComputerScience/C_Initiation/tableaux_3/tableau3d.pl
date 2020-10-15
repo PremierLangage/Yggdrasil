@@ -9,7 +9,7 @@ author=
 
 text==  
  
-Ecrire une fonction `remplir_tableau(....)` qui : 
+Ecrire une fonction `fill_tab(....)` qui : 
 
 <ul>
   <li>reçoit en paramètre un tableau à <u>trois dimensions</u> et retourne `1` si les paramètres numériques sont supérieurs à `0`, sinon retourne `0`</li>
@@ -42,7 +42,7 @@ codebefore==
 ==
 
 editor.code==
-void remplir_tableau(........, int tab[][COL][N]){
+void fill_tab(........, int tab[][COL][N]){
 
 /* à compléter */
 
@@ -57,7 +57,7 @@ void display (.......) {
 
 solution==
 
-int remplir_tableau(int LI, int COL, int N, int tab[][COL][N]){
+int fill_tab(int LI, int COL, int N, int tab[][COL][N]){
 	
 	int i,j,k;
 	int var=1;
@@ -118,7 +118,7 @@ int main(int argc, char* argv[]){
 
 	int tab[LI][COL][N];
 	
-	if (remplir_tableau(LI,COL,N,tab)==1)
+	if (fill_tab(LI,COL,N,tab)==1)
 		if (display(LI,COL,N,tab)==1)
 			return 1;
 
