@@ -63,7 +63,7 @@ if inputstring:
     mplsoluce0="Test perso\n"+inputstring+"\n"
 
 ==
-
+plsoluce=
 
 form==
 {{ editor1 | component }}
@@ -79,6 +79,7 @@ v2
 version
 terminer
 ==
+
 
 
 
