@@ -17,7 +17,7 @@ def fromcsv(filename, sourcecol="source", targetcol="target"):
             if row[targetcol] not in d:
                 d[row[targetcol]] = "target"+str(n)
             MatchListItem.append({"id":d[row[targetcol]] ,"content":row[targetcol], "target": True})
-            expected.append({ "source": "source"+str(n), "target": "target"+str(n) })
+            expected.append({ "source": "source"+str(n), "target": d[row[targetcol]]})
         return MatchListItem,expected
 
 def getrandomlines(filename="content.csv",number=4, sourcecol="source", targetcol="target", unique=True):
