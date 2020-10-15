@@ -57,6 +57,29 @@ Après l'appel boo(A,B) que contiennent les tableaux A et B ?
 - A : 5 6 7 8 9 3 4 4 5 5 | B : 1 1 2 2 3 0 0 0 0 0
 - rien, la déclaration de B est incomplète
 
+** On considère la fonction suivante :
+
+
+     void afficheTruc(int tab[], int n, int taille){
+
+        int i;
+
+        for(i=0;i<taille;i++)
+
+          if(tab[i]<n)
+
+            printf("%d", tab[i]);
+
+          else if(tab[i]==n)
+
+            printf(" ");
+
+     }
+     
+             
+
+
+
 
 
 
