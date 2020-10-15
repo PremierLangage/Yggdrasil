@@ -12,7 +12,7 @@ def getrandomselection(filename="content.csv", number=4,sourcecol="source", targ
             "content": d[0]
         })
         sol.append(d[1])
-        debug+= str(d)
+        debug+= str(d)+"|"
     return l,sol, debug
 
 
