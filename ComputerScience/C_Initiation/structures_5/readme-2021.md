@@ -33,19 +33,22 @@ tag=
 **Changements:**
     - 
 **Remarques/commentaires:**
-    -
-# Exercice 4 - 
+    - ras
+# Exercice 4 - Polygones
 
-
+@ /ComputerScience/C_Initiation/structures_5/polygones.pl
 tag=
 
-# Exercice 5 - 
+**Remarques/commentaires:**
+    - ne pas laisser toute la réponse comme guide
 
-tag=boucle|bouclesImbriquées|ChaineCaracteres
+# Exercice 5 - Combat / Jeu de rôle
 
-@ /ComputerScience/python/AP1-2021/chapitre3/CouplesXY.pl
+@ /ComputerScience/C_Initiation/structures_5/JdR.pl
+tag=
 
-
+**Remarques/commentaires:**
+    - ne pas laisser toute la réponse comme guide
 
 
 
