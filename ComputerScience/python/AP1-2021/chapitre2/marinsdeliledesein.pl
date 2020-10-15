@@ -49,7 +49,7 @@ Et y’en a plus qui tombe à l’eau et tra la la la lère!""")
 
 ==
 
-plsoluce0==
+plsoluce==
 Test 1 | 1
 Test 4 | 4
 Test 0 | 0
