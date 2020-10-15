@@ -1,5 +1,6 @@
 
 import csv, json, random
+
 def fromcsv(filename, sourcecol="source", targetcol="target"):
     """
     Warning doesn't work for non mapping data.
