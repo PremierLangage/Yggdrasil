@@ -1,16 +1,5 @@
 
 
-extends = /model/multistep.pl
-
-@ /model/AMC2/AMC2.py [AMC.py]
-
-@ aleaq.py 
-
-settings.cumulative % false
-
-# une seule quetions par groupe de questions 
-#onepergroup % true
-
 # NE MODIFIER PAS CE FICHIER MERCI 
 # NE MODIFIER PAS CE FICHIER MERCI 
 # NE MODIFIER PAS CE FICHIER MERCI 
@@ -23,6 +12,18 @@ settings.cumulative % false
 
 # FAITES UN EXTENDS DESSUS ET DEFINISER VOTRE BALISE questions
 # extends=  /model/AMC2/essaitextselect.pl 
+
+extends = /model/multistep.pl
+
+@ /model/AMC2/AMC2.py [AMC.py]
+
+@ aleaq.py 
+
+settings.cumulative % false
+
+# une seule quetions par groupe de questions 
+#text=
+# onepergroup % true
 
 questions==
 
