@@ -75,7 +75,7 @@ Et moi (Fred), comme Eùùanuel, j'ai copié les fichiers depuis leur répertoir
 
 Chaohui a copie les fichiers et fait certians modifications pour que l'exos soient plus clairs
 Remarque:
-- Pour l'instant, loop_exo.pl de problemes (le resultat attendu n'est pas bons) et je l'ai commente.
+- loop_exo.pl a de problemes (le resultat attendu n'est pas bons) et je l'ai commente.
 - Je ne sais pas pourquoi dynawhile.pl a ete mis dans le fichier .pltp et je l'ai commente
 
 # Exercice 9 (nombres diviseurs)
@@ -93,5 +93,6 @@ Remarque:
 # Exercice 11 (Boucle d'OR (repetable))
 # tag=InstructionsRepetitives|ForInRange
 # @ /ComputerScience/python/AP1-2021/chapitre2/loop_exo.pl
+
 
 
