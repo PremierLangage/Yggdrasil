@@ -1,6 +1,6 @@
 Latex:1
 
-** Dans la fonction suivante (remplissant depuis le clavier un tableau tab de taille taille),
+**[group=prenom] Dans la fonction suivante (remplissant depuis le clavier un tableau tab de taille taille),
    quelles lignes sont incorrectes ? : 
 
 
@@ -27,7 +27,7 @@ Latex:1
 - aucune de celles-ci
 
 
-** On définit deux tableaux de dix int par :
+**[group=prenom] On définit deux tableaux de dix int par :
 
 
      int A[10]={5,6,7,8,9};
@@ -57,7 +57,7 @@ Après l'appel boo(A,B) que contiennent les tableaux A et B ?
 - A : 5 6 7 8 9 3 4 4 5 5 | B : 1 1 2 2 3 0 0 0 0 0
 - rien, la déclaration de B est incomplète
 
-** On considère la fonction suivante :
+**[group=prenom] On considère la fonction suivante :
 
 
      void afficheTruc(int tab[], int n, int taille){
@@ -84,15 +84,4 @@ Qu'affiche l'appel <strong>afficheTruc(tab, 2,4)</strong> lorsque tab est défin
 -10 2
 -1 02
 -1 0 2
-
-
-
-
-
-
-
-
-
-
-
 
