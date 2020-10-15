@@ -77,7 +77,7 @@ Après l'appel boo(A,B) que contiennent les tableaux A et B ?
      }
 
 
-Qu'affiche l'appel afficheTruc(tab, 2,4) lorsque tab est défini par int tab[6] = {1,0,2,3,2,1}; ?
+Qu'affiche l'appel <strong>afficheTruc(tab, 2,4)</strong> lorsque tab est défini par <strong>int tab[6] = {1,0,2,3,2,1};<strong> ?
 
 + 10
 -10 1
