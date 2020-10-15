@@ -39,13 +39,13 @@ On défini la fonction boo par :
 
      void boo(int untab[],int deuxtab[]){
 
-     int tmp;
+        int tmp;
 
-     tmp=*untab;
+        tmp=*untab;
 
-     *untab=*deuxtab;
+        *untab=*deuxtab;
 
-     *deuxtab=tmp;
+        *deuxtab=tmp;
 
      }
 
@@ -56,6 +56,7 @@ Après l'appel boo(A,B) que contiennent les tableaux A et B ?
 - A : 1 1 2 2 3 3 4 4 5 5 | B : 5 6 7 8 9 0 0 0 0 0
 - A : 5 6 7 8 9 3 4 4 5 5 | B : 1 1 2 2 3 0 0 0 0 0
 - rien, la déclaration de B est incomplète
+
 
 
 
