@@ -8,6 +8,9 @@ textstep ==
 
 title= Compréhension de code 
 
+text=
+onepergroup % true
+
 questions=@ QuestionsAnalyseCode.txt
 
 tag=Tableau|Initialisation|ParcoursTableau|Boucle
