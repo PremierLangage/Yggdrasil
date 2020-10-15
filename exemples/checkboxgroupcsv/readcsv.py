@@ -5,6 +5,7 @@ def getrandomselection(filename="content.csv", number=4,sourcecol="source", targ
     data = getrandomlines(filename,number,sourcecol, targetcol)
     l=[]
     sol=[]
+    debug=""
     for i,d in enumerate(data):
         l.append({
             "id": str(i),
