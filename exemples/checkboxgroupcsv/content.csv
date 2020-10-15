@@ -1,4 +1,4 @@
-target;source
+target,source
 Tuberculose,bactéries
 Tétanos,bactéries
 Typhoïde,bactéries
@@ -11,3 +11,4 @@ Grippe,virus
 Bronchiolite,virus
 Paludisme,parasites
 Toxoplasmose,parasites
+
