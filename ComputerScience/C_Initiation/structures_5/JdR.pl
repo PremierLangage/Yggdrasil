@@ -8,11 +8,11 @@ text==
 Chaque piece d'un jeu de plateau est caractérié par:  
  -sa couleur    
  -sa force  
- -son agileté  
+ -son agilité  
  -ses points de vie.    
  Lorsque deux pieces de couleur différentes se rencontrent,
  un combat a lieu. Chaque joueur lance un dé et on compare les sommes (valeur du dé +force +agileté).
-  La plus haute somme détermine le vainqueur et la différence des sommes est soustraite aux points de vie du vaincu. En cas d'ex-aeco, il ne se passe rien pour ce tour. Le tirage se répète jusqu'à  ce qu'un des joueurs ait un nombre de point de vie négatifs ou nul.  
+  La plus haute somme détermine le vainqueur et la différence des sommes est soustraite aux points de vie du vaincu. En cas d'ex-aequo, il ne se passe rien pour ce tour. Le tirage se répète jusqu'à  ce qu'un des joueurs ait un nombre de point de vie négatifs ou nul.  
 Ecrire une fonction `combat` qui reçoit deux joueurs et réalise le combat suivant ces règles et change le nombre de point de vie de chaque joueur.
 La fonction  renvoie 1 si un combat a eu lieu ( couleurs différentes) et 0 sinon.  .
 Le lancé de dé est simulé par la fonction `lance_de(.)` supposée déjà écrite.
@@ -127,5 +127,6 @@ tests==
 ["aléatoire ", "",str(random.randint(1000,2008))+" "+str(random.randint(0,4))+" "+str(random.randint(0,4))],
 ]
 ==
+
 
 
