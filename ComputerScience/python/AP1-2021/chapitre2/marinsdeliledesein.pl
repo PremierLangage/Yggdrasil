@@ -7,7 +7,7 @@ title = Y’a des marins sur l’île de Sein qui partent en mer en bateau
 
 
 
-texte==
+text==
 
 Pour aider les parent de maternelle nous allons écrire le text de la chanson des Marins de l'ile de Sein.
 IL suffira de demander 
