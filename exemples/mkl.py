@@ -7,21 +7,25 @@ def fromcsv(filename, sourcecol="source", targetcol="target"):
     MatchListItem=[]
     expected=[]
     n=789
+    d={}
     with open(filename,"r") as csvfile:
         reader=csv.DictReader(csvfile,delimiter=';')
         for row in reader:
             n+=1
             MatchListItem.append({"id":"source"+str(n),"content":row[sourcecol], "source": True})
-            MatchListItem.append({"id":"target"+str(n),"content":row[targetcol], "target": True})
+            if row[targetcol] not in d:
+                d[row[targetcol]] = "target"+str(n)
+            MatchListItem.append({"id":d[row[targetcol]] ,"content":row[targetcol], "target": True})
             expected.append({ "source": "source"+str(n), "target": "target"+str(n) })
         return MatchListItem,expected
 
-def getrandomlines(filename="content.csv",number=4, sourcecol="source", targetcol="target"):
+def getrandomlines(filename="content.csv",number=4, sourcecol="source", targetcol="target", unique=True):
     l=[]
     with open(filename,"r") as csvfile:
         reader=csv.DictReader(csvfile,delimiter=',')
         for row in reader:
             l.append((row[sourcecol],row[targetcol]))
+    
     if len(l)<number:
         number = len(l)
     random.shuffle(l)
@@ -74,6 +78,7 @@ def selectionfromcsvold(filename, number=4, sourcecol="source", targetcol="targe
             MatchListItem.append({"id":"target"+str(n),"content":l[n][1], "target": True})
             expected.append({ "source": "source"+str(n), "target": "target"+str(n) })
     return MatchListItem,expected
+
 
 
 
