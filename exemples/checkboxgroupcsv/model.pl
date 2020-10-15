@@ -6,7 +6,7 @@ builder =@ /builder/before.py
 
 group =: CheckboxGroup
 
-@ content.csv 
+@ maladies.csv [content.csv] 
 @ ../mkl.py
 
 @ readcsv.py [readcsv.py]
@@ -27,7 +27,7 @@ indexs = [ i for i,x in enumerate(solution) if x==solutionvalue ]
 title = Checkbox Group Component
 
 text==
-Indiquez les maladie causées par des {{solutionvalue}}
+Indiquez les maladies causées par des {{solutionvalue}}
 
 ==
 
