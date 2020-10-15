@@ -16,7 +16,7 @@ def fromcsv(filename, sourcecol="source", targetcol="target"):
             MatchListItem.append({"id":"source"+str(n),"content":row[sourcecol], "source": True})
             if row[targetcol] not in d:
                 d[row[targetcol]] = "target"+str(n)
-            MatchListItem.append({"id":d[row[targetcol]] ,"content":row[targetcol], "target": True})
+                MatchListItem.append({"id":d[row[targetcol]] ,"content":row[targetcol], "target": True})
             expected.append({ "source": "source"+str(n), "target": d[row[targetcol]]})
         return MatchListItem,expected
 
