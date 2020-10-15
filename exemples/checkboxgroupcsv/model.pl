@@ -17,7 +17,10 @@ import random,readcsv, mkl
 group.items,solution, debug = readcsv.getrandomselection(sourcecol="target",targetcol="source")
 
 solutionvalue =random.choice(solution)
-group.index = [ i for i,x in enumerate(solution) if x==solutionvalue ]
+
+for i, it in enumerate(group.items):
+    it['index'] = i
+indexs = [ i for i,x in enumerate(solution) if x==solutionvalue ]
 
 ==
 
@@ -39,8 +42,8 @@ right = 0
 total = 0
 for item in group.items:
     checked = item['checked']
-    content = int(item['content'])
-    if content == "solution:
+    iindex = item['index']
+    if iindex in indexs:
         total += 1
         item['css'] = 'success-border animated pulse infinite'
         if checked:
