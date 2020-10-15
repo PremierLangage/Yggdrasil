@@ -3,7 +3,7 @@ import csv, json, random
 
 def fromcsv(filename, sourcecol="source", targetcol="target"):
     """
-    Warning doesn't work for non mapping data.
+    Will work for non mapping. 
     """
     MatchListItem=[]
     expected=[]
@@ -26,7 +26,7 @@ def getrandomlines(filename="content.csv",number=4, sourcecol="source", targetco
         reader=csv.DictReader(csvfile,delimiter=',')
         for row in reader:
             l.append((row[sourcecol],row[targetcol]))
-    
+
     if len(l)<number:
         number = len(l)
     random.shuffle(l)
@@ -38,6 +38,10 @@ def selectionfromtable(table, number=4):
     table is a list of pairs [(source,target),(source,target),...]
     """
     l=table
+    dd={}
+    for s,t in l:
+        dd.get(t,[]).append(s)
+    
     random.shuffle(l)
     l =  l[:min(number,len(l))]
     MatchListItem=[]
