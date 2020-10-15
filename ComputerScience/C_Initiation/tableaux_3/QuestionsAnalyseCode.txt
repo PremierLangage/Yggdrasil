@@ -5,7 +5,7 @@ Latex:1
 
 
 
-     1 void scan_tab (int tab[], int taille) {
+     1 void scan_tab(int tab[], int taille){
 
      2     int i;
 
@@ -84,6 +84,7 @@ Qu'affiche l'appel <strong>afficheTruc(tab, 2,4)</strong> lorsque tab est défin
 -10 2
 -1 02
 -1 0 2
+
 
 
 
