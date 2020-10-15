@@ -47,7 +47,11 @@ tag=
 @ /ComputerScience/C_Initiation/structures_5/JdR.pl
 tag=
 
+**Changements:**
+    - quelques typos
+
 **Remarques/commentaires:**
+    - Joueur ou Pièce ?
     - ne pas laisser toute la réponse comme guide
 
 
