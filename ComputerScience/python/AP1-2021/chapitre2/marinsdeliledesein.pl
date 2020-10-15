@@ -10,11 +10,10 @@ before=
 
 text==
 
-Pour aider les parent de maternelle nous allons écrire le text de la chanson des Marins de l'ile de Sein.
-IL suffira de demander 
+Pour aider les parents de maternelle nous allons leur écrire le texte de la chanson des Marins de l'ile de Sein.  
+Il suffira de demander 
 
     "combien il y a de marin sur l'ile de Sein ? "
-
     12 
 et d'afficher :
 
