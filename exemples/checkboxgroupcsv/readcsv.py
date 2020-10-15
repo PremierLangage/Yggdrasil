@@ -1,5 +1,4 @@
-
-
+import mkl
 
 def getrandomselection(filename="content.csv", number=4,sourcecol="source", targetcol="target"):
 
@@ -13,5 +12,6 @@ def getrandomselection(filename="content.csv", number=4,sourcecol="source", targ
         })
         sol.append(d[1])
     return l,sol 
+
 
 
