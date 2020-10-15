@@ -16,7 +16,7 @@ import random,readcsv, mkl
 
 group.items,solution, debug = readcsv.getrandomselection(sourcecol="target",targetcol="source")
 
- 
+
 ==
 
 title = Checkbox Group Component
