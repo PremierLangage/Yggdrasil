@@ -28,7 +28,7 @@ import sys
 
 DEPART=12
 PROMPT="$ "
-INCONNUE="Commande Inconnue\n"
+INCONNUE="Commande Inconnue"
 
 def inputstring(l=["graine","lancer","consulter","quitte","double","terminer","v1","v2","version"]):
     s=""
@@ -176,5 +176,6 @@ def main(args):
 if __name__ == '__main__':
     import sys
     sys.exit(main(sys.argv))
+
 
 
