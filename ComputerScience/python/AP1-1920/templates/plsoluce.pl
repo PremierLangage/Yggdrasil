@@ -33,11 +33,13 @@ pour avoir une entrée multi ligne
 @ utils/feedback2.py
 @ utils/template.html
 
+settings.requirements=title,text,soluce,plsoluce
 
 # une interface standard d'exercice avec un editeur pour la réponse
 form=@ /python/form/editorform.html
 
 settings.allow_reroll=1
+
 
 
 
