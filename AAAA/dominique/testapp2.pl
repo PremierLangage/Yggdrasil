@@ -8,7 +8,7 @@ extends= /ComputerScience/python/AP1-1920/templates/plsoluce.pl
 @ codeevaluator.py [grader.py]
 
 
-settings.requirements=title,text,soluce,bob
+settings.requirements=title,text,soluce,bob|plsoluce
 
 title= Test pour le mini projet 2 AP1 2020/2021 
 
