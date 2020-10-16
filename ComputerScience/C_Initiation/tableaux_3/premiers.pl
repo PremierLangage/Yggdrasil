@@ -28,7 +28,7 @@ codebefore==
 #include <stdio.h>
 
 #define N 5
-
+/*déclaration du prototype de la fonction pgcd utilisée par la suite*/
 int pgcd(int,int);
 ==
 
