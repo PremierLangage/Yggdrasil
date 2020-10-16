@@ -1,6 +1,7 @@
 
 title=Tableau 2d de caractères
-tag=tableau 2d
+Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau
+
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
 
