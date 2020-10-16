@@ -20,7 +20,7 @@ extends = /model/multistep.pl
 @ aleaq.py 
 
 settings.cumulative % false
-settings.requirements=questions|title|text
+
 
 # une seule quetions par groupe de questions 
 #text=
