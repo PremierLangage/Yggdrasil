@@ -5,7 +5,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
 
 text==
-Ecrire une fonction de protopype `void remplit(char t[MAX][MAX],int li,int col);` 
+Ecrire une fonction de protopype `void remplit(char tab[MAX][MAX],int li,int col)` 
 qui remplit la partie effective avec les lettres minuscules consécutives.<br>
 Après la lettre $%\tt{z}%$ on repart de la lettre $%\tt{a}%$ <br>
 Exemples (avec MAX 50)<br>
@@ -24,17 +24,18 @@ codebefore==
 
 #include <stdio.h>
 #include <stdlib.h>
+
 #define MAX 50
 
 ==
 
 editor.code==
-void remplit(char t[][MAX],int li,int col){
+void remplit(char tab[][MAX],int li,int col){
 
 }
 ==
 solution==
-void remplit(char t[MAX][MAX],int li,int col){
+void remplit(char tab[MAX][MAX],int li,int col){
   char l='a';
   int d=0;
   int i,j;
@@ -48,7 +49,6 @@ void remplit(char t[MAX][MAX],int li,int col){
 ==
 codeafter==
 void affiche  (char t[][MAX],int li,int col){
- 
   int i,j;
   for(i= 0;i<li;i++){
     for(j=0;j<col;j++)
@@ -56,6 +56,7 @@ void affiche  (char t[][MAX],int li,int col){
     printf("\n");
     }
 }
+
 int main(void){
   char t[MAX][MAX];
   int li,col;
@@ -73,6 +74,7 @@ tests==
 ["aléatoire ", "",str(random.randint(4,8))+" "+str(random.randint(9,15))],
 ]
 ==
+
 
 
 
