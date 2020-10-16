@@ -25,8 +25,6 @@ def onefromeachgroup(questions):
         G= [ x for x in q.get('options',{}) if x.startswith('group=') ]
 
         if len(G)==0:
-            n=getmultioption(q)
-
             nogroup.append(q)
         elif len(G) > 1:
             print('trop de groupes',str(G))
@@ -41,7 +39,7 @@ def onefromeachgroup(questions):
     return nogroup
 
 def getmultioption(q):
-    return optiondic(q["options"]).get("nbq",1)
+    return int(optiondic(q["options"]).get("nbq",1))
 
 def optiondic(l):
     d={}
