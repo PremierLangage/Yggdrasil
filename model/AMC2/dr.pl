@@ -16,13 +16,17 @@ questions==
 + a
 - b
 
-** CheckBox 
+** CheckBox  
+    c=2<br/>
+    print(c)<br/>
+
 + a
 - b
 
 
 
 ==
+
 
 
 
