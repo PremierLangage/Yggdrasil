@@ -21,7 +21,7 @@ class CustomRadio(Component):
         Set the component solution from an index.
         """
         if isinstance(index,list):
-            self._sol = index[0]]
+            self._sol = index[0]
         elif isinstance(index,int):
             self._sol = index
 
