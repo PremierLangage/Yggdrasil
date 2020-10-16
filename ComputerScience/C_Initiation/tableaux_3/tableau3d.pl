@@ -118,7 +118,7 @@ int main(int argc, char* argv[]){
  	COL=atoi(argv[2]);
  	N=atoi(argv[3]);
 
-	int tab[LI][COL][N];
+    int tab[LI][COL][N];
 	
 	if (fill_tab(LI,COL,N,tab)==1)
 		if (display(LI,COL,N,tab)==1)
