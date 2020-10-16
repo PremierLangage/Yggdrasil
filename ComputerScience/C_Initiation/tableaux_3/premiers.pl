@@ -57,13 +57,13 @@ int pgcd(int a,int b){
         return a;
     r=a%b;
 
-while(r!=0){
-    r=a%b;  
-    if(r!=0){
-        a=b;
-        b=r ;
+    while(r!=0){
+        r=a%b;  
+        if(r!=0){
+            a=b;
+            b=r ;
+        }
     }
- }
     return b;
 }
 
