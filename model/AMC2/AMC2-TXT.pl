@@ -4,7 +4,7 @@ extends= /model/AMC2/QCM-AMCE.pl
 
 title= Fichiers de questions
 
-onepergroup-true
+onepergroup=true
 
 
 text==
