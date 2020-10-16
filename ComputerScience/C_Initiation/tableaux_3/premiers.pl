@@ -9,7 +9,7 @@ fixme= Il faudrait test le temps de calcul ...
 
 text==  
  
-Ecrire une fonction `premiers_entre_eux` qui reçoit un  tableau carré N$%\times%$N (N est une constante)  
+Ecrire une fonction `premiers_entre_eux` qui reçoit un tableau carré N$%\times%$N (N est une constante)  
  La fonction remplit la case [i][j] du tableau avec:  
 -1 ssi $%i=j=0%$  
 1  ssi $% pgcd(i,j)=1%$  
