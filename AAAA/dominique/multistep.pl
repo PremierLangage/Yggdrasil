@@ -34,7 +34,7 @@ questions==
 
 ==
 
-questions=@ /ComputerScience/python/AP1-2021/QCM/falque.txt
+questions=@ justines.txt
 
 
 title= Muti step a la DR
@@ -172,5 +172,6 @@ form==
     {{ ztext | component }}
 {% endif %}
 ==
+
 
 
