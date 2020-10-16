@@ -1,7 +1,7 @@
 
 title= Tableau à 3 dimensions
 
-tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau|
+tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
