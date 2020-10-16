@@ -7,7 +7,6 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
 fixme= Il faudrait test le temps de calcul ... 
 
-
 text==  
  
 Ecrire une fonction `premiers_entre_eux` qui reçoit un  tableau carré N$%\times%$N (N est une constante)  
