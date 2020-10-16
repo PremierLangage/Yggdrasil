@@ -1,5 +1,5 @@
 
-title= Nombres  premiers entre eux
+title= Nombres premiers entre eux
 
 tag=Fonction|DeclarationFonction|Boucle|RetourFonction
 
@@ -112,6 +112,7 @@ tests==
   
   ]
 ==
+
 
 
 
