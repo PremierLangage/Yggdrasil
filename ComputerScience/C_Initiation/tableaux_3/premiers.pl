@@ -13,8 +13,8 @@ Ecrire une fonction `premiers_entre_eux` qui reçoit un  tableau carré N$%\time
  La fonction remplit la case [i][j] du tableau avec:  
 -1 ssi $%i=j=0%$  
 1  ssi $% pgcd(i,j)=1%$  
-0 sinon
-
+0 sinon<br>
+<br>
 Vous n'avez pas à écrire la fonction `pgcd` vue en TD. Vous devez juste l'utiliser.
 pour rappel voici son prototype : <br>
 `int pgcd(int numerateur, int denominateur)`<br>
@@ -51,6 +51,25 @@ void premiers_entre_eux(int t[][N]){
                 t[i][j]=t[j][i]=0;
     t[0][1]=t[1][0]=1;
 }
+
+/* OCE autre solution qui marche mais peut être moins optimisée ? */
+/* OCE j'ose pas toucher à l'autre solution c'est peut être Marc*/
+/* qui suis-je face à Marc ??? */
+/* Nan ne dites rien !! */
+
+/* void premiers_entre_eux(int t[][N]){ */
+/*    */
+/*    int i,j;   */
+/*    for(i=0;i<N;i+=1){  */
+/*        for(j=0;j<N;j+=1){  */
+/*            if(pgcd(i,j)==1)   */
+/*                t[i][j]=1;   */
+/*            else  */
+/*                t[i][j]=0; */
+/*        } */
+/*    } */
+/*    t[0][0]=-1; */
+/*} */
 ==
 
 codeafter==
