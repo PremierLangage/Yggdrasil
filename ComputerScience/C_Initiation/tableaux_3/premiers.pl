@@ -45,7 +45,7 @@ void premiers_entre_eux(int t[][N]){
                 t[i][j]=t[j][i]=1;
             else
                 t[i][j]=t[j][i]=0;
-    /*t[0][1]=t[1][0]=1;*/
+    t[0][1]=t[1][0]=1;
 }
 ==
 
