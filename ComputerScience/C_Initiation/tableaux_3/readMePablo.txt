@@ -7,8 +7,7 @@ Miroir : c'est OK tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre
 inversions.pl fait   tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau|TransmissionAdresse
 tri.pl : fait tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau|TransmissionAdresse|Tri
 decalage : fait tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau
-
-tableau2d : énoncée légèrement modifiée c'est ok 
+tableau2d : énoncée légèrement modifiée c'est ok tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau|
 
 
 
