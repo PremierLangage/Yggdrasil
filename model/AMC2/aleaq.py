@@ -121,9 +121,9 @@ def buildquestion(question):
             nbg=int(d.get("good",1))
             nbb=int(d.get("bad",3))
             
-            bads= random.sample(bads , nbb) # en choisir n-1
+            bads= random.sample(bads ,max(len(bads),nbb)) 
             random.shuffle(bads)
-            goods=random.sample(goods , nbb) # en choisir n-1
+            goods=random.sample(goods ,max(len(goods), nbg))
             random.shuffle(goods)
             question['items'],question['index']=buildlistes(goods,bads)
 
