@@ -24,9 +24,10 @@ settings.cumulative % false
 
 # une seule quetions par groupe de questions 
 #text=
-# onepergroup % true
 
-questionsX==
+onepergroup=true
+
+exemplesdequestions==
 
 
 
