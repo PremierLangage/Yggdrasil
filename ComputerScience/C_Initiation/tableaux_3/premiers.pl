@@ -74,7 +74,8 @@ for(i=0;i<N;i++){
         printf("%d ",t[i][j]);
     printf("\n");
     }
- }
+}
+
 int main(void) {
 	int t[N][N] ;
     premiers_entre_eux(t);
