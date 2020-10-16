@@ -23,9 +23,6 @@ editor.code==
 
 ==
 
-
-
-
 codebefore==
 
 #include <stdlib.h>
@@ -51,7 +48,6 @@ while(r!=0){
     return b;
 }
     
-
 void premiers_entre_eux(int t[][N]){
     int i,j;
 
@@ -68,9 +64,7 @@ t[0][1]=t[1][0]=1;
 }
 ==
 
-
 codeafter==
-
 void affiche(int t[][N])[
 int i,j;
 for(i=0;i<N;i++){
@@ -87,12 +81,12 @@ return 0;
 }
 ==
 
-
 tests==
 [ ["Basique", "", ""],
   
   ]
 ==
+
 
 
 
