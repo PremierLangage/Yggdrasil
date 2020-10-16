@@ -64,7 +64,7 @@ list_questions = parse_AMC_TXT(questions)
 
 l2=[]
 for q in list_questions:
-    n=getmultioption(q)
+    n=int(getmultioption(q))
     for _ in range(n):
         l2.append(buildquestion(q))
 list_questions=l2
