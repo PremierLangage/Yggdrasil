@@ -1,11 +1,10 @@
 
 title= Nombres premiers entre eux
 
-tag=Fonction|DeclarationFonction|Boucle|RetourFonction
+tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
-fixme= Il faudrait test le temps de calcul ... 
 
 text==  
  
