@@ -48,7 +48,7 @@ void remplit(char tab[MAX][MAX],int li,int col){
 }
 ==
 codeafter==
-void affiche  (char tab[][MAX],int li,int col){
+void affiche (char tab[][MAX],int li,int col){
   int i,j;
   for(i= 0;i<li;i++){
     for(j=0;j<col;j++)
