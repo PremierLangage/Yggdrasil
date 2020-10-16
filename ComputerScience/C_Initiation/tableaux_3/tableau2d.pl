@@ -9,11 +9,11 @@ Ecrire une fonction de protopype `void remplit(char tab[MAX][MAX],int li,int col
 qui remplit la partie effective avec les lettres minuscules consécutives.<br>
 Après la lettre $%\tt{z}%$ on repart de la lettre $%\tt{a}%$ <br>
 Exemples (avec MAX 50)<br>
-remplit(t,3,4) transforme les 3 premières lignes et 4 premières colonnes en<br>
+remplit(tab,3,4) transforme les 3 premières lignes et 4 premières colonnes en<br>
 abcd<br>
 efgh<br>
 ijkl<br>
-remplit(t,4,10) transforme les 4 premières lignes et 10 premières colonnes en<br>
+remplit(tab,4,10) transforme les 4 premières lignes et 10 premières colonnes en<br>
 abcdefghij<br>
 klmnopqrst<br>
 uvwxyzabcd<br>
