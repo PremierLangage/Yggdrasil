@@ -36,31 +36,32 @@ solution==
     
 void premiers_entre_eux(int t[][N]){
     int i,j;
+    t[0][0]=-1;
 
-   t[0][0]=-1;
     for (i=1;i<N;i++)
         t[0][i]= t[i][0]=0;
     for(i=1;i<N;i++)
-for(j=i;j<N;j++)
-    if(pgcd(i,j)==1)
-            t[i][j]=t[j][i]=1;
-    else
-        t[i][j]=t[j][i]=0;
-t[0][1]=t[1][0]=1;
+        for(j=i;j<N;j++)
+            if(pgcd(i,j)==1)
+                t[i][j]=t[j][i]=1;
+            else
+                t[i][j]=t[j][i]=0;
+    t[0][1]=t[1][0]=1;
 }
 ==
 
 codeafter==
 
 int pgcd(int a,int b){
-if(b==0)
-return a;
-r=a%b;
+    int r;
+    if(b==0)
+        return a;
+    r=a%b;
 
 while(r!=0){
     r=a%b;  
     if(r!=0){
-      a=b;
+        a=b;
         b=r ;
     }
  }
