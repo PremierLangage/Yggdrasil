@@ -77,9 +77,9 @@ for(i=0;i<N;i++){
  }
 int main(void) {
 	int t[N][N] ;
-premiers_entre_eux(t);
-affiche(t);
-return 0;
+    premiers_entre_eux(t);
+    affiche(t);
+    return 0;
 }
 ==
 
