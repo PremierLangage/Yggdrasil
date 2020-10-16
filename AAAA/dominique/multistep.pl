@@ -129,9 +129,7 @@ if step> -1:
 
 step = step+1
 if step<nbstep:
-    text="""
-    <strong> Question {{ step + 1 }}. </strong> 
-    {{ statement | safe }}"""
+
     q=list_questions[step]
     if q['type'] == "Radio":
         radio.setitems(q['items'])
@@ -147,7 +145,9 @@ if step<nbstep:
         ztext.setdata_from_textDR(q['items'][0])
     statement = q['text']
     grade=(currentscore, "<br>")
-
+    text="""
+    Question {{ step + 1 }}. 
+    {{ statement | safe }}"""
 else: # Fin de l'exo 
     text  = format_feedback_lightscore(currentscore, "") + feedbacks
     form= ""
