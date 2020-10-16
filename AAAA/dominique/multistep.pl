@@ -15,26 +15,21 @@ settings.cumulative % false
 
 questions==
 
-** Du bon code ?
+**   Lorsque vous disposez d'un bloc constitué de plus d'une ligne dans un if, comment indiquez vous la fin du bloc ?
++On diminue l'indentation à la ligne suivant le bloc, pour revenir à une indentation identique à celle de la ligne possédant l'instruction if
+-On utilise une accolade } après la dernière ligne du bloc if
+-On ne met pas le caractère : à la dernière ligne du bloc if
+-On met une majuscule à la première lettre de la ligne suivant la fin du bloc if
 
-
-
-     int i, tab[10];
-
-     for(i=0; i<10; i++) 
-
-        scanf("%d",&tab[i]);
-
-
-+ oui
-- non
-
-*+ le quel n'est pas un mot clef 
->auto define int {{def}} break
+*   Lorsque vous disposez d'un bloc constitué de plus d'une ligne dans un if, comment indiquez vous la fin du bloc ?
++ On diminue l'indentation à la ligne suivant le bloc, pour revenir à une indentation identique à celle de la ligne possédant l'instruction if
+- On utilise une accolade } après la dernière ligne du bloc if
+- On ne met pas le caractère : à la dernière ligne du bloc if
+- On met une majuscule à la première lettre de la ligne suivant la fin du bloc if
 
 ==
 
-questions=@ justines.txt
+#questions=@ justines.txt
 
 
 title= Muti step a la DR
@@ -166,7 +161,7 @@ else: # Fin de l'exo
 
 
 form==
-{% if q['type'] == "radio" %}
+{% if q['type'] == "Radio" %}
     {{ radio | component }}
 {% elif q['type'] == "Checkbox" %}
     {{ check | component }}
@@ -174,6 +169,7 @@ form==
     {{ ztext | component }}
 {% endif %}
 ==
+
 
 
 
