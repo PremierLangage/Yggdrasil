@@ -37,7 +37,7 @@ solution==
 void premiers_entre_eux(int t[][N]){
     int i,j;
     t[0][0]=-1;
-    for (i=1;i<N;i++)
+    for(i=1;i<N;i++)
         t[0][i]= t[i][0]=0;
     for(i=1;i<N;i++)
         for(j=i;j<N;j++)
