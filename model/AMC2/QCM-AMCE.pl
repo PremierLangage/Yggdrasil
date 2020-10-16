@@ -27,16 +27,13 @@ settings.cumulative % false
 
 questions==
 
-* Exo avec click sur un mot ici bonne est le bon mot 
-+ 1
-- édjhklqjhljfkh
-
-==
-beurk==
-=* Exo avec click sur un mot ici bonne est le bon mot 
+=*+ Exo avec click sur un mot ici bonne est le bon mot 
  Vous  pouvez en mettre plusieurs séparer vos mots par des espace 
  si vous souhaiter mettre un espace ajouter des crochet autour des caractères en question   
 >j'indique avec des doubles curly brackets la {{bonne}} réponse
+
+==
+beurk==
 
 
 =**[nb=13, group=odd] What are the $%odd%$ numbers ? 
