@@ -47,6 +47,10 @@ def optiondic(l):
     return d
 
 def buildlistes(g,b):
+    """
+    Création d'une liste fusionné avec choix aléatoire de l'ordre d'ajout 
+    des élements des deux listes.
+    """
     index=0
     r,ri=[],[]
     while g and b:
