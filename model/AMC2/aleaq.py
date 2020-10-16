@@ -38,6 +38,9 @@ def onefromeachgroup(questions):
         nogroup.append(random.choice(gl))
     return nogroup
 
+def getmultioption(q):
+    return optiondic(q["options"]).get("q",0)
+
 def optiondic(l):
     d={}
 
@@ -93,7 +96,7 @@ def buildquestion(question):
             bads=[]
             for defi in question.get('items'):
                 if defi.startswith("="):
-                        bads.extend(eval(defi[1:]))# ensemble des mauvaises réponces 
+                        bads.extend(eval(defi[1:]))# ensemble des mauvaises réponses 
                 else:
                     bads.append(defi)
             #debug question['text']=str(bads)
@@ -110,13 +113,13 @@ def buildquestion(question):
 
             for index,answer in enumerate(question.get('items')):
                 r=question.get('items')[index]
-                if r[0]=="=" : # Reponce a calculer
-                    if index in question.get('index'): # Bonne réponce 
+                if r[0]=="=" : # Reponse a calculer
+                    if index in question.get('index'): # Bonne réponse 
                         goods.extend(eval(r[1:]))
                     else:
                         bads.extend(eval(r[1:]))
                 else:
-                    if index in question.get('index'): # Bonne réponce 
+                    if index in question.get('index'): # Bonne réponse 
                         goods.append(r)
                     else:
                         bads.append(r)
@@ -138,6 +141,7 @@ def buildquestion(question):
         print(e)
         raise e
     
+
 
 
 
