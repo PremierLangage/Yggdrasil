@@ -1,7 +1,7 @@
 
 title= Tableau à 3 dimensions
 
-tag=tableau|fonction|parcoursTableau|
+tag=tableau|fonction|parcoursTableau|conditionnelles
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
