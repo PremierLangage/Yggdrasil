@@ -29,23 +29,10 @@ codebefore==
 
 #define N 5
 
+int pgcd(int,int);
 ==
 
 solution==
-int pgcd(int a,int b){
-if(b==0)
-return a;
-r=a%b;
-
-while(r!=0){
-    r=a%b;  
-    if(r!=0){
-      a=b;
-        b=r ;
-    }
- }
-    return b;
-}
     
 void premiers_entre_eux(int t[][N]){
     int i,j;
@@ -64,6 +51,22 @@ t[0][1]=t[1][0]=1;
 ==
 
 codeafter==
+
+int pgcd(int a,int b){
+if(b==0)
+return a;
+r=a%b;
+
+while(r!=0){
+    r=a%b;  
+    if(r!=0){
+      a=b;
+        b=r ;
+    }
+ }
+    return b;
+}
+
 void affiche(int t[][N])[
 int i,j;
 for(i=0;i<N;i++){
