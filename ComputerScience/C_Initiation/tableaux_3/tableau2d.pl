@@ -1,13 +1,15 @@
 
 title=Tableau 2d de caractères
+
 Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
+
 author= 
 
 text==
 Ecrire une fonction de protopype `void remplit(char tab[MAX][MAX],int li,int col)` 
-qui remplit la partie effective avec les lettres minuscules consécutives.<br>
+qui remplit la partie effective avec des lettres minuscules consécutives.<br>
 Après la lettre $%\tt{z}%$ on repart de la lettre $%\tt{a}%$ <br>
 Exemples (avec MAX 50)<br>
 remplit(tab,3,4) transforme les 3 premières lignes et 4 premières colonnes en<br>
@@ -75,6 +77,7 @@ tests==
 ["aléatoire ", "",str(random.randint(4,8))+" "+str(random.randint(9,15))],
 ]
 ==
+
 
 
 
