@@ -1,11 +1,11 @@
 
 title= Tableau à 3 dimensions
 
-tag=
+tag=tableau|fonction|
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
-author= 
+author= M2105
 
 text==  
  
