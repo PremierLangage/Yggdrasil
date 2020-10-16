@@ -34,6 +34,8 @@ questions==
 
 ==
 
+question=@ /ComputerScience/python/AP1-2021/QCM/falque.txt
+
 
 title= Muti step a la DR
 
