@@ -58,11 +58,11 @@ void affiche  (char t[][MAX],int li,int col){
 }
 
 int main(void){
-  char t[MAX][MAX];
+  char tab[MAX][MAX];
   int li,col;
   scanf("%d %d",&li,&col);
-  remplit(t,li,col);
-  affiche(t,li,col);
+  remplit(tab,li,col);
+  affiche(tab,li,col);
   return 0;
 }
 
