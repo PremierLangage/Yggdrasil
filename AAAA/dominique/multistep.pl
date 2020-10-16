@@ -16,11 +16,11 @@ settings.cumulative % false
 questions==
 
 ** poutfou
-
-    bande 
-    def
-    moules
-
+     <pre>
+    bande <br/>
+    def<br/>
+    moules<br/>
+    </pre>
 + oui
 - non
 
@@ -129,6 +129,9 @@ if step> -1:
 
 step = step+1
 if step<nbstep:
+    text="""
+    <strong> Question {{ step + 1 }}. </strong> 
+    {{ statement | safe }}"""
     q=list_questions[step]
     if q['type'] == "Radio":
         radio.setitems(q['items'])
@@ -142,7 +145,7 @@ if step<nbstep:
             check.shuffle()
     elif  q['type'] == 'TextSelect':
         ztext.setdata_from_textDR(q['items'][0])
-    text = "Question n°"+str(step+1)+": "+q['text']
+    statement = q['text']
     grade=(currentscore, "<br>")
 
 else: # Fin de l'exo 
@@ -151,6 +154,8 @@ else: # Fin de l'exo
     grade=(currentscore, "Merci et à Bientot.")
 
 ==
+
+
 
 form==
 {% if q['type'] == "radio" %}
@@ -161,4 +166,5 @@ form==
     {{ ztext | component }}
 {% endif %}
 ==
+
 
