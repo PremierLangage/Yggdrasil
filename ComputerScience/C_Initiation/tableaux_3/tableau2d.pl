@@ -1,7 +1,7 @@
 
 title=Tableau 2d de caractères
 
-Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau
+tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
@@ -77,6 +77,7 @@ tests==
 ["aléatoire ", "",str(random.randint(4,8))+" "+str(random.randint(9,15))],
 ]
 ==
+
 
 
 
