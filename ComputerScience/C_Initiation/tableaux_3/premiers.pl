@@ -15,6 +15,10 @@ Ecrire une fonction `premiers_entre_eux` qui reçoit un  tableau carré N$%\time
 1  ssi $% pgcd(i,j)=1%$  
 0 sinon
 
+Vous n'avez pas à écrire la fonction `pgcd` vue en TD. Vous devez juste l'utiliser.
+pour rappel voici son prototype : <br>
+`int pgcd(int numerateur, int denominateur)`<br>
+la fonction `pgcd` renvoie le plus petit dénominateur commun d'une fraction d'entier
 ==
 
 editor.code==
@@ -89,6 +93,7 @@ tests==
   
   ]
 ==
+
 
 
 
