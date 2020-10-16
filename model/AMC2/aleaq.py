@@ -70,8 +70,8 @@ def buildquestion(question):
     Question 
 
     """
-    if question.get('extended') == False:
-        return question
+    #if question.get('extended') == False:
+    #    return question
     if question.get('type') == 'TextSelect' :# j'ai pas de syntaxe etendue pour le moment 
         return question 
     try:
@@ -134,4 +134,5 @@ def buildquestion(question):
         print(e)
         raise e
     
+
 
