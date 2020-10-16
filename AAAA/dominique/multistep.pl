@@ -15,17 +15,22 @@ settings.cumulative % false
 
 questions==
 
-** poutfou
-     <pre>
-    bande <br/>
-    def<br/>
-    moules<br/>
-    </pre>
+** Du bon code ?
+
+
+
+     int i, tab[10];
+
+     for(i=0; i<10; i++) 
+
+        scanf("%d",&tab[i]);
+
+
 + oui
 - non
 
-*+ klqhsfdjhqsklfsqd
->ljk jj k k {{qdqs}} kkjsjkds
+*+ le quel n'est pas un mot clef 
+>auto define int {{def}} break
 
 ==
 
@@ -145,8 +150,7 @@ if step<nbstep:
         ztext.setdata_from_textDR(q['items'][0])
     statement = q['text']
     grade=(currentscore, "<br>")
-    text="""
-    Question {{ step + 1 }}. 
+    text="""Question {{ step + 1 }}.
     {{ statement | safe }}"""
 else: # Fin de l'exo 
     text  = format_feedback_lightscore(currentscore, "") + feedbacks
