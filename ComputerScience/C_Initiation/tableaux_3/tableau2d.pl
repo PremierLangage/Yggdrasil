@@ -41,7 +41,7 @@ void remplit(char tab[MAX][MAX],int li,int col){
   int i,j;
   for(i= 0;i<li;i++)
     for(j=0;j<col;j++){
-      t[i][j]=l;
+      tab[i][j]=l;
       d=(d+1)%26;
       l='a'+d;
     }
