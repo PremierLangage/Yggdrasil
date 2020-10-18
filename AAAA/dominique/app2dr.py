@@ -154,6 +154,7 @@ def boucleprincipale():
                         print("Perdu ")
                         s="quitte"
                     else:
+                        print("Perdu ")
                         print("Quitte ou Double ?")
                         s=inputstring(["quitte","double"])
         if jmoney==0:
