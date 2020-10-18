@@ -135,11 +135,7 @@ def boucleprincipale():
                 print("Votre somme :",rj)
                 rb=bsum(bd1,bd2,bd3)
                 print("Celle de la banque :",rb)
-                if rj == rb and version=="v1":
-                    print("Egalité ")
-                    jmoney += mise
-                    s="quitte"
-                elif rj > rb:
+                if rj > rb:
                     print("Gagné !")
                     s="quitte"
                     jmoney += mise*2
@@ -151,7 +147,8 @@ def boucleprincipale():
                     if bd2< bd1:
                         bd1,bd2=bd2,bd1
                     if jmoney < mise or version=="v1":
-                        print("Perdu ")
+                        if rj != rb:
+                            print("Perdu ")
                         s="quitte"
                     else:
                         print("Perdu ")
@@ -177,6 +174,7 @@ def main(args):
 if __name__ == '__main__':
     import sys
     sys.exit(main(sys.argv))
+
 
 
 
