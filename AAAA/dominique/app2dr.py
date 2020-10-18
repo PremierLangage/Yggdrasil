@@ -135,7 +135,7 @@ def boucleprincipale():
                 print("Votre somme :",rj)
                 rb=bsum(bd1,bd2,bd3)
                 print("Celle de la banque :",rb)
-                if rj == rb :
+                if rj == rb and version=="v1":
                     print("Egalité ")
                     jmoney += mise
                     s="quitte"
@@ -144,7 +144,6 @@ def boucleprincipale():
                     s="quitte"
                     jmoney += mise*2
                 else:
-
                     if jd1>jd2:
                         jd2,jd1=jd1,jd2
                     if bd3 < bd2:
@@ -157,7 +156,7 @@ def boucleprincipale():
                         print("Quitte ou Double ?")
                         s=inputstring(["quitte","double"])
         if jmoney==0:
-            print("vous avez perdu !")
+            print("Désolé vous n'avez pas doublé votre mise initiale !")
             sys.exit()
         if s=="consulter":
             print("Vous avez :",str(jmoney)+"€")            
@@ -176,6 +175,7 @@ def main(args):
 if __name__ == '__main__':
     import sys
     sys.exit(main(sys.argv))
+
 
 
 
