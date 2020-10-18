@@ -103,9 +103,7 @@ def boucleprincipale():
             continue
 
         if s=="lancer":
-            jd2=random.randint(1,6)
-            bd2=random.randint(1,6)
-            bd3=random.randint(1,6)
+
             s="start"
             while s != "quitte" :
                 jd1=random.randint(1,6)
@@ -131,6 +129,9 @@ def boucleprincipale():
                 else: # in case of double 
                     jmoney -= mise 
                     mise *=2
+                jd2=random.randint(1,6)
+                bd2=random.randint(1,6)
+                bd3=random.randint(1,6)
                 rj=jd1+jd2
                 print("Votre somme :",rj)
                 rb=bsum(bd1,bd2,bd3)
@@ -149,6 +150,8 @@ def boucleprincipale():
                     if jmoney < mise or version=="v1":
                         if rj != rb:
                             print("Perdu !")
+                        else:
+                            print("Egalité !")
                         s="quitte"
                     else:
                         print("Perdu ")
@@ -174,6 +177,7 @@ def main(args):
 if __name__ == '__main__':
     import sys
     sys.exit(main(sys.argv))
+
 
 
 
