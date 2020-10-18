@@ -13,8 +13,8 @@ text==
 Ecrire une fonction de prototype `int join(char *insert, char sep)` 
 qui reçoit l'adresse d'une chaine `insert` et un caractère `sep`.
 
-Cette fonction lit l'entrée standard (ce qui est tapé au clavier en général) la recopie sur la sortie standard en remplacant
- les occurences de sep par la chaine insert. 
+Cette fonction lit l'entrée standard (ce qui est tapé au clavier en général) et la recopie sur la sortie standard en remplaçant
+ les occurrences de sep par la chaine insert. 
     
     Exemple :  
         "Ceci est l'entrée standard."   
