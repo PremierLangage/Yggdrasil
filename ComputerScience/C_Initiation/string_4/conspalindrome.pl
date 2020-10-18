@@ -15,7 +15,7 @@ si possible, en palindrome:
 si la chaine est déjà un palindrome elle reste inchangée  
 sinon, si la taille du tableau est suffisante, on la concatène à son miroir pour que le tableau contienne un palindrome.    
 Si la taille du tableau n'est pas suffisante, on ne fait rien.   
-Exemple :
+Exemple :   
 Si le tableau s contient "velo"  
 `construit_palin(s,20)` transforme s en"veloolev" et renvoie 1  
 et l'appel suivant  
