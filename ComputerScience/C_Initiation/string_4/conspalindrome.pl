@@ -19,7 +19,7 @@ Exemple
 Si le tableau s contient "velo"  
 `construit_palin(s,20)` transforme s en"veloolev" et renvoie 1  
 et l'appel suivant  
-`construitpalin(s,20)` laisse s inchangé et renvoie 0
+`construitpalin(s,20)` laisse s inchangé et renvoie 0.
 Si le tableau s contient "velo" 
 l'appel `construitpalin(s,6)` laisse s inchangé et renvoie 0
 ==
@@ -82,6 +82,7 @@ tests==
  
  ["aleatoire","",random.choice(["elle","kayak","velo","radar","avion","rotor","serres","solos","suffit"])+" 10"], ]
 ==
+
 
 
 
