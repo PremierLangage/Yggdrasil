@@ -110,7 +110,7 @@ def boucleprincipale():
             bd3=random.randint(1,6)
             s="start"
             while s != "quitte" :
-                if s!="lancer":
+                if s!="start":
                     jd1=random.randint(1,6)
                     bd1=random.randint(1,6)
                 print("Vous avez tiré un",jd1)
@@ -182,6 +182,7 @@ def main(args):
 if __name__ == '__main__':
     import sys
     sys.exit(main(sys.argv))
+
 
 
 
