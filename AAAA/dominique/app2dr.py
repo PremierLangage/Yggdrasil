@@ -103,12 +103,16 @@ def boucleprincipale():
             continue
 
         if s=="lancer":
-
+            jd1=random.randint(1,6)
+            bd1=random.randint(1,6)
+            jd2=random.randint(1,6)
+            bd2=random.randint(1,6)
+            bd3=random.randint(1,6)
             s="start"
             while s != "quitte" :
-                jd1=random.randint(1,6)
-                bd1=random.randint(1,6)
-
+                if s!="lancer":
+                    jd1=random.randint(1,6)
+                    bd1=random.randint(1,6)
                 print("Vous avez tiré un",jd1)
                 print("La banque a tiré un",bd1)
                 if version=="v1" or s!="double":
@@ -129,9 +133,7 @@ def boucleprincipale():
                 else: # in case of double 
                     jmoney -= mise 
                     mise *=2
-                jd2=random.randint(1,6)
-                bd2=random.randint(1,6)
-                bd3=random.randint(1,6)
+
                 rj=jd1+jd2
                 print("Votre somme :",rj)
                 rb=bsum(bd1,bd2,bd3)
