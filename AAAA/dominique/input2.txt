@@ -1,19 +1,9 @@
 v2
 graine
-42
+13
 lancer
-4
-lancer
-4
-lancer
-ljkdshqlkjfhlkhurhlkajrh
-4
-double
-double
-lancer
-4
-double
-consulter
+2
+quitte
 terminer
 
 
