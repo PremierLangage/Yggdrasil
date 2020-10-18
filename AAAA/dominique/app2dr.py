@@ -110,7 +110,7 @@ def boucleprincipale():
             bd3=random.randint(1,6)
             s="start"
             while s != "quitte" :
-                if s!="start":
+                if s!="lancer":
                     jd1=random.randint(1,6)
                     bd1=random.randint(1,6)
                 print("Vous avez tiré un",jd1)
@@ -156,7 +156,10 @@ def boucleprincipale():
                             print("Egalité !")
                         s="quitte"
                     else:
-                        print("Perdu ")
+                        if rj != rb:
+                            print("Perdu !")
+                        else:
+                            print("Egalité !")
                         print("Quitte ou Double ?")
                         s=inputstring(["quitte","double"])
         if jmoney==0:
@@ -179,7 +182,6 @@ def main(args):
 if __name__ == '__main__':
     import sys
     sys.exit(main(sys.argv))
-
 
 
 
