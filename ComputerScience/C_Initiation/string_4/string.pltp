@@ -1,5 +1,5 @@
 
-title=Exercices sur les chaines de caractères
+title=Exercices sur les chaînes de caractères
 introduction==
 des chaines
 
@@ -12,5 +12,6 @@ des chaines
 @ /ComputerScience/C_Initiation/string_4/conspalindrome.pl
 @ /ComputerScience/C_Initiation/string_4/join.pl
 @ /ComputerScience/C_Initiation/string_4/int2char.pl
+
 
 
