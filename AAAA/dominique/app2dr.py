@@ -148,7 +148,7 @@ def boucleprincipale():
                         bd1,bd2=bd2,bd1
                     if jmoney < mise or version=="v1":
                         if rj != rb:
-                            print("Perdu ")
+                            print("Perdu")
                         s="quitte"
                     else:
                         print("Perdu ")
