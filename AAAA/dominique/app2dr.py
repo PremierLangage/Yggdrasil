@@ -152,6 +152,7 @@ def boucleprincipale():
                         bd1,bd2=bd2,bd1
                     if jmoney < mise or version=="v1":
                         print("Perdu ")
+                        s="quitte"
                     else:
                         print("Quitte ou Double ?")
                         s=inputstring(["quitte","double"])
