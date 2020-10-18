@@ -10,7 +10,7 @@ text==
 Un palindrome est une suite de caractères pouvant indifféremment être lue de gauche à droite ou de droite à gauche.  
 Ainsi $% \tt{elle,été,laval}%$ sont des palindromes.  
 Ecrire une fonction `est_palindrome` qui reçoit une chaine de caractères 
-et renvoie 1 si celle-ci est un palindrome et, 0 sinon.
+et renvoie 1 si celle-ci est un palindrome, et 0 sinon.
 ==
 
 codebefore==
@@ -59,6 +59,7 @@ tests==
 ["aleatoire","",random.choice(["elle est belle","un kayak","velo","deux radar","avion","le rotor","michel serres","Bruno solos","sufffit"])],
    ]
 ==
+
 
 
 
