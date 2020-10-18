@@ -39,20 +39,7 @@ typedef struct{
 	int pdv;
 	}Joueur;
 
-int combat(Joueur *un,Joueur *deu){
-int somun,somdeu;
-if (strcmp(un->couleur,deu->couleur)!=0){
-   while(un->pdv>0&&deu->pdv>0){
-	somun=un->force+un->agilite+lance_de();
-	somdeu=deu->force+deu->agilite+lance_de();
-	if(somun>somdeu)
-		deu->pdv-=somun-somdeu;
-	else
-		un->pdv-=somdeu-somun;
-	}
-    return 1;
-}
-return 0;
+int combat(...){
 }
 
 
@@ -127,6 +114,7 @@ tests==
 ["aléatoire ", "",str(random.randint(1000,2008))+" "+str(random.randint(0,4))+" "+str(random.randint(0,4))],
 ]
 ==
+
 
 
 
