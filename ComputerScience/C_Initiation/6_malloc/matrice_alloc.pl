@@ -1,4 +1,4 @@
-title=Initialisation d'une matrice
+title=Initialisation d'une matrice d'entiers
 author = Clément BOIN
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
