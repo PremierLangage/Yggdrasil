@@ -19,6 +19,8 @@ match =: MatchList
 
 @ ../mkl.py
 
+@ content.csv
+
 # STEP 2
 before==
 import random
@@ -67,6 +69,7 @@ if error == 0:
 else:
     grade = (0, 'Bad answer, you made %d mistakes' % error)
 ==
+
 
 
 
