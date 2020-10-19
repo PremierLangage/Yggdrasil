@@ -2,6 +2,7 @@
 # Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
 # Proposition de correction Clément BOIN <clement.boin@u-pem.fr>
+# mais ça ne fonctionne pas quand même
 # Tableau de chaînes de caractères
 author=Nicolas Borie
 title=Tableau de chaînes de caractères
