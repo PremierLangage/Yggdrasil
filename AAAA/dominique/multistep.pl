@@ -110,6 +110,8 @@ def evaluate(q):
         return check.eval()
     if  q['type'] == 'TextSelect':
         return ztext.eval()
+    if q['type'] == 'MatchList':
+        return Match.eval()
 
 def strfromcomp(q):
     if q['type'] == "Radio":
