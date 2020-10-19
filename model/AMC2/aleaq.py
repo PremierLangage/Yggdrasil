@@ -72,16 +72,17 @@ def buildlistes(g,b):
         r.extend(b)
     return r,ri
 
-def buildquestion(question):
+def buildquestion(questionp):
     """
     Question 
 
     """
     #if question.get('extended') == False:
     #    return question
-    if question.get('type') == 'TextSelect' :# j'ai pas de syntaxe etendue pour le moment 
-        return question 
+    if questionp.get('type') == 'TextSelect' :# j'ai pas de syntaxe etendue pour le moment 
+        return questionp 
     try:
+        question=dict(questionp)
         d=optiondic(question.get('options'))
         nb =int(d.get("nb",4))
 
@@ -141,6 +142,7 @@ def buildquestion(question):
         print(e)
         raise e
     
+
 
 
 
