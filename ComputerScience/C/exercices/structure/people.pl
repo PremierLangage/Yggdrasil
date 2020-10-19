@@ -29,23 +29,22 @@ devra contenir deux champs pour des chaînes de caractères C d'au plus
 
 ==
 
-editor.code==
+editor.code==#|c|
 typedef ...
-
 ==
 
-solution==
-
+solution==#|c|
 typedef struct {
   char first_name[64];
   char last_name[64];
   int age; 
 }People;
-
 ==
 
-codeafter==
- 
+code_before==#|c|
+==
+
+code_after==#|c|
 #include <stdio.h>
 #include <stdlib.h>    
 #include <string.h>
@@ -60,10 +59,9 @@ int main(int argc, char* argv[]){
   printf("Personne reconnue : %s %s %d\n", P.first_name, P.last_name, P.age);
   return 0;
 }
-
 ==
 
-tests==
+checks_args_stdin==#|python|
 [ ["Déclaration et utilisation 1", "John Doe 42",""],
   ["Déclaration et utilisation 2", "Master Yoda 913",""],
   ["Déclaration et utilisation 2", "'Nicolaï Yvanovich' Borisky 12",""] ] 
