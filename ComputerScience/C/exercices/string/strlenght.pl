@@ -44,6 +44,8 @@ chaîne.
 
 ==
 
+taboo=strlen
+
 editor.code==#|c|
 int string_length(char* s){
   /* Votre code ici... */
@@ -88,5 +90,6 @@ checks_args_stdin==#|python|
   ["Test aléatoire 1", [choice(["radar", "bouteille", "la", "chat", "romantique", "ete", "liquide"])], ""],
   ["Test aléatoire 2", [choice(["radar", "bouteille", "la", "chat", "romantique", "ete", "liquide"])], ""] ] 
 ==
+
 
 
