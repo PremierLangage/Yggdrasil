@@ -52,9 +52,11 @@ before==
 from customradio import CustomRadio
 from customcheckbox import CustomCheckbox
 from customtextselect import CustomTextSelect
+from Custommatchlist import CustomMatchList
 radio = CustomRadio() 
 check = CustomCheckbox()
 ztext = CustomTextSelect()
+Match = CustomMatchList()
 import random
 from AMC import parse_AMC_TXT
 
