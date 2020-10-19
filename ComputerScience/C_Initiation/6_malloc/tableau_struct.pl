@@ -12,7 +12,7 @@ Ecrire une fonction `allouetab`qui recoit un entier **size** et renvoie l'adress
 ==
 
 editor.code==
-... allouetab_array(...){
+... allouetab(...){
     /* Votre code à compléter ici */
 }
 
