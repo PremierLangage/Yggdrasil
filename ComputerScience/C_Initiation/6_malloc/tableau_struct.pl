@@ -12,7 +12,7 @@ Ecrire une fonction `allouetab`qui recoit un entier **size** et renvoie l'adress
 
 editor.code==
 ... allouetab_array(...){
-    /* Votre code ici */
+    /* Votre code à compléter ici */
 }
 
 ==
@@ -76,6 +76,7 @@ tests==
  ["Aléatoire", str(random.randint(1000000000, 2000000000)), ""]]
 
 ==
+
 
 
 
