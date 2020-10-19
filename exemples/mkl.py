@@ -63,7 +63,6 @@ def selectionfromcsv(filename, number=4, sourcecol="source", targetcol="target")
 
 
 
-
 def selectionfromcsvold(filename, number=4, sourcecol="source", targetcol="target"):
     """
     return number elements of the file or all the file if the length is less than number
@@ -83,6 +82,7 @@ def selectionfromcsvold(filename, number=4, sourcecol="source", targetcol="targe
             MatchListItem.append({"id":"target"+str(n),"content":l[n][1], "target": True})
             expected.append({ "source": "source"+str(n), "target": "target"+str(n) })
     return MatchListItem,expected
+
 
 
 
