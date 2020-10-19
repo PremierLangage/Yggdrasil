@@ -1,12 +1,26 @@
-# Copyright 2017 Elise Hardy <ehardy@etud.u-pem.fr>
-# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2019 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
+#  Copyright (C) 2017 Elise Hardy <ehardy@etud.u-pem.fr>
 #
-# Déclaration d'une structure C pour un plateau
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Elise Hardy
+
 title=Structure C pour un plateau rectangulaire
 tag=structure
-extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 Déclarer et définir une *structure* C nommé *Plateau*. Cette structure
@@ -15,23 +29,22 @@ un entier *n* et un entier *k* donnant les tailles du plateau.
 
 ==
 
-editor.code==
+editor.code==#|c|
 typedef ...
-
 ==
 
-solution==
-
+solution==#|c|
 typedef struct {
 char **tab;
 int n;
 int k;
 }Plateau;
-
 ==
 
-codeafter==
+code_before==#|c|
+==
 
+code_after==#|c|
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -60,11 +73,11 @@ int main(int argc, char* argv[]){
 	printf("plateau dimension : %d %d \n", P.n, P.k);
 	return 0;
 }
-
 ==
 
-tests==
+checks_args_stdin==#|python|
 [ ["Déclaration et utilisation 1", "14 3",""],
   ["Déclaration et utilisation 2", "47 85",""] ] 
 ==
+
 
