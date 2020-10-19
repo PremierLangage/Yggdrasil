@@ -70,7 +70,8 @@ tests==
 
 [["Exécution simple", "1 1", "0 "],
  ["Matrice vide", "0 0", ""],
- ["Matrice carée","4 4","0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n"]
+ ["Matrice carée","4 4","0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n"],
+ ["Matrice à 3 lignes et 2 colonnes","3 2","0 0 \n0 0 \n0 0 \n"]
  ]
 
 ==
