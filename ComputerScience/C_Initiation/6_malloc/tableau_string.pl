@@ -58,9 +58,6 @@ char** new_tab_string(void){
 ==
 
 solution==
-
-#define _SVID_SOURCE
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -82,6 +79,10 @@ char** new_tab_string(void){
   return ans;
 }
 
+==
+
+codebefore==
+#define _SVID_SOURCE
 ==
 
 
@@ -118,6 +119,7 @@ tests==
  ["Aléatoire", "10", "\n".join(random.choices(['red', 'black', 'green'], [2,2,2], k=10))]]
 
 ==
+
 
 
 
