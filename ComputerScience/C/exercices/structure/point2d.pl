@@ -19,7 +19,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 author=Nicolas Borie
 
 title=Structure pour points entiers en dimension 2
-tag=structure
+tag=structure|simple|entier
 
 text==
 Déclarez et définissez une *structure* C nommé **Point2d**. Cette structure
