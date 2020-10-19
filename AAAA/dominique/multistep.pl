@@ -16,28 +16,6 @@ settings.cumulative % false
 
 questions==
 
-**   Lorsque vous disposez d'un bloc constitué de plus d'une ligne dans un if, comment indiquez vous la fin du bloc ?
-
-
-   c=1   
-
-     print(c)  
-
-   input("$ ")
- 
-
-
-
-+On diminue l'indentation à la ligne suivant le bloc, pour revenir à une indentation identique à celle de la ligne possédant l'instruction if
--On utilise une accolade } après la dernière ligne du bloc if
--On ne met pas le caractère : à la dernière ligne du bloc if
--On met une majuscule à la première lettre de la ligne suivant la fin du bloc if
-
-*   Lorsque vous disposez d'un bloc constitué de plus d'une ligne dans un if, comment indiquez vous la fin du bloc ?
-+ On diminue l'indentation à la ligne suivant le bloc, pour revenir à une indentation identique à celle de la ligne possédant l'instruction if
-- On utilise une accolade } après la dernière ligne du bloc if
-- On ne met pas le caractère : à la dernière ligne du bloc if
-- On met une majuscule à la première lettre de la ligne suivant la fin du bloc if
 
 ==
 
@@ -196,6 +174,7 @@ form==
     {{ Match | component }}
 {% endif %}
 ==
+
 
 
 
