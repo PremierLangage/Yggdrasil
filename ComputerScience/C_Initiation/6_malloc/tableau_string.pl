@@ -33,6 +33,8 @@ Voici un exemple d'entrée standard valide que votre fonction sera amennée
 ==
 
 editor.code==
+#define _SVID_SOURCE
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -112,6 +114,7 @@ tests==
  ["Aléatoire", "10", "\n".join(random.choices(['red', 'black', 'green'], [2,2,2], k=10))]]
 
 ==
+
 
 
 
