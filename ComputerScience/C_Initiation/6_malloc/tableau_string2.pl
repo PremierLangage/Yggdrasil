@@ -97,13 +97,13 @@ int main(int argc, char* argv[]){
 
 tests==
 
-[["Exécution simple", "1", "\nmot"],
- ["Chaînes vides", "0", "\n"],
- ["Quatre chaîne", "4", "\nun\ndeux\ntrois\nquatre"],
- ["Fibonacci", "7", "\na\nb\ncc\nddd\neeeee\nffffffff\nggggggggggggg"],
- ["Exemple", "6", "\npremière\nseconde\ntroisième\nencore\npresque\nfini"],
- ["Aléatoire", "10", "\n".join(random.choices(['red', 'black', 'green'], [2,2,2], k=10))],
- ["Aléatoire", "10", "\n".join(random.choices(['red', 'black', 'green'], [2,2,2], k=10))]]
+[["Exécution simple", "1", "mot"],
+ ["Chaînes vides", "0", ""],
+ ["Quatre chaîne", "4", "un\ndeux\ntrois\nquatre"],
+ ["Fibonacci", "7", "a\nb\ncc\nddd\neeeee\nffffffff\nggggggggggggg"],
+ ["Exemple", "6", "première\nseconde\ntroisième\nencore\npresque\nfini"],
+ ["Aléatoire", "10", "".join(random.choices(['red', 'black', 'green'], [2,2,2], k=10))],
+ ["Aléatoire", "10", "".join(random.choices(['red', 'black', 'green'], [2,2,2], k=10))]]
 
 ==
 
