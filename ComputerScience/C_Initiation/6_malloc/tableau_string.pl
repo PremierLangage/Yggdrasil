@@ -1,4 +1,3 @@
-
 # Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
 # Revu par Clément BOIN <clement.boin@u-pem.fr> le 19/10/2020
@@ -23,7 +22,7 @@ mais aussi allouer des places mémoires adaptées pour chacune des chaînes
 (char*) qui suivront. Après allocation, votre fonction devra copier les 
 chaînes vers les places mémoires fraichement allouées.
 
-Voici un exemple d'entrée standard valide que votre fonction sera amennée
+Voici un exemple d'entrée standard valide que votre fonction sera amenée
 à parser.
 
     6
