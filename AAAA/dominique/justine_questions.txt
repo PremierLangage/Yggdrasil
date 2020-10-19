@@ -23,7 +23,7 @@
 -=["<","<=","==","!=","and","or","not"]
 +=["=","+","*"]
 
-**Dans quels cas suivants utiliseriez-vous une boucle for plutôt qu'une boucle while ?
+**[nbg=2,nbb=2]Dans quels cas suivants utiliseriez-vous une boucle for plutôt qu'une boucle while ?
 +Pour afficher 14 fois "Pikachu"
 +Pour compter le nombre d'entiers positifs inférieurs à 30 qui sont divisibles par 3
 +Pour calculer la somme des entiers inférieurs à 18
