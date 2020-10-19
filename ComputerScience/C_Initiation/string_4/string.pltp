@@ -4,14 +4,15 @@ introduction==
 des chaines
 
 ==
-@ /ComputerScience/python/AP1-1920/drafts/EmmanuelBrunache/mimicstrlen.pl
+@ /ComputerScience/C_Initiation/string_4/mimicstrlen.pl
 @ /ComputerScience/C_Initiation/string_4/remplace.pl
 @ /ComputerScience/C_Initiation/string_4/titre.pl
-@ /ComputerScience/python/AP1-1920/drafts/EmmanuelBrunache/retourne-chaine.pl
+@ /ComputerScience/C_Initiation/string_4/retourne-chaine.pl
 @ /ComputerScience/C_Initiation/string_4/palindrome.pl
 @ /ComputerScience/C_Initiation/string_4/conspalindrome.pl
 @ /ComputerScience/C_Initiation/string_4/join.pl
 @ /ComputerScience/C_Initiation/string_4/int2char.pl
+
 
 
 
