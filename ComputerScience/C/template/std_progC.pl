@@ -160,6 +160,8 @@ def prepare_code_to_file(src_code, filename):
     with open(filename, 'w') as f:
         f.write(src_final)
 
+
+
 # The two file to proceed the checks
 prepare_code_to_file(editor.code, "src_student.c")
 prepare_code_to_file(solution, "src_teacher.c")
@@ -199,6 +201,15 @@ else:
         if nb_w_compil > 1:
             text_compil += 's'
         compil_state = 'warning'
+
+if taboo:
+    import re
+    pat = re.compile(taboo, re.IGNORECASE)
+    if pat.search(editor.code):
+        compil_state = 'error'
+        text_compil = 'Compilation échouée non respecr du taboo'+taboo
+        grade_compil = 0
+
 
 # begin of feedback
 feedback = '<p style="margin-bottom: 5px;"><b><u>Compilation :</u> ' + str(grade_compil) + '%</b> '
@@ -318,6 +329,7 @@ grade=((grade_compil * grade_checks * grade_attempt) // 10000, feedback)
 # tests.test1.editor.code = 'int carre(int p){ return p*p; }'
 # tests.test1.editor.code = solution
 # tests.test1.grade = 100
+
 
 
 
