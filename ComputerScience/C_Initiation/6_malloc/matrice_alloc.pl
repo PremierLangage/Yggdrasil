@@ -6,12 +6,12 @@ author = Clément BOIN
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-Ecrire une fonction qui alloue une matrice de taille lignes*colonnes et qui 
-l'initialise avec la valeur 0 dans toutes les cases.
+Ecrire une fonction qui alloue et renvoie une matrice de taille lignes*colonnes 
+et qui l'initialise avec la valeur 0 dans toutes les cases.
 ==
 
 editor.code==
-int** allocmatrice_zero (int lig,int col)
+... allocmatrice_zero (int lig,int col)
 {
 /*Code à écrire*/
 }
