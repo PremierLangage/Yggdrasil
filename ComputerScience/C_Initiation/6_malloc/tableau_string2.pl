@@ -33,7 +33,7 @@ Voici un exemple d'entrée standard valide que votre fonction sera amennée
 ==
 
 editor.code==
-#define _SVID_SOURCE
+#define _DEFAULT_SOURCE
 
 #include <stdio.h>
 #include <stdlib.h>
