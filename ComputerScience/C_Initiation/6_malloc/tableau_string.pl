@@ -37,7 +37,9 @@ Voici un exemple d'entrée standard valide que votre fonction sera amennée
 ==
 
 editor.code==
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 char** new_tab_string(void){
   int n;
