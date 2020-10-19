@@ -1,6 +1,10 @@
 
 # Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
+# Revu par Clément BOIN <clement.boin@u-pem.fr> le 19/10/2020
+# Ajout de #define _DEFAULT_SOURCE au début du code à compléter
+# sinon il y a une erreur de segmentation à cause de strdup à priori.
+#
 # Tableau de chaînes de caractères
 author=Nicolas Borie
 title=Tableau de chaînes de caractères
@@ -114,6 +118,7 @@ tests==
  ["Aléatoire", "10", "\n".join(random.choices(['red', 'black', 'green'], [2,2,2], k=10))]]
 
 ==
+
 
 
 
