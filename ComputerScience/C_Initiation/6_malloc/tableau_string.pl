@@ -2,7 +2,7 @@
 # Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
 # Revu par Clément BOIN <clement.boin@u-pem.fr> le 19/10/2020
-# Ajout de #define _DEFAULT_SOURCE au début du code à compléter
+# Ajout de #define _DEFAULT_SOURCE au début du code 
 # sinon il y a une erreur de segmentation à cause de strdup à priori.
 #
 # Tableau de chaînes de caractères
