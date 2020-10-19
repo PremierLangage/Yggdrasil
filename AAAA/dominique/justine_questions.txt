@@ -30,13 +30,13 @@
 -Pour calculer l'entier r tel que r soit la racine carrée entière de 22
 -Pour déterminer s'il existe un entier inférieur à 40 qui vérifie une certaine condition
 
-**[group=booleen_jf]Comment écrire une condition (un booléen) qui vaut true si la variable i appartient à $%{1} \cup {3} \cup {5} \cup [15 ; 16]%$ ?
+*[group=booleen_jf]Comment écrire une condition (un booléen) qui vaut true si la variable i appartient à $%{1} \cup {3} \cup {5} \cup [15 ; 16]%$ ?
 + i == 1 or i == 3 or i == 5 or (i >= 15 and i <= 16)
 - (i == 1 and i == 3) or i == 5 or (i >= 15 and i <= 16)
 - i == 1 or (i == 3 and i == 5) or (i >= 15 and i <= 16)
 - i == 1 or i == 3 or i == 5 or i >= 15 or i <= 16
 
-**[group=booleen_jf]Comment écrire une condition (un booléen) qui vaut true si la variable a appartient à $%{1} \cup [6 ; 8] \cup [15 ; 16]%$ ?
+*[group=booleen_jf]Comment écrire une condition (un booléen) qui vaut true si la variable a appartient à $%{1} \cup [6 ; 8] \cup [15 ; 16]%$ ?
 + a == 1 or (a >= 6 and a <= 8) or (a >= 15 and a <= 16)
 - a == 1 and (a >= 6 and a <= 8) or (a >= 15 and a <= 16)
 - a == 1 or a >= 6 or a <= 8 or a >= 15 or a <= 16
@@ -58,4 +58,5 @@
 + yolo
 + osef
 - nope 
+
 
