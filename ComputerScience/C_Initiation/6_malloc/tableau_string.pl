@@ -5,7 +5,7 @@
 # sinon il y a une erreur de segmentation à cause de strdup à priori.
 #
 # Tableau de chaînes de caractères
-author=Nicolas Borie
+author= 
 title=Tableau de chaînes de caractères
 tag=string|malloc|function
 extends=/ComputerScience/C/template/stdsandboxC.pl
@@ -120,6 +120,7 @@ tests==
  ["Aléatoire", "10", "\n".join(random.choices(['red', 'black', 'green'], [2,2,2], k=10))]]
 
 ==
+
 
 
 
