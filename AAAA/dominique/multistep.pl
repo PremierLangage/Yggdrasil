@@ -192,8 +192,12 @@ form==
     {{ check | component }}
 {% elif q['type'] == "TextSelect" %}
     {{ ztext | component }}
+{% elif q['type'] == 'MatchList' %}
+    {{ Match | component }}
 {% endif %}
 ==
+
+
 
 
 
