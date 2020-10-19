@@ -154,6 +154,7 @@ def boucleprincipale():
                             print("Perdu !")
                         else:
                             print("Egalité !")
+                            
                         s="quitte"
                     else:
                         if rj != rb:
