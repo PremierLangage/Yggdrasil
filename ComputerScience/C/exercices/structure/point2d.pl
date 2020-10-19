@@ -28,24 +28,23 @@ pour ordonnée.
 
 ==
 
-editor.code==
+editor.code==#|c|
 typedef
 ...
 Point2d;
-
 ==
 
-solution==
-
+solution==#|c|
 typedef struct point2d{
   int abs;
   int ord; 
 }Point2d;
-
 ==
 
-codeafter==
- 
+code_before==#|c|
+==
+
+code_after==#|c|
 #include <stdio.h>
 
 int main(int argc, char* argv[]){
@@ -54,11 +53,9 @@ int main(int argc, char* argv[]){
   printf("Le point G est bien déclaré et a pour abcisse 12==%d et ordonnée -3==%d.\n", G.abs, G.ord);
   return 0;
 }
-
 ==
 
-tests== 
+checks_args_stdin==#|python|
 [ ["Déclaration et utilisation", "",""] ] 
 ==
-
 
