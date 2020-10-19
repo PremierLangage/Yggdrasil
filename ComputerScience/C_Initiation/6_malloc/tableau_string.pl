@@ -52,7 +52,7 @@ char** new_tab_string(void){
   
   /* ... Encore du code ... */
   scanf("%s", tmp);  /* récupération d'une chaîne */
-  /* ... Toujours du code ... */
+  /* ... Toujours du code ... utilisation de strdup*/
 }
 
 ==
