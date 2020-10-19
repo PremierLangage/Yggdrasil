@@ -37,8 +37,6 @@ Voici un exemple d'entrée standard valide que votre fonction sera amennée
 ==
 
 editor.code==
-#define _DEFAULT_SOURCE
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -58,6 +56,9 @@ char** new_tab_string(void){
 ==
 
 solution==
+
+#define _SVID_SOURCE
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -82,7 +83,8 @@ char** new_tab_string(void){
 ==
 
 codebefore==
-#define _SVID_SOURCE
+#define _DEFAULT_SOURCE
+
 ==
 
 
