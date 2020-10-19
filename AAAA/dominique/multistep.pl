@@ -171,7 +171,7 @@ if step<nbstep:
     elif  q['type'] == 'TextSelect':
         ztext.setdata_from_textDR(q['items'][0])
     elif q['type'] == 'MatchList' :
-        Match.setfrompairs(q['items'])
+        Match.setdata_from_matches(q['items'])
     statement = q['text']
     grade=(currentscore, "<br>")
     text="""Question {{ step + 1 }}.
