@@ -39,10 +39,11 @@ from aleaq import buildquestion, onefromeachgroup,getmultioption
 
 list_questions = parse_AMC_TXT(questions)
 
-
 l2=[]
 for q in list_questions:
-    l2.append(buildquestion(q))
+    n=getmultioption(q)
+    for _ in range(n):
+        l2.append(buildquestion(q))
 list_questions=l2
 
 onepergroup = True
