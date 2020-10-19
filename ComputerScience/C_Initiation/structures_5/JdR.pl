@@ -13,7 +13,7 @@ Chaque piece d'un jeu de plateau est caractérié par:
  Lorsque deux pieces de couleur différentes se rencontrent,
  un combat a lieu. Chaque joueur lance un dé et on compare les sommes (valeur du dé +force +agileté).
   La plus haute somme détermine le vainqueur et la différence des sommes est soustraite aux points de vie du vaincu. En cas d'ex-aequo, il ne se passe rien pour ce tour. Le tirage se répète jusqu'à  ce qu'un des joueurs ait un nombre de points de vie négatif ou nul.  
-Ecrire une fonction `combat` qui reçoit deux pièces et réalise le combat suivant ces règles et change le nombre de points de vie de chaque joueur.
+Ecrire une fonction `combat` qui reçoit deux pièces et réalise le combat suivant ces règles et change le nombre de points de vie de chaque piece.
 La fonction  renvoie 1 si un combat a eu lieu ( couleurs différentes) et 0 sinon.  .
 Le lancé de dé est simulé par la fonction `lance_de(.)` supposée déjà écrite.
 ==
