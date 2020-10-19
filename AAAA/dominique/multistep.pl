@@ -120,6 +120,8 @@ def strfromcomp(q):
         return "{{ check | component }}"
     if  q['type'] == 'TextSelect':
         return "{{ ztext | component }}"
+    if  q['type'] == 'MatchList':
+        return "{{ Match | component }}"
 
 currentscore=0
 if step> -1:
