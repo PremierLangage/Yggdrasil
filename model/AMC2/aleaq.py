@@ -137,8 +137,8 @@ def buildquestion(questionp):
 
             return question
         if question.get('type') == 'MatchList':
-            pairs = [ item.split(",") for item in question['items']]
-            
+            question['items']= [ item.split(",") for item in question['items']]
+            return question
     except Exception as e:
         print("Problème dans votre question ", str(question))
         print(e)
