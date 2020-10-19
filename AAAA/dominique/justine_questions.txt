@@ -11,12 +11,6 @@
 -=["and","if","for","while","variable","variable_3","x","a","toto","chat"]
 
 
-*   Lorsque vous disposez d'un bloc constitué de plus d'une ligne dans un if, comment indiquez vous la fin du bloc ?
-+On diminue l'indentation à la ligne suivant le bloc, pour revenir à une indentation identique à celle de la ligne possédant l'instruction if
--On utilise une accolade } après la dernière ligne du bloc if
--On ne met pas le caractère : à la dernière ligne du bloc if
--On met une majuscule à la première lettre de la ligne suivant la fin du bloc if
-
 =**[group=operateurs_jf,nbg=3,nbb=4]Lesquels de ces opérateurs sont des opérateurs de comparaison ?
 +=["<","<=","==","!="]
 -=["and","or","not","=","+","*"]
