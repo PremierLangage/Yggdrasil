@@ -24,17 +24,13 @@ int** allocmatrice_zero (int lig,int col)
 {
 	int i,j;
 	int** matrice = malloc(lig*sizeof(int*));
-	int val = 0;
 
 	for(i=0;i<lig;i++)
 		matrice[i]=malloc(col*sizeof(int));
 
 	for(i=0;i<lig;i++)
 		for(j=0;j<col;j++)
-		{
-			matrice[i][j]=val;
-			val++;
-		}			
+			matrice[i][j]=0;		
 
 	return matrice;
 }
@@ -42,39 +38,29 @@ int** allocmatrice_zero (int lig,int col)
 
 codebefore==
 #include <stdlib.h>
-#include <string.h>
-#include <time.h>
 #include <stdio.h>
 
-typedef struct{
-char  nom[20];
-int age;
-}Etudiant;
 ==
 
 codeafter==
-
-
-
-
 int main(int argc, char* argv[]){
-  int size = atoi(argv[1]);
-  Etudiant* ans;
 
-  srand(time(NULL));
+	int i,j;
+	int ** mat;
+	int lignes = atoi(argv[1]);
+	int colonnes = atoi(argv[2]);
 
-  ans = allouetab(size);
-  if (ans == NULL){
-    printf("Not Enough Memory.\n");
-    return 0;
-  }
-  if (size >= 2){
-    strcpy(ans[0].nom ,"toto");
-    ans[0].age=19;
-    strcpy(ans[size-1].nom ,"titi");
-    ans[size-1].age=91;
-    }
-  free(ans);
+	mat = allocmatrice_zero(lignes,colonnes);
+
+	for(i=0;i<lignes;i++)
+	{
+		for(j=0;j<colonnes;j++)
+		{
+			printf("%d ",mat[i][j]);
+		}
+		printf("\n");
+	}
+
   return 0;
 }
 
