@@ -55,11 +55,21 @@ from aleaq import buildquestion, onefromeachgroup,getmultioption
 
 list_questions = parse_AMC_TXT(questions)
 
-
-
-
-
 nbstep = len(list_questions)
+
+l2=[]
+for q in list_questions:
+    n=getmultioption(q)
+    for _ in range(n):
+        l2.append(buildquestion(q))
+list_questions=l2
+
+if "onepergroup" in globals() and onepergroup :
+    list_questions=onefromeachgroup(list_questions)
+elif 'nbstep' in globals():
+    list_questions = random.sample(list_questions, nbstep)
+
+
 random.shuffle(list_questions)
 
 step= -1 # première étape 
