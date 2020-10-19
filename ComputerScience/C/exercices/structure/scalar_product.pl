@@ -63,7 +63,7 @@ code_before==#|c|
 #include <stdlib.h>
 ==
 
-codeafter==#|c|
+code_after==#|c|
 int main(int argc, char* argv[]){
 
   Vector3d u = {atoi(argv[1]), atoi(argv[2]), atoi(argv[3])};
@@ -85,5 +85,6 @@ checks_args_stdin==#|python|
   ["vecteurs aléatoires", [str(randint(-10,10)) for i in range(6)], "" ],
   ["vecteurs aléatoires", [str(randint(-10,10)) for i in range(6)], "" ] ]
 ==
+
 
 
