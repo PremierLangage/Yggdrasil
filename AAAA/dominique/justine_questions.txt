@@ -6,7 +6,7 @@
 -On met une majuscule à la première lettre de la ligne suivant la fin du bloc if
 
 
-=**[nbb=2,nbg=3,nbq=55] Dans un programme, quels sont les noms de variables que vous utiliseriez pour gérer des données liés au temps? 
+=**[nbb=2,nbg=3] Dans un programme, quels sont les noms de variables que vous utiliseriez pour gérer des données liés au temps? 
 +=["tmp","cmpt","hours","heures","years","annees","days","jours","mnt","minutes","sec","seconds","period","duree"]
 -=["and","if","for","while","variable","variable_3","x","a","toto","chat"]
 
@@ -51,6 +51,7 @@
 =**[nbg=4,nbb=2]Dans la liste suivante, sélectionner les expressions qui ont un sens (i.e. qui produisent un résultat et non une erreur).
 +=["4*2.0","2**0.5","4/5","7//2","11%3","11<3 and True","int(3.0 // 1.5)","4.0 // 1.75","int('21')","'Marne' + 'la' + 'Vallée'","'J'ai ' + str(10) + ' ans.'"]
 -=["'Tu as ' + 12 + ' ans'","4 *. 5", "3 'Hip' + 'Hourra'","int('3.0')","'Voici ' + int(6) + ' tomates.'"]
+
 
 
 
