@@ -202,7 +202,7 @@ else:
             text_compil += 's'
         compil_state = 'warning'
 
-if taboo:
+if "taboo" in globals(): 
     import re
     pat = re.compile(taboo, re.IGNORECASE)
     if pat.search(editor.code):
@@ -329,6 +329,7 @@ grade=((grade_compil * grade_checks * grade_attempt) // 10000, feedback)
 # tests.test1.editor.code = 'int carre(int p){ return p*p; }'
 # tests.test1.editor.code = solution
 # tests.test1.grade = 100
+
 
 
 
