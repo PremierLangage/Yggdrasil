@@ -53,6 +53,15 @@
 -=["'Tu as ' + 12 + ' ans'","4 *. 5", "3 'Hip' + 'Hourra'","int('3.0')","'Voici ' + int(6) + ' tomates.'"]
 
 
+**Test code :
 
 
+   c=1   
+
+     print(c)  
+
+   input("$ ")
++ yolo
++ osef
+- nope 
 
