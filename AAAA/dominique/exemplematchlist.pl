@@ -3,7 +3,7 @@ extends=multistep.pl
 
 questions==
 
-=*= Matchlist
+=*=[beurk=rr] Matchlist
 
 + vert, pomme
 + orange, orange
