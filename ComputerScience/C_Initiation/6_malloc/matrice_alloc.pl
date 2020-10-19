@@ -7,7 +7,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 Ecrire une fonction qui alloue une matrice de taille lignes*colonnes et qui 
-l'initialise avec des 0.
+l'initialise avec la valeur 0 dans toutes les cases.
 ==
 
 editor.code==
@@ -23,14 +23,10 @@ solution==
 int** allocmatrice_zero (int lig,int col)
 {
 	int i,j;
-	int** matrice = malloc(lig*sizeof(int*));
+	int** matrice = calloc(lig*sizeof(int*));
 
 	for(i=0;i<lig;i++)
-		matrice[i]=malloc(col*sizeof(int));
-
-	for(i=0;i<lig;i++)
-		for(j=0;j<col;j++)
-			matrice[i][j]=0;		
+		matrice[i]=calloc(col*sizeof(int));
 
 	return matrice;
 }
@@ -75,6 +71,7 @@ tests==
  ]
 
 ==
+
 
 
 
