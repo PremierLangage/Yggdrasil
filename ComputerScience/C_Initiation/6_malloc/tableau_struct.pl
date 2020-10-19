@@ -27,16 +27,15 @@ Etudiant* allouetab(int size){
 ==
 
 codebefore==
-typedef struct{
-char  nom[20];
-int age;
-}Etudiant;
-
-#define _DEFAULT_SOURCE
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
 #include <stdio.h>
+
+typedef struct{
+char  nom[20];
+int age;
+}Etudiant;
 ==
 
 codeafter==
