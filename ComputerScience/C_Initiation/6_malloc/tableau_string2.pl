@@ -2,7 +2,8 @@
 # Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 #
 # Proposition de correction Clément BOIN <clement.boin@u-pem.fr>
-# mais ça ne fonctionne pas quand même
+# La version originale déclenche un segmentation fault mais cette version aussi
+# A priori un problème avec la fonction strdup
 # Tableau de chaînes de caractères
 author=Nicolas Borie
 title=Tableau de chaînes de caractères
