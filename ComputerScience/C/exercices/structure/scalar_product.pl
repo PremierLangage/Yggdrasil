@@ -77,13 +77,13 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[ ["Simple", ["1", "1", "1", "1", "1", "1"], ""],
-	["Nul1", ["1", "1", "0", "1", "-1", "1"], ""],
-  ["Nul2", ["-2", "1", "1", "1", "1", "1"], ""],
-  ["vecteurs aléatoires", [str(randint(-10,10)) for i in range(6)], "" ],
-  ["vecteurs aléatoires", [str(randint(-10,10)) for i in range(6)], "" ],
-  ["vecteurs aléatoires", [str(randint(-10,10)) for i in range(6)], "" ],
-  ["vecteurs aléatoires", [str(randint(-10,10)) for i in range(6)], "" ] ]
+[ ["Test simple", ["1", "1", "1", "1", "1", "1"], ""],
+	["Vecteurs orthogonaux", ["1", "1", "0", "1", "-1", "1"], ""],
+  ["Vecteurs orthogonaux 2", ["-2", "1", "1", "1", "1", "1"], ""],
+  ["Test aléatoire 1", [str(randint(-10,10)) for i in range(6)], "" ],
+  ["Test aléatoire 2", [str(randint(-10,10)) for i in range(6)], "" ],
+  ["Test aléatoire 3", [str(randint(-10,10)) for i in range(6)], "" ],
+  ["Test aléatoire 4", [str(randint(-10,10)) for i in range(6)], "" ] ]
 ==
 
 
