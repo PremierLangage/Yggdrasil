@@ -62,9 +62,9 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[ ["Déclaration et utilisation 1", "John Doe 42",""],
-  ["Déclaration et utilisation 2", "Master Yoda 913",""],
-  ["Déclaration et utilisation 2", "'Nicolaï Yvanovich' Borisky 12",""] ] 
+[ ["Déclaration et utilisation 1", ["John", "Doe", "42"],""],
+  ["Déclaration et utilisation 2", ["Master", "Yoda", "913"],""],
+  ["Déclaration et utilisation 2", ["Nicolaï Yvanovich", "Borisky", "12"],""] ] 
 ==
 
 
