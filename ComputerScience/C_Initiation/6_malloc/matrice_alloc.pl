@@ -3,7 +3,7 @@ author = Clément BOIN
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-Ecrire une fonction qui alloue et renvoie une matrice de taille lignes*colonnes 
+Ecrire une fonction qui alloue et renvoie une matrice d'entiers de taille lignes*colonnes 
 et qui l'initialise avec la valeur 0 dans toutes les cases.
 ==
 
@@ -72,6 +72,7 @@ tests==
  ]
 
 ==
+
 
 
 
