@@ -156,11 +156,13 @@ if step<nbstep:
     if q['type'] == "Radio":
         radio.setitems(q['items'])
         radio.setsol_from_index(q['index'])
+        radio.disabled = False
         if 'ordered' not in q['options']:
             radio.shuffle()
     elif q['type'] == "Checkbox":
         check.setitems(q['items'])
         check.setsol_from_index(q['index'])
+        check.disabled = False
         if 'ordered' not in q['options']:
             check.shuffle()
     elif  q['type'] == 'TextSelect':
@@ -187,6 +189,7 @@ form==
     {{ ztext | component }}
 {% endif %}
 ==
+
 
 
 
