@@ -47,6 +47,8 @@ for q in list_questions:
         l2.append(buildquestion(q))
 list_questions=l2
 
+onepergroup=True
+
 if "onepergroup" in globals() and onepergroup :
     list_questions=onefromeachgroup(list_questions)
 elif 'nbstep' in globals():
