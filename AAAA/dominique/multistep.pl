@@ -15,6 +15,28 @@ settings.cumulative % false
 
 questions==
 
+**   Lorsque vous disposez d'un bloc constitué de plus d'une ligne dans un if, comment indiquez vous la fin du bloc ?
+
+
+   c=1   
+
+     print(c)  
+
+   input("$ ")
+ 
+
+
+
++On diminue l'indentation à la ligne suivant le bloc, pour revenir à une indentation identique à celle de la ligne possédant l'instruction if
+-On utilise une accolade } après la dernière ligne du bloc if
+-On ne met pas le caractère : à la dernière ligne du bloc if
+-On met une majuscule à la première lettre de la ligne suivant la fin du bloc if
+
+*   Lorsque vous disposez d'un bloc constitué de plus d'une ligne dans un if, comment indiquez vous la fin du bloc ?
++ On diminue l'indentation à la ligne suivant le bloc, pour revenir à une indentation identique à celle de la ligne possédant l'instruction if
+- On utilise une accolade } après la dernière ligne du bloc if
+- On ne met pas le caractère : à la dernière ligne du bloc if
+- On met une majuscule à la première lettre de la ligne suivant la fin du bloc if
 
 ==
 
@@ -47,8 +69,6 @@ for q in list_questions:
         l2.append(buildquestion(q))
 list_questions=l2
 
-onepergroup=True
-
 if "onepergroup" in globals() and onepergroup :
     list_questions=onefromeachgroup(list_questions)
 elif 'nbstep' in globals():
@@ -60,7 +80,7 @@ nbstep = len(list_questions)
 random.shuffle(list_questions)
 
 step= -1 # première étape 
-text= f"Ce test contient {nbstep} questions. Pas de retour arrière et un seul essai ! "
+text= f"Ce test à {nbstep} questions. Pas de retour arrière et un seul essai ! "
 
 
 scores=[]
@@ -147,6 +167,8 @@ if step<nbstep:
             check.shuffle()
     elif  q['type'] == 'TextSelect':
         ztext.setdata_from_textDR(q['items'][0])
+    elif q['type'] == 'MatchList' :
+        Match.setfrompairs(q['items'])
     statement = q['text']
     grade=(currentscore, "<br>")
     text="""Question {{ step + 1 }}.
@@ -169,8 +191,6 @@ form==
     {{ ztext | component }}
 {% endif %}
 ==
-
-
 
 
 
