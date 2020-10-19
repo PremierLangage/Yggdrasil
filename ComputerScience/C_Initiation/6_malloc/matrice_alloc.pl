@@ -1,6 +1,3 @@
-# Revu par Clément BOIN le 19/10/2020
-# Déplacement du typedef après les #defin sinon ça ne marche pas ici
-
 title=Initialisation d'une matrice
 author = Clément BOIN
 extends=/ComputerScience/C/template/stdsandboxC.pl
