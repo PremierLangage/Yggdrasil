@@ -8,7 +8,7 @@ tag=string|malloc|function
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-Le but de cet exercise est d'écrire une fonction **new_tab_string** qui
+Le but de cet exercice est d'écrire une fonction **new_tab_string** qui
 va lire l'entrée standard pour récupérer un certains nombre de chaînes
 de caractères, nombre non connu à la compilation. Toutefois, l'entrée
 standard commencera toujours par un entier qui renseignera le nombre de
@@ -112,6 +112,7 @@ tests==
  ["Aléatoire", "10", "\n".join(random.choices(['red', 'black', 'green'], [2,2,2], k=10))]]
 
 ==
+
 
 
 
