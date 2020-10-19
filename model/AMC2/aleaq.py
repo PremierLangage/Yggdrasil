@@ -126,8 +126,8 @@ def buildquestion(questionp):
                         bads.append(r)
 
 
-            nbg=int(d.get("good",1))
-            nbb=int(d.get("bad",3))
+            nbg=int(d.get("nbg",1))
+            nbb=int(d.get("nbb",3))
             
             bads= random.sample(bads ,min(len(bads),nbb)) 
             random.shuffle(bads)
@@ -142,6 +142,7 @@ def buildquestion(questionp):
         print(e)
         raise e
     
+
 
 
 
