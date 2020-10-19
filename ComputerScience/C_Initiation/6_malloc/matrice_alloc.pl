@@ -23,10 +23,14 @@ solution==
 int** allocmatrice_zero (int lig,int col)
 {
 	int i,j;
-	int** matrice = calloc(lig*sizeof(int*));
+	int** matrice = malloc(lig*sizeof(int*));
 
 	for(i=0;i<lig;i++)
-		matrice[i]=calloc(col*sizeof(int));
+		matrice[i]=malloc(col*sizeof(int));
+
+	for(i=0;i<lig;i++)
+		for(j=0;j<col;j++)
+			matrice[i][j]=0;		
 
 	return matrice;
 }
@@ -35,7 +39,7 @@ int** allocmatrice_zero (int lig,int col)
 codebefore==
 #include <stdlib.h>
 #include <stdio.h>
-#include <assert.h>
+
 ==
 
 codeafter==
