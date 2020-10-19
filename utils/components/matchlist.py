@@ -32,6 +32,8 @@ class CustomMatchList(Component):
         """
         Load matched pairs of items in the component.
         """ 
+        self.nodes = []
+        self._sol = []
         for source, target in matches:
             sourceid = str(uuid4())
             targetid = str(uuid4())
@@ -79,5 +81,6 @@ class CustomMatchList(Component):
             raise ValueError(f"'{scoring}' is not a valid scoring")
 
         return score
+
 
 
