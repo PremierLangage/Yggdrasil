@@ -34,7 +34,7 @@ de type *Vector3d* passés par adresse.
     
 ==
 
-editor.code==
+editor.code==#|c|
 typedef struct vector3d{
   int x;
   int y;
@@ -44,11 +44,9 @@ typedef struct vector3d{
 ... scalar_product3d(...){
   /* Votre code ici */
 }
-  
 ==
 
-solution==
-
+solution==#|c|
 typedef struct vector3d{
   int x;
   int y;
@@ -58,20 +56,14 @@ typedef struct vector3d{
 int scalar_product3d(Vector3d* u, Vector3d* v){
   return u->x*v->x + u->y*v->y + u->z*v->z;
 }
-
 ==
 
-codebefore==
-
+code_before==#|c|
 #include <stdio.h>
 #include <stdlib.h>
-
 ==
 
-
-codeafter==
-
- 
+codeafter==#|c|
 int main(int argc, char* argv[]){
 
   Vector3d u = {atoi(argv[1]), atoi(argv[2]), atoi(argv[3])};
@@ -82,17 +74,16 @@ int main(int argc, char* argv[]){
                                                 scalar_product3d(&u, &v));
   return 0;
 }
-
 ==
 
-tests== 
-[ ["Simple", "1 1 1 1 1 1", ""],
-	["Nul1", "1 1 0 1 -1 1", ""],
-  ["Nul2", "-2 1 1 1 1 1", ""],
-  ["vecteurs aléatoires", " ".join([str(random.randint(-10,10)) for i in range(6)]), "" ],
-  ["vecteurs aléatoires", " ".join([str(random.randint(-10,10)) for i in range(6)]), "" ],
-  ["vecteurs aléatoires", " ".join([str(random.randint(-10,10)) for i in range(6)]), "" ],
-  ["vecteurs aléatoires", " ".join([str(random.randint(-10,10)) for i in range(6)]), "" ] ]
+checks_args_stdin==#|python|
+[ ["Simple", ["1", "1", "1", "1", "1", "1"], ""],
+	["Nul1", ["1", "1", "0", "1", "-1", "1"], ""],
+  ["Nul2", ["-2", "1", "1", "1", "1", "1"], ""],
+  ["vecteurs aléatoires", [str(randint(-10,10)) for i in range(6)], "" ],
+  ["vecteurs aléatoires", [str(randint(-10,10)) for i in range(6)], "" ],
+  ["vecteurs aléatoires", [str(randint(-10,10)) for i in range(6)], "" ],
+  ["vecteurs aléatoires", [str(randint(-10,10)) for i in range(6)], "" ] ]
 ==
 
 
