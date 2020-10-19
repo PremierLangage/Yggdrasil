@@ -1,4 +1,5 @@
-
+# Revu par Clément BOIN le 19/10/2020
+# Déplacement du typedef après les #defin sinon ça ne marche pas ici
 
 title=Allocation d'un tableau à une dimension
 tag=array|malloc
@@ -76,6 +77,7 @@ tests==
  ["Aléatoire", str(random.randint(1000000000, 2000000000)), ""]]
 
 ==
+
 
 
 
