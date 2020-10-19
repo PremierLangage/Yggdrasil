@@ -31,6 +31,8 @@ typedef struct{
 char  nom[20];
 int age;
 }Etudiant;
+
+#define _DEFAULT_SOURCE
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
@@ -75,6 +77,7 @@ tests==
  ["Aléatoire", str(random.randint(1000000000, 2000000000)), ""]]
 
 ==
+
 
 
 
