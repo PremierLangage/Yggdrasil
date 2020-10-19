@@ -35,7 +35,7 @@ int** allocmatrice_zero (int lig,int col)
 codebefore==
 #include <stdlib.h>
 #include <stdio.h>
-
+#include <assert.h>
 ==
 
 codeafter==
