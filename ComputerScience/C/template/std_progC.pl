@@ -207,7 +207,7 @@ if taboo:
     pat = re.compile(taboo, re.IGNORECASE)
     if pat.search(editor.code):
         compil_state = 'error'
-        text_compil = 'Compilation échouée non respecr du taboo'+taboo
+        text_compil = 'Compilation échouée non respect du taboo : '+taboo+' '
         grade_compil = 0
 
 
