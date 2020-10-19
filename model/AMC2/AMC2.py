@@ -62,7 +62,7 @@ def parse_AMC_TXT(txt):
                     question_type = "MatchList"
                 else:
                     question_type = "Radio"
-                line = line.lstrip("*+ ")
+                line = line.lstrip("*=+ ")
                 if line.startswith('['):
                     r0 = line.find(']')
                     options = [option.strip() for option in line[1:r0].split(',')]
