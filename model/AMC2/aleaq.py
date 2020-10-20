@@ -101,7 +101,7 @@ def buildquestion(questionp):
                 else:
                     bads.append(defi)
             #debug question['text']=str(bads)
-            bads= random.sample(bads , nb-1) # en choisir n-1
+            bads= random.sample(bads ,min(len(bads), nb-1)) # en choisir n-1
             random.shuffle(bads)
             # INSERER good quelque part et noter l'index 
             index=random.randint(0,len(bads))
@@ -126,8 +126,8 @@ def buildquestion(questionp):
                         bads.append(r)
 
 
-            nbg=int(d.get("nbg",1))
-            nbb=int(d.get("nbb",3))
+            nbg=int(d.get("good",1))
+            nbb=int(d.get("bad",3))
             
             bads= random.sample(bads ,min(len(bads),nbb)) 
             random.shuffle(bads)
@@ -136,16 +136,12 @@ def buildquestion(questionp):
             question['items'],question['index']=buildlistes(goods,bads)
 
             return question
-        if question.get('type') == 'MatchList':
-            question['items']= [ item.split(",") for item in question['items']]
-            return question
+        
     except Exception as e:
         print("Problème dans votre question ", str(question))
         print(e)
         raise e
     
-
-
 
 
 
