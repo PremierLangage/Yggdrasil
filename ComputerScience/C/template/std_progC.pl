@@ -225,7 +225,7 @@ if "taboo" in globals():
 feedback = '<p style="margin-bottom: 5px;"><b><u>Compilation :</u> ' + str(grade_compil) + '%</b> '
 if compil_state != 'success':
     feedback += '(cliquer au dessous pour dérouler les détails)</p>'
-feedback += '<div class="' + compil_state + '-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
+feedback += '<div class="' + class_state + '-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
 if compil_state == 'taboo-error':
     feedback += "Refus de compilation Non respect du taboo : "+taboo
 elif compil_state != 'success':
