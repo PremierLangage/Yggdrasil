@@ -72,7 +72,7 @@ if "taboo" in globals():
     text+='<div class="warning-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
     text+="Attention, il y aura un refus de compilation si vous proposez un code qui utilise les mots suivants (ne les mentionnez pas ni en fonction, ni en nom de variable) : "
     text+=str(taboo)
-    text+='</div>'
+    text+='</div> <br />\n'
 
 
 text+=" {{ editor|component }} "
