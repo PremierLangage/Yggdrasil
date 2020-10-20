@@ -3,7 +3,6 @@
 @ /utils/components/radio.py [customradio.py]
 @ /utils/components/checkbox.py [customcheckbox.py]
 @ /utils/components/textselect.py [customtextselect.py]
-@ /utils/components/matchlist.py [custommatchlist.py]
 
 
 @ /model/AMC2/AMC2.py [AMC.py]
@@ -14,10 +13,6 @@
 
 settings.cumulative % false
 
-questions==
-
-
-==
 
 questions=@ justine_questions.txt
 
@@ -31,11 +26,9 @@ before==
 from customradio import CustomRadio
 from customcheckbox import CustomCheckbox
 from customtextselect import CustomTextSelect
-from custommatchlist import CustomMatchList
 radio = CustomRadio() 
 check = CustomCheckbox()
 ztext = CustomTextSelect()
-Match = CustomMatchList()
 import random
 from AMC import parse_AMC_TXT
 
@@ -110,8 +103,6 @@ def evaluate(q):
         return check.eval()
     if  q['type'] == 'TextSelect':
         return ztext.eval()
-    if q['type'] == 'MatchList':
-        return Match.eval()
 
 def strfromcomp(q):
     if q['type'] == "Radio":
@@ -120,8 +111,6 @@ def strfromcomp(q):
         return "{{ check | component }}"
     if  q['type'] == 'TextSelect':
         return "{{ ztext | component }}"
-    if  q['type'] == 'MatchList':
-        return "{{ Match | component }}"
 
 currentscore=0
 if step> -1:
@@ -141,19 +130,15 @@ if step<nbstep:
     if q['type'] == "Radio":
         radio.setitems(q['items'])
         radio.setsol_from_index(q['index'])
-        radio.disabled = False
         if 'ordered' not in q['options']:
             radio.shuffle()
     elif q['type'] == "Checkbox":
         check.setitems(q['items'])
         check.setsol_from_index(q['index'])
-        check.disabled = False
         if 'ordered' not in q['options']:
             check.shuffle()
     elif  q['type'] == 'TextSelect':
         ztext.setdata_from_textDR(q['items'][0])
-    elif q['type'] == 'MatchList' :
-        Match.setdata_from_matches(q['items'])
     statement = q['text']
     grade=(currentscore, "<br>")
     text="""Question {{ step + 1 }}.
@@ -174,13 +159,8 @@ form==
     {{ check | component }}
 {% elif q['type'] == "TextSelect" %}
     {{ ztext | component }}
-{% elif q['type'] == 'MatchList' %}
-    {{ Match | component }}
 {% endif %}
 ==
-
-
-
 
 
 
