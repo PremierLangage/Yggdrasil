@@ -70,11 +70,11 @@ int main(int argc, char* argv[]){
   int info_sortie[strlen(argv[1])];
   int i;
   if(motus(argv[1],argv[2],info_sortie)){
-  for(i=0;i<strlen(mystere);i++){
+  for(i=0;i<strlen(argv[1]);i++){
     printf("%d",info_sortie[i]);
   }
   printf("\n");
-  printf("%s\n",mystere);
+  printf("%s\n",argv[1]);
   } else {
     printf("la proposition n'est pas de la bonne taille");
   }
