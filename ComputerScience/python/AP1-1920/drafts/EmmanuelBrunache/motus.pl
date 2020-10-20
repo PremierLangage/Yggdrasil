@@ -24,7 +24,7 @@ code_before==
 
 ==
 
-taboo=string.h|strlen
+taboo=string.h
 
 editor.code==
 /* ... */  motus(char mystere[],char proposition[],int info_sortie[]){
@@ -85,7 +85,7 @@ int main(int argc, char* argv[]){
 
 
 checks_args_stdin==#|python|
-[ ["simple éxécution", ["bonjour","bonsoir],""],
+[ ["simple éxécution", ["bonjour","bonsoir"],""],
 ["alea",["".join([chr(randint(97,122)) for i in range(randint(1,15))])],""]]
 ==
 
