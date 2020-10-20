@@ -8,15 +8,17 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 text==
 
-Ecrire une fonction `int motus(char mystere[],char proposition[],int info_sortie[])` qui reçoit une chaine de caractères `mystere` à découvrir, une chaine de caractères `proposition` et un tableau d'entiers `info_sortie` (de même taille que le mot mystère) se remplissant de la manière suivante pour chaucun des i-ème caractère de la proposition:<br>
+Ecrire une fonction `int motus(char mystere[],char proposition[],int info_sortie[])` qui reçoit une chaine de caractères `mystere` à découvrir, une chaine de caractères `proposition` et un tableau d'entiers `info_sortie` (de même taille que le mot mystère) se remplissant de la manière suivante pour chacun des i-ème caractères de la proposition:<br>
  - 0 si le caractère de la proposition n'est pas dans le mot mystere.<br>
  - 1 si le caractère de la proposition existe dans le mot mystère mais n'est pas à la bonne place.<br>
  - 2 si le caractère de la proposition est à la même place dans le mot mystère.<br>
 
-Attention: Si une lettre apparait n fois dans le mot mystère, on ne peut avoir au maximum que n chiffres différents de 0 dans info_sortie.<br>
+Attention: Si une lettre apparaît n fois dans le mot mystère, on ne peut avoir au maximum que n chiffres différents de 0 dans info_sortie.<br>
 Exemple: si le mot mystère est 'bonjour' et que la proposition est 'oooonnn', le tableau info_sortie sera 1200100.<br>
 
 Par ailleurs, la fonction renvoie EXIT_FAILURE si la proposition n'est pas de la même taille que le mot mystère et EXIT_SUCCESS sinon.
+
+La fonction motus doit avoir une complexité linéaire en la longueur de la chaîne de caractères.
 ==
 code_before==
 
