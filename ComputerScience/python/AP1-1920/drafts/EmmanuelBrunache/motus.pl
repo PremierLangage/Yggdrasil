@@ -85,7 +85,7 @@ checks_args_stdin==#|python|
 [
   ["simple éxécution", ["bonjour","bonsoir"],""],
   ["simple éxécution autre", ["bonjour","oooonnn"],""],
-  ["alea taille identique",["".join([chr(randint(97,122)) for i in range 15]),"".join([chr(randint(97,122)) for i in range 15])],""],
+  ["alea taille identique",["".join([chr(randint(97,122)) for i in range(15)]),"".join([chr(randint(97,122)) for i in range(15)])],""],
   ["alea taille différente",["".join([chr(randint(97,122)) for i in range(randint(1,15))]),"".join([chr(randint(97,122)) for i in range(randint(1,15))])],""]
 ]
 ==
