@@ -71,8 +71,9 @@ int main(int argc, char* argv[]){
   char mystere[]=argv[1];
   char proposition[]=argv[2];
   int info_sortie[strlen(mystere)];
+  int i;
   if(motus(mystere,proposition,info_sortie)){
-  for(int i=0;i<strlen(mystere);i++){
+  for(i=0;i<strlen(mystere);i++){
     printf("%d",info_sortie[i]);
   }
   printf("\n");
