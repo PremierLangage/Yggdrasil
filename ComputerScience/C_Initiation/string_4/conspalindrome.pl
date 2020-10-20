@@ -8,7 +8,7 @@ tag=string
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-
+A
 Ecrire une fonction de prototype `int construit_palin(char s[],int taille)` 
 qui reçoit un tableau de taille `taille` contenant une chaine de caractères et la transforme,
 si possible, en palindrome:  
@@ -83,6 +83,7 @@ tests==
  
  ["aleatoire","",random.choice(["elle","kayak","velo","radar","avion","rotor","serres","solos","suffit"])+" 10"], ]
 ==
+
 
 
 
