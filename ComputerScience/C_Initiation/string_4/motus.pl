@@ -28,8 +28,9 @@ code_before==
 
 
 editor.code==
-/* ... */  motus(char mystere[],char proposition[],int info_sortie[]){
-/* A compléter */
+/* <type>*/ motus(char mystere[], char proposition[], int info_sortie[])
+{
+  /* A compléter */
 }
 
 ==
