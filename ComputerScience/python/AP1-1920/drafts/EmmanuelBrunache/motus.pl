@@ -20,7 +20,8 @@ Par ailleurs, la fonction renvoie 0 si la proposition n'est pas de la même tail
 code_before==
 
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
+
 
 ==
 
