@@ -4,11 +4,12 @@ introduction==
 Voici deux exercices pour situer des mathématiciens célèbres dans le temps.
 
 == 
-title= QCM (je change le titre pour que cela flash dans l'exemple)
+title= Situer des mathématiciens dans le temps.
 @matchlist_mathematiciens.pl
 @newsortlist.pl
 # on peut rajouter d'autres exercices 
 #@ un autre exo .pl 
+
 
 
 
