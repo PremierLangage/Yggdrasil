@@ -217,7 +217,6 @@ if "taboo" in globals():
         text_compil = 'Compilation échouée non respect du taboo : '+taboo+' '
         grade_compil = 0
 
-
 # begin of feedback
 feedback = '<p style="margin-bottom: 5px;"><b><u>Compilation :</u> ' + str(grade_compil) + '%</b> '
 if compil_state != 'success':
