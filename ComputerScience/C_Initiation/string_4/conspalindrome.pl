@@ -14,15 +14,15 @@ qui reçoit un tableau de taille `taille` contenant une chaine de caractères et
 si possible, en palindrome:  
 si la chaine est déjà un palindrome elle reste inchangée  
 sinon, si la taille du tableau est suffisante, on la concatène à son miroir pour que le tableau contienne un palindrome.    
-Si la taille du tableau n'est pas suffisante, on ne fait rien.   
-Exemple :   
+Si la taille du tableau n'est pas suffisante, on ne fait rien.
+Exemple :
 Si le tableau s contient "velo"  
-`construit_palin(s,20)` transforme s en"veloolev" et renvoie 1  
+`construit_palin(s,20)` transforme s en "veloolev" et renvoie 1
 et l'appel suivant  
-`construitpalin(s,20)` laisse s inchangé et renvoie 0.    
+`construit_palin(s,20)` laisse s inchangé et renvoie 0.
 
 Si le tableau s contient "velo", 
-l'appel `construitpalin(s,6)` laisse s inchangé et renvoie 0.
+l'appel `construit_palin(s,6)` laisse s inchangé et renvoie 0.
 ==
 codebefore==
 
