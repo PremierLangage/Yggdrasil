@@ -194,12 +194,14 @@ if len(spout) + len(errout) == 0:
     grade_compil = 100
     text_compil = 'Compilation réussie'
     compil_state = 'success'
+    class_state = 'success'
 else:
     # Compilation Aborted
     if "error:" in errout:
         grade_compil = 0
         text_compil = 'Compilation échouée'
         compil_state = 'error'
+        class_state = 'error'
     # So there must have some warning
     else:
         nb_w_compil = (spout+errout).count('warning')
@@ -208,12 +210,14 @@ else:
         if nb_w_compil > 1:
             text_compil += 's'
         compil_state = 'warning'
+        class_state = 'warning'
 
 if "taboo" in globals(): 
     import re
     pat = re.compile(taboo, re.IGNORECASE)
     if pat.search(editor.code):
         compil_state = 'taboo-error'
+        class_state = 'error'
         text_compil = 'Compilation échouée non respect du taboo : '+taboo+' '
         grade_compil = 0
 
@@ -223,7 +227,7 @@ if compil_state != 'success':
     feedback += '(cliquer au dessous pour dérouler les détails)</p>'
 feedback += '<div class="' + compil_state + '-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
 if compil_state == 'taboo-error':
-    feedback += "Non respect du taboo : "+taboo
+    feedback += "Refus de compilation Non respect du taboo : "+taboo
 elif compil_state != 'success':
     feedback += make_hide_block_on_click("compil_ans", text_compil + ' avec flags ' + ' '.join(cflags), terminal_code(spout+errout), "")
 else:
