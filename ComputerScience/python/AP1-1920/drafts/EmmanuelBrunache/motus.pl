@@ -25,7 +25,6 @@ code_before==
 
 ==
 
-taboo=
 
 editor.code==
 /* ... */  motus(char mystere[],char proposition[],int info_sortie[]){
