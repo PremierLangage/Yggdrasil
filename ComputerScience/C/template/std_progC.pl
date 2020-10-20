@@ -223,7 +223,7 @@ if compil_state != 'success':
     feedback += '(cliquer au dessous pour dérouler les détails)</p>'
 feedback += '<div class="' + compil_state + '-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
 if compil_state == 'taboo-error':
-    feedback += make_hide_block_on_click("compil_ans", text_compil + ' avec flags ' + ' '.join(cflags), terminal_code(spout+errout), "")
+    feedback += "Non respect du taboo : "+taboo
 elif compil_state != 'success':
     feedback += make_hide_block_on_click("compil_ans", text_compil + ' avec flags ' + ' '.join(cflags), terminal_code(spout+errout), "")
 else:
