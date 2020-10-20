@@ -320,7 +320,7 @@ feedback += '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Tests :</u> '
 
 if compil_state == 'error':
     feedback += '<div class="error-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
-    feedback += '<b>Erreur à la compilation :</b> Pas de tests lancés</div>'
+    feedback += '<b>Erreur à la compilation :</b> Pas de test lancé</div>'
 else:
     feedback += feedback_checks
 
