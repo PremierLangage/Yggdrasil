@@ -13,7 +13,7 @@ import csv
 with open('mathematiciensListeCourte.csv', newline='') as file:
     all_rows = list(csv.DictReader(file, delimiter=','))
     
-sample_rows = rd.sample(all_rows, 4)
+sample_rows = rd.sample(all_rows, 5)
 
 matchlist.setdata_from_matches([(row['nom'], row['dates']) for row in sample_rows])
 ==
