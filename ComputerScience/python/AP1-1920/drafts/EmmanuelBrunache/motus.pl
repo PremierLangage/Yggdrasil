@@ -89,7 +89,7 @@ checks_args_stdin==#|python|
   ["semi alea taille identique",["aa".join([chr(randint(97,122)) for i in range(15)]),"aa".join([chr(randint(97,122)) for i in range(15)])],""],
   ["alea taille identique",["".join([chr(randint(97,122)) for i in range(15)]),"".join([chr(randint(97,122)) for i in range(15)])],""],
   ["alea grande taille identique",["".join([chr(randint(97,122)) for i in range(100)]),"".join([chr(randint(97,122)) for i in range(100)])],""],
-  ["alea taille différente",["".join([chr(randint(97,122)) for i in range(randint(1,15))]),"".join([chr(randint(97,122)) for i in range(randint(1,15))])],""]
+  ["alea taille différente",["".join([chr(randint(97,122)) for i in range(randint(1,10))]),"".join([chr(randint(97,122)) for i in range(randint(11,15))])],""]
 ]
 ==
 
