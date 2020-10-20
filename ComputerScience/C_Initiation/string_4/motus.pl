@@ -80,8 +80,8 @@ int main(int argc, char* argv[])
     else printf("la proposition n'est pas de la bonne taille");
     return 0;
 }
-==
 
+==
 
 checks_args_stdin==#|python|
 [
@@ -93,6 +93,7 @@ checks_args_stdin==#|python|
   ["alea taille différente",["".join([chr(randint(97,122)) for i in range(randint(1,10))]),"".join([chr(randint(97,122)) for i in range(randint(11,15))])],""]
   ["alea géante taille identique",["".join([chr(randint(97,122)) for i in range(1000000)]),"".join([chr(randint(97,122)) for i in range(1000000)])],""]
 ]
+
 ==
 
 
