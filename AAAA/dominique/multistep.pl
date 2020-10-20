@@ -17,7 +17,7 @@ settings.cumulative % false
 questions=@ justine_questions.txt
 
 
-title= Muti step a la DR
+title= Quizz
 
 text = Pas de text 
 
