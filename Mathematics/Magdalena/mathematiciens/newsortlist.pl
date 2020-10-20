@@ -4,7 +4,7 @@ extends = /exemples/sortlist/template.pl
 
 # la colonne nom doit être dans le bon ordre
 columns=nom,dates
-number=8
+number=7
 
 #@ toto.csv [data.csv]
 @ mathematiciensListeCourte.csv [data.csv]
