@@ -1,5 +1,5 @@
 
-author=Emmanuel Brunache
+author=Emmanuel Brunache, Yoshihiro Shibuya
 
 
 title=Longueur de chaine
