@@ -7,7 +7,9 @@
 # Tableau de chaînes de caractères
 author= 
 title=Tableau de chaînes de caractères
-tag=string|malloc|function
+
+tag=string|malloc|fonction
+
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
@@ -120,6 +122,7 @@ tests==
  ["Aléatoire", "10", "\n".join(random.choices(['red', 'black', 'green'], [2,2,2], k=10))]]
 
 ==
+
 
 
 
