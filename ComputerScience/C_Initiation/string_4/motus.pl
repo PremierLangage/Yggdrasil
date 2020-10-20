@@ -54,16 +54,16 @@ int motus(char mystere[], char proposition[], int info_sortie[])
 
     for(i = 0; i < l_mys; ++i)
     {
-        trouve[mystere[i]] ++;
+        trouve[(int)mystere[i]] ++;
     }
 
     for(i = 0; i < l_mys; ++i)
     {
         if(mystere[i] == proposition[i]) info_sortie[i] = MATCH;
-        else if (trouve[proposition[i]])
+        else if ((int)trouve[proposition[i]])
             {
                 info_sortie[i] = FOUND;
-                trouve[proposition[i]]--;
+                trouve[(int)proposition[i]]--;
             }
         else info_sortie[i] = NOT_FOUND;
     }
