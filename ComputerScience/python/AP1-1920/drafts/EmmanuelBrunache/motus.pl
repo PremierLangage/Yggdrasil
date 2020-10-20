@@ -16,7 +16,7 @@ Ecrire une fonction `int motus(char mystere[],char proposition[],int info_sortie
 Attention: Si une lettre apparait n fois dans le mot mystère, on ne peut avoir au maximum que n chiffres différents de 0 dans info_sortie.<br>
 Exemple: si le mot mystère est 'bonjour' et que la proposition est 'oooonnn', le tableau info_sortie sera 1200100.<br>
 
-Par ailleurs, la fonction renvoie 0 si la proposition n'est pas de la même taille que le mot mystère et 1 sinon
+Par ailleurs, la fonction renvoie 0 si la proposition n'est pas de la même taille que le mot mystère et 1 sinon.
 ==
 code_before==
 
@@ -86,7 +86,9 @@ checks_args_stdin==#|python|
 [
   ["simple éxécution", ["bonjour","bonsoir"],""],
   ["simple éxécution autre", ["bonjour","oooonnn"],""],
+  ["semi alea taille identique",["aa".join([chr(randint(97,122)) for i in range(15)]),"aa".join([chr(randint(97,122)) for i in range(15)])],""],
   ["alea taille identique",["".join([chr(randint(97,122)) for i in range(15)]),"".join([chr(randint(97,122)) for i in range(15)])],""],
+  ["alea grande taille identique",["".join([chr(randint(97,122)) for i in range(100)]),"".join([chr(randint(97,122)) for i in range(100)])],""],
   ["alea taille différente",["".join([chr(randint(97,122)) for i in range(randint(1,15))]),"".join([chr(randint(97,122)) for i in range(randint(1,15))])],""]
 ]
 ==
