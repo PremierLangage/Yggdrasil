@@ -12,6 +12,8 @@ Ecrire une fonction `int motus(char mystere[],char proposition[],int info_sortie
  - 0 si le caractère de la proposition n'est pas dans le mot mystere.
  - 2 si le caractère de la proposition est à la même place dans le mot mystère.
  - 1 si le caractère de la proposition existe dans le mot mystère mais n'est pas à la bonne place.
+
+Attention: Si une lettre apparait n fois dans le mot mystère, on ne peut avoir au maximum que n chiffres différents de 0 dans info_sortie. Exemple: si le mot mystère est 'bonjour' et que la proposition est 'oooonnn', le tableau info_sortie sera 1200000
 Elle fait comme la fonction strlen mais vous n'avez bien entendu pas le droit de l'utiliser.
 ==
 code_before==
