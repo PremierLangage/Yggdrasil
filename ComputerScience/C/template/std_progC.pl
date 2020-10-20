@@ -227,7 +227,7 @@ if compil_state != 'success':
     feedback += '(cliquer au dessous pour dérouler les détails)</p>'
 feedback += '<div class="' + class_state + '-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
 if compil_state == 'taboo-error':
-    feedback += "Refus de compilation Non respect du taboo : "+taboo
+    feedback += "<b>Refus de compilation :</b> non respect du taboo : "+taboo
 elif compil_state != 'success':
     feedback += make_hide_block_on_click("compil_ans", text_compil + ' avec flags ' + ' '.join(cflags), terminal_code(spout+errout), "")
 else:
@@ -345,6 +345,7 @@ grade=((grade_compil * grade_checks * grade_attempt) // 10000, feedback)
 # tests.test1.editor.code = 'int carre(int p){ return p*p; }'
 # tests.test1.editor.code = solution
 # tests.test1.grade = 100
+
 
 
 
