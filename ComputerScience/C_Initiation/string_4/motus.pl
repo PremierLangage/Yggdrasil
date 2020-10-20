@@ -49,18 +49,22 @@ int motus(char mystere[], char proposition[], int info_sortie[])
 {
     int i;
     int l_mys = strlen(mystere);
-    unsigned char trouve[256] = {false};
+    unsigned int trouve[256] = {false};
     if (l_mys != strlen(proposition)) return EXIT_FAILURE;
 
     for(i = 0; i < l_mys; ++i)
     {
-        trouve[mystere[i]] = true;
+        trouve[mystere[i]] ++;
     }
 
     for(i = 0; i < l_mys; ++i)
     {
         if(mystere[i] == proposition[i]) info_sortie[i] = MATCH;
-        else if (trouve[proposition[i]]) info_sortie[i] = FOUND;
+        else if (trouve[proposition[i]])
+            {
+                info_sortie[i] = FOUND;
+                trouve[proposition[i]]--;
+            }
         else info_sortie[i] = NOT_FOUND;
     }
 
