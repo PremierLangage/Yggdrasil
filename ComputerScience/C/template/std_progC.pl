@@ -231,7 +231,7 @@ else:
 feedback += '</div>'
 
 # We replace the compil state to error to disable tests
-if compil_state = 'taboo-error':
+if compil_state == 'taboo-error':
     compil_state = 'error'
 
 # Tests
