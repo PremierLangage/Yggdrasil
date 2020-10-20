@@ -67,11 +67,9 @@ int motus(char mystere[],char proposition[],int info_sortie[]){
 
 code_after==
 int main(int argc, char* argv[]){
-  char mystere[]=argv[1];
-  char proposition[]=argv[2];
-  int info_sortie[strlen(mystere)];
+  int info_sortie[strlen(argv[1])];
   int i;
-  if(motus(mystere,proposition,info_sortie)){
+  if(motus(argv[1],argv[2],info_sortie)){
   for(i=0;i<strlen(mystere);i++){
     printf("%d",info_sortie[i]);
   }
