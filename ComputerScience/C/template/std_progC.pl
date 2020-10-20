@@ -317,7 +317,12 @@ if compil_state != 'error':
 
     grade_checks = min([((nb_good*100) // (nb_good+nb_bad)) , (100 // (2**nb_bad))])
 feedback += '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Tests :</u> ' + str(grade_checks) + '%</b> (cliquer sur les tests pour afficher/réduire leurs détails)</p>'
-feedback += feedback_checks
+
+if compil_state == 'error':
+    feedback += '<div class="error-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
+    feedback += '<b>Erreur à la compilation :</b> Pas de tests lancés</div>'
+else:
+    feedback += feedback_checks
 
 grade_attempt = 50 + (200 // (3+nb_attempt))
 
