@@ -68,6 +68,13 @@ cflags=["-Wall", "-ansi"]
 # Place here library flags
 libflags=[]
 
+if "taboo" in globals(): 
+    text+='<div class="warning-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
+    text+="Attention, vous devez proposer un code qui n'utilise pas les mots suivants (ni en fonction, ni en nom de variable) :"
+    text+=" "+str(taboo)
+    text+='</div>'
+
+
 text+=" {{ editor|component }} "
 ==
 
@@ -329,6 +336,7 @@ grade=((grade_compil * grade_checks * grade_attempt) // 10000, feedback)
 # tests.test1.editor.code = 'int carre(int p){ return p*p; }'
 # tests.test1.editor.code = solution
 # tests.test1.grade = 100
+
 
 
 
