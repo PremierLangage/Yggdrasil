@@ -22,9 +22,16 @@ La fonction motus doit avoir une complexité linéaire en la longueur de la cha�
 ==
 code_before==
 
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 
+#define false 0
+#define true  1
+
+#define NOT_FOUND 0
+#define FOUND 1
+#define MATCH 2
 
 ==
 
@@ -38,51 +45,40 @@ editor.code==
 ==
 
 solution==
-int motus(char mystere[],char proposition[],int info_sortie[]){
-  int l_mys=strlen(mystere);
-  int l_prop=strlen(proposition);
-  if (l_mys!=l_prop){
-    return 0;
-  }
-  int i;
-  int j;
-  for (i=0;i<l_mys;i++){
-    info_sortie[i]=0;
-    if (mystere[i]==proposition[i]){
-      info_sortie[i]=2;
-      mystere[i]='*';
+int motus(char mystere[], char proposition[], int info_sortie[])
+{
+    int i;
+    int l_mys = strlen(mystere);
+    unsigned char trouve[256] = {false};
+    if (l_mys != strlen(proposition)) return EXIT_FAILURE;
+
+    for(i = 0; i < l_mys; ++i)
+    {
+        trouve[mystere[i]] = true;
     }
-  }
-  for (i=0;i<l_mys;i++){
-    if (info_sortie[i]==0){
-      for(j=0;j<l_mys;j++){
-        if(proposition[i]==mystere[j]){
-          info_sortie[i]=1;
-          mystere[j]='*';
-          break;
-        }
-      }
+
+    for(i = 0; i < l_mys; ++i)
+    {
+        if(mystere[i] == proposition[i]) info_sortie[i] = MATCH;
+        else if (trouve[proposition[i]]) info_sortie[i] = FOUND;
+        else info_sortie[i] = NOT_FOUND;
     }
-  }
-  return 1;
+
+    return EXIT_SUCCESS;
 }
 
 ==
 
 code_after==
-int main(int argc, char* argv[]){
-  int info_sortie[strlen(argv[1])];
-  int i;
-  printf("le mot mystère est: %s\n",argv[1]);
-  printf("la proposition est: %s\n",argv[2]);
-  if(motus(argv[1],argv[2],info_sortie)){
-    for(i=0;i<strlen(argv[1]);i++){
-      printf("%d",info_sortie[i]);
-    }
-  } else {
-    printf("la proposition n'est pas de la bonne taille");
-  }
-  return 0;
+int main(int argc, char* argv[])
+{
+    int info_sortie[strlen(argv[1])];
+    int i;
+    printf("le mot mystère est: %s\n",argv[1]);
+    printf("la proposition est: %s\n",argv[2]);
+    if(motus(argv[1], argv[2], info_sortie) == EXIT_SUCCESS) for(i = 0; i < strlen(argv[1]); i++) printf("%d", info_sortie[i]);
+    else printf("la proposition n'est pas de la bonne taille");
+    return 0;
 }
 ==
 
@@ -95,6 +91,7 @@ checks_args_stdin==#|python|
   ["alea taille identique",["".join([chr(randint(97,122)) for i in range(15)]),"".join([chr(randint(97,122)) for i in range(15)])],""],
   ["alea grande taille identique",["".join([chr(randint(97,122)) for i in range(100)]),"".join([chr(randint(97,122)) for i in range(100)])],""],
   ["alea taille différente",["".join([chr(randint(97,122)) for i in range(randint(1,10))]),"".join([chr(randint(97,122)) for i in range(randint(11,15))])],""]
+  ["alea géante taille identique",["".join([chr(randint(97,122)) for i in range(1000000)]),"".join([chr(randint(97,122)) for i in range(1000000)])],""]
 ]
 ==
 
