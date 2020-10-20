@@ -66,24 +66,26 @@ int motus(char mystere[],char proposition[],int info_sortie[]){
 ==
 
 code_after==
-
 int main(int argc, char* argv[]){
-  char mystere[]="bonjour";
-  char proposition[]="oooonnn";
+  char mystere[]=argv[1];
+  char proposition[]=argv[2];
   int info_sortie[strlen(mystere)];
-  motus(mystere,proposition,info_sortie);
+  if(motus(mystere,proposition,info_sortie)){
   for(int i=0;i<strlen(mystere);i++){
     printf("%d",info_sortie[i]);
   }
   printf("\n");
   printf("%s\n",mystere);
+  } else {
+    printf("la proposition n'est pas de la bonne taille");
+  }
   return 0;
 }
 ==
 
 
 checks_args_stdin==#|python|
-[ ["simple éxécution", ["bonjour toto"],""],
+[ ["simple éxécution", ["bonjour","bonsoir],""],
 ["alea",["".join([chr(randint(97,122)) for i in range(randint(1,15))])],""]]
 ==
 
