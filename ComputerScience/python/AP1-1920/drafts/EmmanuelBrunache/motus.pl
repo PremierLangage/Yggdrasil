@@ -70,6 +70,8 @@ code_after==
 int main(int argc, char* argv[]){
   int info_sortie[strlen(argv[1])];
   int i;
+  printf("le mot mystère est: %s\n",argv[1]);
+  printf("la proposition est: %s\n",argv[2]);
   if(motus(argv[1],argv[2],info_sortie)){
     for(i=0;i<strlen(argv[1]);i++){
       printf("%d",info_sortie[i]);
