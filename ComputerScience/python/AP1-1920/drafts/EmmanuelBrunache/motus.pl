@@ -68,11 +68,16 @@ int motus(char mystere[],char proposition[],int info_sortie[]){
 code_after==
 
 int main(int argc, char* argv[]){
-    int i;
-    i=longueurchaine(argv[1]);
-
-printf("La chaine est de longueur %d\n",i);
-return 0;
+  char mystere[]="bonjour";
+  char proposition[]="oooonnn";
+  int info_sortie[strlen(mystere)];
+  motus(mystere,proposition,info_sortie);
+  for(int i=0;i<strlen(mystere);i++){
+    printf("%d",info_sortie[i]);
+  }
+  printf("\n");
+  printf("%s\n",mystere);
+  return 0;
 }
 ==
 
