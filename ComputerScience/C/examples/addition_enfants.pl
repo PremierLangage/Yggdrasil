@@ -30,10 +30,10 @@ form==
 {{ inputbox|component}}
 ==
 
-evaluator==
+evaluator==#|python|
 if r == inputbox.value:
-    grade = (100, '<span class="success-state">Bravo, c'est bien ça !</span>')
+    grade = (100, """<span class="success-state">Bravo, c'est bien ça !</span>""")
 else:
-    grade = (0, '<span class="error-state">Non, ce n'est pas le bon résultat...</span>')
+    grade = (0, """<span class="error-state">Non, ce n'est pas le bon résultat...</span>""")
 ==
 
