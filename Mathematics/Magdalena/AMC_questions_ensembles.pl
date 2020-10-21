@@ -4,13 +4,15 @@ extends = /model/AMC_TXT.pl
 title = Démo AMC-TXT
 questions==
 
-** Voici un texte mathématique :
+** Voici un texte mathématique :   
+  
 Soit $% E, F %$ des ensembles. On dit qu'une partie 
-$%\Gamma%$ de $%E \times F%$ définie un graphe si 
- $%  (a) \quad  \forall x \in E \quad \exists y \in F \quad (x,y)\in \Gamma%$
- $%  (b) \quad  \forall x \in E \quad \forall y,y'\in F  
+$%\Gamma%$ de $%E \times F%$ définie un graphe si    
+ $%  (a) \quad  \forall x \in E \quad \exists y \in F \quad (x,y)\in \Gamma%$  
+     
+ $%  (b) \quad  \forall x \in E \quad \forall y,y'\in F 
 \quad \mbox{ si } (x,y)\in \Gamma \mbox{ et } (x,y')\in \Gamma, \mbox{ alors } 
-y=y'  %$
+y=y'  %$   
 
 + $% E %$ est une variable parlante 
 + Le texte est une définition
@@ -28,5 +30,6 @@ y=y'  %$
 - $%A=%${$% 0, 1,2 %$}
 - $% 0 \in A%$
 ==
+
 
 
