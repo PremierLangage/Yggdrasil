@@ -20,7 +20,6 @@ Cocher les bonnes réponses.
 + Dans le $%(a)%$ les variables $%x,y%$ sont muettes
 +  Dans le $%(a)%$ les variables $%E,\Gamma%$ sont parlantes
 + La variable $%F%$ de la ligne (a) est le même que  celle de ligne $%(b)%$ 
-- $%E \times F=%$ {$%x\times y | x \in E \; y \in F  %$}
 - Le texte est une démonstration
 - La variable $%x%$ de la ligne (a) est la même que celle de la ligne (b)
 - Dans le $%(b)%$ les variables $%x,\Gamma%$ sont parlantes
@@ -32,6 +31,16 @@ Cocher les bonnes réponses.
 - $%A=%${$% 0, 1,2 %$}
 - $% 0 \in A%$
 - $%(0,1) \subset A %$
+
+
+
+
+==
+PourPlusTard==
+Compléter les exercices
+**
+- $%E \times F=%$ {$%x\times y | x \in E \; y \in F  %$}
++ $%E \times F=%$ {$%x\times y | x \in E \; y \in F  %$}
 ==
 
 
