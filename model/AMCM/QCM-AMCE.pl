@@ -85,7 +85,7 @@ from customcheckbox import CustomCheckbox
 from customtextselect import CustomTextSelect
 from AMC import parse_AMC_TXT
 
-from aleaq import buildquestion, onefromeachgroup
+from aleaq import buildquestion, onefromeachgroup, getmultioption
 ######
 
 
@@ -100,6 +100,14 @@ for i in range(10):
 
 ######
 list_questions = parse_AMC_TXT(questions)
+
+
+l2=[]
+for q in list_questions:
+    for _ in range(getmultioption(q)):
+        l2.append(q)
+list_questions = l2 
+
 
 if "onepergroup" in globals() and onepergroup :
     list_questions=onefromeachgroup(list_questions)
