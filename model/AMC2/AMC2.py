@@ -79,7 +79,6 @@ def parse_AMC_TXT(txt):
                 question_type = "Checkbox"
             elif line.startswith('*+'):
                 question_type = "TextSelect"
-
             else:
                 question_type = "Radio"
             line = line.lstrip("*+ ")
@@ -133,6 +132,7 @@ def parse_AMC_TXT(txt):
             extended= False
 
     return questions
+
 
 
 
