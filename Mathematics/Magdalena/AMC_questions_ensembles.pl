@@ -28,8 +28,10 @@ Cocher les bonnes réponses.
 **  On définit $%A= %$ {$%0,1%$}$% \times%$ {$%1,2%$}
 + $% A%$ possède 4 éléments
 + $%(0,1)\in A%$
++ $%(1,1)\in A %$
 - $%A=%${$% 0, 1,2 %$}
 - $% 0 \in A%$
+- $%(0,1) \subset A %$
 ==
 
 
