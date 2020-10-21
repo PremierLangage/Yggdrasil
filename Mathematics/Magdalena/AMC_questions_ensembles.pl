@@ -8,11 +8,10 @@ questions==
   
 Soit $% E, F %$ des ensembles. On dit qu'une partie 
 $%\Gamma%$ de $%E \times F%$ définie un graphe si    
- $$(a) \quad  \forall x \in E \quad \exists y \in F \quad (x,y)\in \Gamma$$  
-  
- $%  (b) \quad  \forall x \in E \quad \forall y,y'\in F 
+ $$(a) \quad  \forall x \in E \quad \exists y \in F \quad (x,y)\in \Gamma$$   
+ $$(b) \quad  \forall x \in E \quad \forall y,y'\in F 
 \quad \mbox{ si } (x,y)\in \Gamma \mbox{ et } (x,y')\in \Gamma, \mbox{ alors } 
-y=y'  %$   
+y=y'$$   
 
 + $% E %$ est une variable parlante 
 + Le texte est une définition
