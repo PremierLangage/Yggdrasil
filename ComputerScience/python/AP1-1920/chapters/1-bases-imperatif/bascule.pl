@@ -66,6 +66,31 @@ if not a :# erreur de compile
 else:
     d={}
     d['var']=val1
+    
+    if eval(component.value,d) != val2 :
+        grade = (0, f"<br/> le passage de {val1} à {val2} ne fonctionne pas ! {d['var']}")
+    else:
+        d['var']=val2
+        eval(component.value,d)
+        if eval(component.value,d) != val1 :
+            grade = (0, f"<br/> le passage de {val2} à {val1} ne fonctionne pas ! {d['var']}")
+        else:
+            grade=(100,"<br/> Bravo vous avez écrit une bascule sans conditionnelles !")
+==
+
+oldevaluator==
+from pltest_doc import PlRunner
+
+pltest = """>>> True # le code compile 
+True
+"""
+tester = PlRunner(component.value,pltest)
+a, b = tester.runcompiletest(dic={'var':val1})
+if not a :# erreur de compile
+    grade=(0,b)
+else:
+    d={}
+    d['var']=val1
     exec("var ="+component.value,d)
     if d['var'] != val2 :
         grade = (0, f"<br/> le passage de {val1} à {val2} ne fonctionne pas ! {d['var']}")
@@ -76,10 +101,10 @@ else:
         else:
             grade=(100,"<br/> Bravo vous avez écrit une bascule sans conditionnelles !")
 ==
-
 form==
    var = {{ component|component}}
 ==
+
 
 
 
