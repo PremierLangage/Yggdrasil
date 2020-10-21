@@ -18,7 +18,7 @@ Cocher les bonnes réponses.
 + $% E %$ est une variable parlante 
 + Le texte est une définition
 + Dans le $%(a)%$ les variables $%x,y%$ sont muettes
-+  Dans le $%(a)%$ les variables $%E,\Gamma%$ sont parlantes
++ Dans le $%(a)%$ les variables $%E,\Gamma%$ sont parlantes
 + La variable $%F%$ de la ligne (a) est le même que  celle de ligne $%(b)%$ 
 - Le texte est une démonstration
 - La variable $%x%$ de la ligne (a) est la même que celle de la ligne (b)
@@ -42,6 +42,7 @@ Compléter les exercices
 - $%E \times F=%$ {$%x\times y | x \in E \; y \in F  %$}
 + $%E \times F=%$ {$%x\times y | x \in E \; y \in F  %$}
 ==
+
 
 
 
