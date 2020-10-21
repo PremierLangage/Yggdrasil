@@ -1,10 +1,12 @@
 
 
-extends = /model/AMC_TXT.pl
-title = Démo AMC-TXT
+extends = /model/AMCM/QCM-AMCE.pl
+title = Syntaxe des ensembles
 questions==
 
-** Voici un texte mathématique :   
+
+
+**[nbb=2,nbg=2] Voici un texte mathématique :   
   
 Soit $% E, F %$ des ensembles. On dit qu'une partie 
 $%\Gamma%$ de $%E \times F%$ définie un graphe fonctionnel si    
@@ -29,6 +31,7 @@ Cocher les bonnes réponses.
 - $%A=%${$% 0, 1,2 %$}
 - $% 0 \in A%$
 ==
+
 
 
 
