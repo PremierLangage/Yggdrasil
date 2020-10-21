@@ -56,7 +56,7 @@ nbstep = len(list_questions)
 random.shuffle(list_questions)
 
 step= -1 # première étape 
-text= f"Ce test à {nbstep} questions. Pas de retour arrière et un seul essai ! "
+text= f"Ce test contient {nbstep} questions. Pas de retour arrière et un seul essai ! "
 
 
 scores=[]
