@@ -26,9 +26,6 @@ code_before==
 #include <stdio.h>
 #include <string.h>
 
-#define false 0
-#define true  1
-
 #define NOT_FOUND 0
 #define FOUND 1
 #define MATCH 2
@@ -49,25 +46,22 @@ int motus(char mystere[], char proposition[], int info_sortie[])
 {
     int i;
     int l_mys = strlen(mystere);
-    unsigned int trouve[256] = {false};
+    unsigned int occ[256] = {0};
     if (l_mys != strlen(proposition)) return EXIT_FAILURE;
 
-    for(i = 0; i < l_mys; ++i)
-    {
-        trouve[(int)mystere[i]] ++;
-    }
+    for(i = 0; i < l_mys; ++i) ++occ[mystere[i]];
 
     for(i = 0; i < l_mys; ++i)
     {
-        if(mystere[i] == proposition[i]) 
+        if(mystere[i] == proposition[i])
         {
             info_sortie[i] = MATCH;
-            trouve[(int)proposition[i]]--;
+            --occ[mystere[i]];
         }
-        else if (trouve[(int)proposition[i]])
+        else if (occ[proposition[i]])
         {
             info_sortie[i] = FOUND;
-            trouve[(int)proposition[i]]--;
+            --occ[proposition[i]];
         }
         else info_sortie[i] = NOT_FOUND;
     }
@@ -103,6 +97,7 @@ checks_args_stdin==#|python|
 ]
 
 ==
+
 
 
 
