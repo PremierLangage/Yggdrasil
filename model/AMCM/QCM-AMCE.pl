@@ -15,7 +15,7 @@
 
 extends = /model/multistep.pl
 
-@ /model/AMCM/AMC2.py [AMC.py]
+@ /model/AMCM/AMCM.py [AMC.py]
 
 @ aleaq.py 
 
@@ -153,6 +153,7 @@ formstep ==
 evaluatorstep ==
 score = comp[step].eval()
 ==
+
 
 
 
