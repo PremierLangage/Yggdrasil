@@ -14,7 +14,7 @@
 settings.cumulative % false
 
 
-questions=@ justine_questions.txt
+#questions=@ justine_questions.txt
 
 
 title= Quizz
@@ -161,6 +161,7 @@ form==
     {{ ztext | component }}
 {% endif %}
 ==
+
 
 
 
