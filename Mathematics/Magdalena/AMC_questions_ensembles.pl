@@ -12,7 +12,7 @@ $%\Gamma%$ de $%E \times F%$ définie un graphe si
  $$(b) \quad  \forall x \in E \quad \forall y,y'\in F 
 \quad \mbox{ si } (x,y)\in \Gamma \mbox{ et } (x,y')\in \Gamma, \mbox{ alors } 
 y=y'$$   
-
+Cocher les bonnes réponses.
 + $% E %$ est une variable parlante 
 + Le texte est une définition
 + Dans le $%(a)%$ les variables $%x,y%$ sont muettes
