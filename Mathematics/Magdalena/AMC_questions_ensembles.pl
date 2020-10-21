@@ -6,7 +6,7 @@ questions==
 
 
 
-**[nbb=2,nbg=2] Voici un texte mathématique :   
+**[nbb=2,nbg=2,nbq=3] Voici un texte mathématique :   
   
 Soit $% E, F %$ des ensembles. On dit qu'une partie 
 $%\Gamma%$ de $%E \times F%$ définie un graphe fonctionnel si    
