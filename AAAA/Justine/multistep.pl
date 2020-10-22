@@ -13,9 +13,7 @@
 
 settings.cumulative % false
 
-questions==
 
-==
 
 questions=@ justine_questions.txt
 
@@ -125,7 +123,8 @@ if step> -1:
     scores.append(score)
     fifi = text + " \n " + strfromcomp(q)
     feedbacks += env.from_string(fifi).render(globals())
-    currentscore=sum(scores)//nbstep
+    
+    currentscore=sum(scores)//nbsteps
 
 step = step+1
 if step<nbstep:
