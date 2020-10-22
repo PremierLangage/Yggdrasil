@@ -119,7 +119,7 @@ def strfromcomp(q):
 currentscore=0
 if step> -1:
     pass
-    # Evaluation de la réponse et stockage pour la suite 
+    # Evaluation de la réponse et stockage de l'évaluation pour la suite 
     q=list_questions[step]
     score = evaluate(q)
     scores.append(score)
@@ -167,6 +167,7 @@ form==
     {{ ztext | component }}
 {% endif %}
 ==
+
 
 
 
