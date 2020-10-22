@@ -20,7 +20,7 @@ questions=@ justine_questions.txt
 
 title= Muti step a la DR
 
-text = Pas de text par defaut 
+text =  text par defaut modifié par le builder
 
 before==
 
