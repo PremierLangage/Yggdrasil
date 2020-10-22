@@ -122,7 +122,7 @@ if step> -1:
     score = evaluate(q)
     scores.append(score)
     fifi = text + " \n " + strfromcomp(q)
-    feedbacks += env.from_string(fifi).render(globals())
+    feedbacks += str(env.from_string(fifi).render(globals()))
     currentscore=sum(scores)//nbstep
 
 step = step+1
@@ -163,6 +163,7 @@ form==
     {{ ztext | component }}
 {% endif %}
 ==
+
 
 
 
