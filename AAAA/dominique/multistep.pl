@@ -14,7 +14,7 @@
 settings.cumulative % false
 
 
-#questions=@ justine_questions.txt
+questions=@ /AAAA/Justine/justine_questions.txt
 
 
 title= Quizz
