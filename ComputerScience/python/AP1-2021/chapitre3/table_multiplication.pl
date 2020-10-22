@@ -104,7 +104,7 @@ def mult_table(col, lin):
     return s
 
 begin_test_group("Tableaux carrés")
-for i in range(2, 10):
+for i in range(1, 10):
     set_title(f"col = lin = {i}")
     set_globals(col=i, lin=i)
     run()
