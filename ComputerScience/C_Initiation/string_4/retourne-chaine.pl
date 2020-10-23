@@ -19,11 +19,10 @@ code_before==
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 ==
 
-taboo=string.h
+taboo=string.h|strlen|strcpy
 
 editor.code==
 /* ... */  retournechaine(char tab[]){
