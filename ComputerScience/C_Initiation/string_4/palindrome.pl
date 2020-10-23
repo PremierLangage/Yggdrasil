@@ -3,7 +3,9 @@
 author= 
 
 title=Palindrome
-tag=tab|string
+
+tag=tableau|string
+
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
@@ -59,6 +61,7 @@ tests==
 ["aleatoire","",random.choice(["elle est belle","un kayak","velo","deux radar","avion","le rotor","michel serres","Bruno solos","sufffit"])],
    ]
 ==
+
 
 
 
