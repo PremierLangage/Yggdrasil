@@ -47,19 +47,6 @@ void retournechaine(char tab[]){
     }
 }
 ==
-solutionOld==
-void retournechaine(char tab[]){
-    int i;
-    int longueur=strlen(tab);
-    char bat[strlen(tab)];
-    strcpy(bat,tab);
-    for (i=0;i<longueur;i++){
-        bat[i]=tab[longueur-i-1];
-    }
-    strcpy(tab,bat);
-}
-
-==
 
 code_after==
 
