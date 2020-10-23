@@ -25,7 +25,7 @@ si possible, en palindrome:
   </ul>
 </li>
 </ul>
-<u>Exemple :</u><br><br>
+<u>Exemple :</u> 
 Si le tableau `s` contient "velo", `construit_palin(s,20)` transforme `s` en "veloolev" et renvoie 1
 et l'appel suivant `construit_palin(s,20)` laisse `s` inchangé et renvoie 0.<br>
 
