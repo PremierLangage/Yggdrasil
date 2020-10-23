@@ -15,8 +15,9 @@ text==
 
 Ecrire une fonction de prototype `int construit_palin(char s[],int taille)` 
 qui reçoit un tableau de taille `taille` contenant une chaine de caractères et la transforme,
-si possible, en palindrome:  
-si la chaine est déjà un palindrome elle reste inchangée  
+si possible, en palindrome:<br>  
+<ul>
+<li>si la chaine est déjà un palindrome elle reste inchangée  
 sinon, si la taille du tableau est suffisante, on la concatène à son miroir pour que le tableau contienne un palindrome.    
 Si la taille du tableau n'est pas suffisante, on ne fait rien.
 Exemple :
