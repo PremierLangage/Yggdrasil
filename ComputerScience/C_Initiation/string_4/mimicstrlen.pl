@@ -2,7 +2,9 @@
 author=
 
 title=Longueur de chaine
-tag=string
+
+tag=string|FinDeChaine
+
 extends=/ComputerScience/C/template/std_progC.pl
 
 text==
