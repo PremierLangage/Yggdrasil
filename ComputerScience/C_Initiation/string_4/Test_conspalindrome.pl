@@ -29,7 +29,9 @@ si possible, en palindrome:
 Si le tableau `s` contient "velo", `construit_palin(s,20)` transforme `s` en "veloolev" et renvoie 1
 et l'appel suivant `construit_palin(s,20)` laisse `s` inchangé et renvoie 0.<br>
 
-Si le tableau s contient "velo", l'appel `construit_palin(s,6)` laisse `s` inchangé et renvoie 0.
+Si le tableau s contient "velo", l'appel `construit_palin(s,6)` laisse `s` inchangé et renvoie 0.<br>
+<br>
+Pour vérifier que `s`est un palindrome vous utiliserez impérativement la fonction `int est_palindrome(char s[])` 
 ==
 
 codebefore==
