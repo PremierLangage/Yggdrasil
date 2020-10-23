@@ -32,7 +32,13 @@ editor.code==
 
 ==
 
-solution==
+solutionO==
+void retournechaine(char tab[]){
+    int i=0;
+    while
+}
+==
+solutionOld==
 void retournechaine(char tab[]){
     int i;
     int longueur=strlen(tab);
@@ -60,6 +66,7 @@ checks_args_stdin==#|python|
 [ ["simple éxécution", ["bonjour toto"],""],
 ["alea",["".join([chr(randint(97,122)) for i in range(randint(1,15))])],""]]
 ==
+
 
 
 
