@@ -32,11 +32,19 @@ editor.code==
 
 ==
 
-solutionO==
+solution==
 void retournechaine(char tab[]){
-    int i=0;
-    for(i=0 ; tab[i]!='\0' ; i++){
-        
+    int len=0;
+    while (tab[len]!='\0'){
+        len++;
+    }
+    char tabcopy[len];
+    int i;
+    for (i=0;i<len;i++){
+        tabcopy[i]=tab[i];
+    }
+    for (i=0;i<len;i++){
+        tab[i]=tabcopy[len-i-1];
     }
 }
 ==
