@@ -80,7 +80,7 @@ int main(void){
   printf("%s\n",tab);			 ;
   construit_palin(tab,taille);
   printf("%s\n",tab);
-   construit_palin(tab,taille);  printf("%s\n",tab);
+  construit_palin(tab,taille);  printf("%s\n",tab);
 return 0;
 }
 ==
@@ -89,7 +89,6 @@ return 0;
 tests==
 [ ["simple éxécution", "","toto 10 "],
 ["alea","","".join([chr(random.randint(97,122)) for i in range(random.randint(1,15))])+" "+str(random.randint(15,32))],
- 
  ["aleatoire","",random.choice(["elle","kayak","velo","radar","avion","rotor","serres","solos","suffit"])+" 10"], ]
 ==
 
