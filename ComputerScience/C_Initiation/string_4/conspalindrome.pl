@@ -50,13 +50,14 @@ int construit_palin(char s[],int taille){
 
 solution==
 int est_palindrome(char s[]){
-int i,l;
-l=strlen(s);
-for(i=0; i<l/2;i++)
+  int i,l;
+  l=strlen(s);
+  for(i=0; i<l/2;i++)
     if(s[i]!=s[l-1-i])
-        return 0;
-return 1;
+      return 0;
+  return 1;
 }
+
 int construit_palin(char s[],int taille){
   int lg=strlen(s);
   int i;
