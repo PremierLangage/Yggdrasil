@@ -35,7 +35,9 @@ editor.code==
 solutionO==
 void retournechaine(char tab[]){
     int i=0;
-    while
+    for(i=0 ; tab[i]!='\0' ; i++){
+        
+    }
 }
 ==
 solutionOld==
