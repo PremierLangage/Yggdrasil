@@ -26,13 +26,10 @@ si possible, en palindrome:
 </li>
 </ul>
 <u>Exemple :</u><br><br>
-Si le tableau `s` contient "velo"  
-`construit_palin(s,20)` transforme `s` en "veloolev" et renvoie 1
-et l'appel suivant  
-`construit_palin(s,20)` laisse s inchangé et renvoie 0.
+Si le tableau `s` contient "velo", `construit_palin(s,20)` transforme `s` en "veloolev" et renvoie 1
+et l'appel suivant `construit_palin(s,20)` laisse `s` inchangé et renvoie 0.<br>
 
-Si le tableau s contient "velo", 
-l'appel `construit_palin(s,6)` laisse s inchangé et renvoie 0.
+Si le tableau s contient "velo", l'appel `construit_palin(s,6)` laisse `s` inchangé et renvoie 0.
 ==
 
 codebefore==
@@ -68,7 +65,6 @@ for(i=0;i<lg;i++)
   s[lg+i]=s[lg-i-1];
  s[2*lg]='\0';
 return 1;
-
 }
 ==
 
