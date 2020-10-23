@@ -1,10 +1,14 @@
 
+#author=Zip
 
-author=Zip
+author=
+
 difficulty=3
 
 title=Construit un palindrome.
+
 tag=string
+
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
@@ -24,6 +28,7 @@ et l'appel suivant
 Si le tableau s contient "velo", 
 l'appel `construit_palin(s,6)` laisse s inchangé et renvoie 0.
 ==
+
 codebefore==
 
 #include <stdio.h>
@@ -83,6 +88,7 @@ tests==
  
  ["aleatoire","",random.choice(["elle","kayak","velo","radar","avion","rotor","serres","solos","suffit"])+" 10"], ]
 ==
+
 
 
 
