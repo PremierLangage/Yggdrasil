@@ -22,7 +22,7 @@ si possible, en palindrome:
   <ul>
     <li> si la taille du tableau est suffisante, on la concatène à son miroir pour que le tableau contienne un palindrome.</li>
     <li> Si la taille du tableau n'est pas suffisante, on ne fait rien. </li> 
-  /<ul>
+  </ul>
 </li>
 </ul>
 Exemple :
