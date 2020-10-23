@@ -10,9 +10,10 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 text==
 
-Ecrire une fonction `retournechaine` qui reçoit une chaine de caractères et qui l'inverse.
+Ecrire une fonction `retournechaine` qui reçoit une chaine de caractères et qui l'inverse.<br>
 Si elle reçoit "hello world" elle doit la remplacer par "dlrow olleh".
 ==
+
 code_before==
 
 #include <stdio.h>
