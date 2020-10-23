@@ -4,7 +4,7 @@ author=
 
 title=Remplace
 
-tag=string
+tag=string|char
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
