@@ -4,7 +4,7 @@ author=
 
 title=Mise en titre
 
-tag=tableau|string
+tag=tableau|string|caracteres
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
