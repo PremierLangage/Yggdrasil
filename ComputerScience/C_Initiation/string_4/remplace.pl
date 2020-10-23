@@ -37,11 +37,9 @@ void remplace(char tab[],char origine, char but){
     if( tab[i]==origine)
       tab[i]=but;
 }
-
 ==
 
 codeafter==
-
 int main(void){
   char tab[100];
   char o,b;
