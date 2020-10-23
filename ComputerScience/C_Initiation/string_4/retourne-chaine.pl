@@ -12,6 +12,7 @@ text==
 
 Ecrire une fonction `retournechaine` qui reçoit une chaine de caractères et qui l'inverse.<br>
 Si elle reçoit "hello world" elle doit la remplacer par "dlrow olleh".
+
 ==
 
 code_before==
