@@ -11,7 +11,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 text==
 On définit un mot comme étant une suite de caractères commençant par une lettre alphabetique
 et une phrase comme une suite de mots séparés par des espaces.<br>
-Dans un titre, tous les mots commencent par une majuscule.<br>
+Dans un titre, tous les mots commencent par une majuscule.<br><br>
 Ecrire une fonction `void met_en_titre(char s[])` qui reçoit une phrase sous forme d'une chaîne de caractères
 et la transforme en titre.
 ==
