@@ -1,5 +1,5 @@
-author=Emmanuel Brunache
-
+#author=Emmanuel Brunache
+author=
 
 title=Longueur de chaine
 tag=string
