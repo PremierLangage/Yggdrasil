@@ -2,9 +2,10 @@
 
 author=  
 
-
 title=Remplace
+
 tag=string
+
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
@@ -12,9 +13,9 @@ text==
 Ecrire une fonction `remplace` qui reçoit une chaine de caractères et deux *char* $%origine%$ et $%but%$
  et remplace toute occurrence de $%origine%$ par  $%but%$.<br>
 Par exemple si : <br>
-tab = 'gourde et origine = 'g' et but = 'b' alors tab='bourde'
-
+tab = 'gourde et origine = 'g' et but = 'b' alors tab='`b`ourde'
 ==
+
 codebefore==
 
 #include <stdio.h>
