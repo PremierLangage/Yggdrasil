@@ -31,7 +31,7 @@ et l'appel suivant `construit_palin(s,20)` laisse `s` inchangé et renvoie 0.<br
 
 Si le tableau s contient "velo", l'appel `construit_palin(s,6)` laisse `s` inchangé et renvoie 0.<br>
 <br>
-Pour vérifier que `s` est ou non un palindrome vous utiliserez <u><b>impérativement</b></u> la fonction `int est_palindrome(char s[])`<br>
+<b>!!!!!</b> Pour vérifier que `s` est ou non un palindrome vous utiliserez <u><b>impérativement</b></u> la fonction `int est_palindrome(char s[])`<br>
 qui reçoit une chaine de caractères et renvoie 1 si celle-ci est un palindrome, et 0 sinon.
 ==
 
