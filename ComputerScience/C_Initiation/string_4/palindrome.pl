@@ -41,14 +41,15 @@ for(i=0; i<l/2;i++)
 return 1;
 }
 ==
+
 codeafter==
 int main(void){
   char s[MAX];
- scanf("%s",s);
-if (est_palindrome(s))
-   printf("\"%s\" est un palindrome\n",s);
-else 
-   printf("\"%s\" n'est pas un palindrome\n",s);
+  scanf("%s",s);
+  if (est_palindrome(s))
+    printf("\"%s\" est un palindrome\n",s);
+  else 
+    printf("\"%s\" n'est pas un palindrome\n",s);
   return 0;
 }
 
