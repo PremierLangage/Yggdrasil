@@ -69,6 +69,15 @@ Compléter les propositions suivantes avec les {{text1}} {{ labels[0] | componen
 ==
 
 
+form ==
+<ul>
+{% for i in range(n) %}
+<li> $! {{ lhs[i]}} !$ {{ drops[i]|component }} $! {{ rhs[i] }} !$ </li>
+{% endfor %}
+</ul>
+==
+
+
 settings.feedback = lightscore
 
 evaluator==#|python|
