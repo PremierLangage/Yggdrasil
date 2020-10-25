@@ -1,3 +1,4 @@
+extends = /model/math.pl
 extends = /model/basic/dragdrop.pl
 
 title = Elément et sous-ensemble
@@ -7,7 +8,6 @@ param.cases % [1,1,2,3,3]
 param.relation = symbol
 
 before==#|python|
-import random as rd
 
 if param['relation'] == "symbol":
     label_in = "$! \in !$"
