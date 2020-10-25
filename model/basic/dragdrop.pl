@@ -13,7 +13,10 @@ else:
     lstsolutions = solutions
 
 if 'labelcontents' in globals():
-    list_labelcontents = labelcontents.splitlines()
+    if isinstance(labelcontents, str):
+        list_labelcontents = labelcontents.splitlines()
+    else:
+        list_labelcontents = labelcontents
 else:
     list_labelcontents = list(set(lstsolutions))
 
