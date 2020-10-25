@@ -30,9 +30,9 @@ for i in range(5):
     s="$! %s !$" % data[lst[i]][0]
     choices.append(s)
 numsol =randint(0,3)
-set_tex=data[lst[isol]][0]
-diagram.script = script % data[lst[isol]][1]
-solid=str(isol)
+set_tex=data[lst[numsol]][0]
+diagram.script = script % data[lst[numsol]][1]
+solid=str(numsol)
 ==
 
 script ==
