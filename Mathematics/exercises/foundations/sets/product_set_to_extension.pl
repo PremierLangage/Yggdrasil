@@ -10,6 +10,7 @@ sol = list(ProductSet((A,B))
 ==
 
 text == 
+{{sol}}
 Ecrire en extension l'ensemble $! \\{ {{A|latex}} \\} \times \\{ {{B|latex}} \\}. !$
 ==
 
