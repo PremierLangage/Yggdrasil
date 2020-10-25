@@ -12,7 +12,7 @@ if isinstance(choices, str):
 else:
     radio.setitems(choices)
 
-radio.setsol_from_index(numsol)
+radio.setsol_from_index(int(numsol))
 
 if shuffle:
     radio.shuffle()
