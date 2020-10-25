@@ -14,7 +14,8 @@ Ecrire en extension l'ensemble $! \mathcal{P}(\\{ {{ A|latex }} \\}) !$.
 ==
 
 evaluator ==
-score, _, feedback = eval_set(input.value, sol)
+score, error = eval_set(input.value, sol)
+feedback = message[error]
 ==
 
 solution ==
