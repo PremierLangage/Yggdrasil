@@ -8,10 +8,9 @@ param.cases = [1,1,2,3,3]
 param.relation = symbol
 
 before==#|python|
-from customdragdrop import DragDropGroup
 
-group = DragDropGroup()
 relation=param['relation']
+
 if relation=="symbol":
     label_in = "$! \in !$"
     label_subset = "$! \subset !$"
