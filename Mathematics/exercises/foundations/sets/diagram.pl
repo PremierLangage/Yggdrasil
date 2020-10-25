@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathradio.pl
+extends = /model/basic/radio.pl
 
 title = Représentation des opérations sur un diagramme
 
@@ -24,12 +24,11 @@ data=[
 
 lst=list_randint_norep(5,0,11)
 
-choices=[]
+choices = []
 for i in range(5):
     s="$! %s !$" % data[lst[i]][0]
-    choices.append({"id":str(i),"content": s})
-radio.items = choices
-isol=randint(0,3)
+    choices.append(s)
+numsol =randint(0,3)
 set_tex=data[lst[isol]][0]
 diagram.script = script % data[lst[isol]][1]
 solid=str(isol)
@@ -163,5 +162,6 @@ diagram.attributes %=
     "Grid": false
   }
 ==
+
 
 
