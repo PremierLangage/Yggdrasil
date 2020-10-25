@@ -3,7 +3,7 @@ extends = /model/basic.pl
 radio =: RadioGroup
 radio.decorator = CustomRadio
 
-numsol = 0
+numsol % 0
 
 
 footerbefore ==
@@ -12,7 +12,7 @@ if isinstance(choices, str):
 else:
     radio.setitems(choices)
 
-radio.setsol_from_index(int(numsol))
+radio.setsol_from_index(numsol)
 
 if shuffle:
     radio.shuffle()
@@ -29,3 +29,4 @@ radio.disabled = True
 ==
 
 shuffle % true
+
