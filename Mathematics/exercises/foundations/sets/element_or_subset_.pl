@@ -9,18 +9,14 @@ param.relation = symbol
 
 before==#|python|
 
-relation = param['relation']
-
-if relation=="symbol":
+if param['relation'] == "symbol":
     label_in = "$! \in !$"
     label_subset = "$! \subset !$"
-    text1="symboles"
-    text2="aucun de ces symboles"
-elif relation=="expr1":
+    text1, text2 = "symboles", "aucun de ces symboles"
+elif param['relation'] == "expr1":
     label_in = "est un élément de"
     label_subset = "est un sous-ensemble de"
-    text1="expressions"
-    text2="aucune de ces expressions"
+    text1, text2 = "expressions", "aucune de ces expressions"
 
 labelcontents = [label_in, label_subset, ""]
 
@@ -70,24 +66,8 @@ Compléter les propositions suivantes avec les {{text1}} {{ labels[0] | componen
 
 form ==
 <ul>
-{% for i in range(n) %}
+{% for i in range(drops|length) %}
 <li> $! {{ lhs[i]}} !$ {{ drops[i]|component }} $! {{ rhs[i] }} !$ </li>
 {% endfor %}
 </ul>
 ==
-
-
-settings.feedback = lightscore
-
-evaluator==#|python|
-from customdragdrop import right_minus_wrong
-
-grade = group.eval(grading_function = right_minus_wrong)
-==
-
-
-
-
-
-
-
