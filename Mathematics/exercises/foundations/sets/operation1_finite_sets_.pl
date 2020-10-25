@@ -3,7 +3,7 @@ extends = /model/mathinput.pl
 
 title = Opérations sur les ensembles
 
-lang = fr
+input.virtualKeyboards = sets
 
 before ==
 A=rand_finiteset(randint(4,7),list(range(10)))
@@ -37,6 +37,7 @@ feedback = message[error]
 solution ==
 La solution est $! { {{sol|latex}} } !$.
 ==
+
 
 
 
