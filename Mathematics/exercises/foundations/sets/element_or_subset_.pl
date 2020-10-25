@@ -60,15 +60,14 @@ for i in range(len(cases)):
 ==
 
 text ==
-Coucouc
 Compléter les propositions suivantes avec les {{text1}} {{ labels[0] | component }} ou {{ labels[1] | component }}. Si {{text2}} ne convient, laisser la case vide {{ labels[2] | component }}.
 ==
 
 
 form ==
 <ul>
-{% for drop in drops %}
-<li> $! {{ lhs[loop.index0]}} !$ {{ drop|component }} $! {{ rhs[loop.index0] }} !$ </li>
+{% for i in range(n) %}
+<li> $! {{ lhs[i]}} !$ {{ drops[i]|component }} $! {{ rhs[i] }} !$ </li>
 {% endfor %}
 </ul>
 ==
