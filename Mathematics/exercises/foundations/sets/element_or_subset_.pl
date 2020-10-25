@@ -66,9 +66,10 @@ Compléter les propositions suivantes avec les {{text1}} {{ labels[0] | componen
 
 form ==
 <ul>
-{% for i in range(drops|length) %}
-<li> $! {{ lhs[i]}} !$ {{ drops[i]|component }} $! {{ rhs[i] }} !$ </li>
+{% for drop in drops %}
+<li> $! {{ lhs[loop.index0]}} !$ {{ drop|component }} $! {{ rhs[loop.index0] }} !$ </li>
 {% endfor %}
 </ul>
 ==
+
 
