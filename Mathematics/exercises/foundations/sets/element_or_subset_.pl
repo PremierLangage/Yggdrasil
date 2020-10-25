@@ -9,7 +9,7 @@ param.relation = symbol
 
 before==#|python|
 
-relation=param['relation']
+relation = param['relation']
 
 if relation=="symbol":
     label_in = "$! \in !$"
