@@ -5,7 +5,7 @@ Exemple 2
 ==
 
 text ==
-A quel siècle vivait Louis XI ? {{numsol}}
+A quel siècle vivait Louis XI ?
 ==
 
 choices ==
