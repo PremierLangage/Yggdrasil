@@ -1,4 +1,3 @@
-extends = /model/math.pl
 extends = /model/basic/dragdrop.pl
 
 title = Elément et sous-ensemble
@@ -71,3 +70,4 @@ form ==
 {% endfor %}
 </ul>
 ==
+
