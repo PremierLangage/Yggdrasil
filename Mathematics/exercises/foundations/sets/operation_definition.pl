@@ -10,6 +10,8 @@ if relation=="symbol":
     label_in = "$! \in !$"
     label_notin = "$! \\notin !$"
 
+labelcontents = [label_in, label_notin]
+
 n=4
 a=randint(0,1)
 b=randint(0,1)
@@ -40,31 +42,20 @@ data=[
 cases=[randint(0,1),randint(2,3),randint(4,7),randint(8,9)]
 
 rhs=[]
-sol=[]
+solutions=[]
 for i in cases:
     rhs.append(data[i][0]+" "+data[i][1]+" "+data[i][2])
     if data[i][3]>=1:
-        sol.append(label_in)
+        solutions.append(label_in)
     else:
-        sol.append(label_notin)
-
-drag1.content=label_in
-drag2.content=label_notin
-
-
-drop=[drop1,drop2,drop3,drop4]
+        solutions.append(label_notin)
 ==
 
-
-drag1 =: DragDrop
-drag2 =: DragDrop
-
-
-text==
+text ==
 Soit $! A !$ et $! B !$ deux sous-ensembles d'un ensemble $! E !$. Soit $! x !$ un élément de $! E !$ tel que
 $! x {{symbA}} A !$ et $! x {{symbB}} B.!$
 
-Compléter les propositions suivantes avec les symboles {{ drag1 | component }} ou {{ drag2 | component }}.
+Compléter les propositions suivantes avec les symboles {{ labels[0]|component }} ou {{ labels[1]|component }}.
 ==
 
 form ==
