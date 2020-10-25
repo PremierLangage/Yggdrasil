@@ -1,4 +1,5 @@
-extends = /Mathematics/template/mathdragdrop.pl
+extends = /model/math.pl
+extends = /model/basic/dragdrop.pl
 
 title = Définition des opérations sur les ensembles
 
@@ -68,11 +69,12 @@ Compléter les propositions suivantes avec les symboles {{ drag1 | component }} 
 
 form ==
 <ul>
-{% for e in drop %}
-<li> $! x !$ {{ e|component }} $! {{rhs[loop.index0]}}  !$ </li>
+{% for drop in drops %}
+<li> $! x !$ {{ drop|component }} $! {{rhs[loop.index0]}}  !$ </li>
 {% endfor %}
 </ul>
 ==
+
 
 
 
