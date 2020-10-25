@@ -10,7 +10,7 @@ sol = A.powerset()
 ==
 
 text == 
-Ecrire en extension l'ensemble $! \mathcal{P}(\\{ {{ A.latex }} \\}) !$.
+Ecrire en extension l'ensemble $! \mathcal{P}(\\{ {{ A|latex }} \\}) !$.
 ==
 
 evaluator ==
@@ -18,7 +18,8 @@ score, _, feedback = eval_set(input.value, sol)
 ==
 
 solution ==
-La solution est $! {{sol.latex}} !$.
+La solution est $! {{sol|latex}} !$.
 ==
+
 
 
