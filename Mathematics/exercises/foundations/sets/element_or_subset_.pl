@@ -52,7 +52,7 @@ for i in range(len(cases)):
             lhs.append(list_randint_norep(a,0,9,rhs[i])+list_randitem_norep(b-a,rhs[i]))
 
 
-for i in range(n):
+for i in range(len(cases)):
     if isinstance(lhs[i],list):
         lhs[i]=latex(FiniteSet(*lhs[i]))
     if isinstance(rhs[i],list):
