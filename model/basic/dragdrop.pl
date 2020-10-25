@@ -1,5 +1,7 @@
 extends = /model/basic.pl
 
+settings.feedback = lightscore
+
 title =
 
 footerbefore ==
