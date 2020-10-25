@@ -3,7 +3,7 @@ extends = /model/basic/dragdrop.pl
 
 title = Elément et sous-ensemble
 
-param.cases = [1,1,2,3,3]
+param.cases % [1,1,2,3,3]
 
 param.relation = symbol
 
@@ -28,7 +28,7 @@ solutions=[]
 lhs=[]
 rhs=[]
 n=5
-case=eval(param['cases'])
+case = param['cases']
 rd.shuffle(case)
 for i in range(n):
     if case[i]==1:
