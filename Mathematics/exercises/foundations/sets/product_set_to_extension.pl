@@ -14,7 +14,8 @@ Ecrire en extension l'ensemble $! \\{ {{A|lattex}} \\} \times \\{ {{B|latex}} \\
 ==
 
 evaluator ==
-score,numerror,feedback=ans_struct_expr(input1.value,sol,"composite")
+score, error = eval_set(input.value, sol)
+feedback = message[error]
 ==
 
 solution ==
