@@ -5,7 +5,7 @@ Exemple 2
 ==
 
 text ==
-A quel siècle vivait Louis XI ?
+A quel siècle vivait Louis XI ? {{numsol}}
 ==
 
 choices ==
@@ -18,4 +18,5 @@ XVe siècle
 numsol = 3
 
 shuffle % false
+
 
