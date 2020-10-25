@@ -13,6 +13,8 @@ text ==
 Ecrire en extension l'ensemble $! \\{ {{A|latex}} \\} \times \\{ {{B|latex}} \\}. !$
 ==
 
+input.virtualKeyboards = sets
+
 evaluator ==
 score, error = eval_set(input.value, sol)
 feedback = message[error]
