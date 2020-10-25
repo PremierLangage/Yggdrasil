@@ -9,7 +9,6 @@ B = rand_finiteset(lenB,list(range(10)))
 ==
 
 text == 
-{{sol}}
 Ecrire en extension l'ensemble $! \\{ {{A|latex}} \\} \times \\{ {{B|latex}} \\}. !$
 ==
 
