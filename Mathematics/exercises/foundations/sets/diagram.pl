@@ -1,4 +1,5 @@
 extends = /model/basic/radio.pl
+extends = /model/math.pl
 
 title = Représentation des opérations sur un diagramme
 
