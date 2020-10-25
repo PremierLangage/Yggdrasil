@@ -21,9 +21,9 @@ class CustomRadio(Component):
         Set the component solution from an index.
         """
         if isinstance(index,list):
-            self._sol = index[0]
+            self._sol = index[0] # ??
         elif isinstance(index,int):
-            self._sol = index
+            self._sol = self.items[index]['id']
 
     def setsol_from_content(self, content):
         """
@@ -62,4 +62,5 @@ class CustomRadio(Component):
         self.disabled = disabled
 
         return score
+
 
