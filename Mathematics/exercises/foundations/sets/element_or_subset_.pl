@@ -56,19 +56,18 @@ for i in range(n):
             a=randint(1,b-1)
             lhs.append(list_randint_norep(a,0,9,rhs[i])+list_randitem_norep(b-a,rhs[i]))
 
+
+for i in range(n):
+    if isinstance(lhs[i],list):
+        lhs[i]=latex(FiniteSet(*lhs[i]))
+    if isinstance(rhs[i],list):
+        rhs[i]=latex(FiniteSet(*rhs[i]))
 ==
 
 text ==
 Compléter les propositions suivantes avec les {{text1}} {{ labels[0] | component }} ou {{ labels[1] | component }}. Si {{text2}} ne convient, laisser la case vide {{ labels[2] | component }}.
 ==
 
-form ==
-<ul>
-{% for i in range(n) %}
-<li> $! {{ lhs[i]}} !$ {{ group.drops[i|string]|component }} $! {{ rhs[i] }} !$ </li>
-{% endfor %}
-</ul>
-==
 
 settings.feedback = lightscore
 
