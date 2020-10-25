@@ -25,7 +25,7 @@ lhs=[]
 rhs=[]
 n=5
 cases = param['cases']
-rd.shuffle(case)
+rd.shuffle(cases)
 for i in range(len(cases)):
     if cases[i]==1:
         rhs.append(list_randint_norep(randint(3,5),0,9))
