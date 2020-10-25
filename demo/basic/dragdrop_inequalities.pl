@@ -6,7 +6,7 @@ Comparaison de nombres (DragDrop)
 
 labelcontents ==
 $! < !$
-$! < !$
+$! > !$
 ==
 
 before ==
@@ -35,4 +35,5 @@ form==
 {% endfor %}
 </ul>
 ==
+
 
