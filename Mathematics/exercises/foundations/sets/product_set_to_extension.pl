@@ -19,7 +19,7 @@ feedback = message[error]
 ==
 
 solution ==
-La solution est $!\{ {{sol_tex}} \}!$.
+La solution est $!\{ {{sol|latex}} \}!$.
 ==
 
 
