@@ -1,4 +1,5 @@
 extends = /model/math.pl
+extends = /model/basic/dragdrop.pl
 
 title = Elément et sous-ensemble
 
@@ -22,7 +23,7 @@ elif relation=="expr1":
     text1="expressions"
     text2="aucune de ces expressions"
 
-group.set_label({"in": label_in, "subset": label_subset, "empty":""})
+labelscontent = [label_in, label_subset, ""]
 
 sol=[]
 lhs=[]
@@ -68,7 +69,7 @@ for _, drop in group.drops.items():
 ==
 
 text ==
-Compléter les propositions suivantes avec les {{text1}} {{ group.labels.in | component }} ou {{ group.labels.subset | component }}. Si {{text2}} ne convient, laisser la case vide {{ group.labels.empty | component }}.
+Compléter les propositions suivantes avec les {{text1}} {{ labels[0] | component }} ou {{ labels[1] | component }}. Si {{text2}} ne convient, laisser la case vide {{ labels[2] | component }}.
 ==
 
 form ==
@@ -86,6 +87,7 @@ from customdragdrop import right_minus_wrong
 
 grade = group.eval(grading_function = right_minus_wrong)
 ==
+
 
 
 
