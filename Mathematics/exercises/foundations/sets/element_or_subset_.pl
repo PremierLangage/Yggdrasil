@@ -25,7 +25,7 @@ elif relation=="expr1":
 
 labelscontent = [label_in, label_subset, ""]
 
-sol=[]
+dropsolutions=[]
 lhs=[]
 rhs=[]
 n=5
