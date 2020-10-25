@@ -38,6 +38,7 @@ class CustomDragDrop(Component):
         self.decorator = 'CustomDragDrop'
         self.content = ""
         self.group_id = ""
+        self.css = ""
         self.cloneable = False
         super().__init__(**kwargs)
 
@@ -221,6 +222,7 @@ class DragDropGroup():
         
 
     
+
 
 
 
