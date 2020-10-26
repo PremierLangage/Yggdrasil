@@ -24,6 +24,8 @@ codebefore==
 
 ==
 
+taboo=string
+
 editor.code==
 void remplace(char tab[],char origine, char but){
 /* A compléter */
