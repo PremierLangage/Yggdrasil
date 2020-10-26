@@ -12,7 +12,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 text==
 
 Ecrire une fonction `int motus(char mystere[],char proposition[],int info_sortie[])` qui reçoit une chaîne de caractères `mystere` à découvrir, 
-une chaîne de caractères `proposition` et un tableau d'entiers `info_sortie` de même taille que le mot mystère.<br>
+une chaîne de caractères `proposition` et un tableau d'entiers `info_sortie` <u>de même taille que le mot mystère</u>.<br>
 Pour chacun des i-ème caractères de la `proposition`, Le tableau `info_sortie[]` se remplit de la manière suivante :<br>
 <ul>
  <li> 0 si le caractère de la proposition n'est pas dans le mot mystere.</li>
@@ -23,7 +23,7 @@ Pour chacun des i-ème caractères de la `proposition`, Le tableau `info_sortie[
 Par exemple: si le mot `mystère` est 'bonjour' et que la `proposition` est 'oooonnn', le tableau `info_sortie` sera 1200100.<br>
 <br>
 Par ailleurs, la fonction renvoie `EXIT_FAILURE` si la proposition n'est pas de la même taille que le mot mystère et `EXIT_SUCCESS` sinon. 
-(`EXIT_FAILURE` et `EXIT_SUCCESS` sont des constantes de la bibliothèque `stdlib.h` de valeur respectives <b>0</b> et <b>1</b>)
+(`EXIT_FAILURE` et `EXIT_SUCCESS` sont des constantes de la bibliothèque `stdlib.h` de valeur respective <b>0</b> et <b>1</b>)
 
 
 ==
