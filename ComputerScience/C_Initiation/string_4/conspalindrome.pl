@@ -1,5 +1,5 @@
 
-#author=Zip
+#author=Zip + refait par OCE pour éviter la création de deux fonctions
 
 author=
 
@@ -21,15 +21,18 @@ si possible, en palindrome:
 <li> sinon, 
   <ul>
     <li> si la taille du tableau est suffisante, on la concatène à son miroir pour que le tableau contienne un palindrome.</li>
-    <li> Si la taille du tableau n'est pas suffisante, on ne fait rien. </li> 
+    <li> si la taille du tableau n'est pas suffisante, on ne fait rien. </li> 
   </ul>
 </li>
 </ul>
-<u>Exemple :</u><br><br>
+<u>Exemple :</u> 
 Si le tableau `s` contient "velo", `construit_palin(s,20)` transforme `s` en "veloolev" et renvoie 1
 et l'appel suivant `construit_palin(s,20)` laisse `s` inchangé et renvoie 0.<br>
 
-Si le tableau s contient "velo", l'appel `construit_palin(s,6)` laisse `s` inchangé et renvoie 0.
+Si le tableau s contient "velo", l'appel `construit_palin(s,6)` laisse `s` inchangé et renvoie 0.<br>
+<br>
+<b>!!!!!</b> Pour vérifier que `s` est ou non un palindrome vous appelerez <u><b>impérativement</b></u> (sans la définir) la fonction `int est_palindrome(char s[])`<br>
+qui reçoit une chaine de caractères et renvoie 1 si celle-ci est un palindrome, et 0 sinon.
 ==
 
 codebefore==
@@ -37,6 +40,10 @@ codebefore==
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+/* déclaration anticipée de la fonction est_palindrome */
+/* parcequ'on va pas leur demander de la coder */
+int est_palindrome(char *);
 
 ==
 
@@ -49,14 +56,6 @@ int construit_palin(char s[],int taille){
 ==
 
 solution==
-int est_palindrome(char s[]){
-  int i,l;
-  l=strlen(s);
-  for(i=0; i<l/2;i++)
-    if(s[i]!=s[l-1-i])
-      return 0;
-  return 1;
-}
 
 int construit_palin(char s[],int taille){
   int lg=strlen(s);
@@ -71,6 +70,15 @@ int construit_palin(char s[],int taille){
 ==
 
 codeafter==
+
+int est_palindrome(char s[]){
+  int i,l;
+  l=strlen(s);
+  for(i=0; i<l/2;i++)
+    if(s[i]!=s[l-1-i])
+      return 0;
+  return 1;
+}
 
 int main(void){
   char tab[100];
@@ -91,6 +99,7 @@ tests==
 ["alea","","".join([chr(random.randint(97,122)) for i in range(random.randint(1,15))])+" "+str(random.randint(15,32))],
  ["aleatoire","",random.choice(["elle","kayak","velo","radar","avion","rotor","serres","solos","suffit"])+" 10"], ]
 ==
+
 
 
 
