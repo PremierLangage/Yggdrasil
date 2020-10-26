@@ -1,18 +1,17 @@
 
 
-author=DR+ZIP
+# author=DR+ZIP
 
-
+author=
 
 tag=string
+
 title=int vers char
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
-
 text==  
-
-Ecrire une fonction `void uint2char(unsigned int n,char ecrit[]) `, qui recoit un entier positif `n`
+Ecrire une fonction `void uint2char(unsigned int n,char ecrit[])`, qui recoit un entier positif `n`
 et remplit le tableau `ecrit` avec l'écriture en chiffre arabes de `n`:   
 
     si n=94, ecrit contiendra "94"  
@@ -77,6 +76,7 @@ tests==
   ["Aléatoire", "", str(random.randint(6*7-4,6*7+3))],
   ]
 ==
+
 
 
 
