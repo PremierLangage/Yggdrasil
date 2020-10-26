@@ -12,7 +12,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==  
 Ecrire une fonction `void uint2char(unsigned int n,char ecrit[])`, qui recoit un entier positif `n`
-et remplit le tableau `ecrit` avec l'écriture en chiffre arabes de `n`:   
+et remplit le tableau `ecrit` avec l'écriture en chiffre arabes de `n` en respectant les conditions suivantes:   
 
     si n=94, ecrit contiendra "94"  
     si n=2*2*2*2*2*2*2*2*2*2, ecrit contiendra "1024"
