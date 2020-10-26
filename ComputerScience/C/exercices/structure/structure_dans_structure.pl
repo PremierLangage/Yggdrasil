@@ -23,8 +23,8 @@ title=Structure contenant une autre structure
 tag=structure|imbriquées|simple
 
 text==
-Déclarez une structure **Point** contenant deux champs entiers nommés *x* et *y*.
-Puis une autre structure *Couple* contenant deux de type **Point** nommés *p1* et *p2*.
+Déclarez et définissez une structure **Point** contenant deux champs entiers nommés *x* et *y*.
+Puis une autre structure **Couple** contenant deux de type **Point** nommés *p1* et *p2*.
 
 ==
 
