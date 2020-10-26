@@ -4,7 +4,7 @@ author=
 
 title=Retourne chaine
 
-tag=string
+tag=string|caractere
 
 extends=/ComputerScience/C/template/std_progC.pl
 
@@ -22,7 +22,7 @@ code_before==
 
 ==
 
-taboo=string.h|strlen|strcpy
+taboo=string|strlen|strcpy
 
 editor.code==
 /* ... */  retournechaine(char tab[]){
@@ -62,6 +62,7 @@ checks_args_stdin==#|python|
 [ ["simple éxécution", ["bonjour toto"],""],
 ["alea",["".join([chr(randint(97,122)) for i in range(randint(1,15))])],""]]
 ==
+
 
 
 
