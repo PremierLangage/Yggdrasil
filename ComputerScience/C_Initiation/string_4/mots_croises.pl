@@ -26,9 +26,9 @@ Ecrire une fonction `int place_mot(char plateau[][COLONNES],int x,int y,char m[]
 qui place, si possible, le mot aux coordonnées indiquées.  
 Si direction vaut 'h', le mot doit être placé horizontalement, si  direction vaut 'v', 
 le mot doit être placé  verticalement.
-Un mot  ne peut être placé que si:    
-		toutes les coordonées sont valides  
-		les cases étaient vides ou contenaient des lettres qui correspondent à celle du mot.
+Un mot  ne peut être placé que si:<ul>
+	  <li> toutes les coordonées sont valides  
+		<li> les cases étaient vides ou contenaient des lettres qui correspondent à celle du mot.
 
 ==
 codebefore==
