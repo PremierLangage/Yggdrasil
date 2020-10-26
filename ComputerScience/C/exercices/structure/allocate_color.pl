@@ -79,12 +79,12 @@ Color *s;
 
 checks_args_stdin==#|python|
 [ ["Test simple rouge", ["Rouge", "255", "0", "0"], ""],
-	["Test simple bleu", ["Bleu 0 0 255"], ""],
-  ["Test simple violet", ["Violet 255 0 255"], ""],
-	["Test simple noir", ["Noir 0 0 0"], ""],
-  ["Couleur aléatoire 1", ["Couleur aléatoire"] + [str(random.randint(0,255)) for i in range(3)], ""],
-  ["Couleur aléatoire 2", ["Couleur aléatoire"] + [str(random.randint(0,255)) for i in range(3)], ""],
-  ["Couleur aléatoire 3", ["Couleur aléatoire"] + [str(random.randint(0,255)) for i in range(3)], ""] ]
+	["Test simple bleu", ["Bleu", "0", "0", "255"], ""],
+  ["Test simple violet", ["Violet", "255", "0", "255"], ""],
+	["Test simple noir", ["Noir", "0", "0", "0"], ""],
+  ["Couleur aléatoire 1", ["Couleur aléatoire"] + [str(randint(0,255)) for i in range(3)], ""],
+  ["Couleur aléatoire 2", ["Couleur aléatoire"] + [str(randint(0,255)) for i in range(3)], ""],
+  ["Couleur aléatoire 3", ["Couleur aléatoire"] + [str(randint(0,255)) for i in range(3)], ""] ]
 ==
 
 
