@@ -18,7 +18,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
 
-title=Allocation d'une structure Couleur avec 3 entiers
+title=Allocation d'une structure Color avec 3 entiers
 tag=structure|malloc|function
 
 text==
@@ -86,7 +86,4 @@ checks_args_stdin==#|python|
   ["Couleur aléatoire 2", ["Couleur aléatoire"] + [str(randint(0,255)) for i in range(3)], ""],
   ["Couleur aléatoire 3", ["Couleur aléatoire"] + [str(randint(0,255)) for i in range(3)], ""] ]
 ==
-
-
-
 
