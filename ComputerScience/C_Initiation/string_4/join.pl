@@ -38,6 +38,7 @@ Cette fonction lit l'entrée standard (ce qui est tapé au clavier en général)
 codebefore==
 
 #include <stdio.h>
+
 ==
 
 editor.code==
