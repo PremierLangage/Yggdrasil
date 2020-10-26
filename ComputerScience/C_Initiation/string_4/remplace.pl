@@ -8,15 +8,12 @@ tag=string|char
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
-extends=/ComputerScience/C/template/std_progC.pl
-
 text==
 
 Ecrire une fonction `remplace` qui reçoit une chaine de caractères et deux *char* $%origine%$ et $%but%$
  et remplace toute occurrence de $%origine%$ par  $%but%$.<br>
 Par exemple si : <br>
 tab = 'gourde et origine = 'g' et but = 'b' alors tab='`b`ourde'<br>
-Aucune utilisation de la bibliothèque `string.h` n'est permise (et pas nécessaire)
 ==
 
 codebefore==
@@ -25,8 +22,6 @@ codebefore==
 #include <stdlib.h>
 
 ==
-
-taboo=string
 
 editor.code==
 void remplace(char tab[],char origine, char but){
