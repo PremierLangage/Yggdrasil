@@ -23,11 +23,12 @@ Exemple: si le mot mystère est 'bonjour' et que la proposition est 'oooonnn', l
 
 Par ailleurs, la fonction renvoie `EXIT_FAILURE` si la proposition n'est pas de la même taille que le mot mystère et `EXIT_SUCCESS` sinon. 
 (`EXIT_FAILURE` et `EXIT_SUCCESS` sont des constantes de la bibliothèque `stdlib.h` de valeur respectives 0 et 1)
-
-La fonction `motus` doit avoir une complexité linéaire en la longueur de la chaîne de caractères.
 ==
 
 code_before==
+
+/* ancienne phrase de l'énoncée qui était invérifiable par les élèves et non vérifiée par PL : */
+/* La fonction `motus` doit avoir une complexité linéaire en la longueur de la chaîne de caractères.*/
 
 #include <stdlib.h>
 #include <stdio.h>
