@@ -20,21 +20,19 @@ extends=/ComputerScience/C/template/std_progC.pl
 author=Elise Hardy
 
 title=Structure contenant une autre structure
-tag=structure|imbricquées|
+tag=structure|imbriquées|simple
 
 text==
-Déclarez une structure *Point* contenant deux entiers *x* et *y*.
-Puis une autre structure *Couple* contenant deux points *p1* et *p2*.
+Déclarez une structure **Point** contenant deux champs entiers nommés *x* et *y*.
+Puis une autre structure *Couple* contenant deux de type **Point** nommés *p1* et *p2*.
 
 ==
 
-editor.code==
+editor.code==#|c|
 typedef ...
-
 ==
 
-solution==
-
+solution==#|c|
 typedef struct {
     int x;
     int y;
@@ -44,11 +42,12 @@ typedef struct {
     Point p1;
     Point p2;
 }Couple;
-
 ==
 
-codeafter==
- 
+code_before==#|c|
+==
+
+code_after==#|c|
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -61,7 +60,6 @@ int main(int argc, char* argv[]){
   printf("Couple point 1 (%d %d) point 2 (%d %d)\n", c.p1.x, c.p1.y, c.p2.x, c.p2.y);
   return 0;
 }
-
 ==
 
 tests==
