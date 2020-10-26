@@ -11,16 +11,16 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 text==
 
-Ecrire une fonction `int motus(char mystere[],char proposition[],int info_sortie[])` qui reçoit une chaine de caractères `mystere` à découvrir, 
-une chaine de caractères `proposition` et un tableau d'entiers `info_sortie` de même taille que le mot mystère.<br>
+Ecrire une fonction `int motus(char mystere[],char proposition[],int info_sortie[])` qui reçoit une chaîne de caractères `mystere` à découvrir, 
+une chaîne de caractères `proposition` et un tableau d'entiers `info_sortie` de même taille que le mot mystère.<br>
 Pour chacun des i-ème caractères de la `proposition`, Le tableau `info_sortie[]` se remplit de la manière suivante :<br>
 <ul>
  <li> 0 si le caractère de la proposition n'est pas dans le mot mystere.</li>
  <li> 1 si le caractère de la proposition existe dans le mot mystère mais n'est pas à la bonne place.</li>
  <li> 2 si le caractère de la proposition est à la même place dans le mot mystère.</li>
 </ul>
-<b>Attention :</b> Si une lettre apparaît n fois dans le mot mystère, on ne peut avoir au maximum que n chiffres différents de 0 dans info_sortie.<br>
-Exemple: si le mot mystère est 'bonjour' et que la proposition est 'oooonnn', le tableau info_sortie sera 1200100.<br>
+<b>Attention :</b> Si une lettre apparaît n fois dans le mot mystère, on ne peut avoir au maximum que n chiffres différents de 0 dans `info_sortie`.<br>
+Par exemple: si le mot `mystère` est 'bonjour' et que la `proposition` est 'oooonnn', le tableau `info_sortie` sera 1200100.<br>
 
 Par ailleurs, la fonction renvoie `EXIT_FAILURE` si la proposition n'est pas de la même taille que le mot mystère et `EXIT_SUCCESS` sinon. 
 (`EXIT_FAILURE` et `EXIT_SUCCESS` sont des constantes de la bibliothèque `stdlib.h` de valeur respectives 0 et 1)
