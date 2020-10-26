@@ -4,7 +4,7 @@ author=
 
 title=Retourne chaine
 
-tag=string|caractere
+tag=string|caractere|tableau
 
 extends=/ComputerScience/C/template/std_progC.pl
 
