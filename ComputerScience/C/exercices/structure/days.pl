@@ -58,8 +58,8 @@ int main(int argc, char* argv[]){
 }
 ==
 
-tests==
-[ ["Déclaration et utilisation", "",""] ] 
+checks_args_stdin==#|python|
+[ ["Déclaration et utilisation", [], ""] ] 
 ==
 
 
