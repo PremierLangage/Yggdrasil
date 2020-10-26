@@ -4,7 +4,7 @@ title ==
 Exemple 2
 ==
 
-dropsolutions ==
+solutions ==
 Os frontal
 Os pariétal
 Os sphénoïde
@@ -28,5 +28,6 @@ form ==
 {{ label|component }}
 {% endfor %}
 ==
+
 
 
