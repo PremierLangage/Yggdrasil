@@ -29,11 +29,7 @@ Cette fonction lit l'entrée standard (ce qui est tapé au clavier en général)
         retourne -1 en fin d'entrée.
     
         putchar(), de stdio.h, affiche un caractère sur la sortie standard (ici l'écran). 
-        Par exemple putchar('a') entraîne l'affichage de la lettre 'à' à l'écran.  
-    
-        Ecrire une chaine :  
-            vous devez déjà savoir ...   
-    
+        Par exemple putchar('a') entraîne l'affichage de la lettre 'à' à l'écran. 
 ==
 codebefore==
 
