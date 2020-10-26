@@ -13,7 +13,6 @@ Pour représenter une grille de mots croisés on utilise un tableau rectangulair
 Dans une grille, les mots sont écrits en majuscules, soit horizontalement de gauche à droite, soit verticalement de haut en bas.  
 
 On mémorise :<br><ul>
-
     <li>une case vide par 0 </li>
     <li>une case noire par 1 </li>
     <li>une case remplie par la lettre majuscule alphabétique contenue </li>
