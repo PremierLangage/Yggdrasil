@@ -24,7 +24,7 @@ tag=structure
 
 text==
 Déclarez une énumération **Fruit** contenant les fruits *pomme*, *poire*, *banane* et *cerise*.
-Puis déclarer une structure *Panier* contenant un tableau de 4 **Fruit** nommé *tab*. 
+Puis déclarer une structure **Panier** contenant un tableau de 4 **Fruit** nommé *tab*. 
 
 ==
 
