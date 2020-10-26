@@ -6,7 +6,7 @@ difficulty=3
 
 title= Simule Join 
 
-tag=string|char
+tag=string|char|LectureChar|EcritureChar
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
