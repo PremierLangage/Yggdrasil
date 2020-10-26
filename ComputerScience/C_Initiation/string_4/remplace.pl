@@ -8,6 +8,8 @@ tag=string|char
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
+extends=/ComputerScience/C/template/std_progC.pl
+
 text==
 
 Ecrire une fonction `remplace` qui reçoit une chaine de caractères et deux *char* $%origine%$ et $%but%$
