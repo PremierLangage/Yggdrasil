@@ -47,7 +47,7 @@ code_after==#|c|
 
 int main(){
   
-  printf("note: (Mathieu,%d), (Cassandre,%d), (Laura,%d), (Thomas,%d), (Aurélie,%d), (Adrien,%d)",Mathieu,Cassandre,Laura,Thomas,Aurelie,Adrien);
+  printf("note: (Mathieu,%d), (Cassandre,%d), (Laura,%d), (Thomas,%d), (Aurélie,%d), (Adrien,%d)", Mathieu, Cassandre, Laura, Thomas, Aurelie, Adrien);
   return 0;}
 ==
 
