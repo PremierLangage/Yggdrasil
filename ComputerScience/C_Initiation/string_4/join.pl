@@ -62,8 +62,8 @@ void join(char *s, char sep){
 codeafter==
 
 int main(int c, char **argv){
-join(argv[1],argv[2][0]);
-return 0;
+    join(argv[1],argv[2][0]);
+    return 0;
 }
 ==
 
