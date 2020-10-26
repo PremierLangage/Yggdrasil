@@ -19,8 +19,8 @@ On mémorise :<br><ul>
 </ul>
 
 Ecrire une fonction `int place_noire(char plateau[][COLONNES],int x,int y)` qui place
-une case noire sur la case de coordonnées(x,y) de la grille.  
-La fonction renvoie 1 si les coordonnées sont correctes et que la case était vide, 0 sinon.
+une case noire sur la case de `coordonnées(x,y)` de la grille.  
+La fonction renvoie 1 si les coordonnées sont correctes et que la case était vide, 0 sinon.<br>
 
 Ecrire une fonction `int place_mot(char plateau[][COLONNES],int x,int y,char m[], char direction)`
 qui place, si possible, le mot aux coordonnées indiquées.  
