@@ -13,7 +13,8 @@ text==
 Ecrire une fonction `remplace` qui reçoit une chaine de caractères et deux *char* $%origine%$ et $%but%$
  et remplace toute occurrence de $%origine%$ par  $%but%$.<br>
 Par exemple si : <br>
-tab = 'gourde et origine = 'g' et but = 'b' alors tab='`b`ourde'
+tab = 'gourde et origine = 'g' et but = 'b' alors tab='`b`ourde'<br>
+Aucune utilisation de la bibliothèque `string.h` n'est permise
 ==
 
 codebefore==
@@ -58,6 +59,7 @@ tests==
 ["alea","","".join([chr(random.randint(97,122)) for i in range(random.randint(1,15))])+" c C"],
   ]
 ==
+
 
 
 
