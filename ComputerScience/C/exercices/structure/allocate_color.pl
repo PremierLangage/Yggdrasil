@@ -1,11 +1,25 @@
-# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2019 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Allocation d'une structure Couleur avec 3 entiers
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Allocation d'une structure Couleur avec 3 entiers
 tag=structure|malloc|function
-extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 Déclarer et définir un nouveau type structuré C nommé **Color**. 
@@ -13,11 +27,10 @@ Cette structure devra contenir trois champs entiers nommés
 **red** pour rouge, **green** pour vert et **blue** pour bleu.
 
 Écrire ensuite une fonction **allocate_color** qui prend trois 
-entiers en paramètres **R, G, B** et qui retourne l'adresse d'une 
+entiers en paramètres `R`, `G`, `B` et qui retourne l'adresse d'une 
 nouvelle structure **Color** fraichement allouée avec **malloc** et
-initialisé avec les trois entiers.
-
-Bien entendu R pour red, G pour green, et B pour blue.
+initialisée avec les trois entiers bien renseignés dans les champs 
+`R` pour **red**, `G` pour **green**, et `B` pour **blue**.
 ==
 
 editor.code==
@@ -84,6 +97,7 @@ tests==
   ["Couleur aléatoire", "'Couleur aléatoire' " + " ".join([str(random.randint(0,255)) for i in range(3)]), ""],
   ["Couleur aléatoire", "'Couleur aléatoire' " + " ".join([str(random.randint(0,255)) for i in range(3)]), ""] ]
 ==
+
 
 
 
