@@ -1,9 +1,12 @@
 
-author=Emmanuel Brunache, Yoshihiro Shibuya
+#author=Emmanuel Brunache, Yoshihiro Shibuya
 
+author=
 
 title=Longueur de chaine
+
 tag=string
+
 extends=/ComputerScience/C/template/std_progC.pl
 
 text==
@@ -20,6 +23,7 @@ Par ailleurs, la fonction renvoie `EXIT_FAILURE` si la proposition n'est pas de 
 
 La fonction `motus` doit avoir une complexité linéaire en la longueur de la chaîne de caractères.
 ==
+
 code_before==
 
 #include <stdlib.h>
@@ -97,6 +101,7 @@ checks_args_stdin==#|python|
 ]
 
 ==
+
 
 
 
