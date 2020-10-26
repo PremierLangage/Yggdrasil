@@ -9,8 +9,7 @@ tag=string
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==  
-Pour représenter une grille de mots croisés on utilise un tableau
-rectangulaire de `char` de taille LIGNES$%\times%$COLONNES.  
+Pour représenter une grille de mots croisés on utilise un tableau rectangulaire de `char` de taille LIGNES$%\times%$COLONNES.  
 Dans une grille les mots sont écrits en majuscules, soit horizontalement de gauche 
 à droite, soit verticalement de haut en bas.  
 On mémorise :  
@@ -144,6 +143,7 @@ tests==
  ["aléatoire","","3 2" + random.choice([" POISSONE 0 0 v" ," DIS 0 4 v"," USSR 2 3 h"," SORT 6 0 v"])],
 ]
 ==
+
 
 
 
