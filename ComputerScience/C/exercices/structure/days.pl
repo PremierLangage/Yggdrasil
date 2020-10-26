@@ -19,7 +19,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 author=Nicolas Borie
 
 title=Structure C pour les jours de la semaine
-tag=structure
+tag=structure|énumération|enum
 
 text==
 Déclarer et définir une *structure* C nommé *Jour*. Cette structure
@@ -29,19 +29,19 @@ lundi, mardi, ...
 
 ==
 
-editor.code==
+editor.code==#|c|
 typedef ...
-
 ==
 
-solution==
-
+solution==#|c|
 typedef enum {lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche} Jour;
+==
+
+code_before==#|c|
 
 ==
 
-codeafter==
- 
+code_after==#|c|
 #include <stdio.h>
     
 int main(int argc, char* argv[]){
@@ -56,7 +56,6 @@ int main(int argc, char* argv[]){
   
   return 0;
 }
-
 ==
 
 tests==
