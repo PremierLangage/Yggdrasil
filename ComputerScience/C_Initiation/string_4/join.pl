@@ -55,7 +55,6 @@ void join(char *s, char sep){
         if (c==sep) printf(s);
         else putchar(c);
     }
-
 }
 ==
 
