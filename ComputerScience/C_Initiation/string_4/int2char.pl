@@ -48,7 +48,6 @@ strcpy(ecrit,e+indice+1);
 ==
 
 codebefore==
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -65,7 +64,6 @@ int main(void) {
 return 0;
 }
 ==
-
 
 tests==
 [ ["Basique", "", " 10 "],
