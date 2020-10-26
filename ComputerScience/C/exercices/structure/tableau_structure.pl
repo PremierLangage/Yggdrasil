@@ -28,23 +28,22 @@ Puis déclarer une structure *Panier* contenant un tableau de 4 **Fruit** nommé
 
 ==
 
-editor.code==
+editor.code==#|c|
 typedef ...
-
 ==
 
-solution==
-
+solution==#|c|
 typedef enum {pomme, poire,banane,cerise}Fruit;
 
 typedef struct {
   Fruit tab[4];
 }Panier;
-
 ==
 
-codeafter==
- 
+code_before==#|c|
+==
+
+code_after==#|c|
 #include <stdio.h>
 #include <stdlib.h>    
 #include <string.h>
@@ -59,10 +58,9 @@ int main(int argc, char* argv[]){
   printf("panier: %d %d %d %d",p.tab[0],p.tab[1],p.tab[2],p.tab[3]);
   return 0;
 }
-
 ==
 
-tests==
+checks_args_stdin==#|python|
 [ ["Déclaration et utilisation", "",""] ] 
 ==
 
