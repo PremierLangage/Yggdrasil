@@ -9,7 +9,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 text==
 
-Ecrire une fonction `longueurchaine` qui reçoit une chaine de caractères et renvoie le nombre de caractères de cette chaine.
+Ecrire une fonction `longueurchaine` qui reçoit une chaine de caractères et renvoie le nombre de caractères de cette chaîne.<br>
 Elle fait comme la fonction strlen mais vous n'avez bien entendu pas le droit de l'utiliser.
 ==
 code_before==
@@ -55,6 +55,7 @@ checks_args_stdin==#|python|
 [ ["simple éxécution", ["bonjour toto"],""],
 ["alea",["".join([chr(randint(97,122)) for i in range(randint(1,15))])],""]]
 ==
+
 
 
 
