@@ -21,7 +21,6 @@ et remplit le tableau `ecrit` avec l'écriture en chiffre arabes de `n`:
 
 
 editor.code==
-
 void uint2char(unsigned int n,char ecrit[]) { 
 /* A compléter */
 }
