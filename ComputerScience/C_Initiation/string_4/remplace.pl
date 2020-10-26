@@ -14,7 +14,7 @@ Ecrire une fonction `remplace` qui reçoit une chaine de caractères et deux *ch
  et remplace toute occurrence de $%origine%$ par  $%but%$.<br>
 Par exemple si : <br>
 tab = 'gourde et origine = 'g' et but = 'b' alors tab='`b`ourde'<br>
-Aucune utilisation de la bibliothèque `string.h` n'est permise
+Aucune utilisation de la bibliothèque `string.h` n'est permise (et pas nécessaire)
 ==
 
 codebefore==
