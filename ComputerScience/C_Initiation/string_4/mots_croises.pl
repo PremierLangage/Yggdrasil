@@ -14,9 +14,9 @@ Dans une grille, les mots sont écrits en majuscules, soit horizontalement de ga
 
 On mémorise :<br>
 
-    une case vide par 0 <br>
-    une case noire par 1 <br>
-    une case remplie par la lettre majuscule alphabétique contenue <br>
+    <li>une case vide par 0 </li>
+    <li>une case noire par 1 </li>
+    <li>une case remplie par la lettre majuscule alphabétique contenue </li>
 
 Ecrire une fonction `int place_noire(char plateau[][COLONNES],int x,int y)` qui place
 une case noire sur la case de coordonnées(x,y) de la grille.  
