@@ -66,19 +66,19 @@ int motus(char mystere[], char proposition[], int info_sortie[])
     unsigned int occ[256] = {0};
     if (l_mys != strlen(proposition)) return EXIT_FAILURE;
 
-    for(i = 0; i < l_mys; 1+=i) ++occ[mystere[i]];
+    for(i = 0; i < l_mys; ++i) ++occ[(int)mystere[i]];
 
     for(i = 0; i < l_mys; ++i)
     {
         if(mystere[i] == proposition[i])
         {
             info_sortie[i] = MATCH;
-            --occ[mystere[i]];
+            --occ[(int)mystere[i]];
         }
-        else if (occ[proposition[i]])
+        else if ((int)occ[proposition[i]])
         {
             info_sortie[i] = FOUND;
-            --occ[proposition[i]];
+            --occ[(int)proposition[i]];
         }
         else info_sortie[i] = NOT_FOUND;
     }
