@@ -7,7 +7,7 @@ difficulty=3
 
 title=Construit un palindrome.
 
-tag=string
+tag=string|AppelFonction|TransmissionParametre|RetourFonction
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
