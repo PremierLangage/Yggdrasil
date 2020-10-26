@@ -4,7 +4,7 @@ author=
 
 title=Mise en titre
 
-tag=tableau|string|caracteres
+tag=tableau|string|char
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
@@ -60,6 +60,7 @@ tests==
  ["aleatoire",""," ".join(["".join([chr(random.randint(97, 122)) for i in range(random.randint(2,10))]) + " " +"".join([ chr(random.randint(65, 90)) for i in range(random.randint(0,1))]) for j in range(5)])],
   ]
 ==
+
 
 
 
