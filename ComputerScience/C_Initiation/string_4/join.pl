@@ -50,11 +50,10 @@ void join(char *s, char sep){
 
 solution==
 void join(char *s, char sep){
-int c;
-while ((c=getchar()) != -1) 
-    {
-    if (c==sep) printf(s);
-    else putchar(c);
+    int c;
+    while ((c=getchar()) != -1) {
+        if (c==sep) printf(s);
+        else putchar(c);
     }
 
 }
