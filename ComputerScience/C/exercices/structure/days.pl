@@ -22,10 +22,10 @@ title=Structure C pour les jours de la semaine
 tag=structure|énumération|enum
 
 text==
-Déclarer et définir une *structure* C nommé *Jour*. Cette structure
+Déclarer et définir une **structure** C nommée **Jour**. Cette structure
 devra être une énumération des jours de la semaine dont les éléments
 seront le nom de chaque jour en francais et tout en minuscules :
-lundi, mardi, ...    
+*lundi*, *mardi*, *mercredi*, ...    
 
 ==
 
