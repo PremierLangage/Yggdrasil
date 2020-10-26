@@ -12,12 +12,12 @@ text==
 Pour représenter une grille de mots croisés on utilise un tableau rectangulaire de `char` de taille LIGNES$%\times%$COLONNES.  
 Dans une grille, les mots sont écrits en majuscules, soit horizontalement de gauche à droite, soit verticalement de haut en bas.  
 
-On mémorise :<br>
+On mémorise :<br><ul>
 
     <li>une case vide par 0 </li>
     <li>une case noire par 1 </li>
     <li>une case remplie par la lettre majuscule alphabétique contenue </li>
-
+</ul>
 Ecrire une fonction `int place_noire(char plateau[][COLONNES],int x,int y)` qui place
 une case noire sur la case de coordonnées(x,y) de la grille.  
 La fonction renvoie 1 si les coordonnées sont correctes et que la case était vide, 0 sinon.
