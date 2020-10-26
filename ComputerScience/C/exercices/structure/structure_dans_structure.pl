@@ -63,7 +63,7 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[ ["Déclaration et utilisation 1", ["14", "3 42"], ""],
+[ ["Déclaration et utilisation 1", ["14", "3", "42"], ""],
   ["Déclaration et utilisation 2", ["47 85 913"], ""],
   ["Test aléatoire", [str(randint(0,99)) for i in range(3)], ""] ] 
 ==
