@@ -2,7 +2,8 @@
 author=
 difficulty=3
 
-title=Mots croisés.
+title=Mots croisés
+
 tag=string
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
