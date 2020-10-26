@@ -38,7 +38,6 @@ code_before==
 
 ==
 
-
 editor.code==
 /* <type>*/ motus(char mystere[], char proposition[], int info_sortie[])
 {
