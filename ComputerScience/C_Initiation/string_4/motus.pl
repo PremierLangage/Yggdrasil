@@ -66,7 +66,7 @@ int motus(char mystere[], char proposition[], int info_sortie[])
     unsigned int occ[256] = {0};
     if (l_mys != strlen(proposition)) return EXIT_FAILURE;
 
-    for(i = 0; i < l_mys; ++i) ++occ[mystere[i]];
+    for(i = 0; i < l_mys; 1+=i) ++occ[mystere[i]];
 
     for(i = 0; i < l_mys; ++i)
     {
