@@ -1,6 +1,19 @@
-# Copyright 2017 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2017 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Déclaration d'une structure C pour les jours de la semaine
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
 
 author=Nicolas Borie
 title=Structure C pour les jours de la semaine
@@ -48,4 +61,5 @@ int main(int argc, char* argv[]){
 tests==
 [ ["Déclaration et utilisation", "",""] ] 
 ==
+
 
