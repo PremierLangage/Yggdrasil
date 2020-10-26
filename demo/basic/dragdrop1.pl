@@ -10,7 +10,7 @@ habet
 habent
 ==
 
-dropsolutions ==
+solutions ==
 habet
 ==
 
@@ -23,9 +23,9 @@ Pastor pecuniam non {{ drops[0]|component }}.
 
 
 {% for label in labels %}
-
 {{ label|component }}
 {% endfor %}
 ==
+
 
 
