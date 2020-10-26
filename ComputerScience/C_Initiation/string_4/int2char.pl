@@ -40,7 +40,6 @@ e[10]='\0';
 while(n>0){
     e[indice]='0'+n%10;
     indice-=1;
-  
     n/=10;
     }
 strcpy(ecrit,e+indice+1);
