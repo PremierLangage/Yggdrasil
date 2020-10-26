@@ -5,30 +5,30 @@ difficulty=3
 title=Mots croisés
 
 tag=string
+
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==  
-    Pour représenter un grille de mots croisés on utilise un tableau
-     rectangulaire de char de taille LIGNES$%\times%$COLONNES.  
-Dans une grille les mots sont écrits en majuscules, soit horizontalement de gauc
-he à droite, soit verticalement de haut en bas.  
+Pour représenter une grille de mots croisés on utilise un tableau
+rectangulaire de `char` de taille LIGNES$%\times%$COLONNES.  
+Dans une grille les mots sont écrits en majuscules, soit horizontalement de gauche 
+à droite, soit verticalement de haut en bas.  
 On mémorise :  
    une case vide par 0;  
    une case noire par 1; 
    une case remplie par la lettre majuscule alphabétique contenue.  
-  Ecrire une fonction `int place_noire(char plateau[][COLONNES],int x,int y)` qu
-i place une case noire sur la case de coordonnées(x,y) de la grille.  
-      La fonction renvoie 1 si les coordonnées sont correctes et que la case éta
-it vide, 0 sinon.    
 
- Ecrire une fonction `int place_mot(char plateau[][COLONNES],int x,int y,char m[
-], char direction)}`qui place,si possible, le mot aux coordonnées indiquées.  
- Si direction vaut 'h', le mot doit être placé horizontalement, si  direction va
-ut 'v', le mot doit être placé  verticalement.  
-  Un mot  ne peut être placé que si:    
+Ecrire une fonction `int place_noire(char plateau[][COLONNES],int x,int y)` qui place
+une case noire sur la case de coordonnées(x,y) de la grille.  
+La fonction renvoie 1 si les coordonnées sont correctes et que la case était vide, 0 sinon.
+
+Ecrire une fonction `int place_mot(char plateau[][COLONNES],int x,int y,char m[], char direction)`
+qui place, si possible, le mot aux coordonnées indiquées.  
+Si direction vaut 'h', le mot doit être placé horizontalement, si  direction vaut 'v', 
+le mot doit être placé  verticalement.
+Un mot  ne peut être placé que si:    
 		toutes les coordonées sont valides  
-		les cases étaient vides ou contenaient des lettres 
-                qui correspondent à celle du mot.
+		les cases étaient vides ou contenaient des lettres qui correspondent à celle du mot.
 
 ==
 codebefore==
@@ -144,6 +144,7 @@ tests==
  ["aléatoire","","3 2" + random.choice([" POISSONE 0 0 v" ," DIS 0 4 v"," USSR 2 3 h"," SORT 6 0 v"])],
 ]
 ==
+
 
 
 
