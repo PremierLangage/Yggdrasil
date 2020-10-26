@@ -10,7 +10,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 text==
 
 Ecrire une fonction `longueurchaine` qui reçoit une chaine de caractères et renvoie le nombre de caractères de cette chaîne.<br>
-Elle fait comme la fonction <u>strlen</u> mais vous n'avez bien entendu pas le droit de l'utiliser.
+Elle fait comme la fonction <u>`strlen`</u> mais vous n'avez bien entendu pas le droit de l'utiliser.
 ==
 code_before==
 
@@ -19,7 +19,7 @@ code_before==
 
 ==
 
-taboo=string|strlen
+taboo=string | strlen
 
 editor.code==
 /* ... */  longueurchaine(char tab[]){
