@@ -21,7 +21,8 @@ Le tableau info_sortie[] se remplit de la manière suivante pour chacun des i-è
 Attention: Si une lettre apparaît n fois dans le mot mystère, on ne peut avoir au maximum que n chiffres différents de 0 dans info_sortie.<br>
 Exemple: si le mot mystère est 'bonjour' et que la proposition est 'oooonnn', le tableau info_sortie sera 1200100.<br>
 
-Par ailleurs, la fonction renvoie `EXIT_FAILURE` si la proposition n'est pas de la même taille que le mot mystère et `EXIT_SUCCESS` sinon.
+Par ailleurs, la fonction renvoie `EXIT_FAILURE` si la proposition n'est pas de la même taille que le mot mystère et `EXIT_SUCCESS` sinon. 
+(`EXIT_FAILURE` et `EXIT_SUCCESS` sont des constantes de la bibliothèque `stdlib.h` de valeur respectives 0 et 1)
 
 La fonction `motus` doit avoir une complexité linéaire en la longueur de la chaîne de caractères.
 ==
