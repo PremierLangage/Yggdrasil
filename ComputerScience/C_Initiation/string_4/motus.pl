@@ -23,7 +23,7 @@ Pour chacun des i-ème caractères de la `proposition`, Le tableau `info_sortie[
 Par exemple: si le mot `mystère` est 'bonjour' et que la `proposition` est 'oooonnn', le tableau `info_sortie` sera 1200100.<br>
 <br>
 Par ailleurs, la fonction renvoie `EXIT_FAILURE` si la proposition n'est pas de la même taille que le mot mystère et `EXIT_SUCCESS` sinon. 
-(`EXIT_FAILURE` et `EXIT_SUCCESS` sont des constantes de la bibliothèque `stdlib.h` de valeur respectives 0 et 1)
+(`EXIT_FAILURE` et `EXIT_SUCCESS` sont des constantes de la bibliothèque `stdlib.h` de valeur respectives <b>0</b> et <b>1</b>)
 
 
 ==
