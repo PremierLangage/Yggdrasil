@@ -4,7 +4,7 @@ difficulty=3
 
 title=Mots croisés
 
-tag=string|char|AppelFonction|TransmissionParametre|RetourFonction
+tag=string|char|AppelFonction|TransmissionParametre|RetourFonction|tableau
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
