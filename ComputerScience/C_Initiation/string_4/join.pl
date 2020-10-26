@@ -28,7 +28,8 @@ Cette fonction lit l'entrée standard (ce qui est tapé au clavier en général)
         `getchar()`, de `stdio.h`, permet de lire un caractère isolé depuis l'entrée standard (ici le clavier) et 
         retourne -1 en fin d'entrée.
     
-        `putchar(c)`, de `stdio.h`, permet;  
+        `putchar()`, de `stdio.h`, affiche un caractère sur la sortie standard (ici l'écran). Par exemple `putchar('a')` 
+        entraîne l'affichage de la lettre `à` à l'écran.  
     
         Ecrire une chaine :  
             vous devez déjà savoir ...   
