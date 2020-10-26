@@ -24,13 +24,11 @@ Cette fonction lit l'entrée standard (ce qui est tapé au clavier en général)
         affiche   
         "CeciXXXestXXXl'entréeXXXstandard."   
     
-    Aide : 
-        Lire un caractère isolé depuis l'entrée standard (ici le clavier):  
-            int c= getchar();   
-            retourne -1 en fin d'entrée.  
+    Indice : 
+        `getchar()`, de `stdio.h`, permet de lire un caractère isolé depuis l'entrée standard (ici le clavier) et 
+        retourne -1 en fin d'entrée.
     
-        Ecrire un caractère:  
-            putchar(c);  
+        `putchar(c)`, de `stdio.h`, permet;  
     
         Ecrire une chaine :  
             vous devez déjà savoir ...   
