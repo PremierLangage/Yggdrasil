@@ -19,7 +19,7 @@ code_before==
 
 ==
 
-taboo=string.h|strlen
+taboo=string|strlen
 
 editor.code==
 /* ... */  longueurchaine(char tab[]){
