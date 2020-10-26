@@ -1,12 +1,26 @@
-# Copyright 2017 Elise Hardy <ehardy@etud.u-pem.fr>
-# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2017 Elise Hardy <ehardy@etud.u-pem.fr>
+#  Copyright (C) 2019 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Déclaration de deux structure dont une contenant l'autre
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Elise Hardy
+
 title=Structure contenant une autre structure
-tag=structure
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=structure|imbricquées|
 
 text==
 Déclarez une structure *Point* contenant deux entiers *x* et *y*.
@@ -55,4 +69,5 @@ tests==
   ["Déclaration et utilisation 2", "47 85 913", ""],
   ["Aléatoire", " ".join([str(random.randint(0,99)) for i in range(3)]), ""] ] 
 ==
+
 
