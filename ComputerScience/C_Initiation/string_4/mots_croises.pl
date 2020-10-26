@@ -29,7 +29,7 @@ le mot doit être placé  verticalement.
 Un mot  ne peut être placé que si:<ul>
 	  <li> toutes les coordonées sont valides </li>
 		<li> les cases étaient vides ou contenaient des lettres qui correspondent à celle du mot.</li>
-
+</ul>
 ==
 codebefore==
 
