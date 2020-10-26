@@ -14,11 +14,12 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Structure C pour les jours de la semaine
 tag=structure
-extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 Déclarer et définir une *structure* C nommé *Jour*. Cette structure
