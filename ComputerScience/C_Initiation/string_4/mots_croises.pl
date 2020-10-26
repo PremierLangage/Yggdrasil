@@ -4,7 +4,7 @@ difficulty=3
 
 title=Mots croisés
 
-tag=string
+tag=string|char|
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
