@@ -38,6 +38,8 @@ if (n==6*7) {
     return;}
 e[10]='\0';
 while(n>0){
+/*positionnement à partir du caractère '0' dans la table ascii*/
+/* et on se décale de n%10 pour y trouver le caractère correspondant*/
     e[indice]='0'+n%10;
     indice-=1;
     n/=10;
@@ -72,6 +74,7 @@ tests==
   ["Aléatoire", "", str(random.randint(6*7-4,6*7+3))],
   ]
 ==
+
 
 
 
