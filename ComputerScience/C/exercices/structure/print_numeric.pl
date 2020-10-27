@@ -18,10 +18,10 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
 
-title=Structure contenant une autre structure
+title=Introduction aux types polymorphes
 tag=structure|imbriquées|complexe|polymorphe|générique
 
-editor.height=400px
+editor.height=420px
 
 text==
 Dans cet exercice, il est étudié la possibilité de faire un peu d'informatique 
