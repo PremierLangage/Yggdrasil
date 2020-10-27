@@ -75,14 +75,28 @@ code_before==#|c|
 ==
 
 code_after==#|c|
+#include <stdlib.h>
 
 int main(int argc, char* argv[]){
-  
+  Numeric n;
+
+  n.type = atoi(argv[1]);
+  if (n.type == integer)
+    n.integer = atoi(argv[2]);
+  else if (n.type == real)
+    n.real = strtof(argv[2], NULL);
+  else{
+    n.complex[0] = strtof(argv[2], NULL);
+    n.complex[1] = strtof(argv[3], NULL);
+  }
+
+  print_numeric(&n);
+
   return 0;
 }
 ==
 
 checks_args_stdin==#|python|
-[ ["Déclaration et utilisation 1", ["14", "3", "42"], ""] ] 
+[ ["Entier simple", ["0", "42"], ""] ] 
 ==
 
