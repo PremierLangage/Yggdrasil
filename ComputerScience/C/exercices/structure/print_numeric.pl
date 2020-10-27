@@ -72,6 +72,7 @@ void print_numeric(Numeric* n){
 ==
 
 code_before==#|c|
+#define _POSIX_C_SOURCE 200112L
 ==
 
 code_after==#|c|
