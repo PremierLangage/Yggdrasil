@@ -3,7 +3,7 @@ author=
 
 title=Longueur de chaine
 
-tag=string|tableau
+tag=string
 
 extends=/ComputerScience/C/template/std_progC.pl
 
@@ -55,6 +55,7 @@ checks_args_stdin==#|python|
 [ ["simple éxécution", ["bonjour toto"],""],
 ["alea",["".join([chr(randint(97,122)) for i in range(randint(1,15))])],""]]
 ==
+
 
 
 
