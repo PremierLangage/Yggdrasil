@@ -26,8 +26,8 @@ Cette fonction lit l'entrée standard (ce qui est tapé au clavier en général)
     
 Indice : 
 
-la fonction de prototype int getchar(void), de stdio.h, permet de lire un caractère 
-isolé depuis l'entrée standard (ici le clavier) et retourne -1 en fin d'entrée.
+la fonction de prototype `int getchar(void)`, de stdio.h, permet de lire un caractère 
+isolé depuis l'entrée standard (ici le clavier) et <b>retourne -1 en fin d'entrée</b>.
     
 la fonction de prototype int putchar(int c), de stdio.h, affiche un caractère sur
 la sortie standard (ici l'écran). 
