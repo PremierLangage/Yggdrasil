@@ -20,7 +20,7 @@ Pour chacun des i-ème caractères de la `proposition`, Le tableau `info_sortie[
  <li> 2 si le caractère de la proposition est à la même place dans le mot mystère.</li>
 </ul>
 <b>Attention :</b> Si une lettre apparaît n fois dans le mot mystère, on ne peut avoir au maximum que n chiffres différents de 0 dans `info_sortie`.<br>
-<u>Par exemple:</u> si le mot `mystère` est 'bonjour' et que la `proposition` est 'oooonnn', le tableau `info_sortie` sera 1200100.<br>
+<u>Par exemple :</u> si le mot `mystère` est 'bonjour' et que la `proposition` est 'oooonnn', le tableau `info_sortie` sera 1200100.<br>
 <br>
 Par ailleurs, la fonction renvoie `EXIT_FAILURE` si la proposition n'est pas de la même taille que le mot mystère et `EXIT_SUCCESS` sinon. 
 (`EXIT_FAILURE` et `EXIT_SUCCESS` sont des constantes de la bibliothèque `stdlib.h` de valeur respective <b>0</b> et <b>1</b>)
