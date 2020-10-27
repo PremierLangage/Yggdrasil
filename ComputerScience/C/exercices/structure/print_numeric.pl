@@ -21,7 +21,7 @@ author=Nicolas Borie
 title=Structure contenant une autre structure
 tag=structure|imbriquées|complexe|polymorphe|générique
 
-editor.height=350px
+editor.height=400px
 
 text==
 
