@@ -5,7 +5,7 @@ author=
 
 title=Longueur de chaine
 
-tag=string|tableau|
+tag=string|tableau|char
 
 extends=/ComputerScience/C/template/std_progC.pl
 
