@@ -48,7 +48,7 @@ expected = []
 match.nodes.append({"id": "s1", "content": "Fiche pour un livre dans une bibliothèque <br>(titre, auteur, année, éditeur, etc...) ", "source": True})
 match.nodes.append({"id": "s2", "content": "Les différents états d'une tache de développement <br>(new, assigned, work in progress, need review, merged, closed) ", "source": True})
 match.nodes.append({"id": "s3", "content": "Les verbes de la langue française <br>(verbes en ER, verbes en IR (issant) et troisième groupe) ", "source": True})
-match.nodes.append({"id": "s4", "content": "Un étudiant de l'université Gustave Eiffel <br>(nom, prénom, numéro étudiant, formations suivies, etc...) ", "source": True})
+#match.nodes.append({"id": "s4", "content": "Un étudiant de l'université Gustave Eiffel <br>(nom, prénom, numéro étudiant, formations suivies, etc...) ", "source": True})
 
 match.nodes.append({"id": "t1", "content": " type **struct**", "target": True})
 match.nodes.append({"id": "t2", "content": " type **enum**", "target": True})
