@@ -67,7 +67,7 @@ void print_numeric(Numeric* n){
   else if (n->type == real)
     printf("%f", n->real);
   else
-    printf("%f+%f*i", n->complex[0], n->complex[1]);
+    printf("%f%+f*i", n->complex[0], n->complex[1]);
 }
 ==
 
