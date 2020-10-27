@@ -26,20 +26,20 @@ editor.height=420px
 text==
 Dans cet exercice, il est étudié la possibilité de faire un peu d'informatique 
 générique en C. Ici, deux types ont été définis pour essayer de faire 
-un type polymorphe pouvant représenter à la fois un entier, un nombre réel voire 
+un *type polymorphe* pouvant représenter à la fois un entier, un nombre réel voire 
 un nombre complexe.
 
 <br>
 
 L'union (aussi rare soit son utilisation) permet de fusionner plusieurs concepts 
-ou types en un seul. Ici, un **Numeric** est une structure qui comporte son 
+ou types en un seul. Ici, un **Numeric** est une structure qui contient son 
 type (qui appartient à une énumération) puis une union anonyme permettant d'être 
 possiblement une donnée d'un des trois types énumérés.
 
 <br>
 
-Dans cet exercice, la seule chose à faire est une fonction d'affichage générique 
-qui s'adapte à la donnée représentée. Si la donnée est un nombre entier, procédez 
+Dans cet exercice, la seule chose à coder est une **fonction d'affichage générique**
+qui s'adapte à la donnée en argument. Si la donnée est un nombre entier, procédez 
 à un affichage décimal `"%d"` de la donnée entière. Si la donnée est un nombre 
 réel, faites un affichage standard `"%f"` de la donnée flottante. Enfin, pour un 
 nombre complexe, on force l'affiche du signe de la partie imaginaire avec le motif 
