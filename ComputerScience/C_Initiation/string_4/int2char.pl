@@ -3,7 +3,7 @@
 
 author=
 
-tag=string|unsignedInt|char
+tag=string|unsignedInt|char|OperationCaractere
 
 title=int vers char
 
@@ -75,6 +75,7 @@ tests==
   ["Aléatoire", "", str(random.randint(6*7-4,6*7+3))],
   ]
 ==
+
 
 
 
