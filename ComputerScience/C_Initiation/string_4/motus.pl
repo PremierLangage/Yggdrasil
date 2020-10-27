@@ -65,7 +65,9 @@ int motus(char mystere[], char proposition[], int info_sortie[])
     int l_mys = strlen(mystere);
     unsigned int occ[256] = {0};
     if (l_mys != strlen(proposition)) return EXIT_FAILURE;
-
+    /* mystere[i] est casté en (int) puisque le flag de compilation Wall*/
+    /* active aussi le flag Wcar qui renvoei un warning si on utilise un */
+    /* char comme indice de tableau */
     for(i = 0; i < l_mys; ++i) ++occ[(int)mystere[i]];
 
     for(i = 0; i < l_mys; ++i)
@@ -114,6 +116,7 @@ checks_args_stdin==#|python|
 ]
 
 ==
+
 
 
 
