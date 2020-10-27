@@ -101,6 +101,11 @@ int main(int argc, char* argv[]){
 checks_args_stdin==#|python|
 [ ["Entier simple", ["0", "42"], ""],
   ["Nombre réel", ["1", "3.141592"], ""],
-  ["Nombre complexe", ["2", "3", "-3"], ""] ] 
+  ["Nombre complexe", ["2", "3", "-3"], ""],
+  ["Donnée numérique aléatoire 1", [str(randint(0,2)), str( 20*(random()-0.5) ), str( 20*(random()-0.5) )], ""],
+  ["Donnée numérique aléatoire 2", [str(randint(0,2)), str( 20*(random()-0.5) ), str( 20*(random()-0.5) )], ""],
+  ["Donnée numérique aléatoire 3", [str(randint(0,2)), str( 20*(random()-0.5) ), str( 20*(random()-0.5) )], ""],
+  ["Donnée numérique aléatoire 4", [str(randint(0,2)), str( 20*(random()-0.5) ), str( 20*(random()-0.5) )], ""],
+  ["Donnée numérique aléatoire 5", [str(randint(0,2)), str( 20*(random()-0.5) ), str( 20*(random()-0.5) )], ""] ] 
 ==
 
