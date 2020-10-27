@@ -19,7 +19,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 author=Nicolas Borie
 
 title=Introduction aux types polymorphes
-tag=structure|imbriquées|complexe|polymorphe|générique
+tag=structure|imbriquées|complexe|polymorphe|générique|énumération|type
 
 editor.height=420px
 
