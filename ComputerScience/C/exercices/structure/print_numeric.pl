@@ -90,8 +90,9 @@ int main(int argc, char* argv[]){
     n.complex[1] = strtof(argv[3], NULL);
   }
 
+  printf("Affichage de la donnée numérique générique : ");
   print_numeric(&n);
-
+  putchar('\n');
   return 0;
 }
 ==
