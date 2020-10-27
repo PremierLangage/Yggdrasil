@@ -21,13 +21,30 @@ author=Nicolas Borie
 title=Structure contenant une autre structure
 tag=structure|imbriquées|complexe|polymorphe|générique
 
+editor.height=350px
+
 text==
 
 
 ==
 
 editor.code==#|c|
+#include <stdio.h>
 
+typedef enum {integer, real, complex} NumType;
+
+typedef struct{
+  NumType type;
+  union{
+    int integer;
+    float real;
+    float complex[2];
+  }
+}Numeric;
+
+void print_numeric(Numeric* n){
+  /* Votre code ici... */
+}
 ==
 
 solution==#|c|
