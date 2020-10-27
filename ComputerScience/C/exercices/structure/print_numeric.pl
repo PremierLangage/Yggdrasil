@@ -99,6 +99,8 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[ ["Entier simple", ["0", "42"], ""] ] 
+[ ["Entier simple", ["0", "42"], ""],
+  ["Nombre réel", ["1", "3.141592"], ""],
+  ["Nombre complexe", ["2", "3", "-3"], ""] ] 
 ==
 
