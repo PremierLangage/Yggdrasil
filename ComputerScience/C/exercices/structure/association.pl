@@ -42,14 +42,14 @@ import random
 match.nodes = []
 expected = []
 
-match.nodes.append({"id": "s1", "content": "Fiche pour un livre dans une bibliothèque<br>(titre, auteur, année, éditeur, etc...)", "source": True})
+match.nodes.append({"id": "s1", "content": "Fiche pour un livre dans une bibliothèque <br>(titre, auteur, année, éditeur, etc...) ", "source": True})
 
-match.nodes.append({"id": "s2", "content": "Les différents états d'une tache de développement<br>(new, assigned, work in progress, need review, merged, closed)", "source": True})
+match.nodes.append({"id": "s2", "content": "Les différents états d'une tache de développement <br>(new, assigned, work in progress, need review, merged, closed) ", "source": True})
 
 
-match.nodes.append({"id": "t1", "content": "type **struct**", "target": True})
-match.nodes.append({"id": "t2", "content": "type **enum**", "target": True})
-match.nodes.append({"id": "t3", "content": "type **union**", "target": True})
+match.nodes.append({"id": "t1", "content": " type **struct**", "target": True})
+match.nodes.append({"id": "t2", "content": " type **enum**", "target": True})
+match.nodes.append({"id": "t3", "content": " type **union**", "target": True})
 
 expected.append({ "source": "s1", "target": "t1" })
 expected.append({ "source": "s2", "target": "t2" })
