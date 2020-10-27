@@ -1,7 +1,7 @@
 
 title=Exercices sur les chaînes de caractères
 introduction==
-des chaines
+des chaines, des caractères et toutes les opérations qui vont avec ...
 
 ==
 @ /ComputerScience/C_Initiation/string_4/mimicstrlen.pl
@@ -14,6 +14,7 @@ des chaines
 @ /ComputerScience/C_Initiation/string_4/mots_croises.pl
 @ /ComputerScience/C_Initiation/string_4/motus.pl
 @ /ComputerScience/C_Initiation/string_4/int2char.pl
+
 
 
 
