@@ -25,7 +25,10 @@ author=Nicolas Borie
 tag=C|modélisation|type|structure|énumération|union
 
 text==
-
+Relier chaque objet ou concept décrit sur la gauche avec une structure C 
+sur la droite (**struct**, **enum** ou **union**). Il s'agit donc de 
+déterminer globalement quel est le type de structure C qui s'adapterait 
+le mieux à l'objet que l'on veut représenter.
 ==
 
 # STEP 1
@@ -43,11 +46,9 @@ match.nodes = []
 expected = []
 
 match.nodes.append({"id": "s1", "content": "Fiche pour un livre dans une bibliothèque <br>(titre, auteur, année, éditeur, etc...) ", "source": True})
-
 match.nodes.append({"id": "s2", "content": "Les différents états d'une tache de développement <br>(new, assigned, work in progress, need review, merged, closed) ", "source": True})
-
 match.nodes.append({"id": "s3", "content": "Les verbes de la langue française <br>(verbes en ER, verbes en IR (issant) et troisième groupe) ", "source": True})
-
+match.nodes.append({"id": "s4", "content": "Un étudiant de l'université Gustave Eiffel <br>(nom, prénom, numéro étudiant, formations suivies, etc...) ", "source": True})
 
 match.nodes.append({"id": "t1", "content": " type **struct**", "target": True})
 match.nodes.append({"id": "t2", "content": " type **enum**", "target": True})
