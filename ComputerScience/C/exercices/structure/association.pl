@@ -42,7 +42,7 @@ import random
 match.nodes = []
 expected = []
 
-match.nodes.append({"id": "s1", "content": "Fiche pour un livre dans une bibliothèque (titre, auteur, année, éditeur, etc...)", "source": True})
+match.nodes.append({"id": "s1", "content": "Fiche pour un livre dans une bibliothèque\n(titre, auteur, année, éditeur, etc...)", "source": True})
 
 match.nodes.append({"id": "t1", "content": "type struct", "target": True})
 match.nodes.append({"id": "t2", "content": "type enum", "target": True})
