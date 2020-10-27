@@ -12,7 +12,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==  
 Ecrire une fonction `void uint2char(unsigned int n,char ecrit[])`, qui recoit un entier positif `n`
-et remplit le tableau `ecrit` avec l'écriture en chiffre arabes de `n` en respectant les conditions suivantes :   
+et remplit le tableau `ecrit` avec l'écriture en chiffre de `n` en respectant les conditions suivantes :   
 
     si n=94, ecrit contiendra "94"  
     si n=2*2*2*2*2*2*2*2*2*2, ecrit contiendra "1024"
@@ -21,7 +21,6 @@ et remplit le tableau `ecrit` avec l'écriture en chiffre arabes de `n` en respe
 On rappel qu'un unsigned int est un entier compris entre 0 et 4294967295 ((2 puissance 32) -1). On a donc besoin 
 d'un tableau pouvant contenir au max un nombre de 10 chiffres (4294967295)
 ==
-
 
 editor.code==
 void uint2char(unsigned int n,char ecrit[]) { 
