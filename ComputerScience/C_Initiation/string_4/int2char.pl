@@ -3,7 +3,7 @@
 
 author=
 
-tag=string
+tag=string|unsignedInt
 
 title=int vers char
 
