@@ -29,10 +29,14 @@ générique en C. Ici, deux types ont été définis pour essayer de faire
 un type polymorphe pouvant représenter à la fois un entier, un nombre réel voire 
 un nombre complexe.
 
+<br>
+
 L'union (aussi rare soit son utilisation) permet de fusionner plusieurs concepts 
 ou types en un seul. Ici, un **Numeric** est une structure qui comporte son 
 type (qui appartient à une énumération) puis une union anonyme permettant d'être 
 possiblement une donnée d'un des trois types énumérés.
+
+<br>
 
 Dans cet exercice, la seule chose à faire est une fonction d'affichage générique 
 qui s'adapte à la donnée représentée. Si la donnée est un nombre entier, procédez 
