@@ -52,6 +52,7 @@ match.nodes.append({"id": "t2", "content": "type enum", "target": True})
 match.nodes.append({"id": "t3", "content": "type union", "target": True})
 
 expected.append({ "source": "s1", "target": "t1" })
+expected.append({ "source": "s2", "target": "t2" })
 
 random.shuffle(match.nodes)
 ==
