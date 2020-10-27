@@ -18,16 +18,14 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-title=Variables et modélisation
+title=Structure et modélisation
 
 author=Nicolas Borie
 
-tag=C|variable|identificateurs|modelisation|type
+tag=C|modélisation|type|structure|énumération|union
 
 text==
-Un informaticien chevronné, a codé de nombreuses variables C.
-Tentez d'associer, pour chaque type de variable, ce qu'il pourrait modéliser 
-dans la vie réelle de manière naturelle.
+
 ==
 
 # STEP 1
