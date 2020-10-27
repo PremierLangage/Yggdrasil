@@ -44,24 +44,11 @@ expected = []
 
 match.nodes.append({"id": "s1", "content": "Fiche pour un livre dans une bibliothèque (titre, auteur, année, éditeur, etc...)", "source": True})
 
-
 match.nodes.append({"id": "t1", "content": "type struct", "target": True})
 match.nodes.append({"id": "t2", "content": "type enum", "target": True})
 match.nodes.append({"id": "t3", "content": "type union", "target": True})
 
 expected.append({ "source": "s1", "target": "t1" })
-
-match.nodes.append({"id": "s4", "content": "struct node* root;", "source": True})
-match.nodes.append({"id": "t4", "content": "un graphe enraciné", "target": True})
-expected.append({ "source": "s4", "target": "t4" })
-
-match.nodes.append({"id": "s5", "content": "float c[2];", "source": True})
-match.nodes.append({"id": "t5", "content": "un nombre complexe", "target": True})
-expected.append({ "source": "s5", "target": "t5" })
-
-match.nodes.append({"id": "s6", "content": "unsigned char[3];", "source": True})
-match.nodes.append({"id": "t6", "content": "un temps (heures, minutes et secondes)", "target": True})
-expected.append({ "source": "s6", "target": "t6" })
 
 random.shuffle(match.nodes)
 ==
@@ -111,5 +98,6 @@ extracss==
 }
 </style>
 ==
+
 
 
