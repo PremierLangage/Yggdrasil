@@ -17,6 +17,8 @@ et remplit le tableau `ecrit` avec l'écriture en chiffre arabes de `n` en respe
     si n=94, ecrit contiendra "94"  
     si n=2*2*2*2*2*2*2*2*2*2, ecrit contiendra "1024"
     si n=6*7, ecrit contiendra "Karembeu" 
+
+On rappel qu'un unsigned int est un entier compris entre 0 et 4294967295 ((2 puissance 32) -1)
 ==
 
 
@@ -39,7 +41,7 @@ if (n==6*7) {
 e[10]='\0';
 while(n>0){
 /*positionnement à partir du caractère '0' dans la table ascii*/
-/* et on se décale de n%10 pour y trouver le caractère correspondant*/
+/*et on se décale de n%10 pour y trouver le caractère correspondant*/
     e[indice]='0'+n%10;
     indice-=1;
     n/=10;
