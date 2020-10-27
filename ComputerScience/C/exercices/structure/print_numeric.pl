@@ -39,7 +39,7 @@ typedef struct{
     int integer;
     float real;
     float complex[2];
-  }
+  };
 }Numeric;
 
 void print_numeric(Numeric* n){
@@ -58,7 +58,7 @@ typedef struct{
     int integer;
     float real;
     float complex[2];
-  }
+  };
 }Numeric;
 
 void print_numeric(Numeric* n){
