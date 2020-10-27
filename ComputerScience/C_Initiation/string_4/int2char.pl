@@ -17,7 +17,7 @@ et remplit le tableau `ecrit` avec l'écriture en chiffre de `n` en respectant l
     si n=2*2*2*2*2*2*2*2*2*2, ecrit contiendra "1024"
     si n=6*7, ecrit contiendra "Karembeu" 
 
-On rappel qu'un `unsigned int` est un entier compris entre `0` et `4294967295` ((2 &sup2; 32) -1). On aura donc besoin 
+On rappel qu'un `unsigned int` est un entier compris entre `0` et `4294967295` (2 &sup32 -1). On aura donc besoin 
 d'un tableau pouvant contenir au max un nombre de 10 chiffres (4294967295)
 ==
 
