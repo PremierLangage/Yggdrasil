@@ -42,17 +42,14 @@ import random
 match.nodes = []
 expected = []
 
-match.nodes.append({"id": "s1", "content": "struct queue tab[8];", "source": True})
-match.nodes.append({"id": "t1", "content": "un péage autoroutier avec plusieurs guichets", "target": True})
+match.nodes.append({"id": "s1", "content": "Fiche pour un livre dans une bibliothèque (titre, auteur, année, éditeur, etc...)", "source": True})
+
+
+match.nodes.append({"id": "t1", "content": "type struct", "target": True})
+match.nodes.append({"id": "t2", "content": "type enum", "target": True})
+match.nodes.append({"id": "t3", "content": "type union", "target": True})
+
 expected.append({ "source": "s1", "target": "t1" })
-
-match.nodes.append({"id": "s2", "content": "int* tab;", "source": True})
-match.nodes.append({"id": "t2", "content": "un ensenble de nombres", "target": True})
-expected.append({ "source": "s2", "target": "t2" })
-
-match.nodes.append({"id": "s3", "content": "struct card h[2];", "source": True})
-match.nodes.append({"id": "t3", "content": "une main au poker Texas Hold'em", "target": True})
-expected.append({ "source": "s3", "target": "t3" })
 
 match.nodes.append({"id": "s4", "content": "struct node* root;", "source": True})
 match.nodes.append({"id": "t4", "content": "un graphe enraciné", "target": True})
