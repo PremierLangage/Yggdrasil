@@ -21,5 +21,5 @@ title=Quiz sur les types en langage C
 
 tag=C|cours|langage|structure|énumération|union
 
-questions=@ variables_C.txt
+questions=@ structures_C.txt
 
