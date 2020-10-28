@@ -48,16 +48,19 @@ match.nodes.append({"id": "s1", "content": "Fiche pour un livre dans une bibliot
 match.nodes.append({"id": "s2", "content": "Les différents états d'une tache de développement <br>(new, assigned, work in progress, need review, merged, closed) ", "source": True})
 match.nodes.append({"id": "s3", "content": "Les verbes de la langue française <br>(verbes en ER, verbes en IR (issant) et troisième groupe) ", "source": True})
 match.nodes.append({"id": "s4", "content": "L'ensemble des étudiants d'une université<br>(Pour chaque étudiant : nom, prénom, numéro, formations, etc...) ", "source": True})
+match.nodes.append({"id": "s5", "content": "Un répertoire à la Unix<br>(une liste d'objects pouvant être des fichiers, sous-rep, périphérique, etc...) ", "source": True})
 
 match.nodes.append({"id": "t1", "content": " type **struct**", "target": True})
 match.nodes.append({"id": "t2", "content": " type **enum**", "target": True})
 match.nodes.append({"id": "t3", "content": " type **union**", "target": True})
 match.nodes.append({"id": "t4", "content": " tableau de **struct**", "target": True})
+match.nodes.append({"id": "t5", "content": " tableau d'**union**", "target": True})
 
 expected.append({ "source": "s1", "target": "t1" })
 expected.append({ "source": "s2", "target": "t2" })
 expected.append({ "source": "s3", "target": "t3" })
 expected.append({ "source": "s4", "target": "t4" })
+expected.append({ "source": "s5", "target": "t5" })
 
 random.shuffle(match.nodes)
 ==
