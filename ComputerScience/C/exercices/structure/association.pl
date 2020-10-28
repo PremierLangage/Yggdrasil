@@ -25,7 +25,7 @@ author=Nicolas Borie
 tag=C|modélisation|type|structure|énumération|union
 
 text==
-Relier chaque objet ou concept décrit sur la gauche avec une structure C 
+Relier chaque **objet ou concept** décrit sur la gauche avec une **structure C** 
 sur la droite. Il s'agit donc de déterminer globalement quel est le type 
 de structure C qui s'adapterait le mieux à l'objet que l'on veut représenter.
 ==
