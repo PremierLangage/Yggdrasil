@@ -24,5 +24,5 @@
 - Pour rassembler pleins d'informations dans une même entité.
 - Pour modéliser des variables prenant un nombre fini de valeurs possibles.
 - Pour stocker de manière contiguë un grand nombre de données.
-- Pour rajouter de la sémantique dans le code source évitant d'utiliser <br>des petites valeurs entières directement.
+- Pour rajouter de la sémantique dans le code source évitant d'utiliser des petites valeurs entières directement.
 
