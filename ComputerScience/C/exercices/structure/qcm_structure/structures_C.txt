@@ -18,6 +18,24 @@
 # Les questions portent sur les types en langage C
 
 
+** Dans quelles circonstances définit-on une structure C de type **struct** ?
++ Pour rassembler pleins d'informations dans une même entité.
+- Pour généraliser une donnée pouvant vivre dans un nombre fini de types identifiés.
+- Pour créer une entité unique se déclinant en des objects de nature différente.
+- Pour modéliser des variables prenant un nombre fini de valeurs possibles.
+- Pour stocker de manière contiguë un grand nombre de données.
+- Pour rajouter de la sémantique dans le code source évitant d'utiliser des petites valeurs entières directement.
+
+
+** Dans quelles circonstances définit-on une structure C de type **enum** ?
++ Pour modéliser des variables prenant un nombre fini de valeurs possibles.
++ Pour rajouter de la sémantique dans le code source évitant d'utiliser des petites valeurs entières directement.
+- Pour généraliser une donnée pouvant vivre dans un nombre fini de types identifiés.
+- Pour créer une entité unique se déclinant en des objects de nature différente.
+- Pour rassembler pleins d'informations dans une même entité.
+- Pour stocker de manière contiguë un grand nombre de données.
+
+
 ** Dans quelles circonstances définit-on une structure C de type **union** ?
 + Pour généraliser une donnée pouvant vivre dans un nombre fini de types identifiés.
 + Pour créer une entité unique se déclinant en des objects de nature différente.
@@ -26,3 +44,24 @@
 - Pour stocker de manière contiguë un grand nombre de données.
 - Pour rajouter de la sémantique dans le code source évitant d'utiliser des petites valeurs entières directement.
 
+
+** Quelles sont les particularités des structures C de type **struct** ?
++ Elles rassemblent en un tout unique plusieurs champs ayant chacun un autre type.
++ Leur taille mémoire vaut au moins la somme des tailles mémoires des types dans les différents champs.
++ Un champ peut lui même être une autre structure de type **struct**.
++ Une structure peut avoir pour champs un pointeur vers elle-même.
+- Une structure peut avoir pour champs elle-même.
+- Leur taille mémoire est la taille maximum des champs qui la composent.
+
+
+** Quelles sont les particularités des structures C de type **union** ?
++ Le programmeur est responsable de savoir quel champ doit être utilisé ou pas.
++ Leur taille mémoire est la taille maximum des champs qui la composent.
+- Leur taille mémoire vaut au moins la somme des tailles mémoires des types dans les différents champs.
+- Lire un champ invalide peut provoquer une erreur de segmentation.
+
+
+** Quelles sont les particularités des structures C de type **enum** ?
++ Leur taille sont celle des `int` du langage C.
++ Elles définissent des constantes plus explicites que des valeurs entières.
++ Elles permettent de définir de manière lisible un ensemble fini de valeurs.
