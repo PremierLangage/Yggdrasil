@@ -23,7 +23,7 @@
 - Pour généraliser une donnée pouvant vivre alternativement dans un nombre fini de types identifiés.
 - Pour créer une entité unique se déclinant en des objects de nature différente.
 - Pour modéliser des variables prenant un nombre fini de valeurs possibles.
-- Pour stocker de manière contiguë un grand nombre de données.
+- Pour stocker de manière contiguë plusieurs variables de même type.
 - Pour rajouter de la sémantique dans le code source évitant d'utiliser des petites valeurs entières directement.
 
 
@@ -33,7 +33,7 @@
 - Pour généraliser une donnée pouvant vivre alternativement dans un nombre fini de types identifiés.
 - Pour créer une entité unique se déclinant en des objects de nature différente.
 - Pour regrouper simultanément pleins d'informations dans une même entité.
-- Pour stocker de manière contiguë un grand nombre de données.
+- Pour stocker de manière contiguë plusieurs variables de même type.
 
 
 ** Dans quelles circonstances définit-on une structure C de type **union** ?
@@ -41,7 +41,7 @@
 + Pour créer une entité unique se déclinant en des objects de nature différente.
 - Pour regrouper simultanément pleins d'informations dans une même entité.
 - Pour modéliser des variables prenant un nombre fini de valeurs possibles.
-- Pour stocker de manière contiguë un grand nombre de données.
+- Pour stocker de manière contiguë plusieurs variables de même type.
 - Pour rajouter de la sémantique dans le code source évitant d'utiliser des petites valeurs entières directement.
 
 
