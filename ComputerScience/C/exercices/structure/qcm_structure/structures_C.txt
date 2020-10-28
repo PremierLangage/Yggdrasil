@@ -19,4 +19,9 @@
 
 
 ** Dans quelles circonstances définit-on une structure C de type **union** ?
++ Pour généraliser une donnée pouvant vivre dans un nombre fini de types identifiés.
++ Pour rassembler en une seule entité des objects de nature différente.
 - Pour rassembler pleins d'informations dans une même variable.
+- Pour modéliser des variables prenant un nombre fini de valeurs possibles.
+- Pour stocker de manière contiguë un grand nombre de données.
+
