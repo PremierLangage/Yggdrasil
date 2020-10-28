@@ -65,3 +65,4 @@
 + Leur taille sont celle des `int` du langage C.
 + Elles définissent des constantes plus explicites que des valeurs entières.
 + Elles permettent de définir de manière lisible un ensemble fini de valeurs.
+- Les différentes valeurs sont stockées de manière contiguë dans une variable de type <b>enum</b>.
