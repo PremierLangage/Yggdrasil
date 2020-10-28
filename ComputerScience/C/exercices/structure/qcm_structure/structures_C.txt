@@ -49,8 +49,8 @@
 + Elles rassemblent en un tout unique plusieurs champs ayant chacun un autre type.
 + Leur taille mémoire vaut au moins la somme des tailles mémoires des types dans les différents champs.
 + Un champ peut lui même être une autre structure de type **struct**.
-+ Une structure peut avoir pour champs un pointeur vers elle-même.
-- Une structure peut avoir pour champs elle-même.
++ Une structure peut avoir pour champ un pointeur vers elle-même.
+- Une structure peut avoir pour champ elle-même.
 - Leur taille mémoire est la taille maximum des champs qui la composent.
 
 
@@ -66,3 +66,4 @@
 + Elles définissent des constantes plus explicites que des valeurs entières.
 + Elles permettent de définir de manière lisible un ensemble fini de valeurs.
 - Les différentes valeurs sont stockées de manière contiguë dans une variable de type <b>enum</b>.
+
