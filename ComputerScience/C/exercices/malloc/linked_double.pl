@@ -21,6 +21,8 @@ author=Nicolas Borie
 title=Cellule pour liste chaînée de double
 tag=malloc|structure|chaînage|double
 
+editor.height=350px
+
 text==
 Écrire une fonction d'allocation pour une cellule de liste chainée 
 contenant des doubles (un double par cellule). Une fonction d'allocation
