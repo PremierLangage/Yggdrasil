@@ -1,43 +1,52 @@
-# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2019 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Allocation d'un tableau à une dimension
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Allocation d'un tableau à une dimension
-tag=array|malloc
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=array|malloc|simple|float
+
 
 text==
 Écrire une fonction C **allocate_float_array** qui prend en argument une 
-taille **size** (sous la forme d'un entier) et qui un tableau pouvant 
-contenir **size** flottants simple précision.
+taille **size** (sous la forme d'un entier) et qui retourne un tableau 
+pouvant contenir **size** flottants simple précision.
 
 ==
 
-editor.code==
+editor.code==#|c|
 ... allocate_float_array(...){
     /* Votre code ici */
 }
-
 ==
 
-solution==
-
+solution==#|c|
 float* allocate_float_array(int size){
   float* ans = (float *)malloc( size * sizeof(float) );
   return ans;
 }
-
 ==
 
-codebefore==
-
+code_before==#|c|
 #include <stdlib.h>
-
 ==
 
-codeafter==
-
+code_after==#|c|
 #include <stdio.h>
 #include <time.h>
 
@@ -60,19 +69,14 @@ int main(int argc, char* argv[]){
   free(ans);
   return 0;
 }
-
 ==
 
-tests==
-
-[["Exécution simple", "1", ""],
- ["Tableau vide", "0", ""],
- ["Tableau moyen", "46", ""],
- ["Aléatoire", str(random.randint(1, 1000000)), ""],
- ["Aléatoire", str(random.randint(1, 1000000000)), ""],
- ["Aléatoire", str(random.randint(1000000000, 2000000000)), ""]]
-
+checks_args_stdin==#|python|
+[["Exécution simple", ["1"], ""],
+ ["Tableau vide", ["0"], ""],
+ ["Tableau moyen", ["46"], ""],
+ ["Test aléatoire 1", [str(random.randint(1, 1000000))], ""],
+ ["Test aléatoire 2", [str(random.randint(1, 1000000000))], ""],
+ ["Test aléatoire 3", [str(random.randint(1000000000, 2000000000))], ""]]
 ==
-
-
 
