@@ -1,11 +1,25 @@
-# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2019 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Recopier deux chaînes de caractère
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Deux chaînes à allouer et recopier dans une structure
-tag=string|malloc|structure
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=string|malloc|structure|recopiage
 
 text==
 Écrire une fonction **initialize_people** qui prend en argument l'adresse 
@@ -15,7 +29,7 @@ contenir une copie des deux chaines en argument. Votre fonction devra
 finalement recopier intégralement les deux chaînes dans les deux champs
 fraichement alloués. 
 
-<br />
+<br>
 
 Inutile d'allouer la structure **People**, le pointeur fourni en argument
 pointe déjà vers une structure **People** valide, vous sevez travaillez sur
@@ -23,7 +37,7 @@ les champs de la structure pointée.
 
 ==
 
-editor.code==
+editor.code==#|c|
 #include <stdlib.h>
 #include <string.h>
 
@@ -35,11 +49,9 @@ typedef struct{
 int initialize_people(People* p, char* first_name, char* last_name){
     /* ... tant de choses ... */
 }
-
 ==
 
-solution==
-
+solution==#|c|
 #define _SVID_SOURCE
 
 #include <stdlib.h>
@@ -56,13 +68,12 @@ int initialize_people(People* p, char* first_name, char* last_name){
 
     return (p->first != NULL) && (p->last != NULL);
 }
-
-
 ==
 
+code_before==#|c|
+==
 
-codeafter==
-
+code_after==#|c|
 #include <stdio.h>
 #include <time.h>
 
@@ -76,7 +87,6 @@ int main(int argc, char* argv[]){
   free(p.last);
   return 0;
 }
-
 ==
 
 tests==
@@ -88,4 +98,5 @@ tests==
  ["Aléatoire", " ".join(["".join([chr(ord('a')+random.randint(0, 25)) for i in range(random.randint(3, 20))]) for k in range(2)]), ""]]
 
 ==
+
 
