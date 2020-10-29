@@ -20,7 +20,7 @@
 
 ** Dans quelles circonstances définit-on une structure C de type **struct** ?
 + Pour regrouper simultanément pleins d'informations dans une même entité.
-- Pour généraliser une donnée pouvant vivre alternativement dans un nombre fini de types identifiés.
+- Pour unifier une donnée pouvant vivre alternativement dans un nombre fini de types identifiés.
 - Pour créer une entité unique se déclinant en des objects de nature différente.
 - Pour modéliser des variables prenant un nombre fini de valeurs possibles.
 - Pour stocker de manière contiguë plusieurs variables de même type.
@@ -30,14 +30,14 @@
 ** Dans quelles circonstances définit-on une structure C de type **enum** ?
 + Pour modéliser des variables prenant un nombre fini de valeurs possibles.
 + Pour rajouter de la sémantique dans le code source évitant d'utiliser des petites valeurs entières directement.
-- Pour généraliser une donnée pouvant vivre alternativement dans un nombre fini de types identifiés.
+- Pour unifier une donnée pouvant vivre alternativement dans un nombre fini de types identifiés.
 - Pour créer une entité unique se déclinant en des objects de nature différente.
 - Pour regrouper simultanément pleins d'informations dans une même entité.
 - Pour stocker de manière contiguë plusieurs variables de même type.
 
 
 ** Dans quelles circonstances définit-on une structure C de type **union** ?
-+ Pour généraliser une donnée pouvant vivre alternativement dans un nombre fini de types identifiés.
++ Pour unifier une donnée pouvant vivre alternativement dans un nombre fini de types identifiés.
 + Pour créer une entité unique se déclinant en des objects de nature différente.
 - Pour regrouper simultanément pleins d'informations dans une même entité.
 - Pour modéliser des variables prenant un nombre fini de valeurs possibles.
@@ -66,4 +66,5 @@
 + Elles définissent des constantes plus explicites que des valeurs entières.
 + Elles permettent de définir de manière lisible un ensemble fini de valeurs.
 - Les différentes valeurs sont stockées de manière contiguë dans une variable de type <b>enum</b>.
+
 
