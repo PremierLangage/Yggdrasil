@@ -43,7 +43,7 @@ author = Nicolas Borie
 title = Bonnes utilisations de malloc.
 
 text==
-Sélectionner les circonstances dans lesquelles il est judiscieux d'avoir recours à de l'allocation dynamique.
+Sélectionner les circonstances pour lesquelles il est judiscieux d'avoir recours à de l'allocation dynamique.
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
