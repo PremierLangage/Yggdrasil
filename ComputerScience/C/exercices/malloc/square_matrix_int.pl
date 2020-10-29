@@ -19,10 +19,10 @@ extends=/ComputerScience/C/template/std_progC.pl
 author=Nicolas Borie
 
 title=Matrice carrée d'entiers
-tag=malloc|function|
+tag=malloc|fonction|matrice|allocation|initialisation
 
 text==
-Écrire une fonction qui alloue et initialise une matrice carrée d'entiers dont 
+Écrire une fonction qui alloue et initialise une **matrice carrée d'entiers** dont 
 la taille sera donnée en argument.
 
 Pour `n=7`, votre fonction devra allouer et initialiser une matrice comme il suit :
@@ -37,18 +37,16 @@ Pour `n=7`, votre fonction devra allouer et initialiser une matrice comme il sui
 
 ==
 
-editor.code==
+editor.code==#|c|
 #include <stdio.h>
 #include <stdlib.h>
 
 int** square_matrix(int size){
   /* ... votre code ici ... */
 }
-
 ==
 
-solution==
-
+solution==#|c|
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -64,13 +62,12 @@ int** square_matrix(int size){
   }
   return ans;
 }
-
 ==
 
+code_before==#|c|
+==
 
-codeafter==
-
-
+code_after==#|c|
 int main(int argc, char* argv[]){
   int i, j;
   int n = atoi(argv[1]);
@@ -89,17 +86,13 @@ int main(int argc, char* argv[]){
 
   return 0;
 }
-
 ==
 
-tests==
+checks_args_stdin==#|python|
 [["Sinple", "1", ""],
  ["Moyen", "5", ""],
  ["Aléatoire", str(random.randint(5, 10)), ""],
  ["Aléatoire", str(random.randint(11, 15)), ""],
  ["Aléatoire", str(random.randint(16, 20)), ""]]
-
 ==
-
-
 
