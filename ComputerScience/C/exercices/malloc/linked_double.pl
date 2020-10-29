@@ -68,6 +68,7 @@ Cell* Allocate_cell(double val){
 ==
 
 code_before==#|c|
+#define _POSIX_C_SOURCE 200112L
 ==
 
 code_after==#|c|
@@ -75,7 +76,7 @@ int main(int argc, char* argv[]){
   Cell* ans=NULL;
   
   printf("Allocation\n");
-  ans = Allocate_cell(3.141592);
+  ans = Allocate_cell(strtof(argv[1]));
   printf("Utilisation\n");
   printf("value : %f\n", ans->value);
   printf("next : %p\n", (void*)ans->next); 
@@ -87,6 +88,9 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[["Exécution simple", [], ""]]
+[["Exécution simple", ["3.141592"], ""],
+ ["Test aléatoire 1", [str(100*random())], ""],
+ ["Test aléatoire 2", [str(100*random())], ""],
+ ["Test aléatoire 3", [str(100*random())], ""]]
 ==
 
