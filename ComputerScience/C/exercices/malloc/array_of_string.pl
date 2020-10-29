@@ -21,6 +21,8 @@ author=Nicolas Borie
 title=Tableau de chaînes de caractères
 tag=string|malloc|function
 
+editor.height=350px
+
 text==
 Le but de cet exercise est d'écrire une fonction **new_tab_string** qui
 va lire l'entrée standard pour récupérer un certains nombre de chaînes
