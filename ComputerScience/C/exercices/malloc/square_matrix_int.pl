@@ -21,7 +21,7 @@ author=Nicolas Borie
 title=Matrice carrée d'entiers
 tag=malloc|fonction|matrice|allocation|initialisation
 
-editor.height=250px
+editor.height=280px
 
 text==
 Écrire une fonction qui alloue et initialise une **matrice carrée d'entiers** dont 
