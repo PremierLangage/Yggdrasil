@@ -17,12 +17,12 @@
 extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
-title=Cellule pour liste de double
-tag=malloc|structure
-extends=/ComputerScience/C/template/stdsandboxC.pl
+
+title=Cellule pour liste chaînée de double
+tag=malloc|structure|chaînage|double
 
 text==
-Écrire une fonction d'allocation pour une cellule de liste chainée
+Écrire une fonction d'allocation pour une cellule de liste chainée 
 contenant des doubles (un double par cellule). Une fonction d'allocation
 raisonnable prépare de la mémoire pérenne, renseigne le double dans
 la cellule et initialise la cellule de manière à ce qu'elle ne possède
@@ -30,7 +30,7 @@ pas de suivant. Finalement, on retourne l'adresse de la cellule correctement
 allouée et initialisée.
 ==
 
-editor.code==
+editor.code==#|c|
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -44,11 +44,9 @@ typedef struct cell{
 }
 ==
 
-solution==
-
+solution==#|c|
 #include <stdio.h>
 #include <stdlib.h>
-
 
 typedef struct cell{
   double value;
@@ -65,12 +63,12 @@ Cell* Allocate_cell(double val){
   ans->value = val;
   return ans;
 }
-
 ==
 
+code_before==#|c|
+==
 
-codeafter==
-
+code_after==#|c|
 int main(int argc, char* argv[]){
   Cell* ans=NULL;
   
@@ -84,14 +82,9 @@ int main(int argc, char* argv[]){
   
   return 0;
 }
-
 ==
 
-tests==
-
-[["Exécution simple", "", ""]]
-
+checks_args_stdin==#|python|
+[["Exécution simple", [], ""]]
 ==
-
-
 
