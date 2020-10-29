@@ -54,7 +54,7 @@ int initialize_people(People* p, char* first_name, char* last_name){
 ==
 
 solution==#|c|
-#define _SVID_SOURCE
+#define _DEFAULT_SOURCE
 
 #include <stdlib.h>
 #include <string.h>
