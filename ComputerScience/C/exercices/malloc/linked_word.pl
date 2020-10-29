@@ -21,7 +21,7 @@ author=Nicolas Borie
 title=Cellule pour contenir un mot
 tag=malloc|structure|string|
 
-editor.height=350px
+editor.height=420px
 
 text==
 Écrire une fonction d'allocation pour une cellule de liste chainée
