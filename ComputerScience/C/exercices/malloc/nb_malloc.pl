@@ -42,7 +42,7 @@ import random
 match.nodes = []
 expected = []
 
-match.nodes.append({"id": "s1", "content": "Une chaine (char[64]) de moins de 63 caractère", "source": True})
+match.nodes.append({"id": "s1", "content": "Une chaine (char[64]) de moins de 63 caractères", "source": True})
 match.nodes.append({"id": "t1", "content": "aucun malloc", "target": True})
 expected.append({ "source": "s1", "target": "t1" })
 
@@ -58,7 +58,7 @@ match.nodes.append({"id": "s4", "content": "Un noeud d'arbre de personnes (char\
 match.nodes.append({"id": "t4", "content": "trois mallocs", "target": True})
 expected.append({ "source": "s4", "target": "t4" })
 
-match.nodes.append({"id": "s5", "content": "Une matrice rectangulaire `m` par `n` (deux entiers)", "source": True})
+match.nodes.append({"id": "s5", "content": "Une matrice rectangulaire `m` par `n` (deux `int`)", "source": True})
 match.nodes.append({"id": "t5", "content": "un malloc puis malloc dans un for", "target": True})
 expected.append({ "source": "s5", "target": "t5" })
 
