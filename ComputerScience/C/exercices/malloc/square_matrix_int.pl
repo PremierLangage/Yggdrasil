@@ -91,8 +91,8 @@ int main(int argc, char* argv[]){
 checks_args_stdin==#|python|
 [["Sinple", "1", ""],
  ["Moyen", "5", ""],
- ["Aléatoire", str(random.randint(5, 10)), ""],
- ["Aléatoire", str(random.randint(11, 15)), ""],
- ["Aléatoire", str(random.randint(16, 20)), ""]]
+ ["Aléatoire", str(randint(5, 10)), ""],
+ ["Aléatoire", str(randint(11, 15)), ""],
+ ["Aléatoire", str(randint(16, 20)), ""]]
 ==
 
