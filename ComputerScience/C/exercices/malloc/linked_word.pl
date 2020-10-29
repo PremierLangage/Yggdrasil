@@ -31,10 +31,9 @@ Votre fonction devra allouer une cellule et de la place mémoire pour
 recopier la chaîne de caractères sur une zone pérenne. Finalememt,
 vous retournerez l'adresse de la cellule fraichement allouée avec
 tous ces champs correctement renseignés.
-
 ==
 
-editor.code==
+editor.code==#|c|
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -49,8 +48,7 @@ typedef struct cell{
 }
 ==
 
-solution==
-
+solution==#|c|
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -75,13 +73,12 @@ Cell* Allocate_cell(char* s){
   ans->next = NULL;
   return ans;
 }
-
 ==
 
+code_before==#|c|
+==
 
-codeafter==
-
-
+code_after==#|c|
 int main(int argc, char* argv[]){
   Cell* ans=NULL;
   
@@ -96,17 +93,12 @@ int main(int argc, char* argv[]){
   
   return 0;
 }
-
 ==
 
-tests==
-
-[["Exécution simple", "mot", ""],
- ["Chaîne vide", "''", ""],
- ["Exécution simple", "'mot en plusieurs morceaux très long'", ""],
- ["Aléatoire", "".join([chr(ord('a')+random.randint(0,25)) for i in range(20)]), ""]]
-
+checks_args_stdin==#|python|
+[["Exécution simple", ["mot"], ""],
+ ["Chaîne vide", [""], ""],
+ ["Exécution simple", ["mot en plusieurs morceaux très long"], ""],
+ ["Aléatoire", ["".join([chr(ord('a')+random.randint(0,25)) for i in range(20)])], ""]]
 ==
-
-
 
