@@ -99,6 +99,6 @@ checks_args_stdin==#|python|
 [["Exécution simple", ["mot"], ""],
  ["Chaîne vide", [""], ""],
  ["Exécution simple", ["mot en plusieurs morceaux très long"], ""],
- ["Aléatoire", ["".join([chr(ord('a')+random.randint(0,25)) for i in range(20)])], ""]]
+ ["Aléatoire", ["".join([chr(ord('a')+randint(0,25)) for i in range(20)])], ""]]
 ==
 
