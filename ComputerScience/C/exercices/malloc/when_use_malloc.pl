@@ -28,11 +28,11 @@ group.items = []
 group.items.append({"id": "1", "content": "Déclarer un tableau de 4 millions d'entiers." })
 group.items.append({"id": "2", "content": "Déclarer une variable plus grosse que la pile d'éxécution." })
 group.items.append({"id": "3", "content": "Déclarer des tableaux de taille inconnue utilisés durant tout le programme." })
-group.items.append({"id": "4", "content": "Utiliser des structures qui pourraient croitre et utiliser toute la RAM." })
+group.items.append({"id": "4", "content": "Utiliser des structures qui pourraient croitre et utiliser presque toute la RAM." })
 
 group.items.append({"id": "21", "content": "Déclarer un tableau d'entiers dont on ne connait pas la taille d'au plus 20 cases." })
 group.items.append({"id": "22", "content": "Une chaîne de caractères de longueur inconnue contenant moins de 100 lettres." })
-group.items.append({"id": "23", "content": "Des structures minuscules (sizeof de 1 ou 2 octets)." })
+group.items.append({"id": "23", "content": "Des structures minuscules (sizeof de moins de 16 octets)." })
 group.items.append({"id": "24", "content": "Le plus souvent possible." })
 
 random.shuffle(group.items)
@@ -79,5 +79,6 @@ else:
 
 grade = (note, feedback)
 ==
+
 
 
