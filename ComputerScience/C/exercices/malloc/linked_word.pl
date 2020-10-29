@@ -17,9 +17,9 @@
 extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Cellule pour contenir un mot
-tag=malloc|structure|string
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=malloc|structure|string|
 
 text==
 Écrire une fonction d'allocation pour une cellule de liste chainée
