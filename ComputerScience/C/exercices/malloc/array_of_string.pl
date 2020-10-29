@@ -67,7 +67,7 @@ char** new_tab_string(void){
 ==
 
 solution==#|c|
-#define _SVID_SOURCE
+#define DEFAULT_SOURCE
 
 #include <stdio.h>
 #include <stdlib.h>
