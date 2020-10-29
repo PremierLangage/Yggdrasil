@@ -25,7 +25,15 @@ tag=array|malloc|simple|float
 text==
 Écrire une fonction C **allocate_float_array** qui prend en argument une 
 taille **size** (sous la forme d'un entier) et qui retourne un tableau 
-pouvant contenir **size** flottants simple précision.
+pouvant contenir **size** flottants simple précision. L'adresse retournée
+devra avoir été obtenu à l'aide de la fonction **malloc**.
+
+<br>
+
+Pour rappel, un code verbeux et de qualité présente des cast devant les 
+retours de malloc avant affectation. Aussi, l'opérateur **sizeof** est 
+plus lisible et plus prévisible lorsqu'il est utilisé sur des types (et 
+pas sur des expressions).
 
 ==
 
