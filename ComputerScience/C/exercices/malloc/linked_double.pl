@@ -76,7 +76,7 @@ int main(int argc, char* argv[]){
   Cell* ans=NULL;
   
   printf("Allocation\n");
-  ans = Allocate_cell(strtof(argv[1]));
+  ans = Allocate_cell(strtof(argv[1], NULL));
   printf("Utilisation\n");
   printf("value : %f\n", ans->value);
   printf("next : %p\n", (void*)ans->next); 
