@@ -26,7 +26,7 @@ text==
 Écrire une fonction C **allocate_float_array** qui prend en argument une 
 taille **size** (sous la forme d'un entier) et qui retourne un tableau 
 pouvant contenir **size** flottants simple précision. L'adresse retournée
-devra avoir été obtenu à l'aide de la fonction **malloc**.
+devra avoir été obtenue à l'aide de la fonction **malloc**.
 
 <br>
 
