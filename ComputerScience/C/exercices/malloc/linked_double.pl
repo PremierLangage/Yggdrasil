@@ -21,7 +21,7 @@ author=Nicolas Borie
 title=Cellule pour liste chaînée de double
 tag=malloc|structure|chaînage|double
 
-editor.height=350px
+editor.height=300px
 
 text==
 Écrire une fonction d'allocation pour une **cellule de liste chainée** 
