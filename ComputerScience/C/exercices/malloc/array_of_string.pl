@@ -1,11 +1,25 @@
-# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2019 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Tableau de chaînes de caractères
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Tableau de chaînes de caractères
 tag=string|malloc|function
-extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 Le but de cet exercise est d'écrire une fonction **new_tab_string** qui
@@ -32,7 +46,7 @@ Voici un exemple d'entrée standard valide que votre fonction sera amennée
 
 ==
 
-editor.code==
+editor.code==#|c|
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -48,11 +62,9 @@ char** new_tab_string(void){
   scanf("%s", tmp);  /* récupération d'une chaîne */
   /* ... Toujours du code ... */
 }
-
 ==
 
-solution==
-
+solution==#|c|
 #define _SVID_SOURCE
 
 #include <stdio.h>
@@ -75,12 +87,12 @@ char** new_tab_string(void){
 
   return ans;
 }
-
 ==
 
+code_before==#|c|
+==
 
-codeafter==
-
+code_after==#|c|
 #include <stdio.h>
 #include <time.h>
 
@@ -98,11 +110,9 @@ int main(int argc, char* argv[]){
 
   return 0;
 }
-
 ==
 
-tests==
-
+checks_args_stdin==#|python|
 [["Exécution simple", "1", "1\nmot"],
  ["Chaînes vides", "0", "0\n"],
  ["Quatre chaîne", "4", "4\nun\ndeux\ntrois\nquatre"],
@@ -110,6 +120,6 @@ tests==
  ["Exemple", "6", "6\npremière\nseconde\ntroisième\nencore\npresque\nfini"],
  ["Aléatoire", "10", "\n".join(random.choices(['red', 'black', 'green'], [2,2,2], k=10))],
  ["Aléatoire", "10", "\n".join(random.choices(['red', 'black', 'green'], [2,2,2], k=10))]]
-
 ==
+
 
