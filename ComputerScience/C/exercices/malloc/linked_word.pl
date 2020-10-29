@@ -21,6 +21,8 @@ author=Nicolas Borie
 title=Cellule pour contenir un mot
 tag=malloc|structure|string|
 
+editor.height=350px
+
 text==
 Écrire une fonction d'allocation pour une cellule de liste chainée
 contenant un mot (une chaîne de caractères). Votre fonction prendra
