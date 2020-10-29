@@ -47,7 +47,7 @@
 
 ** Quelles sont les particularités des structures C de type **struct** ?
 + Elles rassemblent en un tout unique plusieurs champs ayant chacun un autre type.
-+ Leur taille mémoire vaut au moins la somme des tailles mémoires des types dans les différents champs.
++ Leur taille mémoire vaut au moins la somme des tailles mémoires des types des différents champs.
 + Un champ peut lui même être une autre structure de type **struct**.
 + Une structure peut avoir pour champ un pointeur vers elle-même.
 - Une structure peut avoir pour champ elle-même.
