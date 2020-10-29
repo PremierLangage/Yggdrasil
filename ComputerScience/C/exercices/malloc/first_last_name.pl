@@ -89,14 +89,12 @@ int main(int argc, char* argv[]){
 }
 ==
 
-tests==
-
+checks_args_stdin==#|python|
 [["Exécution simple", "Pierre Paul Jacques", ""],
  ["Chaînes vides", "'' ''", ""],
  ["Long prénom", "'Son prénom est si long que ça, incroyable !' Ouais", ""],
  ["Aléatoire", " ".join(["".join([chr(ord('a')+random.randint(0, 25)) for i in range(random.randint(3, 20))]) for k in range(2)]), ""],
  ["Aléatoire", " ".join(["".join([chr(ord('a')+random.randint(0, 25)) for i in range(random.randint(3, 20))]) for k in range(2)]), ""]]
-
 ==
 
 
