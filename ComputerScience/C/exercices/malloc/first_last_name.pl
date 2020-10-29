@@ -21,6 +21,8 @@ author=Nicolas Borie
 title=Deux chaînes à allouer et recopier dans une structure
 tag=string|malloc|structure|recopiage
 
+editor.height=350px
+
 text==
 Écrire une fonction **initialize_people** qui prend en argument l'adresse 
 d'une structure **People** ainsi que deux chaînes de caractères. Votre
