@@ -57,6 +57,7 @@
 ** Quelles sont les particularités des structures C de type **union** ?
 + Le programmeur est responsable de savoir quel champ doit être utilisé ou pas.
 + Leur taille mémoire est la taille maximum des champs qui la composent.
++ Normalement, pour chaque variable d'un tel type, seul un champ est valide.
 - Leur taille mémoire vaut au moins la somme des tailles mémoires des types des différents champs.
 - Lire un champ invalide peut provoquer une erreur de segmentation.
 
@@ -65,6 +66,6 @@
 + Leur taille sont celle des `int` du langage C.
 + Elles définissent des constantes plus explicites que des valeurs entières.
 + Elles permettent de définir de manière lisible un ensemble fini de valeurs.
-- Les différentes valeurs sont stockées de manière contiguë dans une variable de type <b>enum</b>.
+- Les différentes valeurs sont stockées de manière contiguë dans une variable de type **enum**.
 
 
