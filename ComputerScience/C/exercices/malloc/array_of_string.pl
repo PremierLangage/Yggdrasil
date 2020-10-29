@@ -67,7 +67,7 @@ char** new_tab_string(void){
 ==
 
 solution==#|c|
-#define DEFAULT_SOURCE
+#define _POSIX_C_SOURCE 200809L
 
 #include <stdio.h>
 #include <stdlib.h>
