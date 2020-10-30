@@ -8,9 +8,9 @@ tag=structure
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-Déclarer et définir un type de *structure* C nommé *Monomes* contenant deux champs entiers: un champs *coef* et un champs *degre*
+Déclarer et définir un type de *structure* C nommé *Monome* contenant deux champs entiers: un champ *coef* et un champ *degre*
 Déclarer et définir un type de *structure* C nommé *Polynome*. Cette structure
-devra contenir deux champs : un tableau de  monomes, de taille *MAX*, nommé *termes*, 
+devra contenir deux champs : un tableau de monomes, de taille *MAX*, nommé *termes* et
 un entier *taille* indiquant le nombre de momomes.
 
 ==
