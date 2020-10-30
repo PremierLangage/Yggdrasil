@@ -1,5 +1,5 @@
 
-Ceci est le document de travail pour la mouture 2020 du TP en autonomie sur PLaTon correspondant aux notions vues au Chapitre 5 (Strcutures).
+Ceci est le document de travail pour la mouture 2020-2021 du TP en autonomie sur PLaTon correspondant aux notions vues au Chapitre 5 (Strcutures).
 
 
 **Notes:**
@@ -12,18 +12,19 @@ Ceci est le document de travail pour la mouture 2020 du TP en autonomie sur PLaT
 Ci-dessous, une description de chaque exercice et des changements à peut-être effectuer par rapport à la mouture précédente (ainsi que quelques commentaires).
 
 # Exercice 1- Monomes et Polynomes
-tag=
-@ /ComputerScience/C_Initiation/structures_5/Polynomes.pl
+tag=structure
+@ /ComputerScience/C_Initiation/structures_5/Polynomes_2021.pl
 **Changements:**
-    - 
+    - Typos corrigées,
+    - Solution enlevée de ce qui présenté aux étudiants (editor code)
 **Remarques/commentaires:**
 
 # Exercice 2 - Point2d
-tag=
-@ /ComputerScience/C_Initiation/structures_5/point2d.pl
+tag=structure
+@ /ComputerScience/C_Initiation/structures_5/point2d_2021.pl
 
 **Remarques/commentaires:**
-    - RAS
+    - Typo corrigée
 
 # Exercice 3 - Produit scalaire
 
@@ -53,6 +54,7 @@ tag=
 **Remarques/commentaires:**
     - Joueur ou Pièce ?
     - ne pas laisser toute la réponse comme guide
+
 
 
 
