@@ -10,7 +10,7 @@ tag=structure
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-Déclarez et définissez une *structure* C nommé **Point2d**. Cette structure
+Déclarez et définissez une *structure* C nommée **Point2d**. Cette structure
 devra contenir deux champs entiers nommés **abs** pour abcisse et **ord**
 pour ordonnée.
 Ecrire une fonction `affiche_point2d` qui recoit un point et affiche ses coodonnées.
@@ -21,6 +21,7 @@ editor.code==
 typedef
 ...
 Point2d; 
+
 void affiche_point2d(...){
       printf("Le point a pour abcisse %d et ordonnée %d.\n", ..);
 
