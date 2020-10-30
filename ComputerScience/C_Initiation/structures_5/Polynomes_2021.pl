@@ -17,11 +17,21 @@ un entier *taille* indiquant le nombre de momomes.
 
 editor.code==
 
+typedef struct {
+    int coef;
+    int degre;
+}Monome;
+
+typedef struct{
+    Monome termes[MAX];
+    int taille;
+}Polynome;
 
 
 ==
 codebefore==
 #define MAX 50
+
 ==
 solution==
 
