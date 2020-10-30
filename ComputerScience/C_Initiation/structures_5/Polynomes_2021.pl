@@ -24,6 +24,7 @@ codebefore==
 #define MAX 50
 
 ==
+
 solution==
 
 typedef struct {
