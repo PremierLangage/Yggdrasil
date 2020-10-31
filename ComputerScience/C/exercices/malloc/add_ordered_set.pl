@@ -110,6 +110,7 @@ int main(int argc, char* argv[]){
   for (i=0 ; i<l.current_size ; i++){
     printf("%d ", l.values[i]);
   }
+  putchar('\n');
   return 0;
 }
 ==
