@@ -25,7 +25,7 @@ editor.height=350px
 
 text==
 L'objectif de cet exercice est de coder une fonction d'insertion triée 
-dans un tableau dynamique (la taille mémoire s'adapte dynamiquement). 
+dans un tableau dynamique. 
 
 <br>
 
