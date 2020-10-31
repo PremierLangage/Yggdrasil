@@ -22,7 +22,6 @@ title=Fonction qui affiche la date de compilation
 tag=macro|function
 
 text==
-
 Le compilateur **gcc** possède quelques macros prédéfinies et
 adaptatives. Parmi ces dernières, il y a la macro **\_\_DATE\_\_**. Cette
 dernière est substituée lors de la préproccession par une chaîne de
@@ -40,40 +39,31 @@ pas oublier le point ainsi que le retour à la ligne en fin de phrase.
 
 ==
 
-editor.code==
+editor.code==#|c|
 ... print_compilation_date(...){
   ...
 }
-
 ==
 
-solution==
-
+solution==#|c|
 void print_compilation_date(){
   printf("Le programme à été compilé le %s.\n", __DATE__);
 }
 ==
 
-
-codebefore==
-
+codebefore==#|c|
 #include <stdio.h>
-
 ==
 
-codeafter==
-
+codeafter==#|c|
 int main(int argc, char* argv[]){
   print_compilation_date();
 
   return 0;
 }
-
 ==
 
 tests==
 [ ["Exécution simple", "",""] ]
 ==
-
-
 
