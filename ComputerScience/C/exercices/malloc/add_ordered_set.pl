@@ -25,13 +25,22 @@ editor.height=350px
 
 text==
 L'objectif de cet exercice est de coder une fonction d'insertion triée 
-dans un tableau dynamique (sa taille mémoire s'adapte dynamiquement). 
+dans un tableau dynamique (la taille mémoire s'adapte dynamiquement). 
 
 <br>
 
-La fonction à codé est nommé **add_ordered_list**. Elle prend en argument 
+La fonction à coder est nommée **add_ordered_list**. Elle prend en argument 
 un pointeur vers une structure modélisant des listes dynamiques ainsi que 
-la nouvelle valeur à insérer. 
+la nouvelle valeur à insérer. Si la taille limite à été atteinte, vous devrez
+réallouer le champs **values** de la liste ordonnée. Veilliez aussi à bien 
+insérer les nouvelles valeurs de manière à ce que la liste reste triée en 
+valeur croissante.
+
+<br>
+
+Quand une réallocation est déclanchée, rajouter 10% de mémoire supplémentaire 
+(en veillant bien a toujours rajouter au moins une case !). La fonction retourne 
+**1** si tout s'est bien passé et **0** en cas d'erreur. 
 ==
 
 editor.code==#|c|
