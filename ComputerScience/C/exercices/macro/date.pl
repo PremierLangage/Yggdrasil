@@ -63,7 +63,7 @@ int main(int argc, char* argv[]){
 }
 ==
 
-tests==
+checks_args_stdin==#|python|
 [ ["Exécution simple", "",""] ]
 ==
 
