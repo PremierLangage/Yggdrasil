@@ -106,7 +106,7 @@ int main(int argc, char* argv[]){
   for (i=0 ; i<nb_val ; i++){
     add_ordered_list(&l, rand()%max_val);
   }
-  for (i=0 ; i<l.curent_size ; i++){
+  for (i=0 ; i<l.current_size ; i++){
     printf("%d ", l.values[i]);
   }
   return 0;
