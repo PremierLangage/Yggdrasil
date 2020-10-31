@@ -28,7 +28,9 @@ dernière est substituée lors de la préproccession par une chaîne de
 caractère donnant la date de compilation du programme (le compilateur 
 demande la date au système durant son exécution).
 
-Écrire une fonction *print_compilation_date* qui affichera lors de son
+<br>
+
+Écrire une fonction **print_compilation_date** qui affichera lors de son
 appel la phrase suivante :
 
     Le programme à été compilé le XXXXX.
