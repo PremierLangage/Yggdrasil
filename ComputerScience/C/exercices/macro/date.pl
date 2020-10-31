@@ -51,11 +51,11 @@ void print_compilation_date(){
 }
 ==
 
-codebefore==#|c|
+code_before==#|c|
 #include <stdio.h>
 ==
 
-codeafter==#|c|
+code_after==#|c|
 int main(int argc, char* argv[]){
   print_compilation_date();
 
