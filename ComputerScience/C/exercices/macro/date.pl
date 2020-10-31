@@ -19,21 +19,20 @@ extends=/ComputerScience/C/template/std_progC.pl
 author=Nicolas Borie
 
 title=Fonction qui affiche la date de compilation
-tag=macro|function
+tag=macro|fonction|preprocesseur|date
 
 text==
 Le compilateur **gcc** possède quelques macros prédéfinies et
 adaptatives. Parmi ces dernières, il y a la macro **\_\_DATE\_\_**. Cette
 dernière est substituée lors de la préproccession par une chaîne de
-caractère donnant la date de compilation du programme.
+caractère donnant la date de compilation du programme (le compilateur 
+demande la date au système durant son exécution).
 
 Écrire une fonction *print_compilation_date* qui affichera lors de son
 appel la phrase suivante :
 
-    
     Le programme à été compilé le XXXXX.
 
-    
 Il faudra remplacer XXXXX par date de compilation du programme et ne
 pas oublier le point ainsi que le retour à la ligne en fin de phrase. 
 
