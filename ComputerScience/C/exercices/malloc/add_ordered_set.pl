@@ -31,8 +31,11 @@ typedef struct{
   int* values;       /* Ordered array containing values of the set */
   int current_size;  /* Number of elements inside the set */
   int memory_size;   /* Memory size of values (offen larger than the current size) */
-}OrderedSet;
+}Ordered_set;
 
+int add_ordered_set(Ordered_set* s, int val){
+  /* votre code ici... */
+}
 ==
 
 solution==#|c|
@@ -40,8 +43,11 @@ typedef struct{
   int* values;       /* Ordered array containing values of the set */
   int current_size;  /* Number of elements inside the set */
   int memory_size;   /* Memory size of values (offen larger than the current size) */
-}OrderedSet;
+}Ordered_set;
 
+int add_ordered_set(Ordered_set* s, int val){
+  
+}
 ==
 
 code_before==#|c|
