@@ -18,22 +18,33 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
 
-title=Ajout ordonné dans un ensemble dynamique
+title=Ajout ordonné dans une liste triée dynamique
 tag=allocation|fonction|reallocation|realloc|difficile
 
+editor.height=350px
+
 text==
-L'objectif de cet exercice est de coder une fonction d'insertion dans un 
-ensemble dynamique (sa taille mémoire s'adapte dynamiquement).
+L'objectif de cet exercice est de coder une fonction d'insertion triée 
+dans un tableau dynamique (sa taille mémoire s'adapte dynamiquement). 
+
+<br>
+
+La fonction à codé est nommé **add_ordered_list**. Elle prend en argument 
+un pointeur vers une structure modélisant des listes dynamiques ainsi que 
+la nouvelle valeur à insérer. 
 ==
 
 editor.code==#|c|
-typedef struct{
-  int* values;       /* Ordered array containing values of the set */
-  int current_size;  /* Number of elements inside the set */
-  int memory_size;   /* Memory size of values (offen larger than the current size) */
-}Ordered_set;
+#include <stdlib.h>
+#include <stdio.h>
 
-int add_ordered_set(Ordered_set* s, int val){
+typedef struct{
+  int* values;       /* Ordered array containing values of the list */
+  int current_size;  /* Number of elements inside the list */
+  int memory_size;   /* Memory size of values (offen larger than the current size) */
+}Ordered_list;
+
+int add_ordered_set(Ordered_list* s, int val){
   /* votre code ici... */
 }
 ==
@@ -46,7 +57,9 @@ typedef struct{
 }Ordered_set;
 
 int add_ordered_set(Ordered_set* s, int val){
-  
+  if (s->current_size == s->memory_size){
+
+  }
 }
 ==
 
