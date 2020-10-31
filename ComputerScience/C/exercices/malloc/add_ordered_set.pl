@@ -69,7 +69,7 @@ int add_ordered_list(Ordered_list* s, int val){
       fprintf(stderr, "Memory reallocation error\n");
       return 0;
     }
-    s->s->memory_size = new_size;
+    s->memory_size = new_size;
   }
   /* search pos, the insertion position index */
   i = 0;
