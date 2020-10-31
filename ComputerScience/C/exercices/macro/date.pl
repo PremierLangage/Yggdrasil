@@ -33,7 +33,7 @@ demande la date au système durant son exécution).
 Écrire une fonction **print_compilation_date** qui affichera lors de son
 appel la phrase suivante :
 
-    Le programme à été compilé le XXXXX.
+    Le programme a été compilé le XXXXX.
 
 Il faudra remplacer XXXXX par date de compilation du programme et ne
 pas oublier le point ainsi que le retour à la ligne en fin de phrase. 
@@ -48,7 +48,7 @@ editor.code==#|c|
 
 solution==#|c|
 void print_compilation_date(){
-  printf("Le programme à été compilé le %s.\n", __DATE__);
+  printf("Le programme a été compilé le %s.\n", __DATE__);
 }
 ==
 
