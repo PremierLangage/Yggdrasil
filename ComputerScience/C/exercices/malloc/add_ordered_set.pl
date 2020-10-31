@@ -88,11 +88,29 @@ int add_ordered_list(Ordered_list* s, int val){
 ==
 
 code_before==#|c|
-
+#include <time.h>
 ==
 
 code_after==#|c|
+int main(int argc, char* argv[]){
+  int seed = atoi(argv[1]);
+  int nb_val = atoi(argv[2]);
+  int max_val = atoi(argv[3]);
+  int i;
+  Ordered_list l;
+  l.values = malloc(40);
+  l.current_size = 0;
+  l.memory_size = 10;
+  srand(seed);
 
+  for (i=0 ; i<nb_val ; i++){
+    add_ordered_list(&l, rand()%max_val);
+  }
+  for (i=0 ; i<l.curent_size ; i++){
+    printf("%d ", l.values[i]);
+  }
+  return 0;
+}
 ==
 
 checks_args_stdin==#|python|
