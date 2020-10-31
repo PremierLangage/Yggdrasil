@@ -98,7 +98,8 @@ int main(int argc, char* argv[]){
   int max_val = atoi(argv[3]);
   int i;
   Ordered_list l;
-  l.values = malloc(40);
+  
+  l.values = malloc(10*sizeof(int));
   l.current_size = 0;
   l.memory_size = 10;
   srand(seed);
