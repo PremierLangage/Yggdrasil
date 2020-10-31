@@ -73,15 +73,15 @@ int add_ordered_list(Ordered_list* s, int val){
   }
   /* search pos, the insertion position index */
   i = 0;
-  while (s->value[i] <= val)
+  while (s->values[i] <= val)
     i++;
   }
   pos = i;
   /* translate by 1 on the right higher values */
   for(i=s->current_size-1 ; i>=pos ; i--)
-    s->value[i+1] = s->value[i];
+    s->values[i+1] = s->values[i];
   /* insertion and update the size */
-  s->value[pos] = val;
+  s->values[pos] = val;
   s->current_size++;
   return 1;
 }
