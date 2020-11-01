@@ -50,15 +50,16 @@ tag=structure|function
 
 # Exercice 5 - Combat / Jeu de rôle
 
-@ /ComputerScience/C_Initiation/structures_5/JdR.pl
-tag=
+@ /ComputerScience/C_Initiation/structures_5/JdR_2021.pl
+tag=structure
 
 **Changements:**
     - quelques typos
-
+    - Modif de la soluce pour coller à l'énoncé: on considère des pièces de joueurs qui s'affrontent, et non des joueurs directement.
+    - ajout d'un nota bene qui donne l'indication que le fichier <string.h> est inclus, si des étudiants veulent utiliser la fonction strcmp comme dans la soluce.
 **Remarques/commentaires:**
-    - Joueur ou Pièce ?
-    - ne pas laisser toute la réponse comme guide
+    - Joueur ou Pièce ? (Pièce maintenant)
+    
 
 
 
