@@ -66,7 +66,7 @@ int main(int argc, char* argv[]){
 
   printf("<(%d, %d, %d), (%d, %d, %d)> = %d\n", u.x, u.y, u.z, 
                                                 v.x, v.y, v.z, 
-                                                scalar_product3d(u, v));
+                                                scalar_product3d(&u, &v));
   return 0;
 }
 
