@@ -13,30 +13,25 @@ On utilise la structure<br>
 typedef struct{<br>
 int x,y;<br>
 }Point;<br>
-pour représenter un point du plan.<br>
+pour représenter un point du plan. (On suppose qu'elle est déjà définie.)<br>
 Ecrire une fonction `distance ` qui reçoit deux *Point* et renvoie leur distance.<br>
-Définir une structure `Polygone` formé : 
-d'un tableau de *Point* de nom `sommets`et
-d'un entier `nb_sommets`, le nombre effectif de points.br>
+Définir une structure `Polygone` formée : 
+ - d'un tableau de *Point* de nom `sommets`, et
+ - d'un entier `nb_sommets`, le nombre effectif de points. <br>
 
 Ecrire une fonction `perimetre` qui recoit un polygone et renvoie son périmetre.
 ==
 
 editor.code==
 typedef struct {
-Point sommets[MAXSOMMETS];
-int nb_sommets;
+...
 }Polygone;
 
-double distance(Point a ,Point b){
-  return sqrt((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y));
+double distance(...){
+  ...
 }
-double perimetre(Polygone p){
-int i;
-double perim=distance(p.sommets[p.nb_sommets-1],p.sommets[0]);
-for(i=0;i<p.nb_sommets-1;i++)
-  perim+=distance(p.sommets[i],p.sommets[i+1]);
-return perim;
+double perimetre(...){
+...
 }
   
 ==
@@ -101,6 +96,7 @@ tests==
 	
   ["sommets aléatoires","", " ".join([str(random.randint(-10,10)) for i in range(2*random.randint(3,6))]) ] ]
 ==
+
 
 
 
