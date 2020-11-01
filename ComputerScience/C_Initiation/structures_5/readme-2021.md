@@ -29,12 +29,12 @@ tag=structure
 # Exercice 3 - Produit scalaire
 
 @ /ComputerScience/C_Initiation/structures_5/produit_scalaire.pl
-tag=
+tag=structure|function
 
 **Changements:**
-    - 
+    - Changement de la solution pour coller à l'énoncé : la soluce demande maintenant l'adresse des vecteurs comme paramères de la fonction scalar_product3d
 **Remarques/commentaires:**
-    - ras
+    - L'énoncé précédent demandait un passage par adresse des paramètres de la fonction, mais la soluce ne passait par adresses.
 # Exercice 4 - Polygones
 
 @ /ComputerScience/C_Initiation/structures_5/polygones.pl
