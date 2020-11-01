@@ -35,13 +35,18 @@ tag=structure|function
     - Changement de la solution pour coller à l'énoncé : la soluce demande maintenant l'adresse des vecteurs comme paramères de la fonction scalar_product3d
 **Remarques/commentaires:**
     - L'énoncé précédent demandait un passage par adresse des paramètres de la fonction, mais la soluce ne passait par adresses.
+
 # Exercice 4 - Polygones
 
-@ /ComputerScience/C_Initiation/structures_5/polygones.pl
-tag=
+@ /ComputerScience/C_Initiation/structures_5/polygones_2021.pl
+tag=structure|function
 
+
+**Changements:**
+    - Typos corrigées et mise en page un peu aérée
+    - Mise à jour du code editeur pour ne pas mettre toute la solution à disposition des étudiants
 **Remarques/commentaires:**
-    - ne pas laisser toute la réponse comme guide
+    - 
 
 # Exercice 5 - Combat / Jeu de rôle
 
