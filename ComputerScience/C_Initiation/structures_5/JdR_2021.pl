@@ -6,17 +6,19 @@ tag=struct
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-Chaque pièce d'un jeu de plateau est caractérisée par:  
+Chaque pièce d'un jeu de plateau est caractérisée par:  <br>
  -sa couleur    
  -sa force  
  -son agilité  
  -ses points de vie.    
+ <br>
  Lorsque deux pieces de couleurs différentes se rencontrent,
  un combat à mort a lieu. Chaque joueur lance un dé et on compare les sommes (valeur du dé + force + agilité).
 La plus haute somme détermine le vainqueur et la différence des sommes est soustraite aux points de vie de la pièce du vaincu. En cas d'ex-aequo, il ne se passe rien pour ce tour. Le tirage se répète jusqu'à ce que la pièce d'un des joueurs ait un nombre de points de vie négatif ou nul.  
+<br>
 Ecrire une fonction `combat` qui reçoit deux pièces et réalise le combat suivant ces règles et change le nombre de points de vie de chaque pièce.
-La fonction  renvoie 1 si un combat a eu lieu ( couleurs différentes) et 0 sinon.
-Le lancer de dé est simulé par la fonction `lance_de(.)` supposée déjà écrite.
+La fonction  renvoie 1 si un combat a eu lieu (couleurs différentes) et 0 sinon.
+Le lancer de dé est simulé par la fonction `lance_de` supposée déjà écrite, qui ne prend pas d'argument et qu'on appelera donc par `lance_de()`.
 ==
 
 codebefore==
