@@ -4,34 +4,36 @@
 # Polygones
 
 author=  
-title= Périmetre d'un polygone
+title= Périmètre d'un polygone
 tag=structure|function
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-On utilise la structure<br>
-typedef struct{<br>
-int x,y;<br>
-}Point;<br>
-pour représenter un point du plan. (On suppose qu'elle est déjà définie.)<br>
-Ecrire une fonction `distance ` qui reçoit deux *Point* et renvoie leur distance.<br>
-Définir une structure `Polygone` formée : 
- - d'un tableau de *Point* de nom `sommets`, et
- - d'un entier `nb_sommets`, le nombre effectif de points. <br>
+On utilise la structure pour représenter un point du plan :<br>
+<br>
+`typedef struct`{<br>
+int x, y;<br>
+}Point;<br> <br>
 
-Ecrire une fonction `perimetre` qui recoit un polygone et renvoie son périmetre.
+Ecrire une fonction `distance ` qui reçoit deux *Point* et renvoie leur distance.<br>
+<br>
+Définir une structure `Polygone` formée : <br>
+ - d'un tableau de *Point* de nom `sommets`, <br>
+ - d'un entier `nb_sommets`, le nombre effectif de points. <br>
+<br>
+Ecrire une fonction `perimetre` qui recoit un polygone et renvoie son périmètre.
 ==
 
 editor.code==
 typedef struct {
-...
+ ...
 }Polygone;
 
 double distance(...){
   ...
 }
 double perimetre(...){
-...
+ ...
 }
   
 ==
