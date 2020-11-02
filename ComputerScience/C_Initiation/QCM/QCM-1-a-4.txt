@@ -201,3 +201,16 @@ programme calcul.c, peut-on constater que a + b == a ?
 + 1.5
 - 1.0
 - On ne sait pas
+
+**[group=Division] On considère les instructions suivantes :
+
+
+    x = 3;
+
+    y = 2;
+
+- 1
+- 1.
++ 1.5
+- 1.0
+- On ne sait pas
