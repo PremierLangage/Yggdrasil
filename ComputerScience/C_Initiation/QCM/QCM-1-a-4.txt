@@ -1,6 +1,6 @@
 Latex:1
 
-**[group=erreur de syntaxe] Le fichier.c suivant contient potentiellement des erreurs de syntaxes. : 
+*[group=erreur de syntaxe] Le fichier.c suivant contient potentiellement des erreurs de syntaxes. : 
 
     #include <stdio.h>
 
@@ -9,5 +9,14 @@ Latex:1
         printf("Hello, world!);
 
         return 0
-        
-    }            
+
+    }
+
+Combien y en a t'il ?
+
+- 0
+- 1
++ 2
+- 3
+
+
