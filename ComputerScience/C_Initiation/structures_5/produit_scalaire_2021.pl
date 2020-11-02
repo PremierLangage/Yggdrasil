@@ -25,11 +25,11 @@ de type *Vector3d* passés par adresse.
 ==
 
 editor.code==
-typedef struct vector3d{
+typedef struct vector3d {
   int x;
   int y;
   int z;
-}Vector3d;
+} Vector3d;
 
 ... scalar_product3d(...){
   /* Votre code ici */
