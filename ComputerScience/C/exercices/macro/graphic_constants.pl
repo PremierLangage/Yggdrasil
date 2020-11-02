@@ -24,13 +24,13 @@ tag=macro|define|constante|preprocesseur
 text==
 Définir quatre constantes préprocesseurs pour une interface
 graphique. Les deux premières constantes donneront la taille de la
-fenêtre : *WINDOW_SIZE_X* pour la largeur qui devra être de 800 et
-*WINDOW_SIZE_Y* pour la hauteur qui devra valoir 600.
+fenêtre : **WINDOW_SIZE_X** pour la largeur qui devra être de **800** et
+**WINDOW_SIZE_Y** pour la hauteur qui devra valoir **600**.
 
-Rajouter ensuite une constante *NB_BUTTON* pour le nombre de boutons
-clikables qui devra valoir 12 et finalement une constante *SHOW_DEBUG*
+Rajouter ensuite une constante **NB_BUTTON** pour le nombre de boutons
+clikables qui devra valoir **12** et finalement une constante **SHOW_DEBUG**
 qui aura pour valeur quelque chose s'évaluant à faux dans un test
-*if*. Cela désactivera le mode débogage par défault.
+**if**. Cela désactivera le mode débogage par défault.
 ==
 
 editor.code==
@@ -69,6 +69,7 @@ return 0;
 tests==
 [ ["Initialisation des constantes", "",""] ]
 ==
+
 
 
 
