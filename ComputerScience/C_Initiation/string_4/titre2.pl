@@ -30,6 +30,7 @@ void met_en_titre(char s[]){
 ==
 
 solution==
+
 void met_en_titre(char s[]){
   char preced=' ';
   int i=0;
@@ -55,6 +56,5 @@ int main(void){
 
 tests==
 [ ["simple execution", "","ceci est un titre"],
- ["aleatoire",""," ".join(["".join([chr(random.randint(97, 122)) for i in range(random.randint(2,10))]) + " " +"".join([ chr(random.randint(65, 90)) for i in range(random.randint(0,1))]) for j in range(5)])],
 ]
 ==
