@@ -9,6 +9,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
 Déclarer et définir un type de *structure* C nommé *Monome* contenant deux champs entiers: un champ *coef* et un champ *degre*
+
 Déclarer et définir un type de *structure* C nommé *Polynome*. Cette structure
 devra contenir deux champs : un tableau de monomes, de taille *MAX*, nommé *termes* et
 un entier *taille* indiquant le nombre de momomes.
@@ -63,6 +64,7 @@ tests==
 [ ["Déclaration et utilisation 1", "",""],
  ] 
 ==
+
 
 
 
