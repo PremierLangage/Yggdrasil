@@ -100,6 +100,6 @@ Combien y en a t'il ?
 
 - ...permet au compilateur de reconnaitre les blocs
 - ...est nécessaire pour l'éditeur de texte
-+ ...aide à la lisibilité
++ /* .....*/
 - ...peut remplacer les accolades
 - ...évite d'utiliser des ;
