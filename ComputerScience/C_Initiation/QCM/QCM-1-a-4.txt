@@ -160,4 +160,5 @@ en un executable HelloWorld ?
 - gcc -Ansi -wall HelloWorld.c -o HelloWorld
 + aucune de ces réponse
 
-
+**[group=Warning_floattant] On dispose de deux variables a et b. Dans quels cas,lors de l'exécution d'un 
+programme calcul.c, peut-on constater que a + b == a ?
