@@ -1,4 +1,4 @@
-extends=/model/AMC_TXT.pl 
+extends= /model/AMC2/QCM-AMCE.pl
 
 textstep ==
 <strong> Question {{ step + 1 }}. </strong> 
@@ -6,6 +6,9 @@ textstep ==
 ==
 
 title= Compréhension de code 
+
+text=
+onepergroup % true
 
 questions=@ QCM-1-a-4.txt
 
