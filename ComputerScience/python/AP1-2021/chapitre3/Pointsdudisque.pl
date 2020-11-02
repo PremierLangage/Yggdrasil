@@ -18,12 +18,12 @@ Exemples :
 
 * <pre>
 Entrez un réel strictement positif: 1
-Il y a 5 points à coordonnées entières
+Il y a 1 point(s) à coordonnées entières
 </pre>
 * <pre>
 Entrez un réel strictement positif: -2
 Entrez un réel strictement positif: 24.32
-Il y a 1861 points à coordonnées entières
+Il y a 1861 point(s) à coordonnées entières
 </pre>
 
 *Indice : La distance d'un point de coordonnées **(x, y)** à l'origine du repère **(0, 0)** est la racine de **x² + y²**.*
@@ -46,9 +46,9 @@ mplsoluce3 += str(d)+"\n"
 soluce==
 
 
-d=float(input("Entrez un réel strictement positf: "))
+d=float(input("Entrez un réel strictement positif: "))
 while d<=0:
-    d=float(input("Entrez un réel strictement positf: "))
+    d=float(input("Entrez un réel strictement positif: "))
 x=0
 nb=0
 while x<=d:
@@ -63,7 +63,7 @@ while x<=d:
                 nb+=4
         y+=1
     x+=1
-print("Il y a",nb,"points à coordonnées entières")
+print("Il y a",nb,"point(s) à coordonnées entières")
 ==
 
 
@@ -80,6 +80,7 @@ mplsoluce2==
 Entrée grande
 24.32
 ==
+
 
 
 
