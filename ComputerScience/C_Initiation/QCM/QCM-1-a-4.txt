@@ -217,5 +217,14 @@ Que vaut x/y ?
 - 1.0
 + On ne sait pas
 
-*[group=adresse] On considère les instructions suivantes :
+*[group=adresse] Comment récupère t-on l'adresse d'une variablex ?
+
+- x
+- &x
+- !x
+- %x
+- *x
+
+
+
 
