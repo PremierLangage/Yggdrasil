@@ -1,0 +1,13 @@
+Latex:1
+
+**[group=erreur de syntaxe] Le fichier.c suivant contient potentiellement des erreurs de syntaxes. : 
+
+    #include <stdio.h>
+
+    int main(void){
+
+        printf("Hello, world!);
+
+        return 0
+        
+    }            
