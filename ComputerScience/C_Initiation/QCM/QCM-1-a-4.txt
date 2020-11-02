@@ -233,7 +233,7 @@ variables locales du programme.
 
     *2*/
     
-    int main(void){
+    /*3*/ int main(void){
 
         printf("Hello, world!");
 
