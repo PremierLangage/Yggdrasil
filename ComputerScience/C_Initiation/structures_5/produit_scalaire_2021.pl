@@ -11,7 +11,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 text==
 Le produit scalaire $%\langle u, v \rangle%$ de deux vecteurs $%u = (x_u, y_u, z_u) %$ et 
 $%v = (x_v, y_v, z_v)%$ est donné par la formule 
-$% \langle u, v \rangle = x_u \times x_v + y_u \times y_v + z_u \times z_v%$.
+$$% \langle u, v \rangle = x_u \times x_v + y_u \times y_v + z_u \times z_v%$$.
 
 <br />
 
