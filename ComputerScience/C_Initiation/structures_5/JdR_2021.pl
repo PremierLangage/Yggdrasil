@@ -19,7 +19,7 @@ La plus haute somme détermine le vainqueur et la différence des sommes est sou
 <br>
 Ecrire une fonction `combat` qui reçoit deux pièces et réalise le combat suivant ces règles et change le nombre de points de vie de chaque pièce.
 La fonction  renvoie 1 si un combat a eu lieu (couleurs différentes) et 0 sinon.
-Le lancer de dé est simulé par la fonction `lance_de` supposée déjà écrite, qui ne prend pas d'argument et qu'on appelera donc par `lance_de()`.
+Le lancer de dé est simulé par la fonction `lance_de` supposée déjà écrite, qui ne prend pas d'argument et qu'on appellera donc par `lance_de()`.
 <br>
 <br>
 N.B.: Le fichier d'en-tête *<string.h\>*  est supposé inclus...
@@ -58,11 +58,11 @@ typedef struct{
 	int force;
 	int agilite;
 	int pdv;
-	}Piece;
+} Piece;
 
 int combat(Piece *un, Piece *deu){
-int somun,somdeu;
-if (strcmp(un->couleur,deu->couleur)!=0){
+    int somun,somdeu;
+    if (strcmp(un->couleur,deu->couleur)!=0){
    while(un->pdv>0&&deu->pdv>0){
 	somun=un->force+un->agilite+lance_de();
 	somdeu=deu->force+deu->agilite+lance_de();
