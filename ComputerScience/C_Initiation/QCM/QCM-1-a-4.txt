@@ -229,3 +229,15 @@ Que vaut x/y ?
 variables locales du programme.
 
 
+    /*1*/ #include <stdio.h>
+
+    int main(void){
+
+        printf("Hello, world!");
+
+        return 0
+
+    }
+
+
+
