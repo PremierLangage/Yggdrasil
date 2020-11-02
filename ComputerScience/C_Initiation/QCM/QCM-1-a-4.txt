@@ -88,10 +88,10 @@ Combien y en a t'il ?
 - les virgules
 - les points virgules 
 
-**[group=indentation] Quels sont les séparateurs dans un programme écrit en C ?
+**[group=indentation] L'indentation d'un programme C ...
 
-+ les espaces
-+ les tabulations
-+ les retours à la ligne
-- les virgules
-- les points virgules 
+...permet au compilateur de reconnaitre les blocs
+...est nécessaire pour l'éditeur de texte
+...aide à la lisibilité
+...peut remplacer les accolades
+...évite d'utiliser des ;
