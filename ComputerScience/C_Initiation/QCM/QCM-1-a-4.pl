@@ -7,9 +7,9 @@ textstep ==
 
 title= Compréhension de code 
 
-questions=@ QuestionsAnalyseCode.txt
+questions=@ QCM-1-a-4.txt
 
-tag=Tableau|Initialisation|ParcoursTableau|Boucle
+tag=
 
 
 
