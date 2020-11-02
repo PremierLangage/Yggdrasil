@@ -162,3 +162,5 @@ en un executable HelloWorld ?
 
 **[group=Warning_floattant] On dispose de deux variables a et b. Dans quels cas,lors de l'exécution d'un 
 programme calcul.c, peut-on constater que a + b == a ?
+
+
