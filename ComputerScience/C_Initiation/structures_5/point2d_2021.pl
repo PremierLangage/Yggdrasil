@@ -25,7 +25,7 @@ Point2d;
 
 void affiche_point2d(...){
       printf("Le point a pour abcisse %d et ordonnée %d.\n", ..);
-
+}
 ==
 codebefore==
 #include <stdio.h>
