@@ -118,5 +118,6 @@ Combien y en a t'il ?
 - println
 + printf
 
-**[group=utilite_points_virgules] 
+**[group=utilite_points_virgules] A quoi servent les points virgules en C ?
+
 
