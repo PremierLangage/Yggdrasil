@@ -231,6 +231,8 @@ variables locales du programme.
 
     /*1*/ #include <stdio.h>
 
+    *2*/
+    
     int main(void){
 
         printf("Hello, world!");
