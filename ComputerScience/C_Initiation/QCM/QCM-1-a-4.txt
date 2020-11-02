@@ -151,12 +151,12 @@ en un executable HelloWorld ?
 **[group=Compilation] Quelle(s) ligne(s) de commande permet(tent) de compiler le programme HelloWorld.c 
 en un executable HelloWorld ?
 
-- gcc            HelloWorld.c            HelloWorld
-- gcc            -ansi            HelloWorld.c            HelloWorld
-- gcc            -Ansi            HelloWorld.c            HelloWorld
-- gcc            -Ansi            HelloWorld.c            -o            HelloWorld
-- gcc            -ansi            -wall            HelloWorld.c            -o            HelloWorld
-- gcc            -Ansi            -Wall            HelloWorld.c            -o            HelloWorld
-- gcc            -Ansi            -wall            HelloWorld.c            -o            HelloWorld
-+ aucune            de            ces            réponse
+- gcc HelloWorld.c HelloWorld
+- gcc -ansi HelloWorld.c HelloWorld
+- gcc -Ansi HelloWorld.c HelloWorld
+- gcc -Ansi HelloWorld.c -o HelloWorld
+- gcc -ansi -wall HelloWorld.c -o HelloWorld
+- gcc -Ansi -Wall HelloWorld.c -o HelloWorld
+- gcc -Ansi -wall HelloWorld.c -o HelloWorld
++ aucune de ces réponse
 
