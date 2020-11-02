@@ -124,5 +124,8 @@ Combien y en a t'il ?
 + À indiquer au compilateur la fin d'une instruction simple 
 - À indiquer au compilateur qu'il va lui falloir lire une nouvelle ligne
 
+**[group=Compilation] Quelle(s) ligne(s) de commande permet(tent) de compiler le programme HelloWorld.c 
+en un executable HelloWorld ?
+
 
 
