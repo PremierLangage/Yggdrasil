@@ -209,6 +209,8 @@ programme calcul.c, peut-on constater que a + b == a ?
 
     y = 2;
 
+Que vaut x/y ?
+ 
 - 1
 - 1.
 + 1.5
