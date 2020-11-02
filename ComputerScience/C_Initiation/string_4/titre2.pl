@@ -1,6 +1,5 @@
 
 author=
-difficulty=3
 
 title=Mise en titre
 
