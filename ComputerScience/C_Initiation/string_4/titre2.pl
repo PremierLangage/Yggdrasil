@@ -31,6 +31,7 @@ void met_en_titre(char s[]){
 ==
 
 solution==
+
 void met_en_titre(char s[]){
   char preced=' ';
   int i=0;
