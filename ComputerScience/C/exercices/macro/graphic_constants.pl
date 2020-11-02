@@ -33,26 +33,24 @@ qui aura pour valeur quelque chose s'évaluant à faux dans un test
 **if**. Cela désactivera le mode débogage par défault.
 ==
 
-editor.code==
+editor.code==#|c|
 #...
-
 ==
 
-solution==
-
+solution==#|c|
 #define WINDOW_SIZE_X 800
 #define WINDOW_SIZE_Y 600
 #define NB_BUTTON 12
 #define SHOW_DEBUG 0
-
 ==
 
-codeafter==
- 
+code_before==#|c|
+==
+
+code_after==#|c|
 #include <stdio.h>
 
 int main(int argc, char* argv[]){
-
 printf("Largeur de la fenêtre : %d\n", WINDOW_SIZE_X);
 printf("Hauteur de la fenêtre : %d\n", WINDOW_SIZE_Y);
 printf("Nombre de boutons : %d\n", NB_BUTTON);
@@ -60,10 +58,8 @@ if ((SHOW_DEBUG))
   printf("Le mode débogage est activé.\n");
 else
   printf("Le mode débogage est désactivé.\n");
-
 return 0;
 }
-
 ==
 
 tests==
