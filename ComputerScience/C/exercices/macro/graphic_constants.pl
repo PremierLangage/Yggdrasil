@@ -62,8 +62,8 @@ return 0;
 }
 ==
 
-tests==
-[ ["Initialisation des constantes", "",""] ]
+checks_args_stdin==#|python|
+[ ["Initialisation des constantes", [],""] ]
 ==
 
 
