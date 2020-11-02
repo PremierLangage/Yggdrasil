@@ -216,3 +216,6 @@ Que vaut x/y ?
 - 1.5
 - 1.0
 + On ne sait pas
+
+*[group=adresse] On considère les instructions suivantes :
+
