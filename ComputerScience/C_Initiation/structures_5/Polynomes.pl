@@ -57,10 +57,10 @@ int main(void){
     Monome m;
 
 	p.taille = 22;
-	m.degre= 4;
-    m.coef=5;
-	p.termes[0]=m;
-    p.termes[1]=p.termes[0];
+	m.degre = 4;
+    m.coef = 5;
+	p.termes[0] = m;
+    p.termes[1] = p.termes[0];
 	return 0;
 }
 
@@ -70,6 +70,7 @@ tests==
 [ ["Déclaration et utilisation 1", "",""],
  ] 
 ==
+
 
 
 
