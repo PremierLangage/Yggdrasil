@@ -186,4 +186,10 @@ programme calcul.c, peut-on constater que a + b == a ?
 - 1.0
 - On ne sait pas
 
+**[group=Division] Que vaut 3./2 en C ?
 
++ 1
+- 1.
+- 1.5
+- 1.0
+- On ne sait pas
