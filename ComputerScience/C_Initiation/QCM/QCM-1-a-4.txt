@@ -178,4 +178,12 @@ programme calcul.c, peut-on constater que a + b == a ?
 + Lorsque a et b sont des floottants, cela peut arriver.
 - Aucune de ces réponses n'est correcte.
 
+**[group=Division] Que vaut 3/2 en C ?
+
++ 1
+- 1.
+- 1.5
+- 1.0
+- On ne sait pas
+
 
