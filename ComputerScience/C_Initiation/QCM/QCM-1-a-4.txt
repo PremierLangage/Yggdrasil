@@ -120,4 +120,6 @@ Combien y en a t'il ?
 
 **[group=utilite_points_virgules] A quoi servent les points virgules en C ?
 
+À différencier du premier coup d'oeil un code écris en C et en Python
+À indiquer aucompilateurland'uneinstructionsimpleÀindiqueraucompilateurqu'ilvaluifalloirlireunenouvelleligne
 
