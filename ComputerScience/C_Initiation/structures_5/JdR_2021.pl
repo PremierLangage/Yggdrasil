@@ -61,20 +61,19 @@ typedef struct{
 } Piece;
 
 int combat(Piece *un, Piece *deu){
-    int somun,somdeu;
-    if (strcmp(un->couleur,deu->couleur)!=0){
-   while(un->pdv>0&&deu->pdv>0){
-	somun=un->force+un->agilite+lance_de();
-	somdeu=deu->force+deu->agilite+lance_de();
-	if(somun>somdeu)
-		deu->pdv-=somun-somdeu;
-	else
-		un->pdv-=somdeu-somun;
-	}
-   return 1;
-}
- else
-   return 0;
+    int somun, somdeu;
+    if (strcmp(un->couleur, deu->couleur) != 0){
+        while (un->pdv>0 && deu->pdv>0){
+   	        somun = un->force + un->agilite + lance_de();
+	        somdeu = deu->force + deu->agilite + lance_de();
+	    if(somun > somdeu)
+		    deu->pdv -= somun-somdeu;
+ 	    else
+		    un->pdv -= somdeu-somun;
+	    }
+        return 1;
+    } else
+       return 0;
 }
 
 ==
