@@ -372,5 +372,31 @@ Quelles sont-elles ?
 - Aucune des ces lignes
 + 11
 
+**[group=Compilation_2] Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
+la compilation. Lesquelles ?
 
+
+    /*1*/ #include <stdio.h>
+
+    /*2*/
+
+    /*3*/ int main(void){
+
+    /*4*/   int a;
+
+    /*9*/   printf("Donnez moi un entier : ");
+
+    /*9*/   scanf("%d", &a);
+
+    /*12*/  printf("Son carré vaut %d",a * a);
+
+    /*13*/ }
+
+Quelles sont-elles ?
+
++ 7
+- 10
+- 1
+- Aucune des ces lignes
++ 11
 
