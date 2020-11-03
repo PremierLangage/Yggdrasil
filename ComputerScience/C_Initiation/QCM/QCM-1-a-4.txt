@@ -293,9 +293,9 @@ variables locales du programme.
 Quelles sont-elles ?
 
 - 1
-- 7
-+ 8
-+ 10
++ 7
++ 9
+- 10
 + 11
 - Aucune des ces lignes
 
