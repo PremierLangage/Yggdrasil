@@ -652,7 +652,7 @@ Quelles sont-elles ?
 
      }
 
-- toto
++ toto
 - titi
 - tutu
 - tototutu
