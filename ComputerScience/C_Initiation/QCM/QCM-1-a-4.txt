@@ -621,3 +621,29 @@ Quelles sont-elles ?
 - 2.5
 + Une erreur ou un warning
 
+*[group=Resultat_code_If] Qu'affiche le programme suivant si l'utilisateur entre 3 et 42 ?
+
+
+     #include <stdio.h>
+
+     int main(void){
+
+        float j;
+
+        int z;
+
+        j = 5;
+
+        z = J / 2;
+
+        printf("%f \n", z);
+
+        return 0;
+
+     }
+
+- 2.0
+- 2
+- 2.5
++ Une erreur ou un warning
+
