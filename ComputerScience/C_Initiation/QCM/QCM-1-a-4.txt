@@ -327,11 +327,10 @@ variables locales du programme.
 
 Quelles sont-elles ?
 
+- 7
++ 8
++ 10
 - 1
-+ 7
-+ 9
-- 10
-+ 11
 - Aucune des ces lignes
-
+- 11
 
