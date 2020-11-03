@@ -714,8 +714,10 @@ Quelles sont-elles ?
 
                 printf("toto");
         } else
+
+            printf("titi");
+
         
-            
         printf("\n");
 
      }
