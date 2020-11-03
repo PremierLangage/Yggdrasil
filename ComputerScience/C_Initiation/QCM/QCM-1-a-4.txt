@@ -788,35 +788,61 @@ second degré ax&sup2; + bx + c = 0 doit contenir au minimum...
 **[group=Echange_de_variable] Parmi les fonctions suivantes, quelles sont celles qui réalisent un échange des variables
  passées en paramètres ?
 
-    /* Fonction 1 */
+
+     /* Fonction 1 */
+
      void echange(int* a, int* b){
-         int tmp = *a;
+
+        int tmp = *a;
+
          *a = *b;
+
          *b = tmp;} 
 
-    /* Fonction 2 */
+
+     /* Fonction 2 */
+
      void echange(int a, int b){
+
          int tmp = a;
+
          a = b;
+
          b = tmp;}
 
-    /* Fonction 3 */
+
+     /* Fonction 3 */
+
      void echange(int* a, int* b){
+
          int tmp = &a;
+
          &a = &b;
+
          &b = tmp;}  
 
-    /* Fonction 4 */
+
+     /* Fonction 4 */
+
      void echange(int* a, int* b){
+
          int* tmp;
+
          tmp = a;
+
          *a = *b;
+
          *b = *tmp;} 
 
-    /* Fonction 5 */
+
+     /* Fonction 5 */
+
      void echange(int* a, int* b){
+
          int* tmp = &a;
+
          &a = &b;
+
          &b = &tmp;}
 
 + Fonction 1
