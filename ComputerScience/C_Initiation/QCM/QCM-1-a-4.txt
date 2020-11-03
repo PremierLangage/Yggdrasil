@@ -695,7 +695,7 @@ Quelles sont-elles ?
 - tititutu
 + une ligne vide
 
-*[group=Resultat_code_If] Qu'affiche le programme suivant si l'utilisateur entre 18 et 4 ?
+*[group=Resultat_code_If] Qu'affiche le programme suivant si l'utilisateur entre 14 et 6 ?
 
 
      #include <stdio.h>
