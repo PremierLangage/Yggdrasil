@@ -628,9 +628,9 @@ Quelles sont-elles ?
 
      int main(void){
 
-        float j;
+        int a,b;
 
-        int z;
+        printf("entrez deux entiers : ");
 
         j = 5;
 
