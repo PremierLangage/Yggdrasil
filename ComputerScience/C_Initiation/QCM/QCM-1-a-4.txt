@@ -530,9 +530,13 @@ Quelles sont-elles ?
 
        float z;
 
-       scanf("%d", a);
+       j = 5;
 
-       printf("Son carré vaut %d",a * a);
+       z = J / 2;
+
+       printf("%f \n", z);
+
+       return 0;
 
      }
 
