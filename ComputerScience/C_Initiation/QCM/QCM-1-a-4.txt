@@ -918,7 +918,7 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 
     }
 
-- ligne 1 : 0  1  2  3  4  ligne 2 : 0  2  4
+- ligne 1 : <strong>0  1  2  3  4</strong>  ligne 2 : <strong>0  2  4</strong>
 - ligne 1 : 0  ligne 2 : 0  1  2  ligne 3 : 2  3  4  ligne 4 : 4  5
 - ligne 1 : 0  0  ligne 2 : 1  2  2  ligne 3 : 3  4
 + ligne 1 : 0  ligne 2 : 0  1  2  ligne 3 : 2  3  4  ligne 4 : 4
