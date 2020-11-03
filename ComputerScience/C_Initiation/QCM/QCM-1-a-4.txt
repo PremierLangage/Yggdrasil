@@ -1,5 +1,7 @@
 Latex:1
 
+# Catalogue 1
+
 *[group=erreur_de_syntaxe] Le fichier.c suivant contient potentiellement des erreurs de syntaxes. : 
 
 
