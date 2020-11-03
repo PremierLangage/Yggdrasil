@@ -58,7 +58,7 @@ Latex:1
 
     }
 
-- ligne 1 :  **0   1   2   3   4**   ligne 2 :  **0   2   4**
+- ![Tux, the Linux mascot](https://fr.wikipedia.org/wiki/Linux#/media/Fichier:GNU_and_Tux.svg)
 - ligne 1 :  **0**   ligne 2 :  **0   1   2**   ligne 3 :  **2   3   4**   ligne 4 :  **4   5**
 - ligne 1 :  **0   0**   ligne 2 :  **1   2   2**   ligne 3 :  **3   4**
 + ligne 1 :  **0**   ligne 2 :  **0   1   2**   ligne 3 :  **2   3   4**   ligne 4 :  **4**
