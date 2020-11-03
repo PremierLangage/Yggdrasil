@@ -36,63 +36,37 @@ Latex:1
 
 
 ** Quelle valeur affichera le code suivant ? 
+    /*01*/ #include <stdio.h>
+    
+    /*02*/
+    
+    /*03*/void echange(int* a, int* b){
+    
+    /*04*/    int tmp = *a;
+    
+    /*05*/    *a = *b;
+    
+    /*06*/    *b = tmp;
+    
+    /*07*/}
 
+    /*08*/
 
-     /* Fonction 1 */
+    /*09*/int main(void){
+    
+    /*10*/    int a, b;
+    
+    /*11*/    printf("Donnez moi deux entiers, svp : ");
+    
+    /*12*/    scanf("%d%d", &a, &b);
+    
+    /*13*/    printf("Avant l’appel de la fonction echange, a et b valent : %d et %d\n",a, b);
+    
+    /*14*/    echange(&a, &b);
+    
+    /*15*/    printf("Après l’appel de la fonction echange, a et b valent : %d et %d\n",a, b);
 
-     void echange(int* a, int* b){
-
-        int tmp = *a;
-
-         *a = *b;
-
-         *b = tmp;} 
-
-
-     /* Fonction 2 */
-
-     void echange(int a, int b){
-
-         int tmp = a;
-
-         a = b;
-
-         b = tmp;}
-
-
-     /* Fonction 3 */
-
-     void echange(int* a, int* b){
-
-         int tmp = &a;
-
-         &a = &b;
-
-         &b = tmp;}  
-
-
-     /* Fonction 4 */
-
-     void echange(int* a, int* b){
-
-         int* tmp;
-
-         tmp = a;
-
-         *a = *b;
-
-         *b = *tmp;} 
-
-
-     /* Fonction 5 */
-
-     void echange(int* a, int* b){
-
-         int* tmp = &a;
-
-         &a = &b;
-
-         &b = &tmp;}
+    /*16*/}
 
 - toto
 - titi
