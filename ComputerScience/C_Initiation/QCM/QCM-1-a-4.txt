@@ -768,7 +768,7 @@ Quelles sont-elles ?
 - une ligne vide
 
 *[group=Equation_Second_Degre] Un programme permettant de déterminer le nombre de racines d'une équation du 
-second degré ax2&sup2 + bx + c = 0 doit contenir au minimum...
+second degré ax&sup2; + bx + c = 0 doit contenir au minimum...
 
 - 3 tests
 - 6 tests
