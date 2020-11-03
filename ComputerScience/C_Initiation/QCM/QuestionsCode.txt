@@ -37,6 +37,7 @@ Latex:1
 
 ** Quelle valeur affichera le code suivant ? 
 
+
     /* Fonction 1 */
      void echange(int* a, int* b){
          int tmp = *a;
