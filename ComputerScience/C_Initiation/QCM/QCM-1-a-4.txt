@@ -564,10 +564,10 @@ Quelles sont-elles ?
 
      }
 
-+ 2.0
+- 2.0
 - 2
 - 2.5
-- Une erreur ou un warning
++ Une erreur ou un warning
 
 
 
