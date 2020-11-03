@@ -35,52 +35,32 @@ Latex:1
 - 4
 
 
-** Quelle valeur affichera le code suivant ? 
+*[group=Comprehension_de_code] Quel est le rendu lors de l’exécution du programme suivant ?
 
 
-    /*01*/ #include <stdio.h>
+     #include <stdio.h>
 
-    /*02*/
+     int main(void){
 
-    /*03*/ void echange(int* a, int* b){
+         int i;
 
-    /*04*/    int tmp = *a;
+         int n = 5;
 
-    /*05*/    *a = *b;
+         for(i =0; i < n ; i = i + 1){
 
-    /*06*/    *b = tmp;
+             printf("%d\t", i);
 
-    /*07*/ }
+             if (i % 2 == 0)
 
-    /*08*/
+                printf("\n %d", i);
 
-    /*09*/ int main(void){
+         }
 
-    /*10*/    int a, b;
+    }
 
-    /*11*/    printf("Donnez moi deux entiers, svp : ");
-
-    /*12*/    scanf("%d%d", &a, &b);
-
-    /*13*/    printf("Avant l’appel de la fonction echange, a et b valent : %d et %d\n",a, b);
-
-    /*14*/    echange(&a, &b);
-
-    /*15*/    printf("Après l’appel de la fonction echange, a et b valent : %d et %d\n",a, b);
-
-    /*16*/ }
-
-- toto
-- titi
-- tutu
-+ tototutu
-- tititutu
-- une ligne vide
-
-*[group=Equation_Second_Degre] Un programme permettant de déterminer le nombre de racines d'une équation du 
-second degré ax&sup2; + bx + c = 0 doit contenir au minimum...
-
-- 3 tests
-- 6 tests
-+ 5 tests
+- ligne 1 : <strong>0  1  2  3  4</strong>  ligne 2 : <strong>0  2  4</strong>
+- ligne 1 : 0  ligne 2 : 0  1  2  ligne 3 : 2  3  4  ligne 4 : 4  5
+- ligne 1 : 0  0  ligne 2 : 1  2  2  ligne 3 : 3  4
++ ligne 1 : 0  ligne 2 : 0  1  2  ligne 3 : 2  3  4  ligne 4 : 4
+- ligne 1 : 0  0  ligne 2 : 1  2  2  ligne 3 : 3  4  4
 
