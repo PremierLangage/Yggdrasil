@@ -228,6 +228,7 @@ Que vaut x/y ?
 **[group=Sans_Effet_de_bords] Parmi le code suivant, un certain nombre d'instructions ne modifient pas les 
 variables locales du programme.
 
+
 /*1*/ #include <stdio.h>
 
     /*2*/
