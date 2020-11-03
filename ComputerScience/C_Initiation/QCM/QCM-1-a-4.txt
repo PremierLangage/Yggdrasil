@@ -713,7 +713,7 @@ Quelles sont-elles ?
             if (b%2==0)
 
                 printf("toto");
-                
+
         } else
 
             printf("titi");
@@ -763,8 +763,8 @@ Quelles sont-elles ?
 - toto
 - titi
 - tutu
-- tototutu
-+ tititutu
++ tototutu
+- tititutu
 - une ligne vide
 
 
