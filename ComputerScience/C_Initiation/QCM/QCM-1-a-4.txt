@@ -632,7 +632,7 @@ Quelles sont-elles ?
 
         printf("entrez deux entiers : ");
 
-        j = 5;
+        scanf("%d %d", &a, &b);
 
         z = J / 2;
 
