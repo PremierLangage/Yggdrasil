@@ -39,6 +39,7 @@ Latex:1
 
 
     /* Fonction 1 */
+    
      void echange(int* a, int* b){
          int tmp = *a;
          *a = *b;
