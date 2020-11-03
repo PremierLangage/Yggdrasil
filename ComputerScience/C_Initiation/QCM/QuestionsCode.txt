@@ -38,16 +38,23 @@ Latex:1
 ** Quelle valeur affichera le code suivant ? 
 
 
-     int i,j=3;
+#include <stdio.h>
 
-     int tab[7] = {2, 3, 0, 4, 1, 1, 2};
+     int main(void){
 
-     for (i=0; i<5; i=i+1)
+       int j;
 
-        j = tab[j];
+       float z;
 
-     printf("%d\n", j);
+       j = 5;
 
+       z = J / 2;
+
+       printf("%f \n", z);
+
+       return 0;
+
+     }
 
 - 0
 - 1
@@ -55,150 +62,4 @@ Latex:1
 - 3
 + 4
 
-** Parmi le code suivant, un certain nombre d'instructions ne modifient pas les 
-variables locales du programme.
-
-
-    /*1*/ #include <stdio.h>
-
-    /*2*/
-
-    /*3*/ int main(void){
-
-    /*4*/   int a = 2, b = 3;
-
-    /*5*/   int somme;
-
-    /*6*/   float moyenne;
-
-    /*7*/   somme = a + b;
-
-    /*8*/   printf("La somme vaut %f", a + b);
-
-    /*9*/   moyenne = (a + b) / 2.;
-
-    /*10*/  a + b;
-
-    /*11*/  printf("La moyenne vaut %f", moyenne);
-
-    /*12*/ }
-
-Quelles sont-elles ?
-
-- 1
-- 7
-+ 8
-+ 10
-+ 11
-- Aucune des ces lignes
-
-** Parmi le code suivant, un certain nombre d'instructions ne modifient pas les 
-variables locales du programme.
-
-
-    /*1*/ #include <stdio.h>
-
-    /*2*/
-
-    /*3*/ int main(void){
-
-    /*4*/   int a = 2, b = 3;
-
-    /*5*/   int somme;
-
-    /*6*/   float moyenne;
-
-    /*7*/   (a + b) / 2.;
-
-    /*8*/   somme = a + b;
-
-    /*9*/   printf("La somme vaut %f", a + b);
-
-    /*10*/  moyenne = (a + b) / 2.;
-
-    /*11*/  printf("La moyenne vaut %f", moyenne);
-
-    /*12*/ }
-
-Quelles sont-elles ?
-
-- 1
-+ 7
-+ 9
-- 10
-+ 11
-- Aucune des ces lignes
-
-** Parmi le code suivant, un certain nombre d'instructions ne modifient pas les 
-variables locales du programme.
-
-
-    /*1*/ #include <stdio.h>
-
-    /*2*/
-
-    /*3*/ int main(void){
-
-    /*4*/   int a = 2, b = 3;
-
-    /*5*/   int somme;
-
-    /*6*/   float moyenne;
-
-    /*7*/   somme = a + b;
-
-    /*8*/   printf("La somme vaut %f", a + b);
-
-    /*9*/  moyenne = (a + b) / 2.;
-
-    /*10*/  printf("La moyenne vaut %f", moyenne);
-
-    /*11*/ }
-
-Quelles sont-elles ?
-
-- 7
-+ 8
-+ 10
-- 1
-- Aucune des ces lignes
-- 11
-
-** Parmi le code suivant, un certain nombre d'instructions ne modifient pas les 
-variables locales du programme.
-
-
-    /*1*/ #include <stdio.h>
-
-    /*2*/
-
-    /*3*/ int main(void){
-
-    /*4*/   int a = 2, b = 3;
-
-    /*5*/   int somme;
-
-    /*6*/   float moyenne;
-
-    /*7*/   (a + b) / 2.;
-
-    /*8*/   somme = a + b;
-
-    /*9*/   printf("La somme vaut %f", a + b);
-
-    /*10*/  moyenne = (a + b) / 2.;
-
-    /*11*/  a + b;
-
-    /*12*/  printf("La moyenne vaut %f", moyenne);
-
-    /*13*/ }
-
-Quelles sont-elles ?
-
-+ 7
-- 10
-- 1
-- Aucune des ces lignes
-+ 11
 
