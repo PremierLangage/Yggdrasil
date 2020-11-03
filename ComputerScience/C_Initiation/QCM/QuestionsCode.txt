@@ -59,7 +59,7 @@ Latex:1
 variables locales du programme.
 
 
-    /*1 #include <stdio.h>
+    /*1*/ #include <stdio.h>
 
     *2*/
     
