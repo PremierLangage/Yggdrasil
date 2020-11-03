@@ -36,6 +36,8 @@ Latex:1
 
 
 ** Quelle valeur affichera le code suivant ? 
+
+
     /*01*/ #include <stdio.h>
     
     /*02*/
