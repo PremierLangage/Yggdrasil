@@ -811,7 +811,7 @@ second degré ax&sup2; + bx + c = 0 doit contenir au minimum...
          int* tmp;
          tmp = a;
          *a = *b;
-         *b = tmp;} 
+         *b = *tmp;} 
 
     /* Fonction 5 */
      void echange(int* a, int* b){
@@ -819,8 +819,8 @@ second degré ax&sup2; + bx + c = 0 doit contenir au minimum...
          &a = &b;
          &b = &tmp;}
 
-Fonction 1
-Fonction 2
-Fonction 3
++ Fonction 1
+- Fonction 2
+- Fonction 3
 Fonction 4
 Fonction 5 
