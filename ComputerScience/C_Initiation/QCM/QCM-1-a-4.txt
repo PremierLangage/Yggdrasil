@@ -229,7 +229,7 @@ Que vaut x/y ?
 variables locales du programme.
 
 
-/*1*/ #include <stdio.h>
+    /*1*/ #include <stdio.h>
 
     /*2*/
 
@@ -266,7 +266,7 @@ Quelles sont-elles ?
 variables locales du programme.
 
 
-/*1*/ #include <stdio.h>
+    /*1*/ #include <stdio.h>
 
     /*2*/
 
