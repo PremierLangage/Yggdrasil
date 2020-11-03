@@ -58,7 +58,9 @@ Latex:1
 
     }
 
-- ![](Arbre.png)
+![](Arbre.png)
+
+- blabla
 - ligne 1 :  **0**   ligne 2 :  **0   1   2**   ligne 3 :  **2   3   4**   ligne 4 :  **4   5**
 - ligne 1 :  **0   0**   ligne 2 :  **1   2   2**   ligne 3 :  **3   4**
 + ligne 1 :  **0**   ligne 2 :  **0   1   2**   ligne 3 :  **2   3   4**   ligne 4 :  **4**
