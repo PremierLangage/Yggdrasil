@@ -682,11 +682,7 @@ Quelles sont-elles ?
             
             else
 
-                printf("titi");
-
-        else
-
-            printf("tutu");
+                printf("tutu");
 
         printf("\n");
 
