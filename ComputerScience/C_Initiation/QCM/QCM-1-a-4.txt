@@ -225,7 +225,7 @@ Que vaut x/y ?
 - %x
 - *x
 
-**[group=] Parmi le code suivant, un certain nombre d'instructions ne modifient pas les 
+**[group=Sans_Effet_de_bords] Parmi le code suivant, un certain nombre d'instructions ne modifient pas les 
 variables locales du programme.
 
 
