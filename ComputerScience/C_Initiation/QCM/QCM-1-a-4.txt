@@ -854,4 +854,34 @@ second degré ax&sup2; + bx + c = 0 doit contenir au minimum...
 **[group=Declaration_de_variable] Considérons le programme suivant :
 
 
-    /*01*/#include <stdio.h>
+    /*01*/ #include <stdio.h>
+    
+    /*02*/
+    
+    /*03*/void echange(int* a, int* b){
+    
+    /*04*/    int tmp = *a;
+    
+    /*05*/    *a = *b;
+    
+    /*06*/    *b = tmp;
+    
+    /*07*/}
+
+    /*08*/
+
+    /*09*/int main(void){
+    
+    /*10*/    int a, b;
+    
+    /*11*/    printf("Donnez moi deux entiers, svp : ");
+    
+    /*12*/    scanf("%d%d", &a, &b);
+    
+    /*13*/    printf("Avant l’appel de la fonction echange, a et b valent : %d et %d\n",a, b);
+    
+    /*14*/    echange(&a, &b);
+    
+    /*15*/    printf("Après l’appel de la fonction echange, a et b valent : %d et %d\n",a, b);
+
+    /*16*/}
