@@ -118,5 +118,10 @@ Combien y en a t'il ?
 - println
 + printf
 
+*[group=utilite_points_virgules] A quoi servent les points virgules en C ?
+
+- À différencier du premier coup d'oeil un code écris en C et en Python
++ À indiquer au compilateur la fin d'une instruction simple 
+- À indiquer au compilateur qu'il va lui falloir lire une nouvelle ligne
 
 
