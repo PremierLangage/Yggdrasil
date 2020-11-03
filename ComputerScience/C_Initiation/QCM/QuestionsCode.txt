@@ -42,7 +42,7 @@ Latex:1
 
     /*02*/
 
-    /*03*/void echange(int* a, int* b){
+    /*03*/ void echange(int* a, int* b){
 
     /*04*/    int tmp = *a;
 
@@ -50,11 +50,11 @@ Latex:1
 
     /*06*/    *b = tmp;
 
-    /*07*/}
+    /*07*/ }
 
     /*08*/
 
-    /*09*/int main(void){
+    /*09*/ int main(void){
 
     /*10*/    int a, b;
 
@@ -68,7 +68,7 @@ Latex:1
 
     /*15*/    printf("Après l’appel de la fonction echange, a et b valent : %d et %d\n",a, b);
 
-    /*16*/}
+    /*16*/ }
 
 - toto
 - titi
