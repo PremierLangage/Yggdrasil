@@ -780,3 +780,5 @@ second degré ax&sup2; + bx + c = 0 doit contenir au minimum...
 
 
 
+
+
