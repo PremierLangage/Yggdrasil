@@ -394,9 +394,10 @@ la compilation. Lesquelles ?
 
 Quelles sont-elles ?
 
+- 4
+- 5
+- 6
 + 7
-- 10
-- 1
-- Aucune des ces lignes
-+ 11
+- 8
+- Aucune ne provoque d'erreur ou de warning
 
