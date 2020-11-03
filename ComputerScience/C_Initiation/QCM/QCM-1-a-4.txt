@@ -713,13 +713,9 @@ Quelles sont-elles ?
             if (b%2==0)
 
                 printf("toto");
-
-                printf("titi");
+        } else
+        
             
-            } else
-
-                printf("tutu");
-
         printf("\n");
 
      }
