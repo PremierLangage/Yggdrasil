@@ -319,7 +319,7 @@ variables locales du programme.
 
     /*8*/   printf("La somme vaut %f", a + b);
 
-    /*9*/  moyenne = (a + b) / 2.;
+    /*9*/   moyenne = (a + b) / 2.;
 
     /*10*/  printf("La moyenne vaut %f", moyenne);
 
