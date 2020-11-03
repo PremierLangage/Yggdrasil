@@ -487,3 +487,8 @@ Quelles sont-elles ?
 - 7
 - 8
 - Aucune ne provoque d'erreur ou de warning
+
+**[group=Resultat_code] Qu'affiche le programme suivant ?
+
+
+
