@@ -61,9 +61,8 @@ variables locales du programme.
 
     /*1*/ #include <stdio.h>
 
-    /*2*/  
+    /*2*/
 
-    
     /*3*/ int main(void){
 
     /*4*/   int a = 2, b = 3;
