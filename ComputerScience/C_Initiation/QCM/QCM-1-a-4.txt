@@ -522,8 +522,6 @@ Quelles sont-elles ?
 
     #include <stdio.h>
 
-    
-
      int main(void){
 
        int j;
