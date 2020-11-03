@@ -604,7 +604,7 @@ Quelles sont-elles ?
 
         float j;
 
-        float z;
+        int z;
 
         j = 5;
 
@@ -618,6 +618,6 @@ Quelles sont-elles ?
 
 - 2.0
 - 2
-+ 2.5
-- Une erreur ou un warning
+- 2.5
++ Une erreur ou un warning
 
