@@ -38,23 +38,23 @@ Latex:1
 ** Quelle valeur affichera le code suivant ? 
 
 
-        #include <stdio.h>
+     #include <stdio.h>
 
-        int main(void){
+     int main(void){
 
-        int j;
+          int j;
 
-        float z;
+          float z;
 
-        j = 5;
+          j = 5;
 
-        z = J / 2;
+          z = J / 2;
 
-        printf("%f \n", z);
+          printf("%f \n", z);
 
-        return 0;
+          return 0;
 
-        }
+     }
 
 - 0
 - 1
