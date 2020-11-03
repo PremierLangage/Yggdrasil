@@ -58,7 +58,7 @@ Latex:1
 
     }
 
-![](Arbre.png)
+<img src="Arbre.png" style="float: left; margin-right: 10px;" />
 
 - blabla
 - ligne 1 :  **0**   ligne 2 :  **0   1   2**   ligne 3 :  **2   3   4**   ligne 4 :  **4   5**
