@@ -543,6 +543,31 @@ Quelles sont-elles ?
 - 2.5
 - Une erreur ou un warning
 
+**[group=Resultat_code] Qu'affiche le programme suivant ?
+
+
+     #include <stdio.h>
+
+     int main(void){
+
+        int j;
+
+        int z;
+
+        j = 5;
+
+        z = J / 2;
+
+        printf("%f \n", z);
+
+        return 0;
+
+     }
+
++ 2.0
+- 2
+- 2.5
+- Une erreur ou un warning
 
 
 
