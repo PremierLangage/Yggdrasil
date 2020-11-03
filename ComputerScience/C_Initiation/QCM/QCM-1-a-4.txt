@@ -160,3 +160,12 @@ en un executable HelloWorld ?
 - gcc -Ansi -wall HelloWorld.c -o HelloWorld
 + aucune de ces réponse
 
+**[group=Warning_floattant] On dispose de deux variables a et b. Dans quels cas,lors de l'exécution d'un 
+programme calcul.c, peut-on constater que a + b == a ?
+
+- Cela ne peut jamais arriver.
++ Lorsque b est nul.
+- Lorsque a et b sont des entiers, cela arrive tout le temps.
+- Lorsque a et b sont des flottants, cela arrive tout le temps.
+- Aucune de ces réponses n'est correcte.
+
