@@ -717,9 +717,10 @@ Quelles sont-elles ?
 
             printf("titi");
 
-        
-        printf("\n");
+        printf("tutu");
 
+        printf("\n");
+        
      }
 
 - toto
