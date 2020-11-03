@@ -491,4 +491,21 @@ Quelles sont-elles ?
 **[group=Resultat_code] Qu'affiche le programme suivant ?
 
 
+    /*1*/ #include <stdio.h>
+
+    /*2*/
+
+    /*3*/ int main(void){
+
+    /*4*/   int j;
+
+    /*5*/   print("Donnez moi un entier : ");
+
+    /*6*/   scanf("%d", a);
+
+    /*7*/   printf("Son carré vaut %d",a * a);
+
+    /*8*/ }
+
+
 
