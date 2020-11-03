@@ -634,7 +634,7 @@ Quelles sont-elles ?
 
         scanf("%d %d", &a, &b);
 
-        z = J / 2;
+        if (a<b)
 
         printf("%f \n", z);
 
