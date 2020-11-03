@@ -37,6 +37,7 @@ Latex:1
 
 ** Quelle valeur affichera le code suivant ? 
 
+
      #include <stdio.h>
 
      int main(void){
@@ -62,7 +63,7 @@ Latex:1
         printf("\n");
 
      }
-     
+
 - 0
 - 1
 - 2
