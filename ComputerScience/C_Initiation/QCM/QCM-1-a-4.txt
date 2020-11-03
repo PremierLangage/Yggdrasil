@@ -886,4 +886,12 @@ second degré ax&sup2; + bx + c = 0 doit contenir au minimum...
 
     /*16*/ }
 
+Parmi les affirmations suivantes, lesquelles sont exactes ?
+
+La fonctione change prend des entiers en paramètres
+La fonctione change prend des adresses en paramètres
+La fonction scanf prend une chaine de caractères, puis une ou des variables de type int en paramètres
+La fonction scanf prend une chaine de caractères, puis des adresses en paramètres
+La ligne 14 ne provoque pas d’erreur de compilation.
+La ligne 14 provoque une erreur de compilation.
 
