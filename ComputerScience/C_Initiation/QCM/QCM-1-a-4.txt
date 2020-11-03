@@ -828,3 +828,4 @@ second degré ax&sup2; + bx + c = 0 doit contenir au minimum...
 **[group=Declaration_de_variable] Considérons le programme suivant :
 
 
+    /*01*/#include <stdio.h>
