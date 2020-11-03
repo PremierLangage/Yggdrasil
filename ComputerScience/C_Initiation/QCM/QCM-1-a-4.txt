@@ -636,9 +636,13 @@ Quelles sont-elles ?
 
         if (a<b)
 
-        printf("%f \n", z);
+            if (b%2==0)
 
-        return 0;
+                printf("toto");
+            
+            else
+
+                printf("titi");
 
      }
 
