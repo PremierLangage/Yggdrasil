@@ -1,6 +1,6 @@
 Latex:1
 
-# Catalogue 1
+# Catalogue 1 Prog C Olivier BOUILLOT
 
 *[group=erreur_de_syntaxe] Le fichier.c suivant contient potentiellement des erreurs de syntaxes. : 
 
@@ -775,3 +775,5 @@ second degré ax&sup2; + bx + c = 0 doit contenir au minimum...
 - 3 tests
 - 6 tests
 + 5 tests
+
+# Catalogue 2 Prog C Olivier BOUILLOT
