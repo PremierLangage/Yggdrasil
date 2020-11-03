@@ -488,6 +488,35 @@ Quelles sont-elles ?
 - 8
 - Aucune ne provoque d'erreur ou de warning
 
+**[group=Compilation_2] Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
+la compilation. Lesquelles ?
+
+
+    /*1*/ #include <stdio.h>
+
+    /*2*/
+
+    /*3*/ int main(void){
+
+    /*4*/   int a;
+
+    /*5*/   print("Donnez moi un entier : ");
+
+    /*6*/   scanf("%d", &a);
+
+    /*7*/   printf("Son carré vaut %f",a * a);
+
+    /*8*/ }
+
+Quelles sont-elles ?
+
+- 4
++ 5
+- 6
++ 7
+- 8
+- Aucune ne provoque d'erreur ou de warning
+
 **[group=Resultat_code] Qu'affiche le programme suivant ?
 
 
