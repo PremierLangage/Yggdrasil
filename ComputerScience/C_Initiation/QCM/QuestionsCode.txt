@@ -67,22 +67,21 @@ variables locales du programme.
 
     /*4*/   int a = 2, b = 3;
 
-    
+
     /*5*/   int somme;
-    
-    
+
     /*6*/   float moyenne;
-    
+
     /*7*/   somme = a + b;
-    
+
     /*8*/   printf("La somme vaut %f", a + b);
-    
+
     /*9*/   moyenne = (a + b) / 2.;
-    
+
     /*10*/  a + b;
-    
+
     /*11*/  printf("La moyenne vaut %f", moyenne);
-    
+
     /*12*/ }
 
 Quelles sont-elles ?
@@ -93,6 +92,7 @@ Quelles sont-elles ?
 + 10
 + 11
 - Aucune des ces lignes
+
 
 
 
