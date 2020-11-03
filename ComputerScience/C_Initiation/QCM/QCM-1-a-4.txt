@@ -220,7 +220,7 @@ Que vaut x/y ?
 *[group=adresse] Comment récupère t-on l'adresse d'une variable x ?
 
 - x
-- &x
++ &x
 - !x
 - %x
 - *x
