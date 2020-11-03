@@ -66,9 +66,10 @@ variables locales du programme.
     /*3*/ int main(void){
 
     /*4*/   int a = 2, b = 3;
-    
+
     
     /*5*/   int somme;
+    
     
     /*6*/   float moyenne;
     
