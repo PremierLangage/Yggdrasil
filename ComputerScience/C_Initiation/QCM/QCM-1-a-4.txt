@@ -785,4 +785,29 @@ second degré ax&sup2; + bx + c = 0 doit contenir au minimum...
 + En passant la variable en question ainsi que son adresse en argument de la fonction.
 - On ne peut pas faire cela en C.
 
-**[group=Echange_de_variable] Comment peut-on changer la valeur d’une variable à l’aide d’une fonction ?
+**[group=Echange_de_variable] Parmi les fonctions suivantes, quelles sont celles qui réalisent un échange des variables
+ passées en paramètres ?
+
+    /* Fonction 1 */
+     void echange(int* a, int* b){
+         int tmp = *a;
+         *a = *b;
+         *b = tmp;} 
+
+    /* Fonction 2 */
+     void echange(int* a, int* b){
+         int tmp = *a;
+         *a = *b;
+         *b = tmp;}
+
+    /* Fonction 3 */
+     void echange(int* a, int* b){
+         int tmp = *a;
+         *a = *b;
+         *b = tmp;}  
+
+    /* Fonction 4 */
+     void echange(int* a, int* b){
+         int tmp = *a;
+         *a = *b;
+         *b = tmp;} 
