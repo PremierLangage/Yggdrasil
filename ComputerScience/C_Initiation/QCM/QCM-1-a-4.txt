@@ -748,6 +748,7 @@ Quelles sont-elles ?
             if (b%2==0)
 
                 printf("toto");
+                
         } else
 
             printf("titi");
