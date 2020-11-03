@@ -652,9 +652,12 @@ Quelles sont-elles ?
 
      }
 
-- 2.0
-- 2
-- 2.5
-+ Une erreur ou un warning
+- toto
+- titi
+- tutu
+- tototutu
+- tititutu
+- une ligne vide
+
 
 
