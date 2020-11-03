@@ -41,8 +41,11 @@ Latex:1
     /* Fonction 1 */
     
      void echange(int* a, int* b){
+
          int tmp = *a;
+
          *a = *b;
+         
          *b = tmp;} 
 
     /* Fonction 2 */
@@ -84,3 +87,4 @@ second degré ax&sup2; + bx + c = 0 doit contenir au minimum...
 - 3 tests
 - 6 tests
 + 5 tests
+
