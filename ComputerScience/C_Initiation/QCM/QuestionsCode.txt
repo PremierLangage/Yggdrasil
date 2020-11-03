@@ -37,32 +37,37 @@ Latex:1
 
 ** Quelle valeur affichera le code suivant ? 
 
+    /* Fonction 1 */
+     void echange(int* a, int* b){
+         int tmp = *a;
+         *a = *b;
+         *b = tmp;} 
 
-     #include <stdio.h>
+    /* Fonction 2 */
+     void echange(int a, int b){
+         int tmp = a;
+         a = b;
+         b = tmp;}
 
-     int main(void){
+    /* Fonction 3 */
+     void echange(int* a, int* b){
+         int tmp = &a;
+         &a = &b;
+         &b = tmp;}  
 
-        int a,b;
+    /* Fonction 4 */
+     void echange(int* a, int* b){
+         int* tmp;
+         tmp = a;
+         *a = *b;
+         *b = *tmp;} 
 
-        printf("entrez deux entiers : ");
+    /* Fonction 5 */
+     void echange(int* a, int* b){
+         int* tmp = &a;
+         &a = &b;
+         &b = &tmp;}
 
-        scanf("%d %d", &a, &b);
-
-        if (a<b) {
-
-            if (b%2==0)
-
-                printf("toto");
-
-        } else
-
-            printf("titi");
-
-        printf("tutu");
-
-        printf("\n");
-        
-     }
 
 - toto
 - titi
