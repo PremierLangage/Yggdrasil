@@ -37,25 +37,32 @@ Latex:1
 
 ** Quelle valeur affichera le code suivant ? 
 
-
      #include <stdio.h>
 
      int main(void){
 
-        int j;
+        int a,b;
 
-        float z;
+        printf("entrez deux entiers : ");
 
-        j = 5;
+        scanf("%d %d", &a, &b);
 
-        z = J / 2;
+        if (a<b)
 
-        printf("%f \n", z);
+            if (b%2==0)
 
-        return 0;
+                printf("toto");
+
+                printf("titi");
+            
+            else
+
+                printf("tutu");
+
+        printf("\n");
 
      }
-
+     
 - 0
 - 1
 - 2
