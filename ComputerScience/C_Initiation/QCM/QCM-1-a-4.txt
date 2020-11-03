@@ -136,3 +136,15 @@ en un executable HelloWorld ?
 - gcc -ansi -wall HelloWorld.c HelloWorld 
 - aucune de ces réponses
 
+**[group=Compilation] Quelle(s) ligne(s) de commande permet(tent) de compiler le programme HelloWorld.c 
+en un executable HelloWorld ?
+
+- gcc HelloWorld.c HelloWorld
++ gcc HelloWorld.c -o HelloWorld
+- gcc -Ansi HelloWorld.c -o HelloWorld
+- gcc -ansi -Wall HelloWorld.c HelloWorld
+- gcc -ansi -wall HelloWorld.c -o HelloWorld
+- gcc -Ansi -Wall HelloWorld.c HelloWorld
+- gcc -Ansi -wall HelloWorld.c -o HelloWorld
+- aucune de ces réponses
+
