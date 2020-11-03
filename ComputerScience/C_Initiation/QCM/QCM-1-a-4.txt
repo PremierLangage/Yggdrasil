@@ -825,4 +825,6 @@ second degré ax&sup2; + bx + c = 0 doit contenir au minimum...
 + Fonction 4
 - Fonction 5 
 
+**[group=Declaration_de_variable] Considérons le programme suivant :
+
 
