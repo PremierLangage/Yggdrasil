@@ -39,6 +39,7 @@ Latex:1
 
 
      /* Fonction 1 */
+
     
      void echange(int* a, int* b){
             
@@ -50,6 +51,7 @@ Latex:1
 
 
      /* Fonction 2 */
+
     
      void echange(int a, int b){
     
@@ -61,6 +63,7 @@ Latex:1
 
 
      /* Fonction 3 */
+
     
      void echange(int* a, int* b){
     
@@ -72,6 +75,7 @@ Latex:1
 
 
      /* Fonction 4 */
+
     
      void echange(int* a, int* b){
     
@@ -85,6 +89,7 @@ Latex:1
 
 
      /* Fonction 5 */
+     
     
      void echange(int* a, int* b){
     
