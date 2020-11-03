@@ -644,10 +644,17 @@ Quelles sont-elles ?
 
                 printf("titi");
 
+        else
+
+            printf("tutu");
+
+        printf("\n");
+
      }
 
 - 2.0
 - 2
 - 2.5
 + Une erreur ou un warning
+
 
