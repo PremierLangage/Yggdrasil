@@ -78,6 +78,10 @@ def random_binary_tree(nb_nodes, max_height=None, values=None, nb_total_node=Non
     if nb_total_node == None:
         nb_total_node = nb_nodes
 
+    # Set max_height if max_height is not set
+    if max_height is None:
+        max_height = nb_nodes + 1
+
     # generate a unique label for the current node
     # and update the set of already used labels
     label = randint(1,50+nb_total_node)
