@@ -73,7 +73,9 @@ def random_binary_tree(nb_nodes, max_height=None, values=None, nb_total_node=Non
         T = BinaryNode(label)
 
         if max_height is not None:
-            max_height = 
+            max_height = max_height - 1
 
         if nb_left > 0:
-            left, val_left = random_binary_tree(nb_left, max_height=max_height, values=None, nb_total_node)
+            left, val_left = random_binary_tree(nb_left, max_height=max_height, values=values, nb_total_node)
+            values = values+val_
+
