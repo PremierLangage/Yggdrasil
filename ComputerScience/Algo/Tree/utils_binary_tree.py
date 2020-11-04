@@ -29,20 +29,17 @@ class BinaryNode():
         self.value = value
         self.left = None
         self.right = None
-
+    
     def __str__(self):
         """
         A string describing `self`.
         """
         return "A binary node..."
 
-    # English remainder
-    # Inorder (Left, Root, Right) : infixe
-    # Preorder (Root, Left, Right) : prefixe
-    # Postorder (Left, Right, Root) : postfixe
     def inorder_traversal(self):
         """
         Return a inorder traversal of the binary tree rooted at `self`.
+        (parcours profondeur infixe in French)
         """
         if self.left is None: 
             if self.right is None:
