@@ -37,6 +37,9 @@ text==
 }
 </style>
 
+Voici un arbre binaire. L'arbre vide est représenté par un point, les feuilles 
+sont donc les nœuds ayant à la fois un point pour fils gauche et fils droit.
+
 <center>
 {{ viewer|component }}
 </center>
