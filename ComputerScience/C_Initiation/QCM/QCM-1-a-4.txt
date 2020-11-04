@@ -1046,8 +1046,12 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 
         }
 
-     
+Combien y en a t-il ?
 
+- 0
++ 1
+- 2
+- 3
 
 
 
