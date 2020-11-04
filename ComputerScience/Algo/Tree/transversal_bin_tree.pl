@@ -34,7 +34,9 @@ text==
 {{ viewer.graph }}
 </pre>
 
+<center>
 {{ viewer|component }}
+</center>
 ==
 
 form==
