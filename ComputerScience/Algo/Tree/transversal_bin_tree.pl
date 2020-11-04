@@ -44,7 +44,7 @@ form==
 ==
 
 evaluator==
-grade = (100, "")
+grade = (100, "C'est dur la vie !")
 ==
 
 
