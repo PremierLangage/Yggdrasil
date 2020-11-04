@@ -14,6 +14,8 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
+from random import randint
+
 class BinaryNode(Object):
     """
     A class modeling nodes inside binary trees. The empty node (or empty tree) 
@@ -30,4 +32,14 @@ class BinaryNode(Object):
 
 def random_binary_tree(nb_nodes, max_height=None, values=None):
     """
+    Return a random binary tree having `nb_nodes` with its list of 
+    different labels.
+    """
+    label = randint(1,50+nb_nodes)
+    if values is not None:
+        while label in values:
+            label = randint(1,50+nb_nodes)
+        values = values+[label]
+    else:
+        values = [label]
     
