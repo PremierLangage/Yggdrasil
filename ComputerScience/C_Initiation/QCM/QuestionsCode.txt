@@ -58,21 +58,16 @@ Latex:1
 
     }
 
-     Proposition 1 : 
+     Proposition 1 :             Proposition 2 : 
 
-        0  1  2  3  4
+        0  1  2  3  4               0
 
-        0  2  4
+        0  2  4                     0  1  2
 
-     Proposition 2 : 
+                                    2  3  4
 
-        0
+                                    4  5
 
-        0  1  2
-
-        2  3  4
-
-        4  5
 
      Proposition 3 : 
 
