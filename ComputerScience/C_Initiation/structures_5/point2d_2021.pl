@@ -12,8 +12,8 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 text==
 Déclarez et définissez une *structure* C nommée **Point2d**. Cette structure
 devra contenir deux champs entiers nommés **abs** pour abcisse et **ord**
-pour ordonnée.
-
+pour ordonnée.<br>
+<br>
 Ecrire une fonction `affiche_point2d` qui recoit un point et affiche ses coordonnées.
 
 ==
