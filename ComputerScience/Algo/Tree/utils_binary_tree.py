@@ -40,8 +40,21 @@ class BinaryNode():
     # Inorder (Left, Root, Right) : infixe
     # Preorder (Root, Left, Right) : prefixe
     # Postorder (Left, Right, Root) : postfixe
-    def prefix_transversal():
-        pass
+    def inorder_traversal(self):
+        """
+        Return a inorder traversal of the binary tree rooted at `self`.
+        """
+        if self.left is None: 
+            if self.right is None:
+                return [self.value]
+            else:
+                return [self.value]+self.right.inorder_traversal()
+        else:
+            if self.right is None:
+                return self.left.inorder_traversal()+[self.value]
+            else:
+                return self.left.inorder_traversal()+[self.value]+self.right.inorder_traversal()
+
 
     def __to_dot_BST_point_rec(self):
         """
