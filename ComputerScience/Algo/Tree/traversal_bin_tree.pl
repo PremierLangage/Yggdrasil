@@ -56,6 +56,7 @@ sont donc les nœuds ayant à la fois un point pour fils gauche et fils droit.
 </center>
 
 Donnez un **{{ parcours }}** des valeurs contenues dans cet arbre.
+
 ==
 
 form==
@@ -72,9 +73,9 @@ form = """
 """
 
 if soluce == eval("["+inputbox.value+"]"):
-    grade = (100, '''<span class="success-state">Bravo, c'est exactement cela !</span>''')
+    grade = (100, '''<br><span class="success-state">Bravo, c'est exactement cela !</span>''')
 else:
-    grade = (0, '''<span class="error-state">Désolé, vous avez fait une erreur, le parcours attendu était : '''+str(soluce)+'</span>')
+    grade = (0, '''<br><span class="error-state">Désolé, vous avez fait une erreur, le parcours attendu était : '''+str(soluce)+'</span>')
 ==
 
 
