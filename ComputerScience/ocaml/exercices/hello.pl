@@ -16,4 +16,11 @@
 
 extends=/ComputerScience/exercices/templates/stdprogocaml.pl
 
+title=Hello world en ocaml
+
+text==
+Écrire un programme **ocaml** qui affiche **Hello world!** sur la sortie 
+standard. N'oubliez pas le retour à la ligne juste après le point d'exclamation.
+==
+
 
