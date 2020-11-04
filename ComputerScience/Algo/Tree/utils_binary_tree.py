@@ -14,3 +14,20 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
+class BinaryNode(Object):
+    """
+    A class modeling nodes inside binary trees. The empty node (or empty tree) 
+    will be modelized by `None`. Therefore, a leaf is a node having `None` for 
+    its both children.
+    """
+    def __init__(self, value=None):
+        """
+        Initialize `self` with a value. 
+        """
+        self.value = value
+        self.left = None
+        self.right = None
+
+def random_binary_tree(nb_nodes, max_height=None, values=None):
+    """
+    
