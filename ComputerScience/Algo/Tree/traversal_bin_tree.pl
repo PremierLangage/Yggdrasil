@@ -66,7 +66,6 @@ evaluator==#|python|
 form = """
 <style>
 .error-state{
-   border: 1px solid black;
 }
 </style>
 """
