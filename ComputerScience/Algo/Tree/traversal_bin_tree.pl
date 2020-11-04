@@ -64,10 +64,10 @@ form==
 
 evaluator==#|python|
 if soluce == eval("["+inputbox.value+"]"):
-    grade = (100, "Bravo, c'est exactement cela !")
+    grade = (100, '''<span class="success-state">Bravo, c'est exactement cela !</span>''')
 else:
     form = ""
-    grade = (0, "Désolé, vous avez fait une erreur, le parcours attendu était : "+str(soluce))
+    grade = (0, '''<span class="error-state">Désolé, vous avez fait une erreur, le parcours attendu était : '''+str(soluce)+'</span>')
 ==
 
 
