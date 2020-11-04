@@ -927,6 +927,7 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
                                     2  3  4                     3  4
 
                                     4  5
+                                    
 
                  Proposition 4 :             Propositon 5 : 
 
@@ -943,4 +944,5 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 - Proposition 3
 + Proposition 4
 - Proposition 5
+
 
