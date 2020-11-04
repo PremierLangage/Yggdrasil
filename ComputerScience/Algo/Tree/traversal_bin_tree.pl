@@ -75,7 +75,7 @@ form = """
 if soluce == eval("["+inputbox.value+"]"):
     grade = (100, '''<br><span class="success-state">Bravo, c'est exactement cela !</span>''')
 else:
-    grade = (0, '''<br><span class="error-state">Désolé, vous avez fait une erreur, le parcours attendu était : '''+str(soluce)+'</span>')
+    grade = (0, '''<br><span class="error-state">Désolé, vous avez fait une erreur, le parcours attendu était : '''+str(soluce)[2:-2]+'</span>')
 ==
 
 
