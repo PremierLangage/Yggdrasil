@@ -960,7 +960,7 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
                 
                 if (i * i > n)
                 
-                    printf("%d ", i);}
+                    printf("%d ", i);
             
             }
 
@@ -988,7 +988,7 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
                 
                 if (i * i <= n)
                 
-                    printf("%d ", i);}
+                    printf("%d ", i);
             
             }
 
@@ -1010,9 +1010,9 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
             
             int i;
             
-            int n = 5;
+            int n = 4;
             
-            for (i = 0; i < 3; i=i+1)
+            for (i = 0; i < n/2; i=i+1) {
             
                 printf("%d ", i);}
             
