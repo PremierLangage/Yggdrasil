@@ -964,7 +964,6 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
             
             }
 
-
 + Le programme n’affiche rien
 - 2
 - 1  2 
@@ -991,5 +990,10 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
             
             }
 
-
+- Le programme n’affiche rien
+- 2
+- 1  2 
+- 0  1  2
++ 0  1
+- 1
 
