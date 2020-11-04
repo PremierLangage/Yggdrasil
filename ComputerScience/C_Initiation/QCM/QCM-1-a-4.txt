@@ -927,7 +927,7 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
                                     2  3  4                     3  4
 
                                     4  5
-                                    
+
 
                  Proposition 4 :             Propositon 5 : 
 
@@ -944,5 +944,31 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 - Proposition 3
 + Proposition 4
 - Proposition 5
+
+*[group=Comprehension_de_code] Quel est le rendu lors de l’exécution du programme suivant ?
+
+
+     #include <stdio.h>
+        
+        int main(void){
+            
+            int i;
+            
+            int n = 5;
+            
+            for (i = 0; i < n/2; i=i+1) {
+                
+                if (i * i > n)printf("%d ", i);}
+            
+            }
+
+
++ Le programme n’affiche rien
+- 2
+- 1  2 
+- 0  1  2
+- 0  1
+- 1
+
 
 
