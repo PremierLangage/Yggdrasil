@@ -100,7 +100,7 @@ def random_binary_tree(nb_nodes, max_height=None, values=None, nb_total_node=Non
         nb_max_child = min([nb_nodes-1, 2**(max_height) - 1])
         nb_min_child = max([0, nb_nodes - (2**max_height)])
         nb_left = randint(nb_min_child, nb_max_child)
-        nb_right = (max_height - 1) - nb_left
+        nb_right = (nb_nodes - 1) - nb_left
         T = BinaryNode(label)
         # left child generation
         if nb_left > 0 and max_height > 0:
