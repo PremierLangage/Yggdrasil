@@ -29,7 +29,7 @@ before==#|python|
 from random import choice
 from utils_binary_tree import random_binary_tree
 
-Tree_exo = random_binary_tree(8, max_height=4)[0]
+Tree_exo = random_binary_tree(8, max_height=3)[0]
 viewer.graph = Tree_exo.to_dot_code_BST_point()
 inorder_trans = Tree_exo.inorder_traversal()
 preorder_trans = Tree_exo.preorder_traversal()
