@@ -25,7 +25,7 @@ inputbox =: Input
 inputbox.type = text
 inputbox.placeholder = Séparez les valeurs avec des virgules
 
-taille_arbre=0
+taille_arbre=8
 hauteur_max=3
 
 before==#|python|
