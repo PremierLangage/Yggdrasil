@@ -21,6 +21,10 @@ builder =@ /builder/before.py
 
 viewer =: GraphDrawer
 
+inputbox =: Input
+inputbox.type = text
+inputbox.placeholder = Séparez les valeurs avec des virgules
+
 before==#|python|
 from utils_binary_tree import random_binary_tree
 
@@ -52,9 +56,7 @@ sont donc les nœuds ayant à la fois un point pour fils gauche et fils droit.
 ==
 
 form==
-
-
-
+{{ inputbox|component}}
 ==
 
 evaluator==
