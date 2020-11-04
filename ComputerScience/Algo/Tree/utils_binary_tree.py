@@ -55,6 +55,20 @@ class BinaryNode():
             else:
                 return self.left.inorder_traversal()+[self.value]+self.right.inorder_traversal()
 
+    def preorder_traversal(self):
+        """
+        Return a preorder traversal of the binary tree rooted at `self`.
+        """
+        if self.left is None: 
+            if self.right is None:
+                return [self.value]
+            else:
+                return [self.value]+self.right.inorder_traversal()
+        else:
+            if self.right is None:
+                return [self.value]+self.left.inorder_traversal()
+            else:
+                return [self.value]+self.left.inorder_traversal()+self.right.inorder_traversal()
 
     def __to_dot_BST_point_rec(self):
         """
