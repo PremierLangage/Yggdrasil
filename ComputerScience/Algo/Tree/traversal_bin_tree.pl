@@ -65,7 +65,7 @@ form==
 evaluator==#|python|
 form = """
 <style>
- .success-state{
+ .success-state, .error-state{
    border: 1px solid black;
 }
 </style>
