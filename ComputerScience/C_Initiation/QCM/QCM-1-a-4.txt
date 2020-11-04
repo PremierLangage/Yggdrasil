@@ -977,19 +977,19 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 
 
      #include <stdio.h>
-        
+
         int main(void){
-            
+
             int i;
-            
+
             int n = 5;
-            
+
             for (i = 0; i < n/2; i=i+1) {
-                
+
                 if (i * i <= n)
-                
+
                     printf("%d ", i);
-            
+
             }
 
         }
