@@ -26,6 +26,7 @@ inputbox.type = text
 inputbox.placeholder = Séparez les valeurs avec des virgules
 
 before==#|python|
+from random import choice
 from utils_binary_tree import random_binary_tree
 
 Tree_exo = random_binary_tree(8, max_height=4)[0]
@@ -33,6 +34,8 @@ viewer.graph = Tree_exo.to_dot_code_BST_point()
 inorder_trans = Tree_exo.inorder_traversal()
 preorder_trans = Tree_exo.preorder_traversal()
 postorder_trans = Tree_exo.postorder_traversal()
+
+soluce, parcours = choice([(inorder_trans, "parcours profondeur infixe"), (preorder_trans, "parcours profondeur préfixe"), (postorder_trans, "parcours profondeur postfixe")])
 ==
 
 author=Nicolas Borie
@@ -52,7 +55,7 @@ sont donc les nœuds ayant à la fois un point pour fils gauche et fils droit.
 {{ viewer|component }}
 </center>
 
-Donnez un {{ parcours }} des valeurs contenu dans cet arbre.
+Donnez un **{{ parcours }}** des valeurs contenues dans cet arbre.
 ==
 
 form==
