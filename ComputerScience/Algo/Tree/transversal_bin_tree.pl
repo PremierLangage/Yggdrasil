@@ -20,9 +20,9 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 viewer =: GraphDrawer
-viewer.graph=random_binary_tree(15, max_height=5).to_dot_code_BST_point()
 
 before==
+viewer.graph=random_binary_tree(15, max_height=5).to_dot_code_BST_point()
 ==
 
 title = Graph Viewer
