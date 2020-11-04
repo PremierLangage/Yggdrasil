@@ -33,6 +33,8 @@ text==
 <pre>
 {{ viewer.graph }}
 </pre>
+
+{{ viewer|component }}
 ==
 
 form==
