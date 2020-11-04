@@ -20,7 +20,7 @@ builder =@ /builder/before.py
 
 editor =: CodeEditor
 editor.theme=dark
-editor.language=ocaml
+editor.language=cameligo
 # editor.height=350px
 
 editor.code==#|c|
