@@ -100,7 +100,7 @@ def random_binary_tree(nb_nodes, max_height=None, values=None, nb_total_node=Non
         T = BinaryNode(label)
         # left child generation
         if nb_left > 0:
-            if max_height is not None:
+            if max_height is not None and max_height >= 0:
                 left, val_left = random_binary_tree(nb_left, max_height=max_height-1, values=values, nb_total_node=nb_total_node)
             else:
                 left, val_left = random_binary_tree(nb_left, max_height=None, values=values, nb_total_node=nb_total_node)
@@ -108,7 +108,7 @@ def random_binary_tree(nb_nodes, max_height=None, values=None, nb_total_node=Non
             T.left = left
         # right child generation
         if nb_right > 0:
-            if max_height is not None:
+            if max_height is not None and max_height >= 0:
                 right, val_right = random_binary_tree(nb_right, max_height=max_height-1, values=values, nb_total_node=nb_total_node)
             else:
                 right, val_right = random_binary_tree(nb_right, max_height=None, values=values, nb_total_node=nb_total_node)
