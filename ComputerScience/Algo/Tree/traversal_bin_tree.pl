@@ -62,10 +62,11 @@ form==
 {{ inputbox|component}}
 ==
 
-evaluator==
-
-
-grade = (100, "C'est dur la vie !")
+evaluator==#|python|
+if soluce == eval("["+inputbox.value+"]"):
+    grade = (100, "Bravo, c'est exactement cela !")
+else:
+    grade = (0, "Désolé, vous avez fait une erreur, le parcours attendu était : "+str(soluce))
 ==
 
 
