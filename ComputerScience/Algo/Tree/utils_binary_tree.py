@@ -36,6 +36,8 @@ class BinaryNode():
         """
         return "A binary node..."
 
+    def prefix_transversal
+
     def __to_dot_BST_point_rec(self):
         """
         Slave method for `to_dot_code_BST_point` generated
