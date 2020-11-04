@@ -16,7 +16,7 @@
 
 from random import randint
 
-class BinaryNode(object):
+class BinaryNode():
     """
     A class modeling nodes inside binary trees. The empty node (or empty tree) 
     will be modelized by `None`. Therefore, a leaf is a node having `None` for 
