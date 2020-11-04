@@ -33,6 +33,8 @@ from random import randint
 text+=" {{ editor|component }} "
 ==
 
+form==
+==
 
 evaluator==#|python|
 from random import randint
