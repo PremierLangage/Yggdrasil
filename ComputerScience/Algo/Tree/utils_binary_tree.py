@@ -36,6 +36,23 @@ class BinaryNode():
         """
         return "A binary node..."
 
+    def height(self):
+        """
+        Return the height of the binary tree rooted at `self`. By definition, 
+        the height of the leaf are zero. 
+        """
+        if self.left is None:
+            if self.right is None:
+                return 0
+            return self.right.height()+1
+        else:
+            if self.right is None:
+                return self.left.height()+1
+            else:
+                return max([self.left.height(), self.right.height()])+1
+    
+    
+
     def inorder_traversal(self):
         """
         Return a inorder traversal of the binary tree rooted at `self`.
