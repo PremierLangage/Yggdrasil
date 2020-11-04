@@ -21,7 +21,9 @@ builder =@ /builder/before.py
 
 viewer =: GraphDrawer
 
-before==
+before==#|python|
+from utils_binary_tree import random_binary_tree
+
 viewer.graph=random_binary_tree(15, max_height=5).to_dot_code_BST_point()
 ==
 
