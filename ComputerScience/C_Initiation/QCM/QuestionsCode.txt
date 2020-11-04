@@ -59,7 +59,9 @@ Latex:1
     }
 
 Proposition 1 : 
+
     0  1  2  3  4
+    
     0  2  4
 
 Proposition 2 : 
