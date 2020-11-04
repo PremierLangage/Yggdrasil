@@ -87,7 +87,7 @@ def random_binary_tree(nb_nodes, max_height=None, values=None, nb_total_node=Non
     label = randint(1,50+nb_total_node)
     if values is not None:
         while label in values:
-            label = randint(1,50+nb_total_node)
+            label = randint(1,1+nb_total_node)
         values = values+[label]
     else:
         values = [label]
