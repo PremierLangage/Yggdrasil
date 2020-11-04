@@ -1042,11 +1042,12 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 
                 printf("%d ", i);
 
-            
+            return 0 
 
         }
 
      
+
 
 
 
