@@ -32,6 +32,7 @@ typedef struct{
 double distance(...){
   ...
 }
+
 double perimetre(...){
  ...
 }
