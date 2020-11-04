@@ -997,3 +997,4 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 + 0  1
 - 1
 
+
