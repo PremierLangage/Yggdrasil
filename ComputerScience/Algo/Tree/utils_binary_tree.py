@@ -44,14 +44,14 @@ class BinaryNode():
         ans = ""
         if self.left is None:
             ans += '    nulll'+str(self.value)+' [shape=point];\n'
-            ans += '    '+str(self.value)+' --> nulll'+str(self.value)+';\n'
+            ans += '    '+str(self.value)+' -> nulll'+str(self.value)+';\n'
         else:
-            ans += '    '+str(self.value)+' --> '+str(self.left.value)+';\n'
+            ans += '    '+str(self.value)+' -> '+str(self.left.value)+';\n'
         if self.right is None:
             ans += '    nullr'+str(self.value)+' [shape=point];\n'
-            ans += '    '+str(self.value)+' --> nullr'+str(self.value)+';\n'
+            ans += '    '+str(self.value)+' -> nullr'+str(self.value)+';\n'
         else:
-            ans += '    '+str(self.value)+' --> '+str(self.right.value)+';\n'
+            ans += '    '+str(self.value)+' -> '+str(self.right.value)+';\n'
         
         if self.left is not None:
             ans += self.left.__to_dot_BST_point_rec()
