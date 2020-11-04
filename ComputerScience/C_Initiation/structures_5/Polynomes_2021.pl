@@ -8,7 +8,7 @@ tag=structure
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-On suppose qu'une constante *MAX* a été définie.<br>
+On suppose qu'une constante *MAX* a été définie.<br><br>
 
 Déclarer et définir un type de *structure* C nommé *Monome* contenant deux champs entiers: un champ *coef* et un champ *degre*.
 
