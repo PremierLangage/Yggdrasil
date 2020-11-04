@@ -29,7 +29,7 @@ class BinaryNode():
         self.value = value
         self.left = None
         self.right = None
-    
+
     def __str__(self):
         """
         A string describing `self`.
@@ -55,6 +55,7 @@ class BinaryNode():
     def preorder_traversal(self):
         """
         Return a preorder traversal of the binary tree rooted at `self`.
+        (parcours profondeur préfixe in French)
         """
         if self.left is None: 
             if self.right is None:
@@ -70,6 +71,7 @@ class BinaryNode():
     def postorder_traversal(self):
         """
         Return a postorder traversal of the binary tree rooted at `self`.
+        (parcours profondeur postfixe in French)
         """
         if self.left is None: 
             if self.right is None:
@@ -85,6 +87,7 @@ class BinaryNode():
     def breadth_first_traversal(self):
         """
         Return the breadth first traversal of the binary tree rooted at `self`.
+        (parcours en largeur in French)
         """
         acc = [self]
         ans = []
