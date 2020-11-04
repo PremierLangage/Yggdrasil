@@ -964,6 +964,8 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
             
             }
 
+        }
+
 + Le programme n’affiche rien
 - 2
 - 1  2 
@@ -990,6 +992,8 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
             
             }
 
+        }
+
 - Le programme n’affiche rien
 - 2
 - 1  2 
@@ -1008,11 +1012,9 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
             
             int n = 5;
             
-            for (i = 0; i < n/2; i=i+1) {
-                
-                if (i * i <= n)
-                
-                    printf("%d ", i);}
+            for (i = 0; i < 3; i=i+1)
             
-            }
+                printf("%d ", i);}
+            
+            return 0;
 
