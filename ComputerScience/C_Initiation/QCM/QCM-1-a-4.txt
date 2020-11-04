@@ -1032,6 +1032,22 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 *[group=erreur_de_syntaxe] Le fichier.c suivant contient potentiellement des erreurs de syntaxes.
 
 
+     #include <stdio.h>
+
+        int main(void){
+
+            int i;
+
+            for (i = 0; i < 3; i=i+1)
+
+                printf("%d ", i);
+
+            
+
+        }
+
+     
+
 
 
 
