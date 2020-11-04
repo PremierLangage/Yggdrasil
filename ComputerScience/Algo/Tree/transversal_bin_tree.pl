@@ -28,7 +28,7 @@ viewer.graph=random_binary_tree(10, max_height=4)[0].to_dot_code_BST_point()
 ==
 
 author=Nicolas Borie
-title= 
+title=Parcours standard d'un arbre binaire
 
 text==
 
