@@ -93,7 +93,7 @@ def random_binary_tree(nb_nodes, max_height=None, values=None, nb_total_node=Non
         values = [label]
 
     # if a unique node is required
-    if nb_nodes == 1:
+    if nb_nodes <= 1:
         return BinaryNode(label), values
     else:
     # Here we possibly also need to generate children
