@@ -25,11 +25,14 @@ inputbox =: Input
 inputbox.type = text
 inputbox.placeholder = Séparez les valeurs avec des virgules
 
+taille_arbre=8
+hauteur_max=3
+
 before==#|python|
 from random import choice
 from utils_binary_tree import random_binary_tree
 
-Tree_exo = random_binary_tree(8, max_height=3)[0]
+Tree_exo = random_binary_tree(taille_arbre, max_height=hauteur_max)[0]
 viewer.graph = Tree_exo.to_dot_code_BST_point()
 inorder_trans = Tree_exo.inorder_traversal()
 preorder_trans = Tree_exo.preorder_traversal()
