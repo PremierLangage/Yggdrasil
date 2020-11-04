@@ -36,10 +36,27 @@ class BinaryNode(Object):
         """
         return "A binary node..."
 
-    def to_dot_code(self):
+    def __to_dot_BST_point_rec(self):
         """
+        Slave method for `to_dot_code_BST_point` generated
+        dot code for a single.
+        """
+        ans = ""
+        if self.left is None:
+            ans += 'null_l'+str(id(self))+' [shape=point];
+            ans += str(self.value)+' --> null_l'+str(id(self))+';'
+        if self.right is None:
+            ans += 'null_r'+str(id(self))+' [shape=point];
+            ans += str(self.value)+' --> null_r'+str(id(self))+';'
+        
 
+    def to_dot_code_BST_point(self):
         """
+        Return a DOT code to draw `self` using dot for empty node.
+        """
+        ans = 'digraph BST {\n  node [fontname="Arial"];'
+        ans += self.__to_dot_BST_point_rec()
+        return ans+'}\n'
 
 def random_binary_tree(nb_nodes, max_height=None, values=None, nb_total_node=None):
     """
@@ -74,12 +91,12 @@ def random_binary_tree(nb_nodes, max_height=None, values=None, nb_total_node=Non
 
         if max_height is not None:
             max_height = max_height - 1
-
+        # left child generation
         if nb_left > 0:
             left, val_left = random_binary_tree(nb_left, max_height=max_height, values=values, nb_total_node)
             values = val_left
             T.left = left
-        
+        # right child generation
         if nb_right > 0:
             right, val_right = random_binary_tree(nb_right, max_height=max_height, values=values, nb_total_node)
             values = val_right
