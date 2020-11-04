@@ -43,12 +43,22 @@ class BinaryNode(Object):
         """
         ans = ""
         if self.left is None:
-            ans += 'null_l'+str(id(self))+' [shape=point];
-            ans += str(self.value)+' --> null_l'+str(id(self))+';'
+            ans += 'null_l'+str(id(self))+' [shape=point];\n'
+            ans += str(self.value)+' --> null_l'+str(id(self))+';\n'
+        else:
+            ans += str(self.value)+' --> '+str(self.left.value)+';\n'
         if self.right is None:
             ans += 'null_r'+str(id(self))+' [shape=point];
-            ans += str(self.value)+' --> null_r'+str(id(self))+';'
+            ans += str(self.value)+' --> null_r'+str(id(self))+';\n'
+        else:
+            ans += str(self.value)+' --> '+str(self.right.value)+';\n'
         
+        if self.left is not None:
+            ans += self.left.__to_dot_BST_point_rec()
+        if self.right is not None:
+            ans += self.right.__to_dot_BST_point_rec()
+
+        return ans;
 
     def to_dot_code_BST_point(self):
         """
