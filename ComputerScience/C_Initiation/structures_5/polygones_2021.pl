@@ -9,7 +9,8 @@ tag=structure|function
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
-Pour la réalisation de cet exercice, on supposera que l'on dispose d'une constante *MAXSOMMETS*.
+Pour la réalisation de cet exercice, on supposera que l'on dispose d'une constante *MAXSOMMETS*.<br>
+<br>
 
 On utilise la structure suivante pour représenter un point du plan :<br>
 <br>
