@@ -98,17 +98,20 @@ def random_binary_tree(nb_nodes, max_height=None, values=None, nb_total_node=Non
         nb_left = randint(nb_min_child, nb_max_child)
         nb_right = (max_height - 1) - nb_left
         T = BinaryNode(label)
-
-        if max_height is not None:
-            max_height = max_height - 1
         # left child generation
         if nb_left > 0:
-            left, val_left = random_binary_tree(nb_left, max_height=max_height, values=values, nb_total_node=nb_total_node)
+            if max_height is not None:
+                left, val_left = random_binary_tree(nb_left, max_height=max_height-1, values=values, nb_total_node=nb_total_node)
+            else:
+                left, val_left = random_binary_tree(nb_left, max_height=None, values=values, nb_total_node=nb_total_node)
             values = val_left
             T.left = left
         # right child generation
         if nb_right > 0:
-            right, val_right = random_binary_tree(nb_right, max_height=max_height, values=values, nb_total_node=nb_total_node)
+            if max_height is not None:
+                right, val_right = random_binary_tree(nb_right, max_height=max_height-1, values=values, nb_total_node=nb_total_node)
+            else:
+                right, val_right = random_binary_tree(nb_right, max_height=None, values=values, nb_total_node=nb_total_node)
             values = val_right
             T.right = right
         
