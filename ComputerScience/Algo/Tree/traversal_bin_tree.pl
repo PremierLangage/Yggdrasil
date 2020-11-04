@@ -39,7 +39,7 @@ soluce, parcours = choice([(inorder_trans, "parcours profondeur infixe"), (preor
 ==
 
 author=Nicolas Borie
-title=Parcours standard d'un arbre binaire
+title=Parcours dans un arbre binaire
 
 text==
 <style>
