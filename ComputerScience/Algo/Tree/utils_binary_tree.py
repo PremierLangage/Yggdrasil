@@ -44,12 +44,12 @@ class BinaryNode():
         ans = ""
         if self.left is None:
             ans += 'null_l'+str(id(self))+' [shape=point];\n'
-            ans += str(self.value)+' --> null_l'+str(id(self))+';\n'
+            ans += str(self.value)+' --> nulll'+str(id(self))+';\n'
         else:
             ans += str(self.value)+' --> '+str(self.left.value)+';\n'
         if self.right is None:
             ans += 'null_r'+str(id(self))+' [shape=point];\n'
-            ans += str(self.value)+' --> null_r'+str(id(self))+';\n'
+            ans += str(self.value)+' --> nullr'+str(id(self))+';\n'
         else:
             ans += str(self.value)+' --> '+str(self.right.value)+';\n'
         
