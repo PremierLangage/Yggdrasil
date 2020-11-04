@@ -47,7 +47,7 @@ typedef struct{
 } Piece;
 
 int combat(...){
-...
+    ...
 }
 
 
