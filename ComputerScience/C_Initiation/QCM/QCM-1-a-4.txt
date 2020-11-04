@@ -1018,3 +1018,8 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
             
             return 0;
 
+        }
+
+
+
+
