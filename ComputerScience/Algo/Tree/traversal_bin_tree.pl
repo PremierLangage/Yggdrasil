@@ -25,8 +25,8 @@ inputbox =: Input
 inputbox.type = text
 inputbox.placeholder = Séparez les valeurs avec des virgules
 
-taille_arbre=10
-hauteur_max=4
+taille_arbre=15
+hauteur_max=3
 
 before==#|python|
 from random import choice
