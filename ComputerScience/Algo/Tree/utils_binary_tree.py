@@ -85,6 +85,21 @@ class BinaryNode():
             else:
                 return self.left.postorder_traversal()+self.right.postorder_traversal()+[self.value]
 
+    def breadth_first_traversal(self):
+        """
+        Return the breadth first traversal of the binary tree rooted at `self`.
+        """
+        acc = [self]
+        ans = []
+        while len(acc) != 0:
+            node = acc.pop(0)
+            ans.append(node.value)
+            if node.left is not None:
+                acc.append(node.left)
+            if node.right is not None:
+                acc.append(node.right)
+        return ans
+
     def __to_dot_BST_point_rec(self):
         """
         Slave method for `to_dot_code_BST_point` generated
@@ -163,4 +178,5 @@ def random_binary_tree(nb_nodes, max_height=None, values=None, nb_total_node=Non
             T.right = right
         
         return T, values
+
 
