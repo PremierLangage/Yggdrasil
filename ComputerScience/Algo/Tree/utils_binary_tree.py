@@ -64,7 +64,7 @@ class BinaryNode():
         """
         Return a DOT code to draw `self` using dot for empty node.
         """
-        ans = 'digraph BST {\n  node [fontname="Arial"];'
+        ans = 'digraph BST {\n  node [fontname="Arial"];\n'
         ans += self.__to_dot_BST_point_rec()
         return ans+'}\n'
 
