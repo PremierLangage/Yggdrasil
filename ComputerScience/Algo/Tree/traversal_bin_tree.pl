@@ -34,8 +34,9 @@ viewer.graph = Tree_exo.to_dot_code_BST_point()
 inorder_trans = Tree_exo.inorder_traversal()
 preorder_trans = Tree_exo.preorder_traversal()
 postorder_trans = Tree_exo.postorder_traversal()
+breadth_trans = Tree_exo.breadth_first_traversal()
 
-soluce, parcours = choice([(inorder_trans, "parcours profondeur infixe"), (preorder_trans, "parcours profondeur préfixe"), (postorder_trans, "parcours profondeur postfixe")])
+soluce, parcours = choice([(inorder_trans, "parcours profondeur infixe"), (preorder_trans, "parcours profondeur préfixe"), (postorder_trans, "parcours profondeur postfixe"), (breadth_trans, "parcours en largeur")])
 ==
 
 author=Nicolas Borie
@@ -80,6 +81,7 @@ if soluce == eval("["+inputbox.value+"]"):
 else:
     grade = (0, ''' <span class="error-state">Désolé, vous avez fait une erreur, le parcours attendu était : '''+str(soluce)[1:-1]+'</span>')
 ==
+
 
 
 
