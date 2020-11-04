@@ -44,7 +44,7 @@ typedef struct{
 	int force;
 	int agilite;
 	int pdv;
-	}Piece;
+} Piece;
 
 int combat(...){
 ...
@@ -121,6 +121,7 @@ tests==
 ["aléatoire ", "",str(random.randint(1000,2008))+" "+str(random.randint(0,4))+" "+str(random.randint(0,4))],
 ]
 ==
+
 
 
 
