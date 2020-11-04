@@ -27,7 +27,8 @@ from utils_binary_tree import random_binary_tree
 viewer.graph=random_binary_tree(10, max_height=4)[0].to_dot_code_BST_point()
 ==
 
-title = Graph Viewer
+author=Nicolas Borie
+title= 
 
 text==
 
