@@ -14,7 +14,7 @@ Déclarez et définissez une *structure* C nommée **Point2d**. Cette structure
 devra contenir deux champs entiers nommés **abs** pour abcisse et **ord**
 pour ordonnée.
 
-Ecrire une fonction `affiche_point2d` qui recoit un point et affiche ses coodonnées.
+Ecrire une fonction `affiche_point2d` qui recoit un point et affiche ses coordonnées.
 
 ==
 
@@ -61,6 +61,7 @@ tests==
  ["Déclaration et utilisation",str(random.randint(-20,20))+" "+str(random.randint(-20,20))  ,""],
 ]
 ==
+
 
 
 
