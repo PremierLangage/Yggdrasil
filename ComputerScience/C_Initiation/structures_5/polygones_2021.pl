@@ -13,7 +13,7 @@ On utilise la structure pour représenter un point du plan :<br>
 <br>
 `typedef struct`{<br>
 int x, y;<br>
-}Point;<br> <br>
+} Point;<br> <br>
 
 Ecrire une fonction `distance ` qui reçoit deux *Point* et renvoie leur distance.<br>
 <br>
@@ -98,6 +98,7 @@ tests==
 	
   ["sommets aléatoires","", " ".join([str(random.randint(-10,10)) for i in range(2*random.randint(3,6))]) ] ]
 ==
+
 
 
 
