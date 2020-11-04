@@ -36,7 +36,12 @@ class BinaryNode():
         """
         return "A binary node..."
 
-    def prefix_transversal
+    # English remainder
+    # Inorder (Left, Root, Right) : infixe
+    # Preorder (Root, Left, Right) : prefixe
+    # Postorder (Left, Right, Root) : postfixe
+    def prefix_transversal():
+        pass
 
     def __to_dot_BST_point_rec(self):
         """
