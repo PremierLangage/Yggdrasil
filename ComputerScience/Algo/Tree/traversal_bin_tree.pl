@@ -24,7 +24,9 @@ viewer =: GraphDrawer
 before==#|python|
 from utils_binary_tree import random_binary_tree
 
-viewer.graph=random_binary_tree(10, max_height=4)[0].to_dot_code_BST_point()
+Tree_exo = random_binary_tree(10, max_height=4)[0]
+viewer.graph = Tree_exo.to_dot_code_BST_point()
+inorder_trans = Tree_exo.inorder_traversal()
 ==
 
 author=Nicolas Borie
@@ -43,6 +45,8 @@ sont donc les nœuds ayant à la fois un point pour fils gauche et fils droit.
 <center>
 {{ viewer|component }}
 </center>
+
+{{ inorder_trans }}
 ==
 
 form==
