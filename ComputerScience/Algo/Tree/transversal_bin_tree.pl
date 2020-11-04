@@ -39,7 +39,7 @@ text==
 
 form==
 
-{{ viewer|component }}
+
 
 ==
 
