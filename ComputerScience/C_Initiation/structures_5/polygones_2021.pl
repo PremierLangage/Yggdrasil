@@ -20,8 +20,8 @@ typedef struct`{<br>
 Ecrire une fonction `distance ` qui reçoit deux *Point* et renvoie leur distance.<br>
 <br>
 Définir une structure `Polygone` formée : <br>
- - d'un tableau de *MAXSOMMETS* *Point*, de nom `sommets`, <br>
- - d'un entier `nb_sommets`, le nombre effectif de points. <br>
+   - d'un tableau de *MAXSOMMETS* *Point*, de nom `sommets`, <br>
+   - d'un entier `nb_sommets`, le nombre effectif de points. <br>
 <br>
 
 Ecrire une fonction `perimetre` qui recoit un polygone et renvoie son périmètre.
