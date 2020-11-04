@@ -47,15 +47,16 @@ def random_binary_tree(nb_nodes, max_height=None, values=None, nb_total_node=Non
     different labels.
     """
     # Set the total number of nodes at first call
+    # We need it to both bound values and make them unique
     if nb_total_node == None:
         nb_total_node = nb_nodes
 
     # generate a unique label for the current node
     # and update the set of already used labels
-    label = randint(1,50+nb_nodes)
+    label = randint(1,50+nb_total_node)
     if values is not None:
         while label in values:
-            label = randint(1,50+nb_nodes)
+            label = randint(1,50+nb_total_node)
         values = values+[label]
     else:
         values = [label]
@@ -64,7 +65,15 @@ def random_binary_tree(nb_nodes, max_height=None, values=None, nb_total_node=Non
     if nb_nodes == 1:
         return BinaryNode(label), values
     else:
+    # Here we possibly also need to generate children
         nb_max_child = min([nb_nodes-1, 2**(max_height) - 1])
-        nb_min_child = max([0, (nb_nodes-1) - ])
-        nb_left = randint(0, )
+        nb_min_child = max([0, nb_nodes - (2**max_height)])
+        nb_left = randint(nb_min_child, nb_max_child)
         nb_right = (max_height - 1) - nb_left
+        T = BinaryNode(label)
+
+        if max_height is not None:
+            max_height = 
+
+        if nb_left > 0:
+            left, val_left = random_binary_tree(nb_left, max_height=max_height, values=None, nb_total_node)
