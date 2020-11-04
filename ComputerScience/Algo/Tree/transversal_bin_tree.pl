@@ -30,9 +30,6 @@ viewer.graph=random_binary_tree(15, max_height=5)[0].to_dot_code_BST_point()
 title = Graph Viewer
 
 text==
-<pre>
-{{ viewer.graph }}
-</pre>
 
 <center>
 {{ viewer|component }}
