@@ -63,10 +63,17 @@ form==
 ==
 
 evaluator==#|python|
+form = """
+<style>
+ .success-state{
+   border: 1px solid black;
+}
+</style>
+"""
+
 if soluce == eval("["+inputbox.value+"]"):
     grade = (100, '''<span class="success-state">Bravo, c'est exactement cela !</span>''')
 else:
-    form = ""
     grade = (0, '''<span class="error-state">Désolé, vous avez fait une erreur, le parcours attendu était : '''+str(soluce)+'</span>')
 ==
 
