@@ -14,7 +14,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-extends=/ComputerScience/exercices/templates/stdprogocaml.pl
+extends=/ComputerScience/ocaml/templates/stdprogocaml.pl
 
 title=Hello world en ocaml
 
