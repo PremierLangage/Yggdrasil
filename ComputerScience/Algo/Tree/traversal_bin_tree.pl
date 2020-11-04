@@ -32,7 +32,7 @@ Tree_exo = random_binary_tree(8, max_height=4)[0]
 viewer.graph = Tree_exo.to_dot_code_BST_point()
 inorder_trans = Tree_exo.inorder_traversal()
 preorder_trans = Tree_exo.preorder_traversal()
-
+postorder_trans = Tree_exo.postorder_traversal()
 ==
 
 author=Nicolas Borie
@@ -52,7 +52,7 @@ sont donc les nœuds ayant à la fois un point pour fils gauche et fils droit.
 {{ viewer|component }}
 </center>
 
-{{ inorder_trans }}
+Donnez un {{ parcours }} des valeurs contenu dans cet arbre.
 ==
 
 form==
@@ -60,6 +60,8 @@ form==
 ==
 
 evaluator==
+
+
 grade = (100, "C'est dur la vie !")
 ==
 
