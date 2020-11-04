@@ -27,7 +27,7 @@ Ecrire une fonction `perimetre` qui recoit un polygone et renvoie son périmètr
 editor.code==
 typedef struct{
  ...
-}Polygone;
+} Polygone;
 
 double distance(...){
   ...
