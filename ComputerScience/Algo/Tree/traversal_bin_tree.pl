@@ -69,6 +69,9 @@ form = """
 .error-state{
    padding: 10px;
 }
+.success-state{
+   padding: 10px;
+}
 </style>
 """
 
