@@ -149,6 +149,25 @@ class BinaryNode():
                 acc.append(node.right)
         return ans
 
+    def to_string_code(self):
+        """
+        Return a string coding for the binary tree
+        d : node with two children
+        l : left child only
+        r : right child only
+        f : leaf
+        """
+        if self.left is None: 
+            if self.right is None:
+                return "f "+str(self.value)
+            else:
+                return "r "+str(self.value)+" "+self.right.to_string_code()
+        else:
+            if self.right is None:
+                return "l "+str(self.value)+" "+self.left.to_string_code()
+            else:
+                return self.left.postorder_traversal()+self.right.postorder_traversal()+[self.value]
+
     def __to_dot_BST_point_rec(self):
         """
         Slave method for `to_dot_code_BST_point` generated
