@@ -1299,4 +1299,9 @@ Combien y en a t-il ?
 **[group=en-tete-fonction] On souhaite définir une fonction stockant deux entiers saisis par l’utilisateur. 
 Quelle sont les en-têtes possibles de cette fonction ?
 
-
++ void saisirDeuxEntiers(int *n, int *m)
+- void saisirDeuxEntiers(int n, int m)
++ int saisirDeuxEntiers(int *n, int *m)
+- int saisirDeuxEntiers(int n, int m)
+- int, int saisirDeuxEntiers(int *n, int *m)
+- int, int saisirDeuxEntiers(int n, int m)
