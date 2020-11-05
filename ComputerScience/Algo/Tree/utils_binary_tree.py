@@ -70,7 +70,7 @@ class BinaryNode():
             else:
                 return self.left.leafs()+self.right.leafs()
     
-    def internal_nodes(self)
+    def internal_nodes(self):
         """
         Return the list of values of the internal nodes of the binary tree 
         rooted at `self`.
