@@ -39,7 +39,11 @@ class BinaryNode():
     def height(self):
         """
         Return the height of the binary tree rooted at `self`. By definition, 
-        the height of the leaf are zero. 
+        the height of the leaf are zero. Le height of an internal node having 
+        two children is the max the heights of its two children plus one.
+
+        With this, the height is also the lenght of the longest path from the 
+        to its leafs.
         """
         if self.left is None:
             if self.right is None:
