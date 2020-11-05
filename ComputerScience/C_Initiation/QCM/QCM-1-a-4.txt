@@ -1305,3 +1305,5 @@ Quelle sont les en-têtes possibles de cette fonction ?
 - int saisirDeuxEntiers(int n, int m)
 - int, int saisirDeuxEntiers(int *n, int *m)
 - int, int saisirDeuxEntiers(int n, int m)
+
+
