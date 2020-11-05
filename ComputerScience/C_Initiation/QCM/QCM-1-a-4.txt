@@ -1306,4 +1306,4 @@ Quelle sont les en-têtes possibles de cette fonction ?
 - int, int saisirDeuxEntiers(int *n, int *m)
 - int, int saisirDeuxEntiers(int n, int m)
 
-
+**[group=appel_fonction] On suppose quenetmsont deux variables de typeintet que l’onse donne des fonctions dont les en-têtes sontvoid f(int a, int *b)etint g(int c). Parmiles instructions suivantes, lesquelles sont correctes ?
