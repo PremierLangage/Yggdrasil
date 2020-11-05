@@ -1006,21 +1006,21 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 
      #include <stdio.h>
 
-        int main(void){
+    int main(void){
 
-            int i;
+        int i;
 
-            int n = 4;
+        int n = 4;
 
-            for (i = 0; i < n/2; i=i+1) {
+        for (i = 0; i < n/2; i=i+1) {
 
-                if (i * i >= n)
+            if (i * i >= n)
 
-                    printf("%d ", i);
-
-            }
+                printf("%d ", i);
 
         }
+
+    }
 
 + Le programme n’affiche rien
 - 2
