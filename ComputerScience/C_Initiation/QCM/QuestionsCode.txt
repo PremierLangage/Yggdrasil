@@ -84,6 +84,7 @@ Latex:1
 + Proposition 4
 - Proposition 5
 
+
 *[group=resultatboucle] Qu’affiche le programme suivant ?
 
 
