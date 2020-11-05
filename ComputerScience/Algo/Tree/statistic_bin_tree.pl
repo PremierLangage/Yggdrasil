@@ -25,14 +25,11 @@ inputbox =: Input
 inputbox.type = number
 inputbox.placeholder = Entrez votre nombre ici
 
-taille_arbre=8
-hauteur_max=5
-
 before==#|python|
-from random import choice
+from random import choice, randint
 from utils_binary_tree import random_binary_tree
 
-Tree_exo = random_binary_tree(int(taille_arbre), max_height=int(hauteur_max))[0]
+Tree_exo = random_binary_tree(randint(8, 14))[0]
 viewer.graph = Tree_exo.to_dot_code_BST_point()
 height = Tree_exo.height()
 nb_leafs = len(Tree_exo.leafs())
