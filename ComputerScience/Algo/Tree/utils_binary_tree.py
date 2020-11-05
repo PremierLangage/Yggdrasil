@@ -70,6 +70,12 @@ class BinaryNode():
             else:
                 return self.left.leafs()+self.right.leafs()
     
+    def internal_nodes(self)
+        """
+        Return the list of values of the internal nodes of the binary tree 
+        rooted at `self`.
+        """
+
     def inorder_traversal(self):
         """
         Return a inorder traversal of the binary tree rooted at `self`.
