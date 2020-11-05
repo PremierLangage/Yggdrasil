@@ -26,7 +26,7 @@ inputbox.type = number
 inputbox.placeholder = Entrez votre nombre ici
 
 taille_arbre=8
-hauteur_max=3
+hauteur_max=5
 
 before==#|python|
 from random import choice
