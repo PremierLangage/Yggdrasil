@@ -1120,4 +1120,6 @@ Combien y en a t-il ?
 
 *[group=condition] L’instruction (ou le bloc) d’une boucle est exécutée lorsque la condition est ...
 
-
++ ... vraie
+- ... fausse
+- ... évaluée pour la deuxième fois
