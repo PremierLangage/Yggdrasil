@@ -1111,7 +1111,7 @@ Combien y en a t-il ?
 + testée juste avant l’exécution du bloc
 - toujours testée une seule fois
 
-*[group=boucle_infinie] On peut écrire une boucle infinie avec :
+**[group=boucle_infinie] On peut écrire une boucle infinie avec :
 
 + une boucle for
 + une bouclewhile
@@ -1123,3 +1123,10 @@ Combien y en a t-il ?
 + ... vraie
 - ... fausse
 - ... évaluée pour la deuxième fois
+
+*[group=break_dans_un_switch] A quoi sert un break dans un switch ?
+
+à sortir du programme
+à passer au test suivant
++ à sortir du switch
+à décider du vainqueur
