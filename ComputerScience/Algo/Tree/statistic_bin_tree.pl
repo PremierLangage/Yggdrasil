@@ -54,7 +54,6 @@ text==
 <style>
  .graph-viewer-component {
  pointer-events: none;
- background-size : 50% 50%;
 }
 </style>
 
