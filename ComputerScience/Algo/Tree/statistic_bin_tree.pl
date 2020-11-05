@@ -37,7 +37,7 @@ viewer.graph = Tree_exo.to_dot_code_BST_point()
 height = Tree_exo.height()
 nb_leafs = len(Tree_exo.leafs())
 
-soluce, parcours = choice([(height, "la hauteur")])
+soluce, parcours = choice([(height, "la hauteur"), (nb_leafs, "le nombre de feuilles")])
 ==
 
 author=Nicolas Borie
