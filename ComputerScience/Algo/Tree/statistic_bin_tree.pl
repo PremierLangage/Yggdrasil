@@ -40,12 +40,14 @@ max_leaf = max(Tree_exo.leafs())
 min_leaf = min(Tree_exo.leafs())
 nb_internal = len(Tree_exo.internal_nodes())
 
-soluce, parcours = choice([ \
-... (height, "la hauteur"), \
-... (nb_leafs, "le nombre de feuilles"), \
-... (max_leaf, "l'étiquette maximale dans les feuilles"), \
-... (min_leaf, "l'étiquette minimale dans les feuilles"), \
-... (nb_internal, "nombre de nœuds internes")])
+list_stat = []
+list_stat.appen( (height, "la hauteur") )
+list_stat.appen( (nb_leafs, "le nombre de feuilles") )
+list_stat.appen( (max_leaf, "l'étiquette maximale dans les feuilles") )
+list_stat.appen( (min_leaf, "l'étiquette minimale dans les feuilles") )
+list_stat.appen( (nb_internal, "nombre de nœuds internes") )
+
+soluce, parcours = choice(list_stat)
 ==
 
 author=Nicolas Borie
