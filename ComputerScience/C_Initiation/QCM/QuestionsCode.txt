@@ -85,29 +85,15 @@ Latex:1
 - Proposition 5
 
 
-* Qu'affiche le programme suivant ?
-
-
-    #include <stdio.h>
-
-    int main(void){
-
-        int a = 2;
-
-        for (a = 0; a < 10; a+=1)
-
-            printf("+");
-
-        printf("\n");
-
-        return 0 
-
-    }
+**[group=appel_fonction] On suppose que n et m sont deux variables de type int et que l’on se donne des fonctions
+ dont les en-têtes sont `void f(int a, int *b)` et `int g(int c)`. 
+ Parmi les instructions suivantes, lesquelles sont correctes ?
 
 - Proposition 1
 - Proposition 2
 - Proposition 3
 + Proposition 4
 - Proposition 5
+
 
 
