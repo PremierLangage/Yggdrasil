@@ -1111,12 +1111,13 @@ Combien y en a t-il ?
 + testée juste avant l’exécution du bloc
 - toujours testée une seule fois
 
-*[group=boucke_infinie] On peut écrire une boucle infinie avec :
+*[group=boucle_infinie] On peut écrire une boucle infinie avec :
 
 + une boucle for
 + une bouclewhile
 + une boucledo while
 - impossible en C
 
+*[group=condition] L’instruction (ou le bloc) d’une boucle est exécutée lorsque la condition est ...
 
 
