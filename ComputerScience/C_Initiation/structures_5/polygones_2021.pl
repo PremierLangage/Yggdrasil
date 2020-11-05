@@ -14,7 +14,7 @@ Pour la réalisation de cet exercice, on supposera que l'on dispose d'une consta
 
 On utilise la structure suivante pour représenter un point du plan :<br>
 <br>
-typedef struct`{<br>
+typedef struct{<br>
     int abs, ord;<br>
 } Point;<br> <br>
 
@@ -50,7 +50,7 @@ typedef struct {
 } Polygone;
 
 double distance(Point a ,Point b){
-    return sqrt((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y));
+    return sqrt((a.abs-b.abs)*(a.abs-b.abs)+(a.ord-b.ord)*(a.ord-b.ord));
 }
 double perimetre(Polygone p){
     int i;
@@ -70,8 +70,8 @@ codebefore==
 #define MAXSOMMETS 50
 
 typedef struct{
-int x;
-int y;
+int abs;
+int ord;
 }Point;
 
 ==
@@ -86,8 +86,8 @@ int main(){
 
   while (scanf("%d", &x) == 1){
     scanf("%d",&y);
-    tab.sommets[size].x = x;
-    tab.sommets[size].y=y;
+    tab.sommets[size].abs = abs;
+    tab.sommets[size].ord=ord;
     size++;
   }
   tab.nb_sommets=size;
@@ -103,6 +103,7 @@ tests==
 	
   ["sommets aléatoires","", " ".join([str(random.randint(-10,10)) for i in range(2*random.randint(3,6))]) ] ]
 ==
+
 
 
 
