@@ -1307,5 +1307,7 @@ Quelle sont les en-têtes possibles de cette fonction ?
 - int, int saisirDeuxEntiers(int n, int m)
 
 **[group=appel_fonction] On suppose que n et m sont deux variables de type int et que l’on se donne des fonctions
- dont les en-têtes sont void f(int a, int *b) et int g(int c). 
+ dont les en-têtes sont `void f(int a, int *b)` et `int g(int c)`. 
  Parmi les instructions suivantes, lesquelles sont correctes ?
+
+ 
