@@ -86,8 +86,8 @@ int main(){
 
   while (scanf("%d", &x) == 1){
     scanf("%d",&y);
-    tab.sommets[size].abs = abs;
-    tab.sommets[size].ord=ord;
+    tab.sommets[size].x = x;
+    tab.sommets[size].y=y;
     size++;
   }
   tab.nb_sommets=size;
