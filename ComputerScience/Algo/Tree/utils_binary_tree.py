@@ -62,7 +62,7 @@ class BinaryNode():
         """
         if self.left is None:
             if self.right is None:
-                return [self.values]
+                return [self.value]
             return self.right.leafs()
         else:
             if self.right is None:
