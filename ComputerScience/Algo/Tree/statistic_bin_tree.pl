@@ -76,7 +76,7 @@ form = """
 </style>
 """
 
-if soluce == eval("["+inputbox.value+"]"):
+if soluce == eval(inputbox.value+):
     grade = (100, ''' <span class="success-state">Bravo, c'est exactement cela : '''+str(soluce)[1:-1]+'</span>')
 else:
     grade = (0, ''' <span class="error-state">Désolé, vous avez fait une erreur, le parcours attendu était : '''+str(soluce)[1:-1]+'</span>')
