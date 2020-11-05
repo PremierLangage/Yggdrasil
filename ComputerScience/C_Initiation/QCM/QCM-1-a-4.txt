@@ -1269,3 +1269,4 @@ Combien y en a t-il ?
 - 6 et 4
 - 5 et 4
 
+*[group=boucle_for] Qu’affiche le programme suivant ?
