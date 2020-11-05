@@ -1211,7 +1211,7 @@ Combien y en a t-il ?
 + 11 lignes contenant chacune le caractère +
 - 10 lignes contenant chacune le caractère +
 
-*[group=bouclewhile] Qu’affiche le programme suivant ?
+*[group=boucle_while] Qu’affiche le programme suivant ?
 
 
     int main(){
