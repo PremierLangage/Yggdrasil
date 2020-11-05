@@ -75,6 +75,15 @@ class BinaryNode():
         Return the list of values of the internal nodes of the binary tree 
         rooted at `self`.
         """
+        if self.left is None:
+            if self.right is None:
+                return []
+            return self.right.internal_nodes()
+        else:
+            if self.right is None:
+                return self.left.internal_nodes()
+            else:
+                return [self.value]+self.left.internal_nodes()+self.right.internal_nodes()
 
     def inorder_traversal(self):
         """
