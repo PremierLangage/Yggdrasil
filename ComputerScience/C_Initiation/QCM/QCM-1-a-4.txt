@@ -1097,14 +1097,18 @@ Combien y en a t-il ?
 + 2
 - 3
 
-*[group=erreur_de_syntaxe] La parenthèse suivant un for
+*[group=for] La parenthèse suivant un for
 
 + contient obligatoirement et exactement 2 points virgules (;)
 - peut-être laissée vide
 - contient obligatoirement et exactement 3 points virgules (;)
 + peut contenir des expressions vides
 
+*[group=for] La condition d'une boucle for
 
-
+- testée juste après l’exécution du bloc
+- toujours testée juste après l’évaluation de l’expression d’incrémentation
++ testée juste avant l’exécution du bloc
+- toujours testée une seule fois
 
 
