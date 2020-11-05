@@ -36,6 +36,8 @@ nb_leafs = len(Tree_exo.leafs())
 max_leaf = max(Tree_exo.leafs())
 min_leaf = min(Tree_exo.leafs())
 nb_internal = len(Tree_exo.internal_nodes())
+max_internal = max(Tree_exo.internal_nodes())
+min_internal = min(Tree_exo.internal_nodes())
 
 list_stat = []
 list_stat.append( (height, "la hauteur") )
@@ -43,6 +45,8 @@ list_stat.append( (nb_leafs, "le nombre de feuilles") )
 list_stat.append( (max_leaf, "l'étiquette maximale dans les feuilles") )
 list_stat.append( (min_leaf, "l'étiquette minimale dans les feuilles") )
 list_stat.append( (nb_internal, "nombre de nœuds internes") )
+list_stat.append( (max_internal, "l'étiquette maximale parmi les nœuds internes") )
+list_stat.append( (min_internal, "l'étiquette minimale parmi les nœuds internes") )
 
 soluce, parcours = choice(list_stat)
 ==
