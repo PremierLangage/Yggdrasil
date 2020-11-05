@@ -22,7 +22,7 @@ builder =@ /builder/before.py
 viewer =: GraphDrawer
 
 inputbox =: Input
-inputbox.type = text
+inputbox.type = number
 inputbox.placeholder = Entrez votre nombre ici
 
 taille_arbre=8
