@@ -85,7 +85,7 @@ Latex:1
 - Proposition 5
 
 
-*[group=resultatboucle] Qu’affiche le programme suivant ?
+*[group=resultatboucle] Qu'affiche le programme suivant ?
 
 
     #include <stdio.h>
@@ -103,5 +103,6 @@ Latex:1
         return 0 
 
     }
+
 
 
