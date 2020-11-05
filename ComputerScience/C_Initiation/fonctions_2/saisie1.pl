@@ -16,7 +16,7 @@ text==
  La saisie a lieu tant que l'utilisateur entre un entier incorrect. 
  La fonction renvoie si oui ou non la lecture c'est bien passée. 
  
- La fonction reçoit l'adresse sur l'entier ou placé la saisie.
+ La fonction reçoit l'adresse sur l'entier où placer la saisie.
 
     The **scanf** function return the number of input items successfully matched and assigned,
      which can be fewer than provided for, or even zero in the event of an early matching failure. 
@@ -70,6 +70,7 @@ tests==
  ["Aléatoire",' '.join([str(random.randint(1,4)),str(random.randint(11, 24))]), "0 -1 5"]
  ]
 ==
+
 
 
 
