@@ -104,5 +104,10 @@ Latex:1
 
     }
 
+- Proposition 1
+- Proposition 2
+- Proposition 3
++ Proposition 4
+- Proposition 5
 
 
