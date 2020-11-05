@@ -1150,9 +1150,9 @@ Combien y en a t-il ?
 
     }
 
-9 fois le caractère + sur une seule ligne
-rien
-11 fois le caractère+ sur une seule ligne
-10 fois le caractère + sur une seule ligne
-11 lignes contenant chacune le caractère +
-10 lignes contenant chacune le caractère +
+- 9 fois le caractère + sur une seule ligne
+- rien
+- 11 fois le caractère + sur une seule ligne
+- 10 fois le caractère + sur une seule ligne
+- 11 lignes contenant chacune le caractère +
++ 10 lignes contenant chacune le caractère +
