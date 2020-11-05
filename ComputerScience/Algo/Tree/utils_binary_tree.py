@@ -55,6 +55,21 @@ class BinaryNode():
             else:
                 return max([self.left.height(), self.right.height()])+1
     
+    def leafs(self):
+        """
+        Return the list of values of the leafs of the binary tree rooted at 
+        `self`.
+        """
+        if self.left is None:
+            if self.right is None:
+                return [self.values]
+            return self.right.leafs()
+        else:
+            if self.right is None:
+                return self.left.leafs()
+            else:
+                return self.left.leafs()+self.right.leafs()
+    
     def inorder_traversal(self):
         """
         Return a inorder traversal of the binary tree rooted at `self`.
