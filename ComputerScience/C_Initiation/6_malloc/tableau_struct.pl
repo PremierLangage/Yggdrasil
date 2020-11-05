@@ -6,7 +6,7 @@ tag=array|malloc
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author=
 text==
-On a définit un type `Etudiant` permettant de mémoriser la fiche dun étudiant.
+On a définit un type `Etudiant` permettant de mémoriser la fiche d'un étudiant.
 Ecrire une fonction `allouetab`qui recoit un entier **size** et renvoie l'adresse d'une zone pouvant contenir 
 **size**  `Etudiant`
 ==
@@ -77,6 +77,7 @@ tests==
  ["Aléatoire", str(random.randint(1000000000, 2000000000)), ""]]
 
 ==
+
 
 
 
