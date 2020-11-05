@@ -35,7 +35,7 @@ Latex:1
 - 4
 
 
-*[group=Comprehension_de_code] Quel est le rendu lors de l’exécution du programme suivant ?
+* Quel est le rendu lors de l’exécution du programme suivant ?
 
 
      #include <stdio.h>
@@ -85,7 +85,7 @@ Latex:1
 - Proposition 5
 
 
-*[group=resultatboucle] Qu'affiche le programme suivant ?
+* Qu'affiche le programme suivant ?
 
 
     #include <stdio.h>
