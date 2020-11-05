@@ -1243,4 +1243,35 @@ Combien y en a t-il ?
 - 2 et 1
 - 1 et 1
 
+*[group=boucle_do_while] Qu’affiche le programme suivant ?
+
+
+    int main(){
+
+        int n = 10, m = 0;
+
+        while(n >= 0 && m <= n){
+
+            if(n%2 == 0)
+
+                n = n/2;
+
+            else {
+
+                n = n-1; m = m+1;
+
+            }
+
+        }
+
+        printf("%d et %d\n", n, m);
+
+        return 0;
+
+    }
+
++ 0 et 2
+- 5 et 6
+- 2 et 1
+- 1 et 1
 
