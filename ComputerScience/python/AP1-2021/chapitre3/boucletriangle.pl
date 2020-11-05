@@ -41,7 +41,7 @@ Entrez un entier strictement positif: 5
 ==
 
 code==
-int(input("Entrez un entier strictement positf: "))
+int(input("Entrez un entier strictement positif: "))
 ==
 
 before==
@@ -56,9 +56,9 @@ mplsoluce3 += str(v)
 ==
 
 soluce==
-nb=int(input("Entrez un entier strictement positf: "))
+nb=int(input("Entrez un entier strictement positif: "))
 while nb <1:
-    nb=int(input("Entrez un entier strictement positf: "))
+    nb=int(input("Entrez un entier strictement positif: "))
 for i in range(nb):
     s=""
     for j in range(i+1):
@@ -81,6 +81,7 @@ une ligne
 1
 1
 ==
+
 
 
 
