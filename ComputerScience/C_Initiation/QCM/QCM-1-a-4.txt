@@ -1270,3 +1270,25 @@ Combien y en a t-il ?
 - 5 et 4
 
 *[group=boucle_for] Qu’affiche le programme suivant ?
+
+    int main(){
+
+        int i;
+
+        int somme = 0;
+
+        for(i = 0; i < 10; i++){
+
+            if(i%2 != 0)
+
+                somme = somme + i;
+
+        }
+
+        printf("%d", somme);
+
+        return 0;
+
+    }
+
+    
