@@ -35,6 +35,7 @@ from utils_binary_tree import random_binary_tree
 Tree_exo = random_binary_tree(int(taille_arbre), max_height=int(hauteur_max))[0]
 viewer.graph = Tree_exo.to_dot_code_BST_point()
 height = Tree_exo.height()
+nb_leafs = len(Tree_exo.leafs())
 
 soluce, parcours = choice([(height, "la hauteur")])
 ==
