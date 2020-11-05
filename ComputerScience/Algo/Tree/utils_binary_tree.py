@@ -156,6 +156,9 @@ class BinaryNode():
         l : left child only
         r : right child only
         f : leaf
+
+        The code is a string with letters and value.
+        d 1 f 3 f 5
         """
         if self.left is None: 
             if self.right is None:
