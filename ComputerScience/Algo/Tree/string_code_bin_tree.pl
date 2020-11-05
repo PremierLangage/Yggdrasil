@@ -53,6 +53,12 @@ sont donc les nœuds ayant à la fois un point pour fils gauche et fils droit.
 {{ viewer|component }}
 </center>
 
+**Rappel :** `d` nœud ayant deux fils, `l` nœud avec seulement un fils gauche, 
+`r` nœud avec seulement un fils droit et `f` pour les feuilles. Un codage textuel 
+est une longue chaîne décrivant un parcours profondeur préfixe des nœuds avec,
+pour chaque nœuds, la lettre donnant le type du nœud puis un espace, puis son 
+étiquette.
+
 Donnez **{{ parcours }}** pour cet arbre.
 
 ==
