@@ -84,3 +84,23 @@ Latex:1
 + Proposition 4
 - Proposition 5
 
+*[group=resultatboucle] Qu’affiche le programme suivant ?
+
+
+    #include <stdio.h>
+
+    int main(void){
+
+        int a = 2;
+
+        for (a = 0; a < 10; a+=1)
+
+            printf("+");
+
+        printf("\n");
+
+        return 0 
+
+    }
+
+
