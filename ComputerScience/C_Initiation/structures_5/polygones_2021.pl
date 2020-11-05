@@ -81,13 +81,13 @@ codeafter==
 int main(){
   Polygone  tab;
   int size =0 ;
-  int x,y;
+  int abs,ord;
   float d;
 
-  while (scanf("%d", &x) == 1){
-    scanf("%d",&y);
-    tab.sommets[size].x = x;
-    tab.sommets[size].y=y;
+  while (scanf("%d", &abs) == 1){
+    scanf("%d",&ord);
+    tab.sommets[size].abs = abs;
+    tab.sommets[size].ord=ord;
     size++;
   }
   tab.nb_sommets=size;
