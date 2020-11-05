@@ -39,7 +39,7 @@ nb_leafs = len(Tree_exo.leafs())
 max_leaf = max(Tree_exo.leafs())
 min_leaf = min(Tree_exo.leafs())
 
-soluce, parcours = choice([(height, "la hauteur"), (nb_leafs, "le nombre de feuilles")])
+soluce, parcours = choice([(height, "la hauteur"), (nb_leafs, "le nombre de feuilles"), (max_leaf, "l'étiquette maximale dans les feuilles"), (min_leaf, "l'étiquette minimale dans les feuilles")])
 ==
 
 author=Nicolas Borie
