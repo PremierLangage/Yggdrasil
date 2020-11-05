@@ -166,7 +166,7 @@ class BinaryNode():
             if self.right is None:
                 return "l "+str(self.value)+" "+self.left.to_string_code()
             else:
-                return self.left.postorder_traversal()+self.right.postorder_traversal()+[self.value]
+                return "d "+str(self.value)+" "+self.left.to_string_code()+" "+self.right.to_string_code()
 
     def __to_dot_BST_point_rec(self):
         """
