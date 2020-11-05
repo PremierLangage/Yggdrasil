@@ -78,10 +78,10 @@ class BinaryNode():
         if self.left is None:
             if self.right is None:
                 return []
-            return self.right.internal_nodes()
+            return [self.value]+self.right.internal_nodes()
         else:
             if self.right is None:
-                return self.left.internal_nodes()
+                return [self.value]+self.left.internal_nodes()
             else:
                 return [self.value]+self.left.internal_nodes()+self.right.internal_nodes()
 
