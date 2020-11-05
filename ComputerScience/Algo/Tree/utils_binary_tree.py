@@ -51,8 +51,6 @@ class BinaryNode():
             else:
                 return max([self.left.height(), self.right.height()])+1
     
-    
-
     def inorder_traversal(self):
         """
         Return a inorder traversal of the binary tree rooted at `self`.
@@ -195,5 +193,6 @@ def random_binary_tree(nb_nodes, max_height=None, values=None, nb_total_node=Non
             T.right = right
         
         return T, values
+
 
 
