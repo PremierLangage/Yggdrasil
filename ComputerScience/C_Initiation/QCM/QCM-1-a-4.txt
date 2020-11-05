@@ -1097,7 +1097,7 @@ Combien y en a t-il ?
 + 2
 - 3
 
-*[group=for] La parenthèse suivant un for
+**[group=for] La parenthèse suivant un for
 
 + contient obligatoirement et exactement 2 points virgules (;)
 - peut-être laissée vide
