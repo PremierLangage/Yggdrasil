@@ -33,9 +33,9 @@ vers le `Node` racine de l'arbre) et retourne un entier qui devra
 Pour rappel, une feuille a pour 
 hauteur `0` par définition. La hauteur d'un nœud interne est 
 le maximum des hauteurs de ces enfants plus un. En utilisant ces 
-conventions et définition, la hauteur d'un arbre est aussi la 
-longueur maximal en nombre d'arrêtes des chemins de la racine 
-aux feuilles de l'arbre.
+conventions et définition, la hauteur d'un arbre est aussi de 
+manière équivalene la longueur maximale en nombre d'arrêtes des 
+chemins de la racine aux feuilles de l'arbre.
 ==
 
 editor.code==#|c|
