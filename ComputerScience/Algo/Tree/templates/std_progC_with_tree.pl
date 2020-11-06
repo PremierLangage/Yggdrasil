@@ -25,20 +25,32 @@
 
 extends=/ComputerScience/C/template/std_progC.pl
 
-# viewer =: GraphDrawer
-# from utils_binary_tree import random_binary_tree
-# Tree_exo = random_binary_tree(int(taille_arbre), max_height=int(hauteur_max))[0]
-# viewer.graph = Tree_exo.to_dot_code_BST_point()
-# <style>
-#  .graph-viewer-component {
-#  pointer-events: none;
-# }
-# </style>
+before ==#|python|
+from random import randint
+
+# Some globals variables
+nb_attempt=0
+
+# Place here your favorite C compiler
+compiler="gcc"
+# PLace here the compilation flags
+cflags=["-Wall", "-ansi"]
+# Place here library flags
+libflags=[]
+
+if "taboo" in globals(): 
+    text+='<div class="warning-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
+    text+="<b>Taboo :</b> attention, il y aura un refus de compilation si vous proposez un code qui utilise les mots suivants (ne les mentionnez pas ni en fonction, ni en nom de variable) : "
+    text+=str(taboo)
+    text+='</div> <br />\n'
+
+text+="<style>\n  .graph-viewer-component {\n  pointer-events: none;\n}\n</style>"
+text+=" {{ editor|component }} "
+==
 
 #
 #  THE FOLLOWING IS C COPY PASTE OF EVALUATOR OF STD_PROGC.PL
 #  with an inclusion of components to draw graphs...
-
 
 evaluator==#|python|
 import subprocess
