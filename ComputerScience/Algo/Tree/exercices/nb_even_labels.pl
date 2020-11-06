@@ -23,10 +23,10 @@ tag=arbre|algo|récursivité|parité|étiquette|entier
 
 editor.height=300px
 
-text==
+text==#|markdown|
 Écrire une fonction C **count_even_node** qui prend en argument un **arbre** (un pointeur 
 vers le `Node` racine de l'arbre) et retourne un entier qui devra 
-être le **nombre de feuilles** dans l'arbre. 
+être **le nombre d'étiquettes paires** dans l'arbre. 
 ==
 
 editor.code==#|c|
