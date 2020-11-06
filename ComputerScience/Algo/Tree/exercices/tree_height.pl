@@ -22,7 +22,7 @@ title=Calculer la hauteur d'un arbre
 tag=arbre|algo|hauteur|feuille|récursivité
 
 text==
-Écrire une fonction C qui prend en argument **un Arbre** (un pointeur 
+Écrire une fonction C **tree_height** qui prend en argument **un Arbre** (un pointeur 
 vers le `Node` racine de l'arbre) et retourne un entier qui devra 
 être la **hauteur de l'arbre**. 
 
@@ -37,7 +37,13 @@ aux feuilles de l'arbre.
 ==
 
 editor.code==#|c|
-void apply_square_array(int* array, int nb_term){
+typedef struct node{
+  int val;
+  struct node * left;
+  struct node * right;
+}Node, *Tree;
+
+... tree_height(Tree t){
   /* votre code ici... */
 }
 ==
