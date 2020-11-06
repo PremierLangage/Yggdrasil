@@ -126,6 +126,3 @@ checks_args_stdin==#|python|
  ["Arbre aléatoire à 500 nœuds", [], random_binary_tree(200)[0].to_string_code().replace(' ', '')] ]
 ==
 
-
-
-
