@@ -217,7 +217,6 @@ if compil_state != 'error':
                 viewer.graph = Tree_exo.to_dot_code_BST_point()
                 stdin_explain += " <style>\n  .graph-viewer-component {\n  pointer-events: none;\n  }\n</style>"
                 stdin_explain += " \n\n {{ viewer| component }} \n\n"
-                nb_viewer += 1;
 
             else:
                 stdin_explain = ""
