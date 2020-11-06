@@ -19,12 +19,12 @@ extends=/ComputerScience/Algo/Tree/templates/std_progC_with_tree.pl
 author=Nicolas Borie
 
 title=Calculer le nombre de feuilles dans un arbre
-tag=arbre|algo|hauteur|feuille|récursivité
+tag=arbre|algo|feuille|récursivité
 
 editor.height=300px
 
 text==
-Écrire une fonction C **tree_height** qui prend en argument un **arbre** (un pointeur 
+Écrire une fonction C **count_leaf** qui prend en argument un **arbre** (un pointeur 
 vers le `Node` racine de l'arbre) et retourne un entier qui devra 
 être la **hauteur de l'arbre**. 
 
