@@ -61,8 +61,9 @@ int tree_height(Tree t){
   int l, r;
   l = (t->left == NULL)?-1:tree_height(t->left);
   r = (r->left == NULL)?-1:tree_height(t->right);
-  if l >= r:
-    return
+  if (l >= r)
+    return l+1;
+  return r+1;
 }
 ==
 
@@ -113,4 +114,5 @@ checks_args_stdin==#|python|
  ["Test aléatoire 2", [str(randint(-100, 100)) for i in range(randint(10, 15))], ""],
  ["Test aléatoire 3", [str(randint(-100, 100)) for i in range(randint(10, 15))], ""]]
 ==
+
 
