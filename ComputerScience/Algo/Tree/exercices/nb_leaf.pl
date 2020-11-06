@@ -18,7 +18,7 @@ extends=/ComputerScience/Algo/Tree/templates/std_progC_with_tree.pl
 
 author=Nicolas Borie
 
-title=Calculer la hauteur d'un arbre
+title=Calculer le nombre de feuilles dans un arbre
 tag=arbre|algo|hauteur|feuille|récursivité
 
 editor.height=300px
