@@ -104,9 +104,9 @@ int main(int argc, char* argv[]){
   build_tree(&t);
   
   if ((n = count_even_node(t)) <= 1)
-    printf("L'arbre transmis sur l'entrée standard contient : %d feuille\n", n);
+    printf("L'arbre transmis contient : %d étiquette paire.\n", n);
   else
-    printf("L'arbre transmis sur l'entrée standard contient : %d feuilles\n", n);
+    printf("L'arbre transmis contient : %d étiquettes paires.\n", n);
   return 0;
 }
 ==
