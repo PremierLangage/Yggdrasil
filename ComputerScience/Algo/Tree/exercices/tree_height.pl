@@ -121,8 +121,9 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[["Arbre feuille", [], "f12"],
- ["Abre à 3 nœuds", [], "d5f2f8"], ]
+[["Arbre feuille", [], "f0"],
+ ["Abre à 3 nœuds", [], "d1f0f0"],
+ ["Peigne gauche", [], "l5l4l3l2l1f0"], ]
 ==
 
 
