@@ -22,17 +22,8 @@ title=Calculer la hauteur d'un arbre
 tag=arbre|algo|hauteur|feuille|récursivité
 
 editor.height=280px
-G =: GraphDrawer
-# G.graph ==
-# digraph G {
-#     a;
-#     b;
-#     c -> d;
-#     a -> c;
-# }
-# ==
+
 text==
-{{G|component}}
 Écrire une fonction C **tree_height** qui prend en argument un **arbre** (un pointeur 
 vers le `Node` racine de l'arbre) et retourne un entier qui devra 
 être la **hauteur de l'arbre**. 
