@@ -22,8 +22,10 @@ title=Calculer la hauteur d'un arbre
 tag=arbre|algo|hauteur|feuille|récursivité
 
 editor.height=280px
+G =: GraphDrawer
 
 text==
+{{G|component}}
 Écrire une fonction C **tree_height** qui prend en argument un **arbre** (un pointeur 
 vers le `Node` racine de l'arbre) et retourne un entier qui devra 
 être la **hauteur de l'arbre**. 
@@ -129,5 +131,6 @@ checks_args_stdin==#|python|
  ["Arbre aléatoire à 12 nœuds", [], random_binary_tree(12)[0].to_string_code().replace(' ', '')],
  ["Arbre aléatoire à 14 nœuds", [], random_binary_tree(14)[0].to_string_code().replace(' ', '')] ]
 ==
+
 
 
