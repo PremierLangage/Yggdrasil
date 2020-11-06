@@ -25,6 +25,7 @@ On utilisera les types:
 
     typedef Cellule* Liste  
 
+
 == 
 
 editor.code==
