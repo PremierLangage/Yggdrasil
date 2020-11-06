@@ -48,12 +48,10 @@ typedef struct node{
   struct node * right;
 }Node, *Tree;
 
-int count_leaf(Tree t){
+int count_even_node(Tree t){
   if (t == NULL)
     return 0;
-  if ((t->left == NULL) && (t->right == NULL))
-    return 1;
-  return count_leaf(t->left) + count_leaf(t->right);
+  return ((t->value+1)%2) + count_leaf(t->left) + count_leaf(t->right);
 }
 ==
 
