@@ -58,6 +58,7 @@ from std_progC_utils import make_hide_block_on_click, terminal_code, subnlbybr
 from utils_binary_tree import random_binary_tree
 
 viewer = [viewer0, viewer1, viewer2, viewer3, viewer4, viewer5, viewer6, viewer7, viewer8, viewer9]
+nb_viewer = 0
 
 # principals signals
 signals = {
@@ -225,8 +226,9 @@ if compil_state != 'error':
                     stdin_explain += "<br />"
 
                 Tree_exo = binary_tree_from_code(test_c[2])
-                viewer.graph = Tree_exo.to_dot_code_BST_point()
-                stdin_explain += " <style>\n  .graph-viewer-component {\n  pointer-events: none;\n  }\n</style> \n\n {{ viewer|component }} \n\n"
+                viewer[nb_viewer].graph = Tree_exo.to_dot_code_BST_point()
+                stdin_explain += " <style>\n  .graph-viewer-component {\n  pointer-events: none;\n  }\n</style> \n\n {{ viewer"+str(nb_viewer)+"|component }} \n\n"
+                nb_viewer++;
 
             else:
                 stdin_explain = ""
