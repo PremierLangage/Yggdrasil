@@ -60,7 +60,7 @@ typedef struct node{
 int tree_height(Tree t){
   int l, r;
   l = (t->left == NULL)?-1:tree_height(t->left);
-  r = (r->left == NULL)?-1:tree_height(t->right);
+  r = (t->left == NULL)?-1:tree_height(t->right);
   if (l >= r)
     return l+1;
   return r+1;
@@ -73,34 +73,49 @@ code_before==#|c|
 ==
 
 code_after==#|c|
+Node* allocate_node(int val){
+  Node* n = malloc(sizeof(Node));
 
-
-void display_array(int* array, int nb_term){
-  int i;
-
-  if (nb_term == 0){
-    printf("[]\n");
-    return ;
+  if (!n){
+    fprintf(stderr, "problème allocation mémoire\n");
+    return NULL;
   }
+  n->left = NULL;
+  n->right = NULL;
+  n->value = val;
+  return n;
+}
 
-  printf("[");
-  for (i=0 ; i<nb_term-1 ; i++)
-    printf("%d, ", array[i]);
-  printf("%d]\n", array[nb_term-1]);
+int build_tree(Tree* t){
+    int val;
+    char c;
+    
+    scanf("%c", &c);
+    scanf("%d", &val);
+    if ((*t = allocate_node(val)) == NULL){
+      fprintf(stderr, "problème allocation mémoire\n");
+      return 0;
+    }
+    printf("%c --> %d\n", c, val);
+    switch(c) {
+    case 'd': return build_tree(&((*t)->left)) && build_tree(&((*t)->right));
+    case 'l': return build_tree(&((*t)->left));
+    case 'r': return build_tree(&((*t)->right));
+    case 'f': return 1;
+      break;
+    default :
+      fprintf(stderr, "Arbre mal formé\n");
+      return 0;
+    }
+    return 1;
 }
 
 int main(int argc, char* argv[]){
-  int nb_term = argc-1;
-  int* tab = (int*)malloc(nb_term*sizeof(int));
-  int i;
+  Tree t=NULL;
 
-  for (i=0 ; i<nb_term ; i++){
-    tab[i] = atoi(argv[i+1]);
-  }
-
-  apply_square_array(tab, nb_term);
-  display_array(tab, nb_term);
-  free(tab);
+  build_tree(&t);
+  
+  printf("La hauteur de l'arbre transmis est : %d\n", tree_height(t));
   return 0;
 }
 ==
