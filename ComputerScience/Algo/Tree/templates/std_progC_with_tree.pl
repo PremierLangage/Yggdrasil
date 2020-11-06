@@ -169,7 +169,7 @@ feedback_checks = ""
 # since it need a new eval at each attempt to be really
 # random !!!
 from random import *
-from utils_binary_tree import random_binary_tree
+from utils_binary_tree import random_binary_tree, binary_tree_from_code
 checks_data = eval(checks_args_stdin)
 
 if compil_state != 'error':
