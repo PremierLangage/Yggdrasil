@@ -238,9 +238,7 @@ if compil_state != 'error':
                 Tree_exo = binary_tree_from_code(test_c[2])
                 viewer[nb_viewer].graph = Tree_exo.to_dot_code_BST_point()
                 stdin_explain += " <style>\n  .graph-viewer-component {\n  pointer-events: none;\n  }\n</style>"
-                stdin_explain += " \n\n {{ viewer"
-                stdin_explain += str(nb_viewer)
-                stdin_explain += " | component }} \n\n"
+                stdin_explain += " \n\n {{ viewer0| component }} \n\n"
                 nb_viewer += 1;
 
             else:
