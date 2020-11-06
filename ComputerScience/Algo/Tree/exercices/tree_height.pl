@@ -96,7 +96,6 @@ int build_tree(Tree* t){
       fprintf(stderr, "problème allocation mémoire\n");
       return 0;
     }
-    printf("%c --> %d\n", c, val);
     switch(c) {
     case 'd': return build_tree(&((*t)->left)) && build_tree(&((*t)->right));
     case 'l': return build_tree(&((*t)->left));
