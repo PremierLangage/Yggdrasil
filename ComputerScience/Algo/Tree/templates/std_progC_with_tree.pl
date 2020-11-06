@@ -220,8 +220,8 @@ if compil_state != 'error':
                 viewer = GraphDrawer()
                 viewer.graph = Tree_exo.to_dot_code_BST_point()
                 stdin_explain += " <style>\n  .graph-viewer-component {\n  pointer-events: none;\n  }\n</style>"
-                stdin_explain += " \n\n {{ viewer| component }} \n\n"
-                stdin_explain += "{{ test_viewer|component }}"
+                stdin_explain += f" \n\n <wc-graph-viewer graph="{viewer.graph}"></wc-graph-viewer> \n\n"
+                stdin_explain += f"<wc-graph-viewer graph="{test_viewer.graph}"></wc-graph-viewer>"
             else:
                 stdin_explain = ""
             feedback_checks += make_hide_block_on_click("details_check"+str(nb_good+nb_bad), test_c[0], stdin_explain + terminal_code(terminal_log), "")
@@ -243,7 +243,7 @@ if compil_state != 'error':
                 viewer = GraphDrawer()
                 viewer.graph = Tree_exo.to_dot_code_BST_point()
                 stdin_explain += " <style>\n  .graph-viewer-component {\n  pointer-events: none;\n  }\n</style>"
-                stdin_explain += " \n\n {{ viewer| component }} \n\n"
+                stdin_explain += f" \n\n <wc-graph-viewer graph="{viewer.graph}"></wc-graph-viewer> \n\n"
 
             else:
                 stdin_explain = ""
@@ -282,4 +282,5 @@ feedback = '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Note actuelle 
 
 grade=((grade_compil * grade_checks * grade_attempt) // 10000, feedback)
 ==
+
 
