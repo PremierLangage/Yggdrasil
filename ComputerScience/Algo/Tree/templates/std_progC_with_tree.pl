@@ -48,7 +48,7 @@ from std_progC_utils import make_hide_block_on_click, terminal_code, subnlbybr
 from utils_binary_tree import random_binary_tree
 from components import GraphDrawer
 
-test_viewer.graph = random_binary_tree(8, max_height=int(hauteur_max))[0].to_dot_code_BST_point()
+test_viewer.graph = random_binary_tree(8)[0].to_dot_code_BST_point()
 
 # principals signals
 signals = {
