@@ -1,0 +1,33 @@
+#*****************************************************************************
+#  Copyright (C) 2020 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
+#
+#  Distributed under the terms of the GNU General Public License (GPL)
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#    General Public License for more details.
+#
+#  The full text of the GPL is available at:
+#
+#                  http://www.gnu.org/licenses/
+#*****************************************************************************
+
+author=Nicolas Borie
+title=Les arbres binaires en C
+
+introduction==
+
+==
+
+@ /ComputerScience/Algo/Tree/exercices/statistic_bin_tree.pl
+
+@ /ComputerScience/Algo/Tree/exercices/traversal_bin_tree.pl
+
+@ /ComputerScience/Algo/Tree/exercices/string_code_bin_tree.pl
+
+@ /ComputerScience/Algo/Tree/exercices/tree_height.pl
+
+@ /ComputerScience/Algo/Tree/exercices/nb_leaf.pl
+
+@ /ComputerScience/Algo/Tree/exercices/nb_even_labels.pl
