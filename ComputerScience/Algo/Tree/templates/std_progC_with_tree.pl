@@ -230,6 +230,8 @@ if compil_state != 'error':
                     viewer = GraphDrawer()
                     viewer.graph = Tree_exo.to_dot_code_BST_point()
                     stdin_explain += f" \n\n <c-graph-viewer graph='{viewer.graph}'></c-graph-viewer> \n\n"
+                else:
+                    stdin_explain += "\n\n Arbre trop imposant pour être dessiné \n\n"
             else:
                 stdin_explain = ""
             feedback_checks += make_hide_block_on_click("details_check"+str(nb_good+nb_bad), test_c[0], stdin_explain + terminal_code(terminal_log), "")
