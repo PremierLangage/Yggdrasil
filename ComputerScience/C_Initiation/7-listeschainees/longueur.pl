@@ -23,7 +23,7 @@ On utilisera les types:
         struct cel* suivant;  
     } Cellule;  
 
-    typedef Cellule* Liste  
+    typedef Cellule* Listeñ
 
 
 == 
