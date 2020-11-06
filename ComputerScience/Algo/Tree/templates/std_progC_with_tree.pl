@@ -209,6 +209,11 @@ if compil_state != 'error':
                 stdin_explain += subnlbybr(test_c[2])
                 if test_c[2][-1] != '\n':
                     stdin_explain += "<br />"
+
+                Tree_exo = binary_tree_from_code(test_c[2])
+                viewer.graph = Tree_exo.to_dot_code_BST_point()
+                stdin_explain += " <style>\n  .graph-viewer-component {\n  pointer-events: none;\n  }\n</style> \n{{ viewer|component }} "
+
             else:
                 stdin_explain = ""
             feedback_checks += make_hide_block_on_click("details_check"+str(nb_good+nb_bad), test_c[0], stdin_explain + terminal_code(terminal_log), "")
