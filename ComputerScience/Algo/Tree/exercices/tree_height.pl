@@ -21,6 +21,8 @@ author=Nicolas Borie
 title=Calculer la hauteur d'un arbre
 tag=arbre|algo|hauteur|feuille|récursivité
 
+editor.height=250px
+
 text==
 Écrire une fonction C **tree_height** qui prend en argument **un Arbre** (un pointeur 
 vers le `Node` racine de l'arbre) et retourne un entier qui devra 
