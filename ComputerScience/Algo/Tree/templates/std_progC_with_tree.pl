@@ -25,8 +25,6 @@
 
 extends=/ComputerScience/C/template/std_progC.pl
 
-test_viewer =: GraphDrawer
-
 # viewer =: GraphDrawer
 # from utils_binary_tree import random_binary_tree
 # Tree_exo = random_binary_tree(int(taille_arbre), max_height=int(hauteur_max))[0]
