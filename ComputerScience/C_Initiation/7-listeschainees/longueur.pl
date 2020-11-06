@@ -8,18 +8,25 @@ tag=Nombre de cellules d'une liste simplement chainée
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 
+
 text==  
 
 Ecrire une fonction `nb_cellules`
 qui renvoie le nombre d'éléments d'une liste chainée passée en parametre.  
 On utilisera les types:  
-typedef struct cel{  
-int val;  
-struct cel* suivant;  
-}Cellule;  
-typedef Cellule* Liste  
 
-==
+
+    typedef struct cel{  
+
+        int val;  
+
+        struct cel* suivant;  
+
+    } Cellule;  
+
+    typedef Cellule* Liste  
+
+== 
 
 editor.code==
 ....nb_cellules(...) {
@@ -96,6 +103,7 @@ tests==
   ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20))])+" -1"]
   ]
 ==
+
 
 
 
