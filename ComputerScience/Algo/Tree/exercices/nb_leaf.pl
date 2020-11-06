@@ -106,9 +106,9 @@ int main(int argc, char* argv[]){
   build_tree(&t);
   
   if ((n = count_leaf(t)) <= 1)
-    printf("L'arbre transmis sur l'entrée standard contient : %d feuille\n", count_leaf(t));
+    printf("L'arbre transmis sur l'entrée standard contient : %d feuille\n", n);
   else
-    printf("L'arbre transmis sur l'entrée standard contient : %d feuilles\n", count_leaf(t));
+    printf("L'arbre transmis sur l'entrée standard contient : %d feuilles\n", n);
   return 0;
 }
 ==
@@ -125,4 +125,5 @@ checks_args_stdin==#|python|
  ["Arbre aléatoire à 100 nœuds", [], random_binary_tree(100)[0].to_string_code().replace(' ', '')],
  ["Arbre aléatoire à 500 nœuds", [], random_binary_tree(200)[0].to_string_code().replace(' ', '')] ]
 ==
+
 
