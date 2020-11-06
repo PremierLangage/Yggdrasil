@@ -13,6 +13,8 @@ text==
 
 Ecrire une fonction `nb_cellules`
 qui renvoie le nombre d'éléments d'une liste chainée passée en parametre.  
+
+
 On utilisera les types:  
 
 
