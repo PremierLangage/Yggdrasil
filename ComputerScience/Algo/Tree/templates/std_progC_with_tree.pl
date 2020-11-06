@@ -25,6 +25,10 @@
 
 extends=/ComputerScience/C/template/std_progC.pl
 
+from utils_binary_tree import random_binary_tree
+
+test_viewer =: GraphDrawer
+test_viewer.graph = random_binary_tree(8, max_height=int(hauteur_max))[0].to_dot_code_BST_point()
 # viewer =: GraphDrawer
 # from utils_binary_tree import random_binary_tree
 # Tree_exo = random_binary_tree(int(taille_arbre), max_height=int(hauteur_max))[0]
@@ -34,7 +38,6 @@ extends=/ComputerScience/C/template/std_progC.pl
 #  pointer-events: none;
 # }
 # </style>
-# {{ viewer|component }}
 
 #
 #  THE FOLLOWING IS C COPY PASTE OF EVALUATOR OF STD_PROGC.PL
@@ -218,7 +221,7 @@ if compil_state != 'error':
                 viewer.graph = Tree_exo.to_dot_code_BST_point()
                 stdin_explain += " <style>\n  .graph-viewer-component {\n  pointer-events: none;\n  }\n</style>"
                 stdin_explain += " \n\n {{ viewer| component }} \n\n"
-
+                stdin_explain += "{{ test_viewer|component }}"
             else:
                 stdin_explain = ""
             feedback_checks += make_hide_block_on_click("details_check"+str(nb_good+nb_bad), test_c[0], stdin_explain + terminal_code(terminal_log), "")
@@ -279,3 +282,4 @@ feedback = '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Note actuelle 
 
 grade=((grade_compil * grade_checks * grade_attempt) // 10000, feedback)
 ==
+
