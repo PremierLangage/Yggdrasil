@@ -65,6 +65,7 @@ evaluator==#|python|
 import subprocess
 from std_progC_utils import make_hide_block_on_click, terminal_code, subnlbybr
 from utils_binary_tree import random_binary_tree
+from components import GraphDrawer
 
 viewer = [viewer0, viewer1, viewer2, viewer3, viewer4, viewer5, viewer6, viewer7, viewer8, viewer9]
 nb_viewer = 0
