@@ -120,8 +120,8 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[["Arbre feuille", [], "f0"],
- ["Abre à 3 nœuds", [], "d1f0f0"],
+[["Arbre feuille", [], "f1"],
+ ["Abre à 3 nœuds", [], "d2f1f3"],
  ["Peigne gauche", [], "l5l4l3l2l1f0"],
  ["Arbre aléatoire à 6 nœuds", [], random_binary_tree(6)[0].to_string_code().replace(' ', '')],
  ["Arbre aléatoire à 8 nœuds", [], random_binary_tree(8)[0].to_string_code().replace(' ', '')],
@@ -129,6 +129,7 @@ checks_args_stdin==#|python|
  ["Arbre aléatoire à 12 nœuds", [], random_binary_tree(12)[0].to_string_code().replace(' ', '')],
  ["Arbre aléatoire à 14 nœuds", [], random_binary_tree(14)[0].to_string_code().replace(' ', '')] ]
 ==
+
 
 
 
