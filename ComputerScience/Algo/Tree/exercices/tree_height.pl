@@ -45,8 +45,8 @@ typedef struct node{
   struct node * right;
 }Node, *Tree;
 
-... tree_height(Tree t){
-  /* votre code ici... */
+int tree_height(Tree t){
+  return 1;
 }
 ==
 
