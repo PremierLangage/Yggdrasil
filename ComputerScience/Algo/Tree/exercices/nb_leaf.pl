@@ -113,7 +113,7 @@ int main(int argc, char* argv[]){
 
   build_tree(&t);
   
-  printf("La hauteur de l'arbre transmis est : %d\n", tree_height(t));
+  printf("L'arbre transmis sur l'entrée standard contient : %d feuilles\n", count_leaf(t));
   return 0;
 }
 ==
