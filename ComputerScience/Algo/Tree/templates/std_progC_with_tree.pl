@@ -41,14 +41,23 @@ extends=/ComputerScience/C/template/std_progC.pl
 #  with an inclusion of components to draw graphs...
 
 viewer0 =: GraphDrawer
+
 viewer1 =: GraphDrawer
+
 viewer2 =: GraphDrawer
+
 viewer3 =: GraphDrawer
+
 viewer4 =: GraphDrawer
+
 viewer5 =: GraphDrawer
+
 viewer6 =: GraphDrawer
+
 viewer7 =: GraphDrawer
+
 viewer8 =: GraphDrawer
+
 viewer9 =: GraphDrawer
 
 
