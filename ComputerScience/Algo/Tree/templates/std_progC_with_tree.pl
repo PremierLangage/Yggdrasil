@@ -40,12 +40,24 @@ extends=/ComputerScience/C/template/std_progC.pl
 #  THE FOLLOWING IS C COPY PASTE OF EVALUATOR OF STD_PROGC.PL
 #  with an inclusion of components to draw graphs...
 
-viewer =: GraphDrawer
+viewer0 =: GraphDrawer
+viewer1 =: GraphDrawer
+viewer2 =: GraphDrawer
+viewer3 =: GraphDrawer
+viewer4 =: GraphDrawer
+viewer5 =: GraphDrawer
+viewer6 =: GraphDrawer
+viewer7 =: GraphDrawer
+viewer8 =: GraphDrawer
+viewer9 =: GraphDrawer
+
 
 evaluator==#|python|
 import subprocess
 from std_progC_utils import make_hide_block_on_click, terminal_code, subnlbybr
 from utils_binary_tree import random_binary_tree
+
+viewer = [viewer0, viewer1, viewer2, viewer3, viewer4, viewer5, viewer6, viewer7, viewer8, viewer9]
 
 # principals signals
 signals = {
