@@ -44,7 +44,8 @@ if "taboo" in globals():
     text+=str(taboo)
     text+='</div> <br />\n'
 
-text+="<style>\n  .graph-viewer-component {\n  pointer-events: none;\n  width: 50%;\n}\n</style>"
+# text+=" <style>\n  .graph-viewer-component {\n  pointer-events: none;\n  }\n</style> "
+text+=" <style>\n  .graph-viewer-component {\n  pointer-events: none;\n  width: 50%;\n}\n</style> "
 text+=" {{ editor|component }} "
 ==
 
