@@ -1,5 +1,6 @@
 #*****************************************************************************
 #  Copyright (C) 2020 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
+#  Copyright (C) 2020 Mamadou Cisse <mciissee at gmail  dot  com>
 #
 #  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
 #  Creative Commons CC-by-SA 3.0
@@ -294,5 +295,6 @@ feedback = '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Note actuelle 
 
 grade=((grade_compil * grade_checks * grade_attempt) // 10000, feedback)
 ==
+
 
 
