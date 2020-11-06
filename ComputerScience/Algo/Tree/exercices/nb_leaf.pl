@@ -110,10 +110,14 @@ int build_tree(Tree* t){
 
 int main(int argc, char* argv[]){
   Tree t=NULL;
+  int n;
 
   build_tree(&t);
   
-  printf("L'arbre transmis sur l'entrée standard contient : %d feuilles\n", count_leaf(t));
+  if ((n = count_leaf(t)) <= 1)
+    printf("L'arbre transmis sur l'entrée standard contient : %d feuille\n", count_leaf(t));
+  else
+    printf("L'arbre transmis sur l'entrée standard contient : %d feuilles\n", count_leaf(t));
   return 0;
 }
 ==
