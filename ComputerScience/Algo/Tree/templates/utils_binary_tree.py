@@ -250,20 +250,72 @@ def random_binary_tree(nb_nodes, max_height=None, values=None, nb_total_node=Non
         
         return T, values
 
-def build_tree_from_code(s):
+def split_tree(s):
     """
-    Return the tree associated the strig code `s`
+    Split a string code into a logical list.
     """
-    acc = ""
-    position = []
-    i = 0
-    while i < len(s):
-        if s[i] in ['d', 'l', 'r', 'f']:
-            node_type = s[i]
-            acc = ""
+    if s[0] == 'f':
+        return ['f', int(s[1:])]
+    if s[0] == 'l':
+        acc = ''
+        i = 1
+        while s[i] not in ['d', 'l', 'r', 'f']:
+            acc += s[i]
             i += 1
-            continue
+        return ['l', int(acc), split_tree(s[i:])]
+    if s[0] == 'r':
+        acc = ''
+        i = 1
+        while s[i] not in ['d', 'l', 'r', 'f']:
+            acc += s[i]
+            i += 1
+        return ['r', int(acc), split_tree(s[i:])]
+    assert(s[0] == 'd'), "Arbre mal formée"
+    acc = ''
+    i = 1
+    while s[i] not in ['d', 'l', 'r', 'f']:
+        acc += s[i]
+        i += 1
+    left_acc = ''
+    cumul = 1
+    while cumul > 0:
+        if s[i] == 'd':
+            cumul += 1
+        if s[i] == 'f':
+            cumul -= 1
+        left_acc += s[i]
+        i += 1
+    while s[i] not in ['d', 'l', 'r', 'f']:
+        left_acc += s[i]
+        i += 1    
+    return ['d', int(acc), split_tree(left_acc), split_tree(s[i:])]
 
 
+def binary_tree_from_list(l):
+    """
+    Return a binary tree from a structured list.
+    """
+    if l[0] == 'f':
+        return BinaryNode(l[1])
+    if l[0] == 'l':
+        T = BinaryNode(l[1])
+        T.left = binary_tree_from_list(l[2])
+        return T
+    if l[0] == 'r':
+        T = BinaryNode(l[1])
+        T.right = binary_tree_from_list(l[2])
+        return T
+    T = BinaryNode(l[1])
+    T.left = binary_tree_from_list(l[2])
+    T.right =binary_tree_from_list(l[3])
+    return T
+
+
+def binary_tree_from_code(s):
+    """
+    Return a binary tree from a string codage `s`.
+    """
+    l = split_tree(s)
+    return binary_tree_from_list(l)
 
 
