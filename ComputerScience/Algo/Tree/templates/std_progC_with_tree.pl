@@ -40,6 +40,8 @@ extends=/ComputerScience/C/template/std_progC.pl
 #  THE FOLLOWING IS C COPY PASTE OF EVALUATOR OF STD_PROGC.PL
 #  with an inclusion of components to draw graphs...
 
+viewer =: GraphDrawer
+
 evaluator==#|python|
 import subprocess
 from std_progC_utils import make_hide_block_on_click, terminal_code, subnlbybr
