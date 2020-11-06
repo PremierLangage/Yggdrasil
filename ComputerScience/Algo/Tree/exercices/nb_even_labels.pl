@@ -51,7 +51,7 @@ typedef struct node{
 int count_even_node(Tree t){
   if (t == NULL)
     return 0;
-  return ((t->value+1)%2) + count_leaf(t->left) + count_leaf(t->right);
+  return ((t->value+1)%2) + count_even_node(t->left) + count_even_node(t->right);
 }
 ==
 
