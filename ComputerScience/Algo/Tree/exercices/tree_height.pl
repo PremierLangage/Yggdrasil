@@ -51,11 +51,18 @@ typedef struct node{
 ==
 
 solution==#|c|
-void apply_square_array(int* array, int nb_term){
-  int i;
+typedef struct node{
+  int val;
+  struct node * left;
+  struct node * right;
+}Node, *Tree;
 
-  for (i=0 ; i<nb_term ; i++)
-    array[i] *= array[i];
+int tree_height(Tree t){
+  int l, r;
+  l = (t->left == NULL)?-1:tree_height(t->left);
+  r = (r->left == NULL)?-1:tree_height(t->right);
+  if l >= r:
+    return
 }
 ==
 
