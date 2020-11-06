@@ -45,7 +45,7 @@ typedef struct node{
   struct node * right;
 }Node, *Tree;
 
-... tree_height(Tree t){
+... count_leaf(Tree t){
   /* Votre code ici... */
 }
 ==
@@ -57,13 +57,12 @@ typedef struct node{
   struct node * right;
 }Node, *Tree;
 
-int tree_height(Tree t){
-  int l, r;
-  l = (t->left == NULL)?-1:tree_height(t->left);
-  r = (t->right == NULL)?-1:tree_height(t->right);
-  if (l >= r)
-    return l+1;
-  return r+1;
+int count_leaf(Tree t){
+  if (t == NULL)
+    return 0;
+  if ((t->left == NULL) && (t->right == NULL))
+    return 1;
+  return count_leaf(t->left) + count_leaf(t->right);
 }
 ==
 
