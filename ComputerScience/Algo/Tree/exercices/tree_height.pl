@@ -40,7 +40,7 @@ aux feuilles de l'arbre.
 
 editor.code==#|c|
 typedef struct node{
-  int val;
+  int value;
   struct node * left;
   struct node * right;
 }Node, *Tree;
@@ -52,7 +52,7 @@ typedef struct node{
 
 solution==#|c|
 typedef struct node{
-  int val;
+  int value;
   struct node * left;
   struct node * right;
 }Node, *Tree;
