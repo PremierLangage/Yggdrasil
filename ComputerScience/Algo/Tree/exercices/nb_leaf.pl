@@ -18,7 +18,7 @@ extends=/ComputerScience/Algo/Tree/templates/std_progC_with_tree.pl
 
 author=Nicolas Borie
 
-title=Calculer le nombre de feuilles dans un arbre
+title=Calculer le nombre de feuilles dans un arbre binaire
 tag=arbre|algo|feuille|récursivité
 
 editor.height=300px
@@ -125,6 +125,7 @@ checks_args_stdin==#|python|
  ["Arbre aléatoire à 100 nœuds", [], random_binary_tree(100)[0].to_string_code().replace(' ', '')],
  ["Arbre aléatoire à 500 nœuds", [], random_binary_tree(200)[0].to_string_code().replace(' ', '')] ]
 ==
+
 
 
 
