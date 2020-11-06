@@ -228,7 +228,6 @@ if compil_state != 'error':
                 Tree_exo = binary_tree_from_code(test_c[2])
                 viewer = GraphDrawer()
                 viewer.graph = Tree_exo.to_dot_code_BST_point()
-                stdin_explain += " <style>\n  .graph-viewer-component {\n  pointer-events: none;\n  }\n</style>"
                 stdin_explain += f" \n\n <c-graph-viewer graph='{viewer.graph}'></c-graph-viewer> \n\n"
             else:
                 stdin_explain = ""
@@ -250,7 +249,6 @@ if compil_state != 'error':
                 Tree_exo = binary_tree_from_code(test_c[2])
                 viewer = GraphDrawer()
                 viewer.graph = Tree_exo.to_dot_code_BST_point()
-                stdin_explain += " <style>\n  .graph-viewer-component {\n  pointer-events: none;\n  }\n</style>"
                 stdin_explain += f" \n\n <c-graph-viewer graph='{viewer.graph}'></c-graph-viewer> \n\n"
 
             else:
