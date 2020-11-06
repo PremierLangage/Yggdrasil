@@ -18,13 +18,13 @@ extends=/ComputerScience/Algo/Tree/templates/std_progC_with_tree.pl
 
 author=Nicolas Borie
 
-title=Calculer le nombre de feuilles dans un arbre binaire
-tag=arbre|algo|feuille|récursivité
+title=Compter les étiquettes paires dans un arbre binaire
+tag=arbre|algo|récursivité|parité|étiquette|entier
 
 editor.height=300px
 
 text==
-Écrire une fonction C **count_leaf** qui prend en argument un **arbre** (un pointeur 
+Écrire une fonction C **count_even_node** qui prend en argument un **arbre** (un pointeur 
 vers le `Node` racine de l'arbre) et retourne un entier qui devra 
 être le **nombre de feuilles** dans l'arbre. 
 ==
@@ -36,7 +36,7 @@ typedef struct node{
   struct node * right;
 }Node, *Tree;
 
-... count_leaf(Tree t){
+... count_even_node(Tree t){
   /* Votre code ici... */
 }
 ==
