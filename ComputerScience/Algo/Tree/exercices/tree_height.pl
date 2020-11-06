@@ -124,7 +124,7 @@ checks_args_stdin==#|python|
 [["Arbre feuille", [], "f0"],
  ["Abre à 3 nœuds", [], "d1f0f0"],
  ["Peigne gauche", [], "l5l4l3l2l1f0"],
- ["Arbre aléatoire à 5 nœuds", [], random_binary_tree(5).to_string_code().replace(' ', '')] ]
+ ["Arbre aléatoire à 5 nœuds", [], random_binary_tree(5)[0].to_string_code().replace(' ', '')] ]
 ==
 
 
