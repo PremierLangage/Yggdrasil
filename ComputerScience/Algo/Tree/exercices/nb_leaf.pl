@@ -26,16 +26,7 @@ editor.height=300px
 text==
 Écrire une fonction C **count_leaf** qui prend en argument un **arbre** (un pointeur 
 vers le `Node` racine de l'arbre) et retourne un entier qui devra 
-être la **hauteur de l'arbre**. 
-
-<br>
-
-Pour rappel, une feuille a pour 
-hauteur `0` par définition. La hauteur d'un nœud interne est 
-le maximum des hauteurs de ces enfants plus un. En utilisant ces 
-conventions et définition, la hauteur d'un arbre est aussi de 
-manière équivalene la longueur maximale en nombre d'arrêtes des 
-chemins de la racine aux feuilles de l'arbre.
+être le **nombre de feuilles** dans l'arbre. 
 ==
 
 editor.code==#|c|
