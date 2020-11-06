@@ -14,5 +14,14 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
+#*********************
+#   MOTIVATIONS
+#*********************
+# The goal of this template is just customizing the classical template std_progC
+# By adding tree in test and exemples. 
+# This exemple ASSUME THAT STDIN OF TESTS WILL CONTAINS BINARY TREES
+
+@ utils_binary_tree.py
+
 extends=/ComputerScience/C/template/std_progC.pl
 
