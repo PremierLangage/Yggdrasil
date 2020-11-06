@@ -19,11 +19,8 @@ On utilisera les types:
 
 
     typedef struct cel{  
-
         int val;  
-
         struct cel* suivant;  
-
     } Cellule;  
 
     typedef Cellule* Liste  
