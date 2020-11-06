@@ -60,7 +60,7 @@ typedef struct node{
 int tree_height(Tree t){
   int l, r;
   l = (t->left == NULL)?-1:tree_height(t->left);
-  r = (t->left == NULL)?-1:tree_height(t->right);
+  r = (t->right == NULL)?-1:tree_height(t->right);
   if (l >= r)
     return l+1;
   return r+1;
