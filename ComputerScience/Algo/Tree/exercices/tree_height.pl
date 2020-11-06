@@ -121,12 +121,8 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[["Exécution simple", ["1"], ""],
- ["Quelques éléments", ["12", "-3", "52", "0", "41"], ""],
- ["Tableau vide", [], ""],
- ["Test aléatoire 1", [str(randint(-100, 100)) for i in range(randint(5, 10))], ""],
- ["Test aléatoire 2", [str(randint(-100, 100)) for i in range(randint(10, 15))], ""],
- ["Test aléatoire 3", [str(randint(-100, 100)) for i in range(randint(10, 15))], ""]]
+[["Arbre feuille", [], "f12"],
+ ["Abre à 3 nœuds", [], "d5f2f8"], ]
 ==
 
 
