@@ -67,14 +67,13 @@ int tree_height(Tree t){
 }
 ==
 
-code_before==
-
+code_before==#|c|
+#include <stdio.h>
+#include <stdlib.h>
 ==
 
 code_after==#|c|
 
-#include <stdio.h>
-#include <stdlib.h>
 
 void display_array(int* array, int nb_term){
   int i;
