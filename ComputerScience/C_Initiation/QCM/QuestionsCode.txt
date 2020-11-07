@@ -1,6 +1,6 @@
 Latex:1
 
-
+c =$ Yggdrasil/ComputerScience/C_Initiation/QCM/degolas.jpg
 
 * Qu’affiche le programme :
 
@@ -23,6 +23,9 @@ Latex:1
     si l’utilisateur entre : O
 
                              I U
+
+
+![Légende, texte alternatif de l'image]({{ c }})
 
 + xy z
 - provoque un warning à la compilation
