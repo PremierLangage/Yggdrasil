@@ -1871,4 +1871,11 @@ réel et n un entier positif. On veut pouvoir gérer le cas où la fonction ne p
 - pour controler la vitesse des boucles
 - lors de la compilation
 
+* [group=Parametre] Les paramètres d’une fonction sont toujours transmis :
+
++ par adresse
+- au moment de la compilation
+- par valeur
+- par l’interpréteur
+
 
