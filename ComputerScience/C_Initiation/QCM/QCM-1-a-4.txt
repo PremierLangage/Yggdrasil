@@ -1961,4 +1961,19 @@ si l’utilisateur entre : x y z t
 - Réponse 4
 - Réponse 5
 
+* [group=Lecture_De_Char] Qu’affiche le programme :
+
+
+    int main(void){
+
+        char a,b,c,d;
+
+        scanf("%c",&a);scanf(" %c",&b);
+
+        scanf("%c",&c);scanf(" %c",&d);
+
+        printf("%c%c%c%c\n", a,b,c,d);
+
+    }
+
 
