@@ -1700,4 +1700,4 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - Lorsque le résultat de la fonction foo peut être n’importe quel entier. 
 - Jamais, cela ne sert à rien.
 
-
+* [group=Pile1] Dans quel cas peut-il être intéressant qu’une fonction `int foo(int n, int * resultat)` renvoie un code d’erreur ?
