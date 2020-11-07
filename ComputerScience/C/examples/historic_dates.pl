@@ -9,6 +9,8 @@ Placer les événements historique suivant sur la frise chronologique.
 
 <img src="{{ c }}" alt="IMAGE_xxxxx"/>
 
+![Couronement de Napoleon]({{ c }})
+
 ==
 
 builder =@ /builder/none.py
