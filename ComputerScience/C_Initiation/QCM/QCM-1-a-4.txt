@@ -1775,5 +1775,13 @@ entière entrée par l’utilisateur, mais il est incorrect:
 
     }
 
+Parmi les propositions suivantes, lesquelles corrigent le code ?
 
+- On remplace le type de retour int de la fonction f par void. 
++ On rajoute après la ligne contenant printf un return *n
+- On rajoute après la ligne contenant printf un return n
+- On remplace le printf à la fin de la fonction f par return n. 
+- On remplace le n par &n dans le scanf.
+- On remplace le *n par n dans le printf.
+- On remplace le printf à la fin de la fonction f par return *n.
 
