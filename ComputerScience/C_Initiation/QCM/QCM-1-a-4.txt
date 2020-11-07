@@ -1648,7 +1648,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + void carre(int * n)
 - Aucune de ces réponses n’est correcte
 
-**[group=Transmission_par_adresse1]
+**[group=Transmission_par_adresse2]
 
 + void sqrt(float * x)
 - float sqrt(float x)
@@ -1656,10 +1656,4 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - int carre(int n)
 - Aucune de ces réponses n’est correcte
 
-**[group=Transmission_par_adresse2]
 
-- void absolue(int * n)
-+ int absolue(int n)
-- void sqrt(float * x)
-+ float sqrt(float x)
-- Aucune de ces réponses n’est correcte
