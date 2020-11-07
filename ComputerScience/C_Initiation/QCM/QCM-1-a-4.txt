@@ -1639,3 +1639,11 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - int absolue(int n)
 - float sqrt(float x)
 - Aucune de ces réponses n’est correcte 
+
+**[group=Transmission_par_adresse1]
+
+- int absolue(int n)
++ void absolue(int * n)
+- float sqrt(float x)
++ void carre(int * n)
+- Aucune de ces réponses n’est correcte
