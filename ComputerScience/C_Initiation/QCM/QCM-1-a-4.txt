@@ -1726,3 +1726,5 @@ Ce code est-il correct? S’il ne l’est pas, que faut-il modifier pour qu’il
 - Il faut écrire plusDeux(m) à la place de plusDeux(&m) dans le main.
 - Il faut écrire void plusDeux(int n) à la place de void plusDeux(int *n). 
 - Le code est correct.
+
+
