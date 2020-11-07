@@ -1672,3 +1672,4 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - double absolue(int n)
 - Aucune de ces réponses n’est correcte
 
+
