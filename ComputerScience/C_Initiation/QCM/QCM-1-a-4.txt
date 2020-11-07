@@ -1320,7 +1320,7 @@ Quelle sont les en-têtes possibles de cette fonction ?
 
 # Catalogue 3 Prog C Olivier BOUILLOT
 
-**[group=Erreurs] Le programme ci-dessus provoque un certain nombre d’erreurs de compilation ou de warning.
+**[group=Erreurs1] Le programme ci-dessus provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     #include <stdio.h>
@@ -1353,7 +1353,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - error: expected ’;’ after expression
 - Aucune erreur ou warning n’est générée à la compilation
 
-**[group=Erreurs] Le programme ci-dessus provoque un certain nombre d’erreurs de compilation ou de warning.
+**[group=Erreurs1] Le programme ci-dessus provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     #include <stdio.h>
@@ -1387,7 +1387,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + error: expected ’;’ after expression
 - Aucune erreur ou warning n’est générée à la compilation
 
-**[group=Erreurs] Le programme ci-dessus provoque un certain nombre d’erreurs de compilation ou de warning.
+**[group=Erreurs1] Le programme ci-dessus provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     #include <stdio.h>
@@ -1417,7 +1417,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + error: expected ’;’ after expression
 - Aucune erreur ou warning n’est générée à la compilation
 
-**[group=Erreurs] Le programme ci-dessus provoque un certain nombre d’erreurs de compilation ou de warning.
+**[group=Erreurs1] Le programme ci-dessus provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     #include <stdio.h>
@@ -1452,4 +1452,38 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - error: expected ’;’ after expression
 - Aucune erreur ou warning n’est générée à la compilation
 
+**[group=Erreurs2] Le programme ci-dessus provoque un certain nombre d’erreurs de compilation ou de warning.
+
+
+    #include <stdio.h>
+
+    int main(void) {
+
+        int n;
+
+        int i = 2;
+
+        for (i = 0; i < n; i += 1) {
+
+            printf("Donnez moi un entier : ");
+
+            scanf("%d", &n);
+
+            printf("Vous avez tapé : %d\n", n);
+
+        } 
+
+    }
+
+
+Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur renvoie ?
+
+- error: use of undeclared identifier ’i’
+- warning: format specifies type ’int *’ but the argument has type ’int’ 
+- warning: format specifies type ’double’ but the argument has type ’int’ 
+- error: extraneous closing brace (’}’)
+- error: expected ’}’
++ warning: variable ’n’ is uninitialized when used here
+- error: expected ’;’ after expression
+- Aucune erreur ou warning n’est générée à la compilation
 
