@@ -1538,4 +1538,44 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - error: expected ’;’ after expression
 - Aucune erreur ou warning n’est générée à la compilation
 
+**[group=Erreurs2] Le programme ci-dessus provoque un certain nombre d’erreurs de compilation ou de warning.
 
+
+    int main(void) {
+
+        int n;
+
+        printf("Donnez moi un entier : ");
+
+        scanf("%d", &n);
+
+        if (n > 0)
+
+            printf("Positif !\n");
+
+        else {
+
+            if (n = 0)
+
+                printf("Nul !\n");
+
+            else
+
+                printf("Négatif !\n");
+
+        } 
+
+    }
+
+
+Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur renvoie ?
+
++ warning:  using the result of an assignment as a condition without parentheses
++ warning: implicitly declaring library function ’printf’ with type ’int (const char *, ...)’
++ warning: implicitly declaring library function ’scanf’ with type ’int (const char *restrict, ...)’
+- error: expected ’(’ after ’if’
+- error: expected ’}’
+- warning: variable ’n’ is uninitialized when used here
+- warning: format specifies type ’int *’ but the argument has type ’int’ 
+- error: expected ’;’ after expression
+- Aucune erreur ou warning n’est générée à la compilation
