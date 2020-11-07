@@ -1935,7 +1935,9 @@ si l’utilisateur entre : x y z t
 
   }
 
-si l’utilisateur entre : x y z t
+                         P
+                         O
+si l’utilisateur entre : I U
 
 + xy z
 - provoque un warning à la compilation
