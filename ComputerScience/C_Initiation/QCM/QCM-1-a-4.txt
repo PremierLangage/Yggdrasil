@@ -1743,4 +1743,4 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 
 On exécute le main de ce programme. Quel est alors l’état de la pile lorsque la ligne 15 a été exécutée ?
 
-
+![](degolas.jpg)
