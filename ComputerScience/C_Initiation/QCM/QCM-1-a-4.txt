@@ -1785,3 +1785,5 @@ Parmi les propositions suivantes, lesquelles corrigent le code ?
 - On remplace le *n par n dans le printf.
 - On remplace le printf à la fin de la fonction f par return *n.
 
+
+
