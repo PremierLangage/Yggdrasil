@@ -1579,3 +1579,5 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + warning: format specifies type ’int *’ but the argument has type ’int’ error: expected ’;’ after expression
 + error: expected ’;’ after declaration
 - Aucune erreur ou warning n’est générée à la compilation
+
+
