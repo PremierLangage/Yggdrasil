@@ -25,7 +25,7 @@ c =$ /filebrowser/option?name=download_resource&path=Yggdrasil/ComputerScience/C
                              I U
 
 
-![Légende, texte alternatif de l'image]({{"filebrowser/option?name=download_resource&path=Yggdrasil/ComputerScience/C_Initiation/QCM/degolas.jpg"}})
+![Légende, texte alternatif de l'image](/filebrowser/option?name=download_resource&path=Yggdrasil/ComputerScience/C_Initiation/QCM/degolas.jpg)
 
 + xy z
 - provoque un warning à la compilation
