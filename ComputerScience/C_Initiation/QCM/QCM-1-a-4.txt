@@ -1815,4 +1815,14 @@ Parmi les propositions suivantes, lesquelles corrigent le code ?
 
         printf("%d", n/2);
 
-    } 
+    }
+
+Qu’affiche diviseParDeux(5)?
+
++ 2
+- 2.5
+- 2.0
+- 5
+
+
+
