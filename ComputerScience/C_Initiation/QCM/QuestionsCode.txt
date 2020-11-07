@@ -46,4 +46,7 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 
 ![](degolas.jpg)
 
++ Lorsque les valeurs des paramètres n et resultat donnés par l’utilisateur ne sont pas dans le bon ensemble de valeurs.
+- Lorsque le résultat de la fonction foo peut être n’importe quel entier. 
+- Jamais, cela ne sert à rien.
 
