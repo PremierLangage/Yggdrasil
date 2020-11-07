@@ -1688,4 +1688,6 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + int carre(int n)
 - Aucune de ces réponses n’est correcte
 
+** [group=Renvoie_dun_code_derreur1] Dans quel cas peut-il être intéressant qu’une fonction int foo(int n) renvoie un code d’erreur ?
+
 
