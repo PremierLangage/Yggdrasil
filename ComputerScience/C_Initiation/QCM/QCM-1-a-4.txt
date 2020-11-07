@@ -1852,4 +1852,7 @@ un nombre entier positif, transmis en paramètre est premier. Quel doit être le
 réel et n un entier positif. On veut pouvoir gérer le cas où la fonction ne peut effectuer le calcul 
 (si l’entier transmis en paramètre est négatif). Quel doit être le prototype de cette fonction ?
 
-
++ int puissanceEntiere(float x,int n,float *resultat)
+- float puissanceEntiere(float x,int n)
+- void puissanceEntiere(float x,int n,float resultat)
+- void puissanceEntiere(float x,int n)
