@@ -1624,4 +1624,6 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - error: expected ’;’ after declaration
 + Aucune erreur ou warning n’est générée à la compilation
 
+**[group=Transmission_par_adresse] Le programme ci-dessus provoque un certain nombre d’erreurs de compilation ou de warning.
+
 
