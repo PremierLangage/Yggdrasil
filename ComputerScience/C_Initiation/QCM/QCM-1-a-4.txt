@@ -1271,6 +1271,7 @@ Combien y en a t-il ?
 
 *[group=boucle_for] Qu’affiche le programme suivant ?
 
+
     int main(){
 
         int i;
@@ -1319,4 +1320,31 @@ Quelle sont les en-têtes possibles de cette fonction ?
 
 # Catalogue 3 Prog C Olivier BOUILLOT
 
+**[group=Erreurs] Le programme ci-dessus provoque un certain nombre d’erreurs de compilation ou de warning.
+
+
+    int main(){
+
+        int i;
+
+        int somme = 0;
+
+        for(i = 0; i < 10; i++){
+
+            if(i%2 != 0)
+
+                somme = somme + i;
+
+        }
+
+        printf("%d", somme);
+
+        return 0;
+
+    }
+
++ 25
+- 45
+- 30
+- 20
 
