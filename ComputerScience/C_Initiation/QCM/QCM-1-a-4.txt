@@ -1687,3 +1687,5 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - void carre(int * n)
 + int carre(int n)
 - Aucune de ces réponses n’est correcte
+
+
