@@ -1,6 +1,6 @@
 Latex:1
 
-c =$ /filebrowser/option?name=download_resource&path=Yggdrasil/ComputerScience/C_Initiation/QCM/degolas.jpg
+
 
 * Qu’affiche le programme :
 
