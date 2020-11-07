@@ -1912,4 +1912,10 @@ réel et n un entier positif. On veut pouvoir gérer le cas où la fonction ne p
 
     }
 
+si l’utilisateur entre : x y z t
 
++ xy z
+- provoque un warning à la compilation
+- x y z t
+- xyzt
+- entraine une erreur à l’exécution
