@@ -1547,7 +1547,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 
         printf("Donnez moi un entier : ");
 
-        scanf("%d", &n);
+        scanf("%d", n);
 
         if (n > 0)
 
