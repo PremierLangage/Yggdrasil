@@ -1847,3 +1847,5 @@ un nombre entier positif, transmis en paramètre est premier. Quel doit être le
 - void estPremier(int c)
 - int estPremier(int *a)
 - float estPremier(int n)
+
+
