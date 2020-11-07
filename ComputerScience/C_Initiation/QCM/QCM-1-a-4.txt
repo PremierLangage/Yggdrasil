@@ -1890,3 +1890,9 @@ réel et n un entier positif. On veut pouvoir gérer le cas où la fonction ne p
         printf("%d\n", *p+1);
 
     }
+
++ provoque un warning à la compilation, avec -ansi et -Wall
+- affiche 6 si on l’appelle avec f(5)
+- affiche 4 si on l’appelle avec f(5)
++ entraine une erreur à l’exécution
+- affiche une adresse
