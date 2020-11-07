@@ -25,11 +25,11 @@ Latex:1
                              I U
 
 
-                                    P
+                                        P
 
     Réponse 1 : P O         Réponse 2 : O
 
-                P                       I
+                I                       I
 
                                         U
 
