@@ -1839,3 +1839,5 @@ Ces instructions sont correctes si la fonction f a pour prototype:
 - void f(int *a,int *b,float *c)
 - float f(int a,int b,float c)
 - float f(int n, int &c, int &x)
+
+
