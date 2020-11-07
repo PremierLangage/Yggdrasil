@@ -1,6 +1,6 @@
 @ /utils/sandboxio.py
 
-@ napoleon.jpg
+@ /ComputerScience/C/examples/napoleon.jpg
 
 title = Histoire : resituer des événements historiques sur une frise chronologique
 author = N.B.
