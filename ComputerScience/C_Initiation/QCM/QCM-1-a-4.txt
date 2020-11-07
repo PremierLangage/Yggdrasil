@@ -1325,21 +1325,21 @@ Quelle sont les en-têtes possibles de cette fonction ?
 
     #include <stdio.h>
 
-        int main(void) {
+    int main(void) {
 
-            int n;
+        int n;
 
-            for (i = 0; i < n; i += 1) {
+        for (i = 0; i < n; i += 1) {
 
-                printf("Donnez moi un entier : ");
+            printf("Donnez moi un entier : ");
 
-                scanf("%d", n)
+            scanf("%d", n)
 
-                printf("Vous avez tapé : %d\n", n);
+            printf("Vous avez tapé : %d\n", n);
 
-            } 
+        } 
 
-        }
+    }
 
 
 Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur renvoie ?
