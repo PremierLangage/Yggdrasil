@@ -17,6 +17,7 @@ Latex:1
 
   }
 
+
                          P
                          O
 si l’utilisateur entre : I U
