@@ -1897,4 +1897,19 @@ réel et n un entier positif. On veut pouvoir gérer le cas où la fonction ne p
 + entraine une erreur à l’exécution
 - affiche une adresse
 
+* [group=Lecture_De_Char] Qu’affiche le programme :
+
+
+    int main(void){
+
+        char a,b,c,d;
+
+        scanf("%c",&a);scanf(" %c",&b);
+
+        scanf("%c",&c);scanf(" %c",&d);
+
+        printf("%c%c%c%c\n", a,b,c,d);
+
+    }
+
 
