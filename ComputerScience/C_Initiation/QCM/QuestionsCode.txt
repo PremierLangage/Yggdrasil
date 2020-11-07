@@ -19,6 +19,7 @@ Latex:1
 
 
                          P
+                         
 si l’utilisateur entre : O
 
                          I U
