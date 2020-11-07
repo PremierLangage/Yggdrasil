@@ -1840,4 +1840,7 @@ Ces instructions sont correctes si la fonction f a pour prototype:
 - float f(int a,int b,float c)
 - float f(int n, int &c, int &x)
 
+* [group=Appel_et_prototype] On veut écrire une fonction estPremier qui indique à la partie appellante si 
+un nombre entier positif, transmis en paramètre est premier. Quel doit être le prototype de cette fonction ?
+
 
