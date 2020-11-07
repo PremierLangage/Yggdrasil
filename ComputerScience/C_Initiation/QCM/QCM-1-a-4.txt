@@ -1935,17 +1935,30 @@ si l’utilisateur entre : x y z t
 
   }
 
-                         P
-                         O
-si l’utilisateur entre : I U
-                                    P
-Réponse 1 : P O         Réponse 2 : O
-            P                       I
-                                    U
+
+                             P
+
+    si l’utilisateur entre : O
+
+                             I U
 
 
-+ xy z
-- provoque un warning à la compilation
-- x y z t
-- xyzt
-- entraine une erreur à l’exécution
+                                        P
+
+    Réponse 1 : P O         Réponse 2 : O         Réponse 3 : POIU
+
+                I                       I
+
+                                        U
+
+    Réponse 4 : provoque un warning à la compilation
+
+    Réponse 5 : entraîne une erreur à l'exécution
+
++ Réponse 1
+- Réponse 2
+- Réponse 3
+- Réponse 4
+- Réponse 5
+
+
