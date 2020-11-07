@@ -1647,3 +1647,5 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - float sqrt(float x)
 + void carre(int * n)
 - Aucune de ces réponses n’est correcte
+
+
