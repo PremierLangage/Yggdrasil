@@ -20,9 +20,9 @@ Latex:1
 
                          P
 
-                         O
+si l’utilisateur entre : O
 
-si l’utilisateur entre : I U
+                         I U
 
 + xy z
 - provoque un warning à la compilation
