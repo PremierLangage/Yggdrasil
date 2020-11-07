@@ -33,6 +33,9 @@ Latex:1
 
                                         U
 
+    Réponse 4 : provoque un warning à la compilation
+
+    Réponse 5 : entraine une erreur à l'exécution
     
 ![Légende, texte alternatif de l'image](/filebrowser/option?name=download_resource&path=Yggdrasil/ComputerScience/C_Initiation/QCM/degolas.jpg)
 
