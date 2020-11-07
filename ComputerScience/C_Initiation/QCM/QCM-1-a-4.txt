@@ -1843,4 +1843,7 @@ Ces instructions sont correctes si la fonction f a pour prototype:
 * [group=Appel_et_prototype] On veut écrire une fonction estPremier qui indique à la partie appellante si 
 un nombre entier positif, transmis en paramètre est premier. Quel doit être le prototype de cette fonction ?
 
-
++ int estPremier(int a)
+- void estPremier(int c)
+- int estPremier(int *a)
+- float estPremier(int n)
