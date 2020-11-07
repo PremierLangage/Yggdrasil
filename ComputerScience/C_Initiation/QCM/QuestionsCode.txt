@@ -1,53 +1,29 @@
 Latex:1
 
-c =$ degolas.jpg
-
-* [group=Pile1] Considérons le programme suivant :
 
 
-    /*01*/#include <stdio.h>
+* Qu’affiche le programme :
 
-    /*02*/
 
-    /*03*/void echange(int * a, int * b) {
+    int main(void){
 
-    /*04*/    int tmp = *a;
+        char a,b,c,d;
 
-    /*05*/ *a=*b;
+        scanf("%c",&a);scanf(" %c",&b);
 
-    /*06*/    *b = tmp;
+        scanf("%c",&c);scanf(" %c",&d);
 
-    /*07*/}
+        printf("%c%c%c%c\n", a,b,c,d);
 
-    /*08*/
+  }
 
-    /*09*/int carre(int n) {
+                         P
+                         O
+si l’utilisateur entre : I U
 
-    /*10*/    return n * n;
-
-    /*11*/}
-
-    /*12*/
-
-    /*13*/int main(void) {
-
-    /*14*/ inta=2;
-
-    /*15*/ intb=3;
-
-    /*16*/    echange(&a, &b);
-
-    /*17*/    a = carre(b);
-
-    /*18*/    echange(&a, &b);
-
-    /*19*/}
-
-On exécute le main de ce programme. Quel est alors l’état de la pile lorsque la ligne 15 a été exécutée ?
-
-![Légende, texte alternatif de l'image]({{ c }})
-
-+ Lorsque les valeurs des paramètres n et resultat donnés par l’utilisateur ne sont pas dans le bon ensemble de valeurs.
-- Lorsque le résultat de la fonction foo peut être n’importe quel entier. 
-- Jamais, cela ne sert à rien.
++ xy z
+- provoque un warning à la compilation
+- x y z t
+- xyzt
+- entraine une erreur à l’exécution
 
