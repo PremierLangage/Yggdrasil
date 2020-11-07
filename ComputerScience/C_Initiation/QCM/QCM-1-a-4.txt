@@ -1824,5 +1824,6 @@ Qu’affiche diviseParDeux(5)?
 - 2.0
 - 5
 
+* [group=Appel_et_prototype] On considère la fonction suivante :
 
 
