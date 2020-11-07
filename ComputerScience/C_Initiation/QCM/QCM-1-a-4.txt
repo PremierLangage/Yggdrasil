@@ -1976,4 +1976,10 @@ si l’utilisateur entre : x y z t
 
     }
 
+si l’utilisateur entre : R T Y U
 
++ RT Y
+- R T Y U
+- provoque un warning à la compilation
+- entraire une erreur à l’exécution
+- RTYU
