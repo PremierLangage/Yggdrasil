@@ -17,7 +17,24 @@ author=Nicolas Borie
 title=Les arbres binaires en C
 
 introduction==
+Voici une première fiche d'exercice sur les arbres binaires. Les exercices 
+portent sur le vocabulaire et les premières définitions autour des arbres 
+binaire. Certains exercices font travailler les représentations des arbres 
+binaires, notament sous forme de chaines de caractères. Enfin, il vous sera 
+demandé de coder quelques fonctions basiques travaillant sur les arbres 
+binaires. 
 
+<br>
+
+Nous utiliseront systématiquement la définition suivante :
+
+<pre>
+typedef struct node{
+  int value;
+  struct node * left;
+  struct node * right;
+}Node, *Tree;
+</pre>
 ==
 
 @ /ComputerScience/Algo/Tree/exercices/statistic_bin_tree.pl
