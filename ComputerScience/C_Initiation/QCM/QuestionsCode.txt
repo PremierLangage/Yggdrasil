@@ -18,13 +18,13 @@ Latex:1
   }
 
 
-                         P
+                             P
 
 
     si l’utilisateur entre : O
 
 
-                         I U
+                             I U
 
 + xy z
 - provoque un warning à la compilation
