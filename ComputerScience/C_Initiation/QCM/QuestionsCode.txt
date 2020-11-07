@@ -4,23 +4,41 @@ Latex:1
 
 
     /*01*/#include <stdio.h>
+
     /*02*/
+
     /*03*/void echange(int * a, int * b) {
+
     /*04*/    int tmp = *a;
+
     /*05*/ *a=*b;
+
     /*06*/    *b = tmp;
+
     /*07*/}
+
     /*08*/
+
     /*09*/int carre(int n) {
+
     /*10*/    return n * n;
+
     /*11*/}
+
     /*12*/
+
     /*13*/int main(void) {
+
     /*14*/ inta=2;
+
     /*15*/ intb=3;
+
     /*16*/    echange(&a, &b);
+
     /*17*/    a = carre(b);
+
     /*18*/    echange(&a, &b);
+
     /*19*/}
 
 
