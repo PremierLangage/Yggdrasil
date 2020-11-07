@@ -1486,12 +1486,12 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 
 Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur renvoie ?
 
-- error: use of undeclared identifier ’i’
-- warning: format specifies type ’int *’ but the argument has type ’int’ 
-- warning: format specifies type ’double’ but the argument has type ’int’ 
-- error: extraneous closing brace (’}’)
++ warning:  using the result of an assignment as a condition without parentheses
+- warning: implicitly declaring library function ’printf’ with type ’int (const char *, ...)’
+- warning: implicitly declaring library function ’scanf’ with type ’int (const char *restrict, ...)’
++ error: expected ’(’ after ’if’
 - error: expected ’}’
-+ warning: variable ’n’ is uninitialized when used here
+- warning: variable ’n’ is uninitialized when used here
+- warning: format specifies type ’int *’ but the argument has type ’int’ 
 - error: expected ’;’ after expression
-- Aucune erreur ou warning n’est générée à la compilation
-
++ Aucune erreur ou warning n’est générée à la compilation
