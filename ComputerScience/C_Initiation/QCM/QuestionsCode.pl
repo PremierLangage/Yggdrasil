@@ -1,8 +1,7 @@
 extends=/model/AMC_TXT.pl 
 
-c =$ degolas.jpg
-
 textstep ==
+c =$ degolas.jpg
 <strong> Question {{ step + 1 }}. </strong> 
 {{ statement[step] | safe }}
 ==
