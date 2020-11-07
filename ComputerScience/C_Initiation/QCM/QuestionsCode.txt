@@ -9,11 +9,11 @@ Latex:1
 
     /*03*/void echange(int * a, int * b) {
 
-    /*04*/    int tmp = *a;
+    /*04*/  int tmp = *a;
 
-    /*05*/ *a=*b;
+    /*05*/  *a=*b;
 
-    /*06*/    *b = tmp;
+    /*06*/  *b = tmp;
 
     /*07*/}
 
@@ -21,7 +21,7 @@ Latex:1
 
     /*09*/int carre(int n) {
 
-    /*10*/    return n * n;
+    /*10*/  return n * n;
 
     /*11*/}
 
@@ -29,15 +29,15 @@ Latex:1
 
     /*13*/int main(void) {
 
-    /*14*/ inta=2;
+    /*14*/  inta=2;
 
-    /*15*/ intb=3;
+    /*15*/  intb=3;
 
-    /*16*/    echange(&a, &b);
+    /*16*/  echange(&a, &b);
 
-    /*17*/    a = carre(b);
+    /*17*/  a = carre(b);
 
-    /*18*/    echange(&a, &b);
+    /*18*/  echange(&a, &b);
 
     /*19*/}
 
