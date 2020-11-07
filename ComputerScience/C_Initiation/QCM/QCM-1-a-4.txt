@@ -1878,4 +1878,15 @@ réel et n un entier positif. On veut pouvoir gérer le cas où la fonction ne p
 - par valeur
 - par l’interpréteur
 
-** [group=Parametre] Les paramètres d’une fonction sont toujours transmis :
+** [group=InitAdresse] La fonction f :
+
+
+    void f(int x){
+
+        int *p;
+
+        *p=x;
+
+        printf("%d\n", *p+1);
+
+    }
