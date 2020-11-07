@@ -1,35 +1,49 @@
 Latex:1
 
 
-** Le programme ci-dessus provoque un certain nombre d’erreurs de compilation ou de warning.
+* [group=Pile1] Considérons le programme suivant :
 
 
-    #include <stdio.h>
+    /*01*/#include <stdio.h>
 
-        int main(void) {
+    /*02*/
 
-            int n;
+    /*03*/void echange(int * a, int * b) {
 
-            for (i = 0; i < n; i += 1) {
+    /*04*/    int tmp = *a;
 
-                printf("Donnez moi un entier : ");
+    /*05*/ *a=*b;
 
-                scanf("%d", n)
+    /*06*/    *b = tmp;
 
-                printf("Vous avez tapé : %d\n", n);
+    /*07*/}
 
-            } 
+    /*08*/
 
-        }
+    /*09*/int carre(int n) {
+
+    /*10*/    return n * n;
+
+    /*11*/}
+
+    /*12*/
+
+    /*13*/int main(void) {
+
+    /*14*/ inta=2;
+
+    /*15*/ intb=3;
+
+    /*16*/    echange(&a, &b);
+
+    /*17*/    a = carre(b);
+
+    /*18*/    echange(&a, &b);
+
+    /*19*/}
+
+On exécute le main de ce programme. Quel est alors l’état de la pile lorsque la ligne 15 a été exécutée ?
+
+![](degolas.jpg)
 
 
-Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur renvoie ?
-
-+ error: use of undeclared identifier ’i’
-+ warning: format specifies type ’int *’ but the argument has type ’int’
-- warning: format specifies type ’double’ but the argument has type ’int’ 
-- error: extraneous closing brace (’}’)
-- error: expected ’}’
-- warning: variable ’n’ is uninitialized when used here
-- error: expected ’;’ after expression
-- Aucune erreur ou warning n’est générée à la compilation
