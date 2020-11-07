@@ -1919,3 +1919,26 @@ si l’utilisateur entre : x y z t
 - x y z t
 - xyzt
 - entraine une erreur à l’exécution
+
+* [group=Lecture_De_Char] Qu’affiche le programme :
+
+
+    int main(void){
+
+        char a,b,c,d;
+
+        scanf("%c",&a);scanf(" %c",&b);
+
+        scanf("%c",&c);scanf(" %c",&d);
+
+        printf("%c%c%c%c\n", a,b,c,d);
+
+  }
+
+si l’utilisateur entre : x y z t
+
++ xy z
+- provoque un warning à la compilation
+- x y z t
+- xyzt
+- entraine une erreur à l’exécution
