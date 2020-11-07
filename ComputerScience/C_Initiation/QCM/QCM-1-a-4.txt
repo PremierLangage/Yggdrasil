@@ -1857,4 +1857,9 @@ réel et n un entier positif. On veut pouvoir gérer le cas où la fonction ne p
 - void puissanceEntiere(float x,int n,float resultat)
 - void puissanceEntiere(float x,int n)
 
+* [group=Pile_d_execution] La pile d’exécution est utilisée :
 
++ lors de l’appel d’une fonction
+- lors de la compilation
+- lors d’un switch
+- lors de la pré-compilation
