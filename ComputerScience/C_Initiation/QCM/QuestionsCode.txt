@@ -1,5 +1,7 @@
 Latex:1
 
+c =$ degolas.jpg
+
 * [group=Pile1] Considérons le programme suivant :
 
 
