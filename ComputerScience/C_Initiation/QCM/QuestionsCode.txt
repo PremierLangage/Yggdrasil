@@ -22,6 +22,7 @@ Latex:1
 
 si l’utilisateur entre : O
 
+
                          I U
 
 + xy z
