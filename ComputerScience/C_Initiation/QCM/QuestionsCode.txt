@@ -36,13 +36,13 @@ Latex:1
     Réponse 4 : provoque un warning à la compilation
 
     Réponse 5 : entraine une erreur à l'exécution
-    
+
+
++ Réponse 1
+- Réponse 2
+- Réponse 3
+- Réponse 4
+- Réponse 5
+
 ![Légende, texte alternatif de l'image](/filebrowser/option?name=download_resource&path=Yggdrasil/ComputerScience/C_Initiation/QCM/degolas.jpg)
-
-+ xy z
-- provoque un warning à la compilation
-- x y z t
-- xyzt
-- entraine une erreur à l’exécution
-
 
