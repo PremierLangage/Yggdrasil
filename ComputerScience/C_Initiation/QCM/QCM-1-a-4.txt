@@ -1767,5 +1767,11 @@ Ce code est-il correct? S’il ne l’est pas, que faut-il modifier pour qu’il
 ** [group=difference_entre_affichage_et_retour_de_fonction] Le code suivant devrait afficher et retourner la valeur 
 entière entrée par l’utilisateur, mais il est incorrect:
 
+    int f(int *n){
 
+        scanf("%d", n);
+
+        printf("%d", *n);
+
+    }
 
