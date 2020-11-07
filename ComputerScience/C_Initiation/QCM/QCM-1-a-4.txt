@@ -1938,6 +1938,11 @@ si l’utilisateur entre : x y z t
                          P
                          O
 si l’utilisateur entre : I U
+                                    P
+Réponse 1 : P O         Réponse 2 : O
+            P                       I
+                                    U
+                                    
 
 + xy z
 - provoque un warning à la compilation
