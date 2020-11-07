@@ -1984,7 +1984,7 @@ si l’utilisateur entre : R T Y U
 - entraire une erreur à l’exécution
 - RTYU
 
-* Considérons le programme suivant :
+* [group=Pile] Considérons le programme suivant :
 
 
     /*01*/#include <stdio.h>
