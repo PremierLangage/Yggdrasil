@@ -1856,3 +1856,5 @@ réel et n un entier positif. On veut pouvoir gérer le cas où la fonction ne p
 - float puissanceEntiere(float x,int n)
 - void puissanceEntiere(float x,int n,float resultat)
 - void puissanceEntiere(float x,int n)
+
+
