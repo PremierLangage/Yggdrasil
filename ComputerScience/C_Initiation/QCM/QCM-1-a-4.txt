@@ -1456,18 +1456,31 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 
 
     #include <stdio.h>
+
     int main(void) {
+
         int n;
+
         printf("Donnez moi un entier : ");
+
         scanf("%d", &n);
+
         if n > 0
+
             printf("Positif !\n");
+
         else {
+
             if n = 0
+
                 printf("Nul !\n");
+
             else
+
                printf("Négatif !\n");
+
         } 
+
     }
 
 
