@@ -1808,4 +1808,11 @@ Parmi les propositions suivantes, lesquelles corrigent le code ?
 - On remplace le *n par n dans le printf.
 - On remplace le printf à la fin de la fonction f par return *n.
 
+* [group=fonction_divise_par_deux_entier] On considère la fonction suivante :
 
+
+    void diviseParDeux(int n){
+
+        printf("%d", n/2);
+
+    } 
