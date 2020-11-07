@@ -1702,6 +1702,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 
 * [group=Pointeur_en_parametre_de_fonction] On considère le code suivant:
 
+
     void plusDeux(int *n){
 
         n = 2 + n;
@@ -1727,4 +1728,33 @@ Ce code est-il correct? S’il ne l’est pas, que faut-il modifier pour qu’il
 - Il faut écrire void plusDeux(int n) à la place de void plusDeux(int *n). 
 - Le code est correct.
 
+* [group=Fonction_avec_et_sans_pointeur] Qu'affiche le programme suivant ?
 
+
+    int f(int n){
+
+        n = n+1;
+
+        return n;
+
+    }
+
+    void g(int *n){
+
+        (*n) = 2 - (*n);
+
+    }
+
+    int main(){
+
+        int n = 0;
+
+        int m = f(n);
+
+        g(&n);
+
+        g(&m);
+
+        printf("%d\n", n+m);
+
+    }
