@@ -1679,3 +1679,5 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - void sqrt(float * x)
 + float sqrt(float x)
 - Aucune de ces réponses n’est correcte
+
+
