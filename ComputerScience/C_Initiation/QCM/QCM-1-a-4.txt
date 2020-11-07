@@ -1863,3 +1863,5 @@ réel et n un entier positif. On veut pouvoir gérer le cas où la fonction ne p
 - lors de la compilation
 - lors d’un switch
 - lors de la pré-compilation
+
+
