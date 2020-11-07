@@ -1864,4 +1864,11 @@ réel et n un entier positif. On veut pouvoir gérer le cas où la fonction ne p
 - lors d’un switch
 - lors de la pré-compilation
 
+* [group=Pile_d_execution] La pile d’exécution est utilisée :
+
++ lors de l’appel d’une fonction
+- lors de l’allocation des variables globales
+- pour controler la vitesse des boucles
+- lors de la compilation
+
 
