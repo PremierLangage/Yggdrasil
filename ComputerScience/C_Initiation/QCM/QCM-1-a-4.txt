@@ -1555,7 +1555,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 
         else {
 
-            if (n = 0)
+            if (n == 0)
 
                 printf("Nul !\n");
 
