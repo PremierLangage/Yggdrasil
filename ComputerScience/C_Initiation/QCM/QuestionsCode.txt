@@ -23,4 +23,6 @@ Latex:1
     /*18*/    echange(&a, &b);
     /*19*/}
 
+On exécute le main de ce programme. Quel est alors l’état de la pile lorsque la ligne 15 a été exécutée ?
+
 
