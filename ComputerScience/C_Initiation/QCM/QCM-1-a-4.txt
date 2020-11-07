@@ -1323,25 +1323,24 @@ Quelle sont les en-têtes possibles de cette fonction ?
 **[group=Erreurs] Le programme ci-dessus provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
-    int main(){
+    #include <stdio.h>
 
-        int i;
+        int main(void) {
 
-        int somme = 0;
+            int n;
 
-        for(i = 0; i < 10; i++){
+            for (i = 0; i < n; i += 1) {
 
-            if(i%2 != 0)
+                printf("Donnez moi un entier : ");
 
-                somme = somme + i;
+                scanf("%d", n)
+
+                printf("Vous avez tapé : %d\n", n);
+
+            } 
 
         }
 
-        printf("%d", somme);
-
-        return 0;
-
-    }
 
 + 25
 - 45
