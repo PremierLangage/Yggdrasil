@@ -1648,12 +1648,14 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + void carre(int * n)
 - Aucune de ces réponses n’est correcte
 
-**[group=Transmission_par_adresse2]
+**[group=Transmission_par_adresse1]
 
 + void sqrt(float * x)
 - float sqrt(float x)
 + void carre(int * n)
 - int carre(int n)
 - Aucune de ces réponses n’est correcte
+
+**[group=Transmission_par_adresse2]
 
 
