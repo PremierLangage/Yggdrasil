@@ -35,7 +35,7 @@ Latex:1
 
     Réponse 4 : provoque un warning à la compilation
 
-    Réponse 5 : entraine une erreur à l'exécution
+    Réponse 5 : entraîne une erreur à l'exécution
 
 
 + Réponse 1
