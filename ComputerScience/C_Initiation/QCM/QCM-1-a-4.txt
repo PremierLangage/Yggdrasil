@@ -1896,3 +1896,5 @@ réel et n un entier positif. On veut pouvoir gérer le cas où la fonction ne p
 - affiche 4 si on l’appelle avec f(5)
 + entraine une erreur à l’exécution
 - affiche une adresse
+
+
