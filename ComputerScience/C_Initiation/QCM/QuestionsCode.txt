@@ -27,12 +27,13 @@ Latex:1
 
                                         P
 
-    Réponse 1 : P O         Réponse 2 : O
+    Réponse 1 : P O         Réponse 2 : O         Réponse 3 : POIU
 
                 I                       I
 
                                         U
 
+    
 ![Légende, texte alternatif de l'image](/filebrowser/option?name=download_resource&path=Yggdrasil/ComputerScience/C_Initiation/QCM/degolas.jpg)
 
 + xy z
