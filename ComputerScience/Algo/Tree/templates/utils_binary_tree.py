@@ -330,7 +330,7 @@ class BinaryNode():
         >>> 'digraph' in r.to_dot_code_BST_point()
         True
         """
-        ans = 'digraph BST {\n    size="1,1";\n    node [fontname="Arial"];\n'
+        ans = 'digraph BST {\n    size="2,2";\n    node [fontname="Arial"];\n'
         ans += self.__to_dot_BST_point_rec()
         return ans+'}\n'
 
