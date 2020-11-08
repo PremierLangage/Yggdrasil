@@ -2448,4 +2448,16 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 * [group=tableau_sautant_PH] Quelle valeur affichera le code suivant ?
 
 
+    int i, j=0;
 
+    int tab[7] = {2, 3, 0, 4, 1, 1, 2};
+
+    for (i=0; i<3; i=i+1)
+
+        j = tab[j];
+
+
+    printf("%d\n", j);
+
+
+    
