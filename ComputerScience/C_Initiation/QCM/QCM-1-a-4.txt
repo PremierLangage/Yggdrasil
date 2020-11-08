@@ -2802,5 +2802,8 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 - renvoie 0 si tous les éléments des deux tableaux sont différents
 - provoque une erreur d’exécution
 
+* [group=decalage] Quel est le contenu du tableau défini par `int t[5] = {1,2,3,4,5};` après l’appel cafe(t,5) ?
+
+
 
 
