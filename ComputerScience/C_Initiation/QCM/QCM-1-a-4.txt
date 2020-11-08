@@ -2780,4 +2780,18 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 ** [group=compar] La fonction suivante :
 
 
+    int pouet(int t[], int v[], int taille){
 
+        int i;
+
+        for (i = 0; i < taille; i++){
+
+            if (t[i] == v[i])
+
+                return 1;
+
+            return 0;
+
+        }
+
+    }
