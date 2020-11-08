@@ -2503,3 +2503,4 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 - 3
 - 4
 
+
