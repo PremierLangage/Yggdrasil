@@ -1,6 +1,6 @@
 
 extends = /model/AMC_TXT.pl
-title = Applications-1
+title = Calcul
 questions==
 
 **Cocher les égalités vraies
