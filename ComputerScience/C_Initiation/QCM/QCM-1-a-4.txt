@@ -1719,7 +1719,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 
         return 0;
 
-}
+    }
 
 Ce code est-il correct? S’il ne l’est pas, que faut-il modifier pour qu’il affiche 3?
 
