@@ -2816,3 +2816,5 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
         }
 
     }
+
+
