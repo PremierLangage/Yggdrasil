@@ -2425,3 +2425,8 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 * [group=affectation_tableau_PH] On a déclaré `int tab1[5] = {1,2,3,4,5};` Quelle déclaration, instruction ou suite 
 d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 
+- int tab2 = tab1;
+- int tab2[5] = tab1;
+- int tab2[5] = tab1; tab2[2] -= 1; 
+- int tab2[] = {0};
++ int tab2[3]; tab2[2] = tab1[1];
