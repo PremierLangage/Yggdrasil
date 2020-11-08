@@ -2802,3 +2802,5 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 - renvoie 0 si tous les éléments des deux tableaux sont différents
 - provoque une erreur d’exécution
 
+
+
