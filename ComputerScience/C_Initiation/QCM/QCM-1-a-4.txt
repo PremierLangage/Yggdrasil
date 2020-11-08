@@ -2417,11 +2417,7 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 
 int tab2 = tab1;
 int tab2[5] = tab1;
-int tab2[5] = tab1;
-tab2[2] -= 1; 
-int tab2[5] = {0};
-tab2[2]=tab1[5]-3; 
-int tab2[5] = {0};
-tab2[2]=tab1[3]-2; 
-int tab2[2];
-tab2[2] = tab1[2];
+int tab2[5] = tab1; tab2[2] -= 1; 
+int tab2[5] = {0}; tab2[2]=tab1[5]-3; 
+int tab2[5] = {0}; tab2[2]=tab1[3]-2; 
+int tab2[2]; tab2[2] = tab1[2];
