@@ -1383,7 +1383,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 
             printf("Vous avez tapé : %d\n", n);
 
-}
+    }
 
 Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur renvoie ?
 
@@ -1912,7 +1912,7 @@ si l’utilisateur entre : x y z t
 
         printf("%c%c%c%c\n", a,b,c,d);
 
-  }
+    }
 
 
                              P
