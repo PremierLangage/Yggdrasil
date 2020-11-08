@@ -2445,4 +2445,6 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 - remplit les cases d’indice de 1 à 10 avec des valeurs lues au clavier
 - provoque une erreur à l’exécution
 
+* [group=tableau_sautant_PH] Quelle valeur affichera le code suivant ?
+
 
