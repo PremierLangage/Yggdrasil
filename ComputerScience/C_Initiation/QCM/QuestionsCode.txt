@@ -27,15 +27,15 @@ Latex:1
                                                *b = *tmp;} 
 
 
-                /* Fonction 5 */
+                        /* Fonction 5 */
 
-                void echange(int* a, int* b){
+                        void echange(int* a, int* b){
 
-                    int* tmp = &a;
+                            int* tmp = &a;
 
-                    &a = &b;
+                            &a = &b;
 
-                    &b = &tmp;}
+                            &b = &tmp;}
 
 + Fonction 1
 - Fonction 2
