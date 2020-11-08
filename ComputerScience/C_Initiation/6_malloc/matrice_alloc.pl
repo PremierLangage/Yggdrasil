@@ -1,5 +1,5 @@
 title=Initialisation d'une matrice d'entiers
-author = Clément BOIN
+#author = Clément BOIN
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==
@@ -72,6 +72,7 @@ tests==
  ]
 
 ==
+
 
 
 
