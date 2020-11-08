@@ -2430,3 +2430,15 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 - int tab2[5] = tab1; tab2[2] -= 1; 
 - int tab2[] = {0};
 + int tab2[3]; tab2[2] = tab1[1];
+
+* [group=initUn] Le code suivant 
+
+
+    int i,tab[10];
+
+    for(i=0;i<10;i++)
+
+        scanf("%d",&tab[i]);
+
+
+
