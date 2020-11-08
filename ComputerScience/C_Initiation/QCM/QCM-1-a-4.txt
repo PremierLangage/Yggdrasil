@@ -2348,3 +2348,7 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 - Réponse 4
 - Réponse 5
 + Réponse 6
+
+# Catalogue 4 Prog C Olivier BOUILLOT
+
+
