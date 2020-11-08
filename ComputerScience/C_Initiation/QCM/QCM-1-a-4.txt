@@ -948,7 +948,7 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 *[group=Comprehension_de_code] Quel est le rendu lors de l’exécution du programme suivant ?
 
 
-     #include <stdio.h>
+    #include <stdio.h>
 
     int main(void){
 
@@ -2870,5 +2870,6 @@ Qu’affiche l’appel affichageTruc(tab, 2, 4) lorsque tab est défini par `int
 - 10 2
 - 1 02
 - 1 0 2
+
 
 
