@@ -5,7 +5,7 @@ textstep ==
 {{ statement[step] | safe }}
 ==
 
-title= Compréhension de code 
+title= Examen d'Introduction à la programmation C
 
 text=
 onepergroup % true
@@ -13,6 +13,7 @@ onepergroup % true
 questions=@ QCM-1-a-4.txt
 
 tag=
+
 
 
 
