@@ -2621,4 +2621,6 @@ Après l'appel boo(A,B) que contiennent les tableaux A et B ?
 - tab[0] vaut 7 et les autres cases du tableau contiennent 0.
 - rien, il y a une erreur lors de l’exécution
 
+** [group=comparaison_de_tableaux] Que contient le tableau tab après exécution de code :
+
 
