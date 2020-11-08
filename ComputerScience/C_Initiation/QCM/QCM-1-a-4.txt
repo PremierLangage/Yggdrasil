@@ -2620,3 +2620,5 @@ Après l'appel boo(A,B) que contiennent les tableaux A et B ?
 - le tableau est remplit de 7.
 - tab[0] vaut 7 et les autres cases du tableau contiennent 0.
 - rien, il y a une erreur lors de l’exécution
+
+
