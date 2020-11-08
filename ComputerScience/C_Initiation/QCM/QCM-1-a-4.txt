@@ -2796,4 +2796,9 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 
     }
 
++ renvoie 1 si les deux tableaux ont leur premier élément identique
++ renvoie 0 si les deux tableaux ont leur premier élément différent
+- renvoie 1 si tous les éléments des deux tableaux sont identiques
+- renvoie 0 si tous les éléments des deux tableaux sont différents
+- provoque une erreur d’exécution
 
