@@ -2402,3 +2402,5 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 - tab[10] == 0
 + tab[5] == tab[7]
 + tab[3] == 4 
+
+
