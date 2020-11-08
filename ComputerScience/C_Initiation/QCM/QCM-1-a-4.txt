@@ -2503,4 +2503,5 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 - 3
 - 4
 
+** [group=fonction_tableau_pointeur_PH] Quelle valeur affichera le code suivant ?
 
