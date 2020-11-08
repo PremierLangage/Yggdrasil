@@ -2605,7 +2605,15 @@ Après l'appel boo(A,B) que contiennent les tableaux A et B ?
 * [group=remplittab] Que contient le tableau tab après exécution de code :
 
 
+    int i = 0, tab[10], n = 27;
 
+    do {
+
+       tab[i] = n % 10;
+
+       i = i + 1;
+
+     } while ((n /= 10) > 10);
 
 
 
