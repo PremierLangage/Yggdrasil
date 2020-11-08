@@ -2615,6 +2615,8 @@ Après l'appel boo(A,B) que contiennent les tableaux A et B ?
 
      } while ((n /= 10) > 10);
 
-
-
-
++ tab[0] vaut 7 et les autres cases du tableau ont une valeur indéterminée.
+- le contenu du tableau n’est pas défini.
+- le tableau est remplit de 7.
+- tab[0] vaut 7 et les autres cases du tableau contiennent 0.
+- rien, il y a une erreur lors de l’exécution
