@@ -1320,7 +1320,6 @@ Quelle sont les en-têtes possibles de cette fonction ?
 
     }
 
-
 Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur renvoie ?
 
 + error: use of undeclared identifier ’i’
