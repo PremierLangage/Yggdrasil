@@ -2344,7 +2344,7 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 
 - Réponse 1
 - Réponse 2
-+ Réponse 3
+- Réponse 3
 - Réponse 4
 - Réponse 5
-- Réponse 6
++ Réponse 6
