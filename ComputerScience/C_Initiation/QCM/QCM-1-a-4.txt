@@ -2510,16 +2510,21 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 
     /* 2*/      int i;
 
-    /* 3*/      printf("Veuillez saisir %d entiers : ", &taille);
+    /* 3*/      printf("Veuillez saisir %d entiers : ", *taille);
 
     /* 4*/
 
-    /* 5*/      for (i=0; i < &taille; i=i+1)
+    /* 5*/      for (i=0; i < *taille; i=i+1)
 
     /* 6*/          scanf("%d", &tab[i]);
 
     /* 7*/  }
 
+- 2
++ 3
++ 5
++ 6
+- aucune de celles-ci
 
 
 
