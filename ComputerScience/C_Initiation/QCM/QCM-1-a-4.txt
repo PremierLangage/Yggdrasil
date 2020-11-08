@@ -2694,9 +2694,11 @@ ainsi que les déclarations suivantes:
 
 Parmi les appels de fonctions suivants, lesquels retournent 1?
 
-- faitUnTruc(t1, t2, 4)
+- faitUnTruc(t2, t1, 4)
++ faitUnTruc(t1, t4, 4)
 + faitUnTruc(t4, t3, 4)
-+ faitUnTruc(t2, t3, 4)
-- faitUnTruc(t1, t4, 4)
+- faitUnTruc(t5, t1, 4)
+
+
 
 
