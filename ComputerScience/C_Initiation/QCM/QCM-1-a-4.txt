@@ -895,7 +895,7 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 
          }
 
-    }
+     }
 
      Proposition 1 :             Proposition 2 :             Proposition 3 : 
 
