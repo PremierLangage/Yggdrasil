@@ -2777,5 +2777,7 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 - faitUnTruc(t3, t1, 4)
 + faitUnTruc(t1, t5, 4)
 
-** [group=compar] Que contient le tableau tab après exécution de code :
+** [group=compar] La fonction suivante :
+
+
 
