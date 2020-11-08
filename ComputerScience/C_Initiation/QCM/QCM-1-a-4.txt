@@ -1995,7 +1995,7 @@ si l’utilisateur entre : R T Y U
 
     /*04*/  int tmp = *a;
 
-    /*05*/  *a=*b;
+    /*05*/  *a = *b;
 
     /*06*/  *b = tmp;
 
@@ -2013,9 +2013,9 @@ si l’utilisateur entre : R T Y U
 
     /*13*/int main(void) {
 
-    /*14*/  inta=2;
+    /*14*/  int a = 2;
 
-    /*15*/  intb=3;
+    /*15*/  int b = 3;
 
     /*16*/  echange(&a, &b);
 
@@ -2048,7 +2048,7 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 
     /*04*/  int tmp = *a;
 
-    /*05*/  *a=*b;
+    /*05*/  *a = *b;
 
     /*06*/  *b = tmp;
 
@@ -2066,9 +2066,9 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 
     /*13*/int main(void) {
 
-    /*14*/  inta=2;
+    /*14*/  int a = 2;
 
-    /*15*/  intb=3;
+    /*15*/  int b = 3;
 
     /*16*/  echange(&a, &b);
 
