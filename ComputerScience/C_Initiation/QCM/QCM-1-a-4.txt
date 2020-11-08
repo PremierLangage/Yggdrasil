@@ -2847,5 +2847,18 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 * [group=affiche_partiel] On considère la fonction suivante :
 
 
+    void afficheTruc(int tab[], int n, int taille){
 
+        int i;
 
+        for(i = 0; i < taille; i++)
+
+            if(tab[i] < n)
+
+                printf("%d", tab[i]);
+
+            else if(tab[i] == n)
+
+                printf(" ");
+
+    }
