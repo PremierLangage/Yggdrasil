@@ -2865,9 +2865,10 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 
 Qu’affiche l’appel affichageTruc(tab, 2, 4) lorsque tab est défini par `int tab[6] = {1,0,2,3,2,1};` ?
 
-10
-10 1
-10 2
-1 02
-1 0 2
++ 10
+- 10 1
+- 10 2
+- 1 02
+- 1 0 2
+
 
