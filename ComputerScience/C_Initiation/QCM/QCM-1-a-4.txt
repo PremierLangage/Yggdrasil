@@ -2182,7 +2182,7 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 
 On exécute le main de ce programme. Quel est alors l’état de la pile lorsque la ligne 6 a été exécutée ?
 
-![Légende, texte alternatif de l'image](/filebrowser/option?name=download_resource&path=Yggdrasil/ComputerScience/C_Initiation/QCM/)
+![Légende, texte alternatif de l'image](/filebrowser/option?name=download_resource&path=Yggdrasil/ComputerScience/C_Initiation/QCM/QCM1_Pile4.png)
 
  Reponse 1
  Reponse 2
