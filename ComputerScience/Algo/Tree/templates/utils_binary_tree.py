@@ -1,3 +1,14 @@
+"""
+This module allows people to generate binary tree in Python
+
+EXEMPLES::
+
+>>> t = random_binary_tree(20)[0]
+>>> s = t.to_string_code().replace(' ', '')
+>>> binary_tree_from_code(s).to_string_code().replace(' ', '') == s
+True
+"""
+
 #*****************************************************************************
 #  Copyright (C) 2020 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
@@ -21,20 +32,35 @@ class BinaryNode():
     A class modeling nodes inside binary trees. The empty node (or empty tree) 
     will be modelized by `None`. Therefore, a leaf is a node having `None` for 
     its both children.
+
+    EXEMPLES::
+    
+    >>> BinaryNode(12)
+    A binary node labeled by 12
     """
     def __init__(self, value=None):
         """
-        Initialize `self` with a value. 
+        Initialize `self` with a value. At initialisation, a fresh node has
+        no child.
+
+        TESTS::
+
+        >>> n = BinaryNode(12)
         """
         self.value = value
         self.left = None
         self.right = None
 
-    def __str__(self):
+    def __repr__(self):
         """
-        A string describing `self`.
+        Return a string describing `self`.
+
+        TESTS::
+
+        >>> BinaryNode(42)
+        A binary node labeled by 42
         """
-        return "A binary node..."
+        return "A binary node labeled by %s"%(str(self.value))
 
     def height(self):
         """
@@ -44,6 +70,17 @@ class BinaryNode():
 
         With this, the height is also the lenght of the longest path from the 
         to its leafs.
+
+        EXEMPLES::
+
+        >>> from tree import *
+        >>> r = BinaryNode(42)
+        >>> r.height()
+        0
+        >>> r.left = BinaryNode(-3)
+        >>> r.left.right = BinaryNode(14)
+        >>> r.height()
+        2
         """
         if self.left is None:
             if self.right is None:
@@ -59,6 +96,19 @@ class BinaryNode():
         """
         Return the list of values of the leafs of the binary tree rooted at 
         `self`.
+
+        EXEMPLES::
+
+        >>> r = BinaryNode(42)
+        >>> r.leafs()
+        [42]
+        >>> r.left = BinaryNode(-3)
+        >>> r.leafs()
+        [-3]
+        >>> r.left.left = BinaryNode(1)
+        >>> r.left.right = BinaryNode(2)
+        >>> r.leafs()
+        [1, 2]
         """
         if self.left is None:
             if self.right is None:
@@ -74,6 +124,19 @@ class BinaryNode():
         """
         Return the list of values of the internal nodes of the binary tree 
         rooted at `self`.
+
+        EXEMPLES::
+
+        >>> r = BinaryNode(42)
+        >>> r.internal_nodes()
+        []
+        >>> r.left = BinaryNode(-3)
+        >>> r.internal_nodes()
+        [42]
+        >>> r.left.left = BinaryNode(1)
+        >>> r.left.right = BinaryNode(2)
+        >>> r.internal_nodes()
+        [42, -3]
         """
         if self.left is None:
             if self.right is None:
@@ -89,6 +152,15 @@ class BinaryNode():
         """
         Return a inorder traversal of the binary tree rooted at `self`.
         (parcours profondeur infixe in French)
+
+        EXEMPLES::
+
+        >>> r = BinaryNode(42)
+        >>> r.left = BinaryNode(-3)
+        >>> r.left.left = BinaryNode(1)
+        >>> r.left.right = BinaryNode(2)
+        >>> r.inorder_traversal()
+        [1, -3, 2, 42]
         """
         if self.left is None: 
             if self.right is None:
@@ -105,6 +177,15 @@ class BinaryNode():
         """
         Return a preorder traversal of the binary tree rooted at `self`.
         (parcours profondeur préfixe in French)
+
+        EXEMPLES::
+
+        >>> r = BinaryNode(42)
+        >>> r.left = BinaryNode(-3)
+        >>> r.left.left = BinaryNode(1)
+        >>> r.left.right = BinaryNode(2)
+        >>> r.preorder_traversal()
+        [42, -3, 1, 2]
         """
         if self.left is None: 
             if self.right is None:
@@ -121,6 +202,15 @@ class BinaryNode():
         """
         Return a postorder traversal of the binary tree rooted at `self`.
         (parcours profondeur postfixe in French)
+
+        EXEMPLES::
+
+        >>> r = BinaryNode(42)
+        >>> r.left = BinaryNode(-3)
+        >>> r.left.left = BinaryNode(1)
+        >>> r.left.right = BinaryNode(2)
+        >>> r.postorder_traversal()
+        [1, 2, -3, 42]
         """
         if self.left is None: 
             if self.right is None:
@@ -137,6 +227,18 @@ class BinaryNode():
         """
         Return the breadth first traversal of the binary tree rooted at `self`.
         (parcours en largeur in French)
+
+        EXEMPLES::
+
+        >>> r = BinaryNode(1)
+        >>> r.left = BinaryNode(2)
+        >>> r.right = BinaryNode(3)
+        >>> r.left.left = BinaryNode(4)
+        >>> r.left.right = BinaryNode(5)
+        >>> r.right.left = BinaryNode(6)
+        >>> r.right.right = BinaryNode(7)
+        >>> r.breadth_first_traversal()
+        [1, 2, 3, 4, 5, 6, 7]
         """
         acc = [self]
         ans = []
@@ -151,14 +253,28 @@ class BinaryNode():
 
     def to_string_code(self):
         """
-        Return a string coding for the binary tree
+        Return a string coding for the binary tree. This function is used 
+        to interface binary tree from python to C. The output string 
+        contains all information to build back the tree from it alone.
+
+        The coding string is a sequence of letter then value separated with 
+        spaces. For each node coming from preorder traversal, we add the 
+        letter encoding the type of the node then its value. Here is the 
+        foor different type of nodes :
         d : node with two children
         l : left child only
         r : right child only
         f : leaf
 
-        The code is a string with letters and value.
-        d 1 f 3 f 5
+        EXEMPLES::
+
+        >>> r = BinaryNode(1)
+        >>> r.left = BinaryNode(2)
+        >>> r.left.left = BinaryNode(3)
+        >>> r.right = BinaryNode(4)
+        >>> r.right.right = BinaryNode(5)
+        >>> r.to_string_code()
+        'd 1 l 2 f 3 r 4 f 5'
         """
         if self.left is None: 
             if self.right is None:
@@ -175,6 +291,14 @@ class BinaryNode():
         """
         Slave method for `to_dot_code_BST_point` generated
         dot code for a single.
+
+        TESTS::
+
+        >>> from tree import *
+        >>> r = BinaryNode(1)
+        >>> r.left = BinaryNode(2)
+        >>> '1 -> 2' in r._BinaryNode__to_dot_BST_point_rec()
+        True
         """
         ans = ""
         if self.left is None:
@@ -198,6 +322,13 @@ class BinaryNode():
     def to_dot_code_BST_point(self):
         """
         Return a DOT code to draw `self` using dot for empty node.
+
+        EXAMPLES::
+
+        >>> r = BinaryNode(1)
+        >>> r.left = BinaryNode(2)
+        >>> 'digraph' in r.to_dot_code_BST_point()
+        True
         """
         ans = 'digraph BST {\n    node [fontname="Arial"];\n'
         ans += self.__to_dot_BST_point_rec()
@@ -207,6 +338,16 @@ def random_binary_tree(nb_nodes, max_height=None, values=None, nb_total_node=Non
     """
     Return a random binary tree having `nb_nodes` with its list of 
     different labels.
+
+    EXAMPLES::
+
+    >>> t = random_binary_tree(4)[0]
+    >>> len(t.leafs()) + len(t.internal_nodes())
+    4
+    >>> n = randint(5,10)
+    >>> t = random_binary_tree(n)[0]
+    >>> len(t.leafs()) + len(t.internal_nodes()) == n
+    True
     """
     # Set the total number of nodes at first call
     # We need it to both bound values and make them unique
@@ -252,7 +393,18 @@ def random_binary_tree(nb_nodes, max_height=None, values=None, nb_total_node=Non
 
 def split_tree(s):
     """
-    Split a string code into a logical list.
+    Splits a string code into a logical list. This function is internal and 
+    technical, it is the basis of the inverse bijection sanding binary to 
+    Python string.
+
+    EXAMPLES::
+
+    >>> split_tree("d2f1f2")
+    ['d', 2, ['f', 1], ['f', 2]]
+    >>> split_tree("r1r2r3r4r5f6")
+    ['r', 1, ['r', 2, ['r', 3, ['r', 4, ['r', 5, ['f', 6]]]]]]
+    >>> split_tree("d13l6r22l21f25f18")
+    ['d', 13, ['l', 6, ['r', 22, ['l', 21, ['f', 25]]]], ['f', 18]]
     """
     if s[0] == 'f':
         return ['f', int(s[1:])]
@@ -293,7 +445,17 @@ def split_tree(s):
 
 def binary_tree_from_list(l):
     """
-    Return a binary tree from a structured list.
+    Return a binary tree from a structured list. Internal function for the
+    inverse bijection sending binary trees to Python strings.
+
+    EXAMPLES::
+
+    >>> binary_tree_from_list(['f', 11]).leafs()
+    [11]
+    >>> binary_tree_from_list(['c', 2, ['f', 2], ['f', 3]]).leafs()
+    [2, 3]
+    >>> binary_tree_from_list(['c', 2, ['f', 2], ['f', 3]]).internal_nodes()
+    [2]
     """
     if l[0] == 'f':
         return BinaryNode(l[1])
@@ -314,8 +476,19 @@ def binary_tree_from_list(l):
 def binary_tree_from_code(s):
     """
     Return a binary tree from a string codage `s`.
+
+    EXAMPLES::
+
+    >>> T = binary_tree_from_code("d4l8f22r18r20f6")
+    >>> T.leafs()
+    [22, 6]
+    >>> T.internal_nodes()
+    [4, 8, 18, 20]
+    >>> t = random_binary_tree(20)[0]
+    >>> s = t.to_string_code().replace(' ', '')
+    >>> binary_tree_from_code(s).to_string_code().replace(' ', '') == s
+    True
     """
     l = split_tree(s)
     return binary_tree_from_list(l)
-
 
