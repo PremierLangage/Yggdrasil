@@ -2710,11 +2710,11 @@ Parmi les appels de fonctions suivants, lesquels retournent 1?
 
             if(tab1[i] > tab2[i])
 
-                return 1; 
+                return 0; 
 
         }
 
-        return 0; 
+        return 1; 
 
     }
 
@@ -2776,5 +2776,6 @@ Parmi les appels de fonctions suivants, lesquels retournent 1?
 + faitUnTruc(t3, t1, 4)
 - faitUnTruc(t1, t4, 4)
 + faitUnTruc(t5, t1, 4)
+
 
 
