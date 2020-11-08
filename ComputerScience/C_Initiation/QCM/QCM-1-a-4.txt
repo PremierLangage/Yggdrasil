@@ -2643,4 +2643,14 @@ Après l'appel boo(A,B) que contiennent les tableaux A et B ?
 ainsi que les déclarations suivantes:
 
 
+    int t1[4] = {1, 2, 3, 4};
+
+    int t2[4] = {0, 1, 2, 3};
+
+    int t3[4] = {1, 0, 2, 3};
+
+    int t4[4] = {0, 1, 3, 2};
+
+    int t5[4] = {0, 0, 0, 0};
+
 
