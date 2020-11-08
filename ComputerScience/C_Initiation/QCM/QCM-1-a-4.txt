@@ -2484,5 +2484,8 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 - 3
 - 4
 
+* [group=tableau_sautant_PH] Quelle valeur affichera le code suivant ?
+
+
 
 
