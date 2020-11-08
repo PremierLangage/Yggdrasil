@@ -7,7 +7,7 @@ title==
 Stratégie d'allocation
 ==
 
-author=Nicolas Borie
+author=
 
 text==
 Tentez d'associer, pour chaque type de donnéee C, comment ces dernières doivent être allouées.
@@ -91,5 +91,6 @@ extracss==
 }
 </style>
 ==
+
 
 
