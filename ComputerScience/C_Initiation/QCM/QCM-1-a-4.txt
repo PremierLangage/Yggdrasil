@@ -2844,5 +2844,8 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 - 5 1 2 3 4
 - 2 3 4 5 1
 
+* [group=affiche_partiel] On considère la fonction suivante :
+
+
 
 
