@@ -2660,4 +2660,43 @@ Parmi les appels de fonctions suivants, lesquels retournent 1?
 + faitUnTruc(t2, t3, 4)
 - faitUnTruc(t1, t4, 4)
 
+** [group=comparaison_de_tableaux] Que contient le tableau tab après exécution de code :
+
+
+    int faitUnTruc(int tab1[], int tab2[], int taille){
+
+        int i;
+
+        for(i = 0; i < taille; i++){
+
+            if(tab1[i] < tab2[i])
+
+                return 1; 
+
+        }
+
+        return 0; 
+
+    }
+
+ainsi que les déclarations suivantes:
+
+
+    int t1[4] = {1, 2, 3, 4};
+
+    int t2[4] = {0, 1, 2, 3};
+
+    int t3[4] = {1, 0, 2, 3};
+
+    int t4[4] = {0, 1, 3, 2};
+
+    int t5[4] = {0, 0, 0, 0};
+
+Parmi les appels de fonctions suivants, lesquels retournent 1?
+
+- faitUnTruc(t1, t2, 4)
++ faitUnTruc(t4, t3, 4)
++ faitUnTruc(t2, t3, 4)
+- faitUnTruc(t1, t4, 4)
+
 
