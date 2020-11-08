@@ -2770,7 +2770,7 @@ ainsi que les déclarations suivantes:
 
     int t5[4] = {0, 0, 0, 0};
 
-Parmi les appels de fonctions suivants, lesquels retournent 1?
+Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 
 + faitUnTruc(t1, t2, 4)
 - faitUnTruc(t4, t3, 4)
