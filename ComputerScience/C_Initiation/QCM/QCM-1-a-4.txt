@@ -2506,4 +2506,24 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 ** [group=fonction_tableau_pointeur_PH] Quelle valeur affichera le code suivant ?
 
 
+    /* 1*/  void scanTab (int tab[], int taille) {
+
+    /* 2*/      int i;
+
+    /* 3*/      printf("Veuillez saisir %d entiers : ", &taille);
+
+    /* 4*/
+
+    /* 5*/      for (i=0; i < &taille; i=i+1)
+
+    /* 6*/          scanf("%d", &tab[i]);
+
+    /* 7*/  }
+
+
+
+
+
+
+  
 
