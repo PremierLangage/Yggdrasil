@@ -3,8 +3,6 @@ Latex:1
 ** [group=comparaison_de_tableaux] Que contient le tableau tab après exécution de code :
 
 
-
-
      /* Fonction 1 */                       /* Fonction 2 */
 
      void echange(int* a, int* b){          void echange(int a, int b){
