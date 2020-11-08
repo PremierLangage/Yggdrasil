@@ -2605,3 +2605,4 @@ Après l'appel boo(A,B) que contiennent les tableaux A et B ?
 
 
 
+
