@@ -1,31 +1,45 @@
 Latex:1
 
-**[group=Erreurs1] 64 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
+**[group=Declaration_de_variable] 41 ) Considérons le programme suivant :
 
 
-    #include <stdio.h>
+    /*01*/ #include <stdio.h>
 
-    int main(void) {
+    /*02*/
 
-        int n = 3;
+    /*03*/ void echange(int* a, int* b){
 
-        for (i = 0; i < n; i += 1) {
+    /*04*/    int tmp = *a;
 
-            printf("Donnez moi un entier : ")
+    /*05*/    *a = *b;
 
-            scanf("%d", &n);
+    /*06*/    *b = tmp;
 
-            printf("Vous avez tapé : %d\n", n);
+    /*07*/ }
 
-    }
+    /*08*/
 
-Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur renvoie ?
+    /*09*/ int main(void){
 
-+ error: use of undeclared identifier ’i’
-- warning: format specifies type ’int *’ but the argument has type ’int’
-- warning: format specifies type ’double’ but the argument has type ’int’
-- error: extraneous closing brace (’}’)
-+ error: expected ’}’
-- warning: variable ’n’ is uninitialized when used here
-+ error: expected ’;’ after expression
-- Aucune erreur ou warning n’est générée à la compilation
+    /*10*/    int a, b;
+
+    /*11*/    printf("Donnez moi deux entiers, svp : ");
+
+    /*12*/    scanf("%d%d", &a, &b);
+
+    /*13*/    printf("Avant l’appel de la fonction echange, a et b valent : %d et %d\n",a, b);
+
+    /*14*/    echange(&a, &b);
+
+    /*15*/    printf("Après l’appel de la fonction echange, a et b valent : %d et %d\n",a, b);
+
+    /*16*/ }
+
+Parmi les affirmations suivantes, lesquelles sont exactes ?
+
+- La fonction echange prend des entiers en paramètres
++ La fonction echange prend des adresses en paramètres
+- La fonction scanf prend une chaine de caractères, puis une ou des variables de type int en paramètres
++ La fonction scanf prend une chaine de caractères, puis des adresses en paramètres
++ La ligne 14 ne provoque pas d’erreur de compilation.
+- La ligne 14 provoque une erreur de compilation.
