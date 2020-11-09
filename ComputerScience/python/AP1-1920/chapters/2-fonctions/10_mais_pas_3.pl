@@ -44,8 +44,10 @@ print(dix_mais_pas_trois(n))
 plsoluce==
 Test1 | 2
 Test2 | 3
-Test3 | 30
-Test4 | 40
+Test3 | -3
+Test4 | 30
+Test5 | -40
+Test6 | 40
 ==
 
 
