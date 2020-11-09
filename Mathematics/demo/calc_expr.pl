@@ -8,9 +8,8 @@ b = randint(2, 5)
 c = randint(2, 5)
 s = randitem("+", "-")
 
-expr0 = f"({a}**2 {s} {b})/{c}"
-expr = str2latex(expr0)
-sol = str2sympy(expr0)
+expr = f"(\fra¢{ {a}**2 {s} {b}) }{ {c} }"
+sol = simplify(latex2sympy(expr))
 
 ==
 
