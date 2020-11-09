@@ -106,7 +106,7 @@ def coefficients_binome(n):
 
 ==
 pltest0==
->>> factoriel(3)==6 and combinaison(3,2)==3 and coefficients_binome(2)=="1 2 1"
+>>> factoriel(3) == 6 and combinaison(3,2) == 3 and coefficients_binome(2) == "1 2 1"
 True
 ==
 pltest1==
@@ -128,7 +128,7 @@ def factoriel(n):
 
 def combinaions(n, p):
     pass
-    
+
 def coefficients_binome(n):
     pass
 
