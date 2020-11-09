@@ -1913,6 +1913,8 @@ si l’utilisateur entre : x y z t
 
         printf("%c%c%c%c\n", a,b,c,d);
 
+        return 0;
+
     }
 
 
