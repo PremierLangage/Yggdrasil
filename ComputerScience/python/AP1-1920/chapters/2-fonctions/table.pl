@@ -30,7 +30,7 @@ text==
 
     Vous vous aiderez du code déjà présent pour les saisies des valeurs. 
 
-Un exemple complet d'exécution du programme est :<br>
+Un exemple complet d'exécution du programme est :<br><br>
 `Saisissez un entier strictement positif : `<br>
 `Saisissez un entier strictement positif : `<br>
 `Saisissez un entier strictement positif : `<br>
