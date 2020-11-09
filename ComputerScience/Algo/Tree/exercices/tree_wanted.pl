@@ -55,9 +55,19 @@ text==
 
 On recherche un arbre ! Vous devez trouver cet arbre ! Pour le décrire, vous 
 devrez donner son codage textuel en faisant le parcours profondeur préfixe 
-en notant une lettre puis l'étiquette pour chaque nœud.
+en notant une lettre puis l'étiquette pour chaque nœud. Comme il y a quatre 
+types de nœuds, il y a quatre lettre possible :
 
+* `d` pour les nœuds ayant deux fils
+* `l` pour les nœuds ayant uniquement un fils gauche
+* `r` pour les nœuds ayant uniquement un fils droit
+* `f` pour les feuilles
 
+N'importe quel arbre pourrait convenir mais l'arbre recherché a les 
+caractéristiques suivantes :
+
+* Il possède **{{ nb_nodes }} nœuds**.
+* Il est de **hauteur {{ height }}**.
 
 
 ==
