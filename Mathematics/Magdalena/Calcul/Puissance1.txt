@@ -1,7 +1,7 @@
 
- Puissances
-
-
+extends = /model/AMC_TXT.pl
+title = Calcul - puissances 
+questions==
 
 **Cocher les égalités vraies
 + $% 5^3 =5^2\times 5%$
@@ -28,6 +28,7 @@
  
 
 ==
+
 
 
 
