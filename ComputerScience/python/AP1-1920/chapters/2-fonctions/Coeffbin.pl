@@ -9,38 +9,43 @@ title =Coefficients du binôme
 
 text==  
 
-1) Ecrire une fontion *factoriel(n)* qui reçoit un entier positif et renvoie sa factorielle.<br>
+1.  Ecrire une fontion *factoriel(n)* qui reçoit un entier positif et renvoie sa factorielle.<br>
 
-Si l'entier est négatif la fonction renvoie *None*<br>
+    Si l'entier est négatif la fonction renvoie *None*<br>
+    <br>
+
+2.  Ecrire une fontion *combinaison(n,p)* qui reçoit deux entiers positifs 
+    et renvoie le nombre de combinaions de p éléments choisis parmi n éléments.
+    $%\binom{n}{p}%$<br>
+
+    On rappelle que ce nombre vaut $%\dfrac{n!}{p! \times(n-p)!} %$ si $%0 \le p\le n %$ et 0 sinon.<br>
+    <br>
+
+3.  Utilisez ces fonctions pour écrire une fonction *coefficients_binome(n)* qui reçoit 
+    un entier n et renvoie :<br>
+
+    * une chaine de caractères constituée des coefficients de développement de
+    $%(a+b)^n%$, s'il est positif ;
+
+    * la chaine "non défini" si n est négatif.<br><br>
+
+    **Exemples de résultats attendus :**<br><br>
+
+    &gt;&gt;&gt; coefficients_binome(0)==1<br>
+    True<br>
+    &gt;&gt;&gt; coefficients_binome(3)<br>
+    1 3 3 1<br>
+    &gt;&gt;&gt; coefficients_binome(-5)<br>
+    non défini<br><br>
+
+*Remarque 1 :* Cette méthode n'est pas efficace pour de grandes valeurs de n et p (elle effectue beaucoup de calculs inutiles).
+Nous en étudirons une meilleure plus tard.<br>
 <br>
-
-2) Ecrire une fontion *combinaison(n,p)* qui reçoit deux entiers positifs 
-et renvoie le nombre de combinaions de p éléments choisis parmi n éléments.
-$%\binom{n}{p}%$<br>
-
-On rappelle que ce nombre vaut $%\dfrac{n!}{p! \times(n-p)!} %$ si $%0 \le p\le n %$ et 0 sinon.<br>
+*Remarque 2 :* Le mot clé *pass* indique à Python une instruction sans effet
+et qui ne fait rien. Elle est souvent utilisée lors du développement du code
+pour indiquer que l'on doit écrire un bout de code plus tard.<br>
 <br>
-
-Utilisez ces fonctions pour écrire une fonction *coefficients_binome(n)* qui reçoit 
-un entier n et renvoie :<br>
-
-* une chaine de caractères constituée des coefficients de développement de $%(a+b)^n%$, s'il est positif.
-
-* la chaine "non défini" si n est négatif<br>
-
-Exemples de résultats attendus :
-
-&gt;&gt;&gt; coefficients_binome(0)==1<br>
-True<br>
-&gt;&gt;&gt; coefficients_binome(3)<br>
-1 3 3 1<br>
-&gt;&gt;&gt; coefficients_binome(-5)<br>
-non défini<br>
-<br>
-*Remarque : cette méthode n'est pas efficace pour de grandes valeurs de n et p (elle effectue beaucoup de calculs inutiles).
-Nous en étudirons une meilleure plus tard.*<br>
-<br>
-*Conseil : n'hésitez pas à coder avec un éditeur python*
+*Conseil :* N'hésitez pas à coder au préalable l'exercice sur un éditeur Python.
 ==
 before==
 def factoriel(n):
@@ -121,6 +126,9 @@ editor.code==
 def factoriel(n):
     pass
 
+def combinaions(n, p):
+    pass
+    
 def coefficients_binome(n):
     pass
 
