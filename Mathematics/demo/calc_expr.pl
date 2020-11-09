@@ -4,7 +4,7 @@ title = Calcul d'une expression numérique
 
 before ==
 a = randint(2, 5)
-b = randiint(2, 5)
+b = randint(2, 5)
 c = randitem(2, 5)
 s = randitem("+", "-")
 
