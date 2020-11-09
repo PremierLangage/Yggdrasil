@@ -2789,7 +2789,7 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 
         for(i = taille - 1; i > 0; i--){
 
-        tab[i] = tab[i-1];
+            tab[i] = tab[i-1];
 
         }
 
@@ -2811,7 +2811,7 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 
         for(i = taille - 1; i > 0; i--){
 
-        tab[i] = tab[i-1];
+            tab[i] = tab[i-1];
 
         }
 
@@ -2848,6 +2848,7 @@ Qu’affiche l’appel affichageTruc(tab, 2, 4) lorsque tab est défini par `int
 - 10 2
 - 1 02
 - 1 0 2
+
 
 
 
