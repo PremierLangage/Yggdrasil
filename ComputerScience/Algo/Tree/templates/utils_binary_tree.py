@@ -62,6 +62,21 @@ class BinaryNode():
         """
         return "A binary node labeled by %s"%(str(self.value))
 
+    def nb_nodes(self):
+        """
+        Return the number of nodes contained in the tree rooted at `self`.
+
+        EXAMPLES::
+
+        """
+        if self.left == None:
+            if self.right == None:
+                return 1
+            return 1 + self.right.nb_nodes()
+        if self.right == None:
+            return 1 + self.left.nb_nodes()
+        return 1 + self.left.nb_nodes() + self.right.nb_nodes()
+
     def height(self):
         """
         Return the height of the binary tree rooted at `self`. By definition, 
@@ -491,5 +506,6 @@ def binary_tree_from_code(s):
     """
     l = split_tree(s)
     return binary_tree_from_list(l)
+
 
 
