@@ -14,6 +14,7 @@ sol = FiniteSet(*[f(x) for x in A])
 ==
 
 text ==
+{{sol}}
 On considère la fonction $! f : \mathbb{Z} \times \mathbb{Z} \rightarrow \mathbb{Z} !$ telle que
 $$f(n)= ({{expr1|latex}}, {{expr2|latex}})$$
 Déterminer $! f(\\{ {{A|latex}} \\}). !$
