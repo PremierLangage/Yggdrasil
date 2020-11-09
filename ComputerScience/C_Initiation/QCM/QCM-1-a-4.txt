@@ -1875,7 +1875,7 @@ réel et n un entier positif. On veut pouvoir gérer le cas où la fonction ne p
 + entraine une erreur à l’exécution
 - affiche une adresse
 
-* [group=Lecture_De_Char] Qu’affiche le programme :
+* [group=Lecture_De_Char] 92 ) Qu’affiche le programme :
 
 
     int main(void){
@@ -1898,7 +1898,7 @@ si l’utilisateur entre : x y z t
 - xyzt
 - entraine une erreur à l’exécution
 
-* [group=Lecture_De_Char] Qu’affiche le programme :
+* [group=Lecture_De_Char] 93 ) Qu’affiche le programme :
 
 
     int main(void){
@@ -1939,7 +1939,7 @@ si l’utilisateur entre : x y z t
 - Réponse 4
 - Réponse 5
 
-* [group=Lecture_De_Char] Qu’affiche le programme :
+* [group=Lecture_De_Char] 94 ) Qu’affiche le programme :
 
 
     int main(void){
@@ -1962,7 +1962,7 @@ si l’utilisateur entre : R T Y U
 - entraire une erreur à l’exécution
 - RTYU
 
-* [group=Pile] Considérons le programme suivant :
+* [group=Pile] 95 ) Considérons le programme suivant :
 
 
     /*01*/#include <stdio.h>
@@ -2015,7 +2015,7 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 - Réponse 5
 - Réponse 6
 
-* [group=Pile] Considérons le programme suivant :
+* [group=Pile] 96 ) Considérons le programme suivant :
 
 
     /*01*/#include <stdio.h>
@@ -2067,7 +2067,7 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 - Réponse 5
 - Réponse 6
 
-* [group=Pile] Considérons le programme suivant :
+* [group=Pile] 97 ) Considérons le programme suivant :
 
 
     /*01*/#include <stdio.h>
@@ -2119,7 +2119,7 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 - Réponse 5
 - Réponse 6
 
-* [group=Pile] Considérons le programme suivant :
+* [group=Pile] 98 ) Considérons le programme suivant :
 
 
     /*01*/#include <stdio.h>
@@ -2171,7 +2171,7 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 + Réponse 5
 - Réponse 6
 
-* [group=Pile] Considérons le programme suivant :
+* [group=Pile] 99 ) Considérons le programme suivant :
 
 
     /*01*/#include <stdio.h>
@@ -2223,7 +2223,7 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 + Réponse 5
 - Réponse 6
 
-* [group=Pile] Considérons le programme suivant :
+* [group=Pile] 100 ) Considérons le programme suivant :
 
 
     /*01*/#include <stdio.h>
@@ -2275,7 +2275,7 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 - Réponse 5
 - Réponse 6
 
-* [group=Pile] Considérons le programme suivant :
+* [group=Pile] 101 ) Considérons le programme suivant :
 
 
     /*01*/#include <stdio.h>
@@ -2329,28 +2329,28 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 
 # Catalogue 4 Prog C Olivier BOUILLOT
 
-** [group=Definition] Quelles affirmations sont exactes ?
+** [group=Definition] 102 ) Quelles affirmations sont exactes ?
 
 + la taille d’un tableau est fixée une fois pour toutes
 - un tableau peut contenir simultanément des éléments de plusieurs types
 + les éléments d’un tableau sont rangés consécutivement dans la mémoire
 - la déclaration int tab[10]; initialise un tableau avec 10 cases contenant 0
 
-** [group=Definition] Quelles affirmations sont exactes ?
+** [group=Definition] 103 ) Quelles affirmations sont exactes ?
 
 + un tableau peut contenir uniquement des éléments de même type 
 - on peut changer la taille d’un tableau en cours d’exécution
 + les indices au tableau int tab[5]; vont de 0 à 4
 - les indices au tableau int tab[5]; vont de 1 à 5
 
-** [group=Definition] Quelles affirmations sont exactes ?
+** [group=Definition] 104 ) Quelles affirmations sont exactes ?
 
 + un tableau peut contenir uniquement des éléments de même type
 - on peut changer la taille d’un tableau en cours d’exécution 
 + l’indice -1 du tableau int tab[5]; n’est pas valide
 - l’indice -1 du tableau int tab[5]; désigne la case 4
 
-** [group=indices_tableau_PH] Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
+** [group=indices_tableau_PH] 105 ) Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
 
 - tab[2] == 2
 + tab[7] == 0
@@ -2358,14 +2358,14 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 + tab[12] n’est pas défini
 - tab[-1] == 4
 
-** [group=indices_tableau_PH] Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
+** [group=indices_tableau_PH] 106 ) Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
 
 - tab[2] == 2
 + tab[10] n’est pas défini
 - tab[8] n’est pas défini
 - tab[-1] == 0
 
-** [group=indices_tableau_PH] Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
+** [group=indices_tableau_PH] 107 ) Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
 
 - tab[2] == 2
 + tab[1] == 2
@@ -2373,7 +2373,7 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 - tab[-1] == 0
 + tab[11] n’est pas défini
 
-** [group=indices_tableau_PH] Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
+** [group=indices_tableau_PH] 108 ) Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
 
 - tab[2] == 2
 + tab[12] n’est pas défini
@@ -2381,7 +2381,7 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 + tab[5] == tab[7]
 + tab[3] == 4 
 
-* [group=affectation_tableau_PH] On a déclaré `int tab1[5] = {1,2,3,4,5};` Quelle déclaration, instruction ou suite 
+* [group=affectation_tableau_PH] 109 ) On a déclaré `int tab1[5] = {1,2,3,4,5};` Quelle déclaration, instruction ou suite 
 d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 
 - int tab2 = tab1;
@@ -2390,7 +2390,7 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 + int tab2 = {0,1,2,3,4};
 - int tab2[2] = tab1[1];
 
-* [group=affectation_tableau_PH] On a déclaré `int tab1[5] = {1,2,3,4,5};` Quelle déclaration, instruction ou suite 
+* [group=affectation_tableau_PH] 110 ) On a déclaré `int tab1[5] = {1,2,3,4,5};` Quelle déclaration, instruction ou suite 
 d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 
 - int tab2 = tab1;
@@ -2400,7 +2400,7 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 + int tab2[5] = {0}; tab2[2]=tab1[3]-2; 
 - int tab2[2]; tab2[2] = tab1[2];
 
-* [group=affectation_tableau_PH] On a déclaré `int tab1[5] = {1,2,3,4,5};` Quelle déclaration, instruction ou suite 
+* [group=affectation_tableau_PH] 111) On a déclaré `int tab1[5] = {1,2,3,4,5};` Quelle déclaration, instruction ou suite 
 d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 
 - int tab2 = tab1;
@@ -2409,7 +2409,7 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 - int tab2[] = {0};
 + int tab2[3]; tab2[2] = tab1[1];
 
-* [group=initUn] Le code suivant 
+* [group=initUn] 112 ) Le code suivant 
 
 
     int i,tab[10];
@@ -2423,7 +2423,7 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 - remplit les cases d’indice de 1 à 10 avec des valeurs lues au clavier
 - provoque une erreur à l’exécution
 
-* [group=tableau_sautant_PH] Quelle valeur affichera le code suivant ?
+* [group=tableau_sautant_PH] 113 ) Quelle valeur affichera le code suivant ?
 
 
     int i, j=0;
@@ -2443,7 +2443,7 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 - 3
 - 4
 
-* [group=tableau_sautant_PH] Quelle valeur affichera le code suivant ?
+* [group=tableau_sautant_PH] 114 ) Quelle valeur affichera le code suivant ?
 
 
     int i, j=2;
@@ -2462,7 +2462,7 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 - 3
 - 4
 
-* [group=tableau_sautant_PH] Quelle valeur affichera le code suivant ?
+* [group=tableau_sautant_PH] 115 ) Quelle valeur affichera le code suivant ?
 
 
     int i, j=3;
@@ -2481,7 +2481,7 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 - 3
 - 4
 
-** [group=fonction_tableau_pointeur_PH] Quelle valeur affichera le code suivant ?
+** [group=fonction_tableau_pointeur_PH] 116 ) Quelle valeur affichera le code suivant ?
 
 
     /* 1*/  void scanTab (int tab[], int taille) {
@@ -2504,7 +2504,7 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 + 6
 - aucune de celles-ci
 
-** [group=fonction_tableau_pointeur_PH] Quelle valeur affichera le code suivant ?
+** [group=fonction_tableau_pointeur_PH] 117 ) Quelle valeur affichera le code suivant ?
 
 
     /* 1*/  void scanTab (int tab[], int taille) {
@@ -2527,7 +2527,7 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 + 6
 - aucune de celles-ci
 
-** [group=fonction_tableau_pointeur_PH] Quelle valeur affichera le code suivant ?
+** [group=fonction_tableau_pointeur_PH] 118 ) Quelle valeur affichera le code suivant ?
 
 
     /* 1*/  void scanTab (int tab[], int taille) {
@@ -2550,7 +2550,7 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 + 6
 - aucune de celles-ci
 
-* [group=ptrtab] On définit deux tableaux de dix int par:
+* [group=ptrtab] 119 ) On définit deux tableaux de dix int par:
 
 
      int A[10]={5,6,7,8,9};
@@ -2580,7 +2580,7 @@ Après l'appel boo(A,B) que contiennent les tableaux A et B ?
 - A : 5 6 7 8 9 3 4 4 5 5 | B : 1 1 2 2 3 0 0 0 0 0
 - rien, la déclaration de B est incomplète
 
-* [group=remplittab] Que contient le tableau tab après exécution de code :
+* [group=remplittab] 120 ) Que contient le tableau tab après exécution de code :
 
 
     int i = 0, tab[10], n = 27;
@@ -2599,7 +2599,7 @@ Après l'appel boo(A,B) que contiennent les tableaux A et B ?
 - tab[0] vaut 7 et les autres cases du tableau contiennent 0.
 - rien, il y a une erreur lors de l’exécution
 
-** [group=comparaison_de_tableaux] Que contient le tableau tab après exécution de code :
+** [group=comparaison_de_tableaux] 121 ) Que contient le tableau tab après exécution de code :
 
 
     int faitUnTruc(int tab1[], int tab2[], int taille){
@@ -2638,7 +2638,7 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 + faitUnTruc(t2, t3, 4)
 - faitUnTruc(t1, t4, 4)
 
-** [group=comparaison_de_tableaux] Que contient le tableau tab après exécution de code :
+** [group=comparaison_de_tableaux] 122 ) Que contient le tableau tab après exécution de code :
 
 
     int faitUnTruc(int tab1[], int tab2[], int taille){
@@ -2677,7 +2677,7 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 + faitUnTruc(t4, t3, 4)
 - faitUnTruc(t5, t1, 4)
 
-** [group=comparaison_de_tableaux] Que contient le tableau tab après exécution de code :
+** [group=comparaison_de_tableaux] 123 ) Que contient le tableau tab après exécution de code :
 
 
     int faitUnTruc(int tab1[], int tab2[], int taille){
@@ -2716,7 +2716,7 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 - faitUnTruc(t1, t4, 4)
 + faitUnTruc(t5, t1, 4)
 
-** [group=comparaison_de_tableaux] Que contient le tableau tab après exécution de code :
+** [group=comparaison_de_tableaux] 124 ) Que contient le tableau tab après exécution de code :
 
 
     int faitUnTruc(int tab1[], int tab2[], int taille){
@@ -2755,7 +2755,7 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 - faitUnTruc(t3, t1, 4)
 + faitUnTruc(t1, t5, 4)
 
-** [group=compar] La fonction suivante :
+** [group=compar] 125 ) La fonction suivante :
 
 
     int pouet(int t[], int v[], int taille){
@@ -2780,7 +2780,7 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 - renvoie 0 si tous les éléments des deux tableaux sont différents
 - provoque une erreur d’exécution
 
-* [group=decalage] Quel est le contenu du tableau défini par `int t[5] = {1,2,3,4,5};` après l’appel cafe(t,5) ?
+* [group=decalage] 126 ) Quel est le contenu du tableau défini par `int t[5] = {1,2,3,4,5};` après l’appel cafe(t,5) ?
 
 
     void cafe(int tab[], int taille){
@@ -2800,7 +2800,7 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 - 5 1 2 3 4
 - 2 3 4 5 1
 
-* [group=decalage] Quel est le contenu du tableau défini par `int t[5] = {1,2,3,4,5};` après l’appel cafe(t,5) ?
+* [group=decalage] 127 ) Quel est le contenu du tableau défini par `int t[5] = {1,2,3,4,5};` après l’appel cafe(t,5) ?
 
 
     void cafe(int tab[], int taille){
@@ -2822,7 +2822,7 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 - 5 1 2 3 4
 - 2 3 4 5 1
 
-* [group=affiche_partiel] On considère la fonction suivante :
+* [group=affiche_partiel] 128 ) On considère la fonction suivante :
 
 
     void afficheTruc(int tab[], int n, int taille){
