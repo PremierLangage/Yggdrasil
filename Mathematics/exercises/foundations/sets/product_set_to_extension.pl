@@ -6,7 +6,7 @@ before ==
 lenA, lenB = randitem([[2,3],[3,2],[2,2]])
 A = rand_finiteset(lenA,list(range(10)))
 B = rand_finiteset(lenB,list(range(10)))
-sol = FiniteSet(ProductSet(A,B))
+sol = FiniteSet(*ProductSet(A,B))
 ==
 
 text == 
