@@ -34,17 +34,8 @@ et affichant le résultat.<br>
 <br>
 
 Voici un exemple complet d'éxécution du programme :<br>
-``
-``
-``
-``
-``
-``
-``
-``
-``
-``
-``
+`Entrez la valeur du rayon : 
+`Le volume de cette sphere vaut 4711.8193049168385`
 ==
 before==
 ==
