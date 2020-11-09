@@ -22,6 +22,8 @@ questions==
 - $% f^{\\{-1\\}}(A)%$ a du sens
 - $% f^{\\{-1\\}}(B)\subset F %$ 
 + $% f^{\\{-1\\}}(B) \subset E %$ 
+
+
 ** 
 
  
