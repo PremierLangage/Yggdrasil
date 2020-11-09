@@ -126,7 +126,7 @@ editor.code==
 def factoriel(n):
     pass
 
-def combinaions(n, p):
+def combinaion(n, p):
     pass
 
 def coefficients_binome(n):
