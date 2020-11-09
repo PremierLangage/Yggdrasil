@@ -1826,8 +1826,8 @@ un nombre entier positif, transmis en paramètre est premier. Quel doit être le
 - int estPremier(int *a)
 - float estPremier(int n)
 
-* [group=Puissance] 87 ) On veut écrire une fonction puissanceEntiere qui calcule la valeur x&supn; pour x un nombre 
-réel et n un entier positif. On veut pouvoir gérer le cas où la fonction ne peut effectuer le calcul 
+* [group=Puissance] 87 ) On veut écrire une fonction puissanceEntiere qui calcule la valeur **x**<sup>**n**</sup> pour **x** un nombre 
+réel et **n** un entier positif. On veut pouvoir gérer le cas où la fonction ne peut effectuer le calcul 
 (si l’entier transmis en paramètre est négatif). Quel doit être le prototype de cette fonction ?
 
 + int puissanceEntiere(float x,int n,float *resultat)
