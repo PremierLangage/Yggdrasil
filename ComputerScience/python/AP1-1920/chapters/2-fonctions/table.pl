@@ -12,9 +12,8 @@ def saisie_entier_str_positif(...):
     ...
 
 def affiche_table(...):
-    pass
-
-print("\n de 0 fois", ??, "à", ??, "fois", ??)
+    print("\n de 0 fois", ??, "à", ??, "fois", ??)
+    ...
 ==
 
 text==  
