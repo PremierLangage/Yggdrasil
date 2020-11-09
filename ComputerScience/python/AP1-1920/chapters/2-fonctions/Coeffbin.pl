@@ -9,15 +9,18 @@ title =Coefficients du binôme
 
 text==  
 
-Ecrire une fontion *factoriel(n)* qui reçoit un entier positif et renvoie sa factorielle.<br>
+1) Ecrire une fontion *factoriel(n)* qui reçoit un entier positif et renvoie sa factorielle.<br>
 
 Si l'entier est négatif la fonction renvoie *None*<br>
 <br>
 
-Ecrire une fontion *combinaison(n,p)* qui reçoit deux entiers positifs 
+2) Ecrire une fontion *combinaison(n,p)* qui reçoit deux entiers positifs 
 et renvoie le nombre de combinaions de p éléments choisis parmi n éléments.
 $%\binom{n}{p}%$<br>
+
 On rappelle que ce nombre vaut $%\frac{n!}{p! \times(n-p)!} %$ si $%0 \le p\le n %$ et 0 sinon.<br>
+<br>
+
 Utilisez ces fonctions pour écrire une fonction *coefficients_binome(n)* qui reçoit 
 un entier n et renvoie :<br>
 
