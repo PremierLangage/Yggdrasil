@@ -22,12 +22,11 @@ text==
 2) Ecrivez un programme qui récupère un entier au clavier, 
 puis appelle la fonction précédente et affiche le résultat booléen.
 <br>
+<br>
 
-Pour les entrées de l'utilisateur, on utilisera le code suivant : **input("Saisie : ")**
+Pour les entrées de l'utilisateur, on utilisera le code suivant : **input("Saisie : ")**<br>
 <br>
-<br>
-Plus précisemment, un exemple d'utilisation du programme produit la sortie suivante :
-<br>
+Plus précisemment, un exemple d'utilisation du programme produit la sortie suivante :<br>
 <br>
 Saisie : 17<br>
 True
