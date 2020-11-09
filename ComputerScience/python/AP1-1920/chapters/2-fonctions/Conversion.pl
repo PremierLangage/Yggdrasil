@@ -5,15 +5,23 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 title = Conversion de température
 
 text==
-Écrire une fonction **conv()** qui reçoit deux paramètres, une température **t** et une chaine de caractères indiquant
-le type de conversion à effectuer: "CF" ou "FC", et qui retourne la température convertie :<br>
-Celsius -> Fahrenheit (deuxième paramètre CF), 
-Fahrenheit -> Celsius(deuxième paramètre FC).<br>
-Si le deuxième paramètre n'est pas une de ces chaines, la valeur de t est retournée.
-Rappel : 
-$%
-Tf = 32 +1.8 * Tc\\\
-%$
+On souhaite convertir une température en degré Celsius
+ou Farenheit.<br>
+<br>
+Écrire une fonction **conv()** qui reçoit deux paramètres,
+une température `t` et une chaine de caractères indiquant
+le type de conversion à effectuer: 
+
+*   "CF" signifiera une conversion de degré Celsius vers
+    des degrés Fahrenheit ;
+
+*   "FC"signifiera une conversion de degré Fahrenheit vers
+    des degrés Celsius.
+
+Si le deuxième paramètre n'est pas une de ces chaines,
+la valeur de `t` est retournée.<br>
+<br>
+**Rappel :** $%T_f = 32 +1.8 T_c%$
 ==
 Zeditor.code==
 def conv(t,n):
@@ -72,6 +80,7 @@ pltest4==
 >>> conv(-58,"FC")
 -50.0
 ==
+
 
 
 
