@@ -64,7 +64,7 @@ def combinaison(n,p):
 
 def coefficients_binome(n):
     if n<0:
-        s="non défini"
+        s="Non défini"
     else:
         s=""
         for p in range(n):
@@ -97,7 +97,7 @@ def combinaison(n,p):
 
 def coefficients_binome(n):
     if n<0:
-        s="non défini"
+        s="Non défini"
     else:
         s=""
         for p in range(n):
