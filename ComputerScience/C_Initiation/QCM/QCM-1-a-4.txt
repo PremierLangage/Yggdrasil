@@ -532,7 +532,7 @@ Quelles sont-elles ?
 
         j = 5;
 
-        z = J / 2;
+        z = j / 2;
 
         printf("%f \n", z);
 
@@ -558,7 +558,7 @@ Quelles sont-elles ?
 
         j = 5;
 
-        z = J / 2;
+        z = j / 2;
 
         printf("%f \n", z);
 
