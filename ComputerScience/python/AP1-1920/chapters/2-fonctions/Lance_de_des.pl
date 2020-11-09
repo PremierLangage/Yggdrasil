@@ -5,8 +5,16 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 title = Lancés de dés
 
 text==  
-Coder une fonction `Lances_Des` qui prend en paramètre un entier "n" compris entre 3 et 18 et renvoie le nombre de façons de faire "n" en lançant trois dés.
+Coder une fonction `Lances_Des` qui prend en paramètre
+un entier `n` compris entre $3$ et $18$ et renvoie
+le nombre de façons de faire `n` en lançant trois dés
+à $%6%$ faces.<br>
+<br>
 
+**Attention :** L'ordre des dés est pris en compte. Cela signifie qu'avoir
+obtenu $%1%$ au premier dé, $%2%$ au second et $%3%$ au troisième
+dé n'est pas la même chose qu'avoir eu $%3%$ au premier dé,
+$%2%$ au second dé et $%1%$ au troisième dé. 
 ==
 
 @ /builder/before.py [builder.py]
@@ -40,5 +48,6 @@ for i in range(7):
     globals()[f"pltest{i}"]=f""">>> Lances_Des({n})\n{p}\n"""
 
 ==
+
 
 
