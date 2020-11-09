@@ -3,7 +3,7 @@ extends = /model/math/frac.pl
 title = Calcul d'une expression numérique
 
 before ==
-a = randint(2, 5)
+a = randint(1, 5)
 b = randint(2, 5)
 c = randint(2, 5)
 s = randitem("+", "-")
