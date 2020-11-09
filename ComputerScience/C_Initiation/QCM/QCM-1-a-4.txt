@@ -1888,6 +1888,8 @@ réel et **n** un entier positif. On veut pouvoir gérer le cas où la fonction 
 
         printf("%c%c%c%c\n", a,b,c,d);
 
+        return 0;
+
     }
 
 si l’utilisateur entre : x y z t
