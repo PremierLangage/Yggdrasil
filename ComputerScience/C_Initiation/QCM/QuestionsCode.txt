@@ -1,6 +1,6 @@
 Latex:1
 
-* [group=Puissance] 87 ) On veut écrire une fonction puissanceEntiere qui calcule la valeur \x^{n} pour x un nombre 
+* [group=Puissance] 87 ) On veut écrire une fonction puissanceEntiere qui calcule la valeur x^n pour x un nombre 
 réel et n un entier positif. On veut pouvoir gérer le cas où la fonction ne peut effectuer le calcul 
 (si l’entier transmis en paramètre est négatif). Quel doit être le prototype de cette fonction ?
 
