@@ -1,4 +1,4 @@
-extends = model/math/finite_sets.pl
+extends = /model/math/finite_sets.pl
 
 before ==
 items = list(range(10))
