@@ -1097,7 +1097,7 @@ Combien y en a t-il ?
 + une boucledo while
 - impossible en C
 
-*[group=condition] 52 ) L’instruction (ou le bloc) d’une boucle est exécutée lorsque la condition est ...
+*[group=condition] 52 ) Le bloc d’une boucle est exécutée lorsque la condition est ...
 
 + ... vraie
 - ... fausse
