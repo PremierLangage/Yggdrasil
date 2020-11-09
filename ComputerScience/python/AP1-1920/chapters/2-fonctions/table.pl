@@ -48,20 +48,21 @@ x = saisie_entier_str_positif()
 table(n,x)
 ==
 soluce==#|python|
-def table(x,n):
-    print("\nde 0 fois", x, "à", n - 1, "fois", x)
-    for i in range(n):
-        print(i * x)
 def  saisie_entier_str_positif():
     n=int(input("Saisissez un entier strictement positif : "))
     while(n<=0):
          n = int(input("Saisissez un entier strictement positif : "))
     return n
 
-n = saisie_entier_str_positif()
-x = saisie_entier_str_positif()
+def table(x, n):
+    print("\nde 0 fois", x, "à", n - 1, "fois", x)
+    for i in range(n):
+        print(i * x)
 
-table(n,x)
+x = saisie_entier_str_positif()
+n = saisie_entier_str_positif()
+
+table(x, n)
 ==
 before==
 
