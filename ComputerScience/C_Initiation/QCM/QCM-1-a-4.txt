@@ -1299,7 +1299,7 @@ Quelle sont les en-têtes possibles de cette fonction ?
 
 # Catalogue 3 Prog C Olivier BOUILLOT
 
-**[group=Erreurs1] 62 ) Le programme ci-dessus provoque un certain nombre d’erreurs de compilation ou de warning.
+**[group=Erreurs1] 62 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     #include <stdio.h>
@@ -1331,7 +1331,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - error: expected ’;’ after expression
 - Aucune erreur ou warning n’est générée à la compilation
 
-**[group=Erreurs1] 63 ) Le programme ci-dessus provoque un certain nombre d’erreurs de compilation ou de warning.
+**[group=Erreurs1] 63 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     #include <stdio.h>
@@ -1365,7 +1365,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + error: expected ’;’ after expression
 - Aucune erreur ou warning n’est générée à la compilation
 
-**[group=Erreurs1] 64 ) Le programme ci-dessus provoque un certain nombre d’erreurs de compilation ou de warning.
+**[group=Erreurs1] 64 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     #include <stdio.h>
@@ -1395,7 +1395,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + error: expected ’;’ after expression
 - Aucune erreur ou warning n’est générée à la compilation
 
-**[group=Erreurs1] 65 ) Le programme ci-dessus provoque un certain nombre d’erreurs de compilation ou de warning.
+**[group=Erreurs1] 65 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     #include <stdio.h>
@@ -1430,7 +1430,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - error: expected ’;’ after expression
 - Aucune erreur ou warning n’est générée à la compilation
 
-**[group=Erreurs2] 66 ) Le programme ci-dessus provoque un certain nombre d’erreurs de compilation ou de warning.
+**[group=Erreurs2] 66 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     #include <stdio.h>
@@ -1474,7 +1474,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - error: expected ’;’ after expression
 + Aucune erreur ou warning n’est générée à la compilation
 
-**[group=Erreurs2] 67 ) Le programme ci-dessus provoque un certain nombre d’erreurs de compilation ou de warning.
+**[group=Erreurs2] 67 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     int main(void) {
@@ -1516,7 +1516,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - error: expected ’;’ after expression
 - Aucune erreur ou warning n’est générée à la compilation
 
-**[group=Erreurs2] 68 ) Le programme ci-dessus provoque un certain nombre d’erreurs de compilation ou de warning.
+**[group=Erreurs2] 68 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     int main(void) {
@@ -1558,7 +1558,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + error: expected ’;’ after declaration
 - Aucune erreur ou warning n’est générée à la compilation
 
-**[group=Erreurs2] 69 ) Le programme ci-dessus provoque un certain nombre d’erreurs de compilation ou de warning.
+**[group=Erreurs2] 69 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     int main(void) {
