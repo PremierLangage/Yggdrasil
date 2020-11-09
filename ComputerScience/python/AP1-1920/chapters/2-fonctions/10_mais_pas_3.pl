@@ -21,13 +21,18 @@ text==
 
 2) Ecrivez un programme qui récupère un entier au clavier, 
 puis appelle la fonction précédente et affiche le résultat booléen.
+<br>
 
-<br>
-Un exemple d'utilisation du programme produit la sortie suivante :
-<br>
 Pour les entrées de l'utilisateur, on utilisera le code suivant : <br>
 **input("Saisie : ")**
-
+<br>
+<br>
+Plus précisemment, un exemple d'utilisation du programme produit la sortie suivante :
+<br>
+<br>
+Saisie : 17
+True
+<br>
 ==
 
 soluce==#|python|
