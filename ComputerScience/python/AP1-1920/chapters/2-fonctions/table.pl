@@ -8,11 +8,11 @@ title = Afficher les $%n%$ premiers multiples d'un entier $%x%$
 
 code==
 def saisie_entier_str_positif(...):
-    ?? = ??(input("Saisissez un entier strictement positif : "))
+    ?? = ??(input('Saisissez un entier strictement positif : '))
     ...
 
 def affiche_table(...):
-    print("\n de 0 fois", ??, "à", ??, "fois", ??)
+    print('\n de 0 fois', ??, 'à', ??, 'fois', ??, ':')
     ...
 ==
 
@@ -29,10 +29,26 @@ text==
     * appelle la fonction `affiche_table` qui imprimera le résultat attendu.<br>
 
     Vous vous aiderez du code déjà présent pour les saisies des valeurs. 
+
+Un exemple complet d'exécution du programme est :
+`Saisissez un entier strictement positif : `<br>
+`Saisissez un entier strictement positif : `<br>
+`Saisissez un entier strictement positif : `<br>
+`De 0 fois 1 à 9 fois 1 :`<br>
+`0`<br>
+`1`<br>
+`2`<br>
+`3`<br>
+`4`<br>
+`5`<br>
+`6`<br>
+`7`<br>
+`8`<br>
+`9`<br>
 ==
 Xeditor.code==
 def table(x,n):
-    print("\nDe 0 fois", x, "à", n - 1, "fois", x)
+    print('\nDe 0 fois', x, 'à', n - 1, 'fois', x, ':')
     for i in range(n):
         print(i * x)
 def  saisie_entier_str_positif():
@@ -54,7 +70,7 @@ def  saisie_entier_str_positif():
     return n
 
 def table(x, n):
-    print("\nDe 0 fois", x, "à", n - 1, "fois", x)
+    print('\nDe 0 fois', x, 'à', n - 1, 'fois', x, ':')
     for i in range(n):
         print(i * x)
 
