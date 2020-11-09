@@ -15,7 +15,7 @@ questions==
 
 
 ** Soit $% f: \\{ 1,2,3, 4, 5\\} \to \\{6,7,8,9\\} %$ définie par 
-$$ \left(\begin{array}{ccccc} 1&2&3&4&5\\
+$$ \left(\begin{array}{ccccc} 1&2&3&4&5 \\
 6&6&9&6&7
 \end{array} \right) $$
 + est nulle 
