@@ -14,10 +14,7 @@ def saisie_entier_str_positif(...):
 def affiche_table(...):
     pass
 
-?? = ??(input("Saisissez un entier strictement positif : "))
-
-
-print("\n de 0 fois",??,"à",??,"fois",n)
+print("\n de 0 fois", ??, "à", ??, "fois", ??)
 ==
 
 text==  
