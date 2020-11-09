@@ -39,7 +39,7 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 
 - La fonction echange prend des entiers en paramètres
 + La fonction echange prend des adresses en paramètres
-- La fonction scanf prend une chaine de caractères, puis une ou des variables de type int en paramètres
+- La fonction scanf prend en paramètres : une chaine de caractères, une ou des variables de type int
 + La fonction scanf prend une chaine de caractères, puis des adresses en paramètres
 + La ligne 14 ne provoque pas d’erreur de compilation.
 - La ligne 14 provoque une erreur de compilation.
