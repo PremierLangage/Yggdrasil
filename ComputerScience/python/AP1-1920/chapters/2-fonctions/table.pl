@@ -33,7 +33,7 @@ text==
 ==
 Xeditor.code==
 def table(x,n):
-    print("\nde 0 fois", x, "à", n - 1, "fois", x)
+    print("\nDe 0 fois", x, "à", n - 1, "fois", x)
     for i in range(n):
         print(i * x)
 def  saisie_entier_str_positif():
@@ -55,7 +55,7 @@ def  saisie_entier_str_positif():
     return n
 
 def table(x, n):
-    print("\nde 0 fois", x, "à", n - 1, "fois", x)
+    print("\nDe 0 fois", x, "à", n - 1, "fois", x)
     for i in range(n):
         print(i * x)
 
