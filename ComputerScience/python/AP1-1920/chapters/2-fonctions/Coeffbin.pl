@@ -18,7 +18,7 @@ Si l'entier est négatif la fonction renvoie *None*<br>
 et renvoie le nombre de combinaions de p éléments choisis parmi n éléments.
 $%\binom{n}{p}%$<br>
 
-On rappelle que ce nombre vaut $%\frac{n!}{p! \times(n-p)!} %$ si $%0 \le p\le n %$ et 0 sinon.<br>
+On rappelle que ce nombre vaut $%\dfrac{n!}{p! \times(n-p)!} %$ si $%0 \le p\le n %$ et 0 sinon.<br>
 <br>
 
 Utilisez ces fonctions pour écrire une fonction *coefficients_binome(n)* qui reçoit 
