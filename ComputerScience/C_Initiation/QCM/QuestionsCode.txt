@@ -1,23 +1,31 @@
 Latex:1
 
-** [group=difference_entre_affichage_et_retour_de_fonction] 83 ) Le code suivant devrait afficher et retourner la valeur 
-entière entrée par l’utilisateur, mais il est incorrect:
+**[group=Erreurs1] 64 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
-    void f(int *n){
+    #include <stdio.h>
 
-        scanf("%d", n);
+    int main(void) {
 
-        printf("%d", *n);
+        int n = 3;
+
+        for (i = 0; i < n; i += 1) {
+
+            printf("Donnez moi un entier : ")
+
+            scanf("%d", &n);
+
+            printf("Vous avez tapé : %d\n", n);
 
     }
 
-Parmi les propositions suivantes, lesquelles corrigent le code ?
+Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur renvoie ?
 
-+ On remplace le type de retour void de la fonction f par int. 
-+ On rajoute après la ligne contenant printf un return *n
-- On rajoute après la ligne contenant printf un return n
-- On remplace le printf à la fin de la fonction f par return n. 
-- On remplace le n par &n dans le scanf.
-- On remplace le *n par n dans le printf.
-- On remplace le printf à la fin de la fonction f par return *n.
++ error: use of undeclared identifier ’i’
+- warning: format specifies type ’int *’ but the argument has type ’int’
+- warning: format specifies type ’double’ but the argument has type ’int’
+- error: extraneous closing brace (’}’)
++ error: expected ’}’
+- warning: variable ’n’ is uninitialized when used here
++ error: expected ’;’ after expression
+- Aucune erreur ou warning n’est générée à la compilation
