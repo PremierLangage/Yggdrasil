@@ -34,17 +34,15 @@ taille_arbre=8
 hauteur_max=3
 
 before==#|python|
-from random import choice
+from random import choice, randint
 from utils_binary_tree import random_binary_tree
 
-Tree_exo = random_binary_tree(int(taille_arbre), max_height=int(hauteur_max))[0]
-viewer.graph = Tree_exo.to_dot_code_BST_point()
-inorder_trans = Tree_exo.inorder_traversal()
-preorder_trans = Tree_exo.preorder_traversal()
-postorder_trans = Tree_exo.postorder_traversal()
-breadth_trans = Tree_exo.breadth_first_traversal()
+nb_nodes = randint(4,8)
+max_height = randint(3,5)
+Tree_exo, labels = random_binary_tree(nb_nodes, max_height=max_height)
 
-soluce, parcours = choice([(inorder_trans, "parcours profondeur infixe"), (preorder_trans, "parcours profondeur préfixe"), (postorder_trans, "parcours profondeur postfixe"), (breadth_trans, "parcours en largeur")])
+height = Tree_exo.height()
+
 ==
 
 
@@ -55,14 +53,12 @@ text==
 }
 </style>
 
-Voici un arbre binaire. L'arbre vide est représenté par un point, les feuilles 
-sont donc les nœuds ayant à la fois un point pour fils gauche et fils droit.
+On recherche un arbre ! Vous devez trouver cet arbre ! Pour le décrire, vous 
+devrez donner son codage textuel en faisant le parcours profondeur préfixe 
+en notant une lettre puis l'étiquette pour chaque nœud.
 
-<center>
-{{ viewer|component }}
-</center>
 
-Donnez un **{{ parcours }}** des valeurs contenues dans cet arbre.
+
 
 ==
 
@@ -81,6 +77,8 @@ form = """
 }
 </style>
 """
+
+feedback=" <center> {{ viewer|component }} </center> "
 
 if soluce == eval("["+inputbox.value+"]"):
     grade = (100, ''' <span class="success-state">Bravo, c'est exactement cela : '''+str(soluce)[1:-1]+'</span>')
