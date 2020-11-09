@@ -4,6 +4,7 @@ title = Calcul - puissances 2
 questions==
 
 ** Cocher les égalités vraies
++ $% \frac{1}{2^{-3}}= 2^3%$
 + $% \frac{2^5}{4}=2^3 %$
 + $% \frac{(2\times 3)^5}{4^2 \times 9^3}=3 %$
 + $% \frac{(-2)^5 \times 2^{-6}}{2^{-2}}=-2 %$
