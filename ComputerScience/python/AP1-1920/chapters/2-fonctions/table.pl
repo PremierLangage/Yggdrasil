@@ -7,7 +7,11 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 title = Afficher les $%n%$ premiers multiples d'un entier $%x%$
 
 code==
+def saisie_entier_str_positif(...):
+    pass
 
+def affiche_table(...):
+    pass
 
 ?? = ??(input("Saisissez un entier strictement positif : "))
 
