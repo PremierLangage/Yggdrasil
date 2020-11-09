@@ -7,8 +7,6 @@ lenA, lenB = randitem([[2,3],[3,2],[2,2]])
 A = rand_finiteset(lenA,list(range(10)))
 B = rand_finiteset(lenB,list(range(10)))
 sol = FiniteSet(ProductSet(A,B))
-
-sol_latex = latex(set(ProductSet(A,B)))
 ==
 
 text == 
@@ -23,7 +21,7 @@ feedback = message[error]
 ==
 
 solution ==
-La solution est $! {{sol_latex}} !$.
+La solution est $! {{sol|latex}} !$.
 ==
 
 
