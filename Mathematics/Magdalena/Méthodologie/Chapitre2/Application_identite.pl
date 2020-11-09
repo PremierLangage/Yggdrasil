@@ -4,10 +4,11 @@ questions==
 
 
 ** Soit $%E%$ un ensemble et $% A%$ une partie de $%E%$
-+ $% \forall x \in A%$  $%Id_E(x)=Id_A(x) %$
-- $% \forall x \in E%$   $% Id_E(x)=Id_A(x) %$
++ $% \forall x \in A \quad %$  $%Id_E(x)=Id_A(x) %$
+- $% \forall x \in E \quad Id_E(x)=Id_A(x) %$
 - L'application $%Id_E \circ Id_A %$ est bien définie
 + L'application $% Id_E %$ est bijective
++ $% Id_E(A)=A%$
 
 
 ** Soit $%E%$ et $%F%$ deux ensembles disjoints, $%f:E\to F %$,  $%g :F\to E%$ et $%h: E\to E%$
