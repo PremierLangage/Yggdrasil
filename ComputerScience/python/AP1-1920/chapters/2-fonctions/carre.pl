@@ -9,8 +9,7 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
 piste=verte
 text==
-## Une fonction carre
-## Ecrivez une fonction `carre` qui retourne le carré de son paramêtre
+Ecrivez une fonction `carre` qui retourne le carré de son paramêtre
 ==
 before==
 import random 
@@ -27,7 +26,7 @@ pltest==
 True
 >>> carre(0)
 0
->>> carre(10)
+>>> carre(-10)
 100
 >>> 
 ==
@@ -38,6 +37,7 @@ def carre(n):
     return n*6
 ==
 editor.height=145
+
 
 
 
