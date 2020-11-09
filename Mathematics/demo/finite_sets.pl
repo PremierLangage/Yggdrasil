@@ -1,5 +1,7 @@
 extends = /model/math/finite_sets.pl
 
+title = Opérations sur les ensembles
+
 before ==
 items = list(range(10))
 
