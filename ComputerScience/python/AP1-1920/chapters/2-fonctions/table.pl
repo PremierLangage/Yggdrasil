@@ -4,7 +4,7 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 @ /builder/before.py [builder.py]
-title = Afficher les "n" premiers multiples d'un entier "x"
+title = Afficher les $%n%$ premiers multiples d'un entier $%x%$
 
 code==
 
@@ -17,18 +17,17 @@ print("\n de 0 fois",??,"à",??,"fois",n)
 
 text==  
 
-Ecrire une fonction `saisie_entier_str_positif` que force la saisie d'un entier strictement positif et le renvoie<br>
-Ecrire une fonction `affiche_table` qui : <br> 
-* prend en paramètre deux entiers strictement positif : <br>
-    + un entier x  <br>
-    + un entier n <br>
-*imprime les n premiers multiples de x.
+1.  Ecrire une fonction `saisie_entier_str_positif` qui effectue la saisie d'un entier strictement positif et le renvoie<br>
 
-Pour finir écrivez un programme : <br>
-* qui demande à l'utilisateur deux entiers strictement positifs, <br>
-* et appelle la fonction `affiche_table` qui imprimera le résultat attendu.<br>
+2.  Ecrire une fonction `affiche_table` qui : <br> 
+    * prend en paramètre deux entiers strictement positif `x`et `n` ; <br>
+    * imprime les n premiers multiples de x.
 
-Vous vous aiderez du code déjà présent pour les saisies des valeurs. 
+3.  Pour finir, complétez le programme : <br>
+    * qui demande à l'utilisateur deux entiers strictement positifs, <br>
+    * appelle la fonction `affiche_table` qui imprimera le résultat attendu.<br>
+
+    Vous vous aiderez du code déjà présent pour les saisies des valeurs. 
 ==
 Xeditor.code==
 def table(x,n):
@@ -95,6 +94,7 @@ négatif
 -2
 5
 ==
+
 
 
 
