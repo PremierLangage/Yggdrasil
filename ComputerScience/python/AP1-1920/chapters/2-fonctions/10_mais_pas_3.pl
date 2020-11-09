@@ -17,13 +17,15 @@ needed=def
 
 text==  
 
-Programmer une fonction qui teste si un entier est divisible par 10 mais pas par 3. <br>
+1) Programmer une fonction qui teste si un entier est divisible par 10 mais pas par 3. <br>
 
-Puis écrivez un programme qui récupère un entier au clavier, 
-appelle la fonction et affiche le résultat booléen.
+2) Ecrivez un programme qui récupère un entier au clavier, 
+puis appelle la fonction précédente et affiche le résultat booléen.
 
-
-On utilisera pour les entrées 
+<br>
+Un exemple d'utilisation du programme produit la sortie suivante :
+<br>
+Pour les entrées de l'utilisateur, on utilisera le code suivant : <br>
 **input("Saisie : ")**
 
 ==
@@ -42,6 +44,7 @@ Test2 | 3
 Test3 | 30
 Test4 | 40
 ==
+
 
 
 
