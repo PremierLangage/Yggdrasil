@@ -77,6 +77,8 @@ form==
 ==
 
 evaluator==#|python|
+from utils_binary_tree import *
+
 form = """
 <style>
 .error-state{
@@ -88,10 +90,16 @@ form = """
 </style>
 """
 
-feedback=" <center> {{ viewer|component }} </center> "
+feedback=" <center> {{ viewer|component }} </center> \n"
+tree_student=binary_tree_from_code(inputbox.value.replace(' ', ''))
+
+if tree_student.nb_nodes() == nb_nodes:
+    feedback+='<span class="success-state">Nombre de nœuds... OK</span>'
+else:
+    feedback+='<span class="error-state">Nombre de nœuds... erreur</span>'
 
 if soluce == eval("["+inputbox.value+"]"):
-    grade = (100, ''' <span class="success-state">Bravo, c'est exactement cela : '''+str(soluce)[1:-1]+'</span>')
+    grade = (100, ''' <span class="success-state">Bravo, cet arbre </span>''')
 else:
     grade = (0, ''' <span class="error-state">Désolé, vous avez fait une erreur, le parcours attendu était : '''+str(soluce)[1:-1]+'</span>')
 ==
