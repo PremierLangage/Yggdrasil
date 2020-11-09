@@ -1,5 +1,162 @@
 Latex:1
 
+* [group=Pile] 95 ) Considérons le programme suivant :
+
+
+    /*01*/#include <stdio.h>
+
+    /*02*/
+
+    /*03*/void echange(int * a, int * b) {
+
+    /*04*/  int tmp = *a;
+
+    /*05*/  *a = *b;
+
+    /*06*/  *b = tmp;
+
+    /*07*/}
+
+    /*08*/
+
+    /*09*/int carre(int n) {
+
+    /*10*/  return n * n;
+
+    /*11*/}
+
+    /*12*/
+
+    /*13*/int main(void) {
+
+    /*14*/  int a = 2;
+
+    /*15*/  int b = 3;
+
+    /*16*/  echange(&a, &b);
+
+    /*17*/  a = carre(b);
+
+    /*18*/  echange(&a, &b);
+
+    /*19*/}
+
+
+On exécute le main de ce programme. Quel est alors l’état de la pile lorsque la ligne 15 a été exécutée ?
+
+![Légende, texte alternatif de l'image](/filebrowser/option?name=download_resource&path=Yggdrasil/ComputerScience/C_Initiation/QCM/QCM1_Pile1.png)
+
++ Réponse 1
+- Réponse 2
+- Réponse 3
+- Réponse 4
+- Réponse 5
+- Réponse 6
+
+* [group=Pile] 96 ) Considérons le programme suivant :
+
+
+    /*01*/#include <stdio.h>
+
+    /*02*/
+
+    /*03*/void echange(int * a, int * b) {
+
+    /*04*/  int tmp = *a;
+
+    /*05*/  *a = *b;
+
+    /*06*/  *b = tmp;
+
+    /*07*/}
+
+    /*08*/
+
+    /*09*/int carre(int n) {
+
+    /*10*/  return n * n;
+
+    /*11*/}
+
+    /*12*/
+
+    /*13*/int main(void) {
+
+    /*14*/  int a = 2;
+
+    /*15*/  int b = 3;
+
+    /*16*/  echange(&a, &b);
+
+    /*17*/  a = carre(b);
+
+    /*18*/  echange(&a, &b);
+
+    /*19*/}
+
+    On exécute le main de ce programme. Quel est alors l’état de la pile lorsque la ligne 4 a été exécutée ?
+
+![Légende, texte alternatif de l'image](/filebrowser/option?name=download_resource&path=Yggdrasil/ComputerScience/C_Initiation/QCM/QCM1_Pile2.png)
+
+- Réponse 1
+- Réponse 2
+- Réponse 3
++ Réponse 4
+- Réponse 5
+- Réponse 6
+
+* [group=Pile] 97 ) Considérons le programme suivant :
+
+
+    /*01*/#include <stdio.h>
+
+    /*02*/
+
+    /*03*/void echange(int * a, int * b) {
+
+    /*04*/  int tmp = *a;
+
+    /*05*/  *a = *b;
+
+    /*06*/  *b = tmp;
+
+    /*07*/}
+
+    /*08*/
+
+    /*09*/int carre(int n) {
+
+    /*10*/  return n * n;
+
+    /*11*/}
+
+    /*12*/
+
+    /*13*/int main(void) {
+
+    /*14*/ int a = 2;
+
+    /*15*/ int b = 3;
+
+    /*16*/ echange(&a, &b);
+
+    /*17*/ a = carre(b);
+
+    /*18*/ echange(&a, &b);
+
+    /*19*/}
+
+On exécute le main de ce programme. Quel est alors l’état de la pile lorsque la ligne 5 a été exécutée ?
+
+![Légende, texte alternatif de l'image](/filebrowser/option?name=download_resource&path=Yggdrasil/ComputerScience/C_Initiation/QCM/QCM1_Pile3.png)
+
+- Réponse 1
+- Réponse 2
+- Réponse 3
++ Réponse 4
+- Réponse 5
+- Réponse 6
+
 * [group=Pile] 98 ) Considérons le programme suivant :
 
 
@@ -51,3 +208,160 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 - Réponse 4
 + Réponse 5
 - Réponse 6
+
+* [group=Pile] 99 ) Considérons le programme suivant :
+
+
+    /*01*/#include <stdio.h>
+
+    /*02*/
+
+    /*03*/void echange(int * a, int * b) {
+
+    /*04*/  int tmp = *a;
+
+    /*05*/  *a = *b;
+
+    /*06*/  *b = tmp;
+
+    /*07*/}
+
+    /*08*/
+
+    /*09*/int carre(int n) {
+
+    /*10*/  return n * n;
+
+    /*11*/}
+
+    /*12*/
+
+    /*13*/int main(void) {
+
+    /*14*/ int a = 2;
+
+    /*15*/ int b = 3;
+
+    /*16*/ echange(&a, &b);
+
+    /*17*/ a = carre(b);
+
+    /*18*/ echange(&a, &b);
+
+    /*19*/}
+
+On exécute le main de ce programme. Quel est alors l’état de la pile lorsque la ligne 9 a été exécutée ?
+
+![Légende, texte alternatif de l'image](/filebrowser/option?name=download_resource&path=Yggdrasil/ComputerScience/C_Initiation/QCM/QCM1_Pile5.png)
+
+- Réponse 1
+- Réponse 2
+- Réponse 3
+- Réponse 4
++ Réponse 5
+- Réponse 6
+
+* [group=Pile] 100 ) Considérons le programme suivant :
+
+
+    /*01*/#include <stdio.h>
+
+    /*02*/
+
+    /*03*/void echange(int * a, int * b) {
+
+    /*04*/  int tmp = *a;
+
+    /*05*/  *a = *b;
+
+    /*06*/  *b = tmp;
+
+    /*07*/}
+
+    /*08*/
+
+    /*09*/int carre(int n) {
+
+    /*10*/  return n * n;
+
+    /*11*/}
+
+    /*12*/
+
+    /*13*/int main(void) {
+
+    /*14*/ int a = 2;
+
+    /*15*/ int b = 3;
+
+    /*16*/ echange(&a, &b);
+
+    /*17*/ a = carre(b);
+
+    /*18*/ echange(&a, &b);
+
+    /*19*/}
+
+On exécute le main de ce programme. Quel est alors l’état de la pile lorsque la ligne 17 a été exécutée ?
+
+![Légende, texte alternatif de l'image](/filebrowser/option?name=download_resource&path=Yggdrasil/ComputerScience/C_Initiation/QCM/QCM1_Pile6.png)
+
+- Réponse 1
+- Réponse 2
++ Réponse 3
+- Réponse 4
+- Réponse 5
+- Réponse 6
+
+* [group=Pile] 101 ) Considérons le programme suivant :
+
+
+    /*01*/#include <stdio.h>
+
+    /*02*/
+
+    /*03*/void echange(int * a, int * b) {
+
+    /*04*/  int tmp = *a;
+
+    /*05*/  *a = *b;
+
+    /*06*/  *b = tmp;
+
+    /*07*/}
+
+    /*08*/
+
+    /*09*/int carre(int n) {
+
+    /*10*/  return n * n;
+
+    /*11*/}
+
+    /*12*/
+
+    /*13*/int main(void) {
+
+    /*14*/ int a = 2;
+
+    /*15*/ int b = 3;
+
+    /*16*/ echange(&a, &b);
+
+    /*17*/ a = carre(b);
+
+    /*18*/ echange(&a, &b);
+
+    /*19*/}
+
+On exécute le main de ce programme. Quel est alors l’état de la pile lorsque la ligne 18 a été exécutée ?
+
+![Légende, texte alternatif de l'image](/filebrowser/option?name=download_resource&path=Yggdrasil/ComputerScience/C_Initiation/QCM/QCM1_Pile7.png)
+
+- Réponse 1
+- Réponse 2
+- Réponse 3
+- Réponse 4
+- Réponse 5
++ Réponse 6
+
