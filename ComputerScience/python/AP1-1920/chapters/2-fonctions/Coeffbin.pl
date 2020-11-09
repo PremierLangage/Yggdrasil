@@ -113,7 +113,7 @@ True
 pltest1==
 #negatif
 >>> coefficients_binome(-9)
-'non défini'
+'Non défini'
 ==
 
 pltest2==
