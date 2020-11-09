@@ -1,45 +1,7 @@
 Latex:1
 
-**[group=Echange_de_variable] 40 ) Parmi les fonctions suivantes, quelles sont celles qui réalisent un échange des variables
- passées en paramètres ?
+** [group=Renvoie_dun_code_derreur2] 79 ) Dans quel cas peut-il être intéressant qu’une fonction `int foo(int n, int * resultat)` renvoie un code d’erreur ?
 
-
-     /* Fonction 1 */                       /* Fonction 2 */
-
-     void echange(int* a, int* b){          void echange(int a, int b){
-
-        int tmp = *a;                          int tmp = a;
-
-         *a = *b;                              a = b;
-
-         *b = tmp;}                            b = tmp;}
-
-
-     /* Fonction 3 */                       /* Fonction 4 */
-
-     void echange(int* a, int* b){          void echange(int* a, int* b){
-
-         int tmp = &a;                         int* tmp;
-
-         &a = &b;                              tmp = a;
-
-         &b = tmp;}                            *a = *b;
-
-                                               *b = *tmp;} 
-
-
-                        /* Fonction 5 */
-
-                        void echange(int* a, int* b){
-
-                            int* tmp = &a;
-
-                            &a = &b;
-
-                            &b = &tmp;}
-
-+ Fonction 1
-- Fonction 2
-- Fonction 3
-+ Fonction 4
-- Fonction 5 
++ Lorsque les valeurs des paramètres n et resultat donnés par l’utilisateur ne sont pas dans le bon ensemble de valeurs.
+- Lorsque le résultat de la fonction foo peut être n’importe quel entier. 
+- Jamais, cela ne sert à rien.
