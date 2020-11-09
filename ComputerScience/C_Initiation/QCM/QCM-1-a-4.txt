@@ -823,7 +823,6 @@ second degré ax&sup2; + bx + c = 0 doit contenir au minimum...
 
                             &b = &tmp;}
 
-
 + Fonction 1
 - Fonction 2
 - Fonction 3
