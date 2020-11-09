@@ -9,7 +9,7 @@ expr2 = randitem([n, n+1, n-1, 2*n, 2*n+1, 2*n-1])
 
 f = Lambda(n, (expr1, expr2))
 
-A = rand_finiteset(3, 0, 5)
+A = rand_finiteset(3, list(range(6)))
 sol = FiniteSet(*[f(x) for x in A])
 ==
 
