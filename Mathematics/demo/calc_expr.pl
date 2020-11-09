@@ -1,3 +1,7 @@
+extends = /model/math/frac.pl
+
+title = Calcul d'une expression numérique
+
 before ==
 a = randint(2, 5)
 b = randiint(2, 5)
