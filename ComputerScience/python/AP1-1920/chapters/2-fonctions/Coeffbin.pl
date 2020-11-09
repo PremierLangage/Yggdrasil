@@ -9,9 +9,10 @@ title =Coefficients du binôme
 
 text==  
 
-Ecrire une fontion *factoriel(n)* qui reçoit un entier positif et renvoie sa factorielle.
+Ecrire une fontion *factoriel(n)* qui reçoit un entier positif et renvoie sa factorielle.<br>
 
-Si l'entier est négatif la fonction renvoie *None*
+Si l'entier est négatif la fonction renvoie *None*<br>
+<br>
 
 Ecrire une fontion *combinaison(n,p)* qui reçoit deux entiers positifs 
 et renvoie le nombre de combinaions de p éléments choisis parmi n éléments.
@@ -121,3 +122,4 @@ def coefficients_binome(n):
     pass
 
 ==
+
