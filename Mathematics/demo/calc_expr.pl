@@ -8,7 +8,7 @@ b = randint(2, 5)
 c = randint(2, 5)
 s = randitem("+", "-")
 
-expr = r"\frac{ {%s}^2 %s %s) }{ %s }" % (a, s, b, c)
+expr = r"\frac{ %s }{ %s }" % (a, b)
 sol = simplify(latex2sympy(expr))
 
 ==
