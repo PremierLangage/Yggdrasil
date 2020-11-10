@@ -13,20 +13,20 @@ et la fonction `triangle_etoiles(n)` en `triangle(n, ch)`.<br>
 <br>
 **Exemple :**<br>
 <br>
-`>>> print(triangle(3,'\*'))`<br>
-<br>
-`*`<br>
-`*+**`<br>
-`*+**+***`<br>
-`*+**`<br>
-`*`<br>
-`>>> print(triangle(3,'to'))`<br>
-<br>
-`to` <br>
-`to+toto` <br>
-`to+toto+tototo` <br>
-`to+toto` <br>
-`to` <br>
+    >>> print(triangle(3,'\*'))`<br>
+    
+    *
+    *+**
+    *+**+***
+    *+**
+    *
+    >>> print(triangle(3,'to'))
+    
+    to
+    to+toto
+    to+toto+tototo
+    to+toto
+    to
 <br>
 ==
 
@@ -100,6 +100,7 @@ pltest1==
 >>> triangle(2,'r2d2')
 '\nr2d2\nr2d2+r2d2r2d2\nr2d2\n'
 ==
+
 
 
 
