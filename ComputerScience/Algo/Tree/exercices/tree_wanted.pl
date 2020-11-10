@@ -51,6 +51,11 @@ if randint(0,1) == 0:
     falling = "gauche"
 else:
     falling = "droit"
+# increasing/decreasing tree
+if randint(0,1) == 0:
+    order = "croissant"
+else:
+    order = "décroissant"
 ==
 
 
@@ -78,6 +83,7 @@ caractéristiques suivantes :
 * Il est de **hauteur {{ height }}**.
 * Il possède **{{ nb_leaf_str }}**.
 * Il est **héréditairement {{ falling }}**.
+* Il est **{{ order }}** le long des branches.
 
 ==
 
