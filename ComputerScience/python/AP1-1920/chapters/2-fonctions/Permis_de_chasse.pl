@@ -74,10 +74,10 @@ code==
 #
 #
 #
-poules=??(input("Combien de poules?"))
-chiens=??(input("Combien de chiens?"))
-vaches=??(input("Combien de vaches?"))
-amis=??(input("Combien d'amis?"))
+poules = ??(input("Combien de poules?"))
+chiens = ??(input("Combien de chiens?"))
+vaches = ??(input("Combien de vaches?"))
+amis = ??(input("Combien d'amis?"))
 #
 
 ==
