@@ -95,7 +95,12 @@ feedback = """
 
 tree_student=binary_tree_from_code(inputbox.value.replace(' ', ''))
 viewer = GraphDrawer()
-viewer.graph = tree_student.to_dot_code_BST_point()
+
+try:
+    viewer.graph = tree_student.to_dot_code_BST_point()
+except:
+    grade = (0, ''' <span class="error-state">Votre code textuel d'arbre est invalide.</span> <br><br>''')
+
 feedback += f" \n\n <center><c-graph-viewer graph='{viewer.graph}'></c-graph-viewer></center> <br>"
 
 if tree_student.nb_nodes() == nb_nodes:
