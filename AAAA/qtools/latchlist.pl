@@ -4,6 +4,9 @@ extends= /exemples/matchlistcsv/matchlistcsv.pl
 @ engflac.csv [content.csv]
 
 
+title= Associer mot et prononciation
+
+
 before==
 import random
 from mkl import fromcsv,selectionfromcsv
@@ -20,3 +23,4 @@ for item in match.nodes:
 text+=str(match.nodes)
 
 ==
+
