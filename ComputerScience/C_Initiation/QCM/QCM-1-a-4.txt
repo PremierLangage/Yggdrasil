@@ -2759,7 +2759,7 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 - faitUnTruc(t3, t1, 4)
 + faitUnTruc(t1, t5, 4)
 
-** [nb=15,group=compar] 125 ) La fonction suivante :
+** [nb=5,group=compar] 125 ) La fonction suivante :
 
 
     int pouet(int t[], int v[], int taille){
