@@ -2276,7 +2276,7 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 - Réponse 5
 - Réponse 6
 
-* [nb=15,group=Pile] 101 ) Considérons le programme suivant :
+* [nb=6,group=Pile] 101 ) Considérons le programme suivant :
 
 
     /*01*/#include <stdio.h>
@@ -2330,28 +2330,28 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 
 # Catalogue 4 Prog C Olivier BOUILLOT
 
-** [nb=15,group=Definition] 102 ) Quelles affirmations sont exactes ?
+** [nb=4,group=Definition] 102 ) Quelles affirmations sont exactes ?
 
 + la taille d’un tableau est fixée une fois pour toutes
 - un tableau peut contenir simultanément des éléments de plusieurs types
 + les éléments d’un tableau sont rangés consécutivement dans la mémoire
 - la déclaration int tab[10]; initialise un tableau avec 10 cases contenant 0
 
-** [nb=15,group=Definition] 103 ) Quelles affirmations sont exactes ?
+** [nb=4,group=Definition] 103 ) Quelles affirmations sont exactes ?
 
 + un tableau peut contenir uniquement des éléments de même type 
 - on peut changer la taille d’un tableau en cours d’exécution
 + les indices au tableau int tab[5]; vont de 0 à 4
 - les indices au tableau int tab[5]; vont de 1 à 5
 
-** [nb=15,group=Definition] 104 ) Quelles affirmations sont exactes ?
+** [nb=4,group=Definition] 104 ) Quelles affirmations sont exactes ?
 
 + un tableau peut contenir uniquement des éléments de même type
 - on peut changer la taille d’un tableau en cours d’exécution 
 + l’indice -1 du tableau int tab[5]; n’est pas valide
 - l’indice -1 du tableau int tab[5]; désigne la case 4
 
-** [nb=15,group=indices_tableau_PH] 105 ) Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
+** [nb=4,group=indices_tableau_PH] 105 ) Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
 
 - tab[2] == 2
 + tab[7] == 0
@@ -2359,14 +2359,14 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 + tab[12] n’est pas défini
 - tab[-1] == 4
 
-** [nb=15,group=indices_tableau_PH] 106 ) Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
+** [nb=4,group=indices_tableau_PH] 106 ) Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
 
 - tab[2] == 2
 + tab[10] n’est pas défini
 - tab[8] n’est pas défini
 - tab[-1] == 0
 
-** [nb=15,group=indices_tableau_PH] 107 ) Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
+** [nb=5,group=indices_tableau_PH] 107 ) Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
 
 - tab[2] == 2
 + tab[1] == 2
@@ -2374,7 +2374,7 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 - tab[-1] == 0
 + tab[11] n’est pas défini
 
-** [nb=15,group=indices_tableau_PH] 108 ) Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
+** [nb=5,group=indices_tableau_PH] 108 ) Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
 
 - tab[2] == 2
 + tab[12] n’est pas défini
@@ -2382,7 +2382,7 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 + tab[5] == tab[7]
 + tab[3] == 4 
 
-* [nb=15,group=affectation_tableau_PH] 109 ) On a déclaré `int tab1[5] = {1,2,3,4,5};` Quelle déclaration, instruction ou suite 
+* [nb=5,group=affectation_tableau_PH] 109 ) On a déclaré `int tab1[5] = {1,2,3,4,5};` Quelle déclaration, instruction ou suite 
 d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 
 - int tab2 = tab1;
@@ -2391,7 +2391,7 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 + int tab2 = {0,1,2,3,4};
 - int tab2[2] = tab1[1];
 
-* [nb=15,group=affectation_tableau_PH] 110 ) On a déclaré `int tab1[5] = {1,2,3,4,5};` Quelle déclaration, instruction ou suite 
+* [nb=6,group=affectation_tableau_PH] 110 ) On a déclaré `int tab1[5] = {1,2,3,4,5};` Quelle déclaration, instruction ou suite 
 d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 
 - int tab2 = tab1;
@@ -2401,7 +2401,7 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 + int tab2[5] = {0}; tab2[2]=tab1[3]-2; 
 - int tab2[2]; tab2[2] = tab1[2];
 
-* [nb=15,group=affectation_tableau_PH] 111) On a déclaré `int tab1[5] = {1,2,3,4,5};` Quelle déclaration, instruction ou suite 
+* [nb=5,group=affectation_tableau_PH] 111) On a déclaré `int tab1[5] = {1,2,3,4,5};` Quelle déclaration, instruction ou suite 
 d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 
 - int tab2 = tab1;
@@ -2410,7 +2410,7 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 - int tab2[] = {0};
 + int tab2[3]; tab2[2] = tab1[1];
 
-* [nb=15,group=initUn] 112 ) Le code suivant 
+* [nb=4,group=initUn] 112 ) Le code suivant 
 
 
     int i,tab[10];
@@ -2424,7 +2424,7 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 - remplit les cases d’indice de 1 à 10 avec des valeurs lues au clavier
 - provoque une erreur à l’exécution
 
-* [nb=15,group=tableau_sautant_PH] 113 ) Quelle valeur affichera le code suivant ?
+* [nb=5,group=tableau_sautant_PH] 113 ) Quelle valeur affichera le code suivant ?
 
 
     int i, j=0;
@@ -2444,7 +2444,7 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 - 3
 - 4
 
-* [nb=15,group=tableau_sautant_PH] 114 ) Quelle valeur affichera le code suivant ?
+* [nb=5,group=tableau_sautant_PH] 114 ) Quelle valeur affichera le code suivant ?
 
 
     int i, j=2;
@@ -2463,7 +2463,7 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 - 3
 - 4
 
-* [nb=15,group=tableau_sautant_PH] 115 ) Quelle valeur affichera le code suivant ?
+* [nb=5,group=tableau_sautant_PH] 115 ) Quelle valeur affichera le code suivant ?
 
 
     int i, j=3;
@@ -2482,7 +2482,7 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 - 3
 - 4
 
-** [nb=15,group=fonction_tableau_pointeur_PH] 116 ) Dans la fonction suivante (remplissant depuis le clavier un tableau tab de taille taille), 
+** [nb=5,group=fonction_tableau_pointeur_PH] 116 ) Dans la fonction suivante (remplissant depuis le clavier un tableau tab de taille taille), 
 quelles lignes sont incorrectes ?
 
 
@@ -2506,7 +2506,7 @@ quelles lignes sont incorrectes ?
 + 6
 - aucune de celles-ci
 
-** [nb=15,group=fonction_tableau_pointeur_PH] 117 ) Dans la fonction suivante (remplissant depuis le clavier un tableau tab de taille taille), 
+** [nb=5,group=fonction_tableau_pointeur_PH] 117 ) Dans la fonction suivante (remplissant depuis le clavier un tableau tab de taille taille), 
 quelles lignes sont incorrectes ?
 
 
