@@ -28,12 +28,12 @@ la fonction renverra `None`. <br>
 
 **Exemples :**<br>
 
-`>>> nombre_chiffres(0,1)==1`<br>
-`True`<br>
-`>>> nombre_chiffres(8,1)`<br>
-`0`<br>
-`>>> nombre_chiffres(18,4)`<br>
-`2`<br>
+    >>> nombre_chiffres(0,1)==1
+    True
+    >>> nombre_chiffres(8,1)
+    0
+    >>> nombre_chiffres(18,4)
+    2
 ==
 
 Xeditor.code==
@@ -74,6 +74,7 @@ pltest1==
 >>> nombre_chiffres(67,9)
 3
 ==
+
 
 
 
