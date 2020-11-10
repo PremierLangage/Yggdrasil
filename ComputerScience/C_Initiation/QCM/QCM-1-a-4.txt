@@ -2584,7 +2584,7 @@ Après l'appel boo(A,B) que contiennent les tableaux A et B ?
 - A : 5 6 7 8 9 3 4 4 5 5 | B : 1 1 2 2 3 0 0 0 0 0
 - rien, la déclaration de B est incomplète
 
-* [nb=15,group=remplittab] 120 ) Que contient le tableau tab après exécution de code :
+* [nb=5,group=remplittab] 120 ) Que contient le tableau tab après exécution de code :
 
 
     int i = 0, tab[10], n = 27;
@@ -2603,7 +2603,7 @@ Après l'appel boo(A,B) que contiennent les tableaux A et B ?
 - tab[0] vaut 7 et les autres cases du tableau contiennent 0.
 - rien, il y a une erreur lors de l’exécution
 
-** [nb=15,group=comparaison_de_tableaux] 121 ) On considère la fonction suivante :
+** [nb=4,group=comparaison_de_tableaux] 121 ) On considère la fonction suivante :
 
 
     int faitUnTruc(int tab1[], int tab2[], int taille){
