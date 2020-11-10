@@ -21,7 +21,7 @@ Serai-je sauvé* ?<br>
 
 *   Écrire une fonction `temps_de_parcours` qui reçoit en paramètre
     une vitesse `v` en kilomètre par heure et une distance `d` en kilomètre
-    et qui renvoie le temps necéssaire pour parcourir la distance `d`
+    et qui renvoie le temps (en heures) necéssaire pour parcourir la distance `d`
     à vitesse constante égale à `v`.<br>
     <br>
 
@@ -51,20 +51,12 @@ def sauvetage(vt,dt,vs,ds):
 
 ==
 before==
-#pourquoi passerpar les heurs et minutes.
-def temps_mis(v,d):
-    """retourne le temps en heure mn pour parcourir km à la vitesse v."""
-    heure =int(d/v)
-    minute= (60 * d//v) % 60
-    return heure,minute
+def temps_mis(v, d):
+    return d / v
 
-def sauvetage(vt,dt,vs,ds):
-    ht,mt=temps_mis(vt,dt)
-    hs,ms=temps_mis(vs,ds)
-    if ht<hs or (ht==hs and mt<ms):
-        return False
-    else:
-        return True
+def sauvetage(v_train, dist_O_A, v_S, d_S):
+    return temps_mis(v_train, dist_O_A) > temps_mis(v_S, d_S)
+
 import random
 vt=random.randint (14,250)
 dt=random.randint(20,300)
@@ -73,16 +65,16 @@ ds=random.randint (100,500)
 pltest3=""">>> sauvetage({},{},{},{})\n{}""".format(vt,dt,vs,ds,sauvetage(vt,dt,vs,ds))
 after=before
 ==
+
 pltest0==
 >>> sauvetage(2,2,1,1)==False
 False
 ==
+
 pltest1==
 >>> sauvetage(100,20,20,100)
 False
 ==
-
-
 
 pltest2==
 >>> sauvetage(20,100,200,10)
