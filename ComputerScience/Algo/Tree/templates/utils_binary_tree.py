@@ -380,7 +380,7 @@ class BinaryNode():
             return False
         if self.left.value > self.value:
             return False
-        return self.left.is_increasing() and self.right.is_increasing()
+        return self.left.is_decreasing() and self.right.is_decreasing()
 
     def to_string_code(self):
         """
