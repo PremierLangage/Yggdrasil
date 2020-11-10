@@ -87,6 +87,7 @@ feedback = """
 </style>
 """
 
+tree_student=binary_tree_from_code(inputbox.value.replace(' ', ''))
 viewer = GraphDrawer()
 viewer.graph = tree_student.to_dot_code_BST_point()
 feedback += f" \n\n <c-graph-viewer graph='{viewer.graph}'></c-graph-viewer> \n\n"
