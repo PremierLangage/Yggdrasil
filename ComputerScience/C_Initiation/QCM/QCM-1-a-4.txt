@@ -1662,7 +1662,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 
 ** [group=Renvoie_dun_code_derreur1] 78 ) Dans quel cas peut-il être intéressant qu’une fonction `int foo(int n)` renvoie un code d’erreur ?
 
-+ Les valeurs des paramètres n et resultat ne sont pas dans le bon ensemble de valeurs.
++ La valeur du paramètre n n'est pas dans le bon ensemble de valeurs.
 - Lorsque le résultat de la fonction foo peut être n’importe quel entier. 
 - Jamais, cela ne sert à rien.
 
