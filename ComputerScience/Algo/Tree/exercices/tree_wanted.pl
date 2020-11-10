@@ -38,6 +38,11 @@ nb_nodes = randint(4,8)
 max_height = randint(3,5)
 Tree_exo, labels = random_binary_tree(nb_nodes, max_height=max_height)
 height = Tree_exo.height()
+nb_leaf = len(Tree_exo.leafs())
+if nb_leaf == 1:
+    nb_leaf_str = "1 feuille"
+else:
+    nb_leaf_str = str(nb_leafs)+" feuilles"
 ==
 
 
@@ -63,6 +68,7 @@ caractéristiques suivantes :
 
 * Il possède **{{ nb_nodes }} nœuds**.
 * Il est de **hauteur {{ height }}**.
+* Il possède **{{ }} feuilles**.
 
 
 ==
