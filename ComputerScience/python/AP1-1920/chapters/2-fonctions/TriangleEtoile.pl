@@ -20,7 +20,7 @@ On veut dessiner à l'aide d'étoiles '\*' et de plus "+" des triangles de la fo
 Pour cela :<br>
 <br>
 
-*   écrire une fonction `ligne_etoile(n)` qui reçoit un entier
+*   écrire une fonction `ligne_etoiles(n)` qui reçoit un entier
     et renvoie une chaine formée de : <br>
     *   $%1%$ caractère étoile (`'*'`),
     *   $%1%$ caractère plus (`'+'`),
@@ -32,7 +32,7 @@ Pour cela :<br>
     <br>
 
     Par exemple, `ligne_etoiles(4)` renverra `'*+**+***+****'`.<br>
-    `ligne_etoiles(0)` ou `ligne_etoile(-1)` renverront
+    `ligne_etoiles(0)` ou `ligne_etoiles(-1)` renverront
     la chaine vide. <br>
     <br>
 
