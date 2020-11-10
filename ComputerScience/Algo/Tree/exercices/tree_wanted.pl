@@ -72,6 +72,7 @@ form==
 ==
 
 evaluator==#|python|
+from components import GraphDrawer
 from utils_binary_tree import *
 
 constraints=True
@@ -85,9 +86,10 @@ feedback = """
 }
 </style>
 """
-feedback+="<br> \n\n  {{ viewer|component }}  \n\n<br>"
-tree_student=binary_tree_from_code(inputbox.value.replace(' ', ''))
+
+viewer = GraphDrawer()
 viewer.graph = tree_student.to_dot_code_BST_point()
+feedback += f" \n\n <c-graph-viewer graph='{viewer.graph}'></c-graph-viewer> \n\n"
 
 if tree_student.nb_nodes() == nb_nodes:
     feedback+='<span class="success-state">Nombre de nœuds... OK</span> <br><br>'
