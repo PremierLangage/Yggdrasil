@@ -4,13 +4,13 @@ Liste des exercices sur les itérables, avec description simple, les tags et les
 
 Les tags sont séparés par |
 
-Liste des tags : 
+Liste des tags : append|
 
 ## Ex1 : Ajout d'éléments dans une liste
 
 @ /ComputerScience/python/AP1-2021/Chapitre_Iterables/ajoute_liste.pl
 
-tag = list|append
+tag = list|append|
 
 **Commentaire**
 
