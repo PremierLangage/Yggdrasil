@@ -40,7 +40,7 @@ pltest1==
 ==
 
 pltest2==
->>> lst = [5] #
+>>> lst = ['toto'] #
 >>> tab3(lst,3) #
 >>> lst
 [5, 3, 6, 9]
