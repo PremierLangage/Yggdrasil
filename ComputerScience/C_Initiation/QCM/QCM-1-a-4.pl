@@ -12,7 +12,6 @@ onepergroup % false
 
 questions=@ QCM-1-a-4.txt
 
-tag=
 
 
 
