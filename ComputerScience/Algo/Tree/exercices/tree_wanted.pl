@@ -36,17 +36,25 @@ from utils_binary_tree import random_binary_tree
 
 nb_nodes = randint(4,8)
 max_height = randint(3,5)
+# Generating a random tree makes sure the problem has a solution !!!!
 Tree_exo, labels = random_binary_tree(nb_nodes, max_height=max_height)
+# height --> a criteria
 height = Tree_exo.height()
+# nb_leaf --> another criteria
 nb_leaf = len(Tree_exo.leafs())
 if nb_leaf == 1:
     nb_leaf_str = "1 feuille"
 else:
     nb_leaf_str = str(nb_leaf)+" feuilles"
+# falling on the left or on the right...
+if randint(0,1) == 0:
+    falling = "gauche"
+else:
+    falling = "droit"
 ==
 
 
-text==
+text==#|markdown|
 <style>
  .graph-viewer-component {
  pointer-events: none;
@@ -69,7 +77,7 @@ caractéristiques suivantes :
 * Il possède **{{ nb_nodes }} nœuds**.
 * Il est de **hauteur {{ height }}**.
 * Il possède **{{ nb_leaf_str }}**.
-
+* Il est **héréditairement {{ falling }}**.
 
 ==
 
@@ -121,6 +129,12 @@ if constraints:
     else:
         constraints=False
         feedback+='''<span class="error-state">Nombre de feuilles... erreur</span> <br><br>'''
+    # check the is recursively falling on the good side...
+    if (falling == "gauche" and tree_student.is_falling_left()) or (falling == "droit" and tree_student.is_falling_right()):
+        feedback+='<span class="success-state">Arbre héréditairement '+falling+'... OK</span> <br><br>'
+    else:
+        constraints=False
+        feedback+='<span class="error-state">Arbre héréditairement '+falling+'... erreur</span> <br><br>'
 
     if constraints:
         feedback+=''' <span class="success-state">Bravo, cet arbre valide toutes les contraintes !</span> <br><br>'''
