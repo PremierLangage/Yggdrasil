@@ -141,6 +141,12 @@ if constraints:
     else:
         constraints=False
         feedback+='<span class="error-state">Arbre héréditairement '+falling+'... erreur</span> <br><br>'
+    # check if the tree is properly increasing/decreasing...
+    if (order == "croissant" and tree_student.is_increasing()) or (order == "décroissant" and tree_student.is_decreasing()):
+        feedback+='<span class="success-state">Arbre '+order+'... OK</span> <br><br>'
+    else:
+        constraints=False
+        feedback+='<span class="error-state">Arbre '+order+'... erreur</span> <br><br>'
 
     if constraints:
         feedback+=''' <span class="success-state">Bravo, cet arbre valide toutes les contraintes !</span> <br><br>'''
