@@ -2480,7 +2480,8 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 - 3
 - 4
 
-** [group=fonction_tableau_pointeur_PH] 116 ) Quelle valeur affichera le code suivant ?
+** [group=fonction_tableau_pointeur_PH] 116 ) Dans la fonction suivante (remplissant depuis le clavier un tableau tab de taille taille), 
+quelles lignes sont incorrectes ?
 
 
     /* 1*/  void scanTab (int tab[], int taille) {
