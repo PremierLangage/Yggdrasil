@@ -79,6 +79,7 @@ Comme il y a quatre types de nœuds, il y a quatre lettres possibles :
 N'importe quel arbre pourrait convenir mais l'arbre recherché a les 
 caractéristiques suivantes :
 
+* Toutes ses étiquettes sont différentes.
 * Il possède **{{ nb_nodes }} nœuds**.
 * Il est de **hauteur {{ height }}**.
 * Il possède **{{ nb_leaf_str }}**.
@@ -116,7 +117,18 @@ except:
     grade = (0, ''' <span class="error-state">Votre code textuel d'arbre est invalide.</span> <br><br>''')
     constraints=False
 
+
+
 if constraints:
+    # Check that labels are all different
+    all_labels = tree_student.preorder_traversal()
+    set_labels = set(all_labels)
+    if len(set_labels) == tree_student.nb_nodes():
+        feedback+='<span class="success-state">Étiquettes uniques... OK</span> <br><br>'
+    else:
+        constraints=False
+        feedback+='<span class="error-state">Étiquettes uniques... erreur</span> <br><br>'
+
     # Check number of nodes
     if tree_student.nb_nodes() == nb_nodes:
         feedback+='<span class="success-state">Nombre de nœuds... OK</span> <br><br>'
