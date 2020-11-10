@@ -28,10 +28,7 @@ viewer =: GraphDrawer
 
 inputbox =: Input
 inputbox.type = text
-inputbox.placeholder = Séparez les valeurs avec des virgules
-
-taille_arbre=8
-hauteur_max=3
+inputbox.placeholder = Une lettre un nombre, une lettre un nombre...
 
 before==#|python|
 from random import choice, randint
@@ -42,7 +39,6 @@ max_height = randint(3,5)
 Tree_exo, labels = random_binary_tree(nb_nodes, max_height=max_height)
 
 height = Tree_exo.height()
-
 ==
 
 
@@ -90,18 +86,29 @@ form = """
 </style>
 """
 
+constraints=True
 feedback=" <center> {{ viewer|component }} </center> \n"
 tree_student=binary_tree_from_code(inputbox.value.replace(' ', ''))
 
 if tree_student.nb_nodes() == nb_nodes:
-    feedback+='<span class="success-state">Nombre de nœuds... OK</span>'
+    feedback+='<span class="success-state">Nombre de nœuds... OK</span> <br>'
 else:
-    feedback+='<span class="error-state">Nombre de nœuds... erreur</span>'
+    constraints=False
+    feedback+='<span class="error-state">Nombre de nœuds... erreur</span> <br>'
 
-if soluce == eval("["+inputbox.value+"]"):
-    grade = (100, ''' <span class="success-state">Bravo, cet arbre </span>''')
+if tree_student.height() == height:
+    feedback+='''<span class="success-state">Hauteur de l'arbre... OK</span> <br>'''
 else:
-    grade = (0, ''' <span class="error-state">Désolé, vous avez fait une erreur, le parcours attendu était : '''+str(soluce)[1:-1]+'</span>')
+    constraints=False
+    feedback+='''<span class="error-state">Hauteur de l'arbre... erreur</span> <br>'''
+
+if constraints:
+    feedback+=''' <span class="success-state">Bravo, cet arbre valide toutes les contraintes !</span>'''
+    grade = (100, feedback)
+else:
+    feedback+=''' <span class="error-state">Désolé, au moins une contrainte n'est pas validé.</span>'''
+    grade = (0, feedback)
 ==
+
 
 
