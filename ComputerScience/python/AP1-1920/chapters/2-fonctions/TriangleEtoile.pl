@@ -10,34 +10,43 @@ title =Triangle étoilé
 text==  
 On veut dessiner à l'aide d'étoiles '\*' et de plus "+" des triangles de la forme 
 
-\*<br>
-\*+\*\*<br>
-\*+\*\*+\*\*\*<br>
-\*+\*\*<br>
-\*<br>
+`\*`<br>
+`\*+\*\*`<br>
+`\*+\*\*+\*\*\*`<br>
+`\*+\*\*`<br>
+`\*`<br>
+<br>
 
-Pour cela:<br>
-* écrire une fonction `ligne_etoile(n)` qui reçoit un entier
-et renvoie une chaine formée de : <br>
-1 caractère étoile ('\*'), 2 caractères étoiles ('\*'),...,n caractères étoile ('*') séparés par des caratères plus ('+').<br>
-    ligne_etoiles(4) renvoie "\*+\*\*+\*\*\*+\*\*\*\*".<br>
-    ligne_etoiles(1) renvoie "\*"<br>
-    ligne_etoiles(0) renvoie la chaine vide "". <br>
-* écrire une fonction `triangle_etoiles(n)` qui reçoit un entier n 
- et si n est >0 et renvoie une chaine formant un triangle
-de 2n-1 lignes
+Pour cela :<br>
 
-Exemple
- 
-triangle_etoile(3) renvoie la chaine "\n\*+\*\*\n\*+\*\*+\*\*\*\n\*+\*\*\n\*\n"
+*   écrire une fonction `ligne_etoile(n)` qui reçoit un entier
+    et renvoie une chaine formée de : <br>
+    $%1%$ caractère étoile ('\*'), $%2%$ caractères étoiles ('\*'),
+    $%\cdots%$, $%n%$ caractères étoiles ('*'), chaque groupe d'étoiles
+    étant séparés par des caratères plus ('+').<br>
+
+    Par exemple, `ligne_etoiles(4)` renverra `'\*+\*\*+\*\*\*+\*\*\*\*'`.<br>
+    `ligne_etoiles(1)` renverra `\*` et `ligne_etoiles(0)` renverra
+    la chaine vide ``. <br>
+
+*   écrire une fonction `triangle_etoiles(n)` qui reçoit un entier $%n%$ 
+    et si $%n%$ est strictement positif renvoie une chaine formant
+    un triangle de $%2n - 1%$ lignes. <br>
+<br>
+
+**Exemple :**<br>
+<br>
+`triangle_etoile(3)` renvoie la chaine
+`'\n\*+\*\*\n\*+\*\*+\*\*\*\n\*+\*\*\n\*\n'`
 dont l'affichage produit <br>
-'<br>
+<br>
 \*<br>
 \*+\*\*<br>
 \*+\*\*+\*\*\*<br>
 \*+\*\*<br>
 \*<br>
-'
+
+*Attention aux sauts de lignes.*
 
 ==
 
@@ -141,6 +150,7 @@ pltest1==
 >>> triangle_etoiles(2)
 '\n*\n*+**\n*\n'
 ==
+
 
 
 
