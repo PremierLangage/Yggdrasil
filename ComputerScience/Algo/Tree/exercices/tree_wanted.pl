@@ -75,17 +75,6 @@ form==
 evaluator==#|python|
 from utils_binary_tree import *
 
-form = """
-<style>
-.error-state{
-   padding: 10px;
-}
-.success-state{
-   padding: 10px;
-}
-</style>
-"""
-
 constraints=True
 feedback=" <center> {{ viewer|component }} </center> \n"
 tree_student=binary_tree_from_code(inputbox.value.replace(' ', ''))
