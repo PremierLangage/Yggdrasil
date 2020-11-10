@@ -1,7 +1,8 @@
 grandeur;nom;symbol;formule
-pression,pascal,Pa,kg,\(m^(−1)\),\(s^(−2)\)
-travail,joule,J,kg,\(m^2\),\(s^(−2)\)
-puissance,watt,W,kg,\(m^2\),\(s^(−3)\)
-fréquence,hertz,Hz,\(s^(−1)\)
-force,newton,N,kg,m,\(s^(−2)\)
+pression;pascal;Pa;kg;\(m^(−1)\);\(s^(−2)\)
+travail;joule;J;kg;\(m^2\);\(s^(−2)\)
+puissance;watt;W;kg;\(m^2\);\(s^(−3)\)
+fréquence;hertz;Hz;\(s^(−1)\)
+force;newton;N;kg;m;\(s^(−2)\)
+
 
