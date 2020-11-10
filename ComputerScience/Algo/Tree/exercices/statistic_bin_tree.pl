@@ -44,7 +44,7 @@ list_stat.append( (height, "la hauteur") )
 list_stat.append( (nb_leafs, "le nombre de feuilles") )
 list_stat.append( (max_leaf, "l'étiquette maximale dans les feuilles") )
 list_stat.append( (min_leaf, "l'étiquette minimale dans les feuilles") )
-list_stat.append( (nb_internal, "nombre de nœuds internes") )
+list_stat.append( (nb_internal, "le nombre de nœuds internes") )
 list_stat.append( (max_internal, "l'étiquette maximale parmi les nœuds internes") )
 list_stat.append( (min_internal, "l'étiquette minimale parmi les nœuds internes") )
 
@@ -93,6 +93,7 @@ if soluce == inputbox.value:
 else:
     grade = (0, ''' <span class="error-state">Désolé, vous avez fait une erreur, la réponse attendue était : '''+str(soluce)+'</span>')
 ==
+
 
 
 
