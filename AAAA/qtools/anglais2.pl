@@ -2,6 +2,7 @@
 
 extends= /exemples/checkboxgroupcsv/model.pl
 
+title= Reconnaitre un mot 
 
 @ flaceng.csv [content.csv] 
 
