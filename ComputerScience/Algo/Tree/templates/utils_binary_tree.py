@@ -266,6 +266,26 @@ class BinaryNode():
                 acc.append(node.right)
         return ans
 
+    def __is_falling_left_rec(self):
+        """
+        Return a positive interger (the number of leafs) if `self` is 
+        recursively falling ont the left. Return `0` otherwise.
+
+        EXAMPLES::
+
+        """
+        if self.left is None:
+            if self.right is None:
+                return 1
+            return 0
+        if self.right is None:
+            return self.left.__is_falling_left_rec()
+        nb_left = self.left.__is_falling_left_rec()
+        nb_right = self.left.__is_falling_left_rec()
+        if nb_left == 0 or nb_right == 0 or nb_left < nb_right:
+            return 0
+        return nb_left + nb_right
+
     def is_falling_left(self):
         """
         Return `True` if `self` is recursively falling ont the left. Return 
@@ -275,7 +295,9 @@ class BinaryNode():
         for all internal nodes, the number of leafs of the left child is
         greater or equal the number of leafs on the right child.
 
+        EXAMPLES::
         """
+        return (self.__is_falling_left_rec() > 0)
 
     def to_string_code(self):
         """
