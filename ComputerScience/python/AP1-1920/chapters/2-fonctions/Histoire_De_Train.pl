@@ -57,7 +57,7 @@ after=before
 ==
 
 pltest0==
->>> sauvetage(2,2,1,1)==False
+>>> sauvetage(2,2,1,1)
 False
 ==
 
