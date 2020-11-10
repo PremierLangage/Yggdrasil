@@ -2,15 +2,6 @@ Latex:1
 
 Latex:1
 
-** [nb=5,group=indentation] 6 ) L'indentation d'un programme C ...
-
-- ...permet au compilateur de reconnaitre les blocs
-- ...est nécessaire pour l'éditeur de texte
-+ ...aide à la lisibilité
-- ...peut remplacer les accolades
-- ...évite d'utiliser des ;
-
-
 ** [group=separateur] 5 ) Quels sont les séparateurs dans un programme écrit en C ?
 
 - les virgules
