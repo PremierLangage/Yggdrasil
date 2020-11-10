@@ -103,10 +103,10 @@ else:
     feedback+='''<span class="error-state">Hauteur de l'arbre... erreur</span> <br><br>'''
 
 if constraints:
-    feedback+=''' <span class="success-state">Bravo, cet arbre valide toutes les contraintes !</span>'''
+    feedback+=''' <span class="success-state">Bravo, cet arbre valide toutes les contraintes !</span> <br><br>'''
     grade = (100, feedback)
 else:
-    feedback+=''' <span class="error-state">Désolé, au moins une contrainte n'est pas validé.</span>'''
+    feedback+=''' <span class="error-state">Désolé, au moins une contrainte n'est pas validé.</span> <br><br>'''
     grade = (0, feedback)
 ==
 
