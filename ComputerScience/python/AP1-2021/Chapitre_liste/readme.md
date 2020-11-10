@@ -12,7 +12,3 @@ Ci-dessous, une description de chaque exercice et des changements effectués par
 # Exercice Template
 tag=list
 @ /ComputerScience/python/AP1-2021/chapitreListe/template.pl
-
-
-
-
