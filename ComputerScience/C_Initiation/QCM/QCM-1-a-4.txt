@@ -2826,7 +2826,7 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 - 5 1 2 3 4
 - 2 3 4 5 1
 
-* [nb=15,group=affiche_partiel] 128 ) On considère la fonction suivante :
+* [nb=5,group=affiche_partiel] 128 ) On considère la fonction suivante :
 
 
     void afficheTruc(int tab[], int n, int taille){
