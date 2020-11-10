@@ -55,7 +55,6 @@ Utilisez cette fonction dans un programme principal qui : <br>
 `Combien de chiens ? 2` <br>
 `Combien de vaches ? 10` <br>
 `Combien d'amis ? 20` <br>
-<br>
 `Payez 12850 euros.` <br>
 `Permis annulé` <br>
 <br>
@@ -65,7 +64,6 @@ Utilisez cette fonction dans un programme principal qui : <br>
 `Combien de chiens ? 1` <br>
 `Combien de vaches ? 1` <br>
 `Combien d'amis ? 0` <br>
-<br>
 `Payez 450 euros.`<br>
 `Points perdus : 9`
 ==
