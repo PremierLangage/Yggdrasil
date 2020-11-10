@@ -676,12 +676,14 @@ Quelles sont-elles ?
 
         if (a<b)
 
-            if (b%2==0)
+            if (b%2==0) {
 
                 printf("toto");
 
                 printf("titi");
-            
+
+            }
+
             else
 
                 printf("tutu");
