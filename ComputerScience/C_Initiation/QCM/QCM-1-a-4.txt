@@ -403,7 +403,7 @@ Quelles sont-elles ?
 - 8
 - Aucune ne provoque d'erreur ou de warning
 
-**[nb=15,group=Compilation_2] 26 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
+**[nb=6,group=Compilation_2] 26 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
 la compilation. Lesquelles ?
 
 
@@ -432,7 +432,7 @@ Quelles sont-elles ?
 - 8
 - Aucune ne provoque d'erreur ou de warning
 
-**[nb=15,group=Compilation_2] 27 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
+**[nb=6,group=Compilation_2] 27 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
 la compilation. Lesquelles ?
 
 
@@ -461,7 +461,7 @@ Quelles sont-elles ?
 - 8
 - Aucune ne provoque d'erreur ou de warning
 
-**[nb=15,group=Compilation_2] 28 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
+**[nb=6,group=Compilation_2] 28 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
 la compilation. Lesquelles ?
 
 
@@ -490,7 +490,7 @@ Quelles sont-elles ?
 - 8
 - Aucune ne provoque d'erreur ou de warning
 
-**[nb=15,group=Compilation_2]  29 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
+**[nb=6,group=Compilation_2]  29 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
 la compilation. Lesquelles ?
 
 
@@ -519,7 +519,7 @@ Quelles sont-elles ?
 - 8
 - Aucune ne provoque d'erreur ou de warning
 
-**[nb=15,group=Resultat_code]  30 ) Qu'affiche le programme suivant ?
+**[nb=4,group=Resultat_code]  30 ) Qu'affiche le programme suivant ?
 
 
      #include <stdio.h>
@@ -545,7 +545,7 @@ Quelles sont-elles ?
 - 2.5
 - Une erreur ou un warning
 
-**[nb=15,group=Resultat_code] 31 ) Qu'affiche le programme suivant ?
+**[nb=4,group=Resultat_code] 31 ) Qu'affiche le programme suivant ?
 
 
      #include <stdio.h>
@@ -571,7 +571,7 @@ Quelles sont-elles ?
 - 2.5
 + Une erreur ou un warning
 
-**[nb=15,group=Resultat_code] 32 ) Qu'affiche le programme suivant ?
+**[nb=4,group=Resultat_code] 32 ) Qu'affiche le programme suivant ?
 
 
      #include <stdio.h>
@@ -597,7 +597,7 @@ Quelles sont-elles ?
 + 2.5
 - Une erreur ou un warning
 
-**[nb=15,group=Resultat_code] 33 ) Qu'affiche le programme suivant ?
+**[nb=4,group=Resultat_code] 33 ) Qu'affiche le programme suivant ?
 
 
      #include <stdio.h>
@@ -623,7 +623,7 @@ Quelles sont-elles ?
 - 2.5
 + Une erreur ou un warning
 
-*[nb=15,group=Resultat_code_If] 34 ) Qu'affiche le programme suivant si l'utilisateur entre 3 et 42 ?
+*[nb=6,group=Resultat_code_If] 34 ) Qu'affiche le programme suivant si l'utilisateur entre 3 et 42 ?
 
 
      #include <stdio.h>
@@ -661,7 +661,7 @@ Quelles sont-elles ?
 - tititutu
 - une ligne vide
 
-*[nb=15,group=Resultat_code_If] 35 ) Qu'affiche le programme suivant si l'utilisateur entre 18 et 4 ?
+*[nb=6,group=Resultat_code_If] 35 ) Qu'affiche le programme suivant si l'utilisateur entre 18 et 4 ?
 
 
      #include <stdio.h>
@@ -699,7 +699,7 @@ Quelles sont-elles ?
 - tititutu
 + une ligne vide
 
-*[nb=15,group=Resultat_code_If] 36 ) Qu'affiche le programme suivant si l'utilisateur entre 14 et 6 ?
+*[nb=6,group=Resultat_code_If] 36 ) Qu'affiche le programme suivant si l'utilisateur entre 14 et 6 ?
 
 
      #include <stdio.h>
@@ -735,7 +735,7 @@ Quelles sont-elles ?
 + tititutu
 - une ligne vide
 
-*[nb=15,group=Resultat_code_If] 37 ) Qu'affiche le programme suivant si l'utilisateur entre 3 et 42 ?
+*[nb=6,group=Resultat_code_If] 37 ) Qu'affiche le programme suivant si l'utilisateur entre 3 et 42 ?
 
 
      #include <stdio.h>
@@ -771,7 +771,7 @@ Quelles sont-elles ?
 - tititutu
 - une ligne vide
 
-*[nb=15,group=Equation_Second_Degre] 38 ) Un programme permettant de déterminer le nombre de racines d'une équation du 
+*[nb=3,group=Equation_Second_Degre] 38 ) Un programme permettant de déterminer le nombre de racines d'une équation du 
 second degré ax&sup2; + bx + c = 0 doit contenir au minimum...
 
 - 3 tests
@@ -780,14 +780,14 @@ second degré ax&sup2; + bx + c = 0 doit contenir au minimum...
 
 # Catalogue 2 Prog C Olivier BOUILLOT sans les doublons du Catalogue 1
 
-**[nb=15,group=Changement_valeur_variable] 39 ) Comment peut-on changer la valeur d’une variable à l’aide d’une fonction ?
+**[nb=4,group=Changement_valeur_variable] 39 ) Comment peut-on changer la valeur d’une variable à l’aide d’une fonction ?
 
 + En passant l’adresse de la variable en question en argument de la fonction.
 - En passant la variable en question en argument de la fonction.
 + En passant la variable en question ainsi que son adresse en argument de la fonction.
 - On ne peut pas faire cela en C.
 
-**[nb=15,group=Echange_de_variable] 40 ) Parmi les fonctions suivantes, quelles sont celles qui réalisent un échange des variables
+**[nb=5,group=Echange_de_variable] 40 ) Parmi les fonctions suivantes, quelles sont celles qui réalisent un échange des variables
  passées en paramètres ?
 
 
@@ -831,7 +831,7 @@ second degré ax&sup2; + bx + c = 0 doit contenir au minimum...
 + Fonction 4
 - Fonction 5 
 
-**[nb=15,group=Declaration_de_variable] 41 ) Considérons le programme suivant :
+**[nb=6,group=Declaration_de_variable] 41 ) Considérons le programme suivant :
 
 
     /*01*/ #include <stdio.h>
