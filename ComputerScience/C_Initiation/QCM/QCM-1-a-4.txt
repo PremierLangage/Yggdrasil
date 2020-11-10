@@ -4,7 +4,7 @@ Latex:1
 
 *[group=erreur_de_syntaxe] 1 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. : 
 
-<code>
+
     #include <stdio.h>
 
     int main(void){
@@ -14,7 +14,7 @@ Latex:1
         return 0
 
     }
-</code>
+
 Combien y en a t'il ?
 
 - 0
