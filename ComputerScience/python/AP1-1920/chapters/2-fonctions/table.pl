@@ -31,20 +31,13 @@ text==
     Vous vous aiderez du code déjà présent pour les saisies des valeurs. 
 
 Un exemple complet d'exécution du programme est :<br><br>
-`Saisissez un entier strictement positif : `<br>
-`Saisissez un entier strictement positif : `<br>
-`Saisissez un entier strictement positif : `<br>
-`De 0 fois 1 à 9 fois 1 :`<br>
+`Saisissez un entier strictement positif : 2`<br>
+`Saisissez un entier strictement positif : 4`<br>
+`De 0 fois 2 à 3 fois 2 :`<br>
 `0`<br>
-`1`<br>
 `2`<br>
-`3`<br>
 `4`<br>
-`5`<br>
 `6`<br>
-`7`<br>
-`8`<br>
-`9`<br>
 ==
 Xeditor.code==
 def table(x,n):
@@ -112,6 +105,7 @@ négatif
 -2
 5
 ==
+
 
 
 
