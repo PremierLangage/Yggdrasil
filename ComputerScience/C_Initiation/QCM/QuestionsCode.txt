@@ -1,6 +1,6 @@
 Latex:1
 
-* [group=Pile] 95 ) Considérons le programme suivant :
+* [nb=6,group=Pile] 95 ) Considérons le programme suivant :
 
 
     /*01*/#include <stdio.h>
