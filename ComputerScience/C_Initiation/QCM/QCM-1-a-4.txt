@@ -2598,7 +2598,7 @@ Après l'appel boo(A,B) que contiennent les tableaux A et B ?
 - tab[0] vaut 7 et les autres cases du tableau contiennent 0.
 - rien, il y a une erreur lors de l’exécution
 
-** [group=comparaison_de_tableaux] 121 ) Que contient le tableau tab après exécution du code :
+** [group=comparaison_de_tableaux] 121 ) On considère la fonction suivante :
 
 
     int faitUnTruc(int tab1[], int tab2[], int taille){
@@ -2637,7 +2637,7 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 + faitUnTruc(t2, t3, 4)
 - faitUnTruc(t1, t4, 4)
 
-** [group=comparaison_de_tableaux] 122 ) Que contient le tableau tab après exécution de code :
+** [group=comparaison_de_tableaux] 122 ) On considère la fonction suivante :
 
 
     int faitUnTruc(int tab1[], int tab2[], int taille){
@@ -2676,7 +2676,7 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 + faitUnTruc(t4, t3, 4)
 - faitUnTruc(t5, t1, 4)
 
-** [group=comparaison_de_tableaux] 123 ) Que contient le tableau tab après exécution de code :
+** [group=comparaison_de_tableaux] 123 ) On considère la fonction suivante :
 
 
     int faitUnTruc(int tab1[], int tab2[], int taille){
@@ -2715,7 +2715,7 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 - faitUnTruc(t1, t4, 4)
 + faitUnTruc(t5, t1, 4)
 
-** [group=comparaison_de_tableaux] 124 ) Que contient le tableau tab après exécution de code :
+** [group=comparaison_de_tableaux] 124 ) On considère la fonction suivante :
 
 
     int faitUnTruc(int tab1[], int tab2[], int taille){
