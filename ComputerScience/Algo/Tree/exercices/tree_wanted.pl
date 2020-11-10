@@ -76,8 +76,19 @@ evaluator==#|python|
 from utils_binary_tree import *
 
 constraints=True
-feedback=" <center>\n  {{ viewer|component }}  \n</center> \n\n<br>"
+feedback = """
+<style>
+.error-state{
+   padding: 10px;
+}
+.success-state{
+   padding: 10px;
+}
+</style>
+"""
+feedback+=" \n <center>\n  {{ viewer|component }}  \n</center> \n\n<br>"
 tree_student=binary_tree_from_code(inputbox.value.replace(' ', ''))
+
 
 if tree_student.nb_nodes() == nb_nodes:
     feedback+='<span class="success-state">Nombre de nœuds... OK</span> <br><br>'
