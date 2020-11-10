@@ -15,18 +15,40 @@ text==
 Un couple de lapins arrive sur l'ile de Quang Binh le 1er septembre. Ce couple a sa première portée à trois mois, puis une portée tous les mois.
 Chaque portée est un couple de lapins. Tous les couples ainsi obtenus se reproduisent
 de la même manière.<br>
+<br>
+
+Voici en détail le recensement des couples de lapins, en fonction de la date :<br>
+<br>
 1er septembre : 1 couple de jeunes lapins<br>
 1er octobre : 1 couple de lapins d’un mois<br>
-1er novembre : 1 couple de lapins de deux  mois<br>
-1er décembre : 1 couple de jeunes lapins ,  1 couple de vieux<br>
-1er janvier : 1 couple de jeunes lapins ,1 couple de  lapins d’un mois  1 couple de vieux, soit 3 couples.<br>
-1er février : 1  couple de jeunes lapins ,1 couple de  lapins d’un mois et 1 couple de lapins de deux mois  et 1 couples de vieux, soit 4 couples.<br>
+1er novembre : 1 couple de lapins de deux mois<br>
+1er décembre : 2 couples de lapins, car<br>
+
+*   1 couple de jeunes lapins,<br>
+*   1 couple de vieux<br>
+
+1er janvier : 3 couples de lapins, car<br>
+
+*   1 couple de jeunes lapins,<br>
+*   1 couple de lapins d’un mois,<br>
+*   1 couple de vieux.<br>
+
+1er février : 4 couples de lapins, car<br>
+
+*   1 couple de jeunes lapins, 
+*   1 couple de lapins d’un mois,
+*   1 couple de lapins de deux mois,
+*   1 couples de vieuxs.<br>
 
 <br>
-Ecrire une fontion `lapin(mois)` qui reçoit un entier décrivant le nombre de mois
- écoulé et renvoie le nombre de couples.(*On distinguera le nombre de couples de nouveaux lapins, le nombre
+Ecrire une fontion `lapin(mois)` qui reçoit un entier décrivant
+le nombre de mois écoulé depuis le 1ier septembre et renvoie
+le nombre de couples de lapins.<br>
+<br>
+*(On distinguera le nombre de couples de nouveaux lapins, le nombre
 de couples de lapins ayant un mois, et le nombre de couples de lapins
-ayant 2 mois ou plus*).<br>
+ayant 2 mois ou plus.)*<br>
+<br>
 
 On fera les doctest suivants :
 
@@ -35,9 +57,6 @@ On fera les doctest suivants :
     >>> lapin(43)
     8407925
     >>> 
-
-plus d'autres ....
-
 
 *d'après Laure Petrucci*
 ==
@@ -117,3 +136,4 @@ pltest0==
 lapin(12)
 60
 ==
+
