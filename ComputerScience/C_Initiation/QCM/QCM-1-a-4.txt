@@ -875,7 +875,7 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 + La ligne 14 ne provoque pas d’erreur de compilation.
 - La ligne 14 provoque une erreur de compilation.
 
-*[nb=15,group=Comprehension_de_code] 42 ) Quel est le rendu lors de l’exécution du programme suivant ?
+*[nb=5,group=Comprehension_de_code] 42 ) Quel est le rendu lors de l’exécution du programme suivant ?
 
 
      #include <stdio.h>
