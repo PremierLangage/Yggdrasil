@@ -71,10 +71,10 @@ devrez donner son codage textuel en faisant le parcours profondeur préfixe
 en notant une lettre puis l'étiquette (un nombre entier) pour chaque nœud. 
 Comme il y a quatre types de nœuds, il y a quatre lettres possibles :
 
-* `d` pour les nœuds ayant deux fils
-* `l` pour les nœuds ayant uniquement un fils gauche
-* `r` pour les nœuds ayant uniquement un fils droit
-* `f` pour les feuilles
+* `d` (**d**ouble) pour les nœuds ayant deux fils
+* `l` (**l**eft) pour les nœuds ayant uniquement un fils gauche
+* `r` (**r**ight) pour les nœuds ayant uniquement un fils droit
+* `f` (lea**f**) pour les feuilles
 
 N'importe quel arbre pourrait convenir mais l'arbre recherché a les 
 caractéristiques suivantes :
