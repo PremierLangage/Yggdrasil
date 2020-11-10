@@ -8,25 +8,28 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 title = Histoire de trains
 
 text==  
-*   Je suis ligoté sur les rails en gare d’Arras.<br> 
-    Un train, parti de la gare d'Ouceti, se dirige vers Arras.
-    Sur son parcours, le train circule à la vitesse moyenne `v_train`
-    (donnée en km/h).
-    On notera `dist_O_A` la distance en kilomètres entre Ouceti et Arras.<br>
+Un train roulant à vitesse constante est parti de la gare d'Ouceti
+et se dirige vers Arras.<br>
+
+Moi, je suis ligoté sur les rails à 1km de l'entrée de la gare d’Arras...<br> 
+
+Alerté par mes cris, Superman, qui trainait à quelques kilomètres de la
+se dirige vers moi à vitesse constante.<br>
+
+Serai-je sauvé* ?<br>
+<br>
+
+*   Écrire une fonction `temps_de_parcours` qui reçoit en paramètre
+    une vitesse `v` en kilomètre par heure et une distance `d` en kilomètre
+    et qui renvoie le temps necéssaire pour parcourir la distance `d``
+    à vitesse constante égale à `v`.<br>
     <br>
 
-    Écrire une fonction `temps_mis` qui reçoit la vitesse du train
-    et la distance et qui renvoie le temps mis pour parcourir cette distance.<br>
-    <br>
-
-*   Alerté par les cris, Superman qui trainait à quelques `d_S` kms
-    de là se dirige à vitesse `v_S` (toujours donnée en km/h) vers moi.
-    *Serai-je sauvé* ?<br>
-    <br>
-
-    Écrire une fonction `sauvetage` qui renvoie un booléen indiquant
+*   Écrire une fonction `sauvetage` qui renvoie un booléen indiquant
     si Superman arrive à temps pour me sauver. Cette fonction reçoit
-    les quatre floattants `v_train`, `dist_O_A`, `v_S` et `d_S`.
+    les quatre floattants, la vitesse de circulation du train, la distance
+    entre Ouceti et Arras, la vitesse de vol de Superman, ainsi que
+    sa distance au lieu où je suis ligoté.
 <br>
 ==
 Xeditor.code==
