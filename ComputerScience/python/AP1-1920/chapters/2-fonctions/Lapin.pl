@@ -99,14 +99,12 @@ def lapin(mois):
     ado2=0
     jeune=1
     
-    if mois>1:
-        for i in range(1,mois):
-            vieux+=ado2
-            ado2=ado1
-            ado1=jeune
-            jeune=vieux
+    for i in range(0, mois):
+        vieux+=ado2
+        ado2=ado1
+        ado1=jeune
+        jeune=vieux
 
-    #return jeune,ado1,ado2,vieux
     return jeune+ado1+ado2+vieux
 import random, sys
 n=random.randint(44,89)
