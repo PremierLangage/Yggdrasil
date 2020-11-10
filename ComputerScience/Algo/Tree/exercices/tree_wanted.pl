@@ -76,20 +76,20 @@ evaluator==#|python|
 from utils_binary_tree import *
 
 constraints=True
-feedback=" <center> {{ viewer|component }} </center> \n"
+feedback=" <center>\n  {{ viewer|component }}  \n</center> \n\n<br>"
 tree_student=binary_tree_from_code(inputbox.value.replace(' ', ''))
 
 if tree_student.nb_nodes() == nb_nodes:
-    feedback+='<span class="success-state">Nombre de nœuds... OK</span> <br>'
+    feedback+='<span class="success-state">Nombre de nœuds... OK</span> <br><br>'
 else:
     constraints=False
-    feedback+='<span class="error-state">Nombre de nœuds... erreur</span> <br>'
+    feedback+='<span class="error-state">Nombre de nœuds... erreur</span> <br><br>'
 
 if tree_student.height() == height:
-    feedback+='''<span class="success-state">Hauteur de l'arbre... OK</span> <br>'''
+    feedback+='''<span class="success-state">Hauteur de l'arbre... OK</span> <br><br>'''
 else:
     constraints=False
-    feedback+='''<span class="error-state">Hauteur de l'arbre... erreur</span> <br>'''
+    feedback+='''<span class="error-state">Hauteur de l'arbre... erreur</span> <br><br>'''
 
 if constraints:
     feedback+=''' <span class="success-state">Bravo, cet arbre valide toutes les contraintes !</span>'''
