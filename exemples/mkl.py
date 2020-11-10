@@ -23,7 +23,7 @@ def fromcsv(filename, sourcecol="source", targetcol="target"):
 def getrandomlines(filename="content.csv",number=4, sourcecol="source", targetcol="target", unique=True):
     l=[]
     with open(filename,"r") as csvfile:
-        reader=csv.DictReader(csvfile,delimiter=',')
+        reader=csv.DictReader(csvfile,delimiter=';')
         for row in reader:
             l.append((row[sourcecol],row[targetcol]))
 
@@ -82,6 +82,7 @@ def selectionfromcsvold(filename, number=4, sourcecol="source", targetcol="targe
             MatchListItem.append({"id":"target"+str(n),"content":l[n][1], "target": True})
             expected.append({ "source": "source"+str(n), "target": "target"+str(n) })
     return MatchListItem,expected
+
 
 
 
