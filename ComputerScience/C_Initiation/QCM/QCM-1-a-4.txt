@@ -2804,7 +2804,7 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 - 5 1 2 3 4
 - 2 3 4 5 1
 
-* [nb=15,group=decalage] 127 ) Quel est le contenu du tableau défini par `int t[5] = {1,2,3,4,5};` après l’appel cafe(t,5) ?
+* [nb=4,group=decalage] 127 ) Quel est le contenu du tableau défini par `int t[5] = {1,2,3,4,5};` après l’appel cafe(t,5) ?
 
 
     void cafe(int tab[], int taille){
