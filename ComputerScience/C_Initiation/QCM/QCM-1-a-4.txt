@@ -925,7 +925,7 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 + Proposition 4
 - Proposition 5
 
-*[nb=15,group=Comprehension_de_code] 43 ) Quel est le rendu lors de l’exécution du programme suivant ?
+*[nb=6,group=Comprehension_de_code] 43 ) Quel est le rendu lors de l’exécution du programme suivant ?
 
 
     #include <stdio.h>
