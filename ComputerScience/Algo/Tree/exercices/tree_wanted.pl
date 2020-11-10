@@ -88,7 +88,7 @@ feedback = """
 """
 feedback+=" \n <center>\n  {{ viewer|component }}  \n</center> \n\n<br>"
 tree_student=binary_tree_from_code(inputbox.value.replace(' ', ''))
-
+viewer.graph = tree_student.to_dot_code_BST_point()
 
 if tree_student.nb_nodes() == nb_nodes:
     feedback+='<span class="success-state">Nombre de nœuds... OK</span> <br><br>'
