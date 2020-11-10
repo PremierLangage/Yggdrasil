@@ -7,7 +7,9 @@ title= Reconnaitre un mot
 @ flaceng.csv [content.csv] 
 
 text==
-Indiquez le mot  {{solutionvalue}} 
+Indiquez le mot  
+
+    **{{solutionvalue}}**
 
 ==
 
@@ -28,3 +30,4 @@ for i, it in enumerate(group.items):
 indexs = [ i for i,x in enumerate(solution) if x==solutionvalue ]
 
 ==
+
