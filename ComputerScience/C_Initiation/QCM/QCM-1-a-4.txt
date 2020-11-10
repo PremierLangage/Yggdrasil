@@ -2172,7 +2172,7 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 + Réponse 5
 - Réponse 6
 
-* [nb=15,group=Pile] 99 ) Considérons le programme suivant :
+* [nb=6,group=Pile] 99 ) Considérons le programme suivant :
 
 
     /*01*/#include <stdio.h>
@@ -2224,7 +2224,7 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 + Réponse 5
 - Réponse 6
 
-* [nb=15,group=Pile] 100 ) Considérons le programme suivant :
+* [nb=6,group=Pile] 100 ) Considérons le programme suivant :
 
 
     /*01*/#include <stdio.h>
