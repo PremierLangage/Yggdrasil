@@ -21,7 +21,7 @@ Serai-je sauvé* ?<br>
 
 *   Écrire une fonction `temps_de_parcours` qui reçoit en paramètre
     une vitesse `v` en kilomètre par heure et une distance `d` en kilomètre
-    et qui renvoie le temps necéssaire pour parcourir la distance `d``
+    et qui renvoie le temps necéssaire pour parcourir la distance `d`
     à vitesse constante égale à `v`.<br>
     <br>
 
