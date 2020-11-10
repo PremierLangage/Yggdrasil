@@ -85,7 +85,7 @@ feedback = """
 }
 </style>
 """
-feedback+=" \n <center>\n  {{ viewer|component }}  \n</center> \n\n<br>"
+feedback+="<br> \n\n  {{ viewer|component }}  \n\n<br>"
 tree_student=binary_tree_from_code(inputbox.value.replace(' ', ''))
 viewer.graph = tree_student.to_dot_code_BST_point()
 
