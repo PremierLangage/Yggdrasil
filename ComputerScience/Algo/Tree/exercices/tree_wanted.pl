@@ -42,7 +42,7 @@ nb_leaf = len(Tree_exo.leafs())
 if nb_leaf == 1:
     nb_leaf_str = "1 feuille"
 else:
-    nb_leaf_str = str(nb_leafs)+" feuilles"
+    nb_leaf_str = str(nb_leaf)+" feuilles"
 ==
 
 
