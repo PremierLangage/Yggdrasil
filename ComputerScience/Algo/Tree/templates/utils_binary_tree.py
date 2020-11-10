@@ -319,18 +319,18 @@ class BinaryNode():
             return 0
         return nb_left + nb_right
 
-    def is_falling_left(self):
+    def is_falling_right(self):
         """
-        Return `True` if `self` is recursively falling ont the left. Return 
+        Return `True` if `self` is recursively falling ont the right. Return 
         `False` otherwise.
 
-        A tree recursively falling on the left if a binary tree such that 
-        for all internal nodes, the number of leafs of the left child is
-        greater or equal the number of leafs on the right child.
+        A tree recursively falling on the right if a binary tree such that 
+        for all internal nodes, the number of leafs of the right child is
+        greater or equal the number of leafs on the left child.
 
         EXAMPLES::
         """
-        return (self.__is_falling_left_rec() > 0)
+        return (self.__is_falling_right_rec() > 0)
 
     def to_string_code(self):
         """
