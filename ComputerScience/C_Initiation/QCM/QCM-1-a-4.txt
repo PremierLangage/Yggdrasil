@@ -2554,7 +2554,7 @@ quelles lignes sont incorrectes ?
 + 6
 - aucune de celles-ci
 
-* [nb=15,group=ptrtab] 119 ) On définit deux tableaux de dix int par:
+* [nb=5,group=ptrtab] 119 ) On définit deux tableaux de dix int par:
 
 
      int A[10]={5,6,7,8,9};
@@ -2584,7 +2584,7 @@ Après l'appel boo(A,B) que contiennent les tableaux A et B ?
 - A : 5 6 7 8 9 3 4 4 5 5 | B : 1 1 2 2 3 0 0 0 0 0
 - rien, la déclaration de B est incomplète
 
-* [nb=15,group=remplittab] 120 ) Que contient le tableau tab après exécution de code :
+* [nb=5,group=remplittab] 120 ) Que contient le tableau tab après exécution de code :
 
 
     int i = 0, tab[10], n = 27;
