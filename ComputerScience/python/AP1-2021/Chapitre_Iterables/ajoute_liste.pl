@@ -10,7 +10,7 @@ text ==
 Ecrire une fonction **tab3** à deux arguments : une liste, un entier **n** et  qui modifie la liste passée en argument en
 lui y ajoute les n premiers multiples de 3 commençant par le multiple de 1. 
 
-Par exemple, ``tab3(['toto'], 3)`` doit modifier ``['toto']`` en la liste ``['toto', 3, 6, 9]``.
+Par exemple, ``tab3(['toto'], 3)`` doit modifier ``['toto']`` en ``['toto', 3, 6, 9]``.
 
 taboo: Ne pas utiliser la fonction <font style="color:red;">{{taboo}}</font> des listes.
 ==
@@ -45,6 +45,7 @@ pltest2==
 >>> lst
 [5, 3, 6, 9]
 ==
+
 
 
 
