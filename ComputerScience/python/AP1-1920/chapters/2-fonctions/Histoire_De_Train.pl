@@ -32,6 +32,7 @@ Serai-je sauvé* ?<br>
     sa distance au lieu où je suis ligoté.
 <br>
 ==
+
 Xeditor.code==
 def temps_mis(v, d):
     return d / v
