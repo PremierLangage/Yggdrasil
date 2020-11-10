@@ -2784,7 +2784,7 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 - renvoie 0 si tous les éléments des deux tableaux sont différents
 - provoque une erreur d’exécution
 
-* [nb=15,group=decalage] 126 ) Quel est le contenu du tableau défini par `int t[5] = {1,2,3,4,5};` après l’appel cafe(t,5) ?
+* [nb=4,group=decalage] 126 ) Quel est le contenu du tableau défini par `int t[5] = {1,2,3,4,5};` après l’appel cafe(t,5) ?
 
 
     void cafe(int tab[], int taille){
