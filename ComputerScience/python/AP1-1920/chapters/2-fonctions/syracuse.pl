@@ -50,7 +50,7 @@ code==
 
 
 
-print("Le temps de vol pour",?? ,"est",??)
+print("Le temps de vol pour", ??, "est", ??)
 ==
 before==
 import random
