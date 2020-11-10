@@ -332,6 +332,56 @@ class BinaryNode():
         """
         return (self.__is_falling_right_rec() > 0)
 
+    def is_increasing(self):
+        """
+        Return `True` if `self` is an increasing binary tree. Return `False` 
+        otherwise.
+
+        EXAMPLES::
+
+
+        """
+        if self.left is None:
+            if self.right is None:
+                return True
+            if self.right.value < self.value:
+                return False
+            return self.right.is_increasing()
+        if self.right is None:
+            if self.left.value < self.value:
+                return False
+            return self.left.is_increasing()
+        if self.right.value < self.value:
+            return False
+        if self.left.value < self.value:
+            return False
+        return self.left.is_increasing() and self.right.is_increasing()
+
+    def is_decreasing(self):
+        """
+        Return `True` if `self` is a decreasing binary tree. Return `False` 
+        otherwise.
+
+        EXAMPLES::
+
+
+        """
+        if self.left is None:
+            if self.right is None:
+                return True
+            if self.right.value > self.value:
+                return False
+            return self.right.is_increasing()
+        if self.right is None:
+            if self.left.value > self.value:
+                return False
+            return self.left.is_increasing()
+        if self.right.value > self.value:
+            return False
+        if self.left.value > self.value:
+            return False
+        return self.left.is_increasing() and self.right.is_increasing()
+
     def to_string_code(self):
         """
         Return a string coding for the binary tree. This function is used 
