@@ -371,11 +371,11 @@ class BinaryNode():
                 return True
             if self.right.value > self.value:
                 return False
-            return self.right.is_increasing()
+            return self.right.is_decreasing()
         if self.right is None:
             if self.left.value > self.value:
                 return False
-            return self.left.is_increasing()
+            return self.left.is_decreasing()
         if self.right.value > self.value:
             return False
         if self.left.value > self.value:
