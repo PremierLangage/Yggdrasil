@@ -1,7 +1,5 @@
 Ceci est le document de travail pour la mouture 2020 du TP en autonomie sur PLaTon correspondant aux notions vues au Chapitre 3 (Boucles et boucles imbriquées).
 
-Pour l'instant j'ai (Marie) fait une copie locale de la feuille de tp principale et une au fur et à mesure de leur traitement des exercices, pour que les modifications que l'on fait dans cette phase ne soient pas définitives.
-
 **Notes:**
 
     - les _tags_ sont à séparer par des pipes : | (question: espaces ou pas espaces autour des | ?)
