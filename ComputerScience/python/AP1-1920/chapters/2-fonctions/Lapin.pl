@@ -129,13 +129,13 @@ bb==
 
 
 
-pltest1==
+pltest0==
 >>> 
 lapin(12)
 60
 ==
 
-pltest2==
+pltest1==
 >>>
 lapin(-1)
 0
