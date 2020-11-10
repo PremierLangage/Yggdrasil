@@ -4,5 +4,10 @@ Liste des exercices sur les itérables, avec description simple, les tags et les
 
 Les tags sont séparés par |
 
+Liste des tags : 
+
 ## Ex1 : 
 
+@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/ajoute_liste.pl
+
+tag = list|
