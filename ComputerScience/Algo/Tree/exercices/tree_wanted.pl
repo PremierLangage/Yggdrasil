@@ -37,7 +37,6 @@ from utils_binary_tree import random_binary_tree
 nb_nodes = randint(4,8)
 max_height = randint(3,5)
 Tree_exo, labels = random_binary_tree(nb_nodes, max_height=max_height)
-
 height = Tree_exo.height()
 ==
 
