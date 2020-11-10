@@ -3,9 +3,9 @@ Latex:1
 
 ** [group=separateur] 5 ) Quels sont les séparateurs dans un programme écrit en C ?
 
+- les points virgules
 - les virgules
 + les espaces
-- les points virgules
 + les tabulations
 + les retours à la ligne 
 
