@@ -171,7 +171,7 @@ programme calcul.c, peut-on constater que a + b == a ?
 - Lorsque a et b sont des flottants, cela arrive tout le temps.
 - Aucune de ces réponses n'est correcte.
 
-**[group=Warning_flottant] 15 ) On dispose de deux variables a et b. Dans quels cas,lors de l'exécution d'un 
+**[nb=5,group=Warning_flottant] 15 ) On dispose de deux variables a et b. Dans quels cas,lors de l'exécution d'un 
 programme calcul.c, peut-on constater que a + b == a ?
 
 - Lorsque a et b sont des entiers, cela arrive tout le temps.
@@ -180,7 +180,7 @@ programme calcul.c, peut-on constater que a + b == a ?
 + Lorsque a et b sont des flottants, cela peut arriver.
 - Aucune de ces réponses n'est correcte.
 
-**[group=Division] 16 ) Que vaut 3/2 en C ?
+**[nb=5,group=Division] 16 ) Que vaut 3/2 en C ?
 
 + 1
 - 1.
@@ -188,7 +188,7 @@ programme calcul.c, peut-on constater que a + b == a ?
 - 1.0
 - On ne sait pas
 
-**[group=Division] 17 ) Que vaut 3./2 en C ?
+**[nb=5,group=Division] 17 ) Que vaut 3./2 en C ?
 
 - 1
 - 1.
@@ -196,7 +196,7 @@ programme calcul.c, peut-on constater que a + b == a ?
 - 1.0
 - On ne sait pas
 
-**[group=Division] 18 ) Que vaut 3/2. en C ?
+**[nb=5,group=Division] 18 ) Que vaut 3/2. en C ?
 
 - 1
 - 1.
@@ -204,7 +204,7 @@ programme calcul.c, peut-on constater que a + b == a ?
 - 1.0
 - On ne sait pas
 
-**[group=Division] 19 ) On considère les instructions suivantes :
+**[nb=5,group=Division] 19 ) On considère les instructions suivantes :
 
 
     x = 3;
@@ -219,7 +219,7 @@ Que vaut x/y ?
 - 1.0
 + On ne sait pas
 
-*[group=adresse] 20 ) Comment récupère t-on l'adresse d'une variable x ?
+*[nb=5,group=adresse] 20 ) Comment récupère t-on l'adresse d'une variable x ?
 
 - x
 + &x
@@ -227,7 +227,7 @@ Que vaut x/y ?
 - %x
 - *x
 
-**[group=Sans_Effet_de_bords] 21 ) Parmi le code suivant, un certain nombre d'instructions ne modifient pas les 
+**[nb=6,group=Sans_Effet_de_bords] 21 ) Parmi le code suivant, un certain nombre d'instructions ne modifient pas les 
 variables locales du programme.
 
 
@@ -264,7 +264,7 @@ Quelles sont-elles ?
 + 11
 - Aucune des ces lignes
 
-**[group=Sans_Effet_de_bords] 22 ) Parmi le code suivant, un certain nombre d'instructions ne modifient pas les 
+**[nb=6,group=Sans_Effet_de_bords] 22 ) Parmi le code suivant, un certain nombre d'instructions ne modifient pas les 
 variables locales du programme.
 
 
@@ -301,7 +301,7 @@ Quelles sont-elles ?
 + 11
 - Aucune des ces lignes
 
-**[group=Sans_Effet_de_bords] 23 ) Parmi le code suivant, un certain nombre d'instructions ne modifient pas les 
+**[nb=6,group=Sans_Effet_de_bords] 23 ) Parmi le code suivant, un certain nombre d'instructions ne modifient pas les 
 variables locales du programme.
 
 
@@ -336,7 +336,7 @@ Quelles sont-elles ?
 - Aucune des ces lignes
 - 11
 
-**[group=Sans_Effet_de_bords] 24 ) Parmi le code suivant, un certain nombre d'instructions ne modifient pas les 
+**[nb=6,group=Sans_Effet_de_bords] 24 ) Parmi le code suivant, un certain nombre d'instructions ne modifient pas les 
 variables locales du programme.
 
 
@@ -374,7 +374,7 @@ Quelles sont-elles ?
 - Aucune des ces lignes
 + 11
 
-**[group=Compilation_2] 25 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
+**[nb=6,group=Compilation_2] 25 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
 la compilation. Lesquelles ?
 
 
@@ -403,7 +403,7 @@ Quelles sont-elles ?
 - 8
 - Aucune ne provoque d'erreur ou de warning
 
-**[group=Compilation_2] 26 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
+**[nb=15,group=Compilation_2] 26 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
 la compilation. Lesquelles ?
 
 
@@ -432,7 +432,7 @@ Quelles sont-elles ?
 - 8
 - Aucune ne provoque d'erreur ou de warning
 
-**[group=Compilation_2] 27 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
+**[nb=15,group=Compilation_2] 27 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
 la compilation. Lesquelles ?
 
 
@@ -461,7 +461,7 @@ Quelles sont-elles ?
 - 8
 - Aucune ne provoque d'erreur ou de warning
 
-**[group=Compilation_2] 28 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
+**[nb=15,group=Compilation_2] 28 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
 la compilation. Lesquelles ?
 
 
@@ -490,7 +490,7 @@ Quelles sont-elles ?
 - 8
 - Aucune ne provoque d'erreur ou de warning
 
-**[group=Compilation_2]  29 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
+**[nb=15,group=Compilation_2]  29 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
 la compilation. Lesquelles ?
 
 
@@ -519,7 +519,7 @@ Quelles sont-elles ?
 - 8
 - Aucune ne provoque d'erreur ou de warning
 
-**[group=Resultat_code]  30 ) Qu'affiche le programme suivant ?
+**[nb=15,group=Resultat_code]  30 ) Qu'affiche le programme suivant ?
 
 
      #include <stdio.h>
@@ -545,7 +545,7 @@ Quelles sont-elles ?
 - 2.5
 - Une erreur ou un warning
 
-**[group=Resultat_code] 31 ) Qu'affiche le programme suivant ?
+**[nb=15,group=Resultat_code] 31 ) Qu'affiche le programme suivant ?
 
 
      #include <stdio.h>
@@ -571,7 +571,7 @@ Quelles sont-elles ?
 - 2.5
 + Une erreur ou un warning
 
-**[group=Resultat_code] 32 ) Qu'affiche le programme suivant ?
+**[nb=15,group=Resultat_code] 32 ) Qu'affiche le programme suivant ?
 
 
      #include <stdio.h>
@@ -597,7 +597,7 @@ Quelles sont-elles ?
 + 2.5
 - Une erreur ou un warning
 
-**[group=Resultat_code] 33 ) Qu'affiche le programme suivant ?
+**[nb=15,group=Resultat_code] 33 ) Qu'affiche le programme suivant ?
 
 
      #include <stdio.h>
@@ -623,7 +623,7 @@ Quelles sont-elles ?
 - 2.5
 + Une erreur ou un warning
 
-*[group=Resultat_code_If] 34 ) Qu'affiche le programme suivant si l'utilisateur entre 3 et 42 ?
+*[nb=15,group=Resultat_code_If] 34 ) Qu'affiche le programme suivant si l'utilisateur entre 3 et 42 ?
 
 
      #include <stdio.h>
@@ -661,7 +661,7 @@ Quelles sont-elles ?
 - tititutu
 - une ligne vide
 
-*[group=Resultat_code_If] 35 ) Qu'affiche le programme suivant si l'utilisateur entre 18 et 4 ?
+*[nb=15,group=Resultat_code_If] 35 ) Qu'affiche le programme suivant si l'utilisateur entre 18 et 4 ?
 
 
      #include <stdio.h>
@@ -699,7 +699,7 @@ Quelles sont-elles ?
 - tititutu
 + une ligne vide
 
-*[group=Resultat_code_If] 36 ) Qu'affiche le programme suivant si l'utilisateur entre 14 et 6 ?
+*[nb=15,group=Resultat_code_If] 36 ) Qu'affiche le programme suivant si l'utilisateur entre 14 et 6 ?
 
 
      #include <stdio.h>
@@ -735,7 +735,7 @@ Quelles sont-elles ?
 + tititutu
 - une ligne vide
 
-*[group=Resultat_code_If] 37 ) Qu'affiche le programme suivant si l'utilisateur entre 3 et 42 ?
+*[nb=15,group=Resultat_code_If] 37 ) Qu'affiche le programme suivant si l'utilisateur entre 3 et 42 ?
 
 
      #include <stdio.h>
@@ -771,7 +771,7 @@ Quelles sont-elles ?
 - tititutu
 - une ligne vide
 
-*[group=Equation_Second_Degre] 38 ) Un programme permettant de déterminer le nombre de racines d'une équation du 
+*[nb=15,group=Equation_Second_Degre] 38 ) Un programme permettant de déterminer le nombre de racines d'une équation du 
 second degré ax&sup2; + bx + c = 0 doit contenir au minimum...
 
 - 3 tests
@@ -780,14 +780,14 @@ second degré ax&sup2; + bx + c = 0 doit contenir au minimum...
 
 # Catalogue 2 Prog C Olivier BOUILLOT sans les doublons du Catalogue 1
 
-**[group=Changement_valeur_variable] 39 ) Comment peut-on changer la valeur d’une variable à l’aide d’une fonction ?
+**[nb=15,group=Changement_valeur_variable] 39 ) Comment peut-on changer la valeur d’une variable à l’aide d’une fonction ?
 
 + En passant l’adresse de la variable en question en argument de la fonction.
 - En passant la variable en question en argument de la fonction.
 + En passant la variable en question ainsi que son adresse en argument de la fonction.
 - On ne peut pas faire cela en C.
 
-**[group=Echange_de_variable] 40 ) Parmi les fonctions suivantes, quelles sont celles qui réalisent un échange des variables
+**[nb=15,group=Echange_de_variable] 40 ) Parmi les fonctions suivantes, quelles sont celles qui réalisent un échange des variables
  passées en paramètres ?
 
 
@@ -831,7 +831,7 @@ second degré ax&sup2; + bx + c = 0 doit contenir au minimum...
 + Fonction 4
 - Fonction 5 
 
-**[group=Declaration_de_variable] 41 ) Considérons le programme suivant :
+**[nb=15,group=Declaration_de_variable] 41 ) Considérons le programme suivant :
 
 
     /*01*/ #include <stdio.h>
@@ -875,7 +875,7 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 + La ligne 14 ne provoque pas d’erreur de compilation.
 - La ligne 14 provoque une erreur de compilation.
 
-*[group=Comprehension_de_code] 42 ) Quel est le rendu lors de l’exécution du programme suivant ?
+*[nb=15,group=Comprehension_de_code] 42 ) Quel est le rendu lors de l’exécution du programme suivant ?
 
 
      #include <stdio.h>
@@ -925,7 +925,7 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 + Proposition 4
 - Proposition 5
 
-*[group=Comprehension_de_code] 43 ) Quel est le rendu lors de l’exécution du programme suivant ?
+*[nb=15,group=Comprehension_de_code] 43 ) Quel est le rendu lors de l’exécution du programme suivant ?
 
 
     #include <stdio.h>
@@ -953,7 +953,7 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 - 0  1
 - 1
 
-*[group=Comprehension_de_code] 44 ) Quel est le rendu lors de l’exécution du programme suivant ?
+*[nb=15,group=Comprehension_de_code] 44 ) Quel est le rendu lors de l’exécution du programme suivant ?
 
 
     #include <stdio.h>
@@ -981,7 +981,7 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 + 0  1
 - 1
 
-*[group=Comprehension_de_code] 45 ) Quel est le rendu lors de l’exécution du programme suivant ?
+*[nb=15,group=Comprehension_de_code] 45 ) Quel est le rendu lors de l’exécution du programme suivant ?
 
 
     #include <stdio.h>
@@ -1009,7 +1009,7 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 - 0  1
 - 1
 
-*[group=erreur_de_syntaxe] 46 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. Combien ?
+*[nb=15,group=erreur_de_syntaxe] 46 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. Combien ?
 
 
     #include <stdio.h>
@@ -1033,7 +1033,7 @@ Combien y en a t-il ?
 - 2
 - 3
 
-*[group=erreur_de_syntaxe] 47 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. Combien ?
+*[nb=15,group=erreur_de_syntaxe] 47 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. Combien ?
 
 
     #include <stdio.h>
@@ -1055,7 +1055,7 @@ Combien y en a t-il ?
 + 2
 - 3
 
-*[group=erreur_de_syntaxe] 48 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. Combien ?
+*[nb=15,group=erreur_de_syntaxe] 48 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. Combien ?
 
 
     #include <stdio.h>
@@ -1077,41 +1077,41 @@ Combien y en a t-il ?
 + 2
 - 3
 
-**[group=for] 49 ) La parenthèse suivant un for
+**[nb=15,group=for] 49 ) La parenthèse suivant un for
 
 + contient obligatoirement et exactement 2 points virgules (;)
 - peut-être laissée vide
 - contient obligatoirement et exactement 3 points virgules (;)
 + peut contenir des expressions vides
 
-*[group=for] 50 ) La condition d'une boucle for est
+*[nb=15,group=for] 50 ) La condition d'une boucle for est
 
 - testée juste après l’exécution du bloc
 - toujours testée juste après l’évaluation de l’expression d’incrémentation
 + testée juste avant l’exécution du bloc
 - toujours testée une seule fois
 
-**[group=boucle_infinie] 51 ) On peut écrire une boucle infinie avec :
+**[nb=15,group=boucle_infinie] 51 ) On peut écrire une boucle infinie avec :
 
 + une boucle for
 + une boucle while
 + une boucle do while
 - impossible en C
 
-*[group=condition] 52 ) Le bloc d’une boucle est exécutée lorsque la condition est ...
+*[nb=15,group=condition] 52 ) Le bloc d’une boucle est exécutée lorsque la condition est ...
 
 + ... vraie
 - ... fausse
 - ... évaluée pour la deuxième fois
 
-*[group=break_dans_un_switch] 53 ) A quoi sert un break dans un switch ?
+*[nb=15,group=break_dans_un_switch] 53 ) A quoi sert un break dans un switch ?
 
 - à sortir du programme
 - à passer au test suivant
 + à sortir du switch
 - à décider du vainqueur
 
-*[group=resultatboucle] 54 ) Qu’affiche le programme suivant ?
+*[nb=15,group=resultatboucle] 54 ) Qu’affiche le programme suivant ?
 
 
     #include <stdio.h>
@@ -1137,7 +1137,7 @@ Combien y en a t-il ?
 - 11 lignes contenant chacune le caractère +
 - 10 lignes contenant chacune le caractère +
 
-*[group=resultatboucle] 55 ) Qu’affiche le programme suivant ?
+*[nb=15,group=resultatboucle] 55 ) Qu’affiche le programme suivant ?
 
 
     #include <stdio.h>
@@ -1165,7 +1165,7 @@ Combien y en a t-il ?
 - 11 lignes contenant chacune le caractère +
 + 10 lignes contenant chacune le caractère +
 
-*[group=resultatboucle] 56 ) Qu’affiche le programme suivant ?
+*[nb=15,group=resultatboucle] 56 ) Qu’affiche le programme suivant ?
 
 
     #include <stdio.h>
@@ -1191,7 +1191,7 @@ Combien y en a t-il ?
 + 11 lignes contenant chacune le caractère +
 - 10 lignes contenant chacune le caractère +
 
-*[group=boucle_while] 57 ) Qu’affiche le programme suivant ?
+*[nb=15,group=boucle_while] 57 ) Qu’affiche le programme suivant ?
 
 
     int main(){
@@ -1223,7 +1223,7 @@ Combien y en a t-il ?
 - 2 et 1
 - 1 et 1
 
-*[group=boucle_do_while] 58 ) Qu’affiche le programme suivant ?
+*[nb=15,group=boucle_do_while] 58 ) Qu’affiche le programme suivant ?
 
 
     int main(){
@@ -1249,7 +1249,7 @@ Combien y en a t-il ?
 - 6 et 4
 - 5 et 4
 
-*[group=boucle_for] 59 ) Qu’affiche le programme suivant ?
+*[nb=15,group=boucle_for] 59 ) Qu’affiche le programme suivant ?
 
 
     int main(){
@@ -1277,7 +1277,7 @@ Combien y en a t-il ?
 - 30
 - 20
 
-**[group=en-tete-fonction] 60 ) On souhaite définir une fonction stockant deux entiers saisis par l’utilisateur. 
+**[nb=15,group=en-tete-fonction] 60 ) On souhaite définir une fonction stockant deux entiers saisis par l’utilisateur. 
 Quelle sont les en-têtes possibles de cette fonction ?
 
 + void saisirDeuxEntiers(int *n, int *m)
@@ -1287,7 +1287,7 @@ Quelle sont les en-têtes possibles de cette fonction ?
 - int, int saisirDeuxEntiers(int *n, int *m)
 - int, int saisirDeuxEntiers(int n, int m)
 
-**[group=appel_fonction] 61 ) On suppose que n et m sont deux variables de type int et que l’on se donne des fonctions
+**[nb=15,group=appel_fonction] 61 ) On suppose que n et m sont deux variables de type int et que l’on se donne des fonctions
  dont les en-têtes sont `void f(int a, int *b)` et `int g(int c)`. 
  Parmi les instructions suivantes, lesquelles sont correctes ?
 
@@ -1300,7 +1300,7 @@ Quelle sont les en-têtes possibles de cette fonction ?
 
 # Catalogue 3 Prog C Olivier BOUILLOT
 
-**[group=Erreurs1] 62 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
+**[nb=15,group=Erreurs1] 62 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     #include <stdio.h>
@@ -1332,7 +1332,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - error: expected ’;’ after expression
 - Aucune erreur ou warning n’est générée à la compilation
 
-**[group=Erreurs1] 63 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
+**[nb=15,group=Erreurs1] 63 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     #include <stdio.h>
@@ -1366,7 +1366,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + error: expected ’;’ after expression
 - Aucune erreur ou warning n’est générée à la compilation
 
-**[group=Erreurs1] 64 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
+**[nb=15,group=Erreurs1] 64 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     #include <stdio.h>
@@ -1396,7 +1396,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + error: expected ’;’ after expression
 - Aucune erreur ou warning n’est générée à la compilation
 
-**[group=Erreurs1] 65 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
+**[nb=15,group=Erreurs1] 65 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     #include <stdio.h>
@@ -1430,7 +1430,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - error: expected ’;’ after expression
 - Aucune erreur ou warning n’est générée à la compilation
 
-**[group=Erreurs2] 66 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
+**[nb=15,group=Erreurs2] 66 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     #include <stdio.h>
@@ -1473,7 +1473,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - error: expected ’;’ after expression
 + Aucune erreur ou warning n’est générée à la compilation
 
-**[group=Erreurs2] 67 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
+**[nb=15,group=Erreurs2] 67 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     int main(void) {
@@ -1514,7 +1514,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - error: expected ’;’ after expression
 - Aucune erreur ou warning n’est générée à la compilation
 
-**[group=Erreurs2] 68 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
+**[nb=15,group=Erreurs2] 68 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     int main(void) {
@@ -1555,7 +1555,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + error: expected ’;’ after declaration
 - Aucune erreur ou warning n’est générée à la compilation
 
-**[group=Erreurs2] 69 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
+**[nb=15,group=Erreurs2] 69 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     int main(void) {
@@ -1598,7 +1598,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - error: expected ’;’ after declaration
 + Aucune erreur ou warning n’est générée à la compilation
 
-**[group=Transmission_par_adresse1] 70 ) Quelles sont, parmi les fonctions suivantes, celles qui peuvent modifier la valeur de l’un de leurs paramètres ?
+**[nb=15,group=Transmission_par_adresse1] 70 ) Quelles sont, parmi les fonctions suivantes, celles qui peuvent modifier la valeur de l’un de leurs paramètres ?
 
 + void absolue(int * n)
 - int absolue(int n)
@@ -1606,7 +1606,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - float sqrt(float x)
 - Aucune de ces réponses n’est correcte
 
-**[group=Transmission_par_adresse1] 71 ) Quelles sont, parmi les fonctions suivantes, celles qui peuvent modifier la valeur de l’un de leurs paramètres ?
+**[nb=15,group=Transmission_par_adresse1] 71 ) Quelles sont, parmi les fonctions suivantes, celles qui peuvent modifier la valeur de l’un de leurs paramètres ?
 
 + void absolue(int * n)
 + void carre(int * n)
@@ -1614,7 +1614,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - float sqrt(float x)
 - Aucune de ces réponses n’est correcte 
 
-**[group=Transmission_par_adresse1] 72 ) Quelles sont, parmi les fonctions suivantes, celles qui peuvent modifier la valeur de l’un de leurs paramètres ?
+**[nb=15,group=Transmission_par_adresse1] 72 ) Quelles sont, parmi les fonctions suivantes, celles qui peuvent modifier la valeur de l’un de leurs paramètres ?
 
 - int absolue(int n)
 + void absolue(int * n)
@@ -1622,7 +1622,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + void carre(int * n)
 - Aucune de ces réponses n’est correcte
 
-**[group=Transmission_par_adresse1] 73 ) Quelles sont, parmi les fonctions suivantes, celles qui peuvent modifier la valeur de l’un de leurs paramètres ?
+**[nb=15,group=Transmission_par_adresse1] 73 ) Quelles sont, parmi les fonctions suivantes, celles qui peuvent modifier la valeur de l’un de leurs paramètres ?
 
 + void sqrt(float * x)
 - float sqrt(float x)
@@ -1630,7 +1630,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - int carre(int n)
 - Aucune de ces réponses n’est correcte
 
-**[group=Transmission_par_adresse2] 74 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres ?
+**[nb=15,group=Transmission_par_adresse2] 74 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres ?
 
 - void absolue(int * n)
 + int absolue(int n)
@@ -1638,7 +1638,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + float sqrt(float x)
 - Aucune de ces réponses n’est correcte
 
-**[group=Transmission_par_adresse2] 75 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres ?
+**[nb=15,group=Transmission_par_adresse2] 75 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres ?
 
 - void absolue(int * n)
 + float absolue(int n)
@@ -1646,7 +1646,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + double absolue(int n)
 - Aucune de ces réponses n’est correcte
 
-**[group=Transmission_par_adresse2] 76 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres ?
+**[nb=15,group=Transmission_par_adresse2] 76 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres ?
 
 - void absolue(int * n)
 + int absolue(int n)
@@ -1654,7 +1654,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + float sqrt(float x)
 - Aucune de ces réponses n’est correcte
 
-**[group=Transmission_par_adresse2] 77 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres ?
+**[nb=15,group=Transmission_par_adresse2] 77 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres ?
 
 - void sqrt(float * x)
 + float sqrt(float x)
@@ -1662,19 +1662,19 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + int carre(int n)
 - Aucune de ces réponses n’est correcte
 
-** [group=Renvoie_dun_code_derreur1] 78 ) Dans quel cas peut-il être intéressant qu’une fonction `int foo(int n)` renvoie un code d’erreur ?
+** [nb=15,group=Renvoie_dun_code_derreur1] 78 ) Dans quel cas peut-il être intéressant qu’une fonction `int foo(int n)` renvoie un code d’erreur ?
 
 + La valeur du paramètre n n'est pas dans le bon ensemble de valeurs.
 - Lorsque le résultat de la fonction foo peut être n’importe quel entier. 
 - Jamais, cela ne sert à rien.
 
-** [group=Renvoie_dun_code_derreur2] 79 ) Dans quel cas peut-il être intéressant qu’une fonction `int foo(int n, int * resultat)` renvoie un code d’erreur ?
+** [nb=15,group=Renvoie_dun_code_derreur2] 79 ) Dans quel cas peut-il être intéressant qu’une fonction `int foo(int n, int * resultat)` renvoie un code d’erreur ?
 
 + Les valeurs des paramètres n et resultat ne sont pas dans le bon ensemble de valeurs.
 - Lorsque le résultat de la fonction foo peut être n’importe quel entier. 
 - Jamais, cela ne sert à rien.
 
-* [group=Pointeur_en_parametre_de_fonction] 80 ) On considère le code suivant:
+* [nb=15,group=Pointeur_en_parametre_de_fonction] 80 ) On considère le code suivant:
 
 
     void plusDeux(int *n){
@@ -1702,7 +1702,7 @@ Ce code est-il correct? S’il ne l’est pas, que faut-il modifier pour qu’il
 - Il faut écrire void plusDeux(int n) à la place de void plusDeux(int *n). 
 - Le code est correct.
 
-* [group=Fonction_avec_et_sans_pointeur] 81 ) Qu'affiche le programme suivant ?
+* [nb=15,group=Fonction_avec_et_sans_pointeur] 81 ) Qu'affiche le programme suivant ?
 
 
     int f(int n){
@@ -1738,7 +1738,7 @@ Ce code est-il correct? S’il ne l’est pas, que faut-il modifier pour qu’il
 - 1
 - 2
 
-** [group=difference_entre_affichage_et_retour_de_fonction] 82 ) Le code suivant devrait afficher et retourner la valeur 
+** [nb=15,group=difference_entre_affichage_et_retour_de_fonction] 82 ) Le code suivant devrait afficher et retourner la valeur 
 entière entrée par l’utilisateur, mais il est incorrect:
 
 
@@ -1760,7 +1760,7 @@ Parmi les propositions suivantes, lesquelles corrigent le code ?
 - On remplace le *n par n dans le printf.
 - On remplace le printf à la fin de la fonction f par return *n.
 
-** [group=difference_entre_affichage_et_retour_de_fonction] 83 ) Le code suivant devrait afficher et retourner la valeur 
+** [nb=15,group=difference_entre_affichage_et_retour_de_fonction] 83 ) Le code suivant devrait afficher et retourner la valeur 
 entière entrée par l’utilisateur, mais il est incorrect:
 
 
@@ -1782,7 +1782,7 @@ Parmi les propositions suivantes, lesquelles corrigent le code ?
 - On remplace le *n par n dans le printf.
 - On remplace le printf à la fin de la fonction f par return *n.
 
-* [group=fonction_divise_par_deux_entier] 84 ) On considère la fonction suivante :
+* [nb=15,group=fonction_divise_par_deux_entier] 84 ) On considère la fonction suivante :
 
 
     void diviseParDeux(int n){
@@ -1798,7 +1798,7 @@ Qu’affiche diviseParDeux(5)?
 - 2.0
 - 5
 
-* [group=Appel_et_prototype] 85 ) On considère la fonction suivante :
+* [nb=15,group=Appel_et_prototype] 85 ) On considère la fonction suivante :
 
 
     int n,truc,c;
@@ -1814,7 +1814,7 @@ Ces instructions sont correctes si la fonction f a pour prototype:
 - float f(int a,int b,float c)
 - float f(int n, int &c, int &x)
 
-* [group=Appel_et_prototype] 86 ) On veut écrire une fonction estPremier qui indique à la partie appellante si 
+* [nb=15,group=Appel_et_prototype] 86 ) On veut écrire une fonction estPremier qui indique à la partie appellante si 
 un nombre entier positif, transmis en paramètre est premier. Quel doit être le prototype de cette fonction ?
 
 + int estPremier(int a)
@@ -1822,7 +1822,7 @@ un nombre entier positif, transmis en paramètre est premier. Quel doit être le
 - int estPremier(int *a)
 - float estPremier(int n)
 
-* [group=Puissance] 87 ) On veut écrire une fonction puissanceEntiere qui calcule la valeur **x**<sup>**n**</sup> pour **x** un nombre 
+* [nb=15,group=Puissance] 87 ) On veut écrire une fonction puissanceEntiere qui calcule la valeur **x**<sup>**n**</sup> pour **x** un nombre 
 réel et **n** un entier positif. On veut pouvoir gérer le cas où la fonction ne peut effectuer le calcul 
 (si l’entier transmis en paramètre est négatif). Quel doit être le prototype de cette fonction ?
 
@@ -1831,21 +1831,21 @@ réel et **n** un entier positif. On veut pouvoir gérer le cas où la fonction 
 - void puissanceEntiere(float x,int n,float resultat)
 - void puissanceEntiere(float x,int n)
 
-* [group=Pile_d_execution] 88 ) La pile d’exécution est utilisée :
+* [nb=15,group=Pile_d_execution] 88 ) La pile d’exécution est utilisée :
 
 + lors de l’appel d’une fonction
 - lors de la compilation
 - lors d’un switch
 - lors de la pré-compilation
 
-* [group=Pile_d_execution] 89 ) La pile d’exécution est utilisée :
+* [nb=15,group=Pile_d_execution] 89 ) La pile d’exécution est utilisée :
 
 + lors de l’appel d’une fonction
 - lors de l’allocation des variables globales
 - pour controler la vitesse des boucles
 - lors de la compilation
 
-* [group=Parametre] 90 ) Les paramètres d’une fonction sont toujours transmis :
+* [nb=15,group=Parametre] 90 ) Les paramètres d’une fonction sont toujours transmis :
 
 + par adresse
 - au moment de la compilation
