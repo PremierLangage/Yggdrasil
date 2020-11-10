@@ -81,7 +81,6 @@ evaluator==#|python|
 from components import GraphDrawer
 from utils_binary_tree import *
 
-constraints=True
 feedback = """
 <style>
 .error-state{
@@ -98,34 +97,38 @@ try:
     viewer = GraphDrawer()
     viewer.graph = tree_student.to_dot_code_BST_point()
     feedback += f" \n\n <center><c-graph-viewer graph='{viewer.graph}'></c-graph-viewer></center> <br>"
+    constraints=True
 except:
     grade = (0, ''' <span class="error-state">Votre code textuel d'arbre est invalide.</span> <br><br>''')
-
-if tree_student.nb_nodes() == nb_nodes:
-    feedback+='<span class="success-state">Nombre de nœuds... OK</span> <br><br>'
-else:
     constraints=False
-    feedback+='<span class="error-state">Nombre de nœuds... erreur</span> <br><br>'
-
-if tree_student.height() == height:
-    feedback+='''<span class="success-state">Hauteur de l'arbre... OK</span> <br><br>'''
-else:
-    constraints=False
-    feedback+='''<span class="error-state">Hauteur de l'arbre... erreur</span> <br><br>'''
-
-if len(tree_student.leafs()) == nb_leaf:
-    feedback+='''<span class="success-state">Nombre de feuilles... OK</span> <br><br>'''
-else:
-    constraints=False
-    feedback+='''<span class="error-state">Nombre de feuilles... erreur</span> <br><br>'''
 
 if constraints:
-    feedback+=''' <span class="success-state">Bravo, cet arbre valide toutes les contraintes !</span> <br><br>'''
-    form = ""
-    grade = (100, feedback)
-else:
-    feedback+=''' <span class="error-state">Désolé, au moins une contrainte n'est pas validé.</span> <br><br>'''
-    grade = (0, feedback)
+    # Check number of nodes
+    if tree_student.nb_nodes() == nb_nodes:
+        feedback+='<span class="success-state">Nombre de nœuds... OK</span> <br><br>'
+    else:
+        constraints=False
+        feedback+='<span class="error-state">Nombre de nœuds... erreur</span> <br><br>'
+    # Check the height
+    if tree_student.height() == height:
+        feedback+='''<span class="success-state">Hauteur de l'arbre... OK</span> <br><br>'''
+    else:
+        constraints=False
+        feedback+='''<span class="error-state">Hauteur de l'arbre... erreur</span> <br><br>'''
+    # Check number of leafs
+    if len(tree_student.leafs()) == nb_leaf:
+        feedback+='''<span class="success-state">Nombre de feuilles... OK</span> <br><br>'''
+    else:
+        constraints=False
+        feedback+='''<span class="error-state">Nombre de feuilles... erreur</span> <br><br>'''
+
+    if constraints:
+        feedback+=''' <span class="success-state">Bravo, cet arbre valide toutes les contraintes !</span> <br><br>'''
+        form = ""
+        grade = (100, feedback)
+    else:
+        feedback+=''' <span class="error-state">Désolé, au moins une contrainte n'est pas validé.</span> <br><br>'''
+        grade = (0, feedback)
 ==
 
 
