@@ -7,7 +7,7 @@ textstep ==
 
 title= Compréhension de code 
 
-questions=
+questions==
 
 =*+ Exo avec click sur un mot ici bonne est le bon mot 
  Vous  pouvez en mettre plusieurs séparer vos mots par des espace 
