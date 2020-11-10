@@ -6,8 +6,14 @@ Les tags sont séparés par |
 
 Liste des tags : 
 
-## Ex1 : 
+## Ex1 : Ajout d'éléments dans une liste
 
 @ /ComputerScience/python/AP1-2021/Chapitre_Iterables/ajoute_liste.pl
 
-tag = list|
+tag = list|append
+
+**Commentaire**
+
+- Exo simple pour faire ajouter un élément
+
+## Ex2 : 
