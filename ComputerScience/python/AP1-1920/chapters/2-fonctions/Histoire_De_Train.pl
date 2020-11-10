@@ -38,14 +38,14 @@ def temps_mis(v, d):
     return d / v
 
 def sauvetage(v_train, dist_O_A, v_S, d_S):
-    return temps_mis(v_train, dist_O_A) > temps_mis(v_S, d_S)
+    return temps_mis(v_train, dist_O_A - 1) > temps_mis(v_S, d_S)
 ==
 before==
 def temps_mis(v, d):
     return d / v
 
 def sauvetage(v_train, dist_O_A, v_S, d_S):
-    return temps_mis(v_train, dist_O_A) > temps_mis(v_S, d_S)
+    return temps_mis(v_train, dist_O_A - 1) > temps_mis(v_S, d_S)
 
 import random
 vt=random.randint (14,250)
