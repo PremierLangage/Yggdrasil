@@ -1,7 +1,3 @@
-
-
-
-
 # author zip
 # Heritage d'un type d'exercice 
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
@@ -9,27 +5,28 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title =Triangle chaine
 text==  
-Modifier les fonctions de l'exercice TriangleEtoile pour que l'utilisateur choisisse la chaine à répéter. <br> 
-Vous devez transformer la fonction `ligne-etoiles(n)` en `ligne(n,ch)` et la fonction `triangle_etoiles(n)` en `triangle(n,ch)`
-`
-Exemple<br>
-
-print(triangle(3,'\*'))
+Modifier les fonctions de l'exercice `Triangle étoile` pour que
+l'utilisateur choisisse la chaine à répéter. <br> 
 <br>
-\*<br>
-\*+\*\*<br>
-\*+\*\*+\*\*\*<br>
-\*+\*\*<br>
-\*<br>
+Vous devez transformer la fonction `ligne_etoiles(n)` en `ligne(n, ch)`
+et la fonction `triangle_etoiles(n)` en `triangle(n, ch)`.<br>
 <br>
-
-print(triangle(3,'to'))<br>
+**Exemple :**<br>
 <br>
-to <br>
-to+toto <br>
-to+toto+tototo <br>
-to+toto <br>
-to <br>
+`>>> print(triangle(3,'\*'))`<br>
+<br>
+`*`<br>
+`*+**`<br>
+`*+**+***`<br>
+`*+**`<br>
+`*`<br>
+`>>> print(triangle(3,'to'))`<br>
+<br>
+`to` <br>
+`to+toto` <br>
+`to+toto+tototo` <br>
+`to+toto` <br>
+`to` <br>
 <br>
 ==
 
@@ -103,6 +100,7 @@ pltest1==
 >>> triangle(2,'r2d2')
 '\nr2d2\nr2d2+r2d2r2d2\nr2d2\n'
 ==
+
 
 
 
