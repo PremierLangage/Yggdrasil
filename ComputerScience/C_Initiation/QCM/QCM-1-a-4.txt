@@ -953,7 +953,7 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 - 0  1
 - 1
 
-*[nb=15,group=Comprehension_de_code] 44 ) Quel est le rendu lors de l’exécution du programme suivant ?
+*[nb=6,group=Comprehension_de_code] 44 ) Quel est le rendu lors de l’exécution du programme suivant ?
 
 
     #include <stdio.h>
@@ -981,7 +981,7 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 + 0  1
 - 1
 
-*[nb=15,group=Comprehension_de_code] 45 ) Quel est le rendu lors de l’exécution du programme suivant ?
+*[nb=6,group=Comprehension_de_code] 45 ) Quel est le rendu lors de l’exécution du programme suivant ?
 
 
     #include <stdio.h>
@@ -1009,7 +1009,7 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 - 0  1
 - 1
 
-*[nb=15,group=erreur_de_syntaxe] 46 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. Combien ?
+*[nb=4,group=erreur_de_syntaxe] 46 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. Combien ?
 
 
     #include <stdio.h>
@@ -1033,7 +1033,7 @@ Combien y en a t-il ?
 - 2
 - 3
 
-*[nb=15,group=erreur_de_syntaxe] 47 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. Combien ?
+*[nb=4,group=erreur_de_syntaxe] 47 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. Combien ?
 
 
     #include <stdio.h>
@@ -1055,7 +1055,7 @@ Combien y en a t-il ?
 + 2
 - 3
 
-*[nb=15,group=erreur_de_syntaxe] 48 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. Combien ?
+*[nb=4,group=erreur_de_syntaxe] 48 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. Combien ?
 
 
     #include <stdio.h>
@@ -1077,41 +1077,41 @@ Combien y en a t-il ?
 + 2
 - 3
 
-**[nb=15,group=for] 49 ) La parenthèse suivant un for
+**[nb=4,group=for] 49 ) La parenthèse suivant un for
 
 + contient obligatoirement et exactement 2 points virgules (;)
 - peut-être laissée vide
 - contient obligatoirement et exactement 3 points virgules (;)
 + peut contenir des expressions vides
 
-*[nb=15,group=for] 50 ) La condition d'une boucle for est
+*[nb=4,group=for] 50 ) La condition d'une boucle for est
 
 - testée juste après l’exécution du bloc
 - toujours testée juste après l’évaluation de l’expression d’incrémentation
 + testée juste avant l’exécution du bloc
 - toujours testée une seule fois
 
-**[nb=15,group=boucle_infinie] 51 ) On peut écrire une boucle infinie avec :
+**[nb=4,group=boucle_infinie] 51 ) On peut écrire une boucle infinie avec :
 
 + une boucle for
 + une boucle while
 + une boucle do while
 - impossible en C
 
-*[nb=15,group=condition] 52 ) Le bloc d’une boucle est exécutée lorsque la condition est ...
+*[nb=3,group=condition] 52 ) Le bloc d’une boucle est exécutée lorsque la condition est ...
 
 + ... vraie
 - ... fausse
 - ... évaluée pour la deuxième fois
 
-*[nb=15,group=break_dans_un_switch] 53 ) A quoi sert un break dans un switch ?
+*[nb=4,group=break_dans_un_switch] 53 ) A quoi sert un break dans un switch ?
 
 - à sortir du programme
 - à passer au test suivant
 + à sortir du switch
 - à décider du vainqueur
 
-*[nb=15,group=resultatboucle] 54 ) Qu’affiche le programme suivant ?
+*[nb=6,group=resultatboucle] 54 ) Qu’affiche le programme suivant ?
 
 
     #include <stdio.h>
@@ -1137,7 +1137,7 @@ Combien y en a t-il ?
 - 11 lignes contenant chacune le caractère +
 - 10 lignes contenant chacune le caractère +
 
-*[nb=15,group=resultatboucle] 55 ) Qu’affiche le programme suivant ?
+*[nb=6,group=resultatboucle] 55 ) Qu’affiche le programme suivant ?
 
 
     #include <stdio.h>
@@ -1165,7 +1165,7 @@ Combien y en a t-il ?
 - 11 lignes contenant chacune le caractère +
 + 10 lignes contenant chacune le caractère +
 
-*[nb=15,group=resultatboucle] 56 ) Qu’affiche le programme suivant ?
+*[nb=6,group=resultatboucle] 56 ) Qu’affiche le programme suivant ?
 
 
     #include <stdio.h>
@@ -1191,7 +1191,7 @@ Combien y en a t-il ?
 + 11 lignes contenant chacune le caractère +
 - 10 lignes contenant chacune le caractère +
 
-*[nb=15,group=boucle_while] 57 ) Qu’affiche le programme suivant ?
+*[nb=4,group=boucle_while] 57 ) Qu’affiche le programme suivant ?
 
 
     int main(){
@@ -1223,7 +1223,7 @@ Combien y en a t-il ?
 - 2 et 1
 - 1 et 1
 
-*[nb=15,group=boucle_do_while] 58 ) Qu’affiche le programme suivant ?
+*[nb=4,group=boucle_do_while] 58 ) Qu’affiche le programme suivant ?
 
 
     int main(){
@@ -1249,7 +1249,7 @@ Combien y en a t-il ?
 - 6 et 4
 - 5 et 4
 
-*[nb=15,group=boucle_for] 59 ) Qu’affiche le programme suivant ?
+*[nb=4,group=boucle_for] 59 ) Qu’affiche le programme suivant ?
 
 
     int main(){
@@ -1277,7 +1277,7 @@ Combien y en a t-il ?
 - 30
 - 20
 
-**[nb=15,group=en-tete-fonction] 60 ) On souhaite définir une fonction stockant deux entiers saisis par l’utilisateur. 
+**[nb=6,group=en-tete-fonction] 60 ) On souhaite définir une fonction stockant deux entiers saisis par l’utilisateur. 
 Quelle sont les en-têtes possibles de cette fonction ?
 
 + void saisirDeuxEntiers(int *n, int *m)
@@ -1287,7 +1287,7 @@ Quelle sont les en-têtes possibles de cette fonction ?
 - int, int saisirDeuxEntiers(int *n, int *m)
 - int, int saisirDeuxEntiers(int n, int m)
 
-**[nb=15,group=appel_fonction] 61 ) On suppose que n et m sont deux variables de type int et que l’on se donne des fonctions
+**[nb=6,group=appel_fonction] 61 ) On suppose que n et m sont deux variables de type int et que l’on se donne des fonctions
  dont les en-têtes sont `void f(int a, int *b)` et `int g(int c)`. 
  Parmi les instructions suivantes, lesquelles sont correctes ?
 
@@ -1300,7 +1300,7 @@ Quelle sont les en-têtes possibles de cette fonction ?
 
 # Catalogue 3 Prog C Olivier BOUILLOT
 
-**[nb=15,group=Erreurs1] 62 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
+**[nb=8,group=Erreurs1] 62 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     #include <stdio.h>
@@ -1332,7 +1332,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - error: expected ’;’ after expression
 - Aucune erreur ou warning n’est générée à la compilation
 
-**[nb=15,group=Erreurs1] 63 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
+**[nb=8,group=Erreurs1] 63 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     #include <stdio.h>
@@ -1366,7 +1366,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + error: expected ’;’ after expression
 - Aucune erreur ou warning n’est générée à la compilation
 
-**[nb=15,group=Erreurs1] 64 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
+**[nb=8,group=Erreurs1] 64 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     #include <stdio.h>
@@ -1396,7 +1396,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + error: expected ’;’ after expression
 - Aucune erreur ou warning n’est générée à la compilation
 
-**[nb=15,group=Erreurs1] 65 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
+**[nb=8,group=Erreurs1] 65 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     #include <stdio.h>
@@ -1430,7 +1430,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - error: expected ’;’ after expression
 - Aucune erreur ou warning n’est générée à la compilation
 
-**[nb=15,group=Erreurs2] 66 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
+**[nb=9,group=Erreurs2] 66 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     #include <stdio.h>
@@ -1473,7 +1473,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - error: expected ’;’ after expression
 + Aucune erreur ou warning n’est générée à la compilation
 
-**[nb=15,group=Erreurs2] 67 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
+**[nb=9,group=Erreurs2] 67 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     int main(void) {
@@ -1514,7 +1514,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - error: expected ’;’ after expression
 - Aucune erreur ou warning n’est générée à la compilation
 
-**[nb=15,group=Erreurs2] 68 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
+**[nb=9,group=Erreurs2] 68 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     int main(void) {
