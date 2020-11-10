@@ -110,6 +110,12 @@ else:
     constraints=False
     feedback+='''<span class="error-state">Hauteur de l'arbre... erreur</span> <br><br>'''
 
+if len(tree_student.leafs()) == nb_leaf:
+    feedback+='''<span class="success-state">Nombre de feuilles... OK</span> <br><br>'''
+else:
+    constraints=False
+    feedback+='''<span class="error-state">Nombre de feuilles... erreur</span> <br><br>'''
+
 if constraints:
     feedback+=''' <span class="success-state">Bravo, cet arbre valide toutes les contraintes !</span> <br><br>'''
     form = ""
