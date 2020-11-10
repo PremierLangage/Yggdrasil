@@ -13,7 +13,7 @@ Ci-dessous, une description de chaque exercice et des changements effectués par
 
 # Exercice 1
 tag=list
-@ /ComputerScience/python/AP1-2021/chapitre3/factorielle.pl
+@ /ComputerScience/python/AP1-2021/chapitreListe/template.pl
 
 
 
