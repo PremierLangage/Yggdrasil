@@ -9,7 +9,7 @@ Ceci est le document de travail pour le TP en autonomie sur PLaTon correspondant
 
 Ci-dessous, une description de chaque exercice et des changements effectués par rapport à la mouture précédente (ainsi que quelques commentaires).
 
-# Exercice 1
+# Exercice Template
 tag=list
 @ /ComputerScience/python/AP1-2021/chapitreListe/template.pl
 
