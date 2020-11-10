@@ -1,4 +1,4 @@
-Ceci est le document de travail pour la mouture 2021 du TP en autonomie sur PLaTon correspondant aux notions vues au Chapitre 3 (Boucles et boucles imbriquées).
+Ceci est le document de travail pour le TP en autonomie sur PLaTon correspondant aux notions vues au Chapitre 3 (Boucles et boucles imbriquées).
 
 **Notes:**
 
