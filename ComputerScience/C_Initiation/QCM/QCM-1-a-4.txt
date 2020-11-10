@@ -90,7 +90,7 @@ Combien y en a t'il ?
 - les virgules
 - les points virgules 
 
-**[nb=6,group=indentation] 6 ) L'indentation d'un programme C ...
+**[nb=5,group=indentation] 6 ) L'indentation d'un programme C ...
 
 - ...permet au compilateur de reconnaitre les blocs
 - ...est nécessaire pour l'éditeur de texte
@@ -336,7 +336,7 @@ Quelles sont-elles ?
 - Aucune des ces lignes
 - 11
 
-**[nb=6,group=Sans_Effet_de_bords] 24 ) Parmi le code suivant, un certain nombre d'instructions ne modifient pas les 
+**[nb=5,group=Sans_Effet_de_bords] 24 ) Parmi le code suivant, un certain nombre d'instructions ne modifient pas les 
 variables locales du programme.
 
 
