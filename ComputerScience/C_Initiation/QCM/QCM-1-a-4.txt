@@ -162,7 +162,7 @@ en un executable HelloWorld ?
 - gcc -Ansi -wall HelloWorld.c -o HelloWorld
 + aucune de ces réponse
 
-**[group=Warning_floattant] 14 ) On dispose de deux variables a et b. Dans quels cas,lors de l'exécution d'un 
+**[group=Warning_flottant] 14 ) On dispose de deux variables a et b. Dans quels cas,lors de l'exécution d'un 
 programme calcul.c, peut-on constater que a + b == a ?
 
 - Cela ne peut jamais arriver.
@@ -171,13 +171,13 @@ programme calcul.c, peut-on constater que a + b == a ?
 - Lorsque a et b sont des flottants, cela arrive tout le temps.
 - Aucune de ces réponses n'est correcte.
 
-**[group=Warning_floattant] 15 ) On dispose de deux variables a et b. Dans quels cas,lors de l'exécution d'un 
+**[group=Warning_flottant] 15 ) On dispose de deux variables a et b. Dans quels cas,lors de l'exécution d'un 
 programme calcul.c, peut-on constater que a + b == a ?
 
 - Lorsque a et b sont des entiers, cela arrive tout le temps.
-- Lorsque a et b sont des floottants, cela arrive tout le temps.
+- Lorsque a et b sont des flottants, cela arrive tout le temps.
 + Lorsque a et b sont des entiers, cela peut arriver.
-+ Lorsque a et b sont des floottants, cela peut arriver.
++ Lorsque a et b sont des flottants, cela peut arriver.
 - Aucune de ces réponses n'est correcte.
 
 **[group=Division] 16 ) Que vaut 3/2 en C ?
