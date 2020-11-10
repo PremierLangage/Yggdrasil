@@ -118,7 +118,8 @@ nbstep = len(list_questions)
 
 comp = []
 statement  = []
-rd.shuffle(list_questions)
+if "shuffle" in globals():
+    rd.shuffle(list_questions)
 for i, q in enumerate(list_questions):
     q=buildquestion(q) # Gestion de l'aléa 
     if q['type'] == "Radio":
@@ -161,6 +162,7 @@ formstep ==
 evaluatorstep ==
 score = comp[step].eval()
 ==
+
 
 
 
