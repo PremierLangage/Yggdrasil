@@ -81,27 +81,27 @@ amis = ??(input("Combien d'amis?"))
 ==
 
 soluce==#|python|
-def amende(p,c,v,a):
-    points_perdus=p+5*c+10*v+30*a
-    apayer=50*points_perdus
-    if (points_perdus>=100):
-        points_perdus = 100
-    return (apayer,points_perdus)
+def amende(poules, chiens, vaches, amis):
+    nb_points = poules + 5 * chiens + 10 * vaches + 30 * amis
+    amende = nb_points * 50
+    if nb_points > 100:
+        nb_points = 100
+    return amende, nb_points
 
 #programme principal------------------
-poules=int(input("Combien de poules?"))
-chiens=int(input("Combien de chiens?"))
-vaches=int(input("Combien de vaches?"))
-amis=int(input("Combien d'amis?"))
+poules = int(input("Combien de poules?"))
+chiens = int(input("Combien de chiens?"))
+vaches = int(input("Combien de vaches?"))
+amis = int(input("Combien d'amis?"))
 
-payer,points=amende(poules,chiens,vaches,amis)
+amende, points = amende(poules, chiens, vaches, amis)
 
-print("Payer",payer, "euros.")
+print("Payez", amende, "euros.")
 
-if points==100:
+if points == 100:
     print("Permis annulé")
 else:
-    print("Points perdus :",points)
+    print("Points perdus :", points)
 ==
 
 mplsoluce0==
