@@ -31,3 +31,5 @@ indexs = [ i for i,x in enumerate(solution) if x==solutionvalue ]
 
 ==
 
+
+
