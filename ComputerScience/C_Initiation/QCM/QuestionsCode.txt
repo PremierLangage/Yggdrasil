@@ -10,6 +10,7 @@ Latex:1
 - ...peut remplacer les accolades
 - ...évite d'utiliser des ;
 
+
 ** [nbg=3,group=separateur] 5 ) Quels sont les séparateurs dans un programme écrit en C
 
 + les espaces
