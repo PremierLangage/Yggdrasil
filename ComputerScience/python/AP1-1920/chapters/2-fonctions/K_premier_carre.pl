@@ -18,6 +18,7 @@ text==
 2.  Programmer ensuite une fonction **premiers_carres** qui : <br>
     * prend en paramètre un entier $%k%$ ; <br>
     * imprime les k premiers carrés de $%0%$ à $%(k - 1)^2%$. <br>
+<br>
 
 3.  Pour finir écrivez un programme qui demande à l'utilisateur
 un entier, appelle la fonction `premiers_carres` et imprime le résultat attendu.<br>
@@ -69,6 +70,7 @@ mplsoluce3==
 nul
 0
 ==
+
 
 
 
