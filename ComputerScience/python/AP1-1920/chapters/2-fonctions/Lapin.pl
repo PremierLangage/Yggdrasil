@@ -83,11 +83,11 @@ def lapin(mois):
 
 import random, sys
 
-pltest2=""">>> lapin({})\n{}""".format(4, lapin(4))
+pltest3=""">>> lapin({})\n{}""".format(4, lapin(4))
 
 n=random.randint(44,88)
 
-pltest3=""">>> lapin({})\n{}""".format(n, lapin(n))
+pltest4=""">>> lapin({})\n{}""".format(n, lapin(n))
 ==
 
 after==
@@ -129,13 +129,13 @@ bb==
 
 
 
-pltest0==
+pltest1==
 >>> 
 lapin(12)
 60
 ==
 
-pltest1==
+pltest2==
 >>>
 lapin(-1)
 0
