@@ -68,7 +68,7 @@ caractéristiques suivantes :
 
 * Il possède **{{ nb_nodes }} nœuds**.
 * Il est de **hauteur {{ height }}**.
-* Il possède **{{ }} feuilles**.
+* Il possède **{{ nb_leaf_str }}**.
 
 
 ==
