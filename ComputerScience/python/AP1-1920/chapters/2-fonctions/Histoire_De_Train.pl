@@ -33,22 +33,11 @@ Serai-je sauvé* ?<br>
 <br>
 ==
 Xeditor.code==
+def temps_mis(v, d):
+    return d / v
 
-def temps_mis(v,d):
-    """retourne le temps en heure mn pour parcourir km à la vitesse v."""
-    heure =int(d/v)
-    minute= (60 * d//v) % 60
-    return heure,minute
-
-def sauvetage(vt,dt,vs,ds):
-    ht,mt=temps_mis(vt,dt)
-    hs,ms=temps_mis(vs,ds)
-    if ht<hs or (ht==hs and mt<ms):
-        return False
-    else:
-        return True
-    
-
+def sauvetage(v_train, dist_O_A, v_S, d_S):
+    return temps_mis(v_train, dist_O_A) > temps_mis(v_S, d_S)
 ==
 before==
 def temps_mis(v, d):
