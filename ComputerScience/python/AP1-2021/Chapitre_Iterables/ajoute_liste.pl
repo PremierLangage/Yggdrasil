@@ -15,6 +15,8 @@ Par exemple, ``tab3(['toto'], 3)`` doit modifier ``['toto']`` en ``['toto', 3, 6
 taboo: Ne pas utiliser la fonction <font style="color:red;">{{taboo}}</font> des listes.
 ==
 
+tag=append|mutable|reference
+
 taboo=extend
 
 before==
