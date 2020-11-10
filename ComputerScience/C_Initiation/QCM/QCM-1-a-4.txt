@@ -1598,7 +1598,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - error: expected ’;’ after declaration
 + Aucune erreur ou warning n’est générée à la compilation
 
-**[nb=15,group=Transmission_par_adresse1] 70 ) Quelles sont, parmi les fonctions suivantes, celles qui peuvent modifier la valeur de l’un de leurs paramètres ?
+**[nb=5,group=Transmission_par_adresse1] 70 ) Quelles sont, parmi les fonctions suivantes, celles qui peuvent modifier la valeur de l’un de leurs paramètres ?
 
 + void absolue(int * n)
 - int absolue(int n)
@@ -1606,7 +1606,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - float sqrt(float x)
 - Aucune de ces réponses n’est correcte
 
-**[nb=15,group=Transmission_par_adresse1] 71 ) Quelles sont, parmi les fonctions suivantes, celles qui peuvent modifier la valeur de l’un de leurs paramètres ?
+**[nb=5,group=Transmission_par_adresse1] 71 ) Quelles sont, parmi les fonctions suivantes, celles qui peuvent modifier la valeur de l’un de leurs paramètres ?
 
 + void absolue(int * n)
 + void carre(int * n)
@@ -1622,7 +1622,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + void carre(int * n)
 - Aucune de ces réponses n’est correcte
 
-**[nb=15,group=Transmission_par_adresse1] 73 ) Quelles sont, parmi les fonctions suivantes, celles qui peuvent modifier la valeur de l’un de leurs paramètres ?
+**[nb=5,group=Transmission_par_adresse1] 73 ) Quelles sont, parmi les fonctions suivantes, celles qui peuvent modifier la valeur de l’un de leurs paramètres ?
 
 + void sqrt(float * x)
 - float sqrt(float x)
@@ -1630,7 +1630,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - int carre(int n)
 - Aucune de ces réponses n’est correcte
 
-**[nb=15,group=Transmission_par_adresse2] 74 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres ?
+**[nb=5,group=Transmission_par_adresse2] 74 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres ?
 
 - void absolue(int * n)
 + int absolue(int n)
@@ -1638,7 +1638,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + float sqrt(float x)
 - Aucune de ces réponses n’est correcte
 
-**[nb=15,group=Transmission_par_adresse2] 75 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres ?
+**[nb=5,group=Transmission_par_adresse2] 75 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres ?
 
 - void absolue(int * n)
 + float absolue(int n)
@@ -1646,7 +1646,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + double absolue(int n)
 - Aucune de ces réponses n’est correcte
 
-**[nb=15,group=Transmission_par_adresse2] 76 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres ?
+**[nb=5,group=Transmission_par_adresse2] 76 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres ?
 
 - void absolue(int * n)
 + int absolue(int n)
@@ -1654,7 +1654,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + float sqrt(float x)
 - Aucune de ces réponses n’est correcte
 
-**[nb=15,group=Transmission_par_adresse2] 77 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres ?
+**[nb=5,group=Transmission_par_adresse2] 77 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres ?
 
 - void sqrt(float * x)
 + float sqrt(float x)
@@ -1662,19 +1662,19 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + int carre(int n)
 - Aucune de ces réponses n’est correcte
 
-**[nb=15,group=Renvoie_dun_code_derreur1] 78 ) Dans quel cas peut-il être intéressant qu’une fonction `int foo(int n)` renvoie un code d’erreur ?
+**[nb=3,group=Renvoie_dun_code_derreur1] 78 ) Dans quel cas peut-il être intéressant qu’une fonction `int foo(int n)` renvoie un code d’erreur ?
 
 + La valeur du paramètre n n'est pas dans le bon ensemble de valeurs.
 - Lorsque le résultat de la fonction foo peut être n’importe quel entier. 
 - Jamais, cela ne sert à rien.
 
-**[nb=15,group=Renvoie_dun_code_derreur2] 79 ) Dans quel cas peut-il être intéressant qu’une fonction `int foo(int n, int * resultat)` renvoie un code d’erreur ?
+**[nb=3,group=Renvoie_dun_code_derreur2] 79 ) Dans quel cas peut-il être intéressant qu’une fonction `int foo(int n, int * resultat)` renvoie un code d’erreur ?
 
 + Les valeurs des paramètres n et resultat ne sont pas dans le bon ensemble de valeurs.
 - Lorsque le résultat de la fonction foo peut être n’importe quel entier. 
 - Jamais, cela ne sert à rien.
 
-* [nb=15,group=Pointeur_en_parametre_de_fonction] 80 ) On considère le code suivant:
+* [nb=4,group=Pointeur_en_parametre_de_fonction] 80 ) On considère le code suivant:
 
 
     void plusDeux(int *n){
