@@ -2530,7 +2530,7 @@ quelles lignes sont incorrectes ?
 + 6
 - aucune de celles-ci
 
-** [nb=15,group=fonction_tableau_pointeur_PH] 118 ) Dans la fonction suivante (remplissant depuis le clavier un tableau tab de taille taille), 
+** [nb=5,group=fonction_tableau_pointeur_PH] 118 ) Dans la fonction suivante (remplissant depuis le clavier un tableau tab de taille taille), 
 quelles lignes sont incorrectes ?
 
 
