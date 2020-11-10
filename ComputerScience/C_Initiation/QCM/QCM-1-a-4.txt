@@ -90,7 +90,7 @@ Combien y en a t'il ?
 - les virgules
 - les points virgules 
 
-**[group=indentation] 6 ) L'indentation d'un programme C ...
+**[nb=6,group=indentation] 6 ) L'indentation d'un programme C ...
 
 - ...permet au compilateur de reconnaitre les blocs
 - ...est nécessaire pour l'éditeur de texte
@@ -98,14 +98,14 @@ Combien y en a t'il ?
 - ...peut remplacer les accolades
 - ...évite d'utiliser des ;
 
-*[group=commentaire] 7 ) Comment doivent être écrits les commentaires en C pour passer la norme ansi ?
+*[nb=4,group=commentaire] 7 ) Comment doivent être écrits les commentaires en C pour passer la norme ansi ?
 
 - # ....
 - // .... //
 + /* .....*/
 - <! ... >
 
-*[group=passage_a_la_ligne] 8 ) Quel est le caractère permettant d'afficher un retour à la ligne en C ?
+*[nb=5,group=passage_a_la_ligne] 8 ) Quel est le caractère permettant d'afficher un retour à la ligne en C ?
 
 + \n
 - \t
@@ -113,20 +113,20 @@ Combien y en a t'il ?
 - \c
 - ;
 
-*[group=affichage_Sortie_Standard] 9 ) Quelle est l'instruction permettant d'afficher à l'écran une chaine de caractères en C ?
+*[nb=4,group=affichage_Sortie_Standard] 9 ) Quelle est l'instruction permettant d'afficher à l'écran une chaine de caractères en C ?
 
 - print
 - scanf
 - println
 + printf
 
-*[group=utilite_points_virgules] 10 ) A quoi servent les points virgules en C ?
+*[nb=3,group=utilite_points_virgules] 10 ) A quoi servent les points virgules en C ?
 
 - À différencier du premier coup d'oeil un code écris en C et en Python
 + À indiquer au compilateur la fin d'une instruction simple 
 - À indiquer au compilateur qu'il va lui falloir lire une nouvelle ligne
 
-**[group=Compilation] 11 ) Quelle(s) ligne(s) de commande permet(tent) de compiler le programme HelloWorld.c 
+**[nb=8,group=Compilation] 11 ) Quelle(s) ligne(s) de commande permet(tent) de compiler le programme HelloWorld.c 
 en un executable HelloWorld ?
 
 + gcc HelloWorld.c -o HelloWorld
@@ -138,7 +138,7 @@ en un executable HelloWorld ?
 - gcc -ansi -wall HelloWorld.c HelloWorld 
 - aucune de ces réponses
 
-**[group=Compilation] 12 ) Quelle(s) ligne(s) de commande permet(tent) de compiler le programme HelloWorld.c 
+**[nb=8,group=Compilation] 12 ) Quelle(s) ligne(s) de commande permet(tent) de compiler le programme HelloWorld.c 
 en un executable HelloWorld ?
 
 - gcc HelloWorld.c HelloWorld
@@ -150,7 +150,7 @@ en un executable HelloWorld ?
 - gcc -Ansi -wall HelloWorld.c -o HelloWorld
 - aucune de ces réponses
 
-**[group=Compilation] 13 ) Quelle(s) ligne(s) de commande permet(tent) de compiler le programme HelloWorld.c 
+**[nb=8,group=Compilation] 13 ) Quelle(s) ligne(s) de commande permet(tent) de compiler le programme HelloWorld.c 
 en un executable HelloWorld ?
 
 - gcc HelloWorld.c HelloWorld
@@ -162,7 +162,7 @@ en un executable HelloWorld ?
 - gcc -Ansi -wall HelloWorld.c -o HelloWorld
 + aucune de ces réponse
 
-**[group=Warning_flottant] 14 ) On dispose de deux variables a et b. Dans quels cas,lors de l'exécution d'un 
+**[nb=5,group=Warning_flottant] 14 ) On dispose de deux variables a et b. Dans quels cas,lors de l'exécution d'un 
 programme calcul.c, peut-on constater que a + b == a ?
 
 - Cela ne peut jamais arriver.
