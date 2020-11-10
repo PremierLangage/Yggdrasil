@@ -19,8 +19,5 @@ for item in match.nodes:
         content=item['content']
         #item['content']=f'<audio controls><source src="http://monge.univ-mlv.fr/~dr/flac/{content}"></audio>'
 
-
-text+=str(match.nodes)
-
 ==
 
