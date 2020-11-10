@@ -90,7 +90,7 @@ feedback = """
 tree_student=binary_tree_from_code(inputbox.value.replace(' ', ''))
 viewer = GraphDrawer()
 viewer.graph = tree_student.to_dot_code_BST_point()
-feedback += f" \n\n <c-graph-viewer graph='{viewer.graph}'></c-graph-viewer> <br><br>"
+feedback += f" \n\n <c-graph-viewer graph='{viewer.graph}'></c-graph-viewer> <br>"
 
 if tree_student.nb_nodes() == nb_nodes:
     feedback+='<span class="success-state">Nombre de nœuds... OK</span> <br><br>'
