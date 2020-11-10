@@ -7,6 +7,9 @@ textstep ==
 
 title= Compréhension de code 
 
+text=
+onepergroup % false
+
 questions==
 
 =*+ Exo avec click sur un mot ici bonne est le bon mot 
