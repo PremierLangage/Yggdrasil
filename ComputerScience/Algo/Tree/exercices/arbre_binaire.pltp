@@ -38,6 +38,7 @@ typedef struct node{
 Un arbre `Tree` en C sera donc un pointeur vers son premier nœud de type `Node`.
 ==
 
+
 @ /ComputerScience/Algo/Tree/exercices/statistic_bin_tree.pl
 
 @ /ComputerScience/Algo/Tree/exercices/traversal_bin_tree.pl
