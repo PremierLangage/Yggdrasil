@@ -1896,7 +1896,7 @@ si l’utilisateur entre : x y z t
 - xyzt
 - entraine une erreur à l’exécution
 
-* [nb=15,group=Lecture_De_Char] 93 ) Qu’affiche le programme :
+* [nb=5,group=Lecture_De_Char] 93 ) Qu’affiche le programme :
 
 
     int main(void){
