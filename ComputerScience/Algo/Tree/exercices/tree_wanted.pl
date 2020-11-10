@@ -63,8 +63,8 @@ text==#|markdown|
 
 On recherche un arbre ! Vous devez trouver cet arbre ! Pour le décrire, vous 
 devrez donner son codage textuel en faisant le parcours profondeur préfixe 
-en notant une lettre puis l'étiquette pour chaque nœud. Comme il y a quatre 
-types de nœuds, il y a quatre lettre possible :
+en notant une lettre puis l'étiquette (un nombre entier) pour chaque nœud. 
+Comme il y a quatre types de nœuds, il y a quatre lettres possibles :
 
 * `d` pour les nœuds ayant deux fils
 * `l` pour les nœuds ayant uniquement un fils gauche
