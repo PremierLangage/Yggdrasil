@@ -1555,7 +1555,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 + error: expected ’;’ after declaration
 - Aucune erreur ou warning n’est générée à la compilation
 
-**[nb=15,group=Erreurs2] 69 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
+**[nb=9,group=Erreurs2] 69 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs de compilation ou de warning.
 
 
     int main(void) {
