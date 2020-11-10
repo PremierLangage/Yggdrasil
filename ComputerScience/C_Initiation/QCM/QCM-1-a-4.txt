@@ -2,7 +2,7 @@ Latex:1
 
 # Catalogue 1 Prog C Olivier BOUILLOT
 
-*[group=erreur_de_syntaxe] 1 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. : 
+*[nb=4,group=erreur_de_syntaxe] 1 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. : 
 
 
     #include <stdio.h>
@@ -22,7 +22,7 @@ Combien y en a t'il ?
 + 2
 - 3
 
-*[group=erreur_de_syntaxe] 2 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. : 
+*[nb=4,group=erreur_de_syntaxe] 2 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. : 
 
 
     #include <stdio.h>
@@ -42,7 +42,7 @@ Combien y en a t'il ?
 - 2
 - 3
 
-*[group=erreur_de_syntaxe] 3 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. : 
+*[nb=4,group=erreur_de_syntaxe] 3 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. : 
 
 
     #include <stdio.h>
@@ -62,7 +62,7 @@ Combien y en a t'il ?
 - 2
 - 3
 
-*[group=erreur_de_syntaxe] 4 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. : 
+*[nb=4,group=erreur_de_syntaxe] 4 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. : 
 
 
     include <stdio.h>
@@ -82,7 +82,7 @@ Combien y en a t'il ?
 - 2
 - 3
 
-**[group=separateur] 5 ) Quels sont les séparateurs dans un programme écrit en C ?
+**[nb=5,group=separateur] 5 ) Quels sont les séparateurs dans un programme écrit en C ?
 
 + les espaces
 + les tabulations
