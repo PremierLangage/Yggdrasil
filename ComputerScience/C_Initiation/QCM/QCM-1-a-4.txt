@@ -2720,7 +2720,7 @@ Parmi les appels de fonctions suivants, lesquels retournent 1 ?
 - faitUnTruc(t1, t4, 4)
 + faitUnTruc(t5, t1, 4)
 
-** [nb=15,group=comparaison_de_tableaux] 124 ) On considère la fonction suivante :
+** [nb=4,group=comparaison_de_tableaux] 124 ) On considère la fonction suivante :
 
 
     int faitUnTruc(int tab1[], int tab2[], int taille){
