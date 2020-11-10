@@ -10,7 +10,7 @@ Liste des tags : append|
 
 @ /ComputerScience/python/AP1-2021/Chapitre_Iterables/ajoute_liste.pl
 
-tag = list|append|
+tag = append|
 
 **Commentaire**
 
@@ -18,3 +18,4 @@ tag = list|append|
 - Un exemple ajouté, un test modifié
 
 ## Ex2 : 
+
