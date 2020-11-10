@@ -1702,7 +1702,7 @@ Ce code est-il correct? S’il ne l’est pas, que faut-il modifier pour qu’il
 - Il faut écrire void plusDeux(int n) à la place de void plusDeux(int *n). 
 - Le code est correct.
 
-* [nb=15,group=Fonction_avec_et_sans_pointeur] 81 ) Qu'affiche le programme suivant ?
+* [nb=4,group=Fonction_avec_et_sans_pointeur] 81 ) Qu'affiche le programme suivant ?
 
 
     int f(int n){
@@ -1738,7 +1738,7 @@ Ce code est-il correct? S’il ne l’est pas, que faut-il modifier pour qu’il
 - 1
 - 2
 
-** [nb=15,group=difference_entre_affichage_et_retour_de_fonction] 82 ) Le code suivant devrait afficher et retourner la valeur 
+** [nb=7,group=difference_entre_affichage_et_retour_de_fonction] 82 ) Le code suivant devrait afficher et retourner la valeur 
 entière entrée par l’utilisateur, mais il est incorrect:
 
 
@@ -1760,7 +1760,7 @@ Parmi les propositions suivantes, lesquelles corrigent le code ?
 - On remplace le *n par n dans le printf.
 - On remplace le printf à la fin de la fonction f par return *n.
 
-** [nb=15,group=difference_entre_affichage_et_retour_de_fonction] 83 ) Le code suivant devrait afficher et retourner la valeur 
+** [nb=7,group=difference_entre_affichage_et_retour_de_fonction] 83 ) Le code suivant devrait afficher et retourner la valeur 
 entière entrée par l’utilisateur, mais il est incorrect:
 
 
@@ -1782,7 +1782,7 @@ Parmi les propositions suivantes, lesquelles corrigent le code ?
 - On remplace le *n par n dans le printf.
 - On remplace le printf à la fin de la fonction f par return *n.
 
-* [nb=15,group=fonction_divise_par_deux_entier] 84 ) On considère la fonction suivante :
+* [nb=4,group=fonction_divise_par_deux_entier] 84 ) On considère la fonction suivante :
 
 
     void diviseParDeux(int n){
@@ -1798,7 +1798,7 @@ Qu’affiche diviseParDeux(5)?
 - 2.0
 - 5
 
-* [nb=15,group=Appel_et_prototype] 85 ) On considère la fonction suivante :
+* [nb=4,group=Appel_et_prototype] 85 ) On considère la fonction suivante :
 
 
     int n,truc,c;
@@ -1814,7 +1814,7 @@ Ces instructions sont correctes si la fonction f a pour prototype:
 - float f(int a,int b,float c)
 - float f(int n, int &c, int &x)
 
-* [nb=15,group=Appel_et_prototype] 86 ) On veut écrire une fonction estPremier qui indique à la partie appellante si 
+* [nb=4,group=Appel_et_prototype] 86 ) On veut écrire une fonction estPremier qui indique à la partie appellante si 
 un nombre entier positif, transmis en paramètre est premier. Quel doit être le prototype de cette fonction ?
 
 + int estPremier(int a)
@@ -1822,7 +1822,7 @@ un nombre entier positif, transmis en paramètre est premier. Quel doit être le
 - int estPremier(int *a)
 - float estPremier(int n)
 
-* [nb=15,group=Puissance] 87 ) On veut écrire une fonction puissanceEntiere qui calcule la valeur **x**<sup>**n**</sup> pour **x** un nombre 
+* [nb=4,group=Puissance] 87 ) On veut écrire une fonction puissanceEntiere qui calcule la valeur **x**<sup>**n**</sup> pour **x** un nombre 
 réel et **n** un entier positif. On veut pouvoir gérer le cas où la fonction ne peut effectuer le calcul 
 (si l’entier transmis en paramètre est négatif). Quel doit être le prototype de cette fonction ?
 
@@ -1831,28 +1831,28 @@ réel et **n** un entier positif. On veut pouvoir gérer le cas où la fonction 
 - void puissanceEntiere(float x,int n,float resultat)
 - void puissanceEntiere(float x,int n)
 
-* [nb=15,group=Pile_d_execution] 88 ) La pile d’exécution est utilisée :
+* [nb=4,group=Pile_d_execution] 88 ) La pile d’exécution est utilisée :
 
 + lors de l’appel d’une fonction
 - lors de la compilation
 - lors d’un switch
 - lors de la pré-compilation
 
-* [nb=15,group=Pile_d_execution] 89 ) La pile d’exécution est utilisée :
+* [nb=4,group=Pile_d_execution] 89 ) La pile d’exécution est utilisée :
 
 + lors de l’appel d’une fonction
 - lors de l’allocation des variables globales
 - pour controler la vitesse des boucles
 - lors de la compilation
 
-* [nb=15,group=Parametre] 90 ) Les paramètres d’une fonction sont toujours transmis :
+* [nb=4,group=Parametre] 90 ) Les paramètres d’une fonction sont toujours transmis :
 
 + par adresse
 - au moment de la compilation
 - par valeur
 - par l’interpréteur
 
-** [nb=15,group=InitAdresse] 91 ) La fonction f :
+** [nb=5,group=InitAdresse] 91 ) La fonction f :
 
 
     void f(int x){
@@ -1871,7 +1871,7 @@ réel et **n** un entier positif. On veut pouvoir gérer le cas où la fonction 
 + entraine une erreur à l’exécution
 - affiche une adresse
 
-* [nb=15,group=Lecture_De_Char] 92 ) Qu’affiche le programme :
+* [nb=5,group=Lecture_De_Char] 92 ) Qu’affiche le programme :
 
 
     int main(void){
