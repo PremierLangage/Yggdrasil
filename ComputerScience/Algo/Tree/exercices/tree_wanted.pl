@@ -103,6 +103,7 @@ else:
 
 if constraints:
     feedback+=''' <span class="success-state">Bravo, cet arbre valide toutes les contraintes !</span> <br><br>'''
+    form = ""
     grade = (100, feedback)
 else:
     feedback+=''' <span class="error-state">Désolé, au moins une contrainte n'est pas validé.</span> <br><br>'''
