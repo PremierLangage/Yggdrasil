@@ -266,6 +266,17 @@ class BinaryNode():
                 acc.append(node.right)
         return ans
 
+    def is_falling_left(self):
+        """
+        Return `True` if `self` is recursively falling ont the left. Return 
+        `False` otherwise.
+
+        A tree recursively falling on the left if a binary tree such that 
+        for all internal nodes, the number of leafs of the left child is
+        greater or equal the number of leafs on the right child.
+
+        """
+
     def to_string_code(self):
         """
         Return a string coding for the binary tree. This function is used 
@@ -506,6 +517,7 @@ def binary_tree_from_code(s):
     """
     l = split_tree(s)
     return binary_tree_from_list(l)
+
 
 
 
