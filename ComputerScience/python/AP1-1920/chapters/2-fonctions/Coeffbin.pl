@@ -35,9 +35,9 @@ text==
     &gt;&gt;&gt; coefficients_binome(0)==1<br>
     True<br>
     &gt;&gt;&gt; coefficients_binome(3)<br>
-    1 3 3 1<br>
+    '1 3 3 1'<br>
     &gt;&gt;&gt; coefficients_binome(-5)<br>
-    Non défini<br><br>
+    'Non défini'<br><br>
 
 *Remarque 1 :* Cette méthode n'est pas efficace pour de grandes valeurs de n et p (elle effectue beaucoup de calculs inutiles).
 Nous en étudirons une meilleure plus tard.<br>
@@ -134,4 +134,5 @@ def coefficients_binome(n):
     pass
 
 ==
+
 
