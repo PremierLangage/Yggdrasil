@@ -9,7 +9,7 @@ title= Reconnaitre un mot
 text==
 Indiquez le mot  
 
-    **{{solutionvalue}}**
+    {{solutionvalue}}
 
 ==
 
