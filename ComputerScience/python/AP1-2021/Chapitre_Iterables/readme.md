@@ -15,5 +15,6 @@ tag = list|append
 **Commentaire**
 
 - Exo simple pour faire ajouter un élément
+- Un exemple ajouté, un test modifié
 
 ## Ex2 : 
