@@ -32,7 +32,7 @@ Pour cela :<br>
     <br>
 
     Par exemple, `ligne_etoiles(4)` renverra `'*+**+***+****'`.<br>
-    `ligne_etoiles(1)` renverra `*` et `ligne_etoiles(0)` renverra
+    `ligne_etoiles(0)` ou `ligne_etoile(-1)` renverront
     la chaine vide. <br>
     <br>
 
