@@ -64,6 +64,12 @@ text==#|markdown|
  .graph-viewer-component {
  pointer-events: none;
 }
+.error-state{
+   padding: 10px;
+}
+.success-state{
+   padding: 10px;
+}
 </style>
 
 On recherche un arbre ! Vous devez trouver cet arbre ! Pour le décrire, vous 
@@ -96,16 +102,7 @@ evaluator==#|python|
 from components import GraphDrawer
 from utils_binary_tree import *
 
-feedback = """
-<style>
-.error-state{
-   padding: 10px;
-}
-.success-state{
-   padding: 10px;
-}
-</style>
-"""
+feedback=""
 
 try:
     tree_student=binary_tree_from_code(inputbox.value.replace(' ', ''))
