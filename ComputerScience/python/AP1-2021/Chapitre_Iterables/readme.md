@@ -4,7 +4,7 @@ Liste des exercices sur les itérables, avec description simple, les tags et les
 
 Les tags sont séparés par |
 
-Liste des tags : append|mutable|reference|listCreate|elementAccess
+Liste des tags : append|mutable|reference|listCreate|elementAccess|listCopy
 
 ## Ex1 : Ajout d'éléments dans une liste
 
@@ -58,9 +58,10 @@ tag=append|ForInRange|tuple
 
 @ /ComputerScience/python/AP1-2021/Chapitre_Iterables/extends-2021.pl
 
-tag=append|elementAccess|reference
+tag=append|elementAccess|reference|listCopy
 
 **Commentaire**
 
 - Exo pour coder extend
-- 
+- Modifié l'énoncé pour souligner l'existence de référence, et aussi la copie de la liste
+- Tags ajoutés
