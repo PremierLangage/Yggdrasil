@@ -4,7 +4,7 @@ Liste des exercices sur les itérables, avec description simple, les tags et les
 
 Les tags sont séparés par |
 
-Liste des tags : append|mutable|reference|listCreate|element
+Liste des tags : append|mutable|reference|listCreate|elementAccess
 
 ## Ex1 : Ajout d'éléments dans une liste
 
@@ -34,4 +34,10 @@ tag=listCreate
 
 @ /ComputerScience/python/AP1-2021/Chapitre_Iterables/doublons-2021.pl
 
-tag=
+tag=append|elementAccess
+
+**Commentaire**
+
+- Exo pour ajouter seulement les éléments encore absents
+- Un doctest ajouté
+- Tags ajoutés
