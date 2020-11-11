@@ -1,7 +1,7 @@
 
 
 extends = /model/AMC_TXT.pl
-title = Calcul - puissances 2 
+title = Calcul - puissances 3
 questions==
 
 ** Cocher les bonnes réponses. $%2^3=...%$
