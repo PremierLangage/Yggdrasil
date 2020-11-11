@@ -4,7 +4,7 @@ extends = /model/AMC_TXT.pl
 title = Calcul - puissances 10
 questions==
 
-** Cocher les bonnes réponses. $$10^{-3}=...$$
+=**[nbb=2,nbg=2] Cocher les bonnes réponses. $$10^{-3}=...$$
 + $%0,001%$
 - $% (-10)\times (-10) \times (-10) %$
 - $% -30%$
