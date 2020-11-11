@@ -1051,8 +1051,8 @@ Combien y en a t-il ?
     }
 
 - 0
-- 1
-+ 2
++ 1
+- 2
 - 3
 
 *[nb=4,group=erreur_de_syntaxe] 48 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. Combien ?
@@ -2852,6 +2852,7 @@ Qu’affiche l’appel affichageTruc(tab, 2, 4) lorsque tab est défini par `int
 - 10 2
 - 1 02
 - 1 0 2
+
 
 
 
