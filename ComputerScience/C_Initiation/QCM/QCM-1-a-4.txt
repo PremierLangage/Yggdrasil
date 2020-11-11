@@ -1020,7 +1020,7 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 
         for (i = 0; i < 3; i=i+1)
 
-            printf("%d", i);
+            printf("%d"; i);
 
         return 0 
 
@@ -1029,8 +1029,8 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 Combien y en a t-il ?
 
 - 0
-+ 1
-- 2
+- 1
++ 2
 - 3
 
 *[nb=4,group=erreur_de_syntaxe] 47 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. Combien ?
@@ -1042,7 +1042,7 @@ Combien y en a t-il ?
 
         int i;
 
-        for (i = 0; i == 3; i+=1)
+        for (i = 0; i == 3; i=+1)
 
             printf("%d", i);
 
@@ -1051,8 +1051,8 @@ Combien y en a t-il ?
     }
 
 - 0
-+ 1
-- 2
+- 1
++ 2
 - 3
 
 *[nb=4,group=erreur_de_syntaxe] 48 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. Combien ?
@@ -1073,8 +1073,8 @@ Combien y en a t-il ?
     }
 
 - 0
-- 1
-+ 2
++ 1
+- 2
 - 3
 
 **[nb=4,group=for] 49 ) La parenthèse suivant un for
