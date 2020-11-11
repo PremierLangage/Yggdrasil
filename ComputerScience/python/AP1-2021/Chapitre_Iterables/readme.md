@@ -18,5 +18,8 @@ tag = append|mutable|reference
 - Un exemple ajouté, un test modifié
 - Tags ajoutés
 
-## Ex2 : 
+## Ex2 : Liste composée (création de liste par lister tous les éléments)
 
+@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/createliste.pl
+
+tag = 
