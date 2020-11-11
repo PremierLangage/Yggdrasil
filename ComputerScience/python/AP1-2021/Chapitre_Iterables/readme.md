@@ -41,3 +41,9 @@ tag=append|elementAccess
 - Exo pour ajouter seulement les éléments encore absents
 - Un doctest ajouté
 - Tags ajoutés
+
+## Ex4 : Entier Gauss
+
+@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/EntierGauss-2021.pl
+
+tag=append|ForIn
