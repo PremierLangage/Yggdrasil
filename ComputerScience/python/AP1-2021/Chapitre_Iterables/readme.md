@@ -10,7 +10,7 @@ Liste des tags : append|mutable|reference|listcreate
 
 @ /ComputerScience/python/AP1-2021/Chapitre_Iterables/ajoute_liste-2021.pl
 
-tag = append|mutable|reference
+tag=append|mutable|reference
 
 **Commentaire**
 
@@ -22,7 +22,7 @@ tag = append|mutable|reference
 
 @ /ComputerScience/python/AP1-2021/Chapitre_Iterables/createliste-2021.pl
 
-tag = listcreate
+tag=listcreate
 
 **Commentaire**
 
@@ -30,4 +30,8 @@ tag = listcreate
 - Un exemple ajouté
 - Tag ajouté
 
-## Ex3 : 
+## Ex3 : Ignorer les doublons d'une liste
+
+@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/doublons-2021.pl
+
+tag=
