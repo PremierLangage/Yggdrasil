@@ -25,6 +25,8 @@ pltest0==
 [1, 2]
 >>> ignoredoublons([2,1,2,1,2,1])
 [2, 1]
+>>> ignoredoublons(["a", "toto", 3, 7, "a"])
+["a", "toto", 3, 7]
 ==
 
 Xeditor.code==
