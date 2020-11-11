@@ -27,7 +27,7 @@ questions==
 
  
 
-** Cocher les bonnes réponses. $$\10^0 =...$$
+** Cocher les bonnes réponses. $$10^0 =...$$
 - $% 10 %$
 - $% 0 %$
 + $% 1%$
