@@ -5,8 +5,7 @@ title = Fusion de deux listes
 
 text==
 
-Ecrire une fonction `fusion` à deux paramètres (des listes) qui retourne la liste composée
- des ééments de la première suivis des éléments de la seconde
+Ecrire une fonction `fusion` à deux paramètres (des listes) qui retourne la liste composée des ééments de la première suivis des éléments de la seconde
 
 >>> fusion([1,1],[2,2])
 [1, 1, 2, 2]
