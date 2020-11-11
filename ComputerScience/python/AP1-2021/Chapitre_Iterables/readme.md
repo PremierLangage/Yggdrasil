@@ -4,7 +4,7 @@ Liste des exercices sur les itérables, avec description simple, les tags et les
 
 Les tags sont séparés par |
 
-Liste des tags : append|mutable|reference|listcreate
+Liste des tags : append|mutable|reference|listCreate|element
 
 ## Ex1 : Ajout d'éléments dans une liste
 
@@ -22,7 +22,7 @@ tag=append|mutable|reference
 
 @ /ComputerScience/python/AP1-2021/Chapitre_Iterables/createliste-2021.pl
 
-tag=listcreate
+tag=listCreate
 
 **Commentaire**
 
