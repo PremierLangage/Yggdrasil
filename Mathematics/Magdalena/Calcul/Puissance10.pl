@@ -6,13 +6,13 @@ questions==
 
 ** Cocher les bonnes réponses. $$10^{-3}=...$$
 + $%0,001%$
-- $% (-10)\times (-10) \times (10) %$
+- $% (-10)\times (-10) \times (-10) %$
 - $% -30%$
 + $% \frac{1}{10^3} %$
 + $% \frac{1}{10} \times\frac{1}{10}\times  \frac{1}{10} %$
 
 ** Cocher les bonnes réponses. $$ \frac{1}{10^{-2}}=...$$
-- $%0,O1%$
+- $%0,01%$
 + $% 100%$
 + $% 10^2 %$
 - $% 0,02%$
