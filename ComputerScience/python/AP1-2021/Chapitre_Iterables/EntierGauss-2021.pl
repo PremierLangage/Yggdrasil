@@ -9,7 +9,7 @@ text==
 On appelle "entier de Gauss" un nombre complexe $%z=a+\mathrm{i}b , (a,b) \in \mathbb{N}^2 %$
 
 Ecrire une fonction `carres_Gauss(r)` qui renvoie la liste d'entiers de Gauss de module inférieur ou égal à $%r%$
-dont le carré est également un entier de Gauss de module inférieur ou égal à $%r%$. La liste est une liste de couples
+dont le **carré** est également un entier de Gauss de module inférieur ou égal à $%r%$. La liste est une liste de couples
 ordonnées lexicographiquement. 
 
 <pre><code>
