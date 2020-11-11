@@ -1,10 +1,10 @@
 
 
-extends= /model/AMC2/QCM-AMCE.pl
+extends = /model/AMC_TXT.pl
 title = Calcul - puissances 10
 questions==
 
-=**[nbb=2,nbg=2] Cocher les bonnes réponses. $$10^{-3}=...$$
+** Cocher les bonnes réponses. $$10^{-3}=...$$
 + $%0,001%$
 - $% (-10)\times (-10) \times (-10) %$
 - $% -30%$
