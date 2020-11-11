@@ -18,6 +18,9 @@ ordonnées **lexicographiquement**.
 </code></pre>
 
 ==
+
+tag=append|ForInRange
+
 before==
 def carre_complexe(x,y):
     return x*x-y*y,2*x*y
