@@ -8,7 +8,7 @@ Liste des tags : append|mutable|reference|listcreate
 
 ## Ex1 : Ajout d'éléments dans une liste
 
-@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/ajoute_liste.pl
+@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/ajoute_liste-2021.pl
 
 tag = append|mutable|reference
 
@@ -20,7 +20,7 @@ tag = append|mutable|reference
 
 ## Ex2 : Liste composée (création de liste par lister tous les éléments)
 
-@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/createliste.pl
+@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/createliste-2021.pl
 
 tag = listcreate
 
