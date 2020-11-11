@@ -545,7 +545,7 @@ Quelles sont-elles ?
 - 2.5
 - Une erreur ou un warning
 
-**[nb=4,group=Resultat_code] 31 ) Qu'affiche le programme suivant ?
+**[nb=4,group=Resultat_code] 31 ) Qu'affiche la compilation **et/ou** l'exécution du programme suivant ?
 
 
      #include <stdio.h>
