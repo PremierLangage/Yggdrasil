@@ -19,7 +19,7 @@ ordonnées **lexicographiquement**.
 
 ==
 
-tag=append|ForInRange
+tag=append|ForInRange|tuple
 
 before==
 def carre_complexe(x,y):
