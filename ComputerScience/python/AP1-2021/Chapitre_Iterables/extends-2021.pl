@@ -7,7 +7,7 @@ text==
 
 Ecrire une fonction `fusion` à deux paramètres (des listes) qui retourne la liste composée des éléments de la première suivis par des éléments de la seconde. 
 
-La fonction ne doit pas modifier les deux listes 
+La fonction **ne doit pas modifier les deux listes** en paramètre.
 
 >>> fusion([1,1],[2,2])
 [1, 1, 2, 2]
@@ -27,4 +27,6 @@ pltest1==
 [1]
 >>> l1
 []
+>>> l2
+[1]
 ==
