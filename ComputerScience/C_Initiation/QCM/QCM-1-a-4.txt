@@ -1149,12 +1149,11 @@ Combien y en a t-il ?
 - ... fausse
 - ... évaluée pour la deuxième fois
 
-*[nb=4,group=condition] 52bis ) Le bloc d’une boucle `do while` est exécutée lorsque la condition est ...
+*[nb=3,group=condition] 52bis ) Le bloc d’une boucle `do while` est exécutée au moins une fois lorsque la condition est ...
 
 + ... vraie
 + ... fausse
 - ... évaluée pour la deuxième fois
-+ ... au moins une fois
 
 *[nb=4,group=break_dans_un_switch] 53 ) A quoi sert un break dans un switch ?
 
