@@ -58,10 +58,10 @@ tag=append|ForInRange|tuple
 
 @ /ComputerScience/python/AP1-2021/Chapitre_Iterables/extends-2021.pl
 
-tag=append|elementAccess|reference|listCopy
+tag=extend|reference|listCopy
 
 **Commentaire**
 
-- Exo pour coder extend
+- Exo pour extend, mais append + for marche aussi
 - Modifié l'énoncé pour souligner l'existence de référence, et aussi la copie de la liste
 - Tags ajoutés
