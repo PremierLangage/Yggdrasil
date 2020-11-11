@@ -12,6 +12,8 @@ Quand un élémént est en double seule la première occurence est copiée.
 Par exemple, `ignoredoublons([3, 1, 2, 2, 1, 3])` renvoie `[3, 1, 2]`
 ==
 
+tag=listcreate
+
 taboo=set
 
 pltest0==
