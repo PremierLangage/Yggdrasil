@@ -40,9 +40,14 @@ questions==
 + $% 10^{-5}\times 10^{5}%$
 + $% 10^{-5+5}%$
 
-** Cocher les bonnes réponses. $%(10^{3})^2\times 5^{-3}\times 2^{-3} %$=...
-- $% 10^{3\times 3} \times (5\times 2)^{-6}%$
-+ $% 10^{3 \times 2} \times (5\times 2)^{-3}%$   %$
+** Cocher les bonnes réponses $$5^8 \times 2^8 =...$$
++ $% (5\times 2)^8 %$
+- $% (5\times 2)^{16} %$
++ $% 10^8 %$
+
+** Cocher les bonnes réponses. $$(10^{3})^2\times 5^{-3}\times 2^{-3} =...$$
+- $% 10^{3\times 3} \times (5\times 2)^{-6} %$
++ $% 10^{3 \times 2} \times (5\times 2)^{-3} %$  
 - $% 10^5 %$
 + $% 10^3%$
 + $% 1000 %$
