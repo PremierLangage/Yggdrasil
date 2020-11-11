@@ -15,7 +15,7 @@ taboo: Ne pas utiliser la fonction <font style="color:red;">{{taboo}}</font> des
 
 taboo=append
 
-tag=reference|append|ForInRange
+tag=reference|append|ForInRange|mutable
 
 before==
 # solution --- utilise extends
