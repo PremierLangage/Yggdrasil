@@ -15,6 +15,8 @@ taboo: Ne pas utiliser la fonction <font style="color:red;">{{taboo}}</font> des
 
 taboo=append
 
+tag=reference|append|ForInRange
+
 before==
 # solution --- utilise extends
 def tab3(lst,n) :
