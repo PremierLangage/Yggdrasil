@@ -47,3 +47,11 @@ tag=append|elementAccess
 @ /ComputerScience/python/AP1-2021/Chapitre_Iterables/EntierGauss-2021.pl
 
 tag=append|ForInRange
+
+**Commentaire**
+
+- Exo pour constuire une liste
+- Un soluce simplifié est ajouté, aussi avec plus de tests aléatoires
+- Tags ajoutés
+
+## Ex5 : 
