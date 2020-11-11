@@ -43,7 +43,7 @@ questions==
 
 ** Cocher les bonnes réponses. $%4^{-3}\times 2,5^{-3}%$=...
 - $% (-4)\times(-4)\times (-4) \times (-2,5)\times (-2,5) \times (-2,5)=30%$
-+ $%\frac{1}{4} \times\frac{1}{4} \times\frac{1}{4} \times\frac{1}{2,5} \times\frac{1}{2,5}\times\frac{1}{2,5}%$
++ $% \frac{1}{4} \times\frac{1}{4} \times\frac{1}{4} \times\frac{1}{2,5} \times\frac{1}{2,5}\times\frac{1}{2,5}%$
 - $% \frac{1}{30} %$
 + $% (4 \times 2,5)^{-3} %$
 + $% 10^{-3} %$
