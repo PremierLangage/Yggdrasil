@@ -46,7 +46,7 @@ tag=append|elementAccess
 
 @ /ComputerScience/python/AP1-2021/Chapitre_Iterables/EntierGauss-2021.pl
 
-tag=append|ForInRange
+tag=append|ForInRange|tuple
 
 **Commentaire**
 
