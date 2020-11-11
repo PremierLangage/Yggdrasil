@@ -1055,6 +1055,28 @@ Combien y en a t-il ?
 + 2
 - 3
 
+*[nb=4,group=erreur_de_syntaxe] 47 Bis ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. Combien ?
+
+
+    #include <stdio.h>
+
+    int main(void){
+
+        int i,
+
+        for (i = 0; i == 3; i=1+i)
+
+            printf("%d", i);
+
+        return 0; 
+
+    }
+
+- 0
++ 1
+- 2
+- 3
+
 *[nb=4,group=erreur_de_syntaxe] 48 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. Combien ?
 
 
