@@ -65,3 +65,5 @@ tag=extend|reference|listCopy
 - Exo pour extend, mais append + for marche aussi
 - Modifié l'énoncé pour souligner l'existence de référence, et aussi la copie de la liste
 - Tags ajoutés
+
+## Ex6 : 
