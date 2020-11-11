@@ -5,7 +5,9 @@ title = Fusion de deux listes
 
 text==
 
-Ecrire une fonction `fusion` à deux paramètres (des listes) qui retourne la liste composée des ééments de la première suivis des éléments de la seconde
+Ecrire une fonction `fusion` à deux paramètres (des listes) qui retourne la liste composée des éléments de la première suivis par des éléments de la seconde. 
+
+La fonction ne doit pas modifier les deux listes 
 
 >>> fusion([1,1],[2,2])
 [1, 1, 2, 2]
@@ -18,32 +20,11 @@ pltest0==
 [1, 1, 2, 2]
 ==
 
-Xeditor.code==
-def fusion(a,b):
-    a.extend(b)
-    return a
-
+pltest1==
+>>> l1 = []
+>>> l2 = [1]
+>>> fusion(l1, l2)
+[1]
+>>> l1
+[]
 ==
-
-tests %=
-{
-    "correct" : {
-        "response" : {
-            "answer" : "def fusion(a,b):\n    a.extend(b)\n    return a\n"
-        },
-        "grade" : 100,
-        "seed":12
-    },
-     "Incorrect" : {
-        "response" : {
-            "answer" : "def fusion(a,b):\n    return [a, b]\n"
-        },
-        "grade" : 0,
-        "seed":12
-    }
-}
-==
-
-
-
-
