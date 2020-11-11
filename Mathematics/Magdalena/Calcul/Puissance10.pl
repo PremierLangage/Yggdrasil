@@ -1,6 +1,6 @@
 
 
-extends = /model/AMC_TXT.pl
+extends= /model/AMC2/QCM-AMCE.pl
 title = Calcul - puissances 10
 questions==
 
