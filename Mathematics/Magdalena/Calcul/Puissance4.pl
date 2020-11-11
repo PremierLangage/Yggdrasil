@@ -31,7 +31,7 @@ questions==
 
 ** Cocher les bonnes réponses. $$\frac{6\times 10^3 \times 28 \times 10^{-2}}{14 \times 10^{-3}}=...$$
 - $% 12 \times 10^{-2}%$
-+ $%\frac{6 \times 2 \times 14}{14} \times\frac{10^{3-2}{10^{-3}}%$
++ $%\frac{6 \times 2 \times 14}{14} \times\frac{10^{3-2}}{10^{-3}}%$
 - $% 12 \times 10^{-3}%$
 + $% 12 \times 10^{3-2+3}%$
 + $% 12 \times 10^{4}%$
