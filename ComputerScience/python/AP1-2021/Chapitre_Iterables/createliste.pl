@@ -21,10 +21,3 @@ pltest0==
 [3.14, 'titi']
 ==
 
-xeditor.code==
-
-==
-
-
-
-
