@@ -15,6 +15,8 @@ La fonction **ne doit pas modifier les deux listes** en paramètre.
 
 taboo=extend
 
+tag=append|elementAccess|reference|listCopy
+
 pltest0==
 >>> fusion([1,1],[2,2])
 [1, 1, 2, 2]
