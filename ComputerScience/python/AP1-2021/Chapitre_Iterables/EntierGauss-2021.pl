@@ -40,9 +40,15 @@ def carres_Gauss(r):
 
 import random
 
-n=random.randint(4,14)
+n=random.randint(-4,14)
 
 pltest3=f">>> carres_Gauss({n})\n{carres_Gauss(n)}"
+
+pltest4=f">>> carres_Gauss({n})\n{carres_Gauss(n)}"
+
+pltest5=f">>> carres_Gauss({n})\n{carres_Gauss(n)}"
+
+pltest6=f">>> carres_Gauss({n})\n{carres_Gauss(n)}"
 
 after=before
 ==
