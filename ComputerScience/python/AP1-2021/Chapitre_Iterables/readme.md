@@ -58,7 +58,7 @@ tag=append|ForInRange|tuple
 
 @ /ComputerScience/python/AP1-2021/Chapitre_Iterables/extends-2021.pl
 
-tag=
+tag=append|elementAccess|reference
 
 **Commentaire**
 
