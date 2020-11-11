@@ -50,8 +50,17 @@ tag=append|ForInRange|tuple
 
 **Commentaire**
 
-- Exo pour constuire une liste
+- Exo pour constuire une liste, difficulté en math
 - Un soluce simplifié est ajouté, aussi avec plus de tests aléatoires
 - Tags ajoutés
 
-## Ex5 : 
+## Ex5 : Fusion de deux listes
+
+@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/extends-2021.pl
+
+tag=
+
+**Commentaire**
+
+- Exo pour coder extend
+- 
