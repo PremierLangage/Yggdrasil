@@ -26,6 +26,8 @@ Cette suite atteint 1 quelle que soit la valeur initiale. (Ceci n'a jamais été
 
 Ecrire un programme qui lit un entier naturel et qui calcule et affiche les éléments de la suite jusqu'a atteindre la valeur 1 (incluse).
 
+**Le code ne doit rien faire quand l'entrée n'est pas valide !**
+
 ==
 
 soluce==
@@ -44,6 +46,7 @@ Test | 22
 de zéro | 0
 de neg |-3
 ==
+
 
 
 
