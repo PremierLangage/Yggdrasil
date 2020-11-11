@@ -66,4 +66,13 @@ tag=extend|reference|listCopy
 - Modifié l'énoncé pour souligner l'existence de référence, et aussi la copie de la liste
 - Tags ajoutés
 
-## Ex6 : 
+## Ex6 : Ajout de N éléments à une liste
+
+@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/extends_list-2021.pl
+
+tag=reference|append|ForInRange
+
+**Commentaire**
+
+- Exo pour ajouter des éléments à une liste passée en paramètre
+- 
