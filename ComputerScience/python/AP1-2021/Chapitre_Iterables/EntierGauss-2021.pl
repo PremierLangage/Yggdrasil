@@ -22,7 +22,7 @@ before==
 def carre_complexe(x,y):
     return x*x-y*y,2*x*y
 
-def carres_Gauss(r):
+def carres_Gauss_ancien(r):
     if r<0:
         return []
     if r==0:
@@ -36,7 +36,13 @@ def carres_Gauss(r):
                l.append((a,b))
     return l
     
-
+def carres_Gauss(n):
+    res = []
+    for x in range(-n, n + 1):
+        for y in range(-n, n + 1):
+            if x*x + y*y <= n:
+                res.append((x, y))
+    return res
 
 import random
 
