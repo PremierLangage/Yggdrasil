@@ -519,6 +519,35 @@ Quelles sont-elles ?
 - 8
 - Aucune ne provoque d'erreur ou de warning
 
+**[nb=6,group=Compilation_2]  29bis ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
+la compilation. Lesquelles ?
+
+
+    /*1*/ #include <stdio.h>
+
+    /*2*/
+
+    /*3*/ int main(void){
+
+    /*4*/   float a;
+
+    /*5*/   printf("Donnez moi un entier : ");
+
+    /*6*/   scanf("%d", &a);
+
+    /*7*/   printf("Son carré vaut %f",a * a);
+
+    /*8*/ }
+
+Quelles sont-elles ?
+
+- 4
++ 5
+- 6
++ 7
+- 8
+- Aucune ne provoque d'erreur ou de warning
+
 **[nb=4,group=Resultat_code]  30 ) Qu'affiche la compilation **et/ou** l'exécution du programme suivant ?
 
 
