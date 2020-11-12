@@ -20,13 +20,13 @@ answer_type = sql_query
 
 
 #* Define a code editor component
-component =: CodeEditor
+editor =: CodeEditor
 
-component.code ==
+editor.code ==
 Remplacer ce texte par votre réponse
 ==
 
-component.language = sql
+editor.language = sql
 
 
 #*===========================================================================
@@ -166,11 +166,6 @@ maxattempt = int(maxattempt)
 allow_reroll = (allow_reroll == "True")
 show_solution = (show_solution == "False")
 answer_type = str(answer_type)
-
-# editor
-editor = Automaton.editor()
-editor.debug = False
-editor.editorHeight = "500px"
 
 
 
