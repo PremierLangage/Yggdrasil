@@ -1,6 +1,6 @@
 # Document - Listes
 
-Liste des exercices sur les itérables, avec description simple, les tags et les changements éventuels.
+Liste des exercices sur les listes, avec description simple, les tags et les changements éventuels.
 
 Les tags sont séparés par |
 
@@ -116,3 +116,4 @@ tag=listRepeat|ForInRange|append
 - repetezip.pl est une duplication de cet exercice
 
 ## Ex10 : 
+
