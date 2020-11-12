@@ -533,7 +533,7 @@ la compilation. Lesquelles ?
 
     /*5*/   printf("Donnez moi un entier : ");
 
-    /*6*/   scanf("%d", &a);
+    /*6*/   scanf("%f", &a);
 
     /*7*/   printf("Son carré vaut %f",a * a);
 
