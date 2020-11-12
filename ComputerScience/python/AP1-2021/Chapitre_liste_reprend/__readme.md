@@ -4,7 +4,7 @@ Liste des exercices sur les listes, avec description simple, les tags et les cha
 
 Les tags sont séparés par |
 
-Liste des tags : append|mutable|reference|listCreate|elementAccess|listCopy|ForInRange|tuple|inlist|extend|len|listRepeat|pop
+Liste des tags : append | mutable | reference | listCreate | elementAccess | listCopy|ForInRange|tuple|inlist|extend|len|listRepeat|pop
 
 ## Ex1 : Ajout d'éléments dans une liste
 
