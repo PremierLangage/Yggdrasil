@@ -772,13 +772,6 @@ Quelles sont-elles ?
 - tititutu
 - une ligne vide
 
-*[nb=3,group=Equation_Second_Degre] 38 ) Un programme permettant de déterminer le nombre de racines d'une équation du 
-second degré ax&sup2; + bx + c = 0 doit contenir au minimum...
-
-- 3 tests
-- 6 tests
-+ 5 tests
-
 # Catalogue 2 Prog C Olivier BOUILLOT sans les doublons du Catalogue 1
 
 **[nb=4,group=Changement_valeur_variable] 39 ) Comment peut-on changer la valeur d’une variable à l’aide d’une fonction ?
