@@ -26,7 +26,7 @@ editor.height=350px
 text==
 Écrire une fonction C **count_internal_nodes** qui prend en argument un **arbre** (un pointeur 
 vers le `Node` racine de l'arbre) et retourne un entier qui devra 
-être le **nombre de nœuds internes** dans l'arbre. Pour rappel, un noeud est 
+être le **nombre de nœuds internes** dans l'arbre. Pour rappel, un nœud est 
 interne quand il possède au moins un fils. De manière équivalente, un nœud 
 qui n'est pas une feuille est un nœud interne.
 ==
