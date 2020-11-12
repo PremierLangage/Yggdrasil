@@ -23,7 +23,7 @@ tag=arbre|algo|feuille|récursivité|buffer
 
 editor.height=400px
 
-viewer =: GraphDrawer
+viewertext =: GraphDrawer
 
 viewer.graph ==
 digraph G {
@@ -41,7 +41,7 @@ ses feuilles.
 
 Prenons un exemple avec le graphe suivant :
 
-{{ viewer|component }}
+{{ viewertext|component }}
 
 Cet arbre à 3 feuilles. Parcourant les feuilles de la gauche vers la droite, 
 on voudrait afficher pour cet arbre les trois chemins suivants :
