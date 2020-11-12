@@ -21,6 +21,11 @@ generate== #|py|
 # ajouter le nom du fichier dans base.pl
 # from monfichier import bla
 
+import sqlite3
+
+conn = sqlite3.connect('file:magasin.db?mode=ro', uri=True)
+
+
 question = "Voilà ma question: c'était quoi déjà ?"
 
 solution = "youpi"
@@ -40,3 +45,4 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution
 {% endif %}
 
 ==
+
