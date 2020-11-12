@@ -156,7 +156,7 @@ show_solution = (show_solution == "False")
 question = "question par defaut ?" 
 
 # définir ici la question à poser
-solution = 42
+solution = "42"
 
 
 if 'generate' in globals():
