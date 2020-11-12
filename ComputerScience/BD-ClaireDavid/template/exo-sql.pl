@@ -152,11 +152,15 @@ maxattempt = int(maxattempt)
 allow_reroll = (allow_reroll == "True")
 show_solution = (show_solution == "False")
 
-# définir ici la question à poser
+# question par defaut si non définie dans le generate de l'exo
 question = "question par defaut ?" 
 
+# définir ici la question à poser
 solution = 42
 
+
+if 'generate' in globals():
+    exec(generate)
 ==
 
 #*===========================================================================
@@ -184,7 +188,7 @@ if attempt >= maxattempt: # timeout
 else:
     score = 0
     # noter la réponse de l'étudiant
-    if string_student_answer == "youpi":
+    if string_student_answer == solution:
         score = 100
         grade = (score, feedback_success)
     else:
