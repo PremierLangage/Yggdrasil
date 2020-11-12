@@ -9,6 +9,13 @@ Latex:1
 +=["les espaces"]
 -=["les virgules"]
 
+=**[nbb=2,nbg=2] Indiquer les identifiants correctes
++=["un","deux","ident","prout"]
+-=["666","aujourd'hui", "def", "@lt;html@gt;"] 
+-=["!autres","truc%","pour ris"]
+- for
+-=["list","int","dic"]
+
 **[nb=4,group=Resultat_code] 31 ) Qu'affiche la compilation **et/ou** l'exécution du programme suivant ?
 
 
