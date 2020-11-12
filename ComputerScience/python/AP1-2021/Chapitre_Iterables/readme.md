@@ -70,10 +70,10 @@ tag=extend|reference|listCopy
 
 @ /ComputerScience/python/AP1-2021/Chapitre_Iterables/extends_list-2021.pl
 
-tag=reference|append|ForInRange|mutable
+tag=reference|extend|ForInRange|mutable
 
 **Commentaire**
 
-- Exo pour ajouter des éléments à une liste passée en paramètre
+- Exo pour ajouter des éléments à une liste passée en paramètre, en utilisant extend
 - Tags ajoutés
-- TOTEST
+- Exemple ajouté
