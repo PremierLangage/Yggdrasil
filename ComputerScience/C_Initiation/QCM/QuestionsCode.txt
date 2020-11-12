@@ -3,11 +3,11 @@ Latex:1
 
 =**[nb=13, group=separateur] 5 ) Quels sont les séparateurs dans un programme écrit en C ?
 
--=[les points virgules]
--=[les virgules]
-+=[les espaces]
-+=[les tabulations]
-+=[les retours à la ligne]
+-=["les points virgules"]
+-=["les virgules"]
++=["les espaces"]
++=["les tabulations"]
++=["les retours à la ligne"]
 
 **[nb=4,group=Resultat_code] 31 ) Qu'affiche la compilation **et/ou** l'exécution du programme suivant ?
 
