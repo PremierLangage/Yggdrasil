@@ -30,8 +30,7 @@ On utilisera les types: <br>
 
 editor.code==
 Cellule* extrait_suivant(Liste l, int precede) {
-...
-  /* votre code ici... */
+    /* votre code ici... */
 }
 
 ==
