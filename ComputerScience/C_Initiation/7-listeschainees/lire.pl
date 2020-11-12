@@ -22,7 +22,7 @@ On utilisera les types: <br>
         int val;  
         struct cel* suivant;  
     } Cellule;  
-    
+
     typedef Cellule* Liste;  
 
 
