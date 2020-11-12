@@ -119,4 +119,4 @@ tag=listRepeat|ForInRange|append
 
 @ /ComputerScience/python/AP1-2021/Chapitre_Iterables/supprime_pair-2021.pl
 
-tag=
+tag=mutable|reference|elementAccess|pop
