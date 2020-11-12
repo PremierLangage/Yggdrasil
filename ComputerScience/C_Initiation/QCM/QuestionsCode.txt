@@ -5,9 +5,9 @@ Latex:1
 
 - les points virgules
 - les virgules
-+ les espaces
-+ les tabulations
-+ les retours à la ligne 
++=[les espaces]
++=[les tabulations]
++=[les retours à la ligne]
 
 **[nb=4,group=Resultat_code] 31 ) Qu'affiche la compilation **et/ou** l'exécution du programme suivant ?
 
