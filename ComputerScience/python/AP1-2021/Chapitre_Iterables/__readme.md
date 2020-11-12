@@ -107,3 +107,11 @@ tag=reference|mutable|ForInRange|len
 @ /ComputerScience/python/AP1-2021/Chapitre_Iterables/repete-2021.pl
 
 tag=listRepeat|ForInRange|append
+
+**Commentaire**
+
+- Exo pour faire répéter la liste donnée. Deux façons de faire : avec le syntaxe *, et avec un double parcours
+- Inconsistence entre les tests sont fixée. Maintenant la sémantique est simplement n * l.
+- Tags ajoutés
+
+
