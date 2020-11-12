@@ -4,7 +4,7 @@ Liste des exercices sur les itérables, avec description simple, les tags et les
 
 Les tags sont séparés par |
 
-Liste des tags : append|mutable|reference|listCreate|elementAccess|listCopy|ForInRange|tuple|inlist
+Liste des tags : append|mutable|reference|listCreate|elementAccess|listCopy|ForInRange|tuple|inlist|extend
 
 ## Ex1 : Ajout d'éléments dans une liste
 
@@ -77,3 +77,5 @@ tag=reference|extend|ForInRange|mutable
 - Exo pour ajouter des éléments à une liste passée en paramètre, en utilisant extend
 - Tags ajoutés
 - Exemple ajouté
+
+## Ex7 : 
