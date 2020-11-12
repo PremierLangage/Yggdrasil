@@ -1402,7 +1402,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - error: extraneous closing brace (’}’)
 - error: expected ’}’
 - warning: variable ’n’ is uninitialized when used here
-- error: expected ’;’ after expression
++ error: expected ’;’ after expression
 - Aucune erreur ou warning n’est générée à la compilation
 
 **[nb=8,group=Erreurs1] 63 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs ou de warning à la compilation.
