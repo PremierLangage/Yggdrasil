@@ -21,7 +21,7 @@ author=Nicolas Borie
 title=Afficher les chemins racine-feuilles
 tag=arbre|algo|feuille|récursivité|buffer
 
-editor.height=350px
+editor.height=400px
 
 text==
 Dans cet exercice, on souhaite produire du code pour afficher ligne par 
@@ -57,6 +57,8 @@ typedef struct node{
   struct node * right;
 }Node, *Tree;
 
+#define MAX_HEIGHT 500
+
 void print_buffer(int buffer[], int size){
   int i;
   for(i=0 ; i<size-1 ; i++)
@@ -67,11 +69,20 @@ void print_buffer(int buffer[], int size){
 }
 
 void path_to_leafs_rec(Tree t, int buffer[], int index){
-  
+  if ((t->left == NULL) && (t->right == NULL))
+    print_buffer(buffer, index);
+  else{
+    buffer[index] = t->value;
+    if (t->left)
+      path_to_leafs_rec(t->left, buffer, index+1);
+    if (t->right)
+      path_to_leafs_rec(t->right, buffer, index+1);
+  }
 }
 
-... path_to_leafs(Tree t){
-  /* Votre code ici... */
+void path_to_leafs(Tree t){
+  int buffer[MAX_HEIGHT];
+  path_to_leafs_rec(t, buffer, 0);
 }
 ==
 
@@ -123,10 +134,7 @@ int main(int argc, char* argv[]){
 
   build_tree(&t);
   
-  if ((n = count_internal_nodes(t)) <= 1)
-    printf("L'arbre transmis sur l'entrée standard contient : %d noeud interne\n", n);
-  else
-    printf("L'arbre transmis sur l'entrée standard contient : %d noeuds internes\n", n);
+  path_to_leafs(Tree t);
   return 0;
 }
 ==
