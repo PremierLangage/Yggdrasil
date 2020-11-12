@@ -1549,7 +1549,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - warning: variable ’n’ is uninitialized when used here
 - warning: format specifies type ’int *’ but the argument has type ’int’ 
 - error: expected ’;’ after expression
-+ Aucune erreur ou warning n’est générée à la compilation
+- Aucune erreur ou warning n’est générée à la compilation
 
 **[nb=9,group=Erreurs2] 67 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs ou de warning à la compilation.
 
