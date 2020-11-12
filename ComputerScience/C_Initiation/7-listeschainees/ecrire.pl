@@ -20,7 +20,7 @@ On utilisera les types:  <br>
         struct cel* suivant;  
     } Cellule;
 
-    typedef Cellule* Liste ; 
+    typedef Cellule* Liste; 
 
 ==
 
