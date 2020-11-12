@@ -18,7 +18,6 @@ show_solution = False
 #   sql-query -> add text editor in the form
 answer_type = sql_query
 
-
 #* Define a code editor component
 editor =: CodeEditor
 
@@ -56,7 +55,7 @@ feedback_nomatch = <p class="error-state">Votre réponse n'est pas correcte.</p>
 feedback_timeout =  <p class="warning-state"> Vous n'avez pas réussi l'exercice. Relisez votre cours avant de rééessayer.</p>
 
 #* feedback before showing a solution
-feedback_show_solution = <p class="warning-state">Voici une réponse possible à la question.</p>
+feedback_show_solution = <p class="warning-state">Voici une réponse possible à la question.<br>{0}</p>
 
 #* feedback in case of syntax error. {0} is replaced by the occured error
 feedback_syntax_error = <p class="warning-state">{0}</p>
@@ -69,13 +68,13 @@ feedback_syntax_error = <p class="warning-state">{0}</p>
 form_timeout== #|html|
 {% if show_solution %}
 {{ feedback_show_solution }}
-{{ solution_view|component }}
 {% endif %}
 == 
 
 #*=========================================================================================
 #* override this key to add content after feedback in case of good answer.
 form_success== #|html|
+<p> Bravo! Vous avez réussi! </p>
 == 
 
 #*===========================================================================
@@ -167,6 +166,8 @@ allow_reroll = (allow_reroll == "True")
 show_solution = (show_solution == "False")
 answer_type = str(answer_type)
 
+solution = 42
+
 
 
 ==
@@ -202,6 +203,7 @@ else:
     grade=(score, feedback_nomatch)
 
 ==
+
 
 
 
