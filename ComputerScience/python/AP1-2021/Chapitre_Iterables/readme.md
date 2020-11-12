@@ -78,4 +78,13 @@ tag=reference|extend|ForInRange|mutable
 - Tags ajoutés
 - Exemple ajouté
 
-## Ex7 : 
+## Ex7 : Fibonacci
+
+@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/fibo-2021.pl
+
+tag=ForInRange|append|listCreate
+
+**Commentaire**
+
+- Exo pour créer une liste des nombres de Fibonacci
+- 
