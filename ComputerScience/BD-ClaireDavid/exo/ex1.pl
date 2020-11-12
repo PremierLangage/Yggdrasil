@@ -27,6 +27,9 @@ conn = sqlite3.connect(':memory:')
 
 cursor = conn.cursor()
 
+cursor.execute('CREATE TABLE magasin(a int);')
+cursor.execute('INSERT INTO magasin VALUES (42);')
+
 cursor.execute('SELECT * FROM magasin;')
 answer = cursor.fetchone()
 
