@@ -19,7 +19,7 @@ allow_reroll =  True
 generate== #|py|
 # pour ajouter des fonctions dans un fichier .py
 # ajouter le nom du fichier dans base.pl
-#from monfichier import bla
+# from monfichier import bla
 
 question = "Voilà ma question: c'était quoi déjà ?"
 
