@@ -30,7 +30,7 @@ cursor = conn.cursor()
 cursor.execute('SELECT * FROM magasin;')
 answer = cursor.fetchone()
 
-question = "Voilà ma question: c'était quoi déjà ?" + answer[0]
+question = "Voilà ma question: c'était quoi déjà ?" + str(answer)
 
 solution = "youpi"
 ==
