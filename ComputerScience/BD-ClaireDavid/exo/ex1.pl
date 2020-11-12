@@ -28,7 +28,7 @@ conn = sqlite3.connect('file:magasin.db?mode=ro', uri=True)
 cursor = conn.cursor()
 
 cursor.execute('SELECT * FROM magasin;')
-answer = cursor.fetch_one()
+answer = cursor.fetchone()
 
 question = "Voilà ma question: c'était quoi déjà ?"
 
