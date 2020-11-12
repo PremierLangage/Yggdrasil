@@ -8,7 +8,7 @@ textstep ==
 title= Compréhension de code 
 
 text=
-onepergroup % false
+onepergroup % true
 
 questions=@ QuestionsCode.txt
 
