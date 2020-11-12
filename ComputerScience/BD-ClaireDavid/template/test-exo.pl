@@ -70,17 +70,6 @@ form_timeout== #|html|
 {% endif %}
 == 
 
-#*=========================================================================================
-#* override this key to add content after feedback in case of good answer.
-form_success== #|html|
-{{ feedback_success }}
-== 
-
-#*=========================================================================================
-#* override this key to add content after feedback in case of wrong answer.
-form_fail== #|html|
-{{ feedback_fail }}
-== 
 
 #*===========================================================================
 #* override this key to change the instructions below inputbox for simple regex
@@ -109,17 +98,8 @@ form== #|html|
 <!-- TIMEOUT VIEW -->
 {% if attempt >= maxattempt %}
 {{ form_timeout }}
-<!-- SUCCESS VIEW -->
-{% elif score == 100  %}
-{{ form_success }}
-<!-- ANSWER EDITOR  attempt 0-->
-{% elif attempt == 0  %}
-{{ editor|component }}
-<br>
-{{ form_instructions_sql_query }}
+<!-- NORMAL VIEW -->
 {% else %}
-<!-- ANSWER EDITOR attempt>0 -->
-{{ form_fail }}
 {{ editor|component }}
 <br>
 {{ form_instructions_sql_query }}
@@ -206,9 +186,10 @@ else:
     # noter la réponse de l'étudiant
     if string_student_answer == "youpi":
         score = 100
+        grade = (score, feedback_success)
     else:
         attempt += 1
-    grade=(score, "pouet")
+        grade=(score, feedback_fail)
 
 ==
 
