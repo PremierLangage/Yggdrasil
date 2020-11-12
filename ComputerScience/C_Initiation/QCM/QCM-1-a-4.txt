@@ -1373,7 +1373,8 @@ Quelle sont les en-têtes possibles de cette fonction ?
 
 # Catalogue 3 Prog C Olivier BOUILLOT
 
-**[nb=8,group=Erreurs1] 62 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs ou de warning à la compilation.
+**[nb=8,group=Erreurs1] 62 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs ou de warning à la compilation 
+(option de compilation -Wall et -ansi).
 
 
     #include <stdio.h>
@@ -1406,6 +1407,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - Aucune erreur ou warning n’est générée à la compilation
 
 **[nb=8,group=Erreurs1] 63 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs ou de warning à la compilation.
+(option de compilation -Wall et -ansi).
 
 
     #include <stdio.h>
@@ -1440,6 +1442,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - Aucune erreur ou warning n’est générée à la compilation
 
 **[nb=8,group=Erreurs1] 64 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs ou de warning à la compilation.
+(option de compilation -Wall et -ansi).
 
 
     #include <stdio.h>
@@ -1470,6 +1473,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - Aucune erreur ou warning n’est générée à la compilation
 
 **[nb=8,group=Erreurs1] 65 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs ou de warning à la compilation.
+(option de compilation -Wall et -ansi).
 
 
     #include <stdio.h>
@@ -1504,6 +1508,7 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - Aucune erreur ou warning n’est générée à la compilation
 
 **[nb=9,group=Erreurs2] 66 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs ou de warning à la compilation.
+(option de compilation -Wall et -ansi).
 
 
     #include <stdio.h>
