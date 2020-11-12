@@ -68,7 +68,7 @@ void print_buffer(int buffer[], int size){
     printf("%d - ", buffer[i]);
   if (size > 0)
     printf("%d", buffer[size-1]);
-  printf('\n');
+  putchar('\n');
 }
 
 void path_to_leafs_rec(Tree t, int buffer[], int index){
