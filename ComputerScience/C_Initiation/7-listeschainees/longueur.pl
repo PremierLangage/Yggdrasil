@@ -30,7 +30,7 @@ On utilisera les types:
 
 editor.code==
 ... nb_cellules(...) {
-  /* votre code ici... */
+   /* votre code ici... */
 }
 
 ==
