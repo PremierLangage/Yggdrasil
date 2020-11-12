@@ -207,7 +207,7 @@ else:
     if string_student_answer == "youpi":
         score = 100
     else:
-    #    attempt += 1
+        attempt += 1
     grade=(score, "")
 
 ==
