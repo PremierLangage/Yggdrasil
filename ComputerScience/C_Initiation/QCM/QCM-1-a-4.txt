@@ -785,7 +785,7 @@ second degré ax&sup2; + bx + c = 0 doit contenir au minimum...
 
 + En passant l’adresse de la variable en question en argument de la fonction.
 - En passant la variable en question en argument de la fonction.
-+ En passant la variable en question ainsi que son adresse en argument de la fonction.
++ En passant la variable en question et en faisant un return de cette variable.
 - On ne peut pas faire cela en C.
 
 **[nb=5,group=Echange_de_variable] 40 ) Parmi les fonctions suivantes, quelles sont celles qui réalisent un échange des variables
