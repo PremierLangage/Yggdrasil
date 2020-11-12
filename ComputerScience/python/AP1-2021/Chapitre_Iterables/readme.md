@@ -87,4 +87,7 @@ tag=ForInRange|append|listCreate
 **Commentaire**
 
 - Exo pour créer une liste des nombres de Fibonacci
-- 
+- Une petite clarification ajoutée, avec un peu plus de tests aléatoires
+- Tags ajoutés
+
+## Ex8 : 
