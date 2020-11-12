@@ -18,7 +18,7 @@ allow_reroll =  True
 #* on peut ajouter ici un script de definition d'énoncé et solution qui sera excécuté dans le before de l'exo
 generate== #|py|
 
-question = "Voilà ma question"
+question = "Voilà ma question: c'était quoi déjà"
 
 solution = "youpi"
 
