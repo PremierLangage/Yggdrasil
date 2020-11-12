@@ -11,7 +11,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
 text==  
 
-Ecrire une fonction `Cellule * extrait_suivant(Liste l, int precede)`, qui extrait,
+Ecrire une fonction `Cellule* extrait_suivant(Liste l, int precede)`, qui extrait,
 si elle existe la cellule située après celle contenant `precede`. La fonction renvoie
 l'adresse de la cellule extraite ou `NULL`. <br>
 <br>
