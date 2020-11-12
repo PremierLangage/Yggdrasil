@@ -10,7 +10,7 @@ Latex:1
 - les virgules
 - les points virgules 
 
-**[nb=5,group=separateur] 5 ) Quels sont les séparateurs dans un programme écrit en C ?
+**[nb=2,group=separateur] 576567 ) Quels sont les séparateurs dans un programme écrit en C ?
 
 + les espaces
 + les tabulations
