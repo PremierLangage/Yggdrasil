@@ -17,11 +17,12 @@ lorsque l'utilisateur n'entre rien avant le ``return``..<br>
 
 On utilisera les types: <br>
 <br>
+
     typedef struct cel{  
         int val;  
         struct cel* suivant;  
     } Cellule;  
-
+    <br>
     typedef Cellule* Liste;  
 
 
