@@ -113,5 +113,5 @@ tag=listRepeat|ForInRange|append
 - Exo pour faire répéter la liste donnée. Deux façons de faire : avec le syntaxe *, et avec un double parcours
 - Inconsistence entre les tests sont fixée. Maintenant la sémantique est simplement n * l.
 - Tags ajoutés
-
+- repetezip.pl est une duplication de cet exercice
 
