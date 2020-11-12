@@ -9,14 +9,18 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==  
 
-Ecrire une fonction `affiche `
-qui affiche, sur une ligne, les éléments d'une liste chainée passée en parametre.  
-On utilisera les types:  
-typedef struct cel{  
-int val;  
-struct cel* suivant;  
-}Cellule;  
-typedef Cellule* Liste  
+Ecrire une fonction `affiche ` qui affiche, sur une seule ligne, les éléments
+d'une liste chainée passée en parametre.  <br>
+<br>
+
+On utilisera les types:  <br>
+
+    typedef struct cel{  
+        int val;  
+        struct cel* suivant;  
+    } Cellule;
+
+    typedef Cellule* Liste  
 
 ==
 
@@ -94,6 +98,7 @@ tests==
   ["Aléatoire", "", " ".join([str(random.randint(0,100)) for i in range(random.randint(5,20))])+" -1"]
   ]
 ==
+
 
 
 
