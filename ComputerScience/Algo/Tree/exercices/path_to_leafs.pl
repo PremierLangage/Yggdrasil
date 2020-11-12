@@ -72,8 +72,10 @@ void print_buffer(int buffer[], int size){
 }
 
 void path_to_leafs_rec(Tree t, int buffer[], int index){
-  if ((t->left == NULL) && (t->right == NULL))
-    print_buffer(buffer, index);
+  if ((t->left == NULL) && (t->right == NULL)){
+    buffer[index] = t->value;
+    print_buffer(buffer, index+1);
+  }
   else{
     buffer[index] = t->value;
     if (t->left)
