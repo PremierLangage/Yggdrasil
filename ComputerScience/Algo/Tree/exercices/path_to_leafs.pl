@@ -19,16 +19,12 @@ extends=/ComputerScience/Algo/Tree/templates/std_progC_with_tree.pl
 author=Nicolas Borie
 
 title=Afficher les chemins racine-feuilles
-tag=arbre|algo|feuille|récursivité|interne
+tag=arbre|algo|feuille|récursivité|buffer
 
 editor.height=350px
 
 text==
-Écrire une fonction C **count_internal_nodes** qui prend en argument un **arbre** (un pointeur 
-vers le `Node` racine de l'arbre) et retourne un entier qui devra 
-être le **nombre de nœuds internes** dans l'arbre. Pour rappel, un nœud est 
-interne quand il possède au moins un fils. De manière équivalente, un nœud 
-qui n'est pas une feuille est un nœud interne.
+
 ==
 
 editor.code==#|c|
@@ -38,7 +34,15 @@ typedef struct node{
   struct node * right;
 }Node, *Tree;
 
-... count_internal_nodes(Tree t){
+... print_buffer(int buffer[], int size){
+  /* Votre code ici... */
+}
+
+... path_to_leafs_rec(Tree t, int buffer[], int index){
+  /* Votre code ici... */
+}
+
+... path_to_leafs(Tree t){
   /* Votre code ici... */
 }
 ==
