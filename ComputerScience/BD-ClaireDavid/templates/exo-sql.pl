@@ -169,10 +169,10 @@ if 'generate' in globals():
 #*===========================================================================
 evaluator== #|py|
 
-# pour ajouter des fonctions dans un fichier .py
-# ajouter le nom du fichier dans base.pl
+# TODO ajuster ici la fonction d'évaluation et la gestion du teste dessous
+# Ca devrait peut-être dans un fichier .py en ajoutant le nom du fichier dans base.pl
 # from monfichier import bla
-# fonction
+# fonction d'évaluation
 def mafonctionevaluation(string_student_answer, solution):
     return string_student_answer == solution
 
@@ -196,7 +196,7 @@ if attempt >= maxattempt: # timeout
     grade = (score, feedback_timeout)
 else:
     score = 0
-    # noter la réponse de l'étudiant - peut-être remplacé une fonction définie dans un script
+    # noter la réponse de l'étudiant
     if mafonctionevaluation(string_student_answer, solution):
         score = 100
         grade = (score, feedback_success)
