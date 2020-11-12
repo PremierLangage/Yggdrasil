@@ -125,7 +125,6 @@ def buildquestion(questionp):
                     else:
                         bads.append(r)
 
-
             nbg=int(d.get("nbg",1))
             nbb=int(d.get("nbb",3))
             
