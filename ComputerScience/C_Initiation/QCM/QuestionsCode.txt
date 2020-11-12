@@ -5,7 +5,7 @@ Latex:1
 
 +=["les tabulations"]
 +=["les retours à la ligne"]
--=["les points virgules"]
+- les points virgules
 +=["les espaces"]
 -=["les virgules"]
 
