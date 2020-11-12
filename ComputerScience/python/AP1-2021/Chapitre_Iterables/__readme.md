@@ -106,4 +106,4 @@ tag=reference|mutable|ForInRange|len
 
 @ /ComputerScience/python/AP1-2021/Chapitre_Iterables/repete-2021.pl
 
-
+tag=listRepeat|ForInRange|append
