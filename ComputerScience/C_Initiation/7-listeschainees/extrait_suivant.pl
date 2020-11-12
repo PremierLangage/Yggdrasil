@@ -11,15 +11,20 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 author= 
 text==  
 
-Ecrire une fonction `Cellule * extrait_suivant(Liste l,int precede)`, qui extrait, si elle existe la cellule située après 
-celle contenant `precede` .La fonction renvoie l'adresse de la cellule extraite ou NULL.
+Ecrire une fonction `Cellule * extrait_suivant(Liste l, int precede)`, qui extrait,
+si elle existe la cellule située après celle contenant `precede`. La fonction renvoie
+l'adresse de la cellule extraite ou `NULL`. <br>
+<br>
 
-On utilisera les types:  
-typedef struct cel{  
-int val;   
-struct cel* suivant;  
-}Cellule;  
-typedef Cellule* Liste;  
+On utilisera les types: <br>
+<br>
+
+    typedef struct cel{  
+        int val;   
+        struct cel* suivant;  
+    } Cellule;  
+
+    typedef Cellule* Liste;  
 
 ==
 
@@ -127,6 +132,7 @@ tests==
   ["Aléatoire", "",str(random.randint(3,10))+" " +" ".join([str(random.randint(0,100)) for i in range(random.randint(5,20)+10)])]
   ]
 ==
+
 
 
 
