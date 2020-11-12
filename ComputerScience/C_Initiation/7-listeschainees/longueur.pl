@@ -12,8 +12,8 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 text==  
 
 Ecrire une fonction `nb_cellules`
-qui renvoie le nombre d'éléments d'une liste chainée passée en parametre.  
-
+qui renvoie le nombre d'éléments d'une liste chainée passée en parametre.  <br>
+<br>
 
 On utilisera les types:  
 
@@ -103,6 +103,7 @@ tests==
   ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20))])+" -1"]
   ]
 ==
+
 
 
 
