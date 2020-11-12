@@ -25,7 +25,7 @@ editor.height=400px
 
 viewertext =: GraphDrawer
 
-viewer.graph ==
+viewertext.graph ==
 digraph G {
     1 -> 2;
     1 -> 3;
