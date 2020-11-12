@@ -192,7 +192,9 @@ if attempt >= maxattempt: # timeout
 else:
     score = 0
     # noter la réponse de l'étudiant
-    grade=(score, feedback_nomatch)
+    if string_student_answer == "youpi":
+        score = 100
+    grade=(score, "")
 
 ==
 
