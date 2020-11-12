@@ -197,7 +197,7 @@ if attempt >= maxattempt: # timeout
 else:
     score = 0
     # noter la réponse de l'étudiant - peut-être remplacé une fonction définie dans un script
-    if string_student_answer == solution:
+    if mafonction(string_student_answer, solution):
         score = 100
         grade = (score, feedback_success)
     else:
