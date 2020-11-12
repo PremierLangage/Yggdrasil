@@ -57,6 +57,8 @@ espace tiret esapce. On ne veut pas non plus d'espace final, la fonction
 d'affichage doit retourner à la ligne directement après l'étiquette de la 
 feuille.
 
+<br>
+
 Il faut aussi une fonction `path_to_leafs_rec` qui sera le coeur de 
 l'algorithmique. Cette fonction prend en argument un arbre (un pointeur 
 vers un nœud), un buffer et un index courrant. Si le pointeur désigne
@@ -64,6 +66,8 @@ une feuille, alors la fonction devra appeler la première fonction
 (d'affichage) avec le buffer correctement chargé. Si le pointeur désigne 
 un nœud interne, alors vous devrez remplir d'une case le buffer et 
 procéder aux appels récursif en direction des feuilles potentielles.
+
+<br>
 
 Enfin, la fonction `path_to_leafs` encapsule la fonction 
 `path_to_leafs_rec` en l'appelant correctement avec les bons 
