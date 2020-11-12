@@ -1715,13 +1715,13 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 
 **[nb=3,group=Renvoie_dun_code_derreur1] 78 ) Dans quel cas peut-il être intéressant qu’une fonction `int foo(int n)` renvoie un code d’erreur ?
 
-+ La valeur du paramètre n n'est pas dans le bon ensemble de valeurs.
++ La valeur du paramètre n n'est pas admise.
 - Lorsque le résultat de la fonction foo peut être n’importe quel entier. 
 - Jamais, cela ne sert à rien.
 
 **[nb=3,group=Renvoie_dun_code_derreur2] 79 ) Dans quel cas peut-il être intéressant qu’une fonction `int foo(int n, int * resultat)` renvoie un code d’erreur ?
 
-+ Les valeurs des paramètres n et resultat ne sont pas dans le bon ensemble de valeurs.
++ Les valeurs des paramètres n et resultat ne sont pas admises.
 - Lorsque le résultat de la fonction foo peut être n’importe quel entier. 
 - Jamais, cela ne sert à rien.
 
@@ -1898,9 +1898,9 @@ réel et **n** un entier positif. On veut pouvoir gérer le cas où la fonction 
 
 * [nb=4,group=Parametre] 90 ) Les paramètres d’une fonction sont toujours transmis :
 
-+ par adresse
+- par adresse
 - au moment de la compilation
-- par valeur
++ par valeur
 - par l’interpréteur
 
 ** [nb=5,group=InitAdresse] 91 ) La fonction f :
@@ -2903,6 +2903,7 @@ Qu’affiche l’appel affichageTruc(tab, 2, 4) lorsque tab est défini par `int
 - 10 2
 - 1 02
 - 1 0 2
+
 
 
 
