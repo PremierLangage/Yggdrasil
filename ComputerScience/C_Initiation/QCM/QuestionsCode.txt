@@ -6,9 +6,9 @@ Latex:1
 +=["les espaces","les tabulations","les retours à la ligne"]
 -=["les virgules","les points virgules"]
 
-=**[nbb=2,nbg=2] Indiquer les identifiants correctes
-+=["un","deux","ident","prout"]
--=["666","aujourd'hui", "def", "@lt;html@gt;"] 
+=**[nbb=3,nbg=2] Indiquer les identifiants correctes
++=["les espaces","les tabulations","les retours à la ligne"]
+-=["les virgules","les points virgules"]
 -=["!autres","truc%","pour ris"]
 - for
 -=["list","int","dic"]
