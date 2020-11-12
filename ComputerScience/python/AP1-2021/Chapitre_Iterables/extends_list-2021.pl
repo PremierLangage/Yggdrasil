@@ -18,7 +18,7 @@ taboo: Ne pas utiliser la fonction <font style="color:red;">{{taboo}}</font> des
 
 taboo=append
 
-tag=reference|append|ForInRange|mutable
+tag=reference|extend|ForInRange|mutable
 
 before==
 # solution --- utilise extends
@@ -47,6 +47,7 @@ pltest2==
 >>> lst
 [5, 3, 6, 9]
 ==
+
 
 
 
