@@ -87,7 +87,7 @@ Syntaxe: Attention de ne pas oublier le ; à la fin de votre requête
 title= PLEASE OVERRIDE THE KEY **title=** TO CHANGE THIS TEXT
 
 ## exercise instructions -- should be override in the exercise file
-text= PLEASE OVERRIDE THE KEY **text=** TO CHANGE THIS TEXT
+text= question
 
 ## In this form :
 #   the editor for the student to provide an answer
@@ -152,10 +152,9 @@ maxattempt = int(maxattempt)
 allow_reroll = (allow_reroll == "True")
 show_solution = (show_solution == "False")
 
+question = "Que vaut bla bla ?" 
 
 solution = 42
-
-
 
 ==
 
