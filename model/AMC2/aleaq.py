@@ -127,7 +127,7 @@ def buildquestion(questionp):
 
             nbg=int(d.get("nbg",len(goods)))
             nbb=int(d.get("nbb",len(bads)))
-            
+
             bads= random.sample(bads ,min(len(bads),nbb)) 
             random.shuffle(bads)
             goods=random.sample(goods ,min(len(goods), nbg))
