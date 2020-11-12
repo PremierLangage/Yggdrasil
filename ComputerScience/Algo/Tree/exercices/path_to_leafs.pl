@@ -72,8 +72,8 @@ procéder aux appels récursif en direction des feuilles potentielles.
 Enfin, la fonction `path_to_leafs` encapsule la fonction 
 `path_to_leafs_rec` en l'appelant correctement avec les bons 
 arguments. On vous garantie juste que le `buffer[MAX_HEIGHT]`
-est un tableau de taille suffisante pour toutes les utilisations
-qui suivront.
+est un tableau de taille suffisante pour contenir toute branche
+possible dans toutes les utilisations qui suivront.
 ==
 
 editor.code==#|c|
