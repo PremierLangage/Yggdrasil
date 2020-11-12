@@ -14,10 +14,6 @@ allow_reroll = True
 #* When True show a solution after timeout.
 show_solution = False
 
-#* define what type of answer is expected from the student
-#   sql-query -> add text editor in the form
-answer_type = sql_query
-
 #* Define a code editor component
 editor =: CodeEditor
 
@@ -45,36 +41,36 @@ editor.language = sql
 #*  (2) in html forms
 #*
 
-#* feedback after a good answer.
-feedback_match = <p class="success-state">Bravo! C'est une bonne réponse.</p>
 
-#* feedback after a bad answer.
-feedback_nomatch = <p class="error-state">Votre réponse n'est pas correcte.</p>
+#* feedback in case of success
+feedback_success = <p> Bravo! Vous avez réussi! </p>
+
+#* feedback in case of error. {0} is replaced by the occured error
+feedback_error = <p class="error-state">Votre réponse n'est pas correcte.<br>{0}</p>
 
 #* feedback after timeout.
 feedback_timeout =  <p class="warning-state"> Vous n'avez pas réussi l'exercice. Relisez votre cours avant de rééessayer.</p>
 
 #* feedback before showing a solution
-feedback_show_solution = <p class="warning-state">Voici une réponse possible à la question.<br>{0}</p>
+feedback_show_solution = <p class="warning-state">Voici une réponse possible à la question.<br></p>
 
-#* feedback in case of syntax error. {0} is replaced by the occured error
-feedback_syntax_error = <p class="warning-state">{0}</p>
-#feedback_syntax_error = <p class="warning-state">Erreur de syntaxe </p>
 
 #*===========================================================================
 #* ADDITIONNAL HTML FORM
 #*===========================================================================
 #* override this key to change the text shown after timeout.
 form_timeout== #|html|
+{{ feedback_timeout }}
 {% if show_solution %}
 {{ feedback_show_solution }}
+{{ solution }}
 {% endif %}
 == 
 
 #*=========================================================================================
 #* override this key to add content after feedback in case of good answer.
 form_success== #|html|
-<p> Bravo! Vous avez réussi! </p>
+{{ feedback_succes }}
 == 
 
 #*===========================================================================
@@ -112,11 +108,10 @@ form== #|html|
 {% endif %}
 
 <!-- ANSWER EDITOR -->
-{% if answer_type == "sql_query"  %}
 {{ editor|component }}
 <br>
 {{ form_instructions_sql_query }}
-{% endif %}
+
 
 
 
@@ -181,25 +176,22 @@ evaluator== #|py|
 error = ""
 
 ## Get the student answer:
-if answer_type == "sql_query" :
-    try:
-        student_answer = editor
-        string_student_answer = editor.code
-    except Exception:
-        error = "Syntax error"
-else :
-    error = "type de réponse non défini"
+try:
+    student_answer = editor
+    string_student_answer = editor.code
+except Exception:
+    error = "Syntax error"
 
 
 ## Check the student answer:
 if error :
 #    attempt += 1
-    grade = (-1, feedback_syntax_error.format(error))
+    grade = (-1, feedback_error.format(error))
 if attempt >= maxattempt: # timeout
     grade = (score, feedback_timeout)
 else:
     score = 0
-    # noter la répnse de l'étudiant
+    # noter la réponse de l'étudiant
     grade=(score, feedback_nomatch)
 
 ==
