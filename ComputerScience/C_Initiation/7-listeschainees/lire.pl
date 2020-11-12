@@ -31,8 +31,7 @@ On utilisera les types: <br>
 
 editor.code==
 void lire(...) {
-...
-  /* votre code ici... */
+    /* votre code ici... */
 }
 
 ==
