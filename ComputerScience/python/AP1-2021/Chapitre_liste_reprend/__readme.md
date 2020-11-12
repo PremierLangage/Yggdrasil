@@ -120,3 +120,9 @@ tag=listRepeat|ForInRange|append
 @ /ComputerScience/python/AP1-2021/Chapitre_Iterables/supprime_pair-2021.pl
 
 tag=mutable|reference|elementAccess|pop
+
+**Commentaire**
+
+- Exo difficile pour supprimer les éléments pairs dans la liste en argument.
+- Deux solutions possibles : soit faire pop directement dans la liste en respectant les indices, soit construire une nouvelle liste
+- Tags ajoutés, hints des deux méthodes ajoutés
