@@ -12,6 +12,8 @@ Par exemple, si on avait une liste `l = [2, 4, 5, 6, 7]`, alors après l'appel `
 la valeur de `l` doit devenir `[1, 1, 5, 1, 7]`.
 ==
 
+tag=reference|mutable|ForInRange|len
+
 before==
 # solution --- utilise len
 def remppair(lst) :
