@@ -23,7 +23,7 @@ generate== #|py|
 
 import sqlite3
 
-filename = @ ../databases/magasin.db
+filename =@ ../databases/magasin.db
 conn = sqlite3.connect(':memory:')
 
 cursor = conn.cursor()
