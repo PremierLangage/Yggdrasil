@@ -45,7 +45,7 @@ Latex:1
 + Une erreur ou un warning
 - 75
 
-**[nb=4,group=Resultat_code] 31 ) Qu'affiche la compilation **et/ou** l'exécution du programme suivant ?
+**[nb=8,group=Resultat_code] 31 ) Qu'affiche la compilation **et/ou** l'exécution du programme suivant ?
 
 
      #include <stdio.h>
