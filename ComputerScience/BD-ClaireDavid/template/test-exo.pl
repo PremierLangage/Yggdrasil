@@ -49,7 +49,7 @@ feedback_success = <p> Bravo! Vous avez réussi! </p>
 feedback_error = <p class="error-state">Votre réponse a provoqué une erreur.<br>{0}</p>
 
 #* feedback in case of error. {0} is replaced by the occured error
-feedback_fail = <p class="error-state">Votre réponse n'est pas correcte. Réessayez.<br>{0}</p>
+feedback_fail = <p class="error-state">Votre réponse n'est pas correcte. Réessayez.</p>
 
 #* feedback after timeout.
 feedback_timeout =  <p class="warning-state"> Vous n'avez pas réussi l'exercice. Relisez votre cours avant de rééessayer.</p>
