@@ -182,7 +182,7 @@ except Exception:
 
 ## Check the student answer:
 if error :
-#    attempt += 1
+    attempt += 1
     grade = (-1, feedback_error.format(error))
 if attempt >= maxattempt: # timeout
     grade = (score, feedback_timeout)
