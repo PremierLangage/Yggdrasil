@@ -1,7 +1,7 @@
 
 Latex:1
 
-**[group=separateur, nbG=5] 5 ) Quels sont les séparateurs dans un programme écrit en C ?
+**[group=separateur, nbg=5] 5 ) Quels sont les séparateurs dans un programme écrit en C ?
 
 - les points virgules
 - les virgules
