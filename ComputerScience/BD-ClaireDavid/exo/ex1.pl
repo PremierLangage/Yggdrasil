@@ -24,7 +24,6 @@ generate== #|py|
 question = "Voilà ma question: c'était quoi déjà ?"
 
 solution = "youpi"
-
 ==
 
 
