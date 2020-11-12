@@ -14,6 +14,7 @@ d'une liste chainée passée en parametre.  <br>
 <br>
 
 On utilisera les types:  <br>
+<br>
 
     typedef struct cel{  
         int val;  
