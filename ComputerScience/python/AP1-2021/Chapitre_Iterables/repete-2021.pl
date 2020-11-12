@@ -30,30 +30,4 @@ def repete(n, l):
     return n*[l]
 
 ==
- 
-
-tests %=
-{
-    "correct" : {
-        "response" : {
-            "answer" : "def retiredoublons(l):\n    l2=[]\n    for x in l:\n         if x not in l2:\n             l2.append(x)\n    return l2"
-        },
-        "grade" : 100,
-        "seed":12
-    },
-     "Incorrect" : {
-        "response" : {
-            "answer" : "def fusion(a,b):\n    return [a, b]\n"
-        },
-        "grade" : 0,
-        "seed":12
-    }
-}
-==
-
-
-
-
-
-
 
