@@ -4,7 +4,7 @@ Liste des exercices sur les itérables, avec description simple, les tags et les
 
 Les tags sont séparés par |
 
-Liste des tags : append|mutable|reference|listCreate|elementAccess|listCopy|ForInRange|tuple|inlist|extend|len
+Liste des tags : append|mutable|reference|listCreate|elementAccess|listCopy|ForInRange|tuple|inlist|extend|len|listRepeat
 
 ## Ex1 : Ajout d'éléments dans une liste
 
@@ -102,4 +102,8 @@ tag=reference|mutable|ForInRange|len
 - Un exemple ajouté
 - Tags ajoutés
 
-## 
+## Ex9 : Création d'une liste de répétitions
+
+@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/repete-2021.pl
+
+
