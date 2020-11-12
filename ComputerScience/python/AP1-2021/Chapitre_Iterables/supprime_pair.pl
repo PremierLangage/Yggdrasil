@@ -6,9 +6,16 @@ builder= /builder/before.py
 
 title = Manipulation de liste 
 text == 
-Ecrire une fonction `suppair` qui prend en argument une liste et supprime tous les éléments pairs de celle-ci.
+Ecrire une fonction `suppair` qui prend en argument une liste d'entiers et supprime tous les éléments pairs de celle-ci.
 
-Par exemple, si on avait 
+Par exemple, si on avait une liste `l = [2, 6, 5, 8, 9]`, alors après l'appel `suppair(l)`, **qui ne retourne rien et n'affiche rien**,
+la valeur de `l` doit devenir `[5, 9]`.
+
+**Hint** : vous pouvez modifié directement la liste en utilisant la méthode `pop` pour une liste (`l.pop(i)` efface l'élément d'indice `i` dans la liste `l`). 
+Attention, il faut tenir en compte que cette méthode change aussi les indices des éléménts qui viennent après !
+
+**Hint** : pour une autre façon de faire, vous pouvez aussi créer une nouvelle liste qui retient tous les éléménts impairs de la liste en paramètre, 
+puis vider la liste originale et la remplir avec les éléments gardés dans la nouvelle liste.
 ==
 
 before==
@@ -20,6 +27,13 @@ def suppair(lst) :
             lst.pop(i)
         else :
             i=i+1
+
+# solution alternative -- créer une nouvelle liste
+def suppair2(l):
+    ll = [e for e in l if e%2 != 0]
+    l.clear()
+    for e in ll:
+        l.append(e)
 
 after=before
 ==
