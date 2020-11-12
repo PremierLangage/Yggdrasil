@@ -46,7 +46,10 @@ editor.language = sql
 feedback_success = <p> Bravo! Vous avez réussi! </p>
 
 #* feedback in case of error. {0} is replaced by the occured error
-feedback_error = <p class="error-state">Votre réponse n'est pas correcte.<br>{0}</p>
+feedback_error = <p class="error-state">Votre réponse a provoqué une erreur.<br>{0}</p>
+
+#* feedback in case of error. {0} is replaced by the occured error
+feedback_fail = <p class="error-state">Votre réponse n'est pas correcte. Réessayez.<br>{0}</p>
 
 #* feedback after timeout.
 feedback_timeout =  <p class="warning-state"> Vous n'avez pas réussi l'exercice. Relisez votre cours avant de rééessayer.</p>
@@ -71,6 +74,12 @@ form_timeout== #|html|
 #* override this key to add content after feedback in case of good answer.
 form_success== #|html|
 {{ feedback_success }}
+== 
+
+#*=========================================================================================
+#* override this key to add content after feedback in case of wrong answer.
+form_fail== #|html|
+{{ feedback_fail }}
 == 
 
 #*===========================================================================
@@ -103,8 +112,14 @@ form== #|html|
 <!-- SUCCESS VIEW -->
 {% elif score == 100  %}
 {{ form_success }}
+<!-- ANSWER EDITOR  attempt 0-->
+{% elif attempt == 0  %}
+{{ editor|component }}
+<br>
+{{ form_instructions_sql_query }}
 {% else %}
-<!-- ANSWER EDITOR -->
+<!-- ANSWER EDITOR attempt>0 -->
+{{ form_fail }}
 {{ editor|component }}
 <br>
 {{ form_instructions_sql_query }}
@@ -182,7 +197,7 @@ except Exception:
 
 ## Check the student answer:
 if error :
-    attempt += 1
+#    attempt += 1
     grade = (-1, feedback_error.format(error))
 if attempt >= maxattempt: # timeout
     grade = (score, feedback_timeout)
@@ -191,6 +206,8 @@ else:
     # noter la réponse de l'étudiant
     if string_student_answer == "youpi":
         score = 100
+    else:
+    #    attempt += 1
     grade=(score, "")
 
 ==
