@@ -18,7 +18,7 @@ extends=/ComputerScience/Algo/Tree/templates/std_progC_with_tree.pl
 
 author=Nicolas Borie
 
-title=Afficher les chemins racine-feuilles
+title=Afficher tous les chemins racine-feuilles
 tag=arbre|algo|feuille|récursivité|buffer
 
 editor.height=400px
