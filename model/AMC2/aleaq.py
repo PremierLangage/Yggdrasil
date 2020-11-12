@@ -125,8 +125,8 @@ def buildquestion(questionp):
                     else:
                         bads.append(r)
 
-            nbg=int(d.get("nbg",1))
-            nbb=int(d.get("nbb",3))
+            nbg=int(d.get("nbg",len(goods)))
+            nbb=int(d.get("nbb",len(bads)))
             
             bads= random.sample(bads ,min(len(bads),nbb)) 
             random.shuffle(bads)
