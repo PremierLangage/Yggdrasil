@@ -208,7 +208,7 @@ else:
         score = 100
     else:
         attempt += 1
-    grade=(score, "")
+    grade=(score, "pouet")
 
 ==
 
