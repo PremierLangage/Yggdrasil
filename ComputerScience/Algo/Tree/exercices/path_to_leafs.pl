@@ -23,11 +23,25 @@ tag=arbre|algo|feuille|récursivité|buffer
 
 editor.height=400px
 
-text==
+viewer =: GraphDrawer
+
+viewer.graph ==
+digraph G {
+    1 -> 2;
+    1 -> 3;
+    3 -> 4;
+    3 -> 5;
+}
+==
+
+text==#|markdown|
 Dans cet exercice, on souhaite produire du code pour afficher ligne par 
 ligne tous les chemins de la racine d'un arbre binaire vers chacune de 
 ses feuilles.
 
+Prenons un exemple avec le graphe suivant :
+
+ {{ viewer|component }}
 ==
 
 editor.code==#|c|
