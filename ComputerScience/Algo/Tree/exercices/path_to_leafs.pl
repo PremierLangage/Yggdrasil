@@ -133,11 +133,10 @@ int build_tree(Tree* t){
 
 int main(int argc, char* argv[]){
   Tree t=NULL;
-  int n;
 
   build_tree(&t);
   
-  path_to_leafs(Tree t);
+  path_to_leafs(t);
   return 0;
 }
 ==
