@@ -1,11 +1,6 @@
 
 Latex:1
 
-=**[nb=5, group=separateur] 5 ) Quels sont les séparateurs dans un programme écrit en C
-
-+=["les espaces","les tabulations","les retours à la ligne"]
--=["les virgules","les points virgules"]
-
 =**[nbb=3,nbg=2] Indiquer les identifiants correctes
 +=["les espaces","les tabulations","les retours à la ligne"]
 -=["les virgules","les points virgules"]
