@@ -4,7 +4,7 @@
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 builder= /builder/before.py
 
-title = Manipulation de liste 
+title = Supprimer les éléments pairs 
 text == 
 Ecrire une fonction `suppair` qui prend en argument une liste d'entiers et supprime tous les éléments pairs de celle-ci.
 
