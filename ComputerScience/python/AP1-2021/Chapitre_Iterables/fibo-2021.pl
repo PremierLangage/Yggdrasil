@@ -32,6 +32,9 @@ $%n%$ premiers nombres de la suite (de $%f_0%$ jusqu'à $%f_{n-1}%$). Si $%n%$ e
 []
 </code></pre>
 ==
+
+tag=ForInRange|append|listCreate
+
 before==
 def fibo(n):
     if n<=0:
@@ -49,6 +52,18 @@ import random
 n=random.randint(11,51)
 
 pltest3=""">>> fibo({})\n{}""".format(n,fibo(n))
+
+n=random.randint(11,51)
+
+pltest4=""">>> fibo({})\n{}""".format(n,fibo(n))
+
+n=random.randint(11,51)
+
+pltest5=""">>> fibo({})\n{}""".format(n,fibo(n))
+
+n=random.randint(11,51)
+
+pltest6=""">>> fibo({})\n{}""".format(n,fibo(n))
 
 after=before
 ==
