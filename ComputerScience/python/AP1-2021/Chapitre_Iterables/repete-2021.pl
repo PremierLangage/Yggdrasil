@@ -7,7 +7,7 @@ text==
 
 Ecrire une fonction `repete` à deux paramètres (un entier `n` une liste `ll`)  qui retourne une nouvelle liste composée de n copies de chaque éléments de `l`.
 
-Par exemple,  `repete(3,['Non', 'Oui'])` donne `['Non', 'Oui', 'Non', 'Non', 'Non', 'Non']`
+Par exemple,  `repete(3,['Non', 'Oui'])` donne `['Non', 'Oui', 'Non', 'Oui', 'Non', 'Oui']`
 
 taboo: Ne pas utiliser la fonction <font style="color:red;">{{taboo}}</font> des listes.
 ==
@@ -50,6 +50,7 @@ tests %=
     }
 }
 ==
+
 
 
 
