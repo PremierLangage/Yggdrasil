@@ -29,7 +29,7 @@ On utilisera les types:
 == 
 
 editor.code==
-....nb_cellules(...) {
+... nb_cellules(...) {
 ...
   /* votre code ici... */
 }
