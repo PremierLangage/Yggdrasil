@@ -39,11 +39,11 @@ Latex:1
 
      }
 
-+ les espaces
-+ les tabulations
-+ les retours à la ligne
-- les virgules
-- les points virgules 
++ "les espaces"
++ "les tabulations"
++ "les retours à la ligne"
+- "les virgules"
+- "les points virgules" 
 
 
 
