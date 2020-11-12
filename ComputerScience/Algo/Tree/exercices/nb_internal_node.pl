@@ -38,7 +38,7 @@ typedef struct node{
   struct node * right;
 }Node, *Tree;
 
-... count_leaf(Tree t){
+... count_internal_nodes(Tree t){
   /* Votre code ici... */
 }
 ==
@@ -50,12 +50,12 @@ typedef struct node{
   struct node * right;
 }Node, *Tree;
 
-int count_leaf(Tree t){
+int count_internal_nodes(Tree t){
   if (t == NULL)
     return 0;
-  if ((t->left == NULL) && (t->right == NULL))
-    return 1;
-  return count_leaf(t->left) + count_leaf(t->right);
+  if ((t->left != NULL) || (t->right != NULL))
+    return 1 + count_internal_nodes(t->left) + count_internal_nodes(t->right);
+  return 0;
 }
 ==
 
