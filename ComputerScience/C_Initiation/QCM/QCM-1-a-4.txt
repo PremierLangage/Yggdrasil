@@ -1626,13 +1626,13 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur renvoie ?
 
 - warning:  using the result of an assignment as a condition without parentheses
-- error: implicitly declaring library function ’printf’ with type ’int (const char *, ...)’
-- error: implicitly declaring library function ’scanf’ with type ’int (const char *restrict, ...)’
++ error: implicitly declaring library function ’printf’ with type ’int (const char *, ...)’
++ error: implicitly declaring library function ’scanf’ with type ’int (const char *restrict, ...)’
 - error: expected ’(’ after ’if’
 - error: expected ’}’
 + warning: variable ’n’ is uninitialized when used here
-+ warning: format specifies type ’int *’ but the argument has type ’int’ error: expected ’;’ after expression
-+ error: expected ’;’ after declaration
++ warning: format specifies type ’int *’ but the argument has type ’int’
+- error: expected ’;’ after declaration
 - Aucune erreur ou warning n’est générée à la compilation
 
 **[nb=9,group=Erreurs2] 69 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs ou de warning à la compilation.
