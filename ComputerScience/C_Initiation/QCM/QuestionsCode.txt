@@ -66,10 +66,10 @@ Latex:1
 
      }
 
-+ les espaces
-+ les tabulations
 - 2.0
++ les espaces
 - 2
++ les tabulations
 - 2.5
 + les retours à la ligne
 - les virgules
