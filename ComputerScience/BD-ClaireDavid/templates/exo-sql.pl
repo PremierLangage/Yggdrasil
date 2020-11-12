@@ -172,9 +172,9 @@ evaluator== #|py|
 # pour ajouter des fonctions dans un fichier .py
 # ajouter le nom du fichier dans base.pl
 # from monfichier import bla
-
-def mafonction( reponse, soluce):
-    return reponse == soluce
+# fonction
+def mafonctionevaluation(string_student_answer, solution):
+    return string_student_answer == solution
 
 
 # pour récupérer les erreurs
@@ -197,7 +197,7 @@ if attempt >= maxattempt: # timeout
 else:
     score = 0
     # noter la réponse de l'étudiant - peut-être remplacé une fonction définie dans un script
-    if mafonction(string_student_answer, solution):
+    if mafonctionevaluation(string_student_answer, solution):
         score = 100
         grade = (score, feedback_success)
     else:
