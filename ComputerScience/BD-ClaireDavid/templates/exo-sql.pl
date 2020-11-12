@@ -158,10 +158,6 @@ question = "question par defaut ?"
 # solution par defaut si non définie dans le generate de l'exo
 solution = "42"
 
-# evaluation par defaut si non définie dans le generate de l'exo
-def fonction_evaluation(string_student_answer,solution):
-    return string_student_answer == solution
-
 
 
 if 'generate' in globals():
@@ -193,7 +189,7 @@ if attempt >= maxattempt: # timeout
 else:
     score = 0
     # noter la réponse de l'étudiant
-    if fonction_evaluation(string_student_answer, solution):
+    if string_student_answer == solution:
         score = 100
         grade = (score, feedback_success)
     else:
