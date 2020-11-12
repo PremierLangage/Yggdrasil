@@ -53,9 +53,15 @@ n=random.randint(-4,14)
 
 pltest3=f">>> carres_Gauss({n})\n{carres_Gauss(n)}"
 
+n=random.randint(-4,14)
+
 pltest4=f">>> carres_Gauss({n})\n{carres_Gauss(n)}"
 
+n=random.randint(-4,14)
+
 pltest5=f">>> carres_Gauss({n})\n{carres_Gauss(n)}"
+
+n=random.randint(-4,14)
 
 pltest6=f">>> carres_Gauss({n})\n{carres_Gauss(n)}"
 
@@ -77,6 +83,7 @@ pltest2==
 >>> carres_Gauss(0)
 [(0, 0)]
 ==
+
 
 
 
