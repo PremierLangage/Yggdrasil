@@ -24,6 +24,9 @@ tag=arbre|algo|feuille|récursivité|buffer
 editor.height=350px
 
 text==
+Dans cet exercice, on souhaite produire du code pour afficher ligne par 
+ligne tous les chemins de la racine d'un arbre binaire vers chacune de 
+ses feuilles.
 
 ==
 
@@ -54,12 +57,21 @@ typedef struct node{
   struct node * right;
 }Node, *Tree;
 
-int count_internal_nodes(Tree t){
-  if (t == NULL)
-    return 0;
-  if ((t->left != NULL) || (t->right != NULL))
-    return 1 + count_internal_nodes(t->left) + count_internal_nodes(t->right);
-  return 0;
+void print_buffer(int buffer[], int size){
+  int i;
+  for(i=0 ; i<size-1 ; i++)
+    printf("%d - ", buffer[i]);
+  if (size > 0)
+    printf("%d", buffer[size-1]);
+  printf('\n');
+}
+
+void path_to_leafs_rec(Tree t, int buffer[], int index){
+  
+}
+
+... path_to_leafs(Tree t){
+  /* Votre code ici... */
 }
 ==
 
