@@ -43,13 +43,33 @@ Prenons un exemple avec le graphe suivant :
 
 {{ viewer|component }}
 
-Cet arbre à 3 feuille
+Cet arbre à 3 feuilles. Parcourant les feuilles de la gauche vers la droite, 
+on voudrait afficher pour cet arbre les trois chemins suivants :
 
     1 - 2
     1 - 3 - 4
     1 - 3 - 5
 
+Pour cela, il faudra coder trois fonctions au responabilités distinctes. La 
+fonction `print_buffer` devra afficher un chemin stocké dans le `buffer`.
+Si le chemin est de longueur 1, il y a pas de besoin de la séparation 
+espace tiret esapce. On ne veut pas non plus d'espace final, la fonction
+d'affichage doit retourner à la ligne directement après l'étiquette de la 
+feuille.
 
+Il faut aussi une fonction `path_to_leafs_rec` qui sera le coeur de 
+l'algorithmique. Cette fonction prend en argument un arbre (un pointeur 
+vers un nœud), un buffer et un index courrant. Si le pointeur désigne
+une feuille, alors la fonction devra appeler la première fonction 
+(d'affichage) avec le buffer correctement chargé. Si le pointeur désigne 
+un nœud interne, alors vous devrez remplir d'une case le buffer et 
+procéder aux appels récursif en direction des feuilles potentielles.
+
+Enfin, la fonction `path_to_leafs` encapsule la fonction 
+`path_to_leafs_rec` en l'appelant correctement avec les bons 
+arguments. On vous garantie juste que le `buffer[MAX_HEIGHT]`
+est un tableau de taille suffisante pour toutes les utilisations
+qui suivront.
 ==
 
 editor.code==#|c|
