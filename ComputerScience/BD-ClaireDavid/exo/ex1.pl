@@ -23,7 +23,7 @@ generate== #|py|
 
 import sqlite3
 
-conn = sqlite3.connect('file:databases/magasin.db?mode=ro', uri=True)
+conn = sqlite3.connect(':memory:')
 
 cursor = conn.cursor()
 
