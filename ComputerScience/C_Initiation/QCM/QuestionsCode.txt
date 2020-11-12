@@ -68,6 +68,9 @@ Latex:1
 
 + les espaces
 + les tabulations
+- 2.0
+- 2
+- 2.5
 + les retours à la ligne
 - les virgules
 - les points virgules 
