@@ -18,8 +18,6 @@ Latex:1
 - les virgules
 - les points virgules 
 
-
-
 **[nb=4,group=Resultat_code] 31 ) Qu'affiche la compilation **et/ou** l'exécution du programme suivant ?
 
 
