@@ -10,17 +10,22 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==  
 
-Ecrire une fonction `lire `
-qui lit les éléments d'une liste chainée. La liste est passée en parametre et supposée NULL a l'appel. 
-On utilisera les types:  
-typedef struct cel{  
-int val;  
-struct cel* suivant;  
-}Cellule;  
-typedef Cellule* Liste;  
+Ecrire une fonction `lire` qui lit les éléments successif d'une liste chainée au clavier.
+La liste est passée en parametre et supposée `NULL` a l'appel. La saisie s'arrête
+lorsque l'utilisateur n'entre rien avant le ``return``..<br>
+<br>
+
+On utilisera les types: <br>
+<br>
+    typedef struct cel{  
+        int val;  
+        struct cel* suivant;  
+    } Cellule;  
+
+    typedef Cellule* Liste;  
 
 
-Remarque vous pouvez utiliser la fonction nextEntier que vous avez écrite. A condition de la copier dans l'éditeur.
+**Remarque :** Vous pouvez utiliser la fonction nextEntier que vous avez écrite. A condition de la copier dans l'éditeur.
 ==
 
 editor.code==
@@ -97,6 +102,7 @@ tests==
   ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20)+10)])]
   ]
 ==
+
 
 
 
