@@ -159,7 +159,7 @@ question = "question par defaut ?"
 solution = "42"
 
 # evaluation par defaut si non définie dans le generate de l'exo
-def eval(string_student_answer,solution):
+def evaluation(string_student_answer,solution):
     return string_student_answer == solution
 
 
