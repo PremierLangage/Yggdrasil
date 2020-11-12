@@ -145,6 +145,9 @@ form== #|html|
 before== #|py|
 import random
 
+# ajouter le nom du fichier dans base.pl
+#from monfichier import bla
+
 score = -1
 attempt = 0
 maxattempt = int(maxattempt)
@@ -169,6 +172,9 @@ if 'generate' in globals():
 #*===========================================================================
 evaluator== #|py|
 
+# ajouter le nom du fichier dans base.pl
+#from monfichier import bla
+
 # pour récupérer les erreurs
 error = ""
 
@@ -188,7 +194,7 @@ if attempt >= maxattempt: # timeout
     grade = (score, feedback_timeout)
 else:
     score = 0
-    # noter la réponse de l'étudiant
+    # noter la réponse de l'étudiant - peut-être remplacé une fonction définie dans un script
     if string_student_answer == solution:
         score = 100
         grade = (score, feedback_success)
