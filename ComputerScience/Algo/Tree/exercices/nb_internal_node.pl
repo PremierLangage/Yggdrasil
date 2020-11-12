@@ -107,10 +107,10 @@ int main(int argc, char* argv[]){
 
   build_tree(&t);
   
-  if ((n = count_leaf(t)) <= 1)
-    printf("L'arbre transmis sur l'entrée standard contient : %d feuille\n", n);
+  if ((n = count_internal_nodes(t)) <= 1)
+    printf("L'arbre transmis sur l'entrée standard contient : %d noeud interne\n", n);
   else
-    printf("L'arbre transmis sur l'entrée standard contient : %d feuilles\n", n);
+    printf("L'arbre transmis sur l'entrée standard contient : %d noeuds internes\n", n);
   return 0;
 }
 ==
