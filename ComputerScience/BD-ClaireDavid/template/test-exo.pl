@@ -70,7 +70,7 @@ form_timeout== #|html|
 #*=========================================================================================
 #* override this key to add content after feedback in case of good answer.
 form_success== #|html|
-{{ feedback_succes }}
+{{ feedback_success }}
 == 
 
 #*===========================================================================
@@ -100,18 +100,15 @@ form== #|html|
 <!-- TIMEOUT VIEW -->
 {% if attempt >= maxattempt %}
 {{ form_timeout }}
-{% endif %}
-
 <!-- SUCCESS VIEW -->
-{% if score == 100  %}
+{% elif score == 100  %}
 {{ form_success }}
-{% endif %}
-
+{% else %}
 <!-- ANSWER EDITOR -->
 {{ editor|component }}
 <br>
 {{ form_instructions_sql_query }}
-
+{% endif %}
 
 
 
