@@ -37,6 +37,8 @@ typedef struct node{
   struct node * right;
 }Node, *Tree;
 
+#define MAX_HEIGHT 500
+
 ... print_buffer(int buffer[], int size){
   /* Votre code ici... */
 }
@@ -46,6 +48,7 @@ typedef struct node{
 }
 
 ... path_to_leafs(Tree t){
+  int buffer[MAX_HEIGHT];
   /* Votre code ici... */
 }
 ==
