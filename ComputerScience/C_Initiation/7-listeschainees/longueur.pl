@@ -15,8 +15,8 @@ Ecrire une fonction `nb_cellules`
 qui renvoie le nombre d'éléments d'une liste chainée passée en parametre.  <br>
 <br>
 
-On utilisera les types:  
-
+On utilisera les types:  <br>
+<br>
 
     typedef struct cel{  
         int val;  
@@ -102,6 +102,7 @@ tests==
   ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20))])+" -1"]
   ]
 ==
+
 
 
 
