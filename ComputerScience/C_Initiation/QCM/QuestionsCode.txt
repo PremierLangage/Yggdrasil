@@ -1,12 +1,24 @@
 
 Latex:1
 
-=**[nbb=2,nbg=3] Indiquer les identifiants correctes
-+=["les espaces"]
-+=["les tabulations"]
-+=["les retours à la ligne"]
--=["les virgules"]
--=["les points virgules"]
+
+**[group=separateur] 5 ) Quels sont les séparateurs dans un programme écrit en C ?
+
++ les espaces
++ les tabulations
++ les retours à la ligne
+- les virgules
+- les points virgules 
+
+**[nb=5,group=separateur] 5 ) Quels sont les séparateurs dans un programme écrit en C ?
+
++ les espaces
++ les tabulations
++ les retours à la ligne
+- les virgules
+- les points virgules 
+
+
 
 **[nb=4,group=Resultat_code] 31 ) Qu'affiche la compilation **et/ou** l'exécution du programme suivant ?
 
@@ -29,10 +41,11 @@ Latex:1
 
      }
 
-- 2.0
-- 2
-- 2.5
-+ Une erreur ou un warning
++ les espaces
++ les tabulations
++ les retours à la ligne
+- les virgules
+- les points virgules 
 
 
 
