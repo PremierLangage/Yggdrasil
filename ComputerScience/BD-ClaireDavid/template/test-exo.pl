@@ -159,9 +159,6 @@ form== #|html|
 before== #|py|
 import random
 
-from automaton import Automaton
-from generator import Generator
-
 score = -1
 attempt = 0
 maxattempt = int(maxattempt)
@@ -210,6 +207,7 @@ else:
     grade=(score, feedback_nomatch)
 
 ==
+
 
 
 
