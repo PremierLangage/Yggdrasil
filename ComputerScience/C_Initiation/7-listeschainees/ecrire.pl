@@ -26,9 +26,8 @@ On utilisera les types:  <br>
 ==
 
 editor.code==
-....affiche(...) {
-...
-  /* votre code ici... */
+... affiche(...) {
+   /* votre code ici... */
 }
 
 ==
@@ -58,7 +57,7 @@ typedef Cellule* Liste  ;
 ==
 
 codeafter==
- Cellule* alloue_Cellule(int x){
+Cellule* alloue_Cellule(int x){
 Liste tmp=NULL;
 
 if((tmp=(Liste)malloc(sizeof(Cellule)))!=NULL){
