@@ -1,6 +1,7 @@
 @ /utils/sandboxio.py
 # imports de bibliothèques
 @ ../scripts/create_db.py
+@ ../databases/magasin.db
 
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
@@ -14,6 +15,7 @@ extracss==
 title = 
 text = 
 form = 
+
 
 
 
