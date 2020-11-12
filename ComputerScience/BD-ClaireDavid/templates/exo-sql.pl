@@ -145,9 +145,6 @@ form== #|html|
 before== #|py|
 import random
 
-# ajouter le nom du fichier dans base.pl
-#from monfichier import bla
-
 score = -1
 attempt = 0
 maxattempt = int(maxattempt)
@@ -172,8 +169,13 @@ if 'generate' in globals():
 #*===========================================================================
 evaluator== #|py|
 
+# pour ajouter des fonctions dans un fichier .py
 # ajouter le nom du fichier dans base.pl
-#from monfichier import bla
+# from monfichier import bla
+
+def mafonction( reponse, soluce):
+    return reponse == soluce
+
 
 # pour récupérer les erreurs
 error = ""
