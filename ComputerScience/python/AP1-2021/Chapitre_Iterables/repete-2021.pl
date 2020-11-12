@@ -16,6 +16,8 @@ taboo: Ne pas utiliser la fonction <font style="color:red;">{{taboo}}</font> des
 
 taboo=extend
 
+tag=listRepeat|ForInRange|append
+
 pltest0==
 >>> repete(6, ['Non'])
 ['Non', 'Non', 'Non', 'Non', 'Non', 'Non']
