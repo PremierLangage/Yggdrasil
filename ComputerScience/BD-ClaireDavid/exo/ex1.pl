@@ -17,8 +17,11 @@ allow_reroll =  True
 
 #* on peut ajouter ici un script de definition d'énoncé et solution qui sera excécuté dans le before de l'exo
 generate== #|py|
+# pour ajouter des fonctions dans un fichier .py
+# ajouter le nom du fichier dans base.pl
+#from monfichier import bla
 
-question = "Voilà ma question: c'était quoi déjà"
+question = "Voilà ma question: c'était quoi déjà ?"
 
 solution = "youpi"
 
