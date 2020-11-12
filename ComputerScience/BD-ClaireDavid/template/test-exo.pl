@@ -159,7 +159,7 @@ maxattempt = int(maxattempt)
 
 allow_reroll = (allow_reroll == "True")
 show_solution = (show_solution == "False")
-answer_type = str(answer_type)
+
 
 solution = 42
 
