@@ -115,5 +115,6 @@ tag=listRepeat|ForInRange|append
 - Tags ajoutés
 - repetezip.pl est une duplication de cet exercice
 
-## Ex10 : 
+## Ex10 : Supprimer les éléments pairs
 
+@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/supprime_pair-2021.pl
