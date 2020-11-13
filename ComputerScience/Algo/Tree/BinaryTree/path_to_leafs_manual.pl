@@ -105,6 +105,8 @@ form = """
 </style>
 """
 
+# This exerice is semi permissive : it remove all spaces but check the '-' and 
+# check that there is an only branch each line...
 soluce_reduced = soluce.replace(' ', '')
 while soluce_reduced[-1] == '\n':
     soluce_reduced = soluce_reduced[:-1]
