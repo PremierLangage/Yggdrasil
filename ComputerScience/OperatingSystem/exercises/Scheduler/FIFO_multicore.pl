@@ -60,7 +60,8 @@ form==
     {% for e in drag_list %}
         {{ e|component }}
     {% endfor %}
-<hr>
+
+<hr color="black">
 
 ==
 
