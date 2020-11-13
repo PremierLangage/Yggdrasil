@@ -382,6 +382,34 @@ class BinaryNode():
             return False
         return self.left.is_decreasing() and self.right.is_decreasing()
 
+    def _path_to_leafs_rec(self, branch=None):
+        """
+        Slave function associated to `path_to_leafs` method.
+
+        EXAMPLES::
+
+        """
+        if branch is None:
+            branch = []
+        if self.left is None and self.right is None:
+            print( " - ".join(branch+[str(self.value)]) )
+        else:
+            if self.left is not None:
+                self.left._path_to_leafs_rec(branch+[str(self.value)])
+            if self.right is not None:
+                self.right._path_to_leafs_rec(branch+[str(self.value)])
+
+    def path_to_leafs(self):
+        """
+        Return a Python string describing each path from the root `self` to
+        each leaf of the tree. There will be only one path by line and paths 
+        are ordered from left to right (the leaf leftmost go first out).
+
+        EXAMPLES::
+
+        """
+        return self._path_to_leafs_rec()
+
     def to_string_code(self):
         """
         Return a string coding for the binary tree. This function is used 
@@ -622,6 +650,7 @@ def binary_tree_from_code(s):
     """
     l = split_tree(s)
     return binary_tree_from_list(l)
+
 
 
 
