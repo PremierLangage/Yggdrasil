@@ -42,6 +42,7 @@ for i in range(nb_core):
         droppable=True
     )
     drop_list.append(drop)
+    globals()[drop.id] = drop
 
 ==
 
