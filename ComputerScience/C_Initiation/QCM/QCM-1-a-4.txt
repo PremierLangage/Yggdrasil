@@ -923,11 +923,11 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 
      Proposition 1 :             Proposition 2 :             Proposition 3 : 
 
-        0  1  2  3  4               0                           0  0
+        0  1  2  3  4               0                           0       0
 
-        0  2  4                     0  1  2                     1  2  2
+        0  2  4                     0  1  2                     1  2    2
 
-                                    2  3  4                     3  4
+                                    2  3  4                         3  4
 
                                     4  5
 
@@ -936,11 +936,11 @@ Parmi les affirmations suivantes, lesquelles sont exactes ?
 
                     0                           0  0
 
-                    0  1  2                     1  2  2
+                        01      2                  1  2  2
 
-                    2  3  4                     3  4  4
+                        23      4               3  4  4
 
-                    4
+                        4
 
 - Proposition 1
 - Proposition 2
@@ -2933,6 +2933,7 @@ Qu’affiche l’appel affichageTruc(tab, 2, 4) lorsque tab est défini par `int
 - 10 2
 - 1 02
 - 1 0 2
+
 
 
 
