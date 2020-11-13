@@ -6,6 +6,8 @@ Les tags sont séparés par |
 
 Liste des tags : append | mutable | reference | listCreate | elementAccess | listCopy | ForInRange | tuple | inlist | extend | len | listRepeat | pop
 
+En charge : Wenjie Fang
+
 ## Ex1 : Ajout d'éléments dans une liste
 
 @ /ComputerScience/python/AP1-2021/Chapitre_Iterables/ajoute_liste-2021.pl
@@ -126,5 +128,6 @@ tag=reference|elementAccess|pop
 - Exo difficile pour supprimer les éléments pairs dans la liste en argument.
 - Deux solutions possibles : soit faire pop directement dans la liste en respectant les indices, soit construire une nouvelle liste
 - Tags ajoutés, hints des deux méthodes ajoutés
+
 
 
