@@ -32,31 +32,12 @@ for i in range(nb_task):
         content = randint(1, 15)
     )
     drag_list.append(drag)
+    globals()[drag.id] = drop
 
-
-
-sets = [
-    ("1", drag1.cid, "{1, 2, 3}"),
-    ("{1}", drag2.cid, "{ {1}, 2, 3}"),
-    ("{1, 1}", drag2.cid, "{ {1, 2}, 3}"),
-    ("3", drag1.cid, "{1, 2, 3}"),
-]
-
-drops = []
-for i in range(len(sets)):
-    drop = DragDrop(
-        id=f"drop{i}",
-        droppable=True
-    )
-    drops.append(drop)
-
-    # add the component to the global context
-    # so it can be synced by the framework
-    globals()[drop.id] = drop
 ==
 
 title==
-Drag Drop
+Ordonner des process en FIFO sur du multicoeurs
 ==
 
 text==
