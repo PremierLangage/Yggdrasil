@@ -77,8 +77,8 @@ on voudrait afficher pour cet arbre les trois chemins suivants :
     1 - 3 - 5
 
 
-Faites ce même travail pour l'arbre suivant. En lisant la canopée de la 
-gauche vers la droite et ainsi pour toutes les feuilles comme elles 
+Faites ce même travail pour l'arbre suivant, en lisant sa canopée de la 
+gauche vers la droite. Pour toutes les feuilles comme elles 
 sortiraient dans un parcours profondeur préfixe de l'arbre, lister toutes 
 les branches racine-feuilles.
 
