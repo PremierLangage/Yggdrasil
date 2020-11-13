@@ -56,6 +56,14 @@ sont donc les nœuds ayant à la fois un point pour fils gauche et fils droit.
 {{ viewer|component }}
 </center>
 
+En ordonnant les feuilles par ordre de sortie dans un parcours profondeur 
+préfixe, lister chacune des branches complètes de la racine vers chaque 
+feuille de cet arbre. Écrivez une branche par ligne et séparer les valeurs
+des différents noeuds visités par un tiret.
+
+    racine - nœud1 - noeud2 - ... - feuille1
+    racine - nœud1 - noeud2 - ... - feuille2
+    ... etc ... 
 
 
 ==
