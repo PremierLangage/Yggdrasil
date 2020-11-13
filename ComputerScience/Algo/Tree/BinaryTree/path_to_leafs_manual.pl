@@ -79,6 +79,6 @@ form = """
 if soluce == editor.code:
     grade = (100, ''' <span class="success-state">Bravo, c'est exactement cela : '''+str(soluce)+'</span>')
 else:
-    grade = (0, ''' <span class="error-state">Désolé, vous avez fait une erreur, la réponse attendue était : <br>'''+str(soluce)+'</span>')
+    grade = (0, ''' <span class="error-state">Désolé, vous avez fait une erreur, la réponse attendue était : <br>'''+str(soluce.replace('\n', '<br>'))+'</span>')
 ==
 
