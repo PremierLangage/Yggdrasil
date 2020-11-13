@@ -20,6 +20,16 @@ tag=append|reference
 - Un exemple ajouté, un test modifié
 - Tags ajoutés
 
+## Ex1a : Les listes utilisées comme des ensembles
+
+@ /ComputerScience/python/AP1-2021/Chapitre_liste_reprend/common-element-list-2021.pl
+
+tag=
+
+**Commentaire**
+
+- Exo pour 
+
 ## Ex2 : Liste composée (création de liste par lister tous les éléments)
 
 @ /ComputerScience/python/AP1-2021/Chapitre_Iterables/createliste-2021.pl
@@ -128,6 +138,7 @@ tag=reference|elementAccess|pop
 - Exo difficile pour supprimer les éléments pairs dans la liste en argument.
 - Deux solutions possibles : soit faire pop directement dans la liste en respectant les indices, soit construire une nouvelle liste
 - Tags ajoutés, hints des deux méthodes ajoutés
+
 
 
 
