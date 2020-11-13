@@ -66,8 +66,11 @@ form==
 
 <hr color="black">
 
-    {% for e in drag_list %}
-        {{ e|component }}
+    {% for l in drop_list %}
+        {% for e in l %}
+            {{ e|component }}
+        {% endfor %}
+        <hr color="black">
     {% endfor %}
 
 ==
