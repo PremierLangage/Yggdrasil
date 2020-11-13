@@ -40,6 +40,16 @@ digraph G {
     null2 [shape=point];
     2 -> null1;
     2 -> null2;
+
+    null3 [shape=point];
+    null4 [shape=point];
+    4 -> null3;
+    4 -> null4;
+
+    null5 [shape=point];
+    null6 [shape=point];
+    5 -> null5;
+    5 -> null6;
 }
 ==
 
