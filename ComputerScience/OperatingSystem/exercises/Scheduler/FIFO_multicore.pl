@@ -32,7 +32,7 @@ for i in range(nb_task):
         content = randint(1, 15)
     )
     drag_list.append(drag)
-    globals()[drag.id] = drop
+    globals()[drag.id] = drag
 
 ==
 
