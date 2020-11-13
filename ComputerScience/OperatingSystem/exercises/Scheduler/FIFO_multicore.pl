@@ -36,13 +36,16 @@ for i in range(nb_task):
 
 drop_list = []
 for i in range(nb_core):
+    drop_core = []
     for j in range(nb_max_by_core):
         drop = DragDrop(
         id=f"drop{i*nb_max_by_core+j}",
         droppable=True
-    )
-    drop_list.append(drop)
-    globals()[drop.id] = drop
+        )
+        drop_core.append(drop)
+        globals()[drop.id] = drop
+    drop_list.append(drop_core)
+        
 
 ==
 
@@ -62,6 +65,10 @@ form==
     {% endfor %}
 
 <hr color="black">
+
+    {% for e in drag_list %}
+        {{ e|component }}
+    {% endfor %}
 
 ==
 
