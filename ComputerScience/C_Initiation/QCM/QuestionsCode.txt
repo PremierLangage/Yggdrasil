@@ -75,6 +75,20 @@ Latex:1
 - les virgules
 - les points virgules 
 
+**[nb=8,group=Resultat_code] 31 ) Qu'affiche la compilation **et/ou** l'exécution du programme suivant ?
 
-
+```c
+int ad_hash_init(int seed, int r, uint32_t *seeds, hash_t *hashes)
+{
+	int i, j, ssize = r%HIN128 ? r/HIN128+1 : r/HIN128;
+	srand(seed);
+    seeds = malloc(ssize * sizeof(uint32_t));
+    for(i = 0; i < ssize; ++i) {/*seeds initialization*/
+        j = rand();
+        seeds[i] = *(uint32_t*)((void*)(&j));
+    }
+    hashes = malloc(ssize * HIN128 * sizeof(hash_t));
+	return ssize;
+}
+```
 
