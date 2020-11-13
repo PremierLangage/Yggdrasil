@@ -3,7 +3,7 @@ extends=/model/AMC2/QCM-AMCE.pl
 textstep ==
 <strong> Question {{ step + 1 }}. </strong> 
 {{list_questions[step]}}
-
+{{ statement[step] | safe }}
 ==
 
 title= Compréhension de code 
