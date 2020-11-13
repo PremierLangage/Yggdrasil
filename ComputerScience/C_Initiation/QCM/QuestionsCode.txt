@@ -75,7 +75,7 @@ Latex:1
 - les virgules
 - les points virgules 
 
-**[nb=8,group=Resultat_code] 31 ) Qu'affiche la compilation **et/ou** l'exécution du programme suivant ?
+**[nb=8,group=Resultat_code] TEST) Qu'affiche la compilation **et/ou** l'exécution du programme suivant ?
 
 ```c
 int ad_hash_init(int seed, int r, uint32_t *seeds, hash_t *hashes)
@@ -91,4 +91,9 @@ int ad_hash_init(int seed, int r, uint32_t *seeds, hash_t *hashes)
 	return ssize;
 }
 ```
+- 2.0
++ les espaces
+- 2
++ les tabulations
+- 2.5
 
