@@ -25,7 +25,6 @@ editor =: CodeEditor
 editor.theme = dark
 editor.language = text
 editor.code ==
-
 ==
 
 
@@ -77,9 +76,9 @@ form = """
 </style>
 """
 
-if soluce == inputbox.value:
+if soluce == editor.code:
     grade = (100, ''' <span class="success-state">Bravo, c'est exactement cela : '''+str(soluce)+'</span>')
 else:
-    grade = (0, ''' <span class="error-state">Désolé, vous avez fait une erreur, la réponse attendue était : '''+str(soluce)+'</span>')
+    grade = (0, ''' <span class="error-state">Désolé, vous avez fait une erreur, la réponse attendue était : <br>'''+str(soluce)+'</span>')
 ==
 
