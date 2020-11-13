@@ -22,7 +22,7 @@ builder =@ /builder/before.py
 viewer =: GraphDrawer
 
 inputbox =: Input
-inputbox.type = text
+inputbox.type = multiline
 inputbox.placeholder = Un chemin par ligne, espace tiret espace entre chaque valeur
 
 before==#|python|
