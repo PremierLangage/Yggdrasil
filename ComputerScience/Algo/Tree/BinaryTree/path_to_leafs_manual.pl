@@ -31,7 +31,7 @@ viewertext =: GraphDrawer
 
 viewertext.graph ==
 digraph G {
-    size="2.5";
+    size="2";
 
     1 -> 2;
     1 -> 3;
