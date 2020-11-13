@@ -24,7 +24,7 @@ from random import randint
 
 nb_task = randint(15,25)    # random task number
 nb_core = randint(2, 6)     # random number of cores
-nb_max_by core = 10
+nb_max_by_core = 10
 drag_list = []
 for i in range(nb_task):
     drag = DragDrop(
@@ -36,6 +36,12 @@ for i in range(nb_task):
 
 drop_list = []
 for i in range(nb_core):
+    for j in range(nb_max_by_core):
+        drop = DragDrop(
+        id=f"drop{i*nb_max_by_core+j}",
+        droppable=True
+    )
+    drop_list.append(drop)
 
 ==
 
