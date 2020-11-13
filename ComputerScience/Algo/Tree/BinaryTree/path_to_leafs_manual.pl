@@ -76,6 +76,13 @@ form = """
 </style>
 """
 
+soluce_reduced = soluce.replace(' ', '')
+while soluce_reduced[-1] == '\n':
+    soluce_reduced = soluce_reduced[:-1]
+code_student = editor.code.replace(' ', '')
+while code_student[-1] == '\n':
+    code_student = code_student[:-1]
+
 if soluce.replace(' ', '') == editor.code.replace(' ', ''):
     grade = (100, ''' <span class="success-state">Bravo, c'est exactement cela : '''+str(soluce)+'</span>')
 else:
