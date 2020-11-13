@@ -48,25 +48,9 @@ calcul pour traiter l'intégralité des {{ nb_task }} tâches.
 
 form==
     {% for e in drag_list %}
-        {{ e[0] }}
-        {{ drops[loop.index0]|component }}
-        {{ e[2] }}
+        {{ e|component }}
     {% endfor %}
 
-
-{{ drag1|component }}
-{{ drag2|component }}
-<br/>
-
-<ul>
-    {% for e in sets %}
-    <li>
-        {{ e[0] }}
-        {{ drops[loop.index0]|component }}
-        {{ e[2] }}
-    </li>
-    {% endfor %}
-</ul>
 ==
 
 evaluator==
