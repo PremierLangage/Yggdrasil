@@ -84,7 +84,7 @@ while code_student[-1] == '\n':
     code_student = code_student[:-1]
 
 if soluce_reduced == code_student:
-    grade = (100, ''' <span class="success-state">Bravo, c'est exactement cela : '''+str(soluce)+'</span>')
+    grade = (100, ''' <span class="success-state">Bravo, c'est exactement cela : </span><br><br>    '''+str(soluce.replace('\n', '<br>    ')))
 else:
     grade = (0, ''' <span class="error-state">Désolé, vous avez fait une erreur, la réponse attendue était : </span><br><br>    '''+str(soluce.replace('\n', '<br>    ')))
 ==
