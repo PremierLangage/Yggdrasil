@@ -80,7 +80,7 @@ form==
         <hr color="black">
     {% endfor %}
 
-Temps de travail total : {{ inputbox|component }}
+Temps de travail total:{{ inputbox|component }}
 
 ==
 
