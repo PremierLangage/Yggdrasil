@@ -35,7 +35,7 @@ viewer.graph = Tree_exo.to_dot_code_BST_point()
 ==
 
 author=Nicolas Borie
-title=Statistique dans un arbre binaire
+title=Lister de manière ordonnée les chemins racine-feuilles
 
 text==
 <style>
