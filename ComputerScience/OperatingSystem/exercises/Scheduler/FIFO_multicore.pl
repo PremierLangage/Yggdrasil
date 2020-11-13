@@ -21,7 +21,7 @@ builder =@ /builder/before.py
 inputbox =: Input
 inputbox.type = number
 inputbox.placeholder = 
-inputbox.appearance = standard
+inputbox.appearance = outline
 
 
 before== #|python|
