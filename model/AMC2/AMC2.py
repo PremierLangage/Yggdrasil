@@ -21,6 +21,7 @@ the best you can.
 + 2
 + 10
 """
+
 exempleEtendu="""
 *+ Exo avec click sur un mot ici bonne est le bon mot 
  Vous  pouvez en mettre plusieurs séparer vos mots par des espace 
@@ -44,7 +45,13 @@ exempleEtendu="""
 def parse_AMC_TXT(txt):
     """
     >>> q = parse_AMC_TXT(exemple)
-    >>> len(q) == 2 and q[0]["type"]==  "Radio" and q[1]["type"]== "Checkbox"
+    >>> len(q) == 2 and q[0]["type"] ==  "Radio" and q[1]["type"]== "Checkbox"
+    True
+    >>> q = parse_AMC_TXT(exempleEtendu)
+    >>> len(q) == 3 and q[0]["type"] ==  "Radio" and q[1]["type"]== "Radio"
+    True
+    >>> q[2]["type"] ==  "Radio" and q[3]["type"]== "Radio"
+    True
     """
     questions = []
     pending = False
@@ -132,6 +139,7 @@ def parse_AMC_TXT(txt):
             extended= False
 
     return questions
+
 
 
 
