@@ -23,7 +23,7 @@ viewer =: GraphDrawer
 
 editor =: CodeEditor
 editor.theme = dark
-editor.language = python
+editor.language = text
 editor.code ==
 
 ==
