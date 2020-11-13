@@ -22,7 +22,7 @@ builder =@ /builder/before.py
 before== #|python|
 from random import randint
 
-nb_task = randint(15,25)    # random task number
+nb_task = randint(15,24)    # random task number
 nb_core = randint(2, 6)     # random number of cores
 nb_max_by_core = 10
 drag_list = []
