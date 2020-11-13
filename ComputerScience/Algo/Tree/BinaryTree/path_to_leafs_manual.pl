@@ -35,6 +35,11 @@ digraph G {
     1 -> 3;
     3 -> 4;
     3 -> 5;
+
+    null1 [shape=point];
+    null2 [shape=point];
+    2 -> null1;
+    2 -> null2;
 }
 ==
 
