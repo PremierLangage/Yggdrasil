@@ -59,7 +59,7 @@ text==
 }
 </style>
 
-Dans cet exercice, on souhaite afficher ligne par 
+Dans cet exercice, on souhaite produire ligne par 
 ligne tous les chemins de la racine d'un arbre binaire vers chacune de 
 ses feuilles.
 
