@@ -23,7 +23,7 @@ viewer =: GraphDrawer
 
 inputbox =: Input
 inputbox.type = multiline
-inputbox.appearance = standard
+inputbox.appearance = fill
 inputbox.placeholder = Un chemin par ligne, espace tiret espace entre chaque valeur
 
 before==#|python|
