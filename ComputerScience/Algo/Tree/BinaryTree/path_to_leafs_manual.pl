@@ -27,6 +27,16 @@ editor.language = text
 editor.code ==
 ==
 
+viewertext =: GraphDrawer
+
+viewertext.graph ==
+digraph G {
+    1 -> 2;
+    1 -> 3;
+    3 -> 4;
+    3 -> 5;
+}
+==
 
 
 before==#|python|
@@ -49,21 +59,32 @@ text==
 }
 </style>
 
-Voici un arbre binaire. L'arbre vide est représenté par un point, les feuilles 
-sont donc les nœuds ayant à la fois un point pour fils gauche et fils droit.
+Dans cet exercice, on souhaite produire du code pour afficher ligne par 
+ligne tous les chemins de la racine d'un arbre binaire vers chacune de 
+ses feuilles.
+
+Prenons un exemple avec le graphe suivant :
+
+<center>
+{{ viewertext|component }}
+</center>
+
+Cet arbre à 3 feuilles. Parcourant les feuilles de la gauche vers la droite, 
+on voudrait afficher pour cet arbre les trois chemins suivants :
+
+    1 - 2
+    1 - 3 - 4
+    1 - 3 - 5
+
+
+Faites ce même travail pour l'arbre suivant. En lisant la canopée de la 
+gauche vers la droite et ainsi pour toutes les feuilles comme elles 
+sortiraient dans un parcours profondeur préfixe de l'arbre, lister toutes 
+les branches racine-feuilles.
 
 <center>
 {{ viewer|component }}
 </center>
-
-En ordonnant les feuilles par ordre de sortie dans un parcours profondeur 
-préfixe, lister chacune des branches complètes de la racine vers chaque 
-feuille de cet arbre. Écrivez une branche par ligne et séparer les valeurs
-des différents noeuds visités par un tiret.
-
-    racine - nœud1 - noeud2 - ... - feuille1
-    racine - nœud1 - noeud2 - ... - feuille2
-    ... etc ... 
 
 
 ==
