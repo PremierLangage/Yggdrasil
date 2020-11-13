@@ -36,9 +36,8 @@ for i in range(nb_task):
 
 ==
 
-title==
-Ordonner des process en FIFO sur du multicoeurs
-==
+title=Ordonner des process en FIFO sur du multicoeurs
+author=Nicolas Borie
 
 text==
 ==
