@@ -392,12 +392,14 @@ class BinaryNode():
         if branch is None:
             branch = []
         if self.left is None and self.right is None:
-            print( " - ".join(branch+[str(self.value)]) )
+            return " - ".join(branch+[str(self.value)])+"\n"
         else:
+            ans = ""
             if self.left is not None:
-                self.left._path_to_leafs_rec(branch+[str(self.value)])
+                ans += self.left._path_to_leafs_rec(branch+[str(self.value)])
             if self.right is not None:
-                self.right._path_to_leafs_rec(branch+[str(self.value)])
+                ans += self.right._path_to_leafs_rec(branch+[str(self.value)])
+            return ans
 
     def path_to_leafs(self):
         """
