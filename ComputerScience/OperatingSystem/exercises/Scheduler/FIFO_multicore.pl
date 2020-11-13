@@ -18,6 +18,11 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+inputbox =: Input
+inputbox.type = number
+inputbox.placeholder = 
+inputbox.appearance = outline
+
 
 before== #|python|
 from random import randint
@@ -73,6 +78,8 @@ form==
         {% endfor %}
         <hr color="black">
     {% endfor %}
+
+Temps de travail total : {{  }}
 
 ==
 
