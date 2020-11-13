@@ -37,6 +37,7 @@ from utils_binary_tree import random_binary_tree
 Tree_exo = random_binary_tree(randint(8, 12), max_height=4)[0]
 viewer.graph = Tree_exo.to_dot_code_BST_point()
 
+soluce = Tree_exo.path_to_leafs()
 ==
 
 author=Nicolas Borie
