@@ -29,7 +29,7 @@ before== #|python|
 from random import randint
 
 nb_task = randint(15,24)    # random task number
-nb_core = randint(2, 6)     # random number of cores
+nb_core = randint(3, 6)     # random number of cores
 nb_max_by_core = 10
 drag_list = []
 for i in range(nb_task):
@@ -73,14 +73,14 @@ form==
 <hr color="black">
 
     {% for l in drop_list %}
-        Core {{ loop.index0 }}
+        Core : {{ loop.index0 }}
         {% for e in l %}
             {{ e|component }}
         {% endfor %}
         <hr color="black">
     {% endfor %}
 
-Temps de travail total:{{ inputbox|component }}
+Temps de travail total : {{ inputbox|component }}
 
 ==
 
