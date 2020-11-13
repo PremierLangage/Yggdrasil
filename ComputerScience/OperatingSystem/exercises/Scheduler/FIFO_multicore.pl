@@ -40,6 +40,10 @@ title=Ordonner des process en FIFO sur du multicoeurs
 author=Nicolas Borie
 
 text==
+On dispose d'une machine avec {{ nb_core }} coeurs de calcul. La machine 
+va devoir exécuter une suite ordonnée de tâches dont voici la liste. Proposez 
+un ordonnancement correcte des tâches et donner ainsi un temps total de 
+calcul pour traiter l'intégralité des {{ nb_task }} tâches.
 ==
 
 form==
