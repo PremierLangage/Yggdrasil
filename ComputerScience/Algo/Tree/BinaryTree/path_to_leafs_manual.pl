@@ -21,10 +21,14 @@ builder =@ /builder/before.py
 
 viewer =: GraphDrawer
 
-inputbox =: Input
-inputbox.type = multiline
-inputbox.appearance = fill
-inputbox.placeholder = Un chemin par ligne, espace tiret espace entre chaque valeur
+editor =: CodeEditor
+editor.theme = dark
+editor.language = python
+editor.code ==
+
+==
+
+
 
 before==#|python|
 from random import choice, randint
@@ -57,7 +61,7 @@ sont donc les nœuds ayant à la fois un point pour fils gauche et fils droit.
 ==
 
 form==
-{{ inputbox|component}}
+{{ editor|component}}
 ==
 
 evaluator==#|python|
