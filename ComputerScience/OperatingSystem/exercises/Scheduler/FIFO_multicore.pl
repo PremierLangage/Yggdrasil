@@ -22,6 +22,7 @@ inputbox =: Input
 inputbox.type = number
 inputbox.placeholder = 
 inputbox.appearance = outline
+inputbox.width = 20%
 
 
 before== #|python|
