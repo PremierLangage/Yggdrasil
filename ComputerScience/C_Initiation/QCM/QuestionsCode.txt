@@ -75,25 +75,53 @@ Latex:1
 - les virgules
 - les points virgules 
 
-**[nb=8,group=Resultat_code] TEST) Qu'affiche la compilation **et/ou** l'exécution du programme suivant ?
+*[nb=5,group=Comprehension_de_code] 42 ) Quel est le rendu lors de l’exécution du programme suivant ?
 
-```C
-int ad_hash_init(int seed, int r, uint32_t *seeds, hash_t *hashes)
-{
-	int i, j, ssize = r%HIN128 ? r/HIN128+1 : r/HIN128;
-	srand(seed);
-    seeds = malloc(ssize * sizeof(uint32_t));
-    for(i = 0; i < ssize; ++i) {/*seeds initialization*/
-        j = rand();
-        seeds[i] = *(uint32_t*)((void*)(&j));
-    }
-    hashes = malloc(ssize * HIN128 * sizeof(hash_t));
-	return ssize;
-}
-```
-- 2.0
-+ les espaces
-- 2
-+ les tabulations
-- 2.5
+
+     #include <stdio.h>
+
+     int main(void){
+
+         int i;
+
+         int n = 5;
+
+         for(i =0; i < n ; i = i + 1){
+
+             printf("%d\t", i);
+
+             if (i % 2 == 0)
+
+                printf("\n %d", i);
+
+         }
+
+     }
+
+     Proposition 1 :             Proposition 2 :             Proposition 3 : 
+
+        0  1  2  3  4               0                           0       0
+
+        0  2  4                     0  1  2                     1  2    2
+
+                                    2  3  4                         3  4
+
+                                    4  5
+
+
+                 Proposition 4 :             Propositon 5 : 
+
+                    0                           0  0
+
+                        01      2                  1  2  2
+
+                        23      4               3  4  4
+
+                        4
+
+- Proposition 1
+- Proposition 2
+- Proposition 3
++ Proposition 4
+- Proposition 5
 
