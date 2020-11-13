@@ -24,7 +24,7 @@ from random import randint
 
 nb_task = randint(15,25)    # random task number
 nb_core = randint(2, 6)     # random number of cores
-
+nb_max_by core = 10
 drag_list = []
 for i in range(nb_task):
     drag = DragDrop(
@@ -34,22 +34,26 @@ for i in range(nb_task):
     drag_list.append(drag)
     globals()[drag.id] = drag
 
+drop_list = []
+for i in range(nb_core):
+
 ==
 
 title=Ordonner des process en FIFO sur du multicoeurs
 author=Nicolas Borie
 
 text==
-On dispose d'une machine avec {{ nb_core }} coeurs de calcul. La machine 
-va devoir exécuter une suite ordonnée de tâches dont voici la liste. Proposez 
+On dispose d'une machine avec **{{ nb_core }} coeurs** de calcul. La machine 
+va devoir exécuter une **suite ordonnée de tâches** dont voici la liste. Proposez 
 un ordonnancement correcte des tâches et donner ainsi un temps total de 
-calcul pour traiter l'intégralité des {{ nb_task }} tâches.
+calcul pour traiter l'intégralité des **{{ nb_task }} tâches**.
 ==
 
 form==
     {% for e in drag_list %}
         {{ e|component }}
     {% endfor %}
+
 
 ==
 
