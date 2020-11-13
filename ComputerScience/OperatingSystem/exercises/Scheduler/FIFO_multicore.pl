@@ -73,7 +73,7 @@ form==
 <hr color="black">
 
     {% for l in drop_list %}
-        Core : {{ loop.index0 }}
+        Core {{ loop.index0 }} :
         {% for e in l %}
             {{ e|component }}
         {% endfor %}
