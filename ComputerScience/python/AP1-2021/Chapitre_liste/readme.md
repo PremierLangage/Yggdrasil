@@ -12,3 +12,5 @@ Ci-dessous, une description de chaque exercice et des changements effectués par
 # Exercice Template
 tag=list
 @ /ComputerScience/python/AP1-2021/chapitreListe/template.pl
+
+**Message** : Est-ce que l'auteur peux me contacter ? Je travaille aussi sur les exos de pl sur les listes. -- Wenjie Fang
