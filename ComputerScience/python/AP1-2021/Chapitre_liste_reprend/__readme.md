@@ -103,6 +103,17 @@ tag=ForInRange|append|listCreate
 - Une petite clarification ajoutée, avec un peu plus de tests aléatoires
 - Tags ajoutés
 
+## Ex7a : Statistiques sur une liste
+
+@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/liststat-2021.pl
+
+tag=elementAccess|tuple
+
+**Commentaire**
+
+- Exo simple pour compter les pairs et les impairs dans la liste
+- Tags et exemples ajoutés
+
 ## Ex8 : Remplace les éléments d'une liste
 
 @ /ComputerScience/python/AP1-2021/Chapitre_Iterables/remplace_pair-2021.pl
