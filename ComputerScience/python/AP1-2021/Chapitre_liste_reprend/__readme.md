@@ -65,7 +65,7 @@ tag=elementAccess
 **Commentaire**
 
 - Exo facile pour tester l'existence des éléments impairs
-- Tags ajoutés
+- Tags et exemples ajoutés
 
 ## Ex5 : Fusion de deux listes
 
