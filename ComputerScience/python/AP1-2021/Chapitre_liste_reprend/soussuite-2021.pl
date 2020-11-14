@@ -12,7 +12,7 @@ extends=/ComputerScience/python/template/pltest.pl
 text==
 Nous allons ici nous intéresser à deux définitions de la présence d'une liste dans une autre.
 
-- Première définition: la liste apparrait en un seul bloc dans l'autre liste est une **sous-liste** (substring).
+- Première définition: la liste apparrait en un seul bloc dans l'autre liste est une ***sous-liste*** (substring).
 
     Par exemple, la liste ``[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]`` contient ``[2, 3, 4]`` comme sous-liste, mais pas ``[2, 4]``.
 
