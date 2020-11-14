@@ -23,6 +23,8 @@ pltest==
 testcode==
 def premiers_entiers(n):
     return [x for x in range(n)]
+
+# alternative
 ==
 
 
