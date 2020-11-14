@@ -118,7 +118,7 @@ tag=elementAccess|tuple
 
 @ pair_impair-2021.pl
 
-tag=elementAccess|append|tuple
+tag=elementAccess|append
 
 **Commentaire**
 
