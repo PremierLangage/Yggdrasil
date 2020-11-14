@@ -10,14 +10,11 @@ tog=substring|subsequence
 
 extends=/ComputerScience/python/template/pltest.pl
 text==
-
-# Sous-liste ou Sous-suite
-
 Nous allons ici nous intéresser à deux définitions de la présence d'une liste dans une autre.
 
-Première *définition*: la liste apparrait en un seul bloc dans l'autre liste est une ***sousliste*** (substring) :
-	la liste [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] contient la sous liste
-	[2,3,4] mais pas la sous liste [2,4].
+- Première *définition*: la liste apparrait en un seul bloc dans l'autre liste est une ***sousliste*** (substring).
+
+    Par exemple, la liste [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] contient [2,3,4] mais pas la sous liste [2,4].
 
 Deuxième définition: les éléments de la sous suite apparaissent *tous* et *dans l'ordre* dans l'autre liste est une ***soussuite*** (subsequence):
 	la liste [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] contient la sous liste
