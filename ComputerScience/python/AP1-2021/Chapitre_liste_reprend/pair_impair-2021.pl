@@ -4,7 +4,7 @@ extends=/ComputerScience/python/template/pltest.pl
 text==
 
 Ecrire une fonction **pair_impair** qui prend une liste d'entiers en paramètre et qui
-retourne une liste avec deux éléments : d'abord une liste des éléménts pairs et la liste de entiers impairs du paramètre.
+retourne une liste avec deux éléments : d'abord une liste des éléménts pairs dans la liste en paramètre, puis et la liste de entiers impairs du paramètre.
 
 
 
@@ -40,5 +40,6 @@ def pair_impair(l):
             impair.append(e)
     return [pair,impair]
 ==
+
 
 
