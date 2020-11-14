@@ -32,12 +32,12 @@ Pour ceux qui s'ennuient: il y a des exercices un peu plus difficiles à la fin.
 
 # Construction de liste
 @ fibo-2021.pl
-@ extends_list-2021.pl
 @ extends-2021.pl
 @ pair_impair-2021.pl
 
 # Manipulation de liste par référence
 @ ajoute_liste-2021.pl
+@ extends_list-2021.pl
 @ remplace_pair-2021.pl
 @ supprime_pair-2021.pl
 
