@@ -14,7 +14,7 @@ Pour cela nous allons créer plusieurs opérations:
 
    - **Ajouter** : Dans un ensemble, il n'y a pas de il ne faut pas que la valeur apparaisse plusieurs fois il faut donc avant d'ajouter un nouvel élément vérifier si il n'y est pas puis utiliser ***append*** qui permet d'ajouter en fin de liste.
 
-   - Supprimer il suffit d'utiliser la méthode ***remove*** qui prend en paramêtre l'élément a retirer, attention il faut vérifier que l'élémént est présent avant d'utiliser remove sinon on a une erreur.
+   - **Supprimer** : Il suffit d'utiliser la méthode ***remove*** qui prend en paramêtre l'élément a retirer. Attention, il faut vérifier que l'élémént est présent avant d'utiliser remove, sinon on a une erreur.
 
 Ecrire les trois fonctions ***appartient(monensemble,element), ajoute(monensemble,element), retire(monsensemble,element)***.
 
