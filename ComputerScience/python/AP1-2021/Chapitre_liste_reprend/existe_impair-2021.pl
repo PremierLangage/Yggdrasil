@@ -7,7 +7,7 @@ Ecrire une fonction ``exist_impairs`` qui prend une liste en paramêtre
 et qui retourne True si il existe un entier impair dans la liste.
 
 Par exemple, ``exist_impairs([2, 0, 1, 9])`` doit renvoyer ``True``, parce qu'il y a 1 et 9 dans la liste,
-mais ``exist_impairs([2, 0, 1, 9])`` et ``exist_impairs([])`` doivent renvoyer ``False``.
+mais ``exist_impairs([2, 0, 2, 0])`` et ``exist_impairs([])`` doivent renvoyer ``False``.
 ==
 
 tag=elementAccess
