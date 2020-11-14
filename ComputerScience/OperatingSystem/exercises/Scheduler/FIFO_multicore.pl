@@ -32,11 +32,13 @@ nb_task = randint(12,20)    # random task number
 nb_core = randint(3, 6)     # random number of cores
 nb_max_by_core = 10
 drag_list = []
+list_duration_task = []
 for i in range(nb_task):
     drag = DragDrop(
         id=f"drag{i}",
         content = randint(1, 15)
     )
+    list_duration_task(int(drag.content))
     drag_list.append(drag)
     globals()[drag.id] = drag
 
@@ -51,7 +53,7 @@ for i in range(nb_core):
         drop_core.append(drop)
         globals()[drop.id] = drop
     drop_list.append(drop_core)
-        
+
 
 ==
 
