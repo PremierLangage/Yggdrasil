@@ -3,9 +3,11 @@ extends=/ComputerScience/python/template/pltest.pl
 
 text==
 
-Ecrire une fonction **info_list** qui prend une liste d'entiers en paramêtre et qui retourne le nombre de pairs et le nombre d'impairs.
+Ecrire une fonction ``stat_list`` qui prend une liste d'entiers en paramètre et qui retourne le nombre des éléments pairs et le nombre des éléments impairs.
 
-Remarque: (a, b) est un tuple et [a, b] une liste.
+Par exemple, ``stat_list([2, 0, 1, 9])`` doit renvoyer ``(2, 2)``, et ``stat_list([2, 0, 2, 0])`` doit renvoyer ``(4, 0)``.
+
+Remarque: ``(a, b)`` est un tuple et ``[a, b]`` une liste.
 ==
 
 pltest==
