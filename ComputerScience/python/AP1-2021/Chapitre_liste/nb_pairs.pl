@@ -7,7 +7,7 @@ text==
 Ecrire une fonction **nb_pairs** qui prend une liste en paramêtre et 
 qui retourne le nombre d'entiers pairs de la liste.
 
-**Superseded by infos_liste.pl**
+**Superseded by infos_liste.pl -- Wenjie Fang**
 ==
 
 pltest==
@@ -22,6 +22,7 @@ True
 >>> nb_pairs([ x+1 for x in l]) # Tous impairs
 0
 ==
+
 
 
 
