@@ -182,5 +182,7 @@ tag=reference|elementAccess|pop
 **Commentaire**
 
 - Exo pour utiliser split
-- Problématique. L'instruction n'est pas claire, et il faut les itérables (sur les chaînes).
+- Problématique. Il faut les itérables (sur les chaînes).
 - Il faut le reprendre avec les itérables, et remis sous forme de 'écrire une fonction'.
+
+
