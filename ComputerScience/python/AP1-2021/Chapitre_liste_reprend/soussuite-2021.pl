@@ -41,5 +41,24 @@ False
 False
 ==
 
+testcode==
+def sous_liste(l1, l2):
+    for i in range(len(l1) - len(l2)):
+        flag = True
+        for j in range(len(l2)):
+            if l2[j] != l1[i+j]:
+                flag = False
+                break
+        if flag:
+            return True
+    return False
 
-
+def sous_suite(l1, l2):
+    ptr1 = 0
+    ptr2 = 0
+    while ptr1 < len(l1) and ptr2 < len(l2):
+        if l2[ptr2] == l1[ptr1]:
+            ptr2 += 1
+        ptr1 += 1
+    return (ptr2 >= len(l2))
+==
