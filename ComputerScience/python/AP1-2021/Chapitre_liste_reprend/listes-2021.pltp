@@ -18,7 +18,7 @@ Des fonctions de manipulation de liste.
 	   return s
 
 
-Pour ceux qui s'ennuient: 
+Pour ceux qui s'ennuient: il y a des exercices un peu plus difficiles à la fin.
 ==
 
 
@@ -47,4 +47,5 @@ Pour ceux qui s'ennuient:
 @ EntierGauss-2021.pl
 @ doublons-2021.pl
 @ soussuite-2021.pl
+
 
