@@ -114,6 +114,17 @@ tag=elementAccess|tuple
 - Exo simple pour compter les pairs et les impairs dans la liste
 - Tags et exemples ajoutés
 
+## Ex7b : Un split sur la parité
+
+@ pair_impair-2021.pl
+
+tag=elementAccess|append|tuple
+
+**Commentaire**
+
+- Exo simple pour séparer les élements pairs et impairs dans une liste et de les mettre dans deux listes séparées
+- Tags et exemples ajoutés
+
 ## Ex8 : Remplace les éléments d'une liste
 
 @ remplace_pair-2021.pl
