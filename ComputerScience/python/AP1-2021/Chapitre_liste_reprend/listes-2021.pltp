@@ -23,7 +23,6 @@ Pour ceux qui s'ennuient: il y a des exercices un peu plus difficiles à la fin.
 
 
 # Création de liste
-@ ajoute_liste-2021.pl
 @ premiers_entiers-2021.pl
 @ repete-2021.pl
 
@@ -38,6 +37,7 @@ Pour ceux qui s'ennuient: il y a des exercices un peu plus difficiles à la fin.
 @ pair_impair-2021.pl
 
 # Manipulation de liste par référence
+@ ajoute_liste-2021.pl
 @ remplace_pair-2021.pl
 @ supprime_pair-2021.pl
 
@@ -47,5 +47,6 @@ Pour ceux qui s'ennuient: il y a des exercices un peu plus difficiles à la fin.
 @ EntierGauss-2021.pl
 @ doublons-2021.pl
 @ soussuite-2021.pl
+
 
 
