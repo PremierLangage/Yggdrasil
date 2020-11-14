@@ -56,6 +56,17 @@ tag=append|ForInRange|tuple
 - Un soluce simplifié est ajouté, aussi avec plus de tests aléatoires
 - Tags ajoutés
 
+## Ex4a : Est-ce qu'il y a un impair ?
+
+@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/existe_impair-2021.pl
+
+tag=elementAccess
+
+**Commentaire**
+
+- Exo facile pour tester l'existence des éléments impairs
+- Tags ajoutés
+
 ## Ex5 : Fusion de deux listes
 
 @ /ComputerScience/python/AP1-2021/Chapitre_Iterables/extends-2021.pl
