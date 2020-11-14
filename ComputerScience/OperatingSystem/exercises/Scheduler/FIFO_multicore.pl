@@ -75,8 +75,14 @@ author=Nicolas Borie
 text==
 On dispose d'une machine avec **{{ nb_core }} coeurs** de calcul. La machine 
 va devoir exécuter une **suite ordonnée de tâches** dont voici la liste. Proposez 
-un ordonnancement correcte des tâches et donner ainsi un temps total de 
+un ordonnancement correct des tâches et donner ainsi un temps total de 
 calcul pour traiter l'intégralité des **{{ nb_task }} tâches**.
+
+<br>
+
+Les taches devront être affectées dans l'ordre sur le premier coeur prêt. Si 
+plusieurs coeurs sont disponibles en même temps, l'ordonanceur va attribuée 
+la prochaine tâche au coeur prêt de plus petit indice.
 ==
 
 form==
