@@ -12,14 +12,13 @@ extends=/ComputerScience/python/template/pltest.pl
 text==
 Nous allons ici nous intéresser à deux définitions de la présence d'une liste dans une autre.
 
-- Première *définition*: la liste apparrait en un seul bloc dans l'autre liste est une ***sousliste*** (substring).
+- Première définition: la liste apparrait en un seul bloc dans l'autre liste est une **sous-liste** (substring).
 
-    Par exemple, la liste [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] contient [2,3,4] mais pas la sous liste [2,4].
+    Par exemple, la liste ``[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]`` contient ``[2, 3, 4]`` comme sous-liste, mais pas ``[2, 4]``.
 
-Deuxième définition: les éléments de la sous suite apparaissent *tous* et *dans l'ordre* dans l'autre liste est une ***soussuite*** (subsequence):
-	la liste [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] contient la sous liste
-	[2,6,8].
-	mais contient pas la liste [3,2] car les éléments n'apparaissent pas dans cet ordre.
+- Deuxième définition: les éléments de la sous suite apparaissent **tous** et **dans l'ordre**, mais **pas forcément consécutivement** dans l'autre liste est une ***sous-suite*** (subsequence). 
+
+    Par exemple, la liste ``[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]`` contient ``[2, 6, 8]`` comme sous-suite, mais pas ``[3, 2]`` car les éléments n'apparaissent pas dans cet ordre.
 
 Ecrivez deux fonctions réalisant le test permettant de vérifier si une liste est une sous liste ou sous suite d'une autre:
 	sousliste(l1,l2) retourne True si l1 est sousliste de l2 sinon False
@@ -39,5 +38,6 @@ False
 >>> soussuite([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],[6,8,2])
 False
 ==
+
 
 
