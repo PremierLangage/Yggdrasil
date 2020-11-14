@@ -9,7 +9,7 @@ retourne une liste avec deux éléments : d'abord une liste des éléménts pair
 Par exemple, ``pair_impair([1, 7, 8, 9, 0, 7, 1, 4])`` doit renvoyer ``[[8, 0, 4], [1, 7, 9, 7, 1]]``.
 ==
 
-tag=elementAccess|append
+tag=elementAccess|append|listCreate
 
 
 pltest==
@@ -48,6 +48,7 @@ def pair_impair2(l):
         res[e%2].append(e)
     return res
 ==
+
 
 
 
