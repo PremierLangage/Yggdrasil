@@ -6,14 +6,14 @@ title=Les listes utilisées comme des ensembles.
 tag= listinput|conversion
 extends=/ComputerScience/python/template/soluce.pl
 text==
-
-# Eléments communs dans deux listes
-
 Dans cet exercice nous allons fabriquer un ***type utilisateur*** qui utilise des listes pour représenter des ensembles.
 
 Pour cela nous allons créer plusieurs opérations:
+
    - Appartenance le mots clef ***in*** fonctionne sur les listes (rien à faire)
+
    - Ajouter il ne faut pas que la valeur apparaisse plusieurs fois il faut donc avant d'ajouter un nouvel élément vérifier si il n'y est pas puis utiliser ***append*** qui permet d'ajouter en fin de liste.
+
    - Supprimer il suffit d'utiliser la méthode ***remove*** qui prend en paramêtre l'élément a retirer, attention il faut vérifier que l'élémént est présent avant d'utiliser remove sinon on a une erreur.
 
 Ecrire les trois fonctions ***appartient(monensemble,element), ajoute(monensemble,element), retire(monsensemble,element)***.
