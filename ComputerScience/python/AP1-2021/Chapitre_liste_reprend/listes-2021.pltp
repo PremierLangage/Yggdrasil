@@ -18,9 +18,22 @@ Des fonctions de manipulation de liste.
 	   return s
 
 
-Pour ceux qui s'ennuient: les trois derniers exercices sont aléatoires et les faire du premier coup devient un défi.
+Pour ceux qui s'ennuient: 
 ==
 
-
-
+@ ajoute_liste-2021.pl
+@ createliste-2021.pl
+@ doublons-2021.pl
+@ EntierGauss-2021.pl
+@ existe_impair-2021.pl
+@ extends-2021.pl
+@ extends_list-2021.pl
+@ fibo-2021.pl
+@ liststat-2021.pl
+@ pair_impair-2021.pl
+@ premiers_entiers-2021.pl
+@ remplace_pair-2021.pl
+@ repete-2021.pl
+@ soussuite-2021.pl
+@ supprime_pair-2021.pl
 
