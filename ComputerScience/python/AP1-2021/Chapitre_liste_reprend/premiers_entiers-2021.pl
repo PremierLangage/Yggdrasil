@@ -9,6 +9,8 @@ retourne la liste [0, 1, 2, ... , a-1]
 Si ``a <= 0``, alors il faut retourner une liste vide.
 ==
 
+tag=append|listCreate
+
 pltest==
 >>> premiers_entiers(3)
 [0, 1, 2]
