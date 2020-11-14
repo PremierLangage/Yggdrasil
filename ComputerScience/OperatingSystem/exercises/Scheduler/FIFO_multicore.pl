@@ -38,7 +38,7 @@ for i in range(nb_task):
         id=f"drag{i}",
         content = randint(1, 15)
     )
-    list_duration_task(int(drag.content))
+    list_duration_task.append(int(drag.content))
     drag_list.append(drag)
     globals()[drag.id] = drag
 
