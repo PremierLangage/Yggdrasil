@@ -28,7 +28,7 @@ inputbox.width = 20%
 before== #|python|
 from random import randint
 
-nb_task = randint(15,24)    # random task number
+nb_task = randint(12,20)    # random task number
 nb_core = randint(3, 6)     # random number of cores
 nb_max_by_core = 10
 drag_list = []
@@ -99,5 +99,6 @@ if errors == 0:
 else:
     grade = (100, f'<span class="error-state animated pulse infinite">{n - errors}/{n}</span>')
 ==
+
 
 
