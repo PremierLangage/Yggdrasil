@@ -69,7 +69,7 @@ soluce = compute_full_duration(nb_core, list_duration_task)
 
 ==
 
-title=Ordonner des process en FIFO sur du multicoeurs
+title=Ordonner des process en FIFO sur une machine multicoeur
 author=Nicolas Borie
 
 text==
