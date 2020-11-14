@@ -54,6 +54,18 @@ for i in range(nb_core):
         globals()[drop.id] = drop
     drop_list.append(drop_core)
 
+# insert task by task inside a ready core.... This is the solution
+def compute_full_duration(nb_cores, list_task):
+    duration_core = [0]*nb_cores
+    for duration in list_task:
+        min_index = 0
+        for i in range(nb_cores):
+            if duration_core[i] < duration_core[min_index]:
+                min_index = i
+        duration_core[min_index] += duration
+    return max(duration_core)
+
+soluce = compute_full_duration(nb_core, list_duration_task)
 
 ==
 
