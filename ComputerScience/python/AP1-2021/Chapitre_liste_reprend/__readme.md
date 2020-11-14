@@ -20,18 +20,6 @@ tag=append|reference
 - Un exemple ajouté, un test modifié
 - Tags ajoutés
 
-## Ex1a : Les listes utilisées comme des ensembles
-
-@ /ComputerScience/python/AP1-2021/Chapitre_liste_reprend/common-element-list-2021.pl
-
-tag=
-
-TODO
-
-**Commentaire**
-
-- Exo pour 
-
 ## Ex2 : Liste composée (création de liste par lister tous les éléments)
 
 @ /ComputerScience/python/AP1-2021/Chapitre_Iterables/createliste-2021.pl
@@ -142,5 +130,17 @@ tag=reference|elementAccess|pop
 - Tags ajoutés, hints des deux méthodes ajoutés
 
 
+
+# Exo trop difficile
+
+## Ex.A : Les listes utilisées comme des ensembles
+
+@ /ComputerScience/python/AP1-2021/Chapitre_liste_reprend/~common-element-list-2021.pl
+
+**Commentaire**
+
+- Exo très dur pour simuler set avec les listes
+- Problématique. Trop de confusion, et les tests sont fait de façon bizarre.
+- A éviter avant de réviser complètement.
 
 
