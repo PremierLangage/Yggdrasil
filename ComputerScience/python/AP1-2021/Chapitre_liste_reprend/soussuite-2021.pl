@@ -22,21 +22,21 @@ Nous allons ici nous intéresser à deux définitions de la présence d'une list
 
 Ecrivez deux fonctions réalisant le test permettant de vérifier si une liste est une sous liste ou sous suite d'une autre:
 
-    - sousliste(l1,l2) qui retourne True si l1 est une sous-liste de l2, et False sinon
-    - soussuite(l1,l2) qui retourne True si l1 est une sous-suite de l2, et False sinon
+- ``sous_liste(l1,l2)`` qui retourne True si ``l2`` est une sous-liste de ``l1``, et False sinon
+- ``sous_suite(l1,l2)`` qui retourne True si ``l2`` est une sous-suite de ``l1``, et False sinon
 
 ==
 
 # Choisir pltest ou soluce ou expectedoutput
 
 pltest==
->>> sousliste([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],[2,3,4])
+>>> sous_liste([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],[2,3,4])
 True
->>> soussuite([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],[2,6,8])
+>>> sous_suite([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],[2,6,8])
 True
->>> sousliste([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],[0,12])
+>>> sous_liste([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],[0,12])
 False
->>> soussuite([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],[6,8,2])
+>>> sous_suite([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],[6,8,2])
 False
 ==
 
