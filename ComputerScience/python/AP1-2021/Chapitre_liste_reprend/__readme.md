@@ -6,7 +6,7 @@ Les tags sont séparés par |
 
 Liste des tags : append | mutable | reference | listCreate | elementAccess | listCopy | ForInRange | tuple | inlist | extend | len | listRepeat | pop | math |algo
 
-En charge : Wenjie Fang
+En charge : **Wenjie Fang**
 
 ## Ex1 : Ajout d'éléments dans une liste
 
