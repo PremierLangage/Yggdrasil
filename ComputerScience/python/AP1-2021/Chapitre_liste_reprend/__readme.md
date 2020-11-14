@@ -56,7 +56,7 @@ tag=append|ForInRange|tuple|math
 - Un soluce simplifié est ajouté, aussi avec plus de tests aléatoires
 - Tags ajoutés
 
-## Ex4a : Est-ce qu'il y a un impair ?
+## Ex5 : Est-ce qu'il y a un impair ?
 
 @ existe_impair-2021.pl
 
@@ -67,7 +67,7 @@ tag=elementAccess
 - Exo facile pour tester l'existence des éléments impairs
 - Tags et exemples ajoutés
 
-## Ex5 : Fusion de deux listes
+## Ex6 : Fusion de deux listes
 
 @ extends-2021.pl
 
@@ -79,7 +79,7 @@ tag=extend|reference|listCopy
 - Modifié l'énoncé pour souligner l'existence de référence, et aussi la copie de la liste
 - Tags ajoutés
 
-## Ex6 : Ajout de N éléments à une liste
+## Ex7 : Ajout de N éléments à une liste
 
 @ extends_list-2021.pl
 
@@ -91,7 +91,7 @@ tag=reference|extend|ForInRange
 - Tags ajoutés
 - Exemple ajouté
 
-## Ex7 : Fibonacci
+## Ex8 : Fibonacci
 
 @ fibo-2021.pl
 
@@ -103,7 +103,7 @@ tag=ForInRange|append|listCreate
 - Une petite clarification ajoutée, avec un peu plus de tests aléatoires
 - Tags ajoutés
 
-## Ex7a : Statistiques sur une liste
+## Ex9 : Statistiques sur une liste
 
 @ liststat-2021.pl
 
@@ -114,7 +114,7 @@ tag=elementAccess|tuple
 - Exo simple pour compter les pairs et les impairs dans la liste
 - Tags et exemples ajoutés
 
-## Ex7b : Un split sur la parité
+## Ex10 : Un split sur la parité
 
 @ pair_impair-2021.pl
 
@@ -125,7 +125,7 @@ tag=elementAccess|append|listCreate
 - Exo simple pour séparer les élements pairs et impairs dans une liste et de les mettre dans deux listes séparées
 - Tags et exemples ajoutés
 
-## Ex7c : Premiers entiers
+## Ex11 : Premiers entiers
 
 @ premiers_entiers-2021.pl
 
@@ -136,7 +136,7 @@ tag=append|listCreate
 - Exo simple pour construire une liste des premiers entiers
 - Tags et explication ajoutés
 
-## Ex8 : Remplace les éléments d'une liste
+## Ex12 : Remplace les éléments d'une liste
 
 @ remplace_pair-2021.pl
 
@@ -148,7 +148,7 @@ tag=reference|mutable|ForInRange|len
 - Un exemple ajouté
 - Tags ajoutés
 
-## Ex9 : Création d'une liste de répétitions
+## Ex13 : Création d'une liste de répétitions
 
 @ repete-2021.pl
 
@@ -161,7 +161,7 @@ tag=listRepeat|ForInRange|append
 - Tags ajoutés
 - repetezip.pl est une duplication de cet exercice
 
-## Ex9a : Sous-liste et sous-suite
+## Ex14 : Sous-liste et sous-suite
 
 @ soussuite-2021.pl
 
@@ -174,7 +174,7 @@ tag=elementAccess|ForInRange|len|algo
 - Inconsistence entre l'énoncé et les tests sont fixé. Aussi un nouveau mise-en-page.
 - Tags ajoutés
 
-## Ex10 : Supprimer les éléments pairs
+## Ex15 : Supprimer les éléments pairs
 
 @ supprime_pair-2021.pl
 
