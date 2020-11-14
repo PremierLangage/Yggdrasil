@@ -3,13 +3,14 @@ extends=/ComputerScience/python/template/pltest.pl
 
 text==
 
-Ecrire une fonction **pair_impair** qui prend une liste d'entiers en paramètre et qui
-retourne une liste avec deux éléments : d'abord une liste des éléménts pairs dans la liste en paramètre, puis et la liste de entiers impairs du paramètre.
+Ecrire une fonction ``pair_impair`` qui prend une liste d'entiers en paramètre et qui
+retourne une liste avec deux éléments : d'abord une liste des éléménts pairs dans la liste en paramètre, puis la liste des éléments impairs.
 
-
-
-Remarque: (a, b) est un tuple et [a, b] une liste.
+Par exemple, ``pair_impair([1, 7, 8, 9, 0, 7, 1, 4])`` doit renvoyer ``[[8, 0, 4], [1, 7, 9, 7, 1]]``.
 ==
+
+tag=elementAccess|append
+
 
 pltest==
 >>> pair_impair == pair_impair #
@@ -40,6 +41,7 @@ def pair_impair(l):
             impair.append(e)
     return [pair,impair]
 ==
+
 
 
 
