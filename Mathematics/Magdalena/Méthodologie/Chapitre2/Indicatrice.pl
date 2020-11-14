@@ -7,7 +7,7 @@ questions==
 + $% 1_A: E \to \\{0,1\\} \quad x \mapsto 1 \mbox{ si } x \in A \quad x \mapsto 0 \mbox{ sinon}.%$
 - $% \mathbb{1}_A \in E^{\\{0,1\\}} %$
 + $% \mathbb{1}_A \in \\{0,1\\}^E %$
-- $% \mathbb{1}_A + \mathbb{1}_{A^c}= Id_E %$
+- $% 1_A + 1_{A^c}= Id_E %$
 
 
 ** 
