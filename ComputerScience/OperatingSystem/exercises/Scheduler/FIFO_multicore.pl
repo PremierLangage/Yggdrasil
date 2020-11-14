@@ -98,20 +98,22 @@ Temps de travail total : {{ inputbox|component }}
 
 ==
 
-evaluator==
-errors = 0
-for i, e in enumerate(sets):
-    drop = globals()[f'drop{i}']
-    drop.css = 'success-state animated rotateIn'
-    if drop.droppedId != e[1]:
-        drop.css = 'error-state animated pulse infinite'
-        errors += 1
+evaluator==#|python|
+form = """
+<style>
+.error-state{
+   padding: 10px;
+}
+.success-state{
+   padding: 10px;
+}
+</style>
+"""
 
-n = len(sets)
-if errors == 0:
-    grade = (100, f'<span class="success-state animated pulse infinite">{n}/{n}</span>')
+if soluce == inputbox.value:
+    grade = (100, ''' <span class="success-state">Bravo, c'est exactement cela : '''+str(soluce)+' unités de temps </span>')
 else:
-    grade = (100, f'<span class="error-state animated pulse infinite">{n - errors}/{n}</span>')
+    grade = (0, ''' <span class="error-state">Désolé, vous avez fait une erreur, la réponse attendue était : '''+str(soluce)+' unités de temps</span>')
 ==
 
 
