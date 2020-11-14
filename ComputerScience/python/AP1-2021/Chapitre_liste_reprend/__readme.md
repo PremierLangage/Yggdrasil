@@ -169,3 +169,8 @@ tag=reference|elementAccess|pop
 
 @ ~lireunelist-2021.pl
 
+**Commentaire**
+
+- Exo difficle pour simuler split
+- Problématique. L'instruction n'est pas claire, et il faut les itérables (sur les chaînes).
+- Il faut le reprendre avec les itérables, et remis sous forme de 'écrire une fonction'.
