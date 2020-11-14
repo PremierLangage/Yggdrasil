@@ -18,11 +18,12 @@ Nous allons ici nous intéresser à deux définitions de la présence d'une list
 
 - Deuxième définition: les éléments de la sous suite apparaissent **tous** et **dans l'ordre**, mais **pas forcément consécutivement** dans l'autre liste est une ***sous-suite*** (subsequence). 
 
-    Par exemple, la liste ``[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]`` contient ``[2, 6, 8]`` comme sous-suite, mais pas ``[3, 2]`` car les éléments n'apparaissent pas dans cet ordre.
+    Par exemple, la liste ``[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]`` contient ``[2, 6, 8]`` comme sous-suite, mais pas ``[3, 2]`` car les éléments n'apparaissent pas dans l'ordre.
 
 Ecrivez deux fonctions réalisant le test permettant de vérifier si une liste est une sous liste ou sous suite d'une autre:
-	sousliste(l1,l2) retourne True si l1 est sousliste de l2 sinon False
-	soussuite(l1,l2) retourne True si l1 est soussuite de l2 sinon False
+
+    - sousliste(l1,l2) qui retourne True si l1 est une sous-liste de l2, et False sinon
+    - soussuite(l1,l2) qui retourne True si l1 est une sous-suite de l2, et False sinon
 
 ==
 
