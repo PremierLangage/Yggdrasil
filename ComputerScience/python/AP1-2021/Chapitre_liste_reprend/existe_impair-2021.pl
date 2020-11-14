@@ -1,4 +1,3 @@
-
 title=Est-ce qu'il y a un impair ?
 extends=/ComputerScience/python/template/pltest.pl
 
@@ -9,6 +8,8 @@ et qui retourne True si il existe un entier impair dans la liste.
 
 Remarque: Pouvez vous utiliser tous_pairs ?
 ==
+
+tag=elementAccess
 
 pltest==
 >>> not exist_impairs([2,4,5,6,77])
