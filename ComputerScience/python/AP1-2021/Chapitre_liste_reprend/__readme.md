@@ -165,4 +165,7 @@ tag=reference|elementAccess|pop
 - Problématique. Trop de confusion, et les tests sont fait de façon bizarre.
 - A éviter avant de réviser complètement.
 
+## Ex.B : Lire une liste
+
+@ /ComputerScience/python/AP1-2021/Chapitre_liste_reprend/~lireunelist-2021.pl
 
