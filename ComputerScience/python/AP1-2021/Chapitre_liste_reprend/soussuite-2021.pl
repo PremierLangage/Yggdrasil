@@ -3,6 +3,7 @@
 author=Dominique Revuz 
 title=Sous-liste et sous-suite
 
+tag=elementAccess|ForInRange|len|algo
 
 # Old tags
 tag_old= list|function|for|in  # N'oubliez pas de remplir ce champs svp
