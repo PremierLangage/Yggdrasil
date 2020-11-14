@@ -40,6 +40,13 @@ def pair_impair(l):
         else:
             impair.append(e)
     return [pair,impair]
+
+# alternative
+def pair_impair2(l):
+    res = [[], []]
+    for e in l:
+        res[e%2].append(e)
+    return res
 ==
 
 
