@@ -25,6 +25,8 @@ def premiers_entiers(n):
     return [x for x in range(n)]
 
 # alternative
+def premiers_entiers2(n):
+    return list(range(n))
 ==
 
 
