@@ -165,7 +165,7 @@ tag=listRepeat|ForInRange|append
 
 @ soussuite-2021.pl
 
-tag=
+tag=elementAccess|ForInRange|
 
 **Commentaire**
 
