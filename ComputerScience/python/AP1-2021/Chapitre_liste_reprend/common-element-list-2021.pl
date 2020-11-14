@@ -10,9 +10,9 @@ Dans cet exercice nous allons fabriquer un ***type utilisateur*** qui utilise de
 
 Pour cela nous allons créer plusieurs opérations:
 
-   - **Appartenance le mots clef ***in*** fonctionne sur les listes (rien à faire)
+   - **Appartenance** : on peut utiliser le mots clef ***in*** qui fonctionne sur les listes.
 
-   - Ajouter il ne faut pas que la valeur apparaisse plusieurs fois il faut donc avant d'ajouter un nouvel élément vérifier si il n'y est pas puis utiliser ***append*** qui permet d'ajouter en fin de liste.
+   - **Ajouter** : Dans un ensemble, il n'y a pas de il ne faut pas que la valeur apparaisse plusieurs fois il faut donc avant d'ajouter un nouvel élément vérifier si il n'y est pas puis utiliser ***append*** qui permet d'ajouter en fin de liste.
 
    - Supprimer il suffit d'utiliser la méthode ***remove*** qui prend en paramêtre l'élément a retirer, attention il faut vérifier que l'élémént est présent avant d'utiliser remove sinon on a une erreur.
 
@@ -83,6 +83,7 @@ Si vous avez besoin d'un outil logique ou mathématique pour résoudre un probl�
 la documentation si il n'existe pas déjà avant de le réécrire.
 (https://docs.python.org/3/)
 ==
+
 
 
 
