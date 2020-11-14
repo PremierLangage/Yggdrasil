@@ -4,7 +4,7 @@ Liste des exercices sur les listes, avec description simple, les tags et les cha
 
 Les tags sont séparés par |
 
-Liste des tags : append | mutable | reference | listCreate | elementAccess | listCopy | ForInRange | tuple | inlist | extend | len | listRepeat | pop
+Liste des tags : append | mutable | reference | listCreate | elementAccess | listCopy | ForInRange | tuple | inlist | extend | len | listRepeat | pop | math |algo
 
 En charge : Wenjie Fang
 
@@ -165,7 +165,7 @@ tag=listRepeat|ForInRange|append
 
 @ soussuite-2021.pl
 
-tag=elementAccess|ForInRange|
+tag=elementAccess|ForInRange|len
 
 **Commentaire**
 
