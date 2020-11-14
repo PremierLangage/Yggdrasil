@@ -3,10 +3,10 @@ extends=/ComputerScience/python/template/pltest.pl
 
 text==
 
-Ecrire une fonction **exist_impairs** qui prend une liste en paramêtre 
+Ecrire une fonction ``exist_impairs`` qui prend une liste en paramêtre 
 et qui retourne True si il existe un entier impair dans la liste.
-
-Remarque: Pouvez vous utiliser tous_pairs ?
+Par exemple, ``exist_impairs([2, 0, 1, 9])`` doit renvoyer ``True``, parce qu'il y a 1 et 9 dans la liste,
+mais ``exist_impairs([2, 0, 1, 9])`` et ``exist_impairs([])`` doivent renvoyer ``False``.
 ==
 
 tag=elementAccess
