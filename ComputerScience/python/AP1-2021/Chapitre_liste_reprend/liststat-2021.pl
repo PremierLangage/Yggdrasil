@@ -10,6 +10,8 @@ Par exemple, ``stat_list([2, 0, 1, 9])`` doit renvoyer ``(2, 2)``, et ``stat_lis
 Remarque: ``(a, b)`` est un tuple et ``[a, b]`` une liste.
 ==
 
+tag=elementAccess|tuple
+
 pltest==
 >>> stat_list == stat_list#
 True
