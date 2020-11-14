@@ -21,8 +21,19 @@ Des fonctions de manipulation de liste.
 Pour ceux qui s'ennuient: 
 ==
 
+
+# Création de liste
 @ ajoute_liste-2021.pl
-@ createliste-2021.pl
+
+# Lecture de liste
+
+# Construction de liste
+
+# Manipulation de liste par référence
+
+# Exos durs
+
+
 @ doublons-2021.pl
 @ EntierGauss-2021.pl
 @ existe_impair-2021.pl
