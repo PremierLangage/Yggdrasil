@@ -161,6 +161,18 @@ tag=listRepeat|ForInRange|append
 - Tags ajoutés
 - repetezip.pl est une duplication de cet exercice
 
+## Ex9a : Sous-liste et sous-suite
+
+@ soussuite-2021.pl
+
+tag=
+
+**Commentaire**
+
+- Exo très difficle pour tester pour sous-liste (consécutive) et sous-suite (non-consécutive)
+- Inconsistence entre l'énoncé et les tests sont fixé. Aussi un nouveau mise-en-page.
+- Tags ajoutés
+
 ## Ex10 : Supprimer les éléments pairs
 
 @ supprime_pair-2021.pl
