@@ -10,7 +10,7 @@ En charge : Wenjie Fang
 
 ## Ex1 : Ajout d'éléments dans une liste
 
-@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/ajoute_liste-2021.pl
+@ ajoute_liste-2021.pl
 
 tag=append|reference
 
@@ -22,7 +22,7 @@ tag=append|reference
 
 ## Ex2 : Liste composée (création de liste par lister tous les éléments)
 
-@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/createliste-2021.pl
+@ createliste-2021.pl
 
 tag=listCreate
 
@@ -34,7 +34,7 @@ tag=listCreate
 
 ## Ex3 : Ignorer les doublons d'une liste
 
-@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/doublons-2021.pl
+@ doublons-2021.pl
 
 tag=append|elementAccess|inlist
 
@@ -46,7 +46,7 @@ tag=append|elementAccess|inlist
 
 ## Ex4 : Entier Gauss
 
-@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/EntierGauss-2021.pl
+@ EntierGauss-2021.pl
 
 tag=append|ForInRange|tuple
 
@@ -58,7 +58,7 @@ tag=append|ForInRange|tuple
 
 ## Ex4a : Est-ce qu'il y a un impair ?
 
-@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/existe_impair-2021.pl
+@ existe_impair-2021.pl
 
 tag=elementAccess
 
@@ -69,7 +69,7 @@ tag=elementAccess
 
 ## Ex5 : Fusion de deux listes
 
-@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/extends-2021.pl
+@ extends-2021.pl
 
 tag=extend|reference|listCopy
 
@@ -81,7 +81,7 @@ tag=extend|reference|listCopy
 
 ## Ex6 : Ajout de N éléments à une liste
 
-@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/extends_list-2021.pl
+@ extends_list-2021.pl
 
 tag=reference|extend|ForInRange
 
@@ -93,7 +93,7 @@ tag=reference|extend|ForInRange
 
 ## Ex7 : Fibonacci
 
-@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/fibo-2021.pl
+@ fibo-2021.pl
 
 tag=ForInRange|append|listCreate
 
@@ -105,7 +105,7 @@ tag=ForInRange|append|listCreate
 
 ## Ex7a : Statistiques sur une liste
 
-@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/liststat-2021.pl
+@ liststat-2021.pl
 
 tag=elementAccess|tuple
 
@@ -116,7 +116,7 @@ tag=elementAccess|tuple
 
 ## Ex8 : Remplace les éléments d'une liste
 
-@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/remplace_pair-2021.pl
+@ remplace_pair-2021.pl
 
 tag=reference|mutable|ForInRange|len
 
@@ -128,7 +128,7 @@ tag=reference|mutable|ForInRange|len
 
 ## Ex9 : Création d'une liste de répétitions
 
-@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/repete-2021.pl
+@ repete-2021.pl
 
 tag=listRepeat|ForInRange|append
 
@@ -141,7 +141,7 @@ tag=listRepeat|ForInRange|append
 
 ## Ex10 : Supprimer les éléments pairs
 
-@ /ComputerScience/python/AP1-2021/Chapitre_Iterables/supprime_pair-2021.pl
+@ supprime_pair-2021.pl
 
 tag=reference|elementAccess|pop
 
@@ -157,7 +157,7 @@ tag=reference|elementAccess|pop
 
 ## Ex.A : Les listes utilisées comme des ensembles
 
-@ /ComputerScience/python/AP1-2021/Chapitre_liste_reprend/~common-element-list-2021.pl
+@ ~common-element-list-2021.pl
 
 **Commentaire**
 
@@ -167,5 +167,5 @@ tag=reference|elementAccess|pop
 
 ## Ex.B : Lire une liste
 
-@ /ComputerScience/python/AP1-2021/Chapitre_liste_reprend/~lireunelist-2021.pl
+@ ~lireunelist-2021.pl
 
