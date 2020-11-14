@@ -10,7 +10,7 @@ Dans cet exercice nous allons fabriquer un ***type utilisateur*** qui utilise de
 
 Pour cela nous allons créer plusieurs opérations:
 
-   - Appartenance le mots clef ***in*** fonctionne sur les listes (rien à faire)
+   - **Appartenance le mots clef ***in*** fonctionne sur les listes (rien à faire)
 
    - Ajouter il ne faut pas que la valeur apparaisse plusieurs fois il faut donc avant d'ajouter un nouvel élément vérifier si il n'y est pas puis utiliser ***append*** qui permet d'ajouter en fin de liste.
 
