@@ -118,12 +118,23 @@ tag=elementAccess|tuple
 
 @ pair_impair-2021.pl
 
-tag=elementAccess|append
+tag=elementAccess|append|listCreate
 
 **Commentaire**
 
 - Exo simple pour séparer les élements pairs et impairs dans une liste et de les mettre dans deux listes séparées
 - Tags et exemples ajoutés
+
+## Ex7c : Premiers entiers
+
+@ premiers_entiers-2021.pl
+
+tag=append|listCreate
+
+**Commentaire**
+
+- Exo simple pour construire une liste des premiers entiers
+- Tags et explication ajoutés
 
 ## Ex8 : Remplace les éléments d'une liste
 
