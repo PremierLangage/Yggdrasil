@@ -48,7 +48,7 @@ tag=append|elementAccess|inlist
 
 @ EntierGauss-2021.pl
 
-tag=append|ForInRange|tuple
+tag=append|ForInRange|tuple|math
 
 **Commentaire**
 
