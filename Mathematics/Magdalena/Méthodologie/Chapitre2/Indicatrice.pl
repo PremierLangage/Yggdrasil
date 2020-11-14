@@ -13,7 +13,7 @@ questions==
 ** 
 
 + $% \mathbb{1}_{\\{1,2,3\\}}(2)=1 %$
-- $% Id_E \circ f  = Id_F %$
++ $% **1**_[1,4](\pi)=1 %$
 - $% Id_E \circ f = f %$
 + $% Id_F \circ f = f%$
 - $% f \circ g = Id_E %$
