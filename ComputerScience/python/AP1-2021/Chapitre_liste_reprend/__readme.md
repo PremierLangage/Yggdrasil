@@ -165,11 +165,12 @@ tag=listRepeat|ForInRange|append
 
 @ soussuite-2021.pl
 
-tag=elementAccess|ForInRange|len
+tag=elementAccess|ForInRange|len|algo
 
 **Commentaire**
 
 - Exo très difficle pour tester pour sous-liste (consécutive) et sous-suite (non-consécutive)
+- A donner aux étudiants avec soins.
 - Inconsistence entre l'énoncé et les tests sont fixé. Aussi un nouveau mise-en-page.
 - Tags ajoutés
 
