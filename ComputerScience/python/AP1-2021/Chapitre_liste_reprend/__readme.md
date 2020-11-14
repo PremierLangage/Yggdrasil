@@ -174,3 +174,13 @@ tag=reference|elementAccess|pop
 - Exo difficle pour simuler split
 - Problématique. L'instruction n'est pas claire, et il faut les itérables (sur les chaînes).
 - Il faut le reprendre avec les itérables, et remis sous forme de 'écrire une fonction'.
+
+## Ex.C : Lire une liste d'entiers
+
+@ ~lireunelistint-2021.pl
+
+**Commentaire**
+
+- Exo pour utiliser split
+- Problématique. L'instruction n'est pas claire, et il faut les itérables (sur les chaînes).
+- Il faut le reprendre avec les itérables, et remis sous forme de 'écrire une fonction'.
