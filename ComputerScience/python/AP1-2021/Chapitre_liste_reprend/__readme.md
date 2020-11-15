@@ -56,7 +56,7 @@ tag=append|ForInRange|tuple|math
 
 **Commentaire**
 
-- Exo pour constuire une liste, difficulté en math
+- Exo pour constuire une liste
 - Un soluce simplifié est ajouté, aussi avec plus de tests aléatoires
 - Tags ajoutés
 
@@ -228,3 +228,4 @@ tag=reference|elementAccess|pop
 # Exo nouvellement ajoutés, mais pas encore vérifiés par paires
 
 ## Ex.Alpha
+
