@@ -16,6 +16,12 @@ taboo=extend
 
 tag=append|elementAccess|reference|listCopy
 
+before==
+fusion(l1, l2)
+
+return l1+l2
+==
+
 pltest0==
 >>> fusion([1,1],[2,2])
 [1, 1, 2, 2]
@@ -31,4 +37,5 @@ pltest1==
 >>> l2
 [1]
 ==
+
 
