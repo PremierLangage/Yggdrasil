@@ -12,6 +12,15 @@ mais ``exist_impairs([2, 0, 2, 0])`` et ``exist_impairs([])`` doivent renvoyer `
 
 tag=elementAccess
 
+before==
+def exist_impairs(l):
+    for x in l:
+        if x%2 == 1
+            return True
+    return False
+==
+
+
 pltest==
 >>> not exist_impairs([2,4,5,6,77])
 False
@@ -24,5 +33,6 @@ False
 >>> exist_impairs([ x+1 for x in l])# Longue liste d'impairs
 True
 ==
+
 
 
