@@ -13,10 +13,8 @@ tag=listCreate
 
 before==
 # solution
-def create(lst,n) :
-    for i in range(1,n+1) :
-        lst.append(i*3)
-
+def create(d1,d2) :
+    return [d1, d2]
 ==
 
 pltest0==
