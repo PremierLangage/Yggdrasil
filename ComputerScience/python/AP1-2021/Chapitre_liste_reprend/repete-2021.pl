@@ -19,6 +19,8 @@ taboo=extend
 tag=listRepeat|ForInRange|append
 
 pltest0==
+>>> repete(3,['Non', 'Oui'])
+['Non', 'Oui', 'Non', 'Oui', 'Non', 'Oui']
 >>> repete(6, ['Non'])
 ['Non', 'Non', 'Non', 'Non', 'Non', 'Non']
 >>> repete(0,['toto'])
