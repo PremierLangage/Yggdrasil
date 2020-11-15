@@ -17,7 +17,7 @@ taboo=extend
 tag=append|elementAccess|reference|listCopy
 
 before==
-fusion(l1, l2)
+function fusion(l1, l2)
 
 return l1+l2
 ==
