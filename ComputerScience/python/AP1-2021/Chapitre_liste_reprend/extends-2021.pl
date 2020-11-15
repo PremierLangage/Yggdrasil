@@ -19,7 +19,7 @@ tag=append|elementAccess|reference|listCopy
 before==
 def fusion(l1, l2):
 
-return l1+l2
+    return l1+l2
 ==
 
 pltest0==
