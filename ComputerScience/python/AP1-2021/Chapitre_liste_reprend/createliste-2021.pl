@@ -13,7 +13,7 @@ tag=listCreate
 
 before==
 # solution --- utilise append
-def tab3(lst,n) :
+def create(lst,n) :
     for i in range(1,n+1) :
         lst.append(i*3)
 
