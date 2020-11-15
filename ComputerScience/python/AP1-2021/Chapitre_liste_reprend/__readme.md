@@ -59,6 +59,7 @@ tag=append|ForInRange|tuple|math
 - Exo pour constuire une liste
 - Un soluce simplifié est ajouté, aussi avec plus de tests aléatoires
 - Tags ajoutés
+- Correction du sujet (Merci Chaohui !)
 
 ## Ex5 : Est-ce qu'il y a un impair ?
 
@@ -228,4 +229,5 @@ tag=reference|elementAccess|pop
 # Exo nouvellement ajoutés, mais pas encore vérifiés par paires
 
 ## Ex.Alpha
+
 
