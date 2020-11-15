@@ -10,7 +10,7 @@ text==
 On appelle "entier de Gauss" un nombre complexe $%z=a+\mathrm{i}b , (a,b) \in \mathbb{N}^2 %$
 
 
-Ecrire une fonction `carres_Gauss(r)` qui renvoie la liste d'entiers de Gauss dont le **carré** (i.e., $% a \times a + b \times b %$) est inférieur ou égal à $%r%$.
+Ecrire une fonction `carres_Gauss(r)` qui renvoie la liste d'entiers de Gauss dont le module de son **carré** (i.e., $% (a^2 + b^2) + 2ab\mathrm{i} %$) est inférieur ou égal à $%r%$.
 La liste est une liste de ces entiers de Gauss représentés en couples (a, b), ordonnées par ordre ascendant. 
 
 <pre><code>
@@ -84,6 +84,7 @@ pltest2==
 >>> carres_Gauss(0)
 [(0, 0)]
 ==
+
 
 
 
