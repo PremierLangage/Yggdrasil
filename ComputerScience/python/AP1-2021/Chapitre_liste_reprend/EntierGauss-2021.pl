@@ -11,7 +11,7 @@ On appelle "entier de Gauss" un nombre complexe $%z=a+\mathrm{i}b , (a,b) \in \m
 
 
 Ecrire une fonction `carres_Gauss(r)` qui renvoie la liste d'entiers de Gauss dont le **carré** (i.e., $% a \times a + b \times b %$) est inférieur ou égal à $%r%$.
-La liste est une liste de ces entier de Gauss représentés en couples (a, b), ordonnées par ordre ascendant. 
+La liste est une liste de ces entiers de Gauss représentés en couples (a, b), ordonnées par ordre ascendant. 
 
 <pre><code>
 >>> carres_Gauss(2)
