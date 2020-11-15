@@ -12,7 +12,7 @@ Par exemple, l'appel `create(3,4)` doit renvoyer la liste `[3, 4]`.
 tag=listCreate
 
 before==
-# solution --- utilise append
+# solution
 def create(lst,n) :
     for i in range(1,n+1) :
         lst.append(i*3)
