@@ -225,3 +225,6 @@ tag=reference|elementAccess|pop
 - Il faut le reprendre avec les itérables, et remis sous forme de 'écrire une fonction'.
 
 
+# Exo nouvellement ajoutés, mais pas encore vérifiés par paires
+
+## Ex.Alpha
