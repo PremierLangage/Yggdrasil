@@ -10,7 +10,22 @@ Par exemple, ``stat_list([2, 0, 1, 9])`` doit renvoyer ``(2, 2)``, et ``stat_lis
 Remarque: ``(a, b)`` est un tuple et ``[a, b]`` une liste.
 ==
 
+
 tag=elementAccess|tuple
+
+before==
+
+def stat_list(l):
+    pair=0
+    impair=0
+    for i in l:
+        if i%2==0:
+            pair+=1
+        elif i%2==1:
+            impair+=1
+    return (pair, impair)
+==
+
 
 pltest==
 >>> stat_list == stat_list#
@@ -29,6 +44,7 @@ True
 >>> stat_list(l2) # 10 pairs 10 impairs
 (10, 10)
 ==
+
 
 
 
