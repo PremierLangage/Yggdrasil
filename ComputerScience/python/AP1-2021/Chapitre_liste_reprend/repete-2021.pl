@@ -35,7 +35,7 @@ pltest0==
 
 Xeditor.code==
 def repete(n, l):
-    return list(n*[l]
+    return list(n*[l])
 
 ==
 
