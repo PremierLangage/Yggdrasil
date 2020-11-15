@@ -5,6 +5,7 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title =Entiers de Gauss
 
+# Ecrire une fonction `carres_Gauss(r)` qui renvoie la liste d'entiers de Gauss de module inférieur ou égal à $%r%$ dont le **carré** est également un entier de Gauss de module **inférieur ou égal** à $%r%$. La liste est une liste de ces entiers, représentés en couples de coordonnées ordonnées **lexicographiquement**. 
 
 text==  
 
