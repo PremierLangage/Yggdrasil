@@ -32,7 +32,7 @@ for line in fichier:
 
 fichier2.close()
 
-os.system("sqlite3 exo.db '.read script_soiree.sql'")
+os.system("sqlite3 exo.db '.read script_soiree2'")
 
 conn = sqlite3.connect("exo.db")
 
