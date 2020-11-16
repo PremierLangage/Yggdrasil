@@ -1,4 +1,4 @@
-.mode csv
+-- .mode csv
 
 DROP TABLE IF EXISTS deguisement;
 DROP TABLE IF EXISTS vendre;
