@@ -44,10 +44,10 @@ CREATE TABLE participe (
 	PRIMARY KEY(ids,surnom)
 );
 
-.exit
+.import ../databases/deguisement.sql deguisement
+.import ../databases/vendre.sql vendre
+.import ../databases/personne.sql personne
+.import ../databases/soiree.sql soiree
+.import ../databases/participe.sql participe
 
---.import deguisement.sql deguisement
---.import vendre.sql vendre
---.import personne.sql personne
---.import soiree.sql soiree
---.import participe.sql participe
+.exit
