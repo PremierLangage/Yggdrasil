@@ -26,7 +26,7 @@ import os
 
 os.system("sqlite3 exo.db \".read ../databases/script_soiree.sql\"")
 
-conn = sqlite3.connect('exo.db')
+conn = sqlite3.connect("exo.db")
 
 cursor = conn.cursor()
 
