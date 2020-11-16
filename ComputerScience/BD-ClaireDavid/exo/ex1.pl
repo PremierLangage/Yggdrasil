@@ -30,7 +30,7 @@ conn = sqlite3.connect('exo.db')
 
 cursor = conn.cursor()
 
-cursor.execute('SELECT * FROM soiree;')
+cursor.execute('SELECT 2;')
 answer = cursor.fetchone()
 append = str(answer)
 
