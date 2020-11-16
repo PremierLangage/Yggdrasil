@@ -31,7 +31,10 @@ for line in fichier:
 
 conn = sqlite3.connect(":memory:")
 
+
 cursor = conn.cursor()
+
+cursor.execute(script)
 
 cursor.execute('SELECT * FROM soiree;')
 answer = cursor.fetchone()
