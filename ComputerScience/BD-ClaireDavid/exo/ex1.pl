@@ -25,6 +25,7 @@ import sqlite3
 import os
 
 fichier = open('script_soiree.sql','r')
+fichier2 = open('script_soiree2','w')
 
 os.system("sqlite3 exo.db '.read script_soiree.sql'")
 
