@@ -23,7 +23,6 @@ generate== #|py|
 
 import sqlite3
 
-database = open('../databases/magasin.db','r')
 conn = sqlite3.connect(':memory:')
 
 cursor = conn.cursor()
@@ -53,4 +52,5 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution
 {% endif %}
 
 ==
+
 
