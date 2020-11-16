@@ -32,6 +32,7 @@ cursor = conn.cursor()
 
 cursor.execute('SELECT * FROM soiree;')
 answer = cursor.fetchone()
+append = str(answer)
 
 question = "Voilà ma question: c'était quoi déjà ?" + str(answer)
 
