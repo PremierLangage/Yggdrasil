@@ -22,19 +22,14 @@ generate== #|py|
 # from monfichier import bla
 
 import sqlite3
-import os
 
 fichier = open('script_soiree.sql','r')
-fichier2 = open('script_soiree2','w')
+script = ""
 
 for line in fichier:
-    fichier2.write(line)
+    script += line
 
-fichier2.close()
-
-os.system("sqlite3 exo.db '.read script_soiree2'")
-
-conn = sqlite3.connect("exo.db")
+conn = sqlite3.connect(":memory:")
 
 cursor = conn.cursor()
 
