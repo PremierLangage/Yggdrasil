@@ -49,5 +49,3 @@ CREATE TABLE participe (
 --.import ../databases/personne.sql personne
 --.import ../databases/soiree.sql soiree
 --.import ../databases/participe.sql participe
-
-.exit
