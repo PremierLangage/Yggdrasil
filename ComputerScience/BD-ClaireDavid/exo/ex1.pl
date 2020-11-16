@@ -34,7 +34,7 @@ cursor.execute('SELECT 2;')
 answer = cursor.fetchone()
 append = str(answer)
 
-question = "Voilà ma question: c'était quoi déjà ?" + apprend
+question = "Voilà ma question: c'était quoi déjà ?" + append
 
 solution = "youpi"
 ==
