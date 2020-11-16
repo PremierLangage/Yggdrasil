@@ -25,6 +25,7 @@ inputbox.appearance = outline
 inputbox.width = 20%
 
 
+
 before== #|python|
 from random import randint
 
@@ -121,6 +122,7 @@ if soluce == inputbox.value:
 else:
     grade = (0, ''' <span class="error-state">Désolé, vous avez fait une erreur, la réponse attendue était : '''+str(soluce)+' unités de temps</span>')
 ==
+
 
 
 
