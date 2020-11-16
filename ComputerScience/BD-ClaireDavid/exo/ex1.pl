@@ -24,7 +24,7 @@ generate== #|py|
 import sqlite3
 import os
 
-
+os.system("sqlite3 exo.db \".read ../databases/script_soiree.sql\"")
 
 conn = sqlite3.connect(':memory:')
 
