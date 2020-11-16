@@ -22,6 +22,9 @@ generate== #|py|
 # from monfichier import bla
 
 import sqlite3
+import os
+
+
 
 conn = sqlite3.connect(':memory:')
 
