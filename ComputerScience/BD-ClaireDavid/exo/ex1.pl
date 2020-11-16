@@ -27,6 +27,11 @@ import os
 fichier = open('script_soiree.sql','r')
 fichier2 = open('script_soiree2','w')
 
+for line in fichier:
+    fichier2.write(line)
+
+fichier2.close()
+
 os.system("sqlite3 exo.db '.read script_soiree.sql'")
 
 conn = sqlite3.connect("exo.db")
