@@ -30,10 +30,7 @@ conn = sqlite3.connect('exo.db')
 
 cursor = conn.cursor()
 
-cursor.execute('CREATE TABLE magasin(a int);')
-cursor.execute('INSERT INTO magasin VALUES (42);')
-
-cursor.execute('SELECT * FROM magasin;')
+cursor.execute('SELECT * FROM soiree;')
 answer = cursor.fetchone()
 
 question = "Voilà ma question: c'était quoi déjà ?" + str(answer)
