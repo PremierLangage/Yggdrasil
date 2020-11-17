@@ -38,9 +38,9 @@ commande = 'INSERT INTO deguisement VALUES '
 fichier = open('deguisement.sql','r')
 
 for line in fichier:
-    commande = commande + '(' + line + ')'
+    commande = commande + '(' + line + '),'
 
-commande = commande + ";"
+commande = commande[:-1] + ";"
 
 cursor = conn.cursor()
 
