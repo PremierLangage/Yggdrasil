@@ -12,7 +12,7 @@ mais ``exist_impairs([2, 0, 2, 0])`` et ``exist_impairs([])`` doivent renvoyer `
 
 tag=elementAccess
 
-before==
+samplesol==
 def exist_impairs(l):
     for x in l:
         if x%2 == 1:
@@ -33,6 +33,7 @@ False
 >>> exist_impairs([ x+1 for x in l])# Longue liste d'impairs
 True
 ==
+
 
 
 
