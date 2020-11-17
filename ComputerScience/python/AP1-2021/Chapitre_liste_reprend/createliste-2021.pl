@@ -11,7 +11,7 @@ Par exemple, l'appel `create(3,4)` doit renvoyer la liste `[3, 4]`.
 
 tag=listCreate
 
-before==
+samplesol==
 # solution
 def create(d1,d2) :
     return [d1, d2]
@@ -23,6 +23,7 @@ pltest0==
 >>> create(3.14,"titi")
 [3.14, 'titi']
 ==
+
 
 
 
