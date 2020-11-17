@@ -23,7 +23,7 @@ tag=array|affichage|tableau|fonction
 
 editor.height=280px
 
-text==
+text==#|markdown|
 Écrire une fonction qui affiche le contenu d'un tableau d'entiers C. Cette
 fonction prendra en paramèrtre un tableau d'entiers ainsi que le
 nombre d'éléments contenus dans ce tableau. On commencera l'affichage 
@@ -95,5 +95,6 @@ checks_args_stdin==#|python|
  ["Test aléatoire 3", [str(randint(-100, 100)) for i in range(randint(0, 10))], ""],
  ["Test aléatoire 4", [str(randint(-100, 100)) for i in range(randint(0, 10))], ""]]
 ==
+
 
 
