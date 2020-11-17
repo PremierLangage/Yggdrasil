@@ -8,7 +8,9 @@ text==
 Un exercice de saisie d'un calcul.
 Donner le produit et somme de {{a}} et {{b}}. 
 
-{{bof}}
+{{input1.value }}
+
+
 ==
 
 # Avant que ce soit présenté à l'élève 
@@ -33,6 +35,8 @@ le produit
 # évaluer la réponse 
 evaluator==
 bof=" ici un commentaire sur le bof "
+
+
 
 if input1.value == a+b and input2.value == a*b :
     grade=(100,"Bravo ")
