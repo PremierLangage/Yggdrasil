@@ -210,6 +210,7 @@ evaluator== #|py|
 def mafonctionevaluation(string_student_answer, solution):
     return string_student_answer == solution
 
+## Claire : il y a un pb ici avec l'Exception
 def check_syntax(query, cursor):
     try:
         cursor.execute(query)
