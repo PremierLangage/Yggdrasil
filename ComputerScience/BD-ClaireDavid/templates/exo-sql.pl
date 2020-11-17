@@ -258,12 +258,12 @@ else:
         grade = (0, feedback_fail)
     
     if grade == None:
-        (passed, message) = check_schema(student_query, answer, cursor)
+        (passed, message) = check_schema(student_query, solution, cursor)
         if not passed:
             grade = (0, feedback_fail)
     
     if grade == None:
-        (passed, over, under) = symmetric_difference(student_query, answer, cursor)
+        (passed, over, under) = symmetric_difference(student_query, solution, cursor)
         if not passed:
             grade = (0, feedback_fail)
 
