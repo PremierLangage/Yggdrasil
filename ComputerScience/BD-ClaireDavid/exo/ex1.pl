@@ -6,7 +6,7 @@ title = Exercice test
 #* Maximum number of attempts before showing the right answer.
 maxattempt = 4
 
-author = Claire David
+author = Nadime Francis
 
 #* When True show the answer after timeout.
 show_solution = False
