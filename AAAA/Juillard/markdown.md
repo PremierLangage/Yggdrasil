@@ -8,4 +8,8 @@ Exo1.
     q2)
 stop
 
+```
+if PL:
+    return True
+return false```
 
