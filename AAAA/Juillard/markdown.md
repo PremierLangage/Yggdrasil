@@ -8,7 +8,7 @@ Exo1.
     q2)
 stop
 
-```
+```python
 if PL:
     return True
 return false
