@@ -8,9 +8,6 @@ text==
 Un exercice de saisie d'un calcul.
 Donner le produit et somme de {{a}} et {{b}}. 
 
-
-
-
 ==
 
 # Avant que ce soit présenté à l'élève 
@@ -36,8 +33,10 @@ evaluator==
 
 if input1.value == a+b and input2.value == a*b :
     grade=(100,"Bravo ")
+    print("")
 else:
     grade=(0," Raté recommencez "+str(input1.value))
+
 ==
 
 
