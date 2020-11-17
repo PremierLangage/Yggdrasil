@@ -247,4 +247,4 @@ tag=len|elementAccess|tuple|append
 **Commentaire**
 
 - Exo un peu difficile pour "zipper" deux listes en une avec des couples.
-- La difficulté réside en 
+- La difficulté réside en comment traiter les cas où les longueurs des listes sont différentes.
