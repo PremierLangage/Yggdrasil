@@ -260,7 +260,7 @@ else:
     if grade == None:
         (passed, message) = check_schema(student_query, solution, cursor)
         if not passed:
-            grade = (0, feedback_fail)
+            grade = (0, f'<p class = \"error-state\"> Le schéma attendu est : {str(message)} </p>')
     
     if grade == None:
         (passed, over, under) = symmetric_difference(student_query, solution, cursor)
