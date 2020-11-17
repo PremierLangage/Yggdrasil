@@ -19,7 +19,7 @@ tag=append|reference
 
 taboo=extend
 
-before==
+samplesol==
 # solution --- utilise append
 def tab3(lst,n) :
     for i in range(1,n+1) :
@@ -47,6 +47,7 @@ pltest2==
 >>> lst
 ['toto', 3, 6, 9]
 ==
+
 
 
 
