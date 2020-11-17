@@ -19,7 +19,6 @@ b=6
 text==
 Donner le produit et somme de {{a}} et {{b}}. 
 
-
 ==
 
 
