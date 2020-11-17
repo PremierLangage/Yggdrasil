@@ -39,8 +39,8 @@ cursor.executescript(script)
 
 
 cursor.execute('SELECT * FROM soiree;')
-pouet = cursor.fetchone()
-append = str(pouet)
+answer = cursor.fetchone()
+append = str(answer)
 
 question = "Voilà ma question: c'était quoi déjà ?" + append
 
