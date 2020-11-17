@@ -188,6 +188,8 @@ def check_schema(query, answer, cursor):
     answer = answer.split(";")[0]
     try:
         cursor.execute(f'with q1 as ({query}), q2 as ({answer}) select * from q1 EXCEPT select * from q2;')
+    except sqlite3.OperationalError:
+        
 
 # pour récupérer les erreurs
 error = ""
