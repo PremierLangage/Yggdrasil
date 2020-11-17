@@ -37,11 +37,11 @@ pltest0==
 []
 ==
 
-Xeditor.code==
+samplesol==
 def repete(n, l):
     return n * l
-
 ==
+
 
 
 
