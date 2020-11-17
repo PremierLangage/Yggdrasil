@@ -236,5 +236,5 @@ tag=elementAccess|in|append
 
 **Commentaire**
 
-
+- Exo pour éliminer les éléments dans une liste qui apparaissent aussi dans une autre.
 
