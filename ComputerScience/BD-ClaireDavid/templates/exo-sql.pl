@@ -176,12 +176,15 @@ evaluator== #|py|
 def mafonctionevaluation(string_student_answer, solution):
     return string_student_answer == solution
 
-def syntax_checker(query, cursor):
+def check_syntax(query, cursor):
     try:
         cursor.execute(query)
     except Exception(e):
         return (False, e)
     return (True, None)
+
+def check_schema(query, answer, cursor):
+    
 
 
 # pour récupérer les erreurs
