@@ -20,7 +20,7 @@ puis vider la liste originale et la remplir avec les éléments gardés dans la 
 
 tag=reference|elementAccess|pop
 
-before==
+samplesol==
 # solution --- utilise pop, len
 def suppair(lst) :
     i=0
@@ -36,8 +36,6 @@ def suppair2(l):
     l.clear()
     for e in ll:
         l.append(e)
-
-after=before
 ==
 
 pltest0==
@@ -67,6 +65,7 @@ pltest3==
 >>> lst
 [1, 5]
 ==
+
 
 
 
