@@ -23,6 +23,13 @@ def stat_list(l):
         elif i%2==1:
             impair+=1
     return (pair, impair)
+
+# solution alternative
+def stat_list_1(l):
+    res = [0, 0]
+    for e in l:
+        res[e%2] += 1
+    return tuple(res)
 ==
 
 
