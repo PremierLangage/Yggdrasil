@@ -23,7 +23,7 @@ generate== #|py|
 
 question = "Voilà ma question: c'était quoi déjà ?"
 
-solution = "youpi"
+solution = "SELECT * FROM magasin;"
 ==
 
 
@@ -40,6 +40,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution
 {% endif %}
 
 ==
+
 
 
 
