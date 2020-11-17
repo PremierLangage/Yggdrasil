@@ -197,7 +197,22 @@ def check_schema(query, answer, cursor):
     return (True, None)
 
 def symmetric_difference(query, answer, cursor):
-    
+    query = query.split(";")[0]
+    answer = answer.split(";")[0]
+    over = None
+    under = None
+
+    cursor.execute(f'with q1 as ({query}), q2 as ({answer}) select * from q1 EXCEPT select * from q2;')
+    ligne = cursor.fetchone()
+    if ligne:
+        over = str(ligne)
+    cursor.execute(f'with q1 as ({query}), q2 as ({answer}) select * from q2 EXCEPT select * from q1;')
+    ligne = cursor.fetchone()
+    if ligne:
+        under = str(ligne)
+    if over or under:
+        return (False, over, under)
+    return (True, over, under)
 
 # pour récupérer les erreurs
 error = ""
