@@ -248,7 +248,9 @@ if attempt >= maxattempt: # timeout
     grade = (score, feedback_timeout)
 else:
     score = 0
-    (passed, message) = check_syntax(student_query, cursor):
+    (passed, message) = check_syntax(student_query, cursor)
+    if not passed:
+        grade = (0, feedback_fail.format(message))
 
     # noter la réponse de l'étudiant
     #if mafonctionevaluation(string_student_answer, solution):
