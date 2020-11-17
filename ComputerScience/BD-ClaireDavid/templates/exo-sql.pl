@@ -189,6 +189,8 @@ evaluator== #|py|
 # fonction d'évaluation
 
 ######
+
+import sqlite3
 fichier = open('script_soiree_lite.sql','r')
 script = ""
 
