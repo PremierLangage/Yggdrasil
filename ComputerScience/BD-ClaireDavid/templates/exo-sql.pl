@@ -176,6 +176,9 @@ evaluator== #|py|
 def mafonctionevaluation(string_student_answer, solution):
     return string_student_answer == solution
 
+def syntax_checker(query, cursor):
+    
+
 
 # pour récupérer les erreurs
 error = ""
@@ -205,6 +208,7 @@ else:
         grade=(score, feedback_fail)
 
 ==
+
 
 
 
