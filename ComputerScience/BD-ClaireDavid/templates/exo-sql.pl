@@ -170,7 +170,6 @@ conn = sqlite3.connect(":memory:")
 fichier.close()
 
 cursor = conn.cursor()
-
 cursor.executescript(script)
 
 
