@@ -189,20 +189,19 @@ evaluator== #|py|
 # fonction d'évaluation
 
 ######
-## Claire : Je ne suis pas complètement sûre que la base définie dans before soit accessible ici.
-## Il faudra peut-être rajouter ça 
-# import sqlite3
-# fichier = open('script_soiree_lite.sql','r')
-# script = ""
-# 
-# for line in fichier:
-#     script += line
-# 
-# conn = sqlite3.connect(":memory:")
-# 
-# fichier.close()
-# 
-# cursor = conn.cursor()
+
+import sqlite3
+fichier = open('script_soiree_lite.sql','r')
+script = ""
+
+for line in fichier:
+    script += line
+
+conn = sqlite3.connect(":memory:")
+
+fichier.close()
+
+cursor = conn.cursor()
 ###########
 
 
@@ -210,11 +209,10 @@ evaluator== #|py|
 def mafonctionevaluation(string_student_answer, solution):
     return string_student_answer == solution
 
-## Claire : il y a un pb ici avec l'Exception
 def check_syntax(query, cursor):
     try:
         cursor.execute(query)
-    except Exception(e):
+    except Exception as e:
         return (False, e)
     return (True, None)
 
@@ -282,6 +280,7 @@ else:
     #    grade=(score, feedback_fail)
 
 ==
+
 
 
 
