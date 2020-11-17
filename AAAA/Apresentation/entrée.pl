@@ -8,7 +8,7 @@ text==
 Un exercice de saisie d'un calcul.
 Donner le produit et somme de {{a}} et {{b}}. 
 
-{{input1.value }}
+
 
 
 ==
@@ -34,8 +34,8 @@ le produit
 
 # évaluer la réponse 
 evaluator==
-bof=" ici un commentaire sur le bof "
 
+text += str(input1.value)
 
 
 if input1.value == a+b and input2.value == a*b :
