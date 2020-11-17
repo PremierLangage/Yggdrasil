@@ -3,7 +3,6 @@
 
 # comment
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
-builder= /builder/before.py
 
 title = Ajout d'éléments dans une liste
 text == 
@@ -47,6 +46,7 @@ pltest2==
 >>> lst
 ['toto', 3, 6, 9]
 ==
+
 
 
 
