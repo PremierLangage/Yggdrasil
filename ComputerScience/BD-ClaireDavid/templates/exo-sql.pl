@@ -252,10 +252,22 @@ if attempt >= maxattempt: # timeout
     grade = (score, feedback_timeout)
 else:
     score = 0
+    grade = None
     (passed, message) = check_syntax(student_query, cursor)
     if not passed:
         grade = (0, feedback_fail)
-    else:
+    
+    if grade == None:
+        (passed, message) = check_schema(student_query, answer, cursor)
+        if not passed:
+            grade = (0, feedback_fail)
+    
+    if grade == None:
+        (passed, over, under) = symmetric_difference(student_query, answer, cursor)
+        if not passed:
+            grade = (0, feedback_fail)
+
+    if grade == None:
         grade = (100, feedback_success)
 
     # noter la réponse de l'étudiant
