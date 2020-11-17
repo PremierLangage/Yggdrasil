@@ -33,7 +33,8 @@ $%\quad y^2=3y+1%$
 # uncrosedfalse= True uniquement les affirmations 
 # vraies sont comptées
 # sinon les cases non cochées et fausses sont comptabilisées aussi
-#uncrosedfalse= True 
+# uncrosedfalse= True 
+
 
 
 
