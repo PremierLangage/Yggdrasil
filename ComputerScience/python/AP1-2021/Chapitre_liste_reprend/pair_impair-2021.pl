@@ -30,7 +30,7 @@ True
 True
 ==
 
-testcode==
+samplesol==
 def pair_impair(l):
     pair=[]
     impair=[]
@@ -48,6 +48,7 @@ def pair_impair2(l):
         res[e%2].append(e)
     return res
 ==
+
 
 
 
