@@ -1,12 +1,7 @@
 @ /utils/sandboxio.py
 # imports de bibliothèques
 # @ ../scripts/create_db.py
-@ ../databases/script_soiree.sql
-@ ../databases/deguisement.sql
-@ ../databases/participe.sql
-@ ../databases/personne.sql
-@ ../databases/soiree.sql
-@ ../databases/vendre.sql
+@ ../databases/script_soiree_lite.sql
 
 
 grader  =@ /grader/evaluator.py
@@ -21,6 +16,7 @@ extracss==
 title = 
 text = 
 form = 
+
 
 
 
