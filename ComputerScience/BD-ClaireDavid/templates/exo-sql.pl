@@ -190,7 +190,7 @@ evaluator== #|py|
 
 ######
 ## Claire : Je ne suis pas complètement sûre que la base définie dans before soit accessible ici.
-## Il faudra peut-êêtre rajouter ça 
+## Il faudra peut-être rajouter ça 
 # import sqlite3
 # fichier = open('script_soiree_lite.sql','r')
 # script = ""
