@@ -255,7 +255,8 @@ else:
     (passed, message) = check_syntax(student_query, cursor)
     if not passed:
         grade = (0, feedback_fail.format(message))
-    grade = (100, feedback_success)
+    else:
+        grade = (100, feedback_success)
 
     # noter la réponse de l'étudiant
     #if mafonctionevaluation(string_student_answer, solution):
@@ -266,6 +267,7 @@ else:
     #    grade=(score, feedback_fail)
 
 ==
+
 
 
 
