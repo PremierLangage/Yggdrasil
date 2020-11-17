@@ -268,8 +268,6 @@ else:
             feedback = ""
             if over:
                 feedback += f'Cette ligne ne devrait pas être dans la réponse : {str(over)}.'
-            if over and under:
-                
             if under:
                 if over:
                     feedback += "<\br>"
