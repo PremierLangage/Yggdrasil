@@ -59,7 +59,7 @@ def fibo(n):
         else:
             val = res[i-1] + res[i-2]
         res.append(val)
-    resturn res
+    return res
 
 import random
 
