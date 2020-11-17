@@ -39,8 +39,8 @@ cursor.executescript(script)
 
 
 cursor.execute('SELECT * FROM soiree;')
-answer = cursor.fetchone()
-append = str(answer)
+pouet = cursor.fetchone()
+append = str(pouet)
 
 question = "Voilà ma question: c'était quoi déjà ?" + append
 
@@ -61,6 +61,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution
 {% endif %}
 
 ==
+
 
 
 
