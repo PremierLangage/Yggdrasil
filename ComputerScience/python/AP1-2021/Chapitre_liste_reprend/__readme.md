@@ -230,4 +230,12 @@ tag=reference|elementAccess|pop
 
 ## Ex.Alpha
 
+@ $plat-allergie-2021.pl
+
+tag=elementAccess|in|append
+
+
+**Commentaire**
+
+
 
