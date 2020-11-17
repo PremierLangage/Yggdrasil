@@ -21,9 +21,9 @@ generate== #|py|
 # ajouter le nom du fichier dans base.pl
 # from monfichier import bla
 
-question = "Voilà ma question: c'était quoi déjà ?"
+question = "La liste de toutes les soirées avec tous leurs attributs."
 
-solution = "SELECT * FROM magasin;"
+solution = "SELECT * FROM soiree;"
 ==
 
 
