@@ -54,7 +54,7 @@ def fibo(n):
     for i in range(n):
         if i==0:
             val = 0
-        if i==1:
+        elif i==1:
             val = 1
         else:
             val = res[i-1] + res[i-2]
