@@ -1,4 +1,4 @@
 extends = /model/mathinput2.pl
 
-title = Mon _titre_
-
+title = Mon **titre**
+text = en **gras** ?
