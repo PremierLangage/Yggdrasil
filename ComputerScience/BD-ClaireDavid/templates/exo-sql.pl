@@ -184,7 +184,7 @@ def check_syntax(query, cursor):
     return (True, None)
 
 def check_schema(query, answer, cursor):
-    
+    try:
 
 
 # pour récupérer les erreurs
