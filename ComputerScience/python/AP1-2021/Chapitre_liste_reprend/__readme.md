@@ -238,5 +238,13 @@ tag=elementAccess|in|append
 
 - Exo pour éliminer les éléments dans une liste qui apparaissent aussi dans une autre.
 
+## Ex.Beta
 
+@ $zip-list-2021.pl
 
+tag=len|elementAccess|tuple|append
+
+**Commentaire**
+
+- Exo un peu difficile pour "zipper" deux listes en une avec des couples.
+- La difficulté réside en 
