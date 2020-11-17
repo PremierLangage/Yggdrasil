@@ -190,12 +190,12 @@ evaluator== #|py|
 def mafonctionevaluation(string_student_answer, solution):
     return string_student_answer == solution
 
-def check_syntax(query, cursor):
-    try:
-        cursor.execute(query)
-    except Exception(e):
-        return (False, e)
-    return (True, None)
+#def check_syntax(query, cursor):
+#    try:
+#        cursor.execute(query)
+#    except Exception(e):
+#        return (False, e)
+#    return (True, None)
 
 def check_schema(query, answer, cursor):
     query = query.split(";")[0]
@@ -261,6 +261,7 @@ else:
     #    grade=(score, feedback_fail)
 
 ==
+
 
 
 
