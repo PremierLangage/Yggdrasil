@@ -270,7 +270,7 @@ else:
                 feedback += f'Cette ligne ne devrait pas être dans la réponse : {str(over)}.'
             if under:
                 if over:
-                    feedback += "<\br>"
+                    feedback += "</br>"
                 feedback += f'Cette ligne devrait être dans la réponse mais n\'y est pas : {str(under)}'
             grade = (0, f'<p class = \"error-state\"> {feedback} </br>  </p>')
 
