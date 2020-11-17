@@ -196,6 +196,8 @@ def check_schema(query, answer, cursor):
         return (False, e)
     return (True, None)
 
+def symmetric_difference(query, answer, cursor):
+    
 
 # pour récupérer les erreurs
 error = ""
