@@ -1,5 +1,9 @@
 # Test 
 
-C'est **important**. 
+C'est **important** et bien ~~barré~~
 
-$\alpha$
+$\alpha$ texte mathématical non implémenté
+
+    tabulation en exergue
+et la suite
+
