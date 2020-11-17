@@ -7,4 +7,3 @@ un exo de saisie
 
 ==
 
-form=
