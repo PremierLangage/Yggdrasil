@@ -31,10 +31,22 @@ for line in fichier:
 
 conn = sqlite3.connect(":memory:")
 
+fichier.close()
+
+commande = 'INSERT INTO deguisement VALUES '
+
+fichier = open('deguisement.sql','r')
+
+for line in fichier:
+    commande = commande + '(' + line + ')'
+
+commande = commande + ";"
 
 cursor = conn.cursor()
 
 cursor.executescript(script)
+cursor.execute(commande)
+
 
 cursor.execute('SELECT * FROM soiree;')
 answer = cursor.fetchone()
@@ -59,5 +71,6 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution
 {% endif %}
 
 ==
+
 
 
