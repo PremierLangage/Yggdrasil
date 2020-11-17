@@ -41,7 +41,7 @@ False
 False
 ==
 
-testcode==
+samplesol==
 def sous_liste(l1, l2):
     for i in range(len(l1) - len(l2)):
         flag = True
@@ -62,3 +62,4 @@ def sous_suite(l1, l2):
         ptr1 += 1
     return (ptr2 >= len(l2))
 ==
+
