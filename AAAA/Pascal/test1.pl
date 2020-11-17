@@ -1,3 +1,4 @@
-extends = /model/math/frac.pl
+extends = /model/mathinput2.pl
 
 title = Mon titre
+
