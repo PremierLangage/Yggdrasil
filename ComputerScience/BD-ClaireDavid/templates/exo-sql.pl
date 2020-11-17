@@ -170,7 +170,7 @@ conn = sqlite3.connect(":memory:")
 fichier.close()
 
 cursor = conn.cursor()
-cursor.executescript(script)
+
 
 
 
@@ -202,6 +202,7 @@ conn = sqlite3.connect(":memory:")
 fichier.close()
 
 cursor = conn.cursor()
+cursor.executescript(script)
 ###########
 
 
@@ -280,6 +281,7 @@ else:
     #    grade=(score, feedback_fail)
 
 ==
+
 
 
 
