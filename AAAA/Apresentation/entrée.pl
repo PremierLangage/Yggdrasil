@@ -20,7 +20,6 @@ before==
 a=3
 b=6
 
-
 ==
 
 
@@ -35,13 +34,10 @@ le produit
 # évaluer la réponse 
 evaluator==
 
-text += str(input1.value)
-
-
 if input1.value == a+b and input2.value == a*b :
     grade=(100,"Bravo ")
 else:
-    grade=(0," Raté recommencez ")
+    grade=(0," Raté recommencez "+str(input1.value))
 ==
 
 
