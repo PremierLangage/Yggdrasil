@@ -21,7 +21,7 @@ author=Nicolas Borie
 title=Élever au carré les éléments d'un tableau
 tag=array|tableau|fonction|simple
 
-text==
+text==#|markdown|
 Écrire une fonction C qui prend en argument un tableau d'entiers ainsi
 que sa taille puis élève au carré tous les éléments contenus dans ce
 tableau.
@@ -89,6 +89,7 @@ checks_args_stdin==#|python|
  ["Test aléatoire 2", [str(randint(-100, 100)) for i in range(randint(10, 15))], ""],
  ["Test aléatoire 3", [str(randint(-100, 100)) for i in range(randint(10, 15))], ""]]
 ==
+
 
 
 
