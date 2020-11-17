@@ -21,7 +21,7 @@ generate== #|py|
 # ajouter le nom du fichier dans base.pl
 # from monfichier import bla
 
-question = "Voilà ma question: c'était quoi déjà ?" + append
+question = "Voilà ma question: c'était quoi déjà ?" 
 
 solution = "youpi"
 ==
