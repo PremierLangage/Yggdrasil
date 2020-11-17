@@ -254,7 +254,7 @@ else:
     score = 0
     (passed, message) = check_syntax(student_query, cursor)
     if not passed:
-        grade = (0, feedback_fail.format(message))
+        grade = (0, feedback_fail)
     else:
         grade = (100, feedback_success)
 
