@@ -22,7 +22,7 @@ title=Fonction d'Ackermann
 tag=function|recursion
 
 text==#|markdown|
-La fonction d'Ackermann est une fonction récursive à deux paramètres
+La fonction d'Ackermann est une **fonction récursive** à deux paramètres
 entiers positifs. Elle peut être définie comme il suit :
 
 $% A(m, n) := 
@@ -79,5 +79,6 @@ checks_args_stdin==#|python|
  ["Aléatoire", [str(randint(0, 3)), str(randint(0, 4))], ""],
  ["Aléatoire", [str(randint(0, 3)), str(randint(0, 4))], ""]]
 ==
+
 
 
