@@ -23,7 +23,7 @@ generate== #|py|
 
 import sqlite3
 
-fichier = open('script_soiree.sql','r')
+fichier = open('script_soiree_lite.sql','r')
 script = ""
 
 for line in fichier:
@@ -61,6 +61,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution
 {% endif %}
 
 ==
+
 
 
 
