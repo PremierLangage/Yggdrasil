@@ -21,28 +21,7 @@ generate== #|py|
 # ajouter le nom du fichier dans base.pl
 # from monfichier import bla
 
-import sqlite3
-
-fichier = open('script_soiree_lite.sql','r')
-script = ""
-
-for line in fichier:
-    script += line
-
-conn = sqlite3.connect(":memory:")
-
-fichier.close()
-
-cursor = conn.cursor()
-
-cursor.executescript(script)
-
-
-cursor.execute('SELECT * FROM deguisement;')
-answer = cursor.fetchone()
-append = str(answer)
-
-question = "Voilà ma question: c'était quoi déjà ?" + append
+question = "Voilà ma question: c'était quoi déjà ?"
 
 solution = "youpi"
 ==
