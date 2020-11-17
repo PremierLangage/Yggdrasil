@@ -38,7 +38,7 @@ cursor = conn.cursor()
 cursor.executescript(script)
 
 
-cursor.execute('SELECT * FROM soiree;')
+cursor.execute('SELECT * FROM deguisement;')
 answer = cursor.fetchone()
 append = str(answer)
 
@@ -61,6 +61,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution
 {% endif %}
 
 ==
+
 
 
 
