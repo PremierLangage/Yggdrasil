@@ -235,7 +235,7 @@ error = ""
 ## Get the student answer:
 try:
     student_answer = editor
-    string_student_answer = editor.code
+    student_query = editor.code
 except Exception:
     error = "Syntax error"
 
@@ -248,6 +248,8 @@ if attempt >= maxattempt: # timeout
     grade = (score, feedback_timeout)
 else:
     score = 0
+    (passed, message) = check_syntax(student_query, cursor):
+
     # noter la réponse de l'étudiant
     #if mafonctionevaluation(string_student_answer, solution):
     #    score = 100
