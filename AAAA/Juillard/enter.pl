@@ -8,7 +8,8 @@ title= Balise de titre
 # Avant que ce soit présenté à l'élève 
 before==
 
-Donner le produit et somme de {{a}} et {{b}}. 
+a=3
+b=6
 
 
 
@@ -16,7 +17,7 @@ Donner le produit et somme de {{a}} et {{b}}.
 
 
 text==
-Un exercice de saisie d'un calcul.
+Donner le produit et somme de {{a}} et {{b}}. 
 
 
 ==
