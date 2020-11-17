@@ -8,8 +8,9 @@ title= Balise de titre
 # Avant que ce soit présenté à l'élève 
 before==
 
-Donner le produit et somme de {{a}} et {{b}}. 
 
+a=3
+b=6
 
 
 ==
@@ -17,7 +18,7 @@ Donner le produit et somme de {{a}} et {{b}}.
 
 text==
 Un exercice de saisie d'un calcul.
-
+Donner le produit et somme de {{a}} et {{b}}. 
 
 ==
 
@@ -33,8 +34,10 @@ le produit
 
 # évaluer la réponse 
 evaluator==
-
-grade=(100,"Bravo ")
+if input1.value == a+b and input2.value == a*b :
+    grade=(100,"Bravo ")
+else:
+    grade=(0," Raté recommencez ")
 ==
 
 
