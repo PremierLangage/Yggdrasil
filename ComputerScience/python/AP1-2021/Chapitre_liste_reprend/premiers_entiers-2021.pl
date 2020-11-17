@@ -22,7 +22,7 @@ pltest==
 []
 ==
 
-testcode==
+samplesol==
 def premiers_entiers(n):
     return [x for x in range(n)]
 
@@ -30,5 +30,6 @@ def premiers_entiers(n):
 def premiers_entiers2(n):
     return list(range(n))
 ==
+
 
 
