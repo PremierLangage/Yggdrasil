@@ -13,8 +13,7 @@ Remarque: ``(a, b)`` est un tuple et ``[a, b]`` une liste.
 
 tag=elementAccess|tuple
 
-before==
-
+samplesol==
 def stat_list(l):
     pair=0
     impair=0
@@ -44,6 +43,7 @@ True
 >>> stat_list(l2) # 10 pairs 10 impairs
 (10, 10)
 ==
+
 
 
 
