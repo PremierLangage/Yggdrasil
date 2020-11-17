@@ -265,7 +265,7 @@ else:
     if grade == None:
         (passed, over, under) = symmetric_difference(student_query, solution, cursor)
         if not passed:
-            grade = (0, f'<p class = \"error-state\"> Cette ligne ne devrait pas être dans la réponse : {str(over)}. </br> Cette ligne devrait être dans la réponse mais n\'y est pas : {str(under}} </p>')
+            grade = (0, f'<p class = \"error-state\"> Cette ligne ne devrait pas être dans la réponse : {str(over)}. </br> Cette ligne devrait être dans la réponse mais n\'y est pas : {str(under)} </p>')
 
     if grade == None:
         grade = (100, feedback_success)
