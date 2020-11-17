@@ -20,11 +20,10 @@ taboo=append
 
 tag=reference|extend|ForInRange
 
-before==
+samplesol==
 # solution --- utilise extends
 def tab3(lst,n) :
     lst.extend([i*3 for i in range(1,n+1)])
-
 ==
 
 pltest0==
@@ -47,6 +46,7 @@ pltest2==
 >>> lst
 [5, 3, 6, 9]
 ==
+
 
 
 
