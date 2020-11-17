@@ -23,7 +23,7 @@ Donnez la somme et le produit de {{a}} et {{b}}
 
 form ==
 la somme
-{{ input1|component}}
+{{ input1|component}}   
 le produit
 {{ input2|component}}
 ==
@@ -38,7 +38,7 @@ evaluator==
 
 text += str(input1.value)
 if input1.value == a+b and input2.value==a*b : 
-grade=(100,"Bravo")
+    grade=(100,"Bravo")
 else:
-  grade=(0,"Raté recommencez "+str(input1.value))
+    grade=(0,"Raté recommencez "+str(input1.value))
 ==
