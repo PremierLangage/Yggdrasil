@@ -255,7 +255,7 @@ else:
     grade = None
     (passed, message) = check_syntax(student_query, cursor)
     if not passed:
-        grade = (0, "<p class = \"error-state\">" + "lootr" + "</p>")
+        grade = (0, "<p class = \"error-state\">" + str(message) + "</p>")
     
     if grade == None:
         (passed, message) = check_schema(student_query, solution, cursor)
