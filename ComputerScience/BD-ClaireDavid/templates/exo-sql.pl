@@ -183,7 +183,7 @@ def check_syntax(query, cursor):
         return (False, e)
     return (True, None)
 
-def check_schema(query, solution, cursor):
+def check_schema(query, answer, cursor):
 
 
 
