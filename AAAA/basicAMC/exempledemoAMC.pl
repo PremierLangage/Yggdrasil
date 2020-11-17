@@ -9,7 +9,7 @@ Title: My first AMC questionnaire
 Presentation: Please answer the following questions
 the best you can.
 
-* What is the capital city of Cameroon?
+* What is the capital city of Cameroon ?
 + Yaounde
 - Douala
 - Kribi
