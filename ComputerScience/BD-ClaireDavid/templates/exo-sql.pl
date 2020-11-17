@@ -179,8 +179,9 @@ def mafonctionevaluation(string_student_answer, solution):
 def syntax_checker(query, cursor):
     try:
         cursor.execute(query)
-    except Exception:
-        
+    except Exception(e):
+        return (False, e)
+    return (True, None)
 
 
 # pour récupérer les erreurs
