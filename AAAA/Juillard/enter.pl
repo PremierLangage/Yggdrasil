@@ -1,15 +1,41 @@
+
 extends = /model/mathinput2.pl
 
-title= Exercice 1
 
-text==
-un exo de saisie
+title= Balise de titre 
 
-==
 
-grade=(100, "Bravo garçon")
-
+# Avant que ce soit présenté à l'élève 
 before==
 
-    "Donnez le produit et la somme de {{a }} et {{b}}"
+Donner le produit et somme de {{a}} et {{b}}. 
+
+
+
 ==
+
+
+text==
+Un exercice de saisie d'un calcul.
+
+
+==
+
+
+form ==
+la somme    
+{{ input1|component}}
+le produit
+{{ input2|component}}
+==
+
+
+
+# évaluer la réponse 
+evaluator==
+
+grade=(100,"Bravo ")
+==
+
+
+
