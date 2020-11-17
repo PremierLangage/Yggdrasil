@@ -193,7 +193,8 @@ def check_schema(query, answer, cursor):
         cursor.execute(answer)
         for desc in cursor.description:
             e.append(str(desc[0]))
-        
+        return (False, e)
+    return (True, None)
 
 
 # pour récupérer les erreurs
