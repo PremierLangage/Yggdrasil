@@ -63,7 +63,7 @@ def  saisie_entier_str_positif():
     return n
 
 def table(x, n):
-    print('\nDe 0 fois', x, 'à', n - 1, 'fois', x, ':')
+    print('\n de 0 fois', x, 'à', n - 1, 'fois', x, ':')
     for i in range(n):
         print(i * x)
 
@@ -105,6 +105,7 @@ négatif
 -2
 5
 ==
+
 
 
 
