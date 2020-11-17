@@ -234,12 +234,12 @@ if attempt >= maxattempt: # timeout
 else:
     score = 0
     # noter la réponse de l'étudiant
-    if mafonctionevaluation(string_student_answer, solution):
-        score = 100
-        grade = (score, feedback_success)
-    else:
-        attempt += 1
-        grade=(score, feedback_fail)
+    #if mafonctionevaluation(string_student_answer, solution):
+    #    score = 100
+    #    grade = (score, feedback_success)
+    #else:
+    #    attempt += 1
+    #    grade=(score, feedback_fail)
 
 ==
 
