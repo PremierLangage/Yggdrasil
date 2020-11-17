@@ -1,4 +1,9 @@
 extends = /model/mathinput2.pl
 
 title = Mon **titre**
-text = en **gras** ?
+
+en **gras** ? et $%\alpha%$
+ou \(\beta\)
+==
+
+
