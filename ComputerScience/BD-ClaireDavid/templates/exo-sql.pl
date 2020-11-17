@@ -144,6 +144,7 @@ form== #|html|
 #*===========================================================================
 before== #|py|
 import random
+import sqlite3
 
 score = -1
 attempt = 0
@@ -157,6 +158,20 @@ question = "question par defaut ?"
 
 # solution par defaut si non définie dans le generate de l'exo
 solution = "42"
+
+fichier = open('script_soiree_lite.sql','r')
+script = ""
+
+for line in fichier:
+    script += line
+
+conn = sqlite3.connect(":memory:")
+
+fichier.close()
+
+cursor = conn.cursor()
+
+cursor.executescript(script)
 
 
 
