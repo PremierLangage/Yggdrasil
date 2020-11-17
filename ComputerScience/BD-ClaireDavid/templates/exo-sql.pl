@@ -187,15 +187,32 @@ evaluator== #|py|
 # Ca devrait peut-être dans un fichier .py en ajoutant le nom du fichier dans base.pl
 # from monfichier import bla
 # fonction d'évaluation
+
+######
+fichier = open('script_soiree_lite.sql','r')
+script = ""
+
+for line in fichier:
+    script += line
+
+conn = sqlite3.connect(":memory:")
+
+fichier.close()
+
+cursor = conn.cursor()
+###########
+
+
+
 def mafonctionevaluation(string_student_answer, solution):
     return string_student_answer == solution
 
-#def check_syntax(query, cursor):
-#    try:
-#        cursor.execute(query)
-#    except Exception(e):
-#        return (False, e)
-#    return (True, None)
+def check_syntax(query, cursor):
+    try:
+        cursor.execute(query)
+    except Exception(e):
+        return (False, e)
+    return (True, None)
 
 def check_schema(query, answer, cursor):
     query = query.split(";")[0]
