@@ -255,7 +255,7 @@ else:
     grade = None
     (passed, message) = check_syntax(student_query, cursor)
     if not passed:
-        grade = (0, feedback_fail)
+        grade = (0, "N'importe quoi.")
     
     if grade == None:
         (passed, message) = check_schema(student_query, solution, cursor)
