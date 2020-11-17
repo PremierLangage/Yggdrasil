@@ -189,19 +189,20 @@ evaluator== #|py|
 # fonction d'évaluation
 
 ######
-
-import sqlite3
-fichier = open('script_soiree_lite.sql','r')
-script = ""
-
-for line in fichier:
-    script += line
-
-conn = sqlite3.connect(":memory:")
-
-fichier.close()
-
-cursor = conn.cursor()
+## Claire : Je ne suis pas complètement sûre que la base définie dans before soit accessible ici.
+## Il faudra peut-êêtre rajouter ça 
+# import sqlite3
+# fichier = open('script_soiree_lite.sql','r')
+# script = ""
+# 
+# for line in fichier:
+#     script += line
+# 
+# conn = sqlite3.connect(":memory:")
+# 
+# fichier.close()
+# 
+# cursor = conn.cursor()
 ###########
 
 
