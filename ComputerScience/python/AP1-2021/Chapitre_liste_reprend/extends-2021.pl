@@ -16,9 +16,8 @@ taboo=extend
 
 tag=append|elementAccess|reference|listCopy
 
-before==
+samplesol==
 def fusion(l1, l2):
-
     return l1+l2
 ==
 
@@ -37,5 +36,6 @@ pltest1==
 >>> l2
 [1]
 ==
+
 
 
