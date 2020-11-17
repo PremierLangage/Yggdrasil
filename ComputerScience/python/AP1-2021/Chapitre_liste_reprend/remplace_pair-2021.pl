@@ -2,7 +2,6 @@
 
 # comment
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
-builder= /builder/before.py
 
 title = Remplace les entiers pairs d'une liste
 text == 
@@ -14,13 +13,12 @@ la valeur de `l` doit devenir `[1, 1, 5, 1, 7]`.
 
 tag=reference|mutable|ForInRange|len
 
-before==
+samplesol==
 # solution --- utilise len
 def remppair(lst) :
     for i in range(len(lst)) :
         if lst[i]%2 == 0 :
             lst[i]=1
-after=before
 ==
 
 pltest0==
@@ -36,6 +34,7 @@ pltest1==
 >>> lst
 []
 ==
+
 
 
 
