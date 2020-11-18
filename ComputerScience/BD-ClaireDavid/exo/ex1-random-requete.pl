@@ -32,6 +32,8 @@ import random
 
 fichier_bd = 'script_soiree_lite.sql'
 
+## TODO mettre le schema qqpart? Dans un fichier séparé ou le générer (plus long)
+
 question_dic = parse_question.question_to_dic("questions_soiree.txt")
 
 ordered = False
