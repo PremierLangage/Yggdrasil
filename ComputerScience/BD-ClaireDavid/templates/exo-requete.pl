@@ -165,9 +165,9 @@ fichier = open(schema_bd,'r')
 schema = ""
 
 for line in fichier:
-    schema = schema +"<br>" + line
+    schema = schema +"\n" + line
 fichier.close()
-schema = schema + "<br>"
+schema = schema + "\n"
 ==
 
 #*===========================================================================
