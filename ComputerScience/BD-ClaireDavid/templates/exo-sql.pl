@@ -236,7 +236,7 @@ def symmetric_difference(query, answer, cursor):
         return (False, over, under)
     return (True, over, under)
 
-def check_order(query, answer, cursor1, cursor2)
+def check_order(query, answer, cursor1, cursor2):
     query = query.split(";")[0]
     answer = answer.split(";")[0]
 
