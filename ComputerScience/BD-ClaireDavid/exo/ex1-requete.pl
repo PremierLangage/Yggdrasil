@@ -28,7 +28,7 @@ generate== #|py|
 
 ordered = True
 
-fichier_bd = 'script_soiree_lite.sql'
+fichier_bd = "'script_soiree_lite.sql'"
 
 question = "La liste de toutes les personnes ayant au moins 12 ans avec tous leurs attributs de la plus âgée à la plus jeune."
 
@@ -49,6 +49,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution
 {% endif %}
 
 ==
+
 
 
 
