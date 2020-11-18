@@ -1,16 +1,1 @@
-1;La liste de tous les déguisements avec tous leurs attributs.;SELECT * FROM deguisement;100
-1;La liste de toutes les personnes, avec tous leurs attributs.;SELECT * FROM personne;500
-1;La liste de toutes les soirées, avec tous leurs attributs.;SELECT * FROM soiree;100
-2;La liste des villes où il y a une soirée, sans doublons.;SELECT DISTINCT lieu FROM soiree;31
-2;La liste des magasins de déguisements, sans doublons.;SELECT DISTINCT nommag FROM vendre;10
-2;La liste des avatars représentés en soirée, sans doublons.;SELECT DISTINCT avatar FROM participe;54
-3;La liste des modèles de déguisements qui sont disponibles en taille XS.;SELECT DISTINCT modele FROM vendre WHERE taille = 'XS';17
-3;La liste des magasins qui vendent le costume ang82.;SELECT DISTINCT nommag FROM vendre WHERE modele = 'ang82';2
-3;L'avatar représenté par le costume kyl18.;SELECT avatar FROM deguisement WHERE modele = 'kyl18';1
-4;La liste des modèles de déguisements que l'on peut acheter pour moins de 24 euros.;SELECT DISTINCT modele FROM vendre WHERE prix < 24;16
-4;La liste des soirées qui peuvent accueillir au moins 70 personnes.;SELECT * FROM soiree WHERE nbmax >= 70;57
-4;La liste des personnes qui mesurent moins de 1m50.;SELECT * FROM personne WHERE taille < 150;12
-5;La personne la plus jeune inscrite dans la base de données.;SELECT * FROM personne ORDER BY age LIMIT 1;1
-5;La personne la plus âgée inscrite dans la base de données.;SELECT * FROM personne ORDER BY age DESC LIMIT 1;1
-5;La personne la plus petite (en taille) inscrite dans la base de données.;SELECT * FROM personne ORDER BY taille LIMIT 1;1
-5;La personne la plus grande (en taille) inscrite dans la base de données.;SELECT * FROM personne ORDER BY taille DESC LIMIT 1;1
+1:La liste de tous les déguisements avec tous leurs attributs.:SELECT * FROM deguisement:100
