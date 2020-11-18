@@ -162,12 +162,12 @@ if 'generate' in globals():
 # mise en forme du schema àà partir du fichier schema_bd
 
 fichier = open(schema_bd,'r')
-schema = "<ul>"
+schema = "<br><ul>"
 
 for line in fichier:
-    schema += <li>line</li>
+    schema = schema + "<li>" + line + "</li>"
 fichier.close()
-schema += </ul>
+schema = schema + "</ul>"
 ==
 
 #*===========================================================================
