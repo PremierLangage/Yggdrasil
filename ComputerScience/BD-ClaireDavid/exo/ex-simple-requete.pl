@@ -1,6 +1,7 @@
 extends = ../templates/exo-requete.pl
 
 @ ../databases/script_soiree_lite.sql
+@ ../databases/schema_soiree.sql
 @ ../questions/questions_soiree.txt
 
 #* titre de l'exercice
