@@ -74,9 +74,7 @@ form_timeout== #|html|
 #*===========================================================================
 #* override this key to change the instructions below inputbox for simple regex
 form_instructions_sql_query== #|html|
-<p>
  {{schema}}
-</p>
 ==
 
 #*===========================================================================
