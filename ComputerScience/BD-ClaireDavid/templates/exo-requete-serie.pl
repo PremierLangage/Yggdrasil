@@ -86,8 +86,18 @@ Syntaxe: XXX A Ajuster ou virer
 ## exercise title -- should be override in the exercise file
 title= PLEASE OVERRIDE THE KEY **title=** TO CHANGE THIS TEXT
 
-## exercise instructions -- should be override in the exercise file
-text= PLEASE OVERRIDE THE KEY **title=** TO CHANGE THIS TEXT
+
+#* Texte de l'énoncé
+# ---
+text== #|html|
+On considère le schema suivant. Donnez une requete qui calcule {{ question }}. <br>
+{% if attempt < maxattempt and score != 100 %}
+<p class="warning-state">
+Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution !
+</p>
+{% endif %}
+
+==
 
 ## In this form :
 #   the editor for the student to provide an answer
@@ -302,43 +312,3 @@ else:
 
 
 ==
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
