@@ -180,7 +180,7 @@ evaluator== #|py|
 
 import sqlite3
 #fichier = open('script_soiree_lite.sql','r')
-fichier = open({fichier_bd},'r')
+fichier = open(fichier_bd,'r')
 script = ""
 
 for line in fichier:
