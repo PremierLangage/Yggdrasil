@@ -14,4 +14,3 @@
 5;La personne la plus âgée inscrite dans la base de données.;SELECT * FROM personne ORDER BY age DESC LIMIT 1;1
 5;La personne la plus petite (en taille) inscrite dans la base de données.;SELECT * FROM personne ORDER BY taille LIMIT 1;1
 5;La personne la plus grande (en taille) inscrite dans la base de données.;SELECT * FROM personne ORDER BY taille DESC LIMIT 1;1
-
