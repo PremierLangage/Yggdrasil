@@ -159,7 +159,7 @@ question = "question par defaut ?"
 # solution par defaut si non définie dans le generate de l'exo
 solution = "42"
 
-# définir ordered = True pour tester si les lignes sont dans le bon ordre
+# définir ordered = True dans le generate de l'exo pour tester si les lignes sont dans le bon ordre
 ordered = False
 
 if 'generate' in globals():
@@ -236,6 +236,21 @@ def symmetric_difference(query, answer, cursor):
         return (False, over, under)
     return (True, over, under)
 
+def check_order(query, answer, cursor1, cursor2)
+    query = query.split(";")[0]
+    answer = answer.split(";")[0]
+
+    passed = True
+    cursor1.execute(query)
+    cursor2.execute(answer)
+
+    while passed and ligne1:
+        ligne1 = cursor1.fetchone()
+        ligne2 = cursor2.fetchone()
+        if ligne1 != ligne2:
+            passed = False
+    
+
 # pour récupérer les erreurs
 error = ""
 
@@ -278,7 +293,7 @@ else:
             grade = (0, f'<p class = \"error-state\"> {feedback} </br>  </p>')
 
     if grade == None and ordered:
-        
+
 
     if grade == None:
         grade = (100, feedback_success)
