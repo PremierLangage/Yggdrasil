@@ -57,8 +57,6 @@ feedback_timeout =  <p class="warning-state"> Vous n'avez pas réussi l'exercice
 #* feedback before showing a solution
 feedback_show_solution = <p class="warning-state">Voici une réponse possible à la question.<br></p>
 
-#*TTTTT
-var_schema = {{schema}}
 
 #*===========================================================================
 #* ADDITIONNAL HTML FORM
