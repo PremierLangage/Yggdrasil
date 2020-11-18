@@ -36,7 +36,7 @@ CREATE TABLE soiree (
 );
 
 CREATE TABLE participe (
-	ids int REFERENCES soiree(ids),
+	idS int REFERENCES soiree(idS),
 	surnom varchar(25) REFERENCES personne(surnom),
 	avatar varchar(25),
 	PRIMARY KEY(ids,surnom)
@@ -4346,3 +4346,4 @@ INSERT INTO participe VALUES (59,'eli75','ninja');
 INSERT INTO participe VALUES (59,'emi49','Laureline');
 INSERT INTO participe VALUES (59,'kar955','Asterix');
 INSERT INTO participe VALUES (59,'fau348','Leia');
+
