@@ -1,0 +1,47 @@
+
+deguisement (modele, avatar, marque)
+vendre (nomMag,modele, taille, prix)
+personne (surnom, nom, prenom, age, taille)
+soiree (idS, lieu, date, entree, organisateur, nbmax)
+participe (ids, surnom, avatar)
+
+modele dans vendre fait ref à modele dans deguisement
+
+
+CREATE TABLE deguisement (
+	modele varchar(25) primary key,
+	avatar varchar(25),
+	marque varchar(25)
+);
+
+CREATE TABLE vendre (
+	nomMag varchar(25),
+	modele varchar(25) REFERENCES deguisement(modele),
+	taille varchar(3),
+	prix float,
+	PRIMARY KEY(nomMag,modele,taille)
+);
+
+CREATE TABLE personne (
+	surnom varchar(25) primary key,
+	nom varchar(25),
+	prenom varchar(25),
+	age int,
+	taille int
+);
+
+CREATE TABLE soiree (
+	idS int primary key,
+	lieu varchar(25),
+	date date,
+	entree int,
+	organisateur varchar(25) REFERENCES personne(surnom),
+	nbmax int
+);
+
+CREATE TABLE participe (
+	idS int REFERENCES soiree(ids),
+	surnom varchar(25) REFERENCES personne(surnom),
+	avatar varchar(25),
+	PRIMARY KEY(ids,surnom)
+);
