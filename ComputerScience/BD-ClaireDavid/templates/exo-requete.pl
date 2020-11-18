@@ -100,7 +100,7 @@ form== #|html|
 {% else %}
 {{ editor|component }}
 <br>
-{{ form_instructions_sql_query }}
+{{ form_schema }}
 {% endif %}
 
 
@@ -163,9 +163,9 @@ fichier = open(schema_bd,'r')
 schema = ""
 
 for line in fichier:
-    schema = schema +"<br>\n" + line
+    schema = schema +"<br>" + line
 fichier.close()
-schema = schema + "<br>\n"
+schema = schema + "<br>"
 ==
 
 #*===========================================================================
