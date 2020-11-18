@@ -39,14 +39,18 @@ question_dic = parse_question.question_to_dic("questions_soiree.txt")
 ordered = False
 ### TODO? rajouter ordered dans le fichier question réponse? ou pas car ce n'est souvent pas pertinent
 
-nb_questions = 4
+nb_questions = 2
 
 questions = question_dic[nb_questions]
+
+question1 = questions[1].text
+solution1 = questions[1].answer
 
 #question = chosen_question.text
 
 #solution = chosen_question.answer
 ==
+
 
 
 
