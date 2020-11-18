@@ -22,11 +22,11 @@ import parse_question
 
 question_dic = parse_question("questions_soiree.txt")
 
-ordered = True
+ordered = False
 
-question = "La liste de toutes les soirées avec tous leurs attributs."
+question = question_dic[4].text
 
-solution = "SELECT * FROM soiree ORDER BY lieu;"
+solution = question_dic[4].answer
 ==
 
 
