@@ -277,6 +277,9 @@ else:
                 feedback += f'Cette ligne devrait être dans la réponse mais n\'y est pas : {str(under)}'
             grade = (0, f'<p class = \"error-state\"> {feedback} </br>  </p>')
 
+    if grade == None and ordered:
+        
+
     if grade == None:
         grade = (100, feedback_success)
 
