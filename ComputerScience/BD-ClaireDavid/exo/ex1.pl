@@ -24,9 +24,9 @@ question_dic = parse_question.question_to_dic("questions_soiree.txt")
 
 ordered = False
 
-question = question_dic[4].text
+question = question_dic[4][0].text
 
-solution = question_dic[4].answer
+solution = question_dic[4][0].answer
 ==
 
 
