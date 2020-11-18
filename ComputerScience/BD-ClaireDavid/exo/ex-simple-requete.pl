@@ -47,7 +47,9 @@ solution = "SELECT * FROM personne where age >=12 ORDER BY age DESC;"
 # ---
 text== #|html|
 On considère le schema ci dessous. 
+<p>
 {{ schema }}
+</p>
 
 <p> Donnez une requete qui calcule {{ question }}. <br> </p>
 {% if attempt < maxattempt and score != 100 %}
