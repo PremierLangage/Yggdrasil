@@ -49,7 +49,7 @@ text== #|html|
 <p>On considère le schema ci dessous. </p>
 
 <div style="width: 600px; padding-top:10px; padding-bottom:10px;
-border: 3px solid #A0A0A0; text-align: left;background: #C0C0C0;">
+border: 1px solid #A0A0A0; text-align: left;background: #C0C0C0;">
 {{ schema }}
 
 </div>
