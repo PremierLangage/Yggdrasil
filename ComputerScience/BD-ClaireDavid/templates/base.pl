@@ -1,8 +1,6 @@
 @ /utils/sandboxio.py
 # imports de bibliothèques
 # @ ../scripts/create_db.py
-@ ../databases/script_soiree_lite.sql
-@ ../questions/questions_soiree.txt
 @../scripts/parse_question.py
 
 
@@ -18,6 +16,7 @@ extracss==
 title = 
 text = 
 form = 
+
 
 
 
