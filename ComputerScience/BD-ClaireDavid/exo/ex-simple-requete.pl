@@ -1,5 +1,8 @@
 extends = ../templates/exo-requete.pl
 
+@ ../databases/script_soiree_lite.sql
+@ ../questions/questions_soiree.txt
+
 #* titre de l'exercice
 title = Exercice test
 
@@ -48,6 +51,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution
 {% endif %}
 
 ==
+
 
 
 
