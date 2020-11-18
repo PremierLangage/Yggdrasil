@@ -35,7 +35,7 @@ input.virtualKeyboards = complex
 evaluator ==
 # Bon, ici, tout est caché dans la fonction eval_complex qui est dans une bibliothèque.
 # Cette fonction prend en paramètres : la valeur rentrée par l'élève input.value (une chaîne latex),
-# la solution attendue (un objet sympy) et des options
+# la solution attendue (un objet sympy) et des options.
 # Elle renvoie un score et un code d'erreur
 score, error = eval_complex(input.value, sol, form="cartesian")
 # On a des messages prédéfinis dans le dictionnaire "message" pour transformer le code erreur en message
