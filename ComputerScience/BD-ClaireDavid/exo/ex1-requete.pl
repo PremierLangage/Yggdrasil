@@ -1,4 +1,4 @@
-extends = ../templates/exo-sql.pl
+extends = ../templates/exo-requete.pl
 
 #* titre de l'exercice
 title = Exercice test
