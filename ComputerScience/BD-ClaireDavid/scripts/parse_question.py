@@ -11,7 +11,7 @@ def question_to_dic(question_path):
         #if int(lst[0]) not in output:
         #    output[(int(lst[0]))] = []
         #output[int(lst[0])].append(question(lst))
-        output.append[lst]
+        output.append(lst)
     question_file.close()
     return output
 
