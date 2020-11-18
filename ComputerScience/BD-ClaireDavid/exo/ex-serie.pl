@@ -46,6 +46,8 @@ questions = question_dic[nb_questions]
 question1 = questions[1].text
 solution1 = questions[1].answer
 
+question2 = questions[2].text
+solution2 = questions[2].answer
 #question = chosen_question.text
 
 #solution = chosen_question.answer
