@@ -4,8 +4,6 @@ personne (_surnom_, nom, prenom, age, taille)
 soiree (_idS_, lieu, date, entree, organisateur, nbmax)
 participe (_idS, surnom_, avatar)
 
-
-
 modele dans vendre fait reférence à modele dans deguisement
 organisateur dans soiree fait reférence à surnom dans personne
 surnom dans participe fait reférence à surnom dans personne
