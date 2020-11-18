@@ -15,7 +15,15 @@ show_solution = False
 # TODO disable reroll is not implemented yet
 allow_reroll =  True
 
-#* on peut ajouter ici un script de definition d'énoncé et solution qui sera excécuté dans le before de l'exo
+#* script de definition d'énoncé et solution qui doit contenir
+#   question : description en français de ce que doit calaculer la requête 
+#   solution : exemple de requête solution
+#   fichier_bd : nom du fichier contenant la base de données sur laquelle on veut tester la réponse
+#
+#   optionnel :
+#          ordered - boolean pour dire si l'ordre des tuples de la réponse est important (order by)
+#                    False par défaut
+#           maxattempt - nombre de tentatives 3 par défaut
 generate== #|py|
 
 ordered = True
