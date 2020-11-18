@@ -3,6 +3,7 @@
 # @ ../scripts/create_db.py
 @ ../databases/script_soiree_lite.sql
 @ ../questions/questions_soiree.txt
+@../scripts/parse_question.py
 
 
 grader  =@ /grader/evaluator.py
