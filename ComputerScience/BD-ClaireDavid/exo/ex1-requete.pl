@@ -28,9 +28,11 @@ generate== #|py|
 
 ordered = True
 
-question = "La liste de toutes les soirées avec tous leurs attributs."
+fichier_bd = 
 
-solution = "SELECT * FROM personne where age >12 ORDER BY age;"
+question = "La liste de toutes les personnes ayant au moins 12 ans avec tous leurs attributs de la plus âgée à la plus jeune."
+
+solution = "SELECT * FROM personne where age >=12 ORDER BY age DESC;"
 ==
 
 
