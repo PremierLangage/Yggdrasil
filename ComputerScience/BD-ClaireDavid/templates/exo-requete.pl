@@ -57,6 +57,8 @@ feedback_timeout =  <p class="warning-state"> Vous n'avez pas réussi l'exercice
 #* feedback before showing a solution
 feedback_show_solution = <p class="warning-state">Voici une réponse possible à la question.<br></p>
 
+#*TTTTT
+var_schema = {{schema}}
 
 #*===========================================================================
 #* ADDITIONNAL HTML FORM
@@ -74,7 +76,7 @@ form_timeout== #|html|
 #*===========================================================================
 #* override this key to change the instructions below inputbox for simple regex
 form_instructions_sql_query== #|html|
- pouet <br> blabla <br> {{schema}}
+ pouet <br> blabla <br> {{var_schema}}
 ==
 
 #*===========================================================================
