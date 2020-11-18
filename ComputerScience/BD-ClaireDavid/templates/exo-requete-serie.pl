@@ -153,12 +153,6 @@ maxattempt = int(maxattempt)
 allow_reroll = (allow_reroll == "True")
 show_solution = (show_solution == "True")
 
-# question par defaut si non définie dans le generate de l'exo
-questions = "ATTENTION! définir la question dans l'exo" 
-
-# solution par defaut si non définie dans le generate de l'exo
-solutions = "42"
-
 # définir ordered = True dans le generate de l'exo pour tester si les lignes sont dans le bon ordre
 ordered = False
 
@@ -308,6 +302,7 @@ else:
 
 
 ==
+
 
 
 
