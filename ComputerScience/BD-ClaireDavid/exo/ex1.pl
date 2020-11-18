@@ -26,7 +26,7 @@ ordered = False
 
 question = question_dic[4].text
 
-solution = question_dic[4].answer
+solution = "SELECT * FROM soiree;"
 ==
 
 
