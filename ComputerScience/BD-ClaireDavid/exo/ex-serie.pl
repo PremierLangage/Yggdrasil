@@ -40,6 +40,7 @@ ordered = False
 ### TODO? rajouter ordered dans le fichier question réponse? ou pas car ce n'est souvent pas pertinent
 
 nb_questions = 2
+step = 1
 
 questions = question_dic[nb_questions]
 
