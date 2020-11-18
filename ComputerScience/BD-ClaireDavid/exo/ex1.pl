@@ -20,7 +20,7 @@ generate== #|py|
 
 import parse_question
 
-question_dic = question_to_dic("questions_soiree.txt")
+question_dic = parse_question.question_to_dic("questions_soiree.txt")
 
 ordered = False
 
