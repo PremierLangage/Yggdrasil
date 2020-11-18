@@ -19,14 +19,17 @@ allow_reroll =  True
 generate== #|py|
 
 import parse_question
+import random
 
 question_dic = parse_question.question_to_dic("questions_soiree.txt")
 
 ordered = False
 
-question = question_dic[4][0].text
+chosen_question = random.choice(question_dic[4])
 
-solution = question_dic[4][0].answer
+question = chosen_question.text
+
+solution = chosen_question.answer
 ==
 
 
