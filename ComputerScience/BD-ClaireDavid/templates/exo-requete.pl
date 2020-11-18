@@ -75,7 +75,7 @@ form_timeout== #|html|
 #* override this key to change the instructions below inputbox for simple regex
 form_instructions_sql_query== #|html|
 <p>
-Syntaxe: Attention de ne pas oublier le ; à la fin de votre requête
+Syntaxe: XXX A Ajuster ou virer
 </p>
 ==
 
@@ -179,6 +179,7 @@ evaluator== #|py|
 ######
 
 import sqlite3
+#fichier = open('script_soiree_lite.sql','r')
 fichier = open('script_soiree_lite.sql','r')
 script = ""
 
