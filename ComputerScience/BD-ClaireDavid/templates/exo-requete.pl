@@ -151,7 +151,7 @@ attempt = 0
 maxattempt = int(maxattempt)
 
 allow_reroll = (allow_reroll == "True")
-show_solution = (show_solution == "False")
+show_solution = (show_solution == "True")
 
 # question par defaut si non définie dans le generate de l'exo
 question = "ATTENTION! définir la question dans l'exo" 
