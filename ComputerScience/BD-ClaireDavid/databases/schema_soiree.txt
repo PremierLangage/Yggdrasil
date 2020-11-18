@@ -7,6 +7,6 @@ participe (_idS, surnom_, avatar)
  
 modele dans vendre fait ref à modele dans deguisement
 organisateur dans soiree fait ref à surnom dans personne
-surnom dans participefait ref à surnom dans personne
+surnom dans participe fait ref à surnom dans personne
 idS dans participe fait ref à idS dans soiree
 
