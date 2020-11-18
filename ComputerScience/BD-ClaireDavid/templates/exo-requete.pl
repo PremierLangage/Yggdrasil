@@ -153,18 +153,21 @@ maxattempt = int(maxattempt)
 allow_reroll = (allow_reroll == "True")
 show_solution = (show_solution == "True")
 
-# question par defaut si non définie dans le generate de l'exo
-question = "ATTENTION! définir la question dans l'exo" 
-
-# solution par defaut si non définie dans le generate de l'exo
-solution = "42"
-
 # définir ordered = True dans le generate de l'exo pour tester si les lignes sont dans le bon ordre
 ordered = False
 
 if 'generate' in globals():
     exec(generate)
 
+# mise en forme du schema àà partir du fichier schema_bd
+
+fichier = open(schema_bd,'r')
+schema = "<ul>"
+
+for line in fichier:
+    schema += <li>line</li>
+fichier.close()
+schema += </ul>
 ==
 
 #*===========================================================================
@@ -308,6 +311,7 @@ else:
 
 
 ==
+
 
 
 
