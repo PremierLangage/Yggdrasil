@@ -42,14 +42,15 @@ schema_bd = 'schema_soiree.txt'
 
 question_dic = parse_question.question_to_dic("questions_soiree.txt")
 
-ordered = False
-### TODO? rajouter ordered dans le fichier question réponse? ou pas car ce n'est souvent pas pertinent
 
 chosen_question = random.choice(question_dic[4])
 
 question = chosen_question.text
 
 solution = chosen_question.answer
+
+ordered = chosen_question.ordered
+
 ==
 
 
@@ -64,6 +65,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution
 {% endif %}
 
 ==
+
 
 
 
