@@ -49,7 +49,9 @@ text== #|html|
 <p>On considère le schema ci dessous. </p>
 <div style="width: 600px; padding-top:10px; padding-bottom:10px;
 border: 3px solid #A0A0A0; text-align: center;background: #C0C0C0;">
+
 {{ schema }}
+
 </div>
 <p> Donnez une requete qui calcule {{ question }}. <br> </p>
 {% if attempt < maxattempt and score != 100 %}
