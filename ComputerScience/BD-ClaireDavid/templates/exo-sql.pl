@@ -249,6 +249,8 @@ def check_order(query, answer, cursor1, cursor2)
         ligne2 = cursor2.fetchone()
         if ligne1 != ligne2:
             passed = False
+
+    return passed
     
 
 # pour récupérer les erreurs
