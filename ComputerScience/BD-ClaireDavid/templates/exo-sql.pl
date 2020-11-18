@@ -295,7 +295,10 @@ else:
             grade = (0, f'<p class = \"error-state\"> {feedback} </br>  </p>')
 
     if grade == None and ordered:
-
+        cursor2 = conn.cursor()
+        passed = check_order(student_query, solution, cursor, cursor2)
+        if not passed:
+            grade = (0, '<p class = "error-state"> Le contenu de la réponse est correct, mais les lignes sont dans le mauvais ordre.</p>')
 
     if grade == None:
         grade = (100, feedback_success)
