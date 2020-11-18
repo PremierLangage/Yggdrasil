@@ -297,6 +297,7 @@ else:
             grade = (0, f'<p class = \"error-state\"> {feedback} </br>  </p>')
             attempt += 1
 
+# TODO vérifier que ordered est bien un boolean et pas un str
     if grade == None and ordered:
         cursor2 = conn.cursor()
         passed = check_order(student_query, solution, cursor, cursor2)
@@ -309,6 +310,7 @@ else:
 
 
 ==
+
 
 
 
