@@ -1,8 +1,8 @@
-deguisement (_modele_, avatar, marque)
-vendre (_nomMag,modele, taille_, prix)
-personne (_surnom_, nom, prenom, age, taille)
-soiree (_idS_, lieu, date, entree, organisateur, nbmax)
-participe (_idS, surnom_, avatar)
++ deguisement (_modele_, avatar, marque)
++ vendre (_nomMag,modele, taille_, prix)
++ personne (_surnom_, nom, prenom, age, taille)
++ soiree (_idS_, lieu, date, entree, organisateur, nbmax)
++ participe (_idS, surnom_, avatar)
 
 Contraintes de clé étrangère:
 modele dans vendre fait reférence à modele dans deguisement
