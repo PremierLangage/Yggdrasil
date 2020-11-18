@@ -4,8 +4,9 @@ vendre (_nomMag,modele, taille_, prix)
 personne (_surnom_, nom, prenom, age, taille)
 soiree (_idS_, lieu, date, entree, organisateur, nbmax)
 participe (_idS, surnom_, avatar)
-
+ 
 modele dans vendre fait ref à modele dans deguisement
 organisateur dans soiree fait ref à surnom dans personne
 surnom dans participefait ref à surnom dans personne
 idS dans participe fait ref à idS dans soiree
+
