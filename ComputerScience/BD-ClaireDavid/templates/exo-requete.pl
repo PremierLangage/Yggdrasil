@@ -73,8 +73,7 @@ form_timeout== #|html|
 
 #*===========================================================================
 #* override this key to change the instructions below inputbox for simple regex
-form_schema== #|html|
-<strong>Schema</strong>
+form_schema== #|markdown|
  {{schema |safe}}
 ==
 
