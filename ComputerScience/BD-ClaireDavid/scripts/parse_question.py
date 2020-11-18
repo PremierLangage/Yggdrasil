@@ -2,7 +2,7 @@ class question:
     def __init__(self,lst):
         self.text = lst[1]
         self.answer = lst[2]+";"
-        self.ordered = boolean(lst[4])
+        self.ordered = bool(lst[4])
 
 def question_to_dic(question_path):
     question_file = open(question_path, "r")
