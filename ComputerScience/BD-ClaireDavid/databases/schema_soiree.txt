@@ -1,4 +1,3 @@
-
 deguisement (_modele_, avatar, marque)
 vendre (_nomMag,modele, taille_, prix)
 personne (_surnom_, nom, prenom, age, taille)
