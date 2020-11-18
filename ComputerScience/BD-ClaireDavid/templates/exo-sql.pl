@@ -159,6 +159,9 @@ question = "question par defaut ?"
 # solution par defaut si non définie dans le generate de l'exo
 solution = "42"
 
+# définir ordered = True pour tester si les lignes sont dans le bon ordre
+ordered = False
+
 if 'generate' in globals():
     exec(generate)
 ==
@@ -286,6 +289,7 @@ else:
     #    grade=(score, feedback_fail)
 
 ==
+
 
 
 
