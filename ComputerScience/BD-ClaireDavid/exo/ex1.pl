@@ -24,7 +24,7 @@ question_dic = parse_question.question_to_dic("questions_soiree.txt")
 
 ordered = False
 
-question = str(question_dic[0])
+question = str(question_dic)
 
 solution = "SELECT * FROM soiree;"
 ==
