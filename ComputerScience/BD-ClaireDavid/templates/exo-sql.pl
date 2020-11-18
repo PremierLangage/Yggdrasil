@@ -244,6 +244,8 @@ def check_order(query, answer, cursor1, cursor2):
     cursor1.execute(query)
     cursor2.execute(answer)
 
+    ligne1 = True
+
     while passed and ligne1:
         ligne1 = cursor1.fetchone()
         ligne2 = cursor2.fetchone()
