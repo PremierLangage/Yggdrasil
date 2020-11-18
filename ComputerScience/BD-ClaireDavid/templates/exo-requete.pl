@@ -275,11 +275,13 @@ else:
     (passed, message) = check_syntax(student_query, cursor)
     if not passed:
         grade = (0, f'<p class = \"error-state\"> {str(message)} </p>')
+        attempt += 1
     
     if grade == None:
         (passed, message) = check_schema(student_query, solution, cursor)
         if not passed:
             grade = (0, f'<p class = \"error-state\"> Le schéma attendu pour la réponse est : {str(message)} </p>')
+            attempt += 1
     
     if grade == None:
         (passed, over, under) = symmetric_difference(student_query, solution, cursor)
@@ -292,12 +294,14 @@ else:
                     feedback += "</br>"
                 feedback += f'Cette ligne devrait être dans la réponse mais n\'y est pas : {str(under)}'
             grade = (0, f'<p class = \"error-state\"> {feedback} </br>  </p>')
+            attempt += 1
 
     if grade == None and ordered:
         cursor2 = conn.cursor()
         passed = check_order(student_query, solution, cursor, cursor2)
         if not passed:
             grade = (0, '<p class = "error-state"> Le contenu de la réponse est correct, mais les lignes sont dans le mauvais ordre.</p>')
+            attempt += 1
 
     if grade == None:
         grade = (100, feedback_success)
