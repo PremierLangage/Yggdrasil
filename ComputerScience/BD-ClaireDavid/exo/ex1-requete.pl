@@ -22,7 +22,7 @@ ordered = True
 
 question = "La liste de toutes les soirées avec tous leurs attributs."
 
-solution = "SELECT * FROM personne ORDER BY age;"
+solution = "SELECT * FROM personne where age >12 ORDER BY age;"
 ==
 
 
