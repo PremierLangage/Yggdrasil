@@ -39,7 +39,7 @@ CREATE TABLE participe (
 	idS int REFERENCES soiree(idS),
 	surnom varchar(25) REFERENCES personne(surnom),
 	avatar varchar(25),
-	PRIMARY KEY(ids,surnom)
+	PRIMARY KEY(idS,surnom)
 );
 
 
