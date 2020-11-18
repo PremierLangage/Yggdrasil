@@ -18,6 +18,10 @@ allow_reroll =  True
 #* on peut ajouter ici un script de definition d'énoncé et solution qui sera excécuté dans le before de l'exo
 generate== #|py|
 
+import parse_question
+
+question_dic = parse_question("questions_soiree.txt")
+
 ordered = True
 
 question = "La liste de toutes les soirées avec tous leurs attributs."
