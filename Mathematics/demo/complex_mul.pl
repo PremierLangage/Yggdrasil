@@ -27,7 +27,7 @@ text ==
 On considère les nombres complexes $! z_1 = {{ z1|latex }} !$ et $! z_2= {{ z2|latex }} !$. Calculer $! z_1 \times z_2 !$ (sous forme algébrique).
 ==
 
-# On choisit le type de clavier virtualKeyboards
+# On choisit le type de clavier virtuel
 input.virtualKeyboards = complex
 
 # La clé evaluator contient un script python qui est exécuté quand l'élève valide sa réponse
