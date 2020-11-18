@@ -23,7 +23,7 @@ generate== #|py|
 
 question = "La liste de toutes les soirées avec tous leurs attributs."
 
-solution = "SELECT * FROM soiree;"
+solution = "SELECT * FROM soiree ORDER BY lieu;"
 ==
 
 
@@ -40,6 +40,7 @@ Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution
 {% endif %}
 
 ==
+
 
 
 
