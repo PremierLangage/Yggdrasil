@@ -314,7 +314,6 @@ else:
     if grade = None and numbered:
         (passed, nb_solution, nb_answer) = check_rowcount(student_query, solution, cursor)
         if not passed:
-        # TODO vérifier si nb_solution et nb_answer sont des string ou des int
             if nb_solution < nb_answer:
                 feedback = f'Les valeurs renvoyées par votre requête est correct mais le nombre de lignes renvoyées est trop important.'
             else :
