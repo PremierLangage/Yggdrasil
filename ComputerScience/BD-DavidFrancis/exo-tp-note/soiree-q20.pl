@@ -7,7 +7,7 @@ extends = ../templates/exo-requete.pl
 
 
 #* titre de l'exercice
-title = Question 11
+title = Question 20
 
 author = Nadime Francis
 
@@ -41,7 +41,7 @@ schema_bd = 'schema_soiree.txt'
 question_dic = parse_question.question_to_dic("questions_soiree.txt")
 
 
-chosen_question = random.choice(question_dic[11])
+chosen_question = random.choice(question_dic[20])
 
 question = chosen_question.text
 
