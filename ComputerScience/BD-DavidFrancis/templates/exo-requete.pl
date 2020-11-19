@@ -181,8 +181,8 @@ schema = schema + "<br>"
 #*===========================================================================
 evaluator== #|py|
 
-ordered = (ordered == "True")
-numbered = (numbered == "True")
+ordered = (ordered == 'True')
+numbered = (numbered == 'True')
 
 ######
 import sqlite3
