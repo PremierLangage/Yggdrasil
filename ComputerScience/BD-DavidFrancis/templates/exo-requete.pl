@@ -4,7 +4,7 @@
 extends = base.pl
 
 #* Maximum number of attempts before showing the right answer.
-maxattempt = 3
+# maxattempt = 3
 
 #XX this functionality has not been implemented yet - current behaviour is allow_reroll = True XX
 #* When True display the reroll button and allow the student to reroll the exercice after tumeout
@@ -92,11 +92,6 @@ text== #|html|
  <br>
  Ecrivez une requete SQL pour récupérer l'information suivante:<br>
  {{ question }} <br> </p>
-{% if attempt < maxattempt and score != 100 %}
-<p class="warning-state">
-Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution !
-</p>
-{% endif %}
 
 ==
 ## In this form :
