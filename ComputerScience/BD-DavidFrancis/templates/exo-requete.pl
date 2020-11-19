@@ -315,9 +315,9 @@ else:
         (passed, nb_solution, nb_answer) = check_rowcount(student_query, solution, cursor)
         if not passed:
             if nb_solution < nb_answer:
-                feedback = f'Les valeurs renvoyées par la requête sont correctes mais le nombre de lignes renvoyées est trop important.'
+                feedback = f'Les valeurs renvoyées par la requête sont correctes mais il y a trop de lignes (doublons).'
             else :
-                feedback = f'Les valeurs renvoyées par la requête sont correctes mais le nombre de lignes renvoyées est trop faible.'
+                feedback = f'Les valeurs renvoyées par la requête sont correctes mais il manque des occurrences de certaines lignes.'
             grade = (0, f'<p class = \"error-state\"> {feedback} </br>  </p>')
                  
     if grade == None and ordered:
