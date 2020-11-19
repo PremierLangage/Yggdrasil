@@ -1,9 +1,9 @@
 1;La liste de tous les déguisements avec tous leurs attributs.;SELECT * FROM deguisement;False;False
 1;La liste de toutes les personnes, avec tous leurs attributs.;SELECT * FROM personne;False;False
 1;La liste de toutes les soirées, avec tous leurs attributs.;SELECT * FROM soiree;False;False
-2;La liste des villes où il y a une soirée, sans doublons.;SELECT DISTINCT lieu FROM soiree;False;True;
-2;La liste des magasins de déguisements, sans doublons.;SELECT DISTINCT nommag FROM vendre;False;True;
-2;La liste des avatars représentés en soirée, sans doublons.;SELECT DISTINCT avatar FROM participe;False;True;
+2;La liste des villes où il y a une soirée, sans doublons.;SELECT DISTINCT lieu FROM soiree;False;True
+2;La liste des magasins de déguisements, sans doublons.;SELECT DISTINCT nommag FROM vendre;False;True
+2;La liste des avatars représentés en soirée, sans doublons.;SELECT DISTINCT avatar FROM participe;False;True
 3;La liste des modèles de déguisements qui sont disponibles en taille XS.;SELECT DISTINCT modele FROM vendre WHERE taille = 'XS';False;False
 3;La liste des magasins qui vendent le costume ang82.;SELECT DISTINCT nommag FROM vendre WHERE modele = 'ang82';False;False
 3;L'avatar représenté par le costume kyl18.;SELECT avatar FROM deguisement WHERE modele = 'kyl18';False;False
