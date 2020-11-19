@@ -174,8 +174,8 @@ fichier.close()
 schema = schema + "<br>"
 
 
-ordered = (ordered == True)
-numbered = (numbered == True)
+#ordered = (ordered == True)
+#numbered = (numbered == True)
 ==
 
 #*===========================================================================
