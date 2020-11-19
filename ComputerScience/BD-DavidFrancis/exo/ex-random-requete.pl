@@ -40,7 +40,7 @@ schema_bd = 'schema_soiree.txt'
 question_dic = parse_question.question_to_dic("questions_soiree.txt")
 
 
-chosen_question = random.choice(question_dic[4])
+chosen_question = random.choice(question_dic[5])
 
 question = chosen_question.text
 
