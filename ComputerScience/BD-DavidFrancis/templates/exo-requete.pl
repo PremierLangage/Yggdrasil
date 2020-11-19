@@ -324,7 +324,8 @@ else:
             grade = (0, '<p class = "error-state"> Le contenu de la réponse est correct, mais les lignes sont dans le mauvais ordre.</p>')
 
     if grade == None:
-        grade = (100, feedback_success)
+#        grade = (100, feedback_success)
+        grade = (100, f'<p class = \"warning-state\"> ordered : {str(ordered)} numbered : {str(numbered)}</p>')
 
 ==
 
