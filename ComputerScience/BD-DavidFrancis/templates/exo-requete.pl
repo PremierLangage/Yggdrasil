@@ -323,10 +323,11 @@ else:
             (passed, nb_solution, nb_answer) = check_rowcount(student_query, solution, cursor)
             if not passed:
             # TODO vérifier si nb_solution et nb_answer sont des string ou des int
+                feedback = ""
                 if nb_solution < nb_answer:
-                    feedback = f'L'ensemble des valeurs renvoyées par votre requête est correct mais le nombre de lignes renvoyées est trop important.'
+                    feedback += f'L'ensemble des valeurs renvoyées par votre requête est correct mais le nombre de lignes renvoyées est trop important.'
                 else :
-                    feedback = f'L'ensemble des valeurs renvoyées par votre requête est correct mais le nombre de lignes renvoyées est trop faible.'
+                    feedback += f'L'ensemble des valeurs renvoyées par votre requête est correct mais le nombre de lignes renvoyées est trop faible.'
             grade = (0, f'<p class = \"error-state\"> {feedback} </br>  </p>')
             attempt += 1
                  
