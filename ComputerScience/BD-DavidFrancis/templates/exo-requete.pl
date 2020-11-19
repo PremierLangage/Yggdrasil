@@ -232,12 +232,12 @@ def symmetric_difference(query, answer, cursor):
         return (False, over, under)
     return (True, over, under)
 
-def check_nb(query, answer, cursor):
+def check_rowcount(query, answer, cursor):
     query = query.split(";")[0]
     answer = answer.split(";")[0]
-    nb_query = cursor.execute(f'{query};').rowcount
-    nb_answer = cursor.execute(f'{answer};').rowcount
-    return (nb_query == nb_answer, nb_query, nb_answer)
+    rowcount_query = cursor.execute(f'select count(*) from {query};').
+    rowcount_answer = cursor.execute(f'select count(*) from {answer};').
+    return (rowcount_query == rowcount_answer, rowcount_answer, rowcount_query)
 
 def check_order(query, answer, nb_query, cursonb_answerr2):
     query = query.split(";")[0]
@@ -290,11 +290,10 @@ else:
     
     if grade == None:
         (passed, over, under) = symmetric_difference(student_query, solution, cursor)
-        (nb_eq,nbq,nba) = check_nb(student_query, solution, cursor)
         if not passed:
             feedback = ""
             if over:
-                feedback += f'Cette ligne ne devrait pas être dans la réponse : {str(over)}.{str(nba)}{str(nbq)}'
+                feedback += f'Cette ligne ne devrait pas être dans la réponse : {str(over)}.'
             if under:
                 if over:
                     feedback += "</br>"
