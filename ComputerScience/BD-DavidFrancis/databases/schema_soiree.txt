@@ -5,7 +5,6 @@ soiree (<u>idS</u>, lieu, date, entree, organisateur, nbmax) <br>
 participe (<u>idS, surnom</u>, avatar) <br>
 
 <br>
-PK : Les clés primaires sont soulignées.<br>
 FK : modele dans vendre fait reférence à modele dans deguisement.<br>
 FK : organisateur dans soiree fait reférence à surnom dans personne. <br>
 FK : surnom dans participe fait reférence à surnom dans personne. <br>
