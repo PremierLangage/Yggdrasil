@@ -53,32 +53,3 @@ ordered = chosen_question.ordered
 
 ==
 
-
-#* Texte de l'énoncé
-# ---
-text== #|html|
-<p>On considère le schéma ci-dessous <br>
- {{schema |safe}}
- <br>
- Ecrivez une requete SQL pour récupérer l'information suivante:<br>
- {{ question }}. <br> </p>
-{% if attempt < maxattempt and score != 100 %}
-<p class="warning-state">
-Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution !
-</p>
-{% endif %}
-
-==
-
-
-
-
-
-
-
-
-
-
-
-
-
