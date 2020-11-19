@@ -311,7 +311,7 @@ else:
                 feedback += f'Cette ligne devrait être dans la réponse mais n\'y est pas : {str(under)}'
             grade = (0, f'<p class = \"error-state\"> {feedback} </br>  </p>')
     
-    if grade = None and numbered:
+    if grade == None and numbered:
         (passed, nb_solution, nb_answer) = check_rowcount(student_query, solution, cursor)
         if not passed:
             if nb_solution < nb_answer:
