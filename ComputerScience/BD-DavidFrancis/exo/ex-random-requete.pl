@@ -26,6 +26,8 @@ allow_reroll =  True
 #   optionnel :
 #          ordered - boolean pour dire si l'ordre des tuples de la réponse est important (order by)
 #                    False par défaut
+#          ordered - boolean pour dire si l'ordre des tuples de la réponse est important (order by)
+#                    False par défaut
 #           maxattempt - nombre de tentatives 3 par défaut
 generate== #|py|
 
@@ -51,5 +53,6 @@ ordered = chosen_question.ordered
 numbered = chosen_question.numbered
 
 ==
+
 
 
