@@ -233,10 +233,13 @@ def symmetric_difference(query, answer, cursor):
 def check_rowcount(query, answer, cursor):
     query = query.split(";")[0]
     answer = answer.split(";")[0]
+
     cursor.execute(f'select count(*) from ({query});')
-    rowcount_query = cursor.fetchone()
+    rowcount_query = cursor.fetchone()[0]
+
     cursor.execute(f'select count(*) from ({answer});')
-    rowcount_answer = cursor.fetchone()
+    rowcount_answer = cursor.fetchone()[0]
+
     return (rowcount_query == rowcount_answer, rowcount_answer, rowcount_query)
 
 def check_order(query, answer, nb_query, cursonb_answerr2):
