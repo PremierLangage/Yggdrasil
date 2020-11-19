@@ -1,4 +1,4 @@
-1;La liste de tous les déguisements avec tous leurs attributs.;SELECT * FROM deguisement;100;False
+1;La liste de tous les déguisements avec tous leurs attributs.;SELECT * FROM deguisement;False
 1;La liste de toutes les personnes, avec tous leurs attributs.;SELECT * FROM personne;500;False
 1;La liste de toutes les soirées, avec tous leurs attributs.;SELECT * FROM soiree;100;False
 2;La liste des villes où il y a une soirée, sans doublons.;SELECT DISTINCT lieu FROM soiree;31;False
