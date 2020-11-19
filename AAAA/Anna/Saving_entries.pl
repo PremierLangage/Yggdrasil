@@ -5,7 +5,7 @@
 inputbox =: Input
 inputbox.type = multiline
 
-general_feedback = " Your answer has been successfully saved. " 
+general_feedback = " Thank you ! Your answer has been successfully saved. " 
 
 title = Saving entries
 text  = Etes vous apprenti ou suivez vous le parcours scolaire initial ? Apprenti / Initial
