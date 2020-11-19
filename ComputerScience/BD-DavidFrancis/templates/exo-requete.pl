@@ -172,17 +172,14 @@ for line in fichier:
     schema += line
 fichier.close()
 schema = schema + "<br>"
+
+
 ==
 
 #*===========================================================================
 # EVALUATOR
 #*===========================================================================
 evaluator== #|py|
-
-# TODO ajuster ici la fonction d'évaluation et la gestion du teste dessous
-# Ca devrait peut-être dans un fichier .py en ajoutant le nom du fichier dans base.pl
-# from monfichier import bla
-# fonction d'évaluation
 
 ######
 
@@ -245,10 +242,10 @@ def check_rowcount(query, answer, cursor):
     answer = answer.split(";")[0]
 
     cursor.execute(f'select count(*) from ({query});')
-    rowcount_query = cursor.fetchone()[0]
+    rowcount_query = int(cursor.fetchone()[0])
 
     cursor.execute(f'select count(*) from ({answer});')
-    rowcount_answer = cursor.fetchone()[0]
+    rowcount_answer = int(cursor.fetchone()[0])
 
     return (rowcount_query == rowcount_answer, rowcount_answer, rowcount_query)
 
@@ -330,6 +327,7 @@ else:
         grade = (100, feedback_success)
 
 ==
+
 
 
 
