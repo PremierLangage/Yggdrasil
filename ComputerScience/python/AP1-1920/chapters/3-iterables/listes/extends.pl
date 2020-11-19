@@ -21,6 +21,8 @@ taboo=extend
 pltest0==
 >>> fusion([1,1],[2,2])
 [1, 1, 2, 2]
+>>> fusion([],[])
+[]
 ==
 
 Xeditor.code==
@@ -48,6 +50,7 @@ tests %=
     }
 }
 ==
+
 
 
 
