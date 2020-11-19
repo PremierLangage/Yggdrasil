@@ -235,12 +235,9 @@ def symmetric_difference(query, answer, cursor):
 def check_nb(query, answer, cursor):
     query = query.split(";")[0]
     answer = answer.split(";")[0]
-    over = None
-    under = None
-
     nb_query = cursor.execute(f'{query};').rowcount
     nb_answer = cursor.execute(f'{answer};').rowcount
-    return (nb_query == nb_answer, over, under)
+    return (nb_query == nb_answer, nb_query, nb_answer)
 
 def check_order(query, answer, nb_query, cursonb_answerr2):
     query = query.split(";")[0]
@@ -271,7 +268,6 @@ try:
 except Exception:
     error = "Syntax error"
 
-
 ## Check the student answer:
 if error :
 #    attempt += 1
@@ -294,6 +290,7 @@ else:
     
     if grade == None:
         (passed, over, under) = symmetric_difference(student_query, solution, cursor)
+        (nb_eq,nbq,nba) = check_nb(student_query, solution, cursor)
         if not passed:
             feedback = ""
             if over:
