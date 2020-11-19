@@ -1,9 +1,9 @@
 1;La liste de tous les déguisements avec tous leurs attributs.;SELECT * FROM deguisement;False;False
 1;La liste de toutes les personnes, avec tous leurs attributs.;SELECT * FROM personne;False;False
 1;La liste de toutes les soirées, avec tous leurs attributs.;SELECT * FROM soiree;False;False
-2;La liste des villes où il y a une soirée, sans doublons.;SELECT DISTINCT lieu FROM soiree;False;True
-2;La liste des magasins de déguisements, sans doublons.;SELECT DISTINCT nommag FROM vendre;False;True
-2;La liste des avatars représentés en soirée, sans doublons.;SELECT DISTINCT avatar FROM participe;False;True
+2;La liste des villes où il y a une soirée, sans doublons.;SELECT DISTINCT lieu FROM soiree;False;True;
+2;La liste des magasins de déguisements, sans doublons.;SELECT DISTINCT nommag FROM vendre;False;True;
+2;La liste des avatars représentés en soirée, sans doublons.;SELECT DISTINCT avatar FROM participe;False;True;
 3;La liste des modèles de déguisements qui sont disponibles en taille XS.;SELECT DISTINCT modele FROM vendre WHERE taille = 'XS';False;False
 3;La liste des magasins qui vendent le costume ang82.;SELECT DISTINCT nommag FROM vendre WHERE modele = 'ang82';False;False
 3;L'avatar représenté par le costume kyl18.;SELECT avatar FROM deguisement WHERE modele = 'kyl18';False;False
@@ -51,3 +51,4 @@
 19;La liste des organisateurs de soirées (surnom, nom, prenom), avec pour chacun la date et le lieu de la soirée qui lui a rapporté le plus d'argent.;SELECT organisateur, nom, prenom, date, lieu FROM soiree s JOIN personne ON s.organisateur = surnom WHERE ids = ( SELECT ids FROM soiree NATURAL JOIN participe WHERE organisateur = s.organisateur GROUP BY ids ORDER BY sum(entree) DESC LIMIT 1 );False;False
 19;La liste des soirées (ids, lieu, date) à thème, c'est-à-dire où tous les participants portent le même avatar, avec pour chacune l'avatar en question.;SELECT DISTINCT ids, lieu, date, avatar FROM participe NATURAL JOIN soiree WHERE ids IN ( SELECT DISTINCT ids FROM soiree NATURAL JOIN participe GROUP BY ids HAVING count(distinct avatar) = 1 AND count(*) = count(avatar) );False;False
 20;La liste des soirées (ids, lieu, date) où apparaissent tous les avatars qui sont disponibles dans au moins un magasin.;SELECT ids FROM soiree WHERE NOT EXISTS( SELECT avatar FROM deguisement NATURAL JOIN vendre WHERE NOT EXISTS( SELECT * FROM participe WHERE participe.avatar = deguisement.avatar AND participe.ids = soiree.ids ) );False;False
+
