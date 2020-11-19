@@ -8,9 +8,6 @@ extends = ../templates/exo-requete.pl
 #* titre de l'exercice
 title = Exercice test
 
-#* Maximum number of attempts before showing the right answer.
-maxattempt = 4
-
 author = Nadime Francis
 
 #* When True show the answer after timeout.
@@ -52,4 +49,5 @@ solution = chosen_question.answer
 ordered = chosen_question.ordered
 
 ==
+
 
