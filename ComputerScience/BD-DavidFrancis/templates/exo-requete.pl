@@ -301,7 +301,6 @@ else:
     
     if grade == None:
         (passed, over, under) = symmetric_difference(student_query, solution, cursor)
-
         if not passed:
             feedback = ""
             if over:
