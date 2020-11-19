@@ -6,7 +6,7 @@ builder= /builder/before.py
 
 title = Remplace les éléments d'une liste
 text == 
-Ecrire une fonction `remppair`` qui prend en argument une liste  et  remplace tous ses éléments pairs par 1
+Ecrire une fonction `remppair` qui prend en argument une liste  et  remplace tous ses éléments pairs par 1
 ==
 
 before==
@@ -31,6 +31,7 @@ pltest1==
 >>> lst
 []
 ==
+
 
 
 
