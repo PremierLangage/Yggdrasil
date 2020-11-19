@@ -174,15 +174,14 @@ fichier.close()
 schema = schema + "<br>"
 
 
+ordered = (ordered == "True")
+numbered = (numbered == "True")
 ==
 
 #*===========================================================================
 # EVALUATOR
 #*===========================================================================
 evaluator== #|py|
-
-#ordered = (ordered == 'True')
-#numbered = (numbered == 'True')
 
 ######
 import sqlite3
