@@ -164,6 +164,9 @@ show_solution = (show_solution == "True")
 # définir ordered = True dans le generate de l'exo pour tester si les lignes sont dans le bon ordre
 ordered = False
 
+# définir numbered = True dans le generate de l'exo pour tester l'égalité du nb de tuples entre la solution et la requête de l'étudiant.
+ordered = False
+
 if 'generate' in globals():
     exec(generate)
 
