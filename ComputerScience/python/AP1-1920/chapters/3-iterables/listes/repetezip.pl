@@ -6,10 +6,10 @@ title = Création d'une liste de répétitions
 
 text==
 
-Ecrire une fonction `repete` à deux paramètres (un entier `n` une liste `ll`)  qui retourne une nouvelle liste composée de n copies de chaque éléments de `l`.
+Ecrire une fonction `repete` à deux paramètres (un entier `n` une liste `l`)  qui retourne une nouvelle liste composée de n copies de chaque éléments de `l`.
 
-Par exemple,  `repete`(6,["Non"]) donne ['Non', 'Non', 'Non', 'Non', 'Non', 'Non']<\br>
-`repete`(2,[4,"a",[42,13]]donne [4,"a",[42,13],4,"a",[42,13]]
+Par exemple,  `repete(6, ["Non"])` renvoie `["Non", "Non", "Non", "Non", "Non", "Non"]`, et `repete(2, [4, "a", [42,13]]` renvoie `[4, "a", [42,13], 4, "a", [42,13]]`.
+
 taboo: Ne pas utiliser la fonction <font style="color:red;">{{taboo}}</font> des listes.
 ==
 
@@ -36,3 +36,4 @@ pltest0==
 >>> repete(4,repete(3,[]))
 []
 ==
+
