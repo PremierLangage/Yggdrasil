@@ -249,7 +249,7 @@ def check_rowcount(query, answer, cursor):
 
     return (rowcount_query == rowcount_answer, rowcount_answer, rowcount_query)
 
-def check_order(query, answer, nb_query, cursonb_answerr2):
+def check_order(query, answer, cursor1, cursor2):
     query = query.split(";")[0]
     answer = answer.split(";")[0]
 
