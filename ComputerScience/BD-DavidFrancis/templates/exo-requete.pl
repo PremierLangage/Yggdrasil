@@ -232,7 +232,7 @@ def symmetric_difference(query, answer, cursor):
         return (False, over, under)
     return (True, over, under)
 
-def symmetric_difference(query, answer, cursor):
+def symmetric_difference2(query, answer, cursor):
     query = query.split(";")[0]
     answer = answer.split(";")[0]
     over = None
