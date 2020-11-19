@@ -232,7 +232,17 @@ def symmetric_difference(query, answer, cursor):
         return (False, over, under)
     return (True, over, under)
 
-def check_order(query, answer, cursor1, cursor2):
+def check_nb(query, answer, cursor):
+    query = query.split(";")[0]
+    answer = answer.split(";")[0]
+    over = None
+    under = None
+
+    nb_query = cursor.execute(f'{query};').rowcount
+    nb_answer = cursor.execute(f'{answer};').rowcount
+    return (nb_query == nb_answer, over, under)
+
+def check_order(query, answer, nb_query, cursonb_answerr2):
     query = query.split(";")[0]
     answer = answer.split(";")[0]
 
