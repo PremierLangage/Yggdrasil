@@ -91,7 +91,7 @@ text== #|html|
  {{schema |safe}}
  <br>
  Ecrivez une requete SQL pour récupérer l'information suivante:<br>
- {{ question }}. <br> </p>
+ {{ question }} <br> </p>
 {% if attempt < maxattempt and score != 100 %}
 <p class="warning-state">
 Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution !
@@ -344,6 +344,7 @@ else:
 
 
 ==
+
 
 
 
