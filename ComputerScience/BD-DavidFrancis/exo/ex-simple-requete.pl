@@ -29,6 +29,8 @@ allow_reroll =  True
 #   optionnel :
 #          ordered - boolean pour dire si l'ordre des tuples de la réponse est important (order by)
 #                    False par défaut
+#          ordered - boolean pour dire si l'ordre des tuples de la réponse est important (order by)
+#                    False par défaut
 #           maxattempt - nombre de tentatives 3 par défaut
 generate== #|py|
 
@@ -41,5 +43,6 @@ question = "La liste de toutes les personnes ayant au moins 12 ans avec tous leu
 
 solution = "SELECT * FROM personne where age >=12 ORDER BY age DESC;"
 ==
+
 
 
