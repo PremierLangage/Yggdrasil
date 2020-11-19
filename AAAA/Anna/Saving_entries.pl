@@ -1,4 +1,4 @@
-extends= /lib/gift/templates/qessay.pl 
+extends= home/lib/gift/templates/qessay.pl 
 
 title = Saving entries
 text  = Etes vous apprenti ou suivez vous le parcours scolaire initial ? Apprenti / Initial
