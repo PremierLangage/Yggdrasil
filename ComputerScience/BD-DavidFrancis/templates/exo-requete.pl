@@ -308,7 +308,7 @@ else:
     
     if grade == None:
         (passed, over, under) = symmetric_difference(student_query, solution, cursor)
-        (nb_eq, nb_a, nb_q) = check_rowcount(student_query, solution, cursor)
+
         if not passed:
             feedback = ""
             if over:
@@ -319,6 +319,16 @@ else:
                 feedback += f'Cette ligne devrait être dans la réponse mais n\'y est pas : {str(under)}'
             grade = (0, f'<p class = \"error-state\"> {feedback} </br>  </p>')
             attempt += 1
+        elif numbered:
+            (passed, nb_solution, nb_answer) = check_rowcount(student_query, solution, cursor)
+            if not passed:
+                if nb_solution < nb_answer:
+                    feedback = f'L'ensemble des valeurs renvoyées par votre requête est correct mais le nombre de lignes renvoyées est trop important.'
+                else :
+                    feedback = f'L'ensemble des valeurs renvoyées par votre requête est correct mais le nombre de lignes renvoyées est trop faible.'
+            grade = (0, f'<p class = \"error-state\"> {feedback} </br>  </p>')
+            attempt += 1
+                 
 
 # TODO vérifier que ordered est bien un boolean et pas un str
     if grade == None and ordered:
