@@ -48,6 +48,8 @@ solution = chosen_question.answer
 
 ordered = chosen_question.ordered
 
+numbered = chosen_question.numbered
+
 ==
 
 
