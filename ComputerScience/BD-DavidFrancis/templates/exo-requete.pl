@@ -84,9 +84,21 @@ form_timeout== #|html|
 ## exercise title -- should be override in the exercise file
 title= PLEASE OVERRIDE THE KEY **title=** TO CHANGE THIS TEXT
 
-## exercise instructions -- should be override in the exercise file
-text= PLEASE OVERRIDE THE KEY **title=** TO CHANGE THIS TEXT
+#* Texte de l'énoncé
+# ---
+text== #|html|
+<p>On considère le schéma ci-dessous <br>
+ {{schema |safe}}
+ <br>
+ Ecrivez une requete SQL pour récupérer l'information suivante:<br>
+ {{ question }}. <br> </p>
+{% if attempt < maxattempt and score != 100 %}
+<p class="warning-state">
+Il vous reste {{ maxattempt - attempt }} tentative(s) avant de voir la solution !
+</p>
+{% endif %}
 
+==
 ## In this form :
 #   the editor for the student to provide an answer
 #   define the submit and reroll buttons
@@ -318,6 +330,7 @@ else:
 
 
 ==
+
 
 
 
