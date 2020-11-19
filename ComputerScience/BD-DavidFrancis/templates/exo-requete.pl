@@ -174,8 +174,8 @@ fichier.close()
 schema = schema + "<br>"
 
 
-ordered = (ordered == "True")
-numbered = (numbered == "True")
+ordered2 = (ordered == "True")
+numbered2 = (numbered == "True")
 ==
 
 #*===========================================================================
@@ -326,10 +326,10 @@ else:
 
 
     #bla = type(ordered) == type(True)
-    bla = str(type(ordered))
+    bla = str(type(ordered2))
     if grade == None:
 #        grade = (100, feedback_success)
-        grade = (100, f'<p class = \"warning-state\"> ordered : {str(ordered)} {str(bla)} numbered : {str(numbered)}</p>')
+        grade = (100, f'<p class = \"warning-state\"> ordered : {str(ordered2)} {str(bla)} numbered : {str(numbered2)}</p>')
 
 ==
 
