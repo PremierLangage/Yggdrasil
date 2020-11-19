@@ -73,9 +73,9 @@ form_timeout== #|html|
 
 #*===========================================================================
 #* override this key to change the instructions below inputbox for simple regex
-form_schema== #|html|
- {{schema |safe}}
-==
+#form_schema== #|html|
+# {{schema |safe}}
+#==
 
 #*===========================================================================
 # MANDATORY HTML FORM
@@ -99,8 +99,6 @@ form== #|html|
 <!-- NORMAL VIEW -->
 {% else %}
 {{ editor|component }}
-<br>
-{{ form_schema }}
 {% endif %}
 
 
