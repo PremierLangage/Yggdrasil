@@ -288,10 +288,11 @@ else:
     
     if grade == None:
         (passed, over, under) = symmetric_difference(student_query, solution, cursor)
+        (nb_eq, nb_a, nb_q) = check_rowcount(student_query, solution, cursor)
         if not passed:
             feedback = ""
             if over:
-                feedback += f'Cette ligne ne devrait pas être dans la réponse : {str(over)}.'
+                feedback += f'Cette ligne ne devrait pas être dans la réponse : {str(over)}.{str(nb_eq)}{str(nb_a)}{str(nb_q)}'
             if under:
                 if over:
                     feedback += "</br>"
