@@ -1,0 +1,32 @@
+title = Requêtes SQL
+
+introduction ==
+Voici quelques exercices pour s'entraîner aux requêtes SQL.
+
+ Les exercices sont indépendants. Vous pouvez les faire et même les refaire dans l'ordre que vous voulez. 
+ 
+Conseil : Prennez le temps de comprendre le schema de la base et de réfléchir aux données que vous voulez extraire de la base avant d'écrire votre requête.
+
+Si vous rencontrez des difficultés dans l'utilisation de la plateforme, n'hésitez pas à venir en discuter sur le channel discord dédié.
+Cette plateforme est en test et vous êtes béta-testeurs des premiers exercices de base de données ;-)
+ 
+==
+
+@../L2-minimisation/autodet-mini-ex1.pl
+
+@../L2-minimisation/auto-mini-ex1.pl
+
+@../L2-minimisation/regex-mini-ex1.pl
+
+@../L2-minimisation/td8-ex1-1.pl
+
+@../L2-minimisation/td8-ex1-2.pl
+
+@../L2-minimisation/td8-ex1-3.pl
+
+@../L2-minimisation/td8-ex1-4.pl
+
+
+
+
+
