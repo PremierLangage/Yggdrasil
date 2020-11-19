@@ -324,10 +324,11 @@ else:
 
     if grade == None:
 #        grade = (100, feedback_success)
-        grade = (100, feedback_success + f'<p class = \"warning-state\"> ordered : {str(ordered)} numbered : {str(numbered)}</p>')
+        grade = (100, feedback_success)
 
 
 ==
+
 
 
 
