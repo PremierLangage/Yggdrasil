@@ -322,7 +322,6 @@ else:
                 feedback = f'Les valeurs renvoyées par votre requête est correct mais le nombre de lignes renvoyées est trop faible.'
             grade = (0, f'<p class = \"error-state\"> {feedback} </br>  </p>')
                  
-
     if grade == None and ordered:
         cursor2 = conn.cursor()
         passed = check_order(student_query, solution, cursor, cursor2)
