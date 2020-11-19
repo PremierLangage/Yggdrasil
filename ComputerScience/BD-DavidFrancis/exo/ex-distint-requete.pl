@@ -31,6 +31,8 @@ allow_reroll =  True
 #                    False par défaut
 #          numbered - booléen pour dire si le nombre de tuples est important (typiquement pour DISTINCT)
 #                     False par défaut
+#          ordered - boolean pour dire si l'ordre des tuples de la réponse est important (order by)
+#                    False par défaut
 generate== #|py|
 
 numbered = True
@@ -42,6 +44,7 @@ question = "La liste des diférents prénoms."
 
 solution = "SELECT distinct prenom FROM personne;"
 ==
+
 
 
 
