@@ -48,7 +48,7 @@ solution = chosen_question.answer
 
 ordered = chosen_question.ordered
 
-numbered = ""+str(type(chosen_question.numbered))
+numbered = chosen_question.numbered
 
 ==
 
