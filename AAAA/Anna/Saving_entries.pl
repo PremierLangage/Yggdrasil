@@ -18,7 +18,7 @@ grade = (100, general_feedback)
 
 doc ==
 Ce style d'exo permet de sauvegarder les informations entrées par l'utilisateur
-dans le grader. Il n'évalue ni ne renvoie pas une note. Parfait pour un sondage 
+dans le grader. Il n'évalue ni ne renvoie pas une note. Adapté aux sondages
 par exemple.
 ==
 
