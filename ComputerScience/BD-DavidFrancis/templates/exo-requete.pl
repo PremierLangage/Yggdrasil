@@ -232,24 +232,6 @@ def symmetric_difference(query, answer, cursor):
         return (False, over, under)
     return (True, over, under)
 
-def symmetric_difference2(query, answer, cursor):
-    query = query.split(";")[0]
-    answer = answer.split(";")[0]
-    over = None
-    under = None
-
-    cursor.execute(f'with q1 as ({query}), q2 as ({answer}) select * from q1 EXCEPT ALL select * from q2;')
-    ligne = cursor.fetchone()
-    if ligne:
-        over = str(ligne)
-    cursor.execute(f'with q1 as ({query}), q2 as ({answer}) select * from q2 EXCEPT ALL select * from q1;')
-    ligne = cursor.fetchone()
-    if ligne:
-        under = str(ligne)
-    if over or under:
-        return (False, over, under)
-    return (True, over, under)
-
 def check_order(query, answer, cursor1, cursor2):
     query = query.split(";")[0]
     answer = answer.split(";")[0]
@@ -301,7 +283,7 @@ else:
             attempt += 1
     
     if grade == None:
-        (passed, over, under) = symmetric_difference2(student_query, solution, cursor)
+        (passed, over, under) = symmetric_difference(student_query, solution, cursor)
         if not passed:
             feedback = ""
             if over:
