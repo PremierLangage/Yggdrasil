@@ -12,21 +12,10 @@ Cette plateforme est en test et vous êtes béta-testeurs des premiers exercices
  
 ==
 
-@../L2-minimisation/autodet-mini-ex1.pl
+@../exo-tp-soiree/soiree-q1.pl
 
-@../L2-minimisation/auto-mini-ex1.pl
+@../exo-tp-soiree/soiree-q2.pl
 
-@../L2-minimisation/regex-mini-ex1.pl
+@../exo-tp-soiree/soiree-q3.pl
 
-@../L2-minimisation/td8-ex1-1.pl
-
-@../L2-minimisation/td8-ex1-2.pl
-
-@../L2-minimisation/td8-ex1-3.pl
-
-@../L2-minimisation/td8-ex1-4.pl
-
-
-
-
-
+@../exo-tp-soiree/soiree-q4.pl
