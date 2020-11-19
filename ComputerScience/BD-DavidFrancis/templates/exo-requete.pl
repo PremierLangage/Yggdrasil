@@ -327,7 +327,7 @@ else:
 
 
     #bla = type(ordered) == type(True)
-    bla = type(ordered)
+    bla = str(type(ordered))
     if grade == None:
 #        grade = (100, feedback_success)
         grade = (100, f'<p class = \"warning-state\"> ordered : {str(ordered)} {str(bla)} numbered : {str(numbered)}</p>')
