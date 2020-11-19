@@ -173,9 +173,6 @@ for line in fichier:
 fichier.close()
 schema = schema + "<br>"
 
-
-ordered2 = (ordered == 'True')
-numbered2 = (numbered == 'True')
 ==
 
 #*===========================================================================
