@@ -250,3 +250,12 @@ tag=len|elementAccess|tuple|append
 - La difficulté réside en comment traiter les cas où les longueurs des listes sont différentes.
 
 ## Ex.Gamma
+
+@ $histogramme-2021.pl
+
+tag=elementAccess|in|append|tuple
+
+**Commentaire**
+
+- Exo un peu compliqué pour faire l'histogramme.
+- La difficulté est de bien manipuler les tuples dans une liste et de faire un parcours correspondant.
