@@ -150,8 +150,8 @@ import random
 import sqlite3
 
 score = -1
-attempt = 0
-maxattempt = int(maxattempt)
+#attempt = 0
+#maxattempt = int(maxattempt)
 
 allow_reroll = (allow_reroll == "True")
 show_solution = (show_solution == "True")
@@ -285,21 +285,19 @@ except Exception:
 if error :
 #    attempt += 1
     grade = (-1, feedback_error.format(error))
-if attempt >= maxattempt: # timeout
-    grade = (score, feedback_timeout)
+#if attempt >= maxattempt: # timeout
+#    grade = (score, feedback_timeout)
 else:
     score = 0
     grade = None
     (passed, message) = check_syntax(student_query, cursor)
     if not passed:
         grade = (0, f'<p class = \"error-state\"> {str(message)} </p>')
-        attempt += 1
     
     if grade == None:
         (passed, message) = check_schema(student_query, solution, cursor)
         if not passed:
             grade = (0, f'<p class = \"error-state\"> Le schéma attendu pour la réponse est : {str(message)} </p>')
-            attempt += 1
     
     if grade == None:
         (passed, over, under) = symmetric_difference(student_query, solution, cursor)
@@ -313,7 +311,6 @@ else:
                     feedback += "</br>"
                 feedback += f'Cette ligne devrait être dans la réponse mais n\'y est pas : {str(under)}'
             grade = (0, f'<p class = \"error-state\"> {feedback} </br>  </p>')
-            attempt += 1
         elif numbered:
             (passed, nb_solution, nb_answer) = check_rowcount(student_query, solution, cursor)
             if not passed:
@@ -323,7 +320,6 @@ else:
                 else :
                     feedback = f'Les valeurs renvoyées par votre requête est correct mais le nombre de lignes renvoyées est trop faible.'
                 grade = (0, f'<p class = \"error-state\"> {feedback} </br>  </p>')
-                attempt += 1
                  
 
 # TODO vérifier que ordered est bien un boolean et pas un str
@@ -332,7 +328,6 @@ else:
         passed = check_order(student_query, solution, cursor, cursor2)
         if not passed:
             grade = (0, '<p class = "error-state"> Le contenu de la réponse est correct, mais les lignes sont dans le mauvais ordre.</p>')
-            attempt += 1
 
     if grade == None:
         grade = (100, feedback_success)
