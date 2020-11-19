@@ -87,10 +87,10 @@ title= PLEASE OVERRIDE THE KEY **title=** TO CHANGE THIS TEXT
 #* Texte de l'énoncé
 # ---
 text== #|html|
-<p>On considère le schéma ci-dessous <br>
+<p><strong>On considère le schéma ci-dessous </strong><br>
  {{schema |safe}}
  <br>
- Ecrivez une requete SQL pour récupérer l'information suivante:<br>
+ <strong>Ecrivez une requete SQL pour récupérer l'information suivante:</strong><br>
  {{ question }} <br> </p>
 
 ==
@@ -330,6 +330,7 @@ else:
         grade = (100, feedback_success)
 
 ==
+
 
 
 
