@@ -165,7 +165,7 @@ show_solution = (show_solution == "True")
 ordered = False
 
 # définir numbered = True dans le generate de l'exo pour tester l'égalité du nb de tuples entre la solution et la requête de l'étudiant.
-ordered = False
+numbered = False
 
 if 'generate' in globals():
     exec(generate)
@@ -312,7 +312,7 @@ else:
         if not passed:
             feedback = ""
             if over:
-                feedback += f'Cette ligne ne devrait pas être dans la réponse : {str(over)}.{str(nb_eq)}{str(nb_a)}{str(nb_q)}'
+                feedback += f'Cette ligne ne devrait pas être dans la réponse : {str(over)}.'
             if under:
                 if over:
                     feedback += "</br>"
