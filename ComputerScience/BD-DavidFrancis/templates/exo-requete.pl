@@ -294,7 +294,7 @@ else:
         if not passed:
             feedback = ""
             if over:
-                feedback += f'Cette ligne ne devrait pas être dans la réponse : {str(over)}.'
+                feedback += f'Cette ligne ne devrait pas être dans la réponse : {str(over)}.{str(nba)}{str(nbq)}'
             if under:
                 if over:
                     feedback += "</br>"
