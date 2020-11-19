@@ -327,8 +327,8 @@ else:
                     feedback = f'Les valeurs renvoyées par votre requête est correct mais le nombre de lignes renvoyées est trop important.'
                 else :
                     feedback = f'Les valeurs renvoyées par votre requête est correct mais le nombre de lignes renvoyées est trop faible.'
-            grade = (0, f'<p class = \"error-state\"> {feedback} </br>  </p>')
-            attempt += 1
+                grade = (0, f'<p class = \"error-state\"> {feedback} </br>  </p>')
+                attempt += 1
                  
 
 # TODO vérifier que ordered est bien un boolean et pas un str
