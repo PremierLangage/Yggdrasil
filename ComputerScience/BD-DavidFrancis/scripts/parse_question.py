@@ -2,8 +2,8 @@ class question:
     def __init__(self,lst):
         self.text = lst[1]
         self.answer = lst[2]+";"
-        self.ordered = lst[3] == 'True'
-        self.numbered = lst[4] == 'True'
+        self.ordered = (lst[3] == 'True')
+        self.numbered = (lst[4] == 'True')
 
 def question_to_dic(question_path):
     question_file = open(question_path, "r")
@@ -17,6 +17,7 @@ def question_to_dic(question_path):
         output[int(lst[0])].append(question(lst))
     question_file.close()
     return output
+
 
 
 
