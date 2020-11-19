@@ -330,8 +330,8 @@ else:
     if grade == None:
         grade = (100, feedback_success)
 
-cursor.close()
-conn.close()
+    cursor.close()
+    conn.close()
 ==
 
 
