@@ -8,7 +8,7 @@ inputbox.type = multiline
 general_feedback = " Your name has been successfully saved. " 
 
 title = Saving entries
-text  = PLEASE WRITE 
+text  = PLEASE WRITE YOUR NAME
 form  = {{ inputbox|component }}
 
 
