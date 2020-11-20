@@ -108,6 +108,17 @@ tag=ForInRange|append|listCreate
 - Une petite clarification ajoutée, avec un peu plus de tests aléatoires
 - Tags ajoutés
 
+## Ex8a : Histogramme
+
+@ $histogramme-2021.pl
+
+tag=elementAccess|in|append|tuple
+
+**Commentaire**
+
+- Exo un peu compliqué pour faire l'histogramme.
+- La difficulté est de bien manipuler les tuples dans une liste et de faire un parcours correspondant.
+
 ## Ex9 : Statistiques sur une liste
 
 @ liststat-2021.pl
