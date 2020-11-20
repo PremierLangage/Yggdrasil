@@ -8,9 +8,6 @@
 
 title = Tester votre code 
 
-text==
-
-==
 
 form=
 
@@ -21,7 +18,7 @@ import sys
 import code 
 oldout=sys.stdout 
 sys.stdout=io.StringIO()
-doctest.testmod()
+doctest.testfile("code.py")
 text= sys.stdout.getvalue()
 sys.out = oldout 
 ==
