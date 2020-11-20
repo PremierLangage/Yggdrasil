@@ -7,9 +7,9 @@ extends= /gift/templates/qtruefalse.pl
 
 
 qselectbuild== #|python|
-if answer.lower() in ["false","faux","non","no"]: :
+if answer.lower() in ["false","faux","non","no"]:
     answer="F"
-elif answer.lower() in ["true","vrai","oui","yes"]: :
+elif answer.lower() in ["true","vrai","oui","yes"]:
     answer='T'
 else:
     raise Exception('you must define a variable answer = T,True,Vraie or F,False,Faux ')
