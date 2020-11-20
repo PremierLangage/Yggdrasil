@@ -21,7 +21,7 @@ import doctest
 import io
 import sys
 
-oldout=sys.out 
+oldout=sys.stdout 
 sys.out=io.StringIO()
 doctest.testfile("code.py")
 grade = (100, f"Test result\n"+sys.out.getvalue())
