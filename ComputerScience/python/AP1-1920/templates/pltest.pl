@@ -52,8 +52,8 @@ Pour que les tests s'arrète sur la première erreur
 # 
 
 @ /utils/sandboxio.py
-@ /builder/before.py [builder.py]
 
+@ /builder/before.py [builder.py]
 before=
 
 editor.fontsize=14
@@ -61,6 +61,7 @@ editor.fontsize=14
 form=@ /form/text_editor.html
 
 settings.allow_reroll=1
+
 
 
 
