@@ -32,15 +32,8 @@ sys.out = oldout
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-editor =: CodeEditor
-editor.theme = dark
-editor.language = python
-editor.code ==
-# write your code here
-==
 
-before==
-==
+
 
 title = Tester votre code 
 
