@@ -110,7 +110,7 @@ tag=ForInRange|append|listCreate
 
 ## Ex8a : Histogramme
 
-@ $histogramme-2021.pl
+@ histogramme-2021.pl
 
 tag=elementAccess|in|append|tuple
 
