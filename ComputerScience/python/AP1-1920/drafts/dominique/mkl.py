@@ -37,3 +37,20 @@ def selectionfromcsv(filename, number=4, sourcecol="source", targetcol="target")
             expected.append({ "source": "source"+str(n), "target": "target"+str(n) })
     return MatchListItem,expected
 
+
+testfile="""target;source;bob;bib
+one;un;1:I
+two:deux;2;II
+trois:three;3;III
+quatre:four;4;IV
+cinq;five;5;V
+"""
+
+if __name__ == "__main__" :
+    """
+    >>> with open("test.csv","w") as f:
+        f.write(testfile)
+    >>> random.seed(56)
+    >>> selectionfromcsv("test.csv")
+    
+    """ 
