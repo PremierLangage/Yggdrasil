@@ -1,7 +1,7 @@
 
-# Boris Jabot 10/09/2019 OK
+
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
-#author=
+author=DR
 title=Une fonction carre
 
 tag=function # N'oubliez pas de remplir ce champs svp
@@ -38,6 +38,7 @@ def carre(n):
     return n*6
 ==
 editor.height=145
+
 
 
 
