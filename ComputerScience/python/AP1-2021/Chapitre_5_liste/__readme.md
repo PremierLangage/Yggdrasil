@@ -201,7 +201,16 @@ tag=reference|elementAccess|pop
 - Deux solutions possibles : soit faire pop directement dans la liste en respectant les indices, soit construire une nouvelle liste
 - Tags ajoutés, hints des deux méthodes ajoutés
 
+## Ex16 : Intégrer deux listes
 
+@ zip-list-2021.pl
+
+tag=len|elementAccess|tuple|append
+
+**Commentaire**
+
+- Exo un peu difficile pour "zipper" deux listes en une avec des couples.
+- La difficulté réside en comment traiter les cas où les longueurs des listes sont différentes.
 
 # Exo trop difficile
 
@@ -240,16 +249,7 @@ tag=reference|elementAccess|pop
 
 
 
-## Ex.Beta
 
-@ $zip-list-2021.pl
-
-tag=len|elementAccess|tuple|append
-
-**Commentaire**
-
-- Exo un peu difficile pour "zipper" deux listes en une avec des couples.
-- La difficulté réside en comment traiter les cas où les longueurs des listes sont différentes.
 
 ## Ex.Gamma
 
