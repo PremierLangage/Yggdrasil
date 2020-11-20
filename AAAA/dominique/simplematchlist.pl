@@ -9,10 +9,11 @@ trois§three
 ==
 
 before ==
-matchlist.setdata_from_matches([ l.split("§") for l in  pairs.splitline() if "§" in l ])
+matchlist.setdata_from_matches([ l.split("§") for l in  pairs.splitlines() if "§" in l ])
 ==
 
-
+text= A DEFINIR 
+title= CECI EST UN PATRON NE PAS UTILISER DIRECTEMENT
 
 matchlist =: MatchList
 
