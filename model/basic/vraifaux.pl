@@ -14,7 +14,6 @@ elif answer.lower() in ["true","vrai","oui","yes"]:
 else:
     raise Exception('you must define a variable answer = T,True,Vraie or F,False,Faux ')
 
-if answer == "True" 
 if answer != 'T' and answer != 'F':
     raise Exception('you must define a variable "answer = T or F"')
 
