@@ -18,10 +18,10 @@ before==
 import doctest
 import io
 import sys
-
+import code 
 oldout=sys.stdout 
 sys.stdout=io.StringIO()
-doctest.testfile("code.py")
+doctest.testmod()
 text= sys.stdout.getvalue()
 sys.out = oldout 
 ==
