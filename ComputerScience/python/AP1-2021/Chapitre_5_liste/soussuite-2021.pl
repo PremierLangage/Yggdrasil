@@ -69,7 +69,7 @@ def sous_suite_2(l1, l2):
             ptr += 1
             if ptr >= len(l2):
                 break
-    return ptr == len(l2)
+    return ptr >= len(l2)
 ==
 
 
