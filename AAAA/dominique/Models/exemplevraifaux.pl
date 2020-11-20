@@ -21,7 +21,7 @@ feedback_wrong = Il vous manque des informations.
 general_feedback==
 
 
-![image](https://upload.wikimedia.org/wikipedia/commons/a/a8/Lol_LOL.png)
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Lol_LOL.png">
 Bien entendu c'est une question piège.
 ==
 
