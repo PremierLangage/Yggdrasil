@@ -12,11 +12,9 @@ text==
 
 ==
 
-form==
-{{ editor|component }}
-==
+form=
 
-evaluator==
+before==
 import doctest
 import io
 import sys
@@ -24,7 +22,7 @@ import sys
 oldout=sys.stdout 
 sys.out=io.StringIO()
 doctest.testfile("code.py")
-grade = (100, f"Test result\n"+sys.out.getvalue())
+text= sys.out.getvalue()
 sys.out = oldout 
 ==
 
