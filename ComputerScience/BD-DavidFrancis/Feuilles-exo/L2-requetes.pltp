@@ -5,10 +5,10 @@ Voici quelques exercices pour s'entraîner aux requêtes SQL.
 
  Les exercices sont indépendants. Vous pouvez les faire et même les refaire dans l'ordre que vous voulez. 
  
-Conseil : Prennez le temps de comprendre le schema de la base et de réfléchir aux données que vous voulez extraire de la base avant d'écrire votre requête.
+Conseil : Prenez le temps de comprendre le schema de la base et de réfléchir aux données que vous voulez extraire de la base avant d'écrire votre requête.
 
-Si vous rencontrez des difficultés dans l'utilisation de la plateforme, n'hésitez pas à venir en discuter sur le channel discord dédié.
-Cette plateforme est en test et vous êtes béta-testeurs des premiers exercices de base de données ;-)
+Si vous rencontrez des difficultés dans l'utilisation de la plateforme, n'hésitez pas à venir en discuter sur Discord.
+Cette plateforme est en test et vous êtes béta-testeurs des premiers exercices de bases de données ;-)
  
 ==
 
@@ -51,3 +51,4 @@ Cette plateforme est en test et vous êtes béta-testeurs des premiers exercices
 @../exo-tp-soiree/soiree-q19.pl
 
 @../exo-tp-soiree/soiree-q20.pl
+
