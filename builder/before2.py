@@ -46,7 +46,7 @@ if __name__ == "__main__":
                 reader = csv.DictReader(csvfile)
                 # Lecture de la column dans l'ordre du fichier
                 dic['sortedlist']=[ row[dic['column']] for row in reader]
-        else:# on prend la première colone le fichier n'a pas de header
+        else:# on prend la ligne en entier et pas la première FIXME pourquoi DR
             with open("data.csv","r") as csvfile:
                 reader = csv.reader(csvfile)
                 next(reader) # skipping header
@@ -97,6 +97,7 @@ if __name__ == "__main__":
         json.dump(dic, f, cls=JSONEncoder)
 
     sys.exit(0)
+
 
 
 
