@@ -61,6 +61,16 @@ def sous_suite(l1, l2):
             ptr2 += 1
         ptr1 += 1
     return (ptr2 >= len(l2))
+
+def sous_suite_2(l1, l2):
+    ptr = 0
+    for e in l1:
+        if e == l2[ptr]:
+            ptr += 1
+            if ptr >= len(l2):
+                break
+    return ptr == len(l2)
 ==
+
 
 
