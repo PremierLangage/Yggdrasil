@@ -34,6 +34,7 @@ Pour ceux qui s'ennuient: il y a des exercices un peu plus difficiles à la fin.
 @ fibo-2021.pl
 @ extends-2021.pl
 @ pair_impair-2021.pl
+@ plat-allergie-2021.pl
 
 # Manipulation de liste par référence
 @ ajoute_liste-2021.pl
@@ -43,8 +44,8 @@ Pour ceux qui s'ennuient: il y a des exercices un peu plus difficiles à la fin.
 
 # Un peu d'algo (algo??) sur les listes 
 @ doublons-2021.pl
-@ histogramme-2021.pl
 @ zip-list-2021.pl
+@ histogramme-2021.pl
 
 # Exos durs (math, algo, ...)
 @ _difficle.pl
