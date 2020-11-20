@@ -39,18 +39,24 @@ def selectionfromcsv(filename, number=4, sourcecol="source", targetcol="target")
 
 
 testfile="""target;source;bob;bib
-one;un;1:I
-two:deux;2;II
-trois:three;3;III
-quatre:four;4;IV
+one;un;1;I
+two;deux;2;II
+trois;three;3;III
+quatre;four;4;IV
 cinq;five;5;V
 """
 
-if __name__ == "__main__" :
+def _():
     """
-    >>> with open("test.csv","w") as f:
-        f.write(testfile)
+    >>> with open("./test.csv","w") as f:
+    ...    print(testfile,file=f)
     >>> random.seed(56)
-    >>> selectionfromcsv("test.csv")
+    >>> selectionfromcsv("./test.csv",number=1)
+    ([{'id': 'source0', 'content': 'four', 'source': True}, {'id': 'target0', 'content': 'quatre', 'target': True}], [{'source': 'source0', 'target': 'target0'}])
+    >>> random.seed(56)
+    >>> selectionfromcsv("./test.csv",number=1,sourcecol="bob",targetcol="bib")
+    ([{'id': 'source0', 'content': '4', 'source': True}, {'id': 'target0', 'content': 'IV', 'target': True}], [{'source': 'source0', 'target': 'target0'}])
     
-    """ 
+    >>> fromcsv("./test.csv",sourcecol="bob",targetcol="bib")
+    """
+    pass
