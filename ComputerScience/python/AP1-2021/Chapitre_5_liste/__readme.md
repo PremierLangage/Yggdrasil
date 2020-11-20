@@ -132,7 +132,7 @@ tag=elementAccess|append|listCreate
 
 ## Ex10a : Plat en tenant compte de l'allergie
 
-@ $plat-allergie-2021.pl
+@ plat-allergie-2021.pl
 
 tag=elementAccess|in|append
 
