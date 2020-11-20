@@ -20,9 +20,9 @@ import io
 import sys
 
 oldout=sys.stdout 
-sys.out=io.StringIO()
+sys.stdout=io.StringIO()
 doctest.testfile("code.py")
-text= sys.out.getvalue()
+text= sys.stdout.getvalue()
 sys.out = oldout 
 ==
 
