@@ -21,6 +21,7 @@ oldout=sys.stdout
 sys.stdout=io.StringIO()
 doctest.testmod(code)
 TEXT= sys.stdout.getvalue()
+TEXT=TEXT.replace("\n","<br/>\n")
 sys.stdout = oldout 
 
 ==
@@ -38,9 +39,7 @@ title = Tester votre code
 
 
 
-form==
-{{ editor|component }}
-==
+form=
 
 text==
 {{TEXT}}
