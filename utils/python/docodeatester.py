@@ -1,16 +1,20 @@
 
-def f():
+def g():
     """
-    >>> f()
+    >>> g()
     3
-    >>> f()
+    >>> g()
     4
     """
     return 3
 
 """
+Ceci est un doc 
+
 >>> f() == 3
 True
 >>> f() == 4 
 False
 """
+
+
