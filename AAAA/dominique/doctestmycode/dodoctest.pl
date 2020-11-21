@@ -15,12 +15,14 @@ before==
 import doctest
 import io
 import sys
-
+import code
+    
 oldout=sys.stdout 
 sys.stdout=io.StringIO()
-doctest.testfile("code.py")
+doctest.testmod(code)
 text= sys.stdout.getvalue()
-sys.out = oldout 
+sys.stdout = oldout 
+
 ==
 
 
@@ -55,4 +57,5 @@ doctest.testfile(filetotest)
 grade = (100, f"Test result\n"+sys.out.getvalue())
 sys.out = oldout 
 ==
+
 
