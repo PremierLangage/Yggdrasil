@@ -21,7 +21,7 @@ oldout=sys.stdout
 sys.stdout=io.StringIO()
 doctest.testmod(code)
 TEXT= sys.stdout.getvalue()
-TEXT=TEXT.replace("\n","<br/>\n")
+TEXT=TEXT.replace("\n","    \n")
 sys.stdout = oldout 
 
 ==
