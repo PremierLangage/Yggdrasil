@@ -21,7 +21,7 @@ oldout=sys.stdout
 sys.stdout=io.StringIO()
 doctest.testmod(code)
 TEXT= sys.stdout.getvalue()
-TEXT=TEXT.replace("\n","    \n")
+text=TEXT.replace("\n","    \n")
 sys.stdout = oldout 
 
 ==
@@ -37,10 +37,8 @@ builder =@ /builder/before.py
 
 title = Tester votre code 
 
-
+text=
 
 form=
 
-text==
-{{TEXT}}
-==
+
