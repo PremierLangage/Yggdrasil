@@ -10,10 +10,9 @@ editor.code ==
 # write your code here
 ==
 
-before==
-==
 
-title = Code Editor Component
+
+title = Tester votre code 
 
 text==
 ==
@@ -22,14 +21,19 @@ form==
 {{ editor|component }}
 ==
 
-evaluator==
+before==
 import doctest
 import io
 import sys
-oldout=sys.out 
-sys.out=io.StringIO()
-doctest.testfile(filetotest)
-grade = (100, f"Test result\n"+sys.out.getvalue())
-sys.out = oldout 
+import code
+    
+oldout=sys.stdout 
+sys.stdout=io.StringIO()
+doctest.testmod(code)
+text= sys.stdout.getvalue()
+sys.stdout = oldout 
+
+grade = (100, f"Test result\n"+text)
+
 ==
 
