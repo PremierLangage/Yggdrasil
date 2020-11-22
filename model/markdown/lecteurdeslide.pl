@@ -45,7 +45,7 @@ slides=docslides
 evaluator==
 numero+=1
 if numero<len(slides):
-    text=slides[numero][1]+ f"   \n <p style="text-align:right;>Slide {numero}</p> \n"
+    text=slides[numero][1]+ f"   \n <p style='text-align:right;'>Slide {numero}</p> \n"
     title= slides[numero][0].strip("#") 
     grade=(0,"continuez")
 else:
