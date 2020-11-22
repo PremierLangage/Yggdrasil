@@ -1,5 +1,9 @@
 
 
+# Latex
+
+$%\huge \frac{\sqrt{x^7}}{\pi^2} <= +\infty%$ 
+
 
 ***
 
