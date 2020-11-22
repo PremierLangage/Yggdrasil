@@ -1,9 +1,19 @@
 
 extends = /model/checkbox/div3.pl
 
+title = Choix Multiple 
 text= Cochez les réponses positives
 
-
+good==# une chaine multiple avec une bonne solution par ligne 
+bonne1
+bonne2
+bonne3
+==
+bad==
+mauvaise 1 
+mauvaise 2
+mauvaise 3
+==
 
 
 
