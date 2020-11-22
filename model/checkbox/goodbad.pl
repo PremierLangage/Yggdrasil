@@ -11,7 +11,7 @@ before==
 import random
 
 if "good" not in globals():
-    text= "<p style='color=red;' Il manque une variable good contenant la liste des bonnes reponses "
+    text= "$%\huge \textt{ Il manque une variable good contenant la liste des bonnes reponses }%s"
 elif "bad" not in globals():
     text= " Il manque une variable good contenant la liste des mauvaises reponses "
 else:
