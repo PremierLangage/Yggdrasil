@@ -9,6 +9,7 @@ Hop A égal à 2 et B à 3
 editor.code==
 A=2
 B=3
+#
 ==
 
 # les tests avec un seul # ne sont pas visible par l'étudiant
