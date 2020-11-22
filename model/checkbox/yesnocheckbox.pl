@@ -1,5 +1,7 @@
 
 extends = /model/checkbox/div3.pl
+
+text= Cochez les réponses positives
 before==
 import random
 good= ['yes','good','ok','da','Ney','dac','ouais']
