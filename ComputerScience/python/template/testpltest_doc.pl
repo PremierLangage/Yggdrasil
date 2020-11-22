@@ -2,18 +2,9 @@ title=test du template pltest_doc
 
 text==
 # Ceci est un fichier de test 
-
 **Si l'on click sur valider le resultat doit être un success.**
-
-
-
-
 Hop A égal à 2 et B à 3 
-
 ==
-
-
-
 
 editor.code==
 A=2
@@ -33,7 +24,7 @@ True
 3
 ==
 
-xpltest0==
+pltest0==
 >>> 1==12
 True
 >>> 1==1
@@ -46,7 +37,7 @@ True
 True
 ==
 
-Xpltest1==
+pltest1==
 >>> C==C
 True
 >>> D==C
@@ -57,9 +48,10 @@ True
 
 
 
-extends=pltest.pl
+extends= /ComputerScience/python/template/pltest.pl
 
 @ template.html
+
 
 
 
