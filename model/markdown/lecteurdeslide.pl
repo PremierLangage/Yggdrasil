@@ -17,7 +17,7 @@ def getfirstnomlancklineandcut(s):
     for i,line in enumerate(l):
         if l == "" :
             continue
-        return (l[i],l[i:])
+        return (l[i],l[i:].join("\n"))
     return ("","")
 
 with open ("slides.md" , "r") as f:
