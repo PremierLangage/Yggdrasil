@@ -15,8 +15,8 @@ mauvaise 2
 mauvaise 3
 ==
 
-nbtrue=1
-nb=2
+nbtrue % 1
+nb % 2
 
 before==
 import random
@@ -34,7 +34,7 @@ else:
     # le randint est le nombre de bonnes propositions
     if "nbtrue" not in globals() or nbtrue > len(good):
         nbtrue= random.randint(1, len(good))
-    if "nb" not in globals() or nb > len(bad)+nbtrue :
+    if "nb" not in globals() or int(nb) > len(bad)+nbtrue :
         nb = len(bad)+nbtrue
     checkbox.setdata_from_rw(good, bad, nb , nbtrue)
 
