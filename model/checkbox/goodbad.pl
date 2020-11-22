@@ -33,7 +33,7 @@ else:
     # le randint est le nombre de bonnes propositions
     if "nbtrue" not in globals() or nbtrue > len(good):
         nbtrue= random.randint(1, len(good))
-    if "nb" not in globals() :
+    if "nb" not in globals() or nb > nb = len(bad)+nbtrue :
         nb = len(bad)+nbtrue
     checkbox.setdata_from_rw(good, bad, nb , nbtrue)
 
