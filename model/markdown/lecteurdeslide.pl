@@ -11,8 +11,12 @@ form=
 
 title=Des slides pour vous  
 before==
+
+
 def getfirstnomlancklineandcut(s):
+    global text
     r=""
+
     l=s.split("\n")
     for i,line in enumerate(l):
         text += line + "-- \n"
