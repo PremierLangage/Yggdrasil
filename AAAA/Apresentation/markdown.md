@@ -3,6 +3,10 @@
 
 ## Titre de niveau 2
 
+### Niveau 3
+
+**gras** *italique* 
+
 Un paragraphe.
 
     un peu
@@ -15,6 +19,7 @@ if python == 0 :
 else:
     pass
 ```
+
 
 
 
