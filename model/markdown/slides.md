@@ -32,3 +32,11 @@ Pour séparer les slides les un des autres "***".
 La premier ligne est un titre.
 
 
+***
+
+# Latex
+
+$%\frac{\sqrt{x^7}}{\pi^2}%$ 
+ Euh 
+
+
