@@ -15,6 +15,7 @@ def getfirstnomlancklineandcut(s):
     r=""
     l=s.split("\n")
     for i,line in enumerate(l):
+        text += line + "-- \n"
         if l == "" :
             continue
         return (l[i],"\n".join(l[i:]))
