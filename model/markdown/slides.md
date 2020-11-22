@@ -23,7 +23,7 @@ extends= /model/markdown/lecteurdeslide.pl
 Pour séparer les slides les un des autres "***".
 
 
-*** 
+***
 
 # Slide 3 
 
