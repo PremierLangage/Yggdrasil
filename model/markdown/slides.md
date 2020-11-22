@@ -13,7 +13,7 @@ $%\huge \frac{\sqrt{x^7}}{\pi^2} <= +\infty%$
 
 ## Comment utiliser le lecteur de slides
 
-Le markdown n'est pas encore complet mais cela viens. 
+Le markdown n'est pas encore complet mais cela viendra. 
 
     extends= /model/markdown/slideshow.pl
     @ monfichierdeslides.md [slides.md]
