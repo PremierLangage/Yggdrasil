@@ -2,11 +2,16 @@
 extends = /model/checkbox/div3.pl
 
 text= Cochez les réponses positives
+
+
+
+
+
 before==
 import random
 
 if "good" not in globals():
-    text= " Il manque une variable good contenant la liste des bonnes reponses "
+    text= "<p style='color=red;' Il manque une variable good contenant la liste des bonnes reponses "
 elif "bad" not in globals():
     text= " Il manque une variable good contenant la liste des mauvaises reponses "
 else:
