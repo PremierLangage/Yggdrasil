@@ -34,7 +34,7 @@ La première ligne est un titre garder votre # (diese) pour pouvoir utiliser vot
 
 # Latex
 
-$%\huge \frac{\sqrt{x^7}}{\pi^2}%$ 
+$%\huge \frac{\sqrt{x^7}}{\pi^2} <= +\infty%$ 
 
 
 
