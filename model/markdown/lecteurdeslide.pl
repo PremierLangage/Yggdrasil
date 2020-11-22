@@ -7,7 +7,7 @@
 text=
 form=
 
-@ slide.md [slides.md]
+@ slides.md [slides.md]
 
 title=Des slides pour vous  
 before==
