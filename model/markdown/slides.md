@@ -7,11 +7,11 @@
 
 ## Comment utiliser le lecteur de slides
 
+Le markdown n'est pas encore complet mais cela viens. 
 
-```python
     extends= /model/markdown/lecteurdeslide.pl
     @ monfichierdeslides.md [slides.md]
-```
+
 
 ***
 
