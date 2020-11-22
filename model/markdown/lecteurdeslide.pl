@@ -46,7 +46,7 @@ evaluator==
 numero+=1
 if numero<len(slides):
     text=slides[numero][1]+ f"   \n Slide {numero} \n"
-    title= slides[numero][0].strip("#")
+    title= slides[numero][0].strip("#") + "BANDE DE MOULES"
     grade=(0,"continuez")
 else:
     grade=(100,"Bonne continuation")
