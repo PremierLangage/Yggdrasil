@@ -30,7 +30,11 @@ else:
     good = good.strip("\n").split("\n")
     bad = bad.strip("\n").split("\n")
     # 5 est le nombre de propositions
-    # le randint est le nombre de bonnes propositions 
-    checkbox.setdata_from_rw(good, bad, 5, random.randint(1, len(good)))
+    # le randint est le nombre de bonnes propositions
+    if "nbtrue" not in globals() or nbtrue > len(good):
+        nbtrue= random.randint(1, len(good))
+    if "nb" not in globals() :
+        nb = len(bad)+nbtrue
+    checkbox.setdata_from_rw(good, bad, nb , nbtrue)
 
 ==
