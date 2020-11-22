@@ -22,7 +22,7 @@ def getfirstnomlancklineandcut(s):
         text += line + "-- \n"
         if l == "" :
             continue
-        return (l[i],"\n".join(l[i:]))
+        return (l[i],"\n".join(l[i+1:]))
     return ("","")
 
 with open ("slides.md" , "r") as f:
