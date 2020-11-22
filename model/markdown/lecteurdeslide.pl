@@ -34,14 +34,6 @@ else:
 ==
 
 
-dummy.extracss==
-<style>
-.exercise__header {
-background: center no-repeat url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/PanoMontBlancHDR_edit_1.jpg/800px-PanoMontBlancHDR_edit_1.jpg");
-background-size: contain;
-}
-</style>
-==
 
 
 
