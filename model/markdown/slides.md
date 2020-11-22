@@ -1,8 +1,12 @@
 
+Tout ce qui et avant la première mark *** n'est pas traité. 
+
+*** 
 
 # Latex
 
 $%\huge \frac{\sqrt{x^7}}{\pi^2} <= +\infty%$ 
+
 
 
 ***
