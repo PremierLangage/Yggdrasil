@@ -14,7 +14,7 @@ before==
 with open ("slides.md" , "r") as f:
     t=f.readlines()
 
-slides=("\n".join(t)).split("***\n")
+slides=("\n".join(t)).split("\n***\n")
 numero=0
 
 #text=slides
@@ -27,7 +27,7 @@ evaluator==
 numero+=1
 if numero<len(slides):
     text=slides[numero]
-    title= f"les slides {numero}"
+    title= f"Présentation Slide {numero}"
     grade=(0,"continuez")
 else:
     grade=(100,"Bonne continuation")
