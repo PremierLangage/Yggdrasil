@@ -11,13 +11,27 @@ form=
 
 title=Des slides pour vous  
 before==
+def getfirstnomlancklineandcut(s):
+    r=""
+    l=s.split("\n")
+    for i,line in enumerate(l):
+        if l == "" :
+            continue
+        return (l[i],l[i:])
+    return ("","")
+
 with open ("slides.md" , "r") as f:
     t=f.readlines()
 
 slides=("\n".join(t)).split("\n***\n")
 numero=0
 
-#text=slides
+docslides=[]
+for s in slides:
+    docslides.append(getfirstnomlancklineandcut(s))
+
+slides=docslides
+
 
 
 ==
@@ -26,8 +40,8 @@ numero=0
 evaluator==
 numero+=1
 if numero<len(slides):
-    text=slides[numero]
-    title= f"Présentation Slide {numero}"
+    text=slides[numero][1]+ f"   \n Slide {numero} \n"
+    title= slides[numero][0].strip("#")
     grade=(0,"continuez")
 else:
     grade=(100,"Bonne continuation")
