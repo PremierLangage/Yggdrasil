@@ -27,7 +27,7 @@ Pour séparer les slides les un des autres "***".
 
 ## titre de niveau 2 
 
-La première ligne est un titre.
+La première ligne est un titre garder votre # (diese) pour pouvoir utiliser votre slide dans pandoc .
 
 
 ***
