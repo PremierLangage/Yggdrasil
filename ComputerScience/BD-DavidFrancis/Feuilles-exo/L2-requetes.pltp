@@ -4,7 +4,7 @@ introduction ==
 Voici quelques exercices pour s'entraîner aux requêtes SQL.
 
  Les exercices sont indépendants. Vous pouvez les faire et même les refaire dans l'ordre que vous voulez. 
- Le dump de la base de données utilisée par cette série d'exercice est disponible ici : https://elearning.u-pem.fr/pluginfile.php/438134/mod_resource/content/3/soiree_platon.sql
+ Le dump de la base de données utilisée par cette série d'exercice est disponible sur la page du cours.
  
 Conseil : Prenez le temps de comprendre le schema de la base et de réfléchir aux données que vous voulez extraire de la base avant d'écrire votre requête.
 
