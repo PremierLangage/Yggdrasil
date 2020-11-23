@@ -563,7 +563,7 @@ def eval_mult_expr(lstans, lstsol, checkratsimp=True, modulo=None, authorized_fu
     lsterror = []
     lstscore = []
     for strans, sol in zip(lstans, lstsol):
-        score, error = eval_expr(strans, sol, checkratsimp, modulo, authorized_func, local_dict)
+        score, error = eval_expr(strans, sol, checkratsimp, modulo, authorized_func,  local_dict=local_dict)
         lsterror.append(error)
         lstscore.append(score)
     if "NotExpr" in lsterror:
