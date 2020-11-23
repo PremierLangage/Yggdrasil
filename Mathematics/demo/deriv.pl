@@ -7,6 +7,9 @@ text ==
 Donner la dérive de la fonction $!{{f| latex}}!$.
 ==
 
+# On choisit le type de clavier virtuel
+input.virtualKeyboards = complex function
+
 before==
 
 # Sympy création de la variable x 
