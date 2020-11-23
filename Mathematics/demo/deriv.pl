@@ -17,7 +17,7 @@ var('x')
 # Si j'écrit sin(x) c'est une expression  sympy 
 
 # je créé une liste de fonction (pour tirage aléatoire) dont je vais demander la dérivé 
-lf=[sin(x),cos(x),x**2,x**3]
+lf=[sin(x),cos(x),x**2,x**3, log(x)/log(2), exp(x)]
 # un monome plus aléatoire 
 a=rd.randint(3,100)
 e=rd.randint(1,5)
