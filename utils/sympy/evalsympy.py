@@ -598,8 +598,11 @@ def eval_frac(strans, sol, simpwarning=True):
     return (100, "Success")
 
 def eval_function(strans, sol, checkratsimp=True, authorized_func=None, local_dict={}):
-    r"""
+    """
     Evaluate an answer when the solution is a function.
+    >>> sp.var('x')
+    >>> eval_function("-2\sin(x)",2*sp.cos(x))
+    100,0
     """
     local_dict.update({'e': sp.E})
     return eval_expr(strans, sol, checkratsimp, authorized_func, local_dict=local_dict)
