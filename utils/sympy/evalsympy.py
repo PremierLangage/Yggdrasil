@@ -602,7 +602,7 @@ def eval_function(strans, sol, checkratsimp=True, authorized_func=None, local_di
     Evaluate an answer when the solution is a function.
     """
     local_dict.update({'e': sp.E})
-    return eval_expr(strans, sol, checkratsimp, authorized_func, local_dict)
+    return eval_expr(strans, sol, checkratsimp, authorized_func, local_dict=local_dict)
 
 @add_feedback
 def eval_real_or_inf(strans, sol, local_dict={}):
@@ -864,6 +864,7 @@ def ans_antiderivative(strans,sol,x,local_dict={}):
     test2=[]
     test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
     return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
+
 
 
 
