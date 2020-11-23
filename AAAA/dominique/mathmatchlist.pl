@@ -1,5 +1,5 @@
 
-extends= /model/math/math.pl
+extends= /model/math.pl
 extends= simplematchlist.pl
 
 before==
