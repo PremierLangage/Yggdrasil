@@ -17,14 +17,15 @@ var('x')
 # Si j'écrit sin(x) c'est une expression  sympy 
 
 # je créé une liste de fonction (pour tirage aléatoire) dont je vais demander la dérivé 
-lf=[ exp(x)]
+lf=[sin(x),cos(x),x**2,x**3, log(x)/log(2), exp(x)]
 # un monome plus aléatoire 
 a=rd.randint(3,100)
 e=rd.randint(1,5)
 mono= a*x**e
 lf.append(mono)
 # Choix aléatoire de la fonciton 
-f=rd.choice(lf)
+f= exp(x)
+#rd.choice(lf)
 # Calcul de la solution 
 sol= diff(f,x)
 ==
