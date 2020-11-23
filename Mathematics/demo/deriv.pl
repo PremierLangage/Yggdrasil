@@ -8,7 +8,7 @@ Donner la dérive de la fonction $!{{f| latex}}!$.
 ==
 
 # On choisit le type de clavier virtuel
-input.virtualKeyboards = complex function
+input.virtualKeyboards = complex functions
 
 before==
 
@@ -29,7 +29,11 @@ f=rd.choice(lf)
 sol= diff(f,x)
 ==
 
+evaluator==
+score, error = eval_function(input.value, sol)
 
+feedback = message[error]
+==
 
 
 
