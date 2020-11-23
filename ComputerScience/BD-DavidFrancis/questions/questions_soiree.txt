@@ -29,7 +29,7 @@
 10;Les costumes (modele, avatar) que l'on ne trouve pas en taille XL.;SELECT modele, avatar FROM deguisement EXCEPT SELECT modele, avatar FROM deguisement NATURAL JOIN vendre WHERE taille = 'XL';False;False
 10;Les soirées (ids, lieu, date) dans lesquelles personne n'est déguisé en Rey.;SELECT ids, lieu, date FROM soiree EXCEPT SELECT ids, lieu, date FROM soiree NATURAL JOIN participe WHERE avatar='Rey';False;False
 10;Les magasins (nommag) qui ne vendent pas de costume de Anna.;SELECT nommag FROM vendre EXCEPT SELECT nommag FROM vendre NATURAL JOIN deguisement WHERE avatar = 'Anna';False;False
-11;Le prix le plus bas d'un costume de princesse.;SELECT min(prix) FROM vendre NATURAL JOIN deguisement WHERE avatar = 'princesse';False;False
+11;Le prix le plus bas d'un costume de Blanche Neige.;SELECT min(prix) FROM vendre NATURAL JOIN deguisement WHERE avatar = 'Blanche Neige';False;False
 11;Le prix le plus haut d'un costume de Batgirl.;SELECT max(prix) FROM vendre NATURAL JOIN deguisement WHERE avatar = 'Batgirl';False;False
 11;Le nombre de personnes qui se sont déguisées au moins une fois en Batman.;SELECT count(distinct surnom) FROM participe WHERE avatar = 'Batman';False;False
 11;Le prix d'entrée moyen des soirées organisées à Tours.;SELECT avg(entree) FROM soiree WHERE lieu = 'Tours';False;False
