@@ -4,7 +4,7 @@
 extends = base.pl
 
 #* Maximum number of attempts before showing the right answer.
-maxattempt = 3
+#maxattempt = 3
 
 #XX this functionality has not been implemented yet - current behaviour is allow_reroll = True XX
 #* When True display the reroll button and allow the student to reroll the exercice after tumeout
