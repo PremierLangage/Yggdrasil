@@ -120,7 +120,7 @@ form== #|html|
         // hide submit button if timeout or success.
         //submit.attr("disabled", ({{ attempt }} >= {{ maxattempt }}) || {{ score }} == 100);
         // hide submit button if success.
-        submit.attr("disabled", ({{ score }} == 100));
+        submit.attr("disabled", {{ score }} == 100);
 
         // disable some buttons
         const actions = nodes.actions;
