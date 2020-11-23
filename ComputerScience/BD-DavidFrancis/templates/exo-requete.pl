@@ -152,8 +152,8 @@ import random
 import sqlite3
 
 score = -1
-attempt = 0
-maxattempt = int(maxattempt)
+#attempt = 0
+#maxattempt = int(maxattempt)
 
 allow_reroll = (allow_reroll == "True")
 show_solution = (show_solution == "True")
