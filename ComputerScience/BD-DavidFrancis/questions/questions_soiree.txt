@@ -6,7 +6,7 @@
 2;La liste des avatars représentés en soirée, sans doublons.;SELECT DISTINCT avatar FROM participe;False;True
 3;La liste des modèles de déguisements qui sont disponibles en taille XS.;SELECT DISTINCT modele FROM vendre WHERE taille = 'XS';False;False
 3;La liste des magasins qui vendent le costume bat5.;SELECT DISTINCT nommag FROM vendre WHERE modele = 'bat5';False;False
-3;L'avatar représenté par le costume kyl18.;SELECT avatar FROM deguisement WHERE modele = 'kyl18';False;False
+3;L'avatar représenté par le costume dar12.;SELECT avatar FROM deguisement WHERE modele = 'dar12';False;False
 4;La liste des modèles de déguisements que l'on peut acheter pour moins de 24 euros.;SELECT DISTINCT modele FROM vendre WHERE prix < 24;False;False
 4;La liste des soirées qui peuvent accueillir au moins 70 personnes.;SELECT * FROM soiree WHERE nbmax >= 70;False;False
 4;La liste des personnes qui mesurent moins de 1m50.;SELECT * FROM personne WHERE taille < 150;False;False
