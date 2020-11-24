@@ -3,7 +3,7 @@
 
 
 title= lecture liste
-tag=lecture d'une liste simplement chainée
+tag=listes|pointeurs|parametre
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
@@ -102,6 +102,7 @@ tests==
   ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20)+10)])]
   ]
 ==
+
 
 
 
