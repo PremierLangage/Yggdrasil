@@ -43,7 +43,7 @@ Liste extrait_suivant(Liste lst,int x){
 
   if(lst!=NULL)
   {
-    while(lst->suvant!=NULL &&lst->suivant->val!=x)
+    while(lst->suivant!=NULL &&lst->suivant->val!=x)
         lst=lst->suivant;
 
     if(lst->suivant!=NULL)
