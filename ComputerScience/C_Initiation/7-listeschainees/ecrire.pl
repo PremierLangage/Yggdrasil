@@ -2,7 +2,7 @@
 
 
 title=Affiche liste
-tag=affichage d'une liste simplement chainée
+tag=listes|pointeurs|iteration
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
