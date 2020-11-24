@@ -1,7 +1,7 @@
 
 
 
-title= affiche liste
+title=Affiche liste
 tag=affichage d'une liste simplement chainée
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
@@ -98,6 +98,7 @@ tests==
   ["Aléatoire", "", " ".join([str(random.randint(0,100)) for i in range(random.randint(5,20))])+" -1"]
   ]
 ==
+
 
 
 
