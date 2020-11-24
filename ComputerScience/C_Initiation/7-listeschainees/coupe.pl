@@ -18,7 +18,7 @@ Si n est nul ou plus grand ou égal au nombre d'éléments de la liste on renvoi
 Sinon on renvoie 1.  
  <br>
 Exemple: <br>
-- Si la première liste contient 3->1->2->fin et `n=1`,  les listes contiennent 3->1->fin et 2->fin après éxécution de la fonction.
+- Si la première liste contient 3->4->2->fin et `n=1`,  les listes contiennent 3->fin et 4->2->fin après éxécution de la fonction.
  <br> <br>
 
 On utilisera les types: <br>
@@ -127,7 +127,9 @@ tests==
 [ ["Basique", "", "2 10 20 -1 -4"],
   ["Vide", "", ""],
   
-  ["Aléatoire", "", str(random.randint(5,8))+" "+" ".join([str(random.randint(1,100)) for i in range(random.randint(8,20))])+" -1"]
+  ["Aléatoire 1", "", str(random.randint(5,8))+" "+" ".join([str(random.randint(1,100)) for i in range(random.randint(8,20))])+" -1"],
+  ["Aléatoire 2", "", str(random.randint(5,8))+" "+" ".join([str(random.randint(1,100)) for i in range(random.randint(8,20))])+" -1"]
+
   ]
 ==
 
