@@ -46,7 +46,7 @@ Liste extrait_suivant(Liste lst,int x){
         lst->suivant=tmp->suivant;
         tmp->suivant=NULL;
     }
-  }                           
+  }
   return tmp;
 }
 ==
