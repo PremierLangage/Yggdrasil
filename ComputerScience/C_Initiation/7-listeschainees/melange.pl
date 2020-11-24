@@ -22,12 +22,18 @@ l1=(3,5,7)
 lst=(10,8,6,4,2,0)
 après mélange(&l1,&lst,1) on doit avoir 
  l1=(10,3,8,5,6,7,4,2,0) et lst=()  
-   On utilisera les types:  
-typedef struct cel{  
-int val;  
-struct cel* suivant;   
-}Cellule;  
-typedef Cellule* Liste  
+
+ 
+On utilisera les types: <br>
+<br>
+
+    typedef struct cel{  
+        int val;   
+        struct cel* suivant;  
+    } Cellule;  
+
+    typedef Cellule* Liste;  
+
 
 ==
 
