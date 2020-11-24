@@ -3,6 +3,6 @@
 extends= /AAAA/dominique/multistep.pl
 
 # Ca c'est pour l'exo lui même 
-questions=@ questions-suites.amc
+questions=@ questions-reels.amc
 
 
