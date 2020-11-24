@@ -116,7 +116,7 @@ scanf("%d",&pos);
 Liste l=NULL,d;
  taille=lire(&l);
     lpos=l;
-/* extracts the entry at position preced */
+/* extracts the entry after position pos */
 if(pos< taille-1){
     for(i=0;i<pos;i+=1)
         lpos=lpos->suivant;
