@@ -116,16 +116,17 @@ scanf("%d",&pos);
 Liste l=NULL,lpos;
  taille=lire(&l);
     lpos=l;
+List ans;
 /* extracts the entry after position pos */
 if(pos< taille-1){
     for(i=0;i<pos;i+=1)
         lpos=lpos->suivant;
-    extrait_suivant(l,lpos->val);
-    }
-
+    ans = extrait_suivant(l,lpos->val);
+}
 else
-    extrait_suivant(l,pos);
+    ans = extrait_suivant(l,pos);
 affiche(l);
+affiche(ans);
 return 0;
 }
 ==
