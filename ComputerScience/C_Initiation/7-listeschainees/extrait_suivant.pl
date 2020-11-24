@@ -135,7 +135,9 @@ tests==
 [ ["Basique", "", "2 10 0 -2 5"],
   ["Vide", "", ""],
   
-  ["Aléatoire", "",str(random.randint(3,10))+" " +" ".join([str(random.randint(0,100)) for i in range(random.randint(5,20)+10)])]
+  ["Aléatoire 1", "",str(random.randint(3,10))+" " +" ".join([str(random.randint(0,100)) for i in range(random.randint(5,20)+10)])],
+    ["Aléatoire 2", "",str(random.randint(5,40))+" " +" ".join([str(random.randint(0,100)) for i in range(random.randint(50,70)+10)])]
+
   ]
 ==
 
