@@ -4,7 +4,7 @@
 
 
 title=Coupe d'une liste
-tag=Séprer une liste simplement chainée
+tag=Liste|Pointeur|
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author=  
