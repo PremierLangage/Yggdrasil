@@ -15,13 +15,20 @@ Ecrire une fonction `coupe` qui reçoit deux listes et un entier n strictemment 
 la deuxième liste est supposé vide.  
 Elle coupe la première après la $% n^{\mbox{ième}} %$cellule et affecte le reste à l deuxième liste. 
 Si n est nul ou plus grand ou égal au nombre d'éléments de la liste on renvoie 0 et il ne se  passe rien . 
-Sinon on renvoie 1.  
-On utilisera les types:  
-typedef struct cel{  
-int val;  
-struct cel* suivant;   
-}Cellule;  
-typedef Cellule* Liste  
+Sinon on renvoie 1.  <br><br>
+
+
+On utilisera les types: <br>
+<br>
+
+    typedef struct cel{  
+        int val;   
+        struct cel* suivant;  
+    } Cellule;  
+
+    typedef Cellule* Liste;  
+
+
 
 ==
 
@@ -120,6 +127,7 @@ tests==
   ["Aléatoire", "", str(random.randint(5,8))+" "+" ".join([str(random.randint(1,100)) for i in range(random.randint(8,20))])+" -1"]
   ]
 ==
+
 
 
 
