@@ -41,10 +41,13 @@ solution==
 Liste extrait_suivant(Liste lst,int x){
   Liste tmp=NULL;
 
-  if(lst!=NULL){
+  if(lst!=NULL)
+  {
     while(lst->suvant!=NULL &&lst->suivant->val!=x)
         lst=lst->suivant;
-    if(lst->suivant!=NULL){
+
+    if(lst->suivant!=NULL)
+    {
         tmp=lst->suivant;
         lst->suivant=tmp->suivant;
         tmp->suivant=NULL;
