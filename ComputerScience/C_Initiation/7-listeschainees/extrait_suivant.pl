@@ -124,7 +124,7 @@ if(pos< taille-1){
     }
 
 else
-    extrait_suivant(l,preced);
+    extrait_suivant(l,pos);
 affiche(l);
 return 0;
 }
