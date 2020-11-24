@@ -13,7 +13,7 @@ text==
 
 Écrire une fonction `Cellule* extrait_suivant(Liste l, int precede)`, qui extrait,
 si elle existe, la cellule située après celle contenant `precede`. La fonction renvoie
-l'adresse de la cellule extraite ou `NULL`. <br>
+l'adresse de la cellule extraite ou `NULL` si elle n'existe pas. <br>
 <br>
 
 On utilisera les types: <br>
