@@ -124,7 +124,7 @@ tests==
   ["Vide", "", ""],
   ["tete","","10 10 22 12"],
   ["Aléatoire 1", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20)+10)])],
-    ["Aléatoire 2", "", " ".join([str(random.randint(-0,20)) for i in range(random.randint(5,50)+10)])]
+    ["Aléatoire 2", "", " ".join([str(random.randint(-0,20)) for i in range(random.randint(5,30)+20)])]
   ]
 ==
 
