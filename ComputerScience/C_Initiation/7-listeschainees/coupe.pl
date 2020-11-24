@@ -3,7 +3,7 @@
 
 
 
-title= coupe d'une liste
+title=Coupe d'une liste
 tag=Séprer une liste simplement chainée
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
