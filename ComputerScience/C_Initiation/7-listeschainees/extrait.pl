@@ -14,7 +14,7 @@ text==
 
 Ecrire une fonction `Cellule * extrait(Liste *liste,int x) `, qui extrait, si elle existe, 
 la cellule contenant `x`. La fonction renvoie l'adresse de la cellule extraite ou NULL. 
-S'il y en a plusieurs cellules contenant la valeur `x`, nous considérerons que la première.  <br><br>
+S'il y en a plusieurs cellules contenant la valeur `x`, nous considérerons seulement la première.  <br><br>
 
 On utilisera les types: <br>
 <br>
