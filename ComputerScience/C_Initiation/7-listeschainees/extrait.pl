@@ -107,8 +107,10 @@ printf("\n");
 codeafter==
 int main(void) {
 	Liste l=NULL;
+    int v;
+    scanf("%d",&v);
     lire(&l);
-    Liste ex = extrait(&l,10);
+    Liste ex = extrait(&l,v);
     affiche(l);
     if (ex != NULL)
         printf("%d\n",ex->val);
