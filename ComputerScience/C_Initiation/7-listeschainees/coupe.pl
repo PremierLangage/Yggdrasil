@@ -58,7 +58,7 @@ if(n==0){
     }
     else
         *deux = NULL;
-    return 1;
+    return (*deux)!=NULL;
     }    
 else
 return 0;
