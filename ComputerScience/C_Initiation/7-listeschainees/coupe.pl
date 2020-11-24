@@ -4,7 +4,7 @@
 
 
 title=Coupe d'une liste
-tag=Liste|Pointeur|
+tag=Liste|Pointeur|Iteration
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author=  
