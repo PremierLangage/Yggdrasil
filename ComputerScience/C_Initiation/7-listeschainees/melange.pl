@@ -11,7 +11,7 @@ author=
 
 text==  
 
-Ecrire une fonction `void melange(Liste* un,Liste* deux,int n)`qui reçoit deux listes et un entier n .
+Écrire une fonction `void melange(Liste* un,Liste* deux,int n)`qui reçoit deux listes et un entier n .
 Elle mélange les deux listes en alternants un élément de l'une et un élément de l'autre.  
 Si l'entier n vaut 0 le premier élément provient  la  première liste,
 Si l'entier n vaut 1 le premier élément provient  la  deuxième liste.  
@@ -160,6 +160,7 @@ tests==
   ["Aléatoire", "", str(random.randint(0,1))+" "+str(random.randint(5,8))+" "+" ".join([str(random.randint(1,100)) for i in range(random.randint(8,20))])]
   ]
 ==
+
 
 
 
