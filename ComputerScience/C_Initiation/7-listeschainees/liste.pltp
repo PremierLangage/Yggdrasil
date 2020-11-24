@@ -5,12 +5,13 @@ Des listes simplement chainées...
 ==
 @ /ComputerScience/C_Initiation/7-listeschainees/longueur.pl
 @ /ComputerScience/C_Initiation/7-listeschainees/ecrire.pl
-@ /ComputerScience/C_Initiation/7-listeschainees/extrait_suivant.pl
 @ /ComputerScience/C_Initiation/7-listeschainees/lire.pl
+@ /ComputerScience/C_Initiation/7-listeschainees/extrait_suivant.pl
 @ /ComputerScience/C_Initiation/7-listeschainees/extrait.pl
 @ /ComputerScience/C_Initiation/7-listeschainees/coupe.pl
 @ /ComputerScience/C_Initiation/7-listeschainees/melange.pl
 @ /ComputerScience/C_Initiation/7-listeschainees/ajout_ordonne.pl
+
 
 
 
