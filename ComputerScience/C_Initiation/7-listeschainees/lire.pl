@@ -12,7 +12,7 @@ text==
 
 Écrire une fonction `lire` qui lit les éléments successifs d'une liste chainée donnée en entrée au clavier.
 La liste à remplir est passée en paramètre et supposée `NULL` à l'appel. La saisie s'arrête
-lorsque l'utilisateur n'entre rien avant le ``return``..<br>
+lorsque l'utilisateur n'entre rien avant le ``return``.<br>
 <br>
 
 On utilisera les types: <br>
