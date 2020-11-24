@@ -51,7 +51,10 @@ while (index!=NULL && n>0){
     n-=1;
     }
 if(n==0){
-    *deux=index->suivant;
+    if (index != NULL)
+        *deux=index->suivant;
+    else
+        *deux = NULL;
     index->suivant=NULL;
     return 1;
     }    
