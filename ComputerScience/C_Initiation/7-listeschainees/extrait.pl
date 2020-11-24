@@ -108,7 +108,7 @@ codeafter==
 int main(void) {
 	Liste l=NULL;
     lire(&l);
-extrait(&l,10);
+    Liste ex ¡ extrait(&l,10);
     affiche(l);
 	return 0;
 }
