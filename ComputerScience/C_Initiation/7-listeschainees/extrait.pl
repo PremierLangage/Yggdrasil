@@ -13,7 +13,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 text==  
 
 Ecrire une fonction `Cellule * extrait(Liste *liste,int x) `, qui extrait, si elle existe, 
-la cellule contenant x.La fonction renvoie l'adresse de la cellule extraite ou NULL.
+la cellule contenant x.La fonction renvoie l'adresse de la cellule extraite ou NULL. <br><br>
 
 On utilisera les types: <br>
 <br>
