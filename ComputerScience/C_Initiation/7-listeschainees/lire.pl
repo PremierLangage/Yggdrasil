@@ -3,7 +3,7 @@
 
 
 title= lecture liste
-tag=listes|pointeurs|DeclarationFonction|TransmissionAdresse
+tag=Liste|Pointeur|DeclarationFonction|TransmissionAdresse
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
