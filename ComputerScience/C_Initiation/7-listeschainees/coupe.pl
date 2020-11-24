@@ -126,9 +126,9 @@ int main(void) {
 tests==
 [ ["Basique", "", "2 10 20 -1 -4"],
   ["Vide", "", ""],
-  
+[ ["Entier trop grand", "", "5 10 20 -1 -4"],
   ["Aléatoire 1", "", str(random.randint(5,8))+" "+" ".join([str(random.randint(1,100)) for i in range(random.randint(8,20))])+" -1"],
-  ["Aléatoire 2", "", str(random.randint(5,8))+" "+" ".join([str(random.randint(1,100)) for i in range(random.randint(8,20))])+" -1"]
+  ["Aléatoire 2", "", str(random.randint(10,20))+" "+" ".join([str(random.randint(1,100)) for i in range(random.randint(8,20))])+" -1"]
 
   ]
 ==
