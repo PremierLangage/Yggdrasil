@@ -15,12 +15,16 @@ text==
 Ecrire une fonction `Cellule * extrait(Liste *liste,int x) `, qui extrait, si elle existe, 
 la cellule contenant x.La fonction renvoie l'adresse de la cellule extraite ou NULL.
 
-On utilisera les types:  
-typedef struct cel{  
-int val;  
-struct cel* suivant;  
-}Cellule;  
-typedef Cellule* Liste;  
+On utilisera les types: <br>
+<br>
+
+    typedef struct cel{  
+        int val;   
+        struct cel* suivant;  
+    } Cellule;  
+
+    typedef Cellule* Liste;  
+
 
 ==
 
@@ -118,6 +122,7 @@ tests==
   ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20)+10)])]
   ]
 ==
+
 
 
 
