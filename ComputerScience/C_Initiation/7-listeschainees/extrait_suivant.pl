@@ -4,7 +4,7 @@
 
 
 title=Extrait dans liste
-tag=listes|pointeurs|iteration|effacerList
+tag=listes|pointeurs|iteration|effacerListe
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
