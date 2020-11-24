@@ -6,7 +6,7 @@ before==
 
 var('x')
 
-f=[sin(x),cos(x),x**2,x**3, log(x)/log(2), exp(x)]
+f=[sin(x),cos(x),x**2,x**3, log(x)/log(2), exp(x),127]
 gf=[ f"$!{latex(fi)}!$" for fi in f]
 df=[  f"$!{latex(diff(U,x))}!$" for U in f]
 
@@ -20,5 +20,6 @@ else:
 ==
 
 text==
-
+Associez chaque fonction à sa dérivée.
 ==
+
