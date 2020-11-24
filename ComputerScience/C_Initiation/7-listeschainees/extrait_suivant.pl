@@ -111,7 +111,7 @@ printf("\n");
 }
 
 int main(void) {
-int preced=0,nb=0,i;
+int pos=0,taille=0,i;
 scanf("%d",&pos);
 Liste l=NULL,d;
  taille=lire(&l);
