@@ -126,7 +126,7 @@ if(pos< taille-1){
 else
     ans = extrait_suivant(l,pos);
 affiche(l);
-affiche(ans);
+printf("%d\n",ans->val);
 return 0;
 }
 ==
