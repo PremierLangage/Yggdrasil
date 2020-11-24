@@ -123,7 +123,8 @@ tests==
 [ ["Basique", "", "0 1 -5 10 0 -1"],
   ["Vide", "", ""],
   ["tete","","10 10 22 12"],
-  ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20)+10)])]
+  ["Aléatoire 1", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20)+10)])],
+    ["Aléatoire 1", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20)+10)])]
   ]
 ==
 
