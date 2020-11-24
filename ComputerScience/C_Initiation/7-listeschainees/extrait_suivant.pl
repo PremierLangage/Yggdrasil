@@ -113,7 +113,7 @@ printf("\n");
 int main(void) {
 int pos=0,taille=0,i;
 scanf("%d",&pos);
-Liste l=NULL,d;
+Liste l=NULL,lpos;
  taille=lire(&l);
     lpos=l;
 /* extracts the entry after position pos */
