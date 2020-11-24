@@ -3,7 +3,7 @@
 
 
 
-title=extrait dans liste
+title=Extrait dans liste
 tag=extrait liste simplement chainée
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
@@ -131,6 +131,7 @@ tests==
   ["Aléatoire", "",str(random.randint(3,10))+" " +" ".join([str(random.randint(0,100)) for i in range(random.randint(5,20)+10)])]
   ]
 ==
+
 
 
 
