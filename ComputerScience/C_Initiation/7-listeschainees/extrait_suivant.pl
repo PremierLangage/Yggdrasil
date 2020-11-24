@@ -14,6 +14,11 @@ text==
 Écrire une fonction `Cellule* extrait_suivant(Liste l, int precede)`, qui extrait,
 si elle existe, la cellule située après celle contenant `precede`. La fonction renvoie
 l'adresse de la cellule extraite ou `NULL` si elle n'existe pas. <br>
+Exemples : <br>
+- Si le tableau contenait 3,1,2 les inversions sont les paires `(i,j)` suivants : `(0,1),(0,2)`. <br>
+- Si le tableau contenait 1,3,2,0 les inversions sont les paires `(i,j)` suivants : `(0,3),(1,2),(1,3),(2,3)`. 
+
+
 <br>
 
 On utilisera les types: <br>
