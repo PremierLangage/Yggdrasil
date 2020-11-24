@@ -4,8 +4,10 @@ extends= /model/qcm/qcm.pl
 
 title= Exemple pour etienne 
 
+bbo="Une chaine"
+
 text==
-Choisir la bonne reponse :
+Choisir la bonne reponse :{{bbo}}
 ==
 
 nb=4
@@ -24,4 +26,5 @@ bad
 pas bon
 beurk
 ==
+
 
