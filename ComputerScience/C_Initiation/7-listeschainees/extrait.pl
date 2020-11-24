@@ -112,7 +112,7 @@ int main(void) {
     affiche(l);
     if (ex != NULL)
         printf("%d\n",ex->val);
-	return 0;
+    return 0;
 }
 ==
 
