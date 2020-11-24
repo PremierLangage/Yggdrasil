@@ -52,10 +52,12 @@ while (index!=NULL && n>0){
     }
 if(n==0){
     if (index != NULL)
+    {
         *deux=index->suivant;
+        index->suivant=NULL;
+    }
     else
         *deux = NULL;
-    index->suivant=NULL;
     return 1;
     }    
 else
