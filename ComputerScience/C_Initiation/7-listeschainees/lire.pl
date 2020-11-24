@@ -3,7 +3,7 @@
 
 
 title= lecture liste
-tag=listes|pointeurs|parametre
+tag=listes|pointeurs|TransmissionAdresse
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
@@ -102,6 +102,7 @@ tests==
   ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20)+10)])]
   ]
 ==
+
 
 
 
