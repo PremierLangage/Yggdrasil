@@ -26,7 +26,7 @@ On utilisera les types: <br>
     typedef Cellule* Liste;  
 
 
-**Remarque :** Vous pouvez utiliser une fonction nextEntier que vous avez écrite. A condition de la copier dans l'éditeur.
+**Remarque :** Vous pouvez utiliser une fonction nextEntier que vous avez écrite. À condition de la copier dans l'éditeur.
 ==
 
 editor.code==
