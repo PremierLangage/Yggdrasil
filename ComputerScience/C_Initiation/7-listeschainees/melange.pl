@@ -18,11 +18,8 @@ Si l'entier n vaut 1 le premier élément provient  la  deuxième liste.
 Après le mélange la première liste contient tous les éléments et la deuxième est vide.
 S'il reste des éléments dans une seule des listes, is sont ajoutés sans changement.   
 <br>
-Exemple : 
-l1=(3,5,7)  
-lst=(10,8,6,4,2,0)
-après mélange(&l1,&lst,1) on doit avoir 
- l1=(10,3,8,5,6,7,4,2,0) et lst=()  
+Exemple : Si  l1=3->5->7->fin et lst=10->8->6->4->2->0->fin , après mélange(&l1,&lst,1) on doit avoir 
+ l1=10->3->8->5->6->7->4->2->0->fin et lst=fin
 
 
 On utilisera les types: <br>
