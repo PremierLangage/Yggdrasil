@@ -110,6 +110,8 @@ int main(void) {
     lire(&l);
     Liste ex = extrait(&l,10);
     affiche(l);
+    if (ex != NULL)
+        printf("%d\n",ex->val);
 	return 0;
 }
 ==
