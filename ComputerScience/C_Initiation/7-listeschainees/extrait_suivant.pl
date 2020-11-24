@@ -15,7 +15,7 @@ text==
 si elle existe, la cellule située après celle contenant `precede`. La fonction renvoie
 l'adresse de la cellule extraite ou `NULL` si elle n'existe pas. <br>
 Exemple : <br>
-- Si la liste `l` contenait 3->1->2->4->fin et precede=1, l'appel `extrait_suivant(l,precede)` renvoyera un pointeur vers la cellule contenant 2, et la liste après éxécution sera `3->1->4->fin`. <br>
+- Si la liste `l` contenait 3->1->2->4->fin et precede=1, l'appel `extrait_suivant(l,precede)` renvoyera une cellule contenant 2, et la liste après éxécution sera `3->1->4->fin`. <br>
 
 <br>
 
