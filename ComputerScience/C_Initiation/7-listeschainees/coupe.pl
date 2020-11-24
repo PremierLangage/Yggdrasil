@@ -11,7 +11,7 @@ author=
 
 text==  
 
-Ecrire une fonction `coupe` qui reçoit deux listes et un entier n strictemment positif;
+Écrire une fonction `coupe` qui reçoit deux listes et un entier n strictemment positif;
 la deuxième liste est supposé vide.  
 Elle coupe la première après la $% n^{\mbox{ième}} %$cellule et affecte le reste à l deuxième liste. 
 Si n est nul ou plus grand ou égal au nombre d'éléments de la liste on renvoie 0 et il ne se  passe rien . 
