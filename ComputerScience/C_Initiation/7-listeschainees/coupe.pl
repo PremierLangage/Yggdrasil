@@ -21,7 +21,7 @@ Sinon on renvoie 1.
 Exemples: <br>
 - Si la première liste contient 3->1->2->fin et `n=1`,  les listes contiennent 3->1->fin et 2->fin après éxécution de la fonction.
 
-
+<p>
 
 On utilisera les types: <br>
 <br>
