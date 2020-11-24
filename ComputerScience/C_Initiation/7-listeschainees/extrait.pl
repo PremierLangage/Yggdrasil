@@ -120,9 +120,9 @@ int main(void) {
 
 
 tests==
-[ ["Basique", "", "1 -5 10 0 -1"],
+[ ["Basique", "", "0 1 -5 10 0 -1"],
   ["Vide", "", ""],
-  ["tete","","10 22 12"],
+  ["tete","","10 10 22 12"],
   ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20)+10)])]
   ]
 ==
