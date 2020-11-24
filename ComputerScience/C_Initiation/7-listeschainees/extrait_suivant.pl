@@ -112,14 +112,15 @@ printf("\n");
 
 int main(void) {
 int preced=0,nb=0,i;
-scanf("%d",&preced);
+scanf("%d",&pos);
 Liste l=NULL,d;
- nb=lire(&l);
-    d=l;
-if(preced< nb-1){
-    for(i=0;i<preced;i+=1)
-        d=d->suivant;
-    extrait_suivant(l,d->val);
+ taille=lire(&l);
+    lpos=l;
+/* extracts the entry at position preced */
+if(pos< taille-1){
+    for(i=0;i<pos;i+=1)
+        lpos=lpos->suivant;
+    extrait_suivant(l,lpos->val);
     }
 
 else
