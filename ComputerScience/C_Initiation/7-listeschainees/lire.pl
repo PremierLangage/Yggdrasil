@@ -10,7 +10,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==  
 
-Écrire une fonction `lire` qui lit les éléments successifs d'une liste chainée au clavier.
+Écrire une fonction `lire` qui lit les éléments successifs d'une liste chainée donnée en entrée au clavier.
 La liste est passée en parametre et supposée `NULL` a l'appel. La saisie s'arrête
 lorsque l'utilisateur n'entre rien avant le ``return``..<br>
 <br>
