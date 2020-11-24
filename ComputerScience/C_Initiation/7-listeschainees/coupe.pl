@@ -16,12 +16,10 @@ la deuxième liste est supposé vide.
 Elle coupe la première après la $% n^{\mbox{ième}} %$cellule et affecte le reste à l deuxième liste. 
 Si n est nul ou plus grand ou égal au nombre d'éléments de la liste on renvoie 0 et il ne se  passe rien . 
 Sinon on renvoie 1.  
-
-<p>
-Exemples: <br>
+ <br>
+Exemple: <br>
 - Si la première liste contient 3->1->2->fin et `n=1`,  les listes contiennent 3->1->fin et 2->fin après éxécution de la fonction.
-
-<p>
+ <br> <br>
 
 On utilisera les types: <br>
 <br>
