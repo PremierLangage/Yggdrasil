@@ -118,11 +118,12 @@ int main(void) {
     int n;
     scanf("%d",&n);
     lire(&d);
-    coupe(&d,&f,n);
+    int ans = coupe(&d,&f,n);
     printf("d: ");
     affiche(d);
     printf("f: ");
     affiche(f);
+    printf("return: %d\n",ans);
 	return 0;
 }
 ==
