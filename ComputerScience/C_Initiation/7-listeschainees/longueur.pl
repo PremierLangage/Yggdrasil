@@ -3,7 +3,7 @@
 
 
 title= Nombre de cellules d'une liste
-tag=Nombre de cellules d'une liste simplement chainée
+tag=listes|pointeurs|iteration
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
@@ -102,6 +102,7 @@ tests==
   ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20))])+" -1"]
   ]
 ==
+
 
 
 
