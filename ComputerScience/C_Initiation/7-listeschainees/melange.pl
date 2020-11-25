@@ -144,6 +144,8 @@ int main(void) {
     scanf("%d",&ld);
     lire(&d);
     coupe1(&d,&f,ld);
+    affiche(d);
+    affiche(f);
     melange(&d,&f,n);
     printf("premiere %d,coupe %d\n",n,ld);
     printf("premiere apres : ");
