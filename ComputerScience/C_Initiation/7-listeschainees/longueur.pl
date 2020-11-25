@@ -5,7 +5,7 @@
 title= Nombre de cellules d'une liste
 tag=Liste|Pointeur|Iteration
 
-extends=/ComputerScience/C/template/std_progC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 
 
