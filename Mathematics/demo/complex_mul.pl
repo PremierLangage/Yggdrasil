@@ -28,7 +28,7 @@ On considère les nombres complexes $! z_1 = {{ z1|latex }} !$ et $! z_2= {{ z2|
 ==
 
 # On choisit le type de clavier virtuel
-input.virtualKeyboards = complex
+input.virtualKeyboards = functions complex
 
 # La clé evaluator contient un script python qui est exécuté quand l'élève valide sa réponse
 # Il faut définir dans ce script un score entre 0 et 100 (ou -1 pour un warning). Et éventuellement un feedback.
@@ -46,5 +46,6 @@ feedback = message[error]
 solution ==
 La solution est $! {{ sol|latex}} !$.
 ==
+
 
 
