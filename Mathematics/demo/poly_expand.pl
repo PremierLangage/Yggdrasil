@@ -25,23 +25,16 @@ sol = expr.expand()
 # On a un filtre latex qui convertit automatiquement un objet Sympy en latex.
 
 text ==
-On considère les nombres complexes 
+Développer {{ expr|latex }}.
 ==
 
-# On choisit le type de clavier virtuel
-input.virtualKeyboards = complex
-
-# La clé evaluator contient un script python qui est exécuté quand l'élève valide sa réponse
-# Il faut définir dans ce script un score entre 0 et 100 (ou -1 pour un warning). Et éventuellement un feedback.
-# Bon, ici, tout est caché dans la fonction eval_complex qui est dans une bibliothèque.
-# Cette fonction prend en paramètres : la valeur rentrée par l'élève input.value (une chaîne latex),
-# la solution attendue (un objet sympy) et des options.
-# Elle renvoie un score et un code d'erreur
-# On a des messages prédéfinis dans le dictionnaire "message" pour transformer le code erreur en message
-
 evaluator ==
-score, error = eval_complex(input.value, sol, form="cartesian")
+score, error = eval_poly(input.value, sol, var="x", form="expanded")
 feedback = message[error]
+==
+
+solution ==
+La solution est $! {{ sol|latex}} !$.
 ==
 
 
