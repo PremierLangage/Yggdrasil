@@ -5,7 +5,7 @@ title= HTML Inline
 text= Cochez les éléments HTML qui sont de type "en ligne" ("inline)
 before==
 import random
-good= ['a','span','img','input', 'td']
+good= ['a','span','img','input', 'td','b','q','em']
 bad= ['p','h1','div','select','table','ul']
 # 5 est le nombre de propositions totales à afficher
 # le randint est le nombre de bonnes propositions à afficher 
