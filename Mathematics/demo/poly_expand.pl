@@ -25,7 +25,7 @@ sol = expr.expand()
 # On a un filtre latex qui convertit automatiquement un objet Sympy en latex.
 
 text ==
-Développer {{ expr|latex }}.
+Développer $${{ expr|latex }}.$$
 ==
 
 evaluator ==
