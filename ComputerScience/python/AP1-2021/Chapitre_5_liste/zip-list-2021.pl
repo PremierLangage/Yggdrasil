@@ -5,7 +5,7 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 title=Intégrer deux listes
 
 text==
-Supposons qu'on a deux listes ``l1`` et ``l2``, **qui ne sont pas forcément de la même longueur**, on veut les intégrer dans une seule liste ``lst`` de couple
+Supposons qu'on a deux listes ``l1`` et ``l2``, **qui ne sont pas forcément de la même longueur**, on veut les intégrer dans une seule liste ``lst`` de couples
 de la façon suivante : le i-ième élément de ``lst`` doit être le couple formé par le i-ième élément de ``l1`` et de ``l2``. 
 
 Si une des listes n'a pas assez d'éléments, alors **on doit utiliser ``None`` pour représenter les éléments manquants**.
@@ -61,6 +61,7 @@ pltest1==
 >>> l2
 [4, 5, 6, 7]
 ==
+
 
 
 
