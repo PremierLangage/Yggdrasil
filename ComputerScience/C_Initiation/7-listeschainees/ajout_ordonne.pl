@@ -126,8 +126,6 @@ tests==
   
   ["Aléatoire 1", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,30))])+" -1"],
   ["Aléatoire 2", "", " ".join([str(random.randint(101,200)) for i in range(random.randint(5,30))])+" -1"],
-  ["Aléatoire 2", "", " ".join([str(random.randint(101,200)) for i in range(random.randint(5,30))])+" -1"]
-
   ]
 ==
 
