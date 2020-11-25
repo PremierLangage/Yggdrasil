@@ -2,7 +2,7 @@ extends = /model/checkbox/div3.pl
 
 
 title= HTML Inline
-text= Cochez les balises "inline"
+text= Cochez les éléments HTML qui sont de type "en ligne" ("inline)
 before==
 import random
 good= ['a','good','span','img','input', 'td']
