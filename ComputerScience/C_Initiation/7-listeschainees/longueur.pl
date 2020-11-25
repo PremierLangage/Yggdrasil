@@ -32,7 +32,7 @@ On utilisera les types:  <br>
 
 == 
 
-editor.code==
+editor.code==#|c|
 ... nb_cellules(...) {
    /* votre code ici... */
 }
