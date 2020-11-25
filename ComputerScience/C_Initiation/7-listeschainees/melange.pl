@@ -5,7 +5,7 @@
 
 
 title= Mélange de deux listes
-tag=Liste|Pointeur|shuffle|TransmissionAdresseIteration|ParcoursListe
+tag=Liste|Pointeur|shuffle|TransmissionAdresse|Iteration|ParcoursListe
 extends=/ComputerScience/C/template/stdsandboxC.pl
 author=  
 
