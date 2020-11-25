@@ -4,7 +4,7 @@ extends = /model/basic/vraifaux.pl
 title= Un exemple de proposition vraie ou fausse 
 
 text==
-Le cheval blanc de Henri IV est il blanc ? 
+Le cheval blanc de Henri V est il blanc ? 
 ==
 
 
