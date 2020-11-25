@@ -144,13 +144,13 @@ int main(void) {
     scanf("%d",&ld);
     lire(&d);
     coupe1(&d,&f,ld);
-    affiche(d);
-    affiche(f);
+    printf("un : "); affiche(d);
+    printf("deux : "); affiche(f);
     melange(&d,&f,n);
-    printf("premiere %d\n",n);
-    printf("premiere apres : ");
+    printf("n %d\n",n);
+    printf("un apres : ");
     affiche(d);
-    printf("deuxieme apres :");
+    printf("deux apres :");
     affiche(f);
 	return 0;
 }
