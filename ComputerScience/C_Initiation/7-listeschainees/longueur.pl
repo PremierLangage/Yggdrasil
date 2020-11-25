@@ -7,7 +7,7 @@ tag=Liste|Pointeur|Iteration
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
-form=
+form=@/form/text_editor.html
 editor =: CodeEditor
 editor.theme=dark
 editor.language=c
