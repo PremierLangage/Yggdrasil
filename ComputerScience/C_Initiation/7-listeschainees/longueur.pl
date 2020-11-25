@@ -39,7 +39,7 @@ editor.code==#|c|
 }
 
 ==
-solution==
+solution==#|c|
 int nb_cellules(Liste lst){
 int compte=0;
 while(lst !=NULL){
@@ -51,7 +51,7 @@ return compte;
 
 ==
 
-codebefore==
+codebefore==#|c|
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -63,7 +63,7 @@ typedef Cellule* Liste  ;
 
 ==
 
-codeafter==
+codeafter==#|c|
  Cellule* alloue_Cellule(int x){
 Liste tmp=NULL;
 
