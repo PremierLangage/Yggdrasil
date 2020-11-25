@@ -16,8 +16,7 @@ before ==
 var('x') # crée le symbole x
 P = rd.randint(-5, 5) + rd.randint(-5, 5)*x
 Q = rd.randint(-5, 5) + rd.randint(-5, 5)*x
-expr = P * Q
-sol = expr.expand()
+sol = (P * Q).expand()
 ==
 
 # Voilà le début de l'énoncé avec un principe de template (Jinja) pour insérer les variables produites dans le script before.
@@ -25,7 +24,7 @@ sol = expr.expand()
 # On a un filtre latex qui convertit automatiquement un objet Sympy en latex.
 
 text ==
-Développer $${{ expr|latex }}.$$
+Développer $${{ P*Q|latex }}.$$
 ==
 
 evaluator ==
