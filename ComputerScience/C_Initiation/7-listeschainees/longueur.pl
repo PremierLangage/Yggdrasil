@@ -11,7 +11,6 @@ editor =: CodeEditor
 editor.theme=dark
 editor.language=c
 # editor.height=350px
-form=
 
 
 text==  
