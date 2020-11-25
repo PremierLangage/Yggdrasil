@@ -46,7 +46,7 @@ return compte;
 
 ==
 
-codebefore==
+code_before==#|c|
 
 #include <stdlib.h>
 #include <stdio.h>
