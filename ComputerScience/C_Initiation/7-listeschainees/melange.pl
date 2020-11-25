@@ -146,9 +146,9 @@ int main(void) {
     coupe1(&d,&f,ld);
     melange(&d,&f,n);
     printf("premiere %d,coupe %d\n",n,ld);
-    printf("d: ");
+    printf("premiere apres : ");
     affiche(d);
-    printf("f: ");
+    printf("deuxieme apres :");
     affiche(f);
 	return 0;
 }
