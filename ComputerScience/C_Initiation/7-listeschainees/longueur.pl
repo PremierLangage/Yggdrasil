@@ -6,6 +6,7 @@ title= Nombre de cellules d'une liste
 tag=Liste|Pointeur|Iteration
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
+grader  =@ /grader/evaluator.py
 
 editor =: CodeEditor
 editor.theme=dark
