@@ -122,9 +122,10 @@ int main(void) {
 
 tests==
 [ ["Basique", "", "10 0 -1"],
-  ["Liste vide", "", "5 "],
+  ["Liste vide", "", ""],
   
-  ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,30))])+" -1"],
+  ["Aléatoire 1", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,30))])+" -1"],
+  ["Aléatoire 2", "", " ".join([str(random.randint(101,200)) for i in range(random.randint(5,30))])+" -1"],
   ["Aléatoire 2", "", " ".join([str(random.randint(101,200)) for i in range(random.randint(5,30))])+" -1"]
 
   ]
