@@ -29,7 +29,7 @@ var('x')
 # On a un filtre latex qui convertit automatiquement un objet Sympy en latex.
 
 text ==
-On considère les nombres complexes $! z_1 = {{ z1|latex }} !$ et $! z_2= {{ z2|latex }} !$. Calculer $! z_1 \times z_2 !$ (sous forme algébrique).
+On considère les nombres complexes 
 ==
 
 # On choisit le type de clavier virtuel
