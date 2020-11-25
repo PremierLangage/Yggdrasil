@@ -10,7 +10,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==  
 
-Ecrire une fonction `void ajout_trieListe(*lst,int x) `
+Écrire une fonction `void ajout_trieListe(*lst,int x) `
 qui ajoute un élément x à une liste chainée triée (ordre  croissant) 
 passée en parametre.  
 La liste devra rester trie après l'insertion.
