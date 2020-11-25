@@ -11,9 +11,11 @@ UN entete a la con de AMXC
 + ça c'est une bonne réponse 
 
 
-* 33 Ceci est une question 
-+ et ça c'est une bonne réponse 
-- ce.  ci n'est pas une bonne réponse 
+** Nombre pairs
++ 2
+- 3
++ 4
+
 
 
 * Quel code numérique correspond aux droits rwxr-xr-- ?
@@ -25,5 +27,6 @@ UN entete a la con de AMXC
 - 651
 - 741
 + 754
+
 
 
