@@ -12,7 +12,7 @@ text==
 
 Écrire une fonction `void ajout_trieListe(*lst,int x) `
 qui ajoute un élément x à une liste chainée triée (ordre  croissant) 
-passée en parametre.  
+passée en paramètre.  
 La liste devra rester trie après l'insertion.
 
 
