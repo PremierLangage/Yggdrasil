@@ -3,7 +3,7 @@ extends = /model/mathinput.pl
 title = Développement
 
 before ==
-
+pass
 ==
 
 text ==
