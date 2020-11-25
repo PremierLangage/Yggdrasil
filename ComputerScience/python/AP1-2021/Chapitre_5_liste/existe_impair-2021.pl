@@ -4,7 +4,7 @@ extends=/ComputerScience/python/template/pltest.pl
 text==
 
 Ecrire une fonction ``exist_impairs`` qui prend une liste en paramètre 
-et qui retourne True si il existe un entier impair dans la liste.
+et qui retourne True s'il existe un entier impair dans la liste.
 
 Par exemple, ``exist_impairs([2, 0, 1, 9])`` doit renvoyer ``True``, parce qu'il y a 1 et 9 dans la liste,
 mais ``exist_impairs([2, 0, 2, 0])`` et ``exist_impairs([])`` doivent renvoyer ``False``.
