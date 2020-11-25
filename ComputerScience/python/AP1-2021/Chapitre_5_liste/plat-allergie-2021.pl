@@ -9,8 +9,8 @@ Après la pandémie du COVID-19, vous invitez votre meilleur ami chez vous pour 
 
 Mais hélas, votre ami est allergique à pas mal de choses... Donc il faut éviter ces choses-là dans votre plat !
 
-Tout ce que vous pouvez faire, c'est de comparer la liste des ingrédients de votre plat et la liste des aliments dont votre ami a l'allergie, 
-et de supprimer les ingrédients présents sur la liste d'allergie.
+Tout ce que vous pouvez faire, c'est de comparer la liste des ingrédients de votre plat et la liste des aliments auxquels votre ami est allergique, 
+et de supprimer les ingrédients présents sur la liste d'allergies.
 
 Écrire une fonction ``eviter_allergie(ingredient, allergie)`` qui retourne une nouvelle liste d'ingrédients de votre plat qui ne provoquent pas l'allergie de votre ami.
 
