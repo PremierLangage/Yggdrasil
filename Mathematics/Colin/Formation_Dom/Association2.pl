@@ -1,6 +1,6 @@
 author=DD and DR
 extends= /model/math.pl
-extends= simplematchlist.pl
+extends=/AAAA/dominique/simplematchlist.pl
 
 before==
 
