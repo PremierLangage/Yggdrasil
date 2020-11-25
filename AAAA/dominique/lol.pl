@@ -15,7 +15,7 @@ $!\frac{n}{n+1}!$
 
 ==
 
-impage =$Yggdrasil/AAAA/dominique/Lol_LOL.png
+impage =$ /AAAA/dominique/Lol_LOL.png
 
 answer=Non
 
