@@ -7,7 +7,7 @@ text==
 Ecrire une fonction `ignoredoublons` à un paramètre (une liste)
 qui retourne une nouvelle liste composée d'une seule copie de chaque élément.
 
-Quand un élémént est en double seule la première occurence est copiée.
+Quand un élémént est en double, seule la première occurrence est copiée.
 
 Par exemple, `ignoredoublons([3, 1, 2, 2, 1, 3])` renvoie `[3, 1, 2]`
 ==
