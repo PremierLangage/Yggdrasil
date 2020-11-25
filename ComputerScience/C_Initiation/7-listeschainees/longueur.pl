@@ -3,7 +3,7 @@
 
 
 title= Nombre de cellules d'une liste
-tag=Liste|Pointeur|Iteration|ParcoursListe|TransmissionAdresse
+tag=Liste|Pointeur|Iteration|ParcoursListe
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
