@@ -6,6 +6,8 @@ title= Nombre de cellules d'une liste
 tag=Liste|Pointeur|Iteration
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
+@ std_progC_utils.py
+@ /utils/sandboxio.py
 
 editor =: CodeEditor
 editor.theme=dark
