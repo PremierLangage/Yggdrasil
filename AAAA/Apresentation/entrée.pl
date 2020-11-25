@@ -25,7 +25,7 @@ le produit
 # évaluer la réponse 
 evaluator==
 
-if input1.value == a+b and input2.value == a*b :
+if int(input1.value) == a+b and int(input2.value) == a*b :
     grade=(100,"Bravo ")
     print("")
 else:
