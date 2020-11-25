@@ -13,7 +13,7 @@ Si une des listes n'a pas assez d'éléments, alors **on doit utiliser ``None`` 
 Par exemple, si ``l1 = ['nein', False, 0]`` et ``l2 = [1, 'ja', True, 'oui']``,
 alors la liste intégrée ``lst`` doit être ``[('nein', 1), (False, 'ja'), (0, True), (None, 'oui')]``.
 
-Écrire une fonction ``ziplist(l1, l2)`` qui intègre ``l1`` et ``l2`` et rentourne la liste de couples obtenue. 
+Écrire une fonction ``ziplist(l1, l2)`` qui intègre ``l1`` et ``l2`` et renvoie la liste de couples obtenue. 
 
 **La fonction ne doit pas changer les deux listes en paramètre.**
 ==
