@@ -147,7 +147,7 @@ int main(void) {
     printf("un : "); affiche(d);
     printf("deux : "); affiche(f);
     melange(&d,&f,n);
-    printf("n %d\n",n);
+    printf("n : %d\n",n);
     printf("un apres : ");
     affiche(d);
     printf("deux apres :");
