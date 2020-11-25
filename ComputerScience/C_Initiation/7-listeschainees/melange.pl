@@ -145,7 +145,7 @@ int main(void) {
     lire(&d);
     coupe1(&d,&f,ld);
      melange(&d,&f,n);
-     printf("premire %d,coupe %d\n",n,ld);
+     printf("premiere %d,coupe %d\n",n,ld);
     printf("d: ");
     affiche(d);
     printf("f: ");
