@@ -12,7 +12,7 @@ la première occurrence de ``x`` dans la liste originale ``lst``.
 
 Par exemple, l'histogramme de la liste ``['None', None, False, 42, None, False]`` est ``[('None', 3), (False, 2), (42, 1)]``.
 
-Écrire une fonction ``histogramme(lst)`` qui retourne l'histogramme de la liste ``lst`` passé en paramètre. Vous pouvez utiliser la méthode ``index``.
+Écrire une fonction ``histogramme(lst)`` qui retourne l'histogramme de la liste ``lst`` passée en paramètre. Vous pouvez utiliser la méthode ``index``.
 
 La fonction **ne doit pas modifier son paramètre**.
 ==
