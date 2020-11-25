@@ -4,21 +4,15 @@ extends = /model/mathinput2.pl
 
 title= Balise de titre 
 
+
 text==
 Un exercice de saisie d'un calcul.
 Donner le produit et somme de {{a}} et {{b}}. 
 
 ==
 
-# Avant que ce soit présenté à l'élève 
-before==
-
-
-a=3
-b=6
-
-==
-
+a % 3
+b % 5
 
 form ==
 la somme    
@@ -40,3 +34,13 @@ else:
 ==
 
 
+reserve==
+# Avant que ce soit présenté à l'élève 
+    before==
+
+
+    a=3
+    b=6
+
+    ==
+==
