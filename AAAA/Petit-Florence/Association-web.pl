@@ -1,4 +1,5 @@
 extends= /model/matchlist/matchlist.pl
+
 extends= /AAAA/dominique/simplematchlist.pl
 
 pairs ==
@@ -7,7 +8,8 @@ Language de mise en forme§CSS
 Language de programmation§JavaScript
 ==
 
-text = Associez les langages à leur utilisation  
+text = Associez ces langages à leur utilisation  
 
 title = Les langages du web
+
 
