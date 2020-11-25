@@ -91,7 +91,7 @@ while(lst !=NULL){
 printf("\n");
 } 
 
-int coupe(Liste *un,Liste *deux, int n){
+int coupe1(Liste *un,Liste *deux, int n){
 Liste index=*un;
 n-=1;
 while (index!=NULL && n>0){
@@ -143,7 +143,7 @@ int main(void) {
     scanf("%d",&n);
     scanf("%d",&ld);
     lire(&d);
-    coupe(&d,&f,ld);
+    coupe1(&d,&f,ld);
      melange(&d,&f,n);
      printf("premire %d,coupe %d\n",n,ld);
     printf("d: ");
