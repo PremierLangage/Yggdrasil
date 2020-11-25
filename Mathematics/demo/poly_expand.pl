@@ -16,7 +16,7 @@ before ==
 var('x') # crée le symbole x
 P = rd.randint(-5, 5) + rd.randint(-5, 5)*x
 Q = rd.randint(-5, 5) + rd.randint(-5, 5)*x
-exprpoly = P*Q
+expr_poly = P*Q
 sol = (P * Q).expand()
 ==
 
