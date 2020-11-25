@@ -1,5 +1,5 @@
-extends = /model/matchlist/matchlist.pl
-extends = /AAAA/dominique/simplematchlist.pl
+extends= /model/matchlist/matchlist.pl
+extends= /AAAA/dominique/simplematchlist.pl
 
 pairs ==
 Language pour la structure§HTML
