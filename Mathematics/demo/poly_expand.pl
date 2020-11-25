@@ -48,10 +48,7 @@ score, error = eval_complex(input.value, sol, form="cartesian")
 feedback = message[error]
 ==
 
-# Ca c'est la correction finale.
-solution ==
-La solution est $! {{ sol|latex}} !$.
-==
+
 
 
 
