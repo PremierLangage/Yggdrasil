@@ -6,12 +6,7 @@ title= Nombre de cellules d'une liste
 tag=Liste|Pointeur|Iteration
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
-grader  =@ /grader/evaluator.py
 
-editor =: CodeEditor
-editor.theme=dark
-editor.language=c
-# editor.height=350px
 
 
 text==  
@@ -30,16 +25,16 @@ On utilisera les types:  <br>
 
     typedef Cellule* Liste;
 
-{{ editor|component }} 
+
 == 
 
-editor.code==#|c|
+editor.code==
 ... nb_cellules(...) {
    /* votre code ici... */
 }
 
 ==
-solution==#|c|
+solution==
 int nb_cellules(Liste lst){
 int compte=0;
 while(lst !=NULL){
@@ -51,7 +46,7 @@ return compte;
 
 ==
 
-codebefore==#|c|
+codebefore==
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -63,7 +58,7 @@ typedef Cellule* Liste  ;
 
 ==
 
-codeafter==#|c|
+codeafter==
  Cellule* alloue_Cellule(int x){
 Liste tmp=NULL;
 
