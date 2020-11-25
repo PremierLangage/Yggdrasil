@@ -7,7 +7,7 @@ extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 title = Ajout d'éléments dans une liste
 text == 
 Ecrire une fonction **tab3** à deux arguments : une liste et un entier **n**, et  qui modifie la liste passée en argument en
-lui ajoutant les n premiers multiples de 3 (en commençant par ``3*1``. 
+lui ajoutant les n premiers multiples de 3 (en commençant par ``3*1``). 
 
 Par exemple, ``tab3(['toto'], 3)`` doit modifier ``['toto']`` en ``['toto', 3, 6, 9]``.
 
