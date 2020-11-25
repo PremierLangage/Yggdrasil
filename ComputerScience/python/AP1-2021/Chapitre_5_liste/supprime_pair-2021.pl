@@ -7,7 +7,7 @@ builder= /builder/before.py
 title = Supprimer les éléments pairs 
 text == 
 Écrire une fonction `suppair` qui prend en argument une liste d'entiers et supprime tous les éléments pairs de celle-ci.
-Par exemple, si on avait une liste `l = [2, 6, 5, 8, 9]`, alors après l'appel `suppair(l)`, **qui ne retourne rien et n'affiche rien**,la valeur de `l` doit devenir `[5, 9]`.
+Par exemple, si on avait une liste `l = [2, 6, 5, 8, 9]`, alors après l'appel `suppair(l)`, **qui ne retourne rien et n'affiche rien**, la valeur de `l` doit devenir `[5, 9]`.
 
 **Hint** : vous pouvez modifier directement la liste en utilisant la méthode `pop` pour une liste (`l.pop(i)` efface l'élément d'indice `i` dans la liste `l`). Attention, il faut tenir en compte que cette méthode change aussi les indices des éléménts qui viennent après !
 
@@ -62,6 +62,7 @@ pltest3==
 >>> lst
 [1, 5]
 ==
+
 
 
 
