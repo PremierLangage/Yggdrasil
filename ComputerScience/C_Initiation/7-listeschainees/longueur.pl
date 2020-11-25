@@ -7,6 +7,10 @@ tag=Liste|Pointeur|Iteration
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
+editor =: CodeEditor
+editor.theme=dark
+editor.language=c
+# editor.height=350px
 
 
 text==  
