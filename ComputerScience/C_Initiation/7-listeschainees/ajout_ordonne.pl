@@ -14,12 +14,20 @@ Ecrire une fonction `void ajout_trieListe(*lst,int x) `
 qui ajoute un élément x à une liste chainée triée (ordre  croissant) 
 passée en parametre.  
 La liste devra rester trie
-On utilisera les types:  
-typedef struct cel{  
-int val;  
-struct cel* suivant;  
-}Cellule;  
-typedef Cellule* Liste; 
+
+
+<br>
+
+On utilisera les types: <br>
+<br>
+
+    typedef struct cel{  
+        int val;   
+        struct cel* suivant;  
+    } Cellule;  
+
+    typedef Cellule* Liste;  
+
 
 ainsi que la fonction `alloue_Cellule` précedemment écrite.
 ==
@@ -119,6 +127,7 @@ tests==
   ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,30))])+" -1"]
   ]
 ==
+
 
 
 
