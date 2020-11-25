@@ -16,6 +16,7 @@ before ==
 var('x') # crée le symbole x
 P = rd.randint(-5, 5) + rd.randint(-5, 5)*x
 Q = rd.randint(-5, 5) + rd.randint(-5, 5)*x
+expression = P*Q
 sol = (P * Q).expand()
 ==
 
@@ -24,7 +25,7 @@ sol = (P * Q).expand()
 # On a un filtre latex qui convertit automatiquement un objet Sympy en latex.
 
 text ==
-Développer $${{ P*Q|latex }}.$$
+Développer $${{ expression|latex }}.$$
 ==
 
 evaluator ==
