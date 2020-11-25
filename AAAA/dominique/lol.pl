@@ -1,38 +1,35 @@
-author=DD and DR
-extends= /model/math.pl
 
-extends= /AAAA/dominique/simplematchlist.pl
+extends = /model/basic/vraifaux.pl
 
-
-before==
-
-var('x')
-
-f=[sin(x),cos(x),x**2,x**3, log(x)/log(2), tan(x), exp(x),127]
-gf=[ f"$!{latex(fi)}!$" for fi in f]
-df=[  f"$!{latex(diff(U,x))}!$" for U in f]
-
-
-
-pairs= [ TT for TT in zip(gf,df)]
-
-# Dans une version future les lignes suivantes ne seront plus nécessaires 
-if type(pairs)==list:
-    matchlist.setdata_from_matches(pairs)
-else:
-    if "delimiter" not in globals():
-      delimiter='§'
-    # ne prend que les lignes avec un délimiter et construit une paire avec la chaine.
-    matchlist.setdata_from_matches([ l.split(delimiter) for l in  pairs.splitlines() if delimiter in l ])
-
-==
+title= Un exemple de proposition vraie ou fausse $!\ln !$ 
 
 text==
-Associez chaque fonction à sa dérivée.
-==
+Le cheval blanc de N'Henri V est il "blanc" ?   
+
+_attention y a du latex_
+
+$!\frac{n}{n+1}!$   
+
+![alt image](image)
 
 
-evaluator==
-grade=(100," Brovo mon coco \n")
 ==
+
+$= Lol_LOL.png
+
+answer=Non
+
+
+# pour aligner les propositions 
+horizontal % true 
+
+feedback_correct ==
+Bien vu il est vert car il s'est roulé dans l'herbe.  
+
+==
+feedback_wrong = Il vous manque des informations.
+general_feedback==
+Bien entendu c'est une question piège.
+==
+
 
