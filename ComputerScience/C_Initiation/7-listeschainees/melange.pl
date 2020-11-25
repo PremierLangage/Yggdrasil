@@ -39,7 +39,6 @@ editor.code==
 void melange(Liste* un,Liste* deux,int n){
   ...
 }
-
 ==
 solution==
 
@@ -159,7 +158,6 @@ int main(void) {
 tests==
 [ ["Basique", "", "0 2 10 6 -1 -2 -3"],
   ["Vide", "", "1 4 1 2 3"],
-  
   ["Aléatoire", "", str(random.randint(0,1))+" "+str(random.randint(5,8))+" "+" ".join([str(random.randint(1,100)) for i in range(random.randint(8,20))])]
   ]
 ==
