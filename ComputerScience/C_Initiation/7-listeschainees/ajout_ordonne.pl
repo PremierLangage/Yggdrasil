@@ -3,7 +3,7 @@
 
 
 title= Ajout dans une liste triée
-tag=ajout d'une liste simplement chainée
+tag=Liste|Pointeur|Iteration|ParcoursListe
 
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
