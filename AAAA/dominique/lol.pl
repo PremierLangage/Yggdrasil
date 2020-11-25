@@ -4,7 +4,7 @@ extends= /model/math.pl
 extends= /AAAA/dominique/simplematchlist.pl
 
 
-before==
+before==#|python|
 
 var('x')
 
@@ -28,4 +28,5 @@ else:
 text==
 Associez chaque fonction à sa dérivée.
 ==
+
 
