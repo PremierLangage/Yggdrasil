@@ -5,7 +5,7 @@
 title= Nombre de cellules d'une liste
 tag=Liste|Pointeur|Iteration
 
-extends=/ComputerScience/C/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/std_progC.pl
 
 
 
@@ -103,6 +103,7 @@ tests==
   ["Aléatoire 2", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,100))])+" -1"]
   ]
 ==
+
 
 
 
