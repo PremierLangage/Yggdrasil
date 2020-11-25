@@ -36,7 +36,6 @@ On utilisera les types: <br>
 ==
 
 editor.code==
-
 void melange(Liste* un,Liste* deux,int n){
   ...
 }
