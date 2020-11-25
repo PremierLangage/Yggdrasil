@@ -14,8 +14,10 @@ title = Multiplication de deux nombres complexes
 # Comme on est dans le modèle "mathinput", il y a automatiquement un "from sympy import *" et un "import random as rd"
 before ==
 var('x') # crée le symbole x
-z1 = rd.randint(-5, 5) + rd.randint(-5, 5)*x
-z2 = rd.randint(-5, 5) + rd.randint(-5, 5)*x
+P = rd.randint(-5, 5) + rd.randint(-5, 5)*x
+Q = rd.randint(-5, 5) + rd.randint(-5, 5)*x
+expr = P * Q
+sol = expr.expand()
 ==
 
 # Voilà le début de l'énoncé avec un principe de template (Jinja) pour insérer les variables produites dans le script before.
