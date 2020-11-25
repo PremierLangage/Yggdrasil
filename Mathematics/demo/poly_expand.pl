@@ -1,6 +1,6 @@
 extends = /model/mathinput.pl
 
-title = Développement
+title = 
 
 before ==
 # crée le symbole x
@@ -25,8 +25,4 @@ feedback = message[error]
 
 solution ==
 La solution est $! {{ sol|latex}} !$.
-==
-
-ok ==
-
 ==
