@@ -13,10 +13,15 @@ title = Multiplication de deux nombres complexes
 # La clé before contient un script python qui est exécuté au lancement de l'exercice
 # Comme on est dans le modèle "mathinput", il y a automatiquement un "from sympy import *" et un "import random as rd"
 before ==
-# I et la méthode expand, c'est du SymPy
-z1 = rd.randint(-5, 5) + rd.randint(-5, 5)*I
-z2 = rd.randint(-5, 5) + rd.randint(-5, 5)*I
-sol = (z1 * z2).expand()
+# crée le symbole x
+var('x')
+# crée des polynômes aléatoires avec des paramètres donnés (degré, 
+# nombre de coeff, borne sur les coeff, indéterminée)
+# c'est une fonction qu'on a créé dans une bibli randsympy
+#P = rand_int_poly(2, 2, 5, x)
+#Q = rand_int_poly(3, 2, 5, x)
+#expr = P * Q
+#sol = (expr).expand()
 ==
 
 # Voilà le début de l'énoncé avec un principe de template (Jinja) pour insérer les variables produites dans le script before.
