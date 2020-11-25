@@ -58,7 +58,7 @@ typedef Cellule* Liste  ;
 
 ==
 
-codeafter==
+code_after==#|c|
  Cellule* alloue_Cellule(int x){
 Liste tmp=NULL;
 
