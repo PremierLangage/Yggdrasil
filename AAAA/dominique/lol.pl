@@ -10,12 +10,12 @@ _attention y a du latex_
 
 $!\frac{n}{n+1}!$   
 
-![alt image](image)
+![alt image]({{impage}})
 
 
 ==
 
-$= Lol_LOL.png
+impage =$Yggdrasil/AAAA/dominique/Lol_LOL.png
 
 answer=Non
 
