@@ -13,9 +13,9 @@ text==
 
 Écrire une fonction `void melange(Liste* un,Liste* deux,int n)`qui reçoit deux listes et un entier n .
 Elle mélange les deux listes en alternants un élément de l'une et un élément de l'autre.  
-Si l'entier n vaut 0 le premier élément provient  la  première liste,
+Si l'entier n vaut 0 le premier élément provient  la  première liste.
 Si l'entier n vaut 1 le premier élément provient  la  deuxième liste.  
-Après le mélange la première liste contient tous les éléments et la deuxième est vide.
+Après le mélange la première liste contient tous les éléments (mélangés) et la deuxième est vide.
 S'il reste des éléments dans une seule des listes, is sont ajoutés sans changement.   
 <br>
 Exemple : Si  l1=3->5->7->fin et lst=10->8->6->4->2->0->fin , après mélange(&l1,&lst,1) on doit avoir  l1=10->3->8->5->6->7->4->2->0->fin et lst=fin
@@ -164,6 +164,7 @@ tests==
   ["Aléatoire", "", str(random.randint(0,1))+" "+str(random.randint(5,8))+" "+" ".join([str(random.randint(1,100)) for i in range(random.randint(8,20))])]
   ]
 ==
+
 
 
 
