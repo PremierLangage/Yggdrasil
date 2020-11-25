@@ -13,12 +13,6 @@ editor.language=c
 # editor.height=350px
 
 
-before ==#|python|
-
-
-
-text+=" {{ editor|component }} "
-==
 
 text==  
 
