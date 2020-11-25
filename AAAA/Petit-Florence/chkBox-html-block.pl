@@ -1,7 +1,7 @@
 extends = /model/checkbox/div3.pl
 
 
-title= HTML Inline
+title= HTML Block
 text= Cochez les éléments HTML qui sont de type "bloc" ("block)
 before==
 import random
