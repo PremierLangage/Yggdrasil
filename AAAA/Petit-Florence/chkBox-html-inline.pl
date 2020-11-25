@@ -1,6 +1,7 @@
 extends = /model/checkbox/div3.pl
 extends= /AAAA/dominique/simplematchlist.pl
 
+title= HTML Inline
 text= Cochez les balises "inline"
 before==
 import random
