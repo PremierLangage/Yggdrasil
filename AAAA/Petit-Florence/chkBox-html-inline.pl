@@ -1,4 +1,5 @@
 extends = /model/checkbox/div3.pl
+extends= /AAAA/dominique/simplematchlist.pl
 
 text= Cochez les balises "inline"
 before==
