@@ -122,7 +122,7 @@ int main(void) {
 
 tests==
 [ ["Basique", "", "10 0 -1"],
-  ["Vide", "", "5"],
+  ["Vide", "", "5 "],
   
   ["Aléatoire", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,30))])+" -1"]
   ]
