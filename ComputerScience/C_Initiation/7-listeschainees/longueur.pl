@@ -5,7 +5,7 @@
 title= Nombre de cellules d'une liste
 tag=Liste|Pointeur|Iteration
 
-extends=/ComputerScience/C/template/std_progC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 
 
 
@@ -46,7 +46,7 @@ return compte;
 
 ==
 
-code_before==#|c|
+codebefore==
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -58,7 +58,7 @@ typedef Cellule* Liste  ;
 
 ==
 
-code_after==#|c|
+codeafter==
  Cellule* alloue_Cellule(int x){
 Liste tmp=NULL;
 
