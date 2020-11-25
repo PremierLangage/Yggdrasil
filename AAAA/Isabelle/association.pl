@@ -2,6 +2,14 @@ author=DD and DR
 extends= /model/math.pl
 extends= /AAAA/dominique/simplematchlist.pl
 
+#delimiter=§
+
+pairs==
+une info § de l'info correspondante
+bob § robert
+zaza § isabelle
+doudou § dominique===
+
 before==
 
 var('x')
@@ -10,7 +18,7 @@ f=[sin(x),cos(x),x**2,x**3, log(x)/log(2), exp(x),127]
 gf=[ f"$!{latex(fi)}!$" for fi in f]
 df=[  f"$!{latex(diff(U,x))}!$" for U in f]
 
-pairs= [ TT for TT in zip(gf,df)]
+#pairs= [ TT for TT in zip(gf,df)]
 
 # Dans une version future les lignes suivantes ne seront plus nécessaires 
 if type(pairs)==list:
