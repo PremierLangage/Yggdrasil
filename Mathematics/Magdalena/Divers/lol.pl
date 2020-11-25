@@ -3,7 +3,14 @@ extends = /model/basic/vraifaux.pl
 title= Un exemple de proposition vraie ou fausse 
 
 text==
-Le cheval blanc de Henri V est il blanc ? 
+Le cheval **blanc** de *Henri V* est il blanc ? 
+
+$% \int f%$ 
+
+$! \frac{n}{m} !$ 
+
+aussi
+
 ==
 
 
@@ -24,4 +31,5 @@ general_feedback==
 
 Bien entendu c'est une question piège.
 ==
+
 
