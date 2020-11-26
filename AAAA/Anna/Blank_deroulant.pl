@@ -25,7 +25,4 @@ Johnny, Pour leatitia
 ==
 
 
-nbgood=2
-nbbad=3
-
 
