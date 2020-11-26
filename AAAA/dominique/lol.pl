@@ -3,6 +3,8 @@ extends = /model/basic/vraifaux.pl
 
 title= Un exemple de proposition vraie ou fausse $!\ln !$ 
 
+tag= demo
+
 text==
 Le cheval blanc de N'Henri V est il "blanc" ?   
 
@@ -16,6 +18,8 @@ $!\frac{n}{n+1}!$
 ==
 
 image =$ /AAAA/dominique/Lol_LOL.png
+
+
 
 answer=Non
 
