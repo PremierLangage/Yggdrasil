@@ -8,25 +8,25 @@ text==#|markdown|
 Compléter le code suivant pour que la fonction puisse être opérationnelle
 
 
-def factoriel(n):
+    def factoriel(n):
 
-    """
+        """
 
-    Calcule le factoriel de l'entier n
+        Calcule le factoriel de l'entier n
 
-    """
+        """
 
-    if n<0:
+        if n<0:
 
-        return None
+            return None
 
-    f=1
+        f=1
 
-    for i in <b>_____</b>:
+        for i in <b>_____</b>:
 
-        f*=i+1 
+            f*=i+1 
 
-    return f 
+        return f 
 
 
 == 
