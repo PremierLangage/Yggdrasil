@@ -6,6 +6,10 @@ Q3
 
 text==
 Compléter le code suivant pour que la fonction puisse être opérationnelle
+== 
+
+editor.code==
+
 def factoriel(n):
     """
     Calcule le factoriel de l'entier n
