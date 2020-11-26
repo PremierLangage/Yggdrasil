@@ -1,4 +1,4 @@
-extends = /demo/template/aleaQCM_template.pl
+extends = /demo/template/aleaQCM__template.pl
 
 title== 
 True or False ?
