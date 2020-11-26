@@ -10,7 +10,7 @@ Etant donnée une liste ``lst``, son histogramme est une liste ``histo`` de coup
 et ``n`` le nombre d'occurrences de ``x`` dans ``lst``. De plus, on demande que les couples ``(x, n)`` dans ``histo`` soient ordonnés par
 la première occurrence de ``x`` dans la liste originale ``lst``.
 
-Par exemple, l'histogramme de la liste ``['None', None, False, 42, None, False]`` est ``[('None', 3), (False, 2), (42, 1)]``.
+Par exemple, l'histogramme de la liste ``['None', 'None', False, 42, 'None', False]`` est ``[('None', 3), (False, 2), (42, 1)]``.
 
 Écrire une fonction ``histogramme(lst)`` qui retourne l'histogramme de la liste ``lst`` passée en paramètre. Vous pouvez utiliser la méthode ``index``.
 
@@ -81,6 +81,7 @@ pltest1==
 >>> l
 [1, 1, 2, 3, 3, 2, 1]
 ==
+
 
 
 
