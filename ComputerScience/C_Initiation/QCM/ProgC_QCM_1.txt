@@ -739,38 +739,6 @@ Quelles sont-elles ?
 + 11 lignes contenant chacune le caractère +
 - 10 lignes contenant chacune le caractère +
 
-*[nb=4,group=boucle_while] 57 ) Qu’affiche le programme suivant ?
-
-
-    int main(){
-
-        int n = 10, m = 0;
-
-        while(n >= 0 && m <= n){
-
-            if(n%2 == 0)
-
-                n = n/2;
-
-            else {
-
-                n = n-1; m = m+1;
-
-            }
-
-        }
-
-        printf("%d et %d\n", n, m);
-
-        return 0;
-
-    }
-
-+ 0 et 2
-- 5 et 6
-- 2 et 1
-- 1 et 1
-
 *[nb=4,group=boucle_do_while] 58 ) Qu’affiche le programme suivant ?
 
 
@@ -796,44 +764,6 @@ Quelles sont-elles ?
 - 4 et 6
 - 6 et 4
 - 5 et 4
-
-*[nb=4,group=boucle_for] 59 ) Qu’affiche le programme suivant ?
-
-
-    int main(){
-
-        int i;
-
-        int somme = 0;
-
-        for(i = 0; i < 10; i++){
-
-            if(i%2 != 0)
-
-                somme = somme + i;
-
-        }
-
-        printf("%d", somme);
-
-        return 0;
-
-    }
-
-+ 25
-- 45
-- 30
-- 20
-
-**[nb=6,group=en-tete-fonction] 60 ) On souhaite définir une fonction stockant deux entiers saisis par l’utilisateur. 
-Quelle sont les en-têtes possibles de cette fonction ?
-
-+ void saisirDeuxEntiers(int *n, int *m)
-- void saisirDeuxEntiers(int n, int m)
-+ int saisirDeuxEntiers(int *n, int *m)
-- int saisirDeuxEntiers(int n, int m)
-- int, int saisirDeuxEntiers(int *n, int *m)
-- int, int saisirDeuxEntiers(int n, int m)
 
 **[nb=6,group=appel_fonction] 61 ) On suppose que n et m sont deux variables de type int et que l’on se donne des fonctions
  dont les en-têtes sont `void f(int a, int *b)` et `int g(int c)`. 
