@@ -23,7 +23,7 @@ Compléter le code suivant pour que la fonction puisse être opérationnelle
 
         f=1
 
-        for i in <b>_____</b>:
+        for i in "<b>_____</b>":
 
             f*=i+1 
 
