@@ -1,7 +1,7 @@
 extends = /gift/templates/qshortset.pl
 
 title==
-Q3
+Gab Completing
 ==
 
 text==#|markdown|
