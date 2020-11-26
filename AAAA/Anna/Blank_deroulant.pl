@@ -1,4 +1,4 @@
-extends = /demo/template/blank_deroulant__template.pl
+extends = /demo/template/blank_deroulant_template.pl
 @/grader/evaluator.py [grader.py]
 @ /utils/sandboxio.py
 @ /builder/before.py [builder.py]
