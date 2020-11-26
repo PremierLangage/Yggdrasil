@@ -36,8 +36,7 @@ choices==
 == 
 
 doc == 
-Exo ouvert où la réponse est rentré par l'élève et le résultat immédiatement obtenus. On peut noter selon un interval 
-d'exactitude de la réponse. 
+Exo ouvert où la réponse est rentré par l'élève et le résultat immédiatement obtenus.  
 Après validation de la réponse : 
 ✓ -> réponse correcte 
 x -> réponse fausse
