@@ -5,7 +5,11 @@ doc==
     Nom du test | une ligne d'entrée 
     le caractère '|‘ séparant les deux parties (les espaces ne sont pas éliminés en debut ni en fin)
     ==
-# en suite vous devez fournir une balise soluce 
+# en suite vous devez fournir une balise 
+    soluce==
+    def unefunction():
+        dosomething
+    == 
 # contenant une solution de l'exercice 
 # dont les résultats seront comparés 
 # au résultats de l'élève
@@ -39,6 +43,7 @@ settings.requirements=title,text,soluce
 form=@ /python/form/editorform.html
 
 settings.allow_reroll=1
+
 
 
 
