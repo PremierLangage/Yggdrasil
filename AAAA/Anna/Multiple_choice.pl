@@ -5,14 +5,20 @@ Multiple Choice
 ==
 
 text==
-Parmi ces personnes, nommez-en deux qui sont enterrées dans la Grant's tomb.
+Parmi ces ingrédients, choisissez-en ceux qui permettent de réaliser des crêpes au chocolat.
 ==
 
 choices==
-%-100.0%Personne
-%50.0%Grant
-%50.0%L'épouse de Grant
-%-100.0%Le père de Grant
+%-100.0%Jambon
+%16.0%Oeuf
+%16.0%Sel
+%-100.0%Levure
+%20.0%Farine
+%-100.0%Tomate
+%-100.0%Viande
+%16.0%Lait
+%16.0%Chocolat
+%16.0%Sucre
 ==
 
 doc == 
