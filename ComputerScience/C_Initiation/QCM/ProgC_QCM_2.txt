@@ -2,86 +2,6 @@ Latex:1
 
 # Catalogue 1 Prog C Olivier BOUILLOT
 
-*[nb=4,group=erreur_de_syntaxe] 1 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. : 
-
-
-    #include <stdio.h>
-
-    int main(void){
-
-        printf("Hello, world!);
-
-        return 0
-
-    }
-
-Combien y en a t'il ?
-
-- 0
-- 1
-+ 2
-- 3
-
-*[nb=4,group=erreur_de_syntaxe] 2 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. : 
-
-
-    #include <stdio.h>
-
-    int main(void){
-
-        printf("Hello, world!");
-
-        return 0
-
-    }
-
-Combien y en a t'il ?
-
-- 0
-+ 1
-- 2
-- 3
-
-*[nb=4,group=erreur_de_syntaxe] 3 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. : 
-
-
-    #include <stdio.h>
-
-    int main(void){
-
-        printf("Hello, world!");
-
-        return 0;
-
-    }
-
-Combien y en a t'il ?
-
-+ 0
-- 1
-- 2
-- 3
-
-*[nb=4,group=erreur_de_syntaxe] 4 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. : 
-
-
-    include <stdio.h>
-
-    int main(void){
-
-        printf("Hello, world!");
-
-        return 0
-
-    }
-
-Combien y en a t'il ?
-
-- 0
-+ 1
-- 2
-- 3
-
 **[nb=5,group=separateur] 5 ) Quels sont les séparateurs dans un programme écrit en C ?
 
 + les espaces
@@ -97,21 +17,6 @@ Combien y en a t'il ?
 + ...aide à la lisibilité
 - ...peut remplacer les accolades
 - ...évite d'utiliser des ;
-
-*[nb=4,group=commentaire] 7 ) Comment doivent être écrits les commentaires en C pour passer la norme ansi ?
-
-- # ....
-- // .... //
-+ /* .....*/
-- <! ... >
-
-*[nb=5,group=passage_a_la_ligne] 8 ) Quel est le caractère permettant d'afficher un retour à la ligne en C ?
-
-+ \n
-- \t
-- \r
-- \c
-- ;
 
 *[nb=4,group=affichage_Sortie_Standard] 9 ) Quelle est l'instruction permettant d'afficher à l'écran une chaine de caractères en C ?
 
@@ -161,24 +66,6 @@ en un executable HelloWorld suivant toute(s) l(es) option(s) transmise(s) au com
 - gcc -Ansi -Wall HelloWorld.c -o HelloWorld
 - gcc -Ansi -wall HelloWorld.c -o HelloWorld
 + aucune de ces réponse
-
-**[nb=5,group=Warning_flottant] 14 ) On dispose de deux variables a et b. Dans quels cas,lors de l'exécution d'un 
-programme calcul.c, peut-on constater que a + b == a ?
-
-- Cela ne peut jamais arriver.
-+ Lorsque b est nul.
-- Lorsque a et b sont des entiers, cela arrive tout le temps.
-- Lorsque a et b sont des flottants, cela arrive tout le temps.
-- Aucune de ces réponses n'est correcte.
-
-**[nb=5,group=Warning_flottant] 15 ) On dispose de deux variables a et b. Dans quels cas,lors de l'exécution d'un 
-programme calcul.c, peut-on constater que a + b == a ?
-
-- Lorsque a et b sont des entiers, cela arrive tout le temps.
-- Lorsque a et b sont des flottants, cela arrive tout le temps.
-+ Lorsque a et b sont des entiers, cela peut arriver.
-+ Lorsque a et b sont des flottants, cela peut arriver.
-- Aucune de ces réponses n'est correcte.
 
 **[nb=5,group=Division] 16 ) Que vaut 3/2 en C ?
 
