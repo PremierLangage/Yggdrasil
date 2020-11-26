@@ -20,13 +20,13 @@ l'équipe.
 
 @ /ComputerScience/python/AP1-1920/chapters/3-iterables/listes/extends.pl
 
-@ /ComputerScience/python/AP1-1920/chapters/3-iterables/listes/ajoute_liste.pl
+@ ajoute_liste.pl
 
 @ createliste.pl
 
 @ doublons.pl
 
-@ /ComputerScience/python/AP1-1920/chapters/3-iterables/listes/repete.pl
+@ repetezip.pl
 
 #@ ajoute_multiple_3.pl # introuvable
 
@@ -34,13 +34,13 @@ l'équipe.
 
 @ supprime_pair.pl
 
-@ /ComputerScience/python/AP1-1920/chapters/3-iterables/listes/extends_list.pl
 
 # Exercices plus difficiles
 
 @ fibo.pl
 
 @ EntierGauss.pl
+
 
 
 
