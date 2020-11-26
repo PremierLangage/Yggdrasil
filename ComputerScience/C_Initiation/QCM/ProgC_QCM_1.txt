@@ -486,13 +486,6 @@ Quelles sont-elles ?
 
 # Catalogue 2 Prog C Olivier BOUILLOT sans les doublons du Catalogue 1
 
-**[nb=4,group=Changement_valeur_variable] 39 ) Comment peut-on changer la valeur d’une variable à l’aide d’une fonction ?
-
-+ En passant l’adresse de la variable en question en argument de la fonction.
-- En passant la variable en question en argument de la fonction.
-+ En passant la variable en question et en faisant un return de cette variable.
-- On ne peut pas faire cela en C.
-
 **[nb=5,group=Echange_de_variable] 40 ) Parmi les fonctions suivantes, quelles sont celles qui réalisent un échange des variables
  passées en paramètres ?
 
@@ -536,50 +529,6 @@ Quelles sont-elles ?
 - Fonction 3
 + Fonction 4
 - Fonction 5 
-
-**[nb=6,group=Declaration_de_variable] 41 ) Considérons le programme suivant :
-
-
-    /*01*/ #include <stdio.h>
-
-    /*02*/
-
-    /*03*/ void echange(int* a, int* b){
-
-    /*04*/    int tmp = *a;
-
-    /*05*/    *a = *b;
-
-    /*06*/    *b = tmp;
-
-    /*07*/ }
-
-    /*08*/
-
-    /*09*/ int main(void){
-
-    /*10*/    int a, b;
-
-    /*11*/    printf("Donnez moi deux entiers, svp : ");
-
-    /*12*/    scanf("%d%d", &a, &b);
-
-    /*13*/    printf("Avant l’appel de la fonction echange, a et b valent : %d et %d\n",a, b);
-
-    /*14*/    echange(&a, &b);
-
-    /*15*/    printf("Après l’appel de la fonction echange, a et b valent : %d et %d\n",a, b);
-
-    /*16*/ }
-
-Parmi les affirmations suivantes, lesquelles sont exactes ?
-
-- La fonction echange prend des entiers en paramètres
-+ La fonction echange prend des adresses en paramètres
-- La fonction scanf prend une chaine de caractères, puis une ou des variables de type int en paramètres
-+ La fonction scanf prend une chaine de caractères, puis des adresses en paramètres
-+ La ligne 14 ne provoque pas d’erreur de compilation.
-- La ligne 14 provoque une erreur de compilation.
 
 *[nb=5,group=Comprehension_de_code] 42 ) Quel est le rendu lors de l’exécution du programme suivant ?
 
