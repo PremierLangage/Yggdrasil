@@ -4,11 +4,10 @@ title==
 Q3
 ==
 
-text==
+text==#|markdown|
 Compléter le code suivant pour que la fonction puisse être opérationnelle
 
-
-editor.code==
+```{r}
 
 def factoriel(n):
     """
@@ -20,7 +19,8 @@ def factoriel(n):
     for i in <b>_____</b>:
         f*=i+1 
     return f 
-==
+    
+```
 
 == 
 
