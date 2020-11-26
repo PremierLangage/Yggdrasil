@@ -1,7 +1,7 @@
 extends = /demo/template/blank_deroulant_template.pl
 @/grader/evaluator.py [grader.py]
 @ /utils/sandboxio.py
-@ /builder/before.py [builder.py]
+@ /builder/none.py [builder.py]
 
 title== 
 QCM Aléatoire
@@ -23,6 +23,7 @@ Kribi,no
 
 nbgood=1
 nbbad=2
+
 
 
 
