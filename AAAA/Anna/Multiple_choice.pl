@@ -10,15 +10,12 @@ Parmi ces ingrédients, choisissez-en ceux qui permettent de réaliser des crêp
 
 choices==
 %-100.0%Jambon
-%16.0%Oeuf
-%16.0%Sel
+%25.0%Oeuf
 %-100.0%Levure
-%20.0%Farine
-%-100.0%Tomate
+%25.0%Farine
 %-100.0%Viande
-%16.0%Lait
-%16.0%Chocolat
-%16.0%Sucre
+%25.0%Chocolat
+%25.0%Sucre
 ==
 
 doc == 
