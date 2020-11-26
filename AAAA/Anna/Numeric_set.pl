@@ -18,5 +18,8 @@ choices==
 doc == 
 Exo ouvert où la réponse est rentré par l'élève et le résultat immédiatement obtenus. On peut noter selon un interval 
 d'exactitude de la réponse. 
+Après validation de la réponse : 
+✓ -> réponses correctes ou partiellement correctes
+x -> réponses complètement fausses
 ==
 
