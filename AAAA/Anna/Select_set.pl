@@ -5,14 +5,13 @@ Select Set
 ==
 
 text==
-Quelle couleur se trouve entre l'orange et le vert dans le spectre ?
+De quel savant est cette célèbre citation : "Rien ne se perd, rien ne se crée, tout se transforme"
 ==
 
 choices==
-=jaune #Bonne réponse; bravo !
-=vert #Bonne réponse; bravo !
-~rouge #Mauvaise réponse, c'est jaune.
-~bleu #Mauvaise réponse, c'est jaune.
+=Antoine Lavoisier #Bonne réponse; bravo !
+~Cheikh Anta Diop #Mauvaise réponse, c'est Antoine Lavoisier.
+~Aristote #Mauvaise réponse, c'est Antoine Lavoisier.
 ==
 
 
