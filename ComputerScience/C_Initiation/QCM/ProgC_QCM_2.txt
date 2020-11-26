@@ -1,0 +1,2946 @@
+Latex:1
+
+# Catalogue 1 Prog C Olivier BOUILLOT
+
+*[nb=4,group=erreur_de_syntaxe] 1 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. : 
+
+
+    #include <stdio.h>
+
+    int main(void){
+
+        printf("Hello, world!);
+
+        return 0
+
+    }
+
+Combien y en a t'il ?
+
+- 0
+- 1
++ 2
+- 3
+
+*[nb=4,group=erreur_de_syntaxe] 2 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. : 
+
+
+    #include <stdio.h>
+
+    int main(void){
+
+        printf("Hello, world!");
+
+        return 0
+
+    }
+
+Combien y en a t'il ?
+
+- 0
++ 1
+- 2
+- 3
+
+*[nb=4,group=erreur_de_syntaxe] 3 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. : 
+
+
+    #include <stdio.h>
+
+    int main(void){
+
+        printf("Hello, world!");
+
+        return 0;
+
+    }
+
+Combien y en a t'il ?
+
++ 0
+- 1
+- 2
+- 3
+
+*[nb=4,group=erreur_de_syntaxe] 4 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. : 
+
+
+    include <stdio.h>
+
+    int main(void){
+
+        printf("Hello, world!");
+
+        return 0
+
+    }
+
+Combien y en a t'il ?
+
+- 0
++ 1
+- 2
+- 3
+
+**[nb=5,group=separateur] 5 ) Quels sont les séparateurs dans un programme écrit en C ?
+
++ les espaces
++ les tabulations
++ les retours à la ligne
+- les virgules
+- les points virgules 
+
+**[nb=5,group=indentation] 6 ) L'indentation d'un programme C ...
+
+- ...permet au compilateur de reconnaitre les blocs
+- ...est nécessaire pour l'éditeur de texte
++ ...aide à la lisibilité
+- ...peut remplacer les accolades
+- ...évite d'utiliser des ;
+
+*[nb=4,group=commentaire] 7 ) Comment doivent être écrits les commentaires en C pour passer la norme ansi ?
+
+- # ....
+- // .... //
++ /* .....*/
+- <! ... >
+
+*[nb=5,group=passage_a_la_ligne] 8 ) Quel est le caractère permettant d'afficher un retour à la ligne en C ?
+
++ \n
+- \t
+- \r
+- \c
+- ;
+
+*[nb=4,group=affichage_Sortie_Standard] 9 ) Quelle est l'instruction permettant d'afficher à l'écran une chaine de caractères en C ?
+
+- print
+- scanf
+- println
++ printf
+
+*[nb=3,group=utilite_points_virgules] 10 ) A quoi servent les points virgules en C ?
+
+- À différencier du premier coup d'oeil un code écris en C et en Python
++ À indiquer au compilateur la fin d'une instruction simple 
+- À indiquer au compilateur qu'il va lui falloir lire une nouvelle ligne
+
+**[nb=8,group=Compilation] 11 ) Quelle(s) ligne(s) de commande permet(tent) de compiler le programme HelloWorld.c
+en un executable HelloWorld suivant toute(s) l(es) option(s) transmise(s) au compilateur ?
+
++ gcc HelloWorld.c -o HelloWorld
++ gcc -ansi HelloWorld.c -o HelloWorld
+- gcc -Ansi HelloWorld.c HelloWorld
+- gcc -Ansi HelloWorld.c -o HelloWorld
+- gcc -ansi -Wall HelloWorld.c HelloWorld
++ gcc -ansi -Wall HelloWorld.c -o HelloWorld
+- gcc -ansi -wall HelloWorld.c HelloWorld 
+- aucune de ces réponses
+
+**[nb=8,group=Compilation] 12 ) Quelle(s) ligne(s) de commande permet(tent) de compiler le programme HelloWorld.c
+en un executable HelloWorld suivant toute(s) l(es) option(s) transmise(s) au compilateur ?
+
+- gcc HelloWorld.c HelloWorld
++ gcc HelloWorld.c -o HelloWorld
+- gcc -Ansi HelloWorld.c -o HelloWorld
+- gcc -ansi -Wall HelloWorld.c HelloWorld
+- gcc -ansi -wall HelloWorld.c -o HelloWorld
+- gcc -Ansi -Wall HelloWorld.c HelloWorld
+- gcc -Ansi -wall HelloWorld.c -o HelloWorld
+- aucune de ces réponses
+
+**[nb=8,group=Compilation] 13 ) Quelle(s) ligne(s) de commande permet(tent) de compiler le programme HelloWorld.c
+en un executable HelloWorld suivant toute(s) l(es) option(s) transmise(s) au compilateur ?
+
+- gcc HelloWorld.c HelloWorld
+- gcc -ansi HelloWorld.c HelloWorld
+- gcc -Ansi HelloWorld.c HelloWorld
+- gcc -Ansi HelloWorld.c -o HelloWorld
+- gcc -ansi -wall HelloWorld.c -o HelloWorld
+- gcc -Ansi -Wall HelloWorld.c -o HelloWorld
+- gcc -Ansi -wall HelloWorld.c -o HelloWorld
++ aucune de ces réponse
+
+**[nb=5,group=Warning_flottant] 14 ) On dispose de deux variables a et b. Dans quels cas,lors de l'exécution d'un 
+programme calcul.c, peut-on constater que a + b == a ?
+
+- Cela ne peut jamais arriver.
++ Lorsque b est nul.
+- Lorsque a et b sont des entiers, cela arrive tout le temps.
+- Lorsque a et b sont des flottants, cela arrive tout le temps.
+- Aucune de ces réponses n'est correcte.
+
+**[nb=5,group=Warning_flottant] 15 ) On dispose de deux variables a et b. Dans quels cas,lors de l'exécution d'un 
+programme calcul.c, peut-on constater que a + b == a ?
+
+- Lorsque a et b sont des entiers, cela arrive tout le temps.
+- Lorsque a et b sont des flottants, cela arrive tout le temps.
++ Lorsque a et b sont des entiers, cela peut arriver.
++ Lorsque a et b sont des flottants, cela peut arriver.
+- Aucune de ces réponses n'est correcte.
+
+**[nb=5,group=Division] 16 ) Que vaut 3/2 en C ?
+
++ 1
+- 1.
+- 1.5
+- 1.0
+- On ne sait pas
+
+**[nb=5,group=Division] 17 ) Que vaut 3./2 en C ?
+
+- 1
+- 1.
++ 1.5
+- 1.0
+- On ne sait pas
+
+**[nb=5,group=Division] 18 ) Que vaut 3/2. en C ?
+
+- 1
+- 1.
++ 1.5
+- 1.0
+- On ne sait pas
+
+**[nb=5,group=Division] 19 ) On considère les instructions suivantes :
+
+
+    x = 3;
+
+    y = 2;
+
+Que vaut x/y ?
+
+- 1
+- 1.
+- 1.5
+- 1.0
++ On ne sait pas
+
+*[nb=5,group=adresse] 20 ) Comment récupère t-on l'adresse d'une variable x ?
+
+- x
++ &x
+- !x
+- %x
+- *x
+
+**[nb=6,group=Sans_Effet_de_bords] 21 ) Parmi le code suivant, un certain nombre d'instructions ne modifient pas les 
+variables locales du programme.
+
+
+    /*1*/ #include <stdio.h>
+
+    /*2*/
+
+    /*3*/ int main(void){
+
+    /*4*/   int a = 2, b = 3;
+
+    /*5*/   int somme;
+
+    /*6*/   float moyenne;
+
+    /*7*/   somme = a + b;
+
+    /*8*/   printf("La somme vaut %f", a + b);
+
+    /*9*/   moyenne = (a + b) / 2.;
+
+    /*10*/  a + b;
+
+    /*11*/  printf("La moyenne vaut %f", moyenne);
+
+    /*12*/ }
+
+Quelles sont-elles ?
+
+- 1
+- 7
++ 8
++ 10
++ 11
+- Aucune des ces lignes
+
+**[nb=6,group=Sans_Effet_de_bords] 22 ) Parmi le code suivant, un certain nombre d'instructions ne modifient pas les 
+variables locales du programme.
+
+
+    /*1*/ #include <stdio.h>
+
+    /*2*/
+
+    /*3*/ int main(void){
+
+    /*4*/   int a = 2, b = 3;
+
+    /*5*/   int somme;
+
+    /*6*/   float moyenne;
+
+    /*7*/   (a + b) / 2.;
+
+    /*8*/   somme = a + b;
+
+    /*9*/   printf("La somme vaut %f", a + b);
+
+    /*10*/  moyenne = (a + b) / 2.;
+
+    /*11*/  printf("La moyenne vaut %f", moyenne);
+
+    /*12*/ }
+
+Quelles sont-elles ?
+
+- 1
++ 7
++ 9
+- 10
++ 11
+- Aucune des ces lignes
+
+**[nb=6,group=Sans_Effet_de_bords] 23 ) Parmi le code suivant, un certain nombre d'instructions ne modifient pas les 
+variables locales du programme.
+
+
+    /*1*/ #include <stdio.h>
+
+    /*2*/
+
+    /*3*/ int main(void){
+
+    /*4*/   int a = 2, b = 3;
+
+    /*5*/   int somme;
+
+    /*6*/   float moyenne;
+
+    /*7*/   somme = a + b;
+
+    /*8*/   printf("La somme vaut %f", a + b);
+
+    /*9*/   moyenne = (a + b) / 2.;
+
+    /*10*/  printf("La moyenne vaut %f", moyenne);
+
+    /*11*/ }
+
+Quelles sont-elles ?
+
+- 7
++ 8
++ 10
+- 1
+- Aucune des ces lignes
+- 11
+
+**[nb=5,group=Sans_Effet_de_bords] 24 ) Parmi le code suivant, un certain nombre d'instructions ne modifient pas les 
+variables locales du programme.
+
+
+    /*1*/ #include <stdio.h>
+
+    /*2*/
+
+    /*3*/ int main(void){
+
+    /*4*/   int a = 2, b = 3;
+
+    /*5*/   int somme;
+
+    /*6*/   float moyenne;
+
+    /*7*/   (a + b) / 2.;
+
+    /*8*/   somme = a + b;
+
+    /*9*/   printf("La somme vaut %f", a + b);
+
+    /*10*/  moyenne = (a + b) / 2.;
+
+    /*11*/  a + b;
+
+    /*12*/  printf("La moyenne vaut %f", moyenne);
+
+    /*13*/ }
+
+Quelles sont-elles ?
+
++ 7
+- 10
+- 1
+- Aucune des ces lignes
++ 11
+
+**[nb=6,group=Compilation_2] 25 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
+la compilation. Lesquelles ?
+
+
+    /*1*/ #include <stdio.h>
+
+    /*2*/
+
+    /*3*/ int main(void){
+
+    /*4*/   int a;
+
+    /*5*/   printf("Donnez moi un entier : ");
+
+    /*6*/   scanf("%d", &a);
+
+    /*7*/   print("Son carré vaut %d",a * a);
+
+    /*8*/ }
+
+Quelles sont-elles ?
+
+- 4
+- 5
+- 6
++ 7
+- 8
+- Aucune ne provoque d'erreur ou de warning
+
+**[nb=6,group=Compilation_2] 26 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
+la compilation. Lesquelles ?
+
+
+    /*1*/ #include <stdio.h>
+
+    /*2*/
+
+    /*3*/ int main(void){
+
+    /*4*/   int a;
+
+    /*5*/   printf("Donnez moi un entier : ");
+
+    /*6*/   scanf("%d", a);
+
+    /*7*/   print("Son carré vaut %d",a * a);
+
+    /*8*/ }
+
+Quelles sont-elles ?
+
+- 4
+- 5
++ 6
++ 7
+- 8
+- Aucune ne provoque d'erreur ou de warning
+
+**[nb=6,group=Compilation_2] 27 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
+la compilation. Lesquelles ?
+
+
+    /*1*/ #include <stdio.h>
+
+    /*2*/
+
+    /*3*/ int main(void){
+
+    /*4*/   int a
+
+    /*5*/   printf("Donnez moi un entier : ");
+
+    /*6*/   scanf("%d", &a);
+
+    /*7*/   print("Son carré vaut %d",a * a);
+
+    /*8*/ }
+
+Quelles sont-elles ?
+
++ 4
+- 5
+- 6
++ 7
+- 8
+- Aucune ne provoque d'erreur ou de warning
+
+**[nb=6,group=Compilation_2] 28 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
+la compilation. Lesquelles ?
+
+
+    /*1*/ #include <stdio.h>
+
+    /*2*/
+
+    /*3*/ int main(void){
+
+    /*4*/   int a;
+
+    /*5*/   print("Donnez moi un entier : ");
+
+    /*6*/   scanf("%d", a);
+
+    /*7*/   printf("Son carré vaut %d",a * a);
+
+    /*8*/ }
+
+Quelles sont-elles ?
+
+- 4
++ 5
++ 6
+- 7
+- 8
+- Aucune ne provoque d'erreur ou de warning
+
+**[nb=6,group=Compilation_2]  29 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
+la compilation. Lesquelles ?
+
+
+    /*1*/ #include <stdio.h>
+
+    /*2*/
+
+    /*3*/ int main(void){
+
+    /*4*/   int a;
+
+    /*5*/   print("Donnez moi un entier : ");
+
+    /*6*/   scanf("%d", &a);
+
+    /*7*/   printf("Son carré vaut %f",a * a);
+
+    /*8*/ }
+
+Quelles sont-elles ?
+
+- 4
++ 5
+- 6
++ 7
+- 8
+- Aucune ne provoque d'erreur ou de warning
+
+**[nb=6,group=Compilation_2]  29bis ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
+la compilation. Lesquelles ?
+
+
+    /*1*/ #include <stdio.h>
+
+    /*2*/
+
+    /*3*/ int main(void){
+
+    /*4*/   float a;
+
+    /*5*/   printf("Donnez moi un entier : ");
+
+    /*6*/   scanf("%f", &a);
+
+    /*7*/   printf("Son carré vaut %f",a * a);
+
+    /*8*/ }
+
+Quelles sont-elles ?
+
+- 4
++ 5
+- 6
++ 7
+- 8
+- Aucune ne provoque d'erreur ou de warning
+
+**[nb=4,group=Resultat_code]  30 ) Qu'affiche la compilation **et/ou** l'exécution du programme suivant ?
+
+
+     #include <stdio.h>
+
+     int main(void){
+
+        int j;
+
+        float z;
+
+        j = 5;
+
+        z = j / 2;
+
+        printf("%f \n", z);
+
+        return 0;
+
+     }
+
++ 2.0
+- 2
+- 2.5
+- Une erreur ou un warning
+
+**[nb=4,group=Resultat_code] 31 ) Qu'affiche la compilation **et/ou** l'exécution du programme suivant ?
+
+
+     #include <stdio.h>
+
+     int main(void){
+
+        int j;
+
+        int z;
+
+        j = 5;
+
+        z = j / 2;
+
+        printf("%f \n", z);
+
+        return 0;
+
+     }
+
+- 2.0
+- 2
+- 2.5
++ Une erreur ou un warning
+
+**[nb=4,group=Resultat_code] 32 ) Qu'affiche la compilation **et/ou** l'exécution du programme suivant ?
+
+
+     #include <stdio.h>
+
+     int main(void){
+
+        float j;
+
+        float z;
+
+        j = 5;
+
+        z = j / 2;
+
+        printf("%f \n", z);
+
+        return 0;
+
+     }
+
+- 2.0
+- 2
++ 2.5
+- Une erreur ou un warning
+
+**[nb=5,group=Resultat_code] 33 ) Qu'affiche la compilation **et/ou** l'exécution du programme suivant ?
+
+
+     #include <stdio.h>
+
+     int main(void){
+
+        float j;
+
+        int z;
+
+        j = 5;
+
+        z = j / 2;
+
+        printf("%f \n", z);
+
+        return 0;
+
+     }
+
++ 0.0
+- 2.0
+- 2
+- 2.5
++ Une erreur ou un warning
+
+*[nb=6,group=Resultat_code_If] 34 ) Qu'affiche le programme suivant si l'utilisateur entre 3 et 42 ?
+
+
+     #include <stdio.h>
+
+     int main(void){
+
+        int a,b;
+
+        printf("entrez deux entiers : ");
+
+        scanf("%d %d", &a, &b);
+
+        if (a<b)
+
+            if (b%2==0)
+
+                printf("toto");
+
+            else
+
+                printf("titi");
+
+        else
+
+            printf("tutu");
+
+        printf("\n");
+
+     }
+
++ toto
+- titi
+- tutu
+- tototutu
+- tititutu
+- une ligne vide
+
+*[nb=6,group=Resultat_code_If] 35 ) Qu'affiche le programme suivant si l'utilisateur entre 18 et 4 ?
+
+
+     #include <stdio.h>
+
+     int main(void){
+
+        int a,b;
+
+        printf("entrez deux entiers : ");
+
+        scanf("%d %d", &a, &b);
+
+        if (a<b)
+
+            if (b%2==0) {
+
+                printf("toto");
+
+                printf("titi");
+
+            }
+
+            else
+
+                printf("tutu");
+
+        printf("\n");
+
+     }
+
+- toto
+- titi
+- tutu
+- tototutu
+- tititutu
++ une ligne vide
+
+*[nb=6,group=Resultat_code_If] 36 ) Qu'affiche le programme suivant si l'utilisateur entre 14 et 6 ?
+
+
+     #include <stdio.h>
+
+     int main(void){
+
+        int a,b;
+
+        printf("entrez deux entiers : ");
+
+        scanf("%d %d", &a, &b);
+
+        if (a<b) {
+
+            if (b%2==0)
+
+                printf("toto");
+
+        } else
+
+            printf("titi");
+
+        printf("tutu");
+
+        printf("\n");
+        
+     }
+
+- toto
+- titi
+- tutu
+- tototutu
++ tititutu
+- une ligne vide
+
+*[nb=6,group=Resultat_code_If] 37 ) Qu'affiche le programme suivant si l'utilisateur entre 3 et 42 ?
+
+
+     #include <stdio.h>
+
+     int main(void){
+
+        int a,b;
+
+        printf("entrez deux entiers : ");
+
+        scanf("%d %d", &a, &b);
+
+        if (a<b) {
+
+            if (b%2==0)
+
+                printf("toto");
+
+        } else
+
+            printf("titi");
+
+        printf("tutu");
+
+        printf("\n");
+        
+     }
+
+- toto
+- titi
+- tutu
++ tototutu
+- tititutu
+- une ligne vide
+
+# Catalogue 2 Prog C Olivier BOUILLOT sans les doublons du Catalogue 1
+
+**[nb=4,group=Changement_valeur_variable] 39 ) Comment peut-on changer la valeur d’une variable à l’aide d’une fonction ?
+
++ En passant l’adresse de la variable en question en argument de la fonction.
+- En passant la variable en question en argument de la fonction.
++ En passant la variable en question et en faisant un return de cette variable.
+- On ne peut pas faire cela en C.
+
+**[nb=5,group=Echange_de_variable] 40 ) Parmi les fonctions suivantes, quelles sont celles qui réalisent un échange des variables
+ passées en paramètres ?
+
+
+     /* Fonction 1 */                       /* Fonction 2 */
+
+     void echange(int* a, int* b){          void echange(int a, int b){
+
+        int tmp = *a;                          int tmp = a;
+
+         *a = *b;                              a = b;
+
+         *b = tmp;}                            b = tmp;}
+
+
+     /* Fonction 3 */                       /* Fonction 4 */
+
+     void echange(int* a, int* b){          void echange(int* a, int* b){
+
+         int tmp = &a;                         int* tmp;
+
+         &a = &b;                              *tmp = a;
+
+         &b = tmp;}                            *a = *b;
+
+                                               *b = *tmp;} 
+
+
+                        /* Fonction 5 */
+
+                        void echange(int* a, int* b){
+
+                            int* tmp = &a;
+
+                            &a = &b;
+
+                            &b = &tmp;}
+
++ Fonction 1
+- Fonction 2
+- Fonction 3
++ Fonction 4
+- Fonction 5 
+
+**[nb=6,group=Declaration_de_variable] 41 ) Considérons le programme suivant :
+
+
+    /*01*/ #include <stdio.h>
+
+    /*02*/
+
+    /*03*/ void echange(int* a, int* b){
+
+    /*04*/    int tmp = *a;
+
+    /*05*/    *a = *b;
+
+    /*06*/    *b = tmp;
+
+    /*07*/ }
+
+    /*08*/
+
+    /*09*/ int main(void){
+
+    /*10*/    int a, b;
+
+    /*11*/    printf("Donnez moi deux entiers, svp : ");
+
+    /*12*/    scanf("%d%d", &a, &b);
+
+    /*13*/    printf("Avant l’appel de la fonction echange, a et b valent : %d et %d\n",a, b);
+
+    /*14*/    echange(&a, &b);
+
+    /*15*/    printf("Après l’appel de la fonction echange, a et b valent : %d et %d\n",a, b);
+
+    /*16*/ }
+
+Parmi les affirmations suivantes, lesquelles sont exactes ?
+
+- La fonction echange prend des entiers en paramètres
++ La fonction echange prend des adresses en paramètres
+- La fonction scanf prend une chaine de caractères, puis une ou des variables de type int en paramètres
++ La fonction scanf prend une chaine de caractères, puis des adresses en paramètres
++ La ligne 14 ne provoque pas d’erreur de compilation.
+- La ligne 14 provoque une erreur de compilation.
+
+*[nb=5,group=Comprehension_de_code] 42 ) Quel est le rendu lors de l’exécution du programme suivant ?
+
+
+     #include <stdio.h>
+
+     int main(void){
+
+         int i;
+
+         int n = 5;
+
+         for(i =0; i < n ; i = i + 1){
+
+             printf("%d\t", i);
+
+             if (i % 2 == 0)
+
+                printf("\n %d", i);
+
+         }
+
+     }
+
+     Proposition 1 :             Proposition 2 :             Proposition 3 : 
+
+        0  1  2  3  4               0                           0       0
+
+        0  2  4                     0  1  2                     1  2    2
+
+                                    2  3  4                         3  4
+
+                                    4  5
+
+
+                 Proposition 4 :             Propositon 5 : 
+
+                    0                           0  0
+
+                        01      2                  1  2  2
+
+                        23      4               3  4  4
+
+                        4
+
+- Proposition 1
+- Proposition 2
+- Proposition 3
++ Proposition 4
+- Proposition 5
+
+*[nb=6,group=Comprehension_de_code] 43 ) Quel est le rendu lors de l’exécution du programme suivant ?
+
+
+    #include <stdio.h>
+
+    int main(void){
+
+        int i;
+
+        int n = 5;
+
+        for (i = 0; i < n/2; i=i+1) {
+
+            if (i * i > n)
+
+                printf("%d ", i);
+
+        }
+
+    }
+
++ Le programme n’affiche rien
+- 2
+- 1  2 
+- 0  1  2
+- 0  1
+- 1
+
+*[nb=6,group=Comprehension_de_code] 44 ) Quel est le rendu lors de l’exécution du programme suivant ?
+
+
+    #include <stdio.h>
+
+    int main(void){
+
+        int i;
+
+        int n = 5;
+
+        for (i = 0; i < n/2; i=i+1) {
+
+            if (i * i <= n)
+
+                printf("%d ", i);
+
+        }
+
+    }
+
+- Le programme n’affiche rien
+- 2
+- 1  2 
+- 0  1  2
++ 0  1
+- 1
+
+*[nb=6,group=Comprehension_de_code] 45 ) Quel est le rendu lors de l’exécution du programme suivant ?
+
+
+    #include <stdio.h>
+
+    int main(void){
+
+        int i;
+
+        int n = 4;
+
+        for (i = 0; i < n/2; i=i+1) {
+
+            if (i * i >= n)
+
+                printf("%d ", i);
+
+        }
+
+    }
+
++ Le programme n’affiche rien
+- 2
+- 1  2 
+- 0  1  2
+- 0  1
+- 1
+
+*[nb=4,group=erreur_de_syntaxe] 46 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. Combien ?
+
+
+    #include <stdio.h>
+
+    int main(void){
+
+        int i;
+
+        for (i = 0; i < 3; i=i+1)
+
+            printf("%d"; i);
+
+        return 0 
+
+    }
+
+Combien y en a t-il ?
+
+- 0
+- 1
++ 2
+- 3
+
+*[nb=4,group=erreur_de_syntaxe] 47 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. Combien ?
+
+
+    #include <stdio.h>
+
+    int main(void){
+
+        int i;
+
+        for (i = 0; i == 3; i=+1)
+
+            printf("%d", i);
+
+        return 0 
+
+    }
+
+- 0
+- 1
++ 2
+- 3
+
+*[nb=4,group=erreur_de_syntaxe] 47 Bis ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. Combien ?
+
+
+    #include <stdio.h>
+
+    int main(void){
+
+        int i,
+
+        for (i = 0; i == 3; i=1+i)
+
+            printf("%d", i);
+
+        return 0; 
+
+    }
+
+- 0
++ 1
+- 2
+- 3
+
+*[nb=4,group=erreur_de_syntaxe] 48 ) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. Combien ?
+
+
+    #include <stdio.h>
+
+    int main(void){
+
+        int i=10;
+
+        for (i = 0; i == 3; i+=1)
+
+            printf(i);
+
+        return 0 
+
+    }
+
+- 0
++ 1
+- 2
+- 3
+
+*[nb=4,group=erreur_de_syntaxe] 48 Bis) Le fichier.c suivant contient potentiellement des erreurs de syntaxes. Combien ?
+
+
+    #include <stdio.h>
+
+    int main(void){
+
+        int i=10;
+
+        for (i = 0; i == 3, i+=1)
+
+            printf(i);
+
+        return 0; 
+
+    }
+
+- 0
++ 1
+- 2
+- 3
+
+**[nb=4,group=for] 49 ) La parenthèse suivant un for
+
++ contient obligatoirement et exactement 2 points virgules (;)
+- peut-être laissée vide
+- contient obligatoirement et exactement 3 points virgules (;)
++ peut contenir des expressions vides
+
+*[nb=4,group=for] 50 ) La condition d'une boucle for est
+
+- testée juste après l’exécution du bloc
+- toujours testée juste après l’évaluation de l’expression d’incrémentation
++ testée juste avant l’exécution du bloc
+- toujours testée une seule fois
+
+**[nb=4,group=boucle_infinie] 51 ) On peut écrire une boucle infinie avec :
+
++ une boucle for
++ une boucle while
++ une boucle do while
+- impossible en C
+
+*[nb=3,group=condition] 52 ) Le bloc d’une boucle while est exécutée lorsque la condition est ...
+
++ ... vraie
+- ... fausse
+- ... évaluée pour la deuxième fois
+
+*[nb=3,group=condition] 52bis ) Le bloc d’une boucle `do while` est exécutée au moins une fois lorsque la condition est ...
+
++ ... vraie
++ ... fausse
+- ... évaluée pour la deuxième fois
+
+*[nb=4,group=break_dans_un_switch] 53 ) A quoi sert un break dans un switch ?
+
+- à sortir du programme
+- à passer au test suivant
++ à sortir du switch
+- à décider du vainqueur
+
+*[nb=6,group=resultatboucle] 54 ) Qu’affiche le programme suivant ?
+
+
+    #include <stdio.h>
+
+    int main(void){
+
+        int a = 2;
+
+        for (a = 0; a < 10; a+=1)
+
+            printf("+");
+
+        printf("\n");
+
+        return 0;
+
+    }
+
+- 9 fois le caractère + sur une seule ligne
+- rien
+- 11 fois le caractère + sur une seule ligne
++ 10 fois le caractère + sur une seule ligne
+- 11 lignes contenant chacune le caractère +
+- 10 lignes contenant chacune le caractère +
+
+*[nb=6,group=resultatboucle] 55 ) Qu’affiche le programme suivant ?
+
+
+    #include <stdio.h>
+
+    int main(void){
+
+        int a = 2;
+
+        for (a = 0; a < 10; a+=1){
+
+            printf("+");
+
+            printf("\n");
+
+        }
+
+        return 0;
+
+    }
+
+- 9 fois le caractère + sur une seule ligne
+- rien
+- 11 fois le caractère + sur une seule ligne
+- 10 fois le caractère + sur une seule ligne
+- 11 lignes contenant chacune le caractère +
++ 10 lignes contenant chacune le caractère +
+
+*[nb=6,group=resultatboucle] 56 ) Qu’affiche le programme suivant ?
+
+
+    #include <stdio.h>
+
+    int main(void){
+
+        int a = 2;
+
+        for (a = 0; a < 5; a+=1)
+
+            printf("+\n+\n");
+
+        printf("+\n");
+
+        return 0; 
+
+    }
+
+- 8 fois le caractère + sur une seule ligne
+- rien
+- 10 fois le caractère + sur une seule ligne
+- 11 fois le caractère + sur une seule ligne
++ 11 lignes contenant chacune le caractère +
+- 10 lignes contenant chacune le caractère +
+
+*[nb=4,group=boucle_while] 57 ) Qu’affiche le programme suivant ?
+
+
+    int main(){
+
+        int n = 10, m = 0;
+
+        while(n >= 0 && m <= n){
+
+            if(n%2 == 0)
+
+                n = n/2;
+
+            else {
+
+                n = n-1; m = m+1;
+
+            }
+
+        }
+
+        printf("%d et %d\n", n, m);
+
+        return 0;
+
+    }
+
++ 0 et 2
+- 5 et 6
+- 2 et 1
+- 1 et 1
+
+*[nb=4,group=boucle_do_while] 58 ) Qu’affiche le programme suivant ?
+
+
+    int main(){
+
+        int n = 10, m = 0;
+
+        do{
+
+            m = m+1;
+
+            n = n-1;
+
+        }while(m < n);
+
+        printf("%d et %d\n", n, m);
+
+        return 0;
+
+    }
+
++ 5 et 5
+- 4 et 6
+- 6 et 4
+- 5 et 4
+
+*[nb=4,group=boucle_for] 59 ) Qu’affiche le programme suivant ?
+
+
+    int main(){
+
+        int i;
+
+        int somme = 0;
+
+        for(i = 0; i < 10; i++){
+
+            if(i%2 != 0)
+
+                somme = somme + i;
+
+        }
+
+        printf("%d", somme);
+
+        return 0;
+
+    }
+
++ 25
+- 45
+- 30
+- 20
+
+**[nb=6,group=en-tete-fonction] 60 ) On souhaite définir une fonction stockant deux entiers saisis par l’utilisateur. 
+Quelle sont les en-têtes possibles de cette fonction ?
+
++ void saisirDeuxEntiers(int *n, int *m)
+- void saisirDeuxEntiers(int n, int m)
++ int saisirDeuxEntiers(int *n, int *m)
+- int saisirDeuxEntiers(int n, int m)
+- int, int saisirDeuxEntiers(int *n, int *m)
+- int, int saisirDeuxEntiers(int n, int m)
+
+**[nb=6,group=appel_fonction] 61 ) On suppose que n et m sont deux variables de type int et que l’on se donne des fonctions
+ dont les en-têtes sont `void f(int a, int *b)` et `int g(int c)`. 
+ Parmi les instructions suivantes, lesquelles sont correctes ?
+
+- n = f(0, m)
++ f(n, &m)
++ f(g(n), &m)
+- n+m = g(m)
+- f(&n, m)
+- f(n, *m)
+
+# Catalogue 3 Prog C Olivier BOUILLOT
+
+**[nb=8,group=Erreurs1] 62 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs ou de warning à la compilation 
+(option de compilation -Wall et -ansi).
+
+
+    #include <stdio.h>
+
+    int main(void) {
+
+        int n;
+
+        for (i = 0; i < n; i += 1) {
+
+            printf("Donnez moi un entier : ");
+
+            scanf("%d", n)
+
+            printf("Vous avez tapé : %d\n", n);
+
+        } 
+
+    }
+
+Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur renvoie ?
+
++ error: use of undeclared identifier ’i’
++ warning: format specifies type ’int *’ but the argument has type ’int’
+- warning: format specifies type ’double’ but the argument has type ’int’ 
+- error: extraneous closing brace (’}’)
+- error: expected ’}’
+- warning: variable ’n’ is uninitialized when used here
++ error: expected ’;’ after expression
+- Aucune erreur ou warning n’est générée à la compilation
+
+**[nb=8,group=Erreurs1] 63 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs ou de warning à la compilation
+(option de compilation -Wall et -ansi).
+
+
+    #include <stdio.h>
+
+    int main(void) {
+
+        int n = 3;
+
+        int i;
+
+        for (i = 0; i < n; i += 1) {
+
+            printf("Donnez moi un entier : ");
+
+            scanf("%f", &n);
+
+            printf("Vous avez tapé : %d\n", n)
+
+        } 
+
+    }
+
+Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur renvoie ?
+
+- error: use of undeclared identifier ’i’
+- warning: format specifies type ’int *’ but the argument has type ’int’
++ warning: format specifies type ’float *’ but the argument has type ’int *’ 
+- error: extraneous closing brace (’}’)
+- error: expected ’}’
+- warning: variable ’n’ is uninitialized when used here
++ error: expected ’;’ after expression
+- Aucune erreur ou warning n’est générée à la compilation
+
+**[nb=8,group=Erreurs1] 64 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs ou de warning à la compilation
+(option de compilation -Wall et -ansi).
+
+
+    #include <stdio.h>
+
+    int main(void) {
+
+        int n = 3;
+
+        for (i = 0; i < n; i += 1) {
+
+            printf("Donnez moi un entier : ")
+
+            scanf("%d", &n);
+
+            printf("Vous avez tapé : %d\n", n);
+
+    }
+
+Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur renvoie ?
+
++ error: use of undeclared identifier ’i’
+- warning: format specifies type ’int *’ but the argument has type ’int’
+- warning: format specifies type ’double’ but the argument has type ’int’
+- error: extraneous closing brace (’}’)
++ error: expected ’}’
+- warning: variable ’n’ is uninitialized when used here
++ error: expected ’;’ after expression
+- Aucune erreur ou warning n’est générée à la compilation
+
+**[nb=8,group=Erreurs1] 65 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs ou de warning à la compilation
+(option de compilation -Wall et -ansi).
+
+
+    #include <stdio.h>
+
+    int main(void) {
+
+        int n;
+
+        int i = 2;
+
+        for (i = 0; i < n; i += 1) {
+
+            printf("Donnez moi un entier : ");
+
+            scanf("%d", &n);
+
+            printf("Vous avez tapé : %d\n", n);
+
+        } 
+
+    }
+
+Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur renvoie ?
+
+- error: use of undeclared identifier ’i’
+- warning: format specifies type ’int *’ but the argument has type ’int’ 
+- warning: format specifies type ’double’ but the argument has type ’int’ 
+- error: extraneous closing brace (’}’)
+- error: expected ’}’
++ warning: variable ’n’ is uninitialized when used here
+- error: expected ’;’ after expression
+- Aucune erreur ou warning n’est générée à la compilation
+
+**[nb=9,group=Erreurs2] 66 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs ou de warning à la compilation
+(option de compilation -Wall et -ansi).
+
+
+    #include <stdio.h>
+
+    int main(void) {
+
+        int n;
+
+        printf("Donnez moi un entier : ");
+
+        scanf("%d", &n);
+
+        if n > 0
+
+            printf("Positif !\n");
+
+        else {
+
+            if n = 0
+
+                printf("Nul !\n");
+
+            else
+
+               printf("Négatif !\n");
+
+        } 
+
+    }
+
+Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur renvoie ?
+
+- warning:  using the result of an assignment as a condition without parentheses
+- warning: implicitly declaring library function ’printf’ with type ’int (const char *, ...)’
+- warning: implicitly declaring library function ’scanf’ with type ’int (const char *restrict, ...)’
++ error: expected ’(’ after ’if’
+- error: expected ’}’
+- warning: variable ’n’ is uninitialized when used here
+- warning: format specifies type ’int *’ but the argument has type ’int’ 
+- error: expected ’;’ after expression
+- Aucune erreur ou warning n’est générée à la compilation
+
+**[nb=9,group=Erreurs2] 67 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs ou de warning à la compilation
+(option de compilation -Wall et -ansi).
+
+
+    int main(void) {
+
+        int n;
+
+        printf("Donnez moi un entier : ");
+
+        scanf("%d", &n);
+
+        if (n > 0)
+
+            printf("Positif !\n");
+
+        else {
+
+            if (n = 0)
+
+                printf("Nul !\n");
+
+            else
+
+                printf("Négatif !\n");
+
+        } 
+
+    }
+
+Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur renvoie ?
+
++ warning:  using the result of an assignment as a condition without parentheses
++ error: implicitly declaring library function ’printf’ with type ’int (const char *, ...)’
++ error: implicitly declaring library function ’scanf’ with type ’int (const char *restrict, ...)’
+- error: expected ’(’ after ’if’
+- error: expected ’}’
+- warning: variable ’n’ is uninitialized when used here
+- warning: format specifies type ’int *’ but the argument has type ’int’ 
+- error: expected ’;’ after expression
+- Aucune erreur ou warning n’est générée à la compilation
+
+**[nb=9,group=Erreurs2] 68 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs ou de warning à la compilation
+(option de compilation -Wall et -ansi).
+
+
+    int main(void) {
+
+        int n;
+
+        printf("Donnez moi un entier : ");
+
+        scanf("%d", n);
+
+        if (n > 0)
+
+            printf("Positif !\n");
+
+        else {
+
+            if (n == 0)
+
+                printf("Nul !\n");
+
+            else
+
+                printf("Négatif !\n");
+
+        } 
+
+    }
+
+Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur renvoie ?
+
+- warning:  using the result of an assignment as a condition without parentheses
++ error: implicitly declaring library function ’printf’ with type ’int (const char *, ...)’
++ error: implicitly declaring library function ’scanf’ with type ’int (const char *restrict, ...)’
+- error: expected ’(’ after ’if’
+- error: expected ’}’
++ warning: variable ’n’ is uninitialized when used here
++ warning: format specifies type ’int *’ but the argument has type ’int’
+- error: expected ’;’ after declaration
+- Aucune erreur ou warning n’est générée à la compilation
+
+**[nb=9,group=Erreurs2] 69 ) Le programme du fichier.c ci-dessous provoque un certain nombre d’erreurs ou de warning à la compilation
+(option de compilation -Wall et -ansi).
+
+
+    int main(void) {
+
+        int n;
+
+        printf("Donnez moi un entier : ");
+
+        scanf("%d", &n);
+
+        if (n > 0)
+
+            printf("Positif !\n");
+
+        else {
+
+            if (n == 0)
+
+                printf("Nul !\n");
+
+            else
+
+                printf("Négatif !\n");
+
+        } 
+
+        return 0;
+
+    }
+
+Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur renvoie ?
+
+- warning:  using the result of an assignment as a condition without parentheses
++ error: implicitly declaring library function ’printf’ with type ’int (const char *, ...)’
++ error: implicitly declaring library function ’scanf’ with type ’int (const char *restrict, ...)’
+- error: expected ’(’ after ’if’
+- error: expected ’}’
+- warning: variable ’n’ is uninitialized when used here
+- warning: format specifies type ’int *’ but the argument has type ’int’ error: expected ’;’ after expression
+- error: expected ’;’ after declaration
+- Aucune erreur ou warning n’est générée à la compilation
+
+**[nb=5,group=Transmission_par_adresse1] 70 ) Quelles sont, parmi les fonctions suivantes, celles qui peuvent modifier la valeur de l’un de leurs paramètres sans utiliser de return ?
+
++ void absolue(int * n)
+- int absolue(int n)
++ void sqrt(float * x)
+- float sqrt(float x)
+- Aucune de ces réponses n’est correcte
+
+**[nb=5,group=Transmission_par_adresse1] 71 ) Quelles sont, parmi les fonctions suivantes, celles qui peuvent modifier la valeur de l’un de leurs paramètres sans utiliser de return ?
+
++ void absolue(int * n)
++ void carre(int * n)
+- int absolue(int n)
+- float sqrt(float x)
+- Aucune de ces réponses n’est correcte 
+
+**[nb=15,group=Transmission_par_adresse1] 72 ) Quelles sont, parmi les fonctions suivantes, celles qui peuvent modifier la valeur de l’un de leurs paramètres sans utiliser de return ?
+
+- int absolue(int n)
++ void absolue(int * n)
+- float sqrt(float x)
++ void carre(int * n)
+- Aucune de ces réponses n’est correcte
+
+**[nb=5,group=Transmission_par_adresse1] 73 ) Quelles sont, parmi les fonctions suivantes, celles qui peuvent modifier la valeur de l’un de leurs paramètres sans utiliser de return ?
+
++ void sqrt(float * x)
+- float sqrt(float x)
++ void carre(int * n)
+- int carre(int n)
+- Aucune de ces réponses n’est correcte
+
+**[nb=5,group=Transmission_par_adresse2] 74 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres sans utiliser de return ?
+
+- void absolue(int * n)
++ int absolue(int n)
+- void sqrt(float * x)
++ float sqrt(float x)
+- Aucune de ces réponses n’est correcte
+
+**[nb=5,group=Transmission_par_adresse2] 75 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres sans utiliser de return ?
+
+- void absolue(int * n)
++ float absolue(int n)
+- int absolue(int * n)
++ double absolue(int n)
+- Aucune de ces réponses n’est correcte
+
+**[nb=5,group=Transmission_par_adresse2] 76 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres sans utiliser de return ?
+
+- void absolue(int * n)
++ int absolue(int n)
+- void sqrt(float * x)
++ float sqrt(float x)
+- Aucune de ces réponses n’est correcte
+
+**[nb=5,group=Transmission_par_adresse2] 77 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres sans utiliser de return ?
+
+- void sqrt(float * x)
++ float sqrt(float x)
+- void carre(int * n)
++ int carre(int n)
+- Aucune de ces réponses n’est correcte
+
+**[nb=3,group=Renvoie_dun_code_derreur1] 78 ) Dans quel cas peut-il être intéressant qu’une fonction `int foo(int n)` renvoie un code d’erreur ?
+
++ La valeur du paramètre n n'est pas admise.
+- Lorsque le résultat de la fonction foo peut être n’importe quel entier. 
+- Jamais, cela ne sert à rien.
+
+**[nb=3,group=Renvoie_dun_code_derreur2] 79 ) Dans quel cas peut-il être intéressant qu’une fonction `int foo(int n, int * resultat)` renvoie un code d’erreur ?
+
++ Les valeurs des paramètres n et resultat ne sont pas admises.
+- Lorsque le résultat de la fonction foo peut être n’importe quel entier. 
+- Jamais, cela ne sert à rien.
+
+* [nb=4,group=Pointeur_en_parametre_de_fonction] 80 ) On considère le code suivant:
+
+
+    void plusDeux(int *n){
+
+        n = 2 + n;
+
+    }
+
+    int main(){
+
+        int m = 1;
+
+        plusDeux(&m);
+
+        printf("%d\n", m);
+
+        return 0;
+
+    }
+
+Ce code est-il correct? S’il ne l’est pas, que faut-il modifier pour qu’il affiche 3?
+
++ Il faut remplacer les n par des *n dans la fonction plusDeux.
+- Il faut écrire plusDeux(m) à la place de plusDeux(&m) dans le main.
+- Il faut écrire void plusDeux(int n) à la place de void plusDeux(int *n). 
+- Le code est correct.
+
+* [nb=4,group=Fonction_avec_et_sans_pointeur] 81 ) Qu'affiche le programme suivant ?
+
+
+    int f(int n){
+
+        n = n+1;
+
+        return n;
+
+    }
+
+    void g(int *n){
+
+        (*n) = 2 - (*n);
+
+    }
+
+    int main(){
+
+        int n = 0;
+
+        int m = f(n);
+
+        g(&n);
+
+        g(&m);
+
+        printf("%d\n", n+m);
+
+    }
+
++ 3
+- 0
+- 1
+- 2
+
+** [nb=7,group=difference_entre_affichage_et_retour_de_fonction] 82 ) Le code suivant devrait afficher et retourner la valeur 
+entière entrée par l’utilisateur, mais il est incorrect:
+
+
+    int f(int *n){
+
+        scanf("%d", n);
+
+        printf("%d", *n);
+
+    }
+
+Parmi les propositions suivantes, lesquelles corrigent le code ?
+
+- On remplace le type de retour int de la fonction f par void. 
++ On rajoute après la ligne contenant printf un return *n
+- On rajoute après la ligne contenant printf un return n
+- On remplace le printf à la fin de la fonction f par return n. 
+- On remplace le n par &n dans le scanf.
+- On remplace le *n par n dans le printf.
+- On remplace le printf à la fin de la fonction f par return *n.
+
+** [nb=7,group=difference_entre_affichage_et_retour_de_fonction] 83 ) Le code suivant devrait afficher et retourner la valeur 
+entière entrée par l’utilisateur, mais il est incorrect:
+
+
+    void f(int *n){
+
+        scanf("%d", n);
+
+        printf("%d", *n);
+
+    }
+
+Parmi les propositions suivantes, lesquelles corrigent le code ?
+
++ On remplace le type de retour void de la fonction f par int. 
++ On rajoute après la ligne contenant printf un return *n
+- On rajoute après la ligne contenant printf un return n
+- On remplace le printf à la fin de la fonction f par return n. 
+- On remplace le n par &n dans le scanf.
+- On remplace le *n par n dans le printf.
+- On remplace le printf à la fin de la fonction f par return *n.
+
+* [nb=4,group=fonction_divise_par_deux_entier] 84 ) On considère la fonction suivante :
+
+
+    void diviseParDeux(int n){
+
+        printf("%d", n/2);
+
+    }
+
+Qu’affiche diviseParDeux(5)?
+
++ 2
+- 2.5
+- 2.0
+- 5
+
+* [nb=4,group=Appel_et_prototype] 85 ) On considère la fonction suivante :
+
+
+    int n,truc,c;
+
+    float x;
+
+    x=f(n,&c,&x);
+
+Ces instructions sont correctes si la fonction f a pour prototype:
+
++ float f(int a,int* b,float *c)
+- void f(int *a,int *b,float *c)
+- float f(int a,int b,float c)
+- float f(int n, int &c, int &x)
+
+* [nb=4,group=Appel_et_prototype] 86 ) On veut écrire une fonction estPremier qui indique à la partie appellante si 
+un nombre entier positif, transmis en paramètre est premier. Quel doit être le prototype de cette fonction ?
+
++ int estPremier(int a)
+- void estPremier(int c)
+- int estPremier(int *a)
+- float estPremier(int n)
+
+* [nb=4,group=Puissance] 87 ) On veut écrire une fonction puissanceEntiere qui calcule la valeur **x**<sup>**n**</sup> pour **x** un nombre 
+réel et **n** un entier positif. On veut pouvoir gérer le cas où la fonction ne peut effectuer le calcul 
+(si l’entier transmis en paramètre est négatif). Quel doit être le prototype de cette fonction ?
+
++ int puissanceEntiere(float x,int n,float *resultat)
+- float puissanceEntiere(float x,int n)
+- void puissanceEntiere(float x,int n,float resultat)
+- void puissanceEntiere(float x,int n)
+
+* [nb=4,group=Pile_d_execution] 88 ) La pile d’exécution est utilisée :
+
++ lors de l’appel d’une fonction
+- lors de la compilation
+- lors d’un switch
+- lors de la pré-compilation
+
+* [nb=4,group=Pile_d_execution] 89 ) La pile d’exécution est utilisée :
+
++ lors de l’appel d’une fonction
+- lors de l’allocation des variables globales
+- pour controler la vitesse des boucles
+- lors de la compilation
+
+* [nb=4,group=Parametre] 90 ) Les paramètres d’une fonction sont toujours transmis :
+
+- par adresse
+- au moment de la compilation
++ par valeur
+- par l’interpréteur
+
+** [nb=5,group=InitAdresse] 91 ) La fonction f :
+
+
+    void f(int x){
+
+        int *p;
+
+        *p=x;
+
+        printf("%d\n", *p+1);
+
+    }
+
++ provoque un warning à la compilation, avec -ansi et -Wall
+- affiche 6 si on l’appelle avec f(5)
+- affiche 4 si on l’appelle avec f(5)
++ entraine une erreur à l’exécution
+- affiche une adresse
+
+* [nb=5,group=Lecture_De_Char] 92 ) Qu’affiche le programme :
+
+
+    int main(void){
+
+        char a,b,c,d;
+
+        scanf("%c",&a);scanf(" %c",&b);
+
+        scanf("%c",&c);scanf(" %c",&d);
+
+        printf("%c%c%c%c\n", a,b,c,d);
+
+        return 0;
+
+    }
+
+si l’utilisateur entre : x y z t
+
++ xy z
+- provoque un warning à la compilation
+- x y z t
+- xyzt
+- entraine une erreur à l’exécution
+
+* [nb=5,group=Lecture_De_Char] 93 ) Qu’affiche le programme :
+
+
+    int main(void){
+
+        char a,b,c,d;
+
+        scanf("%c",&a);scanf(" %c",&b);
+
+        scanf("%c",&c);scanf(" %c",&d);
+
+        printf("%c%c%c%c\n", a,b,c,d);
+
+        return 0;
+
+    }
+
+
+                             P
+
+    si l’utilisateur entre : O
+
+                             I U
+
+
+                                        P
+
+    Réponse 1 : P O         Réponse 2 : O         Réponse 3 : POIU
+
+                I                       I
+
+                                        U
+
+    Réponse 4 : provoque un warning à la compilation
+
+    Réponse 5 : entraîne une erreur à l'exécution
+
++ Réponse 1
+- Réponse 2
+- Réponse 3
+- Réponse 4
+- Réponse 5
+
+* [nb=5,group=Lecture_De_Char] 94 ) Qu’affiche le programme :
+
+
+    int main(void){
+
+        char a,b,c,d;
+
+        scanf("%c",&a);scanf(" %c",&b);
+
+        scanf("%c",&c);scanf(" %c",&d);
+
+        printf("%c%c%c%c\n", a,b,c,d);
+
+        return 0;
+
+    }
+
+si l’utilisateur entre : R T Y U
+
++ RT Y
+- R T Y U
+- provoque un warning à la compilation
+- entraire une erreur à l’exécution
+- RTYU
+
+* [nb=6,group=Pile] 95 ) Considérons le programme suivant :
+
+
+    /*01*/#include <stdio.h>
+
+    /*02*/
+
+    /*03*/void echange(int * a, int * b) {
+
+    /*04*/  int tmp = *a;
+
+    /*05*/  *a = *b;
+
+    /*06*/  *b = tmp;
+
+    /*07*/}
+
+    /*08*/
+
+    /*09*/int carre(int n) {
+
+    /*10*/  return n * n;
+
+    /*11*/}
+
+    /*12*/
+
+    /*13*/int main(void) {
+
+    /*14*/  int a = 2;
+
+    /*15*/  int b = 3;
+
+    /*16*/  echange(&a, &b);
+
+    /*17*/  a = carre(b);
+
+    /*18*/  echange(&a, &b);
+
+    /*19*/}
+
+On exécute le main de ce programme. Quel est alors l’état de la pile lorsque la ligne 15 a été exécutée ?
+
+![Légende, texte alternatif de l'image](/filebrowser/option?name=download_resource&path=Yggdrasil/ComputerScience/C_Initiation/QCM/QCM1_Pile1.png)
+
++ Réponse 1
+- Réponse 2
+- Réponse 3
+- Réponse 4
+- Réponse 5
+- Réponse 6
+
+* [nb=6,group=Pile] 96 ) Considérons le programme suivant :
+
+
+    /*01*/#include <stdio.h>
+
+    /*02*/
+
+    /*03*/void echange(int * a, int * b) {
+
+    /*04*/  int tmp = *a;
+
+    /*05*/  *a = *b;
+
+    /*06*/  *b = tmp;
+
+    /*07*/}
+
+    /*08*/
+
+    /*09*/int carre(int n) {
+
+    /*10*/  return n * n;
+
+    /*11*/}
+
+    /*12*/
+
+    /*13*/int main(void) {
+
+    /*14*/  int a = 2;
+
+    /*15*/  int b = 3;
+
+    /*16*/  echange(&a, &b);
+
+    /*17*/  a = carre(b);
+
+    /*18*/  echange(&a, &b);
+
+    /*19*/}
+
+On exécute le main de ce programme. Quel est alors l’état de la pile lorsque la ligne 4 a été exécutée ?
+
+![Légende, texte alternatif de l'image](/filebrowser/option?name=download_resource&path=Yggdrasil/ComputerScience/C_Initiation/QCM/QCM1_Pile2.png)
+
+- Réponse 1
+- Réponse 2
+- Réponse 3
++ Réponse 4
+- Réponse 5
+- Réponse 6
+
+* [nb=6,group=Pile] 97 ) Considérons le programme suivant :
+
+
+    /*01*/#include <stdio.h>
+
+    /*02*/
+
+    /*03*/void echange(int * a, int * b) {
+
+    /*04*/  int tmp = *a;
+
+    /*05*/  *a = *b;
+
+    /*06*/  *b = tmp;
+
+    /*07*/}
+
+    /*08*/
+
+    /*09*/int carre(int n) {
+
+    /*10*/  return n * n;
+
+    /*11*/}
+
+    /*12*/
+
+    /*13*/int main(void) {
+
+    /*14*/ int a = 2;
+
+    /*15*/ int b = 3;
+
+    /*16*/ echange(&a, &b);
+
+    /*17*/ a = carre(b);
+
+    /*18*/ echange(&a, &b);
+
+    /*19*/}
+
+On exécute le main de ce programme. Quel est alors l’état de la pile lorsque la ligne 5 a été exécutée ?
+
+![Légende, texte alternatif de l'image](/filebrowser/option?name=download_resource&path=Yggdrasil/ComputerScience/C_Initiation/QCM/QCM1_Pile3.png)
+
+- Réponse 1
+- Réponse 2
+- Réponse 3
++ Réponse 4
+- Réponse 5
+- Réponse 6
+
+* [nb=6,group=Pile] 98 ) Considérons le programme suivant :
+
+
+    /*01*/#include <stdio.h>
+
+    /*02*/
+
+    /*03*/void echange(int * a, int * b) {
+
+    /*04*/  int tmp = *a;
+
+    /*05*/  *a = *b;
+
+    /*06*/  *b = tmp;
+
+    /*07*/}
+
+    /*08*/
+
+    /*09*/int carre(int n) {
+
+    /*10*/  return n * n;
+
+    /*11*/}
+
+    /*12*/
+
+    /*13*/int main(void) {
+
+    /*14*/ int a = 2;
+
+    /*15*/ int b = 3;
+
+    /*16*/ echange(&a, &b);
+
+    /*17*/ a = carre(b);
+
+    /*18*/ echange(&a, &b);
+
+    /*19*/}
+
+On exécute le main de ce programme. Quel est alors l’état de la pile lorsque la ligne 6 a été exécutée ?
+
+![Légende, texte alternatif de l'image](/filebrowser/option?name=download_resource&path=Yggdrasil/ComputerScience/C_Initiation/QCM/QCM1_Pile4.png)
+
+- Réponse 1
+- Réponse 2
+- Réponse 3
+- Réponse 4
++ Réponse 5
+- Réponse 6
+
+* [nb=6,group=Pile] 99 ) Considérons le programme suivant :
+
+
+    /*01*/#include <stdio.h>
+
+    /*02*/
+
+    /*03*/void echange(int * a, int * b) {
+
+    /*04*/  int tmp = *a;
+
+    /*05*/  *a = *b;
+
+    /*06*/  *b = tmp;
+
+    /*07*/}
+
+    /*08*/
+
+    /*09*/int carre(int n) {
+
+    /*10*/  return n * n;
+
+    /*11*/}
+
+    /*12*/
+
+    /*13*/int main(void) {
+
+    /*14*/ int a = 2;
+
+    /*15*/ int b = 3;
+
+    /*16*/ echange(&a, &b);
+
+    /*17*/ a = carre(b);
+
+    /*18*/ echange(&a, &b);
+
+    /*19*/}
+
+On exécute le main de ce programme. Quel est alors l’état de la pile lorsque la ligne 9 a été exécutée ?
+
+![Légende, texte alternatif de l'image](/filebrowser/option?name=download_resource&path=Yggdrasil/ComputerScience/C_Initiation/QCM/QCM1_Pile5.png)
+
+- Réponse 1
+- Réponse 2
+- Réponse 3
+- Réponse 4
++ Réponse 5
+- Réponse 6
+
+* [nb=6,group=Pile] 100 ) Considérons le programme suivant :
+
+
+    /*01*/#include <stdio.h>
+
+    /*02*/
+
+    /*03*/void echange(int * a, int * b) {
+
+    /*04*/  int tmp = *a;
+
+    /*05*/  *a = *b;
+
+    /*06*/  *b = tmp;
+
+    /*07*/}
+
+    /*08*/
+
+    /*09*/int carre(int n) {
+
+    /*10*/  return n * n;
+
+    /*11*/}
+
+    /*12*/
+
+    /*13*/int main(void) {
+
+    /*14*/ int a = 2;
+
+    /*15*/ int b = 3;
+
+    /*16*/ echange(&a, &b);
+
+    /*17*/ a = carre(b);
+
+    /*18*/ echange(&a, &b);
+
+    /*19*/}
+
+On exécute le main de ce programme. Quel est alors l’état de la pile lorsque la ligne 17 a été exécutée ?
+
+![Légende, texte alternatif de l'image](/filebrowser/option?name=download_resource&path=Yggdrasil/ComputerScience/C_Initiation/QCM/QCM1_Pile6.png)
+
+- Réponse 1
+- Réponse 2
++ Réponse 3
+- Réponse 4
+- Réponse 5
+- Réponse 6
+
+* [nb=6,group=Pile] 101 ) Considérons le programme suivant :
+
+
+    /*01*/#include <stdio.h>
+
+    /*02*/
+
+    /*03*/void echange(int * a, int * b) {
+
+    /*04*/  int tmp = *a;
+
+    /*05*/  *a = *b;
+
+    /*06*/  *b = tmp;
+
+    /*07*/}
+
+    /*08*/
+
+    /*09*/int carre(int n) {
+
+    /*10*/  return n * n;
+
+    /*11*/}
+
+    /*12*/
+
+    /*13*/int main(void) {
+
+    /*14*/ int a = 2;
+
+    /*15*/ int b = 3;
+
+    /*16*/ echange(&a, &b);
+
+    /*17*/ a = carre(b);
+
+    /*18*/ echange(&a, &b);
+
+    /*19*/}
+
+On exécute le main de ce programme. Quel est alors l’état de la pile lorsque la ligne 18 a été exécutée ?
+
+![Légende, texte alternatif de l'image](/filebrowser/option?name=download_resource&path=Yggdrasil/ComputerScience/C_Initiation/QCM/QCM1_Pile7.png)
+
+- Réponse 1
+- Réponse 2
+- Réponse 3
+- Réponse 4
+- Réponse 5
++ Réponse 6
+
+# Catalogue 4 Prog C Olivier BOUILLOT
+
+** [nb=4,group=Definition] 102 ) Quelles affirmations sont exactes ?
+
++ la taille d’un tableau est fixée une fois pour toutes
+- un tableau peut contenir simultanément des éléments de plusieurs types
++ les éléments d’un tableau sont rangés consécutivement dans la mémoire
+- la déclaration int tab[10]; initialise un tableau avec 10 cases contenant 0
+
+** [nb=4,group=Definition] 103 ) Quelles affirmations sont exactes ?
+
++ un tableau peut contenir uniquement des éléments de même type 
+- on peut changer la taille d’un tableau en cours d’exécution
++ les indices au tableau int tab[5]; vont de 0 à 4
+- les indices au tableau int tab[5]; vont de 1 à 5
+
+** [nb=4,group=Definition] 104 ) Quelles affirmations sont exactes ?
+
++ un tableau peut contenir uniquement des éléments de même type
+- on peut changer la taille d’un tableau en cours d’exécution 
++ l’indice -1 du tableau int tab[5]; n’est pas valide
+- l’indice -1 du tableau int tab[5]; désigne la case 4
+
+** [nb=4,group=indices_tableau_PH] 105 ) Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
+
+- tab[2] == 2
++ tab[7] == 0
++ tab[3] == 4
++ tab[12] n’est pas défini
+- tab[-1] == 4
+
+** [nb=4,group=indices_tableau_PH] 106 ) Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
+
+- tab[2] == 2
++ tab[10] n’est pas défini
+- tab[8] n’est pas défini
+- tab[-1] == 0
+
+** [nb=5,group=indices_tableau_PH] 107 ) Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
+
+- tab[2] == 2
++ tab[1] == 2
+- tab[8] n’est pas défini
+- tab[-1] == 0
++ tab[11] n’est pas défini
+
+** [nb=5,group=indices_tableau_PH] 108 ) Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
+
+- tab[2] == 2
++ tab[12] n’est pas défini
+- tab[10] == 0
++ tab[5] == tab[7]
++ tab[3] == 4 
+
+* [nb=5,group=affectation_tableau_PH] 109 ) On a déclaré `int tab1[5] = {1,2,3,4,5};` Quelle déclaration, instruction ou suite 
+d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
+
+- int tab2 = tab1;
+- int tab2[5] = tab1;
+- int tab2[5] = tab1; tab2[2] =tab2[1];
++ int tab2 = {0,1,2,3,4};
+- int tab2[2] = tab1[1];
+
+* [nb=6,group=affectation_tableau_PH] 110 ) On a déclaré `int tab1[5] = {1,2,3,4,5};` Quelle déclaration, instruction ou suite 
+d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
+
+- int tab2 = tab1;
+- int tab2[5] = tab1;
+- int tab2[5] = tab1; tab2[2] -= 1; 
+- int tab2[5] = {0}; tab2[2]=tab1[5]-3; 
++ int tab2[5] = {0}; tab2[2]=tab1[3]-2; 
+- int tab2[2]; tab2[2] = tab1[2];
+
+* [nb=5,group=affectation_tableau_PH] 111) On a déclaré `int tab1[5] = {1,2,3,4,5};` Quelle déclaration, instruction ou suite 
+d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
+
+- int tab2 = tab1;
+- int tab2[5] = tab1;
+- int tab2[5] = tab1; tab2[2] -= 1; 
+- int tab2[] = {0};
++ int tab2[3]; tab2[2] = tab1[1];
+
+* [nb=4,group=initUn] 112 ) Le code suivant 
+
+
+    int i,tab[10];
+
+    for(i=0;i<10;i++)
+
+        scanf("%d",&tab[i]);
+
++ remplit les cases d’indice de 0 à 9 avec des valeurs lues au clavier
+- remplit les cases d’indice de 0 à 10 avec des valeurs lues au clavier
+- remplit les cases d’indice de 1 à 10 avec des valeurs lues au clavier
+- provoque une erreur à l’exécution
+
+* [nb=5,group=tableau_sautant_PH] 113 ) Quelle valeur affichera le code suivant ?
+
+
+    int i, j=0;
+
+    int tab[7] = {2, 3, 0, 4, 1, 1, 2};
+
+    for (i=0; i<3; i=i+1)
+
+        j = tab[j];
+
+
+    printf("%d\n", j);
+
+- 0
+- 1
++ 2
+- 3
+- 4
+
+* [nb=5,group=tableau_sautant_PH] 114 ) Quelle valeur affichera le code suivant ?
+
+
+    int i, j=2;
+
+    int tab[7] = {2, 3, 0, 4, 1, 1, 2};
+
+    for (i=0; i<3; i=i+1)
+
+        j = tab[j];
+
+    printf("%d\n", j);
+
++ 0
+- 1
+- 2
+- 3
+- 4
+
+* [nb=5,group=tableau_sautant_PH] 115 ) Quelle valeur affichera le code suivant ?
+
+
+    int i, j=3;
+
+    int tab[7] = {2, 3, 0, 4, 1, 1, 2};
+
+    for (i=0; i<5; i=i+1)
+
+        j = tab[j];
+
+    printf("%d\n", j);
+
+- 0
++ 1
+- 2
+- 3
+- 4
+
+** [nb=5,group=fonction_tableau_pointeur_PH] 116 ) Dans la fonction suivante (remplissant depuis le clavier un tableau tab de taille taille), 
+quelles lignes sont incorrectes ?
+
+
+    /* 1*/  void scanTab (int tab[], int taille) {
+
+    /* 2*/      int i;
+
+    /* 3*/      printf("Veuillez saisir %d entiers : ", *taille);
+
+    /* 4*/
+
+    /* 5*/      for (i=0; i < *taille; i=i+1)
+
+    /* 6*/          scanf("%d", tab[i]);
+
+    /* 7*/  }
+
+- 2
++ 3
++ 5
++ 6
+- aucune de celles-ci
+
+** [nb=5,group=fonction_tableau_pointeur_PH] 117 ) Dans la fonction suivante (remplissant depuis le clavier un tableau tab de taille `taille`), 
+quelles lignes sont incorrectes ?
+
+
+    /* 1*/  void scanTab (int tab[], int taille) {
+
+    /* 2*/      int i;
+
+    /* 3*/      printf("Veuillez saisir %d entiers : ", &taille);
+
+    /* 4*/
+
+    /* 5*/      for (i=0; i < &taille; i=i+1)
+
+    /* 6*/          scanf("%d", &tab[i]);
+
+    /* 7*/  }
+
+- 2
++ 3
++ 5
+- 6
+- aucune de celles-ci
+
+** [nb=5,group=fonction_tableau_pointeur_PH] 118 ) Dans la fonction suivante (remplissant depuis le clavier un tableau tab de taille `taille`), 
+quelles lignes sont incorrectes ?
+
+
+    /* 1*/  void scanTab (int tab[], int taille) {
+
+    /* 2*/      int i;
+
+    /* 3*/      printf("Veuillez saisir %d entiers : ", taille);
+
+    /* 4*/
+
+    /* 5*/      for (i=0; i < taille; i=i+1)
+
+    /* 6*/          scanf("%d", tab[i]);
+
+    /* 7*/  }
+
+- 2
+- 3
+- 5
++ 6
+- aucune de celles-ci
+
+* [nb=5,group=ptrtab] 119 ) On définit deux tableaux de dix int par:
+
+
+     int A[10]={5,6,7,8,9};
+
+     int B[]={1,1,2,2,3,3,4,4,5,5};
+
+On défini la fonction boo par :
+
+
+     void boo(int untab[],int deuxtab[]){
+
+        int tmp;
+
+        tmp=*untab;
+
+        *untab=*deuxtab;
+
+        *deuxtab=tmp;
+
+     }
+
+Après l'appel boo(A,B) que contiennent les tableaux A et B ?
+
++ A : 1 6 7 8 9 0 0 0 0 0 | B : 5 1 2 2 3 3 4 4 5 5
+- rien, la déclaration de A est incomplète
+- A : 1 1 2 2 3 3 4 4 5 5 | B : 5 6 7 8 9 0 0 0 0 0
+- A : 5 6 7 8 9 3 4 4 5 5 | B : 1 1 2 2 3 0 0 0 0 0
+- rien, la déclaration de B est incomplète
+
+* [nb=5,group=remplittab] 120 ) Que contient le tableau tab après exécution de code :
+
+
+    int i = 0, tab[10], n = 27;
+
+    do {
+
+       tab[i] = n % 10;
+
+       i = i + 1;
+
+     } while ((n /= 10) > 10);
+
++ tab[0] vaut 7 et les autres cases du tableau ont une valeur indéterminée.
+- le contenu du tableau n’est pas défini.
+- le tableau est remplit de 7.
+- tab[0] vaut 7 et les autres cases du tableau contiennent 0.
+- rien, il y a une erreur lors de l’exécution
+
+** [nb=4,group=comparaison_de_tableaux] 121 ) On considère la fonction suivante :
+
+
+    int faitUnTruc(int tab1[], int tab2[], int taille){
+
+        int i;
+
+        for(i = 0; i < taille; i++){
+
+            if(tab1[i] < tab2[i])
+
+                return 1; 
+
+        }
+
+        return 0; 
+
+    }
+
+ainsi que les déclarations suivantes:
+
+
+    int t1[4] = {1, 2, 3, 4};
+
+    int t2[4] = {0, 1, 2, 3};
+
+    int t3[4] = {1, 0, 2, 3};
+
+    int t4[4] = {0, 1, 3, 2};
+
+    int t5[4] = {0, 0, 0, 0};
+
+Parmi les appels de fonctions suivants, lesquels retournent 1 ?
+
+- faitUnTruc(t1, t2, 4)
++ faitUnTruc(t4, t3, 4)
++ faitUnTruc(t2, t3, 4)
+- faitUnTruc(t1, t4, 4)
+
+** [nb=4,group=comparaison_de_tableaux] 122 ) On considère la fonction suivante :
+
+
+    int faitUnTruc(int tab1[], int tab2[], int taille){
+
+        int i;
+
+        for(i = 0; i < taille; i++){
+
+            if(tab1[i] >= tab2[i])
+
+                return 1; 
+
+        }
+
+        return 0; 
+
+    }
+
+ainsi que les déclarations suivantes:
+
+
+    int t1[4] = {1, 2, 3, 4};
+
+    int t2[4] = {0, 1, 2, 3};
+
+    int t3[4] = {1, 0, 2, 3};
+
+    int t4[4] = {0, 1, 3, 2};
+
+    int t5[4] = {0, 0, 0, 0};
+
+Parmi les appels de fonctions suivants, lesquels retournent 1 ?
+
+- faitUnTruc(t2, t1, 4)
++ faitUnTruc(t1, t4, 4)
++ faitUnTruc(t4, t3, 4)
+- faitUnTruc(t5, t1, 4)
+
+** [nb=4,group=comparaison_de_tableaux] 123 ) On considère la fonction suivante :
+
+
+    int faitUnTruc(int tab1[], int tab2[], int taille){
+
+        int i;
+
+        for(i = 0; i < taille; i++){
+
+            if(tab1[i] > tab2[i])
+
+                return 0; 
+
+        }
+
+        return 1; 
+
+    }
+
+ainsi que les déclarations suivantes:
+
+
+    int t1[4] = {1, 2, 3, 4};
+
+    int t2[4] = {0, 1, 2, 3};
+
+    int t3[4] = {1, 0, 2, 3};
+
+    int t4[4] = {0, 1, 3, 2};
+
+    int t5[4] = {0, 0, 0, 0};
+
+Parmi les appels de fonctions suivants, lesquels retournent 1 ?
+
+- faitUnTruc(t2, t3, 4)
++ faitUnTruc(t3, t1, 4)
+- faitUnTruc(t1, t4, 4)
++ faitUnTruc(t5, t1, 4)
+
+** [nb=4,group=comparaison_de_tableaux] 124 ) On considère la fonction suivante :
+
+
+    int faitUnTruc(int tab1[], int tab2[], int taille){
+
+        int i;
+
+        for(i = 0; i < taille; i++){
+
+            if(tab1[i] <= tab2[i])
+
+                return 0; 
+
+        }
+
+        return 1; 
+
+    }
+
+ainsi que les déclarations suivantes:
+
+
+    int t1[4] = {1, 2, 3, 4};
+
+    int t2[4] = {0, 1, 2, 3};
+
+    int t3[4] = {1, 0, 2, 3};
+
+    int t4[4] = {0, 1, 3, 2};
+
+    int t5[4] = {0, 0, 0, 0};
+
+Parmi les appels de fonctions suivants, lesquels retournent 1 ?
+
++ faitUnTruc(t1, t2, 4)
+- faitUnTruc(t4, t3, 4)
+- faitUnTruc(t3, t1, 4)
++ faitUnTruc(t1, t5, 4)
+
+** [nb=5,group=compar] 125 ) La fonction suivante :
+
+
+    int pouet(int t[], int v[], int taille){
+
+        int i;
+
+        for (i = 0; i < taille; i++){
+
+            if (t[i] == v[i])
+
+                return 1;
+
+            return 0;
+
+        }
+
+    }
+
++ renvoie 1 si les deux tableaux ont leur premier élément identique
++ renvoie 0 si les deux tableaux ont leur premier élément différent
+- renvoie 1 si tous les éléments des deux tableaux sont identiques
+- renvoie 0 si tous les éléments des deux tableaux sont différents
+- provoque une erreur d’exécution
+
+* [nb=4,group=decalage] 126 ) Quel est le contenu du tableau défini par `int t[5] = {1,2,3,4,5};` après l’appel cafe(t,5) ?
+
+
+    void cafe(int tab[], int taille){
+
+        int i;
+
+        for(i = taille - 1; i > 0; i--){
+
+            tab[i] = tab[i-1];
+
+        }
+
+    }
+
++ 1 1 2 3 4
+- 1 2 3 4 5
+- 5 1 2 3 4
+- 2 3 4 5 1
+
+* [nb=4,group=decalage] 127 ) Quel est le contenu du tableau défini par `int t[5] = {1,2,3,4,5};` après l’appel cafe(t,5) ?
+
+
+    void cafe(int tab[], int taille){
+
+        int i;
+
+        tab[0] = t[taille-1];
+
+        for(i = taille - 1; i > 0; i--){
+
+            tab[i] = tab[i-1];
+
+        }
+
+    }
+
++ 5 5 2 3 4
+- 1 2 3 4 5
+- 5 1 2 3 4
+- 2 3 4 5 1
+
+* [nb=5,group=affiche_partiel] 128 ) On considère la fonction suivante :
+
+
+    void afficheTruc(int tab[], int n, int taille){
+
+        int i;
+
+        for(i = 0; i < taille; i++)
+
+            if(tab[i] < n)
+
+                printf("%d", tab[i]);
+
+            else if(tab[i] == n)
+
+                printf(" ");
+
+    }
+
+Qu’affiche l’appel affichageTruc(tab, 2, 4) lorsque tab est défini par `int tab[6] = {1,0,2,3,2,1};` ?
+
++ 10
+- 10 1
+- 10 2
+- 1 02
+- 1 0 2
+
+
+
+
+
+
+
+
+
+
+
