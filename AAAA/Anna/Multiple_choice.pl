@@ -26,7 +26,7 @@ Code couleurs : Après validation de la réponse
 -> Cases vertes = réponses justes
 -> Cases rouges = réponses fausses
 
-Si la case devrait être coché mais ne l'est pas alors il se mettra en valeur sour
+Si la case devrait être coché mais ne l'est pas alors il se mettra en valeur sous
 forme d'animation et sera de couleur verte. 
 ==
 
