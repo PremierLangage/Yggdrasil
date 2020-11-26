@@ -5,9 +5,23 @@ True or False ?
 ==
 
 text==#|markdown|
-Cette affirmation est-elle vraie ou Fausse ? 
-
-**Marseille est la capitale de la France**
+Choisir la bonne réponse
 ==
 
+good==
+Napoleon, Oui c'est ca
+Bonapparte, Oui aussi malgré l'orthographe
+
+==
+
+bad==
+Michel Fugain, T'es con ou quoi 
+Quentin Coumes, Peut être un jour
+le pape, pas vraiment
+Johnny, Pour leatitia 
+==
+
+
+nbgood=2
+nbbad=3
 
