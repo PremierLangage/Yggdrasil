@@ -1,5 +1,12 @@
 extends = /ComputerScience/python/AP1-1920/templates/plsoluce.pl
+@ utils/soluceevaluator.py          [grader.py] # le as de python import toto as titi
+@ utils/gradesoluce.py
+@ /utils/sandboxio.py
 
+@ /builder/before.py [builder.py]
+
+@ utils/feedback2.py
+@ utils/template.html
 
 title = Python - Factoriel
 text = Ecrire une fonction qui prend en paramètreun entier et renvoie son factoriel.
