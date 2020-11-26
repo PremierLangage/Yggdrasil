@@ -11,11 +11,6 @@ text==#|markdown|
 What is the capital city of Cameroon ?
 ==
 
-* 
-+ 
-- Douala
-- Kribi
-
 good==
 Yaounde
 ==
