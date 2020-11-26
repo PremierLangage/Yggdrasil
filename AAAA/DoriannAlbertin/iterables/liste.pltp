@@ -1,0 +1,36 @@
+title= Feuille d'exercices sur les listes
+
+introduction==
+
+Introduction
+==
+
+@ /ComputerScience/python/AP1-1920/chapters/3-iterables/listes/extends.pl
+
+@ ajoute_liste.pl
+
+@ createliste.pl
+
+@ doublons.pl
+
+@ repetezip.pl
+
+@ extends.pl
+
+#@ ajoute_multiple_3.pl # introuvable
+
+@ remplace_pair.pl
+
+@ supprime_pair.pl
+
+
+# Exercices plus difficiles
+
+@ fibo.pl
+
+@ EntierGauss.pl
+
+
+
+
+
