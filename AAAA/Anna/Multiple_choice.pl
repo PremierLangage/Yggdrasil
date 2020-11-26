@@ -18,5 +18,8 @@ choices==
 doc == 
 Exo à choix multiple où on peut choisir une ou plusieurs réponses dans celles 
 proposées. 
+Code couleurs : Après validation de la réponse 
+-> Cases vertes = réponses justes
+-> Cases rouges = réponses fausses
 ==
 
