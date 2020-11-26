@@ -4,25 +4,25 @@ extends = /demo/template/blank_deroulant_template.pl
 @ /builder/before.py [builder.py]
 
 title== 
-True or False ?
+QCM Aléatoire
 ==
 
 text==#|markdown|
-Choisir la bonne réponse
+What is the capital city of Cameroon ?
 ==
 
 good==
-Napoleon, Oui c'est ca
-Bonapparte, Oui aussi malgré l'orthographe
-
+Yaounde,yes
 ==
 
 bad==
-Michel Fugain, T'es con ou quoi 
-Quentin Coumes, Peut être un jour
-le pape, pas vraiment
-Johnny, Pour leatitia 
+Douala,no
+Kribi,no
 ==
+
+
+nbgood=1
+nbbad=2
 
 
 
