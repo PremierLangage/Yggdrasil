@@ -19,7 +19,7 @@ choices==
 ==
 
 doc == 
-Exo à choix multiple où on peut choisir une ou plusieurs réponses dans celles 
+Exo à choix multiple où on peut choisir une ou plusieurs réponses parmi celles 
 proposées. 
 
 Code couleurs : Après validation de la réponse 
