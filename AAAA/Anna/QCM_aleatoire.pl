@@ -12,12 +12,12 @@ What is the capital city of Cameroon ?
 ==
 
 good==
-Yaounde
+Yaounde,yes
 ==
 
 bad==
-Douala 
-Kribi
+Douala,no
+Kribi,no
 ==
 
 
