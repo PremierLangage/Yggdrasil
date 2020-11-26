@@ -1,4 +1,4 @@
-extends = ~/template/java.pl
+extends = /template/java.pl
 
 title = Junit - Getter
 text = Create the methods `getX()` and `getY()` for the class Point.
