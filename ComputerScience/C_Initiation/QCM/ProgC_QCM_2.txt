@@ -747,38 +747,6 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - error: expected ’;’ after declaration
 - Aucune erreur ou warning n’est générée à la compilation
 
-**[nb=5,group=Transmission_par_adresse1] 70 ) Quelles sont, parmi les fonctions suivantes, celles qui peuvent modifier la valeur de l’un de leurs paramètres sans utiliser de return ?
-
-+ void absolue(int * n)
-- int absolue(int n)
-+ void sqrt(float * x)
-- float sqrt(float x)
-- Aucune de ces réponses n’est correcte
-
-**[nb=5,group=Transmission_par_adresse1] 71 ) Quelles sont, parmi les fonctions suivantes, celles qui peuvent modifier la valeur de l’un de leurs paramètres sans utiliser de return ?
-
-+ void absolue(int * n)
-+ void carre(int * n)
-- int absolue(int n)
-- float sqrt(float x)
-- Aucune de ces réponses n’est correcte 
-
-**[nb=15,group=Transmission_par_adresse1] 72 ) Quelles sont, parmi les fonctions suivantes, celles qui peuvent modifier la valeur de l’un de leurs paramètres sans utiliser de return ?
-
-- int absolue(int n)
-+ void absolue(int * n)
-- float sqrt(float x)
-+ void carre(int * n)
-- Aucune de ces réponses n’est correcte
-
-**[nb=5,group=Transmission_par_adresse1] 73 ) Quelles sont, parmi les fonctions suivantes, celles qui peuvent modifier la valeur de l’un de leurs paramètres sans utiliser de return ?
-
-+ void sqrt(float * x)
-- float sqrt(float x)
-+ void carre(int * n)
-- int carre(int n)
-- Aucune de ces réponses n’est correcte
-
 **[nb=5,group=Transmission_par_adresse2] 74 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres sans utiliser de return ?
 
 - void absolue(int * n)
