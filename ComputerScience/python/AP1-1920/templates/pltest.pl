@@ -48,8 +48,9 @@ Pour que les tests s'arrète sur la première erreur
 @ ./utils/pltest_doc.py
 @ ./utils/pltestgrader.py [grader.py]
 @ ./utils/feedback2.py
-@ ./utils/template.html
-# 
+# probleme avec le template @ ./utils/template.html
+# d'ou l'utilisation de ce lui la 
+@ /ComputerScience/python/template/anothertemplate.html [template.html]
 
 @ /utils/sandboxio.py
 
@@ -61,6 +62,7 @@ editor.fontsize=14
 form=@ /form/text_editor.html
 
 settings.allow_reroll=1
+
 
 
 
