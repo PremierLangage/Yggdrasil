@@ -950,12 +950,6 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - Lorsque le résultat de la fonction foo peut être n’importe quel entier. 
 - Jamais, cela ne sert à rien.
 
-**[nb=3,group=Renvoie_dun_code_derreur2] 79 ) Dans quel cas peut-il être intéressant qu’une fonction `int foo(int n, int * resultat)` renvoie un code d’erreur ?
-
-+ Les valeurs des paramètres n et resultat ne sont pas admises.
-- Lorsque le résultat de la fonction foo peut être n’importe quel entier. 
-- Jamais, cela ne sert à rien.
-
 * [nb=4,group=Pointeur_en_parametre_de_fonction] 80 ) On considère le code suivant:
 
 
