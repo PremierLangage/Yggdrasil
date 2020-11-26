@@ -1476,34 +1476,6 @@ On exécute le main de ce programme. Quel est alors l’état de la pile lorsque
 + tab[5] == tab[7]
 + tab[3] == 4 
 
-* [nb=5,group=affectation_tableau_PH] 109 ) On a déclaré `int tab1[5] = {1,2,3,4,5};` Quelle déclaration, instruction ou suite 
-d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
-
-- int tab2 = tab1;
-- int tab2[5] = tab1;
-- int tab2[5] = tab1; tab2[2] =tab2[1];
-+ int tab2 = {0,1,2,3,4};
-- int tab2[2] = tab1[1];
-
-* [nb=6,group=affectation_tableau_PH] 110 ) On a déclaré `int tab1[5] = {1,2,3,4,5};` Quelle déclaration, instruction ou suite 
-d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
-
-- int tab2 = tab1;
-- int tab2[5] = tab1;
-- int tab2[5] = tab1; tab2[2] -= 1; 
-- int tab2[5] = {0}; tab2[2]=tab1[5]-3; 
-+ int tab2[5] = {0}; tab2[2]=tab1[3]-2; 
-- int tab2[2]; tab2[2] = tab1[2];
-
-* [nb=5,group=affectation_tableau_PH] 111) On a déclaré `int tab1[5] = {1,2,3,4,5};` Quelle déclaration, instruction ou suite 
-d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
-
-- int tab2 = tab1;
-- int tab2[5] = tab1;
-- int tab2[5] = tab1; tab2[2] -= 1; 
-- int tab2[] = {0};
-+ int tab2[3]; tab2[2] = tab1[1];
-
 * [nb=4,group=initUn] 112 ) Le code suivant 
 
 
