@@ -944,38 +944,6 @@ Parmi les erreurs ou warning suivants, quelles sont celles que le compilateur re
 - int carre(int n)
 - Aucune de ces réponses n’est correcte
 
-**[nb=5,group=Transmission_par_adresse2] 74 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres sans utiliser de return ?
-
-- void absolue(int * n)
-+ int absolue(int n)
-- void sqrt(float * x)
-+ float sqrt(float x)
-- Aucune de ces réponses n’est correcte
-
-**[nb=5,group=Transmission_par_adresse2] 75 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres sans utiliser de return ?
-
-- void absolue(int * n)
-+ float absolue(int n)
-- int absolue(int * n)
-+ double absolue(int n)
-- Aucune de ces réponses n’est correcte
-
-**[nb=5,group=Transmission_par_adresse2] 76 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres sans utiliser de return ?
-
-- void absolue(int * n)
-+ int absolue(int n)
-- void sqrt(float * x)
-+ float sqrt(float x)
-- Aucune de ces réponses n’est correcte
-
-**[nb=5,group=Transmission_par_adresse2] 77 ) Quelles sont, parmi les fonctions suivantes, celles qui ne peuvent modifier la valeur de l’un de leurs paramètres sans utiliser de return ?
-
-- void sqrt(float * x)
-+ float sqrt(float x)
-- void carre(int * n)
-+ int carre(int n)
-- Aucune de ces réponses n’est correcte
-
 **[nb=3,group=Renvoie_dun_code_derreur1] 78 ) Dans quel cas peut-il être intéressant qu’une fonction `int foo(int n)` renvoie un code d’erreur ?
 
 + La valeur du paramètre n n'est pas admise.
