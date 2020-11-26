@@ -6,7 +6,7 @@ Q3
 
 text==
 Compléter le code suivant pour que la fonction puisse être opérationnelle
-== 
+
 
 editor.code==
 
@@ -21,6 +21,9 @@ def factoriel(n):
         f*=i+1 
     return f 
 ==
+
+== 
+
 
 choices==
 =range(n) #Bravo
