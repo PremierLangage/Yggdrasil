@@ -535,32 +535,6 @@ Combien y en a t-il ?
 - 2 et 1
 - 1 et 1
 
-*[nb=4,group=boucle_do_while] 58 ) Qu’affiche le programme suivant ?
-
-
-    int main(){
-
-        int n = 10, m = 0;
-
-        do{
-
-            m = m+1;
-
-            n = n-1;
-
-        }while(m < n);
-
-        printf("%d et %d\n", n, m);
-
-        return 0;
-
-    }
-
-+ 5 et 5
-- 4 et 6
-- 6 et 4
-- 5 et 4
-
 *[nb=4,group=boucle_for] 59 ) Qu’affiche le programme suivant ?
 
 
@@ -598,17 +572,6 @@ Quelle sont les en-têtes possibles de cette fonction ?
 - int saisirDeuxEntiers(int n, int m)
 - int, int saisirDeuxEntiers(int *n, int *m)
 - int, int saisirDeuxEntiers(int n, int m)
-
-**[nb=6,group=appel_fonction] 61 ) On suppose que n et m sont deux variables de type int et que l’on se donne des fonctions
- dont les en-têtes sont `void f(int a, int *b)` et `int g(int c)`. 
- Parmi les instructions suivantes, lesquelles sont correctes ?
-
-- n = f(0, m)
-+ f(n, &m)
-+ f(g(n), &m)
-- n+m = g(m)
-- f(&n, m)
-- f(n, *m)
 
 # Catalogue 3 Prog C Olivier BOUILLOT
 
