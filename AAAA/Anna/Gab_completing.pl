@@ -7,8 +7,6 @@ Q3
 text==#|markdown|
 Compléter le code suivant pour que la fonction puisse être opérationnelle
 
-
-
     def factoriel(n):
 
         """
