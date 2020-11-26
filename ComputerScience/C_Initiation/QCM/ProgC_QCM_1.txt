@@ -82,22 +82,6 @@ Combien y en a t'il ?
 - 2
 - 3
 
-**[nb=5,group=separateur] 5 ) Quels sont les séparateurs dans un programme écrit en C ?
-
-+ les espaces
-+ les tabulations
-+ les retours à la ligne
-- les virgules
-- les points virgules 
-
-**[nb=5,group=indentation] 6 ) L'indentation d'un programme C ...
-
-- ...permet au compilateur de reconnaitre les blocs
-- ...est nécessaire pour l'éditeur de texte
-+ ...aide à la lisibilité
-- ...peut remplacer les accolades
-- ...évite d'utiliser des ;
-
 *[nb=4,group=commentaire] 7 ) Comment doivent être écrits les commentaires en C pour passer la norme ansi ?
 
 - # ....
@@ -112,55 +96,6 @@ Combien y en a t'il ?
 - \r
 - \c
 - ;
-
-*[nb=4,group=affichage_Sortie_Standard] 9 ) Quelle est l'instruction permettant d'afficher à l'écran une chaine de caractères en C ?
-
-- print
-- scanf
-- println
-+ printf
-
-*[nb=3,group=utilite_points_virgules] 10 ) A quoi servent les points virgules en C ?
-
-- À différencier du premier coup d'oeil un code écris en C et en Python
-+ À indiquer au compilateur la fin d'une instruction simple 
-- À indiquer au compilateur qu'il va lui falloir lire une nouvelle ligne
-
-**[nb=8,group=Compilation] 11 ) Quelle(s) ligne(s) de commande permet(tent) de compiler le programme HelloWorld.c
-en un executable HelloWorld suivant toute(s) l(es) option(s) transmise(s) au compilateur ?
-
-+ gcc HelloWorld.c -o HelloWorld
-+ gcc -ansi HelloWorld.c -o HelloWorld
-- gcc -Ansi HelloWorld.c HelloWorld
-- gcc -Ansi HelloWorld.c -o HelloWorld
-- gcc -ansi -Wall HelloWorld.c HelloWorld
-+ gcc -ansi -Wall HelloWorld.c -o HelloWorld
-- gcc -ansi -wall HelloWorld.c HelloWorld 
-- aucune de ces réponses
-
-**[nb=8,group=Compilation] 12 ) Quelle(s) ligne(s) de commande permet(tent) de compiler le programme HelloWorld.c
-en un executable HelloWorld suivant toute(s) l(es) option(s) transmise(s) au compilateur ?
-
-- gcc HelloWorld.c HelloWorld
-+ gcc HelloWorld.c -o HelloWorld
-- gcc -Ansi HelloWorld.c -o HelloWorld
-- gcc -ansi -Wall HelloWorld.c HelloWorld
-- gcc -ansi -wall HelloWorld.c -o HelloWorld
-- gcc -Ansi -Wall HelloWorld.c HelloWorld
-- gcc -Ansi -wall HelloWorld.c -o HelloWorld
-- aucune de ces réponses
-
-**[nb=8,group=Compilation] 13 ) Quelle(s) ligne(s) de commande permet(tent) de compiler le programme HelloWorld.c
-en un executable HelloWorld suivant toute(s) l(es) option(s) transmise(s) au compilateur ?
-
-- gcc HelloWorld.c HelloWorld
-- gcc -ansi HelloWorld.c HelloWorld
-- gcc -Ansi HelloWorld.c HelloWorld
-- gcc -Ansi HelloWorld.c -o HelloWorld
-- gcc -ansi -wall HelloWorld.c -o HelloWorld
-- gcc -Ansi -Wall HelloWorld.c -o HelloWorld
-- gcc -Ansi -wall HelloWorld.c -o HelloWorld
-+ aucune de ces réponse
 
 **[nb=5,group=Warning_flottant] 14 ) On dispose de deux variables a et b. Dans quels cas,lors de l'exécution d'un 
 programme calcul.c, peut-on constater que a + b == a ?
