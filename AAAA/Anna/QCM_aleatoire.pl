@@ -4,27 +4,28 @@ extends = /demo/template/aleaQCM__template.pl
 @ /builder/before.py [builder.py]
 
 title== 
-True or False ?
+QCM Aléatoire
 ==
 
 text==#|markdown|
-Choisir la bonne réponse
+What is the capital city of Cameroon ?
 ==
 
-good==
-Napoleon, Oui c'est ca
-Bonapparte, Oui aussi malgré l'orthographe
+* 
++ 
+- Douala
+- Kribi
 
+good==
+Yaounde
 ==
 
 bad==
-Michel Fugain, T'es con ou quoi 
-Quentin Coumes, Peut être un jour
-le pape, pas vraiment
-Johnny, Pour leatitia 
+Douala 
+Kribi
 ==
 
 
-nbgood=2
-nbbad=3
+nbgood=1
+nbbad=2
 
