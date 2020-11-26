@@ -67,45 +67,6 @@ en un executable HelloWorld suivant toute(s) l(es) option(s) transmise(s) au com
 - gcc -Ansi -wall HelloWorld.c -o HelloWorld
 + aucune de ces réponse
 
-**[nb=5,group=Division] 16 ) Que vaut 3/2 en C ?
-
-+ 1
-- 1.
-- 1.5
-- 1.0
-- On ne sait pas
-
-**[nb=5,group=Division] 17 ) Que vaut 3./2 en C ?
-
-- 1
-- 1.
-+ 1.5
-- 1.0
-- On ne sait pas
-
-**[nb=5,group=Division] 18 ) Que vaut 3/2. en C ?
-
-- 1
-- 1.
-+ 1.5
-- 1.0
-- On ne sait pas
-
-**[nb=5,group=Division] 19 ) On considère les instructions suivantes :
-
-
-    x = 3;
-
-    y = 2;
-
-Que vaut x/y ?
-
-- 1
-- 1.
-- 1.5
-- 1.0
-+ On ne sait pas
-
 *[nb=5,group=adresse] 20 ) Comment récupère t-on l'adresse d'une variable x ?
 
 - x
