@@ -678,25 +678,6 @@ Quelles sont-elles ?
 + testée juste avant l’exécution du bloc
 - toujours testée une seule fois
 
-**[nb=4,group=boucle_infinie] 51 ) On peut écrire une boucle infinie avec :
-
-+ une boucle for
-+ une boucle while
-+ une boucle do while
-- impossible en C
-
-*[nb=3,group=condition] 52 ) Le bloc d’une boucle while est exécutée lorsque la condition est ...
-
-+ ... vraie
-- ... fausse
-- ... évaluée pour la deuxième fois
-
-*[nb=3,group=condition] 52bis ) Le bloc d’une boucle `do while` est exécutée au moins une fois lorsque la condition est ...
-
-+ ... vraie
-+ ... fausse
-- ... évaluée pour la deuxième fois
-
 *[nb=4,group=break_dans_un_switch] 53 ) A quoi sert un break dans un switch ?
 
 - à sortir du programme
