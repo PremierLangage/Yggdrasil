@@ -969,37 +969,6 @@ si l’utilisateur entre : R T Y U
 + l’indice -1 du tableau int tab[5]; n’est pas valide
 - l’indice -1 du tableau int tab[5]; désigne la case 4
 
-** [nb=4,group=indices_tableau_PH] 105 ) Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
-
-- tab[2] == 2
-+ tab[7] == 0
-+ tab[3] == 4
-+ tab[12] n’est pas défini
-- tab[-1] == 4
-
-** [nb=4,group=indices_tableau_PH] 106 ) Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
-
-- tab[2] == 2
-+ tab[10] n’est pas défini
-- tab[8] n’est pas défini
-- tab[-1] == 0
-
-** [nb=5,group=indices_tableau_PH] 107 ) Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
-
-- tab[2] == 2
-+ tab[1] == 2
-- tab[8] n’est pas défini
-- tab[-1] == 0
-+ tab[11] n’est pas défini
-
-** [nb=5,group=indices_tableau_PH] 108 ) Après l’instruction suivante : `int tab[10] = {1,2,3,4};` quelles affirmations sont vraies ?
-
-- tab[2] == 2
-+ tab[12] n’est pas défini
-- tab[10] == 0
-+ tab[5] == tab[7]
-+ tab[3] == 4 
-
 * [nb=5,group=affectation_tableau_PH] 109 ) On a déclaré `int tab1[5] = {1,2,3,4,5};` Quelle déclaration, instruction ou suite 
 d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 
@@ -1027,20 +996,6 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 - int tab2[5] = tab1; tab2[2] -= 1; 
 - int tab2[] = {0};
 + int tab2[3]; tab2[2] = tab1[1];
-
-* [nb=4,group=initUn] 112 ) Le code suivant 
-
-
-    int i,tab[10];
-
-    for(i=0;i<10;i++)
-
-        scanf("%d",&tab[i]);
-
-+ remplit les cases d’indice de 0 à 9 avec des valeurs lues au clavier
-- remplit les cases d’indice de 0 à 10 avec des valeurs lues au clavier
-- remplit les cases d’indice de 1 à 10 avec des valeurs lues au clavier
-- provoque une erreur à l’exécution
 
 * [nb=5,group=tableau_sautant_PH] 113 ) Quelle valeur affichera le code suivant ?
 
@@ -1099,78 +1054,6 @@ d’instructions faut-il ajouter pour que tab2[2] ait pour valeur 2 ?
 - 2
 - 3
 - 4
-
-** [nb=5,group=fonction_tableau_pointeur_PH] 116 ) Dans la fonction suivante (remplissant depuis le clavier un tableau tab de taille taille), 
-quelles lignes sont incorrectes ?
-
-
-    /* 1*/  void scanTab (int tab[], int taille) {
-
-    /* 2*/      int i;
-
-    /* 3*/      printf("Veuillez saisir %d entiers : ", *taille);
-
-    /* 4*/
-
-    /* 5*/      for (i=0; i < *taille; i=i+1)
-
-    /* 6*/          scanf("%d", tab[i]);
-
-    /* 7*/  }
-
-- 2
-+ 3
-+ 5
-+ 6
-- aucune de celles-ci
-
-** [nb=5,group=fonction_tableau_pointeur_PH] 117 ) Dans la fonction suivante (remplissant depuis le clavier un tableau tab de taille `taille`), 
-quelles lignes sont incorrectes ?
-
-
-    /* 1*/  void scanTab (int tab[], int taille) {
-
-    /* 2*/      int i;
-
-    /* 3*/      printf("Veuillez saisir %d entiers : ", &taille);
-
-    /* 4*/
-
-    /* 5*/      for (i=0; i < &taille; i=i+1)
-
-    /* 6*/          scanf("%d", &tab[i]);
-
-    /* 7*/  }
-
-- 2
-+ 3
-+ 5
-- 6
-- aucune de celles-ci
-
-** [nb=5,group=fonction_tableau_pointeur_PH] 118 ) Dans la fonction suivante (remplissant depuis le clavier un tableau tab de taille `taille`), 
-quelles lignes sont incorrectes ?
-
-
-    /* 1*/  void scanTab (int tab[], int taille) {
-
-    /* 2*/      int i;
-
-    /* 3*/      printf("Veuillez saisir %d entiers : ", taille);
-
-    /* 4*/
-
-    /* 5*/      for (i=0; i < taille; i=i+1)
-
-    /* 6*/          scanf("%d", tab[i]);
-
-    /* 7*/  }
-
-- 2
-- 3
-- 5
-+ 6
-- aucune de celles-ci
 
 * [nb=5,group=ptrtab] 119 ) On définit deux tableaux de dix int par:
 
