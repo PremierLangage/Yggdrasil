@@ -1,7 +1,7 @@
 extends= lib/gift/templates/qessay.pl 
 
 title = Saving entries
-text  = Etes vous apprenti ou suivez vous le parcours scolaire initial ? Apprenti / Initial
+text  = Résumer le texte sur le lien suivant en 80 mots au maximum : " http://mumm.hautetfort.com/tres_long_texte/"
 
 doc ==
 Ce style d'exo permet de sauvegarder les informations entrées par l'utilisateur
