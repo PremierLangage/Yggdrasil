@@ -685,32 +685,6 @@ Quelles sont-elles ?
 + à sortir du switch
 - à décider du vainqueur
 
-*[nb=6,group=resultatboucle] 54 ) Qu’affiche le programme suivant ?
-
-
-    #include <stdio.h>
-
-    int main(void){
-
-        int a = 2;
-
-        for (a = 0; a < 10; a+=1)
-
-            printf("+");
-
-        printf("\n");
-
-        return 0;
-
-    }
-
-- 9 fois le caractère + sur une seule ligne
-- rien
-- 11 fois le caractère + sur une seule ligne
-+ 10 fois le caractère + sur une seule ligne
-- 11 lignes contenant chacune le caractère +
-- 10 lignes contenant chacune le caractère +
-
 *[nb=6,group=resultatboucle] 55 ) Qu’affiche le programme suivant ?
 
 
