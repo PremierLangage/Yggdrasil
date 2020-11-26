@@ -8,9 +8,10 @@ textstep ==
 title= 1er examen d'Introduction à la programmation C
 
 text=
-onepergroup % false
+onepergroup % true
 
 questions=@ ProgC_QCM_1.txt
+
 
 
 
