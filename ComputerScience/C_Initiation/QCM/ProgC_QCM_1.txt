@@ -1046,15 +1046,6 @@ un nombre entier positif, transmis en paramètre est premier. Quel doit être le
 - int estPremier(int *a)
 - float estPremier(int n)
 
-* [nb=4,group=Puissance] 87 ) On veut écrire une fonction puissanceEntiere qui calcule la valeur **x**<sup>**n**</sup> pour **x** un nombre 
-réel et **n** un entier positif. On veut pouvoir gérer le cas où la fonction ne peut effectuer le calcul 
-(si l’entier transmis en paramètre est négatif). Quel doit être le prototype de cette fonction ?
-
-+ int puissanceEntiere(float x,int n,float *resultat)
-- float puissanceEntiere(float x,int n)
-- void puissanceEntiere(float x,int n,float resultat)
-- void puissanceEntiere(float x,int n)
-
 * [nb=4,group=Pile_d_execution] 88 ) La pile d’exécution est utilisée :
 
 + lors de l’appel d’une fonction
@@ -1068,13 +1059,6 @@ réel et **n** un entier positif. On veut pouvoir gérer le cas où la fonction 
 - lors de l’allocation des variables globales
 - pour controler la vitesse des boucles
 - lors de la compilation
-
-* [nb=4,group=Parametre] 90 ) Les paramètres d’une fonction sont toujours transmis :
-
-- par adresse
-- au moment de la compilation
-+ par valeur
-- par l’interpréteur
 
 ** [nb=5,group=InitAdresse] 91 ) La fonction f :
 
@@ -1094,99 +1078,6 @@ réel et **n** un entier positif. On veut pouvoir gérer le cas où la fonction 
 - affiche 4 si on l’appelle avec f(5)
 + entraine une erreur à l’exécution
 - affiche une adresse
-
-* [nb=5,group=Lecture_De_Char] 92 ) Qu’affiche le programme :
-
-
-    int main(void){
-
-        char a,b,c,d;
-
-        scanf("%c",&a);scanf(" %c",&b);
-
-        scanf("%c",&c);scanf(" %c",&d);
-
-        printf("%c%c%c%c\n", a,b,c,d);
-
-        return 0;
-
-    }
-
-si l’utilisateur entre : x y z t
-
-+ xy z
-- provoque un warning à la compilation
-- x y z t
-- xyzt
-- entraine une erreur à l’exécution
-
-* [nb=5,group=Lecture_De_Char] 93 ) Qu’affiche le programme :
-
-
-    int main(void){
-
-        char a,b,c,d;
-
-        scanf("%c",&a);scanf(" %c",&b);
-
-        scanf("%c",&c);scanf(" %c",&d);
-
-        printf("%c%c%c%c\n", a,b,c,d);
-
-        return 0;
-
-    }
-
-
-                             P
-
-    si l’utilisateur entre : O
-
-                             I U
-
-
-                                        P
-
-    Réponse 1 : P O         Réponse 2 : O         Réponse 3 : POIU
-
-                I                       I
-
-                                        U
-
-    Réponse 4 : provoque un warning à la compilation
-
-    Réponse 5 : entraîne une erreur à l'exécution
-
-+ Réponse 1
-- Réponse 2
-- Réponse 3
-- Réponse 4
-- Réponse 5
-
-* [nb=5,group=Lecture_De_Char] 94 ) Qu’affiche le programme :
-
-
-    int main(void){
-
-        char a,b,c,d;
-
-        scanf("%c",&a);scanf(" %c",&b);
-
-        scanf("%c",&c);scanf(" %c",&d);
-
-        printf("%c%c%c%c\n", a,b,c,d);
-
-        return 0;
-
-    }
-
-si l’utilisateur entre : R T Y U
-
-+ RT Y
-- R T Y U
-- provoque un warning à la compilation
-- entraire une erreur à l’exécution
-- RTYU
 
 * [nb=6,group=Pile] 95 ) Considérons le programme suivant :
 
