@@ -1,5 +1,5 @@
 extends = /ComputerScience/python/AP1-1920/templates/prosoluce.pl
-
+before = 
 title = Python - Factoriel
 text = Ecrire une fonction qui prend en paramètreun entier et renvoie son factoriel.
 
@@ -13,5 +13,6 @@ def factorielle(n):
             F = F * k
         return F
 ==
+
 
 
