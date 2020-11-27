@@ -11,6 +11,9 @@ pltest==
 1
 >>> factorielle(2) == 2
 True
->>> factorielle(56) == 35
+>>> factorielle(56)
+22
+>>> factorielle(10)
+777
 ==
 
