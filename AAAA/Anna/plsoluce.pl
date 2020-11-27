@@ -1,4 +1,4 @@
-extends = /ComputerScience/python/AP1-1920/templates/plsoluce.pl
+extends = /ComputerScience/python/AP1-1920/templates/prosoluce.pl
 @ utils/soluceevaluator.py          [grader.py] # le as de python import toto as titi
 @ utils/gradesoluce.py
 @ /utils/sandboxio.py
@@ -21,4 +21,5 @@ def factorielle(n):
             F = F * k
         return F
 ==
+
 
