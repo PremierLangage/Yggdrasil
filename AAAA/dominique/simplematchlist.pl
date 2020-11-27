@@ -12,7 +12,9 @@ before ==
 if type(pairs)==list:
     matchlist.setdata_from_matches(pairs)
 else:
-    matchlist.setdata_from_matches([ l.split("§") for l in  pairs.splitlines() if "§" in l ])
+    if "delimiter" not in globals():
+        delimiter="§"
+    matchlist.setdata_from_matches([ l.split(delimiter) for l in  pairs.splitlines() if delimiter in l ])
 ==
 
 text= A DEFINIR 
@@ -32,6 +34,7 @@ score = matchlist.eval()
 ==
 
 settings.feedback = lightscore
+
 
 
 
