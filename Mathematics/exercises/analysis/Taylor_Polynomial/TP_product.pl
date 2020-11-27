@@ -15,7 +15,7 @@ P = randitem([exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f3,f4])
 Q = randitem([exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f3,f4])
 
 PQ = P*Q
-DLn = (P*Q).series(x,0,n+1) # Attention +1 sur l'ordre (notation O par défault).
+DLn = PQ.series(x,0,n+1) # Attention +1 sur l'ordre (notation O par défault).
 Reg = DLn.subs(O(x**(n+1)),0)
 
 sol = Reg # version développée
