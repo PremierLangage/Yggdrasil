@@ -9,7 +9,8 @@ $%\forall l \in \mathbb{Z} \quad \exists n \in \mathbb{N} \quad  q_n=l%$§la sui
 $%\forall l \in \mathbb{Z}^* \quad \exists n \in \mathbb{N} \quad  |q_n|\le  \frac{1}{l} %$§la suite $%(q_n)_{n \in \mathbb{N}%$ est nulle .
 ==
 
-text = Soit $% (u_n)_{n \in\mathbb{N}} %$  une suite de nombre rationnels. Associer les prédicats suivants avec leurs significations en français. 
+text = Soit $% (q_n)_{n \in\mathbb{N}} %$  une suite de nombre rationnels. Associer les prédicats suivants avec leurs significations en français. 
 
 title = Sens d'un prédicat
+
 
