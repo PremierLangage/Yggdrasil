@@ -39,7 +39,7 @@ form==
 {{ inputbox|component}}
 ==
 
-evaluator==
+evaluator==#|python|
 if 2 == int(inputbox.value):
     grade = (100, '''<span class="success-state">Mais oui, mais c'est bien sûr !</span>''')
 else:
