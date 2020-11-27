@@ -22,7 +22,7 @@ text==
 Quand le clip suivant, combien de souris le chat fait-il couiné ?
 
 
-<video><source src="{{ url_clip }}" type="video/MP4"></video>
+<video controls><source src="{{ url_clip }}" type="video/MP4"></video>
 
 ==
 
