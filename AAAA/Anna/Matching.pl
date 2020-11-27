@@ -1,5 +1,5 @@
 
-extends= simplematchlist.pl
+extends= /AAAA/dominique/simplematchlist.pl
 
 
 title==
