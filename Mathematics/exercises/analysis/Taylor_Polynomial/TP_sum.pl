@@ -4,8 +4,8 @@ title = Développer une expression polynomiale
 
 before ==
 var('x') # crée le symbole x
-P = rd.randint(-5, 5) + rd.randint(-5, 5)*x
-Q = rd.randint(-5, 5) + rd.randint(-5, 5)*x
+P = randitem([exp(x), ln(1+x)])
+Q = randitem([cos(x), sin(x)])
 expr_poly = P*Q # version non développée
 sol = (P * Q).expand() # version développée
 ==
