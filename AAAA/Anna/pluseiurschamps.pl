@@ -54,11 +54,8 @@ text==
 
 """
 
-
-if r == inputbox.value:
-    grade = (100, feedback)
-else:
-    grade = (0, '<span class="error-state">Bad answer 👎👎👎</span>')
+grade = (100, feedback)
 ==
+
 
 
