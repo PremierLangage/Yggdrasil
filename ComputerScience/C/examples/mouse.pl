@@ -41,9 +41,9 @@ form==
 
 evaluator==
 if 2 == int(inputbox.value):
-    grade = (100, '<span class="success-state">Mais oui, mais c'est bien sûr !</span>')
+    grade = (100, '''<span class="success-state">Mais oui, mais c'est bien sûr !</span>''')
 else:
-    grade = (0, '<span class="error-state">Regardez mieux le chat, c'est celui qui a le plus de poil...</span>')
+    grade = (0, '''<span class="error-state">Regardez mieux le chat, c'est celui qui a le plus de poil...</span>''')
 ==
 
 
