@@ -15,7 +15,7 @@ Compléter le code suivant pour que la fonction puisse être opérationnelle
         if n<0:  
             return None  
         f=1  
-        for i in <b>_____</b>:  
+        for i in _____:  
             f*=i+1  
         return f  
  
@@ -33,5 +33,6 @@ Après validation de la réponse :
 ✓ -> réponse correcte 
 x -> réponse fausse
 ==
+
 
 
