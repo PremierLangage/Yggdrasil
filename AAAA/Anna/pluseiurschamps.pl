@@ -58,8 +58,7 @@ evaluator==
 feedback = f"""
 title={inputbox.value}
 text==
-{editor.code}
-==
+{editor.code}\n==
 
 """
 
