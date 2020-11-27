@@ -6,8 +6,8 @@ before ==
 var('x') # crée le symbole x
 P = randitem([exp(x), ln(1+x)])
 Q = randitem([cos(x), sin(x)])
-P1 = P.series(x==0, 3)
-Q1 = Q.series(x==0, 3)
+P1 = P.series(x==0, 1)
+Q1 = Q.series(x==0, 1)
 expr_poly = P1*Q1 # version non développée
 sol = (P1 * Q1).expand() # version développée
 ==
