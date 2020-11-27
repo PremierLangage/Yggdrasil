@@ -8,7 +8,7 @@ inputbox.placeholder = Answer
 inputbox.maxlength = 3
 inputbox.appearance = outline
 
-url_clip =$ PereBorie.webm
+url_clip =$ small24fps.mp4
 
 before==
 
@@ -22,7 +22,7 @@ text==
 Quand le clip suivant, combien de souris le chat fait-il couiné ?
 
 
-<video><source src="{{ url_clip }}" type="video/webm"></video>
+<video><source src="{{ url_clip }}" type="video/mp4"></video>
 
 ==
 
