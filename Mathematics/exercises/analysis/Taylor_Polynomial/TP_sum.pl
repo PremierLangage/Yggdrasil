@@ -7,8 +7,8 @@ var('x') # crée le symbole x
 n = 3 # Ordre du DL
 P = randitem([exp(x), ln(1+x)])
 Q = randitem([cos(x), sin(x)])
-P1 = P.series(x,0,n+1) # Attention +1 sur l'ordre
-Q1 = series(cos(x),x,0,n+1) 
+P1 = P.series(x,0,n+1) # Attention +1 sur l'ordre (notation O par défault).
+Q1 = Q.series(x,0,n+1) 
 P2=P1.subs(O(x**(n+1)),0)
 Q2=Q1.subs(O(x**(n+1)),0)
 expr_poly = P2*Q2 # version non développée
