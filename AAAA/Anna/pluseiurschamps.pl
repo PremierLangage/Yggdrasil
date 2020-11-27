@@ -46,6 +46,8 @@ Enter the result of ** {{ a }} + {{ b }} ** inside the input box.
 
 
 evaluator==
+text=""
+title=""
 
 feedback = f"""
 title={inputbox.value}
@@ -56,6 +58,7 @@ text==
 
 grade = (100, feedback)
 ==
+
 
 
 
