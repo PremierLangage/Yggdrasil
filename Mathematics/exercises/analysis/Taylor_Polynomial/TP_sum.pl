@@ -10,7 +10,7 @@ P1 = series(exp(x),x,0,2) # Attention +1 sur l'ordre
 Q1 = series(cos(x),x,0,2) 
 P2=P1.subs(O(x**2),0)
 Q2=Q1.subs(O(x**2),0)
-expr_poly = P1*Q1 # version non développée
+expr_poly = P2*Q2 # version non développée
 sol = (P1 * Q1).expand() # version développée
 ==
 
