@@ -13,4 +13,4 @@ pltest==
 True
 >>> factorielle(56) == 35
 ==
-xs
+
