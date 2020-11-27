@@ -3,7 +3,7 @@ extends = /template/java.pl
 title = Junit - Getter
 text = Create the methods `getX()` and `getY()` for the class Point.
 
-classname = anna
+classname = Point
 before=
 editor.code==
 public class Point {
