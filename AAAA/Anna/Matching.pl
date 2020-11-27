@@ -10,8 +10,8 @@ text==
 Relier chaque mot français à sa traduction en anglais
 ==
 
-delimiter% "->"
-
+delimiter % "->"
+delimiter= ->
 pairs==
 Pomme -> Apple
 Chien -> Dog
