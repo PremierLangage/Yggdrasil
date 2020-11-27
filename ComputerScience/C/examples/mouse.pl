@@ -19,8 +19,10 @@ Analyser une vidéo
 ==
 
 text==
-Quand le clip suivant, combien de souris le chat fait-il couiné ?
 
+**Quand le clip suivant, combien de souris le chat fait-il couiné ?** 
+
+<br>
 
 <video controls><source src="{{ url_clip }}" type="video/MP4"></video>
 
