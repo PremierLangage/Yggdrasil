@@ -9,7 +9,7 @@ Q = randitem([cos(x), sin(x)])
 P1 = taylor(P, x, 0, 3)
 Q1 = taylor(Q, x, 0, 3)
 expr_poly = P1*Q1 # version non développée
-sol = (P * Q).expand() # version développée
+sol = (P1 * Q1).expand() # version développée
 ==
 
 text ==
