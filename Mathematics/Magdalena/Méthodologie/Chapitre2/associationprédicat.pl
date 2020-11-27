@@ -1,4 +1,6 @@
-extends = /model/matchlist/matchlist.pl
+extends= /model/math.pl
+extends= simplematchlist.pl
+
 
 pairs ==
 $%\forall n \in \mathbb{N} \quad \exists l \in \mathbb{Z} \quad q_n=l%$§la suite $!(q_n)_{n \in \mathbb{N}!$ est à valeurs dans les entiers relatifs.
