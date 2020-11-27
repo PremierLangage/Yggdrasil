@@ -8,8 +8,6 @@ inputbox.placeholder = Answer
 inputbox.maxlength = 3
 inputbox.appearance = outline
 
-@ small24fps.mp4
-
 url_clip =$ small24fps.mp4
 
 before==
