@@ -43,9 +43,7 @@ text==
 Enter the result of ** {{ a }} + {{ b }} ** inside the input box.
 ==
 
-form==
 
-==
 
 evaluator==
 
