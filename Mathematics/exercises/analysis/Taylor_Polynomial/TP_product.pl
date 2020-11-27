@@ -18,7 +18,7 @@ PQ = P*Q
 DLn = PQ.series(x,0,n+1) # Attention +1 sur l'ordre (notation O par défault).
 Reg = DLn.subs(O(x**(n+1)),0)
 
-sol = Reg # version développée
+sol = Reg # Solution
 
 # Remarque générale : Sympy sait calculer avec les "O", mais je ne sais pas si il connait les "o"...
 ==
