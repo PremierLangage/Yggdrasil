@@ -1,6 +1,7 @@
 
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
+@ /utils/sandboxio.py
 
 editor =: CodeEditor
 editor.theme = dark
