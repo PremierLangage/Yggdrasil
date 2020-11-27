@@ -126,7 +126,7 @@ def parse_AMC_TXT(txt):
         elif line == "" and pending and k > 0:
             if question_type == "Radio":
                 if len(index) == 0:
-                    raise Exception(" pas de reponse correcte dans une question Radio")
+                    raise Exception(" pas de reponse correcte dans une question Radio: use a checkbox ")
                 index = index[0]
             questions.append({'type': question_type, 
             'text': statement, 
@@ -139,12 +139,6 @@ def parse_AMC_TXT(txt):
             extended= False
 
     return questions
-
-
-
-
-
-
 
 
 
