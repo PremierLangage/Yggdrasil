@@ -4,7 +4,7 @@ builder =@ /builder/before.py
 
 inputbox =: Input
 inputbox.type = number
-inputbox.placeholder = Answer
+inputbox.placeholder = Nombre de souris
 inputbox.maxlength = 3
 inputbox.appearance = outline
 
@@ -20,7 +20,7 @@ Analyser une vidéo
 
 text==
 
-**Quand le clip suivant, combien de souris le chat fait-il couiné ?** 
+Quand le clip suivant, combien de souris le chat fait-il couiné ?
 
 <br>
 
