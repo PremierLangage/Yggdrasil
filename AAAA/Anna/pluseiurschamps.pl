@@ -12,7 +12,7 @@ editor.code ==
 ==
 
 inputbox =: Input
-inputbox.type = number
+inputbox.type = text
 inputbox.placeholder = Titre
 inputbox.maxlength = 2
 inputbox.appearance = outline
