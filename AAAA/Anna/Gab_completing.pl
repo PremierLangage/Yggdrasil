@@ -7,26 +7,18 @@ Gab Completing
 text==#|markdown|
 Compléter le code suivant pour que la fonction puisse être opérationnelle
 
-    def factoriel(n):
 
-        """
-
-        Calcule le factoriel de l'entier n
-
-        """
-
-        if n<0:
-
-            return None
-
-        f=1
-
-        for i in <b>_____</b>:
-
-            f*=i+1 
-
-        return f 
-
+    def factoriel(n):  
+        """  
+        Calcule le factoriel de l'entier n  
+        """  
+        if n<0:  
+            return None  
+        f=1  
+        for i in <b>_____</b>:  
+            f*=i+1  
+        return f  
+ 
 
 == 
 
@@ -41,4 +33,5 @@ Après validation de la réponse :
 ✓ -> réponse correcte 
 x -> réponse fausse
 ==
+
 
