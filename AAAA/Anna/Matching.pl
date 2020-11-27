@@ -11,6 +11,7 @@ Relier chaque mot français à sa traduction en anglais
 ==
 
 delimiter% "->"
+
 pairs==
 Pomme -> Apple
 Chien -> Dog
