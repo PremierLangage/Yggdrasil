@@ -16,7 +16,7 @@ tag=open|with|readlines|file
 before==
 from random import randint
 k=randint(1,6)
-soluce= presoluce.format(k=k)
+soluce= presoluce
 ==
 
 back==
@@ -32,7 +32,7 @@ for i in globals():
 presoluce==
 with  open("test_text.txt", 'r') as fichier:
     lines = fichier.readlines()
-print(lines[{k}-1])
+print(lines[1])
 ==
 
 text==
@@ -44,6 +44,7 @@ Ecrire un programme qui lit la **{{k}}-ième** ligne du fichier "test_text.txt" 
 plsoluce==
 Le test |
 ==
+
 
 
 
