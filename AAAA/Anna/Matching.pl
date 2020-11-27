@@ -1,4 +1,6 @@
-extends = /gift/templates/qmatch.pl
+
+extends= simplematchlist.pl
+
 
 title==
 Matching
@@ -8,11 +10,11 @@ text==
 Relier chaque mot français à sa traduction en anglais
 ==
 
-choices==
-=Pomme -> Apple
-=Chien -> Dog
-=Règle -> Rule
-=Chaussure -> Shoes
+pairs==
+Pomme § Apple
+Chien § Dog
+Règle§ Rule
+Chaussure § Shoes
 ==
 
 doc ==
@@ -22,3 +24,4 @@ Code couleurs : Après validation de la réponse
 -> Flèches vertes = réponses justes
 -> Flèches rouges = réponses fausses
 ==
+
