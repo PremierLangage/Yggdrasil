@@ -4,7 +4,7 @@ title = Développement limité d'un produit.
 
 before ==
 var('x') # crée le symbole x
-n = 3 # Ordre du DL
+n = 1 # Ordre du DL
 
 f1=1/(1+x)
 f2=1/(1-x)
