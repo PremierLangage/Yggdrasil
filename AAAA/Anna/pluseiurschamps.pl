@@ -50,9 +50,9 @@ text=""
 title=""
 form=""
 feedback = f"""
-title={inputbox.value}
-text==
-{editor.code}\n==
+title={inputbox.value}     
+text== . . 
+{editor.code} . .  \n== . . 
 
 """
 
