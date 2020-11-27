@@ -11,7 +11,7 @@ P1 = P.series(x,0,n+1) # Attention +1 sur l'ordre (notation O par défault).
 Q1 = Q.series(x,0,n+1) 
 P2=P1.subs(O(x**(n+1)),0)
 Q2=Q1.subs(O(x**(n+1)),0)
-expr_poly = P2*Q2 # version non développée
+expr_poly = P*Q # version non développée
 sol = (P2 * Q2).expand() # version développée
 
 # Remarque générale : Sympy sait calculer avec les "O", mais je ne sais pas si il connait les "o"...
