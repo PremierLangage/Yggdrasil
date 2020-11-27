@@ -19,8 +19,7 @@ Analyser une vidéo
 ==
 
 text==
-
-Quand le clip suivant, combien de souris le chat fait-il couiné ?
+Dans le clip suivant, combien de souris le chat fait-il couiné ?
 
 <br>
 
