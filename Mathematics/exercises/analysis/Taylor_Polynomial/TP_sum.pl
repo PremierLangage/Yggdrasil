@@ -18,7 +18,8 @@ sol = (P2 * Q2).expand() # version développée
 ==
 
 text ==
-Calculer la partie régulière du développement limité à l'ordre $!n!$ de la fonction ci-dessous $${{ expr_poly|latex }}.$$
+Calculer la partie régulière du développement limité à l'ordre $!n!$ de la fonction ci-dessous 
+$${{ expr_poly|latex }}.$$
 ==
 
 evaluator ==
