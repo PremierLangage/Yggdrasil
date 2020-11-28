@@ -43,6 +43,7 @@ try:
     if c is not None:
         pass
 except:
+    print('ok')
     c = 0
 ==
 
