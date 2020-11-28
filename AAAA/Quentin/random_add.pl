@@ -48,8 +48,8 @@ c = 0
 ==
 
 @ /utils/sandboxio.py
-@ /builder/before_v1.py [builder.py]
-@ /grader/evaluator.py [grader.py]
+@ ../../../lib/builder/before.py [builder.py]
+@ ../../../lib/grader/evaluator.py [grader.py]
 
 
 
