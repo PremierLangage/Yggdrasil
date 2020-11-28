@@ -1,12 +1,7 @@
 
-#  Author: Coumes Quentin     Mail: qcoumes@etud.u-pem.fr
-
-
-
-
 title= Addition Aléatoire
 
-author = Quentin Coumes
+author = Quentin
 
 text==
 Combien <i>font</i> ***{{ op1 }} + {{ op2 }}*** ?
@@ -50,6 +45,7 @@ c = 0
 @ /utils/sandboxio.py
 @ ../../../lib/builder/before.py [builder.py]
 @ ../../../lib/grader/evaluator.py [grader.py]
+
 
 
 
