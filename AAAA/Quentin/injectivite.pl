@@ -7,19 +7,37 @@ author = Quentin
 
 title= Injectivité
 
-text==
-La fonction $!f:\mathbb R \to \mathbb R_+!$, $!x\mapsto \exp(x)!$ est-elle injective ?  
-==
-answer=Oui
-# pour aligner les propositions 
-horizontal % true 
+questions==
 
-text==
-La fonction $!f:\mathbb R \to \mathbb R_+!$, $!x\mapsto \exp(x)!$ est-elle surjective ?  
-==
-answer=Non
-# pour aligner les propositions 
-horizontal % true 
+
+* La fonction $!f:\mathbb R \to \mathbb R_+!$, $!x\mapsto \exp(x)!$ est-elle injective ?   
+- Non 
++ Oui 
+
+
+* La fonction $!f:\mathbb R \to \mathbb R_+!$, $!x\mapsto \exp(x)!$ est-elle surjective ?  
+
++ Non
+- Oui 
+
+
+** Nombre pairs
++ 2
+- 3
++ 4
+
+
+
+* Quel code numérique correspond aux droits rwxr-xr-- ?
+- 721
+- 761
+- 764
+- 713
+- 731
+- 651
+- 741
++ 754
+
 
 
 
