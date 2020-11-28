@@ -42,8 +42,8 @@ op2 = random.randint(1, 10)
 ==
 
 @ /utils/sandboxio.py
-@ /builder/before2.py [builder.py]
-@ /grader/evaluator2.py [grader.py]
+@ ../../../lib/builder/before.py [builder.py]
+@ ../../../lib/grader/evaluator.py [grader.py]
 
 
 
