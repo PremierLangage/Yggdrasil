@@ -47,9 +47,10 @@ op2 = random.randint(1, 10)
 c = 0
 ==
 
-@ ~/utils/sandboxio.py
+@ sandboxio.py
 @ ~/builder/before.py [builder.py]
 @ ~/grader/evaluator.py [grader.py]
+
 
 
 
