@@ -1,6 +1,6 @@
 @/utils/sandboxio.py
-grader=@/grader/evaluator.py
-builder=@/builder/before.py
+grader=@../../../lib/grader/evaluator.py
+builder=@../../../lib/builder/before.py 
 
 title= PL Scripting
 text==
@@ -157,6 +157,7 @@ extrajs== #|html|
 
 </script>
 ==
+
 
 
 
