@@ -1,5 +1,5 @@
 
-extends = /model/basic/vraifaux.pl
+extends = /model/AMC_TXT.pl
 
 
 author = Quentin
