@@ -43,7 +43,7 @@ op2 = random.randint(1, 10)
 
 @ /utils/sandboxio.py
 @ /builder/before2.py [builder.py]
-@ /grader/evaluator.py [grader.py]
+@ /grader/evaluator2.py [grader.py]
 
 
 
