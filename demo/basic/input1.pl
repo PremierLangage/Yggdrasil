@@ -1,14 +1,16 @@
 extends = /model/basic/input.pl
 
 title ==
-Exemple 1
+Littérature
 ==
 
 text ==
-Quel élément chimique a pour symbole **O** ?
+Qui a écrit *Les Misérables* ?
 ==
 
 solution ==
-Oxygène
+Victor Hugo
+Hugo
+V. Hugo
+V Hugo
 ==
-
