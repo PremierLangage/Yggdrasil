@@ -39,7 +39,11 @@ import random
 random.seed(seed)
 op1 = random.randint(1, 10)
 op2 = random.randint(1, 10)
-c = 0
+try:
+    if c is not None:
+        pass
+except:
+    c = 0
 ==
 
 @ /utils/sandboxio.py
