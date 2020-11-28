@@ -10,6 +10,10 @@ inputbox.appearance = outline
 
 url_clip =$ PereBorie.webm
 
+author=Nicolas Borie
+
+tag=vidéo|observation|simple|humour
+
 before==
 
 ==
