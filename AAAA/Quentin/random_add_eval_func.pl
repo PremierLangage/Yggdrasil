@@ -41,9 +41,10 @@ op1 = random.randint(1, 10)
 op2 = random.randint(1, 10)
 ==
 
-@ ~/utils/sandboxio.py
-@ ~/builder/before.py [builder.py]
-@ ~/grader/evalfunc.py [grader.py]
+@ sandboxio.py
+@ before.py [builder.py]
+@ evalfunc.py [grader.py]
+
 
 
 
