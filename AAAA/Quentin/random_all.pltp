@@ -6,12 +6,14 @@ teacher== #|python|
 test
 ==
 @ static_add.pl
+@ injectivite.pl
 @ random_add.pl
 @ random_add_eval_func.pl
 
 introduction==
 Des <i>additions</i> **aléatoires**
 ==
+
 
 
 
