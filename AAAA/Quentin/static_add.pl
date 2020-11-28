@@ -36,8 +36,8 @@ except:
     grade = (-1, "Merci de rentrer un entier")
 ==
 
-@ sandboxio.py
-@ evaluator.py [grader.py]
+@ /utils/sandboxio.py
+@ /grader/evaluator.py [grader.py]
 
 tests %=
 {
@@ -83,6 +83,7 @@ tests %=
     }
 }
 ==
+
 
 
 
