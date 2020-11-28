@@ -46,9 +46,9 @@ form==
 
 evaluator==#|python|
 if 2 == int(inputbox.value):
-    grade = (100, '''<span class="success-state">Mais oui, c'est clair !</span> <br> <br>''')
+    grade = (100, '''<span class="success-state">Mais oui, c'est clair!</span> <br> <br>''')
 else:
-    grade = (0, '''<span class="error-state">Regardez mieux le chat, c'est celui qui a le plus de poil...</span> <br> <br>''')
+    grade = (0, '''<span class="error-state">Regardez mieux! Le chat, c'est celui qui a le plus de poil...</span> <br> <br>''')
 ==
 
 
