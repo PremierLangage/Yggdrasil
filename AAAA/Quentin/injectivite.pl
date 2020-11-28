@@ -19,27 +19,7 @@ questions==
 
 + Non
 - Oui 
-
-
-** Nombre pairs
-+ 2
-- 3
-+ 4
-
-
-
-* Quel code numérique correspond aux droits rwxr-xr-- ?
-- 721
-- 761
-- 764
-- 713
-- 731
-- 651
-- 741
-+ 754
-
-
-
+==
 
 
 
