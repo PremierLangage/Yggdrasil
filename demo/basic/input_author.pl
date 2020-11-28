@@ -1,7 +1,7 @@
 extends = /model/basic/input.pl
 
 title ==
-Auteurs
+Input 1
 ==
 
 text ==
@@ -14,7 +14,3 @@ Hugo
 V. Hugo
 V Hugo
 ==
-
-
-
-
