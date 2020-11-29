@@ -28,7 +28,7 @@ nb_attempt=0
 mult3 = ['Vrai']
 other = ['Faux']
 
-checkbox.setdata_from_rw(mult3, other, 5, rd.randint(1, 4))
+checkbox.setdata_from_rw(mult3, other)
 ==
 evaluator==
 nb_attempt += 1
