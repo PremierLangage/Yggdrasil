@@ -32,8 +32,6 @@ checkbox.setdata_from_rw(mult3, other)
 evaluator==
 nb_attempt += 1
 score =  checkbox.eval()
-feedback = "ok"
-grade = (score,feedback)
 ==
 
 aernfs==
