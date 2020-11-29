@@ -26,8 +26,9 @@ delimiter = |
 text ==
 Traduire en latin, en utilisant le bon cas,  le mot en gras.  
 
-
+```
 {{ phrase }}
+```
 ==
 
 solution ==
