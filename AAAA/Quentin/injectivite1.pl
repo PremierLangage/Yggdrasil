@@ -1,5 +1,5 @@
 
-extends = ~/basic.pl
+extends = basic.pl
 
 title= Addition Aléatoire
 
