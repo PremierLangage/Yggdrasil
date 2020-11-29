@@ -1,4 +1,6 @@
 
+extends = /model/basic.pl
+
 title= Addition Aléatoire
 
 author = Quentin
