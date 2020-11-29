@@ -1,7 +1,7 @@
 extends = /model/basic/input.pl
 
 title ==
-Exemple 3
+Latin (données)
 ==
 
 data ==
