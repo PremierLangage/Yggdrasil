@@ -4,7 +4,9 @@ title ==
 Latin (données)
 ==
 
-data ==
+data =@ latin.csv
+
+data2 ==
 phrase|solution
 Le **maître** appelle l'esclave de son fils.|dominus
 Le maître appelle l'**esclave** de son fils.|servum
