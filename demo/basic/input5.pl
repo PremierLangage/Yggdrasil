@@ -24,7 +24,7 @@ L'esclave donne un livre au fils du **maître**.|domini
 delimiter = |
 
 text ==
-Traduire en latin le mot en gras (avec le bon cas).  
+Traduire en latin, en utilisant le bon cas,  le mot en gras.  
 
 
 {{ phrase }}
