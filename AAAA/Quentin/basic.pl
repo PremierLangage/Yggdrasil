@@ -1,4 +1,4 @@
 
-@ ../../../lib/builder/builder.py [grader.py]
+@ ../../../lib/builder/before.py [grader.py]
 @ ../../../lib/grader/evaluator.py [grader.py]
 
