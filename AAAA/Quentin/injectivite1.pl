@@ -1,6 +1,4 @@
 
-extends = /model/basic.pl
-
 title= Addition Aléatoire
 
 author = Quentin
@@ -35,6 +33,10 @@ score =  checkbox.eval()
 feedback= " " 
 ==
 
+
+@ /utils/sandboxio.py
+@ ../../../lib/builder/before.py [builder.py]
+@ ../../../lib/grader/evaluator.py [grader.py]
 
 
 
