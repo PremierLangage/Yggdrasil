@@ -1,5 +1,5 @@
 
-extends = basic.pl
+extends = /model/basic.pl
 
 title= Addition Aléatoire
 
