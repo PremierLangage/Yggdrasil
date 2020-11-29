@@ -15,7 +15,7 @@ f4=1/(1-x**2)
 # Q = randitem([exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f3,f4])
 
 P = exp(x)
-Q = 1/(1+x**2)
+Q = 1/(1-x**2)
 
 
 Som = P+Q
