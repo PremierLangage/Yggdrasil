@@ -26,7 +26,6 @@ import random as rd
 nb_attempt=0
 Good = ['Vrai']
 Bad = ['Faux']
-
 checkbox.setdata_from_rw(Good, Bad)
 ==
 evaluator==
