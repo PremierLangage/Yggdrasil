@@ -11,8 +11,8 @@ f2=1/(1-x)
 # f3=1/(1+x**2) Provoque une ereur, je ne sais pas pourquoi...
 f4=1/(1-x**2)
 
-P = randitem([exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f3,f4])
-Q = randitem([exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f3,f4])
+P = randitem([exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f4])
+Q = randitem([exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f4])
 
 
 def my_custom_random():
