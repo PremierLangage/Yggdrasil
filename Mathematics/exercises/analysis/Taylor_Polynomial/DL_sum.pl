@@ -1,6 +1,6 @@
 extends = /model/mathinput.pl
 
-title = Développement limité d'un produit.
+title = Développement limité d'une somme.
 
 before ==
 var('x') # crée le symbole x
@@ -23,7 +23,7 @@ def my_custom_random():
 print(my_custom_random())
 
 a = my_custom_random()
-b = my_custom_random()
+b = choice([i for i in range(-5,5) if i not in [0]])
 
 Som = a*P+b*Q
 DLn = Som.series(x,0,n+1) # Attention +1 sur l'ordre (notation O par défault).
