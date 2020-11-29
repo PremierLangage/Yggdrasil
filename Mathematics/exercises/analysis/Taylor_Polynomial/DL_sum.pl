@@ -14,7 +14,10 @@ f4=1/(1-x**2)
 P = randitem([exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f3,f4])
 Q = randitem([exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f3,f4])
 
-Som = P+Q
+a = randint(-5, 5)
+b = randint(-5, 5)
+
+Som = a*P+b*Q
 DLn = Som.series(x,0,n+1) # Attention +1 sur l'ordre (notation O par défault).
 
 sol = DLn.subs(O(x**(n+1)),0) # Solution
