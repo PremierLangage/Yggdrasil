@@ -41,7 +41,6 @@ grade=((grade_checks * grade_attempt) // 10000, feedback)
 ==
 
 @ /utils/sandboxio.py
-@ ../../../lib/builder/before.py [builder.py]
 
 
 
