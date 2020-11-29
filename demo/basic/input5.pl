@@ -7,7 +7,7 @@ Latin (données)
 data =@ latin.csv
 
 data2 ==
-phrase|solution
+phrase|motlatin
 Le **maître** appelle l'esclave de son fils.|dominus
 Le maître appelle l'**esclave** de son fils.|servum
 Le maître appelle l'esclave de son **fils**.|filii
@@ -31,7 +31,7 @@ Traduire en latin, en utilisant le bon cas,  le mot en gras.
 ==
 
 solution ==
-{{ solution }}
+{{ motlatin }}
 ==
 
 
