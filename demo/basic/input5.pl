@@ -26,7 +26,7 @@ delimiter = |
 text ==
 Traduire en latin le mot en gras (avec le bon cas).  
 
-<p style="text-align: center;"> {{ phrase }} </p>
+<div style="text-align: center;"> {{ phrase }} </div>
 ==
 
 solution ==
