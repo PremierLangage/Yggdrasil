@@ -36,10 +36,6 @@ feedback= " "
 ==
 
 
-@ /utils/sandboxio.py
-@ ../../../lib/builder/before.py [builder.py]
-@ ../../../lib/grader/evaluator.py [grader.py]
-
 
 
 
