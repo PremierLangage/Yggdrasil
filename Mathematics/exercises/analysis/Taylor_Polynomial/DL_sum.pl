@@ -17,7 +17,7 @@ Q = randitem([exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f3,f4])
 Som = P+Q
 DLn = Som.series(x,0,n+1) # Attention +1 sur l'ordre (notation O par défault).
 
-sol = Som.subs(O(x**(n+1)),0) # Solution
+sol = DLn.subs(O(x**(n+1)),0) # Solution
 
 # Remarque générale : Sympy sait calculer avec les "O", mais je ne sais pas si il connait les "o"...
 ==
