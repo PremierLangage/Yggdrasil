@@ -8,14 +8,14 @@ n = 3 # Ordre du DL
 
 f1=1/(1+x)
 f2=1/(1-x)
-f3=1/(1+x**2)
-f4=1/(1-x**2)
+f3=1/(1+x^2)
+f4=1/(1-x^2)
 
 # P = randitem([exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f3,f4])
 # Q = randitem([exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f3,f4])
 
 P = exp(x)
-Q = ln(1-x)
+Q = 
 
 
 Som = P+Q
