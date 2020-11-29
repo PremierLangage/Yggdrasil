@@ -24,11 +24,9 @@ L'esclave donne un livre au fils du **maître**.|domini
 delimiter = |
 
 text ==
-Traduire en latin, en utilisant le bon cas,  le mot en gras.  
+Traduire en latin, en utilisant le bon cas, le mot en gras.  
 
-```
-{{ phrase }}
-```
+*{{ phrase }}*
 ==
 
 solution ==
