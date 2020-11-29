@@ -12,4 +12,6 @@ solution ==
 Oxygène
 ==
 
+diffmeasure = EditDist
 
+tolerance = 1
