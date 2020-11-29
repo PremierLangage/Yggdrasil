@@ -24,20 +24,15 @@ before ==#|python|
 import random as rd
 
 nb_attempt=0
-mult3 = ['Vrai']
-other = ['Faux']
+Good = ['Vrai']
+Bad = ['Faux']
 
-checkbox.setdata_from_rw(mult3, other)
+checkbox.setdata_from_rw(Good, Bad)
 ==
 evaluator==
 nb_attempt += 1
 score =  checkbox.eval()
-==
-
-aernfs==
-grade_checks = min([((score*100) // (nb_good+nb_bad)) , (100 // (2**nb_bad))])
-grade_attempt = 50 + (200 // (3+nb_attempt))
-grade=((grade_checks * grade_attempt) // 10000, feedback)
+grade=((score) // nb_attempt, feedback)
 ==
 
 @ /utils/sandboxio.py
