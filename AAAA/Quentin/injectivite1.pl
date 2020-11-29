@@ -33,7 +33,6 @@ evaluator==
 nb_attempt += 1
 score =  checkbox.eval()
 feedback= " " 
-grade=((score) // nb_attempt, feedback)
 ==
 
 
