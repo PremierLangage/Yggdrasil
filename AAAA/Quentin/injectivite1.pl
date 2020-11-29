@@ -36,7 +36,6 @@ feedback= " "
 grade=((score) // nb_attempt, feedback)
 ==
 
-@ /utils/sandboxio.py
 
 
 
