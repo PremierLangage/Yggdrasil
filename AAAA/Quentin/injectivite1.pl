@@ -18,8 +18,7 @@ form ==
 {{ checkbox|component }}
 ==
 
-settings.oneshot=yes
-settings.allow_reroll=yes
+
 before ==#|python|
 # Some globals variables
 import random as rd
