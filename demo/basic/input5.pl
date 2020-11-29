@@ -4,18 +4,6 @@ title ==
 Exemple 3
 ==
 
-delimiter = |
-
-text ==
-Traduire en latin le mot en gras (avec le bon cas).  
-
-{{ phrase }}
-==
-
-sol ==
-{{ solution }}
-==
-
 data ==
 phrase|solution
 Le **maître** appelle l'esclave de son fils.|dominus
@@ -30,4 +18,18 @@ L'esclave donne un **livre** au fils du maître.|librum
 L'esclave donne un livre au **fils** du maître.|filio
 L'esclave donne un livre au fils du **maître**.|domini
 ==
+
+delimiter = |
+
+text ==
+Traduire en latin le mot en gras (avec le bon cas).  
+
+{{ phrase }}
+==
+
+solution ==
+{{ solution }}
+==
+
+
 
