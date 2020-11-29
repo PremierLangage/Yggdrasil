@@ -25,7 +25,11 @@ print(my_custom_random())
 a = my_custom_random()
 b = my_custom_random()
 
-Som = a*P+b*Q
+from random import choice
+
+c = print choice([i for i in range(0,9) if i not in [2,5,7]])
+
+Som = a*P+c*Q
 DLn = Som.series(x,0,n+1) # Attention +1 sur l'ordre (notation O par défault).
 
 sol = DLn.subs(O(x**(n+1)),0) # Solution
