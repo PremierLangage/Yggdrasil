@@ -9,7 +9,7 @@ n = 3 # Ordre du DL
 
 PQ = exp(1+x)
 
-DLn = f.series(x,0,n+1) # Attention +1 sur l'ordre (notation O par défault).
+DLn = PQ.series(x,0,n+1) # Attention +1 sur l'ordre (notation O par défault).
 
 sol = DLn.subs(O(x**(n+1)),0) # Solution
 
