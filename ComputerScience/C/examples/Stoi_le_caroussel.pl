@@ -264,10 +264,9 @@ evaluator==#|python|
 
 text=""
 
-scores = []
-for i in range(nb_quest):
-    scores.append(comp[indices_questions[2]].eval())
-
+scores = [radio0.eval()]
+if nb_quest >= 2:
+    scores.append(radio1.eval())
 
 
 grade = (100, "Wesh t'a bon ! <br>"+str(scores))
