@@ -45,7 +45,7 @@ $${{ Som|latex }}$$
 ==
 
 evaluator ==
-score, error = eval_poly(input.value, sol, var="x", form="expanded")
+score, error = eval_poly(input.value, sol, var="x",)
 feedback = message[error]
 ==
 
