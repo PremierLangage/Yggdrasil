@@ -3,9 +3,19 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-before==
+@ /model/AMC2/AMC2.py [AMC.py]
+
+before==#|python|
+from AMC import parse_AMC_TXT
+
+
+list_questions = parse_AMC_TXT(questions)
+
+
 
 ==
+
+questions=@ Yggdrasil/ComputerScience/C_Initiation/QCM/QCM-1-a-4.txt
 
 title==
 Stoi le caroussel !
