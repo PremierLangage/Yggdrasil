@@ -195,6 +195,9 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
     margin: 5px;
     background-color: #ffff99;
 }
+.item{
+    padding-top: 10px;
+}
   </style>
 
 ==
