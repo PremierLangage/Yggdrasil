@@ -98,7 +98,7 @@ text += '''<br><br><br><br></div>'''
 # question suivante --> 1
 if nb_quest >= 2:
     radio1 = comp[indices_questions[1]]
-    text += '''<div class="item"><br>'''
+    text += '''<div class="item">'''
     text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 2 : </u></b></p><br>'
     text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[1]]["text"]+'</div>'
     # text += list_questions[indices_questions[i]]["html_form"]
