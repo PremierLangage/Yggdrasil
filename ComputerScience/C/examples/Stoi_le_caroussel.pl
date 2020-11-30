@@ -142,8 +142,29 @@ if nb_quest >= 6:
     text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 6 : </u></b></p><br>'
     text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[5]]["text"]+'</div>'
     # text += list_questions[indices_questions[i]]["html_form"]
-    text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio4.selector} cid='{radio4.cid}'></{radio4.selector}></div>"""
+    text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio5.selector} cid='{radio5.cid}'></{radio5.selector}></div>"""
     text += '<br><br><br><br></div>'
+
+# question suivante --> 6
+if nb_quest >= 7:
+    radio6 = comp[indices_questions[6]]
+    text += '''<div class="item">'''
+    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 7 : </u></b></p><br>'
+    text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[6]]["text"]+'</div>'
+    # text += list_questions[indices_questions[i]]["html_form"]
+    text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio6.selector} cid='{radio6.cid}'></{radio6.selector}></div>"""
+    text += '<br><br><br><br></div>'
+
+# question suivante --> 7
+if nb_quest >= 8:
+    radio7 = comp[indices_questions[7]]
+    text += '''<div class="item">'''
+    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 8 : </u></b></p><br>'
+    text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[7]]["text"]+'</div>'
+    # text += list_questions[indices_questions[i]]["html_form"]
+    text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio7.selector} cid='{radio7.cid}'></{radio7.selector}></div>"""
+    text += '<br><br><br><br></div>'
+
 
 
 
@@ -225,6 +246,8 @@ form==
 evaluator==#|python|
 
 text=""
+
+
 
 grade = (100, "Wesh t'a bon !")
 ==
