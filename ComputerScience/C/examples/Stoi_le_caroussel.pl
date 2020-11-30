@@ -135,6 +135,15 @@ if nb_quest >= 5:
     text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio4.selector} cid='{radio4.cid}'></{radio4.selector}></div>"""
     text += '</div>'
 
+# question suivante --> 5
+if nb_quest >= 6:
+    radio4 = comp[indices_questions[4]]
+    text += '''<div class="item">'''
+    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 5 : </u></b></p><br>'
+    text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[4]]["text"]+'</div>'
+    # text += list_questions[indices_questions[i]]["html_form"]
+    text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio4.selector} cid='{radio4.cid}'></{radio4.selector}></div>"""
+    text += '</div>'
 
 
 
