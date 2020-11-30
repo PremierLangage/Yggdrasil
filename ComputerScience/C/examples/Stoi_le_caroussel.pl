@@ -130,7 +130,7 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
   .carousel-inner > .item > a > img {
     margin: auto;
     width: 70%;
-    min-height: 300px;
+    height: 300px;
   }
   </style>
 
