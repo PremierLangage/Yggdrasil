@@ -68,7 +68,7 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
 
     {% for i in range(1, nb_quest) %}
     <div class="item">
-      <p style="margin:10%">{{ list_questions[indices_questions[i]]["text"] }}</p>
+      <p style="margin:15%">{{ list_questions[indices_questions[i]]["text"] }}</p>
     </div>
     {% endfor %}
 
