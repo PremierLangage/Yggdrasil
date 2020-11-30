@@ -7,7 +7,7 @@ var('x') # crée le symbole x
 n = 3 # Ordre du DL
 
 a = randitem([i for i in range(-5,5) if i not in [0]])
-S = [i for i in range(-4,4) if i not in [0,-1]]
+S = [1/i for i in range(-4,4) if i not in [0,-1,1]]
 p = randitem(S)
 
 PQ = (1+a*x)**p
@@ -36,3 +36,4 @@ La solution est $! {{ sol|latex}} !$.
 
 # Remarque : eval_expr(input.value, sol) est envisageable, mais l'évaluateur ne vérifie 
 #            pas si la solution de l'étudiant est donnée sous forme simplifiée.
+
