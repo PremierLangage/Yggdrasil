@@ -16,7 +16,7 @@ P = randitem(S)
 Q = randitem([i for i in S if i not in [P]])
 
 def composition(f,g):
-    return: f(g(x))
+    return f(g(x))
 
 
 PQ = composition(P,Q)
