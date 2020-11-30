@@ -8,14 +8,14 @@ data ==
 pronom,conjugaison
 je,suis
 tu,es
-il ou elle,est
+il,est
 nous,sommes
 vous,êtes
-ils ou elles,sont
+ils,sont
 ==
 
 text ==
-Conjuguer le verbe **être** pour le pronom {{ pronom }}.
+Conjuguer le verbe **être** pour le pronom **{{ pronom }}**.
 ==
 
 solution ==
