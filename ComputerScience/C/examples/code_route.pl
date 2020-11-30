@@ -47,7 +47,7 @@ author = Nicolas Borie
 
 text==
 
-Étant donné les conditions de conduite, quels feux les véhicules doivent-ils utiliser ?
+<p font-size="1em">Étant donné les conditions de conduite, quels feux les véhicules doivent-ils utiliser ?<\p>
 
 <br>
 
