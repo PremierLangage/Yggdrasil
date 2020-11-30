@@ -68,7 +68,7 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <p style="margin-left:15%; margin-right:15%;"><b><u>Question 1 : </u></b></p>
+      <p style="margin-left:15%; margin-right:15%;"><b><u>Question 1 : </u></b></p><br>
 
       <p style="margin-left:15%; margin-right:15%;">{{ list_questions[indices_questions[0]]["text"] }}</p>
 
@@ -77,7 +77,7 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
 
     {% for i in range(1, nb_quest) %}
     <div class="item">
-      <p style="margin-left:15%; margin-right:15%;"><b><u>Question {{ i+1 }} : </u></b></p>
+      <p style="margin-left:15%; margin-right:15%;"><b><u>Question {{ i+1 }} : </u></b></p><br>
 
       <p style="margin-left:15%; margin-right:15%;">{{ list_questions[indices_questions[i]]["text"] }}</p>
 
