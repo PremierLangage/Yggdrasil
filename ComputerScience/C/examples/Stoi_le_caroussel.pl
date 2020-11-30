@@ -106,6 +106,8 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
       <p style="margin-left:15%; margin-right:15%;">{{ list_questions[indices_questions[0]]["text"] }}</p>
 
       {{ list_questions[indices_questions[0]]["html_form"] }}
+
+      {{ comp[indices_questions[0]]|component }}
     </div>
 
     {% for i in range(1, nb_quest) %}
@@ -115,6 +117,8 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
       <p style="margin-left:15%; margin-right:15%;">{{ list_questions[indices_questions[i]]["text"] }}</p>
 
       {{ list_questions[indices_questions[i]]["html_form"] }}
+
+      {{ comp[indices_questions[i]]|component }}
     </div>
     {% endfor %}
     
