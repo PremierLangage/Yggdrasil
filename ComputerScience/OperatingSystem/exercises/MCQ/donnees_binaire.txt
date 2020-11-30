@@ -104,7 +104,7 @@
 
 ** Qu'est ce qu'un jeu de caractères ?
 + C'est une bijection entre des données binaires et des symboles.
-+ C'est un ensemble de règles pour produire des sorties humainement lisibles à partir de données binaires.
++ C'est un ensemble de règles pour produire des sorties humainement lisibles <br> à partir de données binaires.
 - C'est une bibliothèque permettant de gérer les grands nombres comme le fait Python.
 - C'est une activité ludique dans laquelle il faut très fortement s'impliquer pour gagner.
 - C'est jouer au Monopoly avec des gens énervés.
@@ -118,6 +118,7 @@
 - C'est pas du tout astucieux, les ordinateurs sont lents et ne font rien.
 - Ça permet de mieux enregistrer et restituer les sons.
 - Les images s'encodent naturellement en binaire.
+
 
 
 
