@@ -73,16 +73,36 @@ for i in indices_questions:
 def make_rotation_str(nb_quest):
     ans = '''<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">'''
     ans += '''<!-- Indicators -->'''
-    for i in range(nb_quest):
+    ans += '''<ol class="carousel-indicators">'''
+    ans += '''<li data-target="#myCarousel" data-slide-to="0" class="active"></li>'''
+    for i in range(1, nb_quest):
+        ans += '<li data-target="#myCarousel" data-slide-to="'+str(i)+'"></li>'
+    ans +=  '''</ol>'''
+    ans +=  '''<!-- Wrapper for slides -->'''
+    ans +=  '''<div class="carousel-inner">'''
+    return ans
 
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    {% for i in range(1, nb_quest) %}
-    <li data-target="#myCarousel" data-slide-to="{{ i }}"></li>
+# entêtes du mnaège
+text += make_rotation_str(nb_quest)
 
-    {% endfor %}
-  </ol>
+# première question
+text += '''<div class="item active">'''
+text += '''<p style="margin-left:15%; margin-right:15%;"><b><u>Question 1 : </u></b></p><br>'''
+text += '''<div style="margin-left:15%; margin-right:15%;">{{ list_questions[indices_questions[0]]["text"] }}</div>'''
+text += '''{{ comp[indices_questions[0]]|component }}'''
+text += '''</div>'''
+
+# question suivante
+
+for i in range(1, nb_quest):
+    text += '''<div class="item">'''
+    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 'str(i+1)' : </u></b></p><br>'
+    text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[i]]["text"]+'</div>'
+    text += '{{ list_questions[indices_questions['+str(i)+']]["html_form"] }}'
+    text += '</div>'
+
+# footer du manège
+text += end_text
 
 ==
 
@@ -109,36 +129,10 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
   }
   </style>
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    {% for i in range(1, nb_quest) %}
-    <li data-target="#myCarousel" data-slide-to="{{ i }}"></li>
-    {% endfor %}
-  </ol>
+==
 
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <p style="margin-left:15%; margin-right:15%;"><b><u>Question 1 : </u></b></p><br>
-
-      <div style="margin-left:15%; margin-right:15%;">{{ list_questions[indices_questions[0]]["text"] }}</div>
-
-      {{ list_questions[indices_questions[0]]["html_form"] }}
-    </div>
-
-    {% for i in range(1, nb_quest) %}
-    <div class="item">
-      <p style="margin-left:15%; margin-right:15%;"><b><u>Question {{ i+1 }} : </u></b></p><br>
-
-      <div style="margin-left:15%; margin-right:15%;">{{ list_questions[indices_questions[i]]["text"] }}</div>
-
-      {{ list_questions[indices_questions[i]]["html_form"] }}
-    </div>
-    {% endfor %}
-    
+end_text==
   </div>
 
   <!-- Left and right controls -->
@@ -160,3 +154,4 @@ form==
 evaluator==#|python|
 grade = (100, "Wesh t'a bon !")
 ==
+
