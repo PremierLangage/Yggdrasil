@@ -137,10 +137,10 @@ if nb_quest >= 5:
 
 # question suivante --> 5
 if nb_quest >= 6:
-    radio4 = comp[indices_questions[4]]
+    radio5 = comp[indices_questions[5]]
     text += '''<div class="item">'''
-    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 5 : </u></b></p><br>'
-    text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[4]]["text"]+'</div>'
+    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 6 : </u></b></p><br>'
+    text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[5]]["text"]+'</div>'
     # text += list_questions[indices_questions[i]]["html_form"]
     text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio4.selector} cid='{radio4.cid}'></{radio4.selector}></div>"""
     text += '</div>'
@@ -177,6 +177,24 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
   #myCarousel{
     min-height: 300px;
   }
+.carousel-indicators li {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #0000ff;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+}
+.carousel-indicators .active {
+    width: 48px;
+    height: 48px;
+    margin: 10px;
+    background-color: #ffff99;
+}
   </style>
 
 ==
@@ -207,4 +225,5 @@ text=""
 
 grade = (100, "Wesh t'a bon !")
 ==
+
 
