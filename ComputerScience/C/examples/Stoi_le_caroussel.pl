@@ -36,7 +36,10 @@ nb_quest = min([int(nb_quest_voulu), nb_tot_quest])
 indices_questions = knuth_mixing( subset_index(nb_tot_quest, nb_quest) )
 
 def make_html_answer(question):
-    question["html_form"] = "Les options à cliquer..."
+    question["html_form"] = ""
+    for it in question["items"]:
+        question["html_form"] += '<input type="checkbox" id="'+it+'" name="'+it+'" value="'+it+'">'
+        question["html_form"] += '<label for="'+it+'">'+it+'</label><br>'
 
 comp = []
 statement  = []
@@ -109,8 +112,6 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
       <div style="margin-left:15%; margin-right:15%;">{{ list_questions[indices_questions[0]]["text"] }}</div>
 
       {{ list_questions[indices_questions[0]]["html_form"] }}
-
-      {{ comp[indices_questions[0]]|component }}
     </div>
 
     {% for i in range(1, nb_quest) %}
@@ -120,8 +121,6 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
       <div style="margin-left:15%; margin-right:15%;">{{ list_questions[indices_questions[i]]["text"] }}</div>
 
       {{ list_questions[indices_questions[i]]["html_form"] }}
-
-      {{ comp[indices_questions[i]]|component }}
     </div>
     {% endfor %}
     
