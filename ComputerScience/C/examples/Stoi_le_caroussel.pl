@@ -1,3 +1,12 @@
+@ /utils/sandboxio.py
+
+grader  =@ /grader/evaluator.py
+builder =@ /builder/before.py
+
+before==
+
+==
+
 title==
 Stoi le caroussel !
 ==
@@ -45,4 +54,8 @@ text==
 
 form==
 
+==
+
+evaluator==#|python|
+grade = (100, "Wesh t'a bon !")
 ==
