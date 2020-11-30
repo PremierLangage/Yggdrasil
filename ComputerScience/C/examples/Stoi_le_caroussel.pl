@@ -24,8 +24,9 @@ text==
 
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
+    margin: 20px;
+    padding: 20px;
     width: 70%;
-    margin: auto;
   }
   </style>
 
