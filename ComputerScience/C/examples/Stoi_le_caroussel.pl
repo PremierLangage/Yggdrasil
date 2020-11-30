@@ -25,7 +25,7 @@ nb_quest = min([int(nb_quest_voulu), nb_tot_quest])
 indices_questions = knuth_mixing( subset_index(nb_tot_quest, nb_quest) )
 
 def make_html_answer(question):
-    return ""
+    return "Les options à cliquer..."
 
 
 ==
