@@ -110,7 +110,8 @@ text += end_text
 
 ==
 
-questions=@ /ComputerScience/C/exercices/program/qcm_questions/generalites_C.txt
+questions=@ /ComputerScience/C_Initiation/QCM/QCM-1-a-4.txt
+# questions=@ /ComputerScience/C/exercices/program/qcm_questions/generalites_C.txt
 
 title==
 Stoi le caroussel !
