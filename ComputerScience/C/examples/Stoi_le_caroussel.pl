@@ -96,12 +96,12 @@ text += '''</div>'''
 
 # question suivante
 for i in range(1, nb_quest):
-    radio = comp[indices_questions[i]]
+    # radio = comp[indices_questions[i]]
     text += '''<div class="item">'''
     text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question '+str(i+1)+' : </u></b></p><br>'
     text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[i]]["text"]+'</div>'
     # text += list_questions[indices_questions[i]]["html_form"]
-    text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio.selector} cid='{radio.cid}'></{radio.selector}></div>"""
+    text += f"""<div style="margin-left:15%; margin-right:15%;"><{comp[indices_questions[i]].selector} cid='{comp[indices_questions[i]].cid}'></{comp[indices_questions[i]].selector}></div>"""
     text += '</div>'
 
 # footer du manège
