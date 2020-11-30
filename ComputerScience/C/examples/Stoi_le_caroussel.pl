@@ -86,24 +86,57 @@ def make_rotation_str(nb_quest):
 # entêtes du mnaège
 text += make_rotation_str(nb_quest)
 
-radio2 = comp[indices_questions[0]]
+radio0 = comp[indices_questions[0]]
 # première question
 text += '''<div class="item active">'''
 text += '''<p style="margin-left:15%; margin-right:15%;"><b><u>Question 1 : </u></b></p><br>'''
 text += '''<div style="margin-left:15%; margin-right:15%;">{{ list_questions[indices_questions[0]]["text"] }}</div>'''
-text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio2.selector} cid='{radio2.cid}'></{radio2.selector}></div>"""
+text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio0.selector} cid='{radio0.cid}'></{radio0.selector}></div>"""
 # text += list_questions[indices_questions[0]]["html_form"]
 text += '''</div>'''
 
-# question suivante
-for i in range(1, nb_quest):
-    radio = comp[indices_questions[i]]
+# question suivante --> 1
+if nb_quest >= 2:
+    radio1 = comp[indices_questions[1]]
     text += '''<div class="item">'''
     text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question '+str(i+1)+' : </u></b></p><br>'
     text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[i]]["text"]+'</div>'
     # text += list_questions[indices_questions[i]]["html_form"]
-    text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio.selector} cid='{radio.cid}'></{radio.selector}></div>"""
+    text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio1.selector} cid='{radio1.cid}'></{radio1.selector}></div>"""
     text += '</div>'
+
+# question suivante --> 2
+if nb_quest >= 3:
+    radio2 = comp[indices_questions[2]]
+    text += '''<div class="item">'''
+    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question '+str(i+1)+' : </u></b></p><br>'
+    text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[i]]["text"]+'</div>'
+    # text += list_questions[indices_questions[i]]["html_form"]
+    text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio2.selector} cid='{radio2.cid}'></{radio2.selector}></div>"""
+    text += '</div>'
+
+# question suivante --> 3
+if nb_quest >= 4:
+    radio3 = comp[indices_questions[3]]
+    text += '''<div class="item">'''
+    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question '+str(i+1)+' : </u></b></p><br>'
+    text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[i]]["text"]+'</div>'
+    # text += list_questions[indices_questions[i]]["html_form"]
+    text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio3.selector} cid='{radio3.cid}'></{radio3.selector}></div>"""
+    text += '</div>'
+
+# question suivante --> 4
+if nb_quest >= 5:
+    radio4 = comp[indices_questions[4]]
+    text += '''<div class="item">'''
+    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question '+str(i+1)+' : </u></b></p><br>'
+    text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[i]]["text"]+'</div>'
+    # text += list_questions[indices_questions[i]]["html_form"]
+    text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio4.selector} cid='{radio4.cid}'></{radio4.selector}></div>"""
+    text += '</div>'
+
+
+
 
 # footer du manège
 text += end_text
