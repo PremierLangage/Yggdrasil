@@ -70,6 +70,19 @@ for i, q in enumerate(list_questions):
 for i in indices_questions:
     make_html_answer(list_questions[i])
 
+def make_rotation_str(nb_quest):
+    ans = '''<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">'''
+    ans += '''<!-- Indicators -->'''
+    for i in range(nb_quest):
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    {% for i in range(1, nb_quest) %}
+    <li data-target="#myCarousel" data-slide-to="{{ i }}"></li>
+
+    {% endfor %}
+  </ol>
 
 ==
 
@@ -105,6 +118,7 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
     {% endfor %}
   </ol>
 
+
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
@@ -137,8 +151,6 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
     <span class="sr-only">Next</span>
   </a>
 </div>
-
-
 ==
 
 form==
