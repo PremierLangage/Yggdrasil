@@ -65,7 +65,7 @@ total = 0
 for item in group.items:
     checked = item['checked']
     id = item['id']
-    if id in ["veilleuse"]:
+    if id in ["veilleuse", "croisement", "bav", "barr"]:
         total += 1
         item['css'] = 'success-border animated pulse infinite'
         if checked:
