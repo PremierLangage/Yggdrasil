@@ -33,8 +33,7 @@ b = randitem([i for i in range(-5,5) if i not in [0]])
 Som = P+Q
 DLn = Som.series(x,0,n+1) # Attention +1 sur l'ordre (notation O par défault).
 
-sol0 = DLn.subs(O(x**(n+1)),0) # Solution
-sol = simplify(sol0)
+sol = DLn.subs(O(x**(n+1)),0) # Solution
 
 # Remarque générale : Sympy sait calculer avec les "O", mais je ne sais pas si il connait les "o"...
 ==
