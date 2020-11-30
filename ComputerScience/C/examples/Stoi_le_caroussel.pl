@@ -131,8 +131,8 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
     margin: auto;
     width: 70%;
   }
-  .myCarousel{
-    height: 300px;
+  #myCarousel{
+    min-height: 300px;
   }
   </style>
 
