@@ -5,6 +5,7 @@ builder =@ /builder/before.py
 
 @ /model/AMC2/AMC2.py [AMC.py]
 @ /ComputerScience/OperatingSystem/templates/utils.py
+@ /model/AMC2/aleaq.py
 
 
 # LES TRUCS QUE L'ON PEUT CHANGER SONT LA :
@@ -14,6 +15,12 @@ nb_quest_voulu = 5
 before==#|python|
 # Le même parseur que AMC2 sinon ça va encore chialer grave !!!
 from AMC import parse_AMC_TXT
+
+from random import *
+from customradio import CustomRadio
+from customcheckbox import CustomCheckbox
+from customtextselect import CustomTextSelect
+from aleaq import buildquestion, onefromeachgroup
 
 # Pour les tirages aléatoires sans remise...
 from utils import *
@@ -26,6 +33,32 @@ indices_questions = knuth_mixing( subset_index(nb_tot_quest, nb_quest) )
 
 def make_html_answer(question):
     question["html_form"] = "Les options à cliquer..."
+
+comp = []
+statement  = []
+shuffle(list_questions)
+for i, q in enumerate(list_questions):
+    q=buildquestion(q) # Gestion de l'aléa 
+    if q['type'] == "Radio":
+        comp.append(CustomRadio())
+        statement.append(q['text'])
+        comp[i].setitems(q['items'])
+        comp[i].setsol_from_index(q['index'])
+        if 'ordered' not in q['options']:
+            comp[i].shuffle()
+    elif q['type'] == "Checkbox":
+        comp.append(CustomCheckbox())
+        statement.append(q['text'])
+        comp[i].setitems(q['items'])
+        comp[i].setsol_from_index(q['index'])
+        if 'ordered' not in q['options']:
+            comp[i].shuffle()
+    elif  q['type'] == 'TextSelect':
+        cst = CustomTextSelect()
+        statement.append(q['text'])
+        cst.setdata_from_textDR(q['items'][0])
+        comp.append(cst)
+
 
 for i in indices_questions:
     make_html_answer(list_questions[i])
