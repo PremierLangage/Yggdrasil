@@ -1,7 +1,7 @@
 extends = /model/basic/sortlist.pl
 
 title ==
-Exemple 1
+Orde alphabétique
 ==
 
 text ==
@@ -14,4 +14,5 @@ Avion
 Ballon
 Cartable
 ==
+
 
