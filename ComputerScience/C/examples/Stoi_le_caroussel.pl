@@ -86,7 +86,6 @@ def make_rotation_str(nb_quest):
 # entêtes du mnaège
 text += make_rotation_str(nb_quest)
 
-radio = comp[indices_questions[0]]
 # première question
 text += '''<div class="item active">'''
 text += '''<p style="margin-left:15%; margin-right:15%;"><b><u>Question 1 : </u></b></p><br>'''
