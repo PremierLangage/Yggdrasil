@@ -19,6 +19,7 @@ text==
   <style>
   .carousel-inner{
     margin: 20px;
+    padding: 20px;
   }
 
   .carousel-inner > .item > img,
