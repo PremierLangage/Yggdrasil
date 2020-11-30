@@ -7,7 +7,7 @@ var('x') # crée le symbole x
 n = 3 # Ordre du DL
 
 
-f = (1+x)**2
+f = (1+x)
 
 DLn = f.series(x,0,n+1) # Attention +1 sur l'ordre (notation O par défault).
 
