@@ -42,7 +42,7 @@ text==
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <p>Wesh, pose ta question 1 OCE bordaille ?</p>
+      <p>Wesh, pose ta question 1 bordaille ?</p>
 
       <br><br>
     </div>
