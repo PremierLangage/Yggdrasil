@@ -45,7 +45,7 @@ $${{ Som|latex }}$$
 ==
 
 evaluator ==
-score, error = eval_poly(input.value, sol, var="x",-x^5 - 3*x^4 - x^3 - 3*x^2 - x - 3)
+score, error = eval_poly(input.value, sol, var="x",)
 feedback = message[error]
 ==
 
