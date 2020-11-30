@@ -49,7 +49,7 @@
 
 
 ** Comment décomposer un entier en base 2 ?
-+ On fait des divisions successives par deux, puis on lit en ordre inverse les restes obtenus.
++ On fait des divisions successives par deux, puis on lit <br> en ordre inverse les restes obtenus.
 - On utilise l'algorithme d'Euclide.
 - Jamais personne n'a réussi à décomposer un nombre en base 2.
 - On multiplie par $% 2^n %$ l'entier pour tout $% n %$.
