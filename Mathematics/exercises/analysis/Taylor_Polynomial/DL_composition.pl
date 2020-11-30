@@ -7,7 +7,7 @@ var('x') # crée le symbole x
 n = 4 # Ordre du DL
 
 
-S = [exp(x)-1,ln(1+x),ln(1-x),cos(x)-1,sin(x),x^2-x^3,x+x^2]
+S = [exp(x)-1,ln(1+x),ln(1-x),cos(x)-1,sin(x),x**2-x**3,x+x**2]
 P = randitem(S)
 
 f1=1/(1+P)
