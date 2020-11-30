@@ -170,7 +170,7 @@ la compilation. Lesquelles ?
 
     /*2*/
 
-    /*3*/ int main(void){
+    /*3*/ void main(void){
 
     /*4*/   int a;
 
@@ -209,7 +209,9 @@ la compilation. Lesquelles ?
 
     /*7*/   print("Son carré vaut %d",a * a);
 
-    /*8*/ }
+    /*8*/   return 0;
+
+    /*9*/ }
 
 Quelles sont-elles ?
 
@@ -218,6 +220,7 @@ Quelles sont-elles ?
 + 6
 + 7
 - 8
+- 9
 - Aucune ne provoque d'erreur ou de warning
 
 **[nb=6,group=Compilation_2] 27 ) Parmi le code suivant, un certain nombre de lignes provoque une erreur ou un warning à 
@@ -1632,6 +1635,7 @@ Qu’affiche l’appel affichageTruc(tab, 2, 4) lorsque tab est défini par `int
 - 10 2
 - 1 02
 - 1 0 2
+
 
 
 
