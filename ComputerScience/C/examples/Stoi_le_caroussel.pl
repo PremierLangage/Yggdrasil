@@ -12,8 +12,11 @@ builder =@ /builder/before.py
 @ /utils/components/checkbox.py [customcheckbox.py]
 @ /utils/components/textselect.py [customtextselect.py]
 
+
 # LES TRUCS QUE L'ON PEUT CHANGER SONT LA :
 nb_quest_voulu = 10
+# questions=@ /ComputerScience/C_Initiation/QCM/QCM-1-a-4.txt
+questions=@ /ComputerScience/C/exercices/program/qcm_questions/generalites_C.txt
 
 before==#|python|
 # Le même parseur que AMC2 sinon ça va encore chialer grave !!!
@@ -190,8 +193,6 @@ text += end_text
 
 ==
 
-questions=@ /ComputerScience/C_Initiation/QCM/QCM-1-a-4.txt
-# questions=@ /ComputerScience/C/exercices/program/qcm_questions/generalites_C.txt
 
 title==
 Stoi le caroussel !
