@@ -11,10 +11,14 @@ f2=1/(1-x)
 # f3=1/(1+x**2) Provoque une ereur, je ne sais pas pourquoi...
 f4=1/(1-x**2)
 
+
+
+
 P = randitem([exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f4])
-Q = randitem([exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f4])
+Q = randitem([i for i in range(-5,5) if i not in [0]]  [exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f4])
 
 
+# La fonction ci-dessous est inutile maintenant, j'ai trouvé plus simple.
 def my_custom_random():
     exclude=[0]
     randInt = randint(-5,5)
