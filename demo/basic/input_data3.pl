@@ -4,7 +4,7 @@ title ==
 Chimie
 ==
 
-data =@ /data/elements_chimiques.csv
+data =@ data/elements_chimiques.csv
 
 text ==
 Quel élément chimique a pour symbole **{{ symbole }}** ?
