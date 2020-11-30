@@ -38,6 +38,7 @@ sol = DLn.subs(O(x**(n+1)),0) # Solution
 text ==
 Calculer la partie régulière du développement limité à l'ordre $!{{ n |latex }}!$ en 0 de la fonction ci-dessous.
 $${{ Som|latex }}$$
+Afficher $${{ a|latex }}$$ et $${{ b|latex }}$$
 ==
 
 evaluator ==
