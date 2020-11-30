@@ -30,7 +30,7 @@ a = randitem([i for i in range(-5,5) if i not in [0]])
 b = randitem([i for i in range(-5,5) if i not in [0]])
 
 
-Som = a*P+b*Q
+Som = a*P*b*Q
 SomS = simplify(Som)
 DLn = SomS.series(x,0,n+1) # Attention +1 sur l'ordre (notation O par défault).
 
@@ -45,7 +45,7 @@ $${{ Som|latex }}$$
 ==
 
 evaluator ==
-score, error = eval_poly(input.value, sol, var="x",)
+score, error = eval_poly(input.value, sol, var="x",-x^5 - 3*x^4 - x^3 - 3*x^2 - x - 3)
 feedback = message[error]
 ==
 
