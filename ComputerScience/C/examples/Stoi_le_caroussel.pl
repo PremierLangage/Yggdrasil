@@ -4,12 +4,19 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 @ /model/AMC2/AMC2.py [AMC.py]
+@ /ComputerScience/OperatingSystem/templates/utils.py
 
 before==#|python|
+# Le même parseur que AMC2 sinon ça va encore chialer grave !!!
 from AMC import parse_AMC_TXT
 
+from utils import *
 
 list_questions = parse_AMC_TXT(questions)
+nb_tot_quest = len(list_questions)
+
+# Choisir ici un nombre de question : None pour toutes les questions (ah ne pas faire bande d'abruti !)
+nb_quest_voulu = 10
 
 
 
@@ -40,7 +47,7 @@ text==
   }
   </style>
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-wrap="false">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
