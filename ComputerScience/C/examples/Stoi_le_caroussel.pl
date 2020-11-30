@@ -12,6 +12,9 @@ Stoi le caroussel !
 ==
 
 text==
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -50,6 +53,8 @@ text==
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+
 ==
 
 form==
