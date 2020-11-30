@@ -47,7 +47,7 @@ author = Nicolas Borie
 
 text==
 
-<p style="font-size:1em;">Étant données les conditions de conduite, quels feux les véhicules doivent-ils utiliser ?</p>
+<p style="font-size:1em;">Étant données les conditions de conduite sur la vidéo, quels feux les véhicules doivent-ils utiliser ?</p>
 
 <br>
 
