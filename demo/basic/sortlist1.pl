@@ -1,7 +1,7 @@
 extends = /model/basic/sortlist.pl
 
 title ==
-Orde alphabétique
+Ordre alphabétique
 ==
 
 text ==
