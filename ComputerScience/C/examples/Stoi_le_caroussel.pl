@@ -132,7 +132,7 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
     width: 70%;
   }
   .myCarousel{
-    height: 50%;
+    height: 300px;
   }
   </style>
 
