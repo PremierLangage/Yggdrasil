@@ -17,7 +17,8 @@ group.items.append({
     })
 ==
 
-title = Checkbox Group Component
+title = Code de la route
+author = Nicolas Borie
 
 text==
 
