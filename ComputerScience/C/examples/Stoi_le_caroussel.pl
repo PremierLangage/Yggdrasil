@@ -70,17 +70,17 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
     <div class="item active">
       <p style="margin-left:15%; margin-right:15%;">{{ list_questions[indices_questions[0]]["text"] }}</p>
 
-      {{ make_html_answer(list_questions[indices_questions[0]]) }}
-
+      {{ list_questions[indices_questions[0]]["html_form"] }}
     </div>
 
     {% for i in range(1, nb_quest) %}
     <div class="item">
       <p style="margin-left:15%; margin-right:15%;">{{ list_questions[indices_questions[i]]["text"] }}</p>
+
+      {{ list_questions[indices_questions[i]]["html_form"] }}
     </div>
     {% endfor %}
-
-    {{ make_html_answer(list_questions[indices_questions[i]]) }}
+    
   </div>
 
   <!-- Left and right controls -->
