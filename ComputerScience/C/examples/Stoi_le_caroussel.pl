@@ -108,6 +108,8 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
 
       <p style="margin-left:15%; margin-right:15%;">{{ list_questions[indices_questions[0]]["text"] }}</p>
 
+      {{ statement[indices_questions[0]] }}
+
       {{ list_questions[indices_questions[0]]["html_form"] }}
 
       {{ comp[indices_questions[0]]|component }}
@@ -118,6 +120,8 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
       <p style="margin-left:15%; margin-right:15%;"><b><u>Question {{ i+1 }} : </u></b></p><br>
 
       <p style="margin-left:15%; margin-right:15%;">{{ list_questions[indices_questions[i]]["text"] }}</p>
+
+      {{ statement[indices_questions[i]] }}
 
       {{ list_questions[indices_questions[i]]["html_form"] }}
 
