@@ -179,9 +179,9 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
   }
 .carousel-indicators li {
     display: inline-block;
-    width: 48px;
-    height: 48px;
-    margin: 10px;
+    width: 24px;
+    height: 24px;
+    margin: 5px;
     text-indent: 0;
     cursor: pointer;
     border: none;
@@ -190,9 +190,9 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
     box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
 }
 .carousel-indicators .active {
-    width: 48px;
-    height: 48px;
-    margin: 10px;
+    width: 24px;
+    height: 24px;
+    margin: 5px;
     background-color: #ffff99;
 }
   </style>
