@@ -8,9 +8,13 @@ n = 3 # Ordre du DL
 
 a = randitem([i for i in range(-5,5) if i not in [0]])
 S = [i for i in range(-4,4) if i not in [0,-1,1]]
-p = randitem(S)
+m = randitem(S)
 
-PQ = (1+a*x)**(1/p)
+from fractions import*
+p = Fraction(1,m)
+
+
+PQ = (1+a*x)**(p)
 
 DLn = PQ.series(x,0,n+1) # Attention +1 sur l'ordre (notation O par défault).
 
