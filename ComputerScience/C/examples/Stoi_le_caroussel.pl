@@ -89,7 +89,7 @@ text += make_rotation_str(nb_quest)
 text += '''<div class="item active">'''
 text += '''<p style="margin-left:15%; margin-right:15%;"><b><u>Question 1 : </u></b></p><br>'''
 text += '''<div style="margin-left:15%; margin-right:15%;">{{ list_questions[indices_questions[0]]["text"] }}</div>'''
-text += '''{{ comp[indices_questions[0]]|component }}'''
+text += make_html_answer(indices_questions[0])
 text += '''</div>'''
 
 # question suivante
@@ -98,7 +98,7 @@ for i in range(1, nb_quest):
     text += '''<div class="item">'''
     text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question '+str(i+1)+' : </u></b></p><br>'
     text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[i]]["text"]+'</div>'
-    text += '{{ list_questions[indices_questions['+str(i)+']]["html_form"] }}'
+    text += make_html_answer(indices_questions[i])
     text += '</div>'
 
 # footer du manège
