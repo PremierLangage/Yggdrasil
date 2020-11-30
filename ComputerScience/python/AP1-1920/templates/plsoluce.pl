@@ -28,7 +28,7 @@ pour avoir une entrée multi ligne
 ==
 
 # TODO rapatrier les fichiers suivants
-@ utils/soluceevaluator.py          [grader.py] # le as de python import toto as titi
+@ utils/soluceevaluator.py [grader.py] # le as de python import toto as titi
 @ utils/gradesoluce.py
 @ /utils/sandboxio.py
 
