@@ -6,17 +6,23 @@ builder =@ /builder/before.py
 @ /model/AMC2/AMC2.py [AMC.py]
 @ /ComputerScience/OperatingSystem/templates/utils.py
 
+
+# LES TRUCS QUE L'ON PEUT CHANGER SONT LA :
+nb_quest_voulu = 10
+
+
 before==#|python|
 # Le même parseur que AMC2 sinon ça va encore chialer grave !!!
 from AMC import parse_AMC_TXT
 
+# Pour les tirages aléatoires sans remise...
 from utils import *
 
 list_questions = parse_AMC_TXT(questions)
 nb_tot_quest = len(list_questions)
 
-# Choisir ici un nombre de question : None pour toutes les questions (ah ne pas faire bande d'abruti !)
-nb_quest_voulu = 10
+nb_quest = min([int(nb_quest_voulu), nb_tot_quest])
+indices_questions = knuth_mixing( subset_index(nb_tot_quest, nb_quest) )
 
 
 
@@ -29,6 +35,10 @@ Stoi le caroussel !
 ==
 
 text==
+
+Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
+
+
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
