@@ -160,6 +160,8 @@ form==
 ==
 
 evaluator==#|python|
+text = ""
+
 grade = (100, "Wesh t'a bon !")
 ==
 
