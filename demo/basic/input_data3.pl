@@ -1,7 +1,7 @@
 extends = /model/basic/input.pl
 
 title ==
-Exemple 2
+Chimie
 ==
 
 data @= /data/elements_chimiques.csv
