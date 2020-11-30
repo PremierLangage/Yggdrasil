@@ -36,25 +36,25 @@ text==
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      Wesh, pose ta question 1 OCE bordaille ?
+      <p>Wesh, pose ta question 1 OCE bordaille ?</p>
 
       <br><br>
     </div>
 
     <div class="item">
-      Zyva (David), pose ta question 2 alors ?
+      <p>Zyva (David), pose ta question 2 alors ?</p>
 
       <br><br>
     </div>
 
     <div class="item">
-      Nan, t'avais une question 3 ?
+      <p>Nan, t'avais une question 3 ?</p>
 
       <br><br>
     </div>
 
     <div class="item">
-      4 c'est trop, JPP !
+      <p>4 c'est trop, JPP !</p>
 
       <br><br>
     </div>
