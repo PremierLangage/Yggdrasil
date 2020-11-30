@@ -13,13 +13,11 @@ f4=1/(1-x**2)
 
 S = [exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f3,f4]
 P = randitem(S)
-Q = randitem([i for i in S if i not in [P]])
 
-def composition(f,g):
-    return f(g(x))
+S1 = [exp(P),ln(1+P),ln(1-P),cos(P),sin(P)]
+Q = randitem(S1)
 
-
-PQ = composition(P,Q)
+PQ = Q
 
 
 DLn = PQ.series(x,0,n+1) # Attention +1 sur l'ordre (notation O par défault).
