@@ -62,6 +62,7 @@ form==
 evaluator==#|python|
 right = 0
 total = 0
+faux = 0
 for item in group.items:
     checked = item['checked']
     id = item['id']
@@ -71,14 +72,21 @@ for item in group.items:
         if checked:
             right += 1
             item['css'] = 'success-border'
+        else:
+            faux += 1
     elif checked:
+        faux += 1
         item['css'] = 'error-border'
 
+if faux > 1:
+    err_str = "erreurs"
+else:
+    err_str = "erreur"
 
-if total == 0:
+if faux = 0:
     grade = (100, 'Bonnes réponses !')
 else:
-    grade = ((right / total) * 100, f"{right} réponses correctes / {total}")
+    grade = ((right / total) * 100, f"Vous avez fait {faux} {err_str}")
 ==
 
 
