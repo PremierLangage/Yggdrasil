@@ -97,7 +97,7 @@
 + Si le dernier bit vaut 0 alors le nombre est pair.
 + Si le dernier bit vaut 1 alors le nombre est impair.
 - Si le premier bit vaut 1 alors le nombre est impair.
-- Il est impossible de connaître la parité d'un nombre seulement avec une donnée binaire.
+- Il est impossible de connaître la parité d'un nombre <br> seulement avec une donnée binaire.
 - Il faut inverser tous les bits et regarder s'il y a plus de 1 que de 0.
 - Avec un voltmètre, on regarde si la tension émise est positive.
 
