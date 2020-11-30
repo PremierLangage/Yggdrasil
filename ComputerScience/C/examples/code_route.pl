@@ -5,6 +5,8 @@ builder =@ /builder/before.py
 
 group =: CheckboxGroup
 
+url_clip =$ platon_code_route.mp4
+
 # GENERATE A RANDOM QUESTION
 before==#|python|
 group.items = []
@@ -19,7 +21,9 @@ title = Checkbox Group Component
 
 text==
 
+Étant donné les conditions de conduite, quels feux les véhicules doivent-ils utiliser ?
 
+<video controls><source src="{{ url_clip }}" type="video/MP4"></video>
 
 ==
 
