@@ -13,7 +13,7 @@ builder =@ /builder/before.py
 @ /utils/components/textselect.py [customtextselect.py]
 
 # LES TRUCS QUE L'ON PEUT CHANGER SONT LA :
-nb_quest_voulu = 5
+nb_quest_voulu = 10
 
 
 before==#|python|
