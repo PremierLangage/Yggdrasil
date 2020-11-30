@@ -12,7 +12,7 @@ f2=1/(1-x)
 f4=1/(1-x**2)
 
 
-S = [exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f4])
+S = [exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f4]
 
 P = randitem(S)
 Q = randitem([i for i in S if i not in [P]])
