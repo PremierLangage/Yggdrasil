@@ -8,7 +8,7 @@ builder =@ /builder/before.py
 
 
 # LES TRUCS QUE L'ON PEUT CHANGER SONT LA :
-nb_quest_voulu = 10
+nb_quest_voulu = 5
 
 
 before==#|python|
@@ -24,11 +24,13 @@ nb_tot_quest = len(list_questions)
 nb_quest = min([int(nb_quest_voulu), nb_tot_quest])
 indices_questions = knuth_mixing( subset_index(nb_tot_quest, nb_quest) )
 
+def make_html_answer(question):
+    return ""
 
 
 ==
 
-questions=@ /ComputerScience/C_Initiation/QCM/QCM-1-a-4.txt
+questions=@ /ComputerScience/C/exercices/program/qcm_questions/generalites_C.txt
 
 title==
 Stoi le caroussel !
@@ -64,6 +66,9 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
   <div class="carousel-inner">
     <div class="item active">
       <p style="margin-left:15%; margin-right:15%;">{{ list_questions[indices_questions[0]]["text"] }}</p>
+
+      {{ make_html_answer(list_questions[indices_questions[0]]) }}
+
     </div>
 
     {% for i in range(1, nb_quest) %}
@@ -72,6 +77,7 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
     </div>
     {% endfor %}
 
+    {{ make_html_answer(list_questions[indices_questions[0]]) }}
   </div>
 
   <!-- Left and right controls -->
