@@ -55,9 +55,9 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
+    {% for i in range(1, nb_quest) %}
+    <li data-target="#myCarousel" data-slide-to="{{ i }}"></li>
+    {% endfor %}
   </ol>
 
   <!-- Wrapper for slides -->
