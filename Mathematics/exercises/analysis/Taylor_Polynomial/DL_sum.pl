@@ -22,8 +22,8 @@ def my_custom_random():
 
 print(my_custom_random())
 
-a = rd.randint(-5, 5)
-b = rd.randint(-5, 5)
+a = randitem([i for i in range(-5,5) if i not in [0]])
+b = randitem([i for i in range(-5,5) if i not in [0]])
 
 
 
@@ -48,6 +48,7 @@ feedback = message[error]
 solution ==
 La solution est $! {{ sol|latex}} !$.
 ==
+
 
 
 
