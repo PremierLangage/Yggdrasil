@@ -1,4 +1,6 @@
-
+title==
+Stoi le caroussel !
+==
 
 text==
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
