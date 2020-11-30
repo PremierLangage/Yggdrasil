@@ -7,6 +7,9 @@ builder =@ /builder/before.py
 @ /ComputerScience/OperatingSystem/templates/utils.py
 @ /model/AMC2/aleaq.py
 
+@ /utils/components/radio.py [customradio.py]
+@ /utils/components/checkbox.py [customcheckbox.py]
+@ /utils/components/textselect.py [customtextselect.py]
 
 # LES TRUCS QUE L'ON PEUT CHANGER SONT LA :
 nb_quest_voulu = 5
