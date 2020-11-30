@@ -284,7 +284,9 @@ if nb_quest >= 9:
 if nb_quest >= 10:
     scores.append(radio9.eval())
 
-grade = (100, "Wesh t'a bon ! <br>"+str(scores))
+note_finale = sum(scores) / nb_quest
+
+grade = (note_finale, "Vous avez obtenur la note de "+str(note_finale)+"%<br>")
 ==
 
 
