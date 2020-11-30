@@ -8,10 +8,10 @@ n = 5 # Ordre du DL
 
 f1=1/(1+x)
 f2=1/(1-x)
-f3=1/(1+x**2)
+# f3=1/(1+x**2) Provoque une erreur dans eval_poly...
 f4=1/(1-x**2)
 
-S = [exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f3,f4]
+S = [exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f4]
 
 P = randitem(S)
 Q = randitem(S)
