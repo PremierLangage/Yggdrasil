@@ -25,7 +25,10 @@ nb_quest = min([int(nb_quest_voulu), nb_tot_quest])
 indices_questions = knuth_mixing( subset_index(nb_tot_quest, nb_quest) )
 
 def make_html_answer(question):
-    return "Les options à cliquer..."
+    question["html_form"] = "Les options à cliquer..."
+
+for i in indices_questions:
+    make_html_answer(list_questions[i])
 
 
 ==
@@ -77,7 +80,7 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
     </div>
     {% endfor %}
 
-    {{ make_html_answer(list_questions[indices_questions[0]]) }}
+    {{ make_html_answer(list_questions[indices_questions[i]]) }}
   </div>
 
   <!-- Left and right controls -->
