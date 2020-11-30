@@ -6,10 +6,8 @@ before ==
 var('x') # crée le symbole x
 n = 3 # Ordre du DL
 
-a = randitem([i for i in range(-5,5) if i not in [0]])
-S = [i for i in range(-4,4) if i not in [0]]
-p = randitem(S)
-f = (1+a*x)**p
+
+f = (1+x)**2
 
 DLn = f.series(x,0,n+1) # Attention +1 sur l'ordre (notation O par défault).
 
