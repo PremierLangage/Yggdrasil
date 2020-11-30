@@ -63,12 +63,12 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <p style="margin:15%">{{ list_questions[indices_questions[0]]["text"] }}</p>
+      <p style="margin-left:15%; margin-right:15%;">{{ list_questions[indices_questions[0]]["text"] }}</p>
     </div>
 
     {% for i in range(1, nb_quest) %}
     <div class="item">
-      <p style="margin:15%">{{ list_questions[indices_questions[i]]["text"] }}</p>
+      <p style="margin-left:15%; margin-right:15%;">{{ list_questions[indices_questions[i]]["text"] }}</p>
     </div>
     {% endfor %}
 
