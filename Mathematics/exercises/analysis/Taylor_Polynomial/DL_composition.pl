@@ -15,7 +15,7 @@ f2=1/(1-P)
 f3=1/(1+P**2)
 f4=1/(1-P**2)
 
-S1 = [exp(P),ln(1+P),ln(1-P),cos(P),sin(P)]
+S1 = [exp(P),ln(1+P),ln(1-P),cos(P),sin(P),f1,f2,f3,f4]
 Q = randitem(S1)
 
 PQ = Q
