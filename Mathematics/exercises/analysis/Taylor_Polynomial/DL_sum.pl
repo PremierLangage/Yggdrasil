@@ -1,6 +1,6 @@
 extends = /model/mathinput.pl
 
-title = Développement limité d'un produit.
+title = Développement limité d'une somme.
 
 before ==
 var('x') # crée le symbole x
