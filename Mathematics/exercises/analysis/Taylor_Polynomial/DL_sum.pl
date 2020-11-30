@@ -30,8 +30,9 @@ a = randitem([i for i in range(-5,5) if i not in [0]])
 b = randitem([i for i in range(-5,5) if i not in [0]])
 
 
-Som = P+Q
-DLn = Som.series(x,0,n+1) # Attention +1 sur l'ordre (notation O par défault).
+Som = a*P+b*Q
+SomS = simplify(Som)
+DLn = SomS.series(x,0,n+1) # Attention +1 sur l'ordre (notation O par défault).
 
 sol = DLn.subs(O(x**(n+1)),0) # Solution
 
