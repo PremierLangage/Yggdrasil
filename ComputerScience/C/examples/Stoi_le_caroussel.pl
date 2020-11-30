@@ -264,9 +264,13 @@ evaluator==#|python|
 
 text=""
 
+scores = []
+for i in range(nb_quest):
+    scores.append(comp[indices_questions[2]].eval())
 
 
-grade = (100, "Wesh t'a bon !")
+
+grade = (100, "Wesh t'a bon ! <br>"+str(scores))
 ==
 
 
