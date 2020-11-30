@@ -267,7 +267,22 @@ text=""
 scores = [radio0.eval()]
 if nb_quest >= 2:
     scores.append(radio1.eval())
-
+if nb_quest >= 3:
+    scores.append(radio2.eval())
+if nb_quest >= 4:
+    scores.append(radio3.eval())
+if nb_quest >= 5:
+    scores.append(radio4.eval())
+if nb_quest >= 6:
+    scores.append(radio5.eval())
+if nb_quest >= 7:
+    scores.append(radio6.eval())
+if nb_quest >= 8:
+    scores.append(radio7.eval())
+if nb_quest >= 9:
+    scores.append(radio8.eval())
+if nb_quest >= 10:
+    scores.append(radio9.eval())
 
 grade = (100, "Wesh t'a bon ! <br>"+str(scores))
 ==
