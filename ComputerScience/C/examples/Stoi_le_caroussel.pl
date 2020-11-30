@@ -15,7 +15,7 @@ list_questions = parse_AMC_TXT(questions)
 
 ==
 
-questions=@ Yggdrasil/ComputerScience/C_Initiation/QCM/QCM-1-a-4.txt
+questions=@ /ComputerScience/C_Initiation/QCM/QCM-1-a-4.txt
 
 title==
 Stoi le caroussel !
