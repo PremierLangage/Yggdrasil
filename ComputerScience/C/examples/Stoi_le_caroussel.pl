@@ -72,7 +72,7 @@ for i in indices_questions:
     make_html_answer(list_questions[i])
 
 def make_rotation_str(nb_quest):
-    ans = '''<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" style="min-height: 75%;">'''
+    ans = '''<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" >'''
     ans += '''<!-- Indicators -->'''
     ans += '''<ol class="carousel-indicators">'''
     ans += '''<li data-target="#myCarousel" data-slide-to="0" class="active"></li>'''
