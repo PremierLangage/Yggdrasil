@@ -12,26 +12,15 @@ f3=1/(1+x**2)
 f4=1/(1-x**2)
 
 S = [exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f3,f4]
-
 P = randitem(S)
 Q = randitem([i for i in S if i not in [P]])
 
-def compose (f,g): 
-    def fonc(x): 
-        return g(f(x)) 
-    return fonc 
- 
-def f(x): 
-    return P
- 
-def g(x): 
-    return Q
-
-def main(): 
-    print (compose(f,g)(x)) 
+def composition(f,g):
+    return: f(g(x))
 
 
-PQ = main()
+PQ = composition(P,Q)
+
 
 DLn = PQ.series(x,0,n+1) # Attention +1 sur l'ordre (notation O par défault).
 
