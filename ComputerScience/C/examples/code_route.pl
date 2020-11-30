@@ -83,7 +83,7 @@ if faux > 1:
 else:
     err_str = "erreur"
 
-if faux = 0:
+if faux == 0:
     grade = (100, 'Bonnes réponses !')
 else:
     grade = ((right / total) * 100, f"Vous avez fait {faux} {err_str}")
