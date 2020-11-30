@@ -93,7 +93,7 @@ text += '''<p style="margin-left:15%; margin-right:15%;"><b><u>Question 1 : </u>
 text += '''<div style="margin-left:15%; margin-right:15%;">{{ list_questions[indices_questions[0]]["text"] }}</div>'''
 text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio0.selector} cid='{radio0.cid}'></{radio0.selector}></div>"""
 # text += list_questions[indices_questions[0]]["html_form"]
-text += '''<br><br><br></div>'''
+text += '''<br><br><br><br></div>'''
 
 # question suivante --> 1
 if nb_quest >= 2:
