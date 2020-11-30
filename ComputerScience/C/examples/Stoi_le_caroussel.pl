@@ -96,7 +96,7 @@ text += '''</div>'''
 
 for i in range(1, nb_quest):
     text += '''<div class="item">'''
-    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 'str(i+1)' : </u></b></p><br>'
+    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question '+str(i+1)+' : </u></b></p><br>'
     text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[i]]["text"]+'</div>'
     text += '{{ list_questions[indices_questions['+str(i)+']]["html_form"] }}'
     text += '</div>'
