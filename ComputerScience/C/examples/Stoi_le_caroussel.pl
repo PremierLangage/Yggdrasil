@@ -91,7 +91,7 @@ radio = comp[indices_questions[0]]
 text += '''<div class="item active">'''
 text += '''<p style="margin-left:15%; margin-right:15%;"><b><u>Question 1 : </u></b></p><br>'''
 text += '''<div style="margin-left:15%; margin-right:15%;">{{ list_questions[indices_questions[0]]["text"] }}</div>'''
-text += f"""<{radio.selector} cid='{radio.cid}'></{radio.selector}>"""
+text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio.selector} cid='{radio.cid}'></{radio.selector}></div>"""
 # text += list_questions[indices_questions[0]]["html_form"]
 text += '''</div>'''
 
@@ -102,7 +102,7 @@ for i in range(1, nb_quest):
     text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question '+str(i+1)+' : </u></b></p><br>'
     text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[i]]["text"]+'</div>'
     # text += list_questions[indices_questions[i]]["html_form"]
-    text += f"""<{radio.selector} cid='{radio.cid}'></{radio.selector}>"""
+    text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio.selector} cid='{radio.cid}'></{radio.selector}></div>"""
     text += '</div>'
 
 # footer du manège
