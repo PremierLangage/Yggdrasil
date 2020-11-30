@@ -13,7 +13,32 @@ group.items = []
 
 group.items.append({
     "id": "veilleuse",
-    "content": "veilleuses"
+    "content": "Les feux de position"
+    })
+
+group.items.append({
+    "id": "croisement",
+    "content": "Les feux de croisement"
+    })
+
+group.items.append({
+    "id": "route",
+    "content": "Les feux de route"
+    })
+
+group.items.append({
+    "id": "bav",
+    "content": "Les feux de brouillard avant"
+    })
+
+group.items.append({
+    "id": "barr",
+    "content": "Les feux de brouillard arrière"
+    })
+
+group.items.append({
+    "id": "detresse",
+    "content": "Les feux de détresse"
     })
 ==
 
