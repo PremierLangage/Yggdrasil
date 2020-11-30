@@ -80,7 +80,7 @@
 + En binaire, une puissance de 2 possède un seul bit valant 1 suivi de 0.
 - En binaire, les puissance de 2 alternent les bits à 0 et à 1.
 - Les puissances de 2 sont stables par complément à 1.
-- Les puissances de 2 sont des palindromes en binaire (on peut les lire de droite à gauche).
+- Les puissances de 2 sont des palindromes en binaire <br> (on peut les lire de droite à gauche).
 - Les puissances de 2 comportent toujours plus de bits à 1 que de bits à 0.
 
 
