@@ -6,13 +6,14 @@ before ==
 var('x') # crée le symbole x
 n = 4 # Ordre du DL
 
-f1=1/(1+x)
-f2=1/(1-x)
-f3=1/(1+x**2)
-f4=1/(1-x**2)
 
-S = [exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f3,f4]
+S = [exp(x)-1,ln(1+x),ln(1-x),cos(x)-1,sin(x),x^2-x^3,x+x^2]
 P = randitem(S)
+
+f1=1/(1+P)
+f2=1/(1-P)
+f3=1/(1+P**2)
+f4=1/(1-P**2)
 
 S1 = [exp(P),ln(1+P),ln(1-P),cos(P),sin(P)]
 Q = randitem(S1)
