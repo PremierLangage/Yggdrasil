@@ -8,11 +8,13 @@ n = 5 # Ordre du DL
 
 f1=1/(1+x)
 f2=1/(1-x)
-# f3=1/(1+x**2) Provoque une ereur, je ne sais pas pourquoi...
+f3=1/(1+x**2)
 f4=1/(1-x**2)
 
-P = randitem([exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f4])
-Q = randitem([exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f4])
+S = [exp(x),ln(1+x),ln(1-x),cos(x),sin(x),f1,f2,f3,f4]
+
+P = randitem(S)
+Q = randitem(S)
 
 PQ = P*Q
 DLn = PQ.series(x,0,n+1) # Attention +1 sur l'ordre (notation O par défault).
@@ -28,7 +30,7 @@ $${{ PQ|latex }}$$
 ==
 
 evaluator ==
-score, error = eval_poly(input.value, sol, var="x", form="expanded")
+score, error = eval_expr(input.value, sol)
 feedback = message[error]
 ==
 
