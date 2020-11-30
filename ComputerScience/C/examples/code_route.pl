@@ -47,7 +47,7 @@ author = Nicolas Borie
 
 text==
 
-<p style="font-size:1.2em;">Étant données les conditions de conduite, quels feux les véhicules doivent-ils utiliser ?</p>
+<p style="font-size:1em;">Étant données les conditions de conduite, quels feux les véhicules doivent-ils utiliser ?</p>
 
 <br>
 
@@ -55,19 +55,17 @@ text==
 
 ==
 
-# PRESENT THE QUESTION TO THE STUDENT
 form==
 {{ group|component }}
 ==
 
-# EVALUATE THE STUDENT ANSWER
-evaluator==
+evaluator==#|python|
 right = 0
 total = 0
 for item in group.items:
     checked = item['checked']
-    content = int(item['content'])
-    if content % 2 == 0:
+    id = item['id']
+    if id in ["veilleuse"]:
         total += 1
         item['css'] = 'success-border animated pulse infinite'
         if checked:
@@ -78,9 +76,9 @@ for item in group.items:
 
 
 if total == 0:
-    grade = (100, 'Right')
+    grade = (100, 'Bonnes réponses !')
 else:
-    grade = ((right / total) * 100, f"{right} / {total}")
+    grade = ((right / total) * 100, f"{right} réponses correctes / {total}")
 ==
 
 
