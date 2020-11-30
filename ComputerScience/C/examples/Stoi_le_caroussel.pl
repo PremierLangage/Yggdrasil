@@ -39,7 +39,7 @@ def make_html_answer(question):
     question["html_form"] = '''<br><div style="margin-left:15%; margin-right:15%;">'''
     for it in question["items"]:
         question["html_form"] += '<input type="checkbox" id="'+it+'" name="'+it+'" value="'+it+'">'
-        question["html_form"] += '<label for="'+it+'">'+it+'</label><br>'
+        question["html_form"] += '<label for="'+it+'"> '+it+' </label><br>'
     question["html_form"] += '</div>'
 
 comp = []
