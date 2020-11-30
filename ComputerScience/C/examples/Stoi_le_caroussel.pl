@@ -103,7 +103,7 @@ if nb_quest >= 2:
     text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[1]]["text"]+'</div>'
     # text += list_questions[indices_questions[i]]["html_form"]
     text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio1.selector} cid='{radio1.cid}'></{radio1.selector}></div>"""
-    text += '</div>'
+    text += '<br><br><br><br></div>'
 
 # question suivante --> 2
 if nb_quest >= 3:
@@ -113,7 +113,7 @@ if nb_quest >= 3:
     text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[2]]["text"]+'</div>'
     # text += list_questions[indices_questions[i]]["html_form"]
     text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio2.selector} cid='{radio2.cid}'></{radio2.selector}></div>"""
-    text += '</div>'
+    text += '<br><br><br><br></div>'
 
 # question suivante --> 3
 if nb_quest >= 4:
@@ -123,7 +123,7 @@ if nb_quest >= 4:
     text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[3]]["text"]+'</div>'
     # text += list_questions[indices_questions[i]]["html_form"]
     text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio3.selector} cid='{radio3.cid}'></{radio3.selector}></div>"""
-    text += '</div>'
+    text += '<br><br><br><br></div>'
 
 # question suivante --> 4
 if nb_quest >= 5:
@@ -133,7 +133,7 @@ if nb_quest >= 5:
     text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[4]]["text"]+'</div>'
     # text += list_questions[indices_questions[i]]["html_form"]
     text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio4.selector} cid='{radio4.cid}'></{radio4.selector}></div>"""
-    text += '</div>'
+    text += '<br><br><br><br></div>'
 
 # question suivante --> 5
 if nb_quest >= 6:
@@ -143,7 +143,7 @@ if nb_quest >= 6:
     text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[5]]["text"]+'</div>'
     # text += list_questions[indices_questions[i]]["html_form"]
     text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio4.selector} cid='{radio4.cid}'></{radio4.selector}></div>"""
-    text += '</div>'
+    text += '<br><br><br><br></div>'
 
 
 
