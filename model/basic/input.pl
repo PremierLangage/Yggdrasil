@@ -1,7 +1,5 @@
 extends = /model/basic.pl
 
-
-
 headerbefore ==
 import random as rd
 from io import StringIO
@@ -78,5 +76,6 @@ if any([samestrings(input.value, item, tolerance=tolerance) for item in lstsol])
 else:
     score = 0
 ==
+
 
 
