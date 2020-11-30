@@ -68,23 +68,14 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
       <br><br>
     </div>
 
+    {% for i in range(1, nb_quest) %}
     <div class="item">
-      <p>Zyva (David), pose ta question 2 alors ?</p>
+      <p style="margin:30%">{{ list_questions[indices_questions[i]]["text"] }}</p>
 
       <br><br>
     </div>
+    {% endfor %}
 
-    <div class="item">
-      <p>Nan, t'avais une question 3 ?</p>
-
-      <br><br>
-    </div>
-
-    <div class="item">
-      <p>4 c'est trop, JPP !</p>
-
-      <br><br>
-    </div>
   </div>
 
   <!-- Left and right controls -->
