@@ -33,7 +33,7 @@ $${{ PQ|latex }}$$
 ==
 
 evaluator ==
-score, error = eval_expr(input.value, sol)
+score, error = eval_poly(input.value, sol, var="x", form="expanded")
 feedback = message[error]
 ==
 
@@ -42,4 +42,5 @@ La solution est $! {{ sol|latex}} !$.
 ==
 
 
-
+# Remarque : eval_expr(input.value, sol) est envisageable, mais l'évaluateur ne vérifie 
+#            pas si la solution de l'étudiant est donnée sous forme simplifiée.
