@@ -48,7 +48,9 @@ int fibo(int n){
 solution==#|c|
 #include <stdio.h>
 
-#define TRACE(a) for(int zeubi=0 ; zeubi<a ; zeubi++){putchar('X');} putchar('\n');
+int zeubi;
+
+#define TRACE(a) for(zeubi=0 ; zeubi<a ; zeubi++){putchar('X');} putchar('\n');
 
 int fibo(int n){
   TRACE(n)
