@@ -1,21 +1,34 @@
-# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2019 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Macro de sécurisation
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Macro de sécurisation
-tag=macro
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=macro|entête|inclusion|sécurité
 
 text==
 
-Sécurisez l'appel à la fonction **One_call()** en définissant une macro d'identifiant **BLOB** 
-
+Sécurisez l'appel à la fonction **One_call()** en définissant une macro d'identifiant **BLOB** .
 
 
 ==
 
-editor.code==
+editor.code==#|c|
 #...
 #...
 
@@ -25,8 +38,7 @@ One_call();
 #...
 ==
 
-solution==
-
+solution==#|c|
 #ifndef BLOB
 #define BLOB
 
@@ -34,11 +46,10 @@ solution==
 One_call();
 
 #endif
-
 ==
 
 
-codebefore==
+code_before==#|c|
 
 #include <stdio.h>
 
@@ -48,7 +59,7 @@ int main(int argc, char* argv[]){
 
 ==
 
-codeafter==
+code_after==#|c|
 
   return 0;
 }
@@ -63,10 +74,8 @@ void One_call(void){
 
 ==
 
-tests==
+checks_args_stdin==#|python|
 [ ["Exécution simple", "",""] ]
 ==
-
-
 
 
