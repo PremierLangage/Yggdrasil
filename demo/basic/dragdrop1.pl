@@ -1,3 +1,4 @@
+
 extends = /model/basic/dragdrop.pl
 
 title ==
@@ -5,28 +6,30 @@ Exemple 1
 ==
 
 labelcontents ==
-habes
-habet
-habent
+<
+>
+=
 ==
 
 solutions ==
-habet
+>
+=
+=
 ==
 
 text ==
 Compléter la phrase suivante avec les étiquettes proposées.
 ==
 
-form ==
-Pastor pecuniam non {{ drops[0]|component }}.
-
-
-
-{% for label in labels %}
-{{ label|component }}
-{% endfor %}
+text==
+Comparer les expressions suivants avec les symboles {{ labels[0] | component }} et {{ labels[1] | component }}.
 ==
 
+form==
+<ul>
+<li> 1 {{ drops[0]|component }}3 </li>
+</ul>
 
-
+* 1 {{ drops[1]|component }}3 
+* 1 {{ drops[2]|component }}3 
+==
