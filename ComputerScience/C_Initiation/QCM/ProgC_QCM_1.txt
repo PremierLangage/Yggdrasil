@@ -339,7 +339,7 @@ Quelles sont-elles ?
 - 4
 - 5
 - 6
-+ 7
+- 7
 + 8
 - Aucune ne provoque d'erreur ou de warning
 
