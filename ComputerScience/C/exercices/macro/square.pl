@@ -40,6 +40,10 @@ solution==#|c|
 
 ==
 
+code_before==#|c|
+
+==
+
 codeafter==#|c|
  
 #include <stdio.h>
@@ -58,7 +62,6 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-
 [ ["Expressions classiques", "",""] ]
 ==
 
