@@ -1,4 +1,4 @@
-extends = /model/basic.pl
+extends = /model/basic/input.pl
 
 title ==
 Listening
