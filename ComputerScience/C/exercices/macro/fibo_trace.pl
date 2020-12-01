@@ -18,49 +18,43 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
 
-title=Reconnaître un nombre entier
-tag=string|chaine|conversion|verification
+title=Tracer les appels d'une fonction récursive
+tag=trace|récursion|fibonacci|macro|pile|appel
 
 text==
-Écrire une fonction **is_a_number** qui prend en argument une chaîne 
-de caractères C (en ascii) et retourne 1 si la chaine forme un nombre 
-valide en base 10. La fonction retournera 0 sinon.
 
-On considéra comme valide tout entier positif ou negatif. Voici des
-entrées valides :
-    
-    0, 1, 324, -1, -0, -5243134, ...
+Écrire une macro **TRACE** qui prend en paramètre un entier **a** et
+qui affiche **a** fois le caractère X avant de retourner à la 
+ligne.
 
-Voici des entrées non valides :
-
-    a12, 23d, -e1, 023, +23, 12a0, -0123, ...
-
-<br />
-
+Cette macro sera ensuite utiliser pour faire une trace en 
+ascii art de l'exécution d'un Fibonacci fortement récursif.
 
 ==
 
 editor.code==#|c|
-int is_a_number(char* s){
-  /* votre code ici... */
+#include <stdio.h>
+
+#define TRACE(a) ...
+
+int fibo(int n){
+  TRACE(n)
+  if (n <= 1)
+    return 1;
+  return fibo(n-1) + fibo(n-2);
 }
 ==
 
 solution==#|c|
+#include <stdio.h>
 
-int is_a_number(char* s){
-  int i=0;
+#define TRACE(a) for(int zeubi=0 ; zeubi<a ; zeubi++){putchar('X');} putchar('\n');
 
-  if (s[i] == '-')
-    i++;
-  if (s[i] == '0')
-    return s[i+1] == '\0';
-  while (s[i] != '\0'){
-    if (s[i] < '0' || s[i] > '9')
-      return 0;
-    i++;
-  }
-  return 1;
+int fibo(int n){
+  TRACE(n)
+  if (n <= 1)
+    return 1;
+  return fibo(n-1) + fibo(n-2);
 }
 ==
 
@@ -69,31 +63,19 @@ code_before==#|c|
 ==
 
 code_after==#|c|
+#include <stdlib.h>
 
-#include <stdio.h>
 
 int main(int argc, char* argv[]){
-  if (is_a_number(argv[1])){
-    printf("%s est un nombre valide.\n", argv[1]);
-  }
-  else{
-    printf("%s n'est pas un nombre valide.\n", argv[1]);
-  }
+  fibo(atoi(argv[1]));
   return 0;
 }
 ==
 
 checks_args_stdin==#|python|
 [ ["Test basique", ["0"], ""],
-  ["Plus d'une centaine", ["123"], ""],
-  ["Avec des lettres", ["12a0"], ""],
-  ["Petit négatif", ["-47"], ""],
-  ["Très grand nombre", ["12172364512235126361273223736"], ""],
-  ["Fort négatif", ["-999999999999999"], ""],
-  ["Test aléatoire 1", [choice(["781","-1274","997421","-75.43","3.1415","12521z","-124b","82c12","-124b","-142c1","-12.21"])], ""],
-  ["Test aléatoire 2", [choice(["781","-1274","997421","-75.43","3.1415","12521z","-124b","82c12","-124b","-142c1","-12.21"])], ""],
-  ["Test aléatoire 3", [choice(["781","-1274","997421","-75.43","3.1415","12521z","-124b","82c12","-124b","-142c1","-12.21"])], ""],
-  ["Test aléatoire 4", [choice(["781","-1274","997421","-75.43","3.1415","12521z","-124b","82c12","-124b","-142c1","-12.21"])], ""],
-  ["Test aléatoire 5", [choice(["781","-1274","997421","-75.43","3.1415","12521z","-124b","82c12","-124b","-142c1","-12.21"])], ""] ]
+  ["Test Moyen", ["4"], ""],
+  ["Test aléatoire 1", [str(randint(5,7))] , ""],
+  ["Test aléatoire 2", [str(randint(8,10))] , ""] ]
 ==
 
