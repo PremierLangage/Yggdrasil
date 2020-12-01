@@ -1,6 +1,6 @@
 extends = /model/mathinput.pl
 
-title = Développement limité et changment de variable.
+title = Développement limité et changement de variable.
 
 before ==
 var('x') # crée le symbole x
@@ -46,5 +46,6 @@ La solution est $! {{ sol|latex}} !$.
 
 # Remarque : eval_expr(input.value, sol) est envisageable, mais l'évaluateur ne vérifie 
 #            pas si la solution de l'étudiant est donnée sous forme simplifiée.
+
 
 
