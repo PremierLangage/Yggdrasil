@@ -18,7 +18,7 @@ text ==
 ==
 
 solution ==
-I'm gonna make him an offer he can't refuse.
+I'm gonna make him an offer he can't refuse
 ==
 
 diffmeasure = EditRatio
