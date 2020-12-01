@@ -65,10 +65,9 @@ def samestrings(str1, str2, measure="distance", tolerance=0, casesensitive=False
         str1 = str1.casefold()
         str2 = str2.casefold()
     if diffmeasure == "EditRatio":
-    tolerance = int(len(solution) * float(tolerance))
+        return minimumEditDistance(str1, str2)/len(str2) <= tolerance
     else:
         return minimumEditDistance(str1, str2) <= tolerance
-    return minimumEditDistance(str1, str2) <= tolerance
 
 if isinstance(solution, str):
     if '\n' in solution:
