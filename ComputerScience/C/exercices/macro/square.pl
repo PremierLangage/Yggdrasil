@@ -44,7 +44,7 @@ code_before==#|c|
 
 ==
 
-codeafter==#|c|
+code_after==#|c|
  
 #include <stdio.h>
 
