@@ -26,9 +26,6 @@ Comparer les expressions suivants avec les symboles {{ labels[0] | component }}
 ==
 
 form==
-<ul>
-<li> 1 {{ drops[0]|component }}3 </li>
-</ul>
 
 * 1 {{ drops[1]|component }}3 
 * 1 {{ drops[2]|component }}3 
