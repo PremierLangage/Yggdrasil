@@ -71,7 +71,7 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[ ["Exécution simple", str(random.randint(0,1000000)),""] ]
+[ ["Exécution simple", str(randint(0,1000000)),""] ]
 ==
 
 
