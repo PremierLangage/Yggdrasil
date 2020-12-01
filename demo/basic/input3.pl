@@ -24,3 +24,7 @@ function playAudio() {
 solution ==
 I'm gonna make him an offer he can't refuse.
 ==
+
+diffmeasure = EditRatio
+
+tolerance = 0.1
