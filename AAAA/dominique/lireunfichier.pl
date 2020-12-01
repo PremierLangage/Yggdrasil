@@ -5,7 +5,9 @@ extends = /ComputerScience/python/template/pltest.pl
 title= Recherche de mots dans un fichier 
 
 
-
+before==
+import psutil
+==
 
 text==
 
@@ -31,7 +33,7 @@ def mongrep(filename, mot, option=True):
             if mot in l:
                 compter += 1 
                 if option :
-                    print(l)
+                    print(l,end='')
     return compter
 
 ==
@@ -48,6 +50,7 @@ terminer
 >>> mongrep("version","versio",option=False)
 3
 ==
+
 
 
 
