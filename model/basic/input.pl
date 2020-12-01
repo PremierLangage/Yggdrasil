@@ -42,7 +42,7 @@ settings.feedback = rightwrong
 
 evaluator ==
 
-tolerance = int(tolerance)
+tolerance = float(tolerance)
 
 def minimumEditDistance(s1,s2):
     if len(s1) > len(s2):
@@ -79,6 +79,7 @@ if any([samestrings(input.value, item, tolerance=tolerance) for item in lstsol])
 else:
     score = 0
 ==
+
 
 
 
