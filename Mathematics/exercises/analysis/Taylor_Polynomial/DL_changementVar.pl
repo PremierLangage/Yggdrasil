@@ -1,22 +1,22 @@
 extends = /model/mathinput.pl
 
-title = Développement limité d'une composition.
+title = Développement limité et changment de variable.
 
 before ==
 var('x') # crée le symbole x
 n = 4 # Ordre du DL
 
 
-S = [x,x**2,x**3,x**4]
+S = [-x,x**2,-x**2,x**3,-x**3,x**4,-x**4]
 Rand = randitem(S)
-P = 
+a = randitem([i for i in range(1,5)])
+P = a*Rand
 
 f1=1/(1+P)
 f2=1/(1-P)
-f3=1/(1+P**2)
-f4=1/(1-P**2)
 
-S1 = [exp(P),ln(1+P),ln(1-P),cos(P),sin(P),f1,f2,f3,f4]
+
+S1 = [exp(P),ln(1+P),ln(1-P),cos(P),sin(P),f1,f2]
 Q = randitem(S1)
 
 PQ = Q
