@@ -75,7 +75,7 @@ int main(int argc, char* argv[]){
 checks_args_stdin==#|python|
 [ ["Test basique", ["0"], ""],
   ["Test Moyen", ["4"], ""],
-  ["Test aléatoire 1", [str(randint(5,7))] , ""],
-  ["Test aléatoire 2", [str(randint(8,10))] , ""] ]
+  ["Test aléatoire 1", [str(randint(5,6))] , ""],
+  ["Test aléatoire 2", [str(randint(7,8))] , ""] ]
 ==
 
