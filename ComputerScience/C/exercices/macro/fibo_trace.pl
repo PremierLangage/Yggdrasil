@@ -50,7 +50,7 @@ solution==#|c|
 
 int zeubi;
 
-#define TRACE(a) for(zeubi=0 ; zeubi<a ; zeubi++){putchar('X');} putchar('\n');
+#define TRACE(a) printf("fibo %d : ", a); for(zeubi=0 ; zeubi<a ; zeubi++){putchar('X');} putchar('\n');
 
 int fibo(int n){
   TRACE(n)
