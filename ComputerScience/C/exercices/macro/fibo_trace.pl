@@ -24,8 +24,11 @@ tag=trace|récursion|fibonacci|macro|pile|appel
 text==
 
 Écrire une macro **TRACE** qui prend en paramètre un entier **a** et
-qui affiche **a** fois le caractère X avant de retourner à la 
-ligne.
+qui affiche `fibo a : ` (avec a substitué par sa valeur entière) 
+puis **a** fois le caractère X avant de retourner à la 
+ligne. Par exemple, TRACE(4) doit afficher :
+
+    fibo 4 : XXXX
 
 Cette macro sera ensuite utiliser pour faire une trace en 
 ascii art de l'exécution d'un Fibonacci fortement récursif.
