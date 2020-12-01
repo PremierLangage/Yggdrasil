@@ -40,7 +40,7 @@ def mongrep(filename, mot, option=True):
 @ input1.txt [version]
 
 pltest==
->>> mongrep("data.txt", "terminer")
+>>> mongrep("data.txt", "terminer") #doctest: +NORMALIZE_WHITESPACE
 terminer
 1
 >>> mongrep("data.txt", "terminer", option=False)
@@ -48,6 +48,7 @@ terminer
 >>> mongrep("version","versio",option=False)
 3
 ==
+
 
 
 
