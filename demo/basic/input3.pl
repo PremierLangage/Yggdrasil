@@ -4,7 +4,7 @@ title ==
 Listening
 ==
 
-audiofile =$ /data/sentence.mp3
+audiofile =$ /data/english_sentence.mp3
 
 text ==
 <button onclick="playAudio()" class="btn btn-info"><i class="fas fa-volume-up"></i></button> Transcrire la phrase.
