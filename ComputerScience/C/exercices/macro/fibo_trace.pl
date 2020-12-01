@@ -28,6 +28,8 @@ qui affiche `fibo a : ` (avec a substitué par sa valeur entière)
 puis **a** fois le caractère X avant de retourner à la 
 ligne. Par exemple, TRACE(4) doit afficher :
 
+<br>
+
     fibo 4 : XXXX
 
 Cette macro sera ensuite utiliser pour faire une trace en 
