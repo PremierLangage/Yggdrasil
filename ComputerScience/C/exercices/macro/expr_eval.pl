@@ -32,7 +32,7 @@ afficher sur la sortie standard
 et **retourner à la ligne** juste derrière le dernier entier. 
 Utilisez **printf** sans mettre de point virgule à la fin de votre 
 macro (la macro sera toujours appelée avec un point virgule final 
-dans les programmes **EVAL(arg);**).
+dans les programmes).
 
 <br>
     
