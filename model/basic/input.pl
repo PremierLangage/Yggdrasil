@@ -42,7 +42,10 @@ settings.feedback = rightwrong
 
 evaluator ==
 
-tolerance = float(tolerance)
+if diffmeasure == "EditRatio":
+    tolerance = int(len(solution) * float(tolerance))
+else:
+    tolerance = int(tolerance)
 
 def minimumEditDistance(s1,s2):
     if len(s1) > len(s2):
