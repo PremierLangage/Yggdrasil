@@ -22,24 +22,25 @@ title=Macro pour calculer un carré
 tag=macro|carré|piège|parenthèse|priorité
 
 text==
-Écrire une macro **SQUARE** qui prend en argument un seul paramètre
-(jamais typé comme c'est toujours le cas pour les macros) qui remplace
-son argument par le carré de son paramètre. Le paramètre de la macro
-sera toujours une expression C qui s'évalue dans un type numérique.
+Écrire une macro à paramètre **SQUARE** qui prend en argument un seul paramètre 
+(jamais typé comme c'est toujours le cas pour les macros) et qui remplacera 
+ces appels par le carré (via une simple multiplication) de son paramètre. 
+Le paramètre de la macro sera toujours une expression C qui s'évalue dans 
+un type numérique.
 
 ==
 
-editor.code==
+editor.code==#|c|
 #define SQUARE....
 
 ==
 
-solution==
+solution==#|c|
 #define SQUARE(a) ((a)*(a))
 
 ==
 
-codeafter==
+codeafter==#|c|
  
 #include <stdio.h>
 
@@ -56,8 +57,8 @@ int main(int argc, char* argv[]){
 
 ==
 
-tests==
-[ ["expressions classiques", "",""] ]
+checks_args_stdin==#|python|
+[ ["Expressions classiques", "",""] ]
 ==
 
 
