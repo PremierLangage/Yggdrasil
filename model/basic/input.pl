@@ -42,10 +42,7 @@ settings.feedback = rightwrong
 
 evaluator ==
 
-if diffmeasure == "EditRatio":
-    tolerance = int(len(solution) * float(tolerance))
-else:
-    tolerance = int(tolerance)
+tolerance = float(tolerance)
 
 def minimumEditDistance(s1,s2):
     if len(s1) > len(s2):
@@ -67,6 +64,10 @@ def samestrings(str1, str2, measure="distance", tolerance=0, casesensitive=False
     if not casesensitive:
         str1 = str1.casefold()
         str2 = str2.casefold()
+    if diffmeasure == "EditRatio":
+    tolerance = int(len(solution) * float(tolerance))
+    else:
+        return minimumEditDistance(str1, str2) <= tolerance
     return minimumEditDistance(str1, str2) <= tolerance
 
 if isinstance(solution, str):
