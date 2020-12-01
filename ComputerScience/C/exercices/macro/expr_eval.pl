@@ -30,6 +30,11 @@ En imaginant que cette expression soit `12*2`, votre macro devra
 afficher sur la sortie standard 
 `12*2 = 24`
 et **retourner à la ligne** juste derrière le dernier entier. 
+Utilisez **printf** sans mettre de point virgule à la fin de votre 
+macro (la macro sera toujours appelée avec un point virgule final 
+dans les programmes **EVAL(arg);**).
+
+<br>
     
 Pour rappel, les arguments des macros ne sont pas typés. Le
 préprocesseur ne fait que des inclusions et subistitutions. Lorsqu'une
