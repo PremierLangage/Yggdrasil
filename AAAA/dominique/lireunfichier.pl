@@ -1,5 +1,10 @@
 
+
+extends = /ComputerScience/python/template/pltest.pl 
+
 title= Recherche de mots dans un fichier 
+
+
 
 
 text==
@@ -39,6 +44,9 @@ pltest==
 terminer
 1
 >>> mongrep("data.txt", "terminer", option=False)
+1
+>>> mongrep("version","versio",option=False)
+3
 ==
 
 
