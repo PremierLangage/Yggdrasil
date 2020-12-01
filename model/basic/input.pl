@@ -60,7 +60,7 @@ def minimumEditDistance(s1,s2):
         distances = newDistances
     return distances[-1]
 
-def samestrings(str1, str2, measure="distance", tolerance=0, casesensitive=False):
+def samestrings(str1, str2, diffmeasure="EditDist", tolerance=0, casesensitive=False):
     if not casesensitive:
         str1 = str1.casefold()
         str2 = str2.casefold()
@@ -77,7 +77,7 @@ if isinstance(solution, str):
 elif isinstance(solution, lst):
     lstsol = solution
 
-if any([samestrings(input.value, item, tolerance=tolerance) for item in lstsol]):
+if any([samestrings(input.value, item, diffmeasure=diffmeasure, tolerance=tolerance) for item in lstsol]):
     score = 100
 else:
     score = 0
