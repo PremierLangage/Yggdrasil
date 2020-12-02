@@ -42,7 +42,6 @@ qui permet d'obtenir une liste à partir d'une chaine en la coupant à chaque es
 par exemple :
 	"Une chaine de caractères  <-ah j'ai mis deux espaces".split()
 	['Une', 'chaine', 'de', 'caractères', '<-ah', "j'ai", 'mis', 'deux', 'espaces']
-
 ==
 
 
