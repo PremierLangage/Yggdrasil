@@ -10,7 +10,7 @@ $!f (1) = 2, f (2) = 3, f (3) = 4, f (4) = 2.!$ Quelle est la bonne réponse ?
 - $!f^{(-1)}(\\{2\\})=\\{4\\}!$
 + $!f^{(-1)}(\\{2\\})=\\{1,4\\}!$ 
 
-* On considère l'application !$f : \mathbb R \to \mathbb R!$ définie par
+* On considère l'application $!f : \mathbb R \to \mathbb R!$ définie par
 $!\forall x \in \mathbb  R, \; f (x) = x^2 + 1.!$
 Quelle est la bonne réponse ?
 -$!f(\mathbb R)=\mathbb R!$
