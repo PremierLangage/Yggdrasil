@@ -29,9 +29,10 @@ def rep_debut(s):
     maxs = ''
     for i in range(1, n + 1):
         motif = s[:i]
-        cnt = 1
-        while (cnt + 1) * i < n and motif * (cnt + 1) == s[:i * (cnt + 1)]:
-            cnt += 1
+        idx = i
+        while idx + i < n and motif == s[idx : idx + i]:
+            idx += i
+        cnt = idx // i
         if cnt >= max:
             maxs = motif
             max = cnt
