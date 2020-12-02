@@ -8,7 +8,7 @@ Le nombre du fichier d'un exercice doit être une description biève de son cont
 
 Les tags sont séparés par |
 
-Liste des tags : 
+Liste des tags : input | split | 
 
 En charge : **Wenjie Fang**
 
@@ -16,7 +16,7 @@ En charge : **Wenjie Fang**
 
 @ lireuneliste-2021.pl
 
-tag = 
+tag = input | split
 
 **Commentaires**
 
