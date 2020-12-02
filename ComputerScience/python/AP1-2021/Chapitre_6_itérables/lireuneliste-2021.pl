@@ -33,9 +33,11 @@ print(input().split())
 before==#|python|
 l = ['False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
 from random import randint
-randl = [l[randint(0,len(l)-1)] for j in range(randint(3,7))]
-rands = " ".join(randl)
-plsoluce = rands
+plsoluce = ""
+for i in range(5):
+    randl = [l[randint(0,len(l)-1)] for j in range(randint(3,7))]
+    rands = " ".join(randl)
+    plsoluce += f"Test {i} |{rands}\n"
 after = before
 ==
 
