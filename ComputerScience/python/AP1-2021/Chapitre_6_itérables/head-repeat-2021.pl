@@ -11,7 +11,7 @@ Prenons une chaîne de caractères. Il peut y avoir des motifs répétitifs au d
 
 Par exemple, la chaîne ``'pikapikachu'`` a le motif ``'pika'`` qui se répète deux fois au début.
 
-Cependant, le motif le plus court n'est pas forcément celui qui se répète le plus.
+Cependant, le motif le plus court n'est pas forcément celui qui se répète le plus. 
 Par exemple, dans ``'ananas-ananas-ananas-est-bien'``, même si ``'an'`` est le plus court motif qui se répète plus qu'une fois,
 le motif ``'ananas-'`` se répète le plus (trois fois).
 
@@ -27,7 +27,7 @@ def rep_debut(s):
     n = len(s)
     max = 0
     maxs = ''
-    for i in range(n):
+    for i in range(1, n):
         motif = s[:i]
         cnt = 1
         while (cnt + 1) * i < n and motif * (cnt + 1) == s[:i * (cnt + 1)]:
