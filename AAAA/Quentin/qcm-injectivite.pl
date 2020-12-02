@@ -4,9 +4,19 @@ extends = /model/AMC_TXT.pl
 
 author = Quentin
 
+bij $= ~/Images/bij.jpg
+
+
 
 title= QCM Injectivité
 questions==
+
+
+
+* La fonction f est-elle ?  
++ Non
+- Oui 
+![alt image]({{bij}})
 
 * La fonction $!f:\mathbb R \to \mathbb R_+!$, $!x\mapsto \exp(x)!$ est-elle injective ?   
 - Non 
@@ -15,11 +25,6 @@ questions==
 * La fonction $!f:\mathbb R \to \mathbb R_+!$, $!x\mapsto \exp(x)!$ est-elle surjective ?  
 + Non
 - Oui 
-
-* La fonction f est-elle ?  
-+ Non
-- Oui 
-![alt image]({{Images/bij}})
 
 ==
 
