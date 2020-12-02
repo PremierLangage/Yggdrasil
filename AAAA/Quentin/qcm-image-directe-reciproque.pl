@@ -20,8 +20,7 @@ Quelle est la bonne réponse ?
 
 * On considère l’application $!f : \mathbb R \times \mathbb R \to \mathbb R!$ définie par
 $!f (x, y) = x^2 + y^2.!$
-Quelles sont les bonnes réponses ?
-+ $! f^{(-1)}(\\{0\\}) = \\{(0, 0)\\}  !$
+Quelle est la bonne réponse ?
 - $! f^{(-1)}(\\{1\\}) = \\{(1, 0)\\}  !$
 - $! f^{(-1)}(\\{0\\}) = \\{(0, 1)\\}  !$
 + $! f^{(-1)}(\\{1\\}) !$ est le cercle de rayon 1 et de centre $!(0,0)!$
