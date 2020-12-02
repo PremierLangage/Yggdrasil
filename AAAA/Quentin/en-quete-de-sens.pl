@@ -23,12 +23,11 @@ questions==
 + $!f!$ est surjective mais $!g\circ f!$ ne l'est pas
 - $!+ $!f^{(-1)}(B)=E!$ et $!g\circ f!$ est surjective
 
-* On considère l'application $%f : \\left \\{1, 2, 3, 4 \\right \\} \to \\left \\{1, 2, 3, 4\\right \\}%$ définie par
-$!f (1) = 2, f (2) = 3, f (3) = 4, f (4) = 2.!$ Quelle est la bonne réponse ?
-- $!f^{(-1)}(\\{2\\})=\\{1\\}!$
-- $!f^{(-1)}(\\{2\\})=\\{3\\}!$
-- $!f^{(-1)}(\\{2\\})=\\{4\\}!$
-+ $!f^{(-1)}(\\{2\\})=\\{1,4\\}!$ 
+*Soit $!f: \mathbb R\to \mathbb R^2!$ une application. Identifier l'assertion qui n'a pas de sens mathématiquement parlant. 
+- $!f^{(-1)}(\mathbb R^2)\subset [1,6]!$
++ $!f^{(-1)}([1,+\infty[)\subset \mathbb R_+!$
+- $!f(\\{2\\})=\\{(4,3)\\}!$
+- $!f([1,2])=[1,6]\cup[3,10]!$ 
 
 * On considère l'application $!f : \mathbb R \to \mathbb R!$ définie par
 $!\forall x \in \mathbb  R, \; f (x) = x^2 + 1.!$
