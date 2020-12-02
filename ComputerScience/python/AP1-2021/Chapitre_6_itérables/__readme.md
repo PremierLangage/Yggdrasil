@@ -32,7 +32,6 @@ tag = substring | algo | stringRepeat
 **Commentaires**
 
 - Exercice difficile avec des cas limits
-- Tags ajoutés
 
 # Ex3 : Compter les lettres "e"
 
@@ -54,6 +53,15 @@ tag = find | algo
 **Commentaires**
 
 - Exercice moyenne-difficile pour rechercher tous les occurrences d'une sous-chaîne
-- Tags ajoutés
+
+# Ex5 : Rotation de chaîne de caractères
+
+@ str-rotate-2021.pl
+
+tag = substring
+
+**Commentaires**
+
+- Exercice un peu astucieux pour faire la rotation
 
 
