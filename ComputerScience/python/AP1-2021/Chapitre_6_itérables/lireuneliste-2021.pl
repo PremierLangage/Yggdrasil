@@ -28,6 +28,7 @@ Pour valider l'exercice, affichez la liste lue avec **print**. Il est **inutile 
 
 soluce==
 print(input().split())
+
 ==
 
 before==
