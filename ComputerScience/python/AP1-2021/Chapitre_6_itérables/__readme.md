@@ -12,7 +12,7 @@ Liste des tags : input | split |
 
 En charge : **Wenjie Fang**
 
-# Ex1 : Lire une liste 
+# Ex1 : Lire une liste (parser une liste séparée pas les espaces)
 
 @ lireuneliste-2021.pl
 
@@ -23,4 +23,15 @@ tag = input | split
 - Bugfix : il roule maintenant sur plsoluce, pas inputgenerator
 - Tags ajoutés
 
-# 
+# Ex2 : Répétition au début (trouver le préfixe qui se répète le plus)
+
+@ head-repeat-2021.pl
+
+tag = substring | algo | stringRepeat
+
+**Commentaires**
+
+- Exercice difficile avec des cas limits
+- Tags ajoutés
+
+# Ex3 : 
