@@ -23,7 +23,7 @@ questions==
 + $!f!$ est surjective mais $!g\circ f!$ ne l'est pas
 - $! f^{(-1)}(B)=E!$ et $!g\circ f!$ est surjective
 
-*Soit $!f: \mathbb R\to \mathbb R^2!$ une application. Identifier l'assertion qui n'a pas de sens mathématiquement parlant. 
+* Soit $!f: \mathbb R\to \mathbb R^2!$ une application. Identifier l'assertion qui n'a pas de sens mathématiquement parlant. 
 - $!f^{(-1)}(\mathbb R^2)\subset [1,6]!$
 + $!f^{(-1)}([1,+\infty[)\subset \mathbb R_+!$
 - $!f(\\{2\\})=\\{(4,3)\\}!$
