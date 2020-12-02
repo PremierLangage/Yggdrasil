@@ -13,7 +13,7 @@ avec un espace entre chaque valeur de la liste par exemple :
 
 ce qui vas nous permettre de creer la liste:
 
-	``['un','deux','3','quatre','fin']``
+	['un', 'deux', '3', 'quatre', 'fin']
 
 Pour cela il suffit de lire la ligne avec **input** puis la découper avec **split** qui créer une liste exactement comme nous le souhaitons.
 
