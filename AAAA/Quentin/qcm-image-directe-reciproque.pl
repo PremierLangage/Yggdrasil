@@ -5,9 +5,9 @@ questions==
 
 
 * Soient $!E!$ et $!F!$ deux ensembles. Soit $!B \subset F!$. L'image réciproque de l'ensemble $!B!$ est par définition: 
-+ $! \\{ x \in E \; | \; f(x) \in B \\}!$
-- $! \\{ y \in F \; | \; y \in  B \\}!$
-- $! \\{ x \in E \; | \; f(x) \in \overline{B} \\}!$
++ $! \\{ x \in E |  f(x) \in B \\}!$
+- $! \\{ y \in F  |  y \in  B \\}!$
+- $! \\{ x \in E  | \\; f(x) \in \overline{B} \\}!$
 
 
 
