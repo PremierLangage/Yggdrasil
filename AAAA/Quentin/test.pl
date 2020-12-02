@@ -5,7 +5,7 @@ title = Calcul - puissances 10
 questions==
 
 ** Cocher les bonnes réponses. $$10^{-3}=...$$ 
-![alt image]({{/AAAA/Quentin/bij.png}})
+![alt image]({{bij}})
 + $%0,001%$
 - $% (-10)\times (-10) \times (-10) %$
 - $% -30%$
@@ -65,6 +65,9 @@ questions==
 
 
 ==
+
+
+bij =$ /AAAA/Quentin/bij.png
 
 
 
