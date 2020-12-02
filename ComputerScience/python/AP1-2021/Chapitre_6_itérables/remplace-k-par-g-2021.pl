@@ -41,5 +41,5 @@ pltest0==
 >>> subs_k_par_g('kkkkkkk')
 'ggggggg'
 >>> subs_k_par_g('Ceci est bien une pipe.')
-'Ceci es bien une pipe.'
+'Ceci est bien une pipe.'
 ==
