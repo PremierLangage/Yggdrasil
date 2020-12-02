@@ -17,7 +17,8 @@ builder =@ /builder/before.py
 nb_quest_voulu = 5
 # questions=@ /ComputerScience/C_Initiation/QCM/QCM-1-a-4.txt
 # questions=@ /ComputerScience/C/exercices/program/qcm_questions/generalites_C.txt
-questions=@ /ComputerScience/OperatingSystem/exercises/MCQ/donnees_binaire.txt
+# questions=@ /ComputerScience/OperatingSystem/exercises/MCQ/donnees_binaire.txt
+questions=@ /ComputerScience/OperatingSystem/exercises/MCQ/notion_de_fichier.txt
 
 
 before==#|python|
@@ -291,5 +292,6 @@ note_finale = int(sum(scores) / nb_quest)
 
 grade = (note_finale, "Vous avez obtenur la note de "+str(note_finale)+"%<br>")
 ==
+
 
 
