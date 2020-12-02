@@ -1,6 +1,6 @@
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
 author=Dominique Revuz 
-name= Lire une liste
+name=Lire une liste
 title=Lire une liste
 tag=input|split
 tog=listinput
