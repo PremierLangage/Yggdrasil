@@ -6,7 +6,7 @@ title= Base 1/4
 
 bbo="Une chaine"
 
-image =$ /AAAA/Quentin/images/bij.png
+image =$ /AAAA/Quentin/Images/bij.png
 text==
 Choisir la bonne reponse :{{bbo}}
 ![alt image]({{image}})
