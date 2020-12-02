@@ -1,10 +1,11 @@
 extends = /model/checkbox/goodbad.pl
-text= Un enseignant demande à un étudiant de définir la notion d'injectivité. Voici la réponse apportée par l'étudiant : "Si $%f:E \to F%$ est injective alors  $%\forall x,x'\inE \quad f(x)=f(x')  \implies x=x'%$".
+text= Un enseignant demande à un étudiant de définir la notion d'injectivité. Voici la réponse apportée par l'étudiant : "Si $%f:E \to F%$ est injective,  alors  $%\forall x,x'\in E \quad f(x)=f(x')  \implies x=x'%$".
+good==#
 Ce n'est pas la définition de l'injectivité, c'est une implication, par ailleurs vraie.
 Ce n'est pas une définition. 
 ==
 bad==
-C'est la définition de  l'injectivté d'une application". 
+C'est la définition de  l'injectivité. 
 C'est la définition de "$%f%$ est surjective". 
 ==
 
