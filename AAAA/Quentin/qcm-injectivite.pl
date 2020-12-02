@@ -12,10 +12,9 @@ questions==
 
 
 
-* La fonction f est-elle ?  
+* La fonction f est-elle ?  ![alt image]({{bij}})
 + Non
 - Oui 
-![alt image]({{bij}})
 
 * La fonction $!f:\mathbb R \to \mathbb R_+!$, $!x\mapsto \exp(x)!$ est-elle injective ?   
 - Non 
