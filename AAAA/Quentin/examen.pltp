@@ -7,10 +7,12 @@ teacher== #|python|
 test
 ==
 @ qcm-injectivite.pl
+@ qcm-image-directe-reciproque.pl
 
 introduction==
 Test de connaissance: L1 Maths-Info Méthodologie des Mathematiques
 ==
+
 
 
 
