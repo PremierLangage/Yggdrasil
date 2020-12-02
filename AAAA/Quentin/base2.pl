@@ -23,6 +23,7 @@ bad==
 f est surjective
 f est injective
 f est bijective
+f est bien définie mais n'est ni injective ni surjective
 ==
 
 
