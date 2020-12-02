@@ -20,7 +20,7 @@ et qui renvoie le motif qui se répète le plus de fois. En cas d'égalité, on 
 S'il n'y a pas de répétition, on renvoie ``s``.
 ==
 
-tag=
+tag=substring|algo|stringRepeat
 
 samplesol==
 def rep_debut(s):
