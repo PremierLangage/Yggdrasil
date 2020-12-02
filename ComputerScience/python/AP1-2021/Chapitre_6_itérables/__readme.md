@@ -20,4 +20,5 @@ tag = input | split
 
 **Commentaires**
 
-- 
+- Bugfix : il roule maintenant sur plsoluce, pas inputgenerator
+- Tags ajoutés
