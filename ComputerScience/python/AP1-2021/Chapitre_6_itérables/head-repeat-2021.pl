@@ -26,18 +26,32 @@ samplesol==
 def rep_debut(s):
     n = len(s)
     max = 0
+    maxs = ''
     for i in range(n):
         motif = s[:i]
         cnt = 1
-        while cnt * i < n and 
+        while (cnt + 1) * i < n and motif * (cnt + 1) == s[:i * (cnt + 1)]:
+            cnt += 1
+        if cnt >= max:
+            maxs = motif
+            max = cnt
+    return maxs
 ==
 
 before==
-
 ==
 
 pltest0==
-
+>>> rep_debut('') # Vide
+''
+>>> rep_debut('pikapikachu') # pika !
+'pika'
+>>> rep_debut('ananas-ananas-ananas-est-bien') # ananas
+'ananas-'
+>>> rep_debut('Université Gustave Eiffel') # la fac
+'Université Gustave Eiffel'
+>>> rep_debut('01101001100101101001011001101001') # Thue-Morse
+'01101001100101101001011001101001'
 ==
 
 
