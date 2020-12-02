@@ -21,7 +21,7 @@ questions==
 * Soient $!E!$, $!F!$ et $!G!$ trois ensembles. Soit $!B\subset F!$ avec $!B \neq F!$. Soient $!f:E \to F!$ et $!g:B\to G!$ deux applications. Identifier l'assertion qui n'a pas de sens mathématiquement parlant. 
 -$!g^{(-1)}(G)=B !$
 + $!f!$ est surjective mais $!g\circ f!$ ne l'est pas
-- $!+ $!f^{(-1)}(B)=E!$ et $!g\circ f!$ est surjective
+- $! f^{(-1)}(B)=E!$ et $!g\circ f!$ est surjective
 
 *Soit $!f: \mathbb R\to \mathbb R^2!$ une application. Identifier l'assertion qui n'a pas de sens mathématiquement parlant. 
 - $!f^{(-1)}(\mathbb R^2)\subset [1,6]!$
