@@ -18,6 +18,11 @@ questions==
 - $! f^{(-1)}(B) \subset A !$
 
 
+* Soient $!E!$, $!F!$ et $!G!$ trois ensembles. Soit $!B\subset F!$ avec $!B \neq F!$. Soient $!f:E \to F!$ et $!g:B\to G!$ deux applications. Identifier l'assertion qui n'a pas de sens mathématiquement parlant. 
+-$!g^{(-1)}(G)=B !$
++ $!f!$ est surjective mais $!g\circ f!$ ne l'est pas
+- $!+ $!f^{(-1)}(B)=E!$ et $!g\circ f!$ est surjective
+
 * On considère l'application $%f : \\left \\{1, 2, 3, 4 \\right \\} \to \\left \\{1, 2, 3, 4\\right \\}%$ définie par
 $!f (1) = 2, f (2) = 3, f (3) = 4, f (4) = 2.!$ Quelle est la bonne réponse ?
 - $!f^{(-1)}(\\{2\\})=\\{1\\}!$
