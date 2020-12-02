@@ -4,7 +4,7 @@ title = Calcul - puissances 10
 questions==
 
 ** Cocher les bonnes réponses. $$10^{-3}=...$$ 
-![alt image]({{image}})
+![alt image]({{bij}})
 + $%0,001%$
 - $% (-10)\times (-10) \times (-10) %$
 - $% -30%$
