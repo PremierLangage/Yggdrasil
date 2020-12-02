@@ -9,6 +9,7 @@ questions==
 - L'application $%Id_A \circ Id_E %$ est bien définie
 + L'application $% Id_E %$ est bijective
 + $% Id_E(A)=A %$
++ L'application $%Id_E \circ Id_A %$ est bien définie
 
 
 ** Soit $%E%$ et $%F%$ deux ensembles *disjoints*, $%f:E\to F %$,  $%g :F\to E%$ et $%h: E\to E%$
@@ -26,5 +27,6 @@ Cocher les expressions vraies
 
 
 ==
+
 
 
