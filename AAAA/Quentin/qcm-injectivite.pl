@@ -12,7 +12,7 @@ questions==
 
 
 
-* La fonction f est-elle ?  ![alt image]({{bij}})
+* La fonction f est-elle ?  {{bij}}
 + Non
 - Oui 
 
