@@ -48,6 +48,8 @@ pltest4 = f">>> rotation({test}, {rint}) \n'{rres}'\n"
 rint = randint(-100, 100)
 rres = rotation(test, rint)
 pltest5 = f">>> rotation({test}, {rint}) \n'{rres}'\n"
+
+after = before
 ==
 
 pltest0==
