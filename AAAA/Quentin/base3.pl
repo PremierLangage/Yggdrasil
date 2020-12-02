@@ -14,9 +14,10 @@ On considère la fonction $!f:E\to F!$ donnée par le dessin ci-contre. Cocher l
 ==
 
 nb=4
-nbtrues=0
+nbtrues=1
 
 good==
+f est bien définie mais n'est ni injective ni surjective
 ==
 
 bad==
