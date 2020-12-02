@@ -13,7 +13,7 @@ On considère la fonction $!f:E\to F!$ donnée par le dessin ci-contre. Cocher l
 ==
 
 nb=4
-nbtrues=3
+nbtrues=1
 
 good==
 f n'est pas une application
