@@ -13,7 +13,7 @@ On considère la fonction $!f:E\to F!$ donnée par le dessin ci-contre. Cocher l
 ![alt image]({{image}})
 ==
 
-nb=4
+nb=5
 nbtrues=1
 
 good==
