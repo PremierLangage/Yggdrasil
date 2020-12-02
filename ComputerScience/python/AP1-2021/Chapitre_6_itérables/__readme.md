@@ -8,7 +8,7 @@ Le nombre du fichier d'un exercice doit être une description biève de son cont
 
 Les tags sont séparés par |
 
-Liste des tags : input | split | substring | algo | stringRepeat | ForIn | stringIndex | find
+Liste des tags : input | split | substring | algo | stringRepeat | ForIn | stringIndex | find | immutable | ForIn | stringConcat
 
 En charge : **Wenjie Fang**
 
@@ -64,4 +64,8 @@ tag = substring
 
 - Exercice un peu astucieux pour faire la rotation
 
+# Ex6 : Remplacer les k par g
 
+@ remplace-k-par-g-2021.pl
+
+tag = immutable | ForIn | stringConcat
