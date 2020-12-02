@@ -6,6 +6,10 @@ author=Enseignants Méthodologie
 teacher== #|python| 
 test
 ==
+@ base1.pl
+@ base2.pl
+@ base3.pl
+@ base4.pl
 @ qcm-injectivite.pl
 @ qcm-image-directe-reciproque.pl
 @ match.pl
