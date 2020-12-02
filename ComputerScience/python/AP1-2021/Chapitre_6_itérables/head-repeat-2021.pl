@@ -4,7 +4,7 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 builder=/builder/before.py
 
 author=Wenjie Fang
-Title=Répétition au début
+title=Répétition au début
 
 text==
 Prenons une chaîne de caractères. Il peut y avoir des motifs répétitifs au début de la chaîne.
