@@ -20,9 +20,9 @@ def subs_k_par_g(s):
     res = ''
     for c in s:
         if c == 'k':
-            res.append('g')
+            res += 'g'
         else:
-            res.append(c)
+            res += c
     return res
 ==
 
