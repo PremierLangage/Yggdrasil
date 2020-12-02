@@ -3,7 +3,7 @@ text= Un enseignant demande à un étudiant de définir la notion d'injectivité
 good==
 L'énoncé est incorrect car la conjonction "donc" n'est pas synonyme de "$% \implies%$"
 ==
-bad==
+bad== 
 C'est bien la définition de l'injectivité.
 C'est la définition de la surjectivité.
 == 
