@@ -5,11 +5,12 @@ author=Christophe Callé
 teacher== #|python| 
 test
 ==
-@ injectivite.pl
+@ random_add.pl
 
 introduction==
 Des <i>additions</i> **aléatoires**
 ==
+
 
 
 
