@@ -35,7 +35,7 @@ l = ['False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class', 'continue
 from random import randint
 randl = [l[randint(0,len(l)-1)] for j in range(randint(3,7))]
 rands = " ".join(randl)
-plsoluce0 = rands
+plsoluce = rands
 after = before
 ==
 
