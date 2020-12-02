@@ -3,7 +3,7 @@ extends = /model/AMC_TXT.pl
 
 
 author = Quentin
-bij $= /AAAA/Quentin/Images/bij.png
+bij $= Images/bij.png
 
 
 
