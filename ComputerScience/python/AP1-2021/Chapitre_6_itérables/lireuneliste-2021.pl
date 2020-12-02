@@ -19,7 +19,7 @@ nous devons creer la liste:
 
 Pour cela il suffit de lire la ligne avec **input** puis la découper avec **split** qui créer une liste exactement comme nous le souhaitons.
 
-Pour valider l'exercice, affichez la liste lue avec **print**. Il n'est **pas nécessaire** de créer une fonction.
+Pour valider l'exercice, affichez la liste lue avec **print**. Il est **inutile de créer une fonction** pour cet exercice.
 ==
 
 soluce==
