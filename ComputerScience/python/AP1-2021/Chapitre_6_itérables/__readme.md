@@ -22,3 +22,5 @@ tag = input | split
 
 - Bugfix : il roule maintenant sur plsoluce, pas inputgenerator
 - Tags ajoutés
+
+# 
