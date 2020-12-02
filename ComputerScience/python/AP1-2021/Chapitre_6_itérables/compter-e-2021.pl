@@ -12,7 +12,7 @@ Ecrire une fonction ``compter_e(s)`` qui retourner le nombre de lettre ``e`` dan
 Par exemple, pour ``s = "ceci n'est pas une pipe"``, l'appel ``compter_e(s)`` doit retourner ``4``.
 ==
 
-tag=ForIn|string
+tag=ForIn|stringIndex
 
 samplesol==
 def compter_e(s):
