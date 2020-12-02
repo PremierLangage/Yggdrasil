@@ -39,15 +39,15 @@ test = 'Ceci est bien une pipe.'
 
 rint = randint(-100, 100)
 rres = rotation(test, rint)
+pltest2 = f">>> rotation({test}, {rint}) \n'{rres}'\n"
+
+rint = randint(-100, 100)
+rres = rotation(test, rint)
 pltest3 = f">>> rotation({test}, {rint}) \n'{rres}'\n"
 
 rint = randint(-100, 100)
 rres = rotation(test, rint)
 pltest4 = f">>> rotation({test}, {rint}) \n'{rres}'\n"
-
-rint = randint(-100, 100)
-rres = rotation(test, rint)
-pltest5 = f">>> rotation({test}, {rint}) \n'{rres}'\n"
 
 after = before
 ==
