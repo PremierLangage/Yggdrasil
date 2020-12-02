@@ -2,7 +2,7 @@
 author=Dominique Revuz 
 name= Lire une liste
 title=Lire une liste
-tag=list|input|for
+tag=input|split
 tog=listinput
 extends=/ComputerScience/python/template/soluce.pl
 text==
