@@ -4,7 +4,7 @@ good==#
 C'est une définition.
 C'est bien la définition de l'injectivité. 
 ==
-bad==#
+bad== 
 C'est la définition de la surjectivité.
 C'est une proposition vraie. 
 == 
