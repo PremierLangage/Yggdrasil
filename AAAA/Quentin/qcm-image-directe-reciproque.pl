@@ -1,5 +1,5 @@
 extends = /model/AMC_TXT.pl
-author = Quentin
+author = Enseignants Méthodologie
 title= Image directe/réciproque
 questions==
 
@@ -48,6 +48,7 @@ grade_checks = min([((nb_good*100) // (nb_good+nb_bad)) , (100 // (2**nb_bad))])
 grade_attempt = 50 + (200 // (3+nb_attempt))
 grade=((grade_checks * grade_attempt) // 10000, feedback)
 ==
+
 
 
 
