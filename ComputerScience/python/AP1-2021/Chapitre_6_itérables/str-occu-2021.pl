@@ -9,9 +9,11 @@ title=Trouver tous les occurrences
 text==
 Un mot peut apparaître plusieures fois dans une phrase, et on veut repérer tous ses occurrences.
 
-Ecrire une fonction ``occurrences(phrase, mot)`` qui retourne une liste des indices où ``mot`` apparaît tel quel dans ``phrase``. La liste retournée doit être en ordre croissant. Si ``mot`` est vide, alors on retourne une liste vide.
+Ecrire une fonction ``occurrences(phrase, mot)`` qui retourne une liste des indices où ``mot`` apparaît tel quel
+dans ``phrase``. La liste retournée doit être en ordre croissant. Si ``mot`` est vide, alors on retourne une liste vide.
 
-Par exemple, avec ``phrase = 'Le chat et le chien mangent le cadeau.'`` et ``mot = 'le'``, l'appel ``occurrences(phrase, mot)`` doit retourner la liste ``[11, 28]``. Même si ``phrase`` commence par le mot "Le", ce n'est pas de la bonne casse.
+Par exemple, avec ``phrase = 'Le chat et le chien mangent le cadeau.'`` et ``mot = 'le'``, l'appel ``occurrences(phrase, mot)``
+doit retourner la liste ``[11, 28]``. Même si ``phrase`` commence par le mot "Le", ce n'est pas de la bonne casse.
 ==
 
 tag=find|algo
@@ -47,3 +49,4 @@ pltest0==
 >>> occurrences('ananananana', 'anana') # Répétition
 [0, 2, 4, 6]
 ==
+
