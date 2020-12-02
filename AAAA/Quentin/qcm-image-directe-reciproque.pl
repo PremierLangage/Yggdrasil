@@ -3,6 +3,14 @@ author = Quentin
 title= Image directe/réciproque
 questions==
 
+
+* Soient $!E!$ et $!F!$ deux ensembles. Soit $!B \subset F!$. L'image réciproque de l'ensemble $!B!$ est par définition: 
++ $! \\{ x \in E \; | \; f(x) \in B \\}!$
+- $! \\{ y \in F \; | \; y \in  B \\}!$
+- $! \\{ x \in E \; | \; f(x) \in \overline{B} \\}!$
+
+
+
 * On considère l'application $%f : \\left \\{1, 2, 3, 4 \\right \\} \to \\left \\{1, 2, 3, 4\\right \\}%$ définie par
 $!f (1) = 2, f (2) = 3, f (3) = 4, f (4) = 2.!$ Quelle est la bonne réponse ?
 - $!f^{(-1)}(\\{2\\})=\\{1\\}!$
