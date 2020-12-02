@@ -8,7 +8,7 @@ Le nombre du fichier d'un exercice doit être une description biève de son cont
 
 Les tags sont séparés par |
 
-Liste des tags : input | split | substring | algo | stringRepeat | ForIn | stringIndex
+Liste des tags : input | split | substring | algo | stringRepeat | ForIn | stringIndex | find
 
 En charge : **Wenjie Fang**
 
@@ -46,3 +46,12 @@ tag = ForIn | stringIndex
 - Tags ajoutés
 
 # Ex4 : 
+
+@ str-occu-2021.pl
+
+tag = find | algo
+
+**Commentaires**
+
+- Exercice moyenne-difficile pour rechercher tous les occurrences d'une sous-chaîne
+- Tags ajoutés
