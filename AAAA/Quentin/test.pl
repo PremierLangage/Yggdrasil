@@ -22,6 +22,7 @@ f est bijective
 
 bad==
 f n'est pas une application
+f est bien définie mais n'est ni injective ni surjective
 ==
 
 
