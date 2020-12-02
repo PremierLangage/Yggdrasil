@@ -8,7 +8,7 @@ Le nombre du fichier d'un exercice doit être une description biève de son cont
 
 Les tags sont séparés par |
 
-Liste des tags : input | split | 
+Liste des tags : input | split | substring | algo | stringRepeat | ForIn | stringIndex
 
 En charge : **Wenjie Fang**
 
@@ -34,4 +34,15 @@ tag = substring | algo | stringRepeat
 - Exercice difficile avec des cas limits
 - Tags ajoutés
 
-# Ex3 : 
+# Ex3 : Compter les lettres "e"
+
+@ compter-e-2021.pl
+
+tag = ForIn | stringIndex
+
+**Commentaires**
+
+- Exercice facile pour compter les lettres "e"
+- Tags ajoutés
+
+# Ex4 : 
