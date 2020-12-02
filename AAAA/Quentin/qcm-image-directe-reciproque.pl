@@ -3,9 +3,9 @@ author = Quentin
 title= Image directe/réciproque
 questions==
 
-* On considère l'application $%f : \\left \\{1, 2, 3, 4 \\right \\} \to \{1, 2, 3, 4\}%$ définie par
+* On considère l'application $%f : \\left \\{1, 2, 3, 4 \\right \\} \to \\left \\{1, 2, 3, 4\\right \\}%$ définie par
 $!f (1) = 2, f (2) = 3, f (3) = 4, f (4) = 2.!$ Quelle est la bonne réponse ?
-- $!f^{(-1)}({2})=\{1\}!$
+- $!f^{(-1)}(\\{2\\})=\{1\}!$
 - $!f^{(-1)}(\{2\})=\{3\}!$
 - $!f^{(-1)}(\{2\})=\{4\}!$
 + $!f^{(-1)}(\{2\})=\{1,4\}!$ 
