@@ -21,6 +21,9 @@ def compter_e(s):
         if c == 'e':
             cnt += 1
     return cnt
+
+def compter_e1(s):
+    return len([i for i in range(len(s)) if s[i] == 'e'])
 ==
 
 before==
