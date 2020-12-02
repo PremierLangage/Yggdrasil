@@ -4,7 +4,7 @@
 extends= /model/qcm/qcm.pl
 
 
-title= Base 1/4
+title= Base 3/4
 
 
 image =$ /AAAA/Quentin/Images/nsur-ninj.png
