@@ -7,12 +7,12 @@ bij =$ /AAAA/Quentin/Images/bij.png
 
 
 
-title= QCM Injectivité
+title= Injectivité / Surjectivité
 questions==
 
 
 
-* La fonction f est-elle ?  ![alt image]({{bij}})
+* Soit $!f:\mathbb R \to \mathbb R!$ une fonction paire, c'est-à-dire que $!f(x)=f(-x)!$ pour tout $! x \in \mathbb R!$. La fonction $!f!$ peut-elle être injective ? 
 + Non
 - Oui 
 
@@ -39,6 +39,7 @@ grade_checks = min([((nb_good*100) // (nb_good+nb_bad)) , (100 // (2**nb_bad))])
 grade_attempt = 50 + (200 // (3+nb_attempt))
 grade=((grade_checks * grade_attempt) // 10000, feedback)
 ==
+
 
 
 
