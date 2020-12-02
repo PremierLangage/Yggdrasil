@@ -69,3 +69,10 @@ tag = substring
 @ remplace-k-par-g-2021.pl
 
 tag = immutable | ForIn | stringConcat
+
+**Commentaires**
+
+- Exercice pour parcourir et remplacer les caractères dans une chaîne.
+- Notion d'objet non mutable, sinon une solution simple est de faire un parcours et changer les lettres directement.
+
+
