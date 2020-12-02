@@ -29,21 +29,6 @@ questions==
 - $!f(\\{2\\})=\\{(4,3)\\}!$
 - $!f([1,2])=[1,6]\cup[3,10]!$ 
 
-* On considère l'application $!f : \mathbb R \to \mathbb R!$ définie par
-$!\forall x \in \mathbb  R, \; f (x) = x^2 + 1.!$
-Quelle est la bonne réponse ?
--$!f(\mathbb R)=\mathbb R!$
--$!f(\mathbb R)=[0,+\infty[!$
--$!f(\mathbb R)=]1,+\infty[!$
-+$!f(\mathbb R)=[1,+\infty[!$
-
-* On considère l’application $!f : \mathbb R \times \mathbb R \to \mathbb R!$ définie par
-$!f (x, y) = x^2 + y^2.!$
-Quelle est la bonne réponse ?
-- $! f^{(-1)}(\\{1\\}) = \\{(1, 0)\\}  !$
-- $! f^{(-1)}(\\{0\\}) = \\{(0, 1)\\}  !$
-+ $! f^{(-1)}(\\{1\\}) !$ est le cercle de rayon 1 et de centre $!(0,0)!$
-
 ==
 
 
