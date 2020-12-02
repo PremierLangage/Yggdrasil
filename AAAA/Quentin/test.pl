@@ -7,7 +7,7 @@ title= Base 1/4
 
 image =$ /AAAA/Quentin/Images/bij.png
 text==
-On considère la fonction $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la bonne réponse.
+On considère la fonction $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s).
 ![alt image]({{image}})
 ==
 
