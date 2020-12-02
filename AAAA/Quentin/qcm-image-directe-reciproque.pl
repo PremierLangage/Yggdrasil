@@ -13,16 +13,20 @@ questions==
 
 
 
-* On considère l’application $!f : \{1, 2, 3, 4\} \to \{1, 2, 3, 4\}!$ définie par
+* On considère l'application $!f : \{1, 2, 3, 4\} \to \{1, 2, 3, 4\}!$ définie par
 $!f (1) = 2, f (2) = 3, f (3) = 4, f (4) = 2.!$ Quelle est la bonne réponse ?
 - $!f^{(-1)}(\{2\})=\{1\}!$
 - $!f^{(-1)}(\{2\})=\{3\}!$
 - $!f^{(-1)}(\{2\})=\{4\}!$
 + $!f^{(-1)}(\{2\})=\{1,4\}!$ 
 
-* La fonction $!f:\mathbb R \to \mathbb R_+!$, $!x\mapsto \exp(x)!$ est-elle injective ?   
-- Non 
-+ Oui 
+* On considère l'application !$f : \mathbb R \to \mathbb R!$ définie par
+$!\forall x \in \mathbb  R, \; f (x) = x^2 + 1.!$
+Quelle est la bonne réponse ?
+-$!f(\mathbb R)=\mathbb R!$
+-$!f(\mathbb R)=[0,+\infty[!$
+-$!f(\mathbb R)=]1,+\infty[!$
++$!f(\mathbb R)=[1,+\infty[!$
 
 * La fonction $!f:\mathbb R \to \mathbb R_+!$, $!x\mapsto \exp(x)!$ est-elle surjective ?  
 + Non
