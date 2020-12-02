@@ -13,7 +13,7 @@ Ecrire une fonction ``subs_k_par_g(s)`` qui prend une chaîne de caractères ``s
 remplacé par ``g``. Par exemple, si ``s = 'kalm krach'``, alors ``subs_k_par_g(s)`` doit retourner ``'galm grach'``.
 ==
 
-tag=immutable|ForIn|append
+tag=immutable|ForIn|stringConcat
 
 samplesol==
 def subs_k_par_g(s):
