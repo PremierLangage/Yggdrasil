@@ -2,10 +2,13 @@
 author=Dominique Revuz 
 name=Lire une liste
 title=Lire une liste
+
 tag=input|split
 tog=listinput
+
 extends=/ComputerScience/python/template/soluce.pl
 @ /builder/before.py [builder.py]
+
 text==
 Cet exercice consiste à lire une liste depuis du clavier. Nous allons supposer que l'utilisateur va entrez une seule ligne de texte,
 avec un espace entre chaque valeur de la liste.
@@ -30,12 +33,10 @@ print(input().split())
 before==
 l = ['False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
 from random import randint
-print(" ".join([ l[randint(0,len(l)-1)] for j in range(randint(3,7))]))
+mplsoluce0=" ".join([l[randint(0,len(l)-1)] for j in range(randint(3,7))])
 
 after = before
 ==
-
-
 
 feedback==
 Retenez bien ce code :
