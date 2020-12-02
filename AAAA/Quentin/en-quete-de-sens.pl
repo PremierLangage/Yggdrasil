@@ -11,6 +11,12 @@ questions==
 - $! A \subset f^{(-1)}(B) !$
 - $! f^{(-1)}(B) = \emptyset !$
 
+* Soient $!E!$, $!F!$ et $!G!$ trois ensembles et soient $!f:E \to F!$ et $!g:F\to G!$ deux applications. Soient $!A\subset E!$, $!B \subset F!$ et $!C\subset G!$. Identifier l'assertion qui n'a pas de sens mathématiquement parlant. 
+-$!(g\circ f)(A)=G!$
+- $!g(B)=\emptyset!$
++ $!(g\circ f)^{(-1)}(C)=B!$
+- $! f^{(-1)}(B) \subset A !$
+
 
 * On considère l'application $%f : \\left \\{1, 2, 3, 4 \\right \\} \to \\left \\{1, 2, 3, 4\\right \\}%$ définie par
 $!f (1) = 2, f (2) = 3, f (3) = 4, f (4) = 2.!$ Quelle est la bonne réponse ?
