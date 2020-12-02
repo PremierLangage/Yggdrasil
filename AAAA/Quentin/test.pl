@@ -12,7 +12,7 @@ On considère la fonction $!f:E\to F!$ donnée par le dessin ci-contre. Cocher l
 ==
 
 nb=4
-nbtrues=1
+nbtrues=3
 
 good==
 f est surjective
