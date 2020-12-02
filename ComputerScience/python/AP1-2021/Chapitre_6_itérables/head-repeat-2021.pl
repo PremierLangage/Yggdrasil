@@ -52,6 +52,6 @@ pltest0==
 'Université Gustave Eiffel'
 >>> rep_debut('01101001100101101001011001101001') # Thue-Morse
 '01101001100101101001011001101001'
+>>> rep_debut('0100101001001') # Fibonacci
+'010'
 ==
-
-
