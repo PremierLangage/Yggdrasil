@@ -4,7 +4,7 @@ Voici quelques exercices simples sur la logique
 == 
 title= Logique  
 
-@PropositionsVraiesouFausses 
+@PropositionsVraiesouFausses.pl
 @Negationchekbox.pl 
 @AssociationPredicat1.pl 
 @AssociationPredicat2.pl 
