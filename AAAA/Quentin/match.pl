@@ -4,9 +4,8 @@ extends= simplematchlist.pl
 
 before==
 
-gf=[ $![0,\pi]!$, $![0,\frac{\pi}{2}]!$,$![\frac{\pi}{3},\frac{2\pi}{3}]!$,$!\\{\pi\\}!$,$!\\{ 0 \\}!$ ]
-df=[  $![-1,1]!$,$![0,1]!$,$![-\frac12 , \frac12] !$, $! \\{-1\\}!$,$!\\{-1\\}!$]
-
+gf=[ $![0,\pi]!$]
+df=[  $![-1,1]!$]
 pairs= [ TT for TT in zip(gf,df)]
 
 if type(pairs)==list:
