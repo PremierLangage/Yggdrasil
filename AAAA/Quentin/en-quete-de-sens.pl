@@ -7,7 +7,7 @@ questions==
 
 * Soient $!E!$ et $!F!$ deux ensembles et soit $!f:E \to F!$ une application. Soient $!A\subset E!$ et $!B \subset F!$. Identifier l'assertion qui n'a pas de sens mathématiquement parlant. 
 -$!f(A) \subset E!$
-+ $!\forall y \in B, \quad !f^{(-1)}(y) \in A_1!$
++ $!\forall y \in B, \quad f^{(-1)}(y) \in A!$
 - $! A \subset f^{(-1)}(B) !$
 - $! f^{(-1)}(B) = \emptyset !$
 
