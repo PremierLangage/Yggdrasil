@@ -4,7 +4,7 @@ extends= simplematchlist.pl
 
 before==
 
-gf=[ f"$![0,\pi]!$", f"$![0,\frac{\pi}{2}]!$"] 
+gf=[ f"$![0,\pi]!$", f"$![0,\pi / 2]!$"] 
 df=[  f"$![-1,1]!$",f"$![0,1]!$"]
 pairs= [ TT for TT in zip(gf,df)]
 
