@@ -45,7 +45,7 @@ tag = ForIn | stringIndex
 - Exercice facile pour compter les lettres "e"
 - Tags ajoutés
 
-# Ex4 : 
+# Ex4 : Trouver tous les occurrences
 
 @ str-occu-2021.pl
 
