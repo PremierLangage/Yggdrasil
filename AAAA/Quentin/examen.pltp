@@ -6,7 +6,7 @@ author=Enseignants Méthodologie
 teacher== #|python| 
 test
 ==
-@ injectivite.pl
+@ qcm-injectivite.pl
 
 introduction==
 Test de connaissance: L1 Maths-Info Méthodologie des Mathematiques
