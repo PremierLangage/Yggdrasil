@@ -1,17 +1,7 @@
-
-
 extends = /model/AMC_TXT.pl
-
-
 author = Quentin
-bij =$ /AAAA/Quentin/Images/bij.png
-
-
-
-title= Injectivité / Surjectivité
+title= Image directe/réciproque
 questions==
-
-
 
 * On considère l'application $!f : \{1, 2, 3, 4\} \to \{1, 2, 3, 4\}!$ définie par
 $!f (1) = 2, f (2) = 3, f (3) = 4, f (4) = 2.!$ Quelle est la bonne réponse ?
