@@ -7,11 +7,13 @@ tog=listinput
 extends=/ComputerScience/python/template/soluce.pl
 text==
 Cet exercice consiste à lire une liste depuis du clavier. Nous allons supposer que l'utilisateur va entrez une seule ligne de texte,
-avec un espace entre chaque valeur de la liste par exemple :
+avec un espace entre chaque valeur de la liste.
+
+Par exemple, quand l'utilisateur saisit :
 
 	un deux 3 quatre fin
 
-ce qui vas nous permettre de creer la liste:
+nous devons creer la liste:
 
 	['un', 'deux', '3', 'quatre', 'fin']
 
