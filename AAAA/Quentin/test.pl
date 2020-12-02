@@ -1,12 +1,11 @@
 
 extends = /model/AMC_TXT.pl
 title = Calcul - puissances 10
-image =$ /AAAA/Quentin/bij.png
 
 questions==
 
 ** Cocher les bonnes réponses. $$10^{-3}=...$$ 
-![alt image]({{image}})
+![alt image]({{bij.png}})
 + $%0,001%$
 - $% (-10)\times (-10) \times (-10) %$
 - $% -30%$
