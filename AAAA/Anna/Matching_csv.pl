@@ -4,4 +4,4 @@ title==
 Matching List
 ==
 
-@ Yggdrasil/AAAA/Anna/Irregular_verbs.csv
+@ /AAAA/Anna/Irregular_verbs.csv
