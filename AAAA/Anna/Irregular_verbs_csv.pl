@@ -11,6 +11,12 @@ Give the preterite of the verb **to {{ verb }} **
 before ==
 import random as rd
 import csv
+
+countdown.actions = [
+    { "time": 0, "action": autoSubmit }
+]
+counter = 0
+
 if rd.randint(1,2) == 1 :
     filename= "data1"
 else:
@@ -18,6 +24,8 @@ else:
 
 with open(filename, newline='') as file:
     all_rows = list(csv.DictReader(file, delimiter=','))
+
+
     
 sample_rows = rd.sample(all_rows, 5)
 
