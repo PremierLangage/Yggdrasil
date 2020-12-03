@@ -24,7 +24,15 @@ else:
 
 with open(filename, newline='') as file:
     all_rows = list(csv.DictReader(file, delimiter=','))
-    
+
+index_verb  = random.randint(0, len(IR)-1)
+
+good_total = 0
+verb_total = 0
+validated = []
+verb = IR[index_verb][0]
+preterit = IR[index_verb][1]
+
 sample_rows = rd.sample(all_rows, 5)
 
 matchlist.setdata_from_matches([(row['V'], row['V-ED']) for row in sample_rows])
