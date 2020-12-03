@@ -7,7 +7,7 @@ title= Base 1/4
 
 image =$ /AAAA/Quentin/Images/bij.png
 text==
-On considère la fonction $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s).
+On considère l'application $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s).
 ![alt image]({{image}})
 ==
 
@@ -24,6 +24,7 @@ bad==
 f n'est pas une application
 f est bien définie mais n'est ni injective ni surjective
 ==
+
 
 
 
