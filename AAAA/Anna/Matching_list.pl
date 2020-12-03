@@ -14,7 +14,7 @@ pairs=["met", "knew", "put", "saw","gave", "said"]
 if type(pairs)==list:
     matchlist.setdata_from_matches(pairs)
 else:
-    matchlist.setdata_from_matches([ lfor l in  pairs])
+    matchlist.setdata_from_matches([ l for l in  pairs])
 
 ==
 
