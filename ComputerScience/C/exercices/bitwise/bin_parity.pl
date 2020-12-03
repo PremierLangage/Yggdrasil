@@ -17,8 +17,9 @@
 extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Parité binaire dans un entier
-tag=bitwise|function|parité|bitabit
+tag=bitwise|fonction|parité|bitabit
 
 text==
 Écrire une fonction C prenant en argument un entier **n** qui retourne **1**
@@ -100,5 +101,6 @@ checks_args_stdin==#|python|
  ["Test aléatoire 4", [str(randint(0,255)) for i in range(4)], ""],
  ["Test aléatoire 5", [str(randint(0,255)) for i in range(4)], ""]]
 ==
+
 
 
