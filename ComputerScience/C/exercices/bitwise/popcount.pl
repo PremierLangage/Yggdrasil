@@ -30,15 +30,14 @@ reste générique et portable. Compte tenu de ces faibles informations, faites
 des choix cohérents.
 ==
 
-editor.code==
+editor.code==#|c|
 ... popcount(... addr, ... size){
     /* Votre code ici */
 }
 
 ==
 
-solution==
-
+solution==#|c|
 size_t popcount(void* addr, size_t size){
   int i, j;
   char* s = (char*)addr;
@@ -55,15 +54,12 @@ size_t popcount(void* addr, size_t size){
 
 ==
 
-codebefore==
-
+code_before==#|c|
 #include <stdio.h>
 #include <stdlib.h>
-
 ==
 
-codeafter==
-
+code_after==#|c|
 int main(int argc, char* argv[]){
   unsigned char s[100];
   int i;
@@ -74,11 +70,9 @@ int main(int argc, char* argv[]){
   printf("popcount : %lu\n", popcount((void*)s, argc-1));
   return 0;
 }
-
 ==
 
-tests==
-
+checks_args_stdin==#|python|
 [["Exécution simple", "1", ""],
  ["Pas de bit", "0 0 0 0", ""],
  ["64 bits", "255 255 255 255 255 255 255 255", ""],
