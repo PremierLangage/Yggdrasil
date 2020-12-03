@@ -6,7 +6,7 @@ Exemple 1
 ==
 
 labelcontents ==
-$! > !$
+<mo>&gt;</mo>
 $! < !$
 ==
 
