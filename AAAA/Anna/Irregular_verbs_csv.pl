@@ -31,7 +31,7 @@ with open(filename, newline='') as file:
 good_total = 0
 verb_total = 0
 validated = []
-IR = rd.sample(all_rows, 1)
+IR = rd.sample(all_rows, 10)
 for row in IR : 
     verb = row['V']
     preterit = row['V-ED']
