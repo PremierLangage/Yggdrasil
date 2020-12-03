@@ -9,7 +9,10 @@ before==
 var('x')
 
 f=[to meet, to know, to put, to see, to give, to say]
-pairs=[met, knew, put, saw, gave, said]
+gf=[met, knew, put, saw]
+df=[gave, said]
+
+pairs= [ TT for TT in zip(gf,df)]
 
 if type(pairs)==list:
     matchlist.setdata_from_matches(pairs)
