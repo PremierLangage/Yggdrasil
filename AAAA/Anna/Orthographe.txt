@@ -1,11 +1,12 @@
-règle : Homonymes **est**, **et**, **ai**, **aie**, **ait** et **aient**.
+règle : Homonymes **est**, **et**, **ai**, **aie**, **aies**, **ait** et **aient**.
 
 description : *est* est le verbe être à la troisième personne du singulier au présent de l'indicatif. 
 *et* est une conjonction de coordination qui relie deux entités de même nature (nom et nom, adjectif 
 et adjectif, proposition et proposition, etc).     *ai* est le verbe avoir à la première personne du 
 singulier au présent de l'indicatif. *aie* est le verbe avoir à la première personne du singulier au 
-subjonctif présent.      *ait* est le verbe avoir à la troisième personne du singulier au subjonctif 
-présent.         *aient* est le verbe avoir à la troisième personne du pluriel au subjonctif présent.
+subjonctif présent.      *aies* est le verbe avoir à la deuxième personne du singulier au subjonctif 
+présent.         *ait* est le verbe avoir à la troisième personne du singulier au subjonctif présent.
+*aient* est le verbe avoir à la troisième personne du pluriel au subjonctif présent.
 
 
 
