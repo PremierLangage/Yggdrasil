@@ -60,6 +60,23 @@ code_before==#|c|
 ==
 
 code_after==#|c|
+void print_bin(unsigned char u){
+  int i;
+
+  for(i=7 ; i>=0 ; i--)
+    printf("%c", (u & (1<<i))?'1':'0');
+}
+
+void print_area(void* data, size_t size){
+  int i;
+  unsigned char* s = (unsigned char*)data;
+
+  for(i=0 ; i<size ; i++){
+    print_bin(s[i]);
+  }
+  putchar('\n');
+}
+
 int main(int argc, char* argv[]){
   unsigned char s[100];
   int i;
@@ -67,6 +84,7 @@ int main(int argc, char* argv[]){
   for(i=1 ; i<argc ; i++){
     *(s+i-1) = atoi(argv[i]);
   }
+  print_area((void*)s, argc-1);
   printf("popcount : %lu\n", popcount((void*)s, argc-1));
   return 0;
 }
