@@ -8,7 +8,7 @@ title= Base 2/4
 
 image =$ /AAAA/Quentin/Images/non-appli.png
 text==
-On considère la fonction $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s).
+On considère l'application $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s).
 ![alt image]({{image}})
 ==
 
@@ -25,6 +25,7 @@ f est injective
 f est bijective
 f est bien définie mais n'est ni injective ni surjective
 ==
+
 
 
 
