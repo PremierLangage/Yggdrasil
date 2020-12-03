@@ -4,4 +4,4 @@ title==
 Matching List
 ==
 
-@ /AAAA/Anna/Irregular_verbs.csv
+@ /AAAA/Anna/Irregular_verbs.csv [data]
