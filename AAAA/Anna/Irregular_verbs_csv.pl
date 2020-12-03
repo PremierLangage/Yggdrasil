@@ -31,7 +31,7 @@ with open(filename, newline='') as file:
 good_total = 0
 verb_total = 0
 validated = []
-IR = rd.sample(all_rows, 10)
+IR = rd.sample(all_rows, 1)
 for row in IR : 
     verb = row['V']
     preterit = row['V-ED']
@@ -68,9 +68,9 @@ else:
     inputbox.value = ""
     countdown.time = 15
 
-    IR = rd.sample(all_rows, 10)
+    IR = rd.sample(all_rows, 1)
     while IR in validated:
-        IR = rd.sample(all_rows, 10)
+        IR = rd.sample(all_rows, 1)
 
     for row in IR : 
         verb = row['V']
