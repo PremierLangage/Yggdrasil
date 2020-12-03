@@ -67,7 +67,7 @@ int main(int argc, char* argv[]){
   for(i=1 ; i<argc ; i++){
     *(s+i-1) = atoi(argv[i]);
   }
-  printf("popcount : %lu\n", (size_t)popcount((void*)s, argc-1));
+  printf("popcount : %lu\n", popcount((void*)s, argc-1));
   return 0;
 }
 ==
