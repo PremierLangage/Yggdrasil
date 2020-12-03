@@ -9,8 +9,8 @@ before==
 var('x')
 
 f=[to meet, to know, to put, to see, to give, to say]
-gf=[ f"$!{latex(fi)}!$" for fi in f]
-df=[  f"$!{latex(diff(U,x))}!$" for U in f]
+gf=[met, knew, put, saw]
+df=[gave, said]
 
 pairs= [ TT for TT in zip(gf,df)]
 
@@ -22,7 +22,7 @@ else:
 ==
 
 text==
-Associez chaque fonction à sa dérivée.
+Match each verbs to its preterit
 ==
 
 doc ==
