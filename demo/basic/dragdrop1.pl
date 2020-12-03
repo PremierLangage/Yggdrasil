@@ -6,9 +6,9 @@ Exemple 1
 ==
 
 labelcontents ==
-<
->
->
+a
+b
+v
 ==
 
 solutions ==
