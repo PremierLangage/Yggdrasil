@@ -35,5 +35,4 @@ La balise consecutive_to_validate permet de définir le nombre de réponses just
 pour valider l'exercice. 
 
 La balise recall_rule permet de définir si on rappelle la règle en début d'exercice (True) ou pas (False) 
-
 ==
