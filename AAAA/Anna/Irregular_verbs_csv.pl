@@ -52,7 +52,7 @@ verb_total += 1
 
 if inputbox.value == preterit:
     good_total += 1
-    validated.append(verb)
+    validated.append(IR)
     grade = (0, '<span class="success-state">Good 👏👏👏</span>')
 else:
     grade = (0, '<span class="error-state">No, it is <b>' + preterit + '</b>, Bad answer 👎👎👎</span>')
@@ -69,7 +69,7 @@ else:
     countdown.time = 15
 
     IR = rd.sample(all_rows, 1)
-    while verb in validated:
+    while IR in validated:
         IR = rd.sample(all_rows, 1)
 
     for row in IR : 
