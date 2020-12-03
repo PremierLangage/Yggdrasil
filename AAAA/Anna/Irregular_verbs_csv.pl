@@ -75,3 +75,13 @@ else:
     preterit = IR[index_verb]['V-ED']
     countdown.actions = [ { "time": 0, "action": autoSubmit } ]
 ==
+
+doc == 
+Exo à questions ouvertes. L'élève doit trouver le preterit du verbe irrégulier qui lui est proposé en 15s chronométré. 
+Il ne réussira l'exercice qu'après avoir trouvé 20 verbes et la note sera en fonction du nombre d'essaie. 
+
+Ceci est un template. Pour créer un exo plus simplement dans une autre feuille, il suffit juste de modifier le titre 
+(balise title), l'énoncé de l'exercice (dans la balise text) et les fichiers à importer sous la forme @ chemin vers le 
+fichier pour chaque fichier
+==
+
