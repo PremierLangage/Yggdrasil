@@ -20,6 +20,6 @@ with open(filename, newline='') as file:
     
 sample_rows = rd.sample(all_rows, 5)
 
-matchlist.setdata_from_matches([(row['nom'], row['dates']) for row in sample_rows])
+matchlist.setdata_from_matches([(row['V'], row['V-ED']) for row in sample_rows])
 ==
 
