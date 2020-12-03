@@ -1,5 +1,9 @@
 extends= /AAAA/dominique/mathmatchlist.pl
 
+title==
+Matching list
+==
+
 before==
 
 var('x')
