@@ -24,8 +24,6 @@ else:
 
 with open(filename, newline='') as file:
     all_rows = list(csv.DictReader(file, delimiter=','))
-
-
     
 sample_rows = rd.sample(all_rows, 5)
 
