@@ -8,7 +8,7 @@ before==
 
 var('x')
 
-verbs =["to meet", "to know", "to put", "to see", "to give", "to say"]
+verbs=["to meet", "to know", "to put", "to see", "to give", "to say"]
 pairs=["met", "knew", "put", "saw","gave", "said"]
 
 if type(pairs)==list:
