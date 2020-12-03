@@ -26,137 +26,137 @@ cling,clung,clung,s'accrocher
 come,came,come,venir
 cost,cost,cost,coûter
 creep,crept,crept,ramper
-cut,cut	cut	couper
-deal	dealt	dealt	distribuer
-dig	dug	dug	creuser
-do	did	done	faire
-draw	drew	drawn	dessiner
-dream	dreamt	dreamt	rêver
-drink	drank	drunk	boire
-drive	drove	driven	conduire
-dwell	dwelt	dwelt	habiter
-eat	ate	eaten	manger
-fall	fell	fallen	tomber
-feed	fed	fed	nourrir
-feel	felt	felt	sentir, éprouver
-fight	fought	fought	combattre
-find	found	found	trouver
-flee	fled	fled	s'enfuir
-fling	flung	flung	jeter violemment
-fly	flew	flown	voler
-forbid	forbade	forbidden	interdire
-forget	forgot	forgotten	oublier
-forgive	forgave	forgiven	pardonner
-freeze	froze	frozen	geler
-get	got	got	obtenir
-give	gave	given	donner
-go	went	gone	aller
-grind	ground	ground	moudre
-grow	grew	grown	grandir
-hang	hung	hung	pendre, accrocher
-have	had	had	avoir
-hear	heard	heard	entendre
-hide	hid	hidden	(se) cacher
-hit	hit	hit	frapper, atteindre
-hold	held	held	tenir
-hurt	hurt	hurt	blesser
-keep	kept	kept	garder
-kneel	knelt	knelt	s'agenouiller
-know	knew	known	savoir, connaître
-lay	laid	laid	poser à plat
-lead	led	led	mener
-lean	leant	leant	s'appuyer
-leap	leapt	leapt	sauter
-learn	learnt	learnt	apprendre
-leave	left	left	laisser, quitter
-lend	lent	lent	prêter
-let	let	let	permettre, louer
-lie	lay	lain	être étendu
-light	lit	lit	allumer
-lose	lost	lost	perdre
-make	made	made	faire, fabriquer
-mean	meant	meant	signifier
-meet	met	met	(se) rencontrer
-mow	mowed	mown	tondre
-overcome	overcame	overcome	surmonter, vaincre
-pay	paid	paid	payer
-put	put	put	mettre
-quit	quit	quit	cesser (de)
-read	read	read	lire
-rid	rid	rid	débarrasser
-ride	rode	ridden	chevaucher
-ring	rang	rung	sonner
-rise	rose	risen	s'élever, se lever
-run	ran	run	courir
-saw	sawed	sawn	scier
-say	said	said	dire
-see	saw	seen	voir
-seek	sought	sought	chercher
-sell	sold	sold	vendre
-send	sent	sent	envoyer
-set	set	set	fixer
-sew	sewed	sewn	coudre
-shake	shook	shaken	secouer
-shear	sheared	shorn	tondre (des moutons)
-shed	shed	shed	verser (des larmes)
-shine	shone	shone	briller
-shoe	shod	shod	ferrer, chausser
-shoot	shot	shot	tirer
-show	showed	shown	montrer
-shrink	shrank	shrunk	rétrécir
-shut	shut	shut	fermer
-sing	sang	sung	chanter
-sink	sank	sunk	couler
-sit	sat	sat	être assis
-sleep	slept	slept	dormir
-slide	slid	slid	glisser
-sling	slung	slung	lancer (avec force)
-slink	slunk	slunk	aller furtivement
-slit	slit	slit	fendre, inciser
-smell	smelt	smelt	sentir (odorat)
-sow	sowed	sown	semer
-speak	spoke	spoken	parler
-speed	sped	sped	aller à toute vitesse
-spell	spelt	spelt	épeler
-spend	spent	spent	dépenser
-spill	spilt	spilt	renverser (un liquide)
-spit	spat	spat	cracher
-split	split	split	fendre
-spoil	spoilt	spoilt	gâcher, gâter
-spread	spread	spread	répandre
-spring	sprang	sprung	jaillir, bondir
-stand	stood	stood	être debout
-steal	stole	stolen	voler, dérober
-stick	stuck	stuck	coller
-sting	stung	stung	piquer
-stink	stank	stunk	puer
-stride	strode	stridden	marcher à grands pas
-strike	struck	struck	frapper
-string	strung	strung	enfiler, tendre (une corde)
-strive	strove	striven	s'efforcer
-swear	swore	sworn	jurer
-sweep	swept	swept	balayer
-swell	swelled	swollen	enfler
-swim	swam	swum	nager
-swing	swung	swung	se balancer
-take	took	taken	prendre
-teach	taught	taught	enseigner
-tear	tore	torn	déchirer
-tell	told	told	dire, raconter
-think	thought	thought	penser
-throw	threw	thrown	jeter
-thrust	thrust	thrust	enfoncer
-tread	trod	trodden	fouler aux pieds
-undergo	underwent	undergone	subir
-understand	understood	understood	comprendre
-upset	upset	upset	bouleverser
-wake	woke	woken	(se) réveiller
-wear	wore	worn	porter (des vêtements)
-weave	wove	woven	tisser
-weep	wept	wept	pleurer
-win	won	won	gagner
-wind	wound	wound	enrouler
-withdraw	withdrew	withdrawn	(se) retirer
-wring	wrung	wrung	tordre
-write	wrote	written	écrire
+cut,cut,cut,couper
+deal,dealt,dealt,distribuer
+dig,dug,dug,creuser
+do,did,done,faire
+draw,drew,drawn,dessiner
+dream,dreamt,dreamt,rêver
+drink,drank,drunk,boire
+drive,drove,driven,conduire
+dwell,dwelt,dwelt,habiter
+eat,ate,eaten,manger
+fall,fell,fallen,tomber
+feed,fed,fed,nourrir
+feel,felt,felt,sentir, éprouver
+fight,fought,fought,combattre
+find,found,found,trouver
+flee,fled,fled,s'enfuir
+fling,flung,flung,jeter violemment
+fly,flew,flown,voler
+forbid,forbade,forbidden,interdire
+forget,forgot,forgotten,oublier
+forgive,forgave,forgiven,pardonner
+freeze,froze,frozen,geler
+get,got,got,obtenir
+give,gave,given,donner
+go,went,gone,aller
+grind,ground,ground,moudre
+grow,grew,grown,grandir
+hang,hung,hung,pendre, accrocher
+have,had,had,avoir
+hear,heard,heard,entendre
+hide,hid,hidden,(se) cacher
+hit,hit,hit,frapper, atteindre
+hold,held,held,tenir
+hurt,hurt,hurt,blesser
+keep,kept,kept,garder
+kneel,knelt,knelt,s'agenouiller
+know,knew,known,savoir, connaître
+lay,laid,laid,poser à plat
+lead,led,led,mener
+lean,leant,leant,s'appuyer
+leap,leapt,leapt,sauter
+learn,learnt,learnt,apprendre
+leave,left,left,laisser, quitter
+lend,lent,lent,prêter
+let,let,let,permettre, louer
+lie,lay,lain,être étendu
+light,lit,lit,allumer
+lose,lost,lost,perdre
+make,made,made,faire, fabriquer
+mean,meant,meant,signifier
+meet,met,met,(se) rencontrer
+mow,mowed,mown,tondre
+overcome,overcame,overcome,surmonter, vaincre
+pay,paid,paid,payer
+put,put,put,mettre
+quit,quit,quit,cesser (de)
+read,read,read,lire
+rid,rid,rid,débarrasser
+ride,rode,ridden,chevaucher
+ring,rang,rung,sonner
+rise,rose,risen,s'élever, se lever
+run,ran,run,courir
+saw,sawed,sawn,scier
+say,said,said,dire
+see,saw,seen,voir
+seek,sought,sought,chercher
+sell,sold,sold,vendre
+send,sent,sent,envoyer
+set,set,set,fixer
+sew,sewed,sewn,coudre
+shake,shook,shaken,secouer
+shear,sheared,shorn,tondre (des moutons)
+shed,shed,shed,verser (des larmes)
+shine,shone,shone,briller
+shoe,shod,shod,ferrer, chausser
+shoot,shot,shot,tirer
+show,showed,shown,montrer
+shrink,shrank,shrunk,rétrécir
+shut,shut,shut,fermer
+sing,sang,sung,chanter
+sink,sank,sunk,couler
+sit,sat,sat,être assis
+sleep,slept,slept,dormir
+slide,slid,slid,glisser
+sling,slung,slung,lancer (avec force)
+slink,slunk,slunk,aller furtivement
+slit,slit,slit,fendre, inciser
+smell,smelt,smelt,sentir (odorat)
+sow,sowed,sown,semer
+speak,spoke,spoken,parler
+speed,sped,sped,aller à toute vitesse
+spell,spelt,spelt,épeler
+spend,spent,spent,dépenser
+spill,spilt,spilt,renverser (un liquide)
+spit,spat,spat,cracher
+split,split,split,fendre
+spoil,spoilt,spoilt,gâcher, gâter
+spread,spread,spread,répandre
+spring,sprang,sprung,jaillir, bondir
+stand,stood,stood,être debout
+steal,stole,stolen,voler, dérober
+stick,stuck,stuck,coller
+sting,stung,stung,piquer
+stink,stank,stunk,puer
+stride,strode,stridden,marcher à grands pas
+strike,struck,struck,frapper
+string,strung,strung,enfiler, tendre (une corde)
+strive,strove,striven,s'efforcer
+swear,swore,sworn,jurer
+sweep,swept,swept,balayer
+swell,swelled,swollen,enfler
+swim,swam,swum,nager
+swing,swung,swung,se balancer
+take,took,taken,prendre
+teach,taught,taught,enseigner
+tear,tore,torn,déchirer
+tell,told,told,dire, raconter
+think,thought,thought,penser
+throw,threw,thrown,jeter
+thrust,thrust,thrust,enfoncer
+tread,trod,trodden,fouler aux pieds
+undergo,underwent,undergone,subir
+understand,understood,understood,comprendre
+upset,upset,upset,bouleverser
+wake,woke,woken,(se) réveiller
+wear,wore,worn,porter (des vêtements)
+weave,wove,woven,tisser
+weep,wept,wept,pleurer
+win,won,won,gagner
+wind,wound,wound,enrouler
+withdraw,withdrew,withdrawn,(se) retirer
+wring,wrung,wrung,tordre
+write,wrote,written,écrire
 
