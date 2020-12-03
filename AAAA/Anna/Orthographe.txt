@@ -1,4 +1,4 @@
-règle : Homonymes **est**, **et**, **ai**, **aie**, **aies**, **ait** et **aient**.
+règle : Homonymes **est**, **es**, **et**, **ai**, **aie**, **aies**, **ait** et **aient**.
 
 description : *est* est le verbe être à la troisième personne du singulier au présent de l'indicatif. 
 *et* est une conjonction de coordination qui relie deux entités de même nature (nom et nom, adjectif 
@@ -11,7 +11,7 @@ présent.         *ait* est le verbe avoir à la troisième personne du singulie
 
 mauvais : Pour t’engager dans ces gorges sur ton canoë, il ait préférable que tu est un gilet de sauvetage aient un casque protecteur.
 bon : Pour t’engager dans ces gorges sur ton canoë, il est préférable que tu aies un gilet de sauvetage et un casque protecteur.
-explication : Anna
+explication : "
 
 mauvais :  Il n’ait pas exclu que j’et la possibilité de me faire embaucher.
 bon : Il n’est pas exclu que j’aie la possibilité de me faire embaucher.
