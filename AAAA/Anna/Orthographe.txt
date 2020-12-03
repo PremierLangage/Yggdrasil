@@ -1,2 +1,17 @@
 règle : Homonymes **est**, **et**, **ai**, **aie**, **ait** et **aient**.
 
+description : *est* est le verbe être à la troisième personne du singulier au présent de l'indicatif. 
+*et* est une conjonction de coordination qui relie deux entités de même nature (nom et nom, adjectif 
+et adjectif, proposition et proposition, etc).     *ai* est le verbe avoir à la première personne du 
+singulier au présent de l'indicatif. *aie* est le verbe avoir à la première personne du singulier au 
+subjonctif présent.      *ait* est le verbe avoir à la troisième personne du singulier au subjonctif 
+présent. *aient* est le verbe avoir à la troisième personne du pluriel au subjonctif présent .
+
+
+
+mauvais : Posant un genou à terre, le petit garçon a lacé seul ces lacets.
+bon : Posant un genou à terre, le petit garçon a lacé seul ses lacets.
+explication : Le petit garçon a lacé ses propres lacets. Ce sont les siens, 
+situés sur les chaussures qu'il a aux pieds. C'est donc l'adjectif possessif 
+*ses*.
+
