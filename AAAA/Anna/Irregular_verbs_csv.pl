@@ -20,7 +20,7 @@ countdown.actions = [
 ]
 counter = 0
 
-if rd.randint(1,2) == 1 :
+if random.randint(1,2) == 1 :
     filename= "data1"
 else:
     filename= "data"
