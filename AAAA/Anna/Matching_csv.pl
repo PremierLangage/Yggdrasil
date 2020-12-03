@@ -23,3 +23,7 @@ sample_rows = rd.sample(all_rows, 5)
 matchlist.setdata_from_matches([(row['V'], row['V-ED']) for row in sample_rows])
 ==
 
+text ==
+Relier chaque mmathématiciens à ses dates de naissances et de mort.
+==
+
