@@ -7,7 +7,7 @@ questions==
 * Soient $!E!$ et $!F!$ deux ensembles. Soit $!B \subset F!$. L'image réciproque de l'ensemble $!B!$ est par définition: 
 + $! \\{ x \in E \\; | \\; f(x) \in B \\}!$
 - $! \\{ y \in F \\; | \\; y \in  B \\}!$
-- $! \\{ x \in E \\; | \\; f(x) \in \overline{B} \\}!$
+- $! \\{ x \in E \\; | \\; f(x) \in B^c \\}!$
 
 
 
@@ -48,6 +48,7 @@ grade_checks = min([((nb_good*100) // (nb_good+nb_bad)) , (100 // (2**nb_bad))])
 grade_attempt = 50 + (200 // (3+nb_attempt))
 grade=((grade_checks * grade_attempt) // 10000, feedback)
 ==
+
 
 
 
