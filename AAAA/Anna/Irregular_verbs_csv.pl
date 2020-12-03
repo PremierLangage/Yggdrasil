@@ -11,7 +11,7 @@ Give the preterite of the verb **to {{ verb }} **
 @ /AAAA/Anna/Irregular_verbs.csv [data]
 @ /AAAA/Anna/Irregular_verbs2.csv [data1]
 
-before ==
+before ==#|python|
 import random as rd
 import csv
 
