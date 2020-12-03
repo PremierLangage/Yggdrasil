@@ -51,7 +51,7 @@ verb_total += 1
 
 if inputbox.value == preterit:
     good_total += 1
-    validated.append(IR)
+    validated.append(index_verb)
     grade = (0, '<span class="success-state">Good 👏👏👏</span>')
 else:
     grade = (0, '<span class="error-state">No, it is <b>' + preterit + '</b>, Bad answer 👎👎👎</span>')
@@ -67,13 +67,12 @@ else:
     inputbox.value = ""
     countdown.time = 15
 
-    IR = rd.sample(all_rows, 1)
-    while IR in validated:
-        IR = rd.sample(all_rows, 1)
+    index_verb  = random.randint(0, len(IR)-1)
+    while index_verb in validated:
+        index_verb  = random.randint(0, len(IR)-1)
 
-    for row in IR : 
-        verb = row['V']
-        preterit = row['V-ED']
+    verb = IR[index_verb][0]
+    preterit = IR[index_verb][1]
 
     countdown.actions = [ { "time": 0, "action": autoSubmit } ]
 ==
