@@ -71,8 +71,7 @@ else:
     while index_verb in validated:
         index_verb  = random.randint(0, len(IR)-1)
 
-    verb = IR[index_verb][0]
-    preterit = IR[index_verb][1]
-
+verb = IR[index_verb]['V']
+preterit = IR[index_verb]['V-ED']
     countdown.actions = [ { "time": 0, "action": autoSubmit } ]
 ==
