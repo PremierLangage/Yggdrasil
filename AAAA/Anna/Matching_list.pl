@@ -8,7 +8,7 @@ before==
 
 var('x')
 
-f=[sin(x),cos(x),x**2,x**3, log(x)/log(2), exp(x),127]
+f=[to meet, to know, to put, to see, to give, to say]
 gf=[ f"$!{latex(fi)}!$" for fi in f]
 df=[  f"$!{latex(diff(U,x))}!$" for U in f]
 
