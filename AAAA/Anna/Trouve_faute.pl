@@ -14,3 +14,5 @@ trouvez qu'elles sont correctes
 file_list==
 ["Orthographe.txt"]
 ==
+
+consecutive_to_validate = 3
