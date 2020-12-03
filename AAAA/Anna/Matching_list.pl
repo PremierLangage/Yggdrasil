@@ -8,13 +8,13 @@ before==
 
 var('x')
 
-f=["to meet", "to know", "to put", "to see", "to give", "to say"]
+verbs =["to meet", "to know", "to put", "to see", "to give", "to say"]
 pairs=["met", "knew", "put", "saw","gave", "said"]
 
 if type(pairs)==list:
     matchlist.setdata_from_matches(pairs)
 else:
-    matchlist.setdata_from_matches([ l for l in  pairs])
+    matchlist.setdata_from_matches([v for v in verbs ,l for l in  pairs])
 
 ==
 
