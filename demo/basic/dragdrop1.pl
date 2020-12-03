@@ -22,7 +22,7 @@ Compléter la phrase suivante avec les étiquettes proposées.
 ==
 
 text==
-Comparer les expressions suivants avec les symboles {{ labels[0] | component }} et {{ labels[2] | component }}.
+Comparer les expressions suivants avec les symboles {{ labels[0] | component }} et {{ labels[1] | component }}.
 ==
 
 form==
