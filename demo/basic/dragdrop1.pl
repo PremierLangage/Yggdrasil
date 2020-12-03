@@ -7,7 +7,8 @@ Exemple 1
 
 labelcontents ==
 &lt;
-&gt; 
+=
+&gt;
 ==
 
 solutions ==
