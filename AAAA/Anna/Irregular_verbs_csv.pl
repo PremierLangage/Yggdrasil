@@ -12,7 +12,7 @@ Give the preterite of the verb **to {{ verb }} **
 @ /AAAA/Anna/Irregular_verbs2.csv [data1]
 
 before ==#|python|
-import random as rd
+import random 
 import csv
 
 countdown.actions = [
