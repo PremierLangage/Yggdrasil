@@ -34,9 +34,10 @@ good_total = 0
 verb_total = 0
 validated = []
 sample_rows = rd.sample(all_rows, 1)
-setdata_from_matches([(row['V'], row['V-ED']) for row in sample_rows])
-verb = (row['V']) for row in sample_rows
-preterit = row['V-ED'] for row in sample_rows
+row = []
+for row in sample_rows : 
+    verb = row['V']
+    preterit = row['V-ED']
 ==
 
 form==
