@@ -80,8 +80,10 @@ else:
             verb = row['V']
             preterit = row['V-ED']
 
-    verb = IR[index_verb][0]
-    preterit = IR[index_verb][1]
+    IR = rd.sample(all_rows, 1)
+for row in sample_rows : 
+    verb = row['V']
+    preterit = row['V-ED']
 
     countdown.actions = [ { "time": 0, "action": autoSubmit } ]
 ==
