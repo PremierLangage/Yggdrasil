@@ -29,14 +29,14 @@ Match each verbs to its preterit
 
 doc == 
 Exos à choix unique où on doit relier chaque élèment de la première case à un élèment de la seconde case. 
-Ceci est un template 
 
 Code couleurs : Après validation de la réponse 
 -> Flèches vertes = réponses justes
 -> Flèches rouges = réponses fausses
 
-Importer le ou les fichiers csv où on doit récupérer les données des champs de gauche et de 
-droite par la syntaxe : @ chemin d'accè vers le fichier 
+Ceci est un template. Pour créer un exo plus simplement dans une autre feuille, il suffit juste de modifier le titre 
+(balise title), l'énoncé de l'exercice (dans la balise text) et les fichiers à importer sous la forme @ chemin vers le 
+fichier pour chaque fichier 
 
 Dans la balise before définir les critères de choix selon le modèle ci-dessus c'est à dire : 
 - Si on a plusieurs fichiers csv, on utilise la fonction random pour choisir aléatoirement les données entre les différents
