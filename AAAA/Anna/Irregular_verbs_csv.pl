@@ -31,7 +31,6 @@ with open(filename, newline='') as file:
 good_total = 0
 verb_total = 0
 validated = []
-IR = rd.sample(all_rows, len(all_rows))
 index_verb  = random.randint(0, len(IR)-1)
 verb = IR[index_verb]['V']
 preterit = IR[index_verb]['V-ED']
