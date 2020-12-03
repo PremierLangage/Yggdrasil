@@ -26,7 +26,7 @@ else:
     filename= "data"
 
 with open(filename, newline='') as file:
-    all_rows = list(csv.DictReader(file, delimiter=','))
+    IR = list(csv.DictReader(file, delimiter=','))
 
 good_total = 0
 verb_total = 0
