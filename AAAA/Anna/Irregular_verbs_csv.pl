@@ -70,7 +70,7 @@ else:
 
     IR = rd.sample(all_rows, 10)
     while IR in validated:
-        IR = rd.sample(all_rows, 1)
+        IR = rd.sample(all_rows, 10)
 
     for row in IR : 
         verb = row['V']
