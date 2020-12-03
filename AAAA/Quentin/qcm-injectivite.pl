@@ -26,15 +26,15 @@ questions==
 +  $! \forall y \in F, \quad \exists x \in E,\quad  f(x)=y!$
 
 
-* Soit $!f:\mathbb R \to \mathbb R!$ une fonction paire, c'est-à-dire que $!f(x)=f(-x)!$ pour tout $! x \in \mathbb R!$. La fonction $!f!$ peut-elle être injective ? 
+* Soit $!f:\mathbb R \to \mathbb R!$ une application paire, c'est-à-dire que $!f(x)=f(-x)!$ pour tout $! x \in \mathbb R!$. L'application $!f!$ peut-elle être injective ? 
 + Non
 - Oui 
 
-* La fonction $!f:\mathbb R \to \mathbb R_+!$, $!x\mapsto \exp(x)!$ est-elle injective ?   
+* L'application $!f:\mathbb R \to \mathbb R_+!$, $!x\mapsto \exp(x)!$ est-elle injective ?   
 - Non 
 + Oui 
 
-* La fonction $!f:\mathbb R \to \mathbb R_+!$, $!x\mapsto \exp(x)!$ est-elle surjective ?  
+* L'application $!f:\mathbb R \to \mathbb R_+!$, $!x\mapsto \exp(x)!$ est-elle surjective ?  
 + Non
 - Oui 
 
@@ -53,6 +53,7 @@ grade_checks = min([((nb_good*100) // (nb_good+nb_bad)) , (100 // (2**nb_bad))])
 grade_attempt = 50 + (200 // (3+nb_attempt))
 grade=((grade_checks * grade_attempt) // 10000, feedback)
 ==
+
 
 
 
