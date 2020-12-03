@@ -72,8 +72,9 @@ else:
     while index_verb in validated:
         IR = rd.sample(all_rows, 1)
 
-    verb = IR[index_verb][0]
-    preterit = IR[index_verb][1]
+    for row in IR : 
+        verb = row['V']
+        preterit = row['V-ED']
 
     countdown.actions = [ { "time": 0, "action": autoSubmit } ]
 ==
