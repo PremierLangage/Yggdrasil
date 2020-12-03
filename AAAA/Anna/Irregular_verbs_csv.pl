@@ -28,8 +28,6 @@ else:
 with open(filename, newline='') as file:
     all_rows = list(csv.DictReader(file, delimiter=','))
 
-sample_rows = rd.sample(all_rows, 5)
-
 good_total = 0
 verb_total = 0
 validated = []
