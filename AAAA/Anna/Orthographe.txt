@@ -9,10 +9,30 @@ présent.         *ait* est le verbe avoir à la troisième personne du singulie
 *aient* est le verbe avoir à la troisième personne du pluriel au subjonctif présent.
 
 
-
 mauvais : Pour t’engager dans ces gorges sur ton canoë, il ait préférable que tu est un gilet de sauvetage aient un casque protecteur.
 bon : Pour t’engager dans ces gorges sur ton canoë, il est préférable que tu aies un gilet de sauvetage et un casque protecteur.
-explication : Le petit garçon a lacé ses propres lacets. Ce sont les siens, 
-situés sur les chaussures qu'il a aux pieds. C'est donc l'adjectif possessif 
-*ses*.
+explication : 
 
+mauvais :  Il n’ait pas exclu que j’et la possibilité de me faire embaucher.
+bon : Il n’est pas exclu que j’aie la possibilité de me faire embaucher.
+explication :
+
+mauvais : Il et de règle que les handicapés ait des places réservées.
+bon : Il est de règle que les handicapés aient des places réservées.
+explication :
+
+mauvais :  Mireille n’aie pas étonnée que Caroline n’est pas supporté le climat tropical ait qu’elle est pris le premier avion pour rentrer.
+bon : Mireille n’est pas étonnée que Caroline n’ait pas supporté le climat tropical et qu’elle ait pris le premier avion pour rentrer.
+explication : 
+
+mauvais : Il n’ait pas concevable que l’organisation de cette manifestation et connu de telles défaillances.
+bon : Il n’est pas concevable que l’organisation de cette manifestation ait connu de telles défaillances.
+explication :
+
+mauvais : Les ostréiculteurs regrettent que la vente des huîtres est été interdite. 
+bon : Les ostréiculteurs regrettent que la vente des huîtres ait été interdite. 
+explication :
+
+mauvais : Le bibliothécaire est un homme fort obligeant ; il a tenu à ce que j’ait accès à tous les ouvrages est que je puisse les consulter.
+bon : Le bibliothécaire est un homme fort obligeant ; il a tenu à ce que j’aie accès à tous les ouvrages et que je puisse les consulter.
+explication :
