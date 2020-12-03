@@ -1,38 +1,55 @@
 règle : Homonymes **est**, **es**, **et**, **ai**, **aie**, **aies**, **ait** et **aient**.
 
 description : *est* est le verbe être à la troisième personne du singulier au présent de l'indicatif. 
-*et* est une conjonction de coordination qui relie deux entités de même nature (nom et nom, adjectif 
-et adjectif, proposition et proposition, etc).     *ai* est le verbe avoir à la première personne du 
-singulier au présent de l'indicatif. *aie* est le verbe avoir à la première personne du singulier au 
-subjonctif présent.      *aies* est le verbe avoir à la deuxième personne du singulier au subjonctif 
-présent.         *ait* est le verbe avoir à la troisième personne du singulier au subjonctif présent.
-*aient* est le verbe avoir à la troisième personne du pluriel au subjonctif présent.
+*et* est une conjonction de coordination qui relie deux entités de même nature ou de mêmeê fonction  
+(nom et nom, adjectif et adjectif, proposition et proposition, sujet et sujet, etc).     *ai* est le 
+verbe avoir à la première personne du singulier au présent de l'indicatif. *aie* est le verbe avoir à
+la première personne du singulier au subjonctif présent.      *aies* est le verbe avoir à la deuxième
+personne du singulier au subjonctif présent.     *ait* est le verbe avoir à la troisième personne du 
+singulier au subjonctif présent.*aient* est le verbe avoir à la troisième personne du pluriel au subjonctif présent.
 
 
 mauvais : Pour t’engager dans ces gorges sur ton canoë, il ait préférable que tu est un gilet de sauvetage aient un casque protecteur.
 bon : Pour t’engager dans ces gorges sur ton canoë, il est préférable que tu aies un gilet de sauvetage et un casque protecteur.
-explication : "
+explication : "est préférable" car "avoir préférable" ne se dit pas et on ne peut pas avoir "es préférable" car c'est la troisième 
+personne du singulier; on ne peut pas avoir "il et préférable" non plus car il et préférable ne sont pas de même nature ni de même
+fonction.
 
 mauvais :  Il n’ait pas exclu que j’et la possibilité de me faire embaucher.
 bon : Il n’est pas exclu que j’aie la possibilité de me faire embaucher.
-explication : Anna
+explication : L'expression "avoir exclu" ne trouve pas son sens dans ce contexte
+et "n'et exclu" ne se dit pas donc "être exclu" à la troisème personne du singulier
+est la formule aséquate = "est exclu".
 
 mauvais : Il et de règle que les handicapés ait des places réservées.
 bon : Il est de règle que les handicapés aient des places réservées.
-explication : Anna
+explication : L'expression "avoir de règle" n'existe pas et on est à
+la troisième personne du singulier donc ce n'est pas "es de règle"  
+mais "est de règle". Les handicapés ne peuvent pas "être des places 
+réservées" mais "avoir des places réservées" et on est à la troisième
+personne du pluriels donc l'expression adéquate ne peut être que "aient 
+des places réservées".
 
 mauvais :  Mireille n’aie pas étonnée que Caroline n’est pas supporté le climat tropical ait qu’elle est pris le premier avion pour rentrer.
 bon : Mireille n’est pas étonnée que Caroline n’ait pas supporté le climat tropical et qu’elle ait pris le premier avion pour rentrer.
-explication :  Anna
+explication :  Il s'agit d'une narration(présent de l'indicatif) à la troisième personne du singulier donc "n'est pas". La conjonction de 
+subordination "que" introduit le subjonctif dans la subordination et on est à la troisième personne du singulier donc la formule adéquate ne 
+peut être que "n'ait pas" et "qu'elle ait". On emploi "...tropical et qu'elle" pour relier les deux propositions.
 
 mauvais : Il n’ait pas concevable que l’organisation de cette manifestation et connu de telles défaillances.
 bon : Il n’est pas concevable que l’organisation de cette manifestation ait connu de telles défaillances.
-explication : Anna
+explication : L'expression "avoir concevable" n'existe pas et  "n'et exclu" ne se dit pas donc "être concevable" 
+à la troisième personne du singulier est l'expression adéquate. La conjonction de subordination "que" introduit 
+le subjonctif dans la subordination et on est à la troisième personne du singulier donc la formule adéquate ne 
+peut être que "ait connu".
 
 mauvais : Les ostréiculteurs regrettent que la vente des huîtres est été interdite. 
 bon : Les ostréiculteurs regrettent que la vente des huîtres ait été interdite. 
-explication : Anna
+explication : La conjonction de subordination "que" introduit le subjonctif dans la 
+subordination et on est à la troisième personne du singulier donc la formule adéquate 
+ne peut être que "ait été".
 
 mauvais : Le bibliothécaire est un homme fort obligeant ; il a tenu à ce que j’ait accès à tous les ouvrages est que je puisse les consulter.
 bon : Le bibliothécaire est un homme fort obligeant ; il a tenu à ce que j’aie accès à tous les ouvrages et que je puisse les consulter.
-explication : Anna
+explication : La conjonction de subordination "que" introduit le subjonctif dans la subordination et on est à la première personne du singulier 
+donc la formule adéquate ne peut être que "aie été". La formule adéquate est "et" car on relie deux propositions. 
