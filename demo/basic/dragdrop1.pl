@@ -7,7 +7,7 @@ Exemple 1
 
 labelcontents ==
 $! > !$
-a
+$! > !$
 ==
 
 solutions ==
