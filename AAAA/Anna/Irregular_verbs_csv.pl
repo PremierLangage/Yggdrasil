@@ -32,6 +32,7 @@ good_total = 0
 verb_total = 0
 validated = []
 IR = rd.sample(all_rows, 1)
+index_verb  = random.randint(0, len(IR)-1)
 for row in IR : 
     verb = row['V']
     preterit = row['V-ED']
