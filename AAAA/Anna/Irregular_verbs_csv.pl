@@ -69,7 +69,7 @@ else:
     countdown.time = 15
 
     IR = rd.sample(all_rows, 1)
-    while index_verb in validated:
+    while verb in validated:
         IR = rd.sample(all_rows, 1)
 
     for row in IR : 
