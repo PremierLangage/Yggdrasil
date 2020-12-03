@@ -9,8 +9,7 @@ before==
 var('x')
 
 f=[to meet, to know, to put, to see, to give, to say]
-gf=[met, knew, put, saw, gave, said]
-df=[]
+pairs=[met, knew, put, saw, gave, said]
 
 pairs= [ TT for TT in zip(gf,df)]
 
