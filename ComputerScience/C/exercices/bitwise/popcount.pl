@@ -76,11 +76,11 @@ checks_args_stdin==#|python|
 [["Exécution simple", "1", ""],
  ["Pas de bit", "0 0 0 0", ""],
  ["64 bits", "255 255 255 255 255 255 255 255", ""],
- ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(random.randint(2, 20))]), ""],
- ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(random.randint(2, 20))]), ""],
- ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(random.randint(2, 20))]), ""],
- ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(random.randint(2, 20))]), ""],
- ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(random.randint(2, 20))]), ""]]
+ ["Aléatoire", " ".join([str(randint(0,255)) for i in range(randint(2, 20))]), ""],
+ ["Aléatoire", " ".join([str(randint(0,255)) for i in range(randint(2, 20))]), ""],
+ ["Aléatoire", " ".join([str(randint(0,255)) for i in range(randint(2, 20))]), ""],
+ ["Aléatoire", " ".join([str(randint(0,255)) for i in range(randint(2, 20))]), ""],
+ ["Aléatoire", " ".join([str(randint(0,255)) for i in range(randint(2, 20))]), ""]]
 
 ==
 
