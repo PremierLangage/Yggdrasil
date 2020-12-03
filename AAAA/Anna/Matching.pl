@@ -11,6 +11,7 @@ Relier chaque mot français à sa traduction en anglais
 
 delimiter % "->"
 delimiter= ->
+
 pairs==
 Pomme -> Apple
 Chien -> Dog
@@ -25,6 +26,7 @@ Code couleurs : Après validation de la réponse
 -> Flèches vertes = réponses justes
 -> Flèches rouges = réponses fausses
 ==
+
 
 
 
