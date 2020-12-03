@@ -5,8 +5,12 @@ Trouve Fautes
 ==
 
 text ==
-Trouver les fautes d'orthographe dans les phrases suivantes ou cliquer sur correct si vous 
+Corriger les fautes d'orthographe dans les phrases suivantes ou cliquer sur correct si vous 
 trouvez qu'elles sont correctes
 ==
 
 @ /AAAA/Anna/Irregular_verbs.csv [data]
+
+file_list==
+["ses_ou_ces.txt"]
+==
