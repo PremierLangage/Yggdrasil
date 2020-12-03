@@ -6,9 +6,8 @@ Exemple 1
 ==
 
 labelcontents ==
-a
-b
-v
+&lt;
+&gt; 
 ==
 
 solutions ==
