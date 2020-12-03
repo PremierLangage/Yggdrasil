@@ -9,8 +9,8 @@ Corriger les fautes d'orthographe dans les phrases suivantes ou cliquer sur corr
 trouvez qu'elles sont correctes
 ==
 
-@ /AAAA/Anna/Orthographe.txt [data]
+@ /AAAA/Anna/Orthographe.txt 
 
 file_list==
-["ses_ou_ces.txt"]
+["Orthographe.txt"]
 ==
