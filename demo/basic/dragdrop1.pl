@@ -6,9 +6,8 @@ Exemple 1
 ==
 
 labelcontents ==
-&lt;
-=
-&gt;
+$! > !$
+$! < !$
 ==
 
 solutions ==
