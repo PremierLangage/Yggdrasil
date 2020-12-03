@@ -37,3 +37,44 @@ validated = []
 verb = row['V']
 preterit = row['V-ED']
 ==
+
+form==
+{{ countdown|component }}
+
+{{ inputbox |component}}
+
+{{ good_total }} / {{ verb_total }}
+==
+
+evaluator== #|python|
+import random
+
+verb_total += 1
+
+if inputbox.value == preterit:
+    good_total += 1
+    validated.append(index_verb)
+    grade = (0, '<span class="success-state">Good 👏👏👏</span>')
+else:
+    grade = (0, '<span class="error-state">No, it is <b>' + preterit + '</b>, Bad answer 👎👎👎</span>')
+
+if good_total == 20:
+    countdown.hidden = True
+    score = 2000 // verb_total
+    grade = (score, '<center><span class="success-state">Your final score '+ str(score) + '%</span></center>')
+    form = ""
+    text = "You validated 20 different irregular preterite forms !"
+    countdown.actions = []
+else:
+    inputbox.value = ""
+    countdown.time = 15
+
+    index_verb  = random.randint(0, len(IR)-1)
+    while index_verb in validated:
+        index_verb  = random.randint(0, len(IR)-1)
+
+    verb = IR[index_verb][0]
+    preterit = IR[index_verb][1]
+
+    countdown.actions = [ { "time": 0, "action": autoSubmit } ]
+==
