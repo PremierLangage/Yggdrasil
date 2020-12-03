@@ -5,7 +5,7 @@ before=
 
 
 title = Python - Factoriel
-text = Ecrire une fonction qui prend en paramètreun entier et renvoie son factoriel.
+text = Ecrire une fonction qui prend en paramètre un entier et renvoie son factoriel.
 
 
 pltest==
@@ -18,4 +18,5 @@ True
 >>> factorielle(10)
 3628800
 ==
+
 
