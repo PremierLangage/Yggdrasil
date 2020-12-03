@@ -70,9 +70,15 @@ else:
     inputbox.value = ""
     countdown.time = 15
 
-    index_verb  = random.randint(0, len(IR)-1)
+    IR = rd.sample(all_rows, 1)
+    for row in sample_rows : 
+        verb = row['V']
+        preterit = row['V-ED']
     while index_verb in validated:
-        index_verb  = random.randint(0, len(IR)-1)
+        IR = rd.sample(all_rows, 1)
+        for row in sample_rows : 
+            verb = row['V']
+            preterit = row['V-ED']
 
     verb = IR[index_verb][0]
     preterit = IR[index_verb][1]
