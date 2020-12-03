@@ -1,5 +1,6 @@
 extends = /Languages/French/Orthographe/Trouve_faute_template.pl
 
+author = Anna DIAW
 title==
 Trouve Fautes    
 ==
@@ -36,3 +37,4 @@ pour valider l'exercice.
 
 La balise recall_rule permet de définir si on rappelle la règle en début d'exercice (True) ou pas (False) 
 ==
+
