@@ -19,7 +19,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 author=Nicolas Borie
 
 title=Popcount : compter les bit à 1
-tag=bitwise|fonction|
+tag=bitwise|fonction|comptage|transtypage|binaire
 
 
 text==
