@@ -9,7 +9,7 @@ Corriger les fautes d'orthographe dans les phrases suivantes ou cliquer sur corr
 trouvez qu'elles sont correctes
 ==
 
-@ /AAAA/Anna/Irregular_verbs.csv [data]
+@ /AAAA/Anna/Orthographe.txt [data]
 
 file_list==
 ["ses_ou_ces.txt"]
