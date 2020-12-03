@@ -15,7 +15,7 @@ file_list==
 ["Orthographe.txt"]
 ==
 
-consecutive_to_validate = 3
+consecutive_to_validate = 4
 
 recall_rule = True
 
