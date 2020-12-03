@@ -11,7 +11,7 @@ présent.         *ait* est le verbe avoir à la troisième personne du singulie
 
 
 mauvais : Pour t’engager dans ces gorges sur ton canoë, il ait préférable que tu est un gilet de sauvetage aient un casque protecteur.
-bon : Posant un genou à terre, le petit garçon a lacé seul ses lacets.
+bon : Pour t’engager dans ces gorges sur ton canoë, il est préférable que tu aies un gilet de sauvetage et un casque protecteur.
 explication : Le petit garçon a lacé ses propres lacets. Ce sont les siens, 
 situés sur les chaussures qu'il a aux pieds. C'est donc l'adjectif possessif 
 *ses*.
