@@ -52,7 +52,7 @@ verb_total += 1
 
 if inputbox.value == preterit:
     good_total += 1
-    validated.append(erb)
+    validated.append(verb)
     grade = (0, '<span class="success-state">Good 👏👏👏</span>')
 else:
     grade = (0, '<span class="error-state">No, it is <b>' + preterit + '</b>, Bad answer 👎👎👎</span>')
