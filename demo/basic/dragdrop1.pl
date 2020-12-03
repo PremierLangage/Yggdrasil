@@ -6,8 +6,8 @@ Exemple 1
 ==
 
 labelcontents ==
-<mo>&gt;</mo>
-$! < !$
+$! > !$
+a
 ==
 
 solutions ==
@@ -30,6 +30,6 @@ form==
 <li> 1 {{ drops[0]|component }}3 </li>
 <li> 1 {{ drops[1]|component }}3 </li>
 <li> 1 {{ drops[2]|component }}3 </li>
-<li> 1 {{ drops[3]|component }}3 </li>
+<li> I n'{{ drops[3]|component }} plus faim. </li>
 </ul>
 ==
