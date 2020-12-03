@@ -28,7 +28,6 @@ else:
 with open(filename, newline='') as file:
     all_rows = list(csv.DictReader(file, delimiter=','))
 
-index_verb  = random.randint(0, len(IR)-1)
 sample_rows = rd.sample(all_rows, 5)
 
 good_total = 0
