@@ -33,25 +33,25 @@ import psutil
 
 pltest0==
 >>> compter_lignes("sample1.txt")
-710
+711
 ==
 
 pltest1==
 >>> compter_lignes("sample2.txt")
-0
+1
 ==
 
 pltest2==
 >>> compter_lignes("sample3.txt")
-75
+76
 ==
 
 pltest3==
 >>> compter_lignes("sample4.txt")
-97
+98
 ==
 
 pltest4==
 >>> compter_lignes("sample5.txt")
-65
+66
 ==
