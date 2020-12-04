@@ -21,7 +21,7 @@ author=Nicolas Borie
 title=Fibonacci avec Mini-Brain
 
 text==
-<p>
+
 On définit la suite de Fibonacci de manière récurrente comme il suit :
 
 
@@ -46,7 +46,7 @@ de Fibonacci.
 <b>factorielle</b> de l'entier 
 stocké à la case 10 de la mémoire centrale. Placez votre résultat en case 11 
 de la mémoire centrale avant la fin d'exécution de votre programme.
-</p>
+
 ==
 
 editor.code ==
