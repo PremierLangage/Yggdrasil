@@ -17,14 +17,12 @@ elif param['boundtype']==2:
     b=bn+b0
 n0=int(max([0,max(solve(a-b,n))]))
 S = Sum(v, (v, a, b))
-S_tex=latex(S)
-n_tex=latex(n)
 sol=simplify((b-a+1)*(a+b)/2)
-sol_tex=latex(sol)
 ==
 
 text ==
 Soit un entier $! {{n_tex}} \geq {{n0}} !$. Calculer $! \displaystyle {{S_tex}} !$.
 ==
+
 
 
