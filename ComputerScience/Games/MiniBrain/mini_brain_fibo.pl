@@ -57,7 +57,7 @@ add #2
 mv #1 #2
 mv a #1
 dec #3
-bfdn 9
+bfdn 10
 st a $16
 ==
 
