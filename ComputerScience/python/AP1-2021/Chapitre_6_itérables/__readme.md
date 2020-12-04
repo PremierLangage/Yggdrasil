@@ -77,7 +77,7 @@ tag = immutable | ForIn | stringConcat
 
 # Ex7 : Corriger les tuples saisis
 
-@ corriger-tuple.pl
+@ corriger-tuple-2021.pl
 
 tag = mutable | immutable | ForIn | tuple
 
