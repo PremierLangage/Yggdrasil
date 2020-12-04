@@ -24,6 +24,12 @@ si c'est nul c'est l'arbre vide.
 soit c'est positif et c'est un noeud
 soit c'est negatif c'est une feuille contenant l'opposé de la valeur 
 
+# Arbres graphique
+
+Propriétés d'un arbre déssiné 
+(complet, héréditairement gauche (ou droit))
+calcul de la hauteur 
+
 
 
 # Comparer deux arbres
