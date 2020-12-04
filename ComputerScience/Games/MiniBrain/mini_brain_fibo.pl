@@ -47,11 +47,12 @@ editor.code ==
 ld $15 #3
 ld 0 #2
 ld 1 #1
-add #1
+ld 1 a
+add #2
 mv #1 #2
 mv a #1
 dec #3
-bfdn 4
+bfdn 5
 st a $16
 ==
 
