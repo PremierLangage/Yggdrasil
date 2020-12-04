@@ -24,7 +24,7 @@ text==
 <p>
 On définit la suite de Fibonacci de manière récurrente comme il suit :
 
-$$
+$
 fibonacci(n) :=    
 \left\\{ 
 \begin{array}{ll}
@@ -33,7 +33,7 @@ fibonacci(n) :=
 fibonacci(n-1) + fibonacci(n-2) & \text{ si } n > 1 \\newline
 \end{array}
 \\right.
-$$
+$
 
 
 Proposez un code Mini-Brain calculant la n-ième valeur de la suite
