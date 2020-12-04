@@ -36,16 +36,9 @@ fibonacci(n-1) + fibonacci(n-2) & \text{ si } n > 1 \\newline
 \\right.
 %$
 
-
-
-Proposez un code Mini-Brain calculant la n-ième valeur de la suite
-de Fibonacci. 
-
-
-
-<b>factorielle</b> de l'entier 
-stocké à la case 10 de la mémoire centrale. Placez votre résultat en case 11 
-de la mémoire centrale avant la fin d'exécution de votre programme.
+Proposez un code Mini-Brain calculant la `n`-ième valeur de la suite
+de Fibonacci. Mais `n` sera la valeur stockée à la case mémoire 15.
+Votre résultat, lui, devra être stocké à l'adresse 16.
 
 ==
 
@@ -53,31 +46,38 @@ editor.code ==
 ...
 ==
 
+before==#|python|
+text += extra_doc
 
+from random import randint
 
+def fibo(n):
+    """
+    Returns the n-th value of Fibonacci sequence.
+    """
+    if n <= 1:
+        return n
+    gp = 0
+    p = 1
+    for i in range(n-1):
+        s = gp + p
+        gp = p
+        p = s
+    return s
 
+minibrain_check_after="[ ['Fibonacci de 0', 'st 0 $15'],  ['Fibonacci de 1', 'st 1 $15'], "
+minibrain_action_before="[ [(16, 0)], [(16, 1)], "
 
-minibrain_action_before==
-[ ['factorielle de 1', 'st 1 $10'], 
-  ['factorielle de 2', 'st 2 $10'], 
-  ['factorielle de 3', 'st 3 $10'], 
-  ['factorielle de 4', 'st 4 $10'], 
-  ['factorielle de 5', 'st 5 $10'], 
-  ['factorielle de 6', 'st 6 $10'],
-  ['factorielle de 7', 'st 7 $10'], ]
+for i in range(5):
+    pre_actions_list = []
+    vect_val = []
+    for j in range(b - a + 1):
+        vect_val.append(randint(-50, 100))
+        pre_actions_list.append("st "+str(vect_val[-1])+" $"+str(a+j))
+    minibrain_action_before+="['test aléatoire "+str(i+1)+"', '"+ "\\n".join(pre_actions_list) +"'], "
+    minibrain_check_after+="[(c, "+str(sum(vect_val))+")], "
+
+minibrain_check_after+="]"
+minibrain_action_before+="]"
 ==
-
-minibrain_check_after==
-[ [(11, 1)],
-  [(11, 2)],
-  [(11, 6)],
-  [(11, 24)],
-  [(11, 120)],
-  [(11, 720)],
-  [(11, 5040)],]
-==
-
-
-
-
 
