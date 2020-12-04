@@ -6,7 +6,8 @@ param.type % "linearity"
 
 
 text ==
-On pose $! \displaystyle A = {{A_tex}} !$. 
+On pose $! \displaystyle A = {{A|latex}} !$. 
 
-Exprimer $% \displaystyle {{E_tex}} %$ en fonction de $! A !$ et $! {{n_tex}} !$.
+Exprimer $! \displaystyle {{E|latex}} !$ en fonction de $! A !$ et $! {{n|latex}} !$.
 ==
+
