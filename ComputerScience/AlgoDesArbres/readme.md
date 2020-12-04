@@ -19,6 +19,13 @@ Avec la notation suivante qui donne forme et valeurs des noeuds une donnée par 
 - 2 X noeud incomplet fils gauche contenant X 
 - 3 X noeud complet contenant X 
 
+Avec la notation suivante que des valeurs **strictement positives** :
+si c'est nul c'est l'arbre vide.
+soit c'est positif et c'est un noeud
+soit c'est negatif c'est une feuille contenant l'opposé de la valeur 
+
+
+
 # Comparer deux arbres
 
 Egaux <=> même forme même valeurs sur les noeuds.
@@ -30,6 +37,10 @@ Egaux <=> même forme même valeurs sur les noeuds.
 ## Contient une valeur 
 
 ## Ne contient que des valeurs verifiant une lambda
+
+## Ne contient pas de valeurs verifiant une lambda
+
+
 
 # Arbinaires de recherche 
 
@@ -43,6 +54,49 @@ qui affiche les valeur des noeuds visités. Ce qui permet de vérifier la comple
 ## Contient une valeur 
 
 Vérifier que la complexité est la bonnne en faisant afficher les noeuds visité.
+
+
+## Vérifirer qu'un arbre binaire est de recherche
+
+Il faut tester les deux arbres suivants :
+Dans la première notation sur deux lignes ordre préfixe
+2 1 0
+5 10 1
+et 
+1 2 0
+5 1 8 
+En effet si les deux sous arbre sont des arbre binaires cela veux pas dire que l'arbre est binaire.
+
+
+# Arbres d'interval 
+
+Complex a étudier :)
+
+# Arbres lexicographiques 
+
+le caractère de fin de mot doit être stocké dans l'arbre et c'est le plus peti dans l'ordre
+
+
+## Fils gauche & frère droits 
+
+Frère droits ordonnées
+
+# Ternaire de recherche 
+
+La ième lettre est égale a la lettre du noeud descend au milieux 
+Si plus petit a gauche si plus grand a droite 
+
+
+les mots reconnus 
+appartenance du mot 
+plus long mots
+
+
+Une indication que le noeud est terminal.
+
+
+
+
 
 
 
