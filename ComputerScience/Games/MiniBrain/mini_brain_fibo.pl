@@ -68,14 +68,10 @@ def fibo(n):
 minibrain_check_after="[ ['Fibonacci de 0', 'st 0 $15'],  ['Fibonacci de 1', 'st 1 $15'], "
 minibrain_action_before="[ [(16, 0)], [(16, 1)], "
 
-for i in range(5):
-    pre_actions_list = []
-    vect_val = []
-    for j in range(b - a + 1):
-        vect_val.append(randint(-50, 100))
-        pre_actions_list.append("st "+str(vect_val[-1])+" $"+str(a+j))
-    minibrain_action_before+="['test aléatoire "+str(i+1)+"', '"+ "\\n".join(pre_actions_list) +"'], "
-    minibrain_check_after+="[(c, "+str(sum(vect_val))+")], "
+for i in range(1, 5):
+    val = randint(i*3, i*3 + 2)
+    minibrain_action_before+="['test aléatoire "+str(i)+"', 'st "+str(val)+" $15'], "
+    minibrain_check_after+="[(16, "+str(fibo(val))+")], "
 
 minibrain_check_after+="]"
 minibrain_action_before+="]"
