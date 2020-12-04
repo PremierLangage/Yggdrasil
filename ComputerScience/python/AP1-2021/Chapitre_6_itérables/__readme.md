@@ -8,7 +8,7 @@ Le nombre du fichier d'un exercice doit être une description biève de son cont
 
 Les tags sont séparés par |
 
-Liste des tags : input | split | substring | algo | stringRepeat | ForIn | stringIndex | find | immutable | ForIn | stringConcat
+Liste des tags : input | split | substring | algo | stringRepeat | ForIn | stringIndex | find | immutable | ForIn | stringConcat | mutable | tuple
 
 En charge : **Wenjie Fang**
 
@@ -80,4 +80,11 @@ tag = immutable | ForIn | stringConcat
 @ corriger-tuple.pl
 
 tag = mutable | immutable | ForIn | tuple
+
+**Commentaires**
+
+- Exercice compliqué pour remplacer des occurrences selon un dictionnaire
+- La difficulté consiste de la différence entre tuple et liste.
+- En tout cas assez compliqué conceptuellement et aussi sur le code.
+
 
