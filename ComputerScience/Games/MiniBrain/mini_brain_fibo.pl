@@ -52,7 +52,7 @@ st 0 $21
 
 ld 1 #2
 ld 1 #1
-ld 0 a
+ld 1 a
 add #2
 mv #1 #2
 mv a #1
