@@ -38,8 +38,8 @@ fibonacci(n-1) + fibonacci(n-2) & \text{ si } n > 1 \\newline
 
 <p>
 Proposez un code Mini-Brain calculant la `n`-ième valeur de la suite
-de Fibonacci. Mais `n` sera la valeur stockée à la case mémoire 15.
-Votre résultat, lui, devra être stocké à l'adresse 16.
+de Fibonacci. Mais `n` sera la valeur stockée à la case mémoire **20**.
+Votre résultat, lui, devra être stocké à l'adresse **21**.
 </p>
 ==
 
