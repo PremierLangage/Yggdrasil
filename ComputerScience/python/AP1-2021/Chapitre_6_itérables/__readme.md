@@ -87,4 +87,6 @@ tag = mutable | immutable | ForIn | tuple
 - La difficulté consiste de la différence entre tuple et liste.
 - En tout cas assez compliqué conceptuellement et aussi sur le code.
 
+# Ex8 : Compter les lignes
 
+@
