@@ -44,22 +44,7 @@ Votre résultat, lui, devra être stocké à l'adresse **21**.
 ==
 
 editor.code ==
-ld $20 #3
-ld 1 a
-cmp $20
-bfup 7
-st 0 $21
-
-ld 0 #2
-ld 1 #1
-ld 1 a
-add #2
-mv #1 #2
-mv a #1
-dec #3
-bfdn 10
-st #2 $21
-
+...
 ==
 
 before==#|python|
@@ -93,3 +78,21 @@ minibrain_check_after+="]"
 minibrain_action_before+="]"
 ==
 
+solution==
+ld $20 #3
+ld 1 a
+cmp $20
+bfup 7
+st 0 $21
+
+ld 0 #2
+ld 1 #1
+ld 1 a
+add #2
+mv #1 #2
+mv a #1
+dec #3
+bfdn 10
+st #2 $21
+
+==
