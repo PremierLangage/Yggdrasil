@@ -1,12 +1,9 @@
-extends = /Mathematics/template/mathinput.pl
+extends = /model/mathinput.pl
 
 title = Linéarité
 
 
 before ==
-keyboards_JSON['virtualKeyboards']="elementary"
-input.config = keyboards_JSON
-
 v=randitem([Symbol('i'),Symbol('j'),Symbol('k')])
 n=randitem([Symbol('n'),Symbol('m'),Symbol('p')])
 var('A')
@@ -47,5 +44,6 @@ score,_,feedback=ans_expr(input.value,sol)
 solution ==
 La solution est $! {{sol_tex}} !$.
 ==
+
 
 
