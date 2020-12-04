@@ -25,11 +25,11 @@ before==
 import psutil
 ==
 
-@ sample1.txt [sample1.txt]
-@ sample2.txt [sample2.txt]
-@ sample3.txt [sample3.txt]
-@ sample4.txt [sample4.txt]
-@ sample5.txt [sample5.txt]
+@ testcase/sample1.txt [sample1.txt]
+@ testcase/sample2.txt [sample2.txt]
+@ testcase/sample3.txt [sample3.txt]
+@ testcase/sample4.txt [sample4.txt]
+@ testcase/sample5.txt [sample5.txt]
 
 pltest0==
 >>> compter_lignes("sample1.txt")
