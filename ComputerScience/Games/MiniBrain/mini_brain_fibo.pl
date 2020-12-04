@@ -81,13 +81,13 @@ def fibo(n):
         p = s
     return s
 
-minibrain_action_before="[ ['Fibonacci de 0', 'st 0 $15'],  ['Fibonacci de 1', 'st 1 $15'], "
-minibrain_check_after="[ [(16, 0)], [(16, 1)], "
+minibrain_action_before="[ ['Fibonacci de 0', 'st 0 $20'],  ['Fibonacci de 1', 'st 1 $20'], "
+minibrain_check_after="[ [(21, 0)], [(21, 1)], "
 
 for i in range(1, 5):
     val = randint(i*4, i*4 + 3)
-    minibrain_action_before+="['Test aléatoire "+str(i)+"', 'st "+str(val)+" $15'], "
-    minibrain_check_after+="[(16, "+str(fibo(val))+")], "
+    minibrain_action_before+="['Test aléatoire "+str(i)+"', 'st "+str(val)+" $20'], "
+    minibrain_check_after+="[(21, "+str(fibo(val))+")], "
 
 minibrain_check_after+="]"
 minibrain_action_before+="]"
