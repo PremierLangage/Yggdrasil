@@ -58,7 +58,7 @@ mv #1 #2
 mv a #1
 dec #3
 bfdn 10
-st a $21
+st #2 $21
 
 ==
 
