@@ -75,4 +75,9 @@ tag = immutable | ForIn | stringConcat
 - Exercice pour parcourir et remplacer les caractères dans une chaîne.
 - Notion d'objet non mutable, sinon une solution simple est de faire un parcours et changer les lettres directement.
 
+# Ex7 : Corriger les tuples saisis
+
+@ corriger-tuple.pl
+
+tag = mutable | immutable | ForIn | tuple
 
