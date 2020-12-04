@@ -89,4 +89,13 @@ tag = mutable | immutable | ForIn | tuple
 
 # Ex8 : Compter les lignes
 
-@
+@ wcl-2021.pl
+
+tag = file | ForIn
+
+**Commentaires**
+
+- Exercice simple pour entraîner la lecture de fichier
+
+
+
