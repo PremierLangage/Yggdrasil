@@ -26,14 +26,11 @@ if param['coeff']==2:
 n0=int(max([0,max(solve(a-b,n))]))
 
 E = c1*Sum(p1*v+q1, (v, a, b))+c2*Sum(p2*v+q2, (v, a, b))
-A_tex=latex(Sum(v, (v, a, b)))
-E_tex=latex(E)
-n_tex=latex(n)
+
 if param['type']=="linearity":
     sol=(c1*p1+c2*p2)*A+(c1*q1+c2*q2)*(b-a+1)
 elif param['type']=="compute":
     sol=simplify((c1*p1+c2*p2)*(b-a+1)*(a+b)/2)+simplify((c1*q1+c2*q2)*(b-a+1))
-sol_tex=latex(sol)
 ==
 
 
