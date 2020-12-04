@@ -4,7 +4,7 @@ builder =@ /builder/before.py
 
 editor =: CodeEditor
 editor.theme = dark
-editor.language = Haskell
+editor.language = haskell
 editor.code ==
 module Main where
 
