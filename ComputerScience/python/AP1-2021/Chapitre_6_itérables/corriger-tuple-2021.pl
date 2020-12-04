@@ -1,6 +1,6 @@
 # Author: Wenjie Fang
 
-extends=/ComputerScience/python/template/pltest.pl
+extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 builder=/builder/before.py
 
 author=Wenjie Fang
