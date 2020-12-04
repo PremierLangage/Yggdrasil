@@ -45,7 +45,7 @@ Votre résultat, lui, devra être stocké à l'adresse 16.
 
 editor.code ==
 ld $15 #3
-ld -1 a
+ld 1 a
 cmp $15
 bfdn 6
 st 0 $16
