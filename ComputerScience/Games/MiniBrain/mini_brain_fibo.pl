@@ -24,6 +24,7 @@ text==
 <p>
 On définit la suite de Fibonacci de manière récurrente comme il suit :
 
+
 $%
 fibonacci(n) :=    
 \left\\{ 
