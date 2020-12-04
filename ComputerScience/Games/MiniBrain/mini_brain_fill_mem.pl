@@ -28,7 +28,7 @@ la case 10 à case 15 toutes deux incluses.
 ==
 
 editor.code ==
-ld $10 ...
+...
 ==
 
 minibrain_action_before==
@@ -38,6 +38,7 @@ minibrain_action_before==
 minibrain_check_after==
 [ [(10, 42), (11, 42), (12, 42), (13, 42), (14, 42), (15, 42)] ]
 ==
+
 
 
 
