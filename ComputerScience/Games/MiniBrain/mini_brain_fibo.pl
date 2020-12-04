@@ -20,6 +20,8 @@ author=Nicolas Borie
 
 title=Fibonacci avec Mini-Brain
 
+editor.height = 400px
+
 text==
 <p>
 On définit la suite de Fibonacci de manière récurrente comme il suit :
