@@ -1,6 +1,6 @@
 # Author: Wenjie Fang
 
-extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
+extends=/ComputerScience/python/template/pltest.pl
 builder=/builder/before.py
 
 author=Wenjie Fang
@@ -41,3 +41,4 @@ pltest0==
 >>> compter_e('templates') # PL
 2
 ==
+
