@@ -45,6 +45,10 @@ Votre résultat, lui, devra être stocké à l'adresse 16.
 
 editor.code ==
 ld $15 #3
+cmp $15
+bfup 6
+st 0 $16
+
 ld 0 #2
 ld 1 #1
 ld 1 a
@@ -52,6 +56,7 @@ add #2
 mv #1 #2
 mv a #1
 dec #3
+bfdn 8
 st a $16
 ==
 
