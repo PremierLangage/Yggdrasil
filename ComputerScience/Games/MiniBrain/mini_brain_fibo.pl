@@ -47,7 +47,7 @@ editor.code ==
 ld $15 #3
 ld 1 a
 cmp $15
-bfdn 6
+bfdn 7
 st 0 $16
 
 ld 0 #2
