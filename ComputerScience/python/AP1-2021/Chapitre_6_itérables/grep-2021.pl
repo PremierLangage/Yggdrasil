@@ -53,8 +53,6 @@ pltest0==
 
 pltest1==
 >>> grep('sample2.txt', 'math')
->>> 1 == 1
-True
 ==
 
 pltest2==
