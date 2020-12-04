@@ -44,11 +44,11 @@ Votre résultat, lui, devra être stocké à l'adresse **21**.
 ==
 
 editor.code ==
-ld $15 #3
+ld $20 #3
 ld 1 a
-cmp $15
+cmp $20
 bfup 7
-st 0 $16
+st 0 $21
 
 ld 0 #2
 ld 1 #1
@@ -58,7 +58,7 @@ mv #1 #2
 mv a #1
 dec #3
 bfdn 10
-st a $16
+st a $21
 
 ==
 
