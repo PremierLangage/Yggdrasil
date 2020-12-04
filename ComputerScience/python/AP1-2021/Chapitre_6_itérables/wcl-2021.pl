@@ -38,7 +38,7 @@ pltest0==
 
 pltest1==
 >>> compter_lignes("sample2.txt")
-1
+2
 ==
 
 pltest2==
