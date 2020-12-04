@@ -65,8 +65,8 @@ def fibo(n):
         p = s
     return s
 
-minibrain_check_after="[ ['Fibonacci de 0', 'st 0 $15'],  ['Fibonacci de 1', 'st 1 $15'], "
-minibrain_action_before="[ [(16, 0)], [(16, 1)], "
+minibrain_action_before="[ ['Fibonacci de 0', 'st 0 $15'],  ['Fibonacci de 1', 'st 1 $15'], "
+minibrain_check_after="[ [(16, 0)], [(16, 1)], "
 
 for i in range(1, 5):
     val = randint(i*3, i*3 + 2)
