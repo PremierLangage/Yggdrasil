@@ -3,8 +3,6 @@ extends = sum_.pl
 title = Somme de carrés successifs
 
 before ==
-keyboards_JSON['virtualKeyboards']="elementary"
-input.config = keyboards_JSON
 v=randitem([Symbol('i'),Symbol('j'),Symbol('k')])
 n=randitem([Symbol('n'),Symbol('m'),Symbol('p')])
 a=1
@@ -17,10 +15,9 @@ elif param['boundtype']==2:
 
 n0=int(max([0,max(solve(a-b,n))]))
 S = Sum(v**2, (v, a, b))
-S_tex=latex(S)
-n_tex=latex(n)
+
 sol=simplify(b*(b+1)*(2*b+1)/6)
-sol_tex=latex(sol)
 ==
+
 
 
