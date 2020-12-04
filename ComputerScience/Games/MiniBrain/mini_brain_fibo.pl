@@ -70,7 +70,7 @@ minibrain_action_before="[ [(16, 0)], [(16, 1)], "
 
 for i in range(1, 5):
     val = randint(i*3, i*3 + 2)
-    minibrain_action_before+="['test aléatoire "+str(i)+"', 'st "+str(val)+" $15'], "
+    minibrain_action_before+="['Test aléatoire "+str(i)+"', 'st "+str(val)+" $15'], "
     minibrain_check_after+="[(16, "+str(fibo(val))+")], "
 
 minibrain_check_after+="]"
