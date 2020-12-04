@@ -25,6 +25,7 @@ if param['coeff']==2:
 
 n0=int(max([0,max(solve(a-b,n))]))
 
+AA = Sum(v, (v, a, b))
 E = c1*Sum(p1*v+q1, (v, a, b))+c2*Sum(p2*v+q2, (v, a, b))
 
 if param['type']=="linearity":
@@ -41,6 +42,7 @@ score,_,feedback=ans_expr(input.value,sol)
 solution ==
 La solution est $! {{sol|latex}} !$.
 ==
+
 
 
 
