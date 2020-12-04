@@ -40,6 +40,12 @@ before==
 import psutil
 ==
 
+@ testcase/sample1.txt [sample1.txt]
+@ testcase/sample2.txt [sample2.txt]
+@ testcase/sample3.txt [sample3.txt]
+@ testcase/sample4.txt [sample4.txt]
+@ testcase/sample5.txt [sample5.txt]
+
 pltest0==
 >>> grep('sample1.txt', 'liberté de circulation')
 2. La liberté de circulation et de séjour peut être accordée, conformément
