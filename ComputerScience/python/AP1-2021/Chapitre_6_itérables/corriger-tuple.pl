@@ -29,7 +29,7 @@ Vous pouvez écrire des fonctions auxiliaires pour vous aider.
 tag=mutable|immutable|ForIn|tuple
 
 samplesol==
-def corriger(info, dicto):
+def corriger(info, d):
     for i in range(len(info)):
         e = list(info[i])
         for j in range(len(e)):
@@ -61,11 +61,11 @@ def gentest():
     info = [tuple([l[randint(0, n-1)] for i in range(randint(2,5))]) for i in range(randint(10, 20))]
     corrpos = [randint(0, (n-2)//2 - 1) for i in range(3)]
     corr = [(l[corrpos[i]*2 + 1], l[corrpos[i]*2]) for i in range(3)]
-    test = f">>> info = {info}\n"
+    test = f">>> info = {info} #\n"
     test += f">>> corr = {corr}\n"
-    test += ">>> corriger(info, corr)\n"
+    test += ">>> corriger(info, corr) #\n"
     test += ">>> info\n"
-    (info, corr)
+    correct(info, corr)
     test += f"{info}\n"
     return test
 
@@ -81,33 +81,33 @@ after = before
 ==
 
 pltest0==
->>> info = []
->>> corr = []
->>> corriger(info, corr)
+>>> info = [] #
+>>> corr = [] #
+>>> corriger(info, corr) #
 >>> info
 []
 ==
 
 pltest1==
->>> info = [('Linus', 32, '2B110', True), ('Windows', 17, '1B170', False), ('Linux', 17, '1B210')]
->>> corr = []
->>> corriger(info, corr)
+>>> info = [('Linus', 32, '2B110', True), ('Windows', 17, '1B170', False), ('Linux', 17, '1B210')] #
+>>> corr = [] #
+>>> corriger(info, corr) #
 >>> info
 [('Linus', 32, '2B110', True), ('Windows', 17, '1B170', False), ('Linux', 17, '1B210')]
 ==
 
 pltest2==
->>> info = []
->>> corr = [('Linus', 'Linux'), (17, 16), ('Windozs', 'Windows')]
->>> corriger(info, corr)
+>>> info = [] #
+>>> corr = [('Linus', 'Linux'), (17, 16), ('Windozs', 'Windows')] #
+>>> corriger(info, corr) #
 >>> info
 []
 ==
 
 pltest3==
->>> info = [('Linus', 32, '2B110', True), ('Windows', 17, '1B170', False), ('Linux', 17, '1B210')]
->>> corr = [('Linus', 'Linux'), (17, 16), ('Windozs', 'Windows')]
->>> corriger(info, corr)
+>>> info = [('Linus', 32, '2B110', True), ('Windows', 17, '1B170', False), ('Linux', 17, '1B210')] #
+>>> corr = [('Linus', 'Linux'), (17, 16), ('Windozs', 'Windows')] #
+>>> corriger(info, corr) #
 >>> info
 [('Linux', 32, '2B110', True), ('Windows', 16, '1B170', False), ('Linux', 16, '1B210')]
 ==
