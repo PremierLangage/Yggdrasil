@@ -21,7 +21,7 @@ sol=simplify((b-a+1)*(a+b)/2)
 ==
 
 text ==
-Soit un entier $! {{n_tex}} \geq {{n0}} !$. Calculer $! \displaystyle {{S_tex}} !$.
+Soit un entier $! {{ n|latex}} \geq {{n0}} !$. Calculer $! \displaystyle {{S|latex}} !$.
 ==
 
 
