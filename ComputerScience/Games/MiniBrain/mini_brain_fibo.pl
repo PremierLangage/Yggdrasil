@@ -21,9 +21,9 @@ author=Nicolas Borie
 title=Fibonacci avec Mini-Brain
 
 text==
-
+<p>
 On définit la suite de Fibonacci de manière récurrente comme il suit :
-
+</p>
 
 $%
 fibonacci(n) :=    
@@ -36,10 +36,11 @@ fibonacci(n-1) + fibonacci(n-2) & \text{ si } n > 1 \\newline
 \\right.
 %$
 
+<p>
 Proposez un code Mini-Brain calculant la `n`-ième valeur de la suite
 de Fibonacci. Mais `n` sera la valeur stockée à la case mémoire 15.
 Votre résultat, lui, devra être stocké à l'adresse 16.
-
+</p>
 ==
 
 editor.code ==
