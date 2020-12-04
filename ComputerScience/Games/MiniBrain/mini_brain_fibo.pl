@@ -50,7 +50,7 @@ cmp $20
 bfup 7
 st 0 $21
 
-ld 1 #2
+ld 0 #2
 ld 1 #1
 ld 1 a
 add #2
