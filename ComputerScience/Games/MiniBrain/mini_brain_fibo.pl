@@ -59,6 +59,7 @@ mv a #1
 dec #3
 bfdn 10
 st a $16
+
 ==
 
 before==#|python|
