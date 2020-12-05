@@ -73,4 +73,3 @@ while endurance > 0:
     salle += 1
 print("Fin d'aventure.")
 print("J'étais comme vous avant de prendre une flèche dans mes genoux...")
-
