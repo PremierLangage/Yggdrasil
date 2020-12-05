@@ -22,7 +22,7 @@ Maintenant, nous voulons lire les matrices dans ces fichiers et les stocker comm
 Ecrire une fonction ``lire_matrice(filename)`` qui prend en paramètre le nom ``filename`` du fichier à lire, qui lit le fichier et qui retourne la liste de listes représentant la **matrice d'entiers** dans le fichier. Vous pouvez utiliser la méthode ``split`` des chaînes de caractères.
 ==
 
-tag=file|listoflist|split
+tag=file|listoflist|split|ForIn
 
 samplesol==
 def lire_matrice(fn):
@@ -68,4 +68,5 @@ pltest4==
 >>> lire_matrice("mat5.txt")
 [[3], [4], [5], [6], [-353289], [5427832], [0], [0], [0], [-1]]
 ==
+
 
