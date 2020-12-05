@@ -47,11 +47,6 @@ repris ci-après.
 ==
 
 pltest1==
->>> head("sample2.txt")
-<BLANKLINE>
-==
-
-pltest2==
 >>> head("sample3.txt")
 from random import randint
 <BLANKLINE>
@@ -60,7 +55,7 @@ MAX = 5
 <BLANKLINE>
 ==
 
-pltest3==
+pltest2==
 >>> head("sample4.txt")
 La Marseillaise
 <BLANKLINE>
@@ -69,7 +64,7 @@ Premier couplet
 Allons, enfants de la Patrie,
 ==
 
-pltest4==
+pltest3==
 >>> head("sample5.txt")
 Hello World Cake with Chocolate sauce.
 <BLANKLINE>
@@ -78,7 +73,7 @@ chef makes a " world!" cake, which he puts in the baking dish. When he gets the
 sous chef to make the "Hello" chocolate sauce, it gets put into the baking dish
 ==
 
-pltest5==
+pltest4==
 >>> head("sample6.txt")
 Albert Einstein
 David Hilbert
