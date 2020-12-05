@@ -97,8 +97,15 @@ tag = file | ForIn
 
 - Exercice simple pour entraîner la lecture de fichier
 
+# Ex9 : Lire les premiers lignes
 
+@ head-2021.pl
 
+tag = file | ForIn | break
+
+**Commentaires**
+
+- Exercice simple qui simule la fonctionalité de la commande head en linux, mais seulement 5 lignes.
 
 
 
