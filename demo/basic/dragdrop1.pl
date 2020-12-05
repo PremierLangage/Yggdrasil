@@ -1,4 +1,3 @@
-
 extends = /model/basic/dragdrop.pl
 
 title ==
