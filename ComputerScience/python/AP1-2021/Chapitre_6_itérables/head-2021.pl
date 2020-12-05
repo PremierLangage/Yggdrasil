@@ -17,7 +17,6 @@ samplesol==
 def head(fn):
     with open(fn, 'r') as file:
         cnt = 0
-        res = 
         for s in file:
             print(s)
             cnt += 1
