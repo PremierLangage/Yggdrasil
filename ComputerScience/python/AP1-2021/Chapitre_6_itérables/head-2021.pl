@@ -38,10 +38,10 @@ import psutil
 pltest0==
 >>> head("sample1.txt")
 CHARTE DES DROITS FONDAMENTAUX DE L'UNION EUROPÉENNE
+<BLANKLINE>
 Le Parlement européen, le Conseil et la Commission proclament solennellement
 en tant que Charte des droits fondamentaux de l'Union européenne le texte
 repris ci-après.
-CHARTE DES DROITS FONDAMENTAUX DE L'UNION EUROPÉENNE
 ==
 
 pltest1==
