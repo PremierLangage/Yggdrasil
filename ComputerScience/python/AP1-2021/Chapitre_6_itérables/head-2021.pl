@@ -18,7 +18,7 @@ def head(fn):
     with open(fn, 'r') as file:
         cnt = 0
         for s in file:
-            print(s)
+            print(s.rstrip())
             cnt += 1
             if cnt >= 5:
                 break
