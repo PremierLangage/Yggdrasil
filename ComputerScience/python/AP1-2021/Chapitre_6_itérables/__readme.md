@@ -8,7 +8,7 @@ Le nombre du fichier d'un exercice doit être une description biève de son cont
 
 Les tags sont séparés par |
 
-Liste des tags : input | split | substring | algo | stringRepeat | ForIn | stringIndex | find | immutable | ForIn | stringConcat | mutable | tuple
+Liste des tags : input | split | substring | algo | stringRepeat | ForIn | stringIndex | find | immutable | ForIn | stringConcat | mutable | tuple | file | listoflist
 
 En charge : **Wenjie Fang**
 
@@ -99,3 +99,10 @@ tag = file | ForIn
 
 # Ex9 : Lire une matrice
 
+@ matrix-file-2021.pl
+
+tag = file | listoflist | split | ForIn
+
+**Commentaires**
+
+- Exercice pour lire une matrice dans un fichier
