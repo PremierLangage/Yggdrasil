@@ -107,7 +107,11 @@ tag = file | ForIn | break
 
 - Exercice simple qui simule la fonctionalité de la commande head en linux, mais seulement 5 lignes.
 
+# Ex19 : Recherche de motif dans un fichier
 
+@ grep-2021.pl
+
+tag = file | ForIn | substring
 
 
 
