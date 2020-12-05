@@ -97,7 +97,7 @@ tag = file | ForIn
 
 - Exercice simple pour entraîner la lecture de fichier
 
-# Ex9 : Lire une matrice
+# ExA : Lire une matrice
 
 @ matrix-file-2021.pl
 
@@ -106,3 +106,4 @@ tag = file | listoflist | split | ForIn
 **Commentaires**
 
 - Exercice pour lire une matrice dans un fichier
+- Bug sur PL, 
