@@ -7,9 +7,8 @@ author=Wenjie Fang
 title=Lire les premiers lignes
 
 text==
-Ecrire une fonction ``head(filename)`` qui prend en paramètre le nom d'un fichier et qui imprime les premières 5 lignes du fichier. Si le fichier contient moins que 5 lignes, alors imprimer tous les lignes. On doit lire le fichier une et une seule fois.
-
-
+Ecrire une fonction ``head(filename)`` qui prend en paramètre le nom d'un fichier et qui imprime les premières 5 lignes du fichier. 
+Si le fichier contient moins que 5 lignes, alors imprimer tous les lignes. On doit lire le fichier une et une seule fois.
 ==
 
 tag=file|ForIn|break
