@@ -48,9 +48,9 @@ extracss ==
     text-align: center;
     justify-content: center;
     align-items: center;
-    border: 2px solid transparent;
-    border-radius: 6px;
-    margin: 8px;
+    border: 0px solid transparent;
+    border-radius: 0px;
+    margin: 0px;
 
     &.dnd-drag {
       opacity: .6;
