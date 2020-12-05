@@ -1,6 +1,8 @@
 from random import randint
+
 MIN = 2
 MAX = 5
+
 def ennemi(n):
     # n : numéro de salle
     # Endurance proportionnelle à n, 
@@ -72,4 +74,3 @@ while endurance > 0:
     salle += 1
 print("Fin d'aventure.")
 print("J'étais comme vous avant de prendre une flèche dans mes genoux...")
-
