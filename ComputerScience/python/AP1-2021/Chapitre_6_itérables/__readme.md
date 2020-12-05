@@ -97,6 +97,31 @@ tag = file | ForIn
 
 - Exercice simple pour entraîner la lecture de fichier
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------
+
+
 # ExA : Lire une matrice
 
 @ matrix-file-2021.pl
