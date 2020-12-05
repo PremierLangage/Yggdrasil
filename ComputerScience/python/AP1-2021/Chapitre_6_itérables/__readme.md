@@ -131,7 +131,7 @@ tag = file | ForIn | break
 
 # ExA : Lire une matrice
 
-@ matrix-file-2021.pl
+@ ~matrix-file-2021.pl
 
 tag = file | listoflist | split | ForIn
 
