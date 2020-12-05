@@ -20,7 +20,7 @@ def head(fn):
         for s in file:
             print(s)
             cnt += 1
-            if cnt >= 4:
+            if cnt >= 5:
                 break
 ==
 
