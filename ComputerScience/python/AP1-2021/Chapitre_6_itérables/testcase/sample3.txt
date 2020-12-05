@@ -61,7 +61,6 @@ def affiche_etat(endurance, portefeuille, salle):
     print("")
 
 
-
 # Programme principal
 # Initialisation
 endurance = 100
@@ -74,3 +73,4 @@ while endurance > 0:
     salle += 1
 print("Fin d'aventure.")
 print("J'étais comme vous avant de prendre une flèche dans mes genoux...")
+
