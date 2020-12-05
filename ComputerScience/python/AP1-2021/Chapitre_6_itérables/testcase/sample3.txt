@@ -59,6 +59,7 @@ def affiche_etat(endurance, portefeuille, salle):
     print("")
 
 
+
 # Programme principal
 # Initialisation
 endurance = 100
