@@ -115,7 +115,7 @@ tag = file | ForIn | substring
 
 **Commentaires**
 
-- Exercice simple qui simule lq fonctionalité de la commande grep en linux
+- Exercice simple qui simule la fonctionalité de la commande grep en linux
 
 
 
@@ -146,3 +146,4 @@ tag = file | listoflist | split | ForIn
 
 - Exercice pour lire une matrice dans un fichier
 - Bug sur PL, 
+
