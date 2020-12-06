@@ -41,19 +41,19 @@ def fus(l):
 
 ll = [[randint(-10, 10) for _ in range(randint(-4,10))] for _ in range(randint(3, 10))]
 res = fus(ll)
-pltest2 = f">>> fusion({ll}) # Random\n{res}"
+pltest2 = f">>> fusion({ll}) # Random\n{res}\n"
 
 ll = [[randint(-10, 10) for _ in range(randint(-4,10))] for _ in range(randint(3, 10))]
 res = fus(ll)
-pltest3 = f">>> fusion({ll}) # Random\n{res}"
+pltest3 = f">>> fusion({ll}) # Random\n{res}\n"
 
 ll = [[randint(-10, 10) for _ in range(randint(-4,10))] for _ in range(randint(3, 10))]
 res = fus(ll)
-pltest4 = f">>> fusion({ll}) # Random\n{res}"
+pltest4 = f">>> fusion({ll}) # Random\n{res}\n"
 
 ll = [[randint(-10, 10) for _ in range(randint(-4,10))] for _ in range(randint(3, 10))]
 res = fus(ll)
-pltest5 = f">>> fusion({ll}) # Random\n{res}"
+pltest5 = f">>> fusion({ll}) # Random\n{res}\n"
 
 after = before
 ==
