@@ -129,6 +129,11 @@ tag = range
 
 - Exercice pour l'utilisation de range. La seule difficulté est le cas où la raison est 0.
 
+# Ex12 : Fusion d'une liste de liste
+
+@ fusion-list-2021.pl
+
+tag=listoflist|extend
 
 
 
