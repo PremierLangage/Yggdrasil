@@ -28,3 +28,55 @@ form==
 <li> I n'{{ drops[3]|component }} plus faim. </li>
 </ul>
 ==
+
+style.dragdrop ==
+.drag-drop-component {
+    position: relative;
+    cursor: move;
+    display: inline-flex;
+    padding: 8px;
+    box-sizing: border-box;
+    min-width: 3em;
+    min-height: 2em;
+    vertical-align: middle;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid transparent;
+    border-radius: 0px;
+    margin: 0px;
+
+    &.dnd-drag {
+      opacity: .6;
+    }
+
+    &.dragzone {
+      background-color: AntiqueWhite;
+    }
+
+    &.dropzone {
+        cursor: pointer;
+        border: 1px solid black;
+        &:hover,
+        &.dnd-over
+        {
+            border: 2px solid black;
+        }
+    }
+
+    &.disabled {
+        border: 1px dashed;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    nge-markdown {
+      pointer-events: none;
+    }
+}
+
+.btn-clear {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+==
