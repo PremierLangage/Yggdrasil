@@ -133,7 +133,11 @@ tag = range
 
 @ fusion-list-2021.pl
 
-tag=listoflist|extend
+tag = listoflist | extend
+
+**Commentaires**
+
+- Exercice simple pour fusionner les éléments dans une liste de listes.
 
 
 
