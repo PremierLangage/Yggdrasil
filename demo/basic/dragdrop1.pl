@@ -50,11 +50,11 @@ style.dragdrop ==
       opacity: .6;
     }
 
-    &.dragzone {
+    &.draggable {
       background-color: AntiqueWhite;
     }
 
-    &.dropzone {
+    &.droppable {
         cursor: pointer;
         border: 0px solid black;
         &:hover,
