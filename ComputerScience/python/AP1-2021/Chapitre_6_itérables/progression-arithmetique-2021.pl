@@ -7,7 +7,9 @@ author=Wenjie Fang
 title=Progression arithmétique
 
 text==
-Ecrire une fonction ``progression(p, r, l)`` qui prend en paramètre le premier terme ``p``, la raison ``r`` et la longueur ``l`` **d'une progression arithmétique formée par des entiers**, et retourner la progression sous forme d'une liste. Si ``l <= 0``, alors la fontion retourne une liste vide. La raison ``r`` pourrait être négative.
+Ecrire une fonction ``progression(p, r, l)`` qui prend en paramètre le premier terme ``p``, la raison ``r``
+et la longueur ``l`` **d'une progression arithmétique formée par des entiers**, et retourner la progression sous forme d'une liste.
+Si ``l <= 0``, alors la fontion retourne une liste vide. La raison ``r`` pourrait être négative.
 
 Par exemple, l'appel ``progression(1, 2, 4)`` doit retourner la liste ``[1, 3, 5, 7]``, et l'appel ``progression(1, 2, -4)`` doit retourner ``[]``.
 
