@@ -33,14 +33,6 @@ def fusion(l):
 before==
 from random import randint
 
-def fus(l):
-    res = []
-    for e in l:
-        res.extend(e)
-    return res
-
-ll = [[randint(-10, 10) for i in range(randint(-2,3))] for j in range(randint(2, 5))]
-res = fus(ll)
 pltest2 = f">>> fusion([]) # Random\n[]\n"
 
 after = before
