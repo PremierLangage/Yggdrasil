@@ -4,7 +4,7 @@ extends=/ComputerScience/python/template/pltest.pl
 builder=/builder/before.py
 
 author=Wenjie Fang
-title=Progression arithmétique
+title=Progression arithmétique, mais sans boucle
 
 text==
 Ecrire une fonction ``progression(p, r, l)`` qui prend en paramètre le premier terme ``p``, la raison ``r``
