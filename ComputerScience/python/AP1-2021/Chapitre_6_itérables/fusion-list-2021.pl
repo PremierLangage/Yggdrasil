@@ -39,7 +39,7 @@ def fus(l):
         res.extend(e)
     return res
 
-ll = [[randint(-10, 10) for i in range(randint(-4,10))] for j in range(randint(3, 10))]
+ll = [[randint(-10, 10) for i in range(randint(-2,3))] for j in range(randint(2, 5))]
 res = fus(ll)
 pltest2 = f">>> fusion({ll}) # Random\n{res}\n"
 
