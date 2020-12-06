@@ -42,11 +42,11 @@ import psutil
 
 pltest0==
 >>> tail("sample1.txt")
-------
 <BLANKLINE>
 Le texte ci-dessus reprend, en l'adaptant, la Charte proclamée le 7 décembre
 2000 et la remplacera à compter du jour de l'entrée en vigueur du traité
 de Lisbonne.
+<BLANKLINE>
 ==
 
 pltest1==
@@ -56,29 +56,29 @@ pltest1==
 
 pltest2==
 >>> tail("sample3.txt")
-    endurance, portefeuille = visiter_salle(salle, endurance, portefeuille)
     affiche_etat(endurance, portefeuille, salle)
     salle += 1
 print("Fin d'aventure.")
 print("J'étais comme vous avant de prendre une flèche dans mes genoux...")
+<BLANKLINE>
 ==
 
 pltest3==
 >>> tail("sample4.txt")
-Que de partager leur cercueil,
 Nous aurons le sublime orgueil
 De les venger ou de les suivre.
 <BLANKLINE>
 Refrain 
+<BLANKLINE>
 ==
 
 pltest4==
 >>> tail("sample5.txt")
-Liquefy the milk chocolate.
 Put milk chocolate into the mixing bowl.
 Liquefy contents of the mixing bowl.
 Pour contents of the mixing bowl into the baking dish.
 Refrigerate for 1 hour.
+<BLANKLINE>
 ==
 
 pltest5==
