@@ -43,18 +43,6 @@ ll = [[randint(-10, 10) for i in range(randint(-2,3))] for j in range(randint(2,
 res = fus(ll)
 pltest2 = f">>> fusion({ll}) # Random\n{res}\n"
 
-ll = [[randint(-10, 10) for _ in range(randint(-4,10))] for _ in range(randint(3, 10))]
-res = fus(ll)
-pltest1 = f">>> fusion({ll}) # Random\n{res}\n"
-
-ll = [[randint(-10, 10) for _ in range(randint(-4,10))] for _ in range(randint(3, 10))]
-res = fus(ll)
-pltest4 = f">>> fusion({ll}) # Random\n{res}\n"
-
-ll = [[randint(-10, 10) for _ in range(randint(-4,10))] for _ in range(randint(3, 10))]
-res = fus(ll)
-pltest5 = f">>> fusion({ll}) # Random\n{res}\n"
-
 after = before
 ==
 
