@@ -140,6 +140,17 @@ tag = listoflist | extend
 - Exercice simple pour fusionner les éléments dans une liste de listes.
 - Les pltest aléatoires ne marchent pas, et il faut débougger.
 
+# Ex13 : Découper une liste
+
+@ decoupe-2021.pl
+
+tag = listoflist | ForIn | algo
+
+**Commentaires**
+
+- Exercice moyennement difficile pour découper une liste en des segments d'une certaine longueur.
+- Difficulté en gestion de quand un segment est complet, et aussi sur le traitement du dernier segment.
+- Les pltest aléatoires ne marchent pas, et il faut débougger.
 
 
 
