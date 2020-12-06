@@ -33,6 +33,8 @@ def fusion(l):
 before==
 from random import randint
 
+pltest0 = ">>> 1\n1"
+
 ll = [[randint(-10, 10) for _ in range(randint(-4,10))] for _ in range(randint(3, 10))]
 res = fus(ll)
 pltest2 = f">>> fusion({ll}) # Random\n{res}\n"
