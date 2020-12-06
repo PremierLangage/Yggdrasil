@@ -56,11 +56,11 @@ style.dragdrop ==
 
     &.dropzone {
         cursor: pointer;
-        border: 1px solid black;
+        border: 0px solid black;
         &:hover,
         &.dnd-over
         {
-            border: 2px solid black;
+            border: 0px solid black;
         }
     }
 
