@@ -8,7 +8,9 @@ Le nombre du fichier d'un exercice doit être une description biève de son cont
 
 Les tags sont séparés par |
 
-Liste des tags : input | split | substring | algo | stringRepeat | ForIn | stringIndex | find | immutable | ForIn | stringConcat | mutable | tuple | file | listoflist
+Liste des tags : 
+
+input | split | substring | algo | stringRepeat | ForIn | stringIndex | find | immutable | ForIn | stringConcat | mutable | tuple | file | listoflist | range
 
 En charge : **Wenjie Fang**
 
