@@ -33,7 +33,7 @@ def fusion(l):
 before==
 from random import randint
 
-pltest2 = f">>> fusion([]) # Random\n[]\n"
+pltest2 = f">>> fusion([])\n[]\n"
 
 after = before
 ==
