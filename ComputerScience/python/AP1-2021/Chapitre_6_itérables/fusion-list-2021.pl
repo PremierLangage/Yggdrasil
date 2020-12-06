@@ -39,19 +39,19 @@ def fus(l):
         res.extend(e)
     return res
 
-ll = [[randint(-10, 10) for _ in range(randing(-4,10))] for _ in range(randint(3, 10))]
+ll = [[randint(-10, 10) for _ in range(randint(-4,10))] for _ in range(randint(3, 10))]
 res = fus(ll)
 pltest2 = f">>> fusion({ll}) # Random\n{res}"
 
-ll = [[randint(-10, 10) for _ in range(randing(-4,10))] for _ in range(randint(3, 10))]
+ll = [[randint(-10, 10) for _ in range(randint(-4,10))] for _ in range(randint(3, 10))]
 res = fus(ll)
 pltest3 = f">>> fusion({ll}) # Random\n{res}"
 
-ll = [[randint(-10, 10) for _ in range(randing(-4,10))] for _ in range(randint(3, 10))]
+ll = [[randint(-10, 10) for _ in range(randint(-4,10))] for _ in range(randint(3, 10))]
 res = fus(ll)
 pltest4 = f">>> fusion({ll}) # Random\n{res}"
 
-ll = [[randint(-10, 10) for _ in range(randing(-4,10))] for _ in range(randint(3, 10))]
+ll = [[randint(-10, 10) for _ in range(randint(-4,10))] for _ in range(randint(3, 10))]
 res = fus(ll)
 pltest5 = f">>> fusion({ll}) # Random\n{res}"
 
