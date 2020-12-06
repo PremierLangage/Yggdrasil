@@ -41,7 +41,7 @@ def fus(l):
 
 ll = [[randint(-10, 10) for i in range(randint(-2,3))] for j in range(randint(2, 5))]
 res = fus(ll)
-pltest2 = f">>> fusion({ll}) # Random\n{res}\n"
+pltest2 = f">>> fusion([]) # Random\n[]\n"
 
 after = before
 ==
