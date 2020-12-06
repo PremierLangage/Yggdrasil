@@ -46,7 +46,7 @@ style.dragdrop ==
     border-radius: 0px;
     margin: 0px;
 }
-.drag-drop-component {
+.drag-drop-component.draggable {
     position: relative;
     cursor: move;
     display: inline-flex;
@@ -62,33 +62,6 @@ style.dragdrop ==
     border-radius: 0px;
     margin: 0px;
 
-    &.dnd-drag {
-      opacity: .6;
-    }
-
-    &.draggable {
-      background-color: AntiqueWhite;
-    }
-
-    &.droppable {
-        cursor: pointer;
-        border: 0px solid black;
-        &:hover,
-        &.dnd-over
-        {
-            border: 0px solid black;
-        }
-    }
-
-    &.disabled {
-        border: 1px dashed;
-        pointer-events: none;
-        cursor: not-allowed;
-    }
-
-    nge-markdown {
-      pointer-events: none;
-    }
 }
 
 .btn-clear {
