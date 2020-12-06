@@ -10,7 +10,7 @@ Les tags sont séparés par |
 
 Liste des tags : 
 
-input | split | substring | algo | stringRepeat | ForIn | stringIndex | find | immutable | ForIn | stringConcat | mutable | tuple | file | listoflist | range
+input | split | substring | algo | stringRepeat | ForIn | stringIndex | find | immutable | ForIn | stringConcat | mutable | tuple | file | listoflist | range | extend
 
 En charge : **Wenjie Fang**
 
