@@ -117,6 +117,15 @@ tag = file | ForIn | substring
 
 - Exercice simple qui simule la fonctionalité de la commande grep en linux
 
+# Ex11 : Progression arithmétique, mais sans boucle
+
+@ progression-arithmetique-2021.pl
+
+tag = range
+
+**Commentaires**
+
+- Exercice pour l'utilisation de range. La seule difficulté est le cas où la raison est 0.
 
 
 
@@ -146,4 +155,5 @@ tag = file | listoflist | split | ForIn
 
 - Exercice pour lire une matrice dans un fichier
 - Bug sur PL, 
+
 
