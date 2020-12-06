@@ -21,7 +21,7 @@ et en mettant les éléments en trop dans un dernier segment séparé. Si ``segl
 Si ``lst`` est vide, comme il n'y a pas de segment possible, la fonction doit aussi retourner une liste vide.
 ==
 
-tag=listoflist|ForIn
+tag=listoflist|ForIn|algo
 
 samplesol==
 def decoupe(l, sl):
