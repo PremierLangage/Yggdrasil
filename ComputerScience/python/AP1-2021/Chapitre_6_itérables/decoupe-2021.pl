@@ -57,6 +57,8 @@ sl = randint(1, 8)
 src = list(range(n))
 res = produce(n, sl)
 pltest2 = f">>> decoupe({src}, {sl})\n{res}\n"
+
+after = before
 ==
 
 pltest0==
