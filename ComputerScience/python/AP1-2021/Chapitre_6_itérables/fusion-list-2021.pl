@@ -7,7 +7,7 @@ author=Wenjie Fang
 title=Fusion d'une liste de listes
 
 text==
-On manipule les listes de liste, et on en a marre !
+On manipule les listes de listes, et on en a marre !
 
 Ecrire une fonction ``fusion(lst)`` qui prend en paramètre une liste de listes, puis retourner une nouvelle liste qui est une concaténation successive de chaque élément de ``lst``. On voit alors que la valeur retournée sera une liste.
 
