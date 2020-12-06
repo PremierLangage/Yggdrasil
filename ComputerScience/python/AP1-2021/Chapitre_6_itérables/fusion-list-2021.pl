@@ -4,7 +4,7 @@ extends=/ComputerScience/python/template/pltest.pl
 builder=/builder/before.py
 
 author=Wenjie Fang
-title=Fusion d'une liste de liste
+title=Fusion d'une liste de listes
 
 text==
 On manipule les listes de liste, et on en a marre !
