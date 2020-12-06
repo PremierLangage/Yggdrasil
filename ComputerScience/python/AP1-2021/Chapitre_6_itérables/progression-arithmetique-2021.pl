@@ -13,7 +13,7 @@ Si ``l <= 0``, alors la fontion retourne une liste vide. La raison ``r`` pourrai
 
 Par exemple, l'appel ``progression(1, 2, 4)`` doit retourner la liste ``[1, 3, 5, 7]``, et l'appel ``progression(1, 2, -4)`` doit retourner ``[]``.
 
-Cependant, **les boucles sont interdites** dans cette exercice. Vous pouvez utiliser ``range``. Il faut faire attention au cas où ``r`` est négatif ou ``r = 0``.
+Cependant, **les boucles sont interdites** dans cette exercice. Vous pouvez utiliser ``range``. Il faut faire attention au cas où ``r = 0``.
 ==
 
 taboo=for|while
@@ -24,10 +24,8 @@ samplesol==
 def progression(p, r, l):
     if r == 0:
         return [p] * l
-    elif r > 0:
-        return list(range(p, p + r*l + 1, r))
     else:
-        return list(range(p, p + r*l - 1, r))
+        return list(range(p, p + r * l, r))
 ==
 
 before==
