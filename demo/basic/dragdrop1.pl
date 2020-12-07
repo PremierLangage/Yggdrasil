@@ -1,7 +1,7 @@
 extends = /model/basic/dragdrop.pl
 
 title ==
-Exemple 1
+Chromosomes
 ==
 
 
