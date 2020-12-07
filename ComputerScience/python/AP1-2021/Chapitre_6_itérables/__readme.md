@@ -163,7 +163,7 @@ tag = file | ForIn | stringIndex
 - Exercice normal pour compter les trois ponctuation pour la fin d'une phrase.
 - Il suffit de combiner "Compter les letters e" avec la lecture de fichier.
 
-
+# Ex15 : 
 
 
 
