@@ -45,10 +45,10 @@ import psutil
 
 pltest0==
 >>> tail("sample1.txt")
+<BLANKLINE>
 Le texte ci-dessus reprend, en l'adaptant, la Charte proclamée le 7 décembre
 2000 et la remplacera à compter du jour de l'entrée en vigueur du traité
 de Lisbonne.
-<BLANKLINE>
 <BLANKLINE>
 ==
 
