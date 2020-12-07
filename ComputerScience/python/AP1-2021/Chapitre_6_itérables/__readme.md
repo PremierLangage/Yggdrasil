@@ -152,8 +152,11 @@ tag = listoflist | ForIn | algo
 - Difficulté en gestion de quand un segment est complet, et aussi sur le traitement du dernier segment.
 - Les pltest aléatoires ne marchent pas, et il faut débougger.
 
+# Ex14 : Compter les phrases
 
+@ compter-phrase-2021.pl
 
+tag = 
 
 
 
@@ -178,5 +181,6 @@ tag = file | listoflist | split | ForIn
 
 - Exercice pour lire une matrice dans un fichier
 - Bug sur PL, 
+
 
 
