@@ -197,9 +197,16 @@ tag = file | listoflist | split | ForIn
 **Commentaires**
 
 - Exercice pour lire une matrice dans un fichier
-- Bug sur PL, 
+- Bug sur PL, see https://github.com/PremierLangage/premierlangage/issues/434
 
+# ExB : Lire les dernières lignes
 
+@ ~tail-2021.pl
 
+tag = file | ForIn | algo
 
+**Commentaires**
+
+- Exercice pour simuler la commande tail de linux.
+- Bug sur PL, see https://github.com/PremierLangage/premierlangage/issues/434
 
