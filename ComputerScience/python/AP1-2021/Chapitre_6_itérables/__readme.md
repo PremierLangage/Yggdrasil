@@ -123,9 +123,28 @@ tag = range
 - Exercice pour l'utilisation de range. La seule difficulté est le cas où la raison est 0.
 - Taboo n'est plus valide.
 
+# Ex6 : Remplacer les k par g
 
+@ remplace-k-par-g-2021.pl
 
+tag = immutable | ForIn | stringConcat
 
+**Commentaires**
+
+- Exercice pour parcourir et remplacer les caractères dans une chaîne.
+- Notion d'objet non mutable, sinon une solution simple est de faire un parcours et changer les lettres directement.
+
+# Ex15 : Renverser une chaîne
+
+@ renverser-chaine-2021.pl
+
+tag = string | stringIndex
+
+**Commentaires**
+
+- Exercice simple pour renverser une chaîne de caractères.
+- Très facile si on sait comment faire le splice correctement, moyennement facile si on ne sait pas.
+- Les pltest aléatoires ne marchent pas, et il faut débougger.
 
 # Ex4 : Trouver tous les occurrences
 
@@ -147,19 +166,6 @@ tag = substring
 
 - Exercice un peu astucieux pour faire la rotation
 
-# Ex6 : Remplacer les k par g
-
-@ remplace-k-par-g-2021.pl
-
-tag = immutable | ForIn | stringConcat
-
-**Commentaires**
-
-- Exercice pour parcourir et remplacer les caractères dans une chaîne.
-- Notion d'objet non mutable, sinon une solution simple est de faire un parcours et changer les lettres directement.
-
-
-
 # Ex8 : Compter les lignes
 
 @ wcl-2021.pl
@@ -174,17 +180,7 @@ tag = file | ForIn
 
 
 
-# Ex15 : Renverser une chaîne
 
-@ renverser-chaine-2021.pl
-
-tag = string | stringIndex
-
-**Commentaires**
-
-- Exercice simple pour renverser une chaîne de caractères.
-- Très facile si on sait comment faire le splice correctement, moyennement facile si on ne sait pas.
-- Les pltest aléatoires ne marchent pas, et il faut débougger.
 
 
 
@@ -202,6 +198,7 @@ tag = file | listoflist | split | ForIn
 
 - Exercice pour lire une matrice dans un fichier
 - Bug sur PL, 
+
 
 
 
