@@ -13,6 +13,8 @@ diploïdes
 haploïdes
 ==
 
+shuffle % true
+
 text ==
 Compléter le texte suivant avec les étiquettes.
 ==
