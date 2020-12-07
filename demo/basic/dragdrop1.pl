@@ -4,7 +4,6 @@ title ==
 Chromosomes
 ==
 
-
 dropsolutions ==
 homologues
 hétérologues
@@ -14,6 +13,9 @@ diploïdes
 haploïdes
 ==
 
+text ==
+Compléter le texte suivant avec les étiquettes.
+==
 
 form ==
 On trouve dans une cellule somatique 23 paires de chromosomes: 22 paires de chromosomes {{ drops[0]|component }},  et  une  paire  de  chromosomes  {{ drops[1]|component }}  (les  chromosomes sexuels  X  et  Y). 
