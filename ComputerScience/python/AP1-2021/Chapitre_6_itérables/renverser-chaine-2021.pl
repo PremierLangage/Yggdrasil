@@ -42,6 +42,19 @@ def buildstr():
 s = buildstr()
 res = s[::-1]
 pltest1 = f">>> renverser('{s}')\n'{res}'"
+
+s = buildstr()
+res = s[::-1]
+pltest2 = f">>> renverser('{s}')\n'{res}'"
+
+s = buildstr()
+res = s[::-1]
+pltest3 = f">>> renverser('{s}')\n'{res}'"
+
+s = buildstr()
+res = s[::-1]
+pltest4 = f">>> renverser('{s}')\n'{res}'"
+
 after = before
 ==
 
