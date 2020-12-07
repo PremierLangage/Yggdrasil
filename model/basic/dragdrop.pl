@@ -101,7 +101,6 @@ style.dragdrop ==
     border: 0px solid transparent;
     border-radius: 0px;
     margin: 0px;
-
 }
 
 .btn-clear {
