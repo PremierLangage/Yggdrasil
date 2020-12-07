@@ -7,13 +7,16 @@ Cette fiche PL est pour vous entraîner sur la manipulation des itérables : lis
 Pour ceux qui s'ennuient: il y a des exercices un peu plus difficiles à la fin.
 ==
 
+# String
 
+@ compter-e-2021.pl
+@
 
 # Fichiers
 
 @ head-2021.pl
 @ wcl-2021.pl
 @ compter-phrase-2021.pl
-@ 
+@ grep-2021.pl
 
 
