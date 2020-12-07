@@ -156,9 +156,12 @@ tag = listoflist | ForIn | algo
 
 @ compter-phrase-2021.pl
 
-tag = file | ForIn|stringIndex
+tag = file | ForIn | stringIndex
 
+**Commentaires**
 
+- Exercice normal pour compter les trois ponctuation pour la fin d'une phrase.
+- Il suffit de combiner "Compter les letters e" avec la lecture de fichier.
 
 
 
@@ -181,6 +184,7 @@ tag = file | listoflist | split | ForIn
 
 - Exercice pour lire une matrice dans un fichier
 - Bug sur PL, 
+
 
 
 
