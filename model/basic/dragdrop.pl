@@ -9,10 +9,10 @@ from customdragdrop import CustomDragDrop
 drops = []
 labels = []
 
-if isinstance(solutions, str):
-    lstsolutions = solutions.splitlines()
+if isinstance(dropsolutions, str):
+    lstdropsolutions = dropsolutions.splitlines()
 else:
-    lstsolutions = solutions
+    lstdropsolutions = dropsolutions
 
 if 'labelcontents' in globals():
     if isinstance(labelcontents, str):
@@ -20,13 +20,13 @@ if 'labelcontents' in globals():
     else:
         list_labelcontents = labelcontents
 else:
-    list_labelcontents = list(set(lstsolutions))
+    list_labelcontents = list(set(lstdropsolutions))
 
 for content in list_labelcontents:
     labels.append(CustomDragDrop.Label(content=content))
 
-nbdrops = len(lstsolutions)
-for _ in lstsolutions:
+nbdrops = len(lstdropsolutions)
+for _ in lstdropsolutions:
     drops.append(CustomDragDrop.Drop())
 ==
 
@@ -54,7 +54,7 @@ num_right = 0
 num_wrong = 0
 
 for i in range(n):
-    if drops[i].content == lstsolutions[i]:
+    if drops[i].content == lstdropsolutions[i]:
         num_right += 1
         drops[i].css += "success-state"
     else:
@@ -66,6 +66,7 @@ if num_wrong > 0 :
 else:
     score = 100
 ==
+
 
 
 
