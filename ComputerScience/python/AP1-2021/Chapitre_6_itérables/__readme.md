@@ -121,7 +121,7 @@ tag = range
 **Commentaires**
 
 - Exercice pour l'utilisation de range. La seule difficulté est le cas où la raison est 0.
-
+- Taboo n'est plus valide.
 
 
 
