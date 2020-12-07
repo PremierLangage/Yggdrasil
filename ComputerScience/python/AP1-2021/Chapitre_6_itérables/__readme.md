@@ -156,7 +156,7 @@ tag = listoflist | ForIn | algo
 
 @ compter-phrase-2021.pl
 
-tag = 
+tag = file | ForIn|stringIndex
 
 
 
