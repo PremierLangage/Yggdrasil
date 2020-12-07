@@ -69,4 +69,43 @@ else:
 
 
 
+style.dragdrop ==
+.drag-drop-component.droppable {
+    position: relative;
+    cursor: move;
+    display: inline-flex;
+    padding: 8px;
+    box-sizing: border-box;
+    min-width: 3em;
+    min-height: 2em;
+    vertical-align: middle;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid transparent;
+    border-radius: 0px;
+    margin: 0px;
+}
+.drag-drop-component.draggable {
+    position: relative;
+    cursor: move;
+    display: inline-flex;
+    padding: 8px;
+    box-sizing: border-box;
+    min-width: 3em;
+    min-height: 2em;
+    vertical-align: middle;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid transparent;
+    border-radius: 0px;
+    margin: 0px;
 
+}
+
+.btn-clear {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+==
