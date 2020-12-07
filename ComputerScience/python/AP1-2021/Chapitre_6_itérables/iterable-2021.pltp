@@ -10,7 +10,9 @@ Pour ceux qui s'ennuient: il y a des exercices un peu plus difficiles à la fin.
 # String
 
 @ compter-e-2021.pl
-@
+@ lireuneliste-2021.pl
+@ renverser-chaine-2021.pl
+@ remplace-k-par-g-2021.pl
 
 # Fichiers
 
@@ -19,4 +21,20 @@ Pour ceux qui s'ennuient: il y a des exercices un peu plus difficiles à la fin.
 @ compter-phrase-2021.pl
 @ grep-2021.pl
 
+# Listes
+
+@ fusion-list-2021.pl
+@ decoupe-2021.pl
+
+# Range
+
+@ progression-arithmetique-2021.pl
+
+# Difficile
+
+@ _difficile.pl
+@ str-rotate-2021.pl
+@ corriger-tuple-2021.pl
+@ str-occu-2021.pl
+@ head-repeat-2021.pl
 
