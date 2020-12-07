@@ -14,6 +14,8 @@ dans ``phrase``. La liste retournée doit être en ordre croissant. Si ``mot`` e
 
 Par exemple, avec ``phrase = 'Le chat et le chien mangent le cadeau.'`` et ``mot = 'le'``, l'appel ``occurrences(phrase, mot)``
 doit retourner la liste ``[11, 28]``. Même si ``phrase`` commence par le mot "Le", ce n'est pas de la bonne casse.
+
+**Hint** : Vous pouvez utiliser la méthode ``find`` des chaînes de caractères.
 ==
 
 tag=find|algo
@@ -49,4 +51,5 @@ pltest0==
 >>> occurrences('ananananana', 'anana') # Répétition
 [0, 2, 4, 6]
 ==
+
 
