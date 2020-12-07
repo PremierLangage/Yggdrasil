@@ -163,10 +163,17 @@ tag = file | ForIn | stringIndex
 - Exercice normal pour compter les trois ponctuation pour la fin d'une phrase.
 - Il suffit de combiner "Compter les letters e" avec la lecture de fichier.
 
-# Ex15 : 
+# Ex15 : Renverser une chaîne
 
+@ renverser-chaine-2021.pl
 
+tag = string | stringIndex
 
+**Commentaires**
+
+- Exercice simple pour renverser une chaîne de caractères.
+- Très facile si on sait comment faire le splice correctement, moyennement facile si on ne sait pas.
+- Les pltest aléatoires ne marchent pas, et il faut débougger.
 
 
 
