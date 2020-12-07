@@ -7,6 +7,10 @@ from customdragdrop import CustomDragDrop
 drops = []
 labels = []
 
+import re
+
+re.sub(r"(\w+)", r"{\1}", s)
+
 if isinstance(solutions, str):
     lstsolutions = solutions.splitlines()
 else:
@@ -29,9 +33,13 @@ for _ in lstsolutions:
 ==
 
 
-text =
+text ==
 
-scheme =$ /Biology/media/550px-Cranial_bones_numbers.svg.png
+==
+
+filledtext ==
+Voici des {fruits}, des {fleurs}
+==
 
 form ==
 <img src="{{scheme}}" style="max-width: 300px; vertical-align:top; display: inline-block"> 
