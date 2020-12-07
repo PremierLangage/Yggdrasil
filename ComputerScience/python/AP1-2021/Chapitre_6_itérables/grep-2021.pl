@@ -12,7 +12,7 @@ Ecrire une fonction ``grep(filename, pattern)`` qui cherche le motif ``pattern``
 Par exemple, supposons que le fichier ``test.txt`` contient
 
     Aujourd'hui on apprend un peu plus de Python.
-    Hier on ne savait pas codé,
+    Hier on ne savait pas coder,
     Demain probablement non plus.
 
 Alors l'appel ``grep('test.txt', 'plus')`` doit imprimer
@@ -82,3 +82,4 @@ Put dark chocolate into the mixing bowl.
 Liquefy the milk chocolate.
 Put milk chocolate into the mixing bowl.
 ==
+
