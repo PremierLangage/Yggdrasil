@@ -14,7 +14,7 @@ input | split | substring | algo | stringRepeat | ForIn | stringIndex | find | i
 
 En charge : **Wenjie Fang**
 
-# Ex3 : Compter les lettres "e"
+# Ex1 : Compter les lettres "e"
 
 @ compter-e-2021.pl
 
@@ -25,7 +25,7 @@ tag = ForIn | stringIndex
 - Exercice facile pour compter les lettres "e"
 - Tags ajoutés
 
-# Ex14 : Compter les phrases
+# Ex2 : Compter les phrases
 
 @ compter-phrase-2021.pl
 
@@ -36,7 +36,7 @@ tag = file | ForIn | stringIndex
 - Exercice normal pour compter les trois ponctuation pour la fin d'une phrase.
 - Il suffit de combiner "Compter les letters e" avec la lecture de fichier.
 
-# Ex7 : Corriger les tuples saisis
+# Ex3 : Corriger les tuples saisis
 
 @ corriger-tuple-2021.pl
 
@@ -48,7 +48,7 @@ tag = mutable | immutable | ForIn | tuple
 - La difficulté consiste de la différence entre tuple et liste.
 - En tout cas assez compliqué conceptuellement et aussi sur le code.
 
-# Ex13 : Découper une liste
+# Ex4 : Découper une liste
 
 @ decoupe-2021.pl
 
@@ -60,7 +60,7 @@ tag = listoflist | ForIn | algo
 - Difficulté en gestion de quand un segment est complet, et aussi sur le traitement du dernier segment.
 - Les pltest aléatoires ne marchent pas, et il faut débougger.
 
-# Ex12 : Fusion d'une liste de liste
+# Ex5 : Fusion d'une liste de liste
 
 @ fusion-list-2021.pl
 
@@ -71,7 +71,7 @@ tag = listoflist | extend
 - Exercice simple pour fusionner les éléments dans une liste de listes.
 - Les pltest aléatoires ne marchent pas, et il faut débougger.
 
-# Ex10 : Recherche de motif dans un fichier
+# Ex6 : Recherche de motif dans un fichier
 
 @ grep-2021.pl
 
@@ -81,7 +81,7 @@ tag = file | ForIn | substring
 
 - Exercice simple qui simule la fonctionalité de la commande grep en linux
 
-# Ex9 : Lire les premiers lignes
+# Ex7 : Lire les premiers lignes
 
 @ head-2021.pl
 
@@ -91,7 +91,7 @@ tag = file | ForIn | break
 
 - Exercice simple qui simule la fonctionalité de la commande head en linux, mais seulement 5 lignes.
 
-# Ex2 : Répétition au début (trouver le préfixe qui se répète le plus)
+# Ex8 : Répétition au début (trouver le préfixe qui se répète le plus)
 
 @ head-repeat-2021.pl
 
@@ -101,7 +101,7 @@ tag = substring | algo | stringRepeat
 
 - Exercice difficile avec des cas limits
 
-# Ex1 : Lire une liste (parser une liste séparée pas les espaces)
+# Ex9 : Lire une liste (parser une liste séparée pas les espaces)
 
 @ lireuneliste-2021.pl
 
@@ -112,7 +112,7 @@ tag = input | split
 - Bugfix : il roule maintenant sur plsoluce, pas inputgenerator
 - Tags ajoutés
 
-# Ex11 : Progression arithmétique, mais sans boucle
+# Ex10 : Progression arithmétique, mais sans boucle
 
 @ progression-arithmetique-2021.pl
 
@@ -123,7 +123,7 @@ tag = range
 - Exercice pour l'utilisation de range. La seule difficulté est le cas où la raison est 0.
 - Taboo n'est plus valide.
 
-# Ex6 : Remplacer les k par g
+# Ex11 : Remplacer les k par g
 
 @ remplace-k-par-g-2021.pl
 
@@ -134,7 +134,7 @@ tag = immutable | ForIn | stringConcat
 - Exercice pour parcourir et remplacer les caractères dans une chaîne.
 - Notion d'objet non mutable, sinon une solution simple est de faire un parcours et changer les lettres directement.
 
-# Ex15 : Renverser une chaîne
+# Ex12 : Renverser une chaîne
 
 @ renverser-chaine-2021.pl
 
@@ -146,7 +146,7 @@ tag = string | stringIndex
 - Très facile si on sait comment faire le splice correctement, moyennement facile si on ne sait pas.
 - Les pltest aléatoires ne marchent pas, et il faut débougger.
 
-# Ex4 : Trouver tous les occurrences
+# Ex13 : Trouver tous les occurrences
 
 @ str-occu-2021.pl
 
@@ -156,7 +156,7 @@ tag = find | algo
 
 - Exercice moyenne-difficile pour rechercher tous les occurrences d'une sous-chaîne
 
-# Ex5 : Rotation de chaîne de caractères
+# Ex14 : Rotation de chaîne de caractères
 
 @ str-rotate-2021.pl
 
@@ -166,7 +166,7 @@ tag = substring
 
 - Exercice un peu astucieux pour faire la rotation
 
-# Ex8 : Compter les lignes
+# Ex15 : Compter les lignes
 
 @ wcl-2021.pl
 
