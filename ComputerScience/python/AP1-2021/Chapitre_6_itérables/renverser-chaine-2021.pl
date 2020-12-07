@@ -34,6 +34,7 @@ n = len(l)
 def buildstr():
     sl = randint(10, 30)
     res = ''
+    res.modif()
     for i in range(sl):
         res += l[randint(0, n-1)]
     return res
