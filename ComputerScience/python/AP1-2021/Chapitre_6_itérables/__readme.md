@@ -14,6 +14,95 @@ input | split | substring | algo | stringRepeat | ForIn | stringIndex | find | i
 
 En charge : **Wenjie Fang**
 
+# Ex3 : Compter les lettres "e"
+
+@ compter-e-2021.pl
+
+tag = ForIn | stringIndex
+
+**Commentaires**
+
+- Exercice facile pour compter les lettres "e"
+- Tags ajoutés
+
+# Ex14 : Compter les phrases
+
+@ compter-phrase-2021.pl
+
+tag = file | ForIn | stringIndex
+
+**Commentaires**
+
+- Exercice normal pour compter les trois ponctuation pour la fin d'une phrase.
+- Il suffit de combiner "Compter les letters e" avec la lecture de fichier.
+
+# Ex7 : Corriger les tuples saisis
+
+@ corriger-tuple-2021.pl
+
+tag = mutable | immutable | ForIn | tuple
+
+**Commentaires**
+
+- Exercice compliqué pour remplacer des occurrences selon un dictionnaire
+- La difficulté consiste de la différence entre tuple et liste.
+- En tout cas assez compliqué conceptuellement et aussi sur le code.
+
+# Ex13 : Découper une liste
+
+@ decoupe-2021.pl
+
+tag = listoflist | ForIn | algo
+
+**Commentaires**
+
+- Exercice moyennement difficile pour découper une liste en des segments d'une certaine longueur.
+- Difficulté en gestion de quand un segment est complet, et aussi sur le traitement du dernier segment.
+- Les pltest aléatoires ne marchent pas, et il faut débougger.
+
+# Ex12 : Fusion d'une liste de liste
+
+@ fusion-list-2021.pl
+
+tag = listoflist | extend
+
+**Commentaires**
+
+- Exercice simple pour fusionner les éléments dans une liste de listes.
+- Les pltest aléatoires ne marchent pas, et il faut débougger.
+
+# Ex10 : Recherche de motif dans un fichier
+
+@ grep-2021.pl
+
+tag = file | ForIn | substring
+
+**Commentaires**
+
+- Exercice simple qui simule la fonctionalité de la commande grep en linux
+
+# Ex9 : Lire les premiers lignes
+
+@ head-2021.pl
+
+tag = file | ForIn | break
+
+**Commentaires**
+
+- Exercice simple qui simule la fonctionalité de la commande head en linux, mais seulement 5 lignes.
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Ex1 : Lire une liste (parser une liste séparée pas les espaces)
 
 @ lireuneliste-2021.pl
@@ -34,17 +123,6 @@ tag = substring | algo | stringRepeat
 **Commentaires**
 
 - Exercice difficile avec des cas limits
-
-# Ex3 : Compter les lettres "e"
-
-@ compter-e-2021.pl
-
-tag = ForIn | stringIndex
-
-**Commentaires**
-
-- Exercice facile pour compter les lettres "e"
-- Tags ajoutés
 
 # Ex4 : Trouver tous les occurrences
 
@@ -77,17 +155,7 @@ tag = immutable | ForIn | stringConcat
 - Exercice pour parcourir et remplacer les caractères dans une chaîne.
 - Notion d'objet non mutable, sinon une solution simple est de faire un parcours et changer les lettres directement.
 
-# Ex7 : Corriger les tuples saisis
 
-@ corriger-tuple-2021.pl
-
-tag = mutable | immutable | ForIn | tuple
-
-**Commentaires**
-
-- Exercice compliqué pour remplacer des occurrences selon un dictionnaire
-- La difficulté consiste de la différence entre tuple et liste.
-- En tout cas assez compliqué conceptuellement et aussi sur le code.
 
 # Ex8 : Compter les lignes
 
@@ -99,25 +167,7 @@ tag = file | ForIn
 
 - Exercice simple pour entraîner la lecture de fichier
 
-# Ex9 : Lire les premiers lignes
 
-@ head-2021.pl
-
-tag = file | ForIn | break
-
-**Commentaires**
-
-- Exercice simple qui simule la fonctionalité de la commande head en linux, mais seulement 5 lignes.
-
-# Ex10 : Recherche de motif dans un fichier
-
-@ grep-2021.pl
-
-tag = file | ForIn | substring
-
-**Commentaires**
-
-- Exercice simple qui simule la fonctionalité de la commande grep en linux
 
 # Ex11 : Progression arithmétique, mais sans boucle
 
@@ -129,39 +179,8 @@ tag = range
 
 - Exercice pour l'utilisation de range. La seule difficulté est le cas où la raison est 0.
 
-# Ex12 : Fusion d'une liste de liste
 
-@ fusion-list-2021.pl
 
-tag = listoflist | extend
-
-**Commentaires**
-
-- Exercice simple pour fusionner les éléments dans une liste de listes.
-- Les pltest aléatoires ne marchent pas, et il faut débougger.
-
-# Ex13 : Découper une liste
-
-@ decoupe-2021.pl
-
-tag = listoflist | ForIn | algo
-
-**Commentaires**
-
-- Exercice moyennement difficile pour découper une liste en des segments d'une certaine longueur.
-- Difficulté en gestion de quand un segment est complet, et aussi sur le traitement du dernier segment.
-- Les pltest aléatoires ne marchent pas, et il faut débougger.
-
-# Ex14 : Compter les phrases
-
-@ compter-phrase-2021.pl
-
-tag = file | ForIn | stringIndex
-
-**Commentaires**
-
-- Exercice normal pour compter les trois ponctuation pour la fin d'une phrase.
-- Il suffit de combiner "Compter les letters e" avec la lecture de fichier.
 
 # Ex15 : Renverser une chaîne
 
