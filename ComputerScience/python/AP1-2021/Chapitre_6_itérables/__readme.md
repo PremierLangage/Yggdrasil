@@ -91,17 +91,15 @@ tag = file | ForIn | break
 
 - Exercice simple qui simule la fonctionalité de la commande head en linux, mais seulement 5 lignes.
 
+# Ex2 : Répétition au début (trouver le préfixe qui se répète le plus)
 
+@ head-repeat-2021.pl
 
+tag = substring | algo | stringRepeat
 
+**Commentaires**
 
-
-
-
-
-
-
-
+- Exercice difficile avec des cas limits
 
 # Ex1 : Lire une liste (parser une liste séparée pas les espaces)
 
@@ -114,15 +112,20 @@ tag = input | split
 - Bugfix : il roule maintenant sur plsoluce, pas inputgenerator
 - Tags ajoutés
 
-# Ex2 : Répétition au début (trouver le préfixe qui se répète le plus)
+# Ex11 : Progression arithmétique, mais sans boucle
 
-@ head-repeat-2021.pl
+@ progression-arithmetique-2021.pl
 
-tag = substring | algo | stringRepeat
+tag = range
 
 **Commentaires**
 
-- Exercice difficile avec des cas limits
+- Exercice pour l'utilisation de range. La seule difficulté est le cas où la raison est 0.
+
+
+
+
+
 
 # Ex4 : Trouver tous les occurrences
 
@@ -167,17 +170,6 @@ tag = file | ForIn
 
 - Exercice simple pour entraîner la lecture de fichier
 
-
-
-# Ex11 : Progression arithmétique, mais sans boucle
-
-@ progression-arithmetique-2021.pl
-
-tag = range
-
-**Commentaires**
-
-- Exercice pour l'utilisation de range. La seule difficulté est le cas où la raison est 0.
 
 
 
