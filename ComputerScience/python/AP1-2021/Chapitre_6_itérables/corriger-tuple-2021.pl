@@ -1,7 +1,6 @@
 # Author: Wenjie Fang
 
 extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
-builder=/builder/before.py
 
 author=Wenjie Fang
 title=Corriger les tuples saisis
@@ -116,5 +115,6 @@ pltest3==
 >>> info
 [('Linux', 32, '2B110', True), ('Windows', 16, '1B170', False), ('Linux', 16, '1B210')]
 ==
+
 
 
