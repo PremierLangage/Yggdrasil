@@ -18,55 +18,11 @@ author=Nicolas Borie
 title=Mini Brain : niveau intermédiaire
 
 introduction==
-Le Mini Brain est un simulateur virtuel de petit CPU possédant une Unité
-Arithmétique et Logique pour nombres entiers sur 16 bits. Le procésseur 
-possède 1 accumulateur et 5 registres numéroté de #0 à #4. Par commodité,
-l'accumulateur a est aussi le registre de numéro #-1. 
+Il est très vivement conseillé d'avoir fini les premiers exercices 
+d'introduction avec Mini Brain avant de se lancer dans cette seconde
+vague d'exercices.
 
-Lorsque l'on allume le Mini Brain, par dáfault, les registres et 
-l'accumulator contiennent tous la valeur zéro. Un programme est alors 
-chargé dans la mémoire interne de Mini Brain. La première instruction à 
-être exécutée (et donc la valeur originelle du compteur ordinal ou 
-pointeur d'instruction) est l'instruction 1. Chaque ligne contient 
-une instruction ou bien une valeur.
 
-Voici un programme Mini Brain sur 13 lignes.
-
-<pre>
- 1: ld 12 a      // charger 12 dans l'accumulateur
- 2: ld $12 #4    // charger la valeur en case mémoire 12 dans le registre 4
- 3: mv #4 #0     // copier le registre 4 dans le registre 0
- 4: st #1 $21    // sauver le registre 1 en case mémoire 21
- 5: inc a        // incrémenter l'accumulateur
- 6: inc #4       // incrémenter le registre 4
- 7: inc #$13     // incrémenter le resgistre dont le numéro est en case mémoire 13
- 8: dec #3       // décrémenter le registre 3
- 9: dec #$13     // décrémenter le resgistre dont le numéro est en case mémoire 13
-10: inc #3       // incrémenter le registre 3
-11: 
-12: 12345
-13: 2
-</pre>
-
-L'exécution de ce programme dans le Mini Brain produit la verbose 
-suivante.
-
-<pre>
-|     #0     #1     #2     #3     #4 |  #-1=a | f | -->  PC : next instruction
-|      0      0      0      0      0 |      0 | 0 | -->   1 : ld 12 a
-|      0      0      0      0      0 |     12 | 0 | -->   2 : ld $12 #4
-|      0      0      0      0  12345 |     12 | 0 | -->   3 : mv #4 #0
-|  12345      0      0      0  12345 |     12 | 0 | -->   4 : st #1 $21
-|  12345      0      0      0  12345 |     12 | 0 | -->   5 : inc a
-|  12345      0      0      0  12345 |     13 | 0 | -->   6 : inc #4
-|  12345      0      0      0  12346 |     13 | 0 | -->   7 : inc #$13
-|  12346      0      0      0  12346 |     13 | 0 | -->   8 : dec #3
-|  12346      0      0     -1  12346 |     13 | 0 | -->   9 : dec #$13
-|  12345      0      0     -1  12346 |     13 | 0 | -->  10 : inc #3
-|  12345      0      0      0  12346 |     13 | 1 | -->  11 : exit a
-Process exited normally with code 13
-0
-</pre>
 
 Voici une documentation ultra rapide des primitives de l'unité de contrôle 
 du Mini Brain.
