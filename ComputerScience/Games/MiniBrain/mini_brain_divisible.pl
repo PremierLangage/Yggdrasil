@@ -36,9 +36,11 @@ def is_div(b, s):
 
 minibrain_action_before="[ "
 minibrain_check_after="[ "
-for i in range(5):
+for i in range(8):
     val1 = randint(-50, 100)
     val2 = randint(-50, 100)
+    if randint(0,1) == 1:
+        val1 *= val2
     minibrain_action_before+="['test aléatoire "+str(i+1)+"', 'st "+str(val1)+" $"+str(a)+"\\nst "+str(val2)+" $"+str(b)+"'], "
     minibrain_check_after+="[(c, "+str(is_div(val1, val2))+")], "
 minibrain_check_after+="]"
