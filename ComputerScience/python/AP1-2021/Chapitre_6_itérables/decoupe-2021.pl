@@ -1,7 +1,7 @@
 # Author: Wenjie Fang
 
 extends=/ComputerScience/python/template/pltest.pl
-builder=/builder/before.py
+@ /builder/before.py [builder.py]
 
 author=Wenjie Fang
 title=Découper une liste
@@ -82,4 +82,5 @@ pltest1==
 >>> decoupe([], 3) # Bizarre 4
 []
 ==
+
 
