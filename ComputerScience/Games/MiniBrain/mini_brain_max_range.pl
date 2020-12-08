@@ -58,4 +58,20 @@ editor.code ==
 ==
 
 
+solution==
+PAS DE SOLUTION GENERIQUE SIMPLE
 
+VOICI UNE SOLUTION POUR a = 25, b = 27 et c = 29
+
+ld 25 #0     // On charge l'indice du max courant au registre 0
+ld $26 a     // prochaine val à cmp
+cmp $#0      
+bfup 6       // Si le nouveau est plus petit, on skip la ligne qui suit
+ld 26 #0     // On écrase l'indice dumax courant avec le nouvel indice.
+ld $27 a        // prochaine val à cmp
+cmp $#0         
+bfup 10         // Si le nouveau est plus petit, on skip la ligne qui suit
+ld 27 #0        // On écrase l'indice dumax courant avec le nouvel indice.
+ld $#0 a
+st a $29
+==
