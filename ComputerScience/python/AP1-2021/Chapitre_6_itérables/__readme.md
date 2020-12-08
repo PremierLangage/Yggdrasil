@@ -58,7 +58,6 @@ tag = listoflist | ForIn | algo
 
 - Exercice moyennement difficile pour découper une liste en des segments d'une certaine longueur.
 - Difficulté en gestion de quand un segment est complet, et aussi sur le traitement du dernier segment.
-- Les pltest aléatoires ne marchent pas, et il faut débougger.
 
 # Ex5 : Fusion d'une liste de liste
 
@@ -209,4 +208,5 @@ tag = file | ForIn | algo
 
 - Exercice pour simuler la commande tail de linux.
 - Bug sur PL, see https://github.com/PremierLangage/premierlangage/issues/434
+
 
