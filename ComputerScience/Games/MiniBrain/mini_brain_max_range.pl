@@ -27,7 +27,7 @@ text += extra_doc
 from random import randint
 
 a = randint(20, 30)
-b = randint(a+5, a+10)
+b = randint(a+2, a+5)
 c = randint(b+1, b+5)
 minibrain_action_before="[ "
 minibrain_check_after="[ "
