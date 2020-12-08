@@ -53,4 +53,12 @@ editor.code ==
 ...
 ==
 
+solution==
+PAS DE SOLUTION GENERIQUE SIMPLE
 
+VOICI UNE SOLUTION POUR a = 9, b = 13 et c = 16
+
+ld $9 a
+add $13
+st a $16    // donc $16 = $9 + $13
+==
