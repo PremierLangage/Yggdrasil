@@ -37,7 +37,10 @@ rr = randint(-10, 10)
 ll = randint(-4, 10)
 res = [pp + rr * i for i in range(ll)]
 
-pltest3 = f"\n>>> progression({pp}, {rr}, {ll}) # Random\n{res}\n"
+pltest3 = f"""
+>>> progression({pp}, {rr}, {ll}) # Random
+{res}
+"""
 
 pp = randint(-10, 10)
 rr = randint(-10, 10)
