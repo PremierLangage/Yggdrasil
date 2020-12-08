@@ -25,7 +25,7 @@ text += extra_doc
 
 from random import randint
 
-a = randint(6, 11)
+a = randint(11, 16)
 b = randint(a+1, a+6)
 c = randint(b+1, b+6)
 
