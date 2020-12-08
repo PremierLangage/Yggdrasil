@@ -13,7 +13,8 @@ et il faut les corriger systèmatiquement. Les corrections sont aussi données e
 avec le premier élément l'erreur, et le second la correction.
 Par exemple, ``('Linus', 'Linux')`` veut dire que tous les saisies ``'Linux'`` sont incorrect, et il faut les corriger en ``'Linux'``.
 
-Ecrire une fonction ``corriger(info, correction)`` qui corrige la liste des tuples ``info`` selon les corrections données dans ``correction``. **La fonction ne retourne rien.** Après l'appel de ``corriger(info, correction)``, la liste ``info`` doit être corrigée. Les tuples dans ``info`` ne sont pas forcément de la même longueur.
+Ecrire une fonction ``corriger(info, correction)`` qui corrige la liste des tuples ``info`` selon les corrections données dans ``correction``.
+**La fonction ne retourne rien.** Après l'appel de ``corriger(info, correction)``, la liste ``info`` doit être corrigée. Les tuples dans ``info`` ne sont pas forcément de la même longueur.
 
 Par exemple, si
 
