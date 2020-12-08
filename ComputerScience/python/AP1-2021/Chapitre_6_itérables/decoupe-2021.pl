@@ -58,6 +58,30 @@ src = list(range(n))
 res = produce(n, sl)
 pltest2 = f">>> decoupe({src}, {sl})\n{res}\n"
 
+n = randint(4, 20)
+sl = randint(1, 8)
+src = list(range(n))
+res = produce(n, sl)
+pltest3 = f">>> decoupe({src}, {sl})\n{res}\n"
+
+n = randint(4, 20)
+sl = randint(1, 8)
+src = list(range(n))
+res = produce(n, sl)
+pltest4 = f">>> decoupe({src}, {sl})\n{res}\n"
+
+n = randint(4, 20)
+sl = randint(1, 8)
+src = list(range(n))
+res = produce(n, sl)
+pltest5 = f">>> decoupe({src}, {sl})\n{res}\n"
+
+n = randint(4, 20)
+sl = randint(1, 8)
+src = list(range(n))
+res = produce(n, sl)
+pltest6 = f">>> decoupe({src}, {sl})\n{res}\n"
+
 after = before
 ==
 
