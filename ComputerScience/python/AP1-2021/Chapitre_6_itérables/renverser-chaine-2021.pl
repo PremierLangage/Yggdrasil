@@ -1,7 +1,7 @@
 # Author: Wenjie Fang
 
 extends=/ComputerScience/python/template/pltest.pl
-builder=/builder/before.py
+@ /builder/before.py [builder.py]
 
 author=Wenjie Fang
 title=Renverser une chaîne
@@ -68,3 +68,4 @@ pltest0==
 >>> renverser('Copernic')
 'cinrepoC'
 ==
+
