@@ -17,7 +17,7 @@ Cependant, **les boucles sont interdites** dans cette exercice. Vous pouvez util
 Il faut faire attention au cas où ``r = 0``.
 ==
 
-taboo=for|while
+taboo=for
 
 tag=range
 
