@@ -18,7 +18,7 @@ extends=mini_brain_template.pl
 
 author=Nicolas Borie
 
-title=Somme d'une plage de valeurs avec Mini Brain
+title=Max d'une plage de valeurs avec Mini Brain
 
 
 before==#|python|
@@ -46,9 +46,9 @@ minibrain_action_before+="]"
 
 text==
 <p>
-Proposez un code Mini-Brain qui additionne les valeurs situées dans les cases 
-mémoires de l'indice {{ a }} à l'indice {{ b }} toutes deux incluses. Une 
-fois cette somme calculée, placez le résultat dans la case mémoire à 
+Proposez un code Mini-Brain qui recherche le maximum des valeurs situées 
+dans les cases mémoires de l'indice {{ a }} à l'indice {{ b }} toutes 
+deux incluses. Une fois ce maximum identifié, placez le dans la case mémoire à 
 l'adresse {{ c }}.
 </p>
 ==
@@ -56,8 +56,6 @@ l'adresse {{ c }}.
 editor.code ==
 ...
 ==
-
-
 
 
 
