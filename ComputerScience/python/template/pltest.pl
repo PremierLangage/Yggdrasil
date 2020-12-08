@@ -43,7 +43,7 @@ Si vous souhaitez faire des tests sur le code de l'élève la variable __student
 @ pltest_doc.py
 @ pltestgrader.py [grader.py]
 @ feedback2.py
-@ template.html
+@ /ComputerScience/python/template/anothertemplate.html [template.html]
 # 
 
 @ /utils/sandboxio.py
@@ -54,4 +54,5 @@ editor.fontsize=14
 form=@ /form/text_editor.html
 
 settings.allow_reroll=1
+
 
