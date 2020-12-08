@@ -49,8 +49,8 @@ text==
 <p>
 Faire un code Mini-Brain qui détermine si la valeur stockée en case mémoire 
 {{ a }} est disible par la valeur située en case mémoire {{ b }}. Si tel est 
-le cas, alors votre code devra placer la valeur **1** dans la case mémoire 
-{{ c }}; dans le cas contraire, c'est la valeur **0** qu'il faudra mettre
+le cas, alors votre code devra placer la valeur <b>1</b> dans la case mémoire 
+{{ c }}; dans le cas contraire, c'est la valeur <b>0</b> qu'il faudra mettre
 dans cette même case.
 </p>
 ==
