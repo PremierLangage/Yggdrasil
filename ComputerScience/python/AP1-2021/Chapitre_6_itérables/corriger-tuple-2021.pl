@@ -1,6 +1,7 @@
 # Author: Wenjie Fang
 
-extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
+extends=/ComputerScience/python/template/pltest.pl
+@ /builder/before.py [builder.py]
 
 author=Wenjie Fang
 title=Corriger les tuples saisis
