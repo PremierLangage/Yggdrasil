@@ -23,7 +23,7 @@ Par exemple, la matrice dans le fichier précédente doit être représentée co
 
 Ecrire une fonction ``lire_matrice(filename)`` qui prend en paramètre le nom ``filename`` du fichier à lire, qui lit le fichier
 et qui retourne la liste de listes représentant la **matrice d'entiers** dans le fichier.
-Vous pouvez utiliser la méthode ``split`` des chaînes de caractères.
+Vous pouvez utiliser la méthode ``split`` des chaînes de caractères. **Le fichier pourrait être vide**, correspondant à une matrice vide.
 
 **Attention**, une ligne lu depuis un fichier contient possiblement un caractère '\n' à la fin.
 ==
