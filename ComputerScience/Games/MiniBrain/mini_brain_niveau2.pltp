@@ -20,8 +20,9 @@ title=Mini Brain : niveau intermédiaire
 introduction==
 Il est très vivement conseillé d'avoir fini les premiers exercices 
 d'introduction avec Mini Brain avant de se lancer dans cette seconde
-vague d'exercices.
-
+vague d'exercices. Les exercices de cette feuille sont en effet de 
+niveau intermédiaire et suppose que vous maitrisiez toutes les
+fonctionnalités basiques du Mini Brain.
 
 
 Voici une documentation ultra rapide des primitives de l'unité de contrôle 
@@ -72,4 +73,5 @@ Cette documentation reste aussi accessible dans les exercices...
 @ /ComputerScience/Games/MiniBrain/mini_brain_factorial.pl
 
 @ /ComputerScience/Games/MiniBrain/mini_brain_fibo.pl
+
 
