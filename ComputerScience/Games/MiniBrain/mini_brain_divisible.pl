@@ -62,8 +62,14 @@ editor.code ==
 solution==
 PAS DE SOLUTION GENERIQUE SIMPLE
 
-VOICI UNE SOLUTION POUR a = 9, b = 13 et c = 16
+VOICI UNE SOLUTION POUR a = 13, b = 15 et c = 16
 
+ld $13 a
+div $15
+bfup 6
+st 0 $16
+
+st 1 $16
 
 ==
 
