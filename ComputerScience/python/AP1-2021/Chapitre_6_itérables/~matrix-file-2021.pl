@@ -35,8 +35,10 @@ def lire_matrice(fn):
     res = []
     with open(fn, 'r') as file:
         for s in file:
-            l = s.rstrip().split(" ")
-            res.append([int(e) for e in l])
+            s = s.rstrip()
+            if s != '':
+                l = s.split(" ")
+                res.append([int(e) for e in l])
     return res
 ==
 
