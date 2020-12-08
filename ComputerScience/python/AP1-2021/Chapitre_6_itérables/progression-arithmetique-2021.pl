@@ -62,6 +62,9 @@ ll = randint(-4, 10)
 res = [pp + rr * i for i in range(ll)]
 
 pltest6 = f">>> progression({pp}, {rr}, {ll}) # Random\n{res}\n"
+
+
+text+= pltest6 
 ==
 
 pltest0==
