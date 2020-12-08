@@ -27,7 +27,7 @@ text += extra_doc
 from random import randint
 
 a = randint(20, 30)
-b = randint(a+2, a+5)
+b = randint(a+2, a+3)
 c = randint(b+1, b+5)
 minibrain_action_before="[ "
 minibrain_check_after="[ "
@@ -75,3 +75,4 @@ ld 27 #0        // On écrase l'indice dumax courant avec le nouvel indice.
 ld $#0 a
 st a $29
 ==
+
