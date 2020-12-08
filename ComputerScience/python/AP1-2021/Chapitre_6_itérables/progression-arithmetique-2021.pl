@@ -1,7 +1,8 @@
 # Author: Wenjie Fang
 
 extends=/ComputerScience/python/template/pltest.pl
-builder=/builder/before.py
+
+@ /builder/before.py [builder.py]
 
 author=Wenjie Fang
 title=Progression arithmétique, mais sans boucle
