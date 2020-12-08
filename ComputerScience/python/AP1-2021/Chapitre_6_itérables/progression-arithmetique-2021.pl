@@ -64,7 +64,7 @@ res = [pp + rr * i for i in range(ll)]
 pltest6 = f">>> progression({pp}, {rr}, {ll}) # Random\n{res}\n"
 
 
-text+= pltest6 
+text += " bande ljmqsj mlkmlidjq msl m "
 ==
 
 pltest0==
