@@ -1,7 +1,8 @@
 # Author: Wenjie Fang
 
 extends=/ComputerScience/python/template/pltest.pl
-builder=/builder/before.py
+@ /builder/before.py [builder.py]
+
 
 author=Wenjie Fang
 title=Fusion d'une liste de listes
@@ -77,3 +78,4 @@ pltest1==
 >>> fusion([[[]], [[1, 2], [3, 4]], [[]]])
 [[], [1, 2], [3, 4], []]
 ==
+
