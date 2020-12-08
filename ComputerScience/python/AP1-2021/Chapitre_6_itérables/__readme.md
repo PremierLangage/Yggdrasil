@@ -68,7 +68,6 @@ tag = listoflist | extend
 **Commentaires**
 
 - Exercice simple pour fusionner les éléments dans une liste de listes.
-- Les pltest aléatoires ne marchent pas, et il faut débougger.
 
 # Ex6 : Recherche de motif dans un fichier
 
@@ -120,7 +119,6 @@ tag = range
 **Commentaires**
 
 - Exercice pour l'utilisation de range. La seule difficulté est le cas où la raison est 0.
-- Taboo n'est plus valide.
 
 # Ex11 : Remplacer les k par g
 
@@ -143,7 +141,6 @@ tag = string | stringIndex
 
 - Exercice simple pour renverser une chaîne de caractères.
 - Très facile si on sait comment faire le splice correctement, moyennement facile si on ne sait pas.
-- Les pltest aléatoires ne marchent pas, et il faut débougger.
 
 # Ex13 : Trouver tous les occurrences
 
