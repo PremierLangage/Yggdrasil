@@ -23,9 +23,10 @@ Par exemple, la matrice dans le fichier précédente doit être représentée co
 
 Ecrire une fonction ``lire_matrice(filename)`` qui prend en paramètre le nom ``filename`` du fichier à lire, qui lit le fichier
 et qui retourne la liste de listes représentant la **matrice d'entiers** dans le fichier.
-Vous pouvez utiliser la méthode ``split`` des chaînes de caractères. **Le fichier pourrait être vide**, correspondant à une matrice vide.
+Vous pouvez utiliser la méthode ``split`` des chaînes de caractères. On peut supposer que le fichier n'est jamais vide.
 
-**Attention**, une ligne lu depuis un fichier contient possiblement un caractère '\n' à la fin.
+**Attention**, une ligne lu depuis un fichier contient possiblement un caractère '\n' à la fin,
+qui pourrait être supprimé avec la méthode ``rstrip()`` des chaînes de caractères.
 ==
 
 tag=file|listoflist|split|ForIn
@@ -35,10 +36,8 @@ def lire_matrice(fn):
     res = []
     with open(fn, 'r') as file:
         for s in file:
-            s = s.rstrip()
-            if s != '':
-                l = s.split(" ")
-                res.append([int(e) for e in l])
+            l = s.rstrip().split(" ")
+            res.append([int(e) for e in l])
     return res
 ==
 
@@ -46,33 +45,27 @@ before==
 import psutil
 ==
 
-@ testcase/mat1.txt [mat1.txt]
 @ testcase/mat2.txt [mat2.txt]
 @ testcase/mat3.txt [mat3.txt]
 @ testcase/mat4.txt [mat4.txt]
 @ testcase/mat5.txt [mat5.txt]
 
 pltest0==
->>> lire_matrice("mat1.txt")
-[]
-==
-
-pltest1==
 >>> lire_matrice("mat2.txt")
 [[-3, 4, -1], [2, 0, -2], [1, -4, 3]]
 ==
 
-pltest2==
+pltest1==
 >>> lire_matrice("mat3.txt")
 [[1, 1, 1, 1, 1], [1, 1, 1, 1, 1], [1, 1, 1, 1, 1]]
 ==
 
-pltest3==
+pltest2==
 >>> lire_matrice("mat4.txt")
 [[0, 0, 0, 0, 0, 9, 43789543, -3418594, 0, 0, 0, 0, 0, 0]]
 ==
 
-pltest4==
+pltest3==
 >>> lire_matrice("mat5.txt")
 [[3], [4], [5], [6], [-353289], [5427832], [0], [0], [0], [-1]]
 ==
