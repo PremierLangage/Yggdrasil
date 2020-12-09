@@ -6,7 +6,7 @@ input.virtualKeyboards = sets
 
 before ==
 var('x')
-a, b = list_randint_norep(2,-6,6,[0])
+a, b = list_randint_norep(2, -6, 6, [0])
 expr = (x + a) * (x + b)
 
 ineq = randitem([expr >= 0, expr > 0, expr <= 0,expr < 0])
@@ -19,10 +19,11 @@ Déterminer l'ensemble des réels $! x !$ tels que $$ {{ineq|latex}}. $$ Ecrire 
 ==
 
 evaluator ==
-score, _, feedback = eval_rset(input.value, sol)
-==
+score, error =  eval_rset(input.value, sol)
+feedback = message[error]==
 
 solution ==
-La solution est $% {{sol|latex}} %$.
+La solution est $! {{sol|latex}} !$.
 ==
+
 
