@@ -15,16 +15,16 @@ S = [x*exp(c*x),x*ln(c*x),x*cos(c*x),x*sin(c*x)]
 f = randitem(S)
 
 
-if f==exp(c*x):
+if f==x*exp(c*x):
     a=0
     b=1/c
-elif f==ln(c*x):
+elif f==x*ln(c*x):
     a=1/c 
     b= exp(1)/c
-elif f==cos(c*x):
+elif f==x*cos(c*x):
     a=-pi/(2*c) 
     b= pi/(2*c)
-elif f==sin(c*x):
+elif f==x*sin(c*x):
     a=0 
     b= pi/c
 
