@@ -53,6 +53,16 @@ editor.code ==
 ...
 ==
 
+solution==
+PAS DE SOLUTION GENERIQUE SIMPLE
 
+VOICI UNE SOLUTION POUR a = 9, b = 13 et c = 17
+
+ld $9 a
+cmp $13
+bfdn 5
+ld $13 a
+st a $17
+==
 
 
