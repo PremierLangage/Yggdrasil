@@ -61,9 +61,19 @@ editor.code ==
 solution==
 PAS DE SOLUTION GENERIQUE SIMPLE
 
-VOICI UNE SOLUTION POUR a = 25, b = 27 et c = 29
+VOICI UNE SOLUTION POUR a = 29, b = 38 et c = 41
 
-
+ld $29 a
+add $30
+add $31
+add $32
+add $33
+add $34
+add $35
+add $36
+add $37
+add $38
+st a $41
 ==
 
 
