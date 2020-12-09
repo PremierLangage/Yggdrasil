@@ -9,7 +9,7 @@ var('x') # crée le symbole x
 
 
 
-S = [atan(x),ln(x),x**2*cos(x),x**2*sin(x),x**2*exp(x)]
+S = [ln(x),x**2*cos(x),x**2*sin(x),x**2*exp(x)]
 
 f = randitem(S)
 
