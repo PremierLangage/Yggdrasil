@@ -37,7 +37,7 @@ sol = integrate(f,(x,a,b)) # Solution
 ==
 
 text ==
-Calculer l'intégrale $!{{ \int_a^b f \mathrm dx |latex }}!$  grâce à la formule d'intégration par parties.
+Calculer l'intégrale   grâce à la formule d'intégration par parties.
 ==
 
 evaluator ==
