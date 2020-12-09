@@ -64,9 +64,9 @@ minibrain_action_before="[ "
 minibrain_check_after="[ "
 for i in range(8):
     if randint(0, 1) == 1:
-        val = choice(Primes)
+        val = choice(Primes[:8*i])
     else:
-        val = randint(4, 500)
+        val = randint(4, i*50)
     minibrain_action_before+="['test aléatoire "+str(i+1)+"', 'st "+str(val)+" $50'], "
     minibrain_check_after+="[(51, "+str(is_prime(val))+")], "
 minibrain_check_after+="]"
