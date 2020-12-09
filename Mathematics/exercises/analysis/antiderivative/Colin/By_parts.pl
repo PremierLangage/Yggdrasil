@@ -20,13 +20,13 @@ if f==x*exp(c*x):
     b=frac(Rational(1, c))
 elif f==x*ln(c*x):
     a=frac(Rational(1, c)) 
-    b=frac(Rational(exp(1), c))
+    b=exp(1)*frac(Rational(1, c))
 elif f==x*cos(c*x):
-    a=-frac(Rational(pi, 2*c)) 
-    b= frac(Rational(pi, 2*c)) 
+    a=-pi * frac(Rational(1, 2*c)) 
+    b= pi * frac(Rational(1, 2*c)) 
 elif f==x*sin(c*x):
     a=0 
-    b= frac(Rational(pi, c)) 
+    b= pi*frac(Rational(1, c)) 
 
 sol = integrate(f,(x,a,b)) # Solution
 
