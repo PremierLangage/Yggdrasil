@@ -12,8 +12,8 @@ c = randitem([i for i in range(2,10)])
 
 S = [exp(c*x),ln(c*x),cos(c*x),sin(c*x)]
 
-f = randitem(S)
-
+f1 = randitem(S)
+f = x*f1
 
 if f==exp(c*x):
     a=0
