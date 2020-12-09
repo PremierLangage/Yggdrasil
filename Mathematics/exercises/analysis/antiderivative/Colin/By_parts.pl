@@ -10,10 +10,10 @@ var('x') # crée le symbole x
 c = randitem([i for i in range(2,10)])
 
 
-S = [exp(c*x),ln(c*x),cos(c*x),sin(c*x)]
+S = [x*exp(c*x),x*ln(c*x),x*cos(c*x),x*sin(c*x)]
 
-f1 = randitem(S)
-f = x*f1
+f = randitem(S)
+
 
 if f==exp(c*x):
     a=0
