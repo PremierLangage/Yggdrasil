@@ -66,7 +66,7 @@ for i in range(8):
     if randint(0, 1) == 1:
         val = choice(Primes[:8*i+5])
     else:
-        val = randint(4, i*50)
+        val = randint(4, i*50+10)
     minibrain_action_before+="['test aléatoire "+str(i+1)+"', 'st "+str(val)+" $50'], "
     minibrain_check_after+="[(51, "+str(is_prime(val))+")], "
 minibrain_check_after+="]"
