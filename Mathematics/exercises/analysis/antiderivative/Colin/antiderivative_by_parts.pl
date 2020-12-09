@@ -19,8 +19,8 @@ sol = integrate(f,x) # Solution
 ==
 
 text ==
-Grâce à la formule d'intégration par parties, déterminer une primitive de la fonction définie par l'expression
-$! {{f | latex}} !$.
+Grâce à la formule d'intégration par parties, déterminer une primitive de la fonction $!f!$ définie par l'expression
+$$f(x) = {{f | latex}} .$$
 ==
 
 evaluator ==
