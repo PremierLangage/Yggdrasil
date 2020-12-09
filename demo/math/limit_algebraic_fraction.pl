@@ -21,11 +21,13 @@ Déterminer $$ {{ lim|latex }}. $$
 ==
 
 evaluator ==
-score, _, feedback = eval_real_or_inf(input.value, sol)
+score, error =  eval_real_or_inf(input.value, sol)
+feedback = message[error]
 ==
 
 solution ==
 La limite est $% {{sol|latex}} %$.
 ==
+
 
 
