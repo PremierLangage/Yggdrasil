@@ -47,7 +47,7 @@ text==
 Proposez un code Mini-Brain qui teste si la valeur située en case **50** est un
 entier premier ou pas. Cette valeur sera toujours poitive et supérieure ou 
 égale à **4**. Si la valeur est bien un entier premier, alors votre code Mini-Brain
-devra écrire la valeur **1** en case **51**, dans le cas contraire, votre code
+devra écrire la valeur **1** en case mémoire **51**, dans le cas contraire, votre code
 devra y stocker la valeur **0**.
 
 <br>
