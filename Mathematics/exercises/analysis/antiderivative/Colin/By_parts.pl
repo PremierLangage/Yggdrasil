@@ -14,6 +14,9 @@ S = [exp(c*x),ln(c*x),cos(c*x),sin(c*x)]
 
 f = randitem(S)
 
+a=1
+b=2
+
 if f=="exp(c*x)":
     a=0
     b=1/c
@@ -34,7 +37,7 @@ sol = integrate(f,(x,a,b)) # Solution
 ==
 
 text ==
-Calculer l'intégrale  grâce à la formule d'intégration par parties.
+Calculer l'intégrale $!{{ \int_a^b f \mathrm dx |latex }}!$  grâce à la formule d'intégration par parties.
 ==
 
 evaluator ==
