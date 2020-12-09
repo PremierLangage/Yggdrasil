@@ -76,4 +76,20 @@ ld $#0 a
 st a $29
 ==
 
+solution_bis==
+PAS DE SOLUTION GENERIQUE SIMPLE
 
+VOICI UNE SOLUTION POUR a = 20, b = 23 et c = 28
+
+ld $20 a     // a contient le max courrant
+cmp $21      // on compare au suivant
+bfdn 5     
+ld $21 a     // on écrase a si nécessaire
+cmp $22      // on recommence avec le nombre suivant
+bfdn 8
+ld $22 a
+cmp $23
+bfdn 11
+ld $23 a
+st a $28
+==
