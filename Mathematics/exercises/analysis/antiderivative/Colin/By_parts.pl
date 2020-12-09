@@ -14,8 +14,8 @@ S = [exp(c*x),ln(c*x),cos(c*x),sin(c*x)]
 
 f = randitem(S)
 
-a=1
-b=2
+a=0
+b=0
 
 if f=="exp(c*x)":
     a=0
