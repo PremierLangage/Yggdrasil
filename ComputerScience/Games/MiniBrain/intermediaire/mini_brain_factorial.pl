@@ -52,5 +52,11 @@ minibrain_check_after==
   [(11, 5040)],]
 ==
 
-
-
+solution==
+ld $10 #0
+ld 1 a
+mul #0
+dec #0
+bfdn 3
+st a $11
+==
