@@ -30,13 +30,13 @@ elif f==sin(c*x):
 
 sol = integrate(f,(x,a,b)) # Solution
 
-
-
+a1 = {{a | latex }}
+b1 = {{b | latex }}
 ==
 
 text ==
 Grâce à la formule d'intégration par partiesn calculer l'intégrale  
-$$ \int_{{a | latex }}^{{b | latex }} {{f | latex}} \mathrm dx $$ 
+$$ \int_{a1}^{b1} {{f | latex}} \mathrm dx $$ 
 ==
 
 evaluator ==
