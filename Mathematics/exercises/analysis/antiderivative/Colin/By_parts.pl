@@ -38,7 +38,7 @@ sol = integrate(f,(x,a,b)) # Solution
 
 text ==
 Grâce à la formule d'intégration par partiesn calculer l'intégrale  
-$$ \int_{{a}}^{{b}} {{f}} \mathrm dx $$ 
+$$ \int_{{a}}^{{b}} {{f | latex}} \mathrm dx $$ 
 ==
 
 evaluator ==
