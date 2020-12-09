@@ -20,7 +20,8 @@ Déterminer l'ensemble des réels $! x !$ tels que $$ {{ineq|latex}}. $$ Ecrire 
 
 evaluator ==
 score, error =  eval_rset(input.value, sol)
-feedback = message[error]==
+feedback = message[error]
+==
 
 solution ==
 La solution est $! {{sol|latex}} !$.
