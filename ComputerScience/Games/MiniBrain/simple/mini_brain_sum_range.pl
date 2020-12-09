@@ -58,6 +58,12 @@ editor.code ==
 ==
 
 
+solution==
+PAS DE SOLUTION GENERIQUE SIMPLE
 
+VOICI UNE SOLUTION POUR a = 25, b = 27 et c = 29
+
+
+==
 
 
