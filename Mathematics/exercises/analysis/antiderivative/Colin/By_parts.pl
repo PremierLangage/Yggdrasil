@@ -17,7 +17,7 @@ f = randitem(S)
 
 if f==x*exp(c*x):
     a=0
-    b=1/c
+    b='\\frac{ %d }{ %d }' % (1,c)
 elif f==x*ln(c*x):
     a=1/c 
     b= exp(1)/c
