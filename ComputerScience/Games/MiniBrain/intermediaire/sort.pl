@@ -38,7 +38,7 @@ for i in range(5):
     vect_sort = sorted(vect_val)
     vect_cond = []
     for v,i in enumerate(vect_sort):
-        vect_cond.append( (50+i, v) )
+        vect_cond.append( (v, 50+i) )
     minibrain_check_after+=str(vect_cond)+", "
 
 minibrain_check_after+="]"
