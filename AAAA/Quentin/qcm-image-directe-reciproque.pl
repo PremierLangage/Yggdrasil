@@ -31,7 +31,7 @@ $!f (x, y) = x^2 + y^2.!$
 Quelle est la bonne réponse ?
 - $! f^{\\{-1\\}}(\\{1\\}) = \\{(1, 0)\\}  !$
 - $! f^{\\{-1\\}}(\\{0\\}) = \\{(0, 1)\\}  !$
-+ $! f^{\\{-1\\}}(\\{1\\}) !$ est le cercle de rayon 1 et de centre $!(0,0)!$
++ $! f^{\\{-1\\}}(\\{1\\})= \\{ (x,y)\in \mathbb{R}^2 | x^2+y^2= 1\\} !$,  le cercle de rayon 1 et de centre $!(0,0)!$
 
 ==
 
