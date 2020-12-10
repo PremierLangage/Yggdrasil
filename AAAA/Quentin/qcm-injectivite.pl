@@ -30,6 +30,7 @@ questions==
 + Non
 - Oui 
 
+
 * L'application $!f:\mathbb R \to \mathbb R_+!$, $!x\mapsto \exp(x)!$ est-elle injective ?   
 - Non 
 + Oui 
@@ -53,6 +54,7 @@ grade_checks = min([((nb_good*100) // (nb_good+nb_bad)) , (100 // (2**nb_bad))])
 grade_attempt = 50 + (200 // (3+nb_attempt))
 grade=((grade_checks * grade_attempt) // 10000, feedback)
 ==
+
 
 
 
