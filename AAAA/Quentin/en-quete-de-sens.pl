@@ -9,7 +9,7 @@ questions==
 - $!f(A) \subset E!$
 + $!\forall y \in B, \quad f^{\\{-1\\}}(y) \in A!$
 - $! A \subset f^{\\{-1\\}}(B) !$
-- $! f^{(-1)}(B) = \emptyset !$
+- $! f^{\\{-1\\}}(B) = \emptyset !$
 
 * Soient $!E!$, $!F!$ et $!G!$ trois ensembles et soient $!f:E \to F!$ et $!g:F\to G!$ deux applications. Soient $!A\subset E!$, $!B \subset F!$ et $!C\subset G!$. Identifier l'assertion qui n'a pas de sens mathématiquement parlant. 
 -$!(g\circ f)(A)=G!$
