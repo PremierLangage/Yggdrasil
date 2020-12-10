@@ -60,7 +60,25 @@ editor.code ==
 
 
 solution==
-
+ld 59 #0
+ld 60 #1
+ld 10 #2
+ld 10 #3
+ld $#0 a
+ld $#1 #4
+cmp #4
+bfup 11
+st a $#1
+st #4 $#0
+dec #0
+dec #1
+dec #2
+bfdn 5
+mv #3 #2
+ld 59 #0
+ld 60 #1
+dec #3
+bfdn 5
 ==
 
 
