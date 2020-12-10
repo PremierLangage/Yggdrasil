@@ -31,11 +31,15 @@ minibrain_check_after="[ "
 for i in range(5):
     pre_actions_list = []
     vect_val = []
-    for j in range(b - a + 1):
+    for j in range(11):
         vect_val.append(randint(-50, 100))
-        pre_actions_list.append("st "+str(vect_val[-1])+" $"+str(a+j))
+        pre_actions_list.append("st "+str(vect_val[j])+" $"+str(50+j))
     minibrain_action_before+="['test aléatoire "+str(i+1)+"', '"+ "\\n".join(pre_actions_list) +"'], "
-    minibrain_check_after+="[(c, "+str(sum(vect_val))+")], "
+    vect_sort = sorted(vect_val)
+    vect_cond = []
+    for v,i in enumerate(vect_sort):
+        vect_cond.append( (50+i, v) )
+    minibrain_check_after+=str(vect_cond)+", "
 
 minibrain_check_after+="]"
 minibrain_action_before+="]"
