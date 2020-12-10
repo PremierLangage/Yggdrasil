@@ -37,7 +37,7 @@ for i in range(5):
     minibrain_action_before+="['test aléatoire "+str(i+1)+"', '"+ "\\n".join(pre_actions_list) +"'], "
     vect_sort = sorted(vect_val)
     vect_cond = []
-    for v,i in enumerate(vect_sort):
+    for i, v in enumerate(vect_sort):
         vect_cond.append( (v, 50+i) )
     minibrain_check_after+=str(vect_cond)+", "
 
