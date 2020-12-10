@@ -17,8 +17,9 @@ else:
 ==
 
 text==
-Associez à chaque ensemble de départ $!E!$ un ensemble d'arrivée $!F!$ de façon à ce que $!cos:E\to F!$ soit bijective.
+Associez à chaque ensemble de départ $!E!$ un ensemble d'arrivée $!F!$ de façon à ce que $!\cos:E\to F!$ soit bijective.
 ==
+
 
 
 
