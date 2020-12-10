@@ -17,13 +17,13 @@ nbtrues=1
 
 good==
 f est surjective
-f est bijective
 ==
 
 bad==
 f n'est pas une application
 f est bien définie mais n'est ni injective ni surjective
 f est injective
+f est bijective
 ==
 
 
