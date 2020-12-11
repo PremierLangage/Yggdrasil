@@ -38,15 +38,15 @@ fct_val_str += "\\end{array} \n"
 is_injective = (len(set(img_fct)) == cardinal_defi)
 is_surjective = (len(set(img_fct)) == cardinal_img)
 
-# images subset
-img_subset_card = randint(1, 3)
-ing_subset = sample(ensemble_img, img_subset_card)
+# images subset 1
+subimg_card_1 = randint(1, 3)
+ing_subset_1 = sample(ensemble_img, subimg_card)
 
-# calcul de la préimage du sous ensemble d'images
-preimg_subset = [] 
+# calcul de la préimage du sous ensemble d'images 1
+preimg_subset_1 = [] 
 for i in range(cardinal_defi):
-    if img_fct[i] in ing_subset:
-        preimg_subset.append(ensemble_defi[i])
+    if img_fct[i] in ing_subset_1:
+        preimg_subset_1.append(ensemble_defi[i])
 
 group.items = []
 group.items.append({"id": "injective", "content": " $% "+fct_name+" %$  est injective"})
