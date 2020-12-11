@@ -47,8 +47,8 @@ preimg_subset_1 = []
 for i in range(cardinal_defi):
     if img_fct[i] in ing_subset_1:
         preimg_subset_1.append(ensemble_defi[i])
-content_preimg_1 = " $% "+fct_name+"^{-1}( \\left\\brace "+", ".join([str(e) for e in ing_subset_1])+" \\right\\brace )  = "
-content_preimg_1 += " \\left\\brace "+", ".join([str(e) for e in preimg_subset_1])+" \\right\\brace %$ "
+content_preimg_1 = " $% "+fct_name+"^{-1} ( \left\brace "+", ".join([str(e) for e in ing_subset_1])+" \right\brace )  = "
+content_preimg_1 += " \left\brace "+", ".join([str(e) for e in preimg_subset_1])+" \right\brace %$ "
 
 group.items = []
 group.items.append({"id": "injective", "content": " $% "+fct_name+" %$  est injective"})
