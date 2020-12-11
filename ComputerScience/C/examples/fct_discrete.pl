@@ -58,7 +58,7 @@ ing_subset_2 = sample(ensemble_img, subimg_card_2)
 preimg_subset_2 = [] 
 for i in range(cardinal_defi):
     if img_fct[i] in ing_subset_2:
-        preimg_subset_1.append(ensemble_defi[i])
+        preimg_subset_2.append(ensemble_defi[i])
 content_preimg_2= " $% "+fct_name+"^{-1} ( \\left\\lbrace "+" , ".join([str(e) for e in ing_subset_2])+" \\right\\rbrace ) "
 content_preimg_2+=" =  \\left\\lbrace "+" , ".join([str(e) for e in preimg_subset_2])+" \\right\\rbrace  %$  "
 
