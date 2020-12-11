@@ -7,7 +7,7 @@ graph =: MathDrawer
 
 graph.script ==
 const grid = board.create('grid', [], {gridX: 1, gridY:1});
-const O = board.create('point', [0, 0], {size: 1, color: 'black', fixed: true});
+const O = board.create('point', [1, 4], {size: 1, color: 'black', fixed: true});
 ==
 
 
