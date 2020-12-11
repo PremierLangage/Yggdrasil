@@ -10,10 +10,10 @@ before==#|python|
 from random import randint, choice, sample
 
 # deux collections de symboles ici (on peut en rajouter à la suite...)
-lists_symbols = [ ["a", "b", "d", "e", "f", "g", "h"], [1, 2, 3, 4, 5, 6, 7] ]
+lists_symbols = [ ["a", "b", "c", "d", "e", "f", "g", "h"], [1, 2, 3, 4, 5, 6, 7, 8] ]
 
 # ça va choisir un cardinal puis entre lettres et chiffres
-cardinal_defi = randint(4, 7)
+cardinal_defi = randint(3, 5)
 ensemble_defi = choice(lists_symbols)[:cardinal_defi]
 ensemble_defi_str = " \\left\\lbrace " + ",".join([str(e) for e in  ensemble_defi]) + "  \\right\\rbrace "
 
