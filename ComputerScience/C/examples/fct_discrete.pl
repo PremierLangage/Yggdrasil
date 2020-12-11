@@ -37,7 +37,7 @@ group.items = []
 for i in range(4):
     group.items.append({
         "id": str(i),
-        "content": str(random.randint(0, 100))
+        "content": str(randint(0, 100))
     })
 ==
 
