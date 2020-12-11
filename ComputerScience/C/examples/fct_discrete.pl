@@ -49,46 +49,55 @@ fct_val_str += "\\end{array} \n"
 is_injective = (len(set(img_fct)) == cardinal_defi)
 is_surjective = (len(set(img_fct)) == cardinal_img)
 
-def make_preimg(good=True):
+def make_preimg(img_fct, ensemble_defi, ensemble_img, good=True):
     """
-    returns a couple of python string `(state, assertion)`
+    returns a triplet `(values, state, assertion)`
     where `state` is "good" or "bad" and `assertion` a string 
     of latex describing a mathematical statement.
+
+    when argument `good` is set to `False`, a minor
+    modification is proceeded on a good mathematical 
+    assertion to make it wrong.
     """
-    subimg_card = randint(1, 3)
-    ing_subset = sample(ensemble_img, subimg_card)
-
-
-# images subset 1
-subimg_card_1 = randint(1, 3)
-ing_subset_1 = sample(ensemble_img, subimg_card_1)
-
-# calcul de la préimage du sous ensemble d'images 1
-preimg_subset_1 = [] 
-for i in range(cardinal_defi):
-    if img_fct[i] in ing_subset_1:
-        preimg_subset_1.append(ensemble_defi[i])
-content_preimg_1= " $% "+fct_name+"^{-1} ( \\left\\lbrace "+" , ".join([str(e) for e in ing_subset_1])+" \\right\\rbrace ) "
-content_preimg_1+=" =  \\left\\lbrace "+" , ".join([str(e) for e in preimg_subset_1])+" \\right\\rbrace  %$  "
-
-# images subset 2
-subimg_card_2 = randint(1, 3)
-ing_subset_2 = sample(ensemble_img, subimg_card_2)
-
-# calcul de la préimage du sous ensemble d'images 2
-preimg_subset_2 = [] 
-for i in range(cardinal_defi):
-    if img_fct[i] in ing_subset_2:
-        preimg_subset_2.append(ensemble_defi[i])
-# destruction de cette bonne réponse en une mauvaise
-content_preimg_2= " $% "+fct_name+"^{-1} ( \\left\\lbrace "+" , ".join([str(e) for e in ing_subset_2])+" \\right\\rbrace ) "
-content_preimg_2+=" =  \\left\\lbrace "+" , ".join([str(e) for e in preimg_subset_2])+" \\right\\rbrace  %$  "
+    subimg_card = randint(1, 3) # entre 1 et 3 éléments
+    ing_subset = sample(ensemble_img, subimg_card) # k parmi n (tirage sans remise)
+    preimg_subset = [] 
+    for i in range(len(ensemble_defi)):
+        if img_fct[i] in ing_subset:
+            preimg_subset.append(ensemble_defi[i])
+    # maintenant on casse un truc en rajoutantou en enlevant une valeur mais pas plus
+    if not good:
+        state = "bad"
+        if len(preimg_subset) != 0 and (randint(0,1) == 0 || (len(preimg_subset) == len(ensemble_defi))): # deletion aléatoire
+            preimg_subset.remove(choice(preimg_subset))
+        else: # 1 ajout aléatoire
+            new_e = choice(ensemble_defi)
+            while new_e in preimg_subset:
+                new_e = choice(ensemble_defi)
+            preimg_subset.append(new_e)
+            preimg_subset.sort()
+    else:
+        state = "good"
+    prop = " $% "+fct_name+"^{-1}(\\left\\lbrace "+", ".join([str(e) for e in ing_subset_1])+" \\right\\rbrace )"
+    prop+=" =  \\left\\lbrace "+", ".join([str(e) for e in preimg_subset_1])+" \\right\\rbrace %$ "
+    return (ing_subset, state, prop)
 
 group.items = []
 group.items.append({"id": "injective", "content": " $% "+fct_name+" %$  est injective"})
 group.items.append({"id": "surjective", "content": " $% "+fct_name+" %$  est surjective"})
-group.items.append({"id": "good1", "content": content_preimg_1})
-group.items.append({"id": "good2", "content": content_preimg_2})
+
+# 4 assertions aléatoire à propos de préimage...
+preimg_list = []
+for i in range(4):
+    if randint(0,1) == 0
+        good = True
+    else:
+        good = False
+    vals, state, prop = make_preimg(img_fct, ensemble_defi, ensemble_img, good=good)
+    while vals in preimg_list:
+        vals, state, prop = make_preimg(img_fct, ensemble_defi, ensemble_img, good=good)
+    name = state+str(i)
+    group.items.append({"id": name, "content": prop})
 
 shuffle(group.items)
 
