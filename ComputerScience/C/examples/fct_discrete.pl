@@ -19,7 +19,7 @@ def make_latex_ens(L):
     return " \\left\\lbrace " + ",".join([str(e) for e in L]) + "  \\right\\rbrace "
 
 # deux collections de symboles ici (on peut en rajouter à la suite...)
-lists_symbols = [ ["a", "b", "c", "d", "e", "f", "g", "h"], [1, 2, 3, 4, 5, 6, 7, 8] ]
+lists_symbols = [ ["a", "b", "c", "d", "e", "f", "g", "h"], [1, 2, 3, 4, 5, 6, 7, 8], ["\\alpha", "\\beta", "\\gamma", "\\delta", "\\eta", "\\mu", "\\tu", "\\pu"], ]
 
 # ça va choisir un cardinal puis entre lettres et chiffres
 cardinal_defi = randint(4, 6)
