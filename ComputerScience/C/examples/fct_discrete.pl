@@ -172,7 +172,7 @@ else:
     else:
         error_str = " erreurs.</span></p>"
     feedback = """<p><span class="error-state" style="padding: 0.5em;">Vous avez fait """+str(bad)+error_str
-    feedback += "<ul>"+fb_detail+"</ul>"
+    feedback += "<br><ul>"+fb_detail+"</ul>"
 grade = (note, feedback)
 ==
 
