@@ -40,7 +40,7 @@ ensemble_img = choice(lists_symbols)[:cardinal_img]
 ensemble_img_str = make_latex_ens(ensemble_img)
 
 # nom de la fonction 
-fct_name = choice(['f', 'g', 'h', 'F', 'G', 'H'])
+fct_name = choice(['F', 'G', 'H', '\Phi', '\Psi' ])
 
 # images de la fonction : modélisation Python par le vecteurs de toutes les images
 img_fct = []
