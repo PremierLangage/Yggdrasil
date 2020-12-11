@@ -68,7 +68,7 @@ def make_preimg(img_fct, ensemble_defi, ensemble_img, good=True):
     # maintenant on casse un truc en rajoutantou en enlevant une valeur mais pas plus
     if not good:
         state = "bad"
-        if len(preimg_subset) != 0 and (randint(0,1) == 0 || (len(preimg_subset) == len(ensemble_defi))): # deletion aléatoire
+        if (len(preimg_subset) > 0) and (randint(0,1) == 0 or (len(preimg_subset) == len(ensemble_defi))): # deletion aléatoire
             preimg_subset.remove(choice(preimg_subset))
         else: # 1 ajout aléatoire
             new_e = choice(ensemble_defi)
