@@ -40,7 +40,7 @@ is_surjective = (len(set(img_fct)) == cardinal_img)
 
 # images subset 1
 subimg_card_1 = randint(1, 3)
-ing_subset_1 = sample(ensemble_img, subimg_card)
+ing_subset_1 = sample(ensemble_img, subimg_card_1)
 
 # calcul de la préimage du sous ensemble d'images 1
 preimg_subset_1 = [] 
