@@ -69,7 +69,7 @@ else:
     val = choice(ensemble_img)
     while val in img_fct:
         val = choice(ensemble_img)
-    fb_surj = "La fonction n'est pas surjective, $% "+str(val)+" %$ n'a pas d'antécédants."
+    fb_surj = "La fonction n'est pas surjective, $% "+str(val)+" %$ n'a pas d'antécédant."
 
 
 def make_preimg(img_fct, fct_name, ensemble_defi, ensemble_img, good=True):
