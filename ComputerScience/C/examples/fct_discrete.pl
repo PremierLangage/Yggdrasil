@@ -94,7 +94,7 @@ $%{{ fct_val_str }}%$
 
 <br>
 
-**Parmi les assertions suivantes, selectionnez celles qui sont correctes avant de valider.**
+**Parmi les propositions suivantes, selectionnez celles qui sont justes avant de valider.**
 ==
 
 form==
