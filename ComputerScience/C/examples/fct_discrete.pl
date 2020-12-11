@@ -27,8 +27,12 @@ fct_name = choice(['f', 'g', 'h', 'F', 'G', 'H'])
 
 # images de la fonction : modélisation Python par le vecteurs de toutes les images
 img_fct = []
+fct_val_str = "\\begin{array}{rcl} \n"
 for i in range(cardinal_defi):
     img_fct.append(choice(ensemble_img))
+    fct_val_str += fct_name + "(" + str(cardinal_defi) + ") & = & "
+    fct_val_str += str(img_fct[i]) + " \\\\  \n"
+fct_val_str += "\\end{array} \n"
 
 # extraction de sens maintenant
 is_injective = (len(set(img_fct)) == cardinal_defi)
@@ -47,7 +51,10 @@ title=Fonction entre deux ensembles discret
 
 text==#|markdown|
 Soit $%{{ fct_name }}%$ une fonction définie sur l'ensemble discret $%{{ ensemble_defi_str }}%$ 
-et à valeurs dans l'ensemble $%{{ ensemble_img_str }}%$
+et à valeurs dans l'ensemble $%{{ ensemble_img_str }}%$ prenant les valeurs suivantes :
+
+$${{  }}$$
+
 ==
 
 form==
