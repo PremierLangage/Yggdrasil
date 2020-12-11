@@ -104,11 +104,12 @@ for i in range(4):
         good = True
     else:
         good = False
-    vals, state, prop = make_preimg(img_fct, fct_name, ensemble_defi, ensemble_img, good=good)
+    vals, state, prop, f = make_preimg(img_fct, fct_name, ensemble_defi, ensemble_img, good=good)
     while vals in preimg_list:
-        vals, state, prop = make_preimg(img_fct, fct_name, ensemble_defi, ensemble_img, good=good)
+        vals, state, prop, f = make_preimg(img_fct, fct_name, ensemble_defi, ensemble_img, good=good)
     name = state+str(i)
     group.items.append({"id": name, "content": prop})
+    feedback_prop[name] = f
 
 shuffle(group.items)
 
