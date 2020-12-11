@@ -78,8 +78,8 @@ def make_preimg(img_fct, fct_name, ensemble_defi, ensemble_img, good=True):
             preimg_subset.sort()
     else:
         state = "good"
-    prop = " $% "+fct_name+"^{-1}(\\left\\lbrace "+", ".join([str(e) for e in ing_subset])+" \\right\\rbrace )"
-    prop+=" =  \\left\\lbrace "+", ".join([str(e) for e in preimg_subset])+" \\right\\rbrace %$ "
+    prop = " $% "+fct_name+"^{-1}( "+ make_latex_ens(ing_subset)
+    prop+=" ) = "+make_latex_ens(preimg_subset)+" %$ "
     return (ing_subset, state, prop)
 
 group.items = []
