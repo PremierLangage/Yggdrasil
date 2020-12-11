@@ -7,7 +7,7 @@ group =: CheckboxGroup
 
 # GENERATE A RANDOM QUESTION
 before==#|python|
-from random import randint, choice, sample
+from random import randint, choice, sample, shuffle
 
 # deux collections de symboles ici (on peut en rajouter à la suite...)
 lists_symbols = [ ["a", "b", "c", "d", "e", "f", "g", "h"], [1, 2, 3, 4, 5, 6, 7, 8] ]
@@ -55,7 +55,7 @@ group.items.append({"id": "injective", "content": " $% "+fct_name+" %$  est inje
 group.items.append({"id": "surjective", "content": " $% "+fct_name+" %$  est surjective"})
 group.items.append({"id": "good1", "content": content_preimg_1})
 
-group.items.shuffle()
+shuffle(group.items)
 
 ==
 
