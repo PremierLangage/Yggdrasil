@@ -136,7 +136,8 @@ form==
 ==
 
 evaluator==#|python|
-#destruction du formulaire
+
+#destruction du formulaire --> IMPOSSIBLE DE CHANGER SA RÉPONSE APRÈS LA PREMIERE PROPOSITION !!!
 form = ""
 
 good = 0
