@@ -7,8 +7,6 @@ graph =: MathDrawer
 
 graph.script ==
 const grid = board.create('grid', [], {gridX: 1, gridY:1});
-const Ox = board.create('axis', [[0, 0], [6, 0]], {ticks: {visible: true}});
-const Oy = board.create('axis', [[0, 0], [0, 6]], {ticks: {visible: true}});
 const O = board.create('point', [0, 0], {size: 1, color: 'black', fixed: true});
 ==
 
