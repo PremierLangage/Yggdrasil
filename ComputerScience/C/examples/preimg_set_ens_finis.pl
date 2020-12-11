@@ -166,19 +166,19 @@ for item in group.items:
             good += 1
         else:
             bad += 1
-            fb_detail += "<li> "+fb_inj+" </li>"
+            fb_detail += "<li> "+fb_inj+" </li><br>"
     elif (item['id'] == "surjective"):
         if (is_surjective and checked) or (not is_surjective and not checked):
             good += 1
         else:
             bad += 1
-            fb_detail += "<li> "+fb_surj+" </li>"
+            fb_detail += "<li> "+fb_surj+" </li><br>"
     else:
         if ("good" in item['id'] and checked) or ("bad" in item['id'] and not checked):
             good += 1
         else:
             bad += 1
-            fb_detail += "<li> "+item['content']+feedback_prop[item['id']]+"</li>"
+            fb_detail += "<li> "+item['content']+feedback_prop[item['id']]+"</li><br>"
 
 note = (good*100) // (good+bad)
 if note == 100:
