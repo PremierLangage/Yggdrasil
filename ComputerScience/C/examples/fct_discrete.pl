@@ -116,7 +116,7 @@ shuffle(group.items)
 
 ==
 
-title=Fonction entre deux ensembles discret
+title=Fonction entre deux ensembles finis
 
 text==#|markdown|
 Soit $%{{ fct_name }} : A \to B %$ une fonction définie sur l'ensemble fini $% A = {{ ensemble_defi_str }}%$ 
