@@ -49,6 +49,16 @@ fct_val_str += "\\end{array} \n"
 is_injective = (len(set(img_fct)) == cardinal_defi)
 is_surjective = (len(set(img_fct)) == cardinal_img)
 
+def make_preimg(good=True):
+    """
+    returns a couple of python string `(state, assertion)`
+    where `state` is "good" or "bad" and `assertion` a string 
+    of latex describing a mathematical statement.
+    """
+    subimg_card = randint(1, 3)
+    ing_subset = sample(ensemble_img, subimg_card)
+
+
 # images subset 1
 subimg_card_1 = randint(1, 3)
 ing_subset_1 = sample(ensemble_img, subimg_card_1)
