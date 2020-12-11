@@ -62,6 +62,9 @@ et à valeurs dans l'ensemble $% B = {{ ensemble_img_str }}%$ prenant les valeur
 
 $%{{ fct_val_str }}%$
 
+<br>
+
+**Parmi les assertions suivantes, selectionnez celles qui sont correctes avant de valider.**
 ==
 
 form==
