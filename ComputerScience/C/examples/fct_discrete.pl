@@ -107,6 +107,7 @@ for i in range(4):
     vals, state, prop, f = make_preimg(img_fct, fct_name, ensemble_defi, ensemble_img, good=good)
     while vals in preimg_list:
         vals, state, prop, f = make_preimg(img_fct, fct_name, ensemble_defi, ensemble_img, good=good)
+    preimg_list.append(vals)
     name = state+str(i)
     group.items.append({"id": name, "content": prop})
     feedback_prop[name] = f
