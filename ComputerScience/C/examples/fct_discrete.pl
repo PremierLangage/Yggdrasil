@@ -72,7 +72,17 @@ form==
 ==
 
 evaluator==#|python|
+#destruction du formulaire
+form = ""
 
+for item in group.items:
+    checked = item['checked']
+    if (item['id'] == "injective" and is_injective) and checked:
+        item['css'] = 'success-border'
+    else:
+        item['css'] = 'error-border'
+
+if is_injective && 
 grade = (100, 'Right')
 ==
 
