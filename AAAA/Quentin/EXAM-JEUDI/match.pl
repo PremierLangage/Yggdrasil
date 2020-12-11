@@ -1,7 +1,7 @@
 
 extends= /model/math.pl
 extends= simplematchlist.pl
-title=Cosinus et bijection
+title=Sinus et bijection
 before==
 
 gf=[ f"$![-\pi/2,\pi/2]!$", f"$![0,\pi/2]!$" ,f"$![-\pi/6,\pi/6]!$",f"$![-\pi,-\pi/2]!$" ]
