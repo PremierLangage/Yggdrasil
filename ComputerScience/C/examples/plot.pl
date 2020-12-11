@@ -6,9 +6,9 @@ builder =@ /builder/before.py
 graph =: MathDrawer
 
 graph.script ==
-const grid = board.create('grid', [], {gridX: 0.25, gridY: 0.25});
-const Ox = board.create('axis', [[0, 0], [1, 0]], {ticks: {visible: false}});
-const Oy = board.create('axis', [[0, 0], [0, 1]], {ticks: {visible: false}});
+const grid = board.create('grid', [], {gridX: 1, gridY:1});
+const Ox = board.create('axis', [[0, 0], [6, 0]], {ticks: {visible: true}});
+const Oy = board.create('axis', [[0, 0], [0, 6]], {ticks: {visible: true}});
 const circle = board.create('circle', [[0, 0], [0, 1]], {strokeColor: 'blue', fixed: true});
 const O = board.create('point', [0, 0], {size: 1, name: 'O', color: 'black', fixed: true});
 const A = board.create('point', [1, 0], {size: 1, name: 'A', color: 'black', fixed: true});
