@@ -1,0 +1,34 @@
+
+
+
+title=Examen Methodologie
+author=Enseignants Méthodologie
+
+teacher== #|python| 
+test
+==
+@ base1.pl
+@ base2.pl
+@ base3.pl
+@ base4.pl
+@ qcm-injectivite.pl
+@ qcm-image-directe-reciproque.pl
+@ match.pl
+@ en-quete-de-sens.pl
+
+introduction==
+Test de connaissance: L1 Maths-Info Méthodologie des Mathematiques
+
+Attention, dans la note effective, seul le premier essai sera pris en compte.
+==
+
+
+
+
+
+
+
+
+
+
+
