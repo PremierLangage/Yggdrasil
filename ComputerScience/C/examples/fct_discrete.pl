@@ -18,7 +18,7 @@ ensemble_defi = choice(lists_symbols)[:cardinal_defi]
 ensemble_defi_str = " \\left\\lbrace " + ",".join([str(e) for e in  ensemble_defi]) + "  \\right\\rbrace "
 
 # Pareil, choix aléatoire des images
-cardinal_img = randint(4, 7)
+cardinal_img = randint(3, 5)
 ensemble_img = choice(lists_symbols)[:cardinal_img]
 ensemble_img_str = " \\left\\lbrace " + ",".join([str(e) for e in  ensemble_img]) + "  \\right\\rbrace "
 
