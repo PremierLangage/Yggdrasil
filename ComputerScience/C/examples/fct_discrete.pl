@@ -1,3 +1,6 @@
+# VOICI UN EXEMPLE DE RANDOMISATION A OUTRANCE
+# DE CE FAIT, UN TEL EXO PEUT ÊTRE DONNÉ EN TP ET EN EXAMEN DANS LE MEME COURS.
+
 @ /utils/sandboxio.py
 
 grader  =@ /grader/evaluator.py
@@ -9,18 +12,24 @@ group =: CheckboxGroup
 before==#|python|
 from random import randint, choice, sample, shuffle
 
+def make_latex_ens(L):
+    """
+    Returns a latex string for the python list `L` viewed as a set.
+    """
+    return " \\left\\lbrace " + ",".join([str(e) for e in L]) + "  \\right\\rbrace "
+
 # deux collections de symboles ici (on peut en rajouter à la suite...)
 lists_symbols = [ ["a", "b", "c", "d", "e", "f", "g", "h"], [1, 2, 3, 4, 5, 6, 7, 8] ]
 
 # ça va choisir un cardinal puis entre lettres et chiffres
 cardinal_defi = randint(4, 6)
 ensemble_defi = choice(lists_symbols)[:cardinal_defi]
-ensemble_defi_str = " \\left\\lbrace " + ",".join([str(e) for e in  ensemble_defi]) + "  \\right\\rbrace "
+ensemble_defi_str = make_latex_ens(ensemble_defi)
 
 # Pareil, choix aléatoire des images
 cardinal_img = randint(4, 6)
 ensemble_img = choice(lists_symbols)[:cardinal_img]
-ensemble_img_str = " \\left\\lbrace " + ",".join([str(e) for e in  ensemble_img]) + "  \\right\\rbrace "
+ensemble_img_str = make_latex_ens(ensemble_img)
 
 # nom de la fonction 
 fct_name = choice(['f', 'g', 'h', 'F', 'G', 'H'])
@@ -59,6 +68,8 @@ preimg_subset_2 = []
 for i in range(cardinal_defi):
     if img_fct[i] in ing_subset_2:
         preimg_subset_2.append(ensemble_defi[i])
+# destruction de cette bonne réponse en une mauvaise
+if len(preimg_subset_2)
 content_preimg_2= " $% "+fct_name+"^{-1} ( \\left\\lbrace "+" , ".join([str(e) for e in ing_subset_2])+" \\right\\rbrace ) "
 content_preimg_2+=" =  \\left\\lbrace "+" , ".join([str(e) for e in preimg_subset_2])+" \\right\\rbrace  %$  "
 
