@@ -114,6 +114,8 @@ $%{{ fct_val_str }}%$
 <br>
 
 **Parmi les propositions suivantes, selectionnez celles qui sont justes avant de valider.**
+
+*Attention, tout est possible. Tout peut-être juste et tout peut être faux.*
 ==
 
 form==
