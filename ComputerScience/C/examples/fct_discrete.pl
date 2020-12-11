@@ -86,7 +86,7 @@ for item in group.items:
             bad += 1
 
 note = (good*100) // (good+bad)
-
-grade = (note, '')
+feedback = "Vous avez donné "+str(good)+" réponse(s) correcte(s) et "+str(bad)+"  ereur(s)."
+grade = (note, feedback)
 ==
 
