@@ -81,12 +81,12 @@ for item in group.items:
     checked = item['checked']
     if (item['id'] == "injective"):
         if (is_injective and checked) or (not is_injective and not checked):
-            item['css'] = 'success-border'
             good += 1
         else:
-            item['css'] = 'error-border'
             bad += 1
 
-grade = (100, 'Right')
+note = (good*100) // (good+bad)
+
+grade = (note, '')
 ==
 
