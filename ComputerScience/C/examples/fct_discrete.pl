@@ -133,8 +133,13 @@ for item in group.items:
             good += 1
         else:
             bad += 1
-    if (item['id'] == "surjective"):
+    elif (item['id'] == "surjective"):
         if (is_surjective and checked) or (not is_surjective and not checked):
+            good += 1
+        else:
+            bad += 1
+    else:
+        if ("good" in item['id'] and checked) or ("bad" in item['id'] and not checked):
             good += 1
         else:
             bad += 1
