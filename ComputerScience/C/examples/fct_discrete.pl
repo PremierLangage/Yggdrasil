@@ -160,7 +160,7 @@ for item in group.items:
             good += 1
         else:
             bad += 1
-            fb_detail += item['content']+feedback_prop[item['id']]
+            fb_detail += item['content']+feedback_prop[item['id']]+"<br>"
 
 note = (good*100) // (good+bad)
 if note == 100:
@@ -171,7 +171,7 @@ else:
     else:
         error_str = " erreurs."
     feedback = "Vous avez fait "+str(bad)+error_str
-    feedback += fb_detail
+    feedback += "<br>"+fb_detail
 grade = (note, feedback)
 ==
 
