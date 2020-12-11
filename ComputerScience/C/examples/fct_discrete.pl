@@ -7,7 +7,7 @@ group =: CheckboxGroup
 
 # GENERATE A RANDOM QUESTION
 before==#|python|
-from random import randint, choice
+from random import randint, choice, sample
 
 # deux collections de symboles ici (on peut en rajouter à la suite...)
 lists_symbols = [ ["a", "b", "d", "e", "f", "g", "h"], [1, 2, 3, 4, 5, 6, 7] ]
@@ -38,6 +38,15 @@ fct_val_str += "\\end{array} \n"
 is_injective = (len(set(img_fct)) == cardinal_defi)
 is_surjective = (len(set(img_fct)) == cardinal_img)
 
+# images subset
+img_subset_card = randint(1, 3)
+ing_subset = sample(ensemble_img, img_subset_card)
+
+# calcul de la préimage du sous ensemble d'images
+preimg_subset = [] 
+for i in range(cardinal_defi):
+    if img_fct[i] in ing_subset:
+        preimg_subset.append(ensemble_defi[i])
 
 group.items = []
 group.items.append({"id": "injective", "content": " $% "+fct_name+" %$  est injective"})
