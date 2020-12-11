@@ -50,8 +50,8 @@ for i in range(4):
 title=Fonction entre deux ensembles discret
 
 text==#|markdown|
-Soit $%{{ fct_name }}%$ une fonction définie sur l'ensemble discret $%{{ ensemble_defi_str }}%$ 
-et à valeurs dans l'ensemble $%{{ ensemble_img_str }}%$ prenant les valeurs suivantes :
+Soit $%{{ fct_name }}%$ une fonction définie sur l'ensemble discret $% A = {{ ensemble_defi_str }}%$ 
+et à valeurs dans l'ensemble $% B = {{ ensemble_img_str }}%$ prenant les valeurs suivantes :
 
 $%{{ fct_val_str }}%$
 
