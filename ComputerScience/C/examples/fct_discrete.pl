@@ -18,8 +18,10 @@ def make_latex_ens(L):
     """
     return " \\left\\lbrace " + ",".join([str(e) for e in L]) + "  \\right\\rbrace "
 
-# deux collections de symboles ici (on peut en rajouter à la suite...)
-lists_symbols = [ ["a", "b", "c", "d", "e", "f", "g", "h"], [1, 2, 3, 4, 5, 6, 7, 8], ["\\alpha", "\\beta", "\\gamma", "\\delta", "\\eta", "\\mu", "\\tu", "\\pu"], ]
+# Collections de symboles ici (on peut en rajouter à la suite...)
+lists_symbols = [ ["a", "b", "c", "d", "e", "f", "g", "h"], 
+                  [1, 2, 3, 4, 5, 6, 7, 8], 
+                  ["\\alpha", "\\beta", "\\gamma", "\\delta", "\\eta", "\\mu", "\\tu", "\\pu"], ]
 
 # ça va choisir un cardinal puis entre lettres et chiffres
 cardinal_defi = randint(4, 6)
@@ -85,8 +87,8 @@ shuffle(group.items)
 title=Fonction entre deux ensembles discret
 
 text==#|markdown|
-Soit $%{{ fct_name }}%$ une fonction définie sur l'ensemble discret $% A = {{ ensemble_defi_str }}%$ 
-et à valeurs dans l'ensemble $% B = {{ ensemble_img_str }}%$ prenant les valeurs suivantes :
+Soit $%{{ fct_name }} : A \mapsto B %$ une fonction définie sur l'ensemble fini $% A = {{ ensemble_defi_str }}%$ 
+et à valeurs dans l'ensemble fini $% B = {{ ensemble_img_str }}%$ prenant les valeurs suivantes :
 
 $%{{ fct_val_str }}%$
 
