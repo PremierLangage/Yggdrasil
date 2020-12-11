@@ -26,7 +26,7 @@ questions==
 +  $! \forall y \in F, \quad \exists x \in E,\quad  f(x)=y!$
 
 
-* Soit $!f:\mathbb R \to \mathbb R!$ telle que $!f(x)=1/x!$ pour tout $! x \in \mathbb R \backslash\\{0\\}!$. L'application $!f!$ est-elle surjective ? 
+* Soit $!f:\mathbb R \backslash\\{0\\} \to \mathbb R!$ telle que $!f(x)=1/x!$ pour tout $! x \in \mathbb R \backslash\\{0\\}!$. L'application $!f!$ est-elle surjective ? 
 + Non
 - Oui 
 
