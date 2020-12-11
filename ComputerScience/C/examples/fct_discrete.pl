@@ -49,7 +49,7 @@ fct_val_str += "\\end{array} \n"
 is_injective = (len(set(img_fct)) == cardinal_defi)
 is_surjective = (len(set(img_fct)) == cardinal_img)
 
-def make_preimg(img_fct, ensemble_defi, ensemble_img, good=True):
+def make_preimg(img_fct, fct_name, ensemble_defi, ensemble_img, good=True):
     """
     returns a triplet `(values, state, assertion)`
     where `state` is "good" or "bad" and `assertion` a string 
@@ -93,9 +93,9 @@ for i in range(4):
         good = True
     else:
         good = False
-    vals, state, prop = make_preimg(img_fct, ensemble_defi, ensemble_img, good=good)
+    vals, state, prop = make_preimg(img_fct, fct_name, ensemble_defi, ensemble_img, good=good)
     while vals in preimg_list:
-        vals, state, prop = make_preimg(img_fct, ensemble_defi, ensemble_img, good=good)
+        vals, state, prop = make_preimg(img_fct, fct_name, ensemble_defi, ensemble_img, good=good)
     name = state+str(i)
     group.items.append({"id": name, "content": prop})
 
