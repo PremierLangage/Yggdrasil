@@ -57,7 +57,7 @@ is_surjective = (len(set(img_fct)) == cardinal_img)
 
 def make_preimg(img_fct, fct_name, ensemble_defi, ensemble_img, good=True):
     """
-    returns a triplet `(values, state, assertion)`
+    returns a quadruplet `(values, state, assertion, feedback)`
     where `state` is "good" or "bad" and `assertion` a string 
     of latex describing a mathematical statement.
 
@@ -75,18 +75,22 @@ def make_preimg(img_fct, fct_name, ensemble_defi, ensemble_img, good=True):
     if not good:
         state = "bad"
         if (len(preimg_subset) > 0) and (randint(0,1) == 0 or (len(preimg_subset) == len(ensemble_defi))): # deletion aléatoire
+            delet = choice(preimg_subset)
+            feedback = " est faux car $% "+str(delet)+" \\in "+fct_name+"^{-1}( "+ make_latex_ens(ing_subset) +") %$ ."
             preimg_subset.remove(choice(preimg_subset))
         else: # 1 ajout aléatoire
             new_e = choice(ensemble_defi)
             while new_e in preimg_subset:
                 new_e = choice(ensemble_defi)
+            feedback = " est faux car $% "+str(new_e)+" \\notin "+fct_name+"^{-1}( "+ make_latex_ens(ing_subset) +") %$ ."
             preimg_subset.append(new_e)
             preimg_subset.sort()
     else:
         state = "good"
+        feedback = " est vraie."
     prop = " $% "+fct_name+"^{-1}( "+ make_latex_ens(ing_subset)
     prop+=" ) = "+make_latex_ens(preimg_subset)+" %$ "
-    return (ing_subset, state, prop)
+    return (ing_subset, state, prop, feedback)
 
 group.items = []
 group.items.append({"id": "injective", "content": " $% "+fct_name+" %$  est injective"})
@@ -94,6 +98,7 @@ group.items.append({"id": "surjective", "content": " $% "+fct_name+" %$  est sur
 
 # 4 assertions aléatoire à propos de préimage...
 preimg_list = []
+feedback_prop = {}
 for i in range(4):
     if randint(0,1) == 0:
         good = True
