@@ -66,6 +66,7 @@ group.items = []
 group.items.append({"id": "injective", "content": " $% "+fct_name+" %$  est injective"})
 group.items.append({"id": "surjective", "content": " $% "+fct_name+" %$  est surjective"})
 group.items.append({"id": "good1", "content": content_preimg_1})
+group.items.append({"id": "good2", "content": content_preimg_2})
 
 shuffle(group.items)
 
