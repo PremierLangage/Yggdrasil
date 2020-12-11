@@ -149,19 +149,19 @@ for item in group.items:
             good += 1
         else:
             bad += 1
-            fb_detail += "* La fonction est injective, les images étant deux à deux différentes. <br>"
+            fb_detail += "<li> La fonction est injective, les images étant deux à deux différentes. </li>"
     elif (item['id'] == "surjective"):
         if (is_surjective and checked) or (not is_surjective and not checked):
             good += 1
         else:
             bad += 1
-            fb_detail += "* La fonction est surjective, les images couvrant totalement l'ensemble d'arrivée. <br>"
+            fb_detail += "<li> La fonction est surjective, les images couvrant totalement l'ensemble d'arrivée. </li>"
     else:
         if ("good" in item['id'] and checked) or ("bad" in item['id'] and not checked):
             good += 1
         else:
             bad += 1
-            fb_detail += "* "+item['content']+feedback_prop[item['id']]+"<br>"
+            fb_detail += "<li> "+item['content']+feedback_prop[item['id']]+"</li>"
 
 note = (good*100) // (good+bad)
 if note == 100:
@@ -172,7 +172,7 @@ else:
     else:
         error_str = " erreurs."
     feedback = "Vous avez fait "+str(bad)+error_str
-    feedback += "<br><br>\n\n"+fb_detail
+    feedback += "<br><br><ul>"+fb_detail+"</ul>"
 grade = (note, feedback)
 ==
 
