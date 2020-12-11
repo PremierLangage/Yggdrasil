@@ -127,10 +127,10 @@ $%{{ fct_val_str }}%$
 <br>
 ==
 
-form==
-**Parmi les propositions suivantes, selectionnez celles qui sont justes avant de valider.**
+form==#|html|
+<b>Parmi les propositions suivantes, selectionnez celles qui sont justes avant de valider.</b><br>
 
-*Attention, tout est possible. Tout peut-être juste et tout peut être faux.*
+<i>Attention, tout est possible. Tout peut-être juste et tout peut être faux.</i>
 
 {{ group|component }}
 ==
