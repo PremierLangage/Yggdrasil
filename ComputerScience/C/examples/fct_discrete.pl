@@ -75,14 +75,18 @@ evaluator==#|python|
 #destruction du formulaire
 form = ""
 
+good = 0
+bad = 0
 for item in group.items:
     checked = item['checked']
-    if (item['id'] == "injective" and is_injective) and checked:
-        item['css'] = 'success-border'
-    else:
-        item['css'] = 'error-border'
+    if (item['id'] == "injective"):
+        if (is_injective and checked) or (not is_injective and not checked):
+            item['css'] = 'success-border'
+            good += 1
+        else:
+            item['css'] = 'error-border'
+            bad += 1
 
-if is_injective && 
 grade = (100, 'Right')
 ==
 
