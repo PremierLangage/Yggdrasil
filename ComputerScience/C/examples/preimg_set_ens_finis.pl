@@ -166,13 +166,13 @@ for item in group.items:
             good += 1
         else:
             bad += 1
-            fb_detail += "<li> La fonction est injective, les images étant deux à deux différentes. </li>"
+            fb_detail += "<li> "+fb_inj+" </li>"
     elif (item['id'] == "surjective"):
         if (is_surjective and checked) or (not is_surjective and not checked):
             good += 1
         else:
             bad += 1
-            fb_detail += "<li> La fonction est surjective, les images couvrant totalement l'ensemble d'arrivée. </li>"
+            fb_detail += "<li> "+fb_surj+" </li>"
     else:
         if ("good" in item['id'] and checked) or ("bad" in item['id'] and not checked):
             good += 1
