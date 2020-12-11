@@ -168,11 +168,11 @@ if note == 100:
     feedback = """<p><span class="success-state" style="padding: 0.5em;">Bravo, c'est parfait, votre selection est la bonne !</span></p><br />"""
 else:
     if bad == 1:
-        error_str = " erreur.</span></p><br />"
+        error_str = " erreur.</span></p>"
     else:
-        error_str = " erreurs.</span></p><br />"
+        error_str = " erreurs.</span></p>"
     feedback = """<p><span class="error-state" style="padding: 0.5em;">Vous avez fait """+str(bad)+error_str
-    feedback += "<br><br><ul>"+fb_detail+"</ul>"
+    feedback += "<ul>"+fb_detail+"</ul>"
 grade = (note, feedback)
 ==
 
