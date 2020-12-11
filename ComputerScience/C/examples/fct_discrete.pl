@@ -140,6 +140,7 @@ form = ""
 
 good = 0
 bad = 0
+fb_detail = ""
 for item in group.items:
     checked = item['checked']
     if (item['id'] == "injective"):
@@ -147,16 +148,19 @@ for item in group.items:
             good += 1
         else:
             bad += 1
+            fb_detail += "La fonction est injective, les images étant deux à deux différentes. <br>"
     elif (item['id'] == "surjective"):
         if (is_surjective and checked) or (not is_surjective and not checked):
             good += 1
         else:
             bad += 1
+            fb_detail += "La fonction est surjective, les images couvrant totalement l'ensemble d'arrivée. <br>"
     else:
         if ("good" in item['id'] and checked) or ("bad" in item['id'] and not checked):
             good += 1
         else:
             bad += 1
+            fb_detail += item['content']+feedback_prop[item['id']]
 
 note = (good*100) // (good+bad)
 if note == 100:
@@ -167,6 +171,7 @@ else:
     else:
         error_str = " erreurs."
     feedback = "Vous avez fait "+str(bad)+error_str
+    feedback += fb_detail
 grade = (note, feedback)
 ==
 
