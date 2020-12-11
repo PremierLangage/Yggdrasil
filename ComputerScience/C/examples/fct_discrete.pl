@@ -89,7 +89,7 @@ group.items.append({"id": "surjective", "content": " $% "+fct_name+" %$  est sur
 # 4 assertions aléatoire à propos de préimage...
 preimg_list = []
 for i in range(4):
-    if randint(0,1) == 0
+    if randint(0,1) == 0:
         good = True
     else:
         good = False
