@@ -84,6 +84,11 @@ for item in group.items:
             good += 1
         else:
             bad += 1
+    if (item['id'] == "surjective"):
+        if (is_surjective and checked) or (not is_surjective and not checked):
+            good += 1
+        else:
+            bad += 1
 
 note = (good*100) // (good+bad)
 feedback = "Vous avez donné "+str(good)+" réponse(s) correcte(s) et "+str(bad)+"  ereur(s)."
