@@ -13,12 +13,12 @@ from random import randint, choice, sample
 lists_symbols = [ ["a", "b", "c", "d", "e", "f", "g", "h"], [1, 2, 3, 4, 5, 6, 7, 8] ]
 
 # ça va choisir un cardinal puis entre lettres et chiffres
-cardinal_defi = randint(3, 5)
+cardinal_defi = randint(4, 6)
 ensemble_defi = choice(lists_symbols)[:cardinal_defi]
 ensemble_defi_str = " \\left\\lbrace " + ",".join([str(e) for e in  ensemble_defi]) + "  \\right\\rbrace "
 
 # Pareil, choix aléatoire des images
-cardinal_img = randint(3, 5)
+cardinal_img = randint(4, 6)
 ensemble_img = choice(lists_symbols)[:cardinal_img]
 ensemble_img_str = " \\left\\lbrace " + ",".join([str(e) for e in  ensemble_img]) + "  \\right\\rbrace "
 
