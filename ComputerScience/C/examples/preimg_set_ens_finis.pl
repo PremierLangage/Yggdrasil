@@ -54,6 +54,23 @@ fct_val_str += "\\end{array} \n"
 # extraction de sens maintenant
 is_injective = (len(set(img_fct)) == cardinal_defi)
 is_surjective = (len(set(img_fct)) == cardinal_img)
+# feedback injectivité
+if is_injective:
+    fb_inj = "La fonction est injective, les images étant deux à deux différentes."
+else:
+    val = choice(img_fct)
+    while img_fct.count(val) < 2:
+        val = choice(img_fct)
+    fb_inj = "La fonction n'est pas injective, $% "+str(val)+" %$ possède $% "+img_fct.count(val)+" %$ antécédants."
+# feedback surjectivité
+if is_surjective:
+    fb_inj = "La fonction est surjective, les images couvrent totalement l'ensemble d'arrivée."
+else:
+    val = choice(ensemble_img)
+    while val in img_fct:
+        val = choice(ensemble_img)
+    fb_inj = "La fonction n'est pas surjective, $% "+str(val)+" %$ n'a pas d'antécédants."
+
 
 def make_preimg(img_fct, fct_name, ensemble_defi, ensemble_img, good=True):
     """
