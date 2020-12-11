@@ -69,7 +69,6 @@ for i in range(cardinal_defi):
     if img_fct[i] in ing_subset_2:
         preimg_subset_2.append(ensemble_defi[i])
 # destruction de cette bonne réponse en une mauvaise
-if len(preimg_subset_2)
 content_preimg_2= " $% "+fct_name+"^{-1} ( \\left\\lbrace "+" , ".join([str(e) for e in ing_subset_2])+" \\right\\rbrace ) "
 content_preimg_2+=" =  \\left\\lbrace "+" , ".join([str(e) for e in preimg_subset_2])+" \\right\\rbrace  %$  "
 
