@@ -14,10 +14,23 @@ lists_symbols = [ ["a", "b", "d", "e", "f", "g", "h"], [1, 2, 3, 4, 5, 6, 7] ]
 
 # ça va choisir un cardinal puis entre lettres et chiffres
 cardinal_defi = randint(4, 7)
-support_defi = choice(lists_symbols)[:cardinal_defi]
+ensemble_defi = choice(lists_symbols)[:cardinal_defi]
+
+# Pareil, choix aléatoire des images
+cardinal_img = randint(4, 7)
+ensemble_img = choice(lists_symbols)[:cardinal_img]
 
 # nom de la fonction 
-fct_name = choice
+fct_name = choice(['f', 'g', 'h', 'F', 'G', 'H'])
+
+# images de la fonction : modélisation Python par le vecteurs de toutes les images
+img_fct = []
+for i in range(cardinal_defi):
+    img_fct.append(choice(ensemble_img))
+
+# extraction de sens maintenant
+is_injective = (len(set(img_fct)) == cardinal_defi)
+is_surjective = (len(set(img_fct)) == cardinal_img)
 
 
 group.items = []
@@ -30,15 +43,13 @@ for i in range(4):
 
 title = Checkbox Group Component
 
-text==
-Soit {{  }}
+text==#|markdown|
+Soit $%{{ fct_name }}%$
 ==
 
-# PRESENT THE QUESTION TO THE STUDENT
 form==
 {{ group|component }}
 ==
-
 
 evaluator==#|python|
 
