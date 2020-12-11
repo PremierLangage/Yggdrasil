@@ -1,5 +1,11 @@
 # VOICI UN EXEMPLE DE RANDOMISATION A OUTRANCE
 # DE CE FAIT, UN TEL EXO PEUT ÊTRE DONNÉ EN TP ET EN EXAMEN DANS LE MEME COURS.
+# La probabilité de faire deux fois la même instance est quasi-nulle
+
+# sage: 3*3*3*3*6*((binomial(6, 2)*2)**4)                                                   
+# 393660000 --> versions différentes au bas mot.. 
+# (probablement estimé par défault d'un facteur 1000 ou plus)
+# En gros, chaque partie est unique et plus jamais jouée...
 
 @ /utils/sandboxio.py
 
@@ -147,7 +153,14 @@ for item in group.items:
             bad += 1
 
 note = (good*100) // (good+bad)
-feedback = "Vous avez donné "+str(good)+" réponse(s) correcte(s) et "+str(bad)+"  ereur(s)."
+if note == 100:
+    feedback = "Bravo, c'est parfait, votre selection est la bonne !"
+else:
+    if bad == 1:
+        error_str = " erreur."
+    else:
+        error_str = " erreurs."
+    feedback = "Vous avez fait "+str(bad)+error_str
 grade = (note, feedback)
 ==
 
