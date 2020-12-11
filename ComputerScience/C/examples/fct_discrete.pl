@@ -31,7 +31,7 @@ fct_val_str = "\\begin{array}{rcl} \n"
 for i in range(cardinal_defi):
     img_fct.append(choice(ensemble_img))
     fct_val_str += fct_name + "(" + str(ensemble_defi[i]) + ") & = & "
-    fct_val_str += str(img_fct[i]) + " \\  \n"
+    fct_val_str += str(img_fct[i]) + " \\\\  \n"
 fct_val_str += "\\end{array} \n"
 
 # extraction de sens maintenant
