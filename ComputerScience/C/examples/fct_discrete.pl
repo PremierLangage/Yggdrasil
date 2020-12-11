@@ -50,6 +50,18 @@ for i in range(cardinal_defi):
 content_preimg_1= " $% "+fct_name+"^{-1} ( \\left\\lbrace "+" , ".join([str(e) for e in ing_subset_1])+" \\right\\rbrace ) "
 content_preimg_1+=" =  \\left\\lbrace "+" , ".join([str(e) for e in preimg_subset_1])+" \\right\\rbrace  %$  "
 
+# images subset 2
+subimg_card_2 = randint(1, 3)
+ing_subset_2 = sample(ensemble_img, subimg_card_2)
+
+# calcul de la préimage du sous ensemble d'images 2
+preimg_subset_2 = [] 
+for i in range(cardinal_defi):
+    if img_fct[i] in ing_subset_2:
+        preimg_subset_1.append(ensemble_defi[i])
+content_preimg_2= " $% "+fct_name+"^{-1} ( \\left\\lbrace "+" , ".join([str(e) for e in ing_subset_2])+" \\right\\rbrace ) "
+content_preimg_2+=" =  \\left\\lbrace "+" , ".join([str(e) for e in preimg_subset_2])+" \\right\\rbrace  %$  "
+
 group.items = []
 group.items.append({"id": "injective", "content": " $% "+fct_name+" %$  est injective"})
 group.items.append({"id": "surjective", "content": " $% "+fct_name+" %$  est surjective"})
