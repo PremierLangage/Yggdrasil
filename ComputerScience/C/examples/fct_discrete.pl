@@ -40,11 +40,7 @@ is_surjective = (len(set(img_fct)) == cardinal_img)
 
 
 group.items = []
-for i in range(4):
-    group.items.append({
-        "id": str(i),
-        "content": str(randint(0, 100))
-    })
+group.items.append({"id": "injective", "content": " $% "+fct_name+" %$  est injective"})
 ==
 
 title=Fonction entre deux ensembles discret
