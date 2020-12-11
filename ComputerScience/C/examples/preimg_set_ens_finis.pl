@@ -124,7 +124,6 @@ et à valeurs dans l'ensemble fini $% B = {{ ensemble_img_str }}%$ prenant les v
 
 $%{{ fct_val_str }}%$
 
-<br>
 ==
 
 form==#|html|
