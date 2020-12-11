@@ -20,6 +20,7 @@ ensemble_defi_str = " \\left\\lbrace " + ",".join([str(e) for e in  ensemble_def
 # Pareil, choix aléatoire des images
 cardinal_img = randint(4, 7)
 ensemble_img = choice(lists_symbols)[:cardinal_img]
+ensemble_img_str = " \\left\\lbrace " + ",".join([str(e) for e in  ensemble_img]) + "  \\right\\rbrace "
 
 # nom de la fonction 
 fct_name = choice(['f', 'g', 'h', 'F', 'G', 'H'])
@@ -45,7 +46,8 @@ for i in range(4):
 title=Fonction entre deux ensembles discret
 
 text==#|markdown|
-Soit $%{{ fct_name }}%$ une fonction définit sur l'ensemble discret $%{{ ensemble_defi_str }}%$
+Soit $%{{ fct_name }}%$ une fonction définie sur l'ensemble discret $%{{ ensemble_defi_str }}%$ 
+et à valeurs dans l'ensemble $%{{ ensemble_img_str }}%$
 ==
 
 form==
