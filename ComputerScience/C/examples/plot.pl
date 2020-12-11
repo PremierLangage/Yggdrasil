@@ -4,6 +4,7 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 graph =: MathDrawer
+
 graph.script ==
 const grid = board.create('grid', [], {gridX: 0.25, gridY: 0.25});
 const Ox = board.create('axis', [[0, 0], [1, 0]], {ticks: {visible: false}});
@@ -19,10 +20,10 @@ const secOAM = board.create('sector', [O, A, M], {color: 'orange'});
 group =: CheckboxGroup
 
 # GENERATE A RANDOM QUESTION
-before==
-
-
+before==#|python|
 import random
+
+
 group.items = []
 for i in range(4):
     group.items.append({
@@ -33,19 +34,20 @@ for i in range(4):
 
 title = Checkbox Group Component
 
-text==
+text==#|markdown|
 Voici le graphe d'une fonction $% f %$ défini sur l'ensemble fini $% {1, 2, 3, 4, 5} %$
 
 {{ graph|component }}
 ==
 
-# PRESENT THE QUESTION TO THE STUDENT
+
 form==
+Sélection les propositions correctes avant de valider.
+
 {{ group|component }}
 ==
 
-# EVALUATE THE STUDENT ANSWER
-evaluator==
+evaluator==#|python|
 
 grade = (100, 'Super ce feedback')
 ==
