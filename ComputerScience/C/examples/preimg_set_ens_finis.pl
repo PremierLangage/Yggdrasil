@@ -61,7 +61,7 @@ else:
     val = choice(img_fct)
     while img_fct.count(val) < 2:
         val = choice(img_fct)
-    fb_inj = "La fonction n'est pas injective, $% "+str(val)+" %$ possède $% "+img_fct.count(val)+" %$ antécédants."
+    fb_inj = "La fonction n'est pas injective, $% "+str(val)+" %$ possède $% "+str(img_fct.count(val))+" %$ antécédants."
 # feedback surjectivité
 if is_surjective:
     fb_surj = "La fonction est surjective, les images couvrent totalement l'ensemble d'arrivée."
