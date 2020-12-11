@@ -45,7 +45,7 @@ for i in range(4):
 title = Checkbox Group Component
 
 text==#|markdown|
-Soit $%{{ fct_name }}%$ une fonction définit sur l'ensemble discret $%{{ ensemble_defi_str }}%$
+Soit $%{{ fct_name }}%$ une fonction définit sur l'ensemble discret $% { {{ ensemble_defi_str }} } %$
 ==
 
 form==
