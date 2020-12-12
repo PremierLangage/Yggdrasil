@@ -76,7 +76,7 @@ fct_list.append({"name": "(0 < a < b) \quad P",           # P comme un polynôme
                  "inj" : [True, False],
                  "fb_inj": "C'est un polynôme factorisé avec deux racines distinctes positives. $% 0 %$ a donc deux antécédants $% a %$ et $% b %$.",})
 
-fct_list.append({"name": " lp ",           # lp comme log d'un polynome...
+fct_list.append({"name": " lp ",                          # lp comme log d'un polynome...
                  "formula": " ln(x^2 + 1) ",
                  "dom" : ["] 0 , + \\infty [", "[0 , + \\infty [", " \\mathbb{R} "],
                  "codom" : ["] 0 , + \\infty [", "[0 , + \\infty [", "[0 , + \\infty [", " \\mathbb{R} "],
