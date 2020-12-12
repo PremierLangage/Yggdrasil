@@ -33,7 +33,7 @@ for fct in fct_sample:
     dom = fct["dom"][i]
     k = min([i+1, len(fct["codom"]) - 1])
     j = randint(i, k)
-    codom = fct["dom"][j]
+    codom = fct["codom"][j]
     group.items.append({
         "id": fct["name"],
         "content": " $$ "+make_latex_fct(fct["name"], fct["formula"], dom, codom)+" $$ ",
