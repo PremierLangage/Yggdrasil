@@ -28,7 +28,7 @@ fct_list.append({"name": "cube",
                  "formula": "x^{3}",
                  "dom" : ["[0, 2]", "[0, 2] \\cup \\lbrace -2 \\rbrace", "[-2, 2]", "\\mathbb{R}"],
                  "codom" : ["[0, 8]", "[0, 8] \\cup \\lbrace -8 \\rbrace", "[-8, 8]", "\\mathbb{R}"],
-                 "inj" : [True],})
+                 "inj" : [True, True, True, True],})
 
 fct_list.append({"name": "carré", 
                  "formula": "x^{2}",
