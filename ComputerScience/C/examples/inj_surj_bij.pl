@@ -57,7 +57,8 @@ for fct in fct_sample:
 title=fonctions {{ criteria }}
 
 text==
-Select even numbers.
+Reconnaitre les fonctions {{ criteria }}. Lisez systématiquement et très attentivement 
+les domaines de définition ainsi que les ensembles d'arrivés.
 ==
 
 form==#|html|
