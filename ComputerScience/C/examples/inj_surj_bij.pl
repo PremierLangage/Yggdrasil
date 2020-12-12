@@ -108,6 +108,11 @@ for fct in fct_sample:
             soluce = "good"
         else:
             soluce = "bad"
+    else: # sinon, on demande de reconnaitre les surjections...
+        if i == j:
+            soluce = "good"
+        else:
+            soluce = "bad"
     group.items.append({
         "id": soluce+fct["name"],
         "content": " $% \quad "+make_latex_fct(fct["name"], fct["formula"], dom, codom)+" %$ ",
