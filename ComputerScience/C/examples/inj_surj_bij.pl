@@ -10,6 +10,8 @@ criteria=injectives
 before==#|python|
 from random import sample, randint
 
+# Plus il y a de fonction différente, mieux c'est !
+
 fct_list=[]
 fct_list.append({"name": "cube", 
                  "formula": "x^{3}",
@@ -18,8 +20,8 @@ fct_list.append({"name": "cube",
 
 fct_list.append({"name": "carré", 
                  "formula": "x^{2}",
-                 "dom" : ["[0, 2]"],
-                 "codom" : ["[0, 4]"],})
+                 "dom" : ["[0, 2]", "[-2, 2]", "[0, 2] \cup \{ -2 \}"],
+                 "codom" : ["[0, 4]", "[0, 4]", "[0, 4]", "[0, 4] \cup \{ -4 \}"],})
 
 fct_list.append({"name": "exp", 
                  "formula": "e^{x}",
