@@ -1,7 +1,4 @@
-title= 
-text= 
-form= 
-grader= 
+criteria=surjectives
 
 extends=/ComputerScience/C/examples/inj_surj_bij.pl
 
