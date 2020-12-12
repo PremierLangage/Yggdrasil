@@ -127,7 +127,7 @@ for item in group.items:
         else:
             nb_bad += 1
             if "good" in item['id']:
-                fb_detail += """<li><p><span class="error-state" style="padding: 0.8em;">"""+item['content']+"  est bien injective.</span></p></li><br>"
+                fb_detail += """<li><p><span class="error-state" style="padding: 0.8em;">"""+item['content']+"  est bien <b>injective</b>.</span></p></li><br>"
             else:
                 short_name = item['id'][3:]
                 for fct in fct_sample:
