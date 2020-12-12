@@ -83,7 +83,7 @@ for fct in fct_sample:
     codom = fct["codom"][j]
     # detection ici des bonnes et mauvaise réponse
     if criteria == "injectives":
-        if fct["dom"][i]:
+        if fct["inj"][i]:
             soluce = "good"
         else:
             soluce = "bad"
