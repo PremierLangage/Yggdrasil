@@ -5,7 +5,7 @@
 # sage: 3*3*3*3*6*((binomial(6, 2)*2)**4)                                                   
 # 393660000 --> versions différentes au bas mot.. 
 # (probablement estimé par défault d'un facteur 1000 ou plus)
-# En gros, chaque partie est unique et plus jamais jouée...
+# En gros, chaque partie est quasi-unique et plus jamais jouée (c'est pas 23 comme les anniversaires)
 
 @ /utils/sandboxio.py
 
