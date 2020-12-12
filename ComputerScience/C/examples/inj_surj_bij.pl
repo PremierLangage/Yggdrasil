@@ -98,6 +98,13 @@ fct_list.append({"name": " Sqrt ",
                  "inj" : [True, False, False],
                  "fb_inj": " $% 1 %$ a deux antécédants $% 1 %$ et $% -1 %$.",})
 
+fct_list.append({"name": " cos ",
+                 "formula": " cos(x) ",
+                 "dom" : ["[0, \pi]"],
+                 "codom" : ["[-1, 1]"],
+                 "inj" : [True],
+                 "fb_inj": " $% 1 %$ a deux antécédants $% 1 %$ et $% -1 %$.",})
+
 
 def make_latex_fct(name, formula, dom, codom):
     """
