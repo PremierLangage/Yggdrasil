@@ -100,10 +100,10 @@ fct_list.append({"name": " Sqrt ",
 
 fct_list.append({"name": " cos ",
                  "formula": " cos(x) ",
-                 "dom" : ["[0, \\frac{\\pi}{2} ]", "[0, \\pi]", "] - \\pi , \\pi [", "[ - \\pi , \\pi ]", " \\mathbb{R} "],
+                 "dom" : ["[0, \\frac{\\pi}{2} ]", "[0, \\pi]", "[ - \\pi , \\pi [", "[ - \\pi , \\pi ]", " \\mathbb{R} "],
                  "codom" : ["[0, 1]", "[-1, 1]", "[-1, 1]", "[-1, 1]", "[-1, 1]", " \\mathbb{R} "],
                  "inj" : [True, True, False, False, False],
-                 "fb_inj": " $% 0 %$ a deux antécédants $% - \\frac{\pi}{2} %$ et $% \\frac{\pi}{2} %$. ",})
+                 "fb_inj": " $% 0 %$ a au moins deux antécédants $% - \\frac{\pi}{2} %$ et $% \\frac{\pi}{2} %$. ",})
 
 
 def make_latex_fct(name, formula, dom, codom):
@@ -132,7 +132,7 @@ for fct in fct_sample:
             soluce = "bad"
     else: # sinon, on demande de reconnaitre les surjections...
         if i == j:
-            soluce = "good"
+            soluce = "good" 
         else:
             soluce = "bad"
     group.items.append({
