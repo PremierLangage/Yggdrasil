@@ -61,6 +61,8 @@ fct_list.append({"name": "(c \in \mathbb{R}) \quad C^{ste}",
                  "inj" : [True, False, False],})
 
 
+
+
 def make_latex_fct(name, formula, dom, codom):
     """
     return a nice latex string describing the function.
