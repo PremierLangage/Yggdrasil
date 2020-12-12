@@ -25,7 +25,7 @@ for i in range(4):
     })
 ==
 
-title=
+title=fonctions {{ criteria }}
 
 text==
 Select even numbers.
