@@ -67,7 +67,7 @@ fct_list.append({"name": "abs",
                  "dom" : ["[0, 5]", "[0, 10]", "[-10, 10]", "\\mathbb{R}"],
                  "codom" : ["[0, 5]", "[0, 10]", "[0, 10]", "\\mathbb{R}_{+}", "\\mathbb{R}"],
                  "inj" : [True, True, False, False],
-                 "fb_inj": " $% \lvert 1 \rvert = \lvert -1 \rvert = 1 %$ ce qui fait que $% 1 %$ a 2 antécédants, la fonction n'est pas injective.",})
+                 "fb_inj": " $% \\lvert 1 \\rvert = \\lvert -1 \\rvert = 1 %$ ce qui fait que $% 1 %$ a 2 antécédants, la fonction n'est pas injective.",})
 
 def make_latex_fct(name, formula, dom, codom):
     """
