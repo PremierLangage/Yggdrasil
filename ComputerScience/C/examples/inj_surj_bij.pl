@@ -117,7 +117,7 @@ def make_latex_fct(name, formula, dom, codom):
     return ans
 
 group.items = []
-fct_sample = sample(fct_list, 4)
+fct_sample = sample(fct_list, 5)
 for fct in fct_sample:
     i = randint(0, len(fct["dom"]) - 1)
     dom = fct["dom"][i]
