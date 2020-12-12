@@ -76,6 +76,14 @@ fct_list.append({"name": "(0 < a < b) \quad P",           # P comme un polynôme
                  "inj" : [True, False],
                  "fb_inj": "C'est un polynôme factorisé avec deux racines distinctes positives. $% 0 %$ a donc deux antécédants $% a %$ et $% b %$.",})
 
+fct_list.append({"name": "lp",           # lp comme log d'un polynome...
+                 "formula": "ln(x^2 + 1)",
+                 "dom" : ["] 0 , + \\infty [", "\\mathbb{R}_{+}", "\\mathbb{R}"],
+                 "codom" : ["] 0 , + \\infty [", "\\mathbb{R}_{+}", "\\mathbb{R}_{+}", "\\mathbb{R}"],
+                 "inj" : [True, True, False],
+                 "fb_inj": " $% ln(2) %$ a deux antécédants $% 1 %$ et $% -1 %$.",})
+
+
 def make_latex_fct(name, formula, dom, codom):
     """
     return a nice latex string describing the function.
