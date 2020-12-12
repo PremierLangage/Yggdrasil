@@ -16,6 +16,16 @@ fct_list.append({"name": "cube",
                  "dom" : ["[0, 2]"],
                  "codom" : ["[0, 8]"],})
 
+fct_list.append({"name": "carré", 
+                 "formula": "x^{2}",
+                 "dom" : ["[0, 2]"],
+                 "codom" : ["[0, 4]"],})
+
+fct_list.append({"name": "exp", 
+                 "formula": "e^{x}",
+                 "dom" : ["[0, + \infty ["],
+                 "codom" : ["[1, + \infty ["],})
+
 def make_latex_fct(name, formula, dom, codom):
     """
     return a nice latex string describing the function.
