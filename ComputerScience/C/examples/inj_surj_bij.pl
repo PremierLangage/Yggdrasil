@@ -54,6 +54,12 @@ fct_list.append({"name": "(a < 0) \quad d",       # d comme droite descendante ?
                  "codom" : ["[b+a, b]", "[b+2a, b-2a]", "\\mathbb{R}"],
                  "inj" : [True, True],})
 
+fct_list.append({"name": "(c \in \mathbb{R}) \quad C^{ste}",
+                 "formula": "c",
+                 "dom" : ["\{ 0 \}", "[0, 10]", "\\mathbb{R}"],
+                 "codom" : ["\{ c \}", "\{ c \}", "\{ c \}", "\\mathbb{R}"],
+                 "inj" : [True, False, False],})
+
 
 def make_latex_fct(name, formula, dom, codom):
     """
