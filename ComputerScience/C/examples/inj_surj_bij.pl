@@ -81,8 +81,14 @@ for fct in fct_sample:
     k = min([i+1, len(fct["codom"]) - 1])
     j = randint(i, k)
     codom = fct["codom"][j]
+    # detection ici des bonnes et mauvaise réponse
+    if criteria == "injectives":
+        if fct["dom"][i]:
+            soluce = "good"
+        else:
+            soluce = "bad"
     group.items.append({
-        "id": fct["name"],
+        "id": soluce+fct["name"],
         "content": " $% \quad "+make_latex_fct(fct["name"], fct["formula"], dom, codom)+" %$ ",
     })
 
@@ -105,7 +111,10 @@ form==#|html|
 {{ group|component }}
 ==
 
-evaluator==
+evaluator==#|python|
+# Destruction du formulaire --> une seule réponse possible et imposssible de modifier
+
+
 
 
 grade = (100, 'Right')
