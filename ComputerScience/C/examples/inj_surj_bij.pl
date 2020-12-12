@@ -38,9 +38,9 @@ fct_list.append({"name": "carré",
 
 fct_list.append({"name": "exp", 
                  "formula": "e^{x}",
-                 "dom" : ["[0, + \infty ["],
-                 "codom" : ["[1, + \infty ["],
-                 "inj" : [True],})
+                 "dom" : ["[0, + \infty [", "\\mathbb{R}"]
+                 "codom" : ["[1, + \infty [", "] 0 , + \infty [", "\\mathbb{R}"],
+                 "inj" : [True, True],})
 
 
 
