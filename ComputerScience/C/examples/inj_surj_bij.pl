@@ -42,13 +42,13 @@ fct_list.append({"name": "exp",
                  "codom" : ["[1, + \infty [", "] 0 , + \infty [", "\\mathbb{R}"],
                  "inj" : [True, True],})
 
-fct_list.append({"name": "(a > 0) \quad D",       # D comme droite ?
+fct_list.append({"name": "(a > 0) \quad D",       # D comme droite assendante ?
                  "formula": "a*x + b",
                  "dom" : ["[0, 1]"],
                  "codom" : ["[b, a+b]", "\\mathbb{R}"],
                  "inj" : [True],})
 
-fct_list.append({"name": "(a < 0) \quad d",       # d comme droite ?
+fct_list.append({"name": "(a < 0) \quad d",       # d comme droite descendante ?
                  "formula": "a*x + b",
                  "dom" : ["[0, 1]", "[-2, 2]"],
                  "codom" : ["[b+a, b]", "[b+2a, b-2a]", "\\mathbb{R}"],
