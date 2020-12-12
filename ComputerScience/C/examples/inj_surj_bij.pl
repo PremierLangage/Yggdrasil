@@ -34,7 +34,8 @@ Select even numbers.
 form==#|html|
 <b>Parmi les fonctions suivantes, selectionnez celles qui sont {{ criteria }}.</b><br>
 
-<i>Attention, tout est possible. Tout peut-être juste et tout peut être faux.</i>
+<i>Attention, tout est possible. Tout peut-être bon et tout peut être mauvais.</i>
+
 
 {{ group|component }}
 ==
