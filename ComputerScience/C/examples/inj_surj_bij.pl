@@ -6,6 +6,7 @@ builder =@ /builder/before.py
 group =: CheckboxGroup
 
 criteria=injectives
+# criteria=surjectives
 
 before==#|python|
 from random import sample, randint
@@ -81,6 +82,13 @@ fct_list.append({"name": " lp ",                          # lp comme log d'un po
                  "dom" : ["] 0 , + \\infty [", "[0 , + \\infty [", " \\mathbb{R} "],
                  "codom" : ["] 0 , + \\infty [", "[0 , + \\infty [", "[0 , + \\infty [", " \\mathbb{R} "],
                  "inj" : [True, True, False],
+                 "fb_inj": " $% ln(2) %$ a deux antécédants $% 1 %$ et $% -1 %$.",})
+
+fct_list.append({"name": " ln ",
+                 "formula": " ln(x) ",
+                 "dom" : ["] 0, 1 [", "] 0 , + \\infty ["],
+                 "codom" : ["] - \infty , 0 [", " \\mathbb{R} "],
+                 "inj" : [True, True],
                  "fb_inj": " $% ln(2) %$ a deux antécédants $% 1 %$ et $% -1 %$.",})
 
 
