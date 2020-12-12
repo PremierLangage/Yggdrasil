@@ -3,7 +3,7 @@ text=
 form= 
 grader= 
 
-extend=@ /ComputerScience/C/examples/inj_surj_bij.pl
+extends=@ /ComputerScience/C/examples/inj_surj_bij.pl
 
 criteria=surjectives
 
