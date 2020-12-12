@@ -71,10 +71,10 @@ fct_list.append({"name": "abs",
 
 fct_list.append({"name": "(0 < a < b < 0) \quad P",                         # P comme un polynôme factorisé
                  "formula": "(x - a)(x - b)",
-                 "dom" : ["[0, 5]", "[0, 10]", "[-10, 10]", "\\mathbb{R}"],
-                 "codom" : ["[0, 5]", "[0, 10]", "[0, 10]", "\\mathbb{R}_{+}", "\\mathbb{R}"],
-                 "inj" : [True, True, False, False],
-                 "fb_inj": "C'est un polynôme factorisé avec deux racines distinctes positives. $% 0 %$ a donc deux antécédants.",})
+                 "dom" : ["[b, + \\infty [", "\\mathbb{R}"],
+                 "codom" : ["[0, + \\infty [", ""],
+                 "inj" : [True, False],
+                 "fb_inj": "C'est un polynôme factorisé avec deux racines distinctes positives. $% 0 %$ a donc deux antécédants $% a %$ et $% b %$.",})
 
 def make_latex_fct(name, formula, dom, codom):
     """
