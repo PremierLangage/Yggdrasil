@@ -125,7 +125,7 @@ for item in group.items:
         else:
             nb_bad += 1
             if "good" in item['id']:
-                fb_detail += item['content']+"  est bien injective."
+                fb_detail += "<li>"+item['content']+"  est bien injective.</li><br>"
 
 note = (nb_good*100) // (nb_good+nb_bad)
 if note == 100:
