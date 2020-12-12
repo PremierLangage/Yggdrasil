@@ -34,7 +34,8 @@ fct_list.append({"name": "carré",
                  "formula": "x^{2}",
                  "dom" : ["[0, 1]", "[0, 2]", "[0, 2] \\cup \\lbrace -2 \\rbrace", "[-2, 2]", "\\mathbb{R}"],
                  "codom" : ["[0, 1]", "[0, 4]", "[0, 4]", "[0, 4]", "\\mathbb{R}_{+}", "[0, 4] \\cup \\lbrace -4 \\rbrace"],
-                 "inj" : [True, True, False, False, False],})
+                 "inj" : [True, True, False, False, False],
+                 "fb_inj": ["$% 4 %$ a deux antécédants $% 2 %$ et $% -2 %$."],})
 
 fct_list.append({"name": "exp", 
                  "formula": "e^{x}",
@@ -58,7 +59,8 @@ fct_list.append({"name": "(c \in \mathbb{R}) \quad C^{ste}",
                  "formula": "c",
                  "dom" : ["\{ 0 \}", "[0, 10]", "\\mathbb{R}"],
                  "codom" : ["\\lbrace c \\rbrace", "\\lbrace c \\rbrace", "\\lbrace c \\rbrace", "\\mathbb{R}"],
-                 "inj" : [True, False, False],})
+                 "inj" : [True, False, False],
+                 "fb_inj": ["Tous les éléments du domaine de définition sont des antécédants de $% c %$."],})
 
 
 def make_latex_fct(name, formula, dom, codom):
