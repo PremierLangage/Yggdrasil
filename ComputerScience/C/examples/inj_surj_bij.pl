@@ -129,7 +129,10 @@ for item in group.items:
             if "good" in item['id']:
                 fb_detail += "<li>"+item['content']+"  est bien injective.</li><br>"
             else:
-                fb_detail += "<li>"+item['content']+"  n'est pas injective.</li><br>"
+                short_name = item['id'][3:]
+                for fct in fct_sample:
+                    if fct['name'] == short_name
+                        fb_detail += "<li>"+item['content']+"  n'est pas injective. "+fct['bf_inj']+"</li><br>"
 
 note = (nb_good*100) // (nb_good+nb_bad)
 if note == 100:
