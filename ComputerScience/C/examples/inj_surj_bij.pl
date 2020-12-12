@@ -26,15 +26,15 @@ from random import sample, randint
 fct_list=[]
 fct_list.append({"name": "cube", 
                  "formula": "x^{3}",
-                 "dom" : ["[0, 2]", "[0, 2] \\cup \\lbrace -2 \\rbrace", "[-2, 2]", "\\mathbb{R}"],
-                 "codom" : ["[0, 8]", "[0, 8] \\cup \\lbrace -8 \\rbrace", "[-8, 8]", "\\mathbb{R}"],
-                 "inj" : [True, True, True, True],})
+                 "dom" : ["[0, 1]", "[0, 2]", "[0, 2] \\cup \\lbrace -2 \\rbrace", "[-2, 2]", "\\mathbb{R}"],
+                 "codom" : ["[0, 1]", "[0, 8]", "[0, 8] \\cup \\lbrace -8 \\rbrace", "[-8, 8]", "\\mathbb{R}"],
+                 "inj" : [True, True, True, True, True],})
 
 fct_list.append({"name": "carré", 
                  "formula": "x^{2}",
-                 "dom" : ["[0, 2]", "[0, 2] \\cup \\lbrace -2 \\rbrace", "[-2, 2]", "\\mathbb{R}"],
-                 "codom" : ["[0, 4]", "[0, 4]", "[0, 4]", "\\mathbb{R}_{+}", "[0, 4] \\cup \\lbrace -4 \\rbrace"],
-                 "inj" : [True, False, False, False],})
+                 "dom" : ["[0, 1]", "[0, 2]", "[0, 2] \\cup \\lbrace -2 \\rbrace", "[-2, 2]", "\\mathbb{R}"],
+                 "codom" : ["[0, 1]", "[0, 4]", "[0, 4]", "[0, 4]", "\\mathbb{R}_{+}", "[0, 4] \\cup \\lbrace -4 \\rbrace"],
+                 "inj" : [True, True, False, False, False],})
 
 fct_list.append({"name": "exp", 
                  "formula": "e^{x}",
