@@ -87,9 +87,16 @@ fct_list.append({"name": " lp ",                          # lp comme log d'un po
 fct_list.append({"name": " ln ",
                  "formula": " ln(x) ",
                  "dom" : ["] 0, 1 [", "] 0 , + \\infty ["],
-                 "codom" : ["] - \infty , 0 [", " \\mathbb{R} "],
+                 "codom" : ["] - \\infty , 0 [", " \\mathbb{R} "],
                  "inj" : [True, True],
                  "fb_inj": " $% ln(2) %$ a deux antécédants $% 1 %$ et $% -1 %$.",})
+
+fct_list.append({"name": " Sqrt ",
+                 "formula": " \\sqrt{ \\lvert x \\rvert } ",
+                 "dom" : ["[0, 1]", "[-1, 1]", "\mathbb{R}"],
+                 "codom" : ["[0, 1]", "[0, 1]", "[0, + \\infty [", "\mathbb{R}"],
+                 "inj" : [True, False, False],
+                 "fb_inj": " $% 1 %$ a deux antécédants $% 1 %$ et $% -1 %$.",})
 
 
 def make_latex_fct(name, formula, dom, codom):
