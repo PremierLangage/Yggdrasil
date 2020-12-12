@@ -36,7 +36,7 @@ for fct in fct_sample:
     codom = fct["dom"][j]
     group.items.append({
         "id": fct["name"],
-        "content": make_latex_fct(fct["name"], fct["formula"], dom, codom),
+        "content": " $% "+make_latex_fct(fct["name"], fct["formula"], dom, codom)+" %$ ",
     })
 
 
