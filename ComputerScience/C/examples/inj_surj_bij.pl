@@ -69,10 +69,10 @@ fct_list.append({"name": "abs",
                  "inj" : [True, True, False, False],
                  "fb_inj": " $% \\lvert 1 \\rvert = \\lvert -1 \\rvert = 1 %$ ce qui fait que $% 1 %$ a 2 antécédants.",})
 
-fct_list.append({"name": "(0 < a < b < 0) \quad P",                         # P comme un polynôme factorisé
+fct_list.append({"name": "(0 < a < b < 0) \quad P",           # P comme un polynôme factorisé
                  "formula": "(x - a)(x - b)",
                  "dom" : ["[b, + \\infty [", "\\mathbb{R}"],
-                 "codom" : ["[0, + \\infty [", "[ \\frac{(b-a)^{2}}{4} , + \\infty [", "\\mathbb{R}"],
+                 "codom" : ["[0, + \\infty [", "[ - \\frac{(b-a)^{2}}{4} , + \\infty [", "\\mathbb{R}"],
                  "inj" : [True, False],
                  "fb_inj": "C'est un polynôme factorisé avec deux racines distinctes positives. $% 0 %$ a donc deux antécédants $% a %$ et $% b %$.",})
 
