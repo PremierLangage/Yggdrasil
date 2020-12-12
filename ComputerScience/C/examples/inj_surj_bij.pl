@@ -57,7 +57,7 @@ fct_list.append({"name": "(a < 0) \quad d",       # d comme droite descendante ?
 
 fct_list.append({"name": "(c \in \mathbb{R}) \quad C^{ste}",
                  "formula": "c",
-                 "dom" : ["\{ 0 \}", "[0, 10]", "\\mathbb{R}"],
+                 "dom" : ["\\lbrace 0 \\rbrace", "[0, 10]", "\\mathbb{R}"],
                  "codom" : ["\\lbrace c \\rbrace", "\\lbrace c \\rbrace", "\\lbrace c \\rbrace", "\\mathbb{R}"],
                  "inj" : [True, False, False],
                  "fb_inj": "Tous les éléments du domaine de définition sont des antécédants de $% c %$. Une fonction constante n'est donc plus injective dès que son ensemble de définition contient au moins 2 éléments distincts.",})
