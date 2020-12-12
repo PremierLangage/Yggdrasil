@@ -8,7 +8,7 @@ group =: CheckboxGroup
 criteria=injectives
 
 before==#|python|
-from random import sample
+from random import sample, randint
 
 fct_list=[]
 fct_list.append({"name": "cube", 
@@ -29,9 +29,14 @@ def make_latex_fct(name, formula, dom, codom):
 group.items = []
 fct_sample = sample(fct_list, 1)
 for fct in fct_sample:
+    i = randint(0, len(fct["dom"]) - 1)
+    dom = fct["dom"][i]
+    k = min([i+1, len(fct["codom"]) - 1])
+    j = randint(i, k)
+    codom = fct["dom"][j]
     group.items.append({
         "id": fct["name"],
-        "content": make_latex_fct(fct["name"], fct["formula"], fct["dom"], fct["codom"]),
+        "content": make_latex_fct(fct["name"], fct["formula"], dom, codom),
     })
 
 
