@@ -57,7 +57,7 @@ fct_list.append({"name": "(a < 0) \quad d",       # d comme droite descendante ?
 fct_list.append({"name": "(c \in \mathbb{R}) \quad C^{ste}",
                  "formula": "c",
                  "dom" : ["\{ 0 \}", "[0, 10]", "\\mathbb{R}"],
-                 "codom" : ["\\{ c \\}", "\\{ c \\}", "\\{ c \\}", "\\mathbb{R}"],
+                 "codom" : ["\\lbrace c \\rbrace", "\\lbrace c \\rbrace", "\\lbrace c \\rbrace", "\\mathbb{R}"],
                  "inj" : [True, False, False],})
 
 
