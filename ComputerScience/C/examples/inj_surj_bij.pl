@@ -27,8 +27,8 @@ def make_latex_fct(name, formula, dom, codom):
     return ans
 
 group.items = []
-for i in range(1):
-    fct = sample(fct_list, 1)
+fct_sample = sample(fct_list, 1)
+for fct in fct_sample:
     group.items.append({
         "id": fct["name"],
         "content": make_latex_fct(fct["name"], fct["formula"], fct["dom"], fct["codom"]),
