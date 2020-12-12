@@ -113,10 +113,30 @@ form==#|html|
 
 evaluator==#|python|
 # Destruction du formulaire --> une seule réponse possible et imposssible de modifier
+form=""
 
 
+nb_good = 0
+nb_bad = 0
+fb_detail = ""
+for item in group.items:
+    checked = item['checked']
+    if criteria == "injectives":
+        if ("good" in item['id'] and checked) or ("bad" in item['id'] and not checked):
+            nb_good += 1
+        else:
+            nb_bad += 1
 
-
-grade = (100, 'Right')
+note = (good*100) // (good+bad)
+if note == 100:
+    feedback = """<p><span class="success-state" style="padding: 0.8em;">Bravo, c'est parfait, votre selection est la bonne !</span></p><br />"""
+else:
+    if bad == 1:
+        error_str = " erreur.</span></p>"
+    else:
+        error_str = " erreurs.</span></p>"
+    feedback = """<p><span class="error-state" style="padding: 0.8em;">Vous avez fait """+str(bad)+error_str
+    feedback += "<br><ul>"+fb_detail+"</ul>"
+grade = (note, feedback)
 ==
 
