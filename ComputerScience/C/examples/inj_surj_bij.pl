@@ -21,9 +21,9 @@ def make_latex_fct(name, formula, dom, codom):
     return a nice latex string describing the function.
     """
     ans = " \\begin{array}{ccccc} "
-    ans += name+" & : & "+dom+" & \\to & "+codom+" \\\\"
-    ans += "& & x & \\mapsto & "+formula+" \\\\"
-    ans += "\\end{array} "
+    ans += name+" & : & "+dom+" & \\to & "+codom+" \\\\ "
+    ans += "& & x & \\mapsto & "+formula+" \\\\ "
+    ans += " \\end{array} "
     return ans
 
 group.items = []
