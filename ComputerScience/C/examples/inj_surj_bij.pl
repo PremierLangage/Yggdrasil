@@ -61,8 +61,6 @@ fct_list.append({"name": "(c \in \mathbb{R}) \quad C^{ste}",
                  "inj" : [True, False, False],})
 
 
-
-
 def make_latex_fct(name, formula, dom, codom):
     """
     return a nice latex string describing the function.
@@ -126,6 +124,8 @@ for item in group.items:
             nb_good += 1
         else:
             nb_bad += 1
+            if "good" in item['id']:
+                fb_detail += item['content']+"  est bien injective."
 
 note = (nb_good*100) // (nb_good+nb_bad)
 if note == 100:
