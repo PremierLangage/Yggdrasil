@@ -17,7 +17,7 @@ from random import sample, randint
 # dom --> une liste de domaines [E1 ,E2, ..., En] 
 #         (n domaines sou forme de chaine latex) croissant pour l'inclusion
 # codom --> une liste de minimum n codomaine [F1 = f(E1), F2 = f(E2), ..., Fn = f(En) , Fn+1, ...] 
-#           croissant pour l'inclusion avec possiblement plus de codomaine à la fin
+#           croissant pour l'inclusion au début puis des domaines strictement plus grand que Fn.
 # inj --> une liste de n booléen précisant s'il y a injectivité sur le domaine (Ei)_{1<i<n}
 
 # De ce fait, les injections sont injectives si le booléen dit oui...
@@ -26,15 +26,15 @@ from random import sample, randint
 fct_list=[]
 fct_list.append({"name": "cube", 
                  "formula": "x^{3}",
-                 "dom" : ["[0, 2]"],
-                 "codom" : ["[0, 8]"],
+                 "dom" : ["[0, 2]", "[0, 2] \\cup \\lbrace -2 \\rbrace", "[-2, 2]", "\\mathbb{R}"],
+                 "codom" : ["[0, 8]", "[0, 8] \\cup \\lbrace -8 \\rbrace", "[-8, 8]", "\\mathbb{R}"],
                  "inj" : [True],})
 
 fct_list.append({"name": "carré", 
                  "formula": "x^{2}",
                  "dom" : ["[0, 2]", "[0, 2] \\cup \\lbrace -2 \\rbrace", "[-2, 2]", "\\mathbb{R}"],
-                 "codom" : ["[0, 4]", "[0, 4]", "[0, 4]", "\\mathbb{R}", "[0, 4] \\cup \\lbrace -4 \\rbrace"],
-                 "inj" : [True, False, False],})
+                 "codom" : ["[0, 4]", "[0, 4]", "[0, 4]", "\\mathbb{R}_{+}", "[0, 4] \\cup \\lbrace -4 \\rbrace"],
+                 "inj" : [True, False, False, False],})
 
 fct_list.append({"name": "exp", 
                  "formula": "e^{x}",
