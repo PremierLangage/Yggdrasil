@@ -5,7 +5,7 @@ builder =@ /builder/before.py
 
 group =: CheckboxGroup
 
-criteria=injective
+criteria=injectives
 
 before==#|python|
 import random
