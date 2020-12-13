@@ -169,7 +169,7 @@ nb_bad = 0
 fb_detail = ""
 for item in group.items:
     checked = item['checked']
-
+    
     # coorection en mode injection....
     if criteria == "injectives":
         if ("good" in item['id'] and checked) or ("bad" in item['id'] and not checked):
@@ -183,7 +183,7 @@ for item in group.items:
                 for fct in fct_sample:
                     if fct['name'] == short_name:
                         fb_detail += """<li><div class="error-state" style="padding: 0.8em;">"""+item['content']+"  n'est pas injective. "+fct['fb_inj']+"</div></li><br><br>"
-
+    
     # sinon correction en mode surjection
     else:
          if ("good" in item['id'] and checked) or ("bad" in item['id'] and not checked):
