@@ -91,7 +91,7 @@ fct_list.append({"name": " ln ",
                  "inj" : [True, True],
                  "fb_inj": " $% ln(2) %$ a deux antécédants $% 1 %$ et $% -1 %$.",})
 
-fct_list.append({"name": " Sqrt ",
+fct_list.append({"name": " \\overline{Sqrt} ",
                  "formula": " \\sqrt{ \\lvert x \\rvert } ",
                  "dom" : ["[0, 1]", "[-1, 1]", "\mathbb{R}"],
                  "codom" : ["[0, 1]", "[0, 1]", "[0, + \\infty [", "\mathbb{R}"],
