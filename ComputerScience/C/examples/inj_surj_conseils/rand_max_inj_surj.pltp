@@ -1,0 +1,52 @@
+title=Injections, surjections, bijections
+
+# Quelques conseils pour un examen avec le PLaTon actuel (premier semestre 2020-2021)
+#
+# --> Platon n'est pas prêt et pas super stable avec les exercices à étapes
+#     Quand il faut cliquer 5 fois sur valider pour faire un seul exo, cela
+#     crée des risque de plantage. Pour le moment, favoriser les exercices
+#     à un seul clic maximise la fluidité (en gros les QCM à étapes présentent
+#     un petit danger).
+#
+# --> Les jeunes échangent énormément entre eux (de manière ouverte ou caché).
+#     Dès qu'ils ont le message que c'est noté, ils font n'importe quoi avec 
+#     la plateforme. Il faut ainsi essayer d'éviter au maximum les exercices 
+#     à chute ou prévisible. Plus les exos sont mortellement aléatoire, Plus
+#     la seule solution consiste à travailler naturellement.
+#
+# --> Pour les QCM, je vous conseille des solutions à un seul clic sur valider.
+#     C'est possible (mais encore très expérimental : ça date de moins de 3 semaines)
+#     Je vous ai mis un carrousel à 5 question AVEC un copier-coller de VOS questions.
+#     Vous verrez que l'on peut faire tourner les questions mais on ne valide que
+#     une seule fois. Attention, ce template expérimental n'a aucun feedback, il 
+#     affiche juste une note en pourcentage.
+#
+# --> J'ai regardé un peu vos exos et je vous en ai copier 3 dans lesquels 
+#     j'ai tenté de mettre vraiment UNE DOSE INFAME d'aléatoire. j'espère
+#     que cela force quiconque qui tente l'exo à le faire. Je pense que la
+#     triche et la communication ne sont quasi plus possible. Sinon, il faut
+#     un expert avec soit à la maison H24 ce qui parait plus compliqué. Je ne
+#     sais pas si tout ce que j'y es mis est mathématiquement juste (je suis 
+#     rouillé).
+
+introduction==
+Attention, les exercices qui suivent ne vous laisserons tous qu'une seule
+tentative. Allez-y calmement et prennez le temps de vous relire avant de 
+valider.
+
+==
+
+@ /ComputerScience/C/examples/inj_surj_conseils/qcm_carrousel.pl
+
+@ /ComputerScience/C/examples/inj_surj_conseils/preimg_set_ens_finis.pl
+
+@ /ComputerScience/C/examples/inj_surj_conseils/preimg_set_ens_finis.pl
+
+@ /ComputerScience/C/examples/inj_surj_conseils/inj_surj_bij.pl
+
+@ /ComputerScience/C/examples/inj_surj_conseils/inj_surj_bij.pl
+
+@ /ComputerScience/C/examples/inj_surj_conseils/inj_surj_bij_2.pl
+
+@ /ComputerScience/C/examples/inj_surj_conseils/inj_surj_bij_2.pl
+
