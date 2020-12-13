@@ -185,7 +185,7 @@ for item in group.items:
                         fb_detail += """<li><div class="error-state" style="padding: 0.8em;">"""+item['content']+"  n'est pas injective. "+fct['fb_inj']+"</div></li><br><br>"
     
     # sinon correction en mode surjection
-    else:
+    if criteria == "surjectives":
          if ("good" in item['id'] and checked) or ("bad" in item['id'] and not checked):
             nb_good += 1
         else:
