@@ -186,7 +186,7 @@ for item in group.items:
     
     # sinon correction en mode surjection
     if criteria == "surjectives":
-         if ("good" in item['id'] and checked) or ("bad" in item['id'] and not checked):
+        if ("good" in item['id'] and checked) or ("bad" in item['id'] and not checked):
             nb_good += 1
         else:
             nb_bad += 1
