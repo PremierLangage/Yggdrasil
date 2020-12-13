@@ -29,6 +29,14 @@ title=Injections, surjections, bijections
 #     un expert avec soit à la maison H24 ce qui parait plus compliqué. Je ne
 #     sais pas si tout ce que j'y es mis est mathématiquement juste (je suis 
 #     rouillé...).
+#
+# --> Si des fois, ces exos très aléatoires vous plaisent, ils faut que votre
+#     équipe pédagogiques les teste puis les valide. Il y a tellement de cas 
+#     possibles qu'une erreur peut s'être glissé facilement dans le tas. Tous
+#     ces exercices ont un détail important : il y a destruction du 
+#     formulaire de réponses dans le grader. Techniquement, il est impossible
+#     de répondre deux fois à ces exercices. C'est violent mais c'est super 
+#     pratique pour un examen !
 
 introduction==
 Attention, les exercices qui suivent ne vous laisserons tous qu'une seule
