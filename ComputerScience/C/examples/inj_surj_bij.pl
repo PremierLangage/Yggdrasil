@@ -135,6 +135,7 @@ for fct in fct_sample:
             soluce = "good" 
         else:
             soluce = "bad"
+    fct["fb_surj"] = fct["name"] + " ( " + fct["dom"][i] + " ) = " + fct["codom"][i]
     group.items.append({
         "id": soluce+fct["name"],
         "content": " $% \quad "+make_latex_fct(fct["name"], fct["formula"], dom, codom)+" %$ ",
@@ -190,6 +191,15 @@ for item in group.items:
             nb_good += 1
         else:
             nb_bad += 1
+            if "good" in item['id']:
+                fb_detail += """<li><div class="error-state" style="padding: 0.8em;">"""+item['content']+"  est bien <b>surjective</b>.</div></li><br><br>"
+            else:
+                short_name = item['id'][3:]
+                for fct in fct_sample:
+                    if fct['name'] == short_name:
+
+                        fb_detail += """<li><div class="error-state" style="padding: 0.8em;">"""+item['content']+"  n'est pas surjective. "+fct['fb_inj']+"</div></li><br><br>"
+            
 
 note = (nb_good*100) // (nb_good+nb_bad)
 if note == 100:
