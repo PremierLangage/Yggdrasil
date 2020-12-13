@@ -34,7 +34,7 @@ fct_list.append({"name": "cube",
 fct_list.append({"name": "carré", 
                  "formula": "x^{2}",
                  "dom" : ["[0, 1]", "[0, 2]", "[0, 2] \\cup \\lbrace -2 \\rbrace", "[-2, 2]", "\\mathbb{R}"],
-                 "codom" : ["[0, 1]", "[0, 4]", "[0, 4]", "[0, 4]", "\\mathbb{R}_{+}", "[0, 4] \\cup \\lbrace -4 \\rbrace"],
+                 "codom" : ["[0, 1]", "[0, 4]", "[0, 4]", "[0, 4]", "\\mathbb{R}_{+}", "\\mathbb{R}"],
                  "inj" : [True, True, False, False, False],
                  "fb_inj": "$% 4 %$ a deux antécédants $% 2 %$ et $% -2 %$.",})
 
