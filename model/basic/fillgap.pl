@@ -41,6 +41,8 @@ before ==
 import re
 from itertools import count
 
+counter = count(0)
+
 ==
 
 
