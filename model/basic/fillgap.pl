@@ -12,7 +12,7 @@ from itertools import count
 
 #counter = count(1)
 
-dropsolutions = re.findall(r'\{(.*?)\}', filledtext)
+#dropsolutions = re.findall(r'\{(.*?)\}', filledtext)
 #form = re.sub(r'\{(.*?)\}', lambda x: "{{ drops[" + "0" + "]|component }}", filledtext)
 
 nbdrops = len(dropsolutions)
