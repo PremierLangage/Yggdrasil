@@ -33,22 +33,6 @@ text ==
 
 ==
 
-filledtext ==
-Voici des {fruits}, des {fleurs}
-==
-
-form ==
-<img src="{{scheme}}" style="max-width: 300px; vertical-align:top; display: inline-block"> 
-<ul>
-{% for i in range(nbdrops) %}
-<li> {{ i + 1 }}. {{ drops[i]|component }} </li>
-{% endfor %}
-</ul>
-
-{% for label in labels %}
-{{ label|component }}
-{% endfor %}
-==
 
 evaluator ==
 n = len(drops)
