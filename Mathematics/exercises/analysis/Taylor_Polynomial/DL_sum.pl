@@ -1,3 +1,5 @@
+# Author : C. Petitjean.
+
 extends = /model/mathinput.pl
 
 title = Développement limité d'une somme.
@@ -44,3 +46,4 @@ La solution est $! {{ sol|latex}} !$.
 
 # Remarque : eval_expr(input.value, sol) est envisageable, mais l'évaluateur ne vérifie 
 #            pas si la solution de l'étudiant est donnée sous forme simplifiée.
+
