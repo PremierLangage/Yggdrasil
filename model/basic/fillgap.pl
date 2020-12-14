@@ -46,15 +46,6 @@ counter = count(0)
 lst = re.findall(r'\{(.*?)\}', filledtext)
 ==
 
-dropsolutions ==
-homologues
-hétérologues
-spermatozoïde
-ovocyte
-diploïdes
-haploïdes
-homologues
-==
 
 text ==
 {{lst}}
