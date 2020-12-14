@@ -21,7 +21,7 @@ nbdrops = len(dropsolutions)
 for _ in dropsolutions:
     drops.append(CustomDragDrop.Drop())
 
-for content in dropsolutions:
+for content in ["ggg"]:
     labels.append(CustomDragDrop.Label(content=content))
 
 ==
