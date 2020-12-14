@@ -1,3 +1,5 @@
+# Author : D. Doyen
+
 extends = /model/mathmatrix.pl
 
 title==
@@ -27,5 +29,6 @@ score, feedback = eval_matrix(mat.getmatrix(), sol)
 solution ==
 La solution est $$\left( {{ sol|latex }} \right).$$
 ==
+
 
 
