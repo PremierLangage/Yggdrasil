@@ -9,8 +9,8 @@ labels = []
 
 import re
 
-#dropsolutions = re.findall(r'\{(.*?)\}', filledtext)
-#form = re.sub(r'\{(.*?)\}', lambda x: "{{ drops[" + str(next(counter)) + "]|component }}", filledtext)
+dropsolutions = re.findall(r'\{(.*?)\}', filledtext)
+form = re.sub(r'\{(.*?)\}', lambda x: "{{ drops[" + str(next(counter)) + "]|component }}", filledtext)
 
 dropsolutions = ["gg"]
 nbdrops = len(dropsolutions)
