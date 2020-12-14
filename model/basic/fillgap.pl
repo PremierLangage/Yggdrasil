@@ -41,9 +41,9 @@ before ==
 import re
 from itertools import count
 
-iterator = count(start = 0)
+#iterator = count(start = 0)
 
-# lst = re.findall(r'\{(.*?)\}', filledtext)
+lst = re.findall(r'\{(.*?)\}', filledtext)
 
 ==
 
