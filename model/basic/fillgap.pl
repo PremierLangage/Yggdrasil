@@ -36,12 +36,11 @@ filledtext ==
 {hhh} bbbb {hhhj}
 ==
 
-import re
-from itertools import count
 
-#iterator = count(start = 0)
 
 footerbefore ==
+import re
+
 from customdragdrop import CustomDragDrop
 drops = []
 labels = []
