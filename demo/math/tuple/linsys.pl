@@ -21,9 +21,10 @@ Ecrire la solution sous forme d'un couple de nombres.
 ==
 
 evaluator ==
-score, error, feedback = eval_tuple(input.value, sol, checksize=True)
+score, feedback = eval_tuple(input.value, sol, checksize=True)
 ==
 
 solution == 
 La solution est $! {{sol|latex}} !$.
 ==
+
