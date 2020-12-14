@@ -55,7 +55,7 @@ labels = []
 lstdropsolutions = re.findall(r'\{(.*?)\}', filledtext)
 form = filledtext
 for i in range(len(lstdropsolutions)):
-    form = re.sub(r'\{(.*?)\}', replace , form, count=1)
+    form = re.sub(r'\{(.*?)\}', replace , form)
 
 
 for content in lstdropsolutions:
