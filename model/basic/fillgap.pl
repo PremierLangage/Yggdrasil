@@ -16,7 +16,7 @@ from itertools import count
 
 counter = count(0)
 
-lst = re.findall(r'\{(.*?)\}', filledtex)
+lst = re.findall(r'\{(.*?)\}', filledtext)
 form = re.sub(r'\{(.*?)\}', lambda x: "{{ drops[" + str(next(counter)) + "]|component }}", filledtext)
 ==
 
