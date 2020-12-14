@@ -43,7 +43,7 @@ Les cellules  humaines  somatique  sont  dites {diploïdes} (contiennent  23 pai
 footerbefore ==
 import re
 count = 0
-def replace():
+def replace(x):
     count += 1
     return "{{ drops[" + str(i) + "]|component }}"
 
