@@ -33,7 +33,9 @@ Les cellules  humaines  somatique  sont  dites {{ drops[4]|component }} (contie
 
 
 filledtext ==
-{hhh} bbbb {hhhj}
+On trouve dans une cellule somatique 23 paires de chromosomes: 22 paires de chromosomes {homologues},  et  une  paire  de  chromosomes  {hétérologues}  (les  chromosomes sexuels  X  et  Y). 
+Dans  une  paire  de  chromosomes  {homologues}, un des  chromosomes vient  du gamète  paternel  ({spermatozoïde}),  l’autre  du gamète  maternel  ({ovocyte}).  
+Les cellules  humaines  somatique  sont  dites {diploïdes} (contiennent  23 paires  de  chromosomes),  alors  que les cellules germinales (les gamètes) sont dites {haploïdes} (23 chromosomes).
 ==
 
 
