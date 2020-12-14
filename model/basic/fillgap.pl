@@ -1,37 +1,43 @@
 extends = /model/basic/dragdrop.pl
 
-title =
+title ==
+Chromosomes
+==
+
+dropsolutions ==
+homologues
+hétérologues
+spermatozoïde
+ovocyte
+diploïdes
+haploïdes
+homologues
+==
+
+shuffle % true
+
+text ==
+Compléter le texte suivant avec les étiquettes.
+==
+
+form ==
+On trouve dans une cellule somatique 23 paires de chromosomes: 22 paires de chromosomes {{ drops[0]|component }},  et  une  paire  de  chromosomes  {{ drops[1]|component }}  (les  chromosomes sexuels  X  et  Y). 
+Dans  une  paire  de  chromosomes  {{ drops[6]|component }}, un des  chromosomes vient  du gamète  paternel  ({{ drops[2]|component }}),  l’autre  du gamète  maternel  ({{ drops[3]|component }}).  
+Les cellules  humaines  somatique  sont  dites {{ drops[4]|component }} (contiennent  23 paires  de  chromosomes),  alors  que les cellules germinales (les gamètes) sont dites {{ drops[5]|component }} (23 chromosomes).
+
+<br>
+{% for label in labels %}
+{{ label|component }}
+{% endfor %}
+==
+
 
 filledtext ==
 {hhh} bbbb {hhhj}
 ==
 
 
-footerbefore ==
-from customdragdrop import CustomDragDrop
-drops = []
-labels = []
-
-if isinstance(dropsolutions, str):
-    lstdropsolutions = dropsolutions.splitlines()
-else:
-    lstdropsolutions = dropsolutions
-
-if 'labelcontents' in globals():
-    if isinstance(labelcontents, str):
-        list_labelcontents = labelcontents.splitlines()
-    else:
-        list_labelcontents = labelcontents
-else:
-    list_labelcontents = list(set(lstdropsolutions))
-
-for content in list_labelcontents:
-    labels.append(CustomDragDrop.Label(content=content))
-
-nbdrops = len(lstdropsolutions)
-for _ in lstdropsolutions:
-    drops.append(CustomDragDrop.Drop())
-
+before ==
 import re
 from itertools import count
 
@@ -53,26 +59,3 @@ homologues
 text ==
 {{lst}}
 ==
-
-
-evaluator ==
-n = len(drops)
-num_right = 0
-num_wrong = 0
-
-for i in range(n):
-    if drops[i].content == lstsolutions[i]:
-        num_right += 1
-        drops[i].css += "success-state"
-    else:
-        num_wrong +=1
-        drops[i].css += "error-state"
-
-if num_wrong > 0 :
-    score = 0
-else:
-    score = 100
-==
-
-
-
