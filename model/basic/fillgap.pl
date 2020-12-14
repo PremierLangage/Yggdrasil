@@ -42,9 +42,10 @@ Les cellules  humaines  somatique  sont  dites {diploïdes} (contiennent  23 pai
 
 footerbefore ==
 import re
-from itertools import count
-
-c = count()
+count = 0
+def replace():
+    count += 1
+    return "{{ drops[" + str(i) + "]|component }}"
 
 from customdragdrop import CustomDragDrop
 drops = []
@@ -53,7 +54,7 @@ labels = []
 lstdropsolutions = re.findall(r'\{(.*?)\}', filledtext)
 form = filledtext
 for i in range(len(lstdropsolutions)):
-    form = re.sub(r'\{(.*?)\}', "{{ drops[" + str(i) + "]|component }}", form, count=1)
+    form = re.sub(r'\{(.*?)\}', replace , form, count=1)
 
 
 for content in lstdropsolutions:
