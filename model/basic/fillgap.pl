@@ -37,4 +37,13 @@ filledtext ==
 ==
 
 
+before ==
+import re
+from itertools import count
 
+==
+
+
+text ==
+{{lst}}
+==
