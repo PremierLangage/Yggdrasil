@@ -36,20 +36,26 @@ filledtext ==
 {hhh} bbbb {hhhj}
 ==
 
-
-before ==
 import re
 from itertools import count
 
 #iterator = count(start = 0)
 
-lst = re.findall(r'\{(.*?)\}', filledtext)
+footerbefore ==
+from customdragdrop import CustomDragDrop
+drops = []
+labels = []
+
+lstdropsolutions = re.findall(r'\{(.*?)\}', filledtext)
 for i in range(len(lst)):
     filledtext = re.sub(r'\{(.*?)\}', "{{ drops[" + str(i) + "]|component }}", filledtext, count=1)
 
+
+for content in set(lstdropsolutions):
+    labels.append(CustomDragDrop.Label(content=content))
+
+nbdrops = len(lstdropsolutions)
+for _ in lstdropsolutions:
+    drops.append(CustomDragDrop.Drop())
 ==
 
-
-text ==
-{{filledtext}}
-==
