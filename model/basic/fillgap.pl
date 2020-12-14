@@ -18,6 +18,14 @@ counter = count(0)
 
 lst = re.findall(r'\{(.*?)\}', filledtext)
 form = re.sub(r'\{(.*?)\}', lambda x: "{{ drops[" + str(next(counter)) + "]|component }}", filledtext)
+
+for content in lst:
+    labels.append(CustomDragDrop.Label(content=content))
+
+nbdrops = len(lst)
+for _ in range(nbdrops):
+    drops.append(CustomDragDrop.Drop())
+
 ==
 
 
