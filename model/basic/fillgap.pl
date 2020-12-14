@@ -10,7 +10,7 @@ labels = []
 import re
 from itertools import count
 
-number_count = 1;
+number_count = 1
 counter = count(number_count)
 
 dropsolutions = re.findall(r'\{(.*?)\}', filledtext)
