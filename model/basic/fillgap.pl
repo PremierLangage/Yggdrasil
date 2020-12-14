@@ -16,6 +16,9 @@ counter = count(number_count)
 dropsolutions = re.findall(r'\{(.*?)\}', s)
 form = re.sub(r'\{(.*?)\}', lambda x: "{{ drops[" + str(next(counter)) + "]|component }}", s)
 
+nbdrops = len(dropsolutions)
+for _ in dropsolutions:
+    drops.append(CustomDragDrop.Drop())
 
 ==
 
