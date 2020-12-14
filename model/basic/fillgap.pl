@@ -14,11 +14,19 @@ number_count = 1;
 counter = count(number_count)
 
 dropsolutions = re.findall(r'\{(.*?)\}', s)
-form = re.sub(r'\{(.*?)\}', lambda x: "{{ drops[" + str(next(counter)) + "]|component }}", s)
+form = re.sub(r'\{(.*?)\}', lambda x: "{{ drops[" + str(next(counter)) + "]|component }}", filledtext)
 
 nbdrops = len(dropsolutions)
 for _ in dropsolutions:
     drops.append(CustomDragDrop.Drop())
+
+==
+
+filledtext ==
+On trouve dans une cellule somatique 23 paires de chromosomes: 22 paires de chromosomes {homologues},  et  une  paire  de  chromosomes  {hétérologues}  (les  chromosomes sexuels  X  et  Y). 
+Dans  une  paire  de  chromosomes  {homologues}, un des  chromosomes vient  du gamète  paternel  ({spermatozoïde}),  l’autre  du gamète  maternel  ({ovocyte}).  
+Les cellules  humaines  somatique  sont  dites {diploïdes} (contiennent  23 paires  de  chromosomes),  alors  que les cellules germinales (les gamètes) sont dites {haploïdes} (23 chromosomes).
+
 
 ==
 
