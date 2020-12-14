@@ -50,7 +50,7 @@ for i in range(len(lstdropsolutions)):
     filledtext = re.sub(r'\{(.*?)\}', "{{ drops[" + str(i) + "]|component }}", filledtext, count=1)
 
 
-for content in set(lstdropsolutions):
+for content in lstdropsolutions:
     labels.append(CustomDragDrop.Label(content=content))
 
 nbdrops = len(lstdropsolutions)
