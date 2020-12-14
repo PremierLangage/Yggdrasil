@@ -46,8 +46,9 @@ drops = []
 labels = []
 
 lstdropsolutions = re.findall(r'\{(.*?)\}', filledtext)
+form = filledtext
 for i in range(len(lstdropsolutions)):
-    filledtext = re.sub(r'\{(.*?)\}', "{{ drops[" + str(i) + "]|component }}", filledtext, count=1)
+    form = re.sub(r'\{(.*?)\}', "{{ drops[" + str(i) + "]|component }}", form, count=1)
 
 
 for content in lstdropsolutions:
