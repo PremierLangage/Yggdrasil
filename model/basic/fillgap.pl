@@ -44,6 +44,7 @@ footerbefore ==
 import re
 count = 0
 def replace(x):
+    global count
     count += 1
     return "{{ drops[" + str(i) + "]|component }}"
 
