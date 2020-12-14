@@ -46,7 +46,7 @@ count = 0
 def replace(x):
     global count
     count += 1
-    return "{{ drops[" + str(i) + "]|component }}"
+    return "{{ drops[" + str(count) + "]|component }}"
 
 from customdragdrop import CustomDragDrop
 drops = []
