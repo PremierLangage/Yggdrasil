@@ -2,6 +2,10 @@ extends = /model/basic/dragdrop.pl
 
 title =
 
+filledtext ==
+{hhh} bbbb {hhhj}
+==
+
 footerbefore ==
 from customdragdrop import CustomDragDrop
 drops = []
@@ -10,24 +14,10 @@ labels = []
 import re
 from itertools import count
 
-#counter = count(1)
+counter = count(0)
 
-#dropsolutions = re.findall(r'\{(.*?)\}', filledtext)
-#form = re.sub(r'\{(.*?)\}', lambda x: "{{ drops[" + "0" + "]|component }}", filledtext)
-
-nbdrops = len(dropsolutions)
-for _ in dropsolutions:
-    drops.append(CustomDragDrop.Drop())
-
-for content in ["ggg"]:
-    labels.append(CustomDragDrop.Label(content=content))
-
-==
-
-filledtext ==
-On trouve dans une cellule somatique 23 paires de chromosomes: 22 paires de chromosomes {homologues},  et  une  paire  de  chromosomes  {hétérologues}  (les  chromosomes sexuels  X  et  Y). 
-Dans  une  paire  de  chromosomes  {homologues}, un des  chromosomes vient  du gamète  paternel  ({spermatozoïde}),  l’autre  du gamète  maternel  ({ovocyte}).  
-Les cellules  humaines  somatique  sont  dites {diploïdes} (contiennent  23 paires  de  chromosomes),  alors  que les cellules germinales (les gamètes) sont dites {haploïdes} (23 chromosomes).
+lst = re.findall(r'\{(.*?)\}', filledtex)
+form = re.sub(r'\{(.*?)\}', lambda x: "{{ drops[" + str(next(counter)) + "]|component }}", filledtext)
 ==
 
 
