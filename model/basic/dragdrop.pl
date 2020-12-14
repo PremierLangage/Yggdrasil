@@ -30,6 +30,15 @@ for _ in lstdropsolutions:
     drops.append(CustomDragDrop.Drop())
 ==
 
+dropsolutions ==
+homologues
+hétérologues
+spermatozoïde
+ovocyte
+diploïdes
+haploïdes
+homologues
+==
 
 text =
 
@@ -108,3 +117,4 @@ style.dragdrop ==
   cursor: pointer;
 }
 ==
+
