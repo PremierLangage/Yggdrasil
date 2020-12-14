@@ -52,10 +52,10 @@ from customdragdrop import CustomDragDrop
 drops = []
 labels = []
 
-lstdropsolutions = re.findall(r'\{(.?*)\}', filledtext)
+lstdropsolutions = re.findall(r'\{(.*?)\}', filledtext)
 form = filledtext
 for i in range(len(lstdropsolutions)):
-    form = re.sub(r'\{(.?*)\}', replace , form)
+    form = re.sub(r'\{(.*?)\}', replace , form)
 
 
 for content in lstdropsolutions:
