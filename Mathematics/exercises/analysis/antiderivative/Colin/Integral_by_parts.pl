@@ -43,7 +43,7 @@ $$ \int_{ {{a | latex }} }^{ {{b | latex }} } {{f | latex}} \mathrm dx $$
 ==
 
 evaluator ==
-score, error = eval_expr(input.value, sol)
+score, error = eval_function(input.value, sol)
 feedback = message[error]
 ==
 
