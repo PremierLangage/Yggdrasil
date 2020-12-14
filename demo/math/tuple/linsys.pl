@@ -11,7 +11,7 @@ B = rand_int_matrix(n, 1, 3, [0])
 
 sol = list(linsolve((A, B)))[0]
 
-linsys = latex_linsys(A,B)
+linsys = latex_linsys(A, B)
 ==
 
 text ==
