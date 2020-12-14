@@ -43,7 +43,9 @@ from itertools import count
 
 #iterator = count(start = 0)
 
-dropsolutins = re.findall(r'\{(.*?)\}', filledtext)
+lst = re.findall(r'\{(.*?)\}', filledtext)
+for i in range(len(lst)):
+    filledtext = re.sub(r'\{(.*?)\}', "{{ drops[" + str(i) + "]|component }}", filledtext, count=1)
 
 ==
 
