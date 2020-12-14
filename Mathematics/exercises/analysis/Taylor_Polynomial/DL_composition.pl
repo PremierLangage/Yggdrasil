@@ -1,5 +1,7 @@
 # Author : C. Petitjean.
 
+# Attention, il faut modifier l'exo sur certaines compositions qui se simplifient toutes seules.
+
 extends = /model/mathinput.pl
 
 title = Développement limité d'une composition.
