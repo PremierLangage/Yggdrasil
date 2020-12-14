@@ -43,7 +43,7 @@ from itertools import count
 
 #iterator = count(start = 0)
 
-dropsolutions = re.findall(r'\{(.*?)\}', filledtext)
+dropsolutins = re.findall(r'\{(.*?)\}', filledtext)
 
 ==
 
