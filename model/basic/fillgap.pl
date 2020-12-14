@@ -43,7 +43,7 @@ from itertools import count
 
 counter = count(0)
 
-lst = re.findall(r'\{(.*?)\}', filledtext)
+# lst = re.findall(r'\{(.*?)\}', filledtext)
 ==
 
 
