@@ -30,16 +30,6 @@ for _ in lstdropsolutions:
     drops.append(CustomDragDrop.Drop())
 ==
 
-dropsolutions ==
-homologues
-hétérologues
-spermatozoïde
-ovocyte
-diploïdes
-haploïdes
-homologues
-==
-
 text =
 
 scheme =$ /Biology/media/550px-Cranial_bones_numbers.svg.png
