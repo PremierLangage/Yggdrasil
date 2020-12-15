@@ -5,11 +5,11 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 #! linter:title:str
-
 #! linter:text:
 #! linter:textdelaselection:
 #! linter:mots:
-#! linter:cible
+#! linter:cible:
+
 
 text==
 Dans le text suivant choisissez {{cible}}.
