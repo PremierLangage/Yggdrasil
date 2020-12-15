@@ -1,5 +1,4 @@
-@ /builder/before.py [builder.py]
-@ /grader/evaluator.py [grader.py]
+extends = /model/basic.pl
 
 before ==
 import random as rd
