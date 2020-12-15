@@ -8,9 +8,5 @@ Choisir les adverbes.
 ==
 
 
-textdelaselection=Cette phrase est brutalement étonnament courte.
-
-
-
 
 mots=@ adverbes.txt
