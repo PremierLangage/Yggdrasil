@@ -15,5 +15,8 @@ form ==
 ==
 
 evaluator==
-
+    if input.value == a + b:
+        score = 100
+    else:
+        score = 0
 ==
