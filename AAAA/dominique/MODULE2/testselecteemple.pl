@@ -1,11 +1,16 @@
 extends = /model/textselectdecl.pl
 
 
-cible = les adverbes
+cible =titre
+
+text==
+Choisir les adverbes.
+==
+
 
 textdelaselection=Cette phrase est brutalement étonnament courte.
 
-mots==
-brutalement
-étonnament
-==
+
+
+
+mots=@ adverbes.txt
