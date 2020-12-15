@@ -22,7 +22,7 @@ form==
 before==
 import random,readcsv, mkl
 
-group.items,solution, debug = readcsv.getrandomselection(sourcecol="source",targetcol="target")
+group.items,solution, debug = readcsv.getrandomselection(sourcecol="target",targetcol="source")
 
 solutionvalue =random.choice(solution)
 
