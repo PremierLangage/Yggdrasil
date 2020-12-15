@@ -11,14 +11,20 @@ sortlist.items %= #|json|
     { "id": "", "content": "Design" },
     { "id": "", "content": "Développement" },
     { "id": "", "content": "Implementation" },
-    { "id": "", "content": "Evaluation" },
+    { "id": "", "content": "Evaluation" }
 ]
+==
+valeur==
+mot 1
+mot 2
+mot 3
 ==
 
 # RANDOMIZATION
 before== #|python|
 import random
 import uuid
+sortlist.items=[{"content":x}for x in valeur.split("\n")]
 answer = []
 for e in sortlist.items:
     # generate random id because students can
