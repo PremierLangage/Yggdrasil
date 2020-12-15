@@ -33,7 +33,7 @@ form2 = """
 
 form = form + form2
 
-for content in lstdropsolutions:
+for content in lstlabelcontents:
     labels.append(CustomDragDrop.Label(content=content))
 
 nbdrops = len(lstdropsolutions)
