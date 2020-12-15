@@ -35,7 +35,6 @@ right = 0
 total = 0
 for i,item in enumerate(group.items):
     checked = item['checked']
-    content = int(item['content'])
     if indices[i] == True:
         total += 1
         item['css'] = 'success-border animated pulse infinite'
