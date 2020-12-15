@@ -73,7 +73,7 @@ style.dragdrop ==
     position: relative;
     cursor: move;
     display: inline-flex;
-    padding: 8px;
+    padding: 0px;
     box-sizing: border-box;
     min-width: 3em;
     min-height: 2em;
