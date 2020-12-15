@@ -7,8 +7,12 @@ text==
 Donner le produit de 2 et 4
 
 ==
+input =: Input
+input.type = number
 
-form=@ /form/simplenumeric.html
+form ==
+{{ input|component }}
+==
 
 evaluator==
 score==8
