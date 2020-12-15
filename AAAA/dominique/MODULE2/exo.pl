@@ -9,17 +9,19 @@ text==
 Select les nombres premiers inférieur a 15.
 ==
 
-# PRESENT THE QUESTION TO THE STUDENT
 
+evalfunc==
+def evalf(x):
+    return x %2 == 0
 
-# EVALUATE THE STUDENT ANSWER
 evaluator==
+eval(evalfunc)
 right = 0
 total = 0
 for item in group.items:
     checked = item['checked']
     content = int(item['content'])
-    if content in [2,3,5,7,1,13,]:
+    if evalf(content):
         total += 1
         item['css'] = 'success-border animated pulse infinite'
         if checked:
