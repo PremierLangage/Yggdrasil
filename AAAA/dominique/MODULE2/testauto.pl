@@ -18,5 +18,5 @@ form==
 ==
 
 evaluator==
-grade = (100, str(editor.value))
+grade = (100, str(editor))
 ==
