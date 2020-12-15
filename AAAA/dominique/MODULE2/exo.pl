@@ -1,24 +1,12 @@
 
 extends= template.pl
 
-# GENERATE A RANDOM QUESTION
-before==
-import random
-group.items = []
-for i in range(4):
-    group.items.append({
-        "id": str(i),
-        "content": str(random.randint(0, 100))
-    })
 
-toto="est passé par la"
-
-==
 
 title = Checkbox Group Component
 
 text==
-Select even numbers.
+Select les nombres premiers inférieur a 15.
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
@@ -31,7 +19,7 @@ total = 0
 for item in group.items:
     checked = item['checked']
     content = int(item['content'])
-    if content % 2 == 0:
+    if content in [2,3,5,7,1,13,]:
         total += 1
         item['css'] = 'success-border animated pulse infinite'
         if checked:
