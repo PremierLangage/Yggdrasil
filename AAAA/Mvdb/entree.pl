@@ -15,7 +15,7 @@ before==
 form==
 
 la somme
-{{ input1|component]]
+{{ input1|component}}
 
 ==
 
