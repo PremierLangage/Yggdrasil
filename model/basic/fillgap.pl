@@ -20,6 +20,7 @@ drops = []
 labels = []
 
 lstdropsolutions = re.findall(r'\{(.*?)\}', filledtext)
+lstlabelcontents = list(set(lstdropsolutions)) + distractors.splitlines()
 form = filledtext
 form = re.sub(r'\{(.*?)\}', replace , form)
 
