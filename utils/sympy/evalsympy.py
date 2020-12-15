@@ -478,30 +478,6 @@ def func_in_expr(expr):
 
 # Answer evaluation functions
 
-_feedback_ = {
-"Success": "",
-"NotEqual": "",
-"NotExpr": "La réponse doit être une expression mathématique.",
-"NotRealOrInf": "La réponse doit être un nombre réel ou $! +\infty !$ ou $! -\infty !$.",
-"NotRSet": "La réponse doit être un intervalle ou une réunion d'intervalles.",
-"NotCplx": "La réponse doit être un nombre complexe.",
-"NotCplxCartesian": "La réponse doit être un nombre complexe sous forme cartésienne.",
-"NotCplxExponential": "La réponse doit être un nombre complexe sous forme exponentielle.",
-"NotSet": "La réponse doit être un ensemble.",
-"NotTuple": "La réponse doit être un n-uplet (un vecteur ligne).",
-"NotPoly": "La réponse doit être un polynôme.",
-"NotPhysical": "La réponse doit être une valeur numérique suivie d'une unité physique.",
-"PhysicalNotNumeric": "La partie numérique doit être un nombre décimal.",
-"WrongUnit": "Mauvaise unité.",
-"RSetNotDisjoint": "Les ensembles de cette réunion ne sont pas disjoints. La réponse peut être simplifiée.",
-"PolyNotExpanded": "La réponse doit être un polynôme développé.",
-"PolyNotFactorized": "La réponse doit être un polynôme factorisé.",
-"MatWrongSize": "La matrice n'a pas la bonne taille.",
-"NotRatSimp": "L'expression peut encore être simplifiée.",
-"Duplicates": "Il y a des doublons dans l'ensemble.",
-"UnauthorizedFunc": "Votre réponse utilise des fonctions non-autorisées."
-}
-
 def add_feedback(eval):
     def eval_with_feedback(*args, **kwargs):
         if 'dictfeedback' in kwargs:
@@ -773,7 +749,6 @@ def eval_chainineq(strans, sol, local_dict={}, authorized_func={}):
         return (0,"WrongIneq")
     return (100,"Success")
 
-@add_feedback
 def eval_matrix(matans, sol):
     """
     Evaluate an answer when the solution is a matrix.
@@ -833,7 +808,6 @@ def get_numeric_unit(expr):
 
 from sympy.physics.units.systems.si import dimsys_SI, SI
 
-@add_feedback
 def eval_physical(strans, sol, tol, local_dict={}):
     r"""
     Evaluate an answer when the solution is a physical quantity.
