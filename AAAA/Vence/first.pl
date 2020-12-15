@@ -1,6 +1,5 @@
 extends = /model/basic/vraifaux.pl
 
-
 title = Addition
 
 text==
