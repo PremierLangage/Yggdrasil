@@ -90,7 +90,7 @@ style.dragdrop ==
     border: 0px solid #000;
 }
 
-.drag-drop-component:hover {
-    border: 0px solid #000;
+.drag-drop-component.droppable.dnd-over,.drag-drop-component.droppable:hover{
+    border:2px solid #000
 }
 ==
