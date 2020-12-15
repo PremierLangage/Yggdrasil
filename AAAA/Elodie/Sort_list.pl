@@ -10,8 +10,8 @@ sortlist.items %= #|json|
     { "id": "", "content": "Analyse" },
     { "id": "", "content": "Design" },
     { "id": "", "content": "Développement" }
-    { "id": "", "content": "Implémentation" }
-    { "id": "", "content": "Évaluation" }
+    { "id": "", "content": "Implementation" }
+    { "id": "", "content": "Evaluation" }
 ]
 ==
 
