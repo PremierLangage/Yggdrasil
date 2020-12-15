@@ -13,6 +13,7 @@ Select les nombres premiers inférieur a 15.
 evalfunc==
 def evalf(x):
     return x %2 == 0
+==
 
 evaluator==
 eval(evalfunc)
