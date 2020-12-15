@@ -25,7 +25,7 @@ countries = [
     ("Irlande", "Dublin"),
     ("Norvège", "Oslo"),
     ("Suède", "Stockholm"),
-    ("Grèce", "Athènes")
+    ("Grèce", "Athènes"),
 ]
 
 inputbox.autocomplete = []
