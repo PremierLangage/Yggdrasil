@@ -9,20 +9,34 @@ text==
 Select les nombres premiers inférieur a 15.
 ==
 
+# GENERATE A RANDOM QUESTION
+before==
 
-evalfunc==
-def evalf(x):
-    return x %2 == 0
+
+listin = ['Jambon','Oeuf','Levure','Viande','chocolat','sucre']
+indices= [False, True, False, False, True, True]
+
+import random
+group.items = []
+for i,s in enumerate(listin):
+    group.items.append({
+        "id": str(i),
+        "content": s
+    })
+
+
+
 ==
 
+
 evaluator==
-eval(evalfunc)
+
 right = 0
 total = 0
-for item in group.items:
+for i,item in enumerate(group.items):
     checked = item['checked']
     content = int(item['content'])
-    if evalf(content):
+    if indices[i] == True:
         total += 1
         item['css'] = 'success-border animated pulse infinite'
         if checked:
