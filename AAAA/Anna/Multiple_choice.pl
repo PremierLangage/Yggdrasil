@@ -5,7 +5,7 @@ Multiple Choice
 ==
 
 text==
-Parmi ces ingrédients, choisissez-en ceux qui permettent de réaliser des crêpes au chocolat.
+Parmi ces ingrédients, choisissez tout ceux qui permettent de réaliser des crêpes au chocolat.
 ==
 
 choices==
