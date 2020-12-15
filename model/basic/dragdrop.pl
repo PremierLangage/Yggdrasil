@@ -89,4 +89,8 @@ style.dragdrop ==
 .drag-drop-component.droppable {
     border: 0px solid #000;
 }
+
+.drag-drop-component:hover {
+    border: 0px solid #000;
+}
 ==
