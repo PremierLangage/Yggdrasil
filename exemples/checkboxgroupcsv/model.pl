@@ -6,6 +6,14 @@ builder =@ /builder/before.py
 
 group =: CheckboxGroup
 
+# PRESENT THE QUESTION TO THE STUDENT
+form==
+{{ group|component }}
+==
+
+
+
+
 @ maladies.csv [content.csv] 
 @ ../mkl.py
 
@@ -31,10 +39,7 @@ Indiquez les maladies causées par des {{solutionvalue}}
 
 ==
 
-# PRESENT THE QUESTION TO THE STUDENT
-form==
-{{ group|component }}
-==
+
 
 # EVALUATE THE STUDENT ANSWER
 evaluator==
