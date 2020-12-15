@@ -6,7 +6,7 @@ builder =@ /builder/before.py
 
 #! linter:title:str
 #! linter:text:
-#! linter:textdelaselection:
+#!linter:textdelaselection:
 #! linter:mots:
 #! linter:cible:
 
