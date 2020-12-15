@@ -1,7 +1,7 @@
 title = Addition
 
 text==
-Donner le produit et somme de 2 et 4
+Donner le produit de 2 et 4
 
 ==
 
