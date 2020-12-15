@@ -9,8 +9,6 @@ b = rd.randint(10, 20)
 
 title = "Addition"
 
-
-
 text ==
 Donner le produit de 2 et 4
 
