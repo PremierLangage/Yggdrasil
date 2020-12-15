@@ -1,5 +1,3 @@
-extends = /model/basic.pl
-
 title = Addition
 
 text==
