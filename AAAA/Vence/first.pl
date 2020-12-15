@@ -15,5 +15,5 @@ form ==
 ==
 
 evaluator==
-score==8
+
 ==
