@@ -86,4 +86,7 @@ style.dragdrop ==
     margin: 0px;
 }
 
+.drag-drop-component.droppable {
+    border: 0px solid #000;
+}
 ==
