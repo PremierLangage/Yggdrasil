@@ -3,7 +3,7 @@
 
 title = "Addition"
 
-text==
+text ==
 Donner le produit de 2 et 4
 
 ==
