@@ -6,7 +6,7 @@ complex_form = exponential
 
 before ==
 a = randint(1,3)
-theta = randitem([pi/4,3*pi/4,5*pi/4,7*pi/4])
+theta = randitem([pi,pi/2,3*pi/2])
 
 with evaluate(False):
     z=a*exp(I*theta)
