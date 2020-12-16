@@ -21,6 +21,7 @@ image4 =$ /AAAA/Quentin/EXAM-JEUDI/Images/surj-ninj.png
 questions==
 
 ** On considère l'application $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s). 
+
 <img src="{{ image1 }}" alt="IMAGE_1"/>
 
 + f est surjective
@@ -30,6 +31,7 @@ questions==
 - f est bien définie mais n'est ni injective ni surjective
 
 ** On considère l'application $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s).
+
 <img src="{{ image2 }}" alt="IMAGE_2"/>
 
 + f n'est pas une application
@@ -39,6 +41,7 @@ questions==
 - f est bien définie mais n'est ni injective ni surjective
 
 ** On considère l'application $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s).
+
 <img src="{{ image3 }}" alt="IMAGE_3"/>
 
 + f est bien définie mais n'est ni injective ni surjective
@@ -48,6 +51,7 @@ questions==
 - f n'est pas une application
 
 ** On considère l'application $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s).
+
 <img src="{{ image4 }}" alt="IMAGE_4"/>
 
 - f est bien définie mais n'est ni injective ni surjective
