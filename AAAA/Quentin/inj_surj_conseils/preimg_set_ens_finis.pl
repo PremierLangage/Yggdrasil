@@ -27,7 +27,7 @@ def make_latex_ens(L):
 # Collections de symboles ici (on peut en rajouter à la suite...)
 lists_symbols = [ ["a", "b", "c", "d", "e", "f", "g", "h"], 
                   [1, 2, 3, 4, 5, 6, 7, 8], 
-                  ["\\clubsuit, \\diamondsuit, \\heartsuit, \\spadesuit, \\Box, \\boxtimes, \\odot, \\oplus], 
+                  ["\\clubsuit", "\\diamondsuit", "\\heartsuit", "\\spadesuit", "\\Box", "\\boxtimes", "\\odot"," \\oplus"], 
                   ["\\alpha", "\\beta", "\\gamma", "\\delta", "\\eta", "\\mu", "\\tu", "\\pu"], ]
 
 # ça va choisir un cardinal puis entre lettres et chiffres
