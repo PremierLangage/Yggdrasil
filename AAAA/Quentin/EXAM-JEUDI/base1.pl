@@ -15,14 +15,14 @@ nb=5
 nbtrues=3
 
 good==
-f est surjective
-f est injective
-f est bijective
+$!f!$ est surjective
+$!f!$ est injective
+$!f!$ est bijective
 ==
 
 bad==
-f n'est pas une application
-f est bien définie mais n'est ni injective ni surjective
+$!f!$ n'est pas une application
+$!f!$ est bien définie mais n'est ni injective ni surjective
 ==
 
 
