@@ -35,7 +35,7 @@ questions==
 - f est injective
 - f est bijective
 - f est bien définie mais n'est ni injective ni surjective
- 
+
 ** On considère l'application $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s).<br><img src="{{ image3 }}" alt="IMAGE_3"/>
 
 + f est bien définie mais n'est ni injective ni surjective
