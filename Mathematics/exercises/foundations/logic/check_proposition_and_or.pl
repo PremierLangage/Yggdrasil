@@ -29,6 +29,8 @@ for i in range(4):
         n=randitem(list(numbers.difference(P)))
         sol.append(False)
     choices.append(str(n)+" est "+p1+" "+op[i]+" "+p2)
+
+numsol = 0
 ==
 
 text ==
