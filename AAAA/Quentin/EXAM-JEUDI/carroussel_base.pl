@@ -13,10 +13,10 @@ nb_quest_voulu = 5
 title= carroussel
 
 
-image1 =$ /AAAA/Quentin/Images/bij.png
-image2 =$ /AAAA/Quentin/Images/non-appli.png
-image3 =$ /AAAA/Quentin/Images/nsur-ninj.png
-image4 =$ /AAAA/Quentin/Images/surj-ninj.png
+image1 =$ /AAAA/Quentin/EXAM-JEUDI/Images/bij.png
+image2 =$ /AAAA/Quentin/EXAM-JEUDI/Images/non-appli.png
+image3 =$ /AAAA/Quentin/EXAM-JEUDI/Images/nsur-ninj.png
+image4 =$ /AAAA/Quentin/EXAM-JEUDI/Images/surj-ninj.png
 
 questions==
 
