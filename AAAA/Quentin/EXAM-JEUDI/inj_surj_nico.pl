@@ -10,7 +10,7 @@ criteria=injectives
 # criteria=surjectives
 
 # Le titre doit doit être fait en dur (bug jinja + PLTP)
-title=Fonctions injective
+title=Application injective
 
 before==#|python|
 from random import sample, randint
