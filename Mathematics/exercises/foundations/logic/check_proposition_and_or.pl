@@ -1,4 +1,5 @@
 extends = /model/basic/radio.pl
+extends = /model/math.pl
 
 title = Déterminer si une proposition est vraie
 
