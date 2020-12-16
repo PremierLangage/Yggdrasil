@@ -6,10 +6,12 @@ a = rd.randint(10, 20)
 b = rd.randint(10, 20)
 ==
 
-title = "Addition"
+title = "Addition de deux vecteurs"
 
 text ==
-Donner le produit de 2 et 4
+Donner les coordonnées de l'addition des deux vecteurs suivant :
+
+
 
 ==
 
