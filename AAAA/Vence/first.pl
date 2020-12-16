@@ -16,6 +16,7 @@ $! \vec{u} = \left( [1,2,3] \right) !$
 ==
 
 input =: Input
+input.type = number
 
 form ==
 {{ input | component }}
