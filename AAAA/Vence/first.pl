@@ -10,7 +10,7 @@ title = "Addition de deux vecteurs"
 
 text ==
 Donner les coordonnées de l'addition des deux vecteurs suivant :
-
+$! \vec{u} = \left( [1,2,3] \right) !$
 
 
 ==
