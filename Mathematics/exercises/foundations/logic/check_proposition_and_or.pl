@@ -1,8 +1,7 @@
-extends = /Mathematics/template/mathcheckbox.pl
+extends = /model/basic/checkbox.pl
 
 title = Déterminer si une proposition est vraie
 
-lang = fr
 
 before ==
 numbers=set(range(1,41))
@@ -28,8 +27,7 @@ for i in range(4):
     else:
         n=randitem(list(numbers.difference(P)))
         sol.append(False)
-    choices.append({"id":str(i),"content":str(n)+" est "+p1+" "+op[i]+" "+p2})
-component.items = choices
+    choices.append(str(n)+" est "+p1+" "+op[i]+" "+p2)
 ==
 
 text ==
