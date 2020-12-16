@@ -111,7 +111,7 @@ if __name__ == "__main__":
                 feedback += dic['solution']
             elif score < 100 and 'message' in dic:
                 if 'Solution' in message:
-                    feedback += dic[message['solution']]
+                    feedback += dic[message['Solution']]
     
     ffeedback = feedback
     if 'feedback' in dic['settings']:
