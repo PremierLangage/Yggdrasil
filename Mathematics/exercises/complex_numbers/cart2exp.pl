@@ -9,9 +9,9 @@ a = randint(1,3)
 theta = randitem([pi,pi/2,3*pi/2])
 
 with evaluate(False):
-    z=a*exp(I*theta)
+    sol = a*exp(I*theta)
 
-sol = expand_complex(z)
+z = expand_complex(sol)
 ==
 
 text == 
