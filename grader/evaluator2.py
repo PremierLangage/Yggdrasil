@@ -11,7 +11,7 @@ from jinja2 import Template
 try:
     from json_encoder import CustomEncoder, CustomDecoder
 except ModuleNotFoundError:
-    CustomEncoder = PickleEncoder
+    JSONEncoder = PickleEncoder
     CustomDecoder = None
 
 # Import the custom Jinja environnement
@@ -85,8 +85,6 @@ if __name__ == "__main__":
 
     aux_component2(dic)
     
-    dic = json.loads(json.dumps(dic, cls=CustomEncoder))
-
     if 'grade' in dic:
         score = dic['grade'][0]
         feedback = dic['grade'][1] + " "
@@ -120,8 +118,11 @@ if __name__ == "__main__":
         elif dic['settings']['feedback']=='lightscore':
             ffeedback=format_feedback_lightscore(score,feedback)
 
+    # dic = json.loads(json.dumps(dic, cls=CustomEncoder))
+
+
     with open(sys.argv[3], "w+") as f:
-        json.dump(dic, f)
+        json.dump(dic, f, cls=JSONEncoder)
     
     with open(sys.argv[4], "w+") as f:
         print(str(ffeedback), file=f)
