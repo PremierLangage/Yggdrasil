@@ -27,17 +27,17 @@ grade=(100,input.value)
 
 
 
-input =: Input
-input.type = number
+#input =: Input
+#input.type = number
 
-form ==
-{{ input|component }}
-==
+#form ==
+#{{ input|component }}
+#==
 
-evaluator==
-if input.value == 8:
-    score = 100
-else:
-    score = 0
-grade(score,"la réponse est 100")
+#evaluator==
+#if input.value == 8:
+#    score = 100
+#else:
+#    score = 0
+#grade(score,"la réponse est 100")
 ==
