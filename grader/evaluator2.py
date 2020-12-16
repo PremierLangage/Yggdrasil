@@ -113,7 +113,7 @@ if __name__ == "__main__":
                 if 'Solution' in dic['message']:
                     feedback += dic['message']['Solution']
     
-    ffeedback = Env.from_string(feedback).render(dic)
+    feedback = Env.from_string(feedback).render(dic)
     if 'feedback' in dic['settings']:
         if dic['settings']['feedback']=='rightwrong':
             ffeedback=format_feedback_rightwrong(score,feedback)
