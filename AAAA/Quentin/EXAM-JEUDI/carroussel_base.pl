@@ -40,7 +40,9 @@ questions==
 - f est bijective
 - f est bien définie mais n'est ni injective ni surjective
 
-** On considère l'application $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s).<br><img src="{{ image3 }}" alt="IMAGE_3"/>
+** On considère l'application $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s).
+
+![image3]({{ image3 }})
 
 + f est bien définie mais n'est ni injective ni surjective
 - f est surjective
@@ -48,7 +50,9 @@ questions==
 - f est bijective
 - f n'est pas une application
 
-** On considère l'application $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s).<br><img src="{{ image4 }}" alt="IMAGE_4"/>
+** On considère l'application $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s).
+
+![image4]({{ image4 }})
 
 - f est bien définie mais n'est ni injective ni surjective
 + f est surjective
