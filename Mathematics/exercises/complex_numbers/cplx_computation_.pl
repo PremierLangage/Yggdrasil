@@ -2,7 +2,8 @@
 # Tags: complex numbers
 # 19/8/2020
 
-extends = /model/mathinput.pl
+extends = /model/math/mathcomplex.pl
+
 
 title = Opération sur les nombres complexes
 
