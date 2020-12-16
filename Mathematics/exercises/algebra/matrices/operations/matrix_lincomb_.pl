@@ -4,7 +4,7 @@ title==
 Produit de matrices
 ==
 
-before==
+before ==
 if isinstance(param['size'][0], list):
     n, m = randitem(param['size'])
 else:
