@@ -32,12 +32,12 @@ lists_symbols = [ ["a", "b", "c", "d", "e", "f", "g", "h"],
                   ["\\alpha", "\\beta", "\\gamma", "\\delta", "\\eta", "\\mu", "\\tu", "\\pu"], ]
 
 # ça va choisir un cardinal puis entre lettres et chiffres
-cardinal_defi = randint(4, 4)
+cardinal_defi = randint(4, 6)
 ensemble_defi = choice(lists_symbols)[:cardinal_defi]
 ensemble_defi_str = make_latex_ens(ensemble_defi)
 
 # Pareil, choix aléatoire des images
-cardinal_img = randint(4, 4)
+cardinal_img = randint(4, 6)
 ensemble_img = choice(lists_symbols)[:cardinal_img]
 ensemble_img_str = make_latex_ens(ensemble_img)
 
@@ -107,7 +107,7 @@ def make_preimg(img_fct, fct_name, ensemble_defi, ensemble_img, good=True):
     else:
         state = "good"
         feedback = " est vraie."
-    prop = " $% "+fct_name+"^{{-1}}( "+ make_latex_ens(ing_subset)
+    prop = " $% "+fct_name+"^{(-1)}( "+ make_latex_ens(ing_subset)
     prop+=" ) = "+make_latex_ens(preimg_subset)+" %$ "
     return (ing_subset, state, prop, feedback)
 
