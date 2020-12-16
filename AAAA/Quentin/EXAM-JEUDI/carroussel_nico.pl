@@ -6,6 +6,7 @@ extends=/ComputerScience/C/examples/Stoi_le_caroussel.pl
 author = Enseignants Méthodologie
 bij =$ /AAAA/Quentin/Images/bij.png
 
+nb_quest_voulu = 5
 
 title= Carroussel
 
