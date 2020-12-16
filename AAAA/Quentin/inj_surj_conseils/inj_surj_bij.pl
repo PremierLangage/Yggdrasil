@@ -88,7 +88,7 @@ fct_list.append({"name": " lp ",                          # lp comme log d'un po
                  "fb_inj": " $% ln(2) %$ a deux antécédants $% 1 %$ et $% -1 %$.",})
 
 fct_list.append({"name": " \ln ",
-                 "formula": " *!\ln(x)!$ ",
+                 "formula": " \ln(x) ",
                  "dom" : ["] 0, 1 [", "] 0 , + \\infty ["],
                  "codom" : ["] - \\infty , 0 [", " \\mathbb{R} "],
                  "inj" : [True, True],
