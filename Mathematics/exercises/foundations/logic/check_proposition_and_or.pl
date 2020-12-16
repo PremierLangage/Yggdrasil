@@ -1,4 +1,4 @@
-extends = /model/basic/radio.pl
+extends = /model/basic/checkbox.pl
 extends = /model/math.pl
 
 title = Déterminer si une proposition est vraie
@@ -12,8 +12,7 @@ div3=set(range(3,41,3))
 div5=set(range(5,41,5))
 S={'pair':even,'impair':odd,'divisible par 3':div3,'divisible par 5':div5}
 choices=[]
-sol=[]
-numsol=list_randint_norep(randint(1,3),0,3)
+indsol = list_randint_norep(randint(1,3),0,3)
 op=['et','et','ou','ou']
 for i in range(4):
     p1=randitem(['pair','impair'])
@@ -22,15 +21,11 @@ for i in range(4):
         P=S[p1].intersection(S[p2])
     if op[i]=='ou':
         P=S[p1].union(S[p2])    
-    if i in numsol:
+    if i in indsol:
         n=randitem(list(P))
-        sol.append(True)
     else:
         n=randitem(list(numbers.difference(P)))
-        sol.append(False)
     choices.append(str(n)+" est "+p1+" "+op[i]+" "+p2)
-
-numsol = 0
 ==
 
 text ==
