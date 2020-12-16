@@ -2,7 +2,6 @@ extends = /Mathematics/template/mathinput.pl
 
 title = Conversion
 
-lang = fr
 
 before ==
 keyboards_JSON['virtualKeyboards']="complexes"
