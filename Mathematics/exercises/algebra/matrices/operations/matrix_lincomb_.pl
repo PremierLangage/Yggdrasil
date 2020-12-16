@@ -12,14 +12,14 @@ else:
     
 coeffbound = param['coeffbound']
 
-mat.setmatrix([m * [0] for _ in range(n)])
+mat.setzeros(n, m)
 
 a,b = list_randint_norep(2,-2,2,[0])
 var('A B')
 expr = simplify(a*A + b*B)
 MA = rand_int_matrix(n, m, coeffbound)
 MB = rand_int_matrix(n, m, coeffbound)
-Msol = a*MA+b*MB
+sol = a*MA+b*MB
 ==
 
 text==
