@@ -81,13 +81,13 @@ fct_list.append({"name": "(0 < a < b) \quad P",           # P comme un polynôme
                  "fb_inj": "C'est un polynôme factorisé avec deux racines distinctes positives. $% 0 %$ a donc deux antécédants $% a %$ et $% b %$.",})
 
 fct_list.append({"name": " lp ",                          # lp comme log d'un polynome...
-                 "formula": " ln(x^2 + 1) ",
+                 "formula": " \ln(x^2 + 1) ",
                  "dom" : ["] 0 , + \\infty [", "[0 , + \\infty [", " \\mathbb{R} "],
                  "codom" : ["] 0 , + \\infty [", "[0 , + \\infty [", "[0 , + \\infty [", " \\mathbb{R} "],
                  "inj" : [True, True, False],
                  "fb_inj": " $% ln(2) %$ a deux antécédants $% 1 %$ et $% -1 %$.",})
 
-fct_list.append({"name": " *!\ln!$ ",
+fct_list.append({"name": " \ln ",
                  "formula": " *!\ln(x)!$ ",
                  "dom" : ["] 0, 1 [", "] 0 , + \\infty ["],
                  "codom" : ["] - \\infty , 0 [", " \\mathbb{R} "],
@@ -101,8 +101,8 @@ fct_list.append({"name": " Sq ",
                  "inj" : [True, False, False],
                  "fb_inj": " $% 1 %$ a deux antécédants $% 1 %$ et $% -1 %$.",})
 
-fct_list.append({"name": " cos ",
-                 "formula": " cos(x) ",
+fct_list.append({"name": " \cos ",
+                 "formula": " \cos(x) ",
                  "dom" : ["[0, \\frac{\\pi}{2} ]", "[0, \\pi]", "[ - \\pi , \\pi [", "[ - \\pi , \\pi ]", " \\mathbb{R} "],
                  "codom" : ["[0, 1]", "[-1, 1]", "[-1, 1]", "[-1, 1]", "[-1, 1]", " \\mathbb{R} "],
                  "inj" : [True, True, False, False, False],
