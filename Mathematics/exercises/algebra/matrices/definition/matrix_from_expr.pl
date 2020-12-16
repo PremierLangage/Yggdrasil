@@ -3,7 +3,7 @@ extends = /model/mathmatrix.pl
 title = Matrice définie par l'expression des coefficients
 
 before ==
-mat.setmatrix([[0,0],[0,0]])
+mat.setzeros(2)
 var('i j')
 a = randint(-2, 2, [0])
 b = randint(-2, 2, [0])
