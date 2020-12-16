@@ -22,14 +22,3 @@ Soit les matrices
 $$ A = \left( {{ A|latex }} \right) \text{ et } B = \left( {{ B|latex }} \right) $$ 
 Calculer $! A B !$.
 ==
-
-evaluator ==
-score, feedback = eval_matrix(mat.getmatrix(), sol)
-==
-
-solution ==
-La solution est $$\left( {{ sol|latex }} \right).$$
-==
-
-
-
