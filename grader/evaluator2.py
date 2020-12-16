@@ -95,8 +95,6 @@ if __name__ == "__main__":
             score = dic['score']    
 
         feedback=" "
-        if 'feedback' in dic:
-            feedback = Env.from_string(dic['feedback']).render(dic) + " "
 
     if score >= 0:
         dic['internals']['attempt'] = dic['internals']['attempt'] + 1
