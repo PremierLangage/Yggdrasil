@@ -11,7 +11,7 @@ from jinja2 import Template
 try:
     from json_encoder import CustomEncoder, CustomDecoder
 except ModuleNotFoundError:
-    JSONEncoder = PickleEncoder
+    CustomEncoder = PickleEncoder
     CustomDecoder = None
 
 # Import the custom Jinja environnement
@@ -122,7 +122,7 @@ if __name__ == "__main__":
 
 
     with open(sys.argv[3], "w+") as f:
-        json.dump(dic, f, cls=JSONEncoder)
+        json.dump(dic, f, cls=CustomEncoder)
     
     with open(sys.argv[4], "w+") as f:
         print(str(ffeedback), file=f)
