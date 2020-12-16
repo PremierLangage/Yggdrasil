@@ -20,10 +20,10 @@ f est surjective
 ==
 
 bad==
-f n'est pas une application
-f est bien définie mais n'est ni injective ni surjective
-f est injective
-f est bijective
+$!f!$ n'est pas une application
+$!f!$ est bien définie mais n'est ni injective ni surjective
+$!f!$ est injective
+$!f!$ est bijective
 ==
 
 
