@@ -1,10 +1,10 @@
 extends = /model/mathmatrix.pl
 
-title==
+title ==
 Produit de matrices
 ==
 
-before==
+before ==
 if isinstance(param['size'][0], list):
     n, m, p = randitem(param['size'])
 else:
@@ -13,11 +13,11 @@ else:
 coeffbound = param['coeffbound']
 
 min = min([n, m, p])
-mat.setmatrix([min * [0] for _ in range(min)])
+mat.setzeros(min
 
 A = rand_int_matrix(n, m, coeffbound)
 B = rand_int_matrix(m, p, coeffbound)
-Msol = A*B
+sol = A*B
 ==
 
 text==
@@ -25,12 +25,3 @@ Soit les matrices
 $$ A = \left( {{A.latex}}\right) \text{ et } B = \left({{B.latex}}\right) $$ 
 Calculer $! A B !$.
 ==
-
-evaluator ==
-score, _, feedback = eval_matrix(mat.getmatrix(), Msol)
-==
-
-solution ==
-La solution est $$\left( {{Msol.latex}} \right).$$
-==
-
