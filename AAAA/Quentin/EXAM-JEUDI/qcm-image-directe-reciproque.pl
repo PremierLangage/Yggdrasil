@@ -1,4 +1,4 @@
-extends = /model/AMC_TXT.pl
+extends=/ComputerScience/C/examples/Stoi_le_caroussel.pl
 author = Enseignants Méthodologie
 title= Image directe/réciproque
 questions==
