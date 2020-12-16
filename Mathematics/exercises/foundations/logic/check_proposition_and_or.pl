@@ -3,6 +3,7 @@ extends = /model/math.pl
 
 title = Déterminer si une proposition est vraie
 
+shuffle % true
 
 before ==
 numbers=set(range(1,41))
