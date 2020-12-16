@@ -1,4 +1,4 @@
-extends = /model/basic.pl
+extends = /model/math.pl
 
 before ==
 import random as rd
@@ -15,7 +15,7 @@ $! \vec{u} = \left( [1,2,3] \right) !$
 
 ==
 
-input =: MathInput
+input =: Input
 
 form ==
 {{ input | component }}
