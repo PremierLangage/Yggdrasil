@@ -15,5 +15,5 @@ z = expand_complex(sol)
 ==
 
 text == 
-Ecrire sous forme exponentielle le nombre complexe $! \\large {{z|latex}} !$.
+Ecrire sous forme exponentielle le nombre complexe $! \\large {{sol|latex}} !$.
 ==
