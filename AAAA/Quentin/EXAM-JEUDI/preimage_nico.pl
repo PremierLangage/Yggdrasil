@@ -107,7 +107,7 @@ def make_preimg(img_fct, fct_name, ensemble_defi, ensemble_img, good=True):
     else:
         state = "good"
         feedback = " est vraie."
-    prop = " r$% "+fct_name+"^{ {{set}} }( "+ make_latex_ens(ing_subset)
+    prop = "r$% "+fct_name+"^{ {{set}} }( "+ make_latex_ens(ing_subset)
     prop+=" ) = "+make_latex_ens(preimg_subset)+" %$ ".format(set=make_latex_ens('-1'))
     return (ing_subset, state, prop, feedback)
 
