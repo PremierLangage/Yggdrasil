@@ -22,7 +22,7 @@ questions==
 
 ** On considère l'application $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s).
 
-![image1]{{ image1 }})
+![image1]({{ image1 }})
 
 + f est surjective
 + f est injective
