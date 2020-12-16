@@ -20,7 +20,7 @@ image4 =$ /AAAA/Quentin/EXAM-JEUDI/Images/surj-ninj.png
 
 questions==
 
-** On considère l'application $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s).
+** On considère l'application $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s). 
 <img src="{{ image1 }}" alt="IMAGE_1"/>
 
 + f est surjective
