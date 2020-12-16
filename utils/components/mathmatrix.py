@@ -20,6 +20,16 @@ class CustomMathMatrix(Component):
             for i in range(len(M.col(0))):
                 self.matrix.append([{'value': str(value)} for value in M.row(i)])
 
+    def setzeros(self, shape):
+        """
+        Set a matrix.
+        """
+        if isinstance(shape, int):
+            n, m = shape, shape
+        else:
+            n, m = shape
+        self.setmatrix([m * [0] for _ in range(n)])
+
     def getmatrix(self):
         """
         Set a matrix.
