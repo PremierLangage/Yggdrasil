@@ -30,7 +30,7 @@ questions==
 - f est bien définie mais n'est ni injective ni surjective
 
 ** On considère l'application $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s).
-![alt image]({{image2}})
+<img src="{{ image2 }}" alt="IMAGE_xxxxx"/>
 
 + f n'est pas une application
 - f est surjective
@@ -39,7 +39,7 @@ questions==
 - f est bien définie mais n'est ni injective ni surjective
 
 ** On considère l'application $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s).
-![alt image]({{image3}})
+<img src="{{ image3 }}" alt="IMAGE_xxxxx"/>
 
 + f est bien définie mais n'est ni injective ni surjective
 - f est surjective
@@ -48,7 +48,7 @@ questions==
 - f n'est pas une application
 
 ** On considère l'application $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s).
-![alt image]({{image4}})
+<img src="{{ image4 }}" alt="IMAGE_xxxxx"/>
 
 - f est bien définie mais n'est ni injective ni surjective
 + f est surjective
