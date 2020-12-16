@@ -15,8 +15,7 @@ settings.feedback = rightwrong
 
 settings.maxattempt % 1
 
-extracss ==
-<style>
+style.matrix ==
 .matrix-input {
     border : none;
     border-radius: 4px;
@@ -27,6 +26,13 @@ extracss ==
     background-color: transparent !important;
     z-index:10;
 }
-</style>
 ==
 
+
+evaluator ==
+score, feedback = eval_matrix(mat.getmatrix(), sol)
+==
+
+solution ==
+La solution est $$\left( {{ sol|latex }} \right).$$
+==
