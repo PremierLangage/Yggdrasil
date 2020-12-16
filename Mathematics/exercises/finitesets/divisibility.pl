@@ -20,8 +20,8 @@ else:
             break
     numsol=2
 
-choices = [f"{b}  \ll {a}",
-            f"{a}  \ll {b}",
+choices = [f"$! {b}  \ll {a} !$",
+            f"$! {a}  \ll {b} !$",
             f"{a} et {b} ne sont pas comparables"]
 ==
 
