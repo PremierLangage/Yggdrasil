@@ -36,26 +36,12 @@ questions==
 - $! \\{ x \in E \\; | \\; f(x) \in B^c \\}!$
 
 
-* Soit $!f:\mathbb R \backslash\\{0\\} \to \mathbb R!$ telle que $!f(x)=1/x!$ pour tout $! x \in \mathbb R \backslash\\{0\\}!$. L'application $!f!$ est-elle surjective ? 
-+ Non
-- Oui 
 
 
-* L'application $!f:\mathbb R \to \mathbb [-1,+\infty[!$, $!x\mapsto x^2-1 !$ est-elle injective ?   
-+ Non 
-- Oui 
-
-* L'application $!f:\mathbb R \to \mathbb [-1,+\infty[!$, $!x\mapsto x^2-1!$ est-elle surjective ?  
-- Non
-+ Oui
 
 
-* On considère l'application $%f : \\left \\{1, 2, 3, 4 \\right \\} \to \\left \\{1, 2, 3, 4\\right \\}%$ définie par
-$!f (1) = 4, f (2) = 1, f (3) = 2, f (4) = 2.!$ Quelle est la bonne réponse ?
-- $!f^{\\{-1\\}}(\\{2\\})=\\{1\\}!$
-- $!f^{\\{-1\\}}(\\{2\\})=\\{2\\}!$
-- $!f^{\\{-1\\}}(\\{2\\})=\\{3\\}!$
-+ $!f^{\\{-1\\}}(\\{2\\})=\\{3,4\\}!$ 
+
+
 
 * On considère l'application $!f : \mathbb R \to \mathbb R!$ définie par
 $!\forall x \in \mathbb  R, \; f (x) = 5 x^4 + 7.!$
