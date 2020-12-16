@@ -149,12 +149,12 @@ for fct in fct_sample:
 ==
 
 text==
-Reconnaitre les fonctions {{ criteria }}. Lisez systématiquement et très attentivement 
+Reconnaitre les applications {{ criteria }}. Lisez systématiquement et très attentivement 
 les domaines de définition ainsi que les ensembles d'arrivés.
 ==
 
 form==#|html|
-<b>Parmi les fonctions suivantes, selectionnez celles qui sont {{ criteria }}.</b><br>
+<b>Parmi les applications suivantes, selectionnez celles qui sont {{ criteria }}.</b><br>
 
 <i>Attention, tout est possible. Tout peut-être bon et tout peut être mauvais.</i>
 
