@@ -3,7 +3,7 @@
 
 extends = /model/mathmatrix.pl
 
-title==
+title ==
 Produit de matrices $! 2 \times 2 !$
 ==
 
