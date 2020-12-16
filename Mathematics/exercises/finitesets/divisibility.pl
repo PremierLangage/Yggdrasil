@@ -1,3 +1,4 @@
+extends = /model/math.pl
 extends = /model/basic/radio.pl
 
 title = Relation de divisibilité
