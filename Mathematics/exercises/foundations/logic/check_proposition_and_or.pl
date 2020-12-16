@@ -1,4 +1,4 @@
-extends = /model/basic/checkbox.pl
+extends = /model/basic/radio.pl
 
 title = Déterminer si une proposition est vraie
 
