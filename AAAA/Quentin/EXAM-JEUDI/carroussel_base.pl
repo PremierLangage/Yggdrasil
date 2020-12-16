@@ -21,7 +21,7 @@ image4 =$ /AAAA/Quentin/EXAM-JEUDI/Images/surj-ninj.png
 questions==
 
 ** On considère l'application $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s).
-![alt image]({{image1}})
+<img src="{{ image1 }}" alt="IMAGE_xxxxx"/>
 
 + f est surjective
 + f est injective
