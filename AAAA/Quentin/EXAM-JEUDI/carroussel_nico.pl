@@ -7,7 +7,7 @@ author = Enseignants Méthodologie
 bij =$ /AAAA/Quentin/Images/bij.png
 
 
-title= Injectivité / Surjectivité
+title= Carroussel
 
 questions==
 
