@@ -2,11 +2,14 @@
 
 extends = /ComputerScience/python/template/pltest.pl 
 
+@ /builder/bbefore.py [builder.py]
 title= Recherche de mots dans un fichier 
 
 
 before==
-import psutil
+
+
+text += "coucou"
 ==
 
 text==
