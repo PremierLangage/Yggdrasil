@@ -25,15 +25,5 @@ sol = a*MA+b*MB
 text==
 Soit les matrices
 $$ A = \left( {{MA.latex}}\right) \text{ et } B = \left({{MB.latex}}\right) $$ 
-Calculer $!{{expr.latex}} !$.
+Calculer $!{{expr|latex}} !$.
 ==
-
-
-evaluator ==
-score, _, feedback = eval_matrix(mat.getmatrix(), Msol)
-==
-
-solution ==
-La solution est $$\left( {{Msol.latex}} \right).$$
-==
-
