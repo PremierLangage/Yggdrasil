@@ -95,13 +95,13 @@ def make_preimg(img_fct, fct_name, ensemble_defi, ensemble_img, good=True):
         state = "bad"
         if (len(preimg_subset) > 0) and (randint(0,1) == 0 or (len(preimg_subset) == len(ensemble_defi))): # deletion aléatoire
             delet = choice(preimg_subset)
-            feedback = " est faux car $% "+str(delet)+" \\in "+fct_name+"^{{-1}}( "+ make_latex_ens(ing_subset) +") %$ ."
+            feedback = " est faux car $% "+str(delet)+" \\in "+fct_name+"^{"+make_latex_ens('-1')+"}( "+ make_latex_ens(ing_subset) +") %$ ."
             preimg_subset.remove(choice(preimg_subset))
         else: # 1 ajout aléatoire
             new_e = choice(ensemble_defi)
             while new_e in preimg_subset:
                 new_e = choice(ensemble_defi)
-            feedback = " est faux car $% "+str(new_e)+" \\notin "+fct_name+"^{{-1}}( "+ make_latex_ens(ing_subset) +") %$ ."
+            feedback = " est faux car $% "+str(new_e)+" \\notin "+fct_name+"^{"+make_latex_ens('-1')+"}( "+ make_latex_ens(ing_subset) +") %$ ."
             preimg_subset.append(new_e)
             preimg_subset.sort()
     else:
