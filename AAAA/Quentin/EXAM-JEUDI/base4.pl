@@ -16,7 +16,7 @@ nb=5
 nbtrues=1
 
 good==
-f est surjective
+$!f!$ est surjective
 ==
 
 bad==
