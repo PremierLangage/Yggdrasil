@@ -1,7 +1,8 @@
 title = Exercices de mathématiques pour la synthèse d'images
 
 introduction ==
-
+Cet ensemble d'exercice a pour but de vous familiariser avec les notions d'espace vectoriel, 
+d'espace affine et de coordonnées homogènes.
 ==
 
 @ first.pl
