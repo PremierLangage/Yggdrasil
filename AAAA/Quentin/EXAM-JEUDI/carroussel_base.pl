@@ -30,7 +30,9 @@ questions==
 - f n'est pas une application
 - f est bien définie mais n'est ni injective ni surjective
 
-** On considère l'application $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s).<br><img src="{{ image2 }}" alt="IMAGE_2"/>
+** On considère l'application $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s).
+
+![image2]({{ image2 }})
 
 + f n'est pas une application
 - f est surjective
