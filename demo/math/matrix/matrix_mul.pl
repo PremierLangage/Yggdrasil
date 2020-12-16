@@ -7,7 +7,7 @@ title==
 Produit de matrices $! 2 \times 2 !$
 ==
 
-before==
+before ==
 n = 2
 coeffbound = 3
 mat.setzeros(n)
