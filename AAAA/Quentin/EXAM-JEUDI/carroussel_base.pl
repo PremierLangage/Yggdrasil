@@ -15,6 +15,7 @@ title= Carroussel+
 image1 =$ /AAAA/Quentin/Images/bij.png
 image2 =$ /AAAA/Quentin/Images/non-appli.png
 image3 =$ /AAAA/Quentin/Images/nsur-ninj.png
+image4 =$ /AAAA/Quentin/Images/surj-ninj.png
 
 questions==
 
@@ -41,6 +42,15 @@ questions==
 
 + f est bien définie mais n'est ni injective ni surjective
 - f est surjective
+- f est injective
+- f est bijective
+- f n'est pas une application
+
+** On considère l'application $!f:E\to F!$ donnée par le dessin ci-contre. Cocher la (ou les) bonne(s) réponse(s).
+![alt image]({{image4}})
+
+- f est bien définie mais n'est ni injective ni surjective
++ f est surjective
 - f est injective
 - f est bijective
 - f n'est pas une application
