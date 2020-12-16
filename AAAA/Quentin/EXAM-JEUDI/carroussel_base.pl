@@ -8,7 +8,7 @@ bij =$ /AAAA/Quentin/Images/bij.png
 # pour changer le nombre de question, c'est en dessous (10 MAX)
 # si le nombre est plus petit que 10, ce sera un tirage aléatoire
 # sans remise parmi le tas de questions.
-nb_quest_voulu = 5
+nb_quest_voulu = 4
 
 title= carroussel
 
