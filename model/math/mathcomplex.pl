@@ -1,10 +1,4 @@
-# Author: D. Doyen
-# Tags: complex numbers
-# 19/8/2020
-
 extends = /model/mathinput.pl
-
-title = Opération sur les nombres complexes
 
 form_complex = cartesian
 
