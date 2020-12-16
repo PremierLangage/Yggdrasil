@@ -135,10 +135,10 @@ shuffle(group.items)
 
 ==
 
-title=Fonction entre deux ensembles finis
+title=Application entre deux ensembles finis
 
 text==#|markdown|
-Soit $%{{ fct_name }} : A \to B %$ une fonction définie sur l'ensemble fini $% A = {{ ensemble_defi_str }}%$ 
+Soit $%{{ fct_name }} : A \to B %$ une application définie sur l'ensemble fini $% A = {{ ensemble_defi_str }}%$ 
 et à valeurs dans l'ensemble fini $% B = {{ ensemble_img_str }}%$ prenant les valeurs suivantes :
 
 $%{{ fct_val_str }}%$
