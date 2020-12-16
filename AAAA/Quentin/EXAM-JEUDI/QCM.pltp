@@ -11,8 +11,8 @@ test
 @ base3.pl
 @ base1.pl
 @ base2.pl
-@ qcm-injectivite.pl
-@ qcm-image-directe-reciproque.pl
+@ inj_surj_nico.pl
+@ preimage-nico.pl
 @ match.pl
 @ en-quete-de-sens.pl
 
