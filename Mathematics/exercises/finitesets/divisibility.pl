@@ -25,6 +25,8 @@ choices = [f"$! {b}  \ll {a} !$",
             f"{a} et {b} ne sont pas comparables"]
 ==
 
+shuffle % false
+
 text == 
 Soit $% \ll %$ la relation d'ordre sur $% \mathbb{N}^* %$ définie par : $% p \ll q %$ si $%p%$ divise $%q%$.
 
