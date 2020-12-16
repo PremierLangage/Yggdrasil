@@ -10,7 +10,7 @@ Produit de matrices $! 2 \times 2 !$
 before==
 n = 2
 coeffbound = 3
-mat.setmatrix([n * [0] for _ in range(n)])
+mat.setzeros(n)
 
 A = rand_int_matrix(n, n, coeffbound)
 B = rand_int_matrix(n, n, coeffbound)
