@@ -10,7 +10,8 @@ bij =$ /AAAA/Quentin/Images/bij.png
 # sans remise parmi le tas de questions.
 nb_quest_voulu = 5
 
-title= Carroussel+
+title= Carroussel
+
 
 image1 =$ /AAAA/Quentin/Images/bij.png
 image2 =$ /AAAA/Quentin/Images/non-appli.png
