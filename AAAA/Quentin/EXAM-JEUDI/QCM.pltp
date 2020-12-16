@@ -12,7 +12,7 @@ test
 @ base1.pl
 @ base2.pl
 @ inj_surj_nico.pl
-@ preimage-nico.pl
+@ preimage_nico.pl
 @ carroussel_nico.pl
 @ match.pl
 @ en-quete-de-sens.pl
