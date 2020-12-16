@@ -33,6 +33,6 @@ evaluator ==
 score, feedback = eval_matrix(mat.getmatrix(), sol)
 ==
 
-solution ==
+message.Solution ==
 La solution est $$\left( {{ sol|latex }} \right).$$
 ==
