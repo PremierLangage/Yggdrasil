@@ -26,7 +26,7 @@ form = re.sub(r'\{(.*?)\}', replace , form)
 
 form2 = """
 
-<br>
+<br><br>
 
 {% for label in labels %}
 {{ label|component }}
