@@ -3,7 +3,7 @@ extends = /model/basic.pl
 checkbox =: CheckboxGroup
 checkbox.decorator = CustomCheckbox
 
-shiffle % true
+shuffle % true
 
 headerbefore ==
 boolsol = None
