@@ -48,7 +48,7 @@ form ==
 ==
 
 evaluator ==
-n = len(lstdropsolutions)
+n = len(drops)
 num_right = 0
 num_wrong = 0
 
@@ -61,11 +61,9 @@ for i in range(n):
         drops[i].css += "error-state"
 
 if num_wrong > 0 :
-    score = num_right
+    score = 0
 else:
     score = 100
-
-score = 100*n + 10*num_right + num_wrong
 ==
 
 
