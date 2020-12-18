@@ -2,8 +2,9 @@ extends = /model/math.pl
 
 before ==
 import random as rd
-a = rd.randint(10, 20)
-b = rd.randint(10, 20)
+a = rd.randfloat(-5, 5)
+b = rd.randint(-5, 5)
+c = rd.randint(-5, 5)
 ==
 
 title = "Addition de deux vecteurs"
