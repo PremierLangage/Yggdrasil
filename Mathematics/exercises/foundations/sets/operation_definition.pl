@@ -42,13 +42,13 @@ data=[
 cases=[randint(0,1),randint(2,3),randint(4,7),randint(8,9)]
 
 rhs=[]
-solutions=[]
+dropsolutions=[]
 for i in cases:
     rhs.append(data[i][0]+" "+data[i][1]+" "+data[i][2])
     if data[i][3]>=1:
-        solutions.append(label_in)
+        dropsolutions.append(label_in)
     else:
-        solutions.append(label_notin)
+        dropsolutions.append(label_notin)
 ==
 
 text ==
