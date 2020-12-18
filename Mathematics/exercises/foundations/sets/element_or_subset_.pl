@@ -20,7 +20,7 @@ elif param['relation'] == "expr1":
 
 labelcontents = [label_in, label_subset, ""]
 
-solutions=[]
+dropsolutions=[]
 lhs=[]
 rhs=[]
 n=5
@@ -29,22 +29,22 @@ rd.shuffle(cases)
 for i in range(len(cases)):
     if cases[i]==1:
         rhs.append(list_randint_norep(randint(3,5),0,9))
-        solutions.append(randitem([label_in,label_in,""]))
-        if solutions[i]==label_in:
+        dropsolutions.append(randitem([label_in,label_in,""]))
+        if dropsolutions[i]==label_in:
             lhs.append(randitem(rhs[i]))
         else:
             lhs.append(randint(0,9,rhs[i]))
     elif cases[i]==2:
         rhs.append(list_randint_norep(randint(3,5),0,9))
-        solutions.append(randitem([label_subset,label_subset,""]))
-        if solutions[i]==label_subset:
+        dropsolutions.append(randitem([label_subset,label_subset,""]))
+        if dropsolutions[i]==label_subset:
             lhs.append([randitem(rhs[i])])
         else:
             lhs.append([randint(0,9,rhs[i])])
     elif cases[i]==3:
         rhs.append(list_randint_norep(randint(3,5),0,9))
-        solutions.append(randitem([label_subset,label_subset,""]))
-        if solutions[i]==label_subset:
+        dropsolutions.append(randitem([label_subset,label_subset,""]))
+        if dropsolutions[i]==label_subset:
             lhs.append(list_randitem_norep(randint(2,len(rhs[i])),rhs[i]))
         else:
             b=randint(2,len(rhs[i]))
