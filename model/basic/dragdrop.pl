@@ -65,7 +65,7 @@ if num_wrong > 0 :
 else:
     score = 100
 
-score = 10*num_right + num_wrong
+score = 100*n + 10*num_right + num_wrong
 ==
 
 
