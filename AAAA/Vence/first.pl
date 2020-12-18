@@ -2,7 +2,7 @@ extends = /model/math.pl
 
 before ==
 import random as rd
-a = rd.uniform(-5, 5)
+a = rd.uniform(-5, 5).round(2);
 b = rd.randint(-5, 5)
 c = rd.randint(-5, 5)
 ==
