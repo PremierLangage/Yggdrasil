@@ -55,10 +55,10 @@ num_wrong = 0
 for i in range(n):
     if drops[i].content == lstdropsolutions[i]:
         num_right += 1
-        drops[i].css += "success-state"
+        #drops[i].css += "success-state"
     else:
         num_wrong +=1
-        drops[i].css += "error-state"
+        #drops[i].css += "error-state"
 
 if num_wrong > 0 :
     score = num_right
