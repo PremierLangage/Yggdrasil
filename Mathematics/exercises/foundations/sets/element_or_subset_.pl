@@ -73,3 +73,20 @@ form ==
 ==
 
 
+evaluator ==
+num_right = 0
+num_wrong = 0
+
+for i in range(n):
+    if drops[i].content == lstdropsolutions[i]:
+        num_right += 1
+        drops[i].css += "success-state"
+    else:
+        num_wrong +=1
+        drops[i].css += "error-state"
+
+if num_wrong > 0 :
+    score = 0
+else:
+    score = 100
+==
