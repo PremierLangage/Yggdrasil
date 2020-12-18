@@ -11,7 +11,7 @@ title = "Addition de deux vecteurs"
 
 text ==
 Donner les coordonnées de l'addition des deux vecteurs suivant :
-$! \vec{u} = \left( [{{a}},2,3] \right) !$
+$! \vec{u} = \left( [{{a}},{{b}},{{c}}] \right) !$
 
 
 ==
