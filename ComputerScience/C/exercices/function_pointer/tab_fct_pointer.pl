@@ -33,7 +33,7 @@ compiler="gcc"
 # PLace here the compilation flags
 cflags=["-Wall", "-ansi"]
 # Place here library flags
-libflags=["-lm"]
+libflags=[]
 
 if "taboo" in globals(): 
     text+='<div class="warning-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
