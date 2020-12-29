@@ -46,8 +46,12 @@ text+=" {{ editor|component }} "
 ==
 
 text==
+Écrire une fonction **print_all_functions** qui prend en argument un tableau
+de fonctions, sa taille et un point réel de type **double**.
+ 
 
 ==
+
 
 editor.code==#|c|
 typedef double(*R_func)(double);
