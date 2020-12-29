@@ -18,7 +18,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
 
-title=longueur d'une chaîne de caractères
+title=1000 fois sans boucles ???
 tag=string|chaine|longueur|caractère
 
 text==
@@ -27,6 +27,8 @@ sur la sortie standard. Rajoutez un retour à la ligne à chaque fois que vous
 écrivez la chaîne de caractères. Ainsi, si la chaîne en argument est un seul mot,
 votre fonction devra écrire 1000 lignes avec le mot seul à chaque fois, tout
 cela sans boucle.
+
+<br>
 
 Toute construction du langage C est autorisée mais pas les boucles, les mots clés
 **for** et **while** sont ainsi interdits.
