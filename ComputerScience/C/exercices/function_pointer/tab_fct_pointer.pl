@@ -90,12 +90,12 @@ code_before==#|c|
 ==
 
 code_after==#|c|
-static Function tab[] = {{"sqrt", sqrt},
-                         {"ln", log},
-                         {"cosinus", cos},
-                         {"exp", exp},
-                         {"arctan", atan},
-                         {"sinus hyperbolique", sinh}};
+static Function tab[] = { {"sqrt", sqrt},
+                          {"ln", log},
+                          {"cosinus", cos},
+                          {"exp", exp},
+                          {"arctan", atan},
+                          {"sinus hyperbolique", sinh} };
 
 static int nb_func = 6;
 
