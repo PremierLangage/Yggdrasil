@@ -48,13 +48,14 @@ text+=" {{ editor|component }} "
 text==
 Écrire une fonction C **print_all_functions** qui prend en argument un tableau
 de fonctions, la taille de ce tableau et un point d'évaluation (un réel positif) 
-de type **double**.
+de type **double**. Le but sera d'afficher toutes les fonctions évaluées au point
+d'évaluation en argument.
 
 <br>
 
 Pour chaque élément-fonction du tableau, votre fonction devra afficher le nom de la 
-fonction (champ `name`), le point d'évaluation placé entre paranthèse et la valeur de la 
-fonction sur le point d'évaluation (il faudra ici utilisé le pointeur de fonction dans le 
+fonction (champ `name`), le point d'évaluation placé entre paranthèses et la valeur de la 
+fonction sur le point d'évaluation (il faudra ici utiliser le pointeur de fonction dans le 
 champs `func`). Comme on travaille avec des doubles, l'écriture formatée à générer pour 
 chaque élément-fonction est 
 
