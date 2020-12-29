@@ -97,7 +97,10 @@ Cell* random_cell(void){
 }
 
 Cell* random_list(int length){
-  Cell* l = random_cell();
+  Cell* l;
+  if (length == 0)
+    return NULL;
+  l = random_cell();
   if ((length > 1) && (l != NULL)){
     l->next = random_list(length - 1);
   }
