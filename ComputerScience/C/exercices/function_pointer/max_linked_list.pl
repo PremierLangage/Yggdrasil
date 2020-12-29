@@ -21,10 +21,10 @@ title=Maximum générique d'une liste chaînée de personnes
 tag=function|type|pointeur|function_pointer|difficile
 
 text==
-Écrire une fonction C **max_list** dont le prototype ressemble à celui de la fonction 
+Écrire une fonction C **max_list** dont le prototype utilise la même stratégie que la fonction 
 *qsort*. La fonction prendra en argument une liste chaînée de personnes (prénom, nom et age) 
 mais aussi une fonction de comparaison. La fonction devra retourner l'adresse de la 
-cellule contenant l'élément minimal de la liste chaînée, selon la fonction de 
+cellule contenant l'élément maximal de la liste chaînée, selon la fonction de 
 comparaison. Si la liste est vide, votre fonction devra retourner **NULL**.
 
 <br>
@@ -32,8 +32,8 @@ comparaison. Si la liste est vide, votre fonction devra retourner **NULL**.
 Pour rappel, une fonction de comparaison correcte vis à vis du langage C, 
 évaluée sur des données X (premier argument) et Y (second argument) retourne un 
 entier négatif, nul ou positif respectivement lorsque X < Y, X = Y ou X > Y.
-Si la liste contient plusieurs occurences de son minimum, retournez l'adresse 
-de la première cellule en partant de la tête qui réalise ce minimum.
+Si la liste contient plusieurs occurences de son maximum, retournez l'adresse 
+de la première cellule en partant de la tête qui réalise ce maximum.
 ==
 
 editor.code==#|c|
