@@ -29,6 +29,8 @@ comparaison. La fonction devra retourner l'adresse de la cellule contenant l'él
 minimal de la liste chaînée, selon la fonction de comparaison. Si le tableau est vide, 
 votre fonction devra retourner -1.
 
+<br>
+
 Pour rappel, une fonction de comparaison correcte vis à vis du langage C, 
 évaluée sur des données X (premier argument) et Y (second argument) retourne un 
 entier négatif, nul ou positif respectivement lorsque X < Y, X = Y ou X > Y.
