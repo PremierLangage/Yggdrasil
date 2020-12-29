@@ -46,15 +46,17 @@ text+=" {{ editor|component }} "
 ==
 
 text==
-Écrire une fonction **print_all_functions** qui prend en argument un tableau
-de fonctions, sa taille et un point réel de type **double**.
+Écrire une fonction C **print_all_functions** qui prend en argument un tableau
+de fonctions, la taille de ce tableau et un point d'évaluation (un réel positif) 
+de type **double**.
 
 <br>
 
-Pour chaque function du tableau, votre fonction devra afficher le nom de la 
-fonction, le point d'évaluation placé entre paranthèse et la valeur de la 
-fonction sur le point d'évaluation. Comme on travaille avec des doubles, 
-l'écriture formaté à générer est 
+Pour chaque élément-fonction du tableau, votre fonction devra afficher le nom de la 
+fonction (champ `name`), le point d'évaluation placé entre paranthèse et la valeur de la 
+fonction sur le point d'évaluation (il faudra ici utilisé le pointeur de fonction dans le 
+champs `func`). Comme on travaille avec des doubles, l'écriture formatée à générer pour 
+chaque élément-fonction est 
 
     "%s(%g) = %g\n"
 
