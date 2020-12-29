@@ -1,5 +1,5 @@
 #*****************************************************************************
-#  Copyright (C) 2016 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
+#  Copyright (C) 2020 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
 #  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
 #  Creative Commons CC-by-SA 3.0
@@ -19,7 +19,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 author=Nicolas Borie
 
 title=1000 fois sans boucles ???
-tag=string|chaine|longueur|caractère
+tag=string|chaine|boucle|astuce|recursion|macro|challenge
 
 text==
 Écrire une fonction C qui écrit **1000 fois** une chaîne de caractères en argument 
@@ -74,7 +74,4 @@ checks_args_stdin==#|python|
   ["Test aléatoire 4", [choice(["Bonjour", "Pouet", "Exo pourri", "Trop simple", "Trop chiant", "copy-paste?"])], ""],
   ["Test aléatoire 5", [choice(["Bonjour", "Pouet", "Exo pourri", "Trop simple", "Trop chiant", "copy-paste?"])], ""] ] 
 ==
-
-
-
 
