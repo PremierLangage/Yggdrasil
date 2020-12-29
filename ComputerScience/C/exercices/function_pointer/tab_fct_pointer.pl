@@ -27,19 +27,56 @@ text==
 ==
 
 editor.code==#|c|
+typedef double(*R_func)(double);
 
+typedef struct real_func{
+  char* name;
+  R_func func;
+}Function;
+
+void print_all_functions(Function t[], int size, double point){
+  /* Votre code ici... */
+}
 ==
 
 solution==#|c|
+typedef double(*R_func)(double);
 
+typedef struct real_func{
+  char* name;
+  R_func func;
+}Function;
+
+void print_all_functions(Function t[], int size, double point){
+  int i;
+
+  for (i=0 ; i<size ; i++){
+    printf("%s(%g) = %g\n", t[i].name, point, t[i].func(point));
+  }
+}
 ==
 
 code_before==#|c|
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 ==
 
 code_after==#|c|
+static Function tab[] = {{"sqrt", sqrt},
+			 {"ln", log},
+			 {"cosinus", cos},
+			 {"exp", exp},
+			 {"arctan", atan},
+			 {"sinus hyperbolique", sinh}};
 
+static int nb_func = 6;
+
+int main(int argc, char* argv[]){
+  double p=strtod(argv[1], NULL);
+  print_all_functions(tab, nb_func, p);
+  return 0;
+}
 ==
 
 checks_args_stdin==#|python|
