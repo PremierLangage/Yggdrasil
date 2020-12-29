@@ -22,12 +22,10 @@ tag=function|type|pointeur|function_pointer|difficile
 
 text==
 Écrire une fonction C **max_list** dont le prototype ressemble à celui de la fonction 
-*qsort*. La 
-fonction prendra donc en argument une liste chaînée de personnes (prénom, nom et age) 
-mais aussi une fonction de 
-comparaison. La fonction devra retourner l'adresse de la cellule contenant l'élément 
-minimal de la liste chaînée, selon la fonction de comparaison. Si le tableau est vide, 
-votre fonction devra retourner -1.
+*qsort*. La fonction prendra en argument une liste chaînée de personnes (prénom, nom et age) 
+mais aussi une fonction de comparaison. La fonction devra retourner l'adresse de la 
+cellule contenant l'élément minimal de la liste chaînée, selon la fonction de 
+comparaison. Si la liste est vide, votre fonction devra retourner **NULL**.
 
 <br>
 
