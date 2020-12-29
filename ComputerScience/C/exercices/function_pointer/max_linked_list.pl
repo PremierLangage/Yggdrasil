@@ -21,8 +21,8 @@ title=Maximum générique d'une liste chaînée de personnes
 tag=function|type|pointeur|function_pointer|difficile
 
 text==
-Écrire une fonction C **max_list** dont le prototype ressemble à celui de  
-la fonction qsort. La 
+Écrire une fonction C **max_list** dont le prototype ressemble à celui de la fonction 
+*qsort*. La 
 fonction prendra donc en argument une liste chaînée de personnes (prénom, nom et age) 
 mais aussi une fonction de 
 comparaison. La fonction devra retourner l'adresse de la cellule contenant l'élément 
