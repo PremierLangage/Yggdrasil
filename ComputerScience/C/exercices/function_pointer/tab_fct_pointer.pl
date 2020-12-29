@@ -61,7 +61,7 @@ chaque élément-fonction est
 
     "%s(%g) = %g\n"
 
-Votre fonction devra donc produire autant de lignes qu'il y a de fonction dans
+Votre fonction devra donc produire autant de lignes qu'il y a de fonctions dans
 le tableau.
 ==
 
