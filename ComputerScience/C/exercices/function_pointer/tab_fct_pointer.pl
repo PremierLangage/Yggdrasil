@@ -47,9 +47,17 @@ text+=" {{ editor|component }} "
 
 text==
 Écrire une fonction **print_all_functions** qui prend en argument un tableau
-de fonctions, sa taille et un point réel de type **double**.
- 
+de fonctions, sa taille et un point réel de type **double**. 
 
+Pour chaque function du tableau, votre fonction devra afficher le nom de la 
+fonction, le point d'évaluation placé entre paranthèse et la valeur de la 
+fonction sur le point d'évaluation. Comme on travaille avec des doubles, 
+l'écriture formaté à générer est 
+
+    "%s(%g) = %g\n"
+
+Votre fonction devra donc produire autant de lignes qu'il y a de fonction dans
+le tableau.
 ==
 
 
