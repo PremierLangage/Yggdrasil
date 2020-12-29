@@ -193,7 +193,13 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[["Exécution simple", [], ""]]
+[["Liste vide", ["1", "0"], ""],
+ ["Test aléatoire 1"], [str(randint(0,1000000)), str(randint(1,5))],
+ ["Test aléatoire 2"], [str(randint(0,1000000)), str(randint(5,10))],
+ ["Test aléatoire 3"], [str(randint(0,1000000)), str(randint(5,10))],
+ ["Test aléatoire 4"], [str(randint(0,1000000)), str(randint(10,20))],
+ ["Test aléatoire 5"], [str(randint(0,1000000)), str(randint(50,100))],
+ ["Test aléatoire 6"], [str(randint(0,1000000)), str(randint(100,200))] ]
 ==
 
 
