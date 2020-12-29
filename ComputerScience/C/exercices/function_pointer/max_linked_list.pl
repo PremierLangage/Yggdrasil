@@ -20,6 +20,8 @@ author=Nicolas Borie
 title=Maximum générique d'une liste chaînée de personnes
 tag=function|type|pointeur|function_pointer|difficile
 
+editor.height=350px
+
 text==
 Écrire une fonction C **max_list** dont le prototype utilise la même stratégie que la fonction 
 *qsort*. La fonction prendra en argument une liste chaînée de personnes (prénom, nom et age) 
