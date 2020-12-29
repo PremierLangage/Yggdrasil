@@ -75,7 +75,121 @@ code_before==#|c|
 ==
 
 code_after==#|c|
+const char first_n[][64] = {"Pierre", "Paul", "Jacques", "Alexandre", "Michel", "Paulette", "Emilie", "Elodie", "Jacquie", "Inès", "Manon", "Gustavo", "Line", "Gertrude", "Ginette", "Jean-Lou", "Clara", "Octave", "Sophie", "Mélanie", "Jean-Phillipe"};
 
+const int nb_first_n = 21;
+
+const char last_n[][64] = {"Tartenpion", "Faure", "Saccomano", "Los Del Rio", "Lopez", "Van Houten", "Benazzi", "Lim", "Valdmans", "Marconi", "Morgane", "Hergébel", "Fonfec", "Zétofrais", "Herbien"};
+
+const int nb_last_n = 15;
+
+
+Cell* random_cell(void){
+  Cell* n = (Cell*)malloc(sizeof(Cell));
+
+  if (n != NULL){
+    strcpy(n->first_name, first_n[rand()%nb_first_n]);
+    strcpy(n->last_name, last_n[rand()%nb_last_n]);
+    n->age = rand()%100;
+    n->next = NULL;
+  }
+  return n;
+}
+
+Cell* random_list(int length){
+  Cell* l = random_cell();
+  if ((length > 1) && (l != NULL)){
+    l->next = random_list(length - 1);
+  }
+  return l;
+}
+
+void print_cell(Cell* c){
+  printf("%s %s %d", c->first_name, c->last_name, c->age);
+}
+
+void print_list(List l){
+  if (l == NULL)
+    printf("NULL\n");
+  else{
+    print_cell(l);
+    printf(" --> ");
+    print_list(l->next);
+  }
+}
+
+int comp_name(const void* a1, const void* a2){
+  const Cell* c1 = (const Cell*)a1;
+  const Cell* c2 = (const Cell*)a2;
+
+  int diff = strcmp(c1->last_name, c2->last_name);
+  if (diff)
+    return diff;
+  diff = strcmp(c1->first_name, c2->first_name);
+  if (diff)
+    return diff;
+  return c1->age - c2->age;
+}
+
+int comp_name_minus(const void* a1, const void* a2){
+  return -comp_name(a1, a2);
+}
+
+int comp_age(const void* a1, const void* a2){
+  const Cell* c1 = (const Cell*)a1;
+  const Cell* c2 = (const Cell*)a2;
+
+  int diff = c1->age - c2->age;
+  if (diff)
+    return diff;
+  diff = strcmp(c1->last_name, c2->last_name);
+  if (diff)
+    return diff;
+  return strcmp(c1->first_name, c2->first_name);
+}
+
+int comp_age_minus(const void* a1, const void* a2){
+  return -comp_age(a1, a2);
+}
+
+int main(int argc, char* argv[]){
+  srand(atoi(argv[1]));
+  List l = random_list(atoi(argv[2]));
+  Cell* maxi;
+  print_list(l);
+  
+  printf("MAX BY NAME: \n");
+  maxi = max_list(l, comp_name);
+  if (maxi)
+    print_cell(maxi);
+  else
+    printf("NULL");
+  putchar('\n');
+  printf("MIN BY NAME: \n");
+  maxi = max_list(l, comp_name_minus);
+  if (maxi)
+    print_cell(maxi);
+  else
+    printf("NULL");
+  putchar('\n');
+
+  
+  printf("MAX BY AGE: \n");
+  maxi = max_list(l, comp_age);
+  if (maxi)
+    print_cell(maxi);
+  else
+    printf("NULL");
+  putchar('\n');
+  printf("MIN BY AGE: \n");
+  maxi = max_list(l, comp_age_minus);
+  if (maxi)
+    print_cell(maxi);
+  else
+    printf("NULL");
+  putchar('\n');
+  return 0;
+}
 ==
 
 checks_args_stdin==#|python|
