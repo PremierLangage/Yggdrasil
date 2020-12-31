@@ -6,7 +6,7 @@
 title = "Addition"
 
 text ==
-Calculer {{ a }} + {{ b }}.
+Calculer 1+2.
 ==
 
 input =: Input
@@ -17,7 +17,7 @@ form ==
 ==
 
 evaluator ==
-if input.value == a + b:
+if input.value == 3:
     score = 100
 else:
     score = 0
