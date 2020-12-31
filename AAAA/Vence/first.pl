@@ -25,6 +25,7 @@ form ==
 
 evaluator ==
 score=100
+feedback="Bravo !"
 ffeedback="Bravo !"
 ==
 
