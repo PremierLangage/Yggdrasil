@@ -11,6 +11,7 @@ import random as rd
 u1 = rd.randint(-5, 5)
 u2 = rd.randint(-5, 5)
 u3 = rd.randint(-5, 5)
+#v1 = round(rd.uniform(-5, 5),2)
 v1 = round(rd.uniform(-5, 5),2)
 v2 = rd.randint(-5, 5)
 v3 = rd.randint(-5, 5)
