@@ -1,3 +1,5 @@
+extends = /model/math.pl
+
 before ==
 import random as rd
 a = round(rd.uniform(-5, 5),2)
