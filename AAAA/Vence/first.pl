@@ -24,9 +24,7 @@ form ==
 ==
 
 evaluator ==
-score=100
-feedback="Bravo !"
-ffeedback="Bravo !"
+grade=(100,"Bravo !")
 ==
 
 
