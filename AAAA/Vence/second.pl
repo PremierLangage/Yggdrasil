@@ -14,7 +14,6 @@ Texte de l'énoncé
 form ==
 
 Interface de réponse
-
 ==
 
 evaluator ==
