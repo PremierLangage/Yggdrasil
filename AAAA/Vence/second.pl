@@ -2,7 +2,11 @@
 
 @ /grader/evaluator2.py [grader.py]
 
+before ==
 
+# Script Python de génération des données
+
+==
 
 
 title = "Premier exercice"
