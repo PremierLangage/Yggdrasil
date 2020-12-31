@@ -15,6 +15,7 @@ text ==
 Donner les coordonnées de l'addition des deux vecteurs suivant :
 $! \vec{u} = \left( [{{a}},{{b}},{{c}}] \right) !$
 
+$! \vec{u} = \left( [{{a}},{{b}},{{c}}] \right) !$
 
 ==
 
