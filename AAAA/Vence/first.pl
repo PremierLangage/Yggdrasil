@@ -16,9 +16,9 @@ Addition de deux vecteurs
 
 text ==
 Donner les coordonnées de l'addition des deux vecteurs suivant :
-$! \vec{u} = \left( [{{a}},{{b}},{{c}}] \right) !$
+$! \vec{u} = \left( [{{u1}},{{u2}},{{u3}}] \right) !$
 
-$! \vec{v} = \left( [{{a}},{{b}},{{c}}] \right) !$
+$! \vec{v} = \left( [{{v1}},{{v2}},{{v3}}] \right) !$
 
 ==
 
