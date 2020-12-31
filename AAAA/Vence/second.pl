@@ -10,7 +10,7 @@ before ==
 ==
 
 
-title = "Premier exercice"
+title = "Addition de deux vecteurs"
 
 text ==
 
@@ -22,6 +22,8 @@ entree1 =: Input
 entree1.type = "number"
 entree2 =: Input
 entree2.type = "number"
+entree3 =: Input
+entree3.type = "number"
 
 
 form ==
@@ -29,7 +31,7 @@ Valeur en X :
 {{entree1|component}}
 Valeur en Y :
 {{entree2|component}}
-Valeur en Y :
+Valeur en Z :
 ==
 
 evaluator ==
