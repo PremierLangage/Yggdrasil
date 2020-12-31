@@ -17,12 +17,15 @@ v3 = rd.randint(-5, 5)
 ==
 
 
-title="Addition de deux vecteurs"
+title==
+Addition de deux vecteurs
+==
 
 text ==
+Donner les coordonnées de l'addition des deux vecteurs suivant :
+$! \vec{u} = \left( [{{u1}},{{u2}},{{u3}}] \right) !$
 
-Texte de l'énoncé
-
+$! \vec{v} = \left( [{{v1}},{{v2}},{{v3}}] \right) !$
 ==
 
 entree1 =: Input
