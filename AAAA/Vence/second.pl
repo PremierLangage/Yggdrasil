@@ -7,14 +7,17 @@ before ==
 
 # Script Python de génération des données
 import random as rd
-a = round(rd.uniform(-5, 5),2)
-b = rd.randint(-5, 5)
-c = rd.randint(-5, 5)
+u1 = round(rd.uniform(-5, 5),2)
+u2 = rd.randint(-5, 5)
+u3 = rd.randint(-5, 5)
+v1 = round(rd.uniform(-5, 5),2)
+v2 = rd.randint(-5, 5)
+v3 = rd.randint(-5, 5)
 
 ==
 
 
-title = "Addition de deux vecteurs"
+title="Addition de deux vecteurs"
 
 text ==
 
