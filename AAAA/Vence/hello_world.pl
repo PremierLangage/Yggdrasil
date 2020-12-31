@@ -23,4 +23,5 @@ if input.value == 3:
     score = 100
 else:
     score = 0
+grade=(score,"bravo")
 ==
