@@ -6,6 +6,10 @@
 before ==
 
 # Script Python de génération des données
+import random as rd
+a = round(rd.uniform(-5, 5),2)
+b = rd.randint(-5, 5)
+c = rd.randint(-5, 5)
 
 ==
 
