@@ -49,6 +49,7 @@ Valeur en Z :
 
 evaluator ==
 score = 100
+grade=(score,"plop")
 if entree1.value == {{u1}} + {{v1}} :
     grade=(score,"Bravo d'avoir répondu")
 ==
