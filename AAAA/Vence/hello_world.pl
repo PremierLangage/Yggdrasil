@@ -5,7 +5,7 @@
 before ==
 ==
 
-title = "Addition"
+title = Addition
 
 text ==
 Calculer 1+2.
