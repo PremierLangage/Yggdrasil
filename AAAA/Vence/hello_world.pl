@@ -21,6 +21,8 @@ form ==
 evaluator ==
 if input.value == 3:
     grade = (100,"Bravo (mais c'était pas dur)")
+    feedback ="Attention c'était facile"
 else:
     grade = (0,"Bon il faut réessayer")
+    feedback = "Concentrez-vous ?"
 ==
