@@ -2,9 +2,12 @@ extends = /model/math.pl
 
 before ==
 import random as rd
-a = round(rd.uniform(-5, 5),2)
-b = rd.randint(-5, 5)
-c = rd.randint(-5, 5)
+u1 = round(rd.uniform(-5, 5),2)
+u2 = rd.randint(-5, 5)
+u3 = rd.randint(-5, 5)
+v1 = round(rd.uniform(-5, 5),2)
+v2 = rd.randint(-5, 5)
+v3 = rd.randint(-5, 5)
 ==
 
 title == 
@@ -15,7 +18,7 @@ text ==
 Donner les coordonnées de l'addition des deux vecteurs suivant :
 $! \vec{u} = \left( [{{a}},{{b}},{{c}}] \right) !$
 
-$! \vec{u} = \left( [{{a}},{{b}},{{c}}] \right) !$
+$! \vec{v} = \left( [{{a}},{{b}},{{c}}] \right) !$
 
 ==
 
