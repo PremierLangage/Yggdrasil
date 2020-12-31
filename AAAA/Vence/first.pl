@@ -7,8 +7,9 @@ b = rd.randint(-5, 5)
 c = rd.randint(-5, 5)
 ==
 
-title = "Addition de deux vecteurs"
-
+title == 
+Addition de deux vecteurs"
+==
 text ==
 Donner les coordonnées de l'addition des deux vecteurs suivant :
 $! \vec{u} = \left( [{{a}},{{b}},{{c}}] \right) !$
