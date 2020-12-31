@@ -48,12 +48,7 @@ Valeur en Z :
 ==
 
 evaluator ==
-score = 0
+score = 1000
 if entree1.value == {{u1}} + {{v1}} :
-    score += 40
-if entree2.value == {{u2}} + {{v2}} :
-    score += 30
-if entree3.value == {{u3}} + {{v3}} :
-    score += 30
-grade=(score,"Bravo d'avoir répondu")
+    grade=(score,"Bravo d'avoir répondu")
 ==
