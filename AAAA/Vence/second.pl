@@ -9,7 +9,6 @@ b = rd.randint(-5, 5)
 c = rd.randint(-5, 5)
 ==
 
-
 title = "Premier exercice"
 
 text ==
