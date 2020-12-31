@@ -7,7 +7,8 @@ before ==
 
 # Script Python de génération des données
 import random as rd
-u1 = round(rd.uniform(-5, 5),2)
+#u1 = round(rd.uniform(-5, 5),2)
+u1 = rd.randint(-5, 5)
 u2 = rd.randint(-5, 5)
 u3 = rd.randint(-5, 5)
 v1 = round(rd.uniform(-5, 5),2)
