@@ -46,7 +46,12 @@ Valeur en Z :
 ==
 
 evaluator ==
-
-# Script Python d'évaluation de la réponse
-
+score = 0
+if entree1.value == {{u1}} + {{v1}} :
+    score += 40
+if entree2.value == {{u2}} + {{v2}} :
+    score += 30
+if entree3.value == {{u3}} + {{v3}} :
+    score += 30
+grade=(score,"Bravo d'avoir répondu")
 ==
