@@ -20,8 +20,7 @@ form ==
 
 evaluator ==
 if input.value == 3:
-    score = 100
+    grade = (100,"Bravo (mais c'était pas dur)")
 else:
-    score = 0
-grade=(score,"bravo")
+    grade = (0,"Bon il faut réessayer")
 ==
