@@ -42,6 +42,7 @@ Valeur en X :
 Valeur en Y :
 {{entree2|component}}
 Valeur en Z :
+{{entree3|component}}
 ==
 
 evaluator ==
