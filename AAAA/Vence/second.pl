@@ -16,3 +16,8 @@ form ==
 Interface de réponse
 
 ==
+evaluator ==
+
+# Script Python d'évaluation de la réponse
+
+==
