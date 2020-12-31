@@ -18,8 +18,15 @@ Texte de l'énoncé
 
 ==
 
-form ==
+entree1 =: Input
+entree1.type = "number"
+entree2 =: Input
+entree2.type = "number"
 
+
+form ==
+{{entree1|component}}
+{{entree2|component}}
 ==
 
 evaluator ==
