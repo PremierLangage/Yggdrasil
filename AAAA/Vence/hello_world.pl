@@ -5,7 +5,7 @@
 before ==
 ==
 
-title = Addition de deux entiers
+title = PLaTOn hello world
 
 text ==
 Calculer 1+2.
