@@ -24,5 +24,5 @@ if input.value == 3:
     feedback ="Attention c'était facile"
 else:
     grade = (0,"Bon il faut réessayer")
-    feedback = "Concentrez-vous ?"
+    feedback = "Concentrez-vous !"
 ==
