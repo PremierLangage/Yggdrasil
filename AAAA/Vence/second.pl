@@ -25,6 +25,7 @@ entree2.type = "number"
 
 
 form ==
+Valeur en X : <br/>
 {{entree1|component}}
 {{entree2|component}}
 ==
