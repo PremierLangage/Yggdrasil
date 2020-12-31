@@ -26,7 +26,6 @@ form ==
 evaluator ==
 score=100
 feedback="Bravo !"
-grade=(100,input.value)
 ==
 
 
