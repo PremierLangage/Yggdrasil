@@ -5,7 +5,7 @@
 before ==
 ==
 
-title = Addition
+title = Addition de deux entiers
 
 text ==
 Calculer 1+2.
