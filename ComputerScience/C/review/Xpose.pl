@@ -306,7 +306,9 @@ text="<style>.asci_term{  font: 1rem Inconsolata, monospace; }</style>"
 text+="Voici la ligne de CSV pour votre évaluation, si ce n'est pas le dernier"
 text+="exposé de la soirée, SAUVEGARDEZ la bien!"
 
-csv_str=response['ev']+","
+
+
+csv_str=",".join([response['ev'],response['ora'],group1.selection,group2.selection,group3.selection,group4.selection,group5.selection,group6.selection])
 
 note_finale = 100
 feedback = '<hr><pre class="asci_term">'+csv_str+"</pre><hr>"
