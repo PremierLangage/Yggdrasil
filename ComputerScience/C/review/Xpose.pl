@@ -202,8 +202,8 @@ form==#|html|
   </ul>
   </div>
   <div style="margin-left:15%; margin-right:15%;">
-    <label for="from_ev">L'évaluateur (Vous) : </label><br>
-      <select name="from_ev" id="from_ev">
+    <label for="form_ev">L'évaluateur (Vous) : </label><br>
+      <select name="form_ev" id="form_ev">
 
         {% for l, f in profs %}
           <option value="{{ f[0]+l }}">{{ l+" "+f }}</option>
@@ -217,8 +217,8 @@ form==#|html|
   </div>
   <br>
   <div style="margin-left:15%; margin-right:15%;">
-      <label for="from_ev">L'orateur (le speaker) : </label><br>
-      <select name="from_ev" id="from_ev">
+      <label for="form_ora">L'orateur (le speaker) : </label><br>
+      <select name="form_ora" id="form_ora">
 
         {% for l, f in students %}
           <option value="{{ f[0]+l }}">{{ l+" "+f }}</option>
@@ -304,8 +304,10 @@ form=""
 text="Voici la ligne de CSV pour votre évaluation, si ce n'est pas le dernier "
 text+="exposé de la soirée, SAUVEGARDEZ la bien!"
 
+csv_str=response['form_form_ev']
+
 note_finale = 100
-feedback = "Voici la ligne de CSV pour votre évaluation"
+feedback = "<pre>"+csv_str+"</pre>"
 
 grade = (note_finale, feedback)
 ==
