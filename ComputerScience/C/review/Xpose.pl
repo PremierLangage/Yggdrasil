@@ -175,6 +175,7 @@ form==#|html|
   <p style="margin-left:15%; margin-right:15%;"><b><u>L'exposé : </u></b></p>
   <br>
   <div style="margin-left:15%; margin-right:15%;">L'évaluateur (Vous) : </div>
+  <br>
   <div style="margin-left:15%; margin-right:15%;">L'orateur : </div>
   <br><br><br><br>
 </div>
