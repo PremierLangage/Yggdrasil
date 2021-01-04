@@ -61,8 +61,8 @@ group5.items.append({"id": "2", "content": "La présentation est claire et conti
 group5.items.append({"id": "3", "content": "L’intégralité de la présentation est accessible et compréhensible <br> malgré la complexité des notions manipulées."})
 
 group6.items = []
-group6.items.append({"id": "0", "content": "Les supports sont de mauvaise qualité (notamment l'orthographe) ou le temps imparti n'est pas respecté."})
-group6.items.append({"id": "1", "content": "Les supports sont cohérents avec la présentation orale qui est correcte; le temps est globalement respecté."})
+group6.items.append({"id": "0", "content": "Les supports sont de mauvaise qualité (notamment l'orthographe) <br> ou le temps imparti n'est pas respecté."})
+group6.items.append({"id": "1", "content": "Les supports sont cohérents avec la présentation orale qui est correcte; <br> le temps est globalement respecté."})
 group6.items.append({"id": "2", "content": "Les supports illustrés et pertinents soutiennent une présentation <br> orale de qualité dans le temps imparti."})
 group6.items.append({"id": "3", "content": "Les supports sont de grande qualité et adaptés une présentation <br> orale captivante, optimale pour servir l’argumentation."})
 
