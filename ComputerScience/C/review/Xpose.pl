@@ -174,7 +174,15 @@ form==#|html|
 <div class="item active">
   <p style="margin-left:15%; margin-right:15%;"><b><u>L'exposé : </u></b></p>
   <br>
-  <div style="margin-left:15%; margin-right:15%;">L'évaluateur (Vous) : </div>
+  <div style="margin-left:15%; margin-right:15%;">
+    <label for="cars">L'évaluateur (Vous) : </label>
+      <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+  </div>
   <br>
   <div style="margin-left:15%; margin-right:15%;">L'orateur : </div>
   <br><br><br><br>
