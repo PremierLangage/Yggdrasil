@@ -160,6 +160,7 @@ form==#|html|
   <p style="margin-left:15%; margin-right:15%;"><b><u>Critère 1 : </u></b></p>
   <br>
   <div style="margin-left:15%; margin-right:15%;">La présentation assemble des informations pertinentes.</div>
+  <br>
   <div style="margin-left:15%; margin-right:15%;"> {{ group1|component }} </div>
   <br><br><br><br>
 </div>
