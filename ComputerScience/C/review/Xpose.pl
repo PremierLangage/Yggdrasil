@@ -185,7 +185,7 @@ form==#|html|
   <div style="margin-left:15%; margin-right:15%;">
     <label for="cars">L'évaluateur (Vous) : </label>
       <select name="cars" id="cars">
-          {{ all_stud_html }}
+          {{ str(all_stud_html) }}
       </select>
   </div>
   <br>
