@@ -71,7 +71,7 @@ après chaque présentation et assemblées par vos soins.
 
 
 
-Remplissez bien correctement les 7 volets avant de valider!
+Remplissez bien correctement les **7 volets** avant de valider!
 
 ==
 
