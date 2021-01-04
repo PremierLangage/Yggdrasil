@@ -54,7 +54,7 @@ list_questions = parse_AMC_TXT(questions)
 nb_tot_quest = len(list_questions)
 
 nb_quest = min([int(nb_quest_voulu), nb_tot_quest, 10])
-indices_questions = range(nb_quest)
+indices_questions = range(nb_quest) # terminé le mélange des questions ici....
 
 def make_html_answer(question):
     question["html_form"] = '''<br><div style="margin-left:15%; margin-right:15%;">'''
@@ -111,7 +111,7 @@ radio0 = comp[indices_questions[0]]
 # première question
 text += '''<div class="item active">'''
 text += '''<p style="margin-left:15%; margin-right:15%;"><b><u>Critère 1 : </u></b></p><br>'''
-text += '''<div style="margin-left:15%; margin-right:15%;">{{ list_questions[indices_questions[0]]["text"] }}</div>'''
+text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[0]]["text"]+'</div>'
 text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio0.selector} cid='{radio0.cid}'></{radio0.selector}></div>"""
 # text += list_questions[indices_questions[0]]["html_form"]
 text += '''<br><br><br><br></div>'''
