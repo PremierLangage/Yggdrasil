@@ -50,7 +50,7 @@ group3.items.append({"id": "3", "content": "Tous les arguments sont judicieuseme
 
 group4.items = []
 group4.items.append({"id": "0", "content": "Aucun des éléments de la présentation ne vous a paru convaincant."})
-group4.items.append({"id": "1", "content": "La présentation utilise les arguments standards et connus associés à la problématique."})
+group4.items.append({"id": "1", "content": "La présentation utilise les arguments standards et connus associés <br> à la problématique."})
 group4.items.append({"id": "2", "content": "Outre les arguments standards attendus, la présentation en propose <br> certains plus subtils et utilisés de manière pertinente."})
 group4.items.append({"id": "3", "content": "La présentation, judicieusement structurée, met en scène des <br> arguments de qualité pour convaincre son auditoire."})
 
