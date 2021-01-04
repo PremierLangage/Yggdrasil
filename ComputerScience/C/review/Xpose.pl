@@ -68,7 +68,8 @@ group6.items.append({"id": "3", "content": "Les supports sont de grande qualité
 
 profs = [ ("BORIE", "Nicolas"), 
           ("DURIS", "Etienne"),
-          ("FINKEL", "Philippe") ]
+          ("FINKEL", "Philippe"),
+          ("LE NY", "Pierre-André") ]
 
 students = [ ("AGULLO", "Vincent"),
              ("BATICLE", "Nicolas"),
@@ -188,13 +189,15 @@ form==#|html|
   <div style="margin-left:15%; margin-right:15%;">
     <label for="from_ev">L'évaluateur (Vous) : </label>
       <select name="from_ev" id="from_ev">
+
         {% for l, f in profs %}
           <option value="{{ f[0]+l }}">{{ l+" "+f }}</option>
         {% endfor %}  
-          ---
+
         {% for l, f in students %}
           <option value="{{ f[0]+l }}">{{ l+" "+f }}</option>
         {% endfor %}
+
       </select>
   </div>
   <br>
