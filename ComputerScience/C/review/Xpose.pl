@@ -304,7 +304,7 @@ form=""
 text="Voici la ligne de CSV pour votre évaluation, si ce n'est pas le dernier "
 text+="exposé de la soirée, SAUVEGARDEZ la bien!"
 
-csv_str=response['form_form_ev']
+csv_str=response['form_ev']
 
 note_finale = 100
 feedback = "<pre>"+csv_str+"</pre>"
