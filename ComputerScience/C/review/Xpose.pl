@@ -185,7 +185,9 @@ form==#|html|
   <div style="margin-left:15%; margin-right:15%;">
     <label for="from_ev">L'évaluateur (Vous) : </label>
       <select name="from_ev" id="from_ev">
-          {{ all_stud_html }}
+        {% for l, f in students %}
+          <option value="{{ f[0]+l }}">{{ f+" "+l }}</option>
+        {% endfor %}
       </select>
   </div>
   <br>
