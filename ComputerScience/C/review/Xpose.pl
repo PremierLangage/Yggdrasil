@@ -180,7 +180,7 @@ if nb_quest >= 7:
 if nb_quest >= 8:
     radio7 = comp[indices_questions[7]]
     text += '''<div class="item">'''
-    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 8 : </u></b></p><br>'
+    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Critère 8 : </u></b></p><br>'
     text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[7]]["text"]+'</div>'
     # text += list_questions[indices_questions[i]]["html_form"]
     text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio7.selector} cid='{radio7.cid}'></{radio7.selector}></div>"""
@@ -190,7 +190,7 @@ if nb_quest >= 8:
 if nb_quest >= 9:
     radio8 = comp[indices_questions[8]]
     text += '''<div class="item">'''
-    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 9 : </u></b></p><br>'
+    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Critère 9 : </u></b></p><br>'
     text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[8]]["text"]+'</div>'
     # text += list_questions[indices_questions[i]]["html_form"]
     text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio8.selector} cid='{radio8.cid}'></{radio8.selector}></div>"""
@@ -200,7 +200,7 @@ if nb_quest >= 9:
 if nb_quest >= 10:
     radio9 = comp[indices_questions[9]]
     text += '''<div class="item">'''
-    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 10 : </u></b></p><br>'
+    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Critère 10 : </u></b></p><br>'
     text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[9]]["text"]+'</div>'
     # text += list_questions[indices_questions[i]]["html_form"]
     text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio9.selector} cid='{radio9.cid}'></{radio9.selector}></div>"""
