@@ -301,12 +301,7 @@ form==#|html|
 evaluator==#|python|
 
 form=""
-text="""
-Voici la ligne de CSV pour votre évaluation, si ce n'est pas le dernier
-exposé de la soirée, SAUVEGARDEZ la bien!
-
-<hr>
-"""
+text="Voici la ligne de CSV pour votre évaluation, si ce n'est pas le dernier exposé de la soirée, SAUVEGARDEZ la bien! <hr>"
 
 csv_str=response['ev']+","
 
