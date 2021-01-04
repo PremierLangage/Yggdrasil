@@ -69,9 +69,7 @@ int main(int argc, char* argv[]){
 checks_args_stdin==#|python|
 [ ["Petit mot", ["mot"], ""],
   ["Test aléatoire 1", [choice(["Bonjour", "Pouet", "Exo pourri", "Trop simple", "Trop chiant", "copy-paste?"])], ""],
-  ["Test aléatoire 2", [choice(["Bonjour", "Pouet", "Exo pourri", "Trop simple", "Trop chiant", "copy-paste?"])], ""],
-  ["Test aléatoire 3", [choice(["Bonjour", "Pouet", "Exo pourri", "Trop simple", "Trop chiant", "copy-paste?"])], ""],
-  ["Test aléatoire 4", [choice(["Bonjour", "Pouet", "Exo pourri", "Trop simple", "Trop chiant", "copy-paste?"])], ""],
-  ["Test aléatoire 5", [choice(["Bonjour", "Pouet", "Exo pourri", "Trop simple", "Trop chiant", "copy-paste?"])], ""] ] 
+  ["Test aléatoire 2", [choice(["Un", "Deux", "Trois", "Quatre", "Cinq", "Six", "Sept", "Huit"])], ""],
+  ["Test aléatoire 3", [choice(["Paul", "Marc", "Jack", "John", "Peter", "Andrew", "Fredy", "Harry"])], ""] ] 
 ==
 
