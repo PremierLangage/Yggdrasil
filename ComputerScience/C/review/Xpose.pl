@@ -43,10 +43,10 @@ group2.items.append({"id": "2", "content": "L'opinion de l'orateur est réguliè
 group2.items.append({"id": "3", "content": "Toute la présentation est construite dans l'objectif de soutenir <br> un avis explicite défendu par l'auteur."})
 
 group3.items = []
-group3.items.append({"id": "0", "content": ""})
-group3.items.append({"id": "1", "content": ""})
-group3.items.append({"id": "2", "content": ""})
-group3.items.append({"id": "3", "content": ""})
+group3.items.append({"id": "0", "content": "Au moins un des arguments est fallacieux ou bien un problème éthique <br> notable n'est pas identifié."})
+group3.items.append({"id": "1", "content": "La présentation dissocie correctement les éléments factuels des <br> éléments d’opinion. Les problèmes éthiques majeurs sont identifiés."})
+group3.items.append({"id": "2", "content": "Les principaux arguments de la présentation sont estimés à leur <br> juste valeur, les problèmes éthiques potentiels sont explicités."})
+group3.items.append({"id": "3", "content": "Tous les arguments sont judicieusement estimés (faits, ouï-dire, <br> opinions personnelles, propagande, etc...). La présentation <br> identifie les problèmes déontologiques et éthiques subtils."})
 
 group4.items = []
 group4.items.append({"id": "0", "content": ""})
@@ -200,7 +200,7 @@ form==#|html|
 <div class="item">
   <p style="margin-left:15%; margin-right:15%;"><b><u>Critère 3 : </u></b></p>
   <br>
-  <div style="margin-left:15%; margin-right:15%;"></div>
+  <div style="margin-left:15%; margin-right:15%;">La présentation est professionnelle et éthique.</div>
   <br>
   <div style="margin-left:15%; margin-right:15%;"> {{ group3|component }} </div>
   <br><br><br><br>
