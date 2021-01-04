@@ -102,6 +102,14 @@ students = [ ("AGULLO", "Vincent"),
              ("TRAINA", "Tanguy"),
              ("WINCKLER", "Jean-Philippe") ]
 
+def make_option_html(Lis):
+    ans = ""
+    for l, f in Lis:
+        ans += '<option value="'+f[0]+l+'">'+f+" "+l+'</option>'
+    return ans
+
+all_stud_html = make_option_html(students)
+
 ==
 
 title=Grille évaluation Exposés Techniques Avancés
@@ -177,10 +185,7 @@ form==#|html|
   <div style="margin-left:15%; margin-right:15%;">
     <label for="cars">L'évaluateur (Vous) : </label>
       <select name="cars" id="cars">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
+          {{ all_stud_html }}
       </select>
   </div>
   <br>
