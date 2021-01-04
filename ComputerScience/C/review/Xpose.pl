@@ -14,7 +14,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-author=The ESIPE Dream Team !
+author=ESIPE's BG
 
 @ /utils/sandboxio.py
 
