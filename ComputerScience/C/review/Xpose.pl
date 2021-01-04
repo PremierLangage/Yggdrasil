@@ -300,6 +300,9 @@ form==#|html|
 
 evaluator==#|python|
 
+form=""
+text="Voici la ligne de CSV pour votre évaluation, si ce n'est pas le dernier exposé de la soirée, SAUVEGARDEZ la bien"
+
 note_finale = 100
 feedback = "Voici la ligne de CSV pour votre évaluation"
 
