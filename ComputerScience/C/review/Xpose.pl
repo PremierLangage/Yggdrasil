@@ -184,8 +184,6 @@ form==#|html|
 
 
 <div class="item active">
-  <p style="margin-left:15%; margin-right:15%;"><b><u>L'exposé : </u></b></p>
-  <br>
   <div style="margin-left:15%; margin-right:15%;">
   Ce vendredi 15 janvier 2021 :<br>
   <ul>
