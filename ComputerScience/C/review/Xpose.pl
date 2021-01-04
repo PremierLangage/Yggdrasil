@@ -66,6 +66,9 @@ group6.items.append({"id": "1", "content": "Les supports sont cohérents avec la
 group6.items.append({"id": "2", "content": "Les supports illustrés et pertinents soutiennent une présentation <br> orale de qualité dans le temps imparti."})
 group6.items.append({"id": "3", "content": "Les supports sont de grande qualité et adaptés une présentation <br> orale captivante, optimale pour servir l’argumentation."})
 
+profs = [ ("BORIE", "Nicolas"), 
+          ("DURIS", "Etienne"),
+          ("FINKEL", "Philippe") ]
 
 students = [ ("AGULLO", "Vincent"),
              ("BATICLE", "Nicolas"),
@@ -185,6 +188,9 @@ form==#|html|
   <div style="margin-left:15%; margin-right:15%;">
     <label for="from_ev">L'évaluateur (Vous) : </label>
       <select name="from_ev" id="from_ev">
+        {% for l, f in profs %}
+          <option value="{{ f[0]+l }}">{{ l+" "+f }}</option>
+        {% endfor %}  
         {% for l, f in students %}
           <option value="{{ f[0]+l }}">{{ l+" "+f }}</option>
         {% endfor %}
