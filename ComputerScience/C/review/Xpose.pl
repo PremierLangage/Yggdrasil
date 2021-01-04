@@ -28,9 +28,4 @@ nb_quest_voulu = 6
 
 title=Grille évaluation Exposés Techniques Avancés
 
-
-questions==
-
-
-
-==
+questions=@ /ComputerScience/C/review/Xpose_questions.txt
