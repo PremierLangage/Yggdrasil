@@ -64,10 +64,12 @@ students = [ ("AGULLO", "Vincent"),
 title=Grille évaluation Exposés Techniques Avancés
 
 text==
-Pas de papier cette année... Nous allons économiser (34 + 6)*3 feuilles A4 pour
+Pas de papier cette année! Nous allons économiser (34 + 6)*3 feuilles A4 pour
 les évaluations. En contrepartie, vous devrez chacun, et chaque semaine, envoyer 
-un mail à nicolas.borie@univ-eiffel.fr avec les 4 lignes CSV générés par cet utilitaire 
-après chaque présentation.
+un mail à **nicolas.borie@univ-eiffel.fr** avec les 4 lignes CSV générés par cet utilitaire 
+après chaque présentation et assemblées par vos soins.
+
+
 
 ==
 
