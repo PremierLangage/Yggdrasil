@@ -1,3 +1,4 @@
+
 * La présentation assemble des informations pertinentes.
 + La présentation n'apporte que des éléments superficiels <br> ou non pertinents au regard du sujet.
 + La présentation rassemble les informations pressenties <br> venant de sources classiques.
