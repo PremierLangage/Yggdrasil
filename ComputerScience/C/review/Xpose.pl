@@ -311,7 +311,14 @@ text+="<b>nicolas.borie@univ-eiffel.fr</b> . Pas besoin de sujet et de "
 text+="politesse, copier-coller les 4 lignes dans le corps du mail et cliquer sur envoyer. "
 text+="Utilisez toutefois votre adresse étudiant pour être authentifié."
 
-csv_str=",".join([response['ev'],response['ora'],group1.selection,group2.selection,group3.selection,group4.selection,group5.selection,group6.selection])
+n1 = group1.selection if group1.selection in ["0", "1", "2", "3"] else "-1"
+n2 = group2.selection if group2.selection in ["0", "1", "2", "3"] else "-1"
+n3 = group3.selection if group3.selection in ["0", "1", "2", "3"] else "-1"
+n4 = group4.selection if group4.selection in ["0", "1", "2", "3"] else "-1"
+n5 = group5.selection if group5.selection in ["0", "1", "2", "3"] else "-1"
+n6 = group6.selection if group6.selection in ["0", "1", "2", "3"] else "-1"
+
+csv_str=",".join([response['ev'],response['ora'],n1,n2,n3,n4,n5,n6])
 
 note_finale = 100
 feedback = '<hr><pre class="asci_term">'+csv_str+"</pre><hr>"
