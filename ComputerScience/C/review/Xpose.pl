@@ -186,6 +186,7 @@ form==#|html|
 <div class="item active">
   <p style="margin-left:15%; margin-right:15%;"><b><u>L'exposé : </u></b></p>
   <br>
+  <div style="margin-left:15%; margin-right:15%;">
   Ce vendredi 15 janvier 2021 :<br>
   <ul>
     <li>Sujet1 : elève 1, élève 2, élève 3</li>
@@ -201,8 +202,6 @@ form==#|html|
     <li>Sujet11 : elève 1, élève 2, élève 3</li>
     <li>Sujet12 : elève 1, élève 2, élève 3</li>
   </ul>
-
-  <div style="margin-left:15%; margin-right:15%;">
   </div>
   <div style="margin-left:15%; margin-right:15%;">
     <label for="from_ev">L'évaluateur (Vous) : </label><br>
