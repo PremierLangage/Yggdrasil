@@ -187,7 +187,7 @@ form==#|html|
   <p style="margin-left:15%; margin-right:15%;"><b><u>L'exposé : </u></b></p>
   <br>
   <div style="margin-left:15%; margin-right:15%;">
-    <label for="from_ev">L'évaluateur (Vous) : </label>
+    <label for="from_ev">L'évaluateur (Vous) : </label><br>
       <select name="from_ev" id="from_ev">
 
         {% for l, f in profs %}
@@ -201,7 +201,16 @@ form==#|html|
       </select>
   </div>
   <br>
-  <div style="margin-left:15%; margin-right:15%;">L'orateur : </div>
+  <div style="margin-left:15%; margin-right:15%;">
+      <label for="from_ev">L'orateur (le speaker) : </label><br>
+      <select name="from_ev" id="from_ev">
+
+        {% for l, f in students %}
+          <option value="{{ f[0]+l }}">{{ l+" "+f }}</option>
+        {% endfor %}
+
+      </select>
+  </div>
   <br><br><br><br>
 </div>
 
