@@ -49,22 +49,22 @@ group3.items.append({"id": "2", "content": "Les principaux arguments de la prés
 group3.items.append({"id": "3", "content": "Tous les arguments sont judicieusement estimés (faits, ouï-dire, <br> opinions personnelles, propagande, etc...). La présentation <br> identifie les problèmes déontologiques et éthiques subtils."})
 
 group4.items = []
-group4.items.append({"id": "0", "content": ""})
-group4.items.append({"id": "1", "content": ""})
-group4.items.append({"id": "2", "content": ""})
-group4.items.append({"id": "3", "content": ""})
+group4.items.append({"id": "0", "content": "Aucun des éléments de la présentation ne vous a paru convaincant."})
+group4.items.append({"id": "1", "content": "La présentation utilise les arguments standards et connus associés à la problématique."})
+group4.items.append({"id": "2", "content": "Outre les arguments standards attendus, la présentation en propose <br> certains plus subtils et utilisés de manière pertinente."})
+group4.items.append({"id": "3", "content": "La présentation, judicieusement structurée, met en scène des <br> arguments de qualité pour convaincre son auditoire."})
 
 group5.items = []
-group5.items.append({"id": "0", "content": ""})
-group5.items.append({"id": "1", "content": ""})
-group5.items.append({"id": "2", "content": ""})
-group5.items.append({"id": "3", "content": ""})
+group5.items.append({"id": "0", "content": "La présentation est très confuse, ou fait un contre-sens ou un <br> non-sens à propos d'un concept ou d'une expression."})
+group5.items.append({"id": "1", "content": "Les concepts et objets sont fidèlement définis dans la présentation."})
+group5.items.append({"id": "2", "content": "La présentation est claire et contient des efforts pédagogiques manifestes."})
+group5.items.append({"id": "3", "content": "L’intégralité de la présentation est accessible et compréhensible malgré la complexité des notions manipulées."})
 
 group6.items = []
-group6.items.append({"id": "0", "content": ""})
-group6.items.append({"id": "1", "content": ""})
-group6.items.append({"id": "2", "content": ""})
-group6.items.append({"id": "3", "content": ""})
+group6.items.append({"id": "0", "content": "Les supports sont de mauvaise qualité (notamment l'orthographe) ou le temps imparti n'est pas respecté."})
+group6.items.append({"id": "1", "content": "Les supports sont cohérents avec la présentation orale qui est correcte; le temps est globalement respecté."})
+group6.items.append({"id": "2", "content": "Les supports illustrés et pertinents soutiennent une présentation <br> orale de qualité dans le temps imparti."})
+group6.items.append({"id": "3", "content": "Les supports sont de grande qualité et adaptés une présentation <br> orale captivante, optimale pour servir l’argumentation."})
 
 
 students = [ ("AGULLO", "Vincent"),
