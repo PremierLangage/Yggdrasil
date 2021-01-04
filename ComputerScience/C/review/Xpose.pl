@@ -30,7 +30,17 @@ group7 =: RadioGroup
 
 before==#|python|
 
+group1.items = []
+group1.items.append({"id": "0", "content": "La présentation n'apporte que des éléments superficiels <br> ou non pertinents au regard du sujet."})
+group1.items.append({"id": "1", "content": "La présentation rassemble les informations pressenties <br> venant de sources classiques."})
+group1.items.append({"id": "2", "content": "La présentation contient quelques informations illustrant <br> un travail de recherche approfondie."})
+group1.items.append({"id": "3", "content": "La présentation contient de nombreuses informations subtiles <br> issues de sources peu connues."})
 
+
+#group2.items.append({"id": "0", "content": ""})
+#group2.items.append({"id": "1", "content": ""})
+#group2.items.append({"id": "2", "content": ""})
+#group2.items.append({"id": "3", "content": ""})
 
 
 students = [ ("AGULLO", "Vincent"),
@@ -149,7 +159,7 @@ form==#|html|
 <div class="item">
   <p style="margin-left:15%; margin-right:15%;"><b><u>Critère 1 : </u></b></p>
   <br>
-  <div style="margin-left:15%; margin-right:15%;">list_questions[indices_questions[1]]["text"]</div>
+  <div style="margin-left:15%; margin-right:15%;">La présentation assemble des informations pertinentes.</div>
   <div style="margin-left:15%; margin-right:15%;"> {{ group1|component }} </div>
   <br><br><br><br>
 </div>
