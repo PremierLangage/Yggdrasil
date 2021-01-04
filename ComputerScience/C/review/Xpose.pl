@@ -200,7 +200,7 @@ form==#|html|
 <div class="item">
   <p style="margin-left:15%; margin-right:15%;"><b><u>Critère 3 : </u></b></p>
   <br>
-  <div style="margin-left:15%; margin-right:15%;">La présentation assemble des informations pertinentes.</div>
+  <div style="margin-left:15%; margin-right:15%;"></div>
   <br>
   <div style="margin-left:15%; margin-right:15%;"> {{ group3|component }} </div>
   <br><br><br><br>
@@ -209,7 +209,7 @@ form==#|html|
 <div class="item">
   <p style="margin-left:15%; margin-right:15%;"><b><u>Critère 4 : </u></b></p>
   <br>
-  <div style="margin-left:15%; margin-right:15%;">La présentation assemble des informations pertinentes.</div>
+  <div style="margin-left:15%; margin-right:15%;"></div>
   <br>
   <div style="margin-left:15%; margin-right:15%;"> {{ group4|component }} </div>
   <br><br><br><br>
@@ -218,7 +218,7 @@ form==#|html|
 <div class="item">
   <p style="margin-left:15%; margin-right:15%;"><b><u>Critère 5 : </u></b></p>
   <br>
-  <div style="margin-left:15%; margin-right:15%;">La présentation assemble des informations pertinentes.</div>
+  <div style="margin-left:15%; margin-right:15%;"></div>
   <br>
   <div style="margin-left:15%; margin-right:15%;"> {{ group5|component }} </div>
   <br><br><br><br>
@@ -227,7 +227,7 @@ form==#|html|
 <div class="item">
   <p style="margin-left:15%; margin-right:15%;"><b><u>Critère 6 : </u></b></p>
   <br>
-  <div style="margin-left:15%; margin-right:15%;">La présentation assemble des informations pertinentes.</div>
+  <div style="margin-left:15%; margin-right:15%;"></div>
   <br>
   <div style="margin-left:15%; margin-right:15%;"> {{ group6|component }} </div>
   <br><br><br><br>
