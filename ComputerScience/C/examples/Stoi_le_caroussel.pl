@@ -293,5 +293,3 @@ note_finale = int(sum(scores) / nb_quest)
 grade = (note_finale, "Vous avez obtenur la note de "+str(note_finale)+"%<br>")
 ==
 
-
-
