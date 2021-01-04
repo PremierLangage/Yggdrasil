@@ -30,6 +30,9 @@ group7 =: RadioGroup
 
 before==#|python|
 
+
+
+
 students = [ ("AGULLO", "Vincent"),
              ("BATICLE", "Nicolas"),
              ("BESSODES", "Julien"),
@@ -147,7 +150,7 @@ form==#|html|
   <p style="margin-left:15%; margin-right:15%;"><b><u>Critère 1 : </u></b></p>
   <br>
   <div style="margin-left:15%; margin-right:15%;">list_questions[indices_questions[1]]["text"]</div>
-  <div style="margin-left:15%; margin-right:15%;"><{radio1.selector} cid='{radio1.cid}'></{radio1.selector}></div>
+  <div style="margin-left:15%; margin-right:15%;"> {{ group1|component }} </div>
   <br><br><br><br>
 </div>
 
