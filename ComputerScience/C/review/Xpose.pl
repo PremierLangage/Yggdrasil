@@ -174,8 +174,8 @@ form==#|html|
 <div class="item active">
   <p style="margin-left:15%; margin-right:15%;"><b><u>L'exposé : </u></b></p>
   <br>
-  <div style="margin-left:15%; margin-right:15%;">list_questions[indices_questions[0]]["text"]</div>
-  <div style="margin-left:15%; margin-right:15%;"><{radio0.selector} cid='{radio0.cid}'></{radio0.selector}></div>
+  <div style="margin-left:15%; margin-right:15%;">L'évaluateur (Vous) : </div>
+  <div style="margin-left:15%; margin-right:15%;">L'orateur : </div>
   <br><br><br><br>
 </div>
 
