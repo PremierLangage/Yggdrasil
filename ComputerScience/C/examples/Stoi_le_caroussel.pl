@@ -95,7 +95,7 @@ radio0 = comp[indices_questions[0]]
 # première question
 text += '''<div class="item active">'''
 text += '''<p style="margin-left:15%; margin-right:15%;"><b><u>Question 1 : </u></b></p><br>'''
-text += '''<div style="margin-left:15%; margin-right:15%;">{{ list_questions[indices_questions[0]]["text"] }}</div>'''
+text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[0]]["text"]+'</div>'
 text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio0.selector} cid='{radio0.cid}'></{radio0.selector}></div>"""
 # text += list_questions[indices_questions[0]]["html_form"]
 text += '''<br><br><br><br></div>'''
