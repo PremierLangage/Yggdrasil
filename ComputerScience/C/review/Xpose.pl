@@ -302,7 +302,7 @@ evaluator==#|python|
 
 form=""
 
-text="<style>.asci_term{  font: 1rem Inconsolata, monospace; border: 1px solid black}</style>"
+text="<style>.asci_term{  font: 1rem Inconsolata, monospace; border: 1px solid black; padding: 0.5em;}</style>"
 text+="Voici la ligne de CSV pour votre évaluation, si ce n'est pas le dernier "
 text+="exposé de la soirée, SAUVEGARDEZ la bien!"
 
