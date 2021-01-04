@@ -37,10 +37,10 @@ group1.items.append({"id": "2", "content": "La présentation contient quelques i
 group1.items.append({"id": "3", "content": "La présentation contient de nombreuses informations subtiles <br> issues de sources peu connues."})
 
 group2.items = []
-group2.items.append({"id": "0", "content": ""})
-group2.items.append({"id": "1", "content": ""})
-group2.items.append({"id": "2", "content": ""})
-group2.items.append({"id": "3", "content": ""})
+group2.items.append({"id": "0", "content": "La présentation ne contient que des faits, aucune opinion."})
+group2.items.append({"id": "1", "content": "La présentation contient quelques jugements personnels."})
+group2.items.append({"id": "2", "content": "L'opinion de l'orateur est régulièrement donné pour estimer <br> ou qualifier des éléments de la présentation."})
+group2.items.append({"id": "3", "content": "Toute la présentation est construite dans l'objectif de soutenir <br> un avis explicite défendu par l'auteur."})
 
 group3.items = []
 group3.items.append({"id": "0", "content": ""})
@@ -186,6 +186,51 @@ form==#|html|
   <div style="margin-left:15%; margin-right:15%;">La présentation assemble des informations pertinentes.</div>
   <br>
   <div style="margin-left:15%; margin-right:15%;"> {{ group1|component }} </div>
+  <br><br><br><br>
+</div>
+
+<div class="item">
+  <p style="margin-left:15%; margin-right:15%;"><b><u>Critère 2 : </u></b></p>
+  <br>
+  <div style="margin-left:15%; margin-right:15%;">La présentation contient des prises de position explicites.</div>
+  <br>
+  <div style="margin-left:15%; margin-right:15%;"> {{ group2|component }} </div>
+  <br><br><br><br>
+</div>
+
+<div class="item">
+  <p style="margin-left:15%; margin-right:15%;"><b><u>Critère 3 : </u></b></p>
+  <br>
+  <div style="margin-left:15%; margin-right:15%;">La présentation assemble des informations pertinentes.</div>
+  <br>
+  <div style="margin-left:15%; margin-right:15%;"> {{ group3|component }} </div>
+  <br><br><br><br>
+</div>
+
+<div class="item">
+  <p style="margin-left:15%; margin-right:15%;"><b><u>Critère 4 : </u></b></p>
+  <br>
+  <div style="margin-left:15%; margin-right:15%;">La présentation assemble des informations pertinentes.</div>
+  <br>
+  <div style="margin-left:15%; margin-right:15%;"> {{ group4|component }} </div>
+  <br><br><br><br>
+</div>
+
+<div class="item">
+  <p style="margin-left:15%; margin-right:15%;"><b><u>Critère 5 : </u></b></p>
+  <br>
+  <div style="margin-left:15%; margin-right:15%;">La présentation assemble des informations pertinentes.</div>
+  <br>
+  <div style="margin-left:15%; margin-right:15%;"> {{ group5|component }} </div>
+  <br><br><br><br>
+</div>
+
+<div class="item">
+  <p style="margin-left:15%; margin-right:15%;"><b><u>Critère 6 : </u></b></p>
+  <br>
+  <div style="margin-left:15%; margin-right:15%;">La présentation assemble des informations pertinentes.</div>
+  <br>
+  <div style="margin-left:15%; margin-right:15%;"> {{ group6|component }} </div>
   <br><br><br><br>
 </div>
 
