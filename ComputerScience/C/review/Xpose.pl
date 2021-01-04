@@ -209,7 +209,7 @@ form==#|html|
 <div class="item">
   <p style="margin-left:15%; margin-right:15%;"><b><u>Critère 4 : </u></b></p>
   <br>
-  <div style="margin-left:15%; margin-right:15%;"></div>
+  <div style="margin-left:15%; margin-right:15%;">La présentation est convaincante.</div>
   <br>
   <div style="margin-left:15%; margin-right:15%;"> {{ group4|component }} </div>
   <br><br><br><br>
@@ -218,7 +218,7 @@ form==#|html|
 <div class="item">
   <p style="margin-left:15%; margin-right:15%;"><b><u>Critère 5 : </u></b></p>
   <br>
-  <div style="margin-left:15%; margin-right:15%;"></div>
+  <div style="margin-left:15%; margin-right:15%;">La présentation assure un haut degré d'intelligibilité.</div>
   <br>
   <div style="margin-left:15%; margin-right:15%;"> {{ group5|component }} </div>
   <br><br><br><br>
@@ -227,7 +227,7 @@ form==#|html|
 <div class="item">
   <p style="margin-left:15%; margin-right:15%;"><b><u>Critère 6 : </u></b></p>
   <br>
-  <div style="margin-left:15%; margin-right:15%;"></div>
+  <div style="margin-left:15%; margin-right:15%;">La forme et les supports de la présentation sont de qualité.</div>
   <br>
   <div style="margin-left:15%; margin-right:15%;"> {{ group6|component }} </div>
   <br><br><br><br>
