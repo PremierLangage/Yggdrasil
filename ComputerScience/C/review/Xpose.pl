@@ -98,10 +98,20 @@ form==#|html|
 <div class="carousel-inner">
 
 <div class="item active">
-<p style="margin-left:15%; margin-right:15%;"><b><u>Question 1 : </u></b></p><br>
-<div style="margin-left:15%; margin-right:15%;">list_questions[indices_questions[0]]["text"]</div>
-<div style="margin-left:15%; margin-right:15%;"><{radio0.selector} cid='{radio0.cid}'></{radio0.selector}></div>
-<br><br><br><br></div>'''
+  <p style="margin-left:15%; margin-right:15%;"><b><u>Présentation : </u></b></p>
+  <br>
+  <div style="margin-left:15%; margin-right:15%;">list_questions[indices_questions[0]]["text"]</div>
+  <div style="margin-left:15%; margin-right:15%;"><{radio0.selector} cid='{radio0.cid}'></{radio0.selector}></div>
+  <br><br><br><br>
+</div>
+
+<div class="item">
+  <p style="margin-left:15%; margin-right:15%;"><b><u>Critère 1 : </u></b></p>
+  <br>
+  <div style="margin-left:15%; margin-right:15%;">list_questions[indices_questions[1]]["text"]</div>
+  <div style="margin-left:15%; margin-right:15%;"><{radio1.selector} cid='{radio1.cid}'></{radio1.selector}></div>
+  <br><br><br><br>
+</div>
 
 
 ==
