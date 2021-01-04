@@ -183,9 +183,9 @@ form==#|html|
   <p style="margin-left:15%; margin-right:15%;"><b><u>L'exposé : </u></b></p>
   <br>
   <div style="margin-left:15%; margin-right:15%;">
-    <label for="cars">L'évaluateur (Vous) : </label>
-      <select name="cars" id="cars">
-          {{ str(all_stud_html) }}
+    <label for="from_ev">L'évaluateur (Vous) : </label>
+      <select name="from_ev" id="from_ev">
+          {{ all_stud_html }}
       </select>
   </div>
   <br>
