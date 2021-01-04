@@ -309,7 +309,7 @@ text+="exposé de la soirée, SAUVEGARDEZ la bien!"
 csv_str=response['ev']+","
 
 note_finale = 100
-feedback = '<pre class="asci_term">'+csv_str+"</pre>"
+feedback = '<hr><pre class="asci_term">'+csv_str+"</pre><hr>"
 
 grade = (note_finale, feedback)
 ==
