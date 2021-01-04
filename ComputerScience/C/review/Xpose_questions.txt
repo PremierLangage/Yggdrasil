@@ -12,7 +12,7 @@
 + Toute la présentation est construite dans l'objectif de soutenir un avis explicite défendu par l'auteur.
 
 * La présentation est professionnelle et éthique.
-+ Au moins un des arguments est fallacieux ou bien un problème éthique notable n'est pas identifié.
++ Au moins un des arguments est fallacieux ou bien un problème éthique <br> notable n'est pas identifié.
 + La présentation dissocie correctement les éléments factuels des <br> éléments d’opinion. Les problèmes éthiques majeurs sont identifiés.
 + Les principaux arguments de la présentation sont estimés à leur <br> juste valeur, les problèmes éthiques potentiels sont explicités.
 + Tous les arguments sont judicieusement estimés (faits, ouï-dire, <br> opinions personnelles, propagande, etc...). La présentation <br> identifie les problèmes déontologiques et éthiques subtils.
