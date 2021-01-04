@@ -191,6 +191,7 @@ form==#|html|
         {% for l, f in profs %}
           <option value="{{ f[0]+l }}">{{ l+" "+f }}</option>
         {% endfor %}  
+          ---
         {% for l, f in students %}
           <option value="{{ f[0]+l }}">{{ l+" "+f }}</option>
         {% endfor %}
