@@ -14,7 +14,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-author=ESIPE's BG
+author=ESIPE info 3
 
 @ /utils/sandboxio.py
 
