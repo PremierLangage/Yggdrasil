@@ -1,0 +1,35 @@
+* La présentation assemble des informations pertinentes.
++ La présentation n'apporte que des éléments superficiels ou non pertinents au regard du sujet.
++ La présentation rassemble les informations pressenties venant de sources classiques.
++ La présentation contient quelques informations illustrant un travail de recherche approfondie.
++ La présentation contient de nombreuses informations subtiles issues de sources peu connues.
+
+* La présentation contient des prises de position explicites.
++ La présentation ne contient que des faits, aucune opinion.
++ La présentation contient quelques jugements personnels.
++ L'opinion de l'orateur est régulièrement donné pour estimer ou qualifier des éléments de la présentation.
++ Toute la présentation est construite dans l'objectif de soutenir un avis explicite défendu par l'auteur.
+
+* La présentation est professionnelle et éthique.
++ Au moins un des arguments est fallacieux ou bien un problème éthique notable n'est pas identifié.
++ La présentation dissocie correctement les éléments factuels des <br> éléments d’opinion. Les problèmes éthiques majeurs sont identifiés.
++ Les principaux arguments de la présentation sont estimés à leur <br> juste valeur, les problèmes éthiques potentiels sont explicités.
++ Tous les arguments sont judicieusement estimés (faits, ouï-dire, <br> opinions personnelles, propagande, etc...). La présentation <br> identifie les problèmes déontologiques et éthiques subtils.
+
+* La présentation est convaincante.
++ Aucun des éléments de la présentation ne vous a paru convaincant.
++ La présentation utilise les arguments standards et connus associés à la problématique.
++ Outre les arguments standards attendus, la présentation en propose <br> certains plus subtils et utilisés de manière pertinente.
++ La présentation, judicieusement structurée, met en scène des <br> arguments de qualité pour convaincre son auditoire.
+
+* La présentation assure un haut degré d'intelligibilité.
++ La présentation est très confuse, ou fait un contre-sens ou un <br> non-sens à propos d'un concept ou d'une expression.
++ Les concepts et objets sont fidèlement définis dans la présentation.
++ La présentation est claire et contient des efforts pédagogiques manifestes.
++ L’intégralité de la présentation est accessible et compréhensible malgré la complexité des notions manipulées.
+
+* La forme et les supports de la présentation sont de qualité.
++ Les supports sont de mauvaise qualité (notamment l'orthographe) ou le temps imparti n'est pas respecté.
++ Les supports sont cohérents avec la présentation orale qui est correcte; le temps est globalement respecté.
++ Les supports illustrés et pertinents soutiennent une présentation <br> orale de qualité dans le temps imparti.
++ Les supports sont de grande qualité et adaptés une présentation <br> orale captivante, optimale pour servir l’argumentation.
