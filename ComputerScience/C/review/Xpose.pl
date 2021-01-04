@@ -58,7 +58,7 @@ group5.items = []
 group5.items.append({"id": "0", "content": "La présentation est très confuse, ou fait un contre-sens ou un <br> non-sens à propos d'un concept ou d'une expression."})
 group5.items.append({"id": "1", "content": "Les concepts et objets sont fidèlement définis dans la présentation."})
 group5.items.append({"id": "2", "content": "La présentation est claire et contient des efforts pédagogiques manifestes."})
-group5.items.append({"id": "3", "content": "L’intégralité de la présentation est accessible et compréhensible malgré la complexité des notions manipulées."})
+group5.items.append({"id": "3", "content": "L’intégralité de la présentation est accessible et compréhensible <br> malgré la complexité des notions manipulées."})
 
 group6.items = []
 group6.items.append({"id": "0", "content": "Les supports sont de mauvaise qualité (notamment l'orthographe) ou le temps imparti n'est pas respecté."})
