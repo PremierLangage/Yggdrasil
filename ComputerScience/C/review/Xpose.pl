@@ -216,7 +216,7 @@ title=Grille évaluation Exposés Techniques Avancés
 
 text==
 
-Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
+Prenez bien le temps de répondre aux {{ nb_quest }} critères avant de valider.
 
 
 
