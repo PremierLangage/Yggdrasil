@@ -21,6 +21,12 @@ author=The ESIPE Dream Team !
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+group1 =: RadioGroup
+group3 =: RadioGroup
+group4 =: RadioGroup
+group5 =: RadioGroup
+group6 =: RadioGroup
+group7 =: RadioGroup
 
 before==#|python|
 
@@ -91,6 +97,11 @@ form==#|html|
 </ol>
 <div class="carousel-inner">
 
+<div class="item active">
+<p style="margin-left:15%; margin-right:15%;"><b><u>Question 1 : </u></b></p><br>
+<div style="margin-left:15%; margin-right:15%;">list_questions[indices_questions[0]]["text"]</div>
+<div style="margin-left:15%; margin-right:15%;"><{radio0.selector} cid='{radio0.cid}'></{radio0.selector}></div>
+<br><br><br><br></div>'''
 
 
 ==
