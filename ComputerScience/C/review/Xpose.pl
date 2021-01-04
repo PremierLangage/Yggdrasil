@@ -301,12 +301,15 @@ form==#|html|
 evaluator==#|python|
 
 form=""
-text="Voici la ligne de CSV pour votre évaluation, si ce n'est pas le dernier exposé de la soirée, SAUVEGARDEZ la bien! <hr>"
+
+text="<style>.asci_term{  font: 1rem Inconsolata, monospace; }</style>"
+text+="Voici la ligne de CSV pour votre évaluation, si ce n'est pas le dernier"
+text+="exposé de la soirée, SAUVEGARDEZ la bien!"
 
 csv_str=response['ev']+","
 
 note_finale = 100
-feedback = '<pre class="asci_term">'+csv_str+"</pre><hr>"
+feedback = '<pre class="asci_term">'+csv_str+"</pre>"
 
 grade = (note_finale, feedback)
 ==
