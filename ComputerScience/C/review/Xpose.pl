@@ -161,9 +161,9 @@ les évaluations. En contrepartie, vous devrez chacun, et chaque semaine, envoye
 un mail à **nicolas.borie@univ-eiffel.fr** avec les 4 lignes CSV générés par cet utilitaire 
 après chaque présentation et assemblées par vos soins.
 
+<br>
 
-
-Remplissez bien correctement les **7 volets** avant de valider!
+**Remplissez bien correctement les 7 volets avant de valider!**
 
 ==
 
