@@ -304,9 +304,11 @@ form=""
 
 text="<style>.asci_term{  font: 1rem Inconsolata, monospace; border: 1px solid black; padding: 0.5em;}</style>"
 text+="Voici la ligne de CSV pour votre évaluation, si ce n'est pas le dernier "
-text+="exposé de la soirée, SAUVEGARDEZ la bien!"
+text+="exposé de la soirée, SAUVEGARDEZ la bien! <br><br>"
 
-
+text+="Si c'est le dernier exposé de l'après-midi, assembler vos lignes et envoyez les à "
+text+="<b>nicolas.borie@univ-eiffel.fr</b> . Pas besoin de sujet, corps de mail ou de "
+text+="politesse, les 4 lignes copier-coller feront l'affaire."
 
 csv_str=",".join([response['ev'],response['ora'],group1.selection,group2.selection,group3.selection,group4.selection,group5.selection,group6.selection])
 
