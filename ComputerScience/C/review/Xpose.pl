@@ -31,10 +31,10 @@ before==#|python|
 step = 0
 
 # Les énoncés
-texts=["## **Bienvenu sur l'assistant online de notation des Exposés Techniques Avancés Info 3**\n<br />\n"
-       "Désolé, nous sauverons (34+6)*3 feuilles A4 cette année mais au pris d'envoie d'autant de mail"
-       "à nicolas.borie@univ-eiffel.fr . Et vous devrez chacun assembler votre mail avec 4 lignes de CSV"
-       "générer grace à cet utilisataire.\n"
+texts=["## **Bienvenu sur l'assistant online de notation des Exposés Techniques Avancés Info 3**\n <br> \n"
+       "Nous sauverons (34+6)*3 feuilles A4 cette année mais au pris d'envoie d'autant de mails "
+       "à nicolas.borie@univ-eiffel.fr . Et vous devrez chacun assembler votre mail avec 4 lignes de CSV "
+       "générées grace à cet utilisataire.\n <br> \n"
 
        "Commencez par vous présenter, précisez l'auteur du code reviewé ainsi qu'une description pour "
        "la production évaluée. Prennez votre temps pour valider pas à pas votre rapport mais "
