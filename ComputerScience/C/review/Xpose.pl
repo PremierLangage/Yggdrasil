@@ -22,11 +22,11 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 group1 =: RadioGroup
+group2 =: RadioGroup
 group3 =: RadioGroup
 group4 =: RadioGroup
 group5 =: RadioGroup
 group6 =: RadioGroup
-group7 =: RadioGroup
 
 before==#|python|
 
@@ -36,11 +36,35 @@ group1.items.append({"id": "1", "content": "La présentation rassemble les infor
 group1.items.append({"id": "2", "content": "La présentation contient quelques informations illustrant <br> un travail de recherche approfondie."})
 group1.items.append({"id": "3", "content": "La présentation contient de nombreuses informations subtiles <br> issues de sources peu connues."})
 
+group2.items = []
+group2.items.append({"id": "0", "content": ""})
+group2.items.append({"id": "1", "content": ""})
+group2.items.append({"id": "2", "content": ""})
+group2.items.append({"id": "3", "content": ""})
 
-#group2.items.append({"id": "0", "content": ""})
-#group2.items.append({"id": "1", "content": ""})
-#group2.items.append({"id": "2", "content": ""})
-#group2.items.append({"id": "3", "content": ""})
+group3.items = []
+group3.items.append({"id": "0", "content": ""})
+group3.items.append({"id": "1", "content": ""})
+group3.items.append({"id": "2", "content": ""})
+group3.items.append({"id": "3", "content": ""})
+
+group4.items = []
+group4.items.append({"id": "0", "content": ""})
+group4.items.append({"id": "1", "content": ""})
+group4.items.append({"id": "2", "content": ""})
+group4.items.append({"id": "3", "content": ""})
+
+group5.items = []
+group5.items.append({"id": "0", "content": ""})
+group5.items.append({"id": "1", "content": ""})
+group5.items.append({"id": "2", "content": ""})
+group5.items.append({"id": "3", "content": ""})
+
+group6.items = []
+group6.items.append({"id": "0", "content": ""})
+group6.items.append({"id": "1", "content": ""})
+group6.items.append({"id": "2", "content": ""})
+group6.items.append({"id": "3", "content": ""})
 
 
 students = [ ("AGULLO", "Vincent"),
