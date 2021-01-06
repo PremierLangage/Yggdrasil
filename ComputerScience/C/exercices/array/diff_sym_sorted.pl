@@ -144,7 +144,14 @@ void print_diff_sym(int* t1, int s1, int* t2, int s2){
 ==
 
 checks_args_stdin==#|python|
-[ ["Exécution simple", ["1", "2", "3", "4"], ""], ]
+[ ["Test aléatoire de taille 1", ["1"], ""],
+  ["Test aléatoire de taille 2", ["2"], ""],
+  ["Test aléatoire de taille 3", ["3"], ""],
+  ["Test aléatoire de taille 4", ["4"], ""],
+  ["Test aléatoire de taille 5", ["5"], ""],
+  ["Test aléatoire de taille 10", ["10"], ""],
+  ["Test aléatoire de taille 20", ["20"], ""],
+  ["Test aléatoire de taille 30", ["30"], ""], ]
 ==
 
 
