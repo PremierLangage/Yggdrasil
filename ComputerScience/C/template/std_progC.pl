@@ -284,7 +284,7 @@ if compil_state != 'error':
             nb_good += 1
             feedback_checks += '<div class="success-state" style="margin: 2px;padding: 5px; border: 1px solid #155724 transparent;">'
             terminal_log = "Platon@debian~$> ./a.out " + " ".join(test_c[1]) + "\n"
-            terminal_log += expected_ouput
+            terminal_log += expected_ouput.replace(' ', '&nbsp;')
             if len(test_c[2]) > 0:
                 stdin_explain = "Contenu de l'entrée standard durant l'exécution : <br />"
                 stdin_explain += subnlbybr(test_c[2])
