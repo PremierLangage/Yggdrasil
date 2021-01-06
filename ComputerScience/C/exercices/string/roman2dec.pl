@@ -27,6 +27,8 @@ caractères qui décrira toujours un nombre écrit en numérotation
 romaine compris entre 1 et 3999. La fonction devra retourner l'entier
 C qui correspond à ce nombre romain en argument.
 
+<br>
+
 Pour rappel, voici les symboles romains et leurs valeurs associées en
 base décimale.
 
