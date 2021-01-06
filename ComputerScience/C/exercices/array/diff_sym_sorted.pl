@@ -67,20 +67,80 @@ Voici des exemples d'éxécution avec des tableaux de taille 10 aléatoires.
 
 ==
 
-code_before==
+code_before==#|c|
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 
+void print_array(int* t, int s){
+  int i;
+
+  for (i=0 ; i<s ; i++){
+    printf("%d ", t[i]);
+  }
+  putchar('\n');
+}
 ==
 
 code_after==#|c|
+int main(int argc, char* argv[]){
+  int size=atoi(argv[1]);
+  int* A;
+  int* B;
+  int i;
+  
+  A = malloc(4*size);
+  B = malloc(4*size);
 
+  srand(time(NULL));
+
+  A[0] = rand() % 4;
+  B[0] = rand() % 4;
+  for (i=1 ; i<size ; i++){
+    A[i] = A[i-1] + 1 + (rand() % 4);
+    B[i] = B[i-1] + 1 + (rand() % 4);
+  }
+
+  printf("A : ");
+  print_array(A, size);
+  printf("B : ");
+  print_array(B, size);
+  printf("A DELTA B: ");
+  print_diff_sym(A, size, B, size);
+  putchar('\n');
+  return 0;
+}
 ==
 
-editor.code==
-
+editor.code==#|c|
+void print_diff_sym(int* t1, int s1, int* t2, int s2){
+  /* Votre code ici... */
+}
 ==
 
 solution==#|c|
+void print_diff_sym(int* t1, int s1, int* t2, int s2){
+  int i1=0;
+  int i2=0;
 
+  /* As at least ont of the two arrays is not over */
+  while(i1+i2 < s1+s2){
+    if ((i1 < s1) && (i2 < s2)){ /* Both array alive */
+      if (t1[i1] < t2[i2])
+	printf("%d ", t1[i1++]);
+      else if (t1[i1] > t2[i2])
+	printf("%d ", t2[i2++]);
+      else{ /* Same element, so no printing... */
+	i1++;
+	i2++;
+      }
+    }
+    else if (i1 < s1)           /* only t1 is alive */
+      printf("%d ", t1[i1++]);
+    else                        /* only t2 is alive */
+      printf("%d ", t2[i2++]);
+  }
+}
 ==
 
 checks_args_stdin==#|python|
