@@ -108,7 +108,7 @@ int main(int argc, char* argv[]){
   print_array(A, size);
   printf("B : ");
   print_array(B, size);
-  printf("A DELTA B: ");
+  printf("A diff B: ");
   print_diff_sym(A, size, B, size);
   putchar('\n');
   return 0;
