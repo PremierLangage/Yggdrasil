@@ -39,11 +39,15 @@ I & V & X  &  L &   C &   D &    M \\\\ \\hline
 \\end{array} 
 %$
 
+<br>
+
 Par exemple, pour la chaîne de caractères `"MMMCDLXXXIX"`, le chiffre
 à calculer en base 10 sera 3489. Ainsi un appel à la fonction `roman2dec`
 avec l'argument `"MMMCDLXXXIX"` devra retourner `3489`. 
 
+
 MMMCDLXXXIX --> 1000+1000+1000+(-100)+500+50+10+10+10+(-1)+10 = 3489
+
 
 *Globalement, le fin tacticien aura repéré qu'il faut aditionner les
 valeurs des symboles dans le nombre romain sauf quand un symbole est
