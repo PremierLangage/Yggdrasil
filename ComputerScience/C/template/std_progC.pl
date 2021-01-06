@@ -272,7 +272,7 @@ if compil_state != 'error':
         command_args = " ".join(["./student_prog"] + list(map(lambda x: "'"+x+"'", test_c[1])) )
         sp = subprocess.run(command_args, stdin=open("stdin_content", "r"), stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True, timeout=1)
         try: 
-            spout = sp.stdout.decode().replace(' ', '&nbsp;') + sp.stderr.decode()
+            spout = sp.stdout.decode().replace(' ', '&nbsp;') + sp.stderr.decode().replace(' ', '&nbsp;')
         except:
             spout = "Impossible de décoder la sortie standard"
         if -sp.returncode in signals:
