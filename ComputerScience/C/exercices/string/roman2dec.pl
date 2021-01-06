@@ -42,7 +42,7 @@ I & V & X  &  L &   C &   D &    M \\\\ \\hline
 <br>
 
 Par exemple, pour la chaîne de caractères `"MMMCDLXXXIX"`, le chiffre
-à calculer en base 10 sera 3489. Ainsi un appel à la fonction `roman2dec`
+à calculer en base 10 sera `3489`. Ainsi un appel à la fonction **roman2dec**
 avec l'argument `"MMMCDLXXXIX"` devra retourner `3489`. 
 
 
