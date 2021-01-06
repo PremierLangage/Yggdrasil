@@ -260,7 +260,7 @@ if compil_state != 'error':
         command_args = " ".join(["./teacher_prog"] + list(map(lambda x: "'"+x+"'", test_c[1])) )
         sp = subprocess.run(command_args, stdin=open("stdin_content", "r"), stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True, timeout=1)
         try: 
-            expected_ouput = sp.stdout.decode() + sp.stderr.decode()
+            expected_ouput = sp.stdout.decode().replace(' ', '&nbsp;') + sp.stderr.decode().replace(' ', '&nbsp;')
         except:
             expected_ouput = "Impossible de décoder la sortie standard"
         if -sp.returncode in signals:
@@ -284,7 +284,7 @@ if compil_state != 'error':
             nb_good += 1
             feedback_checks += '<div class="success-state" style="margin: 2px;padding: 5px; border: 1px solid #155724 transparent;">'
             terminal_log = "Platon@debian~$> ./a.out " + " ".join(test_c[1]) + "\n"
-            terminal_log += expected_ouput.replace(' ', '&nbsp;')
+            terminal_log += expected_ouput
             if len(test_c[2]) > 0:
                 stdin_explain = "Contenu de l'entrée standard durant l'exécution : <br />"
                 stdin_explain += subnlbybr(test_c[2])
@@ -299,7 +299,7 @@ if compil_state != 'error':
             feedback_checks += '<div class="error-state" style="margin: 2px;padding: 5px; border: 1px solid #155724 transparent;">'
             term_tot = "Attendu : <br />"
             terminal_log = "Platon@debian~$> ./a.out " + " ".join(test_c[1]) + "\n"
-            terminal_log += expected_ouput.replace(' ', '&nbsp;')
+            terminal_log += expected_ouput
             if len(test_c[2]) > 0:
                 stdin_explain = "Contenu de l'entrée standard durant l'exécution : <br />"
                 stdin_explain += subnlbybr(test_c[2])
