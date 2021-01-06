@@ -60,7 +60,7 @@ slashs puis de `n` antislashs. La partie plate du toit est composé de
 pipes. La hauteur totale de la maison est de `2*n` caractères alors
 que la largueur totale est de `3*n` caractères (épaisseurs des murs
 comprises). Le placement des espaces et des retours chariots est
-primordial.
+primordial. Le dessin ne comporte aucun espace superflu.
 ==
 
 editor.code==#|c|
