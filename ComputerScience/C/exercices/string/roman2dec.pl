@@ -155,7 +155,7 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[["Exécution simple", ["1"], ""],
+[["Exécution simple", ["1"], ""], ]
 ==
 
 
