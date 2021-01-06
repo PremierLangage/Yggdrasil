@@ -1,5 +1,5 @@
 #*****************************************************************************
-#  Copyright (C) 2017 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
+#  Copyright (C) 2021 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
 #  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
 #  Creative Commons CC-by-SA 3.0
