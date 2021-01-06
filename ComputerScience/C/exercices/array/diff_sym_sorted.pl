@@ -33,7 +33,7 @@ Par exemple, un ensemble  $% \\lbrace 12, 5, 7, 14, 2 \\rbrace %$ peut
 `[2, 5, 7, 12, 14]`.
 
 
-La différence symmétrique $A \bigtriangleup B$ entre deux ensembles $A$ et $B$ est par 
+La différence symmétrique $% A \bigtriangleup B %$ entre deux ensembles $% A %$ et $% B %$ est par 
 définition 
 
 $$ A \bigtriangleup B := \lbrace x \in A | x \notin B \rbrace \cup \lbrace x \in B | x \notin A \rbrace = (A \smallsetminus B) \cup (B \smallsetminus A) = (A \cup B) \smallsetminus (A \cap B)$$
