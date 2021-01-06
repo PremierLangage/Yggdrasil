@@ -29,11 +29,11 @@ minuscules, les lettres majuscules et le reste du monde. Une fois le
 comptage terminé, votre programme devra faire un résumé de ce qu'il a
 compté sur la sortie standard via l'affichage suivant :
 
-```
-Nombre de majuscules : X   
-Nombre de minuscules : Y   
-Nombre d'autres caractères : Z   
-```
+
+    Nombre de majuscules : X   
+    Nombre de minuscules : Y   
+    Nombre d'autres caractères : Z   
+
 
 Où X, Y et Z seront remplacés par les entiers qui vont bien. Pas besoin
 d'adapter les pluriels selon les comptes trouvés. 
