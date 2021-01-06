@@ -84,8 +84,8 @@ checks_args_stdin==#|python|
   ["Un de chaque", ["a A"], ""],
   ["Chaîne vide", [""], ""],
   ["Exemple complet", ["Voici un EXEMPLE un peu PLUS long..."], ""],
-  ["Test alátoire 1", ["".join([chr(randint(33, 126)) for i in range(randint(20, 40))])], ""],
-  ["Test alátoire 2", ["".join([chr(randint(33, 126)) for i in range(randint(20, 40))])], ""],
-  ["Test alátoire 3", ["".join([chr(randint(33, 126)) for i in range(randint(20, 40))])], ""], ]
+  ["Test alátoire 1", ["".join([choice("abcdeABCDE ,.?!@$&*(){}") for i in range(randint(20, 40))])], ""],
+  ["Test alátoire 2", ["".join([choice("abcdeABCDE ,.?!@$&*(){}") for i in range(randint(20, 40))])], ""],
+  ["Test alátoire 3", ["".join([choice("abcdeABCDE ,.?!@$&*(){}") for i in range(randint(20, 40))])], ""], ]
 ==
 
