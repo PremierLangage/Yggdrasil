@@ -21,6 +21,8 @@ author=Nicolas Borie
 title=La maison qui rend fou
 tag=function|variable|output|sortie|affichage|boucle|precision
 
+editor.height=350px
+
 text==
 Le but cet exercice est d'écrire une fonction `void maison(int n)` qui
 dessine une maison de taille `n`.
