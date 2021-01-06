@@ -30,10 +30,12 @@ C qui correspond à ce nombre romain en argument.
 Pour rappel, voici les symboles romains et leurs valeurs associées en
 base décimale.
 
+$$
 \begin{tabular}{|c|c|c|c|c|c|c|} \hline
 I & V & X  &  L &   C &   D &    M \\ \hline
 1 & 5 & 10 & 50 & 100 & 500 & 1000 \\ \hline
 \end{tabular}
+$$
 
 Par exemple, pour la chaîne de caractères `"MMMCDLXXXIX"`, le chiffre
 à calculer en base 10 sera 3489. Ainsi un appel à la fonction `roman2dec`
