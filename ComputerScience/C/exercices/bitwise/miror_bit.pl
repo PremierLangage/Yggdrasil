@@ -1,11 +1,25 @@
-# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2019 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Miroir sur les bits d'un octect
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Miroir sur les bits d'un octet
-tag=bitwise|function
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=bitwise|function|miroir|renversement|bit|octet
 
 text==
 Écrire une fonction C **bit_miror** qui prend en argument une
@@ -20,15 +34,13 @@ dont les bits apparaissent dans l'ordre inverse que ceux de l'argument.
     0000 0000 --> 0000 0000
 ==
 
-editor.code==
+editor.code==#|c|
 ... bit_miror(...){
     /* Votre code ici */
 }
-
 ==
 
-solution==
-
+solution==#|c|
 unsigned char bit_miror(unsigned char a){
   unsigned char b = 0;
 
@@ -43,19 +55,14 @@ unsigned char bit_miror(unsigned char a){
   b |= (a & 128) >> 7;
   return b;
 }
-
-
 ==
 
-codebefore==
-
+code_before==#|c|
 #include <stdio.h>
 #include <stdlib.h>
-
 ==
 
-codeafter==
-
+code_after==#|c|
 void print_bin(unsigned char s){
   int i;
 
@@ -73,21 +80,18 @@ int main(int argc, char* argv[]){
 
   return 0;
 }
-
 ==
 
-tests==
-
-[["Exécution simple", "1", ""],
- ["Bits nuls", "0", ""],
- ["Bits à 1", "255", ""],
- ["Aléatoire", str(random.randint(0,255)), ""],
- ["Aléatoire", str(random.randint(0,255)), ""],
- ["Aléatoire", str(random.randint(0,255)), ""],
- ["Aléatoire", str(random.randint(0,255)), ""],
- ["Aléatoire", str(random.randint(0,255)), ""],
- ["Aléatoire", str(random.randint(0,255)), ""]]
-
+checks_args_stdin==#|python|
+[["Exécution simple", ["1"], ""],
+ ["Bits nuls", ["0"], ""],
+ ["Bits à 1", ["255"], ""],
+ ["Test aléatoire 1", [str(random.randint(0,255))], ""],
+ ["Test aléatoire 2", [str(random.randint(0,255))], ""],
+ ["Test aléatoire 3", [str(random.randint(0,255))], ""],
+ ["Test aléatoire 4", [str(random.randint(0,255))], ""],
+ ["Test aléatoire 5", [str(random.randint(0,255))], ""],
+ ["Test aléatoire 6", [str(random.randint(0,255))], ""]]
 ==
 
 
