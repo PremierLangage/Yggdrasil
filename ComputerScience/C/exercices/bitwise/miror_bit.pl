@@ -32,6 +32,8 @@ dont les bits apparaissent dans l'ordre inverse que ceux de l'argument.
     1000 0001 --> 1000 0001
     1111 0000 --> 0000 1111
     0000 0000 --> 0000 0000
+
+
 ==
 
 editor.code==#|c|
