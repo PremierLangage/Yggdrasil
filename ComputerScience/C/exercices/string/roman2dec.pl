@@ -195,11 +195,11 @@ checks_args_stdin==#|python|
 [["Exécution simple", ["1"], ""],
  ["Tous les chiffres base 10", ["1", "2", "3", "4", "5", "6", "7", "8", "9"], ""],
  ["Tous les symboles romains", ["1", "5", "10", "50", "100", "500", "1000"], ""],
- ["Test aléatoire 1", [str(randint(1, 3999)) for i in range 5], ""],
- ["Test aléatoire 2", [str(randint(1, 3999)) for i in range 5], ""],
- ["Test aléatoire 3", [str(randint(1, 3999)) for i in range 5], ""],
- ["Test aléatoire 4", [str(randint(1, 3999)) for i in range 5], ""],
- ["Test aléatoire 5", [str(randint(1, 3999)) for i in range 5], ""], ]
+ ["Test aléatoire 1", [str(randint(1, 3999)) for i in range(5)], ""],
+ ["Test aléatoire 2", [str(randint(1, 3999)) for i in range(5)], ""],
+ ["Test aléatoire 3", [str(randint(1, 3999)) for i in range(5)], ""],
+ ["Test aléatoire 4", [str(randint(1, 3999)) for i in range(5)], ""],
+ ["Test aléatoire 5", [str(randint(1, 3999)) for i in range(5)], ""], ]
 ==
 
 
