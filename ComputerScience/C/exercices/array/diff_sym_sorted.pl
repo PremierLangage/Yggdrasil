@@ -28,7 +28,7 @@ L'objectif est ici de concevoir une fonction performante pour
 visualiser la différence symmétrique entre deux ensembles. On peut
 facilement représenter un ensemble d'entiers avec des tableaux triés
 (strictement d'ailleurs car il ne peut pas y avoir de répétitions). 
-Par exemple, un ensemble  $\lbrace 12, 5, 7, 14, 2 \rbrace$ peut
+Par exemple, un ensemble  $% \\lbrace 12, 5, 7, 14, 2 \\rbrace %$ peut
 être encodé de manière canonique par le tableau C de taille 5 : 
 `[2, 5, 7, 12, 14]`.
 
