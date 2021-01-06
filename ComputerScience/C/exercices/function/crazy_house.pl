@@ -121,9 +121,9 @@ checks_args_stdin==#|python|
   ["Test basique", ["3"], ""],
   ["Test basique", ["4"], ""],
   ["Test basique", ["5"], ""],
-  ["Test aléatoire 1", [str(randint(6,8)], ""],
-  ["Test aléatoire 2", [str(randint(9,11)], ""],
-  ["Test aléatoire 3", [str(randint(12,14)], ""] ]
+  ["Test aléatoire 1", [str(randint(6,8))], ""],
+  ["Test aléatoire 2", [str(randint(9,11))], ""],
+  ["Test aléatoire 3", [str(randint(12,14))], ""] ]
 ==
 
 
