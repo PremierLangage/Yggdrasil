@@ -48,7 +48,7 @@ prototype sera :
 Cette dernière devra afficher le contenu de la différence symmétrique toujours de manière
 triée. Il est possible de la faire efficacement, en seule passe, avec
 double têtes de lecture. Les têtes de lecture pointent toujours sur les
-minimums respectifs de $A$ et de $B$. Si ces derniers sont différents,
+minimums respectifs de $% A %$ et de $% B %$. Si ces derniers sont différents,
 on affiche le plus petit des deux et on avance la tête de lecture
 associée. Si les deux têtes pointent vers le même élément, on affiche
 rien (car l'élément est dans les deux ensembles en même temps) et on
