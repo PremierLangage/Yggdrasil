@@ -88,12 +88,12 @@ checks_args_stdin==#|python|
 [["Exécution simple", ["1"], ""],
  ["Bits nuls", ["0"], ""],
  ["Bits à 1", ["255"], ""],
- ["Test aléatoire 1", [str(random.randint(0,255))], ""],
- ["Test aléatoire 2", [str(random.randint(0,255))], ""],
- ["Test aléatoire 3", [str(random.randint(0,255))], ""],
- ["Test aléatoire 4", [str(random.randint(0,255))], ""],
- ["Test aléatoire 5", [str(random.randint(0,255))], ""],
- ["Test aléatoire 6", [str(random.randint(0,255))], ""]]
+ ["Test aléatoire 1", [str(randint(0,255))], ""],
+ ["Test aléatoire 2", [str(randint(0,255))], ""],
+ ["Test aléatoire 3", [str(randint(0,255))], ""],
+ ["Test aléatoire 4", [str(randint(0,255))], ""],
+ ["Test aléatoire 5", [str(randint(0,255))], ""],
+ ["Test aléatoire 6", [str(randint(0,255))], ""]]
 ==
 
 
