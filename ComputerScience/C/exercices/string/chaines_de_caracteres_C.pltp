@@ -21,7 +21,7 @@ aucun caractère mais occupe au moins une place mémoire pour son '\0').
 @ /ComputerScience/C/exercices/string/substring.pl
 @ /ComputerScience/C/exercices/string/rev_sentence.pl
 @ /ComputerScience/C/exercices/string/is_a_number.pl
-
+@ /ComputerScience/C/exercices/string/roman2dec.pl
 
 
 
