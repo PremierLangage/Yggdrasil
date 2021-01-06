@@ -30,9 +30,9 @@ C qui correspond à ce nombre romain en argument.
 Pour rappel, voici les symboles romains et leurs valeurs associées en
 base décimale.
 
-$% \begin{tabular}{|c|c|c|c|c|c|c|} \hline
-I & V & X  &  L &   C &   D &    M \\ \hline
-1 & 5 & 10 & 50 & 100 & 500 & 1000 \\ \hline
+$% \begin{tabular}{|c|c|c|c|c|c|c|} \\hline
+I & V & X  &  L &   C &   D &    M \\ \\hline
+1 & 5 & 10 & 50 & 100 & 500 & 1000 \\ \\hline
 \end{tabular} %$
 
 Par exemple, pour la chaîne de caractères `"MMMCDLXXXIX"`, le chiffre
