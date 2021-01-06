@@ -56,7 +56,7 @@ avance les deux têtes de lecture d'un cran.
 
 Voici des exemples d'éxécution avec des tableaux de taille 10 aléatoires.
 
-```
+```{#mycode .bash}
 nborie@bayer:$ ./pouet 
 A : 1 3 5 6 7 9 13 14 16 18 
 B : 2 3 7 10 13 14 16 18 22 25 
