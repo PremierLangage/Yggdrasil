@@ -40,7 +40,11 @@ d'adapter les pluriels selon les comptes trouvés.
 ==
 
 editor.code==#|c|
+#include ...
 
+int main(int argc, char* argv[]){
+  /* Votre code ici... */
+}
 ==
 
 code_before==#|c|
