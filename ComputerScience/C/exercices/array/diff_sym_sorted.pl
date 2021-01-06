@@ -38,8 +38,8 @@ définition
 
 $$ A \bigtriangleup B := \lbrace x \in A | x \notin B \rbrace \cup \lbrace x \in B | x \notin A \rbrace = (A \smallsetminus B) \cup (B \smallsetminus A) = (A \cup B) \smallsetminus (A \cap B)$$
 
-En francais, les éléments de $A \bigtriangleup B$ sont seulement dans $A$ ou
-seulement dans $B$. Maintenant, si $A$ et $B$ sont deux tableaux triés
+En francais, les éléments de $% A \bigtriangleup B %$ sont seulement dans $% A %$ ou
+seulement dans $% B %$. Maintenant, si $% A %$ et $% B %$ sont deux tableaux triés
 de manière strictement croissante, vous devrez coder une fonction dont le
 prototype sera : 
 
