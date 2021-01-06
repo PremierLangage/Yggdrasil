@@ -57,14 +57,14 @@ avance les deux têtes de lecture d'un cran.
 Voici des exemples d'éxécution avec des tableaux de taille 10 aléatoires.
 
 ```bash
-nborie@bayer:$ ./pouet 
-A : 1 3 5 6 7 9 13 14 16 18 
-B : 2 3 7 10 13 14 16 18 22 25 
-A diff B : 1 2 5 6 9 10 22 25 
-nborie@bayer:$ ./pouet 
-A : 1 4 6 7 8 12 15 16 18 20 
-B : 2 6 8 9 10 13 17 21 22 26 
-A diff B : 1 2 4 7 9 10 12 13 15 16 17 18 20 21 22 26 
+nborie@bayer:$ ./pouet   
+A : 1 3 5 6 7 9 13 14 16 18   
+B : 2 3 7 10 13 14 16 18 22 25   
+A diff B : 1 2 5 6 9 10 22 25   
+nborie@bayer:$ ./pouet   
+A : 1 4 6 7 8 12 15 16 18 20   
+B : 2 6 8 9 10 13 17 21 22 26   
+A diff B : 1 2 4 7 9 10 12 13 15 16 17 18 20 21 22 26   
 ```
 ==
 
