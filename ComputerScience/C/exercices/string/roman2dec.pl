@@ -21,6 +21,8 @@ title=Reconvertir en décimal des chiffres romains
 
 tag=function|chaîne|difficile|romain|décimanl|conversion
 
+editor.height=350px
+
 text==
 Écrire une fonction **roman2dec** qui prend en argument une chaîne de
 caractères qui décrira toujours un nombre écrit en numérotation
