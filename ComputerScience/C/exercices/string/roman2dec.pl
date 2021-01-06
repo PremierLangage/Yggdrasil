@@ -22,11 +22,36 @@ title=Reconvertir en décimal des chiffres romains
 tag=function|chaîne|difficile|romain|décimanl|conversion
 
 text==
+Écrire une fonction `roman2dec` qui prend en argument une chaîne de
+caractères qui décrira toujours un nombre écrit en numérotation
+romaine compris entre 1 et 3999. La fonction devra retourner l'entier
+C qui correspond à ce nombre romain en argument.
 
+Pour rappel, voici les symboles romains et leurs valeurs associées en
+base décimale.
+
+\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+I & V & X  &  L &   C &   D &    M \\ \hline
+1 & 5 & 10 & 50 & 100 & 500 & 1000 \\ \hline
+\end{tabular}
+
+Par exemple, pour la chaîne de caractères `"MMMCDLXXXIX"`, le chiffre
+à calculer en base 10 sera 3489. Ainsi un appel à la fonction `roman2dec`
+avec l'argument `"MMMCDLXXXIX"` devra retourner `3489`. 
+
+MMMCDLXXXIX --> 1000+1000+1000+(-100)+500+50+10+10+10+(-1)+10 = 3489
+
+*Globalement, le fin tacticien aura repéré qu'il faut aditionner les
+valeurs des symboles dans le nombre romain sauf quand un symbole est
+suivi d'un plus grand (IV, IX, XL, XC, etc...), à ce moment là, la
+valeur du symbole doit être soustraite. (source: Chiffres Romains -
+Numération - Mathématiques : CM1 - Cycle 3)*
 ==
 
 editor.code==#|c|
-
+int roman2dec(char* s){
+  /* Votre code ici... */
+}
 ==
 
 solution==#|c|
