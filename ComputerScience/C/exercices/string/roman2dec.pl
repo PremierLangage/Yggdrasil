@@ -22,7 +22,7 @@ title=Reconvertir en décimal des chiffres romains
 tag=function|chaîne|difficile|romain|décimanl|conversion
 
 text==
-Écrire une fonction `roman2dec` qui prend en argument une chaîne de
+Écrire une fonction **roman2dec** qui prend en argument une chaîne de
 caractères qui décrira toujours un nombre écrit en numérotation
 romaine compris entre 1 et 3999. La fonction devra retourner l'entier
 C qui correspond à ce nombre romain en argument.
