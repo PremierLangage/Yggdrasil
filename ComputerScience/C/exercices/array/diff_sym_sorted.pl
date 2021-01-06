@@ -18,10 +18,10 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
 
-title=Afficher le contenu d'un tableau
-tag=array|affichage|tableau|fonction
+title=Différence symmétrique en une seule passe!
+tag=array|tableau|fonction|difficile|algorithme|linéaire|optimal|ensembles|trié
 
-editor.height=280px
+editor.height=350px
 
 text==#|markdown|
 L'objectif est ici de concevoir une fonction performante pour
