@@ -17,6 +17,7 @@
 extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Sous facteur binaire dans un entier long
 tag=bitwise|function|facteur|mot
 
