@@ -6,11 +6,11 @@ Voici quelques exercices demandant de manipuler les données bit à bit.
 ==
 
 
+@ /ComputerScience/C/exercices/bitwise/bin_parity.pl
 @ /ComputerScience/C/exercices/bitwise/popcount.pl
 @ /ComputerScience/C/exercices/bitwise/miror_bit.pl
 @ /ComputerScience/C/exercices/bitwise/last_pack_size.pl
 @ /ComputerScience/C/exercices/bitwise/nb_swap_long.pl
-@ /ComputerScience/C/exercices/bitwise/bin_parity.pl
 @ /ComputerScience/C/exercices/bitwise/binary_factor.pl
 @ /ComputerScience/C/exercices/bitwise/max_consecutive.pl
 @ /ComputerScience/C/exercices/bitwise/miror_area.pl
