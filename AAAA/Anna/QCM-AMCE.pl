@@ -25,9 +25,9 @@ settings.cumulative % false
 
 onepergroup=true
 
+title= Cher enseignant vous n'avez pas changer le "title"
+
 questions==
-
-
 
 =*+ Exo avec click sur un mot ici bonne est le bon mot 
  Vous  pouvez en mettre plusieurs séparer vos mots par des espace 
@@ -72,9 +72,7 @@ questions==
 -=[x for x in range(3,77) if x%2==0 ]
 
 ==
-
-
-title= Cher enseignant vous n'avez pas changer le "title" 
+ 
 
 before == #|python|
 import random as rd
