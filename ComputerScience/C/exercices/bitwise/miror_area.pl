@@ -128,7 +128,7 @@ int main(int argc, char* argv[]){
 
 checks_args_stdin==#|python|
 [["Exécution simple", ["1"], ""],
- ["Pas de bit", ["0", "0", "0", "0", ""],
+ ["Pas de bit", ["0", "0", "0", "0"], ""],
  ["64 bits", ["255", "255", "255", "255", "255", "255", "255", "255"], ""],
  ["Test aléatoire 1", [str(randint(0,255)) for i in range(4)], ""],
  ["Test aléatoire 2", [str(randint(0,255)) for i in range(5)], ""],
