@@ -79,12 +79,12 @@ int size_last_pack(unsigned char c){
 }
 ==
 
-codebefore==#|c|
+code_before==#|c|
 #include <stdio.h>
 #include <stdlib.h>
 ==
 
-codeafter==#|c|
+code_after==#|c|
 void print_bin(char n){
   int i;
   
