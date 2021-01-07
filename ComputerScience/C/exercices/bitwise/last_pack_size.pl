@@ -17,11 +17,12 @@
 extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
-title=Taille du paquet de bits de poids faible
-tag=bitwise|function
-extends=/ComputerScience/C/template/stdsandboxC.pl
 
-text==
+title=Taille du paquet de bits de poids faible
+tag=bitwise|fonction|bit|poids|faible|octet|décalage|difficile
+
+
+text==#|markdown|
 Écrire une fonction **size_last_pack** qui prend en argument un
 caractère C non signé et retourne le nombre de bit à 1 consécutifs
 dans le dernier paquet de 1. De manière équivalente, la fonction
@@ -44,17 +45,16 @@ fonctionnalité.
     11110001 = 241 : 1
     11011110 = 222 : 4
 
+
 ==
 
-editor.code==
+editor.code==#|c|
 ... size_last_pack(...){
   /* ... votre code ici ... */
 }
-
 ==
 
-solution==
-
+solution==#|c|
 int size_last_pack(unsigned char c){
   int old_pack = 0;
   int current_pack = 0;
@@ -77,18 +77,14 @@ int size_last_pack(unsigned char c){
   else
     return old_pack;
 }
-
 ==
 
-codebefore==
-
+codebefore==#|c|
 #include <stdio.h>
 #include <stdlib.h>
-
 ==
 
-codeafter==
-
+codeafter==#|c|
 void print_bin(char n){
   int i;
   
@@ -105,22 +101,17 @@ int main(int argc, char* argv[]){
   
   return 0;
 }
-
 ==
 
-tests==
-
-[["Exécution simple", "1", ""],
- ["Bits nuls", "0", ""],
- ["Bits à 1", "255", ""],
- ["Aléatoire", str(random.randint(0,255)), ""],
- ["Aléatoire", str(random.randint(0,255)), ""],
- ["Aléatoire", str(random.randint(0,255)), ""],
- ["Aléatoire", str(random.randint(0,255)), ""],
- ["Aléatoire", str(random.randint(0,255)), ""],
- ["Aléatoire", str(random.randint(0,255)), ""]]
-
+checks_args_stdin==#|python|
+[["Exécution simple", ["1"], ""],
+ ["Bits nuls", ["0"], ""],
+ ["Bits à 1", ["255"], ""],
+ ["Test aléatoire", [str(random.randint(0,255))], ""],
+ ["Test aléatoire", [str(random.randint(0,255))], ""],
+ ["Test aléatoire", [str(random.randint(0,255))], ""],
+ ["Test aléatoire", [str(random.randint(0,255))], ""],
+ ["Test aléatoire", [str(random.randint(0,255))], ""],
+ ["Test aléatoire", [str(random.randint(0,255))], ""]]
 ==
-
-
 
