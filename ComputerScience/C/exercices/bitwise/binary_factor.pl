@@ -21,7 +21,7 @@ author=Nicolas Borie
 title=Sous facteur binaire dans un entier long
 tag=bitwise|function|facteur|mot
 
-text==
+text==#|markdown|
 Écrire une fonction qui détecte la présence du mot binaire **1011** dans 
 la donnée binaire d'un entier long non signé. Votre fonction devra retourner 
 l'entier **1** si la séquence contiguë binaire **1011** apparaît dans la 
