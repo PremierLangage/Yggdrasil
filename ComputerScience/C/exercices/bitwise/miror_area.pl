@@ -1,14 +1,27 @@
-# Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
+#*****************************************************************************
+#  Copyright (C) 2019 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
-# Faire un miroir binaire sur une zone mémoire
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Nicolas Borie
+
 title=Miroir binaire sur zone mémoire
-tag=bitwise|function
-extends=/ComputerScience/C/template/stdsandboxC.pl
+tag=bitwise|fonction|difficile|zone|mémoire|void*|avancé
 
-text==
-
+text==#|markdown|
 Écrire une fonction **miror_bin** qui prend en argument une zone mémoire 
 **data** de taille **size** octets et qui modifie cette zone pour la 
 transformer en son miroir binaire. Après exécution, **data** pointe vers 
@@ -32,15 +45,13 @@ poids faible du dernier octet est le plus à droite.
 
 ==
 
-editor.code==
+editor.code==#|c|
 void miror_bin(void* data, size_t size){
     /* Votre code ici */
 }
-
 ==
 
-solution==
-
+solution==#|c|
 unsigned char bit_miror(unsigned char a){
   unsigned char b = 0;
 
@@ -69,18 +80,14 @@ void miror_bin(void* data, size_t size){
   if (size%2)
     s[size/2] = bit_miror(s[size/2]);
 }
-
 ==
 
-codebefore==
-
+code_before==#|c|
 #include <stdio.h>
 #include <stdlib.h>
-
 ==
 
-codeafter==
-
+code_after==#|c|
 void print_bin(unsigned char u){
   int i;
 
@@ -97,7 +104,6 @@ void print_area(void* data, size_t size){
   }
   putchar('\n');
 }
-
 
 int main(int argc, char* argv[]){
   unsigned char s[100];
@@ -118,11 +124,9 @@ int main(int argc, char* argv[]){
 
   return 0;
 }
-
 ==
 
-tests==
-
+checks_args_stdin==#|python|
 [["Exécution simple", "1", ""],
  ["Pas de bit", "0 0 0 0", ""],
  ["64 bits", "255 255 255 255 255 255 255 255", ""],
@@ -131,8 +135,5 @@ tests==
  ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(random.randint(2, 20))]), ""],
  ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(random.randint(2, 20))]), ""],
  ["Aléatoire", " ".join([str(random.randint(0,255)) for i in range(random.randint(2, 20))]), ""]]
-
 ==
-
-
 
