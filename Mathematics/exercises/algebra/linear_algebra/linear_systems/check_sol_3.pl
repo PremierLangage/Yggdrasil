@@ -1,3 +1,6 @@
+# Author : D. Doyen
+# Last update : 08/01/21
+
 extends = /model/math/math.pl
 extends = /model/basic/radio.pl
 
