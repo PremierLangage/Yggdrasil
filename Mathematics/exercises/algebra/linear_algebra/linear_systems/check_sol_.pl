@@ -13,7 +13,7 @@ Non, car la 3e équation n'est pas vérifiée.
 before ==
 n = 3
 A = rand_int_matrix_invertible(n, 3)
-vec = list_randint(n,-3,3,[0])
+vec = Tuple(list_randint(n,-3,3,[0]))
 B = A*Matrix(vec)
 
 vec_tex=str(tuple(vec))
