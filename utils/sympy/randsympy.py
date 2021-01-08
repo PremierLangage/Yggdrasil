@@ -122,9 +122,9 @@ def randint_matrix(n, p, bound, excluded_values=[], sparsity=0):
     excluded_values : list of excluded values for the coefficients
     sparsity : proportion of zero coefficients (value between 0 and 1)
     """
-    nbzero=int(sp.floor(sparsity*n*p))
-    entries0=[0]*nbzero
-    entries1=list_randint(n*p-nbzero,-bound,bound,excluded_values)
+    nbzero = int(sp.floor(sparsity*n*p))
+    entries0 = [0]*nbzero
+    entries1 = list_randint(n*p-nbzero,-bound,bound,excluded_values)
     entries=entries0+entries1
     rd.shuffle(entries)
     return sp.Matrix(n,p,entries)
