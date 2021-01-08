@@ -1,5 +1,5 @@
-extends = /model/mathradio.pl
-
+extends = /model/math.pl
+extends = /model/basic/radio.pl
 title = Vérifier une solution
 
 before ==
