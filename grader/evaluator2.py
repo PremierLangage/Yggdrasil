@@ -117,6 +117,8 @@ if __name__ == "__main__":
             ffeedback=format_feedback_score(score,feedback)
         elif dic['settings']['feedback']=='lightscore':
             ffeedback=format_feedback_lightscore(score,feedback)
+    else:
+        ffeedback = feedback
 
     # dic = json.loads(json.dumps(dic, cls=CustomEncoder))
 
