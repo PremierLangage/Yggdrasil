@@ -1,4 +1,4 @@
-extends = /model/math.pl
+extends = /model/math/math.pl
 extends = /model/basic/radio.pl
 
 title = Vérifier une solution
