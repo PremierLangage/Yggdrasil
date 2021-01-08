@@ -17,10 +17,10 @@ vec = list_randint(n,-3,3,[0])
 B = A*Matrix(vec)
 
 vec_tex=str(tuple(vec))
-nbsol = randint(0, n)
+indexsol = randint(0, n)
 
-if nbsol > 0:
-    B[nbsol-1] += randitem([-2, -1, 1, 2])
+if indexsol > 0:
+    B[indexsol-1] += randitem([-2, -1, 1, 2])
 
 sys_tex = latex_linsys(A, B)
 ==
