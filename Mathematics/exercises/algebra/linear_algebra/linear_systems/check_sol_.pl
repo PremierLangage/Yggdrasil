@@ -16,7 +16,7 @@ before ==
 n = 3
 bound = 3
 A = randint_matrix_invertible(n, n, bound, excluded_values=[0])
-vec = list_randint(n,-3,3,[0])
+vec = list_randint(n, -3, 3, [0])
 B = A*Matrix(vec)
 
 vec = tuple(vec)
