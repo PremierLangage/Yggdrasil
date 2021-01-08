@@ -112,6 +112,65 @@ def rand_int_poly(d, nc, bound, var='x'):
 
 # Matrices
 
+def randint_matrix(n, p, bound, excluded_values=[], sparsity=0):
+    """
+    Generate a random matrix with integer entries.
+
+    n : number of rows
+    p : number of columns
+    bound : coefficient bound
+    excluded_values : list of excluded values for the coefficients
+    sparsity : proportion of zero coefficients (value between 0 and 1)
+    """
+    nbzero=int(sp.floor(sparsity*n*p))
+    entries0=[0]*nbzero
+    entries1=list_randint(n*p-nbzero,-bound,bound,excluded_values)
+    entries=entries0+entries1
+    rd.shuffle(entries)
+    return sp.Matrix(n,p,entries)
+
+def randint_matrix_invertible(n, bound, excluded_values=[], sparsity=0, mindet=0, maxdet=sp.S.Infinity):
+    """
+    Generate an invertible random matrix with integer entries.
+    """
+    while True:
+        M=rand_int_matrix_fullrank(n,n,bound,excluded_values,sparsity)
+        if mindet <= abs(M.det()) <= maxdet:
+            return M
+            
+def rand_int_matrix_fullrank(n,p,bound,excluded_values=[],sparsity=0):
+    """
+    Generate a full rank random matrix with integer entries.
+    """
+    while True:
+        M=rand_int_matrix(n,p,bound,excluded_values,sparsity)
+        if M.rank()==min([n,p]):
+            return M
+
+def rand_int_matrix_givenrank(n,m,r,magnitude=2):
+    """
+    Generate a nxn random matrix with given rank.
+    """
+    A=sp.zeros(n,m)
+    d=list_randint_norep(r,0,n-1)
+    for i in range(r):
+        A[d[i],d[i]]=1
+    while True:
+        P=rand_int_matrix_invertible(n,magnitude)
+        Q=rand_int_matrix_invertible(m,magnitude)
+        B=P*A*Q
+        numzeros=0
+        for i in range(n):
+            for j in range(m):
+                if B[i,j]==0:
+                    numzeros += 1
+        diffrows=len(set([tuple(B.row(i)) for i in range(n)]))
+        diffcols=len(set([tuple(B.col(i)) for i in range(n)]))
+        if numzeros < n and diffcols==n and diffrows==n:
+            return P*A*Q
+
+# Matrices (old versions)
+
 def rand_int_matrix(n,p,bound,excluded_values=[],sparsity=0):
     """
     Generate a random matrix with integer entries.
