@@ -10,6 +10,8 @@ Non, car la 2e équation n'est pas vérifiée.
 Non, car la 3e équation n'est pas vérifiée.
 ==
 
+shuffle % false
+
 before ==
 n = 3
 A = rand_int_matrix_invertible(n, 3)
