@@ -157,9 +157,9 @@ def randint_matrix_givenrank(n, m, r, magnitude=2):
     magnitude : parameter defining the size of coefficients
     """
     A = sp.zeros(n, m)
-    d = list_randint_norep(r, 0, n-1)
+    d = list_randint_norep(r, 0, min(n,m)-1)
     for i in range(r):
-        A[d[i],d[i]]=1
+        A[d[i],d[i]] = 1
     while True:
         P=randint_matrix_invertible(n, magnitude)
         Q=randint_matrix_invertible(m, magnitude)
