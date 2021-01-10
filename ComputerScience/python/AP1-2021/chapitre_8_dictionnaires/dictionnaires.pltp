@@ -1,0 +1,16 @@
+
+title=Dictionnaires
+
+introduction==
+Cette fiche PL est là pour vous entraîner sur la manipulation des dictionnaires.
+
+==
+
+
+@ ajout.pl
+@ charlie.pl
+@ somme_valeurs.pl
+@ creer_dico.pl
+@ liste_cles_condition.pl
+@ somme_dicos.pl
+@ imposable.pl
