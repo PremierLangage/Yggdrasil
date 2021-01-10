@@ -163,7 +163,7 @@ def randint_matrix_givenrank(n, m, r, magnitude=1):
         zerorows = sum([sum(B.row(i))==0 for i in range(n)])
         diffrows = len(set([tuple(B.row(i)) for i in range(n)]))
         diffcols = len(set([tuple(B.col(i)) for i in range(m)]))
-        if diffrows==n and diffcols==m:
+        if zerorows > 0 and diffrows==n and diffcols==m:
             return B
 
 # Matrices (old versions)
