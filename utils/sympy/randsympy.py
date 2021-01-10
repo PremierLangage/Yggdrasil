@@ -147,9 +147,14 @@ def rand_int_matrix_fullrank(n,p,bound,excluded_values=[],sparsity=0):
         if M.rank()==min([n,p]):
             return M
 
-def rand_int_matrix_givenrank(n,m,r,magnitude=2):
+def randint_matrix_givenrank(n, m, r, magnitude=2):
     """
     Generate a nxn random matrix with given rank.
+
+    n : number of rows
+    p : number of columns
+    r : rank
+    magnitude : parameter defining the size of coefficients
     """
     A=sp.zeros(n,m)
     d=list_randint_norep(r,0,n-1)
