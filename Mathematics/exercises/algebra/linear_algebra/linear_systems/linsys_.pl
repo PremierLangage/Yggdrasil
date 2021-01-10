@@ -1,3 +1,7 @@
+# Author : D. Doyen
+# Last update : 08/01/21
+# Keywords : linear systems
+
 extends = /model/mathinput.pl
 
 title = Système linéaire
