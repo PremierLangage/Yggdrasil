@@ -40,7 +40,7 @@ after = before
 ==
 
 pltest0==
->>> d1 = {'a':1, 'b':2}
+>>> d1 = {'a':1, 'b':2}  # initialisation
 >>> ajoute_dico(d1, 'a') # dedans
 False
 >>> len(d1) == 2
