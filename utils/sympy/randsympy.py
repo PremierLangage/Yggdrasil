@@ -156,14 +156,10 @@ def randint_matrix_givenrank(n, m, r, magnitude=2):
     r : rank
     magnitude : parameter defining the size of coefficients
     """
-    A = sp.zeros(n, m)
-    d = list_randint_norep(r, 0, min(n,m)-1)
-    for i in range(r):
-        A[d[i],d[i]] = 1
     while True:
-        P=randint_matrix_fullrank(n, r, magnitude)
-        Q=randint_matrix_fullrank(r, m, magnitude)
-        B=P*A*Q
+        P = randint_matrix_fullrank(n, r, magnitude)
+        Q = randint_matrix_fullrank(r, m, magnitude)
+        B = P*Q
         numzeros=0
         for i in range(n):
             for j in range(m):
