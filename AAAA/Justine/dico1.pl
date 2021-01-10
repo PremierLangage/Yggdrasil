@@ -31,8 +31,10 @@ d1 = {'a':1, 'b':2}
 l_d1 = len(d1)
 d1_ini = d1.copy()
 d1_plus_c = {'a':1, 'b':2, 'c':0}
+cle1 = 'a'
+cle2 = 'c'
 
-pltest0 = f">>> ajoute_dico({d1}, {'a'})\n{False}\n"
+pltest0 = f">>> ajoute_dico({d1}, {cle1})\n{False}\n"
 
 after = before
 ==
