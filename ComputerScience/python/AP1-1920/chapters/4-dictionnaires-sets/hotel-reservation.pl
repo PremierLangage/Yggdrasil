@@ -6,12 +6,12 @@ extends = /ComputerScience/python/AP1-1920/templates/pltest.pl
 title = Réserver un bon hôtel
 
 text==
-Vous allez prendre une vacances à Marseille, et vous devez réserver un hôtel. 
+Vous allez prendre des vacances à Marseille, et vous devez réserver un hôtel. 
 
-Vous avez un ensemble d'hôtels préférés, mais maintenant vos amis vous transmettent une liste d'hôtels à éviter.
+Vous avez un ensemble d'hôtels préférés, mais vos amis vous transmettent une liste d'hôtels à éviter.
 
-Écrire une fonction `hotel_acceptable` qui prendre votre ensemble d'hôtels acceptable et la liste d'hôtel à éviter, 
-puis renvoyer un ensemble d'hôtels acceptables, c'est-à-dire les hôtels acceptables pour vous mais pas à éviter.
+Écrire une fonction `hotel_acceptable` qui prendra votre ensemble d'hôtels préférés et la liste d'hôtels à éviter, 
+puis renverra un ensemble d'hôtels acceptables, c'est-à-dire les hôtels que vous aimez et qui ne sont pas à éviter.
 
 Voici un exemple :
 
