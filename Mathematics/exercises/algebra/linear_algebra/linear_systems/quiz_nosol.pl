@@ -5,7 +5,12 @@
 extends = /model/math/math.pl
 extends = /model/basic/radio.pl
 
-
+choice ==
+A
+B
+C
+D
+==
 title = Trouver une solution parmi plusieurs
 
 before ==
