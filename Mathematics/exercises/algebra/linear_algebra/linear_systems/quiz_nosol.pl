@@ -19,7 +19,7 @@ n = 3
 bound = 3
 A = randint_matrix_givenrank(3, 3, 2, magnitude=2)
 
-vec = list_randint(2, -3, 3)
+vec = list_randint(3, -3, 3)
 B = A*Matrix(vec)
 
 
