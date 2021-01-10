@@ -34,7 +34,7 @@ d1_plus_c = {'a':1, 'b':2, 'c':0}
 cle1 = 'a'
 cle2 = 'c'
 
-pltest0 = f">>> ajoute_dico({d1}, {cle1})\n{False}\n"
+pltest2 = f">>> ajoute_dico({d1}, {cle1})\n{False}\n"
 
 after = before
 ==
