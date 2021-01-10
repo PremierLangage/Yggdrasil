@@ -36,7 +36,7 @@ cle2 = 'c'
 
 pltest0 = f">>> ajoute_dico({d1}, {'a'})\n{False}\n"
 
-pltest1 = f">>> ajoute_dico({d1}, {'c'})\n{True}\n"
+pltest2 = f">>> ajoute_dico({d1}, {'c'})\n{True}\n"
 
 after = before
 ==
