@@ -10,7 +10,7 @@ title=Trouver Charlie dans un dictionnaire
 
 text==
 
-Ecrire une fonction ``trouve_charlie(maison)`` qui prend en valeur un dictionnaire ``maison`` et cherche si la chaîne de caractères ``'Charlie'`` fait partie des valeurs. Si oui, elle renvoie la clé de la première occurrence. Si non, elle renvoie ``False``.
+Ecrire une fonction ``trouve_charlie(maison)`` qui prend en argument un dictionnaire ``maison`` et cherche si la chaîne de caractères ``'Charlie'`` fait partie des valeurs. Si oui, elle renvoie la clé de la première occurrence. Si non, elle renvoie ``False``.
 ==
 
 tag=dictionary
