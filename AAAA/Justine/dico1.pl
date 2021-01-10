@@ -40,13 +40,14 @@ after = before
 ==
 
 pltest0==
->>> ajoute_dico({'a':1, 'b':2}, 'a') # dedans
+>>> d1 = {'a':1, 'b':2}
+>>> ajoute_dico(d1, 'a') # dedans
 False
->>> len(d1) == l_d1
+>>> len(d1) == 2
 True
 >>> ajoute_dico(d1, 'c') # pas dedans
 True
->>> len(d1) == l_d1 + 1
+>>> len(d1) == 3
 True
 >>> d1['c'] == 0
 True
