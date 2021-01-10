@@ -3,7 +3,10 @@
 
 # Author: Justine Falque
 
-extends=/ComputerScience/python/AP1-1920/templates/prosoluce.pl
+extends=/ComputerScience/python/template/soluce.pl
+ 
+
+@ /builder/before.py [builder.py]
 
 #author=Justine Falque
 title=Affichage
