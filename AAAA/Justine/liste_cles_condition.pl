@@ -38,6 +38,7 @@ pltest1==
 >>> liste_neg({'a': 3})  # Test Sans Négatif
 []
 >>> liste_neg({'a': 3, -12: 8}) == []  # Test Clé Négative
+True
 >>> liste_neg({'a': -3, 5: 16, -7: -1}) == ['a', -7]   # Test Valeurs Négatives
 True
 ==
