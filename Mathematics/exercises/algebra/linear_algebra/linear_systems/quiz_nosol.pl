@@ -24,7 +24,5 @@ sys_tex = latex_linsys(A, B)
 text ==
 On considère le système suivant (d'inconnues $!x, y, z !$) :
 $$ {{sys_tex}} $$
-
-Parmi les propositions suivantes, laquelle est la solution de ce système ?
 ==
 
