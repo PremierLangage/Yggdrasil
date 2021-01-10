@@ -31,8 +31,13 @@ pltest0==
 {'somme': 13, 'produit': 30, 'bien ordonnes': False}
 >>> arithmetique(1,3)  # Test simple 2
 {'somme': 4, 'produit': 3, 'bien ordonnes': True}
+==
+
+pltest1==
 >>> arithmetique(-11,3)  # Test Avec Négatifs
 {'somme': -8, 'produit': -33, 'bien ordonnes': True}
+>>> arithmetique(-2,-2)  # Test Nombres Egaux
+{'somme': -4, 'produit': 4, 'bien ordonnes': True}
 ==
 
 
