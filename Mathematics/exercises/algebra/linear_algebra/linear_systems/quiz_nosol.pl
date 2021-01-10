@@ -19,10 +19,10 @@ before ==
 indexsol = randint(0, 2)
 if indexsol == 0:
     A = randint_matrix_givenrank(3, 3, 3, magnitude=2)
-    B = A*Matrix(list_randint(2, -3, 3))
+    B = A*Matrix(list_randint(2, -2, 2))
 else:
     A = randint_matrix_givenrank(3, 3, 2, magnitude=2)
-    vec = list_randint(2, -3, 3) 
+    vec = list_randint(3, -2, 2) 
     if indexsol == 2:
         B = A*Matrix(vec)
 
