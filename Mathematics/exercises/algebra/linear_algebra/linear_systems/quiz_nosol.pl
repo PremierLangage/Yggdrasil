@@ -24,7 +24,7 @@ else:
     A = randint_matrix_givenrank(3, 3, 2, magnitude=2)
     vec = list_randint(2, -3, 3) 
     if indexsol == 2:
-
+        B = A*Matrix(vec)
 
 sys_tex = latex_linsys(A, B)
 
