@@ -23,7 +23,7 @@ vec = list_randint(2, -3, 3)
 B = A*Matrix(vec)
 
 
-sys_tex ="" # latex_linsys(A, B)
+sys_tex = latex_linsys(A, B)
 
 ==
 
