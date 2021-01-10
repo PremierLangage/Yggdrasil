@@ -6,7 +6,7 @@ extends = /ComputerScience/python/AP1-1920/templates/pltest.pl
 title = Lister les imposables
 
 text==
-Toute personne qui réside en France doit payer l'impôt. Pourtant pas tous les français s'habite en France. 
+Toute personne qui réside en France doit payer l'impôt. Pourtant tous les français n'habitent pas en France. 
 
 La Finance Publique a alors besoin de savoir qui réside encore en France. Elle possède d'une base de donnée qui enregistre l'âge et le pays de résidence de chaque français.
 
