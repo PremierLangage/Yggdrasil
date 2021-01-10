@@ -34,17 +34,17 @@ d1_plus_c = {'a':1, 'b':2, 'c':0}
 cle1 = 'a'
 cle2 = 'c'
 
-pltest2 = f">>> ajoute_dico({d1}, {cle1})\n{False}\n"
+#pltest2 = f">>> ajoute_dico({d1}, {cle1})\n{False}\n"
 
-pltest3 = f">>> ajoute_dico({d1}, {'c'})\n{True}\n"
+#pltest3 = f">>> ajoute_dico({d1}, {'c'})\n{True}\n"
 
 after = before
 ==
 
 pltest0==
 >>> d1 = {'a':1, 'b':2}  # initialisation
->>> not ajoute_dico(d1, 'a') # dedans
-True
+>>> ajoute_dico(d1, 'a') # dedans
+False
 >>> len(d1) == 2
 True
 ==
