@@ -40,7 +40,7 @@ False
 False
 ==
 
-pltest0==
+pltest2==
 >>> d1 = {'jardin':0, 'sdb':0, 'garage':'Charlie', 'chambre':'Charlie'}  # initialisation
 >>> trouve_charlie(d1)  # Deux Charlie
 'garage'
