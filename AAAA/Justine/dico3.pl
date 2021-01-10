@@ -10,15 +10,15 @@ title=Trouver Charlie dans un dictionnaire
 
 text==
 
-Ecrire une fonction ``trouve_charlie(d)`` qui prend en valeur un dictionnaire et cherche si la chaîne de caractères ``'Charlie'`` fait partie des valeurs. Si oui, elle renvoie la clé de la première occurrence. Si non, elle renvoie ``False``.
+Ecrire une fonction ``trouve_charlie(maison)`` qui prend en valeur un dictionnaire ``maison`` et cherche si la chaîne de caractères ``'Charlie'`` fait partie des valeurs. Si oui, elle renvoie la clé de la première occurrence. Si non, elle renvoie ``False``.
 ==
 
 tag=dictionary
 
 samplesol==
-def trouve_charlie(d):
-    for cachette in d:
-        if d[cachette] == 'Charlie' :
+def trouve_charlie(maison):
+    for cachette in maison:
+        if maison[cachette] == 'Charlie' :
             return cachette
     return False
 ==
