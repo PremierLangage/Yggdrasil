@@ -18,11 +18,11 @@ si la clé appartient aux deux dictionnaires.
 
 Par exemple:
 
-```>>> somme_dicos({'a': 1, 'b': 10}, {'b': 2, 'c':20})
+``>>> somme_dicos({'a': 1, 'b': 10}, {'b': 2, 'c':20})
 
 
 {'a': 1, 'b': 12, 'c': 20}
-```
+``
 ==
 
 tag=dictionary|ForIn|algo
