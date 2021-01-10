@@ -10,7 +10,7 @@ title=Affichage
 
 text==
 
-Ecrire une ligne de code qui affiche le contenu d'un dictionnaire ``hero`` dont les clés 
+Ecrire une ligne de code qui affiche le contenu d'un dictionnaire ``hero`` (supposé déjà déclaré et initialisé) dont les clés 
 sont ``'nom'``, ``'prenom'`` et ``'pseudo'`` et qui affiche ``Prénom Nom se fait appeler pseudo.``
 (ne pas oublier pas le point).
 
