@@ -53,5 +53,12 @@ True
 True
 ==
 
+pltest1==
+>>> d1, d2 = {'a': 3, 'b': 10}, {'a': 3.5, 'b': 10}  # Initialisation
+>>> somme_dicos(d1, d2)  # Test Non Vide 3
+{'a': 6.5, 'b': 20}
+>>> d1 == {'a': 3, 'b': 10} and d2 == {'a': 3.5, 'b': 10}  # Dictionnaires Non Modifiés
+==
+
 
 
