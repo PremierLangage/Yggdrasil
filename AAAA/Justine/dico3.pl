@@ -28,7 +28,7 @@ before==
 
 pltest0==
 >>> d1 = {'jardin':0, 'sdb':0, 'salon':'Charlie'}  # initialisation
->>> trouve_charlie(d1) # Charlie Est Dedans
+>>> trouve_charlie(d1)  # Charlie Est Dedans
 'salon'
 ==
 
@@ -36,8 +36,14 @@ pltest1==
 >>> trouve_charlie({}  # Vide
 False
 >>> d1 = {'jardin':0, 'sdb':0, 'salon':'charlie'}  # initialisation
->>> trouve_charlie(d1) # Sans Majuscule
+>>> trouve_charlie(d1)  # Sans Majuscule
 False
+==
+
+pltest0==
+>>> d1 = {'jardin':0, 'sdb':0, 'garage':'Charlie', 'chambre':'Charlie'}  # initialisation
+>>> trouve_charlie(d1)  # Deux Charlie
+'garage'
 ==
 
 
