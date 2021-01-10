@@ -161,8 +161,8 @@ def randint_matrix_givenrank(n, m, r, magnitude=2):
     for i in range(r):
         A[d[i],d[i]]=1
     while True:
-        P=randint_matrix_fullrank(n, n, magnitude)
-        Q=randint_matrix_fullrank(n, m, magnitude)
+        P=randint_matrix_invertible(n, magnitude)
+        Q=randint_matrix_invertible(m, magnitude)
         B=P*A*Q
         numzeros=0
         for i in range(n):
