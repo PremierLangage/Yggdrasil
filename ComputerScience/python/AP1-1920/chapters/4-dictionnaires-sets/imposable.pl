@@ -16,7 +16,9 @@ Ecrire une fonction `liste_imposable` qui donne la liste des imposables, sachant
 
 Voici un exemple d'exécution :
 
-{{pltest}}
+``>>> liste_imposable({'Abdul Kampfter': (14, "Autriche"), 'Tiancheng Wu': (43, "France"), 'Xavier Zagier': (12, "France"), 'Jean-Marie Leroy': (53, "France")})``
+
+``['Tiancheng Wu', 'Jean-Marie Leroy']``
 ==
 
 before==
