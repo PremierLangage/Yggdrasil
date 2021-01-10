@@ -45,7 +45,7 @@ pltest0==
 >>> d1 = {'a':1, 'b':2}  # initialisation
 >>> ajoute_dico(d1, 'a') # dedans renvoie False
 False
->>> len(d1) == 2    # pas d'ajout
+>>> len(d1) == 2    # pas de modification
 True
 ==
 
@@ -53,7 +53,7 @@ pltest1==
 >>> d1 = {'a':1, 'b':2}  # initialisation
 >>> ajoute_dico(d1, 'c') # pas dedans renvoie True
 True
->>> len(d1) == 3    # un ajout
+>>> len(d1) == 3    # entrée ajoutée
 True
 >>> d1['c'] == 0    # nouvelle valeur à 0
 True
