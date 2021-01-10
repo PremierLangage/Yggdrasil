@@ -160,14 +160,9 @@ def randint_matrix_givenrank(n, m, r, magnitude=1):
         P = randint_matrix_fullrank(n, r, 1)
         Q = randint_matrix_fullrank(r, m, magnitude)
         B = P*Q
-        numzeros=0
-        for i in range(n):
-            for j in range(m):
-                if B[i,j]==0:
-                    numzeros += 1
         diffrows=len(set([tuple(B.row(i)) for i in range(n)]))
         diffcols=len(set([tuple(B.col(i)) for i in range(n)]))
-        if numzeros < n and diffcols==n and diffrows==n:
+        if diffcols==n and diffrows==n:
             return B
 
 # Matrices (old versions)
