@@ -40,7 +40,7 @@ after = before
 ==
 
 pltest0==
->>> ajoute_dico(d1, 'a') # dedans
+>>> ajoute_dico(d1, cle1) # dedans
 False
 >>> len(d1) == l_d1
 True
