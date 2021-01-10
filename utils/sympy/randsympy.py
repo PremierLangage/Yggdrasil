@@ -162,7 +162,7 @@ def randint_matrix_givenrank(n, m, r, magnitude=1):
         B = P*Q
         diffrows=len(set([tuple(B.row(i)) for i in range(n)]))
         diffcols=len(set([tuple(B.col(i)) for i in range(m)]))
-        if diffcols==n and diffrows==n:
+        if diffcols==n and diffrows==m:
             return B
 
 # Matrices (old versions)
