@@ -25,16 +25,6 @@ def ajoute_dico(d, cle):
 ==
 
 before==
-from random import randint
-
-d1 = {'a':1, 'b':2}
-l_d1 = len(d1)
-d1_ini = d1.copy()
-d1_plus_c = {'a':1, 'b':2, 'c':0}
-cle1 = 'a'
-cle2 = 'c'
-
-after = before
 ==
 
 pltest0==
