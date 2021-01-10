@@ -3,8 +3,7 @@
 
 # Author: Justine Falque
 
-extends=/ComputerScience/python/template/pltest.pl
-@ /builder/before.py [builder.py]
+extends=/ComputerScience/python/AP1-1920/templates/prosoluce.pl
 
 #author=Justine Falque
 title=Affichage
@@ -24,7 +23,7 @@ Par exemple :
 ``Bruce Wayne se fait appeler Batman.``
 ==
 
-tag=dictionary
+tag=dictionary|print
 
 soluce==
 def superhero(hero):
@@ -44,9 +43,6 @@ after==
 superhero(hero3)
 ==
 
+mplsoluce==
+templates==
 
-
-soluce==
-def superhero(hero):
-    print(hero['prenom'], hero['nom'], "se fait appeler", hero['pseudo'])
-==
