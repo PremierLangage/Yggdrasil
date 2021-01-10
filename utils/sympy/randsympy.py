@@ -147,7 +147,7 @@ def randint_matrix_fullrank(n,p,bound,excluded_values=[],sparsity=0):
         if M.rank()==min([n,p]):
             return M
 
-def randint_matrix_givenrank(n, m, r, magnitude=2):
+def randint_matrix_givenrank(n, m, r, magnitude=1):
     """
     Generate a nxn random matrix with given rank.
 
