@@ -5,7 +5,7 @@
 extends = /model/math/math.pl
 extends = /model/basic/radio.pl
 
-choice ==
+choices ==
 A
 B
 C
