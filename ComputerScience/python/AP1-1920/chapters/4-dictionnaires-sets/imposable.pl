@@ -8,11 +8,11 @@ title = Lister les imposables
 text==
 Toute personne qui réside en France doit payer l'impôt. Pourtant tous les français n'habitent pas en France. 
 
-La Finance Publique a alors besoin de savoir qui réside encore en France. Elle possède d'une base de donnée qui enregistre l'âge et le pays de résidence de chaque français.
+La Finance Publique a alors besoin de savoir qui réside encore en France. Elle possède une base de données qui enregistre l'âge et le pays de résidence de chaque français.
 
-On a converti cette base de donné sous forme de dictionnaire, avec le nombre de personne comme clé, et la valeur est une couple d'âge (un entier) et du pays de résidence (un string)
+On a converti cette base de données sous forme de dictionnaire, avec les noms des personnes comme clés, la valeur étant un couple formé de l'âge (un entier) et du pays de résidence (une chaîne de caractères).
 
-Ecrire une fonction `liste_imposable` qui donne la liste des imposables. On n'est pas imposable qu'à partir de 18 ans.
+Ecrire une fonction `liste_imposable` qui donne la liste des imposables, sachant qu'on n'est imposable qu'à partir de 18 ans.
 
 Voici un exemple d'exécution :
 
