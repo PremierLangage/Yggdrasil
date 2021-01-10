@@ -2,20 +2,19 @@ extends = /model/mathinput.pl
 
 title = Système linéaire
 
-
 before ==
 n=param['size']
 coeffboundA = param['coeffboundA']
 coeffboundB = param['coeffboundB']
 sparsity= param['sparsity']
 if 'maxdet' in param:
-    A=rand_int_matrix_invertible(n,coeffboundA,[0],sparsity,param['mindet'],param['maxdet'])
+    A=randint_matrix_invertible(n,coeffboundA,[0],sparsity,param['mindet'],param['maxdet'])
 else:
-    A=rand_int_matrix_invertible(n,coeffboundA,[0],sparsity)
+    A=randint_matrix_invertible(n,coeffboundA,[0],sparsity)
 if param['typesol']=="rat":
     B=rand_int_matrix(n,1,coeffboundB,[0])
 else:
-    sol=rand_int_matrix(n,1,5)
+    sol=randint_matrix(n,1,5)
     B=A*sol
 
 sol = list(linsolve((A, B)))[0]
