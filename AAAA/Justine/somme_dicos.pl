@@ -14,7 +14,7 @@ text==
 Ecrire une fonction ``somme_dicos(d1, d2)`` qui prend en paramètre deux dictionnaires dont les valeurs sont des nombres.
 La fonction renvoie un dictionnaire dont les clés sont toutes les clés de ``d1`` et ``d2``, avec la valeur qui leur
 était associée dans le dictionnaire d'origine si la clé appartient à un seul des deux, et la somme des valeurs associées
-si la clé appartient aux deux dictionnaires.
+si la clé appartient aux deux dictionnaires. Les clés de ``d1`` doivent apparaître avant les clés de ``d2``.
 
 Par exemple:
 
@@ -27,12 +27,12 @@ tag=dictionary|ForIn|algo
 
 samplesol==
 def somme_dicos(d1, d2):
-    d = d2.copy()
-    for cle1 in d1 :
-        if cle1 in d :
-            d[cle1] += d1[cle1]
+    d = d1.copy()
+    for cle in d2 :
+        if cle in d :
+            d[cle] += d2[cle]
         else :
-            d[cle1] = d1[cle1]
+            d[cle1] = d2[cle]
     return d
 ==
 
