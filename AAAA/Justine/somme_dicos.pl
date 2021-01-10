@@ -39,12 +39,6 @@ def somme_dicos(d1, d2):
 before==
 ==
 
-pltest==
->>> somme_dicos({'a': 1, 'b': 10}, {'b': 2, 'c':20})
-
-
-{'a': 1, 'b': 12, 'c': 20}
-==
 
 pltest0==
 >>> somme_dicos({}, {}) == {}  # Test Avec Deux Vides
