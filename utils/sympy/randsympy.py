@@ -152,7 +152,7 @@ def randint_matrix_givenrank(n, m, r, magnitude=2):
     Generate a nxn random matrix with given rank.
 
     n : number of rows
-    p : number of columns
+    m : number of columns
     r : rank
     magnitude : parameter defining the size of coefficients
     """
