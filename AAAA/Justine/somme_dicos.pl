@@ -32,7 +32,7 @@ def somme_dicos(d1, d2):
         if cle in d :
             d[cle] += d2[cle]
         else :
-            d[cle1] = d2[cle]
+            d[cle] = d2[cle]
     return d
 ==
 
