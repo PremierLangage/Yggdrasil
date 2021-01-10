@@ -138,7 +138,7 @@ def randint_matrix_invertible(n, bound, excluded_values=[], sparsity=0, mindet=0
         if mindet <= abs(M.det()) <= maxdet:
             return M
             
-def rand_int_matrix_fullrank(n,p,bound,excluded_values=[],sparsity=0):
+def randint_matrix_fullrank(n,p,bound,excluded_values=[],sparsity=0):
     """
     Generate a full rank random matrix with integer entries.
     """
