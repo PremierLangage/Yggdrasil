@@ -14,7 +14,7 @@ Ecrire une ligne de code qui affiche le contenu d'un dictionnaire ``hero`` dont 
 sont ``'nom'``, ``'prenom'`` et ``'pseudo'`` et qui affiche ``Prénom Nom se fait appeler pseudo.``
 (ne pas oublier pas le point).
 
-Par exemple, si ``hero = {'prenom': 'Bruce', 'nom': 'Wayne', 'pseudo': 'Batman'}``, l'affichage doit être :
+Par exemple, si ``hero`` contient ``{'prenom': 'Bruce', 'nom': 'Wayne', 'pseudo': 'Batman'}``, l'affichage doit être :
 
 ``Bruce Wayne se fait appeler Batman.``
 ==
