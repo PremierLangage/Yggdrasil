@@ -55,8 +55,8 @@ pltest1==
 True
 >>> len(d1) == 3    # entrée ajoutée
 True
->>> d1['c'] == 0    # nouvelle valeur à 0
-True
+>>> d1['c']    # nouvelle valeur à 0
+0
 ==
 
 
