@@ -5,14 +5,15 @@
 extends = /model/math/math.pl
 extends = /model/basic/radio.pl
 
+shuffle % false
+
 choices ==
-A
-B
-C
-D
+Une unique solution
+Une infinité de solutions
+Aucune solution
 ==
 
-title = Trouver une solution parmi plusieurs
+title = Nombre de solution d'un sytème
 
 before ==
 n = 3
