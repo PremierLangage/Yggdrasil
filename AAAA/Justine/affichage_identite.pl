@@ -44,14 +44,6 @@ after==
 superhero(hero3)
 ==
 
-mplsoluce0==
-Test1
-12
-3
-14
-5
-==
-
 
 
 soluce==
