@@ -33,7 +33,7 @@ pltest0==
 ==
 
 pltest1==
->>> trouve_charlie({}  # Vide
+>>> trouve_charlie({})  # Vide
 False
 >>> d1 = {'jardin':0, 'sdb':0, 'salon':'charlie'}  # initialisation
 >>> trouve_charlie(d1)  # Sans Majuscule
