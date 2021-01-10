@@ -41,11 +41,15 @@ after = before
 
 pltest0==
 >>> d1 = {'a':1, 'b':2}  # initialisation
->>> not ajoute_dico(d1, 'a') and len(d1) == 2 # dedans
+>>> not ajoute_dico(d1, 'a') # dedans
 True
 >>> len(d1) == 2
 True
->>> ajoute_dico(d1, 'c') and len(d1) == 3 # pas dedans
+==
+
+pltest1==
+>>> d1 = {'a':1, 'b':2}  # initialisation
+>>> ajoute_dico(d1, 'c') # pas dedans
 True
 >>> len(d1) == 3
 True
