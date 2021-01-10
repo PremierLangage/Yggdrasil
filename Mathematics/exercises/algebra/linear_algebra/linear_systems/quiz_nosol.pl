@@ -13,12 +13,13 @@ Une infinité de solutions
 Aucune solution
 ==
 
-title = Nombre de solution d'un sytème
+title = Nombre de solutions d'un sytème 3x3
 
 before ==
 n = 3
 bound = 3
 A = randint_matrix_givenrank(3, 2, 2, magnitude=2)
+
 
 vec = list_randint(2, -3, 3)
 B = A*Matrix(vec)
