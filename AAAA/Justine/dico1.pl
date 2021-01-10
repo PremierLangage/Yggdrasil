@@ -14,7 +14,7 @@ Ecrire une fonction ``ajoute_dico(d, cle)`` qui ajoute au dictionnaire ``d`` la 
 La fonction renverra ``True`` si l'entrée a été ajoutée, ``False`` sinon.
 ==
 
-tag=dictionary|ForIn|algo
+tag=dictionary
 
 samplesol==
 def ajoute_dico(d, cle):
