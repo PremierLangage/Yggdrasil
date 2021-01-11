@@ -14,3 +14,6 @@ Cette fiche PL est là pour vous entraîner sur la manipulation des dictionnaire
 @ liste_cles_condition.pl
 @ somme_dicos.pl
 @ imposable.pl
+@ tous_clesValeurs.pl
+@ IntersectionDicts.pl
+@ fusionerDicts.pl
