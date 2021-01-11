@@ -29,7 +29,6 @@ else:
  somm="\sum_{k={{a}}}^{ {{b}}} {{d}}k^{{c}}"
  f=str(d)+"*k**"+str(c)
 
-
 solu=summation(f, ("i", a, b))
 ==
 
