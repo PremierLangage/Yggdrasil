@@ -8,10 +8,10 @@ group =: RadioGroup
 before==
 ==
 
-title = Radio Group Component
+title = Comment percevez-vous Platon ?
 
 text==
-Comment percevez-vous Platon 
+
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
