@@ -5,8 +5,8 @@ title= Somme finie
 
 text==
 Donner le résultat de la somme de {{i}} et {{n}}.
-\n
-$! \Sigma_{i={{i}}}^{{n}} {{C}}{{t}} !$
+<br/>
+$! \Sigma_{i={{i}}}^{{n}} {{C}}{{t}} .!$
 ==
 
 before ==
