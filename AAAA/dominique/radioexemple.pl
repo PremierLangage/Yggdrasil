@@ -20,12 +20,10 @@ import random
 import uuid
 
 
-R = uuid.uuid4()
-
 group.items = []
 for prop in propositions.split("\n"):
     group.items.append({
-        "id": uuid.uuid4(), # generate a random id instead of an hardcoded to avoid cheat
+        "id": str(prop), # generate a random id instead of an hardcoded to avoid cheat
         "content": str(prop)
     })
 
@@ -52,7 +50,7 @@ form==
 # EVALUATE THE STUDENT ANSWER
 evaluator==
 S = group.selection
-score = 0
+score = -1
 feedback = '<span class="error-state animated pulse infinite">Bad answer</span>'
 
 for item in group.items:
@@ -61,7 +59,7 @@ for item in group.items:
         if S == R:
             item['css'] = 'success-border'
             score = 100
-            feedback = '<span class="success-state animated pulse infinite">Good answer</span>'
+            feedback = item['content']
         else:
             item['css'] = 'error-border'
     elif item['id'] == R:
