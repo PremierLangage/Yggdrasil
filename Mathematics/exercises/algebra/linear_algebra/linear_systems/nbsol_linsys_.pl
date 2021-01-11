@@ -2,7 +2,8 @@
 # Last update : 09/01/21
 # Keywords : linear systems
 
-extends = nbsol_linsys_.pl
+extends = /model/math/math.pl
+extends = /model/basic/radio.pl
 
 shuffle % false
 
