@@ -10,9 +10,8 @@ text==
 Ecrire une fonction ``returnClesValeurs(dic)`` qui contient seulement une ligne (après ``def returnClesValeurs(dic):``).
 Elle mets les clés et les valueurs de tous les elements dans deux variable de type listes, respectivement, et les retourner.
 On va utiliser ``a, b=returnClesValeurs(dic)`` pour appeler cette fonction-là.
-Par exmplae:
-dic={3: 'X', 1: 'X'}
-a, b=returnClesValeurs(dic)
+Par exemple:
+a, b=returnClesValeurs({3: 'X', 1: 'X'})
 a est [3, 1] et b est ['X', 'X']
 ==
 
