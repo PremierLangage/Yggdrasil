@@ -10,6 +10,8 @@ text==
 Calculer la somme $! A= {{somm}} !$
 <br/>
 {{solu}}
+<br/>
+{{f}}
 ==
 
 before ==
@@ -25,7 +27,7 @@ if c==1 :
  f=str(d)+"*k"
 else:
  somm="\sum_{k={{a}}}^{ {{b}}} {{d}}k^{{c}}"
- f=str(d)+"*k^"+str(c)
+ f=str(d)+"*k**"+str(c)
 
 
 solu=summation(f, ("i", a, b))
@@ -33,7 +35,7 @@ solu=summation(f, ("i", a, b))
 
 form==
 Votre réponse
-{{ input|component }}
+{{ mathinput|component }}
 ==
 
 feedback==
