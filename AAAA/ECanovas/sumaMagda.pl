@@ -6,7 +6,8 @@ title= Somme finie
 text==
 
 Calculer la somme $! A= {{somm}} !$
-
+<br/>
+{{solu}}
 ==
 
 before ==
@@ -20,6 +21,9 @@ if c==1 :
 else:
  somm="\sum_{k={{a}}}^{ {{b}}} {{d}}k^{{c}}"
 d= randint(1,9)
+
+f="{{d}}k^{{c}}"
+solu=summation(f, (i, a, b))
 ==
 
 form==
