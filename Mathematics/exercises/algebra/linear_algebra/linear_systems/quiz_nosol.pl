@@ -16,7 +16,7 @@ Aucune solution
 title = Nombre de solutions d'un sytème 3x3
 
 before ==
-indexsol = randint(0, 2)
+indexsol = randint(2, 2)
 vec = list_randint(3, -2, 2)
 
 if indexsol == 0:
