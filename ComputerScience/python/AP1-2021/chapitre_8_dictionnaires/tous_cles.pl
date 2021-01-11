@@ -15,7 +15,7 @@ tag=dictionary
 
 samplesol==
 def returnClesValeurs(dic):
-    list(dic.keys()), list(dic.values())
+    return list(dic.keys()), list(dic.values())
 ==
 
 
