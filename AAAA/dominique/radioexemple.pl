@@ -49,7 +49,6 @@ form==
 
 # EVALUATE THE STUDENT ANSWER
 evaluator==
-S = 
 score = -1
 feedback = '<span class="error-state animated pulse infinite">Réponse obligatoire !</span>'
 
