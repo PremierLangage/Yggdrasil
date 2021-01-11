@@ -38,7 +38,6 @@ sys_tex = latex_linsys(A, B)
 ==
 
 text ==
-{{z}}
 On considère le système suivant (d'inconnues $!x, y, z !$) :
 $$ {{sys_tex}} $$
 Combion de solutions possède ce système ?
