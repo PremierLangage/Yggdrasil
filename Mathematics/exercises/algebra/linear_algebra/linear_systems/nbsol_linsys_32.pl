@@ -25,5 +25,5 @@ else:
             break
 
 system = latex_linsys(A, B)
-lstvar = "x, y, z"
+lstvar = "x, y"
 ==
