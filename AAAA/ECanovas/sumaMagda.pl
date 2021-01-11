@@ -17,6 +17,8 @@ a=1
 btab= ["n-1","n+1"]
 b=btab[randint(0,len(btab)-1)]
 c= randint(0,3)
+d= randint(1,9)
+
 if c==1 :
  c=""
  somm="\sum_{k={{a}}}^{ {{b}}} {{d}}k"
@@ -24,7 +26,7 @@ if c==1 :
 else:
  somm="\sum_{k={{a}}}^{ {{b}}} {{d}}k^{{c}}"
  f=str(d)+"*k^"+str(c)
-d= randint(1,9)
+
 
 solu=summation(f, ("i", a, b))
 ==
