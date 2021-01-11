@@ -6,9 +6,7 @@ title= Somme finie
 text==
 Donner le résultat de la somme de {{i}} {{t}} et {{n}}.
 <br/>
-$! \Sigma_{i={{i}}}^{ {{n}}} {{C}}{{t}} .!$
-<br/>
-$$ \Sigma_{i={{i}}}^{2n-1} $$
+$! \sum_{i={{i}}}^{ {{n}}} {{C}}{{t}} .!$
 ==
 
 before ==
