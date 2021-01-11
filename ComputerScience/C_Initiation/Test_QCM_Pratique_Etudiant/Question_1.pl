@@ -9,11 +9,15 @@ before==
 group.items = []
 group.items.append({
     "id": "1",
-    "content": "teste"
+    "content": "Comme quelque chose d'imposé par les enseignant"
 })
 group.items.append({
     "id": "2",
-    "content": "Re-teste"
+    "content": "C quoi Platon ?"
+}
+group.items.append({
+    "id": "3",
+    "content": "Un coach qui permet d'apprendre ?"
 })
 ==
 
