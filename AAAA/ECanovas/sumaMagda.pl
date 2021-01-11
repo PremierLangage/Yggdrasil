@@ -9,7 +9,7 @@ Donner le résultat de la somme de {{i}} et {{n}}.
 ==
 
 before ==
-expr=(n,n-1,n+1,2n+1,2n-1)
+expr=("n","n-1","n+1","2n+1","2n-1")
 n = expr[rand_int(0,4)]
 i = rand_int(0,5)
 
