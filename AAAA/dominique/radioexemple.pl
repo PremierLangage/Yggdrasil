@@ -46,5 +46,6 @@ for item in group.items:
             score = 100
             feedback = item['content']
 
+answer['valeur']=feedback
 grade = (score, feedback)
 ==
