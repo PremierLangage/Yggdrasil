@@ -11,6 +11,10 @@ group.items.append({
     "id": "1",
     "content": "teste"
 })
+group.items.append({
+    "id": "2",
+    "content": "Re-teste"
+})
 ==
 
 title = Comment percevez-vous Platon ?
