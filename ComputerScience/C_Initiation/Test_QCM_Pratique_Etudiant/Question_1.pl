@@ -14,7 +14,7 @@ group.items.append({
 group.items.append({
     "id": "2",
     "content": "C quoi Platon ?"
-}
+})
 group.items.append({
     "id": "3",
     "content": "Un coach qui permet d'apprendre ?"
