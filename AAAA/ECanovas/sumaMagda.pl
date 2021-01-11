@@ -4,9 +4,11 @@ extends = /model/mathinput.pl
 title= Somme finie
 
 text==
-Donner le résultat de la somme de {{i}} et {{n}}.
+Donner le résultat de la somme de {{i}} {{t}} et {{n}}.
 <br/>
-$! \Sigma_{i={{i}}}^{{n}} {{C}}{{t}} .!$
+$! \Sigma_{i={{i}}}^{ {{n}}} {{C}}{{t}} .!$
+<br/>
+$$ \Sigma_{i={{i}}}^{2n-1} $$
 ==
 
 before ==
