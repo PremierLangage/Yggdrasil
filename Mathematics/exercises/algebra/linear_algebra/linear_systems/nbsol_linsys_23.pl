@@ -11,7 +11,7 @@ n = 2
 m = 3
 d = min(n, m)
 indexsol = randint(0, 2)
-vec = list_randint(n, -2, 2)
+vec = list_randint(m, -2, 2)
 
 if indexsol == 0:
     A = randint_matrix_givenrank(n, m, d, magnitude=2)
