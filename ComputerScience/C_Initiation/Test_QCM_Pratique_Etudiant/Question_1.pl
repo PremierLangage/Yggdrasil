@@ -7,11 +7,11 @@ group =: RadioGroup
 # GENERATE A RANDOM QUESTION
 before==
 group.items.append({
-    "id": 1,
+    "id": "1",
     "content": "teste"
 })
 group.items.append({
-    "id": 2,
+    "id": "2",
     "content": "re-teste"
 })
 ==
