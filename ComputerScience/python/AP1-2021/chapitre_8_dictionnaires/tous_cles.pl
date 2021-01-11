@@ -26,6 +26,8 @@ before==
 pltest0==
 >>> dic={3: 'X', 2: 'Y', 1: 'Z'}
 >>> a, b=returnClesValeurs(dic)
+>>> a
 [3, 2, 1]
+>>> b
 ['X', 'Y', 'Z']
 ==
