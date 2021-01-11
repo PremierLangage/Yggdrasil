@@ -37,6 +37,15 @@ Votre réponse
 {{ mathinput|component }}
 ==
 
+evaluator==
+if mathinput==solu :
+ Bonne réponse !<br/>
+ $!{{feedback}} !$
+else:
+ Mauvaise réponse !<br/>
+ $!{{feedback}} !$
+==
+
 feedback==
 On rappelle que si $n \ge 1$ on a 
 $\sum_k=1^n 1 = n$, $\ sum_k=1^n k = n(n+1)/2$,  $\sum_k=1^n k^2 = n(n+1)(2n+1)/6$,  $\sum_k=1^n k^3 = n^2(n+1)^2/4$.”
