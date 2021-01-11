@@ -7,9 +7,8 @@ extends=/ComputerScience/python/template/pltest.pl
 title= Retourner les clés et les valueurs de tous les elements d'une manière compacte
 
 text==
-Ecrire une fonction ``returnClesValeurs(dic)`` qui contient seulement une ligne (``def returnClesValeurs(dic):``)
-et qui
-faire mettre les clés et les valueurs de tous les elements dans deux listes, respectivement
+Ecrire une fonction ``returnClesValeurs(dic)`` qui contient seulement une ligne (après ``def returnClesValeurs(dic):``)
+et qui mets les clés et les valueurs de tous les elements dans deux variable de type listes, respectivement. 
 ==
 
 tag=dictionary
