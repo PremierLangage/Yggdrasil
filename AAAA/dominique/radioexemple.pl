@@ -16,29 +16,18 @@ c'est top
 
 # GENERATE A RANDOM QUESTION
 before==
-import random
-import uuid
-
-
 group.items = []
 for prop in propositions.split("\n"):
     group.items.append({
         "id": str(prop), # generate a random id instead of an hardcoded to avoid cheat
         "content": str(prop)
     })
-
-
-
-# shuffle the items
-random.shuffle(group.items)
 ==
 
-title = Radio Group Component
+title = Votre avis
 
 text==
-
-comment percevez vous la Plateforme PLaTon ? 
-
+Comment percevez vous la Plateforme PLaTon ? 
 
 ==
 
