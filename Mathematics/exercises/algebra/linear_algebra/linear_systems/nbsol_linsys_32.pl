@@ -12,11 +12,11 @@ m = 2
 indexsol = randitem([0, 2])
 vec = list_randint(m, -2, 2)
 
-if indexsol == 1:
-    A = randint_matrix_givenrank(n, m, n, magnitude=2)
+if indexsol == 0:
+    A = randint_matrix_givenrank(n, m, m, magnitude=2)
     B = A*Matrix(vec)
 else:
-    A = randint_matrix_givenrank(n, m, n, magnitude=2)
+    A = randint_matrix_givenrank(n, m, m, magnitude=2)
     while True:
         perturbation = [0, randitem([-1,1])]
         rd.shuffle(perturbation)
