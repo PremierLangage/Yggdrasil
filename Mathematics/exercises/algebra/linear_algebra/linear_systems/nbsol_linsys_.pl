@@ -4,6 +4,14 @@
 
 extends = nbsol_linsys_.pl
 
+shuffle % false
+
+choices ==
+Une unique solution
+Une infinité de solutions
+Aucune solution
+==
+
 title = Nombre de solutions d'un sytème 3x3
 
 before ==
@@ -29,7 +37,7 @@ system = latex_linsys(A, B)
 ==
 
 text ==
-On considère le système suivant (d'inconnues $! {{lstvar}} !$) :
+On considère le système suivant (d'inconnues $!x, y, z !$) :
 $$ {{system}} $$
 Combion de solutions possède ce système ?
 ==
