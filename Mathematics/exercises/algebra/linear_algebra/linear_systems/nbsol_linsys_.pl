@@ -2,16 +2,7 @@
 # Last update : 09/01/21
 # Keywords : linear systems
 
-extends = /model/math/math.pl
-extends = /model/basic/radio.pl
-
-shuffle % false
-
-choices ==
-Une unique solution
-Une infinité de solutions
-Aucune solution
-==
+extends = nbsol_linsys_.pl
 
 title = Nombre de solutions d'un sytème 3x3
 
@@ -38,7 +29,7 @@ system = latex_linsys(A, B)
 ==
 
 text ==
-On considère le système suivant (d'inconnues $!x, y, z !$) :
+On considère le système suivant (d'inconnues $! {{lstvar}} !$) :
 $$ {{system}} $$
 Combion de solutions possède ce système ?
 ==
