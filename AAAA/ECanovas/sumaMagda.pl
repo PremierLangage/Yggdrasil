@@ -7,9 +7,24 @@ text==
 Donner le résultat de la somme de {{i}} {{t}} et {{n}}.
 <br/>
 $! \sum_{i={{i}}}^{ {{n}}} {{C}}{{t}} .!$
+
+Calculer la somme $! A= {{somm}} !$
+
 ==
 
 before ==
+a=1 
+btab= ["n-1","n+1"]
+b=btab[randint(0,len(btab)-1)]
+c= randint(0,3)
+if c==1 :
+ c=""
+ somm="\sum_{k={{a}}}^{ {{b}}} {{d}}k"
+else:
+ somm="\sum_{k={{a}}}^{ {{b}}} {{d}}k^{{c}}"
+d= randint(1,9)
+
+
 i = randint(0,5)
 
 term=["k","k^2","k^3"]
