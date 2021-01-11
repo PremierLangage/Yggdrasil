@@ -24,22 +24,11 @@ before==
 ==
 
 pltest0==
->>> dic={'NO': 'X', 'N': 'X', 'NE': 'X',
-       'O': ' ', 'C': ' ', 'E': ' ',
-       'SO': ' ', 'S': ' ', 'SE': ' '
-       }
->>> returnClesValeurs(dic) # dedans renvoie False
+>>> dic={3: 'X', 2: 'Y', 1: 'Z'}
+>>> a, b=returnClesValeurs(dic)
 False
->>> len(d1) == 2    # pas de modification
-True
-==
-
-pltest1==
->>> d1 = {'a':1, 'b':2}  # initialisation
->>> ajoute_dico(d1, 'c') # pas dedans renvoie True
-True
->>> len(d1) == 3    # entrée ajoutée
-True
->>> d1['c']    # nouvelle valeur à 0
-0
+>>> a
+[3, 2, 1]
+>>> b
+['X', 'Y', 'Z']
 ==
