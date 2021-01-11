@@ -9,7 +9,7 @@ title = Nombre de solutions d'un sytème 3x2
 before ==
 n = 3
 m = 2
-indexsol = randitem([1, 2])
+indexsol = randitem([0, 2])
 vec = list_randint(m, -2, 2)
 
 if indexsol == 1:
