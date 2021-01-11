@@ -9,7 +9,7 @@ title= Retourner les clés et les valueurs de tous les elements d'une manière c
 text==
 Ecrire une fonction ``returnClesValeurs(dic)`` qui contient seulement une ligne (après ``def returnClesValeurs(dic):``).
 Elle mets les clés et les valueurs de tous les elements dans deux variable de type listes, respectivement, et les retourner.
- 
+On va utiliser ``a, b=returnClesValeurs(dic)`` pour appeler cette fonction-là.
 ==
 
 tag=dictionary
