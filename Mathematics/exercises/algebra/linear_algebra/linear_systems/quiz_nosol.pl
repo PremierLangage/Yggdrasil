@@ -27,8 +27,9 @@ elif indexsol == 1:
     B = A*Matrix(vec)
 else:
     A = randint_matrix_givenrank(3, 3, 2, magnitude=2)
-    B = A*Matrix(vec) + Matrix([0, 1, 0])
-    z = linsolve((A, B))
+    while True:
+        B = A*Matrix(vec) + Matrix([0, 1, 0])
+        if linsolve((A, B)) == EmptySet()
 
 sys_tex = latex_linsys(A, B)
 ==
