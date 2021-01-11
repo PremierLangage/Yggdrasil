@@ -7,17 +7,18 @@ extends = nbsol_linsys_.pl
 title = Nombre de solutions d'un sytème 3x3
 
 before ==
+n = 3
 indexsol = randint(0, 2)
-vec = list_randint(3, -2, 2)
+vec = list_randint(n, -2, 2)
 
 if indexsol == 0:
-    A = randint_matrix_givenrank(3, 3, 3, magnitude=2)
+    A = randint_matrix_givenrank(n, n, n, magnitude=2)
     B = A*Matrix(vec)
 elif indexsol == 1:
-    A = randint_matrix_givenrank(3, 3, 2, magnitude=2)
+    A = randint_matrix_givenrank(n, n, n-1, magnitude=2)
     B = A*Matrix(vec)
 else:
-    A = randint_matrix_givenrank(3, 3, 2, magnitude=2)
+    A = randint_matrix_givenrank(n, n, n-1, magnitude=2)
     while True:
         perturbation = [0, 0, randitem([-1,1])]
         rd.shuffle(perturbation)
