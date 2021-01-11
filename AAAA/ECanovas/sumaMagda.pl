@@ -22,8 +22,8 @@ else:
  somm="\sum_{k={{a}}}^{ {{b}}} {{d}}k^{{c}}"
 d= randint(1,9)
 
-f="{{d}}k^{{c}}"
-solu=summation(f, (i, a, b))
+f=d+"*k^"+c
+solu=summation(f, ("i", a, b))
 ==
 
 form==
