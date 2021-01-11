@@ -23,7 +23,7 @@ before==
 ==
 
 pltest0==
->>> plateau={'NO': 'X', 'N': 'X', 'NE': 'X',
+>>> dic={'NO': 'X', 'N': 'X', 'NE': 'X',
        'O': ' ', 'C': ' ', 'E': ' ',
        'SO': ' ', 'S': ' ', 'SE': ' '
        }
