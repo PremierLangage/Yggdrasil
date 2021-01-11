@@ -1,6 +1,6 @@
 
 @ /utils/sandboxio.py
-grader  =@ evaluatorwithlog.py
+grader  =@ /AAAA/dominique/evaluatorwithlog.pl
 builder =@ /builder/before.py
 
 group =: RadioGroup
