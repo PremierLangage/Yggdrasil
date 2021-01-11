@@ -66,10 +66,13 @@ group6.items.append({"id": "1", "content": "Les supports sont cohérents avec la
 group6.items.append({"id": "2", "content": "Les supports illustrés et pertinents soutiennent une présentation <br> orale de qualité dans le temps imparti."})
 group6.items.append({"id": "3", "content": "Les supports sont de grande qualité et adaptés une présentation <br> orale captivante, optimale pour servir l’argumentation."})
 
-profs = [ ("BORIE", "Nicolas"), 
+profs = [ ("BADIS", "Hakim"),
+          ("BORIE", "Nicolas"),
+          ("CARAYOL", "Arnaud"),
           ("DURIS", "Etienne"),
           ("FINKEL", "Philippe"),
-          ("LE NY", "Pierre-André") ]
+          ("LE NY", "Pierre-André"),
+          ("QUIDELLEUR", "Aurélie"), ]
 
 students = [ ("AGULLO", "Vincent"),
              ("BATICLE", "Nicolas"),
