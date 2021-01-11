@@ -4,6 +4,8 @@
 
 extends = nbsol_linsys_.pl
 
+title = Nombre de solutions d'un sytème 3x3
+
 before ==
 indexsol = randint(0, 2)
 vec = list_randint(3, -2, 2)
