@@ -27,7 +27,7 @@ pltest0==
        'O': ' ', 'C': ' ', 'E': ' ',
        'SO': ' ', 'S': ' ', 'SE': ' '
        }
->>> ajoute_dico(d1, 'a') # dedans renvoie False
+>>> returnClesValeurs(dic) # dedans renvoie False
 False
 >>> len(d1) == 2    # pas de modification
 True
