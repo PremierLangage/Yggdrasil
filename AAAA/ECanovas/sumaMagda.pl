@@ -4,14 +4,15 @@ title= Somme finie
 
 text==
 
-Donner le résultat de la somme de {{a}} et {{b}}. 
+Donner le résultat de la somme de {{i}} et {{n}}. 
 
 ==
 
 before ==
-n = rand_int(2,11)
-i = rand_int(1,5)
-expr = P * Q
+expr=(n,n-1,n+1,2n+1,2n-1)
+n = expr[rand_int(0,4)]
+i = rand_int(0,5)
+
 ==
 
 form ==
@@ -23,23 +24,11 @@ la somme
 # évaluer la réponse 
 evaluator==
 
-if int(input1.value) == a+b :
+if int(input1.value) == n+i :
     grade=(100,"Bravo ")
     print("")
 else:
     grade=(0," Raté recommencez "+str(input1.value))
 
-==
-
-
-reserve==
-# Avant que ce soit présenté à l'élève 
-    before==
-
-
-    a=3
-    b=6
-
-    ==
 ==
 
