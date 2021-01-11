@@ -30,7 +30,7 @@ else:
     while True:
         perturbation = [0, 0, randitem([-1,1])]
         rd.shuffle(perturbation)
-        B = A*Matrix(vec) + Matrix([0, 1, 0])
+        B = A*Matrix(vec) + Matrix(perturbation)
         if linsolve((A, B)) == EmptySet():
             break
 
