@@ -8,20 +8,17 @@ title= Retourner les clés et les valueurs de tous les elements d'une manière c
 
 text==
 
-Ecrire une fonction ``ajoute_dico(d, cle)`` qui ajoute au dictionnaire ``d`` la clé ``cle`` (si elle n'y est pas déjà), associée à la valeur 0.
-
-La fonction renverra ``True`` si l'entrée a été ajoutée, ``False`` sinon.
+Ecrire une fonction ``returnClesValeurs(dic)`` qui contient seulement une ligne et qui
+faire mettre les clés et les valueurs de tous les elements dans deux listes, respectivement
 ==
 
 tag=dictionary
 
 samplesol==
-def ajoute_dico(d, cle):
-    if cle not in d :
-        d[cle] = 0
-        return True
-    return False
+def returnClesValeurs(dic):
+    a, b=returnClesValeurs(dic)
 ==
+
 
 before==
 ==
