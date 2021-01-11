@@ -1,6 +1,8 @@
 extends = /model/math.pl
 extends = /model/mathinput.pl
 
+mathinput =: MathInput
+
 title= Somme finie
 
 text==
@@ -22,13 +24,13 @@ else:
  somm="\sum_{k={{a}}}^{ {{b}}} {{d}}k^{{c}}"
 d= randint(1,9)
 
-f=d+"*k^"+c
+f=str(d)+"*k**"+str(c)
 solu=summation(f, ("i", a, b))
 ==
 
 form==
 Votre réponse
-{{ input|component }}
+{{ mathinput|component }}
 ==
 
 feedback==
