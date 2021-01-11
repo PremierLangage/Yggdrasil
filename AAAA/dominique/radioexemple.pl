@@ -49,21 +49,14 @@ form==
 
 # EVALUATE THE STUDENT ANSWER
 evaluator==
-S = group.selection
+S = 
 score = -1
-feedback = '<span class="error-state animated pulse infinite">Bad answer</span>'
+feedback = '<span class="error-state animated pulse infinite">Réponse obligatoire !</span>'
 
 for item in group.items:
-    item['css'] = ''
-    if item['id'] == S:
-        if S == R:
-            item['css'] = 'success-border'
+    if item['id'] == group.selection:
             score = 100
             feedback = item['content']
-        else:
-            item['css'] = 'error-border'
-    elif item['id'] == R:
-        item['css'] = 'success-border animated pulse infinite'
 
 grade = (score, feedback)
 ==
