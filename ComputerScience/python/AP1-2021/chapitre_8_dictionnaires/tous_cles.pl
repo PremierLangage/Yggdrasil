@@ -7,7 +7,6 @@ extends=/ComputerScience/python/template/pltest.pl
 title= Retourner les clés et les valueurs de tous les elements d'une manière compacte
 
 text==
-
 Ecrire une fonction ``returnClesValeurs(dic)`` qui contient seulement une ligne et qui
 faire mettre les clés et les valueurs de tous les elements dans deux listes, respectivement
 ==
