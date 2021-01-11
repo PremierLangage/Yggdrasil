@@ -28,6 +28,8 @@ elif indexsol == 1:
 else:
     A = randint_matrix_givenrank(3, 3, 2, magnitude=2)
     while True:
+        perturbation = [0, 0, randitem([-1,1])]
+        rd.shuffle(perturbation)
         B = A*Matrix(vec) + Matrix([0, 1, 0])
         if linsolve((A, B)) == EmptySet():
             break
