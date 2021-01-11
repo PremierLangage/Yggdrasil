@@ -31,7 +31,7 @@ else:
         perturbation = [0, 0, randitem([-1,1])]
         rd.shuffle(perturbation)
         B = A*Matrix(vec) + Matrix(perturbation)
-        if linsolve((A, B)) == EmptySet():
+        if linsolve((A, B)) == EmptySet:
             break
 
 sys_tex = latex_linsys(A, B)
