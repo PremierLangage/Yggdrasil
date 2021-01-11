@@ -5,7 +5,7 @@ title= Somme finie
 
 text==
 Donner le résultat de la somme de {{i}} et {{n}}.
-$! \Sigma_{i={{i}}}^{{n}} {{term}} !$
+$! \Sigma_{i={{i}}}^{{n}} {{C}}{{t}} !$
 ==
 
 before ==
