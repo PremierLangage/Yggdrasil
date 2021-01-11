@@ -23,7 +23,10 @@ before==
 ==
 
 pltest0==
->>> d1 = {'a':1, 'b':2}  # initialisation
+>>> plateau={'NO': 'X', 'N': 'X', 'NE': 'X',
+       'O': ' ', 'C': ' ', 'E': ' ',
+       'SO': ' ', 'S': ' ', 'SE': ' '
+       }
 >>> ajoute_dico(d1, 'a') # dedans renvoie False
 False
 >>> len(d1) == 2    # pas de modification
