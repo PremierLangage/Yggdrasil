@@ -20,17 +20,18 @@ c= randint(0,3)
 if c==1 :
  c=""
  somm="\sum_{k={{a}}}^{ {{b}}} {{d}}k"
+ f=str(d)+"*k"
 else:
  somm="\sum_{k={{a}}}^{ {{b}}} {{d}}k^{{c}}"
+ f=str(d)+"*k^"+str(c)
 d= randint(1,9)
 
-f=str(d)+"*k**"+str(c)
 solu=summation(f, ("i", a, b))
 ==
 
 form==
 Votre réponse
-{{ mathinput|component }}
+{{ input|component }}
 ==
 
 feedback==
