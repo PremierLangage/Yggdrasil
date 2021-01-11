@@ -26,7 +26,6 @@ before==
 pltest0==
 >>> dic={3: 'X', 2: 'Y', 1: 'Z'}
 >>> a, b=returnClesValeurs(dic)
-False
 >>> a
 [3, 2, 1]
 >>> b
