@@ -1,3 +1,4 @@
+extends = /model/math.pl
 extends = /model/mathinput.pl
 
 title= Somme finie
@@ -17,7 +18,7 @@ i = randint(0,5)
 
 form ==
 la somme    
-{{ input1|component}}
+#{{ input1|component}}
 ==
 
 
