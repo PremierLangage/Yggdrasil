@@ -28,11 +28,13 @@ elif indexsol == 1:
 else:
     A = randint_matrix_givenrank(3, 3, 2, magnitude=2)
     B = A*Matrix(vec) + Matrix([0, 1, 0])
+    z = list(linsolve((A, B)))[0]
 
 sys_tex = latex_linsys(A, B)
 ==
 
 text ==
+{{z}}
 On considère le système suivant (d'inconnues $!x, y, z !$) :
 $$ {{sys_tex}} $$
 Combion de solutions possède ce système ?
