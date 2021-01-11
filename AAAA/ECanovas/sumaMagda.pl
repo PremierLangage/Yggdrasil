@@ -10,8 +10,8 @@ Donner le résultat de la somme de {{i}} et {{n}}.
 
 before ==
 expr=("n","n-1","n+1","2n+1","2n-1")
-n = expr[rand_int(0,4)]
-i = rand_int(0,5)
+n = expr[randint(0,4)]
+i = randint(0,5)
 
 ==
 
@@ -24,7 +24,7 @@ la somme
 # évaluer la réponse 
 evaluator==
 
-if int(input1.value) == n+i :
+if int(input1.value) == i :
     grade=(100,"Bravo ")
     print("")
 else:
