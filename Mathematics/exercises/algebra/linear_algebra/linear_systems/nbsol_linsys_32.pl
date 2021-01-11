@@ -18,7 +18,7 @@ if indexsol == 0:
 else:
     A = randint_matrix_givenrank(n, m, m, magnitude=2)
     while True:
-        perturbation = [0, randitem([-1,1])]
+        perturbation = [0, 0, randitem([-1,1])]
         rd.shuffle(perturbation)
         B = A*Matrix(vec) + Matrix(perturbation)
         if linsolve((A, B)) == EmptySet:
