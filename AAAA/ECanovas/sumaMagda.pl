@@ -20,10 +20,10 @@ $!{{f|latex}}!$
 
 before ==
 f= symbols('f', cls=Function)
-i, n, k = symbols('i n k', integer=True)
+i, k = symbols('i k', integer=True)
 
 a=1 
-btab= [n-1,n+1]
+btab= ["n-1","n+1"]
 b=btab[randint(0,len(btab)-1)]
 c= randint(0,3)
 d= randint(1,9)
