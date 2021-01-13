@@ -11,6 +11,7 @@ text==
 Ecrire une fonction ``fusionnerDicts(dict1,dict2)``. Elle fusionne les deux dictionnaires (dans le sens de la réunion) ``dict1`` et ``dict2`` dans un seul dictionnaire et puis le retourne.
 
 Voici un exemple.
+
 ``>>> dict1={4: 'X', 2: 'Y', 1: 'Z'}``
 
 ``>>> dict2={6: 'X', 2: 'Y', 1: 'Z'}``
