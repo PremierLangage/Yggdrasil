@@ -65,8 +65,8 @@ rappels==#|markdown|
 On rappelle que si $!n \ge 1!$ on a
 <ul>
 <li>$! \displaystyle\sum_{k=1}^n 1 = n,!$</li>
-<li>$! \displaystyle\sum_{k=1}^n k = n(n+1)/2,!$</li>
-<li>$! \displaystyle\sum_{k=1}^n k^2 = n(n+1)(2n+1)/6,!$</li>
-<li>$! \displaystyle\sum_{k=1}^n k^3 = n^2(n+1)^2/4.!$</li>
+<li>$! \displaystyle\sum_{k=1}^n k = \frac{n(n+1)}{2},!$</li>
+<li>$! \displaystyle\sum_{k=1}^n k^2 = \frac{n(n+1)(2n+1)}{6},!$</li>
+<li>$! \displaystyle\sum_{k=1}^n k^3 = \frac{n^2(n+1)^2}{4}.!$</li>
 </ul>
 ==
