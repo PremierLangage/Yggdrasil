@@ -8,7 +8,7 @@ extends=/ComputerScience/python/template/pltest.pl
 title= Fusionner deux dictionnaires
 
 text==
-Ecrire une fonction ``fusionnerDicts(dict1,dict2)``. Elle fusionne les deux dictionnaires (dict1 et dict2) dans un dictionnaire et puis le retourne.
+Ecrire une fonction ``fusionnerDicts(dict1,dict2)``. Elle fusionne les deux dictionnaires (dans le sens de la réunion) ``dict1`` et ``dict2`` dans un seul dictionnaire et puis le retourne.
 
 Voici un exemple.
 ``>>> dict1={4: 'X', 2: 'Y', 1: 'Z'}``
