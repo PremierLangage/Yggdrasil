@@ -26,8 +26,9 @@ before==
 ==
 
 pltest0==
->>> dict1={3: 'X', 2: 'Y', 1: 'Z'}
->>> dict2={4: 'X', 2: 'Y', 1: 'Z'}
->>> intersectDicts(dict1,dict2) == {2: 'Y', 1: 'Z'}
+>>> dict1={3: 'X', 2: 'Y', 1: 'Z'}  # 
+>>> intersectDicts(dict1, {}) == {}  # Test Avec Vide
+>>> dict2={4: 'X', 2: 'Y', 1: 'Z'}  # 
+>>> intersectDicts(dict1,dict2) == {2: 'Y', 1: 'Z'}  # Test Non Vide
 True
 ==
