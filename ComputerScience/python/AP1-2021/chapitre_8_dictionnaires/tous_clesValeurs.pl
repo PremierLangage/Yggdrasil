@@ -9,6 +9,7 @@ title= Renvoyer les clés et les valeurs de tous les éléments d'une manière c
 text==
 Ecrire une fonction ``returnClesValeurs(dic)`` qui contient seulement une ligne (après ``def returnClesValeurs(dic):``).
 Elle mets les clés et les valeurs de tous les elements dans deux variables de type liste, respectivement, et les renvoie.
+Les clés et valeurs doivent apparaître dans les listes dans le même ordre que dans le dictionnaire.
 On utilisera ``a, b = returnClesValeurs(dic)`` pour appeler cette fonction-là.
 Par exemple:
 a, b = returnClesValeurs({3: 'X', 1: 'X'})
