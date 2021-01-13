@@ -8,8 +8,8 @@ extends=/ComputerScience/python/template/pltest.pl
 title= Intersection de deux dictionnaires
 
 text==
-Ecrire une fonction ``intersectDicts(dict1,dict2)``. Elle trouve les mêmes élements
-(i.e., la clé et la valeur sont les mêmes) dans les deux dictionnaires (dict1 et dict2),
+Ecrire une fonction ``intersectDicts(dict1,dict2)``. Elle trouve le élements en commun
+(i.e. la clé et la valeur sont les mêmes) dans les deux dictionnaires (dict1 et dict2),
 les mets dans un dictionnaire et puis le retourne.
 ==
 
