@@ -4,7 +4,7 @@
 extends=/ComputerScience/python/template/pltest.pl
 @ /builder/before.py [builder.py]
 
-title= Retourner les clés et les valeurs de tous les elements d'une manière compacte
+title= Retourner les clés et les valeurs de tous les éléments d'une manière compacte
 
 text==
 Ecrire une fonction ``returnClesValeurs(dic)`` qui contient seulement une ligne (après ``def returnClesValeurs(dic):``).
