@@ -8,12 +8,19 @@ title= Renvoyer les clés et les valeurs de tous les éléments d'une manière c
 
 text==
 Ecrire une fonction ``returnClesValeurs(dic)`` qui contient seulement une ligne (après ``def returnClesValeurs(dic):``).
-Elle mets les clés et les valeurs de tous les elements dans deux variables de type liste, respectivement, et les renvoie.
+Elle mets les clés et les valeurs de tous les elements dans deux variables de type liste, respectivement, et les renvoie sous forme de couple.
 Les clés et valeurs doivent apparaître dans les listes dans le même ordre que dans le dictionnaire.
-On utilisera ``a, b = returnClesValeurs(dic)`` pour appeler cette fonction-là.
-Par exemple:
-a, b = returnClesValeurs({3: 'X', 1: 'X'})
-a est [3, 1] et b est ['X', 'X']
+Voici un exemple d'utilisation.
+
+``>>> a, b = returnClesValeurs({3: 'X', 1: 'X'})``
+
+``>>> a``
+
+``[3, 1]``
+
+``>>> b``
+
+``['X', 'X']``
 ==
 
 tag=dictionary
@@ -28,8 +35,8 @@ before==
 ==
 
 pltest==
->>> dic={3: 'X', 2: 'Y', 1: 'Z'}
->>> a, b=returnClesValeurs(dic)
+>>> dic = {3: 'X', 2: 'Y', 1: 'Z'}  # 
+>>> a, b = returnClesValeurs(dic)
 >>> a
 [3, 2, 1]
 >>> b
